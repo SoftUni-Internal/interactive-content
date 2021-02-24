@@ -6,9 +6,9 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-23-24-what-is-ajax-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**AJAX** abbreviation stands for **Asynchronous** **JavaScript** and **XML**. 
+The **AJAX** abbreviation stands for **Asynchronous** **JavaScript** and **XML**. 
 
-Nowadays, instead of **XML**, we use **JSON**.
+Nowadays,**JSON** is used instead of **XML**.
 
 This technique allows us to **dynamically** **load** and **render** content or data.
 
@@ -16,7 +16,7 @@ There are two types of **AJAX**:
 
 - **Partial page rendering** allows us to render an HTML fragment in a `<div>` while the data loads
 
-- **JSON service**, has a JSON object, which we need to parse
+- **JSON services**, have JSON objects, which we need to parse
 
 [/slide]
 
@@ -32,9 +32,9 @@ Here is an example of AJAX workflow:
 
 In this example, we can see how the **client** sent a request, and the **server** returns a response with the requested page.
 
-After the **initial load** of the page, the **server** will return only **JSON** or **HTML** file.
+After the **initial load** of the page, the **server** will return only a **JSON** or an **HTML** file.
 
-That allows us to load the content **without** page reload.
+That allows us to load the content **without** the page reloading.
 
 [/slide]
 
@@ -44,9 +44,9 @@ That allows us to load the content **without** page reload.
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-26-27-xmlhttp-request-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Here we can see how to update a web page without page reloading.
+We can see how to update a web page without the page reloading.
 
-For this example, we will use **XMLHttpRequest object** to request the data from the server.
+For this example, we will use the **XMLHttpRequest object** to request the data from the server.
 
 We need to create a **button** and a **div**.
 
@@ -83,17 +83,17 @@ button.addEventListener('click', function loadRepos() {
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-28-what-is-a-promise-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Promise** is the result of an **asynchronous action**.
+A **Promise** is the result of an **asynchronous action**.
 
-When the Promise is **completed**, it  **produces value**.
+When the Promise is **completed**, it **produces a value**.
 
 They have states, which are:
 
-- **Pending** means that the operation is still running, or it is unfinished
-- **Fulfilled** means that the operation is finished, and the result is available
-- **Failed** means the operation failed, and an error is present
+- **Pending** meaning that the operation is still running or is unfinished
+- **Fulfilled** meaning that the operation has finished and the result is available
+- **Failed** meaning that the operation failed, and an error is present
 
-To create a **Promise**, we use **Promise object** : `new Promise(executor);`
+To create a **Promise**, we use a **Promise object** : `new Promise(executor);`
 
 [/slide]
 
@@ -103,7 +103,7 @@ To create a **Promise**, we use **Promise object** : `new Promise(executor);`
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-29-promise-then-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In this example we will see how the **new Promise** works:
+In this example, we will see how the **new Promise** works:
 
 ```js live
 let first = 'Before promise'
@@ -122,13 +122,13 @@ let third = 'After promise'
 console.log(third);
 ```
 
-Printed first will be the variables called  **first** and **third**.
+The values of the **first** and **third** variable will be printed.
 
 That is because the Promise is not resolved yet.
 
-The **second** will be printed in the console when the Promise is resolved.
+The **second** will be printed to the console when the Promise is resolved.
 
-That is because **new Promise** is asynchronous.
+That is because **new Promise()** is asynchronous.
 
 [/slide]
 
@@ -138,11 +138,11 @@ That is because **new Promise** is asynchronous.
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-30-31-what-is-fetch-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Fetch** is an alternative of **XMLHttpRequest**.
+**Fetch** is an alternative to **XMLHttpRequest**.
 
 The `fetch()` method allows us to make network requests using Promises.
 
-It makes the code more **maintainable** and more **readable** with **simpler** and **cleaner** API.
+It makes the code more **maintainable** and more **readable** with a **simpler** and **cleaner** API.
 
 Here is an example of how `fetch()` works:
 
@@ -158,7 +158,7 @@ fetch('/api/example.json')
 
 We read it asynchronously with `then()`.
 
-When we call the `json()` method, it will return a promise.
+When we call the `json()` method it will return a Promise.
 
 **Before parsing** the response as JSON, we need to check if the **response status** is **200**.
 
@@ -174,7 +174,7 @@ if (response.status !== 200) {
 response.json().then(function (data) {});
 ```
 
-We check the response status, and if it is **200**, we continue with parsing the response.
+We check the response status and if it is **200**, we continue with parsing the response.
 
 [/slide]
 
@@ -184,9 +184,9 @@ We check the response status, and if it is **200**, we continue with parsing the
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-32-chaining-promises-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The beneficial thing about **promises** is that when we use `fetch()`, the result returned by it can be **separated** into functions.
+The beneficial thing about **promises** is that when we use the `fetch()` method, the result returned by it can be **separated** into functions.
 
-We can **chain** promises with `then()`.
+We can **chain** promises using the `then()` method.
 
 When chained, they will perform **asynchronously**.
 
@@ -203,7 +203,7 @@ fetch('example.json')
    });
 ```
 
-In this example, we parse the response to JSON, and we print the parsed date in the console.
+In this example, we parse the response to JSON, and we print the parsed date on the console.
 
 If one of the operations is not successful, `catch()` will print an error.
 
@@ -228,13 +228,13 @@ fetch('https://api.github.com/users/softuni/repos')
    .catch((error) => console.error(error));
 ```
 
-To see how it works, run it into the Chrome DevTools console.
+To see how it works, run it in the Chrome DevTools console.
 
 We **fetch** the URL and we **parse** the received **response** to **JSON**.
 
-After the data is **parsed**, we print it in the **console**.
+After the data is **parsed**, we print it to the **console**.
 
-If there is an error, `catch()` will print an error.
+If there is an error, the `catch()` method will print an error.
 
 [/slide]
 
@@ -246,7 +246,7 @@ If there is an error, `catch()` will print an error.
 
 The **POST** request is different from the **GET** request.
 
-When we send a **POST** request, we need to set the **method**, the **headers**, and the **body**.
+When we send a **POST** request, we need to set the **method**, the **headers** and the **body**.
 
 It will look like this:
 
@@ -258,9 +258,9 @@ fetch('https://api.github.com/repos/softni/js-apps/issues', {
 });
 ```
 
-The **Content-type** or the authentication are set in the **headers** section.
+The **Content-type** and the authentications are set in the **headers** section.
 
-In the **body**, we set the data, and it should be **JSON stringified**.
+We set the data in the **body** and it should be a **JSON stringified**.
 
 [/slide]
 
