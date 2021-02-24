@@ -70,15 +70,13 @@ Imprimați o linie pe consolă:
 |cinema(['Star Wars', 'Menu', 1]) | Your bill is 30.00$| 
 
 [hints]
-[hint]
-Filmul este John Wick și este aleasă o băutura.
 
-Prețul unui bilet este de 12\$
+[hint]
+Depending on what movie and drink have been chosen, determine the ticket price.
 [/hint]
-[hint]
-6 bilete la fiecare 12\$ \-\> 72\$
 
-Pentru acest film nu se aplică discount, prețul total este de 72.00\$. 
+[hint]
+Check if there will be a discount and calculate the total price.
 [/hint]
 [/hints]
 
