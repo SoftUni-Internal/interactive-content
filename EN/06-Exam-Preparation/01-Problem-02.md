@@ -68,8 +68,8 @@ Followed by:
 
 | **Input** | **Output** |
 | --- | --- |
-|lift([15, '0 0 0 0 0'])| There is room for more passengers! |
-||4 4 4 3 0|
+|lift([15, '0 0 0 0'])| There is room for more passengers! |
+||4 4 4 3 |
 
 **Comment**
 
@@ -99,7 +99,7 @@ Followed by:
 [tests]
 [test open]
 [input]
-lift([15, '0 0 0 0 0'])
+lift([15, '0 0 0 0'])
 [/input]
 [output]
 There is room for more passengers!
