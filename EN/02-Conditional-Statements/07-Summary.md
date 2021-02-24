@@ -7,14 +7,14 @@
 
 ## In this lesson you learned:
 
-- What is a logical Boolean expression. 
-   - How to use comparison operators.
+- What is a logical Boolean expression
+   - how to use comparison operators
 
 - What is a conditional statement: 
    - `if`
    - `if-else`
    - `if-else-if`
-- How to make a series of `if-else` conditions.
+- How to make a series of `if-else` condition
 
 ```js
 if (num == 1) {
