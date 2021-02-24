@@ -63,26 +63,26 @@ The result must be formatted to two digits after the decimal point.
 | **Input** | **Output** |
 | --- | --- |
 |budget([10, 3, 'Thrones', 5, 'Riverdale', 5, 'Gotham', 2])| You bought all the series and have 0.50$ left.|
+|budget([25, 6, 'Teen Wolf', 8, 'Protector', 5, 'TotalDrama', 5,'Area', 4, 'Thrones', 5, 'Lucifer', 9])|You need 2.00$ more to buy the series!|
 
-**Comments**
+[hints]
 
-You receive budget: 10$ and count of series - 3.
+[hint]
+You receive a budget of 10$ and the count of series - 3.
 
 The first series is Thrones with price 5\$, which has 50\% discount from the price 5 \- 50\% = 2.50\$. 
 
 The second series is Riverdale, which does not have a discount on the price. 
 
 The third series also does not have a discount. 
-
+[/hint]
+[hint]
 Price of series is 2.50 \+ 5 \+ 2 = 9.50$. 
 
 Your budget is bigger than the price of series, so you can buy them.
+[/hint]
 
-## Example
-| **Input** | **Output** |
-| --- | --- |
-|budget([25, 6, 'Teen Wolf', 8, 'Protector', 5, 'TotalDrama', 5,'Area', 4, 'Thrones', 5, 'Lucifer', 9])|You need 2.00$ more to buy the series!|
-
+[/hints]
 [/task-description]
 [code-io /]
 [tests]
