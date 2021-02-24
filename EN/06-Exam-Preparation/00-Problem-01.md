@@ -65,7 +65,7 @@ The final form of the array should be printed out on the console, with each of i
 
 ## Constraints
 
-* The commands are limited to: "**swap**", "**multiply**" or "**decrease**" and "**end**".
+* The commands are limited to: "**swap**", "**multiply**" or "**decrease**" and "**end**"
 
 * All elements of the array will be integer numbers in the range \[-231...231\]
 
@@ -103,7 +103,7 @@ The state of the array after the fourth command: "87 7383 321 -123 42 290 -2"
 
 The state of the after the fifth command: "87 7383 2369943 -123 42 90 -2"
 
-* "**decrease – all - 1**"
+* "**decrease - all - 1**"
 
 The state of the after the sixth command: "86 7383 2369942 -124 41 89 -3"
 

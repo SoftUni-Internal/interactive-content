@@ -91,7 +91,7 @@ Followed by:
 
 * Second state - 4 4 0 \-\> 14 people left
 
-* Third state - 4 4 4 \-\> 10 people left, but there are no more waggons.
+* Third state - 4 4 4 \-\> 10 people left, but there are no more empty seats
 
 
 [/task-description]
