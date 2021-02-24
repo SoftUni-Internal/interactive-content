@@ -8,7 +8,7 @@
 [code-task title="Cinema" taskId="js-pb-exam-preparation-Cinema" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function cinema(input) {
+function cinema(name, consumables, tickets) {
 	// Write your code here
 }
 ```
