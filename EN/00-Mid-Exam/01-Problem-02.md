@@ -73,20 +73,16 @@ If the index is invalid, ignore the command.
 
 ## Example One
 
-**Input** 
-schoolLibrary(['Don Quixote&The Great Gatsby&Moby Dick&Hamlet', 'Add Book \| The Odyssey', 'Take Book \| Don Quixote', 'Insert Book \| Alice\'s Adventures in Wonderland', 'Check Book \| 3', 'Done' ])
-
-**Output**
-Hamlet
-The Odyssey, The Great Gatsby, Moby Dick, Hamlet, Alice's Adventures in Wonderland
+| **Input** | **Output** |
+| --- | --- |
+|schoolLibrary(['Don Quixote&The Great Gatsby&Moby Dick&Hamlet', 'Add Book \| The Odyssey', 'Take Book \| Don Quixote', 'Insert Book \| Alice\'s Adventures in Wonderland', 'Check Book \| 3', 'Done' ])| Hamlet|
+||The Odyssey, The Great Gatsby, Moby Dick, Hamlet, Alice's Adventures in Wonderland|
 
 ## Example Two
 
-**Input**
-schoolLibrary(['Anna Karenina&Heart of Darkness&Catch-22& The Stranger', 'Add Book \| David Copperfield', 'Add Book \| One Thousand and One Nights', 'Swap Books \| One Thousand and One Nights \| Catch-22', 'Take Book \| David Copperfield', 'Insert Book \| The Stories of Anton Chekhov', 'Check Book \| 17', 'Done'])
-
-**Output**
-Catch-22, Anna Karenina, Heart of Darkness, One Thousand and One Nights, The Stranger, The Stories of Anton Chekhov 
+| **Input** | **Output** |
+| --- | --- |
+|schoolLibrary(['Anna Karenina&Heart of Darkness&Catch-22& The Stranger', 'Add Book \| David Copperfield', 'Add Book \| One Thousand and One Nights', 'Swap Books \| One Thousand and One Nights \| Catch-22', 'Take Book \| David Copperfield', 'Insert Book \| The Stories of Anton Chekhov', 'Check Book \| 17', 'Done'])| Catch-22, Anna Karenina, Heart of Darkness, One Thousand and One Nights, The Stranger, The Stories of Anton Chekhov |
 
 [/task-description]
 [code-io /]
