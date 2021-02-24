@@ -83,8 +83,10 @@ function integerOrFloat(firstNumber, secondNumber, thirdNumber){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  return code (Number(input[0]), Number(input[1]), Number(input[2]));
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
@@ -101,17 +103,15 @@ Your task is to find their **sum** and print it to the console with an addition:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|9, 100, 1.1| 110.1 - Float |
-|100, 200, 303|603 - Integer|
+| integerOrFloat(9, 100, 1.1) | 110.1 - Float |
+| integerOrFloat(100, 200, 303) | 603 - Integer|
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-9
-100
-1.1
+integerOrFloat(9, 100, 1.1)
 [/input]
 [output]
 110.1 - Float
@@ -119,9 +119,7 @@ Your task is to find their **sum** and print it to the console with an addition:
 [/test]
 [test open]
 [input]
-100
-200
-303
+integerOrFloat(100, 200, 303)
 [/input]
 [output]
 603 - Integer
@@ -129,9 +127,7 @@ Your task is to find their **sum** and print it to the console with an addition:
 [/test]
 [test]
 [input]
-9
-14156
-1231.41
+integerOrFloat(9, 14156, 1231.41)
 [/input]
 [output]
 15396.41 - Float
@@ -139,9 +135,7 @@ Your task is to find their **sum** and print it to the console with an addition:
 [/test]
 [test]
 [input]
-456
-120
-145.41
+integerOrFloat(456, 120, 145.41)
 [/input]
 [output]
 721.41 - Float
@@ -149,9 +143,7 @@ Your task is to find their **sum** and print it to the console with an addition:
 [/test]
 [test]
 [input]
-912
-54610
-451.11
+integerOrFloat(912, 54610, 451.11)
 [/input]
 [output]
 55973.11 - Float
@@ -159,9 +151,7 @@ Your task is to find their **sum** and print it to the console with an addition:
 [/test]
 [test]
 [input]
-56
-2120
-3203
+integerOrFloat(56, 2120, 3203)
 [/input]
 [output]
 5379 - Integer
@@ -169,9 +159,7 @@ Your task is to find their **sum** and print it to the console with an addition:
 [/test]
 [test]
 [input]
-170
-2098
-483
+integerOrFloat(170, 2098, 483)
 [/input]
 [output]
 2751 - Integer
@@ -179,9 +167,7 @@ Your task is to find their **sum** and print it to the console with an addition:
 [/test]
 [test]
 [input]
-10990
-78
-483
+integerOrFloat(10990, 78, 483)
 [/input]
 [output]
 11551 - Integer
