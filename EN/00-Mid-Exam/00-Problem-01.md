@@ -79,7 +79,7 @@ If the start index, specified in any command is out of range, to begin with, Pet
 
 | **Input** | **Output** |
 | --- | --- |
-|archeryTournament(['10|10|10|10|10', 'Shoot Left@0@2','Shoot Right@4@5','Shoot Right@6@5','Reverse','Game over'])| 5 \- 5 \- 10 \- 10 \- 10|
+|archeryTournament(['10\|10\|10\|10\|10', 'Shoot Left@0@2','Shoot Right@4@5','Shoot Right@6@5','Reverse','Game over'])| 5 \- 5 \- 10 \- 10 \- 10|
 ||Peter finished the archery tournament with 10 points\!|
 
 **Comments**
@@ -100,7 +100,7 @@ At this point he aquires 5 points.
 
 | **Input** | **Output** |
 | --- | --- |
-|archeryTournament(['20|30|40|50|60','Shoot Left@0@12','Shoot Right@4@15','Shoot Left@6@5','Reverse','Game over'])| 55 \- 45 \- 40 \- 30 \- 20|
+|archeryTournament(['20\|30\|40\|50\|60','Shoot Left@0@12','Shoot Right@4@15','Shoot Left@6@5','Reverse','Game over'])| 55 \- 45 \- 40 \- 30 \- 20|
 ||Peter finished the archery tournament with 10 points\!|
 
 
