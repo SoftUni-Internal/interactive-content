@@ -64,17 +64,15 @@ Round the time up to the nearest whole number.
 [hints]
 
 [hint]
-Time for lunch: 96 \* 1\/8 = 12.0
+Determine the time needed for lunch.
 [/hint]
 
 [hint]
-Time to relax: 96 \* 1\/4 = 24.0
+Calculate the relax time.
 [/hint]
 
 [hint]
-Time left: 96 \- 12 \- 24 = 60
-
-In this case, the time you would have left is more than or equal to the duration of the episode.
+Figure out how much time is left.
 
 Make sure that the right output is printed to the console.
 [/hint]
