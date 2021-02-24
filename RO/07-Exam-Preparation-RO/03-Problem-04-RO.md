@@ -60,20 +60,24 @@ Mai întâi, tipăriți următoarele linii:
 | --- | --- |
 |cinemaIncome([60, 10, 6, 3, 20, 15, 'Movie time!'])| There are 6 seats left in the cinema.|
 ||Cinema income - 255$|
+|cinemaIncome([140, 15, 15, 10, 5, 6, 7, 8, 9, 'Movie time!']) | There are 65 seats left in the cinema. |
+|| Cinema income - 355$|
 
-**Comments**
-
+[hints]
+[hint]
 Capacitatea sălii este de 60 locuri.
-
 
 Următorul element este numărul de persoane care au intrat în sală: 10.
 
 Prețul pe care îl vor plăti este 10 \* 5 = 50$. 
 
+[/hint]
+[hint]
 După ce primim numărul de 6 spectatori intrați în sală, dacă 6 se împarte la 3, atunci ei vor plăti cu 5$ mai puțin. 
 
 Continuăm până ce primim comanda "**Movie time!**" și apoi imprimăm datele de ieșire corespunzătoare.
-
+[/hint]
+[/hints]
 [/task-description]
 [code-io /]
 [tests]
