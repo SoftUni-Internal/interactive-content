@@ -171,7 +171,7 @@ Min number: -2
 [code-editor language=javascript]
 
 ```
-function powerOfNumbers(n, p) {
+function powerOfNumbers(p, n) {
   // Write your code here
 }
 ```
@@ -211,8 +211,7 @@ Create a program, which:
 [tests]
 [test]
 [input]
-4
-7
+powerOfNumbers(7, 4)
 [/input]
 [output]
 16384
@@ -220,8 +219,7 @@ Create a program, which:
 [/test]
 [test]
 [input]
-3
-12
+powerOfNumbers(12, 3)
 [/input]
 [output]
 531441
@@ -238,8 +236,7 @@ Create a program, which:
 [/test]
 [test]
 [input]
-8
-3
+powerOfNumbers(3, 8)
 [/input]
 [output]
 512
@@ -247,8 +244,7 @@ Create a program, which:
 [/test]
 [test]
 [input]
-2
-8
+powerOfNumbes(8, 2)
 [/input]
 [output]
 256
@@ -256,8 +252,7 @@ Create a program, which:
 [/test]
 [test]
 [input]
-3
-5
+powerOfNumbers(5, 3)
 [/input]
 [output]
 243
