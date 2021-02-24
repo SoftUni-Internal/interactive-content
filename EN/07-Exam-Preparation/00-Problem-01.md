@@ -25,7 +25,7 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Write a program, which calculates how long it will take you to watch all episodes of a TV series in minutes.
+Create a program, which calculates how long it will take you to watch all episodes of a TV series in minutes.
 
 As input, you will receive the number of seasons, the number of episodes per season and the duration of each episode.
 
@@ -34,20 +34,20 @@ In every episode there are advertisements, which increase its duration by 20\%.
 You should also keep in mind that every season ends with a special episode, which lasts 10 minutes longer than usual.
 
 ## Input
-As input you will receive 4 console elements:
+As input you will receive 4 arguments:
 
 - Name of the series: String
 
-- Number of seasons: int in the range \[1… 10\]
+- Number of seasons: Int in the range \[1… 10\]
 
-- Number of episodes: int in the range \[10… 80\]
+- Number of episodes: Int in the range \[10… 80\]
 
-- Duration of a standard episode without the advertisements: double in the range \[40.0… 65.0\]
+- Duration of a standard episode without the advertisements: Floating-point number in the range \[40.0… 65.0\]
 
 ## Output
-Print out on the console the time needed to watch all of the episodes, rounded down to the nearest whole number in the following format:
+Print to the console the time needed to watch all of the episodes, rounded down to the nearest whole number in the following format:
 
-- `Total time needed to watch the {name of the series} series is {time} minutes.`
+- **Total time needed to watch the** \{**name of the series**\} **series is** \{**time**\} **minutes.**
 
 ## Example
 | **Input** | **Output** |
@@ -57,18 +57,13 @@ Print out on the console the time needed to watch all of the episodes, rounded d
 
 **Comments** 
 
-Duration of advertisements per episode: 20\% from 55 \= 11.0
+The duration of advertisements per episode: 20\% of 55 \= 11.0
 
-Duration of an episode with the advertisements: 55 \+ 11 \= 66.0
+The duration of an episode with the advertisements: 55 \+ 11 \= 66.0
 
 Additional time to be added, because of the specials: 3\*10 \= 30
 
 Total time needed to watch the episodes: 66 \* 18 \* 3 \+ 30 = 3594.0
-
-## Example
-| **Input** | **Output** |
-| --- | --- |
-|tvSeries(['Flash', 5, 20, 51])| Total time needed to watch the Flash series is 6170 minutes.|
 
 [/task-description]
 [code-io /]
