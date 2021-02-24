@@ -163,18 +163,19 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program that applies a bonus to given points
+Create a program, which adds a bonus to given points
 
-* If points are between **0** and **3**, adds **5**
+* If the points are between **0** and **3**, add **5**
 
-* If points are between **4** and **6**, adds **15**
+* If the points are between **4** and **6**, add **15**
 
-* If points are between **7** and **9**, adds **20**
+* If the points are between **7** and **9**, add **20**
 
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|bonusPoints(4)| 19 |
+| bonusPoints(4) | 19 |
+| bonusPoints(8) | 28 |
 
 [/task-description]
 [tests]
@@ -287,24 +288,18 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program, which:
+Create a program, which determines if the **input** is a **food** or a **drink**:
 
-* Reads single line and print **drink**, **food** or **unknown**
+* Print "**food**" for the following: **curry**, **noodles**, **sushi** and **spaghetti**
 
-* Foods: curry, noodles, sushi, spaghetti
+* Print "**drink**" for the following: **tea**, **water** and **coffee**
 
-* Drinks: tea, water, coffee
-
-* Everything else is unknown
+* Print "**unknown**" for everything else
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
 |foodOrDrink('curry')| food |
-
-
-| **Input** | **Output** |
-| --- | --- |
 |foodOrDrink('flower')| unknown |
 
 [/task-description]
