@@ -108,7 +108,7 @@ There is room for more passengers!
 [/test]
 [test open]
 [input]
-lift([[20, '0 2 0'])
+lift([20, '0 2 0'])
 [/input]
 [output]
 The lift is full. 10 people currently in line.
@@ -188,7 +188,7 @@ The lift is full. 12 people currently in line.
 [/test]
 [test]
 [input]
-lift([18, 0 2 0 1 3 4'])
+lift([18, '0 2 0 1 3 4'])
 [/input]
 [output]
 The lift is full. 4 people currently in line.
