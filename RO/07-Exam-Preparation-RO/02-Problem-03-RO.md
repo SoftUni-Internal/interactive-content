@@ -68,14 +68,18 @@ Imprimați o linie pe consolă:
 | --- | --- |
 |cinema(['John Wick', 'Drink', 6])| Your bill is 72.00$|
 
-**Comments**
+[hints]
+[hint]
 Filmul este John Wick și este aleasă o băutura.
 
 Prețul unui bilet este de 12\$
-
+[/hint]
+[hint]
 6 bilete la fiecare 12\$ \-\> 72\$
 
 Pentru acest film nu se aplică discount, prețul total este de 72.00\$. 
+[/hint]
+[/hints]
 
 [/task-description]
 [code-io /]
