@@ -74,21 +74,15 @@ Rezultatul trebuie să fie formatat la două cifre după punctul zecimal.
 [hints]
 
 [hint]
-Primiți bugetul: 10$ și numărul de seriale - 3.
-
-Primul serial este Thrones cu prețul 5$, care are aplicată o reducere de 50\% din preț 5 \- 50\% = 2.50\$.  
-
-Al doilea serial este Riverdale, care nu are nicio reducere aplicată prețului.
-
-Al treilea serial nu are, de asemenea, nicio reducere.
+After receiving the budget and the series count, determine whether the series in the input have a discount.
+Then, calculate the price for each series.
 [/hint]
 [hint]
-Prețul serialului este 2.50 \+ 5 \+ 2 = 9.50$. 
-
-Bugetul este mai mare decât prețul serialelor, deci veți putea să le cumpărați.
+Calculate the price for the all of the series and check if you can buy them.
 [/hint]
 
 [/hints]
+
 [/task-description]
 [code-io /]
 [tests]
