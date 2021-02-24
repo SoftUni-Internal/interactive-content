@@ -69,8 +69,11 @@ Rezultatul trebuie să fie formatat la două cifre după punctul zecimal.
 | **Intrare** | **Ieșire** |
 | --- | --- |
 |budget([10, 3, 'Thrones', 5, 'Riverdale', 5, 'Gotham', 2])| You bought all the series and have 0.50$ left.|
+|budget([25, 6, 'Teen Wolf', 8, 'Protector', 5, 'TotalDrama', 5,'Area', 4, 'Thrones', 5, 'Lucifer', 9])|You need 2.00$ more to buy the series!|
 
-**Comments**
+[hints]
+
+[hint]
 Primiți bugetul: 10$ și numărul de seriale - 3.
 
 Primul serial este Thrones cu prețul 5$, care are aplicată o reducere de 50\% din preț 5 \- 50\% = 2.50\$.  
@@ -78,16 +81,14 @@ Primul serial este Thrones cu prețul 5$, care are aplicată o reducere de 50\% 
 Al doilea serial este Riverdale, care nu are nicio reducere aplicată prețului.
 
 Al treilea serial nu are, de asemenea, nicio reducere.
-
+[/hint]
+[hint]
 Prețul serialului este 2.50 \+ 5 \+ 2 = 9.50$. 
 
 Bugetul este mai mare decât prețul serialelor, deci veți putea să le cumpărați.
+[/hint]
 
-## Example
-| **Intrare** | **Ieșire** |
-| --- | --- |
-|budget([25, 6, 'Teen Wolf', 8, 'Protector', 5, 'TotalDrama', 5,'Area', 4, 'Thrones', 5, 'Lucifer', 9])|You need 2.00$ more to buy the series!|
-
+[/hints]
 [/task-description]
 [code-io /]
 [tests]
