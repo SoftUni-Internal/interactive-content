@@ -26,4 +26,4 @@ The output should be valid HTML + CSS + images that implement the above web page
 
 
  
-[/slide]
+ [/slide]

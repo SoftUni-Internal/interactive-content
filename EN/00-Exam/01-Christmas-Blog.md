@@ -19,4 +19,4 @@ Download the resources from [here](https://videos.softuni.org/resources/HTML-CSS
 * Pixel-perfect implementation is **NOT required**
 * The site should open correctly in the latest version of Chrome
  
- [/slide]
+[/slide]
