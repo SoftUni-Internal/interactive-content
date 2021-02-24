@@ -99,7 +99,7 @@ Followed by:
 [tests]
 [test open]
 [input]
-lift([15, '0 0 0 0'])
+lift([15, '0 0 0 0 0'])
 [/input]
 [output]
 There is room for more passengers!
