@@ -18,9 +18,9 @@
 **2. Introducere în buclele imbricate**
 
 **3. Bucle imbricate: bucle în bucle**
-- Buclele imbricate `for`
-- Buclele imbricate `while`
-- Combinarea buclelor imbricate `for` și `while`
+- Buclele imbricate "**for**"
+- Buclele imbricate "**while**"
+- Combinarea buclelor imbricate "**for**" și "**while**"
 
 **4. Exerciții: rezolvarea practică a problemelor**
 

@@ -15,9 +15,9 @@
 **2. Introduction to Nested Loops**
 
 **3. Nested Loops: Loops inside Loops**
-- Nested `for` Loops
-- Nested `while` Loops
-- Combining Nested `for` and `while` Loops
+- Nested **for** Loops
+- Nested **while** Loops
+- Combining Nested **for** and **while** Loops
 
 **4. Exercises: Practical Problem Solving**
 

@@ -8,11 +8,20 @@
 [code-task title="Cinema" taskId="js-pb-exam-preparation-Cinema" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function solve(input) {
+function cinema(input) {
 	// Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 For the upcoming premieres of three highly expected productions a local cinema has hired you to write a piece of software that calculates the price, which their clients have to pay, depending on the movie and the offer they have chosen.
@@ -27,16 +36,16 @@ Write a program that calculates what is the total price to be paid by the custom
 
 There are also promotional discounts available for two of the movies:
 
-- If the chosen movie is `Star Wars` and at least four tickets are bought, there is a `30%` family discount.
+- If the chosen movie is "**Star Wars**" and at least four tickets are bought, there is a 30\% family discount.
 
-- If the chosen movie is `Jumanji` and exactly 2 tickets are bought, there is `15%` discount for two.
+- If the chosen movie is "**Jumanji**" and exactly 2 tickets are bought, there is 15\% discount for two.
 
 ## Input
 As input you will receive 3 console elements:
 
-- First element: movie - string: `John Wick`, `Star Wars` or `Jumanji`
+- First element: movie - string: "**John Wick**", "**Star Wars**" or "**Jumanji**"
 
-- Second element: offer - string: `Drink`, `Popcorn` or `Menu`
+- Second element: offer - string: "**Drink**", "**Popcorn**" or "**Menu**"
 
 - Third element: number of tickets  – whole number in the range \[1… 30\]
 
@@ -49,35 +58,31 @@ Print one line on the console: `Your bill is {total price}$`
 ## Example
 | **Input** | **Output** |
 | --- | --- |
-|`['John Wick', 'Drink', '6']`| Your bill is 72.00$|
+|cinema(['John Wick', 'Drink', 6])| Your bill is 72.00$|
 
 **Comments**
 The movie is John Wick and drink is chosen.
 
 The price for one ticket is 12\$
 
-6 tickets each `12$ -> 72$`
+6 tickets each 12\$ \-\> 72\$
 
-For this movie there is no discount, total price is `72.00$`. 
+For this movie there is no discount, total price is 72.00\$. 
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-John Wick
-Drink
-23
+cinema(['John Wick', 'Drink', 6])
 [/input]
 [output]
-Your bill is 276.00$
+Your bill is 72.00$
 [/output]
 [/test]
 [test]
 [input]
-John Wick
-Popcorn
-11
+cinema(['John Wick', 'Popcorn', 11])
 [/input]
 [output]
 Your bill is 165.00$
@@ -85,9 +90,15 @@ Your bill is 165.00$
 [/test]
 [test]
 [input]
-John Wick
-Menu
-8
+cinema(['John Wick', 'Drink', 23])
+[/input]
+[output]
+Your bill is 276.00$
+[/output]
+[/test]
+[test]
+[input]
+cinema(['John Wick', 'Menu', 8])
 [/input]
 [output]
 Your bill is 152.00$
@@ -95,9 +106,7 @@ Your bill is 152.00$
 [/test]
 [test]
 [input]
-Star Wars
-Drink
-10
+cinema(['Star Wars', 'Drink', 10])
 [/input]
 [output]
 Your bill is 126.00$
@@ -105,9 +114,7 @@ Your bill is 126.00$
 [/test]
 [test]
 [input]
-Star Wars
-Popcorn
-3
+cinema(['Star Wars', 'Popcorn', 3])
 [/input]
 [output]
 Your bill is 75.00$
@@ -115,9 +122,7 @@ Your bill is 75.00$
 [/test]
 [test]
 [input]
-Star Wars
-Menu
-1
+cinema(['Star Wars', 'Menu', 1])
 [/input]
 [output]
 Your bill is 30.00$
@@ -125,9 +130,7 @@ Your bill is 30.00$
 [/test]
 [test]
 [input]
-Jumanji
-Drink
-2
+cinema(['Jumanji', 'Drink', 2])
 [/input]
 [output]
 Your bill is 15.30$
@@ -135,9 +138,7 @@ Your bill is 15.30$
 [/test]
 [test]
 [input]
-Jumanji
-Popcorn
-1
+cinema(['Jumanji', 'Popcorn', 1])
 [/input]
 [output]
 Your bill is 11.00$
@@ -145,9 +146,7 @@ Your bill is 11.00$
 [/test]
 [test]
 [input]
-Jumanji
-Menu
-3
+cinema(['Jumanji', 'Menu', 3])
 [/input]
 [output]
 Your bill is 42.00$

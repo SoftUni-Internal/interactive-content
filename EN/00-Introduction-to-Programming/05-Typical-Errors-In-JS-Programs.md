@@ -15,7 +15,7 @@ Some of the basic common mistakes we can face:
 
 - Wrong Syntax
 
-- Missing quotes `"` or bracket `(` or `)`
+- Missing quotes `"` or a bracket `(` or `)`
 
 - Confusing **Addition** and **Concatenation**
 
@@ -27,7 +27,7 @@ The `+` operator has two functionalities.
 
 - Confusing the **assignment** (`=`) and **equality** (`==`, `===`) operators.
 
-In JavaScript double equal and tripple equal sign are called comparison operators.
+In JavaScript, double equal and triple equal signs are called comparison operators.
 
 [/slide]
 

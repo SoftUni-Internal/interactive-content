@@ -82,10 +82,19 @@ function marketPlace(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Description
-Write a program that: 
+Create a program that: 
 
 - Reads a **product** and a day from the console. 
 
@@ -101,15 +110,14 @@ Write a program that:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-| `['Banana', 'Weekday']`| 2.50 |
+| marketPlace(['Banana', 'Weekday'])| 2.50 |
 
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-Banana
-Weekday
+marketPlace(['Banana', 'Weekday'])
 [/input]
 [output]
 2.50
@@ -117,11 +125,42 @@ Weekday
 [/test]
 [test]
 [input]
-Apple
-Weekend
+marketPlace(['Apple', 'Weekend'])
 [/input]
 [output]
 1.60
+[/output]
+[/test]
+[test]
+[input]
+marketPlace(['Kiwi', 'Weekday'])
+[/input]
+[output]
+2.20
+[/output]
+[/test]
+[test]
+[input]
+marketPlace(['Kiwi', 'Weekend'])
+[/input]
+[output]
+3.00
+[/output]
+[/test]
+[test]
+[input]
+marketPlace(['Apple', 'Weekday'])
+[/input]
+[output]
+1.30
+[/output]
+[/test]
+[test]
+[input]
+marketPlace(['Banana', 'Weekend'])
+[/input]
+[output]
+2.70
 [/output]
 [/test]
 [/tests]
@@ -144,9 +183,18 @@ function biggestNumberOfThree(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
-Write a program, which:
+Create a program, which:
 
   * Reads **3 numbers** from the console
   * Prints the **greatest** number
@@ -154,15 +202,13 @@ Write a program, which:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`['1', '2', '3']`| 3 |
+|biggestNumberOfThree(['1', '2', '3'])| 3 |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-1
-2
-3
+biggestNumberOfThree(['1', '2', '3'])
 [/input]
 [output]
 3
@@ -170,9 +216,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
--1
--5
--9
+biggestNumberOfThree(['-1', '-5', '-9'])
 [/input]
 [output]
 -1
@@ -180,12 +224,26 @@ Write a program, which:
 [/test]
 [test]
 [input]
-1
-5
-3
+biggestNumberOfThree(['1', '5', '3'])
 [/input]
 [output]
 5
+[/output]
+[/test]
+[test]
+[input]
+biggestNumberOfThree(['1', '1000000', '3'])
+[/input]
+[output]
+1000000
+[/output]
+[/test]
+[test]
+[input]
+biggestNumberOfThree(['1000', '5000', '10000000000000000000'])
+[/input]
+[output]
+10000000000000000000
 [/output]
 [/test]
 [/tests]

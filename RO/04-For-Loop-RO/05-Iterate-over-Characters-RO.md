@@ -1,11 +1,12 @@
 // sectionId: "Javascript::Programming-Basics::For-Loop::Iterate-Over-Characters"
 
 [slide hideTitle]
+
 # Iterația peste caractere
 
 [vimeo-video]
 [stream language="EN" videoId="487119574/ea95aca57d" default /]
-[stream language="RO" videoId="487119574/ea95aca57d"  /]
+[stream language="RO" videoId="487119574/ea95aca57d" /]
 [/video-vimeo]
 
 Este bine de știut că **buclele for** nu funcționează doar cu numere.
@@ -15,12 +16,12 @@ De asemenea, putem folosi **buclele for** pentru a itera peste**caractere**.
 Iată un exemplu despre cum o buclă poate trece secvențial prin unele **litere** din alfabetul englez:
 
 ```js live
- function latinLetters(startChar, endChar) {
+function latinLetters(startChar, endChar) {
   let startValue = startChar.charCodeAt(0);
   let endValue = endChar.charCodeAt(0);
-  let result = '';
+  let result = "";
   for (let i = startValue; i <= endValue; i++) {
-    result += String.fromCharCode(i) + ' ';
+    result += String.fromCharCode(i) + " ";
   }
   console.log(result);
 }
@@ -34,26 +35,25 @@ Calculatoarele pot înțelege numai numerele, deci un cod **ASCII** este repreze
 
 Acesta este un exemplu de parte a tabelului:
 
-| **Dec**|**Hex** |**Char** |**Dec**|**Hex**|**Char**|
-|:---: | :---:|:---: | :---:|:---:|:---: |
-|64|40|\@|96|60| \` |
-|65|41| A |97|61|a|
-|66|42|B|98|62|b|
-|67|43|C|99|63|c|
-|68|44|D|100|64|d|
-|69|45|E|101|65|e|
-|70|46|F|102|66|f|
-|71|47|G|103|67|g|
-|72|48|H|104|68|h|
-|73|49|I|105|69|i|
-|74|4A|J|106|6A|j|
+| **Dec** | **Hex** | **Char** | **Dec** | **Hex** | **Char** |
+| :-----: | :-----: | :------: | :-----: | :-----: | :------: |
+|   64    |   40    |    \@    |   96    |   60    |    \`    |
+|   65    |   41    |    A     |   97    |   61    |    a     |
+|   66    |   42    |    B     |   98    |   62    |    b     |
+|   67    |   43    |    C     |   99    |   63    |    c     |
+|   68    |   44    |    D     |   100   |   64    |    d     |
+|   69    |   45    |    E     |   101   |   65    |    e     |
+|   70    |   46    |    F     |   102   |   66    |    f     |
+|   71    |   47    |    G     |   103   |   67    |    g     |
+|   72    |   48    |    H     |   104   |   68    |    h     |
+|   73    |   49    |    I     |   105   |   69    |    i     |
+|   74    |   4A    |    J     |   106   |   6A    |    j     |
 
 Și aici puteți verifica întregul [Tabel ASCII](http://www.asciitable.com)
 
 Coloanele pe care le-ați folosi cel mai probabil în scopul acestui curs sunt cele **zecimale** și **charactere**.
 
 De exemplu, valoarea zecimală a caracterului **a** este **97** și cea corespunzătoare lui `@` este `64`.
-
 
 # Conversii de caractere
 
@@ -67,48 +67,56 @@ console.log(letter);
 Convertiți un caracter în codul ASCII / Unicode:
 
 ```js live
-let letter = 'A';
+let letter = "A";
 let asciiValue = letter.charCodeAt(0);
 console.log(asciiValue);
 ```
+
 [/slide]
 
 [slide hideTitle]
+
 # Problemă cu soluția: Latin Letters
-
-
 
 [code-task title="Latin Letters" taskId="pb-js-for-loop-Latin-Letters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
+
 ```
 function latinLetters(startChar, endChar) {
     // Write your code here...
 }
 
 ```
+
 [/code-editor]
 [code-adapter]
+
 ```
-(input, code) => code(...input);
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
 ```
+
 [/code-adapter]
 [task-description]
-Scrieți un program care:
+Creați un program care:
 
-* Citește 2 litere
-* Imprimă toate literele din intervalul dat inclusiv
+- Citește 2 litere
+- Imprimă toate literele din intervalul dat inclusiv
 
 # Example
-| **Input** | **Output** |
-| --- | --- |
-|'a', 'c'| a b c  |
+
+| **Input**              | **Output** |
+| ---------------------- | ---------- |
+| latinLetters('a', 'c') | a b c      |
 
 [/task-description]
 [tests]
 [test]
 [input]
-d
-u
+latinLetters('d', 'u')
 [/input]
 [output]
 d e f g h i j k l m n o p q r s t u
@@ -116,8 +124,7 @@ d e f g h i j k l m n o p q r s t u
 [/test]
 [test]
 [input]
-a
-d
+latinLetters('a', 'd')
 [/input]
 [output]
 a b c d
@@ -125,8 +132,7 @@ a b c d
 [/test]
 [test]
 [input]
-b
-p
+latinLetters('b', 'p')
 [/input]
 [output]
 b c d e f g h i j k l m n o p
@@ -134,8 +140,7 @@ b c d e f g h i j k l m n o p
 [/test]
 [test]
 [input]
-p
-t
+latinLetters('p', 't')
 [/input]
 [output]
 p q r s t

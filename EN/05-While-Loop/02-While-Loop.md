@@ -5,9 +5,11 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/05.While-Loop/05.PB-JavaScript-While-Loop-8-9-10-While-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In programming the `while` **loop** is used when we want to **repeat** the execution of a certain logic while a condition is in effect. 
+In programming, the "**while**" **loop** is used when we want to **repeat** the execution of a certain logic while a condition is in effect. 
 
-By **"condition"**, we understand every **expression** that returns `true` or `false`. When **the condition** is **wrong**, the while loop is **interrupted**, the program **continues** to execute the remaining code after the loop. 
+By **"condition"**, we understand every **expression** that returns `true` or `false`. 
+
+When **the condition** is **wrong**, the while loop is **interrupted**, the program **continues** to execute the remaining code after the loop. 
 
 [image assetsSrc="05-use-case-while.png" /]
 
@@ -18,11 +20,11 @@ while (condition) {
 }
 ```
 
-In the code example above, condition is any **expression that returns a Boolean result** - `true` or `false`. 
+In the code example above, the condition is any **expression that returns a Boolean result** - `true` or `false`. 
 
-It determines how long the loop body will be repeated and is called `loop condition`. 
+It determines how long the loop body will be repeated and is called "loop condition". 
 
-In this example the `loop body` is the programming code executed at each iteration of the loop, i.e. whenever the input condition is true.
+In this example, the "loop body" is the programming code executed at each iteration of the loop, i.e. whenever the input condition is true.
 
 In the while loop, firstly the Boolean expression is evaluated and if it is `true`, the sequence of operations in the body of the loop is executed. 
 
@@ -47,12 +49,16 @@ function decreasingNumbers (input) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {code(Number(input[0]))}
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
 ```
 [/code-adapter]
 [task-description]
 # Description
-Write a program, which:
+Create a program, which:
 
 * Reads a number from the console
 * Prints the numbers starting from the number to 1 (**inclusive**)
@@ -60,7 +66,7 @@ Write a program, which:
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|4| 4 |
+|decreasingNumbers(4)| 4 |
 ||3 |
 ||2 |
 || 1|
@@ -69,7 +75,7 @@ Write a program, which:
 [tests]
 [test]
 [input]
-5
+decreasingNumbers(5)
 [/input]
 [output]
 5
@@ -81,7 +87,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-4
+decreasingNumbers(4)
 [/input]
 [output]
 4
@@ -92,7 +98,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-3
+decreasingNumbers(3)
 [/input]
 [output]
 3
@@ -121,17 +127,32 @@ function sequence(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 
-Write a program that prints all **numbers ≤ n** of the series: **1, 3, 7, 15, 31, …,** assuming that each next number = **previous number * 2 + 1**.
+Create a program that prints all **numbers ≤ n** of the series: **1, 3, 7, 15, 31, …,** assuming that each next number = **previous number * 2 + 1**.
 
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|sequence(8)| 1 |
+||3 |
+||7 |
 
 [/task-description]
 [tests]
 [test]
 [input]
-3
+sequence(3)
 [/input]
 [output]
 1

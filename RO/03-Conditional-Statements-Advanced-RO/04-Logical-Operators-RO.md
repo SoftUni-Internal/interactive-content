@@ -150,9 +150,18 @@ function bonusPoints(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
-Scrieți un program care aplică un bonus punctelor date
+Creați un program care aplică un bonus punctelor date
 * Dacă punctele sunt între **0** și **3**, se adaugă **5**
 
 * Dacă punctele sunt între **4** și **6**, se adaugă **15**
@@ -162,13 +171,13 @@ Scrieți un program care aplică un bonus punctelor date
 # Exemplu
    | **Intrare** | **Ieșire** |
 | --- | --- |
-|4| 19 |
+|bonusPoints(4)| 19 |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-4
+bonusPoints(4)
 [/input]
 [output]
 19
@@ -176,7 +185,7 @@ Scrieți un program care aplică un bonus punctelor date
 [/test]
 [test]
 [input]
-8
+bonusPoints(8)
 [/input]
 [output]
 28
@@ -184,7 +193,7 @@ Scrieți un program care aplică un bonus punctelor date
 [/test]
 [test]
 [input]
-1
+bonusPoints(1)
 [/input]
 [output]
 6
@@ -266,9 +275,18 @@ function foodOrDrink(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
-Scrieți un program care:
+Creați un program care:
 
 * Citește o singură linie și tipărește **băutură**, **mâncare** sau **necunoscută**
 
@@ -279,28 +297,36 @@ Scrieți un program care:
 * Orice altceva este necunoscut
 
 # Exemplu
-| ***Intrare** | **Ieșire** |
+| **Intrare** | **Ieșire**  |
 | --- | --- |
-|curry| food |
+|foodOrDrink('curry')| food |
 
 
-| **Intrare** | **Ieșire** |
+| **Intrare** | **Ieșire**  |
 | --- | --- |
-|flower| unknown |
+|foodOrDrink('flower')| unknown |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-curry
+foodOrDrink('curry')
 [/input]
 [output]
 food
 [/output]
 [/test]
+[test open]
+[input]
+foodOrDrink('flower')
+[/input]
+[output]
+unknown
+[/output]
+[/test]
 [test]
 [input]
-tea
+foodOrDrink('tea')
 [/input]
 [output]
 drink
@@ -308,7 +334,7 @@ drink
 [/test]
 [test]
 [input]
-something
+foodOrDrink('something')
 [/input]
 [output]
 unknown

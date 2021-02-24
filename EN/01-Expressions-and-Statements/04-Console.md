@@ -18,7 +18,7 @@ The console runs console applications. They read text from the command line and 
 
 We are going to learn programming mostly through creating **console applications**.
 
-VS Code has its own console, which we are going to use to read input and print output:
+VS Code has its console, which we are going to use to read input and print output:
 [image assetsSrc="expressions-and-statements-console.png" /]
 [/slide]
 
@@ -50,7 +50,7 @@ You have a text box that says `please type your username and type your password`
 
 This is a way to receive user's input.
 
-Programs can also take the user data (input) from some rest API or as parameter in a function.
+Programs can also take the user data (input) from some rest API or as a parameter in a function.
 
 [/slide]
 
@@ -72,7 +72,7 @@ printNum(10);
 ```
 
 By default, the **input** is **text** – a text line, read from the console.
-- After you read a text from the console, additionally, you can **parse the text** to an number by `Number()`.
+- After you read a text from the console, additionally, you can **parse the text** to a number by `Number()`.
 
 - If parsing to a number is not done, **each number** will simply be **text**, and we **cannot do** arithmetic operations with it.
 
@@ -87,7 +87,7 @@ function town(homeTown) {
 town("Buccuresht");
 ```
 
-In this case the `{homeTown}` expression is replaced with the value of the input `homeTown`.
+In this case, the `{homeTown}` expression is replaced with the value of the input `homeTown`.
 
 When we enter **Buccuresht**, the output will be as follows: `I am from Buccuresht!` 
 
@@ -100,7 +100,7 @@ When we enter **Buccuresht**, the output will be as follows: `I am from Buccures
 
 You can pass **multiple parameters to a function.** 
 
-We have a function which **receives two parameters:** `firstNum` and `secondNum` and prints the sum of that calculation to the console. 
+We have a function that **receives two parameters:** `firstNum` and `secondNum` and prints the sum of that calculation to the console. 
 
 Here `firstNum` and `secondNum` exists only **in the function body.**
 
@@ -155,7 +155,7 @@ let name = "John";
 console.log(`Hi, ${name}`);
 ```
 
-The `$` prefix before a string in JS enables the so called **string interpolation**: replacing all expressions,which are placed in curly brackets `{ }` in the text with their values. 
+The `$` prefix before a string in JS enables the so-called **string interpolation**: replacing all expressions, which are placed in curly brackets `{ }` in the text with their values. 
 
 [/slide]
 
@@ -178,7 +178,7 @@ example('25');
 
 The above line of JS code **reads a number** from the first line on the console.
 
-If we try to assign a non-numeric value to this variable, for example `Hello`, we will receive `NaN` which is the acronym for **Not a number**. 
+If we try to assign a non-numeric value to this variable, for example, `Hello`, we will receive `NaN` which is the acronym for **Not a number**. 
 
 # Example: Calculating a Square Area
 This code demonstrates how we can calculate the area of a square by given length of its side: 
@@ -212,20 +212,30 @@ function sayHello (input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
-Write a function, which reads the user input from the console: name and then prints `Hello, {name}`, where `{name}` is the user input.  
+Create a program, which reads a user's name from the console and then prints "**Hello,** \{**name**\}", where \{**name**\} is the user input.  
 
 ## Example
 | **Input** | **Output** |
 | --- | --- |
-| John | Hello, John |
+| sayHello('John') | Hello, John |
+| sayHello('Anna') | Hello, Anna |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-John
+sayHello('John')
 [/input]
 [output]
 Hello, John
@@ -233,7 +243,7 @@ Hello, John
 [/test]
 [test]
 [input]
-Marie
+sayHello('Marie')
 [/input]
 [output]
 Hello, Marie
@@ -241,7 +251,7 @@ Hello, Marie
 [/test]
 [test]
 [input]
-asd
+sayHello('asd')
 [/input]
 [output]
 Hello, asd
@@ -249,7 +259,7 @@ Hello, asd
 [/test]
 [test]
 [input]
-George
+sayHello('George')
 [/input]
 [output]
 Hello, George

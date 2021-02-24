@@ -102,39 +102,48 @@ if (color == "red") {
 # Problemă cu soluția: Even or Odd
 [code-task title="Even or Odd" taskId="pb-js-conditional-statements-Even-or-Odd" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
-```js
+```
 function evenOrOdd(input) {
   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
-Scrieți un program, care verifică dacă un număr este **par sau impar**
+Creați un program, care verifică dacă un număr este **par sau impar**
 
-* Dacă este par, tipăriți  `Even`
-* Dacă este impar, tipăriți `Odd`
+* Dacă este par, tipăriți "**even**"
+* Dacă este impar, tipăriți "**odd**"
 
 # Exemplu
 | **Input** | **Output** |
 | --- | --- |
-| 4 | even |
-| 7 | odd |
+| evenOrOdd(4) | even |
+| evenOrOdd(7) | odd |
 
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-4
+evenOrOdd(4)
 [/input]
 [output]
 even
 [/output]
 [/test]
-[test]
+[test open]
 [input]
-7
+evenOrOdd(7)
 [/input]
 [output]
 odd
@@ -153,4 +162,5 @@ even
 [/code-task]
 
 [/slide]
+
 

@@ -5,7 +5,7 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-22-23-nested-wihle-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The use of nested `while` loops is very similar to the one of the `for`.
+The use of nested "**while**" loops is very similar to the one of the "**for**".
 
 Here is the syntax in JS:
 ```js
@@ -53,16 +53,25 @@ function triangleOfStars(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
-Write a program, which:
+Create a program, which:
 
 * Reads the **height** of a triangle from the console
 * Prints a **triangle of stars**
 # Example
 | **Input** | **Output**| 
 | --- | --- |
-| 5 | \* |
+| triangleOfStars(5) | \* |
 | | \*\* |
 | | \*\*\* |
 |  | \*\*\*\* |
@@ -73,7 +82,7 @@ Write a program, which:
 [tests]
 [test]
 [input]
-6
+triangleOfStars(6)
 [/input]
 [output]
 \*
@@ -86,7 +95,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-7
+triangleOfStars(7)
 [/input]
 [output]
 \*
@@ -100,7 +109,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-9
+triangleOfStars(9)
 [/input]
 [output]
 \*
@@ -133,18 +142,27 @@ function sumOfDigits(inputLines) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
-Continuously read numbers until `End` is entered:
+Continuously read numbers until **End** is entered:
 
 * Print the sum of digits for each number
 
-* Finally, print `Goodbye`
+* Finally, print **Goodbye**
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`['157', 99', 5', '438', 'End']`|Sum of digits = 13 |
+| sumOfDigits(['157', 99', 5', '438', 'End']) |Sum of digits = 13 |
 ||Sum of digits = 13|
 ||Sum of digits = 18|
 ||Sum of digits = 5|
@@ -156,11 +174,7 @@ Continuously read numbers until `End` is entered:
 [tests]
 [test]
 [input]
-124
-33
-2
-563
-End
+sumOfDigits(['124', '33', '2', '563', 'End'])
 [/input]
 [output]
 Sum of digits: 7
@@ -172,11 +186,7 @@ Goodbye
 [/test]
 [test]
 [input]
-24
-312
-3
-543
-End
+sumOfDigits(['24', '312', '3', '543', 'End'])
 [/input]
 [output]
 Sum of digits: 6
@@ -188,11 +198,7 @@ Goodbye
 [/test]
 [test]
 [input]
-1234
-212
-4
-343
-End
+sumOfDigits(['1234', '212', '4', '343', 'End'])
 [/input]
 [output]
 Sum of digits: 10
@@ -204,11 +210,7 @@ Goodbye
 [/test]
 [test]
 [input]
-123
-23
-234
-566
-End
+sumOfDigits(['123', '23', '234', '566', 'End'])
 [/input]
 [output]
 Sum of digits: 6
@@ -220,11 +222,7 @@ Goodbye
 [/test]
 [test]
 [input]
-789
-567
-567
-345
-End
+sumOfDigits(['789', '567', '567', '345', 'End'])
 [/input]
 [output]
 Sum of digits: 24

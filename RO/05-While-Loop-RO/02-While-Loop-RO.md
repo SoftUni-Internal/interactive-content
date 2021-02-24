@@ -24,9 +24,9 @@ while (condition) {
 
 În exemplul de cod de mai sus, condiția este orice **expresie care returnează un rezultat de tip boolean** - `true` sau `false`. 
 
-Aceasta determină de câte ori se va repeta conținutul buclei și se numește `condiția de repetiție`. 
+Aceasta determină de câte ori se va repeta conținutul buclei și se numește "condiția de repetiție". 
 
-În acest exemplu, `conținutul blocului repetitiv` este codul executat la fiecare iterație a buclei, cu alte cuvinte, oricând condiția dată este îndeplinită.
+În acest exemplu, "conținutul blocului repetitiv" este codul executat la fiecare iterație a buclei, cu alte cuvinte, oricând condiția dată este îndeplinită.
 
 În bucla while, mai întâi este evaluată expresia booleană, iar dacă aceasta e `true`, secvența de operații din conținutul buclei este executată. 
 
@@ -55,12 +55,16 @@ function decreasingNumbers (input) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {code(Number(input[0]))}
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
 ```
 [/code-adapter]
 [task-description]
 # Cerință
-Scrieți un program care:
+Creați un program care:
 
 * Citește un număr de pe consolă
 * Imprimă numerele începând de la numărul respectiv și până la 1 (**inclusiv**)
@@ -68,7 +72,7 @@ Scrieți un program care:
 # Exemplu
   | **Input** | **Output** |
 | --- | --- |
-|4| 4 |
+|decreasingNumbers(4)| 4 |
 ||3 |
 ||2 |
 || 1|
@@ -77,7 +81,7 @@ Scrieți un program care:
 [tests]
 [test]
 [input]
-5
+decreasingNumbers(5)
 [/input]
 [output]
 5
@@ -89,7 +93,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-4
+decreasingNumbers(4)
 [/input]
 [output]
 4
@@ -100,7 +104,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-3
+decreasingNumbers(3)
 [/input]
 [output]
 3
@@ -133,17 +137,32 @@ function sequence (input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Cerință
 
-Scrieți un program care imprimă toate **numerele ≤ n** din seria: **1, 3, 7, 15, 31, …,** presupunând că fiecare număr care urmează = **numărul precedent * 2 + 1**.
+Creați un program care imprimă toate **numerele ≤ n** din seria: **1, 3, 7, 15, 31, …,** presupunând că fiecare număr care urmează = **numărul precedent * 2 + 1**.
 
+# Exemplu
+  | **Input** | **Output** |
+| --- | --- |
+|sequence(8)| 1 |
+||3 |
+||7 |
 
 [/task-description]
 [tests]
 [test]
 [input]
-3
+sequence(3)
 [/input]
 [output]
 1

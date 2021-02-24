@@ -5,7 +5,7 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-17-18-19-Integrated-Development-Environments-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In order to program we need an **Integrated Development Environment** (IDE). 
+To program, we need an **Integrated Development Environment** (IDE). 
 
 An **Integrated Development Environment** (or IDE) is a combination of some traditional tools for creating software applications.
 
@@ -17,7 +17,7 @@ They also may contain a **debugger** for tracking the program and seeking out er
 
 Development environments are convenient, because they integrate **everything necessary for the development** of a program, in some cases even without the need for external tools.
 
-If we don't use an IDE, we would have to write the code in a **text editor**, compile it with a command on the console, run it with another console command and eventually include additional commands whenever needed, which is very time consuming. 
+If we don't use an IDE, we would have to write the code in a **text editor**, compile it with a command on the console, run it with another console command, and eventually include additional commands whenever needed, which is very time-consuming. 
 
 For programming with **JavaScript**, the most commonly used IDE is [Visual Studio Code](https://code.visualstudio.com), which is developed and distributed freely by Microsoft.
 
@@ -44,7 +44,7 @@ This is an example of how this IDE looks (the Visual Studio Code IDE for JavaScr
 
 We need **Node.js** so that we can execute JavaScript code outside of a browser.
 
-* server-side JS runtime.
+* Server-side JS runtime
 
 [image assetsSrc="intro-to-programming-3.png" /]
 
@@ -55,7 +55,7 @@ You can download [Node.js](https://nodejs.org/en/download/).
 Select your OS and go on with installing.
 [image assetsSrc="intro-to-programming-install-nodejs-2.png" /]
 
-Let's continue with the installation of the integrated environment **Microsoft Visual Studio Code**.
+Let us continue with the installation of the integrated environment **Microsoft Visual Studio Code**.
 
 Installing later versions of Visual Studio Code should be very similar.
 
@@ -68,7 +68,7 @@ The next lines describe in detail the steps for the installation of Visual Studi
 After we download the installation file and start it, the following screen appears:
 [image assetsSrc="intro-to-programming-install-vscode-1.png" /]
 
-Press the `[Next]` button and you will see the screen bellow:
+Press the `[Next]` button and you will see the screen below:
 [image assetsSrc="intro-to-programming-install-vscode-2.png" /]
 
 You can choose a destination location or leave the default one. Then press the `[Next]` button again.
@@ -76,23 +76,25 @@ You can choose a destination location or leave the default one. Then press the `
 
 Now we have to specify a name for the program folder which will be created in the Start Menu. 
 
-The next step is to put check marks on the these tasks:
+The next step is to put check marks on these tasks:
 [image assetsSrc="intro-to-programming-install-vscode-4.png" /]
 
-VS is now ready for installation. Press the `[Install]` button. Basically this is everything.
+VS is now ready for installation. Press the `[Install]` button. This is everything.
 [image assetsSrc="intro-to-programming-install-vscode-5.png" /]
 
-Installation of Visual Studio begins, and a screen like the one bellow will appear:
+Installation of Visual Studio begins, and a screen like the one below will appear:
 [image assetsSrc="intro-to-programming-install-vscode-6.png" /]
 
-After Visual Studio is installed, an informative screen will appear. Press the `[Launch]` button to start it.
+After Visual Studio is installed, an information screen will appear. Press the `[Launch]` button to start it.
 [image assetsSrc="intro-to-programming-install-vscode-7.png" /]
 
 Upon **starting VS Code** the main view of Visual Studio Code is displayed. 
 
 [image assetsSrc="intro-to-programming-install-vscode-8.png" /]
 
-That's all. You are ready to work with Visual Studio Code.
+That is all! 
+
+You are ready to work with Visual Studio Code.
 [/slide]
 
 [slide hideTitle]
@@ -122,9 +124,9 @@ Alternative IDE (online)
 [video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-25-What-is-Visual-Studio-Code-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-Visual Studio Code is open source-code editor.
+Visual Studio Code is an open-source code editor.
 
-It can be used with programming languages like: **Java**, **JavaScript**, **Go**, **Node.js** and many more.
+It can be used with programming languages like **Java**, **JavaScript**, **Go**, **Node.js**, and many more.
 
 Visual Studio Code allows users to open one or more directories. 
 
@@ -142,17 +144,17 @@ We can **extend** it via extensions, which are available through a central repos
 
 Visual Studio Code has many extensions that can make our working flow more pleasant.
 
-- **Beautify** - Beautify formats files like HTML. The unformatted code in these files is converted into formatted.
+- **Beautify** - Beautify formats files like HTML. The unformatted code in these files is converted into formatted
  
 We must enable this setting in the VS Code preferences tab and it will automatically format all the code.
 
-- **ESLint** - ESLint analyze our JavaScript code and helps us to fix the errors.
+- **ESLint** - ESLint analyze our JavaScript code and helps us to fix the errors
 
-- **JSHint** - JSHint enforce developers to use JavaScript coding convensions.
+- **JSHint** - JSHint enforce developers to use JavaScript coding convensions
 
 It helps to detect potential bugs in JavaScript code.
 
-We use different extensions depending on what type of project we are working.
+We use different extensions depending on what type of project we are working on.
 
 
 
@@ -164,17 +166,17 @@ We use different extensions depending on what type of project we are working.
 
 [video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-29-30-Projects-in-VSC-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The video above is showing how we can setup a basic project.
+The video above is showing how we can set up a basic project.
 
-First, we need an empty folder. Then, let's drag the folder in to the Visual Studio Code.
+First, we need an empty folder. Then, let's drag the folder into the Visual Studio Code.
 
-The VSC will create a empty project for us.
+The VSC will create an empty project for us.
 
 Next, we must create a new file and name it.
 
 The **extension** `.js` is important, since Visual Studio Code must know what type of language to use.
 
-After we finished with writing our program, we must execute the code with **Note.js**.
+After we finished writing our program, we must execute the code with **Note.js**.
 
 
 [/slide]

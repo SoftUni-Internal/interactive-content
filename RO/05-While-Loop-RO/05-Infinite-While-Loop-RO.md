@@ -11,7 +11,7 @@
 
 Folosim denumirea de buclă infinită pentru o buclă care repetă la nesfârșit condiția din corpul său.
 
-În cazul buclelor `while` și `do-while`, capătul este o expresie condițională care returnează întotdeauna variabila `true`. 
+În cazul buclelor "**while**" și "**do-while**", capătul este o expresie condițională care returnează întotdeauna variabila `true`. 
 
 ```js
 while (true) {
@@ -50,5 +50,5 @@ while (command != "End") {
 }
 ```
 
-În acest caz, valoarea variabilei `command` s-a modificat cu fiecare iterație, iar apariția **buclei infinite** a fost evitată. 
+În acest caz, valoarea variabilei "command" s-a modificat cu fiecare iterație, iar apariția **buclei infinite** a fost evitată. 
 [/slide]

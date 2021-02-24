@@ -23,14 +23,14 @@ We want to calculate the price for a certain product, depending on the day of th
 
 ```
 Read the input
-If product is banana
+If the product is banana
   If it is a weekday the price is 2.50
-  Otherwise the price is 2.70
-If product is apple
+  Otherwise, the price is 2.70
+If the product is apple
   If its a weekday the price is 1.30
-  Otherwise the price is 1.60
-If product is kiwi
+  Otherwise, the price is 1.60
+If the product is a kiwi
   If its a weekday the price is 2.20
-  Otherwise the price is 3.00
+  Otherwise, the price is 3.00
 ```
 [/slide]

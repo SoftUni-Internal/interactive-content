@@ -19,14 +19,14 @@ We can represent this process using **for loops.**
 
 More importantly, this is a good example of why we would even need more than one for-loop to complete any task. 
 
-As you can see in the pseudocode example there are two for loops: an inner and an outer one. 
+As you can see in the pseudocode example there are two loops: an inner and an outer one. 
 
 The outer one represents the hours, while the inner one - the minutes. 
 
 # Pseudocode
 ```
-for h which is in range from 0 to 23
-    for m which is in range from 0 to 59
-        print h and m in format similar to the clock
+for h which is in the range from 0 to 23
+    for m which is in the range from 0 to 59
+        print h and m in a format similar to the clock
 ```
 [/slide]

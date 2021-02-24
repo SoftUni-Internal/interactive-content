@@ -27,9 +27,9 @@ Because a condition can’t be simultaneously `true` and `false`, the then-state
 
 After the then-statement or the `else`-statement runs, control is transferred to the next statement after the `if` statement.
 
-In an `if` statement that doesn’t include an else statement, if condition is `true`, the then-statement runs. 
+In an `if` statement that does not include an else statement, if the condition is `true`, the then-statement runs. 
 
-If condition is `false`, control is transferred to the next statement after the if statement.
+If the condition is `false`, control is transferred to the next statement after the if statement.
 
 Both the then-statement and the else-statement can consist of a single statement or multiple statements that are enclosed in braces `{ }`. 
 
@@ -59,7 +59,7 @@ function example(input) {
 
 When we have **only one command** in the body of the **if construction**, we can **skip the curly brackets**, indicating the conditional operator body. 
 
-When we want to execute **block of code** (group of commands), curly brackets are **required**. 
+When we want to execute **block of code** (a group of commands), curly brackets are **required**. 
 
 In case we drop them, **only the first line** after the **if clause** will be executed.
 
@@ -94,40 +94,49 @@ if (color == "red") {
 
 [code-task title="Even or Odd" taskId="pb-js-conditional-statements-Even-or-Odd" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
-```js
+```
 function evenOrOdd(input) {
     // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
-Write a program, which checks if a number is **even** or **odd**
+Create a program, which checks if a number is **even** or **odd**
 
-  * If it is even, print `even`
-  * If it is odd, print `odd`
+  * If it is even, print "**even**"
+  * If it is odd, print "**odd**"
 
 # Example
 
 | **Input** | **Output** |
 | --- | --- |
-| 4 | even |
-| 7 | odd |
+| evenOrOdd(4) | even |
+| evenOrOdd(7) | odd |
 
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-4
+evenOrOdd(4)
 [/input]
 [output]
 even
 [/output]
 [/test]
-[test]
+[test open]
 [input]
-7
+evenOrOdd(7)
 [/input]
 [output]
 odd

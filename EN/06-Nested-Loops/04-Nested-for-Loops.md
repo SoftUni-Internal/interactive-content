@@ -70,9 +70,18 @@ function triangleOfStars(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
-Write a program, which:
+Create a program, which:
 
 * Reads the **height** of a triangle from the console
 
@@ -81,7 +90,7 @@ Write a program, which:
 # Example
 | **Input** | **Output**| 
 | --- | --- |
-| 5 | \* |
+| triangleOfStars(5) | \* |
 | | \*\* |
 | | \*\*\* |
 |  | \*\*\*\* |
@@ -92,7 +101,7 @@ Write a program, which:
 [tests]
 [test]
 [input]
-5
+triangleOfStars(5)
 [/input]
 [output]
 \*
@@ -105,7 +114,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-6
+triangleOfStars(6)
 [/input]
 [output]
 \*
@@ -119,7 +128,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-8
+triangleOfStars(8)
 [/input]
 [output]
 \*

@@ -5,11 +5,11 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-15-16-nested-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-A nested loop is a construction with which one loop is placed inside \(inner\) the body of another one \(outer\). 
+A nested loop is construction with which one loop is placed inside \(inner\) the body of another one \(outer\). 
 
-There can be both nested `for` and `while` loops. 
+There can be both nested "**for**" and "**while**" loops. 
 
-You can not only nest `for` in `for` and `while` in `while`, but also for in `while` and vice versa: 
+You can not only nest "**for**" in "**for**" and "**while**" in "**while**", but also for in "**while**" and vice versa: 
 
 ```js
 // Outer Loop
@@ -32,7 +32,7 @@ This happens the following way:
 
 * When the specified value for **ending the loop is reached**, the program goes back one step up and continues executing the previous (outer) loop: 
 
-    * the controlling variable of the outer loop changes with a step, a check is performed to see if the end condition is met, if not (inner) loop is repeated 
+    * the controlling variable of the outer loop changes with a step, a check is performed to see if the end condition is met if not (inner) loop is repeated 
 
 * This is repeated until the variable of the outer loop meets the condition, ending the loop 
 
@@ -67,7 +67,7 @@ It prints an n number of stars on a row.
 
 After the **inner loop** finishes on the first iteration of the outer one, the outer loop will continue, i.e. an empty row will be printed out. 
 
-After that, the variable of **the first** loop will get incremented and **the second** loop will be executed again. 
+After that, the variable of **the first** loop will get incremented, and **the second** loop will be executed again. 
 
-The inner loop will be repeated as many times as the body of the outer loop executes, in this case n times. 
+The inner loop will be repeated as many times as the body of the outer loop executes, in this case, n times. 
 [/slide]

@@ -78,47 +78,56 @@ function example(input) {
 # Problemă cu soluția: Freezing Weather
 [code-task title="Freezing weather" taskId="pb-js-conditional-statements-Freezing-Weather" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
-```js
+```
 function freezingWeather(input) {
   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Descriere
-Scrieți un program pentru a verifica vremea înghețată:
+Creați un program pentru a verifica vremea înghețată:
 
 * Citiți o temperatură în Celsius (a floating-point number)
-* Tipăriți `Freezing weather!`, Dacă temperatura este **egală cu** sau **mai mică decât 0**
+* Tipăriți "**Freezing weather!**", Dacă temperatura este **egală cu** sau **mai mică decât 0**
 
 # Exemplu
 
 | **Input** | **Output** |
 | --- | --- |
-| -2 | Freezing weather! |
-| 4 | (no output) |
+| freezingWeather(-2) | Freezing weather! |
+| freezingWeather(4) | (no output) |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
--2
+freezingWeather(-2)
 [/input]
 [output]
 Freezing weather!
 [/output]
 [/test]
-[test]
+[test open]
 [input]
-4
+freezingWeather(4)
 [/input]
 [output]
 [/output]
 [/test]
 [test]
 [input]
--5
+freezingWeather(-5)
 [/input]
 [output]
 Freezing weather!
@@ -129,4 +138,3 @@ Freezing weather!
 [/code-task]
 
 [/slide]
-

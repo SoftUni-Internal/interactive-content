@@ -12,9 +12,18 @@ function calculateSpeed (input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
-Scrieți o funcție care obține un număr întreg și calculează aria unui pătrat cu latura `a`.
+Creați un program care obține un număr întreg și calculează aria unui pătrat cu latura **a**.
 
 - Obțineți un număr în argumentul funcției
 
@@ -25,14 +34,14 @@ Scrieți o funcție care obține un număr întreg și calculează aria unui pă
 ## Exemplu
 | **Input** | **Output** |
 | --- | --- |
-| 5 | 25 |
+| calculateSpeed(5) | 25 |
 
 
 [/task-description]
 [tests]
 [test]
 [input]
-2
+calculateSpeed(2)
 [/input]
 [output]
 4
@@ -40,7 +49,7 @@ Scrieți o funcție care obține un număr întreg și calculează aria unui pă
 [/test]
 [test]
 [input]
-5
+calculateSpeed(5)
 [/input]
 [output]
 25
@@ -48,7 +57,7 @@ Scrieți o funcție care obține un număr întreg și calculează aria unui pă
 [/test]
 [test]
 [input]
-100
+calculateSpeed(100)
 [/input]
 [output]
 10000
@@ -56,7 +65,7 @@ Scrieți o funcție care obține un număr întreg și calculează aria unui pă
 [/test]
 [test]
 [input]
-1
+calculateSpeed(1)
 [/input]
 [output]
 1
@@ -84,10 +93,19 @@ function currencyConverter (input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 
-Scrieți un program pentru a converti de la USD la EUR:
+Creați un program pentru a converti de la USD la EUR:
 
 * Citiți un **număr cu virgulă mobilă**: **dolari** care urmează să fie convertiți
 
@@ -98,15 +116,15 @@ Scrieți un program pentru a converti de la USD la EUR:
 ## Exemplu
 | **Input** | **Output** |
 | --- | --- |
-| 17 | 14.96 |
-| 87 | 76.56 |
+| currencyConverter(17) | 14.96 |
+| currencyConverter(87) | 76.56 |
 
 
 [/task-description]
 [tests]
 [test]
 [input]
-10.0
+currencyConverter(10.0)
 [/input]
 [output]
 8.8
@@ -114,7 +132,7 @@ Scrieți un program pentru a converti de la USD la EUR:
 [/test]
 [test]
 [input]
-5.0
+currencyConverter(5.0)
 [/input]
 [output]
 4.4
@@ -122,7 +140,7 @@ Scrieți un program pentru a converti de la USD la EUR:
 [/test]
 [test]
 [input]
-25.5
+currencyConverter(25.5)
 [/input]
 [output]
 22.44
@@ -130,7 +148,7 @@ Scrieți un program pentru a converti de la USD la EUR:
 [/test]
 [test]
 [input]
-12.0
+currencyConverter(12.0)
 [/input]
 [output]
 10.56
@@ -152,31 +170,40 @@ function areaOfTriangle (input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
-Scrieți o funcție care obține un **unghi** în [radiane](https://en.wikipedia.org/wiki/Radian) and converts it to [degrees](https://en.wikipedia.org/wiki/Degree_(angle)). 
+Creați un program care obține un **unghi** în [radiane](https://en.wikipedia.org/wiki/Radian) and converts it to [degrees](https://en.wikipedia.org/wiki/Degree_(angle)). 
 
 Utilizați formula: 
 
-- `grade = radiane * 180 / π` 
+- **grade = radiane * 180 / π**
 
-Numărul **π** în programele JavaScript poate fi accesat prun `Math.PI`. 
-Rotunjiți rezultatul la cel mai apropiat număr întreg, folosind `toFixed(0)`.
+Numărul **π** în programele JavaScript poate fi accesat prun **Math.PI**. 
+Rotunjiți rezultatul la cel mai apropiat număr întreg, folosind **toFixed(0)**.
 
 
 ## Exemplu
 | **Input** | **Output** |
 | --- | --- |
-| 3.1416 | 180 |
-| 6.2832 | 360 |
-| 0.7854 | 45 |
+| areaOfTriangle(3.1416) | 180 |
+| areaOfTriangle(6.2832) | 360 |
+| areaOfTriangle(0.7854) | 45 |
 
 
 [/task-description]
 [tests]
 [test]
 [input]
-0.5236
+areaOfTriangle(0.5236)
 [/input]
 [output]
 30
@@ -184,7 +211,7 @@ Rotunjiți rezultatul la cel mai apropiat număr întreg, folosind `toFixed(0)`.
 [/test]
 [test]
 [input]
-0.7854
+areaOfTriangle(0.7854)
 [/input]
 [output]
 45
@@ -192,7 +219,7 @@ Rotunjiți rezultatul la cel mai apropiat număr întreg, folosind `toFixed(0)`.
 [/test]
 [test]
 [input]
-6.2832
+areaOfTriangle(6.2832)
 [/input]
 [output]
 360
@@ -200,7 +227,7 @@ Rotunjiți rezultatul la cel mai apropiat număr întreg, folosind `toFixed(0)`.
 [/test]
 [test]
 [input]
-3.1416
+areaOfTriangle(3.1416)
 [/input]
 [output]
 180
@@ -228,10 +255,19 @@ function daysToMinutes (input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 
-Scrieți un program care covertează zilele în minute:
+Creați un program care covertează zilele în minute:
 
 * Citiți un număr **întreg** (**zilele** care trebuie să fie convertite)
 
@@ -242,15 +278,15 @@ Scrieți un program care covertează zilele în minute:
   ## Exemplu
 | **Input** | **Output** |
 | --- | --- |
-| 2 | 2880 |
-| 5 | 7200 |
+| daysToMinutes(2) | 2880 |
+| daysToMinutes(5) | 7200 |
 
 
 [/task-description]
 [tests]
 [test]
 [input]
-6
+daysToMinutes(6)
 [/input]
 [output]
 8640
@@ -258,7 +294,7 @@ Scrieți un program care covertează zilele în minute:
 [/test]
 [test]
 [input]
-10
+daysToMinutes(10)
 [/input]
 [output]
 14400
@@ -266,7 +302,7 @@ Scrieți un program care covertează zilele în minute:
 [/test]
 [test]
 [input]
-32
+daysToMinutes(32)
 [/input]
 [output]
 46080
@@ -274,7 +310,7 @@ Scrieți un program care covertează zilele în minute:
 [/test]
 [test]
 [input]
-9
+daysToMinutes(9)
 [/input]
 [output]
 12960
@@ -296,9 +332,18 @@ function circleArea (input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
-Scrieți un program pentru a calcula aria și perimetrul unui **cerc**:
+Creați un program pentru a calcula aria și perimetrul unui **cerc**:
 
 * Citiți numărul în virgulă mobilă: **raza** cercului
 
@@ -309,7 +354,7 @@ Scrieți un program pentru a calcula aria și perimetrul unui **cerc**:
   ## Example
 | **Input** | **Output** |
 | --- | --- |
-| 7 | Area = 153.94 |
+| circleArea(7) | Area = 153.94 |
 |  | Perimeter = 43.98 |
 
 
@@ -317,7 +362,7 @@ Scrieți un program pentru a calcula aria și perimetrul unui **cerc**:
 [tests]
 [test]
 [input]
-12.0
+circleArea(12.0)
 [/input]
 [output]
 Area = 452.39
@@ -326,7 +371,7 @@ Perimeter = 75.40
 [/test]
 [test]
 [input]
-10.0
+circleArea(10.0)
 [/input]
 [output]
 Area = 314.16
@@ -335,7 +380,7 @@ Perimeter = 62.83
 [/test]
 [test]
 [input]
-5.5
+circleArea(5.5)
 [/input]
 [output]
 Area = 95.03
@@ -344,7 +389,7 @@ Perimeter = 34.56
 [/test]
 [test]
 [input]
-9.4
+circleArea(9.4)
 [/input]
 [output]
 Area = 277.59
@@ -367,11 +412,20 @@ function fourOperations(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 Peter dorește să amenajeze teritoriul curții sale și de accea el a  yard, așa că a angajat o **companie** care să o facă pentru el.
 
-Scrieți o funcție care **calculează** fondurile necesare pe care Peter va trebui să le **plătească** pentru acest serviciu.
+Creați un program care **calculează** fondurile necesare pe care Peter va trebui să le **plătească** pentru acest serviciu.
 
 Prețul pe metru pătrat este de **7,61 dolari** cu TVA.
 
@@ -379,44 +433,44 @@ Deoarece curtea lui Peter este destul de **mare**, firma contractantă oferă o 
 
 ## Input
 Funcția primește un argument:
-- Metri pătrați, care vor fi amenajați - un număr real în intervalul `[0.00… 10000.00]`
+- Metri pătrați, care vor fi amenajați - un număr real în intervalul \[0.00… 10000.00\]
 
 ## Output
  Două linii sunt imprimate pe consolă:
 
-- `The final price is: {final price of the service} dollars.`
+- The final price is: \{final price of the service\} dollars.
 
-- `The discount is: {discount} dollars.`
+- The discount is: \{discount\} dollars.
 
 ## Exemplu
 | **Input** | **Output** |
 | --- | --- |
-| 550 | The final price is: 3432.11 dollars. |
+| fourOperations(550) | The final price is: 3432.11 dollars. |
 |  | The discount is: 753.39 dollars. |
 
 ## Explicații
 Calculăm prețul pentru amenajarea întregi curți:
-- `550 * 7.61 = $4185.5`
+- **550 * 7.61 = $4185.5**
 
 Reducem reducerea din suma totală:
 
-- `0.18 * 4185.5 = $753.39`
+- **0.18 * 4185.5 = $753.39**
 
 Calculăm prețul final al serivicului:
 
-- `4185.5 – 753.39 -> $3432.11`
+- **4185.5 – 753.39 -> $3432.11**
 
 
 | **Input** | **Output** |
 | --- | --- |
-| 150 | The final price is: 936.03 dollars. |
+| fourOperations(150) | The final price is: 936.03 dollars. |
 |  | The discount is: 205.47 dollars. |
 
 [/task-description]
 [tests]
 [test]
 [input]
-550
+fourOperations(550)
 [/input]
 [output]
 The final price is: 3432.11 dollars.
@@ -425,7 +479,7 @@ The discount is: 753.39 dollars.
 [/test]
 [test]
 [input]
-335
+fourOperations(335)
 [/input]
 [output]
 The final price is: 2090.467 dollars.
@@ -434,7 +488,7 @@ The discount is: 458.883 dollars.
 [/test]
 [test]
 [input]
-412
+fourOperations(412)
 [/input]
 [output]
 The final price is: 2570.9624000000003 dollars.
@@ -443,7 +497,7 @@ The discount is: 564.3576 dollars.
 [/test]
 [test]
 [input]
-500
+fourOperations(500)
 [/input]
 [output]
 The final price is: 3120.1 dollars.

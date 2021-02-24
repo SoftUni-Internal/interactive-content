@@ -8,40 +8,57 @@
 [code-task title="Guess the Password" taskId="pb-js-Conditions-Guess-The-Password" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
-```js
+```
 function guessThePassword(input) {
   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Enunț
-Scrieți un program pentru a verifica o parolă:
+Creați un program pentru a verifica o parolă:
 
 * Citiți un string pentru: parola **guess**
-  * Imprimați `Welcome` dacă parola este `s3cr3t!`
-  * Imprimați `Wrong password!` în orice altă situație
+  * Imprimați "**Welcome**" dacă parola este "**s3cr3t!**"
+  * Imprimați "**Wrong password!**" în orice altă situație
 
 # Exemplu
 
 | **Input** | **Output** |
 | --- | --- |
-| s3cr3t! | Welcome |
-| qwerty | Wrong password! |
+| guessThePassword('s3cr3t!') | Welcome |
+| guessThePassword('qwerty') | Wrong password! |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-s3cr3t!
+guessThePassword('s3cr3t!')
 [/input]
 [output]
 Welcome
 [/output]
 [/test]
+[test open]
+[input]
+guessThePassword('qwerty')
+[/input]
+[output]
+Wrong password!
+[/output]
+[/test]
 [test]
 [input]
-wrong
+guessThePassword('wrong')
 [/input]
 [output]
 Wrong password!
@@ -58,34 +75,43 @@ Wrong password!
 
 [code-task title="Boiling Water" taskId="pb-js-Conditions-Boiling-Water" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
-```js
+```
 function boilingWater(input) {
     // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Enunț
-Scrieți un program care caută apă la fierbere: 
+Creați un program care caută apă la fierbere: 
 
 * Citiți un număr în virgulă mobilă: temperatura  **temperature** (in °C)
 
-* Imprimați `The water is boiling` dacă numărul este `>100`
+* Imprimați "**The water is boiling**" dacă numărul este \> 100
 
-* Imprimați `The water is not hot enough` în orice altă situație
+* Imprimați "**The water is not hot**" în orice altă situație
 
   # Exemplu
 
 | **Input** | **Output** |
 | --- | --- |
-| 104.8 | The water is boiling |
-| 29 | The water is not hot enough |
+| boilingWater(104.8) | The water is boiling |
+| boilingWater(29) | The water is not hot enough |
 
 [/task-description]
 [tests]
 [test]
 [input]
-105
+boilingWater(104.8)
 [/input]
 [output]
 The water is boiling
@@ -93,7 +119,23 @@ The water is boiling
 [/test]
 [test]
 [input]
-10
+boilingWater(29)
+[/input]
+[output]
+The water is not hot enough
+[/output]
+[/test]
+[test]
+[input]
+boilingWater(105)
+[/input]
+[output]
+The water is boiling
+[/output]
+[/test]
+[test]
+[input]
+boilingWater(10)
 [/input]
 [output]
 The water is not hot enough
@@ -110,37 +152,54 @@ The water is not hot enough
 
 [code-task title="Speed Info" taskId="pb-js-Conditions-Speed-Info" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
-```js
+```
 function speedInfo(input) {
   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Enunț
-Scrieți un program pentru a verifica viteza mare/mică: 
+Creați un program pentru a verifica viteza mare/mică: 
 
 * Citiți  **speed** (un număr floating-point)
 
-* Imprimați `Slow` dacă viteza este `<= 30`
+* Imprimați "**Slow**" dacă viteza este \<\= 30
 
-* Imprimați `Fast` dacă viteza este `> 30`
+* Imprimați "**Fast**" dacă viteza este \> 30
 
   # Exemplu
 
 | **Input** | **Output** |
 | --- | --- |
-| 30 | Slow |
-| 60 | Fast |
+| speedInfo(30) | Slow |
+| speedInfo(60) | Fast |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-30
+speedInfo(30)
 [/input]
 [output]
 Slow
+[/output]
+[/test]
+[test open]
+[input]
+speedInfo(60)
+[/input]
+[output]
+Fast
 [/output]
 [/test]
 [test]
@@ -151,22 +210,48 @@ Slow
 Fast
 [/output]
 [/test]
+[test]
+[input]
+speedInfo(49)
+[/input]
+[output]
+Fast
+[/output]
+[/test]
+[test open]
+[input]
+speedInfo(20)
+[/input]
+[output]
+Slow
+[/output]
+[/test]
 [/tests]
 [code-io /]
 [/code-task]
 
 [/slide]
 
+
 [slide hideTitle]
 # Problemă: Bonus Score
 [code-task title="Bonus Score" taskId="pb-js-Conditions-Bonus-Score" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
-```js
+```
 function bonusScore(input) {
   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Enunț
 
@@ -174,7 +259,7 @@ Avem un integer cu datele ințiale **number** de puncte.
 
 **Bonus points** sunt oferite, în funcție de regulile descrise mai jos. 
 
-Scrieți o funcție care calculează 
+Creați un program care calculează 
 
 - punctele bonus **received** din număr 
 
@@ -194,33 +279,51 @@ Punctele adiționale din bonus, sunt obținute separat din cele anterioare:
 
 | **Input** | **Output** |
 | --- | --- |
-| 20| 6 |
+| bonusScore(20)| 6 |
 |  |26 |
 
 | **Input** | **Output** |
 | --- | --- |
-| 175| 37 |
+| bonusScore(175)| 37 |
 |  |212 |
 
 | **Input** | **Output** |
 | --- | --- |
-| 2703| 270.3 |
+| bonusScore(2703)| 270.3 |
 |  |2973.3 |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-20
+bonusScore(20)
 [/input]
 [output]
 6
 26
 [/output]
 [/test]
+[test open]
+[input]
+bonusScore(175)
+[/input]
+[output]
+37
+212
+[/output]
+[/test]
+[test open]
+[input]
+bonusScore(2703)
+[/input]
+[output]
+270.3
+2973.3
+[/output]
+[/test]
 [test]
 [input]
-140
+bonusScore(140)
 [/input]
 [output]
 29
@@ -229,7 +332,7 @@ Punctele adiționale din bonus, sunt obținute separat din cele anterioare:
 [/test]
 [test]
 [input]
-175
+bonusScore(175)
 [/input]
 [output]
 37
@@ -238,7 +341,7 @@ Punctele adiționale din bonus, sunt obținute separat din cele anterioare:
 [/test]
 [test]
 [input]
-35
+bonusScore(35)
 [/input]
 [output]
 7
@@ -247,7 +350,7 @@ Punctele adiționale din bonus, sunt obținute separat din cele anterioare:
 [/test]
 [test]
 [input]
-17
+bonusScore(17)
 [/input]
 [output]
 5
@@ -256,7 +359,7 @@ Punctele adiționale din bonus, sunt obținute separat din cele anterioare:
 [/test]
 [test]
 [input]
-0
+bonusScore(0)
 [/input]
 [output]
 6
@@ -273,15 +376,33 @@ Punctele adiționale din bonus, sunt obținute separat din cele anterioare:
 # Problemă: Tickets
 [code-task title="Tickets" taskId="pb-js-Conditions-Tickets" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
-```js
+```
 function tickets(input) {
   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Enunț
-Scrieți un program care să calculeze prețul unui bilet:
+Creați un program care să calculeze prețul unui bilet:
 
 * Citiți tipul de bilet: fie **student** fie **regular**
 
@@ -293,20 +414,20 @@ Scrieți un program care să calculeze prețul unui bilet:
 
 * Prețul unui bilet obișnuit: **1.60**
 
-* Pentru un tip nevalid, imprimați `Invalid ticket type!`
+* Pentru un tip nevalid, imprimați "**Invalid ticket type!**"
 
 # Exemplu
 
 | **Input** | **Output** |
 | --- | --- |
-| student | $1.00 |
+| tickets('student') | $1.00 |
 
 
 [/task-description]
 [tests]
 [test]
-[input]
-student
+[input open]
+tickets('student')
 [/input]
 [output]
 $1.00
@@ -314,7 +435,7 @@ $1.00
 [/test]
 [test]
 [input]
-regular
+tickets('regular')
 [/input]
 [output]
 $1.60
@@ -322,7 +443,7 @@ $1.60
 [/test]
 [test]
 [input]
-ticket
+tickets('ticket')
 [/input]
 [output]
 Invalid ticket type!
@@ -333,4 +454,3 @@ Invalid ticket type!
 [/code-task]
 
 [/slide]
-

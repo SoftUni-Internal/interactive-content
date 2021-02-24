@@ -21,9 +21,18 @@ function sumDigits(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
-Scrieți un program care trebuie să îndeplinească urmăatoarele cerințe:
+Creați un program care trebuie să îndeplinească urmăatoarele cerințe:
 
 * Citește un număr de pe consolă
 * **Calculează suma** **cifrelor** care compun acest număr
@@ -32,13 +41,13 @@ Scrieți un program care trebuie să îndeplinească urmăatoarele cerințe:
 # Exemplu
   | **Date de intrare** | **Date de ieșire** |
 | --- | --- |
-|5634| 18 |
+|sumDigits(5634)| 18 |
 
 [/task-description]
 [tests]
 [test]
 [input]
-123456
+sumDigits(123456)
 [/input]
 [output]
 21
@@ -46,7 +55,7 @@ Scrieți un program care trebuie să îndeplinească urmăatoarele cerințe:
 [/test]
 [test]
 [input]
-489451
+sumDigits(489451)
 [/input]
 [output]
 31
@@ -54,7 +63,7 @@ Scrieți un program care trebuie să îndeplinească urmăatoarele cerințe:
 [/test]
 [test]
 [input]
-8498498
+sumDigits(8498498)
 [/input]
 [output]
 50
@@ -62,7 +71,7 @@ Scrieți un program care trebuie să îndeplinească urmăatoarele cerințe:
 [/test]
 [test]
 [input]
-000000
+sumDigits(000000)
 [/input]
 [output]
 0
@@ -70,7 +79,7 @@ Scrieți un program care trebuie să îndeplinească urmăatoarele cerințe:
 [/test]
 [test]
 [input]
-5684915
+sumDigits(5684915)
 [/input]
 [output]
 38
@@ -78,7 +87,7 @@ Scrieți un program care trebuie să îndeplinească urmăatoarele cerințe:
 [/test]
 [test]
 [input]
-8
+sumDigits(8)
 [/input]
 [output]
 8
@@ -110,16 +119,16 @@ function favoriteBook(favoditeBook, books) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-    let num = input[0]
-    let arr = input.splice(1, input.length)
-    return code(num, arr)
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
 [task-description]
 # Descriere
-Scrieți un program care îndeplinește următoarele cerințe: 
+Creați un program care îndeplinește următoarele cerințe: 
 
 * Primește numele cărții preferate
 * Primește numele unor cărți, până ce ajunge la cartea preferată
@@ -129,7 +138,7 @@ Scrieți un program care îndeplinește următoarele cerințe:
 # Exemplu
   | **Date de intrare** | **Date de ieșire** |
 | --- | --- |
-|`'Alice in Wonderland', ['Winnie the Pooh', 'Peter Pan', 'Alice in Wonderland']`| Invalid book: Winnie the Pooh |
+| favoriteBook('Alice in Wonderland', ['Winnie the Pooh', 'Peter Pan', 'Alice in Wonderland']) | Invalid book: Winnie the Pooh |
 ||Invalid book: Peter Pan|
 ||Book found!|
 
@@ -137,11 +146,7 @@ Scrieți un program care îndeplinește următoarele cerințe:
 [tests]
 [test]
 [input]
-Fav Book
-Book1
-Book2
-Book3
-Fav Book
+favoriteBook('Fav Book', ['Book1', 'Book2', 'Book3', 'Fav Book'])
 [/input]
 [output]
 Invalid book: Book1
@@ -152,11 +157,7 @@ Book found!
 [/test]
 [test]
 [input]
-B
-Book1
-Book2
-B
-Fav Book
+favoriteBook('B', ['Book1', 'Book2', 'B', 'Fav Book'])
 [/input]
 [output]
 Invalid book: Book1
@@ -166,11 +167,7 @@ Book found!
 [/test]
 [test]
 [input]
-AB
-Hello
-AB
-B
-Book
+favoriteBook('AB', ['Hello', 'AB', 'B', 'Book'])
 [/input]
 [output]
 Invalid book: Hello
@@ -179,12 +176,7 @@ Book found!
 [/test]
 [test]
 [input]
-AD
-SE
-GFG
-B
-RTE
-AD
+favoriteBook('AD', ['SE', 'GFG', 'B', 'RTE', 'AD'])
 [/input]
 [output]
 Invalid book: SE
@@ -196,12 +188,7 @@ Book found!
 [/test]
 [test]
 [input]
-AD
-dfg
-GFG
-AD
-dfg
-dfg
+favoriteBook('AD', ['dfg', 'GFG', 'AD', 'dfg', 'dfg'])
 [/input]
 [output]
 Invalid book: dfg
@@ -211,12 +198,7 @@ Book found!
 [/test]
 [test]
 [input]
-RD
-sdf
-gfh
-er
-RD
-dfg
+favoriteBook('RD', ['sdf', 'gfh', 'er', 'RD', 'dfg'])
 [/input]
 [output]
 Invalid book: sdf
@@ -241,17 +223,26 @@ function minAndMax(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
-Scrieți un program care să îndeplinească următoarele cerințe: 
+Creați un program care să îndeplinească următoarele cerințe: 
 
-* Primește numere întregi până când ajungem la **sfârșit** `END`
+* Primește numere întregi până când ajungem la **sfârșit** **END**
 * Printează **cel mai mare** și cel mai **mic** număr întreg
 
 # Exemplu
   | **Date de intrare** | **Date de ieșire** |
 | --- | --- |
-|`['10', '20', '304', '0', '50', 'END']`| Max number: 304 |
+| minAndMax(['10', '20', '304', '0', '50', 'END'])| Max number: 304 |
 ||Min number: 0|
 
 
@@ -259,14 +250,7 @@ Scrieți un program care să îndeplinească următoarele cerințe:
 [tests]
 [test]
 [input]
-5
-10
-66
-456
--4
-1
-0
-END
+minAndMax(['5', '10', '66', '456', '-4', '1', '0', 'END'])
 [/input]
 [output]
 Max number: 456
@@ -275,13 +259,7 @@ Min number: -4
 [/test]
 [test]
 [input]
-3
-15
-56
-32
-7
-9
-END
+minAndMax(['3', '15', '56', '32', '7', '9', 'END'])
 [/input]
 [output]
 Max number: 56
@@ -290,11 +268,7 @@ Min number: 3
 [/test]
 [test]
 [input]
--34
--4
--12
--45
-END
+minAndMax(['-34', '-4', '-12', '-45', 'END'])
 [/input]
 [output]
 Max number: -4
@@ -303,11 +277,7 @@ Min number: -45
 [/test]
 [test]
 [input]
-0
-1
-4
-5
-END
+minAndMax(['0', '1', '4', '5', 'END'])
 [/input]
 [output]
 Max number: 5
@@ -316,14 +286,7 @@ Min number: 0
 [/test]
 [test]
 [input]
-10
-20
-304
-0
-50
-400
-END
-1000
+minAndMax(['10', '20', '304', '0', '50', '400', 'END', '1000'])
 [/input]
 [output]
 Max number: 400
@@ -332,14 +295,7 @@ Min number: 0
 [/test]
 [test]
 [input]
-10
-20
-304
--5
-50
-END
-400
-1000
+minAndMax(['10', '20', '304', '-5', '50', 'END', '400', '1000'])
 [/input]
 [output]
 Max number: 304
@@ -364,14 +320,18 @@ function specialNumber(input) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => code(...input);
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
 ```
 [/code-adapter]
 [task-description]
 # Descriere
 Numărul special este numărul **divizibil la toate cifrele sale componente** fără rest. 
 
-Scrieți un program cu următoarele caracteristici: 
+Creați un program cu următoarele caracteristici: 
 
 * Primește un șir
 
@@ -382,14 +342,14 @@ Scrieți un program cu următoarele caracteristici:
 # Exemplu
 | **Date de intrare** | **Date de ieșire** |
 | --- | --- |
-|'23'| 23 is not special |
+| specialNumber('23')| 23 is not special |
 
 
 [/task-description]
 [tests]
 [test]
 [input]
-55
+specialNumber('55')
 [/input]
 [output]
 55 is special
@@ -397,7 +357,7 @@ Scrieți un program cu următoarele caracteristici:
 [/test]
 [test]
 [input]
-22
+specialNumber('22')
 [/input]
 [output]
 22 is special
@@ -405,7 +365,7 @@ Scrieți un program cu următoarele caracteristici:
 [/test]
 [test]
 [input]
-73
+specialNumber('73')
 [/input]
 [output]
 73 is not special
@@ -413,7 +373,7 @@ Scrieți un program cu următoarele caracteristici:
 [/test]
 [test]
 [input]
-41
+specialNumber('41')
 [/input]
 [output]
 41 is not special
@@ -421,7 +381,7 @@ Scrieți un program cu următoarele caracteristici:
 [/test]
 [test]
 [input]
-32
+specialNumber('32')
 [/input]
 [output]
 32 is special
@@ -429,7 +389,7 @@ Scrieți un program cu următoarele caracteristici:
 [/test]
 [test]
 [input]
-4545232
+specialNumber('4545232')
 [/input]
 [output]
 4545232 is not special
@@ -437,7 +397,7 @@ Scrieți un program cu următoarele caracteristici:
 [/test]
 [test]
 [input]
-88
+specialNumber('88')
 [/input]
 [output]
 88 is special
@@ -462,16 +422,16 @@ function specialBonus(n, numbers) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-    let num = Number(input[0])
-    let arr = input.splice(1, input.length)
-    return code(num, arr)
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
 [task-description]
 # Descriere
-Scrieți un program care să îndeplinească următoarele sarcini: 
+Creați un program care să îndeplinească următoarele sarcini: 
 
 * Citește un număr **intreg** de pe consolă
 * Continuă să citească numerele întregi până când găsește **un număr care este același ca primul număr introdus**
@@ -480,18 +440,14 @@ Scrieți un program care să îndeplinească următoarele sarcini:
 # Exemplu
 | **Date de intrare** | **Date de ieșire** |
 | --- | --- |
-| --- | --- |
-|`25, ['20', '30', '25']`| 60 |
+| specialBonus(25, ['20', '30', '25']) | 60 |
 
 
 [/task-description]
 [tests]
 [test]
 [input]
-20
-5
-5
-20
+specialBonus(20, ['5', '5', '20'])
 [/input]
 [output]
 10
@@ -499,8 +455,7 @@ Scrieți un program care să îndeplinească următoarele sarcini:
 [/test]
 [test]
 [input]
-20
-20
+specialBonus(20, ['20'])
 [/input]
 [output]
 40
@@ -508,12 +463,7 @@ Scrieți un program care să îndeplinească următoarele sarcini:
 [/test]
 [test]
 [input]
-45
-34
-23
-45456
-45
-23
+specialBonus(45, ['34', '23', '45456', '45', '23'])
 [/input]
 [output]
 90912
@@ -521,13 +471,7 @@ Scrieți un program care să îndeplinească următoarele sarcini:
 [/test]
 [test]
 [input]
-20
-5675
-5467
-45646
-20
-65756
-2567563
+specialBonus(20, ['5675', '5467', '45646', '20', '65756', '2567563'])
 [/input]
 [output]
 91292
@@ -535,13 +479,7 @@ Scrieți un program care să îndeplinească următoarele sarcini:
 [/test]
 [test]
 [input]
-1234
-20
-567
-5675
-25673
-5675
-1234
+specialBonus(1234, ['20', '576', '5675', '25673', '5675', '1234'])
 [/input]
 [output]
 11350
@@ -549,14 +487,7 @@ Scrieți un program care să îndeplinească următoarele sarcini:
 [/test]
 [test]
 [input]
-456
-20
-45
-2353
-345
-56
-456
-23
+specialBonus(456, ['20', '45', '2353', '345', '56', '456', '23'])
 [/input]
 [output]
 112
@@ -564,12 +495,7 @@ Scrieți un program care să îndeplinească următoarele sarcini:
 [/test]
 [test]
 [input]
-11
-345
-546546756
-11
-456
-456
+specialBonus(11, ['345', '546546756', '11', '456', '456'])
 [/input]
 [output]
 1093093512
@@ -586,15 +512,24 @@ Scrieți un program care să îndeplinească următoarele sarcini:
 [code-task title="Sequence 2k + 1" taskId="pb-js-while-loop-Sequence-2k-1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function specialBonus(nums) {
+function sequence(input) {
   // Scrieți codul dvs. aici
 }
 
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
-Scrieți un program care: 
+Creați un program care: 
 
 * Citește un număr **n** din consolă
 * Printează o **secvență** de numere, care sunt **mai mici sau egale cu n** (**<= n**) și satisfac următoarea condiție:
@@ -603,7 +538,7 @@ Scrieți un program care:
 # Exemplu
   | **Date de intrare** | **Date de ieșire** |
 | --- | --- |
-|8| 1 |
+| sequence(8) | 1 |
 ||3|
 || 7|
 || |
@@ -612,7 +547,7 @@ Scrieți un program care:
 [tests]
 [test]
 [input]
-1
+sequence(1)
 [/input]
 [output]
 1
@@ -620,7 +555,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-7
+sequence(7)
 [/input]
 [output]
 1
@@ -630,7 +565,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-100
+sequence(100)
 [/input]
 [output]
 1
@@ -643,7 +578,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-511
+sequence(511)
 [/input]
 [output]
 1
@@ -659,7 +594,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-10000
+sequence(10000)
 [/input]
 [output]
 1
@@ -694,9 +629,18 @@ function accountBalance(input) {
 
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
-Scrieți un program cu următoarele sarcini: 
+Creați un program cu următoarele sarcini: 
 
 * Primește **suma de bani** pentru fiecare tranzacție până când ajungem la sfârșit (`END`)
 * **Adună** banii la **sold** și **tipărește*: `Suplimentare: {money}`, formatează `money` până la a **doua zecimală** după virgulă
@@ -705,7 +649,7 @@ Scrieți un program cu următoarele sarcini:
 # Exemplu
   | **Date de intrare* | **Date de ieșire** |
 | --- | --- |
-|`['5.51', '69.42', '100', 'END']`| Increase: 5.51 |
+| accountBalance(['5.51', '69.42', '100', 'END'])| Increase: 5.51 |
 ||Increase: 69.42|
 ||Increase: 100.00 |
 || Total: 174.93 |
@@ -715,10 +659,7 @@ Scrieți un program cu următoarele sarcini:
 [tests]
 [test]
 [input]
-5.50
-60.23
-100
-END
+accountBalance(['5.50', '60.23', '100', 'END'])
 [/input]
 [output]
 Increase: 5.50
@@ -729,11 +670,7 @@ Total: ‭165.73‬
 [/test]
 [test]
 [input]
-69.42
-100
-123
-234
-END
+accountBalance(['69.42', '100', '123', '234', 'END'])
 [/input]
 [output]
 Increase: 69.42
@@ -745,10 +682,7 @@ Total: 526.42
 [/test]
 [test]
 [input]
-5675
-5675.42
-5675
-END
+accountBalance(['5675', '5675.42', '5675', 'END'])
 [/input]
 [output]
 Increase: 5675.00
@@ -759,12 +693,7 @@ Total: 17025.42
 [/test]
 [test]
 [input]
-45641
-0
-4564
-345
-END
-465
+accountBalance(['45641', '0', '4564', '345', 'END', '465'])
 [/input]
 [output]
 Increase: 45641.00
@@ -776,12 +705,7 @@ Total: 50550.00
 [/test]
 [test]
 [input]
-5.51
-345345
-69.42
-100
-END
-END
+accountBalance(['5.51', '345345', '69.42', '100', 'END', 'END'])
 [/input]
 [output]
 Increase: 5.51
@@ -793,11 +717,7 @@ Total: 345519.93
 [/test]
 [test]
 [input]
-1
-1
-0.55
-0.457
-END
+accountBalance(['1', '1', '0.55', '0.457', 'END'])
 [/input]
 [output]
 Increase: 1.00
@@ -809,11 +729,7 @@ Total: 3.01
 [/test]
 [test]
 [input]
-345
-3.42
-543.3
-END
-34
+accountBalance(['345', '3.42', '543.3', 'END', '34'])
 [/input]
 [output]
 Increase: 345.00

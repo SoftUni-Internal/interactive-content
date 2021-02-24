@@ -12,10 +12,10 @@ We can use:
 * Logical **"AND"** (`&&`)
 * Logical **"OR"** (`||`)
 * Logical **negation** (`!`) 
-* **Brackets** (`()`)
+* **Parentheses** (`()`)
 
 # Logical "AND", "OR" and "NOT"
-This is a short example that demonstrates the power of the logical **"AND"**, the logical **"OR"** and the logical **"NOT"**: 
+This is a short example that demonstrates the power of the logical **"AND"**, the logical **"OR"** and the logical **"NOT"**: 
 
 ```js live
 let input = ["shark", "50"];
@@ -31,7 +31,7 @@ if ((animal == "horse" || animal == "donkey") && (speed > 40)) {
 }
 ```
 
-We shall explain the logical **"AND"** (`&&`), the logical **"OR"** (`||`), and the logical **"NOT"** (`!`) in the next few sections, along with examples and exercises. 
+We shall explain the logical **"AND"** (`&&`), the logical **"OR"** (`||`), and the logical **"NOT"** (`!`) in the next few sections, along with examples and exercises. 
 [/slide]
 
 [slide hideTitle]
@@ -41,11 +41,11 @@ We shall explain the logical **"AND"** (`&&`), the logical **"OR"** (`||
 
 As we saw, in some tasks we have to make **many checks at once**. 
 
-What happens when more conditions have to be executed at once, and we don't want to make a negation (else) for each one of them? 
+What happens when more conditions have to be executed at once, and we don't want to make a negation (else) for each one of them? 
 
 The option with nested `if` **blocks** is valid, but the code would look very unordered and for sure – **hard to read and maintain**.
 
-The logical **"AND"** (operator `&&`) means that a few conditions have to be fulfilled simultaneously. 
+The logical **"AND"** (operator `&&`) means that a few conditions have to be fulfilled simultaneously. 
 
 The following table of truthfulness is applicable:
 
@@ -56,17 +56,17 @@ The following table of truthfulness is applicable:
 | false | true | false |
 | false | false | false |
 
-# How does the `&&` operator work? 
+## How does the `&&` operator work? 
 
-The `&&` operator accepts a couple of Boolean (conditional) statements, which have a true or a false value, and returns one 'bool' statement as a result. 
+The `&&` operator accepts a couple of Boolean (conditional) statements, which have a true or a false value, and returns one 'bool' statement as a result. 
 
 Using it instead of a couple of nested `if` blocks, makes the code **more readable**, **ordered** and **easy** to maintain. 
 
-But how does it work when we put a few conditions one after another? 
+But how does it work when we put a few conditions one after another? 
 
-As we saw above, the logical **"AND"** returns true, only when it accepts as arguments statements with values that are `true`.  
+As we saw above, the logical **"AND"** returns true, only when it accepts as arguments statements with values that are `true`.  
 
-Respectively, when we have a **sequence** of arguments, the logical **"AND"** checks either until there are no more arguments, or until it meets an argument with a `false` value. 
+Respectively, when we have a **sequence** of arguments, the logical **"AND"** checks either until there are no more arguments, or until it meets an argument with a `false` value. 
 
 # Example
 ```js live
@@ -80,7 +80,7 @@ console.log(result);
 
 The program will run in the **following** way: 
 
-- It starts the check from `a`, reads it and accepts that it has a true value. After that it checks `b`
+- It starts the check from `a`, reads it, and accepts that it has a true value. After that, it checks `b`
 
 - After it has **accepted** that `a` and `b` return `true`, **it checks the next** argument
 
@@ -91,7 +91,7 @@ The program will run in the **following** way:
 - That is why the evaluation of `d` is being **skipped** and the whole expression is calculated as `false`
 
 # Example: Point in a Rectangle
-Checks whether **`point {x, y}`** is placed **inside the rectangle {x1, y1} – {x2, y2}**. 
+Checks whether `point {x, y}` is placed **inside the rectangle {x1, y1} – {x2, y2}**. 
 
 [image assetsSrc="03.Point-in-rectangle-01.png" /]
 
@@ -111,7 +111,7 @@ The input data is read from the console and consists of 6 lines:
 |-1||
 
 ## Solution
-A point is internal for a given polygon, if the following four conditions are applied at the same time:
+A point is internal for a given polygon if the following four conditions are applied at the same time:
 
 - The point is placed to the right from the left side of the rectangle
 
@@ -119,7 +119,7 @@ A point is internal for a given polygon, if the following four conditions are ap
 
 - The point is placed downwards from the upper side of the rectangle
 
-- The point is placed upwards from the down side of the rectangle
+- The point is placed upwards from the downside of the rectangle
 
 
 ```js live
@@ -152,9 +152,18 @@ function bonusPoints(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
-Write a program that applies bonus to given points
+Create a program that applies a bonus to given points
 
 * If points are between **0** and **3**, adds **5**
 
@@ -165,13 +174,13 @@ Write a program that applies bonus to given points
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|4| 19 |
+|bonusPoints(4)| 19 |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-4
+bonusPoints(4)
 [/input]
 [output]
 19
@@ -179,7 +188,7 @@ Write a program that applies bonus to given points
 [/test]
 [test]
 [input]
-8
+bonusPoints(8)
 [/input]
 [output]
 28
@@ -187,7 +196,7 @@ Write a program that applies bonus to given points
 [/test]
 [test]
 [input]
-1
+bonusPoints(1)
 [/input]
 [output]
 6
@@ -207,11 +216,11 @@ Write a program that applies bonus to given points
 [video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-24-25-Logical-or-and-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-The logical **OR** (operator `||`) means that **at least one** among a few conditions is fulfilled. 
+The logical **OR** (operator `||`) means that **at least one** among a few conditions are fulfilled. 
 
 Similar to the operator `&&`, the logical **OR** accepts a few arguments of **bool** (conditional) type and returns `true` or `false`. 
 
-We can easily guess that we **obtain** a value `true` every time when at least one of the arguments has a `true` value. 
+We can easily guess that we **obtain** a value `true` whenever at least one of the arguments has a `true` value. 
 
 
  | **Operand one** | **Operand two** | **OR** |
@@ -222,16 +231,16 @@ We can easily guess that we **obtain** a value `true` every time when at least o
 | false | false | false |
 
 
-At school the teacher says: "John or Peter should clean the board". 
+At school, the teacher says: "John or Peter should clean the board". 
 
 To fulfill this condition (to clean the board), it is possible either just for John to clean it, or just for Peter to clean it, or both of them to do it.
 
 # How Does the `||` Operator Work?
-We have already learned what the logical **OR** represents. But how is it actually being achieved? 
+We have already learned what the logical **OR** represents. But how is it being achieved? 
 
-Just like with the logical **"AND"**, the program checks from left to right the given arguments. 
+Just like with the logical **"AND"**, the program checks from left to right the given arguments. 
 
-In order to obtain `true` from the expression, it is necessary to have at least one argument with a `true` value. 
+To obtain `true` from the expression, it is necessary to have at least one argument with a `true` value. 
 
 Respectively, the checking **continues** until an **argument** with **such** value is met or until the arguments **are over**.
 
@@ -248,7 +257,7 @@ let result = a || b || c || d;
 console.log(result);
 ```
 
-The programs **checks** `a`, accepts that it has a value `false` and continues. 
+The program **checks** `a`, accepts that it has a value `false`, and continues. 
 
 Reaching `b`, it understands that it has a `true` value and the whole **expression** is calculated as `true`, without having to check `c` or `d`, because their values **wouldn't change** the result of the expression.
 [/slide]
@@ -267,9 +276,18 @@ function foodOrDrink(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
-Write a program, which:
+Create a program, which:
 
 * Reads single line and print **drink**, **food** or **unknown**
 
@@ -282,26 +300,34 @@ Write a program, which:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|curry| food |
+|foodOrDrink('curry')| food |
 
 
 | **Input** | **Output** |
 | --- | --- |
-|flower| unknown |
+|foodOrDrink('flower')| unknown |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-curry
+foodOrDrink('curry')
 [/input]
 [output]
 food
 [/output]
 [/test]
+[test open]
+[input]
+foodOrDrink('flower')
+[/input]
+[output]
+unknown
+[/output]
+[/test]
 [test]
 [input]
-tea
+foodOrDrink('tea')
 [/input]
 [output]
 drink
@@ -309,7 +335,7 @@ drink
 [/test]
 [test]
 [input]
-something
+foodOrDrink('something')
 [/input]
 [output]
 unknown
@@ -337,7 +363,7 @@ The operator `!` accepts as an **argument** a bool variable and **returns** its 
 
 # Example: Invalid Number
 
-A given number is valid if it is in the range `[100 … 200]` or it is `0`. Do a validation for an invalid number. 
+A given number is valid if it is in the range `[100 … 200]` or it is `0`. Validate an invalid number. 
 
 For example, `75` and `220` are **invalid**, but `150` is **valid**.
 
@@ -354,11 +380,11 @@ if (!inRange) {
 [slide hideTitle]
 # The Parenthesis  Operator
 
-Like the rest of the operators in the programming, the operators `&&` and `||` have a priority, as in this case: `&&` is with higher priority than `||`. 
+Like the rest of the operators in the programming, the operators `&&` and `||` have a priority, as in this case: `&&` is with higher priority than `||`. 
 
 The operator `()` serves for **changing the priority of operators** and is being calculated first, just like in maths. 
 
-Using parentheses also gives the code better readability and it is considered to be a good practice. 
+Using parentheses also gives the code better readability and is considered to be a good practice. 
 
 Example of checking whether a variable belongs to certain ranges:
 

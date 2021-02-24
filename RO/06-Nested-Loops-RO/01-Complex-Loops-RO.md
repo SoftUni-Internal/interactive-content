@@ -64,25 +64,34 @@ function numbersFromNto1(input) {
 
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Descriere
-Scrieți o funcție pentru a imprima numerele de la N până la 1.
+Creați un program pentru a imprima numerele de la N până la 1.
 
-Funcția primește un număr `n` și imprimă numerele de la `n` până la 1.
+Funcția primește un număr **n** și imprimă numerele de la **n** până la 1.
 
 # Exemplu
 
 | **Input** | **Output** |
 | --- | --- |
-|5| 5, 4, 3, 2, 1 |
+| numbersFromNto1(5) | 5, 4, 3, 2, 1 |
 
 
 [/task-description]
 [tests]
 [test]
 [input]
-5
+numbersFromNto1(5)
 [/input]
 [output]
 5, 4, 3, 2, 1
@@ -90,7 +99,7 @@ Funcția primește un număr `n` și imprimă numerele de la `n` până la 1.
 [/test]
 [test]
 [input]
-4
+numbersFromNto1(4)
 [/input]
 [output]
 4, 3, 2, 1
@@ -98,7 +107,7 @@ Funcția primește un număr `n` și imprimă numerele de la `n` până la 1.
 [/test]
 [test]
 [input]
-3
+numbersFromNto1(3)
 [/input]
 [output]
 3, 2, 1
@@ -106,7 +115,7 @@ Funcția primește un număr `n` și imprimă numerele de la `n` până la 1.
 [/test]
 [test]
 [input]
-2
+numbersFromNto1(2)
 [/input]
 [output]
 2, 1
@@ -114,7 +123,7 @@ Funcția primește un număr `n` și imprimă numerele de la `n` până la 1.
 [/test]
 [test]
 [input]
-1
+numbersFromNto1(1)
 [/input]
 [output]
 1
@@ -142,26 +151,35 @@ function numbersFrom1ton(n) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Descriere
-Scrieți o funcție pentru a imprima numerele de la 1 la `n` cu pasul 3:
+Creați un program pentru a imprima numerele de la 1 la **n** cu pasul 3:
 
-*Primește un număr `n`
+*Primește un număr **n**
 
-*Tipărește numerele de la 1 la `n` cu pasul 3
+*Tipărește numerele de la 1 la **n** cu pasul 3
 
 # Exemplu
 | **Input** | **Output** |
 | --- | --- |
-|7| 1, 4, 7 |
-|10| 1, 4, 7, 10 |
+| numbersFrom1ton(7) | 1, 4, 7 |
+| numbersFrom1ton(10) | 1, 4, 7, 10 |
 
 [/task-description]
 [tests]
 [test]
 [input]
-10
+numbersFrom1ton(10)
 [/input]
 [output]
 1, 4, 7, 10
@@ -169,7 +187,7 @@ Scrieți o funcție pentru a imprima numerele de la 1 la `n` cu pasul 3:
 [/test]
 [test]
 [input]
-15
+numbersFrom1ton(15)
 [/input]
 [output]
 1, 4, 7, 10, 13
@@ -177,7 +195,7 @@ Scrieți o funcție pentru a imprima numerele de la 1 la `n` cu pasul 3:
 [/test]
 [test]
 [input]
-20
+numbersFrom1ton(20)
 [/input]
 [output]
 1, 4, 7, 10, 13, 16, 19
@@ -185,7 +203,7 @@ Scrieți o funcție pentru a imprima numerele de la 1 la `n` cu pasul 3:
 [/test]
 [test]
 [input]
-25
+numbersFrom1ton(25)
 [/input]
 [output]
 1, 4, 7, 10, 13, 16, 19, 22, 25
@@ -193,7 +211,7 @@ Scrieți o funcție pentru a imprima numerele de la 1 la `n` cu pasul 3:
 [/test]
 [test]
 [input]
-30
+numbersFrom1ton(30)
 [/input]
 [output]
 1, 4, 7, 10, 13, 16, 19, 22, 25, 28
@@ -221,27 +239,36 @@ function evenPowersOfTwo(n) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Descriere
-Scrieți o funcție pentru a imprima puterile pare cu 2:
+Creați un program pentru a imprima puterile pare cu 2:
 
-* Primește un număr `n`
+* Primește un număr **n**
 
-* Tipărește puterile uniforme de la 2 până la `2n`:
+* Tipărește puterile uniforme de la 2 până la **2n**:
 
 # Exemplu
 
 | **Input** | **Output** |
 | --- | --- |
-|5| 1, 4, 16 |
-|10| 1, 4, 16, 64, 256, 1024 |
+| evenPowersOfTwo(5) | 1, 4, 16 |
+| evenPowersOfTwo(10) | 1, 4, 16, 64, 256, 1024 |
 
 [/task-description]
 [tests]
 [test]
 [input]
-10
+evenPowersOfTwo(10)
 [/input]
 [output]
 1, 4, 16, 64, 256, 1024
@@ -249,7 +276,7 @@ Scrieți o funcție pentru a imprima puterile pare cu 2:
 [/test]
 [test]
 [input]
-15
+evenPowersOfTwo(15)
 [/input]
 [output]
 1, 4, 16, 64, 256, 1024, 4096, 16384
@@ -257,7 +284,7 @@ Scrieți o funcție pentru a imprima puterile pare cu 2:
 [/test]
 [test]
 [input]
-20
+evenPowersOfTwo(20)
 [/input]
 [output]
 1, 4, 16, 64, 256, 1024, 4096, 16384, 65536, 262144, 1048576
@@ -265,7 +292,7 @@ Scrieți o funcție pentru a imprima puterile pare cu 2:
 [/test]
 [test]
 [input]
-25
+evenPowersOfTwo(25)
 [/input]
 [output]
 1, 4, 16, 64, 256, 1024, 4096, 16384, 65536, 262144, 1048576, 4194304, 16777216
@@ -273,7 +300,7 @@ Scrieți o funcție pentru a imprima puterile pare cu 2:
 [/test]
 [test]
 [input]
-30
+evenPowersOfTwo(30)
 [/input]
 [output]
 1, 4, 16, 64, 256, 1024, 4096, 16384, 65536, 262144, 1048576, 4194304, 16777216, 67108864, 268435456, 1073741824

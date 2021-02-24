@@ -13,11 +13,20 @@
 [code-task title="Cinema" taskId="js-pb-exam-preparation-Cinema" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function solve(input) {
+function cinema(input) {
 	// Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 Pentru viitoarele premiere ale 3 din celor mai așteptate producții de cinema locale ați fost angajat să creați un program care calculează prețul pe care clienții lor trebuie să-l plătească, în funcție de film și de oferta pe care au ales-o.
@@ -32,17 +41,17 @@ Scrieți un program care calculează care este prețul total pe care trebuie să
 
 Sunt, de asemenea, reduceri promoționale disponibile pentru două dintre filme:
 
-- Dacă filmul ales este `Star Wars` și sunt cumpărate cel puțin patru bilete, este aplicată o reducere de `30%` pe familie.
+- Dacă filmul ales este "**Star Wars**" și sunt cumpărate cel puțin patru bilete, este aplicată o reducere de 30\% pe familie.
 
-- Dacă filmul ales este `Jumanji` și sunt cumpărate exact 2 bilete, se aplică o reducere de `15%` pe cuplu.
+- Dacă filmul ales este "**Jumanji**" și sunt cumpărate exact 2 bilete, se aplică o reducere de 15\% pe cuplu.
 
 ## Intrare
 
 Ca intrare veți primi 3 elemente de consolă:
 
-- Linia 1: film - șir: `John Wick`, `Star Wars` sau `Jumanji`
+- Linia 1: film - șir: "**John Wick**", "**Star Wars**" or "**Jumanji**"
 
-- Linia 2: ofertă - șir: `Drink`, `Popcorn` sau `Menu`
+- Linia 2: ofertă - șir: "**Drink**", "**Popcorn**" or "**Menu**"
 
 - Linia 3: număr de bilete  – un număr întreg în intevalul \[1… 30\]
 
@@ -57,35 +66,31 @@ Imprimați o linie pe consolă:
 ## Example
 | **Intrare** | **Ieșire** |
 | --- | --- |
-|`['John Wick', 'Drink', '6']`| Your bill is 72.00$|
+|cinema(['John Wick', 'Drink', 6])| Your bill is 72.00$|
 
 **Comments**
 Filmul este John Wick și este aleasă o băutura.
 
 Prețul unui bilet este de 12\$
 
-6 bilete la fiecare `12$ -> 72$`
+6 bilete la fiecare 12\$ \-\> 72\$
 
-Pentru acest film nu se aplică discount, prețul total este de`72.00$`. 
+Pentru acest film nu se aplică discount, prețul total este de 72.00\$. 
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-John Wick
-Drink
-23
+cinema(['John Wick', 'Drink', 6])
 [/input]
 [output]
-Your bill is 276.00$
+Your bill is 72.00$
 [/output]
 [/test]
 [test]
 [input]
-John Wick
-Popcorn
-11
+cinema(['John Wick', 'Popcorn', 11])
 [/input]
 [output]
 Your bill is 165.00$
@@ -93,9 +98,15 @@ Your bill is 165.00$
 [/test]
 [test]
 [input]
-John Wick
-Menu
-8
+cinema(['John Wick', 'Drink', 23])
+[/input]
+[output]
+Your bill is 276.00$
+[/output]
+[/test]
+[test]
+[input]
+cinema(['John Wick', 'Menu', 8])
 [/input]
 [output]
 Your bill is 152.00$
@@ -103,9 +114,7 @@ Your bill is 152.00$
 [/test]
 [test]
 [input]
-Star Wars
-Drink
-10
+cinema(['Star Wars', 'Drink', 10])
 [/input]
 [output]
 Your bill is 126.00$
@@ -113,9 +122,7 @@ Your bill is 126.00$
 [/test]
 [test]
 [input]
-Star Wars
-Popcorn
-3
+cinema(['Star Wars', 'Popcorn', 3])
 [/input]
 [output]
 Your bill is 75.00$
@@ -123,9 +130,7 @@ Your bill is 75.00$
 [/test]
 [test]
 [input]
-Star Wars
-Menu
-1
+cinema(['Star Wars', 'Menu', 1])
 [/input]
 [output]
 Your bill is 30.00$
@@ -133,9 +138,7 @@ Your bill is 30.00$
 [/test]
 [test]
 [input]
-Jumanji
-Drink
-2
+cinema(['Jumanji', 'Drink', 2])
 [/input]
 [output]
 Your bill is 15.30$
@@ -143,9 +146,7 @@ Your bill is 15.30$
 [/test]
 [test]
 [input]
-Jumanji
-Popcorn
-1
+cinema(['Jumanji', 'Popcorn', 1])
 [/input]
 [output]
 Your bill is 11.00$
@@ -153,9 +154,7 @@ Your bill is 11.00$
 [/test]
 [test]
 [input]
-Jumanji
-Menu
-3
+cinema(['Jumanji', 'Menu', 3])
 [/input]
 [output]
 Your bill is 42.00$

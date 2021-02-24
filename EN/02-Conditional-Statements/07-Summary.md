@@ -32,7 +32,7 @@ if (num == 1) {
 
 ## In the next lesson you will learn:
 
-- Reading input from array
+- Reading input from an array
 
 - How to use nested if-else conditions
 
