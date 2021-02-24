@@ -12,33 +12,42 @@ function schoolLibrary(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Description
 
-You will receive a String, representing a bookshelf in the library. Every book title is separated by `&`.
+You will receive a String, representing a bookshelf in the library. Every book title is separated by "\&".
 
-Until you receive `Done` as a command, you will be receiving the following commands:
+Until you receive "**Done**" as a command, you will be receiving the following commands:
 
-* Command `Add Book | {book name}`: 
+* Command "**Add Book** \| \{**book name**\}": 
 
 Add the book to the shelf and place it before all others.
 
 If the book is already present on the shelf, ignore the command.
 
-* Command `Take Book | {book name}`: 
+* Command "**Take Book**" \| \{**book name**\}": 
 
 Remove the book with the specified title (only if the book is on the shelf, otherwise ignore this command.)
 
-* Command `Swap Books | {book1} | {book2}`: 
+* Command "**Swap Books** \| {**book1**} \| {**book2**}": 
 
 If both books are on the shelf, swap their places.
 
-* Command `Insert Book | {book name}`: 
+* Command "**Insert Book** \| \{**book name**\}": 
 
 Add a book at the end of the book collection. 
 
-* Command `Check Book | {index}`: 
+* Command "**Check Book** \| \{**index**\}": 
 
 Print the name of the book, present it at this index in the list.
 
@@ -47,47 +56,44 @@ If the index is invalid, ignore the command.
 
 ## Input
 
-* You will receive a string, containing book titles, separated by `&`.
+* You will receive a string, containing book titles, separated by "\&".
 
-* Until you receive `Done`, you will get commands in the format described above.
+* Until you receive "**Done**", you will get commands in the format described above.
 
 
 ## Output
 
-* Print the collection of books joined by  `, `.
+* Print the collection of books joined by  (", ").
 
-`{firstBook}, {secondBook}, …{lastBook}`
+"\{**firstBook**\}, \{**secondBook**\}, ...\{**lastBook**\}"
 
 ## Constraints
 
 * You will not receive any duplicate book names in the initial list of books.
 
-# Examples
+## Example One
 
 **Input** 
-`['Don Quixote&The Great Gatsby&Moby Dick&Hamlet', 'Add Book | The Odyssey', 'Take Book | Don Quixote', 'Insert Book | Alice\'s Adventures in Wonderland', 'Check Book | 3', 'Done' ]`
+schoolLibrary(['Don Quixote&The Great Gatsby&Moby Dick&Hamlet', 'Add Book \| The Odyssey', 'Take Book \| Don Quixote', 'Insert Book \| Alice\'s Adventures in Wonderland', 'Check Book \| 3', 'Done' ])
 
 **Output**
 Hamlet
 The Odyssey, The Great Gatsby, Moby Dick, Hamlet, Alice's Adventures in Wonderland
 
+## Example Two
+
 **Input**
-`['Anna Karenina&Heart of Darkness&Catch-22& The Stranger', 'Add Book | David Copperfield', 'Add Book | One Thousand and One Nights', 'Swap Books | One Thousand and One Nights | Catch-22', 'Take Book | David Copperfield', 'Insert Book | The Stories of Anton Chekhov', 'Check Book | 17', 'Done']`
+schoolLibrary(['Anna Karenina&Heart of Darkness&Catch-22& The Stranger', 'Add Book \| David Copperfield', 'Add Book \| One Thousand and One Nights', 'Swap Books \| One Thousand and One Nights \| Catch-22', 'Take Book \| David Copperfield', 'Insert Book \| The Stories of Anton Chekhov', 'Check Book \| 17', 'Done'])
 
 **Output**
-Catch-22, Anna Karenina, Heart of Darkness, One Thousand and One Nights,  The Stranger, The Stories of Anton Chekhov 
+Catch-22, Anna Karenina, Heart of Darkness, One Thousand and One Nights, The Stranger, The Stories of Anton Chekhov 
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-Don Quixote&The Great Gatsby&Moby Dick&Hamlet
-Add Book \| The Odyssey
-Take Book \| Don Quixote
-Insert Book \| Alice's Adventures in Wonderland
-Check Book \| 3
-Done
+schoolLibrary(['Don Quixote&The Great Gatsby&Moby Dick&Hamlet', 'Add Book \| The Odyssey', 'Take Book \| Don Quixote', 'Insert Book \| Alice's Adventures in Wonderland', 'Check Book \| 3', 'Done'])
 [/input]
 [output]
 Hamlet
@@ -96,14 +102,7 @@ The Odyssey, The Great Gatsby, Moby Dick, Hamlet, Alice's Adventures in Wonderla
 [/test]
 [test open]
 [input]
-Anna Karenina&Heart of Darkness&Catch-22& The Stranger
-Add Book \| David Copperfield
-Add Book \| One Thousand and One Nights
-Swap Books \| One Thousand and One Nights \| Catch-22
-Take Book \| David Copperfield
-Insert Book \| The Stories of Anton Chekhov
-Check Book \| 17
-Done
+schoolLibrary(['Anna Karenina&Heart of Darkness&Catch-22& The Stranger', 'Add Book \| David Copperfield', 'Add Book \| One Thousand and One Nights', 'Swap Books \| One Thousand and One Nights \| Catch-22', 'Take Book \| David Copperfield', 'Insert Book \| The Stories of Anton Chekhov', 'Check Book \| 17', 'Done])
 [/input]
 [output]
 Catch-22, Anna Karenina, Heart of Darkness, One Thousand and One Nights,  The Stranger, The Stories of Anton Chekhov
@@ -111,9 +110,7 @@ Catch-22, Anna Karenina, Heart of Darkness, One Thousand and One Nights,  The St
 [/test]
 [test]
 [input]
-Don Quixote&The Great Gatsby&Moby Dick&Hamlet
-Add Book \| The Odyssey
-Done
+schoolLibrary(['Don Quixote&The Great Gatsby&Moby Dick&Hamlet', 'Add Book \| The Odyssey', 'Done'])
 [/input]
 [output]
 The Odyssey, Don Quixote, The Great Gatsby, Moby Dick, Hamlet
@@ -121,9 +118,7 @@ The Odyssey, Don Quixote, The Great Gatsby, Moby Dick, Hamlet
 [/test]
 [test]
 [input]
-Don Quixote&The Great Gatsby&Moby Dick&Hamlet
-Take Book \| Don Quixote
-Done
+schoolLibrary(['Don Quixote&The Great Gatsby&Moby Dick&Hamlet', 'Take Book \| Don Quixote', 'Done'])
 [/input]
 [output]
 The Great Gatsby, Moby Dick, Hamlet
@@ -131,9 +126,7 @@ The Great Gatsby, Moby Dick, Hamlet
 [/test]
 [test]
 [input]
-Don Quixote&The Great Gatsby&Moby Dick&Hamlet
-Insert Book \| Alice's Adventures in Wonderland
-Done
+schoolLibrary(['Don Quixote&The Great Gatsby&Moby Dick&Hamlet', 'Insert Book \| Alice's Adventures in Wonderland', 'Done'])
 [/input]
 [output]
 Don Quixote, The Great Gatsby, Moby Dick, Hamlet, Alice's Adventures in Wonderland
@@ -141,9 +134,7 @@ Don Quixote, The Great Gatsby, Moby Dick, Hamlet, Alice's Adventures in Wonderla
 [/test]
 [test]
 [input]
-abc&def&ghi&jkl
-Swap Books \| abc \| jkl
-Done
+schoolLibrary(['abc&def&ghi&jkl', 'Swap Books \| abc \| jkl', 'Done'])
 [/input]
 [output]
 jkl, def, ghi, abc
@@ -151,9 +142,7 @@ jkl, def, ghi, abc
 [/test]
 [test]
 [input]
-Don Quixote&The Great Gatsby&Moby Dick&Hamlet
-Add Book \| Hamlet
-Done
+schoolLibrary(['Don Quixote&The Great Gatsby&Moby Dick&Hamlet', 'Add Book \| Hamlet', 'Done'])
 [/input]
 [output]
 Don Quixote, The Great Gatsby, Moby Dick, Hamlet
@@ -161,9 +150,7 @@ Don Quixote, The Great Gatsby, Moby Dick, Hamlet
 [/test]
 [test]
 [input]
-Don Quixote&The Great Gatsby&Moby Dick&Hamlet
-Take Book \| Alice's Adventures in Wonderland
-Done
+schoolLibrary(['Don Quixote&The Great Gatsby&Moby Dick&Hamlet', 'Take Book \| Alice's Adventures in Wonderland', 'Done'])
 [/input]
 [output]
 Don Quixote, The Great Gatsby, Moby Dick, Hamlet
@@ -171,9 +158,7 @@ Don Quixote, The Great Gatsby, Moby Dick, Hamlet
 [/test]
 [test]
 [input]
-Don Quixote&The Great Gatsby&Moby Dick&Hamlet
-Insert Book \| Hamlet
-Done
+schoolLibrary(['Don Quixote&The Great Gatsby&Moby Dick&Hamlet', 'Insert Book \| Hamlet', 'Done'])
 [/input]
 [output]
 Don Quixote, The Great Gatsby, Moby Dick, Hamlet, Hamlet
@@ -181,14 +166,7 @@ Don Quixote, The Great Gatsby, Moby Dick, Hamlet, Hamlet
 [/test]
 [test]
 [input]
-A&B&C&D
-Add Book \| A
-Add Book \| B
-Add Book \| C
-Take Book \| C
-Swap Books \| A \| C
-Check Book \| 1
-Done
+schoolLibrary(['A&B&C&D', 'Add Book \| A', 'Add Book \| B', 'Add Book \| C', 'Take Book \| C', 'Swap Books \| A \| C', 'Check Book \| 1', 'Done'])
 [/input]
 [output]
 B
@@ -197,14 +175,7 @@ A, B, D
 [/test]
 [test]
 [input]
-A&B&C
-Swap Books \| C \| C
-Add Book \| D
-Insert Book \| G
-Stefan \| B
-Add Book \| M
-Check Book \| 69
-Done
+schoolLibrary(['A&B&C', 'Swap Books \| C \| C', 'Add Book \| D', 'Insert Book \| G', 'Stefan \| B', 'Add Book \| M', 'Check Book \| 69', 'Done'])
 [/input]
 [output]
 M, D, A, B, C, G
@@ -212,8 +183,7 @@ M, D, A, B, C, G
 [/test]
 [test]
 [input]
-A&B&C
-Done
+schoolLibrary(['A&B&C', 'Done'])
 [/input]
 [output]
 A, B, C
