@@ -17,7 +17,9 @@ Download the resources from [here](https://videos.softuni.org/resources/HTML-CSS
 
 [code-task title="Restaurant" taskId="HTML-CSS-Exam-Restaurant"]
 
+[task-description]
 
+[/task-description]
 
 [/code-task]
 [/slide]
