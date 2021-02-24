@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 # Problem: Card Suit
-[code-task title="Problem: Card Suit" taskId="04ac25bf-6fe9-42d8-9ad8-a48006d966dc" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Card Suit" taskId="oop-basics-java-more-oop-concepts-Card-Suit" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -16,15 +16,16 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create an **enumeration type** that has as its constants the **four suits** of a deck of playing cards (CLUBS, DIAMONDS, HEARTS, SPADES). 
+Create an **enumeration type** that has as its constants the **four suits** of a deck of playing cards (Clubs, Diamonds, Hearts, and Spades). 
 
 Iterate over the values of the enumeration type and print all **ordinal values** and **names**. 
 
 ## Submit
 
-Submit .zip
+You must submit your solution in the form of a `.zip` archive.
 
-## Examples
+# Example
+
 | **Input** | **Output** |
 | --- | --- |
 | Card Suits | Card Suits: |
@@ -66,7 +67,7 @@ Ordinal value: 3; Name value: SPADES
 
 [slide hideTitle]
 # Problem: Card Rank
-[code-task title="Problem: Card Rank" taskId="da1794c7-0978-48ab-aff1-1ea88646d618" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Card Rank" taskId="oop-basics-java-more-oop-concepts-lab-Card-Rank" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -85,9 +86,11 @@ Create an **enumeration type** that has as its constants the **fourteen ranks** 
 Iterate over the values of the enumeration type and print all ordinal values and names.
 
 ## Submit
-Submit .zip
 
-## Examples
+You must submit your solution in the form of a `.zip` archive.
+
+# Example
+
 | **Input** | **Output** |
 | --- | --- |
 | Card Ranks | Card Ranks: |
@@ -157,7 +160,7 @@ Ordinal value: 12; Name value: KING
 [slide hideTitle]
 # Problem: Cards with Power
 
-[code-task title="Problem: Cards with Power" taskId="9722be01-e6d0-4388-ac97-d77309ab909a" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Cards with Power" taskId="oop-basics-java-more-oop-concepts-lab-Cards-with-Power" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -171,7 +174,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that generates a **deck of cards** **(class Card)** which have a power. The power of a card is calculated by **adding** the power of its rank to the power of its suit.
+Create a program that generates a **deck of cards** **(class Card)** which have a power. 
+
+The power of a card is calculated by **adding** the power of its rank to the power of its suit.
 
 **Rank powers** are as follows: (ACE - 14, TWO - 2, THREE - 3, FOUR - 4, FIVE - 5, SIX - 6, SEVEN - 7, EIGHT - 8, NINE - 9, TEN - 10, JACK - 11, QUEEN - 12, KING - 13).
 
@@ -184,13 +189,16 @@ You will get a command consisting of **two** lines. On the **first** line you wi
 Print the output in the format **"Card name: ACE of SPADES; Card power: 53".**
 
 ## Note
-Try using the enumeration types you have created in the previous problems but extending them with constructors and methods. Try using the `Enum.valueOf()`.
+Try using the enumeration types you have created in the previous problems but extending them with constructors and methods.
+
+Try using the `Enum.valueOf()`.
 
 ## Submit
-Submit .zip
+
+You must submit your solution in the form of a `.zip` archive.
 
 
-## Examples
+# Examples
 | **Input** | **Output** |
 | --- | --- |
 | TWO | Card name: TWO of CLUBS; Card power: 2 |
@@ -264,7 +272,7 @@ Card name: TWO of DIAMONDS; Card power: 15
 
 [slide hideTitle]
 # Problem: Traffic Lights
-[code-task title="Problem: Traffic Lights" taskId="e7d2de0e-34b5-4535-8403-7e08a9734182" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Traffic Lights" taskId="oop-basics-java-more-oop-concepts-Traffic-Lights" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -301,9 +309,10 @@ Your output should consist of **n** number of lines, including **each** updated 
 To better understand the problem, see the example below.
 
 ## Submit
-Sumbit .zip
 
-## Examples
+You must submit your solution in the form of a `.zip` archive.
+
+# Example
 | **Input** | **Output** |
 | --- | --- |
 | GREEN RED YELLOW | YELLOW GREEN RED |
@@ -685,10 +694,4 @@ GREEN YELLOW RED GREEN YELLOW RED GREEN YELLOW RED GREEN YELLOW RED
 [/test]
 [/tests]
 [/code-task]
-[/slide]
-
-[slide]
-# Homework Results
-[tasks-results/]
-
 [/slide]
