@@ -28,7 +28,7 @@ The loop starts with the `for` operator and passes through all values for a part
 
 Upon declaring the loop, you can specify a **start value** and an **end value**. 
 
-The **body** of the loop is usually enclosed in curly brackets `{ }` and represents a block of **one or multiple commands**. 
+The **body** of the loop is usually enclosed in curly brackets `{ }` and represents a block of **one or multiple commands**.
 
 The code block below shows the structure of a `for` loop:
 ```
@@ -41,7 +41,7 @@ It consists of:
 * An **initialization part** for the counter (in the pattern `int i = 0`)
 * A **boolean** condition (`i < 10`)
 * An expression for **updating** the counter (``i += 1``)
-* Body of the loop.
+* Body of the loop
 
 In most cases a `for` loop is run between `1` and `n` times (for example from 1 to 10). 
 
