@@ -61,7 +61,7 @@
 PriorityQueue<Integer> numbers = new PriorityQueue<>();
 ```
 
-## In the next lesson you will learn:
+## In the next lesson, you will learn:
 
 - Arrays
 - Multidimensional arrays - declaring, creating, and initializing
