@@ -59,11 +59,12 @@ If the given item exists, you should change its position and put it in the last 
 ## Output
 After receiving "**Craft!**", print out all items in your inventory, separated by a comma and space \(", "\).
 
-## Examples
+## Examples One
 | **Input** | **Output** |
 | --- | --- |
 |inventory(['Iron, Wood, Sword', 'Collect - Gold', 'Drop - Wood', 'Craft!'])| Iron, Sword, Gold |
 
+## Examples Two
 | **Input** | **Output** |
 | --- | --- |
 |inventory(['Iron, Sword','Drop - Bronze','Combine Items - Sword:Bow','Renew - Iron', 'Craft!'])| Sword, Bow, Iron|

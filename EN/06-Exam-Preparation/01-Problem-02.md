@@ -64,7 +64,7 @@ Followed by:
 
 * If the lift is full and there are no more people waiting to get in, you should just print out the state of each cabin separated by a single space
 
-# Example
+## Example One
 
 | **Input** | **Output** |
 | --- | --- |
@@ -79,7 +79,8 @@ Followed by:
 
 * Third state: 4 4 4 0 \-\> 3 people left
 
-# Example
+## Example Two
+
 | **Input** | **Output** |
 | --- | --- |
 |lift([20, '0 2 0'])|The lift is full. 10 people currently in line.|

@@ -21,13 +21,13 @@ When we declare a variable and assign a **value** to it, this value is called a 
 
 A literal in programming means to write a variable with such a value that the interpreter **understands** the type of this variable.
 
-[ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) or ES6 introduced two new ways to create variables – `let` and `const`. Before that, only `var` was used.
+[ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) or ES6 introduced two new ways to create variables - `let` and `const`. Before that, only `var` was used.
 
 `Var` is a variable that works in the so-called functional scope.
 
-```js
+```js live
 {
-     var x = 2;
+  var x = 2;
 }
 console.log(x); // 2
 ```
@@ -48,13 +48,13 @@ That could lead to unexpected results in our program.
 
 Whereas when we declare a variable with `let`, this variable is available in **block scope**.
 
-Everything that is enclosed in **curly brackets** `{}` is a block where variables live. 
+Everything that is enclosed in **braces** `{}` is a block where variables live. 
 
 This can be the body of some `if` constructions, loops, or the body of a function.
 
-```js
+```js live
 {
-    let x = 2;
+  let x = 2;
 }
 console.log(x) // undefined
 ```
@@ -72,12 +72,7 @@ We strongly advise you to use `let` when you **declare a variable**, that way yo
 
 [slide hideTitle]
 
-
-
-
 # Variable Scope
-
-
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-5-6-variable-scope-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -87,7 +82,7 @@ Outside this scope, variables cannot be accessed.
 
 We have **four types of scope**, and we will go through them in more detail in the JavaScript Advanced course.
 
-# Global scope
+## Global scope
 
 All the variables we have defined at the top level.
 
@@ -118,7 +113,7 @@ function myFunction() {
 
 ## Block Scope 
 
-We also have a third type of scope – **Block Scope**. That is any body, defined in curly braces `{}`.
+We also have a third type of scope - **Block Scope**. That is any body, defined in **braces** `{}`.
 
 ```js
 {
@@ -128,7 +123,7 @@ We also have a third type of scope – **Block Scope**. That is any body, define
 
 Note that the function is also defined with **curly braces** and is a block, but this is a special class.
 
-From the programming basics course we know that we can embed an `if-else` construction, as well as loops.
+From the programming basics course we know that we can embed an **if-else** construction, as well as loops.
 
 So we put one block of code into another block of code.
 

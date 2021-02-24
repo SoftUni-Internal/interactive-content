@@ -73,7 +73,7 @@ The final form of the array should be printed out on the console, with each of i
 
 * Indices will always be inside the range of the array
 
-## Example
+## Example One
 
 | **Input** | **Output** |
 | --- | --- |
@@ -107,7 +107,7 @@ The state of the after the fifth command: "87 7383 2369943 -123 42 90 -2"
 
 The state of the after the sixth command: "86 7383 2369942 -124 41 89 -3"
 
-## Example
+## Example Two
 
 | **Input** | **Output** |
 | --- | --- |
