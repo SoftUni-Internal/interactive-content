@@ -97,7 +97,7 @@ You will receive **three numbers**.
 
 Your task is to find their **sum** and print it to the console with an addition:
 
-`{number} - Integer or Float`
+"\{**number**} - **Integer or Float**"
 
 
 # Example

@@ -63,7 +63,7 @@ In JavaScript, the template literals (strings wrapped in backticks) and `${expre
 ``` js live
 let name = 'Rick';
 let age = 18;
-console.log(`Hello, my name is ${name}, I am ${age} years old.`);
+console.log(`Мy name is ${name}, I am ${age} years old.`);
 ```
 [/slide]
 
@@ -93,7 +93,7 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Write a program, which: 
+Create a program, which: 
 - Receives two names as string parameters and a delimiter
 - Prints the names joined by the delimiter
 
@@ -204,11 +204,11 @@ function adapter(input, code) {
 
 You will receive 3 parameters: **string**, **char**, **string**.
 
-The first string will be a word with a **missing char** replaced with an underscore `_`.
+The first string will be a word with a **missing char** replaced with an underscore "**_**".
 
 You have to **replace** the character with the missing part (underscore) from the first string and **compare** the result with the second string.
 
-If they are equal you should print `Matched`, otherwise print `Not Matched`.
+If they are equal you should print "**Matched**", otherwise print "**Not Matched**".
 
 
 # Example

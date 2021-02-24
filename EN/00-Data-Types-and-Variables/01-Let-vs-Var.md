@@ -29,7 +29,7 @@ A literal in programming means to write a variable with such a value that the in
 {
   var x = 2;
 }
-console.log(x); // 2
+console.log(x);
 ```
 
 Using `var`, we can access a variable, before we declare it.
@@ -40,7 +40,7 @@ console.log(myVar);
 var myVar = 'Peter';
 ```
 
-Here we get undefined, because we do not know the value of the variable, nor can we access it. 
+Here we get "**undefined**", because we do not know the value of the variable, nor can we access it. 
 
 But, it is important that no error is shown and the program works. 
 
@@ -56,10 +56,10 @@ This can be the body of some `if` constructions, loops, or the body of a functio
 {
   let x = 2;
 }
-console.log(x) // undefined
+console.log(x)
 ```
 
-When we declare a variable with `let`, we cannot access it, if we try to access that variable, we receive an error.
+When we declare a variable with `let`, we cannot access it, if we try to access that variable, we receive an error: "**x is not defined**".
 
 ``` js live
 console.log(myVar);
