@@ -227,8 +227,7 @@ powerOfNumbers(12, 3)
 [/test]
 [test]
 [input]
-3
-7
+powerOfNumbers(7, 3)
 [/input]
 [output]
 2187
