@@ -434,18 +434,28 @@ The function receives one argument:
 | landscape(550) | The final price is: 3432.11 dollars. |
 |  | The discount is: 753.39 dollars. |
 
-## Explanations
-We calculate the price for landscaping the whole yard:
+[hints]
+[hint]
 
-- **550 * 7.61 = $4185.5**
+We calculate the price for landscaping the whole yard:
+- 550 * 7.61 = $4185.5
+
+[/hint]
+
+[hint]
 
 We deduct the discount from the total amount:
+- 1.18 * 4185.5 = $753.39
 
-- **0.18 * 4185.5 = $753.39**
+[/hint]
+
+[hint]
 
 We calculate the final price of the service:
+- 4185.5 – 753.39 -> $3432.11
 
-- **4185.5 – 753.39 -> $3432.11**
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
