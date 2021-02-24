@@ -26,13 +26,13 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program, which:
+Create a program, which prints the following information about a building:
 
-Prints information about a building: 
+* You receive two numbers: the number of floors and the room every floor has
 * The building can hold: **apartments (odd numbered floors)**, **offices (even numbered floors)** and **(on the last floor) Large Apartments** 
 * Apartments are indexed with: **A**\{**buildingNum**\}\{**apartmentNum**\}
-* Offices: **O**\{**floorNum**\}\{**officeNum**\}
-* Large apartments: **L**\{**buildingNum**\}\{**apartmentNum**\}
+* Offices are indexed with: **O**\{**floorNum**\}\{**officeNum**\}
+* Large apartments are indexed with: **L**\{**buildingNum**\}\{**apartmentNum**\}
 * The numbers always start from 0
 
 # Example
@@ -44,6 +44,8 @@ Prints information about a building:
 ||A30 A31 A32 A33 |
 ||O20 O21 O22 O23 |
 || A10 A11 A12 A13|
+| building(2, 5) | L20, L21, L22, L23, L24|
+|| A10, A11, A12, A13, A14|
 
 [/task-description]
 [tests]
@@ -189,17 +191,19 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program, which:
-* Reads an integer - **n**
-* Generates custom passwords, which meet the following conditions:
-* The **first** part is an **even** number and should not be greater than **n**
-* The **second** part is an **odd** number and should not be greater than **n**
-* The **last part** is the **product** of the first two
+Create a program, which generates custom passwords:
+
+- You receive an number **n** as input
+- Generate all custom passwords, which meet the following requirements:
+  - The **first** part is an **even** number and should not be greater than **n**
+  - The **second** part is an **odd** number and should not be greater than **n**
+  - The **last part** is the **product** of the first two
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
 | passwords(6) | 212 236 2510 414 4312 4520 616 6318 6530 |
+| passwords(2) | 212 |
 
 [/task-description]
 [tests]
@@ -286,9 +290,11 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program, which:
-* Reads a **number - n**, from the console
-* Finds all **3-digit numbers** for which the product of the multiplication of their separate digits is equal to **n** 
+
+Create a program, which finds all the magic numbers based on the following conditions:
+
+* You receive a number **n** from the console
+* Find all **3-digit numbers** for which the product of the multiplication of their separate digits is equal to **n** 
 
 # Example
 | **Input** | **Output** |
@@ -296,6 +302,12 @@ Create a program, which:
 | magicNumber(3) | 113 |
 || 131 |
 || 311 |
+| magicNumber(4)| 114 |
+|| 122 |
+|| 141 |
+|| 212 |
+|| 221 |
+|| 411 |
  
 [/task-description]
 [tests]
@@ -427,16 +439,17 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program, which:
+Create a program, which saves money, needed to visit a given destination:
 
-* Reads a **destination** and a **required budget** to visit it 
-* Continues taking numbers - amounts of money, until it is **enough** to take the trip 
+* You receive a **destination** and a **required budget** to visit it 
+* Continues processing numbers - amounts of money, until it is **enough** to take the trip 
 * If we receive the command **End** the program ends
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
 | travelling(['Philippines', 1000, 550, 450, 'End']) | Going to Philippines! |
+| travelling(['End']) | |
 
 [/task-description]
 [tests]
@@ -580,15 +593,16 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program, which:
+Create a program, which prints all the prime numbers in a given range:
 
-* Reads **two numbers** from the console
-* Prints the **prime** number in that **range**
+* You receive **two numbers** from the console: the **beginning** and the **end** of the range
+* Print the **prime** numbers in that **range** to the console
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
 | primeNumbers(1, 50) | 1 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 |
+| prmeNumbers(10, 30) | 11 13 17 19 23 29 |
 
 [/task-description]
 [tests]
@@ -675,15 +689,15 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program, which:
+Create a program, which generates unique PIN codes:
 
-* Reads **3 digits** - n1, n2 and n3
-* Generates **unique 3 digit PIN Codes**, which meet the following **conditions**:
-* The **first** digit should not be greater than n1
-* The **second** digit should not be greater than n2
-* The **third** digit should not be greater than n3
-* The **first** and the **third** digit must be even
-* The second digit must be a **prime number** in the range \[2…7\]
+- You receive 3 digits **n1, n2 and n3**
+- Generate **unique 3-digit PIN Codes**, which meet the following **conditions**:
+  - The **first** digit should not be greater than n1
+  - The **second** digit should not be greater than n2
+  - The **third** digit should not be greater than n3
+  - The **first** and the **third** digit must be even
+  - The second digit must be a **prime number** in the range \[2…7\]
 
 # Example
 | **Input** | **Output** |
@@ -694,6 +708,12 @@ Create a program, which:
 || 234 |
 || 252 |
 || 254 |
+| uniquePinCodes(2, 4, 6) | 222 |
+|| 224 |
+|| 226 |
+|| 232 |
+|| 234 |
+|| 236 |
 
 [/task-description]
 [tests]
@@ -861,18 +881,17 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program, which:
+Create a program, which prints **letter combinations** and the **number** of generated combinations:
 
-* Prints **letter combinations** and the **number** of generated combinations
+* The first two letters you will receive represent the range you will work with
 
-* You will receive the **range of letters** on the first and second line
-
-* On the third line, you will receive a **letter**, which you must **ignore** - do not print combinations with it
+* Ignore the third letter and do not print combinations with it
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
 | letterCombinations('a', 'c', 'b') | aaa aac aca acc caa cac cca ccc 8 |
+| letterCombinations('d', 'a', 'x') | 0 |
 
 [/task-description]
 [tests]
@@ -967,18 +986,19 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program, which:
+Create a program, which generates all **4 digit numbers** with digits less than a given number: 
 
-Generates all **4 digit numbers** with digits less than n and prints them out if: 
+- You will receive a number **n** as input:
 
-* When you split the number into two pairs and add the first digit to the second one of each pair- the result equals **n**
-
-* When you add the first two, the result is divisible by n without a remainder
+- Print the combinations which meet the following requirements:
+  - When you split the number into two pairs and add the first digit to the second one of each pair - the result equals **n**
+  - When you add the first two, the result is divisible by n without remainder
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
 | happyNumbers(3) | 1212 1221 2112 2121 |
+| happyNumbers(2) | 1111 |
 
 
 [/task-description]
