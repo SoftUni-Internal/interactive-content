@@ -67,6 +67,7 @@ Imprimați o linie pe consolă:
 | **Intrare** | **Ieșire** |
 | --- | --- |
 |cinema(['John Wick', 'Drink', 6])| Your bill is 72.00$|
+|cinema(['Star Wars', 'Menu', 1]) | Your bill is 30.00$| 
 
 [hints]
 [hint]
