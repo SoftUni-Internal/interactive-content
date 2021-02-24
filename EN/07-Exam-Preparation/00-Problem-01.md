@@ -58,19 +58,19 @@ Print to the console the time needed to watch all of the episodes, rounded down 
 [hints]
 
 [hint]
-The duration of advertisements per episode: 20\% of 55 \= 11.0
+Calculate the duration of advertisements per episode.
 [/hint]
 [hint]
 
-The duration of an episode with the advertisements: 55 \+ 11 \= 66.0
+Determine the duration of an episode with advertisements.
 [/hint]
 [hint]
 
-Additional time to be added, because of the specials: 3\*10 \= 30
+Add extra time because of specials.
 [/hint]
 [hint]
 
-Total time needed to watch the episodes: 66 \* 18 \* 3 \+ 30 = 3594.0
+Calculate the total time needed to watch the whole series.
 [/hint]
 
 [/hints]
