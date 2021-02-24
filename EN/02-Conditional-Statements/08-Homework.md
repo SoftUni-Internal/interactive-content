@@ -253,21 +253,23 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-An integer is given which the initial **number** of points. 
+You receive an integer, which represents the initial **number** of points. 
 
 **Bonus points** are awarded according to the rules described below. 
 
-Create a program that calculates 
+Create a program, which calculates:
 
-- the **received** bonus points from the number 
+- The **received** bonus points from the number 
 
-- which is the initial **total number of points** - Which is the **number plus the bonus points.**
+- Which the initial **total number of points** is
+
+- Which the **number plus the bonus points** is
 
 If the number is up to **100 inclusive**, the bonus points are **5**.
 If the number is **greater than 100**, the bonus points are **20 percent of the number**.
 If the number is **greater than 1000**, the bonus points are **10 percent of the number**.
 
-Additional bonus points, accrued separately from the previous ones:
+Additional bonus points, added separately from the previous ones:
 
 - For an even number you add 1 point
 
@@ -279,14 +281,8 @@ Additional bonus points, accrued separately from the previous ones:
 | --- | --- |
 | bonusScore(20)| 6 |
 |  |26 |
-
-| **Input** | **Output** |
-| --- | --- |
 | bonusScore(175)| 37 |
 |  |212 |
-
-| **Input** | **Output** |
-| --- | --- |
 | bonusScore(2703)| 270.3 |
 |  |2973.3 |
 
