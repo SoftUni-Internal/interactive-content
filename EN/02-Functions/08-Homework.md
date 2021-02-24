@@ -12,23 +12,25 @@ function repeatString(str, n){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-   return code(input[0], Number(input[1]));
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
 [task-description]
 # Description
 
-Write a function that receives **a string** and a **repeat count** - `n`. 
+Write a function that receives **a string** and a **repeat count** - "**n**". 
 
-The function should **return a new string** (the old one repeated **n** times).
+The function should **return a new string** (the old one repeated "**n**" times).
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|'abc', 3| abcabcabc |
-|'String', 2 | StringString |
+| repeatString('abc', 3) | abcabcabc |
+| repeatString('String', 2) | StringString |
 
 
 [/task-description]
@@ -36,8 +38,7 @@ The function should **return a new string** (the old one repeated **n** times).
 [tests]
 [test open]
 [input]
-abc
-3
+repeatString('abc', 3)
 [/input]
 [output]
 abcabcabc
@@ -45,8 +46,7 @@ abcabcabc
 [/test]
 [test open]
 [input]
-String
-2
+repeatString('String', 2)
 [/input]
 [output]
 StringString
@@ -54,8 +54,7 @@ StringString
 [/test]
 [test]
 [input]
-ani
-2
+repeatString('ani', 2)
 [/input]
 [output]
 aniani
@@ -63,8 +62,7 @@ aniani
 [/test]
 [test]
 [input]
-ananas
-3
+repeatString('ananas', 3)
 [/input]
 [output]
 ananasananasananas
@@ -72,8 +70,7 @@ ananasananasananas
 [/test]
 [test]
 [input]
-tanya
-2
+repeatString('tanya', 2)
 [/input]
 [output]
 tanyatanya
@@ -81,8 +78,7 @@ tanyatanya
 [/test]
 [test]
 [input]
-yavor
-3
+repeatString('yavor', 3)
 [/input]
 [output]
 yavoryavoryavor
@@ -90,8 +86,7 @@ yavoryavoryavor
 [/test]
 [test]
 [input]
-ivan
-2
+repeatString('ivan', 2)
 [/input]
 [output]
 ivanivan
@@ -114,8 +109,10 @@ function smallestNumbers(firstNumber, secondNumber, thirdNumber){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  return code (Number(input[0]), Number(input[1]), Number(input[2]));
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
@@ -129,18 +126,16 @@ Use an **appropriate name** for the function.
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|2, 5, 3| 2 |
-|600, 342, 123| 123 |
-|25, 21, 4| 4 |
+| smallestNumbers(2, 5, 3) | 2 |
+| smallestNumbers(600, 342, 123) | 123 |
+| smallestNumbers(25, 21, 4) | 4 |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-2
-5
-3
+smallestNumbers(2, 5, 3)
 [/input]
 [output]
 2
@@ -148,9 +143,7 @@ Use an **appropriate name** for the function.
 [/test]
 [test open]
 [input]
-600
-342
-123
+smallestNumbers(600, 342, 123)
 [/input]
 [output]
 123
@@ -158,9 +151,7 @@ Use an **appropriate name** for the function.
 [/test]
 [test open]
 [input]
-25
-21
-4
+smallestNumbers(25, 21, 4)
 [/input]
 [output]
 4
@@ -168,9 +159,7 @@ Use an **appropriate name** for the function.
 [/test]
 [test]
 [input]
-25
-25
-25
+smallestNumbers(25, 25, 25)
 [/input]
 [output]
 25
@@ -178,9 +167,7 @@ Use an **appropriate name** for the function.
 [/test]
 [test]
 [input]
-664213164
-1808459534
-2103069969
+smallestNumbers(664213164, 1808459534, 2103069969)
 [/input]
 [output]
 664213164
@@ -188,9 +175,7 @@ Use an **appropriate name** for the function.
 [/test]
 [test]
 [input]
-800572446
-391984821
-1988075527
+smallestNumbers(800572446, 391984821, 1988075527)
 [/input]
 [output]
 391984821
@@ -198,9 +183,7 @@ Use an **appropriate name** for the function.
 [/test]
 [test]
 [input]
-958036414
-1303722451
-81436290
+smallestNumbers(958036414, 1303722451, 81436290)
 [/input]
 [output]
 81436290
@@ -208,9 +191,7 @@ Use an **appropriate name** for the function.
 [/test]
 [test]
 [input]
-1504225756
-2078100171
-1952236125
+smallestNumbers(1504225756, 2078100171, 1952236125)
 [/input]
 [output]
 1504225756
@@ -218,9 +199,7 @@ Use an **appropriate name** for the function.
 [/test]
 [test]
 [input]
-1340748496
-2047564071
-892651240
+smallestNumbers(1340748496, 2047564071, 892651240)
 [/input]
 [output]
 892651240
@@ -228,9 +207,7 @@ Use an **appropriate name** for the function.
 [/test]
 [test]
 [input]
-1325565386
-175816470
-1646690050
+smallestNumbers(1325565386, 175816470, 1646690050)
 [/input]
 [output]
 175816470
@@ -238,9 +215,7 @@ Use an **appropriate name** for the function.
 [/test]
 [test]
 [input]
-1897368806
-101858759
-89570573
+smallestNumbers(1897368806, 101858759, 89570573)
 [/input]
 [output]
 89570573
@@ -248,9 +223,7 @@ Use an **appropriate name** for the function.
 [/test]
 [test]
 [input]
-851370685
-108554923
-110531645
+smallestNumbers(851370685, 108554923, 110531645)
 [/input]
 [output]
 108554923
@@ -258,9 +231,7 @@ Use an **appropriate name** for the function.
 [/test]
 [test]
 [input]
-1315489464
-15286437
-2013240737
+smallestNumbers(1315489464, 15286437, 2013240737)
 [/input]
 [output]
 15286437
@@ -282,8 +253,10 @@ function addSubtract(firstNumber, secondNumber, thirdNumber){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  return code (Number(input[0]), Number(input[1]), Number(input[2]));
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
@@ -298,18 +271,16 @@ Write a function called `sum()` to get the sum of the first two integers and a `
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|23, 6, 10| 29 |
-|1, 17, 30| \-12 |
-|42, 58, 100| 0 |
+| addSubtract(23, 6, 10) | 29 |
+| addSubtract(1, 17, 30) | \-12 |
+| addSubtract(42, 58, 100) | 0 |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-23
-6
-10
+addSubtract(23, 6, 10)
 [/input]
 [output]
 19
@@ -317,9 +288,7 @@ Write a function called `sum()` to get the sum of the first two integers and a `
 [/test]
 [test open]
 [input]
-1
-17
-30
+addSubtract(1, 17, 30)
 [/input]
 [output]
 -12
@@ -327,9 +296,7 @@ Write a function called `sum()` to get the sum of the first two integers and a `
 [/test]
 [test open]
 [input]
-42 
-58
-100
+addSubtract(42, 58, 100)
 [/input]
 [output]
 0
@@ -337,9 +304,7 @@ Write a function called `sum()` to get the sum of the first two integers and a `
 [/test]
 [test]
 [input]
-775
-8058
-6727
+addSubtract(775, 8058, 6727)
 [/input]
 [output]
 2106
@@ -347,9 +312,7 @@ Write a function called `sum()` to get the sum of the first two integers and a `
 [/test]
 [test]
 [input]
-5238
-851
-8783
+addSubtract(5238, 851, 8783)
 [/input]
 [output]
 -2694
@@ -357,9 +320,7 @@ Write a function called `sum()` to get the sum of the first two integers and a `
 [/test]
 [test]
 [input]
-3311
-8557
-872
+addSubtract(3311, 8557, 872)
 [/input]
 [output]
 10996
@@ -367,9 +328,7 @@ Write a function called `sum()` to get the sum of the first two integers and a `
 [/test]
 [test]
 [input]
-1318
-2018
-5695
+addSubtract(1318, 2018, 5695)
 [/input]
 [output]
 -2359
@@ -377,9 +336,7 @@ Write a function called `sum()` to get the sum of the first two integers and a `
 [/test]
 [test]
 [input]
-1615
-4900
-8565
+addSubtract(1615, 4900, 8565)
 [/input]
 [output]
 -2050
@@ -387,9 +344,7 @@ Write a function called `sum()` to get the sum of the first two integers and a `
 [/test]
 [test]
 [input]
-777
-9465
-7034
+addSubtract(777, 9465, 7034)
 [/input]
 [output]
 3208
@@ -397,9 +352,7 @@ Write a function called `sum()` to get the sum of the first two integers and a `
 [/test]
 [test]
 [input]
-2667
-4817
-1801
+addSubtract(2667, 4817, 1801)
 [/input]
 [output]
 5683
@@ -407,9 +360,7 @@ Write a function called `sum()` to get the sum of the first two integers and a `
 [/test]
 [test]
 [input]
-2037
-50
-7681
+addSubtract(2037, 50, 7681)
 [/input]
 [output]
 -5594
@@ -417,9 +368,7 @@ Write a function called `sum()` to get the sum of the first two integers and a `
 [/test]
 [test]
 [input]
-120
-8802
-9102
+addSubtract(120, 8802, 9102)
 [/input]
 [output]
 -180
@@ -427,9 +376,7 @@ Write a function called `sum()` to get the sum of the first two integers and a `
 [/test]
 [test]
 [input]
-6598
-6102
-4528
+addSubtract(6598, 6102, 4528)
 [/input]
 [output]
 8172
@@ -437,9 +384,7 @@ Write a function called `sum()` to get the sum of the first two integers and a `
 [/test]
 [test]
 [input]
-789
-3598
-4387
+addSubtract(789, 3598, 4387)
 [/input]
 [output]
 0
@@ -461,8 +406,10 @@ function charactersInRange(firstChar, secondChar){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  return code(input[0], input[1]);
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
@@ -476,17 +423,16 @@ Keep in mind that the **second character's ASCII code** might be **before the fi
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|'a', 'b'| b c |
-|'#', ':'| \$ \% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9 |
-|'C', '#'| \$ \% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9 \: \; \< \= \> \? \@ A B |
+| charactersInRange('a', 'd') | b c |
+| charactersInRange('#', ':') | \$ \% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9 |
+| charactersInRange('C', '#') | \$ \% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9 \: \; \< \= \> \? \@ A B |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-a
-d
+charactersInRange('a', 'd')
 [/input]
 [output]
 b c
@@ -494,8 +440,7 @@ b c
 [/test]
 [test open]
 [input]
-\#
-:
+charactersInRange('#', ':')
 [/input]
 [output]
 \$ \% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9
@@ -503,8 +448,7 @@ b c
 [/test]
 [test open]
 [input]
-C
-\#
+charactersInRange('C', '#')
 [/input]
 [output]
 \$ \% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9 \: \; \< \= \> \? \@ A B
@@ -512,17 +456,15 @@ C
 [/test]
 [test]
 [input]
-t
-E
+charactersInRange('t', 'E')
 [/input]
 [output]
-F G H I J K L M N O P Q R S T U V W X Y Z \[ \ \] ^ _ ` a b c d e f g h i j k l m n o p q r s
+F G H I J K L M N O P Q R S T U V W X Y Z \[ \ \] ^ _ \` a b c d e f g h i j k l m n o p q r s
 [/output]
 [/test]
 [test]
 [input]
-!
-\}
+charactersInRange('!', '\}')
 [/input]
 [output]
 \" \# \$ \% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9 \: \; \< \= \> \? \@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z \[ \\ \] \^ \_ \` a b c d e f g h i j k l m n o p q r s t u v w x y z \{ \|
@@ -530,17 +472,15 @@ F G H I J K L M N O P Q R S T U V W X Y Z \[ \ \] ^ _ ` a b c d e f g h i j k l 
 [/test]
 [test]
 [input]
-\|
-\\$
+charactersInRange('\|', '\\$')
 [/input]
 [output]
-% & ' ( ) \* + , - . / 0 1 2 3 4 5 6 7 8 9 : ; \< = \> ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z \[ \ \] ^ _ ` a b c d e f g h i j k l m n o p q r s t u v w x y z \{
+% & ' ( ) \* + , - . / 0 1 2 3 4 5 6 7 8 9 : ; \< = \> ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z \[ \ \] ^ _ \` a b c d e f g h i j k l m n o p q r s t u v w x y z \{
 [/output]
 [/test]
 [test]
 [input]
-:
-\#
+charactersInRange(':', '\#')
 [/input]
 [output]
 \$ \% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9
@@ -548,11 +488,10 @@ F G H I J K L M N O P Q R S T U V W X Y Z \[ \ \] ^ _ ` a b c d e f g h i j k l 
 [/test]
 [test]
 [input]
-m
-9
+charactersInRange('m', '9')
 [/input]
 [output]
-: ; \< = \> ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z \[ \ \] ^ _ ` a b c d e f g h i j k l
+: ; \< = \> ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z \[ \ \] ^ _ \` a b c d e f g h i j k l
 [/output]
 [/test]
 [/tests]
@@ -571,7 +510,11 @@ function oddEvenSum(input){
 [/code-editor]
 [code-adapter]
 ```
-(i, c) => {return c(Number(i[0]))}
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
 ```
 [/code-adapter]
 [task-description]
@@ -584,15 +527,15 @@ You have to write a function, that returns the **sum** of **all even** and **all
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|1000435|  Odd sum = 9, Even sum = 4 |
-|3495892137259234| Odd sum = 54, Even sum = 22 |
+| oddEvenSum(1000435) |  Odd sum = 9, Even sum = 4 |
+| oddEvenSum(3495892137259234) | Odd sum = 54, Even sum = 22 |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-1000435
+oddEvenSum(1000435)
 [/input]
 [output]
 Odd sum = 9, Even sum = 4
@@ -600,7 +543,7 @@ Odd sum = 9, Even sum = 4
 [/test]
 [test open]
 [input]
-3495892137259234
+oddEvenSum(3495892137259234)
 [/input]
 [output]
 Odd sum = 54, Even sum = 22
@@ -608,7 +551,7 @@ Odd sum = 54, Even sum = 22
 [/test]
 [test]
 [input]
-527249158
+oddEvenSum(527249158)
 [/input]
 [output]
 Odd sum = 27, Even sum = 16
@@ -616,7 +559,7 @@ Odd sum = 27, Even sum = 16
 [/test]
 [test]
 [input]
-100000001
+oddEvenSum(100000001)
 [/input]
 [output]
 Odd sum = 2, Even sum = 0
@@ -624,7 +567,7 @@ Odd sum = 2, Even sum = 0
 [/test]
 [test]
 [input]
-12345
+oddEvenSum(12345)
 [/input]
 [output]
 Odd sum = 9, Even sum = 6
@@ -632,7 +575,7 @@ Odd sum = 9, Even sum = 6
 [/test]
 [test]
 [input]
-1117
+oddEvenSum(1117)
 [/input]
 [output]
 Odd sum = 10, Even sum = 0
@@ -640,7 +583,7 @@ Odd sum = 10, Even sum = 0
 [/test]
 [test]
 [input]
-570529212230
+oddEvenSum(570529212230)
 [/input]
 [output]
 Odd sum = 30, Even sum = 8
@@ -662,29 +605,31 @@ function palindrome(input){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  return code(input.map(Number));
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
 [task-description]
 # Description
 
-A palindrome is a number that **reads the same backward as forwarding**, such as 323 or 1001. 
+A palindrome is a number that **reads the same backward as forwarding**, such as **323** or **1001**. 
 
 Write a function that receives an **array of positive integers** and checks if **each integer is a palindrome or not**. 
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`[123, 323, 421, 121]`|  false |
+| palindrome([123, 323, 421, 121]) |  false |
 ||true|
 ||false|
 ||true|
 
 | **Input** | **Output** |
 | --- | --- |
-|`[32, 2, 232, 1010]`|  false |
+| palindrome([32, 2, 232, 1010]) |  false |
 ||true|
 ||true|
 ||false|
@@ -694,10 +639,7 @@ Write a function that receives an **array of positive integers** and checks if *
 [tests]
 [test open]
 [input]
-123
-323
-421
-121
+palindrome([123, 323, 421, 121])
 [/input]
 [output]
 false
@@ -708,10 +650,7 @@ true
 [/test]
 [test open]
 [input]
-32
-2
-232
-1010
+palindrome([32, 2, 232, 1010])
 [/input]
 [output]
 false
@@ -722,9 +661,7 @@ false
 [/test]
 [test]
 [input]
-121
-159
-259
+palindrome([121, 159, 259])
 [/input]
 [output]
 true
@@ -734,14 +671,7 @@ false
 [/test]
 [test]
 [input]
-121
-528
-891
-622
-271
-602
-117
-489
+palindrome([121, 528, 891, 622, 271, 602, 117, 489])
 [/input]
 [output]
 true
@@ -756,15 +686,7 @@ false
 [/test]
 [test]
 [input]
-70
-555
-523
-902
-554
-209
-918
-37
-808
+palindrome([70, 555, 523, 902, 554, 209, 918, 37, 808])
 [/input]
 [output]
 false
@@ -780,15 +702,7 @@ true
 [/test]
 [test]
 [input]
-567
-656
-920
-184
-580
-128
-638
-276
-137
+palindrome([567, 656, 920, 184, 580, 128, 638, 276, 137])
 [/input]
 [output]
 false
@@ -804,13 +718,7 @@ false
 [/test]
 [test]
 [input]
-123321
-121
-356653
-157
-1001
-666
-159951
+palindrome([123321, 121, 356653, 157, 1001, 666, 159951])
 [/input]
 [output]
 true
@@ -838,8 +746,10 @@ function passwordValidator(input){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  return code(input[0]);
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
@@ -852,29 +762,29 @@ Write a function that checks if a given password is valid. Password validations 
 - It should consist only of letters and digits
 - It should have at least 2 digits 
 
-If a password is valid print `Password is valid`.
+If a password is valid print "**Password is valid**".
 
 If it is **NOT** valid, for every unfulfilled rule print a message:
 
-- `Password must be between 6 and 10 characters`
+- "**Password must be between 6 and 10 characters**"
 
-- `Password must consist only of letters and digits`
+- "**Password must consist only of letters and digits**"
 
-- `Password must have at least 2 digits`
+- "**Password must have at least 2 digits**"
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|'logIn'| Password must be between 6 and 10 characters |
+| passwordValidator('logIn') | Password must be between 6 and 10 characters |
 || Password must have at least 2 digits |
 
 | **Input** | **Output** |
 | --- | --- |
-|'MyPass123'| Password is valid |
+| passwordValidator('MyPass123') | Password is valid |
 
 | **Input** | **Output** |
 | --- | --- |
-|'Pa$s$s'| Password must consist only of letters and digits |
+| passwordValidator('Pa$s$s') | Password must consist only of letters and digits |
 || Password must have at least 2 digits|
 
 [/task-description]
@@ -882,7 +792,7 @@ If it is **NOT** valid, for every unfulfilled rule print a message:
 [tests]
 [test open]
 [input]
-logIn
+passwordValidator('logIn')
 [/input]
 [output]
 Password must be between 6 and 10 characters
@@ -891,7 +801,7 @@ Password must have at least 2 digits
 [/test]
 [test open]
 [input]
-MyPass123
+passwordValidator('MyPass123')
 [/input]
 [output]
 Password is valid
@@ -899,7 +809,7 @@ Password is valid
 [/test]
 [test open]
 [input]
-Pa\\$s\\$s
+passwordValidator('Pa$s$s')
 [/input]
 [output]
 Password must consist only of letters and digits
@@ -908,7 +818,7 @@ Password must have at least 2 digits
 [/test]
 [test]
 [input]
-Acer
+passwordValidator('Acer')
 [/input]
 [output]
 Password must be between 6 and 10 characters
@@ -917,7 +827,7 @@ Password must have at least 2 digits
 [/test]
 [test]
 [input]
-Picture
+passwordValidator('Picture')
 [/input]
 [output]
 Password must have at least 2 digits
@@ -925,7 +835,7 @@ Password must have at least 2 digits
 [/test]
 [test]
 [input]
-pesho123\#
+passwordValidator('pesho123\#')
 [/input]
 [output]
 Password must consist only of letters and digits
@@ -933,7 +843,7 @@ Password must consist only of letters and digits
 [/test]
 [test]
 [input]
-gas%2
+passwordValidator('gas%2')
 [/input]
 [output]
 Password must be between 6 and 10 characters
@@ -943,7 +853,7 @@ Password must have at least 2 digits
 [/test]
 [test]
 [input]
-\\$\\$\\$\\$\\$\\$\\$
+passwordValidator('\\$\\$\\$\\$\\$\\$\\$')
 [/input]
 [output]
 Password must consist only of letters and digits
@@ -952,7 +862,7 @@ Password must have at least 2 digits
 [/test]
 [test]
 [input]
-Pesho189
+passwordValidator('Pesho189')
 [/input]
 [output]
 Password is valid
@@ -960,7 +870,7 @@ Password is valid
 [/test]
 [test]
 [input]
-SoftUni40
+passwordValidator('SoftUni40')
 [/input]
 [output]
 Password is valid
@@ -982,24 +892,28 @@ function matrix(input){
 [/code-editor]
 [code-adapter]
 ```
-(i, c) => {return c(+i[0])}
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
 ```
 [/code-adapter]
 [task-description]
 # Description
 
-Write a function that receives a single integer number **n** and prints **nxn** matrix with that number.
+Write a function that receives a single integer number "**n**" and prints "**nxn**" matrix with that number.
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|3| 3 3 3|
+| matrix(3) | 3 3 3|
 || 3 3 3 |
 || 3 3 3 |
 
 | **Input** | **Output** |
 | --- | --- |
-|2| 2 2 |
+| matrix(2) | 2 2 |
 || 2 2 |
 
 
@@ -1008,7 +922,7 @@ Write a function that receives a single integer number **n** and prints **nxn** 
 [tests]
 [test open]
 [input]
-3
+matrix(3)
 [/input]
 [output]
 3 3 3
@@ -1018,21 +932,7 @@ Write a function that receives a single integer number **n** and prints **nxn** 
 [/test]
 [test open]
 [input]
-7
-[/input]
-[output]
-7 7 7 7 7 7 7
-7 7 7 7 7 7 7
-7 7 7 7 7 7 7
-7 7 7 7 7 7 7
-7 7 7 7 7 7 7
-7 7 7 7 7 7 7
-7 7 7 7 7 7 7
-[/output]
-[/test]
-[test open]
-[input]
-2
+matrix(2)
 [/input]
 [output]
 2 2
@@ -1041,7 +941,21 @@ Write a function that receives a single integer number **n** and prints **nxn** 
 [/test]
 [test]
 [input]
-10
+matrix(7)
+[/input]
+[output]
+7 7 7 7 7 7 7
+7 7 7 7 7 7 7
+7 7 7 7 7 7 7
+7 7 7 7 7 7 7
+7 7 7 7 7 7 7
+7 7 7 7 7 7 7
+7 7 7 7 7 7 7
+[/output]
+[/test]
+[test]
+[input]
+matrix(10)
 [/input]
 [output]
 10 10 10 10 10 10 10 10 10 10
@@ -1058,7 +972,7 @@ Write a function that receives a single integer number **n** and prints **nxn** 
 [/test]
 [test]
 [input]
-5
+matrix(5)
 [/input]
 [output]
 5 5 5 5 5
@@ -1070,7 +984,7 @@ Write a function that receives a single integer number **n** and prints **nxn** 
 [/test]
 [test]
 [input]
-18
+matrix(18)
 [/input]
 [output]
 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18
@@ -1095,7 +1009,7 @@ Write a function that receives a single integer number **n** and prints **nxn** 
 [/test]
 [test]
 [input]
-20
+matrix(20)
 [/input]
 [output]
 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20
@@ -1122,7 +1036,7 @@ Write a function that receives a single integer number **n** and prints **nxn** 
 [/test]
 [test]
 [input]
-13
+matrix(13)
 [/input]
 [output]
 13 13 13 13 13 13 13 13 13 13 13 13 13
@@ -1156,8 +1070,10 @@ function perfectNumber(input){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  return code(+input[0]);
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
@@ -1173,15 +1089,15 @@ The sum of a number's positive divisors excluding the number itself is also know
 # Example
 | Input   | Output | Comments   |
 | :---:       |    :----:   |   :---:     |
-|6|We have a perfect number!| `1 + 2 + 3`|
-|28| We have a perfect number!|`1 + 2 + 4 + 7 + 14`|
-|1236498|It's not so perfect.||
+| perfectNumber(6) |We have a perfect number!| `1 + 2 + 3`|
+| perfectNumber(28) | We have a perfect number!|`1 + 2 + 4 + 7 + 14`|
+| perfectNumber(1236498) |It's not so perfect.||
 
 ## Hint
 
 Equivalently, a perfect number is a number that is **half the sum** of all of its positive divisors, excluding itself
 
-**Six** is a perfect number because it is the sum of `1 + 2 + 3` (all of which are divided without residue).
+**Six** is a perfect number because it is the sum of "**1 + 2 + 3**" (all of which are divided without residue).
 
 Learn more about perfect numbers [here](https://en.wikipedia.org/wiki/Perfect_number).
 
@@ -1190,7 +1106,7 @@ Learn more about perfect numbers [here](https://en.wikipedia.org/wiki/Perfect_nu
 [tests]
 [test open]
 [input]
-6
+perfectNumber(6)
 [/input]
 [output]
 We have a perfect number!
@@ -1198,7 +1114,7 @@ We have a perfect number!
 [/test]
 [test open]
 [input]
-28
+perfectNumber(28)
 [/input]
 [output]
 We have a perfect number!
@@ -1206,7 +1122,7 @@ We have a perfect number!
 [/test]
 [test open]
 [input]
-1236498
+perfectNumber(1236498)
 [/input]
 [output]
 It's not so perfect.
@@ -1214,7 +1130,7 @@ It's not so perfect.
 [/test]
 [test]
 [input]
-7
+perfectNumber(7)
 [/input]
 [output]
 It's not so perfect.
@@ -1222,7 +1138,7 @@ It's not so perfect.
 [/test]
 [test]
 [input]
-496
+perfectNumber(496)
 [/input]
 [output]
 We have a perfect number!
@@ -1230,7 +1146,7 @@ We have a perfect number!
 [/test]
 [test]
 [input]
-29
+perfectNumber(29)
 [/input]
 [output]
 It's not so perfect.
@@ -1238,7 +1154,7 @@ It's not so perfect.
 [/test]
 [test]
 [input]
-8128
+perfectNumber(8128)
 [/input]
 [output]
 We have a perfect number!
@@ -1246,7 +1162,7 @@ We have a perfect number!
 [/test]
 [test]
 [input]
-133
+perfectNumber(133)
 [/input]
 [output]
 It's not so perfect.
@@ -1254,7 +1170,7 @@ It's not so perfect.
 [/test]
 [test]
 [input]
-33550336
+perfectNumber(33550336)
 [/input]
 [output]
 We have a perfect number!
