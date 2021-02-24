@@ -56,7 +56,13 @@ function adapter(input, code) {
 
 # Description
 
-Create a program to process numbers from the input parameters and print their sum until 0 is reached.
+Create a program, which sums and prints numbers in an array until the number **0**.
+
+- You receive an array of numbers
+
+- Go through the array and print the sum for each iteration
+
+- When you reach **0**, print: "**Good bye**"
 
 # Example
 
@@ -65,6 +71,9 @@ Create a program to process numbers from the input parameters and print their su
 | sumNumbers([5, 3, 2, 0]) | Sum = 5    |
 |                          | Sum = 8    |
 |                          | Sum = 10   |
+|                          | Good bye   |
+| sumNumbers([3, 15, 0])   | Sum = 3    |
+|                          | Sum = 18   |
 |                          | Good bye   |
 
 [/task-description]
