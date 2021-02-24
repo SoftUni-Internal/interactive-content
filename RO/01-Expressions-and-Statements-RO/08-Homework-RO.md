@@ -451,24 +451,31 @@ Funcția primește un argument:
 [hints]
 [hint]
 
-Calculăm prețul pentru amenajarea întregi curți:
-- 550 * 7.61 = $4185.5
+Calculate the price for the landscaping of the whole yard and store it in a variable:
+let total =  input * 7.61 
+
 
 [/hint]
 
 [hint]
 
-Reducem reducerea din suma totală:
-
-- 0.18 * 4185.5 = $753.39
+Calculate the discount and store the result in a variable: 
+let discount = total * 0.18
 
 [/hint]
 
 [hint]
 
-Calculăm prețul final al serivicului:
+Subtract the discount from the total price:
+total -= discount
 
-- 4185.5 – 753.39 -> $3432.11
+
+[/hint]
+[hint]
+
+Print the result on the console:
+console.log(The final price is: ${total} dollars.);
+console.log(The discount is: ${discount} dollars.);
 
 [/hint]
 [/hints]
