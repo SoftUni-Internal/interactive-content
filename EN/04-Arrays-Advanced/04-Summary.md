@@ -48,8 +48,4 @@ ages.sort((a, b) => a - b);
 console.log(ages.join(', '));
 ```
 
-## In the next lesson, you will learn:
-
-- How to solve a practical exam
-
 [/slide]
