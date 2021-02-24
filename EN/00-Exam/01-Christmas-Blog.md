@@ -2,7 +2,7 @@
 
 # Christmas Blog
 
-Download the resources from [here](https://videos.softuni.org/resources/HTML-CSS/Final-Exam/02-Christmas Blog/Resources.zip)
+Download the resources from [here](https://videos.softuni.org/resources/HTML-CSS/Final-Exam/02-Christmas\ Blog/Resources.zip)
 
 ## Tasks
 * You are given an **unresponsive** website **(HTML + CSS + images)** - your task is to make the site **responsive**
