@@ -1,26 +1,28 @@
-[slide]
+# Enumerations
+
+[slide hideTitle]
 
 # Enumerations
 
-**Enumeration** represent a numeric value from a fixed set as a text
+**Enumerations** represent **numeric values** from a fixed set as **text**.
 
-We can use them to pass **arguments** to **methods** without making code confusing
+We can use them to pass **arguments** to **methods** without making code confusing.
 
-- For Example: 
+**For example:**
 
-  `enum Day {Mon, Tue, Wed, Thu, Fri, Sat, Sun}`
+`enum Day {Mon, Tue, Wed, Thu, Fri, Sat, Sun}`
 
-  `GetDailySchedule(0)` =>  `GetDailySchedule(Day.Mon)`
+`GetDailySchedule(0)` =>  `GetDailySchedule(Day.Mon)`
 
-By default **enums** start at 0
+By default, **enums** start at 0.
 
-Every next value is incremented by 1
+Every next value is incremented by 1.
 
-## Customized enumetations
+## Customized Enumetations
 
-**We can customize enum values**
+We can **customize** `enum` values.
 
-Example: Days of week
+**Example:** Days of week
 
 ```java
 enum Day { 
@@ -35,7 +37,8 @@ enum Day {
 
 System.out.println(Day.Sat); // Sat
 ```
-Example: Coffee size
+
+**Example:** Coffee size
 
 ```java
 enum CoffeeSize { 
@@ -51,9 +54,9 @@ System.out.println(CoffeeSize.Small.getValue()); // 100
 ```
 [/slide]
 
-[slide]
-# Problem: Hotel Reservation
-[code-task title="Problem: Hotel Reservation" taskId="a9b9ef80-20cc-4bbd-88dc-8198ce84b988" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[slide hideTitle]
+# Problem with Solution: Hotel Reservation
+[code-task title="Hotel Reservation" taskId="oop-basics-java-more-oop-concepts-lab-Hotel-Reservation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -67,20 +70,22 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a class `PriceCalculator` that calculates the total price of a holiday, given the **price per day**, **number of days**, the **season** and a **discount type**. The **discount type** and **season** should be **enums.**
+Create a class `PriceCalculator` that calculates the total price of a holiday, given the **price per day**, **number of days**, the **season** and a **discount type**.
+
+The **discount type** and **season** should be **enums.**
 
 Use the class in your `main()` method to read input and **print** on the console the **price** of the **whole holiday**.
 
 The price per day will be multiplied depending on the season by:
-- 1 during Autumn
-- 2 during Spring
-- 3 during Winter
-- 4 during Summer
+- **1** during Autumn
+- **2** during Spring
+- **3** during Winter
+- **4** during Summer
 
 The discount is applied to the total price and is one of the following:
-- 20% for VIP clients - VIP
-- 10% for clients, visiting for a second time - SecondVisit
-- 0% if there is no discount - None
+- 20% for VIP clients - **VIP**
+- 10% for clients, visiting for a second time - **SecondVisit**
+- 0% if there is no discount - **None**
 
 ## Input
 On a **single line** you will receive all the **information** about the **reservation** in the format:
@@ -93,19 +98,26 @@ On a **single line** you will receive all the **information** about the **reserv
 - The discount will be one of: **VIP, SecondVisit, None**
 
 ## Output
+
 On a **single line**, print the **total price** of the **holiday**, rounded to 2 **digits** after the decimal separator.
 
 
-## Examples
+# Example
+
+## Example 1
+
 | **Input** | **Output** |
 | --- | --- |
 | 50.25 5 Summer VIP | 804.00 |
-|  |  |
+
+## Example 2
 
 | **Input** | **Output** |
 | --- | --- |
 | 40 10 Autumn SecondVisit | 360.00 |
-|  |  |
+
+
+## Example 3
 
 | **Input** | **Output** |
 | --- | --- |
@@ -173,54 +185,3 @@ On a **single line**, print the **total price** of the **holiday**, rounded to 2
 [/tests]
 [/code-task]
 [/slide]
-
-[slide]
-
-# Solution: Hotel Reservation 
-
-Create enumarations for **Seasons** and **Discounts**. Implement property with getter and setter:
-
-```java
-public enum Season {
-  Spring(2), Summer(4), Autumn(1), Winter(3);
-  private int value;
-  Season(int value) {
-    this.value = value;
-  }
-  public int getValue() {
-    return this.value;
-  }
-}
-```
-```java
-public enum Discount {
-  None(0), SecondVisit(10), VIP(20);
-  private int value;
-  Discount(int value) {
-    this.value = value;
-  }
-  public int getValue() {
-    return this.value;
-  }
-}
-```
-Then create class **PriceCalculator** and implement method `**CalculatePrice()**`:
-
-```java
-public class PriceCalculator {
-  public static double CalculatePrice(double pricePerDay,
-		int numberOfDays, Season season, Discount discount) {
-    int multiplier = season.getValue();
-    double discountMultiplier = discount.getValue() / 100.0;
-    double priceBeforeDiscount = numberOfDays * pricePerDay * multiplier;
-    double discountedAmount = priceBeforeDiscount * discountMultiplier;
-    return priceBeforeDiscount - discountedAmount;
-  }
-}
-```
-Afterwards go in `**main()**` and implement new **PriceCalculator**.
-
-Call `**CalculatePrice()**` with input data.
-
-[/slide]
-
