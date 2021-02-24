@@ -24,7 +24,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-For the upcoming premieres of three highly expected productions a local cinema has hired you to write a piece of software that calculates the price, which their clients have to pay, depending on the movie and the offer they have chosen.
+For the upcoming premieres of three highly expected productions, a local cinema has hired you to create a piece of software that calculates the price, which their clients have to pay, depending on the movie and the offer they have chosen.
 
 |\- | **John Wick**      | **Star Wars** | **Jumanji**   |
 |:---:    | :---:       |    :----:   |   :---:     |
@@ -32,7 +32,7 @@ For the upcoming premieres of three highly expected productions a local cinema h
 | Popcorn | 15$ | 25$ | 11$ |
 | Menu | 19$ | 30$ | 14$ |
 
-Write a program that calculates what is the total price to be paid by the customer. 
+Create a program, which calculates what is the total price to be paid by the customer. 
 
 There are also promotional discounts available for two of the movies:
 
@@ -41,23 +41,24 @@ There are also promotional discounts available for two of the movies:
 - If the chosen movie is "**Jumanji**" and exactly 2 tickets are bought, there is 15\% discount for two.
 
 ## Input
-As input you will receive 3 console elements:
+As input you will receive 3 arguments:
 
-- First element: movie - string: "**John Wick**", "**Star Wars**" or "**Jumanji**"
+- A string, representing the name of the movie: "**John Wick**", "**Star Wars**" or "**Jumanji**"
 
-- Second element: offer - string: "**Drink**", "**Popcorn**" or "**Menu**"
+- A string, representing consumables: "**Drink**", "**Popcorn**" or "**Menu**"
 
-- Third element: number of tickets  – whole number in the range \[1… 30\]
+- A number, representing the number of tickets: Int in the range \[1… 30\]
 
 ## Output
 
-Print one line on the console: `Your bill is {total price}$`
+Print one line on the console: "**Your bill is** \{**total price**\}$"
 
- * The price must be formatted to two digits after the decimal point.
+ * The price must be formatted to the second digit after the decimal point.
 
 ## Example
 | **Input** | **Output** |
 | --- | --- |
+|cinema(['Star Wars', 'Menu', 1]) | Your bill is 30.00$| 
 |cinema(['John Wick', 'Drink', 6])| Your bill is 72.00$|
 
 **Comments**
