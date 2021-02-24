@@ -61,17 +61,22 @@ Round the time up to the nearest whole number.
 | --- | --- |
 |timeForLunch(['Game of Thrones', 60, 96])| You have enough time to watch Game of Thrones and would be left with 0 minutes of free time.|
 
+[hints]
 
-**Comments**
+[hint]
 Timp pentru masă: 96 \* 1\/8 = 12.0
-
+[/hint]
+[hint]
 Timp pentru odihnă: 96 \* 1\/4 = 24.0
-
+[/hint]
+[hint]
 Timp rămas: 96 \- 12 \- 24 = 60
 
 In acest caz, timpul care vă rămâne este mai mare sau egal cu durata unui episod.
 
 Asigurați-vă că este imprimat rezultatul corect.
+[/hint]
+[/hints]
 
 ## Example
 | **Intrare** | **Ieșire** |
