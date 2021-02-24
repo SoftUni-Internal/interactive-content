@@ -181,8 +181,10 @@ function grades(input){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  return code (Number(input[0]));
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
@@ -203,16 +205,16 @@ Write a function that receives a grade between `2.00` and `6.00` and prints the 
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-|3.33 | Poor |
-|4.50 | Very good |
-|2.99 | Fail |
+| grades(3.33) | Poor |
+| grades(4.50) | Very good |
+| grades(2.99) | Fail |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-3.33
+grades(3.33)
 [/input]
 [output]
 Poor
@@ -220,7 +222,7 @@ Poor
 [/test]
 [test open]
 [input]
-4.50
+grades(4.50)
 [/input]
 [output]
 Very good
@@ -228,7 +230,7 @@ Very good
 [/test]
 [test open]
 [input]
-2.99
+grades(2.99)
 [/input]
 [output]
 Fail
@@ -236,7 +238,7 @@ Fail
 [/test]
 [test]
 [input]
-4.49
+grades(4.49)
 [/input]
 [output]
 Good
@@ -244,7 +246,7 @@ Good
 [/test]
 [test]
 [input]
-5.50
+grades(5.50)
 [/input]
 [output]
 Excellent
@@ -252,7 +254,7 @@ Excellent
 [/test]
 [test]
 [input]
-4.60
+grades(4.60)
 [/input]
 [output]
 Very good
@@ -260,7 +262,7 @@ Very good
 [/test]
 [test]
 [input]
-3.20
+grades(3.20)
 [/input]
 [output]
 Poor
@@ -268,7 +270,7 @@ Poor
 [/test]
 [test]
 [input]
-2.00
+grades(2.00)
 [/input]
 [output]
 Fail
@@ -295,9 +297,9 @@ function mathPower(input){
 [code-adapter]
 ```
 function adapter(input, code) {
-  let a = Number(input[0]);
-  let b = Number(input[1]);
-  return code(a, b);
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
@@ -311,16 +313,15 @@ Write a function that **calculates** and returns the value of a number **raised 
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-|2, 8 | 256 |
-|3, 4 | 81 |
+| mathPower(2, 8) | 256 |
+| mathPower(3, 4) | 81 |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-2
-8
+mathPower(2, 8)
 [/input]
 [output]
 256
@@ -328,8 +329,7 @@ Write a function that **calculates** and returns the value of a number **raised 
 [/test]
 [test open]
 [input]
-3
-4
+mathPower(3, 4)
 [/input]
 [output]
 81
@@ -337,8 +337,7 @@ Write a function that **calculates** and returns the value of a number **raised 
 [/test]
 [test]
 [input]
-7
-2
+mathPower(7, 2)
 [/input]
 [output]
 49
@@ -346,8 +345,7 @@ Write a function that **calculates** and returns the value of a number **raised 
 [/test]
 [test]
 [input]
-123
-3
+mathPower(123, 3)
 [/input]
 [output]
 1860867
@@ -355,8 +353,7 @@ Write a function that **calculates** and returns the value of a number **raised 
 [/test]
 [test]
 [input]
-5.5
-3
+mathPower(5.5, 3)
 [/input]
 [output]
 166.375
@@ -364,8 +361,7 @@ Write a function that **calculates** and returns the value of a number **raised 
 [/test]
 [test]
 [input]
-21
-10
+mathPower(21, 10)
 [/input]
 [output]
 16679880978201
@@ -373,8 +369,7 @@ Write a function that **calculates** and returns the value of a number **raised 
 [/test]
 [test]
 [input]
-10
-7
+mathPower(10, 7)
 [/input]
 [output]
 10000000
@@ -382,8 +377,7 @@ Write a function that **calculates** and returns the value of a number **raised 
 [/test]
 [test]
 [input]
-12
-3
+mathPower(12, 3)
 [/input]
 [output]
 1728
@@ -391,8 +385,7 @@ Write a function that **calculates** and returns the value of a number **raised 
 [/test]
 [test]
 [input]
-2
-3
+mathPower(2, 3)
 [/input]
 [output]
 8
@@ -400,8 +393,7 @@ Write a function that **calculates** and returns the value of a number **raised 
 [/test]
 [test]
 [input]
-3
-2
+mathPower(3, 2)
 [/input]
 [output]
 9
@@ -409,8 +401,7 @@ Write a function that **calculates** and returns the value of a number **raised 
 [/test]
 [test]
 [input]
-4
-4
+mathPower(4, 4)
 [/input]
 [output]
 256
@@ -418,8 +409,7 @@ Write a function that **calculates** and returns the value of a number **raised 
 [/test]
 [test]
 [input]
-4
-4
+mathPower(4, 4)
 [/input]
 [output]
 256
