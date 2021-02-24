@@ -28,9 +28,9 @@ This should be a pretty good indicator that you should split it into two or more
 
 ## Naming Method Parameters
 
-Method parameter names should be **[Noun]** or **[Adjective]** + **[Noun]**. 
+Method parameter names should be **\[Noun\]** or **\[Adjective\]** + **\[Noun\]**. 
 
-Also always type method names in **camelCase**:
+Always write method names in **camelCase**:
 
 - **firstName**, **report**, **speedKmH**, **getListOfUsers**, **calculateFontSizeInPixels**
 
