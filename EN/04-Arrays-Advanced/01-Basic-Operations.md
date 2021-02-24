@@ -192,7 +192,6 @@ sumFirstLast(['5', '10'])
 [/test]
 [/tests]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
