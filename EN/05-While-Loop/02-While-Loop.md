@@ -58,10 +58,10 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program, which:
+Create a program, which prints all the numbers from a given input in decreasing order:
 
-* Reads a number from the console
-* Prints the numbers starting from the number to 1 (**inclusive**)
+* You receive a number from the console
+* Print the numbers starting from the given input up to 1 (**inclusive**)
 
 # Example
   | **Input** | **Output** |
@@ -70,6 +70,9 @@ Create a program, which:
 ||3 |
 ||2 |
 || 1|
+| decreasingNumbers(3)| 3 |
+|| 2 |
+|| 1 |
 
 [/task-description]
 [tests]
@@ -139,7 +142,11 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Create a program that prints all **numbers ≤ n** of the series: **1, 3, 7, 15, 31, …,** assuming that each next number = **previous number * 2 + 1**.
+Create a program, which prints all numbers **smaller than** and **equal to** a given number **n**:
+
+- You receive a number **n**
+
+- Stick to the following rules when printing: **1, 3, 7, 15, 31, …, n** assuming that each next number equals the **previous number * 2 + 1**.
 
 # Example
   | **Input** | **Output** |
@@ -147,6 +154,10 @@ Create a program that prints all **numbers ≤ n** of the series: **1, 3, 7, 15,
 |sequence(8)| 1 |
 ||3 |
 ||7 |
+|sequence(15)| 1 |
+|| 3 |
+|| 7 |
+|| 15 |
 
 [/task-description]
 [tests]
