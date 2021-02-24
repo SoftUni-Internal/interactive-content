@@ -57,30 +57,28 @@ Imprimați pe consolă timpul necesar pentru a viziona toate episoadele, rotunji
 | **Intrare** | **Ieșire** |
 | --- | --- |
 |tvSeries(['Lucifer', 3, 18, 55])| Total time needed to watch the Lucifer series is 3594 minutes.|
+|tvSeries(['Flash', 5, 20, 51])| Total time needed to watch the Flash series is 6170 minutes.|
 
 [hints]
 
 [hint]
-Durata reclamelor din fiecare episod: 20\% from 55 \= 11.0
+Calculate the duration of advertisements per episode.
 [/hint]
 [hint]
 
-Durata unui episod cu publicitate: 55 \+ 11 \= 66.0
+Determine the duration of an episode with advertisements.
 [/hint]
 [hint]
 
-Timp adăugat pentru episoadele speciale: 3\*10 \= 30
+Add extra time for the specials.
 [/hint]
 [hint]
 
-Timpul total necesar pentru a vedea toate episoadele: 66 \* 18 \* 3 \+ 30 = 3594.0
+Calculate the total time needed to watch the whole series.
 [/hint]
+
 [/hints]
 
-## Example
-| **Intrare** | **Ieșire** |
-| --- | --- |
-|tvSeries(['Flash', 5, 20, 51])| Total time needed to watch the Flash series is 6170 minutes.|
 
 [/task-description]
 [code-io /]
