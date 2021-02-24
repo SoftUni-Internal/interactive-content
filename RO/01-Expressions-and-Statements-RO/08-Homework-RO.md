@@ -7,7 +7,7 @@
 [code-task title="Calculate a square area" taskId="pb-js-expressions-Calculate-a-square-area" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language="javascript"]
 ```
-function calculateSpeed (input) {
+function calculateArea(input) {
    // Scrieți codul dvs. aici
 }
 ```
@@ -34,14 +34,14 @@ Creați un program care obține un număr întreg și calculează aria unui păt
 ## Exemplu
 | **Input** | **Output** |
 | --- | --- |
-| calculateSpeed(5) | 25 |
+| calculateArea(5) | 25 |
 
 
 [/task-description]
 [tests]
 [test]
 [input]
-calculateSpeed(2)
+calculateArea(2)
 [/input]
 [output]
 4
@@ -49,7 +49,7 @@ calculateSpeed(2)
 [/test]
 [test]
 [input]
-calculateSpeed(5)
+calculateArea(5)
 [/input]
 [output]
 25
@@ -57,7 +57,7 @@ calculateSpeed(5)
 [/test]
 [test]
 [input]
-calculateSpeed(100)
+calculateArea(100)
 [/input]
 [output]
 10000
@@ -65,7 +65,7 @@ calculateSpeed(100)
 [/test]
 [test]
 [input]
-calculateSpeed(1)
+calculateArea(1)
 [/input]
 [output]
 1
@@ -407,7 +407,7 @@ Perimeter = 59.06
 [code-task title="Yard Landscaping" taskId="pb-js-expressions-Yard-Landscaping" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language="javascript"]
 ```
-function fourOperations(input){
+function landscape(input){
     // Scrieți codul dvs. aici
 }
 ```
@@ -445,7 +445,7 @@ Funcția primește un argument:
 ## Exemplu
 | **Input** | **Output** |
 | --- | --- |
-| fourOperations(550) | The final price is: 3432.11 dollars. |
+| landscape(550) | The final price is: 3432.11 dollars. |
 |  | The discount is: 753.39 dollars. |
 
 [hints]
@@ -483,14 +483,14 @@ console.log(The discount is: ${discount} dollars.);
 
 | **Input** | **Output** |
 | --- | --- |
-| fourOperations(150) | The final price is: 936.03 dollars. |
+| landscape(150) | The final price is: 936.03 dollars. |
 |  | The discount is: 205.47 dollars. |
 
 [/task-description]
 [tests]
 [test]
 [input]
-fourOperations(550)
+landscape(550)
 [/input]
 [output]
 The final price is: 3432.11 dollars.
@@ -499,7 +499,7 @@ The discount is: 753.39 dollars.
 [/test]
 [test]
 [input]
-fourOperations(335)
+landscape(335)
 [/input]
 [output]
 The final price is: 2090.467 dollars.
@@ -508,7 +508,7 @@ The discount is: 458.883 dollars.
 [/test]
 [test]
 [input]
-fourOperations(412)
+landscape(412)
 [/input]
 [output]
 The final price is: 2570.9624000000003 dollars.
@@ -517,7 +517,7 @@ The discount is: 564.3576 dollars.
 [/test]
 [test]
 [input]
-fourOperations(500)
+landscape(500)
 [/input]
 [output]
 The final price is: 3120.1 dollars.
