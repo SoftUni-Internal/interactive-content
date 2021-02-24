@@ -2,6 +2,8 @@
 
 # Flowerify
 
+Download resources from [here](https://videos.softuni.org/resources/HTML-CSS/Final-Exam/03-Flowerify/03-Flowerify.zip)
+
 Create a web page (**HTML5 + CSS3 + images**) that looks and behaves like the screenshots below:
 
 [image assetsSrc="03-Florify.png" /]
