@@ -25,14 +25,6 @@ Write a Java program, which:
 
 Prints "Hello Java" on the console.
 
-[hints]
-[hint]
-
-Type in the console: System.out.println("Hello Java");
-
-[/hint]
-[/hints]
-
 [/task-description]
 [code-io /]
 [tests]
