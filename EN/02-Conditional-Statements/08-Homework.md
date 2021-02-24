@@ -27,9 +27,9 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Create a program  to check a password:
+Create a program, which verifies a password:
 
-* Read a string: the password **guess**
+* You receive a string: the password **guess**
 * Print "**Welcome**" if the password guess is "**s3cr3t!**"
 * Print "**Wrong password!**" in all other cases 
 
@@ -97,11 +97,11 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Create a program, which checks for hot water: 
+Create a program, which determines if the water in a pot is boiling: 
 
-* Read a floating-point number: the water **temperature** (in °C)
-* Print "**The water is boiling**" if the number \> 100
-* Prints "**The water is not hot**" enough` in all other cases 
+* You receive a floating-point number: the water **temperature** (in °C)
+* Print "**The water is boiling**" if the number is **equal to** or **bigger** than 100.0
+* Print "**The water is not hot**" enough in all other cases 
 
   # Example
 
@@ -171,11 +171,11 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Write a program to check for fast / slow speed: 
+Create a program, which determines if you are moving **fast** or **slow** with a given speed: 
 
-* Read the **speed** (a floating-point number)
-* Print "**Slow**" if the speed \<\= 30
-* Print "**Fast**" if the speed \> 30
+* You receive the **speed**: (a floating-point number)
+* Print "**Slow**" if the speed is **smaller than** or **equal to** 30
+* Print "**Fast**" if the speed is bigger than 30
 
   # Example
 
@@ -391,24 +391,25 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program to calculate a ticket price:
+Create a program, which calculates ticket price:
 
-* Read a ticket type: either **student** or **regular**
+* You receive a ticket type: either **student** or **regular**
 
-* Print the **price** in the following format `${price}`:
+* Print the **price** in the following format **$**\{**price**\}:
     * The price should be **formatted** to 2nd digit after the decimal point
 
 * Student ticket price: **1.00**
 
 * Regular ticket price: **1.60**
 
-* For invalid type print "**Invalid ticket type!**"
+* For invalid tickets, print: "**Invalid ticket type!**"
 
 # Example
 
 | **Input** | **Output** |
 | --- | --- |
 | tickets('student') | $1.00 |
+| tickets('teacher') | Invalid ticket type! |
 
 
 [/task-description]
