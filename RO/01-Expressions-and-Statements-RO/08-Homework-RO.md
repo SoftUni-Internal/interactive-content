@@ -448,17 +448,30 @@ Funcția primește un argument:
 | fourOperations(550) | The final price is: 3432.11 dollars. |
 |  | The discount is: 753.39 dollars. |
 
-## Explicații
+[hints]
+[hint]
+
 Calculăm prețul pentru amenajarea întregi curți:
-- **550 * 7.61 = $4185.5**
+- 550 * 7.61 = $4185.5
+
+[/hint]
+
+[hint]
 
 Reducem reducerea din suma totală:
 
-- **0.18 * 4185.5 = $753.39**
+- 0.18 * 4185.5 = $753.39
+
+[/hint]
+
+[hint]
 
 Calculăm prețul final al serivicului:
 
-- **4185.5 – 753.39 -> $3432.11**
+- 4185.5 – 753.39 -> $3432.11
+
+[/hint]
+[/hints]
 
 
 | **Input** | **Output** |
