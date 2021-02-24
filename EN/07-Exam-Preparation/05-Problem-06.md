@@ -28,29 +28,29 @@ function adapter(input, code) {
 # Description
 It is Friday night, and you are wondering which movie to watch. 
 
-You decide to write a program to choose it for you. 
+You decide to create a program, which chooses it for you. 
 
-Until receiving the command "**STOP**" you will be given the titles of some of your favorite movies. 
+Until receiving the "**STOP**" command, you will be given the titles of some of your favorite movies. 
 
 The best movie for you will be the one that has the most points. 
 
 The points are calculated by the sum of the ASCII character values in the movie title. 
 
-There will not be a case where we have two films have an equal amount of points
+There will not be a case where two movies have an equal amount of points
 
 Keep in mind the following:
 
-- For each lowercase letter from the title, you must subtract from the sum the length of the movie title multiplied by 2.
+- For each lowercase letter from the title, you must subtract the length of the movie title, multiplied by 2, from the sum.
 
-- For each uppercase letter in the title, the length of the film's title should be subtracted from the sum.
+- For each uppercase letter in the title, the length of the movie's title should be subtracted from the sum.
 
 - You can have a maximum of 7 movie titles.
 
 ## Input
 
-You receive multiple elements from the console until the command "**STOP**" or until the limit of 7 movies is reached:
+You receive multiple elements from the console until the "**STOP**" command or until the limit of 7 movies is reached:
 
-- Movie title: string;
+- Movie title: String
 
 ## Output
 
@@ -58,31 +58,28 @@ Print on the console:
 
 - If you have reached the limit of 7 movies you must print: 
 
-`Title limit has been reached.`
+**Title limit has been reached.**
 
-- Print the best movie for you: 
+- Print the best movie: 
 
-`The best movie for you is {movie title} its ASCII sum is: {sum of symbols}.`
+**The best movie for you is** \{**movie title**\} **its ASCII sum is:** \{**sum of symbols**\}.
 
-## Example
-| **Input** | **Output** |
-| --- | --- |
-|movie(['Matrix', 'Breaking bad', 'Legend', 'STOP'])| The best movie for you is Breaking bad its ASCII sum is: 878.|
-
-**Comments**
-
-First we get **Matrix**, the first letter is M with a value of 77, it is a capital letter so we subtract from it the length of the title 77 \- 6 \= 71.
-
-The second letter has a value of 97 and we subtract from its title length \* 2 from the sum 97 \- 12 = 85.
-
-Similarly, we proceed with each subsequent letter until we receive the final amount of 563.
-
-Upon receiving the "**STOP**" command, we print the title with the highest value, which is **Breaking** bad with a sum of 878.
 ## Example
 | **Input** | **Output** |
 | --- | --- |
 |movie(['Wrong turn', 'The maze', 'Area 51', 'Night Club', 'Ice age', 'Harry Potter', 'Wizards'])| Title limit has been reached.|
 ||The best movie for you is Harry Potter its ASCII sum is: 948.|
+|movie(['Matrix', 'Breaking bad', 'Legend', 'STOP'])| The best movie for you is Breaking bad its ASCII sum is: 878.|
+
+**Comments**
+
+First, we get **Matrix**, the first letter is M with a value of 77, it is a capital letter so we subtract from it the length of the title 77 \- 6 \= 71.
+
+The second letter has a value of 97 and we subtract from its title length \* 2 from the sum 97 \- 12 = 85.
+
+Similarly, we proceed with each subsequent letter until we get the final amount of 563.
+
+Upon receiving the "**STOP**" command, we print the title with the highest value, which is **Breaking bad** with a sum of 878.
 
 [/task-description]
 [code-io /]
