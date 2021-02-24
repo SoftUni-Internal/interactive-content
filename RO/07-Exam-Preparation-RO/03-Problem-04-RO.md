@@ -21,7 +21,7 @@ function solve(input) {
 
 Ați fost angajat de un cinematograf să scrieți un program care să calculeze profitul obținut în cazul în care sala este plină. 
 
-Trebuie să primiți numărul de locuri din sală și pe următoarele linii din consolă, până ce este introdusă comanda `Movie time!`, veți primi un număr de spectatori noi.
+Trebuie să primiți numărul de locuri din sală și pe următoarele linii din consolă, până ce este introdusă comanda "**Movie time!**", veți primi un număr de spectatori noi.
 
 Dacă numărul de oameni care intră în sală poate fi împărțit la trei fără să avem un rest, atunci se va aplica o reducere de $5 la prețul total.
 
@@ -36,13 +36,13 @@ Citiți de pe consolă:
 - Primul element: capacitatea sălii: un număr întreg în intervalul  \[50... 150\]
 
 - 
-Pe fiecare dintre elementele următoare, până când comanda este `Movie Time!`:
+Pe fiecare dintre elementele următoare, până când comanda este "**Movie time!**":
 	- Numărul de oameni care intră în cinematograf: un număr întreg în intervalul  \[1… 15\]
 
 ## Output
 Mai întâi, tipăriți următoarele linii:
 
-- Dacă ați primit comanda `Movie time!`: 
+- Dacă ați primit comanda "**Movie time!**": 
 
 `There are {seats left} seats left in the cinema.`
 
@@ -58,7 +58,7 @@ Mai întâi, tipăriți următoarele linii:
 
 | **Intrare** | **Ieșire** |
 | --- | --- |
-|`['10', '6', '3', '20', '15', 'Movie time!']`| There are 6 seats left in the cinema.|
+|cinemaIncome([60, 10, 6, 3, 20, 15, 'Movie time!'])| There are 6 seats left in the cinema.|
 ||Cinema income - 255$|
 
 **Comments**
@@ -68,11 +68,11 @@ Capacitatea sălii este de 60 locuri.
 
 Următorul element este numărul de persoane care au intrat în sală: 10.
 
-Prețul pe care îl vor plăti este `10 * 5 = 50$`. 
+Prețul pe care îl vor plăti este 10 \* 5 = 50$. 
 
-După ce primim numărul de 6 spectatori intrați în sală, dacă 6 se împarte la 3, atunci ei vor plăti cu `5$` mai puțin. 
+După ce primim numărul de 6 spectatori intrați în sală, dacă 6 se împarte la 3, atunci ei vor plăti cu 5$ mai puțin. 
 
-Continuăm până ce primim comanda `Movie time!` și apoi imprimăm datele de ieșire corespunzătoare.
+Continuăm până ce primim comanda "**Movie time!**" și apoi imprimăm datele de ieșire corespunzătoare.
 
 [/task-description]
 [code-io /]
