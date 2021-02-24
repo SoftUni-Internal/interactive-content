@@ -29,16 +29,17 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program, which:
+Create a program, which sums all the digits of a given number:
 
-* Reads a number from the console
-* **Sums** the **digits** of a number
-* Prints the sum
+* You receive a number from the console
+* **Sum** its **digits**
+* Print the sum to the console
 
 # Example
   | **Input** | **Output** |
 | --- | --- |
 |sumDigits(5634)| 18 |
+|sumDigits(45666)| 27 |
 
 [/task-description]
 [tests]
@@ -120,18 +121,22 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program, which: 
+Create a program, which finds a given **favorite book** in an array of books: 
 
-* Receives a favorite **book's name**
-* Receives book names until it reaches the favorite book
-* Prints `Invalid book: {book name}` for all invalid books
-* Prints `Book found!`, when finds the book and program stops
+* You receive a string, representing the favorite **book's name**
+* Next, you receive book names until the favorite book
+* Print "**Invalid book: **\{**book name**\}" for all invalid books
+* Print "**Book found!**", when you encounter the favorite book's name
+* Break the loop after you reach the favorite book
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
 | favoriteBook('Alice in Wonderland', ['Winnie the Pooh', 'Peter Pan', 'Alice in Wonderland']) | Invalid book: Winnie the Pooh |
 ||Invalid book: Peter Pan|
+||Book found!|
+| favoriteBook('The Hunger Games', ['Harry Potter', 'Lord of the Rings', 'The Hunger Games']) | Invalid book: Harry Potter |
+|| Invalid book: Lord of the Rings |
 ||Book found!|
 
 [/task-description]
@@ -226,16 +231,18 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program, which: 
+Create a program, which finds the **largest** and the **smallest** number in a sequence:
 
-* Receives integers until **END**
-* Prints the **biggest** and the **smallest** integer
+* You receive integers until the **END** command
+* Print the **largest** and the **smallest** integer
 
 # Example
   | **Input** | **Output** |
 | --- | --- |
 | minAndMax(['10', '20', '304', '0', '50', 'END'])| Max number: 304 |
 ||Min number: 0|
+| minAndMax(['5', '13', '145', 'END', '35', '66'])| Max number: 145 |
+||Min number: 5|
 
 
 [/task-description]
@@ -321,21 +328,22 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-The special number is a number **divisible by all of its digits** without remainder. 
+ 
+Create a program, determines if a number is special: 
 
-Create a program, which: 
+* You receive a number as a string
 
-* Receives a number as a string
+* Print "\{**num**\} **is special**", if the number is special
 
-* **Prints** `{num} is special`, if the number is special
+* Otherwise, print "\{**num**\} **is not special**"
 
-* Otherwise, prints `{num} is not special`
+The special number is a number **divisible by all of its digits** without remainder.
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
 | specialNumber('23')| 23 is not special |
-
+| specialNumber('55')| 55 is special |
 
 [/task-description]
 [tests]
@@ -423,16 +431,17 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program, which: 
+Create a program, calculates bonus points based on the following rules: 
 
-* Reads an **integer** number from the console
-* Keeps reading integers until it finds the **same one as the first one**
-* When it finds it, it increases the value of the **previous** number **before it** with 100% and prints it
+* You receive an **integer** **x** and an **array** from the console
+* Keep processing the integers in the array until you find the **same one as x*
+* When you find it, multiply the value of the number **before it** by 2 and print it
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
 | specialBonus(25, ['20', '30', '25']) | 60 |
+| specialBonus(5, ['3', '4', '7', '8', '5']) | 16 |
 
 
 [/task-description]
@@ -521,11 +530,11 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program, which: 
+Create a program, which prints a sequence of numbers up to a given input, based on the following rules: 
 
-* Reads a number **n** from the console
-* Prints a **sequence** of numbers, which are **<= n** and satisfy the following condition:
-* Each number is equal to the previous one multiplied by **2** plus **1**
+- You receive a number **n** from the console
+- Print a **sequence** of numbers, which are **smaller than** or **equal to** **n**, and satisfy the following condition:
+  - Each number is equal to the previous one multiplied by **2** plus **1**
 
 # Example
   | **Input** | **Output** |
@@ -534,6 +543,10 @@ Create a program, which:
 ||3|
 || 7|
 || |
+| sequence(16) | 1 |
+|| 3 |
+|| 7 |
+|| 15 |
 
 [/task-description]
 [tests]
@@ -632,11 +645,11 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program, which: 
+Create a program, which manages an account balance:
 
-* Receives the **amount of money** for each transaction untill `END`
-* **Adds** the money to the **balance** and **prints**: `Increase: {money}`, format `money` to the **2nd digit** after the decimal point
-* After `END` calculates and **prints** the total balance: `Total: {balance}`, format `balance` to the **2nd digit** after the decimal point
+* You receive the **amount of money** for each transaction untill the **END** command
+* **Add** the money to the **balance** and **print**: "**Increase: **\{**money**\}", format **money** to the **2nd digit** after the decimal point
+* After **END**, calculate and **print** the total balance: "**Total: **\{**balance**\}", format **balance** to the **2nd digit** after the decimal point
 
 # Example
   | **Input** | **Output** |
@@ -645,6 +658,9 @@ Create a program, which:
 ||Increase: 69.42|
 ||Increase: 100.00 |
 || Total: 174.93 |
+| accountBalance(['55.00', '45.00', 'END']) | Increase: 55.00 |
+||Increase: 45.00|
+|| Total: 100.00 |
 
 
 [/task-description]
