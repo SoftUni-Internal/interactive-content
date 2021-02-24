@@ -22,12 +22,12 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program to check for fruit or vegetable:
+Create a program, which determines if the **input** is a **fruit** or a **vegetable**:
 
-* Read a single input line: an item from the greengrocery
-* Fruits: banana, apple, kiwi, cherry, lemon, grapes
-* Vegetables: cucumber, pepper, carrot, onion
-* Print: "**vegetable**", "**fruit**" or  "**unknown**"
+* You receive a single input line: an item from the greengrocery
+* Print "**fruit**" for the following: **banana**, **apple**, **kiwi**, **cherry**, **lemon** and **grapes**
+* Print "**vegetable**" for the following: **cucumber**, **pepper**, **carrot** and **onion**
+* Print "**unknown**" for everything else
 
 # Example
 | **Input** | **Output** |
@@ -136,10 +136,10 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program to print the day of the week as a word: 
+Create a program, which prints the day of the week as a word: 
 
-* Read and integer **n**: the **day of the week** in range \[1..7\]
-* Print the name of the day (as word, in English) 
+* You receive an integer **n**: the **day of the week** in range \[1..7\]
+* Print the name of the day (as a word in English)
 * Print "**Error**" if the number is not in the given range
 
 # Example
@@ -241,9 +241,9 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program to check a letter for vowel or consonant:
+Create a program, which determines if a a letter is a **vowel** or a **consonant**:
 
-* Read a **letter** from the English alphabet
+* You receive a **letter** from the English alphabet
 * Print either "**Vowel**" or "**Consonant**"
 
 # Example
@@ -331,16 +331,17 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Calculate the sign of the product of 3 numbers:
+Create a program, which determines the sign of the product of 3 numbers:
 
-* Read **3 floating-point** numbers as an array
+* You receive **3 floating-point** numbers as an array
 * Print the **sign** of the product of the entered 3 numbers: "**positive**", "**negative**" or "**zero**"
 
 Try to do this **without multiplying** the 3 numbers
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|productOfThreeNumbers([2, 3, -1])| negative |
+| productOfThreeNumbers([2, 3, -1]) | negative |
+| productOfThreeNumbers([33, 3, 0]) | zero | 
 
 
 [/task-description]
@@ -430,9 +431,9 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program, which checks for **sorted 3 numbers**:
+Create a program, which determiens if the **given numbers** are sorted:
 
-* Read 3 real numbers
+* You receive 3 floating-point numbers
 * Print "**Ascending**" if the numbers are in ascending order
 * Print "**Descending**" if the numbers are in descending order
 * Print "**Not sorted**" in any other case
@@ -538,7 +539,7 @@ function adapter(input, code) {
 # Description
 Create a program, which calculates vacation expenses:
 
-* Read a season, an accommodation type, and a count of the days 
+* You receive a season, an accommodation type, and a count of the days 
 * Print the total **expenses**, based on the price table below, formatted to the **2nd digit** after the decimal point
 
  | Season   | Hotel | Camping   | Discount|
@@ -551,7 +552,8 @@ Create a program, which calculates vacation expenses:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|vacationExpenses('Winter', 'Hotel', 5)| 180.00 |
+| vacationExpenses('Winter', 'Hotel', 5) | 180.00 |
+| vacationExpenses('Summer', 'Camping', 3) | 90.00 |
 
 [/task-description]
 [tests]
@@ -638,10 +640,10 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Calculate the **price** for all the tickets for a cinema movie:
+Create a program, which prints the **price** of all the tickets for a cinema movie:
 
-* Reads the **type of the movie**, the **rows** and the **seats per row** in the cinema
-* Prints the **total price** for all seats **formatted** to the 2nd digit after the decimal point
+* You receive the **type of the movie**, the **rows** and the **seats per row** in the cinema
+* Prints the **total price** for all seats, **formatted** to the 2nd digit after the decimal point
 
   | **Type** | **Price** |
 | --- | --- |
@@ -845,16 +847,17 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program to apply an operator for given two numbers:
+Create a program, which applies an operator to a given pair of numbers:
 
-* Read two integers and a math operator from the console 
+* You receive two integers and a math operator from the console 
 * The math operator could be: \+, \-, \/, \% and \*
-* The output should be in the following **format**: `{N1} {operator} {N2} = {result}`
+* The output should be in the following **format**: \{**N1**\} \{**operator**\} \{**N2**\} = \{**result**\}
 
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|operationswithNumbers(12, 10, '\+')| 12 + 10 = 22 |
+| operationswithNumbers(12, 10, '\+') | 12 + 10 = 22 |
+| operationswithNumbers(25, 25, '\-') | 25 - 25 = 0 |
 
 [/task-description]
 [tests]
@@ -941,9 +944,9 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program to simulate an ATM withdrawal:
+Create a program, which simulates an ATM withdrawal:
 
-* Read: **balance**, **withdraw** and **limit**
+* You receive the following: **balance**, **withdraw** and **limit**
 * Print "**The withdraw was successful.**" if the balance is enough
 * Print "**The daily limit was exceeded.**" if the limit is exceeded
 * Print "**Insufficient availability.**" if the balance is not enough
@@ -952,9 +955,6 @@ Create a program to simulate an ATM withdrawal:
   | **Input** | **Output** |
 | --- | --- |
 |atm(420, 20, 25)| The withdraw was successful. |
-
-  | **Input** | **Output** |
-| --- | --- |
 |atm(10, 50, 20)| The daily limit was exceeded. |
 || Insufficient availability. |
 
@@ -1029,13 +1029,14 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program to find the biggest among 5 numbers
-* Read **5 integers**
-* Print the **largest** number. 
+Create a program, which finds the biggest of 5 numbers
+* You receive **5 integers**
+* Print the **largest** number
 
   | **Input** | **Output** |
 | --- | --- |
-|biggestOfFiveNumbers(\-1, \-2, \-3, \-4, \-5) | \-1 |
+| biggestOfFiveNumbers(\-1, \-2, \-3, \-4, \-5) | \-1 |
+| biggestOfFiveNumbers(3, 4, 77, 12, 33) | 77 |
 
 
 [/task-description]
