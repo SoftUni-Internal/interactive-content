@@ -58,15 +58,24 @@ Imprimați pe consolă timpul necesar pentru a viziona toate episoadele, rotunji
 | --- | --- |
 |tvSeries(['Lucifer', 3, 18, 55])| Total time needed to watch the Lucifer series is 3594 minutes.|
 
-**Comments** 
+[hints]
 
+[hint]
 Durata reclamelor din fiecare episod: 20\% from 55 \= 11.0
+[/hint]
+[hint]
 
 Durata unui episod cu publicitate: 55 \+ 11 \= 66.0
+[/hint]
+[hint]
 
 Timp adăugat pentru episoadele speciale: 3\*10 \= 30
+[/hint]
+[hint]
 
 Timpul total necesar pentru a vedea toate episoadele: 66 \* 18 \* 3 \+ 30 = 3594.0
+[/hint]
+[/hints]
 
 ## Example
 | **Intrare** | **Ieșire** |
