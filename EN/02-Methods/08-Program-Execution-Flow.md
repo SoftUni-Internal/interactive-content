@@ -45,13 +45,9 @@ We are using the Scanner class to accept user input through the console.
 
 First, we read the name of the city and immediately call the `printWeather()` method, passing the string as a parameter to it.
 
-The program then skips down several lines to where the `printWeather(String city)` method declaration is found.
-
-It then executes all the code in the method.
+The program then skips down several lines to where the `printWeather(String city)` method declaration is found and executes all the code in the method.
 
 Finally, it will return to where the method was called and continue after it by printing a question and prompting the user for a choice of yes or no.
-
-
 
 
 [/slide]
@@ -62,9 +58,9 @@ Finally, it will return to where the method was called and continue after it by 
 
 The stack contains **stack frames** for each method call. These stack frames store information on:
 
-- Any arguments passed into the method
-- Local variables
-- The address to which to return after a method finishes executing
+- any arguments passed into the method
+- local variables
+- the address to which to return after a method finishes executing
 
 
 
