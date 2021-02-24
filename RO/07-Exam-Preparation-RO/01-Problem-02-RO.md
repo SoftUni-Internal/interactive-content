@@ -60,28 +60,24 @@ Round the time up to the nearest whole number.
 | **Intrare** | **Ieșire** |
 | --- | --- |
 |timeForLunch(['Game of Thrones', 60, 96])| You have enough time to watch Game of Thrones and would be left with 0 minutes of free time.|
+|timeForLunch(['Riverdale', 57, 90])| You don't have enough time to watch Riverdale, you need 1 more minutes.|
 
 [hints]
 
 [hint]
-Timp pentru masă: 96 \* 1\/8 = 12.0
+Determine the time needed for lunch.
 [/hint]
+
 [hint]
-Timp pentru odihnă: 96 \* 1\/4 = 24.0
+Calculate the relax time.
 [/hint]
+
 [hint]
-Timp rămas: 96 \- 12 \- 24 = 60
+Figure out how much time is left.
 
-In acest caz, timpul care vă rămâne este mai mare sau egal cu durata unui episod.
-
-Asigurați-vă că este imprimat rezultatul corect.
+Make sure that the right output is printed to the console.
 [/hint]
 [/hints]
-
-## Example
-| **Intrare** | **Ieșire** |
-| --- | --- |
-|timeForLunch(['Riverdale', 57, 90])| You don't have enough time to watch Riverdale, you need 1 more minutes.|
 
 [/task-description]
 [code-io /]
