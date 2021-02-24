@@ -2,6 +2,10 @@
 
 # Restaurant
 
+[code-task title="Restaurant" taskId="Html-css-exam-restaurant"]
+
+[task-description]
+
 Download the resources from [here](https://videos.softuni.org/resources/HTML-CSS/Final-Exam/Exam-Resources.zip)
 
 ## Tasks
@@ -12,5 +16,7 @@ Download the resources from [here](https://videos.softuni.org/resources/HTML-CSS
 * Use the Google fonts - [**"Poppins"**](https://fonts.google.com/specimen/Poppins)
 * The web page should open correctly in the latest version of Chrome
 * Pixel-perfect implementation is **NOT** required
+
+[/task-description]
 
 [/slide]
