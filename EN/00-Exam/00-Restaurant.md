@@ -5,7 +5,6 @@
 [code-task title="Print Hello Java" taskId="pb-java-introduction-print-hello-java"]
 
 
-[/code-editor]
 [task-description]
 ## Description
 
