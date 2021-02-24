@@ -68,7 +68,7 @@ Followed by:
 
 | **Input** | **Output** |
 | --- | --- |
-|lift([15, '0 0 0 0 0']lift(| There is room for more passengers! |
+|lift([15, '0 0 0 0 0'])| There is room for more passengers! |
 ||4 4 4 3 0|
 
 **Comment**
@@ -82,7 +82,7 @@ Followed by:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|lift([[20, '0 2 0'])|The lift is full. 10 people currently in line.|
+|lift([20, '0 2 0'])|The lift is full. 10 people currently in line.|
 ||4 4 4|
 
 **Comment**
