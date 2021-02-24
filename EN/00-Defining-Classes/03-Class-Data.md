@@ -1,4 +1,6 @@
-[slide]
+# Class Data
+
+[slide hideTitle]
 
 # Fields
 
@@ -11,11 +13,11 @@ A Java field is a variable inside a class.
 
 For instance, in a class representing a car, the Car class might contain the following fields:
 
-- brand
-- model
-- horsePower
+- `brand`
+- `model`
+- `horsePower`
 
-The corresponding Java class could be defined like this:
+The corresponding Java class is defined as follows:
 
 ```java
 public class Car {
@@ -29,9 +31,9 @@ public class Car {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
-# Problem: Define Car Class
+# Problem with Solution: Define Car Class
 
 [vimeo-video]
 [stream language="EN" videoId="485442542/b12b87f743" default /]
@@ -41,9 +43,9 @@ public class Car {
 Create a class named **Car**.
 
 The class should have **public** fields for:
-- Brand: String
-- Model: String
-- Horsepower: int
+- **Brand**: String
+- **Model**: String
+- **Horsepower**: Integer
 
 Create a **new class** and ensure **proper naming**
 
@@ -68,16 +70,8 @@ public class Main {
 }
 // Define your Car class here
 ```
-[/slide]
 
-[slide]
-
-# Solution: Define Car Class
-
-[vimeo-video]
-[stream language="EN" videoId="485442701/b871eca10d" default /]
-[stream language="RO" videoId="485442701/b871eca10d"  /]
-[/video-vimeo]
+## Solution
 
 Create a new class and **ensure proper naming!**
 [image assetsSrc="defining-classes-example(2).png" /]
@@ -98,7 +92,7 @@ public class Car {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Access Modifiers
 
@@ -107,27 +101,31 @@ public class Car {
 [stream language="RO" videoId="485442782/1379d735a9"  /]
 [/video-vimeo]
 
-Access modifiers determine whether other classes can use a particular field.
+**Access modifiers** determine whether other classes can use a particular field.
 
 There are four types of access modifiers in Java:
 
 - private
 - package-private
 - protected
-- public 
+- public
 
-The **private** access modifier means that only code inside the class itself can access this Java field.
+Using a **private** access modifier means that only code inside the class body can access this Java field.
 
-If you don't use any modifier, it is treated as **package-private** by **default**.
+If you do not use any modifier, it is treated as **package-private** by **default**.
 
 The **package-private** access modifier means that only code inside the class itself, or other classes in the same package, can access the field.
 
-It provides more accessibility than private. But, it is **more restrictive than protected, and public**.
+It provides more accessibility than private.
 
-The **protected** access modifier is accessible within **the package** and outside the package but through **\*inheritance** only.
+But, it is **more restrictive** than **protected** and **public**.
 
-\*Inheritance in Java is a mechanism in which one object acquires all the properties and behaviours of a parent object. You can find out more about **Inheritance** [here](https://docs.oracle.com/javase/tutorial/java/concepts/inheritance.html).
+The **protected** access modifier is accessible within and outside the package, but through **inheritance** only.
 
-The **public** access modifier is accessible within **everywhere**.
+**Inheritance** is a mechanism in which one object **acquires** all the **properties** and **behaviors** of a **parent** object.
+
+You can find out more about **inheritance** [here](https://docs.oracle.com/javase/tutorial/java/concepts/inheritance.html).
+
+The **public** access modifier is accessible **everywhere**.
 
 [/slide]
