@@ -174,7 +174,7 @@ Min number: -2
 [code-editor language=javascript]
 
 ```
-function powerOfNumbers(n, p) {
+function powerOfNumbers(p, n) {
   // Scrieți codul dvs. aici
 }
 ```
@@ -214,8 +214,7 @@ Creați un program care:
 [tests]
 [test]
 [input]
-4
-7
+powerOfNumbers(7, 4)
 [/input]
 [output]
 16384
@@ -223,8 +222,7 @@ Creați un program care:
 [/test]
 [test]
 [input]
-3
-12
+powerOfNumbers(12, 3)
 [/input]
 [output]
 531441
@@ -232,8 +230,7 @@ Creați un program care:
 [/test]
 [test]
 [input]
-3
-7
+powerOfNumbers(7, 3)
 [/input]
 [output]
 2187
@@ -241,8 +238,7 @@ Creați un program care:
 [/test]
 [test]
 [input]
-8
-3
+powerOfNumbers(3, 8)
 [/input]
 [output]
 512
@@ -250,8 +246,7 @@ Creați un program care:
 [/test]
 [test]
 [input]
-2
-8
+powerOfNumbers(8, 2)
 [/input]
 [output]
 256
@@ -259,8 +254,7 @@ Creați un program care:
 [/test]
 [test]
 [input]
-3
-5
+powerOfNumbers(5, 3)
 [/input]
 [output]
 243
