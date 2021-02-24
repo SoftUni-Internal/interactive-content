@@ -55,15 +55,25 @@ Print to the console the time needed to watch all of the episodes, rounded down 
 |tvSeries(['Lucifer', 3, 18, 55])| Total time needed to watch the Lucifer series is 3594 minutes.|
 |tvSeries(['Flash', 5, 20, 51])| Total time needed to watch the Flash series is 6170 minutes.|
 
-**Comments** 
+[hints]
 
+[hint]
 The duration of advertisements per episode: 20\% of 55 \= 11.0
+[/hint]
+[hint]
 
 The duration of an episode with the advertisements: 55 \+ 11 \= 66.0
+[/hint]
+[hint]
 
 Additional time to be added, because of the specials: 3\*10 \= 30
+[/hint]
+[hint]
 
 Total time needed to watch the episodes: 66 \* 18 \* 3 \+ 30 = 3594.0
+[/hint]
+
+[/hints]
 
 [/task-description]
 [code-io /]
