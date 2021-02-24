@@ -21,49 +21,33 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-The school year has already started and Annie has to buy a certain number of **packets of pencils**, **markers**, and a **detergent** for cleaning the board. 
+The school year has already started and Annie has to buy a few packs of ** pencils**, **markers**, and a **detergent** for cleaning the board. 
 
 She is a regular customer of a bookstore, and there is a **discount** for her, which represents a **percentage** of the total.
 
-Write a program that calculates how much money Annie will have to **save** to pay the bill, keeping in mind the following price list:
+Create a program, which calculates how much money Annie will have to **save** to pay the bill, keeping in mind the following price list:
 
-- **Package of pencils:** $5.80
+- **A pack of pencils:** $5.80
 
-- **Markers:** $7.20
+- **A pack of markers:** $7.20
 
 - **A liter of detergent**: $1.20 
 
 ## Input
 
-The input comes as an **array of which contains four numbers**:
+The input comes as an **array of four numbers**:
 
-- **First Number:** 
+- Number of pencil packages - Int in the interval \[0 ... 100\]
 
-Count pencil packages. 
+- Number of marker packages - Int in the interval \[0 ... 100\]
 
-Integer in the interval \[0 ... 100\]
+- Liters of detergent - Floating-point number in the interval \[0.00… 50.00\]
 
-- **Second Number:**
-
-Count marker packages. 
-
-Integer in the interval \[0 ... 100\]
-
-- **Third Number:**
-
-Liters of detergent. 
-
-Real number in the interval \[0.00… 50.00\]
-
-- **Fourth Number:**
-
-The percentage discount. 
-
-Integer in the interval \[0 ... 100\]
+- Percentage discount - Int in the interval \[0 ... 100\]
 
 ## Output
 
-Print on the console how much money Annie will need to pay her bill. 
+Print to the console how much money Annie will need to pay her bill. 
 
 The result should be **formatted** to the third decimal place.
 
@@ -71,6 +55,8 @@ The result should be **formatted** to the third decimal place.
 
 | **Input** | **Output** |
 | --- | --- |
+|studyMaterials([4, 2, 5, 13])| 37.932 |
+|studyMaterials([7, 8, 0.5, 45])|54.340|
 |studyMaterials([2, 3, 2.5, 25])| 27.150 |
 
 **Comments**
@@ -85,13 +71,6 @@ The result should be **formatted** to the third decimal place.
 
 - **Price with discount:** 36.20 \– ((36.20 \* 25) \/ 100) = 27.150
 
-## Example
-
-| **Input** | **Output** |
-| --- | --- |
-|studyMaterials([4, 2, 5, 13])| 37.932 |
-|studyMaterials([7, 8, 0.5, 45])|54.340|
- 
 [/task-description]
 [code-io /]
 [tests]
