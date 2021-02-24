@@ -55,17 +55,17 @@ Print the current state of all targets in the range
 
 Each time Peter reaches a target:
 
-* He will shoot at it and get 5 points, decreasing the target's total point value by 5.
+* He will shoot at it and get 5 points, decreasing the target's total point value by 5
 
-* If the target is worth less than 5 points Peter takes all of its points and decreases the total points of the target to 0.
+* If the target is worth less than 5 points Peter takes all of its points and decreases the total points of the target to 0
 
 If the start index, specified in any command is out of range, to begin with, Peter will have to ignore this command.
 
 ## Input
 
-* You will receive integers separated by "\|" representing the targets in the archery range.
+* You will receive integers separated by "\|" representing the targets in the archery range
 
-* Until the "**Game over**" command is given you will receive commands in the format described above.
+* Until the "**Game over**" command is given you will receive commands in the format described above
 
 ## Output
 
@@ -84,15 +84,15 @@ If the start index, specified in any command is out of range, to begin with, Pet
 
 **Comments**
 
-* First, Peter receives the "**Shoot Left@0@2**" command, so he starts walking in the archery range from "**index 0**" with "**length 2**" and he stops at "**index 3**".
+* First, Peter receives the "**Shoot Left@0@2**" command, so he starts walking in the archery range from "**index 0**" with "**length 2**" and he stops at "**index 3**"
 
-He shoots and the archery filed looks like this: "10 - 10 - 10 - 5 - 10"
+He shoots and the archery filed looks like this: "10 - 10 - 10 - 5 - 10".
 
 At this point he aquires 5 points.
 
 * Then he receives "**Shoot Right@4@5**" \-\> "10 - 10 - 10 - 5 - 5"
 
-* Shoot "**Right@6@5**" \-\> "**Index 6**" is out of range (does not exist in the range), so Peter ignores the command.
+* Shoot "**Right@6@5**" \-\> "**Index 6**" is out of range (does not exist in the range), so Peter ignores the command
 
 * "**Reverse**" \-\> The end result should be: "5 - 5 - 10 - 10 - 10"
 

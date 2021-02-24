@@ -56,20 +56,20 @@ If the index is invalid, ignore the command.
 
 ## Input
 
-* You will receive a string, containing book titles, separated by "\&".
+* You will receive a string, containing book titles, separated by "\&"
 
-* Until you receive "**Done**", you will get commands in the format described above.
+* Until you receive "**Done**", you will get commands in the format described above
 
 
 ## Output
 
-* Print the collection of books joined by  (", ").
+* Print the collection of books joined by  (", ")
 
 "\{**firstBook**\}, \{**secondBook**\}, ...\{**lastBook**\}"
 
 ## Constraints
 
-* You will not receive any duplicate book names in the initial list of books.
+* You will not receive any duplicate book names in the initial list of books
 
 ## Example One
 
