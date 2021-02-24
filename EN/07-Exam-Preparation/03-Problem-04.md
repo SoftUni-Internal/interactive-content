@@ -61,22 +61,29 @@ First, print one of these lines:
 ## Example
 | **Input** | **Output** |
 | --- | --- |
-|cinemaIncome([140, 15, 15, 10, 5, 6, 7, 8, 9, 'Movie time!']) | There are 65 seats left in the cinema. |
-|| Cinema income - 355$|
 |cinemaIncome([60, 10, 6, 3, 20, 15, 'Movie time!'])| There are 6 seats left in the cinema.|
 ||Cinema income - 255$|
+|cinemaIncome([140, 15, 15, 10, 5, 6, 7, 8, 9, 'Movie time!']) | There are 65 seats left in the cinema. |
+|| Cinema income - 355$|
 
-**Comments**
 
+[hints]
+
+[hint]
 The hall's capacity is 60 seats. 
 
 The next element is the number of people that have entered the hall: 10. 
 
 The price that they will pay is 10 \* 5 = 50\$. 
+[/hint]
+[hint]
 
 After that, we receive 6 people entering the hall and 6 can be divided by 3, so they pay 5\$ less. 
 
 We continue until we receive the command "**Movie time!**" and then we print a suitable output.
+[/hint]
+
+[/hints]
 
 [/task-description]
 [code-io /]
