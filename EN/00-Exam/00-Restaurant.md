@@ -2,7 +2,12 @@
 
 # Restaurant
 
-[taskId="pb-java-introduction-print-hello-java"]
+[code-task title="Print Hello Java" taskId="pb-java-introduction-print-hello-java"]
+
+
+[/code-editor]
+[task-description]
+## Description
 
 Download the resources from [here](https://videos.softuni.org/resources/HTML-CSS/Final-Exam/Exam-Resources.zip)
 
@@ -15,6 +20,7 @@ Download the resources from [here](https://videos.softuni.org/resources/HTML-CSS
 * The web page should open correctly in the latest version of Chrome
 * Pixel-perfect implementation is **NOT** required
 
-
-
+[/task-description]
+[code-io /]
+[/code-task]
 [/slide]
