@@ -65,15 +65,11 @@ Print one line on the console: "**Your bill is** \{**total price**\}$"
 [hints]
 
 [hint]
-The movie is John Wick and a drink is chosen.
-
-The price for one ticket is 12\$
+Depending on what movie and drink have been chosen, determine the ticket price.
 [/hint]
 
 [hint]
-6 tickets each 12\$ \-\> 72\$
-
-For this movie there is no discount, total price is 72.00\$. 
+Check if there will be a discount and calculate the total price.
 [/hint]
 [/hints]
 
