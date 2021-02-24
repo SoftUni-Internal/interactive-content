@@ -1,6 +1,6 @@
 [slide hideTitle]
 
-# 03. Flowerify
+# Flowerify
 
 Create a web page (**HTML5 + CSS3 + images**) that looks and behaves like the screenshots below:
 
@@ -24,4 +24,4 @@ The output should be valid HTML + CSS + images that implement the above web page
 
 
  
-[slide]
+[/slide]

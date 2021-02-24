@@ -1,6 +1,6 @@
 [slide hideTitle]
 
-# 02. Christmas Blog
+# Christmas Blog
 
 Download the resources from [here](https://videos.softuni.org/resources/HTML-CSS/Final-Exam/02-Christmas Blog/Resources.zip)
 
@@ -19,4 +19,4 @@ Download the resources from [here](https://videos.softuni.org/resources/HTML-CSS
 * Pixel-perfect implementation is **NOT required**
 * The site should open correctly in the latest version of Chrome
  
- [slide]
+ [/slide]
