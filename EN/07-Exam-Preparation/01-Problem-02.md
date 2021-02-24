@@ -26,7 +26,7 @@ function adapter(input, code) {
 # Description
 During your lunch break you want to **watch** an episode of your favorite TV series.
 
-Your task is to create a program that will help you determine whether you have **enough time** to watch an entire episode.
+Your task is to create a program, which will help you determine whether you have **enough time** to watch an entire episode.
 
 During your lunchbreak you should also take some time to **eat** and **relax**.
 
@@ -36,28 +36,29 @@ You know, that the time you need to finish your lunch takes up precisely 1\/8 (*
 ## Input
 You will receive **3 elements** from the console:
 
-- Name of the series: string
+- Name of the series: String
 
-- Duration of an episode: a whole number in the range \[10… 90\]
+- Duration of an episode: Int in the range \[10… 90\]
 
-- Break duration: a whole number in the range \[10… 120\]
+- Break duration: Int in the range \[10… 120\]
 
 ## Output
 The output should consist of one line:
 
 - If there is enough time to watch the episode: 
 
-`You have enough time to watch {name of the series} and would be left with {time left} minutes of free time.`
+**You have enough time to watch** \{**name of the series**\} **and would be left with** \{**time left**\} **minutes of free time.**
 
 - If there is not enough time: 
 
-`You don't have enough time to watch {name of the series}, you need {time needed} more minutes.`
+**You don't have enough time to watch** \{**name of the series**\}**, you need** \{**time needed**\} **more minutes.**
 
 Round the time up to the nearest whole number.
 
 ## Example
 | **Input** | **Output** |
 | --- | --- |
+|timeForLunch(['Riverdale', 57, 90])| You don't have enough time to watch Riverdale, you need 1 more minutes.|
 |timeForLunch(['Game of Thrones', 60, 96])| You have enough time to watch Game of Thrones and would be left with 0 minutes of free time.|
 
 **Comments**
@@ -70,12 +71,7 @@ Time left: 96 \- 12 \- 24 = 60
 
 In this case, the time you would have left is more than or equal to the duration of the episode.
 
-Make sure that the right output is printed out.
-
-## Example
-| **Input** | **Output** |
-| --- | --- |
-|timeForLunch(['Riverdale', 57, 90])| You don't have enough time to watch Riverdale, you need 1 more minutes.|
+Make sure that the right output is printed to the console.
 
 [/task-description]
 [code-io /]
