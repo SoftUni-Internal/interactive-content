@@ -13,7 +13,7 @@ Create a folder for your project and open it from VS Code:
 
 [image assetsSrc="intro-to-programming-4.png" /]
 
-Create a file `hello.js` to hold your program's source code:
+Create a file **hello.js** to hold your program's source code:
 
 [image assetsSrc="intro-to-programming-5.png" /]
 
@@ -31,14 +31,16 @@ Press `[Enter]` after **the opening parentheses** `{` and **start writing**.
 The code of the program is written inwards, as this is a part of shaping up the text for convenience during a review and/or debugging. 
 
 Write the following command: 
+
 ```js
 console.log("Hello, JavaScript!");
 ```
+
 Here is how our program should look like in Visual Studio Code: 
 
 [image assetsSrc="intro-to-programming-9.png" /]
 
-The command `console.log("Hello JS")` in JavaScript means to print something out `log(…)` on the console `console` in our case to print the text message **Hello JS**, which we should surround by quotation marks.
+The command `console.log('Hello JS')` in JavaScript means to print something out `log(…)` on the console `console` in our case to print the text message **Hello JS**, which we should surround by quotation marks.
  
 To clarify that this is a text. 
 
@@ -64,7 +66,7 @@ Hello, JavaScript!
 ```
 In VS Code `[F5]`/`[Ctrl+F5]` keys runs your earliest created `.js` file
 
-If you have multiple `.js` files in VS Code, you may want to start the current file with `[F5]`/`[Ctrl + F5]` \-\> edit the launch configuration
+If you have multiple .js files in VS Code, you may want to start the current file with `[F5]`/`[Ctrl + F5]` \-\> edit the launch configuration
 
 [image assetsSrc="intro-to-programming-7.png" /]
 

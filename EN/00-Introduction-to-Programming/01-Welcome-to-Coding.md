@@ -58,7 +58,7 @@ Area = 25
 ```
 We **will explain in detail how to write programs in JavaScript**, why we need to define a **function** and then call the function - a bit later. 
 
-For now, let's just say that the **JavaScript programming language** requires all the above code to execute a sequence of commands. 
+For now, let us just say that the **JavaScript programming language** requires all the above code to execute a sequence of commands. 
 
 To correctly **form our commands**, we should know the **syntax** and the **semantics** of the language which we are working with, in our case – JavaScript.
 
@@ -109,7 +109,7 @@ console.log(min)
 
 [video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-10-Console-Based-JavaScript-Program-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Let's look at a simple program that takes **an amount of money in U.S. Dollars (USD)** - an integer converts it into **Euro (EUR)** multiplying it by the exchange rate and prints out the obtained result. 
+Let us look at a simple program that takes **an amount of money in U.S. Dollars (USD)** - an integer converts it into **Euro (EUR)** multiplying it by the exchange rate and prints out the obtained result. 
 
 This is a program of 3 consecutive commands: 
 
@@ -145,9 +145,6 @@ Using the block of code from the example we are creating a text box as in the sl
 It is important to insert our `convertUsdToEur()` function in our html script.
 
 Also, we have two textboxes - **Dollars:** and **Euro:**.
-
-
-
 
 
 [/slide]

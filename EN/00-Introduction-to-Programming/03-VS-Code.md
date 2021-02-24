@@ -44,7 +44,7 @@ This is an example of how this IDE looks (the Visual Studio Code IDE for JavaScr
 
 We need **Node.js** so that we can execute JavaScript code outside of a browser.
 
-* server-side JS runtime.
+* Server-side JS runtime
 
 [image assetsSrc="intro-to-programming-3.png" /]
 
@@ -55,7 +55,7 @@ You can download [Node.js](https://nodejs.org/en/download/).
 Select your OS and go on with installing.
 [image assetsSrc="intro-to-programming-install-nodejs-2.png" /]
 
-Let's continue with the installation of the integrated environment **Microsoft Visual Studio Code**.
+Let us continue with the installation of the integrated environment **Microsoft Visual Studio Code**.
 
 Installing later versions of Visual Studio Code should be very similar.
 
@@ -92,7 +92,9 @@ Upon **starting VS Code** the main view of Visual Studio Code is displayed.
 
 [image assetsSrc="intro-to-programming-install-vscode-8.png" /]
 
-That's all. You are ready to work with Visual Studio Code.
+That is all! 
+
+You are ready to work with Visual Studio Code.
 [/slide]
 
 [slide hideTitle]
