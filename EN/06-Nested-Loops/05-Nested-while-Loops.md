@@ -64,10 +64,11 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program, which:
+Create a program, which prints a triangle of stars with a given size:
 
-* Reads the **height** of a triangle from the console
-* Prints a **triangle of stars**
+* You receive the **height** of a triangle as input
+* Print the **triangle of stars** to the console
+
 # Example
 | **Input** | **Output**| 
 | --- | --- |
@@ -76,6 +77,9 @@ Create a program, which:
 | | \*\*\* |
 |  | \*\*\*\* |
 | | \*\*\*\*\* |
+| triangleOfStars(3) | \* |
+| | \*\* |
+| | \*\*\* |
 
 [/task-description]
 [code-io /]
@@ -153,20 +157,24 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Continuously read numbers until **End** is entered:
+Create a program, which processes a sequence of numbers and prints the sum of their digits:
 
-* Print the sum of digits for each number
+* You receive an array of numbers as input
 
-* Finally, print **Goodbye**
+* Print the sum of digits for each number: "**Sum of digits =** \{**sum**\}"
+
+* When you reach the **END** command, print: "**Goodbye**"
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
 | sumOfDigits(['157', 99', 5', '438', 'End']) |Sum of digits = 13 |
-||Sum of digits = 13|
 ||Sum of digits = 18|
 ||Sum of digits = 5|
 ||Sum of digits = 15|
+||Goodbye|
+| sumOfDigits(['33', '52', 'END']) | Sum of digits = 6 |
+||Sum of digits = 7 |
 ||Goodbye|
 
 
