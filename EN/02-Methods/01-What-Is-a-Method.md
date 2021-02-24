@@ -29,21 +29,21 @@ printHello();
 
 We use methods in Java for several reasons.
 
-- **Reusability** - we write a method once and use it **multiple times**. 
+- **Reusability** - we write a method once and use it **multiple times** 
 
-We do not have to copy the same blocks of code in multiple places to use them. Think of it as, `write once, reuse multiple times`
+  - we do not have to copy the same blocks of code in multiple places to use them. Think of it as, `write once, reuse multiple times`
 
 - **To parameterize code** - you will often want to use `parameters` that change the way the method behaves
 
 - **Create conceptual units** - you can create methods for each separate task that your program is aiming to solve
 
-- Methods make code more readable and easier to debug. 
+- Methods make code more readable and easier to debug
 
-For example, the `printHello()` method is so readable, that we can know what this method will print `Hello`
+  - for example, the `printHello()` method is so readable, that we can know what this method will print `Hello`
 
-- **Simplify problems** - local variables and statements of a method **can not be seen from outside the method**. 
+- **Simplify problems** - local variables and statements of a method **can not be seen from outside the method**
 
-They \(and their complexity\) are **hidden** from other parts of the program, which prevents accidental errors or confusion
+  - they are **hidden** from other parts of the program, which prevents accidental errors or confusion
 
 [/slide]
 
