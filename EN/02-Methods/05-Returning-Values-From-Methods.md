@@ -25,17 +25,17 @@ public class MyClass {
 
 The return value can be:
 
-- **Assigned** to a variable
+- **assigned** to a variable
 ```Java
 int max = getMax(5, 10);
 ```
 
-- **Used** in expression
+- **used** in expression
 ```Java
 double total = getPrice() * quantity * 1.20;
 ```
 
-- **Passed** to another method
+- **passed** to another method
 ```Java
 int age = Integer.parseInt(sc.nextLine());
 ```
