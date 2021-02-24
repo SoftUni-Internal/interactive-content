@@ -29,6 +29,8 @@ You have been hired by a cinema to create a program, which calculates whether th
 
 You are going to receive the number of seats in the hall and on the next console lines, until the command "**Movie time!**", you will get a number of newly arriving viewers.
 
+The price for 1 ticket is 5\$.
+
 If the number of people currently entering the hall can be **divided by 3 without a remainder**, there is a 5$ **discount** on the total price.
 
 If there are **no more free seats in the hall**, the program must stop reading input from the console.
@@ -70,17 +72,14 @@ First, print one of these lines:
 [hints]
 
 [hint]
-The hall's capacity is 60 seats. 
-
-The next element is the number of people that have entered the hall: 10. 
-
-The price that they will pay is 10 \* 5 = 50\$. 
+Get the hall's capacity. Then calculate how much each group of visitors will pay.
 [/hint]
 [hint]
 
-After that, we receive 6 people entering the hall and 6 can be divided by 3, so they pay 5\$ less. 
-
-We continue until we receive the command "**Movie time!**" and then we print a suitable output.
+If the number of people entering the hall can be divided by 3, apply the discount.
+[/hint]
+[hint]
+Upon receiving the command "**Movie time!**", print the suitable output.
 [/hint]
 
 [/hints]
