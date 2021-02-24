@@ -223,12 +223,13 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program, which reads the user input from the console: name and then prints `Hello, {name}`, where `{name}` is the user input.  
+Create a program, which reads a user's name from the console and then prints "**Hello,** \{**name**\}", where \{**name**\} is the user input.  
 
 ## Example
 | **Input** | **Output** |
 | --- | --- |
 | sayHello('John') | Hello, John |
+| sayHello('Anna') | Hello, Anna |
 
 [/task-description]
 [tests]
