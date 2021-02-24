@@ -287,9 +287,9 @@ While we have more than one element in the array **nums**\[\], repeat the follow
 - Allocate a new array **condensed**\[\] of size **nums**\.**Length**\-**1**
 
 - Sum the numbers from **nums**\[\] to **condensed**\[\]:
-  -	**condensed**\[i\] = **nums**\[i\] \+ **nums**\[i\+1\]
+  - **condensed**\[i\] = **nums**\[i\] \+ **nums**\[i\+1\]
 
--	**nums**\[\] = **condensed**\[\]
+- **nums**\[\] = **condensed**\[\]
 
 [/task-description]
 [tests]
@@ -411,6 +411,9 @@ On the first line print the **newly modified array**, on the second line print t
 | addOrSubtract([5, 15, 23, 56, 35]) | [ 5, 14, 21, 59, 31 ] |
 || 134|
 || 130 |
+
+| **Input** | **Output** |
+| --- | --- |
 | addOrSubtract([-5, 11, 3, 0, 2]) | [ 5, 14, 21, 59, 31 ] |
 || 11|
 || 15 |
@@ -651,7 +654,7 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Create a program, which prints all **unique** pairs in **an array of integers** whose **sum** is **equal** to a given number. 
+Create a program, which prints all **unique** pairs is **an array of integers** whose **sum** is **equal** to a given number. 
 
 &nbsp;
 
