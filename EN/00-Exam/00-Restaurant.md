@@ -4,6 +4,7 @@
 
 [code-task title="Restaurant" taskId="Html-css-exam-restaurant"]
 
+[/code-editor]
 
 Download the resources from [here](https://videos.softuni.org/resources/HTML-CSS/Final-Exam/Exam-Resources.zip)
 
