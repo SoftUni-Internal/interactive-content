@@ -22,7 +22,7 @@ Overloading methods is done by using the same name for multiple methods with dif
 
 Instead of defining two methods that should do the same thing, it is better to create additional method overloads.
 
-In the example below, we overload the **addTwoNumbers** method to work for both **int** and **double**:
+In the example below, we overload the **addTwoNumbers** method to work with both **int** and **double**:
 
 ```java live no-template
 public class MyClass {
