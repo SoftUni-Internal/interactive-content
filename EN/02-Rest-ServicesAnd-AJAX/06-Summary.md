@@ -3,11 +3,11 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-39-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In this lesson you learned:
+## In this lesson you have learned:
 
--  HTTP is a **text-based client-server protocol** used for transferring Web resources
+-  HTTP - a **text-based client-server protocol** used for transferring Web resources
 
--  REST is an architecture style for **client-server communication**
+-  REST - an architecture style for **client-server communication**
 
    *  based on **request-response**
 
@@ -91,14 +91,14 @@
       .catch((err) => {});
    ```
 
-## In the next lesson you will learn:
+## In the next lesson, you will learn:
 
 - Asynchronous Programming and Promises
 
-   * what asynchronous programming is
+   * What **Asynchronous Programming** is
 
-   * deep dive into Promises
+   * Deep dive into **Promises**
 
-   * async and await
+   * `async` and `await`
 
 [/slide]
