@@ -30,34 +30,34 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-You will receive a string, containing the current items in your inventory, separated by a comma and space \(`, `\).
+You will receive a string, containing the current items in your inventory, separated by a comma and space \(", "\).
 
 After that, until receiving "**Craft!**" you will be given different commands.
 
-The commands are separated by ` - `:
+The commands are separated by (" - "):
 
-* Command `Collect - {item}`: 
+* Command "**Collect -** \{**item**\}":
 
 Receiving this command, you should add the given item to your inventory.
 
 If the item already exists, you should skip this command.
 
-* Command `Drop - {item}`: 
+* Command "**Drop -** \{**item**\}": 
 
 You should remove the item from your inventory if you have it.
 
-* Command `Combine Items - {oldItem}:{newItem}`: 
+* Command "**Combine Items -** \{**oldItem**\}**:**\{**newItem**\}":
 
 You should check if the first item can be found in your inventory, if so, add the new item after the old one.
 
 Otherwise, ignore the command.
 
-* Command `Renew – {item}`:
+* Command "**Renew -** \{**item**\}":
 
 If the given item exists, you should change its position and put it in the last position of your inventory.
 
 ## Output
-After receiving "**Craft!**", print out all items in your inventory, separated by a comma and space \(`, `\).
+After receiving "**Craft!**", print out all items in your inventory, separated by a comma and space \(", "\).
 
 # Examples
 | **Input** | **Output** |
