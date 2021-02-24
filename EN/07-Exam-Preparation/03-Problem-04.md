@@ -25,42 +25,44 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-You have been hired by a cinema to create a program that calculates whether the **cinema hall is full and how much will the profit be**.
+You have been hired by a cinema to create a program, which calculates whether the **cinema hall is full and how much the profit will be**.
 
-You are going to receive the count of seats in the hall and on the next console lines until the command "**Movie time!**" Is entered, you will get a number of newly arriving viewers.
+You are going to receive the number of seats in the hall and on the next console lines, until the command "**Movie time!**", you will get a number of newly arriving viewers.
 
-If the number of people currently entering the hall can be **divided by 3 without a remainder**, there is 5$ **discount** on the total price.
+If the number of people currently entering the hall can be **divided by 3 without a remainder**, there is a 5$ **discount** on the total price.
 
 If there are **no more free seats in the hall**, the program must stop reading input from the console.
 
-If the number of entering viewers, exceeds the number of seats left in the hall, it should be considered full and the program should finish.
+If the number of entering viewers exceeds the number of seats left in the hall, it should be considered full and the program should finish.
 
 ## Input
-Read from the console:
+You will receive the following elements from the console:
 
-- First element: the hall capacity – whole number in the range  \[50... 150\]
+- First element: the hall capacity – Int in the range  \[50... 150\]
 
 - On each of the next element until the command is "**Movie time!**":
-	- Number of people entering the cinema: whole number in the range  \[1… 15\]
+	- Number of people entering the cinema: Int in the range  \[1… 15\]
 
 ## Output
-First, print on of these lines:
+First, print one of these lines:
 
 - If you have received the command "**Movie time!**": 
 
-`There are {seats left} seats left in the cinema.`
+**There are** \{**seats left**\} **seats left in the cinema.**
 
 - If there are no more free seats in the hall: 
 
-`The cinema is full.`
+**The cinema is full.**
 
 - Afterwards, print: 
 
-`Cinema income - {income}$`
+**Cinema income -** \{**income**\}$
 
 ## Example
 | **Input** | **Output** |
 | --- | --- |
+|cinemaIncome([140, 15, 15, 10, 5, 6, 7, 8, 9, 'Movie time!']) | There are 65 seats left in the cinema. |
+|| Cinema income - 355$|
 |cinemaIncome([60, 10, 6, 3, 20, 15, 'Movie time!'])| There are 6 seats left in the cinema.|
 ||Cinema income - 255$|
 
@@ -72,7 +74,7 @@ The next element is the number of people that have entered the hall: 10.
 
 The price that they will pay is 10 \* 5 = 50\$. 
 
-After that we receive that 6 people enter the hall and 6 can be divided by 3, so they pay 5\$ less. 
+After that, we receive 6 people entering the hall and 6 can be divided by 3, so they pay 5\$ less. 
 
 We continue until we receive the command "**Movie time!**" and then we print a suitable output.
 
