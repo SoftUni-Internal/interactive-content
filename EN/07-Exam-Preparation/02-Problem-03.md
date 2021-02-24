@@ -58,8 +58,9 @@ Print one line on the console: "**Your bill is** \{**total price**\}$"
 ## Example
 | **Input** | **Output** |
 | --- | --- |
-|cinema(['Star Wars', 'Menu', 1]) | Your bill is 30.00$| 
 |cinema(['John Wick', 'Drink', 6])| Your bill is 72.00$|
+|cinema(['Star Wars', 'Menu', 1]) | Your bill is 30.00$| 
+
 
 [hints]
 
