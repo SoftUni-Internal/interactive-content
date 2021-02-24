@@ -75,8 +75,9 @@ If the index is invalid, ignore the command.
 
 | **Input** | **Output** |
 | --- | --- |
-|schoolLibrary(['Don Quixote&The Great Gatsby&Moby Dick&Hamlet', 'Add Book \| The Odyssey', 'Take Book \| Don Quixote', 'Insert Book \| Alice\\'s Adventures in Wonderland', 'Check Book \| 3', 'Done' ])| Hamlet|
-||The Odyssey, The Great Gatsby, Moby Dick, Hamlet, Alice's Adventures in Wonderland|
+|schoolLibrary(['Don Quixote&The Great Gatsby&Moby Dick&Hamlet', 'Add Book \| The Odyssey', 'Take Book \| Don Quixote', 'Insert Book \| 
+The Lord of the Rings', 'Check Book \| 3', 'Done' ])| Hamlet|
+||The Odyssey, The Great Gatsby, Moby Dick, Hamlet, The Lord of the Rings|
 
 ## Example Two
 
@@ -89,18 +90,11 @@ If the index is invalid, ignore the command.
 [tests]
 [test open]
 [input]
-schoolLibrary([
-  'Don Quixote&The Great Gatsby&Moby Dick&Hamlet',
-  'Add Book | The Odyssey',
-  'Take Book | Don Quixote',
-  'Insert Book | Alice\\'s Adventures in Wonderland',
-  'Check Book | 3',
-  'Done',
-]);
+schoolLibrary(['Don Quixote&The Great Gatsby&Moby Dick&Hamlet', 'Add Book \| The Odyssey', 'Take Book \| Don Quixote', 'Insert Book \| The Lord of the Rings', 'Check Book \| 3', 'Done' ])
 [/input]
 [output]
 Hamlet
-The Odyssey, The Great Gatsby, Moby Dick, Hamlet, Alice's Adventures in Wonderland
+The Odyssey, The Great Gatsby, Moby Dick, Hamlet, The Lord of the Rings
 [/output]
 [/test]
 [test open]
@@ -129,10 +123,10 @@ The Great Gatsby, Moby Dick, Hamlet
 [/test]
 [test]
 [input]
-schoolLibrary(['Don Quixote&The Great Gatsby&Moby Dick&Hamlet', 'Insert Book \| Alice\'s Adventures in Wonderland', 'Done'])
+schoolLibrary(['Don Quixote&The Great Gatsby&Moby Dick&Hamlet', 'Insert Book \| The Lord of the Rings', 'Done'])
 [/input]
 [output]
-Don Quixote, The Great Gatsby, Moby Dick, Hamlet, Alice's Adventures in Wonderland
+Don Quixote, The Great Gatsby, Moby Dick, Hamlet, The Lord of the Rings
 [/output]
 [/test]
 [test]
@@ -153,7 +147,7 @@ Don Quixote, The Great Gatsby, Moby Dick, Hamlet
 [/test]
 [test]
 [input]
-schoolLibrary(['Don Quixote&The Great Gatsby&Moby Dick&Hamlet', 'Take Book \| Alice\'s Adventures in Wonderland', 'Done'])
+schoolLibrary(['Don Quixote&The Great Gatsby&Moby Dick&Hamlet', 'Take Book \| The Lord of the Rings', 'Done'])
 [/input]
 [output]
 Don Quixote, The Great Gatsby, Moby Dick, Hamlet
