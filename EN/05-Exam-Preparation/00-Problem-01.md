@@ -17,6 +17,15 @@ function muOnline(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Description
@@ -25,13 +34,13 @@ Your character starts with **100 health points** and **0 bitcoins.**
 
 You will be given a string, **representing different occurrences**, that you have to process.
 
-Each command is **separated** by a vertical bar `|`.
+Each command is **separated** by a vertical bar ("\|").
 
 Every command will contain a **word** and a **number**, separated by a **space**.
 
 The command can be:
 
-* Command `potion`: 
+* Command "**potion**": 
 
 **Restores** the specified number of **health points** to your character.
 
@@ -39,52 +48,52 @@ The health points **cannot exceed 100.**
 
 After successfully taking a potion, print:
 
-`Healed: {amount} hp.`
+"**Healed:** \{**amount**\} **hp.**"
 
 And after that, print your current health:
 
-`Current health: {health} hp.`
+"**Current health:** \{**health**\} **hp.**"
 
-* Command `chest`: 
+* Command "**chest**": 
 
 You have found bitcoins, add this number to the value of your current bitcoins.
 
-Print:
+**Print**:
 
-`You found {amount} bitcoins.`
+"**You found** \{**amount**\} **bitcoins.**"
 
 * Any other input you get means that you are **facing a monster**. 
 
 The word at the **beginning of the command** will be the **monster name** and the **number** \- the **damage that the monster deals to you**.
 
-Examples: `rat {number}`, `boss {number}`, there could be other types of monsters.
+Examples: "**rat** \{**number**\}, **boss** \{**number**\}", there could be other types of monsters.
 
 You should **decrease your champion's health** points by the **damage** that each monster deals to them.
 
 * If you are **not dead** (health >= 0) you have defeated the monster, and you should print out:
 
-`You defeated a {monster}.`
+"**You defeated a** \{**monster**\}."
 
 * If **you have died** the expected output is:  
 
-`You died! Killed by {monster}.`
+"**You died! Killed by** \{**monster**\}."
 
 **And your quest is over.**
 
 Print the **number** of the **last room you have managed to reach**: 
 
-`Highest level reached: {last room}.`.
+"**Highest level reached:** \{**last room**\}."
 
 If you **managed to go through all the rooms in the dungeon**, print on the next three lines:
 
-`You've made it!`
+"**You've made it!**"
 
-`Bitcoins: {bitcoins}`
+"**Bitcoins:** \{**bitcoins**\}"
 
-`Health: {health}`
+"**Health:** \{**health**\}"
 
 ## Input
-A **string**, separated by a vertical bar `|`.
+A **string**, separated by a vertical bar ("\|").
 
 ## Output
 **Print** the corresponding **messages**, as shown in the description.
@@ -92,7 +101,7 @@ A **string**, separated by a vertical bar `|`.
 # Examples
 | **Input** | **Output** |
 | --- | --- |
-|`'rat 10|bat 20|potion 10|rat 10|chest 100|boss 70|chest 1000'`| You defeated a rat.|
+|muOnline('rat 10|bat 20|potion 10|rat 10|chest 100|boss 70|chest 1000')| You defeated a rat.|
 ||You defeated a bat.|
 ||You healed for 10 hp.|
 ||Current health: 80 hp.|
@@ -103,7 +112,7 @@ A **string**, separated by a vertical bar `|`.
 
 | **Input** | **Output** |
 | --- | --- |
-|`'cat 10|potion 30|orc 10|chest 10|snake 25|chest 110'`| You defeated a cat.|
+|muOnline('cat 10|potion 30|orc 10|chest 10|snake 25|chest 110')| You defeated a cat.')|
 ||You healed for 10 hp.|
 ||Current health: 100 hp.|
 ||You defeated a orc.|
@@ -119,7 +128,7 @@ A **string**, separated by a vertical bar `|`.
 [tests]
 [test open]
 [input]
-rat 10\|bat 20\|potion 10\|rat 10\|chest 100\|boss 70\|chest 1000
+muOnline('rat 10\|bat 20\|potion 10\|rat 10\|chest 100\|boss 70\|chest 1000')
 [/input]
 [output]
 You defeated a rat.
@@ -134,7 +143,7 @@ Highest level reached: 6
 [/test]
 [test open]
 [input]
-cat 10\|potion 30\|orc 10\|chest 10\|snake 25\|chest 110
+muOnline('cat 10\|potion 30\|orc 10\|chest 10\|snake 25\|chest 110')
 [/input]
 [output]
 You defeated a cat.
@@ -151,7 +160,7 @@ Health: 65
 [/test]
 [test]
 [input]
-rat 10\|bat 20
+muOnline('rat 10\|bat 20')
 [/input]
 [output]
 You defeated a rat.
@@ -163,7 +172,7 @@ Health: 70
 [/test]
 [test]
 [input]
-rat 10\|bat 20\|cat 30\|dog 39
+muOnline('rat 10\|bat 20\|cat 30\|dog 39')
 [/input]
 [output]
 You defeated a rat.
@@ -177,7 +186,7 @@ Health: 1
 [/test]
 [test]
 [input]
-rat 10\|bat 20\|cat 30\|dog 40
+muOnline('rat 10\|bat 20\|cat 30\|dog 40')
 [/input]
 [output]
 You defeated a rat.
@@ -189,7 +198,7 @@ Highest level reached: 4
 [/test]
 [test]
 [input]
-chest 1\|chest 2\|chest 3
+muOnline('chest 1\|chest 2\|chest 3')
 [/input]
 [output]
 You found 1 bitcoins.
@@ -202,7 +211,7 @@ Health: 100
 [/test]
 [test]
 [input]
-chest 10\|chest 20\|chest 30
+muOnline('chest 10\|chest 20\|chest 30')
 [/input]
 [output]
 You found 10 bitcoins.
@@ -215,7 +224,7 @@ Health: 100
 [/test]
 [test]
 [input]
-cat 40\|potion 30
+muOnline('cat 40\|potion 30')
 [/input]
 [output]
 You defeated a cat.
@@ -228,7 +237,7 @@ Health: 90
 [/test]
 [test]
 [input]
-cat 10\|potion 30
+muOnline('cat 10\|potion 30')
 [/input]
 [output]
 You defeated a cat.
@@ -241,7 +250,7 @@ Health: 100
 [/test]
 [test]
 [input]
-dog 10\|potion 30
+muOnline('dog 10\|potion 30')
 [/input]
 [output]
 You defeated a dog.
@@ -254,7 +263,7 @@ Health: 100
 [/test]
 [test]
 [input]
-a 10\|b 20\|potion 10\|c 30\|chest 10\|chest 1000\|d 50\|chest 1000
+muOnline('a 10\|b 20\|potion 10\|c 30\|chest 10\|chest 1000\|d 50\|chest 1000')
 [/input]
 [output]
 You defeated a a.
@@ -270,7 +279,7 @@ Highest level reached: 7
 [/test]
 [test]
 [input]
-cat 10\|potion 30\|orc 10\|chest 10\|snake 25\|chest 110\|chest 100\|potion 1000\|DRAGON 1000
+muOnline('cat 10\|potion 30\|orc 10\|chest 10\|snake 25\|chest 110\|chest 100\|potion 1000\|DRAGON 1000')
 [/input]
 [output]
 You defeated a cat.

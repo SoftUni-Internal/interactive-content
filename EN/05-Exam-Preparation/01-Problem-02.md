@@ -18,12 +18,21 @@ function inventory(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 
 You will receive a string, containing the current items in your inventory, separated by a comma and space \(`, `\).
 
-After that, until receiving `Craft!` you will be given different commands.
+After that, until receiving "**Craft!**" you will be given different commands.
 
 The commands are separated by ` - `:
 
@@ -48,16 +57,16 @@ Otherwise, ignore the command.
 If the given item exists, you should change its position and put it in the last position of your inventory.
 
 ## Output
-After receiving `Craft!`, print out all items in your inventory, separated by a comma and space \(`, `\).
+After receiving "**Craft!**", print out all items in your inventory, separated by a comma and space \(`, `\).
 
 # Examples
 | **Input** | **Output** |
 | --- | --- |
-|`[ 'Iron, Wood, Sword', 'Collect - Gold', 'Drop - Wood', 'Craft!' ]`| Iron, Sword, Gold |
+|inventory(['Iron, Wood, Sword', 'Collect - Gold', 'Drop - Wood', 'Craft!'])| Iron, Sword, Gold |
 
 | **Input** | **Output** |
 | --- | --- |
-|`['Iron, Sword','Drop - Bronze','Combine Items - Sword:Bow','Renew - Iron', 'Craft!']`| Sword, Bow, Iron|
+|inventory(['Iron, Sword','Drop - Bronze','Combine Items - Sword:Bow','Renew - Iron', 'Craft!'])| Sword, Bow, Iron|
 
 
 [/task-description]
@@ -65,10 +74,7 @@ After receiving `Craft!`, print out all items in your inventory, separated by a 
 [tests]
 [test open]
 [input]
-Iron, Wood, Sword
-Collect - Gold
-Drop - Wood
-Craft!
+inventory(['Iron, Wood, Sword', 'Collect - Gold', 'Drop - Wood', 'Craft!'])
 [/input]
 [output]
 Iron, Sword, Gold
@@ -76,11 +82,7 @@ Iron, Sword, Gold
 [/test]
 [test open]
 [input]
-Iron, Sword
-Drop - Bronze
-Combine Items - Sword:Bow
-Renew - Iron
-Craft!
+inventory(['Iron, Sword','Drop - Bronze','Combine Items - Sword:Bow','Renew - Iron', 'Craft!'])
 [/input]
 [output]
 Sword, Bow, Iron
@@ -88,10 +90,7 @@ Sword, Bow, Iron
 [/test]
 [test]
 [input]
-A, B, C, D
-Collect - E
-Collect - F
-Craft!
+inventory(['A, B, C, D', 'Collect - E', 'Collect - F', 'Craft!'])
 [/input]
 [output]
 A, B, C, D, E, F
@@ -99,10 +98,7 @@ A, B, C, D, E, F
 [/test]
 [test]
 [input]
-A, B, C, D
-Collect - D
-Collect - E
-Craft!
+inventory(['A, B, C, D', 'Collect - D', 'Collect - E', 'Craft!'])
 [/input]
 [output]
 A, B, C, D, E
@@ -110,10 +106,7 @@ A, B, C, D, E
 [/test]
 [test]
 [input]
-A, B, C, D
-Drop - C
-Drop - D
-Craft!
+inventory(['A, B, C, D', 'Drop - C', 'Drop - D', 'Craft!'])
 [/input]
 [output]
 A, B
@@ -121,10 +114,7 @@ A, B
 [/test]
 [test]
 [input]
-A, B, C, D
-Drop - D
-Drop - E
-Craft!
+inventory(['A, B, C, D', 'Drop - D', 'Drop - E', 'Craft!'])
 [/input]
 [output]
 A, B, C
@@ -132,9 +122,7 @@ A, B, C
 [/test]
 [test]
 [input]
-A, B, C, D
-Renew - C
-Craft!
+inventory(['A, B, C, D', 'Renew - C', 'Craft!'])
 [/input]
 [output]
 A, B, D, C
@@ -142,11 +130,7 @@ A, B, D, C
 [/test]
 [test]
 [input]
-A, B, C, D
-Renew - D
-Renew - E
-Renew - B
-Craft!
+inventory(['A, B, C, D', 'Renew - D', 'Renew - E', 'Renew - B', 'Craft!'])
 [/input]
 [output]
 A, C, D, B
@@ -154,9 +138,7 @@ A, C, D, B
 [/test]
 [test]
 [input]
-A, B, C, D
-Combine Items - C:C1
-Craft!
+inventory(['A, B, C, D', 'Combine Items - C:C1', 'Craft!'])
 [/input]
 [output]
 A, B, C, C1, D
@@ -164,10 +146,7 @@ A, B, C, C1, D
 [/test]
 [test]
 [input]
-A, B, C, D
-Combine Items - C:C1
-Combine Items - E:E1
-Craft!
+inventory(['A, B, C, D', 'Combine Items - C:C1', 'Combine Items - E:E1', 'Craft!'])
 [/input]
 [output]
 A, B, C, C1, D
@@ -175,16 +154,7 @@ A, B, C, C1, D
 [/test]
 [test]
 [input]
-N, S, F, T
-Collect - U
-Drop - F
-Renew - N
-Combine Items - S:B1
-Combine Items - B1:O
-Drop - B1
-Combine Items - O:F
-Collect - I
-Craft!
+inventory(['N, S, F, T', 'Collect - U', 'Drop - F', 'Renew - N', 'Combine Items - S:B1', 'Combine Items - B1:O', 'Drop - B1', 'Combine Items - O:F', 'Collect - I', 'Craft!'])
 [/input]
 [output]
 S, O, F, T, U, N, I
