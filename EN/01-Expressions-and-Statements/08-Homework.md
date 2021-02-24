@@ -7,7 +7,7 @@
 [code-task title="Calculate a Square Area" taskId="pb-js-expressions-Calculate-a-square-area" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language="javascript"]
 ```
-function calculateSpeed (input) {
+function calculateArea(input) {
    // Write your code here
 }
 ```
@@ -23,22 +23,24 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program that gets an integer and calculates the area of a square with the side **a**. 
-- you get a number in the argument of the function 
-- multiply it yourself and 
-- print the result in the console
+Create a program, which receives an integer and calculates the area of a square with a side **a**.
+
+- You receive the side value as an argument of the function 
+- Use the formula to calculate the area 
+- Print the result to the console
 
 ## Example
 | **Input** | **Output** |
 | --- | --- |
-| calculateSpeed(5) | 25 |
+| calculateArea(5) | 25 |
+| calculateArea(12) | 144 |
 
 
 [/task-description]
 [tests]
 [test]
 [input]
-calculateSpeed(2)
+calculateArea(2)
 [/input]
 [output]
 4
@@ -46,7 +48,7 @@ calculateSpeed(2)
 [/test]
 [test]
 [input]
-calculateSpeed(5)
+calculateArea(5)
 [/input]
 [output]
 25
@@ -54,7 +56,7 @@ calculateSpeed(5)
 [/test]
 [test]
 [input]
-calculateSpeed(100)
+calculateArea(100)
 [/input]
 [output]
 10000
@@ -62,7 +64,7 @@ calculateSpeed(100)
 [/test]
 [test]
 [input]
-calculateSpeed(1)
+calculateArea(1)
 [/input]
 [output]
 1
@@ -98,10 +100,11 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program to convert from USD to EUR:
-  * Read a **floating-point number**: the **dollars** to be converted 
-  * Convert dollars to euro (use fixed rate of dollars to euro: **0.88**)
-  * Print the converted value in **euro**
+Create a program, which converts USD to EUR:
+
+  * You receive a **floating-point number**: the **dollars** to be converted 
+  * Convert the dollars to euro (use the fixed rate: **0.88**)
+  * Print the converted value to the console
 
 ## Example
 | **Input** | **Output** |
@@ -171,14 +174,13 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program that gets an **angle** in [radians](https://en.wikipedia.org/wiki/Radian) and converts it to [degrees](https://en.wikipedia.org/wiki/Degree_(angle)). 
+Create a program, which receives an **angle** in [radians](https://en.wikipedia.org/wiki/Radian) and converts it to [degrees](https://en.wikipedia.org/wiki/Degree_(angle)). 
 
 Use the formula: 
 - **degrees = radians * 180 / π** 
 
-The number of **π** in JavaScript programs is available through **Math.PI**. 
+The number **π** in JavaScript can be accessed through **Math.PI**. 
 Round the result to the nearest integer using **toFixed(0)**.
-
 
 ## Example
 | **Input** | **Output** |
@@ -252,13 +254,13 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program to convert from days to minutes:
+Create a program, which converts days to minutes:
 
-* Read a single **integer** (the **days** to be converted)
+* You receive a single **integer**: the **days** to be converted
 
 * Convert the days to minutes (use calculations)
 
-* Print the **minutes**
+* Print the **minutes** to the console
 
   ## Example
 | **Input** | **Output** |
@@ -328,16 +330,19 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program to calculate a **circle** area and perimeter:
-  * Read a floating-point number: the **radius** of a circle
-  * Calculate the **area** and **perimeter** of a circle
-  * Print the calculated values **formatted** to 2 digits after the decimal point 
+Create a program, which calculates a **circle's** area and perimeter:
+
+  * You receive a floating-point number: the **radius** of a circle
+  * Calculate the **area** and **perimeter** of the circle
+  * Print the calculated values, **formatted** to 2 digits after the decimal point 
 
   ## Example
 | **Input** | **Output** |
 | --- | --- |
 | circleArea(7) | Area = 153.94 |
 |  | Perimeter = 43.98 |
+| circleArea(8) | Area = 201.06 |
+|  | Perimeter = 50.27 |
 
 
 [/task-description]
@@ -389,7 +394,7 @@ Perimeter = 59.06
 [code-task title="Yard Landscaping" taskId="pb-js-expressions-Yard-Landscaping" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language="javascript"]
 ```
-function fourOperations(input){
+function landscape(input){
     // Write code here
 }
 ```
@@ -405,26 +410,28 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Peter wants to landscape the backyard, so he hired a **company** to do it for him.
-Create a program that **calculates** the necessary funds that Peter will have to **pay** for the job. 
+Peter wants to have his backyard landscaped, so he hired a **company** to do it.
+Create a program, which **calculates** the necessary funds that Peter will have to **pay** for the job. 
 The price per square meter is **7.61 dollars** with VAT. 
 As Peter's yard is quite **large**, the contractor company offers an **18 percent** discount on the final price.
 
 ## Input
 The function receives one argument:
-- Square meters, which will be landscaped - a real number in the interval \[0.00… 10000.00\]
+- Square meters, which will be landscaped - a floating-point number in the interval \[0.00… 10000.00\]
 
 ## Output
- Two lines are printed on the console:
+ Two lines are printed to the console:
 
-- The final price is: \{final price of the service\} dollars.
+- The final price is: \{**final price of the service**\} dollars.
 
-- The discount is: \{discount\} dollars.
+- The discount is: \{**discount**\} dollars.
 
 ## Example
 | **Input** | **Output** |
 | --- | --- |
-| fourOperations(550) | The final price is: 3432.11 dollars. |
+| landscape(150) | The final price is: 936.03 dollars. |
+|  | The discount is: 205.47 dollars. |
+| landscape(550) | The final price is: 3432.11 dollars. |
 |  | The discount is: 753.39 dollars. |
 
 ## Explanations
@@ -440,17 +447,11 @@ We calculate the final price of the service:
 
 - **4185.5 – 753.39 -> $3432.11**
 
-
-| **Input** | **Output** |
-| --- | --- |
-| fourOperations(150) | The final price is: 936.03 dollars. |
-|  | The discount is: 205.47 dollars. |
-
 [/task-description]
 [tests]
 [test]
 [input]
-fourOperations(550)
+landscape(550)
 [/input]
 [output]
 The final price is: 3432.11 dollars.
@@ -459,7 +460,7 @@ The discount is: 753.39 dollars.
 [/test]
 [test]
 [input]
-fourOperations(335)
+landscape(335)
 [/input]
 [output]
 The final price is: 2090.467 dollars.
@@ -468,7 +469,7 @@ The discount is: 458.883 dollars.
 [/test]
 [test]
 [input]
-fourOperations(412)
+landscape(412)
 [/input]
 [output]
 The final price is: 2570.9624000000003 dollars.
@@ -477,7 +478,7 @@ The discount is: 564.3576 dollars.
 [/test]
 [test]
 [input]
-fourOperations(500)
+landscape(500)
 [/input]
 [output]
 The final price is: 3120.1 dollars.
