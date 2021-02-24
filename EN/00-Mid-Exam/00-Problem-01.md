@@ -127,7 +127,7 @@ Peter finished the archery tournament with 10 points!
 [/test]
 [test]
 [input]
-archeryTournament(['1\|1\|1\|1\|1', 'Shoot Left@0@2', 'Shoot Right@4@5', 'Shoot Right@6@5', 'Reverse', 'Game over])
+archeryTournament(['1\|1\|1\|1\|1', 'Shoot Left@0@2', 'Shoot Right@4@5', 'Shoot Right@6@5', 'Reverse', 'Game over'])
 [/input]
 [output]
 0 - 0 - 1 - 1 - 1
