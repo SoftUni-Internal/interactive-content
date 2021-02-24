@@ -32,17 +32,18 @@ function adapter(input, code) {
 
 # Description
 
-Create a program, which:
+Create a program, which calculates and prints the total salary:
 
-- Receives the number of workdays for the current month and the salary per day - integers
-- Calculates the monthly salary of an employee
-- Prints the result on the console
+- You the number of workdays for the current month as an integer and the salary per day as an array
+- Calculate the monthly salary of an employee
+- Print the result to the console
 
 # Example
 
 | **Input**                               | **Output** |
 | --------------------------------------- | ---------- |
 | calculateMonthSalary(2, ['100', '200']) | 300        |
+| calculateMonthSalary(3, ['200', '240', '130']) | 570 |
 
 [/task-description]
 [tests]
@@ -113,11 +114,11 @@ function adapter(input, code) {
 
 # Description
 
-Create a program, which:
+Create a program, which finds the **biggest** and the **smallest** number from a given sequence:
 
-- Reads **n** representing the count of numbers to read next
-- Finds the **max** and the **min numbers**
-- Prints them on the console
+- You receive **n**:  the count of numbers to process
+- Find the **max** and the **min** values
+- Print them to the console
 
 # Example
 
@@ -125,6 +126,8 @@ Create a program, which:
 | ------------------------------------------------ | --------------- |
 | numberSequence(5, ['10', '304', '0', '0', '50']) | Max number: 304 |
 |                                                  | Min number: 0   |
+| numberSequence(4, ['15', '155', '34', '71'])     | Max number: 155 | 
+|                                                  | Min number: 15  |
 
 [/task-description]
 [tests]
@@ -192,11 +195,11 @@ function adapter(input, code) {
 
 # Description
 
-Create a program, which:
+Create a program, which calculates and prints a given number to a given power
 
-- Reads **p** - the power and **n** – the number
+- You receive **p** - the power and **n** – the number
 
-- Prints the result of **n** to the power of **p**
+- Print the result of **n** to the power of **p**
 
 - Do not use **Math.Pow()** - not the goal of our exercise
 
@@ -205,6 +208,7 @@ Create a program, which:
 | **Input** | **Output** |
 | --------- | ---------- |
 | 5, 2      | 32         |
+| 5, 5      | 3125       |
 
 [/task-description]
 [code-io /]
@@ -290,18 +294,19 @@ function adapter(input, code) {
 
 # Description
 
-Create a program, which:
+Create a program, which determines if the sum of pairs in a sequence is the same:
 
-- Reads number **n** and **n pairs** of numbers
-- Prints `Yes, value={sum}`, if the **sum of all** pairs is the **same**
-- **Otherwise**, prints `No, maxdiff={diff}`
-- diff is the **max difference** in the sum between two pairs
+- You receive a number **n** and **n pairs** of numbers
+- Print "**Yes, value=**\{**sum**\}", if the **sum of all** pairs is the **same**
+- **Otherwise**, print "**No, maxdiff=**\{**diff**\}"
+- The **maxdiff** value is the **max difference** in the sum between two pairs
 
 # Example
 
 | **Input**                             | **Output**     |
 | ------------------------------------- | -------------- |
 | equalPairs(2, ['-1', '0', '0', '-1']) | Yes, value=\-1 |
+| equalPairs(2, [1, 2, 0, 1])           | No, maxdiff=2  |
 
 [/task-description]
 [tests]
@@ -396,19 +401,20 @@ function adapter(input, code) {
 
 # Description
 
-Create a program, which:
+Create a program, which calculates and prints the sum of a sequence in zig-zag:
 
-- Reads **n** - number representing amount of input numbers
-- Reads **n numbers**
-- For every **even** line **adds** the number to the result
-- For every **odd** line **subtracts** the number from the result
-- **Prints** the result
+- You receive **n** - the amount of input numbers
+- Process **n numbers**
+- For every **even** line **add** the number to the result
+- For every **odd** line **subtract** the number from the result
+- **Print** the result to the console
 
 # Example
 
 | **Input**                  | **Output** |
 | -------------------------- | ---------- |
 | zigZagSum(2, ['10', '20']) | 10         |
+| zigZagSum(3, ['5', '5'])   | 0          |
 
 [/task-description]
 [tests]
@@ -503,13 +509,13 @@ function adapter(input, code) {
 
 # Description
 
-Create a program, which:
+Create a program, which finds how many numbers of a sequence are divisible without remainder:
 
-- Reads `n` and an **n amount** of numbers after it
+- You receive a number `n` and an **n amount** of numbers after it
 
-- Finds the **percentage** of how many of them can be divided **without a remainder using 2, 3, and 4 as divisors**
+- Find the **percentage** of how many of them can be divided **without a remainder, using 2, 3, and 4 as divisors**
 
-- Prints the percentages for **p1, p2, and p3**, **formatted** to the second digit
+- Print the percentages for the three divisors, **formatted** to the second digit
 
 # Example
 
@@ -519,6 +525,9 @@ Create a program, which:
 |                                            | 100.00\%   |
 |                                            | 0.00\%     |
 |                                            |            |
+| divideWithoutRemainder(2, ['8', '6', '4']) | 100.00\%   |
+|                                            | 0.00\%     | 
+|                                            | 66.66\%    |
 
 [/task-description]
 [tests]
@@ -627,23 +636,24 @@ function adapter(input, code) {
 
 # Description
 
-Create a program, which:
+Create a program, which calculates the sum of vowels in a sequence based on the given data:
 
-- Reads **n** - the count of characters which the program is going to receive
+- You receive a number **n** - the count of characters
 
-- If a character is a vowel, it adds the characters **value** to the result
+- If a character is a vowel, add the its **value** to the result
 
 | **character** | **a** | **e** | **i** | **o** | **u** |
 | :-----------: | :---: | :---: | :---: | :---: | :---: |
 |   **value**   |   1   |   2   |   3   |   4   |   5   |
 
-- Prints the result
+- Print the result to the console
 
 # Example
 
 | **Input**               | **Output** |
 | ----------------------- | ---------- |
 | vowelSum(2, ['a', 'g']) | 1          |
+| vowelSum(3, ['o', 'k', 'e']) | 6     |
 
 [/task-description]
 [tests]
@@ -738,25 +748,25 @@ function adapter(input, code) {
 
 # Description
 
-Create a program, which:
+Create a program, which determines if a rollercoaster can departure:
 
-- Reads the number of **places** on a rollercoaster
+- The first three numbers of the input are:
+  - number of **places**
+  - **minimum passenger age**
+  - **number of people** on the queue
 
-- The **minimum passenger age**
+- All the other numbers represent the **age** for each person queuing
 
-- After that receives the **number of people** on the queue for this ride
+- If all places can be filled, print out: "**The rollercoaster departures**"
 
-- Followed by the **age** for each person queuing
-
-- If all places can be filled, the program prints out: **The rollercoaster departures**
-
-- In any other case, prints out: **Waiting...**
+- In any other case, print out: "**Waiting...**"
 
 # Example
 
 | **Input**                                   | **Output**                   |
 | ------------------------------------------- | ---------------------------- |
 | rollercoaster(['2', '10', '2', '15', '24']) | The rollercoaster departures |
+| rollercoaster(['3', '15', '1', '23'])       | Waiting...                   |
 
 [/task-description]
 [tests]
@@ -845,13 +855,13 @@ function adapter(input, code) {
 
 # Description
 
-Create a program, which:
+Create a program, which multiplies a given number by all the numbers from **1** to **10**:
 
-- Reads `n` – an int
+- You receive a number `n` – the number to multiply
 
-- Holds a for-loop which prints: `{n} x {i} = {result}`
+- Write a for-loop, which prints: "\{**n**\} **x** \{**i**\} **=** \{**result**\}"
 
-- Where `i` are the numbers from **1 to 10 (inclusive)**
+- The **i** value represents the numbers from **1** to **10** inclusive
 
 # Example
 
@@ -867,6 +877,16 @@ Create a program, which:
 |             | 2 x 8 = 16  |
 |             | 2 x 9 = 18  |
 |             | 2 x 10 = 20 |
+| multiply(5) | 5 x 1 = 5   |
+|             | 5 x 2 = 10  |
+|             | 5 x 3 = 15  |
+|             | 5 x 4 = 20  |
+|             | 5 x 5 = 25  |
+|             | 5 x 6 = 30  |
+|             | 5 x 7 = 35  | 
+|             | 5 x 8 = 40  |
+|             | 5 x 9 = 45  |
+|             | 5 x 10 = 50 |
 
 [/task-description]
 [tests]
@@ -1007,9 +1027,13 @@ function adapter(input, code) {
 
 # Description
 
-Create a program that receives two numbers as parameters and prints to the console, all the numbers in the range that are divisible by 9 without remainder, and their sum.
+Create a program, which prints the sum of a given range of numbers and all the numbers, divisible by 9 without remainder:
 
-On the first line print the sum of the numbers, and on the next line the corresponding numbers with a space between them.
+- You receive **two numbers**: the range to process
+
+- On the first line, print the sum of the numbers
+
+- On the second line, print the numbers, divisible by 9 without remainder
 
 # Example
 
@@ -1017,6 +1041,8 @@ On the first line print the sum of the numbers, and on the next line the corresp
 | --------------- | ------------------------------------------- |
 | solve(100, 200) | The sum: 1683                               |
 |                 | 108 117 126 135 144 153 162 171 180 189 198 |
+| solve(10, 20)   | The sum: 165                                |
+|                 | 18                                          |
 
 [/task-description]
 [tests]
