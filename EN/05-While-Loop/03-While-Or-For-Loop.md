@@ -71,15 +71,16 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program, which:
+Create a program, which prints the **first** odd number in a given sequence:
 
-* Reads numbers from the console until it gets an **odd number**
-* Prints the **odd** number
+* You receive the numbers from the console
+* Print the first **odd** number you encounter
 
 # Example
   | **Input** | **Output** |
 | --- | --- |
 | oddNumber(['2', '4', '8', '3']) | 3 |
+| oddNumber(['7', '32', '6', '12'])| 7 |
 
 [/task-description]
 [tests]
