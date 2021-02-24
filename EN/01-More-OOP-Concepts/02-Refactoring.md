@@ -1,20 +1,22 @@
+# Refactoring
+
 [slide hideTitle]
 
 # Refactoring
 
 **Refactoring means restructuring the code without changing its behavior.**
-- **Improves** code readability
-- **Reduces** complexity
 
-Example:
+This **improves** code readability and **reduces** complexity.
 
-Before refactoring:
+**Example:**
+
+**Before** refactoring:
 
 ```java
 class ProblemSolver { public static void doMagic() { … } }
 ```
 
-After refactoring:
+**After** refactoring:
 
 ```java
 class CommandParser { 
@@ -22,7 +24,11 @@ class CommandParser {
 class DataModifier { public static <T> T execute() { … } }
 class OutputFormatter { public static void print() { … } }
 ```
-## Refactoring Techniques
+[/slide]
+
+[slide hideTitle]
+
+# Refactoring Techniques
 
 - **Breaking code** into reusable units
 - **Extracting parts of methods** and **classes** into **new** ones
@@ -40,8 +46,8 @@ class OutputFormatter { public static void print() { … } }
 [/slide]
 
 [slide hideTitle]
-# Problem: Student System
-[code-task title="Problem: Student System" taskId="ee31d215-7910-4bd0-83f9-b336496d283b" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem with Solution: Student System
+[code-task title="Student System" taskId="oop-basics-java-more-oop-concepts-lab-Student-System" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -58,20 +64,24 @@ public class Main {
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-basics/01-Java-OOP-basics-More-OOP-Concepts-Lab-Resources.zip) **for this task.**
 
-You are given a **working project** for a small **Student System**, but the code is very poorly organized. Break up the code **logically** into **smaller functional units – methods** and **classes** and don’t break the functionality.
+You are given a **working project** for a small **Student System**, but the code is very poorly organized. 
+
+Break up the code **logically** into **smaller functional units** – **methods** and **classes**, and do not break the functionality.
 
 The program supports the following commands:
-- “**Create** `studentName` `studentAge` `studentGrade`” – creates a new student and adds them to the repository.
+
+- “**Create** `studentName` `studentAge` `studentGrade`” – creates a new student and adds them to the repository
 - “**Show** `studentName`” – prints on the console information about a student in the format:
-“`studentName` **is** `studentAge` **years old**. `commentary`”, where the **commentary** is based on the student’s grade.
-- “**Exit**” – closes the program.
+`{studentName} is {studentAge} years old. {commentary}`, where the **commentary** is based on the student’s grade.
+- “**Exit**” – closes the program
 
 **Do not** add any **extra validation** or **functionality** to the app!
 
 ## Submit
-Submit .zip
 
-## Examples
+You should submit your solution in a `.zip` archive.
+
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | Create Bob 20 5.50 | Bob is 20 years old. Excellent student. |
@@ -153,165 +163,4 @@ Stamat is 12 years old. Excellent student.
 [/test]
 [/tests]
 [/code-task]
-[/slide]
-
-[slide hideTitle]
-
-## Solution: Student System
-
-
-- Class StudentSystem 
-```java
-import java.util.HashMap;
-import java.util.Map;
-
-public class StudentSystem {
-    private Map<String, Student> studentsByNames;
-
-    public StudentSystem() {
-        this.studentsByNames = new HashMap<>();
-    }
-
-    public Map<String, Student> getStudentsByNames() {
-        return this.studentsByNames;
-    }
-
-    public String parseCommand(String[] args) {
-
-        String result = null;
-
-        if (args[0].equals("Create")) {
-            Student student = CreateStudentCommand.createStudent(args);
-            studentsByNames.putIfAbsent(student.getName(), student);
-        } else if (args[0].equals("Show")) {
-            ShowStudentInfoCommand showStudentInfoCommand =
-                    new ShowStudentInfoCommand(studentsByNames.get(args[1]));
-            result = showStudentInfoCommand.execute();
-        } else {
-            result = new ExitCommand().execute();
-        }
-
-        return result;
-    }
-}
-```
-- Class Student
-
-```java
-public class Student {
-    private String name;
-    private int age;
-    private double grade;
-
-    public Student(String name, int age, double grade) {
-        this.name = name;
-        this.age = age;
-        this.grade = grade;
-    }
-
-    public String getName() {
-        return this.name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return this.age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public double getGrade() {
-        return this.grade;
-    }
-
-    public void setGrade(double grade) {
-        this.grade = grade;
-    }
-
-    @Override
-    public String toString() {
-        String out = String.format("%s is %s years old.", this.getName(), this.getAge());
-
-        if (this.getGrade() >= 5.00) {
-            out += " Excellent student.";
-        } else if (this.getGrade() < 5.00 && this.getGrade() >= 3.50) {
-            out += " Average student.";
-        } else {
-            out += " Very nice person.";
-        }
-
-        return out;
-    }
-}
-```
-
-- Class CreateStudentCommand
-
-```java
-public class CreateStudentCommand {
-
-    public static Student createStudent(String[] data) {
-        var name = data[1];
-        var age = Integer.parseInt(data[2]);
-        var grade = Double.parseDouble(data[3]);
-        return new Student(name, age, grade);
-    }
-}
-```
-- Class ShowStudentInfoCommand
-
-```java
-public class ShowStudentInfoCommand {
-    private Student student;
-
-    public ShowStudentInfoCommand(Student student) {
-        this.student = student;
-    }
-
-    public String execute() {
-        return this.student != null ? this.student.toString() : null;
-    }
-}
-```
-- Class ExitCommand
-
-```java
-public class ExitCommand {
-
-    public String execute() {
-        return "Exit";
-    }
-}
-```
-- Class Main
-
-```java
-import java.util.Scanner;
-
-public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        StudentSystem studentSystem = new StudentSystem();
-
-        boolean hasToExit = false;
-
-        while (!hasToExit) {
-            String[] input = scanner.nextLine().split(" ");
-
-            String executionResult = studentSystem.parseCommand(input);
-
-            hasToExit = executionResult != null && executionResult.equals("Exit");
-
-            if (!hasToExit && executionResult != null) {
-                System.out.println(executionResult);
-            }
-        }
-    }
-}
-```
 [/slide]
