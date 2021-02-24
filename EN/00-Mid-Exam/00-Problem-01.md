@@ -20,13 +20,13 @@ Peter the archer is going to participate in a tournament.
 
 Your task is to help him calculate his points.
 
-You will receive an array of integers separated by `|`, representing the targets in an archery range.
+You will receive an array of integers separated by "\|", representing the targets in an archery range.
 
 Next, until you receive the Game over command, you have to process commands issued by the Judge of the tournament:
 
-* Command `Shoot Left@{start index}@{length}`:
+* Command "**Shoot Left@**\{**start index**\}**@**\{**length**\}":
 
-Peter starts moving in the archery range to the left starting from `{start index}` and traveling through as many targets as stated in: `{length}`.
+Peter starts moving in the archery range to the left starting from "\{**start index**\}" and traveling through as many targets as stated in: "\{**length**\}".
 
 He cannot go out of the archery range, so if he reaches its beginning, he should walk over to its end and continue walking to the left from there.
 
