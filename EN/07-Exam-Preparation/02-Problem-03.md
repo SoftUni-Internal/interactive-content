@@ -61,14 +61,20 @@ Print one line on the console: "**Your bill is** \{**total price**\}$"
 |cinema(['Star Wars', 'Menu', 1]) | Your bill is 30.00$| 
 |cinema(['John Wick', 'Drink', 6])| Your bill is 72.00$|
 
-**Comments**
-The movie is John Wick and drink is chosen.
+[hints]
+
+[hint]
+The movie is John Wick and a drink is chosen.
 
 The price for one ticket is 12\$
+[/hint]
 
+[hint]
 6 tickets each 12\$ \-\> 72\$
 
 For this movie there is no discount, total price is 72.00\$. 
+[/hint]
+[/hints]
 
 [/task-description]
 [code-io /]
