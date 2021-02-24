@@ -66,18 +66,11 @@ The result must be formatted to the second digit after the decimal point.
 [hints]
 
 [hint]
-You receive a budget of 10$ and the count of series - 3.
-
-The first series is Thrones with price 5\$, which has 50\% discount from the price 5 \- 50\% = 2.50\$. 
-
-The second series is Riverdale, which does not have a discount on the price. 
-
-The third series also does not have a discount. 
+After receiving the budget and the series count, determine whether the series in the input have a discount.
+Then, calculate the price for each series.
 [/hint]
 [hint]
-Price of series is 2.50 \+ 5 \+ 2 = 9.50$. 
-
-Your budget is bigger than the price of series, so you can buy them.
+Calculate the price for the all of the series and check if you can buy them.
 [/hint]
 
 [/hints]
