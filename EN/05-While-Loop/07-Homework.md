@@ -125,7 +125,7 @@ Create a program, which finds a given **favorite book** in an array of books:
 
 * You receive a string, representing the favorite **book's name**
 * Next, you receive book names until the favorite book
-* Print "**Invalid book: **\{**book name**\}" for all invalid books
+* Print "**Invalid book:** \{**book name**\}" for all invalid books
 * Print "**Book found!**", when you encounter the favorite book's name
 * Break the loop after you reach the favorite book
 
