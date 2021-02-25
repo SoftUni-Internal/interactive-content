@@ -26,7 +26,7 @@ Write a function that receives **a string** and a **repeat count** - "**n**".
 
 The function should **return a new string** (the old one repeated "**n**" times).
 
-# Example
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | repeatString('abc', 3) | abcabcabc |
@@ -119,11 +119,11 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Write a function that receives **three integers** and **prints out the smallest.** 
+Write a function that receives **three integers** and **prints out the smallest number.** 
 
 Use an **appropriate name** for the function. 
 
-# Example
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | smallestNumbers(2, 5, 3) | 2 |
@@ -268,7 +268,7 @@ You will receive **three integers.**
 Write a function called `sum()` to get the sum of the first two integers and a `subtract()` function that subtracts the third integer from the result.
 
 
-# Example
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | addSubtract(23, 6, 10) | 29 |
@@ -416,11 +416,11 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Create a function that **receives two characters** and prints on a single line all the characters in between them according to the ASCII table. 
+Write a function that **receives two characters** and prints on a single line all the characters in between them according to the ASCII table. 
 
 Keep in mind that the **second character's ASCII code** might be **before the first one** in the ASCII table.
 
-# Example
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | charactersInRange('a', 'd') | b c |
@@ -522,9 +522,9 @@ function adapter(input, code) {
 
 You will receive a **single number.**
 
-You have to write a function, that returns the **sum** of **all even** and **all odd** digits from that number. 
+Write a function that returns the **sum** of **all even** and **all odd** digits from that number. 
 
-# Example
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | oddEvenSum(1000435) |  Odd sum = 9, Even sum = 4 |
@@ -619,7 +619,7 @@ A palindrome is a number that **reads the same backward as forwarding**, such as
 
 Write a function that receives an **array of positive integers** and checks if **each integer is a palindrome or not**. 
 
-# Example
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | palindrome([123, 323, 421, 121]) |  false |
@@ -756,7 +756,9 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Write a function that checks if a given password is valid. Password validations are:
+Write a function that checks if a given password is valid. 
+
+Password validations are:
 
 - The length should be 6 - 10 characters (inclusive)
 - It should consist only of letters and digits
@@ -772,7 +774,7 @@ If it is **NOT** valid, for every unfulfilled rule print a message:
 
 - "**Password must have at least 2 digits**"
 
-# Example
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | passwordValidator('logIn') | Password must be between 6 and 10 characters |
@@ -902,9 +904,9 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Write a function that receives a single integer number "**n**" and prints "**nxn**" matrix with that number.
+Write a function that receives a single integer number "**n**" and prints "**NxN**" matrix with that number.
 
-# Example
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | matrix(3) | 3 3 3|
@@ -1082,15 +1084,15 @@ function adapter(input, code) {
 
 Write a function that receives a number and determines whether **the number is perfect or not.**
 
-A perfect number is a positive integer that is equal to the sum of its proper positive divisors.
+A perfect number is a **positive integer** that is equal to the sum of its **proper positive divisors**.
 
 The sum of a number's positive divisors excluding the number itself is also known as its **aliquot sum**.
 
-# Example
+## Example
 | Input   | Output | Comments   |
 | :---:       |    :----:   |   :---:     |
-| perfectNumber(6) |We have a perfect number!| `1 + 2 + 3`|
-| perfectNumber(28) | We have a perfect number!|`1 + 2 + 4 + 7 + 14`|
+| perfectNumber(6) |We have a perfect number!| 1 + 2 + 3|
+| perfectNumber(28) | We have a perfect number!|1 + 2 + 4 + 7 + 14|
 | perfectNumber(1236498) |It's not so perfect.||
 
 ## Hint
