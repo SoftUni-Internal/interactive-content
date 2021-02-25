@@ -1,6 +1,6 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 
 # Problem: My First CSS Document
 
@@ -85,7 +85,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Style Lists
 
@@ -176,7 +176,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Styling Tables
 
@@ -301,7 +301,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Buttons
 
@@ -392,7 +392,7 @@ yes
 [/tests]
 [/code-task]
 [/slide]
-[slide]
+[slide hideTitle]
 
 # Problem: Fonts Speciment
 
@@ -512,7 +512,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Fonts Speciment Part 2
 
@@ -619,7 +619,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Contrasting Colors
 
@@ -726,7 +726,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Icon Buttons
 
@@ -805,7 +805,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Icon Font List
 
@@ -933,7 +933,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Create Typography CSS
 

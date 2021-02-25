@@ -1,6 +1,6 @@
 # What is Typography?
 
-[slide]
+[slide hideTitle]
 # What is Typography?
 
 [vimeo-video]
@@ -21,7 +21,7 @@ Typography includes the **style**, **appearance** and **structure** of the font 
 [stream language="RO" videoId="445501183" /]
 [/video-vimeo]
 
-* [The Elements of Typographic Style](https://en.wikipedia.org/wiki/The_Elements_of_Typographic_Style) - The authoritative book on typography and style;
-* [The Elements of Typographic Style Applied to the Web](http://webtypography.net/) - A practical guide to web typography.
+* [The Elements of Typographic Style](https://en.wikipedia.org/wiki/The_Elements_of_Typographic_Style) - The authoritative book on typography and style
+* [The Elements of Typographic Style Applied to the Web](http://webtypography.net/) - A practical guide to web typography
 
 [/slide]

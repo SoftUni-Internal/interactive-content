@@ -1,6 +1,6 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 
 # Problem: Box Model Container
 
@@ -77,7 +77,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Box Sizing
 
@@ -171,7 +171,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Simple Article Page
 
@@ -278,7 +278,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Navigation Inline Block
 
@@ -380,7 +380,7 @@ yes
 [/tests]
 [/code-task]
 [/slide]
-[slide]
+[slide hideTitle]
 
 # Problem: Photo Gallery Inline Block
 

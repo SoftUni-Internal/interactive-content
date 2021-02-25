@@ -1,6 +1,6 @@
 # Block and Inline Elements
 
-[slide]
+[slide hideTitle]
 
 # Block and Inline Elements
 
@@ -17,7 +17,7 @@ Every HTML element has a default **display value**:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 ## Block Elements
 
 The block element always takes up the full available width and starts on a new line.
@@ -37,7 +37,7 @@ We can add margins and paddings on all **four sides** of any block element.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 ## Inline Elements
 
 The inline element only takes up as **much width as necessary** and doesn't start on a new line.
@@ -59,7 +59,7 @@ We can add margins and paddings on the **right** and **left** sides of any inlin
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 ## Inline-Block Elements
 
 [vimeo-video]

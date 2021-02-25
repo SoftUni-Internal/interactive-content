@@ -1,21 +1,14 @@
 # Lesson Introduction
 
-[slide]
-# Sli.do
 
-[html]
-
-<iframe src="https://app.sli.do/event/3yilumfn" height="100%" width="75%" style="min-height: 570px;"></iframe>
-
-[/html]
-[/slide]
-
-[slide]
-# Lesson Introduction
+[slide hideTitle]
+# Lesson Content
 
 [vimeo-video]
 [stream language="EN" videoId="431759889" default /]
 [stream language="RO" videoId="446432571" /]
 [/video-vimeo]
+
+TODO: Add Lesson Content
 
 [/slide]

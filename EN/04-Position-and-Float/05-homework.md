@@ -1,6 +1,6 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 
 # Problem: Blog Layout Float
 
@@ -127,7 +127,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Position Playground
 
@@ -199,7 +199,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Center Position and Transform
 
@@ -295,7 +295,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Navigation Float
 
@@ -398,7 +398,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Social Media Icons
 

@@ -1,6 +1,5 @@
-# Clearing the Float
 
-[slide]
+[slide hideTitle]
 
 # Clearing the Float
 
@@ -14,16 +13,16 @@ If an element has the `clear` property set on it will **not move up adjacent** t
 
 The `clear` property has the following values:
 
-* `none` - **Allows** floating elements on **both sides**. This is the **default** value;
-* `left` - **No** floating elements allowed **on the left side**;
-* `right`- **No** floating elements allowed **on the right side**;
-* `both` - **No** floating elements allowed **on both left and right** sides.
+* `none` - **Allows** floating elements on **both sides**. This is the **default** value
+* `left` - **No** floating elements allowed **on the left side**
+* `right`- **No** floating elements allowed **on the right side**
+* `both` - **No** floating elements allowed **on both left and right** sides
 
 **Note**: The most common use of the `clear` property is after you have used a `float` property on an element.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Clear examples
 
 [vimeo-video]

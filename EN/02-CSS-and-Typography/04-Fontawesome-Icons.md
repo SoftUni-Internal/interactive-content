@@ -1,6 +1,6 @@
 # Font Awesome Icons
 
-[slide]
+[slide hideTitle]
 
 ## What is Font Awesome?
 
@@ -12,16 +12,16 @@
 Font awesome is the **most popular icon toolkit** based on CSS.
 
 Icon fonts has:
-* Fonts containing **symbols and glyphs** instead of letters/numbers;
-* You can style them with **CSS** the same way as regular text.
+* Fonts containing **symbols and glyphs** instead of letters/numbers
+* You can style them with **CSS** the same way as regular text
 
 Font Awesome has:
-* More than **1,580 Free** Icons;
-* More than **7,840 Pro** Icons.
+* More than **1,580 Free** Icons
+* More than **7,840 Pro** Icons
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 ## Getting Started with Font Awesome
 
 There are two ways **to use** the Free Font Awesome 5 icons:
@@ -37,9 +37,9 @@ Alternatively, we can import Font Awesome in the **CSS file**:
 `@import 'https://use.fontawesome.com/releases/v5.10.2/css/all.css';`
 
 * Go to the website of Font Awsome: https://fontawesome.com/icons
-* Choose an icon;
-* Copy the `<i>` element;
-* Paste it in your HTML file.
+* Choose an icon
+* Copy the `<i>` element
+* Paste it in your HTML file
 
 [html]
 <p class="codepen" data-height="239" data-theme-id="39135" data-default-tab="html,result" data-user="softuni-inter" data-slug-hash="qBOzqpJ" style="height: 239px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="fontawsome">

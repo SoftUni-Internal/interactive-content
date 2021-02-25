@@ -1,6 +1,6 @@
-# Position Property
 
-[slide]
+
+[slide hideTitle]
 
 # Position Property
 
@@ -9,11 +9,11 @@
 [/video-vimeo]
 
 The `position` property specifies the type of positioning method used for an element:
-* Static;
-* Relative;
-* Absolute;
-* Fixed;
-* Sticky.
+* Static
+* Relative
+* Absolute
+* Fixed
+* Sticky
 
 When the `position` property is set, the elements are positioned using the **top, bottom, left,** and **right** properties. 
  
@@ -21,7 +21,7 @@ These properties also work differently **depending on the position value**.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Position Static
 
@@ -48,7 +48,7 @@ It just means: 'place the element into its **normal position** in the document l
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Position Relative
 
@@ -70,7 +70,7 @@ When the position is set to **relative**, the following properties can be set:
 [stream language="EN" videoId="431760468" default /]
 [/video-vimeo]
 
-* `top` - defines the position of the element according to its **top** edge. The element will move **downwards** by the amount defined by the **top** value;
+* `top` - defines the position of the element according to its **top** edge. The element will move **downwards** by the amount defined by the **top** value
 
 [vimeo-video]
 [stream language="EN" videoId="431761410" default /]
@@ -80,7 +80,7 @@ When the position is set to **relative**, the following properties can be set:
 [stream language="EN" videoId="431761435" default /]
 [/video-vimeo]
 
-* `right` - defines the position of the element according to its **right** edge. The element will move **left** by the amount defined by the **right** value;
+* `right` - defines the position of the element according to its **right** edge. The element will move **left** by the amount defined by the **right** value
 
 [vimeo-video]
 [stream language="EN" videoId="431761241" default /]
@@ -90,7 +90,7 @@ When the position is set to **relative**, the following properties can be set:
 [stream language="EN" videoId="431761267" default /]
 [/video-vimeo]
 
-* `bottom` - defines the position of the element according to its **bottom** edge. The element will move **upwards** by the amount defined by the **bottom** value;
+* `bottom` - defines the position of the element according to its **bottom** edge. The element will move **upwards** by the amount defined by the **bottom** value
 
 [vimeo-video]
 [stream language="EN" videoId="431761368" default /]
@@ -100,7 +100,7 @@ When the position is set to **relative**, the following properties can be set:
 [stream language="EN" videoId="431761390" default /]
 [/video-vimeo]
 
-* `left` - defines the position of the element according to its **left** edge. The element will move **right** by the amount defined by the **left** value.
+* `left` - defines the position of the element according to its **left** edge. The element will move **right** by the amount defined by the **left** value
 
 **Example:**
 [html]
@@ -126,7 +126,7 @@ When the position is set to **relative**, the following properties can be set:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Position Absolute
 
@@ -146,25 +146,25 @@ When the position is set to **absolute**, the following properties can be set:
 [stream language="EN" videoId="431760499" default /]
 [/video-vimeo]
 
-* `top` - the element will position itself from the **top** of the first positioned **ancestor**;
+* `top` - the element will position itself from the **top** of the first positioned **ancestor**
 
 [vimeo-video]
 [stream language="EN" videoId="431761463" default /]
 [/video-vimeo]
 
-* `right` - the element will position itself from the **right** of the first positioned **ancestor**;
+* `right` - the element will position itself from the **right** of the first positioned **ancestor**
 
 [vimeo-video]
 [stream language="EN" videoId="431761306" default /]
 [/video-vimeo]
 
-* `bottom` - the element will position itself from the **bottom** of the first positioned **ancestor**;
+* `bottom` - the element will position itself from the **bottom** of the first positioned **ancestor**
 
 [vimeo-video]
 [stream language="EN" videoId="431761347" default /]
 [/video-vimeo]
 
-* `left` - the element will position itself from the **left** of the first positioned **ancestor**.
+* `left` - the element will position itself from the **left** of the first positioned **ancestor**
 
 **Example:**
 [html]
@@ -179,7 +179,7 @@ When the position is set to **absolute**, the following properties can be set:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Position Fixed
 
@@ -206,7 +206,7 @@ Because it’s positioned, it will act as an **anchor point** for the absolutely
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Position Sticky
 

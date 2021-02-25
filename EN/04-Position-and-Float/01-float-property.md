@@ -1,6 +1,6 @@
 # Float
 
-[slide]
+[slide hideTitle]
 
 # What is float?
 
@@ -19,15 +19,15 @@ Usually, the float property is used to **wrap text around images**.
 [/video-vimeo]
 
 The values of the float property are:
-* `float : right;` - floats the element to **right** of its container;
-* `float : left;` - floats the element to **left** of its container;
-* `float : none;` - it will **restrict** the element to float;
-* `float : initial;` - the element remains to its **default position**;
-* `float : inherit;` - enables the element to **inherit** the property **from its parent** element.
+* `float : right;` - floats the element to **right** of its container
+* `float : left;` - floats the element to **left** of its container
+* `float : none;` - it will **restrict** the element to float
+* `float : initial;` - the element remains to its **default position**
+* `float : inherit;` - enables the element to **inherit** the property **from its parent** element
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Float examples
 

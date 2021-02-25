@@ -1,6 +1,6 @@
 # Media Queries
 
-[slide]
+[slide hideTitle]
 # Media Queries
 
 ## What is Media Query?
@@ -27,7 +27,7 @@ In the example we can see that if the browser window is 550px or smaller, the ba
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 ## How Can We Use Media Queries?
 
@@ -36,14 +36,14 @@ In the example we can see that if the browser window is 550px or smaller, the ba
 [/video-vimeo]
 
 Media queries can be used to check many things, such as:
-* **width** and **height** of the **viewport**;
-* **width** and **height** of the **device**;
-* orientation (is the tablet/phone in **landscape** or **portrait** mode);
-* **resolution**.
+* **width** and **height** of the **viewport**
+* **width** and **height** of the **device**
+* orientation (is the tablet/phone in **landscape** or **portrait** mode)
+* **resolution**
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 ## Media Query Syntax
 
@@ -76,7 +76,7 @@ A set of **CSS rules** that will be applied if the test passes and the media typ
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 ## Typical Device Breakpoints
 

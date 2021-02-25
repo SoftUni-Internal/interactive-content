@@ -1,6 +1,6 @@
 # Width and Height
 
-[slide]
+[slide hideTitle]
 
 ## Width
 
@@ -16,9 +16,9 @@ The `width` property defines the width of an element.
 The width of an element excludes **paddings**, **borders**, or **margins**!
 
 The values of this property are:
-* `auto` - The browser calculates the width. Default value.	
-* **\<length>** -	Defines the width in **px**, **cm**, etc.	
-* **%** - Defines the width in percent of the containing block.
+* `auto` - The browser calculates the width. Default value	
+* **\<length>** -	Defines the width in **px**, **cm**, etc	
+* **%** - Defines the width in percent of the containing block
 
 ## Max-Width
 
@@ -47,7 +47,7 @@ The default value of this property is `0`.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 ## Height
 
@@ -61,9 +61,9 @@ The `height` property defines the height of an element.
 The height of an element excludes **paddings**, **borders**, or **margins**!
 
 The values of this property are:
-* `auto` - The browser calculates the height. Default value.	
-* **\<length>** -	Defines the height in **px**, **cm**, etc.	
-* **%** - Defines the height in percent of the containing block.
+* `auto` - The browser calculates the height. Default value
+* **\<length>** -	Defines the height in **px**, **cm**, etc.
+* **%** - Defines the height in percent of the containing block
 
 ## Max-Height
 

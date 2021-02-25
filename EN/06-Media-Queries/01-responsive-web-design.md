@@ -1,6 +1,6 @@
 # What is Responsive Web Design?
 
-[slide]
+[slide hideTitle]
 # What is Responsive Web Design?
 
 [vimeo-video]
@@ -32,7 +32,7 @@ This will give the browser instructions on how to control the page’s **dimensi
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 ## Components of Responsive Design
 
@@ -41,32 +41,32 @@ This will give the browser instructions on how to control the page’s **dimensi
 [/video-vimeo]
 
 Responsive website design consists of the following three main components:
-* **Flexible layouts** – We can use a flexible grid to create the website layout. It will dynamically resize to any width;
-* **Media queries** -  Allows designers to specify different styles for a specific browser and device;
-* **Flexible Media** – Makes media (images, video, and other formats) scalable.
+* **Flexible layouts** – We can use a flexible grid to create the website layout. It will dynamically resize to any width
+* **Media queries** -  Allows designers to specify different styles for a specific browser and device
+* **Flexible Media** – Makes media (images, video, and other formats) scalable
 
 [vimeo-video]
 [stream language="EN" videoId="431768791" default /]
 [/video-vimeo]
 
 Benefits of using a Responsive Website:
-* **Increased traffic** from mobile users;
-* **Lower cost** for website maintenance;
-* Provides a Seamless **User Experience**;
-* **Adapts** easily to any screen size;
-* A Responsive Website improves our **SEO** efforts.
+* **Increased traffic** from mobile users
+* **Lower cost** for website maintenance
+* Provides a Seamless **User Experience**
+* **Adapts** easily to any screen size
+* A Responsive Website improves our **SEO** efforts
 
 [vimeo-video]
 [stream language="EN" videoId="431769187" default /]
 [/video-vimeo]
 
 Why Responsive Website Design is Important?
-* **Google** prioritizes Responsive Websites;
-* 50% of Total **eCommerce** revenue comes from mobile;
-* 94% of people **judge** websites on Responsive Web Design;
-* Almost 60% of all internet **access** is done through the phone;
-* 77% of adults own a **smart** phone;
-* 72% of people want **Mobile-Friendly** websites;
-* Responsive design integrates **social media**.
+* **Google** prioritizes Responsive Websites
+* 50% of Total **eCommerce** revenue comes from mobile
+* 94% of people **judge** websites on Responsive Web Design
+* Almost 60% of all internet **access** is done through the phone
+* 77% of adults own a **smart** phone
+* 72% of people want **Mobile-Friendly** websites
+* Responsive design integrates **social media**
 
 [/slide]

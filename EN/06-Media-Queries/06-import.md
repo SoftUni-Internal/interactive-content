@@ -1,6 +1,6 @@
-# Import
 
-[slide]
+
+[slide hideTitle]
 # Import
 
 [vimeo-video]

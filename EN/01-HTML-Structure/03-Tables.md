@@ -1,6 +1,6 @@
 # HTML Tables
 
-[slide]
+[slide hideTitle]
 # HTML Table
 
 [vimeo-video]
@@ -29,7 +29,7 @@ If the cell is in the header, it is defined with the `<th>` tag. By default, tab
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 ## Complete HTML Tables
 
@@ -39,9 +39,9 @@ If the cell is in the header, it is defined with the `<th>` tag. By default, tab
 [/video-vimeo]
 
 There are three specific parts in every table: 
-* `<thead>` - used to group header content in an HTML table;
-* `<tbody>` - used to group the body content in an HTML table;
-* `<tfoot>` - used to group footer content in an HTML table.
+* `<thead>` - used to group header content in an HTML table
+* `<tbody>` - used to group the body content in an HTML table
+* `<tfoot>` - used to group footer content in an HTML table
 
 These elements are used to specify each part of a table (header, body, footer). 
 
@@ -56,13 +56,13 @@ These elements are used to specify each part of a table (header, body, footer).
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 ## Cells that Span Many Columns or Rows
 
 If needed, we can create a cell span more than one column/row using `colspan`/`rowspan` attributes:
-* `colspan` attribute is used for columns;
-* `rowspan` attribute is used for rows.
+* `colspan` attribute is used for columns
+* `rowspan` attribute is used for rows
 
 [html]
 <p class="codepen" data-height="300" data-theme-id="39135" data-default-tab="html,result" data-user="softuni-inter" data-slug-hash="OJyeRXE" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="colspan">

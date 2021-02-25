@@ -1,6 +1,6 @@
 # Media Feature Rules
 
-[slide]
+[slide hideTitle]
 # Media Feature Rules
 
 [vimeo-video]
@@ -65,8 +65,8 @@ To change the body text color if the device is in landscape orientation:
 
 `hover` is used to query the user’s ability to **hover** over elements on the page with the primary pointing device:
 
-* `hover: hover;` - hover over elements with ease;
-* `hover: none;` - can’t hover over elements.
+* `hover: hover;` - hover over elements with ease
+* `hover: none;` - can’t hover over elements
 
 **Example:**
 ```html
@@ -84,9 +84,9 @@ To change the body text color if the device is in landscape orientation:
 `pointer` is used to query the presence and accuracy of a **pointing** device such as a mouse.
 
 If the primary input mechanism of the device includes:
-* a pointing device of limited accuracy, we use `coarse`;
-* an accurate pointing device, we use `fine`;
-* **not include** a pointing device, we use `none`;
+* a pointing device of limited accuracy, we use `coarse`
+* an accurate pointing device, we use `fine`
+* **not include** a pointing device, we use `none`
 
 **Example:**
 ```html

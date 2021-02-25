@@ -1,6 +1,6 @@
 # HTML Forms
 
-[slide]
+[slide hideTitle]
 # HTML Form
 
 [vimeo-video]
@@ -29,7 +29,7 @@ The form contains interactive controls for submitting information. It receives i
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 ## Form Attributes
 
@@ -53,7 +53,7 @@ The form attributes are optional, but it's standard practice to always set at le
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 ## Form Elements
 
@@ -97,15 +97,15 @@ The `<input>` element is one of the most important form elements. This element c
 
 The following attributes are available:
 
-* `id` – specifies a unique id for an HTML element;
-* `type` – specifies the type of `<input>` element to display;
-* `value` – specifies the initial value for an input field;
-* `name` – specifies the name of the input element;
-* `placeholder` – specifies a hint that describes the expected value of the input field;
-* `required` – the field must be filled out before submitting the form;
-* `autofocus` – the input should automatically get focus when the page load;
-* `disabled` – specifies that the input field is disabled;
-* `min` and `max` – specify the minimum and maximum values.
+* `id` – specifies a unique id for an HTML element
+* `type` – specifies the type of `<input>` element to display
+* `value` – specifies the initial value for an input field
+* `name` – specifies the name of the input element
+* `placeholder` – specifies a hint that describes the expected value of the input field
+* `required` – the field must be filled out before submitting the form
+* `autofocus` – the input should automatically get focus when the page load
+* `disabled` – specifies that the input field is disabled
+* `min` and `max` – specify the minimum and maximum values
 
 **Example**
 ```html
@@ -181,8 +181,8 @@ The following attributes are available:
 
 The size of a text area can be specified by the **cols** and **rows** attributes or through CSS **height** and **width** properties:
 
-* `rows` – specifies the visible number of **lines** in a text area;
-* `cols` – specifies the visible **width** of a text area.
+* `rows` – specifies the visible number of **lines** in a text area
+* `cols` – specifies the visible **width** of a text area
 
 **Example**
 ```html

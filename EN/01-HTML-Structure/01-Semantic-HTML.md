@@ -1,6 +1,6 @@
 # HTML Structure
 
-[slide]
+[slide hideTitle]
 # HTML Semantic Elements
 
 [vimeo-video]
@@ -34,7 +34,7 @@ In HTML there are semantic elements, that can be used to define different parts 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # HTML Semantic Tags
 
 ## HTML \<nav\> Tag
@@ -212,7 +212,8 @@ If the first child of the `<details>` element is a `<summary>`, the contents of 
 [stream language="RO" videoId="445198037" /]
 [/video-vimeo]
 
-* The `<time>` tag defines a readable date/time. It may include the datetime attribute to translate dates into a machine-readable format.
+* The `<time>` tag defines a readable date/time. It may include the datetime attribute to translate dates into a machine-readable format
+
 * The HTML `<address>` element indicates that the enclosed HTML provides contact information like an email address, a URL, a physical address, a phone number, social media handle, etc.
 
 [html]

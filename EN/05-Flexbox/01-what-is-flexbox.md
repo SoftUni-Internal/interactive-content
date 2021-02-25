@@ -1,6 +1,6 @@
 # Flexbox
 
-[slide]
+[slide hideTitle]
 
 ## What is Flexbox?
 
@@ -23,8 +23,8 @@ Items flex to **fill** additional space and **shrink** to fit into smaller space
 [/video-vimeo]
 
 The following simple layout requirements are either **difficult** or **impossible** to achieve with float and positioning, in any kind of convenient, flexible way:
-* Vertically centering a block of content inside its parent;
-* Making all the children of a container take up an equal amount of the available width/height, regardless of how much width/height is available;
-* Making all columns in a multiple-column layouts adopt the same height even if they contain a different amount of content.
+* Vertically centering a block of content inside its parent
+* Making all the children of a container take up an equal amount of the available width/height, regardless of how much width/height is available
+* Making all columns in a multiple-column layouts adopt the same height even if they contain a different amount of content
 
 [/slide]

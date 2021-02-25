@@ -1,6 +1,6 @@
 # Properties for the Children
 
-[slide]
+[slide hideTitle]
 
 ## Order
 
@@ -30,7 +30,7 @@ The first flex item in the code does not have to appear as the first item in the
 [stream language="EN" videoId="431763581" default /]
 [/video-vimeo]
 
-* `order: 1;` - The order is relative to the flexbox item's siblings. 
+* `order: 1;` - The order is relative to the flexbox item's siblings 
 
 The final order is defined when all individual flexbox items order values are taken into account;
 
@@ -50,7 +50,7 @@ The final order is defined when all individual flexbox items order values are ta
 [stream language="EN" videoId="431763596" default /]
 [/video-vimeo]
 
-* `order: -1;` - Negative values are also possible. 
+* `order: -1;` - Negative values are also possible
 
 **Example** for `order: -1;`
 
@@ -64,7 +64,7 @@ The final order is defined when all individual flexbox items order values are ta
 
 [/html]
 
-* `order: 9;` - Each item can have a different order to appear on the needed place; 
+* `order: 9;` - Each item can have a different order to appear on the needed place 
 
 **Example** for `order: 9;`
 
@@ -80,7 +80,7 @@ The final order is defined when all individual flexbox items order values are ta
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 ## Flex-grow
 
@@ -91,13 +91,13 @@ The final order is defined when all individual flexbox items order values are ta
 The `flex-grow` defines how much a flexbox item should **grow** if there's space available.
 
 This property has two possible values:
-* `flex-grow: 0;` - The element will **not** grow if there's space available. It will only use the space it needs. It's the **default** value;
+* `flex-grow: 0;` - The element will **not** grow if there's space available. It will only use the space it needs. It's the **default** value
 
 [vimeo-video]
 [stream language="EN" videoId="431763660" default /]
 [/video-vimeo]
 
-* `flex-grow: 1;` - The element will **grow** by a factor of 1. It will fill up the remaining space if no other flexbox item has a flex-grow value;
+* `flex-grow: 1;` - The element will **grow** by a factor of 1. It will fill up the remaining space if no other flexbox item has a flex-grow value
 
 **Example:**
 [html]
@@ -112,7 +112,7 @@ This property has two possible values:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 ## Flex-shrink
 
@@ -123,13 +123,15 @@ This property has two possible values:
 The `flex-shrink` property defines how much a flexbox item should **shrink** if there's **not enough** space available.
 
 This property has two possible values:
-* `flex-shrink: 1;` - If there's **not enough** space available in the container's main axis, the element will **shrink** by a factor of **1**, and will wrap its content. It's the **default** value;
+* `flex-shrink: 1;` - If there's **not enough** space available in the container's main axis, the element will **shrink** by a factor of **1**, and will wrap its content. It's the **default** value
 
 [vimeo-video]
 [stream language="EN" videoId="431768150" default /]
 [/video-vimeo]
 
-* `flex-shrink: 0;` - The element will **not shrink**. It will retain the width it needs, and **not wrap** its content. Its siblings will shrink to give space to the target element.
+* `flex-shrink: 0;` - The element will **not shrink**. 
+
+It will retain the width it needs, and **not wrap** its content. Its siblings will shrink to give space to the target element
 
 If the target element will not wrap its content, there is a chance for the flexbox container's content to **overflow**;
 
@@ -146,7 +148,7 @@ If the target element will not wrap its content, there is a chance for the flexb
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 ## Flex-basis
 
@@ -156,13 +158,13 @@ If the target element will not wrap its content, there is a chance for the flexb
 
 The `flex-basis` property defines the initial size of a flexbox item.
 
-* `flex-basis: auto;` - The element will be automatically **sized based on its content**, or on any **height** or **width** value if they are defined;
+* `flex-basis: auto;` - The element will be automatically **sized based on its content**, or on any **height** or **width** value if they are defined
 
 [vimeo-video]
 [stream language="EN" videoId="431768224" default /]
 [/video-vimeo]
 
-* `flex-basis: 80px;` - We can define **pixel** or **(r)em** values. The element will wrap its content to avoid any overflow.
+* `flex-basis: 80px;` - We can define **pixel** or **(r)em** values. The element will wrap its content to avoid any overflow
 
 **Example:**
 [html]
@@ -177,7 +179,7 @@ The `flex-basis` property defines the initial size of a flexbox item.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 ## Flex - The Shorthand Property
 
@@ -186,9 +188,9 @@ The `flex-basis` property defines the initial size of a flexbox item.
 [/video-vimeo]
 
 The `flex` property is the shorthand for:
-* `flex-grow`;
-* `flex-shrink`;
-* `flex-basis`.
+* `flex-grow`
+* `flex-shrink`
+* `flex-basis`
 
 The default value is `flex: 0 1 auto;`, wich is equivalent to:
 
@@ -203,7 +205,7 @@ The default value is `flex: 0 1 auto;`, wich is equivalent to:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 ## Align-self
 
@@ -221,22 +223,22 @@ This property **overrides** the default alignment set by the container's align-i
 [stream language="EN" videoId="431768419" default /]
 [/video-vimeo]
 
-* The **container** has **align-items: center** ;
+* The **container** has **align-items: center**
 * The target has **align-self: flex-start**
 
 [vimeo-video]
 [stream language="EN" videoId="431768446" default /]
 [/video-vimeo]
 
-* The **container** has **align-items: flex-start**;
-* The **target** has **align-self: center**.
+* The **container** has **align-items: flex-start**
+* The **target** has **align-self: center**
 
 [vimeo-video]
 [stream language="EN" videoId="431768078" default /]
 [/video-vimeo]
 
-* The **container** has **align-items: center**;
-* The **target** has **align-self: stretch**.
+* The **container** has **align-items: center**
+* The **target** has **align-self: stretch**
 
 **Example:**
 [html]

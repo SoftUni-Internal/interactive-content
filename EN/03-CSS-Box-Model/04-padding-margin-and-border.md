@@ -1,6 +1,6 @@
 # Margin, Padding and Border
 
-[slide]
+[slide hideTitle]
 
 # Margin
 
@@ -59,7 +59,7 @@ div {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Padding
 
@@ -112,7 +112,7 @@ div {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Border
 
@@ -127,16 +127,16 @@ div {
 * `border-color` - defines the **color** of the border( `red`, `#fff`, `rgb(225, 0, 158)`);
 
 `border-style` has the following values:
-* `none` - Default value. Defines no border;
-* `hidden` - The same as "none", except in border conflict resolution for table elements;	
-* `dotted` - Defines dotted border;
-* `dashed` - Defines dashed border;
-* `solid` - defines solid border;
-* `double` - Defines double border;
-* `groove` - defines 3D grooved border. The effect depends on the border-color value;
-* `ridge` - defines 3D ridged border. The effect depends on the border-color value;
-* `inset` - defines 3D inset border. The effect depends on the border-color value;
-* `outset` - defines 3D outset border. The effect depends on the border-color value.
+* `none` - Default value. Defines no border
+* `hidden` - The same as "none", except in border conflict resolution for table elements	
+* `dotted` - Defines dotted border
+* `dashed` - Defines dashed border
+* `solid` - defines solid border
+* `double` - Defines double border
+* `groove` - defines 3D grooved border. The effect depends on the border-color value
+* `ridge` - defines 3D ridged border. The effect depends on the border-color value
+* `inset` - defines 3D inset border. The effect depends on the border-color value
+* `outset` - defines 3D outset border. The effect depends on the border-color value
 
 **Example:**
 [html]

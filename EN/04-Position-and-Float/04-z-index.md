@@ -1,6 +1,6 @@
 # Z index
 
-[slide]
+[slide hideTitle]
 
 # Z index
 
@@ -15,12 +15,12 @@ It only works on **positioned** elements (anything apart from static).
 If the element has **greater** stack order then it is always **in front** of an element with a lower stack order.
 
 The following values of `z-index` are possible:
-* `auto` - Sets the stack order **equal to its parents**. This is by **default**;
-* \<number> - Sets the **stack order** of the element. Negative numbers are **allowed**.
+* `auto` - Sets the stack order **equal to its parents**. This is by **default**
+* \<number> - Sets the **stack order** of the element. Negative numbers are **allowed**
 
 The order is defined by the **order in the HTML** code:
-* First in the code goes behind;
-* Last in the code goes in front.
+* First in the code goes behind
+* Last in the code goes in front
 
 **Example:**
 

@@ -1,6 +1,6 @@
 # CSS Typography Properties
 
-[slide]
+[slide hideTitle]
 
 ## Font Family
 
@@ -32,11 +32,11 @@ font-family: Arial, "Times New Roman", sans-serif;
 **Note**: If the name of a font family **contains spaces**, it must be in **quotation marks**, like: "Times New Roman".
 
 Here is a list with properties of `<generic-name>`:
-* `serif` – all characters have stroke endings;
-* `sans-serif` – no character has stroke endings;
-* `monospace` – all characters have the same width;
-* `cursive` – handwritten fonts;
-* `fantasy` – decorative fonts.
+* `serif` – all characters have stroke endings
+* `sans-serif` – no character has stroke endings
+* `monospace` – all characters have the same width
+* `cursive` – handwritten fonts
+* `fantasy` – decorative fonts
 
 **Example:**
 [html]
@@ -69,7 +69,7 @@ https://fonts.google.com/
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 ## @font-face
 
 [vimeo-video]
@@ -93,7 +93,7 @@ It's common to use both `url()` and `local()` together so that the user's instal
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 ## Font Style
 
 [vimeo-video]
@@ -102,9 +102,9 @@ It's common to use both `url()` and `local()` together so that the user's instal
 [/video-vimeo]
 
 `font-style` defines how much the text is **slanted**. This property has three values:
-* `normal` - The text is shown **normally**;
-* `italic` - The text is shown in **italics**;
-* `oblique` - The text is "**leaning**" (oblique is very similar to italic).
+* `normal` - The text is shown **normally**
+* `italic` - The text is shown in **italics**
+* `oblique` - The text is "**leaning**" (oblique is very similar to italic)
 
 **Example:**
 [html]
@@ -118,7 +118,7 @@ It's common to use both `url()` and `local()` together so that the user's instal
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 ## Font Size
 
 [vimeo-video]
@@ -133,11 +133,11 @@ This property is also used to **compute** the size of **em**, **ex**, and other 
 The `font-size` value can be **absolute** or **relative**.
 
 Absolute:
-* `px` - when you need **pixel accuracy**;
+* `px` - when you need **pixel accuracy**
 
 Relative:
-* `em` - the value is relative to the **parent element's** font-size;
-* `rem` - the value is relative to the **root's** font-size;
+* `em` - the value is relative to the **parent element's** font-size
+* `rem` - the value is relative to the **root's** font-size
 
 **Note**: The **default** font-size is `16px`.
 
@@ -149,7 +149,7 @@ font-size: 1rem;
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 ## Font Weight
 
 [vimeo-video]
@@ -177,7 +177,7 @@ font-weight: bolder;
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 ## Line Height
 
 [vimeo-video]
@@ -189,10 +189,10 @@ The `line-height` property defines the height of a single line of text.
 
 The `line-height` property is specified as any one of the following:
 
-* **\<number>** (unitless) - The used value is the unitless \<number\> multiplied by the element's font size;
-* **\<length>** - The specified \<length\> is used in the calculation of the line box height;
-* **\<percentage>**- Percentage is relative to the font size of the element itself;
-* the keyword `normal`- Depends on the user agent. It's the default value.
+* **\<number>** (unitless) - The used value is the unitless \<number\> multiplied by the element's font size
+* **\<length>** - The specified \<length\> is used in the calculation of the line box height
+* **\<percentage>**- Percentage is relative to the font size of the element itself
+* the keyword `normal`- Depends on the user agent. It's the default value
 
 **Example:**
 ```html
@@ -204,7 +204,7 @@ line-height: normal;
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 ## Letter Spacing
 
 [vimeo-video]
@@ -214,8 +214,8 @@ line-height: normal;
 
 `letter-spacing` defines the spacing between the characters of a block of text.
 
-* **\<length>** - Defines an extra space between characters (negative values are allowed);
-* `normal` - the spacing between the characters is normal. This is the default value.
+* **\<length>** - Defines an extra space between characters (negative values are allowed)
+* `normal` - the spacing between the characters is normal. This is the default value
 
 **Example:**
 ```html
@@ -225,7 +225,7 @@ letter-spacing: normal;
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 ## Text Align
 
 [vimeo-video]
@@ -236,10 +236,10 @@ letter-spacing: normal;
 `text-align` defines how the content of the element is horizontally aligned.
 
 The values of this property are:
-* `left`	- Aligns the text to the **left**;
-* `right`	- Aligns the text to the **right**;	
-* `center`	- **Centers** the text;
-* `justify`	- Stretches the lines so that each line has **equal width**.
+* `left`	- Aligns the text to the **left**
+* `right`	- Aligns the text to the **right**
+* `center`	- **Centers** the text
+* `justify`	- Stretches the lines so that each line has **equal width**
 
 The default value depends on the direction. It's left if the direction is ltr, and right if the direction is rtl.
 
@@ -251,7 +251,7 @@ text-align: center;
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 ## Text Decoration
 
 [vimeo-video]
@@ -278,7 +278,7 @@ The `text-decoration` property defines how the text content of the element is de
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 ## Text Indent
 
 The `text-indent` property specifies the **indentation of the first line** in a text-block.
@@ -294,7 +294,7 @@ text-indent: 40px;
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 ## Text Overflow
 
 The `text-overflow` property defines how the hidden text content behaves if it’s overflowing.
@@ -302,13 +302,13 @@ The `text-overflow` property defines how the hidden text content behaves if it�
 It can be `clipped`, display an `ellipsis` (...), or display a custom `string`.
 
 **Both** of the following properties are **required** for `text-overflow`:
-* `white-space: nowrap`;
-* `overflow: hidden`;
+* `white-space: nowrap`
+* `overflow: hidden`
 
 `text-overflow` values can be:
-* `clip` -	The text is clipped and not accessible. It's the default value;
-* `ellipsis` -	renders an **ellipsis** ("...") to represent the clipped text;
-* `string` -	renders the **given string** to represent the clipped text.
+* `clip` -	The text is clipped and not accessible. It's the default value
+* `ellipsis` -	renders an **ellipsis** ("...") to represent the clipped text
+* `string` -	renders the **given string** to represent the clipped text
 
 **Example:**
 
@@ -323,7 +323,7 @@ It can be `clipped`, display an `ellipsis` (...), or display a custom `string`.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 ## Text Transform
 
 [vimeo-video]
@@ -334,10 +334,10 @@ It can be `clipped`, display an `ellipsis` (...), or display a custom `string`.
 The `text-transform` property controls, how the text to be capitalized.
 
 The values are:
-* `none` -	the text will have no capitalization. This is the default value;
-* `capitalize`	- turns the **first character** of each word to uppercase;
-* `uppercase`	- turns **all** characters to **uppercase**;
-* `lowercase`	- turns **all** characters to **lowercase**.
+* `none` -	the text will have no capitalization. This is the default value
+* `capitalize`	- turns the **first character** of each word to uppercase
+* `uppercase`	- turns **all** characters to **uppercase**
+* `lowercase`	- turns **all** characters to **lowercase**
 
 **Example:**
 
@@ -348,14 +348,14 @@ text-transform: uppercase;
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 ## Word Break
 
 `word-break` defines how words should break when reaching the end of the line.
 
 The values of this property are:
-* `normal`– words with no space will not break;
-* `break-all`	- words with no space will break as soon as they reach the end of a line;
+* `normal`– words with no space will not break
+* `break-all`	- words with no space will break as soon as they reach the end of a line
 
 **Example:**
 
@@ -366,7 +366,7 @@ word-break: break-all;
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 ## Text Color
 
 [vimeo-video]
@@ -377,10 +377,10 @@ word-break: break-all;
 The `color` property sets the color of an element's text.
 
 There are different ways to set the color of a text:
-* `color: red;` - You can use one of the 140+ **color names**;
-* `color: #05ffb0;` - You can use **hexadecimal** color codes;
-* `color: rgb(125, 125, 255);` - You can use `rgb()` color codes;
-* `color: rgba(255, 0, 0, 0.5);` - You can use `rgba()` color codes, where the last number defines the opacity. 0.0 is fully transparent and 1.0 is fully opaque.
+* `color: red;` - You can use one of the 140+ **color names**
+* `color: #05ffb0;` - You can use **hexadecimal** color codes
+* `color: rgb(125, 125, 255);` - You can use `rgb()` color codes
+* `color: rgba(255, 0, 0, 0.5);` - You can use `rgba()` color codes, where the last number defines the opacity. 0.0 is fully transparent and 1.0 is fully opaque
 
 **Example:**
 
@@ -393,7 +393,7 @@ color: rgba(255, 0, 0, 0.5);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 ## Background Color
 
 [vimeo-video]

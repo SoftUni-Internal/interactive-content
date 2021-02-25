@@ -1,6 +1,6 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 
 # Problem: Flexbox Layout
 
@@ -78,7 +78,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Flex Model Articles
 
@@ -197,7 +197,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Flexmodel ABC Game
 
@@ -316,7 +316,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Flexmodel Calendar
 
@@ -450,7 +450,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Navigation Flex
 
@@ -545,7 +545,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Photo Gallery Flexbox
 
@@ -637,7 +637,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Blog Layout Flexbox
 
@@ -728,7 +728,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Sticky Footer Flexbox
 
@@ -820,7 +820,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Center Flexbox
 
@@ -895,7 +895,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Expanding Flex Cards
 
@@ -975,7 +975,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Cards with CSS Columns and Flexbox
 

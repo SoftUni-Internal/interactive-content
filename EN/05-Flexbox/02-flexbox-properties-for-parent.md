@@ -1,6 +1,6 @@
 # Properties for the Parent
 
-[slide]
+[slide hideTitle]
 
 ## Flexbox container
 
@@ -30,7 +30,7 @@ By doing this, the child elements will be turned into flexbox **items**.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 ## Display inline-flex
 
@@ -40,8 +40,8 @@ By doing this, the child elements will be turned into flexbox **items**.
 
 The element shares properties of both an inline and a flexbox element:
 
-* **inline** because the element behaves like **simple text**, and inserts itself in a **block** of text;
-* **flexbox** because its child elements will be turned into **flexbox** items.
+* **inline** because the element behaves like **simple text**, and inserts itself in a **block** of text
+* **flexbox** because its child elements will be turned into **flexbox** items
 
 [vimeo-video]
 [stream language="EN" videoId="431762796" default /]
@@ -49,7 +49,7 @@ The element shares properties of both an inline and a flexbox element:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 ## Flex-direction
 
@@ -58,13 +58,13 @@ The element shares properties of both an inline and a flexbox element:
 [/video-vimeo]
 
 By working with flexbox we have two axes: 
-* the main axis;
-* the cross axis.
+* the main axis
+* the cross axis
 
 The `flex-direction` property sets how flex items are placed in the flex container defining the main axis and the direction (normal or reversed).
 
 The `flex-direction` property has the following values:
-* `row`- The flexbox  items are ordered the **same way** as the text direction, along the main axis;
+* `row`- The flexbox  items are ordered the **same way** as the text direction, along the main axis
 
 **Example** for `flex-direction: row;`
 
@@ -82,7 +82,7 @@ The `flex-direction` property has the following values:
 [stream language="EN" videoId="431762940" default /]
 [/video-vimeo]
 
-* `row-reverse` - The flexbox items are ordered the **opposite** way as the **text direction**, along the main axis;
+* `row-reverse` - The flexbox items are ordered the **opposite** way as the **text direction**, along the main axis
 
 **Example** for `flex-direction: row-reverse;`
 
@@ -100,7 +100,7 @@ The `flex-direction` property has the following values:
 [stream language="EN" videoId="431762995" default /]
 [/video-vimeo]
 
-* `column` - The flexbox items are ordered the **same way** as the text direction, along the cross axis;
+* `column` - The flexbox items are ordered the **same way** as the text direction, along the cross axis
 
 **Example** for `flex-direction: column;`
 
@@ -118,7 +118,7 @@ The `flex-direction` property has the following values:
 [stream language="EN" videoId="431763067" default /]
 [/video-vimeo]
 
-* `column-reverse` - The flexbox items are ordered the **opposite** way as the **text direction**, along the cross axis.
+* `column-reverse` - The flexbox items are ordered the **opposite** way as the **text direction**, along the cross axis
 
 
 **Example** for `flex-direction: column-reverse;`
@@ -135,7 +135,7 @@ The `flex-direction` property has the following values:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 ## Flex-wrap
 
@@ -197,7 +197,7 @@ The `flex-direction` property has the following values:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 ## Flex-flow Shorthand
 
@@ -223,7 +223,7 @@ The default value is `row nowrap`.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 ## Justify-content
 
@@ -316,7 +316,7 @@ The default value is `row nowrap`.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 ## Align-items
 
@@ -407,7 +407,7 @@ This is the **default** value.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 ## Align-content
 
@@ -421,12 +421,12 @@ This property is similar to `align-items`, but instead of aligning flex items, *
 
 It only applies if `flex-wrap: wrap;` **is present**, and if there are **multiple lines** of flexbox items.
 
-* `stretch` - **Default** value. Lines stretch to take up the **remaining** space;
-* `center` - Lines are packed toward the **center** of the flex container;
-* `flex-start` - Lines are packed toward the **start** of the flex container;
-* `flex-end` - Lines are packed toward the **end** of the flex container;
-* `space-between` - Lines are **evenly** distributed in the flex container between the elements;
-* `space-around` - Lines are **evenly** distributed in the flex container, with **half-size** spaces on either end.
+* `stretch` - **Default** value. Lines stretch to take up the **remaining** space
+* `center` - Lines are packed toward the **center** of the flex container
+* `flex-start` - Lines are packed toward the **start** of the flex container
+* `flex-end` - Lines are packed toward the **end** of the flex container
+* `space-between` - Lines are **evenly** distributed in the flex container between the elements
+* `space-around` - Lines are **evenly** distributed in the flex container, with **half-size** spaces on either end
 
 **Example:**
 

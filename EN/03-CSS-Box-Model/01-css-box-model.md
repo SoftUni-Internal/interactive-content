@@ -1,6 +1,6 @@
 # CSS Box Model
 
-[slide]
+[slide hideTitle]
 
 # What is CSS Box Model?
 
@@ -16,10 +16,10 @@ All HTML elements can be considered as boxes.
 The term **"box model"** is used when talking about design and layout.
 
 CSS box model consists of: 
-* **margins** - It clears an area **outside** the border. The margin is transparent;
-* **borders** - A border that goes **around** the padding and content;
-* **padding** - It clears an area **between** the content and border. The padding is transparent;
-* **content** - the **content** of the box (text, imgs, etc.).
+* **margins** - It clears an area **outside** the border. The margin is transparent
+* **borders** - A border that goes **around** the padding and content
+* **padding** - It clears an area **between** the content and border. The padding is transparent
+* **content** - the **content** of the box (text, imgs, etc.)
 
 **Example:**
 ```html
