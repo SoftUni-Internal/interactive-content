@@ -121,7 +121,7 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Write an arrow function that receives an **array containing three elements** and calculates the result depending on the specified operator. 
+Write an arrow function that receives an **array containing three elements** (two numbers and a string) and calculates the result depending on the specified operator. 
 
 The operator could only be one of the following: "**multiply**", "**divide**", "**add**", and "**subtract**".
 
@@ -130,15 +130,15 @@ The operator could only be one of the following: "**multiply**", "**divide**", "
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-| simpleCalculator(['5', '5', 'multiply']) | 25 |
-| simpleCalculator(['40', '8', 'divide']) | 5 |
-| simpleCalculator(['12', '19', 'add']) | 31 |
+| simpleCalculator([5, 5, 'multiply']) | 25 |
+| simpleCalculator([40, 8, 'divide']) | 5 |
+| simpleCalculator([12, 19, 'add']) | 31 |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-simpleCalculator(['5', '5', 'multiply'])
+simpleCalculator([5, 5, 'multiply'])
 [/input]
 [output]
 25
@@ -146,7 +146,7 @@ simpleCalculator(['5', '5', 'multiply'])
 [/test]
 [test open]
 [input]
-simpleCalculator(['40', '8', 'divide'])
+simpleCalculator([40, 8, 'divide'])
 [/input]
 [output]
 5
@@ -154,7 +154,7 @@ simpleCalculator(['40', '8', 'divide'])
 [/test]
 [test open]
 [input]
-simpleCalculator(['12', '19', 'add'])
+simpleCalculator([12, 19, 'add'])
 [/input]
 [output]
 31
@@ -162,7 +162,7 @@ simpleCalculator(['12', '19', 'add'])
 [/test]
 [test]
 [input]
-simpleCalculator(['1', '15', 'multiply'])
+simpleCalculator([1, 15, 'multiply'])
 [/input]
 [output]
 15
@@ -170,7 +170,7 @@ simpleCalculator(['1', '15', 'multiply'])
 [/test]
 [test]
 [input]
-simpleCalculator(['61', '2', 'divide'])
+simpleCalculator([61, 2, 'divide'])
 [/input]
 [output]
 30.5
@@ -178,7 +178,7 @@ simpleCalculator(['61', '2', 'divide'])
 [/test]
 [test]
 [input]
-simpleCalculator(['2', '18', 'add'])
+simpleCalculator([2, 18, 'add'])
 [/input]
 [output]
 20
@@ -186,7 +186,7 @@ simpleCalculator(['2', '18', 'add'])
 [/test]
 [test]
 [input]
-simpleCalculator(['186', '121', 'subtract'])
+simpleCalculator([186, 121, 'subtract'])
 [/input]
 [output]
 65
@@ -194,7 +194,7 @@ simpleCalculator(['186', '121', 'subtract'])
 [/test]
 [test]
 [input]
-simpleCalculator(['2', '35', 'multiply'])
+simpleCalculator([2, 35, 'multiply'])
 [/input]
 [output]
 70
@@ -202,7 +202,7 @@ simpleCalculator(['2', '35', 'multiply'])
 [/test]
 [test]
 [input]
-simpleCalculator(['12', '2', 'divide'])
+simpleCalculator([12, 2, 'divide'])
 [/input]
 [output]
 6
@@ -210,7 +210,7 @@ simpleCalculator(['12', '2', 'divide'])
 [/test]
 [test]
 [input]
-simpleCalculator(['115', '338', 'add'])
+simpleCalculator([115, 338, 'add'])
 [/input]
 [output]
 453
@@ -218,7 +218,7 @@ simpleCalculator(['115', '338', 'add'])
 [/test]
 [test]
 [input]
-simpleCalculator(['46', '521', 'subtract'])
+simpleCalculator([46, 521, 'subtract'])
 [/input]
 [output]
 \-475
