@@ -2,7 +2,7 @@
 
 # Restaurant
 
-[code-task title="Problem: Restaurant" taskId="Html-Css-Exam-Restaurant" executionType="tests-execution" executionStrategy="html-and-css-zip-file" requiresInput="false"]
+[code-task title="Restaurant" taskId="Html-Css-Exam-Restaurant" executionType="tests-execution" executionStrategy="html-and-css-zip-file" requiresInput="false"]
 
 [code-upload allowedMemory="30" /]
 

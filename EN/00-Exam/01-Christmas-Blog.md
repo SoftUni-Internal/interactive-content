@@ -2,6 +2,12 @@
 
 # Christmas Blog
 
+[code-task title="Christmas-Blog" taskId="html-css-exam-christmas-blog" executionType="tests-execution" executionStrategy="html-and-css-zip-file" requiresInput="false"]
+
+[code-upload allowedMemory="30" /]
+
+[task-description]
+
 Download the resources from [here](https://videos.softuni.org/resources/HTML-CSS/Final-Exam/02-Christmas-Blog/Resources.zip)
 
 ## Tasks
@@ -19,4 +25,20 @@ Download the resources from [here](https://videos.softuni.org/resources/HTML-CSS
 * Pixel-perfect implementation is **NOT required**
 * The site should open correctly in the latest version of Chrome
  
+[/task-description]
+
+[tests]
+[test open]
+[input]
+let title = (document.title);
+expect(title).to.be.equal('Semantic Tags', "Incorrect title name.")
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[/tests]
+[/code-task]
+
+
  [/slide]

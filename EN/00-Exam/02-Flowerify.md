@@ -2,6 +2,12 @@
 
 # Flowerify
 
+[code-task title="Flowerify" taskId="html-css-exam-flowerify" executionType="tests-execution" executionStrategy="html-and-css-zip-file" requiresInput="false"]
+
+[code-upload allowedMemory="30" /]
+
+[task-description]
+
 Download resources from [here](https://videos.softuni.org/resources/HTML-CSS/Final-Exam/03-Flowerify/03-Flowerify.zip)
 
 Create a web page (**HTML5 + CSS3 + images**) that looks and behaves like the screenshots below:
@@ -24,6 +30,20 @@ The output should be valid HTML + CSS + images that implement the above web page
 - Pixel-perfect implementation is **NOT** required
 - You are **NOT** permitted to use libraries like Bootstrap
 
+[/task-description]
+
+[tests]
+[test open]
+[input]
+let title = (document.title);
+expect(title).to.be.equal('Semantic Tags', "Incorrect title name.")
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[/tests]
+[/code-task]
 
  
 [/slide]
