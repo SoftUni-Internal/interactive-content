@@ -116,7 +116,7 @@ Promise.allSettled([firstPromise, secondPromise]).then((data) => {
 });
 ```
 
-- `Promise.race(iterable)` - Takes an array of promises and after the first one is either **resolved** or **rejected**.
+- `Promise.race(iterable)` - Takes an array of promises and after the first one is either **resolved** or **rejected**
 
 This method returns a Promise object that resolves or rejects with its value
 
