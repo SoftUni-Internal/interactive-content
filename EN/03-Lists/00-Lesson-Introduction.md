@@ -1,32 +1,38 @@
-[slide]
 # Lesson Introduction
+[slide hideTitle]
+# Lesson Content
 
 TODO: Add Video
 
 ## In this lesson you will learn about:
 
-**1. Lists**
+**1. Lists Overview and Manipulations**
 
-- What are "Lists" 
+- What lists are
 
-- How we use them?
+- How lists are used and why we need them
 
-- Why we use them?
+- Adding elements
 
-**2. List Manipulations**
+- Removing elements
+
+- Modifying elements
+
+- Finding elements
+
+
+**2. Reading and Printing Lists**
 
 - Reading lists from the console
 
 - Reading lists from a single line
 
-- Printing lists on the console
+- Printing lists to the console
 
-**3. Sorting Lists and Arrays**
+**3. Sorting Lists**
 
-- Sorting lists overview and syntax
+- Sorting operations on lists 
 
-- String.join command
-
-**4. Live Exercises**
+- The **String.join()** method
 
 [/slide]
