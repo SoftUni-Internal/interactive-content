@@ -1,8 +1,10 @@
 # Generic Methods
 
-[slide]
+[slide hideTitle]
 
 # Generic Methods
+
+TODO: Add a video or remove this section.
 
 Generic methods are those methods that are written with a **single method declaration** and can be called with **arguments of different types**. 
 
@@ -11,11 +13,12 @@ The **compiler will ensure the correctness** of whichever type is used.
 The main features of the generic methods are:
 
 - Generic methods have a **type parameter** (the diamond operator enclosing the type) before the return type of the method declaration
-- Type parameters can be **bounded** (bounds are explained later in the article)
+- Type parameters can be **bounded** (bounds are explained later in the lesson)
 - Generic methods can have **different** type parameters separated by commas in the method signature
 - Method body for a generic method is just like a normal method
 
-Let's see the following example:
+Let us see the following example:
+
 ```java live no-template
 public class Main {
 
@@ -37,7 +40,7 @@ In the example above, we have a `genericPrinter(T element)` which have a generic
 
 The `genericPrinter(T element)` can be called with arguments of different types, `Integer`, `String`, `Double` etc.
 
-We don't need explicitly specify type while calling the method,  **Java compiler** is smart enough to determine the type of variable to be used, this facility is called **type inference**. 
+We do not need to **explicitly specify** a type while calling the method, **Java compiler** is smart enough to determine the type of variable to be used, this feature is called **type inference**. 
 
 
 [/slide]
