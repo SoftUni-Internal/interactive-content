@@ -542,7 +542,6 @@ Create a program, which prints a sequence of numbers up to a given input, based 
 | sequence(8) | 1 |
 ||3|
 || 7|
-|| |
 | sequence(16) | 1 |
 || 3 |
 || 7 |
