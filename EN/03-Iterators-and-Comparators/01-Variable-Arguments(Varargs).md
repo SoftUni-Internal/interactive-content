@@ -1,10 +1,10 @@
-# Variable Arguments(Varargs)
+# Variable Arguments
 
-[slide]
+[slide hideTitle]
 
-# Variable Arguments(Varargs)
+# Variable Arguments (Varargs)
 
-Let’s suppose you are creating a Java method. 
+Let us suppose you are creating a Java method. 
 
 However, you are not sure **how many arguments** your method is going to accept. 
 
@@ -12,11 +12,11 @@ To overcome this problem, **Java 5 introduced varargs**.
 
 **Varargs** stands for **variable arguments**.
 
-The varags allow the method to accept **zero** or **multiple** arguments.
+The varargs allow the method to accept **zero** or **multiple** arguments.
 
-Let's see the following example:
+Let us see the following example:
 
-```java live no-template
+```java live
 public class Main {
     static void display(String... values) {
         int numberOfArgs = values.length;
@@ -31,24 +31,19 @@ public class Main {
 }
 ```
 
-In the example above, the method named `display()` accepts varargs (of type String).
+In the example above, the method named `display()` accepts varargs of type String.
 
 The `values` variable is implicitly declared as an array of type String.
 
-Thus, inside the method, `values` variable is accessed using the array syntax.
+Therefore, inside the method, the `values` variable is accessed using the array syntax.
 
 As you can see, we are invoking this method multiple times by passing a **different number of arguments** each time we invoke it.
-
-
-
-
-
 
 [/slide]
 
 
 
-[slide]
+[slide hideTitle]
 
 # Variable Arguments Rules
 
@@ -85,9 +80,9 @@ void method(String a, int... b){
 
 [/slide]
 
-[slide]
-# Problem: Book
-[code-task title="Problem: Book" taskId="cdedc934-0f7f-4660-8528-3d810204be23" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[slide hideTitle]
+# Problem with Solution: Book
+[code-task title="Book" taskId="oop-basics-java-iterators-and-comparators-lab-Book" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -101,7 +96,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a class Book from UML diagram below:
+Create a `Book` class from the UML diagram below:
 
 | Book |
 | ---- |
@@ -116,12 +111,11 @@ Create a class Book from UML diagram below:
 |+ getAuthors(): List/<String/> |
 
 
-
-You can use only one constructor. 
+You can use only **one constructor**. 
 
 There can be **no authors**, **one author** or **many authors**. 
 
-## Examples
+## Example
 
 Use the code below to test your **Book** class.
 ```java
@@ -272,85 +266,4 @@ Test Passed!
 [/test]
 [/tests]
 [/code-task]
-[/slide]
-
-[slide]
-
-# Solution: Book 
-
-The **Book** class should look like this:
-
-```java
-public class Book {
-    private String title;
-    private int year;
-    private List<String> authors;
-
-    public Book(String title, int year, String... authors) {
-        this.title = title;
-        this.year = year;
-        this.authors = new ArrayList<>();
-
-        if (authors.length != 0) {
-            this.authors.addAll(Arrays.asList(authors));
-        }
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public int getYear() {
-        return year;
-    }
-
-    public void setYear(int year) {
-        this.year = year;
-    }
-
-    public List<String> getAuthors() {
-        return authors;
-    }
-
-    public void setAuthors(List<String> authors) {
-        this.authors = authors;
-    }
-}
-
-
-```
-
-[/slide]
-
-[slide]
-
-# Nested Classes
-
-In Java, it is also possible to **nest classes** (a class within a class).
-
-The purpose of nested classes is to **group classes that belong together**, which makes the code more maintainable.
-
-
-- Example of Nested Class:
-```java live no-template
-class OuterClass {
-    int x = 10;
-
-    class InnerClass {
-        int y = 5;
-    }
-
-    public static void main(String[] args) {
-        OuterClass myOuter = new OuterClass();
-        OuterClass.InnerClass myInner = myOuter.new InnerClass();
-        System.out.println(myInner.y + myOuter.x);
-    }
-}
-``` 
-
-
 [/slide]
