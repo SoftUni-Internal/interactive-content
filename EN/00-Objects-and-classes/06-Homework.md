@@ -69,7 +69,7 @@ Name\: Amanda \-\- Personal Number\: 6
 [/test]
 [test]
 [input]
-employees('Samuel Jackson', 'Will Smith', 'Bruce Willis', 'Tom Holland')
+employees(['Samuel Jackson', 'Will Smith', 'Bruce Willis', 'Tom Holland'])
 [/input]
 [output]
 Name\: Samuel Jackson \-\- Personal Number\: 14
