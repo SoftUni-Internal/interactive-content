@@ -9,7 +9,7 @@
 [stream language="RO" videoId="497656935/bfde3ae27b"  /]
 [/video-vimeo]
 
-[code-task title="Problem: Mu Online" taskId="js-fundamentals-examPreparation-Mu-Online" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Mu Online" taskId="js-fundamentals-examPreparation-Mu-Online" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function muOnline(input) {
