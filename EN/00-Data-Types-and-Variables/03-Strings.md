@@ -93,9 +93,15 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Create a program, which: 
-- Receives two names as string parameters and a delimiter
-- Prints the names joined by the delimiter
+Create a program, which receives three parameters:
+
+- **First name** - a string
+
+- **Last name** - a string
+
+- **Delimiter** - a string
+
+Your task is to print the first name and the last name, joined by the delimiter.
 
 # Example
 | **Input** | **Output** |
@@ -206,9 +212,9 @@ You will receive 3 parameters: **string**, **character**, **string**.
 
 The first string will be a word with a **missing character** replaced with an underscore "**_**".
 
-You have to **replace** the character with the missing part (underscore) from the first string and **compare** the result with the second string.
+Your task is to **replace** the underscore ("**_**") with the given **character** and **compare** the result to the second string.
 
-If they are equal you should print "**Matched**", otherwise print "**Not Matched**".
+If the strings are equal, you should print "**Matched**", otherwise print "**Not Matched**".
 
 
 # Example

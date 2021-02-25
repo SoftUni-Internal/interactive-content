@@ -7,7 +7,7 @@
 
 Numbers in JavaScript do not have a separate type for **integers** and **floating point numbers.**
 
-We have a type that is `number`.
+We have a type that is **number**.
 
 The largest number we can store is `2^54 +-1`.
 
@@ -95,9 +95,9 @@ function adapter(input, code) {
 
 You will receive **three numbers**. 
 
-Your task is to find their **sum** and print it to the console with an addition:
+Your task is to find their **sum** and print the result to the console with an addition:
 
-"\{**number**} - **Integer or Float**"
+"\{**number**\} - **Integer or Float**"
 
 
 # Example

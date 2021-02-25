@@ -22,13 +22,13 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Create a program which as input will receive 3 parameters (strings)
+Create a program that **receives three parameters** (strings) as an input:
 
-- The First string is the name of the band
+- The First string is the **name of the band**
 
-- The Second string is the name of the album
+- The Second string is the **name of the album**
 
-- The third is holding a song name from the album
+- The third is the **song name from the album**
 
 You have to find out how many **times** the plate will rotate the given song from the album.
 
@@ -135,23 +135,23 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Create a program which calculates how much **money** for fuel will be needed to drive а bus from one place to another.
+Create a program that calculates how much **money** for fuel will be needed to drive а bus from one place to another.
 
 Consider the following:
 
-- Calculate **the fuel** by knowing that **an empty bus** can pass 100 km with 7L diesel.
+- Calculate **the fuel** by knowing that **an empty bus** can pass 100 km with 7L diesel
 
-- **One person** in that bus excluding the driver increases fuel consumption by **100 milliliters.**
+- **One person** in that bus excluding the driver increases fuel consumption by **100 milliliters**
 
-- The **money** is calculated by **multiplying** the **fuel price** by the needed fuel for the trip.
+- The **money** is calculated by **multiplying** the **fuel price** by the needed fuel for the trip
 
-As **input** you will receive **3 parameters**:
+As **input** you will receive **three parameters**:
 
-- **Distance** the bus must travel
+- The **distance** the bus must travel
 
-- **Passengers** in it 
+- The number of **passengers** in the bus
 
-- **Price** for **1 liter of diesel**
+- The **price** for **1 liter of diesel**
 
 As output you should print this message:
 
@@ -281,7 +281,7 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Create a program that receives a number of centuries, and converts it to years, days, hours, and minutes.
+Create a program that receives a number, representing centuries, and converts it to **years**, **days**, **hours**, and **minutes**.
 
 Print the output in the following format: 
 
@@ -380,9 +380,9 @@ function adapter(input, code) {
 # Description
 Create a program that receives a number **n**. 
 
-For all numbers in the range **1...n**, print the number and whether it is special or not.
+For all numbers in the range **1...n**, print the current number and whether it is special or not.
 
-A number is special when the sum of its digits is **5, 7, or 11.**
+A number is special when the **sum of its digits** is equals to **5, 7, or 11.**
 
 # Example
   | **Input** | **Output** |
@@ -397,7 +397,7 @@ A number is special when the sum of its digits is **5, 7, or 11.**
 
 To calculate the sum of digits of a given number, you might repeat the following:
 
-- sum the last digit `num % 10` and remove it `sum = sum / 10` until num reaches **0**. 
+- sum the last digit `num % 10` and remove it `sum = sum / 10` until num reaches **0**
 
 Use `parseInt()` while dividing to get only integer numbers.
 
@@ -558,7 +558,9 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program that receives a **number** **n** and prints all triples of the first n small Latin letters, ordered alphabetically.
+
+Create a program that receives a **number n** and prints all triples of the first **n** small Latin letters ordered alphabetically.
+
 # Example
   | **Input** | **Output** |
 | --- | --- |
@@ -1101,8 +1103,8 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program which will be given a single **number**. 
-Your task is to find the sum of its digits.
+
+Create a program that receives a **number** and find the sum of its digits.
 
 # Example
   | **Input** | **Output** |
@@ -1227,7 +1229,8 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program that takes **3 parameters** (characters) and prints them in **reversed order** with a space between them.
+
+Create a program that receives **three parameters** (characters) and prints them in **reversed order** with a space between them.
 
 # Example
 | **Input** | **Output** |
@@ -1340,13 +1343,13 @@ function adapter(input, code) {
 
 Create a program that receives **three string parameters:** 
 
-- **number**
+- **Number**
 
-- **operator**: \+, \-, \*, \\, \%
+- **Operator**: \+, \-, \*, \\, \%
 
-- **another number**
+- **Another number**
 
-Print the **result of the calculation** to the console formatted to the **second decimal point.**
+Your task is to **perform a calculation** using the given **operator** and **print** the result, formatted to the **second decimal point.**
 
 # Example
 | **Input** | **Output** |

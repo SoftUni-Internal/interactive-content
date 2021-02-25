@@ -179,15 +179,15 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Create a program which as input will receive a **number.**
- 
-Check and print whether it is **amazing** or not into the following format:
+Create a program that receives a **number** as an input, and prints whether that number is **amazing** or **not**.
+
+An **amazing** number is one that includes the **number 9** in the sum of its digits.
+
+Print the result into the following format:
 
 "\{**number**\} **Amazing?** \{**result**\}"
 
-An **amazing** number is one that includes the **digit 9** in the sum of its digits.
-
-Examples for amazing numbers are: 
+Examples of amazing numbers are: 
 
 - 1233 (1 + 2 + 3 + 3 = 9)
 
