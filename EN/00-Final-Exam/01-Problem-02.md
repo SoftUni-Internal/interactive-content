@@ -6,7 +6,7 @@
 [code-task title="Food Supply" taskId="js-fundamentals-2-finalExam-Food-Supply" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function soodSupply(input) {
+function foodSupply(input) {
     // Write your code here
 }
 ```
@@ -69,7 +69,7 @@ Calculate **the total calories of all food items** from the string, and then
 
 | **Input** | **Output** |
 | --- | --- |
-|soodSupply(['\#Bread#19\/03\/21\#4000\#\|Invalid\|03\/03\.20\|\|Apples\|08\/10\/20\|200\|\|Carrots\|06\/08\/20\|500\|\|Not right\|6\.8\.20\|5\|'])|You have enough food for 2 days\!|
+|foodSupply('\#Bread#19\/03\/21\#4000\#\|Invalid\|03\/03\.20\|\|Apples\|08\/10\/20\|200\|\|Carrots\|06\/08\/20\|500\|\|Not right\|6\.8\.20\|5\|')|You have enough food for 2 days\!|
 ||Item: Bread, Best before: 19\/03\/21, Nutrition: 4000|
 ||Item: Apples, Best before: 08\/10\/20, Nutrition: 200|
 ||Item: Carrots, Best before: 06\/08\/20, Nutrition: 500|
@@ -93,7 +93,7 @@ We print each item.
 
 | **Input** | **Output** |
 | --- | --- |
-|soodSupply(['\$\$\#\@\@\%\^\&\#Fish\#24\/12\/20\#8500\#\|\#Incorrect\#19\.03\.20\#450\|\$5\*\(\@\!\#Ice Cream\#03\/10\/21\#9000\#\^\#\@aswe\|Milk\|05\/09\/20\|2000\|']|You have enough food for 9 days\!|
+|foodSupply('\$\$\#\@\@\%\^\&\#Fish\#24\/12\/20\#8500\#\|\#Incorrect\#19\.03\.20\#450\|\$5\*\(\@\!\#Ice Cream\#03\/10\/21\#9000\#\^\#\@aswe\|Milk\|05\/09\/20\|2000\|')|You have enough food for 9 days\!|
 ||Item: Fish, Best before: 24\/12\/20, Nutrition: 8500|
 ||Item: Ice Cream, Best before: 03\/10\/21, Nutrition: 9000|
 ||Item: Milk, Best before: 05\/09\/20, Nutrition: 2000|
@@ -113,7 +113,7 @@ The total calories are 8500 + 9000 + 2000 = 19500, which means you have food for
 
 | **Input** | **Output** |
 | --- | --- |
-|soodSupply(['Hello\|\#Invalid food\#19/03/20\#450\|\$5\*\(\@'])|You have enough food for 0 days\!|
+|foodSupply('Hello\|\#Invalid food\#19/03/20\#450\|\$5\*\(\@')|You have enough food for 0 days\!|
 
 
 **Comments**
@@ -127,7 +127,7 @@ This text "\#Invalid food\#19/03/20\#450" is not a match, since it does not have
 [tests]
 [test open]
 [input]
-\#Bread\#19/03/21\#4000\#\|Invalid\|03/03.20\|\|Apples\|08/10/20\|200\|\|Carrots\|06/08/20\|500\|\|Not right\|6.8.20\|5\|
+foodSupply('\#Bread\#19/03/21\#4000\#\|Invalid\|03/03.20\|\|Apples\|08/10/20\|200\|\|Carrots\|06/08/20\|500\|\|Not right\|6.8.20\|5\|')
 [/input]
 [output]
 You have enough food for 2 days\!
@@ -138,7 +138,7 @@ Item: Carrots, Best before: 06\/08\/20, Nutrition\: 500
 [/test]
 [test open]
 [input]
-\\$\\$\#\@\@\%\^\&\#Fish\#24/12/20\#8500\#\|\#Incorrect\#19.03.20\#450\|\\$5\*(@!\#Ice Cream\#03/10/21\#9000\#^\#@aswe\|Milk\|05/09/20\|2000\|
+foodSupply('\\$\\$\#\@\@\%\^\&\#Fish\#24/12/20\#8500\#\|\#Incorrect\#19.03.20\#450\|\\$5\*(@!\#Ice Cream\#03/10/21\#9000\#^\#@aswe\|Milk\|05/09/20\|2000\|')
 [/input]
 [output]
 You have enough food for 9 days\!
@@ -149,7 +149,7 @@ Item: Milk, Best before: 05\/09\/20, Nutrition\: 2000
 [/test]
 [test]
 [input]
-\\$\\$\#\@\@\%\^\&\#Fish\#24\/12\/20\#8500\#\|\#Incorrect\#19\.03\.20\#450\|\\$5\*\(\@\!\#Ice Cream\#03/10/21\#9000\#\^\#\@aswe\|Milk\|05/09/20\|2000\|\\$\\$\#\@\@\%\^\&\#Fish\#24/12/20\#8500\#\|\#Incorrect\#19\.03\.20\#450\|\\$5\*\(\@\!\#Ice Cream\#03\/10\/21\#9000\#\^\#\@aswe\|Milk\|05/09/20\|2000\|
+foodSupply('\\$\\$\#\@\@\%\^\&\#Fish\#24\/12\/20\#8500\#\|\#Incorrect\#19\.03\.20\#450\|\\$5\*\(\@\!\#Ice Cream\#03/10/21\#9000\#\^\#\@aswe\|Milk\|05/09/20\|2000\|\\$\\$\#\@\@\%\^\&\#Fish\#24/12/20\#8500\#\|\#Incorrect\#19\.03\.20\#450\|\\$5\*\(\@\!\#Ice Cream\#03\/10\/21\#9000\#\^\#\@aswe\|Milk\|05/09/20\|2000\|')
 [/input]
 [output]
 You have enough food for 19 days\!
@@ -163,7 +163,7 @@ Item: Milk, Best before: 05\/09\/20, Nutrition\: 2000
 [/test]
 [test]
 [input]
-\\$\\$\#\@\@\%\^\&\#Fish\#24/12/20\#1000\#\|Incorrect\#19.03.20\#450\|\\$5\*(@!\#Ice Cream\#03/10/21\#1000\#^\#\@aswe\|Milk\|05/09/20\|1000\|\\$\\$\#\@\@\%\^\&\#Fish\#24/12/20\#1000\#\|\#Incorrect\#19.03.20\#450\|\\$5\*\(\@\!\#Ice Cream\#03/10/21\#1000\#\^\#Incorr\#Lettuce\#24\/06\/20\#1000\#
+foodSupply('\\$\\$\#\@\@\%\^\&\#Fish\#24/12/20\#1000\#\|Incorrect\#19.03.20\#450\|\\$5\*(@!\#Ice Cream\#03/10/21\#1000\#^\#\@aswe\|Milk\|05/09/20\|1000\|\\$\\$\#\@\@\%\^\&\#Fish\#24/12/20\#1000\#\|\#Incorrect\#19.03.20\#450\|\\$5\*\(\@\!\#Ice Cream\#03/10/21\#1000\#\^\#Incorr\#Lettuce\#24\/06\/20\#1000\#')
 [/input]
 [output]
 You have enough food for 3 days\!
@@ -177,7 +177,7 @@ Item: Lettuce, Best before\: 24\/06\/20, Nutrition\: 1000
 [/test]
 [test]
 [input]
-\#Fish\#24/12/20\#1000\#\|Milk\|05/09/20\|1000\|\#Fish\#24/12/20\#1000\#\|\#Ice Cream\#03/10/21\#1000\#\#Lettuce\#24/06/20\#1000\#
+foodSupply('\#Fish\#24/12/20\#1000\#\|Milk\|05/09/20\|1000\|\#Fish\#24/12/20\#1000\#\|\#Ice Cream\#03/10/21\#1000\#\#Lettuce\#24/06/20\#1000\#')
 [/input]
 [output]
 You have enough food for 2 days\!
@@ -190,7 +190,7 @@ Item: Lettuce, Best before\: 24\/06\/20, Nutrition\: 1000
 [/test]
 [test]
 [input]
-\|Fish\#24/12/20\#1000\|\#Milk\#05/09/20\#1000\|\|Fis\|24/12/20\|1000\#\|Ice Cream\#03/10/21\#1000\#\#Lettuce\/24\/06\/20\#1000\#
+foodSupply('\|Fish\#24/12/20\#1000\|\#Milk\#05/09/20\#1000\|\|Fis\|24/12/20\|1000\#\|Ice Cream\#03/10/21\#1000\#\#Lettuce\/24\/06\/20\#1000\#')
 [/input]
 [output]
 You have enough food for 0 days\!
@@ -198,7 +198,7 @@ You have enough food for 0 days\!
 [/test]
 [test]
 [input]
-\|Fish\#24/12/20\|1000\|
+foodSupply('\|Fish\#24/12/20\|1000\|')
 [/input]
 [output]
 You have enough food for 0 days\!
@@ -206,7 +206,7 @@ You have enough food for 0 days\!
 [/test]
 [test]
 [input]
-\|Fish\|24/12/20\|1000\|\|Fish\|24/12/20\|1000\|\|Fish\|24/12/20\|1000\|\|\|24/12/20\|1000\|\|Fish\|24/12/2\|1000\|\|Fish\|24/12/20\|\|
+foodSupply('\|Fish\|24/12/20\|1000\|\|Fish\|24/12/20\|1000\|\|Fish\|24/12/20\|1000\|\|\|24/12/20\|1000\|\|Fish\|24/12/2\|1000\|\|Fish\|24/12/20\|\|')
 [/input]
 [output]
 You have enough food for 1 days\!

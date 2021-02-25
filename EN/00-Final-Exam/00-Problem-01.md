@@ -5,7 +5,7 @@
 [code-task title="Trip" taskId="js-fundamentals-2-finalExam-Trip" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function trip(input) {
+function trip(travelDestinations, commands) {
 	// Write your code here
 }
 ```
@@ -62,10 +62,10 @@ After receiving the "**Travel**" command, print the following message:
 
 | **Input** | **Output** |
 | --- | --- |
-|trip(['Hawaii:Cyprys-Greece', 'Add Stop:7:Rome', 'Remove Stop:11:16', 'Switch:Hawaii:Bulgaria', 'Travel'])|Hawaii:RomeCyprys-Greece|
-||Hawaii:Rome-Greece|
-||Bulgaria:Rome-Greece|
-||Ready for a world tour! Planned stops: Bulgaria:Rome-Greece|
+|trip('Hawai::Cyprys-Greece', ['Add Stop:7:Rome', 'Remove Stop:11:16', 'Switch:Hawai:Bulgaria', 'Travel'])|Hawai::RomeCyprys-Greece|
+||Hawai::Rome-Greece|
+||Bulgaria::Rome-Greece|
+||Ready for a world tour! Planned stops: Bulgaria::Rome-Greece|
 
 
 [/task-description]
@@ -73,24 +73,18 @@ After receiving the "**Travel**" command, print the following message:
 [tests]
 [test open]
 [input]
-Hawaii\:\:Cyprys\-Greece
-Add Stop\:7\:Rome
-Remove Stop\:11\:16
-Switch\:Hawaii\:Bulgaria
-Travel
+trip('Hawai\:\:Cyprys\-Greece', ['Add Stop\:7\:Rome', 'Remove Stop\:11\:16', 'Switch\:Hawai\:Bulgaria', 'Travel'])
 [/input]
 [output]
-Hawaii\:\:RomeCyprys\-Greece
-Hawaii\:\:Rome\-Greece
+Hawai\:\:RomeCyprys\-Greece
+Hawai\:\:Rome\-Greece
 Bulgaria\:\:Rome\-Greece
 Ready for a world tour\! Planned stops\: Bulgaria\:\:Rome\-Greece
 [/output]
 [/test]
 [test]
 [input]
-A:B:C
-Add Stop:0:D
-Travel
+trip('A:B:C', ['Add Stop:0:D', 'Travel'])
 [/input]
 [output]
 DA:B:C
@@ -99,9 +93,7 @@ Ready for a world tour! Planned stops: DA:B:C
 [/test]
 [test]
 [input]
-A:B:C
-Remove Stop:4:4
-Travel
+trip('A:B:C', ['Remove Stop:4:4', 'Travel'])
 [/input]
 [output]
 A:B:
@@ -110,9 +102,7 @@ Ready for a world tour! Planned stops: A:B:
 [/test]
 [test]
 [input]
-A:B:C
-Switch:B:D
-Travel
+trip('A:B:C', ['Switch:B:D', 'Travel'])
 [/input]
 [output]
 A:D:C
@@ -121,10 +111,7 @@ Ready for a world tour! Planned stops: A:D:C
 [/test]
 [test]
 [input]
-A:B:C:D
-Add Stop:6:F
-Remove Stop:7:7
-Travel
+trip('A:B:C:D', ['Add Stop:6:F', 'Remove Stop:7:7', 'Travel'])
 [/input]
 [output]
 A:B:C:FD
@@ -134,11 +121,7 @@ Ready for a world tour! Planned stops: A:B:C:F
 [/test]
 [test]
 [input]
-A:B:C:D
-Remove Stop:0:1
-Remove Stop:9:10
-Switch:C:F
-Travel
+trip('A:B:C:D', ['Remove Stop:0:1', 'Remove Stop:9:10', 'Switch:C:F', 'Travel'])
 [/input]
 [output]
 B:C:D
@@ -149,11 +132,7 @@ Ready for a world tour! Planned stops: B:F:D
 [/test]
 [test]
 [input]
-A:B:C:D
-Add Stop:3:N
-Remove Stop:4:8
-Switch:A:AA
-Travel
+trip('A:B:C:D', ['Add Stop:3:N', 'Remove Stop:4:8', 'Switch:A:AA', 'Travel'])
 [/input]
 [output]
 A:BN:C:D
