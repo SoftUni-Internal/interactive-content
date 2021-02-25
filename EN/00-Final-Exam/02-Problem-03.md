@@ -66,7 +66,7 @@ If the **piece is not in the collection**, print:
 
 Upon receiving the "**Stop**" command, you need to print all pieces in the collection, sorted by **their name and by the name of their composer in alphabetical order**, in the following format: 
 
-\{**Piece**\} \-\> **Composer:** \{**composer**\}, **Key:** \{**key**\}
+\{**piece**\} \-\> **composer:** \{**composer**\}, **Key:** \{**key**\}
 
 ## Input
 

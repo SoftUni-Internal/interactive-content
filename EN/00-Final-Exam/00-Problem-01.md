@@ -28,7 +28,7 @@ So, they have asked you to help them organize their trip by creating a program t
 
 You will be given a string containing the initial list of **travel destinations.**
 
-Afterward, you will receive **commands**, which represent changes to the travel plan, until you receive the command `Travel`.
+Afterward, you will receive **commands**, which represent changes to the travel plan, until you receive the command "**Travel**".
 
 The commands may be:
 
