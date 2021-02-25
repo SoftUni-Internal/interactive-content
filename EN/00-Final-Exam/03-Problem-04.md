@@ -25,7 +25,7 @@ function adapter(input, code) {
 # Description
 Annie has two pets - a dog and a cat. 
 
-Create a function that compiles **statistics** on pet food for a certain number of days. 
+Create a program, which compiles **statistics** on pet food for a certain number of days. 
 
 Every day the dog and the cat eat a **different amount** of their preferred food. 
 
@@ -33,7 +33,7 @@ Every **third day they receive a prize** - cookies.
 
 The amount of cookies is **10%** of the total food eaten for the day.
 
-Your function should print **statistics about the amount of cookies they ate**.
+Your program should print **statistics about the amount of cookies they ate**.
 
 - What **percentage** of total food they ate.
 
@@ -61,13 +61,13 @@ Total amount of food: a number in the range \[0.00…10000.00\]
 
 Print four lines on the console:
 
-- `Total eaten biscuits: {amount of biscuits eaten}gr.`
+- **Total eaten biscuits:** \{**amount of biscuits eaten**\}**gr.**
 
-- `{percentage of food eaten}% of the food has been eaten.`
+- \{**percentage of food eaten**\}**% of the food has been eaten.**
 
-- `{percentage of food eaten by the dog}% eaten from the dog.`
+- \{**percentage of food eaten by the dog**\}**% eaten from the dog.**
 
-- `{percentage of food eaten by the cat}% eaten from the cat.`
+- \{**percentage of food eaten by the cat**\}**% eaten from the cat.**
 
 The amount of **cookies eaten must be rounded to the nearest whole number.**
 
@@ -77,6 +77,10 @@ The percentage of food **must be formatted to the second digit after the decimal
 
 | **Input** | **Output** |
 | --- | --- |
+|foodForPets([3, 500, 100, 30, 110, 25, 120, 35]) | Total eaten biscuits: 16gr.|
+|| 84.00% of the food has been eaten. |
+|| 78.57% eaten from the dog. |
+|| 21.43% eaten from the cat. |
 |foodForPets([3, 1000, 300, 20, 100, 30, 110, 40]) | Total eaten biscuits: 15gr. |
 || 60.00% of the food has been eaten. |
 || 85.00% eaten from the dog. |
@@ -92,11 +96,11 @@ We have **3 days** and a total amount of food: **1000 grams.**
 
 **On the second day:**
 
-- The dog eats 100 gramsg, the cat eats 30 grams
+- The dog eats 100 grams, the cat eats 30 grams
 
 **On the third day:**
 
-- The dog eats 110 gramsg, the cat eats 40 grams
+- The dog eats 110 grams, the cat eats 40 grams
 
 On this day they should also **receive a prize - cookies:**
 
@@ -115,15 +119,6 @@ On this day they should also **receive a prize - cookies:**
 510g of 600g = 85\% was eaten by the dog.
 
 90g of 600g = 15\% was eaten by the cat.
-
-## Example
-
-| **Input** | **Output** |
-| --- | --- |
-|foodForPets([3, 500, 100, 30, 110, 25, 120, 35]) | Total eaten biscuits: 16gr.|
-|| 84.00% of the food has been eaten. |
-|| 78.57% eaten from the dog. |
-|| 21.43% eaten from the cat. |
 
 [/task-description]
 [code-io /]
