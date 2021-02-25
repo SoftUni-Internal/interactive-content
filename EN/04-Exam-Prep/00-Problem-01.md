@@ -62,15 +62,19 @@ If it does not, print "**Nothing to replace!**"
 
 ## Examples One
 
-|**Input**|**Output**|
-|---|---|
-|passwordReset('Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr',
-['TakeOdd', 'Cut 15 3', 'Substitute :: -', 'Substitute \| \^', 'Done'])|icecream\:\:hot\:\:summer|
-||icecream\:\:hot\:\:mer|
-||icecream\-hot\-mer|
-||Nothing to replace!|
-||Your password is: icecream\-hot\-mer|
+**Input**
+passwordReset('Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr', ['TakeOdd', 'Cut 15 3', 'Substitute :: -', 'Substitute \| \^', 'Done'])
 
+**Output**
+icecream\:\:hot\:\:summer
+
+icecream\:\:hot\:\:mer
+
+icecream\-hot\-mer
+
+Nothing to replace!
+
+Your password is: icecream\-hot\-mer
 
 **Comments**
 
@@ -105,14 +109,19 @@ Finally, after receiving the "**Done**" command, we print the resulting password
 
 ## Examples Two
 
-|**Input**|**Output**|
-|---|---|
-|passwordReset('up8rgoyg3r1atmlmpiunagt!-irs7!1fgulnnnqy',
-['TakeOdd', 'Cut 18 2', 'Substitute ! \*\*\*', 'Substitute ? .!.', 'Done'])|programming!is!funny|
-||programming!is!fun|
-||programming\*\*\*is\*\*\*fun|
-||Nothing to replace!|
-||Your password is: programming\*\*\*is\*\*\*fun|
+**Input**
+passwordReset('up8rgoyg3r1atmlmpiunagt!-irs7!1fgulnnnqy', ['TakeOdd', 'Cut 18 2', 'Substitute ! \*\*\*', 'Substitute ? .!.', 'Done'])
+
+**Output**
+programming!is!funny
+
+programming!is!fun
+
+programming\*\*\*is\*\*\*fun
+
+Nothing to replace!
+
+Your password is: programming\*\*\*is\*\*\*fun
 
 [/task-description]
 [code-io /]
