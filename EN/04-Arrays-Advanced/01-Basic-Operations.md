@@ -101,10 +101,12 @@ console.log(number);
 
 [code-task title="Sum First Last" taskId="fundamentals-js-arrays-advanced-lab-Sum-First-Last" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
+
 ```
 function sumFirstLast(input){
   // Write your code here
 }
+
 ```
 [/code-editor]
 [code-adapter]
@@ -249,7 +251,7 @@ It also returns the **new length** of the array.
 [code-task title="Negative or Positive Numbers" taskId="fundamentals-js-arrays-advanced-lab-Negative-or-Positive-Numbers"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function negativePositive(arr){
+function negativePositive(input){
   // Write your code here
 }
 
