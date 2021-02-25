@@ -630,7 +630,7 @@ Theodor
 Harrison
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 sort(['test', 'Deny', 'omen', 'Default'])
 [/input]
