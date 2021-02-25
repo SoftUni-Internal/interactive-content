@@ -5,7 +5,6 @@
 
 # Problem with Solution: Guess the Password
 
-[video src="https://videos.softuni.org/hls/javascript-basics/02.Conditions/EN/problem1-Guess-the-Password-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Guess the Password" taskId="pb-js-Conditions-Guess-The-Password" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -69,7 +68,7 @@ Wrong password!
 [/tests]
 [code-io /]
 [/code-task]
-
+[video src="https://videos.softuni.org/hls/javascript-basics/02.Conditions/EN/problem1-Guess-the-Password-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 [/slide]
 
 [slide hideTitle]
