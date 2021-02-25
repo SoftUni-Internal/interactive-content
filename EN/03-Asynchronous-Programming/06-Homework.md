@@ -71,7 +71,7 @@ Use the following codes for weather symbols:
 
 When the app starts, the **forecast div** is **hidden**. 
 
-When the user **enters a name** and **clicks** on the button **Get Weather**, the requests being.
+When the user **enters a name** and **clicks** on the button **Get Weather**, the request is sent.
 
 [image assetsSrc="JS-Applications-Asynchronous-Programming-Homework-1.jpg" /]
 
