@@ -33,7 +33,6 @@ for (int i = 0; i < n; i++) {
 
 [slide hideTitle]
 # Reading from a Single Line
-[/slide]
 
 
 You can read a list as a single line from the console.
