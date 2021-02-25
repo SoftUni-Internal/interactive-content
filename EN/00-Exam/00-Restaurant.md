@@ -2,6 +2,12 @@
 
 # Restaurant
 
+[code-task title="Problem: Restaurant" taskId="Html-Css-Exam-Restaurant" executionType="tests-execution" executionStrategy="html-and-css-zip-file" requiresInput="false"]
+
+[code-upload allowedMemory="30" /]
+
+[task-description]
+
 ## Description
 
 Download the resources from [here](https://videos.softuni.org/resources/HTML-CSS/Final-Exam/Exam-Resources.zip)
@@ -15,5 +21,8 @@ Download the resources from [here](https://videos.softuni.org/resources/HTML-CSS
 * The web page should open correctly in the latest version of Chrome
 * Pixel-perfect implementation is **NOT** required
 
+[/task-description]
+
+[/code-task]
 
 [/slide]
