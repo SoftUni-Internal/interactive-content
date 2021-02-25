@@ -133,16 +133,16 @@ Latitude and longitude must be parsed to numbers and formatted to the second dec
 # Example
 | **Input** | **Output** |
 | --- | --- |
-| towns(['Bucuresti | 42.696552 | 23.32601','Beijing | 39.913818 | 116.363625']) |`{ town: 'Bucuresti', latitude: '42.70', longitude: '23.33' }` |
+| towns(['Bucuresti \| 42.696552 \| 23.32601','Beijing \| 39.913818 \| 116.363625']) | `{ town: 'Bucuresti', latitude: '42.70', longitude: '23.33' }` |
 | | `{ town: 'Beijing', latitude: '39.91', longitude: '116.36' }` |
-| towns(['Barcelona | 41.390205 | 2.154007', 'Paris |	48.864716 | 2.349014']) | `{ town: 'Barcelona', latitude: '41.40', longitude: '2.15' }` |
+| towns(['Barcelona \| 41.390205 \| 2.154007', 'Paris \|	48.864716 \| 2.349014']) | `{ town: 'Barcelona', latitude: '41.40', longitude: '2.15' }` |
 || `{ town: 'Paris', latitude: '48.86', longitude: '2.35' }`
 
 [/task-description]
 [tests]
 [test]
 [input]
-towns(['jdk | 156.45 | 12.5645', 'hjk | 32.556 | 134.824', 'io | 87.65 | 14.929', 'op | 44.76 | 184.28'])
+towns(['jdk \| 156.45 \| 12.5645', 'hjk \| 32.556 \| 134.824', 'io \| 87.65 \| 14.929', 'op \| 44.76 \| 184.28'])
 [/input]
 [output]
 \{ town: 'jdk', latitude: '156.45', longitude: '12.56' \}
@@ -153,7 +153,7 @@ towns(['jdk | 156.45 | 12.5645', 'hjk | 32.556 | 134.824', 'io | 87.65 | 14.929'
 [/test]
 [test]
 [input]
-towns(['jj | 156.45 | 12.575', 'yu | 65.65 | 64.919', 'i | 12.76 | 184.28'])
+towns(['jj \| 156.45 \| 12.575', 'yu \| 65.65 \| 64.919', 'i \| 12.76 \| 184.28'])
 [/input]
 [output]
 \{ town: 'jj', latitude: '156.45', longitude: '12.57' \}
@@ -163,7 +163,7 @@ towns(['jj | 156.45 | 12.575', 'yu | 65.65 | 64.919', 'i | 12.76 | 184.28'])
 [/test]
 [test]
 [input]
-towns(['a | 156.45 | 12.575', 'b | 1.65 | 64.8919', 'c | 45.786 | 184.128', 'd | 9.745 | 1684.28', 'e | 12.676 | 1814.28'])
+towns(['a \| 156.45 \| 12.575', 'b \| 1.65 \| 64.8919', 'c \| 45.786 \| 184.128', 'd \| 9.745 \| 1684.28', 'e \| 12.676 \| 1814.28'])
 [/input]
 [output]
 \{ town: 'a', latitude: '156.45', longitude: '12.57' \}
@@ -175,7 +175,7 @@ towns(['a | 156.45 | 12.575', 'b | 1.65 | 64.8919', 'c | 45.786 | 184.128', 'd |
 [/test]
 [test]
 [input]
-towns(['a | 136.45 | 12.575', 'k | 1.65 | 564.19', 'l | 99.545 | 1684.18', 'e | 112.66 | 1814.28'])
+towns(['a \| 136.45 \| 12.575', 'k \| 1.65 \| 564.19', 'l \| 99.545 \| 1684.18', 'e \| 112.66 \| 1814.28'])
 [/input]
 [output]
 \{ town: 'a', latitude: '136.45', longitude: '12.57' \}
@@ -186,7 +186,7 @@ towns(['a | 136.45 | 12.575', 'k | 1.65 | 564.19', 'l | 99.545 | 1684.18', 'e | 
 [/test]
 [test]
 [input]
-towns(['a | 136.45 | 812.575'])
+towns(['a \| 136.45 \| 812.575'])
 [/input]
 [output]
 \{ town: 'a', latitude: '136.45', longitude: '812.58' \}
