@@ -141,16 +141,17 @@ for (let key in person) {
 [code-task title="Person Info" taskId="JS-fundamentals-2-Objects-and-Classes-lab-Person-Info" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function personInfo(input){
+function personInfo(firstName, lastName, age){
   // Write your code here
 }
 ```
 [/code-editor]
 [code-adapter]
 ```
-(i, c) => {
-    const {firstName, lastName, age} = c(i[0], i[1], Number(i[2]));
-    return [`firstName: ${firstName}`, `lastName: ${lastName}`, `age: ${age}`].join('\n');
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
@@ -159,20 +160,19 @@ function personInfo(input){
 
 Write a function that receives **three elements**, sets them to an **object** and **returns** the created object.
 
-The input comes as 3 separate **strings** in the following order: `firstName`, `lastName`, `age`.
+The input comes as 3 separate **strings** in the following order: **firstName**, **lastName**, **age**.
 
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|'Peter','Pan','20'| \{firstName: 'Peter', lastName: 'Pan', age: '20'\} |
+| personInfo('Peter','Pan','20') | \{firstName: 'Peter', lastName: 'Pan', age: '20'\} |
+| personInfo('Kellie', 'Ellison', '33') | \{firstName: 'Kellie', lastName: 'Ellison', age: '33'\} |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-Peter
-Pan
-20
+personInfo('Peter', 'Pan', '20')
 [/input]
 [output]
 firstName: Peter
@@ -182,9 +182,7 @@ age: 20
 [/test]
 [test]
 [input]
-Johny
-Tony
-15
+personInfo('Johny', 'Tony', '15')
 [/input]
 [output]
 firstName: Johny
@@ -194,9 +192,7 @@ age: 15
 [/test]
 [test]
 [input]
-A
-b
-2
+personInfo('A', 'b', '2')
 [/input]
 [output]
 firstName: A
@@ -206,9 +202,7 @@ age: 2
 [/test]
 [test]
 [input]
-CC
-BB
-50
+personInfo('CC', 'BB', '50')
 [/input]
 [output]
 firstName: CC
@@ -218,9 +212,7 @@ age: 50
 [/test]
 [test]
 [input]
-Z
-X
-41
+personInfo('Z', 'X', '41')
 [/input]
 [output]
 firstName: Z
@@ -230,9 +222,7 @@ age: 41
 [/test]
 [test]
 [input]
-JO
-PA
-22
+personInfo('JO', 'PA', '22')
 [/input]
 [output]
 firstName: JO
@@ -261,10 +251,11 @@ function city(input){
 [/code-editor]
 [code-adapter]
 ```
-(i, c) => {
-    const result = c(i[0], Number(i[1]), Number(i[2]), i[3], Number(i[4]));
-    if (typeof result != 'object') { return 'You must return an object!'; }
-    const {name, area, population, county, postCode} = result;
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
 ```
 [/code-adapter]
 [task-description]
@@ -276,7 +267,7 @@ Create a city **object** which will hold a **city's name**, **area**, **populati
 
 Loop through all the keys and print them with their values in this format:
 
-`{key} -> {value}`
+\{**key**\} **->** \{**value**\}
 
 The input will be in the following order: **name**, **area**, **population**, **country** and **postcode**.
 
@@ -286,21 +277,22 @@ For more information, see the examples below.
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['Bucharest', '228', '1830000', 'Romania', '010082']`| name \-\> Bucharest |
+| city(['Bucharest', '228', '1830000', 'Romania', '010082'])| name \-\> Bucharest |
 ||area \-\> 228|
 ||population \-\> 1830000|
 ||country \-\> Romania|
 ||postCode \-\> 010082|
+| city(['London', '1572', '9000000', 'England', '533537'])| name \-\> London |
+||area \-\> 1572|
+||population \-\> 9000000|
+||country \-\> England|
+||postCode \-\> 533537|
 
 [/task-description]
 [tests]
 [test open]
 [input]
-Bucharest
-228
-1830000
-Romania
-010082
+city(['Bucharest', '228', '1830000', 'Romania', '010082'])
 [/input]
 [output]
 name -> Bucharest
@@ -312,11 +304,7 @@ postCode -> 010082
 [/test]
 [test]
 [input]
-hnn
-1848
-354645
-mklmlk
-1561
+city(['hnn', '1848', '354645', 'mklmlk', '1561'])
 [/input]
 [output]
 name -> hnn
@@ -328,11 +316,7 @@ postCode -> 1561
 [/test]
 [test]
 [input]
-ii
-44
-189
-jiji
-484
+city(['ii', '44', '189', 'jiji', '484'])
 [/input]
 [output]
 name -> ii
@@ -340,48 +324,6 @@ area -> 44
 population -> 189
 country -> jiji
 postCode -> 484
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide hideTitle]
-# Problem: Person Greeting (new JS strategy)
-
-[code-task title="Person Greeting" taskId="js-fundamentals-2-person-greeting" executionType="tests-execution" executionStrategy="javascript-function" requiresInput]
-[code-editor language=javascript]
-
-
-```
-function greeting(firstName, lastName, age) {
-  console.log(`Hello, {firstName} {lastName}. You are {age} years old.`);
-}
-```
-
-[/code-editor]
-[task-description]
-# Description
-
-Students are given to **write a function** with certain **name** and **input parameters**, e.g.:
-
-
-# Example
-  | **Input** | **Output** |
-| --- | --- |
-| greeting('Peter', 'Pan', '20') | Hello, Peter Pan. You are 20 years old. |
-| --- | --- |
-
-[/task-description]
-[tests]
-[test]
-[input]
-greeting('Peter', 'Pan', '20')
-[/input]
-[output]
-Hello, Peter Pan. You are 20 years old.
 [/output]
 [/test]
 [/tests]

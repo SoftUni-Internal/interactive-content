@@ -110,22 +110,33 @@ function cats(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 
-Write a function that receives array of strings in the following format `{cat name} {age}`.
+Write a function that receives array of strings in the following format "\{**cat name**\} \{**age**\}".
 
 Create a Cat class that receives in the constructor the name and the age parsed from the input. 
 
-It should also have a function named `meow` that will print `{cat name}, age {age} says Meow` on the console.
+It should also have a function named **meow** that will print "\{**cat name**\}**, age** \{**age**\} **says Meow**" to the console.
 
 For each of the strings provided you must create a cat object.
 
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['Mellow 2', 'Tom 5']`| Mellow, age 2 says Meow|
+|cats(['Mellow 2', 'Tom 5'])| Mellow, age 2 says Meow|
 ||Tom, age 5 says Meow|
+|cats(['Millie 3', 'Lola 7'])| Millie, age 3 says Meow|
+||Lola, age 7 says Meow|
 
 # Hints
 
@@ -142,8 +153,7 @@ For each of the strings provided you must create a cat object.
 [tests]
 [test]
 [input]
-jsakd 45
-dasd 12
+cats(['jsakd 45', 'dasd 12'])
 [/input]
 [output]
 jsakd, age 45 says Meow
@@ -152,11 +162,7 @@ dasd, age 12 says Meow
 [/test]
 [test]
 [input]
-jsakd 45
-gyug 11
-vtv 2
-vv 1
-huuh 9
+cats(['jsakd 45', 'gyug 11', 'vtv 2', 'vv 1', 'huuh 9'])
 [/input]
 [output]
 jsakd, age 45 says Meow
@@ -168,10 +174,7 @@ huuh, age 9 says Meow
 [/test]
 [test]
 [input]
-jsakd 5
-huh 2
-f 1
-huuh 9
+cats(['jsakd 5', 'huh 2', 'f 1', 'huuh 9'])
 [/input]
 [output]
 jsakd, age 5 says Meow

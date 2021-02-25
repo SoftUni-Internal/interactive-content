@@ -101,27 +101,39 @@ function convertToObject(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a function that receives a string in JSON format and converts it to an object.
 
 Loop through all the keys and print them with their values in format:
 
-`{key}: {value}`
+\{**key**\}**:** \{**value**\}
 
 
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`{"name": "George", "age": 40, "town": "Berlin"}`| name: George |
+| convertToObject({"name": "George", "age": 40, "town": "Berlin"}) | name: George |
 ||age: 40|
 ||town: Berlin|
+| convertToObject({"name": "Rafael", "age": 27, "town": "Madrid"}) | name: Rafael |
+||age: 27|
+||town: Madrid|
 
 [/task-description]
 [tests]
 [test]
 [input]
-\{"hui"\: "byue", "cty"\: 26, "byu"\: "ctuct"\}
+convertToObject({"hui": "byue", "cty": 26, "byu": "ctuct"})
 [/input]
 [output]
 hui\: byue
@@ -131,7 +143,7 @@ byu\: ctuct
 [/test]
 [test]
 [input]
-\{"hui"\: 156, "cty"\: {"dsad"\: "dsadaf"}, "byu"\: "ctuct"\}
+convertToObject({"hui": 156, "cty": {"dsad": "dsadaf"}, "byu": "ctuct"})
 [/input]
 [output]
 hui\: 156
@@ -141,7 +153,7 @@ byu\: ctuct
 [/test]
 [test]
 [input]
-\{"name"\: "George", "age"\: 40, "town"\: "Sofia"\}
+convertToObject({"name": "George", "age": 40, "town": "Sofia"})
 [/input]
 [output]
 name\: George
@@ -162,32 +174,41 @@ town\: Sofia
 [code-task title="Convert to JSON" taskId="JS-fundamentals-2-Objects-and-Classes-lab-Convert-to-JSON" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function convertToJSON(input){
+function convertToJSON(name, lastName, hairColor){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a function that receives three strings and sets them to an **object**.
 
-The strings are `name`, `lastName`, and `hairColor`.
+The strings are **name**, **lastName**, and **hairColor**.
 
 Convert the object to a JSON string and print it.
 
-Input is provided as 3 single strings in the order stated above.
+The input is provided as 3 single strings in the order stated above.
+
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['George','Jones','Brown']`| `{"name":"George", "lastName":"Jones", "hairColor":"Brown"}`|
+| convertToJSON('George', 'Jones', 'Brown') | `{"name":"George", "lastName":"Jones", "hairColor":"Brown"}`|
+| convertToJSON('Thomas', 'Muller', 'Blonde') | `{"name":"Thomas", "lastName":"Muller", "hairColor":"Blonde"}`|
 
 [/task-description]
 [tests]
 [test]
 [input]
-George
-Jones
-Brown
+convertToJSON('George', 'Jones', 'Brown')
 [/input]
 [output]
 \{"name"\:"George","lastName"\:"Jones","hairColor"\:"Brown"\}
@@ -195,9 +216,7 @@ Brown
 [/test]
 [test]
 [input]
-rtdrt
-xxer
-aweaw
+convertToJSON('rtdrt', 'xxer', 'aweaw')
 [/input]
 [output]
 \{"name"\:"rtdrt","lastName"\:"xxer","hairColor"\:"aweaw"\}
@@ -205,9 +224,7 @@ aweaw
 [/test]
 [test]
 [input]
-Ivan
-njnnjk
-14178
+convertToJSON('Ivan', 'njnnjk', '14178')
 [/input]
 [output]
 \{"name"\:"Ivan","lastName"\:"njnnjk","hairColor"\:"14178"\}
