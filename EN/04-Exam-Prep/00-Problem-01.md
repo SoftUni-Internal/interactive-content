@@ -64,7 +64,8 @@ If it does not, print "**Nothing to replace!**"
 
 |**Input**|**Output**|
 |---|---|
-|passwordReset('Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr', ['TakeOdd', 'Cut 15 3', 'Substitute :: -', 'Substitute \| \^', 'Done'])|icecream\:\:hot\:\:summer|
+|passwordReset('Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr',
+['TakeOdd', 'Cut 15 3', 'Substitute :: -', 'Substitute \| \^', 'Done'])|icecream\:\:hot\:\:summer|
 ||icecream\:\:hot\:\:mer|
 ||icecream\-hot\-mer|
 ||Nothing to replace!|
@@ -106,7 +107,8 @@ Finally, after receiving the "**Done**" command, we print the resulting password
 
 |**Input**|**Output**|
 |---|---|
-|passwordReset('up8rgoyg3r1atmlmpiunagt!-irs7!1fgulnnnqy', ['TakeOdd', 'Cut 18 2', 'Substitute ! \*\*\*', 'Substitute ? .!.', 'Done'])|programming!is!funny|
+|passwordReset('up8rgoyg3r1atmlmpiunagt!-irs7!1fgulnnnqy',
+['TakeOdd', 'Cut 18 2', 'Substitute ! \*\*\*', 'Substitute ? .!.', 'Done'])|programming!is!funny|
 ||programming!is!fun|
 ||programming\*\*\*is\*\*\*fun|
 ||Nothing to replace!|
@@ -117,7 +119,7 @@ Finally, after receiving the "**Done**" command, we print the resulting password
 [tests]
 [test open]
 [input]
-passwordReset('Siiceercaroetavm!\:\?\:ahsott\.\:i\:nstupmomceqr', ['TakeOdd', 'Cut 15 3', 'Substitute \:\: \-', 'Substitute \| \^', 'Done']
+passwordReset('Siiceercaroetavm!\:\?\:ahsott\.\:i\:nstupmomceqr', ['TakeOdd', 'Cut 15 3', 'Substitute \:\: \-', 'Substitute \| \^', 'Done'])
 [/input]
 [output]
 icecream\:\:hot\:\:summer
@@ -180,7 +182,7 @@ Your password is: ydf
 [/test]
 [test]
 [input]
-passwordReset('abcdefg' ['TakeOdd', 'Substitute z y', 'Done'])
+passwordReset('abcdefg', ['TakeOdd', 'Substitute z y', 'Done'])
 [/input]
 [output]
 bdf
