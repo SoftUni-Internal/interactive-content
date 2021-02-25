@@ -40,7 +40,7 @@ public class PowerOfThree<T extends Number>  {
     }
 }
 ```
-Let us explain what does the code above:
+Let us explain what the code does.
 
 The type parameter `T` extends Number to restrict the type of objects that can be used in the parameterized type.
 
