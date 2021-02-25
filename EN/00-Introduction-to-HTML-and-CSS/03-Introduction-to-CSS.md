@@ -20,7 +20,7 @@ For example, if we want to change the color of the text to green and position th
 <br/><br/>
 [/slide]
 
-[slide]
+[slide hideTitle]
 # CSS Syntax
 
 [vimeo-video]
@@ -143,7 +143,7 @@ h1.headings {
 In the example above, all `<h1>` elements with class `headings` will be affected.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Pseudo-classes
 
 [vimeo-video]

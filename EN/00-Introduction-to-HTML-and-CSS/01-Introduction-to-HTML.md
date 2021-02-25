@@ -134,9 +134,8 @@ There can be only one `<body>` element in a document.
 [/slide]
 
 [slide hideTitle]
-# Indentation and Whitespace
 
-## What is whitespace?
+# What is Whitespace?
 
 [vimeo-video]
 [stream language="EN" videoId="431748168" default /]
@@ -149,7 +148,7 @@ These characters allow us to **format our code** in a way that will make it easi
 
 Much of our source code is full of whitespace characters, and we tend to remove them in a production build step to reduce code download sizes.
 
-## HTML ignores whitespace
+## HTML Ignores Whitespace
 
 In the case of HTML, whitespace is largely **ignored** - whitespace in between words is treated as a single character, and whitespace at the start and end of elements and outside elements is ignored. 
 
@@ -188,7 +187,7 @@ The web would probably not be as popular as it is today if it had been more stri
 
 However, this can still be a **problem**.
 
-## HTML validation
+## HTML Validation
 
 You want to make sure your HTML is **well-formed**! 
 
