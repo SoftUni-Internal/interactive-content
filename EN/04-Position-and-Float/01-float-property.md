@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# What is float?
+# What is Float?
 
 [vimeo-video]
 [stream language="EN" videoId="431760758" default /]
@@ -29,7 +29,7 @@ The values of the float property are:
 
 [slide hideTitle]
 
-# Float examples
+# Float Examples
 
 [vimeo-video]
 [stream language="EN" videoId="431760812" default /]
