@@ -81,21 +81,20 @@ Upon receiving the "**Stop**" command, you need to print all pieces in the c
 
 * All the output messages and the appropriate formats are described in the problem description
 
-## Examples
-
 ## Examples One
 
-| **Input** | **Output** |
-| --- | --- |
-|thePianist(3, ['Fur Elise\|Beethoven\|A Minor', 'Moonlight Sonata\|Beethoven\|C\# Minor', 'Clair de Lune\|Debussy\|C\# Minor', 'Add\|Sonata No.2\|Chopin\|B Minor', 'Add\|Hungarian Rhapsody No.2\|Liszt\|C\# Minor', 'Add\|Fur Elise\|Beethoven\|C# Minor', 'Remove\|Clair de Lune', 'ChangeKey\|Moonlight Sonata\|C\# Major', 'Stop'])|Sonata No.2 by Chopin in B Minor added to the collection!|
-||Hungarian Rhapsody No.2 by Liszt in C# Minor added to the collection!|
-||Fur Elise is already in the collection!|
-||Successfully removed Clair de Lune!|
-||Changed the key of Moonlight Sonata to C\# Major!|
-||Fur Elise \-\> Composer: Beethoven, Key: A Minor|
-||Hungarian Rhapsody No.2 \-\> Composer: Liszt, Key: C\# Minor|
-||Moonlight Sonata \-\> Composer: Beethoven, Key: C\# Major|
-||Sonata No.2 \-\> Composer: Chopin, Key: B Minor|
+**Input**
+thePianist(3, ['Fur Elise\|Beethoven\|A Minor', 'Moonlight Sonata\|Beethoven\|C\# Minor', 'Clair de Lune\|Debussy\|C\# Minor', 'Add\|Sonata No.2\|Chopin\|B Minor', 'Add\|Hungarian Rhapsody No.2\|Liszt\|C\# Minor', 'Add\|Fur Elise\|Beethoven\|C# Minor', 'Remove\|Clair de Lune', 'ChangeKey\|Moonlight Sonata\|C\# Major', 'Stop'])|Sonata No.2 by Chopin in B Minor added to the collection!
+
+**Output**
+Hungarian Rhapsody No.2 by Liszt in C# Minor added to the collection!
+Fur Elise is already in the collection!|
+Successfully removed Clair de Lune!|
+Changed the key of Moonlight Sonata to C\# Major!
+Fur Elise \-\> Composer: Beethoven, Key: A Minor
+Hungarian Rhapsody No.2 \-\> Composer: Liszt, Key: C\# Minor
+Moonlight Sonata \-\> Composer: Beethoven, Key: C\# Major
+Sonata No.2 \-\> Composer: Chopin, Key: B Minor
 
 
 **Comments**
@@ -133,7 +132,7 @@ Next, you receive the "**Stop**" command, you **print the information abou
 [tests]
 [test open]
 [input]
-thePianist(3, ['Fur Elise\|Beethoven\|A Minor', 'Moonlight Sonata\|Beethoven\|C\# Minor', 'Clair de Lune\|Debussy\|C\# Minor', 'Add\|Sonata No.2\|Chopin\|B Minor', 'Add\|Hungarian Rhapsody No\.2\|Liszt\|C\# Minor', 'Add\|Fur Elise\|Beethoven\|C\# Minor', 'Remove\|Clair de Lune', 'ChangeKey\|Moonlight Sonata\|C\# Major', 'Stop'])
+thePianist(3, ['Fur Elise|Beethoven|A Minor', 'Moonlight Sonata|Beethoven|C# Minor', 'Clair de Lune|Debussy|C# Minor', 'Add|Sonata No.2|Chopin|B Minor', 'Add|Hungarian Rhapsody No.2|Liszt|C# Minor', 'Add|Fur Elise|Beethoven|C# Minor', 'Remove|Clair de Lune', 'ChangeKey|Moonlight Sonata|C# Major', 'Stop',])
 [/input]
 [output]
 Sonata No\.2 by Chopin in B Minor added to the collection\!
