@@ -271,7 +271,7 @@ Write a function called `sum()` to get the sum of the first two integers and a `
 ## Example
 | **Input** | **Output** |
 | --- | --- |
-| addSubtract(23, 6, 10) | 29 |
+| addSubtract(23, 6, 10) | 19 |
 | addSubtract(1, 17, 30) | \-12 |
 | addSubtract(42, 58, 100) | 0 |
 
