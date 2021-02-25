@@ -1,22 +1,22 @@
 # Generic Classes and Interfaces
 
-[slide]
+[slide hideTitle]
 
 # Generic Classes
 
-We can define our own classes with generics type.
+We can define our **classes** as a **generic type**.
 
 A generic type is a class or interface that is parameterized over types.
 
 In the generic class declarations, the name of the class is followed by the type parameter section. 
 
-The type parameter, also known as the type variable, is an identifier used to specify a generic type name. 
+The **type parameter**, also known as the type variable, is an identifier used to specify a generic type name. 
 
 The type parameter section of the generic class can include one or more type parameters that are separated by commas. 
 
 These classes are also known as parameterized classes.
 
-In the following example, we have a generic class Container which accepts one type parameter:
+In the following example, we have a generic class `Container` that accepts one type parameter:
 
 ```java
 public class Container<T> {
@@ -33,12 +33,12 @@ public class Container<T> {
 }
 ```
 
-Multiple Type Parameters Example:
+Тhis example illustrates a class with multiple parameters:
 
 ```java
-public class Container<K,V> {
+public class Container<K, V> {
 
-    private HashMap<K,V> items;
+    private HashMap<K, V> items;
 
     public void addItem(K key, V value) {
         this.items.put(key,value);
@@ -51,9 +51,35 @@ public class Container<K,V> {
 ```
 [/slide]
 
-[slide]
-# Problem: Jar of T
-[code-task title="Problem: Jar of T" taskId="11709b5a-e400-4da9-8b47-1cb8af706312" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[slide hideTitle]
+
+# Type Parameter Scope
+
+The type parameter can be used **anywhere inside the declaring class**.
+
+**Example:**
+
+```java
+class List<T> {
+    public void add(T element) {
+        this.items.add(item);
+    }
+
+    public T remove() {
+        // ...
+    }
+}
+```
+
+Here, the type parameter is used in the signature of the `add()` method.
+
+It is also used to describe the **return value** of `remove()`.
+
+[/slide]
+
+[slide hideTitle]
+# Problem with Solution: Jar of T
+[code-task title="Jar of T" taskId="oop-basics-java-generics-lab-" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -67,21 +93,35 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a class `Jar<>` that can store anything.
-It should have two public methods:
-- void add(element)
-- element remove()
-Adding should add on top of its contents. Remove should get the topmost element.
 
-## Examples
-[image assetsSrc="generics-example(1).png" /]
+Create a class `Jar` that can store anything.
+
+It should have two public methods:
+
+- `void add(element)`
+- `element remove()`
+
+`add()` should add on top of its contents.
+
+`remove()` should get the topmost element.
+
+# Example
+
+```java
+Jar<Pickle> jarOfPickles = new Jar<>();
+
+jarOfPickles.add(new Pickle());
+jarOfPickles.add(new Pickle());
+
+Pickle pickle = jarOfPickles.remove();
+```
 
 ## Submit
-To submit your solution, **zip** your whole package with the **Jar** and **Main classes**:
+To submit your solution, **zip** your whole package with the `Jar` and `Main` classes:
 
 [image assetsSrc="generics-example(2).png" /]
 
-If you didn't create **package** just choose your classes and **zip** them.
+If you did not create a **package**, just select your classes and **zip** them.
 
 [/task-description]
 [code-io /]
@@ -98,34 +138,34 @@ Test Passed!
 [/code-task]
 [/slide]
 
-[slide]
 
-# Solution: Jar of T
+[slide hideTitle]
+# Subclassing Generic Classes
 
-- Use the syntax `Jar<T>` to create a generic class:
+Generic classes can be **extended** to concrete classes.
+
+**Example:**
 
 ```java
-public class Jar<T> {
-  private Deque<T> content;
-  public Jar() { this.content = new ArrayDeque<>(); }
-
-  public void add(T entity) {
-    this.content.push(entity);
-  }
-  
-  public T remove() { return this.content.pop(); }
+class JarOfOlives extends Jar<Olive> {
+    // ...
 }
+
+JarOfOlives jar = new JarOfOlives();
+jar.add(new Olive());
+jar.add(new Vegetable()); // Error
 ```
+
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Generic Interfaces
 
-A generic Java interface is an interface which can be typed - meaning it can be specialized to work with a specific type (e.g. interface or class) when used.
+A **generic Java interface** is an interface which can be **typed** - meaning it can be specialized to work with a specific type (e.g. interface or class) when used.
 
-Generic interfaces are specified just like generic classes. 
+Generic interfaces are **specified just like generic classes**. 
 
-For example:
+**For example:**
 
 ```java
 public interface Mathematics<T extends Number> {
@@ -143,11 +183,11 @@ So, if we try to use another class which is **not a subclass of Number**, the co
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
-# Problem: Generic Array Creator
+# Problem with Solution: Generic Array Creator
 
-[code-task title="Problem: Generic Array Creator" taskId="8acb50c5-224b-4e83-b003-2663bdb70de8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Generic Array Creator" taskId="oop-basics-java-generics-lab-Generic-Array-Creator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -161,14 +201,21 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
+
 Create a class `ArrayCreator` with a method and a single overload to it:
-- static T[] create(int length, T item)
-- static T[] create(Class<T> class, int length, T item)
+
+- `static T[] create(int length, T item)`
+- `static T[] create(Class<T> class, int length, T item)`
+
 The method should return an array with the given length and every element should be set to the given default item.
 
 
-## Examples
-[image assetsSrc="generics-example(3).png" /]
+# Example
+
+```java
+String[] strings = ArrayCreator.create(10, "none");
+Integer[] integers = ArrayCreator.create(Integer.class, 10, 0);
+```
 
 [/task-description]
 [code-io /]
@@ -183,35 +230,5 @@ Test Passed!
 [/test]
 [/tests]
 [/code-task]
-
-[/slide]
-
-[slide]
-
-# Solution: Generic Array Creator
-
-```java
-public class ArrayCreator {
-
-    public static <T> T[] create(Class<T> cl,int length, T item) {
-
-        T[] array = (T[])Array.newInstance(cl,length);
-        for (int i = 0; i < array.length; i++) {
-            array[i] = item;
-        }
-        return array;
-    }
-
-    public static <T> T[] create(int length, T item) {
-
-        T[] array =(T[]) new Object[length];
-        for (int i = 0; i < array.length; i++) {
-            array[i] = item;
-        }
-        return array;
-    }
-}
-
-```
 [/slide]
 
