@@ -21,7 +21,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program that receives an array of strings, parses them to numbers, and sums only the even numbers.
+Create a program that receives an **array of strings**, parses them to **numbers**, and sums only the even numbers.
 
 # Example
 | **Input** | **Output** |
@@ -132,7 +132,7 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Create a program that calculates the difference between the sum of the even and the sum of the odd numbers in an array.
+Create a program that calculates the **difference** between the **sum of the even** and the **sum of the odd numbers** in an array.
 
 # Example
   | **Input** | **Output** |**Comments** |
@@ -528,11 +528,11 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Create a program that receives an **array** and the number of rotations you have to perform (the first element goes at the end).
+Create a program that receives an **array** and the **number of rotations** you have to perform (the first element goes at the end).
 
-The first element of the input is the array of numbers where you have to perform the rotations.
+- The **first element** of the input is **the array of numbers** where you have to perform the rotations
 
-The second element of the input is the number of rotations you have to perform.
+- The **second element** of the input is the **number of rotation**s you have to perform
 
 ## Output
 
@@ -654,7 +654,7 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Create a program, which prints all **unique** pairs is **an array of integers** whose **sum** is **equal** to a given number. 
+Create a program, which prints all **unique** pairs are **an array of integers** whose **sum** is **equal** to a given number. 
 
 &nbsp;
 

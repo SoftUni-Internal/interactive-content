@@ -241,7 +241,7 @@ reverse(['a', 'b', 'c', 'd', 'e'])
 e d c b a
 [/output]
 [/test]
-[test opne]
+[test open]
 [input]
 reverse(['abc', 'def', 'hig', 'klm', 'nop'])
 [/input]
