@@ -26,7 +26,7 @@ Annie finds a puppy to take care of until she finds someone to adopt it.
 
 It eats a certain amount of food daily.
 
-Create a function that checks if the **amount of food purchased for the puppy** will be enough **until the puppy is adopted.**
+Create a program, which checks if the **amount of food purchased for the puppy** will be enough **until the puppy is adopted.**
 
 ## Input
 
@@ -40,20 +40,22 @@ Purchased **amount of food for the puppy in kilograms**: an integer in the inter
 
 ## Output
 
-One line is printed on the console:
+One line is printed to the console:
 
 - If the amount of food **is enough**, print:
 
-  `Food is enough! Leftovers: {leftover food} grams.` 
+  **Food is enough! Leftovers:** \{**leftover food**\} **grams.** 
 
 - If the amount of food is **not enough**, print:
 
- `Food is not enough. You need {need the amount of food} grams more.`
+  **Food is not enough. You need** \{**need the amount of food**\} **grams more.**
 
 ## Example
 
 | **Input** | **Output** |
 | --- | --- |
+|careOfPuppy([4, 130, 345, 400, 180, 230, 120, 'Adopted']) | Food is enough! Leftovers: 2595 grams. |
+|careOfPuppy([2, 999, 456, 999, 999, 123, 456, 'Adopted']) | Food is not enough. You need 2032 grams more. |
 |careOfPuppy([4, 130, 345, 400, 180, 230, 120, 'Adopted']) | Food is enough! Leftovers: 2595 grams. |
 
 **Comments**
@@ -67,13 +69,6 @@ One line is printed on the console:
 - **This quantity is less than the originally purchased 4000 grams:**
 
 The food left is: 4000 \- 1405 \= 2595 grams.
-
-## Example
-
-| **Input** | **Output** |
-| --- | --- |
-|careOfPuppy([4, 130, 345, 400, 180, 230, 120, 'Adopted']) | Food is enough! Leftovers: 2595 grams. |
-|careOfPuppy([2, 999, 456, 999, 999, 123, 456, 'Adopted']) | Food is not enough. You need 2032 grams more. |
 
 [/task-description]
 [code-io /]
