@@ -20,7 +20,7 @@ The HTML `<h1>...<h6>` elements represent six levels of section headings.
 <br/><br/>
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Paragraphs
 
 [vimeo-video]
@@ -39,7 +39,7 @@ HTML paragraphs can be used for **grouping related content**.
 <br/><br/>
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Tag Attributes
 
 [vimeo-video]
@@ -62,7 +62,7 @@ Attributes usually come in **name/value pairs** like: `name="value"`.
 You will learn more about links and the `<a>` tag in the next slide.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Hyperlinks
 
 [vimeo-video]
@@ -119,7 +119,7 @@ Clicking the link will navigate the user to another page **within the website's 
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Images
 
 [vimeo-video]
@@ -139,7 +139,7 @@ The example above shows the usage of the `<img>` element:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Lists
 HTML lists are used to present a list of information in a well-formed and semantic way. 
 

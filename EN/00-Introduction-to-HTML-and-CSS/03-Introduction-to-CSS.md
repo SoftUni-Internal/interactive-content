@@ -1,6 +1,6 @@
 # Introduction to CSS
 
-[slide]
+[slide hideTitle]
 # What is CSS?
 
 [vimeo-video]
@@ -50,14 +50,16 @@ Example:
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 [/html]
 <br/><br/>
+
 Explanation:
+
 - h1 is a selector in CSS (it points to the HTML element we want to style: `<h1>`)
 - `color` is a **property**, and `green` is the **property value**
 - `text-align` is also a **property**, and `center` is the **property value**
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Internal CSS
 
 [vimeo-video]
@@ -77,7 +79,7 @@ Example:
 <br/><br/>
 [/slide]
 
-[slide]
+[slide hideTitle]
 # CSS id Selector
 
 [vimeo-video]
@@ -106,7 +108,7 @@ To select an element with a specific id, write a hash (`#`) character, followed 
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # CSS class Selector
 
 [vimeo-video]
@@ -170,13 +172,13 @@ Example:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Adding CSS to HTML Documents
 
 There are three ways of inserting a style sheet:
-- External style sheet;
-- Internal style sheet;
-- Inline style.
+- External style sheet
+- Internal style sheet
+
 
 We already have covered the **Internal style sheet**. Now, let's see how we can add CSS to our HTML in other ways.
 
@@ -186,9 +188,9 @@ An external style sheet is a separate file linked to an HTML web page. All the s
 The most common way to add CSS, is to keep the styles in **separate CSS files**. 
 
 The benefits of the external style sheet are:
-- It can be applied to an unlimited number of web pages;
-- An external style sheet can be attached instantly to apply the look to each and every web page;
-- It helps in bringing a uniform format to every page they are attached to.
+- It can be applied to an unlimited number of web pages
+- An external style sheet can be attached instantly to apply the look to each and every web page
+- It helps in bringing a uniform format to every page they are attached to
 
 To link an external stylesheet, you'd include a `<link>` element inside your `<head>` like this:
 ```css

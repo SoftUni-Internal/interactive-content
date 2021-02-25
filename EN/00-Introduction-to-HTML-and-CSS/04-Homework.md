@@ -1,6 +1,6 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 # How to Submit Your Solution for a Problem
 
 * **Create** your **HTML** document and write the content of the problem in it
@@ -14,7 +14,7 @@
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Simple HTML Page
 
 [vimeo-video]
@@ -75,7 +75,7 @@ yes
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # Problem: Tags Cardio Paragraphs
 
@@ -168,7 +168,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Single Article Page 
 
@@ -259,7 +259,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Tags Cardio - Lists
 
@@ -377,7 +377,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Tags Cardio - Nested Lists
 
@@ -481,7 +481,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Tags Cardio - Table
 
@@ -596,7 +596,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Wiki Page
 
@@ -697,7 +697,7 @@ yes
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Todo List
 
 [vimeo-video]
