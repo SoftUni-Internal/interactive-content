@@ -23,6 +23,17 @@ Download the resources from [here](https://videos.softuni.org/resources/HTML-CSS
 
 [/task-description]
 
+[tests]
+[test open]
+[input]
+let title = (document.title);
+expect(title).to.be.equal('Semantic Tags', "Incorrect title name.")
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[/tests]
 [/code-task]
 
 [/slide]
