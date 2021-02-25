@@ -149,17 +149,7 @@ Sonata No\.2 \-\> Composer\: Chopin, Key\: B Minor
 [/test]
 [test open]
 [input]
-thePianist(4,
-['Eine kleine Nachtmusik\|Mozart\|G Major',
-'La Campanella\|Liszt\|G\# Minor',
-'The Marriage of Figaro\|Mozart\|G Major',
-'Hungarian Dance No\.5\|Brahms\|G Minor',
-'Add\|Spring\|Vivaldi\|E Major',
-'Remove\|The Marriage of Figaro',
-'Remove\|Turkish March',
-'ChangeKey\|Spring\|C Major',
-'Add\|Nocturne\|Chopin\|C\# Minor',
-'Stop'])
+thePianist(4, ['Eine kleine Nachtmusik\|Mozart\|G Major', 'La Campanella\|Liszt\|G\# Minor', 'The Marriage of Figaro\|Mozart\|G Major', 'Hungarian Dance No\.5\|Brahms\|G Minor', 'Add\|Spring\|Vivaldi\|E Major', 'Remove\|The Marriage of Figaro', 'Remove\|Turkish March', 'ChangeKey\|Spring\|C Major', 'Add\|Nocturne\|Chopin\|C\# Minor', 'Stop'])
 [/input]
 [output]
 Spring by Vivaldi in E Major added to the collection\!
@@ -176,17 +166,7 @@ Spring \-\> Composer\: Vivaldi, Key\: C Major
 [/test]
 [test]
 [input]
-thePianist(4,
-['AAAA\|Mozart\|G Major',
-'BBBB\|Liszt\|G\# Minor',
-'VVVVV\|Mozart\|G Major',
-'CC\|Brahms\|G Minor',
-'Add\|AAAA\|Vivaldi\|E Major',
-'Remove\|The Marriage of Figaro',
-'Remove\|Turkish March',
-'ChangeKey\|Spring\|C Major',
-'Add\|Nocturne\|Chopin\|C\# Minor',
-'Stop'])
+thePianist(4, ['AAAA\|Mozart\|G Major', 'BBBB\|Liszt\|G\# Minor', 'VVVVV\|Mozart\|G Major', 'CC\|Brahms\|G Minor', 'Add\|AAAA\|Vivaldi\|E Major', 'Remove\|The Marriage of Figaro', 'Remove\|Turkish March', 'ChangeKey\|Spring\|C Major', 'Add\|Nocturne\|Chopin\|C\# Minor', 'Stop'])
 [/input]
 [output]
 AAAA is already in the collection\!
@@ -203,11 +183,7 @@ VVVVV \-\> Composer\: Mozart, Key\: G Major
 [/test]
 [test]
 [input]
-thePianist(3,
-['AAAA\|BB\|G Major',
-'ABcshj\|AA\|G\# Minor',
-'ACygsv\|CC\|G Major',
-'Stop'])
+thePianist(3, ['AAAA\|BB\|G Major', 'ABcshj\|AA\|G\# Minor', 'ACygsv\|CC\|G Major', 'Stop'])
 [/input]
 [output]
 AAAA \-\> Composer\: BB, Key\: G Major
@@ -217,14 +193,7 @@ ACygsv \-\> Composer\: CC, Key\: G Major
 [/test]
 [test]
 [input]
-thePianist(3,
-['AAAA\|BB\|G Major',
-'ABcshj\|AA\|G\# Minor',
-'ACygsv\|CC\|G Major',
-'Add\|Hello\|Mozart\|C',
-'ChangeKey\|Hello\|B Minor',
-'Remove\|Hello',
-'Stop'])
+thePianist(3, ['AAAA\|BB\|G Major', 'ABcshj\|AA\|G\# Minor', 'ACygsv\|CC\|G Major', 'Add\|Hello\|Mozart\|C', 'ChangeKey\|Hello\|B Minor', 'Remove\|Hello', 'Stop'])
 [/input]
 [output]
 Hello by Mozart in C added to the collection\!
@@ -237,14 +206,7 @@ ACygsv \-\> Composer\: CC, Key\: G Major
 [/test]
 [test]
 [input]
-thePianist(0,
-['Add\|Autumn\|Vivaldi\|C',
-'Add\|Winter\|Vivaldi\|C',
-'Add\|Summer\|Vivaldi\|C',
-'Add\|Spring\|Vivaldi\|C',
-'ChangeKey\|Spring\|B Minor',
-'ChangeKey\|Summer\|B Minor',
-'Stop'])
+thePianist(0, ['Add\|Autumn\|Vivaldi\|C', 'Add\|Winter\|Vivaldi\|C', 'Add\|Summer\|Vivaldi\|C', 'Add\|Spring\|Vivaldi\|C', 'ChangeKey\|Spring\|B Minor', 'ChangeKey\|Summer\|B Minor', 'Stop'])
 [/input]
 [output]
 Autumn by Vivaldi in C added to the collection\!
@@ -261,25 +223,7 @@ Winter \-\> Composer\: Vivaldi, Key\: C
 [/test]
 [test]
 [input]
-thePianist(5,
-['Concerto\|Schumann\|C Minor',
-'Nocturne\|Chopin\|E Major',
-'Clavier\|Bach\|E Major',
-'Emperor\|Beethoven\|B Minor',
-'Piano sonata\|Liszt\|B Minor',
-'Add\|Autumn\|Vivaldi\|C',
-'Add\|Winter\|Vivaldi\|C',
-'Add\|Summer\|Vivaldi\|C',
-'Add\|Spring\|Vivaldi\|C',
-'ChangeKey\|Spring\|B Minor',
-'ChangeKey\|Summer\|B Minor',
-'Remove\|Nocturne',
-'Remove\|Concerto',
-'Remove\|Clavier',
-'Remove\|Clavier',
-'Remove\|Piano Sonata',
-'Remove\|Autumn',
-'Stop'])
+thePianist(5, ['Concerto\|Schumann\|C Minor', 'Nocturne\|Chopin\|E Major', 'Clavier\|Bach\|E Major', 'Emperor\|Beethoven\|B Minor', 'Piano sonata\|Liszt\|B Minor', 'Add\|Autumn\|Vivaldi\|C', 'Add\|Winter\|Vivaldi\|C', 'Add\|Summer\|Vivaldi\|C', 'Add\|Spring\|Vivaldi\|C', 'ChangeKey\|Spring\|B Minor', 'ChangeKey\|Summer\|B Minor', 'Remove\|Nocturne', 'Remove\|Concerto', 'Remove\|Clavier', 'Remove\|Clavier', 'Remove\|Piano Sonata', 'Remove\|Autumn', 'Stop'])
 [/input]
 [output]
 Autumn by Vivaldi in C added to the collection\!
@@ -303,25 +247,7 @@ Winter \-\> Composer\: Vivaldi, Key\: C
 [/test]
 [test]
 [input]
-thePianist(5,
-['Concerto\|Schumann\|C Minor',
-'Nocturne\|Chopin\|E Major',
-'Clavier\|Bach\|E Major',
-'Emperor\|Beethoven\|B Minor',
-'Piano sonata\|Liszt\|B Minor',
-'Add\|Autumn\|Vivaldi\|C',
-'Add\|Winter\|Vivaldi\|C',
-'Add\|Summer\|Vivaldi\|C',
-'Add\|Spring\|Vivaldi\|C',
-'ChangeKey\|Spring\|B Minor',
-'ChangeKey\|Summer\|B Minor',
-'ChangeKey\|Winter\|B Minor',
-'ChangeKey\|Autumn\|B Minor',
-'ChangeKey\|Emperor\|B Minor',
-'ChangeKey\|Clavier\|B Minor',
-'ChangeKey\|Turkish March\|B Minor',
-'ChangeKey\|Turkish March\|B Minor',
-'Stop'])
+thePianist(5, ['Concerto\|Schumann\|C Minor', 'Nocturne\|Chopin\|E Major', 'Clavier\|Bach\|E Major', 'Emperor\|Beethoven\|B Minor', 'Piano sonata\|Liszt\|B Minor', 'Add\|Autumn\|Vivaldi\|C', 'Add\|Winter\|Vivaldi\|C', 'Add\|Summer\|Vivaldi\|C', 'Add\|Spring\|Vivaldi\|C', 'ChangeKey\|Spring\|B Minor', 'ChangeKey\|Summer\|B Minor', 'ChangeKey\|Winter\|B Minor', 'ChangeKey\|Autumn\|B Minor', 'ChangeKey\|Emperor\|B Minor', 'ChangeKey\|Clavier\|B Minor', 'ChangeKey\|Turkish March\|B Minor', 'ChangeKey\|Turkish March\|B Minor', 'Stop'])
 [/input]
 [output]
 Autumn by Vivaldi in C added to the collection\!
