@@ -1,6 +1,6 @@
-
-[slide hideTitle]
 # Problem 3: The Pianist
+[slide hideTitle]
+# The Pianist
 
 [code-task title="The Pianist" taskId="js-fundamentals-2-finalExam-The-Pianist" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -12,61 +12,61 @@ function thePianist(number, input) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-    let num = Number(input[0]);
-    let arr = input.splice(1, input.length);
-    return code(num, arr);
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
 [task-description]
 # Description
 
-On the first line of the input, you will receive an **integer** `n` - representing the number of pieces that you will initially have. 
+On the first line of the input, you will receive an **integer** "**n**" - representing the number of pieces that you will initially have. 
 
-On the next `n` lines, you will receive the title of each piece, followed by its **composer and key**, separated by `|` in the following format: 
+On the next "**n**" lines, you will receive the title of each piece, followed by its **composer and key**, separated by "\|" in the following format: 
 
-`{piece}|{composer}|{key}`
+"\{**piece**}\|\{**composer**\}\|\{key\}"
 
-Then, you will receive **different commands**, each on a new line, separated by `|`, until the `Stop` command is given: 
+Then, you will receive **different commands**, each on a new line, separated by "\|", until the "**Stop**" command is given: 
 
-* Command `Add|{piece}|{composer}|{key}`: 
+* Command "**Add**\|\{**piece**\}\|\{**composer**\}\|\{**key**\}":
 
 You need to **add the piece and the information** about it to the other pieces. 
 
 If the piece is **already in the collection**, you should print: 
 
-`{piece} is already in the collection!`
+"\{**piece**\} **is already in the collection!**"
 
 If the piece **is not in the collection**, you should print: 
 
-`{piece} by {composer} in {key} added to the collection!`
+"\{**piece**\} **by** \{**composer**\} **in** \{**key**\} **added to the collection!**"
 
-* Command `Remove|{piece}`:
+* Command "**Remove**\|\{**piece**\}":
 
 If the **piece is in the collection**, you have to remove it. 
 
 Then, you have to print the following message: 
 
-`Successfully removed {piece}!`
+"**Successfully removed** \{**piece**\}!"
 
 If the **piece is not in the collection**, you need to print: 
 
-`Invalid operation! {piece} does not exist in the collection.`
+"**Invalid operation!** \{**piece**\} **does not exist in the collection.**
 
-* Command `ChangeKey|{piece}|{new key}`:
+* Command "**ChangeKey**\|\{**piece**\}\|\{**newKey**\}":
 
 If the **piece is in the collection**, change its key to the specified one and print: 
 
-`Changed the key of {piece} to {new key}!`
+"**Changed the key of** \{**piece**\} **to** \{**newKey**}!"
 
 If the **piece is not in the collection**, print: 
 
-`Invalid operation! {piece} does not exist in the collection.`
+"**Invalid operation!** \{**piece**\} **does not exist in the collection.**"
 
-Upon receiving the `Stop` command, you need to print all pieces in the collection, sorted by **their name and by the name of their composer in alphabetical order**, in the following format: 
+Upon receiving the "**Stop**" command, you need to print all pieces in the collection, sorted by **their name and by the name of their composer in alphabetical order**, in the following format: 
 
-`{Piece} -> Composer: {composer}, Key: {key}`
+\{**Piece**\} \-\> **Composer:** \{**composer**\}, **Key:** \{**key**\}
 
 ## Input
 
@@ -74,34 +74,31 @@ Upon receiving the `Stop` command, you need to print all pieces in the colle
 
 - For each piece, you will receive a single line of text containing information about it
 
-- Then, you will receive multiple commands in the way described above, until you receive the command `Stop`
+- Then, you will receive multiple commands in the way described above, until you receive the command "**Stop**"
 
 
 ## Output
 
 * All the output messages and the appropriate formats are described in the problem description
 
-# Examples
+## Examples
 
-## First Example
+## Examples One
 
-### Input
+| **Input** | **Output** |
+| --- | --- |
+|thePianist(3, ['Fur Elise|Beethoven|A Minor', 'Moonlight Sonata|Beethoven|C# Minor', 'Clair de Lune|Debussy|C# Minor', 'Add|Sonata No.2|Chopin|B Minor', 'Add|Hungarian Rhapsody No.2|Liszt|C# Minor', 'Add|Fur Elise|Beethoven|C# Minor', 'Remove|Clair de Lune', 'ChangeKey|Moonlight Sonata|C# Major', 'Stop'])|Sonata No.2 by Chopin in B Minor added to the collection!|
+||Hungarian Rhapsody No.2 by Liszt in C# Minor added to the collection!|
+||Fur Elise is already in the collection!|
+||Successfully removed Clair de Lune!|
+||Changed the key of Moonlight Sonata to C\# Major!|
+||Fur Elise \-\> Composer: Beethoven, Key: A Minor|
+||Hungarian Rhapsody No.2 \-\> Composer: Liszt, Key: C\# Minor|
+||Moonlight Sonata \-\> Composer: Beethoven, Key: C\# Major|
+||Sonata No.2 \-\> Composer: Chopin, Key: B Minor|
 
-`3, ['Fur Elise|Beethoven|A Minor', 'Moonlight Sonata|Beethoven|C# Minor', 'Clair de Lune|Debussy|C# Minor', 'Add|Sonata No.2|Chopin|B Minor', 'Add|Hungarian Rhapsody No.2|Liszt|C# Minor', 'Add|Fur Elise|Beethoven|C# Minor', 'Remove|Clair de Lune', 'ChangeKey|Moonlight Sonata|C# Major', 'Stop']`
 
-### Output
-
-Sonata No.2 by Chopin in B Minor added to the collection!
-Hungarian Rhapsody No.2 by Liszt in C# Minor added to the collection!
-Fur Elise is already in the collection!
-Successfully removed Clair de Lune!
-Changed the key of Moonlight Sonata to C\# Major!
-Fur Elise \-\> Composer: Beethoven, Key: A Minor
-Hungarian Rhapsody No.2 \-\> Composer: Liszt, Key: C\# Minor
-Moonlight Sonata \-\> Composer: Beethoven, Key: C\# Major
-Sonata No.2 \-\> Composer: Chopin, Key: B Minor
-
-### Comments
+**Comments**
 
 After you receive the initial pieces and the information about them, you start receiving commands. 
 
@@ -115,42 +112,28 @@ The last command **requires changing the key of a piece**.
 
 Since the piece is **present in the collection**, you **modify** its key.
 
-Next, you receive the `Stop` command, you **print the information about the pieces**, sorted the way described above, and the program ends. 
+Next, you receive the "**Stop**" command, you **print the information about the pieces**, sorted the way described above, and the program ends. 
 
-## Second Example
-
-### Input
-
-`4, ['Eine kleine Nachtmusik|Mozart|G Major', 'La Campanella|Liszt|G# Minor', 'The Marriage of Figaro|Mozart|G Major', 'Hungarian Dance No.5|Brahms|G Minor', 'Add|Spring|Vivaldi|E Major', 'Remove|The Marriage of Figaro', 'Remove|Turkish March', 'ChangeKey|Spring|C Major', 'Add|Nocturne|Chopin|C# Minor', 'Stop']`
-
-### Output
-
-Spring by Vivaldi in E Major added to the collection\!
-Successfully removed The Marriage of Figaro\!
-Invalid operation! Turkish March does not exist in the collection\.
-Changed the key of Spring to C Major\!
-Nocturne by Chopin in C\# Minor added to the collection\!
-Eine kleine Nachtmusik \-\> Composer\: Mozart, Key\: G Major
-Hungarian Dance No\.5 \-\> Composer\: Brahms, Key\: G Minor
-La Campanella \-\> Composer\: Liszt, Key\: G\# Minor
-Nocturne \-\> Composer\: Chopin, Key\: C\# Minor
-Spring \-\> Composer\: Vivaldi, Key\: C Major
+## Example
+| **Input** | **Output** |
+| --- | --- |
+|thePianist(4, ['Eine kleine Nachtmusik|Mozart\|G Major', 'La Campanella\|Liszt\|G\# Minor', 'The Marriage of Figaro\|Mozart\|G Major', 'Hungarian Dance No\.5\|Brahms\|G Minor', 'Add\|Spring\|Vivaldi\|E Major', 'Remove\|The Marriage of Figaro', 'Remove\|Turkish March', 'ChangeKey\|Spring\|C Major', 'Add\|Nocturne\|Chopin\|C\# Minor', 'Stop'])|Spring by Vivaldi in E Major added to the collection\!|
+||Successfully removed The Marriage of Figaro\!|
+||Invalid operation! Turkish March does not exist in the collection\.|
+||Changed the key of Spring to C Major\!|
+||Nocturne by Chopin in C\# Minor added to the collection\!|
+||Eine kleine Nachtmusik \-\> Composer\: Mozart, Key\: G Major|
+||Hungarian Dance No\.5 \-\> Composer\: Brahms, Key\: G Minor|
+||La Campanella \-\> Composer\: Liszt, Key\: G\# Minor|
+||Nocturne \-\> Composer\: Chopin, Key\: C\# Minor|
+||Spring \-\> Composer\: Vivaldi, Key\: C Major|
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-3
-Fur Elise\|Beethoven\|A Minor
-Moonlight Sonata\|Beethoven\|C\# Minor
-Clair de Lune\|Debussy\|C\# Minor
-Add\|Sonata No.2\|Chopin\|B Minor
-Add\|Hungarian Rhapsody No\.2\|Liszt\|C\# Minor
-Add\|Fur Elise\|Beethoven\|C\# Minor
-Remove\|Clair de Lune
-ChangeKey\|Moonlight Sonata\|C\# Major
-Stop
+thePianist(3, ['Fur Elise\|Beethoven\|A Minor', 'Moonlight Sonata\|Beethoven\|C\# Minor', 'Clair de Lune\|Debussy\|C\# Minor', 'Add\|Sonata No.2\|Chopin\|B Minor', 'Add\|Hungarian Rhapsody No\.2\|Liszt\|C\# Minor', 'Add\|Fur Elise\|Beethoven\|C\# Minor', 'Remove\|Clair de Lune', 'ChangeKey\|Moonlight Sonata\|C\# Major', 'Stop'])
 [/input]
 [output]
 Sonata No\.2 by Chopin in B Minor added to the collection\!
@@ -166,17 +149,17 @@ Sonata No\.2 \-\> Composer\: Chopin, Key\: B Minor
 [/test]
 [test open]
 [input]
-4
-Eine kleine Nachtmusik\|Mozart\|G Major
-La Campanella\|Liszt\|G\# Minor
-The Marriage of Figaro\|Mozart\|G Major
-Hungarian Dance No\.5\|Brahms\|G Minor
-Add\|Spring\|Vivaldi\|E Major
-Remove\|The Marriage of Figaro
-Remove\|Turkish March
-ChangeKey\|Spring\|C Major
-Add\|Nocturne\|Chopin\|C\# Minor
-Stop
+thePianist(4,
+['Eine kleine Nachtmusik\|Mozart\|G Major,
+'La Campanella\|Liszt\|G\# Minor,
+'The Marriage of Figaro\|Mozart\|G Major,
+Hungarian Dance No\.5\|Brahms\|G Minor,
+'Add\|Spring\|Vivaldi\|E Major,
+'Remove\|The Marriage of Figaro,
+'Remove\|Turkish March,
+'ChangeKey\|Spring\|C Major,
+'Add\|Nocturne\|Chopin\|C\# Minor,
+'Stop])
 [/input]
 [output]
 Spring by Vivaldi in E Major added to the collection\!

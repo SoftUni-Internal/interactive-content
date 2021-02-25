@@ -1,7 +1,6 @@
-
-[slide hideTitle]
-
 # Problem 1: Trip
+[slide hideTitle]
+# Trip
 
 [code-task title="Trip" taskId="js-fundamentals-2-finalExam-Trip" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -11,6 +10,15 @@ function trip(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -24,23 +32,23 @@ Afterward, you will receive **commands**, which represent changes to the tra
 
 The commands may be:
 
-* Command `Add Stop:{index}:{string}`:
+* Command "**Add Stop:**\{**index**\}**:**\{**string**\}":
 
 **Insert** the given string at that index, **only if the index is valid.**
 
-* Command `Remove Stop:{start_index}:{end_index}`:
+* Command Remove Stop:{start_index}:{end_index}:
 
 **Remove** the elements of the string from the **start index** to the **end index** (inclusive) if both indices are valid. 
 
-* Command `Switch:{old_string}:{new_string}`: 
+* Command "**Switch:**\{**oldString**\}**:**\{**newString**\}":
 
 If the **old string** is currently present in the travel plan string, **replace all occurrences with the new string.** 
 
 **Note: After each command, print the current state of the string.**
 
-After receiving the `Travel` command, print the following message: 
+After receiving the "**Travel**" command, print the following message: 
 
-`Ready for a world tour! Planned stops: {string}`
+"**Ready for a world tour! Planned stops:** \{**string**\}"
 
 ## Input
 
@@ -50,20 +58,16 @@ After receiving the `Travel` command, print the following message:
 
 * Print the proper output messages for each of the cases, as described in the problem description
 
-# Example
+## Example
 
-### Input
+| **Input** | **Output** |
+| --- | --- |
+|trip(['Hawaii:Cyprys-Greece', 'Add Stop:7:Rome', 'Remove Stop:11:16', 'Switch:Hawaii:Bulgaria', 'Travel'])|Hawaii:RomeCyprys-Greece|
+||Hawaii:Rome-Greece|
+||Bulgaria:Rome-Greece|
+||Ready for a world tour! Planned stops: Bulgaria:Rome-Greece|
 
-`['Hawaii:Cyprys-Greece', 'Add Stop:7:Rome', 'Remove Stop:11:16', 'Switch:Hawaii:Bulgaria', 'Travel']`
 
-### Output
-
-`Hawaii:RomeCyprys-Greece`
-`Hawaii:Rome-Greece`
-`Bulgaria:Rome-Greece`
-`Ready for a world tour! Planned stops: Bulgaria:Rome-Greece`
-
- 
 [/task-description]
 [code-io /]
 [tests]
