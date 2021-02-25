@@ -36,7 +36,7 @@ The flavor and cut size are read from the console.
 
 You will also receive the number of cuts in the order.
 
-Create a function that calculates the total amount for the order.
+Create a program, which calculates the total amount for the order.
 
 
 | \- | Watermelon  | Mango | Pineapple   | Raspberry |
@@ -46,7 +46,7 @@ Create a function that calculates the total amount for the order.
 
 For orders:
 
-- From **$400 to $1000 inclusive there is a 15%** discount.
+- From **$400 to $1000 inclusive, there is a 15%** discount.
 
 - If the amount is over $1,000, there is a 50% discount.
 
@@ -70,12 +70,14 @@ Number of ordered cuts: integer in the interval \[1 … 10000\]
 
 **One line** is printed on the console:
 
-- The **price to be paid**, **formatted to the second digit after decimal point**, in the following format: `{price} dollars.`
+- The **price to be paid**, **formatted to the second digit after decimal point**, in the following format: \{**price**\} **dollars.**
 
 ## Example
 
 | **Input** | **Output** |
 | --- | --- |
+|energyBooster(['Pineapple', 'small', 1]) | 84.20 dollars. |
+|energyBooster(['Raspberry', 'small', 50])|1000.00 dollars.|
 |energyBooster(['Watermelon', 'big', '4']) | 487.90 dollars. |
 
 **Comments**
@@ -89,13 +91,6 @@ Number of ordered cuts: integer in the interval \[1 … 10000\]
 - 15\% from 574 = \$86.1 discount
 
 - Final price: 574 \- 86.1 = \$487.9
-
-## Example
-
-| **Input** | **Output** |
-| --- | --- |
-|energyBooster(['Pineapple', 'small', 1]) | 84.20 dollars. |
-|energyBooster(['Raspberry', 'small', 50])|1000.00 dollars.|
 
 [/task-description]
 [code-io /]
