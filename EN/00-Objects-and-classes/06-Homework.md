@@ -259,7 +259,7 @@ movies(['addMovie a', 'addMovie b', 'a directedBy j', 'a onDate 30.07.2010'])
 [/test]
 [test]
 [input]
-movies('addMovie y', 'addMovie b', 'y directedBy j', 'y onDate 30.07.2010', 'c onDate 30.07.2010', 'c directedBy l')
+movies(['addMovie y', 'addMovie b', 'y directedBy j', 'y onDate 30.07.2010', 'c onDate 30.07.2010', 'c directedBy l'])
 [/input]
 [output]
 \{"name":"y","director":"j","date":"30\.07\.2010"\}
