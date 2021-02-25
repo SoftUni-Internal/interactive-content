@@ -194,6 +194,8 @@ sumFirstLast(['5', '10'])
 [/code-task]
 [/slide]
 
+
+
 [slide hideTitle]
 # Pushing Into an Array
 
