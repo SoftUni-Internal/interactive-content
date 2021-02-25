@@ -168,3 +168,21 @@ Test Passed!
 [/code-task]
 
 [/slide]
+
+[slide hideTitle]
+
+# Type Parameters Relationships
+
+**Generics** are **invariant** - subtypes and supertypes are **not replaceable**.
+
+**Example:**
+
+```java
+List<Object> objects = new ArrayList<>();
+List<Animal> animals = new ArrayList<>();
+objects = animals; 
+```
+
+Assigning the `animals` data structure to `objects` will result in a compile-time error.
+
+[/slide]
