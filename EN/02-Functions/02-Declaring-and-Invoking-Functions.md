@@ -191,7 +191,7 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Write a function that receives a grade between `2.00` and `6.00` and prints the corresponding grade in words.
+Write a function that receives a grade between "**2.00**" and "**6.00**" and prints the corresponding grade in words.
 
 | **Grade** | **Result** |
 | --- | --- |

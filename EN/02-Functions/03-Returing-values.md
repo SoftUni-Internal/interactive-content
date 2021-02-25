@@ -33,21 +33,21 @@ If you try to use it outside of a function, **it will throw an error.**
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-19-using-the-return-values-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-The return value can be: 
+The returned value can be: 
 
-- Assigned to a variable
+- **Assigned** to a variable
 
 ```js
 const max = getMax(5, 10);
 ```
 
-- Used in an expression
+- **Used in an expression**
 
 ``` js
 const total = getPrice() * quantity * 1.20;
 ```
 
-- Passed to another function
+- **Passed to another function**
 
 ``` js
 multiply(getMax(5,10), 20);
@@ -77,7 +77,7 @@ console.log(isValid(3, [1,2,3,4,5]));
 
 When working with arrays such function is often used to check if an **index is valid.**
 
-The result of this function is **boolean**, it will return true if the index is inside of the boundary of the array, and `false` if it is not.
+The result of this function is **boolean**, it will return true if the index is inside of the boundary of the array, and "**false**" if it is not.
 
 - In this example, the student would pass the example if they get a grade higher than 3:
 
@@ -130,6 +130,7 @@ function swapElements(arr) {
 
 swapElements([1,2,3,4,5,6,7,8,9,10]);
 ```
+
 In this example, we create a function `swapElements()`, which receives one argument. 
 
 In the function body, we loop through the array and invoke another function `swap()`, to which we pass three arguments. 

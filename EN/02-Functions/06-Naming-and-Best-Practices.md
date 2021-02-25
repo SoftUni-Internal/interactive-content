@@ -11,6 +11,7 @@
 - Should answer the question: "**What does this function do?**"
 
 Examples for **good** names:
+
 ```js
 findStudent, loadSeport, add
 ```
@@ -25,7 +26,7 @@ If you **cannot** find a **good name** for a function, think about **whether it 
 
 ## Naming Function Parameters
 
- - Preferred form: `[Noun]` or `[Adjective] + [Noun]`
+ - Preferred form: Noun or Adjective + Noun`
  - Should **not contain** **capital** letters
  - Should be **meaningful**
  - Unit of measure should be obvious
@@ -50,8 +51,9 @@ p, p1, p2, populate, LastName, lastName
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-29-naming-and-best-practices-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
- - Each function should perform a **single**, well-defined task
- - **Avoid long functions**, **split** them into **several shorter ones**
+- Each function should perform a **single**, well-defined task
+
+- **Avoid long functions**, **split** them into **several shorter ones**
 
  ```js
  function printReceipt(){
@@ -119,9 +121,7 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Write a function that receives an array containing three elements. 
-
-Write an arrow function that calculates the result depending on the specified operator. 
+Write an arrow function that receives an **array containing three elements** and calculates the result depending on the specified operator. 
 
 The operator could only be one of the following: "**multiply**", "**divide**", "**add**", and "**subtract**".
 
