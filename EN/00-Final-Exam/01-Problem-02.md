@@ -52,15 +52,15 @@ The time in seconds for which he climbs 1 meter, floating-point in the interval 
 
 ## Output
 
-Printing on the console depends on the results:
+Printing to the console depends on the results:
 
 - If George has improved the record, print: 
 
-`Yes! The new record is {George's time} seconds.`
+**Yes! The new record is** \{**George's time**\} **seconds.**
 
 - If he has NOT improved the record, print: 
 
-`No! He was {time needed} seconds slower.` 
+**No! He was** \{**time needed**\} **seconds slower.** 
 
 The result must be **formatted** to the second digit after the decimal point.
 
@@ -68,26 +68,21 @@ The result must be **formatted** to the second digit after the decimal point.
 
 | **Input** | **Output** |
 | --- | --- |
+|mountainRun([5554.36, 1340, 3.23]) | Yes! The new record is 5108.20 seconds. |
+|mountainRun([1377, 389, 3])|No! He was 0.00 seconds slower.|
 |mountainRun([10164, 1400, 25]) | No! He was 25676.00 seconds slower. |
 
 **Comments**
 
 - George has to **climb 1400 m.**:  1400 \* 25 = 35000 seconds
 
-- Every **50 meters**, **30 seconds are added** to his time: (1400 \/ 50) \* 30 = 840 seconds
+- For every **50 meters**, **30 seconds are added** to his time: (1400 \/ 50) \* 30 = 840 seconds
 
 - Total time: 35000 \+ 840 = 35840 seconds
 
 - But because 10164 \< 35840, it did not **improve the record.**
 
 - He **did not have enough time** to improve the record: 35840 \- 10164 = 25676 seconds
-
-## Example
-
-| **Input** | **Output** |
-| --- | --- |
-|mountainRun([5554.36, 1340, 3.23]) | Yes! The new record is 5108.20 seconds. |
-|mountainRun([1377, 389, 3])|No! He was 0.00 seconds slower.|
 
 [/task-description]
 [code-io /]
