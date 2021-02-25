@@ -22,7 +22,7 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Create a function that tracks your team's performance at a Christmas charity tournament. 
+Create a program, which tracks your team's performance at a Christmas charity tournament. 
 
 Every day you get game names until the "**Finish**" command. 
 
@@ -60,11 +60,11 @@ Finally, one line is printed:
 
 - If you won the tournament:
 
-`You won the tournament! Total raised money: {the money earned}`
+**You won the tournament! Total raised money:** \{**the money earned**\}
 
 - If you lost the tournament:
 
-`You lost the tournament! Total raised money: {the money earned}`
+**You lost the tournament! Total raised money:** \{**the money earned**\}
 
 The money should be **formatted to the second digit after the decimal point.**
 
@@ -72,6 +72,7 @@ The money should be **formatted to the second digit after the decimal point.**
 
 | **Input** | **Output** |
 | --- | --- |
+|tournament([3, 'darts', 'lose', 'handball', 'lose', 'judo', 'win', 'Finish', 'snooker', 'lose', 'swimming', 'lose', 'squash', 'lose', 'table tennis', 'win', 'Finish', 'volleyball', 'win', 'basketball', 'win', 'Finish']) | You lost the tournament! Total raised money: 84.00 |
 |tournament([2, 'volleyball', 'win', 'football','lose', 'basketball', 'win', 'Finish', 'golf', 'win', 'tennis', 'win', 'badminton', 'win', 'Finish']) | You won the tournament! Total raised money: 132.00 |
 
 **Comments**
@@ -105,12 +106,6 @@ We have only won games, respectively we increase the money of the day by 10\% \-
 Earned money from both days: 44 \+ 66 = $110.
 
 Because we have more wins than losses, we win the tournament and increase the money by 20\% \-\> $132.
-
-## Example
-
-| **Input** | **Output** |
-| --- | --- |
-|tournament([3, 'darts', 'lose', 'handball', 'lose', 'judo', 'win', 'Finish', 'snooker', 'lose', 'swimming', 'lose', 'squash', 'lose', 'table tennis', 'win', 'Finish', 'volleyball', 'win', 'basketball', 'win', 'Finish']) | You lost the tournament! Total raised money: 84.00 |
 
 [/task-description]
 [code-io /]
