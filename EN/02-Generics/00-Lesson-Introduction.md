@@ -1,0 +1,25 @@
+# Lesson Introduction
+
+[slide hideTitle]
+# Lesson Content
+
+TODO: Add a video
+
+## In this lesson you will learn:
+
+**1. The Problem before Java 5.0**
+- How type safety makes our code less prone to bugs
+
+**2. Generics Syntax**
+- How to use generics
+
+**3. Generic Classes and Interfaces**
+- Declaration and syntax
+
+**4. Generic Methods**
+- Using generic methods
+
+**5. Type Erasure, Type Parameter Bounds**
+- How the Java compiler implements generic behavior
+
+[/slide]
