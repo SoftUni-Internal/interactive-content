@@ -1,18 +1,18 @@
 # Static Keyword in Java
 
-[slide]
+[slide hideTitle]
 
 # Static Keyword
 
-We use **Static** Keyword, for memory management mainly.
+We mainly use the `Static` keyword for memory arrangement.
 
-Can be applied to:
-- Nested class
+It can be applied to:
+- Nested classes
 - Variables
 - Methods
 - Blocks
 
-**Belongs to the class, than to an instance of the class.**
+Static entities **belong to the class** itself, rather than an instance of it.
 
 ```java
 static int count;
@@ -20,37 +20,40 @@ static void increaseCount() {
   count++;
 }
 ```
+[/slide]
 
-## Static class
+[slide hideTitle]
 
-- A top level class is a class that is not a nested class
-- A nested class is any class whose declaration occurs within the body of another class or interface
-- Only nested classes can be static
+# Static Class
+
+- A **top level class** is a class that is **not nested**
+- A **nested class** is any class whose declaration occurs **within the body** of another class or interface
+- Only **nested classes** can be **static**
 
 ```java
 class TopClass {
   static class NestedStaticClass {
-
+     \\ ...
   }
 }
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Static Variable
 
-**Static Variable** can be used to refer to the common variable of all objects
+**Static variables** can be used to store **shared data** between **all class instances.**
 
-Example:
+**Example:**
 
 - The company name of employees
 - College name of students
-  - Name of the college is common for all students
+  - Name of the college is common for all of its students
 
-**Allocate memory only once in class area at the time of class loading**
+**Memory** for static variables is allocated **only once** - in the class area, at the time of class **loading**.
 
-Example: Counter incrementation
+**Example:** Counter incrementation
 
 ```java
 class Counter {
@@ -63,8 +66,10 @@ class Counter {
     System.out.printf("Count: %d%n", count);
     System.out.printf("Static Count: %d%n", staticCount);
   }
+  
+  
+// Inside the Main Class
 
-  // Inside the Main Class
 public static void main(String[] args) {
   Counter c1 = new Counter();
   c1.printCounters();                // Count: 1
@@ -78,18 +83,18 @@ public static void main(String[] args) {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Static Method
 
-**Static Method belongs to the class rather than the object of a class**
+**Static methods** belong to the **class** rather than the **object of a class**.
 
 - Can be **invoked** without the need for creating an instance of a class
 - Can **access** static data member and can **change** the value of it
-- Can **not use non-static** data member or call **non-static method** directly
-- **this** and **super** cannot be used in static context
+- **Can not use a non-static** data member or call a **non-static method** directly
+- `this` and `super` cannot be used in static context
 
-Example: Calculate volume of a cube
+**Example:** Calculating the volume of a cube
 
 ```java
 class Calculate {
@@ -104,16 +109,17 @@ class Calculate {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Static Block
 
-**Static block represents a set of statements, which will be executed by the JVM before execution of main method**
+ A **static block** represents a set of statements, which will be executed by the JVM before the execution of the main method.
 
-- Executing static block is at the time of class loading
-- A class can take any number of static block but all blocks will be executed from top to bottom
+- Static blocks are executed at the time of class loading
+- A class can take any number of static blocks
+   - they will be executed from top to bottom
 
-Example: Static Block
+**Example:**
 
 ```java
 class Main {
@@ -127,6 +133,7 @@ class Main {
     n = 10;
   }
 }
+
 // Output:
 //From static block
 //From main
