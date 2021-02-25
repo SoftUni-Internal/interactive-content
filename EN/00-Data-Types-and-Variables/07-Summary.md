@@ -55,7 +55,7 @@ console.log(typeof(cars));
   - definition and syntax
 - Array iteration
   - how we iterate over array
-  - alternative ways to iterate using a for-of loop
+  - alternative ways to iterate using a "**for-of**" loop
 - Array operations
 
 [/slide]

@@ -122,9 +122,9 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Create a program that receives an **array of numbers**. 
+Create a program that receives an **array of numbers** as an input. 
 
-Print out the sum of the first and last element of that array. 
+Print out the sum of the **first** and **last** element of that array. 
 
 # Example
 | **Input** | **Output** |
@@ -256,9 +256,9 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Create a program that receives a number and prints out the corresponding name of the day of the week. 
+Create a program that receives a **number** and prints out the corresponding name of the day of the week. 
 
-If the number is NOT a valid day, print "**Invalid day!**".
+If the number is NOT a valid weekday, print "**Invalid day!**".
 
 # Example
 | **Input** | **Output** |

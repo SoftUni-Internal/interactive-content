@@ -80,11 +80,9 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Create a program that receives an array of elements.
+Create a program that receives a number **n** and an **array of numbers**.
 
-Your task is to create a new array with **n** numbers, reverse it and print its elements on a single line, space-separated.
-
-Where **n** is the first element of the array.
+Your task is to create a **new array** with **n** numbers, **reversed**, and print its elements on a single line, joined by a single space (" ").
 
 
 ## Examples
@@ -219,7 +217,9 @@ function adapter(input, code) {
 
 Create a program that receives an **array of strings** (space separated values).
 
-Your task is to reverse it and print its elements. **Swap** elements.
+Your task is to **reverse** it and **print** its elements. 
+
+**Swap** elements.
 
 ## Examples
 | **Input** | **Output** |
