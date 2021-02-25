@@ -22,11 +22,11 @@ If the Call stack is empty, the event loop will take the **first event** from th
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-5-6-Asynchronous-Programming-in-JavaScript-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-As a **single-threaded** language JavaScript has just **one call stack** and **one memory heap**.
+As a **single-threaded** language, JavaScript has just **one call stack** and **one memory heap**.
 
 In other words - chunks of code are executed **one at a time**. 
 
-This way each of those chunks must wait for the previous one to be finished.
+This way, each of those chunks must wait for the previous one to be finished.
 
 Running code like this can **block an entire webpage** due to the waiting time of **one function**, which is a serious user experience problem.
 
