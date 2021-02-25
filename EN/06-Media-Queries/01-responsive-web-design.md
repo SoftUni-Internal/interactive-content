@@ -1,4 +1,3 @@
-# What is Responsive Web Design?
 
 [slide hideTitle]
 # What is Responsive Web Design?
@@ -34,7 +33,7 @@ This will give the browser instructions on how to control the page’s **dimensi
 
 [slide hideTitle]
 
-## Components of Responsive Design
+# Components of Responsive Design
 
 [vimeo-video]
 [stream language="EN" videoId="431769145" default /]

@@ -70,7 +70,7 @@ https://fonts.google.com/
 [/slide]
 
 [slide hideTitle]
-## @font-face
+# @font-face
 
 [vimeo-video]
 [stream language="EN" videoId="431758586" default /]
@@ -94,7 +94,7 @@ It's common to use both `url()` and `local()` together so that the user's instal
 [/slide]
 
 [slide hideTitle]
-## Font Style
+# Font Style
 
 [vimeo-video]
 [stream language="EN" videoId="431758617" default /]
@@ -119,7 +119,7 @@ It's common to use both `url()` and `local()` together so that the user's instal
 [/slide]
 
 [slide hideTitle]
-## Font Size
+# Font Size
 
 [vimeo-video]
 [stream language="EN" videoId="431758650" default /]
@@ -150,7 +150,7 @@ font-size: 1rem;
 [/slide]
 
 [slide hideTitle]
-## Font Weight
+# Font Weight
 
 [vimeo-video]
 [stream language="EN" videoId="431758670" default /]
@@ -178,7 +178,7 @@ font-weight: bolder;
 [/slide]
 
 [slide hideTitle]
-## Line Height
+# Line Height
 
 [vimeo-video]
 [stream language="EN" videoId="431758720" default /]
@@ -205,7 +205,7 @@ line-height: normal;
 [/slide]
 
 [slide hideTitle]
-## Letter Spacing
+# Letter Spacing
 
 [vimeo-video]
 [stream language="EN" videoId="431758742" default /]
@@ -226,7 +226,7 @@ letter-spacing: normal;
 [/slide]
 
 [slide hideTitle]
-## Text Align
+# Text Align
 
 [vimeo-video]
 [stream language="EN" videoId="431758788" default /]
@@ -252,7 +252,7 @@ text-align: center;
 [/slide]
 
 [slide hideTitle]
-## Text Decoration
+# Text Decoration
 
 [vimeo-video]
 [stream language="EN" videoId="431758821" default /]
@@ -279,7 +279,7 @@ The `text-decoration` property defines how the text content of the element is de
 [/slide]
 
 [slide hideTitle]
-## Text Indent
+# Text Indent
 
 The `text-indent` property specifies the **indentation of the first line** in a text-block.
 
@@ -295,7 +295,7 @@ text-indent: 40px;
 [/slide]
 
 [slide hideTitle]
-## Text Overflow
+# Text Overflow
 
 The `text-overflow` property defines how the hidden text content behaves if it’s overflowing.
 
@@ -324,7 +324,7 @@ It can be `clipped`, display an `ellipsis` (...), or display a custom `string`.
 [/slide]
 
 [slide hideTitle]
-## Text Transform
+# Text Transform
 
 [vimeo-video]
 [stream language="EN" videoId="431758846" default /]
@@ -349,7 +349,7 @@ text-transform: uppercase;
 [/slide]
 
 [slide hideTitle]
-## Word Break
+# Word Break
 
 `word-break` defines how words should break when reaching the end of the line.
 
@@ -367,7 +367,7 @@ word-break: break-all;
 [/slide]
 
 [slide hideTitle]
-## Text Color
+# Text Color
 
 [vimeo-video]
 [stream language="EN" videoId="431758872" default /]
@@ -394,7 +394,7 @@ color: rgba(255, 0, 0, 0.5);
 [/slide]
 
 [slide hideTitle]
-## Background Color
+# Background Color
 
 [vimeo-video]
 [stream language="EN" videoId="431758912" default /]

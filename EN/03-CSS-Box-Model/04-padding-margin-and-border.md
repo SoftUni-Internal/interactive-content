@@ -24,8 +24,8 @@ It is a **short hand** property for the following properties:
 
 
 The values of the margin property are:
-* \<length> - Specifies a margin in **px, pt, cm,** etc. Default value is 0. **Negative** values are allowed;
-* `%` - Specifies a margin in **percent of the width** of the containing element.
+* \<length> - Specifies a margin in **px, pt, cm,** etc. Default value is 0. **Negative** values are allowed
+* `%` - Specifies a margin in **percent of the width** of the containing element
 
 The following two examples are identical however they are implemented differently:
 

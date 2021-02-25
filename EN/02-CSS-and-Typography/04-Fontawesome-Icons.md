@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-## What is Font Awesome?
+# What is Font Awesome?
 
 [vimeo-video]
 [stream language="EN" videoId="431758245" default /]
@@ -22,7 +22,7 @@ Font Awesome has:
 [/slide]
 
 [slide hideTitle]
-## Getting Started with Font Awesome
+# Getting Started with Font Awesome
 
 There are two ways **to use** the Free Font Awesome 5 icons:
 * You can **download** the Font Awesome library;

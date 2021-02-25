@@ -1,4 +1,3 @@
-# Media Types
 
 [slide hideTitle]
 # Media Types

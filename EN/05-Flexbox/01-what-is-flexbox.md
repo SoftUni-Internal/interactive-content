@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-## What is Flexbox?
+# What is Flexbox?
 
 [vimeo-video]
 [stream language="EN" videoId="431762555" default /]

@@ -1,4 +1,3 @@
-# HTML Tables
 
 [slide hideTitle]
 # HTML Table
@@ -31,7 +30,7 @@ If the cell is in the header, it is defined with the `<th>` tag. By default, tab
 
 [slide hideTitle]
 
-## Complete HTML Tables
+# Complete HTML Tables
 
 [vimeo-video]
 [stream language="EN" videoId="431755765" default /]
@@ -58,7 +57,7 @@ These elements are used to specify each part of a table (header, body, footer).
 
 [slide hideTitle]
 
-## Cells that Span Many Columns or Rows
+# Cells that Span Many Columns or Rows
 
 If needed, we can create a cell span more than one column/row using `colspan`/`rowspan` attributes:
 * `colspan` attribute is used for columns

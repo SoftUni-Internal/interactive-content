@@ -23,7 +23,7 @@ The `clear` property has the following values:
 [/slide]
 
 [slide hideTitle]
-# Clear examples
+# Clear Examples
 
 [vimeo-video]
 [stream language="EN" videoId="431760985" default /]

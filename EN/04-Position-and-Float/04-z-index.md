@@ -1,4 +1,3 @@
-# Z index
 
 [slide hideTitle]
 

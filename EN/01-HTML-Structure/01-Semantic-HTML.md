@@ -37,7 +37,6 @@ In HTML there are semantic elements, that can be used to define different parts 
 [slide hideTitle]
 # HTML Semantic Tags
 
-## HTML \<nav\> Tag
 
 [vimeo-video]
 [stream language="EN" videoId="431755832" default /]

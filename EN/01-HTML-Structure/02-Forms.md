@@ -1,4 +1,3 @@
-# HTML Forms
 
 [slide hideTitle]
 # HTML Form

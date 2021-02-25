@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-## Width
+# Width
 
 [vimeo-video]
 [stream language="EN" videoId="431760011" default /]
@@ -49,7 +49,7 @@ The default value of this property is `0`.
 
 [slide hideTitle]
 
-## Height
+# Height
 
 [vimeo-video]
 [stream language="EN" videoId="431760050" default /]

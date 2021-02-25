@@ -1,4 +1,3 @@
-# What is Typography?
 
 [slide hideTitle]
 # What is Typography?

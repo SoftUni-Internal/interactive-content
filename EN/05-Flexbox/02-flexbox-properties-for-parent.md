@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-## Flexbox container
+# Flexbox container
 
 [vimeo-video]
 [stream language="EN" videoId="431762469" default /]
@@ -32,7 +32,7 @@ By doing this, the child elements will be turned into flexbox **items**.
 
 [slide hideTitle]
 
-## Display inline-flex
+# Display inline-flex
 
 [vimeo-video]
 [stream language="EN" videoId="431762714" default /]
@@ -137,7 +137,7 @@ The `flex-direction` property has the following values:
 
 [slide hideTitle]
 
-## Flex-wrap
+# Flex-Wrap
 
 [vimeo-video]
 [stream language="EN" videoId="431763143" default /]
@@ -199,7 +199,7 @@ The `flex-direction` property has the following values:
 
 [slide hideTitle]
 
-## Flex-flow Shorthand
+# Flex-flow Shorthand
 
 [vimeo-video]
 [stream language="EN" videoId="431763277" default /]
@@ -225,7 +225,7 @@ The default value is `row nowrap`.
 
 [slide hideTitle]
 
-## Justify-content
+# Justify-content
 
 [vimeo-video]
 [stream language="EN" videoId="431763307" default /]
@@ -318,7 +318,7 @@ The default value is `row nowrap`.
 
 [slide hideTitle]
 
-## Align-items
+# Align-items
 
 [vimeo-video]
 [stream language="EN" videoId="431763415" default /]
@@ -409,7 +409,7 @@ This is the **default** value.
 
 [slide hideTitle]
 
-## Align-content
+# Align-content
 
 [vimeo-video]
 [stream language="EN" videoId="431763525" default /]

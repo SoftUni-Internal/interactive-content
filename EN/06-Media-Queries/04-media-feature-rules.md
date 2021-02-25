@@ -1,4 +1,3 @@
-# Media Feature Rules
 
 [slide hideTitle]
 # Media Feature Rules

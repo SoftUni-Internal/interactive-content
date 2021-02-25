@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-## Order
+# Order
 
 [vimeo-video]
 [stream language="EN" videoId="431763609" default /]
@@ -12,7 +12,7 @@ The `order` property defines the **order** of a flexbox item.
 
 The first flex item in the code does not have to appear as the first item in the layout and you can manipulate it with `order` property.
 
-* `order: 0;` - The order of the flexbox items is the one **defined in the HTML code**;
+* `order: 0;` - The order of the flexbox items is the one **defined in the HTML code**
 
 **Example** for `order: 0;`
 
@@ -82,7 +82,7 @@ The final order is defined when all individual flexbox items order values are ta
 
 [slide hideTitle]
 
-## Flex-grow
+# Flex-Grow
 
 [vimeo-video]
 [stream language="EN" videoId="431763629" default /]
@@ -114,7 +114,7 @@ This property has two possible values:
 
 [slide hideTitle]
 
-## Flex-shrink
+# Flex-Shrink
 
 [vimeo-video]
 [stream language="EN" videoId="431763708" default /]
@@ -150,7 +150,7 @@ If the target element will not wrap its content, there is a chance for the flexb
 
 [slide hideTitle]
 
-## Flex-basis
+# Flex-Basis
 
 [vimeo-video]
 [stream language="EN" videoId="431768181" default /]
@@ -181,7 +181,7 @@ The `flex-basis` property defines the initial size of a flexbox item.
 
 [slide hideTitle]
 
-## Flex - The Shorthand Property
+# Flex - The Shorthand Property
 
 [vimeo-video]
 [stream language="EN" videoId="431768277" default /]
@@ -207,7 +207,7 @@ The default value is `flex: 0 1 auto;`, wich is equivalent to:
 
 [slide hideTitle]
 
-## Align-self
+# Align-self
 
 [vimeo-video]
 [stream language="EN" videoId="431768327" default /]

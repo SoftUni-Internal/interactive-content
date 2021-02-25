@@ -1,9 +1,7 @@
-# Media Queries
 
 [slide hideTitle]
 # Media Queries
 
-## What is Media Query?
 
 [vimeo-video]
 [stream language="EN" videoId="431768679" default /]
@@ -29,7 +27,7 @@ In the example we can see that if the browser window is 550px or smaller, the ba
 
 [slide hideTitle]
 
-## How Can We Use Media Queries?
+# How Can We Use Media Queries?
 
 [vimeo-video]
 [stream language="EN" videoId="431768717" default /]
@@ -45,7 +43,7 @@ Media queries can be used to check many things, such as:
 
 [slide hideTitle]
 
-## Media Query Syntax
+# Media Query Syntax
 
 [vimeo-video]
 [stream language="EN" videoId="431768746" default /]
@@ -78,7 +76,7 @@ A set of **CSS rules** that will be applied if the test passes and the media typ
 
 [slide hideTitle]
 
-## Typical Device Breakpoints
+# Typical Device Breakpoints
 
 Nowadays, there are many types of screens and devices with different heights and widths.
 
