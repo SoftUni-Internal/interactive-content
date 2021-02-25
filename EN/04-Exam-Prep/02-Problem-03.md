@@ -162,7 +162,7 @@ Pernik \-\> Population\: 1800000 citizens, Gold: 1800 kg
 [/test]
 [test]
 [input]
-pirates(['Pernik\|\|900000\|\|900', Sail', 'Prosper\=\>Pernik\=\>500', 'End'])
+pirates(['Pernik\|\|900000\|\|900', 'Sail', 'Prosper\=\>Pernik\=\>500', 'End'])
 [/input]
 [output]
 500 gold added to the city treasury. Pernik now has 1400 gold.
