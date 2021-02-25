@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 # Problem: Opinion Poll
-[code-task title="Opinion Poll" taskId="ff6d1ff1-daef-4e93-b24d-14c878e40e96" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Opinion Poll" taskId="oop-basics-java-defining-classes-Opinion-Poll" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -16,17 +16,22 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create Person class with two fields `String name` and `int age`, write a program that reads from the console **N** lines of personal information, and then prints all people whose **age** is **more than 30** years, **sorted in alphabetical order**.
+Create a `Person` class with two fields `String name` and `int age`, write a program that reads from the console **N** lines of personal information, and then prints all people whose **age** is **more than 30** years, **sorted in alphabetical order**.
 
 **Note:** you can use `stream()` to filter the people.
 
-## Examples
+# Examples
+
+## Example 1
+
 | **Input** | **Output** |
 | --- | --- |
 | 3 | John - 48 |
 | Peter 12 | Steven – 31 |
 | Steven 31 |  |
 | John 48 |  |
+
+## Example 2
 
 | **Input** | **Output** |
 | --- | --- |
@@ -206,7 +211,7 @@ Anntoanette - 39
 
 [slide hideTitle]
 # Problem: Company Roster
-[code-task title="Company Roster" taskId="76597424-6663-4f2d-b5d1-cb23dff0383e" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Company Roster" taskId="oop-basics-java-defining-classes-Company-Roster" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -232,7 +237,10 @@ The **salary** should be printed to **two decimal places** after the separator.
 
 **Hint**: you can define a **Department** class that holds a list of employees.
 
-## Examples
+# Examples
+
+## Example 1
+
 | **Input** | **Output** |
 | --- | --- |
 | 4 | Highest Average Salary: Development |
@@ -240,6 +248,8 @@ The **salary** should be printed to **two decimal places** after the separator.
 | Tom 3300.00 Manager Marketing 33 | Peter 2200.00 peter@softuni.org 28 |
 | John 4400.20 ProjectLeader Development john@john.com |  |
 | Philip 0.20 Freelancer Nowhere 18 |  |
+
+## Example 2
 
 | **Input** | **Output** |
 | --- | --- |
@@ -389,7 +399,7 @@ Victor 0.03 sales@uni.eu 23
 
 [slide hideTitle]
 # Problem: Speed Racing
-[code-task title="Speed Racing" taskId="51ee0d4e-daac-43b6-8bde-2477b2e01912" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Speed Racing" taskId="oop-basics-java-defining-classes-Speed-Racing" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -433,7 +443,10 @@ After the `End` command is received, print each car in order of appearing in inp
 
 Where the fuel amount should be rounded to the **second decimal place**.
 
-## Examples
+# Examples
+
+## Example 1
+
 | **Input** | **Output** |
 | --- | --- |
 | 2 | AudiA4 17.60 18 |
@@ -443,6 +456,8 @@ Where the fuel amount should be rounded to the **second decimal place**.
 | Drive AudiA4 5 |  |
 | Drive AudiA4 13 |  |
 | End |  |
+
+## Example 2
 
 | **Input** | **Output** |
 | --- | --- |
@@ -618,7 +633,7 @@ K 0.00 4
 
 [slide hideTitle]
 # Problem: Raw Data
-[code-task title="Raw Data" taskId="45d1be24-82dd-4ff1-9586-d02e73ff698d" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Raw Data" taskId="oop-basics-java-defining-classes-Raw-Data" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -654,13 +669,18 @@ If the command is `flamable` print all cars whose **cargoType is** `flamable` an
 
 The cars should be printed in order of appearing in the input on a separate lines.
 
-## Examples
+# Examples
+
+## Example 1
+
 | **Input** | **Output** |
 | --- | --- |
 | 2 | Citroen2CV |
 | ChevroletAstro 200 180 1000 fragile 1.3 1 1.5 2 1.4 2 1.7 4 |  |
 | Citroen2CV 190 165 1200 fragile 0.9 3 0.85 2 0.95 2 1.1 1 |  |
 | fragile |  |
+
+## Example 2
 
 | **Input** | **Output** |
 | --- | --- |
@@ -776,7 +796,7 @@ T
 
 [slide hideTitle]
 # Problem: Car Salesman
-[code-task title="Car Salesman" taskId="bd8337bb-a2b2-4af9-b2db-ab23ef09eb24" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Car Salesman" taskId="oop-basics-java-defining-classes-Car-Salesman" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -804,7 +824,7 @@ On each of the next **N** lines you will receive information about an **Engine**
 
 `<model> <power> <displacement> <efficiency>`
 
-After the lines with engines, on the next line you will receive a number **M** – specifying the number of Cars that will follow. 
+After the lines with engines, on the next line you will receive a number **M**, specifying the number of Cars that will follow.
 
 On each of the next **M** lines the information about a **Car** will follow in the following format:
 
@@ -830,9 +850,12 @@ Color: <carColor>
 
 ## Optional
 
-Override the classes **toString()** methods to have a reusable way of displaying the objects.
+Override the classes `toString()` methods to have a reusable way of displaying the objects.
 
-## Examples
+# Examples
+
+## Example 1
+
 | **Input** | **Output** |
 | --- | --- |
 | 2 | FordFocus: |
@@ -856,6 +879,8 @@ Override the classes **toString()** methods to have a reusable way of displaying
 |  | Efficiency: B |
 |  | Weight: n/a |
 |  | Color: Orange |
+
+## Example 2
 
 | **Input** | **Output** |
 | --- | --- |
@@ -1904,7 +1929,7 @@ Color: Gray
 
 [slide hideTitle]
 # Problem: Pokemon Trainer
-[code-task title="Pokemon Trainer" taskId="557a0bbb-06f1-4916-aa67-034874e07cbd" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Pokemon Trainer" taskId="oop-basics-java-defining-classes-Pokemon-Trainer" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1954,7 +1979,10 @@ Print in the format:
 
 `<trainerName> <badges> <numberOfPokemon>`
 
-## Examples
+# Examples
+
+## Example 1
+
 | **Input** | **Output** |
 | --- | --- |
 | Peter Charizard Fire 100 | Peter 2 2 |
@@ -1964,6 +1992,8 @@ Print in the format:
 | Fire |  |
 | Electricity |  |
 | End |  |
+
+## Example 2
 
 | **Input** | **Output** |
 | --- | --- |
@@ -2258,7 +2288,7 @@ G 0 0
 
 [slide hideTitle]
 # Problem: Personal Information
-[code-task title="Personal Information" taskId="5d118095-25ac-454f-b83d-562694f855fa" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Personal Information" taskId="oop-basics-java-defining-classes-Personal-Information" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -2272,7 +2302,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-*You and your friends decide to create a Class that holds all the information about all of you, even your pokemon collection. Since you are good at writing code, they asked you to design that Class.*
+*You and your friends decide to create a Class that holds all the information about all of you, even your pokemon collection.* 
+
+*Since you are good at writing code, they asked you to design that Class.*
 
 From the console you will receive lines until the command `End`.
 
@@ -2320,7 +2352,10 @@ Children:
 {childName} {childBirthday}
 ```
 
-## Examples
+# Examples
+
+## Example 1
+
 | **Input** | **Output** |
 | --- | --- |
 | Peter company PeshInc Management 1000.00 | Tom |
@@ -2332,6 +2367,8 @@ Children:
 | Tom | Parents: |
 |  | Children: |
 
+
+## Example 2
 
 | **Input** | **Output** |
 | --- | --- |
@@ -2532,7 +2569,7 @@ LR 01/01/1000
 
 [slide hideTitle]
 # Problem: Family Tree
-[code-task title="Family Tree" taskId="102bcf46-b2bb-4218-b78d-86641c10eeec" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Family Tree" taskId="oop-basics-java-defining-classes-Familiy-Tree" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -2586,7 +2623,10 @@ Regardless if they appeared as a birthdate or a name.
 
 For example in the first input Stan is before Jenny because his birthdate appeared first in the second line, while she appeared in the third line.
 
-## Examples
+# Examples
+
+## Example 1
+
 | **Input** | **Output** |
 | --- | --- |
 | John Baker | John Baker 23/05/1980 |
@@ -2598,6 +2638,8 @@ For example in the first input Stan is before Jenny because his birthdate appear
 | Stan Baker 11/11/1951 |  |
 | John Baker 23/05/1980 |  |
 | End |  |
+
+## Example 2
 
 | **Input** | **Output** |
 | --- | --- |
@@ -2843,7 +2885,7 @@ Abc7 Abcde 26/9/1974
 
 [slide hideTitle]
 # Problem: Cat Catalog
-[code-task title="Cat Catalog" taskId="750f758d-a8a6-479e-8d6e-0246f198c1ec" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Cat Catalog" taskId="oop-basics-java-defining-classes-Cat-Catalog" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -2879,7 +2921,10 @@ On the last line after the command `End` you will receive а **name** of a cat.
 
 You should print that cat and round the number of its s **two digits** after the decimal separator.
 
-## Examples
+# Examples
+
+## Example 1
+
 | **Input** | **Output** |
 | --- | --- |
 | DomesticShorthair Kitty 85 | Cymric Tom 28.00 |
@@ -2887,6 +2932,8 @@ You should print that cat and round the number of its s **two digits** after the
 | Cymric Tom 28 |  |
 | End |  |
 | Tom |  |
+
+## Example 2
 
 | **Input** | **Output** |
 | --- | --- |
@@ -2998,10 +3045,3 @@ DomesticShorthair CatCat 120.00
 [/tests]
 [/code-task]
 [/slide]
-
-[slide]
-# Homework Results
-[tasks-results/]
-
-[/slide]
-
