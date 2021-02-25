@@ -79,7 +79,7 @@ It is also used to describe the **return value** of `remove()`.
 
 [slide hideTitle]
 # Problem with Solution: Jar of T
-[code-task title="Jar of T" taskId="oop-basics-java-generics-lab-" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Jar of T" taskId="oop-basics-java-generics-lab-Jar-of-T" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
