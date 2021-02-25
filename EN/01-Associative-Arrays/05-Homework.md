@@ -8,12 +8,21 @@
 [code-editor language=javascript]
 
 ```
-function solve(input) {
+function words(input) {
   // Write your code here
  }
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Description
@@ -24,7 +33,7 @@ The input will come as an **array of strings**.
 
 The **first string** will contain the **words** you will be looking for, separated by a **space**.
 
-All **strings after that** will contain sentences, which you have to check, and count how many times each of the specified words was present.
+All **strings after that** will contain sentences, in which you have to check, and count how many times each of the specified words was present.
 
 Print out **how many** times each of the specified words occured.
 
@@ -34,35 +43,15 @@ The words should be **sorted by the number of times they were present in descend
 
 | **Input** | **Output** |
 | --- | --- |
-|`['this sentence', 'In', 'this', 'sentence', 'you', 'have', 'to', 'count', 'the', 'occurances', 'of', 'the', 'words', 'this', 'and', 'sentence', 'because', 'this', 'is', 'your', 'task']` | this \- 3 |
+| words(['this sentence', 'In', 'this', 'sentence', 'you', 'have', 'to', 'count', 'the', 'occurances', 'of', 'the', 'words', 'this', 'and', 'sentence', 'because', 'this', 'is', 'your', 'task']) | this \- 3 |
 | | sentence \- 2 |
 
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-this sentence
-In 
-this 
-sentence 
-you 
-have 
-to 
-count 
-the 
-occurances 
-of 
-the 
-words 
-this 
-and 
-sentence 
-because 
-this 
-is 
-your 
-task
+words(['this sentence', 'In', 'this', 'sentence', 'you', 'have', 'to', 'count', 'the', 'occurances', 'of', 'the', 'words', 'this', 'and', 'sentence', 'because', 'this', 'is', 'your', 'task'])
 [/input]
 [output]
 this \- 3
@@ -71,22 +60,7 @@ sentence \- 2
 [/test]
 [test]
 [input]
-dara bara mara
-mara 
-mara 
-mara 
-dara 
-bara 
-dara 
-bara 
-data 
-dara 
-rdhfdjkk 
-fhsjksdhjks 
-sdhfsdjfd 
-fhdjk 
-bara 
-bara
+words(['dara bara mara', 'mara', 'mara', 'mara', 'dara', 'bara', 'dara', 'bara', 'data', 'dara', 'rdhfdjkk', 'fhsjksdhjks', 'sdhfsdjfd', 'fhdjk', 'bara', 'bara'])
 [/input]
 [output]
 bara \- 4
@@ -96,22 +70,7 @@ mara \- 3
 [/test]
 [test]
 [input]
-dara
-mara 
-mara 
-mara 
-dara 
-bara 
-dara 
-bara 
-data 
-dara 
-rdhfdjkk 
-fhsjksdhjks 
-sdhfsdjfd 
-fhdjk 
-bara 
-bara
+words(['dara', 'mara', 'mara', 'mara', 'dara', 'bara', 'dara', 'bara', 'data', 'dara', 'rdhfdjkk', 'fhsjksdhjks', 'sdhfsdjfd', 'fhdjk', 'bara', 'bara'])
 [/input]
 [output]
 dara - 3
@@ -119,22 +78,7 @@ dara - 3
 [/test]
 [test]
 [input]
-dara sara mara
-mara 
-mara 
-mara 
-dara 
-bara 
-dara 
-bara 
-data 
-dara 
-rdhfdjkk 
-fhsjksdhjks 
-sdhfsdjfd 
-fhdjk 
-bara 
-bara
+words(['dara sara mara', 'mara', 'mara', 'mara', 'dara', 'bara', 'dara', 'bara', 'data', 'dara', 'rdhfdjkk', 'fhsjksdhjks', 'sdhfsdjfd', 'fhdjk', 'bara', 'bara'])
 [/input]
 [output]
 dara \- 3
@@ -144,22 +88,7 @@ sara \- 0
 [/test]
 [test]
 [input]
-dara sara mara bara
-mara 
-mara 
-mara 
-dara 
-bara 
-dara 
-bara 
-data 
-dara 
-rdhfdjkk 
-fhsjksdhjks 
-sdhfsdjfd 
-fhdjk 
-bara 
-bara
+words(['dara sara mara bara', 'mara', 'mara', 'mara', 'dara', 'bara', 'dara', 'bara', 'data', 'dara', 'rdhfdjkk', 'fhsjksdhjks', 'sdhfsdjfd', 'fhdjk', 'bara', 'bara'])
 [/input]
 [output]
 bara \- 4
@@ -170,20 +99,7 @@ sara \- 0
 [/test]
 [test]
 [input]
-a b c d
-vdsa 
-a 
-rb 
-b 
-dbs 
-a 
-ss 
-b 
-c 
-d 
-sdn 
-bd 
-d
+words(['a b c d', 'vdsa', 'a', 'rb', 'b', 'dbs', 'a', 'ss', 'b', 'c', 'd', 'sdn', 'bd', 'd'])
 [/input]
 [output]
 a \- 2
@@ -206,12 +122,21 @@ c \- 1
 [code-editor language=javascript]
 
 ```
-function solve(input) {
+function oddOccurences(input) {
   // Write your code here
 }
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Description
@@ -226,13 +151,13 @@ The words will be **separated by a single space**.
 
 | **Input** | **Output**  |
 | --- | --- |
-| `['Java C# Php PHP Java PhP 3 C# 3 1 5 C#']` | c\# php 1 5 |
+| oddOccurences(['Java C# Php PHP Java PhP 3 C# 3 1 5 C#']) | c\# php 1 5 |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-Java C\# Php PHP Java PhP 3 C\# 3 1 5 C\#
+oddOccurences(['Java C# Php PHP Java PhP 3 C# 3 1 5 C#'])
 [/input]
 [output]
 c\# php 1 5
@@ -240,7 +165,7 @@ c\# php 1 5
 [/test]
 [test]
 [input]
-a 2 A a A c D C dcndjk dbsa bsd bs Cbc D ss as
+oddOccurences(['a 2 A a A c D C dcndjk dbsa bsd bs Cbc D ss as'])
 [/input]
 [output]
 2 dcndjk dbsa bsd bs cbc ss as
@@ -248,7 +173,7 @@ a 2 A a A c D C dcndjk dbsa bsd bs Cbc D ss as
 [/test]
 [test]
 [input]
-a a a a a D Sb dbsnb bdw dd dd dss
+oddOccurences(['a a a a a D Sb dbsnb bdw dd dd dss'])
 [/input]
 [output]
 a d sb dbsnb bdw dss
@@ -256,7 +181,7 @@ a d sb dbsnb bdw dss
 [/test]
 [test]
 [input]
-b b b b b
+oddOccurences(['b b b b b'])
 [/input]
 [output]
 b
@@ -264,7 +189,7 @@ b
 [/test]
 [test]
 [input]
-a a a b b c
+oddOccurences(['a a a b b c'])
 [/input]
 [output]
 a c
@@ -272,7 +197,7 @@ a c
 [/test]
 [test]
 [input]
-a a a a a a a a a aa a a a a ab bb bb cccc
+oddOccurences(['a a a a a a a a a aa a a a a ab bb bb cccc'])
 [/input]
 [output]
 a aa ab cccc
@@ -292,12 +217,21 @@ a aa ab cccc
 [code-editor language=javascript]
 
 ```
-function solve(input) {
+function picolo(input) {
   // Write your code here
 }
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Description
@@ -306,7 +240,7 @@ Write a function that:
 
 - Records a car license plate for every car that enters the parking lot
 - Removes the car when it goes out
-- Input will be an array of strings in the following format `['direction, carNumber']`
+- Input will be an array of strings in the following format "\[\'**direction**\, **carNumber**\'\]"
 
 Print the output with all car numbers which are in the parking lot **sorted in ascending order by their license plate**.
 
@@ -316,7 +250,7 @@ Print the output with all car numbers which are in the parking lot **sorted in a
 
 | **Input** | **Output**  |
 | --- | --- |
-| `['IN, CA2844AA', 'IN, CA1234TA', 'OUT, CA2844AA', 'IN, CA9999TT', 'IN, CA2866HI', 'OUT, CA1234TA', 'IN, CA2844AA', 'OUT, CA2866HI', 'IN, CA9876HH', 'IN, CA2822UU']` | CA2822UU |
+| picolo(['IN, CA2844AA', 'IN, CA1234TA', 'OUT, CA2844AA', 'IN, CA9999TT', 'IN, CA2866HI', 'OUT, CA1234TA', 'IN, CA2844AA', 'OUT, CA2866HI', 'IN, CA9876HH', 'IN, CA2822UU']) | CA2822UU |
 | | CA2844AA |
 | | CA9876HH |
 | | CA9999TT |
@@ -325,22 +259,13 @@ Print the output with all car numbers which are in the parking lot **sorted in a
 
 | **Input** | **Output** |
 | --- | ---|
-| `['IN, CA2844AA', 'IN, CA1234TA', 'OUT, CA2844AA', 'OUT, CA1234TA']` | Parking Lot is Empty |
+| picolo(['IN, CA2844AA', 'IN, CA1234TA', 'OUT, CA2844AA', 'OUT, CA1234TA']) | Parking Lot is Empty |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-IN\, CA2844AA
-IN\, CA1234TA
-OUT\, CA2844AA
-IN\, CA9999TT
-IN\, CA2866HI
-OUT\, CA1234TA
-IN\, CA2844AA
-OUT\, CA2866HI
-IN\, CA9876HH
-IN\, CA2822UU
+picolo(['IN, CA2844AA', 'IN, CA1234TA', 'OUT, CA2844AA', 'IN, CA9999TT', 'IN, CA2866HI', 'OUT, CA1234TA', 'IN, CA2844AA', 'OUT, CA2866HI', 'IN, CA9876HH', 'IN, CA2822UU'])
 [/input]
 [output]
 CA2822UU
@@ -349,12 +274,9 @@ CA9876HH
 CA9999TT
 [/output]
 [/test]
-[test]
+[test open]
 [input]
-IN\, CA2844AA
-IN\, CA1234TA
-OUT\, CA2844AA
-OUT\, CA1234TA
+picolo(['IN, CA2844AA', 'IN, CA1234TA', 'OUT, CA2844AA', 'OUT, CA1234TA'])
 [/input]
 [output]
 Parking Lot is Empty
@@ -362,12 +284,7 @@ Parking Lot is Empty
 [/test]
 [test]
 [input]
-IN\, mmm
-IN\, aaa
-IN\, ccc
-IN\, ggg
-IN\, sss
-IN\, gqq
+picolo(['IN, mmm', 'IN, aaa', 'IN, ccc', 'IN, ggg'. 'IN, sss', 'IN, gqq'])
 [/input]
 [output]
 aaa
@@ -380,13 +297,7 @@ sss
 [/test]
 [test]
 [input]
-IN\, mmm
-IN\, aaa
-IN\, ccc
-IN\, ggg
-IN\, sss
-IN\, sss
-IN\, gqq
+picolo(['IN, mmm', 'IN, aaa', 'IN, ccc', 'IN, ggg'. 'IN, sss', 'IN, sss', 'IN, gqq'])
 [/input]
 [output]
 aaa
@@ -399,23 +310,7 @@ sss
 [/test]
 [test]
 [input]
-IN\, mmm
-IN\, aaa
-IN\, ccc
-OUT\, ggg
-IN\, sss
-IN\, mmm
-OUT\, aaa
-IN\, ccc
-OUT\, ggg
-IN\, sss
-IN\, mmm
-IN\, aaa
-OUT\, ccc
-IN\, ggg
-IN\, sss
-IN\, sss
-OUT\, gqq
+picolo(['IN, mmm', 'IN, aaa', 'IN, ccc', 'OUT, ggg'. 'IN, sss', 'IN, mmm', 'OUT, aaa', 'IN, ccc', 'OUT, ggg', 'IN, sss', 'IN, mmm', 'IN, aaa', 'OUT, ccc', 'IN, ggg', 'IN, sss', 'IN, sss', 'OUT, gqq'])
 [/input]
 [output]
 aaa
@@ -426,16 +321,7 @@ sss
 [/test]
 [test]
 [input]
-IN\, mmm
-IN\, aaa
-IN\, ccc
-OUT\, ggg
-IN\, sss
-IN\, mmm
-IN\, ggg
-IN\, sss
-IN\, sss
-OUT\, gqq
+picolo(['IN, mmm', 'IN, aaa', 'IN, ccc', 'OUT, ggg'. 'IN, sss', 'IN, mmm', 'IN, ggg', 'IN, sss', 'IN, sss', 'OUT, gqq'])
 [/input]
 [output]
 aaa
@@ -447,22 +333,7 @@ sss
 [/test]
 [test]
 [input]
-IN\, mmm
-IN\, aaa
-IN\, ccc
-OUT\, ggg
-IN\, ll
-IN\, sss
-IN\, mmm
-IN\, kk
-IN\, sss
-IN\, sss
-IN\, sss
-IN\, mmm
-IN\, ggg
-IN\, sss
-IN\, sss
-OUT\, gqq
+picolo(['IN, mmm', 'IN, aaa', 'IN, ccc', 'OUT, ggg'. 'IN, ll', 'IN, sss', 'IN, mmm', 'IN, kk', 'IN, sss', 'IN, sss', 'IN, sss', 'IN, mmm', 'IN, ggg', 'IN, sss', 'IN, sss', 'OUT, gqq'])
 [/input]
 [output]
 aaa
@@ -488,12 +359,21 @@ sss
 [code-editor language=javascript]
 
 ```
-function solve(input) {
+function partyTime(input) {
   // Write your code here
 }
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Description
@@ -502,13 +382,13 @@ There is a party at SoftUni. Many guests are invited and they are **two types of
 
 When guests come to the party check if he/she **exists** in any of **the two reservation lists**.
 
-The input will be an **array of strings**. You will be given the list with the guests which you have to process until the following command is reached: `PARTY`.
+The input will be an **array of strings**. You will be given the list with the guests which you have to process until the following command is reached: "**PARTY**".
 
 All **VIP numbers start with a digit**.
 
-When you receive the command `PARTY`, the guests start coming.
+When you receive the command "**PARTY**", the guests start coming.
 
-Output all guests, who did not come to the party (VIPs must be first).
+Output all guests, who did not come to the party (**VIPs must be first**).
 
 # Example
 
@@ -516,7 +396,7 @@ Output all guests, who did not come to the party (VIPs must be first).
 
 | **Input** | **Output** |
 | --- | --- |
-| `['7IK9Yo0h', '9NoBUajQ', 'Ce8vwPmE', 'SVQXQCbc', 'tSzE5t0p', 'PARTY', '9NoBUajQ', 'Ce8vwPmE', 'SVQXQCbc']` | 2          |
+| partyTime(['7IK9Yo0h', '9NoBUajQ', 'Ce8vwPmE', 'SVQXQCbc', 'tSzE5t0p', 'PARTY', '9NoBUajQ', 'Ce8vwPmE', 'SVQXQCbc']) | 2          |
 | | 7IK9Yo0h   |
 | | tSzE5t0p   |
 
@@ -524,24 +404,16 @@ Output all guests, who did not come to the party (VIPs must be first).
 
 | **Input** | **Output** |
 | --- | --- |
-| `['m8rfQBvl', 'fc1oZCE0', 'UgffRkOn', '7ugX7bm0', '9CQBGUeJ', '2FQZT3uC', 'dziNz78I', 'mdSGyQCJ', 'LjcVpmDL', 'fPXNHpm1', 'HTTbwRmM', 'B5yTkMQi', '8N0FThqG', 'xys2FYzn', 'MDzcM9ZK','PARTY', '2FQZT3uC', 'dziNz78I', 'mdSGyQCJ', 'LjcVpmDL', 'fPXNHpm1', 'HTTbwRmM', 'B5yTkMQi', '8N0FThqG', 'm8rfQBvl', 'fc1oZCE0', 'UgffRkOn', '7ugX7bm0', '9CQBGUeJ']` | 2          |
+| partyTime(['m8rfQBvl', 'fc1oZCE0', 'UgffRkOn', '7ugX7bm0', '9CQBGUeJ', '2FQZT3uC', 'dziNz78I', 'mdSGyQCJ', 'LjcVpmDL', 'fPXNHpm1', 'HTTbwRmM', 'B5yTkMQi', '8N0FThqG', 'xys2FYzn', 'MDzcM9ZK','PARTY', '2FQZT3uC', 'dziNz78I', 'mdSGyQCJ', 'LjcVpmDL', 'fPXNHpm1', 'HTTbwRmM', 'B5yTkMQi', '8N0FThqG', 'm8rfQBvl', 'fc1oZCE0', 'UgffRkOn', '7ugX7bm0', '9CQBGUeJ']) | 2          |
 | | xys2FYzn |
 | | MDzcM9ZK |
 
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-7IK9Yo0h
-9NoBUajQ
-Ce8vwPmE
-SVQXQCbc
-tSzE5t0p
-PARTY
-9NoBUajQ
-Ce8vwPmE
-SVQXQCbc
+partyTime(['7IK9Yo0h', '9NoBUajQ', 'Ce8vwPmE', 'SVQXQCbc', 'tSzE5t0p', 'PARTY', '9NoBUajQ', 'Ce8vwPmE', 'SVQXQCbc'])
 [/input]
 [output]
 2
@@ -549,32 +421,19 @@ SVQXQCbc
 tSzE5t0p
 [/output]
 [/test]
-[test]
+[test open]
 [input]
-7IK9Yo0h
-9NoBUajQ
-Ce8vwPmE
-SVQXQCbc
-tSzE5t0p
-PARTY
-9NoBUajQ
-Ce8vwPmE
-SVQXQCbc
+partyTime(['m8rfQBvl', 'fc1oZCE0', 'UgffRkOn', '7ugX7bm0', '9CQBGUeJ', '2FQZT3uC', 'dziNz78I', 'mdSGyQCJ', 'LjcVpmDL', 'fPXNHpm1', 'HTTbwRmM', 'B5yTkMQi', '8N0FThqG', 'xys2FYzn', 'MDzcM9ZK','PARTY', '2FQZT3uC', 'dziNz78I', 'mdSGyQCJ', 'LjcVpmDL', 'fPXNHpm1', 'HTTbwRmM', 'B5yTkMQi', '8N0FThqG', 'm8rfQBvl', 'fc1oZCE0', 'UgffRkOn', '7ugX7bm0', '9CQBGUeJ'])
 [/input]
 [output]
-2
-7IK9Yo0h
-tSzE5t0p
+2 
+xys2FYzn
+MDzcM9ZK
 [/output]
 [/test]
 [test]
 [input]
-7IK9Yo0h
-9NoBUajQ
-Ce8vwPmE
-SVQXQCbc
-tSzE5t0p
-PARTY
+partyTime(['7IK9Yo0h', '9NoBUajQ', 'Ce8vwPmE', 'SVQXQCbc', 'tSzE5t0p', 'PARTY'])
 [/input]
 [output]
 5
@@ -587,14 +446,7 @@ tSzE5t0p
 [/test]
 [test]
 [input]
-7IK9Yo0h
-9NoBUajQ
-4Ce8vwPmE
-5SVQXQCbc
-6tSzE5t0p
-PARTY
-5SVQXQCbc
-6tSzE5t0p
+partyTime(['7IK9Yo0h', '9NoBUajQ', '4Ce8vwPmE', '5SVQXQCbc', '6tSzE5t0p', 'PARTY', '5SVQXQCbc', '6tSzE5t0p'])
 [/input]
 [output]
 3
@@ -605,20 +457,7 @@ PARTY
 [/test]
 [test]
 [input]
-IK9Yo0h
-NoBUajQ
-4Ce8vwPmE
-5SVQXQCbc
-7IK9Yo0h
-9NoBUajQ
-4Ce8vwPmE
-5SVQXQCbc
-6tSzE5t0p
-PARTY
-9NoBUajQ
-4Ce8vwPmE
-5SVQXQCbc
-6tSzE5t0p
+partyTime(['IK9Yo0h', 'NoBUajQ', '4Ce8vwPmE', '5SVQXQCbc', '7IK9Yo0h', '9NoBUajQ', '4Ce8vwPmE', '5SVQXQCbc', '6tSzE5t0p', 'PARTY', '9NoBUajQ', '4Ce8vwPmE', '5SVQXQCbc', '6tSzE5t0p'])
 [/input]
 [output]
 5
@@ -631,17 +470,7 @@ NoBUajQ
 [/test]
 [test]
 [input]
-IK9Yo0h
-NoBUajQ
-4Ce8vwPmE
-5SVQXQCbc
-6tSzE5t0p
-PARTY
-IK9Yo0h
-NoBUajQ
-4Ce8vwPmE
-5SVQXQCbc
-6tSzE5t0p
+partyTime(['NoBUajQ', '4Ce8vwPmE', '5SVQXQCbc', '6tSzE5t0p', 'PARTY', 'IK9Yo0h', 'NoBUajQ', '4Ce8vwPmE', '5SVQXQCbc', '6tSzE5t0p'])
 [/input]
 [output]
 0
@@ -649,17 +478,7 @@ NoBUajQ
 [/test]
 [test]
 [input]
-5IK9Yo0h
-NoBUajQ
-4Ce8vwPmE
-QXQCbc
-6tSzE5t0p
-4ftyfvwPmE
-jghvgyg
-6tSzE5t0p
-PARTY
-4Ce8vwPmE
-6tSzE5t0p
+partyTime(['5IK9Yo0h', 'NoBUajQ', '4Ce8vwPmE', 'QXQCbc', '6tSzE5t0p', '4ftyfvwPmE', 'jghvgyg', '6tSzE5t0p', 'PARTY', '4Ce8vwPmE', '6tSzE5t0p'])
 [/input]
 [output]
 6
@@ -685,12 +504,21 @@ jghvgyg
 [code-editor language=javascript]
 
 ```
-function solve(input) {
+function cardGame(input) {
   // Write your code here
 }
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Description
@@ -699,44 +527,49 @@ You are given a sequence of people and what cards each one of them draws from th
 
 The input will be an **array of strings**. Each string will be in this format:
 
-`{personName}: {PT, PT, PT,... PT}`
+"\{**personName**\}: \{**PT, PT, PT,... PT**\}"
 
-Where P `(2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A)` is the power of the card and T `(S, H, D, C)` is the type.
+Where P "(**2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A**)" is the power of the card and T "(**S, H, D, C**)" is the type.
 
-The person's name can contain any ASCII symbol except: `:`.
+The person's name can contain any ASCII symbol except: "**:**".
 
 The input will always be in the described format, there is no need to check it.
 
-A single person cannot have more than one card of the same power and type, if he draws such a card, he discards it.
+A single person cannot have more than one card of the same **power** and **type**, if he draws such a card, he discards it.
 
-The game is played using multiple decks. Each card has a value. The card value is calculated by multiplying its power by its type.
+The game is played using multiple decks. Each card has a value. The card value is calculated by multiplying its **power** by its **type**.
 
-Powers 2 to 10 have the same value as their number and J, Q, K, A are 11, 12, 13, 14.
+Powers 2 to 10 have the same value as their number and "**J, Q, K, A**" are "**11, 12, 13, 14**".
 
-Types are mapped to multipliers the following way `(S -> 4, H-> 3, D -> 2, C -> 1)`.
+Types are mapped to multipliers the following way "(**S -> 4, H-> 3, D -> 2, C -> 1**)".
 
 Print out the total card value, that each player has in his hand in the format:
 
-`{personName}: {value}`
+"\{**personName**\}: \{**value**\}"
 
 # Example
 
 | **Input** | **Output** |
 | --- | --- |
-| `['Peter: 2C, 4H, 9H, AS, QS', 'Tomas: 3H, 10S, JC, KD, 5S, 10S', 'Andrea: QH, QC, QS, QD', 'Tomas: 6H, 7S, KC, KD, 5S, 10C', 'Andrea: QH, QC, JS, JD, JC', 'Peter: JD, JD, JD, JD, JD, JD']` | Peter\: 167 |
+| cardGame(['Peter: 2C, 4H, 9H, AS, QS', 'Tomas: 3H, 10S, JC, KD, 5S, 10S', 'Andrea: QH, QC, QS, QD', 'Tomas: 6H, 7S, KC, KD, 5S, 10C', 'Andrea: QH, QC, JS, JD, JC', 'Peter: JD, JD, JD, JD, JD, JD']) | Peter\: 167 |
 | | Tomas\: 175 |
 | | Andrea\: 197  |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+cardGame(['Peter: 2C, 4H, 9H, AS, QS', 'Tomas: 3H, 10S, JC, KD, 5S, 10S', 'Andrea: QH, QC, QS, QD', 'Tomas: 6H, 7S, KC, KD, 5S, 10C', 'Andrea: QH, QC, JS, JD, JC', 'Peter: JD, JD, JD, JD, JD, JD'])
+[/input]
+[output]
+Peter\: 167
+Tomas\: 175
+Andrea\: 197
+[/output]
+[/test]
 [test]
 [input]
-Pesho\: 2C\, 4H\, 9H\, AS\, QS
-Slav\: 3H\, 10S\, JC\, KD\, 5S\, 10S
-Peshoslav\: QH\, QC\, QS\, QD
-Slav\: 6H\, 7S\, KC\, KD\, 5S\, 10C
-Peshoslav\: QH\, QC\, JS\, JD\, JC
-Pesho\: JD\, JD\, JD\, JD\, JD\, JD
+cardGame(['Pesho: 2C, 4H, 9H, AS, QS', 'Slav: 3H, 10S, JC, KD, 5S, 10S', 'Peshoslav: QH, QC, QS, QD', 'Slav: 6H, 7S, KC, KD, 5S, 10C', 'Peshoslav: QH, QC, JS, JD, JC', 'Pesho: JD, JD, JD, JD, JD, JD'])
 [/input]
 [output]
 Pesho\: 167
@@ -746,7 +579,7 @@ Peshoslav\: 197
 [/test]
 [test]
 [input]
-Jonathan DA\: JD\, JD\, JD\, JD
+cardGame(['Jonathan DA: JD, JD, JD, JD'])
 [/input]
 [output]
 Jonathan DA\: 22
@@ -754,12 +587,7 @@ Jonathan DA\: 22
 [/test]
 [test]
 [input]
-Pesho\: 2C\, 4H\, 9H\, AS\, QS
-Pesh0\: 3H\, 10S\, JC\, KD\, 5S\, 10S
-pesho\: QH\, QC\, QS\, QD
-Pe$ho\: 6H\, 7S\, KC\, KD\, 5S\, 10C
-PESHO\: QH\, QC\, JS\, JD\, JC
-P3sho\: JD\, 7D\, 3D\, 4D\, 5D\, 6D
+cardGame(['Pesho: 2C, 4H, 9H, AS, QS', 'Pesh0: 3H, 10S, JC, KD, 5S, 10S', 'pesho: QH, QC, QS, QD', 'Pe$ho: 6H, 7S, KC, KD, 5S, 10C', 'PESHO: QH, QC, JS, JD, JC', 'P3sho: JD, 7D, 3D, 4D, 5D, 6D'])
 [/input]
 [output]
 Pesho\: 145
@@ -772,11 +600,7 @@ P3sho\: 72
 [/test]
 [test]
 [input]
-Pesho\: 2C\, 4H\, 9H\, AS\, QS
-Slav\: 3H\, 10S\, JC\, KD\, 5S\, 10S
-Slav\: 6H\, 7S\, KC\, KD\, 5S\, 10C
-Peshoslav\: QH\, QC\, JS\, JD\, JC
-Pesho\: JD\, JD\, JD\, JD
+cardGame(['Pesho: 2C, 4H, 9H, AS, QS', 'Slav: 3H, 10S, JC, KD, 5S, 10S', 'Slav: 6H, 7S, KC, KD, 5S, 10C', 'Peshoslav: QH, QC, JS, JD, JC', 'Pesho: JD, JD, JD, JD'])
 [/input]
 [output]
 Pesho\: 167
@@ -786,15 +610,7 @@ Peshoslav\: 125
 [/test]
 [test]
 [input]
-Pesho\: 2C\, 4H\, 9H\, AS\, QS
-Slav\: 3H\, 10S\, JC\, KD\, 5S\, 10S
-A\: 6H\, 7S\, KC\, KD\, 5S\, 10C
-Peshoslav\: QH\, QC\, JS\, JD\, JC
-Slav\: 6H\, 7S\, KC\, KD\, 5S\, 10C
-Peshoslav\: QH\, QC\, JS\, JD\, JC
-A\: 6H\, 7S\, KC\, KD\, 5S\, 10C
-Peshoslav\: QH\, QC\, JS\, JD\, JC
-Pesho\: JD\, JD\, JD\, JD
+cardGame(['Pesho: 2C, 4H, 9H, AS, QS', 'Slav: 3H, 10S, JC, KD, 5S, 10S', 'A: 6H, 7S, KC, KD, 5S, 10C', 'Peshoslav: QH, QC, JS, JD, JC', 'Slav: 6H, 7S, KC, KD, 5S, 10C', 'Peshoslav: QH, QC, JS, JD, JC', 'A: 6H, 7S, KC, KD, 5S, 10C', 'Peshoslav: QH, QC, JS, JD, JC', 'Pesho: JD, JD, JD, JD'])
 [/input]
 [output]
 Pesho\: 167
@@ -805,13 +621,7 @@ Peshoslav\: 125
 [/test]
 [test]
 [input]
-A\: 6H\, 7S\, KC\, KD\, 5S\, 10C
-Peshoslav\: QH\, QC\, JS\, JD\, JC
-Slav\: 6H\, 7S\, KC\, KD\, 5S\, 10C
-Peshoslav\: QH\, QC\, JS\, JD\, JC
-A\: 6H\, 7S\, KC\, KD\, 5S\, 10C
-Peshoslav\: QH\, QC\, JS\, JD\, JC
-Pesho\: JD\, JD\, JD\, JD
+cardGame(['A: 6H, 7S, KC, KD, 5S, 10C', 'Peshoslav: QH, QC, JS, JD, JC', 'Slav: 6H, 7S, KC, KD, 5S, 10C', 'Peshoslav: QH, QC, JS, JD, JC', 'A: 6H, 7S, KC, KD, 5S, 10C', 'Peshoslav: QH, QC, JS, JD, JC', 'Pesho: JD, JD, JD, JD'])
 [/input]
 [output]
 A\: 115
@@ -834,32 +644,43 @@ Pesho\: 22
 [code-editor language=javascript]
 
 ```
-function solve(input) {
+function companyUsers(input) {
   // Write your code here
 }
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Description
 
 Write a function which keeps information about companies and their employees.
 
-You will receive an array of strings containing company a name and an employee id.
+You will receive an array of strings containing a **company name** and an **employee id**.
 
-Add each employee to the specified company. Keep in mind that a company cannot have two employees with the same id.
+Add each employee to the specified company. 
 
-When you finish reading the data, order the companies by name in ascending order.
+Keep in mind that a company cannot have two employees with the same id.
+
+When you finish reading the data, order the companies by **name** in **ascending order**.
 
 Print the company name and each employee's id in the following format:
 
-`{companyName}
--- {id1}
--- {id2}
--- {idN}`
+"\{**companyName**\}
+\-\- \{**id1**\}
+\-\- \{**id2**\}
+\-\- \{**idN**\}"
 
-- The input is an **array of strings**, each in the format: `{companyName} -> {employeeId}`
+- The input is an **array of strings**, each in the format: "\{**companyName**\} \-\> \{**employeeId**\}"
 - The input will always be valid
 
 # Examples
@@ -868,7 +689,7 @@ Print the company name and each employee's id in the following format:
 
 | **Input** | **Output** |
 | --- | --- |
-| `['SoftUni -> AA12345', 'SoftUni -> BB12345', 'Microsoft -> CC12345', 'HP -> BB12345']` | HP           |
+| companyUsers(['SoftUni -> AA12345', 'SoftUni -> BB12345', 'Microsoft -> CC12345', 'HP -> BB12345']) | HP           |
 |                                                                                         | \-\- BB12345 |
 |                                                                                         | Microsoft    |
 |                                                                                         | \-\- CC12345 |
@@ -880,7 +701,7 @@ Print the company name and each employee's id in the following format:
 
 | **Input** | **Output** |
 | --- | --- |
-| `['SoftUni -> AA12345', 'SoftUni -> CC12344', 'Lenovo -> XX23456', 'SoftUni -> AA12345', 'Movement -> DD11111']` | Lenovo       |
+| companyUsers(['SoftUni -> AA12345', 'SoftUni -> CC12344', 'Lenovo -> XX23456', 'SoftUni -> AA12345', 'Movement -> DD11111']) | Lenovo       |
 |                                                                                                                  | \-\- XX23456 |
 |                                                                                                                  | Movement     |
 |                                                                                                                  | \-\- DD11111 |
@@ -890,12 +711,9 @@ Print the company name and each employee's id in the following format:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-SoftUni \-\> AA12345
-SoftUni \-\> BB12345
-Microsoft \-\> CC12345
-HP \-\> BB12345
+companyUsers(['SoftUni -> AA12345', 'SoftUni -> BB12345', 'Microsoft -> CC12345', 'HP -> BB12345'])
 [/input]
 [output]
 HP
@@ -907,13 +725,9 @@ SoftUni
 \-\- BB12345
 [/output]
 [/test]
-[test]
+[test open]
 [input]
-SoftUni \-\> AA12345
-SoftUni \-\> CC12344
-Lenovo \-\> XX23456
-SoftUni \-\> AA12345
-Movement \-\> DD11111
+companyUsers(['SoftUni -> AA12345', 'SoftUni -> CC12344', 'Lenovo -> XX23456', 'SoftUni -> AA12345', 'Movement -> DD11111'])
 [/input]
 [output]
 Lenovo
@@ -927,12 +741,7 @@ SoftUni
 [/test]
 [test]
 [input]
-A \-\> ncsms
-B \-\> sasa
-B \-\> sasa
-M \-\> sasads
-M \-\> 12ww
-Z \-\> wqwqw
+companyUsers(['A -> ncsms', 'B -> sasa', 'B -> sasa', 'M -> M', 'M -> 12ww', 'Z -> wqwqw'])
 [/input]
 [output]
 A
@@ -948,15 +757,7 @@ Z
 [/test]
 [test]
 [input]
-A \-\> ncsms
-B \-\> sasa
-B \-\> sasa
-M \-\> sasgyads
-M \-\> 12gyww
-Z \-\> wqwqw
-L \-\> sasa
-L \-\> sahjksads
-L \-\> 12vvww
+companyUsers(['A -> ncsms', 'B -> sasa', 'B -> sasa', 'M -> sasgyads', 'M -> 12gyww', 'Z -> wqwqw', 'L -> sasa', 'L -> sahjksads', 'L -> 12vvww'])
 [/input]
 [output]
 A
@@ -976,14 +777,7 @@ Z
 [/test]
 [test]
 [input]
-F \-\> dncsms
-B \-\> sasadd
-B \-\> sasadd
-M \-\> sasgdyads
-M \-\> 12gyww
-F \-\> wqwqw
-L \-\> sasa
-L \-\> sahjksads
+companyUsers(['F -> dncsms', 'B -> sasadd', 'B -> sasadd', 'M -> sasgdyads', 'M -> 12gyww', 'F -> wqwqw', 'L -> sasa', 'L -> sahjksads'])
 [/input]
 [output]
 B
@@ -1001,14 +795,7 @@ M
 [/test]
 [test]
 [input]
-F \-\> dncsms
-A \-\> sa44sadd
-B \-\> sasadd
-M \-\> sas,gdyads
-M \-\> 12gnjyww
-N \-\> wqwqw
-L \-\> sasa
-L \-\> sahjksads
+companyUsers(['F -> dncsms', 'A -> sa44sadd', 'B -> sasadd', 'M -> sas,gdyads', 'M -> 12gnjyww', 'N -> wqwqw', 'L -> sasa', 'L -> sahjksads'])
 [/input]
 [output]
 A
@@ -1029,17 +816,7 @@ N
 [/test]
 [test]
 [input]
-F \-\> dnjkcsms
-A \-\> sa44sadd
-B \-\> sanjsadd
-M \-\> sas,gdyads
-M \-\> 12gnjyww
-N \-\> wqwqw
-O \-\> snnasa
-L \-\> sa(\*hjksads
-P \-\> 12gnjyww
-N \-\> wqwqw
-Q \-\> snnasa
+companyUsers(['F -> dnjkcsms', 'A -> sa44sadd', 'B -> sanjsadd', 'M -> sas,gdyads', 'M -> 12gnjyww', 'N -> wqwqw', 'O -> snnasa', 'L -> sa(\*hjksads', 'P -> 12gnjyww', 'N -> wqwqw', 'Q -> snnasa'])
 [/input]
 [output]
 A
@@ -1077,12 +854,21 @@ Q
 [code-editor language=javascript]
 
 ```
-function solve(input) {
+function minerTask(input) {
   // Write your code here
 }
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Description
@@ -1095,9 +881,9 @@ Your task is to collect the resources and print each of them on a new line.
 
 **Print the resources and their quantities in this format**:
 
-`{resource} –> {quantity}`
+"\{**resource**\} \–\> \{**quantity**\}"
 
-The quantities inputs will be in range `[1 ... 2 000 000 000]`
+The quantities inputs will be in range "\[**1...2 000 000 000**\]"
 
 # Examples
 
@@ -1105,7 +891,7 @@ The quantities inputs will be in range `[1 ... 2 000 000 000]`
 
 | **Input** | **Output** |
 | --- | --- |
-| `['Gold', '155', 'Silver', '10', 'Copper', '17']` | Gold \-\> 155  |
+| minerTask(['Gold', '155', 'Silver', '10', 'Copper', '17']) | Gold \-\> 155  |
 |                                                   | Silver \-\> 10 |
 |                                                   | Copper \-\> 17 |
 
@@ -1113,37 +899,25 @@ The quantities inputs will be in range `[1 ... 2 000 000 000]`
 
 | **Input** | **Output** |
 | --- | --- |
-| `['gold', '155', 'silver', '10', 'copper', '17', 'gold', '15']` | gold \-\> 170  |
+| minerTask(['gold', '155', 'silver', '10', 'copper', '17', 'gold', '15']) | gold \-\> 170  |
 |                                                                 | silver \-\> 10 |
 |                                                                 | copper \-\> 17 |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-gold
-155
-silver
-10
-copper
-17
+minerTask(['Gold', '155', 'Silver', '10', 'Copper', '17'])
 [/input]
 [output]
-gold \-\> 155
-silver \-\> 10
-copper \-\> 17
+Gold \-\> 155
+Silver \-\> 10
+Copper \-\> 17
 [/output]
 [/test]
-[test]
+[test open]
 [input]
-gold
-155
-silver
-10
-copper
-17
-gold
-15
+minerTask(['gold', '155', 'silver', '10', 'copper', '17', 'gold', '15'])
 [/input]
 [output]
 gold \-\> 170
@@ -1153,12 +927,17 @@ copper \-\> 17
 [/test]
 [test]
 [input]
-silver
-14
-silver
-\-2
-silver
-\-3
+minerTask(['gold', '155', 'silver', '10', 'copper', '17'])
+[/input]
+[output]
+gold \-\> 155
+silver \-\> 10
+copper \-\> 17
+[/output]
+[/test]
+[test]
+[input]
+minerTask(['silver', '14', 'silver', '-2', 'silver', '\-3'])
 [/input]
 [output]
 silver \-\> 9
@@ -1166,10 +945,7 @@ silver \-\> 9
 [/test]
 [test]
 [input]
-Gold
-15
-gold
-15
+minerTask(['Gold', '15', 'gold', '15'])
 [/input]
 [output]
 Gold \-\> 15
@@ -1178,10 +954,7 @@ gold \-\> 15
 [/test]
 [test]
 [input]
-Gold
-12
-gold
-1
+minerTask(['Gold', '12', 'gold', '1'])
 [/input]
 [output]
 Gold \-\> 12
@@ -1190,16 +963,7 @@ gold \-\> 1
 [/test]
 [test]
 [input]
-a
-15
-a
-40
-b
-3
-c
-45
-d
-152
+minerTask(['a', '15', 'a', '40', 'b', '3', 'c', '45', 'd', '152'])
 [/input]
 [output]
 a \-\> 55
