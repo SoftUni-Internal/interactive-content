@@ -29,6 +29,7 @@ for (int i = 0; i < n; i++) {
 }
 ```
 
+[/slide]
 
 [slide hideTitle]
 # Reading from a Single Line
