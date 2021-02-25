@@ -53,7 +53,7 @@ List<Integer> items = Arrays
 [slide hideTitle]
 # Printing Lists 
 
-**Printing a list using a `for` loop:**
+**Printing a list using a "for" loop:**
 
 ```java live
 List<String> months = new ArrayList<>(
@@ -63,7 +63,7 @@ for (int index = 0; index < months.size(); index++) {
    System.out.print(months.get(index) + " ");
 }
 ```
-**Printing a list using a `for-each` loop:**
+**Printing a list using a "for-each" loop:**
 
 ```java live
 List<String> numbers = new ArrayList<>(
@@ -73,7 +73,7 @@ for (String number : numbers) {
    System.out.print(number + " ");
 }
 ```
-**Printing a list using a `String.join(…)`:**
+**Printing a list using a "String.join(…)":**
 
 ```java live
 List<String> list = new ArrayList<>(
