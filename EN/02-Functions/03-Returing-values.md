@@ -110,7 +110,7 @@ It can access the outer function's variables and arguments.
 
 However, **the outer function does not have access to the inner function's variables**, nor does the calling application have access to the inner function.
 
-[image assetsSrc="Nested-Functions.png" /]
+[image assetsSrc="js-fundamentals-1-adv-functions-1.png" /]
 
 ## Example
 
