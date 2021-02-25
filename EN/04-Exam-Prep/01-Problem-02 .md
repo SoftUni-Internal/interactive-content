@@ -95,6 +95,7 @@ For each barcode that you process, you need to print a message.
 ||Product group\: 00|
 
 
+
 [/task-description]
 [code-io /]
 [tests]
