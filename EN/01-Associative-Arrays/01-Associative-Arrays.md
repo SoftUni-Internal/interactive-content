@@ -103,6 +103,15 @@ function phoneBook(input){
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Description
@@ -111,7 +120,7 @@ Write a function that stores information about a **person's name** and their **p
 
 The input comes in the form of an **array of strings**.
 
-Each string contains a name and a number.
+Each string contains a **name** and a **number**.
 
 If you receive the same name twice just replace the number.
 
@@ -123,18 +132,15 @@ Use an **associative array**.
 
 | **Input** | **Output** |
 | --- | --- |
-| `['Tim 0834212554', 'Peter 0877547887', 'Bill 0896543112', 'Tim 0876566344']`| Tim \-\> 0876566344   |
+| phoneBook(['Tim 0834212554', 'Peter 0877547887', 'Bill 0896543112', 'Tim 0876566344']) | Tim \-\> 0876566344   |
 |                                                                              | Peter \-\> 0877547887 |
 |                                                                              | Bill \-\> 0896543112  |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-Tim 0834212554
-Peter 0877547887
-Bill 0896543112
-Tim 0876566344
+phoneBook(['Tim 0834212554', 'Peter 0877547887', 'Bill 0896543112', 'Tim 0876566344'])
 [/input]
 [output]
 Tim \-\> 0876566344
@@ -144,10 +150,7 @@ Bill \-\> 0896543112
 [/test]
 [test]
 [input]
-hj 0552554
-hr 087587
-hj 0453112
-hjk 0845344
+phoneBook(['hj 0552554', 'hr 087587', 'hj 0453112', 'hjk 0845344'])
 [/input]
 [output]
 hj \-\> 0453112
@@ -157,10 +160,7 @@ hjk \-\> 0845344
 [/test]
 [test]
 [input]
-hkkk 0552554
-hkkk 08754557
-hj 0453112
-hjk 0845344
+phoneBook(['hkkk 0552554', 'hkkk 08754557', 'hj 0453112', 'hjk 0845344'])
 [/input]
 [output]
 hkkk \-\> 08754557
@@ -170,10 +170,7 @@ hjk \-\> 0845344
 [/test]
 [test]
 [input]
-ha 0552554
-ha 087587
-hj 0jkl12
-hghgh 08455534544
+phoneBook(['ha 0552554', 'ha 087587', 'hj 0jkl12', 'hghgh 08455534544'])
 [/input]
 [output]
 ha \-\> 087587
@@ -183,10 +180,7 @@ hghgh \-\> 08455534544
 [/test]
 [test]
 [input]
-hj 0552554
-h 087587
-hdfdf 0454563112
-hjghjk 0845344
+phoneBook(['hj 0552554', 'h 087587', 'hdfdf 0454563112', 'hjghjk 0845344'])
 [/input]
 [output]
 hj \-\> 0552554
@@ -197,10 +191,7 @@ hjghjk \-\> 0845344
 [/test]
 [test]
 [input]
-sdfshj 055562554
-hjhgjr 0875587
-sdfhj 0453456112
-tyuhjk 0844565344
+phoneBook(['sdfshj 055562554', 'hjhgjr 0875587', 'sdfhj 0453456112', 'tyuhjk 0844565344'])
 [/input]
 [output]
 sdfshj \-\> 055562554
@@ -301,6 +292,15 @@ function meetings(input){
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Description
@@ -309,11 +309,11 @@ Write a function that receives **weekdays** and **names** as input.
 
 Print a message for every successful appointment in the following format:
 
-`Scheduled for ${day}`
+"**Scheduled for** \$\{**day**\}"
 
 If the same weekday occurs a second time, print a **conflict** message:
 
-`Conflict on ${day}!`
+"**Conflict on** \$\{**day**\}**!**"
 
 In the end, print a list containing all successful and conflicting appointments.
 
@@ -321,7 +321,7 @@ In the end, print a list containing all successful and conflicting appointments.
 
 | **Input** | **Output** |
 | --- | --- |
-| `['Monday Peter', 'Wednesday Bill', 'Monday Tim', 'Friday Tim']` | Scheduled for Monday    |
+| meetings(['Monday Peter', 'Wednesday Bill', 'Monday Tim', 'Friday Tim']) | Scheduled for Monday    |
 |                                                                  | Scheduled for Wednesday |
 |                                                                  | Conflict on Monday      |
 |                                                                  | Scheduled for Friday    |
@@ -332,12 +332,9 @@ In the end, print a list containing all successful and conflicting appointments.
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-Monday Peter
-Wednesday Bill
-Monday Tim
-Friday Tim
+meetings(['Monday Peter', 'Wednesday Bill', 'Monday Tim', 'Friday Tim'])
 [/input]
 [output]
 Scheduled for Monday
@@ -351,9 +348,7 @@ Friday \-\> Tim
 [/test]
 [test]
 [input]
-Monday Peter
-Wednesday Bill
-Friday Tim
+meetings(['Monday Peter', 'Wednesday Bill', 'Friday Tim'])
 [/input]
 [output]
 Scheduled for Monday
@@ -366,11 +361,7 @@ Friday \-\> Tim
 [/test]
 [test]
 [input]
-Friday Bob
-Saturday Ted
-Monday Bill
-Monday John
-Wednesday George
+meetings(['Friday Bob', 'Saturday Ted', 'Monday Bill', 'Monday John', 'Wednesday George'])
 [/input]
 [output]
 Scheduled for Friday
@@ -386,14 +377,7 @@ Wednesday \-\> George
 [/test]
 [test]
 [input]
-Thursday Bob
-Tuesday Ted
-Tuesday Jeff
-Sunday George
-Wednesday John
-Sunday Jeff
-Sunday Jeff
-Saturday Bill
+meetings(['Thursday Bob', 'Tuesday Ted', 'Tuesday Jeff', 'Sunday George', 'Wednesday John', 'Sunday Jeff', 'Sunday Jeff', 'Saturday Bill'])
 [/input]
 [output]
 Scheduled for Thursday
@@ -413,20 +397,7 @@ Saturday \-\> Bill
 [/test]
 [test]
 [input]
-Sunday John
-Tuesday Jeff
-Sunday Bob
-Monday Tim
-Friday Bill
-Sunday Peter
-Saturday John
-Monday George
-Tuesday Jeff
-Tuesday Ted
-Wednesday Bob
-Wednesday John
-Tuesday John
-Tuesday Ted
+meetings(['Sunday John', 'Tuesday Jeff', 'Sunday Bob', 'Monday Tim', 'Friday Bill', 'Sunday Peter', 'Saturday John', 'Monday George', 'Tuesday Jeff', 'Tuesday Ted', 'Wednesday Bob', 'Wednesday John', 'Tuesday John', 'Tuesday Ted'])
 [/input]
 [output]
 Scheduled for Sunday
@@ -453,17 +424,7 @@ Wednesday \-\> Bob
 [/test]
 [test]
 [input]
-Tuesday Ted
-Tuesday Ted
-Tuesday Ted
-Tuesday Ted
-Tuesday Ted
-Tuesday Ted
-Tuesday Ted
-Tuesday Ted
-Tuesday Ted
-Tuesday Ted
-Tuesday Jeff
+meetings(['Tuesday Ted', 'Tuesday Ted', 'Tuesday Ted', 'Tuesday Ted', 'Tuesday Ted', 'Tuesday Ted', 'Tuesday Ted', 'Tuesday Ted', 'Tuesday Jeff', 'Tuesday Ted', 'Tuesday Ted', 'Tuesday Ted', 'Tuesday Jeff'])
 [/input]
 [output]
 Scheduled for Tuesday
@@ -573,15 +534,24 @@ function addressBook(input){
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Description
 
 Write a function that takes **names** and **addresses** as input.
 
-The values will be separated by `":"`.
+The values will be separated by "**:**".
 
-If same name occurs more than once, save the **latest** address.
+If same **name** occurs more than once, save the **latest** address.
 
 Print out a list of all entries, **sorted** alphabetically by **name**.
 
@@ -589,18 +559,15 @@ Print out a list of all entries, **sorted** alphabetically by **name**.
 
 | **Input** | **Output** |
 | --- | --- |
-| `['Tim:Doe Crossing', 'Bill:Nelson Place', 'Peter:Carlyle Ave', 'Bill:Ornery Rd']` | Bill \-\> Ornery Rd    |
+| addressBook(['Tim:Doe Crossing', 'Bill:Nelson Place', 'Peter:Carlyle Ave', 'Bill:Ornery Rd']) | Bill \-\> Ornery Rd    |
 |                                                                                    | Peter \-\> Carlyle Ave |
 |                                                                                    | Tim \-\> Doe Crossing  |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-Tim\:Doe Crossing
-Bill\:Nelson Place
-Peter\:Carlyle Ave
-Bill\:Ornery Rd
+addressBook(['Tim:Doe Crossing', 'Bill:Nelson Place', 'Peter:Carlyle Ave', 'Bill:Ornery Rd'])
 [/input]
 [output]
 Bill \-\> Ornery Rd
@@ -610,12 +577,7 @@ Tim \-\> Doe Crossing
 [/test]
 [test]
 [input]
-Bob\:Coleman Ave
-Tim\:Katie Crossing
-John\:Coleman Ave
-John\:Grover Rd
-Jeff\:Acker Crossing
-Bob\:Katie Crossing
+addressBook(['Bob:Coleman Ave', 'Tim:Katie Crossing', 'John:Coleman Ave', 'John:Grover Rd', 'Jeff:Acker Crossing', 'Bob:Katie Crossing'])
 [/input]
 [output]
 Bob \-\> Katie Crossing
@@ -626,17 +588,7 @@ Tim \-\> Katie Crossing
 [/test]
 [test]
 [input]
-Bob\:Huxley Rd
-John\:Milwaukee Crossing
-Peter\:Fordem Ave
-Bob\:Redwing Ave
-George\:Mesta Crossing
-Ted\:Gateway Way
-Bill\:Gateway Way
-John\:Grover Rd
-Peter\:Huxley Rd
-Jeff\:Gateway Way
-Jeff\:Huxley Rd
+addressBook(['Bob:Huxley Rd', 'John:Milwaukee Crossing', 'Peter:Fordem Ave', 'Bob:Redwing Ave', 'George:Mesta Crossing', 'Ted:Gateway Way', 'Bill:Gateway Way', 'John:Grover Rd', 'Peter:Huxley Rd', 'Jeff:Gateway Way',  'Jeff:Huxley Rd'])
 [/input]
 [output]
 Bill \-\> Gateway Way
@@ -650,23 +602,7 @@ Ted \-\> Gateway Way
 [/test]
 [test]
 [input]
-Bob\:Coleman Ave
-Tim\:Katie Crossing
-John\:Coleman Ave
-John\:Grover Rd
-Jeff\:Acker Crossing
-Bob\:Katie Crossing
-Bob\:Huxley Rd
-John\:Milwaukee Crossing
-Peter\:Fordem Ave
-Bob\:Redwing Ave
-George\:Mesta Crossing
-Ted\:Gateway Way
-Bill\:Gateway Way
-John\:Grover Rd
-Peter\:Huxley Rd
-Jeff\:Gateway Way
-Jeff\:Huxley Rd
+addressBook(['Bob:Coleman Ave', 'Tim:Katie Crossing', 'John:Coleman Ave', 'John:Grover Rd', 'Jeff:Acker Crossing', 'Bob:Katie Crossing', 'Bob:Huxley Rd', 'John:Milwaukee Crossing', 'Peter:Fordem Ave', 'Bob:Redwing Ave',  'George:Mesta Crossing', 'Ted:Gateway Way', 'Bill:Gateway Way', 'John:Grover Rd', 'Peter:Huxley Rd', 'Jeff:Gateway Way', 'Jeff:Huxley Rd'])
 [/input]
 [output]
 Bill \-\> Gateway Way
@@ -681,28 +617,7 @@ Tim \-\> Katie Crossing
 [/test]
 [test]
 [input]
-George\:Westend Ave
-Jeff\:Westend Ave
-Bill\:Redwing Ave
-George\:Coleman Ave
-George\:Acker Crossing
-Bill\:Grover Rd
-Jeff\:8th Rd
-John\:Milwaukee Crossing
-Bob\:Fordem Ave
-Ted\:Toban Ave
-Bill\:8th Rd
-Peter\:Katie Crossing
-Ted\:Dayton Ave
-Jeff\:Milwaukee Crossing
-Ted\:Gateway Way
-George\:Westend Ave
-George\:Westend Ave
-John\:Huxley Rd
-George\:Katie Crossing
-Peter\:Milwaukee Crossing
-Peter\:Katie Crossing
-Tim\:Westend Ave
+addressBook(['George:Westend Ave', 'Jeff:Westend Ave', 'Bill:Redwing Ave', 'George:Coleman Ave', 'George:Acker Crossing', 'Bill:Grover Rd', 'Jeff:8th Rd', 'John:Milwaukee Crossing', 'Bob:Fordem Ave', 'Ted:Toban Ave',  'Bill:8th Rd', 'Peter:Katie Crossing', 'Ted:Dayton Ave', 'Jeff:Milwaukee Crossing', 'Ted:Gateway Way', 'George:Westend Ave', 'George:Westend Ave', 'John:Huxley Rd', 'George:Katie Crossing', 'Peter:Milwaukee Crossing', 'Peter:Katie Crossing', 'Tim:Westend Ave'])
 [/input]
 [output]
 Bill \-\> 8th Rd
@@ -717,13 +632,7 @@ Tim \-\> Westend Ave
 [/test]
 [test]
 [input]
-Ted\:Toban Ave
-Ted\:Toban Ave
-Ted\:Toban Ave
-Ted\:Toban Ave
-Ted\:Toban Ave
-Peter\:Katie Crossing
-Ted\:Dayton Ave
+addressBook(['Ted:Toban Ave', 'Ted:Toban Ave', 'Ted:Toban Ave', 'Ted:Toban Ave', 'Ted:Toban Ave', 'Peter:Katie Crossing', 'Ted:Dayton Ave'])
 [/input]
 [output]
 Peter \-\> Katie Crossing
