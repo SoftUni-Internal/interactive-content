@@ -355,7 +355,7 @@ The formula for calculating a circle's perimeter is: P = 2 * π * R.
 "R" is the radius.
 [/hint]
 [hint]
-The formula for calculating a circle's perimeter is: A = π * r * r.
+The formula for calculating a circle's perimeter is: A = π * R * R.
 [/hint]
 [/hints]
 
