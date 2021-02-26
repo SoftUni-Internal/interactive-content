@@ -151,13 +151,13 @@ The words will be **separated by a single space**.
 
 | **Input** | **Output**  |
 | --- | --- |
-| oddOccurences(['Java C# Php PHP Java PhP 3 C# 3 1 5 C#']) | c\# php 1 5 |
+| oddOccurences('Java C# Php PHP Java PhP 3 C# 3 1 5 C#') | c\# php 1 5 |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-oddOccurences(['Java C# Php PHP Java PhP 3 C# 3 1 5 C#'])
+oddOccurences('Java C# Php PHP Java PhP 3 C# 3 1 5 C#')
 [/input]
 [output]
 c\# php 1 5
@@ -165,7 +165,7 @@ c\# php 1 5
 [/test]
 [test]
 [input]
-oddOccurences(['a 2 A a A c D C dcndjk dbsa bsd bs Cbc D ss as'])
+oddOccurences('a 2 A a A c D C dcndjk dbsa bsd bs Cbc D ss as')
 [/input]
 [output]
 2 dcndjk dbsa bsd bs cbc ss as
@@ -173,7 +173,7 @@ oddOccurences(['a 2 A a A c D C dcndjk dbsa bsd bs Cbc D ss as'])
 [/test]
 [test]
 [input]
-oddOccurences(['a a a a a D Sb dbsnb bdw dd dd dss'])
+oddOccurences('a a a a a D Sb dbsnb bdw dd dd dss')
 [/input]
 [output]
 a d sb dbsnb bdw dss
@@ -181,7 +181,7 @@ a d sb dbsnb bdw dss
 [/test]
 [test]
 [input]
-oddOccurences(['b b b b b'])
+oddOccurences('b b b b b')
 [/input]
 [output]
 b
@@ -189,7 +189,7 @@ b
 [/test]
 [test]
 [input]
-oddOccurences(['a a a b b c'])
+oddOccurences('a a a b b c')
 [/input]
 [output]
 a c
@@ -197,7 +197,7 @@ a c
 [/test]
 [test]
 [input]
-oddOccurences(['a a a a a a a a a aa a a a a ab bb bb cccc'])
+oddOccurences('a a a a a a a a a aa a a a a ab bb bb cccc')
 [/input]
 [output]
 a aa ab cccc
@@ -240,7 +240,7 @@ Write a function that:
 
 - Records a car license plate for every car that enters the parking lot
 - Removes the car when it goes out
-- Input will be an array of strings in the following format "\[\'**direction**\, **carNumber**\'\]"
+- Input will be an array of strings in the following format "\['**direction**, **carNumber**'\]"
 
 Print the output with all car numbers which are in the parking lot **sorted in ascending order by their license plate**.
 
@@ -284,7 +284,7 @@ Parking Lot is Empty
 [/test]
 [test]
 [input]
-picolo(['IN, mmm', 'IN, aaa', 'IN, ccc', 'IN, ggg'. 'IN, sss', 'IN, gqq'])
+picolo(['IN, mmm', 'IN, aaa', 'IN, ccc', 'IN, ggg', 'IN, sss', 'IN, gqq'])
 [/input]
 [output]
 aaa
@@ -297,7 +297,7 @@ sss
 [/test]
 [test]
 [input]
-picolo(['IN, mmm', 'IN, aaa', 'IN, ccc', 'IN, ggg'. 'IN, sss', 'IN, sss', 'IN, gqq'])
+picolo(['IN, mmm', 'IN, aaa', 'IN, ccc', 'IN, ggg', 'IN, sss', 'IN, sss', 'IN, gqq'])
 [/input]
 [output]
 aaa
@@ -310,7 +310,7 @@ sss
 [/test]
 [test]
 [input]
-picolo(['IN, mmm', 'IN, aaa', 'IN, ccc', 'OUT, ggg'. 'IN, sss', 'IN, mmm', 'OUT, aaa', 'IN, ccc', 'OUT, ggg', 'IN, sss', 'IN, mmm', 'IN, aaa', 'OUT, ccc', 'IN, ggg', 'IN, sss', 'IN, sss', 'OUT, gqq'])
+picolo(['IN, mmm', 'IN, aaa', 'IN, ccc', 'OUT, ggg', 'IN, sss', 'IN, mmm', 'OUT, aaa', 'IN, ccc', 'OUT, ggg', 'IN, sss', 'IN, mmm', 'IN, aaa', 'OUT, ccc', 'IN, ggg', 'IN, sss', 'IN, sss', 'OUT, gqq'])
 [/input]
 [output]
 aaa
@@ -321,7 +321,7 @@ sss
 [/test]
 [test]
 [input]
-picolo(['IN, mmm', 'IN, aaa', 'IN, ccc', 'OUT, ggg'. 'IN, sss', 'IN, mmm', 'IN, ggg', 'IN, sss', 'IN, sss', 'OUT, gqq'])
+picolo(['IN, mmm', 'IN, aaa', 'IN, ccc', 'OUT, ggg', 'IN, sss', 'IN, mmm', 'IN, ggg', 'IN, sss', 'IN, sss', 'OUT, gqq'])
 [/input]
 [output]
 aaa
@@ -333,7 +333,7 @@ sss
 [/test]
 [test]
 [input]
-picolo(['IN, mmm', 'IN, aaa', 'IN, ccc', 'OUT, ggg'. 'IN, ll', 'IN, sss', 'IN, mmm', 'IN, kk', 'IN, sss', 'IN, sss', 'IN, sss', 'IN, mmm', 'IN, ggg', 'IN, sss', 'IN, sss', 'OUT, gqq'])
+picolo(['IN, mmm', 'IN, aaa', 'IN, ccc', 'OUT, ggg', 'IN, ll', 'IN, sss', 'IN, mmm', 'IN, kk', 'IN, sss', 'IN, sss', 'IN, sss', 'IN, mmm', 'IN, ggg', 'IN, sss', 'IN, sss', 'OUT, gqq'])
 [/input]
 [output]
 aaa
@@ -426,7 +426,7 @@ tSzE5t0p
 partyTime(['m8rfQBvl', 'fc1oZCE0', 'UgffRkOn', '7ugX7bm0', '9CQBGUeJ', '2FQZT3uC', 'dziNz78I', 'mdSGyQCJ', 'LjcVpmDL', 'fPXNHpm1', 'HTTbwRmM', 'B5yTkMQi', '8N0FThqG', 'xys2FYzn', 'MDzcM9ZK','PARTY', '2FQZT3uC', 'dziNz78I', 'mdSGyQCJ', 'LjcVpmDL', 'fPXNHpm1', 'HTTbwRmM', 'B5yTkMQi', '8N0FThqG', 'm8rfQBvl', 'fc1oZCE0', 'UgffRkOn', '7ugX7bm0', '9CQBGUeJ'])
 [/input]
 [output]
-2 
+2
 xys2FYzn
 MDzcM9ZK
 [/output]
