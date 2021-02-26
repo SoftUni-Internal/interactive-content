@@ -10,6 +10,15 @@ function employees(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 You are tasked to create a list of employees and their personal numbers. 
@@ -22,20 +31,31 @@ Try to use an object.
 
 In the end print all the **listed employees** in the following format: 
 
-`Name: {employeeName} -- Personal Number: {personalNum}`
+"**Name:** \{**employeeName**\} **-- Personal Number:** \{**personalNum**\}"
 
 
 # Example
 
 | **Input** | **Output** |
 | --- | --- |
-|`['Silas Butler','Adnaan Buckley','Juan Peterson','Brendan Villarreal']`| Name\: Silas Butler \-\- Personal Number\: 12 |
+|employees(['Silas Butler','Adnaan Buckley','Juan Peterson','Brendan Villarreal'])| Name\: Silas Butler \-\- Personal Number\: 12 |
 || Name\: Adnaan Buckley \-\- Personal Number\: 14 |
 || Name\: Juan Peterson \-\- Personal Number\: 13 |
 ||Name\: Brendan Villarreal \-\- Personal Number\: 18|
 
 [/task-description]
 [tests]
+[test open]
+[input]
+employees(['Silas Butler','Adnaan Buckley','Juan Peterson','Brendan Villarreal'])
+[/input]
+[output]
+Name\: Silas Butler \-\- Personal Number\: 12
+Name\: Adnaan Buckley \-\- Personal Number\: 14
+Name\: Juan Peterson \-\- Personal Number\: 13
+Name\: Brendan Villarreal \-\- Personal Number\: 18
+[/output]
+[/test]
 [test]
 [input]
 Kiril Kirilov
