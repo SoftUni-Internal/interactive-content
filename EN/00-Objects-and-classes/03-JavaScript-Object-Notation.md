@@ -76,10 +76,10 @@ console.log(data);
 
 ``` js live
 let car = {
-  Car:"Nio",
-  Model: "EP9",
-  Colour:"Blue"
-  };  
+  Car: 'Nio',
+  Model: 'EP9',
+  Colour: 'Blue',
+};
 
 var data = JSON.stringify(car);  
 
@@ -122,18 +122,38 @@ Loop through all the keys and print them with their values in format:
 # Example
   | **Input** | **Output** |
 | --- | --- |
-| convertToObject({"name": "George", "age": 40, "town": "Berlin"}) | name: George |
+| convertToObject('\{"name": "George", "age": 40, "town": "Berlin"\}') | name: George |
 ||age: 40|
 ||town: Berlin|
-| convertToObject({"name": "Rafael", "age": 27, "town": "Madrid"}) | name: Rafael |
+| convertToObject('\{"name": "Rafael", "age": 27, "town": "Madrid"\}') | name: Rafael |
 ||age: 27|
 ||town: Madrid|
 
 [/task-description]
 [tests]
+[test open]
+[input]
+convertToObject('\{"name": "George", "age": 40, "town": "Berlin"\}')
+[/input]
+[output]
+name: George
+age: 40
+town: Berlin
+[/output]
+[/test]
+[test open]
+[input]
+convertToObject('\{"name": "Rafael", "age": 27, "town": "Madrid"\}')
+[/input]
+[output]
+name: Rafael
+age: 27|
+town: Madrid
+[/output]
+[/test]
 [test]
 [input]
-convertToObject({"hui": "byue", "cty": 26, "byu": "ctuct"})
+convertToObject('\{"hui": "byue", "cty": 26, "byu": "ctuct"\}')
 [/input]
 [output]
 hui\: byue
@@ -143,7 +163,7 @@ byu\: ctuct
 [/test]
 [test]
 [input]
-convertToObject({"hui": 156, "cty": {"dsad": "dsadaf"}, "byu": "ctuct"})
+convertToObject('\{"hui": 156, "cty": \{"dsad": "dsadaf"\}, "byu": "ctuct"\}')
 [/input]
 [output]
 hui\: 156
@@ -153,12 +173,12 @@ byu\: ctuct
 [/test]
 [test]
 [input]
-convertToObject({"name": "George", "age": 40, "town": "Sofia"})
+convertToObject('\{"name": "Ivan", "age": 10, "town": "Erevan"\}')
 [/input]
 [output]
-name\: George
-age\: 40
-town\: Sofia
+name\: Ivan
+age\: 10
+town\: Erevan
 [/output]
 [/test]
 [/tests]
@@ -201,17 +221,25 @@ The input is provided as 3 single strings in the order stated above.
 # Example
   | **Input** | **Output** |
 | --- | --- |
-| convertToJSON('George', 'Jones', 'Brown') | `{"name":"George", "lastName":"Jones", "hairColor":"Brown"}`|
-| convertToJSON('Thomas', 'Muller', 'Blonde') | `{"name":"Thomas", "lastName":"Muller", "hairColor":"Blonde"}`|
+| convertToJSON('George', 'Jones', 'Brown') | \{"name":"George", "lastName":"Jones", "hairColor":"Brown"\}|
+| convertToJSON('Thomas', 'Muller', 'Blonde') | \{"name":"Thomas", "lastName":"Muller", "hairColor":"Blonde"\}|
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 convertToJSON('George', 'Jones', 'Brown')
 [/input]
 [output]
 \{"name"\:"George","lastName"\:"Jones","hairColor"\:"Brown"\}
+[/output]
+[/test]
+[test open]
+[input]
+convertToJSON('Thomas', 'Muller', 'Blonde')
+[/input]
+[output]
+\{"name":"Thomas", "lastName":"Muller", "hairColor":"Blonde"\}
 [/output]
 [/test]
 [test]

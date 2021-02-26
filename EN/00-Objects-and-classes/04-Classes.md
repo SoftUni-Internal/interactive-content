@@ -151,6 +151,24 @@ For each of the strings provided you must create a cat object.
 
 [/task-description]
 [tests]
+[test open]
+[input]
+cats(['Mellow 2', 'Tom 5'])
+[/input]
+[output]
+Mellow, age 2 says Meow
+Tom, age 5 says Meow
+[/output]
+[/test]
+[test open]
+[input]
+cats(['Millie 3', 'Lola 7'])
+[/input]
+[output]
+Millie, age 3 says Meow
+Lola, age 7 says Meow
+[/output]
+[/test]
 [test]
 [input]
 cats(['jsakd 45', 'dasd 12'])

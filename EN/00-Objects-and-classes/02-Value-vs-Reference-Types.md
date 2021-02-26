@@ -9,7 +9,7 @@
 
 ## Value Types
 
-There are seven **basic** data types in JavaScript - `Boolean`, `String`, `Number`, `null`, `undefined`, `Symbol` and `BigInt`.
+There are seven **basic** data types in JavaScript - "**Boolean**", "**String**", "**Number**", "**null**", "**undefined**", "**Symbol**" and "**BigInt**".
 
 We refer to these as **primitive data types.**
 
