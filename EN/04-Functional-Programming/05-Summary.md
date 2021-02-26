@@ -1,24 +1,44 @@
-[slide]
+[slide hideTitle]
 
 # Summary
 
-## In this lesson we learned:
+# In this lesson you learned:
 
-- What is a function.
+- Functions are pieces of code used to perform tasks
+    - in Java we can create functions analogical to mathematical functions
+    - they can be passed like **variables** to methods
 
-- Lambda expressions are anonymous methods.
+- Lambda expressions are anonymous methods
+    - they use the `(parameters) -> {body}` syntax
 
-- **Function<T,R>** is a function that returns R type.
+```java
+(name) -> { System.out.println("Hello!" + name); }
+() -> { System.out.println("How are you?"); }
+```
 
-- **Consumer\<T\>** is a void function.
+- `Function<T,R>` is a function that returns R type
 
-- **Supplier\<T\>** gets no parameters.
+```java
+public class Main { 
+    public static void main(String args[]) 
+    { 
+  
+        // Function that takes in a number and multiplies it by two 
+        Function<Integer, Double> multiplyByTwo = num -> num * 2.0; 
+  
+        // To get the result we have to use apply()
+        System.out.println(multiplyByTwo.apply(20)); // The output will be 40
+    } 
+} 
+```
 
-- **Predicate\<T\>** evaluates a condition.
+- `Consumer<T>` is a void function
 
-- **BiFunction<T, U, R>** accepts two parameters.
+- `Supplier<T>` gets no parameters
 
-- Functions can be passed like **variables** to methods.
+- `Predicate<T>` evaluates a condition
+
+- `BiFunction<T, U, R>` accepts two parameters
 
 
 [/slide]
