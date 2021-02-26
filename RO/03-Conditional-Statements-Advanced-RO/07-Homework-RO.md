@@ -35,6 +35,12 @@ Creați un program pentru a verifica fructele sau legumele:
 |fruitOrVegetable('lemon')| fruit |
 |fruitOrVegetable('carrot')| vegetable |
 
+[hints]
+[hint]
+You can use a switch-case expression to solve the problem easier.
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
@@ -253,6 +259,12 @@ Creați un program pentru a verifica o literă dacă este o vocală sau o consoa
 | --- | --- |
 |vowelOrConsonant('a')| Vowel |
 |vowelOrConsonant('B')| Consonant |
+
+[hints]
+[hint]
+You can use an "if" statement and check if the letter is a vowel. If it is print the correct output. However, if it isn't, enter the "else" statement and print the appropriate output.
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
