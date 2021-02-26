@@ -175,9 +175,15 @@ The input comes as 3 separate **strings** in the following order: **firstName**,
 personInfo('Peter', 'Pan', '20')
 [/input]
 [output]
-firstName: Peter
-lastName: Pan
-age: 20
+\{firstName: 'Peter', lastName: 'Pan', age: '20'\}
+[/output]
+[/test]
+[test open]
+[input]
+personInfo('Kellie', 'Ellison', '33')
+[/input]
+[output]
+\{firstName: 'Kellie', lastName: 'Ellison', age: '33'\}
 [/output]
 [/test]
 [test]
@@ -185,9 +191,9 @@ age: 20
 personInfo('Johny', 'Tony', '15')
 [/input]
 [output]
-firstName: Johny
-lastName: Tony
-age: 15
+firstName: Johny,
+lastName: Tony,
+age: 15,
 [/output]
 [/test]
 [test]
