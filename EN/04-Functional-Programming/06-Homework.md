@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 # Problem: Consumer Print
-[code-task title="Consumer Print" taskId="0080f16e-7468-4ba7-8b44-4fa30787a3df" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Consumer Print" taskId="oop-basics-java-functional-programming-Consumer-Print" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -22,21 +22,23 @@ Each string should be printed on a new line.
 
 Use a `Consumer<T>`.
 
-## Examples
+# Examples
+
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | Peter George Adam | Peter |
 |  | George |
 |  | Adam |
 
-
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | Nelson Grand Hubert | Nelson |
 |  | Grand |
 |  | Hubert |
 
-
+## Example 3
 | **Input** | **Output** |
 | --- | --- |
 | Alan Nick Connor | Alan |
@@ -139,7 +141,7 @@ Niente
 
 [slide hideTitle]
 # Problem: Knights of Honor
-[code-task title="Knights of Honor" taskId="6e9ffed1-43e4-44b3-88d5-40bda1ac9c60" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Knights of Honor" taskId="oop-basics-java-functional-programming-Knights-of-Honor" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -157,7 +159,10 @@ Write a program that **reads a collection of names** as strings from the console
 
 Use a `Consumer<T>`.
 
-## Examples
+
+# Examples
+
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | Henry Alex Anthony Stanley | Sir Henry |
@@ -165,12 +170,14 @@ Use a `Consumer<T>`.
 |  | Sir Anthony |
 |  | Sir Stanley |
 
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | Derryl Isaac David | Sir Derryl |
 |  | Sir Isaac |
 |  | Sir David |
 
+## Example 3
 | **Input** | **Output** |
 | --- | --- |
 | Patrick Christopher | Sir Patrick |
@@ -271,7 +278,7 @@ Sir Niente
 
 [slide hideTitle]
 # Problem: Custom Min Function
-[code-task title="Custom Min Function" taskId="7f5f070e-8a9b-46a4-8155-93e23f1084a3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Custom Min Function" taskId="oop-basics-java-functional-programming-Custom-Min-Function" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -287,11 +294,15 @@ public class Main {
 ## Description
 Write a simple program that **reads** a **set of numbers** from the console and finds the **smallest** of the **numbers** using a simple `Function<Integer[], Integer>`.
 
-## Examples
+
+# Examples
+
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | 1 4 3 2 1 7 13 | 1 |
 
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | 4 5 -2 3 -5 8 | -5 |
@@ -361,7 +372,7 @@ Write a simple program that **reads** a **set of numbers** from the console and 
 
 [slide hideTitle]
 # Problem: Applied Arithmetics
-[code-task title="Applied Arithmetics" taskId="03caacb4-6d7d-40f1-b7b8-21d24988440a" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Applied Arithmetics" taskId="oop-basics-java-functional-programming-Applied-Arithmetics" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -381,7 +392,10 @@ On the next lines you are passed different **commands** that you need to apply t
 
 The input will end with a command `end`, after which you need to print the result.
 
-## Examples
+
+# Examples
+
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | 1 2 3 4 5 | 3 4 5 6 7 |
@@ -390,6 +404,7 @@ The input will end with a command `end`, after which you need to print the resul
 | print |  |
 | end |  |
 
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | 5 10 | 9 19 |
@@ -495,7 +510,7 @@ end
 
 [slide hideTitle]
 # Problem: Reverse And Exclude
-[code-task title="Reverse And Exclude" taskId="d727c084-1d8e-4dda-b653-498280a6764f" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Reverse And Exclude" taskId="oop-basics-java-functional-programming-Reverse-And-Exclude" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -511,12 +526,16 @@ public class Main {
 ## Description
 Write a program that **reverses** a collection and **removes** elements that are **divisible** by a given integer **n**.
 
-## Examples
+
+# Examples
+
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | 1 2 3 4 5 6 | 5 3 1 |
 | 2 |  |
 
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | 20 10 40 30 60 50 | 50 40 10 20 |
@@ -594,7 +613,7 @@ Write a program that **reverses** a collection and **removes** elements that are
 
 [slide hideTitle]
 # Problem: Predicate For Names
-[code-task title="Predicate For Names" taskId="36a2cb92-7cdb-4203-9be0-2b693ca73b04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Predicate For Names" taskId="oop-basics-java-functional-programming-Predicate-For-Names" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -618,12 +637,16 @@ On the second line, you will receive a **string** array with some names.
 
 Print the names, passing the **condition** in the predicate.
 
-## Examples
+
+# Examples
+
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | 4 | Adam |
 | Kenneth Adam Kevin Yasmin |  |
 
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | 4 | Gaby |
@@ -698,7 +721,7 @@ Koko
 
 [slide hideTitle]
 # Problem: Find The Smallest Element
-[code-task title="Find The Smallest Element" taskId="7c7690a0-fb0d-441c-b6f7-ea852cc8ad84" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Find The Smallest Element" taskId="oop-basics-java-functional-programming-Find-The-Smallest-Element" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -723,11 +746,15 @@ If **more** than one such element exists, print the index of the **rightmost** o
 ## Hints
 - Use a `Function<List<Integer>, Integer>` or something similar.
 
-## Examples
+
+# Examples
+
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | 1 2 3 0 4 5 6 | 3 |
 
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | 123 10 11 3 | 3 |
@@ -789,7 +816,7 @@ If **more** than one such element exists, print the index of the **rightmost** o
 
 [slide hideTitle]
 # Problem: Custom Comparator
-[code-task title="Custom Comparator" taskId="76eba80c-8397-4782-819c-652aa05fca1e" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Custom Comparator" taskId="oop-basics-java-functional-programming-Custom-Comparator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -807,11 +834,15 @@ Write a custom **comparator** that **sorts** all even numbers before all **odd**
 
 Pass it to an `Arrays.sort()` function and print the result.
 
-## Examples
+
+# Examples
+
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | 1 2 3 4 5 6 | 2 4 6 1 3 5 |
 
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | -3 2 | 2 -3 |
@@ -881,7 +912,7 @@ Pass it to an `Arrays.sort()` function and print the result.
 
 [slide hideTitle]
 # Problem: List Of Predicates
-[code-task title="List Of Predicates" taskId="ce5a5264-7d97-4e78-a232-c7d137d88d1a" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="List Of Predicates" taskId="oop-basics-java-functional-programming-List-Of-Predicates" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -899,12 +930,16 @@ Find all **numbers** in the range **1 ... N** that are **divisible** by the numb
 
 Use **predicates**.
 
-## Examples
+
+# Examples
+
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | 10 | 2 4 6 8 10 |
 | 1 1 1 2 |  |
 
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | 100 | 20 40 60 80 100 |
@@ -978,11 +1013,4 @@ Use **predicates**.
 [/test]
 [/tests]
 [/code-task]
-[/slide]
-
-
-[slide]
-# Homework Results
-[tasks-results/]
-
 [/slide]
