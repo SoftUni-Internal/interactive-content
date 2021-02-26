@@ -244,9 +244,8 @@ Write a function that:
 
 Print the output with all car numbers which are in the parking lot **sorted in ascending order by their license plate**.
 
-# Examples
+# Example One
 
-## Example 1
 
 | **Input** | **Output**  |
 | --- | --- |
@@ -255,7 +254,7 @@ Print the output with all car numbers which are in the parking lot **sorted in a
 | | CA9876HH |
 | | CA9999TT |
 
-## Example 2
+# Example Two
 
 | **Input** | **Output** |
 | --- | ---|
@@ -390,9 +389,7 @@ When you receive the command "**PARTY**", the guests start coming.
 
 Output all guests, who did not come to the party (**VIPs must be first**).
 
-# Example
-
-## Example 1
+# Example One
 
 | **Input** | **Output** |
 | --- | --- |
@@ -400,7 +397,7 @@ Output all guests, who did not come to the party (**VIPs must be first**).
 | | 7IK9Yo0h   |
 | | tSzE5t0p   |
 
-## Example 2
+# Example Two
 
 | **Input** | **Output** |
 | --- | --- |
@@ -683,9 +680,7 @@ Print the company name and each employee's id in the following format:
 - The input is an **array of strings**, each in the format: "\{**companyName**\} \-\> \{**employeeId**\}"
 - The input will always be valid
 
-# Examples
-
-## Example 1
+# Example One
 
 | **Input** | **Output** |
 | --- | --- |
@@ -697,7 +692,7 @@ Print the company name and each employee's id in the following format:
 |                                                                                         | \-\- AA12345 |
 |                                                                                         | \-\- BB12345 |
 
-## Example 2
+# Example Two
 
 | **Input** | **Output** |
 | --- | --- |
@@ -885,9 +880,7 @@ Your task is to collect the resources and print each of them on a new line.
 
 The quantities inputs will be in range "\[**1...2 000 000 000**\]"
 
-# Examples
-
-## Example 1
+# Example One
 
 | **Input** | **Output** |
 | --- | --- |
@@ -895,7 +888,7 @@ The quantities inputs will be in range "\[**1...2 000 000 000**\]"
 |                                                   | Silver \-\> 10 |
 |                                                   | Copper \-\> 17 |
 
-## Example 2
+# Example Two
 
 | **Input** | **Output** |
 | --- | --- |
