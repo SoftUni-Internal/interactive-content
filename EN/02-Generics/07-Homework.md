@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 # Problem: Generic Box
-[code-task title="Generic Box" taskId="03c888d5-32bb-49b1-8ea0-e43077b1138a" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Generic Box" taskId="oop-basics-java-generics-Generic-Box" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -26,11 +26,11 @@ Use the class that you have created and test it with the class `java.lang.String
 
 On the first line, you will get the number **n** - the number of Strings to read from the console. 
 
-On the next **n** lines, you will get the actual Strings. 
+On the next **n** lines, you will get the actual strings. 
 
 For each of them create a box and call its `toString()` method to print its data on the console.
 
-## Examples
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | 2 | java.lang.String: life in a box |
@@ -142,7 +142,7 @@ java.lang.String: I am an Integer
 
 [slide hideTitle]
 # Problem: Generic Box of Integer
-[code-task title="Generic Box of Integer" taskId="02b21d7e-498e-4ff1-ae18-27793c1e0f19" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Generic Box of Integer" taskId="oop-basics-java-generics-Generic-Box-of-Integer" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -170,7 +170,7 @@ On the next **n** lines, you will get the actual Integers.
 
 For each of them create a box and call its `toString()` method to print its data on the console.
 
-## Examples
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | 3 | java.lang.Integer: 7 |
@@ -257,7 +257,7 @@ java.lang.Integer: 2147483647
 
 [slide hideTitle]
 # Problem: Generic Swap Method String
-[code-task title="Generic Swap Method String" taskId="115c52f8-04df-47de-941f-a836b608aec7" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Generic Swap Method String" taskId="oop-basics-java-generics-Generic-Swap-Method-String" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -277,9 +277,9 @@ As in the previous problems, read **n** number of boxes of type **String** and a
 
 On the next line, you will receive a swap command consisting of **two indexes**. 
 
-Use the method you've created to swap the elements that correspond to the given indexes and **print each** element in the list.
+Use the method you have created to swap the elements that correspond to the given indexes and **print each** element in the list.
 
-## Examples
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | 3 | java.lang.String: Swap me with John |
@@ -383,7 +383,7 @@ java.lang.String: ghi
 
 [slide hideTitle]
 # Problem: Generic Swap Method Integer
-[code-task title="Generic Swap Method Integer" taskId="6d827176-4208-48ad-aa4f-f2e1181e4a11" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Generic Swap Method Integer" taskId="oop-basics-java-generics-Generic-Swap-Method-Integer" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -405,7 +405,7 @@ On the next line, you will receive a swap command consisting of **two indexes**.
 
 Use the method you've created to swap the elements that correspond to the given indexes and **print each** element in the list.
 
-## Examples
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | 3 | java.lang.Integer: 42 |
@@ -499,7 +499,7 @@ java.lang.Integer: 2147483647
 
 [slide hideTitle]
 # Problem: Generic Count Method String
-[code-task title="Generic Count Method String" taskId="51f3851c-949d-4923-acaa-88e3224e30c9" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Generic Count Method String" taskId="oop-basics-java-generics-Generic-Count-Method-String" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -525,7 +525,7 @@ On the next **n** lines, you will receive the actual elements.
 
 On the **last line**, you will get the value of the element to which you need to compare every element in the list.
 
-## Examples
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | 3 | 2 |
@@ -624,7 +624,7 @@ pp
 
 [slide hideTitle]
 # Problem: Generic Count Method Double
-[code-task title="Generic Count Method Double" taskId="39f0850a-cf23-47af-9bd9-554c556a4a92" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Generic Count Method Double" taskId="oop-basics-java-generics-Generic-Count-Method-Double" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -650,7 +650,7 @@ On the next **n** lines, you will receive the actual elements.
 
 On the **last line**, you will get the value of the element to which you need to compare every element in the list.
 
-## Examples
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | 3 | 2 |
@@ -742,7 +742,7 @@ On the **last line**, you will get the value of the element to which you need to
 
 [slide hideTitle]
 # Problem: Custom List
-[code-task title="Custom List" taskId="42476d13-5009-4c80-bc9d-fc56eaa7228f" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Custom List" taskId="oop-basics-java-generics-Custom-List" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -780,9 +780,9 @@ Create a command interpreter that reads commands and modifies the custom list th
 - `Print` - Prints all elements in the list, each on a separate line
 - `END` - stops the reading of commands
 
-**Note** : For the **tests**, use **String** as **T**.
+**Note**: For the **tests**, use **String** as **T**.
 
-## Examples
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | Add aa | cc |
@@ -948,7 +948,7 @@ f
 
 [slide hideTitle]
 # Problem: Custom List Sorter
-[code-task title="Custom List Sorter" taskId="b8e8dbc0-86c7-418f-917a-25f4f532c571" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Custom List Sorter" taskId="oop-basics-java-generics-Custom-List-Sorter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -968,10 +968,10 @@ It should have a single static method `sort()` which can sort objects of type **
 
 **Extend the command list** to support one additional command:
 
-- `Sort` - Sort the elements in the list in ascending order.
+- `Sort` - Sort the elements in the list in ascending order
 
 
-## Examples
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | Add cc | aa |
@@ -1137,7 +1137,7 @@ f
 
 [slide hideTitle]
 # Problem: Custom List Iterator
-[code-task title="Custom List Iterator" taskId="4a388940-1ad6-4118-be3f-f49c133366ae" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Custom List Iterator" taskId="oop-basics-java-generics-Custom-List-Iterator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1153,11 +1153,11 @@ public class Main {
 ## Description
 Extend the previous problem by making your custom list class to implement **Iterable**.
 
-For the print command you have probably used a **for** loop.
+For the print command, you have probably used a **for** loop.
 
 This should allow you to iterate your list in a **foreach** statement.
 
-## Examples
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | Add aa | cc |
@@ -1322,7 +1322,7 @@ f
 
 [slide hideTitle]
 # Problem: Tuple
-[code-task title="Tuple" taskId="970fddee-cf23-4c2c-a160-e2ca9de024bb" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Tuple" taskId="oop-basics-java-generics-Tuple" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1350,7 +1350,7 @@ Your task is to try to implement it in Java, just for practicing generics.
 
 Create a class **"Tuple"**, which is holding two objects. 
 
-The first one will be **"item1"** and the second one - **"item2"**. 
+The first one will be `item1` and the second one - `item2`.
 
 The class has to hold **Generics**. 
 
@@ -1360,7 +1360,11 @@ When you create a new object of class -  **"Tuple"**, you should specify the ite
 
 The input consists of three lines:
 
-- The first one is holding a **person's name** and **city of residence**. Both are **separated by space(s)**. You have to collect them in the Tuple and print them on the console. This input comes in the following format:
+- The first one is holding a **person's name** and **city of residence**
+    - both are **separated by space(s)**. 
+    - you have to collect them in the Tuple and print them on the console
+
+This input comes in the following format:
 
 `{{first name} {last name}} {city}`
 
@@ -1386,7 +1390,7 @@ Create the class and make it have getters and setters for its class variables.
 
 The input will be valid, there is no need to check it explicitly!
 
-## Examples
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | Sofia Tucker London | Sofia Tucker -> London |
@@ -1462,7 +1466,7 @@ Shamsky -\> 2999999
 
 [slide hideTitle]
 # Problem: Threeuple
-[code-task title="Threeuple" taskId="b1e957b9-7d47-45a6-914a-5c81cb5f5915" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Threeuple" taskId="oop-basics-java-generics-Threeuple" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1478,10 +1482,16 @@ public class Main {
 ## Description
 The next task is to create another Tuple.
 
-Create a Class **Threeuple**. Its name shows, that the **Threeuple** should **hold three objects**.  It should also have getters and setters. You can extend the previous class - Tuple.
+Create a Class **Threeuple**. 
+
+Its name shows that the **Threeuple** should **hold three objects**.
+
+It should also have getters and setters. 
+
+You can extend the previous class - Tuple.
 
 ## Input
-The input consists of three lines:
+The input consists of three lines.
 
 - The first one is holding a person's name and city and country of residence in the following format:
 
@@ -1491,7 +1501,7 @@ The input consists of three lines:
 
 `{name} {hobbies} {happy or not}`
 
-- The last line will hold a name, a bank balance (double) and a bank name. Format:
+- The last line will hold a name, a bank balance (double) and a bank name, formatted as follows:
 
 `{name} {account balance} {bank name}`
 
@@ -1502,12 +1512,17 @@ The input consists of three lines:
 `{firstElement} -> {secondElement} -> {thirdElement}`
 
 
-## Examples
+# Examples
+
+## Example 1
+
 | **Input** | **Output** |
 | --- | --- |
 | Sofia Tucker London UK | Sofia Tucker -> London -> UK |
 | John 2 happy | John -> 2 -> false |
 | Peter 0.10 Expressbank | Peter -> 0.1 -> Expressbank |
+
+## Example 2
 
 | **Input** | **Output** |
 | --- | --- |
@@ -1592,10 +1607,4 @@ F -\> 0.1 -\> G
 [/test]
 [/tests]
 [/code-task]
-[/slide]
-
-[slide]
-# Homework Results
-[tasks-results/]
-
 [/slide]
