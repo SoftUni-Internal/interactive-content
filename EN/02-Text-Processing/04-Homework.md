@@ -20,7 +20,7 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-## Description
+# Description
 
 Write a function, which receives two parameters.
 
@@ -119,7 +119,7 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-## Description
+# Description
 
 The input will be a **single string.**
 
@@ -216,7 +216,7 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-## Description
+# Description
 
 Write a function that receives a single string - the path to a file (the "\\" character is escaped).
 
@@ -227,13 +227,13 @@ Beware of files like **template.bak.pptx**, as **template.bak** should be the fi
 # Example One
   | **Input** | **Output** |
 | --- | --- |
-| extractFile('C:\\Internal\\training-internal\\Template.pptx') | File name: Template |
+| extractFile('C:\\\Internal\\\training-internal\\\Template.pptx') | File name: Template |
 || File extension: pptx |
 
 # Example Two
  | **Input** | **Output** |
 | --- | --- |
-| extractFile('C:\\Projects\\Data-Structures\\LinkedList.cs') | File name: LinkedList |
+| extractFile('C:\\\Projects\\\Data-Structures\\\LinkedList.cs') | File name: LinkedList |
 || File extension: cs |
 
 
@@ -242,7 +242,7 @@ Beware of files like **template.bak.pptx**, as **template.bak** should be the fi
 [tests]
 [test open]
 [input]
-extractFile('C:\\Internal\\training-internal\\Template.pptx')
+extractFile('C:\\\Internal\\\training-internal\\\Template.pptx')
 [/input]
 [output]
 File name: Template
@@ -251,7 +251,7 @@ File extension: pptx
 [/test]
 [test open]
 [input]
-extractFile('C:\\Projects\\Data-Structures\\LinkedList.cs')
+extractFile('C:\\\Projects\\\Data-Structures\\\LinkedList.cs')
 [/input]
 [output]
 File name: LinkedList
@@ -260,7 +260,7 @@ File extension: cs
 [/test]
 [test]
 [input]
-extractFile('E:\\P\\JAVA\\src\\oop\\Main.java')
+extractFile('E:\\\P\\\JAVA\\\src\\\oop\\\Main.java')
 [/input]
 [output]
 File name: Main
@@ -269,7 +269,7 @@ File extension: java
 [/test]
 [test]
 [input]
-extractFile('E:\\EX\\csharp\\CatShop.sln')
+extractFile('E:\\\EX\\\csharp\\\CatShop.sln')
 [/input]
 [output]
 File name: CatShop
@@ -278,7 +278,7 @@ File extension: sln
 [/test]
 [test]
 [input]
-extractFile('E:\\P\\JAVA\\src\\oop\\Bor.xml')
+extractFile('E:\\\P\\\JAVA\\\src\\\oop\\\Bor.xml')
 [/input]
 [output]
 File name: Bor
@@ -287,7 +287,7 @@ File extension: xml
 [/test]
 [test]
 [input]
-extractFile('E:\\Trash\\MoreTrash\\SoftUniExamsSolutions.txt')
+extractFile('E:\\\Trash\\\MoreTrash\\\SoftUniExamsSolutions.txt')
 [/input]
 [output]
 File name: SoftUniExamsSolutions
@@ -296,7 +296,7 @@ File extension: txt
 [/test]
 [test]
 [input]
-extractFile('E:\\TECH-SVN\\Java\\07-Objects-and-Classes\\Exercise\\07.Objects-and-Classes-Exercise.docx')
+extractFile('E:\\\TECH-SVN\\\Java\\\07-Objects-and-Classes\\\Exercise\\\07.Objects-and-Classes-Exercise.docx')
 [/input]
 [output]
 File name: 07.Objects-and-Classes-Exercise
@@ -432,7 +432,7 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-## Description
+# Description
 
 Write a function that receives a single string and **replaces** any sequence of the **same letters** with a single corresponding letter.
 
@@ -527,7 +527,7 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-## Description
+# Description
 
 You will receive a **single string.**
 

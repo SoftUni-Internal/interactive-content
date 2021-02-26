@@ -23,7 +23,7 @@ Let us have a look at the examples:
 `lo*` will match "l", "looo", "l", "l", and "lo".
 
 ```js live
-let str = "Hellooo World! Hello Again!";
+let str = 'Hellooo World! Hello Again!';
 let pattern = /lo*/g;
 let result = str.match(pattern);
 console.log(result);
@@ -36,7 +36,7 @@ console.log(result);
 `o+` will match "ooo", "o", and "o".
 
 ```js live
-let str = "Hellooo World! Hello Again!";
+let str = 'Hellooo World! Hello Again!';
 let pattern = /o+/g;
 let result = str.match(pattern);
 console.log(result);
