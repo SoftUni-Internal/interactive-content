@@ -454,12 +454,21 @@ race(['Joro\, George\, Georgi\, Stamat', '\^\&\^\%\^232St\#\$ama\&\&\^\^t', '\^\
 [code-editor language=javascript]
 
 ```
-function solve(input) {
+function income(input) {
     // Write your code here
 }
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Description
@@ -473,64 +482,37 @@ Until you receive a line with a text **end of shift**, you will be given lines o
 Before processing these lines, you have to do some validations first.
 
 Each valid order should have a customer, a product, a count and a price:
-- Valid customer's name should be surrounded by `%` and must start with a capital letter, followed by lower-case letters
-- Valid product contains any word character and must be surrounded by `<` and `>`
-- Valid count is an integer, surrounded by `|`
-- Valid price is any real number followed by `$`
+- Valid customer's name should be surrounded by **%** and must start with a capital letter, followed by lower-case letters
+- Valid product contains any word character and must be surrounded by **<** and **>**
+- Valid count is an integer, surrounded by \|
+- Valid price is any real number followed by **$**
 
 The parts of a valid order should appear in the given order: a customer, a product, a count and a price.
 
-Between each part there can be other symbols, except `(|, $, % .)`.
+Between each part there can be other symbols, except (\|, \$, \% \.).
 
-For each valid line print on the console: `{customerName}: {product} - {totalPrice}`.
+For each valid line print on the console: \{**customerName**\}**:** \{**product**\} **-** \{**totalPrice**\}.
 
 When you receive "end of shift" print the total amount of money for the day, rounded to 2 decimal places in the following format: 
 
-`Total income: {income}`.
+**Total income:** \{**income**\}.
 
-# Example 1
+# Example 
 
-**Input**
-
-`['%George%<Croissant>|2|10.3$',
-  '%Peter%<Gum>|1|1.3$',
-  '%Maria%<Cola>|1|2.4$',
-  'end of shift']`
-
-**Output**
-
-George\: Croissant \- 20\.60
-
-Peter\: Gum \- 1\.30
-
-Maria\: Cola \- 2\.40
-
-Total income\: 24\.30
-
-# Example 2
-
-**Input**
-
-`['%InvalidName%<Croissant>|2|10.3$',
-  '%Peter%<Gum>1.3$',
-  '%Maria%<Cola>|1|2.4',
-  '%Valid%<Valid>valid|10|valid20$',
-  'end of shift']`
-
-**Output**
-
-Valid\: Valid \- 200\.00
-
-Total income\: 200\.00
+| **Input** | **Output** |
+| --- | --- |
+| income(['%George%<Croissant>|2|10.3$', '%Peter%<Gum>|1|1.3$', '%Maria%<Cola>|1|2.4$', 'end of shift']) | George\: Croissant \- 20\.60 |
+| | Peter\: Gum \- 1\.30 |
+| | Maria\: Cola \- 2\.40 |
+| | Total income\: 24\.30 |
+| income(['%InvalidName%<Croissant>|2|10.3$', '%Peter%<Gum>1.3$', '%Maria%<Cola>|1|2.4', '%Valid%<Valid>valid|10|valid20$', 'end of shift']) | Valid\: Valid \- 200\.00 |
+| | Total income\: 200\.00 |
 
 [/task-description]
 [tests]
 [test]
 [input]
-\%George\%\<Croissant\>\|2\|10\.3\$
-\%Peter\%\<Gum\>\|1\|1\.3\$
-\%Maria\%\<Cola\>\|1\|2\.4\$
-end of shift
+income(['\%George\%\<Croissant\>\|2\|10\.3\$', '\%Peter\%\<Gum\>\|1\|1\.3\$', '\%Maria\%\<Cola\>\|1\|2\.4\$', 'end of shift'])
 [/input]
 [output]
 George\: Croissant \- 20\.60
@@ -541,11 +523,7 @@ Total income\: 24\.30
 [/test]
 [test]
 [input]
-\%InvalidName\%\<Croissant\>\|2\|10\.3\$
-\%Peter\%\<Gum\>1\.3\$
-\%Maria\%\<Cola\>\|1\|2\.4
-\%Valid\%\<Valid\>valid\|10\|valid20\$
-end of shift
+income(['\%InvalidName\%\<Croissant\>\|2\|10\.3\$', '\%Peter\%\<Gum\>1\.3\$', '\%Maria\%\<Cola\>\|1\|2\.4', '\%Valid\%\<Valid\>valid\|10\|valid20\$', 'end of shift'])
 [/input]
 [output]
 Valid\: Valid \- 200\.00
@@ -554,8 +532,7 @@ Total income\: 200\.00
 [/test]
 [test]
 [input]
-\%Name\%\<Product\>\|1\|20\.50\$
-end of shift
+income(['\%Name\%\<Product\>\|1\|20\.50\$', 'end of shift'])
 [/input]
 [output]
 Name\: Product \- 20\.50
@@ -564,8 +541,7 @@ Total income\: 20\.50
 [/test]
 [test]
 [input]
-\%Name\%\<Product2\>\|1\|20\.50\$
-end of shift
+income(['\%Name\%\<Product2\>\|1\|20\.50\$', 'end of shift'])
 [/input]
 [output]
 Name\: Product2 \- 20\.50
@@ -574,8 +550,7 @@ Total income\: 20\.50
 [/test]
 [test]
 [input]
-\%Name\%valid\<Product3\>valid\|1\|20\.80\$
-end of shift
+income(['\%Name\%valid\<Product3\>valid\|1\|20\.80\$', 'end of shift'])
 [/input]
 [output]
 Name\: Product3 \- 20\.80
@@ -584,8 +559,7 @@ Total income\: 20\.80
 [/test]
 [test]
 [input]
-\%Name\%\<Product\>\|2\|20\.50\$
-end of shift
+income(['\%Name\%\<Product\>\|2\|20\.50\$', 'end of shift'])
 [/input]
 [output]
 Name\: Product \- 41\.00
@@ -594,9 +568,7 @@ Total income\: 41\.00
 [/test]
 [test]
 [input]
-\%Name\%\<Product\>\|1\|20\.50\$
-\%Name\%\<Product\>\|1\|9\.50\$
-end of shift
+income(['\%Name\%\<Product\>\|1\|20\.50\$', '\%Name\%\<Product\>\|1\|9\.50\$', 'end of shift'])
 [/input]
 [output]
 Name\: Product \- 20\.50
@@ -606,9 +578,7 @@ Total income\: 30\.00
 [/test]
 [test]
 [input]
-\%Name\%\<Product\>\|2\|10\.3\$
-\%Name\%\<Pro\_duct\>\|2\|10\.3\$
-end of shift
+income(['\%Name\%\<Product\>\|2\|10\.3\$', '\%Name\%\<Pro\_duct\>\|2\|10\.3\$', 'end of shift'])
 [/input]
 [output]
 Name\: Product \- 20\.60
@@ -618,8 +588,7 @@ Total income\: 41\.20
 [/test]
 [test]
 [input]
-\%Name\%\<Product\>\|2\|10\$
-end of shift
+income(['\%Name\%\<Product\>\|2\|10\$', 'end of shift'])
 [/input]
 [output]
 Name\: Product \- 20\.00
@@ -628,11 +597,7 @@ Total income\: 20\.00
 [/test]
 [test]
 [input]
-\%Name\%\<Product\>\|1\|30\.10\$
-\%Name\%\<Product\>\|1\.0\|10\.10\$
-\%Name\%\<Product\>\|1\|10\.10
-\%Name\%Product\|1\|10\.10\$
-end of shift
+income(['\%Name\%\<Product\>\|1\|30\.10\$', '\%Name\%\<Product\>\|1\.0\|10\.10\$', '\%Name\%\<Product\>\|1\|10\.10', '\%Name\%Product\|1\|10\.10\$', 'end of shift'])
 [/input]
 [output]
 Name\: Product \- 30\.10
@@ -641,10 +606,7 @@ Total income\: 30\.10
 [/test]
 [test]
 [input]
-\%Name\%ho\<Product\>eins\|1\|10\$
-\%Name\%he\<Product\>zwei\|2\|10\$
-\%Name\%hi\<Product\>drei\|3\|10\$
-end of shift
+income(['\%Name\%ho\<Product\>eins\|1\|10\$', '\%Name\%he\<Product\>zwei\|2\|10\$', '\%Name\%hi\<Product\>drei\|3\|10\$', 'end of shift'])
 [/input]
 [output]
 Name\: Product \- 10\.00
@@ -655,8 +617,7 @@ Total income\: 60\.00
 [/test]
 [test]
 [input]
-\%Name\%sorry for this test\<\>\<\>\<\>\<\>\<Product\>\<\>\<\>\|2\|10\$
-end of shift
+income(['\%Name\%sorry for this test\<\>\<\>\<\>\<\>\<Product\>\<\>\<\>\|2\|10\$', 'end of shift'])
 [/input]
 [output]
 Name\: Product \- 20\.00
