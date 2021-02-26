@@ -35,6 +35,11 @@ Create a program, which receives an integer and calculates the area of a square 
 | calculateArea(5) | 25 |
 | calculateArea(12) | 144 |
 
+[hints]
+[hint]
+The formula for calculating the area of a square is - a * a.
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
