@@ -349,6 +349,15 @@ Create a program, which calculates a **circle's** area and perimeter:
 | circleArea(8) | Area = 201.06 |
 |  | Perimeter = 50.27 |
 
+[hints]
+[hint]
+The formula for calculating a circle's perimeter is: P = 2 * π * R.
+"R" is the radius.
+[/hint]
+[hint]
+The formula for calculating a circle's perimeter is: A = π * r * r.
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
