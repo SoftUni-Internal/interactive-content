@@ -5,7 +5,7 @@
 [code-task title="Reveal Words" taskId="js-fundamentals-pt2-text-processing-Reveal-Words" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function revealWords(input){
+function revealWords(firstStr, secondStr){
   // Write your code here
 }
 ```
@@ -33,7 +33,7 @@ Find the word with **the exact same length as the template** and replace it.
 # Example
   | **Input** | **Output** |
 | --- | --- |
-| revealWords(['great', 'softuni is ***** place for learning new programming languages']) | softuni is great place for learning new programming languages |
+| revealWords('great', 'softuni is ***** place for learning new programming languages') | softuni is great place for learning new programming languages |
 
 
 [/task-description]
@@ -41,7 +41,7 @@ Find the word with **the exact same length as the template** and replace it.
 [tests]
 [test open]
 [input]
-revealWords(['great', 'softuni is ***** place for learning new programming languages'])
+revealWords('great', 'softuni is \*\*\*\*\* place for learning new programming languages')
 [/input]
 [output]
 softuni is great place for learning new programming languages
@@ -49,7 +49,7 @@ softuni is great place for learning new programming languages
 [/test]
 [test open]
 [input]
-revealWords(['great, learning', 'softuni is ***** place for ******** new programming languages'])
+revealWords('great, learning', 'softuni is \*\*\*\*\* place for \*\*\*\*\*\*\*\* new programming languages')
 [/input]
 [output]
 softuni is great place for learning new programming languages
@@ -57,7 +57,7 @@ softuni is great place for learning new programming languages
 [/test]
 [test]
 [input]
-revealWords(['pesho', 'jdsakl as ***** dsajkk hdsj'])
+revealWords('pesho', 'jdsakl as \*\*\*\*\* dsajkk hdsj')
 [/input]
 [output]
 jdsakl as pesho dsajkk hdsj
@@ -65,7 +65,7 @@ jdsakl as pesho dsajkk hdsj
 [/test]
 [test]
 [input]
-revealWords(['pesho, goshho', 'jdsakl as ***** dsajkk ****** hdsj'])
+revealWords('pesho, goshho', 'jdsakl as \*\*\*\*\* dsajkk \*\*\*\*\*\* hdsj')
 [/input]
 [output]
 jdsakl as pesho dsajkk goshho hdsj
@@ -73,7 +73,7 @@ jdsakl as pesho dsajkk goshho hdsj
 [/test]
 [test]
 [input]
-revealWords(['pesho, goshho, stamatko', 'jdsakl as ***** dsajkk ****** hdsj ********'])
+revealWords('pesho, goshho, stamatko', 'jdsakl as \*\*\*\*\* dsajkk \*\*\*\*\*\* hdsj \*\*\*\*\*\*\*\*')
 [/input]
 [output]
 jdsakl as pesho dsajkk goshho hdsj stamatko
@@ -81,7 +81,7 @@ jdsakl as pesho dsajkk goshho hdsj stamatko
 [/test]
 [test]
 [input]
-revealWords(['pesho, goshho, stamatko, kiro', 'jdsakl **** as ***** dsajkk ****** hdsj ********'])
+revealWords('pesho, goshho, stamatko, kiro', 'jdsakl \*\*\*\* as \*\*\*\*\* dsajkk \*\*\*\*\*\* hdsj \*\*\*\*\*\*\*\*')
 [/input]
 [output]
 jdsakl kiro as pesho dsajkk goshho hdsj stamatko
@@ -89,7 +89,7 @@ jdsakl kiro as pesho dsajkk goshho hdsj stamatko
 [/test]
 [test]
 [input]
-revealWords(['pesho, goshho, stamatko, kiro, b', 'jdsakl **** as ***** dsajkk ****** * hdsj ********'])
+revealWords('pesho, goshho, stamatko, kiro, b', 'jdsakl \*\*\*\* as \*\*\*\*\* dsajkk \*\*\*\*\*\* \* hdsj \*\*\*\*\*\*\*\*')
 [/input]
 [output]
 jdsakl kiro as pesho dsajkk goshho b hdsj stamatko
@@ -141,7 +141,7 @@ Print the words you found without the tag each on a new line.
 [tests]
 [test open]
 [input]
-modernTimesOfHashTag('Nowadays everyone uses # to tag a #special word in #socialMedia')
+modernTimesOfHashTag('Nowadays everyone uses # to tag a \#special word in #socialMedia')
 [/input]
 [output]
 special
@@ -150,7 +150,7 @@ socialMedia
 [/test]
 [test]
 [input]
-modernTimesOfHashTag('hjahd hasjk ag dwgyw gdyag dgsydwu shusia #jkdlsa dasjkfjkj #dsdas')
+modernTimesOfHashTag('hjahd hasjk ag dwgyw gdyag dgsydwu shusia \#jkdlsa dasjkfjkj #dsdas')
 [/input]
 [output]
 jkdlsa
@@ -167,7 +167,7 @@ sdas
 [/test]
 [test]
 [input]
-modernTimesOfHashTag('nj kwuei euie ruiw eop oerr # #sa')
+modernTimesOfHashTag('nj kwuei euie ruiw eop oerr \# \#sa')
 [/input]
 [output]
 sa
@@ -175,7 +175,7 @@ sa
 [/test]
 [test]
 [input]
-modernTimesOfHashTag('nj #kwuei #euiAAe #32432\$\$\$\$ ruiw eop oerr # #sa')
+modernTimesOfHashTag('nj #kwuei #euiAAe #32432\$\$\$\$ ruiw eop oerr \# \#sa')
 [/input]
 [output]
 kwuei
@@ -185,7 +185,7 @@ sa
 [/test]
 [test]
 [input]
-modernTimesOfHashTag('nj #nnj')
+modernTimesOfHashTag('nj \#nnj')
 [/input]
 [output]
 nnj
@@ -224,15 +224,16 @@ Your task is to subtract the **file name** and its extension.
 
 Beware of files like **template.bak.pptx**, as **template.bak** should be the file name, while pptx is the extension.
 
-# Example
+# Example One
   | **Input** | **Output** |
 | --- | --- |
-| extractFile(['C:\\Internal\\training-internal\\Template.pptx']) | File name: Template |
+| extractFile('C:\\Internal\\training-internal\\Template.pptx') | File name: Template |
 || File extension: pptx |
 
+# Example Two
  | **Input** | **Output** |
 | --- | --- |
-| extractFile(['C:\\Projects\\Data-Structures\\LinkedList.cs']) | File name: LinkedList |
+| extractFile('C:\\Projects\\Data-Structures\\LinkedList.cs') | File name: LinkedList |
 || File extension: cs |
 
 
@@ -241,7 +242,7 @@ Beware of files like **template.bak.pptx**, as **template.bak** should be the fi
 [tests]
 [test open]
 [input]
-extractFile(['C:\\Internal\\training-internal\\Template.pptx'])
+extractFile('C:\\Internal\\training-internal\\Template.pptx')
 [/input]
 [output]
 File name: Template
@@ -250,7 +251,7 @@ File extension: pptx
 [/test]
 [test open]
 [input]
-extractFile(['C:\\Projects\\Data-Structures\\LinkedList.cs'])
+extractFile('C:\\Projects\\Data-Structures\\LinkedList.cs')
 [/input]
 [output]
 File name: LinkedList
@@ -259,7 +260,7 @@ File extension: cs
 [/test]
 [test]
 [input]
-extractFile(['E:\\P\\JAVA\\src\\oop\\Main.java'])
+extractFile('E:\\P\\JAVA\\src\\oop\\Main.java')
 [/input]
 [output]
 File name: Main
@@ -268,7 +269,7 @@ File extension: java
 [/test]
 [test]
 [input]
-extractFile(['E:\\EX\\csharp\\CatShop.sln'])
+extractFile('E:\\EX\\csharp\\CatShop.sln')
 [/input]
 [output]
 File name: CatShop
@@ -277,7 +278,7 @@ File extension: sln
 [/test]
 [test]
 [input]
-extractFile(['E:\\P\\JAVA\\src\\oop\\Bor.xml'])
+extractFile('E:\\P\\JAVA\\src\\oop\\Bor.xml')
 [/input]
 [output]
 File name: Bor
@@ -286,7 +287,7 @@ File extension: xml
 [/test]
 [test]
 [input]
-extractFile(['E:\\Trash\\MoreTrash\\SoftUniExamsSolutions.txt'])
+extractFile('E:\\Trash\\MoreTrash\\SoftUniExamsSolutions.txt')
 [/input]
 [output]
 File name: SoftUniExamsSolutions
@@ -295,7 +296,7 @@ File extension: txt
 [/test]
 [test]
 [input]
-extractFile(['E:\\TECH-SVN\\Java\\07-Objects-and-Classes\\Exercise\\07.Objects-and-Classes-Exercise.docx'])
+extractFile('E:\\TECH-SVN\\Java\\07-Objects-and-Classes\\Exercise\\07.Objects-and-Classes-Exercise.docx')
 [/input]
 [output]
 File name: 07.Objects-and-Classes-Exercise
@@ -311,7 +312,7 @@ File extension: docx
 [code-task title="String Substring" taskId="js-fundamentals-pt2-text-processing-String-Substring" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function stringSubstring(input){
+function stringSubstring(firstStr, secondStr){
   // Write your code here
 }
 ```
@@ -327,7 +328,7 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-## Description
+# Description
 
 The input will be given as **two** separated strings.
 
@@ -343,15 +344,15 @@ If you don't find the word print "\{**word**\} **not found!**"
 # Example
   | **Input** | **Output** |
 | --- | --- |
-| stringSubstring(['javascript', 'JavaScript is the best programming language']) | javascript |
-| stringSubstring(['python','JavaScript is the best programming language']) | python not found\! |
+| stringSubstring('javascript', 'JavaScript is the best programming language') | javascript |
+| stringSubstring('python','JavaScript is the best programming language') | python not found\! |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-stringSubstring(['javascript', 'JavaScript is the best programming language'])
+stringSubstring('javascript', 'JavaScript is the best programming language')
 [/input]
 [output]
 javascript
@@ -359,7 +360,7 @@ javascript
 [/test]
 [test open]
 [input]
-stringSubstring(['python','JavaScript is the best programming language'])
+stringSubstring('python','JavaScript is the best programming language')
 [/input]
 [output]
 python not found!
@@ -367,7 +368,7 @@ python not found!
 [/test]
 [test]
 [input]
-stringSubstring(['java','Java is the best programming language'])
+stringSubstring('java','Java is the best programming language')
 [/input]
 [output]
 java
@@ -375,7 +376,7 @@ java
 [/test]
 [test]
 [input]
-stringSubstring(['chushki','Jaba is chushki the best jaba programming language'])
+stringSubstring('chushki','Jaba is chushki the best jaba programming language')
 [/input]
 [output]
 chushki
@@ -383,7 +384,7 @@ chushki
 [/test]
 [test]
 [input]
-stringSubstring(['chushki','bla bla bla'])
+stringSubstring('chushki','bla bla bla')
 [/input]
 [output]
 chushki not found!
@@ -391,7 +392,7 @@ chushki not found!
 [/test]
 [test]
 [input]
-stringSubstring(['drashki','bla bla bla drashki'])
+stringSubstring('drashki','bla bla bla drashki')
 [/input]
 [output]
 drashki
@@ -399,7 +400,7 @@ drashki
 [/test]
 [test]
 [input]
-stringSubstring(['drashki','bla bla bla nodrashki'])
+stringSubstring('drashki','bla bla bla nodrashki')
 [/input]
 [output]
 drashki not found!
@@ -438,15 +439,15 @@ Write a function that receives a single string and **replaces** any sequence of 
 # Example
   | **Input** | **Output** |
 | --- | --- |
-| replaceRepeatingChars(['aaaaabbbbbcdddeeeedssaa']) | abcdedsa |
-| replaceRepeatingChars(['qqqwerqwecccwd']) | qwerqwecwd |
+| replaceRepeatingChars('aaaaabbbbbcdddeeeedssaa') | abcdedsa |
+| replaceRepeatingChars('qqqwerqwecccwd') | qwerqwecwd |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-replaceRepeatingChars(['aaaaabbbbbcdddeeeedssaa'])
+replaceRepeatingChars('aaaaabbbbbcdddeeeedssaa')
 [/input]
 [output]
 abcdedsa
@@ -454,7 +455,7 @@ abcdedsa
 [/test]
 [test open]
 [input]
-replaceRepeatingChars(['qqqwerqwecccwd'])
+replaceRepeatingChars('qqqwerqwecccwd')
 [/input]
 [output]
 qwerqwecwd
@@ -462,7 +463,7 @@ qwerqwecwd
 [/test]
 [test]
 [input]
-replaceRepeatingChars(['aaaaaaaa'])
+replaceRepeatingChars('aaaaaaaa')
 [/input]
 [output]
 a
@@ -470,7 +471,7 @@ a
 [/test]
 [test]
 [input]
-replaceRepeatingChars(['bbbbbbbbb'])
+replaceRepeatingChars('bbbbbbbbb')
 [/input]
 [output]
 b
@@ -478,7 +479,7 @@ b
 [/test]
 [test]
 [input]
-replaceRepeatingChars(['aaaaabbbbbbbcccceeede'])
+replaceRepeatingChars('aaaaabbbbbbbcccceeede')
 [/input]
 [output]
 abcede
@@ -486,7 +487,7 @@ abcede
 [/test]
 [test]
 [input]
-replaceRepeatingChars(['kkddidkkgiiggbd'])
+replaceRepeatingChars('kkddidkkgiiggbd')
 [/input]
 [output]
 kdidkgigbd
@@ -494,7 +495,7 @@ kdidkgigbd
 [/test]
 [test]
 [input]
-replaceRepeatingChars(['asdasdasd'])
+replaceRepeatingChars('asdasdasd')
 [/input]
 [output]
 asdasdasd
@@ -539,16 +540,16 @@ Print them joined by **a comma and a space.**
 # Example
   | **Input** | **Output** |
 | --- | --- |
-| splitter(['SplitMeIfYouCanHaHaYouCantOrYouCan']) | Split, Me, If, You, Can, Ha, Ha, You, Cant, Or, You, Can |
-| splitter(['HoldTheDoor']) | Hold, The, Door |
-| splitter(['ThisIsSoAnnoyingToDo']) | This, Is, So, Annoying, To, Do |
+| splitter('SplitMeIfYouCanHaHaYouCantOrYouCan') | Split, Me, If, You, Can, Ha, Ha, You, Cant, Or, You, Can |
+| splitter('HoldTheDoor') | Hold, The, Door |
+| splitter('ThisIsSoAnnoyingToDo') | This, Is, So, Annoying, To, Do |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-splitter(['SplitMeIfYouCanHaHaYouCantOrYouCan'])
+splitter('SplitMeIfYouCanHaHaYouCantOrYouCan')
 [/input]
 [output]
 Split, Me, If, You, Can, Ha, Ha, You, Cant, Or, You, Can
@@ -556,7 +557,7 @@ Split, Me, If, You, Can, Ha, Ha, You, Cant, Or, You, Can
 [/test]
 [test open]
 [input]
-splitter(['HoldTheDoor'])
+splitter('HoldTheDoor')
 [/input]
 [output]
 Hold, The, Door
@@ -564,7 +565,7 @@ Hold, The, Door
 [/test]
 [test open]
 [input]
-splitter(['ThisIsSoAnnoyingToDo'])
+splitter('ThisIsSoAnnoyingToDo')
 [/input]
 [output]
 This, Is, So, Annoying, To, Do
@@ -572,7 +573,7 @@ This, Is, So, Annoying, To, Do
 [/test]
 [test]
 [input]
-splitter(['BdgshajTgdshDdsadasFF'])
+splitter('BdgshajTgdshDdsadasFF')
 [/input]
 [output]
 Bdgshaj, Tgdsh, Ddsadas, F, F
@@ -580,7 +581,7 @@ Bdgshaj, Tgdsh, Ddsadas, F, F
 [/test]
 [test]
 [input]
-splitter(['AhjbhbBsgasf'])
+splitter('AhjbhbBsgasf')
 [/input]
 [output]
 Ahjbhb, Bsgasf
@@ -588,7 +589,7 @@ Ahjbhb, Bsgasf
 [/test]
 [test]
 [input]
-splitter(['AhjbhbBsgasfCaXa'])
+splitter('AhjbhbBsgasfCaXa')
 [/input]
 [output]
 Ahjbhb, Bsgasf, Ca, Xa
@@ -596,7 +597,7 @@ Ahjbhb, Bsgasf, Ca, Xa
 [/test]
 [test]
 [input]
-splitter(['AhjbhbBsgasNNNMfCaXa'])
+splitter('AhjbhbBsgasNNNMfCaXa')
 [/input]
 [output]
 Ahjbhb, Bsgas, N, N, N, Mf, Ca, Xa
@@ -604,7 +605,7 @@ Ahjbhb, Bsgas, N, N, N, Mf, Ca, Xa
 [/test]
 [test]
 [input]
-splitter(['Mhjbhb'])
+splitter('Mhjbhb')
 [/input]
 [output]
 Mhjbhb
@@ -638,7 +639,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 
-## Description
+# Description
 
 The input will be a **single string.**
 
@@ -646,15 +647,15 @@ Write a function that cuts the given string **in half** and reverse the **two ha
 
 Print each half on a **separate line.**
 
-# Example
+# Example One
 | **Input** | **Output** |
 | --- | --- |
-| cutAndReverse(['tluciffiDsIsihTgnizamAoSsIsihT']) | ThisIsDifficult|
+| cutAndReverse('tluciffiDsIsihTgnizamAoSsIsihT') | ThisIsDifficult|
 ||ThisIsSoAmazing|
-
+# Example Two
 | **Input** | **Output** |
 | --- | --- |
-| cutAndReverse(['sihToDtnaCuoYteBIboJsihTtAdooGoSmI']) | IBetYouCantDoThis|
+| cutAndReverse('sihToDtnaCuoYteBIboJsihTtAdooGoSmI') | IBetYouCantDoThis|
 ||ImSoGoodAtThisJob|
 
 [/task-description]
@@ -662,7 +663,7 @@ Print each half on a **separate line.**
 [tests]
 [test open]
 [input]
-cutAndReverse(['tluciffiDsIsihTgnizamAoSsIsihT'])
+cutAndReverse('tluciffiDsIsihTgnizamAoSsIsihT')
 [/input]
 [output]
 ThisIsDifficult
@@ -671,7 +672,7 @@ ThisIsSoAmazing
 [/test]
 [test open]
 [input]
-cutAndReverse(['sihToDtnaCuoYteBIboJsihTtAdooGoSmI'])
+cutAndReverse('sihToDtnaCuoYteBIboJsihTtAdooGoSmI')
 [/input]
 [output]
 IBetYouCantDoThis
@@ -680,7 +681,7 @@ ImSoGoodAtThisJob
 [/test]
 [test]
 [input]
-cutAndReverse(['adahjfvgshfgeegy'])
+cutAndReverse('adahjfvgshfgeegy')
 [/input]
 [output]
 gvfjhada
@@ -689,7 +690,7 @@ ygeegfhs
 [/test]
 [test]
 [input]
-cutAndReverse(['uiuyiuyuiy'])
+cutAndReverse('uiuyiuyuiy')
 [/input]
 [output]
 iyuiu
@@ -698,7 +699,7 @@ yiuyu
 [/test]
 [test]
 [input]
-cutAndReverse(['uasdfgiuADFGAyiuKAJIDPyuiy'])
+cutAndReverse('uasdfgiuADFGAyiuKAJIDPyuiy')
 [/input]
 [output]
 AGFDAuigfdsau
@@ -707,7 +708,7 @@ yiuyPDIJAKuiy
 [/test]
 [test]
 [input]
-cutAndReverse(['tluciffiDsdssdIsihTgnizfamAohgfSsIsihT'])
+cutAndReverse('tluciffiDsdssdIsihTgnizfamAohgfSsIsihT')
 [/input]
 [output]
 ThisIdssdsDifficult
@@ -716,7 +717,7 @@ ThisIsSfghoAmafzing
 [/test]
 [test]
 [input]
-cutAndReverse(['VDSHvdgshVSGDA'])
+cutAndReverse('VDSHvdgshVSGDA')
 [/input]
 [output]
 gdvHSDV

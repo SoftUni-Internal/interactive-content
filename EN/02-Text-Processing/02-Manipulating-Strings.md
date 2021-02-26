@@ -211,14 +211,14 @@ Print the result.
 # Example
   | **Input** | **Output** |
 | --- | --- |
-| substring(['ASentence', '1', '8']) | Sentence |
+| substring('ASentence', 1, 8) | Sentence |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-substring(['ASentence', '1', '8'])
+substring('ASentence', 1, 8)
 [/input]
 [output]
 Sentence
@@ -226,7 +226,7 @@ Sentence
 [/test]
 [test]
 [input]
-substring(['gashajGAHJGAasghaj', '4', '8'])
+substring('gashajGAHJGAasghaj', 4, 8)
 [/input]
 [output]
 ajGAHJGA
@@ -234,7 +234,7 @@ ajGAHJGA
 [/test]
 [test]
 [input]
-substring(['gasjGAHJAasghaj', '0', '10'])
+substring('gasjGAHJAasghaj', 0, 10)
 [/input]
 [output]
 gasjGAHJAa
@@ -242,7 +242,7 @@ gasjGAHJAa
 [/test]
 [test]
 [input]
-substring(['gasjGA48HJAasghaj', '5', '1'])
+substring('gasjGA48HJAasghaj', 5, 1)
 [/input]
 [output]
 A
@@ -250,7 +250,7 @@ A
 [/test]
 [test]
 [input]
-substring(['gasjGA48HJAahaj', '5', '5'])
+substring('gasjGA48HJAahaj', 5, 5)
 [/input]
 [output]
 A48HJ
@@ -258,7 +258,7 @@ A48HJ
 [/test]
 [test]
 [input]
-substring(['jjjasjA48HJAko88/(())haj', '10', '10'])
+substring('jjjasjA48HJAko88/(())haj', 10, 10)
 [/input]
 [output]
 JAko88/(()
@@ -363,7 +363,7 @@ console.log(str.repeat(5));
 [code-editor language=javascript]
 
 ```
-function censoredWords(input){
+function censoredWords(sentence, word){
   // Write your code here
 }
 ```
@@ -386,7 +386,7 @@ Find all occurrences of that word in the sentence and **replace them** with the 
 # Example
   | **Input** | **Output** |
 | --- | --- |
-| censoredWords(['A small sentence with some words', 'small']) | A \*\*\*\*\* sentence with some words |
+| censoredWords('A small sentence with some words', 'small') | A \*\*\*\*\* sentence with some words |
 
 
 
@@ -395,7 +395,7 @@ Find all occurrences of that word in the sentence and **replace them** with the 
 [tests]
 [test open]
 [input]
-censoredWords(['A small sentence with some words', 'small'])
+censoredWords('A small sentence with some words', 'small')
 [/input]
 [output]
 A \*\*\*\*\* sentence with some words
@@ -403,7 +403,7 @@ A \*\*\*\*\* sentence with some words
 [/test]
 [test]
 [input]
-censoredWords(['soallsentencewithsomewords', 'so'])
+censoredWords('soallsentencewithsomewords', 'so')
 [/input]
 [output]
 \*\*allsentencewith\*\*mewords
@@ -411,7 +411,7 @@ censoredWords(['soallsentencewithsomewords', 'so'])
 [/test]
 [test]
 [input]
-censoredWords(['pesho gosho stamat pesho', 'pesho'])
+censoredWords('pesho gosho stamat pesho', 'pesho')
 [/input]
 [output]
 \*\*\*\*\* gosho stamat \*\*\*\*\*
@@ -419,7 +419,7 @@ censoredWords(['pesho gosho stamat pesho', 'pesho'])
 [/test]
 [test]
 [input]
-censoredWords(['aa bb aa ca pesho gosho stamat pesho', 'a'])
+censoredWords('aa bb aa ca pesho gosho stamat pesho', 'a')
 [/input]
 [output]
 \*\* bb \*\* c\* pesho gosho st\*m\*t pesho
@@ -427,7 +427,7 @@ censoredWords(['aa bb aa ca pesho gosho stamat pesho', 'a'])
 [/test]
 [test]
 [input]
-censoredWords(['repeat word repeat repeat word word repeat', 'repeat word'])
+censoredWords('repeat word repeat repeat word word repeat', 'repeat word')
 [/input]
 [output]
 \*\*\*\*\*\*\*\*\*\*\* repeat \*\*\*\*\*\*\*\*\*\*\* word repeat
@@ -435,7 +435,7 @@ censoredWords(['repeat word repeat repeat word word repeat', 'repeat word'])
 [/test]
 [test]
 [input]
-censoredWords(['aaa heyyy a heyyy abv hey abc', 'heyyy'])
+censoredWords('aaa heyyy a heyyy abv hey abc', 'heyyy')
 [/input]
 [output]
 aaa \*\*\*\*\* a \*\*\*\*\* abv hey abc
@@ -585,7 +585,7 @@ console.log(padded);
 [code-editor language=javascript]
 
 ```
-function countStringOccurrences(input){
+function countStringOccurrences(text, str){
   // Write your code here
 }
 ```
@@ -608,7 +608,7 @@ Print all the occurrences of that word in the string.
 # Example
   | **Input** | **Output** |
 | --- | --- |
-| countStringOccurrences(['This is a word and it also is a sentence','is']) | 2 |
+| countStringOccurrences('This is a word and it also is a sentence', 'is') | 2 |
 
 
 [/task-description]
@@ -616,7 +616,7 @@ Print all the occurrences of that word in the string.
 [tests]
 [test open]
 [input]
-countStringOccurrences(['This is a word and it also is a sentence','is'])
+countStringOccurrences('This is a word and it also is a sentence','is')
 [/input]
 [output]
 2
@@ -624,7 +624,7 @@ countStringOccurrences(['This is a word and it also is a sentence','is'])
 [/test]
 [test]
 [input]
-countStringOccurrences(['az ti toi tq to nie vie te az az az', 'az'])
+countStringOccurrences('az ti toi tq to nie vie te az az az', 'az')
 [/input]
 [output]
 4
@@ -632,7 +632,7 @@ countStringOccurrences(['az ti toi tq to nie vie te az az az', 'az'])
 [/test]
 [test]
 [input]
-countStringOccurrences(['az toi ti toi tq to nie vie te az az az', 'toi'])
+countStringOccurrences('az toi ti toi tq to nie vie te az az az', 'toi')
 [/input]
 [output]
 2
@@ -640,7 +640,7 @@ countStringOccurrences(['az toi ti toi tq to nie vie te az az az', 'toi'])
 [/test]
 [test]
 [input]
-countStringOccurrences(['az toi ti toi tq to nie vie az az az', 'te'])
+countStringOccurrences('az toi ti toi tq to nie vie az az az', 'te')
 [/input]
 [output]
 0
@@ -648,7 +648,7 @@ countStringOccurrences(['az toi ti toi tq to nie vie az az az', 'te'])
 [/test]
 [test]
 [input]
-countStringOccurrences(['az toi ti toi tq to nie vie az az az', 'tq'])
+countStringOccurrences('az toi ti toi tq to nie vie az az az', 'tq')
 [/input]
 [output]
 1
@@ -656,7 +656,7 @@ countStringOccurrences(['az toi ti toi tq to nie vie az az az', 'tq'])
 [/test]
 [test]
 [input]
-countStringOccurrences(['az tq tq tq tq', 'tq'])
+countStringOccurrences('az tq tq tq tq', 'tq')
 [/input]
 [output]
 4
