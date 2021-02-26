@@ -294,7 +294,7 @@ city(\{ name: 'Bucharest', area: '228', population: '1830000', country: 'Romania
 [output]
 name -> Bucharest
 area -> 228
-population -> 1.83m
+population -> 1830000
 country -> Romania
 postCode -> 010082
 [/output]

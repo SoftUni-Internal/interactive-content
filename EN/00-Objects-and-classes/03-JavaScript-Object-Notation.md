@@ -119,12 +119,17 @@ Loop through all the keys and print them with their values in format:
 \{**key**\}**:** \{**value**\}
 
 
-# Example
+# Example One
   | **Input** | **Output** |
 | --- | --- |
 | convertToObject('\{"name": "George", "age": 40, "town": "Berlin"\}') | name: George |
 ||age: 40|
 ||town: Berlin|
+
+# Example Two
+
+  | **Input** | **Output** |
+| --- | --- |
 | convertToObject('\{"name": "Rafael", "age": 27, "town": "Madrid"\}') | name: Rafael |
 ||age: 27|
 ||town: Madrid|
@@ -147,7 +152,7 @@ convertToObject('\{"name": "Rafael", "age": 27, "town": "Madrid"\}')
 [/input]
 [output]
 name: Rafael
-age: 27|
+age: 27
 town: Madrid
 [/output]
 [/test]
@@ -239,7 +244,7 @@ convertToJSON('George', 'Jones', 'Brown')
 convertToJSON('Thomas', 'Muller', 'Blonde')
 [/input]
 [output]
-\{"name":"Thomas", "lastName":"Muller", "hairColor":"Blonde"\}
+\{"name":"Thomas","lastName":"Muller","hairColor":"Blonde"\}
 [/output]
 [/test]
 [test]
