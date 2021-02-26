@@ -34,22 +34,7 @@ In the end print all the **listed employees** in the following format:
 **Name:** \{**employeeName**\} **-- Personal Number:** \{**personalNum**\}
 
 
-# Example One
 
-| **Input** | **Output** |
-| --- | --- |
-| employees(['Silas Butler','Adnaan Buckley','Juan Peterson','Brendan Villarreal']) | Name\: Silas Butler \-\- Personal Number\: 12 |
-|| Name\: Adnaan Buckley \-\- Personal Number\: 14 |
-|| Name\: Juan Peterson \-\- Personal Number\: 13 |
-||Name\: Brendan Villarreal \-\- Personal Number\: 18|
-
-# Example Two
-
-| **Input** | **Output** |
-| --- | --- |
-| employees(['Drew Owen', 'Tommy Lee', 'Denise Jackson']) | Name\: Drew Owen \-\- Personal Number\: 9 |
-|| Name\: Tommy Lee \-\- Personal Number\: 9 |
-|| Name\: Denise Jackson \-\- Personal Number\: 14 |
 
 [/task-description]
 [tests]
@@ -156,19 +141,7 @@ The output should be objects.
 
 Latitude and longitude must be parsed to numbers and formatted to the second decimal point.
 
-# Example One
 
-| **Input** | **Output** |
-| --- | --- |
-| towns(['Bucuresti \| 42.696552 \| 23.32601','Beijing \| 39.913818 \| 116.363625']) | \{ town: 'Bucuresti', latitude: '42.70', longitude: '23.33' \} |
-| | \{ town: 'Beijing', latitude: '39.91', longitude: '116.36' \} |
-
-# Example Two
-
-| **Input** | **Output** |
-| --- | --- |
-| towns(['Barcelona \| 41.390205 \| 2.154007', 'Paris \| 48.864716 \| 2.349014']) | \{ town: 'Barcelona', latitude: '41.40', longitude: '2.15' \} |
-|| \{ town: 'Paris', latitude: '48.86', longitude: '2.35' \}|
 
 [/task-description]
 [tests]
@@ -277,7 +250,7 @@ The movie's object info must be name, director and date. You can receive several
 * \{**movie name**\} **directedBy** \{**director**\} - Check if the movie exists and then add the director
 * \{**movie name**\} **onDate** \{**date**\} - Check if the movie exists and then add the date
 
-At the end print all the movies that have all the info (if the movie has no director, name or date, don’t print it) **in JSON format.**
+At the end print all the movies that have all the info (if the movie has no director, name or date, do not print it) **in JSON format.**
 
 # Example
 
