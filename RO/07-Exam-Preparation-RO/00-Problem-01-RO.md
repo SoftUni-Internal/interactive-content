@@ -1,7 +1,7 @@
 // sectionId: "Javascript::Programming-Basics::Exam-Preparation::Problem-01"
-
+# Problem: Calculator for TV series
 [slide hideTitle]
-# Problem : Calculator for TV series
+# Calculator for TV series
 
 [vimeo-video]
 [stream language="EN" videoId="487118037/76e61cd949" default /]
@@ -51,7 +51,7 @@ Ca intrare veți primi 4 elemente de consolă:
 
 Imprimați pe consolă timpul necesar pentru a viziona toate episoadele, rotunjite la cel mai apropiat număr întreg în următorul format:
 
-`Total time needed to watch the {numele seriei} series is {timp} minutes.`
+"**Total time needed to watch the** \{**name of the series**\} **series is** \{**time**\} **minutes.**"
 
 # Example
 | **Intrare** | **Ieșire** |

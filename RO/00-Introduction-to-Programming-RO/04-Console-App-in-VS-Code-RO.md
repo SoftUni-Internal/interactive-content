@@ -15,7 +15,7 @@ Creați un folder pentru proiectul dvs. și deschideți-l in VS Code:
 
 [image assetsSrc="intro-to-programming-4.png" /]
 
-Creați un fișier `hello.js` pentru a organiza codul sursă al programului dumneavoastră
+Creați un fișier **hello.js** pentru a organiza codul sursă al programului dumneavoastră
 
 [image assetsSrc="intro-to-programming-5.png" /]
 

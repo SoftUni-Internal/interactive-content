@@ -1,7 +1,7 @@
 // sectionId: "Javascript::Programming-Basics::Exam-Preparation::Problem-03"
-
-[slide hideTitle]
 # Problem 3: Cinema
+[slide hideTitle]
+# Cinema
 
 [vimeo-video]
 [stream language="EN" videoId="487118157/70c5ba1ce8" default /]
@@ -59,7 +59,7 @@ Ca intrare veți primi 3 elemente de consolă:
 
 Imprimați o linie pe consolă: 
 
-`Your bill is {total price}$`
+"**Your bill is** \{**total price**\}$"
 
 * Prețul ar trebui fomratat la două cifre după punctul zecimal
 

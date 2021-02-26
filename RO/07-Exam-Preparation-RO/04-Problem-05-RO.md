@@ -1,8 +1,8 @@
 // sectionId: "Javascript::Programming-Basics::Exam-Preparation::Problem-05"
-
+# Problem 5: TV Series Budget
 [slide hideTitle]
 
-# Problem 5: TV Series Budget
+# TV Series Budget
 
 [vimeo-video]
 [stream language="EN" videoId="487118385/044812fcf3" default /]
@@ -56,11 +56,11 @@ Imprimați o linie pe consolă:
 
 - Dacă bugetul dvs. este mai mare sau egal cu prețul serialelor:
 
-`You bought all the series and have {money left}$ left.`
+"**You bought all the series and have** \{**money left**\}$ **left.**"
 
 - Dacă bugetul dvs. este mai mic decât prețul serialelor: 
 
-`You need {money needed}$ more to buy the series!`
+"**You need** \{**money needed**\}$ **more to buy the series!**"
 
 Rezultatul trebuie să fie formatat la două cifre după punctul zecimal. 
 

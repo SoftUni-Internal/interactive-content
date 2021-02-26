@@ -1,7 +1,7 @@
 // sectionId: "Javascript::Programming-Basics::Exam-Preparation::Problem-06"
-
-[slide hideTitle]
 # Problem 6: The Best Movie
+[slide hideTitle]
+# The Best Movie
 
 [vimeo-video]
 [stream language="EN" videoId="487118452/de8f1dddfb" default /]
@@ -58,11 +58,11 @@ Imprimați pe consolă:
 
 - Dacă ați atins limita de 7 filme, trebuie să imprimați: 
 
-`Title limit has been reached.`
+"**Title limit has been reached.**"
 
 - Imprimați numele celui mai bun fim: 
 
-`The best movie for you is {movie title} its ASCII sum is: {sum of symbols}.`
+"**The best movie for you is** \{**movie title**\} **its ASCII sum is:** \{**sum of symbols**\}."
 
 ## Example
 | **Intrare** | **Ieșire** |

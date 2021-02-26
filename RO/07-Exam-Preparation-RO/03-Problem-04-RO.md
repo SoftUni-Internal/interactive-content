@@ -1,7 +1,7 @@
 // sectionId: "Javascript::Programming-Basics::Exam-Preparation::Problem-04"
-
-[slide hideTitle]
 # Problem 4: Cinema Income
+[slide hideTitle]
+# Cinema Income
 
 [vimeo-video]
 [stream language="EN" videoId="487118285/74e8a9a9c7" default /]
@@ -39,22 +39,23 @@ Citiți de pe consolă:
 
 - 
 Pe fiecare dintre elementele următoare, până când comanda este "**Movie time!**":
-	- Numărul de oameni care intră în cinematograf: un număr întreg în intervalul  \[1… 15\]
+
+- Numărul de oameni care intră în cinematograf: un număr întreg în intervalul  \[1… 15\]
 
 ## Output
 Mai întâi, tipăriți următoarele linii:
 
 - Dacă ați primit comanda "**Movie time!**": 
 
-`There are {seats left} seats left in the cinema.`
+"**There are** \{**seats left**\} **seats left in the cinema.**"
 
 - În cazul în care nu mai sunt locuri libere în sală: 
 
-`The cinema is full.`
+"**The cinema is full.**"
 
 - Pe urmă imprimați:
 
- `Cinema income - {income}$`
+ "**Cinema income -** \{**income**\}$"
 
 ## Example
 

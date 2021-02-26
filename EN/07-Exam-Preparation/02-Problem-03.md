@@ -1,7 +1,7 @@
 // sectionId: "Javascript::Programming-Basics::Exam-Preparation::Problem-03"
-
-[slide hideTitle]
 # Problem 3: Cinema
+[slide hideTitle]
+# Cinema
 
 [video src="https://videos.softuni.org/hls/javascript-basics/07.Exam-Preparation/EN/JS-exam-preparation-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -51,9 +51,10 @@ As input you will receive 3 arguments:
 
 ## Output
 
-Print one line on the console: "**Your bill is** \{**total price**\}$"
+Print one line on the console: 
+"**Your bill is** \{**total price**\}$"
 
- * The price must be formatted to the second digit after the decimal point.
+* The price must be formatted to the second digit after the decimal point.
 
 ## Example
 | **Input** | **Output** |

@@ -1,8 +1,8 @@
 // sectionId: "Javascript::Programming-Basics::-Exam-Preparation::Problem-05"
-
+# Problem 5: TV Series Budget
 [slide hideTitle]
 
-# Problem 5: TV Series Budget
+# TV Series Budget
 
 [video src="https://videos.softuni.org/hls/javascript-basics/07.Exam-Preparation/EN/JS-exam-preparation-5-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -49,11 +49,11 @@ Print one line to the console:
 
 - If your budget is greater than or equal to the price of the series: 
 
-**You bought all the series and have** \{**money left**\}$ **left.**
+"**You bought all the series and have** \{**money left**\}$ **left.**"
 
 - If your budget is less than the price of the series: 
 
-**You need** \{**money needed**\}$ **more to buy the series!**
+"**You need** \{**money needed**\}$ **more to buy the series!**"
 
 The result must be formatted to the second digit after the decimal point.
 

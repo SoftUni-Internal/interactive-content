@@ -1,7 +1,7 @@
 // sectionId: "Javascript::Programming-Basics::Exam-Preparation::Problem-02"
-
-[slide hideTitle]
 # Problem 2: Time for Lunch
+[slide hideTitle]
+# Time for Lunch
 
 [video src="https://videos.softuni.org/hls/javascript-basics/07.Exam-Preparation/EN/JS-exam-preparation-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -47,11 +47,11 @@ The output should consist of one line:
 
 - If there is enough time to watch the episode: 
 
-**You have enough time to watch** \{**name of the series**\} **and would be left with** \{**time left**\} **minutes of free time.**
+"**You have enough time to watch** \{**name of the series**\} **and would be left with** \{**time left**\} **minutes of free time.**"
 
 - If there is not enough time: 
 
-**You don't have enough time to watch** \{**name of the series**\}**, you need** \{**time needed**\} **more minutes.**
+"**You don't have enough time to watch** \{**name of the series**\}**, you need** \{**time needed**\} **more minutes.**"
 
 Round the time up to the nearest whole number.
 

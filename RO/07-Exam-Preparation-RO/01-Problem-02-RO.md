@@ -1,7 +1,7 @@
 // sectionId: "Javascript::Programming-Basics::Exam-Preparation::Problem-02"
-
-[slide hideTitle]
 # Problema 2: Time for Lunch
+[slide hideTitle]
+# Time for Lunch
 
 [vimeo-video]
 [stream language="EN" videoId="487118102/c7f6a5713f" default /]
@@ -48,11 +48,11 @@ Rezultatul ar trebui să fie format dintr-o singură linie:
 
 - În cazul în care este timp suficient pentru a viziona un întreg episod: 
 
-`You have enough time to watch {name of the series} and would be left with {time left} minutes of free time.`
+"**You have enough time to watch** \{**name of the series**\} **and would be left with** \{**time left**\} **minutes of free time.**"
 
 - În cazul în care nu este timp suficient: 
 
-`You don't have enough time to watch {name of the series}, you need {time needed} more minutes.`
+"**You don't have enough time to watch** \{**name of the series**\}**, you need** \{**time needed**\} **more minutes.**"
 
 Round the time up to the nearest whole number.
 

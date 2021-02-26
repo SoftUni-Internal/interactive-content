@@ -1,7 +1,7 @@
 // sectionId: "Javascript::Programming-Basics::Exam-Preparation::Problem-06"
-
-[slide hideTitle]
 # Problem 6: The Best Movie
+[slide hideTitle]
+# The Best Movie
 
 [video src="https://videos.softuni.org/hls/javascript-basics/07.Exam-Preparation/EN/JS-exam-preparation-6-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -59,11 +59,11 @@ Print on the console:
 
 - If you have reached the limit of 7 movies you must print: 
 
-**Title limit has been reached.**
+"**Title limit has been reached.**"
 
 - Print the best movie: 
 
-**The best movie for you is** \{**movie title**\} **its ASCII sum is:** \{**sum of symbols**\}.
+"**The best movie for you is** \{**movie title**\} **its ASCII sum is:** \{**sum of symbols**\}."
 
 ## Example
 | **Input** | **Output** |

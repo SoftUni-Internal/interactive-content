@@ -1,7 +1,7 @@
 // sectionId: "Javascript::Programming-Basics::Exam-Preparation::Problem-04"
-
-[slide hideTitle]
 # Problem 4: Cinema Income
+[slide hideTitle]
+# Cinema Income
 
 [video src="https://videos.softuni.org/hls/javascript-basics/07.Exam-Preparation/EN/JS-exam-preparation-4-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -50,15 +50,15 @@ First, print one of these lines:
 
 - If you have received the command "**Movie time!**": 
 
-**There are** \{**seats left**\} **seats left in the cinema.**
+"**There are** \{**seats left**\} **seats left in the cinema.**"
 
 - If there are no more free seats in the hall: 
 
-**The cinema is full.**
+"**The cinema is full.**"
 
 - Afterwards, print: 
 
-**Cinema income -** \{**income**\}$
+"**Cinema income -** \{**income**\}$"
 
 ## Example
 | **Input** | **Output** |

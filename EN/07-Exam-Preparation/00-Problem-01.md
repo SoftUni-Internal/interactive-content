@@ -1,7 +1,7 @@
 // sectionId: "Javascript::Programming-Basics::Exam-Preparation::Problem-01"
-
-[slide hideTitle]
 # Problem 1: Calculator for TV series
+[slide hideTitle]
+# Calculator for TV series
 
 [video src="https://videos.softuni.org/hls/javascript-basics/07.Exam-Preparation/EN/JS-exam-preparation-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -47,7 +47,7 @@ As input you will receive 4 arguments:
 ## Output
 Print to the console the time needed to watch all of the episodes, rounded down to the nearest whole number in the following format:
 
-- **Total time needed to watch the** \{**name of the series**\} **series is** \{**time**\} **minutes.**
+- "**Total time needed to watch the** \{**name of the series**\} **series is** \{**time**\} **minutes.**"
 
 ## Example
 | **Input** | **Output** |
