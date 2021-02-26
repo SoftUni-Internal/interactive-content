@@ -185,23 +185,32 @@ Day\: 07\, Month\: Feb\, Year\: 2008
 [code-editor language=javascript]
 
 ```
-function solve(input) {
+function furniture(input) {
    // Write youer code here
 }
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Description
 
 Write a function to calculate the total cost of different types of furniture. 
 
-You will be given some lines of input until you receive the line `Purchase`. 
+You will be given some lines of input until you receive the line "**Purchase**". 
 
 The line is valid when it is in the following format:
 
-`>>{furniture name}<<{price}!{quantity}`
+**>>**\{**furniture name**\}**<<**\{**price**\}**!**\{**quantity**\}
 
 The price can be a floating point number or an integer number. 
 
@@ -209,94 +218,77 @@ Store the names of the furniture and the total price.
 
 In the end print out each bought furniture on a separate line in the format:
 
-`Bought furniture:
-{1st name}
-{2nd name}
-…`
+**Bought furniture:**
+\{**1st name**\}
+\{**2nd name**\}
+…
 
 And on the last line, print the following: 
 
-`Total money spend: {spend money}` formatted to the second decimal point.
+**Total money spent:** \{**spent money**\} formatted to the second decimal point.
 
 # Example
 
 | **Input** | **Output** |
 | --- | --- |
-| `['>>Sofa<<312.23!3', '>>TV<<300!5', '>Invalid<<!5', 'Purchase']` | Bought furniture\: |
+| furniture(['>>Sofa<<312.23!3', '>>TV<<300!5', '>Invalid<<!5', 'Purchase']) | Bought furniture\: |
 | | Sofa |
 | | TV |
-| | Total money spend\: 2436\.69 |
+| | Total money spent\: 2436\.69 |
+| furniture(['>>Chair<<34.44!1', '>>Table<44.44!2', 'Purchase']) | Bought furniture\: |
+| | Chair |
+| | Total money spent\: 34\.44 |
 
 
 [/task-description]
 [tests]
 [test]
 [input]
-\>\>Sofa\<\<312\.23\!3
-\>\>TV\<\<300\!5
-\>Invalid\<\<\!5
-Purchase
+furniture(['\>\>Sofa\<\<312\.23\!3', '\>\>TV\<\<300\!5', '\>Invalid\<\<\!5', 'Purchase'])
 [/input]
 [output]
 Bought furniture\:
 Sofa
 TV
-Total money spend\: 2436\.69
+Total money spent\: 2436\.69
 [/output]
 [/test]
 [test]
 [input]
-\>\>Televizor\<\<312\.23\!3
-\>\>Monitor\<\<300\!5
-\>\>Invalid\<\<\<\<\!5
-\>\>Sink\<\<220\!10
-\>\>\>\>\>\>Invalid\<\<\!5
-Purchase
+furniture(['\>\>Televizor\<\<312\.23\!3', '\>\>Monitor\<\<300\!5', '\>\>Invalid\<\<\<\<\!5', '\>\>Sink\<\<220\!10', '\>\>\>\>\>\>Invalid\<\<\!5', 'Purchase'])
 [/input]
 [output]
 Bought furniture\:
 Televizor
 Monitor
 Sink
-Total money spend\: 4636\.69
+Total money spent\: 4636\.69
 [/output]
 [/test]
 [test]
 [input]
-\>Invalid\<\<\!5
-\>Invalid\<\<\!5
-\>Invalid\<\<\!5
-Purchase
+furniture(['\>Invalid\<\<\!5', '\>Invalid\<\<\!5', '\>Invalid\<\<\!5', 'Purchase'])
 [/input]
 [output]
 Bought furniture\:
-Total money spend\: 0\.00
+Total money spent\: 0\.00
 [/output]
 [/test]
 [test]
 [input]
-\>\>Sofa\<\<316\.12\!10
-\>\>Couch\<\<31\!12
-\>\>Table\<\<31\!12
-\>Masichka\<\<5
-Purchase
+furniture(['\>\>Sofa\<\<316\.12\!10', '\>\>Couch\<\<31\!12', '\>\>Table\<\<31\!12', '\>Masichka\<\<5', 'Purchase'])
 [/input]
 [output]
 Bought furniture\:
 Sofa
 Couch
 Table
-Total money spend\: 3905\.20
+Total money spent\: 3905\.20
 [/output]
 [/test]
 [test]
 [input]
-\>\>Sofa\<\<312\.23\!3\.66
-\>\>Sofa\<\<312\.23\!3\.66
-\>\>Sofa\<\<312\.23\!3\.66
-\>\>Sofa\<\<312\.23\!3\.66
-\>\>Sofa\<\<312\.23\!3\.66
-Purchase
+furniture(['\>\>Sofa\<\<312\.23\!3\.66', '\>\>Sofa\<\<312\.23\!3\.66', '\>\>Sofa\<\<312\.23\!3\.66', '\>\>Sofa\<\<312\.23\!3\.66', '\>\>Sofa\<\<312\.23\!3\.66', 'Purchase'])
 [/input]
 [output]
 Bought furniture\:
@@ -305,19 +297,12 @@ Sofa
 Sofa
 Sofa
 Sofa
-Total money spend\: 4683\.45
+Total money spent\: 4683\.45
 [/output]
 [/test]
 [test]
 [input]
-\>\>Laptop\<\<312\.2323\!3
-\>\>TV\<\<300\.21314\!5
-\>Invalid\<\<\!5
-\>\>TV\<\<300\.21314\!20
-\>\>Invalid\<\!5
-\>\>TV\<\<30\.21314\!5
-\>\>Invalid\<\<\!\!5
-Purchase
+furniture(['\>\>Laptop\<\<312\.2323\!3', '\>\>TV\<\<300\.21314\!5', '\>Invalid\<\<\!5', '\>\>TV\<\<300\.21314\!20', '\>\>Invalid\<\!5', '\>\>TV\<\<30\.21314\!5', '\>\>Invalid\<\<\!\!5', 'Purchase'])
 [/input]
 [output]
 Bought furniture\:
@@ -325,7 +310,7 @@ Laptop
 TV
 TV
 TV
-Total money spend\: 8593\.09
+Total money spent\: 8593\.09
 [/output]
 [/test]
 [/tests]
