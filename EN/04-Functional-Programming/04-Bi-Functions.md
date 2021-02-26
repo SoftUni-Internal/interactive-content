@@ -49,10 +49,10 @@ Write a program that reads **one line of Integers** separated by a comma and a s
 
 Print the **count of the numbers** and **their sum**. 
 
-Use a `Function<String, Integer>`.
+This time use a `BiFunction`.
 
 ## Hints
-Use `Function<String, Integer>` for parsing integers after you split them to a String array.
+Use `BiFunction<Integer, String, Integer>` for parsing integers after you split them to a String array.
 
 # Examples
 
