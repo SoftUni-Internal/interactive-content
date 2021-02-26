@@ -158,12 +158,21 @@ console.log(result);
 [code-editor language=javascript]
 
 ```
-function solve(input){
+function matchName(input){
   // Write your code here
 }
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Description
@@ -185,7 +194,7 @@ To help you out, we have outlined several steps:
 3.	Specify that you want two words with a space between them \(the space character \' \', and not any whitespace symbol\)
 4.	For each word, specify that it should begin with an uppercase letter, using a character set. The desired characters are in a range\: from A to Z
 5.	For each word, specify that the first letter is followed only by lowercase letters, one or more \– use another character set and the correct quantifier
-6.	To prevent capturing of letters across new lines, put `\b` at the beginning and at the end of your regular expression
+6.	To prevent capturing of letters across new lines, put \\**b** at the beginning and at the end of your regular expression
 
 This will ensure that what precedes and what follows the match is a word boundary like a new line.
 
@@ -193,13 +202,14 @@ This will ensure that what precedes and what follows the match is a word boundar
 
 | **Input** | **Output** |
 | --- | --- |
-| `['John smith, john smith, john Smith, JOhn Smith, JohN smith, John Smith']` | John Smith |
+| matchName(['John smith, john smith, john Smith, JOhn Smith, JohN smith, John Smith']) | John Smith |
+| matchName(['Chuck finley, chuck finley, tommy Lee, Chuck Finley']) | Chuck Finley |
 
 [/task-description]
 [tests]
 [test]
 [input]
-Ivan Ivanov\, Ivan ivanov\, ivan Ivanov\, IVan Ivanov\, Test Testov\, Ivan	Ivanov
+matchName(['Ivan Ivanov\, Ivan ivanov\, ivan Ivanov\, IVan Ivanov\, Test Testov\, Ivan	Ivanov'])
 [/input]
 [output]
 Ivan Ivanov Test Testov
@@ -207,7 +217,7 @@ Ivan Ivanov Test Testov
 [/test]
 [test]
 [input]
-gosho goshov\-Xi Ban cc DD\-e e gosho goshov gosho goshov\-pesho ivanov\-PESHO IVANOV\-AA PESHO IVANOV A A aa Ivan Ivanov B B\-d d EE\-ivanivanov\-D D Ivan Ivanov 
+matchName(['gosho goshov\-Xi Ban cc DD\-e e gosho goshov gosho goshov\-pesho ivanov\-PESHO IVANOV\-AA PESHO IVANOV A A aa Ivan Ivanov B B\-d d EE\-ivanivanov\-D D Ivan Ivanov'])
 [/input]
 [output]
 Xi Ban Ivan Ivanov Ivan Ivanov
@@ -215,7 +225,7 @@ Xi Ban Ivan Ivanov Ivan Ivanov
 [/test]
 [test]
 [input]
-c c\-PESHO IVANOV GOSHO GOSHOV\-D D\-GoshoGoshov goshogoshov\-bb d d\-CC d d A A\-IvanIvanov A A\-xiban gosho goshov\-Xi Ban xi ban\-BB\-pesho petrov XiBan\-
+matchName(['c c\-PESHO IVANOV GOSHO GOSHOV\-D D\-GoshoGoshov goshogoshov\-bb d d\-CC d d A A\-IvanIvanov A A\-xiban gosho goshov\-Xi Ban xi ban\-BB\-pesho petrov XiBan\-'])
 [/input]
 [output]
 Xi Ban
@@ -223,7 +233,7 @@ Xi Ban
 [/test]
 [test]
 [input]
-GOSHO GOSHOV\-peshopetrov\-c c ivanivanov peshoivanov\-PeshoPetrov\-PeshoIvanov\-DD\-PeshoPetrov Xi Ban\-D D\-IvanIvanov\-D D\-dd\-aa pesho petrov PeshoIvanov\-XI BAN\-cc\-ivan ivanov\-
+matchName(['GOSHO GOSHOV\-peshopetrov\-c c ivanivanov peshoivanov\-PeshoPetrov\-PeshoIvanov\-DD\-PeshoPetrov Xi Ban\-D D\-IvanIvanov\-D D\-dd\-aa pesho petrov PeshoIvanov\-XI BAN\-cc\-ivan ivanov\-'])
 [/input]
 [output]
 Xi Ban
@@ -231,7 +241,7 @@ Xi Ban
 [/test]
 [test]
 [input]
-EE\-e e pesho petrov\-PeshoPetrov aa\-gosho goshov\-peshoivanov\-B B EE\-Pesho Petrov\-Pesho Ivanov peshoivanov\-BB Gosho Goshov GOSHO GOSHOV cc XiBan b b\-ivanivanov CC
+matchName(['EE\-e e pesho petrov\-PeshoPetrov aa\-gosho goshov\-peshoivanov\-B B EE\-Pesho Petrov\-Pesho Ivanov peshoivanov\-BB Gosho Goshov GOSHO GOSHOV cc XiBan b b\-ivanivanov CC'])
 [/input]
 [output]
 Pesho Petrov Pesho Ivanov Gosho Goshov
@@ -239,7 +249,7 @@ Pesho Petrov Pesho Ivanov Gosho Goshov
 [/test]
 [test]
 [input]
-d d gosho goshov XiBan pesho ivanov\-Pesho Petrov\-xiban\-Pesho Ivanov pesho petrov\-Pesho Petrov\-IvanIvanov\-Pesho Petrov\-PESHO IVANOV\-EE EE C C\-Pesho Ivanov\-peshoivanov\-bb XiBan\-aa
+matchName(['d d gosho goshov XiBan pesho ivanov\-Pesho Petrov\-xiban\-Pesho Ivanov pesho petrov\-Pesho Petrov\-IvanIvanov\-Pesho Petrov\-PESHO IVANOV\-EE EE C C\-Pesho Ivanov\-peshoivanov\-bb XiBan\-aa'])
 [/input]
 [output]
 Pesho Petrov Pesho Ivanov Pesho Petrov Pesho Petrov Pesho Ivanov
@@ -247,7 +257,7 @@ Pesho Petrov Pesho Ivanov Pesho Petrov Pesho Petrov Pesho Ivanov
 [/test]
 [test]
 [input]
-Xi Ban\-GoshoGoshov B B\-PeshoIvanov xiban B B aa C C\-goshogoshov\-IvanIvanov PeshoPetrov\-PeshoIvanov C C ivan ivanov\-Pesho Ivanov\-IVAN IVANOV C C\-PESHO IVANOV\-PESHO IVANOV ivan ivanov
+matchName(['Xi Ban\-GoshoGoshov B B\-PeshoIvanov xiban B B aa C C\-goshogoshov\-IvanIvanov PeshoPetrov\-PeshoIvanov C C ivan ivanov\-Pesho Ivanov\-IVAN IVANOV C C\-PESHO IVANOV\-PESHO IVANOV ivan ivanov'])
 [/input]
 [output]
 Xi Ban Pesho Ivanov
@@ -255,7 +265,7 @@ Xi Ban Pesho Ivanov
 [/test]
 [test]
 [input]
-A A\-Xi Ban b b\-C C ee XiBan\-gosho goshov GoshoGoshov AA\-IvanIvanov BB\-cc\-pesho petrov DD goshogoshov ivan ivanov IvanIvanov\-pesho ivanov a a\-gosho goshov\-
+matchName(['A A\-Xi Ban b b\-C C ee XiBan\-gosho goshov GoshoGoshov AA\-IvanIvanov BB\-cc\-pesho petrov DD goshogoshov ivan ivanov IvanIvanov\-pesho ivanov a a\-gosho goshov\-'])
 [/input]
 [output]
 Xi Ban
@@ -263,7 +273,7 @@ Xi Ban
 [/test]
 [test]
 [input]
-gosho goshov\-aa\-C C-PESHO IVANOV PESHO PETROV\-A A xi ban A A aa\-peshopetrov Gosho Goshov d d\-E E DD XI BAN\-bb\-Gosho Goshov\-aa\-dd ivan ivanov\-
+matchName(['gosho goshov\-aa\-C C-PESHO IVANOV PESHO PETROV\-A A xi ban A A aa\-peshopetrov Gosho Goshov d d\-E E DD XI BAN\-bb\-Gosho Goshov\-aa\-dd ivan ivanov\-'])
 [/input]
 [output]
 Gosho Goshov Gosho Goshov
@@ -271,7 +281,7 @@ Gosho Goshov Gosho Goshov
 [/test]
 [test]
 [input]
-Gosho Goshov a a C C\-GoshoGoshov EE PeshoPetrov\-a a xi ban D D bb b b\-B B\-c c EE\-IvanIvanov DD pesho ivanov B B PESHO IVANOV IVAN IVANOV\-
+matchName(['Gosho Goshov a a C C\-GoshoGoshov EE PeshoPetrov\-a a xi ban D D bb b b\-B B\-c c EE\-IvanIvanov DD pesho ivanov B B PESHO IVANOV IVAN IVANOV\-'])
 [/input]
 [output]
 Gosho Goshov
@@ -279,7 +289,7 @@ Gosho Goshov
 [/test]
 [test]
 [input]
-goshogoshov peshoivanov\-c c\-XiBan\-cc\-Ivan Ivanov\-D D IVAN IVANOV xi ban BB\-xiban\-PESHO PETROV xiban Ivan Ivanov\-XI BAN\-cc\-IVAN IVANOV EE c c e e
+matchName(['goshogoshov peshoivanov\-c c\-XiBan\-cc\-Ivan Ivanov\-D D IVAN IVANOV xi ban BB\-xiban\-PESHO PETROV xiban Ivan Ivanov\-XI BAN\-cc\-IVAN IVANOV EE c c e e'])
 [/input]
 [output]
 Ivan Ivanov Ivan Ivanov
