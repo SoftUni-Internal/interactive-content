@@ -48,7 +48,7 @@ You can access the values through their keys.
 In this example, "four" is the **key** and the number 4 is the corresponding **value**:
 
 ```js
-assocArr["four"] = 4;
+assocArr['four'] = 4;
 ```
 
 Here, "five" is the **key** and 5 is the corresponding **value**:
@@ -60,7 +60,7 @@ assocArr.five = 5;
 Here is how we declare and initialize the **key** first, and after that, use it to assign a **value** to it:
 
 ```js
-let key = "six";
+let key = 'six';
 assocArr[key] = 6;
 ```
 [/slide]
@@ -229,13 +229,15 @@ if (assocArr.hasOwnProperty('name')) {
 }
 ```
 
-Removing entries is done using the keyword `delete`. To test that, we will declare an empty object and assign a key to it.
+Removing entries is done using the keyword `delete`. 
+
+To test that, we will declare an empty object and assign a key to it.
 
 Next, we will delete the key. The output is an empty object as you can see from the example:
 
 ```js live
 let assocArr = {};
-assocArr.name = "John Smith";
+assocArr.name = 'John Smith';
 delete assocArr.name;
 console.log(assocArr);
 ```
@@ -428,6 +430,8 @@ meetings(['Tuesday Ted', 'Tuesday Ted', 'Tuesday Ted', 'Tuesday Ted', 'Tuesday T
 [/input]
 [output]
 Scheduled for Tuesday
+Conflict on Tuesday!
+Conflict on Tuesday!
 Conflict on Tuesday!
 Conflict on Tuesday!
 Conflict on Tuesday!

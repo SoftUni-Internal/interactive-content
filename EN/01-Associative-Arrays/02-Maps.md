@@ -123,8 +123,8 @@ The output will be `[1, 2]`.
 
 ```js live
 let map = new Map();
-map.set(1, "one");
-map.set(2, "two");
+map.set(1, 'one');
+map.set(2, 'two');
 let entries = Array.from(map.keys());
 console.log(entries);
 ```
@@ -135,8 +135,8 @@ The output will be `[ 'one', 'two' ]`.
 
 ```js live
 let map = new Map();
-map.set(1, "one");
-map.set(2, "two");
+map.set(1, 'one');
+map.set(2, 'two');
 let entries = Array.from(map.values());
 console.log(entries);
 ```
@@ -152,8 +152,8 @@ To print a map, simply use a **for-of** loop.
 
 ```js live
 let map = new Map();
-map.set(1, "one");
-map.set(2, "two");
+map.set(1, 'one');
+map.set(2, 'two');
 for (let [key, value] of map.entries()) {
     console.log(`${key} => ${value}`);
 }
@@ -163,8 +163,8 @@ To print the keys, use `.keys()`.
 
 ```js live
 let map = new Map();
-map.set(1, "one");
-map.set(2, "two");
+map.set(1, 'one');
+map.set(2, 'two');
 for (let key of map.keys()) {
   console.log(key);
 }
@@ -174,8 +174,8 @@ To print the values, use `.values()`.
 
 ```js live
 let map = new Map();
-map.set(1, "one");
-map.set(2, "two");
+map.set(1, 'one');
+map.set(2, 'two');
 for (let values of map.values()) {
   console.log(values);
 }
@@ -321,9 +321,9 @@ The `kvp` variable is our `[key-value]` pair.
 
 ```js live
 let map = new Map();
-map.set("one", 1);
-map.set("eight", 8);
-map.set("two", 2);
+map.set('one', 1);
+map.set('eight', 8);
+map.set('two', 2);
 let sorted = Array.from(map.entries()).sort((a, b) => a[1] - b[1]);
 for (let kvp of sorted) {
   console.log(`${kvp[0]} -> ${kvp[1]}`);
