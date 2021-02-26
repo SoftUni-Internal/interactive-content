@@ -183,7 +183,7 @@ personInfo('Peter', 'Pan', '20')
 personInfo('Kellie', 'Ellison', '33')
 [/input]
 [output]
-\{firstName: 'Kellie', lastName: 'Ellison', age: '33'\}
+\}firstName: 'Kellie', lastName: 'Ellison', age: '33'\}
 [/output]
 [/test]
 [test]
@@ -191,9 +191,7 @@ personInfo('Kellie', 'Ellison', '33')
 personInfo('Johny', 'Tony', '15')
 [/input]
 [output]
-firstName: Johny,
-lastName: Tony,
-age: 15,
+\{firstName: 'Johny', lastName: 'Tony', age: '15'\}
 [/output]
 [/test]
 [test]
@@ -201,9 +199,7 @@ age: 15,
 personInfo('A', 'b', '2')
 [/input]
 [output]
-firstName: A
-lastName: b
-age: 2
+\{firstName: 'A', lastName: 'b', age: '2'\}
 [/output]
 [/test]
 [test]
@@ -211,9 +207,7 @@ age: 2
 personInfo('CC', 'BB', '50')
 [/input]
 [output]
-firstName: CC
-lastName: BB
-age: 50
+\{firstName: 'CC', lastName: 'BB', age: '50'\}
 [/output]
 [/test]
 [test]
@@ -221,9 +215,7 @@ age: 50
 personInfo('Z', 'X', '41')
 [/input]
 [output]
-firstName: Z
-lastName: X
-age: 41
+\{firstName: 'Z', lastName: 'X', age: '41'\}
 [/output]
 [/test]
 [test]
@@ -231,9 +223,7 @@ age: 41
 personInfo('JO', 'PA', '22')
 [/input]
 [output]
-firstName: JO
-lastName: PA
-age: 22
+\{firstName: 'JO', lastName: 'PA', age: '22'\}
 [/output]
 [/test]
 [/tests]
