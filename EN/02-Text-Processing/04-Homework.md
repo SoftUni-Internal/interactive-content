@@ -10,20 +10,30 @@ function revealWords(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 ## Description
+
 Write a function, which receives two parameters.
 
-The first parameter will be a **string containing some words** separated by `, `.
+The first parameter will be a **string containing some words** separated by "**,** ".
 
-The **second parameter will be a string** which contains templates containing `*`.
+The **second parameter will be a string** which contains templates containing "*".
 
 Find the word with **the exact same length as the template** and replace it.
 
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['great', 'softuni is ***** place for learning new programming languages']`| softuni is great place for learning new programming languages |
+| revealWords(['great', 'softuni is ***** place for learning new programming languages']) | softuni is great place for learning new programming languages |
 
 
 [/task-description]
@@ -31,8 +41,7 @@ Find the word with **the exact same length as the template** and replace it.
 [tests]
 [test open]
 [input]
-great
-softuni is \*\*\*\*\* place for learning new programming languages
+revealWords(['great', 'softuni is ***** place for learning new programming languages'])
 [/input]
 [output]
 softuni is great place for learning new programming languages
@@ -40,8 +49,7 @@ softuni is great place for learning new programming languages
 [/test]
 [test open]
 [input]
-great, learning
-softuni is \*\*\*\*\* place for \*\*\*\*\*\*\*\* new programming languages
+revealWords(['great, learning', 'softuni is ***** place for ******** new programming languages'])
 [/input]
 [output]
 softuni is great place for learning new programming languages
@@ -49,8 +57,7 @@ softuni is great place for learning new programming languages
 [/test]
 [test]
 [input]
-pesho
-jdsakl as \*\*\*\*\* dsajkk hdsj
+revealWords(['pesho', 'jdsakl as ***** dsajkk hdsj'])
 [/input]
 [output]
 jdsakl as pesho dsajkk hdsj
@@ -58,8 +65,7 @@ jdsakl as pesho dsajkk hdsj
 [/test]
 [test]
 [input]
-pesho, goshho
-jdsakl as \*\*\*\*\* dsajkk \*\*\*\*\*\* hdsj
+revealWords(['pesho, goshho', 'jdsakl as ***** dsajkk ****** hdsj'])
 [/input]
 [output]
 jdsakl as pesho dsajkk goshho hdsj
@@ -67,8 +73,7 @@ jdsakl as pesho dsajkk goshho hdsj
 [/test]
 [test]
 [input]
-pesho, goshho, stamatko
-jdsakl as \*\*\*\*\* dsajkk \*\*\*\*\*\* hdsj \*\*\*\*\*\*\*\*
+revealWords(['pesho, goshho, stamatko', 'jdsakl as ***** dsajkk ****** hdsj ********'])
 [/input]
 [output]
 jdsakl as pesho dsajkk goshho hdsj stamatko
@@ -76,8 +81,7 @@ jdsakl as pesho dsajkk goshho hdsj stamatko
 [/test]
 [test]
 [input]
-pesho, goshho, stamatko, kiro
-jdsakl \*\*\*\* as \*\*\*\*\* dsajkk \*\*\*\*\*\* hdsj \*\*\*\*\*\*\*\*
+revealWords(['pesho, goshho, stamatko, kiro', 'jdsakl **** as ***** dsajkk ****** hdsj ********'])
 [/input]
 [output]
 jdsakl kiro as pesho dsajkk goshho hdsj stamatko
@@ -85,8 +89,7 @@ jdsakl kiro as pesho dsajkk goshho hdsj stamatko
 [/test]
 [test]
 [input]
-pesho, goshho, stamatko, kiro, b
-jdsakl \*\*\*\* as \*\*\*\*\* dsajkk \*\*\*\*\*\* \* hdsj \*\*\*\*\*\*\*\*
+revealWords(['pesho, goshho, stamatko, kiro, b', 'jdsakl **** as ***** dsajkk ****** * hdsj ********'])
 [/input]
 [output]
 jdsakl kiro as pesho dsajkk goshho b hdsj stamatko
@@ -106,11 +109,21 @@ function modernTimesOfHashTag(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 ## Description
+
 The input will be a **single string.**
 
-Find all special words **starting with** `#`.
+Find all special words **starting with** "**#**".
 
 Word is invalid if it has **anything** other than **letters**.
 
@@ -119,7 +132,7 @@ Print the words you found without the tag each on a new line.
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`'Nowadays everyone uses # to tag a #special word in #socialMedia'`| special |
+| modernTimesOfHashTag('Nowadays everyone uses # to tag a #special word in #socialMedia')| special |
 | | socialMedia |
 
 
@@ -128,7 +141,7 @@ Print the words you found without the tag each on a new line.
 [tests]
 [test open]
 [input]
-Nowadays everyone uses \# to tag a \#special word in \#socialMedia
+modernTimesOfHashTag('Nowadays everyone uses # to tag a #special word in #socialMedia')
 [/input]
 [output]
 special
@@ -137,7 +150,7 @@ socialMedia
 [/test]
 [test]
 [input]
-hjahd hasjk ag dwgyw gdyag dgsydwu shusia \#jkdlsa dasjkfjkj \#dsdas
+modernTimesOfHashTag('hjahd hasjk ag dwgyw gdyag dgsydwu shusia #jkdlsa dasjkfjkj #dsdas')
 [/input]
 [output]
 jkdlsa
@@ -146,7 +159,7 @@ dsdas
 [/test]
 [test]
 [input]
-hjag dgsydwu shusia \#545A dasjkfjkj \#sdas
+modernTimesOfHashTag('hjag dgsydwu shusia #545A dasjkfjkj \#sdas')
 [/input]
 [output]
 sdas
@@ -154,7 +167,7 @@ sdas
 [/test]
 [test]
 [input]
-nj kwuei euie ruiw eop oerr \# \#sa
+modernTimesOfHashTag('nj kwuei euie ruiw eop oerr # #sa')
 [/input]
 [output]
 sa
@@ -162,7 +175,7 @@ sa
 [/test]
 [test]
 [input]
-nj \#kwuei \#euiAAe \#32432\\$\\$\\$\\$ ruiw eop oerr \# \#sa
+modernTimesOfHashTag('nj #kwuei #euiAAe #32432\$\$\$\$ ruiw eop oerr # #sa')
 [/input]
 [output]
 kwuei
@@ -172,7 +185,7 @@ sa
 [/test]
 [test]
 [input]
-nj \#nnj
+modernTimesOfHashTag('nj #nnj')
 [/input]
 [output]
 nnj
@@ -193,9 +206,19 @@ function extractFile(input){
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 ## Description
-Write a function that receives a single string - the path to a file (the `\` character is escaped).
+
+Write a function that receives a single string - the path to a file (the "\\" character is escaped).
 
 Your task is to subtract the **file name** and its extension. 
 
@@ -204,13 +227,13 @@ Beware of files like **template.bak.pptx**, as **template.bak** should be the fi
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['C:\\Internal\\training-internal\\Template.pptx']`| File name: Template |
-||File extension: pptx|
+| extractFile(['C:\\Internal\\training-internal\\Template.pptx']) | File name: Template |
+|| File extension: pptx |
 
  | **Input** | **Output** |
 | --- | --- |
-|`['C:\\Projects\\Data-Structures\\LinkedList.cs']`|File name: LinkedList |
-||File extension: cs|
+| extractFile(['C:\\Projects\\Data-Structures\\LinkedList.cs']) | File name: LinkedList |
+|| File extension: cs |
 
 
 [/task-description]
@@ -218,7 +241,7 @@ Beware of files like **template.bak.pptx**, as **template.bak** should be the fi
 [tests]
 [test open]
 [input]
-C:\Internal\training-internal\Template.pptx
+extractFile(['C:\\Internal\\training-internal\\Template.pptx'])
 [/input]
 [output]
 File name: Template
@@ -227,7 +250,7 @@ File extension: pptx
 [/test]
 [test open]
 [input]
-C:\Projects\Data-Structures\LinkedList.cs
+extractFile(['C:\\Projects\\Data-Structures\\LinkedList.cs'])
 [/input]
 [output]
 File name: LinkedList
@@ -236,7 +259,7 @@ File extension: cs
 [/test]
 [test]
 [input]
-E:\P\JAVA\src\oop\Main.java
+extractFile(['E:\\P\\JAVA\\src\\oop\\Main.java'])
 [/input]
 [output]
 File name: Main
@@ -245,7 +268,7 @@ File extension: java
 [/test]
 [test]
 [input]
-E:\EX\csharp\CatShop.sln
+extractFile(['E:\\EX\\csharp\\CatShop.sln'])
 [/input]
 [output]
 File name: CatShop
@@ -254,7 +277,7 @@ File extension: sln
 [/test]
 [test]
 [input]
-E:\P\JAVA\src\oop\Bor.xml
+extractFile(['E:\\P\\JAVA\\src\\oop\\Bor.xml'])
 [/input]
 [output]
 File name: Bor
@@ -263,7 +286,7 @@ File extension: xml
 [/test]
 [test]
 [input]
-E:\Trash\MoreTrash\SoftUniExamsSolutions.txt
+extractFile(['E:\\Trash\\MoreTrash\\SoftUniExamsSolutions.txt'])
 [/input]
 [output]
 File name: SoftUniExamsSolutions
@@ -272,7 +295,7 @@ File extension: txt
 [/test]
 [test]
 [input]
-E:\TECH-SVN\Java\07-Objects-and-Classes\Exercise\07.Objects-and-Classes-Exercise.docx
+extractFile(['E:\\TECH-SVN\\Java\\07-Objects-and-Classes\\Exercise\\07.Objects-and-Classes-Exercise.docx'])
 [/input]
 [output]
 File name: 07.Objects-and-Classes-Exercise
@@ -294,8 +317,18 @@ function stringSubstring(input){
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 ## Description
+
 The input will be given as **two** separated strings.
 
 Write a function that checks given text for containing a given word.
@@ -304,22 +337,21 @@ The comparison should be **case insensitive.**
 
 Once you find match, print the word and stop the program.
 
-If you don't find the word print `{word} not found!`
+If you don't find the word print "\{**word**\} **not found!**"
 
 
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['javascript', 'JavaScript is the best programming language']`| javascript |
-|`['python','JavaScript is the best programming language']`| python not found\! |
+| stringSubstring(['javascript', 'JavaScript is the best programming language']) | javascript |
+| stringSubstring(['python','JavaScript is the best programming language']) | python not found\! |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-javascript
-JavaScript is the best programming language
+stringSubstring(['javascript', 'JavaScript is the best programming language'])
 [/input]
 [output]
 javascript
@@ -327,8 +359,7 @@ javascript
 [/test]
 [test open]
 [input]
-python
-JavaScript is the best programming language
+stringSubstring(['python','JavaScript is the best programming language'])
 [/input]
 [output]
 python not found!
@@ -336,8 +367,7 @@ python not found!
 [/test]
 [test]
 [input]
-java
-Java is the best programming language
+stringSubstring(['java','Java is the best programming language'])
 [/input]
 [output]
 java
@@ -345,8 +375,7 @@ java
 [/test]
 [test]
 [input]
-chushki
-Jaba is chushki the best jaba programming language
+stringSubstring(['chushki','Jaba is chushki the best jaba programming language'])
 [/input]
 [output]
 chushki
@@ -354,8 +383,7 @@ chushki
 [/test]
 [test]
 [input]
-chushki
-bla bla bla
+stringSubstring(['chushki','bla bla bla'])
 [/input]
 [output]
 chushki not found!
@@ -363,8 +391,7 @@ chushki not found!
 [/test]
 [test]
 [input]
-drashki
-bla bla bla drashki
+stringSubstring(['drashki','bla bla bla drashki'])
 [/input]
 [output]
 drashki
@@ -372,8 +399,7 @@ drashki
 [/test]
 [test]
 [input]
-drashki
-bla bla bla nodrashki
+stringSubstring(['drashki','bla bla bla nodrashki'])
 [/input]
 [output]
 drashki not found!
@@ -395,22 +421,32 @@ function replaceRepeatingChars(input){
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 ## Description
+
 Write a function that receives a single string and **replaces** any sequence of the **same letters** with a single corresponding letter.
 
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['aaaaabbbbbcdddeeeedssaa']`| abcdedsa |
-|`['qqqwerqwecccwd']`| qwerqwecwd |
+| replaceRepeatingChars(['aaaaabbbbbcdddeeeedssaa']) | abcdedsa |
+| replaceRepeatingChars(['qqqwerqwecccwd']) | qwerqwecwd |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-aaaaabbbbbcdddeeeedssaa
+replaceRepeatingChars(['aaaaabbbbbcdddeeeedssaa'])
 [/input]
 [output]
 abcdedsa
@@ -418,7 +454,7 @@ abcdedsa
 [/test]
 [test open]
 [input]
-qqqwerqwecccwd
+replaceRepeatingChars(['qqqwerqwecccwd'])
 [/input]
 [output]
 qwerqwecwd
@@ -426,7 +462,7 @@ qwerqwecwd
 [/test]
 [test]
 [input]
-aaaaaaaa
+replaceRepeatingChars(['aaaaaaaa'])
 [/input]
 [output]
 a
@@ -434,7 +470,7 @@ a
 [/test]
 [test]
 [input]
-bbbbbbbbb
+replaceRepeatingChars(['bbbbbbbbb'])
 [/input]
 [output]
 b
@@ -442,7 +478,7 @@ b
 [/test]
 [test]
 [input]
-aaaaabbbbbbbcccceeede
+replaceRepeatingChars(['aaaaabbbbbbbcccceeede'])
 [/input]
 [output]
 abcede
@@ -450,7 +486,7 @@ abcede
 [/test]
 [test]
 [input]
-kkddidkkgiiggbd
+replaceRepeatingChars(['kkddidkkgiiggbd'])
 [/input]
 [output]
 kdidkgigbd
@@ -458,7 +494,7 @@ kdidkgigbd
 [/test]
 [test]
 [input]
-asdasdasd
+replaceRepeatingChars(['asdasdasd'])
 [/input]
 [output]
 asdasdasd
@@ -480,8 +516,18 @@ function splitter(input){
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 ## Description
+
 You will receive a **single string.**
 
 This string is written using the **PascalCase** format. 
@@ -493,16 +539,16 @@ Print them joined by **a comma and a space.**
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['SplitMeIfYouCanHaHaYouCantOrYouCan']`| Split, Me, If, You, Can, Ha, Ha, You, Cant, Or, You, Can |
-|`['HoldTheDoor']`| Hold, The, Door |
-|`['ThisIsSoAnnoyingToDo']`| This, Is, So, Annoying, To, Do |
+| splitter(['SplitMeIfYouCanHaHaYouCantOrYouCan']) | Split, Me, If, You, Can, Ha, Ha, You, Cant, Or, You, Can |
+| splitter(['HoldTheDoor']) | Hold, The, Door |
+| splitter(['ThisIsSoAnnoyingToDo']) | This, Is, So, Annoying, To, Do |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-SplitMeIfYouCanHaHaYouCantOrYouCan
+splitter(['SplitMeIfYouCanHaHaYouCantOrYouCan'])
 [/input]
 [output]
 Split, Me, If, You, Can, Ha, Ha, You, Cant, Or, You, Can
@@ -510,7 +556,7 @@ Split, Me, If, You, Can, Ha, Ha, You, Cant, Or, You, Can
 [/test]
 [test open]
 [input]
-HoldTheDoor
+splitter(['HoldTheDoor'])
 [/input]
 [output]
 Hold, The, Door
@@ -518,7 +564,7 @@ Hold, The, Door
 [/test]
 [test open]
 [input]
-ThisIsSoAnnoyingToDo
+splitter(['ThisIsSoAnnoyingToDo'])
 [/input]
 [output]
 This, Is, So, Annoying, To, Do
@@ -526,7 +572,7 @@ This, Is, So, Annoying, To, Do
 [/test]
 [test]
 [input]
-BdgshajTgdshDdsadasFF
+splitter(['BdgshajTgdshDdsadasFF'])
 [/input]
 [output]
 Bdgshaj, Tgdsh, Ddsadas, F, F
@@ -534,7 +580,7 @@ Bdgshaj, Tgdsh, Ddsadas, F, F
 [/test]
 [test]
 [input]
-AhjbhbBsgasf
+splitter(['AhjbhbBsgasf'])
 [/input]
 [output]
 Ahjbhb, Bsgasf
@@ -542,7 +588,7 @@ Ahjbhb, Bsgasf
 [/test]
 [test]
 [input]
-AhjbhbBsgasfCaXa
+splitter(['AhjbhbBsgasfCaXa'])
 [/input]
 [output]
 Ahjbhb, Bsgasf, Ca, Xa
@@ -550,7 +596,7 @@ Ahjbhb, Bsgasf, Ca, Xa
 [/test]
 [test]
 [input]
-AhjbhbBsgasNNNMfCaXa
+splitter(['AhjbhbBsgasNNNMfCaXa'])
 [/input]
 [output]
 Ahjbhb, Bsgas, N, N, N, Mf, Ca, Xa
@@ -558,7 +604,7 @@ Ahjbhb, Bsgas, N, N, N, Mf, Ca, Xa
 [/test]
 [test]
 [input]
-Mhjbhb
+splitter(['Mhjbhb'])
 [/input]
 [output]
 Mhjbhb
@@ -581,9 +627,19 @@ function cutAndReverse(input){
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 ## Description
+
 The input will be a **single string.**
 
 Write a function that cuts the given string **in half** and reverse the **two halves.**
@@ -593,12 +649,12 @@ Print each half on a **separate line.**
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`['tluciffiDsIsihTgnizamAoSsIsihT']`| ThisIsDifficult|
+| cutAndReverse(['tluciffiDsIsihTgnizamAoSsIsihT']) | ThisIsDifficult|
 ||ThisIsSoAmazing|
 
 | **Input** | **Output** |
 | --- | --- |
-|`['sihToDtnaCuoYteBIboJsihTtAdooGoSmI']`| IBetYouCantDoThis|
+| cutAndReverse(['sihToDtnaCuoYteBIboJsihTtAdooGoSmI']) | IBetYouCantDoThis|
 ||ImSoGoodAtThisJob|
 
 [/task-description]
@@ -606,7 +662,7 @@ Print each half on a **separate line.**
 [tests]
 [test open]
 [input]
-tluciffiDsIsihTgnizamAoSsIsihT
+cutAndReverse(['tluciffiDsIsihTgnizamAoSsIsihT'])
 [/input]
 [output]
 ThisIsDifficult
@@ -615,7 +671,7 @@ ThisIsSoAmazing
 [/test]
 [test open]
 [input]
-sihToDtnaCuoYteBIboJsihTtAdooGoSmI
+cutAndReverse(['sihToDtnaCuoYteBIboJsihTtAdooGoSmI'])
 [/input]
 [output]
 IBetYouCantDoThis
@@ -624,7 +680,7 @@ ImSoGoodAtThisJob
 [/test]
 [test]
 [input]
-adahjfvgshfgeegy
+cutAndReverse(['adahjfvgshfgeegy'])
 [/input]
 [output]
 gvfjhada
@@ -633,7 +689,7 @@ ygeegfhs
 [/test]
 [test]
 [input]
-uiuyiuyuiy
+cutAndReverse(['uiuyiuyuiy'])
 [/input]
 [output]
 iyuiu
@@ -642,7 +698,7 @@ yiuyu
 [/test]
 [test]
 [input]
-uasdfgiuADFGAyiuKAJIDPyuiy
+cutAndReverse(['uasdfgiuADFGAyiuKAJIDPyuiy'])
 [/input]
 [output]
 AGFDAuigfdsau
@@ -651,7 +707,7 @@ yiuyPDIJAKuiy
 [/test]
 [test]
 [input]
-tluciffiDsdssdIsihTgnizfamAohgfSsIsihT
+cutAndReverse(['tluciffiDsdssdIsihTgnizfamAohgfSsIsihT'])
 [/input]
 [output]
 ThisIdssdsDifficult
@@ -660,7 +716,7 @@ ThisIsSfghoAmafzing
 [/test]
 [test]
 [input]
-VDSHvdgshVSGDA
+cutAndReverse(['VDSHvdgshVSGDA'])
 [/input]
 [output]
 gdvHSDV
@@ -670,4 +726,3 @@ ADGSVhs
 [/tests]
 [/code-task]
 [/slide]
-
