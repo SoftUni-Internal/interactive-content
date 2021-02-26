@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Project Setup
 
-[Download resources here!](https://mega.nz/file/jFh3kS4Z#aYYT9efHNL9ZkwCuakEcMCuTlYxIHQk1-ynKd7gxd8c)
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-backend/05-Sessions-and-Authentication-Workshop-Resources.zip) **for this task.**
 
 "Cubicle" is a place, where you can browse some of the most popular Rubik cubes in the world and add some new cubes that you have discovered.  
 

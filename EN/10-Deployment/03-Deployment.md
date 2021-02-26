@@ -54,7 +54,7 @@ When **automatic deploys** are **enabled** for a given branch, Heroku deploys yo
 
 [image assetsSrc="JS-BackEnd-deployment-5.png" /]
 
-Select the branch you want to be deployed automatically and then press `Deploy Branch`.
+Select the branch you want to be deployed automatically and then press `Enable automatic deploys`.
 
 If your repository is configured to use **Continuous Integration**, you can also check the `Wait for CI to pass before deploy` checkbox.
 

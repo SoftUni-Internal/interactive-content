@@ -24,11 +24,11 @@ Here are some of the benefits that come along with it:
 
 # Installation
 
-_**Here is a**_ [link](https://nodejs.org/en/) _**to the official Node.js website**_.
+**Here is a** [link](https://nodejs.org/en/) **to the official Node.js website.**
 
 It is recommended to download and install the latest version.
 
-To check Node.js's current version on a machine just open a terminal and type:
+To check Node.js's current version on a machine, just open a terminal and type:
 
 ```js
 node -v
@@ -122,5 +122,22 @@ This is some of the information that could be found in a `package.json` file:
 
 Here is how a `package.json` file looks like:
 
-[image assetsSrc="JS-BackEnd-Intro-To-Nodejs-1.jpg" /]
+```json
+{
+    "name": "demo",
+    "version": "1.0.0",
+    "description": "Node.js demo project",
+    "main": "index.js",
+    "engines": {                   // Sets versions of Node.js and others
+        "node": ">= 6.0.0",
+        "npm": ">= 3.0.0"
+    },
+    "scripts": {                   // Defines a set of node scripts
+        "start": "node index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
+```
 [/slide]
