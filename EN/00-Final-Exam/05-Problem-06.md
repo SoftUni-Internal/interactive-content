@@ -1,6 +1,6 @@
-
-[slide hideTitle]
 # Problem 6: Tournament of Christmas 
+[slide hideTitle]
+# Tournament of Christmas 
 
 [code-task title="Tournament of Christmas" taskId="JavaScript-Programming-Basics-exam-Tournament-of-Christmas" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -60,11 +60,11 @@ Finally, one line is printed:
 
 - If you won the tournament:
 
-**You won the tournament! Total raised money:** \{**the money earned**\}
+"**You won the tournament! Total raised money:** \{**the money earned**\}"
 
 - If you lost the tournament:
 
-**You lost the tournament! Total raised money:** \{**the money earned**\}
+"**You lost the tournament! Total raised money:** \{**the money earned**\}"
 
 The money should be **formatted to the second digit after the decimal point.**
 

@@ -1,5 +1,6 @@
-[slide hideTitle]
 # Problem 2: Mountain Run
+[slide hideTitle]
+# Mountain Run
 
 [code-task title="Mountain Run" taskId="JavaScript-Programming-Basics-exam-Mountain-Run" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -56,11 +57,11 @@ Printing to the console depends on the results:
 
 - If George has improved the record, print: 
 
-**Yes! The new record is** \{**George's time**\} **seconds.**
+"**Yes! The new record is** \{**George's time**\} **seconds.**"
 
 - If he has NOT improved the record, print: 
 
-**No! He was** \{**time needed**\} **seconds slower.** 
+"**No! He was** \{**time needed**\} **seconds slower.**" 
 
 The result must be **formatted** to the second digit after the decimal point.
 

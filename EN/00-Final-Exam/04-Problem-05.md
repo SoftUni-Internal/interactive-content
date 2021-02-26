@@ -1,6 +1,6 @@
-
-[slide hideTitle]
 # Problem 5: Care of Puppy
+[slide hideTitle]
+# Care of Puppy
 
 [code-task title="Care of Puppy" taskId="JavaScript-Programming-Basics-final-exam-Care-of-Puppy" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -44,11 +44,11 @@ One line is printed to the console:
 
 - If the amount of food **is enough**, print:
 
-  **Food is enough! Leftovers:** \{**leftover food**\} **grams.** 
+"**Food is enough! Leftovers:** \{**leftover food**\} **grams.**" 
 
 - If the amount of food is **not enough**, print:
 
-  **Food is not enough. You need** \{**need the amount of food**\} **grams more.**
+"**Food is not enough. You need** \{**need the amount of food**\} **grams more.**"
 
 ## Example
 

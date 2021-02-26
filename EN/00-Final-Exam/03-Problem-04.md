@@ -1,7 +1,7 @@
-
+# Problem 4: Food for Pets
 [slide hideTitle]
 
-# Problem 4: Food for Pets
+# Food for Pets
 
 [code-task title="Food for Pets" taskId="JavaScript-Programming-Basics-exam-Food-for-Pets" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -61,15 +61,15 @@ Total amount of food: a number in the range \[0.00…10000.00\]
 
 Print four lines on the console:
 
-- **Total eaten biscuits:** \{**amount of biscuits eaten**\}**gr.**
+- "**Total eaten biscuits:** \{**amount of biscuits eaten**\}**gr.**"
 
-- \{**percentage of food eaten**\}**% of the food has been eaten.**
+- "\{**percentage of food eaten**\}**% of the food has been eaten.**"
 
-- \{**percentage of food eaten by the dog**\}**% eaten from the dog.**
+- "\{**percentage of food eaten by the dog**\}**% eaten from the dog.**"
 
-- \{**percentage of food eaten by the cat**\}**% eaten from the cat.**
+- "\{**percentage of food eaten by the cat**\}**% eaten from the cat.**"
 
-The amount of **cookies eaten must be rounded to the nearest whole number.**
+The amount of **cookies eaten must be rounded to the nearest whole number.**"
 
 The percentage of food **must be formatted to the second digit after the decimal point.**
 

@@ -1,5 +1,6 @@
-[slide hideTitle]
 # Problem 1: Study Materials
+[slide hideTitle]
+# Study Materials
 
 [code-task title="Study materials" taskId="JavaScript-Programming-Basics-exam-Study-Materials" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -21,7 +22,7 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-The school year has already started and Annie has to buy a few packs of ** pencils**, **markers**, and a **detergent** for cleaning the board. 
+The school year has already started and Annie has to buy a few packs of **pencils**, **markers**, and a **detergent** for cleaning the board. 
 
 She is a regular customer of a bookstore, and there is a **discount** for her, which represents a **percentage** of the total.
 
