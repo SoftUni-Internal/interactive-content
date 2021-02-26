@@ -1,6 +1,6 @@
 # Generics in Java
 
-[slide]
+[slide hideTitle]
 
 # The Problem Before Java 5.0
 
@@ -8,11 +8,11 @@ Java Generics were introduced in Java 5.0 to provide compile-time type checking 
 
 It makes the code stable by detecting the bugs at compile time.
 
-Before generics, we can store any type of objects in the collection, i.e., non-generic. 
+Before generics, we can store any type of object in the collection, i.e., non-generic. 
 
-Now generics force the java programmer to store a specific type of objects.
+Now generics force the Java programmer to store a specific type of object.
 
-Let's see the following example:
+Let us see the following example:
 
 ```java live
 List strings = new ArrayList();
@@ -24,9 +24,9 @@ System.out.println((String)strings.get(0));
 System.out.println((String) strings.get(1));
 ```
 
-The code above compiles fine but throws `ClassCastException` at **runtime** because we are trying to cast Object in the list to String whereas one of the element is of type Integer.
+The code above compiles fine but throws `ClassCastException` at **runtime** because we are trying to cast Object in the list to String whereas one of the elements is of type Integer.
 
-There is no contract that could guarantee that the **return type** of the list is a **String**. 
+No contract could guarantee that the **return type** of the list is a **String**. 
 
 The defined list could **hold any object**. 
 
@@ -39,7 +39,7 @@ The cast can cause type-related **runtime errors** if a programmer makes a mista
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Generics - Type Safety
 
@@ -54,7 +54,8 @@ strings.add("SoftUni");
 // Compile time error
 strings.add(3); 
 ```
-Let's explain what does the code above:
+
+Let us explain what the code above does:
 
 By adding the diamond operator `<>` containing the type, we narrow the specialization of this list only to String type i.e. we specify the type that will be held inside the list. 
 
@@ -64,7 +65,7 @@ In small programs, this might seem like a trivial addition, however, in larger p
 
 The main features of Generics are:
 
-- **Type-safety** - we can hold only a single type of objects in generics
+- **Type safety** - we can hold only a single type of objects in generics
 - **Type casting is not required** - there is no need to typecast the object
 - **Compile-Time Checking** - it is checked at compile time so problem will not occur at runtime
 
