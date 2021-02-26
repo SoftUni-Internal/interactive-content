@@ -36,6 +36,12 @@ Creați un program care obține un număr întreg și calculează aria unui păt
 | --- | --- |
 | calculateArea(5) | 25 |
 
+[hints]
+[hint]
+The formula for calculating the area of a square is - a * a.
+[/hint]
+[/hints]
+
 
 [/task-description]
 [tests]
@@ -357,6 +363,16 @@ Creați un program pentru a calcula aria și perimetrul unui **cerc**:
 | circleArea(7) | Area = 153.94 |
 |  | Perimeter = 43.98 |
 
+[hints]
+[hint]
+The formula for calculating a circle's perimeter is: P = 2 * π * R.
+"R" is the radius.
+[/hint]
+[hint]
+The formula for calculating a circle's perimeter is: A = π * R * R.
+[/hint]
+[/hints]
+
 
 [/task-description]
 [tests]
@@ -447,28 +463,26 @@ Funcția primește un argument:
 | --- | --- |
 | landscape(550) | The final price is: 3432.11 dollars. |
 |  | The discount is: 753.39 dollars. |
+| landscape(150) | The final price is: 936.03 dollars. |
+|  | The discount is: 205.47 dollars. |
+
 
 [hints]
 [hint]
 
-Calculate the price for the landscaping of the whole yard and store it in a variable:
-let total =  input * 7.61 
-
+Calculate the price for the landscaping of the whole yard and store it in a variable.
 
 [/hint]
 
 [hint]
 
-Calculate the discount and store the result in a variable: 
-let discount = total * 0.18
+Calculate the discount and store the result in a variable.
 
 [/hint]
 
 [hint]
 
-Subtract the discount from the total price:
-total -= discount
-
+Subtract the discount from the total price.
 
 [/hint]
 [hint]
@@ -479,12 +493,6 @@ console.log(The discount is: ${discount} dollars.);
 
 [/hint]
 [/hints]
-
-
-| **Input** | **Output** |
-| --- | --- |
-| landscape(150) | The final price is: 936.03 dollars. |
-|  | The discount is: 205.47 dollars. |
 
 [/task-description]
 [tests]
