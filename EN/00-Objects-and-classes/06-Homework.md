@@ -58,8 +58,7 @@ Name\: Brendan Villarreal \-\- Personal Number\: 18
 [/test]
 [test]
 [input]
-Kiril Kirilov
-Peter Petrov
+employees(['Kiril Kirilov', 'Peter Petrov'])
 [/input]
 [output]
 Name\: Kiril Kirilov \-\- Personal Number\: 13
@@ -68,9 +67,7 @@ Name\: Peter Petrov \-\- Personal Number\: 12
 [/test]
 [test]
 [input]
-Jack
-Will
-Amanda
+employees(['Jack', 'Will', 'Amanda'])
 [/input]
 [output]
 Name\: Jack \-\- Personal Number\: 4
@@ -80,10 +77,7 @@ Name\: Amanda \-\- Personal Number\: 6
 [/test]
 [test]
 [input]
-Samuel Jackson
-Will Smith
-Bruce Willis
-Tom Holland
+employees(['Samuel Jackson', 'Will Smith', 'Bruce Willis', 'Tom Holland'])
 [/input]
 [output]
 Name\: Samuel Jackson \-\- Personal Number\: 14
@@ -94,10 +88,7 @@ Name\: Tom Holland \-\- Personal Number\: 11
 [/test]
 [test]
 [input]
-Silas Butler
-Adnaan Buckley
-Juan Peterson
-Brendan Villarreal
+employees(['Silas Butler', 'Adnaan Buckley', 'Juan Peterson', 'Brendan Villarreal'])
 [/input]
 [output]
 Name\: Silas Butler \-\- Personal Number\: 12
@@ -121,14 +112,23 @@ function towns(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 
 You're tasked to create and print objects from a text table. 
 
-You will receive the input as an array of strings, where each string represents a table row, with values on the row separated by pipes ` | ` and spaces.
+You will receive the input as an array of strings, where each string represents a table row, with values on the row separated by pipes " \| " and spaces.
 
-The table will consist of exactly 3 columns `Town`, `Latitude` and `Longitude`. 
+The table will consist of exactly 3 columns "**Town**", "**Latitude**" and "**Longitude**". 
 
 The latitude and longitude columns will always contain valid numbers. 
 
@@ -141,17 +141,23 @@ Latitude and longitude must be parsed to numbers and formatted to the second dec
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`['Bucuresti | 42.696552 | 23.32601','Beijing | 39.913818 | 116.363625']`|`{ town: 'Bucuresti', latitude: '42.70', longitude: '23.33' }` |
-| | `{ town: 'Beijing', latitude: '39.91', longitude: '116.36' }` |
+|towns(['Bucuresti \| 42.696552 \| 23.32601','Beijing \| 39.913818 \| 116.363625'])|\{ town: 'Bucuresti', latitude: '42.70', longitude: '23.33' \} |
+| | \{ town: 'Beijing', latitude: '39.91', longitude: '116.36' \} |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+towns(['Bucuresti \| 42.696552 \| 23.32601','Beijing \| 39.913818 \| 116.363625'])
+[/input]
+[output]
+\{ town: 'Bucuresti', latitude: '42.70', longitude: '23.33' \}
+\{ town: 'Beijing', latitude: '39.91', longitude: '116.36' \}
+[/output]
+[/test]
 [test]
 [input]
-jdk \| 156.45 \| 12.5645
-hjk \| 32.556 \| 134.824
-io \| 87.65 \| 14.929
-op \| 44.76 \| 184.28
+towns(['jdk \| 156.45 \| 12.5645', 'hjk \| 32.556 \| 134.824', 'io \| 87.65 \| 14.929', 'op \| 44.76 \| 184.28'])
 [/input]
 [output]
 \{ town: 'jdk', latitude: '156.45', longitude: '12.56' \}
@@ -162,9 +168,7 @@ op \| 44.76 \| 184.28
 [/test]
 [test]
 [input]
-jj \| 156.45 \| 12.575
-yu \| 65.65 \| 64.919
-i \| 12.76 \| 184.28
+towns(['jj \| 156.45 \| 12.575', 'yu \| 65.65 \| 64.919', 'i \| 12.76 \| 184.28'])
 [/input]
 [output]
 \{ town: 'jj', latitude: '156.45', longitude: '12.57' \}
@@ -174,11 +178,7 @@ i \| 12.76 \| 184.28
 [/test]
 [test]
 [input]
-a \| 156.45 \| 12.575
-b \| 1.65 \| 64.8919
-c \| 45.786 \| 184.128
-d \| 9.745 \| 1684.28
-e \| 12.676 \| 1814.28
+towns(['a \| 156.45 \| 12.575', 'b \| 1.65 \| 64.8919', 'c \| 45.786 \| 184.128', 'd \| 9.745 \| 1684.28', 'e \| 12.676 \| 1814.28'])
 [/input]
 [output]
 \{ town: 'a', latitude: '156.45', longitude: '12.57' \}
@@ -190,10 +190,7 @@ e \| 12.676 \| 1814.28
 [/test]
 [test]
 [input]
-a \| 136.45 \| 12.575
-k \| 1.65 \| 564.19
-l \| 99.545 \| 1684.18
-e \| 112.66 \| 1814.28
+towns(['a \| 136.45 \| 12.575', 'k \| 1.65 \| 564.19', 'l \| 99.545 \| 1684.18', 'e \| 112.66 \| 1814.28'])
 [/input]
 [output]
 \{ town: 'a', latitude: '136.45', longitude: '12.57' \}
@@ -204,7 +201,7 @@ e \| 112.66 \| 1814.28
 [/test]
 [test]
 [input]
-a \| 136.45 \| 812.575
+towns(['a \| 136.45 \| 812.575'])
 [/input]
 [output]
 \{ town: 'a', latitude: '136.45', longitude: '812.58' \}
@@ -225,16 +222,25 @@ function movies(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a function that stores information about movies inside an array.
 
 The movie's object info must be name, director and date. You can receive several types of input:
 
-* `addMovie {movie name}` - add the movie
+* "**addMovie** \{**movie name**\}" - add the movie
 
-* `{movie name} directedBy {director}` - check if the movie exists and then add the director
-* `{movie name} onDate {date}` - check if the movie exists and then add the date
+* "\{**movie name**\} **directedBy** \{**director**\}" - check if the movie exists and then add the director
+* "\{**movie name**\} **onDate** \{**date**\}" - check if the movie exists and then add the date
 
 At the end print all the movies that have all the info (if the movie has no director, name or date, don’t print it) **in JSON format.**
 
@@ -242,23 +248,24 @@ At the end print all the movies that have all the info (if the movie has no dire
 
 | **Input** | **Output** |
 | --- | --- |
-|`['addMovie Fast and Furious','addMovie Godfather','Inception directedBy Christopher Nolan','Godfather directedBy Francis Ford Coppola','Godfather onDate 29.07.2018','Fast and Furious onDate 30.07.2018','Batman onDate 01.08.2018','Fast and Furious directedBy Rob Cohen']` | `{"name":"Fast and Furious","date":"30.07.2018","director":"Rob Cohen"}`|
-| | `{"name":"Godfather","director":"Francis Ford Coppola","date":"29.07.2018"}` |
+|movies(['addMovie Fast and Furious','addMovie Godfather','Inception directedBy Christopher Nolan','Godfather directedBy Francis Ford Coppola','Godfather onDate 29.07.2018','Fast and Furious onDate 30.07.2018','Batman onDate 01.08.2018','Fast and Furious directedBy Rob Cohen']) | \{"name":"Fast and Furious","date":"30.07.2018","director":"Rob Cohen"\}|
+| | \{"name":"Godfather","director":"Francis Ford Coppola","date":"29.07.2018"\} |
 
 
 [/task-description]
 [tests]
+[test open]
+[input]
+movies(['addMovie Fast and Furious','addMovie Godfather','Inception directedBy Christopher Nolan','Godfather directedBy Francis Ford Coppola','Godfather onDate 29.07.2018','Fast and Furious onDate 30.07.2018','Batman onDate 01.08.2018','Fast and Furious directedBy Rob Cohen'])
+[/input]
+[output]
+\{"name":"Fast and Furious","date":"30.07.2018","director":"Rob Cohen"\}
+\{"name":"Godfather","director":"Francis Ford Coppola","date":"29.07.2018"\}
+[/output]
+[/test]
 [test]
 [input]
-addMovie a
-addMovie b
-a directedBy j
-b directedBy o
-b onDate 12\.34\.1244
-a onDate 30\.07\.2010
-addMovie c
-c directedBy o
-c onDate 12\.01\.1998
+movies(['addMovie a', 'addMovie b', 'a directedBy j', 'b directedBy o', 'b onDate 12\.34\.1244', 'a onDate 30\.07\.2010', 'addMovie c', 'c directedBy o', 'c onDate 12\.01\.1998'])
 [/input]
 [output]
 \{"name":"a","director":"j","date":"30\.07\.2010"\}
@@ -268,10 +275,7 @@ c onDate 12\.01\.1998
 [/test]
 [test]
 [input]
-addMovie a
-addMovie b
-a directedBy j
-a onDate 30\.07\.2010
+movies(['addMovie a', 'addMovie b', 'a directedBy j', 'a onDate 30\.07\.2010'])
 [/input]
 [output]
 \{"name":"a","director":"j","date":"30.07.2010"\}
@@ -279,12 +283,7 @@ a onDate 30\.07\.2010
 [/test]
 [test]
 [input]
-addMovie y
-addMovie b
-y directedBy j
-y onDate 30\.07\.2010
-c onDate 30\.07\.2010
-c directedBy l
+movies(['addMovie y', 'addMovie b', 'y directedBy j', 'y onDate 30\.07\.2010', 'c onDate 30\.07\.2010', 'c directedBy l'])
 [/input]
 [output]
 \{"name":"y","director":"j","date":"30\.07\.2010"\}
@@ -292,21 +291,7 @@ c directedBy l
 [/test]
 [test]
 [input]
-addMovie y
-addMovie b
-y directedBy j
-y onDate 30\.07\.2010
-b onDate 30\.17\.2015
-addMovie k
-k directedBy l
-y directedBy j
-k onDate 30\.07\.2010
-y onDate 10\.07\.2010
-addMovie n
-x onDate 12\.07\.1994
-y onDate 30\.07\.2018
-n directedBy j
-n onDate 30\.07\.2017
+movies(['addMovie y', 'addMovie b', 'y directedBy j', 'y onDate 30\.07\.2010', 'b onDate 30\.17\.2015', 'addMovie k', 'k directedBy l', 'y directedBy j', 'k onDate 30\.07\.2010', 'y onDate 10\.07\.2010', 'addMovie n', 'x onDate 12\.07\.1994', 'y onDate 30\.07\.2018', 'n directedBy j', 'n onDate 30\.07\.2017'])
 [/input]
 [output]
 \{"name":"y","director":"j","date":"30\.07\.2018"\}
@@ -316,15 +301,7 @@ n onDate 30\.07\.2017
 [/test]
 [test]
 [input]
-addMovie y
-addMovie b
-y directedBy j
-y onDate 30\.07\.2010
-b onDate 30\.17\.2015
-addMovie k
-k directedBy l
-y directedBy j
-k onDate 30\.07\.2010
+movies(['addMovie y', 'addMovie b', 'y directedBy j', 'y onDate 30\.07\.2010', 'b onDate 30\.17\.2015', 'addMovie k', 'k directedBy l', 'y directedBy j', 'k onDate 30\.07\.2010'])
 [/input]
 [output]
 \{"name":"y","director":"j","date":"30\.07\.2010"\}
@@ -348,6 +325,15 @@ function inventory(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -355,7 +341,7 @@ Create a function which creates a register for heroes, with their names, level, 
 
 The input comes as an array of strings. Each element holds data for a hero, in the following format: 
 
-`{heroName} / {heroLevel} / {item1}, {item2}, {item3}...`
+"\{**heroName**\} \/ \{**heroLevel**\} \/ \{**item1**\}, \{**item2**\}, \{**item3**\}..."
 
 You must store the data about every hero.
 
@@ -365,32 +351,46 @@ The output is all of the data for all the heroes you have stored sorted ascendin
 
 The data must be in the following format for each hero:
 
-`Hero: {heroName}`
-`level => {heroLevel}`
-`Items => {item1}, {item2}, {item3}`
+"**Hero:** \{**heroName**\}
+**level** \=\> \{**heroLevel**\}
+**Items** \=\> \{**item1**\}, \{**item2**\}, \{**item3**\}"
 
 
 # Example
 
 | **Input** | **Output** |
 | --- | --- |
-| `["Isacc / 25 / Apple, GravityGun","Derek / 12 / BarrelVest, DestructionSword","Hes / 1 / Desolator, Sentinel, Antara"]` | `Hero: Hes` |
-| | `level => 1` |
-| | `items => Antara, Desolator, Sentinel` |
-| | `Hero: Derek` |
-| | `level => 12` |
-| | `items => BarrelVest, DestructionSword` |
-| | `Hero: Isacc` |
-| | `level => 25` |
-| | `items => Apple, GravityGun` |
+| inventory(['Isacc / 25 / Apple, GravityGun', 'Derek / 12 / BarrelVest, DestructionSword', 'Hes / 1 / Desolator, Sentinel, Antara']) | Hero: Hes |
+| | level \=\> 1 |
+| | items \=\> Antara, Desolator, Sentinel|
+| | Hero: Derek |
+| | level \=\> 12 |
+| | items \=\> BarrelVest, DestructionSword |
+| | Hero: Isacc |
+| | level \=\> 25 |
+| | items \=\> Apple, GravityGun |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+inventory(['Isacc \/ 25 \/ Apple, GravityGun', 'Derek \/ 12 \/ BarrelVest, DestructionSword', 'Hes \/ 1 \/ Desolator, Sentinel, Antara'])
+[/input]
+[output]
+Hero: Hes
+level \=\> 1
+items \=\> Antara, Desolator, Sentinel
+Hero: Derek
+level \=\> 12
+items \=\> BarrelVest, DestructionSword
+Hero: Isacc
+level \=\> 25
+items \=\> Apple, GravityGun
+[/output]
+[/test]
 [test]
 [input]
-a \/ 10 \/ e, n, d, c, f
-k \/ 13 \/ l, m
-a \/ 18 \/ f, e, w
+inventory(['a \/ 10 \/ e, n, d, c, f', 'k \/ 13 \/ l, m', 'a \/ 18 \/ f, e, w'])
 [/input]
 [output]
 Hero: a
@@ -406,12 +406,7 @@ items \=\> e, f, w
 [/test]
 [test]
 [input]
-a \/ 10 \/ e, n, d, c
-k \/ 13 \/ l, o
-n \/ 2 \/ f, e, w
-i \/ 6 \/ q, r, f, e, w
-p \/ 18 \/ w
-f \/ 3 \/ f, p, w
+inventory(['a \/ 10 \/ e, n, d, c', 'k \/ 13 \/ l, o', 'n \/ 2 \/ f, e, w', 'i \/ 6 \/ q, r, f, e, w', 'p \/ 18 \/ w', 'f \/ 3 \/ f, p, w'])
 [/input]
 [output]
 Hero: n
@@ -436,10 +431,7 @@ items \=\> w
 [/test]
 [test]
 [input]
-l \/ 10 \/ d, c
-k \/ 13 \/ l, o
-n \/ 2 \/ f, e, w, a
-f \/ 3 \/ f, p, w
+inventory(['l \/ 10 \/ d, c', 'k \/ 13 \/ l, o', 'n \/ 2 \/ f, e, w, a', 'f \/ 3 \/ f, p, w'])
 [/input]
 [output]
 Hero: n
@@ -458,7 +450,7 @@ items \=\> l, o
 [/test]
 [test]
 [input]
-l \/ 10 \/ d, ca, e, q, w, t
+inventory(['l \/ 10 \/ d, ca, e, q, w, t'])
 [/input]
 [output]
 Hero: l
@@ -468,10 +460,7 @@ items \=\> ca, d, e, q, t, w
 [/test]
 [test]
 [input]
-l \/ 10 \/ d, ca, e, q, w, t
-q \/ 0 \/ w, r, i, s
-n \/ 5 \/ p, r, y, x
-o \/ 6 \/ w, r, n, s
+inventory(['l \/ 10 \/ d, ca, e, q, w, t', 'q \/ 0 \/ w, r, i, s', 'n \/ 5 \/ p, r, y, x', 'o \/ 6 \/ w, r, n, s'])
 [/input]
 [output]
 Hero: q
