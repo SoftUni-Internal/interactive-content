@@ -365,12 +365,21 @@ function emailValidator(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 
 Write a regular expression that performs simple **email validation.**
 
-An email consists of: username `@` domain name.
+An email consists of: username **@** domain name.
 
 - **Usernames** are **alphanumeric**
 
@@ -378,9 +387,9 @@ An email consists of: username `@` domain name.
 
 - **Domain name** may contain only **English letters**
 
-- **Valid email:** `valid123@email.com`
+- **Valid email:** **valid123@email.com**
 
-- **Invalid email:** `invalid*name@emai1.com`
+- **Invalid email:** **invalid*name@emai1.com**
 
 ## Input
 
@@ -388,31 +397,23 @@ An email consists of: username `@` domain name.
 
 ## Output
 
-- If the string is a **valid email**, print `Valid`
+- If the string is a **valid email**, print "**Valid**"
 
-- If the string is **invalid**, print `Invalid`
+- If the string is **invalid**, print "**Invalid**"
 
-# Examples
-
-## Example 1
+## Example 
 
 | **Input** | **Output** |
 | --- | --- |
-| `'valid@email.bg'` | Valid |
-
-## Example 2
-
-| **Input** | **Output** |
-| --- | --- |
-| `'invalid@emai1.bg'` | Invalid |
-
+| emailValidator('valid@email.bg') | Valid |
+| emailValidator('invalid@emai1.bg') | Invalid |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-valid@email.bg
+emailValidator('valid@email.bg')
 [/input]
 [output]
 Valid
@@ -420,7 +421,7 @@ Valid
 [/test]
 [test open]
 [input]
-invalid@emai1.bg
+emailValidator('invalid@emai1.bg')
 [/input]
 [output]
 Invalid
@@ -428,7 +429,7 @@ Invalid
 [/test]
 [test]
 [input]
-SomethingValid23@thisisaveeeeeerrryyylong.emailbythewaybutitsvalid
+emailValidator('SomethingValid23@thisisaveeeeeerrryyylong.emailbythewaybutitsvalid')
 [/input]
 [output]
 Valid
@@ -436,7 +437,7 @@ Valid
 [/test]
 [test]
 [input]
-1@1.a
+emailValidator('1@1.a')
 [/input]
 [output]
 Invalid
@@ -444,7 +445,7 @@ Invalid
 [/test]
 [test]
 [input]
-tHePrEvIoUsEmAiLwAsInVaLiDbUtThIsOnEiSvAlId@valid.com
+emailValidator('tHePrEvIoUsEmAiLwAsInVaLiDbUtThIsOnEiSvAlId@valid.com')
 [/input]
 [output]
 Valid
@@ -452,7 +453,7 @@ Valid
 [/test]
 [test]
 [input]
-i_thinkThatsEnough@asd.com
+emailValidator('i_thinkThatsEnough@asd.com')
 [/input]
 [output]
 Invalid
@@ -460,7 +461,7 @@ Invalid
 [/test]
 [test]
 [input]
-test005@out.txt
+emailValidator('test005@out.txt')
 [/input]
 [output]
 Valid
