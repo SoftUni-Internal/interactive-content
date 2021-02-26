@@ -327,25 +327,34 @@ Total money spent\: 8593\.09
 [code-editor language=javascript]
 
 ```
-function solve(input) {
+function race(input) {
    // Write your code here
 }
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Description
 
 Write a function that processes information about a race. 
 
-On the first line, you will be given a list of participants, separated by `", "`.
+On the first line, you will be given a list of participants, separated by **", "**.
 
 On the next few lines, until you receive a line **end of race**, you will be given some info, which will be some alphanumeric characters.
 
 In between them, you could have some extra characters, which you should ignore. 
 
-For example: `"G!32e%o7r#32g$235@!2e"`. 
+For example: "**G!32e%o7r#32g$235@!2e**". 
 
 The letters are the name of the person and the sum of the digits is the distance he ran. 
 
@@ -357,43 +366,23 @@ If you receive the same person more than once, just add the distance to his old 
 
 In the end print out the top 3 racers, ordered by their distance in **descending** order in the format:
 
-`1st place: {first racer}
-2nd place: {second racer}
-3rd place: {third racer}`
+**1st place:** \{**first racer**\}
+**2nd place:** \{**second racer**\}
+**3rd place:** \{**third racer**\}
 
 # Example
 
-**Input**
-
-`['George, Peter, Bill, Tom',
-  'G4e@55or%6g6!68e!!@',
-  'R1@!3a$y4456@',
-  'B5@i@#123ll',
-  'G@e54o$r6ge#',
-  '7P%et^#e5346r',
-  'T$o553m&6',
-  'end of race']`
-
-**Output**
-
-1st place\: George
-
-2nd place\: Peter
-
-3rd place\: Tom
+| **Input** | **Output** |
+|---|---|
+| race(['George, Peter, Bill, Tom', 'G4e@55or%6g6!68e!!@', 'R1@!3a$y4456@', 'B5@i@#123ll', 'G@e54o$r6ge#', '7P%et^#e5346r', 'T$o553m&6', 'end of race']) | 1st place\: George |
+| | 2nd place\: Peter |
+| | 3rd place\: Tom |
 
 [/task-description]
 [tests]
 [test]
 [input]
-George\, Peter\, Bill\, Tom
-G4e\@55or\%6g6\!68e\!\!\@
-R1\@\!3a\$y4456\@
-B5\@i\@\#123ll
-G\@e54o\$r6ge\#
-7P\%et\^\#e5346r
-T\$o553m\&6
-end of race
+race(['George\, Peter\, Bill\, Tom', 'G4e\@55or\%6g6\!68e\!\!\@', 'R1\@\!3a\$y4456\@', 'B5\@i\@\#123ll', 'G\@e54o\$r6ge\#', '7P\%et\^\#e5346r', 'T\$o553m\&6', 'end of race'])
 [/input]
 [output]
 1st place\: George
@@ -403,14 +392,7 @@ end of race
 [/test]
 [test]
 [input]
-Gregory\, Tom\, Jerry\, Christian\, Bill
-G4r\*\&\^\$\#ego\%4\^\&4\*ry
-T\*&\^\%57\)\&\%\$o\^\*m6
-J\&\*\*67e\%\&\)\)rr\&12\*3y
-J\&\*\*22e\%\&\)\)rr\&44\*8y
-Ch\&\*\&\*\^ri1s3t5ian
-L\&\*\&\%666amar
-end of race
+race(['Gregory\, Tom\, Jerry\, Christian\, Bill', 'G4r\*\&\^\$\#ego\%4\^\&4\*ry', 'T\*&\^\%57\)\&\%\$o\^\*m6', 'J\&\*\*67e\%\&\)\)rr\&12\*3y', 'J\&\*\*22e\%\&\)\)rr\&44\*8y', 'Ch\&\*\&\*\^ri1s3t5ian', 'L\&\*\&\%666amar', 'end of race'])
 [/input]
 [output]
 1st place\: Jerry
@@ -420,13 +402,7 @@ end of race
 [/test]
 [test]
 [input]
-Ronald\, Bill\, Tom\, Timmy\, Maggie\, Michonne
-Mi\*\&\^\%\$ch123o\!\#\$\%\#nne787)
-\%\$\$B\(\*\&\&\)i89ll\)\*\&\)
-R\*\*\(on\%\^\&ald992\)
-T\(\*\^\^\%immy77\)
-Ma10\*\*\$\#g0g0g0i0e
-end of race
+race(['Ronald\, Bill\, Tom\, Timmy\, Maggie\, Michonne', 'Mi\*\&\^\%\$ch123o\!\#\$\%\#nne787)', '\%\$\$B\(\*\&\&\)i89ll\)\*\&\)', 'R\*\*\(on\%\^\&ald992\)', 'T\(\*\^\^\%immy77\)', 'Ma10\*\*\$\#g0g0g0i0e', 'end of race'])
 [/input]
 [output]
 1st place\: Michonne
@@ -436,12 +412,7 @@ end of race
 [/test]
 [test]
 [input]
-Rick\, Negan\, Lucille\, Peter\, Stamat\, George
-R\*\*\*\*i22c00k199\!\!\!
-N\*\*\*\&\^E989GA\(\*\&\^\&\^\&N323a\)\)\)
-\*\^\%\%Pe87876t\&\&\^er87\#\$\&\(\%\)
-L\&\^\%u9754cille\*\&\^\&\%\^234
-end of race
+race(['Rick\, Negan\, Lucille\, Peter\, Stamat\, George', 'R\*\*\*\*i22c00k199\!\!\!', 'N\*\*\*\&\^E989GA\(\*\&\^\&\^\&N323a\)\)\)', '\*\^\%\%Pe87876t\&\&\^er87\#\$\&\(\%\)', 'L\&\^\%u9754cille\*\&\^\&\%\^234', 'end of race'])
 [/input]
 [output]
 1st place\: Peter
@@ -451,17 +422,7 @@ end of race
 [/test]
 [test]
 [input]
-Rick\, Negan\, Lucille\, Peter\, Stamat\, George
-R\*\*\*\*i22c00k199\!\!\!
-N\*\*\*\&\^e989ga\(\*\&\^\&\^\&n323\)\)\)
-\*\^\%\%\Pe87876t\&\&\^er87\#\$\&\(\%\)
-L\&\^\%u9754cille\*\&\^\&\%\^234
-R\*\*\%\^\&\%i11c104k123\!\^\&\!\!
-R\&\&\%\^\&\%ic10\^\$\@k123\!\^\&\!\!
-\*\^\%Peter8675
-\*\^\%Geo\$12\#\%112r\^\$ge23\!\(\@\^\)
-\!\!22\!P23\!e\!t\!e\!r\!85
-end of race
+race(['Rick\, Negan\, Lucille\, Peter\, Stamat\, George', 'R\*\*\*\*i22c00k199\!\!\!', 'N\*\*\*\&\^e989ga\(\*\&\^\&\^\&n323\)\)\)', '\*\^\%\%\Pe87876t\&\&\^er87\#\$\&\(\%\)', 'L\&\^\%u9754cille\*\&\^\&\%\^234', 'R\*\*\%\^\&\%i11c104k123\!\^\&\!\!', 'R\&\&\%\^\&\%ic10\^\$\@k123\!\^\&\!\!', '\*\^\%Peter8675', '\*\^\%Geo\$12\#\%112r\^\$ge23\!\(\@\^\)', '\!\!22\!P23\!e\!t\!e\!r\!85', 'end of race'])
 [/input]
 [output]
 1st place\: Peter
@@ -471,12 +432,7 @@ end of race
 [/test]
 [test]
 [input]
-Joro\, George\, Georgi\, Stamat
-\^\&\^\%\^232St\#\$ama\&\&\^\^t
-\^\&\^\%\^232St\#\$ama\&\&\^\^t
-G7667eorge\&\^\^\&\^
-\&\^\&\&\&J99999oro\&\^\^57
-end of race
+race(['Joro\, George\, Georgi\, Stamat', '\^\&\^\%\^232St\#\$ama\&\&\^\^t', '\^\&\^\%\^232St\#\$ama\&\&\^\^t', 'G7667eorge\&\^\^\&\^', '\&\^\&\&\&J99999oro\&\^\^57', 'end of race'])
 [/input]
 [output]
 1st place\: Joro
