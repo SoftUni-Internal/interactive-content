@@ -1,15 +1,19 @@
 
-# Iterators
+# Iterable\<T\> and Iterator\<T\>
 
-[slide]
+[slide hideTitle]
 
-# Iterable
-
-## Collections Hierarchy
+# Collections Hierarchy
 
 The Collection interface extends Iterable and hence all child classes of Collection also implement Iterable.
 
 [image assetsSrc="iterators-example(1).png" /]
+
+[/slide]
+
+[slide hideTitle]
+
+# Iterable\<T\>
 
 `Iterable<T>` is the root interface of the Java collection classes.
 
@@ -31,6 +35,8 @@ The `iterator()` method of this List returns Iterator of type String.
 
 So, we can use all the Iterator methods to iterate over a collection.
 
+- `hasnext()` method
+
 The `hasNext()` - method returns true if the iterator has more elements, and false if not.
 
 So, we pass the `iterator.hasNext()` into the while loop and in this way we begin to iterate over the collection.
@@ -39,9 +45,9 @@ We use an `iterator.next()` - method to get the next element from the collection
 
 ```java live
 List<String> names = new ArrayList<>();
-list.add("Peter");
-list.add("Maria");
-list.add("Alex");
+names.add("Peter");
+names.add("Maria");
+names.add("Alex");
 
 Iterator<String> iterator = names.iterator();
 
@@ -65,12 +71,12 @@ We use the `forEach()` method to iterate over the collection.
 
 ```java
 List<String> names = new ArrayList<>();
-list.add("Peter");
-list.add("Maria");
-list.add("Alex");
+names.add("Peter");
+names.add("Maria");
+names.add("Alex");
 
-names.forEach( (name) -> {
-    System.out.println( name );
+names.forEach((name) -> {
+    System.out.println(name);
 });
 ```
 
@@ -97,19 +103,23 @@ names.forEachRemaining((name) -> System.out.println(name));
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
-# Implement Custom Iterator
+# Iterator\<T\>
 
-There is a way to implement a custom Iterator, let's suppose, we want a custom list with names.
+The `iterator()` method returns a `new Iterator` which implements `Iterator<String>` and passes them to the `iterator()` method.
 
-We want our NamesList to iterate only the names whose start with "A".
+This example shows how to implement the `Iterator<T>` interface in a custom iterator.
+
+Let us suppose, we want a custom list with names.
+
+We want our NamesList to iterate only the names that start with "A".
 
 For that reason, our NamesList class have to implement the Iterable interface.
 
 ```java
 public class NamesList implements Iterable<String> {
-
+    // ...
 }
 ```
 Let's create a field `String[] names` where we are going to save our names.
@@ -158,9 +168,7 @@ public class NamesList implements Iterable<String> {
 }
 ```
 
-The `iterator()` - method returns `new Iterator`, and we have to create an **inner class** which implements `Iterator<String>` and pass them to the iterator() method.
-
-So, let's create an inner **NamesIterator** class which implements `Iterator<String>`. 
+We have to create an **inner** `NamesIterator` class which implements `Iterator<String>`. 
 
 In this class, we have a field `int counter;`.
 
@@ -221,14 +229,12 @@ public class NamesList implements Iterable<String> {
 
 ```
 
-
-
 [/slide]
 
 
-[slide]
-# Problem: Library
-[code-task title="Problem: Library" taskId="f027f67a-2574-4b1d-a31e-e3af633bc5e8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[slide hideTitle]
+# Problem with Solution: Library
+[code-task title="Library" taskId="oop-basics-java-iterators-and-comparators-lab-Library" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -242,7 +248,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a class **Library** from UML diagram below:
+Create a class **Library** from the UML diagram below:
 
 | `<<Iterable<Book>>>` |
 | --- |
@@ -250,7 +256,7 @@ Create a class **Library** from UML diagram below:
 |- books: `Book[]`|
 |+ iterator(): `Iterator<Book>`|
 
-Create a nested class **LibIterator** from UML diagram below:
+Then, create a nested class **LibIterator** from UML diagram below:
 
 | `<Iterator<Book>>` |
 | --- |
@@ -260,10 +266,12 @@ Create a nested class **LibIterator** from UML diagram below:
 |+ next(): Book |
 
 ## Hint
+
 Use the **Book** class from the previous problem.
 
 
-## Examples
+## Example
+
 Use the code below to test your **Library** class.
 
 ```java
@@ -386,95 +394,5 @@ Test Passed!
 [/test]
 [/tests]
 [/code-task]
-[/slide]
-
-
-[slide]
-
-# Solution: Library
-
-
-The **Library** Class should look like this:
-
-```java
-public class Library implements Iterable<Book> {
-    private Book[] books;
-
-    public Library(Book... books) {
-        this.books = books;
-    }
-
-    @Override
-    public Iterator<Book> iterator() {
-        return new LibIterator();
-    }
-
-    private class LibIterator implements Iterator<Book> {
-        private int counter;
-
-        LibIterator() {
-            this.counter = 0;
-        }
-
-        @Override
-        public boolean hasNext() {
-            return this.counter < books.length;
-        }
-
-        @Override
-        public Book next() {
-            return books[this.counter++];
-        }
-    }
-}
-
-```
-
-The **Book** class is the same as in previous problem:
-
-```java
-public class Book {
-    private String title;
-    private int year;
-    private List<String> authors;
-
-    public Book(String title, int year, String... authors) {
-        this.title = title;
-        this.year = year;
-        this.authors = new ArrayList<>();
-
-        if (authors.length != 0) {
-            this.authors.addAll(Arrays.asList(authors));
-        }
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public int getYear() {
-        return year;
-    }
-
-    public void setYear(int year) {
-        this.year = year;
-    }
-
-    public List<String> getAuthors() {
-        return authors;
-    }
-
-    public void setAuthors(List<String> authors) {
-        this.authors = authors;
-    }
-}
-
-```
-
-
 [/slide]
 
