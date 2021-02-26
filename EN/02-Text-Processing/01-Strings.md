@@ -115,14 +115,23 @@ function printCharacters(input){
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
-Write a function that receives a string and prints its characters on separate lines. 
+Write a function that receives a **string** and prints its characters on separate lines. 
 
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`'AWord'`| A |
+| printCharacters('AWord') | A |
 ||W|
 ||o|
 ||r|
@@ -133,7 +142,7 @@ Write a function that receives a string and prints its characters on separate li
 [tests]
 [test open]
 [input]
-AWord
+printCharacters('AWord')
 [/input]
 [output]
 A
@@ -145,7 +154,7 @@ d
 [/test]
 [test]
 [input]
-AWord
+printCharacters('AWord')
 [/input]
 [output]
 A
@@ -157,7 +166,7 @@ d
 [/test]
 [test]
 [input]
-A
+printCharacters('A')
 [/input]
 [output]
 A
@@ -165,7 +174,7 @@ A
 [/test]
 [test]
 [input]
-AB
+printCharacters('AB')
 [/input]
 [output]
 A
@@ -174,7 +183,7 @@ B
 [/test]
 [test]
 [input]
-Pesho
+printCharacters('Pesho')
 [/input]
 [output]
 P
@@ -186,7 +195,7 @@ o
 [/test]
 [test]
 [input]
-GOSHOpesho
+printCharacters('GOSHOpesho')
 [/input]
 [output]
 G
