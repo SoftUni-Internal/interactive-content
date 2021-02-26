@@ -10,15 +10,6 @@ function employees(input){
 }
 ```
 [/code-editor]
-[code-adapter]
-```
-function adapter(input, code) {
-    let inputParams = /\((.+)\)$/.exec(input)[1];
-    inputParams = eval(`[${inputParams}]`);
-    return code(...inputParams);
-}
-```
-[/code-adapter]
 [task-description]
 # Description
 You are tasked to create a list of employees and their personal numbers. 
@@ -31,37 +22,24 @@ Try to use an object.
 
 In the end print all the **listed employees** in the following format: 
 
-**Name:** \{**employeeName**\} **-- Personal Number:** \{**personalNum**\}
+`Name: {employeeName} -- Personal Number: {personalNum}`
 
 
+# Example
 
+| **Input** | **Output** |
+| --- | --- |
+|`['Silas Butler','Adnaan Buckley','Juan Peterson','Brendan Villarreal']`| Name\: Silas Butler \-\- Personal Number\: 12 |
+|| Name\: Adnaan Buckley \-\- Personal Number\: 14 |
+|| Name\: Juan Peterson \-\- Personal Number\: 13 |
+||Name\: Brendan Villarreal \-\- Personal Number\: 18|
 
 [/task-description]
 [tests]
-[test open]
-[input]
-employees(['Silas Butler','Adnaan Buckley','Juan Peterson','Brendan Villarreal'])
-[/input]
-[output]
-Name\: Silas Butler \-\- Personal Number\: 12
-Name\: Adnaan Buckley \-\- Personal Number\: 14
-Name\: Juan Peterson \-\- Personal Number\: 13
-Name\: Brendan Villarreal \-\- Personal Number\: 18
-[/output]
-[/test]
-[test open]
-[input]
-employees(['Drew Owen', 'Tommy Lee', 'Denise Jackson'])
-[/input]
-[output]
-Name\: Drew Owen \-\- Personal Number\: 9
-Name\: Tommy Lee \-\- Personal Number\: 9
-Name\: Denise Jackson \-\- Personal Number\: 14
-[/output]
-[/test]
 [test]
 [input]
-employees(['Kiril Kirilov', 'Peter Petrov'])
+Kiril Kirilov
+Peter Petrov
 [/input]
 [output]
 Name\: Kiril Kirilov \-\- Personal Number\: 13
@@ -70,7 +48,9 @@ Name\: Peter Petrov \-\- Personal Number\: 12
 [/test]
 [test]
 [input]
-employees(['Jack', 'Will', 'Amanda'])
+Jack
+Will
+Amanda
 [/input]
 [output]
 Name\: Jack \-\- Personal Number\: 4
@@ -80,7 +60,10 @@ Name\: Amanda \-\- Personal Number\: 6
 [/test]
 [test]
 [input]
-employees(['Samuel Jackson', 'Will Smith', 'Bruce Willis', 'Tom Holland'])
+Samuel Jackson
+Will Smith
+Bruce Willis
+Tom Holland
 [/input]
 [output]
 Name\: Samuel Jackson \-\- Personal Number\: 14
@@ -91,7 +74,10 @@ Name\: Tom Holland \-\- Personal Number\: 11
 [/test]
 [test]
 [input]
-employees(['Silas Butler', 'Adnaan Buckley', 'Juan Peterson', 'Brendan Villarreal'])
+Silas Butler
+Adnaan Buckley
+Juan Peterson
+Brendan Villarreal
 [/input]
 [output]
 Name\: Silas Butler \-\- Personal Number\: 12
@@ -115,23 +101,14 @@ function towns(input){
 }
 ```
 [/code-editor]
-[code-adapter]
-```
-function adapter(input, code) {
-    let inputParams = /\((.+)\)$/.exec(input)[1];
-    inputParams = eval(`[${inputParams}]`);
-    return code(...inputParams);
-}
-```
-[/code-adapter]
 [task-description]
 # Description
 
-You are tasked to create and print objects from a text table. 
+You're tasked to create and print objects from a text table. 
 
-You will receive the input as an array of strings, where each string represents a table row, with values on the row separated by pipes **|** and spaces.
+You will receive the input as an array of strings, where each string represents a table row, with values on the row separated by pipes ` | ` and spaces.
 
-The table will consist of exactly 3 columns **Town**, **Latitude** and **Longitude**. 
+The table will consist of exactly 3 columns `Town`, `Latitude` and `Longitude`. 
 
 The latitude and longitude columns will always contain valid numbers. 
 
@@ -141,31 +118,20 @@ The output should be objects.
 
 Latitude and longitude must be parsed to numbers and formatted to the second decimal point.
 
-
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|`['Bucuresti | 42.696552 | 23.32601','Beijing | 39.913818 | 116.363625']`|`{ town: 'Bucuresti', latitude: '42.70', longitude: '23.33' }` |
+| | `{ town: 'Beijing', latitude: '39.91', longitude: '116.36' }` |
 
 [/task-description]
 [tests]
-[test open]
-[input]
-towns(['Bucuresti \| 42.696552 \| 23.32601','Beijing \| 39.913818 \| 116.363625'])
-[/input]
-[output]
-\{ town: 'Bucuresti', latitude: '42.70', longitude: '23.33' \}
-\{ town: 'Beijing', latitude: '39.91', longitude: '116.36' \}
-[/output]
-[/test]
-[test open]
-[input]
-towns(['Barcelona \| 41.390205 \| 2.154007', 'Paris \| 48.864716 \| 2.349014'])
-[/input]
-[output]
-\{ town: 'Barcelona', latitude: '41.40', longitude: '2.15' \}
-\{ town: 'Paris', latitude: '48.86', longitude: '2.35' \}
-[/output]
-[/test]
 [test]
 [input]
-towns(['jdk \| 156.45 \| 12.5645', 'hjk \| 32.556 \| 134.824', 'io \| 87.65 \| 14.929', 'op \| 44.76 \| 184.28'])
+jdk \| 156.45 \| 12.5645
+hjk \| 32.556 \| 134.824
+io \| 87.65 \| 14.929
+op \| 44.76 \| 184.28
 [/input]
 [output]
 \{ town: 'jdk', latitude: '156.45', longitude: '12.56' \}
@@ -176,7 +142,9 @@ towns(['jdk \| 156.45 \| 12.5645', 'hjk \| 32.556 \| 134.824', 'io \| 87.65 \| 1
 [/test]
 [test]
 [input]
-towns(['jj \| 156.45 \| 12.575', 'yu \| 65.65 \| 64.919', 'i \| 12.76 \| 184.28'])
+jj \| 156.45 \| 12.575
+yu \| 65.65 \| 64.919
+i \| 12.76 \| 184.28
 [/input]
 [output]
 \{ town: 'jj', latitude: '156.45', longitude: '12.57' \}
@@ -186,7 +154,11 @@ towns(['jj \| 156.45 \| 12.575', 'yu \| 65.65 \| 64.919', 'i \| 12.76 \| 184.28'
 [/test]
 [test]
 [input]
-towns(['a \| 156.45 \| 12.575', 'b \| 1.65 \| 64.8919', 'c \| 45.786 \| 184.128', 'd \| 9.745 \| 1684.28', 'e \| 12.676 \| 1814.28'])
+a \| 156.45 \| 12.575
+b \| 1.65 \| 64.8919
+c \| 45.786 \| 184.128
+d \| 9.745 \| 1684.28
+e \| 12.676 \| 1814.28
 [/input]
 [output]
 \{ town: 'a', latitude: '156.45', longitude: '12.57' \}
@@ -198,7 +170,10 @@ towns(['a \| 156.45 \| 12.575', 'b \| 1.65 \| 64.8919', 'c \| 45.786 \| 184.128'
 [/test]
 [test]
 [input]
-towns(['a \| 136.45 \| 12.575', 'k \| 1.65 \| 564.19', 'l \| 99.545 \| 1684.18', 'e \| 112.66 \| 1814.28'])
+a \| 136.45 \| 12.575
+k \| 1.65 \| 564.19
+l \| 99.545 \| 1684.18
+e \| 112.66 \| 1814.28
 [/input]
 [output]
 \{ town: 'a', latitude: '136.45', longitude: '12.57' \}
@@ -209,7 +184,7 @@ towns(['a \| 136.45 \| 12.575', 'k \| 1.65 \| 564.19', 'l \| 99.545 \| 1684.18',
 [/test]
 [test]
 [input]
-towns(['a \| 136.45 \| 812.575'])
+a \| 136.45 \| 812.575
 [/input]
 [output]
 \{ town: 'a', latitude: '136.45', longitude: '812.58' \}
@@ -230,49 +205,40 @@ function movies(input){
 }
 ```
 [/code-editor]
-[code-adapter]
-```
-function adapter(input, code) {
-    let inputParams = /\((.+)\)$/.exec(input)[1];
-    inputParams = eval(`[${inputParams}]`);
-    return code(...inputParams);
-}
-```
-[/code-adapter]
 [task-description]
 # Description
 Write a function that stores information about movies inside an array.
 
 The movie's object info must be name, director and date. You can receive several types of input:
 
-* **addMovie** \{**movie name**\} - Add the movie
+* `addMovie {movie name}` - add the movie
 
-* \{**movie name**\} **directedBy** \{**director**\} - Check if the movie exists and then add the director
-* \{**movie name**\} **onDate** \{**date**\} - Check if the movie exists and then add the date
+* `{movie name} directedBy {director}` - check if the movie exists and then add the director
+* `{movie name} onDate {date}` - check if the movie exists and then add the date
 
-At the end print all the movies that have all the info (if the movie has no director, name or date, do not print it) **in JSON format.**
+At the end print all the movies that have all the info (if the movie has no director, name or date, don’t print it) **in JSON format.**
 
 # Example
 
 | **Input** | **Output** |
 | --- | --- |
-| movies(['addMovie Fast and Furious','addMovie Godfather','Inception directedBy Christopher Nolan','Godfather directedBy Francis Ford Coppola','Godfather onDate 29.07.2018','Fast and Furious onDate 30.07.2018','Batman onDate 01.08.2018','Fast and Furious directedBy Rob Cohen']) | \{"name":"Fast and Furious","date":"30.07.2018","director":"Rob Cohen"\}|
-| | \{"name":"Godfather","director":"Francis Ford Coppola","date":"29.07.2018"\} |
+|`['addMovie Fast and Furious','addMovie Godfather','Inception directedBy Christopher Nolan','Godfather directedBy Francis Ford Coppola','Godfather onDate 29.07.2018','Fast and Furious onDate 30.07.2018','Batman onDate 01.08.2018','Fast and Furious directedBy Rob Cohen']` | `{"name":"Fast and Furious","date":"30.07.2018","director":"Rob Cohen"}`|
+| | `{"name":"Godfather","director":"Francis Ford Coppola","date":"29.07.2018"}` |
 
 
 [/task-description]
 [tests]
-[test open]
-[input]
-movies(['addMovie Fast and Furious','addMovie Godfather','Inception directedBy Christopher Nolan','Godfather directedBy Francis Ford Coppola','Godfather onDate 29.07.2018','Fast and Furious onDate 30.07.2018','Batman onDate 01.08.2018','Fast and Furious directedBy Rob Cohen'])
-[/input]
-[output]
-\{"name":"Fast and Furious","date":"30.07.2018","director":"Rob Cohen"\}
-\{"name":"Godfather","director":"Francis Ford Coppola","date":"29.07.2018"\}
-[/output]
 [test]
 [input]
-movies(['addMovie a', 'addMovie b', 'a directedBy j', 'b directedBy o', 'b onDate 12.34.1244', 'a onDate 30.07.2010', 'addMovie c', '', 'c directedBy o', 'c onDate 12.01.1998'])
+addMovie a
+addMovie b
+a directedBy j
+b directedBy o
+b onDate 12\.34\.1244
+a onDate 30\.07\.2010
+addMovie c
+c directedBy o
+c onDate 12\.01\.1998
 [/input]
 [output]
 \{"name":"a","director":"j","date":"30\.07\.2010"\}
@@ -282,7 +248,10 @@ movies(['addMovie a', 'addMovie b', 'a directedBy j', 'b directedBy o', 'b onDat
 [/test]
 [test]
 [input]
-movies(['addMovie a', 'addMovie b', 'a directedBy j', 'a onDate 30.07.2010'])
+addMovie a
+addMovie b
+a directedBy j
+a onDate 30\.07\.2010
 [/input]
 [output]
 \{"name":"a","director":"j","date":"30.07.2010"\}
@@ -290,7 +259,12 @@ movies(['addMovie a', 'addMovie b', 'a directedBy j', 'a onDate 30.07.2010'])
 [/test]
 [test]
 [input]
-movies(['addMovie y', 'addMovie b', 'y directedBy j', 'y onDate 30.07.2010', 'c onDate 30.07.2010', 'c directedBy l'])
+addMovie y
+addMovie b
+y directedBy j
+y onDate 30\.07\.2010
+c onDate 30\.07\.2010
+c directedBy l
 [/input]
 [output]
 \{"name":"y","director":"j","date":"30\.07\.2010"\}
@@ -298,7 +272,21 @@ movies(['addMovie y', 'addMovie b', 'y directedBy j', 'y onDate 30.07.2010', 'c 
 [/test]
 [test]
 [input]
-movies(['addMovie y', 'addMovie b', 'y directedBy j', 'y onDate 30.07.2010', 'b onDate 30.17.2015', 'addMovie k', 'k directedBy l', 'y directedBy j', 'k onDate 30.07.2010', 'y onDate 10.07.2010', 'addMovie n', 'x onDate 12.07.1994', 'y onDate 30.07.2018', 'n directedBy j', 'n onDate 30.07.2017'])
+addMovie y
+addMovie b
+y directedBy j
+y onDate 30\.07\.2010
+b onDate 30\.17\.2015
+addMovie k
+k directedBy l
+y directedBy j
+k onDate 30\.07\.2010
+y onDate 10\.07\.2010
+addMovie n
+x onDate 12\.07\.1994
+y onDate 30\.07\.2018
+n directedBy j
+n onDate 30\.07\.2017
 [/input]
 [output]
 \{"name":"y","director":"j","date":"30\.07\.2018"\}
@@ -308,7 +296,15 @@ movies(['addMovie y', 'addMovie b', 'y directedBy j', 'y onDate 30.07.2010', 'b 
 [/test]
 [test]
 [input]
-movies(['addMovie y', 'addMovie b', 'y directedBy j', 'y onDate 30.07.2010', 'b onDate 30.17.2015', 'addMovie k', 'k directedBy l', 'y directedBy j', 'k onDate 30.07.2010' ])
+addMovie y
+addMovie b
+y directedBy j
+y onDate 30\.07\.2010
+b onDate 30\.17\.2015
+addMovie k
+k directedBy l
+y directedBy j
+k onDate 30\.07\.2010
 [/input]
 [output]
 \{"name":"y","director":"j","date":"30\.07\.2010"\}
@@ -332,23 +328,14 @@ function inventory(input){
 }
 ```
 [/code-editor]
-[code-adapter]
-```
-function adapter(input, code) {
-    let inputParams = /\((.+)\)$/.exec(input)[1];
-    inputParams = eval(`[${inputParams}]`);
-    return code(...inputParams);
-}
-```
-[/code-adapter]
 [task-description]
 # Description
 
-Create a program, which creates a register for heroes, with their names, level, and items (if they have such). 
+Create a function which creates a register for heroes, with their names, level, and items (if they have such). 
 
 The input comes as an array of strings. Each element holds data for a hero, in the following format: 
 
-\{**heroName**\} **/** \{**heroLevel**\} **/** \{**item1**\}**,** \{**item2**\}**,** \{**item3**\}**...**
+`{heroName} / {heroLevel} / {item1}, {item2}, {item3}...`
 
 You must store the data about every hero.
 
@@ -358,45 +345,32 @@ The output is all of the data for all the heroes you have stored sorted ascendin
 
 The data must be in the following format for each hero:
 
-**Hero:** \{**heroName**\}
-**level =>** \{**heroLevel**\}
-**Items =>** \{**item1**\}**,** \{**item2**\}**,** \{**item3**\}
+`Hero: {heroName}`
+`level => {heroLevel}`
+`Items => {item1}, {item2}, {item3}`
 
 
 # Example
 
 | **Input** | **Output** |
 | --- | --- |
-| inventory(["Isacc / 25 / Apple, GravityGun","Derek / 12 / BarrelVest, DestructionSword","Hes / 1 / Desolator, Sentinel, Antara"]) | Hero: Hes |
-| | level \=\> 1 |
-| | items \=\> Antara, Desolator, Sentinel |
-| | Hero: Derek |
-| | level \=\> 12|
-| | items \=\> BarrelVest, DestructionSword|
-| | Hero: Isacc |
-| | level \=\> 25 |
-| | items \=\> Apple, GravityGun |
+| `["Isacc / 25 / Apple, GravityGun","Derek / 12 / BarrelVest, DestructionSword","Hes / 1 / Desolator, Sentinel, Antara"]` | `Hero: Hes` |
+| | `level => 1` |
+| | `items => Antara, Desolator, Sentinel` |
+| | `Hero: Derek` |
+| | `level => 12` |
+| | `items => BarrelVest, DestructionSword` |
+| | `Hero: Isacc` |
+| | `level => 25` |
+| | `items => Apple, GravityGun` |
 
 [/task-description]
 [tests]
-[test open]
-[input]
-inventory(["Isacc / 25 / Apple, GravityGun","Derek / 12 / BarrelVest, DestructionSword","Hes / 1 / Desolator, Sentinel, Antara"])
-[/input]
-[output]
- Hero: Hes
-level \=\> 1
-items \=\> Antara, Desolator, Sentinel
-Hero: Derek
-level \=\> 12
-items \=\> BarrelVest, DestructionSword
-Hero: Isacc
-level \=\> 25
-items \=\> Apple, GravityGun
-[/output]
 [test]
 [input]
-inventory(['a / 10 / e, n, d, c, f', 'k / 13 / l, m', 'a / 18 / f, e, w'])
+a \/ 10 \/ e, n, d, c, f
+k \/ 13 \/ l, m
+a \/ 18 \/ f, e, w
 [/input]
 [output]
 Hero: a
@@ -412,7 +386,12 @@ items \=\> e, f, w
 [/test]
 [test]
 [input]
-inventory(['a / 10 / e, n, d, c', 'k / 13 / l, o', 'n / 2 / f, e, w', 'i / 6 / q, r, f, e, w', 'p / 18 / w', 'f / 3 / f, p, w'])
+a \/ 10 \/ e, n, d, c
+k \/ 13 \/ l, o
+n \/ 2 \/ f, e, w
+i \/ 6 \/ q, r, f, e, w
+p \/ 18 \/ w
+f \/ 3 \/ f, p, w
 [/input]
 [output]
 Hero: n
@@ -437,7 +416,10 @@ items \=\> w
 [/test]
 [test]
 [input]
-inventory(['l / 10 / d, c', 'k / 13 / l, o', 'n / 2 / f, e, w, a', 'f / 3 / f, p, w'])
+l \/ 10 \/ d, c
+k \/ 13 \/ l, o
+n \/ 2 \/ f, e, w, a
+f \/ 3 \/ f, p, w
 [/input]
 [output]
 Hero: n
@@ -456,7 +438,7 @@ items \=\> l, o
 [/test]
 [test]
 [input]
-inventory(['l / 10 / d, ca, e, q, w, t'])
+l \/ 10 \/ d, ca, e, q, w, t
 [/input]
 [output]
 Hero: l
@@ -466,7 +448,10 @@ items \=\> ca, d, e, q, t, w
 [/test]
 [test]
 [input]
-inventory(['l / 10 / d, ca, e, q, w, t', 'q / 0 / w, r, i, s', 'n / 5 / p, r, y, x', 'o / 6 / w, r, n, s'])
+l \/ 10 \/ d, ca, e, q, w, t
+q \/ 0 \/ w, r, i, s
+n \/ 5 \/ p, r, y, x
+o \/ 6 \/ w, r, n, s
 [/input]
 [output]
 Hero: q
@@ -499,19 +484,10 @@ function dictionary(input){
 }
 ```
 [/code-editor]
-[code-adapter]
-```
-function adapter(input, code) {
-    let inputParams = /\((.+)\)$/.exec(input)[1];
-    inputParams = eval(`[${inputParams}]`);
-    return code(...inputParams);
-}
-```
-[/code-adapter]
 [task-description]
 # Description
 
-You will receive an array holding strings in the form of JSON.
+You will receive an array holding strings in the form of JSONs.
 
 You have to parse these strings and **combine them into one object.**
 
@@ -521,7 +497,7 @@ If you receive the same term twice replace it with the new definition.
 
 Print every **term and definition** from the dictionary on a new line in this format: 
 
-**Term:** **$**\{**term**\} **=> Definition: $**\{**definition**\}
+`Term: ${term} => Definition: ${definition}`
 
 Do not forget to sort the content **alphabetically** by the terms as in real dictionaries. 
 
@@ -529,7 +505,7 @@ Do not forget to sort the content **alphabetically** by the terms as in real dic
 
 | **Input** | **Output** |
 | --- | --- |
-| dictionary(['{"Coffee":"A hot drink made from the roasted and ground seeds (coffee beans) of a tropical shrub."}','{"Bus":"A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare."}','{"Boiler":"A fuel-burning apparatus or container for heating water."}','{"Tape":"A narrow strip of material, typically used to hold or fasten something."}','{"Microphone":"An instrument for converting sound waves into electrical energy variations which may then be amplified, transmitted, or recorded."}']) | Term\: Boiler \=\> Definition\: A fuel\-burning apparatus or container for heating water. |
+| `['{"Coffee":"A hot drink made from the roasted and ground seeds (coffee beans) of a tropical shrub."}','{"Bus":"A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare."}','{"Boiler":"A fuel-burning apparatus or container for heating water."}','{"Tape":"A narrow strip of material, typically used to hold or fasten something."}','{"Microphone":"An instrument for converting sound waves into electrical energy variations which may then be amplified, transmitted, or recorded."}']` | Term\: Boiler \=\> Definition\: A fuel\-burning apparatus or container for heating water. |
 | | Term\: Bus \=\> Definition\: A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare. |
 | | Term\: Coffee \=\> Definition\: A hot drink made from the roasted and ground seeds \(coffee beans\) of a tropical shrub. |
 | | Term\: Microphone \=\> Definition\: An instrument for converting sound waves into electrical energy variations which may then be amplified, transmitted, or recorded. |
@@ -537,20 +513,11 @@ Do not forget to sort the content **alphabetically** by the terms as in real dic
 
 [/task-description]
 [tests]
-[test open]
-[input]
-dictionary(['\{"Coffee":"A hot drink made from the roasted and ground seeds (coffee beans) of a tropical shrub."\}','\{"Bus":"A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare."\}','\{"Boiler":"A fuel-burning apparatus or container for heating water."\}','\{"Tape":"A narrow strip of material, typically used to hold or fasten something."\}','\{"Microphone":"An instrument for converting sound waves into electrical energy variations which may then be amplified, transmitted, or recorded."\}'])
-[/input]
-[output]
-Term\: Boiler \=\> Definition\: A fuel\-burning apparatus or container for heating water.
-Term\: Bus \=\> Definition\: A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare.
-Term\: Coffee \=\> Definition\: A hot drink made from the roasted and ground seeds \(coffee beans\) of a tropical shrub.
-Term\: Microphone \=\> Definition\: An instrument for converting sound waves into electrical energy variations which may then be amplified, transmitted, or recorded.
-Term\: Tape \=\> Definition\: A narrow strip of material, typically used to hold or fasten something.
-[/output]
 [test]
 [input]
-dictionary(['{"bb":"fghfhgfghfghfhg."}', '{"ad":"gyuguy gyu guy guy gyu guy guyguguhvhv"}', '{"ab":"vyvgvgh vgh vty vtyv ytv yt vty vyt."}'])
+\{"bb":"fghfhgfghfghfhg."\}
+\{"ad":"gyuguy gyu guy guy gyu guy guyguguhvhv"\}
+\{"ab":"vyvgvgh vgh vty vtyv ytv yt vty vyt."\}
 [/input]
 [output]
 Term: ab \=\> Definition: vyvgvgh vgh vty vtyv ytv yt vty vyt.
@@ -560,7 +527,11 @@ Term: bb \=\> Definition: fghfhgfghfghfhg.
 [/test]
 [test]
 [input]
-dictionary(['{"nmbb":"fghfhgfghfghfhg."}', '{"jad":"gyuguy gyu guy guy gyu guy guyguguhvhv"}', '{"hab":"vyvgvgh vgh vty vtyv ytv yt vty vyt."}', '{"bjad":"gyuguy gy bhjbhjb  u guy guy gyu guy guyguguhvhv"}', '{"mkjad":"gyuguy gyu guy guy gybhj bjh bu guy guyguguhvhv"}'])
+\{"nmbb":"fghfhgfghfghfhg."\}
+\{"jad":"gyuguy gyu guy guy gyu guy guyguguhvhv"\}
+\{"hab":"vyvgvgh vgh vty vtyv ytv yt vty vyt."\}
+\{"bjad":"gyuguy gy bhjbhjb  u guy guy gyu guy guyguguhvhv"\}
+\{"mkjad":"gyuguy gyu guy guy gybhj bjh bu guy guyguguhvhv"\}
 [/input]
 [output]
 Term: bjad \=\> Definition: gyuguy gy bhjbhjb  u guy guy gyu guy guyguguhvhv
@@ -572,7 +543,10 @@ Term: nmbb \=\> Definition: fghfhgfghfghfhg.
 [/test]
 [test]
 [input]
-dictionary(['{"mmjad":"gyuu guy guy gyu guy guyguhvhv"}', '{"nhab":"vyvgvgh v yt vty vyt."}', '{"bjad":"gyuguy gy bhjbhjb  u guy gupp p po pyguguhvhv"}', '{"mkjad":"gyuguy gyu guy guyuguhvhv"}'])
+\{"mmjad":"gyuu guy guy gyu guy guyguhvhv"\}
+\{"nhab":"vyvgvgh v yt vty vyt."\}
+\{"bjad":"gyuguy gy bhjbhjb  u guy gupp p po pyguguhvhv"\}
+\{"mkjad":"gyuguy gyu guy guyuguhvhv"\}
 [/input]
 [output]
 Term: bjad \=\> Definition: gyuguy gy bhjbhjb  u guy gupp p po pyguguhvhv
@@ -583,7 +557,9 @@ Term: nhab \=\> Definition: vyvgvgh v yt vty vyt.
 [/test]
 [test]
 [input]
-dictionary(['{"zmmjad":"gyuu guy guy gyu guy guyguhvhv"}', '{"anhab":"vyvgvgh v yt vty vyt."}', '{"akjad":"gyuguy gyu guy guhvhv"}'])
+\{"zmmjad":"gyuu guy guy gyu guy guyguhvhv"\}
+\{"anhab":"vyvgvgh v yt vty vyt."\}
+\{"akjad":"gyuguy gyu guy guhvhv"\}
 [/input]
 [output]
 Term: akjad \=\> Definition: gyuguy gyu guy guhvhv
@@ -593,7 +569,11 @@ Term: zmmjad \=\> Definition: gyuu guy guy gyu guy guyguhvhv
 [/test]
 [test]
 [input]
-dictionary(['{"zmmjad":"gyuu guy guy gyu guy guyguhvhv"}', '{"anhab":"vyvgvgh v vty vtyy vyt."}', '{"makjad":"gyugvgh vghuy guhvhv"}', '{"kanhab":"vyvgvgh v yt vty vyt."}', '{"anhab":"vgh vgh yt."}'])
+\{"zmmjad":"gyuu guy guy gyu guy guyguhvhv"\}
+\{"anhab":"vyvgvgh v vty vtyy vyt."\}
+\{"makjad":"gyugvgh vghuy guhvhv"\}
+\{"kanhab":"vyvgvgh v yt vty vyt."\}
+\{"anhab":"vgh vgh yt."\}
 [/input]
 [output]
 Term: anhab \=\> Definition: vgh vgh yt.
@@ -617,15 +597,6 @@ function songs(input){
 }
 ```
 [/code-editor]
-[code-adapter]
-```
-function adapter(input, code) {
-    let inputParams = /\((.+)\)$/.exec(input)[1];
-    inputParams = eval(`[${inputParams}]`);
-    return code(...inputParams);
-}
-```
-[/code-adapter]
 [task-description]
 # Description
 
@@ -637,62 +608,40 @@ The first element n will be the number of songs.
 
 Next n elements will be the songs data in the following format: 
 
-\{**typeList**\}\_\{**name**\}\_\{**time**\}, 
-
-and the the last element will be Type List \/ **all**.
+`{typeList}_{name}_{time}`, 
+aand the the last element will be Type List \/ `all`.
 
 Print only the names of the songs which are from that Type List \/ All songs. 
 
-# Examples One
+# Examples
 
 | **Input** | **Output** |
 | --- | --- |
-| songs([3,'favourite_DownTown_3:14','favourite_Kiss_4:16','favourite_Smooth Criminal_4:01','favourite']) | DownTown |
+| `[3,'favourite_DownTown_3:14','favourite_Kiss_4:16','favourite_Smooth Criminal_4:01','favourite']` | DownTown |
 | | Kiss |
 | | Smooth Criminal |
 
-# Example Two
 
 | **Input** | **Output** |
 | --- | --- |
-| songs([4,'favourite_DownTown_3:14','listenLater_Andalouse_3:24','favourite_In To The Night_3:58','favourite_Live It Up_3:48','listenLater']) | Andalouse |
+| `[4,'favourite_DownTown_3:14','listenLater_Andalouse_3:24','favourite_In To The Night_3:58','favourite_Live It Up_3:48','listenLater']` | Andalouse |
 
-# Example Three
 
 | **Input** | **Output** |
 | --- | --- |
-| songs([2,'like_Replay_3:15', 'ban_Photoshop_3:48','all']) | Replay |
+| `[2,'like_Replay_3:15','ban_Photoshop_3:48','all']` | Replay |
 | | Photoshop |
+
 
 [/task-description]
 [tests]
-[test open]
-[input]
-songs([3,'favourite_DownTown_3:14','favourite_Kiss_4:16','favourite_Smooth Criminal_4:01','favourite'])
-[/input]
-[output]
-DownTown
-Kiss
-Smooth Criminal
-[/output]
-[test open]
-[input]
-songs([4,'favourite_DownTown_3:14','listenLater_Andalouse_3:24','favourite_In To The Night_3:58','favourite_Live It Up_3:48','listenLater'])
-[/input]
-[output]
-Andalouse
-[/output]
-[test open]
-[input]
-songs([2,'like_Replay_3:15', 'ban_Photoshop_3:48','all'])
-[/input]
-[output]
-Replay
-Photoshop
-[/output]
 [test]
 [input]
-songs([3, 'favourite_immaterial_3:24', 'ban_party_4:45', 'like_smile_4:25', 'like'])
+3
+favourite\_immaterial\_3:24
+ban\_party\_4:45
+like\_smile\_4:25
+like
 [/input]
 [output]
 smile
@@ -700,7 +649,12 @@ smile
 [/test]
 [test]
 [input]
-songs([4, 'ban_hey_3:48', 'programming_ban_3:42', 'ban_hello_3:29', 'like_like_3:05', 'ban'])
+4
+ban\_hey\_3:48
+programming\_ban\_3:42
+ban\_hello\_3:29
+like\_like\_3:05
+ban
 [/input]
 [output]
 hey
@@ -709,7 +663,12 @@ hello
 [/test]
 [test]
 [input]
-songs([4, 'ban_hey_3:48', 'programming_ban_3:42', 'ban_hello_3:29', 'like_like_3:05', 'programming'])
+4
+ban\_hey\_3:48
+programming\_ban\_3:42
+ban\_hello\_3:29
+like\_like\_3:05
+programming
 [/input]
 [output]
 ban
@@ -717,7 +676,12 @@ ban
 [/test]
 [test]
 [input]
-songs([4, 'ban_hey_3:48', 'programming_ban_3:42', 'ban_hello_3:29', 'like_like_3:05', 'all'])
+4
+ban\_hey\_3:48
+programming\_ban\_3:42
+ban\_hello\_3:29
+like\_like\_3:05
+all
 [/input]
 [output]
 hey
@@ -728,7 +692,10 @@ like
 [/test]
 [test]
 [input]
-songs([2, 'list_song_3:21', 'list2_song2_2:58', 'list'])
+2
+list\_song\_3:21
+list2\_song2\_2:58
+list
 [/input]
 [output]
 song
