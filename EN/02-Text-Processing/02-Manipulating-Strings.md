@@ -191,27 +191,34 @@ function substring(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a function that receives **a string and two numbers.**
 
-The numbers will be a starting index and count of elements to substring. 
+The numbers will be a **starting index** and **count of elements** to substring. 
 
 Print the result.
 
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['ASentence', '1', '8']`| Sentence |
+| substring(['ASentence', '1', '8']) | Sentence |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-ASentence
-1
-8
+substring(['ASentence', '1', '8'])
 [/input]
 [output]
 Sentence
@@ -219,9 +226,7 @@ Sentence
 [/test]
 [test]
 [input]
-gashajGAHJGAasghaj
-4
-8
+substring(['gashajGAHJGAasghaj', '4', '8'])
 [/input]
 [output]
 ajGAHJGA
@@ -229,9 +234,7 @@ ajGAHJGA
 [/test]
 [test]
 [input]
-gasjGAHJAasghaj
-0
-10
+substring(['gasjGAHJAasghaj', '0', '10'])
 [/input]
 [output]
 gasjGAHJAa
@@ -239,9 +242,7 @@ gasjGAHJAa
 [/test]
 [test]
 [input]
-gasjGA48HJAasghaj
-5
-1
+substring(['gasjGA48HJAasghaj', '5', '1'])
 [/input]
 [output]
 A
@@ -249,9 +250,7 @@ A
 [/test]
 [test]
 [input]
-gasjGA48HJAahaj
-5
-5
+substring(['gasjGA48HJAahaj', '5', '5'])
 [/input]
 [output]
 A48HJ
@@ -259,9 +258,7 @@ A48HJ
 [/test]
 [test]
 [input]
-jjjasjA48HJAko88/(())haj
-10
-10
+substring(['jjjasjA48HJAko88/(())haj', '10', '10'])
 [/input]
 [output]
 JAko88/(()
@@ -371,16 +368,25 @@ function censoredWords(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
-Write a function that receives a sentence as a first parameter  and a single word as a second.
+Write a function that receives a **sentence** as a first parameter and a **single word** as a second.
 
-Find all occurrences of that word in the sentence and **replace them** with the corresponding count of `*`.
+Find all occurrences of that word in the sentence and **replace them** with the corresponding count of "*".
 
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['A small sentence with some words', 'small']`| A \*\*\*\*\* sentence with some words |
+| censoredWords(['A small sentence with some words', 'small']) | A \*\*\*\*\* sentence with some words |
 
 
 
@@ -389,8 +395,7 @@ Find all occurrences of that word in the sentence and **replace them** with the 
 [tests]
 [test open]
 [input]
-A small sentence with some words
-small
+censoredWords(['A small sentence with some words', 'small'])
 [/input]
 [output]
 A \*\*\*\*\* sentence with some words
@@ -398,8 +403,7 @@ A \*\*\*\*\* sentence with some words
 [/test]
 [test]
 [input]
-soallsentencewithsomewords
-so
+censoredWords(['soallsentencewithsomewords', 'so'])
 [/input]
 [output]
 \*\*allsentencewith\*\*mewords
@@ -407,8 +411,7 @@ so
 [/test]
 [test]
 [input]
-pesho gosho stamat pesho
-pesho
+censoredWords(['pesho gosho stamat pesho', 'pesho'])
 [/input]
 [output]
 \*\*\*\*\* gosho stamat \*\*\*\*\*
@@ -416,8 +419,7 @@ pesho
 [/test]
 [test]
 [input]
-aa bb aa ca pesho gosho stamat pesho
-a
+censoredWords(['aa bb aa ca pesho gosho stamat pesho', 'a'])
 [/input]
 [output]
 \*\* bb \*\* c\* pesho gosho st\*m\*t pesho
@@ -425,8 +427,7 @@ a
 [/test]
 [test]
 [input]
-repeat word repeat repeat word word repeat
-repeat word
+censoredWords(['repeat word repeat repeat word word repeat', 'repeat word'])
 [/input]
 [output]
 \*\*\*\*\*\*\*\*\*\*\* repeat \*\*\*\*\*\*\*\*\*\*\* word repeat
@@ -434,8 +435,7 @@ repeat word
 [/test]
 [test]
 [input]
-aaa heyyy a heyyy abv hey abc
-heyyy
+censoredWords(['aaa heyyy a heyyy abv hey abc', 'heyyy'])
 [/input]
 [output]
 aaa \*\*\*\*\* a \*\*\*\*\* abv hey abc
@@ -590,6 +590,15 @@ function countStringOccurrences(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a function that receives a **piece of text** and a **string that you need to search for** in it.
@@ -599,7 +608,7 @@ Print all the occurrences of that word in the string.
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['This is a word and it also is a sentence','is']`| 2 |
+| countStringOccurrences(['This is a word and it also is a sentence','is']) | 2 |
 
 
 [/task-description]
@@ -607,8 +616,7 @@ Print all the occurrences of that word in the string.
 [tests]
 [test open]
 [input]
-This is a word and it also is a sentence
-is
+countStringOccurrences(['This is a word and it also is a sentence','is'])
 [/input]
 [output]
 2
@@ -616,8 +624,7 @@ is
 [/test]
 [test]
 [input]
-az ti toi tq to nie vie te az az az
-az
+countStringOccurrences(['az ti toi tq to nie vie te az az az', 'az'])
 [/input]
 [output]
 4
@@ -625,8 +632,7 @@ az
 [/test]
 [test]
 [input]
-az toi ti toi tq to nie vie te az az az
-toi
+countStringOccurrences(['az toi ti toi tq to nie vie te az az az', 'toi'])
 [/input]
 [output]
 2
@@ -634,8 +640,7 @@ toi
 [/test]
 [test]
 [input]
-az toi ti toi tq to nie vie az az az
-te
+countStringOccurrences(['az toi ti toi tq to nie vie az az az', 'te'])
 [/input]
 [output]
 0
@@ -643,8 +648,7 @@ te
 [/test]
 [test]
 [input]
-az toi ti toi tq to nie vie az az az
-tq
+countStringOccurrences(['az toi ti toi tq to nie vie az az az', 'tq'])
 [/input]
 [output]
 1
@@ -652,8 +656,7 @@ tq
 [/test]
 [test]
 [input]
-az tq tq tq tq
-tq
+countStringOccurrences(['az tq tq tq tq', 'tq'])
 [/input]
 [output]
 4
