@@ -451,24 +451,19 @@ The function receives one argument:
 [hints]
 [hint]
 
-Calculate the price for the landscaping of the whole yard and store it in a variable:
-let total =  input * 7.61 
-
+Calculate the price for the landscaping of the whole yard and store it in a variable.
 
 [/hint]
 
 [hint]
 
-Calculate the discount and store the result in a variable: 
-let discount = total * 0.18
+Calculate the discount and store the result in a variable.
 
 [/hint]
 
 [hint]
 
-Subtract the discount from the total price:
-total -= discount
-
+Subtract the discount from the total price.
 
 [/hint]
 [hint]
