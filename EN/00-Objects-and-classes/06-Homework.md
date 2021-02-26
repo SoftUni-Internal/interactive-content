@@ -34,7 +34,7 @@ In the end print all the **listed employees** in the following format:
 **Name:** \{**employeeName**\} **-- Personal Number:** \{**personalNum**\}
 
 
-# Example
+# Example One
 
 | **Input** | **Output** |
 | --- | --- |
@@ -42,12 +42,38 @@ In the end print all the **listed employees** in the following format:
 || Name\: Adnaan Buckley \-\- Personal Number\: 14 |
 || Name\: Juan Peterson \-\- Personal Number\: 13 |
 ||Name\: Brendan Villarreal \-\- Personal Number\: 18|
+
+# Example Two
+
+| **Input** | **Output** |
+| --- | --- |
 | employees(['Drew Owen', 'Tommy Lee', 'Denise Jackson']) | Name\: Drew Owen \-\- Personal Number\: 9 |
 || Name\: Tommy Lee \-\- Personal Number\: 9 |
 || Name\: Denise Jackson \-\- Personal Number\: 14 |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+employees(['Silas Butler','Adnaan Buckley','Juan Peterson','Brendan Villarreal'])
+[/input]
+[output]
+Name\: Silas Butler \-\- Personal Number\: 12
+Name\: Adnaan Buckley \-\- Personal Number\: 14
+Name\: Juan Peterson \-\- Personal Number\: 13
+Name\: Brendan Villarreal \-\- Personal Number\: 18
+[/output]
+[/test]
+[test open]
+[input]
+employees(['Drew Owen', 'Tommy Lee', 'Denise Jackson'])
+[/input]
+[output]
+Name\: Drew Owen \-\- Personal Number\: 9
+Name\: Tommy Lee \-\- Personal Number\: 9
+Name\: Denise Jackson \-\- Personal Number\: 14
+[/output]
+[/test]
 [test]
 [input]
 employees(['Kiril Kirilov', 'Peter Petrov'])
@@ -116,7 +142,7 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-You're tasked to create and print objects from a text table. 
+You are tasked to create and print objects from a text table. 
 
 You will receive the input as an array of strings, where each string represents a table row, with values on the row separated by pipes **|** and spaces.
 
@@ -130,16 +156,40 @@ The output should be objects.
 
 Latitude and longitude must be parsed to numbers and formatted to the second decimal point.
 
-# Example
+# Example One
+
 | **Input** | **Output** |
 | --- | --- |
-| towns(['Bucuresti \| 42.696552 \| 23.32601','Beijing \| 39.913818 \| 116.363625']) | `{ town: 'Bucuresti', latitude: '42.70', longitude: '23.33' }` |
-| | `{ town: 'Beijing', latitude: '39.91', longitude: '116.36' }` |
-| towns(['Barcelona \| 41.390205 \| 2.154007', 'Paris \|	48.864716 \| 2.349014']) | `{ town: 'Barcelona', latitude: '41.40', longitude: '2.15' }` |
-|| `{ town: 'Paris', latitude: '48.86', longitude: '2.35' }`
+| towns(['Bucuresti \| 42.696552 \| 23.32601','Beijing \| 39.913818 \| 116.363625']) | \{ town: 'Bucuresti', latitude: '42.70', longitude: '23.33' \} |
+| | \{ town: 'Beijing', latitude: '39.91', longitude: '116.36' \} |
+
+# Example Two
+
+| **Input** | **Output** |
+| --- | --- |
+| towns(['Barcelona \| 41.390205 \| 2.154007', 'Paris \| 48.864716 \| 2.349014']) | \{ town: 'Barcelona', latitude: '41.40', longitude: '2.15' \} |
+|| \{ town: 'Paris', latitude: '48.86', longitude: '2.35' \}|
 
 [/task-description]
 [tests]
+[test open]
+[input]
+towns(['Bucuresti \| 42.696552 \| 23.32601','Beijing \| 39.913818 \| 116.363625'])
+[/input]
+[output]
+\{ town: 'Bucuresti', latitude: '42.70', longitude: '23.33' \}
+\{ town: 'Beijing', latitude: '39.91', longitude: '116.36' \}
+[/output]
+[/test]
+[test open]
+[input]
+towns(['Barcelona \| 41.390205 \| 2.154007', 'Paris \| 48.864716 \| 2.349014'])
+[/input]
+[output]
+\{ town: 'Barcelona', latitude: '41.40', longitude: '2.15' \}
+\{ town: 'Paris', latitude: '48.86', longitude: '2.35' \}
+[/output]
+[/test]
 [test]
 [input]
 towns(['jdk \| 156.45 \| 12.5645', 'hjk \| 32.556 \| 134.824', 'io \| 87.65 \| 14.929', 'op \| 44.76 \| 184.28'])
@@ -233,12 +283,20 @@ At the end print all the movies that have all the info (if the movie has no dire
 
 | **Input** | **Output** |
 | --- | --- |
-| movies(['addMovie Fast and Furious','addMovie Godfather','Inception directedBy Christopher Nolan','Godfather directedBy Francis Ford Coppola','Godfather onDate 29.07.2018','Fast and Furious onDate 30.07.2018','Batman onDate 01.08.2018','Fast and Furious directedBy Rob Cohen']) | `{"name":"Fast and Furious","date":"30.07.2018","director":"Rob Cohen"}`|
-| | `{"name":"Godfather","director":"Francis Ford Coppola","date":"29.07.2018"}` |
+| movies(['addMovie Fast and Furious','addMovie Godfather','Inception directedBy Christopher Nolan','Godfather directedBy Francis Ford Coppola','Godfather onDate 29.07.2018','Fast and Furious onDate 30.07.2018','Batman onDate 01.08.2018','Fast and Furious directedBy Rob Cohen']) | \{"name":"Fast and Furious","date":"30.07.2018","director":"Rob Cohen"\}|
+| | \{"name":"Godfather","director":"Francis Ford Coppola","date":"29.07.2018"\} |
 
 
 [/task-description]
 [tests]
+[test open]
+[input]
+movies(['addMovie Fast and Furious','addMovie Godfather','Inception directedBy Christopher Nolan','Godfather directedBy Francis Ford Coppola','Godfather onDate 29.07.2018','Fast and Furious onDate 30.07.2018','Batman onDate 01.08.2018','Fast and Furious directedBy Rob Cohen'])
+[/input]
+[output]
+\{"name":"Fast and Furious","date":"30.07.2018","director":"Rob Cohen"\}
+\{"name":"Godfather","director":"Francis Ford Coppola","date":"29.07.2018"\}
+[/output]
 [test]
 [input]
 movies(['addMovie a', 'addMovie b', 'a directedBy j', 'b directedBy o', 'b onDate 12.34.1244', 'a onDate 30.07.2010', 'addMovie c', '', 'c directedBy o', 'c onDate 12.01.1998'])
@@ -336,18 +394,33 @@ The data must be in the following format for each hero:
 
 | **Input** | **Output** |
 | --- | --- |
-| inventory(["Isacc / 25 / Apple, GravityGun","Derek / 12 / BarrelVest, DestructionSword","Hes / 1 / Desolator, Sentinel, Antara"]) | `Hero: Hes` |
-| | `level => 1` |
-| | `items => Antara, Desolator, Sentinel` |
-| | `Hero: Derek` |
-| | `level => 12` |
-| | `items => BarrelVest, DestructionSword` |
-| | `Hero: Isacc` |
-| | `level => 25` |
-| | `items => Apple, GravityGun` |
+| inventory(["Isacc / 25 / Apple, GravityGun","Derek / 12 / BarrelVest, DestructionSword","Hes / 1 / Desolator, Sentinel, Antara"]) | Hero: Hes |
+| | level \=\> 1 |
+| | items \=\> Antara, Desolator, Sentinel |
+| | Hero: Derek |
+| | level \=\> 12|
+| | items \=\> BarrelVest, DestructionSword|
+| | Hero: Isacc |
+| | level \=\> 25 |
+| | items \=\> Apple, GravityGun |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+inventory(["Isacc / 25 / Apple, GravityGun","Derek / 12 / BarrelVest, DestructionSword","Hes / 1 / Desolator, Sentinel, Antara"])
+[/input]
+[output]
+ Hero: Hes
+level \=\> 1
+items \=\> Antara, Desolator, Sentinel
+Hero: Derek
+level \=\> 12
+items \=\> BarrelVest, DestructionSword
+Hero: Isacc
+level \=\> 25
+items \=\> Apple, GravityGun
+[/output]
 [test]
 [input]
 inventory(['a / 10 / e, n, d, c, f', 'k / 13 / l, m', 'a / 18 / f, e, w'])
@@ -491,6 +564,17 @@ Do not forget to sort the content **alphabetically** by the terms as in real dic
 
 [/task-description]
 [tests]
+[test open]
+[input]
+dictionary(['\{"Coffee":"A hot drink made from the roasted and ground seeds (coffee beans) of a tropical shrub."\}','\{"Bus":"A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare."\}','\{"Boiler":"A fuel-burning apparatus or container for heating water."\}','\{"Tape":"A narrow strip of material, typically used to hold or fasten something."\}','\{"Microphone":"An instrument for converting sound waves into electrical energy variations which may then be amplified, transmitted, or recorded."\}'])
+[/input]
+[output]
+Term\: Boiler \=\> Definition\: A fuel\-burning apparatus or container for heating water.
+Term\: Bus \=\> Definition\: A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare.
+Term\: Coffee \=\> Definition\: A hot drink made from the roasted and ground seeds \(coffee beans\) of a tropical shrub.
+Term\: Microphone \=\> Definition\: An instrument for converting sound waves into electrical energy variations which may then be amplified, transmitted, or recorded.
+Term\: Tape \=\> Definition\: A narrow strip of material, typically used to hold or fasten something.
+[/output]
 [test]
 [input]
 dictionary(['{"bb":"fghfhgfghfghfhg."}', '{"ad":"gyuguy gyu guy guy gyu guy guyguguhvhv"}', '{"ab":"vyvgvgh vgh vty vtyv ytv yt vty vyt."}'])
@@ -586,19 +670,53 @@ and the the last element will be Type List \/ **all**.
 
 Print only the names of the songs which are from that Type List \/ All songs. 
 
-# Examples
+# Examples One
 
 | **Input** | **Output** |
 | --- | --- |
 | songs([3,'favourite_DownTown_3:14','favourite_Kiss_4:16','favourite_Smooth Criminal_4:01','favourite']) | DownTown |
 | | Kiss |
 | | Smooth Criminal |
+
+# Example Two
+
+| **Input** | **Output** |
+| --- | --- |
 | songs([4,'favourite_DownTown_3:14','listenLater_Andalouse_3:24','favourite_In To The Night_3:58','favourite_Live It Up_3:48','listenLater']) | Andalouse |
+
+# Example Three
+
+| **Input** | **Output** |
+| --- | --- |
 | songs([2,'like_Replay_3:15', 'ban_Photoshop_3:48','all']) | Replay |
 | | Photoshop |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+songs([3,'favourite_DownTown_3:14','favourite_Kiss_4:16','favourite_Smooth Criminal_4:01','favourite'])
+[/input]
+[output]
+DownTown
+Kiss
+Smooth Criminal
+[/output]
+[test open]
+[input]
+songs([4,'favourite_DownTown_3:14','listenLater_Andalouse_3:24','favourite_In To The Night_3:58','favourite_Live It Up_3:48','listenLater'])
+[/input]
+[output]
+Andalouse
+[/output]
+[test open]
+[input]
+songs([2,'like_Replay_3:15', 'ban_Photoshop_3:48','all'])
+[/input]
+[output]
+Replay
+Photoshop
+[/output]
 [test]
 [input]
 songs([3, 'favourite_immaterial_3:24', 'ban_party_4:45', 'like_smile_4:25', 'like'])
