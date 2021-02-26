@@ -306,6 +306,15 @@ function solve(input){
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Description
@@ -339,7 +348,7 @@ You can use the following RegEx properties to help with the matching:
 [tests]
 [test]
 [input]
-\+359 2 222 2222\,359\-2\-222\-2222\, \+359\/2\/222\/2222\, \+359\-2 222 2222 \+359 2\-222\-2222\, \+359\-2\-222\-222\, \+359\-2\-222\-22222 \+359\-2\-222\-2222
+solve(['\+359 2 222 2222\,359\-2\-222\-2222\, \+359\/2\/222\/2222\, \+359\-2 222 2222 \+359 2\-222\-2222\, \+359\-2\-222\-222\, \+359\-2\-222\-22222 \+359\-2\-222\-2222'])
 [/input]
 [output]
 \+359 2 222 2222\, \+359\-2\-222\-2222
