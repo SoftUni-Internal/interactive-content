@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 # Problem: Listy Iterator
-[code-task title="Listy Iterator" taskId="9a6d5aae-9c95-4829-a067-f76b9213d27a" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Listy Iterator" taskId="oop-basics-java-iterators-and-comparators-Listy-Iterator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -16,7 +16,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a `class ListyIterator`.
+Create a class `ListyIterator`.
 
 It should receive the collection of **Strings** which it will iterate, through its constructor.
 
@@ -24,16 +24,20 @@ You should store the elements in a **List**.
 
 The class should have three main functions:
 
-- `Move` - should move an internal **index** position to the next index in the list, the method should return **true** if it successfully moved and **false** if there is no next index.
+- `Move` - should move an internal **index** position to the next index in the list, the method should return **true** if it successfully moved and **false** if there is no next index
 
-- `HasNext` - should return **true** if there is a next index and **false** if the index is already at the **last** element of the list.
-- `Print` - should **print** the element at the current internal index, calling Print on a collection without elements should **throw** an appropriate **exception** with the message "**Invalid Operation!**".
+- `HasNext` - should return **true** if there is a next index and **false** if the index is already at the **last** element of the list
 
-By default, the internal index should be pointing to **the zero index** of the List. Your program should support the following commands:
+- `Print` - should **print** the element at the current internal index
+    - calling `Print` on a collection without elements should **throw** an **exception** with the message "**Invalid Operation!**"
+
+By default, the internal index should be pointing to **the zero index** of the List. 
+
+Your program should support the following commands:
 
 | **Command** | **Return Type** | **Description** |
 | --- | --- | --- |
-| Create {e1 e2 …} | void | Creates a ListyIterator from the specified collection. In case of a Create command without any elements, you should create a ListyIterator with an empty collection. |
+| Create {e1 e2 …} | void | Creates a ListyIterator from the specified collection. In the case of a Create command without any elements, you should create a ListyIterator with an empty collection. |
 | Move | boolean | This command should move the internal index to the next index. |
 | Print | void | This command should print the element at the current internal index. |
 | HasNext | boolean | Returns whether the collection has the next element. |
@@ -41,20 +45,29 @@ By default, the internal index should be pointing to **the zero index** of the L
 
 ## Input
 
-Input will come from the console as **lines** of commands. The first line will **always** be **Create** command in the input. The last command received will **always** be `END`.
+Input will come from the console as **lines** of commands.
+The first line will **always** be **Create** command in the input. 
+The last command received will **always** be `END`.
 
 ## Output
 
-For every command from the input (with the exception of the **END** and **Create** commands) print the result of that command on the console, each on a **new line**. In case of **Move** or **HasNext** commands print the **returned value** of the method, in case of a **Print** command you don't have to do anything additional as the method itself should already print on the console. Your program should catch **any exceptions thrown** because of validations (calling Print on an empty collection) and print their messages instead.
+For every command from the input (except for the **END** and **Create** commands) print the result of that command on the console, each on a **new line**. 
+
+In the case of the **Move** or **HasNext** commands, print the **returned value** of the method, in case of a **Print** command you do not have to do anything additional as the method itself should already print on the console. 
+
+Your program should catch **any exceptions thrown** because of validations (calling Print on an empty collection) and print their messages instead.
 
 ## Constraints
 
-- There will always be only **one Create** command and it will always be the first command passed.
-- The number of commands received will be **between** [1 ... 100].
-- The last command will always be the `END` command.
+- There will always be only **one Create** command and it will always be the first command passed
+- The number of commands received will be **between** [1 ... 100]
+- The last command will always be the `END` command
 
 
-## Examples
+# Examples
+
+## Example 1
+
 | **Input** | **Output** |
 | --- | --- |
 | Create | Invalid Operation! |
@@ -236,7 +249,7 @@ END
 
 [slide hideTitle]
 # Problem: Collection
-[code-task title="Collection" taskId="d1be3bcc-1298-496e-8add-f13ce702bfe8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Collection" taskId="oop-basics-java-iterators-and-comparators-Collection" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -257,24 +270,28 @@ Implement **all** methods desired by the interface manually.
 Add a new method to the class `PrintAll()`, the method should use `foreach` on the collection and print all elements on a **single line** separated by a space.
 
 ## Input
-Input will come from the console as **lines** of commands. The first line will always be the `Create` command. 
+Input will come from the console as **lines** of commands. 
+
+The first line will always be the `Create` command. 
 
 The **last** command received will always be the `END` command.
 
 ## Output
 For every command from the input (with the exception of the `END` and `Create` commands) print the result of that command on the console, each on a **new line**. 
 
-In the case of `Move` or `HasNext` commands print the returned value of the method, in case of a `Print` command you don't have to do anything additional as the method itself should already print on the console. 
+In the case of `Move` or `HasNext` commands print the returned value of the method, in case of a `Print` command you do not have to do anything additional as the method itself should already print on the console. 
 
 In the case of a `PrintAll` command, you should print all elements on a single line **separated by spaces**. Your program should catch **any exceptions** thrown because of validations and print their messages instead.
 
 ## Constraints
-- **Do not use the built-in iterators!**
-- There will always be only **one** `Create` **command** and it will **always** be the first command passed.
-- The number of commands received will be **between** [1 ... 100].
-- The **last** command will always be the `END` command.
+- **Do not use the built-in iterators**
+- There will always be only **one** `Create` **command** and it will **always** be the first command passed
+- The number of commands received will be **between** [1 ... 100]
+- The **last** command will always be the `END` command
 
-## Examples
+# Examples
+
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | Create 1 2 3 4 5 | true |
@@ -282,6 +299,8 @@ In the case of a `PrintAll` command, you should print all elements on a single l
 | PrintAll |  |
 | END |  |
 
+
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | Create Steven John Kevin | Steven John Kevin  |
@@ -458,7 +477,7 @@ Steven John Kevin
 
 [slide hideTitle]
 # Problem: Stack Iterator
-[code-task title="Stack Iterator" taskId="881b70cc-b1ca-4ae0-8cc1-1fc25c85cef5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Stack Iterator" taskId="oop-basics-java-iterators-and-comparators-Stack-Iterator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -499,7 +518,7 @@ The input can be only two types `Push` and `Pop`, followed by integers for the `
 
 Each command will come on a separate line.
 
-Format:
+**Format:**
 - `Push {element, secondElement…}`
 - `Pop`
 
@@ -509,12 +528,15 @@ The program should stop when you receive the command `END`.
 Foreach the stack **twice** and print all elements. Each element should be on a **new line**.
 
 ## Constraints
-- The elements in the `Push` command will be **valid** integers **between** [2 ^ -32 ... 2 ^ 32 - 1].
-- The commands will always be **valid** (always be either `Push`, `Pop`, or `END`).
-- There will be no more than **16** elements in the `Push` command.
-- If `Pop` command **could not** be executed as expected (e.g. no elements in the stack), print on the console: `No elements`.
+- The elements in the `Push` command will be **valid** integers **between** [2 ^ -32 ... 2 ^ 32 - 1]
+- The commands will always be **valid** (always be either `Push`, `Pop`, or `END`)
+- There will be no more than **16** elements in the `Push` command
+- If `Pop` command **could not** be executed as expected (e.g. no elements in the stack), print on the console: `No elements`
 
-## Examples
+
+# Examples
+
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | Push 1, 2, 3, 4 | 2 |
@@ -522,6 +544,7 @@ Foreach the stack **twice** and print all elements. Each element should be on a 
 | Pop | 2 |
 | END | 1 |
 
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | Push 1, 2, 3, 4  | 1 |
@@ -674,7 +697,7 @@ No elements
 
 [slide hideTitle]
 # Program: Froggy
-[code-task title="Froggy" taskId="1d93d93e-0062-46f0-8a20-acf10598a4b6" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Froggy" taskId="oop-basics-java-iterators-and-comparators-Froggy" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -726,7 +749,7 @@ When you receive `END`, the input is over.
 
 The output should be print on a **single** line.
 
-Format:
+**Format:**
 
 `{number}, {second number}, {third number} ...`
 
@@ -734,12 +757,15 @@ Format:
 - **Lake's** numbers will be **valid** integers in the **range** [2 ^ -32 ... 2 ^ 32 - 1]
 - The command will always be **valid** - `END`
 
-## Examples
+# Examples
+
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | 1, 2, 3, 4, 5, 6, 7, 8 | 1, 3, 5, 7, 2, 4, 6, 8 |
 | END |  |
 
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | 1, 2, 3 | 1, 3, 2 |
@@ -826,7 +852,7 @@ END
 
 [slide hideTitle]
 # Problem: Comparing Objects
-[code-task title="Comparing Objects" taskId="ca960ad8-04a2-484b-a743-8d395d7c8ebb" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Comparing Objects" taskId="oop-basics-java-iterators-and-comparators-Comparing-Objects" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -840,17 +866,15 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-There is a Comparable interface but probably you already know.
-
-Your task is simple.
-
-Create a **Class Person**.
+Create a **class** `Person`.
 
 Each person should have **name**, **age** and **town**.
 
+As you may know, there is a built-in Comparable interface.
+
 You should implement the interface - `Comparable` and try to override the `compareTo` method.
 
-When you compare two persons, first you should compare their **names**, after that - their **age** and last but not at least - compare their **town**.
+When you compare two people, first you should compare their **names**, after that - their **age** and last but not at least - compare their **town**.
 
 
 ## Input
@@ -858,9 +882,9 @@ On single lines, you will be given people in format:
 
 `{name} {age} {town}`
 
-Collect them till you receive `END`
+Collect them until you receive `END`.
 
-After that, you will receive an integer **N** - the **Nth** person in your collection.
+After that, you will receive an integer **N** - the **N**\-th person in your collection.
 
 ## Output
 On the single output line, you should bring statistics, how many people are **equal** to the **Nth person**, how many people are **not** equal to this person, and the **total** people in your collection.
@@ -870,11 +894,13 @@ Format:
 `{number of equal people} {number of not equal people} {total number of people}`
 
 ## Constraints
-- Names, ages and addresses will be **valid.**
+- Names, ages, and addresses will be **valid**
 - Input number will be always а **valid** integer in **range** [2 ... 100]
 - If there are no equal people print: `No matches`
 
-## Examples
+# Examples
+
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | Peter 22 Venice | No matches |
@@ -882,6 +908,7 @@ Format:
 | END |  |
 | 2 |  |
 
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | John 22 Miami | 2 1 3 |
@@ -980,7 +1007,7 @@ No matches
 
 [slide hideTitle]
 # Problem: Strategy Pattern
-[code-task title="Strategy Pattern" taskId="34db6cd1-ca97-4cdd-b4d1-72e88985f539" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Strategy Pattern" taskId="oop-basics-java-iterators-and-comparators-Strategy-Pattern" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -996,7 +1023,7 @@ public class Main {
 ## Description
 An interesting pattern you may have heard of is the Strategy Pattern.
 
-If we have multiple ways to do a task (let's say sort a collection) it allows the client to choose the way that most fits his needs.
+If we have multiple ways to do a task (let us say sort a collection) it allows the client to choose the way that most fits his needs.
 
 A famous implementation of the pattern in Java is the `Collections.sort()` method that takes a **Comparator**.
 
@@ -1025,11 +1052,13 @@ Add the people from the input into **both** sets.
 Start with the set that implements the name comparator.
 
 ## Constraints
-- A person's name will be a string that contains **only** alphanumerical characters with a length **between** [1 ... 50] symbols.
-- A person's age will be a **positive** integer **between** [1 ... 100].
-- The number of people **N** will be a **positive** integer **between** [0 ... 100].
+- A person's name will be a string that contains **only** alphanumerical characters with a length **between** [1 ... 50] symbols
+- A person's age will be a **positive** integer **between** [1 ... 100]
+- The number of people **N** will be a **positive** integer **between** [0 ... 100]
 
-## Examples
+# Examples
+
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | 3 | John 100 |
@@ -1039,6 +1068,7 @@ Start with the set that implements the name comparator.
 |  | Peter 20 |
 |  | John 100 |
 
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | 5 | aria 33 |
@@ -1179,7 +1209,7 @@ aria 33
 
 [slide hideTitle]
 # Problem: Equality Logic
-[code-task title="Equality Logic" taskId="153a6dbe-9071-4032-838c-08fe0abc284c" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Equality Logic" taskId="oop-basics-java-iterators-and-comparators-Equality-Logic" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1217,18 +1247,20 @@ On the first, you should print the **size** of the `TreeSet` and on the second -
 
 ## Constraints
 
-- A person's name will be a string that contains **only** alphanumerical characters with a length **between** [1 ... 50] symbols.
-- A person's age will be a **positive** integer **between** [1 ... 100].
-- The number of people **N** will be a positive integer **between** [0 ... 100].
+- A person's name will be a string that contains **only** alphanumerical characters with a length **between** [1 ... 50] symbols
+- A person's age will be a **positive** integer **between** [1 ... 100]
+- The number of people **N** will be a positive integer **between** [0 ... 100]
 
 ## Hint
 
 You should override **both** the equals and **hashCode** methods. 
 
-You can check online for implementation of hashCode - it doesn't have to be perfect, but it should be good enough to produce the same hash code for objects with the **same** name and age, and different enough hash codes for objects with **different** name and/or age.
+You can check online for implementation of hashCode - it does not have to be perfect, but it should be good enough to produce the same hash code for objects with the **same** name and age, and different enough hash codes for objects with **different** name and/or age.
 
 
-## Examples
+# Examples
+
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | 3 | John 100 |
@@ -1238,6 +1270,7 @@ You can check online for implementation of hashCode - it doesn't have to be perf
 |  | Peter 20 |
 |  | John 100 |
 
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | 5 | aria 33 |
@@ -1372,7 +1405,7 @@ I 3
 
 [slide hideTitle]
 # Problem: Pet Clinics
-[code-task title="Pet Clinics" taskId="2a998846-89d5-4c6a-a557-c46c93631d52" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Pet Clinics" taskId="oop-basics-java-iterators-and-comparators-Pet-Clinics" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1386,16 +1419,22 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You are a young and ambitious owner of a Pet Clinics Holding.
+***You are a young and ambitious owner of a Pet Clinics Holding.***
 
-You ask your employees to create a program which will store all information about the pets in the database.
+You ask your employees to create a program that will store all information about the pets in the database.
 
 Each pet should have **name**, **age** and **kind**.
 
 
-Your application should support a few basic operations such as **creating** a pet, **creating** a clinic, **adding** a pet to a clinic, **releasing** a pet from a clinic, **printing** information about a **specific** room in a clinic or printing information about **all** rooms in a clinic.
+Your application should support a few basic operations, such as: 
 
-Clinics should have an **odd** number of rooms, attempting to create a clinic with an **even** number of should **fail** and **throw** an appropriate **exception**.
+- **Creating** a pet
+- **Creating** a clinic
+- **Adding** a pet to a clinic
+- **Releasing** a pet from a clinic
+- **Printing** information about a **specific** room in a clinic or printing information about **all** rooms in a clinic
+
+Clinics should have an **odd** number of rooms, attempting to create a clinic with an **even** number, or should **fail** and **throw** an appropriate **exception**.
 
 ## Accommodation Order
 
@@ -1435,17 +1474,19 @@ When a `Print` command for a clinic is called it should print **all** rooms in t
 
 | **Command** | **Return Type** | **Description** |
 | --- | --- | --- |
-| `Create Pet {name} {age} {kind}` | void | Creates a pet with the specified name and age (true if the operation is successful and false if it isn't) |
+| `Create Pet {name} {age} {kind}` | void | Creates a pet with the specified name and age (true if the operation is successful and false if it is not) |
 | `Create Clinic {name} {rooms}` | void | Creates a Clinic with the specified name and number of rooms (if the rooms are not odd, throws an exception) |
-| `Add {pet's name} {clinic's name}` | boolean | This command should add the given pet in the specified clinic (true if the operation is successful and false if it isn't) |
-| `Release {clinic's name}` | boolean | This command should release an animal from the specified clinic (true if the operation is successful and false if it isn't) |
-| `HasEmptyRooms {clinic's name}` | boolean | Returns whether the clinic has any empty rooms (true if it has and false if it doesn't) |
-| `Print {clinic's name}` | void | This command should print each room in the specified clinic, ordered by room number. |
-| `Print {clinic's name} {room}` | void | Prints on a single line the content of the specified room. |
+| `Add {pet's name} {clinic's name}` | boolean | This command should add the given pet in the specified clinic (true if the operation is successful and false if it is not) |
+| `Release {clinic's name}` | boolean | This command should release an animal from the specified clinic (true if the operation is successful and false if it is not) |
+| `HasEmptyRooms {clinic's name}` | boolean | Returns whether the clinic has any empty rooms (true if it has and false if it does not) |
+| `Print {clinic's name}` | void | This command should print each room in the specified clinic, ordered by room number |
+| `Print {clinic's name} {room}` | void | Prints on a single line the content of the specified room |
 
 ## Input
 
-On the first line, you will be given an integer **N** - the number of commands you will receive. On each of the next **N** lines, you will receive a command. 
+On the first line, you will be given an integer **N** - the number of commands you will receive.
+
+On each of the next **N** lines, you will receive a command. 
 
 Commands and parameters will always be **correct** ( `Add`, `Release`, `HasEmptyRooms` and `Print` commands will always be passed to **existing** clinics/pets), except for the number of rooms in the **Create Clinic** command which can be any **valid** integer **between 1 and 101**.
 
@@ -1453,7 +1494,7 @@ Commands and parameters will always be **correct** ( `Add`, `Release`, `HasEmpty
 
 For each command with a boolean **return** type received through the input, you should print its return value on a **separate** line. 
 
-In case of a method **throwing** an **exception** (such as trying to create a clinic with even number of rooms or trying to add a pet that doesn't exist) you should **catch** the exceptions and instead, print `Invalid Operation!`. 
+In case of a method **throwing** an **exception** (such as trying to create a clinic with an even number of rooms or trying to add a pet that does not exist) you should **catch** the exceptions and instead, print `Invalid Operation!`. 
 
 The `Print` command with a clinic and a room should print information for that room in the format **specified** above. 
 
@@ -1461,14 +1502,16 @@ The `Print` command with only a clinic should print information **for each** roo
 
 ## Constraints
 
-- The number of commands **N** - will be a valid integer **between** [1 ... 1000], no need to check it explicitly.
-- **Pet names** , **Clinic names** , and **kind** will be strings consisting only of alphabetical characters with length **between** [1 ... 50] characters.
-- **Pet age** will be a positive integer **between** [1 ... 100].
-- **Clinic rooms** will be a positive integer **between** [1 ... 101].
-- **Room number** in a **Print** command will always be **between 1** and the **number of rooms** in that Clinic.
-- Input will consist **only** of **correct commands** and they will **always** have the correct type of parameters.
+- The number of commands **N** - will be a valid integer **between** [1 ... 1000], no need to check it explicitly
+- **Pet names**, **Clinic names**, and **kind** will be strings consisting only of alphabetical characters with length **between** [1 ... 50] characters
+- **Pet age** will be a positive integer **between** [1 ... 100]
+- **Clinic rooms** will be a positive integer **between** [1 ... 101]
+- **Room number** in a **Print** command will always be **between 1** and the **number of rooms** in that Clinic
+- Input will consist **only** of **correct commands** and they will **always** have the correct type of parameters
 
-## Examples
+# Examples
+
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | 9 | Invalid Operation! |
@@ -1482,6 +1525,7 @@ The `Print` command with only a clinic should print information **for each** roo
 | Create Pet Shabby 2 Dog |  |
 | Add Shabby PetClinic |  |
 
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | 8 | true |
@@ -1684,7 +1728,7 @@ Elephant 4 Elephant
 
 [slide hideTitle]
 # Problem: Linked List Traversal
-[code-task title="Linked List Traversal" taskId="265b381e-c557-4cd1-ab88-2253f8722edb" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Linked List Traversal" taskId="oop-basics-java-iterators-and-comparators-Linked-List-Traversal" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1698,9 +1742,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You need to write your simplified implementation of a generic Linked List which has an Iterator.
+You need to write your simplified implementation of a generic Linked List that has an Iterator.
 
-The list should support the `Add` and `Remove` operations, should reveal the number of elements it has with a `getSize` function, and should have an implemented iterator (should be **foreachable**).
+The list should support the `Add` and `Remove` operations, should reveal the number of elements it has with a `getSize` function and should have an implemented iterator (should be `foreach`-able).
 
 The `add` method should add the new element at the end of the collection.
 
@@ -1717,8 +1761,9 @@ On the first line of input, you will receive a number **N**.
 
 On each of the next **N** lines you will receive a command in one of the following formats:
 
-- `Add {number}` - adds a number to your linked list.
-- `Remove {number}` - removes the first occurrence of the number from the linked list. If there is no such element this command leaves the collection **unchanged**.
+- `Add {number}` - adds a number to your linked list
+- `Remove {number}` - removes the first occurrence of the number from the linked list
+    - if there is no such element this command leaves the collection **unchanged**
 
 ## Output
 
@@ -1730,15 +1775,17 @@ On the next lines, you should print **all elements** of the collection by callin
 
 ## Constraints
 
-- All numbers in the input will be **valid** integers **between** [2 ^ -32 ... 2 ^ 32 - 1].
-- All commands received through the input will be **valid** (will be only `Add` or `Remove`).
-- The number **N** will be a positive integer **between** [1 ... 500].
+- All numbers in the input will be **valid** integers **between** [2 ^ -32 ... 2 ^ 32 - 1]
+- All commands received through the input will be **valid** (will be only `Add` or `Remove`)
+- The number **N** will be a positive integer **between** [1 ... 500]
 
 ## Hint
 
 You can use the Linked List from your **Workshop**.
 
-## Examples
+# Examples
+
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | 5 | 2 |
@@ -1748,6 +1795,7 @@ You can use the Linked List from your **Workshop**.
 | Remove 7 |  |
 | Add 20 |  |
 
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | 6 | 4 |
@@ -1879,10 +1927,4 @@ Add 0
 [/test]
 [/tests]
 [/code-task]
-[/slide]
-
-[slide]
-# Homework Results
-[tasks-results/]
-
 [/slide]
