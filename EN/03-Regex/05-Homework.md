@@ -501,11 +501,11 @@ When you receive "end of shift" print the total amount of money for the day, rou
 
 | **Input** | **Output** |
 | --- | --- |
-| income(['%George%<Croissant>|2|10.3$', '%Peter%<Gum>|1|1.3$', '%Maria%<Cola>|1|2.4$', 'end of shift']) | George\: Croissant \- 20\.60 |
+| income(['%George%<Croissant>\|2\|10.3$', '%Peter%<Gum>\|1\|1.3$', '%Maria%<Cola>\|1\|2.4$', 'end of shift']) | George\: Croissant \- 20\.60 |
 | | Peter\: Gum \- 1\.30 |
 | | Maria\: Cola \- 2\.40 |
 | | Total income\: 24\.30 |
-| income(['%InvalidName%<Croissant>|2|10.3$', '%Peter%<Gum>1.3$', '%Maria%<Cola>|1|2.4', '%Valid%<Valid>valid|10|valid20$', 'end of shift']) | Valid\: Valid \- 200\.00 |
+| income(['%InvalidName%<Croissant>\|2\|10.3$', '%Peter%<Gum>1.3$', '%Maria%<Cola>\|1\|2.4', '%Valid%<Valid>valid\|10\|valid20$', 'end of shift']) | Valid\: Valid \- 200\.00 |
 | | Total income\: 200\.00 |
 
 [/task-description]
