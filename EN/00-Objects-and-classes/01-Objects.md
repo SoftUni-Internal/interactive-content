@@ -165,8 +165,8 @@ The input comes as 3 separate **strings** in the following order: **firstName**,
 # Example
   | **Input** | **Output** |
 | --- | --- |
-| personInfo('Peter','Pan','20') | \{firstName: 'Peter', lastName: 'Pan', age: '20'\} |
-| personInfo('Kellie', 'Ellison', '33') | \{firstName: 'Kellie', lastName: 'Ellison', age: '33'\} |
+| personInfo('Peter','Pan','20') | \{ firstName: 'Peter', lastName: 'Pan', age: '20' \} |
+| personInfo('Kellie', 'Ellison', '33') | \{ firstName: 'Kellie', lastName: 'Ellison', age: '33' \} |
 
 [/task-description]
 [tests]
@@ -175,7 +175,7 @@ The input comes as 3 separate **strings** in the following order: **firstName**,
 personInfo('Peter', 'Pan', '20')
 [/input]
 [output]
-\{firstName: 'Peter', lastName: 'Pan', age: '20'\}
+\{ firstName: 'Peter', lastName: 'Pan', age: '20' \}
 [/output]
 [/test]
 [test open]
@@ -183,7 +183,7 @@ personInfo('Peter', 'Pan', '20')
 personInfo('Kellie', 'Ellison', '33')
 [/input]
 [output]
-\}firstName: 'Kellie', lastName: 'Ellison', age: '33'\}
+\{ firstName: 'Kellie', lastName: 'Ellison', age: '33' \}
 [/output]
 [/test]
 [test]
@@ -191,7 +191,7 @@ personInfo('Kellie', 'Ellison', '33')
 personInfo('Johny', 'Tony', '15')
 [/input]
 [output]
-\{firstName: 'Johny', lastName: 'Tony', age: '15'\}
+\{ firstName: 'Johny', lastName: 'Tony', age: '15' \}
 [/output]
 [/test]
 [test]
@@ -199,7 +199,7 @@ personInfo('Johny', 'Tony', '15')
 personInfo('A', 'b', '2')
 [/input]
 [output]
-\{firstName: 'A', lastName: 'b', age: '2'\}
+\{ firstName: 'A', lastName: 'b', age: '2' \}
 [/output]
 [/test]
 [test]
@@ -207,7 +207,7 @@ personInfo('A', 'b', '2')
 personInfo('CC', 'BB', '50')
 [/input]
 [output]
-\{firstName: 'CC', lastName: 'BB', age: '50'\}
+\{ firstName: 'CC', lastName: 'BB', age: '50' \}
 [/output]
 [/test]
 [test]
@@ -215,7 +215,7 @@ personInfo('CC', 'BB', '50')
 personInfo('Z', 'X', '41')
 [/input]
 [output]
-\{firstName: 'Z', lastName: 'X', age: '41'\}
+\{ firstName: 'Z', lastName: 'X', age: '41' \}
 [/output]
 [/test]
 [test]
@@ -223,7 +223,7 @@ personInfo('Z', 'X', '41')
 personInfo('JO', 'PA', '22')
 [/input]
 [output]
-\{firstName: 'JO', lastName: 'PA', age: '22'\}
+\{ firstName: 'JO', lastName: 'PA', age: '22' \}
 [/output]
 [/test]
 [/tests]
@@ -257,9 +257,7 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-You will receive an **array** containing five elements. 
-
-Create a city **object** which will hold a **city's name**, **area**, **population**, **country** and **postcode**. 
+You will receive an **оbject** containing city information. 
 
 Loop through all the keys and print them with their values in this format:
 
@@ -270,15 +268,18 @@ The input will be in the following order: **name**, **area**, **population**, **
 For more information, see the examples below.
 
 
-# Example
+## Example One
   | **Input** | **Output** |
 | --- | --- |
-| city(['Bucharest', '228', '1830000', 'Romania', '010082'])| name \-\> Bucharest |
+| city(\{ name: 'Bucharest', area: '228', population: '1830000', country: 'Romania', postCode: '010082' \})| name \-\> Bucharest |
 ||area \-\> 228|
 ||population \-\> 1830000|
 ||country \-\> Romania|
 ||postCode \-\> 010082|
-| city(['London', '1572', '9000000', 'England', '533537'])| name \-\> London |
+
+## Example Two
+| **Input** | **Output** |
+| city(\{ name: 'London', area: '1572', population: '9000000', country: 'England', postCode: '533537' \})| name \-\> London |
 ||area \-\> 1572|
 ||population \-\> 9000000|
 ||country \-\> England|
@@ -288,7 +289,7 @@ For more information, see the examples below.
 [tests]
 [test open]
 [input]
-city(['Bucharest', '228', '1830000', 'Romania', '010082'])
+city(\{ name: 'Bucharest', area: '228', population: '1830000', country: 'Romania', postCode: '010082' \})
 [/input]
 [output]
 name -> Bucharest
@@ -298,9 +299,21 @@ country -> Romania
 postCode -> 010082
 [/output]
 [/test]
+[test open]
+[input]
+city(\{ name: 'London', area: '1572', population: '9000000', country: 'England', postCode: '533537' \})
+[/input]
+[output]
+name \-\> London
+area \-\> 1572
+population \-\> 9000000
+country \-\> England
+postCode \-\> 533537
+[/output]
+[/test]
 [test]
 [input]
-city(['hnn', '1848', '354645', 'mklmlk', '1561'])
+city(\{ name: 'hnn', area: '1848', population: '354645', country: 'mklmlk', postCode: '1561' \})
 [/input]
 [output]
 name -> hnn
@@ -312,7 +325,7 @@ postCode -> 1561
 [/test]
 [test]
 [input]
-city(['ii', '44', '189', 'jiji', '484'])
+city(\{name: 'ii', area: '44', population: '189', country: 'jiji', postCode: '484' \})
 [/input]
 [output]
 name -> ii
