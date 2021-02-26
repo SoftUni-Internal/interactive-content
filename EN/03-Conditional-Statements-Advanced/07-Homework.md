@@ -35,6 +35,12 @@ Create a program, which determines if the **input** is a **fruit** or a **vegeta
 |fruitOrVegetable('lemon')| fruit |
 |fruitOrVegetable('carrot')| vegetable |
 
+[hints]
+[hint]
+You can use switch-case expression to solve the problem easier.
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
