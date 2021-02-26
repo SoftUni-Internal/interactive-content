@@ -258,6 +258,12 @@ Create a program, which determines if a a letter is a **vowel** or a **consonant
 |vowelOrConsonant('a')| Vowel |
 |vowelOrConsonant('B')| Consonant |
 
+[hints]
+[hint]
+You can use an "if" statement and check if the letter is a vowel. If it is print the correct output. However, if it isn't, enter the "else" statement and print the appropriate output.
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
