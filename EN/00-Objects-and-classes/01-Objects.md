@@ -279,6 +279,7 @@ For more information, see the examples below.
 
 ## Example Two
 | **Input** | **Output** |
+| --- | --- |
 | city(\{ name: 'London', area: '1572', population: '9000000', country: 'England', postCode: '533537' \})| name \-\> London |
 ||area \-\> 1572|
 ||population \-\> 9000000|

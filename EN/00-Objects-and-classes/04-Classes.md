@@ -130,11 +130,16 @@ It should also have a function named **meow** that will print "\{**cat name**\}*
 
 For each of the strings provided you must create a cat object.
 
-# Example
+# Example One
   | **Input** | **Output** |
 | --- | --- |
 |cats(['Mellow 2', 'Tom 5'])| Mellow, age 2 says Meow|
 ||Tom, age 5 says Meow|
+
+
+# Example Two
+  | **Input** | **Output** |
+| --- | --- |
 |cats(['Millie 3', 'Lola 7'])| Millie, age 3 says Meow|
 ||Lola, age 7 says Meow|
 
