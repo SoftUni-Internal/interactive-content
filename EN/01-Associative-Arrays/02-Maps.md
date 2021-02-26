@@ -199,6 +199,15 @@ function storage(input) {
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Description
@@ -211,24 +220,21 @@ In the end, print all the items and their amount without sorting them.
 
 The input comes as an **array of strings**.
 
-Use a **Map()**.
+Use a "**Map()**" method.
 
 # Example
 
 | **Input** | **Output** |
 | --- | --- |
-| `['tomatoes 10', 'coffee 5', 'olives 100', 'coffee 40']` | tomatoes \-\> 10 |
+| storage(['tomatoes 10', 'coffee 5', 'olives 100', 'coffee 40']) | tomatoes \-\> 10 |
 |                                                          | coffee \-\> 45   |
 |                                                          | olives \-\> 100  |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-tomatoes 10
-coffee 5
-olives 100
-coffee 40
+storage(['tomatoes 10', 'coffee 5', 'olives 100', 'coffee 40'])
 [/input]
 [output]
 tomatoes \-\> 10
@@ -238,10 +244,7 @@ olives \-\> 100
 [/test]
 [test]
 [input]
-tomatoes 50
-tomatoes 61
-ghj 115
-ghj 40
+storage(['tomatoes 50', 'tomatoes 61', 'ghj 115', 'ghj 40'])
 [/input]
 [output]
 tomatoes \-\> 111
@@ -250,10 +253,7 @@ ghj \-\> 155
 [/test]
 [test]
 [input]
-aa 45
-aa 5
-olives 140
-aa 30
+storage(['aa 45', 'aa 5', 'olives 140', 'aa 30'])
 [/input]
 [output]
 aa \-\> 80
@@ -262,10 +262,7 @@ olives \-\> 140
 [/test]
 [test]
 [input]
-jkl 150
-jkl 6
-ohjves 160
-chhee 41
+storage(['jkl 150', 'jkl 6', 'ohjves 160', 'chhee 41'])
 [/input]
 [output]
 jkl \-\> 156
@@ -275,10 +272,7 @@ chhee \-\> 41
 [/test]
 [test]
 [input]
-tomoes 120
-coe 566
-oli 6440
-ee 10
+storage(['tomoes 120', 'coe 566', 'oli 6440', 'ee 10'])
 [/input]
 [output]
 tomoes \-\> 120
@@ -289,10 +283,7 @@ ee \-\> 10
 [/test]
 [test]
 [input]
-tomjjes 1120
-clfee 5
-o;ves 4600
-coknfee 350
+storage(['tomjjes 1120', 'clfee 5', 'o;ves 4600', 'coknfee 350'])
 [/input]
 [output]
 tomjjes \-\> 1120
@@ -357,6 +348,15 @@ function grades(input) {
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Description
@@ -365,7 +365,7 @@ Write a function which stores students with all of their grades.
 
 If a student appears more than once, add the new grades.
 
-In the end print the students sorted by average grade.
+In the end print the students **sorted** by **average grade**.
 
 The input comes as an **array of strings**.
 
@@ -373,18 +373,15 @@ The input comes as an **array of strings**.
 
 | **Input** | **Output** |
 | --- | --- |
-| `['Lilly 4 6 6 5', 'Tim 5 6', 'Tammy 2 4 3', 'Tim 6 6']` | Tammy\: 2\,4\,3    |
+| grades(['Lilly 4 6 6 5', 'Tim 5 6', 'Tammy 2 4 3', 'Tim 6 6']) | Tammy\: 2\,4\,3    |
 |                                                          | Lilly\: 4\,6\,6\,5 |
 |                                                          | Tim\: 5\,6\,6\,6   |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-Lilly 4 6 6 5
-Tim 5 6
-Tammy 2 4 3
-Tim 6 6
+grades(['Lilly 4 6 6 5', 'Tim 5 6', 'Tammy 2 4 3', 'Tim 6 6'])
 [/input]
 [output]
 Tammy\: 2\, 4\, 3
@@ -394,10 +391,7 @@ Tim\: 5\, 6\, 6\, 6
 [/test]
 [test]
 [input]
-ghjg 4 6 6 5
-b 5 6 4
-ghj 2 4 5 3
-jjjjk 6 6 5 5
+grades(['ghjg 4 6 6 5', 'b 5 6 4', 'ghj 2 4 5 3', 'jjjjk 6 6 5 5'])
 [/input]
 [output]
 ghj\: 2\, 4\, 5\, 3
@@ -408,10 +402,7 @@ jjjjk\: 6\, 6\, 5\, 5
 [/test]
 [test]
 [input]
-fgh 4 6 6 5
-fhg 5 6 5 6
-hj 2 4 3
-gg 6 6 6 6
+grades(['fgh 4 6 6 5', 'fhg 5 6 5 6', 'hj 2 4 3', 'gg 6 6 6 6'])
 [/input]
 [output]
 hj\: 2\, 4\, 3
@@ -422,12 +413,7 @@ gg\: 6\, 6\, 6\, 6
 [/test]
 [test]
 [input]
-Lilly 4 6 6 5
-hhj 5 6 4 4 5
-ghj 2 4 3
-ghj 6 6
-fg 5 6 5 6
-dgfd 2 4 3
+grades(['Lilly 4 6 6 5', 'hhj 5 6 4 4 5', 'ghj 2 4 3', 'ghj 6 6', 'fg 5 6 5 6', 'dgfd 2 4 3'])
 [/input]
 [output]
 dgfd\: 2\, 4\, 3
@@ -439,10 +425,7 @@ fg\: 5\, 6\, 5\, 6
 [/test]
 [test]
 [input]
-jjj 4 6 6 5
-kjk 5 6
-ghg 5 5 6 6
-dfdf 2 2 3 4 3
+grades(['jjj 4 6 6 5', 'kjk 5 6', 'ghg 5 5 6 6', 'dfdf 2 2 3 4 3'])
 [/input]
 [output]
 dfdf\: 2\, 2\, 3\, 4\, 3
@@ -453,14 +436,7 @@ ghg\: 5\, 5\, 6\, 6
 [/test]
 [test]
 [input]
-ghj 4 5 6 6 5
-Tghj 5 6 6 5
-fgmy 2 4 2 2
-hgm 6 6 6 3
-Tim 5 6 2 5
-Tammy 2 4 6
-Tim 5 6 6 5
-Tammy 2 4 3 4 4
+grades(['ghj 4 5 6 6 5', 'Tghj 5 6 6 5', 'fgmy 2 4 2 2', 'hgm 6 6 6 3', 'Tim 5 6 2 5', 'Tammy 2 4 6', 'Tim 5 6 6 5', 'Tammy 2 4 3 4 4'])
 [/input]
 [output]
 fgmy\: 2\, 4\, 2\, 2
