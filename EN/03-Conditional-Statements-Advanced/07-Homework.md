@@ -37,7 +37,7 @@ Create a program, which determines if the **input** is a **fruit** or a **vegeta
 
 [hints]
 [hint]
-You can use switch-case expression to solve the problem easier.
+You can use a switch-case expression to solve the problem easier.
 [/hint]
 [/hints]
 
