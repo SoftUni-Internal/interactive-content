@@ -12,33 +12,7 @@ Inside of the method body, we only have the implementation of the comparison log
 
 That approach allows us to implement **multiple sorting sequences**. 
 
-Keep in mind that the Comparator is an external class means that it **won’t affect the original class**.
-
-In the following example, we compare **two Student objects** by student age.
-
-Our AgeComparator class implements **Comparator** of type **Student**.
-
-The `compare()` method takes two Student `(Student st1, Student st2)` objects as arguments.
-
-The implementation is simple, we return:
-
-- A **positive** number if the first student is bigger
-
-- **Negative** in the other case**
-
-- **0 when they are the same**
-
-By using the Comparator, **we could create as many comparators as we need** and used them according to our situation.
-
-```java
-public class AgeComparator implements Comparator<Student> {
-
-    @Override
-    public int compare(Student st1, Student st2) {
-        return st1.age - st2.age;
-    }
-}
-```
+Keep in mind that the Comparator is an external class means that it **will not affect the original class**.
 
 
 [/slide]
@@ -102,6 +76,38 @@ That allows us to later implement the `compareTo()` method by **accepting a Stud
 
 **That would make the implementation a bit hard-to-read** because we **would not be able** to directly access the members of the **Student class**.
 
+
+[/slide]
+
+[slide hideTitle]
+
+# Comparator\<E\> \- Example
+
+In the following example, we compare **two Student objects** by student age.
+
+Our AgeComparator class implements **Comparator** of type **Student**.
+
+The `compare()` method takes two Student `(Student st1, Student st2)` objects as arguments.
+
+The implementation is simple, we return:
+
+- A **positive** number if the first student is bigger
+
+- **Negative** in the other case**
+
+- **0 when they are the same**
+
+By using the Comparator, **we could create as many comparators as we need** and used them according to our situation.
+
+```java
+public class AgeComparator implements Comparator<Student> {
+
+    @Override
+    public int compare(Student st1, Student st2) {
+        return st1.age - st2.age;
+    }
+}
+```
 
 [/slide]
 
