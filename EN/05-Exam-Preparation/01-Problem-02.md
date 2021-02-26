@@ -30,34 +30,36 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-You will receive a string, containing the current items in your inventory, separated by a comma and space \(", "\).
+You will receive a string containing the current items in your inventory.
 
-After that, until receiving "**Craft!**" you will be given different commands.
+The items will be separated by a comma and space \(", "\).
 
-The commands are separated by (" - "):
+After that, until you receive "**Craft!**" you will be given different commands.
 
-* Command "**Collect -** \{**item**\}":
+The commands are separated by (" - ") and can be one of the following:
 
-Receiving this command, you should add the given item to your inventory.
+- "**Collect -** \{**item**\}":
 
-If the item already exists, you should skip this command.
+    - Add the given item to your inventory
 
-* Command "**Drop -** \{**item**\}": 
+    - Skip this command if the item is already in your inventory
 
-You should remove the item from your inventory if you have it.
+- "**Drop -** \{**item**\}": 
 
-* Command "**Combine Items -** \{**oldItem**\}**:**\{**newItem**\}":
+    - Remove the item from your inventory if you have it
 
-You should check if the first item can be found in your inventory, if so, add the new item after the old one.
+- "**Combine Items -** \{**oldItem**\}**:**\{**newItem**\}":
 
-Otherwise, ignore the command.
+    - Check if the first item can be found in your inventory, and if it is, add the new item after the old one
 
-* Command "**Renew -** \{**item**\}":
+    - Otherwise, ignore the command
 
-If the given item exists, you should change its position and put it in the last position of your inventory.
+- "**Renew -** \{**item**\}":
+
+    - If the given item exists, you should change its position and put it in the last position of your inventory
 
 ## Output
-After receiving "**Craft!**", print out all items in your inventory, separated by a comma and space \(", "\).
+After receiving the "**Craft!**" command, print out all the items in your inventory, separated by a comma and space \(", "\).
 
 ## Examples One
 | **Input** | **Output** |
