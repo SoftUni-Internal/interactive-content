@@ -33,8 +33,8 @@ The first parameter is the key and the second parameter is the value:
 
 ```js live
 let map = new Map();
-map.set(1, "one");
-map.set(2, "two");
+map.set(1, 'one');
+map.set(2, 'two');
 console.log(map);
 ```
 
@@ -42,8 +42,8 @@ To get the value of a given key, use the `.get()` method:
 
 ```js live
 let map = new Map();
-map.set(1, "one");
-map.set(2, "two");
+map.set(1, 'one');
+map.set(2, 'two');
 console.log(map.get(2));
 ```
 
@@ -51,8 +51,8 @@ The `.size` accessor property returns the number of elements in a Map object:
 
 ```js live
 let map = new Map();
-map.set(1, "one");
-map.set(2, "two");
+map.set(1, 'one');
+map.set(2, 'two');
 console.log(map.size);
 ```
 [/slide]
@@ -70,8 +70,8 @@ In this case, it is **true**.
 
 ```js live
 let map = new Map();
-map.set(1, "one");
-map.set(2, "two");
+map.set(1, 'one');
+map.set(2, 'two');
 console.log(map.has(1));
 ```
 
@@ -79,8 +79,8 @@ To remove a key-value pair, use the `.delete()` method.
 
 ```js live
 let map = new Map();
-map.set(1, "one");
-map.set(2, "two");
+map.set(1, 'one');
+map.set(2, 'two');
 map.delete(1);
 console.log(map);
 ```
@@ -91,8 +91,8 @@ The output from this example is 0 after clearing out all the elements in the Map
 
 ```js live
 let map = new Map();
-map.set(1, "one");
-map.set(2, "two");
+map.set(1, 'one');
+map.set(2, 'two');
 map.clear();
 console.log(map.size);
 ```
@@ -111,8 +111,8 @@ The output will be an array of arrays `[ [ 1, 'one' ], [ 2, 'two' ] ]`
 
 ```js live
 let map = new Map();
-map.set(1, "one");
-map.set(2, "two");
+map.set(1, 'one');
+map.set(2, 'two');
 let entries = Array.from(map.entries());
 console.log(entries);
 ```

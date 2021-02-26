@@ -78,11 +78,11 @@ Declare an empty object. Then assign values to the keys and finally, iterate thr
 
 ```js live
 let assocArr = {};
-assocArr["one"] = 1;
-assocArr["two"] = 2;
-assocArr["three"] = 3;
+assocArr['one'] = 1;
+assocArr['two'] = 2;
+assocArr['three'] = 3;
 for (let key in assocArr) {
-  console.log(key + " = " + assocArr[key]);
+  console.log(key + ' = ' + assocArr[key]);
 }
 ```
 
@@ -213,7 +213,7 @@ tyuhjk \-\> 0844565344
 
 We can use the following expression to check if a **key** is **present**. 
 
-Use the method `.hasOwnProperty("key")`.
+Use the method `.hasOwnProperty('key')`.
 
 Let us declare an empty object and assign a key to it. Use an `if` statement and the expression from above to see if the key exists.
 
@@ -221,8 +221,8 @@ The result should be "true":
 
 ```js live
 let assocArr = {};
-assocArr.name = "John Smith";
-if (assocArr.hasOwnProperty("name")) {
+assocArr.name = 'John Smith';
+if (assocArr.hasOwnProperty('name')) {
   console.log(true);
 } else{
   console.log(false);
@@ -248,7 +248,7 @@ Try to `console.log()` `assocArr.name` after deleting the `name` property.
 
 ```js live
 let assocArr = {};
-assocArr.name = "John Smith";
+assocArr.name = 'John Smith';
 delete assocArr.name;
 console.log(assocArr.name);
 ```
@@ -267,7 +267,7 @@ On the second iteration of the loop, `key` will be equal to age and `value` will
 
 ```js live
 let assocArr = {};
-assocArr.name = "John Smith";
+assocArr.name = 'John Smith';
 assocArr.age = 28;
 for (let [key, value] of Object.entries(assocArr)) {
   console.log(`${key} -> ${value}`);
@@ -461,7 +461,7 @@ By using the `Object.entries()` method we get an array of arrays.
 See the **example** below:
 
 ```js live
-let phonebook = { Tim: "0876566344", Bill: "0896543112" };
+let phonebook = { Tim: '0876566344', Bill: '0896543112' };
 let entries = Object.entries(phonebook);
 console.log(entries);
 ```
@@ -469,7 +469,7 @@ console.log(entries);
 So, by using indexing we can get the **key** and the **value** of each **entry**.
 
 ```js live
-let phonebook = { Tim: "0876566344", Bill: "0896543112" };
+let phonebook = { Tim: '0876566344', Bill: '0896543112' };
 let entries = Object.entries(phonebook);
 let firstEntry = entries[0];
 console.log(firstEntry[0]);
@@ -500,7 +500,7 @@ The expression `a[0].localeCompare(b[0])` will sort the array in ascending order
 If we use `b[0].localeCompare(a[0])` the function will sort the array in descending order.
 
 ```js live
-let phonebook = { Tim: "0876566344", Bill: "0896543112" };
+let phonebook = { Tim: '0876566344', Bill: '0896543112' };
 let entries = Object.entries(phonebook);
 let result = entries.sort((a, b) => a[0].localeCompare(b[0]));
 console.log(result);
@@ -511,7 +511,7 @@ To **sort by value**, use the **second element** of each entry.
 In this example it is the same as above, the only difference is that we use the second element as a sorting criteria.
 
 ```js live
-let phonebook = { Tim: "0876566344", Bill: "0896543112" };
+let phonebook = { Tim: '0876566344', Bill: '0896543112' };
 let entries = Object.entries(phonebook);
 let result = entries.sort((a, b) => a[1].localeCompare(b[1]));
 console.log(result);
@@ -665,10 +665,10 @@ We can access this property from the "Bill" object, using the `billsContact` var
 
 ```js live
 let contacts = {
-  Tim: { phone: "0876566344", address: "Doe Crossing" },
-  Bill: { phone: "0896543112", address: "Nelson Place" },
+  Tim: { phone: '0876566344', address: 'Doe Crossing' },
+  Bill: { phone: '0896543112', address: 'Nelson Place' },
 };
-let billsContact = contacts["Bill"];
+let billsContact = contacts['Bill'];
 console.log(billsContact.phone);
 ```
 
@@ -680,8 +680,8 @@ In this case, we will use destructuring to sort the contacts book **alphabetical
 
 ```js live
 let contacts = {
-  Tim: { phone: "0876566344", address: "Doe Crossing" },
-  Bill: { phone: "0896543112", address: "Nelson Place" },
+  Tim: { phone: '0876566344', address: 'Doe Crossing' },
+  Bill: { phone: '0896543112', address: 'Nelson Place' },
 };
 let entries = Object.entries(contacts);
 let result = entries.sort(([keyA, refA], [keyB, refB]) => {

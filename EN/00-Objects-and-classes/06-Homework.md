@@ -493,6 +493,15 @@ function dictionary(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -506,7 +515,7 @@ If you receive the same term twice replace it with the new definition.
 
 Print every **term and definition** from the dictionary on a new line in this format: 
 
-`Term: ${term} => Definition: ${definition}`
+"**Term:** $\{**term**\} \=\> **Definition:** $\{**definition**\}"
 
 Do not forget to sort the content **alphabetically** by the terms as in real dictionaries. 
 
@@ -514,7 +523,7 @@ Do not forget to sort the content **alphabetically** by the terms as in real dic
 
 | **Input** | **Output** |
 | --- | --- |
-| `['{"Coffee":"A hot drink made from the roasted and ground seeds (coffee beans) of a tropical shrub."}','{"Bus":"A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare."}','{"Boiler":"A fuel-burning apparatus or container for heating water."}','{"Tape":"A narrow strip of material, typically used to hold or fasten something."}','{"Microphone":"An instrument for converting sound waves into electrical energy variations which may then be amplified, transmitted, or recorded."}']` | Term\: Boiler \=\> Definition\: A fuel\-burning apparatus or container for heating water. |
+| dictionary(['\{"Coffee":"A hot drink made from the roasted and ground seeds (coffee beans) of a tropical shrub."\}','\{"Bus":"A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare."\}','\{"Boiler":"A fuel-burning apparatus or container for heating water."\}','\{"Tape":"A narrow strip of material, typically used to hold or fasten something."\}','\{"Microphone":"An instrument for converting sound waves into electrical energy variations which may then be amplified, transmitted, or recorded."\}']) | Term\: Boiler \=\> Definition\: A fuel\-burning apparatus or container for heating water. |
 | | Term\: Bus \=\> Definition\: A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare. |
 | | Term\: Coffee \=\> Definition\: A hot drink made from the roasted and ground seeds \(coffee beans\) of a tropical shrub. |
 | | Term\: Microphone \=\> Definition\: An instrument for converting sound waves into electrical energy variations which may then be amplified, transmitted, or recorded. |
@@ -522,11 +531,21 @@ Do not forget to sort the content **alphabetically** by the terms as in real dic
 
 [/task-description]
 [tests]
+[test open]
+[input]
+ dictionary(['\{"Coffee":"A hot drink made from the roasted and ground seeds (coffee beans) of a tropical shrub."\}','\{"Bus":"A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare."\}','\{"Boiler":"A fuel-burning apparatus or container for heating water."\}','\{"Tape":"A narrow strip of material, typically used to hold or fasten something."\}','\{"Microphone":"An instrument for converting sound waves into electrical energy variations which may then be amplified, transmitted, or recorded."\}'])
+[/input]
+[output]
+Term\: Boiler \=\> Definition\: A fuel\-burning apparatus or container for heating water.
+Term\: Bus \=\> Definition\: A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare. 
+Term\: Coffee \=\> Definition\: A hot drink made from the roasted and ground seeds \(coffee beans\) of a tropical shrub. 
+Term\: Microphone \=\> Definition\: An instrument for converting sound waves into electrical energy variations which may then be amplified, transmitted, or recorded. 
+Term\: Tape \=\> Definition\: A narrow strip of material, typically used to hold or fasten something.
+[/output]
+[/test]
 [test]
 [input]
-\{"bb":"fghfhgfghfghfhg."\}
-\{"ad":"gyuguy gyu guy guy gyu guy guyguguhvhv"\}
-\{"ab":"vyvgvgh vgh vty vtyv ytv yt vty vyt."\}
+dictionary(['\{"bb":"fghfhgfghfghfhg."\}', '\{"ad":"gyuguy gyu guy guy gyu guy guyguguhvhv"\}', '\{"ab":"vyvgvgh vgh vty vtyv ytv yt vty vyt."\}'])
 [/input]
 [output]
 Term: ab \=\> Definition: vyvgvgh vgh vty vtyv ytv yt vty vyt.
@@ -536,11 +555,7 @@ Term: bb \=\> Definition: fghfhgfghfghfhg.
 [/test]
 [test]
 [input]
-\{"nmbb":"fghfhgfghfghfhg."\}
-\{"jad":"gyuguy gyu guy guy gyu guy guyguguhvhv"\}
-\{"hab":"vyvgvgh vgh vty vtyv ytv yt vty vyt."\}
-\{"bjad":"gyuguy gy bhjbhjb  u guy guy gyu guy guyguguhvhv"\}
-\{"mkjad":"gyuguy gyu guy guy gybhj bjh bu guy guyguguhvhv"\}
+dictionary(['\{"nmbb":"fghfhgfghfghfhg."\}', '\{"jad":"gyuguy gyu guy guy gyu guy guyguguhvhv"\}', '\{"hab":"vyvgvgh vgh vty vtyv ytv yt vty vyt."\}', '\{"bjad":"gyuguy gy bhjbhjb  u guy guy gyu guy guyguguhvhv"\}', '\{"mkjad":"gyuguy gyu guy guy gybhj bjh bu guy guyguguhvhv"\}'])
 [/input]
 [output]
 Term: bjad \=\> Definition: gyuguy gy bhjbhjb  u guy guy gyu guy guyguguhvhv
@@ -552,10 +567,7 @@ Term: nmbb \=\> Definition: fghfhgfghfghfhg.
 [/test]
 [test]
 [input]
-\{"mmjad":"gyuu guy guy gyu guy guyguhvhv"\}
-\{"nhab":"vyvgvgh v yt vty vyt."\}
-\{"bjad":"gyuguy gy bhjbhjb  u guy gupp p po pyguguhvhv"\}
-\{"mkjad":"gyuguy gyu guy guyuguhvhv"\}
+dictionary(['\{"mmjad":"gyuu guy guy gyu guy guyguhvhv"\}', '\{"nhab":"vyvgvgh v yt vty vyt."\}', '\{"bjad":"gyuguy gy bhjbhjb  u guy gupp p po pyguguhvhv"\}', '\{"mkjad":"gyuguy gyu guy guyuguhvhv"\}'])
 [/input]
 [output]
 Term: bjad \=\> Definition: gyuguy gy bhjbhjb  u guy gupp p po pyguguhvhv
@@ -566,9 +578,7 @@ Term: nhab \=\> Definition: vyvgvgh v yt vty vyt.
 [/test]
 [test]
 [input]
-\{"zmmjad":"gyuu guy guy gyu guy guyguhvhv"\}
-\{"anhab":"vyvgvgh v yt vty vyt."\}
-\{"akjad":"gyuguy gyu guy guhvhv"\}
+dictionary(['\{"zmmjad":"gyuu guy guy gyu guy guyguhvhv"\}', '\{"anhab":"vyvgvgh v yt vty vyt."\}', '\{"akjad":"gyuguy gyu guy guhvhv"\}'])
 [/input]
 [output]
 Term: akjad \=\> Definition: gyuguy gyu guy guhvhv
@@ -578,11 +588,7 @@ Term: zmmjad \=\> Definition: gyuu guy guy gyu guy guyguhvhv
 [/test]
 [test]
 [input]
-\{"zmmjad":"gyuu guy guy gyu guy guyguhvhv"\}
-\{"anhab":"vyvgvgh v vty vtyy vyt."\}
-\{"makjad":"gyugvgh vghuy guhvhv"\}
-\{"kanhab":"vyvgvgh v yt vty vyt."\}
-\{"anhab":"vgh vgh yt."\}
+dictionary(['\{"zmmjad":"gyuu guy guy gyu guy guyguhvhv"\}', '\{"anhab":"vyvgvgh v vty vtyy vyt."\}', '\{"makjad":"gyugvgh vghuy guhvhv"\}', '\{"kanhab":"vyvgvgh v yt vty vyt."\}', '\{"anhab":"vgh vgh yt."\}'])
 [/input]
 [output]
 Term: anhab \=\> Definition: vgh vgh yt.
@@ -606,6 +612,15 @@ function songs(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -615,42 +630,65 @@ You will receive the input as an array.
 
 The first element n will be the number of songs. 
 
-Next n elements will be the songs data in the following format: 
+Next "**n**" elements will be the songs data in the following format: 
 
-`{typeList}_{name}_{time}`, 
-aand the the last element will be Type List \/ `all`.
+"\{**typeList**\}\_\{**name**\}\_\{**time**\}", 
+aand the the last element will be Type List \/ "**all**".
 
 Print only the names of the songs which are from that Type List \/ All songs. 
 
-# Examples
+# Examples One
 
 | **Input** | **Output** |
 | --- | --- |
-| `[3,'favourite_DownTown_3:14','favourite_Kiss_4:16','favourite_Smooth Criminal_4:01','favourite']` | DownTown |
+| songs([3,'favourite_DownTown_3:14','favourite_Kiss_4:16','favourite_Smooth Criminal_4:01','favourite']) | DownTown |
 | | Kiss |
 | | Smooth Criminal |
 
-
+# Examples Two
 | **Input** | **Output** |
 | --- | --- |
-| `[4,'favourite_DownTown_3:14','listenLater_Andalouse_3:24','favourite_In To The Night_3:58','favourite_Live It Up_3:48','listenLater']` | Andalouse |
+|songs([4,'favourite_DownTown_3:14','listenLater_Andalouse_3:24','favourite_In To The Night_3:58','favourite_Live It Up_3:48','listenLater']) | Andalouse |
 
-
+# Examples Three
 | **Input** | **Output** |
 | --- | --- |
-| `[2,'like_Replay_3:15','ban_Photoshop_3:48','all']` | Replay |
+| songs([2, 'like_Replay_3:15','ban_Photoshop_3:48','all']) | Replay |
 | | Photoshop |
 
 
 [/task-description]
 [tests]
+[test open]
+[input]
+songs([3,'favourite_DownTown_3:14','favourite_Kiss_4:16','favourite_Smooth Criminal_4:01','favourite'])
+[/input]
+[output]
+DownTown
+Kiss
+Smooth Criminal
+[/output]
+[/test]
+[test open]
+[input]
+songs([4,'favourite_DownTown_3:14','listenLater_Andalouse_3:24','favourite_In To The Night_3:58','favourite_Live It Up_3:48','listenLater'])
+[/input]
+[output]
+Andalouse
+[/output]
+[/test]
+[test open]
+[input]
+songs([2, 'like_Replay_3:15','ban_Photoshop_3:48','all'])
+[/input]
+[output]
+Replay
+Photoshop
+[/output]
+[/test]
 [test]
 [input]
-3
-favourite\_immaterial\_3:24
-ban\_party\_4:45
-like\_smile\_4:25
-like
+songs([3, 'favourite\_immaterial\_3:24', 'ban\_party\_4:45', 'like\_smile\_4:25', 'like'])
 [/input]
 [output]
 smile
@@ -658,12 +696,7 @@ smile
 [/test]
 [test]
 [input]
-4
-ban\_hey\_3:48
-programming\_ban\_3:42
-ban\_hello\_3:29
-like\_like\_3:05
-ban
+songs([4, 'ban\_hey\_3:48', 'programming\_ban\_3:42', 'ban\_hello\_3:29', 'like\_like\_3:05', 'ban'])
 [/input]
 [output]
 hey
@@ -672,12 +705,7 @@ hello
 [/test]
 [test]
 [input]
-4
-ban\_hey\_3:48
-programming\_ban\_3:42
-ban\_hello\_3:29
-like\_like\_3:05
-programming
+songs([4, 'ban\_hey\_3:48', 'programming\_ban\_3:42', 'ban\_hello\_3:29', 'like\_like\_3:05', 'programming'])
 [/input]
 [output]
 ban
@@ -685,12 +713,7 @@ ban
 [/test]
 [test]
 [input]
-4
-ban\_hey\_3:48
-programming\_ban\_3:42
-ban\_hello\_3:29
-like\_like\_3:05
-all
+songs([4, 'ban\_hey\_3:48', 'programming\_ban\_3:42', 'ban\_hello\_3:29', 'like\_like\_3:05', 'all'])
 [/input]
 [output]
 hey
@@ -701,10 +724,7 @@ like
 [/test]
 [test]
 [input]
-2
-list\_song\_3:21
-list2\_song2\_2:58
-list
+songs([2, 'list\_song\_3:21', 'list2\_song2\_2:58', 'list'])
 [/input]
 [output]
 song
