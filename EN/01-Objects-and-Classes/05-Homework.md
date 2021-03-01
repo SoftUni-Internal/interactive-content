@@ -130,8 +130,7 @@ The haunting of hill house - better content2:  Shirley Jackson
 [slide hideTitle]
 # Problem: Opinion Poll
 
-
-[code-task title="Opinion Poll" taskId="java-fund-2-Objects-and-Classes-Opinion Poll" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
+[code-task title="Opinion Poll" taskId="java-fund-2-Objects-and-Classes-Opinion-Poll" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [task-description]
 ## Description
 Using the **Person class**, write a program that reads from the console **N lines of personal information** and then **prints all people** whose **age is more than 30 years** in the following **format**:
@@ -167,8 +166,9 @@ John 31
 Steven 48
 [/input]
 [output]
-John - 31
-Steven - 48
+Nick - 33
+John - 88
+Leo - 44
 [/output]
 [/test]
 [test]
@@ -275,18 +275,18 @@ F 88
 [/input]
 [output]
 A - 31
-W - 45
 B - 76
 C - 87
 D - 453
 E - 645
-Z - 55
-K - 53
+F - 88
+H - 76
 I - 43
 J - 543
+K - 53
 P - 67
-H - 76
-F - 88
+W - 45
+Z - 55
 [/output]
 [/test]
 [test]
@@ -307,8 +307,8 @@ Pencho 67
 Zoro 55
 [/input]
 [output]
-Astor - 45
 Asto - 31
+Astor - 45
 Borko - 76
 Ceco - 87
 Dido - 453
@@ -327,10 +327,10 @@ An 33
 Annie 31
 [/input]
 [output]
-Ann - 31
-Anntoanette - 39
 An - 33
+Ann - 31
 Annie - 31
+Anntoanette - 39
 [/output]
 [/test]
 [/tests]
