@@ -198,18 +198,8 @@ System.out.println(hash);
 [stream language="RO" videoId="485443278/abf3282bb7"  /]
 [/video-vimeo]
 
-[code-task title="Car Info" taskId="oop-basics-java-defining-classes-lab-Car-Info" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Car Info" taskId="oop-basics-java-defining-classes-lab-Car-Info" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 
@@ -303,19 +293,19 @@ System.out.println(car.carInfo());
 | No Way 5 | The car is: No Way - 5 HP. |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /] 
 [tests]
 [test open]
 [input]
 3
 Chevrolet Impala 390
-TESLA MODEL-S 503
-DACIA DUSTER 149
+BMW E320 500
+Big Car 49
 [/input]
 [output]
 The car is: Chevrolet Impala - 390 HP.
-The car is: TESLA MODEL-S - 503 HP.
-The car is: DACIA DUSTER - 149 HP.
+The car is: BMW E320 - 500 HP.
+The car is: Big Car - 49 HP.
 [/output]
 [/test]
 [test open]
