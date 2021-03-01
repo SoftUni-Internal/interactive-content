@@ -199,7 +199,7 @@ In this example, we have an array of names.
 If we call the `sort()` method directly, without passing a **compare function**, the method will work correctly - it will sort the names in ascending alphabetic order.
 
 ``` js live
-let names = ['Peter','George','Mary'];
+let names = ['Peter', 'George', 'Mary'];
 names.sort(); 
 
 console.log(names); 

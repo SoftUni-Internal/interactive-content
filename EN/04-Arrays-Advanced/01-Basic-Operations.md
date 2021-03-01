@@ -234,7 +234,7 @@ The `array.unshift()` method **adds elements to the beginning** of an array:
 
 ``` js live
 let myArray = ['red', 'green', 'blue'];
-myArray.unshift("purple");
+myArray.unshift('purple');
 
 console.log(myArray);
 ```
@@ -278,7 +278,7 @@ The **input** comes as an **array** of string elements, holding **numbers**.
 The **output** has to be **printed to the console**, each element on a **new line**.
 
 
-## Examples
+## Example One
 | **Input** | **Output** |
 | --- | --- |
 |negativePositive(['7', '-2', '8', '9']) | \-2 |
@@ -286,6 +286,7 @@ The **output** has to be **printed to the console**, each element on a **new
 | | 8 |
 | | 9 |
 
+## Example Two
 | **Input** | **Output** |
 | --- | --- |
 |negativePositive(['3', '-2', '0', '-1'])  | \-1 |

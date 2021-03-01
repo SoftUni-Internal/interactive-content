@@ -25,7 +25,7 @@ console.log(myArray.slice(2,4));
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-17-cutting-and-inserting-elements-with-splice-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The `array.splice()` method **adds** or **removes** items to\/from an array, and **returns** the removed item(s).
+The `array.splice()` method **adds** or **removes** items to/from an array, and **returns** the removed item(s).
 
 This method **changes the original array.**
 
@@ -80,13 +80,13 @@ On the **first line**, print the **first k** elements, separated by **space*
 
 On the **second line**, print the **last k** elements, separated by **space**. 
 
-## Examples
+## Example One
 
 | **Input** | **Output** |
 | --- | --- |
 |numbers([2, 7, 8, 9]) | 7 8 |
 | | 8 9 |
-
+## Example Two
 | **Input** | **Output** |
 | --- | --- |
 |numbers([3, 6, 7, 8, 9]) | 6 7 8 |
@@ -217,7 +217,7 @@ The output is **printed** to the console on a **single line**, separated by **sp
 |numbers(8, 2) | 1 1 2 3 5 8 13 21 |
 
 
-# Hints
+## Hints
 
 The **second element (1)** is **equal to the sum** of the **3 elements before it**, but there is only **one** element, so we take that. 
 

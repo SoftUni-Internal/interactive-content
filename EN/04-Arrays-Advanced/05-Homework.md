@@ -145,7 +145,7 @@ The rest of the elements will be commands in the following format:
 In the end, print the final state of the train (all the wagons, separated by a space).
 
 
-## Example
+## Examples
 | **Input** | **Output** |
 | --- | --- |
 |train(['32 54 21 12 4 0 23','75','Add 10','Add 0','30','10','75'])| 72 54 21 12 4 75 23 10 0|
@@ -242,8 +242,8 @@ Remove all repeating elements from the array.
 
 Print the result elements(the remaining ones), separated by a single space. 
 
-# Example
-| Input   | Output | Comments   |
+# Examples
+| **Input**   | **Output** | **Comments**   |
 | :---:       |    :----:   |   :---:     |
 |distinctArray([1, 2, 3, 4])| 1 2 3 4|No repeating elements |
 |distinctArray([7, 8, 9, 7, 2, 3, 4, 1, 2])| 7 8 9 2 3 4 1| 7 and 2 are already present in the array \-\> remove them|
@@ -369,12 +369,13 @@ If not print:
 In the end, print all the guests, each on a separate line. 
 
 
-## Examples
+## Example One
 | **Input**   | **Output** |
 | :---:       |    :----:   |
 |houseParty(['Allie is going!','George is going!','John is not going!','George is not going!'])| John is not in the list!|
 ||Allie|
 
+## Example Two
 | **Input**   | **Output** |
 | :---:       |    :----:   |  
 |houseParty(['Tom is going!','Annie is going!','Tom is going!','Garry is going!','Jerry is going!'])|Tom is already in the list!|
@@ -580,14 +581,14 @@ The input comes as an array of strings.
 
 The output is the sorted array of strings. 
 
-## Examples
+## Example One
 | **Input** | **Output** |
 | --- | --- |
 |sort(['alpha', 'beta', 'gamma'])|beta|
 ||alpha|
 ||gamma|
 
-
+## Example Two
 | **Input** | **Output** |
 | --- | --- |
 |sort(['Isacc', 'Theodor', 'Jack', 'Harrison', 'George'])|Jack|
@@ -743,7 +744,7 @@ Every other element(command) that we receive, will also be a string.
 
 The output is the manipulated array, which we should print on the console on a single line, separated by a space. 
 
-## Examples
+## Example
 | **Input** | **Output** |
 | --- | --- |
 |arrayManipulations(['4 19 2 53 6 43', 'Add 3','Remove 2','RemoveAt 1','Insert 8 3'])|4 53 6 8 43 3|
