@@ -2,9 +2,11 @@
 
 [slide hideTitle]
 
-# How to throw an Exceptions
+# How to throw an Exception
 
-Exceptions are throwed using the **throw** keyword. 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-18-throwing-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+Exceptions are thrown using the **throw** keyword. 
 
 Exceptions are used to notify the person running the code in case an error occurs or if the program produces unexpected results. 
 
@@ -20,6 +22,8 @@ Unhandled exceptions display an error message.
 [slide hideTitle]
 
 # Using the "throw" Keyword
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-20-using-throw-keyword-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Throwing an exception with an error message
 
@@ -41,6 +45,8 @@ try {
 [slide hideTitle]
 
 # Re-Throwing Exceptions
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-21-re-throwing-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Caught exceptions can be re-thrown again:
 

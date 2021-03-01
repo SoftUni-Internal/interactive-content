@@ -1,7 +1,9 @@
 [slide hideTitle]
 # Summary
 
-# In this lesson you learned:
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-29-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+## In this lesson you learned:
 
 - What Java exceptions are
     - exception Hierarchy

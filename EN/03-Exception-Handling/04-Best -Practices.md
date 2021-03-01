@@ -4,6 +4,8 @@
 
 # Using Catch Block
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-23-24-best-practices-using-catch-block-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Catch** blocks should: 
 
 - Begin with the exceptions lowest in the hierarchy
@@ -21,6 +23,8 @@ Each **catch** block should handle only these exceptions, which it concerns:
 [slide hideTitle]
 
 # Choosing the Exception Type 
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-25-26-choosing-the-exception-type-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When an application attempts to use **null** in a case where an object is required:
 

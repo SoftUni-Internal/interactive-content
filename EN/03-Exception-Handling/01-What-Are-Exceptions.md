@@ -4,6 +4,8 @@
 
 # Exceptions: Definition
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-3-4-what-are-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 An exception is an event, which occurs during the execution of a program. 
 
 When an Exception occurs the normal flow of the program is disrupted and the program terminates. To prevent that, these occurrences should be "handled". 
@@ -15,6 +17,8 @@ In Java exceptions are objects and have detailed information about the error.
 [slide hideTitle]
 
 # The Throwable Class
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-5-the-throwable-class-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The super class of all errors and exceptions in Java is the **throwable class**. 
 
@@ -32,6 +36,8 @@ It can also contain a message that gives more information about the error.
 
 # Types of Exceptions
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-6-types-of-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Below **Throwable** are:
 
 - **Exceptions**
@@ -47,6 +53,8 @@ Below **Throwable** are:
 [slide hideTitle]
 
 # Exceptions
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-7-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 There are two types of **Exception**:
 
@@ -76,6 +84,8 @@ There are two types of **Exception**:
 [slide hideTitle]
 
 # Exception Hierarchy 
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-8-exception-hierarchy-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [image assetsSrc="exception-handling-example(1).png" /]
 

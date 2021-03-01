@@ -34,6 +34,8 @@ try {
 
 # Handling Exceptions
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-9-10-handling-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Catching an exception of a particular class causes the caption of all its inheritors (child exceptions), as well.**
 
 See the following example:
@@ -69,6 +71,8 @@ try {
 
 # Handling all Exceptions
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-12-handling-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 - Unmanaged code can throw **other exceptions**
 
 To **handling all exceptions** (even unmanaged) use the construction
@@ -90,6 +94,8 @@ Hint: Trace the exceptions hierarchy. Be cautious witch exception is the main an
 [slide hideTitle]
 
 # "Try-finally" Statement
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-15-the-try-finally-statement-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **"try-finally"** statement ensures the **execution** of a given block **in all cases** whether an exception is raised or not in the try block.
 
@@ -126,6 +132,8 @@ static void testTryFinally() {
 [slide hideTitle]
 
 # How Do Exceptions Work?
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-17-how-do-exceptions-work-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In the **try block**, we run the code we want to check.
 
