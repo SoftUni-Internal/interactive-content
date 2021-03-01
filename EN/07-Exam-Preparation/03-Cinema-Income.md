@@ -43,15 +43,25 @@ A single line on the console:
 - Afterwards, print out: "Cinema income - \{income\}$"
 
 ## Example
-| **Input** | **Output** | **Comments** |
+| **Input** | **Output** | 
 | --- | --- | --- |
-| 60 | There are 6 seats left in the cinema. | If we receive the hall's capacity – 60 seats.|
-| 10 | Cinema income - 255$ | On the next line we receive the people that have entered the hall – 10. |
-| 6 | | The price that they will pay is 10 * 5 = 50. |
-| 3 | | After that we receive that 6 people enter the hall and 6 can be divided by 3, so they pay 5$ less. |
-| 20 | | We continue until we receive the command "Movie time!" and then we print a suitable output. |
-| 15 | | |
-| Movie time! | | |
+| 60 | There are 6 seats left in the cinema. | 
+| 10 | Cinema income - 255$ | 
+| 6 | 
+| 3 | 
+| 20 | 
+| 15 | 
+| Movie time! | 
+[hints]
+
+[hint]
+Depending on what movie and drink have been chosen, determine the ticket price.
+[/hint]
+
+[hint]
+Check if there will be a discount and calculate the total price.
+[/hint]
+[/hints]
 [/task-description]
 [code-io /]
 [tests]
