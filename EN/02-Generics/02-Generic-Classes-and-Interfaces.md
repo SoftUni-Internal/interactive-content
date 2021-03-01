@@ -79,17 +79,13 @@ It is also used to describe the **return value** of `remove()`.
 
 [slide hideTitle]
 # Problem with Solution: Jar of T
-[code-task title="Jar of T" taskId="oop-basics-java-generics-lab-Jar-of-T" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
+[code-task title="Jar of T" taskId="oop-basics-java-generics-lab-Jar-of-T" timeLimit=5000 executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-upload allowedMemory="30"]
 ```
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        // Java - Unit Testing Strategy needed
-    }
-}
 ```
+[/code-editor]
+[task-description]
 [/code-editor]
 [task-description]
 ## Description
@@ -126,9 +122,159 @@ If you did not create a **package**, just select your classes and **zip** them.
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+public class P01_ZeroTest \{
+
+    @Test
+    public void test() throws NoSuchMethodException \{
+        Assert.assertTrue("Class 'Jar' not found", Classes.allClasses.containsKey("Jar"));
+        Class cl = Classes.allClasses.get("Jar");
+	Assert.assertTrue("Jar class has no type parameters", cl.getTypeParameters().length \> 0);
+        cl.getDeclaredMethod("add", Object.class);
+        cl.getDeclaredMethod("remove");
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
 [test]
 [input]
-Unit tests!
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
+public class P01_TestAddInt \{
+
+    @Test
+    public void test() throws NoSuchMethodException, IllegalAccessException, InstantiationException, InvocationTargetException \{
+        Class\<?\> cl = Classes.allClasses.get("Jar");
+	Assert.assertTrue(cl.getTypeParameters().length \> 0);
+        Method add = cl.getMethod("add", Object.class);
+        Method remove = cl.getMethod("remove");
+        Object jar = cl.newInstance();
+        add.invoke(jar, 123);
+        Integer result = (Integer) remove.invoke(jar);
+        Assert.assertTrue(result.equals(123));
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
+public class P01_TestAddString \{
+
+    @Test
+    public void test() throws NoSuchMethodException, IllegalAccessException, InstantiationException, InvocationTargetException \{
+        Class\<?\> cl = Classes.allClasses.get("Jar");
+	Assert.assertTrue(cl.getTypeParameters().length \> 0);
+        Method add = cl.getMethod("add", Object.class);
+        Method remove = cl.getMethod("remove");
+        Object jar = cl.newInstance();
+        add.invoke(jar, "123");
+        String result = (String) remove.invoke(jar);
+        Assert.assertTrue(result.equals("123"));
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
+public class P01_TestAddFloat \{
+
+    @Test
+    public void test() throws NoSuchMethodException, IllegalAccessException, InstantiationException, InvocationTargetException \{
+        Class\<?\> cl = Classes.allClasses.get("Jar");
+        Assert.assertTrue(cl.getTypeParameters().length \> 0);
+        Method add = cl.getMethod("add", Object.class);
+        Method remove = cl.getMethod("remove");
+        Object jar = cl.newInstance();
+        add.invoke(jar, 123.2f);
+        Float result = (Float) remove.invoke(jar);
+        Assert.assertTrue(result.equals(123.2f));
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
+public class P01_TestAddDouble \{
+
+    @Test
+    public void test() throws NoSuchMethodException, IllegalAccessException, InstantiationException, InvocationTargetException \{
+        Class\<?\> cl = Classes.allClasses.get("Jar");
+        Assert.assertTrue(cl.getTypeParameters().length \> 0);
+        Method add = cl.getMethod("add", Object.class);
+        Method remove = cl.getMethod("remove");
+        Object jar = cl.newInstance();
+        add.invoke(jar, 123.2);
+        Double result = (Double) remove.invoke(jar);
+        Assert.assertTrue(result.equals(123.2));
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
+public class P01_TestAddBoolean \{
+
+    @Test
+    public void test() throws NoSuchMethodException, IllegalAccessException, InstantiationException, InvocationTargetException \{
+        Class\<?\> cl = Classes.allClasses.get("Jar");
+        Assert.assertTrue(cl.getTypeParameters().length \> 0);
+        Method add = cl.getMethod("add", Object.class);
+        Method remove = cl.getMethod("remove");
+        Object jar = cl.newInstance();
+        add.invoke(jar, false);
+        add.invoke(jar, true);
+        add.invoke(jar, false);
+        boolean result = (boolean) remove.invoke(jar);
+        Assert.assertTrue(!result);
+    \}
+\}
 [/input]
 [output]
 Test Passed!
