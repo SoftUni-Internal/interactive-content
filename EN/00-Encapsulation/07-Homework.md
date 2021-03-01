@@ -2,18 +2,9 @@
 
 [slide hideTitle]
 # Problem: Class Box
-[code-task title="Problem: Class Box" taskId="f8a60a44-573e-4382-adc9-498761b90111" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Class Box" timeLimit=5000 taskId="Java-OOP-Advanced-Encapsulation-Class-Box" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 You are given a geometric figure Box with fields length, width and height. 
@@ -71,7 +62,6 @@ Make a private setter that performs data validation internally.
 | 6 | Volume - 7.80 |
 
 [/task-description]
-[code-io /]
 [tests]
 [test open]
 [input]
@@ -966,18 +956,9 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: Animal Farm
-[code-task title="Problem: Animal Farm" taskId="ff953789-fb43-4c32-b043-172a6fd0f9a9" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Animal Farm" timeLimit=5000 taskId="Java-OOP-Advanced-Encapsulation-Animal-Farm" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 
@@ -1060,7 +1041,6 @@ Make sure you have a **public Main** class with a **public static void main** me
 | 6 |  |
 
 [/task-description]
-[code-io /]
 [tests]
 [test]
 [input]
@@ -1805,18 +1785,9 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: Shopping Spree
-[code-task title="Problem: Shopping Spree" taskId="e0b40011-3ccf-4ac6-b74a-c99976d4ec53" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Shopping Spree" timeLimit=5000 taskId="Java-OOP-Advanced-Encapsulation-Shopping-Spree" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 Create two classes: class **Person** and class **Product**. 
@@ -1891,7 +1862,6 @@ Judge does not work with `isBlank()` method. You can use `trim().isEmpty()`.
 | END |  |
 
 [/task-description]
-[code-io /]
 [tests]
 [test]
 [input]
@@ -2827,18 +2797,9 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: Pizza Calories
-[code-task title="Problem: Pizza Calories" taskId="b9709643-27b0-4c57-800c-4504ad2c7ce8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Pizza Calories" timeLimit=5000 taskId="Java-OOP-Advanced-Encapsulation-Pizza-Calories" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 A Pizza is made of a dough and different toppings. 
@@ -2903,21 +2864,21 @@ For example, meat has a modifier of 1.2, which means that a meat weighting 50 gr
 
 ## Data Validation
 **Data Validation must be in the order of the Input Data**.
-- If invalid flour type or an invalid baking technique is given an exception is thrown with the message "**Invalid type of dough.**".
-- If dough weight is outside of range (1..200) throw an exception with the message "**Dough weight should be in the range (1..200).**"
-- If topping is not one of the provided types throw an exception with the message "**Cannot place {name of invalid argument} on top of your pizza.**"
-- If topping weight is outside of range (1..50) throw an exception with the message "**{Topping type name} weight should be in the range (1..50).**".
-- If name of the pizza is empty, only whitespace or longer than 15 symbols throw an exception with the message "**Pizza name should be between 1 and 15 symbols.**".
-- If number of topping is outside of range (0..10) throw an exception with the message "**Number of toppings should be in range (0..10).**".
+- If invalid flour type or an invalid baking technique is given an exception is thrown with the message "**Invalid type of dough**".
+- If dough weight is outside of range (1..200) throw an exception with the message "**Dough weight should be in the range (1..200)**"
+- If topping is not one of the provided types throw an exception with the message "**Cannot place {name of invalid argument} on top of your pizza**"
+- If topping weight is outside of range (1..50) throw an exception with the message "**{Topping type name} weight should be in the range (1..50)**"
+- If name of the pizza is empty, only whitespace or longer than 15 symbols throw an exception with the message "**Pizza name should be between 1 and 15 symbols.**"
+- If number of topping is outside of range (0..10) throw an exception with the message "**Number of toppings should be in range (0..10)**"
 
 ## Input
 **The input for a pizza consists of several lines:**
 - On the first line is the **pizza name** and the **number of toppings it has** in format:
-    - Pizza **{pizzaName} {numberOfToppings}**
+    - pizza **{pizzaName} {numberOfToppings}**
 - On the second line you will get input for the **dough** in format:
-    - Dough **{flourType} {bakingTechnique} {weightInGrams}**
+    - dough **{flourType} {bakingTechnique} {weightInGrams}**
 - On the next lines, you will receive every topping the pizza has, until an **"END"** command is given:
-    - Topping **{toppingType} {weightInGrams}**
+    - topping **{toppingType} {weightInGrams}**
 
 ## Output
 If creation of the pizza was **successful** print on a single line the name of the pizza and the **total calories** it has, rounded to the second digit after the decimal point.
@@ -2963,7 +2924,6 @@ If creation of the pizza was **successful** print on a single line the name of t
 | END |  |
 
 [/task-description]
-[code-io /]
 [tests]
 [test]
 [input]
@@ -4163,18 +4123,8 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: Football Team Generator
-[code-task title="Problem: Football Team Generator" taskId="1fb23f40-9f6d-4cde-8b9e-6a39eb4e221e" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Football Team Generator" taskId="Java-OOP-Advanced-Encapsulation-Football-Team-Generator" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 **A football team has variable number of players, a name and a rating.**
@@ -4274,7 +4224,7 @@ If not, print "**A name should not be empty.**"
 | END |  |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]

@@ -124,8 +124,11 @@ for (Person player : players) {
     team.addPlayer (player);
 }
 
-System.out.println("First team have" + team.getFirstTeam().size() + "players");
-System.out.println("Reserve team have" + team.getReserveTeam ().size() + "players");
+System.out.println("First team have" +
+team.getFirstTeam().size() + "players");
+
+System.out.println("Reserve team have" + 
+team.getReserveTeam ().size() + "players");
 ```
 ## You should NOT be able to use the class like this:
 ```java
