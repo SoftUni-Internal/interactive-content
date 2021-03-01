@@ -86,39 +86,15 @@ The percentage of food **must be formatted to the second digit after the decimal
 || 85.00% eaten from the dog. |
 || 15.00% eaten from the cat. |
 
-**Comments**
+[hints]
+[hint]
+Calculate the total food for both the cat and dog. Note that every third day they receive a prize.
+[/hint]
+[hint]
+Print the total cookies that were eaten. Determine how much percent of the total food was eaten, how much of that the dog and cat have eaten.
+[/hint]
+[/hints]
 
-We have **3 days** and a total amount of food: **1000 grams.**
-
-**On the first day:**
-
-- The dog eats 300 grams, the cat eats 20 grams
-
-**On the second day:**
-
-- The dog eats 100 grams, the cat eats 30 grams
-
-**On the third day:**
-
-- The dog eats 110 grams, the cat eats 40 grams
-
-On this day they should also **receive a prize - cookies:**
-
-- 10\% of 110 \+ 40 \- 15 grams.
-
-**Total food eaten: 600 grams.**
-
-**Food eaten:**
-
-- by the dog: 510 grams
-
-- by the cat: 90 grams
-
-600g of 1000g = 60\% of the food is eaten.
-
-510g of 600g = 85\% was eaten by the dog.
-
-90g of 600g = 15\% was eaten by the cat.
 
 [/task-description]
 [code-io /]
