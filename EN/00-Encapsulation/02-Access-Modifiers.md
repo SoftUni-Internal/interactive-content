@@ -623,7 +623,7 @@ public class T03TestIncreaseSalary \{
         fieldSalary.setAccessible(true);
         double salary = (double) fieldSalary.get(person);
 
-        return salary == PERSON_SALARY + PERSON_SALARY \* PERSON_BONUS / 200.0;
+        return salary == PERSON_SALARY + PERSON_SALARY * PERSON_BONUS / 200.0;
     \}
 
     private Class getClass(String className) \{
