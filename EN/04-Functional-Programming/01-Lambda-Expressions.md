@@ -99,7 +99,7 @@ We can have a different number of **parameters** in a lambda expression.
 
 
 [slide hideTitle]
-# Problem: Sort Even Numbers 
+# Problem with Solution: Sort Even Numbers 
 [code-task title="Sort Even Numbers" taskId="oop-basics-java-functional-programming-lab-Sort-Even-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
