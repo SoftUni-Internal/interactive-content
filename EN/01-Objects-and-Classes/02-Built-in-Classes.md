@@ -197,20 +197,7 @@ System.out.println(isValid);
 
 [slide hideTitle]
 # Problem with Solution: Randomize Words
-[code-task title="Randomize Words" taskId="Java-Fundamentals-1-Built-in-Classes-Randomize-Words" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java-code]
-``` java
-import java.util.*;
-import java.math.BigInteger;
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
-[task-description]
 ## Description
 You are given a **list of words in one line**.
 
@@ -222,6 +209,10 @@ You are given a **list of words in one line**.
 - Create a random number generator - an object rnd of type Random
 - In a for-loop exchange each number at positions 0, 1, …, words.Length-1 by a number at random position. To generate a random number in range use rnd.nextInt(words.length)
 - Print each word in the array on new line
+
+## Constrains
+
+Execute the program locally using Integrated development environment
 
 
 ## Examples
@@ -239,80 +230,6 @@ You are given a **list of words in one line**.
 
 
 
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-Welcome to SoftUni and have fun learning programming
-[/input]
-[output]
-learning
-Welcome
-SoftUni
-and
-fun
-programming
-have
-to
-[/output]
-[/test]
-[test]
-[input]
-a b
-[/input]
-[output]
-b
-a
-[/output]
-[/test]
-[test]
-[input]
-PHP Java C\#
-[/input]
-[output]
-Java
-PHP
-C\#
-[/output]
-[/test]
-[test]
-[input]
-10S 7H 9C 9D JS
-[/input]
-[output]
-7H
-JS
-10S
-9C
-9D
-[/output]
-[/test]
-[test]
-[input]
-hello
-[/input]
-[output]
-hello
-[/output]
-[/test]
-[test]
-[input]
-pesho gosho kiro miro niki pipi koko
-[/input]
-[output]
-kiro
-gosho
-koko
-miro
-niki
-pesho
-pipi
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
 
 
 [slide hideTitle]

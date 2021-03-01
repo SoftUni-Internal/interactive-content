@@ -230,7 +230,7 @@ public class Animal {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-problem-and-solution-students-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Students" taskId="java-fund-16-Objects-and-Classes-problem-2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Students" taskId="java-fund-16-Objects-and-Classes-problem-2" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -285,7 +285,7 @@ Print only students which are from the given city, in the following format:
 
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -402,7 +402,7 @@ Port Lee is 14 years old
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-problem-and-solution-students-2.0-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Students 2.0" taskId="java-fund-16-Objects-and-Classes-problem-3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Students 2.0" taskId="java-fund-16-Objects-and-Classes-problem-3" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -433,7 +433,7 @@ If you receive a student, who already exists (**first name** and **last name** s
 
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -507,7 +507,7 @@ J P is 61 years old
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-problem-and-solution-songs-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Songs" taskId="java-fund-16-Objects-and-Classes-problem-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Songs" taskId="java-fund-16-Objects-and-Classes-problem-1" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -572,7 +572,7 @@ Print only the **Names of the songs** which are from that **Type List** or **All
 
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
