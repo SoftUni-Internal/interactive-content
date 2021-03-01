@@ -195,6 +195,12 @@ Scrieți un program pentru a calcula aria triunghiului:
 | 5 | 25.00 |
 | 10 |  |
 
+[hints]
+[hint]
+The formula for calculating a triangle's area is - Area = 1/2 * a * h
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
