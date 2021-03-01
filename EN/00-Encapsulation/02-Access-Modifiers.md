@@ -104,16 +104,19 @@ public static void main(String[] args) throws IOException {
 
     for (int i = 0; i < n; i++) {
         String[] input = reader.readLine().split(" ");
-        people.add(new Person(input[0], input[1], Integer.parseInt(input[2])));
+        people.add(new Person(input[0], input[1], 
+        Integer.parseInt(input[2])));
     }
 
     Collections.sort(people, (firstPerson, secondPerson) -> {
-        int sComp = firstPerson.getFirstName().compareTo(secondPerson.getFirstName());
+        int sComp = firstPerson.getFirstName().compareTo
+        (secondPerson.getFirstName());
 
         if (sComp != 0) {
             return sComp;
         } else { 
-            return Integer.compare(firstPerson.getAge(), secondPerson.getAge()); 
+            return Integer.compare(firstPerson.getAge(), 
+            secondPerson.getAge()); 
         }
     });
 
