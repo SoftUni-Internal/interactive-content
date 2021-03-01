@@ -217,13 +217,17 @@ My father is born on the **30-Dec-1994**.
 
 - Print each **valid** date in the format **Day: DD, Month: MMM, Year: YYYY**
 
-# Example
+## Example One
 
 | **Input** | **Output** |
 | --- | --- |
 | matchDates(['13/Jul/1928, 10-Nov-1934 , 01/Jan-1951, 25.Dec.1937, 23/09/1973, 1/Feb/2016']) | Day\: 13\, Month\: Jul\, Year\: 1928 |
 | | Day\: 10\, Month\: Nov\, Year\: 1934 |
 | | Day\: 25\, Month\: Dec\, Year\: 1937 |
+
+## Example Two
+| **Input** | **Output** |
+| --- | --- |
 | matchDates(['27/Mar/2000, 22-March-20050']) | Day\: 27\, Month\: Mar\, Year\: 2000 |
 
 [/task-description]
@@ -237,6 +241,14 @@ matchDates(['13/Jul/1928, 10-Nov-1934, 01/Jan-1951, 25.Dec.1937, 23/09/1973, 1/F
 Day: 13, Month: Jul, Year: 1928
 Day: 10, Month: Nov, Year: 1934
 Day: 25, Month: Dec, Year: 1937
+[/output]
+[/test]
+[test open]
+[input]
+matchDates(['27/Mar/2000, 22-March-20050'])
+[/input]
+[output]
+Day: 27, Month: Mar, Year: 2000
 [/output]
 [/test]
 [test]
@@ -383,7 +395,7 @@ An email consists of: username **@** domain name.
 
 - **Usernames** are **alphanumeric**
 
-- **Domain name** consist of **two strings**, separated by a period \(`.`\)
+- **Domain name** consist of **two strings**, separated by a period \("."\)
 
 - **Domain name** may contain only **English letters**
 
@@ -401,19 +413,19 @@ An email consists of: username **@** domain name.
 
 - If the string is **invalid**, print "**Invalid**"
 
-## Example 
+## Examples
 
 | **Input** | **Output** |
 | --- | --- |
-| emailValidator('valid@email.bg') | Valid |
-| emailValidator('invalid@emai1.bg') | Invalid |
+| emailValidator('valid@email.com') | Valid |
+| emailValidator('invalid@emai1.com') | Invalid |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-emailValidator('valid@email.bg')
+emailValidator('valid@email.com')
 [/input]
 [output]
 Valid
@@ -421,7 +433,7 @@ Valid
 [/test]
 [test open]
 [input]
-emailValidator('invalid@emai1.bg')
+emailValidator('invalid@emai1.com')
 [/input]
 [output]
 Invalid
