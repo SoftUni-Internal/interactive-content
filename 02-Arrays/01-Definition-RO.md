@@ -1,12 +1,8 @@
 # Definiție
 
-[slide]
+[slide hideTitle]
 # Ce sunt matricele?
 
-[vimeo-video]
-[stream language="EN" videoId="489372251/f2e6e4672e" default /]
-[stream language="RO" videoId="489372251/f2e6e4672e"  /]
-[/video-vimeo]
 
 Știți deja cum să stocați **date unice într-o singură variabilă.**
 
@@ -21,14 +17,14 @@ Pentru a declara o matrice, plasăm valorile pe care ar trebui să le dețină �
 Crearea unui set de șiruri:
 
 ```js
-let fruit = ["apple", "pear", "cherry"];
+let fruit = ['apple"=', 'pear', 'cherry'];
 ```
 Matricile pot conține variabile de **diferite tipuri de date**, numere întregi, șiruri, booleene etc. 
 
 De asemenea, **valorile** duplicate **pot** fi stocate în ea 
 
 ```js
-let myArray = ["string", 2, 3.33, 2, true];
+let myArray = ['string', 2, 3.33, 2, true];
 ```
 
 Valorile dintr-o matrice se numesc **elemente.**
@@ -44,9 +40,9 @@ Acesta are **7 vagoane** (**elemente**).
 
 Fiecare are **pasageri** (o valoare)
 
-- `[3, 4, 10, 7, 5, 0, 6]`
+- [3, 4, 10, 7, 5, 0, 6]
 
-Elementele matricei sunt numerotate de la `0` la `length-1`.
+Elementele matricei sunt numerotate de la 0 la `length-1`.
 
 Folosind metoda `Array.length` putem obține o variabilă, care conține lungimea unei matrice.
 
@@ -54,13 +50,9 @@ Folosind metoda `Array.length` putem obține o variabilă, care conține lungime
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Crearea unei matrice
 
-[vimeo-video]
-[stream language="EN" videoId="489372249/6743adf4f6" default /]
-[stream language="RO" videoId="489372249/6743adf4f6"  /]
-[/video-vimeo]
 
 Există două moduri de a crea o matrice:
 
@@ -101,67 +93,58 @@ console.log(numbers);
 
 [/slide]
 
-[slide]
-# Problem: Sum First and Last Array Elements
+[slide hideTitle]
+# Problem with Solution: Sum First and Last Array Elements
 
-[vimeo-video]
-[stream language="EN" videoId="489372302/7905a8f7f5" default /]
-[stream language="RO" videoId="489372302/7905a8f7f5"  /]
-[/video-vimeo]
-
-[code-task title="Sum First and Last Array Elements" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Sum First and Last Array Elements" taskId="fundamentals-js-arrays-lab-Sum-First-and-Last-Array-Elements" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function sum(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 
-Scrieți o funcție care primește o **matrice de șiruri**, **le transformă în numere** și imprimă suma primului și ultimului element al matricei respective. 
+Creați un program care primește o **matrice de șiruri**, **le transformă în numere** și imprimă suma primului și ultimului element al matricei respective. 
 
-# Exemplu
+## Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
-|`[20, 30, 40]`| 60 |
-|`[10, 17, 22, 33]`| 43 |
-|`[11, 58, 69]`| 80 |
+| sum([20, 30, 40]) | 60 |
+| sum([10, 17, 22, 33]) | 43 |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-12
-32
-15
-1
-16
-78
+sum([20, 30, 40])
 [/input]
 [output]
-90
+60
+[/output]
+[/test]
+[test open]
+[input]
+sum([10, 17, 22, 33])
+[/input]
+[output]
+43
 [/output]
 [/test]
 [test]
 [input]
-12
-32
-18
-16
-[/input]
-[output]
-28
-[/output]
-[/test]
-[test]
-[input]
-191
-67
-22
-33
-9
+sum([191, 67, 22, 33, 9])
 [/input]
 [output]
 200
@@ -169,8 +152,7 @@ Scrieți o funcție care primește o **matrice de șiruri**, **le transformă î
 [/test]
 [test]
 [input]
-10
-69
+sum([10, 69])
 [/input]
 [output]
 79
@@ -178,9 +160,7 @@ Scrieți o funcție care primește o **matrice de șiruri**, **le transformă î
 [/test]
 [test]
 [input]
-56
-44
-19
+sum([56, 44, 19])
 [/input]
 [output]
 75
@@ -188,9 +168,7 @@ Scrieți o funcție care primește o **matrice de șiruri**, **le transformă î
 [/test]
 [test]
 [input]
-118
-574
-19
+sum([118, 574, 19])
 [/input]
 [output]
 137
@@ -198,9 +176,7 @@ Scrieți o funcție care primește o **matrice de șiruri**, **le transformă î
 [/test]
 [test]
 [input]
-11
-58
-69
+sum([11, 58, 69])
 [/input]
 [output]
 80
@@ -208,9 +184,7 @@ Scrieți o funcție care primește o **matrice de șiruri**, **le transformă î
 [/test]
 [test]
 [input]
-91
-18
-19
+sum([91, 18, 19])
 [/input]
 [output]
 110
@@ -222,135 +196,23 @@ Scrieți o funcție care primește o **matrice de șiruri**, **le transformă î
 
 [/slide]
 
-[slide]
-# Solution: Sum First and Last Array Elements
-
-[vimeo-video]
-[stream language="EN" videoId="489372305/43d632bad4" default /]
-[stream language="RO" videoId="489372305/43d632bad4"  /]
-[/video-vimeo]
-
-[code-task title="Sum First and Last Array Elements" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function sum(arr){
-  let sum = Number(arr[0]) + Number(arr[arr.length - 1]);
-  console.log(sum);
-}
-```
-[/code-editor]
-[task-description]
-# Descriere
-
-Scrieți o funcție care primește o **matrice de șiruri**, **le transformă în numere** și imprimă suma primului și ultimului element al matricei respective. 
-
-# Exemplu
-|**Intrare**|**Ieșire**|
-| --- | --- |
-|`[20, 30, 40]`| 60 |
-|`[10, 17, 22, 33]`| 43 |
-|`[11, 58, 69]`| 80 |
-
-[/task-description]
-[tests]
-[test]
-[input]
-12
-32
-15
-1
-16
-78
-[/input]
-[output]
-90
-[/output]
-[/test]
-[test]
-[input]
-12
-32
-18
-16
-[/input]
-[output]
-28
-[/output]
-[/test]
-[test]
-[input]
-191
-67
-22
-33
-9
-[/input]
-[output]
-200
-[/output]
-[/test]
-[test]
-[input]
-10
-69
-[/input]
-[output]
-79
-[/output]
-[/test]
-[test]
-[input]
-56
-44
-19
-[/input]
-[output]
-75
-[/output]
-[/test]
-[test]
-[input]
-118
-574
-19
-[/input]
-[output]
-137
-[/output]
-[/test]
-[test]
-[input]
-11
-58
-69
-[/input]
-[output]
-80
-[/output]
-[/test]
-[test]
-[input]
-91
-18
-19
-[/input]
-[output]
-110
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide]
+[slide hideTitle]
 # Days of Week: Example
 
-[vimeo-video]
-[stream language="EN" videoId="489372340/6ef0de5d43" default /]
-[stream language="RO" videoId="489372340/6ef0de5d43"  /]
-[/video-vimeo]
+```js
+let days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+```
+
+|**Index**|**Value**|
+|---|---|
+|`days[0]`|Monday|
+|`days[1]`|Tuesday|
+|`days[2]`|Wednesday|
+|`days[3]`|Thursday|
+|`days[4]`|Friday|
+|`days[5]`|Saturday|
+|`days[6]`|Sunday|
+
 Acesta este un exemplu de matrice care conține șiruri pentru diferitele zile ale săptămânii.
 
 Primul element, Monday, este la indexul 0 al matricei.
@@ -359,89 +221,53 @@ Primul element, Sunday, se află la indexul 6 al matricei.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Days of Week
 
-[vimeo-video]
-[stream language="EN" videoId="489372347/856f508476" default /]
-[stream language="RO" videoId="489372347/856f508476"  /]
-[/video-vimeo]
 
-[code-task title="Days of Week" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Days of Week" taskId="fundamentals-js-arrays-lab-Days-of-Week" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function days(input){
-  // Write your code here
+function days(number){
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 
-Scrieți un program care primește un număr și imprimă numele corespunzător al zilei săptămânii.
+Creați un program care primește un număr și imprimă numele corespunzător al zilei săptămânii.
 
-Dacă numărul NU este o zi validă, tipăriți `Invalid day!`.
+Dacă numărul NU este o zi validă, tipăriți "**Invalid day!**".
 
-# Exemplu
+## Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
-|`[3]`| Wednesday |
-|`[6]`| Saturday |
-|`[11]`| Invalid day! |
+| days(3) | Wednesday |
+| days(11) | Invalid day! |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-1
+days(3)
 [/input]
 [output]
-Monday
+Wednesday
 [/output]
 [/test]
-[test]
+[test open]
 [input]
-2
-[/input]
-[output]
-Tuesday
-[/output]
-[/test]
-[test]
-[input]
-4
-[/input]
-[output]
-Thursday
-[/output]
-[/test]
-[test]
-[input]
-5
-[/input]
-[output]
-Friday
-[/output]
-[/test]
-[test]
-[input]
-6
-[/input]
-[output]
-Saturday
-[/output]
-[/test]
-[test]
-[input]
-7
-[/input]
-[output]
-Sunday
-[/output]
-[/test]
-[test]
-[input]
-8
+days(11)
 [/input]
 [output]
 Invalid day!
@@ -449,7 +275,63 @@ Invalid day!
 [/test]
 [test]
 [input]
-9
+days(1)
+[/input]
+[output]
+Monday
+[/output]
+[/test]
+[test]
+[input]
+days(2)
+[/input]
+[output]
+Tuesday
+[/output]
+[/test]
+[test]
+[input]
+days(4)
+[/input]
+[output]
+Thursday
+[/output]
+[/test]
+[test]
+[input]
+days(5)
+[/input]
+[output]
+Friday
+[/output]
+[/test]
+[test]
+[input]
+days(6)
+[/input]
+[output]
+Saturday
+[/output]
+[/test]
+[test]
+[input]
+days(7)
+[/input]
+[output]
+Sunday
+[/output]
+[/test]
+[test]
+[input]
+days(8)
+[/input]
+[output]
+Invalid day!
+[/output]
+[/test]
+[test]
+[input]
+days(9)
 [/input]
 [output]
 Invalid day!
@@ -461,122 +343,9 @@ Invalid day!
 
 [/slide]
 
-[slide]
-# Solution: Days of Week
-
-[vimeo-video]
-[stream language="EN" videoId="489372392/785b1fe99f" default /]
-[stream language="RO" videoId="489372392/785b1fe99f"  /]
-[/video-vimeo]
-
-[code-task title="Days of Week" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function days(input){
-    let n = input[0];
-    if (n <= 7) {
-        let days = ['Invalid day!', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-        console.log(days[n]);
-    }
-    else {
-        console.log('Invalid day!');
-    }
-}
-```
-[/code-editor]
-[task-description]
-# Descriere
-
-Scrieți un program care primește un număr și imprimă numele corespunzător al zilei săptămânii.
-
-Dacă numărul NU este o zi validă, tipăriți `Invalid day!`.
-
-# Exemplu
-|**Intrare**|**Ieșire**|
-| --- | --- |
-|`[3]`| Wednesday |
-|`[6]`| Saturday |
-|`[11]`| Invalid day! |
-
-[/task-description]
-[tests]
-[test]
-[input]
-1
-[/input]
-[output]
-Monday
-[/output]
-[/test]
-[test]
-[input]
-2
-[/input]
-[output]
-Tuesday
-[/output]
-[/test]
-[test]
-[input]
-4
-[/input]
-[output]
-Thursday
-[/output]
-[/test]
-[test]
-[input]
-5
-[/input]
-[output]
-Friday
-[/output]
-[/test]
-[test]
-[input]
-6
-[/input]
-[output]
-Saturday
-[/output]
-[/test]
-[test]
-[input]
-7
-[/input]
-[output]
-Sunday
-[/output]
-[/test]
-[test]
-[input]
-8
-[/input]
-[output]
-Invalid day!
-[/output]
-[/test]
-[test]
-[input]
-9
-[/input]
-[output]
-Invalid day!
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide]
+[slide hideTitle]
 # Matrice de diferite tipuri
 
-[vimeo-video]
-[stream language="EN" videoId="489372393/3a35572b19" default /]
-[stream language="RO" videoId="489372393/3a35572b19"  /]
-[/video-vimeo]
 
 Matricele pot conține diferite tipuri de elemente:
 
@@ -596,13 +365,8 @@ let mixedArr = [20, new Date(), 'hello', {x:5, y:8}];
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Adăugarea de elemente noi
-
-[vimeo-video]
-[stream language="EN" videoId="489372468/1ac4aabd28" default /]
-[stream language="RO" videoId="489372468/1ac4aabd28"  /]
-[/video-vimeo]
 
 Putem adăuga un element la sfârșitul matricei:
 ``` js live
@@ -622,8 +386,8 @@ console.log(arr);
 ```
 [/slide]
 
-[slide]
-# JS Arrays and Invalid Positions
+[slide hideTitle]
+# JavaScript Arrays and Invalid Positions
 
 [vimeo-video]
 [stream language="EN" videoId="489372453/ea5fcbe683" default /]

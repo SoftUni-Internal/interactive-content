@@ -1,35 +1,64 @@
 # Temă de acasă
 
-[slide]
+[slide hideTitle]
 # Problem: Sum Even Numbers
 [code-task title="Sum Even Numbers" taskId="js-fundamentals-1-Arrays-Sum-Even-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function sumEvenNumbers(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
-Scrieți un program care primește o serie de șiruri, analizați-le la numere și însumați doar numerele pare.
+Creați un program care primește o serie de șiruri, analizați-le la numere și însumați doar numerele pare.
 
-# Exemplu
+## Examples
 |**Intrare**|**Ieșire**|
 | --- | --- |
-|`['1','2','3','4','5','6']`| 12 |
-|`['3','5','7','9']`| 0 |
-|`['2','4','6','8','10']`| 30 |
+| sumEvenNumbers(['1', '2', '3', '4', '5', '6']) | 12 |
+| sumEvenNumbers(['3', '5', '7', '9']) | 0 |
+| sumEvenNumbers(['2', '4', '6', '8', '10']) | 30 |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+sumEvenNumbers(['1', '2', '3', '4', '5', '6'])
+[/input]
+[output]
+12
+[/output]
+[/test]
+[test open]
+[input]
+sumEvenNumbers(['3', '5', '7', '9'])
+[/input]
+[output]
+0
+[/output]
+[/test]
+[test open]
+[input]
+sumEvenNumbers(['2', '4', '6', '8', '10'])
+[/input]
+[output]
+30
+[/output]
+[/test]
 [test]
 [input]
-1
-1
-34
-64
-86
+sumEvenNumbers(['1', '1', '34', '64', '86'])
 [/input]
 [output]
 184
@@ -37,13 +66,7 @@ Scrieți un program care primește o serie de șiruri, analizați-le la numere �
 [/test]
 [test]
 [input]
-1
-2
-3
-4
-5
-6
-10
+sumEvenNumbers(['1', '2', '3', '4', '5', '6', '10'])
 [/input]
 [output]
 22
@@ -51,10 +74,7 @@ Scrieți un program care primește o serie de șiruri, analizați-le la numere �
 [/test]
 [test]
 [input]
-13
-55
-37
-19
+sumEvenNumbers(['13', '55', '37', '19'])
 [/input]
 [output]
 0
@@ -62,10 +82,7 @@ Scrieți un program care primește o serie de șiruri, analizați-le la numere �
 [/test]
 [test]
 [input]
-13
-55
-37
-19
+sumEvenNumbers(['13', '55', '37', '19'])
 [/input]
 [output]
 0
@@ -73,10 +90,7 @@ Scrieți un program care primește o serie de șiruri, analizați-le la numere �
 [/test]
 [test]
 [input]
-1
-156
-7
-18
+sumEvenNumbers(['1', '156', '7', '18'])
 [/input]
 [output]
 174
@@ -84,11 +98,7 @@ Scrieți un program care primește o serie de șiruri, analizați-le la numere �
 [/test]
 [test]
 [input]
-3
-14
-0
-8
-18
+sumEvenNumbers(['3', '14', '0', '8', '18'])
 [/input]
 [output]
 40
@@ -100,46 +110,67 @@ Scrieți un program care primește o serie de șiruri, analizați-le la numere �
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Even and Odd Subtraction
 [code-task title="Even and Odd Subtraction" taskId="js-fundamentals-1-Arrays-Even-and-Odd-Substraction" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function evenOdd(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 
-Scrieți un program care calculează diferența dintre suma numerelor pare și suma numerelor impare dintr-o matrice.
+Creați un program care calculează diferența dintre suma numerelor pare și suma numerelor impare dintr-o matrice.
 
-# Exemplu
-   |**Intrare**|**Ieșire**|
-| --- | --- |
-|`['1','2','3','4','5','6']`| 3 |
+## Examples
+| **Intrare** | **Ieșire** |**Comentarii** |
+| :--- | :---: | :---:|
+| evenOdd([1, 2, 3, 4, 5, 6]) | 3 | 2 + 4 + 6 = 12, 1 + 3 + 5 = 9, 12 - 9 = 3|
+| evenOdd([3, 5, 7, 9]) |\-24 ||
+| evenOdd([2, 4, 6, 8, 10]) |30 | |
 
-# Comentarii
-`2 + 4 + 6 = 12, 1 + 3 + 5 = 9, 12 - 9 = 3`
-
-
-# Exemplu
-   |**Intrare**|**Ieșire**|
-| --- | --- |
-|`['3','5','7','9']`|\-24 |
-|`['2','4','6','8','10']`|30 |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+evenOdd([1, 2, 3, 4, 5, 6])
+[/input]
+[output]
+3
+[/output]
+[/test]
+[test open]
+[input]
+evenOdd([3, 5, 7, 9])
+[/input]
+[output]
+\-24
+[/output]
+[/test]
+[test open]
+[input]
+eveOdd([2, 4, 6, 8, 10])
+[/input]
+[output]
+30
+[/output]
+[/test]
 [test]
 [input]
-1
-3
-13
-544
-65
-46
+evenOdd([1, 3, 13, 544, 65, 46])
 [/input]
 [output]
 508
@@ -147,10 +178,7 @@ Scrieți un program care calculează diferența dintre suma numerelor pare și s
 [/test]
 [test]
 [input]
-74
-16
-65
-110
+evenOdd([74, 16, 65, 110])
 [/input]
 [output]
 135
@@ -158,10 +186,7 @@ Scrieți un program care calculează diferența dintre suma numerelor pare și s
 [/test]
 [test]
 [input]
-53
-5
-27
-19
+evenOdd([53, 5, 27, 19])
 [/input]
 [output]
 -104
@@ -169,10 +194,7 @@ Scrieți un program care calculează diferența dintre suma numerelor pare și s
 [/test]
 [test]
 [input]
--53
-485
-328
-194
+evenOdd([-53, 485, 328, 194])
 [/input]
 [output]
 90
@@ -180,12 +202,7 @@ Scrieți un program care calculează diferența dintre suma numerelor pare și s
 [/test]
 [test]
 [input]
-24
-44
-16
-68
-15
-41
+evenOdd([24, 44, 16, 68, 15, 41])
 [/input]
 [output]
 96
@@ -193,11 +210,7 @@ Scrieți un program care calculează diferența dintre suma numerelor pare și s
 [/test]
 [test]
 [input]
-24
-14
-16
--48
-110
+evenOdd([24, 14, 16, -48, 110])
 [/input]
 [output]
 116
@@ -205,11 +218,7 @@ Scrieți un program care calculează diferența dintre suma numerelor pare și s
 [/test]
 [test]
 [input]
-24
--6
-16
-68
-150
+evenOdd([24, -6, 16, 68, 150])
 [/input]
 [output]
 252
@@ -217,11 +226,7 @@ Scrieți un program care calculează diferența dintre suma numerelor pare și s
 [/test]
 [test]
 [input]
-24
-84
-16
-68
--14
+evenOdd([24, 84, 16, 68, -14])
 [/input]
 [output]
 178
@@ -229,11 +234,7 @@ Scrieți un program care calculează diferența dintre suma numerelor pare și s
 [/test]
 [test]
 [input]
-24
-84
-16
-68
--14
+evenOdd([24, 84, 16, 68, -14])
 [/input]
 [output]
 178
@@ -245,64 +246,80 @@ Scrieți un program care calculează diferența dintre suma numerelor pare și s
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Condense Array to Number
 [code-task title="Condense Array to Number" taskId="js-fundamentals-1-Arrays-Condense-Array-To-Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function condense(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 
-Scrieți un program care primește **o serie de numere** și condensați-le prin **însumarea** cuplurilor adiacente de elemente până se obține un **număr unic**.
+Creați un program care primește **o serie de numere** și condensați-le prin **însumarea** cuplurilor adiacente de elemente până se obține un **număr unic**.
 
-# Exemplu
+## Examples
 
-De exemplu, dacă avem 3 elemente `[2, 10, 3]`, însumăm pe primul și al doilea element și apoi pe al doilea și al treilea  și obținem `{2 + 10, 10 + 3} = {12, 13}`, atunci însumăm din nou toate elementele adiacente și obțineți `{12+13} = {25}`.
+De exemplu, dacă avem 3 elemente \[**2, 10, 3**\], însumăm pe primul și al doilea element și apoi pe al doilea și al treilea  și obținem \{**2+10, 10+3**\} = \{**12, 13**\}, atunci însumăm din nou toate elementele adiacente și obțineți \{**12+13**\} = \{**25**\}.
 
-   |**Intrare**|**Ieșire**|
-| --- | --- |
-|`['2','10','3']`| 25 |
+  | **Intrare** | **Ieșire** |**Comentarii** |
+| :--- | :---: | :---:|
+| condense([2, 10, 3]) | 25 |2 10 3 \-\> 2+10 10+3 \-\> 12 13 -> 12 + 13 \-\> 25 |
+| condense([5, 0, 4, 1, 2]) | 35 ||
+| condense(\[1\]) | 1 ||
 
-# Comentarii
-`2 10 3 -> 2+10 10+3 -> 12 13 -> 12 + 13 -> 25`
+## Sugestii
 
-# Exemplu
-   |**Intrare**|**Ieșire**|
-| --- | --- |
-|`['5','0','4','1','2']`| 35 |
-|`['1']`| 1 |
+În timp ce aveți mai multe elemente în matricea **nums**\[\], repetați următoarele:
 
-# Sugestii
+- Alocați o nouă matrice `condensed[]` de dimensiunea **nums**\.**Length**\-**1**
 
-În timp ce aveți mai multe elemente în matricea `nums[]`, repetați următoarele:
+- Însumați numerele din **nums**\[\] to **condensed**\[\]:
+  - **condensed**\[i\] = **nums**\[i\] \+ **nums**\[i\+1\]
 
-- Alocați o nouă matrice `condensed[]` de dimensiunea `nums.Length-1`
-
-- Însumați numerele din `nums[]` to `condensed[]`:
-  -	`condensed[i] = nums[i] + nums[i+1]`
-
--	`nums[] = condensed[]`
+- **nums**\[\] = **condensed**\[\]
 
 [/task-description]
 [tests]
+[test open]
+[input]
+condense([2, 10, 3])
+[/input]
+[output]
+25
+[/output]
+[/test]
+[test open]
+[input]
+condense([5, 0, 4, 1, 2])
+[/input]
+[output]
+35
+[/output]
+[/test]
 [test]
 [input]
-3
-4
-0
-3
-4
-0
-0
-0
-0
+condense([1])
+[/input]
+[output]
 1
-2
+[/output]
+[/test]
+[test]
+[input]
+condense([3, 4, 0, 3, 4, 0, 0, 0, 0, 1, 2])
 [/input]
 [output]
 1255
@@ -310,9 +327,7 @@ De exemplu, dacă avem 3 elemente `[2, 10, 3]`, însumăm pe primul și al doile
 [/test]
 [test]
 [input]
-0
-0
-0
+condense([0, 0, 0])
 [/input]
 [output]
 0
@@ -320,10 +335,7 @@ De exemplu, dacă avem 3 elemente `[2, 10, 3]`, însumăm pe primul și al doile
 [/test]
 [test]
 [input]
--5
--10
--15
--5
+condense([-5, -10, -15, -5])
 [/input]
 [output]
 -85
@@ -331,15 +343,7 @@ De exemplu, dacă avem 3 elemente `[2, 10, 3]`, însumăm pe primul și al doile
 [/test]
 [test]
 [input]
--1
-2
--3
-4
--5
-6
--7
-8
--9
+condense([-1, 2, -3, 4, -5, 6, -7, 8, -9])
 [/input]
 [output]
 0
@@ -347,26 +351,7 @@ De exemplu, dacă avem 3 elemente `[2, 10, 3]`, însumăm pe primul și al doile
 [/test]
 [test]
 [input]
--1
--1
--1
--1
--1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
--1
+condense([-1, -1, -1, -1, -1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, -1])
 [/input]
 [output]
 514214
@@ -374,7 +359,7 @@ De exemplu, dacă avem 3 elemente `[2, 10, 3]`, însumăm pe primul și al doile
 [/test]
 [test]
 [input]
-10
+condense([10])
 [/input]
 [output]
 10
@@ -386,48 +371,79 @@ De exemplu, dacă avem 3 elemente `[2, 10, 3]`, însumăm pe primul și al doile
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Add or Subtract
 [code-task title="Add or Subtract"taskId="js-fundamentals-1-Arrays-Add-or-Substract" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function addOrSubstract(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 
-Scrieți o funcție, care modifică **valoarea** numerelor impare si pare într-o serie de numere.
+Creați un program, care modifică **valoarea** numerelor impare si pare într-o serie de numere.
 
 - Dacă numărul este **par**-**adăugați** la valoarea sa poziția indexului
 
 - Dacă numărul este **impar**-**scadeți** de la valoarea sa poziția indexului
 
 
-# Ieșire
+## Ieșire
 
 Pe prima linie tipăriți **matricea recent modificată**, pe a doua linie tipăriți suma numerelor din matricea **originală**, pe a treia linie tipăriți suma numerelor din **matricea modificată.**
 
+
+## Example One
    |**Intrare**|**Ieșire**|
 | --- | --- |
-|`['5', '15', '23', '56', '35']`| `[ 5, 14, 21, 59, 31 ]` |
+| addOrSubtract([5, 15, 23, 56, 35]) | [ 5, 14, 21, 59, 31 ] |
 || 134|
 || 130 |
-|`[-5, 11, 3, 0, 2]`| `[ 5, 14, 21, 59, 31 ]` |
+
+## Example Two
+|**Intrare**|**Ieșire**|
+| --- | --- |
+| addOrSubtract([-5, 11, 3, 0, 2]) | [ 5, 14, 21, 59, 31 ] |
 || 11|
 || 15 |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+addOrSubtract([5, 15, 23, 56, 35])
+[/input]
+[output]
+[ 5, 14, 21, 59, 31 ]
+134
+130
+[/output]
+[/test]
+[test open]
+[input]
+addOrSubtract([-5, 11, 3, 0, 2])
+[/input]
+[output]
+[ -5, 10, 1, 3, 6 ]
+11
+15
+[/output]
+[/test]
 [test]
 [input]
-2
-5
--6
-32
-12
+addOrSubtract([2, 5, -6, 32, 12])
 [/input]
 [output]
 [ 2, 4, -4, 35, 16 ]
@@ -437,11 +453,7 @@ Pe prima linie tipăriți **matricea recent modificată**, pe a doua linie tipă
 [/test]
 [test]
 [input]
-8
-32
--112
-21
-37
+addOrSubtract([8, 32, -112, 21, 37])
 [/input]
 [output]
 [ 8, 33, -110, 18, 33 ]
@@ -451,11 +463,7 @@ Pe prima linie tipăriți **matricea recent modificată**, pe a doua linie tipă
 [/test]
 [test]
 [input]
-1
--4
-312
-124
--1
+addOrSubtract([1, -4, 312, 124, -1])
 [/input]
 [output]
 [ 1, -3, 314, 127, -5 ]
@@ -465,11 +473,7 @@ Pe prima linie tipăriți **matricea recent modificată**, pe a doua linie tipă
 [/test]
 [test]
 [input]
-6
-15
--6
-16
-77
+addOrSubtract([6, 15, -6, 16, 77])
 [/input]
 [output]
 [ 6, 14, -4, 19, 73 ]
@@ -479,11 +483,7 @@ Pe prima linie tipăriți **matricea recent modificată**, pe a doua linie tipă
 [/test]
 [test]
 [input]
-18
-15
-122
-11
-7
+addOrSubtract([18, 15, 122, 11, 7])
 [/input]
 [output]
 [ 18, 14, 124, 8, 3 ]
@@ -493,11 +493,7 @@ Pe prima linie tipăriți **matricea recent modificată**, pe a doua linie tipă
 [/test]
 [test]
 [input]
-19
-5
-123
-17
-79
+addOrSubtract([19, 5, 123, 17, 79])
 [/input]
 [output]
 [ 19, 4, 121, 14, 75 ]
@@ -511,43 +507,73 @@ Pe prima linie tipăriți **matricea recent modificată**, pe a doua linie tipă
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Array Rotation
 [code-task title="Array Rotation"taskId="js-fundamentals-1-Arrays-Array-Rotation" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function arrayRotation(arr){
-  // Write your code here
+function arrayRotation(arr, num){
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 
-Scrieți o funcție care primește o **matrice** și numărul de rotații pe care trebuie să le efectuați (primul element merge la sfârșit).
+Creați un program care primește o **matrice** și numărul de rotații pe care trebuie să le efectuați (primul element merge la sfârșit).
 
 Primul element al matricei de intrare este numărul de rotații pe care trebuie să le efectuați, deci matricea cu care trebuie să efectuați acțiunile începe pe al doilea element al matricei inițiale.
 
-# Ieșire
+## Ieșire
 
 Imprimați elementele matrice rezultate, separați printr-un singur spațiu.
 
+## Examples
 |**Intrare**|**Ieșire**|
 | --- | --- |
-|`['2','51', '47', '32', '61', '21']`| 32 61 21 51 47 |
-|`['4', '32', '21', '61', '1']`| 32 21 61 1 |
-|`['5', '2', '4', '15', '31']`|4 15 31 2|
+| arrayRotation([51, 47, 32, 61, 21], 2) | 32 61 21 51 47 |
+| arrayRotation([32, 21, 61, 1], 4) | 32 21 61 1 |
+| arrayRotation([2, 4, 15, 31], 5) |4 15 31 2|
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+arrayRotation([51, 47, 32, 61, 21], 2)
+[/input]
+[output]
+32 61 21 51 47
+[/output]
+[/test]
+[test open]
+[input]
+arrayRotation([32, 21, 61, 1], 4)
+[/input]
+[output]
+32 21 61 1
+[/output]
+[/test]
+[test open]
+[input]
+arrayRotation([2, 4, 15, 31], 5)
+[/input]
+[output]
+4 15 31 2
+[/output]
+[/test]
 [test]
 [input]
-1
-1
-47
-32
-61
-91
+arrayRotation([1, 47, 32, 61, 91], 1)
 [/input]
 [output]
 47 32 61 91 1
@@ -555,12 +581,7 @@ Imprimați elementele matrice rezultate, separați printr-un singur spațiu.
 [/test]
 [test]
 [input]
-2
-451
-47
-32
-61
-12
+arrayRotation([451, 47, 32, 61, 12], 2)
 [/input]
 [output]
 32 61 12 451 47
@@ -568,11 +589,7 @@ Imprimați elementele matrice rezultate, separați printr-un singur spațiu.
 [/test]
 [test]
 [input]
-3
-31 
-21
-69
-1
+arrayRotation([31, 21, 69, 1], 3)
 [/input]
 [output]
 1 31 21 69
@@ -580,11 +597,7 @@ Imprimați elementele matrice rezultate, separați printr-un singur spațiu.
 [/test]
 [test]
 [input]
-4
-3
-21
-7
-1
+arrayRotation([3, 21, 7, 1], 4) 
 [/input]
 [output]
 3 21 7 1
@@ -592,11 +605,7 @@ Imprimați elementele matrice rezultate, separați printr-un singur spațiu.
 [/test]
 [test]
 [input]
-10
-22
-4
-4
-15
+arrayRotation([22, 4, 4, 15], 10)
 [/input]
 [output]
 4 15 22 4
@@ -604,8 +613,7 @@ Imprimați elementele matrice rezultate, separați printr-un singur spațiu.
 [/test]
 [test]
 [input]
-11
-15
+arrayRotation([15], 11)
 [/input]
 [output]
 15
@@ -613,64 +621,94 @@ Imprimați elementele matrice rezultate, separați printr-un singur spațiu.
 [/test]
 [test]
 [input]
-0
-21
-69
-4
+arrayRotation([21, 69, 4], 0)
 [/input]
 [output]
 21 69 4
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Magic Sum
 [code-task title="Magic Sum"taskId="js-fundamentals-1-Arrays-Magic-Sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function magicSum(input){
-  // Write your code here
+function magicSum(arr, num){
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
-Scrieți o funcție, care imprimă toate perechile **unice** într-o matrice de numere întregi a căror **sumă este egală** cu un număr dat.
 
-**Numărul dat va fi primul element din matrice.**
+Create a program, which prints all **unique** pairs are **an array of integers** whose **sum** is **equal** to a given number. 
 
-# Exemplu
+## Example One
 |**Intrare**|**Ieșire**|
 | --- | --- |
-|`['8', '1', '7', '6', '2', '19', '23']`| 1 7 |
+| magicSum([1, 7, 6, 2, 19, 23], 8) | 1 7 |
 || 6 2 |
 
+## Example Two
 |**Intrare**|**Ieșire**|
 | --- | --- |
-|`['27', '14', '20', '60', '13', '7', '19', '8']`| 14 13 |
+| magicSum([14, 20, 60, 13, 7, 19, 8], 27) | 14 13 |
 ||20 7 |
 ||19 8 |
 
+## Example Three
 |**Intrare**|**Ieșire**|
 | --- | --- |
-|`['6', '1', '2', '3', '4', '5', '6']`| 1 5 |
+| magicSum([1, 2, 3, 4, 5, 6], 6) | 1 5 |
 || 2 4 |
 
+
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+magicSum([1, 7, 6, 2, 19, 23], 8)
+[/input]
+[output]
+1 7
+6 2
+[/output]
+[/test]
+[test open]
+[input]
+magicSum([14, 20, 60, 13, 7, 19, 8], 27)
+[/input]
+[output]
+14 13
+20 7
+19 8
+[/output]
+[/test]
+[test open]
+[input]
+magicSum([1, 2, 3, 4, 5, 6], 6)
+[/input]
+[output]
+1 5
+2 4
+[/output]
+[/test]
 [test]
 [input]
-14
-1
-5
-3
-7
-7
+magicSum([1, 5, 3, 7, 7], 14)
 [/input]
 [output]
 7 7
@@ -678,13 +716,7 @@ Scrieți o funcție, care imprimă toate perechile **unice** într-o matrice de 
 [/test]
 [test]
 [input]
-15
-14
-67
-43
-7
-19
-8
+magicSum([14, 67, 43, 7, 19, 8], 15)
 [/input]
 [output]
 7 8
@@ -692,13 +724,7 @@ Scrieți o funcție, care imprimă toate perechile **unice** într-o matrice de 
 [/test]
 [test]
 [input]
-6
-43
-1
-23
-43
-45
-5
+magicSum([43, 1, 23, 43, 45, 5], 6)
 [/input]
 [output]
 1 5
@@ -706,13 +732,7 @@ Scrieți o funcție, care imprimă toate perechile **unice** într-o matrice de 
 [/test]
 [test]
 [input]
-7
-6
-5
-3
-4
-3
-3
+magicSum([6, 5, 3, 4, 3, 3], 7)
 [/input]
 [output]
 3 4
@@ -722,10 +742,7 @@ Scrieți o funcție, care imprimă toate perechile **unice** într-o matrice de 
 [/test]
 [test]
 [input]
-46
-46
-3
-43
+magicSum([46, 3, 43], 46)
 [/input]
 [output]
 3 43
@@ -733,11 +750,7 @@ Scrieți o funcție, care imprimă toate perechile **unice** într-o matrice de 
 [/test]
 [test]
 [input]
-5
-4
-1
-2
-3
+magicSum([4, 1, 2, 3], 5)
 [/input]
 [output]
 4 1
@@ -745,13 +758,5 @@ Scrieți o funcție, care imprimă toate perechile **unice** într-o matrice de 
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
-[/slide]
-
-[slide]
-# Rezultatele Temei de casa
-[tasks-results/]
-
 [/slide]

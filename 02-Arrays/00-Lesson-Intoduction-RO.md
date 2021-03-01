@@ -10,7 +10,7 @@
 
 **1. Definiție**
 
-- Ce este o matrice?
+- Ce este o matrice
 
 **2. Operațiuni**
 

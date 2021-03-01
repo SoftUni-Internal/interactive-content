@@ -1,12 +1,8 @@
 # Operațiuni
 
-[slide]
+[slide hideTitle]
 # Metode de matrice
 
-[vimeo-video]
-[stream language="EN" videoId="489372517/068155927c" default /]
-[stream language="RO" videoId="489372517/068155927c"  /]
-[/video-vimeo]
 
 Unele operații care funcționează cu matrice ar putea funcționa și cu valori asemănătoare matricei.
 
@@ -41,15 +37,11 @@ console.log(arr);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Usage
 
-[vimeo-video]
-[stream language="EN" videoId="489372490/1ebd778a3f" default /]
-[stream language="RO" videoId="489372490/1ebd778a3f"  /]
-[/video-vimeo]
 
-- `includes()`: Returnează `true` dacă matricea conține valoarea plasată în paranteze searchElement și` false` în cazul contrar
+- `includes()`: Returnează `true` dacă matricea conține valoarea plasată în paranteze searchElement și "**false**" în cazul contrar
 
 ``` js live
 let arr = [10, 20, 30];
