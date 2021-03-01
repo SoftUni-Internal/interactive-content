@@ -299,13 +299,13 @@ System.out.println(car.carInfo());
 [input]
 3
 Chevrolet Impala 390
-BMW E320 500
-Big Car 49
+TESLA MODEL-S 503
+DACIA DUSTER 149
 [/input]
 [output]
 The car is: Chevrolet Impala - 390 HP.
-The car is: BMW E320 - 500 HP.
-The car is: Big Car - 49 HP.
+The car is: TESLA MODEL-S - 503 HP.
+The car is: DACIA DUSTER - 149 HP.
 [/output]
 [/test]
 [test open]
