@@ -145,7 +145,7 @@ public static void main(String[] args) throws IOException {
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.\*;
+import static org.junit.Assert.*;
 
 public class T01TestClassExists \{
 
@@ -607,7 +607,7 @@ public class T03TestIncreaseSalary \{
         fieldSalary.setAccessible(true);
         double salary = (double) fieldSalary.get(person);
 
-        return salary == PERSON_SALARY + PERSON_SALARY \* PERSON_BONUS / 100.0;
+        return salary == PERSON_SALARY + PERSON_SALARY * PERSON_BONUS / 100.0;
     \}
 
     private boolean correctIncreaseSalaryOfYoungPerson(Method method, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
