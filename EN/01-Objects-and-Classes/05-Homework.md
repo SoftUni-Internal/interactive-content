@@ -165,12 +165,11 @@ John 31
 Steven 48
 [/input]
 [output]
-Nick - 33
-John - 88
-Leo - 44
+John - 31
+Steven - 48
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 5
 Nick 33
