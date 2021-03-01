@@ -42,17 +42,39 @@ Every valid date has the following characteristics:
 Use a group **backreference** to check for this.
 
 
-# Example
+## Example One
 
 | **Input** | **Output** |
 | --- | --- |
-| matchDate(['13/Jul/1928, 10-Nov-1934 , 01/Jan-1951, 25.Dec.1937, 23/09/1973, 1/Feb/2016']) | Day\: 13\, Month\: Jul\, Year\: 1928 |
+| matchDate('13/Jul/1928, 10-Nov-1934 , 01/Jan-1951, 25.Dec.1937, 23/09/1973, 1/Feb/2016') | Day\: 13\, Month\: Jul\, Year\: 1928 |
 | | Day\: 10\, Month\: Nov\, Year\: 1934 |
 | | Day\: 25\, Month\: Dec\, Year\: 1937 |
-| matchDate(['28-Mar-2000']) | Day\: 28\, Month\: Mar\, Year\: 2000 |
+
+## Example Two
+| **Input** | **Output** |
+| --- | --- |
+| matchDate('28-Mar-2000') | Day\: 28\, Month\: Mar\, Year\: 2000 |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+matchDate('13/Jul/1928, 10-Nov-1934 , 01/Jan-1951, 25.Dec.1937, 23/09/1973, 1/Feb/2016')
+[/input]
+[output]
+ Day\: 13\, Month\: Jul\, Year\: 1928
+Day\: 10\, Month\: Nov\, Year\: 1934
+Day\: 25\, Month\: Dec\, Year\: 1937
+[/output]
+[/test]
+[test open]
+[input]
+matchDate('28-Mar-2000')
+[/input]
+[output]
+Day\: 28\, Month\: Mar\, Year\: 2000
+[/output]
+[/test]
 [test]
 [input]
 matchDate(['13\/Jul\/1928\, 10\-Nov\-1934\, 01\/Jan\-1951\, 25\.Dec\.1937\, 23\/09\/1973\, 1\/Feb\/2016'])
@@ -227,7 +249,7 @@ And on the last line, print the following:
 
 **Total money spent:** \{**spent money**\} formatted to the second decimal point.
 
-# Example
+## Example One
 
 | **Input** | **Output** |
 | --- | --- |
@@ -235,6 +257,11 @@ And on the last line, print the following:
 | | Sofa |
 | | TV |
 | | Total money spent\: 2436\.69 |
+
+## Example Two
+
+| **Input** | **Output** |
+| --- | --- |
 | furniture(['>>Chair<<34.44!1', '>>Table<44.44!2', 'Purchase']) | Bought furniture\: |
 | | Chair |
 | | Total money spent\: 34\.44 |
@@ -242,6 +269,25 @@ And on the last line, print the following:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+furniture(['\>\>Sofa\<\<312\.23\!3', '\>\>TV\<\<300\!5', '\>Invalid\<\<\!5', 'Purchase'])
+[/input]
+[output]
+Sofa
+TV
+Total money spent\: 2436\.69
+[/output]
+[/test]
+[test open]
+[input]
+furniture(['\>\>Chair\<\<34.44\!1', '\>\>Table\<44\.44\!2', 'Purchase'])
+[/input]
+[output]
+Chair
+Total money spent\: 34\.44 
+[/output]
+[/test]
 [test]
 [input]
 furniture(['\>\>Sofa\<\<312\.23\!3', '\>\>TV\<\<300\!5', '\>Invalid\<\<\!5', 'Purchase'])
@@ -380,7 +426,7 @@ In the end print out the top 3 racers, ordered by their distance in **descending
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 race(['George\, Peter\, Bill\, Tom', 'G4e\@55or\%6g6\!68e\!\!\@', 'R1\@\!3a\$y4456\@', 'B5\@i\@\#123ll', 'G\@e54o\$r6ge\#', '7P\%et\^\#e5346r', 'T\$o553m\&6', 'end of race'])
 [/input]
@@ -497,7 +543,7 @@ When you receive "end of shift" print the total amount of money for the day, rou
 
 **Total income:** \{**income**\}.
 
-# Example 
+## Example One
 
 | **Input** | **Output** |
 | --- | --- |
@@ -505,12 +551,17 @@ When you receive "end of shift" print the total amount of money for the day, rou
 | | Peter\: Gum \- 1\.30 |
 | | Maria\: Cola \- 2\.40 |
 | | Total income\: 24\.30 |
+
+## Example Two
+
+| **Input** | **Output** |
+| --- | --- |
 | income(['\%InvalidName\%\<Croissant\>\|2\|10.3\$', '\%Peter\%\<Gum\>1.3\$', '\%Maria\%\<Cola\>\|1\|2.4', '\%Valid\%\<Valid\>valid\|10\|valid20\$', 'end of shift']) | Valid\: Valid \- 200\.00 |
 | | Total income\: 200\.00 |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 income(['\%George\%\<Croissant\>\|2\|10\.3\$', '\%Peter\%\<Gum\>\|1\|1\.3\$', '\%Maria\%\<Cola\>\|1\|2\.4\$', 'end of shift'])
 [/input]
@@ -521,7 +572,7 @@ Maria\: Cola \- 2\.40
 Total income\: 24\.30
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 income(['\%InvalidName\%\<Croissant\>\|2\|10\.3\$', '\%Peter\%\<Gum\>1\.3\$', '\%Maria\%\<Cola\>\|1\|2\.4', '\%Valid\%\<Valid\>valid\|10\|valid20\$', 'end of shift'])
 [/input]
