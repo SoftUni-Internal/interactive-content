@@ -79,7 +79,7 @@ It is also used to describe the **return value** of `remove()`.
 
 [slide hideTitle]
 # Problem with Solution: Jar of T
-[code-task title="Jar of T" timeLimit=5000 taskId="oop-basics-java-generics-lab-Jar-of-T" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-task title="Jar of T" timeLimit=5000 taskId="oop-basics-java-generics-lab-Jar-of-T" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30"]
 ```
 
