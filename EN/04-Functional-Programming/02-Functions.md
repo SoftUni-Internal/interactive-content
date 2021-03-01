@@ -132,7 +132,7 @@ int b = increment.apply(a);
 [/slide]
 
 [slide hideTitle]
-# Problem: Sum Numbers
+# Problem with Solution: Sum Numbers
 [code-task title="Sum Numbers" taskId="oop-basics-java-functional-programming-lab-Sum-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
