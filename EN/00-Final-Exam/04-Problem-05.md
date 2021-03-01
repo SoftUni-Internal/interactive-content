@@ -58,17 +58,14 @@ One line is printed to the console:
 |careOfPuppy([2, 999, 456, 999, 999, 123, 456, 'Adopted']) | Food is not enough. You need 2032 grams more. |
 |careOfPuppy([4, 130, 345, 400, 180, 230, 120, 'Adopted']) | Food is enough! Leftovers: 2595 grams. |
 
-**Comments**
-
-- The **purchased** amount of food is 4 kg = 4 \* 1000 = 4000 grams.
-
-- The **total amount of food** that the puppy ate before adoption was:
-
- 130 \+ 345 \+ 400 \+ 180 \+ 230 \+ 120 = 1405 grams.
-
-- **This quantity is less than the originally purchased 4000 grams:**
-
-The food left is: 4000 \- 1405 \= 2595 grams.
+[hints]
+[hint]
+Calculate the total amount of food in grams. Then determine the total amount of food the puppy ate before it was adopted.
+[/hint]
+[hint]
+Check if there is any food left and print the correct output.
+[/hint]
+[/hints]
 
 [/task-description]
 [code-io /]
