@@ -31,7 +31,7 @@ Analogically we can use:
 
 [slide hideTitle]
 # Problem with Solution: Sum Numbers
-[code-task title="Sum Numbers" taskId="oop-basics-java-functional-programming-lab-Sum-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sum Numbers" taskId="oop-basics-java-functional-programming-lab-Sum-Numbers-BiFunction" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
