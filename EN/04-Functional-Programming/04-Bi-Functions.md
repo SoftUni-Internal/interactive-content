@@ -174,7 +174,7 @@ int d = operation(b, number -> number % 2); // b = 0;
 
 
 [slide hideTitle]
-# Problem: Filter by Age
+# Problem with Solution: Filter by Age
 [code-task title="Filter by Age" taskId="oop-basics-java-functional-programming-lab-Filter-by-Age" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -209,33 +209,33 @@ Depending on the **condition**, print the **pairs** in the right **format**.
 **Write your own methods.**
 
 
-# Example
+# Examples
 
 ## Example 1
 | **Input** | **Output** |                                 
 | --- | --- |
-| 5 | Peter - 20
+| 5 | Peter - 20 |
 | Peter - 20 | Maria - 29 |  
 | George, 18 | Alex - 31 |
-| Maria, 29 |
-| Alex, 31 |
-| Ivan, 16 |
-| older |
-| 20 |
-| name age |
+| Maria, 29 | |
+| Alex, 31 | |
+| Ivan, 16 | |
+| older | |
+| 20 | |
+| name age | |
 
 ## Example 2
 | **Input** | **Output** |
 | --- | --- |
-| 5 | Peter 
+| 5 | Peter |
 | Peter - 20 | George |  
 | George, 18 | Ivan |
-| Maria, 29 |
-| Alex, 31 |
-| Ivan, 16 |
-| younger |
-| 20 |
-| name |
+| Maria, 29 | |
+| Alex, 31 | |
+| Ivan, 16 | |
+| younger | |
+| 20 | |
+| name | |
 
 ## Example 3
 | **Input** | **Output** |
@@ -245,10 +245,10 @@ Depending on the **condition**, print the **pairs** in the right **format**.
 | George, 18 | 29 |
 | Maria, 29 | 31 |
 | Alex, 31 | 16 |
-| Ivan, 16 |
-| younger |
-| 50 |
-| age |
+| Ivan, 16 | |
+| younger | |
+| 50 | |
+| age | |
 
 
 [/task-description]
