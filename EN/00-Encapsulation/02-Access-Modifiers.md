@@ -97,7 +97,8 @@ Create a class **Person**, which should have **private** fields for:
 ## You should be able to use the class like this:
 ```java
 public static void main(String[] args) throws IOException {
-    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    BufferedReader reader = 
+    new BufferedReader(new InputStreamReader(System.in));
     int n = Integer.parseInt(reader.readLine());
 
     List<Person> people = new ArrayList<>();
@@ -369,18 +370,8 @@ Test Passed!
 
 [slide hideTitle]
 # Problem with Solution: Salary Increase
-[code-task title="Salary Increase" taskId="Java-OOP-Advanced-Encapsulation-Salary-Increase" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
+[code-task title="Salary Increase" timeLimit=5000 taskId="Java-OOP-Advanced-Encapsulation-Salary-Increase" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-upload allowedMemory="30" /]
 [task-description]
 ## Description
 Read a person with their **names**, **age** and **salary**. 
@@ -427,7 +418,6 @@ public static void main(String[] args) throws IOException {
 | 20 |  |
 
 [/task-description]
-[code-io /]
 [tests]
 [test]
 [input]

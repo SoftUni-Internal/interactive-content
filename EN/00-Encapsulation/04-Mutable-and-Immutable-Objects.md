@@ -90,18 +90,9 @@ class Team {
 
 [slide hideTitle]
 # Problem with Solution: First and Reserve Team
-[code-task title="First and Reserve Team" taskId="Java-OOP-Advanced-Encapsulation-First-and-Reserve-Team" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="First and Reserve Team" timeLimit=5000 taskId="Java-OOP-Advanced-Encapsulation-First-and-Reserve-Team" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 Create a **Team** class. 
@@ -160,7 +151,6 @@ for (Person player : players) {
 | Bob Manner 35 555 |  |
 
 [/task-description]
-[code-io /]
 [tests]
 [test]
 [input]
