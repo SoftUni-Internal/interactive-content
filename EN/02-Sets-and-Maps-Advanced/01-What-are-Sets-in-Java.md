@@ -3,6 +3,8 @@
 [slide hideTitle]
 # What are Sets in Java?
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-3-4-Sets-In-Java-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The Java **Collection Framework** contains numerous **interfaces**, one of which is the **Set** Interface, that provides the features of the mathematical set in Java.
 
 The **Set** interface extends the **Collection** interface.

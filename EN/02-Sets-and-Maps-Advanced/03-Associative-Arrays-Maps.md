@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Associative Arrays: Maps
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-16-17-Associative-Arrays-Maps-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 You have learned that Arrays store items as an ordered collection and you have to access them with an index number - **int type**.
 
 An Associative Array, however, stores items in **key** - **value** pairs, and you can access them by an index of another type (e.g. a "String").
