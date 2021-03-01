@@ -1,14 +1,10 @@
-# Prezentare generală a funcțiilor
+# Prezentare Generală a Funcțiilor
 
-[slide]
-# Funcțiile în JS
+[slide hideTitle]
+# Funcțiile în JavaScript
 
-[vimeo-video]
-[stream language="EN" videoId="489373212/52cac3ad3a" default /]
-[stream language="RO" videoId="489373212/52cac3ad3a"  /]
-[/video-vimeo]
 
-O funcție este un subprogram conceput pentru a efectua o anumită sarcină.
+O funcție este un **subprogram** conceput pentru a efectua o anumită sarcină.
 
 Funcțiile sunt executate atunci când sunt apelate, ceea ce este cunoscut sub numele de **invocarea unei funcții.**
 
@@ -16,7 +12,7 @@ Valorile pot fi transmise în funcții și utilizate în cadrul funcției.
 
 ``` js live
 function printStars(count) {
-  console.log("*".repeat(count));
+  console.log('*'.repeat(count));
 }
 
 printStars(4)
@@ -29,20 +25,14 @@ Datele pot fi **transmise** funcțiilor ca **parametrii**.
 Funcțiile pot **returna și date**, ca **rezultatul lor**.
 [/slide]
 
-[slide]
-# De ce să folosiți funcțiile?
-
-[vimeo-video]
-[stream language="EN" videoId="489373210/d53616bcb4" default /]
-[stream language="RO" videoId="489373210/d53616bcb4"  /]
-[/video-vimeo]
-
+[slide hideTitle]
+# De ce să Folosiți Funcțiile?
 
 Motivele pentru care trebuie folosite funcțiile sunt:
-  - Împart problemele mari **în bucăți mici**
-  - **O mai bună organizare** a codului programului
-  - Îmbunătățește  **lizibilitatea** codului
-  - Îmbunătățește  **înțelegerea** codului
-  - Îmbunătățește codul **mentenabilitatea** codului
-  - Codul poate fi **reutilizat**, folosind funcțiile existente de mai multe ori
+- Împart problemele mari **în bucăți mici**
+- **O mai bună organizare** a codului programului
+- Îmbunătățește  **lizibilitatea** codului
+- Îmbunătățește  **înțelegerea** codului
+- Îmbunătățește codul **mentenabilitatea** codului
+- Codul poate fi **reutilizat**, folosind funcțiile existente de mai multe ori
 [/slide]

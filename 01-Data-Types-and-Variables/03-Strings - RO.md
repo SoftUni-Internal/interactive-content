@@ -1,6 +1,6 @@
 [slide hideTitle]
 
-# Ce sunt șirurile?
+# Ce Sunt Șirurile?
 
 
 Un șir este un tip de date care se folosește pentru a prezenta un **text** și care reprezintă o **secvență** de caractere.
@@ -23,7 +23,7 @@ console.log(myString.length);
 [slide hideTitle]
 
 
-# Șirurile sunt neschimbătoare
+# Șirurile Sunt Neschimbătoare
 
 
 Țineți minte că putem să scoatem doar elemente individuale ale șirului, dar nu putem să modificăm elementele care se află înlăuntrul șirului.
@@ -46,7 +46,7 @@ console.log(myString);
 
 [slide hideTitle]
 
-# Interpolarea șirurilor
+# Interpolarea Șirurilor
 
 
 Înlocuirea **substituenților** cu valori înlăuntrul unui șir literal se numește **interpolarea** șirului. 

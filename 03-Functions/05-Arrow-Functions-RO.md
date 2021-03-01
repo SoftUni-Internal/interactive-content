@@ -1,12 +1,8 @@
-# Funcții săgeată
+# Arrow Functions
 
-[slide]
-# Funcții săgeată
+[slide hideTitle]
+# What are Arrow Functions?
 
-[vimeo-video]
-[stream language="EN" videoId="489373607/d385422a18" default /]
-[stream language="RO" videoId="489373607/d385422a18"  /]
-[/video-vimeo]
 
 Funcții săgeată `=>` au fost introduse cu [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript). 
 
@@ -18,7 +14,7 @@ Funcțiile săgeți nu pot înlocui funcțiile standard peste tot.
 
 Există unele contexte în care nu le putem folosi și vom vedea de ce.
 
-Example:
+## Example:
 
 - Sintaxa funcției:
 

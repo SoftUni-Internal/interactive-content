@@ -70,12 +70,8 @@ Vă încurajăm să folosiți `let` când **declarați variabile**, pentru că a
 
 [slide hideTitle]
 
-# Domeniul variabilei  
+# Domeniul Variabilei  
 
-[vimeo-video]
-[stream language="EN" videoId="489371276/4ac6b52083" default /]
-[stream language="RO" videoId="489371276/4ac6b52083"  /]
-[/video-vimeo]
 
 Domeniul înseamnă **viața** variabilei sau locul unde variabila este **vizibilă**. 
 
@@ -132,7 +128,7 @@ Al patrulea tip de domeniu este **domeniul obiectului**, care este înrudit cu *
 
 [slide hideTitle]
 
-# Numirea variabilelor
+# Numirea Variabilelor
 
 
 Când creăm o variabilă, folosim `cammelCase`, ceea ce înseamnă că variabila începe cu o **literă mică** și fiecare cuvânt următor începe cu o **literă mare**.

@@ -1,12 +1,8 @@
-[slide]
+[slide hideTitle]
 # Recapitulare
 
-[vimeo-video]
-[stream language="EN" videoId="489373802/dc043536a7" default /]
-[stream language="RO" videoId="489373802/dc043536a7"  /]
-[/video-vimeo]
 
-**În această lecție am învățat următoarele:**
+## În această lecție am învățat următoarele:
 
 - Funcțiile sunt adesea folosite pentru a împărți programele mari în bucăți simple de cod
 
@@ -32,4 +28,11 @@ function myFunction(input){
 
 myFunction('Hello JavaScript!');
 ```
+
+## In the next lesson, you will learn:
+
+- Basic operations over arrays
+  - manipulating arrays
+  - array iteration
+  - mapping and sorting arrays
 [/slide]

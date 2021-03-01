@@ -1,8 +1,8 @@
-# Valori booleene
+# Valori Booleene
 
 [slide hideTitle]
 
-# Ce este o valoare booleană?
+# Ce Este o Valoare Booleană?
 
 
 Valorile booleene poartă numele lui [George Boole](https://en.wikipedia.org/wiki/George_Boole), un matematician englez.
@@ -25,7 +25,7 @@ Comparațiile booleene sunt cel mai adesea plasate în construcția "**if**", si
 [/slide]
 [slide hideTitle]
 
-# Comparații și condiții
+# Comparații și Condiții
 
 Exemple de operatori de comparație:
 
@@ -40,7 +40,7 @@ Exemple de operatori de comparație:
 | `>=` | mai mare sau egal cu (fără tip) | `if (6 >= 6)` |
 | `<=` | mai mic sau egal cu (fără tip) | `if(6 <= 6)` |
 
-## Exemple booleene:
+## Exemple Booleene:
 
 Totul cu o "valoare" este "**true**":
 
@@ -283,11 +283,11 @@ amazingNumbers(65451)
 
 [slide hideTitle]
 
-# The Typeof operator
+# The Typeof Operator
 
 JavaScript în sine oferă un operator numit `typeof` pentru tot ceea ce funcționează într-un mod simplu.
 
-`typeof` **returnează un șir**din ceea ce este un tip de date de valori, deci pentru un obiect, `object` care se returnează  și pentru un șir `string`.
+`typeof` **returnează un șir** din ceea ce este un tip de date de valori, deci pentru un obiect, `object` care se returnează  și pentru un șir `string`.
 
 Cu toate acestea, tipurile de date JavaScript și operatorul `typeof` nu sunt tocmai perfecte.
 

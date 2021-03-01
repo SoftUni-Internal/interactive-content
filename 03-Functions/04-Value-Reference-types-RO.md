@@ -1,19 +1,15 @@
-# Valoare vs. Tipuri de referință
+# Valoare vs. Tipuri de Referință
 
-[slide]
+[slide hideTitle]
 
-# Valoare și tipuri de referință
+# Valoare și Tipuri de Referință
 
-[vimeo-video]
-[stream language="EN" videoId="489373589/a2a27866c0" default /]
-[stream language="RO" videoId="489373589/a2a27866c0"  /]
-[/video-vimeo]
 
 Tipurile de valori și tipurile de referință sunt cele două categorii principale de tipuri JavaScript
 
 [image assetsSrc="Value-vs-Reference-Types(1).gif" /]
 
-# Tipuri de valori
+## Tipuri de valori
 
 O variabilă a unui tip de valoare (date primitive) conține o instanță de tip și păstrează direct valoarea acestora.
 
@@ -26,7 +22,7 @@ Metoda apelată nu are acces la valoarea primitivă originală și, prin urmare,
 
 Metoda apelată poate modifica valoarea copiată.
 
-- Tipurile de date primitive sunt: `undefined`, `boolean`, `number`, `string`, `bigint` și `symbol`.
+- Tipurile de date primitive sunt: **undefined**, **boolean**, **number**, **string**, **bigint** și **symbol**.
 
 ```js
 i = 42;
@@ -35,7 +31,7 @@ result = true;
 ```
 
 
-# Tipuri de referință
+## Tipuri de Referință
 
 Variabilele de **tip referință**  conțin o referință \(indicator, adresă de memorie\) a valorii în sine.
 
@@ -43,19 +39,18 @@ Atunci când un tip de referință este atribuit unui alt tip de referință, am
 
 Când un obiect este trecut într-o metodă, metoda numită poate schimba conținutul obiectului transmis acestuia, dar nu și adresa obiectului.
 
-- Datele de tip referință sunt următoarele: `object`, `Array` and `function`.
-
+- Datele de tip referință sunt următoarele: **object**, **array** and **function**.
 
 
 ```js
-let cars = ["NIO", "XPang", "Tesla"];
-let obj = {firstName:"Maria", lastName:"Agarici"};
+let cars = ['NIO', 'XPang', 'Tesla'];
+let obj = {firstName:'Maria', lastName:'Agarici'};
 ```
 
 [/slide]
 
-[slide]
-# Valoare și tipuri de referință: Demo
+[slide hideTitle]
+# Valoare și Tipuri de Referință: Demo
 
 [vimeo-video]
 [stream language="EN" videoId="489373150/9d47a9faca" default /]

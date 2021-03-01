@@ -1,5 +1,5 @@
 [slide]
-# Lecție introductivă
+# Lecție Introductivă
 [vimeo-video]
 [stream language="EN" videoId="489372226/26eeb00a96" default /]
 [stream language="RO" videoId="489372226/26eeb00a96"  /]

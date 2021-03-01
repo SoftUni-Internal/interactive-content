@@ -1,7 +1,7 @@
 # Definiție
 
 [slide hideTitle]
-# Ce sunt matricele?
+# Ce Sunt Matricele?
 
 
 Știți deja cum să stocați **date unice într-o singură variabilă.**
@@ -51,7 +51,7 @@ Folosind metoda `Array.length` putem obține o variabilă, care conține lungime
 [/slide]
 
 [slide hideTitle]
-# Crearea unei matrice
+# Crearea Unei Matrice
 
 
 Există două moduri de a crea o matrice:
@@ -344,7 +344,7 @@ Invalid day!
 [/slide]
 
 [slide hideTitle]
-# Matrice de diferite tipuri
+# Matrice de Diferite Tipuri
 
 
 Matricele pot conține diferite tipuri de elemente:
@@ -366,7 +366,7 @@ let mixedArr = [20, new Date(), 'hello', {x:5, y:8}];
 [/slide]
 
 [slide hideTitle]
-# Adăugarea de elemente noi
+# Adăugarea de Elemente Noi
 
 Putem adăuga un element la sfârșitul matricei:
 ``` js live

@@ -1,5 +1,5 @@
-[slide]
-# Lecție introductivă
+[slide hideTitle]
+# Lecție Introductivă
 
 [vimeo-video]
 [stream language="EN" videoId="489373158/2db89d88a6" default /]
@@ -8,27 +8,27 @@
 
 ## În această lecție veți afla despre:
 
-**1. Ce este o funcție?**
+**1. What is a Function**
 
-- Ce înseamnă?
+- Meaning of the term "function" in JavaScript 
 
-**2. Declararea și invocarea funcțiilor**
+**2. Declaring and Invoking Functions**
 
-- sintaxă și utilizare
+- Syntax and usage 
 
-**3. Funcții imbricate**
+**3. Nested Functions**
 
-- scrieți o funcție în interiorul altei funcții
+- The concept of placing functions inside other functions 
 
-**4. Valoare și tipuri de referință**
+**4. Value and Reference Types**
 
-- diferențe și similitudini
+- Differences and similarities between the two
 
-**5. Funcții săgeată**
+**5. Arrow Functions**
 
-- sintaxă și utilizare
+- Syntax and usage
 
-**6. Denumirea și cele mai bune practici**
+**6. Naming and Best Practices**
 
-- cum să denumiți, să scrieți și să utilizați funcțiile
+- Naming, creating and the use of functions
 [/slide]

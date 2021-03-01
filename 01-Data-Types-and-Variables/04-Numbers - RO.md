@@ -1,6 +1,6 @@
 [slide hideTitle]
 
-# Ce este un Număr?
+# Ce Este un Număr?
 
 Numerele în JavaScript nu au tipuri separate pentru **numerele întregi** și pentru **numerele zecimale.**
 

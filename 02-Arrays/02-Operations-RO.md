@@ -1,7 +1,7 @@
 # Operațiuni
 
 [slide hideTitle]
-# Metode de matrice
+# Metode de Matrice
 
 
 Unele operații care funcționează cu matrice ar putea funcționa și cu valori asemănătoare matricei.

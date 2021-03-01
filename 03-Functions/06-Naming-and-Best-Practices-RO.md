@@ -1,16 +1,11 @@
-# Denumirea și cele mai bune practici
+# Denumirea și Cele mai Bune Practici
 
-[slide]
-# Denumirea funcțiilor
-
-[vimeo-video]
-[stream language="EN" videoId="489373649/847cb6caf0" default /]
-[stream language="RO" videoId="489373649/847cb6caf0"  /]
-[/video-vimeo]
+[slide hideTitle]
+# Denumirea Funcțiilor
 
 - Numele funcțiilor ar trebui să **descrie sarcina lor** într-un mod **clar** și **lipsit de ambiguități**
-  - Numele lor trebuie să fie **semnificative și nu foarte lungi**
-  - Ar trebui să răspundă la întrebarea:"**Ce face această funcție?**"
+- Numele lor trebuie să fie **semnificative și nu foarte lungi**
+- Ar trebui să răspundă la întrebarea:"**Ce face această funcție?**"
 
 Exemple pentru nume **bune**:
 ```js
@@ -26,7 +21,7 @@ Method1, DoSomething, handleStuff, DirtyHack
 Dacă **nu puteți** găsi un **nume bun** pentru o funcție, gândiți-vă la **dacă are o intenție clară**.
 
 
-## Numirea parametrilor funcției
+## Numirea Parametrilor Funcției
 
   - Formă preferată: `[Substantiv]` sau `[Adjectiv] + [Substantiv]`
   - **Nu** trebuie să conțină **litere majuscule**
@@ -46,18 +41,13 @@ p, p1, p2, populate, LastName, lastName
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 
-# Cele mai bune practici în ceea ce privește funcțiile
-
-[vimeo-video]
-[stream language="EN" videoId="489373682/d2ab7caa52" default /]
-[stream language="RO" videoId="489373682/d2ab7caa52"  /]
-[/video-vimeo]
+# Cele mai Bune Practici în Ceea ce Privește Funcțiile
 
 
- - Fiecare funcție trebuie să efectueze o sarcină **unică**, bine definită.
-- **Evitați funcțiile lungi**, **împărțiți-le** în **câteva mai scurte**.
+- Fiecare funcție trebuie să efectueze o sarcină **unică**, bine definită
+- **Evitați funcțiile lungi**, **împărțiți-le** în **câteva mai scurte**
 
 
  ```js
@@ -70,7 +60,7 @@ p, p1, p2, populate, LastName, lastName
 
  În urma practicilor, funcția definită în exemplul de mai sus este **autodocumentată** și **ușoară de testat**.
 
-## Structura codului și formatarea codului
+## Structura Codului și Formatarea Codului
 
 Asigurați-vă că utilizați indentarea corectă
 - Lăsați o linie goală între funcții și după blocuri
@@ -98,15 +88,15 @@ function sum()
 
 [/slide]
 
-[slide]
-# Problem: Simple Calculator
+[slide hideTitle]
+# Problem with Solution: Simple Calculator
 
 [vimeo-video]
 [stream language="EN" videoId="489373707/dfc94da2ab" default /]
 [stream language="RO" videoId="489373707/dfc94da2ab"  /]
 [/video-vimeo]
 
-[code-task title="Simple Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Simple Calculator" taskId="fundamentals-js-functions-lab-Simple-Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function simpleCalculator(input){
@@ -114,168 +104,58 @@ function simpleCalculator(input){
 }
 ```
 [/code-editor]
-[task-description]
-
-Scrieți o funcție care primește o serie de trei elemente.
-
-Scrieți o funcție săgeată care calculează rezultatul în funcție de operator.
-
-Operatorul poate fi: `multiply`, `divide`, `add`, `subtract`.
-
-## Exemple
-|**Intrare**|**Ieșire**|
-| --- | --- |
-|`['5', '5', 'multiply']` | 25 |
-|`['40', '8', 'divide']` | 5 |
-|`['12', '19', 'add']` | 31 |
-
-[/task-description]
-[tests]
-[test]
-[input]
-1
-15
-multiply
-[/input]
-[output]
-15
-[/output]
-[/test]
-[test]
-[input]
-61
-2
-divide
-[/input]
-[output]
-30.5
-[/output]
-[/test]
-[test]
-[input]
-2
-18
-add
-[/input]
-[output]
-20
-[/output]
-[/test]
-[test]
-[input]
-186
-121
-subtract
-[/input]
-[output]
-65
-[/output]
-[/test]
-[test]
-[input]
-2
-35
-multiply
-[/input]
-[output]
-70
-[/output]
-[/test]
-[test]
-[input]
-12
-2
-divide
-[/input]
-[output]
-6
-[/output]
-[/test]
-[test]
-[input]
-115
-338
-add
-[/input]
-[output]
-453
-[/output]
-[/test]
-[test]
-[input]
-46
-521
-subtract
-[/input]
-[output]
-\-475
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide]
-# Solution: Simple Calculator
-
-[vimeo-video]
-[stream language="EN" videoId="489373791/a1578a4a89" default /]
-[stream language="RO" videoId="489373791/a1578a4a89"  /]
-[/video-vimeo]
-
-[code-task title="Simple Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-adapter]
 ```
-function simpleCalculator(input){
-  let a = Number(input[0]);
-  let b = Number(input[1]);  
-  let operator = input[2];
-  
-  switch (operator) {
-    case 'multiply':
-      let multiply = (a, b) => a * b;
-      console.log(multiply(a, b));
-      break;
-    case 'divide':
-      let divide = (a, b) => a / b;
-      console.log(divide(a, b));
-      break;
-    case 'add':
-      let add = (a, b) => a + b;
-      console.log(add(a, b));
-      break;
-    case 'subtract':
-      let subtract = (a, b) => a - b;
-      console.log(subtract(a, b));
-      break;
-  }
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
-[/code-editor]
+[/code-adapter]
 [task-description]
+# Descriere
 
-Scrieți o funcție care primește o serie de trei elemente.
+Write an arrow function that receives an **array containing three elements** (two numbers and a string) and calculates the result depending on the specified operator. 
 
-Scrieți o funcție săgeată care calculează rezultatul în funcție de operator.
+The operator could only be one of the following: "**multiply**", "**divide**", "**add**", "**subtract**".
 
-Operatorul poate fi: `multiply`, `divide`, `add`, `subtract`.
-
-## Exemple
+## Exemples
 |**Intrare**|**Ieșire**|
 | --- | --- |
-|`['5', '5', 'multiply']` | 25 |
-|`['40', '8', 'divide']` | 5 |
-|`['12', '19', 'add']` | 31 |
+| simpleCalculator([5, 5, 'multiply']) | 25 |
+| simpleCalculator([40, 8, 'divide']) | 5 |
+| simpleCalculator([12, 19, 'add']) | 31 |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+simpleCalculator([5, 5, 'multiply'])
+[/input]
+[output]
+25
+[/output]
+[/test]
+[test open]
+[input]
+simpleCalculator([40, 8, 'divide'])
+[/input]
+[output]
+5
+[/output]
+[/test]
+[test open]
+[input]
+simpleCalculator([12, 19, 'add'])
+[/input]
+[output]
+31
+[/output]
+[/test]
 [test]
 [input]
-1
-15
-multiply
+simpleCalculator([1, 15, 'multiply'])
 [/input]
 [output]
 15
@@ -283,9 +163,7 @@ multiply
 [/test]
 [test]
 [input]
-61
-2
-divide
+simpleCalculator([61, 2, 'divide'])
 [/input]
 [output]
 30.5
@@ -293,9 +171,7 @@ divide
 [/test]
 [test]
 [input]
-2
-18
-add
+simpleCalculator([2, 18, 'add'])
 [/input]
 [output]
 20
@@ -303,9 +179,7 @@ add
 [/test]
 [test]
 [input]
-186
-121
-subtract
+simpleCalculator([186, 121, 'subtract'])
 [/input]
 [output]
 65
@@ -313,9 +187,7 @@ subtract
 [/test]
 [test]
 [input]
-2
-35
-multiply
+simpleCalculator([2, 35, 'multiply'])
 [/input]
 [output]
 70
@@ -323,9 +195,7 @@ multiply
 [/test]
 [test]
 [input]
-12
-2
-divide
+simpleCalculator([12, 2, 'divide'])
 [/input]
 [output]
 6
@@ -333,9 +203,7 @@ divide
 [/test]
 [test]
 [input]
-115
-338
-add
+simpleCalculator([115, 338, 'add'])
 [/input]
 [output]
 453
@@ -343,9 +211,7 @@ add
 [/test]
 [test]
 [input]
-46
-521
-subtract
+simpleCalculator([46, 521, 'subtract'])
 [/input]
 [output]
 \-475
@@ -356,3 +222,4 @@ subtract
 [/code-task]
 
 [/slide]
+

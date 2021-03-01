@@ -1,14 +1,9 @@
-# Declararea și invocarea funcțiilor
+# Declararea și Invocarea Funcțiilor
 
-[slide]
-# Declararea unei funcții
+[slide hideTitle]
+# Declararea Unei Funcții
 
-[vimeo-video]
-[stream language="EN" videoId="489373256/dbc8412983" default /]
-[stream language="RO" videoId="489373256/dbc8412983"  /]
-[/video-vimeo]
-
-O funcție este definită, utilizând cuvântul cheie "funcție" urmat de **numele funcției** și un set de **paranteze** pentru a păstra parametrii sau valorile care trebuie primite de funcție.
+O funcție este definită, utilizând cuvântul cheie `funcție` urmat de **numele funcției** și un set de **paranteze** pentru a păstra parametrii sau valorile care trebuie primite de funcție.
 
 Funcțiile pot fi declarate în două moduri:
 
@@ -28,7 +23,7 @@ let printText = function(text){
 }
 ```
 
-## Funcții cu parametri
+## Funcții cu Parametri
 
 **Argumentele** pot fi transmise funcției prin încadrarea valorilor între paranteze după numele funcției.
 
@@ -45,13 +40,8 @@ function printText(text){
 
 [/slide]
 
-[slide]
-# Invocarea unei funcții
-
-[vimeo-video]
-[stream language="EN" videoId="489373258/bc07c2ad58" default /]
-[stream language="RO" videoId="489373258/bc07c2ad58"  /]
-[/video-vimeo]
+[slide hideTitle]
+# Invocarea Unei Funcții
 
 O funcție nu este executată înainte de a fi invocată.
 
@@ -61,7 +51,7 @@ Puteți declara o funcție astfel:
 
 ```js live
 function hLine() {
-  console.log("----------");
+  console.log('----------');
 }
 
 hLine();
@@ -77,13 +67,8 @@ hLine();
 
 [/slide]
 
-[slide]
-# Invocarea unei funcții dintr-o altă funcție
-
-[vimeo-video]
-[stream language="EN" videoId="489373314/21401d79a4" default /]
-[stream language="RO" videoId="489373314/21401d79a4"  /]
-[/video-vimeo]
+[slide hideTitle]
+# Invocarea Unei Funcții Dintr-o Altă Funcție
 
 
 De asemenea, putem invoca o **funcție** din **altă funcție:**
@@ -96,13 +81,8 @@ function printDocument() {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Recursivitate
-
-[vimeo-video]
-[stream language="EN" videoId="489373783/9258f21dc4" default /]
-[stream language="RO" videoId="489373783/9258f21dc4"  /]
-[/video-vimeo]
 
 De asemenea, putem invoca o **funcție** **în propriul său corp (recursivitate):**
 
@@ -112,19 +92,20 @@ function countDown(x) {
   if (x > 0) { countDown(x - 1); }
 }
 ```
+**Recursion** is the process in which a function **calls itself**.
 
-Recutrsivitatea  este proprietatea  **funcției de a se autoapela**.
+Such functions are called **recursive**.
+
+Proper recursive functions **stop** invoking themselves when a desired **result** is achieved.
+
+If **no such condition exists**, the function will call itself **endlessly**.
 
 [/slide]
 
-[slide]
-# Funcțiile și parametrii
+[slide hideTitle]
+# Funcțiile și Parametrii
 
-[vimeo-video]
-[stream language="EN" videoId="489373376/28ddf53572" default /]
-[stream language="RO" videoId="489373376/28ddf53572"  /]
-[/video-vimeo]
- 
+
 Putem avea o funcție **cu sau fără** parametri.
 
 *Parametrii** funcției se comportă ca variabile locale din **corpul funcției.**
@@ -140,14 +121,9 @@ function printHeader() {
 printHeader();
 ```
 [/slide]
-[slide]
+[slide hideTitle]
 
-## Funcții cu parametrii
-
-[vimeo-video]
-[stream language="EN" videoId="489373715/065a22dd97" default /]
-[stream language="RO" videoId="489373715/065a22dd97"  /]
-[/video-vimeo]
+## Funcții cu Parametrii
 
 O funcție poate primi **orice număr și tip de argumente** atunci când este invocată:
 
@@ -178,47 +154,75 @@ Dacă dați mai multe argumente, atunci **argumentele suplimentare vor fi ignora
 
 [/slide]
 
-[slide]
-# Problem: Grades
+[slide hideTitle]
+# Problem with Solution: Grades
 
-[vimeo-video]
-[stream language="EN" videoId="489373386/94e32c3892" default /]
-[stream language="RO" videoId="489373386/94e32c3892"  /]
-[/video-vimeo]
-
-
-[code-task title="Grades" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Grades" taskId="fundamentals-js-functions-lab-Grades" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function grades(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
-Scrieți o funcție care primește o notă între `2.00` și `6.00` și imprimă nota corespunzătoare în cuvinte
+Scrieți o funcție care primește o notă între "**2.00**" și "**6.00**" și imprimă nota corespunzătoare în cuvinte
 
 |**Grad**|**Rezultat**|
 | --- | --- |
-|`2.00 - 2.99` | `Fail` |
-|`3.00 - 3.49` | `Poor` |
-|`3.50 - 4.49` | `Good` |
-|`4.50 - 5.49` | `Very good` |
-|`5.50 - 6.00` | `Excellent` |
+| "**2.00 - 2.99**" | "**Fail**" |
+| "**3.00 - 3.49**" | "**Poor**" |
+| "**3.50 - 4.49**" | "**Good**" |
+| "**4.50 - 5.49**" | "**Very good**" |
+| "**5.50 - 6.00**" | "**Excellent**" |
 
 
-## Exemple
+## Exemples
 |**Intrare**|**Ieșire**|
 | --- | --- |
-|`3.33` | Poor |
-|`4.50` | Very good |
-|`2.99` | Fail |
+| grades(3.33) | Poor |
+| grades(4.50) | Very good |
+| grades(2.99) | Fail |
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+grades(3.33)
+[/input]
+[output]
+Poor
+[/output]
+[/test]
+[test open]
+[input]
+grades(4.50)
+[/input]
+[output]
+Very good
+[/output]
+[/test]
+[test open]
+[input]
+grades(2.99)
+[/input]
+[output]
+Fail
+[/output]
+[/test]
 [test]
 [input]
-4.49
+grades(4.49)
 [/input]
 [output]
 Good
@@ -226,7 +230,7 @@ Good
 [/test]
 [test]
 [input]
-5.50
+grades(5.50)
 [/input]
 [output]
 Excellent
@@ -234,7 +238,7 @@ Excellent
 [/test]
 [test]
 [input]
-4.60
+grades(4.60)
 [/input]
 [output]
 Very good
@@ -242,7 +246,7 @@ Very good
 [/test]
 [test]
 [input]
-3.20
+grades(3.20)
 [/input]
 [output]
 Poor
@@ -250,114 +254,19 @@ Poor
 [/test]
 [test]
 [input]
-2.00
+grades(2.00)
 [/input]
 [output]
 Fail
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
 
 [/slide]
 
-[slide]
-# Solution: Grades
-
-[vimeo-video]
-[stream language="EN" videoId="489373420/6a36318ce6" default /]
-[stream language="RO" videoId="489373420/6a36318ce6"  /]
-[/video-vimeo]
-
-
-[code-task title="Grades" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function grades(grade){
-  if (grade >= 2.0 && grade < 3.0) {
-        console.log('Fail');
-    } else if (grade >= 3.0 && grade < 3.5) {
-        console.log('Poor');
-    } else if (grade >= 3.5 && grade < 4.5) {
-        console.log('Good');
-    } else if (grade >= 4.5 && grade < 5.5) {
-        console.log('Very good');
-    } else if (grade >= 5.5 && grade <= 6.0) {
-        console.log('Excellent');
-    }
-}
-```
-[/code-editor]
-[task-description]
-Scrieți o funcție care primește o notă între `2.00` și `6.00` și imprimă nota corespunzătoare în cuvinte
-
-|**Grad**|**Rezultat**|
-| --- | --- |
-|`2.00 - 2.99` | `Fail` |
-|`3.00 - 3.49` | `Poor` |
-|`3.50 - 4.49` | `Good` |
-|`4.50 - 5.49` | `Very good` |
-|`5.50 - 6.00` | `Excellent` |
-
-
-## Exemple
-|**Intrare**|**Ieșire**|
-| --- | --- |
-|`3.33` | Poor |
-|`4.50` | Very good |
-|`2.99` | Fail |
-
-[/task-description]
-[tests]
-[test]
-[input]
-4.49
-[/input]
-[output]
-Good
-[/output]
-[/test]
-[test]
-[input]
-5.50
-[/input]
-[output]
-Excellent
-[/output]
-[/test]
-[test]
-[input]
-4.60
-[/input]
-[output]
-Very good
-[/output]
-[/test]
-[test]
-[input]
-3.20
-[/input]
-[output]
-Poor
-[/output]
-[/test]
-[test]
-[input]
-2.00
-[/input]
-[output]
-Fail
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide]
-# Problem: Math Power
+[slide hideTitle]
+# Problem with Solution: Math Power
 
 [vimeo-video]
 [stream language="EN" videoId="489373435/cb25361ef7" default /]
@@ -365,29 +274,54 @@ Fail
 [/video-vimeo]
 
 
-[code-task title="Math Power" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Math Power" taskId="fundamentals-js-functions-lab-Math-Power"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function mathPower(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
-Scrieți o funcție care**calculează**și returnează valoarea unui număr **ridicat la o putere dată:**
+Scrieți o funcție care **calculează** și returnează valoarea unui număr **ridicat la o putere dată:**
 
-## Exemple
+## Exemples
 |**Intrare**|**Ieșire** |
 | --- | --- |
-|`['2', '8']` | 256 |
-|`['3', '4']` | 81 |
+| mathPower(2, 8) | 256 |
+| mathPower(3, 4) | 81 |
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+mathPower(2, 8)
+[/input]
+[output]
+256
+[/output]
+[/test]
+[test open]
+[input]
+mathPower(3, 4)
+[/input]
+[output]
+81
+[/output]
+[/test]
 [test]
 [input]
-7
-2
+mathPower(7, 2)
 [/input]
 [output]
 49
@@ -395,8 +329,7 @@ Scrieți o funcție care**calculează**și returnează valoarea unui număr **ri
 [/test]
 [test]
 [input]
-123
-3
+mathPower(123, 3)
 [/input]
 [output]
 1860867
@@ -404,8 +337,7 @@ Scrieți o funcție care**calculează**și returnează valoarea unui număr **ri
 [/test]
 [test]
 [input]
-5.5
-3
+mathPower(5.5, 3)
 [/input]
 [output]
 166.375
@@ -413,8 +345,7 @@ Scrieți o funcție care**calculează**și returnează valoarea unui număr **ri
 [/test]
 [test]
 [input]
-21
-10
+mathPower(21, 10)
 [/input]
 [output]
 16679880978201
@@ -422,8 +353,7 @@ Scrieți o funcție care**calculează**și returnează valoarea unui număr **ri
 [/test]
 [test]
 [input]
-10
-7
+mathPower(10, 7)
 [/input]
 [output]
 10000000
@@ -431,8 +361,7 @@ Scrieți o funcție care**calculează**și returnează valoarea unui număr **ri
 [/test]
 [test]
 [input]
-12
-3
+mathPower(12, 3)
 [/input]
 [output]
 1728
@@ -440,116 +369,37 @@ Scrieți o funcție care**calculează**și returnează valoarea unui număr **ri
 [/test]
 [test]
 [input]
-2
-3
+mathPower(2, 3)
 [/input]
 [output]
 8
 [/output]
 [/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide]
-# Solution: Math Power
-
-[vimeo-video]
-[stream language="EN" videoId="489373438/64f923b0a0" default /]
-[stream language="RO" videoId="489373438/64f923b0a0"  /]
-[/video-vimeo]
-
-
-[code-task title="Math Power" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function mathPower(input){
-  let num = Number(input[0]);
-  let pow = Number(input[1]);
-
-  let result = Math.pow(num,pow);
-  console.log(result);
-}
-```
-[/code-editor]
-[task-description]
-Scrieți o funcție care**calculează**și returnează valoarea unui număr **ridicat la o putere dată:**
-
-## Exemple
-|**Intrare**|**Ieșire** |
-| --- | --- |
-|`['2', '8']` | 256 |
-|`['3', '4']` | 81 |
-
-[/task-description]
-[tests]
 [test]
 [input]
-7
-2
+mathPower(3, 2)
 [/input]
 [output]
-49
+9
 [/output]
 [/test]
 [test]
 [input]
-123
-3
+mathPower(4, 4)
 [/input]
 [output]
-1860867
+256
 [/output]
 [/test]
 [test]
 [input]
-5.5
-3
+mathPower(4, 4)
 [/input]
 [output]
-166.375
-[/output]
-[/test]
-[test]
-[input]
-21
-10
-[/input]
-[output]
-16679880978201
-[/output]
-[/test]
-[test]
-[input]
-10
-7
-[/input]
-[output]
-10000000
-[/output]
-[/test]
-[test]
-[input]
-12
-3
-[/input]
-[output]
-1728
-[/output]
-[/test]
-[test]
-[input]
-2
-3
-[/input]
-[output]
-8
+256
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
 
 [/slide]

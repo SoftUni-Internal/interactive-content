@@ -1,7 +1,7 @@
-# Iterarea matricei
+# Iterarea Matricei
 
 [slide hideTitle]
-# Imprimarea matricilor pe consolă
+# Imprimarea Matricilor pe Consolă
 
 
 Pentru a imprima toate elementele matricei, poate fi utilizată o buclă for
@@ -24,7 +24,7 @@ console.log(capitals.toString())
 [/slide]
 
 [slide hideTitle]
-# Bucla for-of
+# Bucla "for-of"
 
 
 Bucla `for..of` este utilizată pentru a itera peste orice obiect iterabil, dar nu poate fi utilizată pentru a accesa indecșii lor. 
@@ -212,7 +212,7 @@ Sarcina dvs. este să o inversați și să le imprimați elementele.
 
 **Elemente de schimb.**
 
-## Exemple
+## Exemples
 |**Imput**|**Output** |
 | --- | --- |
 | reverse(['a', 'b', 'c', 'd', 'e']) | e d c b a  |

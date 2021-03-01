@@ -1,12 +1,8 @@
-# Valori returnate
+# Valori Returnate
 
-[slide]
-# Declarația de returnare
+[slide hideTitle]
+# Declarația de Returnare
 
-[vimeo-video]
-[stream language="EN" videoId="489373485/8c7c7e9e3c" default /]
-[stream language="RO" videoId="489373485/8c7c7e9e3c"  /]
-[/video-vimeo]
 
 Operatorul `return` este folosit pentru a returna o valoare din interiorul unei funcții.
 
@@ -16,10 +12,10 @@ Directiva `return` poate fi în orice loc al funcției.
 
 ``` js live
 function readFullName(firstName, lastName) {
-  return firstName + " " + lastName;
+  return firstName + ' ' + lastName;
 }
 
-const fullName = readFullName("John","Smith");
+const fullName = readFullName('John', 'Smith');
 console.log(fullName)
 ```
 
@@ -29,13 +25,8 @@ Dacă încercați să-l utilizați în afara unei funcții, **va genera o eroare
 
 [/slide]
 
-[slide]
-# Utilizarea valorilor returnate
-
-[vimeo-video]
-[stream language="EN" videoId="489373490/e62d49a36f" default /]
-[stream language="RO" videoId="489373490/e62d49a36f"  /]
-[/video-vimeo]
+[slide hideTitle]
+# Utilizarea Valorilor Returnate
 
 
 Valoarea returnată poate fi:
@@ -59,13 +50,8 @@ multiply(getMax(5,10), 20);
 
 [/slide]
 
-[slide]
-# Valori returnate: exemple
-
-[vimeo-video]
-[stream language="EN" videoId="489373540/c9dcb0e5e4" default /]
-[stream language="RO" videoId="489373540/c9dcb0e5e4"  /]
-[/video-vimeo]
+[slide hideTitle]
+# Valori Returnate: Exemple
 
 
 - Verificați dacă **indexul matricei** este valid:
@@ -97,8 +83,8 @@ console.log(pass(5.32))
 ```
 
 [/slide]
-[slide]
-# Declarație de returnare Demo
+[slide hideTitle]
+# Declarație de Returnare Demo
 
 [vimeo-video]
 [stream language="EN" videoId="489373875/3db9f493f6" default /]
@@ -108,13 +94,8 @@ console.log(pass(5.32))
 
 [/slide]
 
-[slide]
-# Funcții imbricate
-
-[vimeo-video]
-[stream language="EN" videoId="489373544/4848ba2e9e" default /]
-[stream language="RO" videoId="489373544/4848ba2e9e"  /]
-[/video-vimeo]
+[slide hideTitle]
+# Funcții Imbricate
 
 Funcția imbricată funcționează în domeniul funcției externe.
 

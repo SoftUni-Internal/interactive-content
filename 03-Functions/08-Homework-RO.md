@@ -1,35 +1,60 @@
-# Teme de acasă
+# Teme de Acasă
 
-[slide]
+[slide hideTitle]
 # Problem: Repeat String
 [code-task title="Repeat String" taskId="js-fundamentals-1-Functions-Repeat-String" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function repeatString(input){
-  // Write your code here
+function repeatString(str, n){
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 
-Scrieți o funcție care primește **un șir** și un număr de repetare `n`.
+Scrieți o funcție care primește **un șir** și un număr de repetare - "**n**". 
 
-Funcția ar trebui să returneze un șir nou (cel vechi repetat de n ori).
+Funcția ar trebui să returneze un șir nou (cel vechi repetat de "**n**" ori).
 
-# Exemplu
+## Examples
 |**Intrare**|**Ieșire** |
 | --- | --- |
-|`['abc','3']`| abcabcabc |
-|`['String','2']`| StringString |
+| repeatString('abc', 3) | abcabcabc |
+| repeatString('String', 2) | StringString |
 
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+repeatString('abc', 3)
+[/input]
+[output]
+abcabcabc
+[/output]
+[/test]
+[test open]
+[input]
+repeatString('String', 2)
+[/input]
+[output]
+StringString
+[/output]
+[/test]
 [test]
 [input]
-ani
-2
+repeatString('ani', 2)
 [/input]
 [output]
 aniani
@@ -37,8 +62,7 @@ aniani
 [/test]
 [test]
 [input]
-ananas
-3
+repeatString('ananas', 3)
 [/input]
 [output]
 ananasananasananas
@@ -46,8 +70,7 @@ ananasananasananas
 [/test]
 [test]
 [input]
-tanya
-2
+repeatString('tanya', 2)
 [/input]
 [output]
 tanyatanya
@@ -55,8 +78,7 @@ tanyatanya
 [/test]
 [test]
 [input]
-yavor
-3
+repeatString('yavor', 3)
 [/input]
 [output]
 yavoryavoryavor
@@ -64,38 +86,35 @@ yavoryavoryavor
 [/test]
 [test]
 [input]
-ivan
-2
+repeatString('ivan', 2)
 [/input]
 [output]
 ivanivan
 [/output]
 [/test]
-[test]
-[input]
-String
-2
-[/input]
-[output]
-StringString
-[/output]
-[/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Smallest of Three Numbers
 [code-task title="Smallest of Three Numbers" taskId="js-fundamentals-1-Functions-Smallest-of-Three-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function smallestNumbers(input){
- 
+function smallestNumbers(firstNumber, secondNumber, thirdNumber){
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 
@@ -103,20 +122,43 @@ Scrieți o funcție care primește trei numere întregi pentru a imprima număru
 
 Folosiți un nume adecvat pentru funcție.
 
-# Exemplu
+## Examples
 |**Intrare**|**Ieșire** |
 | --- | --- |
-|`['2','5', '3']`| 2 |
-|`['600','342', '123']`| 123 |
-|`['25','21', '4']`| 4 |
+| smallestNumbers(2, 5, 3) | 2 |
+| smallestNumbers(600, 342, 123) | 123 |
+| smallestNumbers(25, 21, 4) | 4 |
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+smallestNumbers(2, 5, 3)
+[/input]
+[output]
+2
+[/output]
+[/test]
+[test open]
+[input]
+smallestNumbers(600, 342, 123)
+[/input]
+[output]
+123
+[/output]
+[/test]
+[test open]
+[input]
+smallestNumbers(25, 21, 4)
+[/input]
+[output]
+4
+[/output]
+[/test]
 [test]
 [input]
-25
-25
-25
+smallestNumbers(25, 25, 25)
 [/input]
 [output]
 25
@@ -124,19 +166,15 @@ Folosiți un nume adecvat pentru funcție.
 [/test]
 [test]
 [input]
+smallestNumbers(664213164, 1808459534, 2103069969)
+[/input]
+[output]
 664213164
-1808459534
-2103069969
-[/input]
-[output]
-664213164
 [/output]
 [/test]
 [test]
 [input]
-800572446
-391984821
-1988075527
+smallestNumbers(800572446, 391984821, 1988075527)
 [/input]
 [output]
 391984821
@@ -144,9 +182,7 @@ Folosiți un nume adecvat pentru funcție.
 [/test]
 [test]
 [input]
-958036414
-1303722451
-81436290
+smallestNumbers(958036414, 1303722451, 81436290)
 [/input]
 [output]
 81436290
@@ -154,9 +190,7 @@ Folosiți un nume adecvat pentru funcție.
 [/test]
 [test]
 [input]
-1504225756
-2078100171
-1952236125
+smallestNumbers(1504225756, 2078100171, 1952236125)
 [/input]
 [output]
 1504225756
@@ -164,30 +198,67 @@ Folosiți un nume adecvat pentru funcție.
 [/test]
 [test]
 [input]
-1340748496
-2047564071
-892651240
+smallestNumbers(1340748496, 2047564071, 892651240)
 [/input]
 [output]
 892651240
+[/output]
+[/test]
+[test]
+[input]
+smallestNumbers(1325565386, 175816470, 1646690050)
+[/input]
+[output]
+175816470
+[/output]
+[/test]
+[test]
+[input]
+smallestNumbers(1897368806, 101858759, 89570573)
+[/input]
+[output]
+89570573
+[/output]
+[/test]
+[test]
+[input]
+smallestNumbers(851370685, 108554923, 110531645)
+[/input]
+[output]
+108554923
+[/output]
+[/test]
+[test]
+[input]
+smallestNumbers(1315489464, 15286437, 2013240737)
+[/input]
+[output]
+15286437
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Add and Subtract
 [code-task title="Add and Subtract" taskId="js-fundamentals-1-Functions-Add-and-Substract" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function addSubtract(input){
- 
+function addSubtract(firstNumber, secondNumber, thirdNumber){
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 
@@ -195,20 +266,43 @@ Veți primi**trei numere întregi.**
 
 Scrieți o funcție `sum()` pentru a obține suma primelor două numere întregi și funcția `subtract()` care scade al treilea număr întreg din rezultat.
 
-# Exemplu
+## Examples
 |**Intrare**|**Ieșire** |
 | --- | --- |
-|`['23','6', '10']`| 29 |
-|`['1','17', '30']`| \-12 |
-|`['42','58', '100']`| 0 |
+| addSubtract(23, 6, 10) | 19 |
+| addSubtract(1, 17, 30) | \-12 |
+| addSubtract(42, 58, 100) | 0 |
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+addSubtract(23, 6, 10)
+[/input]
+[output]
+19
+[/output]
+[/test]
+[test open]
+[input]
+addSubtract(1, 17, 30)
+[/input]
+[output]
+-12
+[/output]
+[/test]
+[test open]
+[input]
+addSubtract(42, 58, 100)
+[/input]
+[output]
+0
+[/output]
+[/test]
 [test]
 [input]
-775
-8058
-6727
+addSubtract(775, 8058, 6727)
 [/input]
 [output]
 2106
@@ -216,19 +310,15 @@ Scrieți o funcție `sum()` pentru a obține suma primelor două numere întregi
 [/test]
 [test]
 [input]
-5238
-851
-8783
+addSubtract(5238, 851, 8783)
 [/input]
 [output]
-\-2694
+-2694
 [/output]
 [/test]
 [test]
 [input]
-3311
-8557
-872
+addSubtract(3311, 8557, 872)
 [/input]
 [output]
 10996
@@ -236,29 +326,23 @@ Scrieți o funcție `sum()` pentru a obține suma primelor două numere întregi
 [/test]
 [test]
 [input]
-1318
-2018
-5695
+addSubtract(1318, 2018, 5695)
 [/input]
 [output]
-\-2359
+-2359
 [/output]
 [/test]
 [test]
 [input]
-1615
-4900
-8565
+addSubtract(1615, 4900, 8565)
 [/input]
 [output]
-\-2050
+-2050
 [/output]
 [/test]
 [test]
 [input]
-777
-9465
-7034
+addSubtract(777, 9465, 7034)
 [/input]
 [output]
 3208
@@ -266,9 +350,7 @@ Scrieți o funcție `sum()` pentru a obține suma primelor două numere întregi
 [/test]
 [test]
 [input]
-2667
-4817
-1801
+addSubtract(2667, 4817, 1801)
 [/input]
 [output]
 5683
@@ -276,29 +358,23 @@ Scrieți o funcție `sum()` pentru a obține suma primelor două numere întregi
 [/test]
 [test]
 [input]
-2037
-50
-7681
+addSubtract(2037, 50, 7681)
 [/input]
 [output]
-\-5594
+-5594
 [/output]
 [/test]
 [test]
 [input]
-120
-8802
-9102
+addSubtract(120, 8802, 9102)
 [/input]
 [output]
-\-180
+-180
 [/output]
 [/test]
 [test]
 [input]
-6598
-6102
-4528
+addSubtract(6598, 6102, 4528)
 [/input]
 [output]
 8172
@@ -306,30 +382,35 @@ Scrieți o funcție `sum()` pentru a obține suma primelor două numere întregi
 [/test]
 [test]
 [input]
-789
-3598
-4387
+addSubtract(789, 3598, 4387)
 [/input]
 [output]
 0
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Characters in Range
 [code-task title="Characters in Range" taskId="js-fundamentals-1-Functions-Characters-in-Range" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function charactersInRange(input){
-  // Write your code here
+function charactersInRange(firstChar, secondChar){
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 
@@ -337,46 +418,67 @@ Scrieți o funcție care **primește două caractere** și imprimă pe o singur�
 
 Rețineți că **al doilea cod de caractere ar putea fi înaintea primului din tabelul ASCII.**
 
-# Exemplu
+## Examples
 |**Intrare**|**Ieșire** |
 | --- | --- |
-|`['a','b']`| b c |
-|`['#',':']`| \$ \% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9 |
-|`['C','#']`| \$ \% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9 \: \; \< \= \> \? \@ A B |
+| charactersInRange('a', 'd') | b c |
+| charactersInRange('#', ':') | \$ \% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9 |
+| charactersInRange('C', '#') | \$ \% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9 \: \; \< \= \> \? \@ A B |
 
 [/task-description]
+[code-io /]
 [tests]
-[test]
+[test open]
 [input]
-t
-E
+charactersInRange('a', 'd')
 [/input]
 [output]
-F G H I J K L M N O P Q R S T U V W X Y Z \[ \\ \] \^ \_ \` a b c d e f g h i j k l m n o p q r s
+b c
+[/output]
+[/test]
+[test open]
+[input]
+charactersInRange('#', ':')
+[/input]
+[output]
+\$ \% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9
+[/output]
+[/test]
+[test open]
+[input]
+charactersInRange('C', '#')
+[/input]
+[output]
+\$ \% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9 \: \; \< \= \> \? \@ A B
 [/output]
 [/test]
 [test]
 [input]
-\!
-\}
+charactersInRange('t', 'E')
 [/input]
 [output]
-\" \# \$ \% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9 \: \; \< \= \> \? \@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z \[ \\ \] \^ _ \` a b c d e f g h i j k l m n o p q r s t u v w x y z \{ \|
+F G H I J K L M N O P Q R S T U V W X Y Z \[ \ \] ^ _ \` a b c d e f g h i j k l m n o p q r s
 [/output]
 [/test]
 [test]
 [input]
-\|
-\$
+charactersInRange('!', '\}')
 [/input]
 [output]
-\% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9 \: \; \< \= \> \? \@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z \[ \\ \] \^ \_ \` a b c d e f g h i j k l m n o p q r s t u v w x y z \{
+\" \# \$ \% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9 \: \; \< \= \> \? \@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z \[ \\ \] \^ \_ \` a b c d e f g h i j k l m n o p q r s t u v w x y z \{ \|
 [/output]
 [/test]
 [test]
 [input]
-\:
-\#
+charactersInRange('\|', '\\$')
+[/input]
+[output]
+% & ' ( ) \* + , - . / 0 1 2 3 4 5 6 7 8 9 : ; \< = \> ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z \[ \ \] ^ _ \` a b c d e f g h i j k l m n o p q r s t u v w x y z \{
+[/output]
+[/test]
+[test]
+[input]
+charactersInRange(':', '\#')
 [/input]
 [output]
 \$ \% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9
@@ -384,38 +486,35 @@ F G H I J K L M N O P Q R S T U V W X Y Z \[ \\ \] \^ \_ \` a b c d e f g h i j 
 [/test]
 [test]
 [input]
-m
-9
+charactersInRange('m', '9')
 [/input]
 [output]
-\: \; \< \= \> \? \@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z \[ \\ \] \^ \_ \` a b c d e f g h i j k l
-[/output]
-[/test]
-[test]
-[input]
-a
-d
-[/input]
-[output]
-b c
+: ; \< = \> ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z \[ \ \] ^ _ \` a b c d e f g h i j k l
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Odd and Even Sum
 [code-task title="Odd and Even Sum" taskId="js-fundamentals-1-Functions-Odd-and-Even-sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function oddEvenSum(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 
@@ -423,17 +522,34 @@ Veți primi un **număr unic**.
 
 Trebuie să scrieți o funcție care returnează **suma** din **toate cifrele pare** și **toate cifrele impare** din acel număr.
 
-# Exemplu
+## Examples
 |**Intrare**|**Ieșire** |
 | --- | --- |
-|`['1000435']`|  Odd sum = 9, Even sum = 4 |
-|`['3495892137259234']`| Odd sum = 54, Even sum = 22 |
+| oddEvenSum(1000435) |  Odd sum = 9, Even sum = 4 |
+| oddEvenSum(3495892137259234) | Odd sum = 54, Even sum = 22 |
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+oddEvenSum(1000435)
+[/input]
+[output]
+Odd sum = 9, Even sum = 4
+[/output]
+[/test]
+[test open]
+[input]
+oddEvenSum(3495892137259234)
+[/input]
+[output]
+Odd sum = 54, Even sum = 22
+[/output]
+[/test]
 [test]
 [input]
-527249158
+oddEvenSum(527249158)
 [/input]
 [output]
 Odd sum = 27, Even sum = 16
@@ -441,7 +557,7 @@ Odd sum = 27, Even sum = 16
 [/test]
 [test]
 [input]
-100000001
+oddEvenSum(100000001)
 [/input]
 [output]
 Odd sum = 2, Even sum = 0
@@ -449,7 +565,7 @@ Odd sum = 2, Even sum = 0
 [/test]
 [test]
 [input]
-12345
+oddEvenSum(12345)
 [/input]
 [output]
 Odd sum = 9, Even sum = 6
@@ -457,7 +573,7 @@ Odd sum = 9, Even sum = 6
 [/test]
 [test]
 [input]
-1117
+oddEvenSum(1117)
 [/input]
 [output]
 Odd sum = 10, Even sum = 0
@@ -465,28 +581,35 @@ Odd sum = 10, Even sum = 0
 [/test]
 [test]
 [input]
-570529212230
+oddEvenSum(570529212230)
 [/input]
 [output]
 Odd sum = 30, Even sum = 8
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Palindrome Integers
 [code-task title="Palindrome Integers" taskId="js-fundamentals-1-Functions-Palindrom-Integers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function palindrome(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 
@@ -494,28 +617,50 @@ Un palindrom este un număr care citit  **de la stânga la dreapta sau de la dre
 
 Scrieți o funcție care primește o **matrice de numere  întregi pozitive** și verificați dacă fiecare număr întreg este un palindrom sau nu.
 
-# Exemplu
+## Example One
 |**Intrare**|**Ieșire** |
 | --- | --- |
-|`['123','323','421','121']`|  false |
+| palindrome([123, 323, 421, 121]) |  false |
 ||true|
 ||false|
 ||true|
 
+## Example Two
 |**Intrare**|**Ieșire** |
 | --- | --- |
-|`['32','2','232','1010']`|  false |
+| palindrome([32, 2, 232, 1010]) |  false |
 ||true|
 ||true|
 ||false|
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+palindrome([123, 323, 421, 121])
+[/input]
+[output]
+false
+true
+false
+true
+[/output]
+[/test]
+[test open]
+[input]
+palindrome([32, 2, 232, 1010])
+[/input]
+[output]
+false
+true
+true
+false
+[/output]
+[/test]
 [test]
 [input]
-121
-159
-259
+palindrome([121, 159, 259])
 [/input]
 [output]
 true
@@ -525,14 +670,7 @@ false
 [/test]
 [test]
 [input]
-121
-528
-891
-622
-271
-602
-117
-489
+palindrome([121, 528, 891, 622, 271, 602, 117, 489])
 [/input]
 [output]
 true
@@ -547,15 +685,7 @@ false
 [/test]
 [test]
 [input]
-70
-555
-523
-902
-554
-209
-918
-37
-808
+palindrome([70, 555, 523, 902, 554, 209, 918, 37, 808])
 [/input]
 [output]
 false
@@ -571,15 +701,7 @@ true
 [/test]
 [test]
 [input]
-567
-656
-920
-184
-580
-128
-638
-276
-137
+palindrome([567, 656, 920, 184, 580, 128, 638, 276, 137])
 [/input]
 [output]
 false
@@ -595,13 +717,7 @@ false
 [/test]
 [test]
 [input]
-123321
-121
-356653
-157
-1001
-666
-159951
+palindrome([123321, 121, 356653, 157, 1001, 666, 159951])
 [/input]
 [output]
 true
@@ -614,21 +730,28 @@ true
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Password Validator
 [code-task title="Password Validator" taskId="js-fundamentals-1-Functions-Password-Validator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function passwordValidator(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 
@@ -638,36 +761,63 @@ Scrieți o funcție care verifică dacă o parolă dată este validă. Validări
 - Ar trebui să fie formată doar din litere și cifre
 - Ar trebui să aibă cel puțin 2 cifre
 
-Dacă o parolă este validă, tipăriți `Password is valid`.
+Dacă o parolă este validă, tipăriți "**Password is valid**".
 
 Dacă este **NU** este validă, pentru fiecare regulă neîmplinită tipăriți un mesaj:
 
-`Password must be between 6 and 10 characters`
+- "**Password must be between 6 and 10 characters**"
 
-`Password must consist only of letters and digits`
+- "**Password must consist only of letters and digits**"
 
-`Password must have at least 2 digits`
+- "**Password must have at least 2 digits**"
 
-# Exemplu
+## Example One
 |**Intrare**|**Ieșire**|
 | --- | --- |
-|`['logIn']`| Password must be between 6 and 10 characters |
+| passwordValidator('logIn') | Password must be between 6 and 10 characters |
 || Password must have at least 2 digits |
-
+## Example Two
 |**Intrare**|**Ieșire**|
 | --- | --- |
-|`['MyPass123']`| Password is valid |
-
+| passwordValidator('MyPass123') | Password is valid |
+## Example Three
 |**Intrare**|**Ieșire**|
 | --- | --- |
-|`['Pa$s$s']`| Password must consist only of letters and digits |
+| passwordValidator('Pa$s$s') | Password must consist only of letters and digits |
 || Password must have at least 2 digits|
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+passwordValidator('logIn')
+[/input]
+[output]
+Password must be between 6 and 10 characters
+Password must have at least 2 digits
+[/output]
+[/test]
+[test open]
+[input]
+passwordValidator('MyPass123')
+[/input]
+[output]
+Password is valid
+[/output]
+[/test]
+[test open]
+[input]
+passwordValidator('Pa$s$s')
+[/input]
+[output]
+Password must consist only of letters and digits
+Password must have at least 2 digits
+[/output]
+[/test]
 [test]
 [input]
-Acer
+passwordValidator('Acer')
 [/input]
 [output]
 Password must be between 6 and 10 characters
@@ -676,7 +826,7 @@ Password must have at least 2 digits
 [/test]
 [test]
 [input]
-Picture
+passwordValidator('Picture')
 [/input]
 [output]
 Password must have at least 2 digits
@@ -684,7 +834,7 @@ Password must have at least 2 digits
 [/test]
 [test]
 [input]
-pesho123\#
+passwordValidator('pesho123\#')
 [/input]
 [output]
 Password must consist only of letters and digits
@@ -692,7 +842,7 @@ Password must consist only of letters and digits
 [/test]
 [test]
 [input]
-gas\%2
+passwordValidator('gas%2')
 [/input]
 [output]
 Password must be between 6 and 10 characters
@@ -702,7 +852,7 @@ Password must have at least 2 digits
 [/test]
 [test]
 [input]
-\$\$\$\$\$\$\$
+passwordValidator('\\$\\$\\$\\$\\$\\$\\$')
 [/input]
 [output]
 Password must consist only of letters and digits
@@ -711,51 +861,86 @@ Password must have at least 2 digits
 [/test]
 [test]
 [input]
-SoftUni40
+passwordValidator('Pesho189')
+[/input]
+[output]
+Password is valid
+[/output]
+[/test]
+[test]
+[input]
+passwordValidator('SoftUni40')
 [/input]
 [output]
 Password is valid
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: NxN Matrix
 [code-task title="NxN Matrix" taskId="js-fundamentals-1-Functions-NxN-Matrix" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function мatrix(input){
+function matrix(input){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 
 Scrieți o funcție care primește un singur număr întreg **n** și imprimă matricea **nxn** cu acel număr.
 
-# Exemplu
+## Example One
 |**Intrare**|**Ieșire** |
 | --- | --- |
-|`['3']`| 3 3 3|
+| matrix(3) | 3 3 3|
 || 3 3 3 |
 || 3 3 3 |
-
+## Example Two
 |**Intrare**|**Ieșire** |
 | --- | --- |
-|`['2']`| 2 2 |
+| matrix(2) | 2 2 |
 || 2 2 |
 
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+matrix(3)
+[/input]
+[output]
+3 3 3
+3 3 3
+3 3 3
+[/output]
+[/test]
+[test open]
+[input]
+matrix(2)
+[/input]
+[output]
+2 2
+2 2
+[/output]
+[/test]
 [test]
 [input]
-7
+matrix(7)
 [/input]
 [output]
 7 7 7 7 7 7 7
@@ -769,7 +954,7 @@ Scrieți o funcție care primește un singur număr întreg **n** și imprimă m
 [/test]
 [test]
 [input]
-10
+matrix(10)
 [/input]
 [output]
 10 10 10 10 10 10 10 10 10 10
@@ -786,7 +971,7 @@ Scrieți o funcție care primește un singur număr întreg **n** și imprimă m
 [/test]
 [test]
 [input]
-5
+matrix(5)
 [/input]
 [output]
 5 5 5 5 5
@@ -798,7 +983,7 @@ Scrieți o funcție care primește un singur număr întreg **n** și imprimă m
 [/test]
 [test]
 [input]
-18
+matrix(18)
 [/input]
 [output]
 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18
@@ -823,7 +1008,7 @@ Scrieți o funcție care primește un singur număr întreg **n** și imprimă m
 [/test]
 [test]
 [input]
-20
+matrix(20)
 [/input]
 [output]
 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20
@@ -850,7 +1035,7 @@ Scrieți o funcție care primește un singur număr întreg **n** și imprimă m
 [/test]
 [test]
 [input]
-13
+matrix(13)
 [/input]
 [output]
 13 13 13 13 13 13 13 13 13 13 13 13 13
@@ -869,21 +1054,28 @@ Scrieți o funcție care primește un singur număr întreg **n** și imprimă m
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Perfect Number 
 [code-task title="Perfect Number" taskId="js-fundamentals-1-Functions-Perfect-Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function perfectNumber (input){
-  // Write your code here
+function perfectNumber(input){
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 
@@ -893,12 +1085,12 @@ Un număr perfect este un număr întreg **pozitiv** care este egal cu **suma** 
 
 Aceasta este suma divizorilor sale pozitivi, excluzând numărul în sine (cunoscut și ca **suma alicotă**).
 
-# Exemplu
-| Intrare | Ieșire | Comentarii |
+## Examples
+| **Intrare** | **Ieșire** | **Comentarii** |
 | :---:       |    :----:   |   :---:     |
-|`['6']`|We have a perfect number!| `1 + 2 + 3`|
-|`['28']`| We have a perfect number!|`1 + 2 + 4 + 7 + 14`|
-|`['1236498']`|It's not so perfect.||
+| perfectNumber(6) |We have a perfect number!| 1 + 2 + 3|
+| perfectNumber(28) | We have a perfect number!|1 + 2 + 4 + 7 + 14|
+| perfectNumber(1236498) |It's not so perfect.||
 
 ## Sugestie
 
@@ -907,10 +1099,27 @@ Aceasta este suma divizorilor sale pozitivi, excluzând numărul în sine (cunos
 - Citiți despre [Perfect](https://en.wikipedia.org/wiki/Perfect_number) number.
 
 [/task-description]
+[code-io /]
 [tests]
-[test]
+[test open]
 [input]
-7
+perfectNumber(6)
+[/input]
+[output]
+We have a perfect number!
+[/output]
+[/test]
+[test open]
+[input]
+perfectNumber(28)
+[/input]
+[output]
+We have a perfect number!
+[/output]
+[/test]
+[test open]
+[input]
+perfectNumber(1236498)
 [/input]
 [output]
 It's not so perfect.
@@ -918,7 +1127,15 @@ It's not so perfect.
 [/test]
 [test]
 [input]
-496
+perfectNumber(7)
+[/input]
+[output]
+It's not so perfect.
+[/output]
+[/test]
+[test]
+[input]
+perfectNumber(496)
 [/input]
 [output]
 We have a perfect number!
@@ -926,7 +1143,7 @@ We have a perfect number!
 [/test]
 [test]
 [input]
-29
+perfectNumber(29)
 [/input]
 [output]
 It's not so perfect.
@@ -934,7 +1151,7 @@ It's not so perfect.
 [/test]
 [test]
 [input]
-8128
+perfectNumber(8128)
 [/input]
 [output]
 We have a perfect number!
@@ -942,7 +1159,7 @@ We have a perfect number!
 [/test]
 [test]
 [input]
-133
+perfectNumber(133)
 [/input]
 [output]
 It's not so perfect.
@@ -950,20 +1167,12 @@ It's not so perfect.
 [/test]
 [test]
 [input]
-33550336
+perfectNumber(33550336)
 [/input]
 [output]
 We have a perfect number!
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
-[/slide]
-
-[slide]
-# Rezultatele temei de casa
-[tasks-results/]
-
 [/slide]

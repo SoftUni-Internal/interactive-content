@@ -1,6 +1,6 @@
 [slide hideTitle]
 
-# Ce este un tip de date?
+# Ce Este un Tip de Date?
 
 Tipurile de date informează calculatorul ce cantitate de infromații trebuie să citească **din memorie**, dintr-o perspectivă pur tehnică.
 
@@ -43,7 +43,7 @@ let unknown = undefined;				 // Undefined
 [slide hideTitle]
 
 
-# Tipizarea dinamică
+# Tipizarea Dinamică
 
 
 Variabilele în JavaScript nu sunt strict asociate cu un **tip de valoare** specific.
