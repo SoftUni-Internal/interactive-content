@@ -4,8 +4,15 @@
 
 # How to Debug a Process
 
+Almost every **IDE** has a integrated debugger.
+
+The debugger itself is a tool, that allows you to execute your code in a **strictly** controlled environment.
+
 **IntelliJ IDE** gives you a lot of tools to debug your application
+
 - Adding **breakpoints**
+  * click the gutter at the executable line of code where you want to set the breakpoint
+  * alternatively, place the caret at the line and press Ctrl+F8
 - Visualize the **program flow**
 - Control the **flow of execution**
 - **Data tips**
@@ -13,16 +20,22 @@
 - Debugging **multithreaded programs**
 - And many more…
 
+
+
 [/slide]
 
 [slide hideTitle]
 
-# Starting a process of debugging
+# Starting a Process of Debugging
+
+Starting a session using the debugger is similar to the program in normal mode.
+
+Since the debugger logic is encapsulated behind the scenes, you do not have to configure anything specific.
 
 - Starting a process under the IntelliJ debugger
 - Attaching to an already running process
-    - Without a solution loaded you can still debug
-    - Useful when solution isn't readily available
+    - without a solution loaded you can still debug
+    - useful when solution isn't readily available
     - **Ctrl + Alt + F5**
 
 [image assetsSrc="debugging-techniques-example(1).png" /]
@@ -34,6 +47,7 @@
 [slide hideTitle]
 # Debugging a Project
 
+
 - Right click in **main** method, Debug `{class}.main()`
     - **Shift + F9** is a shortcut
 - Easier access to the source code and symbols since its loaded in the solution
@@ -44,9 +58,9 @@
 - Debug Windows are the means to introspect on the state of a process
 - Opens a new window with the selected information in it
 - Window categories
-    - Frames / Threads
-    - Variables
-    - Watches
+    - frames / threads
+    - variables
+    - watches
 - Accessible from Debug window
 
 **Debugging Toolbar**
@@ -74,8 +88,8 @@
 
     Build, Execution and Deployment (Ctrl + Alt + S):
 
-    - Debugger -> Data Views -> **Java**
-    - Compiler -> **Java Compiler**
+    - debugger -> data views -> **Java**
+    - compiler -> **Java Compiler**
 - **Project Structure** (Ctrl + Shift + Alt + S)
 
 
@@ -94,7 +108,7 @@ Ability to stop execution based on certain criteria is key when debugging.
 **IntelliJ's debugger** has a huge feature set when it comes to breakpoints.
 
 - Stops execution at a specific instruction (line of code)
-    - Can be set using:
+    - can be set using:
       **Ctrl + F8** shortcut or 
 
       clicking on the **left most side** of the source code window
@@ -102,9 +116,9 @@ Ability to stop execution based on certain criteria is key when debugging.
 - By default, the breakpoint will hit every time execution reaches the line of the code
 - Additional capabilities: condition, hit count, value changed, when hit, filters
 - Managing breakpoint in the breakpoint window
-    - Adding breakpoints
-    - Removing or **disabling** breakpoints
-    - Open Breakpoints window - **Ctrl + Shift + F8**
+    - adding breakpoints
+    - removing or **disabling** breakpoints
+    - open Breakpoints window - **Ctrl + Shift + F8**
 
 [image assetsSrc="debugging-techniques-example(2).png" /]
 

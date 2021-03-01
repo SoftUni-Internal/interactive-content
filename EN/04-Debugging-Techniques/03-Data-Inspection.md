@@ -5,10 +5,10 @@
 # IntelliJ Data Inspection
 
 - Debugging is all about **data inspection**
-    - What are the local **variables**
-    - What is in **memory**
-    - What is the **code flow**
-    - In general - What is the state of the process right now and how did it get there
+    - what are the local **variables**
+    - what is in **memory**
+    - what is the **code flow**
+    - in general - What is the state of the process right now and how did it get there
 - As such, the ease of data inspection is key to quick resolution of problems
 
 [/slide]
@@ -34,9 +34,9 @@
 - Allows you to inspect various states of your application
 - Several different kinds of "predefined" watches windows
 - "Custom" watches windows also possible
-    - Contains only variables that you choose to add
-    - Right click on the variable and select "Add to Watches"
-    - Write the variable name in Watches window
+    - contains only variables that you choose to add
+    - right click on the variable and select "Add to Watches"
+    - write the variable name in Watches window
 
 [/slide]
 
@@ -59,9 +59,9 @@
 
 - Stabilize the error
 - Locate the source of the error
-    - Gather the data
-    - Analyze the data and form hypothesis
-    - Determine how to prove or disprove the hypothesis
+    - gather the data
+    - analyze the data and form hypothesis
+    - determine how to prove or disprove the hypothesis
 - Fix the defect
 - Test the fix
 - Look for similar errors
@@ -113,9 +113,9 @@
 - Your ego tells you that your code is good and doesn't have a defect 
 even when you've seen that it has
 - How "psychological set" contributes to debugging blindness
-    - People expect a new phenomenon to resemble similar phenomena they've seen before
-    - Do not expect anything to work "by default"
-    - Do not be too devoted to your code – establish psychological distance
+    - people expect a new phenomenon to resemble similar phenomena they've seen before
+    - do not expect anything to work "by default"
+    - do not be too devoted to your code – establish psychological distance
 
 
 

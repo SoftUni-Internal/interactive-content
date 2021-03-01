@@ -7,7 +7,7 @@
 - What is Debugging in Java
 - Importance of Debugging
 - How to Debug with IntelliJ IDEA Debugger
-    - What Breakpoints are and How to Use Them
+    - what Breakpoints are and How to Use Them
 - The Steps to Inspect our Data
 - How to Find and Fix a Defect in our code
    

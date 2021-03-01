@@ -6,12 +6,17 @@
 
 Debugging is the process of locating and fixing or bypassing bugs (errors) in computer program code.
 
-Steps to debug a program are:
-- Start with a **problem**
-- Isolate the **source** of the problem
-- **Fix** it
+To debug a program, a user has to start with a problem.
+
+After that, the user needs to isolate the source code that is causing problems (bugs).
+
+The last step is knowing how to fix the bug, as knowledge about problem analysis is expected.
 
 **Debugging tools** (called **debuggers**) help identify coding errors at various development stages.
+
+Programmers can trace the execution of the whole program step-by-step getting the value of the needed variables on every execution step.
+
+Debugging, you also have the power to change and test the behavior of your code without modifying the source.
 
 [/slide]
 
@@ -19,10 +24,9 @@ Steps to debug a program are:
 
 # Debugging vs. Testing
 
-- Testing
-    - Is about initial detection of errors
-- Debugging
-    - Means of diagnosing and correcting the root causes of errors that have already been detected
+- Testing means that programmers must test the execution flow of the program, then detect if an initial error occurs.
+
+- Debugging is the process of diagnosing and correcting the root causes of errors that have already been detected.
 
 [/slide]
 
@@ -30,15 +34,15 @@ Steps to debug a program are:
 
 # Importance of Debugging
 
-- Legacy code
-    - You should be able to debug code that is written years ago
-- Perfect code is an illusion
-    - There are factors that are out of our control
-- Deeper understanding of system as a whole
+Debugging is an important procedure whether a business item or a venture or individual's applications developing is involved.
 
-**Intresting fact:** - $60 Billion per year in economic losses due to software defects.
+Knowing how to debug properly saves precious development time and also helps you understand your code's logic and flow system better.
 
-E.g. the Cluster Spacecraft Failure was caused by a bug.
+Debugging and finding defects will save additional time and resources, also it will help you train your logical and analytical understanding.
+
+This is one of the reasons, companies hire consultants.
+
+
 
 [/slide]
 
@@ -52,8 +56,8 @@ E.g. the Cluster Spacecraft Failure was caused by a bug.
 - Leaf nodes represent possible **root causes**
 - Traversal of tree boils down to process state **inspection**
 - Minimizing time to resolution is **key**
-    - Careful traversal of the decision tree
-    - Pattern recognition
-    - Visualization and ease of use helps minimize time to resolution
+    - careful traversal of the decision tree
+    - pattern recognition
+    - visualization and ease of use helps minimize time to resolution
 
 [/slide]
