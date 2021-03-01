@@ -478,6 +478,7 @@ Most Valuable Playboy - content4: Lauren Blakely
 # Problem: Students
 
 [code-task title="Students" taskId="java-fund-2-Objects-and-Classes-Students" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
+
 [task-description]
 ## Description
 Write a program that receives **n count of students** and **orders them by grade (in descending)**. 
@@ -491,7 +492,7 @@ Each student should have **first name** (string), **last name** (string) **and g
 
 
 ### Output
-- Print each student in the following format "{first name} {second name}: {grade}"
+- Print each student in the following format "\{first name\} \{second name\}: \{grade\}"
 
 ### Example
 | **Input** | **Output** |
