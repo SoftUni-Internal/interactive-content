@@ -2,18 +2,8 @@
 
 [slide hideTitle]
 # Problem: Opinion Poll
-[code-task title="Opinion Poll" taskId="oop-basics-java-defining-classes-Opinion-Poll" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Opinion Poll" taskId="oop-basics-java-defining-classes-Opinion-Poll" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 Create a `Person` class with two fields `String name` and `int age`, write a program that reads from the console **N** lines of personal information, and then prints all people whose **age** is **more than 30** years, **sorted in alphabetical order**.
@@ -43,7 +33,7 @@ Create a `Person` class with two fields `String name` and `int age`, write a pro
 | Owen 11 |  |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -211,18 +201,8 @@ Anntoanette - 39
 
 [slide hideTitle]
 # Problem: Company Roster
-[code-task title="Company Roster" taskId="oop-basics-java-defining-classes-Company-Roster" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Company Roster" taskId="oop-basics-java-defining-classes-Company-Roster" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 Define a class **Employee** that holds the following information: **name, salary, position, department, email** and **age**.
@@ -262,7 +242,7 @@ The **salary** should be printed to **two decimal places** after the separator.
 | Peyton 130.3333 Sailor SpinachGroup peyton@softuni.org |  |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -399,18 +379,8 @@ Victor 0.03 sales@uni.eu 23
 
 [slide hideTitle]
 # Problem: Speed Racing
-[code-task title="Speed Racing" taskId="oop-basics-java-defining-classes-Speed-Racing" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Speed Racing" taskId="oop-basics-java-defining-classes-Speed-Racing" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 Your task is to implement a program that keeps track of cars and their fuel and supports methods for moving cars.
@@ -472,7 +442,7 @@ Where the fuel amount should be rounded to the **second decimal place**.
 | End |  |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -633,18 +603,8 @@ K 0.00 4
 
 [slide hideTitle]
 # Problem: Raw Data
-[code-task title="Raw Data" taskId="oop-basics-java-defining-classes-Raw-Data" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Raw Data" taskId="oop-basics-java-defining-classes-Raw-Data" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 You are the owner of a courier company and you want to make a system for tracking your cars and their cargo.
@@ -692,7 +652,7 @@ The cars should be printed in order of appearing in the input on a separate line
 | flamable |  |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -796,18 +756,8 @@ T
 
 [slide hideTitle]
 # Problem: Car Salesman
-[code-task title="Car Salesman" taskId="oop-basics-java-defining-classes-Car-Salesman" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Car Salesman" taskId="oop-basics-java-defining-classes-Car-Salesman" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 Define two classes **Car** and **Engine**.
@@ -914,7 +864,7 @@ Override the classes `toString()` methods to have a reusable way of displaying t
 |  | Color: n/a |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -1929,18 +1879,8 @@ Color: Gray
 
 [slide hideTitle]
 # Problem: Pokemon Trainer
-[code-task title="Pokemon Trainer" taskId="oop-basics-java-defining-classes-Pokemon-Trainer" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Pokemon Trainer" taskId="oop-basics-java-defining-classes-Pokemon-Trainer" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 You wanna be the very best pokemon trainer, like no one ever was, so you set out to catch pokemon.
@@ -2007,7 +1947,7 @@ Print in the format:
 | End |  |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -2288,23 +2228,13 @@ G 0 0
 
 [slide hideTitle]
 # Problem: Personal Information
-[code-task title="Personal Information" taskId="oop-basics-java-defining-classes-Personal-Information" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Personal Information" taskId="oop-basics-java-defining-classes-Personal-Information" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
-*You and your friends decide to create a Class that holds all the information about all of you, even your pokemon collection.* 
+You and your friends decide to create a Class that holds all the information about all of you, even your pokemon collection.
 
-*Since you are good at writing code, they asked you to design that Class.*
+Since you are good at writing code, they asked you to design that Class.
 
 From the console you will receive lines until the command `End`.
 
@@ -2322,11 +2252,11 @@ Each of those lines contains information about a person in one of the following 
 
 You should structure all information about a person in a class with nested subclasses. 
 
-Person names are **unique** - there won't be 2 person with the same name.
+Person names are **unique** - there will not be two people with the same name.
 
 A person can have **only one company** and **one car**, but can have **multiple parents, children** and **pokemon**. 
 
-After the command `End` you will receive a **single** name on the next line.
+After the command `End`, you will receive a **single** name on the next line.
 
 You should **print** all information about that person. 
 
@@ -2386,7 +2316,7 @@ Children:
 |  | PJ 01/01/2001 |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -2569,21 +2499,13 @@ LR 01/01/1000
 
 [slide hideTitle]
 # Problem: Family Tree
-[code-task title="Family Tree" taskId="oop-basics-java-defining-classes-Familiy-Tree" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Family Tree" taskId="oop-basics-java-defining-classes-Familiy-Tree" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
-*You want to build your family tree, so you went to ask your grandmother. Sadly your grandmother keeps remembering information about your predecessors in pieces, so it falls to you to group the information and build the family tree.*
+*You want to build your family tree, so you went to ask your grandmother.*
+
+*Sadly your grandmother keeps remembering information about your predecessors in pieces, so it falls to you to group the information and build the family tree.*
 
 On the first line of the input, you will receive either a name or a birthdate in the format:
 
@@ -2654,7 +2576,7 @@ For example in the first input Stan is before Jenny because his birthdate appear
 | End |  |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -2885,18 +2807,8 @@ Abc7 Abcde 26/9/1974
 
 [slide hideTitle]
 # Problem: Cat Catalog
-[code-task title="Cat Catalog" taskId="oop-basics-java-defining-classes-Cat-Catalog" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Cat Catalog" taskId="oop-basics-java-defining-classes-Cat-Catalog" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 *The people from a pet shelter need to have a catalog of their cats with the breed and special characteristics.*
@@ -2944,7 +2856,7 @@ You should print that cat and round the number of its s **two digits** after the
 | Kitty |  |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
