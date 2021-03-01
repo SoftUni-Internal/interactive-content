@@ -4,6 +4,8 @@
 
 # Reading a Multidimensional Array
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/interactive-java-advanced-multidimensional-arrays-11-Reading-A-Matrix-Example-And-Demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ```java
 // Enter the length 
 int rows = Integer.parseInt(scanner.nextLine());
@@ -64,6 +66,9 @@ We access each element of the array one by one and print them separated by a spa
 
 [slide hideTitle]
 # Problem with Solution: Compare Matrices
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/interactive-java-advanced-multidimensional-arrays-12-Problem-And-Solution-Compare-Matrices-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Compare Matrices" taskId="java-advanced-lab-multidimensional-arrays-Compare-Matrices" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -258,6 +263,9 @@ not equal
 
 [slide hideTitle]
 # Problem with Solution: Positions Of
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/interactive-java-advanced-multidimensional-arrays-16-Problem-And-Solution-Position-Of-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Positions of" taskId="java-advanced-lab-multidimensional-arrays-Positions-Of" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -432,6 +440,9 @@ not found
 
 [slide hideTitle]
 # Problem with Solution: Sum of All Elements of a Matrix
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/interactive-java-advanced-multidimensional-arrays-18-Problem-And-Solution-Sum-Of-All-Elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Sum of All Elements of Matrix" taskId="java-advanced-lab-multidimensional-arrays-Sum-of-All-Elements-of-Matrix" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -570,6 +581,9 @@ On the **next lines**, you will be receiving the elements for each row **separat
 
 [slide hideTitle]
 # Problem with Solution: Maximum Sum of 2X2 Submatrix
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/interactive-java-advanced-multidimensional-arrays-20-Problem-And-Solution-Maximum-Sum-Of-2x2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Maximum Sum of 2X2 Submatrix" taskId="java-advanced-lab-multidimensional-arrays-Maximum-Sum-of-2X2-Submatrix" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
