@@ -1,7 +1,9 @@
 [slide hideTitle]
 # Summary
 
-# In this lesson you learned:
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-30-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+## In this lesson you learned:
 - Lists are data structures that hold sequences of elements
 - They are resizable
 - A list is initialized using `new ArrayList<E>()`

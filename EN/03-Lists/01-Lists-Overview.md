@@ -4,7 +4,7 @@
 
 # Definition and Initialization
 
-//ADD VIDEO: interactive-java-fundamntals-lists-3-5-lists-overview-and-demo.mp4
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-3-5-lists-overview-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Just like an array а **list** is a **sequence of elements**.
 
@@ -73,7 +73,7 @@ If you try to convert an array that holds a primitive data type like `int []` to
 
 [slide hideTitle]
 # List Methods
-//ADD VIDEO: interactive-java-fundamntals-lists-6-list-data-structure-and-demo.mp4
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-6-list-data-structure-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Lists provide functionality that lets you **add**, **remove** and **find** elements.
 
@@ -90,7 +90,7 @@ Lists provide functionality that lets you **add**, **remove** and **find** eleme
 [slide hideTitle]
 # Adding & Removing Elements
 
-//ADD VIDEO: interactive-java-fundamntals-lists-7-9-add-remove-add(index, El).mp4
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-7-9-add-remove-add(index, El)-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 ## Adding Elements

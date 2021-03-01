@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Reading Lists 
 
-[vimeo-video startTimeInSeconds="3799" endTimeInSeconds="7434"]
-[stream language="EN" videoId="421781852" default /]
-[stream language="RO" videoId="431758884"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-10-11-reading-lists-from-the-console-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Reading a list using `for` loop and `scanner.nextLine()`
 ```java 
@@ -34,6 +31,8 @@ for (int i = 0; i < n; i++) {
 [slide hideTitle]
 # Reading from a Single Line
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-12-reading-values-from-a-single-line-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 You can read a list as a single line from the console.
 
@@ -52,6 +51,8 @@ List<Integer> items = Arrays
 
 [slide hideTitle]
 # Printing Lists 
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-13-printitng-lists-on-the-console-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Printing a list using a "for" loop:**
 
@@ -85,6 +86,9 @@ System.out.println(String.join(" ", list));
 
 [slide hideTitle]
 # Problem with Solution: Sum Adjacent Equal Numbers
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-14-problem-and-solution-print-adjacent-equal-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Sum Adjacent Equal Numbers" taskId="java-fund-Lists-Sum-Adjacent-Equal-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -213,6 +217,9 @@ Write a program to **sum all adjacent equal numbers** in a list of decimal numbe
 
 [slide hideTitle]
 # Problem with Solution: Gauss' Trick
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-17-problem-and-solution-gauss-trick-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Gauss' Trick" taskId="java-fund-Lists-Gauss'-Trick" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -310,6 +317,9 @@ Write a program that sums all numbers in a list in the following order:
 
 [slide hideTitle]
 # Problem with Solution: Merging Lists
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-19-problem-merging-and-solution-lists-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Merging Lists" taskId="java-fund-Lists-Merging-Lists" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

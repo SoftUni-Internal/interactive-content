@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Sorting Lists
 
-[vimeo-video startTimeInSeconds="8035" endTimeInSeconds="10485"]
-[stream language="EN" videoId="421781852" default /]
-[stream language="RO" videoId="431758884"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-23-24-sorting-lists-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **`Collections.sort()`** - sorts a List in ascending order. In the case of String values they will be sorted in alphabetical order.
 
@@ -30,6 +27,9 @@ System.out.println(String.join(", ", names));
 
 [slide hideTitle]
 # Problem with Solution: List of Products
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-25-problem-and-solution-list-of-products-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="List of Products" taskId="java-fund-Lists-List-of-products" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -144,6 +144,9 @@ d
 
 [slide hideTitle]
 # Problem with Solution: Remove Negatives and Reverse
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-27-problem-and-solution-remove-negatives-and-reverse-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Remove Negatives and Reverse" taskId="java-fund-Lists-Remove-Negatives-and-Reverse" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
