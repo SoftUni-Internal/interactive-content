@@ -511,7 +511,7 @@ Each student should have **first name** (string), **last name** (string) **and g
 4
 Lakia Eason 3.90
 Prince Messing 5.49
-Akiko Segers 2.85
+Akiko Segers 4.85
 Rocco Erben 6.00
 [/input]
 [output]
