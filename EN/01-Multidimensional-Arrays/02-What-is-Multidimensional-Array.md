@@ -4,6 +4,8 @@
 
 # Definition
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/interactive-java-advanced-multidimensional-arrays-7-What-Is-Multidimensional-Array-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The arrays we have been using so far have only held one column of data.
 
 But we can set up an array to hold more than one column.
@@ -24,6 +26,8 @@ It might look like this:
 [slide hideTitle]
 
 # Declaring and Creating Multidimensional Arrays
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/interactive-java-advanced-multidimensional-arrays-8-Declaring-And-Creating-Array-And-Demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Two of the **most used** multi-dimensional arrays are **two and three-dimensional array**, known as a `2D` and `3D` array. Anything above is rare.
 
@@ -53,6 +57,8 @@ Here we create a three-dimensional array of strings.
 [slide hideTitle]
 
 # Creating and Initializing Multidimensional Arrays
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/interactive-java-advanced-multidimensional-arrays-9-Initializing-Multi-Array-And-Demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 -	We can create and initialize a two-dimensional array using curly brackets
 
@@ -85,6 +91,8 @@ for (int i = 0; i < 2; i++) {
 [slide hideTitle]
 
 # Accessing Elements
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/interactive-java-advanced-multidimensional-arrays-10-Accessing-Elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Accessing Elements of а "2D Array"
 

@@ -4,6 +4,8 @@
 
 # What is Array?
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/interactive-java-advanced-multidimensional-arrays-4-5-Array-In-Java-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 An array is a **sequence of elements** that holds a **fixed number of values of a single type**.
 
 The **length** of an array **is established when it is created**.
@@ -22,6 +24,8 @@ As shown in the illustration above, **the numbering of elements starts with 0**,
 [slide hideTitle]
 
 # Working with Arrays
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/interactive-java-advanced-multidimensional-arrays-6-Working-With-Array-In-Java-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Initializing an Array
 

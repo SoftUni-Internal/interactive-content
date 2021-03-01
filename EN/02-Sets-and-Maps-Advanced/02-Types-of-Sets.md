@@ -4,6 +4,8 @@
 
 # HashSet
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-7-Hashset-Add-Remove-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The **HashSet** class implements the **Set** interface, backed by a **Hash Table**.
 
 It makes **no guarantees** about **the sequence of the elements** when you iterate over them.
@@ -83,6 +85,8 @@ System.out.println(hash.size());
 [slide hideTitle]
 # TreeSet
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-9-TreeSet-Add-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The elements are ordered using their **natural ordering**.
 
 The `TreeSet` guarantees **log(n)** time cost for the basic operations - `add()`, `remove()` and `contains()`.
@@ -141,6 +145,8 @@ System.out.println(tree.contains("Ana"));
 
 [slide hideTitle]
 # LinkedHashSet
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-10-LinkedHashSet-Add-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A **LinkedHashSet** is an **ordered version of the HashSet** that maintains a doubly-linked List across all of its elements.
 
@@ -207,6 +213,9 @@ System.out.println(linkedHashSet.contains("Ana"));
 
 [slide hideTitle]
 # Problem with Solution: Parking Lot
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-11-Problem-and-solution-Parking-Lot-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Parking Lot" taskId="java-advanced-sets-and-maps-advanced-lab-Parking-Lot" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -403,6 +412,9 @@ CA2822UU
 
 [slide hideTitle]
 # Problem: SoftUni Party
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-12-13-Problem-and-Solution-Softuni-Party-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="SoftUni Party" taskId="java-advanced-sets-and-maps-advanced-lab-SoftUni-Party" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -698,6 +710,9 @@ xys2FYzn
 
 [slide hideTitle]
 # Problem with Solution: Card Game
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-15-Solution-Card-Game-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Card Game" taskId="java-advanced-sets-and-maps-advanced-lab-Card-Game" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

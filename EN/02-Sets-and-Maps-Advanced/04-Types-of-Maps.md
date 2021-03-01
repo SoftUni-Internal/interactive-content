@@ -3,6 +3,8 @@
 [slide hideTitle]
 # HashMap
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-19-20-HashmapPut-HashMap-Remove-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The `HashMap<Key, Value>` is implemented as a **Hash Table** and there is **no ordering on the key - value pairs**.
 
 It implements all of the **Map** operations and **allows null values** and **one null key**. 
@@ -45,6 +47,8 @@ hashMap.forEach((k, v) -> System.out.println(k + " - " + v));
 [slide hideTitle]
 # TreeMap 
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-24-TreeMap-Put-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The `TreeMap <Key, Value>` is **sorted** according to the **natural ordering of its keys**.
 
 **TreeMaps** in Java **do not allow null keys**.
@@ -70,6 +74,8 @@ treeMap.forEach((k, v) -> System.out.println(k + " - " + v));
 
 [slide hideTitle]
 # LinkedHashMap 
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-27-HashMap-LinkedHashMap-TreeMap-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `LinkedHashMap <Key, Value>` inherits the HashMap class, but **maintains insertion order**. 
 
@@ -98,6 +104,8 @@ linkedHashMap.forEach((k, v) -> System.out.println(k + " - " + v));
 
 [slide hideTitle]
 # Built-in Methods
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-18-Methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - `put(K key, V value)`: **adds the given items** in the map
 
@@ -190,6 +198,8 @@ System.out.println(airplanes.isEmpty());
 
 [slide hideTitle]
 # Iterating Over a Map
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-21-Looping-Through-Maps-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Iterating through objects of type `Map.Entry <K, V>`. 
 
@@ -357,6 +367,9 @@ cars.entrySet()
 
 [slide hideTitle]
 # Problem with Solution: Count Real Numbers
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-22-23-Problem-and-solution-Count-Numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Count Real Numbers" taskId="java-advanced-sets-and-maps-advanced-lab-Count-Real-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -487,6 +500,9 @@ All numbers must be formatted to the **first digit after the decimal point**.
 
 [slide hideTitle]
 # Problem with Solution: Academy Graduation
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-25-26-Problem-and-solution-Academy-Graduation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Academy Graduation" taskId="java-advanced-sets-and-maps-advanced-lab-Academy-Graduation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
