@@ -4,6 +4,8 @@
 
 # Priority Queue
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-41-Priority-Queue-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Priority Queues** are a special type of queue. Their elements are **retrieved in sorted order**. 
 
 This is based on the natural order of the data type contained inside the queue. The smallest element will always be at the head of the queue when retrieved.

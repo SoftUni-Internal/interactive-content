@@ -4,6 +4,8 @@
 
 # Queues
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-26-27-Queue-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Queues** are data structures similar to **stacks**. It keeps its elements in sorted order. Queue elements are ordered based on the **FIFO** principle - **First In First Out**. When you add an element, it is always placed **at the bottom** of the queue. Removing an element removes it from **the top** of the queue.
 
 This data structure is modeled based on queues in real life, where the person who comes first is served before everyone else.
@@ -14,6 +16,7 @@ This data structure is modeled based on queues in real life, where the person wh
 
 # Queue: Abstract Data Type
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-28-Queue-Abstract-Data-Type-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Adding an element to the the end of the queue (the bottom of the queue)
 
@@ -34,6 +37,7 @@ This data structure is modeled based on queues in real life, where the person wh
 
 # Implementing Queue with ArrayDeque
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-29-30-34-ArrayDeque-Java-Implementation-1-2-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Queue Implementation using `ArrayDeque<E>`
 
@@ -62,6 +66,8 @@ ArrayDeque<Integer> queue = new ArrayDeque<>();
 [slide hideTitle]
 
 # Queue Operations
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-31-33-Add-Remove-Peak-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Add() / Offer()
 
@@ -193,6 +199,8 @@ System.out.println(queueOfCars.contains("BMW 7"));
 [slide hideTitle]
 # Overview of All Operations
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-35-Queue-Overview-of-all-operations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The animation below illustrates all the queue operations that we can use for solving the upcoming programming problems.
 
 [image assetsSrc="Java-Advanced-Stack-and-Queues-11.gif" /]
@@ -201,6 +209,9 @@ The animation below illustrates all the queue operations that we can use for sol
 
 [slide hideTitle]
 # Problem with Solution: Hot Potato
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-36-Solution-Hot-Potato-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Hot Potato" taskId="java-advanced-lab-stack-and-queue-Hot-Potato" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -383,6 +394,9 @@ Last is 2
 
 [slide hideTitle]
 # Problem with Solution: Math Potato
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-39-Solution-Math-Potato-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Math Potato" taskId="java-advanced-lab-stack-and-queue-Math-Potato" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
