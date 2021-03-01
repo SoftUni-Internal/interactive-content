@@ -138,7 +138,7 @@ The output should be objects.
 
 Latitude and longitude must be parsed to numbers and formatted to the second decimal point.
 
-# Example
+## Example
 | **Input** | **Output** |
 | --- | --- |
 |towns(['Bucuresti \| 42.696552 \| 23.32601','Beijing \| 39.913818 \| 116.363625'])|\{ town: 'Bucuresti', latitude: '42.70', longitude: '23.33' \} |
@@ -244,7 +244,7 @@ The movie's object info must be name, director and date. You can receive several
 
 At the end print all the movies that have all the info (if the movie has no director, name or date, don’t print it) **in JSON format.**
 
-# Example
+## Example
 
 | **Input** | **Output** |
 | --- | --- |
@@ -353,7 +353,7 @@ The data must be in the following format for each hero:
 
 "**Hero:** \{**heroName**\}
 **level** \=\> \{**heroLevel**\}
-**Items** \=\> \{**item1**\}, \{**item2**\}, \{**item3**\}"
+**items** \=\> \{**item1**\}, \{**item2**\}, \{**item3**\}"
 
 
 # Example
@@ -628,7 +628,7 @@ Define a class Song, which holds the following information about songs: typeList
 
 You will receive the input as an array. 
 
-The first element n will be the number of songs. 
+The first element "**n**" will be the number of songs. 
 
 Next "**n**" elements will be the songs data in the following format: 
 

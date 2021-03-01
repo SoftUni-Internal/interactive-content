@@ -47,11 +47,11 @@ In this example:
 
 * Brackets `{}` define a JSON
 
-* Keys are in double quotes: `"name"`, `"age"`, `"grades"`, `"Math"`, `"Chemistry"`
+* Keys are in double quotes: "name", "age", "grades", "Math", "Chemistry"
 
-* Values are separated from keys by a colon: `"George"`, `25`, `[2.50, 3.50]`, `[4.50]`
+* Values are separated from keys by a colon: "George", 25, \[2.50, 3.50\], \[4.50\]
 
-* It is possible to have nested objects - like the one nested inside `"grades"`
+* It is possible to have nested objects - like the one nested inside "grades"
 
 [/slide]
 
@@ -119,14 +119,14 @@ Loop through all the keys and print them with their values in format:
 \{**key**\}**:** \{**value**\}
 
 
-# Example One
+## Example One
   | **Input** | **Output** |
 | --- | --- |
 | convertToObject('\{"name": "George", "age": 40, "town": "Berlin"\}') | name: George |
 ||age: 40|
 ||town: Berlin|
 
-# Example Two
+## Example Two
 
   | **Input** | **Output** |
 | --- | --- |
@@ -223,7 +223,7 @@ Convert the object to a JSON string and print it.
 
 The input is provided as 3 single strings in the order stated above.
 
-# Example
+# Examples
   | **Input** | **Output** |
 | --- | --- |
 | convertToJSON('George', 'Jones', 'Brown') | \{"name":"George", "lastName":"Jones", "hairColor":"Brown"\}|
