@@ -78,6 +78,8 @@ Finally, we convert the result to an array.
 [slide hideTitle]
 # Printing Arrays
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-12-Printing-Arrays-to-the-console-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 A `for` loop can be used for printing all the elements of an array.
 
 While printing each element we can split them by whitespace or newline.
