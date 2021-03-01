@@ -1,12 +1,7 @@
 # Introducere Obiectului
 
-[slide]
-# Ce sunt obiectele?
-
-[vimeo-video]
-[stream language="EN" videoId="489795277/32e690031f" default /]
-[stream language="RO" videoId="489795277/32e690031f"  /]
-[/video-vimeo]
+[slide hideTitle]
+# Ce sunt Obiectele?
 
 Obiectele din JavaScript, ca și în **multe alte limbaje de programare**, pot fi comparate cu obiectele din viața reală.
 
@@ -31,13 +26,8 @@ Putem accesa valoarea proprietății cu numele clasei `.` nume de proprietate.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Definirea Obiectului 
-
-[vimeo-video]
-[stream language="EN" videoId="489795273/ab8664a147" default /]
-[stream language="RO" videoId="489795273/ab8664a147"  /]
-[/video-vimeo]
 
 Putem defini un obiect gol și adăuga proprietățile ulterior:
 
@@ -47,23 +37,19 @@ let person = {name:'Peter', age: 20, hairColor: 'black'};
 
 Putem defini obiectul gol și adăuga proprietățile ulterior:
 
+
 ``` js
 let person = {};
 person.name ='Peter';
-person["lastName"] = 'Parker';
+person['lastName'] = 'Parker';
 person.age = 20;
 person.hairColor = 'black';
 ```
 
 [/slide]
 
-[slide]
-# Metode de obiecte
-
-[vimeo-video]
-[stream language="EN" videoId="489795322/e2b71c887b" default /]
-[stream language="RO" videoId="489795322/e2b71c887b"  /]
-[/video-vimeo]
+[slide hideTitle]
+# Metode de Obiecte
 
 Funcțiile dintr-un obiect JavaScript se numesc metode.
 
@@ -97,13 +83,9 @@ person.sayHello = () => console.log('Hi, guys');
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Metode încorporate
 
-[vimeo-video]
-[stream language="EN" videoId="489795341/8532941804" default /]
-[stream language="RO" videoId="489795341/8532941804"  /]
-[/video-vimeo]
 
 Metode:
 
@@ -126,13 +108,9 @@ console.log(Object.values(cat));
 
 [/slide]
 
-[slide]
-# Iterează prin chei
+[slide hideTitle]
+# Iterează Prin Chei
 
-[vimeo-video]
-[stream language="EN" videoId="489795350/598a1cef8e" default /]
-[stream language="RO" videoId="489795350/598a1cef8e"  /]
-[/video-vimeo]
 
 Putem itera prin cheile unui obiect, folosind o buclă `for-in` pentru a itera peste proprietățile obiectului prin cheie:
 
@@ -147,204 +125,95 @@ for (let key in person) {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problemă: Person Info
 
-[vimeo-video]
-[stream language="EN" videoId="489795432/3e85c0a88d" default /]
-[stream language="RO" videoId="489795432/3e85c0a88d"  /]
-[/video-vimeo]
-
-[code-task title="Person Info" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Person Info" taskId="JS-fundamentals-2-Objects-and-Classes-lab-Person-Info" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function personInfo(input){
+function personInfo(firstName, lastName, age){
   // Write your code here
 }
 ```
 [/code-editor]
-[task-description]
-# Descriere
-Scrieți o funcție care primește o matrice de 3 elemente, le setează la un **obiect** și tipărește proprietățile obiectului după cheie și valoare în format:
-`{key}: {value}`
-
-Intrarea vine ca 3 șiruri separate în următoarea ordine: nume, prenume, vârstă.
-
-# Exemplu
-   |**Intrare**|**Ieșire** |
-| --- | --- |
-|`['Peter','Pan','20']`| firstName: Peter |
-||lastName: Pan|
-||age: 20|
-
-[/task-description]
-[tests]
-[test]
-[input]
-Johny
-Tony
-15
-[/input]
-[output]
-firstName: Johny
-lastName: Tony
-age: 15
-[/output]
-[/test]
-[test]
-[input]
-A
-b
-2
-[/input]
-[output]
-firstName: A
-lastName: b
-age: 2
-[/output]
-[/test]
-[test]
-[input]
-CC
-BB
-50
-[/input]
-[output]
-firstName: CC
-lastName: BB
-age: 50
-[/output]
-[/test]
-[test]
-[input]
-Z
-X
-41
-[/input]
-[output]
-firstName: Z
-lastName: X
-age: 41
-[/output]
-[/test]
-[test]
-[input]
-JO
-PA
-22
-[/input]
-[output]
-firstName: JO
-lastName: PA
-age: 22
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide]
-# Soluție: Person Info
-
-[vimeo-video]
-[stream language="EN" videoId="489795397/a61485a8d9" default /]
-[stream language="RO" videoId="489795397/a61485a8d9"  /]
-[/video-vimeo]
-
-[code-task title="Person Info" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-adapter]
 ```
-//Different vido code
-
-function personInfo(input){
-  let person = {
-        firstName: input[0],
-        lastName: input[1],
-        age: input[2]
-    }
-
-    for (let [key, value] of Object.entries(person)){
-        console.log(key + ": " + value);
-    }
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
-[/code-editor]
+[/code-adapter]
 [task-description]
 # Descriere
-Scrieți o funcție care primește o matrice de 3 elemente, le setează la un **obiect** și tipărește proprietățile obiectului după cheie și valoare în format:
-`{key}: {value}`
+Write a function that receives **three elements**, sets them to an **object** and **returns** the created object.
 
-Intrarea vine ca 3 șiruri separate în următoarea ordine: nume, prenume, vârstă.
+The input comes as 3 separate **strings** in the following order: **firstName**, **lastName**, **age**.
 
-# Exemplu
-   |**Intrare**|**Ieșire** |
+# Examples
+|**Intrare**|**Ieșire** |
 | --- | --- |
-|`['Peter','Pan','20']`| firstName: Peter |
-||lastName: Pan|
-||age: 20|
+| personInfo('Peter','Pan','20') | \{ firstName: 'Peter', lastName: 'Pan', age: '20' \} |
+| personInfo('Kellie', 'Ellison', '33') | \{ firstName: 'Kellie', lastName: 'Ellison', age: '33' \} |
+
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-Johny
-Tony
-15
+personInfo('Peter', 'Pan', '20')
 [/input]
 [output]
-firstName: Johny
-lastName: Tony
-age: 15
+\{ firstName: 'Peter', lastName: 'Pan', age: '20' \}
+[/output]
+[/test]
+[test open]
+[input]
+personInfo('Kellie', 'Ellison', '33')
+[/input]
+[output]
+\{ firstName: 'Kellie', lastName: 'Ellison', age: '33' \}
 [/output]
 [/test]
 [test]
 [input]
-A
-b
-2
+personInfo('Johny', 'Tony', '15')
 [/input]
 [output]
-firstName: A
-lastName: b
-age: 2
+\{ firstName: 'Johny', lastName: 'Tony', age: '15' \}
 [/output]
 [/test]
 [test]
 [input]
-CC
-BB
-50
+personInfo('A', 'b', '2')
 [/input]
 [output]
-firstName: CC
-lastName: BB
-age: 50
+\{ firstName: 'A', lastName: 'b', age: '2' \}
 [/output]
 [/test]
 [test]
 [input]
-Z
-X
-41
+personInfo('CC', 'BB', '50')
 [/input]
 [output]
-firstName: Z
-lastName: X
-age: 41
+\{ firstName: 'CC', lastName: 'BB', age: '50' \}
 [/output]
 [/test]
 [test]
 [input]
-JO
-PA
-22
+personInfo('Z', 'X', '41')
 [/input]
 [output]
-firstName: JO
-lastName: PA
-age: 22
+\{ firstName: 'Z', lastName: 'X', age: '41' \}
+[/output]
+[/test]
+[test]
+[input]
+personInfo('JO', 'PA', '22')
+[/input]
+[output]
+\{ firstName: 'JO', lastName: 'PA', age: '22' \}
 [/output]
 [/test]
 [/tests]
@@ -353,15 +222,11 @@ age: 22
 
 [/slide]
 
-[slide]
+
+[slide hideTitle]
 # Problemă: City
 
-[vimeo-video]
-[stream language="EN" videoId="489795448/09ea78efff" default /]
-[stream language="RO" videoId="489795448/09ea78efff"  /]
-[/video-vimeo]
-
-[code-task title="City" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="City" taskId="JS-fundamentals-2-Objects-and-Classes-lab-City" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function city(input){
@@ -369,163 +234,76 @@ function city(input){
 }
 ```
 [/code-editor]
-[task-description]
-# Descriere
-Primеște o matrice care conține cinci elemente.
-
-Creați un obiect de oraș care va conține **numele orașului**, **zona, populația**, **țara** și* *codul poștal**.
-
-Iterați toate cheile și imprimați-le cu valorile lor în format:
-
-`{key} -> {value}`
-
-Introducerea va fi în următoarea ordine:**nume**, **zonă**, **populație**, **țară** și **postCode**.
-
-Vezi exemplele de mai jos.
-
-
-# Exemplu
-   |**Intrare**|**Ieșire**|
-| --- | --- |
-|`['Bucharest', '228', '1.83m', 'Romania', '010082']`| name \-\> Bucharest |
-||area \-\> 228|
-||population \-\> 1.83m|
-||country \-\> Romania|
-||postCode \-\> 010082|
-
-[/task-description]
-[tests]
-[test]
-[input]
-Sofia
-492
-1238438
-Bulgaria
-1000
-[/input]
-[output]
-name -> Sofia
-area -> 492
-population -> 1238438
-country -> Bulgaria
-postCode -> 1000
-[/output]
-[/test]
-[test]
-[input]
-hnn
-1848
-354645
-mklmlk
-1561
-[/input]
-[output]
-name -> hnn
-area -> 1848
-population -> 354645
-country -> mklmlk
-postCode -> 1561
-[/output]
-[/test]
-[test]
-[input]
-ii
-44
-189
-jiji
-484
-[/input]
-[output]
-name -> ii
-area -> 44
-population -> 189
-country -> jiji
-postCode -> 484
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide]
-# Soluție: City
-
-[vimeo-video]
-[stream language="EN" videoId="489795461/ed6a2ec0c8" default /]
-[stream language="RO" videoId="489795461/ed6a2ec0c8"  /]
-[/video-vimeo]
-
-[code-task title="City" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-adapter]
 ```
-//Different vido code
-
-function city(input){
- let cityObject = {
-        name: input[0],
-        area: input[1],
-        population: input[2],
-        country: input[3],
-        postCode: input[4]
-    }
-
-    for (let key in cityObject){
-        console.log(`${key} -> ${cityObject[key]}`);
-    }
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
-[/code-editor]
+[/code-adapter]
 [task-description]
 # Descriere
-Primire și matrice care conține cinci elemente.
 
-Creați un obiect de oraș care va conține **numele orașului**, **zona, populația**, **țara** și* *codul poștal**.
+You will receive an **оbject** containing city information. 
 
-Iterați toate cheile și imprimați-le cu valorile lor în format:
+Loop through all the keys and print them with their values in this format:
 
-`{key} -> {value}`
+\{**key**\} **->** \{**value**\}
 
-Introducerea va fi în următoarea ordine:**nume**, **zonă**, **populație**, **țară** și **postCode**.
+The input will be in the following order: **name**, **area**, **population**, **country** and **postcode**.
 
-Vezi exemplele de mai jos.
+For more information, see the examples below.
 
 
-# Exemplu
-   |**Intrare**|**Ieșire**|
+## Example One
+|**Intrare**|**Ieșire**|
 | --- | --- |
-|`['Bucharest', '228', '1.83m', 'Romania', '010082']`| name \-\> Bucharest |
+| city(\{ name: 'Bucharest', area: '228', population: '1830000', country: 'Romania', postCode: '010082' \})| name \-\> Bucharest |
 ||area \-\> 228|
-||population \-\> 1.83m|
+||population \-\> 1830000|
 ||country \-\> Romania|
 ||postCode \-\> 010082|
 
+## Example Two
+|**Intrare**|**Ieșire**|
+| --- | --- |
+| city(\{ name: 'London', area: '1572', population: '9000000', country: 'England', postCode: '533537' \})| name \-\> London |
+||area \-\> 1572|
+||population \-\> 9000000|
+||country \-\> England|
+||postCode \-\> 533537|
+
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-Sofia
-492
-1238438
-Bulgaria
-1000
+city(\{ name: 'Bucharest', area: '228', population: '1830000', country: 'Romania', postCode: '010082' \})
 [/input]
 [output]
-name -> Sofia
-area -> 492
-population -> 1238438
-country -> Bulgaria
-postCode -> 1000
+name -> Bucharest
+area -> 228
+population -> 1830000
+country -> Romania
+postCode -> 010082
+[/output]
+[/test]
+[test open]
+[input]
+city(\{ name: 'London', area: '1572', population: '9000000', country: 'England', postCode: '533537' \})
+[/input]
+[output]
+name \-\> London
+area \-\> 1572
+population \-\> 9000000
+country \-\> England
+postCode \-\> 533537
 [/output]
 [/test]
 [test]
 [input]
-hnn
-1848
-354645
-mklmlk
-1561
+city(\{ name: 'hnn', area: '1848', population: '354645', country: 'mklmlk', postCode: '1561' \})
 [/input]
 [output]
 name -> hnn
@@ -537,11 +315,7 @@ postCode -> 1561
 [/test]
 [test]
 [input]
-ii
-44
-189
-jiji
-484
+city(\{name: 'ii', area: '44', population: '189', country: 'jiji', postCode: '484' \})
 [/input]
 [output]
 name -> ii

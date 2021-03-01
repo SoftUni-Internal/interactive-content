@@ -1,6 +1,6 @@
 # Valoare vs. Tipuri de referință
 
-[diapozitiv]
+[slide hideTitle]
 # Valoare vs. Tipuri de referință
 
 ## Missing videos.
@@ -11,7 +11,7 @@
 
 În Javascript, există șapte tipuri de date de bază (numite și primitive).
 
-Cele mai importante șapte tipuri de date sunt `Boolean`, `String`, `Number`, `null`, `undefined`, `Symbol` și `BigInt`.
+Cele mai importante șapte tipuri de date sunt "**Boolean**", "**String**", "**Number**", "**null**", "**undefined**", "**Symbol**" și "**BigInt**".
 
 Ne referim la acestea ca **tipuri de date primitive.**
 
@@ -31,7 +31,7 @@ console.log(`Variable b = ${c}`);
 console.log(`Variable b = ${d}`);
 ```
 
-# Tipuri de referință
+## Tipuri de referință
 
 Există trei tipuri comune de date de referință - **Obiecte**, **Matrice** și **Funcții**.
 

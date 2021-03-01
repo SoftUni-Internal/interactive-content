@@ -8,7 +8,7 @@
 [code-editor language=javascript]
 ```
 function lift(input) {
-	// Write your code here
+	// Scrieți codul dvs. aici
 }
 ```
 [/code-editor]

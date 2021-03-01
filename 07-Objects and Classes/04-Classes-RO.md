@@ -1,12 +1,7 @@
 # Clase
 
-[slide]
-# Ce sunt clasele?
-
-[vimeo-video]
-[stream language="EN" videoId="489794985/0c02c8963c" default /]
-[stream language="RO" videoId="489794985/0c02c8963c"  /]
-[/video-vimeo]
+[slide hideTitle]
+# Ce sunt Clasele?
 
 O **clasă** este ca un **plan** (sau șablon) pentru crearea de **obiecte**.
 
@@ -17,15 +12,10 @@ Fiecare instanță de clasă poate avea atașate **atribute**.
 Instanțele de clasă pot avea, de asemenea, **metode** pentru **modificarea stării sale**, acestea sunt **comportamentul său**.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Declarație de clasă
 
-[vimeo-video]
-[stream language="EN" videoId="489794989/34b7176f44" default /]
-[stream language="RO" videoId="489794989/34b7176f44"  /]
-[/video-vimeo]
-
-Example: 
+**Example:**
 
 ``` js
 class Student {
@@ -39,13 +29,9 @@ Pentru a declara o clasă, folosim cuvântul cheie `class` cu numele clasei, în
 `Constructor` este o metodă specială pentru crearea și inițializarea unui obiect.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Exemplu de clasă
 
-[vimeo-video]
-[stream language="EN" videoId="489795065/d7a673fc0a" default /]
-[stream language="RO" videoId="489795065/d7a673fc0a"  /]
-[/video-vimeo]
 
 Cuvântul cheie `class` este folosit pentru a crea o clasă.
 
@@ -71,13 +57,9 @@ let student = new Student('Peter', 5.50);
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Funcțiile într-o clasă
 
-[vimeo-video]
-[stream language="EN" videoId="489795074/7c855b8347" default /]
-[stream language="RO" videoId="489795074/7c855b8347"  /]
-[/video-vimeo]
 Capacitatea de a modifica datele este realizată de funcții speciale care fac parte din clasă și se numesc metode.
 
 Clasele JavaScript acceptă atât metodele **de instanță**, cât și cele **statice**.
@@ -101,15 +83,10 @@ dog.speak();
 
 [/slide]
 
-[slide]
-# Problemă: Cats
+[slide hideTitle]
+# Problem with Solution: Cats
 
-[vimeo-video]
-[stream language="EN" videoId="489795072/b02a97d757" default /]
-[stream language="RO" videoId="489795072/b02a97d757"  /]
-[/video-vimeo]
-
-[code-task title="Cats" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Cats" taskId="JS-fundamentals-2-Objects-and-Classes-lab-Cats" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function cats(input){
@@ -117,137 +94,41 @@ function cats(input){
 }
 ```
 [/code-editor]
-[task-description]
-
-# Descriere
-
-Scrieți o funcție care primește o serie de șiruri în următorul format `{cat name} {age}`.
-
-Creați o clasă Cat care primește în constructor numele și vârsta analizate din intrare.
-
-De asemenea, ar trebui să aibă o funcție numită 'miau' care va tipări `{cat name}, age {age} says Meow` pe consolă.
-
-Pentru fiecare dintre șirurile furnizate trebuie să creați un obiect de pisică.
-
-# Exemplu
-   |**Intrare**|**Ieșire**|
-| --- | --- |
-|`['Mellow 2', 'Tom 5']`| Mellow, age 2 says Meow|
-||Tom, age 5 says Meow|
-
-# Sugestii
-
-* Creați o Clasa a pisicilor cu proprietăți și metode descrise mai sus
-
-* Analizați datele de intrare
-
-* Creați toate obiectele folosind constructorul clasei și datele de intrare analizate, stocați-le într-o matrice
-
-* Parcurgeți matricea utilizând ciclul `for…of` și invocați metoda `.meow()`
-
-
-[/task-description]
-[tests]
-[test]
-[input]
-jsakd 45
-dasd 12
-[/input]
-[output]
-jsakd, age 45 says Meow
-dasd, age 12 says Meow
-[/output]
-[/test]
-[test]
-[input]
-jsakd 45
-gyug 11
-vtv 2
-vv 1
-huuh 9
-[/input]
-[output]
-jsakd, age 45 says Meow
-gyug, age 11 says Meow
-vtv, age 2 says Meow
-vv, age 1 says Meow
-huuh, age 9 says Meow
-[/output]
-[/test]
-[test]
-[input]
-jsakd 5
-huh 2
-f 1
-huuh 9
-[/input]
-[output]
-jsakd, age 5 says Meow
-huh, age 2 says Meow
-f, age 1 says Meow
-huuh, age 9 says Meow
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-[/slide]
-
-[slide]
-# Solution: Cats
-
-[vimeo-video]
-[stream language="EN" videoId="489795144/890591bfdb" default /]
-[stream language="RO" videoId="489795144/890591bfdb"  /]
-[/video-vimeo]
-
-[code-task title="Cats" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-adapter]
 ```
-//Different vido code
-
-function solve(input){
-    let cats =[]
-    class Cat {
-        constructor(name, age) {
-            this.name = name
-            this.age = age
-        }
-        sayHello(){
-            console.log(`${this.name}, age ${this.age} says Meow`)
-        }
-    }
-    for (let i = 0; i < input.length; i++) {
-        let catData = input[i].split(' ')
-        let [name, age] = catData
-        cats.push(new Cat(name, age))
-    }
-
-    for (const key of cats) {
-        key.sayHello()
-    }
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
-[/code-editor]
+[/code-adapter]
 [task-description]
 
 # Descriere
 
-Scrieți o funcție care primește o serie de șiruri în următorul format `{cat name} {age}`.
+Scrieți o funcție care primește o serie de șiruri în următorul format "\{**cat name**\} \{**age**\}".
 
 Creați o clasă Cat care primește în constructor numele și vârsta analizate din intrare.
 
-De asemenea, ar trebui să aibă o funcție numită 'miau' care va tipări `{cat name}, age {age} says Meow` pe consolă.
+De asemenea, ar trebui să aibă o funcție numită **meow** care va tipări "\{**cat name**\}**, age** \{**age**\} **says Meow**" pe consolă.
 
 Pentru fiecare dintre șirurile furnizate trebuie să creați un obiect de pisică.
 
-# Exemplu
-   |**Intrare**|**Ieșire**|
+# Example One
+  | **Input** | **Output** |
 | --- | --- |
-|`['Mellow 2', 'Tom 5']`| Mellow, age 2 says Meow|
+|cats(['Mellow 2', 'Tom 5'])| Mellow, age 2 says Meow|
 ||Tom, age 5 says Meow|
 
-# Sugestii
+
+# Example Two
+  | **Input** | **Output** |
+| --- | --- |
+|cats(['Millie 3', 'Lola 7'])| Millie, age 3 says Meow|
+||Lola, age 7 says Meow|
+
+## Sugestii
 
 * Creați o Clasa a pisicilor cu proprietăți și metode descrise mai sus
 
@@ -256,12 +137,31 @@ Pentru fiecare dintre șirurile furnizate trebuie să creați un obiect de pisic
 * Creați toate obiectele folosind constructorul clasei și datele de intrare analizate, stocați-le într-o matrice
 
 * Parcurgeți matricea utilizând ciclul `for…of` și invocați metoda `.meow()`
+
+
 [/task-description]
 [tests]
+[test open]
+[input]
+cats(['Mellow 2', 'Tom 5'])
+[/input]
+[output]
+Mellow, age 2 says Meow
+Tom, age 5 says Meow
+[/output]
+[/test]
+[test open]
+[input]
+cats(['Millie 3', 'Lola 7'])
+[/input]
+[output]
+Millie, age 3 says Meow
+Lola, age 7 says Meow
+[/output]
+[/test]
 [test]
 [input]
-jsakd 45
-dasd 12
+cats(['jsakd 45', 'dasd 12'])
 [/input]
 [output]
 jsakd, age 45 says Meow
@@ -270,11 +170,7 @@ dasd, age 12 says Meow
 [/test]
 [test]
 [input]
-jsakd 45
-gyug 11
-vtv 2
-vv 1
-huuh 9
+cats(['jsakd 45', 'gyug 11', 'vtv 2', 'vv 1', 'huuh 9'])
 [/input]
 [output]
 jsakd, age 45 says Meow
@@ -286,10 +182,7 @@ huuh, age 9 says Meow
 [/test]
 [test]
 [input]
-jsakd 5
-huh 2
-f 1
-huuh 9
+cats(['jsakd 5', 'huh 2', 'f 1', 'huuh 9'])
 [/input]
 [output]
 jsakd, age 5 says Meow

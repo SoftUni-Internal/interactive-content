@@ -1,25 +1,20 @@
-[slide]
-# Introducerea lecției
+# Lesson Introduction
+[slide hideTitle]
 
-[vimeo-video]
-[stream language="EN" videoId="489795210/483305f49e" default /]
-[stream language="RO" videoId="489795210/483305f49e"  /]
-[/video-vimeo]
+# Lesson Content
 
 
-## În această lecție veți afla despre:
+## In this lesson you will learn:
 
-**1. Obiecte**
-- Ce este obiect?
-- Definiție
-- Proprietăți
-- Metode
+**1. Objects**
+- What an object is
+- Properties and methods
 
 **2. JSON**
-- Prezentare generală a fișierelor Json
+- JSON files overview
 
-**3. Clase**
-- Ce este clasa?
-- Prezentare generală și sintaxă a claselor
+**3. Classes**
+- What a class is
+- Classes overview and syntax
 
 [/slide]

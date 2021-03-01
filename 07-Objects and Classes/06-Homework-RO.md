@@ -1,6 +1,6 @@
 # Teme de Acasa
 
-[slide]
+[slide hideTitle]
 # Problemă: Employees
 [code-task title="Employees" taskId="js-fundamentals-pt2-objects-and-classes-Employees" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -10,6 +10,15 @@ function employees(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 Vi se cere să creați o listă de angajați și numerele lor personale.
@@ -22,23 +31,34 @@ Fiecare șir este un nume **de angajat** și pentru a **atribui un număr person
 
 La final, tipăriți toți **angajații listați** în următorul format: 
 
-`Name: {employeeName} -- Personal Number: {personalNum}`
+"**Name:** \{**employeeName**\} **-- Personal Number:** \{**personalNum**\}"
 
 
-# Exemplu
-|**Intrare**|**Ieșire**|
+# Example
+
+| **Input** | **Output** |
 | --- | --- |
-|`['Silas Butler','Adnaan Buckley','Juan Peterson','Brendan Villarreal']`| Name\: Silas Butler \-\- Personal Number\: 12 |
+|employees(['Silas Butler','Adnaan Buckley','Juan Peterson','Brendan Villarreal'])| Name\: Silas Butler \-\- Personal Number\: 12 |
 || Name\: Adnaan Buckley \-\- Personal Number\: 14 |
 || Name\: Juan Peterson \-\- Personal Number\: 13 |
 ||Name\: Brendan Villarreal \-\- Personal Number\: 18|
 
 [/task-description]
 [tests]
+[test open]
+[input]
+employees(['Silas Butler','Adnaan Buckley','Juan Peterson','Brendan Villarreal'])
+[/input]
+[output]
+Name\: Silas Butler \-\- Personal Number\: 12
+Name\: Adnaan Buckley \-\- Personal Number\: 14
+Name\: Juan Peterson \-\- Personal Number\: 13
+Name\: Brendan Villarreal \-\- Personal Number\: 18
+[/output]
+[/test]
 [test]
 [input]
-Kiril Kirilov
-Peter Petrov
+employees(['Kiril Kirilov', 'Peter Petrov'])
 [/input]
 [output]
 Name\: Kiril Kirilov \-\- Personal Number\: 13
@@ -47,9 +67,7 @@ Name\: Peter Petrov \-\- Personal Number\: 12
 [/test]
 [test]
 [input]
-Jack
-Will
-Amanda
+employees(['Jack', 'Will', 'Amanda'])
 [/input]
 [output]
 Name\: Jack \-\- Personal Number\: 4
@@ -59,10 +77,7 @@ Name\: Amanda \-\- Personal Number\: 6
 [/test]
 [test]
 [input]
-Samuel Jackson
-Will Smith
-Bruce Willis
-Tom Holland
+employees(['Samuel Jackson', 'Will Smith', 'Bruce Willis', 'Tom Holland'])
 [/input]
 [output]
 Name\: Samuel Jackson \-\- Personal Number\: 14
@@ -73,10 +88,7 @@ Name\: Tom Holland \-\- Personal Number\: 11
 [/test]
 [test]
 [input]
-Silas Butler
-Adnaan Buckley
-Juan Peterson
-Brendan Villarreal
+employees(['Silas Butler', 'Adnaan Buckley', 'Juan Peterson', 'Brendan Villarreal'])
 [/input]
 [output]
 Name\: Silas Butler \-\- Personal Number\: 12
@@ -90,7 +102,7 @@ Name\: Brendan Villarreal \-\- Personal Number\: 18
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problemă: Towns
 [code-task title="Towns" taskId="js-fundamentals-pt2-objects-and-classes-Towns" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -100,15 +112,24 @@ function towns(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Descriere
 
 Vi se cere să creați și să imprimați obiecte dintr-un tabel text.
 
-Veți primi intrarea ca o matrice de șiruri, în care fiecare șir reprezintă un rând de tabel, cu valori pe rând separate de bare verticale ` | ` și spații.
+Veți primi intrarea ca o matrice de șiruri, în care fiecare șir reprezintă un rând de tabel, cu valori pe rând separate de bare verticale " \| " și spații.
 
-Tabelul va consta din exact 3 coloane `Town`, `Latitude` și `Longitude`. 
+Tabelul va consta din exact 3 coloane "**Town**", "**Latitude**" și "**Longitude**". 
 
 Coloanele de latitudine și longitudine vor conține întotdeauna numere valide.
 
@@ -118,20 +139,26 @@ Ieșirea trebuie să fie obiectele.
 
 Latitudinea și longitudinea trebuie analizate la numere și formatate la a doua zecimală!
 
-# Exemplu
-|**Intrare**|**Ieșire**|
+## Example
+| **Input** | **Output** |
 | --- | --- |
-|`['Bucuresti | 42.696552 | 23.32601','Beijing | 39.913818 | 116.363625']`|`{ town: 'Bucuresti', latitude: '42.70', longitude: '23.33' }` |
-|| `{ town: 'Beijing', latitude: '39.91', longitude: '116.36' }` |
+|towns(['Bucuresti \| 42.696552 \| 23.32601','Beijing \| 39.913818 \| 116.363625'])|\{ town: 'Bucuresti', latitude: '42.70', longitude: '23.33' \} |
+| | \{ town: 'Beijing', latitude: '39.91', longitude: '116.36' \} |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+towns(['Bucuresti \| 42.696552 \| 23.32601','Beijing \| 39.913818 \| 116.363625'])
+[/input]
+[output]
+\{ town: 'Bucuresti', latitude: '42.70', longitude: '23.33' \}
+\{ town: 'Beijing', latitude: '39.91', longitude: '116.36' \}
+[/output]
+[/test]
 [test]
 [input]
-jdk \| 156.45 \| 12.5645
-hjk \| 32.556 \| 134.824
-io \| 87.65 \| 14.929
-op \| 44.76 \| 184.28
+towns(['jdk \| 156.45 \| 12.5645', 'hjk \| 32.556 \| 134.824', 'io \| 87.65 \| 14.929', 'op \| 44.76 \| 184.28'])
 [/input]
 [output]
 \{ town: 'jdk', latitude: '156.45', longitude: '12.56' \}
@@ -142,9 +169,7 @@ op \| 44.76 \| 184.28
 [/test]
 [test]
 [input]
-jj \| 156.45 \| 12.575
-yu \| 65.65 \| 64.919
-i \| 12.76 \| 184.28
+towns(['jj \| 156.45 \| 12.575', 'yu \| 65.65 \| 64.919', 'i \| 12.76 \| 184.28'])
 [/input]
 [output]
 \{ town: 'jj', latitude: '156.45', longitude: '12.57' \}
@@ -154,11 +179,7 @@ i \| 12.76 \| 184.28
 [/test]
 [test]
 [input]
-a \| 156.45 \| 12.575
-b \| 1.65 \| 64.8919
-c \| 45.786 \| 184.128
-d \| 9.745 \| 1684.28
-e \| 12.676 \| 1814.28
+towns(['a \| 156.45 \| 12.575', 'b \| 1.65 \| 64.8919', 'c \| 45.786 \| 184.128', 'd \| 9.745 \| 1684.28', 'e \| 12.676 \| 1814.28'])
 [/input]
 [output]
 \{ town: 'a', latitude: '156.45', longitude: '12.57' \}
@@ -170,10 +191,7 @@ e \| 12.676 \| 1814.28
 [/test]
 [test]
 [input]
-a \| 136.45 \| 12.575
-k \| 1.65 \| 564.19
-l \| 99.545 \| 1684.18
-e \| 112.66 \| 1814.28
+towns(['a \| 136.45 \| 12.575', 'k \| 1.65 \| 564.19', 'l \| 99.545 \| 1684.18', 'e \| 112.66 \| 1814.28'])
 [/input]
 [output]
 \{ town: 'a', latitude: '136.45', longitude: '12.57' \}
@@ -184,7 +202,7 @@ e \| 112.66 \| 1814.28
 [/test]
 [test]
 [input]
-a \| 136.45 \| 812.575
+towns(['a \| 136.45 \| 812.575'])
 [/input]
 [output]
 \{ town: 'a', latitude: '136.45', longitude: '812.58' \}
@@ -195,7 +213,8 @@ a \| 136.45 \| 812.575
 [/code-task]
 [/slide]
 
-[slide]
+
+[slide hideTitle]
 # Problemă: Movies
 [code-task title="Movies"taskId="js-fundamentals-pt2-objects-and-classes-Movies" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -205,43 +224,50 @@ function movies(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 Scrieți o funcție care stochează informații despre filme într-o matrice.
 
 Informațiile despre obiectul filmelor trebuie să fie numele, regizorul și data. Puteți primi mai multe tipuri de intrări:
 
-* `addMovie {movie name}`: adaugă filmul
+* "**addMovie** \{**movie name**\}": adaugă filmul
 
-* `{movie name} directedBy {director}`: verificați dacă filmul există și apoi adăugați regizorul
-* `{movie name} onDate {date}`: verificați dacă filmul există și apoi adăugați data
+* "\{**movie name**\} **directedBy** \{**director**\}": verificați dacă filmul există și apoi adăugați regizorul
+* "\{**movie name**\} **onDate** \{**date**\}": verificați dacă filmul există și apoi adăugați data
 
 La final, tipăriți toate filmele care au toate informațiile (dacă filmul nu are regizor, nume sau dată, nu le imprimați) **în format JSON.**
 
-# Exemplu
+## Example
 
-**Intrare:**
+| **Input** | **Output** |
+| --- | --- |
+|movies(['addMovie Fast and Furious','addMovie Godfather','Inception directedBy Christopher Nolan','Godfather directedBy Francis Ford Coppola','Godfather onDate 29.07.2018','Fast and Furious onDate 30.07.2018','Batman onDate 01.08.2018','Fast and Furious directedBy Rob Cohen']) | \{"name":"Fast and Furious","date":"30.07.2018","director":"Rob Cohen"\}|
+| | \{"name":"Godfather","director":"Francis Ford Coppola","date":"29.07.2018"\} |
 
-`['addMovie Fast and Furious','addMovie Godfather','Inception directedBy Christopher Nolan','Godfather directedBy Francis Ford Coppola','Godfather onDate 29.07.2018','Fast and Furious onDate 30.07.2018','Batman onDate 01.08.2018','Fast and Furious directedBy Rob Cohen']`
-
- **Ieșire:**
-`{"name":"Fast and Furious","date":"30.07.2018","director":"Rob Cohen"}`
-
-`{"name":"Godfather","director":"Francis Ford Coppola","date":"29.07.2018"}`
 
 [/task-description]
 [tests]
+[test open]
+[input]
+movies(['addMovie Fast and Furious','addMovie Godfather','Inception directedBy Christopher Nolan','Godfather directedBy Francis Ford Coppola','Godfather onDate 29.07.2018','Fast and Furious onDate 30.07.2018','Batman onDate 01.08.2018','Fast and Furious directedBy Rob Cohen'])
+[/input]
+[output]
+\{"name":"Fast and Furious","date":"30.07.2018","director":"Rob Cohen"\}
+\{"name":"Godfather","director":"Francis Ford Coppola","date":"29.07.2018"\}
+[/output]
+[/test]
 [test]
 [input]
-addMovie a
-addMovie b
-a directedBy j
-b directedBy o
-b onDate 12\.34\.1244
-a onDate 30\.07\.2010
-addMovie c
-c directedBy o
-c onDate 12\.01\.1998
+movies(['addMovie a', 'addMovie b', 'a directedBy j', 'b directedBy o', 'b onDate 12\.34\.1244', 'a onDate 30\.07\.2010', 'addMovie c', 'c directedBy o', 'c onDate 12\.01\.1998'])
 [/input]
 [output]
 \{"name":"a","director":"j","date":"30\.07\.2010"\}
@@ -251,10 +277,7 @@ c onDate 12\.01\.1998
 [/test]
 [test]
 [input]
-addMovie a
-addMovie b
-a directedBy j
-a onDate 30\.07\.2010
+movies(['addMovie a', 'addMovie b', 'a directedBy j', 'a onDate 30\.07\.2010'])
 [/input]
 [output]
 \{"name":"a","director":"j","date":"30.07.2010"\}
@@ -262,12 +285,7 @@ a onDate 30\.07\.2010
 [/test]
 [test]
 [input]
-addMovie y
-addMovie b
-y directedBy j
-y onDate 30\.07\.2010
-c onDate 30\.07\.2010
-c directedBy l
+movies(['addMovie y', 'addMovie b', 'y directedBy j', 'y onDate 30\.07\.2010', 'c onDate 30\.07\.2010', 'c directedBy l'])
 [/input]
 [output]
 \{"name":"y","director":"j","date":"30\.07\.2010"\}
@@ -275,21 +293,7 @@ c directedBy l
 [/test]
 [test]
 [input]
-addMovie y
-addMovie b
-y directedBy j
-y onDate 30\.07\.2010
-b onDate 30\.17\.2015
-addMovie k
-k directedBy l
-y directedBy j
-k onDate 30\.07\.2010
-y onDate 10\.07\.2010
-addMovie n
-x onDate 12\.07\.1994
-y onDate 30\.07\.2018
-n directedBy j
-n onDate 30\.07\.2017
+movies(['addMovie y', 'addMovie b', 'y directedBy j', 'y onDate 30\.07\.2010', 'b onDate 30\.17\.2015', 'addMovie k', 'k directedBy l', 'y directedBy j', 'k onDate 30\.07\.2010', 'y onDate 10\.07\.2010', 'addMovie n', 'x onDate 12\.07\.1994', 'y onDate 30\.07\.2018', 'n directedBy j', 'n onDate 30\.07\.2017'])
 [/input]
 [output]
 \{"name":"y","director":"j","date":"30\.07\.2018"\}
@@ -299,15 +303,7 @@ n onDate 30\.07\.2017
 [/test]
 [test]
 [input]
-addMovie y
-addMovie b
-y directedBy j
-y onDate 30\.07\.2010
-b onDate 30\.17\.2015
-addMovie k
-k directedBy l
-y directedBy j
-k onDate 30\.07\.2010
+movies(['addMovie y', 'addMovie b', 'y directedBy j', 'y onDate 30\.07\.2010', 'b onDate 30\.17\.2015', 'addMovie k', 'k directedBy l', 'y directedBy j', 'k onDate 30\.07\.2010'])
 [/input]
 [output]
 \{"name":"y","director":"j","date":"30\.07\.2010"\}
@@ -321,7 +317,8 @@ k onDate 30\.07\.2010
 [/slide]
 
 
-[slide]
+
+[slide hideTitle]
 # Problemă: Inventory
 [code-task title="Inventory"taskId="js-fundamentals-pt2-objects-and-classes-Inventory" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -331,6 +328,15 @@ function inventory(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Descriere
@@ -339,7 +345,7 @@ Creați o funcție care creează un registru pentru eroi, cu numele, nivelul și
 
 Intrarea vine ca o serie de șiruri. Fiecare element conține date pentru un erou, în următorul format:
 
-`{heroName} / {heroLevel} / {item1}, {item2}, {item3} ...`
+"\{**heroName**\} \/ \{**heroLevel**\} \/ \{**item1**\}, \{**item2**\}, \{**item3**\}..."
 
 Trebuie să stocați datele despre fiecare erou.
 
@@ -348,36 +354,47 @@ Numele este un șir, nivelul este un număr, iar articolele sunt toate șiruri.
 Ieșirea este toate datele pentru toți eroii pe care i-ați stocat sortați crescător după nivel, elementele sunt sortate alfabetic.
 
 Datele trebuie să fie în următorul format pentru fiecare erou:
-`Hero: {heroName}`
-`level => {heroLevel}`
-`Items => {item1}, {item2}, {item3}`
+
+"**Hero:** \{**heroName**\}
+**level** \=\> \{**heroLevel**\}
+**items** \=\> \{**item1**\}, \{**item2**\}, \{**item3**\}"
 
 
 # Exemplu
 
-**Intrare**
-
-`["Isacc / 25 / Apple, GravityGun","Derek / 12 / BarrelVest, DestructionSword","Hes / 1 / Desolator, Sentinel, Antara"]` 
-
-**Ieșire** 
-
-`Hero: Hes`
-`level => 1`
-`items => Antara, Desolator, Sentinel`
-`Hero: Derek`
-`level => 12`
-`items => BarrelVest, DestructionSword`
-`Hero: Isacc`
-`level => 25`
-`items => Apple, GravityGun`
+| **Input** | **Output** |
+| --- | --- |
+| inventory(['Isacc / 25 / Apple, GravityGun', 'Derek / 12 / BarrelVest, DestructionSword', 'Hes / 1 / Desolator, Sentinel, Antara']) | Hero: Hes |
+| | level \=\> 1 |
+| | items \=\> Antara, Desolator, Sentinel|
+| | Hero: Derek |
+| | level \=\> 12 |
+| | items \=\> BarrelVest, DestructionSword |
+| | Hero: Isacc |
+| | level \=\> 25 |
+| | items \=\> Apple, GravityGun |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+inventory(['Isacc \/ 25 \/ Apple, GravityGun', 'Derek \/ 12 \/ BarrelVest, DestructionSword', 'Hes \/ 1 \/ Desolator, Sentinel, Antara'])
+[/input]
+[output]
+Hero: Hes
+level \=\> 1
+items \=\> Antara, Desolator, Sentinel
+Hero: Derek
+level \=\> 12
+items \=\> BarrelVest, DestructionSword
+Hero: Isacc
+level \=\> 25
+items \=\> Apple, GravityGun
+[/output]
+[/test]
 [test]
 [input]
-a \/ 10 \/ e, n, d, c, f
-k \/ 13 \/ l, m
-a \/ 18 \/ f, e, w
+inventory(['a \/ 10 \/ e, n, d, c, f', 'k \/ 13 \/ l, m', 'a \/ 18 \/ f, e, w'])
 [/input]
 [output]
 Hero: a
@@ -393,12 +410,7 @@ items \=\> e, f, w
 [/test]
 [test]
 [input]
-a \/ 10 \/ e, n, d, c
-k \/ 13 \/ l, o
-n \/ 2 \/ f, e, w
-i \/ 6 \/ q, r, f, e, w
-p \/ 18 \/ w
-f \/ 3 \/ f, p, w
+inventory(['a \/ 10 \/ e, n, d, c', 'k \/ 13 \/ l, o', 'n \/ 2 \/ f, e, w', 'i \/ 6 \/ q, r, f, e, w', 'p \/ 18 \/ w', 'f \/ 3 \/ f, p, w'])
 [/input]
 [output]
 Hero: n
@@ -423,10 +435,7 @@ items \=\> w
 [/test]
 [test]
 [input]
-l \/ 10 \/ d, c
-k \/ 13 \/ l, o
-n \/ 2 \/ f, e, w, a
-f \/ 3 \/ f, p, w
+inventory(['l \/ 10 \/ d, c', 'k \/ 13 \/ l, o', 'n \/ 2 \/ f, e, w, a', 'f \/ 3 \/ f, p, w'])
 [/input]
 [output]
 Hero: n
@@ -445,7 +454,7 @@ items \=\> l, o
 [/test]
 [test]
 [input]
-l \/ 10 \/ d, ca, e, q, w, t
+inventory(['l \/ 10 \/ d, ca, e, q, w, t'])
 [/input]
 [output]
 Hero: l
@@ -455,10 +464,7 @@ items \=\> ca, d, e, q, t, w
 [/test]
 [test]
 [input]
-l \/ 10 \/ d, ca, e, q, w, t
-q \/ 0 \/ w, r, i, s
-n \/ 5 \/ p, r, y, x
-o \/ 6 \/ w, r, n, s
+inventory(['l \/ 10 \/ d, ca, e, q, w, t', 'q \/ 0 \/ w, r, i, s', 'n \/ 5 \/ p, r, y, x', 'o \/ 6 \/ w, r, n, s'])
 [/input]
 [output]
 Hero: q
@@ -481,7 +487,7 @@ items \=\> ca, d, e, q, t, w
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problemă: Make a Dictionary
 [code-task title="Make a Dictionarytory"taskId="js-fundamentals-pt2-objects-and-classes-Make-a-Dictionary" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -491,6 +497,15 @@ function dictionary(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 
@@ -504,35 +519,37 @@ Dacă primiți același termen de două ori, înlocuiți-l cu noua definiție.
 
 Imprimați fiecare **termen și definiție** din dicționar pe o nouă linie în acest format:
 
-`Term: ${term} => Definition: ${definition}`
+"**Term:** $\{**term**\} \=\> **Definition:** $\{**definition**\}"
 
 Nu uitați să sortați conținutul **alfabetic** după termenii ca în dicționarele reale.
 
 # Exemplu
 
-**Intrare**
-
-`['{"Coffee":"A hot drink made from the roasted and ground seeds (coffee beans) of a tropical shrub."}','{"Bus":"A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare."}','{"Boiler":"A fuel-burning apparatus or container for heating water."}','{"Tape":"A narrow strip of material, typically used to hold or fasten something."}','{"Microphone":"An instrument for converting sound waves into electrical energy variations which may then be amplified, transmitted, or recorded."}']`
-
-**Ieșire** 
-
-Term\: Boiler \=\> Definition\: A fuel\-burning apparatus or container for heating water.
-
-Term\: Bus \=\> Definition\: A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare.
-
-Term\: Coffee \=\> Definition\: A hot drink made from the roasted and ground seeds \(coffee beans\) of a tropical shrub.
-
-Term\: Microphone \=\> Definition\: An instrument for converting sound waves into electrical energy variations which may then be amplified, transmitted, or recorded.
-
-Term\: Tape \=\> Definition\: A narrow strip of material, typically used to hold or fasten something.
+| **Input** | **Output** |
+| --- | --- |
+| dictionary(['\{"Coffee":"A hot drink made from the roasted and ground seeds (coffee beans) of a tropical shrub."\}','\{"Bus":"A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare."\}','\{"Boiler":"A fuel-burning apparatus or container for heating water."\}','\{"Tape":"A narrow strip of material, typically used to hold or fasten something."\}','\{"Microphone":"An instrument for converting sound waves into electrical energy variations which may then be amplified, transmitted, or recorded."\}']) | Term\: Boiler \=\> Definition\: A fuel\-burning apparatus or container for heating water. |
+| | Term\: Bus \=\> Definition\: A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare. |
+| | Term\: Coffee \=\> Definition\: A hot drink made from the roasted and ground seeds \(coffee beans\) of a tropical shrub. |
+| | Term\: Microphone \=\> Definition\: An instrument for converting sound waves into electrical energy variations which may then be amplified, transmitted, or recorded. |
+| | Term\: Tape \=\> Definition\: A narrow strip of material, typically used to hold or fasten something. |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+ dictionary(['\{"Coffee":"A hot drink made from the roasted and ground seeds (coffee beans) of a tropical shrub."\}','\{"Bus":"A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare."\}','\{"Boiler":"A fuel-burning apparatus or container for heating water."\}','\{"Tape":"A narrow strip of material, typically used to hold or fasten something."\}','\{"Microphone":"An instrument for converting sound waves into electrical energy variations which may then be amplified, transmitted, or recorded."\}'])
+[/input]
+[output]
+Term\: Boiler \=\> Definition\: A fuel\-burning apparatus or container for heating water.
+Term\: Bus \=\> Definition\: A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare. 
+Term\: Coffee \=\> Definition\: A hot drink made from the roasted and ground seeds \(coffee beans\) of a tropical shrub. 
+Term\: Microphone \=\> Definition\: An instrument for converting sound waves into electrical energy variations which may then be amplified, transmitted, or recorded. 
+Term\: Tape \=\> Definition\: A narrow strip of material, typically used to hold or fasten something.
+[/output]
+[/test]
 [test]
 [input]
-\{"bb":"fghfhgfghfghfhg."\}
-\{"ad":"gyuguy gyu guy guy gyu guy guyguguhvhv"\}
-\{"ab":"vyvgvgh vgh vty vtyv ytv yt vty vyt."\}
+dictionary(['\{"bb":"fghfhgfghfghfhg."\}', '\{"ad":"gyuguy gyu guy guy gyu guy guyguguhvhv"\}', '\{"ab":"vyvgvgh vgh vty vtyv ytv yt vty vyt."\}'])
 [/input]
 [output]
 Term: ab \=\> Definition: vyvgvgh vgh vty vtyv ytv yt vty vyt.
@@ -542,11 +559,7 @@ Term: bb \=\> Definition: fghfhgfghfghfhg.
 [/test]
 [test]
 [input]
-\{"nmbb":"fghfhgfghfghfhg."\}
-\{"jad":"gyuguy gyu guy guy gyu guy guyguguhvhv"\}
-\{"hab":"vyvgvgh vgh vty vtyv ytv yt vty vyt."\}
-\{"bjad":"gyuguy gy bhjbhjb  u guy guy gyu guy guyguguhvhv"\}
-\{"mkjad":"gyuguy gyu guy guy gybhj bjh bu guy guyguguhvhv"\}
+dictionary(['\{"nmbb":"fghfhgfghfghfhg."\}', '\{"jad":"gyuguy gyu guy guy gyu guy guyguguhvhv"\}', '\{"hab":"vyvgvgh vgh vty vtyv ytv yt vty vyt."\}', '\{"bjad":"gyuguy gy bhjbhjb  u guy guy gyu guy guyguguhvhv"\}', '\{"mkjad":"gyuguy gyu guy guy gybhj bjh bu guy guyguguhvhv"\}'])
 [/input]
 [output]
 Term: bjad \=\> Definition: gyuguy gy bhjbhjb  u guy guy gyu guy guyguguhvhv
@@ -558,10 +571,7 @@ Term: nmbb \=\> Definition: fghfhgfghfghfhg.
 [/test]
 [test]
 [input]
-\{"mmjad":"gyuu guy guy gyu guy guyguhvhv"\}
-\{"nhab":"vyvgvgh v yt vty vyt."\}
-\{"bjad":"gyuguy gy bhjbhjb  u guy gupp p po pyguguhvhv"\}
-\{"mkjad":"gyuguy gyu guy guyuguhvhv"\}
+dictionary(['\{"mmjad":"gyuu guy guy gyu guy guyguhvhv"\}', '\{"nhab":"vyvgvgh v yt vty vyt."\}', '\{"bjad":"gyuguy gy bhjbhjb  u guy gupp p po pyguguhvhv"\}', '\{"mkjad":"gyuguy gyu guy guyuguhvhv"\}'])
 [/input]
 [output]
 Term: bjad \=\> Definition: gyuguy gy bhjbhjb  u guy gupp p po pyguguhvhv
@@ -572,9 +582,7 @@ Term: nhab \=\> Definition: vyvgvgh v yt vty vyt.
 [/test]
 [test]
 [input]
-\{"zmmjad":"gyuu guy guy gyu guy guyguhvhv"\}
-\{"anhab":"vyvgvgh v yt vty vyt."\}
-\{"akjad":"gyuguy gyu guy guhvhv"\}
+dictionary(['\{"zmmjad":"gyuu guy guy gyu guy guyguhvhv"\}', '\{"anhab":"vyvgvgh v yt vty vyt."\}', '\{"akjad":"gyuguy gyu guy guhvhv"\}'])
 [/input]
 [output]
 Term: akjad \=\> Definition: gyuguy gyu guy guhvhv
@@ -584,11 +592,7 @@ Term: zmmjad \=\> Definition: gyuu guy guy gyu guy guyguhvhv
 [/test]
 [test]
 [input]
-\{"zmmjad":"gyuu guy guy gyu guy guyguhvhv"\}
-\{"anhab":"vyvgvgh v vty vtyy vyt."\}
-\{"makjad":"gyugvgh vghuy guhvhv"\}
-\{"kanhab":"vyvgvgh v yt vty vyt."\}
-\{"anhab":"vgh vgh yt."\}
+dictionary(['\{"zmmjad":"gyuu guy guy gyu guy guyguhvhv"\}', '\{"anhab":"vyvgvgh v vty vtyy vyt."\}', '\{"makjad":"gyugvgh vghuy guhvhv"\}', '\{"kanhab":"vyvgvgh v yt vty vyt."\}', '\{"anhab":"vgh vgh yt."\}'])
 [/input]
 [output]
 Term: anhab \=\> Definition: vgh vgh yt.
@@ -602,7 +606,7 @@ Term: zmmjad \=\> Definition: gyuu guy guy gyu guy guyguhvhv
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problemă: Songs
 [code-task title="Songs"taskId="js-fundamentals-pt2-objects-and-classes-Songs" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -612,6 +616,15 @@ function songs(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 
@@ -619,53 +632,68 @@ Definiți o clasă Song, care conține următoarele informații despre melodii: 
 
 Veți primi intrarea sub formă de matrice.
 
-Primul element n va fi numărul de melodii.
+Primul element "**n**" va fi numărul de melodii.
 
-Următoarele n elemente vor fi datele melodiilor în următorul format: 
+Următoarele "**n**" elemente vor fi datele melodiilor în următorul format: 
 
-`{typeList}_{name}_{time}`, 
-iar ultimul element va fi Listă de tipuri \/ `all`.
+"\{**typeList**\}\_\{**name**\}\_\{**time**\}", 
+iar ultimul element va fi Listă de tipuri \/ "**all**".
 Imprimați doar numele melodiilor care apar din acea Listă de tipuri \/ Toate melodiile.
 
-# Exemplu:
-**Intrare**
-
-`[3,'favourite_DownTown_3:14','favourite_Kiss_4:16','favourite_Smooth Criminal_4:01','favourite']`
-
-**Ieșire** 
-
+# Examples One
+ **Intrare** 
+songs([3,'favourite_DownTown_3:14','favourite_Kiss_4:16','favourite_Smooth Criminal_4:01','favourite'])
+**Ieșire**
 DownTown
-Kiss
+Kiss 
 Smooth Criminal
 
-# Exemplu:
+# Examples Two
+**Intrare** 
+songs([4,'favourite_DownTown_3:14','listenLater_Andalouse_3:24','favourite_In To The Night_3:58','favourite_Live It Up_3:48','listenLater']) 
+**Ieșire**
+ Andalouse 
+
+# Examples Three
 **Intrare**
-
-`[4,'favourite_DownTown_3:14','listenLater_Andalouse_3:24','favourite_In To The Night_3:58','favourite_Live It Up_3:48','listenLater']`
-
-**Ieșire** 
-
-Andalouse
-
-# Exemplu:
-**Intrare**
-
-`[2,'like_Replay_3:15','ban_Photoshop_3:48','all']`
-
-**Ieșire** 
-
-Replay
+songs([2, 'like_Replay_3:15','ban_Photoshop_3:48','all'])
+**Ieșire**
+Replay 
 Photoshop
+
 
 [/task-description]
 [tests]
+[test open]
+[input]
+songs([3,'favourite_DownTown_3:14','favourite_Kiss_4:16','favourite_Smooth Criminal_4:01','favourite'])
+[/input]
+[output]
+DownTown
+Kiss
+Smooth Criminal
+[/output]
+[/test]
+[test open]
+[input]
+songs([4,'favourite_DownTown_3:14','listenLater_Andalouse_3:24','favourite_In To The Night_3:58','favourite_Live It Up_3:48','listenLater'])
+[/input]
+[output]
+Andalouse
+[/output]
+[/test]
+[test open]
+[input]
+songs([2, 'like_Replay_3:15','ban_Photoshop_3:48','all'])
+[/input]
+[output]
+Replay
+Photoshop
+[/output]
+[/test]
 [test]
 [input]
-3
-favourite\_immaterial\_3:24
-ban\_party\_4:45
-like\_smile\_4:25
-like
+songs([3, 'favourite\_immaterial\_3:24', 'ban\_party\_4:45', 'like\_smile\_4:25', 'like'])
 [/input]
 [output]
 smile
@@ -673,12 +701,7 @@ smile
 [/test]
 [test]
 [input]
-4
-ban\_hey\_3:48
-programming\_ban\_3:42
-ban\_hello\_3:29
-like\_like\_3:05
-ban
+songs([4, 'ban\_hey\_3:48', 'programming\_ban\_3:42', 'ban\_hello\_3:29', 'like\_like\_3:05', 'ban'])
 [/input]
 [output]
 hey
@@ -687,12 +710,7 @@ hello
 [/test]
 [test]
 [input]
-4
-ban\_hey\_3:48
-programming\_ban\_3:42
-ban\_hello\_3:29
-like\_like\_3:05
-programming
+songs([4, 'ban\_hey\_3:48', 'programming\_ban\_3:42', 'ban\_hello\_3:29', 'like\_like\_3:05', 'programming'])
 [/input]
 [output]
 ban
@@ -700,12 +718,7 @@ ban
 [/test]
 [test]
 [input]
-4
-ban\_hey\_3:48
-programming\_ban\_3:42
-ban\_hello\_3:29
-like\_like\_3:05
-all
+songs([4, 'ban\_hey\_3:48', 'programming\_ban\_3:42', 'ban\_hello\_3:29', 'like\_like\_3:05', 'all'])
 [/input]
 [output]
 hey
@@ -716,10 +729,7 @@ like
 [/test]
 [test]
 [input]
-2
-list\_song\_3:21
-list2\_song2\_2:58
-list
+songs([2, 'list\_song\_3:21', 'list2\_song2\_2:58', 'list'])
 [/input]
 [output]
 song
@@ -728,12 +738,5 @@ song
 [/tests]
 [code-io /]
 [/code-task]
-
-[/slide]
-
-[slide]
-# Rezultate teme de casa
-
-[tasks-results/]
 
 [/slide]
