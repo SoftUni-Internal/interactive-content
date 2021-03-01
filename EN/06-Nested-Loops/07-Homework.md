@@ -604,6 +604,12 @@ Create a program, which prints all the prime numbers in a given range:
 | primeNumbers(1, 50) | 1 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 |
 | prmeNumbers(10, 30) | 11 13 17 19 23 29 |
 
+[hints]
+[hint]
+A prime number is a whole number that cannot be created by multiplying other whole numbers.
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test]
