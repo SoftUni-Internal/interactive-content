@@ -174,23 +174,9 @@ In this example, it is the first constructor in the class that is being called.
 [slide hideTitle]
 # Problem with Solution: Constructors
 
-[vimeo-video]
-[stream language="EN" videoId="485443776/c169d89438" default /]
-[stream language="RO" videoId="485443776/c169d89438"  /]
-[/video-vimeo]
+[code-task title="Constructors" timeLimit=5000 taskId="oop-basics-java-defining-classes-Constructors" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-upload allowedMemory="30" /]
 
-[code-task title="Constructors" taskId="oop-basics-java-defining-classes-lab-Constructors" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 
@@ -286,7 +272,6 @@ System.out.println(secondCar.carInfo());
 | Dacia Duster 350 | The car is: Dacia Duster - 350 HP. |
 
 [/task-description]
-[code-io /]
 [tests]
 [test open]
 [input]
