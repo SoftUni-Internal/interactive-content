@@ -466,6 +466,16 @@ Write a program to calculate a circle area and perimeter:
 | --- | --- |
 | 7 | Area = 153.938040 |
 |  | Perimeter = 43.982297 |
+
+[hints]
+[hint]
+The formula for calculating a circle's perimeter is: P = 2 * π * R.
+"R" is the radius.
+[/hint]
+[hint]
+The formula for calculating a circle's area is: A = π * R * R.
+[/hint]
+[/hints]
 [/task-description]
 [tests]
 [test open]
