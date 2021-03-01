@@ -110,6 +110,9 @@ jarOfPickles.add(new Pickle());
 Pickle pickle = jarOfPickles.remove();
 ```
 
+## Hints
+Use the syntax `Jar<T>` to create a generic class.
+
 ## Submit
 To submit your solution, **zip** your whole package with the `Jar` and `Main` classes:
 
