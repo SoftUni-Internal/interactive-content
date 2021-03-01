@@ -160,8 +160,7 @@ Using the **Person class**, write a program that reads from the console **N line
 [tests]
 [test open]
 [input]
-3
-Peter 12
+2
 John 31
 Steven 48
 [/input]
@@ -174,18 +173,16 @@ Leo - 44
 [test]
 [input]
 5
-Nikolai 33
-Yordan 88
-Tosho 22
-Lyubo 44
-Stanislav 11
-
+Nick 33
+John 88
+George 22
+Leo 44
+Peter 11
 [/input]
 [output]
-Nikolai - 33
-Yordan - 88
-Lyubo - 44
-
+Nick - 33
+John - 88
+Leo - 44
 [/output]
 [/test]
 [test]
