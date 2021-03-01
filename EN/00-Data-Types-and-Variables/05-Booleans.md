@@ -134,7 +134,7 @@ The other numeric values become Boolean values, and they are "**false**"`.
 
 In JavaScript we have eight values that are assumed to be "**falsey**":
 
-| Value | Description | 
+| **Value** | **Description** | 
 | :---:       |    :----:   |   
 | "**false**" | The keyword "**false**" | 
 | `0` | The number zero | 
@@ -193,7 +193,7 @@ Examples of amazing numbers are:
 
 - 583472 (5 + 8 + 3 + 4 + 7 + 2 = 29)
 
-# Example
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | amazingNumbers(1233) | 1233 Amazing? True |

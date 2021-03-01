@@ -41,7 +41,7 @@
 
 - With `typeof` we can receive the type of a variable
 ``` js live
-let cars = ["Nio", "Tesla", "Xpeng"];
+let cars = ['Nio', 'Tesla', 'Xpeng'];
 
 console.log(typeof(cars));
 ```

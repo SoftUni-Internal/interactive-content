@@ -15,7 +15,7 @@ We can take the individual **symbols** from the string.
 Here, we take the first element of the string and its length.
 
 ``` js live
-let myString = "Hello JavaScript!";
+let myString = 'Hello JavaScript!';
 
 console.log(myString[0]);
 console.log(myString.length);
@@ -38,7 +38,7 @@ Strings are immutable.
 In this example we try to change the fourth symbol which is `o`:
 
 ``` js live
-let myString = "Hello JavaScript!";
+let myString = 'Hello JavaScript!';
 console.log(myString);
 
 myString[4] = 'Change the symbol on the fourth index!';
@@ -217,7 +217,7 @@ Your task is to **replace** the underscore ("**_**") with the given **character*
 If the strings are equal, you should print "**Matched**", otherwise print "**Not Matched**".
 
 
-# Example
+## Example
   | **Input** | **Output** |
 | --- | --- |
 | rightPlace('Str_ng', 'I', 'Strong') | Not Matched |

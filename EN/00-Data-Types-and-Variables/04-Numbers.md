@@ -100,7 +100,7 @@ Your task is to find their **sum** and print the result to the console with an a
 "\{**number**\} - **Integer or Float**"
 
 
-# Example
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | integerOrFloat(9, 100, 1.1) | 110.1 - Float |

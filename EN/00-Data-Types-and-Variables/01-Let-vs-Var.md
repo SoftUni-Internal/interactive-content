@@ -89,7 +89,7 @@ All the variables we have defined at the top level.
 These are usually our functions.
 
 ```js
-var carName = "Volvo";
+var carName = 'Volvo';
   // Code here can use carName
 function myFunction() {
   // Code here can also use carName
@@ -106,7 +106,7 @@ Functional scope is the **body of the function**, and each variable defined in t
 
 ```js
 function myFunction() {
-   var carName = "Volvo";
+   var carName = 'Volvo';
    // Only here, the code can use carName
  }
  ```

@@ -44,7 +44,7 @@ As output you should print the following message:
 
 Rotations should be **rounded up.**
 
-# Example
+## Example
   | **Input** | **Output** |
 | --- | --- |
 | gramophone('Black Sabbath', 'Paranoid', 'War Pigs') | The plate was rotated 167 times. |
@@ -157,7 +157,7 @@ As output you should print this message:
 
 "**Needed money for that trip is** \{**neededMoney**\} **dollars.**
 
-# Example
+## Example
   | **Input** | **Output** |
 | --- | --- |
 | fuelMoney(260, 9, 2.49) | Needed money for that trip is 47.559 dollars. |
@@ -287,7 +287,7 @@ Print the output in the following format:
 
 "\{**number**\} **centuries =** \{**number**\} **years =** \{**number**\} **days =** \{**number**\} **hours =** \{**number**\} **minutes**"
 
-# Example
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | centuriesToMinutes(1) | 1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes |
@@ -384,7 +384,7 @@ For all numbers in the range **1...n**, print the current number and whether it 
 
 A number is special when the **sum of its digits** is equals to **5, 7, or 11.**
 
-# Example
+## Example
   | **Input** | **Output** |
 | --- | --- |
 | specialNumbers(5) | 1 -> False |
@@ -393,7 +393,7 @@ A number is special when the **sum of its digits** is equals to **5, 7, or 11.**
 ||4 -> False|
 ||5 -> True|
 
-# Hints
+## Hints
 
 To calculate the sum of digits of a given number, you might repeat the following:
 
@@ -561,7 +561,7 @@ function adapter(input, code) {
 
 Create a program that receives a **number n** and prints all triples of the first **n** small Latin letters ordered alphabetically.
 
-# Example
+## Example
   | **Input** | **Output** |
 | --- | --- |
 | triplesLatinLetters(2) | aaa |
@@ -573,7 +573,7 @@ Create a program that receives a **number n** and prints all triples of the firs
 ||bba|
 ||bbb|
 
-# Hints
+## Hints
 
 Perform 3 nested loops from 0 to n. 
  
@@ -1232,7 +1232,7 @@ function adapter(input, code) {
 
 Create a program that receives **three parameters** (characters) and prints them in **reversed order** with a space between them.
 
-# Example
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | reversChars('A', 'B','C') | C B A |
