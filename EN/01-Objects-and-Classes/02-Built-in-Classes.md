@@ -196,12 +196,18 @@ System.out.println(isValid);
 [/slide]
 
 [slide hideTitle]
-[slide hideTitle]
 # Problem with Solution: Randomize Words
 [code-task title="Problem with Solution: Randomize Words" taskId="Java-Fundamentals-1-Built-in-Classes-Randomize-Words" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java-code]
 ```
+import java.util.*;
+import java.math.BigInteger;
 
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
