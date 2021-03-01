@@ -60,17 +60,16 @@ The result should be **formatted** to the third decimal place.
 |studyMaterials([7, 8, 0.5, 45])|54.340|
 |studyMaterials([2, 3, 2.5, 25])| 27.150 |
 
-**Comments**
 
-- Price for the **pencils**: 2 \* 5.80 = 11.60
+[hints]
+[hint]
+Calculate the individual price for the pencils, markers and detergent. Then calculate the total price.
+[/hint]
+[hint]
+Determine the final price after applying the discount.
+[/hint]
+[/hints]
 
-- Price for the **markers**: 3 \* 7.20 = 21.60
-
-- Price for the **detergent**: 2.5 \* 1.20 = 3.00
-
-- **Total price:** 11.60 \+ 21.60 \+ 3.00 = 36.20
-
-- **Price with discount:** 36.20 \– ((36.20 \* 25) \/ 100) = 27.150
 
 [/task-description]
 [code-io /]
