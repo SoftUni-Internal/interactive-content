@@ -103,9 +103,9 @@ console.log(map.size);
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-24-iterators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-By using iterators, we can return an array containing [key-value] pairs.
+By using iterators, we can return an array containing `[key-value]` pairs.
 
-To return an array of [key-value] pair use the `.entries()` method on a map object.
+To return an array of `[key-value]` pair use the `.entries()` method on a map object.
 
 The output will be an array of arrays `[ [ 1, 'one' ], [ 2, 'two' ] ]`
 
@@ -222,7 +222,7 @@ The input comes as an **array of strings**.
 
 Use a "**Map()**" method.
 
-# Example
+## Example
 
 | **Input** | **Output** |
 | --- | --- |
@@ -369,7 +369,7 @@ In the end print the students **sorted** by **average grade**.
 
 The input comes as an **array of strings**.
 
-# Example
+## Example
 
 | **Input** | **Output** |
 | --- | --- |

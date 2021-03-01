@@ -20,7 +20,7 @@ let myMap = new Map([
 - In practice, **Objects** are used more often
 
 ```js
-let car = {type:"Tesla", model:"X", color:"Blue"};
+let car = {type:'Tesla', model:'X', color:'Blue'};
 ```
 
 - **Maps** have advantages in some cases:

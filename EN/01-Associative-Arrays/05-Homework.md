@@ -39,7 +39,7 @@ Print out **how many** times each of the specified words occured.
 
 The words should be **sorted by the number of times they were present in descending order**.
 
-# Example
+## Example
 
 | **Input** | **Output** |
 | --- | --- |
@@ -147,7 +147,7 @@ The input is a **single string**.
 
 The words will be **separated by a single space**.
 
-# Example
+## Example
 
 | **Input** | **Output**  |
 | --- | --- |
@@ -244,7 +244,7 @@ Write a function that:
 
 Print the output with all car numbers which are in the parking lot **sorted in ascending order by their license plate**.
 
-# Example One
+## Example One
 
 
 | **Input** | **Output**  |
@@ -254,7 +254,7 @@ Print the output with all car numbers which are in the parking lot **sorted in a
 | | CA9876HH |
 | | CA9999TT |
 
-# Example Two
+## Example Two
 
 | **Input** | **Output** |
 | --- | ---|
@@ -389,7 +389,7 @@ When you receive the command "**PARTY**", the guests start coming.
 
 Output all guests, who did not come to the party (**VIPs must be first**).
 
-# Example One
+## Example One
 
 | **Input** | **Output** |
 | --- | --- |
@@ -397,7 +397,7 @@ Output all guests, who did not come to the party (**VIPs must be first**).
 | | 7IK9Yo0h   |
 | | tSzE5t0p   |
 
-# Example Two
+## Example Two
 
 | **Input** | **Output** |
 | --- | --- |
@@ -544,7 +544,7 @@ Print out the total card value, that each player has in his hand in the format:
 
 "\{**personName**\}: \{**value**\}"
 
-# Example
+## Example
 
 | **Input** | **Output** |
 | --- | --- |
@@ -680,7 +680,7 @@ Print the company name and each employee's id in the following format:
 - The input is an **array of strings**, each in the format: "\{**companyName**\} \-\> \{**employeeId**\}"
 - The input will always be valid
 
-# Example One
+## Example One
 
 | **Input** | **Output** |
 | --- | --- |
@@ -692,7 +692,7 @@ Print the company name and each employee's id in the following format:
 |                                                                                         | \-\- AA12345 |
 |                                                                                         | \-\- BB12345 |
 
-# Example Two
+## Example Two
 
 | **Input** | **Output** |
 | --- | --- |
@@ -876,11 +876,11 @@ Your task is to collect the resources and print each of them on a new line.
 
 **Print the resources and their quantities in this format**:
 
-"\{**resource**\} \–\> \{**quantity**\}"
+"\{**resource**\} \-\> \{**quantity**\}"
 
 The quantities inputs will be in range "\[**1...2 000 000 000**\]"
 
-# Example One
+## Example One
 
 | **Input** | **Output** |
 | --- | --- |
@@ -888,7 +888,7 @@ The quantities inputs will be in range "\[**1...2 000 000 000**\]"
 |                                                   | Silver \-\> 10 |
 |                                                   | Copper \-\> 17 |
 
-# Example Two
+## Example Two
 
 | **Input** | **Output** |
 | --- | --- |

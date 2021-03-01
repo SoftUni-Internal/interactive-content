@@ -319,7 +319,7 @@ If the same weekday occurs a second time, print a **conflict** message:
 
 In the end, print a list containing all successful and conflicting appointments.
 
-# Example
+## Example
 
 | **Input** | **Output** |
 | --- | --- |
@@ -559,7 +559,7 @@ If same **name** occurs more than once, save the **latest** address.
 
 Print out a list of all entries, **sorted** alphabetically by **name**.
 
-# Example
+## Example
 
 | **Input** | **Output** |
 | --- | --- |
