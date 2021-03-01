@@ -73,17 +73,14 @@ The result must be **formatted** to the second digit after the decimal point.
 |mountainRun([1377, 389, 3])|No! He was 0.00 seconds slower.|
 |mountainRun([10164, 1400, 25]) | No! He was 25676.00 seconds slower. |
 
-**Comments**
-
-- George has to **climb 1400 m.**:  1400 \* 25 = 35000 seconds
-
-- For every **50 meters**, **30 seconds are added** to his time: (1400 \/ 50) \* 30 = 840 seconds
-
-- Total time: 35000 \+ 840 = 35840 seconds
-
-- But because 10164 \< 35840, it did not **improve the record.**
-
-- He **did not have enough time** to improve the record: 35840 \- 10164 = 25676 seconds
+[hints]
+[hint]
+Calculate how much time it will take for George to climb the whole distance. Then, determine how much he will be slowed by the terrain and add the time to the total time.
+[/hint]
+[hint]
+Check if he will beat the current record and print the correct output.
+[/hint]
+[/hints]
 
 [/task-description]
 [code-io /]
