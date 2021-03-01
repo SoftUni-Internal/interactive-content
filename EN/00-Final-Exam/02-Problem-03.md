@@ -83,17 +83,17 @@ Number of ordered cuts: integer in the interval \[1 … 10000\]
 |energyBooster(['Raspberry', 'small', 50])|1000.00 dollars.|
 |energyBooster(['Watermelon', 'big', '4']) | 487.90 dollars. |
 
-**Comments**
-
-- The price of a large package of watermelon bars is 5 \* 28.70 = $143.50
-
-- The price of 4 sets: $574
-
-- The customer receives a 15\% discount: 400 \<\= 574 \<\= 1000
-
-- 15\% from 574 = \$86.1 discount
-
-- Final price: 574 \- 86.1 = \$487.9
+[hints]
+[hint]
+Calculate the individual price for 1 pack of energy bars.
+[/hint]
+[hint]
+Calculate the total price and check if there's a discount.
+[/hint]
+[hint]
+If there is a discount, subtract it from the total price and print the correct output.
+[/hint]
+[/hints]
 
 [/task-description]
 [code-io /]
