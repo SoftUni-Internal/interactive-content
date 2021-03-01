@@ -239,7 +239,7 @@ Using a closure, create an inner object to process list commands.
 The commands supported should be the following:
 - `add <string>` adds the following string in an inner collection.
 - `remove <string>` removes all occurrences of the supplied `<string>` from the inner collection.
-- `print` prints all elements of the inner collection joined by `","`.
+- `print` prints all elements of the inner collection joined by "**,**".
 
 The input will be in a form of an array of strings - each string represents a command to be executed from the command execution engine.
  
@@ -587,23 +587,23 @@ function heroes(){
 [task-description]
 # Description
 
-Create a function that returns an object with 2 methods `mage` and `fighter`. 
+Create a function that returns an object with 2 methods "**mage**" and "**fighter**". 
 
-This object should be able to create heroes `fighters` and `mages`. 
+This object should be able to create heroes "**fighters**" and "**mages**". 
 
 Every hero has a state.
 
-Fighters have `name`, `health = 100` and `stamina = 100` and every fighter can fight.  
+Fighters have "**name**", `health = 100` and `stamina = 100` and every fighter can fight.  
 
 When the fighter fights its stamina decreases by 1 and the following message is printed on the console:
 
-`${fighter's name} slashes at the foe!`
+"\$\{**fighter's name**\} **slashes at the foe!**"
 
-Mages also have `name`, `health = 100` and `mana = 100`. 
+Mages also have "**name**", `health = 100` and `mana = 100`. 
 
 Every mage can cast spells. When a spell is cast the mage's mana decreases by 1 and the following message is printed on the console:
 
-`${mage's name} cast ${spell}`
+"\$\{**mage's name**\} **cast** \$\{**spell**\}"
 
 ## Example
 **Input**
@@ -845,11 +845,11 @@ An engine has power and volume. Power is in horsepower and volume is in cubic ce
 
 Both of these values are numbers. When selecting an engine, pick the smallest possible that still meets the requirements.
 
-`Small engine: { power: 90, volume: 1800 }`
+"**Small engine:** \{ **power: 90, volume: 1800** \}"
 
-`Normal engine: { power: 120, volume: 2400 }`
+"**Normal engine:** \{ **power: 120, volume: 2400** \}"
 
-`Monster engine: { power: 200, volume: 3500 }`
+"**Monster engine:** \{ **power: 200, volume: 3500** \}"
 
 A carriage has a type and color. 
 

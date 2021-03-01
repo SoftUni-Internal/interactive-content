@@ -23,7 +23,7 @@ function pressHouse() {
 You need to create several classes for **Press House**.
 
 **Implement** the following classes:
-`Article`, `ShortReports`, `BookReview`.
+"**Article**", "**ShortReports**", "**BookReview**".
 
 ## Article
 
@@ -44,7 +44,7 @@ Content: {content}
 ```
 
 ## ShortReports
-The `ShortReports` class inherits from the **Article** class.
+The "**ShortReports**" class inherits from the "**Article**" class.
 
 - `constructor(title, content, originalResearch)`
 
@@ -64,21 +64,21 @@ It should accept a report of **less than 150 symbols**.
 
 If the submitted content exceeds the limit you should throw an error with the following message:
 
-`Short reports content should be less than 150 symbols.`
+"**Short reports content should be less than 150 symbols.**"
 
 The **originalResearches** object is should contain both **author** and **title**. 
 
 If it does not then throw an error with the following message:
 
-`The original research should have author and title.`
+"**The original research should have author and title.**"
 
 - `addComment(comment)`. This function should receive a single comment as a string, add it to the **comments array** and return this message: 
 
-`The comment is added.`
+"**The comment is added.**"
 
 - `toString()`. This function should extend the `toString()` method of the  **Article** class by adding some additional lines:
 
-`Original Research: { title } by { author }`
+"**Original Research:** \{ **title** \} **by** \{ **author** \}"
 
 And if there are any comments then print them in this format:
 ```
@@ -92,7 +92,7 @@ Comment content goes here
 
 ## BookReview
 
-The `BookReview` class inherits from the `Article` class.
+The "**BookReview"** class inherits from the "**Article**" class.
 
 - `constructor(title, content, book)`
 
@@ -101,25 +101,25 @@ The `BookReview` class inherits from the `Article` class.
 - **title** \- string
 - **content** \- string
 - **book** \- an object with properties **name** and **author**
-- **customers** \- an array of **customer** objects. Each **customer** object should have the following structure `{customerName, orderDescription}`
+- **customers** \- an array of **customer** objects. Each **customer** object should have the following structure "\{**customerName, orderDescription**\}"
 
-`addCustomer(customerName,  orderDescription)`: 
+"**addCustomer(customerName,  orderDescription)**": 
 
-This **function** should receive `customerName` and `orderDescription` as strings.  
+This **function** should receive "**customerName**" and "**orderDescription**" as strings.  
 
 Here you should check the **customers array** and the same order has already been placed by the same customer, throw an error with the following message: 
 
-`This customer has already ordered this review.`
+"**This customer has already ordered this review.**
 
 Otherwise, add the **customer** object into the **customers array** and return this message:
 
-`{ customerName } has ordered a review for { book name }`
+"\{ **customerName** \} **has ordered a review for** \{ **book name** \}`
 
 `toString()`: 
 
-This **function** should extend the `toString()` method of the `Article` class by adding some more lines:
+This **function** should extend the `toString()` method of the "**Article**" class by adding some more lines:
 
-`Book: { book name }`
+"**Book:** \{ **book name** \}"
 
 Additionally, if there are **any orders** you should print each of them on a new line:
 

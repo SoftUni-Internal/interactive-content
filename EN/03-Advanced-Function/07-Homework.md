@@ -241,9 +241,9 @@ function adapter(input, code) {
 
 Write a program that filters the employees of your company. 
 
-You should  print the result in a specific format. 
+You should print the result in a specific format. 
 
-You will receive **2** parameters \(`data`, `criteria`\). 
+You will receive **2** parameters \("**data**", "**criteria**"\). 
 
 You should **parse** the input, find all employees that fulfills the criteria and print these employees.
 
@@ -251,7 +251,7 @@ You should **parse** the input, find all employees that fulfills the criteria an
 
 You will receive a **string** with all the employees, and the **criteria** by which you should sort the employees.
 
-If the criteria is `all` print all the employees in the given format.
+If the criteria is "**all**" print all the employees in the given format.
 
 ## Output
 
@@ -416,9 +416,9 @@ Write a function that **sorts an array** with **numeric** values in **ascending*
 
 You will receive a **numeric array** and a **string** as arguments to the first function in your code. 
 
-- If the second argument is `asc`, the array should be sorted in **ascending order** \(smallest values first\).
+- If the second argument is "**asc**", the array should be sorted in **ascending order** \(smallest values first\).
 
-- If it is `desc`, the array should be sorted in **descending order** \(largest first\).
+- If it is "**desc**", the array should be sorted in **descending order** \(largest first\).
 
 ## Input
 
@@ -514,11 +514,11 @@ function argumentInfo() {
 
 Write a function that displays **information** about the **arguments** which are passed to it (**type** and **value**) and a **summary** about the number of each type in the following format: 
 
-`{argument type}: {argument value}`
+"\{**argument type**\}: \{**argument value**\}"
 
 Print **each** argument description on a **new line**. At the end print a **summary** with counts for each type in **descending order**, each on a new line in the following format:
 
-`{type} = {count}`
+"\{**type**\} = \{**count**\}"
 
 If two types have the **same count**, use **order of appearance**. 
 

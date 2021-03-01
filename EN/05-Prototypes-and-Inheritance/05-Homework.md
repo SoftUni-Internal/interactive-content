@@ -108,15 +108,17 @@ Extend the **Person** and **Teacher** classes from the previous task and add a c
 
 Add `toString()` functions to all classes, the format should be as follows:
 
-- **Person** - returns `Person (name: {name}, email: {email})`
-- **Student** - returns `Student (name: {name}, email: {email}, course: {course})`
-- **Teacher** - returns `Teacher (name: {name}, email:{email}, subject:{subject})`
+- **Person** - returns "**Person (name:** \{**name**\}**, email:** \{**email**\}**)**"
+- **Student** - returns "**Student (name:** \{**name**\}**, email:** \{**email**\}**, course:** \{**course**\}**)**"
+- **Teacher** - returns "**Teacher (name:** \{**name**\}**, email:** \{**email**\}**, subject:** \{**subject**\}**)**"
 
 Try to reuse code by using the `toString()` function of the base class.
 
 ## Input and Output
 
-There will be **NO** input. Your function should return an object containing the classes **Person**, **Teacher**, and **Student**.
+There will be **NO** input. 
+
+Your function should return an object containing the classes **Person**, **Teacher**, and **Student**.
 
 [/task-description]
 [code-io /]
@@ -198,7 +200,9 @@ Implement the following functionality:
 
 ## Input and Output
 
-The input for functions that expect it will be passed as valid parameters. The output should be their **return** value.
+The input for functions that expect it will be passed as valid parameters. 
+
+The output should be their **return** value.
 
 ## Constraints
 
@@ -226,7 +230,7 @@ To add all functions just one time and have them work on **all arrays**, we have
    };
 ```
 
-With such a declaration, we gain access to the context of the calling instance via the `this` keyword. 
+With such a declaration, we gain access to the context of the calling instance via the "**this**" keyword. 
 
 We can then easily access indexes and other existing properties. 
 
@@ -278,9 +282,11 @@ The last two functions require a little bit of arithmetic to be performed:
    };
 ```
 
-To be able to submit the solution, we need to wrap our program in an `IIFE`. 
+To be able to submit the solution, we need to wrap our program in an "**IIFE**". 
 
-There is **no return value** since the code execution results in functionality being added to an existing object. We are ready to submit our solution.
+There is **no return value** since the code execution results in functionality being added to an existing object. 
+
+We are ready to submit our solution.
 
 ```js
    (function solve() {
@@ -706,16 +712,16 @@ The list of tasks is filled by each position. The resulting objects also expose 
 
 When `work()` is called, one of the following lines is printed to the console depending on the current task in the list:
 
-- `{employee name} is working on a simple task.`
-- `{employee name} is working on a complicated task.`
-- `{employee name} is taking time off work.`
-- `{employee name} is supervising junior workers.`
-- `{employee name} scheduled a meeting.`
-- `{employee name} is preparing a quarterly report.`
+- "\{**employee name**\} **is working on a simple task.**"
+- "\{**employee name**\} **is working on a complicated task.**"
+- "\{**employee name**\} **is taking time off work.**"
+- "\{**employee name**\} **is supervising junior workers.**"
+- "\{**employee name**\} **scheduled a meeting.**"
+- "\{**employee name**\} **is preparing a quarterly report.**"
 
 When `collectSalary()` is called, print the following:
 
-- `{employee name} received {salary + bonuses} this month.`
+- "\{**employee name**\} **received** \{**salary + bonuses**\} **this month.**"
 
 ## Input and Output
 
@@ -1192,8 +1198,8 @@ Implement the following classes:
 
    - The **2** arguments should be **public members**
    - The **Post** class should also have a `toString()` function which returns the following result:
-      - `Post: {postTitle}`
-      - `Content: {postContent}`
+      - "**Post:** \{**postTitle**\}"
+      - "**Content:** \{**postContent**\}"
 
 - **SocialMediaPost**, which inherits the **Post** class and should be initialized with **2 additional arguments** - **likes** (Number) and **dislikes** (Number). The class should hold:
 
@@ -1509,7 +1515,9 @@ You are asked to submit **ONLY the function** that returns an object containing 
 
 ## Bonus
 
-To achieve code reusability, it is a good idea to have an abstract class containing common information. Check the classes, for common characteristics share that can be grouped in a base class?
+To achieve code reusability, it is a good idea to have an abstract class containing common information. 
+
+Check the classes, for common characteristics share that can be grouped in a base class?
 
 [/task-description]
 [code-io /]

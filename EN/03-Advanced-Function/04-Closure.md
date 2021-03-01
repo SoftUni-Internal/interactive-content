@@ -91,7 +91,7 @@ Write a function that keeps a string **inside its context** and can execute diff
 
 - `removeEnd(n)` - **remove** the **last n** characters from the string, **n** is an integer
 
-- `print` - **print** the stored string on the **console**
+- `print` - **print** the stored string to the **console**
 
 ## Input
 
@@ -99,7 +99,7 @@ Check the examples below to see how your code will be executed
 
 ## Output
 
-Whenever you receive the command **print**, the output should be the **printed** on the console.
+Whenever you receive the command **print**, the output should be the **printed** to the console.
 
 ## Examples
 
