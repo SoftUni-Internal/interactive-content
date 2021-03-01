@@ -1,8 +1,8 @@
-# Comparable\<T\> and Comparator\<T\>
+# Comparators
 
 [slide hideTitle]
 
-# Comparator\<E\>
+# Comparator
 
 The Comparator interface allows us to provide a **custom comparison logic for types that we have no control over**.
 
@@ -19,7 +19,7 @@ Keep in mind that the Comparator is an external class means that it **will not a
 
 [slide hideTitle]
 
-# Comparable\<E\>
+# Comparable
 
 Comparable allows us to specify how objects that we are implementing **compare to objects of the same type**. 
 
@@ -81,7 +81,7 @@ That allows us to later implement the `compareTo()` method by **accepting a Stud
 
 [slide hideTitle]
 
-# Comparator\<E\> \- Example
+# Comparator - Example
 
 In the following example, we compare **two Student objects** by student age.
 
@@ -93,9 +93,9 @@ The implementation is simple, we return:
 
 - A **positive** number if the first student is bigger
 
-- **Negative** in the other case**
+- **Negative** in the other case
 
-- **0 when they are the same**
+- **Zero** when they are the same
 
 By using the Comparator, **we could create as many comparators as we need** and used them according to our situation.
 
@@ -476,24 +476,4 @@ Test Passed!
 [/tests]
 [/code-task]
 [/slide]
-
-[slide]
-
-# Solution: Book Comparator
-
-To implement your **BookComparator** class use the Book class from the first problem:
-
-```java
-public class BookComparator implements Comparator<Book> {
-    @Override
-    public int compare(Book b1, Book b2) {
-        int titleCompare = b1.getTitle().compareTo(b2.getTitle());
-        return  titleCompare != 0 ? titleCompare : b2.getYear() - b1.getYear();
-    }
-}
-
-```
-
-[/slide]
-
 
