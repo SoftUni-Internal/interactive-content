@@ -1,18 +1,27 @@
 # Temă de acasă
 
-[slide]
+[slide hideTitle]
 # Problem: Gramophone
 [code-task title="Gramophone" taskId="js-fundamentals-1-basic-syntax-Gramophone" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function gramophone(input){
-  // Write your code here
+function gramophone(bandName, album, songName){
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
-Scrieți o funcție care ca intrare va primi 3 parametrii (șiruri)
+Creați un program care ca intrare va primi 3 parametrii (șiruri)
 
 - Primul șir este numele trupei
 
@@ -26,26 +35,32 @@ Trebuie să aflați de câte **ori** placa va roti melodia dată din album.
 
 Durata melodiei **în secunde** se calculează după formula dată:
 
-`(albumName.length * bandName.length) * song name.length / 2`
+(albumName.length \* bandName.length) \* song name.length \/ 2
 
 Ca rezultat, ar trebui să imprimați următorul mesaj:
 
-`The plate was rotated {rotations} times.`
+"**The plate was rotated {rotations} times.**"
 
 Rotațiile ar trebui să fie **rotunjite în sus.**
 
-# Exemplu
+## Exemplu
    |**Intrare** |**Ieșire**|
 | --- | --- |
-|`['Black Sabbath', 'Paranoid', 'War Pigs']`| The plate was rotated 167 times. |
+| gramophone('Black Sabbath', 'Paranoid', 'War Pigs') | The plate was rotated 167 times. |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+gramophone('Black Sabbath', 'Paranoid', 'War Pigs')
+[/input]
+[output]
+The plate was rotated 167 times.
+[/output]
+[/test]
 [test]
 [input]
-Bhjkhbath
-Pudfgdgioid
-Wois
+gramophone('Bhjkhbath', 'Pudfgdgioid', 'Wois')
 [/input]
 [output]
 The plate was rotated 80 times.
@@ -53,9 +68,7 @@ The plate was rotated 80 times.
 [/test]
 [test]
 [input]
-gjhg
-jklcrj
-gyuguyguy
+gramophone('gjhg', 'jklcrj', 'gyuguyguy')
 [/input]
 [output]
 The plate was rotated 44 times.
@@ -63,9 +76,7 @@ The plate was rotated 44 times.
 [/test]
 [test]
 [input]
-bhjbhjbj
-cghcgh
-uiou
+gramophone('bhjbhjbj', 'cghcgh', 'uiou')
 [/input]
 [output]
 The plate was rotated 39 times.
@@ -73,9 +84,7 @@ The plate was rotated 39 times.
 [/test]
 [test]
 [input]
-Bvyuvh
-ji
-Wauios
+gramophone('Bvyuvh', 'ji', 'Wauios')
 [/input]
 [output]
 The plate was rotated 15 times.
@@ -83,9 +92,7 @@ The plate was rotated 15 times.
 [/test]
 [test]
 [input]
-gyuuath
-Pgyd
-Wabygs
+gramophone('gyuuath', 'Pgyd', 'Wabygs')
 [/input]
 [output]
 The plate was rotated 34 times.
@@ -93,9 +100,7 @@ The plate was rotated 34 times.
 [/test]
 [test]
 [input]
-tyuath
-Pargyu
-tuus
+gramophone('tyuath', 'Pargyu', 'tuus')
 [/input]
 [output]
 The plate was rotated 29 times.
@@ -107,27 +112,36 @@ The plate was rotated 29 times.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Fuel Money
 [code-task title="Fuel Money" taskId="js-fundamentals-1-basic-syntax-Fuel-Money" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function fuelMoney(input){
-  // Write your code here
+function fuelMoney(pistance, passengers, price){
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
  # Descriere
-Scrieți o **funcție** care calculează cât de mulți **bani** pentru combustibil, care va fi necesar pentru a conduce un autobuz dintr-un loc în altul.
+Creați un program care calculează cât de mulți **bani** pentru combustibil, care va fi necesar pentru a conduce un autobuz dintr-un loc în altul.
 
 Luați în considerare următoarele:
 
-- Calculați **combustibilul** știind că **un autobuz gol** poate trece 100 km cu motorină 7L.
+- Calculați **combustibilul** știind că **un autobuz gol** poate trece 100 km cu motorină 7L
 
-- **O persoană** în autobuzul respectiv, cu excepția șoferului, mărește consumul de combustibil cu **100 mililitri.**
+- **O persoană** în autobuzul respectiv, cu excepția șoferului, mărește consumul de combustibil cu **100 mililitri**
 
-- **Banii** sunt calculați prin **înmulțirea** a **prețului combustibilului** cu combustibilul necesar pentru călătorie.
+- **Banii** sunt calculați prin **înmulțirea** a **prețului combustibilului** cu combustibilul necesar pentru călătorie
 
 Ca **intrare** veți primi **3 parametri**:
 - **Distanța** pe care trebuie să o parcurgă autobuzul
@@ -135,21 +149,35 @@ Ca **intrare** veți primi **3 parametri**:
 - **Preț** pentru **1 litru de motorină**
 
 Ca rezultat, ar trebui să imprimați acest mesaj:
- `Needed money for that trip is {neededMoney} dollars.`
+"**Needed money for that trip is** \{**neededMoney**\} **dollars.**
 
-# Exemplu
+## Exemplu
    |**Intrare**|**Ieșire**|
 | --- | --- |
-|`['260', '9', '2.49']`| Needed money for that trip is 47.559 dollars. |
-|`['90', '14', '2.88']`| Needed money for that trip is 22.176 dollars. |
+| fuelMoney(260, 9, 2.49) | Needed money for that trip is 47.559 dollars. |
+| fuelMoney(90, 14, 2.88) | Needed money for that trip is 22.176 dollars. |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+fuelMoney(260, 9, 2.49)
+[/input]
+[output]
+Needed money for that trip is 47.559 dollars.
+[/output]
+[/test]
+[test open]
+[input]
+fuelMoney(90, 14, 2.88)
+[/input]
+[output]
+Needed money for that trip is 22.176 dollars.
+[/output]
+[/test]
 [test]
 [input]
-154
-5
-3.1
+fuelMoney(154, 5, 3.1)
 [/input]
 [output]
 Needed money for that trip is 34.968 dollars.
@@ -157,9 +185,7 @@ Needed money for that trip is 34.968 dollars.
 [/test]
 [test]
 [input]
-545
-5
-54.59
+fuelMoney(545, 5, 54.59)
 [/input]
 [output]
 Needed money for that trip is 2109.9035 dollars.
@@ -167,9 +193,7 @@ Needed money for that trip is 2109.9035 dollars.
 [/test]
 [test]
 [input]
-32
-15
-1.0
+fuelMoney(32, 15, 1.0)
 [/input]
 [output]
 Needed money for that trip is 3.74 dollars.
@@ -177,9 +201,7 @@ Needed money for that trip is 3.74 dollars.
 [/test]
 [test]
 [input]
-1232
-13
-2.19
+fuelMoney(1232, 13, 2.19)
 [/input]
 [output]
 Needed money for that trip is 191.7126 dollars.
@@ -187,9 +209,7 @@ Needed money for that trip is 191.7126 dollars.
 [/test]
 [test]
 [input]
-546
-45
-4.45
+fuelMoney(546, 45, 4.45)
 [/input]
 [output]
 Needed money for that trip is 190.104 dollars.
@@ -197,9 +217,7 @@ Needed money for that trip is 190.104 dollars.
 [/test]
 [test]
 [input]
-755
-10
-3.474
+fuelMoney(755, 10, 3.474)
 [/input]
 [output]
 Needed money for that trip is 187.0749 dollars.
@@ -207,9 +225,7 @@ Needed money for that trip is 187.0749 dollars.
 [/test]
 [test]
 [input]
-451
-2
-12.5
+fuelMoney(451, 2, 12.5)
 [/input]
 [output]
 Needed money for that trip is 397.125 dollars.
@@ -217,9 +233,7 @@ Needed money for that trip is 397.125 dollars.
 [/test]
 [test]
 [input]
-361
-45
-2.989
+fuelMoney(361, 45, 2.989)
 [/input]
 [output]
 Needed money for that trip is 88.98253 dollars.
@@ -227,9 +241,7 @@ Needed money for that trip is 88.98253 dollars.
 [/test]
 [test]
 [input]
-1565
-12
-1.49
+fuelMoney(1565, 12, 1.49)
 [/input]
 [output]
 Needed money for that trip is 165.0175 dollars.
@@ -241,33 +253,59 @@ Needed money for that trip is 165.0175 dollars.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Centuries to Minutes
 [code-task title="Centuries to Minutes" taskId="js-fundamentals-1-basic-syntax-Centuries-to-Minutes" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function centuriesToMinutes(input){
-  // Write your code here
+function centuriesToMinutes(number){
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
-Scrieți un program care primește mai multe secole și îl convertește în ani, zile, ore și minute.
+Creați un program care primește mai multe secole și îl convertește în ani, zile, ore și minute.
 
 Imprimați rezultatul în următorul format: 
-`{number} centuries = {number} years = {number} days = {number} hours = {number} minutes`
-# Exemplu
+"\{**number**\} **centuries =** \{**number**\} **years =** \{**number**\} **days =** \{**number**\} **hours =** \{**number**\} **minutes**"
+
+## Exemplu
    |**Intrare**|**Ieșire** |
 | --- | --- |
-|`['1']`| 1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes |
-|`['5']`| 5 centuries = 500 years = 182621 days = 4382904 hours = 262974240 minutes |
+| centuriesToMinutes(1) | 1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes |
+| centuriesToMinutes(5) | 5 centuries = 500 years = 182621 days = 4382904 hours = 262974240 minutes |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+centuriesToMinutes(1)
+[/input]
+[output]
+1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes
+[/output]
+[/test]
+[test open]
+[input]
+centuriesToMinutes(5)
+[/input]
+[output]
+5 centuries = 500 years = 182621 days = 4382904 hours = 262974240 minutes
+[/output]
+[/test]
 [test]
 [input]
-14
+centuriesToMinutes(14)
 [/input]
 [output]
 14 centuries = 1400 years = 511339 days = 12272136 hours = 736328160 minutes
@@ -275,7 +313,7 @@ Imprimați rezultatul în următorul format:
 [/test]
 [test]
 [input]
-2
+centuriesToMinutes(2)
 [/input]
 [output]
 2 centuries = 200 years = 73048 days = 1753152 hours = 105189120 minutes
@@ -283,7 +321,7 @@ Imprimați rezultatul în următorul format:
 [/test]
 [test]
 [input]
-4
+centuriesToMinutes(4)
 [/input]
 [output]
 4 centuries = 400 years = 146096 days = 3506304 hours = 210378240 minutes
@@ -291,7 +329,7 @@ Imprimați rezultatul în următorul format:
 [/test]
 [test]
 [input]
-3
+centuriesToMinutes(3)
 [/input]
 [output]
 3 centuries = 300 years = 109572 days = 2629728 hours = 157783680 minutes
@@ -299,7 +337,7 @@ Imprimați rezultatul în următorul format:
 [/test]
 [test]
 [input]
-6
+centuriesToMinutes(6)
 [/input]
 [output]
 6 centuries = 600 years = 219145 days = 5259480 hours = 315568800 minutes
@@ -311,63 +349,57 @@ Imprimați rezultatul în următorul format:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Special Numbers
 [code-task title="Special Numbers" taskId="js-fundamentals-1-basic-syntax-Special-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function specialNumbers(input){
-  // Write your code here
+function specialNumbers(number){
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
-Scrieți un program care primește un număr `n`. Pentru toate numerele din intervalul `1 ... n`, tipăriți numărul și dacă este special sau nu.
+Creați un program care primește un număr **n**. 
+
+Pentru toate numerele din intervalul **1...n**, tipăriți numărul și dacă este special sau nu.
 
 Un număr este special atunci când suma cifrelor sale este **5, 7, or 11.**
 
 
-# Exemplu
+## Exemplu
    |**Intrare**|**Ieșire** |
 | --- | --- |
-|`['15']`| 1 -> False |
+| --- | --- |
+| specialNumbers(5) | 1 -> False |
 ||2 -> False|
 ||3 -> False|
 ||4 -> False|
 ||5 -> True|
-||6 -> False|
-||7 -> True|
-||8 -> False|
-||9 -> False|
-||10 -> False|
-||11 -> False|
-||12 -> False|
-||13 -> False|
-||14 -> True|
-||15 -> False|
 
-# Sugestii
+## Sugestii
 
 Pentru a calcula suma cifrelor unui număr dat, puteți repeta următoarele:
 
-- însumați ultima cifră `num% 10` și eliminați-o` sum = sum / 10` până când num ajunge la `0`.
+- însumați ultima cifră `num% 10` și eliminați-o `sum = sum / 10` până când num ajunge la `0`.
 
 Utilizați `parseInt()` în timp ce împărțiți pentru a obține numai numere întregi.
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-1
-[/input]
-[output]
-1 -> False
-[/output]
-[/test]
-[test]
-[input]
-5
+specialNumbers(5)
 [/input]
 [output]
 1 -> False
@@ -379,7 +411,37 @@ Utilizați `parseInt()` în timp ce împărțiți pentru a obține numai numere 
 [/test]
 [test]
 [input]
-4
+specialNumbers(1)
+[/input]
+[output]
+1 -> False
+[/output]
+[/test]
+[test]
+[input]
+specialNumbers(15)
+[/input]
+[output]
+1 -> False
+2 -> False
+3 -> False
+4 -> False
+5 -> True
+6 -> False
+7 -> True
+8 -> False
+9 -> False
+10 -> False
+11 -> False
+12 -> False
+13 -> False
+14 -> True
+15 -> False
+[/output]
+[/test]
+[test]
+[input]
+specialNumbers(4)
 [/input]
 [output]
 1 -> False
@@ -390,7 +452,7 @@ Utilizați `parseInt()` în timp ce împărțiți pentru a obține numai numere 
 [/test]
 [test]
 [input]
-40
+specialNumbers(40)
 [/input]
 [output]
 1 -> False
@@ -435,58 +497,80 @@ Utilizați `parseInt()` în timp ce împărțiți pentru a obține numai numere 
 40 -> False
 [/output]
 [/test]
+[test]
+[input]
+specialNumbers(6)
+[/input]
+[output]
+1 -> False
+2 -> False
+3 -> False
+4 -> False
+5 -> True
+6 -> False
+[/output]
+[/test]
+[test]
+[input]
+specialNumbers(8)
+[/input]
+[output]
+1 -> False
+2 -> False
+3 -> False
+4 -> False
+5 -> True
+6 -> False
+7 -> True
+8 -> False
+[/output]
+[/test]
 [/tests]
 [code-io /]
 [/code-task]
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Triples of Latin Letters
 [code-task title="Triples of Latin Letters" taskId="js-fundamentals-1-basic-syntax-Triples-of-latin-letters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function triplesLatinLetters(input){
-  // Write your code here
+function triplesLatinLetters(number){
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
-[task-description]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
+[task-description
 # Descriere
-Scrieți un program care primește un **număr** `n` și tipărește toate triplele primelor n litere latine mici, ordonate alfabetic.
+Creați un program care primește un **număr** **n** și tipărește toate triplele primelor n litere latine mici, ordonate alfabetic.
 
-# Exemplu
+## Exemplu
    |**Intrare**|**Ieșire**|
 | --- | --- |
-|`['3']`| aaa |
+| triplesLatinLetters(2) | aaa |
 ||aab|
-||aac|
 ||aba|
 ||abb|
-||abc|
-||aca|
-||acb|
-||acc|
 ||baa|
 ||bab|
-||bac|
 ||bba|
 ||bbb|
-||bbc|
-||bca|
-||bcb|
-||bcc|
-||caa|
-||cab|
-||cac|
-||cba|
-||cbb|
 
-# Sugestii
+## Sugestii
 
-Efectuați 3 bucle imbricate de la `0` la` n`.
+Efectuați 3 bucle imbricate de la 0 la n.
  
-Pentru fiecare număr 'num', tipăriți litera latină corespunzătoare după cum urmează:
+Pentru fiecare număr "**num**", tipăriți litera latină corespunzătoare după cum urmează:
 
 `let letter = String.FromCharCode(97 + num)`
 
@@ -494,17 +578,9 @@ Funcția `String.fromCharCode ()` obține valoarea **în zecimal** și o transfo
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-1
-[/input]
-[output]
-aaa
-[/output]
-[/test]
-[test]
-[input]
-2
+triplesLatinLetters(2)
 [/input]
 [output]
 aaa
@@ -519,7 +595,49 @@ bbb
 [/test]
 [test]
 [input]
-6
+triplesLatinLetters(1)
+[/input]
+[output]
+aaa
+[/output]
+[/test]
+[test]
+[input]
+triplesLatinLetters(3)
+[/input]
+[output]
+aaa
+aab
+aac
+aba
+abb
+abc
+aca
+acb
+acc
+baa
+bab
+bac
+bba
+bbb
+bbc
+bca
+bcb
+bcc
+caa
+cab
+cac
+cba
+cbb
+cbc
+cca
+ccb
+ccc
+[/output]
+[/test]
+[test]
+[input]
+triplesLatinLetters(6)
 [/input]
 [output]
 aaa
@@ -742,7 +860,7 @@ fff
 [/test]
 [test]
 [input]
-4
+triplesLatinLetters(4)
 [/input]
 [output]
 aaa
@@ -811,39 +929,203 @@ ddc
 ddd
 [/output]
 [/test]
+[test]
+[input]
+triplesLatinLetters(0)
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+triplesLatinLetters(5)
+[/input]
+[output]
+aaa
+aab
+aac
+aad
+aae
+aba
+abb
+abc
+abd
+abe
+aca
+acb
+acc
+acd
+ace
+ada
+adb
+adc
+add
+ade
+aea
+aeb
+aec
+aed
+aee
+baa
+bab
+bac
+bad
+bae
+bba
+bbb
+bbc
+bbd
+bbe
+bca
+bcb
+bcc
+bcd
+bce
+bda
+bdb
+bdc
+bdd
+bde
+bea
+beb
+bec
+bed
+bee
+caa
+cab
+cac
+cad
+cae
+cba
+cbb
+cbc
+cbd
+cbe
+cca
+ccb
+ccc
+ccd
+cce
+cda
+cdb
+cdc
+cdd
+cde
+cea
+ceb
+cec
+ced
+cee
+daa
+dab
+dac
+dad
+dae
+dba
+dbb
+dbc
+dbd
+dbe
+dca
+dcb
+dcc
+dcd
+dce
+dda
+ddb
+ddc
+ddd
+dde
+dea
+deb
+dec
+ded
+dee
+eaa
+eab
+eac
+ead
+eae
+eba
+ebb
+ebc
+ebd
+ebe
+eca
+ecb
+ecc
+ecd
+ece
+eda
+edb
+edc
+edd
+ede
+eea
+eeb
+eec
+eed
+eee
+[/output]
+[/test]
 [/tests]
 [code-io /]
 [/code-task]
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Sum Digits
 [code-task title="Sum Digits" taskId="js-fundamentals-1-basic-syntax-sum-digits" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function sumDigits(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
-Scrieți o **funcție** căreia îi va fi dat un singur **număr**.
-Sarcina ta este să găsiți suma cifrelor sale.
+
+Create a program that receives a **number** and find the sum of its digits.
 
 # Exemplu
    |**Intrare**|**Ieșire**|
 | --- | --- |
-|`['245678']`| 32 |
-|`['97561']`| 28 |
-|`['543']`| 12 |
+| sumDigits(245678) | 32 |
+| sumDigits(97561) | 28 |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+sumDigits(245678)
+[/input]
+[output]
+32
+[/output]
+[/test]
+[test open]
+[input]
+sumDigits(97561)
+[/input]
+[output]
+28
+[/output]
+[/test]
 [test]
 [input]
-9465
+sumDigits(9465)
 [/input]
 [output]
 24
@@ -851,7 +1133,7 @@ Sarcina ta este să găsiți suma cifrelor sale.
 [/test]
 [test]
 [input]
-1
+sumDigits(1)
 [/input]
 [output]
 1
@@ -859,7 +1141,7 @@ Sarcina ta este să găsiți suma cifrelor sale.
 [/test]
 [test]
 [input]
-1566625331
+sumDigits(1566625331)
 [/input]
 [output]
 38
@@ -867,7 +1149,7 @@ Sarcina ta este să găsiți suma cifrelor sale.
 [/test]
 [test]
 [input]
-00001
+sumDigits(00001)
 [/input]
 [output]
 1
@@ -875,7 +1157,7 @@ Sarcina ta este să găsiți suma cifrelor sale.
 [/test]
 [test]
 [input]
-15477
+sumDigits(15477)
 [/input]
 [output]
 24
@@ -883,7 +1165,7 @@ Sarcina ta este să găsiți suma cifrelor sale.
 [/test]
 [test]
 [input]
-99999
+sumDigits(99999)
 [/input]
 [output]
 45
@@ -891,7 +1173,7 @@ Sarcina ta este să găsiți suma cifrelor sale.
 [/test]
 [test]
 [input]
-1558974233
+sumDigits(1558974233)
 [/input]
 [output]
 47
@@ -899,7 +1181,7 @@ Sarcina ta este să găsiți suma cifrelor sale.
 [/test]
 [test]
 [input]
-69844
+sumDigits(69844)
 [/input]
 [output]
 31
@@ -907,7 +1189,7 @@ Sarcina ta este să găsiți suma cifrelor sale.
 [/test]
 [test]
 [input]
-00000
+sumDigits(00000)
 [/input]
 [output]
 0
@@ -919,34 +1201,57 @@ Sarcina ta este să găsiți suma cifrelor sale.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Reversed Chars
 [code-task title="Reversed Chars" taskId="js-fundamentals-1-basic-syntax-reversed-chars" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function reversChars(input){
-  // Write your code here
+function reversChars(firstChar, secondChar, thirdChar){
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
-Scrieți un program care să ia **3 parametri** (caractere) și să le imprime în **ordine inversă** cu un spațiu între ele.
+Creați un program care să ia **3 parametri** (caractere) și să le imprime în **ordine inversă** cu un spațiu între ele.
 
-# Exemplu
+## Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
-|`['A', 'B','C']`| C B A |
-|`['1','L','&']`| \& L 1 |
-
+| reversChars('A', 'B','C') | C B A |
+| reversChars('1','L','\&') | \& L 1 |
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+reversChars('A', 'B','C')
+[/input]
+[output]
+C B A
+[/output]
+[/test]
+[test open]
+[input]
+reversChars('1','L','\&')
+[/input]
+[output]
+\& L 1
+[/output]
+[/test]
 [test]
 [input]
-a
-b
-c
+reversChars('a','b','c')
 [/input]
 [output]
 c b a
@@ -954,9 +1259,7 @@ c b a
 [/test]
 [test]
 [input]
-z
-z
-z
+reversChars('z','z','z')
 [/input]
 [output]
 z z z
@@ -964,9 +1267,7 @@ z z z
 [/test]
 [test]
 [input]
-\!
-\@
-\#
+reversChars('\!','\@','\#')
 [/input]
 [output]
 \# \@ \!
@@ -974,9 +1275,7 @@ z z z
 [/test]
 [test]
 [input]
-l
-K
-\#
+reversChars('l','K','\#')
 [/input]
 [output]
 \# K l
@@ -984,9 +1283,7 @@ K
 [/test]
 [test]
 [input]
-\_
-P
-\>
+reversChars('\_','P','\>')
 [/input]
 [output]
 \> P \_
@@ -994,9 +1291,7 @@ P
 [/test]
 [test]
 [input]
-A
-B
-C
+reversChars('A','B','C')
 [/input]
 [output]
 C B A
@@ -1004,9 +1299,7 @@ C B A
 [/test]
 [test]
 [input]
-1
-L
-\&
+reversChars('1','L','\&')
 [/input]
 [output]
 \& L 1
@@ -1018,22 +1311,31 @@ L
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Calculator
 [code-task title="Calculator" taskId="js-fundamentals-1-basic-syntax-Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function calculator(input){
-  // Write your code here
+function calculator(firstNumber, operator, secondNumber){
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
-Scrieți o funcție care primește **trei parametri șir:**
+Creați un program care primește **trei parametri șir:**
 
 - **număr**
 
-- **operator**: `+`, `-`, `*`, `\`, `%`
+- **operator**: \+, \-, \*, \\, \%
 
 - **un alt număr**
 
@@ -1042,17 +1344,31 @@ Imprimați **rezultatul calculului** în consola formatată la **a doua zecimal�
 # Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
-|`['5', '+','10']`| 15.00 |
-|`['25.5','-','3']`| 22.50 |
+| calculator(5, '+', 10) | 15.00 |
+| calculator(25.5, '-', 3) | 22.50 |
 
 
 [/task-description]
 [tests]
+[test open]
+[input]
+calculator(5, '\+', 10)
+[/input]
+[output]
+15.00
+[/output]
+[/test]
+[test open]
+[input]
+calculator(25.5, '\-', 3)
+[/input]
+[output]
+22.50
+[/output]
+[/test]
 [test]
 [input]
-10
-/
-2
+calculator(10, '/', 2)
 [/input]
 [output]
 5.00
@@ -1060,9 +1376,7 @@ Imprimați **rezultatul calculului** în consola formatată la **a doua zecimal�
 [/test]
 [test]
 [input]
-20
-\*
-2
+calculator(20, '\*', 2)
 [/input]
 [output]
 40.00
@@ -1070,9 +1384,7 @@ Imprimați **rezultatul calculului** în consola formatată la **a doua zecimal�
 [/test]
 [test]
 [input]
-5
-/
-2
+calculator(5, '/', 2)
 [/input]
 [output]
 2.50
@@ -1080,9 +1392,7 @@ Imprimați **rezultatul calculului** în consola formatată la **a doua zecimal�
 [/test]
 [test]
 [input]
-100
-+
-100
+calculator(100, '\+', 100)
 [/input]
 [output]
 200.00
@@ -1090,9 +1400,7 @@ Imprimați **rezultatul calculului** în consola formatată la **a doua zecimal�
 [/test]
 [test]
 [input]
-5.5
-\-
-5.5
+calculator(5.5, '\-', 5.5)
 [/input]
 [output]
 0.00
@@ -1100,9 +1408,7 @@ Imprimați **rezultatul calculului** în consola formatată la **a doua zecimal�
 [/test]
 [test]
 [input]
-0
-\+
-11.11
+calculator(0, '\+', 11.11)
 [/input]
 [output]
 11.11
@@ -1110,9 +1416,7 @@ Imprimați **rezultatul calculului** în consola formatată la **a doua zecimal�
 [/test]
 [test]
 [input]
-10
-\*
-5.5
+calculator(10, '\*', 5.5)
 [/input]
 [output]
 55.00
@@ -1121,11 +1425,5 @@ Imprimați **rezultatul calculului** în consola formatată la **a doua zecimal�
 [/tests]
 [code-io /]
 [/code-task]
-
-[/slide]
-
-[slide]
-# Rezultate Teme de Casă
-[tasks-results/]
 
 [/slide]

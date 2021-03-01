@@ -1,11 +1,6 @@
-[slide]
+[slide hideTitle]
 
 # Ce este un Număr?
-
-[vimeo-video]
-[stream language="EN" videoId="489371556/90a6f7534f" default /]
-[stream language="RO" videoId="489371556/90a6f7534f"  /]
-[/video-vimeo]
 
 Numerele în JavaScript nu au tipuri separate pentru **numerele întregi** și pentru **numerele zecimale.**
 
@@ -42,7 +37,7 @@ let nanVar = Number('not a number');
 console.log(5 + nanVar);
 ```
 
-# Parsarea Numerelor
+## Parsarea Numerelor
 
 Parsarea numerelor poate fi făcută în câteva moduri:
 
@@ -68,160 +63,65 @@ console.log(myVar + 10);
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 
+# Problem with Solution: Număr întreg sau număr cu zecimală
 
-
-# Problemă: Număr întreg sau număr cu zecimală
-
-[vimeo-video]
-[stream language="EN" videoId="489371609/3a04a5e772" default /]
-[stream language="RO" videoId="489371609/3a04a5e772"  /]
-[/video-vimeo]
-
-[code-task title="Integer or Float" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Integer or Float" taskId="fund-js-data-types-and-variables-lab-integer-or-float" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function integerOrFloat(input){
+function integerOrFloat(firstNumber, secondNumber, thirdNumber){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descrierea problemei
 Veți primi **trei numere**. 
 
 Sarcina voastră este să aflați **suma** acestora și s-o tipăriți pe consolă, folosind adunarea 
 
-`{number} - Integer or Float`
+"\{**number**\} - **Integer or Float**"
 
 
-# Exemplu
+## Exemplu
   | **Date de intrare** | **Rezultat** |
 | --- | --- |
-|`['9', '100', '1.1']`| 110.1 - Float |
-|`['100', '200', '303']`|603 - Integer|
+| integerOrFloat(9, 100, 1.1) | 110.1 - Float |
+| integerOrFloat(100, 200, 303) | 603 - Integer|
 
 [/task-description]
-[tests]
-[test]
-[input]
-9
-14156
-1231.41
-[/input]
-[output]
-15396.41 - Float
-[/output]
-[/test]
-[test]
-[input]
-456
-120
-145.41
-[/input]
-[output]
-721.41 - Float
-[/output]
-[/test]
-[test]
-[input]
-912
-54610
-451.11
-[/input]
-[output]
-55973.11 - Float
-[/output]
-[/test]
-[test]
-[input]
-56
-2120
-3203
-[/input]
-[output]
-5379 - Integer
-[/output]
-[/test]
-[test]
-[input]
-170
-2098
-483
-[/input]
-[output]
-2751 - Integer
-[/output]
-[/test]
-[test]
-[input]
-10990
-78
-483
-[/input]
-[output]
-11551 - Integer
-[/output]
-[/test]
-[/tests]
 [code-io /]
-[/code-task]
-
-[/slide]
-
-[slide]
-
-
-
-# Soluția problemei: Număr întreg sau cu zecimală
-
-[vimeo-video]
-[stream language="EN" videoId="489371615/50cc2d6699" default /]
-[stream language="RO" videoId="489371615/50cc2d6699"  /]
-[/video-vimeo]
-
-[code-task title="Integer or Float" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function integerOrFloat(input){
- let firstNumber = Number(input[0]);
- let secondNumber = Number(input[1]);
- let thirdNumber = Number(input[2]);
-
- let sum = firstNumber + secondNumber + thirdNumber;
-    if (sum % 1 === 0) {
-        console.log(`${sum} - Integer`);
-    }
-    else{
-        console.log(`${sum} - Float`);
-    }
-}
-```
-[/code-editor]
-[task-description]
-# Descrierea problemei
-Veți primi **trei numere**. 
-
-Sarcina voastră este să găsiți **suma** acestora și să o tipăriți pe consolă folosind adunarea 
-
-`{number} - Integer or Float`
-
-
-# Exemplu
-  | **Date de intrare** | **Rezultat** |
-| --- | --- |
-|`['9', '100', '1.1']`| 110.1 - Float |
-|`['100', '200', '303']`|603 - Integer|
-
-[/task-description]
 [tests]
+[test open]
+[input]
+integerOrFloat(9, 100, 1.1)
+[/input]
+[output]
+110.1 - Float
+[/output]
+[/test]
+[test open]
+[input]
+integerOrFloat(100, 200, 303)
+[/input]
+[output]
+603 - Integer
+[/output]
+[/test]
 [test]
 [input]
-9
-14156
-1231.41
+integerOrFloat(9, 14156, 1231.41)
 [/input]
 [output]
 15396.41 - Float
@@ -229,9 +129,7 @@ Sarcina voastră este să găsiți **suma** acestora și să o tipăriți pe con
 [/test]
 [test]
 [input]
-456
-120
-145.41
+integerOrFloat(456, 120, 145.41)
 [/input]
 [output]
 721.41 - Float
@@ -239,9 +137,7 @@ Sarcina voastră este să găsiți **suma** acestora și să o tipăriți pe con
 [/test]
 [test]
 [input]
-912
-54610
-451.11
+integerOrFloat(912, 54610, 451.11)
 [/input]
 [output]
 55973.11 - Float
@@ -249,9 +145,7 @@ Sarcina voastră este să găsiți **suma** acestora și să o tipăriți pe con
 [/test]
 [test]
 [input]
-56
-2120
-3203
+integerOrFloat(56, 2120, 3203)
 [/input]
 [output]
 5379 - Integer
@@ -259,9 +153,7 @@ Sarcina voastră este să găsiți **suma** acestora și să o tipăriți pe con
 [/test]
 [test]
 [input]
-170
-2098
-483
+integerOrFloat(170, 2098, 483)
 [/input]
 [output]
 2751 - Integer
@@ -269,9 +161,7 @@ Sarcina voastră este să găsiți **suma** acestora și să o tipăriți pe con
 [/test]
 [test]
 [input]
-10990
-78
-483
+integerOrFloat(10990, 78, 483)
 [/input]
 [output]
 11551 - Integer

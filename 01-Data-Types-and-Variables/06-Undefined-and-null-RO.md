@@ -1,13 +1,8 @@
 # Undefined și Null
 
-[slide]
-
+[slide hideTitle]
 # Undefined
 
-[vimeo-video]
-[stream language="EN" videoId="489371807/542891a72e" default /]
-[stream language="RO" videoId="489371807/542891a72e"  /]
-[/video-vimeo]
 
 [image assetsSrc="Undefined-Null.png" /]
 
@@ -33,14 +28,9 @@ console.log(car);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Null
-
-[vimeo-video]
-[stream language="EN" videoId="489371851/d2a4d15a1e" default /]
-[stream language="RO" videoId="489371851/d2a4d15a1e"  /]
-[/video-vimeo]
 
 Nul este un tip de obiect, care poate fi utilizat pentru orice variabilă care deține un obiect pe care nu vrem să-l definim.
 
@@ -50,8 +40,8 @@ De exemplu, când avem funcția de a **returna un obiect** sau o funcție care t
 
 ``` js live
 let person = {
-  firstName: "John",
-  lastName: "Doe",
+  firstName: 'John',
+  lastName: 'Doe',
   age: 50
 };
 
@@ -62,14 +52,9 @@ console.log(typeof(person));
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Null and Undefined
-
-[vimeo-video]
-[stream language="EN" videoId="489371864/d1eeb434fb" default /]
-[stream language="RO" videoId="489371864/d1eeb434fb"  /]
-[/video-vimeo]
 
 **Nul** este o valoare pe care o setăm și știm că nu este nimic în interior, adică setăm valoarea nulă în mod explicit.
 

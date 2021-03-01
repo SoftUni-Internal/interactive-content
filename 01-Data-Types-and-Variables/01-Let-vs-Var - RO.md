@@ -1,14 +1,9 @@
 # Local vs. Global
 
-[slide]
-
+[slide hideTitle]
 
 # Var și Let
 
-[vimeo-video]
-[stream language="EN" videoId="489371278/6878e454cb" default /]
-[stream language="RO" videoId="489371278/6878e454cb"  /]
-[/video-vimeo]
 
 Tipurile diferite de date au **mărimi** diferite în memoria calculatorului.
 
@@ -26,7 +21,7 @@ Un literal în programare înseamnă să scriem o variabilă cu o valoare în a�
 
 [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) sau ES6 a prezentat două noi moduri de a crea variabile - `let` și `const`. Înainte de acestea, exista și era folosită doar `var`.
 
-`Var` este o vairabilă care operează într-un scop așa-numit funcțional. 
+`var` este o vairabilă care operează într-un scop așa-numit funcțional. 
 
 ``` JavaScript
 {
@@ -73,7 +68,7 @@ Vă încurajăm să folosiți `let` când **declarați variabile**, pentru că a
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Domeniul variabilei  
 
@@ -88,12 +83,12 @@ Domeniul înseamnă **viața** variabilei sau locul unde variabila este **vizibi
 
 Avem **patru tipuri de domenii**, și le vom analiza pe fiecare mai în detaliu în cursul avansat de JavaScript.
 
-# Domeniul global
+## Domeniul global
 
 - toate variabilele pe care le-am definit la nivel de top. Acestea sunt, de obicei, funcțiile pe care le folosim.
 
 ``` JavaScript
-var carName = "Volvo";
+var carName = 'Volvo';
   // Code here can use carName
 function myFunction() {
   // Code here can also use carName
@@ -102,20 +97,20 @@ function myFunction() {
 
 În acest exemplu, definim variabila `carName` în domeniul global, în afara funcției. Drept urmare, putem s-o accesăm în toate funcțiile. .
 
-# Domeniul funcțional
+## Domeniul funcțional
 
 Domeniul funcțional este **corpul funcției**, și fiecare variabilă definită în funcție există doar în corpul acelei funcții. 
 
 ``` JavaScript
 function myFunction() {
-   var carName = "Volvo";
+   var carName = 'Volvo';
    // Only here, the code can use carName
  }
  ```
 
-# Domeniul bloc
+## Domeniul bloc
 
-Avem, de asemenea, al treilea tip de domeniu – **Block Scope** (**domeniul bloc**). Acesta reprezintă orice corp definit între acolade `{}`.
+Avem, de asemenea, al treilea tip de domeniu - **Block Scope** (**domeniul bloc**). Acesta reprezintă orice corp definit între acolade `{}`.
 
 ``` JavaScript
 {
@@ -129,20 +124,16 @@ Din cursul de bază în domeniul programării știm că putem încorpora o const
 
 Deci putem să punem un bloc de cod într-un alt bloc de cod. 
 
-# Domeniul de aplicare al obiectului
+## Domeniul de aplicare al obiectului
 
 Al patrulea tip de domeniu este **domeniul obiectului**, care este înrudit cu **implementarea funcțiilor**. Vom vorbi despre acest subiect mai în detaliu în cursul avansat.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Numirea variabilelor
 
-[vimeo-video]
-[stream language="EN" videoId="489371334/07bcadb0ba" default /]
-[stream language="RO" videoId="489371334/07bcadb0ba"  /]
-[/video-vimeo]
 
 Când creăm o variabilă, folosim `cammelCase`, ceea ce înseamnă că variabila începe cu o **literă mică** și fiecare cuvânt următor începe cu o **literă mare**.
 

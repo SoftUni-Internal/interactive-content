@@ -1,20 +1,15 @@
 # Valori booleene
 
-[slide]
+[slide hideTitle]
 
 # Ce este o valoare booleană?
-
-[vimeo-video]
-[stream language="EN" videoId="489371680/3568705290" default /]
-[stream language="RO" videoId="489371680/3568705290"  /]
-[/video-vimeo]
 
 
 Valorile booleene poartă numele lui [George Boole](https://en.wikipedia.org/wiki/George_Boole), un matematician englez.
 
 Valorile booleene reprezintă unele **valori logice**.
 
-Ele pot avea doar două valori `​​true` sau `false`.
+Ele pot avea doar două valori "**true**" sau "**false**".
 
 Putem da această valoare ca **literala** sau o putem obține din rezultatul unei **expresii date**.
 
@@ -23,20 +18,14 @@ let myBool = 10 > 9;
 console.log(myBool);
 ```
 
-Comparațiile booleene sunt cel mai adesea plasate în construcția `if`, si putem returna și o valoare booleană ca **rezultat dintr-o funcție.**
+Comparațiile booleene sunt cel mai adesea plasate în construcția "**if**", si putem returna și o valoare booleană ca **rezultat dintr-o funcție.**
 
-**Extrem de rar** scriem `true` sau `false` în mod explicit.
+**Extrem de rar** scriem "**true**" sau "**false**" în mod explicit.
 
 [/slide]
-
-[slide]
+[slide hideTitle]
 
 # Comparații și condiții
-
-[vimeo-video]
-[stream language="EN" videoId="489371693/bb15d255c4" default /]
-[stream language="RO" videoId="489371693/bb15d255c4"  /]
-[/video-vimeo]
 
 Exemple de operatori de comparație:
 
@@ -51,9 +40,9 @@ Exemple de operatori de comparație:
 | `>=` | mai mare sau egal cu (fără tip) | `if (6 >= 6)` |
 | `<=` | mai mic sau egal cu (fără tip) | `if(6 <= 6)` |
 
-# Exemple booleene:
+## Exemple booleene:
 
-Totul cu o "valoare" este `true`:
+Totul cu o "valoare" este "**true**":
 
 ``` js live
 let number=1;
@@ -63,7 +52,7 @@ if (number) {
 }
 ```
 
-- Totul fără o "valoare" este `false`
+- Totul fără o "valoare" este "**false**"
 
 ``` js live
 let number;
@@ -77,17 +66,13 @@ if (number) {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # True and False
 
-[vimeo-video]
-[stream language="EN" videoId="489371697/c3dbb010c9" default /]
-[stream language="RO" videoId="489371697/c3dbb010c9"  /]
-[/video-vimeo]
 
-În plus față de `true` și `false`, JavaScript are `truthy` și `falsy` (uneori scris `falsey`).
+În plus față de "**true**" și "**false**", JavaScript are "**truthy**" și "**false**" (uneori scris "**falsey**").
 
-Acestea sunt valori care nu sunt**'adevărate' sau 'false', dar când le transformăm într-o valoare booleană ele dau `true` sau `false`.
+Acestea sunt valori care nu sunt**'adevărate' sau 'false', dar când le transformăm într-o valoare booleană ele dau "**true**" sau "**false**".
 
 În JavaScript este **limbaj slab tastat** și nu avem tipuri de variabile.
 
@@ -113,7 +98,7 @@ Dacă folosim `===` interpretul **nu convertește numărul într-un șir**, deci
 console.log(5 === '5');
 ```
 
-În ceea ce privește valorile `truthy` și `falsy`, de exemplu în construcția `if` putem compara cu diferite tipuri de date.
+În ceea ce privește valorile "**truthy**" și "**falsey**", de exemplu în construcția "**if**" putem compara cu diferite tipuri de date.
 
 ``` js live
 if (5 == true) {
@@ -134,17 +119,17 @@ if (1 == true) {
 }
 ```
 
-Este `same`, deoarece interpretul le vede ca `1 == true` și transformă acest lucru într-o **valoare booleană.**
+Este "**same**", deoarece interpretul le vede ca `1 == true` și transformă acest lucru într-o **valoare booleană.**
 
-Valorile `0` și` 1` devin valoarea booleană `0 false`,` 1 true`.
+Valorile **0** și **1** devin valoarea booleană **0 false**, **1 true**.
 
-Celelalte valori numerice devin valori booleene și sunt `false`.
+Celelalte valori numerice devin valori booleene și sunt "**false**".
 
-În javascript avem opt valori despre care se presupune că sunt `falsy`:
+În javascript avem opt valori despre care se presupune că sunt "**falsey**":
 
-| Valoare | Descriere | 
+| **Valoare** | **Descriere** | 
 | :---:       |    :----:   |   
-| `false` | Cuvântul cheie `false` | 
+| "**false**" | Cuvântul cheie "**false**" | 
 | `0` | Numărul zero | 
 | `-0`| Numărul zero negativ | 
 | `0n` | BigInt, când este utilizat ca boolean | 
@@ -153,7 +138,7 @@ Celelalte valori numerice devin valori booleene și sunt `false`.
 | `undefined` | `undefined` - valoarea primitivă | 
 | `NaN` |  	`NaN` - nu un număr | 
 
-Toate celelalte valori sunt `true`, de exemplu o matrice goală `[]` și un obiect gol `{}` sunt adevărate.
+Toate celelalte valori sunt "**true**", de exemplu o matrice goală `[]` și un obiect gol `{}` sunt adevărate.
 
 Cu toate acestea, într-o buclă, dacă o construcție prezintă întotdeauna valoarea booleană, ea nu va trimite niciodată altceva decât o valoare booleană.
 
@@ -161,55 +146,74 @@ Este întotdeauna mai bine să fii **explicit** pentru a nu fi ambiguu.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
-# Problem: Amazing Numbers
+# Problem with Solution: Amazing Numbers
 
-[vimeo-video]
-[stream language="EN" videoId="489371747/54fbdf1eb2" default /]
-[stream language="RO" videoId="489371747/54fbdf1eb2"  /]
-[/video-vimeo]
 
-[code-task title="Amazing Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Amazing Numbers" taskId="fund-js-data-types-and-variables-lab-amazing-numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
+
 ```
 function amazingNumbers(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 
-Scrieți o funcție care ca intrare va primi un **număr.**
+Creați un program care ca intrare va primi un **număr.**
  
 Verificați și tipăriți dacă numărul este uimitor sau nu, în următorul format:
 
-`{number} Amazing? {result}`
+"\{**number**\} **Amazing?** \{**result**\}"
 
 Un număr uimitor este unul care include **cifra 9** în suma cifrelor sale.
 
-Exemple pentru numere uimitoare sunt: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3 + 4 + 7 + 2 = 29)`
+Exemple pentru numere uimitoare sunt:
 
-# Exemplu
+- 1233 (1 + 2 + 3 + 3 = 9)
+
+- 583472 (5 + 8 + 3 + 4 + 7 + 2 = 29)
+
+## Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
-|`1233`| 1233 Amazing? True |
-|`999`|999 Amazing? False|
+| amazingNumbers(1233) | 1233 Amazing? True |
+| amazingNumbers(999) | 999 Amazing? False|
 
 [/task-description]
+[code-io /]
 [tests]
-[test]
+[test open]
 [input]
-5454155
+amazingNumbers(1233)
 [/input]
 [output]
-5454155 Amazing? True
+1233 Amazing? True
+[/output]
+[/test]
+[test open]
+[input]
+amazingNumbers(999)
+[/input]
+[output]
+999 Amazing? False
 [/output]
 [/test]
 [test]
 [input]
-144
+amazingNumbers(144)
 [/input]
 [output]
 144 Amazing? True
@@ -217,7 +221,7 @@ Exemple pentru numere uimitoare sunt: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8
 [/test]
 [test]
 [input]
-55555554
+amazingNumbers(55555554)
 [/input]
 [output]
 55555554 Amazing? True
@@ -225,7 +229,7 @@ Exemple pentru numere uimitoare sunt: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8
 [/test]
 [test]
 [input]
-5554
+amazingNumbers(5554)
 [/input]
 [output]
 5554 Amazing? True
@@ -233,7 +237,7 @@ Exemple pentru numere uimitoare sunt: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8
 [/test]
 [test]
 [input]
-45645
+amazingNumbers(45645)
 [/input]
 [output]
 45645 Amazing? False
@@ -241,7 +245,7 @@ Exemple pentru numere uimitoare sunt: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8
 [/test]
 [test]
 [input]
-3671
+amazingNumbers(3671)
 [/input]
 [output]
 3671 Amazing? False
@@ -249,7 +253,7 @@ Exemple pentru numere uimitoare sunt: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8
 [/test]
 [test]
 [input]
-1231
+amazingNumbers(1231)
 [/input]
 [output]
 1231 Amazing? False
@@ -257,7 +261,7 @@ Exemple pentru numere uimitoare sunt: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8
 [/test]
 [test]
 [input]
-6123
+amazingNumbers(6123)
 [/input]
 [output]
 6123 Amazing? False
@@ -265,7 +269,7 @@ Exemple pentru numere uimitoare sunt: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8
 [/test]
 [test]
 [input]
-65451
+amazingNumbers(65451)
 [/input]
 [output]
 65451 Amazing? False
@@ -277,142 +281,9 @@ Exemple pentru numere uimitoare sunt: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8
 
 [/slide]
 
-[slide]
-
-
-
-# Solution: Amazing Numbers
-[vimeo-video]
-[stream language="EN" videoId="489371745/0d75d93049" default /]
-[stream language="RO" videoId="489371745/0d75d93049"  /]
-[/video-vimeo]
-
-
-[code-task title="Amazing Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function amazingNumbers(input) {
-  let num = input.toString();
-  let sum = 0;
-  for (let j = 0; j <= num.length - 1; j++) {
-    sum += Number(num[j]);
-  }
-  if (sum.toString().includes('9')) {
-    console.log(`${num} Amazing? True`);
-  } else {
-    console.log(`${num} Amazing? False`);
-  }
-}
-
-```
-[/code-editor]
-[task-description]
-# Descriere
-
-Scrieți o funcție care ca intrare va primi un **număr.**
- 
-Verificați și tipăriți dacă este uimitor sau nu în următorul format:
-
-`{number} Amazing? {result}`
-
-Un număr uimitor este unul care include **cifra 9** în suma cifrelor sale.
-
-Exemple pentru numere uimitoare sunt: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3 + 4 + 7 + 2 = 29)`
-
-# Exemplu
-|**Intrare**|**Ieșire**|
-| --- | --- |
-|`1233`| 1233 Amazing? True |
-|`999`|999 Amazing? False|
-
-[/task-description]
-[tests]
-[test]
-[input]
-5454155
-[/input]
-[output]
-5454155 Amazing? True
-[/output]
-[/test]
-[test]
-[input]
-144
-[/input]
-[output]
-144 Amazing? True
-[/output]
-[/test]
-[test]
-[input]
-55555554
-[/input]
-[output]
-55555554 Amazing? True
-[/output]
-[/test]
-[test]
-[input]
-5554
-[/input]
-[output]
-5554 Amazing? True
-[/output]
-[/test]
-[test]
-[input]
-45645
-[/input]
-[output]
-45645 Amazing? False
-[/output]
-[/test]
-[test]
-[input]
-3671
-[/input]
-[output]
-3671 Amazing? False
-[/output]
-[/test]
-[test]
-[input]
-1231
-[/input]
-[output]
-1231 Amazing? False
-[/output]
-[/test]
-[test]
-[input]
-6123
-[/input]
-[output]
-6123 Amazing? False
-[/output]
-[/test]
-[test]
-[input]
-65451
-[/input]
-[output]
-65451 Amazing? False
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide]
+[slide hideTitle]
 
 # The Typeof operator
-
-[vimeo-video]
-[stream language="EN" videoId="489371799/fe15836811" default /]
-[stream language="RO" videoId="489371799/fe15836811"  /]
-[/video-vimeo]
 
 JavaScript în sine oferă un operator numit `typeof` pentru tot ceea ce funcționează într-un mod simplu.
 
@@ -425,12 +296,12 @@ De exemplu, pentru matrice și `null`, este returnat un `obiect` . Pentru `NaN` 
 Exemple:
 
 ``` js live
-console.log(typeof "");
-console.log(typeof "John");
-console.log(typeof "John Doe");
+console.log(typeof '');
+console.log(typeof 'John');
+console.log(typeof 'John Doe');
 console.log(typeof 0);
 console.log(typeof true);
-console.log(typeof {Name: "Peter", Age: 3})
+console.log(typeof {Name: 'Peter', Age: 3})
 ```
 
 Putem folosi typeof în construcția `if`:
