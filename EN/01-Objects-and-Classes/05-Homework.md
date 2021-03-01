@@ -130,10 +130,6 @@ The haunting of hill house - better content2:  Shirley Jackson
 [slide hideTitle]
 # Problem: Opinion Poll
 
-[vimeo-video]
-[stream language="EN" videoId="421821499" default /]
-[stream language="RO" videoId="433935894"  /]
-[/video-vimeo]
 
 [code-task title="Opinion Poll" taskId="java-fund-2-Objects-and-Classes-Opinion Poll" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [task-description]
