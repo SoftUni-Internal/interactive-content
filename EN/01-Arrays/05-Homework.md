@@ -23,7 +23,7 @@ function adapter(input, code) {
 # Description
 Create a program that receives an **array of strings**, parses them to **numbers**, and sums only the even numbers.
 
-# Example
+## Examples
 | **Input** | **Output** |
 | --- | --- |
 | sumEvenNumbers(['1', '2', '3', '4', '5', '6']) | 12 |
@@ -134,7 +134,7 @@ function adapter(input, code) {
 
 Create a program that calculates the **difference** between the **sum of the even** and the **sum of the odd numbers** in an array.
 
-# Example
+# Examples
   | **Input** | **Output** |**Comments** |
 | :--- | :---: | :---:|
 | evenOdd([1, 2, 3, 4, 5, 6]) | 3 | 2 + 4 + 6 = 12, 1 + 3 + 5 = 9, 12 - 9 = 3|
@@ -269,7 +269,7 @@ function adapter(input, code) {
 
 Create a program that receives **an array of numbers** and condenses them by **summing** adjacent couples of elements until a **single number** is obtained.
 
-## Example
+## Examples
 
 For example, if we have 3 elements \[**2, 10, 3**\], we sum the first two and the second two elements and obtain \{**2+10, 10+3**\} = \{**12, 13**\}, then we sum again all adjacent elements and obtain \{**12+13**\} = \{**25**\}.
 
@@ -405,13 +405,14 @@ Create a program, which changes the **value** of odd and even numbers in an arra
 
 On the first line print the **newly modified array**, on the second line print the sum of numbers from the **original** array, on the third line print the sum of numbers from the **modified array.**
 
-## Example
+## Example One
   | **Input** | **Output** |
 | --- | --- |
 | addOrSubtract([5, 15, 23, 56, 35]) | [ 5, 14, 21, 59, 31 ] |
 || 134|
 || 130 |
 
+## Example Two
 | **Input** | **Output** |
 | --- | --- |
 | addOrSubtract([-5, 11, 3, 0, 2]) | [ 5, 14, 21, 59, 31 ] |
@@ -538,7 +539,7 @@ Create a program that receives an **array** and the **number of rotations** you 
 
 Print the resulting array elements separated by a single space.
 
-## Example
+## Examples
 | **Input** | **Output** |
 | --- | --- |
 | arrayRotation([51, 47, 32, 61, 21], 2) | 32 61 21 51 47 |
@@ -658,18 +659,18 @@ Create a program, which prints all **unique** pairs are **an array of integers**
 
 &nbsp;
 
-# Example
+## Example One
 | **Input** | **Output** |
 | --- | --- |
 | magicSum([1, 7, 6, 2, 19, 23], 8) | 1 7 |
 || 6 2 |
-
+## Example Two
 | **Input** | **Output** |
 | --- | --- |
 | magicSum([14, 20, 60, 13, 7, 19, 8], 27) | 14 13 |
 ||20 7 |
 ||19 8 |
-
+## Example Three
 | **Input** | **Output** |
 | --- | --- |
 | magicSum([1, 2, 3, 4, 5, 6], 6) | 1 5 |

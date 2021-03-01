@@ -126,7 +126,7 @@ Create a program that receives an **array of numbers** as an input.
 
 Print out the sum of the **first** and **last** element of that array. 
 
-# Example
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | sum([20, 30, 40]) | 60 |
@@ -260,7 +260,7 @@ Create a program that receives a **number** and prints out the corresponding nam
 
 If the number is NOT a valid weekday, print "**Invalid day!**".
 
-# Example
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | days(3) | Wednesday |
