@@ -28,7 +28,7 @@ function adapter(input, code) {
 # Description
 Create a program, which prints the following information about a building:
 
-* You receive two numbers: the number of floors and the room every floor has
+* You will receive two numbers: the number of floors and how many rooms each floor has
 * The building can hold: **apartments (odd numbered floors)**, **offices (even numbered floors)** and **(on the last floor) Large Apartments** 
 * Apartments are indexed with: **A**\{**buildingNum**\}\{**apartmentNum**\}
 * Offices are indexed with: **O**\{**floorNum**\}\{**officeNum**\}
@@ -193,11 +193,11 @@ function adapter(input, code) {
 # Description
 Create a program, which generates custom passwords:
 
-- You receive an number **n** as input
+- You will receive a number **n** as input
 - Generate all custom passwords, which meet the following requirements:
-  - The **first** part is an **even** number and should not be greater than **n**
-  - The **second** part is an **odd** number and should not be greater than **n**
-  - The **last part** is the **product** of the first two
+  - The **first** part is an **even** number and it should not be greater than **n**
+  - The **second** part is an **odd** number and it should not be greater than **n**
+  - The **last part** is the **result** of the first two
 
 # Example
 | **Input** | **Output** |
@@ -293,7 +293,7 @@ function adapter(input, code) {
 
 Create a program, which finds all the magic numbers based on the following conditions:
 
-* You receive a number **n** from the console
+* You will receive a number **n** from the console
 * Find all **3-digit numbers** for which the product of the multiplication of their separate digits is equal to **n** 
 
 # Example
@@ -441,9 +441,9 @@ function adapter(input, code) {
 # Description
 Create a program, which saves money, needed to visit a given destination:
 
-* You receive a **destination** and a **required budget** to visit it 
-* Continues processing numbers - amounts of money, until it is **enough** to take the trip 
-* If we receive the command **End** the program ends
+* You will receive a **destination** and a **required budget** needed to visit it 
+* You should continue processing numbers - amounts of money, until you have **enough** money to go on the trip 
+* If you receive the command **End** the program ends
 
 # Example
 | **Input** | **Output** |
@@ -595,7 +595,7 @@ function adapter(input, code) {
 # Description
 Create a program, which prints all the prime numbers in a given range:
 
-* You receive **two numbers** from the console: the **beginning** and the **end** of the range
+* You will receive **two numbers** from the console: the **start** and the **end** of the range
 * Print the **prime** numbers in that **range** to the console
 
 # Example
@@ -697,12 +697,12 @@ function adapter(input, code) {
 # Description
 Create a program, which generates unique PIN codes:
 
-- You receive 3 digits **n1, n2 and n3**
-- Generate **unique 3-digit PIN Codes**, which meet the following **conditions**:
+- You will receive 3 digits **n1, n2 and n3**
+- Generate **unique 3-digit PIN Codes**, which meet the following **criteria**:
   - The **first** digit should not be greater than n1
   - The **second** digit should not be greater than n2
   - The **third** digit should not be greater than n3
-  - The **first** and the **third** digit must be even
+  - The **first** and the **third** digits must be even
   - The second digit must be a **prime number** in the range \[2…7\]
 
 # Example
@@ -889,7 +889,7 @@ function adapter(input, code) {
 # Description
 Create a program, which prints **letter combinations** and the **number** of generated combinations:
 
-* The first two letters you will receive represent the range you will work with
+* The first two letters you will receive represent the range you will have to work with
 
 * Ignore the third letter and do not print combinations with it
 
@@ -994,11 +994,11 @@ function adapter(input, code) {
 # Description
 Create a program, which generates all **4 digit numbers** with digits less than a given number: 
 
-- You will receive a number **n** as input:
+- You will receive a number **n** as an input:
 
 - Print the combinations which meet the following requirements:
   - When you split the number into two pairs and add the first digit to the second one of each pair - the result equals **n**
-  - When you add the first two, the result is divisible by n without remainder
+  - When you add the first two, the result should be divisible by **n** without a remainder
 
 # Example
 | **Input** | **Output** |
