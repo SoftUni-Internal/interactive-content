@@ -60,7 +60,6 @@ If we try to use another class which is **not a subclass of Number**, the compil
 ```
 
 ```
-[/code-editor]
 [task-description]
 ## Description
 Create a class `Scale<T>` that holds two elements - **left** and **right**. 
@@ -280,7 +279,6 @@ Test Passed!
 ```
 
 ```
-[/code-editor]
 [task-description]
 ## Description
 Create a class `ListUtils` that you will use through several other exercises.

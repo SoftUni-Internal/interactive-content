@@ -75,18 +75,8 @@ public class Car {
 [stream language="RO" videoId="485444110/761b551138"  /]
 [/video-vimeo]
 
-[code-task title="Bank Account" taskId="oop-basics-java-defining-classes-lab-Bank-Account" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Bank Account" taskId="oop-basics-java-defining-classes-lab-Bank-Account" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 Create a `BankAccount` class.
@@ -95,8 +85,8 @@ The class should have private fields for:
 - `id`: int (Starts from 1 and increments for every new account)
 - `balance`: double
 - `interestRate`: double 
-    - Shared for all accounts
-    - Default value: 0.02
+    - shared for all accounts
+    - default value: 0.02
 
 The class should also have public methods for:
 - `setInterestRate(double interest): void (static)`
@@ -104,11 +94,11 @@ The class should also have public methods for:
 - `deposit(double amount): void`
 
 Create a test client supporting the following commands:
-- Create
-- Deposit {Id} {Amount}
-- SetInterest {Interest}
-- GetInterest {ID} {Years}
-- End
+- "Create"
+- "Deposit {Id} {Amount}"
+- "SetInterest {Interest}"
+- "GetInterest {ID} {Years}"
+- "End"
 
 # Examples
 
@@ -138,7 +128,7 @@ Create a test client supporting the following commands:
 | End |  |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
