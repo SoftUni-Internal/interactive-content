@@ -201,14 +201,14 @@ My father is born on the **30-Dec-1994**.
 
 | **Input** | **Output** |
 | --- | --- |
-| matchDates('13/Jul/1928, 10-Nov-1934 , 01/Jan-1951, 25.Dec.1937, 23/09/1973, 1/Feb/2016') | Day\: 13\, Month\: Jul\, Year\: 1928 |
+| '13/Jul/1928, 10-Nov-1934 , 01/Jan-1951, 25.Dec.1937, 23/09/1973, 1/Feb/2016'| Day\: 13\, Month\: Jul\, Year\: 1928 |
 | | Day\: 10\, Month\: Nov\, Year\: 1934 |
 | | Day\: 25\, Month\: Dec\, Year\: 1937 |
 
 ## Example Two
 | **Input** | **Output** |
 | --- | --- |
-| matchDates('27/Mar/2000, 22-March-20050') | Day\: 27\, Month\: Mar\, Year\: 2000 |
+| '27/Mar/2000, 22-March-20050' | Day\: 27\, Month\: Mar\, Year\: 2000 |
 
 [/slide]
 
@@ -247,7 +247,7 @@ An email consists of: username **@** domain name.
 
 | **Input** | **Output** |
 | --- | --- |
-| emailValidator('valid@email.com') | Valid |
-| emailValidator('invalid@emai1.com') | Invalid |
+| 'valid@email.com' | Valid |
+| 'invalid@emai1.com'| Invalid |
 
 [/slide]

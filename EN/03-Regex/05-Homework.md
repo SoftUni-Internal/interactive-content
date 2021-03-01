@@ -268,101 +268,90 @@ And on the last line, print the following:
 
 
 [/task-description]
+[code-io /]
 [tests]
 [test open]
 [input]
-furniture(['\>\>Sofa\<\<312\.23\!3', '\>\>TV\<\<300\!5', '\>Invalid\<\<\!5', 'Purchase'])
+furniture(['\>\>Sofa\<\<312.23!3', '\>\>TV\<\<300!5', '\>Invalid\<\<!5', 'Purchase'])
 [/input]
 [output]
+Bought furniture:
 Sofa
 TV
-Total money spent\: 2436\.69
+Total money spend: 2436.69
 [/output]
 [/test]
 [test open]
 [input]
-furniture(['\>\>Chair\<\<34.44\!1', '\>\>Table\<44\.44\!2', 'Purchase'])
+furniture(['\>\>Chair\<\<34.44\!1', '\>\>Table\<44.44!2', 'Purchase'])
 [/input]
 [output]
 Chair
-Total money spent\: 34\.44 
+Total money spent\: 34\.44
 [/output]
 [/test]
 [test]
 [input]
-furniture(['\>\>Sofa\<\<312\.23\!3', '\>\>TV\<\<300\!5', '\>Invalid\<\<\!5', 'Purchase'])
+furniture(['\>\>Televizor\<\<312.23!3', '\>\>Monitor\<\<300!5', '\>\>Invalid\<\<\<\<!5', '\>\>Sink\<\<220!10', '\>\>\>\>\>\>Invalid\<\<!5', 'Purchase'])
 [/input]
 [output]
-Bought furniture\:
-Sofa
-TV
-Total money spent\: 2436\.69
-[/output]
-[/test]
-[test]
-[input]
-furniture(['\>\>Televizor\<\<312\.23\!3', '\>\>Monitor\<\<300\!5', '\>\>Invalid\<\<\<\<\!5', '\>\>Sink\<\<220\!10', '\>\>\>\>\>\>Invalid\<\<\!5', 'Purchase'])
-[/input]
-[output]
-Bought furniture\:
+Bought furniture:
 Televizor
 Monitor
 Sink
-Total money spent\: 4636\.69
+Total money spend: 4636.69
 [/output]
 [/test]
 [test]
 [input]
-furniture(['\>Invalid\<\<\!5', '\>Invalid\<\<\!5', '\>Invalid\<\<\!5', 'Purchase'])
+furniture(['\>Invalid\<\<!5', '\>Invalid\<\<!5', '\>Invalid\<\<!5', 'Purchase'])
 [/input]
 [output]
-Bought furniture\:
-Total money spent\: 0\.00
+Bought furniture:
+Total money spend: 0.00
 [/output]
 [/test]
 [test]
 [input]
-furniture(['\>\>Sofa\<\<316\.12\!10', '\>\>Couch\<\<31\!12', '\>\>Table\<\<31\!12', '\>Masichka\<\<5', 'Purchase'])
+furniture(['\>\>Sofa\<\<316.12!10', '\>\>Couch\<\<31!12', '\>\>Table\<\<31!12', '\>Masichka\<\<5', 'Purchase'])
 [/input]
 [output]
-Bought furniture\:
+Bought furniture:
 Sofa
 Couch
 Table
-Total money spent\: 3905\.20
+Total money spend: 3905.20
 [/output]
 [/test]
 [test]
 [input]
-furniture(['\>\>Sofa\<\<312\.23\!3\.66', '\>\>Sofa\<\<312\.23\!3\.66', '\>\>Sofa\<\<312\.23\!3\.66', '\>\>Sofa\<\<312\.23\!3\.66', '\>\>Sofa\<\<312\.23\!3\.66', 'Purchase'])
+furniture(['\>\>Sofa\<\<312.23!3.66', '\>\>Sofa\<\<312.23!3.66', '\>\>Sofa\<\<312.23!3.66', '\>\>Sofa\<\<312.23!3.66', '\>\>Sofa\<\<312.23!3.66', 'Purchase'])
 [/input]
 [output]
-Bought furniture\:
+Bought furniture:
 Sofa
 Sofa
 Sofa
 Sofa
 Sofa
-Total money spent\: 4683\.45
+Total money spend: 4683.45
 [/output]
 [/test]
 [test]
 [input]
-furniture(['\>\>Laptop\<\<312\.2323\!3', '\>\>TV\<\<300\.21314\!5', '\>Invalid\<\<\!5', '\>\>TV\<\<300\.21314\!20', '\>\>Invalid\<\!5', '\>\>TV\<\<30\.21314\!5', '\>\>Invalid\<\<\!\!5', 'Purchase'])
+furniture(['\>\>Laptop\<\<312.2323!3', '\>\>TV\<\<300.21314!5', '\>Invalid\<\<!5', '\>\>TV\<\<300.21314!20', '\>\>Invalid\<!5', '\>\>TV\<\<30.21314!5', '\>\>Invalid\<\<!!5', 'Purchase'])
 [/input]
 [output]
-Bought furniture\:
+Bought furniture:
 Laptop
 TV
 TV
 TV
-Total money spent\: 8593\.09
+Total money spend: 8593.09
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
