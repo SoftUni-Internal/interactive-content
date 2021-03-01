@@ -44,16 +44,27 @@ Imprimați o linie pe consolă:
 Rezultatul trebuie formatat la două cifre după punctul zecimal.
 
 ## Exemplu
-|**Intrare**|**Ieșire**|**Comentarii**|
-| --- | --- | --- |
-| 10 | You bought all the series and left with 0.50$ | Primești buget - 10 $ și număr de serii - 3. |
-| 3 | | Prima serie este Thrones cu prețul de 5 $, care are 50% reducere din prețul 5 - 50% = 2,50 $. |
-| Thrones | | A doua serie este Riverdale, care nu are reducere la preț. |
-| 5 | | A treia serie, de asemenea, nu are reducere. |
-| Riverdale | | Prețul seriei este de 2,50 + 5 + 2 = 9,50 $. Bugetul dvs. este mai mare decât prețul seriilor, astfel încât să le puteți.|
-| 5 | | |
-| Gotham | | |
-| 2 | | |
+|**Intrare**|**Ieșire**|
+| --- | --- | 
+| 10 | You bought all the series and left with 0.50$ | 
+| 3 | 
+| Thrones | 
+| 5 | 
+| Riverdale | 
+| 5 | 
+| Gotham | 
+| 2 | 
+[hints]
+
+[hint]
+After receiving the budget and the series count, determine whether the series in the input have a discount.
+Then, calculate the price for each series.
+[/hint]
+[hint]
+Calculate the price for all of the series and check if you can buy them.
+[/hint]
+
+[/hints]
 [/task-description]
 [code-io /]
 [tests]
