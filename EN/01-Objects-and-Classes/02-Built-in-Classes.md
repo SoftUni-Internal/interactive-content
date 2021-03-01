@@ -196,21 +196,12 @@ System.out.println(isValid);
 [/slide]
 
 [slide hideTitle]
+[slide hideTitle]
 # Problem with Solution: Randomize Words
-
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-10-problem-and-solution-randomize-words-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[code-task title="Randomize Words" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
+[code-task title="Problem with Solution: Randomize Words" taskId="Java-Fundamentals-1-Built-in-Classes-Randomize-Words" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java-code]
 ```
-import java.util.Random;
-import java.util.Scanner;
 
-public class RandomizeWords {
-    public static void main(String[] args) {
-       
-    // Write your code here
-}
 ```
 [/code-editor]
 [task-description]
@@ -218,6 +209,14 @@ public class RandomizeWords {
 You are given a **list of words in one line**.
 
 **Randomize their order** and print **each word at a separate line**.
+
+## Hints
+
+- Split the input string (by space) and create an array of words
+- Create a random number generator - an object rnd of type Random
+- In a for-loop exchange each number at positions 0, 1, …, words.Length-1 by a number at random position. To generate a random number in range use rnd.nextInt(words.length)
+- Print each word in the array on new line
+
 
 ## Examples
 
@@ -231,6 +230,7 @@ You are given a **list of words in one line**.
 | | programming | |
 | | have | |
 | | to | |
+
 
 
 [/task-description]
@@ -249,6 +249,59 @@ fun
 programming
 have
 to
+[/output]
+[/test]
+[test]
+[input]
+a b
+[/input]
+[output]
+b
+a
+[/output]
+[/test]
+[test]
+[input]
+PHP Java C\#
+[/input]
+[output]
+Java
+PHP
+C\#
+[/output]
+[/test]
+[test]
+[input]
+10S 7H 9C 9D JS
+[/input]
+[output]
+7H
+JS
+10S
+9C
+9D
+[/output]
+[/test]
+[test]
+[input]
+hello
+[/input]
+[output]
+hello
+[/output]
+[/test]
+[test]
+[input]
+pesho gosho kiro miro niki pipi koko
+[/input]
+[output]
+kiro
+gosho
+koko
+miro
+niki
+pesho
+pipi
 [/output]
 [/test]
 [/tests]
