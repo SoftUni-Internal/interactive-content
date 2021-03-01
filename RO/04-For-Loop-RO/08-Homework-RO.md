@@ -372,9 +372,9 @@ Yes, value=10
 
 [slide hideTitle]
 
-# Problem: Zig Zag Sum
+# Problem: ZigZag Sum
 
-[code-task title="Zig Zag Sum" taskId="pb-js-for-loop-Zig-Zag-Sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="ZigZag Sum" taskId="pb-js-for-loop-Zig-Zag-Sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
@@ -751,7 +751,7 @@ Creați un program care:
 
 - Urmat de **vârsta** pentru fiecare persoană de pe coadă
 
-- Dacă toate locurile pot fi ocupate, programul tipărește: **The rollercoaster departures**
+- Dacă toate locurile pot fi ocupate, programul tipărește: **The rollercoaster departs**
 
 - În orice alt caz, tipărește: **Waiting...**
 
@@ -759,7 +759,7 @@ Creați un program care:
 
 | **Intrare**                                 | **Ieșire**                   |
 | ------------------------------------------- | ---------------------------- |
-| rollercoaster(['2', '10', '2', '15', '24']) | The rollercoaster departures |
+| rollercoaster(['2', '10', '2', '15', '24']) | The rollercoaster departs |
 
 [/task-description]
 [tests]
@@ -768,7 +768,7 @@ Creați un program care:
 rollercoaster(['2', '10', '2', '15', '24'])
 [/input]
 [output]
-The rollercoaster departures
+The rollercoaster departs
 [/output]
 [/test]
 [test]
@@ -784,7 +784,7 @@ Waiting...
 rollercoaster(['4', '18', '10', '15', '57', '14', '35', '68', '45', '23', '14', '24', '26'])
 [/input]
 [output]
-The rollercoaster departures
+The rollercoaster departs
 [/output]
 [/test]
 [test]
@@ -792,7 +792,7 @@ The rollercoaster departures
 rollercoaster(['3', '21', '5', '25', '45', '34', '12', '24'])
 [/input]
 [output]
-The rollercoaster departures
+The rollercoaster departs
 [/output]
 [/test]
 [test]
@@ -800,7 +800,7 @@ The rollercoaster departures
 rollercoaster(['3', '10', '5', '10', '15', '18', '5', '30'])
 [/input]
 [output]
-The rollercoaster departures
+The rollercoaster departs
 [/output]
 [/test]
 [test]
