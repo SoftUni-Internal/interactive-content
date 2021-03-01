@@ -1,18 +1,42 @@
-# Problem 1: Mu Online
+# Problem with Solution 1: Mu Online
 
-[slide]
-# Enunț
+[slide hideTitle]
+
+# Mu Online
+
+
+[code-task title="Mu Online" taskId="js-fundamentals-examPreparation-Mu-Online" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function muOnline(input) {
+	// Scrieți codul dvs. aici
+}
+```
+[/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
+[task-description]
+
+# Description
+
 Personajul vostru începe cu **100 health points** și **0 bitcoins.**
 
 Veți primi un șir**reprezentând diferite evenimente**, pe care trebuie să le procesați.
 
-Fiecare comandă este **separată** de o bară verticală`|`.
+Fiecare comandă este **separată** de o bară verticală ("\|").
 
 Fiecare dintre comenzi va conține un cuvânt și un număr, separate de un spațiu. 
 
 Comanda poate fi:
 
-* Comanda `potion`: 
+* Comanda "**potion**": 
 
 Reface numărul specificat de puncte de sănătate ale personajului vostru. 
 
@@ -20,68 +44,61 @@ Punctele de sănătate **nu pot depăși 100.**
 
 După că ați folosit cu succes poțiunea, imprimați:
 
-`Healed: {amount} hp.`
+"**Healed:** \{**amount**\} **hp.**"
 
 Apoi, imprimați starea de sănătate actuală: 
 
-`Current health: {health} hp.`
+"**Current health:** \{**health**\} **hp.**"
 
-* Comanda `chest`: 
+* Comanda "**chest**": 
 
 Ați găsit bitcoins și adăugați acest număr la valoarea bitcoins existentă. 
 
 Imprimați:
 
-`You found {amount} bitcoins.`
+"**You found** \{**amount**\} **bitcoins.**"
 
 *Dacă primiți orice alte date, înseamnă că **v-ați confruntat cu un monstru**. 
 
 Un **cuvânt la începtul comenzii** va fi numele monstrului, iar **numărul** \- va fi **daune pe care monstrul ți le provoacă.**
 
-Exemplu: `rat {number}`, `boss {number}`, aici pot fi alte tipuri de monștri.
+Exemplu: "**rat** \{**number**\}, **boss** \{**number**\}", aici pot fi alte tipuri de monștri.
 
 Ar trebui să scădeți punctele de sănătate ale campionului cu daunele pe care fiecare monstru le produce.
 
 * Dacă nu ați murit (health <= 0) înseamnă că ați învins monstrul și puteți imprima :
 
-`You defeated a {monster}.`
+"**You defeated a** \{**monster**\}."
 
 * Dacă ați murit, atunci datele așteptate de ieșire vor fi :  
 
-`You died! Killed by {monster}.`
+"**You died! Killed by** \{**monster**\}."
 
 **And your quest is over.**
 
 Imprimați numărul ultimei camere pe care ați reușit să o găsiți: 
 
-`Highest level reached: {last room}.`.
+"**Highest level reached:** \{**last room**\}."
 
 Dacă ați reușit să parcurgeți toate camerele din temniță, tipăriți pe următoarele trei linii:
-`You've made it!`
 
-`Bitcoins: {bitcoins}`
+"**You've made it!**"
 
-`Health: {health}`
+"**Bitcoins:** \{**bitcoins**\}"
+
+"**Health:** \{**health**\}"
 
 ## Intrare
-Un șir, separate printr-o bară verticală`|`.
+Un șir, separate printr-o bară verticală ("\|")..
 
 ## Ieșire
 Imprimați mesajele corespunzătoare, așa cum se arată în descriere.
 
-[code-task title="Problem: Sum Numbers" taskId="js-fundamentals-examPreparation-problem-1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function solve(input) {
-	// Write your code here
-}
-```
-[/code-editor]
-[task-description]
-# Examples
+## Example One
+
 | **Input** | **Output** |
 | --- | --- |
-|`['rat 10|bat 20|potion 10|rat 10|chest 100|boss 70|chest 1000']`| You defeated a rat.|
+|muOnline('rat 10\|bat 20\|potion 10\|rat 10\|chest 100\|boss 70\|chest 1000')| You defeated a rat.|
 ||You defeated a bat.|
 ||You healed for 10 hp.|
 ||Current health: 80 hp.|
@@ -90,9 +107,11 @@ function solve(input) {
 ||You died! Killed by boss.|
 ||Highest level reached: 6|
 
+## Example Two
+
 | **Input** | **Output** |
 | --- | --- |
-|`[cat 10|potion 30|orc 10|chest 10|snake 25|chest 110]`| You defeated a cat.|
+|muOnline('cat 10\|potion 30\|orc 10\|chest 10\|snake 25\|chest 110')| You defeated a cat.')|
 ||You healed for 10 hp.|
 ||Current health: 100 hp.|
 ||You defeated a orc.|
@@ -108,7 +127,7 @@ function solve(input) {
 [tests]
 [test open]
 [input]
-rat 10\|bat 20\|potion 10\|rat 10\|chest 100\|boss 70\|chest 1000
+muOnline('rat 10\|bat 20\|potion 10\|rat 10\|chest 100\|boss 70\|chest 1000')
 [/input]
 [output]
 You defeated a rat.
@@ -123,7 +142,7 @@ Highest level reached: 6
 [/test]
 [test open]
 [input]
-cat 10\|potion 30\|orc 10\|chest 10\|snake 25\|chest 110
+muOnline('cat 10\|potion 30\|orc 10\|chest 10\|snake 25\|chest 110')
 [/input]
 [output]
 You defeated a cat.
@@ -140,7 +159,7 @@ Health: 65
 [/test]
 [test]
 [input]
-rat 10\|bat 20
+muOnline('rat 10\|bat 20')
 [/input]
 [output]
 You defeated a rat.
@@ -152,7 +171,7 @@ Health: 70
 [/test]
 [test]
 [input]
-rat 10\|bat 20\|cat 30\|dog 39
+muOnline('rat 10\|bat 20\|cat 30\|dog 39')
 [/input]
 [output]
 You defeated a rat.
@@ -166,7 +185,7 @@ Health: 1
 [/test]
 [test]
 [input]
-rat 10\|bat 20\|cat 30\|dog 40
+muOnline('rat 10\|bat 20\|cat 30\|dog 40')
 [/input]
 [output]
 You defeated a rat.
@@ -178,7 +197,7 @@ Highest level reached: 4
 [/test]
 [test]
 [input]
-chest 1\|chest 2\|chest 3
+muOnline('chest 1\|chest 2\|chest 3')
 [/input]
 [output]
 You found 1 bitcoins.
@@ -191,7 +210,7 @@ Health: 100
 [/test]
 [test]
 [input]
-chest 10\|chest 20\|chest 30
+muOnline('chest 10\|chest 20\|chest 30')
 [/input]
 [output]
 You found 10 bitcoins.
@@ -204,7 +223,7 @@ Health: 100
 [/test]
 [test]
 [input]
-cat 40\|potion 30
+muOnline('cat 40\|potion 30')
 [/input]
 [output]
 You defeated a cat.
@@ -217,7 +236,7 @@ Health: 90
 [/test]
 [test]
 [input]
-cat 10\|potion 30
+muOnline('cat 10\|potion 30')
 [/input]
 [output]
 You defeated a cat.
@@ -230,7 +249,7 @@ Health: 100
 [/test]
 [test]
 [input]
-dog 10\|potion 30
+muOnline('dog 10\|potion 30')
 [/input]
 [output]
 You defeated a dog.
@@ -243,7 +262,7 @@ Health: 100
 [/test]
 [test]
 [input]
-a 10\|b 20\|potion 10\|c 30\|chest 10\|chest 1000\|d 50\|chest 1000
+muOnline('a 10\|b 20\|potion 10\|c 30\|chest 10\|chest 1000\|d 50\|chest 1000')
 [/input]
 [output]
 You defeated a a.
@@ -259,7 +278,7 @@ Highest level reached: 7
 [/test]
 [test]
 [input]
-cat 10\|potion 30\|orc 10\|chest 10\|snake 25\|chest 110\|chest 100\|potion 1000\|DRAGON 1000
+muOnline('cat 10\|potion 30\|orc 10\|chest 10\|snake 25\|chest 110\|chest 100\|potion 1000\|DRAGON 1000')
 [/input]
 [output]
 You defeated a cat.
@@ -278,4 +297,5 @@ Highest level reached: 9
 [/test]
 [/tests]
 [/code-task]
+
 [/slide]
