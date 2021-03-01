@@ -173,26 +173,6 @@ console.log(result[0]);
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-12S-Solution-Match-Dates-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Match Dates" taskId="js-fundamentals-pt2-regular-expressions-lab-Match-Dates" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function matchDates(input){
-   // Write your code here 
-}
-```
-[/code-editor]
-[code-adapter]
-```
-function adapter(input, code) {
-    let inputParams = /\((.+)\)$/.exec(input)[1];
-    inputParams = eval(`[${inputParams}]`);
-    return code(...inputParams);
-}
-```
-[/code-adapter]
-[task-description]
-# Description
-
 Write a regular expression that extracts dates from a text.
 
 Valid date format: "**dd-MMM-yyyy**".
@@ -230,137 +210,6 @@ My father is born on the **30-Dec-1994**.
 | --- | --- |
 | matchDates('27/Mar/2000, 22-March-20050') | Day\: 27\, Month\: Mar\, Year\: 2000 |
 
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-matchDates('13/Jul/1928, 10-Nov-1934, 01/Jan-1951, 25.Dec.1937, 23/09/1973, 1/Feb/2016')
-[/input]
-[output]
-Day: 13, Month: Jul, Year: 1928
-Day: 10, Month: Nov, Year: 1934
-Day: 25, Month: Dec, Year: 1937
-[/output]
-[/test]
-[test open]
-[input]
-matchDates('27/Mar/2000, 22-March-20050')
-[/input]
-[output]
-Day: 27, Month: Mar, Year: 2000
-[/output]
-[/test]
-[test]
-[input]
-matchDates('01/Jan-1951, 29/Feb/2024, 1/Jan-1951, 27-Feb-2007, 1/Jan-1951, 1/Mar/2016, 23/october/197')
-[/input]
-[output]
-Day: 29, Month: Feb, Year: 2024
-Day: 27, Month: Feb, Year: 2007
-[/output]
-[/test]
-[test]
-[input]
-matchDates('24.Apr.2003, 1/Jan-1951, 12/Jan/2024, 1/Jan-1951, 22.Jan.2014, 1/Jan-1951, 24-Sep-2014, 18-Jan-2012, 23/october/197')
-[/input]
-[output]
-Day: 24, Month: Apr, Year: 2003
-Day: 12, Month: Jan, Year: 2024
-Day: 22, Month: Jan, Year: 2014
-Day: 24, Month: Sep, Year: 2014
-Day: 18, Month: Jan, Year: 2012
-[/output]
-[/test]
-[test]
-[input]
-matchDates('1/Jan-1951, 23/october/197, 11-Dec-2010, 18.Jan.2014')
-[/input]
-[output]
-Day: 11, Month: Dec, Year: 2010
-Day: 18, Month: Jan, Year: 2014
-[/output]
-[/test]
-[test]
-[input]
-matchDates('04-Jan-2014, 1/Jan-1951, 23/october/197, 23/october/197, 23/Nov/2023, 1/Jan-1951, 27-Feb-2012, 08-Mar-2000, 1/Jan-1951')
-[/input]
-[output]
-Day: 04, Month: Jan, Year: 2014
-Day: 23, Month: Nov, Year: 2023
-Day: 27, Month: Feb, Year: 2012
-Day: 08, Month: Mar, Year: 2000
-[/output]
-[/test]
-[test]
-[input]
-matchDates('22.Nov.2011, 09.May.2013, 1/Jan-1951, 29/Sep/2011, 24-Jul-2012, 06.Oct.2013')
-[/input]
-[output]
-Day: 22, Month: Nov, Year: 2011
-Day: 09, Month: May, Year: 2013
-Day: 29, Month: Sep, Year: 2011
-Day: 24, Month: Jul, Year: 2012
-Day: 06, Month: Oct, Year: 2013
-[/output]
-[/test]
-[test]
-[input]
-matchDates('02/Apr/2002, 1/Jan-1951, 21-Feb-2019')
-[/input]
-[output]
-Day: 02, Month: Apr, Year: 2002
-Day: 21, Month: Feb, Year: 2019
-[/output]
-[/test]
-[test]
-[input]
-matchDates('1/Jan-1951, 06-Jan-2014, 1/Jan-1951, 30/Jun/2004, 21.Nov.2000, 15/Nov/2018, 11.Mar.2017, 1/Jan-1951')
-[/input]
-[output]
-Day: 06, Month: Jan, Year: 2014
-Day: 30, Month: Jun, Year: 2004
-Day: 21, Month: Nov, Year: 2000
-Day: 15, Month: Nov, Year: 2018
-Day: 11, Month: Mar, Year: 2017
-[/output]
-[/test]
-[test]
-[input]
-matchDates('11/Aug/2005, 18/Oct/2021, 1/Jan-1951, 30.Oct.2004, 25/Aug/2002, 13-Aug-2016')
-[/input]
-[output]
-Day: 11, Month: Aug, Year: 2005
-Day: 18, Month: Oct, Year: 2021
-Day: 30, Month: Oct, Year: 2004
-Day: 25, Month: Aug, Year: 2002
-Day: 13, Month: Aug, Year: 2016
-[/output]
-[/test]
-[test]
-[input]
-matchDates('1/Jan-1951, 06-Jun-2021, 21/Aug/2003, 07/May/2008')
-[/input]
-[output]
-Day: 06, Month: Jun, Year: 2021
-Day: 21, Month: Aug, Year: 2003
-Day: 07, Month: May, Year: 2008
-[/output]
-[/test]
-[test]
-[input]
-matchDates('1/Jan-1951, 02.Sep.2014, 13/Aug/2024, 01.Sep.2001, 02.Sep.2022, 07/Feb/2008')
-[/input]
-[output]
-Day: 02, Month: Sep, Year: 2014
-Day: 13, Month: Aug, Year: 2024
-Day: 01, Month: Sep, Year: 2001
-Day: 02, Month: Sep, Year: 2022
-Day: 07, Month: Feb, Year: 2008
-[/output]
-[/test]
-[/tests]
-[/code-task]
 [/slide]
 
 [slide hideTitle]
@@ -369,25 +218,6 @@ Day: 07, Month: Feb, Year: 2008
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-13-Solution-email-validation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-[code-task title="Email Validation" taskId="js-fundamentals-pt2-regular-expressions-lab-Email-Validation" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function emailValidator(input){
-   // Write your code here 
-}
-```
-[/code-editor]
-[code-adapter]
-```
-function adapter(input, code) {
-    let inputParams = /\((.+)\)$/.exec(input)[1];
-    inputParams = eval(`[${inputParams}]`);
-    return code(...inputParams);
-}
-```
-[/code-adapter]
-[task-description]
-# Description
 
 Write a regular expression that performs simple **email validation.**
 
@@ -420,65 +250,4 @@ An email consists of: username **@** domain name.
 | emailValidator('valid@email.com') | Valid |
 | emailValidator('invalid@emai1.com') | Invalid |
 
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-emailValidator('valid@email.com')
-[/input]
-[output]
-Valid
-[/output]
-[/test]
-[test open]
-[input]
-emailValidator('invalid@emai1.com')
-[/input]
-[output]
-Invalid
-[/output]
-[/test]
-[test]
-[input]
-emailValidator('SomethingValid23@thisisaveeeeeerrryyylong.emailbythewaybutitsvalid')
-[/input]
-[output]
-Valid
-[/output]
-[/test]
-[test]
-[input]
-emailValidator('1@1.a')
-[/input]
-[output]
-Invalid
-[/output]
-[/test]
-[test]
-[input]
-emailValidator('tHePrEvIoUsEmAiLwAsInVaLiDbUtThIsOnEiSvAlId@valid.com')
-[/input]
-[output]
-Valid
-[/output]
-[/test]
-[test]
-[input]
-emailValidator('i_thinkThatsEnough@asd.com')
-[/input]
-[output]
-Invalid
-[/output]
-[/test]
-[test]
-[input]
-emailValidator('test005@out.txt')
-[/input]
-[output]
-Valid
-[/output]
-[/test]
-[/tests]
-[/code-task]
 [/slide]
