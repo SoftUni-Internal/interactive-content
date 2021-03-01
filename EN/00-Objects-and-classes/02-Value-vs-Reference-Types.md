@@ -3,8 +3,6 @@
 [slide hideTitle]
 # Value vs. Reference Types
 
-## Missing video.
-
 [image assetsSrc="Value-vs-Reference-Types(1).png" /]
 
 ## Value Types

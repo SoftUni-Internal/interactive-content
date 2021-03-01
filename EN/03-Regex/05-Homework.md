@@ -286,6 +286,7 @@ Total money spend: 2436.69
 furniture(['\>\>Chair\<\<34.44\!1', '\>\>Table\<44.44!2', 'Purchase'])
 [/input]
 [output]
+Bought furniture:
 Chair
 Total money spent\: 34\.44
 [/output]
