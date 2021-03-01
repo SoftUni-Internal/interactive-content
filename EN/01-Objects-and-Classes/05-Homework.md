@@ -3,18 +3,7 @@
 [slide hideTitle]
 
 # Problem: Articles
-[code-task title="Articles" taskId="java-fund-17-Objects-and-Classes-Exercise-problem-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
+[code-task title="Articles" taskId="java-fund-2-Objects-and-Classes-Articles" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [task-description]
 ## Description
 Create an article class with the following properties:
@@ -52,7 +41,7 @@ At the end, **print the final article**.
 | Rename: better title | |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -146,18 +135,7 @@ The haunting of hill house - better content2:  Shirley Jackson
 [stream language="RO" videoId="433935894"  /]
 [/video-vimeo]
 
-[code-task title="Opinion Poll" taskId="java-fund-17-Objects-and-Classes-Exercise-problem-2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
+[code-task title="Opinion Poll" taskId="java-fund-2-Objects-and-Classes-Opinion Poll" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [task-description]
 ## Description
 Using the **Person class**, write a program that reads from the console **N lines of personal information** and then **prints all people** whose **age is more than 30 years** in the following **format**:
@@ -183,7 +161,7 @@ Using the **Person class**, write a program that reads from the console **N line
 | Peter 11 | |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -365,18 +343,7 @@ Annie - 31
 
 [slide hideTitle]
 # Problem: Articles 2.0
-[code-task title="Articles 2.0" taskId="java-fund-17-Objects-and-Classes-Exercise-problem-3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
+[code-task title="Articles 2.0" taskId="java-fund-2-Objects-and-Classes-Articles2.0" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [task-description]
 ## Description
 Change the program "Articles", so you can store a **list of articles**.
@@ -409,7 +376,7 @@ You need to order the articles **alphabetically** based on the command and print
 | content | |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -518,24 +485,8 @@ Most Valuable Playboy - content4: Lauren Blakely
 [slide hideTitle]
 # Problem: Students
 
-[vimeo-video]
-[stream language="EN" videoId="421822838" default /]
-[stream language="RO" videoId="433936042"  /]
-[/video-vimeo]
 
-
-[code-task title="Students" taskId="java-fund-17-Objects-and-Classes-Exercise-problem-4" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
+[code-task title="Students" taskId="java-fund-2-Objects-and-Classes-Students" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [task-description]
 ## Description
 Write a program that receives **n count** of students with grades and prints whether they have successfully passed a test.
@@ -569,7 +520,7 @@ Each student should have **First name** (string), **Last name** (string) and **g
 | Rocco Erben 6.00 | |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -674,19 +625,8 @@ Pete Kendrick
 
 [slide hideTitle]
 # Problem: Vehicle Catalogue
-[code-task title="Vehicle Catalogue" taskId="java-fund-17-Objects-and-Classes-Exercise-problem-5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-import java.util.stream.Collectors;
+[code-task title="Vehicle Catalogue" taskId="java-fund-2-Objects-and-Classes-Vehicle-Catalogue" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 Until you receive the **command** "End" you will receive lines of input in the format:
@@ -729,7 +669,7 @@ Format the answer to the **second decimal point**.
 | | Trucks have average horsepower of: 250.00. |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -869,10 +809,6 @@ Trucks have average horsepower of: 365.67.
 [slide hideTitle]
 # Problem: Person ID
 
-[vimeo-video]
-[stream language="EN" videoId="421821748" default /]
-[stream language="RO" videoId="433932277"  /]
-[/video-vimeo]
 
 [code-task title="Person ID" taskId="java-fund-17-Objects-and-Classes-Exercise-problem-6" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
