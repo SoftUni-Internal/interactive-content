@@ -34,7 +34,7 @@ function adapter(input, code) {
 
 Create a program, which calculates and prints the total salary:
 
-- You the number of workdays for the current month as an integer and the salary per day as an array
+- You will receive the number of workdays for the current month as an integer and the salary per day as an array
 - Calculate the monthly salary of an employee
 - Print the result to the console
 
@@ -116,7 +116,7 @@ function adapter(input, code) {
 
 Create a program, which finds the **biggest** and the **smallest** number from a given sequence:
 
-- You receive **n**:  the count of numbers to process
+- You will receive **n**:  the count of numbers to process
 - Find the **max** and the **min** values
 - Print them to the console
 
@@ -197,11 +197,11 @@ function adapter(input, code) {
 
 Create a program, which calculates and prints a given number to a given power
 
-- You receive **p** - the power and **n** – the number
+- You will receive **p** - the power and **n** – the number
 
 - Print the result of **n** to the power of **p**
 
-- Do not use **Math.Pow()** - not the goal of our exercise
+- Do not use **Math.Pow()** - it is not the goal of this exercise
 
 # Example
 
@@ -296,7 +296,7 @@ function adapter(input, code) {
 
 Create a program, which determines if the sum of pairs in a sequence is the same:
 
-- You receive a number **n** and **n pairs** of numbers
+- You will receive a number **n** and **n pairs** of numbers
 - Print "**Yes, value=**\{**sum**\}", if the **sum of all** pairs is the **same**
 - **Otherwise**, print "**No, maxdiff=**\{**diff**\}"
 - The **maxdiff** value is the **max difference** in the sum between two pairs
@@ -374,9 +374,9 @@ Yes, value=10
 
 [slide hideTitle]
 
-# Problem: Zig Zag Sum
+# Problem: ZigZag Sum
 
-[code-task title="Zig Zag Sum" taskId="pb-js-for-loop-Zig-Zag-Sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="ZigZag Sum" taskId="pb-js-for-loop-Zig-Zag-Sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
@@ -401,7 +401,7 @@ function adapter(input, code) {
 
 # Description
 
-Create a program, which calculates and prints the sum of a sequence in zig-zag:
+Create a program, which calculates and prints the sum of a sequence in zigzag:
 
 - You receive **n** - the amount of input numbers
 - Process **n numbers**
@@ -509,11 +509,11 @@ function adapter(input, code) {
 
 # Description
 
-Create a program, which finds how many numbers of a sequence are divisible without remainder:
+Create a program, which finds how many numbers of a sequence are divisible without a remainder:
 
-- You receive a number `n` and an **n amount** of numbers after it
+- You will receive a number `n` and a **n amount** of numbers after it
 
-- Find the **percentage** of how many of them can be divided **without a remainder, using 2, 3, and 4 as divisors**
+- Calculate the **percentage** of how many of them can be divided **without a remainder, using 2, 3, and 4 as divisors**
 
 - Print the percentages for the three divisors, **formatted** to the second digit
 
@@ -638,9 +638,9 @@ function adapter(input, code) {
 
 Create a program, which calculates the sum of vowels in a sequence based on the given data:
 
-- You receive a number **n** - the count of characters
+- You will receive a number **n** - the count of characters
 
-- If a character is a vowel, add the its **value** to the result
+- If a character is a vowel, add its **value** to the result
 
 | **character** | **a** | **e** | **i** | **o** | **u** |
 | :-----------: | :---: | :---: | :---: | :---: | :---: |
@@ -748,16 +748,16 @@ function adapter(input, code) {
 
 # Description
 
-Create a program, which determines if a rollercoaster can departure:
+Create a program, which determines if a rollercoaster can depart:
 
 - The first three numbers of the input are:
-  - number of **places**
+  - number of **seats**
   - **minimum passenger age**
-  - **number of people** on the queue
+  - **number of people** in the queue
 
 - All the other numbers represent the **age** for each person queuing
 
-- If all places can be filled, print out: "**The rollercoaster departures**"
+- If all the seats can be filled, print out: "**The rollercoaster departs**"
 
 - In any other case, print out: "**Waiting...**"
 
@@ -765,7 +765,7 @@ Create a program, which determines if a rollercoaster can departure:
 
 | **Input**                                   | **Output**                   |
 | ------------------------------------------- | ---------------------------- |
-| rollercoaster(['2', '10', '2', '15', '24']) | The rollercoaster departures |
+| rollercoaster(['2', '10', '2', '15', '24']) | The rollercoaster departs |
 | rollercoaster(['3', '15', '1', '23'])       | Waiting...                   |
 
 [/task-description]
@@ -775,7 +775,7 @@ Create a program, which determines if a rollercoaster can departure:
 rollercoaster(['2', '10', '2', '15', '24'])
 [/input]
 [output]
-The rollercoaster departures
+The rollercoaster departs
 [/output]
 [/test]
 [test]
@@ -791,7 +791,7 @@ Waiting...
 rollercoaster(['4', '18', '10', '15', '57', '14', '35', '68', '45', '23', '14', '24', '26'])
 [/input]
 [output]
-The rollercoaster departures
+The rollercoaster departs
 [/output]
 [/test]
 [test]
@@ -799,7 +799,7 @@ The rollercoaster departures
 rollercoaster(['3', '21', '5', '25', '45', '34', '12', '24'])
 [/input]
 [output]
-The rollercoaster departures
+The rollercoaster departs
 [/output]
 [/test]
 [test]
@@ -807,7 +807,7 @@ The rollercoaster departures
 rollercoaster(['3', '10', '5', '10', '15', '18', '5', '30'])
 [/input]
 [output]
-The rollercoaster departures
+The rollercoaster departs
 [/output]
 [/test]
 [test]
@@ -857,7 +857,7 @@ function adapter(input, code) {
 
 Create a program, which multiplies a given number by all the numbers from **1** to **10**:
 
-- You receive a number `n` – the number to multiply
+- You will receive a number `n` – the number to multiply
 
 - Write a for-loop, which prints: "\{**n**\} **x** \{**i**\} **=** \{**result**\}"
 
@@ -1027,9 +1027,9 @@ function adapter(input, code) {
 
 # Description
 
-Create a program, which prints the sum of a given range of numbers and all the numbers, divisible by 9 without remainder:
+Create a program, which prints the sum of a given range of numbers and all the numbers, divisible by 9 without a remainder:
 
-- You receive **two numbers**: the range to process
+- You will receive **two numbers**: the range to process
 
 - On the first line, print the sum of the numbers
 
