@@ -83,18 +83,9 @@ public class Team {
 [slide hideTitle]
 
 # Problem with Solution: Sort by Name and Age
-[code-task title="Sort by Name and Age" taskId="Java-OOP-Advanced-Encapsulation-Sort-By-Name-And-Age" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Sort by Name and Age" timeLimit=5000 taskId="Java-OOP-Advanced-Encapsulation-Sort-By-Name-And-Age" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 Create a class **Person**, which should have **private** fields for:
@@ -143,7 +134,6 @@ public static void main(String[] args) throws IOException {
 | Bob Manner 35 |  |
 
 [/task-description]
-[code-io /]
 [tests]
 [test]
 [input]
