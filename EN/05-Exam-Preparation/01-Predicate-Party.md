@@ -19,35 +19,40 @@ On the next lines, until you get the "**Party**!" command, you may be asked to *
 
 There are three different options: 
 
-- Everyone that has a name **starting** with a given string;
-- Everyone that has a name **ending** with a given string;
-- Everyone that has a name with a given **length**.
+- Everyone that has a name **starting** with a given string
+- Everyone that has a name **ending** with a given string
+- Everyone that has a name with a given **length**
 
-When you print the guests that are coming to the party, you have to print them in **ascending** order. 
+When you print the guests that are coming to the party, you have to print them in **ascending** order.
 
-If nobody is going, print "**Nobody is going to the party!**". 
+If nobody is going, print "**Nobody is going to the party!**".
 
-See the examples below:
+See the examples below.
 
-## Examples
+# Examples
 
-
-| Input | Output |
+## Example 1
+| **Input** | **Output** |
 | --- | --- |
 | Peter Michael Stefanos | Michael, Stefanos are going to the party! |
 | Remove StartWith P | |
 | Double Length 5 | | 
 | Party! | |
+
+## Example 2
+| **Input** | **Output** |
 | --- | --- |
 | Peter | Peter, Peter, Peter, Peter are going to the party! |
 | Double StartsWith Pete | | 
 | Double EndsWith eter | |
 | Party! | | 
+
+## Example 3
+| **Input** | **Output** |
 | --- | --- |
 | Peter | Nobody is going to the party! |
 | Remove StartsWith P | |
 | Party! | | 
-| --- | --- |
 
 
 [/task-description]
