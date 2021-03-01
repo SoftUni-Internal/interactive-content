@@ -1,29 +1,38 @@
 # Teme de acasa
 
-[slide]
+[slide hideTitle]
 # Problem: Reveal Words
-[code-task title="Reveal Words" taskId="js-advanced-text-processing-Reveal-Words" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[[code-task title="Reveal Words" taskId="js-fundamentals-pt2-text-processing-Reveal-Words" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function revealWords(input){
-  // Write your code here
+function revealWords(firstStr, secondStr){
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
-## Descriere
+# Descriere
 Scrieți o funcție, care primește doi parametri.
 
-Primul parametru va fi un **șir care conține câteva cuvinte** separate prin `, `.
+Primul parametru va fi un **șir care conține câteva cuvinte** separate prin **,** ".
 
-**Al doilea parametru va fi un șir** care conține șabloane care conțin `*`.
+**Al doilea parametru va fi un șir** care conține șabloane care conțin "\*".
 
 Găsiți cuvântul **exact cu aceeași lungime ca șablonul** și înlocuiți-l.
 
-# Exemplu
+## Exemplu
    |**Intrare**|**Ieșire**|
 | --- | --- |
-|`['great', 'softuni is ***** place for learning new programming languages']`| softuni is great place for learning new programming languages |
+| revealWords('great', 'softuni is ***** place for learning new programming languages') | softuni is great place for learning new programming languages |
 
 
 [/task-description]
@@ -31,8 +40,7 @@ Găsiți cuvântul **exact cu aceeași lungime ca șablonul** și înlocuiți-l.
 [tests]
 [test open]
 [input]
-great
-softuni is \*\*\*\*\* place for learning new programming languages
+revealWords('great', 'softuni is \*\*\*\*\* place for learning new programming languages')
 [/input]
 [output]
 softuni is great place for learning new programming languages
@@ -40,8 +48,7 @@ softuni is great place for learning new programming languages
 [/test]
 [test open]
 [input]
-great, learning
-softuni is \*\*\*\*\* place for \*\*\*\*\*\*\*\* new programming languages
+revealWords('great, learning', 'softuni is \*\*\*\*\* place for \*\*\*\*\*\*\*\* new programming languages')
 [/input]
 [output]
 softuni is great place for learning new programming languages
@@ -49,8 +56,7 @@ softuni is great place for learning new programming languages
 [/test]
 [test]
 [input]
-pesho
-jdsakl as \*\*\*\*\* dsajkk hdsj
+revealWords('pesho', 'jdsakl as \*\*\*\*\* dsajkk hdsj')
 [/input]
 [output]
 jdsakl as pesho dsajkk hdsj
@@ -58,8 +64,7 @@ jdsakl as pesho dsajkk hdsj
 [/test]
 [test]
 [input]
-pesho, goshho
-jdsakl as \*\*\*\*\* dsajkk \*\*\*\*\*\* hdsj
+revealWords('pesho, goshho', 'jdsakl as \*\*\*\*\* dsajkk \*\*\*\*\*\* hdsj')
 [/input]
 [output]
 jdsakl as pesho dsajkk goshho hdsj
@@ -67,8 +72,7 @@ jdsakl as pesho dsajkk goshho hdsj
 [/test]
 [test]
 [input]
-pesho, goshho, stamatko
-jdsakl as \*\*\*\*\* dsajkk \*\*\*\*\*\* hdsj \*\*\*\*\*\*\*\*
+revealWords('pesho, goshho, stamatko', 'jdsakl as \*\*\*\*\* dsajkk \*\*\*\*\*\* hdsj \*\*\*\*\*\*\*\*')
 [/input]
 [output]
 jdsakl as pesho dsajkk goshho hdsj stamatko
@@ -76,8 +80,7 @@ jdsakl as pesho dsajkk goshho hdsj stamatko
 [/test]
 [test]
 [input]
-pesho, goshho, stamatko, kiro
-jdsakl \*\*\*\* as \*\*\*\*\* dsajkk \*\*\*\*\*\* hdsj \*\*\*\*\*\*\*\*
+revealWords('pesho, goshho, stamatko, kiro', 'jdsakl \*\*\*\* as \*\*\*\*\* dsajkk \*\*\*\*\*\* hdsj \*\*\*\*\*\*\*\*')
 [/input]
 [output]
 jdsakl kiro as pesho dsajkk goshho hdsj stamatko
@@ -85,8 +88,7 @@ jdsakl kiro as pesho dsajkk goshho hdsj stamatko
 [/test]
 [test]
 [input]
-pesho, goshho, stamatko, kiro, b
-jdsakl \*\*\*\* as \*\*\*\*\* dsajkk \*\*\*\*\*\* \* hdsj \*\*\*\*\*\*\*\*
+revealWords('pesho, goshho, stamatko, kiro, b', 'jdsakl \*\*\*\* as \*\*\*\*\* dsajkk \*\*\*\*\*\* \* hdsj \*\*\*\*\*\*\*\*')
 [/input]
 [output]
 jdsakl kiro as pesho dsajkk goshho b hdsj stamatko
@@ -96,32 +98,40 @@ jdsakl kiro as pesho dsajkk goshho b hdsj stamatko
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problemă: Modern Times of HashTag
-[code-task title="Modern Times of HashTag" taskId="js-advanced-text-processing-Modern-Times-of HashTag" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Modern Times of HashTag" taskId="js-fundamentals-pt2-text-processing-Modern-Times-of HashTag" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function modernTimesOfHashTag(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
-## Descriere
+# Descriere
 Intrarea va fi un **șir unic.**
 
-Găsiți toate cuvintele speciale **începând cu** `#`.
+Găsiți toate cuvintele speciale **începând cu** "**#**".
 
 Cuvântul nu este valid dacă are **orice altceva decât** literele.
 
 Imprimați cuvintele pe care le-ați găsit fără etichetă, fiecare pe o nouă linie de intrare.
 
-# Exemplu
+## Exemplu
    |**Intrare**|**Ieșire**|
 | --- | --- |
-|`[''Nowadays everyone uses # to tag a #special word in #socialMedia']`| special
-socialMedia
- |
+| modernTimesOfHashTag('Nowadays everyone uses # to tag a #special word in #socialMedia')| special |
+| | socialMedia |
 
 
 [/task-description]
@@ -129,7 +139,7 @@ socialMedia
 [tests]
 [test open]
 [input]
-Nowadays everyone uses \# to tag a \#special word in \#socialMedia
+modernTimesOfHashTag('Nowadays everyone uses # to tag a \#special word in #socialMedia')
 [/input]
 [output]
 special
@@ -138,7 +148,7 @@ socialMedia
 [/test]
 [test]
 [input]
-hjahd hasjk ag dwgyw gdyag dgsydwu shusia \#jkdlsa dasjkfjkj \#dsdas
+modernTimesOfHashTag('hjahd hasjk ag dwgyw gdyag dgsydwu shusia \#jkdlsa dasjkfjkj #dsdas')
 [/input]
 [output]
 jkdlsa
@@ -147,7 +157,7 @@ dsdas
 [/test]
 [test]
 [input]
-hjag dgsydwu shusia \#545A dasjkfjkj \#sdas
+modernTimesOfHashTag('hjag dgsydwu shusia #545A dasjkfjkj \#sdas')
 [/input]
 [output]
 sdas
@@ -155,7 +165,7 @@ sdas
 [/test]
 [test]
 [input]
-nj kwuei euie ruiw eop oerr \# \#sa
+modernTimesOfHashTag('nj kwuei euie ruiw eop oerr \# \#sa')
 [/input]
 [output]
 sa
@@ -163,7 +173,7 @@ sa
 [/test]
 [test]
 [input]
-nj \#kwuei \#euiAAe \#32432\\$\\$\\$\\$ ruiw eop oerr \# \#sa
+modernTimesOfHashTag('nj #kwuei #euiAAe #32432\$\$\$\$ ruiw eop oerr \# \#sa')
 [/input]
 [output]
 kwuei
@@ -173,7 +183,7 @@ sa
 [/test]
 [test]
 [input]
-nj \#nnj
+modernTimesOfHashTag('nj \#nnj')
 [/input]
 [output]
 nnj
@@ -183,33 +193,46 @@ nnj
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problemă: Extract File
-[code-task title="Extract File" taskId="js-advanced-text-processing-Extract-File" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Extract File" taskId="js-fundamentals-pt2-text-processing-Extract-File" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function extractFile(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
-## Descriere
-Scrieți o funcție care primește un singur șir - calea către un fișier (caracterul `\` este scăpat)
-Sarcina dvs. este de a scădea **numele fișierului** și extensia acestuia. (Feriți-vă de fișiere precum **template.bak.pptx**, deoarece **template.bak** ar trebui să fie numele fișierului, în timp ce pptx este extensia).
+# Descriere
+Scrieți o funcție care primește un singur șir - calea către un fișier (caracterul "\\" este scăpat)
+Sarcina dvs. este de a scădea **numele fișierului** și extensia acestuia. 
 
-# Exemplu
+Feriți-vă de fișiere precum **template.bak.pptx**, deoarece **template.bak** ar trebui să fie numele fișierului, în timp ce pptx este extensia.
+
+## Example One
    |**Intrare**|**Ieșire**|
 | --- | --- |
-|`['C:\\Internal\\training-internal\\Template.pptx']`| File name: Template |
-||File extension: pptx|
+| extractFile('C:\\\Internal\\\training-internal\\\Template.pptx') | File name: Template |
+|| File extension: pptx |
+
+## Example Two
 
    |**Intrare**|**Ieșire**|
 | --- | --- |
-|`['C:\\Projects\\Data-Structures\\LinkedList.cs']`|File name: LinkedList |
-||File extension: cs|
+| extractFile('C:\\\Projects\\\Data-Structures\\\LinkedList.cs') | File name: LinkedList |
+|| File extension: cs |
 
 
 [/task-description]
@@ -217,7 +240,7 @@ Sarcina dvs. este de a scădea **numele fișierului** și extensia acestuia. (Fe
 [tests]
 [test open]
 [input]
-C:\Internal\training-internal\Template.pptx
+extractFile('C:\\\Internal\\\training-internal\\\Template.pptx')
 [/input]
 [output]
 File name: Template
@@ -226,7 +249,7 @@ File extension: pptx
 [/test]
 [test open]
 [input]
-C:\Projects\Data-Structures\LinkedList.cs
+extractFile('C:\\\Projects\\\Data-Structures\\\LinkedList.cs')
 [/input]
 [output]
 File name: LinkedList
@@ -235,7 +258,7 @@ File extension: cs
 [/test]
 [test]
 [input]
-E:\P\JAVA\src\oop\Main.java
+extractFile('E:\\\P\\\JAVA\\\src\\\oop\\\Main.java')
 [/input]
 [output]
 File name: Main
@@ -244,7 +267,7 @@ File extension: java
 [/test]
 [test]
 [input]
-E:\EX\csharp\CatShop.sln
+extractFile('E:\\\EX\\\csharp\\\CatShop.sln')
 [/input]
 [output]
 File name: CatShop
@@ -253,7 +276,7 @@ File extension: sln
 [/test]
 [test]
 [input]
-E:\P\JAVA\src\oop\Bor.xml
+extractFile('E:\\\P\\\JAVA\\\src\\\oop\\\Bor.xml')
 [/input]
 [output]
 File name: Bor
@@ -262,7 +285,7 @@ File extension: xml
 [/test]
 [test]
 [input]
-E:\Trash\MoreTrash\SoftUniExamsSolutions.txt
+extractFile('E:\\\Trash\\\MoreTrash\\\SoftUniExamsSolutions.txt')
 [/input]
 [output]
 File name: SoftUniExamsSolutions
@@ -271,7 +294,7 @@ File extension: txt
 [/test]
 [test]
 [input]
-E:\TECH-SVN\Java\07-Objects-and-Classes\Exercise\07.Objects-and-Classes-Exercise.docx
+extractFile('E:\\\TECH-SVN\\\Java\\\07-Objects-and-Classes\\\Exercise\\\07.Objects-and-Classes-Exercise.docx')
 [/input]
 [output]
 File name: 07.Objects-and-Classes-Exercise
@@ -282,19 +305,29 @@ File extension: docx
 [/code-task]
 [/slide]
 
-[slide]
+
+[slide hideTitle]
 # Problemă: String Substring
-[code-task title="String Substring" taskId="js-advanced-text-processing-String-Substring" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="String Substring" taskId="js-fundamentals-pt2-text-processing-String-Substring" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function stringSubstring(input){
-  // Write your code here
+function stringSubstring(firstStr, secondStr){
+  // Scrieți codul dvs. aici
 }
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
-## Descriere
+# Descriere
 Intrarea va fi dată ca **două** șiruri separate.
 
 Scrieți o funcție care verifică dacă textul dat conține un cuvânt anume.
@@ -303,22 +336,21 @@ Comparația ar trebui să fie **nesensibilă la majuscule.**
 
 După ce găsiți rezultatul, imprimați cuvântul și opriți programul.
 
-Dacă nu găsiți cuvântul print `{word} not found!`
+Dacă nu găsiți cuvântul print: "\{**word**\} **not found!**".
 
 
-# Exemplu
+## Examples
    |**Intrare**|**Ieșire**|
 | --- | --- |
-|`['javascript', 'JavaScript is the best programming language']`| javascript |
-|`['python','JavaScript is the best programming language']`| python not found\! |
+| stringSubstring('javascript', 'JavaScript is the best programming language') | javascript |
+| stringSubstring('python','JavaScript is the best programming language') | python not found\! |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-javascript
-JavaScript is the best programming language
+stringSubstring('javascript', 'JavaScript is the best programming language')
 [/input]
 [output]
 javascript
@@ -326,8 +358,7 @@ javascript
 [/test]
 [test open]
 [input]
-python
-JavaScript is the best programming language
+stringSubstring('python','JavaScript is the best programming language')
 [/input]
 [output]
 python not found!
@@ -335,8 +366,7 @@ python not found!
 [/test]
 [test]
 [input]
-java
-Java is the best programming language
+stringSubstring('java','Java is the best programming language')
 [/input]
 [output]
 java
@@ -344,8 +374,7 @@ java
 [/test]
 [test]
 [input]
-chushki
-Jaba is chushki the best jaba programming language
+stringSubstring('chushki','Jaba is chushki the best jaba programming language')
 [/input]
 [output]
 chushki
@@ -353,8 +382,7 @@ chushki
 [/test]
 [test]
 [input]
-chushki
-bla bla bla
+stringSubstring('chushki','bla bla bla')
 [/input]
 [output]
 chushki not found!
@@ -362,8 +390,7 @@ chushki not found!
 [/test]
 [test]
 [input]
-drashki
-bla bla bla drashki
+stringSubstring('drashki','bla bla bla drashki')
 [/input]
 [output]
 drashki
@@ -371,8 +398,7 @@ drashki
 [/test]
 [test]
 [input]
-drashki
-bla bla bla nodrashki
+stringSubstring('drashki','bla bla bla nodrashki')
 [/input]
 [output]
 drashki not found!
@@ -382,34 +408,43 @@ drashki not found!
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problemă: Replace Repeating Chars
-[code-task title="Replace Repeating Chars" taskId="js-advanced-text-processing-Replace-Repeating-Chars" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Replace Repeating Chars" taskId="js-fundamentals-pt2-text-processing-Replace-Repeating-Chars" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
 function replaceRepeatingChars(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
-## Descriere
+# Descriere
 Scrieți o funcție care primește un singur șir și **înlocuiește** orice secvență din **aceleași litere** cu o singură literă corespunzătoare.
 
-# Exemplu
+## Examples
    |**Intrare**|**Ieșire**|
 | --- | --- |
-|`['aaaaabbbbbcdddeeeedssaa']`| abcdedsa |
-|`['qqqwerqwecccwd']`| qwerqwecwd |
+| replaceRepeatingChars('aaaaabbbbbcdddeeeedssaa') | abcdedsa |
+| replaceRepeatingChars('qqqwerqwecccwd') | qwerqwecwd |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-aaaaabbbbbcdddeeeedssaa
+replaceRepeatingChars('aaaaabbbbbcdddeeeedssaa')
 [/input]
 [output]
 abcdedsa
@@ -417,7 +452,7 @@ abcdedsa
 [/test]
 [test open]
 [input]
-qqqwerqwecccwd
+replaceRepeatingChars('qqqwerqwecccwd')
 [/input]
 [output]
 qwerqwecwd
@@ -425,7 +460,7 @@ qwerqwecwd
 [/test]
 [test]
 [input]
-aaaaaaaa
+replaceRepeatingChars('aaaaaaaa')
 [/input]
 [output]
 a
@@ -433,7 +468,7 @@ a
 [/test]
 [test]
 [input]
-bbbbbbbbb
+replaceRepeatingChars('bbbbbbbbb')
 [/input]
 [output]
 b
@@ -441,7 +476,7 @@ b
 [/test]
 [test]
 [input]
-aaaaabbbbbbbcccceeede
+replaceRepeatingChars('aaaaabbbbbbbcccceeede')
 [/input]
 [output]
 abcede
@@ -449,7 +484,7 @@ abcede
 [/test]
 [test]
 [input]
-kkddidkkgiiggbd
+replaceRepeatingChars('kkddidkkgiiggbd')
 [/input]
 [output]
 kdidkgigbd
@@ -457,7 +492,7 @@ kdidkgigbd
 [/test]
 [test]
 [input]
-asdasdasd
+replaceRepeatingChars('asdasdasd')
 [/input]
 [output]
 asdasdasd
@@ -467,20 +502,29 @@ asdasdasd
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problemă: Pascal-Case Splitter
 
-[code-task title="Pascal-Case Splitter" taskId="js-advanced-text-processing-Pascal-Case-Splitter" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Pascal-Case Splitter" taskId="js-fundamentals-pt2-text-processing-Pascal-Case-Splitter" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function splitter(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
-## Descriere
+# Descriere
 Veți primi un **singur șir.**
 
 Acest șir este scris folosind formatul **PascalCase**.
@@ -489,19 +533,19 @@ Sarcina dvs. aici este de a împărți **fiecare cuvânt separat de șir.**
 
 Imprimați-le împreună cu **o virgulă și un spațiu.**
 
-# Exemplu
+## Examples
    |**Intrare**|**Ieșire**|
 | --- | --- |
-|`['SplitMeIfYouCanHaHaYouCantOrYouCan']`| Split, Me, If, You, Can, Ha, Ha, You, Cant, Or, You, Can |
-|`['HoldTheDoor']`| Hold, The, Door |
-|`['ThisIsSoAnnoyingToDo']`| This, Is, So, Annoying, To, Do |
+| splitter('SplitMeIfYouCanHaHaYouCantOrYouCan') | Split, Me, If, You, Can, Ha, Ha, You, Cant, Or, You, Can |
+| splitter('HoldTheDoor') | Hold, The, Door |
+| splitter('ThisIsSoAnnoyingToDo') | This, Is, So, Annoying, To, Do |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-SplitMeIfYouCanHaHaYouCantOrYouCan
+splitter('SplitMeIfYouCanHaHaYouCantOrYouCan')
 [/input]
 [output]
 Split, Me, If, You, Can, Ha, Ha, You, Cant, Or, You, Can
@@ -509,7 +553,7 @@ Split, Me, If, You, Can, Ha, Ha, You, Cant, Or, You, Can
 [/test]
 [test open]
 [input]
-HoldTheDoor
+splitter('HoldTheDoor')
 [/input]
 [output]
 Hold, The, Door
@@ -517,7 +561,7 @@ Hold, The, Door
 [/test]
 [test open]
 [input]
-ThisIsSoAnnoyingToDo
+splitter('ThisIsSoAnnoyingToDo')
 [/input]
 [output]
 This, Is, So, Annoying, To, Do
@@ -525,7 +569,7 @@ This, Is, So, Annoying, To, Do
 [/test]
 [test]
 [input]
-BdgshajTgdshDdsadasFF
+splitter('BdgshajTgdshDdsadasFF')
 [/input]
 [output]
 Bdgshaj, Tgdsh, Ddsadas, F, F
@@ -533,7 +577,7 @@ Bdgshaj, Tgdsh, Ddsadas, F, F
 [/test]
 [test]
 [input]
-AhjbhbBsgasf
+splitter('AhjbhbBsgasf')
 [/input]
 [output]
 Ahjbhb, Bsgasf
@@ -541,7 +585,7 @@ Ahjbhb, Bsgasf
 [/test]
 [test]
 [input]
-AhjbhbBsgasfCaXa
+splitter('AhjbhbBsgasfCaXa')
 [/input]
 [output]
 Ahjbhb, Bsgasf, Ca, Xa
@@ -549,7 +593,7 @@ Ahjbhb, Bsgasf, Ca, Xa
 [/test]
 [test]
 [input]
-AhjbhbBsgasNNNMfCaXa
+splitter('AhjbhbBsgasNNNMfCaXa')
 [/input]
 [output]
 Ahjbhb, Bsgas, N, N, N, Mf, Ca, Xa
@@ -557,7 +601,7 @@ Ahjbhb, Bsgas, N, N, N, Mf, Ca, Xa
 [/test]
 [test]
 [input]
-Mhjbhb
+splitter('Mhjbhb')
 [/input]
 [output]
 Mhjbhb
@@ -567,37 +611,47 @@ Mhjbhb
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problemă: Cut and Reverse
 
-[code-task title="Cut and Reverse" taskId="js-advanced-text-processing-cut-and-reverse" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Cut and Reverse" taskId="js-fundamentals-pt2-text-processing-cut-and-reverse" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
 function cutAndReverse(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
-## Descriere
+# Descriere
 Introducerea va fi un **șir unic.**
 
 Scrieți o funcție care taie șirul dat **în jumătate** și inversați cele **două jumătăți.**
 
 Imprimați fiecare jumătate pe o **linie separată.**
 
-# Exemplu
+# Example One
 |**Intrare**|**Ieșire**|
 | --- | --- |
-|`['tluciffiDsIsihTgnizamAoSsIsihT']`| ThisIsDifficult|
+| cutAndReverse('tluciffiDsIsihTgnizamAoSsIsihT') | ThisIsDifficult|
 ||ThisIsSoAmazing|
 
+# Example Two
 |**Intrare**|**Ieșire**|
 | --- | --- |
-|`['sihToDtnaCuoYteBIboJsihTtAdooGoSmI']`| IBetYouCantDoThis|
+| cutAndReverse('sihToDtnaCuoYteBIboJsihTtAdooGoSmI') | IBetYouCantDoThis|
 ||ImSoGoodAtThisJob|
 
 [/task-description]
@@ -605,7 +659,7 @@ Imprimați fiecare jumătate pe o **linie separată.**
 [tests]
 [test open]
 [input]
-tluciffiDsIsihTgnizamAoSsIsihT
+cutAndReverse('tluciffiDsIsihTgnizamAoSsIsihT')
 [/input]
 [output]
 ThisIsDifficult
@@ -614,7 +668,7 @@ ThisIsSoAmazing
 [/test]
 [test open]
 [input]
-sihToDtnaCuoYteBIboJsihTtAdooGoSmI
+cutAndReverse('sihToDtnaCuoYteBIboJsihTtAdooGoSmI')
 [/input]
 [output]
 IBetYouCantDoThis
@@ -623,7 +677,7 @@ ImSoGoodAtThisJob
 [/test]
 [test]
 [input]
-adahjfvgshfgeegy
+cutAndReverse('adahjfvgshfgeegy')
 [/input]
 [output]
 gvfjhada
@@ -632,7 +686,7 @@ ygeegfhs
 [/test]
 [test]
 [input]
-uiuyiuyuiy
+cutAndReverse('uiuyiuyuiy')
 [/input]
 [output]
 iyuiu
@@ -641,7 +695,7 @@ yiuyu
 [/test]
 [test]
 [input]
-uasdfgiuADFGAyiuKAJIDPyuiy
+cutAndReverse('uasdfgiuADFGAyiuKAJIDPyuiy')
 [/input]
 [output]
 AGFDAuigfdsau
@@ -650,7 +704,7 @@ yiuyPDIJAKuiy
 [/test]
 [test]
 [input]
-tluciffiDsdssdIsihTgnizfamAohgfSsIsihT
+cutAndReverse('tluciffiDsdssdIsihTgnizfamAohgfSsIsihT')
 [/input]
 [output]
 ThisIdssdsDifficult
@@ -659,7 +713,7 @@ ThisIsSfghoAmafzing
 [/test]
 [test]
 [input]
-VDSHvdgshVSGDA
+cutAndReverse('VDSHvdgshVSGDA')
 [/input]
 [output]
 gdvHSDV
@@ -669,10 +723,4 @@ ADGSVhs
 [/tests]
 [/code-task]
 [/slide]
-
-[slide]
-# Rezultatele  Temei de acasă
-
-[tasks-results/]
-
-[/slide]
+ 

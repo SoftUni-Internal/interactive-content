@@ -1,12 +1,7 @@
 # Manipularea Corzilor
 
-[slide]
+[slide hideTitle]
 # Concatenare
-
-[vimeo-video]
-[stream language="EN" videoId="489817452/a5c7ddac9c" default /]
-[stream language="RO" videoId="489817452/a5c7ddac9c"  /]
-[/video-vimeo]
 
 **concatenarea** în JS se face cu operatorii: `+` și `+ =` sau prin metoda `concat()`.
 
@@ -42,13 +37,9 @@ Acest lucru se datorează faptului că `+` și `+=` și metoda `concat()` fac la
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Căutarea de Subșiruri
 
-[vimeo-video]
-[stream language="EN" videoId="489817455/1fa425821a" default /]
-[stream language="RO" videoId="489817455/1fa425821a"  /]
-[/video-vimeo]
 
 Pentru a **găsi** un subșir, putem folosi `indexOf()` sau `lastIndexOf()`.
 
@@ -56,8 +47,8 @@ Aceste două metode sunt **sensibile la majuscule**, aceasta înseamnă că, dac
 
 Ambii pot **lua până la doi parametri:**
 
-- Primul este cuvântul pe care îl caută.
-- Al doilea este indicele de pornire.
+- Primul este cuvântul pe care îl caută
+- Al doilea este indicele de pornire
 
 Iată un exemplu de utilizare a `indexOf ()`
 
@@ -98,18 +89,13 @@ Iar al doilea returnează `-1` pentru că nu găsește nimic.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Extragerea de Subșiruri
-
-[vimeo-video]
-[stream language="EN" videoId="489817495/403a2d42fe" default /]
-[stream language="RO" videoId="489817495/403a2d42fe"  /]
-[/video-vimeo]
 
 Pentru a **extrage** un subșir, putem folosi `substring()`. Această metodă are doi parametri:
 
-- Primul este indicele de start.
-- Al doilea este indicele final.
+- Primul este indicele de start
+- Al doilea este indicele final
 
 Și va returna partea de la **indexul de început** până la **indexul final**.
 
@@ -138,7 +124,7 @@ Asta pentru că nu i-am dat al doilea parametru, care este indicele **sfârșit*
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Operațiuni cu șiruri
 
 [vimeo-video]
@@ -154,8 +140,8 @@ Asta înseamnă că trebuie s-o atribuim unei variabile.
 
 **Înlocuire** este o metodă care necesită doi parametri:
 
--  model
-- înlocuire
+- Model
+- Inlocuire
 
 Pentru partea **model** putem folosi **Regex** sau **șir**.
 
@@ -174,15 +160,10 @@ console.log(replacedStr);
 
 [/slide]
 
-[slide]
-# Problem: Substring
+[slide hideTitle]
+# Problem with Solution: Substring
 
-[vimeo-video]
-[stream language="EN" videoId="489817604/03cd593d45" default /]
-[stream language="RO" videoId="489817604/03cd593d45"  /]
-[/video-vimeo]
-
-[code-task title="Problem: Substring" taskId="text-processing-lab-2" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Substring" taskId="js-fundamentals-pt2-text-processing-lab-Substring" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function substring(input){
@@ -190,140 +171,43 @@ function substring(input){
 }
 ```
 [/code-editor]
-[task-description]
-
-## Descriere
-Scrieți o funcție care primește **un șir și două numere.**
-
-Numerele vor fi un indice de pornire și un număr de elemente pentru subșir.
-
-Imprimați rezultatul.
-
-# Exemplu
-   |**Intrare**|**Ieșire**|
-| --- | --- |
-|`['ASentance', '1', '8']`| Sentance |
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-ASentance
-1
-8
-[/input]
-[output]
-Sentance
-[/output]
-[/test]
-[test]
-[input]
-gashajGAHJGAasghaj
-4
-8
-[/input]
-[output]
-ajGAHJGA
-[/output]
-[/test]
-[test]
-[input]
-gasjGAHJAasghaj
-0
-10
-[/input]
-[output]
-gasjGAHJAa
-[/output]
-[/test]
-[test]
-[input]
-gasjGA48HJAasghaj
-5
-1
-[/input]
-[output]
-A
-[/output]
-[/test]
-[test]
-[input]
-gasjGA48HJAahaj
-5
-5
-[/input]
-[output]
-A48HJ
-[/output]
-[/test]
-[test]
-[input]
-jjjasjA48HJAko88/(())haj
-10
-10
-[/input]
-[output]
-JAko88/(()
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-[slide]
-# Solution: Substring
-
-[vimeo-video]
-[stream language="EN" videoId="489816947/090fda2f05" default /]
-[stream language="RO" videoId="489816947/090fda2f05"  /]
-[/video-vimeo]
-
-[code-task title="Solution: Substring" taskId="text-processing-lab-2-solution" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-adapter]
 ```
-// Different vido code
-function solve(index) {
-    let word = index[0];
-    let index1 = Number(index[1]);
-    let index2 = Number(index[2]);
-
-    let sub = word.substring(index1, index1 + index2)
-    console.log(sub)
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
-[/code-editor]
+[/code-adapter]
 [task-description]
-## Descriere
+
+# Descriere
 Scrieți o funcție care primește **un șir și două numere.**
 
 Numerele vor fi un indice de pornire și un număr de elemente pentru subșir.
 
 Imprimați rezultatul.
 
-# Exemplu
+## Exemplu
    |**Intrare**|**Ieșire**|
 | --- | --- |
-|`['ASentance', '1', '8']`| Sentance |
+| substring('ASentence', 1, 8) | Sentence |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-ASentance
-1
-8
+substring('ASentence', 1, 8)
 [/input]
 [output]
-Sentance
+Sentence
 [/output]
 [/test]
 [test]
 [input]
-gashajGAHJGAasghaj
-4
-8
+substring('gashajGAHJGAasghaj', 4, 8)
 [/input]
 [output]
 ajGAHJGA
@@ -331,9 +215,7 @@ ajGAHJGA
 [/test]
 [test]
 [input]
-gasjGAHJAasghaj
-0
-10
+substring('gasjGAHJAasghaj', 0, 10)
 [/input]
 [output]
 gasjGAHJAa
@@ -341,9 +223,7 @@ gasjGAHJAa
 [/test]
 [test]
 [input]
-gasjGA48HJAasghaj
-5
-1
+substring('gasjGA48HJAasghaj', 5, 1)
 [/input]
 [output]
 A
@@ -351,9 +231,7 @@ A
 [/test]
 [test]
 [input]
-gasjGA48HJAahaj
-5
-5
+substring('gasjGA48HJAahaj', 5, 5)
 [/input]
 [output]
 A48HJ
@@ -361,9 +239,7 @@ A48HJ
 [/test]
 [test]
 [input]
-jjjasjA48HJAko88/(())haj
-10
-10
+substring('jjjasjA48HJAko88/(())haj', 10, 10)
 [/input]
 [output]
 JAko88/(()
@@ -373,13 +249,9 @@ JAko88/(()
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Împărțirea unui Șir
 
-[vimeo-video]
-[stream language="EN" videoId="489816954/24e31211e5" default /]
-[stream language="RO" videoId="489816954/24e31211e5"  /]
-[/video-vimeo]
 Când vrem să separăm cuvintele într-un șir, folosim metoda `split()`.
 
 Împarte un **șir** într-o listă ordonată folosind un model \(separator\), care este primul parametru și returnează o **matrice**.
@@ -399,14 +271,14 @@ let divided = str.split(' ');
 console.log(divided);
 ```
 
-# Găsirea într-un Șir
+## Găsirea într-un Șir
 
 Pentru a găsi o anumită parte a unui șir, folosim metoda `include()`.
 
 Această metodă are doi parametri:
 
-- Șirul pe care îl căutăm.
-- Poziția în care să începeți căutarea. Acesta este opțional.
+- Șirul pe care îl căutăm
+- Poziția în care să începeți căutarea. Acesta este opțional
 
 Copiază **șirul** și caută-l în cel principal.
 
@@ -426,20 +298,15 @@ console.log(text.includes('js'));
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Repetarea într-un Șir
-
-[vimeo-video]
-[stream language="EN" videoId="489817061/4454e2aa76" default /]
-[stream language="RO" videoId="489817061/4454e2aa76"  /]
-[/video-vimeo]
 
 Când vrem să **repetăm** un **șir** în JS, folosim `repeat()`. Aceasta ne permite să facem un anumit număr de **copii** ale aceluiși **șir**.
 
 Primește doi parametri:
 
--  String
--  Count
+- String
+- Count
 
 După ce este apelat la un anumit **șir**, **repetați** va lua **șirul** pe care l-am dat și îl va **înmulți** cu **numărul** pe care îl trecem la aceasta.
 
@@ -455,133 +322,38 @@ console.log(str.repeat(5));
 
 [/slide]
 
-[slide]
-# Problem: Censored Words
-
-[vimeo-video]
-[stream language="EN" videoId="489817109/c566f94bb4" default /]
-[stream language="RO" videoId="489817109/c566f94bb4"  /]
-[/video-vimeo]
-
-[code-task title="Censored Words" taskId="text-processing-lab-3" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[slide hideTitle]
+# Problem with Solution: Censored Words
+[code-task title="Censored Words" taskId="js-fundamentals-pt2-text-processing-Censored-Words" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
-function censoredWords(input){
+function censoredWords(sentence, word){
   // Write your code here
 }
 ```
 [/code-editor]
-[task-description]
-## Descriere
-Scrieți o funcție care primește un text ca prim parametru și un singur cuvânt ca al doilea.
-
-Găsiți toate aparițiile acestui cuvânt în text și **înlocuiți-le** cu numărul corespunzător de `*`.
-
-# Exemplu
-   |**Intrare**|**Ieșire**|
-| --- | --- |
-|`['A small sentence with some words', 'small']`| A \*\*\*\*\* sentence with some words |
-
-
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-A small sentence with some words
-small
-[/input]
-[output]
-A \*\*\*\*\* sentence with some words
-[/output]
-[/test]
-[test]
-[input]
-soallsentencewithsomewords
-so
-[/input]
-[output]
-\*\*allsentencewith\*\*mewords
-[/output]
-[/test]
-[test]
-[input]
-pesho gosho stamat pesho
-pesho
-[/input]
-[output]
-\*\*\*\*\* gosho stamat \*\*\*\*\*
-[/output]
-[/test]
-[test]
-[input]
-aa bb aa ca pesho gosho stamat pesho
-a
-[/input]
-[output]
-\*\* bb \*\* c\* pesho gosho st\*m\*t pesho
-[/output]
-[/test]
-[test]
-[input]
-repeat word repeat repeat word word repeat
-repeat word
-[/input]
-[output]
-\*\*\*\*\*\*\*\*\*\*\* repeat \*\*\*\*\*\*\*\*\*\*\* word repeat
-[/output]
-[/test]
-[test]
-[input]
-aaa heyyy a heyyy abv hey abc
-heyyy
-[/input]
-[output]
-aaa \*\*\*\*\* a \*\*\*\*\* abv hey abc
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-[slide]
-# Solution: Censored Words
-
-[vimeo-video]
-[stream language="EN" videoId="489817292/f7357145f2" default /]
-[stream language="RO" videoId="489817292/f7357145f2"  /]
-[/video-vimeo]
-
-[code-task title="Censored Words" taskId="text-processing-lab-3-solution" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-
+[code-adapter]
 ```
-//Different vido code
-
-function censoredWords(input){
-
-    let text = input[0];
-    let word = input[1];
-
-    while (text.indexOf(word) > -1) {
-        text = text.replace(word, '*'.repeat(word.length));
-    }
-    console.log(text);
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
-[/code-editor]
+[/code-adapter]
 [task-description]
-## Descriere
+
+# Descriere
 Scrieți o funcție care primește un text ca prim parametru și un singur cuvânt ca al doilea.
 
-Găsiți toate aparițiile acestui cuvânt în text și **înlocuiți-le** cu numărul corespunzător de `*`.
+Găsiți toate aparițiile acestui cuvânt în text și **înlocuiți-le** cu numărul corespunzător de "\*".
 
 # Exemplu
    |**Intrare**|**Ieșire**|
 | --- | --- |
-|`['A small sentence with some words', 'small']`| A \*\*\*\*\* sentence with some words |
+| censoredWords('A small sentence with some words', 'small') | A \*\*\*\*\* sentence with some words |
+
 
 
 [/task-description]
@@ -589,8 +361,7 @@ Găsiți toate aparițiile acestui cuvânt în text și **înlocuiți-le** cu nu
 [tests]
 [test open]
 [input]
-A small sentence with some words
-small
+censoredWords('A small sentence with some words', 'small')
 [/input]
 [output]
 A \*\*\*\*\* sentence with some words
@@ -598,8 +369,7 @@ A \*\*\*\*\* sentence with some words
 [/test]
 [test]
 [input]
-soallsentencewithsomewords
-so
+censoredWords('soallsentencewithsomewords', 'so')
 [/input]
 [output]
 \*\*allsentencewith\*\*mewords
@@ -607,8 +377,7 @@ so
 [/test]
 [test]
 [input]
-pesho gosho stamat pesho
-pesho
+censoredWords('pesho gosho stamat pesho', 'pesho')
 [/input]
 [output]
 \*\*\*\*\* gosho stamat \*\*\*\*\*
@@ -616,8 +385,7 @@ pesho
 [/test]
 [test]
 [input]
-aa bb aa ca pesho gosho stamat pesho
-a
+censoredWords('aa bb aa ca pesho gosho stamat pesho', 'a')
 [/input]
 [output]
 \*\* bb \*\* c\* pesho gosho st\*m\*t pesho
@@ -625,8 +393,7 @@ a
 [/test]
 [test]
 [input]
-repeat word repeat repeat word word repeat
-repeat word
+censoredWords('repeat word repeat repeat word word repeat', 'repeat word')
 [/input]
 [output]
 \*\*\*\*\*\*\*\*\*\*\* repeat \*\*\*\*\*\*\*\*\*\*\* word repeat
@@ -634,8 +401,7 @@ repeat word
 [/test]
 [test]
 [input]
-aaa heyyy a heyyy abv hey abc
-heyyy
+censoredWords('aaa heyyy a heyyy abv hey abc', 'heyyy')
 [/input]
 [output]
 aaa \*\*\*\*\* a \*\*\*\*\* abv hey abc
@@ -645,14 +411,9 @@ aaa \*\*\*\*\* a \*\*\*\*\* abv hey abc
 [/code-task]
 [/slide]
 
-
-[slide]
+[slide hideTitle]
 # Metoda trimming
 
-[vimeo-video]
-[stream language="EN" videoId="489817107/ed4fac30e5" default /]
-[stream language="RO" videoId="489817107/ed4fac30e5"  /]
-[/video-vimeo]
 
 Pentru a **elimina spațiile albe** folosim metoda `trim()`.
 
@@ -692,13 +453,9 @@ console.log(str.trimEnd());
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Începe Cu sau se Termină Cu
 
-[vimeo-video]
-[stream language="EN" videoId="489817165/3eb9153a87" default /]
-[stream language="RO" videoId="489817165/3eb9153a87"  /]
-[/video-vimeo]
 
 Cu `startsWith()`, putem verifica dacă un șir începe cu un cuvânt specific, că vom trece la metodă ca parametru.
 
@@ -710,8 +467,8 @@ Dacă găsesc șirul, vor reveni adevărat și dacă nu - fals.
 
 **StartsWith** poate primi doi parametri:
 
-- Cuvântul căutat în șir.
-- Și **poziția** de la care să înceapă indexul. Acest parametru este opțional.
+- Cuvântul căutat în șir
+- Și **poziția** de la care să înceapă indexul. Acest parametru este opțional
 
 **EndsWith** poate primi, de asemenea, doi parametri.
 
@@ -741,13 +498,9 @@ console.log(sentence.endsWith('John', 10));
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Padding la Început și la Sfârșit
 
-[vimeo-video]
-[stream language="EN" videoId="489817167/90a1d0997d" default /]
-[stream language="RO" videoId="489817167/90a1d0997d"  /]
-[/video-vimeo]
 
 Dacă vrem să **adăugăm** un șir **de un anumit număr de timp** la **începutul** sau **la** sfârșitul al unui alt șir, putem folosi `padStart()` sau `padEnd()` metode.
 
@@ -775,134 +528,37 @@ console.log(padded);
 
 [/slide]
 
-[slide]
-# Problem: Count String Occurrences
+[slide hideTitle]
+# Problem with Solution: Count String Occurrences
 
-[vimeo-video]
-[stream language="EN" videoId="489817230/bda8e696ff" default /]
-[stream language="RO" videoId="489817230/bda8e696ff"  /]
-[/video-vimeo]
-
-[code-task title="Count String Occurrences" taskId="text-processing-lab-4" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Count String Occurrences" taskId="js-fundamentals-pt2-text-processing-Count-String-Occurrences" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
-function countStringOccurrences(input){
+function countStringOccurrences(text, str){
   // Write your code here
 }
 ```
 [/code-editor]
-[task-description]
-## Descriere
-Scrieți o funcție care primește o bucată de text și un șir pe care trebuie să le căutați în ea.
-
-Imprimați toate aparițiile acelui cuvânt în șir.
-
-# Exemplu
-   |**Intrare**|**Ieșire**|
-| --- | --- |
-|`['This is a word and it also is a sentence','is']`| 2 |
-
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-This is a word and it also is a sentence
-is
-[/input]
-[output]
-2
-[/output]
-[/test]
-[test]
-[input]
-az ti toi tq to nie vie te az az az
-az
-[/input]
-[output]
-4
-[/output]
-[/test]
-[test]
-[input]
-az toi ti toi tq to nie vie te az az az
-toi
-[/input]
-[output]
-2
-[/output]
-[/test]
-[test]
-[input]
-az toi ti toi tq to nie vie az az az
-te
-[/input]
-[output]
-0
-[/output]
-[/test]
-[test]
-[input]
-az toi ti toi tq to nie vie az az az
-tq
-[/input]
-[output]
-1
-[/output]
-[/test]
-[test]
-[input]
-az tq tq tq tq
-tq
-[/input]
-[output]
-4
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-[/slide]
-
-[slide]
-# Solution: Count String Occurrences
-
-[vimeo-video]
-[stream language="EN" videoId="489817236/3a7e106620" default /]
-[stream language="RO" videoId="489817236/3a7e106620"  /]
-[/video-vimeo]
-
-[code-task title="Count String Occurrences" taskId="text-processing-lab-4-solution" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-
+[code-adapter]
 ```
-//Different vido code
-function countStringOccurrences(input){
-   let sentence = input[0].split(' ')
-   let keyWord = input[1];
-   let occs = 0
-
-    for(word of sentence){
-        if(word === keyWord){
-            occs++
-        }
-    }
-    console.log(occs)
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
-[/code-editor]
+[/code-adapter]
 [task-description]
-## Descriere
+# Descriere
 Scrieți o funcție care primește o bucată de text și un șir pe care trebuie să le căutați în ea.
 
 Imprimați toate aparițiile acelui cuvânt în șir.
 
-# Exemplu
+## Exemplu
    |**Intrare**|**Ieșire**|
 | --- | --- |
-|`['This is a word and it also is a sentence','is']`| 2 |
+| countStringOccurrences('This is a word and it also is a sentence', 'is') | 2 |
 
 
 [/task-description]
@@ -910,8 +566,7 @@ Imprimați toate aparițiile acelui cuvânt în șir.
 [tests]
 [test open]
 [input]
-This is a word and it also is a sentence
-is
+countStringOccurrences('This is a word and it also is a sentence','is')
 [/input]
 [output]
 2
@@ -919,8 +574,7 @@ is
 [/test]
 [test]
 [input]
-az ti toi tq to nie vie te az az az
-az
+countStringOccurrences('az ti toi tq to nie vie te az az az', 'az')
 [/input]
 [output]
 4
@@ -928,8 +582,7 @@ az
 [/test]
 [test]
 [input]
-az toi ti toi tq to nie vie te az az az
-toi
+countStringOccurrences('az toi ti toi tq to nie vie te az az az', 'toi')
 [/input]
 [output]
 2
@@ -937,8 +590,7 @@ toi
 [/test]
 [test]
 [input]
-az toi ti toi tq to nie vie az az az
-te
+countStringOccurrences('az toi ti toi tq to nie vie az az az', 'te')
 [/input]
 [output]
 0
@@ -946,8 +598,7 @@ te
 [/test]
 [test]
 [input]
-az toi ti toi tq to nie vie az az az
-tq
+countStringOccurrences('az toi ti toi tq to nie vie az az az', 'tq')
 [/input]
 [output]
 1
@@ -955,8 +606,7 @@ tq
 [/test]
 [test]
 [input]
-az tq tq tq tq
-tq
+countStringOccurrences('az tq tq tq tq', 'tq')
 [/input]
 [output]
 4

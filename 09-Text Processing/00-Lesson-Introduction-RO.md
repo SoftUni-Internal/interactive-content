@@ -1,22 +1,16 @@
-[slide]
-# Introducerea lecției
+# Lesson Introduction
 
-[vimeo-video]
-[stream language="EN" videoId="489817304/7147cfd46b" default /]
-[stream language="RO" videoId="489817304/7147cfd46b"  /]
-[/video-vimeo]
+[slide hideTitle]
+# Lesson Content
 
-## În această lecție veți afla despre:
 
-**1. Ce sunt șirurile în JavaScript**
+## In this lesson you will learn:
 
-- O vizualizare mai aprofundată a șirurilor
+**1. What strings in JavaScript are**
 
-**2. Cele mai utilizate metode de manipulare a șirurilor**
+-  A more in-depth view of strings
 
-- Metoda searching
-- Metoda splitting
-- Metoda trimming
-- Și altele
+**2. The most used methods for manipulating strings**
 
+-  Searching, splitting, trimming, and more
 [/slide]

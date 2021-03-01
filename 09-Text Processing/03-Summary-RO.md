@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Rezumat
 
 [vimeo-video]
@@ -8,32 +8,43 @@
 
 **În această lecție am învățat că:**
 
-- **Șirurile** sunt serii imuabile de **caractere**
+- **Strings** are an immutable series of **characters**
 
-- Au metode încorporate pe care le folosim pentru a le procesa.
+- They have built-in methods that we use to process them, some of them are
 
-- Exemple de metode încorporate:
+   -  `concat()`
 
-Concatenați două șiruri folosind metoda `concat()`:
+   ```js
+   let str = 'Hello, ';
+   let concatenated = str.concat('John!');
+   ```
 
-```js live
-let str = "Hello, "
-console.log(str.concat("John!"))
-```
+   -  `split()`
 
-Împărțiți un șir folosind metoda `split()`:
+   ```js
+   let str = 'Hello, John';
+   let spitted = str.split(', ');
+   ```
 
-```js live
-let str = "Hello, John"
-console.log(str.split(", "))
-```
+   -  `includes()`
 
-Găsiți un șir specific folosind metoda `includes()`:
+   ```js
+   let str = 'Hello, John';
+   let include = str.includes('John');
+   ```
 
-```js live
-let str = "Hello, John"
-console.log(str.includes("John"))
-```
+-  Most of the methods return a new string
 
-- Majoritatea metodelor returnează un șir nou.
+## In the next lesson, you will learn:
+
+-  Regular Expressions
+
+   -  regEx Syntax
+
+   -  quantifiers
+
+   -  grouping
+
+   -  backreferences
+   
 [/slide]
