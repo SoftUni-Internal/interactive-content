@@ -377,6 +377,12 @@ Write a program to convert from **days** to **minutes**:
 | --- | --- |
 | 5 | 7200 |
 
+[hints]
+[hint]
+One day has 24 hours, one hour has 60 minutes, so one day has 1440 minutes.
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
