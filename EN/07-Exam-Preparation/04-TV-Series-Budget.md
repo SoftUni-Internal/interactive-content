@@ -47,8 +47,8 @@ Print a single line on the console:
 The result must be formatted to two decimal places.
 
 ## Example
-| **Input** | **Output** | **Comments** |
-| --- | --- | --- |
+| **Input** | **Output** | 
+| --- | --- |
 | 10 | You bought all the series and left with 0.50$ | 
 | 3 | 
 | Thrones | 
