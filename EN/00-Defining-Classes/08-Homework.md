@@ -2917,7 +2917,7 @@ The information will come in **one of** the following formats:
 - `Cymric <name> <furLength>`
 - `DomesticShorthair  <name> <meowingVolume>`
 
-On the last line after the command `End` you will receive а **name** of a cat. 
+On the last line after the command `End` you will receive a **name** of a cat. 
 
 You should print that cat and round the number of its s **two digits** after the decimal separator.
 
