@@ -84,7 +84,6 @@ It is also used to describe the **return value** of `remove()`.
 ```
 
 ```
-[/code-editor]
 [task-description]
 ## Description
 
