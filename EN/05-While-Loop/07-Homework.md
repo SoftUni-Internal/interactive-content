@@ -31,7 +31,7 @@ function adapter(input, code) {
 # Description
 Create a program, which sums all the digits of a given number:
 
-* You receive a number from the console
+* You will receive a number from the console
 * **Sum** its **digits**
 * Print the sum to the console
 
@@ -123,10 +123,10 @@ function adapter(input, code) {
 # Description
 Create a program, which finds a given **favorite book** in an array of books: 
 
-* You receive a string, representing the favorite **book's name**
-* Next, you receive book names until the favorite book
-* Print "**Invalid book:** \{**book name**\}" for all invalid books
-* Print "**Book found!**", when you encounter the favorite book's name
+* You will receive a string, representing the favorite **book's title**
+* Next, you will receive book titles until the favorite book
+* Print "**Invalid book:** \{**book title**\}" for all invalid books
+* Print "**Book found!**", when you encounter the favorite book's title
 * Break the loop after you reach the favorite book
 
 # Example
@@ -233,7 +233,7 @@ function adapter(input, code) {
 # Description
 Create a program, which finds the **largest** and the **smallest** number in a sequence:
 
-* You receive integers until the **END** command
+* You will receive integers until the **END** command
 * Print the **largest** and the **smallest** integer
 
 # Example
@@ -329,15 +329,15 @@ function adapter(input, code) {
 [task-description]
 # Description
  
-Create a program, determines if a number is special: 
+Create a program, which determines if a number is special: 
 
-* You receive a number as a string
+* You will receive a number as a string
 
 * Print "\{**num**\} **is special**", if the number is special
 
 * Otherwise, print "\{**num**\} **is not special**"
 
-The special number is a number **divisible by all of its digits** without remainder.
+The special number is a number **divisible by all of its digits** without a remainder.
 
 # Example
 | **Input** | **Output** |
@@ -431,9 +431,9 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program, calculates bonus points based on the following rules: 
+Create a program, which calculates bonus points based on the following rules: 
 
-* You receive an **integer** **x** and an **array** from the console
+* You will receive an **integer** **x** and an **array** from the console
 * Keep processing the integers in the array until you find the **same one as x*
 * When you find it, multiply the value of the number **before it** by 2 and print it
 
@@ -532,9 +532,9 @@ function adapter(input, code) {
 # Description
 Create a program, which prints a sequence of numbers up to a given input, based on the following rules: 
 
-- You receive a number **n** from the console
-- Print a **sequence** of numbers, which are **smaller than** or **equal to** **n**, and satisfy the following condition:
-  - Each number is equal to the previous one multiplied by **2** plus **1**
+- You will receive a number **n** from the console
+- Print a **sequence** of numbers, which are **less than** or **equal to** **n**, and fulfill the following condition:
+  - Each number has to be equal to the previous one multiplied by **2** plus **1**
 
 # Example
   | **Input** | **Output** |
@@ -646,7 +646,7 @@ function adapter(input, code) {
 # Description
 Create a program, which manages an account balance:
 
-* You receive the **amount of money** for each transaction untill the **END** command
+* You will receive the **amount of money** for each transaction until the **END** command
 * **Add** the money to the **balance** and **print**: "**Increase:** \{**money**\}", format **money** to the **2nd digit** after the decimal point
 * After **END**, calculate and **print** the total balance: "**Total:** \{**balance**\}", format **balance** to the **2nd digit** after the decimal point
 
