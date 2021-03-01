@@ -1,5 +1,5 @@
 
-# Iterable\<T\> and Iterator\<T\>
+# Iterators
 
 [slide hideTitle]
 
@@ -13,7 +13,7 @@ The Collection interface extends Iterable and hence all child classes of Collect
 
 [slide hideTitle]
 
-# Iterable\<T\>
+# Iterable
 
 `Iterable<T>` is the root interface of the Java collection classes.
 
@@ -23,17 +23,24 @@ A class that implements the `Iterable<T>` can be used with the new for-loop.
 
 It does that by internally calling the `iterator()` method on the object.
 
-## Iterable\<T\> Methods
+## Iterable Methods
 
 - Iterable `iterator()` method
 
 The Iterable `iterator()` method returns an iterator over elements of type T.
 
-In the following example, we have a List which extends `Iterable<T>`.
+The `iterator()` method of this List returns an Iterator of type String.
 
-The `iterator()` method of this List returns Iterator of type String.
+We can use all the Iterator methods to iterate over a collection.
 
-So, we can use all the Iterator methods to iterate over a collection.
+```java
+List<String> names = new ArrayList<>();
+names.add("Ben");
+names.add("Mary");
+names.add("Oliver");
+
+Iterator<String> iterator = names.iterator();
+```
 
 - `hasnext()` method
 
@@ -41,7 +48,7 @@ The `hasNext()` - method returns true if the iterator has more elements, and fal
 
 So, we pass the `iterator.hasNext()` into the while loop and in this way we begin to iterate over the collection.
 
-We use an `iterator.next()` - method to get the next element from the collection.
+We use the `iterator.next()` method to get the next element from the collection.
 
 ```java live
 List<String> names = new ArrayList<>();
@@ -65,8 +72,6 @@ The forEach() method takes a Java Lambda Expression as a parameter.
 
 This lambda expression is called once for each element in the Iterable. 
 
-In the following example, we have a List which extends `Iterable<T>`.
-
 We use the `forEach()` method to iterate over the collection.
 
 ```java
@@ -83,8 +88,6 @@ names.forEach((name) -> {
 - `spliterator()`
 
 The iterable `spliterator()` method of this List returns Spliterator of type String.
-
-The following exampl shows `Spliterator.forEachRemaining()` method works in the same way as `ArrayList.foreach()`.
 
 It provides **better performance**.
 
@@ -105,7 +108,7 @@ names.forEachRemaining((name) -> System.out.println(name));
 
 [slide hideTitle]
 
-# Iterator\<T\>
+# Iterator
 
 The `iterator()` method returns a `new Iterator` which implements `Iterator<String>` and passes them to the `iterator()` method.
 
@@ -122,7 +125,7 @@ public class NamesList implements Iterable<String> {
     // ...
 }
 ```
-Let's create a field `String[] names` where we are going to save our names.
+Let us create a field `String[] names` where we are going to save our names.
 
 ```java
 public class NamesList implements Iterable<String> {
@@ -132,7 +135,7 @@ public class NamesList implements Iterable<String> {
 }
 ```
 
-Next step is to create a constructor.
+The next step is to create a constructor.
 
 Our constructor accepts varargs (of type String) so, we can create **multiple instances of the object** with different number of arguments each time we create it.
 
@@ -176,13 +179,13 @@ In the constructor, we set the initial value of the field `counter` to 0.
 
 Next, we implement the `hasNext()` - method which is mandatory when we implement the Iterator interface.
 
-The boolean `hasNext()` - method returns `true` every time reach the name starts with `A`.
+The boolean `hasNext()` - method returns `true` every time the name starts with `A`.
 
-The next one method which is mandatory to implement is the `next()` - method.
+The next one method which is mandatory to implement is the `next()` method.
 
-This method return the **current** name from our "**names**" - array.
+This method return the **current** name from our `names` array.
 
-The last thing, we have to do is to return `new NamesIterator()` in the `iterator()` - method.
+Lastly, we have to return `new NamesIterator()` in the `iterator()` method.
 
 ```java
 public class NamesList implements Iterable<String> {
