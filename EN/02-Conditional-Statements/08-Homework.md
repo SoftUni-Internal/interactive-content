@@ -28,7 +28,7 @@ function adapter(input, code) {
 
 Create a program, which verifies a password:
 
-* You receive a string: the password **guess**
+* You will receive a string: the password **guess**
 * Print "**Welcome**" if the password guess is "**s3cr3t!**"
 * Print "**Wrong password!**" in all other cases 
 
@@ -98,9 +98,9 @@ function adapter(input, code) {
 
 Create a program, which determines if the water in a pot is boiling: 
 
-* You receive a floating-point number: the water **temperature** (in °C)
+* You will receive a floating-point number: the water **temperature** (in °C)
 * Print "**The water is boiling**" if the number is **equal to** or **bigger** than 100.0
-* Print "**The water is not hot**" enough in all other cases 
+* Print "**The water is not hot enough**" in all other cases 
 
   # Example
 
@@ -172,9 +172,9 @@ function adapter(input, code) {
 # Description
 Create a program, which determines if you are moving **fast** or **slow** with a given speed: 
 
-* You receive the **speed**: (a floating-point number)
-* Print "**Slow**" if the speed is **smaller than** or **equal to** 30
-* Print "**Fast**" if the speed is bigger than 30
+* You will receive the **speed**: (a floating-point number)
+* Print "**Slow**" if the speed is **less than** or **equal to** 30
+* Print "**Fast**" if the speed is **greater** than 30
 
   # Example
 
@@ -252,7 +252,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-You receive an integer, which represents the initial **number** of points. 
+You will receive an integer, which represents the initial **number** of points. 
 
 **Bonus points** are awarded according to the rules described below. 
 
@@ -260,9 +260,9 @@ Create a program, which calculates:
 
 - The **received** bonus points from the number 
 
-- Which the initial **total number of points** is
+- What is the initial **total number of points**
 
-- Which the **number plus the bonus points** is
+- What is the **number of points plus the bonus points** 
 
 If the number is up to **100 inclusive**, the bonus points are **5**.
 If the number is **greater than 100**, the bonus points are **20 percent of the number**.
@@ -270,9 +270,9 @@ If the number is **greater than 1000**, the bonus points are **10 percent of the
 
 Additional bonus points, added separately from the previous ones:
 
-- For an even number you add 1 point
+- For an even number you should add 1 point
 
-- For a number ending in 5, you add 2 points
+- For a number ending in 5, you should add 2 points
 
 # Example
 
@@ -388,7 +388,7 @@ function adapter(input, code) {
 # Description
 Create a program, which calculates ticket price:
 
-* You receive a ticket type: either **student** or **regular**
+* You will receive a ticket type: either **student** or **regular**
 
 * Print the **price** in the following format **$**\{**price**\}:
     * The price should be **formatted** to 2nd digit after the decimal point
