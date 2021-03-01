@@ -39,13 +39,22 @@ Imprimați un rând pe consolă: "Your bill is \{total price\}$"
   * Prețul trebuie formatat la două cifre după punctul zecimal.
 
 ## Exemplu
-|**Intrare**|**Ieșire**|**Comentarii**|
+|**Intrare**|**Ieșire**|
 | --- | --- | --- |
-| John Wick | Your bill is 72.00$ | Dacă filmul este "Războiul stelelor" și se alege floricele. |
-| Bea | | Prețul pentru un bilet este de 25 $. 4 bilete fiecare de 25 $ -> 100 $. |
-| 6 | | Pentru acest film există o reducere de 30% pentru 4 sau mai multe persoane. |
-| | | 30% din 100 -> 30 $. |
-| | | 100 $ - 30 $ -> 70 $ este prețul total.  |
+| John Wick | Your bill is 72.00$ | 
+| Bea | 
+| 6 | 
+
+[hints]
+
+[hint]
+Depending on what movie and drink have been chosen, determine the ticket price.
+[/hint]
+
+[hint]
+Check if there will be a discount and calculate the total price.
+[/hint]
+[/hints]
 
 [/task-description]
 [code-io /]
