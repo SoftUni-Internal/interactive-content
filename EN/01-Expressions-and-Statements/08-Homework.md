@@ -25,7 +25,7 @@ function adapter(input, code) {
 # Description
 Create a program, which receives an integer and calculates the area of a square with a side **a**.
 
-- You receive the side value as an argument of the function 
+- You will receive the side value as an argument of the function 
 - Use the formula to calculate the area 
 - Print the result to the console
 
@@ -107,7 +107,7 @@ function adapter(input, code) {
 # Description
 Create a program, which converts USD to EUR:
 
-  * You receive a **floating-point number**: the **dollars** to be converted 
+  * You will receive a **floating-point number**: the **dollars** to be converted 
   * Convert the dollars to euro (use the fixed rate: **0.88**)
   * Print the converted value to the console
 
@@ -261,9 +261,9 @@ function adapter(input, code) {
 # Description
 Create a program, which converts days to minutes:
 
-* You receive a single **integer**: the **days** to be converted
+* You will receive a single **integer**: the **days** to be converted
 
-* Convert the days to minutes (use calculations)
+* Convert the days to minutes
 
 * Print the **minutes** to the console
 
@@ -337,9 +337,9 @@ function adapter(input, code) {
 # Description
 Create a program, which calculates a **circle's** area and perimeter:
 
-  * You receive a floating-point number: the **radius** of a circle
+  * You will receive a floating-point number: the **radius** of a circle
   * Calculate the **area** and **perimeter** of the circle
-  * Print the calculated values, **formatted** to 2 digits after the decimal point 
+  * Print the area and perimeter, **formatted** to 2 digits after the decimal point 
 
   ## Example
 | **Input** | **Output** |
@@ -425,7 +425,7 @@ function adapter(input, code) {
 [task-description]
 # Description
 Peter wants to have his backyard landscaped, so he hired a **company** to do it.
-Create a program, which **calculates** the necessary funds that Peter will have to **pay** for the job. 
+Create a program, which **calculates** the necessary funds that Peter will need to **pay** for the job. 
 The price per square meter is **7.61 dollars** with VAT. 
 As Peter's yard is quite **large**, the contractor company offers an **18 percent** discount on the final price.
 
