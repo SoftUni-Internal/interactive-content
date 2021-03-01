@@ -26,11 +26,11 @@ Write a function, which receives two parameters.
 
 The first parameter will be a **string containing some words** separated by "**,** ".
 
-The **second parameter will be a string** which contains templates containing "*".
+The **second parameter will be a string** which contains templates containing "\*".
 
 Find the word with **the exact same length as the template** and replace it.
 
-# Example
+## Example
   | **Input** | **Output** |
 | --- | --- |
 | revealWords('great', 'softuni is ***** place for learning new programming languages') | softuni is great place for learning new programming languages |
@@ -129,7 +129,7 @@ Word is invalid if it has **anything** other than **letters**.
 
 Print the words you found without the tag each on a new line.
 
-# Example
+## Example
   | **Input** | **Output** |
 | --- | --- |
 | modernTimesOfHashTag('Nowadays everyone uses # to tag a #special word in #socialMedia')| special |
@@ -224,13 +224,13 @@ Your task is to subtract the **file name** and its extension.
 
 Beware of files like **template.bak.pptx**, as **template.bak** should be the file name, while pptx is the extension.
 
-# Example One
+## Example One
   | **Input** | **Output** |
 | --- | --- |
 | extractFile('C:\\\Internal\\\training-internal\\\Template.pptx') | File name: Template |
 || File extension: pptx |
 
-# Example Two
+## Example Two
  | **Input** | **Output** |
 | --- | --- |
 | extractFile('C:\\\Projects\\\Data-Structures\\\LinkedList.cs') | File name: LinkedList |
@@ -338,10 +338,10 @@ The comparison should be **case insensitive.**
 
 Once you find match, print the word and stop the program.
 
-If you don't find the word print "\{**word**\} **not found!**"
+If you do not find the word print" "\{**word**\} **not found!**".
 
 
-# Example
+## Examples
   | **Input** | **Output** |
 | --- | --- |
 | stringSubstring('javascript', 'JavaScript is the best programming language') | javascript |
@@ -436,7 +436,7 @@ function adapter(input, code) {
 
 Write a function that receives a single string and **replaces** any sequence of the **same letters** with a single corresponding letter.
 
-# Example
+## Examples
   | **Input** | **Output** |
 | --- | --- |
 | replaceRepeatingChars('aaaaabbbbbcdddeeeedssaa') | abcdedsa |
@@ -537,7 +537,7 @@ Your task here is to split **every separate word from the string.**
 
 Print them joined by **a comma and a space.** 
 
-# Example
+## Examples
   | **Input** | **Output** |
 | --- | --- |
 | splitter('SplitMeIfYouCanHaHaYouCantOrYouCan') | Split, Me, If, You, Can, Ha, Ha, You, Cant, Or, You, Can |

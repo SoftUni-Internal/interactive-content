@@ -208,7 +208,7 @@ The numbers will be a **starting index** and **count of elements** to substring.
 
 Print the result.
 
-# Example
+## Example
   | **Input** | **Output** |
 | --- | --- |
 | substring('ASentence', 1, 8) | Sentence |
@@ -381,7 +381,7 @@ function adapter(input, code) {
 # Description
 Write a function that receives a **sentence** as a first parameter and a **single word** as a second.
 
-Find all occurrences of that word in the sentence and **replace them** with the corresponding count of "*".
+Find all occurrences of that word in the sentence and **replace them** with the corresponding count of "\*".
 
 # Example
   | **Input** | **Output** |
@@ -605,7 +605,7 @@ Write a function that receives a **piece of text** and a **string that you need 
 
 Print all the occurrences of that word in the string.
 
-# Example
+## Example
   | **Input** | **Output** |
 | --- | --- |
 | countStringOccurrences('This is a word and it also is a sentence', 'is') | 2 |
