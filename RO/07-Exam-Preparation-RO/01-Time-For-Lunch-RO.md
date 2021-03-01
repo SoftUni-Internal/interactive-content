@@ -35,12 +35,28 @@ Imprimați pe consolă o linie:
     - Rotunjiți timpul până la cel mai apropiat număr întreg.
 
 ## Exemplu
-|**Intrare**|**Ieșire**|**Comentarii**|
-| --- | --- | --- |
-| Game of Thrones | You have enough time to watch Game of Thrones and left with 0 minutes free time. | Ora prânzului: 96 * 1/8 = 12,0 |
-| 60 | | Timp de relaxare: 96 * 1/4 = 24.0 |
-| 96 | | Timp rămas: 96 - 12 - 24 = 60 |
-| | | Timpul care ne-a rămas este mai mare sau egal cu durata episodului, așa că imprimăm rezultatul potrivit. |
+|**Intrare**|**Ieșire**|
+| --- | --- | 
+| Game of Thrones | You have enough time to watch Game of Thrones and left with 0 minutes free time. |
+| 60 | 
+| 96 | 
+
+[hints]
+
+[hint]
+Determine the time needed for lunch.
+[/hint]
+
+[hint]
+Calculate the relax time.
+[/hint]
+
+[hint]
+Figure out how much time is left.
+
+Make sure that the right output is printed to the console.
+[/hint]
+[/hints]
 
 [/task-description]
 [code-io /]
