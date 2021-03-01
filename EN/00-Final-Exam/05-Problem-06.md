@@ -75,37 +75,16 @@ The money should be **formatted to the second digit after the decimal point.**
 |tournament([3, 'darts', 'lose', 'handball', 'lose', 'judo', 'win', 'Finish', 'snooker', 'lose', 'swimming', 'lose', 'squash', 'lose', 'table tennis', 'win', 'Finish', 'volleyball', 'win', 'basketball', 'win', 'Finish']) | You lost the tournament! Total raised money: 84.00 |
 |tournament([2, 'volleyball', 'win', 'football','lose', 'basketball', 'win', 'Finish', 'golf', 'win', 'tennis', 'win', 'badminton', 'win', 'Finish']) | You won the tournament! Total raised money: 132.00 |
 
-**Comments**
+[hints]
+[hint]
+Determine the amount of money won from each day of the tournament. Check if the won games are more than the lost. If they are, add a 10% bonus.
+Upon receving the "Finish" command, calculate the total sum of money.
+[/hint]
+[hint]
+Finally, check if the overall wins are more than the losses. If they are, add 20% and print the correct output.
+[/hint]
+[/hints]
 
-The tournament **is 2 days.**
-
-The first day:
-
-- We play volleyball and win $20
-- We play football and lose $0
-- We play basketball and win $20
-
-We get the "**Finish**" command and the games for the day are over. 
-
-Earned money 20 \+ 0 \+ 20 = $40. 
-
-We have more games won than lost, respectively we increase the money of the day by 10\% \-\> $44.
-
-The second day:
-
-- We play golf and win $20
-- We play tennis and win  $20
-- We play badminton and win $20
-
-We get the "**Finish**" command and the games for the day are over.
-
-Earned money 20 \+ 20 \+ 20 = $60
-
-We have only won games, respectively we increase the money of the day by 10\% \-\> $66.
-
-Earned money from both days: 44 \+ 66 = $110.
-
-Because we have more wins than losses, we win the tournament and increase the money by 20\% \-\> $132.
 
 [/task-description]
 [code-io /]
