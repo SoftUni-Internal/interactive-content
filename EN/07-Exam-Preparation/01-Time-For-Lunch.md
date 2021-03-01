@@ -39,12 +39,28 @@ The output should consist of a single line in the following form:
     - Round the time up to the nearest whole number.
 
 ## Example
-| **Input** | **Output** | **Comments** |
-| --- | --- | --- |
-| Game of Thrones | You have enough time to watch Game of Thrones and left with 0 minutes free time. | Time for lunch: 96 * 1/8 = 12.0 |
-| 60 | | Time to unwind: 96 * 1/4 = 24.0 |
-| 96 | | Time left: 96 - 12 - 24 = 60 |
-|  | | The time we have left is bigger or equal to the duration of the episode, so we print the suitable output. |
+| **Input** | **Output** |
+| --- | --- | 
+| Game of Thrones | You have enough time to watch Game of Thrones and left with 0 minutes free time. | 
+| 60 | 
+| 96 | 
+
+[hints]
+
+[hint]
+Determine the time needed for lunch.
+[/hint]
+
+[hint]
+Calculate the relax time.
+[/hint]
+
+[hint]
+Figure out how much time is left.
+
+Make sure that the right output is printed to the console.
+[/hint]
+[/hints]
 
 [/task-description]
 [code-io /]
