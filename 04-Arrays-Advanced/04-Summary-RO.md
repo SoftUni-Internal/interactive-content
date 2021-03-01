@@ -1,19 +1,50 @@
-[slide]
+[slide hideTitle]
 # Rezumat
 
-[vimeo-video]
-[stream language="EN" videoId="489374453/e99926cfd6" default /]
-[stream language="RO" videoId="489374453/e99926cfd6"  /]
-[/video-vimeo]
 
-În această lecție am învățat:
+## În această lecție am învățat:
 
-*Tablourile din JavaScript au o mulțime de metode încorporate.
+- Arrays in JavaScript have a lot of built\-in methods
 
-*Putem adăuga, elimina sau introduce elemente în timpul rulării.
+```js live
+let numbers = [3, 8, 15, 22];
 
-*Unele metode modifică matricea.
+numbers.push(30); // Appends 30 to the array
 
-*Putem sorta o matrice cu funcția de comparare.
+console.log(numbers);
+```
+
+- We can add, remove, or insert elements at runtime
+  
+```js live
+let people = ['Paul', 'Mary', 'John'];
+
+let firstEl = people.shift(); // Removing the element at index zero
+
+console.log(people);
+console.log(firstEl);
+```
+
+- Some methods mutate the array
+
+```js live
+let days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
+console.log(days.join(', '));
+
+let weekend = days.splice(5); // Creates a new array and modifies the original
+
+console.log(days.join(', '));
+console.log(weekend.join(', '));
+```
+
+- We can sort an array with a compare function
+
+```js live
+let ages = [25, 15, 82, 39];
+ages.sort((a, b) => a - b);
+
+console.log(ages.join(', '));
+```
 
 [/slide]

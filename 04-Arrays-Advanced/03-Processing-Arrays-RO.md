@@ -1,7 +1,7 @@
-# Procesarea matricelor
+# Procesarea Matricelor
 
-[slide]
-# Transormarea elementelor
+[slide hideTitle]
+# Transormarea Elementelor
 
 [vimeo-video]
 [stream language="EN" videoId="489374289/c0b4d9c5f7" default /]
@@ -21,30 +21,26 @@ let lengths = myArr.map(x => x.length);
 console.log(lengths);
 ```
 
-În acest exemplu, avem o matrice `string` și, folosind `map()`, convertim fiecare element într-un `number`. 
+În acest exemplu, avem o matrice **string** și, folosind `map()`, convertim fiecare element într-un **number**. 
 
 De asemenea, folosind `map()`, incrementăm fiecare număr din matrice. 
 
 ``` js live
-let numsAsStrings = ['5','3','14','-2','8'];
+let numsAsStrings = ['5', '3', '14', '-2', '8'];
 let nums = numsAsStrings.map(Number);
 
 console.log(nums);
 
-let incremented = nums.map(x => x+1);
+let incremented = nums.map(x => x + 1);
 console.log(incremented);
 ```
 
 Puteți citi mai multe despre [map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 [/slide]
 
-[slide]
-# Filtrarea elementelor
+[slide hideTitle]
+# Filtrarea Elementelor
 
-[vimeo-video]
-[stream language="EN" videoId="489374290/1e675608b7" default /]
-[stream language="RO" videoId="489374290/1e675608b7"  /]
-[/video-vimeo]
 
 Metoda `filter()` creează o nouă matrice, plină cu toate elementele matricei care trec un test dat (furnizat ca funcție).
 
@@ -69,23 +65,29 @@ console.log(positiveNums);
 
 [/slide]
 
-[slide]
-# Problemă: Process Odd Numbers
+[slide hideTitle]
+# Problem with Solution: Process Odd Numbers
 
-[vimeo-video]
-[stream language="EN" videoId="489374346/bee533f0f2" default /]
-[stream language="RO" videoId="489374346/bee533f0f2"  /]
-[/video-vimeo]
-
-[code-task title="Process Odd Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Process Odd Numbers" taskId="fundamentals-js-arrays-advanced-lab-Process-Odd-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function oddNumbers(arr){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
+
+# Descriere
 
 Vi se oferă o serie de numere.
 
@@ -96,30 +98,41 @@ Intrările apar ca o serie de elemente 'șir', care conțin numere.
 Ieșirea este tipărită pe consolă, **pe o singură linie**, **separată de spațiu.**
 
 
-## Exemple
+## Exemples
 |**Intrare**|**Ieșire** |
 | --- | --- |
-|`[10, 15, 20, 25]` | 50 30 |
-|`[3, 0, 10, 4, 7, 3]` | 6 8 0 |
+|oddNumbers([10, 15, 20, 25]) | 50 30 |
+|oddNumbers([3, 0, 10, 4, 7, 3]) | 6 8 0 |
 
 # Sugestii
 
 - Numărarea în matrice începe de la '0'
-- De exemplu: primim `10, 15, 20, 25`
-- Elementele aflate în poziții impare sunt `15 (index 1) și 25 (index 3)`
-- Trebuie să luăm aceste două elemente și să le `înmulțim * 2`
+- De exemplu: primim 10, 15, 20, 25
+- Elementele aflate în poziții impare sunt 15 (index 1) și 25 (index 3)
+- Trebuie să luăm aceste două elemente și să le înmulțim \* 2
 - În cele din urmă, le imprimăm pe consolă în **ordine inversă**
 
 [/task-description]
 [tests]
+[test open]
+[input]
+oddNumbers([10, 15, 20, 25])
+[/input]
+[output]
+50 30
+[/output]
+[/test]
+[test open]
+[input]
+oddNumbers([3, 0, 10, 4, 7, 3])
+[/input]
+[output]
+6 8 0
+[/output]
+[/test]
 [test]
 [input]
-34
-12
-34
-2
-56
-6
+oddNumbers([34, 12, 34, 2, 56, 6])
 [/input]
 [output]
 12 4 24
@@ -127,14 +140,15 @@ Ieșirea este tipărită pe consolă, **pe o singură linie**, **separată de sp
 [/test]
 [test]
 [input]
-4
-22
-30
-12
-6
-16
-25
-10
+oddNumbers([34, 12, 34, 2, 56, 6])
+[/input]
+[output]
+12 4 24
+[/output]
+[/test]
+[test]
+[input]
+oddNumbers([4, 22, 30, 12, 6, 16, 25, 10])
 [/input]
 [output]
 20 32 24 44
@@ -142,9 +156,7 @@ Ieșirea este tipărită pe consolă, **pe o singură linie**, **separată de sp
 [/test]
 [test]
 [input]
-6
-5
-56
+oddNumbers([6, 5, 56])
 [/input]
 [output]
 10
@@ -152,11 +164,7 @@ Ieșirea este tipărită pe consolă, **pe o singură linie**, **separată de sp
 [/test]
 [test]
 [input]
-34
-62
-3
-9
-56
+oddNumbers([34, 62, 3, 9, 56])
 [/input]
 [output]
 18 124
@@ -164,14 +172,7 @@ Ieșirea este tipărită pe consolă, **pe o singură linie**, **separată de sp
 [/test]
 [test]
 [input]
-4
-12
-34
-2
-8
-6
-1
-31
+oddNumbers([4, 12, 34, 2, 8, 6, 1, 31])
 [/input]
 [output]
 62 12 4 24
@@ -183,136 +184,9 @@ Ieșirea este tipărită pe consolă, **pe o singură linie**, **separată de sp
 
 [/slide]
 
-[slide]
-# Soluție: Process Odd Numbers
+[slide hideTitle]
+# Sortarea Matricelor
 
-[vimeo-video]
-[stream language="EN" videoId="489374571/1014b0026b" default /]
-[stream language="RO" videoId="489374571/1014b0026b"  /]
-[/video-vimeo]
-
-[code-task title="Process Odd Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function oddNumbers(arr){
-  let resultArray = [];
-
-    let i = 0;
-    arr.forEach((num, index) => {
-        if(index % 2 !== 0){
-            resultArray[i++] = arr[index] * 2;
-        }
-    });
-
-    resultArray.reverse();
-    console.log(resultArray.join(" "));
-}
-```
-[/code-editor]
-[task-description]
-
-
-Vi se oferă o serie de numere.
-
-Scrieți o funcție care tipărește toate elementele în poziții, dublate și în ordine inversă.
-
-Intrările apar ca o serie de elemente 'șir', care conțin numere.
-
-Ieșirea este tipărită pe consolă, **pe o singură linie**, **separată de spațiu.**
-
-## Exemple
-|**Intrare**|**Ieșire** |
-| --- | --- |
-|`[10, 15, 20, 25]` | 50 30 |
-|`[3, 0, 10, 4, 7, 3]` | 6 8 0 |
-
-# Sugestii
-
-- Numărarea în matrice începe de la '0'
-- De exemplu: primim `10, 15, 20, 25`
-- Elementele aflate în poziții impare sunt `15 (index 1) și 25 (index 3)`
-- Trebuie să luăm aceste două elemente și să le `înmulțim * 2`
-- În cele din urmă, le imprimăm pe consolă în **ordine inversă**
-
-[/task-description]
-[tests]
-[test]
-[input]
-34
-12
-34
-2
-56
-6
-[/input]
-[output]
-12 4 24
-[/output]
-[/test]
-[test]
-[input]
-4
-22
-30
-12
-6
-16
-25
-10
-[/input]
-[output]
-20 32 24 44
-[/output]
-[/test]
-[test]
-[input]
-6
-5
-56
-[/input]
-[output]
-10
-[/output]
-[/test]
-[test]
-[input]
-34
-62
-3
-9
-56
-[/input]
-[output]
-18 124
-[/output]
-[/test]
-[test]
-[input]
-4
-12
-34
-2
-8
-6
-1
-31
-[/input]
-[output]
-62 12 4 24
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-[/slide]
-
-[slide]
-# Sortarea matricelor
-
-[vimeo-video]
-[stream language="EN" videoId="489374351/27d530505f" default /]
-[stream language="RO" videoId="489374351/27d530505f"  /]
-[/video-vimeo]
 
 În funcție de **funcția de comparare** oferită, ordinea de sortare poate **fi alphabetică sau numerică**, fie ascendentă (în sus) sau descendentă (în jos).
 
@@ -325,17 +199,17 @@ Dacă dorim să sortăm numerele sau alte valori, trebuie să oferim o funcție 
 Dacă numim metoda `sort()` direct, fără a trece o **funcție de comparare**, metoda va funcționa corect - va sorta numele în ordine alfabetică crescătoare.
 
 ``` js live
-let names = ['Peter','George','Mary'];
+let names = ['Peter', 'George', 'Mary'];
 names.sort(); 
 
 console.log(names); 
 ```
 
-Cu toate acestea, dacă avem o matrice care conține `numere`, și nu `șiruri`, rezultatul va fi neașteptat și incorect.
+Cu toate acestea, dacă avem o matrice care conține **numere**, și nu **șiruri**, rezultatul va fi neașteptat și incorect.
 
-Fără ` o funcție de comparare` trecută, metoda `sort()` va trata tabloul ca o matrice de `șiruri`, nu ca o matrice de `numere`.
+Fără **o funcție de comparare** trecută, metoda `sort()` va trata tabloul ca o matrice de **șiruri**, nu ca o matrice de **numere**.
 
-Deci, le va sorta ca valori `strings`. 
+Deci, le va sorta ca valori **string**. 
 
 ``` js live
 let numbers = [20, 40, 10, 30, 100, 5];
@@ -346,8 +220,8 @@ console.log(numbers);
 
 [/slide]
 
-[slide]
-# Funcții de comparare
+[slide hideTitle]
+# Funcții de Comparare
 
 [vimeo-video]
 [stream language="EN" videoId="489374404/c8ee191474" default /]
@@ -372,19 +246,14 @@ console.log(nums.join('|'));
 ```
 [/slide]
 
-[slide]
-# Sortarea matricelor de șiruri
-
-[vimeo-video]
-[stream language="EN" videoId="489374405/c099f73018" default /]
-[stream language="RO" videoId="489374405/c099f73018"  /]
-[/video-vimeo]
+[slide hideTitle]
+# Sortarea Matricelor de Siruri
 
 Metoda `localeCompare()` compară două șiruri de caractere în locale actuale.
 
 Este o metodă de șir, deci nu poate fi aplicată direct pe o matrice.
 
-În acest exemplu, trecem metoda localeCompare () **ca funcție de comparație**.
+În acest exemplu, trecem metoda `localeCompare()` **ca funcție de comparație**.
 ``` js live
 let words = ['nest', 'Eggs', 'bite', 'Grip', 'jAw'];
 words.sort((a, b) => a.localeCompare(b));
@@ -393,55 +262,74 @@ console.log(words);
 ```
 [/slide]
 
-[slide]
-# Problemă: Smallest two Numbers
+[slide hideTitle]
+# Problem with Solution: Smallest two Numbers
 
-[vimeo-video]
-[stream language="EN" videoId="489374451/5801e23a89" default /]
-[stream language="RO" videoId="489374451/5801e23a89"  /]
-[/video-vimeo]
-
-[code-task title="Smallest two Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Smallest two Numbers" taskId="fundamentals-js-arrays-advanced-lab-Smallest-two-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function smallestTwoNumbers(arr){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
+# Descriere
+
 Scrieți o funcție care sortează o matrice în ordine crescătoare și imprimă primele două numere.
 
-Intrările apar ca o serie de elemente `string`, care conțin numere.
+Intrările apar ca o serie de elemente **string**, care conțin numere.
 
-## Exemple
+## Exemples
 |**Intrare**|**Ieșire** |
 | --- | --- |
-|`[30, 15, 50, 5]` | 50 30 |
-|`[3, 0, 10, 4, 7, 3]` | 0 3 |
+|smallestTwoNumbers([30, 15, 50, 5]) | 5 15 |
+|smallestTwoNumbers([3, 0, 10, 4, 7, 3]) | 0 3 |
 
 
-# Sugestii
+## Sugestii
 - Putem folosi următoarea funcție pentru a sorta elementele matricei: 
 
  ```js
-let sortedInAscending = arr.sort((a, b) =>{
+let sortedInAscending = arr.sort((a, b) => {
   return a - b
 });
- ```
+```
 
-- Ulterior, primele două elemente din matrice sunt cele mai mici.
+- Ulterior, primele două elemente din matrice sunt cele mai mici
 
 - Putem folosi metoda `slice()` pentru a lua primele două elemente
 
 [/task-description]
 [tests]
+[test open]
+[input]
+smallestTwoNumbers([30, 15, 50, 5])
+[/input]
+[output]
+5 15
+[/output]
+[/test]
+[test open]
+[input]
+smallestTwoNumbers([3, 0, 10, 4, 7, 3])
+[/input]
+[output]
+0 3
+[/output]
+[/test]
 [test]
 [input]
-\-5
-3
-2
-1
+smallestTwoNumbers([\-5, 3, 2, 1])
 [/input]
 [output]
 \-5 1
@@ -449,13 +337,7 @@ let sortedInAscending = arr.sort((a, b) =>{
 [/test]
 [test]
 [input]
-\-53
-31
-\-42
-21
-13
-2
-31
+smallestTwoNumbers([\-53, 31, \-42, 21, 13, 2, 31])
 [/input]
 [output]
 \-53 \-42
@@ -463,12 +345,7 @@ let sortedInAscending = arr.sort((a, b) =>{
 [/test]
 [test]
 [input]
-31
-42
-\-25
-3
-2
-1
+smallestTwoNumbers([31, 42, \-25, 3, 2, 1])
 [/input]
 [output]
 \-25 1
@@ -476,10 +353,7 @@ let sortedInAscending = arr.sort((a, b) =>{
 [/test]
 [test]
 [input]
--5
-13
-2
-1
+smallestTwoNumbers([\-5, 13, 2, 1])
 [/input]
 [output]
 \-5 1
@@ -487,121 +361,7 @@ let sortedInAscending = arr.sort((a, b) =>{
 [/test]
 [test]
 [input]
--5
-11
-[/input]
-[output]
-\-5 11
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-
-[slide]
-# Solution: Smallest two Numbers
-
-[vimeo-video]
-[stream language="EN" videoId="489374613/1127440400" default /]
-[stream language="RO" videoId="489374613/1127440400"  /]
-[/video-vimeo]
-
-[code-task title="Smallest two Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function smallestTwoNumbers(input){
-    input.sort((a, b) => a - b);
-    let firstEl = input.shift();
-    let secondEl = input.shift();
-    
-    console.log(`${firstEl} ${secondEl}`);
-}
-```
-[/code-editor]
-[task-description]
-Scrieți o funcție care sortează o matrice în ordine crescătoare și imprimă primele două numere.
-
-Intrările apar ca o serie de elemente `string`, care conțin numere.
-
-## Exemple
-|**Intrare**|**Ieșire** |
-| --- | --- |
-|`[30, 15, 50, 5]` | 50 30 |
-|`[3, 0, 10, 4, 7, 3]` | 0 3 |
-
-
-# Sugestii
-- Putem folosi următoarea funcție pentru a sorta elementele matricei: 
-
- ```js
-let sortedInAscending = arr.sort((a, b) =>{
-  return a - b
-});
- ```
-
-- Ulterior, primele două elemente din matrice sunt cele mai mici.
-
-- Putem folosi metoda `slice()` pentru a lua primele două elemente
-
-
-[/task-description]
-[tests]
-[test]
-[input]
-\-5
-3
-2
-1
-[/input]
-[output]
-\-5 1
-[/output]
-[/test]
-[test]
-[input]
-\-53
-31
-\-42
-21
-13
-2
-31
-[/input]
-[output]
-\-53 \-42
-[/output]
-[/test]
-[test]
-[input]
-31
-42
-\-25
-3
-2
-1
-[/input]
-[output]
-\-25 1
-[/output]
-[/test]
-[test]
-[input]
--5
-13
-2
-1
-[/input]
-[output]
-\-5 1
-[/output]
-[/test]
-[test]
-[input]
--5
-11
+smallestTwoNumbers([\-5, 11])
 [/input]
 [output]
 \-5 11

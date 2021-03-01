@@ -1,10 +1,6 @@
-[slide]
+[slide hideTitle]
 # Introducerea lecției
 
-[vimeo-video]
-[stream language="EN" videoId="489374626/cec183a08e" default /]
-[stream language="RO" videoId="489374626/cec183a08e"  /]
-[/video-vimeo]
 
 ## În această lecție veți afla despre:
 
