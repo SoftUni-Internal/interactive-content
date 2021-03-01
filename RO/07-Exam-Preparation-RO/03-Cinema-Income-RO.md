@@ -41,15 +41,26 @@ Mai întâi, tipăriți pe consolă o linie:
 - Ulterior, tipăriți: "Cinema income - \{income\}$"
 
 ## Example
-| **Input** | **Output** | **Comments** |
+| **Input** | **Output** | 
 | --- | --- | --- |
-| 60 | There are 6 seats left in the cinema. | Dacă primim capacitatea sălii - 60 de locuri.|
-| 10 | Cinema income - 255$ | Pe rândul următor primim persoanele care au intrat în sală - 10. |
-| 6 | | Prețul pe care îl vor plăti este de 10 * 5 = 50. |
-| 3 | | După aceea primim că 6 persoane intră în sală și 6 pot fi împărțite la 3, deci plătesc cu 5 $ mai puțin. |
-| 20 | | Continuăm până primim comanda "Ora Filmului!” și apoi imprimăm o ieșire adecvată. |
-| 15 | | |
-| Movie time! | | |
+| 60 | There are 6 seats left in the cinema. | 
+| 10 | Cinema income - 255$ | 
+| 6 | 
+| 3 | 
+| 20 | 
+| 15 | 
+| Movie time! | 
+
+[hints]
+
+[hint]
+Depending on what movie and drink have been chosen, determine the ticket price.
+[/hint]
+
+[hint]
+Check if there will be a discount and calculate the total price.
+[/hint]
+[/hints]
 
 [/task-description]
 [code-io /]
