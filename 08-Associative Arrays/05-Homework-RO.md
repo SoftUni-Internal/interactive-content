@@ -1,6 +1,6 @@
 # Teme de acasă
 
-[slide]
+[slide hideTitle]
 
 # Problemă: Word Tracker
 
@@ -8,12 +8,21 @@
 [code-editor language=javascript]
 
 ```
-function solve(input) {
-  // Write your code here
+function words(input) {
+  // Scrieți codul dvs. aici
  }
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Descriere
@@ -30,40 +39,18 @@ Tipariți **de câte** ori a apărut fiecare dintre cuvintele specificate.
 
 Cuvintele ar trebui să fie **sortate după numărul de timp în care au fost prezente în ordine descrescătoare**
 
-# Exemplu
+## Exemplu
 
-**Intrare**                                                                                                                                                       
- `['this sentence', 'In', 'this', 'sentence', 'you', 'have', 'to', 'count', 'the', 'occurances', 'of', 'the', 'words', 'this', 'and', 'sentence', 'because', 'this', 'is', 'your', 'task']`
+| **Intrare**  | **Ieșire** |
+| --- | --- |
+| words(['this sentence', 'In', 'this', 'sentence', 'you', 'have', 'to', 'count', 'the', 'occurances', 'of', 'the', 'words', 'this', 'and', 'sentence', 'because', 'this', 'is', 'your', 'task']) | this \- 3 |
+| | sentence \- 2 |
 
- **Ieșire**
- this \- 3 
- sentence \- 2
-
-[/task-description]
+[[/task-description]
 [tests]
-[test]
+[test open]
 [input]
-this sentence
-In 
-this 
-sentence 
-you 
-have 
-to 
-count 
-the 
-occurances 
-of 
-the 
-words 
-this 
-and 
-sentence 
-because 
-this 
-is 
-your 
-task
+words(['this sentence', 'In', 'this', 'sentence', 'you', 'have', 'to', 'count', 'the', 'occurances', 'of', 'the', 'words', 'this', 'and', 'sentence', 'because', 'this', 'is', 'your', 'task'])
 [/input]
 [output]
 this \- 3
@@ -72,22 +59,7 @@ sentence \- 2
 [/test]
 [test]
 [input]
-dara bara mara
-mara 
-mara 
-mara 
-dara 
-bara 
-dara 
-bara 
-data 
-dara 
-rdhfdjkk 
-fhsjksdhjks 
-sdhfsdjfd 
-fhdjk 
-bara 
-bara
+words(['dara bara mara', 'mara', 'mara', 'mara', 'dara', 'bara', 'dara', 'bara', 'data', 'dara', 'rdhfdjkk', 'fhsjksdhjks', 'sdhfsdjfd', 'fhdjk', 'bara', 'bara'])
 [/input]
 [output]
 bara \- 4
@@ -97,22 +69,7 @@ mara \- 3
 [/test]
 [test]
 [input]
-dara
-mara 
-mara 
-mara 
-dara 
-bara 
-dara 
-bara 
-data 
-dara 
-rdhfdjkk 
-fhsjksdhjks 
-sdhfsdjfd 
-fhdjk 
-bara 
-bara
+words(['dara', 'mara', 'mara', 'mara', 'dara', 'bara', 'dara', 'bara', 'data', 'dara', 'rdhfdjkk', 'fhsjksdhjks', 'sdhfsdjfd', 'fhdjk', 'bara', 'bara'])
 [/input]
 [output]
 dara - 3
@@ -120,22 +77,7 @@ dara - 3
 [/test]
 [test]
 [input]
-dara sara mara
-mara 
-mara 
-mara 
-dara 
-bara 
-dara 
-bara 
-data 
-dara 
-rdhfdjkk 
-fhsjksdhjks 
-sdhfsdjfd 
-fhdjk 
-bara 
-bara
+words(['dara sara mara', 'mara', 'mara', 'mara', 'dara', 'bara', 'dara', 'bara', 'data', 'dara', 'rdhfdjkk', 'fhsjksdhjks', 'sdhfsdjfd', 'fhdjk', 'bara', 'bara'])
 [/input]
 [output]
 dara \- 3
@@ -145,22 +87,7 @@ sara \- 0
 [/test]
 [test]
 [input]
-dara sara mara bara
-mara 
-mara 
-mara 
-dara 
-bara 
-dara 
-bara 
-data 
-dara 
-rdhfdjkk 
-fhsjksdhjks 
-sdhfsdjfd 
-fhdjk 
-bara 
-bara
+words(['dara sara mara bara', 'mara', 'mara', 'mara', 'dara', 'bara', 'dara', 'bara', 'data', 'dara', 'rdhfdjkk', 'fhsjksdhjks', 'sdhfsdjfd', 'fhdjk', 'bara', 'bara'])
 [/input]
 [output]
 bara \- 4
@@ -171,20 +98,7 @@ sara \- 0
 [/test]
 [test]
 [input]
-a b c d
-vdsa 
-a 
-rb 
-b 
-dbs 
-a 
-ss 
-b 
-c 
-d 
-sdn 
-bd 
-d
+words(['a b c d', 'vdsa', 'a', 'rb', 'b', 'dbs', 'a', 'ss', 'b', 'c', 'd', 'sdn', 'bd', 'd'])
 [/input]
 [output]
 a \- 2
@@ -199,7 +113,7 @@ c \- 1
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problemă: Odd Occurrences
 
@@ -207,12 +121,21 @@ c \- 1
 [code-editor language=javascript]
 
 ```
-function solve(input) {
-  // Write your code here
+function oddOccurences(input) {
+  // Scrieți codul dvs. aici
 }
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Descriere
@@ -221,17 +144,17 @@ Scrieți o funcție care extrage toate elementele unei propoziții, care sunt pr
 
 Intrarea este un **singur șir**. Cuvintele vor fi **separate printr-un singur spațiu**.
 
-# Exemplu
+## Exemplu
 
 |**Intrare**|**Ieșire**|
 | --- | --- |
-| `['Java C# Php PHP Java PhP 3 C# 3 1 5 C#']` | c\# php 1 5 |
+| oddOccurences('Java C# Php PHP Java PhP 3 C# 3 1 5 C#') | c\# php 1 5 |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-Java C\# Php PHP Java PhP 3 C\# 3 1 5 C\#
+oddOccurences('Java C# Php PHP Java PhP 3 C# 3 1 5 C#')
 [/input]
 [output]
 c\# php 1 5
@@ -239,7 +162,7 @@ c\# php 1 5
 [/test]
 [test]
 [input]
-a 2 A a A c D C dcndjk dbsa bsd bs Cbc D ss as
+oddOccurences('a 2 A a A c D C dcndjk dbsa bsd bs Cbc D ss as')
 [/input]
 [output]
 2 dcndjk dbsa bsd bs cbc ss as
@@ -247,7 +170,7 @@ a 2 A a A c D C dcndjk dbsa bsd bs Cbc D ss as
 [/test]
 [test]
 [input]
-a a a a a D Sb dbsnb bdw dd dd dss
+oddOccurences('a a a a a D Sb dbsnb bdw dd dd dss')
 [/input]
 [output]
 a d sb dbsnb bdw dss
@@ -255,7 +178,7 @@ a d sb dbsnb bdw dss
 [/test]
 [test]
 [input]
-b b b b b
+oddOccurences('b b b b b')
 [/input]
 [output]
 b
@@ -263,7 +186,7 @@ b
 [/test]
 [test]
 [input]
-a a a b b c
+oddOccurences('a a a b b c')
 [/input]
 [output]
 a c
@@ -271,7 +194,7 @@ a c
 [/test]
 [test]
 [input]
-a a a a a a a a a aa a a a a ab bb bb cccc
+oddOccurences('a a a a a a a a a aa a a a a ab bb bb cccc')
 [/input]
 [output]
 a aa ab cccc
@@ -283,7 +206,8 @@ a aa ab cccc
 
 [/slide]
 
-[slide]
+
+[slide hideTitle]
 
 # Problemă: Piccolo
 
@@ -291,59 +215,51 @@ a aa ab cccc
 [code-editor language=javascript]
 
 ```
-function solve(input) {
-  // Write your code here
+function picolo(input) {
+  // Scrieți codul dvs. aici
 }
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 
 Scrieți o funcție care:
 
-- Înregistrează o plăcuță de înmatriculare a mașinii pentru fiecare mașină care intră în parcare.
-- Îndepărtează mașina când se stinge motorul.
-- Rezultatul va fi o matrice de șiruri în formatul următor `['direction, carNumber']`.
+- Înregistrează o plăcuță de înmatriculare a mașinii pentru fiecare mașină care intră în parcare
+- Îndepărtează mașina când se stinge motorul
+- Rezultatul va fi o matrice de șiruri în formatul următor "\['**direction**, **carNumber**'\]"
 
 Tipariți rezultatul cu toate numerele de mașină care se află în parcare **sortate în ordine crescătoare după numărul lor de înmatriculare**.
 
-# Examplu 1
+## Example One
+| **Intrare** | **Ieșire**  |
+| --- | --- |
+| picolo(['IN, CA2844AA', 'IN, CA1234TA', 'OUT, CA2844AA', 'IN, CA9999TT', 'IN, CA2866HI', 'OUT, CA1234TA', 'IN, CA2844AA', 'OUT, CA2866HI', 'IN, CA9876HH', 'IN, CA2822UU']) | CA2822UU |
+| | CA2844AA |
+| | CA9876HH |
+| | CA9999TT |
 
-**Intrare**                                                                                                                                                 
-`['IN, CA2844AA', 'IN, CA1234TA', 'OUT, CA2844AA', 'IN, CA9999TT', 'IN, CA2866HI', 
-'OUT, CA1234TA', 'IN, CA2844AA', 'OUT, CA2866HI', 'IN, CA9876HH', 'IN, CA2822UU']`
+## Example Two
 
-**Ieșire**
-
-CA2822UU
-
-CA2844AA
-
-CA9876HH
-
-CA9999TT
-
-# Examplu 2
-
-| **Intrare** | **Ieșire** |
+| **Intrare** | **Ieșire**  |
 | --- | ---|
-| `['IN, CA2844AA', 'IN, CA1234TA', 'OUT, CA2844AA', 'OUT, CA1234TA']` | Parking Lot is Empty |
+| picolo(['IN, CA2844AA', 'IN, CA1234TA', 'OUT, CA2844AA', 'OUT, CA1234TA']) | Parking Lot is Empty |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-IN\, CA2844AA
-IN\, CA1234TA
-OUT\, CA2844AA
-IN\, CA9999TT
-IN\, CA2866HI
-OUT\, CA1234TA
-IN\, CA2844AA
-OUT\, CA2866HI
-IN\, CA9876HH
-IN\, CA2822UU
+picolo(['IN, CA2844AA', 'IN, CA1234TA', 'OUT, CA2844AA', 'IN, CA9999TT', 'IN, CA2866HI', 'OUT, CA1234TA', 'IN, CA2844AA', 'OUT, CA2866HI', 'IN, CA9876HH', 'IN, CA2822UU'])
 [/input]
 [output]
 CA2822UU
@@ -352,12 +268,9 @@ CA9876HH
 CA9999TT
 [/output]
 [/test]
-[test]
+[test open]
 [input]
-IN\, CA2844AA
-IN\, CA1234TA
-OUT\, CA2844AA
-OUT\, CA1234TA
+picolo(['IN, CA2844AA', 'IN, CA1234TA', 'OUT, CA2844AA', 'OUT, CA1234TA'])
 [/input]
 [output]
 Parking Lot is Empty
@@ -365,12 +278,7 @@ Parking Lot is Empty
 [/test]
 [test]
 [input]
-IN\, mmm
-IN\, aaa
-IN\, ccc
-IN\, ggg
-IN\, sss
-IN\, gqq
+picolo(['IN, mmm', 'IN, aaa', 'IN, ccc', 'IN, ggg', 'IN, sss', 'IN, gqq'])
 [/input]
 [output]
 aaa
@@ -383,13 +291,7 @@ sss
 [/test]
 [test]
 [input]
-IN\, mmm
-IN\, aaa
-IN\, ccc
-IN\, ggg
-IN\, sss
-IN\, sss
-IN\, gqq
+picolo(['IN, mmm', 'IN, aaa', 'IN, ccc', 'IN, ggg', 'IN, sss', 'IN, sss', 'IN, gqq'])
 [/input]
 [output]
 aaa
@@ -402,23 +304,7 @@ sss
 [/test]
 [test]
 [input]
-IN\, mmm
-IN\, aaa
-IN\, ccc
-OUT\, ggg
-IN\, sss
-IN\, mmm
-OUT\, aaa
-IN\, ccc
-OUT\, ggg
-IN\, sss
-IN\, mmm
-IN\, aaa
-OUT\, ccc
-IN\, ggg
-IN\, sss
-IN\, sss
-OUT\, gqq
+picolo(['IN, mmm', 'IN, aaa', 'IN, ccc', 'OUT, ggg', 'IN, sss', 'IN, mmm', 'OUT, aaa', 'IN, ccc', 'OUT, ggg', 'IN, sss', 'IN, mmm', 'IN, aaa', 'OUT, ccc', 'IN, ggg', 'IN, sss', 'IN, sss', 'OUT, gqq'])
 [/input]
 [output]
 aaa
@@ -429,16 +315,7 @@ sss
 [/test]
 [test]
 [input]
-IN\, mmm
-IN\, aaa
-IN\, ccc
-OUT\, ggg
-IN\, sss
-IN\, mmm
-IN\, ggg
-IN\, sss
-IN\, sss
-OUT\, gqq
+picolo(['IN, mmm', 'IN, aaa', 'IN, ccc', 'OUT, ggg', 'IN, sss', 'IN, mmm', 'IN, ggg', 'IN, sss', 'IN, sss', 'OUT, gqq'])
 [/input]
 [output]
 aaa
@@ -450,22 +327,7 @@ sss
 [/test]
 [test]
 [input]
-IN\, mmm
-IN\, aaa
-IN\, ccc
-OUT\, ggg
-IN\, ll
-IN\, sss
-IN\, mmm
-IN\, kk
-IN\, sss
-IN\, sss
-IN\, sss
-IN\, mmm
-IN\, ggg
-IN\, sss
-IN\, sss
-OUT\, gqq
+picolo(['IN, mmm', 'IN, aaa', 'IN, ccc', 'OUT, ggg', 'IN, ll', 'IN, sss', 'IN, mmm', 'IN, kk', 'IN, sss', 'IN, sss', 'IN, sss', 'IN, mmm', 'IN, ggg', 'IN, sss', 'IN, sss', 'OUT, gqq'])
 [/input]
 [output]
 aaa
@@ -483,7 +345,7 @@ sss
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problemă: Party Time
 
@@ -491,12 +353,21 @@ sss
 [code-editor language=javascript]
 
 ```
-function solve(input) {
-  // Write your code here
+function partyTime(input) {
+  // Scrieți codul dvs. aici
 }
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Descriere
@@ -505,53 +376,36 @@ Există o petrecere la SoftUni. Sunt mai mulți invitați și sunt **două tipur
 
 Când oaspeții vin la petrecere, verificați dacă el/ea **există** în oricare dintre **cele două liste de rezervare**.
 
-Rezultatul va fi o**matrice de șiruri **. Vi se va da lista cu invitații pe care trebuie să o procesați până la următoarea comandă: 'PARTY'.
+Rezultatul va fi **omatrice de șiruri**. Vi se va da lista cu invitații pe care trebuie să o procesați până la următoarea comandă: 'PARTY'.
 
 Toate **numerele VIP încep cu o cifră**.
 
 Când primiți comanda: 'PARTY', oaspeții încep să vină.
 
-Scoateți toți invitații care nu au venit la petrecere (VIP-urile trebuie să fie primii).
+Scoateți toți invitații care nu au venit la petrecere (**VIP-urile trebuie să fie primii**).
 
-# Exemplul 1
+## Example One
 
-|**Intrare**|**Ieșire**|
+| **Intrare** | **Ieșire**  |
 | --- | --- |
-| `['7IK9Yo0h', '9NoBUajQ', 'Ce8vwPmE', 'SVQXQCbc', 'tSzE5t0p', 'PARTY', '9NoBUajQ', 'Ce8vwPmE', 'SVQXQCbc']` | 2          |
-|                                                                                                             | 7IK9Yo0h   |
-|                                                                                                             | tSzE5t0p   |
+| partyTime(['7IK9Yo0h', '9NoBUajQ', 'Ce8vwPmE', 'SVQXQCbc', 'tSzE5t0p', 'PARTY', '9NoBUajQ', 'Ce8vwPmE', 'SVQXQCbc']) | 2          |
+| | 7IK9Yo0h   |
+| | tSzE5t0p   |
 
-# Exemplul 2
+## Example Two
 
-**Intrare**                                                                                                                                                              
-`['m8rfQBvl', 'fc1oZCE0', 'UgffRkOn', '7ugX7bm0', '9CQBGUeJ', 
-'2FQZT3uC', 'dziNz78I', 'mdSGyQCJ', 'LjcVpmDL', 'fPXNHpm1', 
-'HTTbwRmM', 'B5yTkMQi', '8N0FThqG', 'xys2FYzn', 'MDzcM9ZK',
-'PARTY', '2FQZT3uC', 'dziNz78I', 'mdSGyQCJ', 'LjcVpmDL', 
-'fPXNHpm1', 'HTTbwRmM', 'B5yTkMQi', '8N0FThqG', 'm8rfQBvl', 
-'fc1oZCE0', 'UgffRkOn', '7ugX7bm0', '9CQBGUeJ']`
+| **Intrare** | **Ieșire**  |
+| --- | --- |
+| partyTime(['m8rfQBvl', 'fc1oZCE0', 'UgffRkOn', '7ugX7bm0', '9CQBGUeJ', '2FQZT3uC', 'dziNz78I', 'mdSGyQCJ', 'LjcVpmDL', 'fPXNHpm1', 'HTTbwRmM', 'B5yTkMQi', '8N0FThqG', 'xys2FYzn', 'MDzcM9ZK','PARTY', '2FQZT3uC', 'dziNz78I', 'mdSGyQCJ', 'LjcVpmDL', 'fPXNHpm1', 'HTTbwRmM', 'B5yTkMQi', '8N0FThqG', 'm8rfQBvl', 'fc1oZCE0', 'UgffRkOn', '7ugX7bm0', '9CQBGUeJ']) | 2          |
+| | xys2FYzn |
+| | MDzcM9ZK |
 
-**Ieșire**
-
-2
-
-xys2FYzn
-
-MDzcM9ZK
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-7IK9Yo0h
-9NoBUajQ
-Ce8vwPmE
-SVQXQCbc
-tSzE5t0p
-PARTY
-9NoBUajQ
-Ce8vwPmE
-SVQXQCbc
+partyTime(['7IK9Yo0h', '9NoBUajQ', 'Ce8vwPmE', 'SVQXQCbc', 'tSzE5t0p', 'PARTY', '9NoBUajQ', 'Ce8vwPmE', 'SVQXQCbc'])
 [/input]
 [output]
 2
@@ -559,32 +413,19 @@ SVQXQCbc
 tSzE5t0p
 [/output]
 [/test]
-[test]
+[test open]
 [input]
-7IK9Yo0h
-9NoBUajQ
-Ce8vwPmE
-SVQXQCbc
-tSzE5t0p
-PARTY
-9NoBUajQ
-Ce8vwPmE
-SVQXQCbc
+partyTime(['m8rfQBvl', 'fc1oZCE0', 'UgffRkOn', '7ugX7bm0', '9CQBGUeJ', '2FQZT3uC', 'dziNz78I', 'mdSGyQCJ', 'LjcVpmDL', 'fPXNHpm1', 'HTTbwRmM', 'B5yTkMQi', '8N0FThqG', 'xys2FYzn', 'MDzcM9ZK','PARTY', '2FQZT3uC', 'dziNz78I', 'mdSGyQCJ', 'LjcVpmDL', 'fPXNHpm1', 'HTTbwRmM', 'B5yTkMQi', '8N0FThqG', 'm8rfQBvl', 'fc1oZCE0', 'UgffRkOn', '7ugX7bm0', '9CQBGUeJ'])
 [/input]
 [output]
 2
-7IK9Yo0h
-tSzE5t0p
+xys2FYzn
+MDzcM9ZK
 [/output]
 [/test]
 [test]
 [input]
-7IK9Yo0h
-9NoBUajQ
-Ce8vwPmE
-SVQXQCbc
-tSzE5t0p
-PARTY
+partyTime(['7IK9Yo0h', '9NoBUajQ', 'Ce8vwPmE', 'SVQXQCbc', 'tSzE5t0p', 'PARTY'])
 [/input]
 [output]
 5
@@ -597,14 +438,7 @@ tSzE5t0p
 [/test]
 [test]
 [input]
-7IK9Yo0h
-9NoBUajQ
-4Ce8vwPmE
-5SVQXQCbc
-6tSzE5t0p
-PARTY
-5SVQXQCbc
-6tSzE5t0p
+partyTime(['7IK9Yo0h', '9NoBUajQ', '4Ce8vwPmE', '5SVQXQCbc', '6tSzE5t0p', 'PARTY', '5SVQXQCbc', '6tSzE5t0p'])
 [/input]
 [output]
 3
@@ -615,20 +449,7 @@ PARTY
 [/test]
 [test]
 [input]
-IK9Yo0h
-NoBUajQ
-4Ce8vwPmE
-5SVQXQCbc
-7IK9Yo0h
-9NoBUajQ
-4Ce8vwPmE
-5SVQXQCbc
-6tSzE5t0p
-PARTY
-9NoBUajQ
-4Ce8vwPmE
-5SVQXQCbc
-6tSzE5t0p
+partyTime(['IK9Yo0h', 'NoBUajQ', '4Ce8vwPmE', '5SVQXQCbc', '7IK9Yo0h', '9NoBUajQ', '4Ce8vwPmE', '5SVQXQCbc', '6tSzE5t0p', 'PARTY', '9NoBUajQ', '4Ce8vwPmE', '5SVQXQCbc', '6tSzE5t0p'])
 [/input]
 [output]
 5
@@ -641,17 +462,7 @@ NoBUajQ
 [/test]
 [test]
 [input]
-IK9Yo0h
-NoBUajQ
-4Ce8vwPmE
-5SVQXQCbc
-6tSzE5t0p
-PARTY
-IK9Yo0h
-NoBUajQ
-4Ce8vwPmE
-5SVQXQCbc
-6tSzE5t0p
+partyTime(['NoBUajQ', '4Ce8vwPmE', '5SVQXQCbc', '6tSzE5t0p', 'PARTY', 'IK9Yo0h', 'NoBUajQ', '4Ce8vwPmE', '5SVQXQCbc', '6tSzE5t0p'])
 [/input]
 [output]
 0
@@ -659,17 +470,7 @@ NoBUajQ
 [/test]
 [test]
 [input]
-5IK9Yo0h
-NoBUajQ
-4Ce8vwPmE
-QXQCbc
-6tSzE5t0p
-4ftyfvwPmE
-jghvgyg
-6tSzE5t0p
-PARTY
-4Ce8vwPmE
-6tSzE5t0p
+partyTime(['5IK9Yo0h', 'NoBUajQ', '4Ce8vwPmE', 'QXQCbc', '6tSzE5t0p', '4ftyfvwPmE', 'jghvgyg', '6tSzE5t0p', 'PARTY', '4Ce8vwPmE', '6tSzE5t0p'])
 [/input]
 [output]
 6
@@ -686,7 +487,8 @@ jghvgyg
 [/code-task]
 
 [/slide]
-[slide]
+
+[slide hideTitle]
 
 # Problemă: Card Game
 
@@ -694,12 +496,21 @@ jghvgyg
 [code-editor language=javascript]
 
 ```
-function solve(input) {
-  // Write your code here
+function cardGame(input) {
+  // Scrieți codul dvs. aici
 }
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Descriere
@@ -708,11 +519,11 @@ Vi se oferă o secvență de oameni și ce cărți de joc extrage fiecare din pa
 
 Rezultatul va fi o **matrice de șiruri**. Fiecare șir va avea acest format:
 
-`{PersonName}: {PT, PT, PT, ... PT}`
+"\{**personName**\}: \{**PT, PT, PT,... PT**\}"
 
-Unde P `(2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A)` este puterea cardului și T `(S, H, D, C)` este tipul.
+Unde P "(**2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A**)" este puterea cardului și T "(**S, H, D, C**)" este tipul.
 
-Numele persoanei poate conține orice simbol ASCII, cu excepția: `:`.
+Numele persoanei poate conține orice simbol ASCII, cu excepția: "**:**".
 
 Rezultatul va fi întotdeauna în formatul descris, nu este necesar s-o verificați.
 
@@ -722,26 +533,19 @@ Jocul este jucat folosind mai multe punți. Fiecare carte are o valoare. Valoare
 
 Puterile de la 2 la 10 au aceeași valoare ca numărul lor și J, Q, K, A sunt 11, 12, 13, 14.
 
-Tipurile sunt mapate la multiplicatori în felul următor `(S -> 4, H-> 3, D -> 2, C -> 1)`.
+Tipurile sunt mapate la multiplicatori în felul următor "(**S -> 4, H-> 3, D -> 2, C -> 1**)".
 
 Imprimați valoarea totală a cărții pe care fiecare jucător o are în mână în format:
 
-`{personName}: {value}`
+"\{**personName**\}: \{**value**\}"
 
-# Exemplu
+## Exemplu
 
-**Intrare**                                                                                                                                                  
-`['Peter: 2C, 4H, 9H, AS, QS', 'Tomas: 3H, 10S, JC, KD, 5S, 10S', 
-'Andrea: QH, QC, QS, QD', 'Tomas: 6H, 7S, KC, KD, 5S, 10C', 
-'Andrea: QH, QC, JS, JD, JC', 'Peter: JD, JD, JD, JD, JD, JD']` 
-
-**Ieșire**
-
-Peter\: 167
-
-Tomas\: 175
-
-Andrea\: 197
+| **Intrare** | **Ieșire**  |
+| --- | --- |
+| cardGame(['Peter: 2C, 4H, 9H, AS, QS', 'Tomas: 3H, 10S, JC, KD, 5S, 10S', 'Andrea: QH, QC, QS, QD', 'Tomas: 6H, 7S, KC, KD, 5S, 10C', 'Andrea: QH, QC, JS, JD, JC', 'Peter: JD, JD, JD, JD, JD, JD']) | Peter\: 167 |
+| | Tomas\: 175 |
+| | Andrea\: 197  |
 
 [/task-description]
 [tests]
@@ -841,20 +645,29 @@ Pesho\: 22
 [/code-task]
 
 [/slide]
-[slide]
+[slide hideTitle]
 
 # Problemă: Company Users
 
-[code-task title="Company Users" taskId="js-fundamentals-pt2-Associative-Arrays-Company-users" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Company Users" taskId="js-fundamentals-pt2-Associative-Arrays-Company-Users" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
-function solve(input) {
-  // Write your code here
+function companyUsers(input) {
+  // Scrieți codul dvs. aici
 }
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 
@@ -868,19 +681,19 @@ Când terminați de citit datele, ordonați companiile după nume în ordine cre
 
 Imprimați numele companiei și ID-ul fiecărui angajat în următorul format:
 
-`{companyName}
--- {id1}
--- {id2}
--- {idN}`
+"\{**companyName**\}
+\-\- \{**id1**\}
+\-\- \{**id2**\}
+\-\- \{**idN**\}"
 
-- Intrarea este o **matrice de șiruri**, fiecare în format: `{companyName} -> {employeeId}`.
-- Intrarea va fi întotdeauna valabilă.
+- Intrarea este o **matrice de șiruri**, fiecare în format: "\{**companyName**\} \-\> \{**employeeId**\}"
+- Intrarea va fi întotdeauna valabilă
 
-# Exemplul 1
+## Example One
 
-|**Intrare**|**Ieșire**|
+| **Intrare** | **Ieșire**  |
 | --- | --- |
-| `['SoftUni -> AA12345', 'SoftUni -> BB12345', 'Microsoft -> CC12345', 'HP -> BB12345']` | HP           |
+| companyUsers(['SoftUni -> AA12345', 'SoftUni -> BB12345', 'Microsoft -> CC12345', 'HP -> BB12345']) | HP           |
 |                                                                                         | \-\- BB12345 |
 |                                                                                         | Microsoft    |
 |                                                                                         | \-\- CC12345 |
@@ -888,26 +701,23 @@ Imprimați numele companiei și ID-ul fiecărui angajat în următorul format:
 |                                                                                         | \-\- AA12345 |
 |                                                                                         | \-\- BB12345 |
 
-# Exemplul 2
+## Example Two
 
-|**Intrare**|**Ieșire**|
+| **Intrare** | **Ieșire**  |
 | --- | --- |
-| `['SoftUni -> AA12345', 'SoftUni -> CC12344', 'Lenovo -> XX23456', 'SoftUni -> AA12345', 'Movement -> DD11111']` | Lenovo       |
+| companyUsers(['SoftUni -> AA12345', 'SoftUni -> CC12344', 'Lenovo -> XX23456', 'SoftUni -> AA12345', 'Movement -> DD11111']) | Lenovo       |
 |                                                                                                                  | \-\- XX23456 |
 |                                                                                                                  | Movement     |
 |                                                                                                                  | \-\- DD11111 |
 |                                                                                                                  | SoftUni      |
 |                                                                                                                  | \-\- AA12345 |
-|                                                                                                                  | \-\- CC12344 |
+|                                                                                                                 | \-\- CC12344 |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-SoftUni \-\> AA12345
-SoftUni \-\> BB12345
-Microsoft \-\> CC12345
-HP \-\> BB12345
+companyUsers(['SoftUni -> AA12345', 'SoftUni -> BB12345', 'Microsoft -> CC12345', 'HP -> BB12345'])
 [/input]
 [output]
 HP
@@ -919,13 +729,9 @@ SoftUni
 \-\- BB12345
 [/output]
 [/test]
-[test]
+[test open]
 [input]
-SoftUni \-\> AA12345
-SoftUni \-\> CC12344
-Lenovo \-\> XX23456
-SoftUni \-\> AA12345
-Movement \-\> DD11111
+companyUsers(['SoftUni -> AA12345', 'SoftUni -> CC12344', 'Lenovo -> XX23456', 'SoftUni -> AA12345', 'Movement -> DD11111'])
 [/input]
 [output]
 Lenovo
@@ -939,12 +745,7 @@ SoftUni
 [/test]
 [test]
 [input]
-A \-\> ncsms
-B \-\> sasa
-B \-\> sasa
-M \-\> sasads
-M \-\> 12ww
-Z \-\> wqwqw
+companyUsers(['A -> ncsms', 'B -> sasa', 'B -> sasa', 'M -> M', 'M -> 12ww', 'Z -> wqwqw'])
 [/input]
 [output]
 A
@@ -952,7 +753,7 @@ A
 B
 \-\- sasa
 M
-\-\- sasads
+\-\- M
 \-\- 12ww
 Z
 \-\- wqwqw
@@ -960,15 +761,7 @@ Z
 [/test]
 [test]
 [input]
-A \-\> ncsms
-B \-\> sasa
-B \-\> sasa
-M \-\> sasgyads
-M \-\> 12gyww
-Z \-\> wqwqw
-L \-\> sasa
-L \-\> sahjksads
-L \-\> 12vvww
+companyUsers(['A -> ncsms', 'B -> sasa', 'B -> sasa', 'M -> sasgyads', 'M -> 12gyww', 'Z -> wqwqw', 'L -> sasa', 'L -> sahjksads', 'L -> 12vvww'])
 [/input]
 [output]
 A
@@ -988,14 +781,7 @@ Z
 [/test]
 [test]
 [input]
-F \-\> dncsms
-B \-\> sasadd
-B \-\> sasadd
-M \-\> sasgdyads
-M \-\> 12gyww
-F \-\> wqwqw
-L \-\> sasa
-L \-\> sahjksads
+companyUsers(['F -> dncsms', 'B -> sasadd', 'B -> sasadd', 'M -> sasgdyads', 'M -> 12gyww', 'F -> wqwqw', 'L -> sasa', 'L -> sahjksads'])
 [/input]
 [output]
 B
@@ -1013,14 +799,7 @@ M
 [/test]
 [test]
 [input]
-F \-\> dncsms
-A \-\> sa44sadd
-B \-\> sasadd
-M \-\> sas,gdyads
-M \-\> 12gnjyww
-N \-\> wqwqw
-L \-\> sasa
-L \-\> sahjksads
+companyUsers(['F -> dncsms', 'A -> sa44sadd', 'B -> sasadd', 'M -> sas,gdyads', 'M -> 12gnjyww', 'N -> wqwqw', 'L -> sasa', 'L -> sahjksads'])
 [/input]
 [output]
 A
@@ -1041,17 +820,7 @@ N
 [/test]
 [test]
 [input]
-F \-\> dnjkcsms
-A \-\> sa44sadd
-B \-\> sanjsadd
-M \-\> sas,gdyads
-M \-\> 12gnjyww
-N \-\> wqwqw
-O \-\> snnasa
-L \-\> sa(\*hjksads
-P \-\> 12gnjyww
-N \-\> wqwqw
-Q \-\> snnasa
+companyUsers(['F -> dnjkcsms', 'A -> sa44sadd', 'B -> sanjsadd', 'M -> sas,gdyads', 'M -> 12gnjyww', 'N -> wqwqw', 'O -> snnasa', 'L -> sa(\*hjksads', 'P -> 12gnjyww', 'N -> wqwqw', 'Q -> snnasa'])
 [/input]
 [output]
 A
@@ -1080,7 +849,8 @@ Q
 [/code-task]
 
 [/slide]
-[slide]
+
+[slide hideTitle]
 
 # Problemă: A Miner Task
 
@@ -1088,12 +858,21 @@ Q
 [code-editor language=javascript]
 
 ```
-function solve(input) {
-  // Write your code here
+function minerTask(input) {
+  // Scrieți codul dvs. aici
 }
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Descriere
@@ -1106,53 +885,42 @@ Sarcina dvs. este să colectați resursele și să le tiparitiți pe o nouă lin
 
 **Tipariți resursele și cantitățile acestora în acest format**:
 
-`{resource} –> {quantity}`
+"\{**resource**\} \-\> \{**quantity**\}"
 
-Cantitățile introduse vor fi în interval de `[1 ... 2 000 000 000]`
+Cantitățile introduse vor fi în interval de "\[**1...2 000 000 000**\]"
 
-# Exemplul 1
 
-|**Intrare**|**Ieșire**|
+## Example One
+
+| **Intrare** | **Ieșire**  |
 | --- | --- |
-| `['Gold', '155', 'Silver', '10', 'Copper', '17']` | Gold \-\> 155  |
+| minerTask(['Gold', '155', 'Silver', '10', 'Copper', '17']) | Gold \-\> 155  |
 |                                                   | Silver \-\> 10 |
 |                                                   | Copper \-\> 17 |
 
-# Exemplul 2
+## Example Two
 
-|**Intrare**|**Ieșire**|
+| **Intrare** | **Ieșire**  |
 | --- | --- |
-| `['gold', '155', 'silver', '10', 'copper', '17', 'gold', '15']` | gold \-\> 170  |
+| minerTask(['gold', '155', 'silver', '10', 'copper', '17', 'gold', '15']) | gold \-\> 170  |
 |                                                                 | silver \-\> 10 |
-|                                                                 | copper \-\> 17 |
+|                                                                | copper \-\> 17 |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-gold
-155
-silver
-10
-copper
-17
+minerTask(['Gold', '155', 'Silver', '10', 'Copper', '17'])
 [/input]
 [output]
-gold \-\> 155
-silver \-\> 10
-copper \-\> 17
+Gold \-\> 155
+Silver \-\> 10
+Copper \-\> 17
 [/output]
 [/test]
-[test]
+[test open]
 [input]
-gold
-155
-silver
-10
-copper
-17
-gold
-15
+minerTask(['gold', '155', 'silver', '10', 'copper', '17', 'gold', '15'])
 [/input]
 [output]
 gold \-\> 170
@@ -1162,12 +930,17 @@ copper \-\> 17
 [/test]
 [test]
 [input]
-silver
-14
-silver
-\-2
-silver
-\-3
+minerTask(['gold', '155', 'silver', '10', 'copper', '17'])
+[/input]
+[output]
+gold \-\> 155
+silver \-\> 10
+copper \-\> 17
+[/output]
+[/test]
+[test]
+[input]
+minerTask(['silver', '14', 'silver', '-2', 'silver', '\-3'])
 [/input]
 [output]
 silver \-\> 9
@@ -1175,10 +948,7 @@ silver \-\> 9
 [/test]
 [test]
 [input]
-Gold
-15
-gold
-15
+minerTask(['Gold', '15', 'gold', '15'])
 [/input]
 [output]
 Gold \-\> 15
@@ -1187,10 +957,7 @@ gold \-\> 15
 [/test]
 [test]
 [input]
-Gold
-12
-gold
-1
+minerTask(['Gold', '12', 'gold', '1'])
 [/input]
 [output]
 Gold \-\> 12
@@ -1199,16 +966,7 @@ gold \-\> 1
 [/test]
 [test]
 [input]
-a
-15
-a
-40
-b
-3
-c
-45
-d
-152
+minerTask(['a', '15', 'a', '40', 'b', '3', 'c', '45', 'd', '152'])
 [/input]
 [output]
 a \-\> 55
@@ -1224,8 +982,3 @@ d \-\> 152
 
 [/slide]
 
-[slide]
-# Rezultatele temei de casa
-[tasks-results/]
-
-[/slide]

@@ -1,12 +1,9 @@
-[slide]
-# Introducere
+# Lesson Introduction
 
-[vimeo-video]
-[stream language="EN" videoId="489798991/d4ac1eda53" default /]
-[stream language="RO" videoId="489798991/d4ac1eda53"  /]
-[/video-vimeo]
+[slide hideTitle]
+# Lesson Content
 
-# În această lecție veți afla despre:
+## In this lesson you will learn:
 
 **1. Matrice asociative**
 - Definiție

@@ -1,12 +1,8 @@
-# Matrice asociative
+# Matrice Asociative
 
-[slide]
-# Ce este o matrice asociativă?
+[slide hideTitle]
+# Ce este o Matrice Asociativă?
 
-[vimeo-video]
-[stream language="EN" videoId="489799053/d484700337" default /]
-[stream language="RO" videoId="489799053/d484700337"  /]
-[/video-vimeo]
 
 Limbajul JavaScript este construit pe o structură centrală de date - matricea asociativă.
 
@@ -16,7 +12,7 @@ Nu au o proprietate **lungime** ca matricea normală și nu pot fi iterate folos
 
 Matricele sunt indexate cu **chei de șir**. Acestea constau dintr-o **cheie** și o **valoare**.
 
-**cheia** este un **șir**. **Valoarea**poate fi de** orice tip**.
+**cheia** este un **șir**. **Valoarea**poate fi de **orice tip**.
 
 Exemplu:
 
@@ -27,13 +23,9 @@ Exemplu:
 | Sam Doe    | \+1\-555\-5030 |
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Declarație
 
-[vimeo-video]
-[stream language="EN" videoId="489799055/f5c3621dae" default /]
-[stream language="RO" videoId="489799055/f5c3621dae"  /]
-[/video-vimeo]
 O matrice asociativa în JavaScript este doar un obiect, deci îl putem declara dinamic.
 
 Să declarăm și să inițializăm unul:
@@ -49,7 +41,7 @@ Puteți accesa valorile prin cheile lor.
 În acest exemplu, "four" este **cheia** și numărul 4 este **valoarea** corespunzătoare.
 
 ```js
-assocArr["four"] = 4;
+assocArr['four'] = 4;
 ```
 
 Aici, "five" este **cheia** și 5 este **valoarea** corespunzătoare.
@@ -66,13 +58,9 @@ assocArr[key] = 6;
 ```
 [/slide]
 
-[slide]
-# Folosirea unei bucle for-in
+[slide hideTitle]
+# Folosirea Unei Nucle "for-in"
 
-[vimeo-video]
-[stream language="EN" videoId="489799112/12f12cff47" default /]
-[stream language="RO" videoId="489799112/12f12cff47"  /]
-[/video-vimeo]
 
 Putem folosi o buclă **for-in** pentru a itera prin chei.
 
@@ -82,34 +70,38 @@ Așa cum se arată mai jos:
 
 ```js live
 let assocArr = {};
-assocArr["one"] = 1;
-assocArr["two"] = 2;
-assocArr["three"] = 3;
+assocArr['one'] = 1;
+assocArr['two'] = 2;
+assocArr['three'] = 3;
 for (let key in assocArr) {
-  console.log(key + " = " + assocArr[key]);
+  console.log(key + ' = ' + assocArr[key]);
 }
 ```
 
 [/slide]
 
-[slide]
-# Problemă: Phone Book
+[slide hideTitle]
+# Problem with Solution: Phone Book
 
-[vimeo-video]
-[stream language="EN" videoId="489799126/f74d7e08c7" default /]
-[stream language="RO" videoId="489799126/f74d7e08c7"  /]
-[/video-vimeo]
-
-[code-task title="Phone Book" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Phone Book" taskId="js-fundamentals-pt2-Associative-Arrays-lab-Phone-Book" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
-function solve(input){
-  // Write your code here
+function phoneBook(input){
+  // Scrieți codul dvs. aici
 }
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 
@@ -127,22 +119,19 @@ La final tipariți rezultatul **fără a-l sorta**.
 
 Utilizați o **matrice asociativă**.
 
-# Exemplu
+## Exemplu
 
 |**Intrare**|**Ieșire**|
 | --- | --- |
-| `['Tim 0834212554', 'Peter 0877547887', 'Bill 0896543112', 'Tim 0876566344']`| Tim \-\> 0876566344   |
+| phoneBook(['Tim 0834212554', 'Peter 0877547887', 'Bill 0896543112', 'Tim 0876566344']) | Tim \-\> 0876566344   |
 |                                                                              | Peter \-\> 0877547887 |
 |                                                                              | Bill \-\> 0896543112  |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-Tim 0834212554
-Peter 0877547887
-Bill 0896543112
-Tim 0876566344
+phoneBook(['Tim 0834212554', 'Peter 0877547887', 'Bill 0896543112', 'Tim 0876566344'])
 [/input]
 [output]
 Tim \-\> 0876566344
@@ -152,10 +141,7 @@ Bill \-\> 0896543112
 [/test]
 [test]
 [input]
-hj 0552554
-hr 087587
-hj 0453112
-hjk 0845344
+phoneBook(['hj 0552554', 'hr 087587', 'hj 0453112', 'hjk 0845344'])
 [/input]
 [output]
 hj \-\> 0453112
@@ -165,10 +151,7 @@ hjk \-\> 0845344
 [/test]
 [test]
 [input]
-hkkk 0552554
-hkkk 08754557
-hj 0453112
-hjk 0845344
+phoneBook(['hkkk 0552554', 'hkkk 08754557', 'hj 0453112', 'hjk 0845344'])
 [/input]
 [output]
 hkkk \-\> 08754557
@@ -178,10 +161,7 @@ hjk \-\> 0845344
 [/test]
 [test]
 [input]
-ha 0552554
-ha 087587
-hj 0jkl12
-hghgh 08455534544
+phoneBook(['ha 0552554', 'ha 087587', 'hj 0jkl12', 'hghgh 08455534544'])
 [/input]
 [output]
 ha \-\> 087587
@@ -191,10 +171,7 @@ hghgh \-\> 08455534544
 [/test]
 [test]
 [input]
-hj 0552554
-h 087587
-hdfdf 0454563112
-hjghjk 0845344
+phoneBook(['hj 0552554', 'h 087587', 'hdfdf 0454563112', 'hjghjk 0845344'])
 [/input]
 [output]
 hj \-\> 0552554
@@ -205,10 +182,7 @@ hjghjk \-\> 0845344
 [/test]
 [test]
 [input]
-sdfshj 055562554
-hjhgjr 0875587
-sdfhj 0453456112
-tyuhjk 0844565344
+phoneBook(['sdfshj 055562554', 'hjhgjr 0875587', 'sdfhj 0453456112', 'tyuhjk 0844565344'])
 [/input]
 [output]
 sdfshj \-\> 055562554
@@ -223,159 +197,8 @@ tyuhjk \-\> 0844565344
 
 [/slide]
 
-[slide]
-# Soluție: Phone Book
-
-[vimeo-video]
-[stream language="EN" videoId="489799132/3c374932c3" default /]
-[stream language="RO" videoId="489799132/3c374932c3"  /]
-[/video-vimeo]
-
-[code-task title="Phone Book" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-
-```
-//Video code
-
-function solve(input){
-let phoneBook ={};
-
-for(let line of input){
-  let tokens = line.split(' ');
-  let name = tokens[0];
-  let number = tokens[1];
-
-  phoneBook[name] = number;
-}
-
-for(let key in phoneBook){
-  console.log(`${key} -> ${phoneBook[key]}`);
- }
-}
-
-solve
-```
-
-[/code-editor]
-[task-description]
-
-# Descriere
-
-Scrieți o funcție care stochează informații despre **numele unei persoane** și **numărul de telefon al acesteia**.
-
-Intrarea vine sub forma unei **matrice de șiruri**.
-
-Fiecare șir conține un nume și un număr.
-
-Dacă primiți același nume de două ori, înlocuiți numărul.
-
-La final tipariți rezultatul **fără a-l sorta**.
-
-Utilizați o **matrice asociativă**.
-
-# Exemplu
-
-|**Intrare**|**Ieșire**|
-| --- | --- |
-| `['Tim 0834212554', 'Peter 0877547887', 'Bill 0896543112', 'Tim 0876566344']`| Tim \-\> 0876566344   |
-|                                                                              | Peter \-\> 0877547887 |
-|                                                                              | Bill \-\> 0896543112  |
-
-[/task-description]
-[tests]
-[test]
-[input]
-Tim 0834212554
-Peter 0877547887
-Bill 0896543112
-Tim 0876566344
-[/input]
-[output]
-Tim \-\> 0876566344
-Peter \-\> 0877547887
-Bill \-\> 0896543112
-[/output]
-[/test]
-[test]
-[input]
-hj 0552554
-hr 087587
-hj 0453112
-hjk 0845344
-[/input]
-[output]
-hj \-\> 0453112
-hr \-\> 087587
-hjk \-\> 0845344
-[/output]
-[/test]
-[test]
-[input]
-hkkk 0552554
-hkkk 08754557
-hj 0453112
-hjk 0845344
-[/input]
-[output]
-hkkk \-\> 08754557
-hj \-\> 0453112
-hjk \-\> 0845344
-[/output]
-[/test]
-[test]
-[input]
-ha 0552554
-ha 087587
-hj 0jkl12
-hghgh 08455534544
-[/input]
-[output]
-ha \-\> 087587
-hj \-\> 0jkl12
-hghgh \-\> 08455534544
-[/output]
-[/test]
-[test]
-[input]
-hj 0552554
-h 087587
-hdfdf 0454563112
-hjghjk 0845344
-[/input]
-[output]
-hj \-\> 0552554
-h \-\> 087587
-hdfdf \-\> 0454563112
-hjghjk \-\> 0845344
-[/output]
-[/test]
-[test]
-[input]
-sdfshj 055562554
-hjhgjr 0875587
-sdfhj 0453456112
-tyuhjk 0844565344
-[/input]
-[output]
-sdfshj \-\> 055562554
-hjhgjr \-\> 0875587
-sdfhj \-\> 0453456112
-tyuhjk \-\> 0844565344
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide]
-# Manipularea matricelor asociative
-
-[vimeo-video]
-[stream language="EN" videoId="489799185/17e719a047" default /]
-[stream language="RO" videoId="489799185/17e719a047"  /]
-[/video-vimeo]
+[slide hideTitle]
+# Manipularea Matricelor Asociative
 
 Putem folosi următoarea expresie pentru a verifica dacă o **cheie** este **prezentă**.
 
@@ -387,21 +210,23 @@ Rezultatul ar trebui să fie "true".
 
 ```js live
 let assocArr = {};
-assocArr.name = "John Smith";
-if (assocArr.hasOwnProperty("name")) {
+assocArr.name = 'John Smith';
+if (assocArr.hasOwnProperty('name')) {
   console.log(true);
 } else{
   console.log(false);
 }
 ```
 
-Eliminarea entităților se face folosind cuvântul cheie `delete`. Pentru a testa acest lucru, vom declara un obiect gol și îi vom atribui o cheie.
+Eliminarea entităților se face folosind cuvântul cheie `delete`.
+
+ Pentru a testa acest lucru, vom declara un obiect gol și îi vom atribui o cheie.
 
 Apoi, vom șterge cheia. Ieșirea este un obiect gol, după cum puteți vedea din exemplu.
 
 ```js live
 let assocArr = {};
-assocArr.name = "John Smith";
+assocArr.name = 'John Smith';
 delete assocArr.name;
 console.log(assocArr);
 ```
@@ -413,7 +238,7 @@ Vedeți exemplul de mai jos.
 
 ```js live
 let assocArr = {};
-assocArr.name = "John Smith";
+assocArr.name = 'John Smith';
 delete assocArr.name;
 console.log(assocArr.name);
 ```
@@ -424,7 +249,7 @@ Sintaxa de alocare a destructurării este o expresie JavaScript care face posibi
 
 Metoda `Object.entries ()` returnează o serie de matrice ale propriilor perechi `[ key , value ]` ale unui anumit obiect.
 
-În bucla for-of din exemplul de mai jos declarăm variabilele noastre**cheie** și **valoare**.
+În bucla for-of din exemplul de mai jos declarăm variabilele noastre **cheie** și **valoare**.
 
 După prima iterație, variabila `key` va fi egală cu numele, iar variabila `value` va fi egală cu "John Smith".
 
@@ -432,7 +257,7 @@ La a doua iterație a buclei, `key` va fi egală cu vârsta, iar `value` va fi e
 
 ```js live
 let assocArr = {};
-assocArr.name = "John Smith";
+assocArr.name = 'John Smith';
 assocArr.age = 28;
 for (let [key, value] of Object.entries(assocArr)) {
   console.log(`${key} -> ${value}`);
@@ -441,44 +266,49 @@ for (let [key, value] of Object.entries(assocArr)) {
 
 [/slide]
 
-[slide]
-# Problemă: Meetings
+[slide hideTitle]
+# Problem with Solution: Meetings
 
-[vimeo-video]
-[stream language="EN" videoId="489799225/6db77ff45a" default /]
-[stream language="RO" videoId="489799225/6db77ff45a"  /]
-[/video-vimeo]
-
-[code-task title="Meetings" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Meetings" taskId="js-fundamentals-pt2-Associative-Arrays-lab-Meetings" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
-function solve(input){
-  // Write your code here
+function meetings(input){
+  // Scrieți codul dvs. aici
 }
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
+
 # Descriere
 
 Scrieți o funcție care primește **zilele saptamanii** și **nume** ca intrare.
 
 Tipariți un mesaj pentru fiecare întâlnire reușită în formatul următor.
 
-`Scheduled for ${day}`
+"**Scheduled for** \$\{**day**\}"
 
 Dacă aceeași zi a săptămânii apare a doua oară, tipăriți mesajul **conflict**.
 
-`Conflict on ${day}!`
+"**Conflict on** \$\{**day**\}**!**"
 
 La final, tipăriți o listă care conține toate programările de succes și conflictuale.
 
-# Exemplu
+## Exemplu
 
 |**Intrare**|**Ieșire** |
 | --- | --- |
-| `['Monday Peter', 'Wednesday Bill', 'Monday Tim', 'Friday Tim']` | Scheduled for Monday    |
+| meetings(['Monday Peter', 'Wednesday Bill', 'Monday Tim', 'Friday Tim']) | Scheduled for Monday    |
 |                                                                  | Scheduled for Wednesday |
 |                                                                  | Conflict on Monday      |
 |                                                                  | Scheduled for Friday    |
@@ -489,12 +319,9 @@ La final, tipăriți o listă care conține toate programările de succes și co
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-Monday Peter
-Wednesday Bill
-Monday Tim
-Friday Tim
+meetings(['Monday Peter', 'Wednesday Bill', 'Monday Tim', 'Friday Tim'])
 [/input]
 [output]
 Scheduled for Monday
@@ -508,9 +335,7 @@ Friday \-\> Tim
 [/test]
 [test]
 [input]
-Monday Peter
-Wednesday Bill
-Friday Tim
+meetings(['Monday Peter', 'Wednesday Bill', 'Friday Tim'])
 [/input]
 [output]
 Scheduled for Monday
@@ -523,11 +348,7 @@ Friday \-\> Tim
 [/test]
 [test]
 [input]
-Friday Bob
-Saturday Ted
-Monday Bill
-Monday John
-Wednesday George
+meetings(['Friday Bob', 'Saturday Ted', 'Monday Bill', 'Monday John', 'Wednesday George'])
 [/input]
 [output]
 Scheduled for Friday
@@ -543,14 +364,7 @@ Wednesday \-\> George
 [/test]
 [test]
 [input]
-Thursday Bob
-Tuesday Ted
-Tuesday Jeff
-Sunday George
-Wednesday John
-Sunday Jeff
-Sunday Jeff
-Saturday Bill
+meetings(['Thursday Bob', 'Tuesday Ted', 'Tuesday Jeff', 'Sunday George', 'Wednesday John', 'Sunday Jeff', 'Sunday Jeff', 'Saturday Bill'])
 [/input]
 [output]
 Scheduled for Thursday
@@ -570,20 +384,7 @@ Saturday \-\> Bill
 [/test]
 [test]
 [input]
-Sunday John
-Tuesday Jeff
-Sunday Bob
-Monday Tim
-Friday Bill
-Sunday Peter
-Saturday John
-Monday George
-Tuesday Jeff
-Tuesday Ted
-Wednesday Bob
-Wednesday John
-Tuesday John
-Tuesday Ted
+meetings(['Sunday John', 'Tuesday Jeff', 'Sunday Bob', 'Monday Tim', 'Friday Bill', 'Sunday Peter', 'Saturday John', 'Monday George', 'Tuesday Jeff', 'Tuesday Ted', 'Wednesday Bob', 'Wednesday John', 'Tuesday John', 'Tuesday Ted'])
 [/input]
 [output]
 Scheduled for Sunday
@@ -610,20 +411,12 @@ Wednesday \-\> Bob
 [/test]
 [test]
 [input]
-Tuesday Ted
-Tuesday Ted
-Tuesday Ted
-Tuesday Ted
-Tuesday Ted
-Tuesday Ted
-Tuesday Ted
-Tuesday Ted
-Tuesday Ted
-Tuesday Ted
-Tuesday Jeff
+meetings(['Tuesday Ted', 'Tuesday Ted', 'Tuesday Ted', 'Tuesday Ted', 'Tuesday Ted', 'Tuesday Ted', 'Tuesday Ted', 'Tuesday Ted', 'Tuesday Jeff', 'Tuesday Ted', 'Tuesday Ted', 'Tuesday Ted', 'Tuesday Jeff'])
 [/input]
 [output]
 Scheduled for Tuesday
+Conflict on Tuesday!
+Conflict on Tuesday!
 Conflict on Tuesday!
 Conflict on Tuesday!
 Conflict on Tuesday!
@@ -643,233 +436,8 @@ Tuesday \-\> Ted
 
 [/slide]
 
-[slide]
-# Soluție: Meetings
-
-[vimeo-video]
-[stream language="EN" videoId="489799243/559e147fc6" default /]
-[stream language="RO" videoId="489799243/559e147fc6"  /]
-[/video-vimeo]
-
-[code-task title="Meetings" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-
-```
-//Video code
-
-function meetings(input){
-const meetings = {};
-
-for (const line of input) {
-  const [weekDay, name] = line.split(' ');
-
-  if (meetings.hasOwnProperty(weekDay)) {
-    console.log(`Conflict on ${weekDay}!`);
-  } else {
-    meetings[weekDay] = name;
-    console.log(`Scheduled for ${weekDay}`);
-  }
-}
-
-for (const key in meetings) {
-  console.log(`${key} -> ${meetings[key]}`);
-}
-}
-```
-
-[/code-editor]
-[task-description]
-
-# Descriere
-
-Scrieți o funcție care primește **zilele saptamanii** și un **nume** ca intrare.
-
-Tipariți un mesaj pentru fiecare întâlnire reușită în formatul următor.
-
-`Scheduled for ${day}`
-
-Dacă aceeași zi a săptămânii apare a doua oară, tipăriți mesajul **conflict**.
-
-`Conflict on ${day}!`
-
-La final, tipăriți o listă care conține toate programările de succes și cele conflictuale.
-
-# Exemplu
-
-|**Intrare**|**Ieșire** |
-| --- | --- |
-| `['Monday Peter', 'Wednesday Bill', 'Monday Tim', 'Friday Tim']` | Scheduled for Monday    |
-|                                                                  | Scheduled for Wednesday |
-|                                                                  | Conflict on Monday      |
-|                                                                  | Scheduled for Friday    |
-|                                                                  | Monday \-\> Peter  |
-|                                                                  | Wednesday \-\> Bill   |
-|                                                                  | Friday \-\> Tim    |
-
-
-[/task-description]
-[tests]
-[test]
-[input]
-Monday Peter
-Wednesday Bill
-Monday Tim
-Friday Tim
-[/input]
-[output]
-Scheduled for Monday
-Scheduled for Wednesday
-Conflict on Monday!
-Scheduled for Friday
-Monday \-\> Peter
-Wednesday \-\> Bill
-Friday \-\> Tim
-[/output]
-[/test]
-[test]
-[input]
-Monday Peter
-Wednesday Bill
-Friday Tim
-[/input]
-[output]
-Scheduled for Monday
-Scheduled for Wednesday
-Scheduled for Friday
-Monday \-\> Peter
-Wednesday \-\> Bill
-Friday \-\> Tim
-[/output]
-[/test]
-[test]
-[input]
-Friday Bob
-Saturday Ted
-Monday Bill
-Monday John
-Wednesday George
-[/input]
-[output]
-Scheduled for Friday
-Scheduled for Saturday
-Scheduled for Monday
-Conflict on Monday!
-Scheduled for Wednesday
-Friday \-\> Bob
-Saturday \-\> Ted
-Monday \-\> Bill
-Wednesday \-\> George
-[/output]
-[/test]
-[test]
-[input]
-Thursday Bob
-Tuesday Ted
-Tuesday Jeff
-Sunday George
-Wednesday John
-Sunday Jeff
-Sunday Jeff
-Saturday Bill
-[/input]
-[output]
-Scheduled for Thursday
-Scheduled for Tuesday
-Conflict on Tuesday!
-Scheduled for Sunday
-Scheduled for Wednesday
-Conflict on Sunday!
-Conflict on Sunday!
-Scheduled for Saturday
-Thursday \-\> Bob
-Tuesday \-\> Ted
-Sunday \-\> George
-Wednesday \-\> John
-Saturday \-\> Bill
-[/output]
-[/test]
-[test]
-[input]
-Sunday John
-Tuesday Jeff
-Sunday Bob
-Monday Tim
-Friday Bill
-Sunday Peter
-Saturday John
-Monday George
-Tuesday Jeff
-Tuesday Ted
-Wednesday Bob
-Wednesday John
-Tuesday John
-Tuesday Ted
-[/input]
-[output]
-Scheduled for Sunday
-Scheduled for Tuesday
-Conflict on Sunday!
-Scheduled for Monday
-Scheduled for Friday
-Conflict on Sunday!
-Scheduled for Saturday
-Conflict on Monday!
-Conflict on Tuesday!
-Conflict on Tuesday!
-Scheduled for Wednesday
-Conflict on Wednesday!
-Conflict on Tuesday!
-Conflict on Tuesday!
-Sunday \-\> John
-Tuesday \-\> Jeff
-Monday \-\> Tim
-Friday \-\> Bill
-Saturday \-\> John
-Wednesday \-\> Bob
-[/output]
-[/test]
-[test]
-[input]
-Tuesday Ted
-Tuesday Ted
-Tuesday Ted
-Tuesday Ted
-Tuesday Ted
-Tuesday Ted
-Tuesday Ted
-Tuesday Ted
-Tuesday Ted
-Tuesday Ted
-Tuesday Jeff
-[/input]
-[output]
-Scheduled for Tuesday
-Conflict on Tuesday!
-Conflict on Tuesday!
-Conflict on Tuesday!
-Conflict on Tuesday!
-Conflict on Tuesday!
-Conflict on Tuesday!
-Conflict on Tuesday!
-Conflict on Tuesday!
-Conflict on Tuesday!
-Conflict on Tuesday!
-Tuesday \-\> Ted
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide]
-# Sortarea matricelor asociative
-
-[vimeo-video]
-[stream language="EN" videoId="489799307/dcdb81aea5" default /]
-[stream language="RO" videoId="489799307/dcdb81aea5"  /]
-[/video-vimeo]
+[slide hideTitle]
+# Sortarea Matricelor Asociative
 
 Obiectele **nu pot fi sortate**. Pentru a face acest lucru, trebuie să le transformăm în matrice.
 
@@ -880,7 +448,7 @@ Folosind metoda `Object.entries()` obținem o serie de matrice.
 Vedeți exemplul de mai jos.
 
 ```js live
-let phonebook = { Tim: "0876566344", Bill: "0896543112" };
+let phonebook = { Tim: '0876566344', Bill: '0896543112' };
 let entries = Object.entries(phonebook);
 console.log(entries);
 ```
@@ -888,7 +456,7 @@ console.log(entries);
 Deci, folosind indexarea putem obține **cheia** și **valoarea** pentru fiecare **intrare**.
 
 ```js live
-let phonebook = { Tim: "0876566344", Bill: "0896543112" };
+let phonebook = { Tim: '0876566344', Bill: '0896543112' };
 let entries = Object.entries(phonebook);
 let firstEntry = entries[0];
 console.log(firstEntry[0]);
@@ -903,13 +471,8 @@ Utilizați metoda `.localeCompare()` pentru a sorta **șiruri** în JavaScript.
 
 [/slide]
 
-[slide]
-# Sortarea după cheie
-
-[vimeo-video]
-[stream language="EN" videoId="489799327/286d74afc8" default /]
-[stream language="RO" videoId="489799327/286d74afc8"  /]
-[/video-vimeo]
+[slide hideTitle]
+# Sortarea După Cheie
 
 Pentru a **sorta după cheie**, utilizați **primul element** al fiecărei intrări.
 
@@ -920,7 +483,7 @@ Expresia `a[0].localeCompare(b[0])` va sorta matricea în ordine crescătoare.
 Dacă avem `b[0].localeCompare(a[0])` funcția va sorta matricea în ordine descrescătoare.
 
 ```js live
-let phonebook = { Tim: "0876566344", Bill: "0896543112" };
+let phonebook = { Tim: '0876566344', Bill: '0896543112' };
 let entries = Object.entries(phonebook);
 let result = entries.sort((a, b) => a[0].localeCompare(b[0]));
 console.log(result);
@@ -931,7 +494,7 @@ Pentru a **sorta după valoare**, utilizați **al doilea element** al fiecărei 
 Acest exemplu este același ca cel de mai sus, singura diferență fiind că folosim al doilea element ca criteriu de sortare.
 
 ```js live
-let phonebook = { Tim: "0876566344", Bill: "0896543112" };
+let phonebook = { Tim: '0876566344', Bill: '0896543112' };
 let entries = Object.entries(phonebook);
 let result = entries.sort((a, b) => a[1].localeCompare(b[1]));
 console.log(result);
@@ -939,52 +502,50 @@ console.log(result);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problemă: AddressBook
 
-[vimeo-video]
-[stream language="EN" videoId="489799330/4e7e06a7e1" default /]
-[stream language="RO" videoId="489799330/4e7e06a7e1"  /]
-[/video-vimeo]
-
-[code-task title="AddressBook" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Address Book" taskId="js-fundamentals-pt2-Associative-Arrays-lab-Address-Book" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
-function solve(input){
-  // Write your code here
+function addressBook(input){
+  // Scrieți codul dvs. aici
 }
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
-
 # Descriere
 
 Scrieți o funcție care preia **nume** și **adrese** ca intrare.
 
-Valorile vor fi separate prin `":"`.
+Valorile vor fi separate prin "**:**".
 
 Dacă același nume apare de mai multe ori, salvați adresa **cea mai recentă**.
 
 Tipăriți o listă cu toate intrările, **sortate** alfabetic după **nume**.
 
-# Exemplu
+## Exemplu
 
-|**Intrare**|**Ieșire**|
-| --- | --- |
-| `['Tim:Doe Crossing', 'Bill:Nelson Place', 'Peter:Carlyle Ave', 'Bill:Ornery Rd']` | Bill \-\> Ornery Rd    |
+| addressBook(['Tim:Doe Crossing', 'Bill:Nelson Place', 'Peter:Carlyle Ave', 'Bill:Ornery Rd']) | Bill \-\> Ornery Rd    |
 |                                                                                    | Peter \-\> Carlyle Ave |
 |                                                                                    | Tim \-\> Doe Crossing  |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-Tim\:Doe Crossing
-Bill\:Nelson Place
-Peter\:Carlyle Ave
-Bill\:Ornery Rd
+addressBook(['Tim:Doe Crossing', 'Bill:Nelson Place', 'Peter:Carlyle Ave', 'Bill:Ornery Rd'])
 [/input]
 [output]
 Bill \-\> Ornery Rd
@@ -994,12 +555,7 @@ Tim \-\> Doe Crossing
 [/test]
 [test]
 [input]
-Bob\:Coleman Ave
-Tim\:Katie Crossing
-John\:Coleman Ave
-John\:Grover Rd
-Jeff\:Acker Crossing
-Bob\:Katie Crossing
+addressBook(['Bob:Coleman Ave', 'Tim:Katie Crossing', 'John:Coleman Ave', 'John:Grover Rd', 'Jeff:Acker Crossing', 'Bob:Katie Crossing'])
 [/input]
 [output]
 Bob \-\> Katie Crossing
@@ -1010,17 +566,7 @@ Tim \-\> Katie Crossing
 [/test]
 [test]
 [input]
-Bob\:Huxley Rd
-John\:Milwaukee Crossing
-Peter\:Fordem Ave
-Bob\:Redwing Ave
-George\:Mesta Crossing
-Ted\:Gateway Way
-Bill\:Gateway Way
-John\:Grover Rd
-Peter\:Huxley Rd
-Jeff\:Gateway Way
-Jeff\:Huxley Rd
+addressBook(['Bob:Huxley Rd', 'John:Milwaukee Crossing', 'Peter:Fordem Ave', 'Bob:Redwing Ave', 'George:Mesta Crossing', 'Ted:Gateway Way', 'Bill:Gateway Way', 'John:Grover Rd', 'Peter:Huxley Rd', 'Jeff:Gateway Way',  'Jeff:Huxley Rd'])
 [/input]
 [output]
 Bill \-\> Gateway Way
@@ -1034,23 +580,7 @@ Ted \-\> Gateway Way
 [/test]
 [test]
 [input]
-Bob\:Coleman Ave
-Tim\:Katie Crossing
-John\:Coleman Ave
-John\:Grover Rd
-Jeff\:Acker Crossing
-Bob\:Katie Crossing
-Bob\:Huxley Rd
-John\:Milwaukee Crossing
-Peter\:Fordem Ave
-Bob\:Redwing Ave
-George\:Mesta Crossing
-Ted\:Gateway Way
-Bill\:Gateway Way
-John\:Grover Rd
-Peter\:Huxley Rd
-Jeff\:Gateway Way
-Jeff\:Huxley Rd
+addressBook(['Bob:Coleman Ave', 'Tim:Katie Crossing', 'John:Coleman Ave', 'John:Grover Rd', 'Jeff:Acker Crossing', 'Bob:Katie Crossing', 'Bob:Huxley Rd', 'John:Milwaukee Crossing', 'Peter:Fordem Ave', 'Bob:Redwing Ave',  'George:Mesta Crossing', 'Ted:Gateway Way', 'Bill:Gateway Way', 'John:Grover Rd', 'Peter:Huxley Rd', 'Jeff:Gateway Way', 'Jeff:Huxley Rd'])
 [/input]
 [output]
 Bill \-\> Gateway Way
@@ -1065,28 +595,7 @@ Tim \-\> Katie Crossing
 [/test]
 [test]
 [input]
-George\:Westend Ave
-Jeff\:Westend Ave
-Bill\:Redwing Ave
-George\:Coleman Ave
-George\:Acker Crossing
-Bill\:Grover Rd
-Jeff\:8th Rd
-John\:Milwaukee Crossing
-Bob\:Fordem Ave
-Ted\:Toban Ave
-Bill\:8th Rd
-Peter\:Katie Crossing
-Ted\:Dayton Ave
-Jeff\:Milwaukee Crossing
-Ted\:Gateway Way
-George\:Westend Ave
-George\:Westend Ave
-John\:Huxley Rd
-George\:Katie Crossing
-Peter\:Milwaukee Crossing
-Peter\:Katie Crossing
-Tim\:Westend Ave
+addressBook(['George:Westend Ave', 'Jeff:Westend Ave', 'Bill:Redwing Ave', 'George:Coleman Ave', 'George:Acker Crossing', 'Bill:Grover Rd', 'Jeff:8th Rd', 'John:Milwaukee Crossing', 'Bob:Fordem Ave', 'Ted:Toban Ave',  'Bill:8th Rd', 'Peter:Katie Crossing', 'Ted:Dayton Ave', 'Jeff:Milwaukee Crossing', 'Ted:Gateway Way', 'George:Westend Ave', 'George:Westend Ave', 'John:Huxley Rd', 'George:Katie Crossing', 'Peter:Milwaukee Crossing', 'Peter:Katie Crossing', 'Tim:Westend Ave'])
 [/input]
 [output]
 Bill \-\> 8th Rd
@@ -1101,13 +610,7 @@ Tim \-\> Westend Ave
 [/test]
 [test]
 [input]
-Ted\:Toban Ave
-Ted\:Toban Ave
-Ted\:Toban Ave
-Ted\:Toban Ave
-Ted\:Toban Ave
-Peter\:Katie Crossing
-Ted\:Dayton Ave
+addressBook(['Ted:Toban Ave', 'Ted:Toban Ave', 'Ted:Toban Ave', 'Ted:Toban Ave', 'Ted:Toban Ave', 'Peter:Katie Crossing', 'Ted:Dayton Ave'])
 [/input]
 [output]
 Peter \-\> Katie Crossing
@@ -1120,211 +623,10 @@ Ted \-\> Dayton Ave
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
-# Soluție: AddressBook
+# Structuri de Date Imbricate
 
-[vimeo-video]
-[stream language="EN" videoId="489798585/77cb0c32ff" default /]
-[stream language="RO" videoId="489798585/77cb0c32ff"  /]
-[/video-vimeo]
-
-[code-task title="AddressBook" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-
-```
-//Video code
-
-function solve(input) {
-  let addressBook = {};
-
-  for (let line of input) {
-    let [name, address] = line.split(':');
-
-    addressBook[name] = address;
-  }
-
-  let sorted = Object.entries(addressBook);
-
-  sorted.sort((a, b) => a[0].localeCompare(b[0]));
-
-  for (let [name, address] of sorted) {
-    console.log(`${name} -> ${address}`);
-  }
-}
-```
-
-[/code-editor]
-[task-description]
-# Descriere
-
-Scrieți o funcție care preia **nume** și **adrese** ca intrare.
-
-Valorile vor fi separate prin `":"`.
-
-Dacă același nume apare de mai multe ori, salvați adresa **cea mai recentă**.
-
-Tipăriti o listă cu toate intrările, **sortate** alfabetic după **nume**.
-
-# Exemplu
-
-|**Intrare**|**Ieșire**|
-| --- | --- |
-| `['Tim:Doe Crossing', 'Bill:Nelson Place', 'Peter:Carlyle Ave', 'Bill:Ornery Rd']` | Bill \-\> Ornery Rd    |
-|                                                                                    | Peter \-\> Carlyle Ave |
-|                                                                                    | Tim \-\> Doe Crossing  |
-
-[/task-description]
-[tests]
-[test]
-[input]
-Tim\:Doe Crossing
-Bill\:Nelson Place
-Peter\:Carlyle Ave
-Bill\:Ornery Rd
-[/input]
-[output]
-Bill \-\> Ornery Rd
-Peter \-\> Carlyle Ave
-Tim \-\> Doe Crossing
-[/output]
-[/test]
-[test]
-[input]
-Bob\:Coleman Ave
-Tim\:Katie Crossing
-John\:Coleman Ave
-John\:Grover Rd
-Jeff\:Acker Crossing
-Bob\:Katie Crossing
-[/input]
-[output]
-Bob \-\> Katie Crossing
-Jeff \-\> Acker Crossing
-John \-\> Grover Rd
-Tim \-\> Katie Crossing
-[/output]
-[/test]
-[test]
-[input]
-Bob\:Huxley Rd
-John\:Milwaukee Crossing
-Peter\:Fordem Ave
-Bob\:Redwing Ave
-George\:Mesta Crossing
-Ted\:Gateway Way
-Bill\:Gateway Way
-John\:Grover Rd
-Peter\:Huxley Rd
-Jeff\:Gateway Way
-Jeff\:Huxley Rd
-[/input]
-[output]
-Bill \-\> Gateway Way
-Bob \-\> Redwing Ave
-George \-\> Mesta Crossing
-Jeff \-\> Huxley Rd
-John \-\> Grover Rd
-Peter \-\> Huxley Rd
-Ted \-\> Gateway Way
-[/output]
-[/test]
-[test]
-[input]
-Bob\:Coleman Ave
-Tim\:Katie Crossing
-John\:Coleman Ave
-John\:Grover Rd
-Jeff\:Acker Crossing
-Bob\:Katie Crossing
-Bob\:Huxley Rd
-John\:Milwaukee Crossing
-Peter\:Fordem Ave
-Bob\:Redwing Ave
-George\:Mesta Crossing
-Ted\:Gateway Way
-Bill\:Gateway Way
-John\:Grover Rd
-Peter\:Huxley Rd
-Jeff\:Gateway Way
-Jeff\:Huxley Rd
-[/input]
-[output]
-Bill \-\> Gateway Way
-Bob \-\> Redwing Ave
-George \-\> Mesta Crossing
-Jeff \-\> Huxley Rd
-John \-\> Grover Rd
-Peter \-\> Huxley Rd
-Ted \-\> Gateway Way
-Tim \-\> Katie Crossing
-[/output]
-[/test]
-[test]
-[input]
-George\:Westend Ave
-Jeff\:Westend Ave
-Bill\:Redwing Ave
-George\:Coleman Ave
-George\:Acker Crossing
-Bill\:Grover Rd
-Jeff\:8th Rd
-John\:Milwaukee Crossing
-Bob\:Fordem Ave
-Ted\:Toban Ave
-Bill\:8th Rd
-Peter\:Katie Crossing
-Ted\:Dayton Ave
-Jeff\:Milwaukee Crossing
-Ted\:Gateway Way
-George\:Westend Ave
-George\:Westend Ave
-John\:Huxley Rd
-George\:Katie Crossing
-Peter\:Milwaukee Crossing
-Peter\:Katie Crossing
-Tim\:Westend Ave
-[/input]
-[output]
-Bill \-\> 8th Rd
-Bob \-\> Fordem Ave
-George \-\> Katie Crossing
-Jeff \-\> Milwaukee Crossing
-John \-\> Huxley Rd
-Peter \-\> Katie Crossing
-Ted \-\> Gateway Way
-Tim \-\> Westend Ave
-[/output]
-[/test]
-[test]
-[input]
-Ted\:Toban Ave
-Ted\:Toban Ave
-Ted\:Toban Ave
-Ted\:Toban Ave
-Ted\:Toban Ave
-Peter\:Katie Crossing
-Ted\:Dayton Ave
-[/input]
-[output]
-Peter \-\> Katie Crossing
-Ted \-\> Dayton Ave
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide]
-
-# Structuri de date imbricate
-
-[vimeo-video]
-[stream language="EN" videoId="489798633/dfd36c09a6" default /]
-[stream language="RO" videoId="489798633/dfd36c09a6"  /]
-[/video-vimeo]
 Valorile stocate în matricele asociative pot fi obiecte sau matrice.
 
 Odată ce avem o **referință** la valoare, o putem **manipula** ca orice alt obiect.
@@ -1337,20 +639,21 @@ Putem accesa această proprietate din obiectul "Bill", utilizând variabila `bil
 
 ```js live
 let contacts = {
-  Tim: { phone: "0876566344", address: "Doe Crossing" },
-  Bill: { phone: "0896543112", address: "Nelson Place" },
+  Tim: { phone: '0876566344', address: 'Doe Crossing' },
+  Bill: { phone: '0896543112', address: 'Nelson Place' },
 };
-let billsContact = contacts["Bill"];
+let billsContact = contacts['Bill'];
 console.log(billsContact.phone);
 ```
+
 ## Sortarea structurilor de date imbricate
 
 Putem **sorta** structura datelor după **valorile proprietății** ale fiecărei intrări. În acest caz, vom folosi destructurarea =] pentru a sorta cartea de contact **alfabetic** după adresa fiecărei persoane.
 
 ```js live
 let contacts = {
-  Tim: { phone: "0876566344", address: "Doe Crossing" },
-  Bill: { phone: "0896543112", address: "Nelson Place" },
+  Tim: { phone: '0876566344', address: 'Doe Crossing' },
+  Bill: { phone: '0896543112', address: 'Nelson Place' },
 };
 let entries = Object.entries(contacts);
 let result = entries.sort(([keyA, refA], [keyB, refB]) => {

@@ -1,12 +1,8 @@
 # Seturi
 
-[slide]
-# Ce este un set?
+[slide hideTitle]
+# Ce Este un Set?
 
-[vimeo-video]
-[stream language="EN" videoId="489798942/1e12af5747" default /]
-[stream language="RO" videoId="489798942/1e12af5747"  /]
-[/video-vimeo]
 
 Obiectul Set vă permite să stocați **unice** valori de orice tip, indiferent dacă sunt valori primitive sau referințe la obiect.
 
