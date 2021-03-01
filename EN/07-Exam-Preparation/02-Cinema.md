@@ -42,13 +42,22 @@ Print out on a single line: "Your bill is \{total price\}$"
  * The price must be formatted to two decimal places.
 
 ## Example
-| **Input** | **Output** | **Comments** |
+| **Input** | **Output** |
 | --- | --- | --- |
-| John Wick | Your bill is 72.00$ | If the movie is Star Wars and popcorn is chosen. |
-| Drink | | The price for one ticket is 25$. 4 tickets each 25$ -> 100$. |
-| 6 | | For this movie there is 30% discount for 4 or more people. |
-|  | | 30% of 100 -> 30$.  |
-|  | | 100$ – 30$ -> 70$ is the total price.  |
+| John Wick | Your bill is 72.00$ | 
+| Drink | 
+| 6 | 
+
+[hints]
+
+[hint]
+Depending on what movie and drink have been chosen, determine the ticket price.
+[/hint]
+
+[hint]
+Check if there will be a discount and calculate the total price.
+[/hint]
+[/hints]
 
 [/task-description]
 [code-io /]
