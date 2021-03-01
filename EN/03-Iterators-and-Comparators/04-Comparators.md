@@ -113,7 +113,7 @@ public class AgeComparator implements Comparator<Student> {
 
 
 [slide hideTitle]
-# Problem: Comparable Book
+# Problem with Solution: Comparable Book
 [code-task title="Comparable Book" taskId="oop-basics-java-iterators-and-comparators-lab-Comparable-Book" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -130,7 +130,7 @@ public class Main {
 ## Description
 Expand Book by implementing `Comparable<Book>`.
 
-Book have to be **compared by title**. 
+Books have to be **compared by title**. 
 
 When the title is equal, **compare them by year**.
 
@@ -333,7 +333,7 @@ Test Passed!
 [/slide]
 
 [slide hideTitle]
-# Problem: Book Comparator
+# Problem with Solution: Book Comparator
 [code-task title="Book Comparator" taskId="oop-basics-java-iterators-and-comparators-lab-Book-Comparator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
