@@ -121,7 +121,6 @@ To submit your solution, **zip** your whole package with the `Jar` and `Main` cl
 If you did not create a **package**, just select your classes and **zip** them.
 
 [/task-description]
-[code-io /]
 [tests]
 [test open]
 [input]
@@ -334,8 +333,8 @@ So, if we try to use another class which is **not a subclass of Number**, the co
 
 # Problem with Solution: Generic Array Creator
 
-[code-task title="Generic Array Creator" taskId="oop-basics-java-generics-lab-Generic-Array-Creator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
+[code-task title="Generic Array Creator" timeLimit=5000 taskId="oop-basics-java-generics-lab-Generic-Array-Creator" executionType="tests-execution" executionStrategy="java-project-tests"] 
+[code-upload allowedMemory="30" /]
 ```
 import java.util.*;
 
@@ -354,7 +353,7 @@ Create a class `ArrayCreator` with a method and a single overload to it:
 - `static T[] create(int length, T item)`
 - `static T[] create(Class<T> class, int length, T item)`
 
-The method should return an array with the given length and every element should be set to the given default item.
+The method should return an **array with the given length** and every element should be set to the given **default** item.
 
 
 # Example
@@ -365,11 +364,174 @@ Integer[] integers = ArrayCreator.create(Integer.class, 10, 0);
 ```
 
 [/task-description]
-[code-io /]
 [tests]
+[test open]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+public class P02_ZeroTest \{
+
+    @Test
+    public void test() throws NoSuchMethodException \{
+        Assert.assertTrue("Class 'ArrayCreator' not found", Classes.allClasses.containsKey("ArrayCreator"));
+        Class cl = Classes.allClasses.get("ArrayCreator");
+        cl.getMethod("create", int.class, Object.class);
+        cl.getMethod("create", Class.class, int.class, Object.class);
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
 [test]
 [input]
-Unit tests!
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
+public class P02_CreateWOClassInteger \{
+
+    @Test
+    public void test() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException \{
+        Assert.assertTrue("Class 'ArrayCreator' not found", Classes.allClasses.containsKey("ArrayCreator"));
+        Class cl = Classes.allClasses.get("ArrayCreator");
+        Method create = cl.getMethod("create", int.class, Object.class);
+        Object\[\] array = (Object\[\]) create.invoke(null, 10, 3);
+
+        Assert.assertTrue(array.length == 10);
+        for (Object s : array) \{
+            Assert.assertTrue((Integer) s == 3);
+        \}
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
+public class P02_CreateWOClassString \{
+
+    @Test
+    public void test() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException \{
+        Assert.assertTrue("Class 'ArrayCreator' not found", Classes.allClasses.containsKey("ArrayCreator"));
+        Class cl = Classes.allClasses.get("ArrayCreator");
+        Method create = cl.getMethod("create", int.class, Object.class);
+        Object\[\] array = (Object\[\]) create.invoke(null, 10, "Pesho");
+
+        Assert.assertTrue(array.length == 10);
+        for (Object s : array) \{
+            Assert.assertTrue(s.equals("Pesho"));
+        \}
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
+public class P02_CreateWClassInteger \{
+
+    @Test
+    public void test() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException \{
+        Assert.assertTrue("Class 'ArrayCreator' not found", Classes.allClasses.containsKey("ArrayCreator"));
+        Class cl = Classes.allClasses.get("ArrayCreator");
+        Method create = cl.getMethod("create", Class.class, int.class, Object.class);
+        Integer\[\] array = (Integer\[\]) create.invoke(null, Integer.class, 10, 2);
+
+        Assert.assertTrue(array.length == 10);
+        for (Integer i : array) \{
+            Assert.assertTrue(i == 2);
+        \}
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
+public class P02_CreateWClassString \{
+
+    @Test
+    public void test() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException \{
+        Assert.assertTrue("Class 'ArrayCreator' not found", Classes.allClasses.containsKey("ArrayCreator"));
+        Class cl = Classes.allClasses.get("ArrayCreator");
+        Method create = cl.getMethod("create", Class.class, int.class, Object.class);
+        String\[\] array = (String\[\]) create.invoke(null, String.class, 10, "Pesho");
+
+        Assert.assertTrue(array.length == 10);
+        for (String s : array) \{
+            Assert.assertTrue(s.equals("Pesho"));
+        \}
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
+public class P02_CreateMultiple \{
+
+    @Test
+    public void test() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException \{
+        Assert.assertTrue("Class 'ArrayCreator' not found", Classes.allClasses.containsKey("ArrayCreator"));
+        Class cl = Classes.allClasses.get("ArrayCreator");
+        Method create = cl.getMethod("create", Class.class, int.class, Object.class);
+        String\[\] array1 = (String\[\]) create.invoke(null, String.class, 10, "Pesho");
+        Integer\[\] array2 = (Integer\[\]) create.invoke(null, Integer.class, 10, 0);
+        Double\[\] array3 = (Double\[\]) create.invoke(null, Double.class, 10, 0.1);
+
+        Assert.assertTrue(array1.length == 10);
+        for (String s : array1) \{
+            Assert.assertTrue(s.equals("Pesho"));
+        \}
+
+        Assert.assertTrue(array2.length == 10);
+        for (Integer i : array2) \{
+            Assert.assertTrue(i.equals(0));
+        \}
+
+        Assert.assertTrue(array3.length == 10);
+        for (Double d : array3) \{
+            Assert.assertTrue(d.equals(0.1));
+        \}
+    \}
+\}
 [/input]
 [output]
 Test Passed!
@@ -378,4 +540,3 @@ Test Passed!
 [/tests]
 [/code-task]
 [/slide]
-
