@@ -35,11 +35,31 @@ Trebuie să imprimați pe consolă timpul necesar pentru a viziona toate episoad
 
 ## Exemplu
 |**Intrare**|**Ieșire**|**Comentarii**|
-| --- | --- | --- |
-| Lucifer | Total time needed to watch the Lucifer series is 3594 minutes. | Durata reclamei pe episod: 20% от 55 = 11.0 |
-| 3 | | Durata unui episod cu reclame: 55 + 11 = 66,0 |
-| 18 | | Timp suplimentar de la episodul special: 3 * 10 = 30 |
-| 55 | | Timp total pentru a viziona episoadele: 66 * 18 * 3 + 30 = 3594.0 |
+| --- | --- | 
+| Lucifer | Total time needed to watch the Lucifer series is 3594 minutes. | 
+| 3 | 
+| 18 | 
+| 55 | 
+
+[hints]
+
+[hint]
+Calculate the duration of advertisements per episode.
+[/hint]
+[hint]
+
+Determine the duration of an episode with advertisements.
+[/hint]
+[hint]
+
+Add extra time for the specials.
+[/hint]
+[hint]
+
+Calculate the total time needed to watch the whole series.
+[/hint]
+
+[/hints]
 [/task-description]
 [code-io /]
 [tests]
