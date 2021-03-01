@@ -895,7 +895,7 @@ Format:
 
 ## Constraints
 - Names, ages, and addresses will be **valid**
-- Input number will be always a **valid** integer in **range** [2 ... 100]
+- Input number will be always а **valid** integer in **range** [2 ... 100]
 - If there are no equal people print: `No matches`
 
 # Examples
