@@ -57,7 +57,7 @@ We can declare a function, and then we can invoke (call) the function by its nam
 
 ```js live
 function hLine() {
-  console.log("----------");
+  console.log('----------');
 }
 
 hLine();

@@ -26,7 +26,7 @@ Write a function that receives **a string** and a **repeat count** - "**n**".
 
 The function should **return a new string** (the old one repeated "**n**" times).
 
-## Example
+## Examples
 | **Input** | **Output** |
 | --- | --- |
 | repeatString('abc', 3) | abcabcabc |
@@ -123,7 +123,7 @@ Write a function that receives **three integers** and **prints out the smallest 
 
 Use an **appropriate name** for the function. 
 
-## Example
+## Examples
 | **Input** | **Output** |
 | --- | --- |
 | smallestNumbers(2, 5, 3) | 2 |
@@ -268,7 +268,7 @@ You will receive **three integers.**
 Write a function called `sum()` to get the sum of the first two integers and a `subtract()` function that subtracts the third integer from the result.
 
 
-## Example
+## Examples
 | **Input** | **Output** |
 | --- | --- |
 | addSubtract(23, 6, 10) | 19 |
@@ -420,7 +420,7 @@ Write a function that **receives two characters** and prints on a single line al
 
 Keep in mind that the **second character's ASCII code** might be **before the first one** in the ASCII table.
 
-## Example
+## Examples
 | **Input** | **Output** |
 | --- | --- |
 | charactersInRange('a', 'd') | b c |
@@ -524,7 +524,7 @@ You will receive a **single number.**
 
 Write a function that returns the **sum** of **all even** and **all odd** digits from that number. 
 
-## Example
+## Examples
 | **Input** | **Output** |
 | --- | --- |
 | oddEvenSum(1000435) |  Odd sum = 9, Even sum = 4 |
@@ -619,7 +619,7 @@ A palindrome is a number that **reads the same backward as forwarding**, such as
 
 Write a function that receives an **array of positive integers** and checks if **each integer is a palindrome or not**. 
 
-## Example
+## Example One
 | **Input** | **Output** |
 | --- | --- |
 | palindrome([123, 323, 421, 121]) |  false |
@@ -627,6 +627,7 @@ Write a function that receives an **array of positive integers** and checks if *
 ||false|
 ||true|
 
+## Example Two
 | **Input** | **Output** |
 | --- | --- |
 | palindrome([32, 2, 232, 1010]) |  false |
@@ -774,16 +775,18 @@ If it is **NOT** valid, for every unfulfilled rule print a message:
 
 - "**Password must have at least 2 digits**"
 
-## Example
+## Example One
 | **Input** | **Output** |
 | --- | --- |
 | passwordValidator('logIn') | Password must be between 6 and 10 characters |
 || Password must have at least 2 digits |
 
+## Example Two
 | **Input** | **Output** |
 | --- | --- |
 | passwordValidator('MyPass123') | Password is valid |
 
+## Example Three
 | **Input** | **Output** |
 | --- | --- |
 | passwordValidator('Pa$s$s') | Password must consist only of letters and digits |
@@ -906,13 +909,13 @@ function adapter(input, code) {
 
 Write a function that receives a single integer number "**n**" and prints "**NxN**" matrix with that number.
 
-## Example
+## Example One
 | **Input** | **Output** |
 | --- | --- |
 | matrix(3) | 3 3 3|
 || 3 3 3 |
 || 3 3 3 |
-
+## Example Two
 | **Input** | **Output** |
 | --- | --- |
 | matrix(2) | 2 2 |
@@ -1088,8 +1091,8 @@ A perfect number is a **positive integer** that is equal to the sum of its **pro
 
 The sum of a number's positive divisors excluding the number itself is also known as its **aliquot sum**.
 
-## Example
-| Input   | Output | Comments   |
+## Examples
+| **Input**   | **Output** | **Comments**   |
 | :---:       |    :----:   |   :---:     |
 | perfectNumber(6) |We have a perfect number!| 1 + 2 + 3|
 | perfectNumber(28) | We have a perfect number!|1 + 2 + 4 + 7 + 14|

@@ -26,7 +26,7 @@ If you **cannot** find a **good name** for a function, think about **whether it 
 
 ## Naming Function Parameters
 
- - Preferred form: Noun or Adjective + Noun`
+ - Preferred form: Noun or Adjective + Noun
  - Should **not contain** **capital** letters
  - Should be **meaningful**
  - Unit of measure should be obvious

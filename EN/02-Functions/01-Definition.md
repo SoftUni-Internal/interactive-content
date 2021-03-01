@@ -13,7 +13,7 @@ Values can be passed to functions and used within them.
 
 ``` js live
 function printStars(count) {
-  console.log("*".repeat(count));
+  console.log('*'.repeat(count));
 }
 
 printStars(4)

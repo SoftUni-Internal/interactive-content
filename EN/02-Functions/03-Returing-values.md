@@ -14,10 +14,10 @@ The `return` operator can be placed anywhere in the function.
 
 ``` js live
 function readFullName(firstName, lastName) {
-  return firstName + " " + lastName;
+  return firstName + ' ' + lastName;
 }
 
-const fullName = readFullName("John", "Smith");
+const fullName = readFullName('John', 'Smith');
 console.log(fullName)
 ```
 
