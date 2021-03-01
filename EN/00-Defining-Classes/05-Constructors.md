@@ -261,19 +261,19 @@ System.out.println(secondCar.carInfo());
 
 | **Input** | **Output** |
 | --- | --- |
-| 2 |  |
-| Chevrolet | The car is: Chevrolet unknown - -1 HP. |
-| TESLA MODEL-S 503 | The car is: TESLA MODEL-S - 503 HP. |
+| 2 | The car is: Chevrolet unknown - -1 HP. |
+| Chevrolet | The car is: TESLA MODEL-S - 503 HP. |
+| TESLA MODEL-S 503 | |
 
 ## Example 2
 
 | **Input** | **Output** |
 | --- | --- |
-| 4 |  |
-| BMW | The car is: BMW unknown - -1 HP. |
-| Dacia Logan 200 | The car is: Dacia Logan - 200 HP. |
-| Renault Clio 75 | The car is: Renault Clio - 75 HP. |
-| Dacia Duster 350 | The car is: Dacia Duster - 350 HP. |
+| 4 | The car is: BMW unknown - -1 HP. |
+| BMW | The car is: Dacia Logan - 200 HP. |
+| Dacia Logan 200 | The car is: Renault Clio - 75 HP. |
+| Renault Clio 75 | The car is: Dacia Duster - 350 HP. |
+| Dacia Duster 350 | |
 
 [/task-description]
 [code-upload allowedMemory="30" /]
