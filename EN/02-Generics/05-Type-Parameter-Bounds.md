@@ -6,7 +6,7 @@
 
 In case you want to **restrict** the types that can be used as type arguments in a parameterized type, you have to use **bounded type parameters**.
 
-Let us explain the need for type parameters bоunds with the following example:
+Let us explain the need for type parameters bounds with the following example:
 
 ```java
 public class PowerOfThree<T>  {
