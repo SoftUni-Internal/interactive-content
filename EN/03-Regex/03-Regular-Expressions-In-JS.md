@@ -193,12 +193,12 @@ To help you out, we have outlined several steps:
 2.	Check out how to use character sets \(denoted with square brackets \- \"\[\]\"\)
 3.	Specify that you want two words with a space between them \(the space character \' \', and not any whitespace symbol\)
 4.	For each word, specify that it should begin with an uppercase letter, using a character set. The desired characters are in a range\: from A to Z
-5.	For each word, specify that the first letter is followed only by lowercase letters, one or more \– use another character set and the correct quantifier
+5.	For each word, specify that the first letter is followed only by lowercase letters, one or more \- use another character set and the correct quantifier
 6.	To prevent capturing of letters across new lines, put \\**b** at the beginning and at the end of your regular expression
 
 This will ensure that what precedes and what follows the match is a word boundary like a new line.
 
-# Example
+## Example
 
 | **Input** | **Output** |
 | --- | --- |
@@ -364,7 +364,7 @@ You can use the following RegEx properties to help with the matching:
 - Add a word boundary at the end of the match to avoid partial matches (the last example on the right hand side)
 - Ensure that before the **+** sign there is either a space or it is the beginning of the string
 
-# Example
+## Examples
 
 | **Input** | **Output** |
 | --- | --- |

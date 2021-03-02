@@ -16,7 +16,7 @@
 - We can utilize character classes, groups, quantifiers and more
 
 ```js live
-let str = "Hellooo World! Hello Again!";
+let str = 'Hellooo World! Hello Again!';
 let pattern = /lo*/g;
 let result = str.match(pattern);
 console.log(result);

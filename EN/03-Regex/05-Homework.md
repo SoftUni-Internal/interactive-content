@@ -36,7 +36,7 @@ Every valid date has the following characteristics:
 - Always starts with two digits, followed by a separator
 - After that, it has one uppercase and two lowercase letters (e.g. Jan, Mar)
 - After that, it has a separator and exactly 4 digits (for the year)
-- The separator could be\: a period **"."**, a hyphen **"-"**, or a forward slash **"\/"**
+- The separator could be\: a period "**.**", a hyphen "**-**", or a forward slash `/`
 - The separator needs to be the same for the whole date **(e.g. 13.03.2016 is valid, 13.03/2016 is NOT)**
 
 Use a group **backreference** to check for this.
@@ -232,7 +232,7 @@ You will be given some lines of input until you receive the line "**Purchase**".
 
 The line is valid when it is in the following format:
 
-**>>**\{**furniture name**\}**<<**\{**price**\}**!**\{**quantity**\}
+"\>\>\{**furniture name**\}\<\<\{**price**\}\!\{**quantity**\}"
 
 The price can be a floating point number or an integer number. 
 
@@ -240,14 +240,14 @@ Store the names of the furniture and the total price.
 
 In the end print out each bought furniture on a separate line in the format:
 
-**Bought furniture:**
+"**Bought furniture:**
 \{**1st name**\}
 \{**2nd name**\}
 …
-
+"
 And on the last line, print the following: 
 
-**Total money spent:** \{**spent money**\} formatted to the second decimal point.
+"**Total money spent:** \{**spent money**\}" formatted to the second decimal point.
 
 ## Example One
 
@@ -406,7 +406,7 @@ In the end print out the top 3 racers, ordered by their distance in **descending
 **2nd place:** \{**second racer**\}
 **3rd place:** \{**third racer**\}
 
-# Example
+## Example
 
 | **Input** | **Output** |
 |---|---|
@@ -513,15 +513,15 @@ Let us take a break and visit the game bar at SoftUni.
 
 It is about time for the people behind the bar to go home. You are the person, who has to calculate the earned money from the products that were sold throughout the day.
 
-Until you receive a line with a text **end of shift**, you will be given lines of input. 
+Until you receive a line with a text "**end of shift**", you will be given lines of input. 
 
 Before processing these lines, you have to do some validations first.
 
 Each valid order should have a customer, a product, a count and a price:
 - Valid customer's name should be surrounded by **%** and must start with a capital letter, followed by lower-case letters
 - Valid product contains any word character and must be surrounded by **<** and **>**
-- Valid count is an integer, surrounded by \|
-- Valid price is any real number followed by **$**
+- Valid count is an integer, surrounded by "\|"
+- Valid price is any real number followed by "**$**"
 
 The parts of a valid order should appear in the given order: a customer, a product, a count and a price.
 
@@ -529,9 +529,9 @@ Between each part there can be other symbols, except (\|, \$, \% \.).
 
 For each valid line print on the console: \{**customerName**\}**:** \{**product**\} **-** \{**totalPrice**\}.
 
-When you receive "end of shift" print the total amount of money for the day, rounded to 2 decimal places in the following format: 
+When you receive "**end of shift**" print the total amount of money for the day, rounded to 2 decimal places in the following format: 
 
-**Total income:** \{**income**\}.
+"**Total income:** \{**income**\}"
 
 ## Example One
 

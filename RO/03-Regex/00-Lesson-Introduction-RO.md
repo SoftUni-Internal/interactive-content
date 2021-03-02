@@ -1,28 +1,27 @@
+# Lesson Introduction
 
-[slide]
-# Introducere 
+[slide hideTitle]
+# Lesson Content
 
-[vimeo-video]
-[stream language="EN" videoId="489818589/f0ee739d40" default /]
-[stream language="RO" videoId="489818589/f0ee739d40"  /]
-[/video-vimeo]
 
-## În această lecție, veți învăța despre:
+## In this lesson you will learn:
 
-**1. Expresii regulate**
+**1. Regular Expressions**
 
-- Definiție
-- Clase
+- Definition
+- Classes
 
-**2. Cuantificatori**
+**2. Quantifiers**
 
-- Grupări
+- Grouping
 
-**3. Referințe anterioare**
+**3. Backreferences**
 
-- Grupuri numerotate de potriviri
+- Numbered Capturing Group
 
-**4. Expresii regulate în JavaScript**
+**4. Regular Expressions in JavaScript**
 
+- How to use
+- Built-in methods
 
 [/slide]

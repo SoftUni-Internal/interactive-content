@@ -189,26 +189,6 @@ My father is born on the **30-Dec-1994**.
 
 - Invalid date format: **01-July-2000**
 
-## Input
-
-- The input will come as a string of multiple dates
-
-## Output
-
-- Print each **valid** date in the format **Day: DD, Month: MMM, Year: YYYY**
-
-## Example One
-
-| **Input** | **Output** |
-| --- | --- |
-| '13/Jul/1928, 10-Nov-1934 , 01/Jan-1951, 25.Dec.1937, 23/09/1973, 1/Feb/2016'| Day\: 13\, Month\: Jul\, Year\: 1928 |
-| | Day\: 10\, Month\: Nov\, Year\: 1934 |
-| | Day\: 25\, Month\: Dec\, Year\: 1937 |
-
-## Example Two
-| **Input** | **Output** |
-| --- | --- |
-| '27/Mar/2000, 22-March-20050' | Day\: 27\, Month\: Mar\, Year\: 2000 |
 
 [/slide]
 
@@ -216,8 +196,6 @@ My father is born on the **30-Dec-1994**.
 # Problem with Solution: Email Validation
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-13-Solution-email-validation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-
 
 Write a regular expression that performs simple **email validation.**
 
@@ -232,22 +210,5 @@ An email consists of: username **@** domain name.
 - **Valid email:** **valid123@email.com**
 
 - **Invalid email:** **invalid*name@emai1.com**
-
-## Input
-
-- The input will come as a single string
-
-## Output
-
-- If the string is a **valid email**, print "**Valid**"
-
-- If the string is **invalid**, print "**Invalid**"
-
-## Examples
-
-| **Input** | **Output** |
-| --- | --- |
-| 'valid@email.com' | Valid |
-| 'invalid@emai1.com'| Invalid |
 
 [/slide]

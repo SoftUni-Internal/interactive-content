@@ -1,14 +1,9 @@
-# Expresii regulate
+# Expresii Regulate
 
 [slide hideTitle]
-# Ce sunt expresiile regulate?
+# Ce sunt Expresiile Regulate?
 
-[vimeo-video]
-[stream language="EN" videoId="489818611/b94191c1c8" default /]
-[stream language="RO" videoId="489818611/b94191c1c8"  /]
-[/video-vimeo]
-
-"Expresiile regulate" sunt șabloane utilizate pentru a face potriviri cu combinații de caractere în șiruri.
+**Expresiile regulate** sunt șabloane utilizate pentru a face potriviri cu combinații de caractere în șiruri.
 
 Ele oferă o sintaxă concisă pentru a realiza cerințe complexe care, în mod normal, ar necesita multe linii de cod.
 
@@ -21,12 +16,8 @@ Pentru a testa expresiile noastre regulate, putem utiliza următorul site:
 [/slide]
 
 [slide hideTitle]
-# Tiparul expresiilor regulate
+# Tiparul Expresiilor Regulate
 
-[vimeo-video]
-[stream language="EN" videoId="489818685/4416e06b0f" default /]
-[stream language="RO" videoId="489818685/4416e06b0f"  /]
-[/video-vimeo]
 
 Când lucrăm cu expresii regulate, utilizăm șabloane pentru a extrage doar datele de care avem nevoie.
 
@@ -47,11 +38,6 @@ Un exemplu de model care corespunde unui nume:
 [slide hideTitle]
 # Clase de Caractere: Intervale
 
-
-[vimeo-video]
-[stream language="EN" videoId="489818738/683c3c4047" default /]
-[stream language="RO" videoId="489818738/683c3c4047"  /]
-[/video-vimeo]
 
 Utilizați paranteze drepte:
 
@@ -80,12 +66,6 @@ John are **8** ani.
 [slide hideTitle]
 # Clase Predefinite
 
-
-[vimeo-video]
-[stream language="EN" videoId="489818761/ed44d0ae3b" default /]
-[stream language="RO" videoId="489818761/ed44d0ae3b"  /]
-[/video-vimeo]
-
 În regex, avem de asemenea câteva clase de caractere care ne oferă o notație prescurtată pentru seturi de caractere utilizate des.
 
 | **Clasa Prescurtată** | **Semnificație** | **Clasa de Caractere** |
@@ -108,4 +88,5 @@ Dacă doriți să citiți mai multe informații cu privire la expresiile regulat
 [stream language="EN" videoId="489818656/8342484c8d" default /]
 [stream language="RO" videoId="489818656/8342484c8d"  /]
 [/video-vimeo]
+
 [/slide]
