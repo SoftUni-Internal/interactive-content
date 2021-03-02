@@ -23,21 +23,21 @@ Write a Company Class, Which Supports the Described Functionality Below.
 
 Should have this 1 property: `departments`- an empty array
 
-`AddEmployee({username}, {Salary}, {Position}, {Department})`:
+"**AddEmployee**(\{**username**\}, \{**Salary**\}, \{**Position**\}, \{**Department**\})":
 
 This function should add a new employee to the department with the given name.
 
 - If one of the passed parameters is an empty string `""`, undefined or null, this function should throw an error with the following message:
 
-`Invalid input!`
+"**Invalid input!**"
 
 - If salary is less than 0, this function should throw an error with the following message:
 
-`Invalid input!`
+"**Invalid input!**"
 
 - If the new employee is hired successfully, you should add him into the departments array and return the following message:
 
-`New employee is hired. Name: {name}. Position: {position}`
+"**New employee is hired. Name:** \{**name**\}. **Position:** \{**position**\}"
 
 `bestDepartment()`:
 
@@ -822,7 +822,7 @@ Write a function that sequentially **displays articles** on a web page when the 
 
 You will receive an **array of strings** that will initialize the program. 
 
-You need to return a function that keeps the initial array in its closure and every time it is called, it takes the first element from the array and displays it on the web page, inside a div with ID `content`. 
+You need to return a function that keeps the initial array in its closure and every time it is called, it takes the first element from the array and displays it on the web page, inside a div with ID "**content**". 
 
 If there are no more elements left, your function should do nothing.
 

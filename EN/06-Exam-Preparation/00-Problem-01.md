@@ -16,7 +16,7 @@ function taskManager(){
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/JS-Advanced-Exam-Preparation-First-Task-Resources.zip) **for this task.**
 
-Use the `index.html` and `app.js` files to solve this problem.
+Use the "**index.html**" and "**app.js**" files to solve this problem.
 
 **Note: You must complete this task without changing anything in the given HTML file (index.html)**.
 
@@ -26,11 +26,11 @@ Use the `index.html` and `app.js` files to solve this problem.
 
 Write the **missing JavaScript code** to make the Task Manager Functionality works as follows:
 
-When the `Add` button is clicked, the first thing you need to do is **validate the inputs**.
+When the "**Add**" button is clicked, the first thing you need to do is **validate the inputs**.
 
 If any of the input fields are empty, **the function should not do anything**.
 
-After validating the input fields, **you need to add the new task (article)** to the `Open` section.
+After validating the input fields, **you need to add the new task (article)** to the "**Open**" section.
 
 The HTML structure looks like this:
 
@@ -53,11 +53,11 @@ The HTML structure looks like this:
 </section>
 ```
 
-The article should have two buttons `Start` and `Delete`. 
+The article should have two buttons "**Start**" and "**Delete**". 
 
 Be **careful to set the classes for the buttons** and the parent `div`.
 
-When the `Start` button is clicked, **you need to move the Task** to the `In Progress` section. 
+When the "**Start**" button is clicked, **you need to move the Task** to the "**In Progress**" section. 
 
 **Be careful with the buttons!** 
 
@@ -82,9 +82,9 @@ The HTML structure looks like this:
 </section>
 ```
 
-When the `Delete` button is clicked, the Task (the whole article) **should be removed from the HTML.**
+When the "**Delete**" button is clicked, the Task (the whole article) **should be removed from the HTML.**
 
-After clicking the `Finish` button, **the Task will be completed**, and you should move the article to the `Complete` section.
+After clicking the "**Finish**" button, **the Task will be completed**, and you should move the article to the "**Complete**" section.
 
 The buttons, including their parent `div` element, should be removed.
 
@@ -105,7 +105,7 @@ The buttons, including their parent `div` element, should be removed.
 </section>
 ```
 
-**Submit your solution in the body of the `solve()` function.**
+**Submit your solution in the body of the** `solve()` **function.**
 
 [/task-description]
 [code-io /]

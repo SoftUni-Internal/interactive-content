@@ -18,15 +18,15 @@ function subtraction(){
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/01-Subtraction.zip) **for this task.**
 
-An HTML page holds **two text fields** with ids `firstNumber` and `secondNumber`. 
+An HTML page holds **two text fields** with ids "**firstNumber**" and "**secondNumber**". 
 
-Write a function to **subtract** the values from these text fields and display the result in the `div` named `result`.
+Write a function to **subtract** the values from these text fields and display the result in the `div` named "**result**".
 
 ## HTML and JavaScript Code
 
 Implement the above to provide the following functionality:
 
-- Your function should take the values of `firstNumber` and `secondNumber`, **convert** them to numbers, **subtract** the second number from the first one and then append the result to the `<div>` with `d="result"`.
+- Your function should take the values of "**firstNumber**" and "**secondNumber**", **convert** them to numbers, **subtract** the second number from the first one and then append the result to the `<div>` with `d="result"`.
 
 - Your function should be able to work with **any 2 numbers** in the inputs, not only the ones given in the example.
 
@@ -161,9 +161,9 @@ function fillDropdown(){
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/02-Fill-Dropdown.zip) **for this task.**
 
-Your task is to take values from **input** fields with `ids "newItemText` and `newItemValue`.
+Your task is to take values from **input** fields with ids "**newItemText**" and "**newItemValue**".
 
-Then you should create and append an `<option>` to the `<select>` with `id "menu"`.
+Then you should create and append an `<option>` to the `<select>` with id "**menu**".
 
 ## Example
 
@@ -175,7 +175,7 @@ Then you should create and append an `<option>` to the `<select>` with `id "menu
 
 After that you should create a new **option** element and set its **textContent** and its **value** to the newly taken ones.
 
-- Once you have done all of that, you should **append** the newly created **option** as a **child** to the **select** item with id `menu`.
+- Once you have done all of that, you should **append** the newly created **option** as a **child** to the **select** item with id "**menu**".
 
 - Finally, you should **clear** the value of the two **input** fields.
 
@@ -328,9 +328,9 @@ Link action should be **toggleable** (you should be able to click the button inf
 
 However, that returns a **collection** and we need only **one** element from it, so the correct way is to use `getElementsByClassName("button")[0]` as it will return the needed span element.
 
-- After that we should change the **display style** of the div with an `id "extra`. 
+- After that we should change the **display style** of the div with an id "**extra**". 
 
-If the display style is `none`, we should **change** it to `block` and the **opposite**.
+If the display style is "**none**", we should **change** it to "**block**" and the **opposite**.
 
 - Along with all of this, we should **change** the text content of the **button** to `[Less]`/`[More]`.
 
@@ -1322,7 +1322,7 @@ Write a function that implements a calculator that has the following functionali
 
 [image assetsSrc="JS-Advanced-DOM-Homework-14.png" /]
 
-When one of **the buttons is clicked**, its value should be shown in the `Expression` **field (#expressionOutput).**
+When one of **the buttons is clicked**, its value should be shown in the "**Expression**" **field (#expressionOutput).**
 
 For instance, if we click on the button with value **9**, the expected result should be:
 
@@ -1340,13 +1340,13 @@ Otherwise, if we create an invalid expression such as `"99 +" (without second/ri
 
 [image assetsSrc="JS-Advanced-DOM-Homework-18.png" /]
 
-The `Clear` button should **clear both Expression and Result fields (`#expressionOutput` and `#resultOutput`)
+The "**Clear**" button should **clear both Expression and Result fields (`#expressionOutput` and `#resultOutput`)
 
 For instance, if we have the following expression:
 
 [image assetsSrc="JS-Advanced-DOM-Homework-19.png" /]
 
-And we press `Clear`, the expected result should be:
+And we press "**Clear**", the expected result should be:
 
 [image assetsSrc="JS-Advanced-DOM-Homework-20.png" /]
 
@@ -1836,13 +1836,13 @@ Write a function that **converts** a **decimal number** to **binary** and **hexa
 
 The given number will always be in **decimal format.**
 
-The `From` select menu will only have a
-**Decimal** option, but the `To` select menu will have **two options:** **binary** and **hexadeicmal**.
+The "**From**" select menu will only have a
+**Decimal** option, but the "**To**" select menu will have **two options:** **binary** and **hexadeicmal**.
 
 This means that our program should have the functionality to **convert decimal** to **binary** and
 **decimal** to **hexadecimal**.
 
-Note that `To` **select menu** by default is empty.
+Note that "**To**" **select menu** by default is empty.
 
 You have to insert the two options (binary and hexadecimal) inside before continue.
 

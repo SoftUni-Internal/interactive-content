@@ -352,7 +352,7 @@ function timeConverter(){
 
 Create a program that **converts** different time units.
 
-Your task is to add a **click** event listener to all `CONVERT` buttons.
+Your task is to add a **click** event listener to all "**CONVERT**" buttons.
 
 When a button is **clicked**, read the **corresponding** input field and **display** the converted values inside the other three input fields.
 
@@ -556,13 +556,13 @@ function lockedProfile(){
 
 In this problem, you should **create a JS functionality** that **shows** and **hides** the additional information about users.
 
-When the `Show more` button is clicked, the **hidden information** inside the div should be shown, only **if the profile is not locked**.
+When the "**Show more**" button is clicked, the **hidden information** inside the div should be shown, only **if the profile is not locked**.
 
 If the current profile is **locked**, nothing should happen.
 
-If the hidden information is displayed, and we lock the profile again, the `Hide it` button **should not be working**.
+If the hidden information is displayed, and we lock the profile again, the "**Hide it**" button **should not be working**.
 
-Otherwise, when the profile is **unlocked** and we click on the `Hide it` button, the fields must hide again.
+Otherwise, when the profile is **unlocked** and we click on the "**Hide it**" button, the fields must hide again.
 
 # Example
 
@@ -1417,7 +1417,7 @@ The first one is to encode the given message and send it to the receiver.
 
 The second one is to decode the received message and display it.
 
-When the `Encode and send it` button is clicked, you should get the given message from the first texta rea.
+When the "**Encode and send it**" button is clicked, you should get the given message from the first texta rea.
 
 When you get the current message, you should encode it as follows:
 
@@ -1425,7 +1425,7 @@ When you get the current message, you should encode it as follows:
 
 - Clear the sender text area and append the encoded message to the receiver text area.
 
-After that, when the `Decode and read it` button is clicked, you need to get the encoded message from the receiver text area and do the opposite logic:
+After that, when the "**Decode and read it**" button is clicked, you need to get the encoded message from the receiver text area and do the opposite logic:
 
 - Subtract 1 from the current ASCII NUMBER that represents the current character in that message.
 
@@ -1664,7 +1664,7 @@ function tableSearchEngine(){
 
 Create a function that searches in a table by a given input.
 
-When the `Search` button is clicked, go through all cells in the table, except for the first row, which is the header of the table: Student name, Student email, and Student course.
+When the "**Search**" button is clicked, go through all cells in the table, except for the first row, which is the header of the table: Student name, Student email, and Student course.
 
 Check if the given input has a match. Check for both full words and single letters.
 
@@ -2227,15 +2227,15 @@ You will be given furniture as an array of objects.
 
 Each object will have a name, a price, and a decoration factor.
 
-When the `Generate` button is **clicked**, add a new row to the table for each piece of furniture with its **image**, **name**, **price**, and d**ecoration factor**.
+When the "**Generate**" button is **clicked**, add a new row to the table for each piece of furniture with its **image**, **name**, **price**, and d**ecoration factor**.
 
-When the `Buy` button is clicked, get all checkboxes that are marked, and show in the result textbox the names of the furniture that were **checked**, separated by a comma and a single space, in the following format: 
+When the "**Buy**" button is clicked, get all checkboxes that are marked, and show in the result textbox the names of the furniture that were **checked**, separated by a comma and a single space, in the following format: 
 
-`Bought furniture: {furniture1} {furniture2}...`
+"**Bought furniture:** \{**furniture1**\} \{**furniture2**\}**...**"
 
-On the next line, print the total price in the format: `Total price: {totalPrice}`, formatted two digits after the decimal point.
+On the next line, print the total price in the format: "**Total price:** \{**totalPrice**\}", formatted two digits after the decimal point.
 
-Finally, print the average decoration factor in the format: `Average decoration factor: {decFactor}`.
+Finally, print the average decoration factor in the format: "**Average decoration factor:** \{**decFactor**\}".
 
 # Example
 
@@ -2744,7 +2744,7 @@ The card that is greater should have a border `2px solid green`, and the other c
 You should clear the span elements that hold the current cards' names when both are selected, and the winner is selected.
 
 After every hand, push the current cards' names in the **history div** in the following format:
-`[{top side card name} vs {bottom side card name}]`
+"\[\{**top side card name**\} **vs** \{**bottom side card name**\}\]"
 
 # Example
 

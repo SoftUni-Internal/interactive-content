@@ -290,7 +290,7 @@ class Person{
 [/code-editor]
 [task-description]
 # Description
-Write a class which takes **first** and **last** names as **parameters** and returns an object with **firstName**, **lastName** and **fullName**: `{firstName} {lastName}`. 
+Write a class which takes **first** and **last** names as **parameters** and returns an object with **firstName**, **lastName** and **fullName**: "\{**firstName**\} \{**lastName**\}`. 
 
 Properties should all be **accessible**. We discovered that "accessible" also means "mutable". 
 
@@ -302,7 +302,7 @@ This means that:
 
 - If **fullName** is **invalid**, you should not change the other properties
 
-A **valid** **full name** is in the format: `{firstName} {lastName}`
+A **valid** **full name** is in the format: "\{**firstName**\} \{**lastName**\}"
 
 Note: Check the examples below for more information.
 
