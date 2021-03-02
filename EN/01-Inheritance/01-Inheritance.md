@@ -126,7 +126,7 @@ Use the extends keyword to build a hierarchy
 
 [/task-description]
 [tests]
-[test open]
+[test]
 [input]
 import org.junit.Assert;
 import org.junit.Test;
@@ -151,7 +151,7 @@ public class TestAnimal \{
 Test Passed!
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 import org.junit.Assert;
 import org.junit.Test;
@@ -176,7 +176,7 @@ public class TestDog \{
 Test Passed!
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 import org.junit.Assert;
 import org.junit.Test;
@@ -198,4 +198,3 @@ Test Passed!
 [/tests]
 [/code-task]
 [/slide]
-
