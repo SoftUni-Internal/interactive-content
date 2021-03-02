@@ -56,18 +56,8 @@ System.out.println(CoffeeSize.Small.getValue()); // 100
 
 [slide hideTitle]
 # Problem with Solution: Hotel Reservation
-[code-task title="Hotel Reservation" taskId="oop-basics-java-more-oop-concepts-lab-Hotel-Reservation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Hotel Reservation" taskId="oop-basics-java-more-oop-concepts-lab-Hotel-Reservation" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 Create a class `PriceCalculator` that calculates the total price of a holiday, given the **price per day**, **number of days**, the **season** and a **discount type**.
@@ -124,7 +114,7 @@ On a **single line**, print the **total price** of the **holiday**, rounded to 2
 | 120.20 2 Winter None | 721.20 |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
