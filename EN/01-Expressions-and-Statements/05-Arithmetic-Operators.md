@@ -29,7 +29,7 @@ console.log(a - b);
 [/slide]
 
 [slide hideTitle]
-# Multiplying Numbers
+# Multiplying and Dividing Numbers
 
 [video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/01-PB-JavaScript-expressions-and-statements-27-Arithmetic-Operators-Multiplication-Divison.mp4-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
