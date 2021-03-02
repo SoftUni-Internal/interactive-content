@@ -237,20 +237,11 @@ public class NamesList implements Iterable<String> {
 
 [slide hideTitle]
 # Problem with Solution: Library
-[code-task title="Library" taskId="oop-basics-java-iterators-and-comparators-lab-Library" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Library" timeLimit=5000 taskId="oop-basics-java-iterators-and-comparators-lab-Library" executionType="tests-execution" executionStrategy="java-project-tests"] 
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 Create a class **Library** from the UML diagram below:
 
 | `<<Iterable<Book>>>` |
@@ -273,7 +264,7 @@ Then, create a nested class **LibIterator** from UML diagram below:
 Use the **Book** class from the previous problem.
 
 
-## Example
+# Example
 
 Use the code below to test your **Library** class.
 
@@ -294,7 +285,6 @@ public static void main(String[] args) {
 ```
 
 [/task-description]
-[code-io /]
 [tests]
 [test]
 [input]
