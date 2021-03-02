@@ -38,18 +38,10 @@ public Person(String firstName, String lastName,
 
 # Problem with Solution: Validation Data
 
-[code-task title="Validation Data" taskId="Java-OOP-Advanced-Encapsulation-Validation-Data" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Validation Data" taskId="Java-OOP-Advanced-Encapsulation-Validation-Data" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 Expand **Person** with proper validation for every field:
@@ -73,7 +65,6 @@ do not use `System.out.println()` in **Person** class.
 
 
 [/task-description]
-[code-io /]
 [tests]
 [test]
 [input]
