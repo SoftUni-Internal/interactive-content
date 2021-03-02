@@ -141,7 +141,7 @@ public class TestAnimal {
         Assert.assertTrue(Classes.allClasses.containsKey("Animal"));
         Class animal = Classes.allClasses.get("Animal");
         Method[] methods = animal.getDeclaredMethods();
-        Optional<Method> eatMethod = Stream.of(methods).filter(m -> m.getName().equals("eat")).findFirst();
+        Optional\<Method\> eatMethod = Stream.of(methods).filter(m -> m.getName().equals("eat")).findFirst();
         Assert.assertTrue("Method 'eat' not found", eatMethod.isPresent());
         Assert.assertTrue("Method 'eat' has incorrect return type", eatMethod.get().getReturnType().equals(Void.TYPE));
     }
@@ -166,7 +166,7 @@ public class TestDog {
         Assert.assertTrue(Classes.allClasses.containsKey("Dog"));
         Class dog = Classes.allClasses.get("Dog");
         Method[] methods = dog.getDeclaredMethods();
-        Optional<Method> eatMethod = Stream.of(methods).filter(m -> m.getName().equals("bark")).findFirst();
+        Optional\<Method\> eatMethod = Stream.of(methods).filter(m -> m.getName().equals("bark")).findFirst();
         Assert.assertTrue("Method 'bark' not found", eatMethod.isPresent());
         Assert.assertTrue("Method 'bark' has incorrect return type", eatMethod.get().getReturnType().equals(Void.TYPE));
     }
