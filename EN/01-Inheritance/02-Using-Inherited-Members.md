@@ -88,7 +88,7 @@ That is because all the members of the **Parent** are declared as well as all th
 
 [slide hideTitle]
 
-# Inheritance has a transitive relation
+# Inheritance has a Transitive Relation
 
 ```java
 class Person { … }                          //Base class with some members.
