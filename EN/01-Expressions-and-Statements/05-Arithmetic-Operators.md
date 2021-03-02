@@ -68,7 +68,7 @@ In this case, the quotient is negative.
 
 * The expected answer is -1, but you’ll get -2 instead
 
-* Flooring works the opposite way for negative numbers. An if statement can fix this
+* Flooring works the opposite way for negative numbers. An `if statement` can fix this
 
 ```js live
 let result = -5/4;
