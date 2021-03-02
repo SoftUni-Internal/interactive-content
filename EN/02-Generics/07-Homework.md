@@ -1237,8 +1237,7 @@ f
 
 [slide hideTitle]
 # Problem: Tuple
-[code-task title="Tuple" taskId="oop-basics-java-generics-Tuple" executionType="tests-execution" executionStrategy="java-zip-file-code
-" requiresInput]
+[code-task title="Tuple" taskId="oop-basics-java-generics-Tuple" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
 # Description
