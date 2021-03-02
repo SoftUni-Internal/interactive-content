@@ -514,7 +514,7 @@ public class T07TestUnmodifiableCollections \{
         put(short.class, (short) 0);
         put(int.class, 0);
         put(long.class, 0L);
-        put(char.class, '\0');
+        put(char.class, '0');
         put(float.class, 0.0F);
         put(double.class, 0.0);
         put(Boolean.class, Boolean.FALSE);
