@@ -142,7 +142,7 @@ Using the block of code from the example we are creating a text box as in the sl
 
 It is important to insert our `convertUsdToEur()` function in our html script.
 
-Also, we have two textboxes - **Dollars:** and **Euro:**.
+Also, we have two textboxes - **Dollars:** and **Euro**.
 
 
 [/slide]
