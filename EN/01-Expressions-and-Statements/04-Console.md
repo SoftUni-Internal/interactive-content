@@ -29,7 +29,7 @@ VS Code has its console, which we are going to use to read input and print outpu
 
 The console is useful for testing purposes
 
-The `console.log()` method writes a message to the console:
+The `console.log()` method prints a message to the console:
 
 ```js live
 let firstNum = 10;
