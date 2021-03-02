@@ -1,6 +1,7 @@
+# Problem 1: Pet Me
 [slide hideTitle]
 
-# Problem 1: Pet Me
+# Pet Me
 
 [code-task title="Pet Me" taskId="js-advanced-exam-pet-me" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
 [code-editor language=javascript]

@@ -1,5 +1,6 @@
-[slide hideTitle]
 # Problem 3: Veterinary Clinic
+[slide hideTitle]
+# Veterinary Clinic
 
 [code-task title="Veterinary Clinic" taskId="js-advanced-exam-veterinary-clinic" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput]
 [code-editor language=javascript]

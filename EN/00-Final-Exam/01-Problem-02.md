@@ -1,5 +1,6 @@
-[slide hideTitle]
 # Problem 2: Pet House
+[slide hideTitle]
+# Pet House
 
 [code-task title="Pet House" taskId="js-advanced-exam-pet-house" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
