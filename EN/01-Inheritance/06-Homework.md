@@ -675,7 +675,6 @@ Test Passed!
 [code-task title="Zoo" timeLimit=5000 taskId="Java-OOP-Advanced-Inheritance-Zoo" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
 [code-upload allowedMemory="30" /]
 
-[/code-editor]
 [task-description]
 ## Description
 Create a package zoo. It needs to contain the following classes: 
@@ -1263,18 +1262,8 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: Need for Speed
-[code-task title="Problem: Need for Speed" taskId="277be5e7-a78b-4f6b-ba50-4de8055eb398" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
+[code-task title="Need for Speed" taskId="Java-OOP-Advanced-Inheritance-Need-For-Speed" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-upload allowedMemory="30" /]
 [task-description]
 ## Description
 Create the following **hierarchy** with the following **classes**: 
@@ -1305,7 +1294,6 @@ In the child classes' constructors use `super.setFuelConsumption()` to set **fue
 You need a public class **Main**. 
 
 [/task-description]
-[code-io /]
 [tests]
 [test open]
 [input]
@@ -1843,18 +1831,8 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: Restaurant
-[code-task title="Problem: Restaurant" taskId="6ae299f2-f373-467d-8a69-a4ca813a9973" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
+[code-task title="Restaurant" taskId="Java-OOP-Advanced-Inheritance-Restaurant" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-upload allowedMemory="30" /]
 [task-description]
 ## Description
 Create a **restaurant** package with the following classes and hierarchy:
@@ -1912,7 +1890,6 @@ You need a public class **Main**. Create a **restaurant** package.
 Zip your package and upload it in Judge.
 
 [/task-description]
-[code-io /]
 [tests]
 [test open]
 [input]
@@ -2418,18 +2395,8 @@ Test Passed!
 [slide hideTitle]
 # Problem: Animals
 
-[code-task title="Problem: Animals" taskId="9e1b2d32-2dc0-4b38-9636-dc5a21625dda" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
+[code-task title="Animals" taskId="Java-OOP-Advanced-Inheritance-Animals" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-upload allowedMemory="30" /]
 [task-description]
 ## Description
 Create a hierarchy(package) of **animals**. 
@@ -2509,7 +2476,6 @@ You need a public class **Main**.
 | Beast! |  |
 
 [/task-description]
-[code-io /]
 [tests]
 [test open]
 [input]
