@@ -14,7 +14,7 @@
 
 **2. Event Types**
 
-- The different types of Events in "JavaScript"
+- The different types of Events in JavaScript
 - How we can use them
 
 **3. Event Object Properties and Methods**

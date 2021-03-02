@@ -77,8 +77,8 @@ thisInBrowser();
 The above example illustrates that `this` is equal to the **window** object.
 
 ```js
-let name = "Arthur";
-console.log("My name is", this.name);
+let name = 'Arthur';
+console.log('My name is', this.name);
 ```
 
 Running the code above outputs **undefined** to the console.
@@ -88,8 +88,8 @@ This is because variables, declared with `let`, have limited scope and are not a
 [image assetsSrc="function-context-02.png" /]
 
 ```js
-var anotherName = "Chris";
-console.log("My name is ", this.anotherName);
+var anotherName = 'Chris';
+console.log('My name is ', this.anotherName);
 ```
 
 `this.anotherName` returns the value of **anotherName**, because variables, declared with `var`, have a wider scope and are attached to the global object (in this case to **window**).

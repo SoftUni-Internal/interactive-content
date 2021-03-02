@@ -202,7 +202,7 @@ Syntax: `Object.freeze(obj)` and `Object.seal(obj)`
 
 Let us see an example:
 
-```js live
+```js
 const obj = {
     property1: 'something',
     property2: 654,
@@ -311,20 +311,20 @@ Note: Check the examples below for more information.
 **Sample Input**
 
 ```js
-let person = new Person("Peter", "Smith");
+let person = new Person('Peter', 'Smith');
 console.log(person.fullName);  //Peter Smith
-person.firstName = "George";
+person.firstName = 'George';
 console.log(person.fullName);  //George Smith
-person.lastName = "Peterson";
+person.lastName = 'Peterson';
 console.log(person.fullName);  //George Peterson
-person.fullName = "Nikola Tesla";
+person.fullName = 'Nikola Tesla';
 console.log(person.firstName)  //Nikola
 console.log(person.lastName)   //Tesla
-let person = new Person("Albert", "Simpson");
+let person = new Person('Albert", "Simpson');
 console.log(person.fullName);  //Albert Simpson
-person.firstName = "Simon";
+person.firstName = 'Simon';
 console.log(person.fullName);  //Simon Simpson
-person.fullName = "Peter";
+person.fullName = 'Peter';
 console.log(person.firstName)  // Simon
 console.log(person.lastName)   // Simpson
 ```
