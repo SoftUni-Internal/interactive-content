@@ -84,12 +84,12 @@ function town(homeTown) {
   console.log(`I am from ${homeTown}!`);
 }
 
-town("Buccuresht");
+town("Bucharest");
 ```
 
 In this case, the `{homeTown}` expression is replaced with the value of the input `homeTown`.
 
-When we enter **Buccuresht**, the output will be as follows: `I am from Buccuresht!` 
+When we enter **Bucharest**, the output will be as follows: `I am from Bucharest!` 
 
 [/slide]
 
