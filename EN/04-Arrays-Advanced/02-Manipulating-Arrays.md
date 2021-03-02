@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Slicing Arrays
 
-[vimeo-video]
-[stream language="EN" videoId="489374953/4d8a0f208e" default /]
-[stream language="RO" videoId="489374953/4d8a0f208e"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-15-16-slicing-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `array.slice()` method **returns** the **selected elements** in an array, as a **new array object**.
 
@@ -26,12 +23,9 @@ console.log(myArray.slice(2,4));
 [slide hideTitle]
 # Splice: Cut and Insert Array Elements
 
-[vimeo-video]
-[stream language="EN" videoId="489374185/fc61ac9758" default /]
-[stream language="RO" videoId="489374185/fc61ac9758"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-17-cutting-and-inserting-elements-with-splice-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The `array.splice()` method **adds** or **removes** items to\/from an array, and **returns** the removed item(s).
+The `array.splice()` method **adds** or **removes** items to/from an array, and **returns** the removed item(s).
 
 This method **changes the original array.**
 
@@ -50,12 +44,9 @@ console.log(nums.join('|'));
 [/slide]
 
 [slide hideTitle]
-# Problem: First and Last K Numbers
+# Problem with Solution: First and Last K Numbers
 
-[vimeo-video]
-[stream language="EN" videoId="489374198/6c535a4be1" default /]
-[stream language="RO" videoId="489374198/6c535a4be1"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-problem-03-solution-first-and-last-k-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="First and Last K Numbers" taskId="fundamentals-js-arrays-advanced-lab-First-and-Last-K-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -67,179 +58,21 @@ function numbers(arr){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {return code(input.map(Number))}
-```
-[/code-adapter]
-[task-description]
-Write a function that **prints** the **first** `k` and the **last** `k` elements of an **array of numbers**. 
-
-The **input** comes as an **array** of integers. 
-
-The **first element** represents the number `k`. 
-
-All the **other elements** form the **array that needs to be processed**. 
-
-On the **first line**, print the **first k** elements, separated by **space**. 
-
-On the **second line**, print the **last k** elements, separated by **space**. 
-
-
-
-# Examples
-
-## Example
-| **Input** | **Output** |
-| --- | --- |
-|`[2, 7, 8, 9]` | 7 8 |
-| | 8 9 |
-
-## Example
-| **Input** | **Output** |
-| --- | --- |
-|`[3, 6, 7, 8, 9]` | 6 7 8 |
-| | 7 8 9 |
-
-# Hints
-
-- Use `slice()` to **split** the array into **two parts**
-
-
-[/task-description]
-[tests]
-[test open]
-[input]
-2
-7
-8
-9
-[/input]
-[output]
-7 8
-8 9
-[/output]
-[/test]
-[test open]
-[input]
-3
-6
-7
-8
-9
-[/input]
-[output]
-6 7 8
-7 8 9
-[/output]
-[/test]
-[test]
-[input]
-4
-1
-2
-3
-4
-5
-[/input]
-[output]
-1 2 3 4
-2 3 4 5
-[/output]
-[/test]
-[test]
-[input]
-1
-5
-6
-7
-[/input]
-[output]
-5
-7
-[/output]
-[/test]
-[test]
-[input]
-2
-5
-6
-7
-8
-1
-2
-3
-[/input]
-[output]
-5 6
-2 3
-[/output]
-[/test]
-[test]
-[input]
-7
-1
-2
-3
-4
-5
-6
-7
-8
-[/input]
-[output]
-1 2 3 4 5 6 7
-2 3 4 5 6 7 8
-[/output]
-[/test]
-[test]
-[input]
-5
-11
-12
-13
-14
-15
-16
-17
-18
-[/input]
-[output]
-11 12 13 14 15
-14 15 16 17 18
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide hideTitle]
-# Solution: First and Last K Numbers
-
-[vimeo-video]
-[stream language="EN" videoId="489374505/9ba74796f9" default /]
-[stream language="RO" videoId="489374505/9ba74796f9"  /]
-[/video-vimeo]
-
-[code-task title="First and Last K Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function numbers(arr){
-  // Write your code here
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
-[/code-editor]
-[code-adapter]
-```
-(input, code) => {return code(input.map(Number))}
-```
 [/code-adapter]
 [task-description]
-Write a function that **prints** the **first** `k` and the **last** `k` elements of an **array of numbers**. 
+# Description
+
+Write a function that **prints** the **first** **k** and the **last** **k** elements of an **array of numbers**. 
 
 The **input** comes as an **array** of integers. 
 
-The **first element** represents the number `k`. 
+The **first element** represents the number **k**. 
 
 All the **other elements** form the **array that needs to be processed**. 
 
@@ -247,20 +80,16 @@ On the **first line**, print the **first k** elements, separated by **space*
 
 On the **second line**, print the **last k** elements, separated by **space**. 
 
+## Example One
 
-
-# Examples
-
-## Example
 | **Input** | **Output** |
 | --- | --- |
-|`[2, 7, 8, 9]` | 7 8 |
+|numbers([2, 7, 8, 9]) | 7 8 |
 | | 8 9 |
-
-## Example
+## Example Two
 | **Input** | **Output** |
 | --- | --- |
-|`[3, 6, 7, 8, 9]` | 6 7 8 |
+|numbers([3, 6, 7, 8, 9]) | 6 7 8 |
 | | 7 8 9 |
 
 # Hints
@@ -272,10 +101,7 @@ On the **second line**, print the **last k** elements, separated by **space*
 [tests]
 [test open]
 [input]
-2
-7
-8
-9
+numbers([2, 7, 8, 9])
 [/input]
 [output]
 7 8
@@ -284,11 +110,7 @@ On the **second line**, print the **last k** elements, separated by **space*
 [/test]
 [test open]
 [input]
-3
-6
-7
-8
-9
+numbers([3, 6, 7, 8, 9]) 
 [/input]
 [output]
 6 7 8
@@ -297,12 +119,7 @@ On the **second line**, print the **last k** elements, separated by **space*
 [/test]
 [test]
 [input]
-4
-1
-2
-3
-4
-5
+numbers([4, 1, 2, 3, 4, 5])
 [/input]
 [output]
 1 2 3 4
@@ -311,10 +128,7 @@ On the **second line**, print the **last k** elements, separated by **space*
 [/test]
 [test]
 [input]
-1
-5
-6
-7
+numbers([1, 5, 6, 7])
 [/input]
 [output]
 5
@@ -323,14 +137,7 @@ On the **second line**, print the **last k** elements, separated by **space*
 [/test]
 [test]
 [input]
-2
-5
-6
-7
-8
-1
-2
-3
+numbers([2, 5, 6, 7, 8, 1, 2, 3])
 [/input]
 [output]
 5 6
@@ -339,15 +146,7 @@ On the **second line**, print the **last k** elements, separated by **space*
 [/test]
 [test]
 [input]
-7
-1
-2
-3
-4
-5
-6
-7
-8
+numbers([7, 1, 2, 3, 4, 5, 6, 7, 8])
 [/input]
 [output]
 1 2 3 4 5 6 7
@@ -356,15 +155,7 @@ On the **second line**, print the **last k** elements, separated by **space*
 [/test]
 [test]
 [input]
-5
-11
-12
-13
-14
-15
-16
-17
-18
+numbers([5, 11, 12, 13, 14, 15, 16, 17, 18])
 [/input]
 [output]
 11 12 13 14 15
@@ -377,13 +168,11 @@ On the **second line**, print the **last k** elements, separated by **space*
 
 [/slide]
 
-[slide hideTitle]
-# Problem: Last K Numbers Sequence
 
-[vimeo-video]
-[stream language="EN" videoId="489374248/da5b2345e6" default /]
-[stream language="RO" videoId="489374248/da5b2345e6"  /]
-[/video-vimeo]
+[slide hideTitle]
+# Problem with Solution: Last K Numbers Sequence
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-problem-04-solution-sum-last-k-numbers-sequence-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Last K Numbers Sequence" taskId="fundamentals-js-arrays-advanced-lab-Last-K-Numbers-Sequence" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -395,49 +184,54 @@ function numbers(n, k){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  return code (Number(input[0]), Number(input[1]));
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
 [task-description]
-You are given **two integers**: `n` and `k`. 
+# Description
 
-Write a **function** that **generates and prints** the following sequence: 
+You are given **two integers**: **n** and **k**. 
 
-- The **first element** is `1`.
-- Every **following element** is **equal to the sum** of the previous `k` elements. 
-- The **length** of the **sequence** is `n` elements.
-	
+Write a function that **generates and prints** the following sequence: 
+
+- The **first element** is 1
+
+- Every **following element** is **equal to the sum** of the previous **k** elements
+
+- The **length** of the **sequence** is **n** elements
+
 The **input** comes as two **numbers**.
 
-The **first element** represents the number `n`, and the second – the number `k`.
+The **first element** represents the number **n**, and the second – the number **k**.
 
 The output is **printed** to the console on a **single line**, separated by **space**.
 
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-|6, 3| 1 1 2 4 7 13 |
-|8, 2 | 1 1 2 3 5 8 13 21 |
+|numbers(6, 3)| 1 1 2 4 7 13 |
+|numbers(8, 2) | 1 1 2 3 5 8 13 21 |
 
 
-# Hints
+## Hints
 
-The **second element (1)** is **equal to the sum** of the **3 elements before it**, but there is only **one** element, so we take that. 
+The **second element (1)** is **equal to the sum** of the **3 elements before it**, but there is only **one** element, so we take that. 
 
 The **third element** is equal to the sum of the **first two elements (1 and 1)**. 
 
 The **fourth element** is equal to the sum of **1**, **1** and **2**. 
 
-The **fifth element** is equal to the sum of the **second, third and fourth (1, 2 and 4)** and so on.
+The **fifth element** is equal to the sum of the **second, third and fourth (1, 2, and 4)** and so on.
 
 [/task-description]
 [tests]
 [test open]
 [input]
-6
-3
+numbers(6, 3)
 [/input]
 [output]
 1 1 2 4 7 13
@@ -445,8 +239,7 @@ The **fifth element** is equal to the sum of the **second, third and fourth (1, 
 [/test]
 [test open]
 [input]
-8
-2
+numbers(8, 2)
 [/input]
 [output]
 1 1 2 3 5 8 13 21
@@ -454,8 +247,7 @@ The **fifth element** is equal to the sum of the **second, third and fourth (1, 
 [/test]
 [test]
 [input]
-3
-5
+numbers(3, 5)
 [/input]
 [output]
 1 1 2
@@ -463,8 +255,7 @@ The **fifth element** is equal to the sum of the **second, third and fourth (1, 
 [/test]
 [test]
 [input]
-4
-2
+numbers(4, 2)
 [/input]
 [output]
 1 1 2 3
@@ -472,8 +263,7 @@ The **fifth element** is equal to the sum of the **second, third and fourth (1, 
 [/test]
 [test]
 [input]
-8
-2
+numbers(8, 2)
 [/input]
 [output]
 1 1 2 3 5 8 13 21
@@ -481,8 +271,7 @@ The **fifth element** is equal to the sum of the **second, third and fourth (1, 
 [/test]
 [test]
 [input]
-8
-4
+numbers(8, 4)
 [/input]
 [output]
 1 1 2 4 8 15 29 56
@@ -490,134 +279,7 @@ The **fifth element** is equal to the sum of the **second, third and fourth (1, 
 [/test]
 [test]
 [input]
-10
-3
-[/input]
-[output]
-1 1 2 4 7 13 24 44 81 149
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide hideTitle]
-# Solution: Last K Numbers Sequence
-
-[vimeo-video]
-[stream language="EN" videoId="489374563/74c0604242" default /]
-[stream language="RO" videoId="489374563/74c0604242"  /]
-[/video-vimeo]
-
-[code-task title="Last K Numbers Sequence" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function numbers(n, k){
-  // Write your code here
-}
-```
-[/code-editor]
-[code-adapter]
-```
-(input, code) => {
-  return code (Number(input[0]), Number(input[1]));
-}
-```
-[/code-adapter]
-[task-description]
-You are given **two integers**: `n` and `k`. 
-
-Write a **function** that **generates and prints** the following sequence: 
-
-- The **first element** is `1`.
-- Every **following element** is **equal to the sum** of the previous `k` elements. 
-- The **length** of the **sequence** is `n` elements.
-
-The **input** comes as two **numbers**.
-
-The **first element** represents the number `n`, and the second – the number `k`.
-
-The output is **printed** to the console on a **single line**, separated by **space**.
-
-## Examples
-| **Input** | **Output** |
-| --- | --- |
-|6, 3| 1 1 2 4 7 13 |
-|8, 2 | 1 1 2 3 5 8 13 21 |
-
-
-# Hints
-
-The **second element (1)** is **equal to the sum** of the **3 elements before it**, but there is only **one** element, so we take that. 
-
-The **third element** is equal to the sum of the **first two elements (1 and 1)**. 
-
-The **fourth element** is equal to the sum of **1**, **1** and **2**. 
-
-The **fifth element** is equal to the sum of the **second, third and fourth (1, 2 and 4)** and so on.
-
-[/task-description]
-[tests]
-[test open]
-[input]
-6
-3
-[/input]
-[output]
-1 1 2 4 7 13
-[/output]
-[/test]
-[test open]
-[input]
-8
-2
-[/input]
-[output]
-1 1 2 3 5 8 13 21
-[/output]
-[/test]
-[test]
-[input]
-3
-5
-[/input]
-[output]
-1 1 2
-[/output]
-[/test]
-[test]
-[input]
-4
-2
-[/input]
-[output]
-1 1 2 3
-[/output]
-[/test]
-[test]
-[input]
-8
-2
-[/input]
-[output]
-1 1 2 3 5 8 13 21
-[/output]
-[/test]
-[test]
-[input]
-8
-4
-[/input]
-[output]
-1 1 2 4 8 15 29 56
-[/output]
-[/test]
-[test]
-[input]
-10
-3
+numbers(10, 3)
 [/input]
 [output]
 1 1 2 4 7 13 24 44 81 149

@@ -21,6 +21,7 @@ console.log(`The number is ${myVar}`);
 myVar = "JavaScript";
 console.log(`I love ${myVar}!`);
 ```
+
 Although we can change a variable's value, it is not a good practice.
 
 Variables in JavaScript **do not have** a type, we can **store** whatever types of data we want, but the data has a type.

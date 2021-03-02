@@ -57,7 +57,7 @@ We can declare a function, and then we can invoke (call) the function by its nam
 
 ```js live
 function hLine() {
-  console.log("----------");
+  console.log('----------');
 }
 
 hLine();
@@ -167,11 +167,9 @@ If we pass more arguments, then additional arguments **will be ignored.**
 [/slide]
 
 [slide hideTitle]
-# Problem: Grades
+# Problem with Solution: Grades
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-13-problem-grades-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-14-solution-grades-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Grades" taskId="fundamentals-js-functions-lab-Grades" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -183,36 +181,40 @@ function grades(input){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  return code (Number(input[0]));
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
 [task-description]
-Write a function that receives a grade between `2.00` and `6.00` and prints the corresponding grade in words.
+# Description
+
+Write a function that receives a grade between "**2.00**" and "**6.00**" and prints the corresponding grade in words.
 
 | **Grade** | **Result** |
 | --- | --- |
-|`2.00 - 2.99` | `Fail` |
-|`3.00 - 3.49` | `Poor` |
-|`3.50 - 4.49` | `Good` |
-|`4.50 - 5.49` | `Very good` |
-|`5.50 - 6.00` | `Excellent` |
+| "**2.00 - 2.99**" | "**Fail**" |
+| "**3.00 - 3.49**" | "**Poor**" |
+| "**3.50 - 4.49**" | "**Good**" |
+| "**4.50 - 5.49**" | "**Very good**" |
+| "**5.50 - 6.00**" | "**Excellent**" |
 
 
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-|3.33 | Poor |
-|4.50 | Very good |
-|2.99 | Fail |
+| grades(3.33) | Poor |
+| grades(4.50) | Very good |
+| grades(2.99) | Fail |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-3.33
+grades(3.33)
 [/input]
 [output]
 Poor
@@ -220,7 +222,7 @@ Poor
 [/test]
 [test open]
 [input]
-4.50
+grades(4.50)
 [/input]
 [output]
 Very good
@@ -228,7 +230,7 @@ Very good
 [/test]
 [test open]
 [input]
-2.99
+grades(2.99)
 [/input]
 [output]
 Fail
@@ -236,7 +238,7 @@ Fail
 [/test]
 [test]
 [input]
-4.49
+grades(4.49)
 [/input]
 [output]
 Good
@@ -244,7 +246,7 @@ Good
 [/test]
 [test]
 [input]
-5.50
+grades(5.50)
 [/input]
 [output]
 Excellent
@@ -252,7 +254,7 @@ Excellent
 [/test]
 [test]
 [input]
-4.60
+grades(4.60)
 [/input]
 [output]
 Very good
@@ -260,7 +262,7 @@ Very good
 [/test]
 [test]
 [input]
-3.20
+grades(3.20)
 [/input]
 [output]
 Poor
@@ -268,7 +270,7 @@ Poor
 [/test]
 [test]
 [input]
-2.00
+grades(2.00)
 [/input]
 [output]
 Fail
@@ -276,124 +278,13 @@ Fail
 [/test]
 [/tests]
 [/code-task]
+
 [/slide]
 
 [slide hideTitle]
-# Solution: Grades
+# Problem with Solution: Math Power
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-14-solution-grades-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-
-[code-task title="Grades" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function grades(grade){
-  // Write your code here
-}
-```
-[/code-editor]
-[code-adapter]
-```
-(input, code) => {
-  return code (Number(input[0]));
-}
-```
-[/code-adapter]
-[task-description]
-Write a function that receives a grade between `2.00` and `6.00` and prints the corresponding grade in words.
-
-| **Grade** | **Result** |
-| --- | --- |
-|`2.00 - 2.99` | `Fail` |
-|`3.00 - 3.49` | `Poor` |
-|`3.50 - 4.49` | `Good` |
-|`4.50 - 5.49` | `Very good` |
-|`5.50 - 6.00` | `Excellent` |
-
-
-## Examples
-| **Input** | **Output** |
-| --- | --- |
-|3.33 | Poor |
-|4.50 | Very good |
-|2.99 | Fail |
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-3.33
-[/input]
-[output]
-Poor
-[/output]
-[/test]
-[test open]
-[input]
-4.50
-[/input]
-[output]
-Very good
-[/output]
-[/test]
-[test open]
-[input]
-2.99
-[/input]
-[output]
-Fail
-[/output]
-[/test]
-[test]
-[input]
-4.49
-[/input]
-[output]
-Good
-[/output]
-[/test]
-[test]
-[input]
-5.50
-[/input]
-[output]
-Excellent
-[/output]
-[/test]
-[test]
-[input]
-4.60
-[/input]
-[output]
-Very good
-[/output]
-[/test]
-[test]
-[input]
-3.20
-[/input]
-[output]
-Poor
-[/output]
-[/test]
-[test]
-[input]
-2.00
-[/input]
-[output]
-Fail
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-[slide hideTitle]
-# Problem: Math Power
-
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-15-problem-math-power-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-16-solution-math-power-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Math Power" taskId="fundamentals-js-functions-lab-Math-Power"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -406,13 +297,15 @@ function mathPower(input){
 [code-adapter]
 ```
 function adapter(input, code) {
-  let a = Number(input[0]);
-  let b = Number(input[1]);
-  return code(a, b);
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
 [task-description]
+# Description
+
 Write a function that **calculates** and returns the value of a number **raised to a given power.**
 
 &nbsp;
@@ -420,16 +313,15 @@ Write a function that **calculates** and returns the value of a number **raised 
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-|2, 8 | 256 |
-|3, 4 | 81 |
+| mathPower(2, 8) | 256 |
+| mathPower(3, 4) | 81 |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-2
-8
+mathPower(2, 8)
 [/input]
 [output]
 256
@@ -437,8 +329,7 @@ Write a function that **calculates** and returns the value of a number **raised 
 [/test]
 [test open]
 [input]
-3
-4
+mathPower(3, 4)
 [/input]
 [output]
 81
@@ -446,8 +337,7 @@ Write a function that **calculates** and returns the value of a number **raised 
 [/test]
 [test]
 [input]
-7
-2
+mathPower(7, 2)
 [/input]
 [output]
 49
@@ -455,8 +345,7 @@ Write a function that **calculates** and returns the value of a number **raised 
 [/test]
 [test]
 [input]
-123
-3
+mathPower(123, 3)
 [/input]
 [output]
 1860867
@@ -464,8 +353,7 @@ Write a function that **calculates** and returns the value of a number **raised 
 [/test]
 [test]
 [input]
-5.5
-3
+mathPower(5.5, 3)
 [/input]
 [output]
 166.375
@@ -473,8 +361,7 @@ Write a function that **calculates** and returns the value of a number **raised 
 [/test]
 [test]
 [input]
-21
-10
+mathPower(21, 10)
 [/input]
 [output]
 16679880978201
@@ -482,8 +369,7 @@ Write a function that **calculates** and returns the value of a number **raised 
 [/test]
 [test]
 [input]
-10
-7
+mathPower(10, 7)
 [/input]
 [output]
 10000000
@@ -491,8 +377,7 @@ Write a function that **calculates** and returns the value of a number **raised 
 [/test]
 [test]
 [input]
-12
-3
+mathPower(12, 3)
 [/input]
 [output]
 1728
@@ -500,8 +385,7 @@ Write a function that **calculates** and returns the value of a number **raised 
 [/test]
 [test]
 [input]
-2
-3
+mathPower(2, 3)
 [/input]
 [output]
 8
@@ -509,8 +393,7 @@ Write a function that **calculates** and returns the value of a number **raised 
 [/test]
 [test]
 [input]
-3
-2
+mathPower(3, 2)
 [/input]
 [output]
 9
@@ -518,8 +401,7 @@ Write a function that **calculates** and returns the value of a number **raised 
 [/test]
 [test]
 [input]
-4
-4
+mathPower(4, 4)
 [/input]
 [output]
 256
@@ -527,158 +409,7 @@ Write a function that **calculates** and returns the value of a number **raised 
 [/test]
 [test]
 [input]
-4
-4
-[/input]
-[output]
-256
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-[slide hideTitle]
-# Solution: Math Power
-
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-16-solution-math-power-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-
-[code-task title="Math Power" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-
-```
-function mathPower(input){
-  // Write your code here
-}
-```
-[/code-editor]
-[code-adapter]
-```
-function adapter(input, code) {
-  let a = Number(input[0]);
-  let b = Number(input[1]);
-  return code(a, b);
-}
-```
-[/code-adapter]
-[task-description]
-Write a function that **calculates** and returns the value of a number **raised to a given power.**
-
-&nbsp;
-
-## Examples
-| **Input** | **Output** |
-| --- | --- |
-|2, 8 | 256 |
-|3, 4 | 81 |
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-2
-8
-[/input]
-[output]
-256
-[/output]
-[/test]
-[test open]
-[input]
-3
-4
-[/input]
-[output]
-81
-[/output]
-[/test]
-[test]
-[input]
-7
-2
-[/input]
-[output]
-49
-[/output]
-[/test]
-[test]
-[input]
-123
-3
-[/input]
-[output]
-1860867
-[/output]
-[/test]
-[test]
-[input]
-5.5
-3
-[/input]
-[output]
-166.375
-[/output]
-[/test]
-[test]
-[input]
-21
-10
-[/input]
-[output]
-16679880978201
-[/output]
-[/test]
-[test]
-[input]
-10
-7
-[/input]
-[output]
-10000000
-[/output]
-[/test]
-[test]
-[input]
-12
-3
-[/input]
-[output]
-1728
-[/output]
-[/test]
-[test]
-[input]
-2
-3
-[/input]
-[output]
-8
-[/output]
-[/test]
-[test]
-[input]
-3
-2
-[/input]
-[output]
-9
-[/output]
-[/test]
-[test]
-[input]
-4
-4
-[/input]
-[output]
-256
-[/output]
-[/test]
-[test]
-[input]
-4
-4
+mathPower(4, 4)
 [/input]
 [output]
 256
@@ -686,4 +417,5 @@ Write a function that **calculates** and returns the value of a number **raised 
 [/test]
 [/tests]
 [/code-task]
+
 [/slide]

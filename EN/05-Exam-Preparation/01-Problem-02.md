@@ -1,60 +1,75 @@
-# Problem 2: Inventory
+# Problem with Solution 2: Inventory
 
-[slide]
-# Description
+[slide hideTitle]
+# Inventory
 
 [vimeo-video]
 [stream language="EN" videoId="497656637/db5855df33" default /]
 [stream language="RO" videoId="497656637/db5855df33"  /]
 [/video-vimeo]
 
-You will receive a string, containing the current items in your inventory, separated by a comma and a space `, `.
 
-After that, until receiving `Craft!` you will be given different commands.
 
-The commands are separated by ` - `:
-
-* Command `Collect - {item}`: 
-
-Receiving this command, you should add the given item to your inventory.
-
-If the item already exists, you should skip this command.
-
-* Command `Drop - {item}`: 
-
-You should remove the item from your inventory, if you have it.
-
-* Command `Combine Items - {oldItem}:{newItem}`: 
-
-You should check if the first item can be found in your inventory, if so, add the new item after the it.
-
-Otherwise, ignore the command.
-
-* Command `Renew – {item}`:
-
-If the given item exists, you should change its position and put it in the last position of your inventory.
-
-## Output
-After receiving `Craft!` print out all items in your inventory, separated by `, ` a comma and a space.
-
-[code-task title="Problem: Inventory" taskId="js-fundamentals-examPreparation-problem-2" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Inventory" taskId="js-fundamentals-examPreparation-Inventory" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function solve(input) {
+function inventory(input) {
 	// Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
+# Description
 
-# Examples
+You will receive a string containing the current items in your inventory.
+
+The items will be separated by a comma and space \(", "\).
+
+After that, until you receive "**Craft!**" you will be given different commands.
+
+The commands are separated by (" - ") and can be one of the following:
+
+- "**Collect -** \{**item**\}":
+
+    - Add the given item to your inventory
+
+    - Skip this command if the item is already in your inventory
+
+- "**Drop -** \{**item**\}": 
+
+    - Remove the item from your inventory if you have it
+
+- "**Combine Items -** \{**oldItem**\}**:**\{**newItem**\}":
+
+    - Check if the first item can be found in your inventory, and if it is, add the new item after the old one
+
+    - Otherwise, ignore the command
+
+- "**Renew -** \{**item**\}":
+
+    - If the given item exists, you should change its position and put it in the last position of your inventory
+
+## Output
+After receiving the "**Craft!**" command, print out all the items in your inventory, separated by a comma and space \(", "\).
+
+## Examples One
 | **Input** | **Output** |
 | --- | --- |
-|`[ 'Iron, Wood, Sword', 'Collect - Gold', 'Drop - Wood', 'Craft!' ]`| Iron, Sword, Gold |
+|inventory(['Iron, Wood, Sword', 'Collect - Gold', 'Drop - Wood', 'Craft!'])| Iron, Sword, Gold |
 
+## Examples Two
 | **Input** | **Output** |
 | --- | --- |
-|`['Iron, Sword','Drop - Bronze','Combine Items - Sword:Bow','Renew - Iron','Craft!']`| Sword, Bow, Iron|
+|inventory(['Iron, Sword','Drop - Bronze','Combine Items - Sword:Bow','Renew - Iron', 'Craft!'])| Sword, Bow, Iron|
 
 
 [/task-description]
@@ -62,10 +77,7 @@ function solve(input) {
 [tests]
 [test open]
 [input]
-Iron, Wood, Sword
-Collect - Gold
-Drop - Wood
-Craft!
+inventory(['Iron, Wood, Sword', 'Collect - Gold', 'Drop - Wood', 'Craft!'])
 [/input]
 [output]
 Iron, Sword, Gold
@@ -73,11 +85,7 @@ Iron, Sword, Gold
 [/test]
 [test open]
 [input]
-Iron, Sword
-Drop - Bronze
-Combine Items - Sword:Bow
-Renew - Iron
-Craft!
+inventory(['Iron, Sword','Drop - Bronze','Combine Items - Sword:Bow','Renew - Iron', 'Craft!'])
 [/input]
 [output]
 Sword, Bow, Iron
@@ -85,10 +93,7 @@ Sword, Bow, Iron
 [/test]
 [test]
 [input]
-A, B, C, D
-Collect - E
-Collect - F
-Craft!
+inventory(['A, B, C, D', 'Collect - E', 'Collect - F', 'Craft!'])
 [/input]
 [output]
 A, B, C, D, E, F
@@ -96,10 +101,7 @@ A, B, C, D, E, F
 [/test]
 [test]
 [input]
-A, B, C, D
-Collect - D
-Collect - E
-Craft!
+inventory(['A, B, C, D', 'Collect - D', 'Collect - E', 'Craft!'])
 [/input]
 [output]
 A, B, C, D, E
@@ -107,10 +109,7 @@ A, B, C, D, E
 [/test]
 [test]
 [input]
-A, B, C, D
-Drop - C
-Drop - D
-Craft!
+inventory(['A, B, C, D', 'Drop - C', 'Drop - D', 'Craft!'])
 [/input]
 [output]
 A, B
@@ -118,10 +117,7 @@ A, B
 [/test]
 [test]
 [input]
-A, B, C, D
-Drop - D
-Drop - E
-Craft!
+inventory(['A, B, C, D', 'Drop - D', 'Drop - E', 'Craft!'])
 [/input]
 [output]
 A, B, C
@@ -129,9 +125,7 @@ A, B, C
 [/test]
 [test]
 [input]
-A, B, C, D
-Renew - C
-Craft!
+inventory(['A, B, C, D', 'Renew - C', 'Craft!'])
 [/input]
 [output]
 A, B, D, C
@@ -139,11 +133,7 @@ A, B, D, C
 [/test]
 [test]
 [input]
-A, B, C, D
-Renew - D
-Renew - E
-Renew - B
-Craft!
+inventory(['A, B, C, D', 'Renew - D', 'Renew - E', 'Renew - B', 'Craft!'])
 [/input]
 [output]
 A, C, D, B
@@ -151,9 +141,7 @@ A, C, D, B
 [/test]
 [test]
 [input]
-A, B, C, D
-Combine Items - C:C1
-Craft!
+inventory(['A, B, C, D', 'Combine Items - C:C1', 'Craft!'])
 [/input]
 [output]
 A, B, C, C1, D
@@ -161,10 +149,7 @@ A, B, C, C1, D
 [/test]
 [test]
 [input]
-A, B, C, D
-Combine Items - C:C1
-Combine Items - E:E1
-Craft!
+inventory(['A, B, C, D', 'Combine Items - C:C1', 'Combine Items - E:E1', 'Craft!'])
 [/input]
 [output]
 A, B, C, C1, D
@@ -172,16 +157,7 @@ A, B, C, C1, D
 [/test]
 [test]
 [input]
-N, S, F, T
-Collect - U
-Drop - F
-Renew - N
-Combine Items - S:B1
-Combine Items - B1:O
-Drop - B1
-Combine Items - O:F
-Collect - I
-Craft!
+inventory(['N, S, F, T', 'Collect - U', 'Drop - F', 'Renew - N', 'Combine Items - S:B1', 'Combine Items - B1:O', 'Drop - B1', 'Combine Items - O:F', 'Collect - I', 'Craft!'])
 [/input]
 [output]
 S, O, F, T, U, N, I
@@ -189,4 +165,5 @@ S, O, F, T, U, N, I
 [/test]
 [/tests]
 [/code-task]
+
 [/slide]

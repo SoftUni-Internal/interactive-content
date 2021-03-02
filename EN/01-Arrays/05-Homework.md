@@ -10,27 +10,31 @@ function sumEvenNumbers(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
-Write a program which receives an array of strings, parses them to numbers and sums only the even numbers.
+Create a program that receives an **array of strings**, parses them to **numbers**, and sums only the even numbers.
 
-# Example
+## Examples
 | **Input** | **Output** |
 | --- | --- |
-|`['1','2','3','4','5','6']`| 12 |
-|`['3','5','7','9']`| 0 |
-|`['2','4','6','8','10']`| 30 |
+| sumEvenNumbers(['1', '2', '3', '4', '5', '6']) | 12 |
+| sumEvenNumbers(['3', '5', '7', '9']) | 0 |
+| sumEvenNumbers(['2', '4', '6', '8', '10']) | 30 |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-1
-2
-3
-4
-5
-6
+sumEvenNumbers(['1', '2', '3', '4', '5', '6'])
 [/input]
 [output]
 12
@@ -38,10 +42,7 @@ Write a program which receives an array of strings, parses them to numbers and s
 [/test]
 [test open]
 [input]
-3
-5
-7
-9
+sumEvenNumbers(['3', '5', '7', '9'])
 [/input]
 [output]
 0
@@ -49,11 +50,7 @@ Write a program which receives an array of strings, parses them to numbers and s
 [/test]
 [test open]
 [input]
-2
-4
-6
-8
-10
+sumEvenNumbers(['2', '4', '6', '8', '10'])
 [/input]
 [output]
 30
@@ -61,11 +58,7 @@ Write a program which receives an array of strings, parses them to numbers and s
 [/test]
 [test]
 [input]
-1
-1
-34
-64
-86
+sumEvenNumbers(['1', '1', '34', '64', '86'])
 [/input]
 [output]
 184
@@ -73,13 +66,7 @@ Write a program which receives an array of strings, parses them to numbers and s
 [/test]
 [test]
 [input]
-1
-2
-3
-4
-5
-6
-10
+sumEvenNumbers(['1', '2', '3', '4', '5', '6', '10'])
 [/input]
 [output]
 22
@@ -87,10 +74,7 @@ Write a program which receives an array of strings, parses them to numbers and s
 [/test]
 [test]
 [input]
-13
-55
-37
-19
+sumEvenNumbers(['13', '55', '37', '19'])
 [/input]
 [output]
 0
@@ -98,10 +82,7 @@ Write a program which receives an array of strings, parses them to numbers and s
 [/test]
 [test]
 [input]
-13
-55
-37
-19
+sumEvenNumbers(['13', '55', '37', '19'])
 [/input]
 [output]
 0
@@ -109,10 +90,7 @@ Write a program which receives an array of strings, parses them to numbers and s
 [/test]
 [test]
 [input]
-1
-156
-7
-18
+sumEvenNumbers(['1', '156', '7', '18'])
 [/input]
 [output]
 174
@@ -120,11 +98,7 @@ Write a program which receives an array of strings, parses them to numbers and s
 [/test]
 [test]
 [input]
-3
-14
-0
-8
-18
+sumEvenNumbers(['3', '14', '0', '8', '18'])
 [/input]
 [output]
 40
@@ -148,41 +122,30 @@ function evenOdd(input){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {return code(input.map(Number))}
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
 ```
 [/code-adapter]
 [task-description]
 # Description
 
-Write a program that calculates the difference between the sum of the even and the sum of the odd numbers in an array.
+Create a program that calculates the **difference** between the **sum of the even** and the **sum of the odd numbers** in an array.
 
-# Example
-  | **Input** | **Output** |
-| --- | --- |
-|`[1, 2, 3, 4, 5, 6]`| 3 |
-
-# Comments
-
-`2 + 4 + 6 = 12, 1 + 3 + 5 = 9, 12 - 9 = 3`
-
-&nbsp;
-
-# More Examples
-  | **Input** | **Output** |
-| --- | --- |
-|`[3, 5, 7, 9]`|\-24 |
-|`[2, 4, 6, 8, 10]`|30 |
+# Examples
+  | **Input** | **Output** |**Comments** |
+| :--- | :---: | :---:|
+| evenOdd([1, 2, 3, 4, 5, 6]) | 3 | 2 + 4 + 6 = 12, 1 + 3 + 5 = 9, 12 - 9 = 3|
+| evenOdd([3, 5, 7, 9]) |\-24 ||
+| evenOdd([2, 4, 6, 8, 10]) |30 | |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-1
-2
-3
-4
-5
-6
+evenOdd([1, 2, 3, 4, 5, 6])
 [/input]
 [output]
 3
@@ -190,10 +153,7 @@ Write a program that calculates the difference between the sum of the even and t
 [/test]
 [test open]
 [input]
-3
-5
-7
-9
+evenOdd([3, 5, 7, 9])
 [/input]
 [output]
 \-24
@@ -201,11 +161,7 @@ Write a program that calculates the difference between the sum of the even and t
 [/test]
 [test open]
 [input]
-2
-4
-6
-8
-10
+eveOdd([2, 4, 6, 8, 10])
 [/input]
 [output]
 30
@@ -213,12 +169,7 @@ Write a program that calculates the difference between the sum of the even and t
 [/test]
 [test]
 [input]
-1
-3
-13
-544
-65
-46
+evenOdd([1, 3, 13, 544, 65, 46])
 [/input]
 [output]
 508
@@ -226,10 +177,7 @@ Write a program that calculates the difference between the sum of the even and t
 [/test]
 [test]
 [input]
-74
-16
-65
-110
+evenOdd([74, 16, 65, 110])
 [/input]
 [output]
 135
@@ -237,10 +185,7 @@ Write a program that calculates the difference between the sum of the even and t
 [/test]
 [test]
 [input]
-53
-5
-27
-19
+evenOdd([53, 5, 27, 19])
 [/input]
 [output]
 -104
@@ -248,10 +193,7 @@ Write a program that calculates the difference between the sum of the even and t
 [/test]
 [test]
 [input]
--53
-485
-328
-194
+evenOdd([-53, 485, 328, 194])
 [/input]
 [output]
 90
@@ -259,12 +201,7 @@ Write a program that calculates the difference between the sum of the even and t
 [/test]
 [test]
 [input]
-24
-44
-16
-68
-15
-41
+evenOdd([24, 44, 16, 68, 15, 41])
 [/input]
 [output]
 96
@@ -272,11 +209,7 @@ Write a program that calculates the difference between the sum of the even and t
 [/test]
 [test]
 [input]
-24
-14
-16
--48
-110
+evenOdd([24, 14, 16, -48, 110])
 [/input]
 [output]
 116
@@ -284,11 +217,7 @@ Write a program that calculates the difference between the sum of the even and t
 [/test]
 [test]
 [input]
-24
--6
-16
-68
-150
+evenOdd([24, -6, 16, 68, 150])
 [/input]
 [output]
 252
@@ -296,11 +225,7 @@ Write a program that calculates the difference between the sum of the even and t
 [/test]
 [test]
 [input]
-24
-84
-16
-68
--14
+evenOdd([24, 84, 16, 68, -14])
 [/input]
 [output]
 178
@@ -308,11 +233,7 @@ Write a program that calculates the difference between the sum of the even and t
 [/test]
 [test]
 [input]
-24
-84
-16
-68
--14
+evenOdd([24, 84, 16, 68, -14])
 [/input]
 [output]
 178
@@ -336,51 +257,45 @@ function condense(input){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {return code(input.map(Number))}
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
 ```
 [/code-adapter]
 [task-description]
 # Description
 
-Write a program which receives **an array of numbers** and condense them by **summing** adjacent couples of elements until a **single number** is obtained.
+Create a program that receives **an array of numbers** and condenses them by **summing** adjacent couples of elements until a **single number** is obtained.
 
-# Example
+## Examples
 
-For example, if we have 3 elements `[2, 10, 3]`, we sum the first two and the second two elements and obtain `{2+10, 10+3} = {12, 13}`, then we sum again all adjacent elements and obtain `{12+13} = {25}`.
+For example, if we have 3 elements \[**2, 10, 3**\], we sum the first two and the second two elements and obtain \{**2+10, 10+3**\} = \{**12, 13**\}, then we sum again all adjacent elements and obtain \{**12+13**\} = \{**25**\}.
 
-  | **Input** | **Output** |
-| --- | --- |
-|`[2, 10, 3]`| 25 |
+   | **Input** | **Output** |**Comments** |
+| :--- | :---: | :---:|
+| condense([2, 10, 3]) | 25 |2 10 3 \-\> 2+10 10+3 \-\> 12 13 -> 12 + 13 \-\> 25 |
+| condense([5, 0, 4, 1, 2]) | 35 ||
+| condense(\[1\]) | 1 ||
 
-# Comments
-`2 10 3 -> 2+10 10+3 -> 12 13 -> 12 + 13 -> 25`
 
-&nbsp;
+## Hints
 
-# More Examples
-  | **Input** | **Output** |
-| --- | --- |
-|`[5, 0, 4, 1, 2]`| 35 |
-|`[1]`| 1 |
+While we have more than one element in the array **nums**\[\], repeat the following:
 
-# Hints
+- Allocate a new array **condensed**\[\] of size **nums**\.**Length**\-**1**
 
-While we have more than one element in the array `nums[]`, repeat the following:
+- Sum the numbers from **nums**\[\] to **condensed**\[\]:
+  - **condensed**\[i\] = **nums**\[i\] \+ **nums**\[i\+1\]
 
-- Allocate a new array `condensed[]` of size `nums.Length-1`
-
-- Sum the numbers from `nums[]` to `condensed[]`:
-  -	`condensed[i] = nums[i] + nums[i+1]`
-
--	`nums[] = condensed[]`
+- **nums**\[\] = **condensed**\[\]
 
 [/task-description]
 [tests]
 [test open]
 [input]
-2
-10
-3
+condense([2, 10, 3])
 [/input]
 [output]
 25
@@ -388,11 +303,7 @@ While we have more than one element in the array `nums[]`, repeat the following:
 [/test]
 [test open]
 [input]
-5
-0
-4
-1
-2
+condense([5, 0, 4, 1, 2])
 [/input]
 [output]
 35
@@ -400,7 +311,7 @@ While we have more than one element in the array `nums[]`, repeat the following:
 [/test]
 [test]
 [input]
-1
+condense([1])
 [/input]
 [output]
 1
@@ -408,17 +319,7 @@ While we have more than one element in the array `nums[]`, repeat the following:
 [/test]
 [test]
 [input]
-3
-4
-0
-3
-4
-0
-0
-0
-0
-1
-2
+condense([3, 4, 0, 3, 4, 0, 0, 0, 0, 1, 2])
 [/input]
 [output]
 1255
@@ -426,9 +327,7 @@ While we have more than one element in the array `nums[]`, repeat the following:
 [/test]
 [test]
 [input]
-0
-0
-0
+condense([0, 0, 0])
 [/input]
 [output]
 0
@@ -436,10 +335,7 @@ While we have more than one element in the array `nums[]`, repeat the following:
 [/test]
 [test]
 [input]
--5
--10
--15
--5
+condense([-5, -10, -15, -5])
 [/input]
 [output]
 -85
@@ -447,15 +343,7 @@ While we have more than one element in the array `nums[]`, repeat the following:
 [/test]
 [test]
 [input]
--1
-2
--3
-4
--5
-6
--7
-8
--9
+condense([-1, 2, -3, 4, -5, 6, -7, 8, -9])
 [/input]
 [output]
 0
@@ -463,26 +351,7 @@ While we have more than one element in the array `nums[]`, repeat the following:
 [/test]
 [test]
 [input]
--1
--1
--1
--1
--1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
--1
+condense([-1, -1, -1, -1, -1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, -1])
 [/input]
 [output]
 514214
@@ -490,7 +359,7 @@ While we have more than one element in the array `nums[]`, repeat the following:
 [/test]
 [test]
 [input]
-10
+condense([10])
 [/input]
 [output]
 10
@@ -514,13 +383,17 @@ function addOrSubstract(input){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {return code(input.map(Number))}
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
 ```
 [/code-adapter]
 [task-description]
 # Description
 
-Write a function, which changes the **value** of odd and even numbers in an array of numbers. 
+Create a program, which changes the **value** of odd and even numbers in an array of numbers. 
 
 - If the number is **even** - **add** to its value its index position
 
@@ -528,16 +401,21 @@ Write a function, which changes the **value** of odd and even numbers in an arra
 
 &nbsp;
 
-# Output
+## Output
 
 On the first line print the **newly modified array**, on the second line print the sum of numbers from the **original** array, on the third line print the sum of numbers from the **modified array.**
 
+## Example One
   | **Input** | **Output** |
 | --- | --- |
-|`[5, 15, 23, 56, 35]`| `[ 5, 14, 21, 59, 31 ]` |
+| addOrSubtract([5, 15, 23, 56, 35]) | [ 5, 14, 21, 59, 31 ] |
 || 134|
 || 130 |
-|`[-5, 11, 3, 0, 2]`| `[ 5, 14, 21, 59, 31 ]` |
+
+## Example Two
+| **Input** | **Output** |
+| --- | --- |
+| addOrSubtract([-5, 11, 3, 0, 2]) | [ 5, 14, 21, 59, 31 ] |
 || 11|
 || 15 |
 
@@ -545,11 +423,7 @@ On the first line print the **newly modified array**, on the second line print t
 [tests]
 [test open]
 [input]
-5
-15
-23
-56
-35
+addOrSubtract([5, 15, 23, 56, 35])
 [/input]
 [output]
 [ 5, 14, 21, 59, 31 ]
@@ -559,11 +433,7 @@ On the first line print the **newly modified array**, on the second line print t
 [/test]
 [test open]
 [input]
--5
-11
-3
-0
-2
+addOrSubtract([-5, 11, 3, 0, 2])
 [/input]
 [output]
 [ -5, 10, 1, 3, 6 ]
@@ -573,11 +443,7 @@ On the first line print the **newly modified array**, on the second line print t
 [/test]
 [test]
 [input]
-2
-5
--6
-32
-12
+addOrSubtract([2, 5, -6, 32, 12])
 [/input]
 [output]
 [ 2, 4, -4, 35, 16 ]
@@ -587,11 +453,7 @@ On the first line print the **newly modified array**, on the second line print t
 [/test]
 [test]
 [input]
-8
-32
--112
-21
-37
+addOrSubtract([8, 32, -112, 21, 37])
 [/input]
 [output]
 [ 8, 33, -110, 18, 33 ]
@@ -601,11 +463,7 @@ On the first line print the **newly modified array**, on the second line print t
 [/test]
 [test]
 [input]
-1
--4
-312
-124
--1
+addOrSubtract([1, -4, 312, 124, -1])
 [/input]
 [output]
 [ 1, -3, 314, 127, -5 ]
@@ -615,11 +473,7 @@ On the first line print the **newly modified array**, on the second line print t
 [/test]
 [test]
 [input]
-6
-15
--6
-16
-77
+addOrSubtract([6, 15, -6, 16, 77])
 [/input]
 [output]
 [ 6, 14, -4, 19, 73 ]
@@ -629,11 +483,7 @@ On the first line print the **newly modified array**, on the second line print t
 [/test]
 [test]
 [input]
-18
-15
-122
-11
-7
+addOrSubtract([18, 15, 122, 11, 7])
 [/input]
 [output]
 [ 18, 14, 124, 8, 3 ]
@@ -643,11 +493,7 @@ On the first line print the **newly modified array**, on the second line print t
 [/test]
 [test]
 [input]
-19
-5
-123
-17
-79
+addOrSubtract([19, 5, 123, 17, 79])
 [/input]
 [output]
 [ 19, 4, 121, 14, 75 ]
@@ -673,35 +519,39 @@ function arrayRotation(arr, num){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {return code(JSON.parse(input[0]).map(Number), Number(input[1]))}
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
 ```
 [/code-adapter]
 [task-description]
 # Description
 
-Write a function that receives an **array** and the number of rotations you have to perform (the first element goes at the end).
+Create a program that receives an **array** and the **number of rotations** you have to perform (the first element goes at the end).
 
-The first element of the input is the array of numbers where you have to perform the rotations.
+- The **first element** of the input is **the array of numbers** where you have to perform the rotations
 
-The second element of the input is the number of rotations you have to perform.
+- The **second element** of the input is the **number of rotation**s you have to perform
 
-# Output
+## Output
 
-Print the resulting array elements separated my single space.
+Print the resulting array elements separated by a single space.
 
+## Examples
 | **Input** | **Output** |
 | --- | --- |
-|`[51, 47, 32, 61, 21], 2`| 32 61 21 51 47 |
-|`[32, 21, 61, 1], 4`| 32 21 61 1 |
-|`[2, 4, 15, 31], 5`|4 15 31 2|
+| arrayRotation([51, 47, 32, 61, 21], 2) | 32 61 21 51 47 |
+| arrayRotation([32, 21, 61, 1], 4) | 32 21 61 1 |
+| arrayRotation([2, 4, 15, 31], 5) |4 15 31 2|
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-\[51, 47, 32, 61, 21\]
-2
+arrayRotation([51, 47, 32, 61, 21], 2)
 [/input]
 [output]
 32 61 21 51 47
@@ -709,8 +559,7 @@ Print the resulting array elements separated my single space.
 [/test]
 [test open]
 [input]
-\[32, 21, 61, 1\]
-4
+arrayRotation([32, 21, 61, 1], 4)
 [/input]
 [output]
 32 21 61 1
@@ -718,8 +567,7 @@ Print the resulting array elements separated my single space.
 [/test]
 [test open]
 [input]
-\[2, 4, 15, 31\]
-5
+arrayRotation([2, 4, 15, 31], 5)
 [/input]
 [output]
 4 15 31 2
@@ -727,8 +575,7 @@ Print the resulting array elements separated my single space.
 [/test]
 [test]
 [input]
-\[1, 47, 32, 61, 91\]
-1
+arrayRotation([1, 47, 32, 61, 91], 1)
 [/input]
 [output]
 47 32 61 91 1
@@ -736,8 +583,7 @@ Print the resulting array elements separated my single space.
 [/test]
 [test]
 [input]
-\[451, 47, 32, 61, 12\]
-2
+arrayRotation([451, 47, 32, 61, 12], 2)
 [/input]
 [output]
 32 61 12 451 47
@@ -745,8 +591,7 @@ Print the resulting array elements separated my single space.
 [/test]
 [test]
 [input]
-\[31, 21, 69, 1\]
-3
+arrayRotation([31, 21, 69, 1], 3)
 [/input]
 [output]
 1 31 21 69
@@ -754,8 +599,7 @@ Print the resulting array elements separated my single space.
 [/test]
 [test]
 [input]
-\[3, 21, 7, 1\]
-4
+arrayRotation([3, 21, 7, 1], 4) 
 [/input]
 [output]
 3 21 7 1
@@ -763,8 +607,7 @@ Print the resulting array elements separated my single space.
 [/test]
 [test]
 [input]
-\[22, 4, 4, 15\]
-10
+arrayRotation([22, 4, 4, 15], 10)
 [/input]
 [output]
 4 15 22 4
@@ -772,8 +615,7 @@ Print the resulting array elements separated my single space.
 [/test]
 [test]
 [input]
-\[15\]
-11
+arrayRotation([15], 11)
 [/input]
 [output]
 15
@@ -781,8 +623,7 @@ Print the resulting array elements separated my single space.
 [/test]
 [test]
 [input]
-\[21, 69, 4\]
-0
+arrayRotation([21, 69, 4], 0)
 [/input]
 [output]
 21 69 4
@@ -804,34 +645,35 @@ function magicSum(arr, num){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  const numArr = input[0].split(' ').map(Number);
-  const magicNum = +input[1];
-  return code(numArr,  magicNum);
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
 [task-description]
 # Description
-Write a function, which prints all **unique** pairs in **an array of integers** whose **sum** is **equal** to a given number. 
+
+Create a program, which prints all **unique** pairs are **an array of integers** whose **sum** is **equal** to a given number. 
 
 &nbsp;
 
-# Example
+## Example One
 | **Input** | **Output** |
 | --- | --- |
-|`[1, 7, 6, 2, 19, 23], 8`| 1 7 |
+| magicSum([1, 7, 6, 2, 19, 23], 8) | 1 7 |
 || 6 2 |
-
+## Example Two
 | **Input** | **Output** |
 | --- | --- |
-|`[14, 20, 60, 13, 7, 19, 8], 27`| 14 13 |
+| magicSum([14, 20, 60, 13, 7, 19, 8], 27) | 14 13 |
 ||20 7 |
 ||19 8 |
-
+## Example Three
 | **Input** | **Output** |
 | --- | --- |
-|`[1, 2, 3, 4, 5, 6], 6`| 1 5 |
+| magicSum([1, 2, 3, 4, 5, 6], 6) | 1 5 |
 || 2 4 |
 
 
@@ -840,8 +682,7 @@ Write a function, which prints all **unique** pairs in **an array of integers** 
 [tests]
 [test open]
 [input]
-1 7 6 2 19 23
-8
+magicSum([1, 7, 6, 2, 19, 23], 8)
 [/input]
 [output]
 1 7
@@ -850,8 +691,7 @@ Write a function, which prints all **unique** pairs in **an array of integers** 
 [/test]
 [test open]
 [input]
-14 20 60 13 7 19 8
-27
+magicSum([14, 20, 60, 13, 7, 19, 8], 27)
 [/input]
 [output]
 14 13
@@ -861,8 +701,7 @@ Write a function, which prints all **unique** pairs in **an array of integers** 
 [/test]
 [test open]
 [input]
-1 2 3 4 5 6
-6
+magicSum([1, 2, 3, 4, 5, 6], 6)
 [/input]
 [output]
 1 5
@@ -871,8 +710,7 @@ Write a function, which prints all **unique** pairs in **an array of integers** 
 [/test]
 [test]
 [input]
-1 5 3 7 7
-14
+magicSum([1, 5, 3, 7, 7], 14)
 [/input]
 [output]
 7 7
@@ -880,8 +718,7 @@ Write a function, which prints all **unique** pairs in **an array of integers** 
 [/test]
 [test]
 [input]
-14 67 43 7 19 8
-15
+magicSum([14, 67, 43, 7, 19, 8], 15)
 [/input]
 [output]
 7 8
@@ -889,8 +726,7 @@ Write a function, which prints all **unique** pairs in **an array of integers** 
 [/test]
 [test]
 [input]
-43 1 23 43 45 5
-6
+magicSum([43, 1, 23, 43, 45, 5], 6)
 [/input]
 [output]
 1 5
@@ -898,8 +734,7 @@ Write a function, which prints all **unique** pairs in **an array of integers** 
 [/test]
 [test]
 [input]
-6 5 3 4 3 3
-7
+magicSum([6, 5, 3, 4, 3, 3], 7)
 [/input]
 [output]
 3 4
@@ -909,8 +744,7 @@ Write a function, which prints all **unique** pairs in **an array of integers** 
 [/test]
 [test]
 [input]
-46 3 43
-46
+magicSum([46, 3, 43], 46)
 [/input]
 [output]
 3 43
@@ -918,8 +752,7 @@ Write a function, which prints all **unique** pairs in **an array of integers** 
 [/test]
 [test]
 [input]
-4 1 2 3
-5
+magicSum([4, 1, 2, 3], 5)
 [/input]
 [output]
 4 1

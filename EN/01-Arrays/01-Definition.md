@@ -18,7 +18,7 @@ To declare an array, we place the values that it should hold in square brackets,
 Creating an array of strings: 
 
 ```js
-let fruit = ["apple", "pear", "cherry"];
+let fruit = ['apple', 'pear', 'cherry'];
 ```
 
 Arrays can contain variables of **different data types** - integers, strings, boolean etc. 
@@ -26,7 +26,7 @@ Arrays can contain variables of **different data types** - integers, strings, bo
 Also, **duplicate** values **can** be stored in it. 
 
 ```js
-let myArray = ["string", 2, 3.33, 2, true];
+let myArray = ['string', 2, 3.33, 2, true];
 ```
 
 The values in an array are called **elements.** 
@@ -36,15 +36,16 @@ You could think of it as a **train**, of which each wagon **may contain a differ
 Now let us **imagine an array of integers**, each element representing a wagon and each value is the number of passengers. 
 
 As in this graphical representation: 
+
 [image assetsSrc="array-example.png" /]
 
 This one has **7 wagons** (**elements**). 
 
 Each one has **passengers in it** (a value):
 
-- `[3, 4, 10, 7, 5, 0, 6]`
+- [3, 4, 10, 7, 5, 0, 6]
 
-Array elements are numbered from `0` to `length-1`.
+Array elements are numbered from 0 to `length-1`.
 
 By using the `Array.length` method we can get a variable, containing the length of an array.
 
@@ -97,9 +98,9 @@ console.log(numbers);
 [/slide]
 
 [slide hideTitle]
-# Problem: Sum First and Last Array Elements
+# Problem with Solution: Sum First and Last Array Elements
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-6-Problem-Sum-first-and-last-array-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-6-Solution-Sum-first-and-last-array-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sum First and Last Array Elements" taskId="fundamentals-js-arrays-lab-Sum-First-and-Last-Array-Elements" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -111,146 +112,31 @@ function sum(input){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {return code(input.map(Number))}
-```
-[/code-adapter]
-[task-description]
-# Description
-
-Write a function that receives an **array of numbers**. Print out the sum of first and last element of that array. 
-
-# Example
-| **Input** | **Output** |
-| --- | --- |
-|`[20, 30, 40]`| 60 |
-|`[10, 17, 22, 33]`| 43 |
-
-[/task-description]
-[tests]
-[test open]
-[input]
-20
-30
-40
-[/input]
-[output]
-60
-[/output]
-[/test]
-[test open]
-[input]
-10
-17
-22
-33
-[/input]
-[output]
-43
-[/output]
-[/test]
-[test]
-[input]
-191
-67
-22
-33
-9
-[/input]
-[output]
-200
-[/output]
-[/test]
-[test]
-[input]
-10
-69
-[/input]
-[output]
-79
-[/output]
-[/test]
-[test]
-[input]
-56
-44
-19
-[/input]
-[output]
-75
-[/output]
-[/test]
-[test]
-[input]
-118
-574
-19
-[/input]
-[output]
-137
-[/output]
-[/test]
-[test]
-[input]
-11
-58
-69
-[/input]
-[output]
-80
-[/output]
-[/test]
-[test]
-[input]
-91
-18
-19
-[/input]
-[output]
-110
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide hideTitle]
-# Solution: Sum First and Last Array Elements
-
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-6-Solution-Sum-first-and-last-array-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[code-task title="Sum First and Last Array Elements" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function sum(arr){
-  // Write your code here
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
-[/code-editor]
-[code-adapter]
-```
-(input, code) => {return code(input.map(Number))}
-```
 [/code-adapter]
 [task-description]
 # Description
 
-Write a function that receives an **array of numbers**. Print out the sum of first and last element of that array. 
+Create a program that receives an **array of numbers** as an input. 
 
-# Example
+Print out the sum of the **first** and **last** element of that array. 
+
+## Example
 | **Input** | **Output** |
 | --- | --- |
-|`[20, 30, 40]`| 60 |
-|`[10, 17, 22, 33]`| 43 |
+| sum([20, 30, 40]) | 60 |
+| sum([10, 17, 22, 33]) | 43 |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-20
-30
-40
+sum([20, 30, 40])
 [/input]
 [output]
 60
@@ -258,10 +144,7 @@ Write a function that receives an **array of numbers**. Print out the sum of fir
 [/test]
 [test open]
 [input]
-10
-17
-22
-33
+sum([10, 17, 22, 33])
 [/input]
 [output]
 43
@@ -269,11 +152,7 @@ Write a function that receives an **array of numbers**. Print out the sum of fir
 [/test]
 [test]
 [input]
-191
-67
-22
-33
-9
+sum([191, 67, 22, 33, 9])
 [/input]
 [output]
 200
@@ -281,8 +160,7 @@ Write a function that receives an **array of numbers**. Print out the sum of fir
 [/test]
 [test]
 [input]
-10
-69
+sum([10, 69])
 [/input]
 [output]
 79
@@ -290,9 +168,7 @@ Write a function that receives an **array of numbers**. Print out the sum of fir
 [/test]
 [test]
 [input]
-56
-44
-19
+sum([56, 44, 19])
 [/input]
 [output]
 75
@@ -300,9 +176,7 @@ Write a function that receives an **array of numbers**. Print out the sum of fir
 [/test]
 [test]
 [input]
-118
-574
-19
+sum([118, 574, 19])
 [/input]
 [output]
 137
@@ -310,9 +184,7 @@ Write a function that receives an **array of numbers**. Print out the sum of fir
 [/test]
 [test]
 [input]
-11
-58
-69
+sum([11, 58, 69])
 [/input]
 [output]
 80
@@ -320,9 +192,7 @@ Write a function that receives an **array of numbers**. Print out the sum of fir
 [/test]
 [test]
 [input]
-91
-18
-19
+sum([91, 18, 19])
 [/input]
 [output]
 110
@@ -340,7 +210,7 @@ Write a function that receives an **array of numbers**. Print out the sum of fir
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-7-Example-Days-of-week-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ```js
-let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+let days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 ```
 
 |**Index**|**Value**|
@@ -362,9 +232,9 @@ The last element, Sunday, is at index 6 of the array.
 [/slide]
 
 [slide hideTitle]
-# Problem: Days of Week
+# Problem with Solution: Days of Week
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-8-Probelm-Days-of-week-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-8-Solution-Days-of-week-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Days of Week" taskId="fundamentals-js-arrays-lab-Days-of-Week" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -376,29 +246,31 @@ function days(number){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  return code (Number(input[0]));
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
 [task-description]
 # Description
 
-Write a program which receives a number and prints out the corresponding name of the day of week. 
+Create a program that receives a **number** and prints out the corresponding name of the day of the week. 
 
-If the number is NOT a valid day, print `Invalid day!`.
+If the number is NOT a valid weekday, print "**Invalid day!**".
 
-# Example
+## Example
 | **Input** | **Output** |
 | --- | --- |
-|3| Wednesday |
-|11| Invalid day! |
+| days(3) | Wednesday |
+| days(11) | Invalid day! |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-3
+days(3)
 [/input]
 [output]
 Wednesday
@@ -406,7 +278,7 @@ Wednesday
 [/test]
 [test open]
 [input]
-11
+days(11)
 [/input]
 [output]
 Invalid day!
@@ -414,7 +286,7 @@ Invalid day!
 [/test]
 [test]
 [input]
-1
+days(1)
 [/input]
 [output]
 Monday
@@ -422,7 +294,7 @@ Monday
 [/test]
 [test]
 [input]
-2
+days(2)
 [/input]
 [output]
 Tuesday
@@ -430,7 +302,7 @@ Tuesday
 [/test]
 [test]
 [input]
-4
+days(4)
 [/input]
 [output]
 Thursday
@@ -438,7 +310,7 @@ Thursday
 [/test]
 [test]
 [input]
-5
+days(5)
 [/input]
 [output]
 Friday
@@ -446,7 +318,7 @@ Friday
 [/test]
 [test]
 [input]
-6
+days(6)
 [/input]
 [output]
 Saturday
@@ -454,7 +326,7 @@ Saturday
 [/test]
 [test]
 [input]
-7
+days(7)
 [/input]
 [output]
 Sunday
@@ -462,7 +334,7 @@ Sunday
 [/test]
 [test]
 [input]
-8
+days(8)
 [/input]
 [output]
 Invalid day!
@@ -470,121 +342,7 @@ Invalid day!
 [/test]
 [test]
 [input]
-9
-[/input]
-[output]
-Invalid day!
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide]
-# Solution: Days of Week
-
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-8-Solution-Days-of-week-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[code-task title="Days of Week" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function days(input){
-  // Write your code here
-}
-```
-[/code-editor]
-[task-description]
-# Description
-
-Write a program which receives a number and prints out the corresponding name of the day of week. 
-
-If the number is NOT a valid day, print `Invalid day!`.
-
-# Example
-| **Input** | **Output** |
-| --- | --- |
-|3| Wednesday |
-|11| Invalid day! |
-
-[/task-description]
-[tests]
-[test open]
-[input]
-3
-[/input]
-[output]
-Wednesday
-[/output]
-[/test]
-[test open]
-[input]
-11
-[/input]
-[output]
-Invalid day!
-[/output]
-[/test]
-[test]
-[input]
-1
-[/input]
-[output]
-Monday
-[/output]
-[/test]
-[test]
-[input]
-2
-[/input]
-[output]
-Tuesday
-[/output]
-[/test]
-[test]
-[input]
-4
-[/input]
-[output]
-Thursday
-[/output]
-[/test]
-[test]
-[input]
-5
-[/input]
-[output]
-Friday
-[/output]
-[/test]
-[test]
-[input]
-6
-[/input]
-[output]
-Saturday
-[/output]
-[/test]
-[test]
-[input]
-7
-[/input]
-[output]
-Sunday
-[/output]
-[/test]
-[test]
-[input]
-8
-[/input]
-[output]
-Invalid day!
-[/output]
-[/test]
-[test]
-[input]
-9
+days(9)
 [/input]
 [output]
 Invalid day!
@@ -644,11 +402,11 @@ console.log(arr);
 [/slide]
 
 [slide hideTitle]
-# JS Arrays and Invalid Positions
+# JavaScript Arrays and Invalid Positions
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-12-JS-Arrays-and-invalid-positions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-If we attempt to assign a value to a non-existent index, JS will fill the missing elements with 'undefined' values and increase its size:
+If we attempt to assign a value to a non-existent index, JS will fill the missing elements with "**undefined**" values and increase its size:
 
 ``` js live
 let nums = [10, 20, 30];

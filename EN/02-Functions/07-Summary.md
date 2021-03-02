@@ -3,10 +3,10 @@
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-# In this lesson you learned:
+## In this lesson you learned:
 
 - Functions are often used to break large programs into simple pieces of code
-  - They consist of a declaration and a body
+  - they consist of a declaration and a body
   
 ```js
 function myFunction(){
@@ -37,7 +37,7 @@ myFunction('I love JavaScript!');
 ## In the next lesson, you will learn:
 
 - Basic operations over arrays
-  - Manipulating arrays
-  - Array iteration
-  - Mapping and sorting arrays
+  - manipulating arrays
+  - array iteration
+  - mapping and sorting arrays
 [/slide]

@@ -4,11 +4,11 @@
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-27-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-# In this lesson you learned:
+## In this lesson you learned:
 
 - Arrays are sequences of elements 
 
-    - Their elements are numbered from `0` to `length-1 `
+    - their elements are numbered from 0 to `length-1`
 
 ``` js live
 let numbers = [1, 2, 3, 4, 5];
@@ -27,7 +27,7 @@ let numbers = [1, 2, 3, 4, 5];
 let numbers = [1, 2, 3, 4, 5];
 ```
 
-- Elements can be iterated over with a standard loop or a `for-of` loop 
+- Elements can be iterated over with a standard loop or a "**for-of**" loop 
 
 ``` js live
 let numbers = [1, 2, 3, 4, 5];
@@ -41,14 +41,14 @@ for (const number of numbers) {
 
 - What is a Function?
 
-- Declaring and Invoking Functions
+- Declaring and invoking functions
 
-- Nested Functions
+- Nested functions
 
-- Value and Reference Types
+- Value and reference types
 
-- Arrow Functions
+- Arrow functions
 
-- Naming and Best Practices
+- Naming and best practices
 
 [/slide]

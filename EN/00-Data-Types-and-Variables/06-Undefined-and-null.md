@@ -40,12 +40,12 @@ console.log(car);
 
 For example, when we have a function that **returns an object**, or a function that needs to read something from the **database and return an object**.
 
-In case the function **does not find what it is looking for**, we tell it to return `null`, and then we can check if the function returns null. 
+In case the function **does not find what it is looking for**, we tell it to return "**null**", and then we can check if the function returns "**null**". 
 
 ``` js live
 let person = {
-  firstName: "John",
-  lastName: "Doe",
+  firstName: 'John',
+  lastName: 'Doe',
   age: 50
 };
 

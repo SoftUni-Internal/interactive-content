@@ -13,7 +13,7 @@ Values can be passed to functions and used within them.
 
 ``` js live
 function printStars(count) {
-  console.log("*".repeat(count));
+  console.log('*'.repeat(count));
 }
 
 printStars(4)
@@ -29,17 +29,14 @@ Data can be **passed to it** in the form of parameters.
 [slide hideTitle]
 # Why Use Functions?
 
-[vimeo-video]
-[stream language="EN" videoId="489373210/d53616bcb4" default /]
-[stream language="RO" videoId="489373210/d53616bcb4"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-5-why-use-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 The reasons for using functions are:
- - Splits large problems **into small pieces**
+ - Splitting large problems **into small pieces**
  - **Better organization** of the program code
- - Improves code **readiblity**
- - Improves code **understandability**
- - Improves code **maintainability**
- - Code **reusability** using existing functions multiple times
+ - Improving code **readablity**
+ - Making code **easier to understand**
+ - Improving the **maintainability** of your code
+ - Code **reusability** - using existing functions multiple times
 [/slide]
