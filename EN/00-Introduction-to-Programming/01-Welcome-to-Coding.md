@@ -56,7 +56,7 @@ The above program defines a function that holds a sequence of **3 commands** and
 Size = 5
 Area = 25
 ```
-We **will explain in detail how to write programs in JavaScript**, why we need to define a **function** and then call the function - a bit later. 
+We **will explain in detail how to write programs in JavaScript**, why we need to define a **function** and how to call the function. 
 
 For now, let us just say that the **JavaScript programming language** requires all the above code to execute a sequence of commands. 
 
