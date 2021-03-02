@@ -65,9 +65,9 @@ They are characterized by:
 
 * Value (stored information)
 
-Each of the variables in JavaScript has a name, a type, and a value. 
+Each variable in JavaScript has a name, a type, and a value. 
 
-Here is how we would declare a variable and assign it with a value at the same time:
+Here is how we can declare a variable and assign it with a value at the same time:
 
 ```js
 let name = "Bob";
