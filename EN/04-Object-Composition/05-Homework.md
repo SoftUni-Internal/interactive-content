@@ -22,9 +22,9 @@ The input will come in form of an **array of arrays** - every nested array will 
 
 The output must be an array of **rectangles** objects sorted by their **area** in **descending** order as a first criterion and by their **width** in **descending** order as a second criterion.  
 
-# Examples
+## Examples
 **Input**
-`[[10,5], [5,12]]`
+\[\[10,5\], \[5,12\]\]
 
 **Output**
 \[\{width:5, height:12, area:function(), compareTo:function(other)\},
@@ -32,7 +32,7 @@ The output must be an array of **rectangles** objects sorted by their **area** i
 
 
 **Input**
-`[[10,5], [3,20], [5,12]]`
+\[\[10,5\], \[3,20\], \[5,12\]\]
 
 **Output**
 \[\{width:5, height:12, area:function(), compareTo:function(other)\},
@@ -237,17 +237,17 @@ function listProcessor(input){
 Using a closure, create an inner object to process list commands. 
 
 The commands supported should be the following:
-- `add <string>` adds the following string in an inner collection.
-- `remove <string>` removes all occurrences of the supplied `<string>` from the inner collection.
-- `print` prints all elements of the inner collection joined by "**,**".
+- `add <string>` adds the following string in an inner collection
+- `remove <string>` removes all occurrences of the supplied `<string>` from the inner collection
+- `print` prints all elements of the inner collection joined by "**,**"
 
 The input will be in a form of an array of strings - each string represents a command to be executed from the command execution engine.
  
 
-# Example
+## Example
 | **Input** | **Output** |
 | --- | --- |
-|`['add hello', 'add again', 'remove hello', 'add again', 'print']`| again\, again |
+|\['add hello', 'add again', 'remove hello', 'add again', 'print'\]| again\, again |
 
 
 [/task-description]
@@ -343,15 +343,15 @@ You will receive an array and your goal is to create a new object with all the u
 You should print the newly created object.
  
 
-# Examples
+## Examples
 | **Input** | **Output** |
 | --- | --- |
-|`'[{"canMove": true},{"canMove":true, "doors": 4},{"capacity": 5}]'`| \{ canMove: true, doors: 4, capacity: 5 \} |
+|'\[\{"canMove": true\},\{"canMove":true, "doors": 4\},\{"capacity": 5\}\]'| \{ canMove: true, doors: 4, capacity: 5 \} |
 
 
 | **Input** | **Output** |
 | --- | --- |
-|`'[{"canFly": true},{"canMove":true, "doors": 4},{"capacity": 255},{"canFly":true, "canLand": true}]'`| \{ canFly: true, canMove: true, doors: 4, capacity: 255, canLand: true \} |
+|'\[\{"canFly": true\},\{"canMove":true, "doors": 4\},\{"capacity": 255\},\{"canFly":true, "canLand": true\}\]'| \{ canFly: true, canMove: true, doors: 4, capacity: 255, canLand: true \} |
 
 [/task-description]
 [code-io /]
@@ -411,19 +411,19 @@ Write a closure that can create and modify objects.
 All created objects should be kept and be accessible by name. 
 
 You should support the following functionality:
-- `create <name>` creates an object with the supplied `<name>`.
-- `create <name> inherits <parentName>` creates an object with the given `<name>`, which inherits from the parent object with the `<parentName>`.
-- `set <name> <key> <value>` sets the property with key equal to `<key>` to `<value>` in the object with the supplied `<name>`.
-- `print <name>` prints the object with the supplied `<name>` in the format `<key1>:<value1>,<key2>:<value2>…`, the printing should also print all inherited properties from parent objects. Inherited properties should come after own properties.
+- `create <name>` creates an object with the supplied `<name>`
+- `create <name> inherits <parentName>` creates an object with the given `<name>`, which inherits from the parent object with the `<parentName>`
+- `set <name> <key> <value>` sets the property with key equal to `<key>` to `<value>` in the object with the supplied `<name>`
+- `print <name>` prints the object with the supplied `<name>` in the format `<key1>:<value1>,<key2>:<value2>…`, the printing should also print all inherited properties from parent objects. Inherited properties should come after own properties
 
  The input will be in a form of an array of strings, each string represents a command to be executed from your closure.
 
  All commands will always be valid. There will be no nonexistent or incorrect input.
 
-# Example
+## Example
 | **Input** | **Output** |
 | --- | --- |
-|`['create c1', 'create c2 inherit c1', 'set c1 color red', 'set c2 model new', 'print c1', 'print c2']`| color\:red |
+|\['create c1', 'create c2 inherit c1', 'set c1 color red', 'set c2 model new', 'print c1', 'print c2'\]| color\:red |
 ||model\:new\, color\:red|
 
 
@@ -487,9 +487,9 @@ function sum(){
 Create a function that returns an object that can modify the DOM. 
 
 The returned object should support the following functionality\:
-- `init(selector1, selector2, resultSelector)` initializes the object to work with the elements corresponding to the supplied selectors.
-- `add()` adds the numerical value of the element corresponding to selector1 to the numerical value of the element corresponding to selector2 and then writes the result in the element corresponding to resultSelector.
-- `subtract()` subtracts the numerical value of the element corresponding to selector2 from the numerical value of the element corresponding to selector1 and then writes the result in the element corresponding to resultSelector.
+- `init(selector1, selector2, resultSelector)` initializes the object to work with the elements corresponding to the supplied selectors
+- `add()` adds the numerical value of the element corresponding to selector1 to the numerical value of the element corresponding to selector2 and then writes the result in the element corresponding to resultSelector
+- `subtract()` subtracts the numerical value of the element corresponding to selector2 from the numerical value of the element corresponding to selector1 and then writes the result in the element corresponding to resultSelector
 
 ## Input
 There will be no input your function must only provide an object.
@@ -687,10 +687,10 @@ Write a program that receives a worker object as a parameter and modifies its pr
 
 Workers have the following structure:
 
-`{ weight: Number,
+\{ weight: Number,
   experience: Number,
   levelOfHydrated: Number,
-  dizziness: Boolean }`
+  dizziness: Boolean \}
 
 Weight is expressed in kilograms, experience in years, and levelOfHydrated is in milliliters. 
 
@@ -707,41 +707,41 @@ Workers who do not have dizziness should not be modified in any way. Return them
 ## Examples
 
 **Input**
-`{ weight: 80,
+\{ weight: 80,
   experience: 1,
   levelOfHydrated: 0,
-  dizziness: true }`
+  dizziness: true \}
 
 **Output**
-`{ weight: 80,
+\{ weight: 80,
   experience: 1,
   levelOfHydrated: 8,
-  dizziness: false }`
+  dizziness: false \}
 
 **Input**
-`{ weight: 120,
+\{ weight: 120,
   experience: 20,
   levelOfHydrated: 200,
-  dizziness: true }`
+  dizziness: true \}
   
 **Output** 
-`{ weight: 120,
+\{ weight: 120,
   experience: 20,
   levelOfHydrated: 440,
-  dizziness: false }`
+  dizziness: false \}
 
 **Input**  
 
-`{ weight: 95,
+\{ weight: 95,
   experience: 3,
   levelOfHydrated: 0,
-  dizziness: false }`
+  dizziness: false \}
 
-**Output** 
-`{ weight: 95,
+**Output**
+\{ weight: 95,
   experience: 3,
   levelOfHydrated: 0,
-  dizziness: false }`
+  dizziness: false \}
 
 
 [/task-description]
@@ -879,34 +879,34 @@ The format will be as follows:
 # Examples
 
 **Input** 
-`{ model: 'VW Golf II',
+\{ model: 'VW Golf II',
   power: 90,
   color: 'blue',
   carriage: 'hatchback',
-  wheelsize: 14 }`
+  wheelsize: 14 \}
 
 **Output**
-  `{ model: 'VW Golf II',
-    engine: { power: 90,
-              volume: 1800 },
-    carriage: { type: 'hatchback',
-                color: 'blue' },
-    wheels: [13, 13, 13, 13] }`
+  \{ model: 'VW Golf II',
+    engine: \{ power: 90,
+              volume: 1800 \},
+    carriage: \{ type: 'hatchback',
+                color: 'blue' \},
+    wheels: \[13, 13, 13, 13\] \}
 
 **Input**
-`{ model: 'Opel Vectra',
+\{ model: 'Opel Vectra',
   power: 110,
   color: 'grey',
   carriage: 'coupe',
-  wheelsize: 17 }`
+  wheelsize: 17 \}
 
 **Output**
-`{ model: 'Opel Vectra',
-   engine: { power: 120,
-             volume: 2400 },
-   carriage: { type: 'coupe',
-               color: 'grey' },
-   wheels: [17, 17, 17, 17] }`
+\{ model: 'Opel Vectra',
+   engine: \{ power: 120,
+             volume: 2400 \},
+   carriage: \{ type: 'coupe',
+               color: 'grey' \},
+   wheels: \[17, 17, 17, 17\] \}
 
 
 [/task-description]

@@ -6,7 +6,7 @@
 
 ## In this lesson you learned:
 
-- Object composition: combines data and functions into "JavaScript" objects
+- Object composition: combines data and functions into JavaScript objects
 
 ```js
 let student = {

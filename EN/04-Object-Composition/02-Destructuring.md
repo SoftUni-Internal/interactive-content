@@ -10,7 +10,7 @@ Let us have a look at some examples:
 
 ```js live
 const department = {
-    name: "Engineering",
+    name: 'Engineering',
     data: { employeesCount: 20 }
     }
     const { data } = department;
@@ -72,7 +72,7 @@ Just like in the examples above, the new "**director**" object is referencing th
 
 ```js live
 const department = {
-    name: "Engineering",
+    name: 'Engineering',
     data: {
         director: {
             name: 'John',
@@ -84,7 +84,7 @@ const department = {
 }
 const {data: {director}} = department;
 console.log(director);
-director.name = "Peter";
+director.name = 'Peter';
 console.log(department);
 ```
 
