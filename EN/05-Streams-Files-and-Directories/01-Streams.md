@@ -6,9 +6,9 @@
 
 All of us have watched online videos on YouTube or another website.
 
-When you start watching a video, a small portion of the file is first loaded into your computer before the video can play. 
+When you hit the play button on a video, a small portion of the file gets loaded into your device's memory before the video can play. 
 
-There is no need to download the complete video before you start playing it and this is called **streaming**.
+There is no need to download the complete video before you start playing it, and this is called **streaming**.
 
 A stream can be defined as a **sequence of data**. 
 
