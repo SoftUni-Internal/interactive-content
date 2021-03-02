@@ -68,29 +68,29 @@ Make a private setter that performs data validation internally.
 import org.junit.Assert;
 import org.junit.Test;
 
-public class T01TestClassesExists \{
+public class T01TestClassesExists {
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
 
-    private static final String\[\] classNames = new String\[\] \{
+    private static final String[] classNames = new String[] {
             "Box"
-    \};
+    };
 
     @Test
-    public void test() \{
+    public void test() {
         assertExistingClasses(classNames);
-    \}
+    }
 
-    private void assertExistingClasses(String\[\] classNames) \{
-        for (String className : classNames) \{
+    private void assertExistingClasses(String[] classNames) {
+        for (String className : classNames) {
             assertClassExists(className);
-        \}
-    \}
+        }
+    }
 
-    private void assertClassExists(String className) \{
+    private void assertClassExists(String className) {
         Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
                 Classes.allClasses.containsKey(className));
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
@@ -106,41 +106,41 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class T02TestFieldsExists \{
+public class T02TestFieldsExists {
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
     private static final String FIELD_IS_MISSING_ERROR_MESSAGE = "Field '%s' is missing";
 
-    private static final String\[\] classNames = new String\[\]\{"Box"\};
-    private static final Map\<String, String\[\]\> allNeededFields =
-            new HashMap\<String, String\[\]\>() \{\{
-                put("Box", new String\[\]\{"length", "width", "height"\});
-            \}\};
+    private static final String[] classNames = new String[]{"Box"};
+    private static final Map<String, String[]> allNeededFields =
+            new HashMap<String, String[]>() {{
+                put("Box", new String[]{"length", "width", "height"});
+            }};
 
     @Test
-    public void test() \{
+    public void test() {
         assertHaveAllFields(classNames);
-    \}
+    }
 
-    private void assertHaveAllFields(String\[\] classNames) \{
-        for (String className : classNames) \{
+    private void assertHaveAllFields(String[] classNames) {
+        for (String className : classNames) {
             haveAllFields(className);
-        \}
-    \}
+        }
+    }
 
-    private void haveAllFields(String className) \{
+    private void haveAllFields(String className) {
         Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
                 Classes.allClasses.containsKey(className));
 
         Class cl = Classes.allClasses.get(className);
-        Field\[\] fields = cl.getDeclaredFields();
+        Field[] fields = cl.getDeclaredFields();
 
-        for (String field : allNeededFields.get(className)) \{
+        for (String field : allNeededFields.get(className)) {
             Assert.assertTrue(String.format(FIELD_IS_MISSING_ERROR_MESSAGE, field),
                     Arrays.stream(fields)
-                            .anyMatch(x -\> x.getName().equalsIgnoreCase(field)));
-        \}
-    \}
-\}
+                            .anyMatch(x -> x.getName().equalsIgnoreCase(field)));
+        }
+    }
+}
 [/input]
 [output]
 Test Passed!
@@ -154,46 +154,46 @@ import org.junit.Test;
 import java.lang.reflect.Constructor;
 import java.util.HashMap;
 
-public class T03TestConstructors \{
+public class T03TestConstructors {
 
     private static final String CONSTRUCTOR_NOT_PRESENT_ERROR_MESSAGE = "Constructor '%s' not present";
 
 
-    private static final String\[\] classNames = new String\[\]\{
+    private static final String[] classNames = new String[]{
             "Box"
-    \};
+    };
 
-    private static final HashMap\<String, Class\[\]\> constructorParameters = new HashMap\<String, Class\[\]\>() \{\{
-        put("Box", new Class\[\]\{double.class, double.class, double.class\});
+    private static final HashMap<String, Class[]> constructorParameters = new HashMap<String, Class[]>() {{
+        put("Box", new Class[]{double.class, double.class, double.class});
 
 
-    \}\};
+    }};
 
     @Test
-    public void test() throws NoSuchMethodException \{
+    public void test() throws NoSuchMethodException {
         assertConstructors(classNames);
-    \}
+    }
 
-    private void assertConstructors(String\[\] classNames) throws NoSuchMethodException \{
-        for (String className : classNames) \{
+    private void assertConstructors(String[] classNames) throws NoSuchMethodException {
+        for (String className : classNames) {
             assertConstructorExists(className);
-        \}
-    \}
+        }
+    }
 
-    private void assertConstructorExists(String className) throws NoSuchMethodException \{
+    private void assertConstructorExists(String className) throws NoSuchMethodException {
         Class cl = Classes.allClasses.get(className);
 
         Constructor constructor = null;
 
-        try \{
+        try {
             constructor = cl.getDeclaredConstructor(constructorParameters.get(className));
-        \} catch (Exception e) \{
+        } catch (Exception e) {
             constructor = null;
-        \}
+        }
         Assert.assertNotNull(String.format(CONSTRUCTOR_NOT_PRESENT_ERROR_MESSAGE, className), constructor);
 
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
@@ -208,43 +208,43 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 import java.util.stream.Stream;
 
-public class T04TestForNonPrivateFields \{
+public class T04TestForNonPrivateFields {
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
     private static final String HAS_NON_PRIVATE_FIELDS_ERROR_MESSAGE = "Class %s contains non private fields";
 
-    private static final String\[\] classNames = new String\[\]\{"Box"\};
+    private static final String[] classNames = new String[]{"Box"};
 
     @Test
-    public void test() \{
+    public void test() {
         assertPrivateFields(classNames);
-    \}
+    }
 
-    private void assertPrivateFields(String\[\] classNames) \{
-        for (String className : classNames) \{
+    private void assertPrivateFields(String[] classNames) {
+        for (String className : classNames) {
             assertHasNoPrivateFields(className);
-        \}
-    \}
+        }
+    }
 
-    private void assertHasNoPrivateFields(String className) \{
+    private void assertHasNoPrivateFields(String className) {
         Class cl = getClass(className);
-        Field\[\] fields = cl.getDeclaredFields();
+        Field[] fields = cl.getDeclaredFields();
         long nonPrivateFieldsCount = Stream.of(fields)
-                .filter(x -\> !Modifier.isPrivate(x.getModifiers()))
+                .filter(x -> !Modifier.isPrivate(x.getModifiers()))
                 .count();
 
         Assert.assertEquals(String.format(HAS_NON_PRIVATE_FIELDS_ERROR_MESSAGE, className)
                 , 0, nonPrivateFieldsCount);
 
-    \}
+    }
 
-    private Class getClass(String className) \{
+    private Class getClass(String className) {
         Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
                 Classes.allClasses.containsKey(className));
 
         return Classes.allClasses.get(className);
-    \}
+    }
 
-\}
+}
 [/input]
 [output]
 Test Passed!
@@ -259,78 +259,78 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
-public class T05TestAllMethodsExists \{
+public class T05TestAllMethodsExists {
 
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
     private static final String METHOD_RETURN_TYPE_ERROR = "Method '%s' in class '%s' should have return type '%s'";
 
-    private static final String\[\] classNames = new String\[\]\{
+    private static final String[] classNames = new String[]{
             "Box"
-    \};
+    };
 
 
-    private static final Map\<String, String\[\]\> methodsInClass =
-            new HashMap\<String, String\[\]\>() \{\{
-                put("Box", new String\[\]\{
+    private static final Map<String, String[]> methodsInClass =
+            new HashMap<String, String[]>() {{
+                put("Box", new String[]{
                         "calculateSurfaceArea",
                         "calculateLateralSurfaceArea",
                         "calculateVolume",
                         "setLength",
                         "setWidth",
                         "setHeight",
-                \});
-            \}\};
+                });
+            }};
 
-    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+    private static final HashMap<String, Class> methodReturnTypes = new HashMap<String, Class>() {{
         put("calculateSurfaceArea", double.class);
         put("calculateLateralSurfaceArea", double.class);
         put("calculateVolume", double.class);
         put("setLength", void.class);
         put("setWidth", void.class);
         put("setHeight", void.class);
-    \}\};
+    }};
 
-    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
-        put("calculateSurfaceArea", new Class\[\]\{\});
-        put("calculateLateralSurfaceArea", new Class\[\]\{\});
-        put("calculateVolume", new Class\[\]\{\});
-        put("setLength", new Class\[\]\{double.class\});
-        put("setWidth", new Class\[\]\{double.class\});
-        put("setHeight", new Class\[\]\{double.class\});
-    \}\};
+    private static final HashMap<String, Class[]> methodParameters = new HashMap<String, Class[]>() {{
+        put("calculateSurfaceArea", new Class[]{});
+        put("calculateLateralSurfaceArea", new Class[]{});
+        put("calculateVolume", new Class[]{});
+        put("setLength", new Class[]{double.class});
+        put("setWidth", new Class[]{double.class});
+        put("setHeight", new Class[]{double.class});
+    }};
 
     @Test
-    public void test() throws NoSuchMethodException \{
+    public void test() throws NoSuchMethodException {
         assertExistingMethods(classNames);
-    \}
+    }
 
-    private void assertExistingMethods(String\[\] classNames) throws NoSuchMethodException \{
-        for (String className : classNames) \{
+    private void assertExistingMethods(String[] classNames) throws NoSuchMethodException {
+        for (String className : classNames) {
 
             Class cl = getClass(className);
-            for (String methodName : methodsInClass.get(className)) \{
+            for (String methodName : methodsInClass.get(className)) {
                 Method method =
                         methodParameters.get(methodName).length == 0
                                 ? cl.getDeclaredMethod(methodName)
                                 : cl.getDeclaredMethod(methodName, methodParameters.get(methodName));
-                Class\<?\> returnType = method.getReturnType();
+                Class<?> returnType = method.getReturnType();
                 Assert.assertTrue(
                         String.format(METHOD_RETURN_TYPE_ERROR,
                                 methodName,
                                 className,
                                 methodReturnTypes.get(methodName)),
                         returnType.equals(methodReturnTypes.get(methodName)));
-            \}
+            }
 
-        \}
-    \}
+        }
+    }
 
-    private Class getClass(String className) \{
+    private Class getClass(String className) {
         Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
                 Classes.allClasses.containsKey(className));
         return Classes.allClasses.get(className);
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
@@ -346,7 +346,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 
-public class T06TestCalculateSurfaceArea \{
+public class T06TestCalculateSurfaceArea {
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
     private static final String METHOD_RETURN_TYPE_ERROR = "Method '%s' in class '%s' should have return type '%s'";
     private static final String WRONG_RESULT = "Wrong result from method %s";
@@ -357,33 +357,33 @@ public class T06TestCalculateSurfaceArea \{
     private static final String BOX = "Box";
 
 
-    private static final String\[\] methodNames = new String\[\]\{
+    private static final String[] methodNames = new String[]{
             "calculateSurfaceArea"
-    \};
+    };
 
-    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+    private static final HashMap<String, Class> methodReturnTypes = new HashMap<String, Class>() {{
         put("calculateSurfaceArea", double.class);
-    \}\};
+    }};
 
-    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
-        put("calculateSurfaceArea", new Class\[\]\{\});
-    \}\};
+    private static final HashMap<String, Class[]> methodParameters = new HashMap<String, Class[]>() {{
+        put("calculateSurfaceArea", new Class[]{});
+    }};
 
 
     @Test
-    public void test() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+    public void test() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
         assertExistingMethodsAndWorksCorrect(methodNames);
-    \}
+    }
 
-    private void assertExistingMethodsAndWorksCorrect(String\[\] methodNames) throws NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchFieldException \{
+    private void assertExistingMethodsAndWorksCorrect(String[] methodNames) throws NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchFieldException {
         Class cl = getClass(BOX);
-        for (String methodName : methodNames) \{
+        for (String methodName : methodNames) {
             Method method =
                     methodParameters.get(methodName).length == 0
                             ? cl.getDeclaredMethod(methodName)
                             : cl.getDeclaredMethod(methodName,
                             methodParameters.get(methodName));
-            Class\<?\> returnType = method.getReturnType();
+            Class<?> returnType = method.getReturnType();
             Assert.assertTrue(
                     String.format(METHOD_RETURN_TYPE_ERROR,
                             methodName,
@@ -393,15 +393,15 @@ public class T06TestCalculateSurfaceArea \{
 
             Assert.assertTrue(String.format(WRONG_RESULT, methodName),
                     assertCalculateSurfaceCorrect(method, cl));
-        \}
-    \}
+        }
+    }
 
-    private boolean assertCalculateSurfaceCorrect(Method method, Class cl) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, NoSuchFieldException \{
+    private boolean assertCalculateSurfaceCorrect(Method method, Class cl) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, NoSuchFieldException {
         return correctCalculateSurface(method, cl);
-    \}
+    }
 
 
-    private boolean correctCalculateSurface(Method calculateSurfaceArea, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+    private boolean correctCalculateSurface(Method calculateSurfaceArea, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
 
         Constructor constructor = cl.getDeclaredConstructor(
                 double.class, double.class, double.class);
@@ -415,14 +415,14 @@ public class T06TestCalculateSurfaceArea \{
                 (2 * BOX_LENGTH * BOX_HEIGHT) + (2 * BOX_WIDTH * BOX_HEIGHT);
 
         return expectedResult == result;
-    \}
+    }
 
-    private Class getClass(String className) \{
+    private Class getClass(String className) {
         Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
                 Classes.allClasses.containsKey(className));
         return Classes.allClasses.get(className);
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
@@ -438,7 +438,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 
-public class T07CalculateLateralSurfaceArea \{
+public class T07CalculateLateralSurfaceArea {
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
     private static final String METHOD_RETURN_TYPE_ERROR = "Method '%s' in class '%s' should have return type '%s'";
     private static final String WRONG_RESULT = "Wrong result from method %s";
@@ -449,33 +449,33 @@ public class T07CalculateLateralSurfaceArea \{
     private static final String BOX = "Box";
 
 
-    private static final String\[\] methodNames = new String\[\]\{
+    private static final String[] methodNames = new String[]{
             "calculateLateralSurfaceArea"
-    \};
+    };
 
-    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+    private static final HashMap<String, Class> methodReturnTypes = new HashMap<String, Class>() {{
         put("calculateLateralSurfaceArea", double.class);
-    \}\};
+    }};
 
-    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
-        put("calculateLateralSurfaceArea", new Class\[\]\{\});
-    \}\};
+    private static final HashMap<String, Class[]> methodParameters = new HashMap<String, Class[]>() {{
+        put("calculateLateralSurfaceArea", new Class[]{});
+    }};
 
 
     @Test
-    public void test() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+    public void test() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
         assertExistingMethodsAndWorksCorrect(methodNames);
-    \}
+    }
 
-    private void assertExistingMethodsAndWorksCorrect(String\[\] methodNames) throws NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchFieldException \{
+    private void assertExistingMethodsAndWorksCorrect(String[] methodNames) throws NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchFieldException {
         Class cl = getClass(BOX);
-        for (String methodName : methodNames) \{
+        for (String methodName : methodNames) {
             Method method =
                     methodParameters.get(methodName).length == 0
                             ? cl.getDeclaredMethod(methodName)
                             : cl.getDeclaredMethod(methodName,
                             methodParameters.get(methodName));
-            Class\<?\> returnType = method.getReturnType();
+            Class<?> returnType = method.getReturnType();
             Assert.assertTrue(
                     String.format(METHOD_RETURN_TYPE_ERROR,
                             methodName,
@@ -485,15 +485,15 @@ public class T07CalculateLateralSurfaceArea \{
 
             Assert.assertTrue(String.format(WRONG_RESULT, methodName),
                     assertCalculateSurfaceCorrect(method, cl));
-        \}
-    \}
+        }
+    }
 
-    private boolean assertCalculateSurfaceCorrect(Method method, Class cl) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, NoSuchFieldException \{
+    private boolean assertCalculateSurfaceCorrect(Method method, Class cl) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, NoSuchFieldException {
         return correctCalculateSurface(method, cl);
-    \}
+    }
 
 
-    private boolean correctCalculateSurface(Method calculateSurfaceArea, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+    private boolean correctCalculateSurface(Method calculateSurfaceArea, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
 
         Constructor constructor = cl.getDeclaredConstructor(
                 double.class, double.class, double.class);
@@ -507,14 +507,14 @@ public class T07CalculateLateralSurfaceArea \{
                 (2 * BOX_WIDTH * BOX_HEIGHT);
 
         return expectedResult == result;
-    \}
+    }
 
-    private Class getClass(String className) \{
+    private Class getClass(String className) {
         Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
                 Classes.allClasses.containsKey(className));
         return Classes.allClasses.get(className);
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
@@ -530,7 +530,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 
-public class T08TestCalculateVolume \{
+public class T08TestCalculateVolume {
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
     private static final String METHOD_RETURN_TYPE_ERROR = "Method '%s' in class '%s' should have return type '%s'";
     private static final String WRONG_RESULT = "Wrong result from method %s";
@@ -541,33 +541,33 @@ public class T08TestCalculateVolume \{
     private static final String BOX = "Box";
 
 
-    private static final String\[\] methodNames = new String\[\]\{
+    private static final String[] methodNames = new String[]{
             "calculateVolume"
-    \};
+    };
 
-    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+    private static final HashMap<String, Class> methodReturnTypes = new HashMap<String, Class>() {{
         put("calculateVolume", double.class);
-    \}\};
+    }};
 
-    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
-        put("calculateVolume", new Class\[\]\{\});
-    \}\};
+    private static final HashMap<String, Class[]> methodParameters = new HashMap<String, Class[]>() {{
+        put("calculateVolume", new Class[]{});
+    }};
 
 
     @Test
-    public void test() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+    public void test() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
         assertExistingMethodsAndWorksCorrect(methodNames);
-    \}
+    }
 
-    private void assertExistingMethodsAndWorksCorrect(String\[\] methodNames) throws NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchFieldException \{
+    private void assertExistingMethodsAndWorksCorrect(String[] methodNames) throws NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchFieldException {
         Class cl = getClass(BOX);
-        for (String methodName : methodNames) \{
+        for (String methodName : methodNames) {
             Method method =
                     methodParameters.get(methodName).length == 0
                             ? cl.getDeclaredMethod(methodName)
                             : cl.getDeclaredMethod(methodName,
                             methodParameters.get(methodName));
-            Class\<?\> returnType = method.getReturnType();
+            Class<?> returnType = method.getReturnType();
             Assert.assertTrue(
                     String.format(METHOD_RETURN_TYPE_ERROR,
                             methodName,
@@ -577,15 +577,15 @@ public class T08TestCalculateVolume \{
 
             Assert.assertTrue(String.format(WRONG_RESULT, methodName),
                     assertCalculateSurfaceCorrect(method, cl));
-        \}
-    \}
+        }
+    }
 
-    private boolean assertCalculateSurfaceCorrect(Method method, Class cl) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, NoSuchFieldException \{
+    private boolean assertCalculateSurfaceCorrect(Method method, Class cl) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, NoSuchFieldException {
         return correctCalculateSurface(method, cl);
-    \}
+    }
 
 
-    private boolean correctCalculateSurface(Method calculateSurfaceArea, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+    private boolean correctCalculateSurface(Method calculateSurfaceArea, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
 
         Constructor constructor = cl.getDeclaredConstructor(
                 double.class, double.class, double.class);
@@ -598,14 +598,14 @@ public class T08TestCalculateVolume \{
         double expectedResult = BOX_LENGTH * BOX_WIDTH * BOX_HEIGHT;
 
         return expectedResult == result;
-    \}
+    }
 
-    private Class getClass(String className) \{
+    private Class getClass(String className) {
         Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
                 Classes.allClasses.containsKey(className));
         return Classes.allClasses.get(className);
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
@@ -622,7 +622,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 
-public class T09TestSetLength \{
+public class T09TestSetLength {
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
     private static final String METHOD_RETURN_TYPE_ERROR = "Method '%s' in class '%s' should have return type '%s'";
     private static final String WRONG_FIELD_IS_SET = "Wrong %s is set";
@@ -634,32 +634,32 @@ public class T09TestSetLength \{
     private static final String BOX = "Box";
 
 
-    private static final String\[\] methodNames = new String\[\]\{
+    private static final String[] methodNames = new String[]{
             "setLength"
-    \};
+    };
 
-    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+    private static final HashMap<String, Class> methodReturnTypes = new HashMap<String, Class>() {{
         put("setLength", void.class);
-    \}\};
+    }};
 
-    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
-        put("setLength", new Class\[\]\{double.class\});
-    \}\};
+    private static final HashMap<String, Class[]> methodParameters = new HashMap<String, Class[]>() {{
+        put("setLength", new Class[]{double.class});
+    }};
 
 
     @Test
-    public void test() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+    public void test() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
         assertExistingMethodsAndWorksCorrect(methodNames);
-    \}
+    }
 
-    private void assertExistingMethodsAndWorksCorrect(String\[\] methodNames) throws NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchFieldException \{
+    private void assertExistingMethodsAndWorksCorrect(String[] methodNames) throws NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchFieldException {
         Class cl = getClass(BOX);
-        for (String methodName : methodNames) \{
+        for (String methodName : methodNames) {
             Method method =
                     methodParameters.get(methodName).length == 0
                             ? cl.getDeclaredMethod(methodName)
                             : cl.getDeclaredMethod(methodName, methodParameters.get(methodName));
-            Class\<?\> returnType = method.getReturnType();
+            Class<?> returnType = method.getReturnType();
             Assert.assertTrue(
                     String.format(METHOD_RETURN_TYPE_ERROR,
                             methodName,
@@ -669,15 +669,15 @@ public class T09TestSetLength \{
 
             Assert.assertTrue(String.format(WRONG_FIELD_IS_SET, FIELD_LENGTH_NAME),
                     assertSetLengthCorrect(method, cl));
-        \}
-    \}
+        }
+    }
 
-    private boolean assertSetLengthCorrect(Method method, Class cl) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, NoSuchFieldException \{
+    private boolean assertSetLengthCorrect(Method method, Class cl) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, NoSuchFieldException {
         return correctSetLength(method, cl)
                 && correctLengthWithZero(method, cl);
-    \}
+    }
 
-    private boolean correctLengthWithZero(Method setLength, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+    private boolean correctLengthWithZero(Method setLength, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
         Constructor constructor = cl.getDeclaredConstructor(
                 double.class, double.class, double.class);
         constructor.setAccessible(true);
@@ -686,16 +686,16 @@ public class T09TestSetLength \{
 
         setLength.setAccessible(true);
         boolean error = false;
-        try \{
+        try {
             setLength.invoke(box, 0);
-        \} catch (InvocationTargetException ite) \{
+        } catch (InvocationTargetException ite) {
             error = true;
-        \}
+        }
 
         return error;
-    \}
+    }
 
-    private boolean correctSetLength(Method setLength, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+    private boolean correctSetLength(Method setLength, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
 
         Constructor constructor = cl.getDeclaredConstructor(
                 double.class, double.class, double.class);
@@ -711,14 +711,14 @@ public class T09TestSetLength \{
         double length = (double) fieldLength.get(box);
 
         return BOX_LENGTH == length;
-    \}
+    }
 
-    private Class getClass(String className) \{
+    private Class getClass(String className) {
         Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
                 Classes.allClasses.containsKey(className));
         return Classes.allClasses.get(className);
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
@@ -735,7 +735,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 
-public class T10TestSetWidth \{
+public class T10TestSetWidth {
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
     private static final String METHOD_RETURN_TYPE_ERROR = "Method '%s' in class '%s' should have return type '%s'";
     private static final String WRONG_FIELD_IS_SET = "Wrong %s is set";
@@ -747,32 +747,32 @@ public class T10TestSetWidth \{
     private static final String BOX = "Box";
 
 
-    private static final String\[\] methodNames = new String\[\]\{
+    private static final String[] methodNames = new String[]{
             "setWidth"
-    \};
+    };
 
-    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+    private static final HashMap<String, Class> methodReturnTypes = new HashMap<String, Class>() {{
         put("setWidth", void.class);
-    \}\};
+    }};
 
-    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
-        put("setWidth", new Class\[\]\{double.class\});
-    \}\};
+    private static final HashMap<String, Class[]> methodParameters = new HashMap<String, Class[]>() {{
+        put("setWidth", new Class[]{double.class});
+    }};
 
 
     @Test
-    public void test() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+    public void test() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
         assertExistingMethodsAndWorksCorrect(methodNames);
-    \}
+    }
 
-    private void assertExistingMethodsAndWorksCorrect(String\[\] methodNames) throws NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchFieldException \{
+    private void assertExistingMethodsAndWorksCorrect(String[] methodNames) throws NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchFieldException {
         Class cl = getClass(BOX);
-        for (String methodName : methodNames) \{
+        for (String methodName : methodNames) {
             Method method =
                     methodParameters.get(methodName).length == 0
                             ? cl.getDeclaredMethod(methodName)
                             : cl.getDeclaredMethod(methodName, methodParameters.get(methodName));
-            Class\<?\> returnType = method.getReturnType();
+            Class<?> returnType = method.getReturnType();
             Assert.assertTrue(
                     String.format(METHOD_RETURN_TYPE_ERROR,
                             methodName,
@@ -782,15 +782,15 @@ public class T10TestSetWidth \{
 
             Assert.assertTrue(String.format(WRONG_FIELD_IS_SET, FIELD_WIDTH_NAME),
                     assertSetWidthCorrect(method, cl));
-        \}
-    \}
+        }
+    }
 
-    private boolean assertSetWidthCorrect(Method method, Class cl) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, NoSuchFieldException \{
+    private boolean assertSetWidthCorrect(Method method, Class cl) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, NoSuchFieldException {
         return correctSetWidth(method, cl)
                 && correctSetWidthZero(method, cl);
-    \}
+    }
 
-    private boolean correctSetWidthZero(Method setWidth, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+    private boolean correctSetWidthZero(Method setWidth, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
         Constructor constructor = cl.getDeclaredConstructor(
                 double.class, double.class, double.class);
         constructor.setAccessible(true);
@@ -799,16 +799,16 @@ public class T10TestSetWidth \{
 
         setWidth.setAccessible(true);
         boolean error = false;
-        try \{
+        try {
             setWidth.invoke(box, 0);
-        \} catch (InvocationTargetException ite) \{
+        } catch (InvocationTargetException ite) {
             error = true;
-        \}
+        }
 
         return error;
-    \}
+    }
 
-    private boolean correctSetWidth(Method setWidth, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+    private boolean correctSetWidth(Method setWidth, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
 
         Constructor constructor = cl.getDeclaredConstructor(
                 double.class, double.class, double.class);
@@ -824,14 +824,14 @@ public class T10TestSetWidth \{
         double width = (double) fieldWidth.get(box);
 
         return BOX_WIDTH == width;
-    \}
+    }
 
-    private Class getClass(String className) \{
+    private Class getClass(String className) {
         Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
                 Classes.allClasses.containsKey(className));
         return Classes.allClasses.get(className);
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
@@ -848,7 +848,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 
-public class T11TestSetHeight \{
+public class T11TestSetHeight {
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
     private static final String METHOD_RETURN_TYPE_ERROR = "Method '%s' in class '%s' should have return type '%s'";
     private static final String WRONG_FIELD_IS_SET = "Wrong %s is set";
@@ -860,32 +860,32 @@ public class T11TestSetHeight \{
     private static final String BOX = "Box";
 
 
-    private static final String\[\] methodNames = new String\[\]\{
+    private static final String[] methodNames = new String[]{
             "setHeight"
-    \};
+    };
 
-    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+    private static final HashMap<String, Class> methodReturnTypes = new HashMap<String, Class>() {{
         put("setHeight", void.class);
-    \}\};
+    }};
 
-    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
-        put("setHeight", new Class\[\]\{double.class\});
-    \}\};
+    private static final HashMap<String, Class[]> methodParameters = new HashMap<String, Class[]>() {{
+        put("setHeight", new Class[]{double.class});
+    }};
 
 
     @Test
-    public void test() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+    public void test() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
         assertExistingMethodsAndWorksCorrect(methodNames);
-    \}
+    }
 
-    private void assertExistingMethodsAndWorksCorrect(String\[\] methodNames) throws NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchFieldException \{
+    private void assertExistingMethodsAndWorksCorrect(String[] methodNames) throws NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchFieldException {
         Class cl = getClass(BOX);
-        for (String methodName : methodNames) \{
+        for (String methodName : methodNames) {
             Method method =
                     methodParameters.get(methodName).length == 0
                             ? cl.getDeclaredMethod(methodName)
                             : cl.getDeclaredMethod(methodName, methodParameters.get(methodName));
-            Class\<?\> returnType = method.getReturnType();
+            Class<?> returnType = method.getReturnType();
             Assert.assertTrue(
                     String.format(METHOD_RETURN_TYPE_ERROR,
                             methodName,
@@ -895,15 +895,15 @@ public class T11TestSetHeight \{
 
             Assert.assertTrue(String.format(WRONG_FIELD_IS_SET, FIELD_HEIGHT_NAME),
                     assertSetHeightCorrect(method, cl));
-        \}
-    \}
+        }
+    }
 
-    private boolean assertSetHeightCorrect(Method method, Class cl) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, NoSuchFieldException \{
+    private boolean assertSetHeightCorrect(Method method, Class cl) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, NoSuchFieldException {
         return correctSetHeight(method, cl)
                 && correctSetHeightWithZero(method, cl);
-    \}
+    }
 
-    private boolean correctSetHeightWithZero(Method setHeight, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+    private boolean correctSetHeightWithZero(Method setHeight, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
         Constructor constructor = cl.getDeclaredConstructor(
                 double.class, double.class, double.class);
         constructor.setAccessible(true);
@@ -912,16 +912,16 @@ public class T11TestSetHeight \{
 
         setHeight.setAccessible(true);
         boolean error = false;
-        try \{
+        try {
             setHeight.invoke(box, 0);
-        \} catch (InvocationTargetException ite) \{
+        } catch (InvocationTargetException ite) {
             error = true;
-        \}
+        }
 
         return error;
-    \}
+    }
 
-    private boolean correctSetHeight(Method setHeight, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+    private boolean correctSetHeight(Method setHeight, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
 
         Constructor constructor = cl.getDeclaredConstructor(
                 double.class, double.class, double.class);
@@ -937,14 +937,14 @@ public class T11TestSetHeight \{
         double height = (double) fieldHeight.get(box);
 
         return BOX_HEIGHT == height;
-    \}
+    }
 
-    private Class getClass(String className) \{
+    private Class getClass(String className) {
         Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
                 Classes.allClasses.containsKey(className));
         return Classes.allClasses.get(className);
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
