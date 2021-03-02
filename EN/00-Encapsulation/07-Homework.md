@@ -65,6 +65,7 @@ Make a private setter that performs data validation internally.
 [tests]
 [test open]
 [input]
+```
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -91,6 +92,7 @@ public class T01TestClassesExists {
                 Classes.allClasses.containsKey(className));
     }
 }
+```
 [/input]
 [output]
 Test Passed!
@@ -98,6 +100,7 @@ Test Passed!
 [/test]
 [test open]
 [input]
+```
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -141,6 +144,7 @@ public class T02TestFieldsExists {
         }
     }
 }
+```
 [/input]
 [output]
 Test Passed!
@@ -148,6 +152,7 @@ Test Passed!
 [/test]
 [test open]
 [input]
+```
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -194,6 +199,7 @@ public class T03TestConstructors {
 
     }
 }
+```
 [/input]
 [output]
 Test Passed!
@@ -201,6 +207,7 @@ Test Passed!
 [/test]
 [test open]
 [input]
+```
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -245,6 +252,7 @@ public class T04TestForNonPrivateFields {
     }
 
 }
+```
 [/input]
 [output]
 Test Passed!
@@ -252,6 +260,7 @@ Test Passed!
 [/test]
 [test]
 [input]
+```
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -331,6 +340,7 @@ public class T05TestAllMethodsExists {
         return Classes.allClasses.get(className);
     }
 }
+```
 [/input]
 [output]
 Test Passed!
@@ -338,6 +348,7 @@ Test Passed!
 [/test]
 [test]
 [input]
+```
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -423,6 +434,7 @@ public class T06TestCalculateSurfaceArea {
         return Classes.allClasses.get(className);
     }
 }
+```
 [/input]
 [output]
 Test Passed!
@@ -430,6 +442,7 @@ Test Passed!
 [/test]
 [test]
 [input]
+```
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -515,6 +528,7 @@ public class T07CalculateLateralSurfaceArea {
         return Classes.allClasses.get(className);
     }
 }
+```
 [/input]
 [output]
 Test Passed!
@@ -522,6 +536,7 @@ Test Passed!
 [/test]
 [test]
 [input]
+```
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -606,6 +621,7 @@ public class T08TestCalculateVolume {
         return Classes.allClasses.get(className);
     }
 }
+```
 [/input]
 [output]
 Test Passed!
@@ -613,6 +629,7 @@ Test Passed!
 [/test]
 [test]
 [input]
+```
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -719,6 +736,7 @@ public class T09TestSetLength {
         return Classes.allClasses.get(className);
     }
 }
+```
 [/input]
 [output]
 Test Passed!
@@ -726,6 +744,7 @@ Test Passed!
 [/test]
 [test]
 [input]
+```
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -832,6 +851,7 @@ public class T10TestSetWidth {
         return Classes.allClasses.get(className);
     }
 }
+```
 [/input]
 [output]
 Test Passed!
@@ -839,6 +859,7 @@ Test Passed!
 [/test]
 [test]
 [input]
+```
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -945,6 +966,7 @@ public class T11TestSetHeight {
         return Classes.allClasses.get(className);
     }
 }
+```
 [/input]
 [output]
 Test Passed!
