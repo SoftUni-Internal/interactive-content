@@ -48,9 +48,9 @@ It is used by about **10,7 million programmers around the world** (according to 
 
 JavaScript is one of the most **suitable** programming languages for **beginners**.
 
-It is also **easy to learn** JavaScript through the great set of video tutorials and exercises at SoftUni. 
+It is **easy to learn** JavaScript through the great set of video tutorials and exercises at SoftUni. 
 
-Supports **imperative**, **functional** and **object-oriented** programming with a clear and concise syntax.
+JavaScript supports **imperative**, **functional** and **object-oriented** programming with a clear and concise syntax.
 
 [/slide]
 
