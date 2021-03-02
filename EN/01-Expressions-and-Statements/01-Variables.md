@@ -49,7 +49,7 @@ Variables can be stored in the programs:
 
 * Dynamic memory: in the **heap**
 
-Basically **variables** provide means for:
+Basically, **variables** provide means for:
 
 * **Storing** data
 
