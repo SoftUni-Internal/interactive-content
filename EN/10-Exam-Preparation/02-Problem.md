@@ -1,17 +1,7 @@
 [slide]
 # Problem: Online Shop Business Logic
-[code-task title="Problem: Online Shop Business Logic" taskId="bd54267d-2cfb-4c40-960e-e800f8f7dfa3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
+[code-task title="Online Shop Business Logic" timeLimit=5000 taskId="java-oop-advanced-exam-prep-2-business-logic" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-upload allowedMemory="30" /]
 [task-description]
 # Task 2: Business Logic (150 Points)
 
@@ -21,15 +11,17 @@ The business logic of the program should be concentrated around several **comman
 
 **Note: The ControllerImpl class SHOULD NOT handle exceptions! The tests are designed to expect exceptions, not messages!**
 
-The first interface is the **Controller**. You must create a **ControllerImpl** class, which implements the interface and implements all of its methods. The constructor, of the **ControllerImpl**, does not take any arguments. The given methods should have the logic, described for each in the **Commands** section.
+The first interface is the **Controller**. You must create a **ControllerImpl** class, which implements the interface and all of its methods. The constructor, of the **ControllerImpl** class, does not take any arguments. The given methods should have the logic, described below.
 
 ## Commands
 
 There are several commands, which control the business logic of the application. They are stated below. 
 
-**NOTE:** For each command, except for "**addComputer**" and "**buyBest**", you must check if a computer, with that id, exists in the computers collection. If it doesn't, throw an **IllegalArgumentException** with the message "**Computer with this id does not exist.**".
+**NOTE:** For each command, except for "**addComputer**" and "**buyBest**", you should check if a computer, with that ID, exists in the computers collection. If it doesn't, throw an **IllegalArgumentException** with the message "**Computer with this id does not exist.**".
 
-### addComputer Command:
+### AddComputer Command:
+
+The method must be called **addComputer**.
 
 **Parameters:**
 
@@ -43,13 +35,15 @@ There are several commands, which control the business logic of the application.
 
 Creates a computer with the correct type and **adds it to the collection of computers**.
 
-If a computer, with the **same id**, already exists in **the computers collection**, throw an **IllegalArgumentException** with the message "**Computer with this id already exists.**"
+If a computer, with the **same ID**, already exists in **the computers collection**, throw an **IllegalArgumentException** with the message "**Computer with this id already exists.**"
 
 If the computer type is invalid, throw an **IllegalArgumentException** with the message "**Computer type is invalid.**"
 
-If it's successful, returns "Computer with id \{id\} added successfully.".
+If it's successful, returns **"Computer with id \{id\} added successfully."**.
 
 ### AddComponent Command:
+
+The method must be called **addComponent**.
 
 **Parameters:**
 
@@ -64,15 +58,17 @@ If it's successful, returns "Computer with id \{id\} added successfully.".
 
 **Functionality:**
 
-Creates a component with the correct type and **adds it to the computer with that id, then adds it to the collection of components in the controller**.
+Creates a component with the correct type and **adds it to the computer with that ID then adds it to the collection of components in the controller**.
 
-If a component, with the **same id**, already exists in **the components collection**, throws an **IllegalArgumentException** with the message "**Component with this id already exists.**"
+If a component, with the **same ID**, already exists in **the components collection**, throws an **IllegalArgumentException** with the message "**Component with this id already exists.**"
 
 If the component type is invalid, throws an **IllegalArgumentException** with the message "**Component type is invalid.**"
 
-If it's successful, returns "Component \{component type\} with id \{component id\} added successfully in computer with id \{computer id\}.".
+If it's successful, returns **"Component \{component type\} with id \{component ID\} added successfully in computer with id \{computer ID\}."**.
 
 ### RemoveComponent Command:
+
+The method must be called **removeComponent**.
 
 **Parameters:**
 
@@ -81,11 +77,13 @@ If it's successful, returns "Component \{component type\} with id \{component id
 
 **Functionality:**
 
-Removes a component, with the given **type from the computer with that id**, then removes component from the **collection of components**.
+Removes a component, with the given **type from the computer with that ID** and removes the component from the **collection of components**.
 
 If it's successful, it returns "Successfully removed \{component type\} with id \{component id\}.".
 
 ### AddPeripheral Command:
+
+The method must be called **addPeripheral**.
 
 **Parameters:**
 
@@ -110,6 +108,8 @@ If it's successful, it returns "Peripheral \{peripheral type\} with id \{periphe
 
 ### RemovePeripheral Command:
 
+The method must be called **removePeripheral**.
+
 **Parameters:**
 
 - **peripheralType – String**
@@ -119,9 +119,11 @@ If it's successful, it returns "Peripheral \{peripheral type\} with id \{periphe
 
 Removes a peripheral, with the given **type from the computer** with that **id**, then removes the peripheral from the **collection of peripherals**.
 
-If it's successful, it returns "Successfully removed \{peripheral type\} with id \{peripheral id\}.".
+If it's successful, it returns **"Successfully removed \{peripheral type\} with id \{peripheral id\}."**.
 
 ### BuyComputer Command:
+
+The method must be called **buyComputer**.
 
 **Parameters:**
 
@@ -129,11 +131,13 @@ If it's successful, it returns "Successfully removed \{peripheral type\} with id
 
 **Functionality:**
 
-Removes a computer, with the given **id**, from the **collection of computers**.
+Removes a computer, with the given **ID**, from the **collection of computers**.
 
-If it's successful, it returns **toString method on the removed computer**.
+If it's successful, it returns the **toString method on the removed computer**.
 
-### BuyBest Command:
+### BuyBestComputer Command:
+
+The method must be called **buyBestComputer**.
 
 **Parameters:**
 
@@ -143,11 +147,13 @@ If it's successful, it returns **toString method on the removed computer**.
 
 Removes the computer with the highest overall performance and with a price, less or equal to the budget, from the collection of computers.
 
-If there are not any computers in the collection or the budget is insufficient for any computer, throws an **IllegalArgumentException** with the message "Can't buy a computer with a budget of $\{budget\}."
+If there are not any computers in the collection or the budget is insufficient for any computer, throws an **IllegalArgumentException** with the message **"Can't buy a computer with a budget of $\{budget\}."**.
 
-If it's successful, it returns **toString method on the removed computer**.
+If it's successful, it returns the **toString method on the removed computer**.
 
 ### GetComputerData Command:
+
+The method must be called **getComputerData**.
 
 **Parameters:**
 
@@ -155,9 +161,11 @@ If it's successful, it returns **toString method on the removed computer**.
 
 **Functionality:**
 
-If it's successful, it returns **toString method on the computer with the given id**.
+If it's successful, returns the **toString method on the computer with the given id**.
 
 ### Close Command:
+
+The method must be called **close**.
 
 **Functionality:**
 
@@ -165,7 +173,7 @@ Ends the program.
 
 # Input / Output
 
-You are provided with one interface, which will help you with the correct execution process of your program. The interface is **Engine** and the class implementing this interface should read the input and when the program finishes, this class should print the output.
+You are provided with one interface, which will help you with the correct execution process of your program. The interface is called **Engine** and the class implementing this interface should read the input and when the program finishes, this class should print the output.
 
 You are given the **EngineImpl** class with written logic in it. In order the code to be **compiled**, some parts are **commented, don’t forget to comment them out**. The **try-catch block** is also **commented** in order for the program to **throw exceptions and for you to see them, comment it out** when you are **ready** with this too.
 
@@ -368,7 +376,7 @@ Print the output, from each command, when issued. If an exception is thrown, dur
 
 
 [/task-description]
-[code-io /]
+
 [tests]
 [test]
 [input]
@@ -3008,7 +3016,7 @@ public class T16ValidateBuyBestComputerValidMethod \{
     @Test
     public void addComputerShouldReturnCorrectResult() \{
         // Arrange
-        String methodName = "BuyBestComputer";
+        String methodName = "buyBestComputer";
         Object\[\] methodArgs = new Object\[\]\{1000\};
 
         String expectedMessage = "Overall Performance: 15.00. Price: 500.00 - DesktopComputer: Asus ROG (Id: 1)" + System.lineSeparator() +
@@ -3172,7 +3180,7 @@ public class T18ValidateBuyBestComputerInvalidMethod \{
     @Test
     public void validateMethodNameMethodTestExplanation() throws Throwable \{
         // Arrange
-        String methodName = "BuyBestComputer";
+        String methodName = "buyBestComputer";
         Object\[\] methodArgs = new Object\[\]\{499\};
 
         String expectedExceptionName = IllegalArgumentException.class.getSimpleName();
