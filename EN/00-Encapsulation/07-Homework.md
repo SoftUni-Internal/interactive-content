@@ -9,8 +9,6 @@
 ## Description
 You are given a geometric figure Box with fields length, width and height. 
 
-test12312321312
-
 Model a class Box that can be instantiated by the same three parameters. 
 
 Expose to the outside world only methods for its surface area, lateral surface area and its volume.
