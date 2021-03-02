@@ -148,9 +148,9 @@ Visual Studio Code has many extensions that can make our working flow more pleas
  
 We must enable this setting in the VS Code preferences tab and it will automatically format all the code.
 
-- **ESLint** - ESLint analyze our JavaScript code and helps us to fix the errors
+- **ESLint** - ESLint analyzes our JavaScript code and helps us to fix the errors
 
-- **JSHint** - JSHint enforce developers to use JavaScript coding convensions
+- **JSHint** - JSHint enforces developers to use JavaScript coding convensions
 
 It helps to detect potential bugs in JavaScript code.
 
