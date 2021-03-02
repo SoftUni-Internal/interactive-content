@@ -21,7 +21,7 @@ JavaScript supports **several different** kinds of statements and here are a few
 
 * **Jump** statements: transfer control
   
-Common actions include
+Common actions include:
 
 -  **Declaring** a variable
 
