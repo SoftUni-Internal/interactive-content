@@ -32,55 +32,57 @@ function adapter(input, code) {
 
 Your character starts with **100 health points** and **0 bitcoins.**
 
-You will be given a string, **representing different occurrences**, that you have to process.
+You will receive a string **representing different occurrences** that you have to process.
 
-Each command is **separated** by a vertical bar ("\|").
+The commands are **separated** by a vertical line ("\|").
 
 Every command will contain a **word** and a **number**, separated by a **space**.
 
-The command can be:
+The possible commands you can receive are:
 
-* Command "**potion**": 
+**"potion" command:**
 
-**Restores** the specified number of **health points** to your character.
+- **Restores** the specified number of **health points** to your character (your health points **cannot exceed 100**)
 
-The health points **cannot exceed 100.**
+- After successfully taking a potion, print:
 
-After successfully taking a potion, print:
+    - "**Healed:** \{**amount**\} **hp.**"
 
-"**Healed:** \{**amount**\} **hp.**"
+- And after that, print your current health:
 
-And after that, print your current health:
+    - "**Current health:** \{**health**\} **hp.**"
 
-"**Current health:** \{**health**\} **hp.**"
 
-* Command "**chest**": 
+**"chest" command:**
 
-You have found bitcoins, add this number to the value of your current bitcoins.
+- You have found bitcoins, add this number to the value of your current bitcoins and print:
+    - "**You found** \{**amount**\} **bitcoins.**"
 
-**Print**:
+**Fighting monsters**
 
-"**You found** \{**amount**\} **bitcoins.**"
+Any other command you get means that you are **facing a monster**. 
 
-* Any other input you get means that you are **facing a monster**. 
+The word at the **beginning of the command** will be the **monster's name** and the **number** \- the **damage that the monster deals to you**.
 
-The word at the **beginning of the command** will be the **monster name** and the **number** \- the **damage that the monster deals to you**.
+Examples: "**rat** \{**number**\}, **boss** \{**number**\}" (there could be other types of monsters).
 
-Examples: "**rat** \{**number**\}, **boss** \{**number**\}", there could be other types of monsters.
+You should **decrease your character's health** points by the **damage** that each monster deals to them.
 
-You should **decrease your champion's health** points by the **damage** that each monster deals to them.
+If you are **not dead** (health >= 0) you have defeated the monster, and you should print:
 
-* If you are **not dead** (health >= 0) you have defeated the monster, and you should print out:
+- "**You defeated a** \{**monster**\}."
 
-"**You defeated a** \{**monster**\}."
+If **you have died** the expected output is:  
 
-* If **you have died** the expected output is:  
+- "**You died! Killed by** \{**monster**\}."
 
-"**You died! Killed by** \{**monster**\}."
+**After this, your quest is over.**
 
-**And your quest is over.**
+Consider each pair of input to be a separate room in a dungeon that your character goes through. 
 
-Print the **number** of the **last room you have managed to reach**: 
+If you have the following input of `rat 10\|bat 20\|potion 10\|rat 10\`, this means you will attempt to battle your way through 4 different rooms.
+
+Once the game is over, print the **number** of the **last room you have managed to reach**: 
 
 "**Highest level reached:** \{**last room**\}."
 
@@ -93,7 +95,7 @@ If you **managed to go through all the rooms in the dungeon**, print on the next
 "**Health:** \{**health**\}"
 
 ## Input
-A **string**, separated by a vertical bar ("\|").
+A **string**, with commands separated by vertical lines ("\|").
 
 ## Output
 **Print** the corresponding **messages**, as shown in the description.
@@ -115,7 +117,7 @@ A **string**, separated by a vertical bar ("\|").
 
 | **Input** | **Output** |
 | --- | --- |
-|muOnline('cat 10\|potion 30\|orc 10\|chest 10\|snake 25\|chest 110')| You defeated a cat.')|
+|muOnline('cat 10\|potion 30\|orc 10\|chest 10\|snake 25\|chest 110')| You defeated a cat.|
 ||You healed for 10 hp.|
 ||Current health: 100 hp.|
 ||You defeated a orc.|
