@@ -83,7 +83,7 @@ That allows us to later implement the `compareTo()` method by **accepting a Stud
 
 # Comparator - Example
 
-In the following example, we compare **two Student objects** by student age.
+In the following example, we compare **two Student objects** by their age variable.
 
 Our AgeComparator class implements **Comparator** of type **Student**.
 
@@ -97,7 +97,7 @@ The implementation is simple, we return:
 
 - **Zero** when they are the same
 
-By using the Comparator, **we could create as many comparators as we need** and used them according to our situation.
+By using the Comparator, **we could create as many comparators as we need** and apply them in accordance to our use case.
 
 ```java
 public class AgeComparator implements Comparator<Student> {
@@ -114,20 +114,11 @@ public class AgeComparator implements Comparator<Student> {
 
 [slide hideTitle]
 # Problem with Solution: Comparable Book
-[code-task title="Comparable Book" taskId="oop-basics-java-iterators-and-comparators-lab-Comparable-Book" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Comparable Book" timeLimit=5000 taskId="oop-basics-java-iterators-and-comparators-lab-Comparable-Book" executionType="tests-execution" executionStrategy="java-project-tests"] 
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 Expand Book by implementing `Comparable<Book>`.
 
 Books have to be **compared by title**. 
@@ -151,7 +142,7 @@ Expand **Book** from UML diagram below:
 |+ compareTo(Book): int |
 
 
-## Example
+# Example
 Use the code below to test your **Book** class.
 
 ```java
@@ -173,7 +164,6 @@ public static void main(String[] args) {
 ```
 
 [/task-description]
-[code-io /]
 [tests]
 [test]
 [input]
@@ -334,21 +324,12 @@ Test Passed!
 
 [slide hideTitle]
 # Problem with Solution: Book Comparator
-[code-task title="Book Comparator" taskId="oop-basics-java-iterators-and-comparators-lab-Book-Comparator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Book Comparator" timeLimit=5000 taskId="oop-basics-java-iterators-and-comparators-lab-Book-Comparator" executionType="tests-execution" executionStrategy="java-project-tests"]
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
-Create a class **BookComparator** from UML diagram below: 
+# Description
+Create a class **BookComparator** from the UML diagram below: 
 
 | `<<Comparator<Book>>>` |
 | --- |
@@ -390,7 +371,6 @@ public static void main(String[] args) {
 
 
 [/task-description]
-[code-io /]
 [tests]
 [test]
 [input]
