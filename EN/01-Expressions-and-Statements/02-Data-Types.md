@@ -88,7 +88,7 @@ They are characterized by:
 
 In computer programming, a naming convention is a set of **rules** for choosing the name to be used for variables.
 
-In JS the convention for naming variables is **camelCase**. 
+In JS, the convention for naming variables is **camelCase**. 
 
 Other naming conventions are used in different languages such as **PascalCase** and  **Snake case**.
 
