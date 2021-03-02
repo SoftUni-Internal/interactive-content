@@ -1,7 +1,7 @@
 # Basic Streams in Java
 
 
-[slide]
+[slide hideTitle]
 
 # Byte Streams
 
@@ -11,15 +11,15 @@ Byte streams are the lowest level streams there are.
 
 Their main characteristic is that they can read or write only one byte at a time. 
 
-All of the byte streams descend from the InputStream and the OutputStream classes.
+All of the byte streams inherit from the InputStream and the OutputStream classes.
 
-Though there are many classes related to byte streams but the most frequently used classes are, **FileInputStream** and **FileOutputStream**.
+Although there are many classes related to byte streams, the most frequently used classes are **FileInputStream** and **FileOutputStream**.
 
-- Тhe **InputStream is a sequence of bytes finishing with -1**, which is a special character **marking the end of the file**.
+- Тhe **InputStream is a sequence of bytes ending with -1**, which is a special character **marking the end of the file**
 
 [image assetsSrc="streams-files-directories-example(3).png" /]
 
-- The **OutputStream consists only of bytes**, which will be written.
+- The **OutputStream consists only of bytes**, which will be written
 
 [image assetsSrc="streams-files-directories-example(4).png" /]
 
@@ -27,8 +27,8 @@ Though there are many classes related to byte streams but the most frequently us
 [/slide]
 
 [slide hideTitle]
-# Problem: Copy Bytes
-[code-task title="Copy Bytes" taskId="8b4cd32d-5ff6-4940-a8de-3845ace71241" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem with Solution: Copy Bytes
+[code-task title="Copy Bytes" taskId="java-advanced-streams-files-lab-copy-bytes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 
@@ -36,16 +36,14 @@ Though there are many classes related to byte streams but the most frequently us
 [/code-editor]
 [task-description]
 ## Description
-Read the file named "**input.txt**" and write to another file every character's **ASCII** representation.
-Write every space or new line as it is, e.g. as a space or a new line.
+Read the file named "**input.txt**" and write every character's **ASCII** representation to another file.
 
+Write every space or newline as is - do not convert them to their ASCII representation.
 ## Guidelines
 
-There is one zipped folder with resources for all exercises, that you need to use. 
+You should already have all the required resources downloaded from a previous task.
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Files-and-Streams-Lab-Resources.zip ) **that you will need.**
-
-For each exercise submit only the **output** of your program, **not the code**.
+Submit only the **output** of your program, **not the code**.
 
 ## Examples
 | **Input** | **Output** |
@@ -108,62 +106,25 @@ For each exercise submit only the **output** of your program, **not the code**.
 [/code-task]
 [/slide]
 
-[slide]
 
-# Solution: Copy Bytes
-
-```java
-
-String inputPath = "D:\\input.txt";
-String outputPath = "D:\\03.CopyBytesOutput.txt";
-
-
-try (InputStream in = new FileInputStream(inputPath); OutputStream out = new FileOutputStream(outputPath)) {
-
-    int oneByte = 0;
-    while ((oneByte = in.read()) >= 0) {
-
-        if (oneByte == 10 || oneByte == 32) {
-
-            out.write(oneByte);
-        } else {
-
-            String digits = String.valueOf(oneByte);
-            for (int i = 0; i < digits.length(); i++){
-
-                out.write(digits.charAt(i));
-            }
-        }
-
-    }
-} catch (IOException e) {
-    e.printStackTrace();
-}
-
-```
-
-[/slide]
-
-
-[slide]
+[slide hideTitle]
 
 # Character Streams
 
-**Java Character streams** are used to perform input and output for **16-bit unicode**.
+**Java Character streams** are used for performing input and output operations for **16-bit Unicode** data.
 
-Though there are many classes related to character streams but the most frequently used classes are, **FileReader** and **FileWriter**. 
+The most frequently used classes are, **FileReader** and **FileWriter**. 
 
-Though internally **FileReader uses FileInputStream** and **FileWriter uses FileOutputStream** but here the major difference is that FileReader **reads two bytes at a time** and FileWriter **writes two bytes at a time**.
+Although **FileReader uses FileInputStream** internally, and **FileWriter uses FileOutputStream** the difference is that FileReader **reads two bytes at a time** and FileWriter **writes two bytes at a time**.
 
-In short, the character streams can read and write from an input **character by character**.
+In short, character streams can read and write from an input **character by character**.
 
-- Let's see the following example:
 
-Input and output streams are created by using FileReader and FileWriter classes in a **try-with-resources** block.
+Input and output streams are created by using the FileReader and FileWriter classes in a **try-with-resources** block.
 
-After declaring and assigning the character variable, by using the `inputStream.read()` method, the while loop has been started until the last character has been read from the input file.
+After declaring and assigning the character variable, by using the `inputStream.read()` method, the while loop runs until the last character has been read from the input file.
 
-In the scope of the loop, the characters, from the input files, are written to the output file by using the `outputStream.write()` method.
+In the scope of the loop, the characters from the input files are written to the output file by using the `outputStream.write()` method.
 
 
 ```java
@@ -184,10 +145,12 @@ try (FileReader inputStream = new FileReader(input);
 }
 
 ```
+[/slide]
 
-## Combining Streams
+[slide hideTitle]
+# Combining Streams
 
-- Character streams are often "**wrappers**" for byte streams:
+Character streams are often "**wrappers**" for byte streams:
     - FileReader uses FileInputStream
     - FileWriter uses FileOutputStream
 
@@ -197,16 +160,18 @@ String path = "D:\\input.txt";
 Scanner reader = new Scanner(new FileInputStream(path));
 ```
 
-An example above is given with the `Scanner` class, which you have used for quite some time now.
+An example above is given with the `Scanner` class, which we have used for quite some time now.
 
-Here is used to wrap a `FileInputStream` and, by now, you have done that by wrapping `System.in`, wich is nothing more but a constant holding an `InputStream`.
+It is used here to wrap a `FileInputStream`.
+
+We have done that by wrapping `System.in` which is nothing more but a constant holding an `InputStream`.
 
 [/slide]
 
 
 [slide hideTitle]
-# Problem: Extract Integers
-[code-task title="Problem: Extract Integers" taskId="4c9d07b4-b3a3-4d4a-a023-9284400f7aca" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem with Solution: Extract Integers
+[code-task title="Extract Integers" taskId="java-advanced-streams-files-lab-exact-integers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 
@@ -214,17 +179,17 @@ Here is used to wrap a `FileInputStream` and, by now, you have done that by wrap
 [/code-editor]
 [task-description]
 ## Description
-Read the file provided, named "**input.txt**" and **extracts all integers that are not a part of a word** in a separate file.
+Read the "**input.txt**" file from the resources that you downloaded previously.
 
-A valid integer is **surrounded with white spaces**.
+**Extract all integers that are not a part of a word** in a separate file.
+
+All valid integers are **surrounded by white spaces**.
 
 ## Guidelines
 
-There is one zipped folder with resources for all exercises, that you need to use. 
+You should already have all the required resources downloaded from a previous task.
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Files-and-Streams-Lab-Resources.zip ) **that you will need.**
-
-For each exercise submit only the **output** of your program, **not the code**.
+Submit only the **output** of your program, **not the code**.
 
 ## Examples
 | **Input** | **Output** |
@@ -251,52 +216,29 @@ For each exercise submit only the **output** of your program, **not the code**.
 [/code-task]
 [/slide]
 
-[slide]
 
-# Solution: Extract Integers
-
-```java
-String inputPath = "D:\\input.txt";
-String outputPath = "D:\\04.ExtractIntegersOutput.txt";
-
-Scanner scanner = new Scanner(new FileInputStream(inputPath));
-
-PrintWriter out = new PrintWriter(new FileOutputStream(outputPath));
-
-while (scanner.hasNext()) {
-    if (scanner.hasNextInt()){
-        out.println(scanner.nextInt());
-    }
-
-    scanner.next();
-}
-out.close();
-
-```
-
-[/slide]
-
-[slide]
+[slide hideTitle]
 
 # Buffered Streams 
 
-The next layer of abstraction over the byte stream are Buffered Streams. 
+Buffered Streams are another layer of abstraction over the byte stream. 
 
 The Streams we have seen so far use unbuffered I/O. 
 
 This means each read or write request is handled directly by the underlying Operating System.
 
-This can make a program much less efficient, since each such request often triggers disk space, network activity, or some other operation that is relatively expensive.
+This can make a program much less efficient since each such request often uses disk space, network activity, or some other operation that is relatively expensive.
 
 To overcome this kind of overhead, the Java platform implements Buffered I/O Streams.
 
 Buffered input streams read data from a memory area known as a buffer.
 
-When the Buffered Stream is created, an internal buffer array is created.
+When the Buffered Stream is initialized, an internal buffer array is created.
 
-Buffered stream can wrap a character stream and give us access to very powerful methods. 
+A Buffered Stream can be used to wrap a character stream and give us access to very powerful methods. 
 
 There are four buffered stream classes used to wrap unbuffered streams:
+
  - **BufferedInputStream** and **BufferedOutputStream** create buffered **byte streams**
  - **BufferedReader** and **BufferedWriter** create buffered **character streams**.
 
@@ -313,8 +255,8 @@ This significantly will **boost the performance** of our applications.
 [/slide]
 
 [slide hideTitle]
-# Problem: Write Every Third Line
-[code-task title="Problem: Write Every Third Line" taskId="67e090f0-cf6b-497a-96c4-68ceb9c925fa" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem with Solution: Write Every Third Line
+[code-task title="Write Every Third Line" taskId="java-advanced-streams-files-lab-write-every-third-line" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 
@@ -322,17 +264,17 @@ This significantly will **boost the performance** of our applications.
 [/code-editor]
 [task-description]
 ## Description
-Read the file provided, named "**input.txt**" and write to another file all lines which number is **divisible by 3**.
+Read the "**input.txt**" file from the resources that you downloaded previously. 
+
+Write all lines which number is **divisible by 3** to another file.
 
 Line numbers **start from one**.
 
 ## Guidelines
 
-There is one zipped folder with resources for all exercises, that you need to use. 
+You should already have all the required resources downloaded from a previous task.
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Files-and-Streams-Lab-Resources.zip ) **that you will need.**
-
-For each exercise submit only the **output** of your program, **not the code**.
+Submit only the **output** of your program, **not the code**.
 
 
 ## Examples
@@ -371,47 +313,18 @@ too old. There is nothing more left for me to say. Read my heart and
 [/code-task]
 [/slide]
 
-[slide]
-
-# Solution: Write Every Third Line
-
-```java
-String inputPath = "D:\\input.txt";
-String outputPath = "D:\\05.WriteEveryThirdLineOutput.txt";
-
-try (BufferedReader in = new BufferedReader(new FileReader(inputPath));
-                     PrintWriter out = nePrintWriter(newFileWriter(outputPath))) {
-
-    int counter = 1;
-    String line = in.readLine();
-
-    while (line != null) {
-
-        if (counter % 3 == 0){
-        out.println(line);
-        counter++;
-        }
-        line = in.readLine();
-    }
-} catch (IOException e) {
-    e.printStackTrace();
-}
-```
-[/slide]
-
-[slide]
-
-# Command I/O Streams 
+[slide hideTitle]
+# Command Line I/O
 
 Java provides support for standard I/O where the user's program can take input from a keyboard and then produce an output on the computer screen.
 
-The Java platform supports three Standard Streams, attached with the console.
+The Java platform supports three Standard Streams, attached to the console.
 
 **Standard Input** − `System.in` is an **InputStream** which is typically connected to the keyboard input of console programs.
 
-**Standard Output** − `System.out` is often used from console-only programs as a way to display the result of their execution to the user.
+**Standard Output** − `System.out` is often used from console-only applications as a way to display the result of their execution to the user.
 
-**Standard Error** − `System.err` is used to output the error data produced by the user's program.
+**Standard Error** − `System.err` is used to output the error information.
 
 You might expect the Standard Streams to be character streams, but, for historical reasons, they are **byte streams**. 
 
@@ -423,7 +336,7 @@ By contrast, `System.in` is a byte stream with **no character stream features**.
 
 To use **Standard Input** as a character stream, wrap `System.in` in **InputStreamReader**.
 
-The following example is for Buffered input stream wich read content from the `System.in` (**Console**):
+The following example is for Buffered input stream which reads content from the `System.in` (**Console**):
 
 We create a **BufferedReader** stream, which wraps an **InputStreamReader**.
 
@@ -438,6 +351,5 @@ String hello = reader.readLine();
 System.out.println(hello);        
 
 ```
-
 [/slide]
 

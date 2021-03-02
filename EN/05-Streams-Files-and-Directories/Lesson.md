@@ -1,1 +1,1 @@
-# Streams, Files, Directories
+# Streams, Files, and Directories
