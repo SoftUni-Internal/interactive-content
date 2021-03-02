@@ -25,45 +25,43 @@ function adapter(input, code) {
 
 # Description
 
-Peter the archer is going to participate in a tournament.
+You will receive an array of integers separated by a "\|" representing the targets in an archery range.
 
-Your task is to help him calculate his points.
-
-You will receive an array of integers separated by "\|", representing the targets in an archery range.
-
-Next, until you receive the Game over command, you have to process commands issued by the Judge of the tournament:
+Until the "**Game over**" command is given, you will be receiving commands:
 
 * Command "**Shoot Left@**\{**start index**\}**@**\{**length**\}":
 
-Peter starts moving in the archery range to the left starting from "\{**start index**\}" and traveling through as many targets as stated in: "\{**length**\}".
+Peter starts moving in the archery range from the left starting from the "\{**start index**\}" and travels through as many targets as stated in: "\{**length**\}".
 
-He cannot go out of the archery range, so if he reaches its beginning, he should walk over to its end and continue walking to the left from there.
+He should ignore the command if the "\{**start index**\}" is out of the archery range.
+
+Walk over and continue walking to the left if he has reached the end of the archery range.
 
 * Command "**Shoot Right@**\{**start index**\}**@**\{**length**\}":
 
-Peter starts moving in the archery range to the right from "\{**start index**\}" going through "\{**length**\}" number of targets.
+Peter starts moving in the archery range from the right starting from the "\{**start index**\}" and travels through as many targets as stated in: "\{**length**\}".
 
-If the length he has to walk through goes beyond the end of the archery range, he has to walk over to its beginning and continue walking from there.
+He should ignore the command if the "\{**start index**\}" is out of the archery range.
+
+Walk over and continue walking to the left if he has reached the end of the archery range.
 
 * Command "**Reverse**":
 
-Reverse all targets in the range
+Reverse all targets in the range.
 
 * Command "**Game Over**":
 
-Print the current state of all targets in the range
+Print the current state of all of the targets in the range
 
-Each time Peter reaches a target:
+Each time Peter has reached a target:
 
-* He will shoot at it and get 5 points, decreasing the target's total point value by 5
+* He shoots it and gets 5 points, decreasing the target's total point value by 5
 
-* If the target is worth less than 5 points Peter takes all of its points and decreases the total points of the target to 0
-
-If the start index, specified in any command is out of range, to begin with, Peter will have to ignore this command.
+* If the target is worth less than 5 points, Peter should take all of its points and decreases the total points of the target to 0
 
 ## Input
 
-* You will receive integers separated by "\|" representing the targets in the archery range
+* You will receive integers separated by а "\|" representing the targets in the archery range
 
 * Until the "**Game over**" command is given you will receive commands in the format described above
 
