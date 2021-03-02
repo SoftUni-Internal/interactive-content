@@ -59,7 +59,7 @@ System.out.println(CoffeeSize.Small.getValue()); // 100
 [code-task title="Hotel Reservation" taskId="oop-basics-java-more-oop-concepts-lab-Hotel-Reservation" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-## Description
+# Description
 Create a class `PriceCalculator` that calculates the total price of a holiday, given the **price per day**, **number of days**, the **season** and a **discount type**.
 
 The **discount type** and **season** should be **enums.**
