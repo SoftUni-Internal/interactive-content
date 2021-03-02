@@ -106,7 +106,7 @@ If a unit is declared as private, the memory for it is declared as well when we 
 
 [slide hideTitle]
 # Problem with Solution: Single Inheritance
-[code-task title="Single Inheritance" timeLimit=5000 taskId="Java-OOP-Advanced-Inheritance-Single-Inheritance" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-task title="Single Inheritance" timeLimit=100000 taskId="Java-OOP-Advanced-Inheritance-Single-Inheritance" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
 [code-upload allowedMemory="30" /]
 
 [task-description]
