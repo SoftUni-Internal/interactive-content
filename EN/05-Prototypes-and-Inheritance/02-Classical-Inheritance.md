@@ -88,7 +88,7 @@ In the second, we print on the console the **Teacher** object with its parameter
 
 In JavaScript, classes are **based** on **prototype inheritance**.
 
-   - They **do** **not** introduce a new inheritance model to JavaScript. 
+- They **do** **not** introduce a new inheritance model to JavaScript
 
 Classes in JavaScript **delegate** **blueprints** rather than create **blueprints**.
 
@@ -126,9 +126,9 @@ Here is an example of using classes:
    Joe.speak();
 ```
 
-In this example, the **Man** class inherits the properties and the methods from the **Person** class.
+In this example, the "**Man**" class inherits the properties and the methods from the **Person** class.
 
-From **"Man"**, we can access the parameters and methods of the **Person** class. 
+From "**Man**", we can access the parameters and methods of the **Person** class. 
 
 In the `speak()` method, we use the **identify** method, inherited from the **Person** class.
 
@@ -171,9 +171,9 @@ In this example, we create a **Person** with a parameter **who**.
 
 We attach another function called **identify** to the **Person** prototype. 
 
-After that, we create the **Man** function and **inherited** the **Person** prototype from the `Man` function. 
+After that, we create the **Man** function and **inherited** the **Person** prototype from the "**Man**" function. 
 
-We attach a function called **speak** to the prototype of `Man`.
+We attach a function called **speak** to the prototype of "**Man**".
 
 In the end, the result is identical to the classes and inheritance example we saw before.
 

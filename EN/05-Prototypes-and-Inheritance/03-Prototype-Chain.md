@@ -73,6 +73,7 @@ Here is an example of how they looked before ES6:
 
    console.log(sum);
 ```
+
 In this example, we created a function called **Rectangle**, which accepts as parameters **width** and **heigh**.
 
 To the **Rectangle** function, we attach another one that will multiply the **width** and the **heigh**.
@@ -224,13 +225,13 @@ In the end, we print the result that the `speak()` method returns.
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-25-proto-vs-prototype-property-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-There is a difference between the `__proto__` and the **prototype property**. 
+There is a difference between the `__proto__` and the **prototype property**.
 
 The `__proto__`, is an **accessor** property of the object and **exposes** its **internal prototype**.
 
 We should not use `__proto__` directly in our code because it is **deprecated**.
 
-The **constructor function** sets the **Prototype** of an object. 
+The **constructor function** sets the **Prototype** of an object.
 
 Regular objects **do not** have the **prototype** property
 
@@ -246,7 +247,7 @@ The **prototype property** is a container which stores properties and methods th
 
 To mark properties as **private**, we need to **prefix** them with a **hashtag** `#`.
 
-For **getting** private properties, we use `object.prototype.getNameOfProperty`. 
+For **getting** private properties, we use `object.prototype.getNameOfProperty`.
 
 Here is an example of **prototype.get**:
 
@@ -285,8 +286,8 @@ And here is an example of **prototype.set**:
       return this.greet + ', I am ' + this.name + punctuation;
    };
 
-   let makeSentence = new MakeSentence("Hi");
-   console.log(makeSentence.concatenate("!"));
+   let makeSentence = new MakeSentence('Hi');
+   console.log(makeSentence.concatenate('!'));
 ```
 
 We create a function called **MakeSentence** with a parameter **greet**.

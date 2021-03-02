@@ -1438,6 +1438,15 @@ yes
 ```
    function computer() {
       // Write your code here
+      
+      return {
+         Battery,
+         Keyboard,
+         Monitor,
+         Computer,
+         Laptop,
+         Desktop
+      }
    }
 ```
 

@@ -8,19 +8,19 @@
 
 - What is Inheritance:
 
-    - **Inheritance** is the ability of a class to copy the functions of another class
+    - **inheritance** is the ability of a class to copy the functions of another class
 
     - the class that inherits is called **Child** and the inherited one is called **Parent**
 
 - Objects have an **internal property** used for implementing **prototype-based inheritance**
 
-    - **Methods** and **properties** are inherited by reference
+    - **methods** and **properties** are inherited by reference
 
 - The **properties** in the **prototype chain** form a **hierarchical chain**
 
 - There are two ways to create an object
 
-  - **Literal creation**
+  - **literal creation**
 
   ```js
     let Greet = {
