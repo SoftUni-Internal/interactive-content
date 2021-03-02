@@ -146,7 +146,7 @@ calculateSquareArea(5);
 # Using the Dollar String Interpolation
 We can format text in JS using also the following $ syntax. It provides simplified text formatting.
 
-Еnclosed by the back-tick (**\` \`**) character instead of double or single quotes
+Еnclosed by the back-tick (**\`  \`**) character instead of double or single quotes
 
 May contain placeholders which are indicated by the dollar sign and curly braces (`${expression}`):
 
