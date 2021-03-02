@@ -1,6 +1,6 @@
 # Expresii regulate
 
-[[slide hideTitle]]
+[slide hideTitle]
 # Ce sunt expresiile regulate?
 
 [vimeo-video]
@@ -18,9 +18,9 @@ Pentru a testa expresiile noastre regulate, putem utiliza următorul site:
 
 [Regex101](www.regex101.com)
 
-[/[slide hideTitle]]
+[/slide]
 
-[[slide hideTitle]]
+[slide hideTitle]
 # Tiparul expresiilor regulate
 
 [vimeo-video]
@@ -42,9 +42,9 @@ Un exemplu de model care corespunde unui nume:
 
 `[A-Z][a-z]+ [A-Z][a-z]+` face potrivire pe "John Smith".
 
-[/[slide hideTitle]]
+[/slide]
 
-[[slide hideTitle]]
+[slide hideTitle]
 # Clase de Caractere: Intervale
 
 
@@ -75,9 +75,9 @@ Exemplu:
 
 John are **8** ani.
 
-[/[slide hideTitle]]
+[/slide]
 
-[[slide hideTitle]]
+[slide hideTitle]
 # Clase Predefinite
 
 
@@ -99,14 +99,13 @@ John are **8** ani.
 
 Dacă doriți să citiți mai multe informații cu privire la expresiile regulate: [Expresii Regulate](https://www.regular-expressions.info/)
 
-[/[slide hideTitle]]
+[/slide]
 
-[[slide hideTitle]]
+[slide hideTitle]
 # Regex101: Demo
 
 [vimeo-video]
 [stream language="EN" videoId="489818656/8342484c8d" default /]
 [stream language="RO" videoId="489818656/8342484c8d"  /]
 [/video-vimeo]
-
-[/[slide hideTitle]]
+[/slide]
