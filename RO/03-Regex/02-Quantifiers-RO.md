@@ -36,7 +36,7 @@ Exemplu: `Hellooo World! Hello Again!`
 `o+` va genera o potrivire pentru "ooo", "o", "o".
 
 ```js live
-var str = "Hellooo World! Hello Again!";
+var str = 'Hellooo World! Hello Again!';
 var pattern = /o+/g;
 var result = str.match(pattern);
 
@@ -64,7 +64,7 @@ Exemplu: `1000, 10000 sau 100000`
 `\d{4}` corespunde lui "1000", "1000", "1000" drept rezultat.
 
 ```js live
-var str = "1000, 10000 or 100000";
+var str = '1000, 10000 or 100000';
 var pattern = /\d{4}/g;
 var result = str.match(pattern);
 
@@ -179,7 +179,7 @@ Scrieți o expresie regulată care extrage date dintr-un text
 Un format de dată validă: `dd-MMM-yyyy`
 Exemple: `12-Jun-1999, 3-Nov-1999`
 
-Exemplu: 
+**Exemplu:**
 
 M-am născut pe `30-Dec-1994`.
 Tatăl meu s-a născut pe `30-Dec-1994`.

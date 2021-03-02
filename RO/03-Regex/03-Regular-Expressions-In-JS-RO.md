@@ -38,14 +38,11 @@ console.log(containsValidDate);
 [/slide]
 
 [slide hideTitle]
-# Verificarea pentru potriviri 
+# Verificarea Pentru Potriviri 
 
-[vimeo-video]
-[stream language="EN" videoId="489818336/9c43130f55" default /]
-[stream language="RO" videoId="489818336/9c43130f55"  /]
-[/video-vimeo]
+Utilizați metoda `.match ()` pentru a verifica dacă există potriviri. 
 
-Utilizați metoda `.match ()` pentru a verifica dacă există potriviri. Returnează o matrice, care poate fi iterată cu ușurință după aceea.
+Returnează o matrice, care poate fi iterată cu ușurință după aceea.
 
 În exemplu, avem doar două potriviri.
 
@@ -60,12 +57,9 @@ console.log(matches[1]);
 [/slide]
 
 [slide hideTitle]
-# Folosirea metodei Exec() 
+# Folosirea Metodei "Exec()"
 
-[vimeo-video]
-[stream language="EN" videoId="489818381/0d46d8c337" default /]
-[stream language="RO" videoId="489818381/0d46d8c337"  /]
-[/video-vimeo]
+
 
 Dacă potrivirea reușește, metoda `.exec ()` returnează o matrice cu proprietăți suplimentare \: "index" și "input".
 
@@ -166,7 +160,7 @@ function adapter(input, code) {
 
 # Descriere
 
-Scrieți o funcție „JavaScript” pentru a se potrivi cu numele complete dintr-o listă de nume și imprimați-o pe consolă.
+Scrieți o funcție JavaScript pentru a se potrivi cu numele complete dintr-o listă de nume și imprimați-o pe consolă.
 
 Mai întâi, scrieți o expresie regulată pentru a se potrivi cu un nume complet valid, în conformitate cu aceste condiții:
 

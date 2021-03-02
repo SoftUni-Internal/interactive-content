@@ -540,7 +540,7 @@ Când primiți "**end of shift**" imprimați suma totală de bani pentru zi, rot
 
 ## Example One
 
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | income(['\%George\%\<Croissant\>\|2\|10.3\$', '\%Peter\%\<Gum\>\|1\|1.3\$', '\%Maria\%\<Cola\>\|1\|2.4\$', 'end of shift']) | George\: Croissant \- 20\.60 |
 | | Peter\: Gum \- 1\.30 |
@@ -549,7 +549,7 @@ Când primiți "**end of shift**" imprimați suma totală de bani pentru zi, rot
 
 ## Example Two
 
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | income(['\%InvalidName\%\<Croissant\>\|2\|10.3\$', '\%Peter\%\<Gum\>1.3\$', '\%Maria\%\<Cola\>\|1\|2.4', '\%Valid\%\<Valid\>valid\|10\|valid20\$', 'end of shift']) | Valid\: Valid \- 200\.00 |
 | | Total income\: 200\.00 |
