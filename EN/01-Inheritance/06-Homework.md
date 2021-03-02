@@ -2,18 +2,9 @@
 
 [slide hideTitle]
 # Problem: Person
-[code-task title="Problem: Person" taskId="6149ff73-1837-40fc-96c1-08df5397cd19" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Person" timeLimit=5000 taskId="Java-OOP-Advanced-Inheritance-Person" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 You are asked to model an application for storing data about people. 
@@ -66,7 +57,6 @@ public class Main {
 | 10 | 10 |
 
 [/task-description]
-[code-io /]
 [tests]
 [test open]
 [input]
@@ -682,17 +672,9 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: Zoo
-[code-task title="Problem: Zoo" taskId="5fec48b3-4642-41b4-8b75-da5b028dd713" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Zoo" timeLimit=5000 taskId="Java-OOP-Advanced-Inheritance-Zoo" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
@@ -715,7 +697,6 @@ Zip your package and upload it in Judge.
 You need a public class Main.
 
 [/task-description]
-[code-io /]
 [tests]
 [test open]
 [input]
@@ -874,18 +855,9 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: Players and Monsters
-[code-task title="Problem: Players and Monsters" taskId="172ea159-e00f-4fc5-9694-1f80211464b8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Players and Monsters" taskId="Java-OOP-Advanced-Inheritance-Players-and-Monsters" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 Your task is to create the following game hierarchy: 
@@ -916,7 +888,6 @@ public String toString() {
 You need a public class **Main**. Create a package **hero**.
 
 [/task-description]
-[code-io /]
 [tests]
 [test open]
 [input]

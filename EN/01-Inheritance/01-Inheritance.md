@@ -284,7 +284,7 @@ public class T00_TestMethods \{
 
         for (Method method : methodsWithGivenName) \{
             String parameterTypes = arrayToString(method.getParameterTypes());
-            sb.append("\{ " + parameterTypes + " \} ");
+            sb.append("{ " + parameterTypes + " } ");
         \}
 
         return sb.toString().trim();
@@ -532,7 +532,7 @@ public class T03_TestMethods \{
 
         for (Method method : methodsWithGivenName) \{
             String parameterTypes = arrayToString(method.getParameterTypes());
-            sb.append("\{ " + parameterTypes + " \} ");
+            sb.append("{ " + parameterTypes + " } ");
         \}
 
         return sb.toString().trim();
