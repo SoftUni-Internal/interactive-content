@@ -52,7 +52,7 @@ const value1 = 900723149151234998n; // we use BigInt if we need to represent big
 
 Everything else is an **object** type.
 
-U will cover **object** types later.
+You will cover **object** types in another lesson.
 [/slide]
 
 [slide hideTitle]
