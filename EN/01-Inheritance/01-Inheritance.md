@@ -135,17 +135,17 @@ import java.lang.reflect.Method;
 import java.util.Optional;
 import java.util.stream.Stream;
 
-public class TestAnimal {
+public class TestAnimal \{
     @Test
-    public void testAnimalClassAndMethod() {
+    public void testAnimalClassAndMethod() \{
         Assert.assertTrue(Classes.allClasses.containsKey("Animal"));
         Class animal = Classes.allClasses.get("Animal");
-        Method[] methods = animal.getDeclaredMethods();
-        Optional\<Method\> eatMethod = Stream.of(methods).filter(m -> m.getName().equals("eat")).findFirst();
+        Method\[\] methods = animal.getDeclaredMethods();
+        Optional\<Method\> eatMethod = Stream.of(methods).filter(m -\> m.getName().equals("eat")).findFirst();
         Assert.assertTrue("Method 'eat' not found", eatMethod.isPresent());
         Assert.assertTrue("Method 'eat' has incorrect return type", eatMethod.get().getReturnType().equals(Void.TYPE));
-    }
-}
+    \}
+\}
 [/input]
 [output]
 Test Passed!
@@ -160,17 +160,17 @@ import java.lang.reflect.Method;
 import java.util.Optional;
 import java.util.stream.Stream;
 
-public class TestDog {
+public class TestDog \{
     @Test
-    public void testDogClassAndMethod() {
+    public void testDogClassAndMethod() \{
         Assert.assertTrue(Classes.allClasses.containsKey("Dog"));
         Class dog = Classes.allClasses.get("Dog");
-        Method[] methods = dog.getDeclaredMethods();
-        Optional\<Method\> eatMethod = Stream.of(methods).filter(m -> m.getName().equals("bark")).findFirst();
+        Method\[\] methods = dog.getDeclaredMethods();
+        Optional\<Method\> eatMethod = Stream.of(methods).filter(m -\> m.getName().equals("bark")).findFirst();
         Assert.assertTrue("Method 'bark' not found", eatMethod.isPresent());
         Assert.assertTrue("Method 'bark' has incorrect return type", eatMethod.get().getReturnType().equals(Void.TYPE));
-    }
-}
+    \}
+\}
 [/input]
 [output]
 Test Passed!
@@ -181,15 +181,15 @@ Test Passed!
 import org.junit.Assert;
 import org.junit.Test;
 
-public class TestSuperClass {
+public class TestSuperClass \{
     @Test
-    public void testDogParent() {
+    public void testDogParent() \{
         Assert.assertTrue(Classes.allClasses.containsKey("Dog"));
         Class dog = Classes.allClasses.get("Dog");
         Class animal = dog.getSuperclass();
         Assert.assertTrue("Class 'Dog' should inherit from class 'Animal'", animal.getSimpleName().equals("Animal"));
-    }
-}
+    \}
+\}
 [/input]
 [output]
 Test Passed!
