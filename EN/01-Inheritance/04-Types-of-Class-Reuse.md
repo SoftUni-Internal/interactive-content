@@ -74,18 +74,9 @@ class Laptop {
 
 [slide hideTitle]
 # Problem with Solution: Stack of Strings
-[code-task title="Stack of Strings" taskId="Java-OOP-Advanced-Inheritance-Stack-Of-Strings" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Stack of Strings" timeLimit=5000 taskId="Java-OOP-Advanced-Inheritance-Stack-Of-Strings" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 Create a class **Stack** which can store only strings and has the following functionality:
@@ -99,7 +90,6 @@ Create a class **Stack** which can store only strings and has the following func
 Use composition/delegation in order to have a field in which to store the stack's data
 
 [/task-description]
-[code-io /]
 [tests]
 [test]
 [input]

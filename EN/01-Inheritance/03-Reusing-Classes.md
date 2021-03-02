@@ -172,18 +172,9 @@ public class MyArrayList<E> extends ArrayList<E>{
 
 [slide hideTitle]
 # Problem with Solution: Random Array List
-[code-task title="Random Array List" taskId="Java-OOP-Advanced-Inheritance-Random-Array-List" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Random Array List" timeLimit=5000 taskId="Java-OOP-Advanced-Inheritance-Random-Array-List" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 
@@ -195,7 +186,6 @@ Add additional function that **returns** and **removes** a random element from t
 
 
 [/task-description]
-[code-io /]
 [tests]
 [test]
 [input]

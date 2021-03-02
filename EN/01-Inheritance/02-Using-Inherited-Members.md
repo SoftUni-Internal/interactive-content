@@ -155,18 +155,9 @@ class Employee extends Person {
 
 [slide hideTitle]
 # Problem with Solution: Multiple Inheritance
-[code-task title="Multiple Inheritance" taskId="Java-OOP-Advanced-Inheritance-Multiple-Inheritance" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Multiple Inheritance" timeLimit=5000 taskId="Java-OOP-Advanced-Inheritance-Multiple-Inheritance" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 Create three classes named **Animal, Dog** and **Puppy**. 
@@ -182,7 +173,6 @@ Puppy with a single public method weep() that prints: **"weeping…"**.
 [image assetsSrc="inheritance-example(10).png" /]
 
 [/task-description]
-[code-io /]
 [tests]
 [test]
 [input]
@@ -241,18 +231,9 @@ Test Passed!
 
 [slide hideTitle]
 # Problem with Solution: Hierarchical Inheritance
-[code-task title="Hierarchical Inheritance" taskId="Java-OOP-Advanced-Inheritance-Hierarchical-Inheritance" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Hierarchical Inheritance" timeLimit=5000 taskId="Java-OOP-Advanced-Inheritance-Hierarchical-Inheritance" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 Create three classes named **Animal**, **Dog** and **Cat**. 
@@ -268,7 +249,6 @@ Create three classes named **Animal**, **Dog** and **Cat**.
 [image assetsSrc="inheritance-example(11).png" /]
 
 [/task-description]
-[code-io /]
 [tests]
 [test]
 [input]

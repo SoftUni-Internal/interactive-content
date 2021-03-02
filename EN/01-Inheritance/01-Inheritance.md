@@ -106,18 +106,9 @@ If a unit is declared as private, the memory for it is declared as well when we 
 
 [slide hideTitle]
 # Problem with Solution: Single Inheritance
-[code-task title="Single Inheritance" taskId="Java-OOP-Advanced-Inheritance-Single-Inheritance" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Single Inheritance" timeLimit=5000 taskId="Java-OOP-Advanced-Inheritance-Single-Inheritance" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 Create two classes named **Animal** and **Dog**.
@@ -134,7 +125,6 @@ Create two classes named **Animal** and **Dog**.
 Use the extends keyword to build a hierarchy
 
 [/task-description]
-[code-io /]
 [tests]
 [test open]
 [input]
