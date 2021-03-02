@@ -9,7 +9,7 @@ The `if` construction may also contain an `else` clause to give a specific actio
 
 Built this way, **the conditional statement** is called `if-else` and its behavior is as follows: 
 * If the result of the condition is positive (`true`) – we perform some actions
-* When it is negative (`false`) – others. 
+* When it is negative (`false`) – other. 
 [image assetsSrc="02-usecase-if-else-statement.png" /]
 
 The format of the construction is:
