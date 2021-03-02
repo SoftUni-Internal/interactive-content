@@ -21,19 +21,19 @@ if (condition) {
 }
 ```
 
-The condition represents an expression that is considered to be either truthy or falsy.
+The condition represents an expression that is considered to be either `truthy` or `falsy`.
 
 Because a condition can’t be simultaneously `true` and `false`, the `if`-statement and the `else`-statement of an `if-else` statement can **never both run**. 
 
 If the condition in the `if`-statement returns `true`, we enter the condition body of the `if`-statement.
 
-If the condition in the `if`-statement returns `false`, we will enter the construction body of the `else`-statement and the code inside it executes.
+If the condition in the `if`-statement returns `false`, we will enter the construction body of the `else`-statement and the code inside it, executes.
 
-Both the if-statement and the else-statement can consist of a single statement or multiple statements that are enclosed in braces `{ }`. 
+Both the `if`-statement and the `else`-statement can consist of a single statement or multiple statements that are enclosed in braces `{ }`. 
 
 For a single statement, the braces are optional but recommended.
 
-The statement or statements in the if-statement and the else-statement can be of any kind, including another `if`-statement nested inside the original `if`- statement.
+The statement or statements in the `if`-statement and the `else`-statement can be of any kind, including another `if`-statement nested inside the original `if`- statement.
 
 ## Example: Weather
 This is an extended version of the example from the previous slide.
