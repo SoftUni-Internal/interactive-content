@@ -24,7 +24,7 @@ Together, all compiled into machine code fragments represent the program in a wa
 
 ## Interpreters 
 
-The interpreter is a program for executing programs`. 
+The interpreter is a program for executing programs. 
 
 It **executes the commands** in the program one after another, as it can process not only a single command or a sequence of commands, but also **other language constructions.** 
 
