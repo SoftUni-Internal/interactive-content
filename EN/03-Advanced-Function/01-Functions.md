@@ -15,14 +15,14 @@ This means that just like primitive values and objects, functions can be:
 
 ```js live
 function sayHello() {
-  return "Hello, ";
+  return 'Hello, ';
 }
 
 function greet(helloFunction, name) {
   return helloFunction() + name;
 }
 
-console.log(greet(sayHello, "Peter"));
+console.log(greet(sayHello, 'Peter'));
 ```
 
 In the above example `helloFunction` acts as a placeholder for the `sayHello()` function.
@@ -47,7 +47,7 @@ Hence, they can be returned by another function:
 ```js live
 function helloWorld() {
   return function () {
-    console.log("Hello, world!");
+    console.log('Hello, world!');
   };
 }
 
@@ -71,7 +71,7 @@ Here is a higher-order function in action:
 ```js live
 const sayHello = function () {
   return function () {
-    console.log("Hello!");
+    console.log('Hello!');
   };
 };
 
@@ -208,7 +208,6 @@ No matter how many times you run the function with the **same input**, it will *
 # Referential Transparency
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-12-referencial-transparency-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
 
 A **referentially transparent** function call can be replaced with its **return value** and **not affect** the rest of the program.
 

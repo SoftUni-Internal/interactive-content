@@ -23,7 +23,7 @@ function greet(sayHello, name) {
 ```
 
 - **Higher-Order Functions**:
-  - Take other **functions** as an argument or **return** a function as a result
+  - take other **functions** as an argument or **return** a function as a result
 
 ```js
 const sayHello = function () {
@@ -38,7 +38,7 @@ greet(); // Output: "Hello"
 
 
 - **IIFE** is short for Immediately-Invoked Function Expression:
-  - It **encapsulates code and data** \(state\)
+  - it **encapsulates code and data** \(state\)
 
 ```js
 (function () {

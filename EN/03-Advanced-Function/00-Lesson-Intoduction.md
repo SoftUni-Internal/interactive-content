@@ -22,8 +22,8 @@
 
 **5. Error Handling**
 - How to handle unexpected results:
-   - Error handling
-   - Types of errors
-   - Throwing exceptions
+   - error handling
+   - types of errors
+   - throwing exceptions
 
 [/slide]

@@ -432,8 +432,8 @@ The output should be the **sorted array**.
 
 |**Input**|**Output**|
 |---|---|
-|`[14, 7, 17, 6, 8], 'asc'`|`[6, 7, 8, 14, 17]`|
-|`[14, 7, 17, 6, 8], 'asc'`|`[6, 7, 8, 14, 17]`|
+|`[14, 7, 17, 6, 8], 'asc'`|[6, 7, 8, 14, 17]|
+|`[14, 7, 17, 6, 8], 'asc'`|[6, 7, 8, 14, 17]|
 
 [/task-description]
 [code-io /]
@@ -766,7 +766,9 @@ The patient chart object must contain the following properties:
   
 - **personalInfo** which is an object holding the patient's age, weight, and height as properties;
   
-- **BMI** \- body mass index. You can find information about how to calculate it [here](https://en.wikipedia.org/wiki/Body_mass_index);
+- **BMI** \- body mass index. 
+
+You can find information about how to calculate it [here](https://en.wikipedia.org/wiki/Body_mass_index);
   
 - **status**
   
@@ -803,7 +805,7 @@ Look at the sample output for more information.
 
 **Input**
 
-`“Peter”, 29, 75, 182`
+`'Peter', 29, 75, 182`
 
 **Output**
 
@@ -820,7 +822,7 @@ Look at the sample output for more information.
 
 **Input**
 
-`“Honey Boo Boo”, 9, 57, 137`
+`'Honey Boo Boo', 9, 57, 137`
 
 **Output**
 
@@ -957,31 +959,31 @@ Implement the following functions:
 
 
 - `add(vec1, vec2)`
-    - Addition of two vectors
+    - addition of two vectors
   
 [image assetsSrc="advanced-functions-08.png" /] 
 
 
 - `multiply(vec1, scalar)`
-    - Scalar multiplication 
+    - scalar multiplication 
 
 [image assetsSrc="advanced-functions-09.png" /] 
 
 
 - `length(vec1)`
-    - Vector length
+    - vector length
   
 [image assetsSrc="advanced-functions-10.png" /] 
 
 
 - `dot(vec1, vec2)` 
-    - Dot product of two vectors
+    - dot product of two vectors
 
 [image assetsSrc="advanced-functions-11.png" /] 
 
 
 - `cross(vec1, vec2)`
-    - Cross product of two vectors
+    - cross product of two vectors
 
 [image assetsSrc="advanced-functions-12.png" /] 
 
@@ -1011,11 +1013,11 @@ Look at the sample output for more information.
 
 |**Input**|**Output**|**Explanation**|
 |---|---|---|
-|`solution.add([1, 1], [1, 0]);`|`[2, 1]`|`[1 + 1, 1 + 0] = [2, 1]`|
-|`solution.multiply([3.5, -2], 2);`|`[7, -4]`|`[3.5 * 2, (-2) * 2] = [7, -4]`|
-|`solution.length([3, -4]);`|`5`|`sqrt(3 * 3 + (-4) * (-4)) = 5`|
-|`solution.dot([1, 0], [0, -1]);`|`0`|`1 * 0 + 0 * (-1) = 0`|
-|`solution.cross([3, 7], [1, 0]);`|`-7`|`3 * 0 – 7 * 1 = -7`|
+|solution.add([1, 1], [1, 0])|[2, 1]|[1 + 1, 1 + 0] = [2, 1]|
+|solution.multiply([3.5, -2], 2)|[7, -4]|[3.5 \* 2, (-2) * 2] = [7, -4]|
+|solution.length([3, -4])|5|sqrt(3 \* 3 + (-4) \* (-4)) = 5|
+|solution.dot([1, 0], [0, -1])|0|1 \* 0 + 0 \* (-1) = 0|
+|solution.cross([3, 7], [1, 0])|-7|3 \* 0 \– 7 \* 1 = -7|
 
 [/task-description]
 [code-io /]
@@ -1218,11 +1220,11 @@ It will be called several times per session, so the internal state must be prese
 
 The **return** value of each operation is one of the following strings:
 
-- `Success` - when restocking or completing cooking without errors;
+- `Success` - when restocking or completing cooking without errors
 
-- `Error: not enough <ingredient> in stock` - when the robot could not muster enough microelements;
+- `Error: not enough <ingredient> in stock` - when the robot could not muster enough microelements
 
-- `protein={qty} carbohydrate={qty} fat={qty} flavour={qty}` - when a report is requested, in a single string;
+- `protein={qty} carbohydrate={qty} fat={qty} flavour={qty}` - when a report is requested, in a single string
 
 Look at the sample output for more information.
 
@@ -1236,31 +1238,31 @@ Look at the sample output for more information.
 **Execution:**
 ```js
 let manager = solution();
-manager("restock flavour 50");  // Success
-manager("prepare lemonade 4");  // Error: not enough carbohydrate in stock
+manager('restock flavour 50');  // Success
+manager('prepare lemonade 4');  // Error: not enough carbohydrate in stock
 ```
 
 |**Input**|**Output**|
 |---|---|
-|`restock carbohydrate 10`|`Success`|
-|`restock flavour 10`|`Success`|
-|`prepare apple 1`|`Success`|
-|`restock fat 10`|`Success`|
-|`prepare burger 1`|`Success`|
-|`report`|`protein=0 carbohydrate=4 fat=3 flavour=5`|
+|'restock carbohydrate 10'|Success|
+|'restock flavour 10'|Success|
+|'prepare apple 1'|Success|
+|'restock fat 10'|Success|
+|'prepare burger 1'|Success|
+|'report'|protein=0 carbohydrate=4 fat=3 flavour=5|
 
 |**Input**|**Output**|
 |---|---|
-|`prepare turkey 1`|`Error: not enough protein in stock`|
-|`restock protein 10`|`Success`|
-|`prepare turkey 1`|`Error: not enough carbohydrate in stock`|
-|`restock carbohydrate 10`|`Success`|
-|`prepare turkey 1`|`Error: not enough fat in stock`|
-|`restock fat 10`|`Success`|
-|`prepare turkey 1`|`Error: not enough flavour in stock`|
-|`restock flavour 10`|`Success`|
-|`prepare turkey 1`|`Success`|
-|`report`|`protein=0 carbohydrate=0 fat=0 flavour=0`|
+|'prepare turkey 1'|Error: not enough protein in stock|
+|'restock protein 10'|Success|
+|'prepare turkey 1'|Error: not enough carbohydrate in stock|
+|'restock carbohydrate 10'|Success|
+|'prepare turkey 1'|Error: not enough fat in stock|
+|'restock fat 10'|Success|
+|'prepare turkey 1'|Error: not enough flavour in stock|
+|'restock flavour 10'|Success|
+|'prepare turkey 1'|Success|
+|'report'|protein=0 carbohydrate=0 fat=0 flavour=0|
 
 [/task-description]
 [code-io /]

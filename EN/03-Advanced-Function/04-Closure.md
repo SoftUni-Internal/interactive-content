@@ -128,7 +128,7 @@ Whenever you receive the command **print**, the output should be the **printed**
 [/task-description]
 [code-io /]
 [tests]
-[test open]
+[test]
 [input]
 ```
 // Acquire console

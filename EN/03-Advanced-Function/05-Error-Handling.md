@@ -33,8 +33,8 @@ To indicate that, it returns the special value `-1`.
 
 ```js live
 function toUppercase(string) {
-  if (typeof string !== "string") {
-    throw TypeError("The input provided is not a string");
+  if (typeof string !== 'string') {
+    throw TypeError('The input provided is not a string');
   }
 
   return string.toUpperCase();
@@ -86,27 +86,27 @@ An exception occurs when a function is unable to do execute its task successfull
 
 **RangeError**
 
-```js live
-let arr = new Array(-1);
+```js
+let arr = new Array(-1); //Invalid array length
 ```
 
-```js live
+```js 
 let bigArr = new Array(9999999999); // RangeError
 ```
 
 **TypeError** 
 
-```js live
-let index = undefined.indexOf("hi"); // TypeError
+```js
+let index = undefined.indexOf('hi'); // TypeError
 ```
 
-```js live
+```js
 console.print('hi');   // Uncaught TypeError
 ```
 
 **ReferenceError**
 
-```js live
+```js
 console.log(George);   // Uncaught ReferenceError
 ```
 
@@ -119,19 +119,19 @@ console.log(George);   // Uncaught ReferenceError
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-30-error-handling-special-values-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-```js live
+```js
 let sqrt = Math.sqrt(-1); // NaN (special value)
 ```
 
-```js live
-let sub = "hello".substring(2, 1000); // llo
-let sub = "hello".substring(-100, 100); // hello
-// Soft error - substring still does its job: takes all available chars
+```js
+let sub = 'hello'.substring(2, 1000); // llo
+let sub = 'hello'.substring(-100, 100); // hello
+// Soft error - substring still does its job: takes all available chars
 
 ```
 
-```js live
-let invalid = new Date("Christmas"); // Invalid Date
+```js
+let invalid = new Date('Christmas'); // Invalid Date
 let date = invalid.getDate(); // NaN
 ```
 
