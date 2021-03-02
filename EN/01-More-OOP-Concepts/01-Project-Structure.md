@@ -65,7 +65,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 Create a program that reads a **positive integer n** as input and prints a **rhombus** with size **n** to the console.
 
 [image assetsSrc="more-oop-concepts-example(1).png" /]
@@ -359,7 +359,7 @@ printer.printToConsole(numbers);
 [code-task title="Point in Rectangle" taskId="oop-basics-java-more-oop-concepts-lab-Point-in-Rectangle" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-## Description
+# Description
 Create a class **Point** and a class **Rectangle**.
 
 The **Point** should hold **coordinates X** and **Y** and the **Rectangle** should hold 2 **Points** – its **bottom left** and **top right** corners.
