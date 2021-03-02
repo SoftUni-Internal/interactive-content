@@ -19,7 +19,7 @@ In most of the contexts in which expressions are used, for example in statements
 * If `x` and `y` are numbers, the expression `x + y` evaluates to a numeric value. 
 
 # Numerical expressions
-In programming, we can calculate numerical expressions, for example:
+In programming, we can calculate numerical expressions. For example:
 ```js live
 let r = (150-20) / 2 + 5;
 
