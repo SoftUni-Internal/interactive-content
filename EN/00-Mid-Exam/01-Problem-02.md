@@ -25,7 +25,7 @@ function adapter(input, code) {
 
 # Description
 
-You will receive a String, representing a bookshelf in the library. Every book title is separated by "\&".
+You will receive a string, representing a bookshelf in the library. On the bookshelf, every book title is separated by a "\&".
 
 Until you receive "**Done**" as a command, you will be receiving the following commands:
 
@@ -37,7 +37,7 @@ If the book is already present on the shelf, ignore the command.
 
 * Command "**Take Book**" \| \{**book name**\}": 
 
-Remove the book with the specified title (only if the book is on the shelf, otherwise ignore this command.)
+Remove the book with the specified title only if it's on the shelf, otherwise ignore this command.
 
 * Command "**Swap Books** \| {**book1**} \| {**book2**}": 
 
@@ -45,18 +45,18 @@ If both books are on the shelf, swap their places.
 
 * Command "**Insert Book** \| \{**book name**\}": 
 
-Add a book at the end of the book collection. 
+Add a book at the end of the shelf. 
 
 * Command "**Check Book** \| \{**index**\}": 
 
-Print the name of the book, present it at this index in the list.
+Print the name of the book at the specified index on the shelf.
 
 If the index is invalid, ignore the command.
 
 
 ## Input
 
-* You will receive a string, containing book titles, separated by "\&"
+* You will receive a string, containing book titles, separated by a "\&"
 
 * Until you receive "**Done**", you will get commands in the format described above
 
