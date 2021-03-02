@@ -160,7 +160,7 @@ for (Person player : players) {
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.\*;
+import static org.junit.Assert.*;
 
 public class T01TestAllClassesExists \{
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
@@ -561,7 +561,7 @@ public class T07TestUnmodifiableCollections \{
                 Object o = c.newInstance(arguments);
                 Collection collection = (Collection) nonPrivateMethod.invoke(o);
                 try \{
-                    collection.clear(); // \*\* should throw
+                    collection.clear(); // ** should throw
                     throw new Exception("modifiable collection");
                 \} catch (UnsupportedOperationException uoe) \{
                     // no problem
@@ -573,7 +573,7 @@ public class T07TestUnmodifiableCollections \{
                 Object o = c.newInstance(arguments);
                 Map map = (Map) nonPrivateMethod.invoke(o);
                 try \{
-                    map.clear(); // \*\* should throw
+                    map.clear(); // ** should throw
                     throw new Exception("Method returns a modifiable collection");
                 \} catch (UnsupportedOperationException uoe) \{
                     // no problem
