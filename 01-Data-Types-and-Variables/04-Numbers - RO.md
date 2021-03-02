@@ -41,7 +41,7 @@ console.log(5 + nanVar);
 
 Parsarea numerelor poate fi făcută în câteva moduri:
 
-- folosind `parseInt`: preluăm doar partea întreagă a unui număr, fără a-l rotunji:
+- folosind `parseInt`: preluăm doar partea întreagă a unui număr, fără a-l rotunji
 
 ``` js live
 let myVar = parseInt('3.14');
@@ -72,7 +72,7 @@ console.log(myVar + 10);
 [code-editor language=javascript]
 ```
 function integerOrFloat(firstNumber, secondNumber, thirdNumber){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -94,7 +94,7 @@ Sarcina voastră este să aflați **suma** acestora și s-o tipăriți pe consol
 "\{**number**\} - **Integer or Float**"
 
 
-## Exemplu
+# Exemplus
   | **Date de intrare** | **Rezultat** |
 | --- | --- |
 | integerOrFloat(9, 100, 1.1) | 110.1 - Float |

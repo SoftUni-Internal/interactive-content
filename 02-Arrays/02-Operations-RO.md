@@ -3,14 +3,13 @@
 [slide hideTitle]
 # Metode de Matrice
 
-
 Unele operații care funcționează cu matrice ar putea funcționa și cu valori asemănătoare matricei.
 
 O valoare asemănătoare matricei este un obiect care deține următoarele proprietăți:
 
-- `.length`: deține lungimea obiectului asemănător matricei.
+- `.length`: deține lungimea obiectului asemănător matricei
 
-- `[0]`: menține elementul la `index 0` (etc.).
+- `[0]`: menține elementul la `index 0` (etc.)
 
 Rețineți că, dacă utilizați numere pentru a adresa proprietăți, acestea sunt întotdeauna constrânse la șiruri.
 

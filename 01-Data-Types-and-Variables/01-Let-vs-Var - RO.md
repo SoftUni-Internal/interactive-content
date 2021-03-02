@@ -50,7 +50,7 @@ Tot ceea ce este inclus între **parantezele acolade** `{}` este un bloc unde su
 
 El poate fi corpul vreunei construcții `if`, al vreunei bucle, sau corpul unei funcții.
 
-``` JavaScript
+``` js
 {
     let x = 2;
 }
@@ -83,7 +83,7 @@ Avem **patru tipuri de domenii**, și le vom analiza pe fiecare mai în detaliu 
 
 - toate variabilele pe care le-am definit la nivel de top. Acestea sunt, de obicei, funcțiile pe care le folosim.
 
-``` JavaScript
+``` js
 var carName = 'Volvo';
   // Code here can use carName
 function myFunction() {
@@ -97,7 +97,7 @@ function myFunction() {
 
 Domeniul funcțional este **corpul funcției**, și fiecare variabilă definită în funcție există doar în corpul acelei funcții. 
 
-``` JavaScript
+``` js
 function myFunction() {
    var carName = 'Volvo';
    // Only here, the code can use carName
@@ -108,7 +108,7 @@ function myFunction() {
 
 Avem, de asemenea, al treilea tip de domeniu - **Block Scope** (**domeniul bloc**). Acesta reprezintă orice corp definit între acolade `{}`.
 
-``` JavaScript
+``` js
 {
   let x = 2;
 } 

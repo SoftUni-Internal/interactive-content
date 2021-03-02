@@ -23,10 +23,10 @@ Dacă **nu puteți** găsi un **nume bun** pentru o funcție, gândiți-vă la *
 
 ## Numirea Parametrilor Funcției
 
-  - Formă preferată: `[Substantiv]` sau `[Adjectiv] + [Substantiv]`
-  - **Nu** trebuie să conțină **litere majuscule**
-  - Ar trebui să fie **semnificativ**
-  - Unitatea de măsură ar trebui să fie evidentă
+- Formă preferată: `[Substantiv]` sau `[Adjectiv] + [Substantiv]`
+- **Nu** trebuie să conțină **litere majuscule**
+- Ar trebui să fie **semnificativ**
+- Unitatea de măsură ar trebui să fie evidentă
 
 Exemple pentru nume de parametri **buni**:
 
@@ -91,16 +91,11 @@ function sum()
 [slide hideTitle]
 # Problem with Solution: Simple Calculator
 
-[vimeo-video]
-[stream language="EN" videoId="489373707/dfc94da2ab" default /]
-[stream language="RO" videoId="489373707/dfc94da2ab"  /]
-[/video-vimeo]
-
 [code-task title="Simple Calculator" taskId="fundamentals-js-functions-lab-Simple-Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function simpleCalculator(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -120,7 +115,7 @@ Write an arrow function that receives an **array containing three elements** (tw
 
 The operator could only be one of the following: "**multiply**", "**divide**", "**add**", "**subtract**".
 
-## Exemples
+## Exemplus
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | simpleCalculator([5, 5, 'multiply']) | 25 |

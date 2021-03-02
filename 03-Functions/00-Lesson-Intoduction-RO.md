@@ -1,12 +1,10 @@
+# Lesson Introduction
+
 [slide hideTitle]
-# Lecție Introductivă
 
-[vimeo-video]
-[stream language="EN" videoId="489373158/2db89d88a6" default /]
-[stream language="RO" videoId="489373158/2db89d88a6"  /]
-[/video-vimeo]
+# Lesson Content
 
-## În această lecție veți afla despre:
+## In this lesson you will learn:
 
 **1. What is a Function**
 

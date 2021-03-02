@@ -121,9 +121,10 @@ function printHeader() {
 printHeader();
 ```
 [/slide]
+
 [slide hideTitle]
 
-## Funcții cu Parametrii
+# Funcții cu Parametrii
 
 O funcție poate primi **orice număr și tip de argumente** atunci când este invocată:
 
@@ -175,6 +176,8 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
+# Descriere
+
 Scrieți o funcție care primește o notă între "**2.00**" și "**6.00**" și imprimă nota corespunzătoare în cuvinte
 
 |**Grad**|**Rezultat**|
@@ -186,7 +189,7 @@ Scrieți o funcție care primește o notă între "**2.00**" și "**6.00**" și 
 | "**5.50 - 6.00**" | "**Excellent**" |
 
 
-## Exemples
+## Exemplus
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | grades(3.33) | Poor |
@@ -268,12 +271,6 @@ Fail
 [slide hideTitle]
 # Problem with Solution: Math Power
 
-[vimeo-video]
-[stream language="EN" videoId="489373435/cb25361ef7" default /]
-[stream language="RO" videoId="489373435/cb25361ef7"  /]
-[/video-vimeo]
-
-
 [code-task title="Math Power" taskId="fundamentals-js-functions-lab-Math-Power"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -292,9 +289,11 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
+# Descriere
+
 Scrieți o funcție care **calculează** și returnează valoarea unui număr **ridicat la o putere dată:**
 
-## Exemples
+## Exemplus
 |**Intrare**|**Ieșire** |
 | --- | --- |
 | mathPower(2, 8) | 256 |

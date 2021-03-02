@@ -26,7 +26,6 @@ console.log(capitals.toString())
 [slide hideTitle]
 # Bucla "for-of"
 
-
 Bucla `for..of` este utilizată pentru a itera peste orice obiect iterabil, dar nu poate fi utilizată pentru a accesa indecșii lor. 
 
 ``` js live
@@ -77,7 +76,7 @@ Create a program that receives a number **n** and an **array of numbers**.
 Your task is to create a **new array** with **n** numbers, **reversed**, and print its elements on a single line, joined by a single space (" ").
 
 
-## Exemple
+## Exemplus
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | reverse(3, [10, 20, 30, 40, 50]) | 30 20 10 |
@@ -212,7 +211,7 @@ Sarcina dvs. este să o inversați și să le imprimați elementele.
 
 **Elemente de schimb.**
 
-## Exemples
+## Exemplus
 |**Imput**|**Output** |
 | --- | --- |
 | reverse(['a', 'b', 'c', 'd', 'e']) | e d c b a  |

@@ -112,7 +112,7 @@ Intrările apar ca o serie de elemente **string**, care conțin numere.
 
 Ieșirile ar trebui să fie valoarea, care este returnată din funcție.
 
-## Exemples
+## Exemplus
 |**Intrare**|**Ieșire** |
 | --- | --- |
 |sumFirstLast(['20', '30', '40']) | 60 |

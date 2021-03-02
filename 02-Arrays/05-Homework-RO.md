@@ -23,7 +23,7 @@ function adapter(input, code) {
 # Descriere
 Creați un program care primește o serie de șiruri, analizați-le la numere și însumați doar numerele pare.
 
-## Examples
+## Exemplus
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | sumEvenNumbers(['1', '2', '3', '4', '5', '6']) | 12 |
@@ -134,7 +134,7 @@ function adapter(input, code) {
 
 Creați un program care calculează diferența dintre suma numerelor pare și suma numerelor impare dintr-o matrice.
 
-## Examples
+## Exemplus
 | **Intrare** | **Ieșire** |**Comentarii** |
 | :--- | :---: | :---:|
 | evenOdd([1, 2, 3, 4, 5, 6]) | 3 | 2 + 4 + 6 = 12, 1 + 3 + 5 = 9, 12 - 9 = 3|
@@ -270,11 +270,11 @@ function adapter(input, code) {
 
 Creați un program care primește **o serie de numere** și condensați-le prin **însumarea** cuplurilor adiacente de elemente până se obține un **număr unic**.
 
-## Examples
+## Exemplus
 
 De exemplu, dacă avem 3 elemente \[**2, 10, 3**\], însumăm pe primul și al doilea element și apoi pe al doilea și al treilea  și obținem \{**2+10, 10+3**\} = \{**12, 13**\}, atunci însumăm din nou toate elementele adiacente și obțineți \{**12+13**\} = \{**25**\}.
 
-  | **Intrare** | **Ieșire** |**Comentarii** |
+| **Intrare** | **Ieșire** |**Comentarii** |
 | :--- | :---: | :---:|
 | condense([2, 10, 3]) | 25 |2 10 3 \-\> 2+10 10+3 \-\> 12 13 -> 12 + 13 \-\> 25 |
 | condense([5, 0, 4, 1, 2]) | 35 ||
@@ -537,7 +537,7 @@ Primul element al matricei de intrare este numărul de rotații pe care trebuie 
 
 Imprimați elementele matrice rezultate, separați printr-un singur spațiu.
 
-## Examples
+## Exemplus
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | arrayRotation([51, 47, 32, 61, 21], 2) | 32 61 21 51 47 |

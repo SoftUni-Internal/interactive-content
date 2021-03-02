@@ -642,13 +642,13 @@ Scrieți o funcție care taie șirul dat **în jumătate** și inversați cele *
 
 Imprimați fiecare jumătate pe o **linie separată.**
 
-# Example One
+## Example One
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | cutAndReverse('tluciffiDsIsihTgnizamAoSsIsihT') | ThisIsDifficult|
 ||ThisIsSoAmazing|
 
-# Example Two
+## Example Two
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | cutAndReverse('sihToDtnaCuoYteBIboJsihTtAdooGoSmI') | IBetYouCantDoThis|

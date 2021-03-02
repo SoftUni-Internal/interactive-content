@@ -17,7 +17,7 @@ Pentru a declara o matrice, plasăm valorile pe care ar trebui să le dețină �
 Crearea unui set de șiruri:
 
 ```js
-let fruit = ['apple"=', 'pear', 'cherry'];
+let fruit = ['apple', 'pear', 'cherry'];
 ```
 Matricile pot conține variabile de **diferite tipuri de date**, numere întregi, șiruri, booleene etc. 
 
@@ -118,7 +118,7 @@ function adapter(input, code) {
 
 Creați un program care primește o **matrice de șiruri**, **le transformă în numere** și imprimă suma primului și ultimului element al matricei respective. 
 
-## Exemplu
+## Exemplus
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | sum([20, 30, 40]) | 60 |
@@ -249,7 +249,7 @@ Creați un program care primește un număr și imprimă numele corespunzător a
 
 Dacă numărul NU este o zi validă, tipăriți "**Invalid day!**".
 
-## Exemplu
+## Exemplus
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | days(3) | Wednesday |
@@ -388,11 +388,6 @@ console.log(arr);
 
 [slide hideTitle]
 # JavaScript Arrays and Invalid Positions
-
-[vimeo-video]
-[stream language="EN" videoId="489372453/ea5fcbe683" default /]
-[stream language="RO" videoId="489372453/ea5fcbe683"  /]
-[/video-vimeo]
 
 Dacă încercăm să atribuim o valoare unui index inexistent, JS va umple elementele lipsă cu valori 'nedefinite' și îi va mări dimensiunea:
 

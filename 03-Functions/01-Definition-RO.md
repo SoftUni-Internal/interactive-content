@@ -3,7 +3,6 @@
 [slide hideTitle]
 # Funcțiile în JavaScript
 
-
 O funcție este un **subprogram** conceput pentru a efectua o anumită sarcină.
 
 Funcțiile sunt executate atunci când sunt apelate, ceea ce este cunoscut sub numele de **invocarea unei funcții.**

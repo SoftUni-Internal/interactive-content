@@ -1,6 +1,26 @@
 # Problem 1: Password Reset
 
-[slide]
+[slide hideTitle]
+# Password Reset
+
+[code-task title="Password Reset" taskId="js-fundamentals-2-examPreparation-problem-1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function passwordReset(input, commands) {
+   // Scrieți codul dvs. aici
+}
+```
+[/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
+[task-description]
 # Descriere
 Scrieți un program de resetare a parolei care efectuează o serie de comenzi pe un șir.
 
@@ -8,11 +28,11 @@ Mai întâi, veți primi șirul, pe care trebuie să îl modificați, iar apoi, 
 
 Comenzile vor fi următoarele:
 
-* Comandă `TakeOdd`: 
+* Comandă "**TakeOdd**": 
 
 Prinde doar caracterele la indici impari și le concatenează împreună pentru a obține noua parolă primară și apoi o imprimă.
 
-* Comandă `Cut {index} {length}`: 
+* Comandă "**Cut** \{**index**\} \{**length**\}": 
 
 Taie un șir cu lungimea dată de cea originală, începând de la indexul specificat și îl imprimă pe consolă.
 
@@ -20,35 +40,25 @@ Apoi tipărește noua parolă primară pe o nouă linie.
 
 Indicele și lungimea specificate vor fi întotdeauna valabile.
 
-* Comanda `Substitute {substring} {substitute}`: 
+* Comanda "**Substitute** \{**substring**\} \{**substitute**\}": 
 Dacă 'parola primară' conține șirul dat, înlocuiește toate aparițiile sale cu textul substitut dat și imprimă rezultatul.
 
-Dacă nu, imprimați `Nothing to replace!`
+Dacă nu, imprimați "**Nothing to replace!**".
 
 ## Intrare
 
-* Veți primi șiruri până când se primește comanda `Done`.
+* Veți primi șiruri până când se primește comanda "**Done**".
 
-* Indexurile comenzii `Cut {index} {length}` vor fi întotdeauna valabile.
+* Indexurile comenzii "**Cut** \{**index**\} \{**length**\}" vor fi întotdeauna valabile.
 
 ## Ieșire
 
-* După primirea comenzii `Done`, tipăriți: `Your password is: {password}`
+* După primirea comenzii "**Done**", tipăriți: "**Your password is:** \{**password**\}"
 
-[code-task title="Password Reset" taskId="js-fundamentals-2-examPreparation-problem-1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function solve(input) {
-	// Write your code here
-}
-```
-[/code-editor]
-[task-description]
+## Examples One
 
-# Exemple
-
- **Input** 
-`['Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr','TakeOdd', 'Cut 15 3', 'Substitute :: -', 'Substitute | ^', 'Done']`
+**Input** 
+passwordReset('Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr', ['TakeOdd', 'Cut 15 3', 'Substitute :: -', 'Substitute \| \^', 'Done'])
 
 **Output**
 
@@ -62,46 +72,42 @@ Nothing to replace!
 
 Your password is: icecream\-hot\-mer
 
-# Comentarii
+**Comentarii**
 
-* Prima comandă este `TakeOdd`:
+* Prima comandă este "**TakeOdd**":
 
-Șirul inițial este: `Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr`
+Șirul inițial este: "Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr"
 
 Luăm caracterele la indici impari 1, 3, 5 etc., iar rezultatul este:
 
-`icecream::hot::summer`
+"icecream::hot::summer"
 
-* A doua comandă este `Cut 15  3`:
+* A doua comandă este "**Cut 15  3**":
 
-Șirul este: `icecream::hot::summer`
+Șirul este: "icecream::hot::summer"
 
-Decupăm un sub-șir care începe de la indexul 15 cu lungimea 3, care este `sum`, îl eliminăm din parola primară și îl imprimăm.
+Decupăm un sub-șir care începe de la indexul 15 cu lungimea 3, care este "**sum**", îl eliminăm din parola primară și îl imprimăm.
 
-Apoi, pe o nouă linie imprimăm noua parolă primară care rezultă:
-`icecream::hot::mer`
+Apoi, pe o nouă linie imprimăm noua parolă primară care rezultă: "icecream::hot::mer"
 
-* A treia comandă este `Substitute :: -`
+* A treia comandă este "**Substitute :: -**"
 
-Șirul inițial este: `icecream::hot::summer`
+Șirul inițial este: "icecream::hot::summer"
 
-înlocuim `::` cu `-`, iar rezultatul este
+înlocuim "::" cu "-", iar rezultatul este: "icecream-hot-summer"
 
-`icecream::hot::summer`
+* A patra comandă este "**Substitute** \| \^":
 
-* A patra comandă este `Substitute | ^`:
+"\|" nu este găsit nicăieri în parola primară.
 
-`|` nu este găsit nicăieri în parola primară.
+Tipărim: "**Nothing to replace!**"
 
-Tipărim:
-`Nothing to replace!` 
+În cele din urmă, după ce primim comanda "**Done**", imprimăm parola care rezultă în formatul corespunzător.
 
-În cele din urmă, după ce primim comanda `Done`, imprimăm parola care rezultă în formatul corespunzător.
+## Examples Two
 
-# Exemple
-
-  **Intrare**
-`['up8rgoyg3r1atmlmpiunagt!-irs7!1fgulnnnqy','TakeOdd', 'Cut 18 2', 'Substitute ! ***', 'Substitute ? .!.', 'Done']`
+**Intrare**
+passwordReset('up8rgoyg3r1atmlmpiunagt!-irs7!1fgulnnnqy', ['TakeOdd', 'Cut 18 2', 'Substitute ! \*\*\*', 'Substitute ? .!.', 'Done'])
 
 **Ieșire**
 programming!is!funny
@@ -119,12 +125,7 @@ Your password is: programming\*\*\*is\*\*\*fun
 [tests]
 [test open]
 [input]
-Siiceercaroetavm!\:\?\:ahsott\.\:i\:nstupmomceqr
-TakeOdd
-Cut 15 3
-Substitute \:\: \-
-Substitute \| \^
-Done
+passwordReset('Siiceercaroetavm!\:\?\:ahsott\.\:i\:nstupmomceqr', ['TakeOdd', 'Cut 15 3', 'Substitute \:\: \-', 'Substitute \| \^', 'Done'])
 [/input]
 [output]
 icecream\:\:hot\:\:summer
@@ -136,12 +137,7 @@ Your password is\: icecream\-hot\-mer
 [/test]
 [test open]
 [input]
-up8rgoyg3r1atmlmpiunagt!-irs7!1fgulnnnqy
-TakeOdd
-Cut 18 2
-Substitute ! \*\*\*
-Substitute ? .!.
-Done
+passwordReset('up8rgoyg3r1atmlmpiunagt!-irs7!1fgulnnnqy', ['TakeOdd', 'Cut 18 2', 'Substitute ! \*\*\*', 'Substitute ? .!.', 'Done'])
 [/input]
 [output]
 programming!is!funny
@@ -153,9 +149,7 @@ Your password is: programming\*\*\*is\*\*\*fun
 [/test]
 [test]
 [input]
-abcd
-TakeOdd
-Done
+passwordReset('abcd', ['TakeOdd', 'Done'])
 [/input]
 [output]
 bd
@@ -164,9 +158,8 @@ Your password is: bd
 [/test]
 [test]
 [input]
-abcdefg
-TakeOdd
-Done
+passwordReset('abcdefg', ['TakeOdd'
+'Done'])
 [/input]
 [output]
 bdf
@@ -175,10 +168,7 @@ Your password is: bdf
 [/test]
 [test]
 [input]
-abcdefg
-TakeOdd
-Cut 0 2
-Done
+passwordReset('abcdefg', ['TakeOdd', 'Cut 0 2', 'Done'])
 [/input]
 [output]
 bdf
@@ -188,10 +178,7 @@ Your password is: f
 [/test]
 [test]
 [input]
-abcdefg
-TakeOdd
-Substitute b y
-Done
+passwordReset('abcdefg', ['TakeOdd', 'Substitute b y', 'Done'])
 [/input]
 [output]
 bdf
@@ -201,10 +188,7 @@ Your password is: ydf
 [/test]
 [test]
 [input]
-abcdefg
-TakeOdd
-Substitute z y
-Done
+passwordReset('abcdefg', ['TakeOdd', 'Substitute z y', 'Done'])
 [/input]
 [output]
 bdf
@@ -214,9 +198,7 @@ Your password is: bdf
 [/test]
 [test]
 [input]
-abcdefg
-Cut 0 3
-Done
+passwordReset('abcdefg', ['Cut 0 3', 'Done'])
 [/input]
 [output]
 defg
@@ -225,9 +207,7 @@ Your password is: defg
 [/test]
 [test]
 [input]
-abcdefg
-Cut 0 6
-Done
+passwordReset('abcdefg', ['Cut 0 6', 'Done'])
 [/input]
 [output]
 g
@@ -236,9 +216,7 @@ Your password is: g
 [/test]
 [test]
 [input]
-abcdefg
-Cut 3 1
-Done
+passwordReset('abcdefg', ['Cut 3 1', 'Done'])
 [/input]
 [output]
 abcefg
@@ -247,9 +225,7 @@ Your password is: abcefg
 [/test]
 [test]
 [input]
-abcdefg
-Cut 4 2
-Done
+passwordReset('abcdefg', ['Cut 4 2', 'Done'])
 [/input]
 [output]
 abcdg
@@ -258,11 +234,7 @@ Your password is: abcdg
 [/test]
 [test]
 [input]
-AABBCCDDEEFFGG
-TakeOdd
-Cut 2 3
-Substitute B A
-Done
+passwordReset('AABBCCDDEEFFGG', ['TakeOdd', 'Cut 2 3', 'Substitute B A', 'Done'])
 [/input]
 [output]
 ABCDEFG
@@ -273,15 +245,7 @@ Your password is: AAFG
 [/test]
 [test]
 [input]
-AAABBBCCCDDDEEEFFFGGG
-Cut 0 1
-Cut 0 1
-Cut 0 1
-Cut 1 1
-Cut 3 2
-Substitute G Y
-TakeOdd
-Done
+passwordReset('AAABBBCCCDDDEEEFFFGGG', ['Cut 0 1', 'Cut 0 1', 'Cut 0 1', 'Cut 1 1', 'Cut 3 2', 'Substitute G Y', 'TakeOdd', 'Done'])
 [/input]
 [output]
 AABBBCCCDDDEEEFFFGGG
@@ -296,12 +260,7 @@ Your password is: BDDEFFY
 [/test]
 [test]
 [input]
-AAABBBCCCDDD
-Cut 2 3
-Substitute C J
-Substitute Z M
-TakeOdd
-Done
+passwordReset('AAABBBCCCDDD', ['Cut 2 3', 'Substitute C J', 'Substitute Z M', 'TakeOdd', 'Done'])
 [/input]
 [output]
 AABCCCDDD

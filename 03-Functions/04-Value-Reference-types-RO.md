@@ -22,7 +22,7 @@ Metoda apelată nu are acces la valoarea primitivă originală și, prin urmare,
 
 Metoda apelată poate modifica valoarea copiată.
 
-- Tipurile de date primitive sunt: **undefined**, **boolean**, **number**, **string**, **bigint** și **symbol**.
+- Tipurile de date primitive sunt: **undefined**, **boolean**, **number**, **string**, **bigint** și **symbol**
 
 ```js
 i = 42;

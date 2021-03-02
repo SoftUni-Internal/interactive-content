@@ -70,7 +70,7 @@ console.log(isValid(3, [1,2,3,4,5]));
 
 Când lucrați cu matricii, este adesea folosit pentru a verifica dacă **indexul este valid.**
 
-Rezultatul acestei funcții este **boolean**, va returna "true" dacă indexul se află în interiorul limitei matricei și va returna `false` dacă nu se află acolo.
+Rezultatul acestei funcții este **boolean**, va returna "true" dacă indexul se află în interiorul limitei matricei și va returna "**false**" dacă nu se află acolo.
 
 - Elevul promovează examenul:
 
@@ -103,7 +103,7 @@ Funcția interioară **poate accesa** variabilele și argumentele funcției exte
 
 **DAR funcția exterioară nu are acces la variabilele funcției interioare** și nici aplicația apelantă nu are acces la funcția interioară.
 
-[image assetsSrc="Nested-Functions.png" /]
+[image assetsSrc="js-fundamentals-1-adv-functions-1.png" /]
 
 ## Exemplu
 
@@ -123,6 +123,7 @@ function swapElements(arr) {
 
 swapElements([1,2,3,4,5,6,7,8,9,10]);
 ```
+
 În acest exemplu, creăm o funcție `swapElements()`, care primește un argument.
 
 În corpul funcției, facem o buclă prin matrice și invocăm o altă funcție `swap()`, căreia îi trecem trei argumente.

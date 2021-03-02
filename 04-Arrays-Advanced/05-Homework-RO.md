@@ -138,14 +138,14 @@ Al doilea element al matricei va fi capacitatea maximă a fiecărui vagon (numă
 
 Restul elementelor vor fi comenzi în următorul format:
 
-- `Add {passengers}` - adăugați un vagon la capăt, cu numărul dat de pasageri
+- "**Add** \{**passengers**\}" - adăugați un vagon la capăt, cu numărul dat de pasageri
 
-- `{passengers}` - găsiți un vagon existent care să se potrivească tuturor pasagerilor (începând cu primul vagon)
+- "\{**passengers**\}" - găsiți un vagon existent care să se potrivească tuturor pasagerilor (începând cu primul vagon)
 
 La final, tipăriți starea finală a trenului (toate vagoanele, separate printr-un spațiu).
 
 
-# Exemplus
+## Exemplus
 | **Intrare**|**Ieșire** |
 | --- | --- |
 |train(['32 54 21 12 4 0 23','75','Add 10','Add 0','30','10','75'])| 72 54 21 12 4 75 23 10 0|
@@ -242,7 +242,7 @@ Eliminați toate elementele care se repetă din matrice.
 
 Imprimați elementele rezultate (restul), separate printr-un singur spațiu. 
 
-# Exemplus
+## Exemplus
 | **Intrare** | **Ieșire** | **Comentarii** |
 | :---:       |    :----:   |   :---:     |
 |distinctArray([1, 2, 3, 4])| 1 2 3 4|No repeating elements |

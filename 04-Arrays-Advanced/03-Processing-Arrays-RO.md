@@ -3,11 +3,6 @@
 [slide hideTitle]
 # Transormarea Elementelor
 
-[vimeo-video]
-[stream language="EN" videoId="489374289/c0b4d9c5f7" default /]
-[stream language="RO" videoId="489374289/c0b4d9c5f7"  /]
-[/video-vimeo]
-
 Începând de la ES5, tipul JavaScript `Array` oferă metoda `map()` care ne permite să transformăm elementele unei matrice într-un mod mai curat.
 
 Metoda `map()` creează o nouă matrice cu rezultatele apelării unei funcții pentru fiecare element al matricei.
@@ -98,7 +93,7 @@ Intrările apar ca o serie de elemente 'șir', care conțin numere.
 Ieșirea este tipărită pe consolă, **pe o singură linie**, **separată de spațiu.**
 
 
-## Exemples
+## Exemplus
 |**Intrare**|**Ieșire** |
 | --- | --- |
 |oddNumbers([10, 15, 20, 25]) | 50 30 |
@@ -223,20 +218,16 @@ console.log(numbers);
 [slide hideTitle]
 # Funcții de Comparare
 
-[vimeo-video]
-[stream language="EN" videoId="489374404/c8ee191474" default /]
-[stream language="RO" videoId="489374404/c8ee191474"  /]
-[/video-vimeo]
 
 Din fericire, metoda `sort()` poate sorta valori negative, zero și pozitive în ordinea corectă.
 
-Când metoda `sort()` compară două valori, trimite valorile către** funcția de comparare**și sortează valorile în funcție de valoarea returnată.
+Când metoda `sort()` compară două valori, trimite valorile către **funcția de comparare** și sortează valorile în funcție de valoarea returnată.
 
 Rezultatul ar putea fi: **negativ, zero sau pozitiv.**
 
-- If the result is negative, `a` is sorted before `b`.
-- If the result is positive, `b` is sorted before `a`.
-- If the result is 0, nothing changes.
+- If the result is negative, `a` is sorted before `b`
+- If the result is positive, `b` is sorted before `a`
+- If the result is 0, nothing changes
 
 ``` js live
 let nums = [20, 40, 10, 30, 100, 5];
@@ -254,12 +245,14 @@ Metoda `localeCompare()` compară două șiruri de caractere în locale actuale.
 Este o metodă de șir, deci nu poate fi aplicată direct pe o matrice.
 
 În acest exemplu, trecem metoda `localeCompare()` **ca funcție de comparație**.
+
 ``` js live
 let words = ['nest', 'Eggs', 'bite', 'Grip', 'jAw'];
 words.sort((a, b) => a.localeCompare(b));
 
 console.log(words);
 ```
+
 [/slide]
 
 [slide hideTitle]

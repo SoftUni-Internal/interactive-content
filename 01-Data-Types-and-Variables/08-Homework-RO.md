@@ -151,7 +151,7 @@ Ca **intrare** veți primi **3 parametri**:
 Ca rezultat, ar trebui să imprimați acest mesaj:
 "**Needed money for that trip is** \{**neededMoney**\} **dollars.**
 
-## Exemplu
+## Exemplus
    |**Intrare**|**Ieșire**|
 | --- | --- |
 | fuelMoney(260, 9, 2.49) | Needed money for that trip is 47.559 dollars. |
@@ -279,7 +279,7 @@ Creați un program care primește mai multe secole și îl convertește în ani,
 Imprimați rezultatul în următorul format: 
 "\{**number**\} **centuries =** \{**number**\} **years =** \{**number**\} **days =** \{**number**\} **hours =** \{**number**\} **minutes**"
 
-## Exemplu
+## Exemplus
    |**Intrare**|**Ieșire** |
 | --- | --- |
 | centuriesToMinutes(1) | 1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes |
@@ -376,10 +376,8 @@ Pentru toate numerele din intervalul **1...n**, tipăriți numărul și dacă es
 
 Un număr este special atunci când suma cifrelor sale este **5, 7, or 11.**
 
-
 ## Exemplu
-   |**Intrare**|**Ieșire** |
-| --- | --- |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | specialNumbers(5) | 1 -> False |
 ||2 -> False|
@@ -555,7 +553,7 @@ function adapter(input, code) {
 Creați un program care primește un **număr** **n** și tipărește toate triplele primelor n litere latine mici, ordonate alfabetic.
 
 ## Exemplu
-   |**Intrare**|**Ieșire**|
+|**Intrare**|**Ieșire**|
 | --- | --- |
 | triplesLatinLetters(2) | aaa |
 ||aab|
@@ -1099,7 +1097,7 @@ function adapter(input, code) {
 
 Create a program that receives a **number** and find the sum of its digits.
 
-# Exemplu
+## Exemplus
    |**Intrare**|**Ieșire**|
 | --- | --- |
 | sumDigits(245678) | 32 |
@@ -1224,7 +1222,7 @@ function adapter(input, code) {
 # Descriere
 Creați un program care să ia **3 parametri** (caractere) și să le imprime în **ordine inversă** cu un spațiu între ele.
 
-## Exemplu
+## Exemplus
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | reversChars('A', 'B','C') | C B A |
@@ -1341,7 +1339,7 @@ Creați un program care primește **trei parametri șir:**
 
 Imprimați **rezultatul calculului** în consola formatată la **a doua zecimală.**
 
-# Exemplu
+## Exemplus
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | calculator(5, '+', 10) | 15.00 |

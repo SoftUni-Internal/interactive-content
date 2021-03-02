@@ -1,7 +1,27 @@
 # Problem 2: Fancy Barcodes
 
-[slide]
+[slide hideTitle]
 
+# Fancy Barcodes
+
+[code-task title="Fancy Barcodes" taskId="js-fundamentals-2-examPreparation-problem-2" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function fancyBarcodes(n, barcodes) {
+	// Scrieți codul dvs. aici
+}
+```
+[/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
+[task-description]
 # Descriere
 Sarcina dvs. este de a determina dacă secvența dată de caractere este sau nu un cod de bare valid.
 
@@ -9,9 +29,9 @@ Fiecare linie nu trebuie să conțină altceva decât un cod de bare valid.
 
 Un cod de bare este valabil atunci când:
 
-* • Este, începe și se termină cu un semn `la` `@` urmat de unul sau mai multe semne hash `#`
+* • Este, începe și se termină cu un semn "**la**" "**@**" urmat de unul sau mai multe semne hash "\#"
 
-* Are cel puțin **6 caractere** (fără `@` sau `#` din jur)
+* Are cel puțin **6 caractere** (fără "**@**" sau "\#" din jur)
 
 * Începe cu o literă mare
 
@@ -19,75 +39,64 @@ Un cod de bare este valabil atunci când:
 
 * Se încheie cu o **literă mare**
 
-**Exemple de coduri de bare valide:** `@#FreshFisH@#, @###Brea0D@###, @##Che46sE@##`
+**Exemple de coduri de bare valide:** "\@\#FreshFisH\@\#", "\@\#\#\#Brea0D\@\#\#\#", "\@\#\#Che46sE\@\#\#"
 
-Exemple de coduri de bare**nevalide**: `##InvaliDiteM##, @InvalidIteM@, @#Invalid_IteM@#`
+Exemple de coduri de bare**nevalide**: "\#\#InvaliDiteM\#\#", "\@InvalidIteM\@", "\@\#Invalid_IteM\@\#"
 
-Apoi, va trebui să determinați 'grupa de produse' a articolului din codul de bare. Acest lucru se face concatenând toate cifrele din codul de bare.
+Apoi, va trebui să determinați "grupa de produse" a articolului din codul de bare. Acest lucru se face concatenând toate cifrele din codul de bare.
 
-Dacă nu există cifre în codul de bare, grupul de produse implicit este `00`.
+Dacă nu există cifre în codul de bare, grupul de produse implicit este "**00**".
 
 **Exemple:** 
 
-`@#FreshFisH@#` \-\> product group: 00
+"\@\#FreshFisH\@\#" \-\> product group: 00
 
-`@###Brea0D@###` \-\> product group: 0
+"\@\#\#\#Brea0D\@\#\#\#" \-\> product group: 0
 
-`@##Che4s6E@##` \-\> product group: 46
+"\@\#\#Che4s6E\@\#\#" \-\> product group: 46
 
 ## Intrare
 
-* Pe prima linie vi se va da un număr întreg `n` - reprezentând numărul de coduri de bare pe care le veți primi în continuare.
+* Pe prima linie vi se va da un număr întreg "**n**" - reprezentând numărul de coduri de bare pe care le veți primi în continuare
 
-* Pe următoarele n linii, veți primi șiruri diferite.
+* Pe următoarele n linii, veți primi șiruri diferite
 
 ## Ieșire
 
 Pentru fiecare cod de bare pe care îl procesați, trebuie să imprimați un mesaj.
 
-*Dacă codul de bare este nevalid: `Invalid barcode`
+* Dacă codul de bare este nevalid: "**Invalid barcode**"
 
-*Dacă codul de bare este valid: `Product group: {product group}`
+* Dacă codul de bare este valid: "**Product group:** \{**product group**\}"
 
-[code-task title="Fancy Barcodes" taskId="js-fundamentals-2-examPreparation-problem-2" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function solve(input) {
-	// Write your code here
-}
-```
-[/code-editor]
-[task-description]
+## Examples One
 
-# Exemple
-**Intrare**
-`['3', '@#FreshFisH@#', '@###Brea0D@###', '@##Che4s6E@##']`
+|**Intrare**|**Ieșire**|
+|---|---|
+|fancyBarcodes(3, ['\@\#FreshFisH\@\#', '\@\#\#\#Brea0D\@\#\#\#', '\@\#\#Che4s6E\@\#\#'])|Product group\: 00|
+||Product group\: 0|
+||Product group\: 46|
 
-**Ieșire**
-Product group\: 00
-Product group\: 0
-Product group\: 46
 
- **Intrare** 
-`['6', '@###Val1d1teM@###', '@#InvalidIteM@#', '##InvaliDiteM##', '@InvalidIteM@', '@#Invalid_IteM@#', '@#ValiditeM@#']`
+## Examples Two
 
-**Ieșire**
-Product group\: 11
-Product group\: 00
-Invalid barcode
-Invalid barcode
-Invalid barcode
-Product group\: 00
+|**Intrare**|**Ieșire**|
+|---|---|
+|fancyBarcodes(6, ['\@\#\#\#Val1d1teM\@\#\#\#', '\@\#InvalidIteM\@\#', '\#\#InvaliDiteM\#\#', '\@InvalidIteM\@', '\@\#Invalid_IteM\@\#', '\@\#ValiditeM\@\#'])|Product group\: 11|
+||Product group\: 00|
+||Invalid barcode|
+||Invalid barcode|
+||Invalid barcode|
+||Product group\: 00|
+
+
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-3
-@\#FreshFisH@\# 
-@\#\#\#Brea0D@\#\#\# 
-@\#\#Che46sE@\#\#
+fancyBarcodes(3, ['@\#FreshFisH@\#', '@\#\#\#Brea0D@\#\#\#', '@\#\#Che46sE@\#\#'])
 [/input]
 [output]
 Product group: 00
@@ -97,13 +106,7 @@ Product group: 46
 [/test]
 [test open]
 [input]
-6
-@\#\#\#Val1d1teM@\#\#\#
-@\#InvalidIteM@\#
-\#\#InvaliDiteM\#\#
-@InvalidIteM@
-@\#Invalid_IteM@\#
-@\#ValiditeM@\#
+fancyBarcodes(6, ['@\#\#\#Val1d1teM@\#\#\#', '@\#InvalidIteM@\#', '\#\#InvaliDiteM\#\#', '@InvalidIteM@', '@\#Invalid_IteM@\#', '@\#ValiditeM@\#'])
 [/input]
 [output]
 Product group: 11
@@ -116,8 +119,7 @@ Product group: 00
 [/test]
 [test]
 [input]
-1
-@\#invalid@\#
+fancyBarcodes(1, \['@\#invalid@\#\'\])
 [/input]
 [output]
 Invalid barcode
@@ -125,8 +127,7 @@ Invalid barcode
 [/test]
 [test]
 [input]
-1
-@\#\#Invalid@\#\#
+fancyBarcodes(1, \['@\#\#Invalid@\#\#'\])
 [/input]
 [output]
 Invalid barcode
@@ -134,8 +135,7 @@ Invalid barcode
 [/test]
 [test]
 [input]
-1
-@\#invalidBarcodE@\#
+fancyBarcodes(1, \['@\#invalidBarcodE@\#'\])
 [/input]
 [output]
 Invalid barcode
@@ -143,8 +143,7 @@ Invalid barcode
 [/test]
 [test]
 [input]
-1
-@\#ValiD@\#
+fancyBarcodes(1, \['@\#ValiD@\#'\])
 [/input]
 [output]
 Invalid barcode
@@ -152,8 +151,7 @@ Invalid barcode
 [/test]
 [test]
 [input]
-1
-@\#\#Xa013mlX@\#\#
+fancyBarcodes(1, \['@\#\#Xa013mlX@\#\#'\])
 [/input]
 [output]
 Product group: 013
@@ -161,10 +159,7 @@ Product group: 013
 [/test]
 [test]
 [input]
-3
-@\#CucumberS@\#
-@\#\#CarrotS@\#\#
-@\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#PotatoeS@\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
+fancyBarcodes(3, ['@\#CucumberS@\#', '@\#\#CarrotS@\#\#', '@\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#PotatoeS@\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#'])
 [/input]
 [output]
 Product group: 00
@@ -174,10 +169,7 @@ Product group: 00
 [/test]
 [test]
 [input]
-3
-@\#P1n3Appl3S@\#
-@\#\#\#X1x2x3x4x5x6x7x8x9x0X@\#\#\#
-@\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#Zzzz987zzz65zzz43zzz210zzZ@\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
+fancyBarcodes(3, ['@\#P1n3Appl3S@\#', '@\#\#\#X1x2x3x4x5x6x7x8x9x0X@\#\#\#', '@\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#Zzzz987zzz65zzz43zzz210zzZ@\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#'])
 [/input]
 [output]
 Product group: 133
@@ -187,8 +179,7 @@ Product group: 9876543210
 [/test]
 [test]
 [input]
-1
-@\#Test4et0O@\#
+fancyBarcodes(1, \['@\#Test4et0O@\#'\])
 [/input]
 [output]
 Product group: 40
@@ -196,18 +187,7 @@ Product group: 40
 [/test]
 [test]
 [input]
-11
-@\#\#Aaa1A1aaA@\#\#
-@\#Bbbbbb@\#
-@\#Ccccc_ccccC@\#
-@\#\#\#D2d3d4D@\#\#\#
-@\#EfgfE@\#
-@\#hhhhhhhH@\#
-@\#IIIIIIIII@\#
-@\#IIII11IIIII@\#
-@\#\#JjjjjJ@\#
-@KkkkkkK@
-@\#\#Lmn83opq19RsTuV@\#\#
+fancyBarcodes(11, ['@\#\#Aaa1A1aaA@\#\#', '@\#Bbbbbb@\#', '@\#Ccccc_ccccC@\#', '@\#\#\#D2d3d4D@\#\#\#', '@\#EfgfE@\#', '@\#hhhhhhhH@\#', '@\#IIIIIIIII@\#', '@\#IIII11IIIII@\#', '@\#\#JjjjjJ@\#', '@KkkkkkK@', '@\#\#Lmn83opq19RsTuV@\#\#'])
 [/input]
 [output]
 Product group: 11
@@ -225,14 +205,7 @@ Product group: 8319
 [/test]
 [test]
 [input]
-7
-@\#Th1sIsTh3T0ughestT3sT@\#
-@\#\#\#ItReallyISharD@\#\#\#
-@\#\#ItT3stsTh3Wh0l3Match1nG@\#\#
-@\#I`llThrowSomeInvalidCodeS@\#
-@\#\#\#AndSomeMorE@\#\#
-@\#\#AndFinally@\#\#
-@\#\#Th3R34lM0F0T3sT@\#\#\#
+fancyBarcodes(7, ['@\#Th1sIsTh3T0ughestT3sT@\#', '@\#\#\#ItReallyISharD@\#\#\#', '@\#\#ItT3stsTh3Wh0l3Match1nG@\#\#', '@\#I`llThrowSomeInvalidCodeS@\#', '@\#\#\#AndSomeMorE@\#\#', '@\#\#AndFinally@\#\#', '@\#\#Th3R34lM0F0T3sT@\#\#\#'])
 [/input]
 [output]
 Product group: 1303

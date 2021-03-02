@@ -1,8 +1,11 @@
+# Lesson Introduction
+
 [slide hideTitle]
-# Introducerea lecției
+
+# Lesson Content
 
 
-## În această lecție veți afla despre:
+## In this lesson you will learn:
 
 **1. Operațiuni de bază**
 

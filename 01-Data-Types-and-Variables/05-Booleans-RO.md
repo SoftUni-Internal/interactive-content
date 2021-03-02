@@ -29,7 +29,7 @@ Comparațiile booleene sunt cel mai adesea plasate în construcția "**if**", si
 
 Exemple de operatori de comparație:
 
-| Operator | Descriere | Exemplu   |
+| **Operator** | **Descriere** | **Exemplu**   |
 | :---:       |    :----:   |   :---:   |
 | `==` | egal cu (fără tip) | `if (day == 'Monday')` |
 | `===` | egal cu (cu tip) | `if (5 === 5)` |
@@ -186,7 +186,7 @@ Exemple pentru numere uimitoare sunt:
 
 - 583472 (5 + 8 + 3 + 4 + 7 + 2 = 29)
 
-## Exemplu
+# Exemplus
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | amazingNumbers(1233) | 1233 Amazing? True |

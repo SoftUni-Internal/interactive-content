@@ -26,7 +26,7 @@ Scrieți o funcție care primește **un șir** și un număr de repetare - "**n*
 
 Funcția ar trebui să returneze un șir nou (cel vechi repetat de "**n**" ori).
 
-## Examples
+## Exemplus
 |**Intrare**|**Ieșire** |
 | --- | --- |
 | repeatString('abc', 3) | abcabcabc |
@@ -122,7 +122,7 @@ Scrieți o funcție care primește trei numere întregi pentru a imprima număru
 
 Folosiți un nume adecvat pentru funcție.
 
-## Examples
+## Exemplus
 |**Intrare**|**Ieșire** |
 | --- | --- |
 | smallestNumbers(2, 5, 3) | 2 |
@@ -266,7 +266,7 @@ Veți primi**trei numere întregi.**
 
 Scrieți o funcție `sum()` pentru a obține suma primelor două numere întregi și funcția `subtract()` care scade al treilea număr întreg din rezultat.
 
-## Examples
+## Exemplus
 |**Intrare**|**Ieșire** |
 | --- | --- |
 | addSubtract(23, 6, 10) | 19 |
@@ -418,7 +418,7 @@ Scrieți o funcție care **primește două caractere** și imprimă pe o singur�
 
 Rețineți că **al doilea cod de caractere ar putea fi înaintea primului din tabelul ASCII.**
 
-## Examples
+## Exemplus
 |**Intrare**|**Ieșire** |
 | --- | --- |
 | charactersInRange('a', 'd') | b c |
@@ -522,7 +522,7 @@ Veți primi un **număr unic**.
 
 Trebuie să scrieți o funcție care returnează **suma** din **toate cifrele pare** și **toate cifrele impare** din acel număr.
 
-## Examples
+## Exemplus
 |**Intrare**|**Ieșire** |
 | --- | --- |
 | oddEvenSum(1000435) |  Odd sum = 9, Even sum = 4 |
@@ -1085,7 +1085,7 @@ Un număr perfect este un număr întreg **pozitiv** care este egal cu **suma** 
 
 Aceasta este suma divizorilor sale pozitivi, excluzând numărul în sine (cunoscut și ca **suma alicotă**).
 
-## Examples
+## Exemplus
 | **Intrare** | **Ieșire** | **Comentarii** |
 | :---:       |    :----:   |   :---:     |
 | perfectNumber(6) |We have a perfect number!| 1 + 2 + 3|
@@ -1096,7 +1096,7 @@ Aceasta este suma divizorilor sale pozitivi, excluzând numărul în sine (cunos
 
 În mod echivalent, un număr perfect este un număr care este **o jumătate din suma** tuturor divizorilor săi pozitivi `(incluzând numărul respectiv) => 6` este un număr perfect, deoarece este suma lui `1 + 2 + 3` (toate fiind împărțite fără reziduuri)
 
-- Citiți despre [Perfect](https://en.wikipedia.org/wiki/Perfect_number) number.
+- Citiți despre [Perfect](https://en.wikipedia.org/wiki/Perfect_number) number
 
 [/task-description]
 [code-io /]
