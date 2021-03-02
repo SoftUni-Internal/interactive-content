@@ -84,8 +84,6 @@ For example, if we want to boil an egg, we will **follow some steps** (an algori
 
 - Wait for the water to boil and take the egg out after 5 minutes
 
-Similarly, in programming **the computer program executes algorithms**: a sequence of commands, necessary for the completion of a certain task. 
-
 For example, to arrange a sequence of numbers in an **ascending order**, an algorithm is needed to find the **smallest number** and place it at the **beginning of the sequence**. 
 
 Тhen find the **next smallest one** from the numbers left and put it in **second place** and **repeat these steps** until the algorithm has gone through and ordered all the numbers. 
