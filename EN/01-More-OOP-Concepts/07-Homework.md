@@ -2,18 +2,8 @@
 
 [slide hideTitle]
 # Problem: Card Suit
-[code-task title="Card Suit" taskId="oop-basics-java-more-oop-concepts-Card-Suit" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Card Suit" taskId="oop-basics-java-more-oop-concepts-Card-Suit" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 Create an **enumeration type** that has as its constants the **four suits** of a deck of playing cards (Clubs, Diamonds, Hearts, and Spades). 
@@ -35,7 +25,7 @@ You must submit your solution in the form of a `.zip` archive.
 |  | Ordinal value: 3; Name value: SPADES |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -67,18 +57,8 @@ Ordinal value: 3; Name value: SPADES
 
 [slide hideTitle]
 # Problem: Card Rank
-[code-task title="Card Rank" taskId="oop-basics-java-more-oop-concepts-Card-Rank" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Card Rank" taskId="oop-basics-java-more-oop-concepts-Card-Rank" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 Create an **enumeration type** that has as its constants the **fourteen ranks** of a deck of playing cards (ACE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING). 
@@ -109,7 +89,7 @@ You must submit your solution in the form of a `.zip` archive.
 |  | Ordinal value: 12; Name value: KING |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -160,18 +140,8 @@ Ordinal value: 12; Name value: KING
 [slide hideTitle]
 # Problem: Cards with Power
 
-[code-task title="Cards with Power" taskId="oop-basics-java-more-oop-concepts-Cards-with-Power" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Cards with Power" taskId="oop-basics-java-more-oop-concepts-Cards-with-Power" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 Create a program that generates a **deck of cards** **(class Card)** which have a power. 
@@ -210,7 +180,7 @@ You must submit your solution in the form of a `.zip` archive.
 | SPADES |  |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -272,18 +242,8 @@ Card name: TWO of DIAMONDS; Card power: 15
 
 [slide hideTitle]
 # Problem: Traffic Lights
-[code-task title="Traffic Lights" taskId="oop-basics-java-more-oop-concepts-Traffic-Lights" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Traffic Lights" taskId="oop-basics-java-more-oop-concepts-Traffic-Lights" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 Implement a simple state machine in the form of a traffic light. 
@@ -321,7 +281,7 @@ You must submit your solution in the form of a `.zip` archive.
 |  | YELLOW GREEN RED |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
