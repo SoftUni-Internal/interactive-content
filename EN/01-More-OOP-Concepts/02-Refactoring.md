@@ -50,7 +50,7 @@ class OutputFormatter { public static void print() { … } }
 [code-task title="Student System" taskId="oop-basics-java-more-oop-concepts-lab-Student-System" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-## Description
+# Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-basics/01-Java-OOP-basics-More-OOP-Concepts-Lab-Resources.zip) **for this task.**
 
