@@ -82,7 +82,7 @@ For example, if we want to boil an egg, we will **follow some steps** (an algori
 
 - Place the pot on the stove and put the egg inside
 
-- Wait for the water to boil and take the eggs out after 5 minutes
+- Wait for the water to boil and take the egg out after 5 minutes
 
 Similarly, in programming **the computer program executes algorithms**: a sequence of commands, necessary for the completion of a certain task. 
 
