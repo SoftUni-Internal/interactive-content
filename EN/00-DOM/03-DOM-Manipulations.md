@@ -12,13 +12,13 @@ Before they are modified, these elements need to be **selected** first.
 
 Here are the four ways to select an element:
 
-- `getElementById()` - Returns only **one** element with the desired id.
+- `getElementById()` - Returns only **one** element with the desired id
 
-- `getElementsByTagName()` - Returns an **array** of the elements with this tag.
+- `getElementsByTagName()` - Returns an **array** of the elements with this tag
 
-- `getElementsByClassName()` - Returns an **array** of the elements with this class.
+- `getElementsByClassName()` - Returns an **array** of the elements with this class
 
-- `querySelector()` - Returns the **first** element to match the selector, or **null** if there are none.
+- `querySelector()` - Returns the **first** element to match the selector, or **null** if there are none
 
 [/slide]
 
@@ -61,7 +61,6 @@ Here are some of the **methods** and **properties** which are used in the proces
 Every item in that collection has **two** values - **attribute** and **value**
 
 - `.setAttribute()` - A method, used to **add** an attribute to an element, or **update** it, if the element already has the given attribute
-
 
 - `.style` - A property, used to **directly** update the **CSS** of an element
 
@@ -519,14 +518,14 @@ let p = document.getElementById("my-name");
 p.textContent += "Ellie";
 ```
 
-- `innerHTML` - Used to **get** and **change** the HTML of an element.
+- `innerHTML` - Used to **get** and **change** the HTML of an element
 
 ```js
 let div = document.getElementById("container");
 div.innerHTML += "<p>What's your name</p>";
 ```
 
-- `value` - Used to **get** and **set** the value of an element.
+- `value` - Used to **get** and **set** the value of an element
 
 ```js
 let input = document.getElementById("name-input");
@@ -559,7 +558,7 @@ let a = document.getElementById("link");
 a.getAttribute("href"); // www.google.com
 ```
 
-- `setAttribute()` - **Sets** the value of the element's attribute or **updates** it if it already exists. 
+- `setAttribute()` - **Sets** the value of the element's attribute or **updates** it if it already exists
 
 Accepts two parameters - **name of attribute and value**.
 
@@ -568,7 +567,7 @@ let input = document.getElementById("first-input");
 input.setAttribute("name", "username"); // Sets the value of the name attribute to "username"
 ```
 
-- `removeAttribute()` - **Removes** from the given HTML element 
+- `removeAttribute()` - **Removes** from the given HTML element
 
 Accepts one parameter - **the name of the attribute**.
 
@@ -659,7 +658,7 @@ Every time when we **click** on the `[CHANGE]` button, **the color** and **the s
 
 **After every click**, the current paragraph **font size** should be **changed** to **the current font size multiplied by 2**. Also, **the color** of that paragraph should change, depending on the **previous color**.
 
-# Example:
+## Example:
 
 - If we click **once**, the color should be changed to **blue** and the font size should be **2** (First initial size)
 
