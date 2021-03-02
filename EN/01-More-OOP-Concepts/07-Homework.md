@@ -5,7 +5,7 @@
 [code-task title="Card Suit" taskId="oop-basics-java-more-oop-concepts-Card-Suit" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-## Description
+# Description
 Create an **enumeration type** that has as its constants the **four suits** of a deck of playing cards (Clubs, Diamonds, Hearts, and Spades). 
 
 Iterate over the values of the enumeration type and print all **ordinal values** and **names**. 
@@ -60,7 +60,7 @@ Ordinal value: 3; Name value: SPADES
 [code-task title="Card Rank" taskId="oop-basics-java-more-oop-concepts-Card-Rank" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-## Description
+# Description
 Create an **enumeration type** that has as its constants the **fourteen ranks** of a deck of playing cards (ACE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING). 
 
 Iterate over the values of the enumeration type and print all ordinal values and names.
@@ -143,7 +143,7 @@ Ordinal value: 12; Name value: KING
 [code-task title="Cards with Power" taskId="oop-basics-java-more-oop-concepts-Cards-with-Power" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-## Description
+# Description
 Create a program that generates a **deck of cards** **(class Card)** which have a power. 
 
 The power of a card is calculated by **adding** the power of its rank to the power of its suit.
@@ -245,7 +245,7 @@ Card name: TWO of DIAMONDS; Card power: 15
 [code-task title="Traffic Lights" taskId="oop-basics-java-more-oop-concepts-Traffic-Lights" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-## Description
+# Description
 Implement a simple state machine in the form of a traffic light. 
 
 Every traffic light has **three** possible signals - **red**, **green** and **yellow**. 
