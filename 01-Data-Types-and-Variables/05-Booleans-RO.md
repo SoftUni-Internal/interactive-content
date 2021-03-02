@@ -186,7 +186,7 @@ Exemple pentru numere uimitoare sunt:
 
 - 583472 (5 + 8 + 3 + 4 + 7 + 2 = 29)
 
-# Exemplus
+## Exemplus
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | amazingNumbers(1233) | 1233 Amazing? True |

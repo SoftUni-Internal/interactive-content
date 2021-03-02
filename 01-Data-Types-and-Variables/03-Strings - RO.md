@@ -93,7 +93,7 @@ Creați un program, which receives three parameters:
 
 Your task is to print the first name and the last name, joined by the delimiter.
 
-# Exemplus
+## Exemplus
   | **Date de intrare** | **Rezultat** |
 | --- | --- |
 | concatNames('John', 'Smith', '\-\>') | John\-\>Smith |
@@ -205,7 +205,7 @@ Trebuie să **înlocuiți** spațiul lipsă semnalat de underscore din primul ș
 Dacă sunt egale, ar trebui să tipăriți "**Matched**" ("**Potrivire**"), altfel veți tipări "**Not Matched**" ("**Nepotrivire**").
 
 
-# Exemplus
+## Exemplus
   | **Intrare** | **Ieșire** |
 | --- | --- |
 | rightPlace('Str_ng', 'I', 'Strong') | Not Matched |
