@@ -735,7 +735,6 @@ public class T09TestSetLength {
         return Classes.allClasses.get(className);
     }
 }
-```
 [/input]
 [output]
 Test Passed!
