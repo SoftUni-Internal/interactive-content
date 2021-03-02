@@ -50,7 +50,7 @@ You have a text box that says `please type your username and type your password`
 
 This is a way to receive user's input.
 
-Programs can also take the user data (input) from some rest API or as a parameter in a function.
+Programs can also take the user data (input) from some REST API or as a parameter in a function.
 
 [/slide]
 
