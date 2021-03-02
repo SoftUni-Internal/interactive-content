@@ -82,20 +82,11 @@ void method(String a, int... b){
 
 [slide hideTitle]
 # Problem with Solution: Book
-[code-task title="Book" taskId="oop-basics-java-iterators-and-comparators-lab-Book" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Book" timeLimit=5000 taskId="oop-basics-java-iterators-and-comparators-lab-Book" executionType="tests-execution" executionStrategy="java-project-tests"] 
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 Create a `Book` class from the UML diagram below:
 
 | Book |
@@ -115,9 +106,10 @@ You can use only **one constructor**.
 
 There can be **no authors**, **one author** or **many authors**. 
 
-## Example
+# Example
 
 Use the code below to test your **Book** class.
+
 ```java
 public static void main(String[] args) {
 Book bookOne = new Book("Animal Farm", 2003, "George Orwell");
@@ -134,7 +126,6 @@ books.add(bookThree);
 ```
 
 [/task-description]
-[code-io /]
 [tests]
 [test open]
 [input]
