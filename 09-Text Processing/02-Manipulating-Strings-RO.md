@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Concatenare
 
-**concatenarea** în JS se face cu operatorii: `+` și `+ =` sau prin metoda `concat()`.
+**Concatenarea** în JS se face cu operatorii: `+` și `+ =` sau prin metoda `concat()`.
 
 **Concat** poate fi folosit și pentru **fuzionarea**a două matrice.
 
@@ -39,7 +39,6 @@ Acest lucru se datorează faptului că `+` și `+=` și metoda `concat()` fac la
 
 [slide hideTitle]
 # Căutarea de Subșiruri
-
 
 Pentru a **găsi** un subșir, putem folosi `indexOf()` sau `lastIndexOf()`.
 
@@ -125,12 +124,7 @@ Asta pentru că nu i-am dat al doilea parametru, care este indicele **sfârșit*
 [/slide]
 
 [slide hideTitle]
-# Operațiuni cu șiruri
-
-[vimeo-video]
-[stream language="EN" videoId="489817576/c647cb8ef4" default /]
-[stream language="RO" videoId="489817576/c647cb8ef4"  /]
-[/video-vimeo]
+# Operațiuni cu Şiruri
 
 Dacă dorim să schimbăm direct o parte a unui șir, vom folosi `replace()`.
 
@@ -167,7 +161,7 @@ console.log(replacedStr);
 [code-editor language=javascript]
 ```
 function substring(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -190,7 +184,7 @@ Numerele vor fi un indice de pornire și un număr de elemente pentru subșir.
 Imprimați rezultatul.
 
 ## Exemplu
-   |**Intrare**|**Ieșire**|
+|**Intrare**|**Ieșire**|
 | --- | --- |
 | substring('ASentence', 1, 8) | Sentence |
 
@@ -250,7 +244,7 @@ JAko88/(()
 [/slide]
 
 [slide hideTitle]
-# Împărțirea unui Șir
+# Împărțirea Unui Şir
 
 Când vrem să separăm cuvintele într-un șir, folosim metoda `split()`.
 
@@ -329,7 +323,7 @@ console.log(str.repeat(5));
 
 ```
 function censoredWords(sentence, word){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -350,7 +344,7 @@ Scrieți o funcție care primește un text ca prim parametru și un singur cuvâ
 Găsiți toate aparițiile acestui cuvânt în text și **înlocuiți-le** cu numărul corespunzător de "\*".
 
 # Exemplu
-   |**Intrare**|**Ieșire**|
+|**Intrare**|**Ieșire**|
 | --- | --- |
 | censoredWords('A small sentence with some words', 'small') | A \*\*\*\*\* sentence with some words |
 
@@ -456,7 +450,6 @@ console.log(str.trimEnd());
 [slide hideTitle]
 # Începe Cu sau se Termină Cu
 
-
 Cu `startsWith()`, putem verifica dacă un șir începe cu un cuvânt specific, că vom trece la metodă ca parametru.
 
 **EndsWith** este aproape la fel.
@@ -494,7 +487,7 @@ console.log(sentence.endsWith('John'));
 console.log(sentence.endsWith('John', 10));
 ```
 
-În primul exemplu,**console.logs**, va reveni la `true`, dar în al doilea, va întoarce `false`, deoarece șirul nu va fi în partea de căutare. 
+În primul exemplu,**console.logs**, va reveni la "**true**", dar în al doilea, va întoarce "**false**", deoarece șirul nu va fi în partea de căutare. 
 
 [/slide]
 
@@ -536,7 +529,7 @@ console.log(padded);
 
 ```
 function countStringOccurrences(text, str){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -556,7 +549,7 @@ Scrieți o funcție care primește o bucată de text și un șir pe care trebuie
 Imprimați toate aparițiile acelui cuvânt în șir.
 
 ## Exemplu
-   |**Intrare**|**Ieșire**|
+|**Intrare**|**Ieșire**|
 | --- | --- |
 | countStringOccurrences('This is a word and it also is a sentence', 'is') | 2 |
 

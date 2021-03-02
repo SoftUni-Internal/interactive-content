@@ -30,7 +30,7 @@ Pentru a declara o clasă, folosim cuvântul cheie `class` cu numele clasei, în
 [/slide]
 
 [slide hideTitle]
-# Exemplu de clasă
+# Exemplu de Clasă
 
 
 Cuvântul cheie `class` este folosit pentru a crea o clasă.
@@ -58,7 +58,7 @@ let student = new Student('Peter', 5.50);
 [/slide]
 
 [slide hideTitle]
-# Funcțiile într-o clasă
+# Funcțiile într-o Clasă
 
 Capacitatea de a modifica datele este realizată de funcții speciale care fac parte din clasă și se numesc metode.
 
@@ -116,14 +116,14 @@ De asemenea, ar trebui să aibă o funcție numită **meow** care va tipări "\{
 Pentru fiecare dintre șirurile furnizate trebuie să creați un obiect de pisică.
 
 # Example One
-  | **Input** | **Output** |
+  |**Intrare**|**Ieșire** |
 | --- | --- |
 |cats(['Mellow 2', 'Tom 5'])| Mellow, age 2 says Meow|
 ||Tom, age 5 says Meow|
 
 
 # Example Two
-  | **Input** | **Output** |
+  |**Intrare**|**Ieșire** |
 | --- | --- |
 |cats(['Millie 3', 'Lola 7'])| Millie, age 3 says Meow|
 ||Lola, age 7 says Meow|

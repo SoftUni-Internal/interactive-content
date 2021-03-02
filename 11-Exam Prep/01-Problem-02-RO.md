@@ -47,7 +47,7 @@ Apoi, va trebui să determinați "grupa de produse" a articolului din codul de b
 
 Dacă nu există cifre în codul de bare, grupul de produse implicit este "**00**".
 
-**Exemple:** 
+**Exemplu:** 
 
 "\@\#FreshFisH\@\#" \-\> product group: 00
 
@@ -88,8 +88,6 @@ Pentru fiecare cod de bare pe care îl procesați, trebuie să imprimați un mes
 ||Invalid barcode|
 ||Invalid barcode|
 ||Product group\: 00|
-
-
 
 [/task-description]
 [code-io /]

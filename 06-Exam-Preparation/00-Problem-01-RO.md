@@ -4,12 +4,11 @@
 
 # Array Modifier
 
-
 [code-task title="Array Modifier" taskId="js-fundamentals-examPreparation-2-Array-Modifier" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function arrayModifier(input) {
-	// Write your code here
+	// Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -67,7 +66,7 @@ Forma finală a tabloului trebuie tipărită pe consolă, fiecare dintre element
 
 ## Example One
 
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 |arrayModifier(['23 -2 321 87 42 90 -123', 'swap 1 3','swap 3 6','swap 1 0','multiply 1 2','multiply 2 1','decrease','end'])| 86, 7382, 2369942, -124, 41, 89, -3|
 
@@ -101,7 +100,7 @@ Starea celei de-a șasea comenzi: "86 7383 2369942 -124 41 89 -3"
 
 ## Example Two
 
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 |arrayModifier(['1 2 3 4','swap 0 1','swap 1 2','swap 2 3','multiply 1 2','decrease','end'])| 1, 11, 3, 0|
 

@@ -57,10 +57,10 @@ Dacă nu, imprimați "**Nothing to replace!**".
 
 ## Examples One
 
-**Input** 
+**Intrare**
 passwordReset('Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr', ['TakeOdd', 'Cut 15 3', 'Substitute :: -', 'Substitute \| \^', 'Done'])
 
-**Output**
+**Ieșire**
 
 icecream\:\:hot\:\:summer
 

@@ -128,7 +128,7 @@ Cuvântul nu este valid dacă are **orice altceva decât** literele.
 Imprimați cuvintele pe care le-ați găsit fără etichetă, fiecare pe o nouă linie de intrare.
 
 ## Exemplu
-   |**Intrare**|**Ieșire**|
+|**Intrare**|**Ieșire**|
 | --- | --- |
 | modernTimesOfHashTag('Nowadays everyone uses # to tag a #special word in #socialMedia')| special |
 | | socialMedia |
@@ -222,14 +222,13 @@ Sarcina dvs. este de a scădea **numele fișierului** și extensia acestuia.
 Feriți-vă de fișiere precum **template.bak.pptx**, deoarece **template.bak** ar trebui să fie numele fișierului, în timp ce pptx este extensia.
 
 ## Example One
-   |**Intrare**|**Ieșire**|
+|**Intrare**|**Ieșire**|
 | --- | --- |
 | extractFile('C:\\\Internal\\\training-internal\\\Template.pptx') | File name: Template |
 || File extension: pptx |
 
 ## Example Two
-
-   |**Intrare**|**Ieșire**|
+|**Intrare**|**Ieșire**|
 | --- | --- |
 | extractFile('C:\\\Projects\\\Data-Structures\\\LinkedList.cs') | File name: LinkedList |
 || File extension: cs |
@@ -340,7 +339,7 @@ Dacă nu găsiți cuvântul print: "\{**word**\} **not found!**".
 
 
 ## Examples
-   |**Intrare**|**Ieșire**|
+|**Intrare**|**Ieșire**|
 | --- | --- |
 | stringSubstring('javascript', 'JavaScript is the best programming language') | javascript |
 | stringSubstring('python','JavaScript is the best programming language') | python not found\! |
@@ -433,8 +432,8 @@ function adapter(input, code) {
 # Descriere
 Scrieți o funcție care primește un singur șir și **înlocuiește** orice secvență din **aceleași litere** cu o singură literă corespunzătoare.
 
-## Examples
-   |**Intrare**|**Ieșire**|
+## Exemplus
+|**Intrare**|**Ieșire**|
 | --- | --- |
 | replaceRepeatingChars('aaaaabbbbbcdddeeeedssaa') | abcdedsa |
 | replaceRepeatingChars('qqqwerqwecccwd') | qwerqwecwd |
@@ -533,8 +532,8 @@ Sarcina dvs. aici este de a împărți **fiecare cuvânt separat de șir.**
 
 Imprimați-le împreună cu **o virgulă și un spațiu.**
 
-## Examples
-   |**Intrare**|**Ieșire**|
+## Exemplus
+|**Intrare**|**Ieșire**|
 | --- | --- |
 | splitter('SplitMeIfYouCanHaHaYouCantOrYouCan') | Split, Me, If, You, Can, Ha, Ha, You, Cant, Or, You, Can |
 | splitter('HoldTheDoor') | Hold, The, Door |

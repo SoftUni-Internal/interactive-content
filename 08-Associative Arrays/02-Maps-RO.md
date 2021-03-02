@@ -16,7 +16,7 @@ Obiectele JavaScript pure sunt ca niște Hărți, deoarece ambele vă permit să
 [/slide]
 
 [slide hideTitle]
-# Adăugarea, accesarea elementelor
+# Adăugarea, Accesarea Elementelor
 
 
 Pentru a adăuga o pereche cheie-valoare, folosiți metoda `.set()`.
@@ -356,8 +356,6 @@ Rezultatul vine ca o **matrice de șiruri**.
 ## Exemplu
 
 |**Intrare**|**Ieșire**|
-| --- | --- |
-| **Input** | **Output** |
 | --- | --- |
 | grades(['Lilly 4 6 6 5', 'Tim 5 6', 'Tammy 2 4 3', 'Tim 6 6']) | Tammy\: 2\,4\,3    |
 |                                                          | Lilly\: 4\,6\,6\,5 |

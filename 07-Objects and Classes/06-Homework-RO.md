@@ -6,7 +6,7 @@
 [code-editor language=javascript]
 ```
 function employees(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -34,9 +34,9 @@ La final, tipăriți toți **angajații listați** în următorul format:
 "**Name:** \{**employeeName**\} **-- Personal Number:** \{**personalNum**\}"
 
 
-# Example
+## Exemplu
 
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 |employees(['Silas Butler','Adnaan Buckley','Juan Peterson','Brendan Villarreal'])| Name\: Silas Butler \-\- Personal Number\: 12 |
 || Name\: Adnaan Buckley \-\- Personal Number\: 14 |
@@ -108,7 +108,7 @@ Name\: Brendan Villarreal \-\- Personal Number\: 18
 [code-editor language=javascript]
 ```
 function towns(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -139,8 +139,8 @@ Ieșirea trebuie să fie obiectele.
 
 Latitudinea și longitudinea trebuie analizate la numere și formatate la a doua zecimală!
 
-## Example
-| **Input** | **Output** |
+## Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 |towns(['Bucuresti \| 42.696552 \| 23.32601','Beijing \| 39.913818 \| 116.363625'])|\{ town: 'Bucuresti', latitude: '42.70', longitude: '23.33' \} |
 | | \{ town: 'Beijing', latitude: '39.91', longitude: '116.36' \} |
@@ -220,7 +220,7 @@ towns(['a \| 136.45 \| 812.575'])
 [code-editor language=javascript]
 ```
 function movies(input){
-  // Write your code here 
+  // Scrieți codul dvs. aici 
 }
 ```
 [/code-editor]
@@ -246,9 +246,8 @@ Informațiile despre obiectul filmelor trebuie să fie numele, regizorul și dat
 
 La final, tipăriți toate filmele care au toate informațiile (dacă filmul nu are regizor, nume sau dată, nu le imprimați) **în format JSON.**
 
-## Example
-
-| **Input** | **Output** |
+## Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 |movies(['addMovie Fast and Furious','addMovie Godfather','Inception directedBy Christopher Nolan','Godfather directedBy Francis Ford Coppola','Godfather onDate 29.07.2018','Fast and Furious onDate 30.07.2018','Batman onDate 01.08.2018','Fast and Furious directedBy Rob Cohen']) | \{"name":"Fast and Furious","date":"30.07.2018","director":"Rob Cohen"\}|
 | | \{"name":"Godfather","director":"Francis Ford Coppola","date":"29.07.2018"\} |
@@ -324,7 +323,7 @@ movies(['addMovie y', 'addMovie b', 'y directedBy j', 'y onDate 30\.07\.2010', '
 [code-editor language=javascript]
 ```
 function inventory(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -360,9 +359,9 @@ Datele trebuie să fie în următorul format pentru fiecare erou:
 **items** \=\> \{**item1**\}, \{**item2**\}, \{**item3**\}"
 
 
-# Exemplu
+## Exemplu
 
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | inventory(['Isacc / 25 / Apple, GravityGun', 'Derek / 12 / BarrelVest, DestructionSword', 'Hes / 1 / Desolator, Sentinel, Antara']) | Hero: Hes |
 | | level \=\> 1 |
@@ -493,7 +492,7 @@ items \=\> ca, d, e, q, t, w
 [code-editor language=javascript]
 ```
 function dictionary(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -525,7 +524,7 @@ Nu uitați să sortați conținutul **alfabetic** după termenii ca în dicțion
 
 # Exemplu
 
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | dictionary(['\{"Coffee":"A hot drink made from the roasted and ground seeds (coffee beans) of a tropical shrub."\}','\{"Bus":"A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare."\}','\{"Boiler":"A fuel-burning apparatus or container for heating water."\}','\{"Tape":"A narrow strip of material, typically used to hold or fasten something."\}','\{"Microphone":"An instrument for converting sound waves into electrical energy variations which may then be amplified, transmitted, or recorded."\}']) | Term\: Boiler \=\> Definition\: A fuel\-burning apparatus or container for heating water. |
 | | Term\: Bus \=\> Definition\: A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare. |
@@ -612,7 +611,7 @@ Term: zmmjad \=\> Definition: gyuu guy guy gyu guy guyguhvhv
 [code-editor language=javascript]
 ```
 function songs(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]

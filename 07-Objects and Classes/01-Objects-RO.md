@@ -151,7 +151,7 @@ Write a function that receives **three elements**, sets them to an **object** an
 
 The input comes as 3 separate **strings** in the following order: **firstName**, **lastName**, **age**.
 
-# Examples
+## Exemplus
 |**Intrare**|**Ieșire** |
 | --- | --- |
 | personInfo('Peter','Pan','20') | \{ firstName: 'Peter', lastName: 'Pan', age: '20' \} |

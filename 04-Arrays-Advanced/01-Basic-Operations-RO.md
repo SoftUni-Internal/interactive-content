@@ -17,7 +17,7 @@ Funcționalitatea avansată a unei matrice constă din următoarele funcții:
 
 - `unshift(el)` - **adaugă elemente noi la începutul** unei matrice și returnează noua **lungime**
 
-- `includes(el)` - determină dacă o **matrice include un anumit element**, returnează `true` sau `false`
+- `includes(el)` - determină dacă o **matrice include un anumit element**, returnează "**true**" sau "**false**"
 
 - `indexOf(el)` - returnează indexul unui element sau returnează -1, dacă nu poate găsi elementul
 
@@ -59,7 +59,6 @@ console.log(number);
 [slide hideTitle]
 # Adăugați la început, Eliminați de la început 
 
-
 Metoda `array.unshift()` este utilizată pentru a adăuga un element nou la începutul unui matrice.
 
 ``` js live
@@ -83,7 +82,7 @@ console.log(number);
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution:  Sum First Last
+# Problem with Solution: Sum First Last
 
 [code-task title="Sum First Last" taskId="fundamentals-js-arrays-advanced-lab-Sum-First-Last" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -184,11 +183,6 @@ sumFirstLast(['5', '10'])
 [slide hideTitle]
 # Pushing Into an Array
 
-[vimeo-video]
-[stream language="EN" videoId="489374828/cbd47a4e46" default /]
-[stream language="RO" videoId="489374828/cbd47a4e46"  /]
-[/video-vimeo]
-
 Metoda `array.push()` adaugă unul sau mai multe elemente la sfârșitul unui tablou și returnează noua lungime:
 
 ``` js live
@@ -202,11 +196,6 @@ console.log(fruits);
 
 [slide hideTitle]
 # Schimbarea și Neschimbarea într-o Matrice
-
-[vimeo-video]
-[stream language="EN" videoId="489374831/7be466e53c" default /]
-[stream language="RO" videoId="489374831/7be466e53c"  /]
-[/video-vimeo]
 
 Metoda `array.shift()` elimină primul element al unei matrice:
 
@@ -376,7 +365,6 @@ negativePositive(['\-2', '3', '0', '5', '\-6', '0', '8'])
 
 [slide hideTitle]
 # Găsiți Valorile
-
 
 `array.includes()` returnează in adevarat dacă valoarea dată face parte din matrice.
 

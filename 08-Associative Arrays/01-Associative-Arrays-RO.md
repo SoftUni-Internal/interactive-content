@@ -220,7 +220,7 @@ if (assocArr.hasOwnProperty('name')) {
 
 Eliminarea entităților se face folosind cuvântul cheie `delete`.
 
- Pentru a testa acest lucru, vom declara un obiect gol și îi vom atribui o cheie.
+Pentru a testa acest lucru, vom declara un obiect gol și îi vom atribui o cheie.
 
 Apoi, vom șterge cheia. Ieșirea este un obiect gol, după cum puteți vedea din exemplu.
 
@@ -503,7 +503,7 @@ console.log(result);
 [/slide]
 
 [slide hideTitle]
-# Problemă: AddressBook
+# Problem with Solution: AddressBook
 
 [code-task title="Address Book" taskId="js-fundamentals-pt2-Associative-Arrays-lab-Address-Book" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -536,7 +536,8 @@ Dacă același nume apare de mai multe ori, salvați adresa **cea mai recentă**
 Tipăriți o listă cu toate intrările, **sortate** alfabetic după **nume**.
 
 ## Exemplu
-
+|**Intrare**|**Ieșire** |
+|---|---|
 | addressBook(['Tim:Doe Crossing', 'Bill:Nelson Place', 'Peter:Carlyle Ave', 'Bill:Ornery Rd']) | Bill \-\> Ornery Rd    |
 |                                                                                    | Peter \-\> Carlyle Ave |
 |                                                                                    | Tim \-\> Doe Crossing  |
@@ -633,7 +634,9 @@ Odată ce avem o **referință** la valoare, o putem **manipula** ca orice alt o
 
 În exemplul următor declarăm un obiect care are două proprietăți: "Tim" și "Bill".
 
-"Tim" este un obiect, la fel ca și "Bill". Pentru a accesa contactele lui Bill, trebuie să avem o referință la obiect prin crearea variabilei `billsContact`.
+"Tim" este un obiect, la fel ca și "Bill". 
+
+Pentru a accesa contactele lui Bill, trebuie să avem o referință la obiect prin crearea variabilei `billsContact`.
 
 Putem accesa această proprietate din obiectul "Bill", utilizând variabila `billsContact`.
 

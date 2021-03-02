@@ -1,13 +1,11 @@
-# Valoare vs. Tipuri de referință
+# Valoare vs. Tipuri de Referință
 
 [slide hideTitle]
-# Valoare vs. Tipuri de referință
-
-## Missing videos.
+# Valoare vs. Tipuri de Referință
 
 [image assetsSrc="Value-vs-Reference-Types(1).gif" /]
 
-# Tipuri de valori
+## Tipuri de valori
 
 În Javascript, există șapte tipuri de date de bază (numite și primitive).
 
@@ -31,7 +29,7 @@ console.log(`Variable b = ${c}`);
 console.log(`Variable b = ${d}`);
 ```
 
-## Tipuri de referință
+## Tipuri de Referință
 
 Există trei tipuri comune de date de referință - **Obiecte**, **Matrice** și **Funcții**.
 

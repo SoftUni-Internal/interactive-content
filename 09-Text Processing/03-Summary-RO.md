@@ -1,12 +1,8 @@
 [slide hideTitle]
 # Rezumat
 
-[vimeo-video]
-[stream language="EN" videoId="489817252/92c1c7b52f" default /]
-[stream language="RO" videoId="489817252/92c1c7b52f"  /]
-[/video-vimeo]
 
-**În această lecție am învățat că:**
+## În această lecție am învățat că:
 
 - **Strings** are an immutable series of **characters**
 

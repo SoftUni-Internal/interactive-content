@@ -4,7 +4,6 @@
 
 # Mu Online
 
-
 [code-task title="Mu Online" taskId="js-fundamentals-examPreparation-Mu-Online" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -96,7 +95,7 @@ Imprimați mesajele corespunzătoare, așa cum se arată în descriere.
 
 ## Example One
 
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 |muOnline('rat 10\|bat 20\|potion 10\|rat 10\|chest 100\|boss 70\|chest 1000')| You defeated a rat.|
 ||You defeated a bat.|
@@ -109,7 +108,7 @@ Imprimați mesajele corespunzătoare, așa cum se arată în descriere.
 
 ## Example Two
 
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 |muOnline('cat 10\|potion 30\|orc 10\|chest 10\|snake 25\|chest 110')| You defeated a cat.')|
 ||You healed for 10 hp.|

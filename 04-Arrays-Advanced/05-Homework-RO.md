@@ -26,7 +26,7 @@ Veți primi o **gamă de produse.**
 
 Imprimați o serie numerotată a tuturor produselor **ordonate după nume.**
 
-# Exemplu
+## Exemplu
 |**Intrare**|**Ieșire** |
 | --- | --- |
 |listProducts(['Potatoes', 'Tomatoes', 'Onions', 'Apples'])| 1\.Apples

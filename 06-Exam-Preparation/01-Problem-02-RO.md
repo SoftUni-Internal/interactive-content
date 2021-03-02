@@ -3,7 +3,6 @@
 [slide hideTitle]
 # The Lift
 
-
 [code-task title="The Lift" taskId="js-fundamentals-examPreparation-2-The-Lift" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -31,9 +30,9 @@ Dacă o cabină este plină, ar trebui să îndreptați oamenii către următoar
 
 ## Intrare
 
-* Pe prima linie, veți primi numărul de persoane care așteaptă la coadă pentru a urca pe lift.
+* Pe prima linie, veți primi numărul de persoane care așteaptă la coadă pentru a urca pe lift
 
-* Pe a doua linie, veți primi starea actuală a liftului - un șir de numere "(0-4)" fiecare număr reprezentând numărul de persoane din fiecare cabină următoare, separate printr-un spațiu gol.
+* Pe a doua linie, veți primi starea actuală a liftului - un șir de numere "(0-4)" fiecare număr reprezentând numărul de persoane din fiecare cabină următoare, separate printr-un spațiu gol
 
 ## Ieșire
 
@@ -57,7 +56,7 @@ Urmat de:
 
 ## Example One
 
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 |lift([15, '0 0 0 0'])| There is room for more passengers! |
 ||4 4 4 3 |
@@ -72,7 +71,7 @@ Urmat de:
 
 ## Example Two
 
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 |lift([20, '0 2 0'])|The lift is full. 10 people currently in line.|
 ||4 4 4|

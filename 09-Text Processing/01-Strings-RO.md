@@ -1,8 +1,7 @@
 # Șir
 
-[slide]
-# Ce este un Șir
-
+[slide hideTitle]
+# Ce Este un Șir
 
 **Șirurile** sunt serii de **caractere.**
 
@@ -73,7 +72,7 @@ Aceasta va da ca rezultat de asemenea, `J`, deoarece cele două moduri sunt iden
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Iterează Printr-un Șir: Demo
 
 Iterează printr-un șir folosind bucla `for-of`:
@@ -88,7 +87,7 @@ for(let el of text){
 In this example, every character in `text` will be printed to the console.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem with Solution: Print Characters
 
 [code-task title="Print Characters" taskId="js-fund-part-2-text-processing-lab-Print-Characters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -111,12 +110,11 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-## Descriere
+# Descriere
 Scrieți o funcție care primește un șir și imprimă caracterele sale pe linii separate.
 
-# Exemplu
-   |**Intrare**|**Ieșire**|
-| --- | --- |
+## Exemplu
+|**Intrare**|**Ieșire**|
 | --- | --- |
 | printCharacters('AWord') | A |
 ||W|

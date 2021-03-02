@@ -3,7 +3,6 @@
 [slide hideTitle]
 # Inventory
 
-
 [code-task title="Inventory" taskId="js-fundamentals-examPreparation-Inventory" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -55,12 +54,12 @@ Dacă obiectul există deja, puteți să-i schimbați poziția și să îl pune�
 După ce primiți "**Craft!**", Imprimați toate articolele din inventarul dvs., separate prin,o virgulă și un spațiu.
 
 ## Examples One
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 |inventory(['Iron, Wood, Sword', 'Collect - Gold', 'Drop - Wood', 'Craft!'])| Iron, Sword, Gold |
 
 ## Examples Two
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 |inventory(['Iron, Sword','Drop - Bronze','Combine Items - Sword:Bow','Renew - Iron', 'Craft!'])| Sword, Bow, Iron|
 

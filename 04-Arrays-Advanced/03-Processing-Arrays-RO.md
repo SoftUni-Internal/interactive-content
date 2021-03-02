@@ -282,7 +282,7 @@ Scrieți o funcție care sortează o matrice în ordine crescătoare și imprim�
 
 Intrările apar ca o serie de elemente **string**, care conțin numere.
 
-## Exemples
+## Exemplus
 |**Intrare**|**Ieșire** |
 | --- | --- |
 |smallestTwoNumbers([30, 15, 50, 5]) | 5 15 |

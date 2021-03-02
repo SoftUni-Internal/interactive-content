@@ -1,4 +1,4 @@
-# Notare obiect JavaScript (JSON)
+# Notare Obiect JavaScript (JSON)
 
 [slide hideTitle]
 # Ce este JSON?
@@ -41,7 +41,7 @@ JSON folosește **text citibil de către om pentru a transmite date.**
 }
 ```
 
-În acest exemplu:
+**În acest exemplu:**
 
 * Parantezele `{}` definesc un JSON
 
@@ -116,7 +116,7 @@ Iterați toate cheile și imprimați-le cu valorile lor în format:
 
 
 ## Example One
-  | **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | convertToObject('\{"name": "George", "age": 40, "town": "Berlin"\}') | name: George |
 ||age: 40|
@@ -124,7 +124,7 @@ Iterați toate cheile și imprimați-le cu valorile lor în format:
 
 ## Example Two
 
-  | **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | convertToObject('\{"name": "Rafael", "age": 27, "town": "Madrid"\}') | name: Rafael |
 ||age: 27|
@@ -190,11 +190,6 @@ town\: Erevan
 [slide hideTitle]
 # Problem with Solution: Convert to JSON
 
-[vimeo-video]
-[stream language="EN" videoId="489794917/67b2d5ed40" default /]
-[stream language="RO" videoId="489794917/67b2d5ed40"  /]
-[/video-vimeo]
-
 [code-task title="Convert to JSON" taskId="JS-fundamentals-2-Objects-and-Classes-lab-Convert-to-JSON" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -223,8 +218,8 @@ Convert the object to a JSON string and print it.
 
 The input is provided as 3 single strings in the order stated above.
 
-# Examples
-  | **Input** | **Output** |
+## Exemplus
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | convertToJSON('George', 'Jones', 'Brown') | \{"name":"George", "lastName":"Jones", "hairColor":"Brown"\}|
 | convertToJSON('Thomas', 'Muller', 'Blonde') | \{"name":"Thomas", "lastName":"Muller", "hairColor":"Blonde"\}|
