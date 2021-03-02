@@ -411,8 +411,8 @@ public class T06TestCalculateSurfaceArea \{
 
         double result = (double) calculateSurfaceArea.invoke(box);
 
-        double expectedResult = (2 \* BOX_LENGTH \* BOX_WIDTH) +
-                (2 \* BOX_LENGTH \* BOX_HEIGHT) + (2 \* BOX_WIDTH \* BOX_HEIGHT);
+        double expectedResult = (2 * BOX_LENGTH * BOX_WIDTH) +
+                (2 * BOX_LENGTH * BOX_HEIGHT) + (2 * BOX_WIDTH * BOX_HEIGHT);
 
         return expectedResult == result;
     \}
@@ -503,8 +503,8 @@ public class T07CalculateLateralSurfaceArea \{
 
         double result = (double) calculateSurfaceArea.invoke(box);
 
-        double expectedResult = (2 \* BOX_LENGTH \* BOX_HEIGHT) +
-                (2 \* BOX_WIDTH \* BOX_HEIGHT);
+        double expectedResult = (2 * BOX_LENGTH * BOX_HEIGHT) +
+                (2 * BOX_WIDTH * BOX_HEIGHT);
 
         return expectedResult == result;
     \}
@@ -595,7 +595,7 @@ public class T08TestCalculateVolume \{
 
         double result = (double) calculateSurfaceArea.invoke(box);
 
-        double expectedResult = BOX_LENGTH \* BOX_WIDTH \* BOX_HEIGHT;
+        double expectedResult = BOX_LENGTH * BOX_WIDTH * BOX_HEIGHT;
 
         return expectedResult == result;
     \}
@@ -1713,7 +1713,7 @@ Test Passed!
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.lang.reflect.\*;
+import java.lang.reflect.*;
 import java.util.HashMap;
 
 public class T10TestIsCalcProductPerDayAccessModifier \{
@@ -2063,7 +2063,7 @@ Test Passed!
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.awt.\*;
+import java.awt.*;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
@@ -4095,9 +4095,9 @@ public class T12TestDoughCalculateCalories \{
 
                 method.setAccessible(true);
                 double currentResult = (double) method.invoke(currentObject);
-                double expectedCurrentResult = NORMAL_VALUE_OF_WEIGHT \* 2
-                        \* flourTypesAndModifiers.get(flourType)
-                        \* bakingTypesAndModifiers.get(bakingType);
+                double expectedCurrentResult = NORMAL_VALUE_OF_WEIGHT * 2
+                        * flourTypesAndModifiers.get(flourType)
+                        * bakingTypesAndModifiers.get(bakingType);
                 if (expectedCurrentResult != currentResult) \{
                     return false;
                 \}
