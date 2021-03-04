@@ -2,21 +2,11 @@
 
 [slide hideTitle]
 # Problem: Generic Box
-[code-task title="Generic Box" taskId="oop-basics-java-generics-Generic-Box" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Generic Box" taskId="oop-basics-java-generics-Generic-Box" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
-Create a **Generic Class Box** that can store any type.
+# Description
+Create a **generic class** `Box` that can store any type.
 
 **Override** the `toString()` method to print the type and the value of the stored data in the format:
 
@@ -24,13 +14,17 @@ Create a **Generic Class Box** that can store any type.
 
 Use the class that you have created and test it with the class `java.lang.String`. 
 
-On the first line, you will get the number **n** - the number of Strings to read from the console. 
+## Input
+
+On the first line, you will get the integer **n** - the number of Strings to read from the console. 
 
 On the next **n** lines, you will get the actual strings. 
 
-For each of them create a box and call its `toString()` method to print its data on the console.
+## Output
 
-## Example
+For each string, create a `Box` class and call its `toString()` method to print the data to the console.
+
+# Example
 | **Input** | **Output** |
 | --- | --- |
 | 2 | java.lang.String: life in a box |
@@ -38,7 +32,7 @@ For each of them create a box and call its `toString()` method to print its data
 | box in a life |  |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -142,20 +136,10 @@ java.lang.String: I am an Integer
 
 [slide hideTitle]
 # Problem: Generic Box of Integer
-[code-task title="Generic Box of Integer" taskId="oop-basics-java-generics-Generic-Box-of-Integer" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Generic Box of Integer" taskId="oop-basics-java-generics-Generic-Box-of-Integer" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 Create a **generic class Box** that can store any type.
 
 **Override** the `toString()` method to print the type and the value of the stored data in the format 
@@ -168,9 +152,9 @@ On the first line, you will get the number **n** - the number of Integers to rea
 
 On the next **n** lines, you will get the actual Integers. 
 
-For each of them create a box and call its `toString()` method to print its data on the console.
+For each of them create a box and call its `toString()` method to print its data to the console.
 
-## Example
+# Example
 | **Input** | **Output** |
 | --- | --- |
 | 3 | java.lang.Integer: 7 |
@@ -179,7 +163,7 @@ For each of them create a box and call its `toString()` method to print its data
 | 42 |  |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -257,20 +241,10 @@ java.lang.Integer: 2147483647
 
 [slide hideTitle]
 # Problem: Generic Swap Method String
-[code-task title="Generic Swap Method String" taskId="oop-basics-java-generics-Generic-Swap-Method-String" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Generic Swap Method String" taskId="oop-basics-java-generics-Generic-Swap-Method-String" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 Create a generic method that receives a list containing **any type of data** and swaps the elements at two given indexes.
 
 As in the previous problems, read **n** number of boxes of type **String** and add them to the list. 
@@ -279,7 +253,7 @@ On the next line, you will receive a swap command consisting of **two indexes**.
 
 Use the method you have created to swap the elements that correspond to the given indexes and **print each** element in the list.
 
-## Example
+# Example
 | **Input** | **Output** |
 | --- | --- |
 | 3 | java.lang.String: Swap me with John |
@@ -289,7 +263,7 @@ Use the method you have created to swap the elements that correspond to the give
 | 0 2 |  |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -383,20 +357,10 @@ java.lang.String: ghi
 
 [slide hideTitle]
 # Problem: Generic Swap Method Integer
-[code-task title="Generic Swap Method Integer" taskId="oop-basics-java-generics-Generic-Swap-Method-Integer" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Generic Swap Method Integer" taskId="oop-basics-java-generics-Generic-Swap-Method-Integer" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 Create a generic method that receives a list containing **any type of data** and swaps the elements at two given indexes.
 
 As in the previous problems, read **n** number of boxes of type **Integer** and add them to the list. 
@@ -405,7 +369,7 @@ On the next line, you will receive a swap command consisting of **two indexes**.
 
 Use the method you've created to swap the elements that correspond to the given indexes and **print each** element in the list.
 
-## Example
+# Example
 | **Input** | **Output** |
 | --- | --- |
 | 3 | java.lang.Integer: 42 |
@@ -415,7 +379,7 @@ Use the method you've created to swap the elements that correspond to the given 
 | 0 2 |  |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -499,20 +463,10 @@ java.lang.Integer: 2147483647
 
 [slide hideTitle]
 # Problem: Generic Count Method String
-[code-task title="Generic Count Method String" taskId="oop-basics-java-generics-Generic-Count-Method-String" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Generic Count Method String" taskId="oop-basics-java-generics-Generic-Count-Method-String" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 Create a **method** that receives as argument a **list of any type that can be compared** and an **element of the given type**.
 
 The method should **return the count of elements that are greater than the value of the given element**.
@@ -525,7 +479,7 @@ On the next **n** lines, you will receive the actual elements.
 
 On the **last line**, you will get the value of the element to which you need to compare every element in the list.
 
-## Example
+# Example
 | **Input** | **Output** |
 | --- | --- |
 | 3 | 2 |
@@ -535,7 +489,7 @@ On the **last line**, you will get the value of the element to which you need to
 | aa |  |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -624,20 +578,10 @@ pp
 
 [slide hideTitle]
 # Problem: Generic Count Method Double
-[code-task title="Generic Count Method Double" taskId="oop-basics-java-generics-Generic-Count-Method-Double" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Generic Count Method Double" taskId="oop-basics-java-generics-Generic-Count-Method-Double" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 Create a **method** that receives as argument a **list of Double** and an **element of the given type**.
 
 The method should **return the count of elements that are greater than the value of the given element**.
@@ -650,7 +594,7 @@ On the next **n** lines, you will receive the actual elements.
 
 On the **last line**, you will get the value of the element to which you need to compare every element in the list.
 
-## Example
+# Example
 | **Input** | **Output** |
 | --- | --- |
 | 3 | 2 |
@@ -660,7 +604,7 @@ On the **last line**, you will get the value of the element to which you need to
 | 7.55 |  |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -742,20 +686,11 @@ On the **last line**, you will get the value of the element to which you need to
 
 [slide hideTitle]
 # Problem: Custom List
-[code-task title="Custom List" taskId="oop-basics-java-generics-Custom-List" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Custom List" taskId="oop-basics-java-generics-Custom-List" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
+
 Create a generic data structure that can store **any type** that can be **compared**.
 
 Implement functions:
@@ -782,7 +717,7 @@ Create a command interpreter that reads commands and modifies the custom list th
 
 **Note**: For the **tests**, use **String** as **T**.
 
-## Example
+# Example
 | **Input** | **Output** |
 | --- | --- |
 | Add aa | cc |
@@ -797,7 +732,7 @@ Create a command interpreter that reads commands and modifies the custom list th
 | END |  |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -948,20 +883,10 @@ f
 
 [slide hideTitle]
 # Problem: Custom List Sorter
-[code-task title="Custom List Sorter" taskId="oop-basics-java-generics-Custom-List-Sorter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Custom List Sorter" taskId="oop-basics-java-generics-Custom-List-Sorter" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 Extend the previous problem by creating an additional **Sorter class**. 
 
 It should have a single static method `sort()` which can sort objects of type **CustomList** containing any type that can be compared.
@@ -971,7 +896,7 @@ It should have a single static method `sort()` which can sort objects of type **
 - `Sort` - Sort the elements in the list in ascending order
 
 
-## Example
+# Example
 | **Input** | **Output** |
 | --- | --- |
 | Add cc | aa |
@@ -982,7 +907,7 @@ It should have a single static method `sort()` which can sort objects of type **
 | END |  |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -1137,27 +1062,17 @@ f
 
 [slide hideTitle]
 # Problem: Custom List Iterator
-[code-task title="Custom List Iterator" taskId="oop-basics-java-generics-Custom-List-Iterator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Custom List Iterator" taskId="oop-basics-java-generics-Custom-List-Iterator" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 Extend the previous problem by making your custom list class to implement **Iterable**.
 
 For the print command, you have probably used a **for** loop.
 
 This should allow you to iterate your list in a **foreach** statement.
 
-## Example
+# Example
 | **Input** | **Output** |
 | --- | --- |
 | Add aa | cc |
@@ -1171,7 +1086,7 @@ This should allow you to iterate your list in a **foreach** statement.
 | END |  |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -1322,20 +1237,10 @@ f
 
 [slide hideTitle]
 # Problem: Tuple
-[code-task title="Tuple" taskId="oop-basics-java-generics-Tuple" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Tuple" taskId="oop-basics-java-generics-Tuple" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 There is a sequence of elements, called **"Tuple"**.
 
 It is a class, which contains two objects: the first one is **"item1"**; the second one is **"item2"**.
@@ -1362,7 +1267,7 @@ The input consists of three lines:
 
 - The first one is holding a **person's name** and **city of residence**
     - both are **separated by space(s)**. 
-    - you have to collect them in the Tuple and print them on the console
+    - you have to collect them in the Tuple and print them to the console
 
 This input comes in the following format:
 
@@ -1390,7 +1295,7 @@ Create the class and make it have getters and setters for its class variables.
 
 The input will be valid, there is no need to check it explicitly!
 
-## Example
+# Example
 | **Input** | **Output** |
 | --- | --- |
 | Sofia Tucker London | Sofia Tucker -> London |
@@ -1398,7 +1303,7 @@ The input will be valid, there is no need to check it explicitly!
 | 23 21.23212321 | 23 -> 21.23212321 |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -1466,20 +1371,10 @@ Shamsky -\> 2999999
 
 [slide hideTitle]
 # Problem: Threeuple
-[code-task title="Threeuple" taskId="oop-basics-java-generics-Threeuple" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Threeuple" taskId="oop-basics-java-generics-Threeuple" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 The next task is to create another Tuple.
 
 Create a Class **Threeuple**. 
@@ -1531,7 +1426,7 @@ The input consists of three lines.
 | Adam 0.10 NGB | Adam -> 0.1 -> NGB |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
