@@ -1,7 +1,7 @@
 # Problem 2: Array Modifier
 [slide hideTitle]
 # Array Modifier
-[code-task title="Shopping List" taskId="java-fund-18-Exam-Preparation-problem-2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Array Modifier" taskId="java-fund-18-Exam-Preparation-problem-2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

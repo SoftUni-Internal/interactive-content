@@ -1,7 +1,7 @@
 # Provlem 1: SoftUni Reception 
 [slide hideTitle]
 # SoftUni Reception 
-[code-task title="National Court" taskId="java-fund-18-Exam-Preparation-problem-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="SoftUni Reception" taskId="java-fund-18-Exam-Preparation-problem-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
