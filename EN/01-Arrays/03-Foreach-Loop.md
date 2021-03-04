@@ -19,8 +19,10 @@ for (int variableName : arrayName) {
   //execute some code here
 }
 ```
+[/slide]
 
-## Printing an Array With Foreach
+[slide hideTitle]
+# Printing an Array With Foreach
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-18-19-20-For-each-loop-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

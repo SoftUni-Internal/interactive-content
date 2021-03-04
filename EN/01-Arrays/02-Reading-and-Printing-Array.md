@@ -44,7 +44,7 @@ Finally, using a for loop we insert all the values into the array.
 
 We can read an array of integers using `java.util.Arrays;` which is a `class` in Java that allows you to create and manipulate arrays.
 
-We're going to learn about **classes** later in this course, but if you're curious feel free to google it.
+We are going to learn about **classes** later in this course, but if you are curious feel free to google it.
 
 
 ## A Shorter Way to Read Arrays
@@ -144,7 +144,6 @@ Read **n** numbers and print them in reverse order, separated by a single space.
 10
 20
 30
-
 [/input]
 [output]
 30 20 10
@@ -157,7 +156,6 @@ Read **n** numbers and print them in reverse order, separated by a single space.
 20
 99
 5
-
 [/input]
 [output]
 5 99 20 -1
@@ -220,7 +218,9 @@ Read **n** numbers and print them in reverse order, separated by a single space.
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-15-printing-arrays-with-for-string.join-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Use `String.join(x, y)`, where x is the **separator** and **y is the array** we want to print. `String.join(…)` works only with `String`:
+Use `String.join(x, y)`, where x is the **separator** and **y is the array** we want to print. 
+
+`String.join(…)` works only with `String`:
 
 ```Java live
 String[] strings = { "one", "two" };
@@ -359,10 +359,12 @@ Read two arrays and print to the console whether they are identical or not.
 Arrays are **identical** if their **elements are equal**.
 
 If the arrays are identical find the **sum of the first one** and print the following message to the console: 
-`"Arrays are identical. Sum: {sum}"`.
+
+"**Arrays are identical. Sum:** \{**sum**\}"
 
 Otherwise, find the first index where the arrays differ and print the following message to the console:  
-`"Arrays are not identical. Found difference at {index} index."`.
+
+"**Arrays are not identical. Found difference at** \{index\} **index.**"
 
 ## Examples
 |**Input**|**Output**|
@@ -374,8 +376,6 @@ Otherwise, find the first index where the arrays differ and print the following 
 |-----|------|------|
 | 1 2 3 4 5 | Arrays are not identical. Found difference at 2 index.|
 | 1 2 4 3 5 | |
-
-
 
 [/task-description]
 [code-io /]

@@ -1071,8 +1071,8 @@ For the example above, the output should be '0 1 0'.
 
 ### Output
 - Print the all cells within the field in format: "\{cell\} \{cell\} … \{cell\}"
-    - If a cell has ladybug in it, print '1'
-    - If a cell is empty, print '0' 
+    - if a cell has ladybug in it, print '1'
+    - if a cell is empty, print '0' 
 
 
 ### Example

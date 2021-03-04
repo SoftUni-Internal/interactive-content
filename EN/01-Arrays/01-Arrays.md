@@ -119,7 +119,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Enter a **day number** \[1…7\] and print the **day name** \(in English\) or **`Invalid day!`**.
+Enter a **day number** \[1…7\] and print the **day name** \(in English\) or "**Invalid Day!**".
 
 Use an **array of strings**.
 
@@ -131,10 +131,11 @@ Use an **array of strings**.
 | 7 | Sunday |
 | 0 | Invalid day! |
 
-### Hints
-* Use an array of strings holding the day names: \{`Monday`, `Tuesday`, `Wednesday`, `Thursday`, `Friday`, `Saturday`, `Sunday`\}.
+## Hints
 
-* Print the element at index \(day-1\) when it is in the range \[1…7\] or `Invalid Day!` otherwise.
+* Use an array of strings holding the day names: `{Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday}`
+
+* Print the element at index \(day-1\) when it is in the range \[1…7\] or "**Invalid Day!**" otherwise
 
 
 [/task-description]
