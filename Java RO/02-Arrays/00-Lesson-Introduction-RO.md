@@ -1,28 +1,28 @@
-[slide]
-# Introducerea lecției
+# Lesson Introduction
 
-TODO: Add Video
+[slide hideTitle]
+
+# Lesson Content
 
 ## În această lecție veți afla despre:
 
-1. **Matrice**
+**1. Matrice**
 
-- Ce sunt matricele? 
+- Ce sunt matricele
 
-- Cum să lucraț cu matricele?
+- Cum să lucraț cu matricele
 
 - Sintaxă matricelor
 
-2. **Citirea matricelor de pe consolă**
+**2. Citirea matricelor de pe consolă**
 
-- Cum să citiți o matrice de pe consolă?
+- Reading an array from the console
 
-- Cum se imprimați o matrice?
+- Printing an array to the console
 
-3. **Foreach Loop**
+**3. Foreach Loop**
 
 - Imprimarea matricei cu ForEach loop
 
-4. **Exerciții live**
 
 [/slide]

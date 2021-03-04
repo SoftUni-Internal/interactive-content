@@ -1,12 +1,7 @@
 # Matrice
 
-[slide]
+[slide hideTitle]
 # Definiție
-
-[vimeo-video startTimeInSeconds="85" endTimeInSeconds="2420"]
-[stream language="EN" videoId="421771481" default /]
-[stream language="RO" videoId="427418768"  /]
-[/vimeo-video]
 
 Ști deja cum să stocaţi date individuale într-o singură variabilă. Matricele ne permit să stocăm mai multe date, din nou, într-o singură variabilă.
 
@@ -26,7 +21,7 @@ int[] numbers = { 1, 1, 2, 4, 5 };
 
 Valorile dintr-o matrice se numesc elemente.
 
-# Exemplu din viața reală
+## Exemplu din viața reală
 
 Imaginați-vă un tren care are vagoane și fiecare vagon - pasageri.
 
@@ -44,7 +39,7 @@ Veți afla despre aceste structuri în cursurile următoare.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Cum lucră cu matricele
 
 Matricele sunt utilizate pentru stocarea mai multor valori într-o singură variabilă, în loc pentru  declararea variabilor separate pentru fiecare valoare.
@@ -101,8 +96,9 @@ Dacă încercăm să accesăm elementul de pe un index nevalid, vom obține o ex
 [/slide]
 
 [slide hideTitle]
-# Problem: Day of Week
-[code-task title="Problem: Day of Week" taskId="java-fund-Arrays-Day-of-Week" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem with Solution: Day of Week
+
+[code-task title="Day of Week" taskId="java-fund-arrays-lab-day-of-week" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -117,7 +113,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Introduceți un **număr de zi** \[1…7\] și imprimați **numele zilei**\ (în limba engleză\) sau **`Invalid day!`**.
+Introduceți un **număr de zi** \[1…7\] și imprimați **numele zilei**\ (în limba engleză\) sau "**Invalid Day!**".
 
 Utilizați o **matrice de șiruri**.
 
@@ -129,10 +125,10 @@ Utilizați o **matrice de șiruri**.
 | 7 | Sunday |
 | 0 | Invalid day! |
 
-### Sugestii
-* Utilizați o matrice de șiruri care conțin numele zilei: \{`Monday`, `Tuesday`, `Wednesday`, `Thursday`, `Friday`, `Saturday`, `Sunday`\}.
+## Sugestii
+* Utilizați o matrice de șiruri care conțin numele zilei: `{Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday}`
 
-*Imprimați elementul la indexul \(day-1\) atunci când este în intervalul \[1…7\] sau  `Invalid Day!` in caz contrar.
+* Imprimați elementul la indexul \(day-1\) atunci când este în intervalul \[1…7\] sau "**Invalid Day!**" in caz contrar
 
 
 [/task-description]
@@ -239,145 +235,9 @@ Invalid day!
 [/slide]
 
 [slide hideTitle]
-# Solution: Day of Week
-[code-task title="Problem: Day of Week" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-import java.util.Scanner;
+# Problem with Solution: Sum Even Numbers
 
-public class TestTech {
-    public static void main(String[] args) {
-        // Scrieți soluția aici
-}
-```
-[/code-editor]
-[task-description]
-## Descrierea
-
-Introduceți un **număr de zi** \[1…7\] și imprimați **numele zilei**\ (în limba engleză\) sau **`Invalid day!`**.
-
-Utilizați o **matrice de șiruri**.
-
-## Exemple 
-|**Input**|**Output**|
-|-----|------|
-| 1 | Monday |
-| 2 | Tuesday |
-| 7 | Sunday |
-| 0 | Invalid day! |
-
-### Sugestii
-* Utilizați o matrice de șiruri care conțin numele zilei: \{`Monday`, `Tuesday`, `Wednesday`, `Thursday`, `Friday`, `Saturday`, `Sunday`\}.
-
-*Imprimați elementul la indexul \(day-1\) atunci când este în intervalul \[1…7\] sau  `Invalid Day!` in caz contrar.
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-1
-[/input]
-[output]
-Monday
-[/output]
-[/test]
-[test open]
-[input]
-2
-[/input]
-[output]
-Tuesday
-[/output]
-[/test]
-[test open]
-[input]
-7
-[/input]
-[output]
-Sunday
-[/output]
-[/test]
-[test open]
-[input]
-0
-[/input]
-[output]
-Invalid day!
-[/output]
-[/test]
-[test]
-[input]
-3
-[/input]
-[output]
-Wednesday
-[/output]
-[/test]
-[test]
-[input]
-4
-[/input]
-[output]
-Thursday
-[/output]
-[/test]
-[test]
-[input]
-5
-[/input]
-[output]
-Friday
-[/output]
-[/test]
-[test]
-[input]
-6
-[/input]
-[output]
-Saturday
-[/output]
-[/test]
-[test]
-[input]
-7
-[/input]
-[output]
-Sunday
-[/output]
-[/test]
-[test]
-[input]
-0
-[/input]
-[output]
-Invalid day!
-[/output]
-[/test]
-[test]
-[input]
-8
-[/input]
-[output]
-Invalid day!
-[/output]
-[/test]
-[test]
-[input]
--150
-[/input]
-[output]
-Invalid day!
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-[slide hideTitle]
-# Problem: Sum Even Numbers
-[code-task title="Problem: Sum Even Numbers" taskId="java-fund-Arrays-Sum-Even-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sum Even Numbers" taskId="java-fund-arrays-lab-sum-even-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -472,98 +332,3 @@ Citiți o matrice de pe consolă și adunați doar numerele pare/Even/.
 [/code-task]
 [/slide]
 
-[slide hideTitle]
-# Solution: Sum Even Numbers
-[code-task title="Problem: Sum Even Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.Arrays;
-import java.util.Scanner;
-
-public class SumEvenNumbers {
-    public static void main(String[] args) {
-       // Scrieți soluția aici
-}
-```
-[/code-editor]
-[task-description]
-## Descriere
-Citiți o matrice de pe consolă și adunați doar numerele pare/Even/.
-
-## Exemple
-|**Input**|**Output**|**Comments**|
-|-----|------|------|
-| 1 2 3 4 5 6 | 12|
-| 3 5 7 9 | 0 |
-| 2 4 6 8 10 | 30|
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-1 2 3 4 5 6
-[/input]
-[output]
-12
-[/output]
-[/test]
-[test open]
-[input]
-3 5 7 9
-[/input]
-[output]
-0
-[/output]
-[/test]
-[test open]
-[input]
-2 4 6 8 10
-[/input]
-[output]
-30
-[/output]
-[/test]
-[test]
-[input]
-1 1 1
-[/input]
-[output]
-0
-[/output]
-[/test]
-[test]
-[input]
-2
-[/input]
-[output]
-2
-[/output]
-[/test]
-[test]
-[input]
-2 4 3 1
-[/input]
-[output]
-6
-[/output]
-[/test]
-[test]
-[input]
-12 22 32 44
-[/input]
-[output]
-110
-[/output]
-[/test]
-[test]
-[input]
-1 2 3 4 5 6 7 8 9 10
-[/input]
-[output]
-30
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]

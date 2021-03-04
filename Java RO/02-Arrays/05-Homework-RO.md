@@ -1068,13 +1068,13 @@ Pentru exemplul de mai sus, rezultatul ar trebui să fie '0 1 0'.
 
 ### Input
 - Pe prima linie veți primi un număr întreg - dimensiunea câmpului
-- Pe a doua linie veți primi indexurile inițiale ale tuturor buburuzelor separate printr-un spațiu gol. Indiciile date pot să fiu sau nu în interiorul domeniului câmpului.
+- Pe a doua linie veți primi indexurile inițiale ale tuturor buburuzelor separate printr-un spațiu gol. Indiciile date pot să fiu sau nu în interiorul domeniului câmpului
 - Pe liniile următoare, până când veți obține comanda "end" veți primi comenzi în formatul: "\{ladybug index\} \{direction\} \{fly length\}"
 
 ### Output
 - Imprimați toate celulele din câmpul în formatul: "\{cell\} \{cell\} … \{cell\}"
-    - Dacă o celulă are buburuză, tipăriți '1'
-    - Dacă o celulă este goală, imprimați'0' 
+    - dacă o celulă are buburuză, tipăriți '1'
+    - dacă o celulă este goală, imprimați'0' 
 
 
 ### Exemplu
@@ -1300,8 +1300,3 @@ end
 [/code-task]
 [/slide]
 
-[slide]
-# Rezultatele temelor pentru acasa
-[tasks-results/]
-
-[/slide]

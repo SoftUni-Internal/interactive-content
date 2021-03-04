@@ -1,5 +1,5 @@
 
-[slide]
+[slide hideTitle]
 # Rezumat
 
 ## În această lecție ați învățat:
@@ -34,11 +34,18 @@ for (int number : numbers) {
 
 - Buclă For-each loop/For-each loop/
 
+```Java
+int[] numbers = { 1, 2, 3, 4, 5 };
+for (int number : numbers) {
+   System.out.println(number + " ");
+}
+```
+
 ## În lecția următoare, veți învăța:
 - Ce este o metodă?
 - Denumirea și cele mai bune practici
 - Declararea și invocarea metodelor
-   - Metode de tip Void și Return
+   - metode de tip Void și Return
 - Metode cu parametri
 - Valoare vs. Tipuri de referință
 - Metode de supraîncărcare
