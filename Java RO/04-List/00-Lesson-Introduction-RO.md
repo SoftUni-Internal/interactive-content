@@ -1,17 +1,22 @@
-[slide]
-# Introducerea lecției
+# Lesson Introduction
+[slide hideTitle]
+# Lesson Content
 
-TODO: Adăugați videoclipul
-
-## În această lecție veți afla despre:
+## In this lesson you will learn about:
 
 **1. Liste**
 
-- Ce sunt "Listele"
+- What lists are
 
-- Cum le folosim?
+- How lists are used and why we need them
 
-- De ce le folosim?
+- Adding elements
+
+- Removing elements
+
+- Modifying elements
+
+- Finding elements
 
 **2. Lista manipulării**
 
@@ -27,6 +32,5 @@ TODO: Adăugați videoclipul
 
 - Comanda String.join
 
-**4. Exerciții live**
 
 [/slide]
