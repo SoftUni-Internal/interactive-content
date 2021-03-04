@@ -14,10 +14,10 @@
 - `if-else` inside another `if-else` 
 
 **2. Arrays**
-- Read input from an Array
+- Reading input from an Array
 
 **3. Logical Operators**
-- First steps in JavaScript language
+- First steps in JavaScript
 
 **4. Conditional Statement - switch case**
 - Using Multiple Labels in **switch case**
