@@ -236,7 +236,7 @@ public class TestBookSettersNames \{
     public void bookSettersNames() throws NoSuchMethodException \{
         Assert.assertTrue("Class 'Book' not found", Classes.allClasses.containsKey(CLASS_NAME));
         Class book = Classes.allClasses.get(CLASS_NAME);
-        List\<Method\> methods = Arrays.asList(book.getDeclaredMethods());
+        List<Method> methods = Arrays.asList(book.getDeclaredMethods());
 
         Method setTitle = book.getDeclaredMethod("setTitle", String.class);
         Assert.assertNotNull(setTitle);
