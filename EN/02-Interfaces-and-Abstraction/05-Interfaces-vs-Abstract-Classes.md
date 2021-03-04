@@ -1,9 +1,9 @@
 [slide hideTitle]
 
 
-# Interfaces vs Abstract Classes
+# Interfaces vs. Abstract Classes
 
-Once again, lets see the main differences between `Interfaces` and `Abstract` classes.
+Once again, let us see the main differences between `Interfaces` and `Abstract` classes.
 
 [image assetsSrc="Interfaces-And-Abstraction-example(4).png" /]
 
