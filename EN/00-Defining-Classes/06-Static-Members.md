@@ -3,10 +3,7 @@
 [slide hideTitle]
 # What Are Static Members
 
-[vimeo-video]
-[stream language="EN" videoId="485443972/9db86c189e" default /]
-[stream language="RO" videoId="485443972/9db86c189e"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-33-34-35-static-members-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In Java, static members are those that belong to the class and you can access these members without instantiating the class.
 
@@ -70,10 +67,7 @@ public class Car {
 [slide hideTitle]
 # Problem with Solution: Bank Account
 
-[vimeo-video]
-[stream language="EN" videoId="485444110/761b551138" default /]
-[stream language="RO" videoId="485444110/761b551138"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-36-problem-and-solution-bank-account-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Bank Account" taskId="oop-basics-java-defining-classes-lab-Bank-Account" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
@@ -393,3 +387,4 @@ Account does not exist
 [/tests]
 [/code-task]
 [/slide]
+
