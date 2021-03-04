@@ -1,15 +1,14 @@
-[slide]
-# Lecție introductivă
+# Lesson Introduction
+[slide hideTitle]
+# Lesson Content
 
-TODO: Add Video
-
-## În această lecție vom învăța despre:
+## In this lesson you will learn:
 
 **1. Ce este o metodă?**
 
-- Ce este o metodă?
+- Ce este o metodă
 
-- De ce folosim metodele?
+- De ce folosim metodele
 
 **2. Convențile de denumire** 
 
@@ -21,9 +20,9 @@ TODO: Add Video
 
 **3. Declarând și invocând metode**
 
-- Cum declarăm metode?
+- Cum declarăm metode
 
-- Cum invocăm metode?
+- Cum invocăm metode
 
 **4. Metode cu parametrii**
 
@@ -31,7 +30,7 @@ TODO: Add Video
 
 **5. Returnarea de valori de la metode**
 
-- Cum folosim valoarea "return"?
+- Cum folosim valoarea "return"
 
 **6. Tip de valori vs tip de referințe**
 
@@ -41,11 +40,10 @@ TODO: Add Video
 
 **7. Metode de supraîncărcare**
 
-- Ce este "Method Overloading"?
+- Ce este "Method Overloading"
 
 **8. Fluxul de execuție a programului**
 
 - "Call stack"
 
-**9. Exerciții live**
 [/slide]
