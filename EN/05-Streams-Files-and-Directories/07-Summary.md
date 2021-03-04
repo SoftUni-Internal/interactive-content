@@ -8,7 +8,9 @@
 - Streams are used for reading, writing and transfering data
 
 - There are two main types of streams:
+- 
 <br/><br/>
+
     - Input Streams
     
     ```java
@@ -23,9 +25,13 @@
     oneByte = fileStream.read();
     }
     ```
+    
 <br/><br/>
+
     - Output Streams
+    
 <br/><br/>
+
     ```java
     try (FileReader inputStream = new FileReader(input);
              FileWriter outputStream = new FileWriter(output)) {
@@ -40,16 +46,22 @@
     e.printStackTrace();
     }
     ```
+ 
 <br/><br/>
+
 - Buffered streams boost performance
 - Streams can be chained together by passing an instance of one stream to another:
+
 <br/><br/>
+
     ```java
     String path = "D:\\input.txt";
 
     Scanner reader = new Scanner(new FileInputStream(path));
     ```
+ 
 <br/><br/>
+
 - Serialization is the process of converting an object to a sequence of bytes, and deserialization is the opposite process
 
 - Serialization and deserialization make it possible for one system to communicate with another system and exchange data regardless of the platform or programming language
