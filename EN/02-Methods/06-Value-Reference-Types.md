@@ -37,7 +37,7 @@ When a reference type is assigned to another reference type, both will point to 
 
 When an object is passed into a method, the called method can change the contents of the object passed to it but not the address of the object.
 
-Reference data types are: **String**, **int\[\]**, **char\[\]**, **String\[\]**.
+Reference data types are: `String`, `int[]`, `char[]`, `String[]`.
 
 ```Java
 String str = "Hello";

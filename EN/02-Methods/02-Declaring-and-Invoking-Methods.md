@@ -7,7 +7,7 @@ A method must be declared within a class.
 
 It is defined with the name of the method, followed by parentheses **()**.
 
-Java provides some pre-defined methods, such as ``System.out.println()``, but you can also create your own methods to perform certain actions:
+Java provides some pre-defined methods, such as `System.out.println()`, but you can also create your own methods to perform certain actions:
 
 ```java
 public class MyClass {
@@ -24,15 +24,14 @@ public class MyClass {
 
 - `printHello()` - is the name of the method and the parenthesis signify that we are calling the method, in this case with no parameters
 
-- the body of the method should always be placed between curly brackets **{ }**
+- The body of the method should always be placed between curly brackets `{ }`
 
 [/slide]
 
 [slide hideTitle]
-
 # Invoking Methods
 
-To call or invoke a method in Java, write the method's name followed by a pair of parentheses **()** and a semicolon **;**
+To call or invoke a method in Java, write the method's name followed by a pair of parentheses **()** and a semicolon **;**.
 
 In the following example, `printHello()` is used to print some text, when it is called:
 

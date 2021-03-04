@@ -6,7 +6,7 @@
 The `return` keyword finishes the execution of a method, and can be used to return a value from it.
 
 
-```java live no-template
+```java live
 public class MyClass {
   static int myMethod(int x) {
     return 5 + x;
@@ -25,17 +25,17 @@ public class MyClass {
 
 The return value can be:
 
-- **assigned** to a variable
+- **Assigned** to a variable
 ```Java
 int max = getMax(5, 10);
 ```
 
-- **used** in expression
+- **Used** in expression
 ```Java
 double total = getPrice() * quantity * 1.20;
 ```
 
-- **passed** to another method
+- **Passed** to another method
 ```Java
 int age = Integer.parseInt(sc.nextLine());
 ```

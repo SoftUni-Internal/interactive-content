@@ -31,7 +31,9 @@ We use methods in Java for several reasons.
 
 - **Reusability** - we write a method once and use it **multiple times** 
 
-  - we do not have to copy the same blocks of code in multiple places to use them. Think of it as, `write once, reuse multiple times`
+  - we do not have to copy the same blocks of code in multiple places to use them
+  
+  Think of it as, `write once, reuse multiple times`
 
 - **To parameterize code** - you will often want to use `parameters` that change the way the method behaves
 
