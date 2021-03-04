@@ -1430,14 +1430,14 @@ The input consists of three lines.
 [tests]
 [test open]
 [input]
-Sofia Tucker London UK
-John 2 happy
-Peter 0.10 Expressbank
+Sofia Jackson Izgrev Burgas
+Max 18 drunk
+Alex 0.10 DSK
 [/input]
 [output]
-Sofia Tucker -\> London -\> UK
-John -\> 2 -\> true
-Peter -\> 0.1 -\> Expressbank
+Sofia Jackson -\> Izgrev -\> Burgas
+Max -\> 18 -\> true
+Alex -\> 0.1 -\> DSK
 [/output]
 [/test]
 [test open]
