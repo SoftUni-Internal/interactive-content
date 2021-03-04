@@ -50,7 +50,7 @@ Upon declaring the loop, you can specify a **start value** and an **end value.**
 
 The body of the loop is usually enclosed in curly braces `{ }` and represents a block of one or multiple commands.
 
-The code block below shows the structure of a "**for**" loop:
+The code block below shows the structure of a `**for** loop`:
 
 ```js
 for (initialization; condition; update) {
