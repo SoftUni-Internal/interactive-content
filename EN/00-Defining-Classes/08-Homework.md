@@ -2533,7 +2533,7 @@ For example, the 4th format means the person **born on the left date** is the **
 
 The last format ties **different** information together – i.e. **the person with that name was born on that date**. 
 
-**Names** and **birthdates** are **unique** – there won't be two persons with the same name or birthdate. 
+**Names** and **birthdates** are **unique** – there will not be two people with the same name or birthdate. 
 
 There will **always** be enough entries to construct the family tree (all people names and birthdates are known and they have **at least one** connection to another person in the tree).
 
