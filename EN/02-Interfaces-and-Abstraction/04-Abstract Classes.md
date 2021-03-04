@@ -144,7 +144,7 @@ The output of your program should consist of all detained **Ids** each on a sepa
 
 # Examples
 
-## Example One
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | Peter 22 9010101122 | 9010101122 |
@@ -153,7 +153,7 @@ The output of your program should consist of all detained **Ids** each on a sepa
 | End |  |
 | 122 |  |
 
-## Example Two
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | Teo 31 7801211340 | 7801211340 |
