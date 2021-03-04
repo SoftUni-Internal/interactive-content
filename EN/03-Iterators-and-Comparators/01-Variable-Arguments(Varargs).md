@@ -89,6 +89,7 @@ void method(String a, int... b){
 # Description
 Create a `Book` class from the UML diagram below:
 
+
 | Book |
 | ---- |
 |- title: String |
