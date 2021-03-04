@@ -1430,9 +1430,9 @@ The input consists of three lines.
 [tests]
 [test open]
 [input]
-Sofia Jackson Izgrev Burgas
-Max 18 drunk
-Alex 0.10 DSK
+Sofia Tucker London UK
+John 2 happy
+Peter 0.10 Expressbank
 [/input]
 [output]
 Sofia Tucker -\> London -\> UK
