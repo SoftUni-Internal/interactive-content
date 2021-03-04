@@ -6,8 +6,11 @@
 ## In this lesson you learned:
 
 - Streams are used to read, write and transfer data
+
 - There are two main types of streams:
+
     - Input Streams
+    
     ```java
     String path = "C:\\input.txt";
 
@@ -20,7 +23,9 @@
     oneByte = fileStream.read();
     }
     ```
+
     - Output Streams
+
     ```java
     try (FileReader inputStream = new FileReader(input);
              FileWriter outputStream = new FileWriter(output)) {
@@ -35,6 +40,7 @@
     e.printStackTrace();
     }
     ```
+
 - Buffered streams boost performance
 
 - Streams can be chained together by passing an instance of one stream to another:
