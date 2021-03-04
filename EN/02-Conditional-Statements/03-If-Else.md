@@ -57,7 +57,7 @@ function example(input) {
 
 When we have **only one command** in the body of the **if construction**, we can **skip the curly brackets**, indicating the conditional operator body. 
 
-When we want to execute **block of code** (a group of commands), curly brackets are **required**. 
+When we want to execute a **block of code** (a group of commands), curly brackets are **required**. 
 
 In case we drop them, **only the first line** after the **if clause** will be executed.
 
@@ -71,7 +71,7 @@ else
 console.log("lemon"); 
 ```
 
-With curly braces:
+With curly brackets:
 ```js live
 let color = "red";
 if (color == "red") {
