@@ -105,7 +105,7 @@ Create a method called **getMax()** that returns the greater of the two values.
 
 |**Input**|**Output**|
 | --- | --- |
-| String | Manuel |
+| string | Manuel |
 | Ann | |
 | Manuel | |
 
