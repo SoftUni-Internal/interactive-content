@@ -58,7 +58,7 @@ function adapter(input, code) {
 
 Create a program, which sums and prints numbers in an array until the number **0**.
 
-- You receive an array of numbers
+- You will receive an array of numbers
 
 - Go through the array and print the sum for each iteration
 
