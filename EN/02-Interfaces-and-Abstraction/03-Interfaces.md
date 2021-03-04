@@ -121,7 +121,7 @@ public interface Printable extends Callable {
 
 [slide hideTitle]
 # Problem with Solution: Car Shop
-[code-task title="Car Shop" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-Car-Shop" executionType="tests-execution" executionStrategy="java-project-tests"] 
+[code-task title="Car Shop" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-lab-Car-Shop" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
 
 [task-description]
@@ -733,7 +733,7 @@ Test Passed!
 
 [slide hideTitle]
 # Problem with Solution: Car Shop Extended
-[code-task title="Car Shop Extended" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-Car-Shop-Extended" executionType="tests-execution" executionStrategy="java-project-tests"] 
+[code-task title="Car Shop Extended" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-lab-Car-Shop-Extended" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
 
 [task-description]
@@ -1583,7 +1583,7 @@ Vehicle.getHorsePower(480, 2500));
 
 [slide hideTitle]
 # Problem with Solution: Say Hello
-[code-task title="Say Hello" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-Say-Hello" executionType="tests-execution" executionStrategy="java-project-tests"] 
+[code-task title="Say Hello" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-lab-Say-Hello" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
 
 [task-description]
@@ -2035,7 +2035,7 @@ Test Passed!
 
 [slide hideTitle]
 # Problem with Solution: Say Hello Extended
-[code-task title="Say Hello Extended" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-Say-Hello-Extended" executionType="tests-execution" executionStrategy="java-project-tests"] 
+[code-task title="Say Hello Extended" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-lab-Say-Hello-Extended" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
 
 [task-description]
