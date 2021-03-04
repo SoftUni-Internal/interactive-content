@@ -30,7 +30,7 @@ In programming on many occasions, we need to execute a block of commands multipl
 
 To do that, the so-called loops are used.
 
-Let us see an example of a for loop that passes sequentially through the numbers from 1 to 10 and prints them to the console.
+Let us see an example of a `for loop` that passes sequentially through the numbers from 1 to 10 and prints them to the console.
 
 ```js live
 for (let i = 1; i <= 10; i += 1) {
