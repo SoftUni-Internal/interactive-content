@@ -105,7 +105,7 @@ function adapter(input, code) {
 
 Create a program, which prints all letters in a given range:
 
-- You receive 2 letters: the **beginning** and the **end** of the range
+- You will receive 2 letters: the **beginning** and the **end** of the range
 - Print all letters in the given range inclusive
 
 # Example
