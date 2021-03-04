@@ -243,7 +243,7 @@ Just like with the logical **"AND"**, the program checks from left to right the 
 
 To obtain `true` from the expression, it is necessary to have at least one argument with a `true` value. 
 
-Respectively, the checking **continues** until an **argument** with **such** value is met or until the arguments **are over**.
+Respectively, the checking **continues** until an **argument** with **such** value is encountered or until there aren't any arguments **left**.
 
 Here is one **example** of the `||` operator in action:
 
