@@ -60,6 +60,8 @@ A method has received an illegal or an inappropriate argument
 
 # Best Practices 
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-27-28-exceptions-best-practices-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 When throwing an exception, always specify a **good explanation message in** to the constructor.
 
 When throwing an exception try to give a good description of the problem.
