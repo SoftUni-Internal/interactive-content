@@ -5,7 +5,7 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/02.Conditions/EN/02-conditional-statements-js-31-32-Debugging-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-So far, we wrote a lot of code, and there were some mistakes in it, right? Now we will show a tool that can help us find mistakes more easily: **the debugger**.
+So far, we wrote a lot of code, and there were some mistakes in it, right? Now we will see a tool that can help us find mistakes more easily: **the debugger**.
 
 # What is "Debugging"?
 
@@ -23,7 +23,7 @@ We can track **line by line** what happens in our program, what path it follows,
 [video src="https://videos.softuni.org/hls/javascript-basics/02.Conditions/EN/02-conditional-statements-js-33-Debugging-in-VSC-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-* With \[F5\] will start the program in debug mode
+* With \[F5\] we will start the program in debug mode
 
 * We can go to the next step with \[F10\]
 
