@@ -1435,9 +1435,9 @@ Max 18 drunk
 Alex 0.10 DSK
 [/input]
 [output]
-Sofia Jackson -\> Izgrev -\> Burgas
-Max -\> 18 -\> true
-Alex -\> 0.1 -\> DSK
+Sofia Tucker -\> London -\> UK
+John -\> 2 -\> false
+Peter -\> 0.1 -\> Expressbank
 [/output]
 [/test]
 [test open]
@@ -1460,7 +1460,7 @@ John 11.11 AmericanExpress
 [/input]
 [output]
 John Johnson -\> Muiami -\> USA
-John -\> 3 -\> true
+John -\> 3 -\> false
 John -\> 11.11 -\> AmericanExpress
 [/output]
 [/test]
