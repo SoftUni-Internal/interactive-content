@@ -208,7 +208,7 @@ public class TestBookConstructor \{
     public void bookSettersNames() throws NoSuchFieldException, NoSuchMethodException \{
         Assert.assertTrue("Class 'Book' not found", Classes.allClasses.containsKey(CLASS_NAME));
         Class book = Classes.allClasses.get(CLASS_NAME);
-        List\<Constructor\> constructors = Arrays.asList(book.getConstructors());
+        List<Constructor> constructors = Arrays.asList(book.getConstructors());
         Assert.assertTrue(constructors.size() == 1);
     \}
 \}
