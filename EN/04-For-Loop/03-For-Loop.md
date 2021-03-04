@@ -68,7 +68,7 @@ It consists of:
 
 - Body of the loop.
 
-In most cases, a "**for**" loop is run between `1` and `n` times (for example from 1 to 10).
+In most cases, a `for loop` is run between `1` and `n` times (for example from 1 to 10).
 
 The purpose of the loop is to pass sequentially through the numbers 1, 2, 3, …, n and for each of them to perform a particular action.
 
