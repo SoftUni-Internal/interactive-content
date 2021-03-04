@@ -81,9 +81,7 @@ It is also used to describe the **return value** of `remove()`.
 # Problem with Solution: Jar of T
 [code-task title="Jar of T" timeLimit=5000 taskId="oop-basics-java-generics-lab-Jar-of-T" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30"]
-```
 
-```
 [task-description]
 ## Description
 
@@ -334,9 +332,7 @@ So, if we try to use another class which is **not a subclass of Number**, the co
 
 [code-task title="Generic Array Creator" timeLimit=5000 taskId="oop-basics-java-generics-lab-Generic-Array-Creator" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
-```
 
-```
 [/code-editor]
 [task-description]
 ## Description
