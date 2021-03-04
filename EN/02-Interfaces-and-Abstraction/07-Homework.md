@@ -4693,7 +4693,7 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: Collection Hierarchy
-[code-task title="Collection Hierarchy" taskId="oop-advanced-java-interfaces-and-abstraction-Collection-Hierarchy" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
+[code-task title="Collection Hierarchy" timeLimit=5000 taskId="oop-advanced-java-interfaces-and-abstraction-Collection-Hierarchy" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 [task-description]
