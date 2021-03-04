@@ -13,7 +13,7 @@ Arrays allow us to store multiple pieces of data, again, in only one variable.
 
 An array is a **collection** which is **ordered** and **changeable**.
 
-Array are useful for **preserving** a sequence of **data**.
+Arrays are useful for **preserving** a sequence of **data**.
 
 They are enclosed in **square brackets** and the values inside them are **separated by a comma**.
 
