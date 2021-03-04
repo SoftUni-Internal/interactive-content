@@ -2,29 +2,20 @@
 
 [slide hideTitle]
 # Problem: Define an Interface Person
-[code-task title="Problem: Define an Interface Person" taskId="4a47397a-b1fb-49f6-921c-95de4aaa604f" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Define an Interface Person" timeLimit=5000 taskId="oop-advanced-java-interfaces-and-abstraction-Define-an-Interface-Person" executionType="tests-execution" executionStrategy="java-project-tests"] 
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 Define an interface **Person** with methods **getName** and **getAge**. 
 
-Define a class **Citizen** which implements **Person** and has a constructor which takes a **String name** and an int **age**.
+Define a class **Citizen** which implements **Person** and has a constructor which takes a **String name** and an integer **age**.
 
-Add the following code to your main method and submit it to Judge.
+Add the following code to your main method and submit your solution.
 
 [image assetsSrc="interfaces-and-abstraction-example(11).png" /]
 
-**Your hierarchy have to be used with this code**
+**Your hierarchy has to be used with this code:**
 
 ```java
 public static void main(String[] args) {
@@ -41,7 +32,8 @@ public static void main(String[] args) {
     }
 }
 ```
-## Examples
+
+# Example
 | **Input** | **Output** |
 | --- | --- |
 | Peter | 2 |
@@ -49,7 +41,6 @@ public static void main(String[] args) {
 |  | 25 |
 
 [/task-description]
-[code-io /]
 [tests]
 [test open]
 [input]
@@ -561,27 +552,18 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: Multiple Implementation
-[code-task title="Problem: Multiple Implementation" taskId="8a146d85-e504-48a4-8331-5a594f4f988b" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Multiple Implementation" timeLimit=5000 taskId="oop-advanced-java-interfaces-and-abstraction-Multiple-Implementation" executionType="tests-execution" executionStrategy="java-project-tests"] 
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 Using the code from the previous task, define an interface **Identifiable** with a **String** method **getId** and an interface **Birthable** with a **String** method **getBirthDate** and implement them in the **Citizen** class. 
 
 Rewrite the **Citizen** constructor to accept the new parameters.
 
 [image assetsSrc="interfaces-and-abstraction-example(12).png" /]
 
-**Add the following code to your main method and submit it to Judge.**
+**Add the following code to your main method:**
 
 ```java
 public static void main(String[] args) {
@@ -606,7 +588,7 @@ public static void main(String[] args) {
 ```
 
 
-## Examples
+# Example
 | **Input** | **Output** |
 | --- | --- |
 | Peter | 1 |
@@ -615,7 +597,6 @@ public static void main(String[] args) {
 | 15/05/1991 | String |
 
 [/task-description]
-[code-io /]
 [tests]
 [test open]
 [input]
@@ -1348,20 +1329,11 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: Birthday Celebrations
-[code-task title="Problem: Birthday Celebrations" taskId="26149d2a-9852-49a1-b9de-48b79ddc9801" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Birthday Celebrations" timeLimit=5000 taskId="oop-advanced-java-interfaces-and-abstraction-Birthday-Celebrations" executionType="tests-execution" executionStrategy="java-project-tests"] 
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 It is a well known fact that people celebrate birthdays, it is also known that some people also celebrate their pets birthdays. 
 
 Extend the program from your last task to add **birthdates** to citizens and include a class **Pet**, pets have a **name** and a **birthdate**. 
@@ -1372,19 +1344,21 @@ Encompass repeated functionality into interfaces and implement them in your clas
 
 You will receive from the console an unknown amount of lines until the command "**End**" is received,  each line will contain information in one of the following formats
 
-"**Citizen {name} {age} {id} {birthdate}**" for citizens, 
+"**Citizen \{name\} \{age\} \{id\} \{birthdate\}**" for citizens, 
 
-"**Robot {model} {id}**" for robots or
+"**Robot \{model\} \{id\}**" for robots or
 
-"**Pet {name} {birthdate}**" for pets. 
+"**Pet \{name\} \{birthdate\}**" for pets. 
  
 After the end command on the next line you will receive a single number representing a **specific year**.
 
-Your task is to print all birthdates (of both citizens and pets) in that year in the format **day/month/year** (the order of printing doesn’t matter).
+Your task is to print all birthdates (of both citizens and pets) in that year in the format **day/month/year** (the order of printing does not matter).
 
 [image assetsSrc="interfaces-and-abstraction-example(13).png" /]
 
-## Examples
+# Examples
+
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | Citizen Peter 22 9010101122 10/10/1990 | 10/10/1990 |
@@ -1393,6 +1367,7 @@ Your task is to print all birthdates (of both citizens and pets) in that year in
 | End |  |
 | 1990 |  |
 
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | Citizen PeterParker 16 0041018380 01/01/2000 | 01/01/2000 |
@@ -1403,6 +1378,7 @@ Your task is to print all birthdates (of both citizens and pets) in that year in
 | End |  |
 | 2000 |  |
 
+## Example 3
 | **Input** | **Output** |
 | --- | --- |
 | Robot VV-XYZ 11213141 | {no output} |
@@ -1412,7 +1388,7 @@ Your task is to print all birthdates (of both citizens and pets) in that year in
 | 1975 |  |
 
 [/task-description]
-[code-io /]
+
 [tests]
 [test open]
 [input]
@@ -2630,20 +2606,11 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: Food Shortage
-[code-task title="Problem: Food Shortage" taskId="f4619b01-e2cc-4adc-b9bf-d0551007f6b1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Food Shortage" timeLimit=5000 taskId="oop-advanced-java-interfaces-and-abstraction-Food-Shortage" executionType="tests-execution" executionStrategy="java-project-tests"] 
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 Your totalitarian dystopian society suffers a shortage of food, so many rebels appear. 
 
 Extend the code from your previous (Problem 2.**Multiple Implementation**) task with new functionality to solve this task.
@@ -2656,9 +2623,9 @@ Implement the **Buyer** interface in the **Citizen** and **Rebel** class, both R
 
 On the first line of the input you will receive an integer **N** - the number of people, on each of the next **N** lines you will receive information in one of the following formats
 
-"**{name} {age} {id} {birthdate}**" for a Citizen or 
+- "**\{name\} \{age\} \{id\} \{birthdate\}**" for a Citizen 
 
-"**{name} {age} {group}**" for a Rebel. 
+- "**\{name\} \{age\} \{group\}**" for a Rebel
 
 After the **N** lines until the command "**End**" is received, you will receive names of people who bought food, each on a new line. 
 
@@ -2669,6 +2636,8 @@ On the only line of output, you should print the total amount of food purchased.
 [image assetsSrc="interfaces-and-abstraction-example(14).png" /]
 
 ## Examples
+
+# Example 1
 | **Input** | **Output** |
 | --- | --- |
 | 2 | 20 |
@@ -2679,6 +2648,7 @@ On the only line of output, you should print the total amount of food purchased.
 | Peter |  |
 | End |  |
 
+# Example 2
 | **Input** | **Output** |
 | --- | --- |
 | 4 | 25 |
@@ -2695,7 +2665,7 @@ On the only line of output, you should print the total amount of food purchased.
 | End |  |
 
 [/task-description]
-[code-io /]
+
 [tests]
 [test open]
 [input]
@@ -4097,20 +4067,11 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: Telephony
-[code-task title="Problem: Telephony" taskId="f43d2168-92b7-4e92-a841-99311488feba" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Telephony" timeLimit=5000 taskId="oop-advanced-java-interfaces-and-abstraction-Telephony" executionType="tests-execution" executionStrategy="java-project-tests"] 
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 You have a business - **manufacturing cell phones**. 
 
 But you have no software developers, so you call your friends and ask them to help you create a cell phone software. 
@@ -4132,22 +4093,25 @@ You should end up with **one class** and two **interfaces**.
 [image assetsSrc="interfaces-and-abstraction-example(15).png" /]
 
 ## Input
-The input comes from the console. It will hold two lines:
-- **First line: phone numbers** to call (String), separated by spaces.
-- **Second line: sites** to visit (String), separated by spaces.
+The input comes from the console. 
+
+It will hold two lines:
+- **First line: phone numbers** to call (String), separated by spaces
+- **Second line: sites** to visit (String), separated by spaces
+
 ## Output
 - First **call all numbers** in the order of input then **browse all sites** in order of input
-- The functionality of calling phones is printing on the console the number which are 
-being called in the format: "**Calling... {number}**"
+- The functionality of calling phones is printing on the console the number which are being called in the format: "**Calling... \{number\}**"
 - The functionality of the browser should print on the console the site in format:
-"**Browsing: {site}!**" (pay attention to the exclamation mark when printing URLs)
-- If there is a number in the input of the URLs, print: "**Invalid URL!**" and continue printing the rest of the URLs.
-- If there is a character different from a digit in a number, print: "**Invalid number!**" and continue to the next number.
+"**Browsing: \{site\}!**" (pay attention to the exclamation mark when printing URLs)
+- If there is a number in the input of the URLs, print: "**Invalid URL!**" and continue printing the rest of the URLs
+- If there is a character different from a digit in a number, print: "**Invalid number!**" and continue to the next number
+
 ## Constraints
 - Each site's URL should consist only of letters and symbols (**No digits are allowed** in the URL address)
 
 
-## Examples
+# Examples
 | **Input** | **Output** |
 | --- | --- |
 | 0882134215 0882134333 08992134215 0558123 3333 1 | Calling... 0882134215 |
@@ -4161,7 +4125,7 @@ being called in the format: "**Calling... {number}**"
 |  | Invalid URL! |
 
 [/task-description]
-[code-io /]
+
 [tests]
 [test open]
 [input]
@@ -4729,33 +4693,24 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: Collection Hierarchy
-[code-task title="Problem: Collection Hierarchy" taskId="e57d80a8-f2f6-4a07-affd-5c8c056aa991" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Collection Hierarchy" taskId="oop-advanced-java-interfaces-and-abstraction-Collection-Hierarchy" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 Create 3 different string collections – **AddCollection**, **AddRemoveCollection** and **MyListImpl**.
 
 **The AddCollection** should have:
-- Only a single method **add(String)** which adds an item to the **end** of the collection.
+- Only a single method **add(String)** which adds an item to the **end** of the collection
 
 The **AddRemoveCollection** should have:
-- An **add(String)** method – which adds an item to the **start** of the collection.
+- An **add(String)** method – which adds an item to the **start** of the collection
 - A **remove()** method which removes the last item in the collection.
 
 The **MyListImpl** collection should have:
-- An **add(String)** method which adds an item to the **start** of the collection.
-- A **remove()** method which removes the **first** element in the collection.
-- A **used** field which displays the size of elements currently in the collection.
+- An **add(String)** method which adds an item to the **start** of the collection
+- A **remove()** method which removes the **first** element in the collection
+- A **used** field which displays the size of elements currently in the collection
 
 Create interfaces which define the collections functionality, think how to model the relations between interfaces to reuse code. 
 
@@ -4763,7 +4718,7 @@ Add an extra bit of functionality to the methods in the custom collections, **ad
 
 Your task is to create a single copy of your collections, after which on the first input line you will receive a random amount of strings in a single line separated by spaces - the elements you have to add to each of your collections. 
 
-For each of your collections write a single line in the output that holds the results of all **add operations** separated by spaces (check the examples to better understand the format). 
+For each of your collections, write a single line in the output that holds the results of all **add operations** separated by spaces (check the examples to better understand the format). 
 
 On the second input line you will receive a single number - the amount of **remove operations** you have to call on each collection. 
 
@@ -4773,22 +4728,26 @@ In the same manner as with the add operations for each collection (except the Ad
 
 ## Input
 The input comes from the console. It will hold two lines:
-- The first line will contain a random amount of strings separated by spaces - the elements you have to **add** to each of your collections.
-- The second line will contain a single number - the amount of **remove** operations.
+- The first line will contain a random amount of strings separated by spaces - the elements you have to **add** to each of your collections
+- The second line will contain a single number \- the amount of **remove** operations
+
 ## Output
-The output will consist of 5 lines:
-- The first line contains the results of all **add** operations on the **AddCollection** separated by spaces.
-- The second line contains the results of all **add** operations on the **AddRemoveCollection** separated by spaces.
-- The third line contains the result of all **add** operations on the **MyListImpl** collection separated by spaces.
-- The fourth line contains the result of all **remove** operations on the **AddRemoveCollection** separated by spaces.
-- The fifth line contains the result of all **remove** operations on the **MyListImpl** collection separated by spaces.
+The output will consist of **five** lines:
+- The first line contains the results of all **add** operations on the **AddCollection** separated by spaces
+- The second line contains the results of all **add** operations on the **AddRemoveCollection** separated by spaces
+- The third line contains the result of all **add** operations on the **MyListImpl** collection separated by spaces
+- The fourth line contains the result of all **remove** operations on the **AddRemoveCollection** separated by spaces
+- The fifth line contains the result of all **remove** operations on the **MyListImpl** collection separated by spaces
+
 ## Constraints
-- All collections should have a **length of 100**.
-- There will never be **more than 100** add operations.
-- The number of remove operations will never be more than the amount of add operations.
+- All collections should have a **length of 100**
+- There will never be **more than 100** add operations
+- The number of remove operations will never be more than the amount of add operations
 
 
-## Examples
+# Examples
+
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | apple orange peach | 0 1 2 |
@@ -4798,6 +4757,8 @@ The output will consist of 5 lines:
 |  | peach orange apple |
 |  |  |
 
+
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | one two three four five six seven | 0 1 2 3 4 5 6 |
@@ -4808,7 +4769,7 @@ The output will consist of 5 lines:
 |  | 2 |
 
 [/task-description]
-[code-io /]
+
 [tests]
 [test open]
 [input]

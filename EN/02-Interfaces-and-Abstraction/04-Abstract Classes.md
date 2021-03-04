@@ -116,34 +116,35 @@ We called the method of the abstract class using our object `obj`.
 
 [slide hideTitle]
 # Problem with Solution: Border Control
-[code-task title="Border Control" taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-Border-Control" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Border Control" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-lab-Border-Control" executionType="tests-execution" executionStrategy="java-project-tests"] 
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
-It’s the future, you’re the ruler of a totalitarian dystopian society inhabited by **citizens** and **robots**, since you’re afraid of rebellions you decide to implement strict control of who enters your city. 
+# Description
+It is the future, you are the ruler of a totalitarian dystopian society inhabited by **citizens** and **robots**.
+
+Since you are afraid of rebellions, you decide to implement strict control of who enters your city. 
 
 Your soldiers check the **Ids** of everyone who enters and leaves.
 
-You will receive from the console an **unknown** amount of lines until the command "**End**" is received, on each line there will be the information for either **a citizen** or **a robot** who tries to enter your city in the format 
-"**{name} {age} {id}**" for citizens and "**{model} {id}**" for robots. 
+You will receive an **unknown** amount of lines from the console.
 
-After the end command on the next line you will receive a single number representing **the last digits of fake ids**, all citizens or robots whose **Id** ends with the specified digits must be detained.
+Until the command "**End**" is received, on each line there will be the information for either **a citizen** or **a robot** who tries to enter your city in the format:
 
-The output of your program should consist of all detained **Ids** each on a separate line (the order of printing doesn’t matter).
+- "**\{name\} \{age} \{id\}**" for citizens 
+- "**\{model} \{id\}**" for robots
+
+After the "**End**" command, on the next line you will receive a single number representing **the last digits of fake ids**.
+
+Аll citizens or robots whose **Id** ends with the specified digits must be detained.
+
+The output of your program should consist of all detained **Ids** each on a separate line (the order of printing does not matter).
 
 [image assetsSrc="interfaces-and-abstraction-example(9).png" /]
 
-## Examples
+# Examples
+
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | Peter 22 9010101122 | 9010101122 |
@@ -152,6 +153,7 @@ The output of your program should consist of all detained **Ids** each on a sepa
 | End |  |
 | 122 |  |
 
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | Teo 31 7801211340 | 7801211340 |
@@ -163,7 +165,6 @@ The output of your program should consist of all detained **Ids** each on a sepa
 | 340 |  |
 
 [/task-description]
-[code-io /]
 [tests]
 [test open]
 [input]
@@ -1022,4 +1023,3 @@ Test Passed!
 [/tests]
 [/code-task]
 [/slide]
-
