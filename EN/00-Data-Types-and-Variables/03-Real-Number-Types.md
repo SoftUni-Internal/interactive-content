@@ -34,7 +34,7 @@ System.out.println(myNum);
 
 The **default value** of **float** is **0.0F**.
 
-- **Double**: in this course when we need floating-point numbers, we are going to use **double** most of the time.
+- **Double**: in this course when we need floating-point numbers, we are going to use **double** most of the time
 
 ```java live
 double myNum = 19.99;
@@ -55,7 +55,7 @@ System.out.println("Float PI is: " + floatPI);
 System.out.println("Double PI is: " + doublePI);
 ```
 
-- NOTE: The `f` suffix in the first statement!
+**NOTE**: The `f` suffix in the first statement!
 
 - Real numbers are interpreted as double by default
 
@@ -166,7 +166,9 @@ Assume that **1 British Pound = 1.31 Dollars**.
 
 When working with large numbers, scientific notation is exceptionally helpful.
 
-In scientific notation, the letter `E` represents `10 to the power of E`. For example, `1.51E+1` means the same thing as `1.51x10^1`.
+In scientific notation, the letter `E` represents `10 to the power of E`. 
+
+For example, `1.51E+1` means the same thing as `1.51x10^1`.
 
 Let us review some examples of scientific notation below.
 
@@ -237,11 +239,9 @@ System.out.println(num);
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-26-big-decimal-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-
 Keep in mind that sometimes floating-point numbers work incorrectly!
 
 We encourage you to read more about **IEEE 754**.
-
 
 ```java live
 BigDecimal bigDecimal1 =

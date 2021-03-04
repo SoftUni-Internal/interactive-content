@@ -91,7 +91,11 @@ for (int i = 0; i < 130; i++) {
 //-127
 ```
 
-The counter variable starts from 0 and is incremented with each step of the for loop. Eventually when it reaches the maximum value of byte (127), it restarts again from the minimum value (-128). This is what we mean by **integer overflow** and it is precisely the reason why choosing your data type correctly is important. 
+The counter variable starts from 0 and is incremented with each step of the for loop. 
+
+Eventually when it reaches the maximum value of byte (127), it restarts again from the minimum value (-128). 
+
+This is what we mean by **integer overflow** and it is precisely the reason why choosing your data type correctly is important. 
 
 [/slide]
 
@@ -100,7 +104,9 @@ The counter variable starts from 0 and is incremented with each step of the for 
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-16-integer-literals-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Integer literals are numbers, which do not have a floating point part. **541** is a literal value by that definition. A
+Integer literals are numbers, which do not have a floating point part. 
+
+**541** is a literal value by that definition.
 
 They can be represented in a few different ways, which are not as intuitive:
 

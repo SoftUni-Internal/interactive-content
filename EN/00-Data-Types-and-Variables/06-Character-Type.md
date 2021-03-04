@@ -106,7 +106,6 @@ Write a program that accepts an input of 3 lines of characters and prints them i
 A
 B
 C
-
 [/input]
 [output]
 C B A
@@ -117,7 +116,6 @@ C B A
 1
 L
 &
-
 [/input]
 [output]
 & L 1
@@ -180,7 +178,7 @@ An example of this is the double quotes in strings that should be escaped.
 String txt = "We are the so-called "Vikings" from the north.";
 ```
 
-To bypass this, we append a backslash** \(\\\)**, that is used as an escape character.
+To bypass this, we append a backslash \(\\\), that is used as an escape character.
 
 The backslash \(\\\) escape character turns special characters into string characters:
 

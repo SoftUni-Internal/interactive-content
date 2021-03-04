@@ -4,7 +4,7 @@
 
 # How Does Computing Work?
 
-A computer is an **electronic machine** that processes information, in other words, an information processor: it takes in raw information (or data) at one end, stores it until it's ready to work on it, chews and crunches it for a bit, then spits out the results at the other end.
+A computer is an **electronic machine** that processes information, in other words, an information processor: it takes in raw information (or data) at one end, stores it until it is ready to work on it, chews and crunches it for a bit, then spits out the results at the other end.
 
 All these processes have a **name**. 
 
@@ -17,13 +17,15 @@ Taking in information is called input, storing information is better known as me
 [slide hideTitle]
 # Variables
 
-A variable is a name given to a memory location. It is the basic unit of storage in a program.
+A variable is a name given to a memory location. 
 
-* The value stored in a variable can be changed during program execution.
+It is the basic unit of storage in a program.
 
-* A variable is only a name given to a memory location, every operation done on the variable affects that memory location.
+* The value stored in a variable can be changed during program execution
 
-* In Java, all the variables must be created before use.
+* A variable is only a name given to a memory location, every operation done on the variable affects that memory location
+
+* In Java, all the variables must be created before use
 
 ```java
 int count = 5;
@@ -32,9 +34,9 @@ int count = 5;
 // 5 – variable value
 ```
 
-* **Data type**: Type of data that can be stored in this variable.
-* **Variable name**: Name given to the variable.
-* **Variable value**: It is the initial value stored in the variable.
+* **Data type**: Type of data that can be stored in this variable
+* **Variable name**: Name given to the variable
+* **Variable value**: It is the initial value stored in the variable
 
 A variable can be declared, without initialization and initialized at a later time:
 
@@ -96,11 +98,13 @@ String myText = "Hello";     // String
 ```
 As you see in the example above, **data types** have:
 
-* **Name**: a Java keyword.
+* **Name**: a Java keyword
 
-* **Size**: how much memory is used.
+* **Size**: how much memory is used
 
-* **Value**: every variable holds a value. Non-primitive data types hold references to the location of the value in the memory instead.
+* **Value**: every variable holds a value
+
+Non-primitive data types hold references to the location of the value in the memory instead
 
 [/slide]
 

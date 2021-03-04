@@ -17,8 +17,8 @@
   ```
 
   - Numeric types: 
-    - Represent numbers
-    - Have specific ranges for every type
+    - represent numbers
+    - have specific ranges for every type
 
 
     ```java
@@ -31,8 +31,8 @@
 
 
   - String and text types: 
-    - Represent text
-    - Strings are sequences of Unicode characters
+    - represent text
+    - strings are sequences of Unicode characters
 
     ```java
     char myGrade = 'B';

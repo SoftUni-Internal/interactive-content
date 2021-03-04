@@ -274,7 +274,7 @@ Write a program, which **sums the ASCII codes of n characters**.
 
 ### Output
 Print the total sum in the following format:
--   "The sum equals: \{totalSum\}"
+-   "**The sum equals:** \{**totalSum**\}"
 
 ### Example
 | **Input** | **Output** |
@@ -1173,7 +1173,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-A Poke Mon is a special type of pokemon which likes to Poke others. But at the end of the day, the Poke Mon wants to keep **statistics** on how many pokes it has managed to do.
+A Poke Mon is a special type of pokemon which likes to Poke others. 
+
+But at the end of the day, the Poke Mon wants to keep **statistics** on how many pokes it has managed to do.
 
 The Poke Mon pokes his target, and then proceeds to poke another target. 
 
@@ -1191,7 +1193,9 @@ Your task is to start **subtracting M from N until N becomes less than M**, i.e.
 
 **Count** how many targets you’ve poked – you’ll need that count.
 
-The Poke Mon becomes gradually **more exhausted**. **If N becomes equal to EXACTLY 50 % of its original value, you must divide N by Y**, if it is **possible**. 
+The Poke Mon becomes gradually **more exhausted**. 
+
+**If N becomes equal to EXACTLY 50 % of its original value, you must divide N by Y**, if it is **possible**. 
 
 Use integer division.
 
@@ -1201,7 +1205,7 @@ Instead, you should continue subtracting.
 
 After dividing, you should **continue subtracting** from N, until it becomes less than M.
 
-When N becomes less than M, you must take what has remained of N and the count of targets you’ve poked, and print them as output.
+When N becomes less than M, you must take what has remained of N and the count of targets you've poked, and print them as output.
 
 **NOTE:** When you are calculating percentages, you should do it with maximum precision.
 
@@ -1324,7 +1328,7 @@ At the end you must **print the highest calculated** snowballValue.
 ### Output
 -	As output you must print the **highest calculated snowballValue**, by the formula, specified above
 - The output format is: 
-\{snowballSnow\} : \{snowballTime\} = \{snowballValue\} (\{snowballQuality\})
+"\{**snowballSnow**\} : \{**snowballTime**\} = \{**snowballValue**\} (\{**snowballQuality**\})"
 
 ### Example
 | **Input** | **Output** |
