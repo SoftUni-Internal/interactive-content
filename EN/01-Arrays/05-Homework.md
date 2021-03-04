@@ -3,11 +3,6 @@
 [slide hideTitle]
 # Problem: Train
 
-[vimeo-video]
-[stream language="EN" videoId="421823066" default /]
-[stream language="RO" videoId="428055445"  /]
-[/video-vimeo]
-
 [code-task title="Train" taskId="java-fund-Arrays-Exercise-Train" executionType="tests-execution" executionStrategy="java-code" requiresInput requiresInput]
 [code-editor language=java]
 ```
@@ -246,11 +241,6 @@ ggg
 [slide hideTitle]
 # Problem: Zig-Zag Arrays
 
-[vimeo-video]
-[stream language="EN" videoId="421823768" default /]
-[stream language="RO" videoId="428055481"  /]
-[/video-vimeo]
-
 [code-task title="Zig-Zag Arrays" taskId="java-fund-Arrays-Exercise-Zig-Zag-Arrays" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -483,11 +473,6 @@ Rotations are done by switching the element on the first index with the element 
 
 [slide hideTitle]
 # Problem: Top Integers
-
-[vimeo-video]
-[stream language="EN" videoId="421822945" default /]
-[stream language="RO" videoId="428055401"  /]
-[/video-vimeo]
 
 [code-task title="Top Integers" taskId="java-fund-08-Arrays-Exercise-Top-Integers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -738,11 +723,6 @@ no
 
 [slide hideTitle]
 # Problem: Max Sequence of Equal Elements
-
-[vimeo-video]
-[stream language="EN" videoId="421821171" default /]
-[stream language="RO" videoId="428055605"  /]
-[/video-vimeo]
 
 [code-task title="Max Sequence of Equal Elements" taskId="java-fund-08-Arrays-Exercise-Max-Sequence-of-Equal-Elements" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1014,11 +994,6 @@ Write a program, which **prints all unique pairs** in an array of integers whose
 [slide hideTitle]
 # Problem: LadyBugs
 
-[vimeo-video]
-[stream language="EN" videoId="421820773" default /]
-[stream language="RO" videoId="428055528"  /]
-[/video-vimeo]
-
 [code-task title="LadyBugs" taskId="java-fund-Arrays-Exercise-LadyBugs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1066,7 +1041,9 @@ For the example above, the output should be '0 1 0'.
 
 ### Input
 - On the first line, you will receive an integer - the size of the field
-- On the second line, you will receive the initial indexes of all ladybugs separated by a blank space. The given indexes may or may not be inside the field range
+- On the second line, you will receive the initial indexes of all ladybugs separated by a blank space
+
+The given indexes may or may not be inside the field range
 - On the next lines, until you get the "end" command you will receive commands in the format: "\{ladybug index\} \{direction\} \{fly length\}"
 
 ### Output
