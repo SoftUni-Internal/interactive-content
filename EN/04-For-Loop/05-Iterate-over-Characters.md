@@ -10,7 +10,7 @@ It is good to know that **for loops** do not only work with numbers.
 
 We can also use **for loops** to iterate over **characters**.
 
-Here is an example of how a loop can pass sequentially through some **letters** in the English alphabet:
+Here is an example of how a loop can pass sequentially through **letters** in the English alphabet:
 
 ```js live
 function latinLetters(startChar, endChar) {
