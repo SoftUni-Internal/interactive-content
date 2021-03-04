@@ -1,11 +1,9 @@
-[slide]
+# Lesson Introduction
 
-# Introducerea Lecției
+[slide hideTitle]
 
-[vimeo-video]
-[stream language="EN" videoId="" default /]
-[stream language="RO" videoId="" /]
-[/video-vimeo]
+# Lesson Content
+
 
 ## În această lecție veți afla despre:
 
@@ -26,8 +24,5 @@
 - **3. Clase încorporate în Java**
 
 - Prezentare generală a unor clase Java Built-in
-
-
-**4. Exerciții live**
 
 [/slide]
