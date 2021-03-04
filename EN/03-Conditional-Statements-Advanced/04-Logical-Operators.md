@@ -39,7 +39,7 @@ We will explain the logical **"AND"** (`&&`), the logical **"OR"** (`||`), and t
 
 [video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-22-Logical-and-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-As we saw, in some tasks we have to make **many checks at once**. 
+As we previously saw, in some tasks we have to perform **many checks at once**. 
 
 What happens when more conditions have to be executed at once, and we don't want to make a negation (else) for each one of them? 
 
