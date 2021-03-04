@@ -1342,13 +1342,13 @@ Also create class **Robot** which has an **id** and **model**.
 
 Encompass repeated functionality into interfaces and implement them in your classes.
 
-You will receive from the console an unknown amount of lines until the command "**End**" is received,  each line will contain information in one of the following formats
+You will receive from the console an unknown amount of lines until the command "**End**" is received,  each line will contain information in one of the following formats:
 
-"**Citizen \{name\} \{age\} \{id\} \{birthdate\}**" for citizens, 
+- "**Citizen \{name\} \{age\} \{id\} \{birthdate\}**" for citizens 
 
-"**Robot \{model\} \{id\}**" for robots or
+- "**Robot \{model\} \{id\}**" for robots
 
-"**Pet \{name\} \{birthdate\}**" for pets. 
+- "**Pet \{name\} \{birthdate\}**" for pets
  
 After the end command on the next line you will receive a single number representing a **specific year**.
 
