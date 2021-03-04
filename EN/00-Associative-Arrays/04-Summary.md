@@ -6,9 +6,9 @@
 ## In this lesson you learned:
 
 - Maps hold {`key` -> `value`} pairs
-    - Keyset holds a set of unique keys
-    - Values holds a collection of values
-    - Iterating over map takes the entries as `Map.Entry<K, V>`
+    - keyset holds a set of unique keys
+    - values holds a collection of values
+    - iterating over map takes the entries as `Map.Entry<K, V>`
     
 - Lambda and Stream API helps collection processing
 
@@ -29,7 +29,7 @@ public class Main {
 - Manipulating Strings
 
 - Building and Modifying Strings
-    - Using StringBuilder Class
-    - Why Concatenation is a slow operation
+    - using StringBuilder Class
+    - why Concatenation is a slow operation
 
 [/slide]

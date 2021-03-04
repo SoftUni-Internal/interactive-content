@@ -236,7 +236,7 @@ System.out.println(airplanes.isEmpty());
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-11-iterating-through-map-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-When iterating through objects of type **Map.Entry <K, V>**, it is **impossible** to modify the collection(read-only).
+When iterating through objects of type `Map.Entry <K, V>`, it is **impossible** to modify the collection(read-only).
 
 There are several ways to iterate the Keys stored in a Map.
 
@@ -445,16 +445,16 @@ You will be given a number **n**.
 
 On the next **2 * n** lines you will be given a **word** and a **synonym** each on a separate line like this:
 
-- **\{word}**
+- \{**word**\}
 
-- **\{synonym}**
+- \{**synonym**\}
 
 If you get the same word for the second time, just add the new synonym to the list.
 
 ### Output 
 
 Print the words in the following format:
-\{word} - \{synonym1, synonym2… synonymN}
+"\{**word**\} - \{**synonym1, synonym2… synonymN**\}"
 
 ## Examples
 | **Input** | **Output** |

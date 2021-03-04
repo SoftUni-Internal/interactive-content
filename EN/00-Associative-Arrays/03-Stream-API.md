@@ -277,11 +277,11 @@ public class Main {
 ## Description
 Read an array of **strings**, take only words which length is **even**.
 
-### Input / Constraints
+## Input / Constraints
 
 Read an array of strings.
 
-### Output
+## Output
 
 Print each word on a new line.
 
@@ -409,7 +409,7 @@ There are **two** ways to sort collections:
 
 - Sorting in **ascending** (**Natural**) order:
 
-```java live no-template
+```java live
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -433,7 +433,7 @@ public class Main {
 
 - Sorting in **descending** order:
 
-```java live  no-template
+```java live 
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -577,10 +577,10 @@ If there are **less** than 3, print **all** of them.
 
 Order the list using **Stream API**.
 
-### Input / Constraints
+## Input / Constraints
 Read a list of integers.
 
-### Output 
+## Output 
 
 Print top 3 numbers with **for** loop.
 
