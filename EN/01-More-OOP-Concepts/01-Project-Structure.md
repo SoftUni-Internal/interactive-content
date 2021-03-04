@@ -65,7 +65,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 Create a program that reads a **positive integer n** as input and prints a **rhombus** with size **n** to the console.
 
 [image assetsSrc="more-oop-concepts-example(1).png" /]
@@ -353,20 +353,10 @@ printer.printToConsole(numbers);
 
 [slide hideTitle]
 # Problem with Solution: Point in Rectangle
-[code-task title="Point in Rectangle" taskId="oop-basics-java-more-oop-concepts-lab-Point-in-Rectangle" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Point in Rectangle" taskId="oop-basics-java-more-oop-concepts-lab-Point-in-Rectangle" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 Create a class **Point** and a class **Rectangle**.
 
 The **Point** should hold **coordinates X** and **Y** and the **Rectangle** should hold 2 **Points** – its **bottom left** and **top right** corners.
@@ -377,7 +367,7 @@ Points **on the side** of a Square are considered **inside**.
 
 ## Input
 
-- On the first line read the coordinates of the bottom left and top right corner of the Rectangle in the format:
+- On the first line, read the coordinates of the bottom left and top right corner of the Rectangle in the format:
 
 `<bottomLeftX>` `<topRightX>` `<topRightY>`
      
@@ -427,7 +417,7 @@ Points **on the side** of a Square are considered **inside**.
 | 8 12 |  |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /] 
 [tests]
 [test open]
 [input]
