@@ -4,10 +4,7 @@
 
 # Lesson Content
 
-[vimeo-video]
-[stream language="EN" videoId="485442088/4502bb1fea" default /]
-[stream language="RO" videoId="485442088/4502bb1fea"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-1-2-introduction-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## In this lesson you will learn:
 
@@ -27,4 +24,6 @@
 - Usage of static fields and methods
 
 [/slide]
+
+
 
