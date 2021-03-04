@@ -7,9 +7,9 @@
 
 - Streams are used to read, write and transfer data
 
-- There are two main types of streams:
+- There are two main types of streams:<br/><br/>
 
-    - Input Streams
+    - Input Streams<br/><br/>
     
     ```java
     String path = "C:\\input.txt";
@@ -24,7 +24,7 @@
     }
     ```
 
-    - Output Streams
+    - Output Streams<br/><br/>
 
     ```java
     try (FileReader inputStream = new FileReader(input);
@@ -43,7 +43,7 @@
 
 - Buffered streams boost performance
 
-- Streams can be chained together by passing an instance of one stream to another:
+- Streams can be chained together by passing an instance of one stream to another:<br/><br/>
     ```java
     String path = "D:\\input.txt";
 
