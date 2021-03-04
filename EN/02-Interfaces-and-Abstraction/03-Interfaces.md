@@ -2040,7 +2040,7 @@ Test Passed!
 
 [task-description]
 # Description
-**Build hierarchy from classes and interfaces for this UML diagram.**
+**Build a hierarchy from classes and interfaces for this UML diagram.**
 
 [image assetsSrc="interfaces-and-abstraction-example(8).png" /]
 
