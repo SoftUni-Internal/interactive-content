@@ -267,7 +267,7 @@ Use **BigDecimal**.
 |**Input**|**Output**|
 | --- | --- |
 | 2 | 256 |
-| 9 |  |
+| 8 |  |
 
 |**Input**|**Output**|
 | --- | --- |
