@@ -1,7 +1,7 @@
-
+# Problem 3: Numbers
 [slide hideTitle]
-# Heart Delivery
-[code-task title="Heart Delivery" taskId="java-fund-18-Exam-Preparation-problem-3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Numbers
+[code-task title="Numbers" taskId="java-fund-18-Exam-Preparation-problem-3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,310 +14,193 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-You will receive a **string with even integers**, separated by a "@".
+# Description
 
-The numbers represent the houses in the **neighborhood**.
+Create a program that **reads a sequence of integers separated by a space.** 
 
-After that, a **series of Jump commands** will follow **until you receive** the "Love!" command.
+Find and print the **top 5** numbers that are **greater than the average** value of the sequence, sorted in **descending order.** 
 
-Every house in the neighborhood **needs a certain number of hearts delivered by Cupid**, to be able to celebrate Valentine’s Day.
+Print "**No**" if there are no numbers that are greater than the average value. 
 
-The number of hearts needed is **represented by the integers** in the neighborhood.
+## Input 
 
-Cupid **starts at the position of the first house** (index 0) and must jump by a given length.
+Read a single sequence of integers separated by a space from the console. 
 
-The **jump commands will be in this format**: "Jump \{length\}".
+## Output 
 
-Every time he jumps from one house to another, the **the number of hearts** needed to celebrater Valentine's for that house **decreases by 2**.
+Print the numbers on a single line separated by a space. 
 
-**If the needed hearts reach 0 for a certain house**, **print** to the console: "Place \{houseIndex\} has Valentine's day." 
+## Constraints 
 
-If Cupid jumps to a house where the **the hearts needed are already 0**, **print** to the console: "Place \{houseIndex\} already had Valentine's day."
+All input numbers are integers 
 
-Keep in mind that Cupid can have a **bigger jump length than the size of the neighborhood** and if he goes **outside** of it, he should **start from the first house** again.
+The number of elements will not exceed 10000. 
 
-**For example**, we are given this neighborhood: 6@6@7.
-
-**Cupid is at the start** and **jumps** with a **length of 2**.
-
-He will end up at **index 2** and decrease the needed hearts there by 2: [6, 6, 5].
-
-Next, he jumps again with a length of 2 and goes **outside the neighborhood**, so he goes **back to the first house** (index 0) and **decreases the needed hearts there**: [4, 6, 5].
-
-### Input
-- On the first line, you will receive a string with even integers separated by "@" – the neighborhood and the number of hearts for each house
-- On the next lines, until the "Love!" command is received, you will be getting jump commands in this format: "Jump \{length\}"
-
-### Output
-In the end, print Cupid's **last position and whether his mission was successful or not**:
-- "Cupid's last position was \{lastPositionIndex\}."
-- If each house has had Valentine's day celebration thanks to him, print: 
-    - "Mission was successful."
-- If not, print the count of all houses that didn't celebrate Valentine's Day:
-    - "Cupid has failed \{houseCount\} places."
-
-### Constraints
-- The neighborhood's size will be in the range \[1 … 20\]
-- Each house will need an even number of hearts in the range \[2 … 10\]
-- Each jump length will be an integer in the range \[1 … 20\]
-
-### Example
+## Example One
 | **Input** | **Output** |
 | --- | --- |
-| 10@10@10@2 | Place 3 has Valentine's day. |
-| Jump 1 | Cupid's last position was 3. |
-| Jump 2 | Cupid has failed 3 places. |
-| Love! | |
+| 10 20 30 40 50  | 50 40  |
 
-### Comment
-- Jump 1 -> \[10, 8, 10, 2\]
-- Jump 2 -> \[10, 8, 10, 0\] so we print "Place 3 has Valentine's day."
-- The next command is "Love!", so we print Cupid's last position and the outcome of his mission.
 
-### Example
+## Comment
+- Average value = 30
+
+- Numbers greater than 30 are: \{40, 50\}
+
+- The top 5 numbers among them in descending order are: \{50, 40\} 
+
+- Note that we have only 2 numbers, so all of them are included in the top 5
+
+## Example Two
 | **Input** | **Output** |
 | --- | --- |
-| 2@4@2 | Place 2 has Valentine's day. |
-| Jump 2 | Place 0 has Valentine's day. |
-| Jump 2 | Place 0 already had Valentine's day. |
-| Jump 8 | Place 0 already had Valentine's day. |
-| Jump 3 | Cupid's last position was 1. |
-| Jump 1 | Cupid has failed 1 places. |
-| Love! | |
+| 5 2 3 4 -10 30 40 50 20 50 60 60 51  | 60 60 51 50 50  |
+
+## Comment
+
+- Average value = 28.08
+
+- Numbers greater than 28.08 are: \[Text Wrapping Break\] \{30, 40, 50, 50, 60, 60, 51\}
+
+- The top 5 numbers among them in descending order are: \{60, 60, 51, 50, 50\}
+
+## Example Three
+| **Input** | **Output** |
+| --- | --- |
+| 1  | No  |
+
+## Comment
+
+- Average value = 1
+
+- There are no numbers, greater than 1
+
+## Example Four
+| **Input** | **Output** |
+| --- | --- |
+| -1 -2 -3 -4 -5 -6  | -1 -2 -3   |
+
+## Comment
+
+- Average value = -3.5 
+
+- Numbers greater than -3.5 are: \{-1, -2, -3\}
+
+- The top 5 numbers among them in descending order are: \{-1, -2, -3\}
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-10@10@10@2
-Jump 1
-Jump 2
-Love!
+10 20 30 40 50
 [/input]
 [output]
-Place 3 has Valentine's day.
-Cupid's last position was 3.
-Cupid has failed 3 places.
+50 40
 [/output]
 [/test]
 [test open]
 [input]
-2@4@2
-Jump 2
-Jump 2
-Jump 8
-Jump 3
-Jump 1
-Love!
+5 2 3 4 -10 30 40 50 20 50 60 60 51
 [/input]
 [output]
-Place 2 has Valentine's day.
-Place 0 has Valentine's day.
-Place 0 already had Valentine's day.
-Place 0 already had Valentine's day.
-Cupid's last position was 1.
-Cupid has failed 1 places.
+60 60 51 50 50
+[/output]
+[/test]
+[test open]
+[input]
+1
+[/input]
+[output]
+No
+[/output]
+[/test]
+[test open]
+[input]
+-1 -2 -3 -4 -5 -6
+[/input]
+[output]
+-1 -2 -3
 [/output]
 [/test]
 [test]
 [input]
-8@8@8@8@8@8@8
-Jump 1
-Jump 2
-Jump 3
-Love!
+20 -3 -5 150 700
 [/input]
 [output]
-Cupid's last position was 6.
-Cupid has failed 7 places.
+700
 [/output]
 [/test]
 [test]
 [input]
-2@2@2@2@2@2@2
-Jump 2
-Jump 2
-Jump 1
-Love!
+-100000 100 300 200 500 700
 [/input]
 [output]
-Place 2 has Valentine's day.
-Place 4 has Valentine's day.
-Place 5 has Valentine's day.
-Cupid's last position was 5.
-Cupid has failed 4 places.
-
+700 500 300 200 100
 [/output]
 [/test]
 [test]
 [input]
-10@8@6@2@2@2@2@2@2@2@2@2
-Jump 20
-Jump 13
-Jump 5
-Love!
+100 200 100 100 200 200 100
 [/input]
 [output]
-Place 5 has Valentine's day.
-Cupid's last position was 5.
-Cupid has failed 11 places.
+200 200 200
 [/output]
 [/test]
 [test]
 [input]
-4@4@4
-Jump 15
-Jump 17
-Jump 5
-Jump 6
-Love!
+243 3421 423 432 43 342 2413421 342 4231 4233421 3421 3251 -3241 3421 3214 -324 3 3 -3 3 324 342
 [/input]
 [output]
-Place 0 has Valentine's day.
-Place 0 already had Valentine's day.
-Place 0 already had Valentine's day.
-Cupid's last position was 0.
-Cupid has failed 2 places.
+4233421 2413421
 [/output]
 [/test]
 [test]
 [input]
-2@2@2@2@2@2@2@2@2
-Jump 2
-Jump 2
-Jump 2
-Jump 2
-Jump 2
-Jump 2
-Jump 2
-Jump 1
-Love!
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
 [/input]
 [output]
-Place 2 has Valentine's day.
-Place 4 has Valentine's day.
-Place 6 has Valentine's day.
-Place 8 has Valentine's day.
-Place 0 has Valentine's day.
-Place 2 already had Valentine's day.
-Place 4 already had Valentine's day.
-Place 5 has Valentine's day.
-Cupid's last position was 5.
-Cupid has failed 3 places.
+20 19 18 17 16
 [/output]
 [/test]
 [test]
 [input]
-8@2@4
-Jump 1
-Jump 3
-Jump 1
-Jump 3
-Jump 3
-Love!
+231 34 23 423 -2324 3 3 -100000 2347 3247 36 3 3247 363 34 27243 10 20 30 40 50 60 10 20 30 40 50 60 10 20 30 40 50 60 10 20 30 40 50 60 10 20 30 40 50 60 10 20 30 40 50 60 10 20 30 40 50 60 10 20 30 40 50 60 10 20 30 40 50 60 10 20 30 40 50 60
 [/input]
 [output]
-Place 1 has Valentine's day.
-Place 1 already had Valentine's day.
-Cupid's last position was 0.
-Cupid has failed 2 places.
+27243 3247 3247 2347 423
 [/output]
 [/test]
 [test]
 [input]
-4@2@4@2
-Jump 1
-Jump 2
-Jump 1
-Jump 2
-Jump 2
-Jump 2
-Love!
+100
 [/input]
 [output]
-Place 1 has Valentine's day.
-Place 3 has Valentine's day.
-Place 0 has Valentine's day.
-Place 2 has Valentine's day.
-Cupid's last position was 2.
-Mission was successful.
+No
 [/output]
 [/test]
 [test]
 [input]
-10@10
-Jump 20
-Jump 20
-Jump 20
-Jump 20
-Jump 20
-Jump 1
-Jump 4
-Jump 4
-Jump 4
-Jump 4
-Jump 4
-Love!
+100 100 100 100 100 100 100 100 100 100
 [/input]
 [output]
-Place 0 has Valentine's day.
-Place 0 already had Valentine's day.
-Place 0 already had Valentine's day.
-Place 0 already had Valentine's day.
-Place 0 already had Valentine's day.
-Place 0 already had Valentine's day.
-Cupid's last position was 0.
-Cupid has failed 1 places.
+No
 [/output]
 [/test]
 [test]
 [input]
-2@2@2@2@2
-Jump 1
-Jump 1
-Jump 1
-Jump 1
-Jump 1
-Jump 1
-Jump 1
-Jump 1
-Jump 1
-Jump 1
-Love!
+10 10 10 10 10 20 20 20 20 20 5 5 5 5 5 30 30 30 30 30
 [/input]
 [output]
-Place 1 has Valentine's day.
-Place 2 has Valentine's day.
-Place 3 has Valentine's day.
-Place 4 has Valentine's day.
-Place 0 has Valentine's day.
-Place 1 already had Valentine's day.
-Place 2 already had Valentine's day.
-Place 3 already had Valentine's day.
-Place 4 already had Valentine's day.
-Place 0 already had Valentine's day.
-Cupid's last position was 0.
-Mission was successful.
+30 30 30 30 30
 [/output]
 [/test]
 [test]
 [input]
-10@8@6@4@2@10@8@6@4@2@10@8@6@4@2@10@8@6@4@2
-Jump 4
-Jump 5
-Jump 5
-Jump 5
-Love!
+100 203 300 100 200 300 50 20 100 182 70 200 400 500 10 200 300 100 200 300 5 20 100 180 700 200 40 500 100 200 300 100 200 303 50 20 100 180 700 200 403 509 100 20 300 100 200 390 20 20 10 180 700 209 400 500 100 -22 309 101 200 302 50 21 101 186 999
 [/input]
 [output]
-Place 4 has Valentine's day.
-Place 9 has Valentine's day.
-Place 14 has Valentine's day.
-Place 19 has Valentine's day.
-Cupid's last position was 19.
-Cupid has failed 16 places.
+999 700 700 700 509
 [/output]
 [/test]
 [/tests]
