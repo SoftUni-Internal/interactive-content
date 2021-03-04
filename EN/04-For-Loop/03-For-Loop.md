@@ -12,7 +12,7 @@ Let us say you want to fill the dishwasher with plates.
 
 To do that you will take some of the plates from the pile and you will put them in.
 
-Then you will take some more plates and repeat the action until all the plates in the dishwasher.
+Then you will take some more plates and repeat the action until all the plates are in the dishwasher.
 
 This is a loop, you repeat an action until you reach a certain condition.
 
