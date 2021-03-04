@@ -59,7 +59,7 @@ if (num == 1) {
 }
 ```
 
-The program logic from the above example **sequentially compares** the input number from the console with the digits from 1 to 9, when **each following comparison is being performed only in case the previous comparison is not true**. 
+The program logic from the example above **sequentially compares** the input number from the console with the digits from 1 to 9, when **each following comparison is being performed only in case the previous comparison is not true**. 
 
 Eventually, if none of the `if` statements are true, the last `else` **clause** is performed.
 [/slide]
