@@ -55,7 +55,7 @@ Submit only the **output** of your program, **not the code**.
 ## Examples
 
 ## Input:
-[image assetsSrc="streams-files-directories-example(6).png" /]
+[image assetsSrc="streams-files-directories-example-input.png" /]
 
 ## Output:
 input.txt: [size in bytes] 
@@ -105,7 +105,7 @@ On the last line, print the count of all folders, including the root folder.
 ## Examples
 
 ## Input:
-[image assetsSrc="streams-files-directories-example(6).png" /]
+[image assetsSrc="streams-files-directories-example-input.png" /]
 
 ## Output:
 Streams-and-Files 
