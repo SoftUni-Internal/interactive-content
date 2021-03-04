@@ -81,7 +81,6 @@ Create a `printRow()` method to easily reuse code.
 | **Input** | **Output** |
 | --- | --- |
 | 1 | \* |
-|  |  |
 
 ## Example 2
 
@@ -90,7 +89,6 @@ Create a `printRow()` method to easily reuse code.
 | 2	 |  \* |
 |  | \* \* |
 |  |  \* |
-|  |  |
 
 ## Example 3
 
@@ -101,7 +99,6 @@ Create a `printRow()` method to easily reuse code.
 |  | \* \* \* |
 |  |  \* \* |
 |  |   \* |
-|  |  |
 
 ## Example 3
 
