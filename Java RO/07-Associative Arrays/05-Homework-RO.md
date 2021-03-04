@@ -1,6 +1,5 @@
 # Temă
 
-
 [slide hideTitle]
 # Problem: Count Chars in a String
 [code-task title="Count Chars in a String" taskId="Java-Fundamentals-Part-Two-Associative-Arrays-Count-Char-In-A-String" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -21,21 +20,21 @@ Scrieți un program care să **counts all characters** dintr-un string, cu excep
 
 **Print** toate variantele in următorul **format**:
 
-\{char\} -> \{occurrences\}
+"\{**char**\} \-\> \{**occurrences**\}"
 
 ### Exemplu
 | **Input** | **Output** |
 | --- | --- |
-| text | t -> 2 | 
-| | e -> 1 |
-| | x -> 1 |
+| text | t \-\> 2 | 
+| | e \-\> 1 |
+| | x \-\> 1 |
 
 ### Exemplu
 | **Input** | **Output** |
 | --- | --- |
-| text text text | t -> 6 | 
-| | e -> 3 |
-| | x -> 3 |
+| text text text | t \-\> 6 | 
+| | e \-\> 3 |
+| | x \-\> 3 |
 
 [/task-description]
 [code-io /]
@@ -217,7 +216,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Enunț
-Aveți o secvență dată **sequence of strings**, fiecare pe o linie nouă, până la comanda "stop".
+Aveți o secvență dată **sequence of strings**, fiecare pe o linie nouă, până la comanda "**stop**".
 
 Fiecare **odd line** din consolă reprezintă o **resource** (e.g. Aur, Argint, Cupru samd).
 
@@ -227,14 +226,14 @@ Sarcina voastră este să colectați resursele și să le scrieți pe o linie no
 
 **Print** resursele și cantitățile lor în **format**: 
 
-\{resource\} -> \{quantity\}
+"\{**resource**\} -> \{**quantity**\}"
 
 ### Exemplu
 | **Input** | **Output** |
 | --- | --- |
-| Gold | Gold -> 155 | 
-| 155 | Silver -> 10 |
-| Silver | Gold -> 17 |
+| Gold | Gold \-\> 155 | 
+| 155 | Silver \-\> 10 |
+| Silver | Gold \-\> 17 |
 | 10 | | 
 | Copper | |
 | 17 | |
@@ -243,9 +242,9 @@ Sarcina voastră este să colectați resursele și să le scrieți pe o linie no
 ### Exemplu
 | **Input** | **Output** |
 | --- | --- |
-| gold | Gold -> 170 | 
-| 155 | Silver -> 10 |
-| silver | Gold -> 17 |
+| gold | Gold \-\> 170 | 
+| 155 | Silver \-\> 10 |
+| silver | Gold \-\> 17 |
 | 10 | | 
 | copper | |
 | 17 | |
@@ -434,9 +433,12 @@ public class Main {
 Sarcina voastră este să obțineți un item legendar care înseamnă să colectați materiale.
 
 Variantele posibile **possible items** sunt:
-- **Shadowmourne** - necesită 250 **Shards**;
-- **Valanyr** - necesită 250 **Fragments**;
-- **Dragonwrath** - necesită 250 **Motes**;
+
+- **Shadowmourne** - necesită 250 **Shards**
+
+- **Valanyr** - necesită 250 **Fragments**
+
+- **Dragonwrath** - necesită 250 **Motes**
 
 **Shards, Fragments and Motes** sunt materiale **key materials**, orice alt material este gunoi.
 
@@ -450,14 +452,19 @@ Apoi, **print** celelalte **remaining shards, fragments, motes**,ordine **ordere
 
 
 ### Input
-Fiecare linie de input este in format \{quantity\} \{material\} \{quantity\} \{material\} … \{quantity\} \{material\}
+Fiecare linie de input este in format "\{**quantity**\} \{**material**\} \{**quantity**\} \{**material**\} … \{**quantity**\} \{**material**\}"
 
 ### Output
-- Pe **first line**, imprimați itemii obținuți în format "\{Legendary item\} obtained!"
+- Pe **first line**, imprimați itemii obținuți în format "\{**Legendary item**\} **obtained!**"
+
 - Pe următoarele **next three lines**, imprimați **remaining key materials** în ordine **descending**, după **quantity**
-    - Dacă **two key materials** au **same quantity**, imprimați-i in ordine **alphabetical** 
+
+    - Dacă **two key materials** au **same quantity**, imprimați-i in ordine **alphabetical**
+
 - Pe liniile **final several lines**, imprimați **junk items in alphabetical** ordine
-    - Toate materialele sunt imprimate in format: "\{material\}: \{quantity\}"
+
+    - Toate materialele sunt imprimate in format: "\{**material**\}: \{**quantity**\}"
+
     - Toate output trebuie să fie **lowercase**, cu excepția  **first** litere ale legendary
 
 
@@ -710,35 +717,39 @@ Dacă primiți **product, which already exists** **increase its quantity** cu ca
 
 Veți primi **products' names, prices and quantities on new lines**. 
 
-Până primiți **command** "buy", continuați să adăugați itemi.
+Până primiți **command** "**buy**", continuați să adăugați itemi.
 
-Când ați primit comanda "buy", **print** **items** cu numele lor **names** și **total price** ale tuturor produselor cu acest nume.
+Când ați primit comanda "**buy**", **print** **items** cu numele lor **names** și **total price** ale tuturor produselor cu acest nume.
 
 ### Input
-- Până primiți "buy", produsele apar în **format**: "\{name\} \{price\} \{quantity\}".
-- Datele despre produs sunt întotdeauna delimitate de un singur spațiu.
+
+- Până primiți "**buy**", produsele apar în **format**: "\{**name**\} \{**price**\} \{**quantity**\}"
+
+- Datele despre produs sunt întotdeauna delimitate de un singur spațiu
 
 ### Output
-- Imprimați informația despre fiecare produs, în **format**: 
-    - "\{productName\} -> {totalPrice\}"
+- Imprimați informația despre fiecare produs, în **format**:
+
+    - "\{**productName**\} \-\> \{**totalPrice**\}"
+
 - Formatați prețul total la  **second digit** după punctul de zecimale
 
 ### Exemplu
 | **Input** | **Output** |
 | --- | --- |
-| Beer 2.20 100 | Beer -> 220.00 | 
-| IceTea 1.50 50 | IceTea -> 75.00 |
-| Juice 3.30 80 | Juice -> 264.00 |
-| Water 1.00 500 | Water -> 500.00 | 
+| Beer 2.20 100 | Beer \-\> 220.00 | 
+| IceTea 1.50 50 | IceTea \-\> 75.00 |
+| Juice 3.30 80 | Juice \-\> 264.00 |
+| Water 1.00 500 | Water \-\> 500.00 | 
 | buy | | 
 
 ### Exemplu
 | **Input** | **Output** |
 | --- | --- |
-| CaesarSalad 10.20 25 | CaesarSalad -> 255.00 | 
-| SuperEnergy 0.80 400 | SuperEnergy -> 320.00 |
-| Beer 1.35 350 | Beer -> 472.50 |
-| IceCream 1.50 25 | IceCream -> 37.50 | 
+| CaesarSalad 10.20 25 | CaesarSalad \-\> 255.00 | 
+| SuperEnergy 0.80 400 | SuperEnergy \-\> 320.00 |
+| Beer 1.35 350 | Beer \-\> 472.50 |
+| IceCream 1.50 25 | IceCream \-\> 37.50 | 
 | buy | | 
 
 [/task-description]
@@ -945,21 +956,21 @@ Scrieți un program, care **validates parking** pentru un serviciu online.
 Utilizatorii pot **register to park and unregister to leave**.
 
 Programul primește **2 commands**:
-- "register \{username\} \{licensePlateNumber\}":
-    - Sistemul **only supports one car per user** pe moment, deci dacă un utilizator încearcă să înregistreze o altă plăcuță de înmatriculare, folosind același username, sistemul va **print**: "ERROR: already registered with plate number \{licensePlateNumber\}"
-    - Dacă utilizatorul menționat trece **successfully**, atunci **plate can be registered**, deci sistemul va trebui să **print**: "\{username\} registered \{licensePlateNumber\} successfully"
-- "unregister \{username\}":
-    - Dacă utilizatorul este **not present in the database**, sistemul va **print**: "ERROR: user \{username\} not found"
-    - Dacă utilizatorul trece **successfully**, sistemul va trebui să **print**: "\{username\} unregistered successfully"
+- "**register** \{**username**\} \{**licensePlateNumber**\}":
+    - sistemul **only supports one car per user** pe moment, deci dacă un utilizator încearcă să înregistreze o altă plăcuță de înmatriculare, folosind același username, sistemul va **print**: "**ERROR: already registered with plate number** \{**licensePlateNumber**\}"
+    - dacă utilizatorul menționat trece **successfully**, atunci **plate can be registered**, deci sistemul va trebui să **print**: "\{**username**\} **registered** \{**licensePlateNumber**\} **successfully**"
+- "**unregister** \{**username**\}":
+    - dacă utilizatorul este **not present in the database**, sistemul va **print**: "**ERROR: user** \{**username**\} **not found**"
+    - dacă utilizatorul trece **successfully**, sistemul va trebui să **print**: "\{**username**\} **unregistered successfully**"
 
 După ce ați executat toate comenzile, **print** toți **currently registered users and their license plates** in format:
-- "\{username\} => \{licensePlateNumber\}"
+- "\{**username**\} \=\> \{**licensePlateNumber**\}"
 
 ### Input
 - Prima linie: n – număr de comenzi – integer
 - Următoarele n linii: comenzi într-unul dintre cele două formate posibile:
-    - Register: "register \{username\} \{licensePlateNumber\}"
-    - Unregister: "unregister \{username\}"
+    - Register: "**register** \{**username**\} \{**licensePlateNumber**\}"
+    - Unregister: "**unregister** \{**username**\}"
 
 ### Exemple
 | **Input** | **Output** |
@@ -1191,29 +1202,29 @@ Scrieți un program care cuprinde informații despre **courses**.
 
 Fiecare curs are un **name** și **registered students**.
 
-Veți primi **course name and student name**, **until** până veți primi **command** "end". 
+Veți primi **course name and student name**, **until** până veți primi **command** "**end**". 
 
 **Check** dacă astfel de **course already exists**, și dacă **not**, **add the course**. 
 
 **Register** un **user** la **course**. 
 
-Atunci când primiți **command** "end", **print** cursurile cu **names** lor și **total registered users**, indicați de numărul userilor **registered**  in ordine descendentă. 
+Atunci când primiți **command** "**end**", **print** cursurile cu **names** lor și **total registered users**, indicați de numărul userilor **registered**  in ordine descendentă. 
 
 Pentru fiecare **contest print registered users** **ordered by name in ascending** ordine.
 
 ### Input
-- Până primiți "end", **input come in the format**:
+- Până primiți "**end**", **input come in the format**:
 
- "\{courseName\} : \{studentName\}".
+ "\{**courseName**\} : \{**studentName**\}".
 - Datele despre produs sunt **always delimited** de " : ".
 
 ### Output
 - Imprimați informația despre fiecare **course**, după **format**: 
 
-"\{courseName\}: \{registeredStudents\}"
+"\{**courseName**\}: \{**registeredStudents**\}"
 - Imprimați informația despre fiecare **student**, după **format**:
 
-"-- \{studentName\}"
+"-- \{**studentName**\}"
 
 ### Exemple
 | **Input** | **Output** |
@@ -1470,7 +1481,7 @@ Când ați terminat de citit datele, țineți doar studenții cu nota medie **hi
 Ordonați studenții aleși, după nota medie, în ordine **descending**.
 
 **Print the students and their average grade** in format:
-- "\{name\} –> \{averageGrade\}"
+- "\{**name**\} -> \{**averageGrade**\}"
 
 **Format** nota medie până la **second decimal**.
 
@@ -1754,7 +1765,7 @@ public class Main {
 ## Enunț
 Scrieți un program care conține informații despre companii și angajații lor. 
 
-Veți primi **company name** și **employee's id**,până primiți **command** "End". 
+Veți primi **company name** și **employee's id**,până primiți **command** "**End**". 
 
 **Add** fiecare **employee** de la fiecare **given company**.
 
@@ -1763,27 +1774,28 @@ Rețineți că **company cannot have two employees with the same id**.
 Când ați terminat de citit date, **order** companiile după nume, în ordine ascendentă.
 
 Imprimați numele companiei și id-ul fiecărui angajat, în următorul format:
-- \{companyName\}
 
--- \{id1\}
+"\{**companyName**\}
 
--- \{id2\}
+-- \{**id1**\}
 
--- \{idN\}
+-- \{**id2**\}
+
+-- \{**idN**\}"
 
 ### Input
-Până la primirea mesajului "End", input-ul vine **in the format**:
+Până la primirea mesajului "**End**", input-ul vine **in the format**:
 
-"\{companyName\} -> \{employeeId\}".
+"\{**companyName**\} -> \{**employeeId**\}"
 
 
 ### Exemple
 | **Input** | **Output** |
 | --- | --- |
-| SoftUni -> AA12345 | HP | 
-| SoftUni -> BB12345 | -- BB12345 |
-| Microsoft -> CC12345 | Microsoft |
-| HP -> BB12345 | -- CC12345 | 
+| SoftUni \-\> AA12345 | HP | 
+| SoftUni \-\> BB12345 | -- BB12345 |
+| Microsoft \-\> CC12345 | Microsoft |
+| HP \-\> BB12345 | -- CC12345 | 
 | End | SoftUni |
 | | -- AA12345 |
 | | -- BB12345 |
@@ -2091,9 +2103,9 @@ Dacă nu există astfel de force user, **add him/her to the corresponding force 
 
 Apoi, poți printa pe consolă: 
 
-"\{forceUser\} joins the \{forceSide\} side!"
+"\{**forceUser**\} **joins the** \{**forceSide**\} **side!**"
 
-Trebuie să **end your program when you receive the command** "End". 
+Trebuie să **end your program when you receive the command** "**End**". 
 
 În acest punct, trebuie să printezi fiecare parte de forță **ordered descending by force users count**, apoi **ordered by name**. 
 
@@ -2102,17 +2114,19 @@ Pentru fiecare parte, imprimăm force users, **ordered by name**.
 In cazul în care avem **no force users** de o parte, atunci **shouldn't print the side information**.
 
 ### Input
-- Inputul vine sub formă de comenzi într-unul din formatele specificate mai sus.
--  Input-ul se încheie când primim comanda "End".
+- Inputul vine sub formă de comenzi într-unul din formatele specificate mai sus
+-  Input-ul se încheie când primim comanda "**End**"
 
 ### Output
-- Ca output pentru fiecare force side, ordonată descendent în funcție de numprul de force users, apoi după nume, trebuie să imprimăm toți force users, ordonată după nume, alfabetic.
+- Ca output pentru fiecare force side, ordonată descendent în funcție de numprul de force users, apoi după nume, trebuie să imprimăm toți force users, ordonată după nume, alfabetic
+
 - Formatul output este:
-Side: \{forceSide\}, Members: \{forceUsersCount\}
-! \{forceUser\}
-! \{forceUser\}
-! \{forceUser\}
-- In cazul în care nu avem niciun force users, nu imprimăm această parte.
+"**Side:** \{**forceSide**\}, **Members:** \{**forceUsersCount**\}
+! \{**forceUser**\}
+! \{**forceUser**\}
+! \{**forceUser**\}"
+
+- In cazul în care nu avem niciun force users, nu imprimăm această parte
 
 ### Exemple
 | **Input** | **Output** |
@@ -2125,7 +2139,7 @@ Side: \{forceSide\}, Members: \{forceUsersCount\}
 ### Comentarii
 L-am înregistrat pe George de partea Luminii și pe Peter, de partea întunericului. 
 
-După ce am primit "End", printăm ambele părți, ordonate de numărul de membri și apoi, de numele lor. 
+După ce am primit "**End**", printăm ambele părți, ordonate de numărul de membri și apoi, de numele lor. 
 
 ### Exemple
 | **Input** | **Output** |
@@ -2356,42 +2370,42 @@ public class Main {
 ## Enunț
 Trebuie să colectați toate înscrierile și să imprimați rezultatele finale și statisticile despre fiecare limbă în care participanții și-au prezentat soluțiile. 
 
-Veți primi linii în formatul următor: "\{username\}-\{language\}-\{points\}" until you receive "exam finished". 
+Veți primi linii în formatul următor: "\{**username**\}-\{**language**\}-\{**points**\}" until you receive "**exam finished**". 
 
 Trebuie să stocați fiecare **username** și, de asemenea,  **submissions and points** pentru fiecare. 
 
-Puteți primi o comandă să interziceți un user pentru  **cheating** in formatul următor: "\{username\}-banned". 
+Puteți primi o comandă să interziceți un user pentru  **cheating** in formatul următor: "\{**username**\}**-banned**". 
 
-In acest caz, trebuie să înlăturați userul din concurs, dar să păstrați aplicația sa în numărul total de aplicații pentru fiecare limbă. c
+In acest caz, trebuie să înlăturați userul din concurs, dar să păstrați aplicația sa în numărul total de aplicații pentru fiecare limbă.
 
-După ce ați primit  "exam finished", **print** fiecare participant în ordine **descending** după numărul **max** **points**, apoi după **username**, in următorul **format**:
+După ce ați primit  "**exam finished**", **print** fiecare participant în ordine **descending** după numărul **max** **points**, apoi după **username**, in următorul **format**:
 
-Rezultate:
-\{username\} \| \{points\}
-…
+"**Results:**
+\{**username**\} \| \{**points**\}
+…"
 
 După ce am imprimat fiecare limbă folosită în examen, ordonăm **descending** după numărul total **submission count** și **then** după **name** limbii, in următorul format:
 
-Submisii:
-\{language\} - \{submissionsCount\}
-…
+"**Submissions:**
+\{**language**\} - \{**submissionsCount**\}
+…"
 
 ## Input / Constraints
-Pânpă primiți "exam finished", veți primi aplicațiile participanților în formatul următor: "\{username\}-\{language\}-\{points\}"
-Puteți primi o comandă de interzicere -> "\{username\}-banned"
+Pânpă primiți "**exam finished**", veți primi aplicațiile participanților în formatul următor: "\{**username**\}-\{**language**\}-\{**points**\}"
+Puteți primi o comandă de interzicere -> "\{**username**\}-**banned**"
 Punctele participantului vor fi un integer valid în gama \[0-100\]
 
 ## Output
 - Imprimați rezultatele examenului pentru fiecare participant, ordonate descendent după numărul de participanți și apoi după username, în următorul format:
 
-Rezultate:
-\{username\} \| \{points\}
-…
+"**Results:**
+\{**username**\} \| \{**points**\}
+…"
 - După ce am printat fiecare limbă, ordonăm descendent după numărul total de aplicații și apoi după numele limbii, în formatul următor: 
 
-Submisii:
-\{language\} - \{submissionsCount\}
-…
+"**Submissions:**
+\{**language**\} - \{**submissionsCount**\}
+…"
 
 
 ### Exemple
@@ -2636,10 +2650,3 @@ b - 8
 [/code-task]
 [/slide]
 
-
-[slide]
-# Rezultatele Temei
-
-[tasks-results/]
-
-[/slide]

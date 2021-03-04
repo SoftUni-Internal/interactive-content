@@ -1,17 +1,10 @@
-# National Court
-
-[slide]
-# Video
-
-[vimeo-video]
-[stream language="EN" videoId="434990192" default /]
-[stream language="RO" videoId="433962147"  /]
-[/video-vimeo]
-[/slide]
+# Provlem 1: SoftUni Reception 
 
 [slide hideTitle]
-# National Court
-[code-task title="National Court" taskId="java-fund-18-Exam-Preparation-problem-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+
+# SoftUni Reception 
+
+[code-task title="SoftUni Reception" taskId="java-fund-18-Exam-Preparation-problem-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -24,7 +17,8 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Descriere
+# Descriere
+
 Sunt **3 angajați care lucrează** la recepție toată ziua.
 
 Fiecare dintre ei poate gestiona **un număr diferit de persoane pe oră**.
@@ -37,17 +31,20 @@ Pe linia următoare **veți primi numărul total de persoane** numărate ca un s
 
 **La fiecare patru ore, toți angajații au o pauză de o oră** înainte de a începe din nou să lucreze.
 
-**Calculați timpul necesar pentru a răspunde la întrebările tuturor persoanelor** și **imprimați-l în următorul format**: "Time needed: \{time\}h."
+**Calculați timpul necesar pentru a răspunde la întrebările tuturor persoanelor** și **imprimați-l în următorul format**: 
 
-### Intrare / constrângeri
+"**Time needed:** \{**time**\}**h.**"
+
+## Intrare / Constrângeri
 - Pe primele 3 rânduri - **eficiența** fiecărui angajat - un **întreg**
 - Pe a 4-a linie - oamenii **contează** - un **întreg**
 
-### Ieșire
+## Ieșire
 - Imprimați o **singură linie**:
-    - "Time needed: \{time\}h."
 
-### Exemplu
+"**Time needed:** \{**time**\}**h.**"
+
+## Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | 5 | Time needed: 2h. |
@@ -55,12 +52,14 @@ Pe linia următoare **veți primi numărul total de persoane** numărate ca un s
 | 4 | |
 | 20 | |
 
-### Cometariu
-- Toți angajații pot răspunde la 15 persoane pe oră.
-- După prima oră au mai rămas 5 persoane pentru a primi răspuns.
-- Toți oamenii vor primi răspuns în a doua oră.
+## Cometariu
+- Toți angajații pot răspunde la 15 persoane pe oră
 
-### Exemplu
+- După prima oră au mai rămas 5 persoane pentru a primi răspuns
+
+- Toți oamenii vor primi răspuns în a doua oră
+
+## Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | 1 | Time needed: 10h. |
@@ -68,15 +67,21 @@ Pe linia următoare **veți primi numărul total de persoane** numărate ca un s
 | 3 | |
 |45 | |
 
-### Cometariu
-- Toți angajații pot răspunde la 6 persoane pe oră.
-- În primele 3 ore au răspuns 6 \ * 3 = 18 persoane.
-- Atunci au o pauză de o oră.
-- După următoarele 3 ore sunt 18 + 6 \ * 3 = 36 de persoane cu răspuns.
-- După pauză timp de o oră, există doar 9 persoane pentru a răspunde.
-- Ora 10 - toate întrebările oamenilor vor primi răspuns.
+## Cometariu
+- Toți angajații pot răspunde la 6 persoane pe oră
 
-### Exemplu
+- În primele 3 ore au răspuns 6 \* 3 = 18 persoane
+
+- Atunci au o pauză de o oră
+
+- După următoarele 3 ore sunt 18 + 6 \* 3 = 36 de persoane cu răspuns
+
+- După pauză timp de o oră, există doar 9 persoane pentru a răspunde
+
+- Ora 10 - toate întrebările oamenilor vor primi răspuns
+
+
+## Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | 3 | Time needed: 5h. |
