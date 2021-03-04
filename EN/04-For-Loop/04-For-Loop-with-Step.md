@@ -75,7 +75,7 @@ function adapter(input, code) {
 
 Create a program, which prints all the numbers, ending with 7, up to a given number **n**:
 
-- You receive a number **n**
+- You will receive a number **n**
 - Print all the required numbers from **7 to n**
 
 # Example
@@ -188,7 +188,7 @@ function adapter(input, code) {
 
 Create a program, which counts down the days before an exam:
 
-- You receive an integer - number of **days before an exam**
+- You will receive an integer - number of **days before an exam**
 - After each day, print: \{**numberOfDaysLeft**\} days before the exam
 - At the end, print: **The exam has come.**
 
