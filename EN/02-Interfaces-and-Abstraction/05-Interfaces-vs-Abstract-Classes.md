@@ -18,20 +18,11 @@ We can put these lines of code in an abstract class and extend by all other rela
 
 [slide hideTitle]
 # Problem with Solution: Ferrari
-[code-task title="Ferrari" taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-Ferrari" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Ferrari" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-Ferrari" executionType="tests-execution" executionStrategy="java-project-tests"] 
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 Model an application which contains a **class Ferrari** and an **interface**. 
 
 Your task is simple, you have a **car - Ferrari**, its model is "**488-Spider**" and it has a **driver**. 
@@ -44,7 +35,9 @@ As you may have guessed this functionality is typical for all cars, so you shoul
 
 Your task is to **create a Ferrari** and **set the driver's name** to the passed one in the input. 
 
-After that, print the info. Take a look at the Examples to understand the task better.
+After that, print the info. 
+
+Take a look at the **еxamples** to understand the task better.
 
 [image assetsSrc="interfaces-and-abstraction-example(10).png" /]
 
@@ -52,24 +45,31 @@ After that, print the info. Take a look at the Examples to understand the task b
 On the **single input line**, you will be given the **driver's name**.
 
 ## Output
-On the **single output line**, print the model, the messages from the brakes and gas pedal methods and the driver's name. In the following format:
+On the **single output line**, print the model, the messages from the brakes and gas pedal methods and the driver's name. 
+
+In the following format:
+
 `"{model}/{brakes}/{gas pedal}/{driver's name}"`
 
 ## Constraints
-The input will always be valid, no need to check it explicitly! The Driver's name may contain any ASCII characters.
+The input will always be valid, no need to check it explicitly! 
+
+The driver's name may contain any ASCII characters.
 
 
-## Examples
+# Examples
+
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | Dominic Toretto | 488-Spider/Brakes!/brum-brum-brum-brrrrr/Dominic Toretto |
 
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | Brian O'Conner | 488-Spider/Brakes!/brum-brum-brum-brrrrr/Brian O'Conner |
 
 [/task-description]
-[code-io /]
 [tests]
 [test open]
 [input]
