@@ -9,7 +9,6 @@
 
 - There are two main types of streams:
 
-<br/> <br/>
 
     - Input Streams
     
@@ -26,10 +25,9 @@
     }
     ```
     
-<br/> <br/>
 
     - Output Streams
-    
+
 <br/> <br/>
 
     ```java
@@ -47,7 +45,6 @@
     }
     ```
  
-<br/> <br/>
 
 - Buffered streams boost performance
 - Streams can be chained together by passing an instance of one stream to another:
