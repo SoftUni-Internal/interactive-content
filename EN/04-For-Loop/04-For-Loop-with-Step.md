@@ -20,7 +20,7 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
-If we want our step to be **different than 1**, when **increasing**, we use the `i +=` + step size operator.
+If we want our step to be **different than 1**, when **increasing**, we use the `i +=` step size operator.
 
 With step of 2, the loop would look like this:
 
