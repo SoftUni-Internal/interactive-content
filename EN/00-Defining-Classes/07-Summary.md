@@ -1,12 +1,9 @@
 [slide hideTitle]
 # Summary
 
-[vimeo-video]
-[stream language="EN" videoId="485444743/fd95b4883a" default /]
-[stream language="RO" videoId="485444743/fd95b4883a"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-40-conclusion-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-# In this lesson you learned:
+## In this lesson you learned:
 
 - Classes are templates from which objects are created
     - class instances are called objects
@@ -69,3 +66,4 @@ Animal animal = new Animal("Rex", 5);
 
 
 [/slide]
+

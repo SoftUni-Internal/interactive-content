@@ -4,10 +4,7 @@
 
 # Fields
 
-[vimeo-video]
-[stream language="EN" videoId="485442485/155d3dbe2c" default /]
-[stream language="RO" videoId="485442485/155d3dbe2c"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-10-11-class-data-fields-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A Java field is a variable inside a class. 
 
@@ -35,10 +32,7 @@ public class Car {
 
 # Problem with Solution: Define Car Class
 
-[vimeo-video]
-[stream language="EN" videoId="485442542/b12b87f743" default /]
-[stream language="RO" videoId="485442542/b12b87f743"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-12-13-problem-and-solution-define-car-class-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Create a class named **Car**.
 
@@ -96,10 +90,7 @@ public class Car {
 
 # Access Modifiers
 
-[vimeo-video]
-[stream language="EN" videoId="485442782/1379d735a9" default /]
-[stream language="RO" videoId="485442782/1379d735a9"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-14-access-modifiers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Access modifiers** determine whether other classes can use a particular field.
 
@@ -129,3 +120,4 @@ You can find out more about **inheritance** [here](https://docs.oracle.com/javas
 The **public** access modifier is accessible **everywhere**.
 
 [/slide]
+
