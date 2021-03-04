@@ -2,20 +2,10 @@
 
 [slide hideTitle]
 # Problem: Listy Iterator
-[code-task title="Listy Iterator" taskId="oop-basics-java-iterators-and-comparators-Listy-Iterator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
+[code-task title="Listy Iterator" taskId="oop-basics-java-iterators-and-comparators-Listy-Iterator" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
+ 
 [task-description]
-## Description
+# Description
 Create a class `ListyIterator`.
 
 It should receive the collection of **Strings** which it will iterate, through its constructor.
@@ -51,9 +41,9 @@ The last command received will **always** be `END`.
 
 ## Output
 
-For every command from the input (except for the **END** and **Create** commands) print the result of that command on the console, each on a **new line**. 
+For every command from the input (except for the **END** and **Create** commands) print the result of that command to the console, each on a **new line**. 
 
-In the case of the **Move** or **HasNext** commands, print the **returned value** of the method, in case of a **Print** command you do not have to do anything additional as the method itself should already print on the console. 
+In the case of the **Move** or **HasNext** commands, print the **returned value** of the method, in case of a **Print** command you do not have to do anything additional as the method itself should already print to the console. 
 
 Your program should catch **any exceptions thrown** because of validations (calling Print on an empty collection) and print their messages instead.
 
@@ -76,6 +66,8 @@ Your program should catch **any exceptions thrown** because of validations (call
 | HasNext |  |
 | END |  |
 
+## Example 2
+
 | **Input** | **Output** |
 | --- | --- |
 | Create Stan Johnson | true |
@@ -86,7 +78,7 @@ Your program should catch **any exceptions thrown** because of validations (call
 | END |  |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -249,20 +241,10 @@ END
 
 [slide hideTitle]
 # Problem: Collection
-[code-task title="Collection" taskId="oop-basics-java-iterators-and-comparators-Collection" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Collection" taskId="oop-basics-java-iterators-and-comparators-Collection" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 Using the `ListyIterator` from the last problem, extend it by implementing the `Iterable` interface.
 
 Implement **all** methods desired by the interface manually.
@@ -270,16 +252,16 @@ Implement **all** methods desired by the interface manually.
 Add a new method to the class `PrintAll()`, the method should use `foreach` on the collection and print all elements on a **single line** separated by a space.
 
 ## Input
-Input will come from the console as **lines** of commands. 
+The input will come from the console as **lines** of commands. 
 
 The first line will always be the `Create` command. 
 
 The **last** command received will always be the `END` command.
 
 ## Output
-For every command from the input (with the exception of the `END` and `Create` commands) print the result of that command on the console, each on a **new line**. 
+For every command from the input (with the exception of the `END` and `Create` commands) print the result of that command to the console, each on a **new line**. 
 
-In the case of `Move` or `HasNext` commands print the returned value of the method, in case of a `Print` command you do not have to do anything additional as the method itself should already print on the console. 
+In the case of `Move` or `HasNext` commands print the returned value of the method, in case of a `Print` command you do not have to do anything additional as the method itself should already print to the console. 
 
 In the case of a `PrintAll` command, you should print all elements on a single line **separated by spaces**. Your program should catch **any exceptions** thrown because of validations and print their messages instead.
 
@@ -312,7 +294,7 @@ In the case of a `PrintAll` command, you should print all elements on a single l
 | END |  |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -477,20 +459,10 @@ Steven John Kevin
 
 [slide hideTitle]
 # Problem: Stack Iterator
-[code-task title="Stack Iterator" taskId="oop-basics-java-iterators-and-comparators-Stack-Iterator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Stack Iterator" taskId="oop-basics-java-iterators-and-comparators-Stack-Iterator" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 You have a task to create your custom Stack.
 
 You already know the Stack structure.
@@ -531,7 +503,7 @@ Foreach the stack **twice** and print all elements. Each element should be on a 
 - The elements in the `Push` command will be **valid** integers **between** [2 ^ -32 ... 2 ^ 32 - 1]
 - The commands will always be **valid** (always be either `Push`, `Pop`, or `END`)
 - There will be no more than **16** elements in the `Push` command
-- If `Pop` command **could not** be executed as expected (e.g. no elements in the stack), print on the console: `No elements`
+- If `Pop` command **could not** be executed as expected (e.g. no elements in the stack), print to the console: `No elements`
 
 
 # Examples
@@ -567,7 +539,7 @@ Foreach the stack **twice** and print all elements. Each element should be on a 
 | END |  |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -697,20 +669,10 @@ No elements
 
 [slide hideTitle]
 # Program: Froggy
-[code-task title="Froggy" taskId="oop-basics-java-iterators-and-comparators-Froggy" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Froggy" taskId="oop-basics-java-iterators-and-comparators-Froggy" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 Let's play a game.
 
 You have a tiny little **Frog**, and a **Lake** with numbers.
@@ -721,7 +683,7 @@ Imagine, your **Frog** belongs to the **Lake**.
 
 The **Frog jumps** only when the `END` command is received.
 
-When the **Frog** starts jumping, print on the console **each number** the **Frog** have stepped over.
+When the **Frog** starts jumping, print to the console **each number** the **Frog** have stepped over.
 
 To calculate the jumps, use the guidelines:
 
@@ -772,7 +734,7 @@ The output should be print on a **single** line.
 | END |  |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -852,20 +814,10 @@ END
 
 [slide hideTitle]
 # Problem: Comparing Objects
-[code-task title="Comparing Objects" taskId="oop-basics-java-iterators-and-comparators-Comparing-Objects" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Comparing Objects" taskId="oop-basics-java-iterators-and-comparators-Comparing-Objects" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 Create a **class** `Person`.
 
 Each person should have **name**, **age** and **town**.
@@ -889,7 +841,7 @@ After that, you will receive an integer **N** - the **N**\-th person in your col
 ## Output
 On the single output line, you should bring statistics, how many people are **equal** to the **Nth person**, how many people are **not** equal to this person, and the **total** people in your collection.
 
-Format:
+**Format:**
 
 `{number of equal people} {number of not equal people} {total number of people}`
 
@@ -918,7 +870,7 @@ Format:
 | 2 |  |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -1007,20 +959,10 @@ No matches
 
 [slide hideTitle]
 # Problem: Strategy Pattern
-[code-task title="Strategy Pattern" taskId="oop-basics-java-iterators-and-comparators-Strategy-Pattern" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Strategy Pattern" taskId="oop-basics-java-iterators-and-comparators-Strategy-Pattern" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 An interesting pattern you may have heard of is the Strategy Pattern.
 
 If we have multiple ways to do a task (let us say sort a collection) it allows the client to choose the way that most fits his needs.
@@ -1083,7 +1025,7 @@ Start with the set that implements the name comparator.
 |  | Nicko 99 |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -1209,23 +1151,16 @@ aria 33
 
 [slide hideTitle]
 # Problem: Equality Logic
-[code-task title="Equality Logic" taskId="oop-basics-java-iterators-and-comparators-Equality-Logic" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Equality Logic" taskId="oop-basics-java-iterators-and-comparators-Equality-Logic" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
+
 Create a **class** `Person` holding **name** and **age**.
 
-A person with the **same** name and age should be considered the same, override any methods needed to enforce this logic.
+A person with the **same** name and age should be considered the same.
+
+Override any methods needed to enforce this logic.
 
 Your class should work with **both** standard and hashed collections.
 
@@ -1285,7 +1220,7 @@ You can check online for implementation of hashCode - it does not have to be per
 |  | Nicko 99 |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -1405,20 +1340,10 @@ I 3
 
 [slide hideTitle]
 # Problem: Pet Clinics
-[code-task title="Pet Clinics" taskId="oop-basics-java-iterators-and-comparators-Pet-Clinics" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Pet Clinics" taskId="oop-basics-java-iterators-and-comparators-Pet-Clinics" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 ***You are a young and ambitious owner of a Pet Clinics Holding.***
 
 You ask your employees to create a program that will store all information about the pets in the database.
@@ -1539,7 +1464,7 @@ The `Print` command with only a clinic should print information **for each** roo
 | Print PetClinic | Room empty |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -1728,20 +1653,10 @@ Elephant 4 Elephant
 
 [slide hideTitle]
 # Problem: Linked List Traversal
-[code-task title="Linked List Traversal" taskId="oop-basics-java-iterators-and-comparators-Linked-List-Traversal" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Linked List Traversal" taskId="oop-basics-java-iterators-and-comparators-Linked-List-Traversal" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 You need to write your simplified implementation of a generic Linked List that has an Iterator.
 
 The list should support the `Add` and `Remove` operations, should reveal the number of elements it has with a `getSize` function and should have an implemented iterator (should be `foreach`-able).
@@ -1807,7 +1722,7 @@ You can use the Linked List from your **Workshop**.
 | Add 4 |  |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
