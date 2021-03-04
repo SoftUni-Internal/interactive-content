@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Defining Simple Classes
 
-[vimeo-video]
-[stream language="EN" videoId="485442096/a189ddb69d" default /]
-[stream language="RO" videoId="485442096/a189ddb69d"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-3-4-defining-classes-defining-simple-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Classes are the **basic building block** of any **object-oriented language**, such as Java.
 
@@ -41,10 +38,7 @@ The ** behavior** associated with a class or object is implemented with **method
 [slide hideTitle]
 # Naming Classes
 
-[vimeo-video]
-[stream language="EN" videoId="485442154/ee85ed312a" default /]
-[stream language="RO" videoId="485442154/ee85ed312a"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-5-Naming-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Below are the class naming rules of the Java programming language. 
 
@@ -75,10 +69,7 @@ Avoid acronyms and abbreviations (unless the abbreviation is much more widely us
 [slide hideTitle]
 # Class Members
 
-[vimeo-video]
-[stream language="EN" videoId="485442219/c2168df12c" default /]
-[stream language="RO" videoId="485442219/c2168df12c"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-6-class-members-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When a class is defined, it contains only those members of a class declaration that are required.
 
@@ -111,10 +102,7 @@ class Car {
 [slide hideTitle]
 # Creating an Object
 
-[vimeo-video]
-[stream language="EN" videoId="485442316/481f9548ec" default /]
-[stream language="RO" videoId="485442316/481f9548ec"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-7-Creating-an-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Creating an object of a defined class is called **instantiation**.
 
@@ -140,10 +128,7 @@ Car thirdCar = new Car();
 [slide hideTitle]
 # Object Reference
 
-[vimeo-video]
-[stream language="EN" videoId="485442368/4511d02327" default /]
-[stream language="RO" videoId="485442368/4511d02327"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-8-Object-reference-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `new` operator instantiates a class by allocating memory for a new object and returning a **reference** to that memory. 
 
@@ -183,10 +168,7 @@ int horsePower = 0;
 [slide hideTitle]
 # Classes vs. Objects
 
-[vimeo-video]
-[stream language="EN" videoId="485442442/8c17b75c2e" default /]
-[stream language="RO" videoId="485442442/8c17b75c2e"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-9-classes-vs-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 | Class | Object |
 | --- | --- |
@@ -198,4 +180,6 @@ int horsePower = 0;
 | **Does not allocate memory** when it is created. | **Allocates memory** when it is created. |
 | Only one way to define in Java - using the `class` keyword. | Many ways to create in Java - `new` keyword, `newInstance()` method, `clone()` method `factory` method, and deserialization. |
 [/slide]
+
+
 
