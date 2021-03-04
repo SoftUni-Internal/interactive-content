@@ -234,7 +234,7 @@ Test Passed!
 [input]
 import org.junit.Assert;
 import org.junit.Test;
-import java.lang.reflect.\*;
+import java.lang.reflect.*;
 import java.util.Arrays;
 import java.util.List;
 
@@ -298,7 +298,7 @@ Test Passed!
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.lang.reflect.\*;
+import java.lang.reflect.*;
 import java.util.Arrays;
 import java.util.List;
 
