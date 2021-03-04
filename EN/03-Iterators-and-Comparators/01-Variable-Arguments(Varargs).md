@@ -93,13 +93,13 @@ Create a `Book` class from the UML diagram below:
 | ---- |
 |- title: String |
 |- year: int |
-|- authors: List/<String/> | 
+|- authors: List<String> | 
 |- setTitle(String) |
 |- setYear(String) |
 |- setAuthors(String…) |
 |+ getTitle(): String |
 |+ getYear(): int |
-|+ getAuthors(): List/<String/> |
+|+ getAuthors(): List<String> |
 
 
 You can use only **one constructor**. 
@@ -230,7 +230,7 @@ import java.util.List;
 
 public class TestBookSettersNames \{
     private static final String CLASS_NAME = "Book";
-    private static final List\<String\> METHODS_NAMES = Arrays.asList("setTitle", "setYear", "setAuthors");
+    private static final List<String> METHODS_NAMES = Arrays.asList("setTitle", "setYear", "setAuthors");
 
     @Test
     public void bookSettersNames() throws NoSuchMethodException \{
