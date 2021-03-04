@@ -1,6 +1,6 @@
-
+# Provlem 1: SoftUni Reception 
 [slide hideTitle]
-# National Court
+# SoftUni Reception 
 [code-task title="National Court" taskId="java-fund-18-Exam-Preparation-problem-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -14,7 +14,8 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
+
 There are **3 employees working** on the reception all day long.
 
 Each of them can handle a **different number of people per hour**.
@@ -27,17 +28,23 @@ On the next line, you will receive **the total amount of people** as a single in
 
 **Every fourth hour, the employees have a one-hour break** before they start working again. 
 
-**Calculate the time needed to answer the questions of all the people** and **print the result in the following format**: "Time needed: \{time\}h."
+**Calculate the time needed to answer the questions of all the people** and **print the result in the following format**:
 
-### Input / Constraints
+"**Time needed:** \{**time**\}**h.**"
+
+## Input / Constraints
+
 - On first 3 lines -  each employee's **efficiency** - **integers**
+
 - On the 4th line - the amount of people - an **integer**
 
-### Output
-- Print a **single line**: 
-    - "Time needed: \{time\}h."
+## Output
 
-### Example
+- Print a **single line**: 
+
+"**Time needed:** \{**time**\}**h.**"
+
+## Example One
 | **Input** | **Output** |
 | --- | --- |
 | 5 | Time needed: 2h. |
@@ -45,12 +52,13 @@ On the next line, you will receive **the total amount of people** as a single in
 | 4 | |
 | 20 | |
 
-### Comment
+## Comment
+
 - All of the employees can answer the questions of 15 people per hour
 - After the first hour, the questions of 5 people remain to answer
 - All people's questions will have been answered within the second hour
 
-### Example
+## Example Two
 | **Input** | **Output** |
 | --- | --- |
 | 1 | Time needed: 10h. |
@@ -58,7 +66,7 @@ On the next line, you will receive **the total amount of people** as a single in
 | 3 | |
 |45 | |
 
-### Comment
+## Comment
 - All the employees together can answer the questions of 6 people per hour.
 - In the first 3 hours, they have answered the questions of 18 people (6 \* 3)
 - Then they take a break for an hour
@@ -66,7 +74,7 @@ On the next line, you will receive **the total amount of people** as a single in
 - After their one-hour break, only 9 people's questions remain
 - Everyone's questions will have been answered on the 10th hour
 
-### Example
+## Example Three
 | **Input** | **Output** |
 | --- | --- |
 | 3 | Time needed: 5h. |
