@@ -3,11 +3,6 @@
 [slide hideTitle]
 # Problem: Train
 
-[vimeo-video]
-[stream language="EN" videoId="421823138" default /]
-[stream language="RO" videoId="432473499"  /]
-[/video-vimeo]
-
 [code-task title="Train" taskId="java-fund-Lists-Exercise-Train" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -420,11 +415,6 @@ end
 
 [slide hideTitle]
 # Problem: House Party
-
-[vimeo-video]
-[stream language="EN" videoId="421820479" default /]
-[stream language="RO" videoId="432473385"  /]
-[/video-vimeo]
 
 [code-task title="House Party" taskId="java-fund-Lists-Exercise-House-Party" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -924,11 +914,6 @@ Invalid index
 [slide hideTitle]
 # Problem: Bomb Numbers
 
-[vimeo-video]
-[stream language="EN" videoId="421819141" default /]
-[stream language="RO" videoId="432473311"  /]
-[/video-vimeo]
-
 [code-task title="Bomb Numbers" taskId="java-fund-Lists-Exercise-Bomb-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1163,11 +1148,6 @@ Second player wins! Sum: 826
 [slide hideTitle]
 # Problem: Append Arrays
 
-[vimeo-video]
-[stream language="EN" videoId="421818862" default /]
-[stream language="RO" videoId="432473568"  /]
-[/video-vimeo]
-
 [code-task title="Append Arrays" taskId="java-fund-Lists-Exercise-Append-Arrays" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1259,11 +1239,6 @@ Write a program to **append several arrays** of numbers.
 [slide hideTitle]
 # Problem: Pokemon Don't Go
 
-[vimeo-video]
-[stream language="EN" videoId="421821869" default /]
-[stream language="RO" videoId="432473432"  /]
-[/video-vimeo]
-
 [code-task title="Pokemon Don't Go" taskId="java-fund-Lists-Exercise-Pokemon-Don't-Go" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1302,7 +1277,7 @@ The **program ends** when **no more elements remain** in the sequence.
 ### Input
 - On the first line of input, you will receive a sequence of integers, separated by spaces
 
-- On the next several lines you will receive integers – the indexes
+- On the next several lines you will receive integers - the indexes
 
 ### Output
 When the program ends, you must print the summed up value of all REMOVED elements to the console
@@ -1598,14 +1573,14 @@ The **possible commands** are:
 
 - Add:\{lessonTitle\} – **add the lesson to the end** of the schedule, if it **does not exist**
 
-- Insert:\{lessonTitle\}:\{index\} – **insert** the lesson to the **given index**, if it **does not exist**
+- Insert:\{lessonTitle\}:\{index\} - **insert** the lesson to the **given index**, if it **does not exist**
 
-- Remove:\{lessonTitle\} – **remove the lesson**, if it **exists**
+- Remove:\{lessonTitle\} - **remove the lesson**, if it **exists**
 
-- Swap:\{lessonTitle\}:\{lessonTitle\} – **swap the position** of the two lessons, **if they exist**
+- Swap:\{lessonTitle\}:\{lessonTitle\} - **swap the position** of the two lessons, **if they exist**
 
-- Exercise:\{lessonTitle\} – **add the Exercise in the schedule right after the lesson index**, if the lesson exists and there is no exercise already, in the following format: "- - - \{lessonTitle\}-Exercise"
-    - If the **lesson doesn't exist**, **add** the lesson **to the end** of the course schedule, **followed by the exercise**
+- Exercise:\{lessonTitle\} - **add the Exercise in the schedule right after the lesson index**, if the lesson exists and there is no exercise already, in the following format: "- - - \{lessonTitle\}-Exercise"
+    - if the **lesson doesn't exist**, **add** the lesson **to the end** of the course schedule, **followed by the exercise**
 
 Each time you **Swap or Remove a lesson,** you should **do the same with the exercises**, if there are any, which follow the lessons.
 

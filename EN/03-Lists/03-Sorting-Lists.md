@@ -5,7 +5,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-23-24-sorting-lists-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**`Collections.sort()`** - sorts a List in ascending order. In the case of String values they will be sorted in alphabetical order.
+`Collections.sort()` - sorts a List in ascending order. In the case of String values they will be sorted in alphabetical order.
 
 ```java live
 List<String> names = new ArrayList<>(Arrays.asList("Peter", "Michael", "George", "Victor", "John", "Alexander"));
@@ -14,7 +14,7 @@ Collections.sort(names); // sort in ascending (alphabetical) order
 
 System.out.println(String.join(", ", names));
 ```
-**`Collections.reverse()`** - sorts the collection in descending order.
+`Collections.reverse()` - sorts the collection in descending order.
 
 ```java live
 List<String> names = new ArrayList<>(Arrays.asList("Peter", "Michael", "George", "Victor", "John", "Alexander"));

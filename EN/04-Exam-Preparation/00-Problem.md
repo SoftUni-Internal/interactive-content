@@ -71,7 +71,8 @@ On the next line, you will receive **the total amount of people** as a single in
 |45 | |
 
 ## Comment
-- All the employees together can answer the questions of 6 people per hour.
+
+- All the employees together can answer the questions of 6 people per hour
 - In the first 3 hours, they have answered the questions of 18 people (6 \* 3)
 - Then they take a break for an hour
 - After the next 3 hours, they have serviced 36 people (18 + 6 \* 3)

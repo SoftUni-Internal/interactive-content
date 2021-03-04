@@ -77,13 +77,13 @@ If you try to convert an array that holds a primitive data type like `int []` to
 
 Lists provide functionality that lets you **add**, **remove** and **find** elements.
 
-- ``add(element)`` - adds an element to the end of the list
-- ``add(index, element)`` - adds an element at the specified index
-- ``remove(element)`` - removes the element if found and returns a boolean value
-- ``remove(index)`` - removes the element at the specified index
-- ``size()`` - returns the number of elements
-- ``contains(element)`` - checks if the list contains a certain element and returns a boolean value
-- ``set(index, item)`` - replaces the element at the given index
+- `add(element)` - adds an element to the end of the list
+- `add(index, element)` - adds an element at the specified index
+- `remove(element)` - removes the element if found and returns a boolean value
+- `remove(index)` - removes the element at the specified index
+- `size()` - returns the number of elements
+- `contains(element)` - checks if the list contains a certain element and returns a boolean value
+- `set(index, item)` - replaces the element at the given index
 
 [/slide]
 
@@ -95,7 +95,11 @@ Lists provide functionality that lets you **add**, **remove** and **find** eleme
 
 ## Adding Elements
 
-The ``add()`` method is used for inserting new elements into a list. The type of elements that can be added is determined at the time of list creation. If you gave ``List<String>`` you will not be able to add anything other than a String into your list.
+The `add()` method is used for inserting new elements into a list. 
+
+The type of elements that can be added is determined at the time of list creation. 
+
+If you gave `List<String>` you will not be able to add anything other than a String into your list.
 
 
 **add(element):**
@@ -111,7 +115,9 @@ for (String equipment : safetyEquipment) {
 }
 ```
 
-Items are appended to the list in the order that you add them. If you would like to insert an item in a different position you can do that using ``add(index, element)``.
+Items are appended to the list in the order that you add them. 
+
+If you would like to insert an item in a different position you can do that using `add(index, element)`.
 
 
 **add(index, element):**
@@ -138,7 +144,7 @@ When an element is added the count of elements increases by one.
 
 ## Removing Elements
 
-The ``remove()`` method deletes an element from the list.
+The `remove()` method deletes an element from the list.
 
 **remove(element)** - **removes** the **first occurrence** of the **specified element** (returns **true** / **false**):
 
@@ -158,12 +164,10 @@ for (String name : names){
 }
 ```
 
-``System.out.println(names.remove("Maria"))`` returns **true** because we had the element was found and removed.
-``System.out.println(names.remove("John")); `` returns **false** because the element was not found.
-
+`System.out.println(names.remove("Maria"))` returns **true** because we had the element was found and removed.
+`System.out.println(names.remove("John"));` returns **false** because the element was not found.
 
 **remove(index)** - **removes** the **element** at the **specified index**:
-
 
 ```java live
 List<String> digimons = new ArrayList<>();
