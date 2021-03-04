@@ -93,13 +93,13 @@ Create a `Book` class from the UML diagram below:
 | ---- |
 |- title: String |
 |- year: int |
-|- authors: List<String> | 
+|- authors: List\<\String\> | 
 |- setTitle(String) |
 |- setYear(String) |
 |- setAuthors(String…) |
 |+ getTitle(): String |
 |+ getYear(): int |
-|+ getAuthors(): List<String> |
+|+ getAuthors(): List\<\String\> |
 
 
 You can use only **one constructor**. 
