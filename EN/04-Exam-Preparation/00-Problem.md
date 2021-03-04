@@ -1,8 +1,12 @@
 # Provlem 1: SoftUni Reception 
+
 [slide hideTitle]
+
 # SoftUni Reception 
+
 [code-task title="SoftUni Reception" taskId="java-fund-18-Exam-Preparation-problem-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -93,7 +97,7 @@ On the next line, you will receive **the total amount of people** as a single in
 20
 [/input]
 [output]
-Time needed: 2h.
+Time needed\: 2h\.
 [/output]
 [/test]
 [test open]
@@ -104,7 +108,7 @@ Time needed: 2h.
 45
 [/input]
 [output]
-Time needed: 10h.
+Time needed\: 10h\.
 [/output]
 [/test]
 [test open]
@@ -115,7 +119,7 @@ Time needed: 10h.
 40
 [/input]
 [output]
-Time needed: 5h.
+Time needed\: 5h\.
 [/output]
 [/test]
 [test]
@@ -126,7 +130,7 @@ Time needed: 5h.
 45
 [/input]
 [output]
-Time needed: 10h.
+Time needed\: 10h\.
 [/output]
 [/test]
 [test]
@@ -137,7 +141,7 @@ Time needed: 10h.
 100
 [/input]
 [output]
-Time needed: 22h.
+Time needed\: 22h\.
 [/output]
 [/test]
 [test]
@@ -148,7 +152,7 @@ Time needed: 22h.
 900
 [/input]
 [output]
-Time needed: 11h.
+Time needed\: 11h\.
 [/output]
 [/test]
 [test]
@@ -159,7 +163,7 @@ Time needed: 11h.
 40
 [/input]
 [output]
-Time needed: 5h.
+Time needed\: 5h\.
 [/output]
 [/test]
 [test]
@@ -170,7 +174,7 @@ Time needed: 5h.
 4519
 [/input]
 [output]
-Time needed: 2009h.
+Time needed\: 2009h\.
 [/output]
 [/test]
 [test]
@@ -181,7 +185,7 @@ Time needed: 2009h.
 30
 [/input]
 [output]
-Time needed: 13h.
+Time needed\: 13h\.
 [/output]
 [/test]
 [test]
@@ -192,7 +196,7 @@ Time needed: 13h.
 70
 [/input]
 [output]
-Time needed: 9h.
+Time needed\: 9h\.
 [/output]
 [/test]
 [test]
@@ -203,7 +207,7 @@ Time needed: 9h.
 500
 [/input]
 [output]
-Time needed: 66h.
+Time needed\: 66h\.
 [/output]
 [/test]
 [test]
@@ -214,7 +218,7 @@ Time needed: 66h.
 27
 [/input]
 [output]
-Time needed: 3h.
+Time needed\: 3h\.
 [/output]
 [/test]
 [test]
@@ -225,7 +229,7 @@ Time needed: 3h.
 0
 [/input]
 [output]
-Time needed: 0h.
+Time needed\: 0h\.
 [/output]
 [/test]
 [/tests]
