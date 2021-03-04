@@ -28,7 +28,7 @@ Depending on the age (decimal number) and the gender (**m** / **f**)
 - `Miss`: a girl (gender **f**) -  under 16 years
 
 # Solution: Person Titles
-We should notice that the **output** of the program **depends on a few things**. 
+We should note that the **output** of the program **depends on a few things**. 
 
 **First**, we have to check what is the specified **gender** and **then** to check the **age.** 
 
