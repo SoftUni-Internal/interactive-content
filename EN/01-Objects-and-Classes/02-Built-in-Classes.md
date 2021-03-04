@@ -131,6 +131,7 @@ System.out.println(radians);
 ```
 
 - Trigonometric Functions - Calculate the value of angles in radians `sin(a)` `cos(a)` `tan(a)`
+
 [/slide]
 
 
@@ -207,7 +208,10 @@ You are given a **list of words in one line**.
 
 - Split the input string (by space) and create an array of words
 - Create a random number generator - an object rnd of type Random
-- In a for-loop exchange each number at positions 0, 1, …, words.Length-1 by a number at random position. To generate a random number in range use rnd.nextInt(words.length)
+- In a for-loop exchange each number at positions 0, 1, …, words.Length-1 by a number at random position. 
+
+To generate a random number in range use rnd.nextInt(words.length)
+
 - Print each word in the array on new line
 
 ## Constrains
@@ -449,7 +453,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You will receive N – number in range **\[0 – 1000]**.
+You will receive N - number in range \[0 – 1000\].
 
 Calculate **Factorial of N** and print the result.
 

@@ -27,7 +27,7 @@ An object holds a set of **named values**.
 
 A birthday object, for example, will have values like `day`, `month`, `year` etc.
 
-```java live no-template
+```java live
 import java.time.LocalDate;
 
 public class Main {
@@ -79,7 +79,9 @@ For example, all animals are grouped in a single `class` and each animal is an `
 
 Each animal has states like type, age, colour, preferred food, etc. and behaviour like eat, drink water, move, make sound, etc. 
 
-A class is like an object constructor, that contains all of their similar characteristics. It is a "blueprint" for creating objects.
+A class is like an object constructor, that contains all of their similar characteristics. 
+
+It is a "blueprint" for creating objects.
 
 
 [/slide]
