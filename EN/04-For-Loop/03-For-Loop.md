@@ -111,7 +111,7 @@ function adapter(input, code) {
 
 Create a program, which prints all numbers in a given range and their sum:
 
-- You receive a number **n** from the console
+- You will receive a number **n** from the console
 - **Print** all numbers from **1** to **n**
 - **Calculate** the **sum** of all numbers from **1** to **n**
 - **Print** the sum to the console at the end
@@ -199,7 +199,7 @@ function adapter(input, code) {
 
 Create a program, which prints **the greatest** number in an array:
 
-- You receive **n**: the size of the array
+- You will receive **n**: the size of the array
 
 - Process **n** numbers
 
