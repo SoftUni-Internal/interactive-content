@@ -144,7 +144,7 @@ import java.util.stream.Stream;
 
 public class TestBookFieldsNames \{
     private static final String CLASS_NAME = "Book";
-    private static final List\<String\> FIELD_NAMES = Arrays.asList("title", "year", "authors");
+    private static final List<String> FIELD_NAMES = Arrays.asList("title", "year", "authors");
 
     @Test
     public void bookFieldsNames() throws NoSuchFieldException \{
