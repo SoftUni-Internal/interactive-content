@@ -1,17 +1,18 @@
-[slide]
-# Introducerea lecției
+# Lesson Introduction
 
-TODO: Add Video
+[slide hideTitle]
+
+# Lesson Content
 
 ## În această lecție veți afla despre:
 
 **1. Tipuri de date și variabile**
 
-- Cum funcționează calculatorul?
+- How does computing work
 
-- Ce este tipul de date?
+- Data types and their meaning
 
-- Ce este o variabilă?
+- What is a variable
 
 **2. Tip întreg și număr real**
 
@@ -23,7 +24,7 @@ TODO: Add Video
 
 **4. Tip boolean**
 
-- Ce este boolean?
+- What is a boolean
 
 - Prezentare generală booleană și ce conține
 
@@ -34,8 +35,6 @@ TODO: Add Video
 - Prezentare generală și reprezentare a tipului de date "String"
 
 **6. Exerciții live**
-
-
 
 
 

@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Rezumat
 
 ## În această lecție ați învățat:
@@ -15,8 +15,8 @@
 
   
   - Tipuri de numere:
-     - Reprezentați numerele
-     - Au intervale specifice pentru fiecare tip
+     - reprezentați numerele
+     - au intervale specifice pentru fiecare tip
 
     ```java
     int myNum = 100000; // Integer
@@ -27,8 +27,8 @@
     ```
 
   - Șiruri și tipuri de text:
-     - Reprezentați textul
-     - Secvențe de caractere Unicode
+     - reprezentați textul
+     - secvențe de caractere Unicode
 
 
     ```java
@@ -40,6 +40,7 @@
     ```
 
   - Conversia tipului: implicită și explicită
+  - Boolean can have only two possible values - **true** or **false**
 
   ## În lecția următoare, veți învăța:
    - Matrice

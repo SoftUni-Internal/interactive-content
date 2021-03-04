@@ -1,11 +1,6 @@
-[slide]
-# Strings
-
-[vimeo-video startTimeInSeconds="2221" endTimeInSeconds="2422"]
-[stream language="EN" videoId="425081520" default /]
-[stream language="RO" videoId="425084744"  /]
-[/vimeo-video]
-
+# String Type
+[slide hideTitle]
+# The String Data Type
 Șirurile sunt utilizate pentru stocarea textului.
 
 O variabilă **Șir** conține o colecție de caractere înconjurate de ghilimele duble și are o valoare implicită **nul** (fără valoare).
@@ -26,7 +21,7 @@ String firstName = "John";
 String lastName = "Doe";
 System.out.println(firstName + " " + lastName);
 ```
-* Rețineți că am adăugat un text gol `(" ")` pentru a crea un spațiu între prenume și prenume pe tipărire.
+* Rețineți că am adăugat un text gol `(" ")` pentru a crea un spațiu între prenume și prenume pe tipărire
 
 ## Șirurile de format inserează valori variabile după model
 
@@ -49,8 +44,8 @@ System.out.printf("Your full name is %s.", fullName);
 [/slide]
 
 [slide hideTitle]
-# Problem: Concat Names
-[code-task title="Problem: Concat Names" taskId="java-fund-Data-Types-Concat-Names" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem with Solution: Concat Names
+[code-task title="Concat Names" taskId="java-fund-data-types-lab-concat-names" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -171,123 +166,3 @@ abc--\>123
 [/code-task]
 [/slide]
 
-[slide hideTitle]
-# Solution: Concat Names
-[code-task title="Problem: Concat Names" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.Scanner;
-
-public class ConcatNames {
-    public static void main(String[] args) {
-    // Write your solution here
-}
-```
-[/code-editor]
-[task-description]
-## Descriere
-Citiți două nume și un delimitator.
-
-Imprimați numele alăturate de delimitator.
-
-## Exemple
-| **Intrare**|**Ieșire**|
-| --- | --- |
-| John | John->Smith |
-| Smith | |
-| -> | |
-
-| **Intrare**|**Ieșire**|
-| --- | --- |
-| Jan | Jan<->White |
-| White | |
-| <-> | |
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-John
-Smith
--\>
-[/input]
-[output]
-John-\>Smith
-[/output]
-[/test]
-[test open]
-[input]
-Jan
-White
-\<-\>
-
-[/input]
-[output]
-Jan\<-\>White
-[/output]
-[/test]
-[test open]
-[input]
-Linda
-Terry
-=\>
-
-[/input]
-[output]
-Linda=\>Terry
-[/output]
-[/test]
-[test]
-[input]
-a
-b
-\{\}
-[/input]
-[output]
-a\{\}b
-[/output]
-[/test]
-[test]
-[input]
-a
-a
-!
-[/input]
-[output]
-a!a
-[/output]
-[/test]
-[test]
-[input]
-x
-y
-\*\*
-[/input]
-[output]
-x\*\*y
-[/output]
-[/test]
-[test]
-[input]
-abc
-def
-&
-[/input]
-[output]
-abc&def
-[/output]
-[/test]
-[test]
-[input]
-abc
-123
---\>
-[/input]
-[output]
-abc--\>123
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
