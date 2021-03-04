@@ -28,7 +28,7 @@ for (initialization; condition; update) {
    
 - **While** Loop
 
-- Difference between **while** and For **loop**
+- Difference between `while loop` and `for loop`
 
 - The **break** Operator
 
