@@ -28,7 +28,6 @@
 
     - Output Streams
 
-<br/> <br/>
 
     ```java
     try (FileReader inputStream = new FileReader(input);
@@ -49,7 +48,6 @@
 - Buffered streams boost performance
 - Streams can be chained together by passing an instance of one stream to another:
 
-<br/> <br/>
 
     ```java
     String path = "D:\\input.txt";
@@ -57,7 +55,6 @@
     Scanner reader = new Scanner(new FileInputStream(path));
     ```
     
-<br/> <br/>
 
 - Serialization is the process of converting an object to a sequence of bytes, and deserialization is the opposite process
 
