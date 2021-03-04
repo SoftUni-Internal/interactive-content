@@ -23,6 +23,8 @@ Generally, the complete process is called **Serialization**.
 [slide hideTitle]
 # Serializing
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-41-Serialization-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The **Serialization** process is **platform-independent**, an object serialized on one platform can be deserialized on a completely different platform.
 
 In this way, two fundamentally different systems would be able to work with each other and exchange data.
@@ -51,6 +53,8 @@ By `writeObject()` - method, the names data structure is written to the output f
 
 [slide hideTitle]
 # Deserializing
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-43-Deserialization-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ```java
 String input = "D:\\names.ser";
@@ -84,6 +88,8 @@ class Cube implements Serializable {
 [slide hideTitle]
 
 # Problem with Solution: Serialize Custom Object
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-45-Problem-Serialize-custom-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Create a class called "**Cube**". It should have **properties** for **color**, **width**, **height**, and **depth**.
 Create an instance of the class with the following values:

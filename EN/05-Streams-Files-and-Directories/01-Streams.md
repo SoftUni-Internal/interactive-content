@@ -4,6 +4,8 @@
 
 # Streams Basics
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-6-Stream-Basics-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 All of us have watched online videos on YouTube or another website.
 
 When you start watching a video, a small portion of the file is first loaded into your computer before the video can play. 
@@ -37,6 +39,8 @@ There are **two fundamental types** of Streams:
 
 [slide hideTitle]
 # Opening a File Stream
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-7-Opening-A-File-Stream-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Let us look at the following example that illustrates how to open a file stream.
 
@@ -80,6 +84,8 @@ Printing oneByte to the console is not necessary, but in this example, it helps 
 
 [slide hideTitle]
 # Closing a File Stream
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-8-9-Closing-A-File-Stream-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To avoid memory leaks and application crashes, we should close any streams that we open when they are no longer needed.
 
@@ -154,6 +160,9 @@ try (InputStream in = new FileInputStream(path)) {
 
 [slide hideTitle]
 # Problem with Solution: Read File
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-10-Problem-Read-File-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Read File" taskId="java-advanced-streams-files-lab-read-file" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -235,6 +244,9 @@ try (FileInputStream fileStream = new FileInputStream(path)) {
 
 [slide hideTitle]
 # Problem with Solution: Write to File
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-12-Problem-Write-To-File-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Write to File" taskId="java-advanced-streams-files-lab-write-to-file" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

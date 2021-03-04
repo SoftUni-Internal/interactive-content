@@ -5,6 +5,8 @@
 
 # Byte Streams
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-15-16-Byte-Stream-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Java byte streams are used to perform input and output of 8-bit bytes.
 
 Byte streams are the lowest level streams there are.
@@ -28,6 +30,9 @@ Although there are many classes related to byte streams, the most frequently use
 
 [slide hideTitle]
 # Problem with Solution: Copy Bytes
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-17-Problem-Copy-Bytes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Copy Bytes" taskId="java-advanced-streams-files-lab-copy-bytes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -111,6 +116,8 @@ Submit only the **output** of your program, **not the code**.
 
 # Character Streams
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-19-Character-Streams-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Java Character streams** are used for performing input and output operations for **16-bit Unicode** data.
 
 The most frequently used classes are, **FileReader** and **FileWriter**. 
@@ -150,6 +157,8 @@ try (FileReader inputStream = new FileReader(input);
 [slide hideTitle]
 # Combining Streams
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-20-Combining-Streams-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Character streams are often "**wrappers**" for byte streams:
     - FileReader uses FileInputStream
     - FileWriter uses FileOutputStream
@@ -171,6 +180,9 @@ We have done that by wrapping `System.in` which is nothing more but a constant h
 
 [slide hideTitle]
 # Problem with Solution: Extract Integers
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-21-Problem-Extract-integers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Extract Integers" taskId="java-advanced-streams-files-lab-exact-integers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -221,6 +233,8 @@ Submit only the **output** of your program, **not the code**.
 
 # Buffered Streams 
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-23-Buffered-Streams-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Buffered Streams are another layer of abstraction over the byte stream. 
 
 The Streams we have seen so far use unbuffered I/O. 
@@ -256,6 +270,9 @@ This significantly will **boost the performance** of our applications.
 
 [slide hideTitle]
 # Problem with Solution: Write Every Third Line
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-24-Problem-Write-Every-3rd-Line-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Write Every Third Line" taskId="java-advanced-streams-files-lab-write-every-third-line" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -315,6 +332,8 @@ too old. There is nothing more left for me to say. Read my heart and
 
 [slide hideTitle]
 # Command Line I/O
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-26-27-Command-Line-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Java provides support for standard I/O where the user's program can take input from a keyboard and then produce an output on the computer screen.
 
