@@ -91,7 +91,7 @@ You must submit your solution in the form of a `.zip` archive.
 [/task-description]
 [code-upload allowedMemory="30" /]
 [tests]
-[test open]
+[test]
 [input]
 Card Ranks
 [/input]
@@ -112,7 +112,7 @@ Ordinal value: 11; Name value: QUEEN
 Ordinal value: 12; Name value: KING
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 Card Ranks
 [/input]
