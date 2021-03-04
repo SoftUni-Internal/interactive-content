@@ -2,6 +2,8 @@
 [slide hideTitle]
 # File
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-34-35-File-Class-In-Java-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The File class represents the files and directory pathnames in an abstract manner.
 
 This class is used for the creation of files and directories, file searching, file deletion, etc.
@@ -29,6 +31,9 @@ Here are some useful **methods** of the **File** class:
 
 [slide hideTitle]
 # Problem with Solution: List Files
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-36-problem-list-files-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="List Files" taskId="java-advanced-streams-files-lab-list-files" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -50,7 +55,7 @@ Submit only the **output** of your program, **not the code**.
 ## Examples
 
 ## Input:
-[image assetsSrc="streams-files-directories-example(6).png" /]
+[image assetsSrc="streams-files-directories-example-input.png" /]
 
 ## Output:
 input.txt: [size in bytes] 
@@ -80,6 +85,9 @@ output.txt: \[14328\]
     
 [slide hideTitle]
 # Problem with Solution: Nested Folders
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-38-Problem-Nested-Folders-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Nested Folders" taskId="java-advanced-streams-files-lab-nested-folders" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -97,7 +105,7 @@ On the last line, print the count of all folders, including the root folder.
 ## Examples
 
 ## Input:
-[image assetsSrc="streams-files-directories-example(6).png" /]
+[image assetsSrc="streams-files-directories-example-input.png" /]
 
 ## Output:
 Streams-and-Files 

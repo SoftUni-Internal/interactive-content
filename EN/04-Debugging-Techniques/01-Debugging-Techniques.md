@@ -4,6 +4,8 @@
 
 # What is Debugging?
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-3-4-what-is-debugging-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Debugging is the process of locating and fixing or bypassing bugs (errors) in computer program code.
 
 To debug a program, a user has to start with a problem.
@@ -24,6 +26,8 @@ Debugging, you also have the power to change and test the behavior of your code 
 
 # Debugging vs. Testing
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-5-debugging-vs-testing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 - Testing means that programmers must test the execution flow of the program, then detect if an initial error occurs.
 
 - Debugging is the process of diagnosing and correcting the root causes of errors that have already been detected.
@@ -33,6 +37,8 @@ Debugging, you also have the power to change and test the behavior of your code 
 [slide hideTitle]
 
 # Importance of Debugging
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-6-Importance-of-debugging-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Debugging is an important procedure whether a business item or a venture or individual's applications developing is involved.
 
@@ -49,6 +55,8 @@ This is one of the reasons, companies hire consultants.
 [slide hideTitle]
 
 # Debugging Philosophy
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-7-debugging-philosophy-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Debugging** can be viewed as one big decision tree.
 

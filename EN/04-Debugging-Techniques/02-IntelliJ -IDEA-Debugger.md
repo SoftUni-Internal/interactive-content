@@ -4,6 +4,8 @@
 
 # How to Debug a Process
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-10-how-to-debug-a-process-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Almost every **IDE** has a integrated debugger.
 
 The debugger itself is a tool, that allows you to execute your code in a **strictly** controlled environment.
@@ -46,6 +48,8 @@ Since the debugger logic is encapsulated behind the scenes, you do not have to c
 
 [slide hideTitle]
 # Debugging a Project
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-11-debugging-a-project-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 - Right click in **main** method, Debug `{class}.main()`
@@ -98,6 +102,8 @@ Since the debugger logic is encapsulated behind the scenes, you do not have to c
 [slide hideTitle]
 
 # Breakpoints
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-16-17-breakpoints-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Ability to stop execution based on certain criteria is key when debugging.
 - When a function is hit
