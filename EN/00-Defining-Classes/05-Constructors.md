@@ -174,7 +174,7 @@ In this example, it is the first constructor in the class that is being called.
 [slide hideTitle]
 # Problem with Solution: Constructors
 
-[code-task title="Constructors" timeLimit=5000 taskId="oop-basics-java-defining-classes-Constructors" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-task title="Constructors" timeLimit=5000 taskId="oop-basics-java-defining-classes-Constructors" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [code-upload allowedMemory="30" /]
 
 [task-description]
