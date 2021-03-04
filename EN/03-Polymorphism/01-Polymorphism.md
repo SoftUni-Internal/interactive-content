@@ -206,7 +206,7 @@ To understand better, lets take a look at this **example**:
 ``` java
 class Animal {
   public void eat() {
-    System.out.println("Animals can eat");
+    System.out.println("Animals can eat.");
   }
 }
 ```
@@ -214,7 +214,7 @@ class Animal {
 ``` java
 class Dog extends Animal {
    public void eat() {
-      System.out.println("Dogs can eat meat");
+      System.out.println("Dogs can eat meat.");
    }
 }
 ```
@@ -234,33 +234,25 @@ public class Main {
 And the **output** will be: 
 
 ```
-Animals can eat
-Dogs can eat meat
+Animals can eat.
+Dogs can eat meat.
 ```
 
 [/slide]
 
 [slide hideTitle]
 # Problem with Solution: Math Operation
-[code-task title="Math Operation" taskId="Java-OOP-Advanced-Polymorphism-Math-Operation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Math Operation" timeLimit=5000 taskId="Java-OOP-Advanced-Polymorphism-lab-Math-Operation" executionType="tests-execution" executionStrategy="java-project-tests"] 
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
-Create a class **MathOperation**, which should have method `add()`. 
+# Description
+Create a class **MathOperation**, which should have an `add()` method. 
 
-Method `add()` have to be invoked with **two**, **three** or **four** **Integers**.
+The `add()` method has to be invoked with **two**, **three** or **four** **Integers**.
 
 **You should be able to use the class like this:**
+
 ```java
 public static void main(String[] args) throws IOException {
     MathOperation math = new MathOperation();
@@ -271,16 +263,15 @@ public static void main(String[] args) throws IOException {
 ```
 
 
-## Examples
+# Example
 | **Output** |
 | --- |
 | 4 |
 | 9 |
 | 16 |
-|   |
+
 
 [/task-description]
-[code-io /]
 [tests]
 [test]
 [input]
