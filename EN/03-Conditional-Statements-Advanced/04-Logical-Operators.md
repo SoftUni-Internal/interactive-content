@@ -377,7 +377,7 @@ if (!inRange) {
 
 Like the rest of the operators in the programming, the operators `&&` and `||` have a priority, as in this case: `&&` is with higher priority than `||`. 
 
-The operator `()` serves for **changing the priority of operators** and is being calculated first, just like in maths. 
+The operator `()` serves for **changing the priority of operators** and is being calculated first, just like in math. 
 
 Using parentheses also gives the code better readability and is considered to be a good practice. 
 
