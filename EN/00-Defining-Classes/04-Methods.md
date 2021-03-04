@@ -276,21 +276,21 @@ System.out.println(car.carInfo());
 
 | **Input** | **Output** |
 | --- | --- |
-| 3 |  |
-| Chevrolet Impala 390 | The car is: Chevrolet Impala - 390 HP.  |
-| TESLA MODEL-S 503 | The car is: TESLA MODEL-S - 503 HP. |
-| DACIA DUSTER 149 | The car is: DACIA DUSTER - 149 HP. |
+| 3 | The car is: Chevrolet Impala - 390 HP. |
+| Chevrolet Impala 390 | The car is: TESLA MODEL-S - 503 HP. |
+| TESLA MODEL-S 503 | The car is: DACIA DUSTER - 149 HP. |
+| DACIA DUSTER 149 | |
 
 ## Example 2
 
 | **Input** | **Output** |
 | --- | --- |
-| 5 |  |
-| This Car 1 | The car is: This Car - 1 HP. |
-| Was Made 2 | The car is: Was Made - 2 HP. |
-| Only For 3 | The car is: Only For - 3 HP. |
-| Test Purposes 4 | The car is: Test Purposes - 4 HP. |
-| No Way 5 | The car is: No Way - 5 HP. |
+| 5 | The car is: This Car - 1 HP. |
+| This Car 1 | The car is: Was Made - 2 HP. |
+| Was Made 2 | The car is: Only For - 3 HP. |
+| Only For 3 | The car is: Test Purposes - 4 HP. |
+| Test Purposes 4 | The car is: No Way - 5 HP. |
+| No Way 5 |  |
 
 [/task-description]
 [code-upload allowedMemory="30" /] 
