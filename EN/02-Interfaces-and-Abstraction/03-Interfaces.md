@@ -2034,7 +2034,7 @@ Test Passed!
 
 
 [slide hideTitle]
-# Problem: Say Hello Extended
+# Problem with Solution: Say Hello Extended
 [code-task title="Say Hello Extended" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-Say-Hello-Extended" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
 
