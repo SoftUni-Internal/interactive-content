@@ -9,7 +9,7 @@
 
 - There are two main types of streams:
 
-\<br/\>\<br/\>
+<br/> <br/>
 
     - Input Streams
     
@@ -26,11 +26,11 @@
     }
     ```
     
-\<br/\>\<br/\>
+<br/> <br/>
 
     - Output Streams
     
-\<br/\>\<br/\>
+<br/> <br/>
 
     ```java
     try (FileReader inputStream = new FileReader(input);
@@ -47,20 +47,20 @@
     }
     ```
  
-\<br/\>\<br/\>
+<br/> <br/>
 
 - Buffered streams boost performance
 - Streams can be chained together by passing an instance of one stream to another:
 
-\<br/\>\<br/\>
+<br/> <br/>
 
     ```java
     String path = "D:\\input.txt";
 
     Scanner reader = new Scanner(new FileInputStream(path));
     ```
- 
-\<br/\>\<br/\>
+    
+<br/> <br/>
 
 - Serialization is the process of converting an object to a sequence of bytes, and deserialization is the opposite process
 
