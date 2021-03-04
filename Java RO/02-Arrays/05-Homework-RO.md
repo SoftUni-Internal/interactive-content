@@ -3,11 +3,6 @@
 [slide hideTitle]
 # Problem: Train
 
-[vimeo-video]
-[stream language="EN" videoId="421823066" default /]
-[stream language="RO" videoId="428055445"  /]
-[/video-vimeo]
-
 [code-task title="Train" taskId="java-fund-Arrays-Exercise-Train" executionType="tests-execution" executionStrategy="java-code" requiresInput requiresInput]
 [code-editor language=java]
 ```
@@ -248,11 +243,6 @@ ggg
 [slide hideTitle]
 # Problem: Zig-Zag Arrays
 
-[vimeo-video]
-[stream language="EN" videoId="421823768" default /]
-[stream language="RO" videoId="428055481"  /]
-[/video-vimeo]
-
 [code-task title="Zig-Zag Arrays" taskId="java-fund-Arrays-Exercise-Zig-Zag-Arrays" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -484,11 +474,6 @@ Scrieți un program care **primește o matrice și un număr de rotații** pe ca
 
 [slide hideTitle]
 # Problem: Top Integers
-
-[vimeo-video]
-[stream language="EN" videoId="421822945" default /]
-[stream language="RO" videoId="428055401"  /]
-[/video-vimeo]
 
 [code-task title="Top Integers" taskId="java-fund-08-Arrays-Exercise-Top-Integers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -740,11 +725,6 @@ no
 
 [slide hideTitle]
 # Problem: Max Sequence of Equal Elements
-
-[vimeo-video]
-[stream language="EN" videoId="421821171" default /]
-[stream language="RO" videoId="428055605"  /]
-[/video-vimeo]
 
 [code-task title="Max Sequence of Equal Elements" taskId="java-fund-08-Arrays-Exercise-Max-Sequence-of-Equal-Elements" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1015,11 +995,6 @@ public class Main {
 [slide hideTitle]
 # Problem: LadyBugs
 
-[vimeo-video]
-[stream language="EN" videoId="421820773" default /]
-[stream language="RO" videoId="428055528"  /]
-[/video-vimeo]
-
 [code-task title="LadyBugs" taskId="java-fund-Arrays-Exercise-LadyBugs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1068,7 +1043,10 @@ Pentru exemplul de mai sus, rezultatul ar trebui să fie '0 1 0'.
 
 ### Input
 - Pe prima linie veți primi un număr întreg - dimensiunea câmpului
-- Pe a doua linie veți primi indexurile inițiale ale tuturor buburuzelor separate printr-un spațiu gol. Indiciile date pot să fiu sau nu în interiorul domeniului câmpului
+- Pe a doua linie veți primi indexurile inițiale ale tuturor buburuzelor separate printr-un spațiu gol
+
+Indiciile date pot să fiu sau nu în interiorul domeniului câmpului
+
 - Pe liniile următoare, până când veți obține comanda "end" veți primi comenzi în formatul: "\{ladybug index\} \{direction\} \{fly length\}"
 
 ### Output
