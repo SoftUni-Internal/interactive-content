@@ -29,57 +29,44 @@ The main goal of an abstract class is to provide shared implementation of common
 
 [slide hideTitle]
 # Problem with Solution: Shapes
-[code-task title="Shapes" taskId="Java-OOP-Advanced-Polymorphism-Shapes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Shapes" taskId="Java-OOP-Advanced-Polymorphism-lab-Shapes" executionType="tests-execution" executionStrategy="java-project-tests"] 
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
-Create class hierarchy, starting with abstract class **Shape**:
+# Description
+Create a **class hierarchy**, starting with an abstract class **Shape**:
 
-**Fields**:
-- perimeter : Double
-- area : Double
+- **Fields**:
+    - perimeter : Double
+    - area : Double
 
-Encapsulation for this fields
+- **Encapsulation for these fields**
 
-**Abstract methods**:
-- calculatePerimeter()
-- calculateArea()
+- **Abstract methods**:
+    - `calculatePerimeter()`
+    - `calculateArea()`
 
-**Extend** Shape class with **two children**:
+**Extend** the **Shape** class with **two children**:
 
-**Rectangle**
-
-**Circle**
+- **Rectangle**
+- **Circle**
 
 Each of them needs to have:
 
-**Fields**: 
+- **Fields \- for **Rectangle**:
+    - height : Double
+    - width : Double 
 
-For **Rectangle**
-- height : Double
-- width : Double 
+- **Fields \- for **Circle**:
+    - radius : Double
 
-For **Circle**
-- radius : Double
+- **Encapsulation for these fields**
 
-Encapsulation for this fields
+- **Public constructor **
 
-**Public constructor **
-
-**Concrete methods for calculations (perimeter and area)**
+- **Concrete methods for calculations (perimeter and area)**
 
 [/task-description]
-[code-io /]
 [tests]
 [test]
 [input]
@@ -273,20 +260,11 @@ Test Passed!
 
 [slide hideTitle]
 # Problem with Solution: Animals
-[code-task title="Animals" taskId="Java-OOP-Advanced-Polymorphism-Animals" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Animals" timeLimit=5000 taskId="Java-OOP-Advanced-Polymorphism-lab-Animals" executionType="tests-execution" executionStrategy="java-project-tests"]
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 Create a class **Animal**, which holds two fields:
 - **name: String**
 - **favouriteFood: String**
@@ -297,7 +275,7 @@ You should add two new classes - **Cat** and **Dog**.
 
 **Override** the **explainSelf()** method by adding concrete animal sound on a new line. 
 
-(Look at examples below)
+To get a better idea, look at the example below.
 
 You should be able to use the class like this:
 
@@ -310,7 +288,7 @@ public static void main(String[] args) {
 }
 ```
 
-## Examples
+# Example
 | **Output** |
 | --- |
 | I am Oscar and my favourite food is Whiskas |
@@ -319,7 +297,6 @@ public static void main(String[] args) {
 | DJAAF |
 
 [/task-description]
-[code-io /]
 [tests]
 [test open]
 [input]
