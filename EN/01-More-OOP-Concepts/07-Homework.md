@@ -112,7 +112,7 @@ Ordinal value: 11; Name value: QUEEN
 Ordinal value: 12; Name value: KING
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 Card Ranks
 [/input]
