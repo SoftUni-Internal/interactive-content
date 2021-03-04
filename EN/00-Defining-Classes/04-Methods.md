@@ -4,10 +4,7 @@
 
 # What Are Methods
 
-[vimeo-video]
-[stream language="EN" videoId="485442837/72b15114f6" default /]
-[stream language="RO" videoId="485442837/72b15114f6"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-15-16-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A method is a collection of statements that perform some specific task and return the result to the caller. 
 
@@ -35,10 +32,7 @@ class Car {
 [slide hideTitle]
 # Getters and Setters
 
-[vimeo-video]
-[stream language="EN" videoId="485442925/6a6914cf48" default /]
-[stream language="RO" videoId="485442925/6a6914cf48"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-17-18-getters-and-setters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In Java **getters** and **setters** are two conventional methods that are used for retrieving and updating the value of a variable.
 
@@ -110,10 +104,7 @@ The most common use of the `this` keyword is to eliminate the confusion between 
 [slide hideTitle]
 # ToString() Method
 
-[vimeo-video]
-[stream language="EN" videoId="485443131/756193f8d0" default /]
-[stream language="RO" videoId="485443131/756193f8d0"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-19-20-to-string-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 By using the `toString()` method, you can represent any object as a string.
 
@@ -151,10 +142,7 @@ public class Car {
 [slide hideTitle]
 # Equals() Method
 
-[vimeo-video]
-[stream language="EN" videoId="485443235/ad08ba7339" default /]
-[stream language="RO" videoId="485443235/ad08ba7339"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-21-equals-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `equals()` method is used to determine if two objects are equal. 
 
@@ -171,10 +159,7 @@ System.out.println(isCarsEquals);
 [slide hideTitle]
 # HashCode() Method
 
-[vimeo-video]
-[stream language="EN" videoId="485443247/3be3342b57" default /]
-[stream language="RO" videoId="485443247/3be3342b57"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-22-hash-code-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `hashCode()` method returns the **integer** hash code value of the object. 
 
@@ -193,10 +178,7 @@ System.out.println(hash);
 [slide hideTitle]
 # Problem with Solution: Car Info
 
-[vimeo-video]
-[stream language="EN" videoId="485443278/abf3282bb7" default /]
-[stream language="RO" videoId="485443278/abf3282bb7"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-23-problem-and-solution-car-info-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Car Info" taskId="oop-basics-java-defining-classes-lab-Car-Info" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
@@ -407,3 +389,4 @@ The car is: d 2 - 4 HP.
 [/tests]
 [/code-task]
 [/slide]
+
