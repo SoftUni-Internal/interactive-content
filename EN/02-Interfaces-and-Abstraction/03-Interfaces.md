@@ -121,25 +121,17 @@ public interface Printable extends Callable {
 
 [slide hideTitle]
 # Problem with Solution: Car Shop
-[code-task title="Car Shop" taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-Car-Shop" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Car Shop" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-Car-Shop" executionType="tests-execution" executionStrategy="java-project-tests"] 
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
-Build hierarchy from **classes** and **interfaces** for this UML diagram
+# Description
+Build a hierarchy from **classes** and **interfaces** for this UML diagram.
 
 [image assetsSrc="interfaces-and-abstraction-example(5).png" /]
 
-**Your hierarchy have to be used with this code**
+**Your hierarchy has to be used with this code:**
+
 ```java
 public static void main(String[] args) {
     Car seat = new Seat("Leon", "gray", 110, "Spain");
@@ -156,14 +148,13 @@ public static void main(String[] args) {
 ## Note
 Consider using the wrapper classes in the **Seat** constructor.
 
-## Examples
+# Example
 | **Output** |
 | --- |
 | Leon is gray color and have 110 horse power |
 | This is Leon produced in Spain and have 4 tires |
 
 [/task-description]
-[code-io /]
 [tests]
 [test open]
 [input]
@@ -741,26 +732,17 @@ Test Passed!
 
 
 [slide hideTitle]
-# Problem with Solution: Car Shop Extend
-[code-task title="Car Shop Extend" taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-Car-Shop-Extended" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+# Problem with Solution: Car Shop Extended
+[code-task title="Car Shop Extended" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-Car-Shop-Extended" executionType="tests-execution" executionStrategy="java-project-tests"] 
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
-Extend previous problem: 
+# Description
+Extend the previous problem:
 
 [image assetsSrc="interfaces-and-abstraction-example(6).png" /]
 
-**Your hierarchy has to be used with this code**
+**Your hierarchy has to be used with this code:**
 
 ```java
 public static void main(String[] args) {
@@ -781,7 +763,7 @@ private static void printCarInfo(Car car) {
 }
 ```
 
-## Examples
+# Examples
 | **Output** |
 | --- |
 | Leon is Gray color and have 110 horse power |
@@ -792,7 +774,6 @@ private static void printCarInfo(Car car) {
 | Minimum rental period of 3 days. Price per day 99,900000 |
 
 [/task-description]
-[code-io /]
 [tests]
 [test open]
 [input]
@@ -1602,25 +1583,17 @@ Vehicle.getHorsePower(480, 2500));
 
 [slide hideTitle]
 # Problem with Solution: Say Hello
-[code-task title="Say Hello" taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-Say-Hello" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Say Hello" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-Say-Hello" executionType="tests-execution" executionStrategy="java-project-tests"] 
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
-**Build hierarchy from classes and interfaces for this UML diagram**
+# Description
+**Build a hierarchy from classes and interfaces for this UML diagram.**
 
 [image assetsSrc="interfaces-and-abstraction-example(7).png" /]
 
-**Your hierarchy have to be used with this code**
+**Your hierarchy has to be used with this code:**
+
 ```java
 public static void main(String[] args) {
     List<Person> persons = new ArrayList<>();
@@ -1640,7 +1613,7 @@ private static void print(Person person) {
 }
 ```
 
-## Examples
+# Examples
 | **Output** |
 | --- |
 | Hi |
@@ -1649,7 +1622,6 @@ private static void print(Person person) {
 |   |
 
 [/task-description]
-[code-io /]
 [tests]
 [test]
 [input]
@@ -2062,26 +2034,18 @@ Test Passed!
 
 
 [slide hideTitle]
-# Problem: Say Hello Extend
-[code-task title="Say Hello Extend" taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-Say-Hello-Extend" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+# Problem: Say Hello Extended
+[code-task title="Say Hello Extended" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-Say-Hello-Extended" executionType="tests-execution" executionStrategy="java-project-tests"] 
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
-**Build hierarchy from classes and interfaces for this UML diagram**
+# Description
+**Build hierarchy from classes and interfaces for this UML diagram.**
 
 [image assetsSrc="interfaces-and-abstraction-example(8).png" /]
 
-**Your hierarchy have to be used with this code**
+**Your hierarchy has to be used with this code:**
+
 ```java
 public static void main(String[] args) {
     List<Person> persons = new ArrayList<>();
@@ -2101,7 +2065,7 @@ private static void print(Person person) {
 }
 ```
 
-## Examples
+# Examples
 | **Output** |
 | --- |
 | Hi |
@@ -2110,7 +2074,6 @@ private static void print(Person person) {
 |   |
 
 [/task-description]
-[code-io /]
 [tests]
 [test open]
 [input]
