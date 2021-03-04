@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Constructors
 
-[vimeo-video]
-[stream language="EN" videoId="485443527/94a5a602a6" default /]
-[stream language="RO" videoId="485443527/94a5a602a6"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-25-26-27-28-constructors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A **constructor** is a special method, which is invoked every time a new **instance of the class** is created. 
 
@@ -78,10 +75,7 @@ The first one takes only one parameter and the second one takes two parameters.
 [slide hideTitle]
 # Object Initial State
 
-[vimeo-video]
-[stream language="EN" videoId="485443647/cd33688269" default /]
-[stream language="RO" videoId="485443647/cd33688269"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-29-object-initial-state-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Constructors set the object's initial state.
 
@@ -123,10 +117,7 @@ In the body of the constructor, we set the value of the field **brand** to the g
 [slide hideTitle]
 # Constructor Chaining
 
-[vimeo-video]
-[stream language="EN" videoId="485443685/4d212391a8" default /]
-[stream language="RO" videoId="485443685/4d212391a8"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-30-constructor-chaining-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In Java, it is possible to call a constructor from inside another constructor.
 
@@ -173,6 +164,8 @@ In this example, it is the first constructor in the class that is being called.
 
 [slide hideTitle]
 # Problem with Solution: Constructors
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-31-problem-and-solution-constructors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Constructors" timeLimit=5000 taskId="oop-basics-java-defining-classes-Constructors" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [code-upload allowedMemory="30" /]
@@ -381,3 +374,4 @@ The car is: d unknown - -1 HP.
 [/tests]
 [/code-task]
 [/slide]
+
