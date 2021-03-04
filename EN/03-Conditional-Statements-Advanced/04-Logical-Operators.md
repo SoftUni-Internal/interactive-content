@@ -260,7 +260,7 @@ console.log(result);
 
 The program **checks** `a`, accepts that it has a value `false`, and continues. 
 
-Reaching `b`, it understands that it has a `true` value and the whole **expression** is calculated as `true`, without having to check `c` or `d`, because their values **wouldn't change** the result of the expression.
+Reaching `b`, it understands that it has a `true` value and the whole **expression** is considered as `true`, without having to check `c` or `d`, because their values **wouldn't change** the result of the expression.
 [/slide]
 
 [slide hideTitle]
