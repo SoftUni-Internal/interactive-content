@@ -14,7 +14,7 @@
    - `if`
    - `if-else`
    - `if-else-if`
-- How to make a series of `if-else` condition
+- How to make a series of `if-else` conditions
 
 ```js
 if (num == 1) {
