@@ -6,26 +6,26 @@
 [video src="https://videos.softuni.org/hls/javascript-basics/05.While-Loop/05.PB-JavaScript-While-Loop-15-16-While-or-for-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-"**while**" and "**for**" loops both **repeat** a block of **code**.
+**while** and **for** loops both **repeat** a block of **code**.
 
-But there are different situations when writing code that require either using the **for** loop or the **while** loop.
+But there are different situations when writing code that require either using the **for-loop** or the **while-loop**.
 
-When you know **exactly how many times** you want to loop through a block of code, use the "**for**" loop.
+When you know **exactly how many times** you want to loop through a block of code, use the **for-loop**.
 ```js live
 for (let i = 0; i <= 5; i++) {
     console.log(i);
 }
 ```
 
-It is usually appropriate for loops in which the initialization and increment are single statements and logically related. 
+It is usually appropriate **fo-loops** in which the initialization and increment are single statements and logically related. 
 
-It is more compact than "**while**" and it keeps the loop control statements together in one place.
+It is more compact than **while** and it keeps the loop control statements together in one place.
 
 But, there could be many **complex** problems where the number of iterations depends on these **situations** and can not be predicted. 
 
 That means we don't know in advance **how many times** to repeat a loop.
 
-In those situation it is better to use "**while**" loop.
+In those situation it is better to use **while-loop**.
 ```js
 let command = input.shift();
 let number = Number(input.shift());
@@ -73,7 +73,7 @@ function adapter(input, code) {
 # Description
 Create a program, which prints the **first** odd number in a given sequence:
 
-* You receive the numbers from the console
+* You will receive the numbers from the console
 * Print the first **odd** number you encounter
 
 # Example
