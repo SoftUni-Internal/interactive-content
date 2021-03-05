@@ -4,6 +4,8 @@
 
 # Refactoring
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02.Java-OOP-Basics-More-OOP Concepts-16-17-Refactoring-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Refactoring means restructuring the code without changing its behavior.**
 
 This **improves** code readability and **reduces** complexity.
@@ -30,6 +32,8 @@ class OutputFormatter { public static void print() { … } }
 
 # Refactoring Techniques
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02.Java-OOP-Basics-More-OOP Concepts-18-Refactoring-Techniques-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 - **Breaking code** into reusable units
 - **Extracting parts of methods** and **classes** into **new** ones
 
@@ -47,6 +51,9 @@ class OutputFormatter { public static void print() { … } }
 
 [slide hideTitle]
 # Problem with Solution: Student System
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02.Java-OOP-Basics-More-OOP Concepts-19-Student-System-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Student System" taskId="oop-basics-java-more-oop-concepts-lab-Student-System" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]

@@ -1,7 +1,9 @@
 [slide hideTitle]
 # Summary
 
-# In this lesson you learned:
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02.Java-OOP-Basics-More-OOP Concepts-41-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+## In this lesson you learned:
 
 - Well organized code is easier to work with
     - we can reduce complexity using **methods**, **classes** and **projects**

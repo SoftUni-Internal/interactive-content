@@ -4,6 +4,8 @@
 
 # Enumerations
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02.Java-OOP-Basics-More-OOP Concepts-20-21-22-23-Enumerations -,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Enumerations** represent **numeric values** from a fixed set as **text**.
 
 We can use them to pass **arguments** to **methods** without making code confusing.
@@ -56,6 +58,9 @@ System.out.println(CoffeeSize.Small.getValue()); // 100
 
 [slide hideTitle]
 # Problem with Solution: Hotel Reservation
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02.Java-OOP-Basics-More-OOP Concepts-24-Problem-Hotel-Reservation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Hotel Reservation" taskId="oop-basics-java-more-oop-concepts-lab-Hotel-Reservation" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]

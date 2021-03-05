@@ -4,6 +4,8 @@
 
 # Splitting Code into Methods
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02.Java-OOP-Basics-More-OOP Concepts-3-4-5-6-Projects-structure-Methods-1-2-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 We use **methods** to split code into functional blocks.
 
 This improves code **readability** and allows for easier **debugging**.
@@ -52,6 +54,9 @@ System.out.println(bankAcc.toString());
 [slide hideTitle]
 
 # Problem with Solution: Rhombus of Stars
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02.Java-OOP-Basics-More-OOP Concepts-7-Problem-Rhombus-of-stars-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Rhombus of Stars" taskId="oop-basics-java-more-oop-concepts-lab-Rhombus-of-Stars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -305,6 +310,8 @@ Create a `printRow()` method to easily reuse code.
 
 # Splitting Code into Classes
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02-Java-OOP-Basics-More-OOP-Concepts-10-11-12-Splitting-code-into-classes-1 - Copy-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Just like methods, **classes should not know or do too much**.
 
 **Example:**
@@ -353,6 +360,9 @@ printer.printToConsole(numbers);
 
 [slide hideTitle]
 # Problem with Solution: Point in Rectangle
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02.Java-OOP-Basics-More-OOP Concepts-13-Point-in-rectangle-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Point in Rectangle" taskId="oop-basics-java-more-oop-concepts-lab-Point-in-Rectangle" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]

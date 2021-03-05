@@ -4,6 +4,8 @@
 
 # Static Keyword
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02.Java-OOP-Basics-More-OOP Concepts-28-29-Static-Keyword-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 We mainly use the `Static` keyword for memory arrangement.
 
 It can be applied to:
@@ -26,6 +28,8 @@ static void increaseCount() {
 
 # Static Class
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02.Java-OOP-Basics-More-OOP Concepts-30-Static-class-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 - A **top level class** is a class that is **not nested**
 - A **nested class** is any class whose declaration occurs **within the body** of another class or interface
 - Only **nested classes** can be **static**
@@ -42,6 +46,8 @@ class TopClass {
 [slide hideTitle]
 
 # Static Variable
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02.Java-OOP-Basics-More-OOP Concepts-31-32-33-Static-variable-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Static variables** can be used to store **shared data** between **all class instances.**
 
@@ -87,6 +93,8 @@ public static void main(String[] args) {
 
 # Static Method
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02.Java-OOP-Basics-More-OOP Concepts-34-35-Static-Method-and-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Static methods** belong to the **class** rather than the **object of a class**.
 
 - Can be **invoked** without the need for creating an instance of a class
@@ -112,6 +120,8 @@ class Calculate {
 [slide hideTitle]
 
 # Static Block
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02.Java-OOP-Basics-More-OOP Concepts-36-37-Statick-block-and-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
  A **static block** represents a set of statements, which will be executed by the JVM before the execution of the main method.
 
