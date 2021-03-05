@@ -335,7 +335,7 @@ Anntoanette - 39
 
 [slide hideTitle]
 # Problem: Articles 2.0
-[code-task title="Articles 2.0" taskId="java-fund-2-Objects-and-Classes-Articles2.0" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
+[code-task title="Articles 2.0" taskId="java-fund-2-Objects-and-Classes-Articles-2.0" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [task-description]
 ## Description
 Change the program "Articles", so you can store a **list of articles**.
@@ -794,7 +794,7 @@ Trucks have average horsepower of: 365.67.
 # Problem: Person ID
 
 
-[code-task title="Person ID" taskId="java-fund-17-Objects-and-Classes-Exercise-problem-6" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Person ID" taskId="java-fund-2-Objects-and-Classes-Exercise-Person-ID" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;

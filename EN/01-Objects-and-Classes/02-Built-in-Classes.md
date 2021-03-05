@@ -158,7 +158,7 @@ public class Main {
 
 These are some of the `Random` methods:
 
-- `nextInt()` - Returns the next pseudorandom `int` value from random number sequence. 
+- `nextInt()` - Returns the next pseudorandom `int` value from random number sequence
 
 ```java live
 Random random = new Random();
@@ -208,7 +208,7 @@ You are given a **list of words in one line**.
 
 - Split the input string (by space) and create an array of words
 - Create a random number generator - an object rnd of type Random
-- In a for-loop exchange each number at positions 0, 1, …, words.Length-1 by a number at random position. 
+- In a for-loop exchange each number at positions 0, 1, …, words.Length-1 by a number at random position
 
 To generate a random number in range use rnd.nextInt(words.length)
 
@@ -323,7 +323,7 @@ System.out.println(number);
 [slide hideTitle]
 # Problem with Solution: Sum Big Numbers
 
-[code-task title="Sum Big Numbers" taskId="java-fund-16-Objects-and-Classes-problem-5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sum Big Numbers" taskId="java-fund-2-Objects-and-Classes-lab-Sum-Big-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -438,7 +438,7 @@ You will receive two numbers **(0 to 10 ^ 50)**, print their sum.
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-12-problem-and-solution-big-factorial-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Big Factorial" taskId="java-fund-16-Objects-and-Classes-problem-6" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Big Factorial" taskId="java-fund-2-Objects-and-Classes-lab-Big-Factorial" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;

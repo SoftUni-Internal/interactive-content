@@ -27,7 +27,9 @@ Not obligatory, but **credential** components are:
 
 Each **class**, **field**, **constructor** or **method** is initialized with an **access modifier** in front, which specifies the **accessibility**. 
 
-Тhe **access level** can be **changed** by applying the **access modifier** on it. We will cover this in the next course. 
+Тhe **access level** can be **changed** by applying the **access modifier** on it. 
+
+We will cover this in the next course. 
 
 There is a possibility to generate **automatically** via IntelliJ IDEA **constructors**, **getters**, **setters**, and other most used methods. 
 
@@ -204,7 +206,9 @@ Constructor **can take parameters**, which is used to **initialize fields**.
 
 All classes have **constructor by default**. 
 
-There can be **multiple constructors of the same class**. This helps to instantiate objects in various ways with a different number of arguments.
+There can be **multiple constructors of the same class**. 
+
+This helps to instantiate objects in various ways with a different number of arguments.
 
 ```java
 public class Animal {
@@ -230,7 +234,7 @@ public class Animal {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-problem-and-solution-students-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Students" taskId="java-fund-16-Objects-and-Classes-problem-2" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
+[code-task title="Students" taskId="java-fund-2-Objects-and-Classes-lab-Students" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
 ## Description
@@ -252,17 +256,7 @@ After that, you will receive a **city name**.
 Print only students which are from the given city, in the following format: 
 "\{firstName\} \{lastName\} is \{age\} years old.".
 
-## Examples
-
-| **Input** | **Output** |
-| --- | --- |
-| John Smith 15 Sofia | John Smith is 15 years old. |
-| Peter Ivanov 14 Plovdiv | Linda Bridge is 16 years old. |
-| Linda Bridge 16 Sofia | |
-| Simon Stone 12 Varna | |
-| end | |
-| Sofia | |
-
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | Anthony Taylor 15 Chicago | Anthony Taylor is 15 years old. |
@@ -277,7 +271,7 @@ Print only students which are from the given city, in the following format:
 [/task-description]
 [code-upload allowedMemory="30" /]
 [tests]
-[test open]
+[test]
 [input]
 John Smith 15 Sofia
 Peter Ivanov 14 Plovdiv
@@ -392,7 +386,7 @@ Port Lee is 14 years old
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-problem-and-solution-students-2.0-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Students 2.0" taskId="java-fund-16-Objects-and-Classes-problem-3" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
+[code-task title="Students 2.0" taskId="java-fund-2-Objects-and-Classes-lab-Students-2.0" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
 ## Description
@@ -487,7 +481,7 @@ J P is 61 years old
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-problem-and-solution-songs-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Songs" taskId="java-fund-16-Objects-and-Classes-problem-1" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
+[code-task title="Songs" taskId="java-fund-2-Objects-and-Classes-lab-Songs" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [task-description]
 ## Description
 
