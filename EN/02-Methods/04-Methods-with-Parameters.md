@@ -44,7 +44,7 @@ public static void printStudent(String name, int age, double grade) {
 
 [slide hideTitle]
 # Problem with Solution: Sign of Integer
-[code-task title="Sign of Integer" taskId="java-fund-Methods-lab-Sign-of-Integer" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sign of Integer" taskId="java-fund-1-Methods-lab-Sign-of-Integer" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -64,17 +64,7 @@ Create a method that checks whether a number is positive, negative or zero and p
 | **Input** | **Output** |
 | --- | --- |
 | 2 | The number 2 is positive. |
-
-
-| **Input** | **Output** |
-| --- | --- |
 | -5 | The number -5 is negative. |
-
-
-| **Input** | **Output** |
-| --- | --- |
-| 0 | The number 0 is zero. |
-
 
 
 [/task-description]
@@ -88,7 +78,7 @@ Create a method that checks whether a number is positive, negative or zero and p
 The number 2 is positive.
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 -5
 [/input]
@@ -111,7 +101,7 @@ The number 0 is zero.
 
 [slide hideTitle]
 # Problem with Solution: Grades
-[code-task title="Grades" taskId="java-fund-lab-Methods-Grades" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Grades" taskId="java-fund-1-lab-Methods-Grades" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -128,28 +118,18 @@ public class Main {
 
 Create a method **that receives** a grade between **2.00** and **6.00** and **prints the corresponding grade definition**:
 
-* 2.00 – 2.99 - "Fail"
-* 3.00 – 3.49 - "Poor"
-* 3.50 – 4.49 - "Good"
-* 4.50 – 5.49 - "Very good"
-* 5.50 – 6.00 - "Excellent"
+* 2.00 - 2.99 - "Fail"
+* 3.00 - 3.49 - "Poor"
+* 3.50 - 4.49 - "Good"
+* 4.50 - 5.49 - "Very good"
+* 5.50 - 6.00 - "Excellent"
 
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
 | 3.33 | Poor |
-
-
-| **Input** | **Output** |
-| --- | --- |
 | 4.50 | Very good |
-
-
-| **Input** | **Output** |
-| --- | --- |
 | 2.99 | Fail |
-
-
 
 [/task-description]
 [code-io /]
@@ -224,7 +204,7 @@ Fail
 
 [slide hideTitle]
 # Problem with Solution: Printing Triangle
-[code-task title="Printing Triangle" taskId="java-fund-Methods-lab-Printing-Triangle" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Printing Triangle" taskId="java-fund-1-Methods-lab-Printing-Triangle" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -275,7 +255,7 @@ Create a method for printing triangles as shown below:
 1
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 4
 [/input]
@@ -406,7 +386,7 @@ Create a method for printing triangles as shown below:
 
 [slide hideTitle]
 # Problem with Solution: Calculations
-[code-task title="Calculations" taskId="java-fund-Methods-Calculations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Calculations" taskId="java-fund-1-Methods-Calculations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

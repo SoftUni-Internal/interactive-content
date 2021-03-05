@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Problem: Smallest of Three Numbers
 
-[code-task title="Smallest of Three Numbers" taskId="java-fund-Methods-Exercise-Smallest-of-Three-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Smallest of Three Numbers" taskId="java-fund-1-Methods-Smallest-of-Three-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -124,7 +124,7 @@ Think of a good name for the method.
 
 [slide hideTitle]
 # Problem: Vowels Count
-[code-task title="Vowels Count" taskId="java-fund-Methods-Exercise-Vowels-Count" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Vowels Count" taskId="java-fund-1-Methods-Vowels-Count" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -146,11 +146,8 @@ Think of a good name for the method.
 | **Input** | **Output** |
 | --- | --- |
 | SoftUni | 3 |
-
-### Example
-| **Input** | **Output** |
-| --- | --- |
 | Cats | 1 |
+
 
 [/task-description]
 [code-io /]
@@ -217,7 +214,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non.
 
 [slide hideTitle]
 # Problem: Characters in Range
-[code-task title="Characters in Range" taskId="java-fund-Methods-Exercise-Characters-in-Range" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Characters in Range" taskId="java-fund-1-Methods-Characters-in-Range" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -319,7 +316,7 @@ B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _ ` a b c d e f g h i 
 
 [slide hideTitle]
 # Problem: Password Validator
-[code-task title="Password Validator" taskId="java-fund-Methods-Exercise-Password-Validator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Password Validator" taskId="java-fund-1-Methods-Password-Validator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -448,7 +445,7 @@ Password is valid
 [slide hideTitle]
 # Problem: Add and Subtract
 
-[code-task title="Add and Subtract" taskId="java-fund-Methods-Exercise-Add-and-Subtract" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Add and Subtract" taskId="java-fund-1-Methods-Add-and-Subtract" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -619,7 +616,7 @@ Write a method to get the sum of the first two integers and another method that 
 
 [slide hideTitle]
 # Problem: Middle Characters
-[code-task title="Middle Characters" taskId="java-fund-Methods-Exercise-Middle-Characters" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Middle Characters" taskId="java-fund-1-Methods-Middle-Characters" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -643,10 +640,6 @@ If the **length** of the string is **even** there are **two middle characters**.
 | **Input** | **Output** |
 | --- | --- |
 | aString | r |
-
-### Example
-| **Input** | **Output** |
-| --- | --- |
 | someText | eT |
 
 [/task-description]
@@ -762,7 +755,7 @@ ea
 
 [slide hideTitle]
 # Problem: NxN Matrix
-[code-task title="NxN Matrix" taskId="java-fund-Methods-Exercise-NxN-Matrix" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="NxN Matrix" taskId="java-fund-1-Methods-NxN-Matrix" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -952,7 +945,7 @@ Write a method that receives a single integer **n** and prints an **n*n** matrix
 
 [slide hideTitle]
 # Problem: Factorial Division
-[code-task title="Factorial Division" taskId="java-fund-Methods-Exercise-Factorial-Division" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Factorial Division" taskId="java-fund-1-Methods-Factorial-Division" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1095,7 +1088,7 @@ Calculate the **factorial** of each number.
 
 [slide hideTitle]
 # Problem: Palindrome Integers
-[code-task title="Palindrome Integers" taskId="java-fund-Methods-Exercise-Palindrome-Integers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Palindrome Integers" taskId="java-fund-1-Methods-Palindrome-Integers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1271,7 +1264,7 @@ true
 [slide hideTitle]
 # Problem: Top Number
 
-[code-task title="Top Number" taskId="java-fund-Methods-Exercise-Top-Number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Top Number" taskId="java-fund-1-Methods-Top-Number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;

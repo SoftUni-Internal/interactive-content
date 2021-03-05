@@ -153,7 +153,7 @@ Any operation that would change an element in the array inside the method will a
 
 [slide hideTitle]
 # Problem with Solution: Math Operations
-[code-task title="Math Operations" taskId="java-fund-Methods-lab-Math-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Math Operations" taskId="java-fund-1-Methods-lab-Math-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -179,13 +179,13 @@ The possible operators are: `/`, `*`, `+` and `-`.
 |**Input**|**Output**|
 | --- | --- | 
 | 5 | 25 |
-| * ||
+| \* ||
 | 5 ||
 
 |**Input**|**Output**|
 | --- | --- | 
 | 4 | 12 |
-| + ||
+| \+ ||
 | 8 ||
 
 [/task-description]

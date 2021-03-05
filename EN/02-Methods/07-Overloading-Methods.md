@@ -70,7 +70,7 @@ public static String print(String text) {
 
 [slide hideTitle]
 # Problem with Solution: Greater of Two Values
-[code-task title="Greater of Two Values" taskId="java-fund-Methods-lab-Greater-of-Two-Values" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Greater of Two Values" taskId="java-fund-1-Methods-lab-Greater-of-Two-Values" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -103,12 +103,6 @@ Create a method called **getMax()** that returns the greater of the two values.
 | a | |
 | z | |
 
-|**Input**|**Output**|
-| --- | --- |
-| string | Manuel |
-| Ann | |
-| Manuel | |
-
 [/task-description]
 [code-io /]
 [tests]
@@ -122,7 +116,7 @@ int
 16
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 char
 a
@@ -229,7 +223,7 @@ int
 
 [slide hideTitle]
 # Problem with Solution: Multiply Evens by Odds
-[code-task title="Multiply Evens by Odds" taskId="java-fund-Methods-lab-Multiply-Evens-by-Odds" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Multiply Evens by Odds" taskId="java-fund-1-Methods-lab-Multiply-Evens-by-Odds" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -270,7 +264,7 @@ Create a program that reads an **integer number** and **multiplies the sum of al
 54
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 -12345
 [/input]

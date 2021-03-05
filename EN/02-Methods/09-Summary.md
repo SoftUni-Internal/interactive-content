@@ -1,5 +1,3 @@
-# Summary
-
 [slide hideTitle]
 # Summary
 
