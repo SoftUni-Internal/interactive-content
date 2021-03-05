@@ -50,7 +50,7 @@ System.out.println(sb.capacity()); // 16
 - `StringBuilder(String str)` - Creates a **StringBuilder** with the **specified string**
 
 ```java live
-StringBuilder sb = new StringBuilder("Hello,JAVA");
+StringBuilder sb = new StringBuilder("Hello, JAVA");
 
 System.out.println(sb);
 
@@ -200,20 +200,4 @@ System.out.println(text); // Hello Peter, how are you?
 ```
 
 [/slide]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

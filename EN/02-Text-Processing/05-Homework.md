@@ -139,10 +139,6 @@ Then **continue with the next two characters**.
 | **Input** | **Output** |
 | --- | --- |
 | a aaaa | 9700 | 
-
-### Example
-| **Input** | **Output** |
-| --- | --- |
 | John Smith | 42025 | 
 
 [/task-description]
@@ -547,11 +543,8 @@ Write a program that **reads a string from the console** and **replaces any sequ
 | **Input** | **Output** |
 | --- | --- |
 | aaaaabbbbbcdddeeeedssaa | abcdedsa |
-
-### Example
-| **Input** | **Output** |
-| --- | --- |
 | qqqwerqwecccwd | qwerqwecwd |
+
 
 [/task-description]
 [code-io /]
@@ -661,7 +654,7 @@ Print what is left from the string after explosions.
 
 We delete only the digit after the explosion character. 
 
-The string will look like this: abv\>\>1\>2\>2asdasd
+The string will look like this: abv\>\>1\>2\>2asdasd.
 
 2nd explosion is with strength one and the string transforms to this: abv\>\>\>2\>2asdasd
 
@@ -675,9 +668,9 @@ At this point the string looks like this: abv\>\>\>\>2asdasd.
 
 We have 1 strength left from the previous explosion, we add the strength of the current explosion to what is left and that adds up to a total strength of 3. 
 
-We delete the next three characters and we receive the string abv\>\>\>\>dasd 
+We delete the next three characters and we receive the string abv\>\>\>\>dasd.
 
-We do not have any more explosions and we print the result: abv\>\>\>\>dasd
+We do not have any more explosions and we print the result: abv\>\>\>\>dasd.
 
 [/task-description]
 [code-io /]

@@ -66,15 +66,7 @@ Each string is repeated **n** times, where **n** is the **length of the string**
 | **Input** | **Output** |
 | --- | --- |
 | hi abc add | hihiabcabcabcaddaddadd |
-
-
-| **Input** | **Output** |
-| --- | --- |
 | work | workworkworkwork |
-
-
-| **Input** | **Output** |
-| --- | --- |
 | ball | ballballballball |
 
 [/task-description]
