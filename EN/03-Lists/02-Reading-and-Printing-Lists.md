@@ -6,6 +6,7 @@
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-10-11-reading-lists-from-the-console-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Reading a list using `for` loop and `scanner.nextLine()`
+
 ```java 
 Scanner scanner = new Scanner(System.in);
 
@@ -38,7 +39,7 @@ You can read a list as a single line from the console.
 
 Imagine we have an input that consists of several Integer values, separated by spaces. (10 20 30 40 50)
 
-```java
+``` java
 // input: 10 20 30 40 50
 String values = scanner.nextLine();   
 
@@ -89,7 +90,7 @@ System.out.println(String.join(" ", list));
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-14-problem-and-solution-print-adjacent-equal-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Sum Adjacent Equal Numbers" taskId="java-fund-Lists-Sum-Adjacent-Equal-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sum Adjacent Equal Numbers" taskId="java-1-fund-Lists-lab-Sum-Adjacent-Equal-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -116,15 +117,7 @@ Write a program to **sum all adjacent equal numbers** in a list of decimal numbe
 | **Input** | **Output** | **Comments** |
 | --- | --- | --- |
 | 3 3 6 1 | 12 1 | **3 3** 6 1 -> **6 6** 1 -> 12 1 |
-|  |  |  |
-
-| **Input** | **Output** | **Comments** |
-| --- | --- | --- |
 | 8 2 2 4 8 16 | 16 8 16 | 8 **2 2** 4 8 16 -> 8**4 4** 8 16 -> **8 8** 8 16 -> 16 8 16 |
-|  |  |  |
-
-| **Input** | **Output** | **Comments** |
-| --- | --- | --- |
 | 0.1 0.1 5 -5 | 0.2 5 -5 | **0.1 0.1** 5 -5 -> 0.2 5 -5 |
 
 [/task-description]
@@ -220,7 +213,7 @@ Write a program to **sum all adjacent equal numbers** in a list of decimal numbe
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-17-problem-and-solution-gauss-trick-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Gauss' Trick" taskId="java-fund-Lists-Gauss'-Trick" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Gauss' Trick" taskId="java-fund-1-Lists-lab-Gauss'-Trick" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -245,10 +238,6 @@ Write a program that sums all numbers in a list in the following order:
 | **Input** | **Output** |
 | --- | --- |
 | 1 2 3 4 5 | 6 6 3 |
-|  |  |
-
-| **Input** | **Output** |
-| --- | --- |
 | 1 2 3 4 | 5 5 |
 
 [/task-description]
@@ -320,7 +309,7 @@ Write a program that sums all numbers in a list in the following order:
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-19-problem-merging-and-solution-lists-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Merging Lists" taskId="java-fund-Lists-Merging-Lists" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Merging Lists" taskId="java-fund-1-Lists-lab-Merging-Lists" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;

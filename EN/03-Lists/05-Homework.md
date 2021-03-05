@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Problem: Train
 
-[code-task title="Train" taskId="java-fund-Lists-Exercise-Train" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Train" taskId="java-fund-1-Lists-Train" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -25,7 +25,7 @@ On the next line, you will get the **max capacity of each wagon** (single intege
 
 **Until** you receive the "end" command you will be given two types of input:
 
-- **Add** \{passengers\} – add a wagon to the end with the given number of passengers
+- **Add** \{passengers\} - add a wagon to the end with the given number of passengers
 
 - \{passengers\} -  **find an existing wagon** to fit all the passengers (starting from the first wagon)
 
@@ -246,7 +246,7 @@ end
 
 [slide hideTitle]
 # Problem: Change List
-[code-task title="Change List" taskId="java-fund-Lists-Exercise-Change-List" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Change List" taskId="java-fund-1-Lists-Change-List" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -265,9 +265,9 @@ Write a program, which **reads a list of integers** from the console and receive
 
 Your program may receive the following **commands**: 
 
-- **Delete** \{element\} – delete all elements in the array, which are equal to the given element
+- **Delete** \{element\} - delete all elements in the array, which are equal to the given element
 
-- **Insert** \{element\} \{position\} – insert the element at the given position
+- **Insert** \{element\} \{position\} - insert the element at the given position
 
 You should **stop the program** when you receive the "end" command. 
 
@@ -416,7 +416,7 @@ end
 [slide hideTitle]
 # Problem: House Party
 
-[code-task title="House Party" taskId="java-fund-Lists-Exercise-House-Party" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="House Party" taskId="java-fund-1-Lists-House-Party" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -436,8 +436,8 @@ Write a program that keeps track of the guests that are going to a house party.
 On the first line of input, you are going to receive **the number of commands**.
 
 On the next lines you are going to receive some of the following: 
--	"\{name\} is going!"
--	"\{name\} is not going!"
+- "\{name\} is going!"
+- "\{name\} is not going!"
 
 If you receive the **first** type of input, you have to **add the person if they are not on the guest list**. 
 
@@ -653,7 +653,7 @@ Adriana
 
 [slide hideTitle]
 # Problem: List Operations
-[code-task title="List Operations" taskId="java-fund-Lists-Exercise-List-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="List Operations" taskId="java-fund-1-Lists-List-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -674,15 +674,15 @@ Until you receive the "End" command, you will be given **operations** you have t
 
 The **possible commands** are:
 
-- **Add** \{number\} – add the given number to the end
+- **Add** \{number\} - add the given number to the end
 
-- **Insert** \{number\} \{index\} – insert the number at the given index
+- **Insert** \{number\} \{index\} - insert the number at the given index
 
-- **Remove** \{index\} – remove the number at the given index
+- **Remove** \{index\} - remove the number at the given index
 
-- **Shift left** \{count\} – first number becomes last 'count' times
+- **Shift left** \{count\} - first number becomes last 'count' times
 
-- **Shift right** \{count\} – last number becomes first 'count' times
+- **Shift right** \{count\} - last number becomes first 'count' times
 
 **Note**: the index given may be outside of the bounds of the array. In that case print: "Invalid index".
 
@@ -914,7 +914,7 @@ Invalid index
 [slide hideTitle]
 # Problem: Bomb Numbers
 
-[code-task title="Bomb Numbers" taskId="java-fund-Lists-Exercise-Bomb-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Bomb Numbers" taskId="java-fund-1-Lists-Bomb-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -968,7 +968,6 @@ Finally, **print the sum of the remaining elements** in the sequence.
 [input]
 1 2 2 4 2 2 2 9
 4 2
-
 [/input]
 [output]
 12
@@ -978,7 +977,6 @@ Finally, **print the sum of the remaining elements** in the sequence.
 [input]
 1 4 4 2 8 9 1
 9 3
-
 [/input]
 [output]
 5
@@ -988,7 +986,6 @@ Finally, **print the sum of the remaining elements** in the sequence.
 [input]
 1 7 7 1 2 3
 7 1
-
 [/input]
 [output]
 6
@@ -998,11 +995,9 @@ Finally, **print the sum of the remaining elements** in the sequence.
 [input]
 1 1 2 1 1 1 2 1 1 1
 2 1
-
 [/input]
 [output]
 4
-
 [/output]
 [/test]
 [test]
@@ -1047,7 +1042,7 @@ Finally, **print the sum of the remaining elements** in the sequence.
 
 [slide hideTitle]
 # Problem: Card Game
-[code-task title="Card Game" taskId="java-fund-Lists-Exercise-Cards-Game" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Card Game" taskId="java-fund-1-Lists-Cards-Game" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1148,7 +1143,7 @@ Second player wins! Sum: 826
 [slide hideTitle]
 # Problem: Append Arrays
 
-[code-task title="Append Arrays" taskId="java-fund-Lists-Exercise-Append-Arrays" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Append Arrays" taskId="java-fund-1-Lists-Append-Arrays" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1175,10 +1170,6 @@ Write a program to **append several arrays** of numbers.
 | **Input** | **Output** |
 | --- | --- |
 | 1 2 3 \|4 5 6 \|  7  8  | 7 8 4 5 6 1 2 3 |
-
-### Example
-| **Input** | **Output** |
-| --- | --- |
 | 7 \| 4  5\|1 0\| 2 5 \|3  | 3 2 5 1 0 4 5 7 |
 
 [/task-description]
@@ -1239,7 +1230,7 @@ Write a program to **append several arrays** of numbers.
 [slide hideTitle]
 # Problem: Pokemon Don't Go
 
-[code-task title="Pokemon Don't Go" taskId="java-fund-Lists-Exercise-Pokemon-Don't-Go" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Pokemon Don't Go" taskId="java-fund-1-Lists-Pokemon-Don't-Go" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1256,7 +1247,7 @@ public class Main {
 ## Description
 In **Pokemon Don't Go**, when you walk to a certain pokemon, those closest to you, naturally get further, and those further from you, get closer.
 
-You will **receive a sequence of integers, separated by spaces** – the **distance** to the pokemons.
+You will **receive a sequence of integers, separated by spaces** - the **distance** to the pokemons.
 
 Then you will **begin receiving integers**, which will correspond to **indexes** in that sequence.
 
@@ -1270,11 +1261,14 @@ If the given index is **LESS than 0**, **remove the first element of the sequenc
 
 If the given index is **GREATER than the last index of the sequence**, **remove the last element from the sequence**, and **COPY the first element to its place**.
 
-The increasing and decreasing of elements should also be done in these cases. The element, whose value you should use is the **REMOVED element**.
+The increasing and decreasing of elements should also be done in these cases. 
+
+The element, whose value you should use is the **REMOVED element**.
 
 The **program ends** when **no more elements remain** in the sequence.
 
 ### Input
+
 - On the first line of input, you will receive a sequence of integers, separated by spaces
 
 - On the next several lines you will receive integers - the indexes
@@ -1291,7 +1285,7 @@ When the program ends, you must print the summed up value of all REMOVED element
 | 0 | |
 
 **Comments:**
-- The array is \{4, 5, 3\}. The index is 1
+- The array is \{4, 5, 3\} The index is 1
 
 - We remove 5, and we increase all index numbers that are lower than it and decrease all index numbers higher than it
 
@@ -1546,7 +1540,7 @@ When the program ends, you must print the summed up value of all REMOVED element
 
 [slide hideTitle]
 # Problem: SoftUni Course Planning
-[code-task title="SoftUni Course Planning" taskId="java-fund-Lists-Exercise-SoftUni-Course-Planning" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="SoftUni Course Planning" taskId="java-fund-1-Lists-SoftUni-Course-Planning" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1571,7 +1565,7 @@ Until you receive the "course start" command, you will be given some **commands 
 
 The **possible commands** are: 
 
-- Add:\{lessonTitle\} – **add the lesson to the end** of the schedule, if it **does not exist**
+- Add:\{lessonTitle\} - **add the lesson to the end** of the schedule, if it **does not exist**
 
 - Insert:\{lessonTitle\}:\{index\} - **insert** the lesson to the **given index**, if it **does not exist**
 

@@ -165,7 +165,7 @@ for (String name : names){
 ```
 
 `System.out.println(names.remove("Maria"))` returns **true** because we had the element was found and removed.
-`System.out.println(names.remove("John"));` returns **false** because the element was not found.
+`System.out.println(names.remove("John"))` returns **false** because the element was not found.
 
 **remove(index)** - **removes** the **element** at the **specified index**:
 
