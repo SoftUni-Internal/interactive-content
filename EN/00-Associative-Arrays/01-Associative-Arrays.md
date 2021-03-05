@@ -19,7 +19,9 @@ In Java associative arrays are called **Maps**.
 
 A Map **cannot contain duplicate Keys**, each Key can map to at most one Value. 
 
-But **the values can be duplicated**. **For one Key only one Value** can be stored **in the same Map instance**. 
+But **the values can be duplicated**. 
+
+**For one Key only one Value** can be stored **in the same Map instance**. 
 
 There can be stored **different values for the same Key in different Map instances**. 
 
@@ -284,7 +286,7 @@ for (Map.Entry<String, Double> entry : fruitsPrice.entrySet()) {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-12-problem-and-solut-count-real-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Count Real Numbers" taskId="Java-Fundamentals-part-Two-Associative-arrays-Count-real-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Count Real Numbers" taskId="Java-Fundamentals-2-Associative-arrays-lab-Count-real-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -418,7 +420,7 @@ Read a **list of real numbers** and print them in **ascending order** along with
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-14-problem-and-solution-word-synonyms-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Word Synonyms" taskId="Java-Fundamentals-Part-Two-Associative-Arrays-Words-Synonyms" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Word Synonyms" taskId="Java-Fundamentals-2-Associative-Arrays-lab-Words-Synonyms" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -635,7 +637,7 @@ customer - client, purchaser
 
 [slide hideTitle]
 # Problem with Solution: Odd Occurrences
-[code-task title="Odd Occurrences" taskId="Odd-Occurences" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Odd Occurrences" taskId="Java-Fundamentals-2-Associative-Arrays-lab-Odd-Occurrences" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;

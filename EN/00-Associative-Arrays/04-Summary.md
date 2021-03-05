@@ -24,7 +24,7 @@ public class Main {
 
 ## In the next lesson you will learn:
 
-- What Is a String?
+- What is a String
 
 - Manipulating Strings
 
