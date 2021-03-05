@@ -18,31 +18,33 @@ public class Main {
 [task-description]
 # Description
 
-You are given **an integer array**. 
+The first line of input will consist of an **integer array**. 
 
-Create a program that **modifies the elements** after **receiving any of the following commands:**
+Create a program to modify the array.
 
-- "**swap** \{**index1**\} \{**index2**\}" - **swap the places of the integers on the given positions**
+The possible alterations are: "**swap**", "**multiply**" or "**decrease**".
 
-- "**multiply** \{**index1**\} \{**index2**\}" - multiply the value of the **element at the 1st index with the value of the element at the 2nd index**
+- "**swap** \{**index1**\} \{**index2**\}" - take the two elements and swap their places
 
-**Save the result at the  1st index.**
+- "**multiply** \{**index1**\} \{**index2**\}" - take the number from the first specified index and multiply it by the number at the second one
 
-- "**decrease**" - **decreases the value of the elements** in the array **with 1**
+Save the product of the two at the index, where the first number was.
+
+- "**decrease**" - decreases all elements in the array by 1
 
 ## Input 
 
-On the **first input** line you will be given **the initial array** values separated by a single space. 
+On the first input line you will be given the initial array values, separated by a single space.
 
-On the **next lines** you will receive commands **until** you receive the command "**end**". 
+On the next lines you will be getting one of the commands. The program should stop functioning after receiving the "**end**" command.
 
-The **commands are** as follow:  
+The commands could be:
 
-- **swap** \{**index1**\} \{**index2**\}"
+* "**swap** \{**index1**\} \{**index2**\}"
 
-- "**multiply** \{**index1**\} \{**index2**\}"
+* "**multiply** \{**index1**\} \{**index2**\}"
 
-- "**decrease**"
+* "**decrease**"
 
 ## Output 
 
@@ -50,13 +52,14 @@ The **commands are** as follow:
 
 ## Constraints 
 
-- Commands will be: "**swap**", "**multiply**", "**decrease**" and "**end**"
 
-- **Elements of the array** will be **integers**
+* The commands are limited to: "**swap**", "**multiply**", "**decrease**" and "**end**"
 
-- **Count of the array elements** will be an integer
+* All elements of the array will be integers in range [-231...231]
 
-- **Indexes will be always in the range of the array**
+* The number of elements in the array will be in range [2...100]
+
+* Indices will always be inside the range of the array
 
 ## Example One
 | **Input** | **Output** |
@@ -72,7 +75,7 @@ The **commands are** as follow:
 
 ## Comments
 
-The initial state of the array: "23 -2 321 87 42 90 -123"
+The initial state of the array is: "23 -2 321 87 42 90 -123"
 
 * "**swap 1(-2)" and "3(87)**"
 
