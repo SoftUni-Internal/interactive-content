@@ -642,7 +642,6 @@ Print only the names of the songs which are from that Type List \/ All songs.
 | **Input** | **Output** |
 | --- | --- |
 | songs([3,'favourite_DownTown_3:14','favourite_Kiss_4:16','favourite_Smooth Criminal_4:01','favourite']) | DownTown |
-| |
 | | Kiss |
 | | Smooth Criminal |
 
