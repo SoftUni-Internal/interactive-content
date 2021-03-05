@@ -26,8 +26,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-//TODO Change the task
-It is Friday night, and you are wondering which movie to watch. 
+It is Friday night, and you are wondering what movie to watch. 
 
 You decide to create a program, which chooses it for you. 
 
@@ -49,7 +48,7 @@ Keep in mind the following:
 
 ## Input
 
-You receive multiple elements from the console until the "**STOP**" command or until the limit of 7 movies is reached:
+You will receive multiple elements from the console until the "**STOP**" command or until the limit of 7 movies is reached:
 
 - Movie title: String
 
