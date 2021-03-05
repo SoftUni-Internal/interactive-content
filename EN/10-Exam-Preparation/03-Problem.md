@@ -1,17 +1,8 @@
 [slide]
 # Problem: Online Shop Unit Tests
-[code-task title="Problem: Online Shop Unit Tests" taskId="f86bf04f-a863-47ab-a726-dba5fc759fbf" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
+[code-task title="Online Shop Unit Tests" taskId="java-oop-advanced-exam-prep-2" executionType="tests-execution" executionStrategy="java-unit-tests" requiresInput]
+
 [task-description]
 
 # Task 3: Unit Testing (100 Points)
@@ -24,11 +15,8 @@ The class will have some methods, fields and constructors.
 
 Cover the whole class with unit test to make sure that the class is working as intended.
 
-
-
-
 [/task-description]
-[code-io /]
+[code-upload /]
 [tests]
 [test]
 [input]

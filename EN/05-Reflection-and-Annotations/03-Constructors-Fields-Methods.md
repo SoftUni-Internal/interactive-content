@@ -25,7 +25,7 @@ Also, we can obtain a following constructor by his parameters:
 Constructor ctor = aClass.getConstructor(String.class);
 ```
 
-Lets try to instantiate objects using our Constructor Object:
+Let us try to instantiate objects using our Constructor Object:
 
 ``` java
 Constructor constructor = MyObject.class.getConstructor(String.class);
@@ -73,7 +73,7 @@ Object fieldType = field.getType();
 
 # Fields Set and Get
 
-Lets discuss, how we can setting value for a field via Reflection
+Let us discuss, how we can setting value for a field via Reflection
 
 ``` java
 Field field = targetClass.getDeclaredField(fieldName);
@@ -104,7 +104,7 @@ public class Dog extends Mammal {
 
 ```
 
-We can **obtain** this methods with following syntax:
+We can **obtain** these methods with following syntax:
 
 ```java
 public class Main {
@@ -169,20 +169,10 @@ Object returnValue = method.invoke(null, "arg1"); // We use null for static meth
 
 [slide hideTitle]
 # Problem with Solution: Getters and Setters
-[code-task title="Getters and Setters" taskId="Java-OOP-Advanced-Reflection-Getters-And-Setters" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
+[code-task title="Getters and Setters" taskId="Java-OOP-Advanced-Reflection-lab-Getters-And-Setters" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
+[code-upload allowedMemory="30" /]
 [task-description]
-## Description
+# Description
 Using reflection to get all **Reflection** methods. 
 
 Then prepare an algorithm that will recognize, which methods are **getters** and **setters**. 
@@ -190,15 +180,14 @@ Then prepare an algorithm that will recognize, which methods are **getters** and
 Sort each collection **alphabetically** by methods names. 
 
 Print to console each **getter** on new line in format:
-- "**{name} will return class {Return Type}**"
+- "**\{name\} will return class \{Return Type\}**"
 
 Then print all setters in format:
-- "**{name} and will set field of class {Parameter Type}**"
+- "**\{name\} and will set field of class \{Parameter Type\}**"
 
-**Do this without changing anything in "Reflection.java"**
+**Do this without changing anything in "Reflection.java".**
 
 [/task-description]
-[code-io /]
 [tests]
 [test]
 [input]

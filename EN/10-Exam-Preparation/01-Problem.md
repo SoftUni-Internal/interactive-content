@@ -39,7 +39,7 @@ In this exam, you need to build an online shop project, which has **peripherals*
 
 You are given interfaces and you have to implement their functionality in the **correct classes**.
 
-There are **4** types of entities in the application: **Product, Component, Peripheral, Computer**.
+There are **4** types of entities in the application: **Product, Component, Peripheral and Computer**.
 
 # Product 
 
@@ -48,19 +48,19 @@ The **BaseProduct** is a **base class** for **components, peripherals** and **co
 ## Data
 
 - **id - int**
-  * cannot be **less than or equal to 0**. In that case, throw **IllegalArgumentException** with message "**Id can not be less or equal than 0.**"
+  * cannot be **less than or equal to 0**. In that case, throw an **IllegalArgumentException** with the message "**Id can not be less or equal than 0.**"
 
 - **manufacturer – String** 
-  * cannot be **null or whitespace**. In that case, throw **IllegalArgumentException** with message "**Manufacturer can not be empty.**"
+  * cannot be **null or whitespace**. In that case, throw an **IllegalArgumentException** with the message "**Manufacturer can not be empty.**"
 
 - **model – String**
-  * cannot be **null or whitespace**. In that case, throw **IllegalArgumentException** with message "**Model can not be empty.**"
+  * cannot be **null or whitespace**. In that case, throw an **IllegalArgumentException** with the message "**Model can not be empty.**"
 
 - **price - double**
-  * cannot be **less than or equal to 0**. In that case, throw **IllegalArgumentException** with message "**Price can not be less or equal than 0.**"
+  * cannot be **less than or equal to 0**. In that case, throw an **IllegalArgumentException** with the message "**Price can not be less or equal than 0.**"
 
 - **overallPerformance – double**
-  * cannot be **less than or equal to 0**. In that case, throw **IllegalArgumentException** with message "**Overall Performance can not be less or equal than 0.**"
+  * cannot be **less than or equal to 0**. In that case, throw an **IllegalArgumentException** with the message "**Overall Performance can not be less or equal than 0.**"
 
 ## Constructor
 
@@ -68,7 +68,7 @@ A **product** should take the following values upon initialization:
 
 **(int id, String manufacturer, String model, double price, double overallPerformance)**
 
-Override **toString()** method in the format:
+Override the **toString()** method with the format:
 
 "Overall Performance: \{overall performance\}. Price: \{price\} - \{product type\}: \{manufacturer\} \{model\} (Id: \{id\})"
 
@@ -94,13 +94,13 @@ A **product** should take the following values upon initialization:
 
 **(int id, String manufacturer, String model, double price, double overallPerformance, int generation)**
 
-Override **toString()** method in the format:
+Override the **toString()** method with the format:
 
 "Overall Performance: \{overall performance\}. Price: \{price\} - \{product type\}: \{manufacturer\} \{model\} (Id: \{id\}) Generation: \{generation\}"
 
 ## Child classes
 
-There are several specific types of **components**, where the **overall performance** has a **different multiplier**:
+There are several concrete types of **components** where the **overall performance** has a **different multiplier**:
 
 - **CentralProcessingUnit** - multiplier is **1.25**
 - **Motherboard** – multiplier is **1.25**
@@ -125,7 +125,7 @@ A **product** should take the following values upon initialization:
 
 **(int id, String manufacturer, String model, double price, double overallPerformance, String connectionType)**
 
-Override **toString()** method in the format:
+Override the **toString()** method with the format:
 
 "Overall Performance: \{overall performance\}. Price: \{price\} - \{product type\}: \{manufacturer\} \{model\} (Id: \{id\}) Connection Type: \{connection type\}"
 
@@ -153,7 +153,7 @@ A **product** should take the following values upon initialization:
 
 **(int id, String manufacturer, String model, double price, double overallPerformance)**
 
-Override **toString()** method in the format:
+Override the **toString()** method with the format:
 
 "Overall Performance: \{overall performance\}. Price: \{price\} - \{product type\}: \{manufacturer\} \{model\} (Id: \{id\})"
 
