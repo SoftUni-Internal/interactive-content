@@ -29,7 +29,7 @@ The main goal of an abstract class is to provide shared implementation of common
 
 [slide hideTitle]
 # Problem with Solution: Shapes
-[code-task title="Shapes" taskId="Java-OOP-Advanced-Polymorphism-lab-Shapes" executionType="tests-execution" executionStrategy="java-project-tests"] 
+[code-task title="Shapes" timeLimit=5000 taskId="Java-OOP-Advanced-Polymorphism-lab-Shapes" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
 
 [task-description]
@@ -53,16 +53,16 @@ Create a **class hierarchy**, starting with an abstract class **Shape**:
 
 Each of them needs to have:
 
-- **Fields \- for **Rectangle**:
+- **Fields \- for Rectangle**:
     - height : Double
     - width : Double 
 
-- **Fields \- for **Circle**:
+- **Fields \- for Circle**:
     - radius : Double
 
 - **Encapsulation for these fields**
 
-- **Public constructor **
+- **Public constructor**
 
 - **Concrete methods for calculations (perimeter and area)**
 
