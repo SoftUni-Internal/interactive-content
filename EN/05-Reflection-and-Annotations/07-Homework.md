@@ -691,7 +691,7 @@ First, let us go over the original task before the project was created.
 The input consists of multiple commands, each on a separate line. 
 
 Commands that execute the functionality are:
-- **add \{Archer/Swordsman/Pikeman/**\{**…**\}\} - adds a unit to the repository
+- **add** \{**Archer/Swordsman/Pikeman/**\{**…**\}\} - adds a unit to the repository
 - **report** - prints a lexicological ordered statistic about the units in the repository
 - **fight** - ends the input
 ## Output
