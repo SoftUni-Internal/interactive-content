@@ -9,7 +9,7 @@
 
 For-loops are used when we need to execute a block of code multiple times.
 
-* The for-loop syntax 
+* The **for-loop** syntax 
    
 ``` js
 for (initialization; condition; update) {
@@ -26,9 +26,9 @@ for (initialization; condition; update) {
 
 ## In the next lesson you will learn:
    
-- **While** Loop
+- **While-Loop**
 
-- Difference between **while loop** and **for loop**
+- Difference between **while-loop** and **for-loop**
 
 - The **break** Operator
 
