@@ -588,9 +588,6 @@ Print top 3 numbers with **for** loop.
 | **Input** | **Output** |
 | --- | --- |
 | 10 30 15 20 50 5 | 50 30 20 |
-
-| **Input** | **Output** |
-| --- | --- |
 | 20 30 | 30 20 |
 
 [/task-description]
