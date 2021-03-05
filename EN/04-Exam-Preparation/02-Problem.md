@@ -1,9 +1,8 @@
-# Inbox Manager
-
+# Problem 3: Inbox Manager
 
 [slide hideTitle]
 # Inbox Manager
-[code-task title="Inbox Manager" taskId="java-fundamentals-2-Exam-Inbox-Manager" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Inbox Manager" taskId="java-fundamentals-2-Exam-preparation-Inbox-Manager" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -23,7 +22,7 @@ You need to keep information about their username and their sent emails.
 
 The emails are **represented as strings**.
 
-You will be **receiving lines with commands separated by** "->" **until you receive** the "Statistics" command.
+You will be **receiving lines with commands separated by** "->" **until you receive** the "**Statistics**" command.
 
 There are **three possible commands**:
 - "Add->\{username\}" 
@@ -50,14 +49,14 @@ Users count: \{count\}
  - \{EmailN\}
 
 ### Input
-- You will be receiving lines until you receive the "Statistics" command
+- You will be receiving lines until you receive the "**Statistics**" command
 - The commands will be in the format described above
 
 ### Output
-- Print the collection in the format described above after the "Statistics" command
+- Print the collection in the format described above after the "**Statistics**" command
 
 ### Output
-Print the collection in the format described above after receiving the "Statistics" command.
+Print the collection in the format described above after receiving the "**Statistics**" command.
 
 ### Example
 | **Input** | **Output** |

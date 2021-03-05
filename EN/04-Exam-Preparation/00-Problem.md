@@ -1,8 +1,8 @@
-# Password Reset
+# Problem 1: Password Reset
 
 [slide hideTitle]
 # Password Reset
-[code-task title="Password Reset" taskId="java-fundamentals-part-2-exam-password-reset" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Password Reset" taskId="java-fundamentals-part-2-exam-preparation-password-reset" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -24,75 +24,73 @@ First, you will receive a string. Until the command "**Done**", you will be rece
 The commands will be the following:
 
 - **TakeOdd**
-  * takes only the characters at **odd indices** and **concatenates** them together to
-obtain the **new raw password** and then **prints** it.
+  * takes only the characters at **odd indices** and **concatenates** them together to obtain the **new raw password** and then **prints** it
 - Cut \{index\} \{length\}
-  * gets the substring with the **given length** starting from the **given index** from the password and removes its first occurrence of it, then prints the password on the console.
-  * the given index and length will **always be valid**.
+  * gets the substring with the **given length** starting from the **given index** from the password and removes its first occurrence of it, then prints the password on the console
+  * the given index and length will **always be valid**
 - Substitute \{substring\} \{substitute\}
-  * if the raw password contains the given substring, replaces all of its 
-occurrences with the substitute text given and prints the result.
+  * if the raw password contains the given substring, replaces all of its occurrences with the substitute text given and prints the result
   * if it does not, prints "**Nothing to replace!**"
 
 
-  ## Input
+## Input
 
-  - You will be receiving strings until the "**Done**" command is given.
+  - You will be receiving strings until the "**Done**" command is given
 
-  ## Output
+## Output
 
 - After the "**Done**" command is received, print:
   * "Your password is: \{password\}"
 
 ## Constraints
 
-- The indexes from the "Cut \{index\} \{length\}" command will always be valid.
+- The indexes from the "Cut \{index\} \{length\}" command will always be valid
 
 
 ## Examples
 
 | **Input** | **Output** |
 | --- | --- |
-| `Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr` | `icecream::hot::summer` |
-| `TakeOdd` | `icecream::hot::mer` |
-| `Cut 15 3` | `icecream-hot-mer` |
-| `Substitute :: -` | `Nothing to replace!` |
-| `Substitute | ^ `| `Your password is: icecream-hot-mer` |
+| Siiceercaroetavm\!\:\?\:ahsott\.\:i\:nstupmomceqr | icecream\:\:hot\:\:summer |
+| TakeOdd | icecream\:\:hot\:\:mer |
+| Cut 15 3 | icecream\-hot\-mer |
+| Substitute \:\: \- | Nothing to replace! |
+| Substitute \| \^ | Your password is\: icecream\-hot\-mer |
 
 ## Comments
 
-`TakeOdd` 
+TakeOdd
 
-- `Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr` -> `icecream::hot::summer`
+- " Siiceercaroetavm\!\:\?\:ahsott\.\:i\:nstupmomceqr" \-\> "icecream\:\:hot\:\:summer"
 
 
 - We only take the chars at odd indices 1, 3, 5 etc.
 
-`Cut 15  3 -> icecream::hot::summer -> sum`
+"Cut 15  3" \-\> "icecream\:\:hot\:\:summer" \-\> sum
 
-- `icecream::hot::mer`
+- icecream\:\:hot\:\:mer
 
 We cut a substring starting at index 15 with a length of 3, remove it from the raw password and print it. 
 
 Then, on a new line we print the resulting new raw password.
 
-`Substitute :: - -> icecream::hot::summer -> icream-hot-summer`
+"Substitute \:\: \-" \-\> "icecream\:\:hot\:\:summer" \-\> "icream\-hot\-summer"
 
-- `We replace "::" with "-"` .
+- We replace "\:\:" with "\-"
 
-`Substitute | ^ -> Nothing to replace!` 
+"Substitute \| \^" \-\> "Nothing to replace!" 
 
-- `"|" is not found anywhere in the raw password.`
+- "|" is not found anywhere in the raw password
 
-- Finally, after receiving the "Done" command, we print the resulting password in the proper format.
+- Finally, after receiving the "**Done**" command, we print the resulting password in the proper format
 
 | **Input** | **Output** |
 | --- | --- |
-| `up8rgoyg3r1atmlmpiunagt!-irs7!1fgulnnnqy` | `programming!is!funny` |
-| `TakeOdd` | `programming!is!fun` |
-| `Cut 18 2` | `programming***is***fun` |
-| `Substitute ! ***` | `Nothing to replace!` |
-| `Substitute ? .!.` | `Your password is: programming***is***fun` |
+| up8rgoyg3r1atmlmpiunagt\!\-irs7\!1fgulnnnqy | programming\!is\!funny |
+| TakeOdd | programming\!is\!fun |
+| Cut 18 2 | programming\*\*\*is\*\*\*fun |
+| Substitute \! \*\*\* | Nothing to replace! |
+| Substitute \? \.\!\.| Your password is\: programming\*\*\*is\*\*\*fun |
 | Done | | 
 
 
