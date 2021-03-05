@@ -74,15 +74,9 @@ Print on the console:
 
 [hints]
 [hint]
-First, we get **Matrix**, the first letter is M with a value of 77, it is a capital letter so we subtract from it the length of the title 77 \- 6 \= 71.
-[/hint]
+When we receive the first film, we have to calculate the points for it. Similarly, we proceed with each film until we receive the command "**STOP**".
 [hint]
-The second letter has a value of 97 and we subtract from its title length \* 2 from the sum 97 \- 12 = 85.
-
-Similarly, we proceed with each subsequent letter until we get the final amount of 563.
-[/hint]
-[hint]
-Upon receiving the "**STOP**" command, we print the title with the highest value, which is **Breaking bad** with a sum of 878.
+Upon receiving the "**STOP**" command, we print the title with the highest value.
 [/hint]
 
 [/hints]
