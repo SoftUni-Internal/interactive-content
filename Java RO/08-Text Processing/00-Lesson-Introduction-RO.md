@@ -1,17 +1,14 @@
-[slide]
+# Lesson Introduction
 
-# Introducerea Lecției
+[slide hideTitle]
 
-[vimeo-video]
-[stream language="EN" videoId="" default /]
-[stream language="RO" videoId="" /]
-[/video-vimeo]
+# Lesson Content
 
 ## În această lecție veți afla despre:
 
 **1. Şir**
 
-- Ce este un Şir?
+- Ce este un Şir
 
 - Colecție de Perechi Cheie și Valoare
 
@@ -26,8 +23,5 @@
 - Prezentare generală a StringBuilder
 
 - Metode StringBuilder
-
-
-**4. Exerciții live**
 
 [/slide]
