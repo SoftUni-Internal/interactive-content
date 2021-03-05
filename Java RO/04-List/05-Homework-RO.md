@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Problem: Train
 
-[code-task title="Train" taskId="java-fund-Lists-Exercise-Train" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Train" taskId="java-fund-1-Lists-Train" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -243,7 +243,7 @@ end
 
 [slide hideTitle]
 # Problem: Change List
-[code-task title="Change List" taskId="java-fund-Lists-Exercise-Change-List" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Change List" taskId="java-fund-1-Lists-Change-List" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -261,8 +261,8 @@ public class Main {
 Scrieți un program, care **citește o listă de numere întregi** de pe consolă și primește **comenzi**, care **manipulează lista**.
 
 Programul dvs. poate primi următoarele **comenzi**:
-• **Delete** \{element\} - șterge toate elementele din matrice, care sunt egale cu elementul dat
-• **Insert** \{element\} \{position\} - introduceți elementul și poziția dată
+- **Delete** \{element\} - șterge toate elementele din matrice, care sunt egale cu elementul dat
+- **Insert** \{element\} \{position\} - introduceți elementul și poziția dată
 Ar trebui să **opriți programul** când primiți comanda "end". Imprimați toate numerele din matrice **separate cu un singur spațiu alb**.
 
 ### Exemplu
@@ -408,7 +408,7 @@ end
 [slide hideTitle]
 # Problem: House Party
 
-[code-task title="House Party" taskId="java-fund-Lists-Exercise-House-Party" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="House Party" taskId="java-fund-1-Lists-House-Party" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -645,7 +645,7 @@ Adriana
 
 [slide hideTitle]
 # Problem: List Operations
-[code-task title="List Operations" taskId="java-fund-Lists-Exercise-List-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="List Operations" taskId="java-fund-1-Lists-List-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -666,10 +666,10 @@ Până când primiți "End" vi se vor da **operațiuni** pe care trebuie să le 
 
 **Comenzile posibile** sunt:
 - **Add** \{number\} - adăugați un număr la sfârșit
-- **Insert** \{number\} \{index\} – introduceți numărul la indexul dat
-- **Remove** \{index\} – eliminare la index
-- **Shift left** \{count\} – primul număr devine ultimul 'count' ori
-- **Shift right** \{count\} – ultimul număr devine primul 'count'
+- **Insert** \{number\} \{index\} - introduceți numărul la indexul dat
+- **Remove** \{index\} - eliminare la index
+- **Shift left** \{count\} - primul număr devine ultimul 'count' ori
+- **Shift right** \{count\} - ultimul număr devine primul 'count'
 
 **Notă**: este posibil ca indicele dat să fie în afara limitelor matricei. În acest caz, tipăriți "Invalid index"
 
@@ -901,7 +901,7 @@ Invalid index
 [slide hideTitle]
 # Problem: Bomb Numbers
 
-[code-task title="Bomb Numbers" taskId="java-fund-Lists-Exercise-Bomb-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Bomb Numbers" taskId="java-fund-1-Lists-Bomb-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -931,8 +931,8 @@ Detonările se efectuează **de la stânga la dreapta** și toate numerele deton
 | 4 2 | |
 
 **Comentarii:**
-- Numărul special este 4 cu puterea 2.
-- După detonare am plecat cu secvența \[1, 2, 9\] cu suma 12.
+- Numărul special este 4 cu puterea 2
+- După detonare am plecat cu secvența \[1, 2, 9\] cu suma 12
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -941,9 +941,9 @@ Detonările se efectuează **de la stânga la dreapta** și toate numerele deton
 | 9 3 | |
 
 **Comentarii:**
-- Numărul special este 9 cu puterea 3.
-- După detonare am plecat cu secvența \[1, 4\] cu suma 5.
-- Deoarece 9 are doar 1 vecin din dreapta, eliminăm doar (un număr în loc de 3).
+- Numărul special este 9 cu puterea 3
+- După detonare am plecat cu secvența \[1, 4\] cu suma 5
+- Deoarece 9 are doar 1 vecin din dreapta, eliminăm doar (un număr în loc de 3)
 
 [/task-description]
 [code-io /]
@@ -952,7 +952,6 @@ Detonările se efectuează **de la stânga la dreapta** și toate numerele deton
 [input]
 1 2 2 4 2 2 2 9
 4 2
-
 [/input]
 [output]
 12
@@ -962,7 +961,6 @@ Detonările se efectuează **de la stânga la dreapta** și toate numerele deton
 [input]
 1 4 4 2 8 9 1
 9 3
-
 [/input]
 [output]
 5
@@ -972,7 +970,6 @@ Detonările se efectuează **de la stânga la dreapta** și toate numerele deton
 [input]
 1 7 7 1 2 3
 7 1
-
 [/input]
 [output]
 6
@@ -982,11 +979,9 @@ Detonările se efectuează **de la stânga la dreapta** și toate numerele deton
 [input]
 1 1 2 1 1 1 2 1 1 1
 2 1
-
 [/input]
 [output]
 4
-
 [/output]
 [/test]
 [test]
@@ -1031,7 +1026,7 @@ Detonările se efectuează **de la stânga la dreapta** și toate numerele deton
 
 [slide hideTitle]
 # Problem: Cards Game
-[code-task title="Card Game" taskId="java-fund-Lists-Exercise-Cards-Game" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Card Game" taskId="java-fund-1-Lists-Cards-Game" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1133,7 +1128,7 @@ Second player wins! Sum: 826
 [slide hideTitle]
 # Problem: Append Arrays
 
-[code-task title="Append Arrays" taskId="java-fund-Lists-Exercise-Append-Arrays" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Append Arrays" taskId="java-fund-1-Lists-Append-Arrays" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1157,10 +1152,6 @@ Scrieți un program pentru a **adăuga mai multe matrice** de numere.
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | 1 2 3 \|4 5 6 \|  7  8  | 7 8 4 5 6 1 2 3 |
-
-### Exemplu
-|**Intrare**|**Ieșire**|
-| --- | --- |
 | 7 \| 4  5\|1 0\| 2 5 \|3  | 3 2 5 1 0 4 5 7 |
 
 [/task-description]
@@ -1221,7 +1212,7 @@ Scrieți un program pentru a **adăuga mai multe matrice** de numere.
 [slide hideTitle]
 # Problem: Pokemon Don't Go
 
-[code-task title="Pokemon Don't Go" taskId="java-fund-Lists-Exercise-Pokemon-Don't-Go" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Pokemon Don't Go" taskId="java-fund-1-Lists-Pokemon-Don't-Go" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1236,21 +1227,25 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-În Pokemon Don’t Go, când te duci la un anumit pokemon, cei mai apropiați de tine, în mod firesc, ajung mai departe, iar cei mai departe de tine, se apropie.
+În Pokemon Don't Go, când te duci la un anumit pokemon, cei mai apropiați de tine, în mod firesc, ajung mai departe, iar cei mai departe de tine, se apropie.
 
 Veți primi **o secvență de numere întregi, separate prin spații** - **distanțe** până la pokemon.
 
 Apoi, veți începe **să primiți numere întregi**, care vor corespunde cu **indexurile** din acea succesiune.
 
 **Când primiți un index**, trebuie să **eliminați elementul din acel index** din secvență (ca și cum ați fi capturat pokemonul).
+
 - Trebuie să MĂREȘTI valoarea tuturor elementelor din secvență care sunt **MAI MIC sau EGAL pentru elementul eliminat**, cu **valoarea** **a elementului eliminat**
+
 - Trebuie să DECREȚI valoarea tuturor elementelor din secvență care sunt **MAI MARI decât elementul eliminat**, cu **valoarea elementului eliminat**
 
 Dacă indicele dat este **MAI MIC decât 0**, **eliminați primul element al secvenței** și **COPIAȚI ultimul element la locul său**.
 
 Dacă indicele dat este **MAI MARE decât ultimul index al secvenței**, **scoateți ultimul element din secvență** și **COPIAȚI primul element la locul său**.
 
-Creșterea și scăderea elementelor ar trebui făcută și în aceste cazuri. Elementul, a cărui valoare ar trebui să îl utilizați este **elementul REMOVED**.
+Creșterea și scăderea elementelor ar trebui făcută și în aceste cazuri. 
+
+Elementul, a cărui valoare ar trebui să îl utilizați este **elementul REMOVED**.
 
 **Programul se termină** când secvența nu are **elemente**.
 
@@ -1271,15 +1266,15 @@ Creșterea și scăderea elementelor ar trebui făcută și în aceste cazuri. E
 | 0 | |
 
 **Comentarii:**
-- Matricea este \{4, 5, 3\}. Indicele este 1.
-- Îndepărtăm 5 și creștem cu totul mai jos decât acesta și scăzem cu totul mai mult decât el.
-- În acest caz nu există mai mult de 5.
-- Rezultatul este \{9, 8\}.
-- Indicele este 1. Deci eliminăm 8 și scădem cu totul mai mult decât acesta.
-- Rezultatul este \{1\}.
-- Indicele este 0. Deci eliminăm 1.
-- Nu mai există elemente, așa că imprimăm suma tuturor elementelor eliminate. 
-- 5 + 8 + 1 = 14.
+- Matricea este \{4, 5, 3\} Indicele este 1
+- Îndepărtăm 5 și creștem cu totul mai jos decât acesta și scăzem cu totul mai mult decât el
+- În acest caz nu există mai mult de 5
+- Rezultatul este \{9, 8\}
+- Indicele este 1. Deci eliminăm 8 și scădem cu totul mai mult decât acesta
+- Rezultatul este \{1\}
+- Indicele este 0. Deci eliminăm 1
+- Nu mai există elemente, așa că imprimăm suma tuturor elementelor eliminate
+- 5 + 8 + 1 = 14
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -1299,8 +1294,8 @@ Creșterea și scăderea elementelor ar trebui făcută și în aceste cazuri. E
 - Pasul 4: \{2, 2\}
 - Pasul 5: \{4, 4\}
 - Pasul 6: \{8\}
-- Pasul 7: \{\} (empty).
-- Rezultat = 6 + 11 + 15 + 5 + 2 + 4 + 8 = 51.
+- Pasul 7: \{\} (empty)
+- Rezultat = 6 + 11 + 15 + 5 + 2 + 4 + 8 = 51
 
 [/task-description]
 [code-io /]
@@ -1511,7 +1506,7 @@ Creșterea și scăderea elementelor ar trebui făcută și în aceste cazuri. E
 
 [slide hideTitle]
 # Problem: SoftUni Course Planning
-[code-task title="SoftUni Course Planning" taskId="java-fund-Lists-Exercise-SoftUni-Course-Planning" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="SoftUni Course Planning" taskId="java-fund-1-Lists-SoftUni-Course-Planning" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1539,7 +1534,7 @@ Până când veți primi "course start" vi se vor oferi câteva **comenzi pentru
 - Insert:\{lessonTitle\}:\{index\} - **introduceți** lecția în **indexul dat**, dacă **nu există**
 - Remove:\{lessonTitle\} - **eliminați lecția**, dacă **există**
 - Swap:\{lessonTitle\}:\{lessonTitle\} - **schimbați locul** celor două lecții, **dacă există**
-- Exercise:\{lessonTitle\} - **adăugați Exercițiu în program imediat după indexul lecției**, dacă lecția există și nu există deja exercițiu, în următorul format: "- - - \{lessonTitle\}-Exercise". 
+- Exercise:\{lessonTitle\} - **adăugați Exercițiu în program imediat după indexul lecției**, dacă lecția există și nu există deja exercițiu, în următorul format: "- - - \{lessonTitle\}-Exercise"
     - dacă **lecția nu există**, **adăugați** lecția **la sfârșitul** programului cursului, **urmat de exercițiu**
 
 De fiecare dată când **Schimbați sau Eliminați o lecție,** ar trebui **să faceți același lucru cu exercițiile**, dacă există, care urmează lecțiile.
@@ -1554,10 +1549,10 @@ De fiecare dată când **Schimbați sau Eliminați o lecție,** ar trebui **să 
 | course start | |
 
 **Comments:**
-- We receive the initial schedule. 
-- Next, we add Databases lesson, because it doesn`t exist. 
-- We Insert at the given index lesson Arrays, because its not present in the schedule. 
-- After receiving the last command and removing lesson Lists, we print the whole schedule.
+- We receive the initial schedule
+- Next, we add Databases lesson, because it does not exist
+- We Insert at the given index lesson Arrays, because its not present in the schedule
+- After receiving the last command and removing lesson Lists, we print the whole schedule
 
 
 ### Exemplu

@@ -4,11 +4,6 @@
 
 # Definition and Initialization
 
-[vimeo-video startTimeInSeconds="9" endTimeInSeconds="2583"]
-[stream language="EN" videoId="421781852" default /]
-[stream language="RO" videoId="431758884"  /]
-[/video-vimeo]
-
 La fel ca o matrice o **Listă** este o **secvență de elemente**.
 
 [image assetsSrc="java-fund-p1-lists-01.png" /]
@@ -166,7 +161,7 @@ for (String name : names){
 ```
 
 `System.out.println(names.remove("Maria"))` returns **true** because we had the element was found and removed.
-`System.out.println(names.remove("John"));` returns **false** because the element was not found.
+`System.out.println(names.remove("John"))` returns **false** because the element was not found.
 
 **remove(index)** - **removes** the **element** at the **specified index**:
 

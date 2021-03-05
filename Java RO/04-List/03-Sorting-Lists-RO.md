@@ -29,7 +29,7 @@ System.out.println(String.join(", ", names));
 [slide hideTitle]
 # Problem with Solution: List of Products
 
-[code-task title="List of Products" taskId="java-fund-Lists-List-of-products" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="List of Products" taskId="java-fund-1-Lists-lab-List-of-products" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -144,7 +144,7 @@ d
 [slide hideTitle]
 # Problem with Solution: Remove Negatives and Reverse
 
-[code-task title="Remove Negatives and Reverse" taskId="java-fund-Lists-Remove-Negatives-and-Reverse" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Remove Negatives and Reverse" taskId="java-1-fund-Lists-lab-Remove-Negatives-and-Reverse" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;

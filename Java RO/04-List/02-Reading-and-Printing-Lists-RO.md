@@ -32,7 +32,7 @@ You can read a list as a single line from the console.
 
 Imagine we have an input that consists of several Integer values, separated by spaces. (10 20 30 40 50)
 
-```java
+``` java
 // input: 10 20 30 40 50
 String values = scanner.nextLine();   
 
@@ -81,7 +81,7 @@ System.out.println(String.join(" ", list));
 [slide hideTitle]
 # Problem with Solution: Sum Adjacent Equal Numbers
 
-[code-task title="Sum Adjacent Equal Numbers" taskId="java-fund-Lists-Sum-Adjacent-Equal-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sum Adjacent Equal Numbers" taskId="java-1-fund-Lists-lab-Sum-Adjacent-Equal-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -100,23 +100,15 @@ public class Main {
 
 Scrieți un program pentru a **însuma toate numerele egale adiacente** într-o listă de numere zecimale, începând de la **stânga la dreapta**.
 
-- După însumarea a două numere, rezultatul obținut ar putea fi egal cu unii dintre vecinii săi și ar trebui să fie însumat și (vezi exemplele de mai jos).
+- După însumarea a două numere, rezultatul obținut ar putea fi egal cu unii dintre vecinii săi și ar trebui să fie însumat și (vezi exemplele de mai jos)
 
-- Sumați întotdeauna cei doi vecini egali din stânga (dacă sunt disponibile mai multe cupluri de vecini egali).
+- Sumați întotdeauna cei doi vecini egali din stânga (dacă sunt disponibile mai multe cupluri de vecini egali)
 
 ## Exemple
 |**Intrare**|**Ieșir** |**Comentarii**|
 | --- | --- | --- |
 | 3 3 6 1 | 12 1 | **3 3** 6 1 -> **6 6** 1 -> 12 1 |
-|  |  |  |
-
-|**Intrare**|**Ieșir**|**Comentarii**|
-| --- | --- | --- |
 | 8 2 2 4 8 16 | 16 8 16 | 8 **2 2** 4 8 16 -> 8**4 4** 8 16 -> **8 8** 8 16 -> 16 8 16 |
-|  |  |  |
-
-|**Intrare**|**Ieșir**|**Comentarii**|
-| --- | --- | --- |
 | 0.1 0.1 5 -5 | 0.2 5 -5 | **0.1 0.1** 5 -5 -> 0.2 5 -5 |
 
 [/task-description]
@@ -209,7 +201,7 @@ Scrieți un program pentru a **însuma toate numerele egale adiacente** într-o 
 [slide hideTitle]
 # Problem with Solution: Gauss' Trick
 
-[code-task title="Gauss' Trick" taskId="java-fund-Lists-Gauss'-Trick" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Gauss' Trick" taskId="java-fund-1-Lists-lab-Gauss'-Trick" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -235,10 +227,6 @@ Scrieți un program care să rezume toate numerele dintr-o listă în următoare
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | 1 2 3 4 5 | 6 6 3 |
-|  |  |
-
-|**Intrare**|**Ieșire**|
-| --- | --- |
 | 1 2 3 4 | 5 5 |
 
 [/task-description]
@@ -307,7 +295,7 @@ Scrieți un program care să rezume toate numerele dintr-o listă în următoare
 [slide hideTitle]
 # Problem with Solution: Merging Lists
 
-[code-task title="Merging Lists" taskId="java-fund-Lists-Merging-Lists" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Merging Lists" taskId="java-fund-1-Lists-lab-Merging-Lists" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;

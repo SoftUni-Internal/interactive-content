@@ -30,7 +30,7 @@
 
 - Sortarea listelor de prezentare generală și sintaxă
 
-- Comanda String.join
+- Comanda **String.join()**
 
 
 [/slide]
