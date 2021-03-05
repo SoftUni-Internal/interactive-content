@@ -12,7 +12,7 @@ The specific thing about them is that they repeat a block of commands while a co
 
 As a structure, they differ from "**for**" loops, and even have a simple syntax.
 
-Before we proceed with the lesson, let us cover оne more examples from real life.
+Before we proceed with the lesson, let us cover оne more real life example.
 
 [image assetsSrc="05-bucket-example.png" /]
 
