@@ -102,15 +102,15 @@ Print on console all mistakes in **format**:
 
 - Fields:
 
-"**\{fieldName\} must be private!**"
+"\{**fieldName**\} **must be private!**"
 
 - Getters:
 
-"**\{methodName\} have to be public!**"
+"\{**methodName**\} **have to be public!**"
 
 - Setters:
 
-"**\{methodName\} have to be private!**"
+"\{**methodName**\} **have to be private!**"
 
 
 [/task-description]
