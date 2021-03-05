@@ -43,11 +43,11 @@ In the end **print the count of successful registrations**:
 - "Successful registrations: \{successfulRegistrationsCount\}"
 
 ### Input
-- On the first line - n - the count of inputs.
-- On the next n lines - input that you have to check if it has a valid registration.
+- On the first line - n - the count of inputs
+- On the next n lines - input that you have to check if it has a valid registration
 
 ### Output
-- Print all results from each input, each on a new line.
+- Print all results from each input, each on a new line
 - In the end print the count of successful registrations
 
 ### Example
@@ -60,10 +60,10 @@ In the end **print the count of successful registrations**:
 | | Successful registrations: 1 |
 
 ### Comment
-- We have 3 input lines to check.
-- The first one follows the rules and is valid. 
-- The second one doesn't because the password does not end with a digit. 
-- The third one is not valid because the password is too short.
+- We have 3 input lines to check
+- The first one follows the rules and is valid 
+- The second one does not because the password does not end with a digit
+- The third one is not valid because the password is too short
 
 ### Example
 | **Input** | **Output** |
