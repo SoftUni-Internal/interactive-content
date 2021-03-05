@@ -28,7 +28,8 @@ So, they have asked you to help them organize their trip by creating a program t
 
 You will be given a string containing the initial list of **travel destinations.**
 
-Afterward, you will receive **commands**, which represent changes to the travel plan, until you receive the command "**Travel**".
+Afterward, you will receive **commands**, which represent changes to the travel destination string, until you receive the
+command **"Travel"**.
 
 The commands may be:
 
@@ -52,7 +53,7 @@ After receiving the "**Travel**" command, print the following message:
 
 ## Input
 
-* You will receive a list of strings
+* You will receive a string that you have to modify, and also a list with commands
 
 ## Output
 

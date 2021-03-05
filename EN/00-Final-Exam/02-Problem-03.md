@@ -22,46 +22,41 @@ function adapter(input, code) {
 [task-description]
 # Description
 
+*You are a pianist and you like to keep a list of your favorite piano pieces.* 
+*Create a program, to help you organize it and add, change, remove pieces from it!*
+
 On the first line of the input, you will receive an **integer** "**n**" - representing the number of pieces that you will initially have. 
 
 On the next "**n**" lines, you will receive the title of each piece, followed by its **composer and key**, separated by "\|" in the following format: 
-
-"\{**piece**}\|\{**composer**\}\|\{key\}"
+**
+"\{**piece**}\|\{**composer**\}\|\{**key**\}"
 
 Then, you will receive **different commands**, each on a new line, separated by "\|", until the "**Stop**" command is given: 
 
 * Command "**Add**\|\{**piece**\}\|\{**composer**\}\|\{**key**\}":
-
 You need to **add the piece and the information** about it to the other pieces. 
 
 If the piece is **already in the collection**, you should print: 
-
 "\{**piece**\} **is already in the collection!**"
 
 If the piece **is not in the collection**, you should print: 
-
 "\{**piece**\} **by** \{**composer**\} **in** \{**key**\} **added to the collection!**"
 
 * Command "**Remove**\|\{**piece**\}":
-
 If the **piece is in the collection**, you have to remove it. 
 
 Then, you have to print the following message: 
-
 "**Successfully removed** \{**piece**\}!"
 
 If the **piece is not in the collection**, you need to print: 
-
 "**Invalid operation!** \{**piece**\} **does not exist in the collection.**
 
 * Command "**ChangeKey**\|\{**piece**\}\|\{**newKey**\}":
-
 If the **piece is in the collection**, change its key to the specified one and print: 
 
 "**Changed the key of** \{**piece**\} **to** \{**newKey**}!"
 
 If the **piece is not in the collection**, print: 
-
 "**Invalid operation!** \{**piece**\} **does not exist in the collection.**"
 
 Upon receiving the "**Stop**" command, you need to print all pieces in the collection, sorted by **their name and by the name of their composer in alphabetical order**, in the following format: 
@@ -76,6 +71,7 @@ Upon receiving the "**Stop**" command, you need to print all pieces in the c
 
 - Then, you will receive multiple commands in the way described above, until you receive the command "**Stop**"
 
+**Note**: Commands that you will receive will modify the object.
 
 ## Output
 
