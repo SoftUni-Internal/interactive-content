@@ -1,17 +1,8 @@
-# Inbox Manager
-
-[slide]
-# Video
-
-[vimeo-video]
-[stream language="EN" videoId="421820584" default /]
-[stream language="RO" videoId="436043847"  /]
-[/video-vimeo]
-[/slide]
+# Problem 3: Inbox Manager
 
 [slide hideTitle]
 # Inbox Manager
-[code-task title="Inbox Manager" taskId="64e29e83-0df4-41cb-b25b-44ea07742954" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Inbox Manager" taskId="java-fundamentals-2-Exam-preparation-Inbox-Manager" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -31,21 +22,21 @@ You need to keep information about their username and their sent emails.
 
 The emails are **represented as strings**.
 
-You will be **receiving lines with commands separated by** "->" **until you receive** the "Statistics" command.
+You will be **receiving lines with commands separated by** "->" **until you receive** the "**Statistics**" command.
 
 There are **three possible commands**:
 - "Add->\{username\}" 
-    - **Check if the username exists and if it does print** - "\{username\} is already registered"
-    - If it doesn't exist, then add the user to the collection of users.
+    - **check if the username exists and if it does print** - "\{username\} is already registered"
+    - if it does not exist, then add the user to the collection of users
 - "Send->\{username\}->\{Email\}" 
-    - Add the \{Email\} to the \{username\}'s collection of sent emails.
+    - add the \{Email\} to the \{username\}'s collection of sent emails
 - "Delete->\{username\}"
-    - Delete the given user, if he exists. 
-    - If the user doesn’t exist, print "\{username\} not found!"
+    - delete the given user, if he exists
+    - if the user does not exist, print "\{username\} not found!"
 
-In the end, you have to **print the count of users**, **each user with his/her emails**. 
+In the end, you have to **print the count of users**, **each user with their emails**. 
 
-**Users** need to be **sorted in descending order** by the **count of sent еmails and then by their username in ascending order in the following format**:  
+**Users** need to be **sorted in descending order** by the **count of emails they sent and then by their username in ascending order in the following format**:  
 
 Users count: \{count\}
 
@@ -58,11 +49,14 @@ Users count: \{count\}
  - \{EmailN\}
 
 ### Input
-- You will be receiving lines until you receive the "Statistics" command.
-- The commands will be in the format described above.
+- You will be receiving lines until you receive the "**Statistics**" command
+- The commands will be in the format described above
 
 ### Output
-- Print the collection in the format described above after the "Statistics" command.
+- Print the collection in the format described above after the "**Statistics**" command
+
+### Output
+Print the collection in the format described above after receiving the "**Statistics**" command.
 
 ### Example
 | **Input** | **Output** |
@@ -76,10 +70,11 @@ Users count: \{count\}
 | Send->Mike->Another random test mail |  - Hello, do you want to meet up tomorrow? |
 | Statistics |  - Another random test mail |
 
-### Comment
-- First we receive our users.
-- Since they are not already in our collection, we add them. 
-- Then they start sending emails and in the end we print the output in the described format.
+### Comments
+- First we receive our users
+- Since they are not already in our collection, we add them
+- Then they start sending emails and in the end we print the output in the described format
+
 
 ### Example
 | **Input** | **Output** |

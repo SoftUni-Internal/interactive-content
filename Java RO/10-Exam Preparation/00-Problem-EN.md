@@ -1,20 +1,11 @@
-# Email Validator
-
-[slide]
-# Video
-
-[vimeo-video]
-[stream language="EN" videoId="421819529" default /]
-[stream language="RO" videoId="436043965"  /]
-[/video-vimeo]
-[/slide]
+# Problem 1: Password Reset
 
 [slide hideTitle]
-# Email Validator
-[code-task title="Email Validator" taskId="a6f7d9dd-7e35-43fe-b3f8-c90ee64026c7" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Password Reset
+[code-task title="Password Reset" taskId="java-fundamentals-part-2-exam-preparation-password-reset" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,210 +16,279 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that **manipulates a string** and **makes it suitable for an Email**.
 
-First, you are going to **receive the email that the user wants to use**, then you will receive **commands**.
+Write a password reset program that performs a series of commands on a predefined string. 
 
-**You will be receiving commands until the** "Complete" **command**. 
+First, you will receive a string. Until the command "**Done**", you will be receiving strings with commands split by a single space. 
 
-There are **six possible commands**:
-- "Make Upper"
-    - Replace all letters with **upper case**, then **print** the result. 
-- "Make Lower"
-    - Replace all letters with **lower case**, then **print** the result.
-- "GetDomain \{count\}"
-    - **Print** the **last** \{count\} **characters** of the Email.
-- "GetUsername"
-    - **Print** the substring from the start of the Email **until the** @ symbol.
-    - If the Email doesn't contain the @ symbol, **print**: 
-"The email \{email\} doesn't contain the @ symbol."
-- "Replace \{char\}"
-    - Replace **all occurences** of the \{char\} with a dash "-" and **print** the result.
-- "Encrypt"
-    - Get the **ASCII value of each symbol**. **Print** the result **on a single line separated by a single space**
+The commands will be the following:
 
-### Input
-- On **the 1st line** you are going to receive the **Email in the form of a string**.
-- On the next lines, **until** the "Complete" **command** is received, you will be receiving commands.
+- **TakeOdd**
+  * takes only the characters at **odd indices** and **concatenates** them together to obtain the **new raw password** and then **prints** it
+- Cut \{index\} \{length\}
+  * gets the substring with the **given length** starting from the **given index** from the password and removes its first occurrence of it, then prints the password on the console
+  * the given index and length will **always be valid**
+- Substitute \{substring\} \{substitute\}
+  * if the raw password contains the given substring, replaces all of its occurrences with the substitute text given and prints the result
+  * if it does not, prints "**Nothing to replace!**"
 
-### Output
-- Print the output of every command in the format described above.
 
-### Example
+## Input
+
+  - You will be receiving strings until the "**Done**" command is given
+
+## Output
+
+- After the "**Done**" command is received, print:
+  * "Your password is: \{password\}"
+
+## Constraints
+
+- The indexes from the "Cut \{index\} \{length\}" command will always be valid
+
+
+## Examples
+
 | **Input** | **Output** |
 | --- | --- |
-| Mike123@somemail.com | MIKE123@SOMEMAIL.COM |
-| Make Upper | COM |
-| GetDomain 3 | MIKE123 |
-| GetUsername | 77 73 75 69 49 50 51 64 83 79 77 69 77 65 73 76 46 67 79 77 |
-| Encrypt | |
-| Complete | |
+| Siiceercaroetavm\!\:\?\:ahsott\.\:i\:nstupmomceqr | icecream\:\:hot\:\:summer |
+| TakeOdd | icecream\:\:hot\:\:mer |
+| Cut 15 3 | icecream\-hot\-mer |
+| Substitute \:\: \- | Nothing to replace! |
+| Substitute \| \^ | Your password is\: icecream\-hot\-mer |
 
-### Example
+## Comments
+
+TakeOdd
+
+- " Siiceercaroetavm\!\:\?\:ahsott\.\:i\:nstupmomceqr" \-\> "icecream\:\:hot\:\:summer"
+
+
+- We only take the chars at odd indices 1, 3, 5 etc.
+
+"Cut 15  3" \-\> "icecream\:\:hot\:\:summer" \-\> sum
+
+- icecream\:\:hot\:\:mer
+
+We cut a substring starting at index 15 with a length of 3, remove it from the raw password and print it. 
+
+Then, on a new line we print the resulting new raw password.
+
+"Substitute \:\: \-" \-\> "icecream\:\:hot\:\:summer" \-\> "icream\-hot\-summer"
+
+- We replace "\:\:" with "\-"
+
+"Substitute \| \^" \-\> "Nothing to replace!" 
+
+- "|" is not found anywhere in the raw password
+
+- Finally, after receiving the "**Done**" command, we print the resulting password in the proper format
+
 | **Input** | **Output** |
 | --- | --- |
-| AnotherMail.com | anothermail.com |
-| Make Lower | The email anothermail.com doesn't contain the @ symbol. |
-| GetUsername | -notherm-il.com |
-| Replace a | |
-| Complete | |
+| up8rgoyg3r1atmlmpiunagt\!\-irs7\!1fgulnnnqy | programming\!is\!funny |
+| TakeOdd | programming\!is\!fun |
+| Cut 18 2 | programming\*\*\*is\*\*\*fun |
+| Substitute \! \*\*\* | Nothing to replace! |
+| Substitute \? \.\!\.| Your password is\: programming\*\*\*is\*\*\*fun |
+| Done | | 
+
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-Mike123@somemail.com
-Make Upper
-GetDomain 3
-GetUsername
-Encrypt
-Complete
+Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr 
+TakeOdd
+Cut 15 3
+Substitute :: -
+Substitute \| ^
+Done
 [/input]
 [output]
-MIKE123@SOMEMAIL.COM
-COM
-MIKE123
-77 73 75 69 49 50 51 64 83 79 77 69 77 65 73 76 46 67 79 77
+icecream\:\:hot\:\:summer
+icecream\:\:hot\:\:mer
+icecream-hot-mer
+Nothing to replace!
+Your password is\: icecream-hot-mer
 [/output]
 [/test]
 [test open]
 [input]
-AnotherMail.com
-Make Lower
-GetUsername
-Replace a
-Complete
-
+up8rgoyg3r1atmlmpiunagt!-irs7!1fgulnnnqy
+TakeOdd
+Cut 18 2
+Substitute ! \*\*\*
+Substitute ? .!.
+Done
 [/input]
 [output]
-anothermail.com
-The email anothermail.com doesn't contain the @ symbol.
--notherm-il.com
-[/output]
-[/test]
-[test open]
-[input]
-Another@Mail.com
-Make Lower
-GetUsername
-GetDomain 3
-Encrypt
-Complete
-[/input]
-[output]
-another@mail.com
-another
-com
-97 110 111 116 104 101 114 64 109 97 105 108 46 99 111 109
+programming!is!funny
+programming!is!fun
+programming\*\*\*is\*\*\*fun
+Nothing to replace!
+Your password is: programming\*\*\*is\*\*\*fun
 [/output]
 [/test]
 [test]
 [input]
-another@mail.com
-Make Upper
-Complete
+abcd
+TakeOdd
+Done
 [/input]
 [output]
-ANOTHER@MAIL.COM
+bd
+Your password is: bd
 [/output]
 [/test]
 [test]
 [input]
-ANOTHER@MAIL.COM
-Make Lower
-Complete
+abcdefg
+TakeOdd
+Done
 [/input]
 [output]
-another@mail.com
+bdf
+Your password is: bdf
 [/output]
 [/test]
 [test]
 [input]
-another@mail.com
-GetDomain 3
-Complete
+abcdefg
+TakeOdd
+Cut 0 2
+Done
 [/input]
 [output]
-com
+bdf
+f
+Your password is: f
 [/output]
 [/test]
 [test]
 [input]
-another@mail.com
-GetUsername
-Complete
+abcdefg
+TakeOdd
+Substitute b y
+Done
 [/input]
 [output]
-another
+bdf
+ydf
+Your password is: ydf
 [/output]
 [/test]
 [test]
 [input]
-anothermail.com
-GetUsername
-Complete
+abcdefg
+TakeOdd
+Substitute z y
+Done
 [/input]
 [output]
-The email anothermail.com doesn't contain the @ symbol.
+bdf
+Nothing to replace!
+Your password is: bdf
 [/output]
 [/test]
 [test]
 [input]
-another@mail.com
-Replace a
-Complete
+abcdefg
+Cut 0 3
+Done
 [/input]
 [output]
--nother@m-il.com
+defg
+Your password is: defg
 [/output]
 [/test]
 [test]
 [input]
-another@mail.com
-Encrypt
-Complete
+abcdefg
+Cut 0 6
+Done
 [/input]
 [output]
-97 110 111 116 104 101 114 64 109 97 105 108 46 99 111 109
+g
+Your password is: g
 [/output]
 [/test]
 [test]
 [input]
-another@mail.com
-Make Upper
-Make Lower
-Complete
+abcdefg
+Cut 3 1
+Done
 [/input]
 [output]
-ANOTHER@MAIL.COM
-another@mail.com
+abcefg
+Your password is: abcefg
 [/output]
 [/test]
 [test]
 [input]
-another@mail.com
-Replace z
-Complete
+abcdefg
+Cut 4 2
+Done
 [/input]
 [output]
-another@mail.com
+abcdg
+Your password is: abcdg
 [/output]
 [/test]
 [test]
 [input]
-another@mail.com
-Make Upper
-GetUsername
-GetDomain 3
-Encrypt
-Complete
+AABBCCDDEEFFGG
+TakeOdd
+Cut 2 3
+Substitute B A
+Done
 [/input]
 [output]
-ANOTHER@MAIL.COM
-ANOTHER
-COM
-65 78 79 84 72 69 82 64 77 65 73 76 46 67 79 77
+ABCDEFG
+ABFG
+AAFG
+Your password is: AAFG
+[/output]
+[/test]
+[test]
+[input]
+AAABBBCCCDDDEEEFFFGGG
+Cut 0 1
+Cut 0 1
+Cut 0 1
+Cut 1 1
+Cut 3 2
+Substitute G Y
+TakeOdd
+Done
+[/input]
+[output]
+AABBBCCCDDDEEEFFFGGG
+ABBBCCCDDDEEEFFFGGG
+BBBCCCDDDEEEFFFGGG
+BBCCCDDDEEEFFFGGG
+BBCDDDEEEFFFGGG
+BBCDDDEEEFFFYYY
+BDDEFFY
+Your password is: BDDEFFY
+[/output]
+[/test]
+[test]
+[input]
+AAABBBCCCDDD
+Cut 2 3
+Substitute C J
+Substitute Z M
+TakeOdd
+Done
+[/input]
+[output]
+AABCCCDDD
+AABJJJDDD
+Nothing to replace!
+AJJD
+Your password is: AJJD
 [/output]
 [/test]
 [/tests]

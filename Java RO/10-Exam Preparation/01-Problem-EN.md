@@ -1,18 +1,10 @@
-# Registration
-
-[slide]
-# Video
-
-[vimeo-video]
-[stream language="EN" videoId="421822173" default /]
-[stream language="RO" videoId="436043909"  /]
-[/video-vimeo]
-[/slide]
+# Problem 2: Registration
 
 [slide hideTitle]
 # Registration
-[code-task title="Registration" taskId="d3807cc1-117e-4698-9d49-adceb9e49978" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Registration" taskId="java-fundamentals-part-2-exam-preparation-registration" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -70,7 +62,7 @@ In the end **print the count of successful registrations**:
 ### Comment
 - We have 3 input lines to check.
 - The first one follows the rules and is valid. 
-- The second one doesn't because the password doesn’t end with a digit. 
+- The second one doesn't because the password does not end with a digit. 
 - The third one is not valid because the password is too short.
 
 ### Example
