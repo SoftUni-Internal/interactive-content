@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 # Problem: Count Chars in a String
-[code-task title="Count Chars in a String" taskId="Java-Fundamentals-Part-Two-Associative-Arrays-Count-Char-In-A-String" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Count Chars in a String" taskId="Java-Fundamentals-2-Associative-Arrays-Count-Char-In-A-String" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -202,7 +202,7 @@ b -> 1
 
 [slide hideTitle]
 # Problem: A Miner Task
-[code-task title="A Miner Task" taskId="Java-Fundamentals-Part-Two-Associative-Arrays-A-Miner-task" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="A Miner Task" taskId="Java-Fundamentals-2-Associative-Arrays-A-Miner-task" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -416,7 +416,7 @@ Platinium -> 36756
 
 [slide hideTitle]
 # Problem: Legendary Farming
-[code-task title="Legendary Farming" taskId="Java-Fundamentals-Part-Two-Associative-Arrays-Legendary-Farming" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Legendary Farming" taskId="Java-Fundamentals-2-Associative-Arrays-Legendary-Farming" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -693,7 +693,7 @@ linen: 1420
 
 [slide hideTitle]
 # Problem: Orders
-[code-task title="Orders" taskId="Java-Fundamentals-Part-Two-Associative-Arrays-Orders" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Orders" taskId="Java-Fundamentals-2-Associative-Arrays-Orders" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -937,7 +937,7 @@ IceCream -> 37.50
 
 [slide hideTitle]
 # Problem: Parking
-[code-task title="Parking" taskId="Java-Fundamentals-Part-Two-Associative-Arrays-Parking" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Parking" taskId="Java-Fundamentals-2-Associative-Arrays-Parking" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1184,7 +1184,7 @@ Acho => AD1538BC
 
 [slide hideTitle]
 # Problem: Courses
-[code-task title="Courses" taskId="Java-Fundamentals-Part-Two-Associative-Arrays-Courses" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Courses" taskId="Java-Fundamentals-2-Associative-Arrays-Courses" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1452,7 +1452,7 @@ Programming Fundamentals: 1
 
 [slide hideTitle]
 # Problem: Student Academy 
-[code-task title="Student Academy" taskId="Java-Fundamentals-Part-Two-Associative-Arrays-Student-Academy" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Student Academy" taskId="Java-Fundamentals-2-Associative-Arrays-Student-Academy" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1749,7 +1749,7 @@ Mitko -> 4.67
 
 [slide hideTitle]
 # Problem: Company Users
-[code-task title="Company Users" taskId="Java-Fundamentals-Part-Two-Associative-Arrays-Company-Users" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Company Users" taskId="Java-Fundamentals-2-Associative-Arrays-Company-Users" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -2069,7 +2069,7 @@ Subway
 
 [slide hideTitle]
 # Problem: ForceBook
-[code-task title="ForceBook" taskId="Java-Fundamentals-Part-Two-Associative-Arrays-Forcebook" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="ForceBook" taskId="Java-Fundamentals-2-Associative-Arrays-Forcebook" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -2354,7 +2354,7 @@ Side: e, Members: 2
 
 [slide hideTitle]
 # Problem: SoftUni Exam Results
-[code-task title="SoftUni Exam Results" taskId="Java-Fundamentals-Part-Two-Associative-Arrays-Softuni-Exam-Results" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="SoftUni Exam Results" taskId="Java-Fundamentals-2-Associative-Arrays-Softuni-Exam-Results" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;

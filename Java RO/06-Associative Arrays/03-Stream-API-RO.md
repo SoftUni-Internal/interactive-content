@@ -239,7 +239,7 @@ int[] numbers = Arrays.stream(scanner.nextLine()
 [slide hideTitle]
 # Problem with Solution: Word Filter
 
-[code-task title="Word Filter" taskId="Java-Fundamentals_part-Two-ASsociative-Arrays-Word-Filter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Word Filter" taskId="Java-Fundamentals-2-Associative-Arrays-lab-Word-Filter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -380,6 +380,7 @@ sell
 
 [slide hideTitle]
 # Ordonarea / Sortarea Colecțiilor
+
 There are **two** ways to sort collections:
 
 - Sortați în ordine ascendenă (Naturală)
@@ -525,7 +526,7 @@ courseGrades.entrySet()
 [slide hideTitle]
 # Problem with Solution: Largest 3 Numbers
 
-[code-task title="Largest 3 Numbers" taskId="Java-Fundamentals-Part-Two-Associative-Arrays-large-3-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Largest 3 Numbers" taskId="Java-Fundamentals-2-Associative-Arrays-lab-large-3-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;

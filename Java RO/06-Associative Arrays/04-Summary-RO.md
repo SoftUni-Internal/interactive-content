@@ -19,10 +19,10 @@ public class Main {
         Map<Key, Value> map = new HashMap<>();
     }
 }
+```
+## In următoarea lecție veți învăța:
 
-# In următoarea lecție veți învăța:
-
-- Ce este un String?
+- Ce este un String
 - Manipularea String-urilor
 - Construcția și modificarea String-urilor 
     - cum se folosește Clasa StringBuilder 

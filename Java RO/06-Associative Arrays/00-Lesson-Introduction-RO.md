@@ -8,7 +8,7 @@
 
 **1. Maps**
 
-- Ce sunt maps?
+- Ce sunt maps
 
 - Colecții de perechi Key și Value
 

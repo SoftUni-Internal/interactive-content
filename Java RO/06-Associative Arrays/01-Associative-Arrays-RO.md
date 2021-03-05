@@ -10,11 +10,14 @@ Array-urile asociative sunt colecții de perechi de parametri **Key** și **Valu
 Un obiect este folosit ca **Key** (index) pentru un alt obiect (**Value**). 
 
 Ei **can not** fi **primitive types** așa cum sunt int, double, boolean, etc. 
+
 Ei **must be specified** cu echivalentul **wrapper class**: Integer, Double, Boolean, etc. 
 
 **The type of Key and Value** pot fi **same or different**, în funcție de caz.
 
-In Java array-urile asociative se numesc **Map**. O Map **can not contain duplicate Keys**; fiecare Key poate mapa cel mult o valoare. 
+In Java array-urile asociative se numesc **Map**. 
+
+O Map **can not contain duplicate Keys**; fiecare Key poate mapa cel mult o valoare. 
 
 Dar **the values can be duplicated**. 
 
@@ -112,6 +115,7 @@ Map <Key, Value> shoppingList = new LinkedHashMap<>();
 ```java
 Map <Key, Value> phoneBook = new TreeMap<>();
 ```
+
 It is important to know that once the `Key` and the `Value` are set, the map can only accept their generic types.
 
 [/slide]
@@ -164,6 +168,7 @@ System.out.println(airplanes.get("Boeing 737"));
 ```
 
 - `clear()` - șterfeși toate items (entries) din map the map, resetați Map
+
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
 airplanes.put("Boeing 737", 130);
@@ -274,7 +279,7 @@ for (Map.Entry<String, Double> entry : fruitsPrice.entrySet()) {
 [slide hideTitle]
 # Problem with Solution: Count Real Numbers
 
-[code-task title="Count Real Numbers" taskId="Java-Fundamentals-part-Two-Associative-arrays-Count-real-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Count Real Numbers" taskId="Java-Fundamentals-2-Associative-arrays-lab-Count-real-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -406,7 +411,7 @@ Citiți o **list of real numbers** și imprimați-le în ordine **ascending orde
 [slide hideTitle]
 # Problem with Solution: Word Synonyms
 
-[code-task title="Word Synonyms" taskId="Java-Fundamentals-Part-Two-Associative-Arrays-Words-Synonyms" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Word Synonyms" taskId="Java-Fundamentals-2-Associative-Arrays-lab-Words-Synonyms" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -624,7 +629,7 @@ customer - client, purchaser
 
 [slide hideTitle]
 # Problem with Solution: Odd Occurrences
-[code-task title="Odd Occurrences" taskId="Odd-Occurences" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Odd Occurrences" taskId="Java-Fundamentals-2-Associative-Arrays-lab-Odd-Occurrences" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
