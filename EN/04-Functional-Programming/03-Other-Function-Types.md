@@ -4,6 +4,8 @@
 
 # Special Functions
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/EN/interactive-java-advanced-functional-programming-16-17-18-19-other-function-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## Consumer\<T\> 
 
 In Java `Consumer<T>` is a **functional interface** which accepts a single argument and returns nothing.
@@ -74,6 +76,9 @@ System.out.println(isEven.test(6)); // true
 
 [slide hideTitle]
 # Problem with Solution: Count Uppercase Words
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/EN/interactive-java-advanced-functional-programming-20-Problem-Count-Uppercase-Words-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Count Uppercase Words" taskId="oop-basics-java-functional-programming-lab-Count-Uppercase-Words" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -216,6 +221,9 @@ Ipsum
 
 [slide hideTitle]
 # Problem with Solution: Add VAT
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/EN/interactive-java-advanced-functional-programming-22-Problem-Add-VAT-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Add VAT" taskId="oop-basics-java-functional-programming-lab-Add-VAT" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

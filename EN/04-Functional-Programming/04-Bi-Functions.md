@@ -4,6 +4,8 @@
 
 # BiFunctions
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/EN/interactive-java-advanced-functional-programming-24-25-BiFunctions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The `BiFunction <T,U,R>` interface is a part of **java.util.function** package.
 
 ## Type parameters:
@@ -31,6 +33,9 @@ Analogically we can use:
 
 [slide hideTitle]
 # Problem with Solution: Sum Numbers
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/EN/interactive-java-advanced-functional-programming-26-Problem-Sum-Numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Sum Numbers" taskId="oop-basics-java-functional-programming-lab-Sum-Numbers-BiFunction" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -152,6 +157,8 @@ Sum = 10
 
 # Passing Functions to Methods
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/EN/interactive-java-advanced-functional-programming-28-Passing-Functions-to-Methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 We can **pass** `Function<T,R>` to methods:
 
 ``` java
@@ -175,6 +182,9 @@ int d = operation(b, number -> number % 2); // b = 0;
 
 [slide hideTitle]
 # Problem with Solution: Filter by Age
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/EN/interactive-java-advanced-functional-programming-29-Problem-Filter-by-Age-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Filter by Age" taskId="oop-basics-java-functional-programming-lab-Filter-by-Age" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

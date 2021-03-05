@@ -89,6 +89,8 @@ All these languages combine multiple concepts and paradigms for structuring the 
 
 # Java Functions
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/EN/interactive-java-advanced-functional-programming-11-12-Java-Functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 In Java, we can create functions in a similar fashion to writing mathematical functions.
 
 ## `ƒ(x) = x²`
@@ -108,6 +110,8 @@ In this example, we have all needed **components** for a Java Function:
 [slide hideTitle]
 
 # Function Interface
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/EN/interactive-java-advanced-functional-programming-13-Function-T-R-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In Java `Function<T,R>` is a transformational **interface** that represents an operation intended to take in an argument and return an appropriate result.
 
@@ -133,6 +137,9 @@ int b = increment.apply(a);
 
 [slide hideTitle]
 # Problem with Solution: Sum Numbers
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/EN/interactive-java-advanced-functional-programming-14-Problem-Sum-Numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Sum Numbers" taskId="oop-basics-java-functional-programming-lab-Sum-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
