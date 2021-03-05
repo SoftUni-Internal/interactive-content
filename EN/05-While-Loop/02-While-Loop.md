@@ -1,7 +1,7 @@
 // sectionId: "Javascript::Programming-Basics::While-Loop::While-Loop"
 
 [slide hideTitle]
-# While Loop
+# While-Loop
 
 [video src="https://videos.softuni.org/hls/javascript-basics/05.While-Loop/05.PB-JavaScript-While-Loop-8-9-10-While-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -13,7 +13,7 @@ When **the condition** is **wrong**, the **while-loop** is **interrupted**, the 
 
 [image assetsSrc="05-use-case-while.png" /]
 
-The **while-loop88 looks like this:
+The **while-loop** looks like this:
 ```js
 while (condition) {
   loop body;
