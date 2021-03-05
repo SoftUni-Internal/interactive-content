@@ -4,8 +4,6 @@
 
 # Generic Methods
 
-TODO: Add a video or remove this section.
-
 Generic methods are those methods that are written with a **single method declaration** and can be called with **arguments of different types**. 
 
 The **compiler will ensure the correctness** of whichever type is used. 

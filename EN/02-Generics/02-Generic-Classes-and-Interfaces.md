@@ -4,6 +4,8 @@
 
 # Generic Classes
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/EN/interactive-java-advanced-generics-7-Generic-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 We can define our **classes** as a **generic type**.
 
 A generic type is a class or interface that is parameterized over types.
@@ -55,6 +57,8 @@ public class Container<K, V> {
 
 # Type Parameter Scope
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/EN/interactive-java-advanced-generics-8-Type-Parameter-Scope-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The type parameter can be used **anywhere inside the declaring class**.
 
 **Example:**
@@ -79,6 +83,9 @@ It is also used to describe the **return value** of `remove()`.
 
 [slide hideTitle]
 # Problem with Solution: Jar of T
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/EN/interactive-java-advanced-generics-9-Problem-and-Solution-Jar-of-T-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Jar of T" timeLimit=5000 taskId="oop-basics-java-generics-lab-Jar-of-T" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
 [code-upload allowedMemory="30" /]
 
@@ -285,6 +292,8 @@ Test Passed!
 [slide hideTitle]
 # Subclassing Generic Classes
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/EN/interactive-java-advanced-generics-11-Subclassing-Generic-Classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Generic classes can be **extended** to concrete classes.
 
 **Example:**
@@ -303,6 +312,8 @@ jar.add(new Vegetable()); // Error
 
 [slide hideTitle]
 # Generic Interfaces
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/EN/interactive-java-advanced-generics-12-Generic-Interfaces-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A **generic Java interface** is an interface which can be **typed** - meaning it can be specialized to work with a specific type (e.g. interface or class) when used.
 
@@ -329,6 +340,8 @@ So, if we try to use another class which is **not a subclass of Number**, the co
 [slide hideTitle]
 
 # Problem with Solution: Generic Array Creator
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/EN/interactive-java-advanced-generics-13-Problem-and-Solution-Generic-Array-Creator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Generic Array Creator" timeLimit=5000 taskId="oop-basics-java-generics-lab-Generic-Array-Creator" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput] 
 [code-upload allowedMemory="30" /]
