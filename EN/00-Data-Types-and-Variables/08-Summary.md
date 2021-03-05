@@ -47,11 +47,11 @@
   - Boolean can have only two possible values - **true** or **false**
 
 ## In the next lesson, you will learn:
-  - Arrays
-  - Reading Arrays from the console
+- Arrays
+- Reading Arrays from the console
     - `For Loop` and `String.split()`
-  - Printing Arrays to the console
-  - The Foreach Loop
+- Printing Arrays to the console
+- The Foreach Loop
 [/slide]
 
 

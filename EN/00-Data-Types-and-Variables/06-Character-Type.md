@@ -33,6 +33,7 @@ System.out.printf("The code of '%c' is: %d%n", ch, (int) ch);
 ch = 'A';
 System.out.printf("The code of '%c' is: %d%n", ch, (int) ch);
 ```
+
 In the example above, we convert each character to its **ASCII** representation. 
 
 The **ASCII** is an acronym for the **American Standard Code for Information Interchange**.
@@ -68,7 +69,7 @@ The Unicode table is separated into different parts and almost all living langua
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-41-problem-and-solution-reversed-chars-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Reversed Chars" taskId="java-fund-data-types-lab-reversed-chars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Reversed Chars" taskId="java-fund-1-data-types-lab-reversed-chars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

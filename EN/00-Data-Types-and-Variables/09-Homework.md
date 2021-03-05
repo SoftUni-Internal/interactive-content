@@ -4,7 +4,7 @@
 
 # Problem: Integer Operations
 
-[code-task title="Integer Operations" taskId="java-fund-Data-Types-Exercise-Integer-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Integer Operations" taskId="java-fund-1-data-types-and-variables-Integer-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -96,7 +96,7 @@ Read **four integer numbers**.
 
 [slide hideTitle]
 # Problem: Sum Digits
-[code-task title="Sum Digits" taskId="java-fund-05-data-types-exercise-Sum-Digits" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sum Digits" taskId="java-fund-1-data-types-and-variables-Sum-Digit" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -167,7 +167,7 @@ Your task is to find the **sum of its digits**.
 [slide hideTitle]
 # Problem: Elevator
 
-[code-task title="Elevator" taskId="java-fund-05-data-types-exercise-Elevator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Elevator" taskId="java-fund-1-data-types-and-variables-Elevator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -186,8 +186,8 @@ public class Main {
 Calculate how many times an elevator will need to go up to take **n persons** to the top.
 
 The **input** will consist of **two lines**: 
-- the number of people **n**
-- the capacity **p** of the elevator
+- The number of people **n**
+- The capacity **p** of the elevator
 
 ### Example
 | **Input** | **Output** | **Comments**
@@ -249,7 +249,7 @@ The **input** will consist of **two lines**:
 
 [slide hideTitle]
 # Problem: Sum of Chars
-[code-task title="Sum of Chars" taskId="java-fund-05-data-types-exercise-Sum-of-Chars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sum of Chars" taskId="java-fund-1-data-types-and-variables-Sum-of-Chars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -269,12 +269,12 @@ Write a program, which **sums the ASCII codes of n characters**.
 **Print the sum** to the console.
 
 ### Input
--	On the first line, you will receive **n** – the number of lines
--	On the next **n lines** – you will receive letters from the Latin alphabet
+- On the first line, you will receive **n** - the number of lines
+- On the next **n lines** - you will receive letters from the Latin alphabet
 
 ### Output
 Print the total sum in the following format:
--   "**The sum equals:** \{**totalSum**\}"
+- "**The sum equals:** \{**totalSum**\}"
 
 ### Example
 | **Input** | **Output** |
@@ -375,7 +375,7 @@ The sum equals: 1940
 
 [slide hideTitle]
 # Problem: Print Part of the ASCII Table
-[code-task title="Print Part of the ASCII Table" taskId="java-fund-05-data-types-exercise-Print-Part-of-the-ASCII-Table" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Print Part of the ASCII Table" taskId="java-fund-1-data-types-and-variables-Print-Part-of-the-ASCII-Table" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -444,7 +444,7 @@ a b c d e f g h
 
 [slide hideTitle]
 # Problem: Triples of Latin Letters
-[code-task title="Triples of Latin Letters" taskId="java-fund-05-data-types-exercise-Triples-of-Latin-Letters" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Triples of Latin Letters" taskId="java-fund-1-data-types-and-variables-Triples-of-Latin-Letters" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -833,7 +833,7 @@ fff
 [slide hideTitle]
 # Problem: Water Overflow
 
-[code-task title="Water Overflow" taskId="java-fund-05-data-types-exercise-water-overflow" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Water Overflow" taskId="java-fund-1-data-types-and-variables-Water-Overflow" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -853,7 +853,7 @@ On the **first** line, you will receive **n**.
 
 On the next **n lines**, you will **receive liters** of water, which you have to **pour in your tank**. 
 
-If the **capacity is not enough**, print "Insufficient capacity!" and **continue reading** the next line. 
+If the **capacity is not enough**, print "**Insufficient capacity!**" and **continue reading** the next line. 
 
 On the **last** line, **print the liters** in the tank.
 
@@ -947,7 +947,7 @@ Insufficient capacity!
 [slide hideTitle]
 # Problem: Beer Kegs
 
-[code-task title="Beer Kegs" taskId="java-fund-05-data-types-exercise-beer-kegs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Beer Kegs" taskId="java-fund-1-data-types-and-variables-Beer-Kegs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -971,7 +971,7 @@ Each **three lines** will hold information for a **single keg**.
 
 Calculate the **volume** using the following formula:
 
-π * r^2 * h. 
+`π * r^2 * h`
 
 At the end, **print the model of the biggest keg**.
 
@@ -1066,7 +1066,7 @@ Keg 4
 
 [slide hideTitle]
 # Problem: Spice Must Flow
-[code-task title="Spice Must Flow" taskId="java-fund-05-data-types-exercise-spice-must-flow" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Spice Must Flow" taskId="java-fund-1-data-types-and-variables-Spice-Must-Flow" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1086,7 +1086,7 @@ The source has a **starting** yield, which indicates how much spice can be mined
 
 After it has been mined for a day, the yield drops by 10, meaning on the **second day it’ll produce 10 less spice** than on the first, on the **third day 10 less than on the second**, and **so on** (see examples). 
 
-A source is considered **profitable only while its yield is at least 100** – when less than 100 spice is expected in a day, abandon the source.
+A source is considered **profitable only while its yield is at least 100** - when less than 100 spice is expected in a day, abandon the source.
 
 The mining **crew consumes 26 spice every day** at the **end of their shift and an additional 26** after the mine has been exhausted. 
 
@@ -1108,11 +1108,18 @@ Print on **two separate lines** how many **days the mine has operated** and the 
 | | 134 |
 
 **Comments** 
-- Day 1 we extract 111 spice and at the end of the shift, the workers consume 26, leaving 85. The yield drops by 10 to 101
 
-- Day 2 we extract 101 spice, the workers consume 26, leaving 75. The total is 160 and the yield has dropped to 91
+- Day 1 we extract 111 spice and at the end of the shift, the workers consume 26, leaving 85. 
 
-- Since the expected yield is less than 100, we abandon the source. The workers take another 26, leaving 134. The mine has operated 2 days
+The yield drops by 10 to 101
+
+- Day 2 we extract 101 spice, the workers consume 26, leaving 75. 
+
+The total is 160 and the yield has dropped to 91
+
+- Since the expected yield is less than 100, we abandon the source. The workers take another 26, leaving 134. 
+
+The mine has operated 2 days
 
 [/task-description]
 [code-io /]
@@ -1159,7 +1166,7 @@ Print on **two separate lines** how many **days the mine has operated** and the 
 
 [slide hideTitle]
 # Problem: Poke Mon
-[code-task title="Poke Mon" taskId="java-fund-05-data-types-exercise-poke-mon" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Poke Mon" taskId="java-fund-1-data-types-and-variables-Poke-Mon" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1181,17 +1188,17 @@ The Poke Mon pokes his target, and then proceeds to poke another target.
 
 The **distance between his targets reduces his poke power**.
 
-You will be given the **poke power** the Poke Mon has, **N** – an integer.
+You will be given the **poke power** the Poke Mon has, **N** - an integer.
 
-Then you will be given the **distance between the poke targets**, **M** – an integer.
+Then you will be given the **distance between the poke targets**, **M** - an integer.
 
-Then you will be given the **exhaustionFactor Y** – an integer.
+Then you will be given the **exhaustionFactor Y** - an integer.
 
 Your task is to start **subtracting M from N until N becomes less than M**, i.e. the Poke Mon does not have enough power to reach the next target. 
 
-**Every time you subtract M from N that means you’ve reached a target** and poked it successfully. 
+**Every time you subtract M from N that means you have reached a target** and poked it successfully. 
 
-**Count** how many targets you’ve poked – you’ll need that count.
+**Count** how many targets you have poked - you will need that count.
 
 The Poke Mon becomes gradually **more exhausted**. 
 
@@ -1205,20 +1212,20 @@ Instead, you should continue subtracting.
 
 After dividing, you should **continue subtracting** from N, until it becomes less than M.
 
-When N becomes less than M, you must take what has remained of N and the count of targets you've poked, and print them as output.
+When N becomes less than M, you must take what has remained of N and the count of targets you have poked, and print them as output.
 
 **NOTE:** When you are calculating percentages, you should do it with maximum precision.
 
 Note: 505 is not exactly 50% of 1000, it is 50.5%.
 
 ### Input/ Constraints
--	On the first line you will receive **N** – an integer
--	On the second line you will receive **M** – an integer
--	On the third line you will receive **Y** – an integer
+- On the first line you will receive **N** - an integer
+- On the second line you will receive **M** - an integer
+- On the third line you will receive **Y** - an integer
 
 ### Output
--	On the first line print **what has remained of N**, after subtracting from it
--	On the second line print the **count of targets**, you’ve managed to poke
+- On the first line print **what has remained of N**, after subtracting from it
+- On the second line print the **count of targets**, you’ve managed to poke
 
 ### Example
 | **Input** | **Output** |
@@ -1230,8 +1237,8 @@ Note: 505 is not exactly 50% of 1000, it is 50.5%.
 **Comments**
 - N = 5, M = 2, Y = 3
 - We start subtracting M from N
-- N – M = 3. 1 target poked
-- N – M = 1. 2 targets poked
+- N - M = 3. 1 target poked
+- N - M = 1. 2 targets poked
 - N < M
 - We print what has remained of N, which is 1
 - We print the count of targets, which is 2
@@ -1290,7 +1297,7 @@ Note: 505 is not exactly 50% of 1000, it is 50.5%.
 [slide hideTitle]
 # Problem: Snowballs
 
-[code-task title="Snowballs" taskId="java-fund-05-data-types-exercise-snowballs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Snowballs" taskId="java-fund-1-data-types-and-variables-Snowballs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1308,12 +1315,15 @@ Tony and Andi love playing in the snow and having snowball fights, but they alwa
 
 They have decided to involve you in their fray, by making you write a program which **calculates snowball data**, and outputs the best snowball value.
 
-You will receive **N** – an integer, the **number of snowballs being made** by Tony and Andi.
+You will receive **N** - an integer, the **number of snowballs being made** by Tony and Andi.
 
 For each snowball you will receive 3 input lines:
--	On the first line you will get the **snowballSnow** – an integer
--	On the second line you will get the **snowballTime** – an integer
--	On the third line you will get the **snowballQuality** – an integer
+
+- On the first line you will get the **snowballSnow** - an integer
+
+- On the second line you will get the **snowballTime** - an integer
+
+- On the third line you will get the **snowballQuality** - an integer
 
 For each snowball you must calculate its snowballValue by the following formula:
 **(snowballSnow / snowballTime) ^ snowballQuality**
@@ -1322,12 +1332,17 @@ At the end you must **print the highest calculated** snowballValue.
 
 
 ### Input/ Constraints
--	On the first input line you will receive N – the number of snowballs
--	On the next N * 3 input lines you will be receiving data about snowballs
+
+- On the first input line you will receive N - the number of snowballs
+
+- On the next N \* 3 input lines you will be receiving data about snowballs
 
 ### Output
--	As output you must print the **highest calculated snowballValue**, by the formula, specified above
+
+- As output you must print the **highest calculated snowballValue**, by the formula, specified above
+
 - The output format is: 
+
 "\{**snowballSnow**\} : \{**snowballTime**\} = \{**snowballValue**\} (\{**snowballQuality**\})"
 
 ### Example
@@ -1404,116 +1419,5 @@ At the end you must **print the highest calculated** snowballValue.
 [/output]
 [/test]
 [/tests]
-[/code-task]
-[/slide]
-
-[slide hideTitle]
-
-# Testing Function Adapter JS
-
-[code-task title="Building" taskId="pb-js-testing-function" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function intFloat(n1,n2,n3){
-    let sumNums = n1+n2+n3;
-    let type;
-    if (sumNums % 1 === 0){
-        type = "Integer";
-    }else {
-        type = "Float";
-    }
-
-    console.log(`${sumNums} - ${type}`);
-}
-```
-[/code-editor]
-[code-adapter]
-```
-function adapter(input, code) {
-    let inputParams = /\((.+)\)$/.exec(input)[1];
-    inputParams = eval(`[${inputParams}]`);
-    return code(...inputParams);
-}
-```
-[/code-adapter]
-[task-description]
-# Description
-
-Test Adapter Function Here with this code **input**:
-
-solve(9, 100, 1.1)
-
-**Output** must be: 
-
-110.1 - Float
-
-[/task-description]
-[tests]
-[test open]
-[input]
-solve(9, 100, 1.1)
-[/input]
-[output]
-110.1 - Float
-[/output]
-[/test]
-[test open]
-[input]
-solve(100, 200, 303)
-[/input]
-[output]
-603 - Integer
-[/output]
-[/test]
-[test]
-[input]
-solve(9, 14156, 1231.41)
-[/input]
-[output]
-15396.41 - Float
-[/output]
-[/test]
-[test]
-[input]
-solve(456, 120, 145.41)
-[/input]
-[output]
-721.41 - Float
-[/output]
-[/test]
-[test]
-[input]
-solve(912, 54610, 451.11)
-[/input]
-[output]
-55973.11 - Float
-[/output]
-[/test]
-[test]
-[input]
-solve(56, 2120, 3203)
-[/input]
-[output]
-5379 - Integer
-[/output]
-[/test]
-[test]
-[input]
-solve(170, 2098, 483)
-[/input]
-[output]
-2751 - Integer
-[/output]
-[/test]
-[test]
-[input]
-solve(10990, 78, 483)
-[/input]
-[output]
-11551 - Integer
-[/output]
-[/test]
-[/tests]
-[code-io/]
 [/code-task]
 [/slide]

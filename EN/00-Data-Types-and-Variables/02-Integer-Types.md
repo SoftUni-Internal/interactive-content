@@ -72,7 +72,9 @@ System.out.println(myNum);
 [slide hideTitle]
 # Integer Overflow
 
-All integers have a range - a minimum and maximum value. This means that integers can overflow, resulting in incorrect values. 
+All integers have a range - a minimum and maximum value. 
+
+This means that integers can overflow, resulting in incorrect values. 
 
 Take a look at the below example.
 
@@ -130,7 +132,7 @@ System.out.println("long: ", number);
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-17-problem-and-solution-convert-meters-to-kilometers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Problem: Convert Meters to Kilometers" taskId="java-fund-data-types-lab-convert-meters-to-kilometers-problem" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Convert Meters to Kilometers" taskId="java-fund-1-data-types-lab-convert-meters-to-kilometers-problem" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

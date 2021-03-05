@@ -17,7 +17,9 @@ For example, assigning an **int** value to a **long** variable.
 
 In Java, there are two types of casting:
 
-- **Widening conversion** \(automatic\) - converting a smaller type to a larger type size. This is also known as **implicit conversion**
+- **Widening conversion** \(automatic\) - converting a smaller type to a larger type size
+
+This is also known as **implicit conversion**
 
 ```java live
 int myInt = 9;
@@ -57,7 +59,7 @@ This is why this type of conversion does not happen automatically.
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-33-problem-and-solution-centuries-to-minutes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Centuries to Minutes" taskId="java-fund-data-types-lab-centuries-to-minutes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Centuries to Minutes" taskId="java-fund-1-data-types-lab-centuries-to-minutes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 ```
@@ -83,8 +85,8 @@ The input will be of type **int**.
 
 | **Input** | **Output** |
 | --- | --- |
-| 1         | 1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes    |
-| 5         | 5 centuries = 500 years = 182621 days = 4382904 hours = 262974240 minutes |
+| 1 | 1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes    |
+| 5 | 5 centuries = 500 years = 182621 days = 4382904 hours = 262974240 minutes |
 
 [/task-description]
 [code-io /]
@@ -156,7 +158,7 @@ The input will be of type **int**.
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-problem-and-solution-chars-to-string-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-[code-task title="Chars to String" taskId="java-fund-data-types-lab-chars-to-string" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Chars to String" taskId="java-fund-1-data-types-lab-chars-to-string" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 ```
@@ -184,16 +186,16 @@ Combine all the characters into one string and print it on the console.
 
 | **Input** | **Output** |
 | --- | --- |
-| a         | abc        |
-| b         |            |
-| c         |            |
+| a | abc |
+| b |     |
+| c |     |
 
 
 | **Input** | **Output** |
 | --- | --- |
-| %         | %2o        |
-| 2         |            |
-| o         |            |
+| % | %2o |
+| 2 |     |
+| o |     |
 
 [/task-description]
 [code-io /]
@@ -288,8 +290,7 @@ b
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-problem-and-solution-lower-or-upper-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-
-[code-task title="Lower or Upper" taskId="java-fund-data-types-lab-lower-or-upper" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Lower or Upper" taskId="java-fund-1-data-types-lab-lower-or-upper" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -309,13 +310,7 @@ Write a program that prints whether a given character is written in upper or low
 | **Input** | **Output** |
 | --- | --- |
 | L | upper-case |
-|  |  |
-
-| **Input** | **Output** |
-| --- | --- |
 | f | lower-case |
-|  |  |
-
 
 [/task-description]
 [code-io /]

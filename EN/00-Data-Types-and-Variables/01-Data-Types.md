@@ -74,14 +74,20 @@ Data types specify the different sizes and values that can be stored in the vari
 There are **two types of data types** in Java:
 
 **Primitive data types**
+
 -	Built-into the programming language
+
 -	The size and type of the variable values are specified, and they cannot be modified
+
 - Some examples include boolean, char, int, long, float, and double
 
 
 **Non-primitive data types**
+
 -	Not defined by the programming language but by the programmer
+
 -	Called reference variables since they hold the address in the computer memory (RAM) where the data is stored
+
 -	Some examples include String, Arrays, and Classes
 
 [/slide]
@@ -118,15 +124,15 @@ In computer programming, a naming convention is a set of **rules** for choosing 
 
 Naming conventions make programs more understandable by making them easier to read. 
 
-In Java, the convention for naming variables is used ***"camel-case"***.
+In Java, the convention for naming variables is used "**camelCase**".
 
-**Camel case** is the practice of writing phrases:
+"**camelCase**" is the practice of writing phrases:
 
-- each word or abbreviation in the middle of the phrase begins with a capital letter
+- Each word or abbreviation in the middle of the phrase begins with a capital letter
 
-- no spaces
+- No spaces
 
-- punctuation
+- Punctuation
 
 ```Java
 String firstName = John; //correct

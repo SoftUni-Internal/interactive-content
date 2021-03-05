@@ -36,6 +36,4 @@
 
 - An overview of of the "String" data type
 
-**6. Live Exercises**
-
 [/slide]

@@ -67,7 +67,7 @@ System.out.println("Double PI is: " + doublePI);
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-22-problem-and-solution-pounds-to-dollars-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Problem: Pounds to Dollars" taskId="java-fund-data-types-lab-pounds-to-dollars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Pounds to Dollars" taskId="java-fund-1-data-types-lab-pounds-to-dollars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -81,7 +81,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that converts British pounds to US dollars. The result should be formatted to 2 decimal places.
+Write a program that converts British pounds to US dollars. 
+
+The result should be formatted to 2 decimal places.
 
 Assume that **1 British Pound = 1.31 Dollars**.
 
@@ -89,12 +91,8 @@ Assume that **1 British Pound = 1.31 Dollars**.
 | **Input** | **Output** |
 | --- | --- |
 | 80 | 104.800 |
-|  |  |
-
-| **Input** | **Output** |
-| --- | --- |
 | 39 | 51.090 |
-|  |  |
+
 
 [/task-description]
 [code-io /]
@@ -273,7 +271,7 @@ System.out.println(bigDecimal1);
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-27-problem-and-solution-exact-sum-of-real-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Problem: Exact Sum of Real Numbers" taskId="java-fund-data-types-lab-exact-sum-of-real-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Exact Sum of Real Numbers" taskId="java-fund-1-data-types-lab-exact-sum-of-real-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
