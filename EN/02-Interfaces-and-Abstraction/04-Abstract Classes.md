@@ -131,8 +131,8 @@ You will receive an **unknown** amount of lines from the console.
 
 Until the command "**End**" is received, on each line there will be the information for either **a citizen** or **a robot** who tries to enter your city in the format:
 
-- "**\{name\} \{age\} \{id\}**" for citizens 
-- "**\{model\} \{id\}**" for robots
+- "\{**name**\} \{**age**\} \{**id**\}" for citizens 
+- "\{**model**\} \{**id**\}" for robots
 
 After the "**End**" command, on the next line you will receive a single number representing **the last digits of fake ids**.
 
