@@ -30,7 +30,7 @@ In programming on many occasions, we need to execute a block of commands multipl
 
 To do that, the so-called loops are used.
 
-Let us see an example of a `for loop` that passes sequentially through the numbers from 1 to 10 and prints them to the console.
+Let us see an example of a **for loop** that passes sequentially through the numbers from 1 to 10 and prints them to the console.
 
 ```js live
 for (let i = 1; i <= 10; i += 1) {
@@ -50,7 +50,7 @@ Upon declaring the loop, you can specify a **start value** and an **end value.**
 
 The body of the loop is usually enclosed in curly braces `{ }` and represents a block of one or multiple commands.
 
-The code block below shows the structure of a `for loop`:
+The code block below shows the structure of a **for loop**:
 
 ```js
 for (initialization; condition; update) {
@@ -68,7 +68,7 @@ It consists of:
 
 - Body of the loop.
 
-In most cases, a `for loop` is run between `1` and `n` times (for example from 1 to 10).
+In most cases, a **for loop** is run between `1` and `n` times (for example from 1 to 10).
 
 The purpose of the loop is to pass sequentially through the numbers 1, 2, 3, …, n and for each of them to perform a particular action.
 
