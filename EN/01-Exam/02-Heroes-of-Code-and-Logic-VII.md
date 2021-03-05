@@ -15,90 +15,90 @@ public class Main {
 [task-description]
 ## Description
 
-On the first line of the standard input, you will receive an integer `n` – the number of heroes that you can choose for your party.
+On the first line of the standard input, you will receive an integer "**n**" - the number of heroes that you can choose for your party.
 
-On the next `n` lines, the heroes will follow with their **hit points** and **mana points** separated by empty space in the following format:
+On the next "**n**" lines, the heroes will follow with their **hit points** and **mana points** separated by empty space in the following format:
 
-`{hero name} {HP} {MP}`
+"\{**hero name**\} \{**HP**\} \{**MP**\}"
 
 **HP** stands for hit points and **MP** for mana points. A hero can have a **maximum** of **100 HP** and **200 MP**.
 
 After you have successfully picked your heroes, you can start playing the game.
 
-You will be receiving different commands, each on a new line, separated by ` – ` (space dash space), until the `End` command is given.
+You will be receiving different commands, each on a new line, separated by " - " (space dash space), until the "**End**" command is given.
 
 There are several actions that can be performed by the heroes:
 
-- `CastSpell – {hero name} – {MP needed} – {spell name}`:
+- "**CastSpell -** \{**hero name**\} - \{**MP needed**\} – \{**spell name**\}":
 
 If the hero has the required MP, they cast the spell which reduces their MP. Print the following message: 
 
-`{hero name} has successfully cast {spell name} and now has {mana points left} MP!`
+"\{**hero name**\} **has successfully cast** \{**spell name**\} **and now has** \{**mana points left**\} **MP!**"
 
 If the hero is unable to cast the spell, print:
 
-`{hero name} does not have enough MP to cast {spell name}!`
+"\{**hero name**\} **does not have enough MP to cast** \{**spell name**\}!"
 
-- `TakeDamage – {hero name} – {damage} – {attacker}`:
+- "**TakeDamage -** \{**hero name**\} - \{**damage**\} \- \{**attacker**\}":
 
 Reduce the hero HP by the given damage amount.
 
 If the hero is still alive (their HP is greater than 0) print:
 
-`{hero name} was hit for {damage} HP by {attacker} and now has {current HP} HP left!`
+"\{**hero name**\} **was hit for** \{**damage**\} **HP by** \{**attacker**\} **and now has** \{**current HP**\} **HP left!**"
 
 If the hero has died, remove them from your party and print:
 
-`{hero name} has been killed by {attacker}!`
+"\{**hero name**\} **has been killed by** \{**attacker**\}!"
 
-- `Recharge – {hero name} – {amount}`:
+- "**Recharge -** \{**hero name**\} - \{**amount**\}":
 
 The hero increases their MP.
 
-If a command is given that would bring the MP of the hero above `200`, MP is increased so that it reaches the maximum.
+If a command is given that would bring the MP of the hero above "**200**", MP is increased so that it reaches the maximum.
 
 Print the following message:
 
-`{hero name} recharged for {amount recovered} MP!`
+"\{**hero name**\} **recharged for** \{**amount recovered**\} **MP!**"
 
-- `Heal – {hero name} – {amount}`:
+- "**Heal -** \{**hero name**\} - \{**amount**\}":
 
 The hero increases his HP.
 
-If a command is given that would bring the HP of the hero above `100`, HP is increased so that it reaches the maximum.
+If a command is given that would bring the HP of the hero above "**100**", HP is increased so that it reaches the maximum.
 
 Print the following message:
 
-- `{hero name} healed for {amount recovered} HP!`
+- "\{**hero name**\} **healed for** \{**amount recovered**\} **HP!**"
 
 ### Input
 
-- On the first line of the standard input, you will receive an integer `n`
+- On the first line of the standard input, you will receive an integer "**n**"
 
 - On the next `n` lines, the heroes themselves will follow with their **hit points** and **mana points** separated by empty space in the following format
 
-- You will be receiving different **commands**, each on a new line, separated by ` – ` (space dash space ), until the `End` command is given
+- You will be receiving different **commands**, each on a new line, separated by " - " (space dash space ), until the "**End**" command is given
 
 ### Output
 
 - Print all members of your party who are **still alive**, sorted by their **HP in descending order**, then by their **name in ascending order**, in the following format (their HP/MP need to be indented 2 spaces):
 
-`{hero name}`
-
-`HP: {current HP}`
-
-`MP: {current MP}`
-
-`...`
+"\{**hero name**\}
+**HP:** \{**current HP**\}
+**MP:** \{**current MP**\}
+..."
 
 ### Constraints
 
-- The starting HP\/MP of the heroes will be valid, 32-bit integers, will never be negative, or exceed the respective limits.
+- The starting HP\/MP of the heroes will be valid, 32-bit integers, will never be negative, or exceed the respective limits
 
-- The HP\/MP amounts in the commands will never be negative.
+- The HP\/MP amounts in the commands will never be negative
 
-- The hero names in the commands will always be valid members of your party. No need to check that explicitly
+- The hero names in the commands will always be valid members of your party
 
+No need to check that explicitly
+
+## Example One
 | **Input** | **Output** |
 | --- | --- |
 | 4 | SirMullich healed for 30 HP! |
@@ -116,20 +116,20 @@ Print the following message:
 
 ### Comments
 
-`Heal` – SirMullich healed for 30 HP due to the HP max limit.
+"**Heal**" - SirMullich healed for 30 HP due to the HP max limit.
 
-`Recharge` – Adela recharged for 50 MP due to the MP max limit.
+"**Recharge**" - Adela recharged for 50 MP due to the MP max limit.
 
-`CastSpell` – Tyris does not have enough MP to cast the spell.
+"**CastSpell**" - Tyris does not have enough MP to cast the spell.
 
-`TakeDamage` – Tyris`s HP is reduced by 99, thus becoming -5, which means that he is dead.
+"**TakeDamage**" - Tyris's HP is reduced by 99, thus becoming -5, which means that he is dead.
 
-`TakeDamage` – Ivor`s HP is now -2, so he is dead too.
+"**TakeDamage**" - Ivor's HP is now -2, so he is dead too.
 
-After the `End` command we print the remaining living heroes, sorted by their HP in decending order.
+After the "**End**" command we print the remaining living heroes, sorted by their HP in decending order.
 
 
-## Examples
+## Example Two
 | **Input** | **Output** |
 | --- | --- |
 | 2 | Solmyr healed for 10 HP! |

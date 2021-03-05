@@ -1,3 +1,4 @@
+# Problem 2: Fancy Barcodes
 [slide hideTitle]
 # Fancy Barcodes
 [code-task title="Fancy Barcodes" taskId="Java-Fundamentals-Part-Two-Exam-Fancy-Barcodes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -17,11 +18,13 @@ public class Main {
 
 Your first task is to determine if the given sequence of characters is a **valid** barcode or **not**.
 
-**Each line must contain only valid barcodes**. A barcode is valid when:
+**Each line must contain only valid barcodes**. 
 
-- is surrounded with a `@` followed by one or more `#`
+A barcode is valid when:
 
-- is at least 6 characters long (without the surrounding `@` or `#`)
+- is surrounded with a "**@**" followed by one or more "\#"
+
+- is at least 6 characters long (without the surrounding "**@**" or "\#")
 
 - starts with a capital letter
 
@@ -29,29 +32,29 @@ Your first task is to determine if the given sequence of characters is a **valid
 
 - ends with a capital letter
 
-Examples of valid barcodes:`@#FreshFisH@#`, `@###Brea0D@###`, `@##Che46sE@##`, `@##Che46sE@###`
+Examples of valid barcodes:"\@\#FreshFisH\@\#", "\@\#\#\#Brea0D\@\#\#\#", "\@\#\#Che46sE\@\#\#"
 
-Examples of **invalid** barcodes: `##InvaliDiteM##`, `@InvalidIteM@`, `@#Invalid_IteM@#`
+Examples of **invalid** barcodes: "\#\#InvaliDiteM\#\#", "\@InvalidIteM\@", "\@\#Invalid_IteM\@\#"
 
 Next, you have to determine the **product group** of the item from the **barcode**.
 
 The product group is obtained by **concatenating all the digits found in the barcode**.
 
-If there are **no digits** present in the **barcode**, the default product group is `00`.
+If there are **no digits** present in the **barcode**, the default product group is "**00**".
 
 Examples:
 
-`@#FreshFisH@#` \-\> product group: `00`
+"\@\#FreshFisH\@\#" \-\> product group: 00
 
-`@###Brea0D@###` \-\> product group: `0`
+"\@\#\#\#Brea0D\@\#\#\#" \-\> product group: 0
 
-`@##Che4s6E@##` \-\> product group: `46`
+"\@\#\#Che4s6E\@\#\#" \-\> product group: 46
 
 ### Input
 
-On the first line, you will be given an integer `n` – the count of barcodes that you will be receiving next.
+On the first line, you will be given an integer "**n**" - the count of barcodes that you will be receiving next.
 
-On the next `n` lines, you will receive different strings.
+On the next "**n**" lines, you will receive different strings.
 
 ### Output
 
@@ -59,11 +62,11 @@ For each barcode that you process, you need to print a message.
 
 If the barcode is invalid:
 
-- `Invalid barcode`
+- "**Invalid barcode**"
 
 If the barcode is valid:
 
-- `Product group: {product group}`
+- "**Product group:** \{**product group**\}"
 
 
 ## Examples
