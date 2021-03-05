@@ -16,7 +16,7 @@
 - JSON files overview
 
 **3. Classes**
-- What a class is
-- Classes overview and syntax
+- What is a class
+- Class overview and syntax
 
 [/slide]
