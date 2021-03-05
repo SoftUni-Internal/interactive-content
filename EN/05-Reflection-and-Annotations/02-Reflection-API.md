@@ -103,20 +103,10 @@ Class[] interfaces = aClass.getInterfaces();
 
 [slide hideTitle]
 # Problem with Solution: Reflection
-[code-task title="Reflection" taskId="Java-OOP-Advanced-Reflection-Reflection" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
+[code-task title="Reflection" taskId="Java-OOP-Advanced-Reflection-lab-Reflection" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
+[code-upload allowedMemory="30" /] 
 [task-description]
-## Description
+# Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/06.Java-OOP-Advanced-Reflection-and-Annotations-Lab.zip) **for this task.**
 
@@ -130,10 +120,9 @@ Print everything on new line:
 - **All interfaces** that are implemented by this class
 - **Instantiate object** using reflection and print it too
 
-**Don’t change anything in "Reflection class"!**
+**Do not change anything in the Reflection class!**
 
 [/task-description]
-[code-io /]
 [tests]
 [test open]
 [input]
