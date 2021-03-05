@@ -13,19 +13,17 @@
 **1. Increment and Decrement Operators**
 - How to change the value of a variable with special operators
 
-**2. What is an Array**
-- Reading from an array
 
-**3. Loops - Repeating Blocks of Code**
+**2. Loops - Repeating Blocks of Code**
 - For-Loop
 
-**4. For Loop with a Step**
+**3. For Loop with a Step**
 - Iterate with different steps 
 
-**5. Iterating over Characters**
+**4. Iterating over Characters**
 - ASCII table
 
-**6. Infinite Loops**
+**5. Infinite Loops**
 - Repeating a block of code indefinitely
 
 [/slide]
