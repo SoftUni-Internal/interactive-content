@@ -37,25 +37,25 @@ Some of the series have a discount:
 
 ## Input
 You receive the following elements from the console:
-- Budget: Floating-point in the range \[10.0… 100.0\]
-- Count of series "**n**": Int in the range \[1… 10\]
+- Budget: Floating-point in the range \[10.0...100.0\]
+- Count of series "**n**": int in the range \[1...10\]
 
 For each series you receive two elements:
 - Name of the series: String
-- Price: Floating-point number in the range \[1.0… 15.0\]
+- Price: Floating-point number in the range \[1.0..15.0\]
 
 ## Output
 Print one line to the console:
 
-- If your budget is greater than or equal to the price of the series: 
+- If your budget is **greater than or equal** to the **price of the series**: 
 
 "**You bought all the series and have** \{**money left**\}$ **left.**"
 
-- If your budget is less than the price of the series: 
+- If your budget is **less** than the **price of the series**: 
 
 "**You need** \{**money needed**\}$ **more to buy the series!**"
 
-The result must be formatted to the second digit after the decimal point.
+The result must be **formatted** to the second digit after the decimal point.
 
 ## Example
 | **Input** | **Output** |

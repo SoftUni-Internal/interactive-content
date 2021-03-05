@@ -8,7 +8,7 @@
 [code-task title="Cinema" taskId="js-pb-exam-preparation-Cinema" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function cinema(name, consumables, tickets) {
+function cinema(input) {
 	// Write your code here
 }
 ```
@@ -36,9 +36,9 @@ Create a program, which calculates what is the total price to be paid by the cus
 
 There are also promotional discounts available for two of the movies:
 
-- If the chosen movie is "**Star Wars**" and at least four tickets are bought, there is a 30\% family discount.
+- If the chosen movie is "**Star Wars**" and at least **four tickets are bought**, there is a 30\% family discount.
 
-- If the chosen movie is "**Jumanji**" and exactly 2 tickets are bought, there is 15\% discount for two.
+- If the chosen movie is "**Jumanji**" and exactly **two tickets are bought**, there is 15\% discount for two.
 
 ## Input
 As input you will receive 3 arguments:
@@ -47,14 +47,14 @@ As input you will receive 3 arguments:
 
 - A string, representing consumables: "**Drink**", "**Popcorn**" or "**Menu**"
 
-- A number, representing the number of tickets: Int in the range \[1… 30\]
+- A number, representing the number of tickets: Int in the range \[1..30\]
 
 ## Output
 
-Print one line on the console: 
+Print one line to the console: 
 "**Your bill is** \{**total price**\}$"
 
-* The price must be formatted to the second digit after the decimal point.
+* The price must be formatted to the second digit after the decimal point
 
 ## Example
 | **Input** | **Output** |

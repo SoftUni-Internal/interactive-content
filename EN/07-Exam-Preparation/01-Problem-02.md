@@ -8,7 +8,7 @@
 [code-task title="Time for Lunch" taskId="js-pb-exam-preparation-Time-for-Lunch" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function timeForLunch(name, duration, breakTime) {
+function timeForLunch(input) {
 	// Write your code here
 }
 ```
@@ -38,9 +38,9 @@ You will receive **3 elements** from the console:
 
 - Name of the series: String
 
-- Duration of an episode: Int in the range \[10… 90\]
+- Duration of an episode: Int in the range \[10...90\]
 
-- Break duration: Int in the range \[10… 120\]
+- Break duration: Int in the range \[10...120\]
 
 ## Output
 The output should consist of one line:
@@ -53,7 +53,7 @@ The output should consist of one line:
 
 "**You don't have enough time to watch** \{**name of the series**\}**, you need** \{**time needed**\} **more minutes.**"
 
-Round the time up to the nearest whole number.
+**Round the time up** to the nearest whole number.
 
 ## Example
 | **Input** | **Output** |

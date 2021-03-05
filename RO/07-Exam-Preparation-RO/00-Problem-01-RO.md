@@ -43,9 +43,9 @@ Ca intrare veți primi 4 elemente de consolă:
 
 - Numărul sezoanelor: un număr întreg în intervalul \[1...10\]
 
-- Numărul episoadelor: un număr întreg în intervalul \[10... 80\]
+- Numărul episoadelor: un număr întreg în intervalul \[10...80\]
 
-- Durata unui episod standard fără reclame: dublă în intervalul \[40.0...65.0 \]
+- Durata unui episod standard fără reclame: dublă în intervalul \[40.0...65.0\]
 
 ## Ieșire
 

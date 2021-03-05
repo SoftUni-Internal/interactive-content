@@ -29,7 +29,7 @@ You have been hired by a cinema to create a program, which calculates whether th
 
 You are going to receive the number of seats in the hall and on the next console lines, until the command "**Movie time!**", you will get a number of newly arriving viewers.
 
-The price for 1 ticket is 5\$.
+**The price for 1 ticket is 5$.**
 
 If the number of people currently entering the hall can be **divided by 3 without a remainder**, there is a 5$ **discount** on the total price.
 
@@ -40,10 +40,10 @@ If the number of entering viewers exceeds the number of seats left in the hall, 
 ## Input
 You will receive the following elements from the console:
 
-- First element: the hall capacity – Int in the range  \[50... 150\]
+- First element: the hall capacity – Int in the range  \[50...150\]
 
 - On each of the next element until the command is "**Movie time!**":
-	- Number of people entering the cinema: Int in the range  \[1… 15\]
+	- Number of people entering the cinema: Int in the range  \[1...15\]
 
 ## Output
 First, print one of these lines:

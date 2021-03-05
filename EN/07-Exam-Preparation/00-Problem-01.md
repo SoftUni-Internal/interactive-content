@@ -8,7 +8,7 @@
 [code-task title="Calculator for TV series" taskId="js-pb-exam-preparation-Calculator-for-TV-series" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function tvSeries(name, seasons, episodes, duration) {
+function tvSeries(input) {
 	// Write your code here
 }
 ```
@@ -38,11 +38,11 @@ As input you will receive 4 arguments:
 
 - Name of the series: String
 
-- Number of seasons: Int in the range \[1… 10\]
+- Number of seasons: Int in the range \[1...10\]
 
-- Number of episodes: Int in the range \[10… 80\]
+- Number of episodes: Int in the range \[10...80\]
 
-- Duration of a standard episode without the advertisements: Floating-point number in the range \[40.0… 65.0\]
+- Duration of a standard episode without the advertisements: Floating-point number in the range \[40.0...65.0\]
 
 ## Output
 Print to the console the time needed to watch all of the episodes, rounded down to the nearest whole number in the following format:

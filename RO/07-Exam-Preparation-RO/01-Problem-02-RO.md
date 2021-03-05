@@ -40,8 +40,8 @@ Ceea ce trebuie să faceți este să scrieți un program care să vă ajute să 
 ## Intrare
 Ca intrare veți primi 3 elemente de consolă:
 - Numele serialului: un șir
-- Durata unui episod: un număr întreg în intervalul \[10… 90\]
-- Durata pauzei: un număr întreg în intervalul \[10… 120\]
+- Durata unui episod: un număr întreg în intervalul \[10...90\]
+- Durata pauzei: un număr întreg în intervalul \[10...120\]
 
 ## Ieșire
 Rezultatul ar trebui să fie format dintr-o singură linie:
@@ -54,7 +54,7 @@ Rezultatul ar trebui să fie format dintr-o singură linie:
 
 "**You don't have enough time to watch** \{**name of the series**\}**, you need** \{**time needed**\} **more minutes.**"
 
-Round the time up to the nearest whole number.
+**Round the time up** to the nearest whole number.
 
 ## Example
 | **Intrare** | **Ieșire** |

@@ -41,15 +41,15 @@ Veți primi un număr, reprezentând bugetul clientului, numărul total de titlu
 ## Intrare
 Primiți de pe consolă:
 
-- Buget: un număr întreg în intervalul \[10.0… 100.0\]
+- Buget: un număr întreg în intervalul \[10.0...100.0\]
 
-- Numărul de seriale: "**n**" – un număr întreg în intervalul \[1… 10\]
+- Numărul de seriale: "**n**" - un număr întreg în intervalul \[1...10\]
 
 Pentru fiecare serie primiți două elemente:
 
 - Numele serialului: un șir
 
-- Prețul serialului: un număr real în intervalul \[1.0… 15.0\]
+- Prețul serialului: un număr real în intervalul \[1.0...15.0\]
 
 ## Ieșire
 Imprimați o linie pe consolă:

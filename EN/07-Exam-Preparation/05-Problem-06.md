@@ -26,25 +26,25 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-It is Friday night, and you are wondering which movie to watch. 
+It is Friday night, and you are wondering which movie to watch.
 
-You decide to create a program, which chooses it for you. 
+You decide to create a program, which chooses it for you.
 
-Until receiving the "**STOP**" command, you will be given the titles of some of your favorite movies. 
+Until receiving the "**STOP**" command, you will be given the titles of some of your favorite movies.
 
-The best movie for you will be the one that has the most points. 
+The best movie for you will be the one that has the most points.
 
-The points are calculated by the sum of the ASCII character values in the movie title. 
+The points are calculated by the sum of the ASCII character values in the movie title.
 
-There will not be a case where two movies have an equal amount of points
+There will not be a case where two movies have an equal amount of points.
 
 Keep in mind the following:
 
-- For each lowercase letter from the title, you must subtract the length of the movie title, multiplied by 2, from the sum.
+- For each lowercase letter from the title, you must **subtract** the length of the movie title, **multiplied by 2**, from the sum
 
-- For each uppercase letter in the title, the length of the movie's title should be subtracted from the sum.
+- For each uppercase letter in the title, the length of the movie's title should be **subtracted** from the sum
 
-- You can have a maximum of 7 movie titles.
+- You can have a **maximum of 7** movie titles
 
 ## Input
 
@@ -54,7 +54,7 @@ You will receive multiple elements from the console until the "**STOP**" command
 
 ## Output
 
-Print on the console:
+Print to the console:
 
 - If you have reached the limit of 7 movies you must print: 
 
