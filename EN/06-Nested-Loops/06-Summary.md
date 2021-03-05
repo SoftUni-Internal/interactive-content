@@ -21,7 +21,7 @@ while (condition) {
 }
 ```
 
-- Nested **for loops**, could be used for processing data by rows and columns 
+- Nested **for-loops**, could be used for processing data by rows and columns 
 
 ```js
 for (variable initialization; condition; increment) {
@@ -31,7 +31,7 @@ for (variable initialization; condition; increment) {
   }
 }
 ```
-- Nested **while loops** are very well applied for nested, repeating logic with exit conditions 
+- Nested **while-loops** are very well applied for nested, repeating logic with exit conditions 
 ```js
 while (condition) {
 
