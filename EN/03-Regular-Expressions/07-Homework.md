@@ -54,9 +54,9 @@ And **on the last line print** the following:
 | Purchase | Total money spend: 2436.69 |
 
 ### Comments
-- Only the Sofa and the TV are valid.
-- For each of them we multiply the price by the quantity.
-- Print the result.
+- Only the Sofa and the TV are valid
+- For each of them we multiply the price by the quantity
+- Print the result
 
 [/task-description]
 [code-io /]
@@ -221,11 +221,11 @@ At the end **print the top 3 racers ordered by distance in descending** in the f
 | end of race | |
 
 ### Comments
-- On the third input line we have Ray. 
-- He is not in the list, so we do not count his result. 
-- The other ones are valid. 
-- George has total of 55 km, Peter has 25 and Tom has 19. 
-- We do not print Bill because he is on the fourth place.
+- On the third input line we have Ray
+- He is not in the list, so we do not count his result
+- The other ones are valid
+- George has total of 55 km, Peter has 25 and Tom has 19
+- We do not print Bill because he is on the fourth place
 
 [/task-description]
 [code-io /]
@@ -356,17 +356,17 @@ public class Main {
 ## Description
 Calculate the profit from the products that were sold throughout the day.
 
-**Until you receive a line** with text "end of shift" you will **be given lines of input**.
+**Until you receive a line** with text "**end of shift**" you will **be given lines of input**.
 
 But before processing that line you have to do some **validations** first.
 
 Each valid order should have a **customer, product, count and a price**.
 
 A **valid**: 
-- **customer's name** should be surrounded by '%' and must start with a capital letter, followed by lower-case letters
-- **product** contains any word character and must be surrounded by '<' and '>' 
-- **count** is an integer, surrounded by '\|'
-- **price** is any real number followed by '$'
+- **Customer's name** should be surrounded by '%' and must start with a capital letter, followed by lower-case letters
+- **Product** contains any word character and must be surrounded by '\<' and '\>' 
+- **Count** is an integer, surrounded by '\|'
+- **Price** is any real number followed by '$'
 
 The parts of a **valid order should appear in the order given**: **customer, product, count and a price**.
 
@@ -386,7 +386,7 @@ When you receive "end of shift" **print the total amount of money** for the day 
 | end of shift | Total income: 24.30 |
 
 ### Comments
-- Each line is valid, so we print each order, calculating the total price of the product bought.
+- Each line is valid, so we print each order, calculating the total price of the product bought
 - At the end we print the total income for the day
 
 ### Example
@@ -399,9 +399,9 @@ When you receive "end of shift" **print the total amount of money** for the day 
 | end of shift | |
 
 ### Comments
-- On the first line, the customer name isn't valid, so we skip that line.
-- The second line is missing product count.
-- The third line don't have a valid price.
+- On the first line, the customer name is not valid, so we skip that line
+- The second line is missing product count
+- The third line don't have a valid price
 - And only the forth line is valid
 
 [/task-description]
@@ -582,7 +582,7 @@ You should **decrypt the messages**, following these rules:
 - The **soldier count starts after** "->" and **should be an integer**
 
 The **order in the message** should be: 
-- **planet name -> planet population -> attack type -> soldier count** 
+**planet name -> planet population -> attack type -> soldier count** 
 
 Each part can be **separated from the others by any character except**: '\@', '-', '!', ':' and '>'.
 
@@ -608,13 +608,13 @@ The planets should be ordered by name **alphabetically**.
 
 ### Comments
 We receive two messages, to decrypt them we calculate the key:
-- First message has decryption key 3. 
-    - So we substract from each characters code 3.
+- First message has decryption key 3
+    - so we substract from each characters code 3
     - PQ@Alderaa1:30000!A!->20000
-- The second message has key 5.
+- The second message has key 5
     - @Cantonica:3000!D!->4000NM
-- Both messages are valid and they contain planet, population, attack type and soldiers count. 
-- After decrypting all messages we print each planet according the format given.
+- Both messages are valid and they contain planet, population, attack type and soldiers count 
+- After decrypting all messages we print each planet according the format given
 
 ### Example
 | **Input** | **Output** |
@@ -630,8 +630,8 @@ We receive three messages.
     - pp$##@Coruscant:2000000000!D!->5000
 - Message two is decrypted with key 7:
     - @Jakku:200000!A!MMMM
-    - This is invalid message, missing soldier count, so we continue.
-- The third message has key 5.
+    - this is invalid message, missing soldier count, so we continue
+- The third message has key 5
     - @Cantonica:3000!D!->4000NM
 
 [/task-description]
@@ -849,7 +849,7 @@ You will get **all demons on a single line**, **separated by commas and zero or 
 Sort them in **alphabetical order and print their names** along their **health and damage**. 
 
 ### Input
-- The input will be read from the console. 
+- The input will be read from the console
 - The input consists of a single line containing all demon names separated by commas and zero or more spaces in the format:
     - "\{demon name\}, \{demon name\}, … \{demon name\}"
 
@@ -872,7 +872,7 @@ Sort them in **alphabetical order and print their names** along their **health a
 ### Comments
 - M3ph-0.5s-0.5t0.0**:
     - Health = 'M' + 'p' + 'h' + 's' + 't' = 524 health.
-    - Damage = (3 + (-0.5) + (-0.5) + 0.0) * 2 * 2 = 8 damage.
+    - Damage = (3 + (-0.5) + (-0.5) + 0.0) \* 2 \* 2 = 8 damage.
 
 ### Example
 | **Input** | **Output** |
@@ -885,7 +885,7 @@ Sort them in **alphabetical order and print their names** along their **health a
     - Health - 'A' + 'z' + 'a' + 'z' + 'e' + 'l' = 615 health. Damage - no digits = 0 damage.
 - M3ph1st0**:
     - Health - 'M' + 'p' + 'h' + 's' + 't' = 524 health.
-    - Damage - (3 + 1 + 0) * 2 * 2 = 16 damage.
+    - Damage - (3 + 1 + 0) \* 2 \* 2 = 16 damage.
 
 [/task-description]
 [code-io /]

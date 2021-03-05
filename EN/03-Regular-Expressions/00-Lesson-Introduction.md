@@ -12,7 +12,7 @@
 
 - RegEx Syntax
 
-- Regex Pattern sites   
+- Regex Pattern sites
 
 **2. Quantifiers and Grouping**
 
