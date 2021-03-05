@@ -9,8 +9,8 @@
 
 ## In this lesson you will learn:
 
-**1. While Loop**
-- **while** loop overview
+**1. While-Loop**
+- **while-loop** overview
 
 **2. While vs For Loop**
 - Difference between **while** and **for** loop
