@@ -68,9 +68,12 @@ Print to the console:
 | **Input** | **Output** |
 | --- | --- |
 |movie(['Matrix', 'Breaking bad', 'Legend', 'STOP'])| The best movie for you is Breaking bad its ASCII sum is: 878.|
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
 |movie(['Wrong turn', 'The maze', 'Area 51', 'Night Club', 'Ice age', 'Harry Potter', 'Wizards'])| Title limit has been reached.|
 ||The best movie for you is Harry Potter its ASCII sum is: 948.|
-
 
 [hints]
 [hint]
