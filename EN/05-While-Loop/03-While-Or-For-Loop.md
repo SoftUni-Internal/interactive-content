@@ -8,7 +8,7 @@
 
 "**while**" and "**for**" loops both **repeat** a block of **code**.
 
-But there are different situations when writing code that requires either the first loop or the other.
+But there are different situations when writing code that require either using the **for** loop or the **while** loop.
 
 When you know **exactly how many times** you want to loop through a block of code, use the "**for**" loop.
 ```js live
