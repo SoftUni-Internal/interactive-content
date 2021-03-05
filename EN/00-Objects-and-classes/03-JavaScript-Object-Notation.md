@@ -45,7 +45,7 @@ JSON uses **human-readable text to transmit data.**
 
 In this example:
 
-* Brackets `{}` define a JSON
+* Braces `{}` define a JSON
 
 * Keys are in double quotes: "name", "age", "grades", "Math", "Chemistry"
 
