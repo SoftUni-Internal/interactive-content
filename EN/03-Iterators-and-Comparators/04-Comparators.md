@@ -4,6 +4,8 @@
 
 # Comparator
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/EN/interactive-java-advanced-iterators-and-comparators-20-21-Comparator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The Comparator interface allows us to provide a **custom comparison logic for types that we have no control over**.
 
 It is simply an **external class** that exposes a `compare()` method that **accepts two objects**. 
@@ -20,6 +22,8 @@ Keep in mind that the Comparator is an external class means that it **will not a
 [slide hideTitle]
 
 # Comparable
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/EN/interactive-java-advanced-iterators-and-comparators-22-23-Comparable-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Comparable allows us to specify how objects that we are implementing **compare to objects of the same type**. 
 
@@ -83,6 +87,8 @@ That allows us to later implement the `compareTo()` method by **accepting a Stud
 
 # Comparator - Example
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/EN/interactive-java-advanced-iterators-and-comparators-24-Comparator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 In the following example, we compare **two Student objects** by their age variable.
 
 Our AgeComparator class implements **Comparator** of type **Student**.
@@ -114,6 +120,9 @@ public class AgeComparator implements Comparator<Student> {
 
 [slide hideTitle]
 # Problem with Solution: Comparable Book
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/EN/interactive-java-advanced-iterators-and-comparators-26-Problem-and-Solution-Comprabale-Book-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Comparable Book" timeLimit=5000 taskId="oop-basics-java-iterators-and-comparators-lab-Comparable-Book" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
 
@@ -324,6 +333,9 @@ Test Passed!
 
 [slide hideTitle]
 # Problem with Solution: Book Comparator
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/EN/interactive-java-advanced-iterators-and-comparators-27-Problem-and-Solution-Book-Comparator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Book Comparator" timeLimit=5000 taskId="oop-basics-java-iterators-and-comparators-lab-Book-Comparator" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
