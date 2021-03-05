@@ -8,7 +8,7 @@
 
 ## In this lesson you learned:
 
-- **While** loop executes a block of code **multiple** times
+- **While-loop** executes a block of code **multiple** times
    - while the loop condition is true
 
 ```js
@@ -16,8 +16,8 @@ while (condition) {
   loop body;
 }
 ```
-- Use **for** when you initially know the number of repetitions, **while** otherwise
-- **While** loops can be **infinite**
+- Use "**for**" when you initially know the number of repetitions, "**while**" otherwise
+- **While-loops** can be **infinite**
 ```js
 while (true) {
   // Commands
