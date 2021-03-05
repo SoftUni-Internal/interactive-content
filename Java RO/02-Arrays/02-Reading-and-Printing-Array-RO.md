@@ -91,7 +91,7 @@ for (int i = 0; i < arr.length; i++) {
 
 [slide hideTitle]
 # Problem with Solution: Reverse an Array of Integers
-[code-task title="Reverse an Array of Integers" taskId="java-fund-arrays-lab-reverse-array-of-integers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Reverse an Array of Integers" taskId="java-fund-1-arrays-lab-reverse-array-of-integers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 ```
@@ -226,7 +226,7 @@ System.out.println(String.join(" ", arr));
 [slide hideTitle]
 # Problem with Solution: Reverse an Array of Strings
 
-[code-task title="Reverse an Array of Strings" taskId="java-fund-arrays-lab-reverse-an-array-of-strings" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Reverse an Array of Strings" taskId="java-fund-1-arrays-lab-reverse-an-array-of-strings" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -256,13 +256,13 @@ Imprimați ieșirea pe o singură linie \(separate prin spațiu\).
 
 ## Sugestii
 
-* Citiți matricea de șiruri.
+* Citiți matricea de șiruri
 
-* **Schimbați**  **primul** element \(at index 0\) cu **ultimul** element \(at index n-1\).
+* **Schimbați**  **primul** element \(at index 0\) cu **ultimul** element \(at index n-1\)
 
-* **Schimbați**  **al doilea** element \(at index 1\) cu **înainte de ultimul** element\(at index n-2\).
+* **Schimbați**  **al doilea** element \(at index 1\) cu **înainte de ultimul** element\(at index n-2\)
 
-* Continuați în același mod până când ajungeți la mijlocul matricei.
+* Continuați în același mod până când ajungeți la mijlocul matricei
 
 [/task-description]
 [code-io /]
@@ -322,7 +322,7 @@ f60 e50 d40 c30 b20 a10
 [slide hideTitle]
 # Problem with Solution: Equal Arrays
 
-[code-task title="Equal Arrays" taskId="java-fund-Arrays-Equal-Arrays" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Equal Arrays" taskId="java-fund-1-Arrays-lab-Equal-Arrays" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;

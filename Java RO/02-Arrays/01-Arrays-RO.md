@@ -98,7 +98,7 @@ Dacă încercăm să accesăm elementul de pe un index nevalid, vom obține o ex
 [slide hideTitle]
 # Problem with Solution: Day of Week
 
-[code-task title="Day of Week" taskId="java-fund-arrays-lab-day-of-week" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Day of Week" taskId="java-fund-1-arrays-lab-day-of-week" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -237,7 +237,7 @@ Invalid day!
 [slide hideTitle]
 # Problem with Solution: Sum Even Numbers
 
-[code-task title="Sum Even Numbers" taskId="java-fund-arrays-lab-sum-even-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sum Even Numbers" taskId="java-fund-1-arrays-lab-sum-even-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;

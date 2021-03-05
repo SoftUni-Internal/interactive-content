@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Problem: Train
 
-[code-task title="Train" taskId="java-fund-Arrays-Exercise-Train" executionType="tests-execution" executionStrategy="java-code" requiresInput requiresInput]
+[code-task title="Train" taskId="java-fund-1-arrays-Train" executionType="tests-execution" executionStrategy="java-code" requiresInput requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -135,7 +135,7 @@ La final **imprimați întregul tren** și după aceea **calculați câți oamen
 
 [slide hideTitle]
 # Problem: Common Elements
-[code-task title="Common Elements" taskId="java-fund-Arrays-Exercise-Common-Elements" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Common Elements" taskId="java-fund-1-arrays-Common-Elements" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -243,7 +243,7 @@ ggg
 [slide hideTitle]
 # Problem: Zig-Zag Arrays
 
-[code-task title="Zig-Zag Arrays" taskId="java-fund-Arrays-Exercise-Zig-Zag-Arrays" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Zig-Zag Arrays" taskId="java-fund-1-arrays-Zig-Zag-Array" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -368,7 +368,7 @@ Formați 2 matrici așa cum se arată **mai jos**.
 
 [slide hideTitle]
 # Problem: Array Rotation
-[code-task title="Array Rotation" taskId="java-fund-Arrays-Exercise-Array-Rotation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Array Rotation" taskId="java-fund-1-arrays-Rotation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -475,7 +475,7 @@ Scrieți un program care **primește o matrice și un număr de rotații** pe ca
 [slide hideTitle]
 # Problem: Top Integers
 
-[code-task title="Top Integers" taskId="java-fund-08-Arrays-Exercise-Top-Integers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Top Integers" taskId="java-fund-1-arrays-Top-Integers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -573,7 +573,7 @@ Un top integer este un  integer care este *mai mare** decât toate elementele **
 
 [slide hideTitle]
 # Problem: Equal Sums
-[code-task title="Equal Sums" taskId="java-fund-Arrays-Exercise-Equal-Sums" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Equal Sums" taskId="java-fund-1-arrays-Equal-Sums" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -726,7 +726,7 @@ no
 [slide hideTitle]
 # Problem: Max Sequence of Equal Elements
 
-[code-task title="Max Sequence of Equal Elements" taskId="java-fund-08-Arrays-Exercise-Max-Sequence-of-Equal-Elements" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Max Sequence of Equal Elements" taskId="java-fund-1-arrays-Max-Sequence-of-Equal-Elements" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -749,11 +749,9 @@ Dacă există **câteva secvențe mai lungi**, imprimați-o pe cea **din stânga
 | **Input** | **Output** |
 | --- | --- |
 | 0 1 1 5 2 2 6 3 3 | 1 1 |
-
-### Example
-| **Input** | **Output** |
-| --- | --- |
 | 1 1 1 2 3 1 3 3 | 1 1 1 |
+
+
 
 [/task-description]
 [code-io /]
@@ -884,7 +882,7 @@ Dacă există **câteva secvențe mai lungi**, imprimați-o pe cea **din stânga
 
 [slide hideTitle]
 # Problem: Magic Sum
-[code-task title="Magic Sum" taskId="java-fund-08-Arrays-Exercise-Magic-Sum" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Magic Sum" taskId="java-fund-1-arrays-Magic-Sum" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -995,7 +993,7 @@ public class Main {
 [slide hideTitle]
 # Problem: LadyBugs
 
-[code-task title="LadyBugs" taskId="java-fund-Arrays-Exercise-LadyBugs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="LadyBugs" taskId="java-fund-1-arrays-LadyBugs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1013,7 +1011,7 @@ public class Main {
 
 Aveți o **dimensinue câmpului** și **indicii de buburuze** în interiorul câmpului.
 
-După aceea, la fiecare nouă linie, până când este dată comanda "end", o buburuză **își schimbă poziția** fie la **stânga**, fie la * dreapta** cu o anumită lungime de zbor.
+După aceea, la fiecare nouă linie, până când este dată comanda "**end**", o buburuză **își schimbă poziția** fie la **stânga**, fie la * dreapta** cu o anumită lungime de zbor.
 
 O **comandă** pentru o buburuză arată in acest mod:"0 right 1".
 
@@ -1042,12 +1040,14 @@ Pentru fiecare celulă care conține buburuze imprimați '1' și pentru fiecare 
 Pentru exemplul de mai sus, rezultatul ar trebui să fie '0 1 0'.
 
 ### Input
+
 - Pe prima linie veți primi un număr întreg - dimensiunea câmpului
+
 - Pe a doua linie veți primi indexurile inițiale ale tuturor buburuzelor separate printr-un spațiu gol
 
 Indiciile date pot să fiu sau nu în interiorul domeniului câmpului
 
-- Pe liniile următoare, până când veți obține comanda "end" veți primi comenzi în formatul: "\{ladybug index\} \{direction\} \{fly length\}"
+- Pe liniile următoare, până când veți obține comanda "**end**" veți primi comenzi în formatul: "\{ladybug index\} \{direction\} \{fly length\}"
 
 ### Output
 - Imprimați toate celulele din câmpul în formatul: "\{cell\} \{cell\} … \{cell\}"

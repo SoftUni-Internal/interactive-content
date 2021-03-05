@@ -39,7 +39,7 @@ One thing to note here, is that you would not be able to manipulate the elements
 [slide hideTitle]
 # Problem with Solution: Even and Odd Subtraction
 
-[code-task title="Even and Odd Subtraction" taskId="java-fund-arrays-lab-even-and-odd-subtraction" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Even and Odd Subtraction" taskId="java-fund-1-arrays-lab-even-and-odd-subtraction" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 ```
@@ -144,7 +144,7 @@ Scrieți un program care calculează diferența dintre suma numerelor even și o
 [slide hideTitle]
 # Problem with Solution: Condense Array to Number
 
-[code-task title="Condense Array to Number" taskId="java-fund-arrays-lab-condense-array-to-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Condense Array to Number" taskId="java-fund-1-arrays-lab-condense-array-to-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 ```
