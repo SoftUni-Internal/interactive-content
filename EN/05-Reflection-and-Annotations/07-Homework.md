@@ -1097,15 +1097,15 @@ public abstract class Command implements Executable {
         this.data = data;
         this.repository repository;
         this.unitFactory = unitFactory;
-}
+    }
 
     protected Repository getRepository () {
         return repository;
-}
+    }
 
     protected UnitFactory getunitFactory () {
         return unitFactory;
-}
+    }
 
     protected String[] getData() {
         return data;
