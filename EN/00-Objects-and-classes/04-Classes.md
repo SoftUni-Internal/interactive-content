@@ -151,7 +151,7 @@ For each of the strings provided you must create a cat object.
 
 * Create all objects using class constructor and the parsed input data, store them in an array
 
-* Loop through the array using `for…of` cycle and invoke `.meow()` method
+* Loop through the array using **for…of** cycle and invoke `.meow()` method
 
 
 [/task-description]
