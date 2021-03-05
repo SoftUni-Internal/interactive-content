@@ -58,9 +58,9 @@ Finally, it will return to where the method was called and continue after it by 
 
 The stack contains **stack frames** for each method call. These stack frames store information on:
 
-- any arguments passed into the method
-- local variables
-- the address to which to return after a method finishes executing
+- Any arguments passed into the method
+- Local variables
+- The address to which to return after a method finishes executing
 
 
 

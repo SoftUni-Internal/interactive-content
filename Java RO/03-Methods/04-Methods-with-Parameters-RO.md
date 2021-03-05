@@ -44,7 +44,7 @@ public static void printStudent(String name, int age, double grade) {
 
 [slide hideTitle]
 # Problem with Solution: Sign of Integer
-[code-task title="Sign of Integer" taskId="java-fund-Methods-lab-Sign-of-Integer" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sign of Integer" taskId="java-fund-1-Methods-lab-Sign-of-Integer" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -65,17 +65,7 @@ Creați o metodă care afișează semnul unui număr întreg.
 | **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | 2 | The number 2 is positive. |
-
-
-| **Date de intrare** | **Date de ieșire** |
-| --- | --- |
 | -5 | The number -5 is negative. |
-
-
-| **Date de intrare** | **Date de ieșire** |
-| --- | --- |
-| 0 | The number 0 is zero. |
-
 
 
 [/task-description]
@@ -89,7 +79,7 @@ Creați o metodă care afișează semnul unui număr întreg.
 The number 2 is positive.
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 -5
 [/input]
@@ -112,7 +102,7 @@ The number 0 is zero.
 
 [slide hideTitle]
 # Problem with Solution: Grades
-[code-task title="Grades" taskId="java-fund-lab-Methods-Grades" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Grades" taskId="java-fund-1-lab-Methods-Grades" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -138,17 +128,8 @@ Scrieți o metodă **care primește** o notă între **2.00** și **6.00** și *
 | **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | 3.33 | Poor |
-
-
-| **Date de intrare** | **Date de ieșire** |
-| --- | --- |
 | 4.50 | Very good |
-
-
-| **Date de intrare** | **Date de ieșire** |
-| --- | --- |
 | 2.99 | Fail |
-
 
 
 [/task-description]
@@ -224,7 +205,7 @@ Fail
 
 [slide hideTitle]
 # Problem with Solution: Printing Triangle
-[code-task title="Printing Triangle" taskId="java-fund-Methods-lab-Printing-Triangle" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Printing Triangle" taskId="java-fund-1-Methods-lab-Printing-Triangle" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -275,14 +256,14 @@ Creați o metodă pentru a afișa triunghiuri ca în exemplul de mai jos:
 1
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 4
 [/input]
 [output]
 1
 1 2
-1 2 3 
+1 2 3
 1 2 3 4
 1 2 3
 1 2
@@ -405,7 +386,7 @@ Creați o metodă pentru a afișa triunghiuri ca în exemplul de mai jos:
 
 [slide hideTitle]
 # Problem with Solution: Calculations
-[code-task title="Calculations" taskId="java-fund-Methods-Calculations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Calculations" taskId="java-fund-1-Methods-Calculations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

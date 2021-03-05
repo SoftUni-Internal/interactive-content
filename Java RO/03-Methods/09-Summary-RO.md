@@ -1,6 +1,3 @@
-# Recapitulare
-
-
 [slide hideTitle]
 # Recapitulare
 

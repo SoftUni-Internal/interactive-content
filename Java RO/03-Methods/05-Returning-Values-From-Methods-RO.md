@@ -42,7 +42,7 @@ int age = Integer.parseInt(sc.nextLine());
 
 [slide hideTitle]
 # Problem with Solution: Calculate Rectangle Area
-[code-task title="Calculate Rectangle Area" taskId="java-fund-Methods-lab-Calculate-Rectangle-Area" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Calculate Rectangle Area" taskId="java-fund-1-Methods-lab-Calculate-Rectangle-Area" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -139,7 +139,7 @@ Creați o metodă care calculează și afișează aria unui dreptunghi cu lungim
 
 [slide hideTitle]
 # Problem with Solution: Repeat String
-[code-task title="Repeat String" taskId="java-fund-Methods-lab-Repeat-String" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Repeat String" taskId="java-fund-1-Methods-lab-Repeat-String" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -242,7 +242,7 @@ ivanivan
 
 [slide hideTitle]
 # Problem with Solution: Math Power
-[code-task title="Math Power" taskId="java-fund-Methods-lab-Math-Power" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Math Power" taskId="java-fund-1-Methods-lab-Math-Power" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.text.DecimalFormat;
@@ -389,7 +389,7 @@ Creați o metodă care calculează și returnează valoarea unui număr ridicat 
 
 [slide hideTitle]
 # Problem with Solution: Orders
-[code-task title="Orders" taskId="java-fund-Methods-lab-Orders" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Orders" taskId="java-fund-1-Methods-lab-Orders" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
