@@ -53,9 +53,9 @@ La final **imprimați fiecare mobila cumpărată pe o linie separată** în form
 | Purchase | Total money spend: 2436.69 |
 
 ### Comentarii
-- Numai canapeaua și televizorul sunt valabile.
-- Pentru fiecare dintre ele înmulțim prețul cu cantitatea.
-- Imprimați rezultatul.
+- Numai canapeaua și televizorul sunt valabile
+- Pentru fiecare dintre ele înmulțim prețul cu cantitatea
+- Imprimați rezultatul
 
 [/task-description]
 [code-io /]
@@ -222,11 +222,11 @@ La final **imprimați primii 3 alergători ordonate în funcție de distanța de
 
 
 ### Comentarii
-- Pe a treia linie de intrare avem Ray.
-- El nu este pe listă, deci nu luăm în calcul rezultatul lui.
-- Celelalte sunt valabile.
-- George are 55 km în total, Peter 25 și Tom 19.
-- Nu îl imprimăm pe Bill pentru că este pe locul patru.
+- Pe a treia linie de intrare avem Ray
+- El nu este pe listă, deci nu luăm în calcul rezultatul lui
+- Celelalte sunt valabile
+- George are 55 km în total, Peter 25 și Tom 19
+- Nu îl imprimăm pe Bill pentru că este pe locul patru
 
 [/task-description]
 [code-io /]
@@ -357,17 +357,17 @@ public class Main {
 ## Descriere
 Calculați profitul din produsele care au fost vândute pe tot parcursul zilei.
 
-**Până când veți primi o linie** cu textul "end of shift"  vi se vor oferi **linii de intrare**.
+**Până când veți primi o linie** cu textul "**end of shift**"  vi se vor oferi **linii de intrare**.
 
 Dar înainte de a prelucra aceasta linie, trebuie să executați mai întâi câteva **validări**.
 
 Fiecare comandă validă trebuie să aibă un **client, produs, total și prețul**.
 
 **Valid**: 
-- **numele clientului** trebuie să fie înconjurat de '%' și trebuie să înceapă cu o literă mare, urmată de litere mici
-- **produsul** conține orice caracter de cuvânt și trebuie să fie înconjurat de '<' și '>' 
-- **total** este un număr întreg, înconjurat de'\|'
-- **prețul** este orice număr real urmat de '$'
+- **Numele clientului** trebuie să fie înconjurat de '%' și trebuie să înceapă cu o literă mare, urmată de litere mici
+- **Produsul** conține orice caracter de cuvânt și trebuie să fie înconjurat de '\<' și '\>' 
+- **Total** este un număr întreg, înconjurat de'\|'
+- **Prețul** este orice număr real urmat de '$'
 
 Părțile unei **comenzi valide ar trebui să apară în comanda dată **:** client, produs, total și un prețul**.
 
@@ -388,7 +388,7 @@ Când primiți "end of shift" **imprimați suma totală** pentru ziua rotunjita 
 | end of shift | Total income: 24.30 |
 
 ### Comentarii
-- Fiecare linie este valabilă, așa că tipărim fiecare comandă, calculând prețul total al produsulelor cumpărate.
+- Fiecare linie este valabilă, așa că tipărim fiecare comandă, calculând prețul total al produsulelor cumpărate
 - La final imprimăm venitul total al zilei
 
 ### Exemplu
@@ -401,9 +401,9 @@ Când primiți "end of shift" **imprimați suma totală** pentru ziua rotunjita 
 | end of shift | |
 
 ### Comentarii
-- Pe prima linie, numele clientului nu este valid, așa că omitem acest rând.
-- A doua linie lipsește numărul de produse.
-- Pe a treia linie avem un preț nevalid.
+- Pe prima linie, numele clientului nu este valid, așa că omitem acest rând
+- A doua linie lipsește numărul de produse
+- Pe a treia linie avem un preț nevalid
 - Și numai a patra linie este validă
 
 [/task-description]
@@ -579,12 +579,12 @@ Trebui să **decriptați mesajele**, urmând aceste reguli:
 **După decriptare**:
 - Fiecare **mesaj** trebuie să aibă **denumirea planetei, populație, tip de atac** ('A', as attack or 'D', as destruction) și **număr de soldați**
 - **Denumirea planetei incepe după** '\@' și **conține doar litere din alfabetul latin**
-- ** Populația planetei începe după** ':' și **este un număr întreg**
+- **Populația planetei începe după** ':' și **este un număr întreg**
 - **Tipul de atac** poate fi "A"(attack) sau "D"(destruction) și **trebuie să fie înconjurat de** "!" (semnul exclamarii)
 - **Numărul de soldați începe după** "->" și **ar trebui să fie un număr întreg**
 
 **Ordinea mesajului** trebui să fie:
-- **planet name -> planet population -> attack type -> soldier count**
+**planet name -> planet population -> attack type -> soldier count**
 
 Fiecare parte poate fi **separată de celelalte prin orice caracter, cu excepția**: '\@', '-', '!', ':' și '>'.
 
@@ -610,13 +610,13 @@ Planetele ar trebui să fie ordonate după nume in mod **alfabetic**.
 
 ### Comentarii
 Primim două mesaje, pentru a le decripta calculăm cheia:
-- Primul mesaj are cheia de decriptare 3.
-     - Deci scoatem din fiecare caracter codul 3.
+- Primul mesaj are cheia de decriptare 3
+     - deci scoatem din fiecare caracter codul 3
     - PQ@Alderaa1:30000!A!->20000
-- Al doilea mesaj are cheia 5.
+- Al doilea mesaj are cheia 5
     - @Cantonica:3000!D!->4000NM
-- Ambele mesaje sunt valabile și conțin planete, populație, tipul de atac și număr de soldați.
-- După decriptarea tuturor mesajelor, imprimăm fiecare planetă conform formatului dat.
+- Ambele mesaje sunt valabile și conțin planete, populație, tipul de atac și număr de soldați
+- După decriptarea tuturor mesajelor, imprimăm fiecare planetă conform formatului dat
 
 ### Exemplu
 | **Input** | **Output** |
@@ -625,14 +625,15 @@ Primim două mesaje, pentru a le decripta calculăm cheia:
 | tt(''DGsvywgerx>6444444444%H%1B9444 | Destroyed planets: 2 |
 | GQhrr|A977777(H(TTTT | -> Cantonica |
 | EHfsytsnhf?8555&I&2C9555SR | -> Coruscant |
+
 ### Comentarii
 Primim trei mesaje.
 - Primul mesaj este decriptat cu cheia 4:
     - pp$##@Coruscant:2000000000!D!->5000
 - Al doilea mesaj are cheia 7:
     - @Jakku:200000!A!MMMM
-    - Acesta este un mesaj nevalid, numărul soldaților lipsește, așa că continuăm.
-- Al treilea mesaj are cheia 5.
+    - Acesta este un mesaj nevalid, numărul soldaților lipsește, așa că continuăm
+- Al treilea mesaj are cheia 5
     - @Cantonica:3000!D!->4000NM
 
 [/task-description]
@@ -851,7 +852,7 @@ Veți primi **toți demonii pe o singură linie**, **separate prin virgule și z
 Sortați-le în **ordine alfabetică și imprimaț numele lor** conform **sănătății și daunelor fiecărui**.
 
 ### Input
-- Intrarea va fi citită de pe consolă.
+- Intrarea va fi citită de pe consolă
 - Intrarea constă dintr-o singură linie care conține toate numele demonilor separate prin virgule și zero sau mai multe spații în format:
     - "\{demon name\}, \{demon name\}, … \{demon name\}"
 
@@ -873,8 +874,8 @@ Imprimați toți demonii sortate după numele lor în ordine crescătoare, fieca
 
 ### Comentarii
 - M3ph-0.5s-0.5t0.0**:
-    - Health = 'M' + 'p' + 'h' + 's' + 't' = 524 health.
-    - Damage = (3 + (-0.5) + (-0.5) + 0.0) * 2 * 2 = 8 damage.
+    - Health = 'M' + 'p' + 'h' + 's' + 't' = 524 health
+    - Damage = (3 + (-0.5) + (-0.5) + 0.0) \* 2 \* 2 = 8 damage
 
 ### Exemplu
 | **Input** | **Output** |
@@ -884,10 +885,10 @@ Imprimați toți demonii sortate după numele lor în ordine crescătoare, fieca
 
 ### Comments
 - Azazel: 
-    - Health - 'A' + 'z' + 'a' + 'z' + 'e' + 'l' = 615 health. Damage - no digits = 0 damage.
+    - Health - 'A' + 'z' + 'a' + 'z' + 'e' + 'l' = 615 health. Damage - no digits = 0 damage
 - M3ph1st0**:
-    - Health - 'M' + 'p' + 'h' + 's' + 't' = 524 health.
-    - Damage - (3 + 1 + 0) * 2 * 2 = 16 damage.
+    - Health - 'M' + 'p' + 'h' + 's' + 't' = 524 health
+    - Damage - (3 + 1 + 0) \* 2 \* 2 = 16 damage
 
 [/task-description]
 [code-io /]

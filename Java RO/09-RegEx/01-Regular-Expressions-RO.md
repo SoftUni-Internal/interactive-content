@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Ce sunt Expresiile Regulate??
 
- **Abrevierea** pentru **expresia regulată** este **regex**.
+**Abrevierea** pentru **expresia regulată** este **regex**.
 
 O **expresie regulată** definește un  **șablon de căutare** pentru **șiruri**.
  
@@ -33,17 +33,17 @@ Puteți **juca** cu **regex live** la:
 
 [slide hideTitle]
 
- # Clasele de caractere
+# Clasele de caractere
 
-  În **contextul expresiilor regulate**, o clasă de caractere este un **set de caractere încadrate între paranteze drepte**.
+În **contextul expresiilor regulate**, o clasă de caractere este un **set de caractere încadrate între paranteze drepte**.
   
-  Specifică **caracterele** care **se vor potrivi cu succes** unui **singur caracter** dintr-un anumit **șir de intrare**.
+Specifică **caracterele** care **se vor potrivi cu succes** unui **singur caracter** dintr-un anumit **șir de intrare**.
 
 - Clasă simplă - un set de caractere unul lângă altul între paranteze drepte:
 
- [image assetsSrc="regex-example(2).png" /]
+[image assetsSrc="regex-example(2).png" /]
 
- În exemplul de mai sus, clasa `[abc]` se potrivește cu orice caracter fie **a** **b** sau **c**.
+În exemplul de mai sus, clasa `[abc]` se potrivește cu orice caracter fie **a** **b** sau **c**.
 
 - Negare - metacaracterul `^` la începutul clasei de caractere se potrivește cu toate caracterele, cu excepția celor enumerate
   - `[^abc]` - matches any character that is **not** **a**,**b** or **c**

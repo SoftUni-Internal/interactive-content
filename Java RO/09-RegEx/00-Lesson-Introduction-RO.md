@@ -17,6 +17,4 @@
 
 - Backreferences și concepte mai avansate
 
-4. **Exerciții Live**
-
 [/slide]

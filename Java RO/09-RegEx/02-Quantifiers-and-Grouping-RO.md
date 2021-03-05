@@ -42,7 +42,6 @@ Putem împărți regexul în **grupuri** și putem folosi aceste grupuri pentru 
 
 În exemplul de mai sus, există doar un singur grup - textul evidențiat verde.
 
-
 - `?:subexpression` - definește un grup care nu captează
 
 [image assetsSrc="regex-example(18).png" /]

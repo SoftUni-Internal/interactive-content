@@ -130,7 +130,7 @@ System.out.println(String.join(", ",tokens));
 [slide hideTitle]
 # Problem with Solution: Match Full Name
 
-[code-task title="Match Full Name" taskId="Java-Fundamentals-2-Regex-lab-Match-Full-Nmaes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Match Full Name" taskId="Java-Fundamentals-2-Regex-lab-Match-Full-Name" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 ```
