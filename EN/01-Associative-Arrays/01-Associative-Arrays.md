@@ -9,7 +9,7 @@ The JavaScript language is built on one central data structure - the associative
 
 Associative arrays in JavaScript are objects in which, the indexes are replaced by user defined keys.
 
-They do not have a **length** property like normal array and cannot be iterated using normal for loop.
+They do not have a **length** property like normal array and cannot be iterated using normal for-loop.
 
 Arrays are indexed by **string keys**.
 
