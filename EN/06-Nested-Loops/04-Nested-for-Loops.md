@@ -1,18 +1,18 @@
 // sectionId: "Javascript::Programming-Basics::Nested-Loops::Nested-For-Loops"
 
 [slide hideTitle]
-# Nested "for" Loops
+# Nested For-Loops
 
 [video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-17-18-nested-for-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Nested for-loops are statements that consist of several for loops located inside each other 
+Nested **for-loops** are statements that consist of several **for-loops** located inside each other 
 
-**Nested For loops** are used:
+**Nested for-loops** are used:
 
 * To execute an **action**, which **executes** multiple **actions**
 * To make more **complex** calculations and variations
 
-The syntax for a **nested for loop in JS** is as follows:
+The syntax for a **nested for-loop in JS** is as follows:
 ```js
 for (variable initialization; condition; increment) {
   // Outer Loop 
@@ -83,7 +83,7 @@ function adapter(input, code) {
 # Description
 Create a program, which prints a triangle of stars with a given size:
 
-* You receive the **height** of a triangle from the console
+* You will receive the **height** of a triangle from the console
 
 * Print the **triangle of stars** to the console
 

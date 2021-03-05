@@ -26,7 +26,6 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-//TODO Change the task
 It is Friday night, and you are wondering which movie to watch. 
 
 You decide to create a program, which chooses it for you. 
@@ -49,7 +48,7 @@ Keep in mind the following:
 
 ## Input
 
-You receive multiple elements from the console until the "**STOP**" command or until the limit of 7 movies is reached:
+You will receive multiple elements from the console until the "**STOP**" command or until the limit of 7 movies is reached:
 
 - Movie title: String
 
@@ -75,17 +74,11 @@ Print on the console:
 
 [hints]
 [hint]
-First, we get **Matrix**, the first letter is M with a value of 77, it is a capital letter so we subtract from it the length of the title 77 \- 6 \= 71.
+When we receive the first film, we have to calculate the points for it. Similarly, we proceed with each film until we receive the command "**STOP**".
 [/hint]
 [hint]
-The second letter has a value of 97 and we subtract from its title length \* 2 from the sum 97 \- 12 = 85.
-
-Similarly, we proceed with each subsequent letter until we get the final amount of 563.
+Upon receiving the "**STOP**" command, we print the title with the highest value.
 [/hint]
-[hint]
-Upon receiving the "**STOP**" command, we print the title with the highest value, which is **Breaking bad** with a sum of 878.
-[/hint]
-
 [/hints]
 
 [/task-description]

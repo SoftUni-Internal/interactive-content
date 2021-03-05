@@ -6,9 +6,9 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-24-27-iterating-over-characters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-It is good to know that **for loops** do not only work with numbers.
+It is good to know that **for-loops** do not only work with numbers.
 
-We can also use **for loops** to iterate over **characters**.
+We can also use **for-loops** to iterate over **characters**.
 
 Here is an example of how a loop can pass sequentially through **letters** in the English alphabet:
 

@@ -9,7 +9,7 @@ A nested loop is construction with which one loop is placed inside \(inner\) the
 
 There can be both nested "**for**" and "**while**" loops. 
 
-You can not only nest "**for**" in "**for**" and "**while**" in "**while**", but also for in "**while**" and vice versa: 
+You can nest loops in each other, for example, **for-loops** inside **for-loops** and **while-loops** inside **while-loops**:
 
 ```js
 // Outer Loop

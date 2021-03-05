@@ -7,7 +7,7 @@
 
 # For-loops may have different steps
 
-* Reverse for loop: 
+* Reverse **for-loop**: 
 
 ``` js live
 for (let i = 5; i >= 0; i--){
@@ -15,7 +15,7 @@ for (let i = 5; i >= 0; i--){
 }
 ```
 
-* For loop with a step of 2
+* **For-loop** with a step of 2
 
 ``` js live
 for (let j = 1; j <= 10; j += 2) {
@@ -23,7 +23,7 @@ for (let j = 1; j <= 10; j += 2) {
 }
 ```
 
-* For loop which multiplies itself by 2 with each step
+* **For-loop** which multiplies itself by 2 with each step
 
 ``` js live
 for (let k = 1; k <= 6; k *= 2) {
@@ -31,7 +31,7 @@ for (let k = 1; k <= 6; k *= 2) {
 }
 ```
 
-* For loop which uses a step that divides the variable by 2
+* **For-loop** which uses a step that divides the variable by 2
 
 ``` js live
 for (let d = 40; d > 0; d /= 2) {
@@ -68,7 +68,7 @@ function adapter(input, code) {
 # Description
 Create a program, which prints the numbers from **n** down to 1.
 
-- You receive a number **n** as input
+- You will receive a number **n** as input
 
 - Print all the numbers from **n** to 1 in **descending order**
 
@@ -153,7 +153,7 @@ function adapter(input, code) {
 # Description
 Create a program, which prints the numbers from 1 to **n** with a step 3:
 
-* You receive a number **n** as input
+* You will receive a number **n** as input
 
 * Print the numbers from 1 up to **n** with step 3
 
@@ -238,7 +238,7 @@ function adapter(input, code) {
 # Description
 Create a program, which prints all the even powers of 2 up to a given input:
 
-* You receive a number **n** as input
+* You will receive a number **n** as input
 
 * Print the even powers of 2 up to **n**:
 

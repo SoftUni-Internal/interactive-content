@@ -9,8 +9,8 @@
 
 ## In this lesson you will learn:
 
-**1. While Loop**
-- **while** loop overview
+**1. While-Loop**
+- **while-loop** overview
 
 **2. While vs For Loop**
 - Difference between **while** and **for** loop
@@ -18,7 +18,7 @@
 **3. The Break Operator**
 - When we use the **break** operator
 
-**4. Infinite while Loop**
+**4. Infinite while-loop**
 
 
 [/slide]

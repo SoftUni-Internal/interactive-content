@@ -1,11 +1,11 @@
 // sectionId: "Javascript::Programming-Basics::Nested-Loops::Nested-While-Loops"
 
 [slide hideTitle]
-# Nested "while" Loops
+# Nested While-Loops
 
 [video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-22-23-nested-wihle-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The use of nested "**while**" loops is very similar to the one of the "**for**".
+The use of nested **while-loops** is very similar to the one of the "**for**".
 
 Here is the syntax in JS:
 ```js
@@ -66,7 +66,7 @@ function adapter(input, code) {
 # Description
 Create a program, which prints a triangle of stars with a given size:
 
-* You receive the **height** of a triangle as input
+* You will receive the **height** of a triangle as input
 * Print the **triangle of stars** to the console
 
 # Example
@@ -159,7 +159,7 @@ function adapter(input, code) {
 # Description
 Create a program, which processes a sequence of numbers and prints the sum of their digits:
 
-* You receive an array of numbers as input
+* You will receive an array of numbers as input
 
 * Print the sum of digits for each number: "**Sum of digits =** \{**sum**\}"
 

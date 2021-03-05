@@ -11,13 +11,13 @@
 
 Imagine the current time is **11:00 AM.** 
 
-The minutes on the clock will gradually get increased by **1 until they reach 59.** 
+The minutes on the clock will gradually increase by **1 until they reach 59.** 
 
-Once they get to 60, the hours will be incremented by 1 and the minutes will be reset back to 00. 
+Once they get to 60, the hours will be incremented by 1 and the minutes will reset back to 00. 
 
-We can represent this process using **for loops.** 
+We can represent this process using **for-loops**.
 
-More importantly, this is a good example of why we would even need more than one for-loop to complete any task. 
+More importantly, this is a good example of why we would even need more than one **for-loop** to complete any task. 
 
 As you can see in the pseudocode example there are two loops: an inner and an outer one. 
 
