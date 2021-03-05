@@ -7,10 +7,10 @@
 
 **Stacks** are data structures similar to **lists**. The elements in a stack are ordered based on the **LIFO** principle - **Last In First Out**. When you add an element, it is always placed **on top** of the stack. Removing an element also removes it **from the top** of the stack.
 
-- Stacks provide the following functionality:
-    - **pushing** an element to the top of the stack
-    - **popping** an element from the top of the stack
-    - getting (**peeking at**) the top element without removing it
+Stacks provide the following functionality:
+- **pushing** an element to the top of the stack
+- **popping** an element from the top of the stack
+- getting (**peeking at**) the top element without removing it
 
 [image assetsSrc="Java-Advanced-Stack-and-Queues-3.png" /]
 
@@ -21,7 +21,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-12-ArrayDeque-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
  
-- Stack Implementation using `ArrayDeque<E>`
+- Stack Implementation using `ArrayDeque<E>`:
 
 ```java
 ArrayDeque<Integer> stack = new ArrayDeque<>();
@@ -74,7 +74,7 @@ System.out.println(element);
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-13-Stack-Utility-Methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- `size()` - returns the number of elements in the stack
+- `size()` - returns the number of elements in the stack:
 
 ```java live
 ArrayDeque<String> stackOfCars = new ArrayDeque<>();
@@ -85,7 +85,7 @@ stackOfCars.push("Lucid Air");
 System.out.println("The size is: " + stackOfCars.size());
 ```
 
-- `isEmpty()` - checks whether the stack is empty or not
+- `isEmpty()` - checks whether the stack is empty or not:
 
 ```java live
 ArrayDeque<String> stackOfCars = new ArrayDeque<>();
@@ -96,7 +96,7 @@ stackOfCars.push("Lucid Air");
 System.out.println("Is the Stack empty? " + stackOfCars.isEmpty());
 ```
 
-- `contains(element)` - checks whether a stack contains a specific element. Returns **true** if it does, otherwise it returns **false**
+- `contains(element)` - checks whether a stack contains a specific element. Returns **true** if it does, otherwise it returns **false**:
 
 ```java live
 ArrayDeque<String> stackOfCars = new ArrayDeque<>();
@@ -114,7 +114,7 @@ System.out.println(stackOfCars.contains("BMW M3"));
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-14-Stack-Overview-of-all-operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The animation below illustrates all the stack operations that we can use for solving the upcoming programming problems.
+The animation below illustrates all the stack operations that we can use for solving the upcoming programming problems.<br />
 
 [image assetsSrc="Java-Advanced-Stack-and-Queues-10.gif" /]
 
@@ -139,7 +139,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that takes 2 types of browser commands:
+Write a program that takes two types of browser commands:
 
 - Normal navigation: a **URL**, provided in **string format**
 
@@ -149,7 +149,7 @@ After each command, the program should **print the current URL**.
 
 If the **back** command can not be executed, print: `no previous URLs`.
 
-The input **ends** with the `Home` command and the program **stops** at that point.
+The input **ends** with the `Home` command. The program **stops** at that point.
 
 
 ## Examples
@@ -168,8 +168,8 @@ The input **ends** with the `Home` command and the program **stops** at that poi
 ## Hints
 - Use `ArrayDeque<>`
 - Use `String` to store the current URL
-- Use `push()`, when moving to the next URL
-- Use `pop()`, when going back
+- Use `push()` when moving to the next URL
+- Use `pop()` when going back
 
 
 
@@ -340,7 +340,7 @@ public class Main {
 ## Description
 **Create a calculator** to **evaluate simple expressions**. It should work with only two operations - addition (+) and subtraction (-).
 
-There will be no operations placed in brackets and implementing operator precedence **is not** required.
+There will be no operations placed in brackets, and implementing operator precedence **is not** required.
 
 Solve the problem **using a Stack**.
 
@@ -358,7 +358,7 @@ Solve the problem **using a Stack**.
 - Consider using the `add()` method
 - You can either:
     - add the elements and then pop them out 
-    - or push them and reverse the stack
+    - push them and reverse the stack
 
 
 [/task-description]
@@ -578,7 +578,7 @@ Scan through the string and **extract** each **sub-expression**.
 - Use a stack, implemented with`ArrayDeque()` 
 - Scan through the expression searching for brackets 
    - If you find an opening bracket, push the index into the stack 
-   - If you find a closing bracket, pop the top element from the stack. This is the index of the opening bracket. 
+   - If you find a closing bracket, pop the top element from the stack. This is the index of the opening bracket 
    - Use the current and the popped index to extract the sub-expression 
 [/task-description]
 [code-io /]
