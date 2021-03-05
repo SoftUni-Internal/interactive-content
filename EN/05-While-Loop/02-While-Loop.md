@@ -5,15 +5,15 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/05.While-Loop/05.PB-JavaScript-While-Loop-8-9-10-While-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In programming, the "**while**" **loop** is used when we want to **repeat** the execution of a certain logic while a condition is in effect. 
+In programming, the **while-loop** is used when we want to **repeat** the execution of a certain logic while a condition is in effect. 
 
 By **"condition"**, we understand every **expression** that returns `true` or `false`. 
 
-When **the condition** is **wrong**, the while loop is **interrupted**, the program **continues** to execute the remaining code after the loop. 
+When **the condition** is **wrong**, the **while-loop** is **interrupted**, the program **continues** to execute the remaining code after the loop. 
 
 [image assetsSrc="05-use-case-while.png" /]
 
-The while loop looks like this:
+The **while-loop88 looks like this:
 ```js
 while (condition) {
   loop body;
@@ -26,7 +26,7 @@ It determines how long the loop body will be repeated and it is called "loop con
 
 In this example, the "loop body" is the code executed at each iteration of the loop, i.e. whenever the input condition is true.
 
-In the while loop, firstly the Boolean expression is evaluated and if it is `true`, the sequence of operations in the body of the loop is executed. 
+In the **while-loop**, firstly the Boolean expression is evaluated and if it is `true`, the sequence of operations in the body of the loop is executed. 
 
 Then again the input condition is checked and if it is `true` again, the body of the loop is executed. 
 
