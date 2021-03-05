@@ -31,9 +31,9 @@ class Dice {
      - `TreeMap <cheie, valoare>`
 - Expresii Lambda
 - API Stream
-     - Filtrare
-     - Cartografiere
-     - Comanda
+     - filtrare
+     - cartografiere
+     - comanda
 [/slide]
 
 
