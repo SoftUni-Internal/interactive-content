@@ -18,7 +18,7 @@
 **3. The Break Operator**
 - When we use the **break** operator
 
-**4. Infinite while Loop**
+**4. Infinite while-loop**
 
 
 [/slide]
