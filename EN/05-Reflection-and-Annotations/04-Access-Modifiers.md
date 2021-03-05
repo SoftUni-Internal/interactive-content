@@ -83,44 +83,37 @@ The array elements are: 2 9 3 0 7
 
 [slide hideTitle]
 # Problem with Soltuion: High Quality Mistakes
-[code-task title="High Quality Mistakes" taskId="Java-OOP-Advanced-Reflection-High-Quality-Mistakes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="High Quality Mistakes" taskId="Java-OOP-Advanced-Reflection-lab-High-Quality-Mistakes" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
+[code-upload allowedMemory="30" /]
 [task-description]
-## Description
-You are already expert of **High Quality Code**, so you know what kind of **access modifiers** must be set to members of class. 
+# Description
+You are already an expert in writing **high quality code**, so you know what kind of **access modifiers** must be set to the members of a class. 
 
 Time for **revenge** has come. 
 
-Now you have to check code produced by your "**Beautiful and Smart**" trainers in class Reflection. 
+Now you have to check the code produced by your "**Beautiful and Smart**" trainers in class Reflection. 
 
 Check all **fields and methods access modifiers**. 
 
 Sort each category of members **alphabetically**. 
 
 Print on console all mistakes in **format**:
-- Fields
 
-**{fieldName} must be private!**
-- Getters
+- Fields:
 
-**{methodName} have to be public!**
-- Setters
+"**\{fieldName\} must be private!**"
 
-**{methodName} have to be private!**
+- Getters:
+
+"**\{methodName\} have to be public!**"
+
+- Setters:
+
+"**\{methodName\} have to be private!**"
 
 
 [/task-description]
-[code-io /]
 [tests]
 [test]
 [input]
