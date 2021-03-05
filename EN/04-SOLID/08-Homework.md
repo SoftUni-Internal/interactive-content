@@ -17,11 +17,14 @@ The **interface** for the end-user should be as follows:
 
 ```java
 Layout simpleLayout = new SimpleLayout();
-Appender consoleAppender = new ConsoleAppender(simpleLayout);
+Appender consoleAppender = 
+       new ConsoleAppender(simpleLayout);
 Logger logger = new MessageLogger(consoleAppender);
 
-logger.logError("3/26/2015 2:08:11 PM", "Error parsing JSON.");
-logger.logInfo("3/26/2015 2:08:11 PM", "User Peter successfully registered.");
+logger.logError("3/26/2015 2:08:11 PM", 
+            "Error parsing JSON.");
+logger.logInfo("3/26/2015 2:08:11 PM", 
+            "User Peter successfully registered.");
 ```
 ### Sample Output
 
@@ -75,16 +78,22 @@ The library should provide the following ready classes for the client:
 
 ```java
 Layout simpleLayout = new SimpleLayout();
-Appender consoleAppender = new ConsoleAppender(simpleLayout);
+
+Appender consoleAppender = 
+          new ConsoleAppender(simpleLayout);
 
 File file = new LogFile();
+
 Appender fileAppender = new FileAppender(simpleLayout);
 ((FileAppender) fileAppender).setFile(file);
 
-Logger logger = new MessageLogger(consoleAppender, fileAppender);
+Logger logger = new MessageLogger(consoleAppender,
+                                  fileAppender);
 
-logger.logError("3/26/2015 2:08:11 PM", "Error parsing JSON.");
-logger.logInfo("3/26/2015 2:08:11 PM", "User Peter successfully registered.");
+logger.logError("3/26/2015 2:08:11 PM",
+                "Error parsing JSON.");
+logger.logInfo("3/26/2015 2:08:11 PM", 
+                "User Peter successfully registered.");
 ```
 
 The above code should log the messages, both on the **console**, and in **LogFile** in the format **SimpleLayout** provides.
@@ -99,11 +108,16 @@ For example, the end user should be able to create his own **XmlLayout** and mak
 
 ```java
 Layout xmlLayout = new XmlLayout();
-Appender consoleAppender = new ConsoleAppender(xmlLayout);
+
+Appender consoleAppender = 
+         new ConsoleAppender(xmlLayout);
+         
 Logger logger = new MessageLogger(consoleAppender);
 
-logger.logFatal("3/31/2015 5:23:54 PM", "mscorlib.dll does not respond");
-logger.logCritical("3/31/2015 5:23:54 PM", "No connection string found in App.config");
+logger.logFatal("3/31/2015 5:23:54 PM", 
+       "mscorlib.dll does not respond");
+logger.logCritical("3/31/2015 5:23:54 PM", 
+       "No connection string found in App.config");
 
 ```
 ### Sample Output
@@ -122,16 +136,24 @@ The report level is in the order **Info**, **Warning**, **Error**, **Critical**,
 
 ```java
 Layout simpleLayout = new SimpleLayout();
-Appender consoleAppender = new ConsoleAppender(simpleLayout);
+
+Appender consoleAppender = 
+         new ConsoleAppender(simpleLayout);
+         
 consoleAppender.setReportLevel(ReportLevel.ERROR);
 
 Logger logger = new MessageLogger(consoleAppender);
 
-logger.logInfo("3/31/2015 5:33:07 PM", "Everything seems fine");
-logger.logWarning("3/31/2015 5:33:07 PM", "Warning: ping is too high - disconnect imminent");
-logger.logError("3/31/2015 5:33:07 PM", "Error parsing request");
-logger.logCritical("3/31/2015 5:33:07 PM", "No connection string found in App.config");
-logger.logFatal("3/31/2015 5:33:07 PM", "mscorlib.dll does not respond");
+logger.logInfo("3/31/2015 5:33:07 PM", 
+       "Everything seems fine");
+logger.logWarning("3/31/2015 5:33:07 PM", 
+       "Warning: ping is too high - disconnect imminent");
+logger.logError("3/31/2015 5:33:07 PM", 
+       "Error parsing request");
+logger.logCritical("3/31/2015 5:33:07 PM", 
+       "No connection string found in App.config");
+logger.logFatal("3/31/2015 5:33:07 PM", 
+       "mscorlib.dll does not respond");
 ```
 ### Sample Output
 
@@ -191,7 +213,7 @@ Console appenders should print directly at the console in the layout they are pr
 
 ```
 
-After the **&quot;END&quot;** command you should print **Logger** info which includes statistics about every appender (its type, layout, report level, messages appended and file size for file appenders):
+After the "**END**" command you should print **Logger** info which includes statistics about every appender (its type, layout, report level, messages appended and file size for file appenders):
 
 "Logger info
 Appender type: `<appender type>`, Layout type: `<layout type>`, Report level: `<REPORT LEVEL>`, Messages appended: `<count>`, File size: `<size>`"
