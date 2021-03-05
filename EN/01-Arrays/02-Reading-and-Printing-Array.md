@@ -102,7 +102,7 @@ for (int i = 0; i < arr.length; i++) {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-13-14-problem-and-solution-print-numbers-in-reverse-order-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Reverse an Array of Integers" taskId="java-fund-arrays-lab-reverse-array-of-integers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Reverse an Array of Integers" taskId="java-fund-1-arrays-lab-reverse-array-of-integers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -242,7 +242,7 @@ System.out.println(String.join(" ", arr));
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-16-17-problem-and-solution-reverse-an-array-of-strings-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Reverse an Array of Strings" taskId="java-fund-arrays-lab-reverse-an-array-of-strings" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Reverse an Array of Strings" taskId="java-fund-1-arrays-lab-reverse-an-array-of-strings" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -271,13 +271,13 @@ Print the output on a single line \(space separated\).
 
 
 ## Hints
-* Read the array of strings.
+* Read the array of strings
 
-* **Exchange** the **first** element \(at index 0\) with the **last** element \(at index n-1\).
+* **Exchange** the **first** element \(at index 0\) with the **last** element \(at index n-1\)
 
-* **Exchange** the **second** element \(at index 1\) with the element **before the last** \(at index n-2\).
+* **Exchange** the **second** element \(at index 1\) with the element **before the last** \(at index n-2\)
 
-* Continue the same way until the middle of the array is reached.
+* Continue the same way until the middle of the array is reached
 
 [/task-description]
 [code-io /]
@@ -339,7 +339,7 @@ f60 e50 d40 c30 b20 a10
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-problem-and-solution-equal-arrays-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Equal Arrays" taskId="java-fund-Arrays-Equal-Arrays" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Equal Arrays" taskId="java-fund-1-Arrays-lab-Equal-Arrays" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;

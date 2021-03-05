@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Problem: Train
 
-[code-task title="Train" taskId="java-fund-Arrays-Exercise-Train" executionType="tests-execution" executionStrategy="java-code" requiresInput requiresInput]
+[code-task title="Train" taskId="java-fund-1-arrays-Train" executionType="tests-execution" executionStrategy="java-code" requiresInput requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -134,7 +134,7 @@ In the end **print the whole train** and after that the **sum of the people on t
 
 [slide hideTitle]
 # Problem: Common Elements
-[code-task title="Common Elements" taskId="java-fund-Arrays-Exercise-Common-Elements" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Common Elements" taskId="java-fund-1-arrays-Common-Elements" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -241,7 +241,7 @@ ggg
 [slide hideTitle]
 # Problem: Zig-Zag Arrays
 
-[code-task title="Zig-Zag Arrays" taskId="java-fund-Arrays-Exercise-Zig-Zag-Arrays" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Zig-Zag Arrays" taskId="java-fund-1-arrays-Zig-Zag-Array" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -365,7 +365,7 @@ Form 2 arrays as **shown below**.
 
 [slide hideTitle]
 # Problem: Array Rotation
-[code-task title="Array Rotation" taskId="java-fund-Arrays-Exercise-Array-Rotation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Array Rotation" taskId="java-fund-1-arrays-Rotation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -474,7 +474,7 @@ Rotations are done by switching the element on the first index with the element 
 [slide hideTitle]
 # Problem: Top Integers
 
-[code-task title="Top Integers" taskId="java-fund-08-Arrays-Exercise-Top-Integers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Top Integers" taskId="java-fund-1-arrays-Top-Integers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -489,7 +489,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program to **find all the top integer**s in an array.
+Write a program to **find all the top integers** in an array.
 
 A top integer is an integer that is **bigger** than all the elements **to its right**.
 
@@ -571,7 +571,7 @@ A top integer is an integer that is **bigger** than all the elements **to its ri
 
 [slide hideTitle]
 # Problem: Equal Sums
-[code-task title="Equal Sums" taskId="java-fund-Arrays-Exercise-Equal-Sums" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Equal Sums" taskId="java-fund-1-arrays-Equal-Sums" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -724,7 +724,7 @@ no
 [slide hideTitle]
 # Problem: Max Sequence of Equal Elements
 
-[code-task title="Max Sequence of Equal Elements" taskId="java-fund-08-Arrays-Exercise-Max-Sequence-of-Equal-Elements" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Max Sequence of Equal Elements" taskId="java-fund-1-arrays-Max-Sequence-of-Equal-Elements" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -747,11 +747,8 @@ If **several longest sequences exist**, print the **leftmost** one.
 | **Input** | **Output** |
 | --- | --- |
 | 0 1 1 5 2 2 6 3 3 | 1 1 |
-
-### Example
-| **Input** | **Output** |
-| --- | --- |
 | 1 1 1 2 3 1 3 3 | 1 1 1 |
+
 
 [/task-description]
 [code-io /]
@@ -882,7 +879,7 @@ If **several longest sequences exist**, print the **leftmost** one.
 
 [slide hideTitle]
 # Problem: Magic Sum
-[code-task title="Magic Sum" taskId="java-fund-08-Arrays-Exercise-Magic-Sum" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Magic Sum" taskId="java-fund-1-arrays-Magic-Sum" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -994,7 +991,7 @@ Write a program, which **prints all unique pairs** in an array of integers whose
 [slide hideTitle]
 # Problem: LadyBugs
 
-[code-task title="LadyBugs" taskId="java-fund-Arrays-Exercise-LadyBugs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="LadyBugs" taskId="java-fund-1-arrays-LadyBugs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1011,7 +1008,7 @@ public class Main {
 ## Description
 You are given a **field size** and the **indexes of ladybugs** inside the field.
 
-After that on every new line, until the "end" command is given, a ladybug **changes its position** either to its **left** or to its **right** by a given fly length.
+After that on every new line, until the "**end**" command is given, a ladybug **changes its position** either to its **left** or to its **right** by a given fly length.
 
 A **command** to a ladybug looks like this: "0 right 1".
 
@@ -1044,7 +1041,7 @@ For the example above, the output should be '0 1 0'.
 - On the second line, you will receive the initial indexes of all ladybugs separated by a blank space
 
 The given indexes may or may not be inside the field range
-- On the next lines, until you get the "end" command you will receive commands in the format: "\{ladybug index\} \{direction\} \{fly length\}"
+- On the next lines, until you get the "**end**" command you will receive commands in the format: "\{ladybug index\} \{direction\} \{fly length\}"
 
 ### Output
 - Print the all cells within the field in format: "\{cell\} \{cell\} … \{cell\}"
