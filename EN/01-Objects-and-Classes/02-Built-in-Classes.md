@@ -208,7 +208,7 @@ You are given a **list of words in one line**.
 
 - Split the input string (by space) and create an array of words
 - Create a random number generator - an object rnd of type Random
-- In a for-loop exchange each number at positions 0, 1, …, words.Length-1 by a number at random position
+- In a for-loop exchange each number at positions 0, 1, ..., words.Length-1 by a number at random position
 
 To generate a random number in range use rnd.nextInt(words.length)
 
@@ -453,7 +453,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You will receive N - number in range \[0 – 1000\].
+You will receive N - number in range \[0 - 1000\].
 
 Calculate **Factorial of N** and print the result.
 
@@ -462,9 +462,6 @@ Calculate **Factorial of N** and print the result.
 | **Input** | **Output** |
 | --- | --- |
 | 5 | 120 |
-
-| **Input** | **Output** |
-| --- | --- |
 | 50 | 30414093201713378043612608166064768844377641568960512000000000000 |
 
 

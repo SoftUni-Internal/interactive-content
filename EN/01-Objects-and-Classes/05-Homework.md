@@ -818,7 +818,7 @@ The **second** element will be a **string** and will represent the **ID of the p
 
 The last element will be an **integer** and represents the **age of the person**.
 
-If you get a person whose **ID you've already received**, then **update** the name and age for that ID with that **of the new person**.
+If you get a person whose **ID you have already received**, then **update** the name and age for that ID with that **of the new person**.
 
 When you receive the **command** "End", **stop** taking input and **print all the people**.
 
