@@ -1,3 +1,4 @@
+# Strings
 
 [slide hideTitle]
 # Ce Este un Şir?

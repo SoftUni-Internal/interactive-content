@@ -1,4 +1,4 @@
-
+# Manipulating Strings
 [slide hideTitle]
 # Concatenare
 
@@ -55,15 +55,7 @@ Fiecare șir se repetă **n** ori, unde **n** este **lungimea a șirului**.
 | **Input** | **Output** |
 | --- | --- |
 | hi abc add | hihiabcabcabcaddaddadd |
-
-
-| **Input** | **Output** |
-| --- | --- |
 | work | workworkworkwork |
-
-
-| **Input** | **Output** |
-| --- | --- |
 | ball | ballballballball |
 
 [/task-description]
@@ -336,7 +328,7 @@ System.out.println(String.join(", ",words));
 
 [slide hideTitle]
 
-# înlocuire
+# Înlocuire
 
 Java also makes it possible to make **replacements** in a String.
 

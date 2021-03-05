@@ -139,11 +139,8 @@ Apoi **continuați cu următoarele două caractere**.
 | **Input** | **Output** |
 | --- | --- |
 | a aaaa | 9700 | 
-
-### Example
-| **Input** | **Output** |
-| --- | --- |
 | John Smith | 42025 | 
+
 
 [/task-description]
 [code-io /]
@@ -234,7 +231,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care**citește calea către un fișier**și**scade numele fișierului și extensia acestuia**.
+Scrieți un program care **citește calea către un fișier** și **scade numele fișierului și extensia acestuia**.
 
 ### Example
 | **Input** | **Output** |
@@ -547,11 +544,8 @@ Scrieți un program care **citește un șir din consolă** și **înlocuiește o
 | **Input** | **Output** |
 | --- | --- |
 | aaaaabbbbbcdddeeeedssaa | abcdedsa |
-
-### Example
-| **Input** | **Output** |
-| --- | --- |
 | qqqwerqwecccwd | qwerqwecwd |
+
 
 [/task-description]
 [code-io /]
@@ -680,7 +674,7 @@ Prima explozie este la indicele 3 și are o putere de 1.
 
 Ștergem doar cifra după caracterul exploziei.
 
-Șirul va arăta astfel: abv \>\> 1\> 2\> 2asdasd
+Șirul va arăta astfel: abv \>\> 1\> 2\> 2asdasd.
 
 A doua explozie este cu puterea unu și șirul se transformă în asta: abv \>\>\> 2\> 2asdasd
 
@@ -694,9 +688,9 @@ A 4-a explozie este cu puterea 2.
 
 Mai avem 1 putere din explozia anterioară, adăugăm puterea exploziei actuale la ceea ce a rămas și asta se adaugă la o putere totală de 3.
 
-Ștergem următoarele trei caractere și primim șirul abv \>\>\>\> dasd
+Ștergem următoarele trei caractere și primim șirul abv \>\>\>\> dasd.
 
-Nu mai avem explozii și imprimăm rezultatul: abv\>\>\>\>dasd
+Nu mai avem explozii și imprimăm rezultatul: abv\>\>\>\>dasd.
 
 [/task-description]
 [code-io /]

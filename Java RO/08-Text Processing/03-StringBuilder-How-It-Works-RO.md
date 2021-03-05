@@ -45,7 +45,7 @@ System.out.println(sb.capacity()); // 16
 - `StringBuilder(String str)` - creează un **StringBuilder** cu **șirul specificat**
 
 ```java live
-StringBuilder sb = new StringBuilder("Hello,JAVA");
+StringBuilder sb = new StringBuilder("Hello, JAVA");
 
 System.out.println(sb);
 
