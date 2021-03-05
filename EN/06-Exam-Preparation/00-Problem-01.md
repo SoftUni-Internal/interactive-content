@@ -33,9 +33,9 @@ function adapter(input, code) {
 
 # Description
 
-You are given an array of integers.
+The first line of input will consist of an array of integers.
 
-Write a function to modify the array.
+Create a program to modify the array.
 
 The possible alterations are: "**swap**", "**multiply**" or "**decrease**".
 
@@ -50,7 +50,7 @@ Save the product of the two at the index, where the first number was.
 ## Input
 On the first input line you will be given the initial array values, separated by a single space.
 
-On the next lines you will be getting commands until you receive the command "**end**".
+On the next lines you will be getting one of the commands. The program should stop functioning after receiving the "**end**" command.
 
 The commands could be:
 
@@ -61,15 +61,15 @@ The commands could be:
 * "**decrease**"
 
 ## Output
-The final form of the array should be printed out on the console, with each of its elements separated by a comma and a single space (", ").
+The final form of the array should be printed out to the console, with each of its elements separated by a comma and a single space (", ").
 
 ## Constraints
 
-* The commands are limited to: "**swap**", "**multiply**" or "**decrease**" and "**end**"
+* The commands are limited to: "**swap**", "**multiply**", "**decrease**" and "**end**"
 
-* All elements of the array will be integer numbers in the range \[-231...231\]
+* All elements of the array will be integers in range [-231...231]
 
-* The number of elements in the array will be in the range \[2...100\]
+* The number of elements in the array will be in range [2...100]
 
 * Indices will always be inside the range of the array
 
@@ -81,7 +81,7 @@ The final form of the array should be printed out on the console, with each of i
 
 **Comments**
 
-The initial state of the array: "23 -2 321 87 42 90 -123"
+The initial state of the array is: "23 -2 321 87 42 90 -123"
 
 * "**swap 1(-2)" and "3(87)**"
 
