@@ -48,7 +48,7 @@ In the end **print the count of successful registrations**:
 
 ### Input
 
-- On the first line, you will receive **n** - the count of inputs.
+- On the first line, you will receive **n** - the count of inputs
 - On the next **n** lines - input that you have to check for valid registrations
 
 ### Output
