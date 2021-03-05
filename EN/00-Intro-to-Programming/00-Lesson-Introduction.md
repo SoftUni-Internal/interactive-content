@@ -10,15 +10,15 @@
 
 **1. What is Coding**
 
-- How to write a simple Commands and Programs
+- Introduction to simple Commands and Programs
 
-**2. Java Language**
+**2. The Java Language**
 
-- How is structured the Java language
+- Structure of the Java programming language
 
 **3. Development Environments (IDEs) for Java**
 
-- How to configurate our IDE for work
+- How to configure our IDE for work
 
 **4. Creating and Running Console Apps**
 
