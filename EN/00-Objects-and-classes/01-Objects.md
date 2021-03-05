@@ -118,7 +118,7 @@ console.log(Object.values(cat));
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-8-Iterate-through-keys-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We can iterate through the keys of an object by using a `for-in` loop.
+We can iterate through the keys of an object by using a **for-in loop**.
 
 This enables us to access the property of a given key:
 
