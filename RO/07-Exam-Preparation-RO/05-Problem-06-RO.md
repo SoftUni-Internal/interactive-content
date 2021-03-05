@@ -69,21 +69,21 @@ Imprimați pe consolă:
 | --- | --- |
 |movie(['Matrix', 'Breaking bad', 'Legend', 'STOP'])| The best movie for you is Breaking bad its ASCII sum is: 878.|
 
-**Comments**
-
-Mai întâi vom primi **Matrix**, prima literă este M cu valoarea de 77f, este o literă majusculă, așa că vom scădea din aceasta lungimea titlului 77 \- 6 \= 71.
-
-A doua literă are valoarea 97 și scădem lungimea titlului \* 2 din suma 97 \- 12 = 85.
-
-În mod similar, procedăm cu fiecare literă care urmează, până ajungem la rezultatul final de 563.
-
-După ce am primit comanda "**STOP**" , imprimăm titlul cu cea mai mare valoare, care este **Breaking** cu suma de 878.
 
 ## Example
 | **Intrare** | **Ieșire** |
 | --- | --- |
 |movie(['Wrong turn', 'The maze', 'Area 51', 'Night Club', 'Ice age', 'Harry Potter', 'Wizards'])| Title limit has been reached.|
 ||The best movie for you is Harry Potter its ASCII sum is: 948.|
+
+[hints]
+[hint]
+When we receive the first film, we have to calculate the points for it. Similarly, we proceed with each film until we receive the command "**STOP**".
+[/hint]
+[hint]
+Upon receiving the "**STOP**" command, we print the title with the highest value.
+[/hint]
+[/hints]
 
 [/task-description]
 [code-io /]
