@@ -75,10 +75,10 @@ Print on the console:
 [hints]
 [hint]
 When we receive the first film, we have to calculate the points for it. Similarly, we proceed with each film until we receive the command "**STOP**".
+[/hint]
 [hint]
 Upon receiving the "**STOP**" command, we print the title with the highest value.
 [/hint]
-
 [/hints]
 
 [/task-description]
