@@ -19,28 +19,28 @@ The **car** has no problems when refueling and adds **all given fuel to its tank
 If vehicle **cannot** travel the given distance, its fuel does not change.
 
 ## Input
-- On the **first line** - information about the car in format "**Car \{fuel quantity\} \{liters per km\}**"
-- On the **second line** – info about the truck in format "**Truck \{fuel quantity\} \{liters per km\}**"
+- On the **first line** - information about the car in format "**Car** \{**fuel quantity**\} \{**liters per km**\}"
+- On the **second line** – info about the truck in format "**Truck** \{**fuel quantity**\} \{**liters per km**\}"
 - On the **third line** - **number of commands N** that will be given on the next **N** lines
 - On the next **N** lines – commands in format:
-    - "**Drive Car \{distance\}**"
-    - "**Drive Truck \{distance\}**"
-    - "**Refuel Car \{liters\}**"
-    - "**Refuel Truck \{liters\}**"
+    - "**Drive Car** \{**distance**\}"
+    - "**Drive Truck** \{**distance**\}"
+    - "**Refuel Car** \{**liters**\}"
+    - "**Refuel Truck** \{**liters**\}"
 ## Output
 After each **Drive command** print whether the Car/Truck was able to travel given distance in format if it is successful. 
 
 **Print the distance with two digits after the decimal separator except trailing zeros**. 
 
-Use the **DecimalFormat** class: "**Car/Truck travelled \{distance\} km**"
+Use the **DecimalFormat** class: "**Car/Truck travelled** \{**distance**\} **km**"
 
 Or if it is not: "**Car/Truck needs refueling**"
 
 Finally print the **remaining fuel** for both car and truck rounded **2 digits after floating point** in format:
 
-"**Car: \{liters\}**
+"**Car:** \{**liters**\}
 
-**Truck: \{liters\}**"
+**Truck:** \{**liters**\}"
 
 
 # Examples
@@ -370,21 +370,21 @@ If there are **no people in the bus** when driving the air-conditioner is **turn
 ## Input
 - On the **first three lines** you will receive information about the vehicles in format:
 
-**Vehicle \{initial fuel quantity\} \{liters per km\} \{tank capacity\}**
+"**Vehicle** \{**initial fuel quantity**\} \{**liters per km**\} \{**tank capacity**\}"
 
 - On fourth line - **number of commands N** that will be given on the next **N** lines
 - On the next **N** lines – commands in format
-    - **Drive Car \{distance\}**
-    - **Drive Truck \{distance\}**
-    - **Drive Bus \{distance\}**
-    - **DriveEmpty Bus \{distance\}**
-    - **Refuel Car \{liters\}**
-    - **Refuel Truck \{liters\}**
-    - **Refuel Bus \{liters\}**
+    - **Drive Car** \{**distance**\}
+    - **Drive Truck** \{**distance**\}
+    - **Drive Bus** \{**distance**\}
+    - **DriveEmpty Bus** \{**distance**\}
+    - **Refuel Car** \{**liters**\}
+    - **Refuel Truck** \{**liters**\}
+    - **Refuel Bus** \{**liters**\}
 ## Output
 - After each **Drive command** print whether the Car/Truck/Bus was able to travel given distance in format if it is successful:
 
-"**Car/Truck/Bus travelled {distance} km**"
+"**Car/Truck/Bus travelled** \{**distance**\} **km**"
 
 - Or if it is not:
 
@@ -395,11 +395,11 @@ If there are **no people in the bus** when driving the air-conditioner is **turn
  
 - Finally print the **remaining fuel** for car, truck and bus rounded **2 digits after floating point** in format:
 
-"**Car: \{liters\}**
+"**Car:** \{**liters**\}
 
-**Truck: \{liters\}**
+**Truck:** \{**liters**\}
 
-**Bus: \{liters\}**"
+**Bus:** \{**liters**\}"
 
 # Example
 | **Input** | **Output** |
@@ -517,7 +517,7 @@ Input should be read from the console.
 
 Every **even** line will contain information about the **Animal** in following format:
 
-**\{AnimalType\} \{AnimalName\} \{AnimalWeight\} \{AnimalLivingRegion\} \[\{CatBreed\} = Only if it is a cat\]**
+\{**AnimalType**\} \{**AnimalName**\} \{**AnimalWeight**\} \{**AnimalLivingRegion**\} \[\{**CatBreed**\} = Only if it is a cat\]
 
 On the **odd** lines you will receive information about the **food** that you should give to the **Animal**. 
 
@@ -531,7 +531,7 @@ If it **is**, they will **eat** it.
 
 **Otherwise**, you should **print** a **message** in the format:
 
-**\{AnimalType\} are not eating that type of food!**
+\{**AnimalType**\} are not eating that type of food!**
 
 **Cats** eat **any** kind of food, but **Tigers** accept **only Meat**. 
 
@@ -545,7 +545,7 @@ The input will continue until you receive "**End**".
 
 After that, **print** the information of **all received animals** in format:
 
-**\{AnimalType\} \[\{AnimalName\}, \{CatBreed\}, \{AnimalWeight\}, \{AnimalLivingRegion\}, \{FoodEaten\}\]**
+\{**AnimalType**\} \[\{**AnimalName**\}, \{**CatBreed**\}, \{**AnimalWeight**\}, \{**AnimalLivingRegion**\}, \{**FoodEaten**\}\]
 
 Print all **AnimalWeight** with no trailing zeroes after the decimal separator. 
 
@@ -753,7 +753,7 @@ When the command **exit** is entered, the program prints out the modified text a
 
 **All** commands are in the **form**:
 
-"**\{commandName\} \{startIndex\} \{endIndex\}**"
+"\{**commandName**\} \{**startIndex**\} \{**endIndex**\}"
 
 In these commands:
 
@@ -773,44 +773,44 @@ The code uses an **Initialization.java** file, which is missing, but should defi
 
 The files you are given support all the necessary logic to implement the following command:
 
-**uppercase** – transforms any alphabetical character in the text in the range **\[startIndex, endIndex\)** to its uppercase variant.
+**uppercase** – transforms any alphabetical character in the text in the range \[**startIndex**, **endIndex**\) to its uppercase variant.
 
 **For example:**
-If the current text is **som3. text** 
+If the current text is **dom3. text** 
 and we are given the command **uppercase 1 7**
-the current text will change to **sOM3. Text**
+the current text will change to **dOM3. Text**
 
 **Note**: if **startIndex == endIndex**, the command has no effect.
 
 Your task is to add the following commands:
-- **cut** – cuts (removes) characters in the text in the range **\[startIndex, endIndex\)**, and remembers the last thing that was removed 
+- **cut** – cuts (removes) characters in the text in the range \[**startIndex**, **endIndex**\), and remembers the last thing that was removed 
 
 **For example:**
-If the current text is **som3. text**
+If the current text is **dom3. text**
 and we execute the command **cut 1 7** 
-the current text will change to **sext** *(… I honestly did not plan in advance for this to be the result)*
+the current text will change to **dext**
 
 **Note**: if **startIndex == endIndex**, the command has no effect on the text, but “**clears**” the last remembered cut
 
-- **paste** – replaces the characters in the text in the range **[startIndex, endIndex)** with the characters   which were removed by the last cut
+- **paste** – replaces the characters in the text in the range \[**startIndex**, **endIndex**\) with the characters which were removed by the last cut
 
 **For example:**
-If we have the text **som3. Text** 
-and the commands **cut 1 7** (text changed to **sext**) **paste 3 4** 
-the current text will change to **sexom3. t** (we paste the last cut – "**om3. t**" – over the **'t'** at the end of the text)
+If we have the text **dom3. Text** 
+and the commands **cut 1 7** (text changed to **dext**) **paste 3 4** 
+the current text will change to **dexom3. t** (we paste the last cut – "**om3. t**" – over the **'t'** at the end of the text)
 
 **Note**: if **startIndex == endIndex**, **paste** will insert the text at position **startIndex**, meaning that any text at **startIndex** will be pushed to the right by the inserted text. 
 
 **For example:**
 If the last command was **paste 0 0** (not **paste 3 4**), 
-the text would be **om3. Tsext**
+the text would be **om3. Tdext**
  
 ## Input
 The program defined in `Main.java` reads the following input:
 
 A line of text, followed by a sequence of lines containing commands of the format 
 
-"**\{commandName\} \{startIndex\} \{endIndex\}**"
+"\{**commandName**\} \{**startIndex**\} \{**endIndex**\}"
 
 ending with the command **exit**.
 
@@ -841,7 +841,7 @@ The total memory allowed for use by your program is **16MB**.
 ## Example 1
 | **Input** | **Output** |
 | --- | --- |
-| som3. text | sexom3. t |
+| dom3. text | dexom3. t |
 | cut 1 7 |  |
 | paste 3 4 |  |
 | exit |  |
@@ -860,13 +860,13 @@ The total memory allowed for use by your program is **16MB**.
 [tests]
 [test open]
 [input]
-som3. text
+dom3. text
 cut 1 7
 paste 3 4
 exit
 [/input]
 [output]
-sexom3. t
+dexom3. t
 [/output]
 [/test]
 [test open]
