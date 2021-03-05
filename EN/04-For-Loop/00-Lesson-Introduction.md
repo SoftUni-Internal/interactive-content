@@ -17,7 +17,7 @@
 **2. Loops - Repeating Blocks of Code**
 - **For-Loop**
 
-**3. For-aaLoop with a Step**
+**3. For-Loop with a Step**
 - Iterate with different steps 
 
 **4. Iterating over Characters**
