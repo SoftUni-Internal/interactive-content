@@ -1,7 +1,7 @@
 // sectionId: "Javascript::Programming-Basics::While-Loop::Infinity-While-Loop"
 
 [slide hideTitle]
-# Infinite While Loop
+# Infinite While-Loop
 
 [video src="https://videos.softuni.org/hls/javascript-basics/05.While-Loop/05.PB-JavaScript-While-Loop-24-25-Infinite-While-Loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -19,7 +19,7 @@ while (true) {
 
 [slide hideTitle]
 
-# Example: Infinite While Loop (Bug)
+# Example: Infinite While-Loop (Bug)
 
 [video src="https://videos.softuni.org/hls/javascript-basics/05.While-Loop/05.PB-JavaScript-While-Loop-25-Example-infinite-while-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
