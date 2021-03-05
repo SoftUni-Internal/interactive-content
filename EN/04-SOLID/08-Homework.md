@@ -4,7 +4,7 @@
 [slide hideTitle]
 
 # Problem: Logger
-[code-task title="Logger" taskId="oop-advanced-java-Logger" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
+[code-task title="Logger" taskId="oop-advanced-java-SOLID-Principles-Logger" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [code-upload allowedMemory="30" /] 
 [task-description]
 Write a logging **library** for logging **messages**. 
@@ -41,7 +41,7 @@ Whenever a logger is told to **log** something, it calls all of its appenders an
 
 In turn, the appenders append the message (e.g. to the console or a file) according to the layout they have.
 
-### Requirements
+## Requirements
 
 Your library should correctly follow all **SOLID** principles:
 
@@ -55,7 +55,7 @@ Avoid code repetition.
 
 Name everything accordingly.
 
-### Implementations
+## Implementations
 
 The library should provide the following ready classes for the client:
 
@@ -71,7 +71,7 @@ The library should provide the following ready classes for the client:
 - **Logger** - a logger class which is used to log messages
     - calls each of its appenders when something needs to be logged
 
-## Sample Source Code
+### Sample Source Code
 
 ```java
 Layout simpleLayout = new SimpleLayout();
@@ -89,13 +89,13 @@ logger.logInfo("3/26/2015 2:08:11 PM", "User Peter successfully registered.");
 
 The above code should log the messages, both on the **console**, and in **LogFile** in the format **SimpleLayout** provides.
 
-### Extensibility
+## Extensibility
 
 The end-user should be able to add his own **layouts** / **appenders** / **loggers** and use them.
 
 For example, the end user should be able to create his own **XmlLayout** and make the appenders use it, **without directly editing** the library source code.
 
-## Sample Source Code
+### Sample Source Code
 
 ```java
 Layout xmlLayout = new XmlLayout();
@@ -106,11 +106,11 @@ logger.logFatal("3/31/2015 5:23:54 PM", "mscorlib.dll does not respond");
 logger.logCritical("3/31/2015 5:23:54 PM", "No connection string found in App.config");
 
 ```
-## Sample Output
+### Sample Output
 
 [image assetsSrc="solid-example(2).png" /]
 
-### Report Threshold
+## Report Threshold
 
 Implement a **report level threshold** in all appenders. 
 
@@ -118,7 +118,7 @@ The appender should append only messages with report level **above or equal to**
 
 The report level is in the order **Info**, **Warning**, **Error**, **Critical**, **Fatal**.
 
-## Sample Source Code
+### Sample Source Code
 
 ```java
 Layout simpleLayout = new SimpleLayout();
@@ -133,13 +133,13 @@ logger.logError("3/31/2015 5:33:07 PM", "Error parsing request");
 logger.logCritical("3/31/2015 5:33:07 PM", "No connection string found in App.config");
 logger.logFatal("3/31/2015 5:33:07 PM", "mscorlib.dll does not respond");
 ```
-## Sample Output
+### Sample Output
 
 [image assetsSrc="solid-example(3).png" /]
 
 Only messages from error and above are appended.
 
-### File
+## File
 
 A file should write all messages internally and it should keep information about its size.
 
@@ -149,7 +149,7 @@ For example, a file appender with simple layout and a single message **"3/31/201
 
 In case of Xml layout, the file would have size 6632, because of the extra characters within the tags.
 
-### Controller
+## Controller
 
 Implement a **Controller** which reads all appenders that a **Logger** will have and input messages from the console. 
 
