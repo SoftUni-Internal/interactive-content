@@ -39,7 +39,6 @@ public Person(String firstName, String lastName,
 # Problem with Solution: Validation Data
 
 [code-task title="Validation Data" taskId="Java-OOP-Advanced-Encapsulation-Validation-Data" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
-[code-editor language=java]
 [code-upload allowedMemory="30" /]
 
 [task-description]
