@@ -118,12 +118,10 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that reads one line of **integers** separated by a comma **","**.
 
-- Print the **even numbers**
-- **Sort** them in **ascending order**
-- Print them **again**
-
+Create a program that reads a line of **integers** separated by a comma and a space **", "**.
+Print only the **even numbers**.
+Then, **Sort** the even numbers in **ascending order** and print them **again**.
 
 # Example
 
