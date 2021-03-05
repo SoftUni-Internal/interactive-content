@@ -11,7 +11,7 @@
     - define special characters, operators and constructs for building complex pattern
     - can utilize character classes, groups, quantifiers and more
 
-```java live no-template
+```java live
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 

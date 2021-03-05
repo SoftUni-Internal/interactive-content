@@ -8,7 +8,7 @@
 
 The `java.util.regex.Pattern` and `java.util.regex.Matcher` classes are used for advanced regular expressions.
 
-```java live no-template
+```java live
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -49,7 +49,7 @@ The `find()` method scans the input sequence looking for the next subsequence th
 
 Check the following example:
 
-```java live no-template
+```java live 
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
@@ -81,7 +81,7 @@ There are **two** ways to replace a pattern with **Regex**:
 
 - `replaceAll()` - Replaces all the matched subsequences in the input with the given string value and returns the result
 
-```java live no-template
+```java live
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -144,7 +144,7 @@ System.out.println(String.join(", ",tokens));
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-25-Problem-and-Solution-match-full-name-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Match Full Name" taskId="Java-Fundamentals-Part-Two-Regex-Match-Full-Nmaes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Match Full Name" taskId="Java-Fundamentals-2-Regex-lab-Match-Full-Nmaes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -265,7 +265,7 @@ Ivan Ivanov Ivan Ivanov
 
 [slide hideTitle]
 # Problem with Solution: Match Numbers
-[code-task title="Match Numbers" taskId="Java-Fundamentals-Part-Two-Regex-Match-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Match Numbers" taskId="Java-Fundamentals-2-Regex-lab-Match-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

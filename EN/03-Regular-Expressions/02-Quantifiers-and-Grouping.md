@@ -88,9 +88,13 @@ Write a **regular expression** that **extracts dates from text**.
 # Problem with Solution: Email Validation
 
 Write a regular expression that performs simple **email validation**
+
 - An email consists of: **username**, **@**, **domain name**
+
 - **Usernames** are **alphanumeric**
+
 - **Domain names** consist of **two strings**, separated by a **period**
+
 - **Domain names** may contain only **English letters**
 
 [image assetsSrc="regex-example(27).png" /]

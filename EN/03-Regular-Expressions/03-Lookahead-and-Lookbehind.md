@@ -1,7 +1,6 @@
-[slide hideTitle]
 # Lookahead and Lookbehind
-
-## Lookahead 
+[slide hideTitle]
+# Lookahead 
 
 There are **two** ways to use `Lookahead` with RegEx:
 

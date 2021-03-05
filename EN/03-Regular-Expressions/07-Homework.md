@@ -4,9 +4,7 @@
 
 # Problem: Furniture
 
-
-
-[code-task title="Furniture" taskId="Java-Fundamentals-Part-Two-Regular-Expressions-Furniture" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Furniture" taskId="Java-Fundamentals-2-Regular-Expressions-Furniture" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -27,7 +25,7 @@ Write a program to **calculate the total cost** of different types of furniture.
 You will be given some lines of input **until you receive the line** "Purchase". 
 
 For the **line to be valid** it should be in the following **format**:
-- ">>\{furniture name\}<<\{price\}!\{quantity\}"
+- "\>\>\{furniture name\}\<\<\{price\}!\{quantity\}"
 
 The price can be a **floating-point number or a whole number**. 
 
@@ -167,7 +165,7 @@ Total money spend: 8593.09
 
 [slide hideTitle]
 # Problem: Race
-[code-task title="Race" taskId="Java-Fundamentals-Part-Two-Regex-Race" executionType="tests-execution" executionStrategy="java-code"  requiresInput]
+[code-task title="Race" taskId="Java-Fundamentals-2-Regex-Race" executionType="tests-execution" executionStrategy="java-code"  requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -340,7 +338,7 @@ end of race
 
 [slide hideTitle]
 # Problem: Bar Income
-[code-task title="Bar Income" taskId="Java-Fundamentals-Part-Two-Regex-Bar-Income" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Bar Income" taskId="Java-Fundamentals-2-Regex-Bar-Income" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -553,7 +551,7 @@ Total income: 20.00
 
 [slide hideTitle]
 # Problem: Star Enigma
-[code-task title="Star Enigma" taskId="Java-Fundamentals-Part-Two-Regex-Star-Enigma" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Star Enigma" taskId="Java-Fundamentals-2-Regex-Star-Enigma" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -577,20 +575,20 @@ You should **decrypt the messages**, following these rules:
 - To properly decrypt a message, **you should count all the letters** [s, t, a, r] - **case insensitive and remove the count** from the current ASCII value of each symbol of the encrypted message.
 
 **After decryption**:
-- Each **message** should have **a planet name, population, attack type** ('A', as attack or 'D', as destruction) and **soldier count**.
-- The **planet name starts after** '\@' and **contains only letters from the Latin alphabet**. 
-- The **planet population starts after** ':' and **is an integer**.
-- The **attack type** may be "A"(attack) or "D"(destruction) and **must be surrounded by** "!" (exclamation mark).
-- The **soldier count starts after** "->" and **should be an integer**.
+- Each **message** should have **a planet name, population, attack type** ('A', as attack or 'D', as destruction) and **soldier count**
+- The **planet name starts after** '\@' and **contains only letters from the Latin alphabet**
+- The **planet population starts after** ':' and **is an integer**
+- The **attack type** may be "A"(attack) or "D"(destruction) and **must be surrounded by** "!" (exclamation mark)
+- The **soldier count starts after** "->" and **should be an integer**
 
 The **order in the message** should be: 
-- **planet name -> planet population -> attack type -> soldier count**. 
+- **planet name -> planet population -> attack type -> soldier count** 
 
 Each part can be **separated from the others by any character except**: '\@', '-', '!', ':' and '>'.
 
 ### Output
 **After decrypting all messages**, you should **print the decrypted information in the following format**:
-- First print the attacked planets, then the destroyed planets.
+- First print the attacked planets, then the destroyed planets
 - "Attacked planets: \{attackedPlanetsCount\}"
 - "-> \{planetName1\}"
 - ...
@@ -810,7 +808,7 @@ Destroyed planets: 1
 
 [slide hideTitle]
 # Problem: Nether Realms
-[code-task title="Nether Realms" taskId="Java-Fundamentals-Part-Two-Regex-Nether-Realm" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Nether Realms" taskId="Java-Fundamentals-2-Regex-Nether-Realm" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -863,8 +861,8 @@ Sort them in **alphabetical order and print their names** along their **health a
 - A demon's name will contain at least one character
 - A demon's name cannot contain blank spaces ' ' or commas ','
 - A floating-point number will always have digits before and after its decimal separator
-- Number in a demon's name is considered everything that is a valid integer or floating point number (with dot '.' used as separator). 
-    - For example, all these are valid numbers: '4', '+4', '-4', '3.5', '+3.5', '-3.5' 
+- Number in a demon's name is considered everything that is a valid integer or floating point number (with dot '.' used as separator) 
+    - for example, all these are valid numbers: '4', '+4', '-4', '3.5', '+3.5', '-3.5' 
 
 ### Example
 | **Input** | **Output** |
@@ -1012,7 +1010,7 @@ k0.0rab0.02a0.5* - 513 health, 1.04 damage
 
 [slide hideTitle]
 # Problem: Extract Emails
-[code-task title="Extract Emails" taskId="Java-Fundamentals-Part-Two-Regex-Extract-Emails" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Extract Emails" taskId="Java-Fundamentals-2-Regex-Extract-Emails" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1036,14 +1034,14 @@ The text comes at the **only input line**.
 
 Emails are considered to be in **format** \{user\}\@\{host\}, where: 
 
-- \{user\} is a sequence of **letters and digits**, where '.', '-' and '_' can appear between them.
-    - Examples of **valid users**: "stephan", "mike03", "s.johnson", "st_steward", "12345".
-    - Examples of **invalid users**: ''--123", ".....", "_steve", ".info". 
-- \{host\} is a **sequence of at least two words, separated by dots** '.'. Each word is **sequence of letters and can have hyphens** '-' between the letters.
-    - Examples of **hosts**: "softuni.org", "software-university.com", "intoprogramming.info", "mail.softuni.org". 
-    - Examples of **invalid hosts**: "helloworld", ".unknown.soft.", "invalid-host-", "invalid-". 
-- Examples of **valid emails**: info\@softuni.org, kiki\@hotmail.co.uk, no-reply\@github.com, s.peterson\@mail.uu.net, info-bg\@software-university.software.academy. 
-- Examples of **invalid emails**: --123\@gmail.com, …\@mail.bg, .info\@info.info, _steve\@yahoo.cn, mike\@helloworld, mike\@.unknown.soft., s.johnson\@invalid-.
+- \{user\} is a sequence of **letters and digits**, where '.', '-' and '_' can appear between them
+    - examples of **valid users**: "stephan", "mike03", "s.johnson", "st_steward", "12345"
+    - examples of **invalid users**: ''--123", ".....", "_steve", ".info"
+- \{host\} is a **sequence of at least two words, separated by dots** '.'. Each word is **sequence of letters and can have hyphens** '-' between the letters
+    - examples of **hosts**: "softuni.org", "software-university.com", "intoprogramming.info", "mail.softuni.org"
+    - examples of **invalid hosts**: "helloworld", ".unknown.soft.", "invalid-host-", "invalid-"
+- Examples of **valid emails**: info\@softuni.org, kiki\@hotmail.co.uk, no-reply\@github.com, s.peterson\@mail.uu.net, info-bg\@software-university.software.academy
+- Examples of **invalid emails**: --123\@gmail.com, …\@mail.bg, .info\@info.info, _steve\@yahoo.cn, mike\@helloworld, mike\@.unknown.soft., s.johnson\@invalid-
 
 ### Example
 | **Input** | **Output** |
