@@ -22,9 +22,9 @@ while (condition) {
 
 In the code example above, the condition is any **expression that returns a Boolean result** - `true` or `false`. 
 
-It determines how long the loop body will be repeated and is called "loop condition". 
+It determines how long the loop body will be repeated and it is called "loop condition". 
 
-In this example, the "loop body" is the programming code executed at each iteration of the loop, i.e. whenever the input condition is true.
+In this example, the "loop body" is the code executed at each iteration of the loop, i.e. whenever the input condition is true.
 
 In the while loop, firstly the Boolean expression is evaluated and if it is `true`, the sequence of operations in the body of the loop is executed. 
 
@@ -60,7 +60,7 @@ function adapter(input, code) {
 # Description
 Create a program, which prints all the numbers from a given input in decreasing order:
 
-* You receive a number from the console
+* You will receive a number from the console
 * Print the numbers starting from the given input up to 1 (**inclusive**)
 
 # Example
@@ -144,7 +144,7 @@ function adapter(input, code) {
 
 Create a program, which prints all numbers **smaller than** and **equal to** a given number **n**:
 
-- You receive a number **n**
+- You will receive a number **n**
 
 - Stick to the following rules when printing: **1, 3, 7, 15, 31, …, n** assuming that each next number equals the **previous number * 2 + 1**.
 
