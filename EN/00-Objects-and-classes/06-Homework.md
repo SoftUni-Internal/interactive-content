@@ -633,35 +633,40 @@ The first element "**n**" will be the number of songs.
 Next "**n**" elements will be the songs data in the following format: 
 
 "\{**typeList**\}\_\{**name**\}\_\{**time**\}", 
-aand the the last element will be Type List \/ "**all**".
+and the the last element will be Type List \/ "**all**".
 
 Print only the names of the songs which are from that Type List \/ All songs. 
 
-# Examples One
- **Input** 
+## Examples One
 
-| **Input** | **Output** |
-| --- | --- |
-| songs(\[3,'favourite_DownTown_3:14','favourite_Kiss_4:16','favourite_Smooth Criminal_4:01','favourite'\]) | DownTown |
-| | Kiss |
-| Smooth Criminal |
+ **Input:**
 
 songs([3,'favourite_DownTown_3:14','favourite_Kiss_4:16','favourite_Smooth Criminal_4:01','favourite'])
-**Output**
+
+**Output:**
+
 DownTown
 Kiss 
 Smooth Criminal
 
-# Examples Two
-**Input** 
+## Examples Two
+
+**Input:** 
+
 songs([4,'favourite_DownTown_3:14','listenLater_Andalouse_3:24','favourite_In To The Night_3:58','favourite_Live It Up_3:48','listenLater']) 
-**Output**
+
+**Output:**
+
  Andalouse 
 
-# Examples Three
-**Input**
+## Examples Three
+
+**Input:**
+
 songs([2, 'like_Replay_3:15','ban_Photoshop_3:48','all'])
-**Output**
+
+**Output:**
+
 Replay 
 Photoshop
 
