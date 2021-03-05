@@ -36,6 +36,7 @@ int randomNumber = rnd.nextInt(10);
 # Matematica
 
 Metodele de clasă matematică sunt **statice** și ajută la efectuarea **operațiilor numerice** și **funcții matematice** utilizate în mod obișnuit cum ar fi:
+
 - rotunjire
 
 - compararea
@@ -120,7 +121,7 @@ Clasa `java.util.Random` este utilizată pentru a genera numere aleatoare de tip
 
 De asemenea, poate genera un tip boolean aleatoriu și poate întoarce rezultatul între `true` sau `false`.
 
-Metodele de clasă aleatorie sunt**non-statice**.
+Metodele de clasă aleatorie sunt **non-statice**.
 
 Declarați aleatoriu:
 
@@ -156,7 +157,7 @@ System.out.println(numOne);
 System.out.println(numTwo);
 ```
 
-- `nextDouble()` - Returnează următoarea valoare pseudoaleatorie `dublă` în intervalul de la 0,0 la 1,0
+- `nextDouble()` - Returnează următoarea valoare pseudoaleatorie `dublă` în intervalul de la 0.0 la 1.0
 
 ```java live 
 Random random = new Random();
@@ -188,7 +189,7 @@ You are given a **list of words in one line**.
 
 - Split the input string (by space) and create an array of words
 - Create a random number generator - an object rnd of type Random
-- In a for-loop exchange each number at positions 0, 1, …, words.Length-1 by a number at random position
+- In a for-loop exchange each number at positions 0, 1, ..., words.Length-1 by a number at random position
 
 To generate a random number in range use rnd.nextInt(words.length)
 
@@ -229,7 +230,7 @@ Clasa `BigInteger` ajută la tratarea cu **Numere întregi foarte mari**. Metode
 Declarați un BigInteger:
 
 - `BigInteger num = BigInteger.valueOf(1234567890);` 
-   - aici numărul `1234567890` este o variabilă `long` (64 de biți).
+   - aici numărul `1234567890` este o variabilă `long` (64 de biți)
 - `BigInteger num = new BigInteger("12345688901234567890");`
    - aici numărul `12345688901234567890` este prea mare, nu se poate încadra în 64 de biți, așa că luați ca parametru **Șirul numeric**
 
@@ -414,7 +415,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Veți primi numărul N în intervalul  \[0 – 1000\].
+Veți primi numărul N în intervalul  \[0 - 1000\].
 
 Calculați **Factorialul lui N** și tipăriți rezultatul.
 
@@ -423,10 +424,8 @@ Calculați **Factorialul lui N** și tipăriți rezultatul.
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | 5 | 120 |
-
-|**Intrare**|**Ieșire**|
-| --- | --- |
 | 50 | 30414093201713378043612608166064768844377641568960512000000000000 |
+
 
 
 [/task-description]
