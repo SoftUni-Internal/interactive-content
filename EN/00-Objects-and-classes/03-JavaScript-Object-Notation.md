@@ -47,11 +47,11 @@ In this example:
 
 * Braces `{}` define a JSON
 
-* Keys are in double quotes: "name", "age", "grades", "Math", "Chemistry"
+* keys are in double quotes: "name", "age", "grades", "Math", "Chemistry"
 
-* Values are separated from keys by a colon: "George", 25, \[2.50, 3.50\], \[4.50\]
+* values are separated from keys by a colon: "George", 25, \[2.50, 3.50\], \[4.50\]
 
-* It is possible to have nested objects - like the one nested inside "grades"
+* it is possible to have nested objects - like the one nested inside "grades"
 
 [/slide]
 
