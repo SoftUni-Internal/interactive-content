@@ -1,6 +1,8 @@
+# Problem 3: Inventory
+
 [slide hideTitle]
 # Inventory
-[code-task title="Inventory" taskId="Java-Fundamentals-Part-1-Inventory" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Inventory" taskId="Java-Fundamentals-Part-1-Exam-Inventory" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -15,29 +17,29 @@ public class Main {
 [task-description]
 ## Description
 
-### Input \/ Constraints
+### Input / Constraints
 
 You will receive a journal containing some items, separated by ", " **(comma and space)**. After that, until you receive the command "**Craft!**", you will be receiving different commands.
 
 The commands are split by " - " **(space dash space)**:
 
-- `Collect - {item}` – Receiving this command, you should **add** the given item to your inventory
+- "**Collect -** \{**item**\}": Receiving this command, you should **add** the given item to your inventory
 
 If the item is already in your inventory, **you should skip it**.
 
-- `Drop - {item}` – You should **remove** the item from your inventory,  **if it is present in the inventory** 
+- "**Drop -** \{**item**\}": You should **remove** the item from your inventory,  **if it is present in the inventory** 
 
-- `Combine Items - {oldItem}:{newItem}` – You should check if the old item is present, if so, place the new item after the old one 
+- "**Combine Items -** \{**oldItem**\}:\{**newItem**\}": You should check if the old item is present, if so, place the new item after the old one 
 
 Otherwise, ignore the command.
 
-- `Renew – {item}` – If the given item exists, you should change its position and **put it at the last position in your inventory**
+- "**Renew -** \{**item**\}": If the given item exists, you should change its position and **put it at the last position in your inventory**
 
 ### Output
 
 After receiving "**Craft!**" print the items in your inventory, separated by ", " **(comma and space)**
 
-## Examples
+## Examples One
 | **Input** | **Output** |
 | --- | --- |
 | Iron, Wood, Sword | Iron, Sword, Gold  |
@@ -45,6 +47,7 @@ After receiving "**Craft!**" print the items in your inventory, separated by ", 
 | Drop - Wood |  |
 | Craft! |  |
 
+## Examples Two
 | **Input** | **Output** |
 | --- | --- |
 | Iron, Sword | Sword, Bow, Iron |

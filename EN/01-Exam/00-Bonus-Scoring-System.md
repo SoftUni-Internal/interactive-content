@@ -1,4 +1,6 @@
-    [slide hideTitle]
+# Problem 1: Bonus Scoring System
+[slide hideTitle]
+
 # Bonus Scoring System
 [code-task title="Bonus Scoring System" taskId="Java-Fundamentals-Part-1-Exam-Bonus-Scoring-System" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -29,24 +31,24 @@ On the next lines, you will be receiving the **number of attendances for each st
 
 The bonus points are calculated using the following **formula**:
 
-`{total bonus} = {student attendances} / {course lectures} * (5 + {additional bonus})`
+\{total bonus\} = \{student attendances\} \/ \{course lectures\} \* (5 + \{additional bonus\})
 
 Find the student with the **most bonus points** and print his/her **points** along with  **attendances** in the following format:
 
-```
-"Max Bonus: {maxBonusPoints}."
-"The student has attended {studentAttendances} lectures."
-```
+
+"**Max Bonus:** \{**maxBonusPoints**\}."
+"**The student has attended** \{**studentAttendances**\} **lectures.**"
+
 
 In the end, round the bonus points up to **the next whole number**.
 
-### Input \/ Constrains
+### Input / Constrains
 
-- On the **first line**, you are going to receive the number of students – an integer in range [0...50]
+- On the **first line**, you are going to receive the number of students - an integer in range \[0...50\]
 
-- On the **second line**, you are going to receive the number of lectures – an integer in range [0...50]
+- On the **second line**, you are going to receive the number of lectures - an integer in range \[0...50\]
 
-- On the **third line**, you are going to receive **the initial bonus** – an integer in range [0...100]
+- On the **third line**, you are going to receive **the initial bonus** - an integer in range \[0...100\]
 
 - **On the next lines**, you will be receiving the number of **attendance of each student**
 
@@ -56,7 +58,7 @@ In the end, round the bonus points up to **the next whole number**.
 
 - Print the maximum bonus points, rounded up to the nearest whole number, along with the attendance of the given student, in the format described above 
 
-## Examples
+## Example One
 | **Input** | **Output** |
 | --- | --- |
 | 5 | Max Bonus: 34. |
@@ -70,16 +72,17 @@ In the end, round the bonus points up to **the next whole number**.
 
 ### Comments
 
-First, we receive the **number of students** enrolled in the course – `5`.
+First, we receive the **number of students** enrolled in the course - 5.
 
-The total count of the lectures is `25` and the initial bonus is `30`.
+The total count of the lectures is 25 and the initial bonus is 30.
 
-Then we calculate the bonus of the student with `12` attendances, which is `16.8`.
+Then we calculate the bonus of the student with 12 attendances, which is 16.8.
 
 We continue to calculate **each student's bonus points**. 
 
-The one **with** `24` **attendances** has the **highest bonus** – `33.6` (`34` **rounded**), so we print the corresponding message to the console.
+The one **with** 24 **attendances** has the **highest bonus** - 33.6 (34 **rounded**), so we print the corresponding message to the console.
 
+## Example One
 | **Input** | **Output** |
 | --- | --- |
 | 10 | Max Bonus: 18. |

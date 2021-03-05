@@ -1,6 +1,8 @@
+# Problem 2: Mu Online
+
 [slide hideTitle]
 # Mu Online
-[code-task title="Mu Online" taskId="Java-Fundamentals-Part-1-Mu-Online" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Mu Online" taskId="Java-Fundamentals-Part-1-Exam-Mu-Online" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -25,7 +27,7 @@ The text of each room contains **2 values**.
 
 The first value can be:
 
-- a potion:
+- A potion:
 
    - you are healed in the amount of the second value
 
@@ -33,13 +35,13 @@ The first value can be:
 
    - first print: "\{amount\} health points restored."
 
-   - after that, print your current health: `Current health: {health} hp.`
+   - after that, print your current health: "**Current health:** \{**health**\} **hp.**"
 
-- a chest:
+- A chest:
 
     - increase the amount of bitcoins with the amount of the second value
 
-    - after that, print out: "You found \{amount\} bitcoins."
+    - after that, print out: "**You found** \{**amount**\} **bitcoins.**"
 
 - In any other case, you are facing a monster that you are going to fight
 
@@ -47,19 +49,19 @@ The second value of the room contains the attack points of the monster.
 
 You should remove the value of the monster's attack from your health.
 
-- If you are **still alive** (health \> 0), you have slayed the monster and you should print: "You have slayed a/an \{type of monster\}."
+- If you are **still alive** (health \> 0), you have slayed the monster and you should print: "**You have slayed a** \{**type of monster**\}."
 
-- If you died, print "You died! Killed by {monster}." and your quest is over
+- If you died, print "**You died! Killed by** \{**monster**\}." and your quest is over
 
-Print the best highest number of a room you have managed to reach: `Best room: {room}`. 
+Print the best highest number of a room you have managed to reach: "**Best room:** \{**room**\}".
 
 If you managed to go through all of the rooms in the dungeon, print on the next three lines:
 
-```
-"You've made it! 
-Bitcoins: {bitcoins} 
-Health: {health}" 
-```
+
+"**You've made it!** 
+**Bitcoins:** \{**bitcoins**\} 
+**Health:** \{**health**\}" 
+
 
 ### Input \/ Constraints
 
@@ -69,7 +71,8 @@ You will receive a String, representing the rooms of the dungeon, separated by a
 
 Print the corresponding messages, described above.
 
-## Examples
+## Examples One
+
 | **Input** | **Output** |
 | --- | --- |
 | rat 10\|bat 20\|potion 10\|rat 10\|chest 100\|boss 70\|chest 1000 | You have slayed a rat. |
@@ -81,6 +84,8 @@ Print the corresponding messages, described above.
 |  | You died! Killed by boss. |
 |  | Best room: 6 |
 |  |  |
+
+## Examples Two
 
 | **Input** | **Output** |
 | --- | --- |
