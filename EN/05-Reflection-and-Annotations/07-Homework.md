@@ -2,20 +2,10 @@
 
 [slide hideTitle]
 # Problem: Harvesting Fields
-[code-task title="Problem: Harvesting Fields" taskId="805c81f4-d482-4afb-94fa-c9e47c18ff24" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Harvesting Fields" taskId="oop-advanced-java-reflection-and-annotations-Harvesting-Fields" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/Java-OOP-Advanced-Reflection-and-Annotations-harvestingFields.zip) **for this task.**
 
@@ -23,7 +13,7 @@ You are given a **RichSoilLand** class with lots of fields.
 
 Like the good farmer you are, you must harvest them. 
 
-Harvesting means that you must print each **field** in a certain format (see output).
+Harvesting means that you must print each **field** in a certain format (see the output).
 
 ## Input
 You will receive a maximum of 100 lines with one of the following commands:
@@ -38,10 +28,12 @@ For each command you must print the **fields** that have the **given access modi
 
 The format in which the fields should be printed is:
 
-"\{access modifier\} \{field type\} \{field name\}"
+"**\{access modifier\} \{field type\} \{field name\}**"
 
 
-## Examples
+# Examples
+
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | protected | protected String testString |
@@ -55,8 +47,9 @@ The format in which the fields should be printed is:
 |  | protected String moarString |
 |  | protected Exception inheritableException |
 |  | protected Stream moarStreamz |
-|  |  |
 
+
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | private | private int testInt |
@@ -92,8 +85,8 @@ The format in which the fields should be printed is:
 |  | private String anotherString |
 |  | private Exception internalException |
 |  | private Stream secretStream |
-|  |  |
 
+## Example 3
 | **Input** | **Output** |
 | --- | --- |
 | all | private int testInt |
@@ -131,7 +124,7 @@ The format in which the fields should be printed is:
 |  | private Stream secretStream |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -465,20 +458,10 @@ private Stream secretStream
 
 [slide hideTitle]
 # Problem: Black Box Integer
-[code-task title="Problem: Black Box Integer" taskId="d57619b4-cea9-4301-90ed-6830ddc952d5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Black Box Integer" taskId="oop-advanced-java-reflection-and-annotations-Black-Box-Integer" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/Java-OOP-Advanced-Reflection-and-Annotations-blackBoxInteger.zip) **for this task.**
 
@@ -490,7 +473,7 @@ Your tasks are to **instantiate** an object from his class (always with start va
 
 Your restriction is to **not** change anything in the class itself (consider it a black box). 
 
-You can look at his class but don't touch anything! 
+You can look at this class but do not touch anything! 
 
 The class itself is called **BlackBoxInt**. It is a wrapper for the **int** primitive. 
 
@@ -524,7 +507,7 @@ private void rightShift (int shifter) {
 ## Input
 The input will consist of lines in the form:
 
-**"{command name}_{value}"**
+**"\{command name\}_\{value\}"**
 
 Example: **add_115**
 
@@ -534,9 +517,9 @@ You stop receiving input when you encounter the command "**END**".
 ## Output
 Each command (except the **END** one) should print the current value of **innerValue** of the **BlackBoxInt** object you instantiated. 
 
-**Don't cheat** by overriding **toString** in the class - you must get the value from the **private** field.
+**Do not cheat** by overriding **toString** in the class - you must get the value from the **private** field.
 
-## Examples
+# Example
 | **Input** | **Output** |
 | --- | --- |
 | add_999999 | 999999 |
@@ -548,7 +531,7 @@ Each command (except the **END** one) should print the current value of **innerV
 | END |  |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -692,20 +675,10 @@ END
 
 [slide hideTitle]
 # Problem: BarracksWars – A New Factory
-[code-task title="Problem: BarracksWars – A New Factory" taskId="d693c323-9f5e-4bbe-b32a-ec8c01e0dc75" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="BarracksWars – A New Factory" taskId="oop-advanced-java-reflection-and-annotations-BarracksWars–A-New-Factory" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/Java-OOP-Advanced-Reflection-and-Annotations-barracksWars.zip) **for this task.**
 
@@ -713,42 +686,45 @@ You are given a small console based project called Barracks.
 
 The general functionality the project has is adding new units to its repository and printing a report with statistics about the units currently in the repository. 
 
-First let's go over the original task before the project was created:
+First, let us go over the original task before the project was created.
 ## Input
-The input consists of commands each on a separate line. 
+The input consists of multiple commands, each on a separate line. 
 
 Commands that execute the functionality are:
-- add \{Archer/Swordsman/Pikeman/\{…\}\} - adds a unit to the repository.
-- report - prints a lexicological ordered statistic about the units in the repository.
-- fight - ends the input.
+- **add \{Archer/Swordsman/Pikeman/\{…\}\}** - adds a unit to the repository
+- **report** - prints a lexicological ordered statistic about the units in the repository
+- **fight** - ends the input
 ## Output
 Each command except **fight** should print output on the console.
 - **add** should print: 
 
-    "\{Archer/Swordsman/Pikeman/\{…\}\} added!"
+    "**\{Archer/Swordsman/Pikeman/\{…\}\} added!**"
+
 - **report** should print all the info in the repository in the format: 
 
-    "\{UnitType\} -> \{UnitQuantity\}", sorted by UnitType
+    "**\{UnitType\} -> \{UnitQuantity\}**", sorted by UnitType
 ## Constraints
-- Input will consist of no more than **1000** lines
-- **report** command will never be given before any valid add command was provided
+- The input will consist of no more than **1000** lines
+- The **report** command will never be given before any valid add command was provided
 ## Your Task
-- You have to **study the code of the project and figure out how it works.**
+You have to **study the code of the project and figure out how it works.**
 
-    However, there are parts of it that are not implemented (left with TODOs (**TODO** window will be useful)). 
+However, there are parts of it that are not implemented (left with TODOs (**TODO** window will be useful)). 
 
-    You must implement the functionality of the **createUnit** method in the **UnitFactoryImpl** class so that it creates a unit based on the unit type received as parameter. 
+You must implement the functionality of the **createUnit** method in the **UnitFactoryImpl** class so that it creates a unit based on the unit type received as parameter. 
 
-    Implement it in such a way that whenever you add a new unit it will be creatable without the need to change anything in the **UnitFactoryImpl** class (psst - use reflection). 
+Implement it in such a way that whenever you add a new unit it will be creatable without the need to change anything in the **UnitFactoryImpl** class (psst - use reflection). 
 
-    You can use the approach called **Simple Factory**.
+You can use the approach called **Simple Factory**.
 
-- Add two new unit classes (there will be tests that require them) - **Horseman** with 50 health and 10 attack and **Gunner** with 20 health and 20 attack.
+Add two new unit classes (there will be tests that require them) - **Horseman** with 50 health and 10 attack and **Gunner** with 20 health and 20 attack.
 
 If you do everything correctly for this problem, you should write code only in the **factories** and **units** packages.
 
 
-## Examples
+# Examples
+
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | add Swordsman | Swordsman added! |
@@ -764,6 +740,8 @@ If you do everything correctly for this problem, you should write code only in t
 |  | Swordsman -> 1 |
 |  |  |
 
+
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | add Pikeman | Pikeman added! |
@@ -780,7 +758,7 @@ If you do everything correctly for this problem, you should write code only in t
 |  | Pikeman -> 2 |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -1088,32 +1066,22 @@ Swordsman -\> 2
 [/slide]
 
 [slide hideTitle]
-# Problem: BarracksWars – the Commands Strike Back
-[code-task title="Problem: BarracksWars – the Commands Strike Back" taskId="ee763407-6634-494b-a22f-74fa7fdac039" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+# Problem: BarracksWars – The Commands Strike Back
+[code-task title="BarracksWars – The Commands Strike Back" taskId="oop-advanced-java-reflection-and-annotations-BarracksWars–The-Commands-Strike-Back" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
-As you might have noticed commands in the project from **Problem 3** are implemented via a switch case with method calls in the **Engine** class. 
+# Description
+As you might have noticed, the commands in the project from **Problem 3** are implemented via a switch case with method calls in the **Engine** class. 
 
-Although this approach works it is flawed when you add a new command because you have to add a new case for it. 
+Although this approach works, it is flawed when you add a new command because you have to add a new case for it. 
 
 In some projects you might not have access to the engine and this would not work. 
 
 Imagine this project will be outsourced and the outsourcing firm will not have access to the engine. 
 
-Make it so whenever they want to add a new command they won't have to change anything in the **Engine.**
+Make it so whenever they want to add a new command they will not have to change anything in the **Engine.**
 
-To do so employ the design pattern called [Command Pattern](https://www.baeldung.com/java-command-pattern).
+To do so, employ the design pattern called [Command Pattern](https://www.baeldung.com/java-command-pattern).
 
 Here is how the base (abstract) command should look like:
 
@@ -1154,14 +1122,14 @@ Once you've implemented the pattern add a new command.
 
 It will have the following syntax:
 - **retire \{UnitType\}** - All it has to do is **remove** a unit of the provided type from the repository.
-    - If there are no such units currently in the repository print: **"No such units in repository."**
-    - If there is such a unit currently in the repository, print: **"\{UnitType\} retired!"**
+    - if there are no such units currently in the repository print: **"No such units in repository."**
+    - if there is such a unit currently in the repository, print: **"\{UnitType\} retired!"**
 
 To implement this command, you will also have to implement a corresponding method in the **UnitRepository.**
 
 If you do everything correctly for this problem, you should write/refactor code only in the **core** and **data** packages.
 
-## Examples
+# Example
 | **Input** | **Output** |
 | --- | --- |
 | retire Archer | No such units in repository. |
@@ -1187,7 +1155,7 @@ If you do everything correctly for this problem, you should write/refactor code 
 |  | No such units in repository. |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -1373,20 +1341,10 @@ Swordsman -\> 0
 
 [slide hideTitle]
 # Problem: BarracksWars – Return of the Dependencies
-[code-task title="Problem: BarracksWars – Return of the Dependencies" taskId="9216a3a7-1d58-449e-ba63-aa9b30f7f227" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="BarracksWars – Return of the Dependencies" taskId="oop-advanced-java-reflection-and-annotations-BarracksWars–Return-of-the-Dependencies" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 In the final part of this epic problem trilogy we will resolve the issue where all Commands received all utility classes as parameters in their constructors. 
 
 We can accomplish this by using an approach called **dependency injection container**. 
@@ -1397,18 +1355,18 @@ We will do a little twist on that approach.
 
 Remove all fields from the abstract command except the **data**. 
 
-Instead put whatever fields each command needs in the concrete class. 
+Instead, put whatever fields each command needs in the concrete class. 
 
 Create an annotation called **Inject** and make it so it can be used only on fields. 
 
 Put the annotation over the fields we need to set trough reflection. 
 
-Once you've prepared all of this, write the necessary reflection code in the **Command Interpreter** (which you should have refactored out from the engine in **Problem 4**).
+Once you have prepared all of this, write the necessary reflection code in the **Command Interpreter** (which you should have refactored out from the engine in **Problem 4**).
 
 Use the tests from Problem 4 to test your solution.
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
