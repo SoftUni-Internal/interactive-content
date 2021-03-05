@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Problem: Integer Operations
 
-[code-task title="Integer Operations" taskId="java-fund-Data-Types-Exercise-Integer-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Integer Operations" taskId="java-fund-1-data-types-and-variables-Integer-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -95,7 +95,7 @@ Citiți **patru numere întregi**.
 
 [slide hideTitle]
 # Problem: Sum Digits
-[code-task title="Sum Digits" taskId="java-fund-05-data-types-exercise-Sum-Digits" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sum Digits" taskId="java-fund-1-data-types-and-variables-Sum-Digit" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -166,7 +166,7 @@ Sarcina dvs. este de a găsi **suma cifrelor sale**.
 [slide hideTitle]
 # Problem: Elevator
 
-[code-task title="Elevator" taskId="java-fund-05-data-types-exercise-Elevator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Elevator" taskId="java-fund-1-data-types-and-variables-Elevator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -185,8 +185,10 @@ public class Main {
 Calculați câte cursuri vor fi necesare pentru a **ridica n persoane** utilizând un lift cu **capacitate de p persoane**.
 
 **Intrarea** conține **două linii**:
-- numărul de persoane **n**
-- capacitatea **p** a liftului
+
+- Numărul de persoane **n**
+
+- Capacitatea **p** a liftului
 
 ### Exemplu
 |**Intrare**|**Ieșire**|**Comentarii**
@@ -248,7 +250,7 @@ Calculați câte cursuri vor fi necesare pentru a **ridica n persoane** utilizâ
 
 [slide hideTitle]
 # Problem: Sum of Chars
-[code-task title="Sum of Chars" taskId="java-fund-05-data-types-exercise-Sum-of-Chars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sum of Chars" taskId="java-fund-1-data-types-and-variables-Sum-of-Chars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -268,7 +270,9 @@ Scrieți un program, care **rezumă codurile ASCII de n caractere**.
 **Imprimați suma** pe consolă.
 
 ### Intrare
+
 - Pe prima linie, veți primi n - numărul de linii, care va urma
+
 - Pe următoarele n linii - veți primi litere din alfabetul latin
 
 ### Ieșire
@@ -374,7 +378,7 @@ The sum equals: 1940
 
 [slide hideTitle]
 # Problem: Print Part of the ASCII Table
-[code-task title="Print Part of the ASCII Table" taskId="java-fund-05-data-types-exercise-Print-Part-of-the-ASCII-Table" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Print Part of the ASCII Table" taskId="java-fund-1-data-types-and-variables-Print-Part-of-the-ASCII-Table" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -444,7 +448,7 @@ a b c d e f g h
 
 [slide hideTitle]
 # Problem: Triples of Latin Letters
-[code-task title="Triples of Latin Letters" taskId="java-fund-05-data-types-exercise-Triples-of-Latin-Letters" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Triples of Latin Letters" taskId="java-fund-1-data-types-and-variables-Triples-of-Latin-Letters" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -833,7 +837,7 @@ fff
 [slide hideTitle]
 # Problem: Water Overflow
 
-[code-task title="Water Overflow" taskId="java-fund-05-data-types-exercise-water-overflow" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Water Overflow" taskId="java-fund-1-data-types-and-variables-Water-Overflow" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -847,13 +851,13 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Aveți un**rezervor de apă**cu o capacitate de 255 litri.
+Aveți un **rezervor de apă** cu o capacitate de 255 litri.
 
 Pe prima**linie, veți primi n.
 
 În următoarele **n linii**, veți primi **litri** de apă, pe care trebuie să **le turnați în rezervor**.
 
-Dacă **capacitatea nu este suficientă**, tipăriți "Insufficient capacity!" și **continuați să citiți** următorul rând.
+Dacă **capacitatea nu este suficientă**, tipăriți "**Insufficient capacity!**" și **continuați să citiți** următorul rând.
 
 Pe ultima linie, **imprimați litrii** în rezervor.
 
@@ -947,7 +951,7 @@ Insufficient capacity!
 [slide hideTitle]
 # Problem: Beer Kegs
 
-[code-task title="Beer Kegs" taskId="java-fund-05-data-types-exercise-beer-kegs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Beer Kegs" taskId="java-fund-1-data-types-and-variables-Beer-Kegs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -972,7 +976,7 @@ Fiecare **trei rânduri** va conține informații pentru un **butoi unic**.
 
 Calculați **volumul** folosind următoarea formulă:
 
-π * r^2 * h. 
+`π * r^2 * h` 
 
 La final, **tipăriți modelul celui mai mare butoi**.
 
@@ -1067,7 +1071,7 @@ Keg 4
 
 [slide hideTitle]
 # Problem: Spice Must Flow
-[code-task title="Spice Must Flow" taskId="java-fund-05-data-types-exercise-spice-must-flow" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Spice Must Flow" taskId="java-fund-1-data-types-and-variables-Spice-Must-Flow" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1108,9 +1112,18 @@ Imprimați **două rânduri separate** câte **zile a funcționat mina** și **c
 | | 134 |
 
 **Comentarii**
-- In prima zi extragem 111de condimente și la sfârșitul turei, muncitorii consumă 26, lăsând 85. Randamentul scade cu 10 până la 101.
-- In a-2-a zi extragem 101de condimente, muncitorii consumă 26, lăsând 75. Totalul este 160 și randamentul a scăzut la 91.
-- Deoarece randamentul așteptat este mai mic de 100, abandonăm sursa. Muncitorii iau încă 26, lăsând 134. Mina a funcționat 2 zile.
+
+- In prima zi extragem 111de condimente și la sfârșitul turei, muncitorii consumă 26, lăsând 85. 
+
+Randamentul scade cu 10 până la 101
+
+- In a-2-a zi extragem 101de condimente, muncitorii consumă 26, lăsând 75. 
+
+Totalul este 160 și randamentul a scăzut la 91
+
+- Deoarece randamentul așteptat este mai mic de 100, abandonăm sursa. 
+
+Muncitorii iau încă 26, lăsând 134. Mina a funcționat 2 zile
 
 [/task-description]
 [code-io /]
@@ -1157,7 +1170,7 @@ Imprimați **două rânduri separate** câte **zile a funcționat mina** și **c
 
 [slide hideTitle]
 # Problem: Poke Mon
-[code-task title="Poke Mon" taskId="java-fund-05-data-types-exercise-poke-mon" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Poke Mon" taskId="java-fund-1-data-types-and-variables-Poke-Mon" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1172,9 +1185,13 @@ public class Main {
 [task-description]
 
 ## Descriere
-A Poke Mon este un tip special de pokemon căruia îi place să-i împingă pe alții. Dar la sfârșitul zilei, Poke Mon vrea să păstreze **statistici**, despre câte poke a reușit să facă.
+A Poke Mon este un tip special de pokemon căruia îi place să-i împingă pe alții. 
 
-Poke Mon își aruncă ținta și apoi trece la o altă țintă. **Distanța dintre ținte își reduce puterea de lovitură**.
+Dar la sfârșitul zilei, Poke Mon vrea să păstreze **statistici**, despre câte poke a reușit să facă.
+
+Poke Mon își aruncă ținta și apoi trece la o altă țintă. 
+
+**Distanța dintre ținte își reduce puterea de lovitură**.
 
 Vi se va oferi **puterea de poke** pe care Poke Mon o are, **N** - un număr întreg.
 
@@ -1184,9 +1201,13 @@ Apoi vi se va da **exhaustorFactor Y** - un număr întreg.
 
 Sarcina ta este să începi **scăzând M din N până când N devine mai mic decât M**, adică Poke Mon nu are suficientă putere pentru a atinge următoarea țintă.
 
-**De fiecare dată când scazi M de la N înseamnă că ai atins o țintă** și ai tras-o cu succes. CONTAȚI câte ținte ați introdus - veți avea nevoie de acest număr.
+**De fiecare dată când scazi M de la N înseamnă că ai atins o țintă** și ai tras-o cu succes. 
 
-Poke Mon devine treptat **mai epuizat**. **Dacă N devine egal cu EXACT 50% din valoarea inițială, trebuie să împărțiți N la Y**, dacă este POSIBIL. 
+CONTAȚI câte ținte ați introdus - veți avea nevoie de acest număr.
+
+Poke Mon devine treptat **mai epuizat**. 
+
+**Dacă N devine egal cu EXACT 50% din valoarea inițială, trebuie să împărțiți N la Y**, dacă este POSIBIL. 
 
 Această DIVIZIUNE este între numere întregi.
 
@@ -1201,12 +1222,17 @@ NOTĂ: Când calculați procentele, ar trebui să fiți PRECIS la maximum.
 Exemplu: 505 NU este EXACT 50% din 1000, 50.5%.
 
 ### Intrare / Constrângeri
+
 - Pe prima linie veți primi **N** - un număr întreg
+
 - Pe a doua linie veți primi **M** - un număr întreg
+
 - Pe a treia linie veți primi **Y** - un număr întreg
 
 ### Ieșire
+
 - Pe prima linie tipăriți **ceea ce a rămas din N**, după ce a scăzut din acesta
+
 - Pe cea de-a doua linie tipăriți **numărul de ținte**, ați reușit să pătrundeți
 
 ### Exemplu
@@ -1279,7 +1305,7 @@ Exemplu: 505 NU este EXACT 50% din 1000, 50.5%.
 [slide hideTitle]
 # Problem: Snowballs
 
-[code-task title="Snowballs" taskId="java-fund-05-data-types-exercise-snowballs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Snowballs" taskId="java-fund-1-data-types-and-variables-Snowballs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1301,21 +1327,29 @@ Au decis să vă implice în lupta lor, făcându-vă să scrieți un program ca
 Veți primi **N** - un număr întreg, **numărul de bulgări de zăpadă fiind făcut** de Tony și Andi.
 
 Pentru fiecare bulgăre de zăpadă veți primi 3 linii de intrare:
+
 - Pe prima linie veți obține **snowballSnow** - un număr întreg
+
 - Pe a doua linie veți obține **snowballTime** - un număr întreg
+
 - Pe a treia linie veți obține **snowballQuality** - un număr întreg
 
 Pentru fiecare bulgăre de zăpadă trebuie să calculați Valoarea acesteia cu următoarea formulă:
+
 **(snowballSnow / snowballTime) ^ snowballQuality**
 
 La sfârșit, trebuie să **imprimați** cea mai mare valoare calculată cu zăpadă.
 
 ### Intrare / Constrângeri
+
 - Pe prima linie de intrare veți primi N - numărul de bulgări de zăpadă
+
 - Pe următoarele linii de intrare N * 3 veți primi date despre bulgări de zăpadă
 
 ### Ieșire
-- Ca ieșire, trebuie să imprimați **cea mai mare valoare calculată a zăpezii**, după formula specificată mai sus.
+
+- Ca ieșire, trebuie să imprimați **cea mai mare valoare calculată a zăpezii**, după formula specificată mai sus
+
 - Formatul de ieșire este:
 
 "\{**snowballSnow**\} : \{**snowballTime**\} = \{**snowballValue**\} (\{**snowballQuality**\})"

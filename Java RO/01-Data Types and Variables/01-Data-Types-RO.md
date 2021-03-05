@@ -74,13 +74,19 @@ Tipurile de date specifică diferitele dimensiuni și valori care pot fi stocate
 Există **două tipuri de tipuri de date** în Java:
 
 **Tipuri de date primitive**
+
 - Încorporat într-un limbaj de programare
+
 - Dimensiunea și tipul valorilor variabilei sunt specificate și nu pot fi modificate
+
 - Unele exemple includ boolean, char, int, long, float și double
 
 **Tipuri de date neprimitive**
+
 - Nu este definit de limbajul de programare, ci de programator
+
 - Variabile de referință apelate deoarece dețin adresa în memoria computerului (RAM) unde sunt stocate datele
+
 - Unele exemple includ șiruri, matrice și clase
 [/slide]
 
@@ -110,15 +116,15 @@ După cum vedeți în exemplul de mai sus, **tipurile de date** au:
 
 Convențiile de denumire fac programele mai ușor de înțeles, făcându-le mai ușor de citit.
 
-În Java, se folosește convenția pentru numirea variabilelor ***"camel-case"***.
+În Java, se folosește convenția pentru numirea variabilelor "**camelCase**".
 
-**Cazul Camel** este practica scrierii frazelor:
+**cazulCamel** este practica scrierii frazelor:
 
-- fiecare cuvânt sau abreviere din mijlocul frazei începe cu o literă mare
+- Fiecare cuvânt sau abreviere din mijlocul frazei începe cu o literă mare
 
-- fara spatii
+- Fara spatii
 
-- punctuație
+- Punctuație
 
 ```Java
 String firstName = John; //correct

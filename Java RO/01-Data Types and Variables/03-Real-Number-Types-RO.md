@@ -63,7 +63,7 @@ System.out.println("Double PI is: " + doublePI);
 [slide hideTitle]
 # Problem with Solution: Pounds to Dollars
 
-[code-task title="Problem: Pounds to Dollars" taskId="java-fund-data-types-lab-pounds-to-dollars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Pounds to Dollars" taskId="java-fund-1-data-types-lab-pounds-to-dollars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -79,18 +79,13 @@ public class Main {
 ## Descriere
 Scrieți un program care convertește lire sterline în dolari SUA formatat în a treia zecimală.
 
-1 lire sterline = 1,31 dolari
+**1 lire sterline = 1.31 dolari**
 
 ## Exemple
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | 80 | 104.800 |
-|  |  |
-
-|**Intrare**|**Ieșire**|
-| --- | --- |
 | 39 | 51.090 |
-|  |  |
 
 [/task-description]
 [code-io /]
@@ -263,9 +258,8 @@ System.out.println(bigDecimal1);
 [slide hideTitle]
 # Problem with Solution: Exact Sum of Real Numbers
 
-[code-task title="Problem: Exact Sum of Real Numbers" taskId="java-fund-data-types-lab-exact-sum-of-real-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Exact Sum of Real Numbers" taskId="java-fund-1-data-types-lab-exact-sum-of-real-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-
 ```
 import java.util.Scanner;
 import java.math.BigDecimal;

@@ -1,5 +1,7 @@
-[slide]
-# Tipuri Booleene și de Caractere
+# Boolean Type
+[slide hideTitle]
+
+# The Boolean Data Type
 
 
 Un tip de date boolean este declarat cu cuvântul cheie **boolean** cu două opțiuni de valoare: **true** sau **false**:
@@ -24,7 +26,7 @@ Un tip de date boolean este declarat cu cuvântul cheie **boolean** cu două op�
 [slide hideTitle]
 # Problem with Solution: Special Numbers
 
-[code-task title="Special Numbers" taskId="java-fund-data-types-lab-special-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Special Numbers" taskId="java-fund-1-data-types-lab-special-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -38,6 +40,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
+
 Un **număr** este **special** când **suma cifrelor sale este 5, 7 sau 11**.
 
 Scrieți un program pentru a citi un număr întreg **n** și pentru toate numerele din intervalul **1 ... n** pentru a imprima numărul și dacă este special sau nu **(True / False)**.
@@ -62,6 +65,7 @@ Scrieți un program pentru a citi un număr întreg **n** și pentru toate numer
 |  | 15 -> False |
  
 ### Sugestii
+
 Pentru a calcula suma cifrelor unui număr dat **num**, puteți repeta următoarele: suma ultimei cifre **(num % 10)** și scoaterea acesteia **(sum = sum / 10)** până la **num** ajunge la **0**.
 
 [/task-description]

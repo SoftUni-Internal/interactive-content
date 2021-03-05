@@ -1,10 +1,6 @@
 [slide hideTitle]
 # Tipuri întregi
 
-[vimeo-video startTimeInSeconds="543" endTimeInSeconds="1001"]
-[stream language="EN" videoId="425081520" default /]
-[stream language="RO" videoId="425084744"  /]
-[/vimeo-video]
 **Tipuri întregi**stochează numere întregi, pozitive sau negative (cum ar fi 123 sau -456), fără zecimale.
 
 Tipurile valide sunt **byte**, **short**, **int** și **long**, tipul pe care ar trebui să îl utilizați, depinde de valoarea numerică.
@@ -77,7 +73,9 @@ System.out.println(myNum);
 [slide hideTitle]
 # Integer Overflow
 
-All integers have a range - a minimum and maximum value. This means that integers can overflow, resulting in incorrect values. 
+All integers have a range - a minimum and maximum value. 
+
+This means that integers can overflow, resulting in incorrect values. 
 
 Take a look at the below example.
 
@@ -107,7 +105,6 @@ This is what we mean by **integer overflow** and it is precisely the reason why 
 [slide hideTitle]
 # Integer Literals
 
-
 Integer literals are numbers, which do not have a floating point part. 
 
 **541** is a literal value by that definition.
@@ -132,7 +129,7 @@ System.out.println("long: ", number);
 [slide hideTitle]
 # Problem with Solution: Convert Meters to Kilometers
 
-[code-task title="Problem: Convert Meters to Kilometers" taskId="java-fund-data-types-lab-convert-meters-to-kilometers-problem" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Convert Meters to Kilometers" taskId="java-fund-1-data-types-lab-convert-meters-to-kilometers-problem" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

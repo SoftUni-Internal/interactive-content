@@ -34,8 +34,5 @@
 
 - Prezentare generală și reprezentare a tipului de date "String"
 
-**6. Exerciții live**
-
-
 
 [/slide]

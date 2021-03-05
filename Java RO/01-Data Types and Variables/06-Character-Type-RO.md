@@ -3,6 +3,7 @@
 [slide hideTitle]
 
 # Tipul Caracterului
+
 Tipul de date char este utilizat pentru a stoca un caracter**unic**.
 
 Personajul trebuie să fie înconjurat de ghilimele unice, cum ar fi `'A'` sau `'c'`.
@@ -14,13 +15,13 @@ System.out.println(myGrade);
 
 De asemenea, personajul:
 
-* Oferă fiecărui simbol un cod întreg corespunzător.
+* Oferă fiecărui simbol un cod întreg corespunzător
 
-* Are o valoare implicită `\0`.
+* Are o valoare implicită `\0`
 
-* Ia 16 biți de memorie \(de la**U+0000** la **U+FFFF**\).
+* Ia 16 biți de memorie \(de la**U+0000** la **U+FFFF**\)
 
-* Deține un singur caracter Unicode \(sau o parte a caracterului\).
+* Deține un singur caracter Unicode \(sau o parte a caracterului\)
 
 ```java live
 char ch = 'a';
@@ -66,7 +67,7 @@ The Unicode table is separated into different parts and almost all living langua
 [slide hideTitle]
 # Problem with Solution: Reversed Chars
 
-[code-task title="Reversed Chars" taskId="java-fund-data-types-lab-reversed-chars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Reversed Chars" taskId="java-fund-1-data-types-lab-reversed-chars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -184,7 +185,7 @@ Caracterul de bară inversă \(\\\) transformă caracterele speciale în caracte
 |\\\  |**\\**     |Backslash|
 
 
-Secvența `\" `inserează un ghilimel dublu într-un șir:
+Secvența `\"` inserează un ghilimel dublu într-un șir:
 
 ```Java live
 String txt = "We are the so-called \"Vikings\" from the north.";

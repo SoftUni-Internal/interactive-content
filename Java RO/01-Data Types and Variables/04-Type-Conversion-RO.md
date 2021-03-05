@@ -12,7 +12,7 @@ De exemplu, atribuirea unei valori int unei variabile lungi.
 
 În Java, există două tipuri de casting:
 
-- Casting extins \(automat\) - convertirea unui tip mai mic într-un format mai mare.
+- Casting extins \(automat\) - convertirea unui tip mai mic într-un format mai mare
 
 ```java live
 int myInt = 9;
@@ -22,9 +22,11 @@ System.out.println(myInt);
 System.out.println(myDouble);
 ```
 
-Aici tipul inferior de date \(având o dimensiune mai mică\) este convertit în tipul de date mai mare \(având o dimensiune mai mare\). Prin urmare, nu există pierderi de date. Acesta este motivul pentru care acest tip de conversie are loc automat.
+Aici tipul inferior de date \(având o dimensiune mai mică\) este convertit în tipul de date mai mare \(având o dimensiune mai mare\). 
 
-- Casting restrâns \(manual\) - convertirea unui tip mai mare într-un tip de dimensiune mai mică.
+Prin urmare, nu există pierderi de date. Acesta este motivul pentru care acest tip de conversie are loc automat.
+
+- Casting restrâns \(manual\) - convertirea unui tip mai mare într-un tip de dimensiune mai mică
 
 ```java live
 double myDouble = 9.78;
@@ -34,14 +36,16 @@ System.out.println(myDouble);
 System.out.println(myInt);
 ```
 
-Aici tipurile de date superioare \(având dimensiuni mai mari\) sunt convertite în tipuri de date mai mici \(având dimensiuni mai mici\). Prin urmare, există pierderea de date. Acesta este motivul pentru care acest tip de conversie nu are loc automat.
+Aici tipurile de date superioare \(având dimensiuni mai mari\) sunt convertite în tipuri de date mai mici \(având dimensiuni mai mici\). 
+
+Prin urmare, există pierderea de date. Acesta este motivul pentru care acest tip de conversie nu are loc automat.
 
 [/slide]
 
 [slide hideTitle]
 # Problem with Solution: Centuries to Minutes
 
-[code-task title="Centuries to Minutes" taskId="java-fund-data-types-lab-centuries-to-minutes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Centuries to Minutes" taskId="java-fund-1-data-types-lab-centuries-to-minutes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 ```
@@ -65,8 +69,8 @@ Scrieți programul pentru a introduce un număr întreg de **secole** și conver
 
 |**Intrare**|**Ieșire**|
 | --- | --- |
-| 1         | 1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes    |
-| 5         | 5 centuries = 500 years = 182621 days = 4382904 hours = 262974240 minutes |
+| 1 | 1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes    |
+| 5 | 5 centuries = 500 years = 182621 days = 4382904 hours = 262974240 minutes |
 
 [/task-description]
 [code-io /]
@@ -135,7 +139,7 @@ Scrieți programul pentru a introduce un număr întreg de **secole** și conver
 [slide hideTitle]
 # Problem with Solution: Chars to String
 
-[code-task title="Chars to String" taskId="java-fund-data-types-lab-chars-to-string" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Chars to String" taskId="java-fund-1-data-types-lab-chars-to-string" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 ```
@@ -163,15 +167,15 @@ Combinați toate caracterele într-un singur șir și imprimați-le pe consolă.
 
 |**Intrare**|**Ieșire**|
 | --- | --- |
-| a         | abc        |
-| b         |            |
-| c         |            |
+| a | abc |
+| b |     |
+| c |     |
 
 |**Intrare**|**Ieșire**|
 | --- | --- |
-| %         | %2o        |
-| 2         |            |
-| o         |            |
+| % | %2o |
+| 2 |     |
+| o |     |
 
 [/task-description]
 [code-io /]
@@ -264,7 +268,7 @@ b
 [slide hideTitle]
 # Problem with Solution: Lower or Upper
 
-[code-task title="Lower or Upper" taskId="java-fund-data-types-lab-lower-or-upper" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Lower or Upper" taskId="java-fund-1-data-types-lab-lower-or-upper" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -284,13 +288,7 @@ Scrieți un program care imprimă dacă un caracter dat este cu majuscule sau mi
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | L | upper-case |
-|  |  |
-
-|**Intrare**|**Ieșire**|
-| --- | --- |
 | f | lower-case |
-|  |  |
-
 
 [/task-description]
 [code-io /]
