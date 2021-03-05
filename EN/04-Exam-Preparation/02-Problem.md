@@ -16,7 +16,7 @@ public class Main {
 [task-description]
 # Description
 
-Create a program that **reads a sequence of integers separated by a space.** 
+Create a program that **processes a sequence of integers separated by a space.** 
 
 Find and print the **top 5** numbers that are **greater than the average** value of the sequence, sorted in **descending order.** 
 
@@ -24,7 +24,7 @@ Print "**No**" if there are no numbers that are greater than the average value.
 
 ## Input 
 
-Read a single sequence of integers separated by a space from the console. 
+A sequence of integers separated by a space from the console. 
 
 ## Output 
 
@@ -45,11 +45,11 @@ The number of elements will not exceed 10000.
 ## Comment
 - Average value = 30
 
-- Numbers greater than 30 are: \{40, 50\}
+- The numbers which are greater than 30 are: \{40, 50\}
 
-- The top 5 numbers among them in descending order are: \{50, 40\} 
+- Sorted in descending order: \{50, 40\} 
 
-- Note that we have only 2 numbers, so all of them are included in the top 5
+- Since there are only two numbers that meet the citeria all of them should be included in the final result
 
 ## Example Two
 | **Input** | **Output** |
@@ -62,7 +62,7 @@ The number of elements will not exceed 10000.
 
 - Numbers greater than 28.08 are: \[Text Wrapping Break\] \{30, 40, 50, 50, 60, 60, 51\}
 
-- The top 5 numbers among them in descending order are: \{60, 60, 51, 50, 50\}
+- The greatest 5 numbers in descending order are: \{60, 60, 51, 50, 50\}
 
 ## Example Three
 | **Input** | **Output** |
@@ -86,7 +86,7 @@ The number of elements will not exceed 10000.
 
 - Numbers greater than -3.5 are: \{-1, -2, -3\}
 
-- The top 5 numbers among them in descending order are: \{-1, -2, -3\}
+- The top 5 numbers among them, in descending order are: \{-1, -2, -3\}
 
 [/task-description]
 [code-io /]
