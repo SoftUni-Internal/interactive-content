@@ -2,11 +2,11 @@
 
 [slide hideTitle]
 
-# For Loop with a Step
+# For-Loop with a Step
 
 [video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-18-19-loops-with-a-step-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In this section, we will get familiar with a particular and very important part of the **for loop**, **namely the step.**
+In this section, we will get familiar with a particular and very important part of the **for-loop**, **namely the step.**
 
 **The step** is that **part** of the for loop construction that indicates how to increase or decrease the value of its leading variable.
 
