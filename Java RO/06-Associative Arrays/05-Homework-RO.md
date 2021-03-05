@@ -9,7 +9,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -209,7 +209,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -423,7 +423,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -459,13 +459,13 @@ Fiecare linie de input este in format "\{**quantity**\} \{**material**\} \{**qua
 
 - Pe următoarele **next three lines**, imprimați **remaining key materials** în ordine **descending**, după **quantity**
 
-    - Dacă **two key materials** au **same quantity**, imprimați-i in ordine **alphabetical**
+    - dacă **two key materials** au **same quantity**, imprimați-i in ordine **alphabetical**
 
 - Pe liniile **final several lines**, imprimați **junk items in alphabetical** ordine
 
-    - Toate materialele sunt imprimate in format: "\{**material**\}: \{**quantity**\}"
+    - toate materialele sunt imprimate in format: "\{**material**\}: \{**quantity**\}"
 
-    - Toate output trebuie să fie **lowercase**, cu excepția  **first** litere ale legendary
+    - toate output trebuie să fie **lowercase**, cu excepția  **first** litere ale legendary
 
 
 ### Exemple
@@ -700,7 +700,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -944,7 +944,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1191,7 +1191,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1216,7 +1216,7 @@ Pentru fiecare **contest print registered users** **ordered by name in ascending
 - Până primiți "**end**", **input come in the format**:
 
  "\{**courseName**\} : \{**studentName**\}".
-- Datele despre produs sunt **always delimited** de " : ".
+- Datele despre produs sunt **always delimited** de " : "
 
 ### Output
 - Imprimați informația despre fiecare **course**, după **format**: 
@@ -1459,7 +1459,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1756,7 +1756,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -2076,7 +2076,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -2090,8 +2090,8 @@ Deci sunteți pus să creați un program pentru a le manageria profilele.
 Trebuie să stocați informația pentru **every unique force user**, inregistrat în aplicație.
 
 Veți primi câteva **input lines in one of the following formats**:
-- \{forceSide\} \| \{forceUser\}
-- \{forceUser\} -> \{forceSide\}
+- "\{forceSide\} \| \{forceUser\}"
+- "\{forceUser\} -> \{forceSide\}"
 
 Acei **force user and force side are strings**, conținând orice caracter.
 
@@ -2361,7 +2361,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -2382,13 +2382,13 @@ După ce ați primit  "**exam finished**", **print** fiecare participant în ord
 
 "**Results:**
 \{**username**\} \| \{**points**\}
-…"
+..."
 
 După ce am imprimat fiecare limbă folosită în examen, ordonăm **descending** după numărul total **submission count** și **then** după **name** limbii, in următorul format:
 
 "**Submissions:**
 \{**language**\} - \{**submissionsCount**\}
-…"
+..."
 
 ## Input / Constraints
 Pânpă primiți "**exam finished**", veți primi aplicațiile participanților în formatul următor: "\{**username**\}-\{**language**\}-\{**points**\}"
@@ -2400,12 +2400,12 @@ Punctele participantului vor fi un integer valid în gama \[0-100\]
 
 "**Results:**
 \{**username**\} \| \{**points**\}
-…"
+..."
 - După ce am printat fiecare limbă, ordonăm descendent după numărul total de aplicații și apoi după numele limbii, în formatul următor: 
 
 "**Submissions:**
 \{**language**\} - \{**submissionsCount**\}
-…"
+..."
 
 
 ### Exemple
@@ -2649,4 +2649,3 @@ b - 8
 [/tests]
 [/code-task]
 [/slide]
-

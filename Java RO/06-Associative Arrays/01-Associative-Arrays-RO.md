@@ -287,7 +287,7 @@ import java.text.DecimalFormat;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -419,7 +419,7 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -636,7 +636,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -657,13 +657,7 @@ Imprimați rezultatele ca elemente in **lowercase in their order of appearance s
 | **Input** | **Output** |
 | --- | --- |
 | Java C# PHP PHP JAVA C java | java, c#, c |
-
-| **Input** | **Output** |
-| --- | --- |
 | 3 5 5 hi pi HO Hi 5 ho 3 hi pi | 5, hi |
-
-| **Input** | **Output** |
-| --- | --- |
 | a a A SQL xx a xx a A a XX c | a, sql, xx, c |
 
 [/task-description]
