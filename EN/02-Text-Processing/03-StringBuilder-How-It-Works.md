@@ -189,7 +189,7 @@ sb.replace(6, 11, "George");
 System.out.println(sb.toString()); // Hello George, how are you?
 ```
 
-- `toString()` - **Converts** the value of the current instance **to a String**.
+- `toString()` - **Converts** the value of the current instance **to a String**
 
 ```java live
 StringBuilder sb = new StringBuilder("Hello Peter, how are you?");

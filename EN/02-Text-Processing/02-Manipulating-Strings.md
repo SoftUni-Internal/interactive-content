@@ -44,7 +44,7 @@ System.out.println(result); // "Hello, SoftUni!"
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-10-problem-and-solution-repeat-strings-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Repeat strings" taskId="Java-Fundamentals-Part-Two-String-Processing-Repeat-Strings" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Repeat strings" taskId="Java-Fundamentals-2-String-Processing-lab-Repeat-Strings" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -205,6 +205,7 @@ System.out.println(fruits.lastIndexOf("banana")); // 21
 
 System.out.println(fruits.lastIndexOf("orange")); // -1
 ```
+
 [/slide]
 
 [slide hideTitle]
@@ -212,7 +213,7 @@ System.out.println(fruits.lastIndexOf("orange")); // -1
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-16-problem-and-solution-substring-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Substring" taskId="Java-Fundamentals-Part-Two-String-Processing-Substring" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Substring" taskId="Java-Fundamentals-2-String-Processing-lab-Substring" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -243,10 +244,10 @@ At the end **print the remaining string**.
 # Hints
 - **Read the input.**
 - Find the **first index** where the key appears.
-	- Use the built-in method `indexOf()` 
-- **Remove the match**.
-	- Use the built-in method `replace(String oldValue, String newValue)`
-- **Repeat** it until the text **doesn't contain the key anymore**.
+	- use the built-in method `indexOf()` 
+- **Remove the match**
+	- use the built-in method `replace(String oldValue, String newValue)`
+- **Repeat** it until the text **doesn't contain the key anymore**
 
 [/task-description]
 [code-io /]
@@ -368,7 +369,7 @@ System.out.println(replacedText);
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-20-problem-and-solution-text-filter-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Text Filter" taskId="Java-Fundamentals-Part-Two-String-Processing-Text-Filter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Text Filter" taskId="Java-Fundamentals-2-String-Processing-lab-Text-Filter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -396,9 +397,9 @@ The entries in the ban list will be separated by a **comma** and **space** ", ".
 
 
 # Hints  
-- **Read the input**.
-- **Replace all ban words** in the text **with** **asterisk** \(__\*__\).
-	- Use the **built-in method** `replace(banWord, replacement)`.
+- **Read the input**
+- **Replace all ban words** in the text **with** **asterisk** \(__\*__\)
+	- use the **built-in method** `replace(banWord, replacement)`
 
 [/task-description]
 [code-io /]

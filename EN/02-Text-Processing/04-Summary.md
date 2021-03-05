@@ -10,7 +10,7 @@
 - String processing methods:
     - `concat()`, `indexOf()`, `contains()`, `substring()`, `split()`, `replace()`, etc.
 
-```java live
+```java
 
 String text = "Hello, I am John.";
 
@@ -20,7 +20,7 @@ String[] words = text.split("[, .]+");
 System.out.println(String.join(", ",words));
 ```
 
-```java live
+```java
 String greet = "Hello, ";
 
 String name = "SoftUni!";

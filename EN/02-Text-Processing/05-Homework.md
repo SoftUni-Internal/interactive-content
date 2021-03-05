@@ -3,7 +3,7 @@
 [slide hideTitle]
 
 # Problem: Valid Usernames
-[code-task title="Valid Usernames" taskId="Java-Fundamentals-Part-Two-Text-Processing-Valid-Usernames" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Valid Usernames" taskId="Java-Fundamentals-2-Text-Processing-Valid-Usernames" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -115,7 +115,7 @@ bogart
 
 [slide hideTitle]
 # Problem: Character Multiplier
-[code-task title="Character Multiplier" taskId="Java-Fundamentals-Part-Two-Text-Processing-Character-Multiplier" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Character Multiplier" taskId="Java-Fundamentals-2-Text-Processing-Character-Multiplier" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -220,7 +220,7 @@ ioers;hiuesyv843sao384uyvP309308u 0s8o48eieoveatgo4rh;owia390'a92qa
 
 [slide hideTitle]
 # Problem: Extract File
-[code-task title="Extract File" taskId="Java-Fundamentals-Part-Two-Text-Processing-Extract-Files" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Extract File" taskId="Java-Fundamentals-2-Text-Processing-Extract-Files" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -320,7 +320,7 @@ File extension: sln
 
 [slide hideTitle]
 # Problem: Caesar Cipher
-[code-task title="Caesar Cipher" taskId="Java-Fundamentals-Part-Two-Text-Processing-Caesar-Cipher" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Caesar Cipher" taskId="Java-Fundamentals-2-Text-Processing-Caesar-Cipher" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -412,7 +412,7 @@ P\|#Pxp#wulhv#wr#eh#frro#e\|#vd\|lqj#wkdw#vkh#olnhv#doo#wkh#vdph#wklqjv#wkdw#L#g
 
 [slide hideTitle]
 # Problem: Multiply Big Number
-[code-task title="Multiply Big Number" taskId="Java-Fundamentals-Part-Two-Text-Processing-Multiply-Big-Number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Multiply Big Number" taskId="Java-Fundamentals-2-Text-Processing-Multiply-Big-Number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -527,7 +527,7 @@ You must display the product of these numbers.
 
 [slide hideTitle]
 # Problem: Replace Repeating Chars
-[code-task title="Replace Repeating Chars" taskId="Java-Fundamentals-Part-Two-Text-Processing-Replace-Repeating-Chars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Replace Repeating Chars" taskId="Java-Fundamentals-2-Text-Processing-Replace-Repeating-Chars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -619,7 +619,7 @@ asdasdasd
 
 [slide hideTitle]
 # Problem: String Explosion
-[code-task title="String Explosion" taskId="Java-Fundamentals-Part-Two-Text-Processing-String-Explosion" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="String Explosion" taskId="Java-Fundamentals-2-Text-Processing-String-Explosion" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -633,17 +633,17 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-**Explosions are marked** with '>'.
+**Explosions are marked** with '\>'.
 
 Immediately after the mark, there will be an integer, which signifies the **strength of the explosion**.
 
-You should **remove x characters** (where x is the strength of the explosion), **starting after the punch character** ('>').
+You should **remove x characters** (where x is the strength of the explosion), **starting after the punch character** ('\>').
 
-If you find **another explosion mark** ('>') **while you're deleting characters**, you should **add the strength to your previous explosion**.
+If you find **another explosion mark** ('\>') **while you're deleting characters**, you should **add the strength to your previous explosion**.
 
 When all characters are processed, **print the string without the deleted characters**. 
 
-You **should not delete the explosion character** - '>', but you **should delete the integers**, which represent the strength.
+You **should not delete the explosion character** - '\>', but you **should delete the integers**, which represent the strength.
 
 ### Input
 You will receive single line with the string.
@@ -654,30 +654,30 @@ Print what is left from the string after explosions.
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| abv>1>1>2>2asdasd | abv>>>>dasd |
+| abv\>1\>1\>2\>2asdasd | abv\>\>\>\>dasd |
 
 ### Comments
 1st explosion is at index 3 and it is with strength of 1. 
 
 We delete only the digit after the explosion character. 
 
-The string will look like this: abv>>1>2>2asdasd
+The string will look like this: abv\>\>1\>2\>2asdasd
 
-2nd explosion is with strength one and the string transforms to this: abv>>>2>2asdasd
+2nd explosion is with strength one and the string transforms to this: abv\>\>\>2\>2asdasd
 
 3rd explosion is now with strength of 2. 
 
 We delete the digit and we find another explosion. 
 
-At this point the string looks like this: abv>>>>2asdasd. 
+At this point the string looks like this: abv\>\>\>\>2asdasd. 
 
 4th explosion is with strength 2. 
 
 We have 1 strength left from the previous explosion, we add the strength of the current explosion to what is left and that adds up to a total strength of 3. 
 
-We delete the next three characters and we receive the string abv>>>>dasd 
+We delete the next three characters and we receive the string abv\>\>\>\>dasd 
 
-We do not have any more explosions and we print the result: abv>>>>dasd
+We do not have any more explosions and we print the result: abv\>\>\>\>dasd
 
 [/task-description]
 [code-io /]
@@ -736,7 +736,7 @@ frtkvd>>>
 
 [slide hideTitle]
 # Problem: Letters Change Numbers
-[code-task title="Letters Change Numbers" taskId="Java-Fundamentals-Part-Two-Text-Processing-Letters-Change-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Letters Change Numbers" taskId="Java-Fundamentals-2-Text-Processing-Letters-Change-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -763,12 +763,15 @@ You get a **string consisting of a number between two letters**.
 Depending on whether the **letter was in front of the number** or **after it you would perform different mathematical operations** on the number to achieve the result.
 
 **First you start with the letter before the number**. 
-- If it's **uppercase** you **divide the number by the letter's position** in the alphabet. 
-- If it's **lowercase** you **multiply the number with the letter's position** in the alphabet. 
+
+- If it is **uppercase** you **divide the number by the letter's position** in the alphabet
+
+- If it is **lowercase** you **multiply the number with the letter's position** in the alphabet
 
 Then you **move to the letter after the number**. 
-- If it's **uppercase you subtract its position** from the resulted number.
-- If it's **lowercase you add its position** to the resulted number.
+
+- If it is **uppercase you subtract its position** from the resulted number
+- If it is **lowercase you add its position** to the resulted number
 
 But the game became too easy for John really quick. 
 
@@ -780,7 +783,7 @@ So he asks you to **write a program that calculates the sum of all numbers** aft
 
 **For example**, you are given the sequence "A12b s17G":
 
-We have two strings – "A12b" and "s17G". 
+We have two strings - "A12b" and "s17G". 
 
 We do the **operations on each and sum them**. We **start with the letter before the number** on the first string. 
 
@@ -812,7 +815,7 @@ Print at the console a single number: the total sum of all processed numbers rou
 | A12b s17G | 330.00 |
 
 ### Comments
-12/1=12, 12+2=14, 17*19=323, 323–7=316, 14+316=330
+12\/1=12, 12+2=14, 17\*19=323, 323–7=316, 14+316=330
 
 ### Example
 | **Input** | **Output** |
