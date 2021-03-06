@@ -58,7 +58,7 @@ int[][] matrix = {
 - Reading and Printing a Matrix
 
 
-## In the next lesson you will learn:
+## In the next lesson, you will learn:
 
 - Sets
     - HashSet\<E\>
