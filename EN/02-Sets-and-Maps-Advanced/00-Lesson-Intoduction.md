@@ -9,16 +9,15 @@
 
 **1. Set Interface**
 
-- Difference between HashSet, TreeSet and LinkedHashSet
+- The difference between HashSet, TreeSet and LinkedHashSet
 
-- Difference between Set and Map
+- The difference between Sets and Maps
 
 **2. Map Interface**
 
-- What "Map" is
+- What Maps are
 
-- Difference between HashMap, TreeMap, LinkedHashMap
-
+- The difference between HashMap, TreeMap, LinkedHashMap
 
 
 [/slide]
