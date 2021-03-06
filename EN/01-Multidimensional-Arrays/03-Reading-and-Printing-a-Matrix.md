@@ -32,7 +32,7 @@ for (int row = 0; row < rows; row++) {
 - First, we read the length of the rows and columns of the array
 - Next, we initialize an integer array with the given row and column values as the length
 - Next, we create a "for" loop to traverse through the row of a one-dimensional array
-- Next, we read the elements which will go inside of our two-dimensional.
+- Next, we read the elements which will go inside of our two-dimensional
 - Next, we need an inner loop that will traverse through the column of a particular one-dimensional array
 - At the end we set the actual value of our matrix
 
@@ -59,7 +59,7 @@ for (int row = 0; row < matrix.length; row++) {
     System.out.println();
 }
 ```
-This is a one of the standard ways to print a two-dimensional array.
+This is one of the standard ways to print a two-dimensional array.
 
 We access each element of the array one by one and print them separated by a space.
 [/slide]
