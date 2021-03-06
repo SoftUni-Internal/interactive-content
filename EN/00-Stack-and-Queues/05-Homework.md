@@ -244,7 +244,7 @@ Each command is one of the following types:
 
 ## Output
 
-- For each command of type `3`, **print the maximum element** in the stack on a new line.
+- For each command of type `3`, **print the maximum element** in the stack on a new line
 
 ## Examples
 | **Input** | **Output** | **Comments** |
@@ -596,7 +596,7 @@ The robots are **standing at the assembly line in the order of their appearance*
 
 - On the first line, you will receive the names of the robots and their processing times in the format `robotName-processTime;robotName-processTime;robotName-processTime`
 - On the second line, you will receive the starting time in the format `hh:mm:ss`
-- Next, until the `End` command is received, you will get a product on each line.
+- Next, until the `End` command is received, you will get a product on each line
 
 ## Examples
 | **Input** | **Output** |
@@ -1321,13 +1321,13 @@ You will be given three types of parentheses: `(`,  `{`, and `[`.
 
 ## Input
 
-- Each input consists of a single line, the sequence of parentheses.
+- Each input consists of a single line, the sequence of parentheses
 - `1 ≤ Length of sequence ≤ 1000`
 - Each character of the sequence will be one of the following:  `{`, `}`, `(`, `)`, `[`, `]`
 
 ## Output
 
-- For each test case, print `YES` on a new line if the parentheses are balanced. Otherwise, print `NO`.
+- For each test case, print `YES` on a new line if the parentheses are balanced. Otherwise, print `NO`
 
 
 ## Examples
@@ -1610,7 +1610,7 @@ Your task is to implement **4 types of commands** for text manipulation:
 
 ### Output
 
-- For each operation of type `3` print a **single line with the character returned by this operation**.
+- For each operation of type `3` print a **single line with the character returned by this operation**
 
 ## Examples
 | **Input** | **Output** | **Comments** |
@@ -1885,7 +1885,7 @@ Use the famous [Shunting-yard algorithm](https://en.wikipedia.org/wiki/Shunting-
 
 ## Output
 
-- The **output should be on a single line**, consisting of **tokens**, **separated by exactly one space**.
+- The **output should be on a single line**, consisting of **tokens**, **separated by exactly one space**
 
 ## Examples
 | **Input** | **Output** |
@@ -2021,7 +2021,7 @@ Print the number of days **after** which no plant dies. This is the number of da
 
 ### Output
 
-- Output a single value equal to the number of days after which no plants die.
+- Output a single value equal to the number of days after which no plants die
 
 ## Examples
 | **Input** | **Output** | **Comments** |
