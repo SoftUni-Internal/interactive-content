@@ -28,7 +28,7 @@ int[][] matrix = {
    int [][] array = new int [5][5];
    array[0][0]  // the first element of the matrix
     ```
-    - Getting Element Value:
+    - Getting Element Value
 
    ```java live
    int[][] matrix = {
