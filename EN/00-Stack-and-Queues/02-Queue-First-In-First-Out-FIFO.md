@@ -6,7 +6,15 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-26-27-Queue-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Queues** are data structures similar to **stacks**. It keeps its elements in sorted order. Queue elements are ordered based on the **FIFO** principle - **First In First Out**. When you add an element, it is always placed **at the bottom** of the queue. Removing an element removes it from **the top** of the queue.
+**Queues** are data structures similar to **stacks**. 
+
+Queues keeps their elements in sorted order. 
+
+Queue elements are ordered based on the **FIFO** principle - **First In First Out**. 
+
+When you add an element, it is always placed **at the bottom** of the queue. 
+
+Removing an element removes it from **the top** of the queue.
 
 This data structure is modeled based on queues in real life, where the person who comes first is served before everyone else.
 
@@ -18,15 +26,15 @@ This data structure is modeled based on queues in real life, where the person wh
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-28-Queue-Abstract-Data-Type-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- Adding an element to the the end of the queue (the bottom of the queue)
+- Adding an element to the the end of the queue (the bottom of the queue):
 
 [image assetsSrc="Java-Advanced-Stack-and-Queues-4.png" /]
 
-- Removing the first element from the queue (the first element is the element at the top)
+- Removing the first element from the queue (the first element is the element at the top):
 
 [image assetsSrc="Java-Advanced-Stack-and-Queues-5.png" /]
 
-- Getting the first element of the queue without removing it
+- Getting the first element of the queue without removing it:
 
 [image assetsSrc="Java-Advanced-Stack-and-Queues-6.png" /]
 
@@ -39,7 +47,7 @@ This data structure is modeled based on queues in real life, where the person wh
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-29-30-34-ArrayDeque-Java-Implementation-1-2-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- Queue Implementation using `ArrayDeque<E>`
+- Queue Implementation using `ArrayDeque<E>`:
 
 ```java
 ArrayDeque<Integer> queue = new ArrayDeque<>();
@@ -87,7 +95,9 @@ They are used in different scenarios:
 
 - if the queue has no size restriction (unlimited capacity queue) - then you can use either of the two functions
 
-- if the queue is capacity-restricted, it is generally better to use `offer()` because if the function fails, it simply returns  **false**. If you use `add()` with a capacity-restricted queue and it failed, this would result in an **IllegalStateException** that has to be handled
+- if the queue is capacity-restricted, it is generally better to use `offer()` because if the function fails, it simply returns  **false**
+
+- if you use `add()` with a capacity-restricted queue and it failed, this would result in an **IllegalStateException** that has to be handled
 
 [image assetsSrc="Java-Advanced-Stack-and-Queues-7.gif" /]
 
@@ -157,7 +167,7 @@ queue.forEach(element -> System.out.print(element + " "));
 [slide hideTitle]
 # Utility Methods
 
-- `size()` - returns the number of elements in the queue
+- `size()` - returns the number of elements in the queue:
 
 ```java live
 ArrayDeque<String> queueOfCars = new ArrayDeque<>();
@@ -168,7 +178,7 @@ queueOfCars.add("A Guide in Lucid Dreaming");
 System.out.println("The size of this queue is: " + queueOfCars.size());
 ```
 
-- `toArray()` - converts the queue to an array
+- `toArray()` - converts the queue to an array:
 
 ```java live
 ArrayDeque<String> queueOfCars = new ArrayDeque<>();
@@ -183,7 +193,7 @@ Integer[] arr = queueOfCars.toArray();
     }
 ```
 
-- `contains(element)` - checks if the queue contains the element or not. Returns **true** if the element is found and **false** if it is not found.
+- `contains(element)` - checks if the queue contains the element or not. Returns **true** if the element is found and **false** if it is not found:
 
 ```java live
 ArrayDeque<String> queueOfCars = new ArrayDeque<>();
