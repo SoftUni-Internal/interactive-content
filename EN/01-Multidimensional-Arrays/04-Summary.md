@@ -28,7 +28,7 @@ int[][] matrix = {
    int [][] array = new int [5][5];
    array[0][0]  // the first element of the matrix
     ```
-    - Getting Element Value
+    - Getting Element Value:
 
    ```java live
    int[][] matrix = {
@@ -60,11 +60,11 @@ int[][] matrix = {
 
 ## In the next lesson, you will learn:
 
-- Sets
+- Sets:
     - HashSet\<E\>
     - TreeSet\<E\>
     - LinkedHashSet\<E\>
-- Maps
+- Maps:
     - HashMap\<K, V\>
     - TreeMap\<K, V\>
     - LinkedHashMap\<K, V\>
