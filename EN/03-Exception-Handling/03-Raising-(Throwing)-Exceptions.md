@@ -88,7 +88,7 @@ Define a simple class called **Person**, which has the following fields:
  - last name 
  - age
 
-**Validate** the data in the **setters**,
+**Validate** the data in the **setters**.
  
 **Throw** appropriate **exceptions** in case invalid data is entered.
 
