@@ -30,6 +30,6 @@
 
 - Using catch blocks
 
-- Choosing the rigth exception type
+- Choosing the right exception type
 
 [/slide]
