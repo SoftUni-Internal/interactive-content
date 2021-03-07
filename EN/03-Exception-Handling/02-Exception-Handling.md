@@ -93,7 +93,7 @@ try {
 }
 ``` 
 
-Hint: Trace the exceptions hierarchy. Be cautious witch exception is the main and which is the inheritor.
+Hint: Trace the exceptions hierarchy. Be cautious which exception is the parent and which is the child.
 
 [/slide]
 
