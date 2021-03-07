@@ -10,9 +10,9 @@
 
 **1. What Exceptions are**
 
-- The exception class
+- The Exception class
 
-- Types of Exceptions and their hierarchy
+- Types of exceptions and their hierarchy
 
 **2. Handling Exceptions**
 
@@ -22,9 +22,9 @@
 
 **3. Raising (Throwing) Exceptions**
 
-- Using the "Throw" Keyword
+- Using the `Throw` Keyword
 
-- Re-Throwing exceptions
+- Re-throwing exceptions
 
 **4. Best Practices**
 
