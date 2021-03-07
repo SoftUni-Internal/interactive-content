@@ -12,10 +12,9 @@ Exceptions are used to notify the person running the code in case an error occur
 
 **When an exception is "thrown"**: 
 - The program execution stops
-- The exception travels over the stack
-   - until a matching catch block is reached to handle it 
+- The exception travels over the stack until a matching catch block is reached to handle it 
    
-Unhandled exceptions display an error message.
+Unhandled exceptions display an error message and the program execution ends.
 
 [/slide]
 
@@ -25,7 +24,7 @@ Unhandled exceptions display an error message.
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-20-using-throw-keyword-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- Throwing an exception with an error message
+- Throwing an exception with an error message:
 
 ```java
 throw new IllegalArgumentException("Invalid amount!");
@@ -89,13 +88,17 @@ Define a simple class called **Person**, which has the following fields:
  - last name 
  - age
 
-**Validate** the data in the **setters**, **rise** appropriate **exceptions** in case invalid data is entered.
+**Validate** the data in the **setters**,
+ 
+**Throw** appropriate **exceptions** in case invalid data is entered.
 
 - **Step 1: Create a Class Person**
 
 The class should contain the following fields: 
 
-**first name (String), last name (String), and age (int)**.
+- first name (String)
+- last name (String)
+- age (int)
 
 All fields are **required**, meaning you should have one constructor accepting all three as **parameters**. 
 
@@ -127,13 +130,13 @@ The **first** and **last name** cannot be **null** or **empty** strings.
 
 To check this, use the `string.IsNullOrEmpty()` method.
 
-The **age** must be in range [0 … 120].
+The **age** must be in the range [0 … 120].
 
 If data is **invalid**, **throw the** appropriate exceptions with descriptive **messages**
 
 For example, if the **name** is an **empty string**, an appropriate exception may be **IllegalArgumentException**.
 
-Example for validating the **first name** (the last name is analogous):
+Example for validating the **first name**:
 
 ```java
 private void setFirstName (String firstName) {
@@ -171,7 +174,7 @@ public Person (String firstName, String lastName, int age) {
 In the main program, test whether the class behaves correctly. 
 
 Create several objects of type Person – one with **valid data**, one with an **empty string for a first name**, 
-one with **null as last name**, one with **negative age** and one with **age > 120**. 
+one with **null as a last name**, one with **negative age**, and one with **age > 120**. 
 
 Check whether executing the code results in errors in case the entered data is invalid. 
 
@@ -188,7 +191,7 @@ public static void main(String[] args) {
    Person noName = new Person ( firstName: " " lastName: "Aimee", age: 19);
    Person noLastName = new Person ( firstName: "Franco", lastName: null, age: 19);
    Person negativeAge new Person ( firstName: "Franco", lastName: "Aimee", age: -1);
-   Person toooldForThisProgram = new Person ( firstName: "Franco", lastName: "Aimee", age: 121);
+   Person validPerson = new Person ( firstName: "Franco", lastName: "Aimee", age: 121);
 }
 ```
 
@@ -196,7 +199,7 @@ public static void main(String[] args) {
 
 To prevent the program from stopping, surround the invalid lines in **try-catch** blocks. 
 
-It is a good practice to put different **catch blocks** for different types of errors that you anticipate.
+It is good practice to put different **catch blocks** for different types of errors that you anticipate.
 
 
 Example:
