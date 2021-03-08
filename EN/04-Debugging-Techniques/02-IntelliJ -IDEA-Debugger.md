@@ -82,16 +82,13 @@ From the toolbar we can **skip**, **step over**, **step into**, etc.
 
 Here are the shortcuts for the most used actions:
 
-- **Step over** - "**F8**"
-
-- **Step Out** - "**Shift + F8**"
-
-- **Step into** - "**F7**"
-
-- **Resume** - ⏯
-
-- **Pause** - &#10074;
-
+|**Action**|**Button**|
+|---|---|
+|**Step over**|"**F8**"|
+|**Step Out** |"**Shift + F8**"|
+|**Step into**|"**F7**"|
+|**Resume**|⏯ |
+|**Pause**|[image assetsSrc="debugging-techniques-example(5).png" /]|
 
 ## Controlling Execution
 
