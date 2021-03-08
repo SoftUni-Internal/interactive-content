@@ -2,13 +2,15 @@
 
 [slide hideTitle]
 
-# Private Access Modifier
+# Access Modifiers
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-9-10-11-12-13-access-modifiers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
+## Private Access Modifier
+
 With the **private access** modifier an object can hide its data from the rest of the objects in our program.
 
-We choose to make a **field or method** private when we want to preserve the interal logic of our object, so nobody can mess it up:
+We choose to make a **field or method** private when we want to preserve the internal logic of our object, so nobody can mess it up:
 
 ```java
 class Person {
@@ -22,13 +24,9 @@ class Person {
 - Classes and interfaces **cannot** be private
 - Data can be **accessed only within the declared class** itself
 
-[/slide]
+## Protected Access Modifier
 
-[slide hideTitle]
-
-# Protected Access Modifier
-
-When we declare a unit with the access modifier **protected** we say that only members of the **class hierchy** (the current class and it is children) can see and access the given unit:
+When we declare a unit with the access modifier **protected** we say that only members of the **class hierarchy** (the current class and it is children) can see and access the given unit:
 
 ```java
 class Team {
@@ -40,11 +38,7 @@ class Team {
 - **Protected** modifier cannot be applied to classes and interfaces
 - Prevents a **nonrelated** class from trying to use it
 
-[/slide]
-
-[slide hideTitle]
-
-# Default Access Modifier
+## Default Access Modifier
 
 When we do not specifically declare a modifier, a Default Access Modifier gets in use:
 
@@ -60,14 +54,12 @@ Each element with this Access Modifier is **Available** to any other class in th
 Team real = new Team("Real");
 real.setName("Real Madrid");
 System.out.println(real.getName()); 
-				// Real Madrid
+
+// Output:
+// Real Madrid
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-# Public Access Modifier
+## Public Access Modifier
 
 The **public** access modifier states that the given unit is visible and accessible for anyone, anywhere in the program:
 
@@ -88,11 +80,11 @@ public class Team {
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-14-problem-and-solutiom-sort-by-name-and-age-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Sort by Name and Age" timeLimit=5000 taskId="Java-OOP-Advanced-Encapsulation-Sort-By-Name-And-Age" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-task title="Sort by Name and Age" timeLimit=5000 taskId="Java-OOP-Advanced-Encapsulation-Sort-By-Name-And-Age" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 [task-description]
-## Description
+# Description
 Create a class **Person**, which should have **private** fields for:
 - firstName: String
 - lastName: String
@@ -133,7 +125,7 @@ public static void main(String[] args) throws IOException {
 }
 ```
 
-## Examples
+# Example
 | **Input** | **Output** |
 | --- | --- |
 | 5 | George Lee is 44 years old. |
@@ -332,10 +324,11 @@ Test Passed!
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-16-problem-and-solution-salary-increase-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Salary Increase" timeLimit=5000 taskId="Java-OOP-Advanced-Encapsulation-Salary-Increase" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-task title="Salary Increase" timeLimit=5000 taskId="Java-OOP-Advanced-Encapsulation-Salary-Increase" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
+
 [task-description]
-## Description
+# Description
 Read a person with their **names**, **age** and **salary**. 
 
 Read **percent bonus** to every person salary. 
@@ -371,7 +364,7 @@ public static void main(String[] args) throws IOException {
 }
 ```
 
-## Examples
+# Example
 | **Input** | **Output** |
 | --- | --- |
 | 5 | George Air gets 2640.0 euro |
