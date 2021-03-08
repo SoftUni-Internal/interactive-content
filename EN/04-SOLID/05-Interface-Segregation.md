@@ -2,6 +2,8 @@
 
 # Interface Segregation
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-20-21-isp-interface-segregation-principle-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 "**A client should not be forced to implement an interface that is not used**".
 
 This rule means that we should **break** our **interfaces** into many **smaller ones**, so they better satisfy the **exact needs of our clients**.
@@ -21,6 +23,8 @@ A better practice is to make use of **a large number of interfaces** that define
 [slide hideTitle]
 
 # Fat Interfaces
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-22-fat-interfaces-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In the following example, we will take a closer look at what the problem with “fat” interfaces is:
 
@@ -72,6 +76,8 @@ You saw what problems the Fat Interfaces can bring, lets list them our and their
 
 # Fat Interfaces - consequences
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-23-fat-interfaces-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Having fat interfaces may lead to few consequences which we should be aware of**
 
 When we see an interface with more than 5-6 members we should ask ourselves if it is not two interfaces or more.
@@ -90,6 +96,8 @@ When we see an interface with more than 5-6 members we should ask ourselves if i
 
 # How to ISP
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-24-how-to-isp-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The solution to interface segregation is simple.
 
 Just keep your interfaces small but with strong cohesion.
@@ -101,6 +109,8 @@ Applying the **Single-Responsibility** will help you make sure that your interfa
 [slide hideTitle]
 
 # Cohesive Interfaces
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-25-cohesive-interfaces-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The solution to this problem is separating the `sleep()` method into another interface:
 
