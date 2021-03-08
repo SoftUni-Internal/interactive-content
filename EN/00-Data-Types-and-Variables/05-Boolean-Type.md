@@ -44,9 +44,9 @@ public class Main {
 
 A **number** is **special** when the **sum of its digits is 5, 7, or 11**.
 
-Write a program to read an integer **n**. 
+Create a program to read an integer **n**. 
 
-For all numbers in the range **1…n**, print the number and if it is special or not - **(True / False)**.
+For all numbers in range **1…n**, print the number. If it is special or not - **(True / False)** in the format belowЦан.
 
 ## Example
 | **Input** | **Output** |
