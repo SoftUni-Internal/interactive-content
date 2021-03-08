@@ -85,7 +85,6 @@ hashMap.put("Dacia", "Duster");
 hashMap.forEach((k, v) -> System.out.println(k + " - " + v));
 ```
 
-[image assetsSrc="Java-Advanced-Sets-and-Maps-Advanced-5.gif" /]
 
 - Removing Elements 
 
@@ -99,7 +98,6 @@ hashMap.remove("Mercedes");
 
 hashMap.forEach((k, v) -> System.out.println(k + " - " + v));
 ```
-[image assetsSrc="Java-Advanced-Sets-and-Maps-Advanced-6.gif" /]
 [/slide]
 
 
