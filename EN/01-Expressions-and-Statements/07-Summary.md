@@ -42,7 +42,7 @@ double f = a / 4.0;
 System.out.println(f);
 ```
 
-- How we use **Expressions** 
+- How to use **Expressions** 
 
 ```java
 int r = (150-20) / 2 + 5;
@@ -50,12 +50,12 @@ int r = (150-20) / 2 + 5;
 
 ## In the next lesson we will learn:
 
-- How we use Comparison Operators
+- How to use Comparison Operators
 
-- What are Conditional Statements: **if** and **if-else**
+- What are the **if** and **if-else** Conditional Statements
 
 - Blocks and Variable Scope
 
-- What is Code Debugging and how we use them
+- What is Code Debugging and how we use it
 
 [/slide]
