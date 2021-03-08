@@ -3,6 +3,8 @@
 
 # Abstract Classes
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-28-29-abstract-class-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Abstract classes in Java are similar to **interfaces** except they can contain default methods implementation.
 
 They cannot be **instanciated** because we **cannot create** objects of abstract classes.
@@ -51,6 +53,7 @@ class Main {
 
 # Abstract Methods
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-30-abstract-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Lets continue with **abstract methods**.
 
@@ -116,6 +119,7 @@ We called the method of the abstract class using our object `obj`.
 
 [slide hideTitle]
 # Problem with Solution: Border Control
+
 [code-task title="Border Control" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-lab-Border-Control" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
 

@@ -2,6 +2,8 @@
 
 # Abstraction
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-5-6-what-is-abstraction-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Abstraction is a process of **hiding** the implementation details and providing only pure functionality to the user.
 
 In Java, abstraction is achieved by using the **abstract** keyword for classes and interfaces.
@@ -106,6 +108,8 @@ Walking....
 
 [slide hideTitle]
 # Abstraction vs Encapsulation
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-9-abstraction-vs-encapsulation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [image assetsSrc="Interfaces-and-Abstraction-example(2).png" /]
 

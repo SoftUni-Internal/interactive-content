@@ -2,6 +2,8 @@
 
 # Interfaces
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-10-11-interfaces-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 `Interface` in Java may look like a **class**, but it is not a class. 
 
 An **interface** can have all the methods and variables like the class do, but the **methods** in the interface are **abstract** by default.
@@ -94,6 +96,8 @@ Hello, Override Method here
 
 # Extend Interface
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-17-18-extend-interface-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 In Java, interface can **extend another interface**.
 
 ``` java
@@ -115,12 +119,17 @@ public interface Printable extends Callable {
 [slide hideTitle]
 # Difference between Implement and Extends
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-12-implements-vs-extends-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [image assetsSrc="Interfaces-and-Abstraction-example(3).png" /]
 
 [/slide]
 
 [slide hideTitle]
 # Problem with Solution: Car Shop
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-14-problem-and-solution-car-shop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Car Shop" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-lab-Car-Shop" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
 
@@ -733,6 +742,9 @@ Test Passed!
 
 [slide hideTitle]
 # Problem with Solution: Car Shop Extended
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-19-problem-and-solution-car-shop-extended-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Car Shop Extended" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-lab-Car-Shop-Extended" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
 
@@ -1528,6 +1540,8 @@ Test Passed!
 
 # Default Method
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-22-23-default-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Java 8 introduces the "Default method" feature.
 
 This allows us to **add** different methods to the **existing interfaces** without breaking their current implementation.
@@ -1558,6 +1572,8 @@ class TestInterfaceDefault {
 
 # Static Method
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-24-static-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Another thing we can do since Java 8 is to **define** and **implement** `static` methods in interfaces.
 
 We can define static methods in interfaces identical to defining one in class. They can be also invoked within other methods.
@@ -1584,6 +1600,9 @@ Vehicle.getHorsePower(480, 2500));
 
 [slide hideTitle]
 # Problem with Solution: Say Hello
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-25-problem-and-solution-say-hello-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Say Hello" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-lab-Say-Hello" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
 
@@ -2036,6 +2055,9 @@ Test Passed!
 
 [slide hideTitle]
 # Problem with Solution: Say Hello Extended
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-34-problem-and-solution-say-hello-extended-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Say Hello Extended" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-lab-Say-Hello-Extended" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
 
