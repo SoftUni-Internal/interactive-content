@@ -2,6 +2,8 @@
 
 # Seven Testing Principles
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-3-10-seven-testing-principles-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 There are **fundamental** testing principles which helps the testing teams to make the process of testing software more effective.
 
 Lets see what is the concept behind testing:
