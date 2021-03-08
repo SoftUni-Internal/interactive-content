@@ -755,7 +755,7 @@ public class T10TestSetWidth \{
         put("setWidth", void.class);
     \}\};
 
-    private static final HashMap<String, Class\[\]\> methodParameters = new HashMap<String, Class[]>() \{\{
+    private static final HashMap<String, Class[]> methodParameters = new HashMap<String, Class[]>() \{\{
         put("setWidth", new Class\[\]\{double.class\});
     \}\};
 
@@ -868,7 +868,7 @@ public class T11TestSetHeight \{
         put("setHeight", void.class);
     \}\};
 
-    private static final HashMap<String, Class[]> methodParameters = new HashMap<String, Class\[\]\>() \{\{
+    private static final HashMap<String, Class[]> methodParameters = new HashMap<String, Class[]>() \{\{
         put("setHeight", new Class\[\]\{double.class\});
     \}\};
 
