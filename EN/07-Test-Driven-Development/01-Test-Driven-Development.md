@@ -2,6 +2,8 @@
 
 # Unit Testing Approach
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/08-Test-Driven-Development/EN/Java-OOP-Advanced-Test-Driven-Development-3-4-Unit-Testing-Approaches-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 When we are creating complex software one of the things we should consider is the **software development approach** which we should choose.
 
 Two of these development approaches are: 
@@ -25,6 +27,8 @@ That is where the **Test-Driven-Approach** comes in place.
 
 # Tests in Code and Test Approach
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/08-Test-Driven-Development/EN/Java-OOP-Advanced-Test-Driven-Development-5-The-code-and-test-approach-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 With the code and test approach we are having 3 main steps:
 
 1. Write an implementation of the functionalities we need
@@ -40,6 +44,8 @@ With the code and test approach we are having 3 main steps:
 [slide hideTitle]
 
 # Test Driven Development
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/08-Test-Driven-Development/EN/Java-OOP-Advanced-Test-Driven-Development-6-the-test-driven-development-approach-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 There are test cases, that are developed to specify and validate what the code will do.
 
@@ -58,6 +64,8 @@ Simply, we can say that a test-driven development is used to develop tests befor
 [slide hideTitle]
 
 # Test-Driven-Development Steps
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/08-Test-Driven-Development/EN/Java-OOP-Advanced-Test-Driven-Development-7-test-driven-development-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Let's take a look at the sequence of steps that are followed:
 
@@ -84,6 +92,8 @@ Let's take a look at the sequence of steps that are followed:
 [slide hideTitle]
 
 # Why TDD
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/08-Test-Driven-Development/EN/Java-OOP-Advanced-Test-Driven-Development-8-Why-TDD-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Let's see some of the advantages of using **TDD**:
 
