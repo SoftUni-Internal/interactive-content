@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Problem: Santa Workshop Structure
+# Problem with Solution: Santa Workshop Structure
 [code-task title="Santa Workshop Structure" timeLimit=5000 taskId="oop-advanced-java-exam-preparation-1-Santa-Workshop-Structure" executionType="tests-execution" executionStrategy="java-project-tests"] 
 
 [code-upload allowedMemory="30" /]
