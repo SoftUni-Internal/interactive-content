@@ -88,11 +88,10 @@ Here are the shortcuts for the most used actions:
 
 - **Step into** – **F7**
 
-- **Pause** - ⏸️
+- **Pause** - $(debug-pause)
 
 - **Resume** - ⏯
 
-    
 
 ## Controlling Execution
 
