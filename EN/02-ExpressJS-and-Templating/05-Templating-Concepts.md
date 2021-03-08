@@ -6,7 +6,7 @@
 
 **Templating** is the procedure of separating an **HTML document's structure** from the actual **content**.
 
-**Templates** enable the **replication of similar content** in a webpage, **without having to repeat the corresponding markup**.
+**Templates** enable the **replication of similar content** in a webpage, such as a list of products in an online store, by automatically generating the needed markup.
 
 This clear **distinction** between **logic and data** makes our code much **easier to read and work on**.
 
@@ -14,7 +14,7 @@ This is a pattern in which an object called **subject** maintains a list of depe
 
 The **Observer** pattern facilitates good object-oriented design and promotes loose coupling.
 
-# Common Participants
+## Common Participants
 
 [image assetsSrc="js-application-design-patterns-15.png" /]
 
@@ -28,6 +28,9 @@ Sends notifications to the observers attached to it.
 
 - **Observer**: has an interface that sends updates to objects that need to be notified of a subject's changes of state
 
+This introduces a more **effective** way to build user interfaces and results in **less boilerplate code**.
+
+
 [image assetsSrc="JS-Back-End-ExpressJs-and-Templating-1.png" /]
 
 
@@ -37,7 +40,7 @@ Sends notifications to the observers attached to it.
 
 # Templating Concepts
 
-The **static** parts of our webpage are stored in the form of **templates**, while the **dynamic** content, such as user data, is being stored **separately**, most often in a database.
+The **static** parts of our webpage are stored in the form of **templates**, while the **dynamic** content, such as entity data, is being stored **separately**, most often in a database.
 
 A **templating engine** is used to **combine the two**.
 
