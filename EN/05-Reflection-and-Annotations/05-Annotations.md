@@ -42,11 +42,11 @@ These annotation are used to generate or suppress warnings and errors. It is goo
 
 Here is example of some **Built-In** annotations:
 
-- `@Override` annotation indicates that a method overrides or replaces the behavior of an inherited method.
+- `@Override` annotation indicates that a method overrides or replaces the behavior of an inherited method
 
-- `@Deprecated` annotation for example shows us an API that is not intended for use anymore.
+- `@Deprecated` annotation for example shows us an API that is not intended for use anymore
 
-- `@SupressWarning` is used to turn off compiler warnings. 
+- `@SupressWarning` is used to turn off compiler warnings
 
 Lets see how we can use it:
 
