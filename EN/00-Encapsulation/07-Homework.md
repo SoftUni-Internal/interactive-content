@@ -112,8 +112,8 @@ public class T02TestFieldsExists \{
 
     private static final String\[\] classNames = new String\[\]\{"Box"\};
     private static final Map\<String, String\[\]\> allNeededFields =
-            new HashMap\<String, String\[\]\>() \{\{
-                put("Box", new String\[\]\{"length", "width", "height"\});
+            new HashMap<String, String[]>() \{\{
+                put("Box", new String[]{"length", "width", "height"});
             \}\};
 
     @Test
@@ -159,12 +159,12 @@ public class T03TestConstructors \{
     private static final String CONSTRUCTOR_NOT_PRESENT_ERROR_MESSAGE = "Constructor '%s' not present";
 
 
-    private static final String\[\] classNames = new String\[\]\{
+    private static final String[] classNames = new String\[\]\{
             "Box"
     \};
 
-    private static final HashMap\<String, Class\[\]\> constructorParameters = new HashMap\<String, Class\[\]\>() \{\{
-        put("Box", new Class\[\]\{double.class, double.class, double.class\});
+    private static final HashMap<String, Class[]> constructorParameters = new HashMap<String, Class[]>() \{\{
+        put("Box", new Class[]{double.class, double.class, double.class});
 
 
     \}\};
@@ -270,8 +270,8 @@ public class T05TestAllMethodsExists \{
 
 
     private static final Map\<String, String\[\]\> methodsInClass =
-            new HashMap\<String, String\[\]\>() \{\{
-                put("Box", new String\[\]\{
+            new HashMap<String, String[]>() \{\{
+                put("Box", new String[]\{
                         "calculateSurfaceArea",
                         "calculateLateralSurfaceArea",
                         "calculateVolume",
@@ -281,7 +281,7 @@ public class T05TestAllMethodsExists \{
                 \});
             \}\};
 
-    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+    private static final HashMap<String, Class> methodReturnTypes = new HashMap<String, Class>() \{\{
         put("calculateSurfaceArea", double.class);
         put("calculateLateralSurfaceArea", double.class);
         put("calculateVolume", double.class);
@@ -290,7 +290,7 @@ public class T05TestAllMethodsExists \{
         put("setHeight", void.class);
     \}\};
 
-    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
+    private static final HashMap<String, Class[]\> methodParameters = new HashMap<String, Class[]>() \{\{
         put("calculateSurfaceArea", new Class\[\]\{\});
         put("calculateLateralSurfaceArea", new Class\[\]\{\});
         put("calculateVolume", new Class\[\]\{\});
@@ -361,11 +361,11 @@ public class T06TestCalculateSurfaceArea \{
             "calculateSurfaceArea"
     \};
 
-    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+    private static final HashMap<String, Class> methodReturnTypes = new HashMap<String, Class>() \{\{
         put("calculateSurfaceArea", double.class);
     \}\};
 
-    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
+    private static final HashMap<String, Class[]> methodParameters = new HashMap<String, Class[]>() \{\{
         put("calculateSurfaceArea", new Class\[\]\{\});
     \}\};
 
@@ -453,11 +453,11 @@ public class T07CalculateLateralSurfaceArea \{
             "calculateLateralSurfaceArea"
     \};
 
-    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+    private static final HashMap<String, Class> methodReturnTypes = new HashMap<String, Class>() \{\{
         put("calculateLateralSurfaceArea", double.class);
     \}\};
 
-    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
+    private static final HashMap<String, Class[]> methodParameters = new HashMap<String, Class[]>() \{\{
         put("calculateLateralSurfaceArea", new Class\[\]\{\});
     \}\};
 
@@ -541,15 +541,15 @@ public class T08TestCalculateVolume \{
     private static final String BOX = "Box";
 
 
-    private static final String\[\] methodNames = new String\[\]\{
+    private static final String[] methodNames = new String[]\{
             "calculateVolume"
     \};
 
-    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+    private static final HashMap<String, Class> methodReturnTypes = new HashMap<String, Class>() \{\{
         put("calculateVolume", double.class);
     \}\};
 
-    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
+    private static final HashMap<String, Class[]> methodParameters = new HashMap<String, Class[]>() \{\{
         put("calculateVolume", new Class\[\]\{\});
     \}\};
 
@@ -638,11 +638,11 @@ public class T09TestSetLength \{
             "setLength"
     \};
 
-    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+    private static final HashMap<String, Class> methodReturnTypes = new HashMap<String, Class>() \{\{
         put("setLength", void.class);
     \}\};
 
-    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
+    private static final HashMap<String, Class[]> methodParameters = new HashMap<String, Class[]>() \{\{
         put("setLength", new Class\[\]\{double.class\});
     \}\};
 
@@ -751,11 +751,11 @@ public class T10TestSetWidth \{
             "setWidth"
     \};
 
-    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+    private static final HashMap<String, Class> methodReturnTypes = new HashMap<String, Class>() \{\{
         put("setWidth", void.class);
     \}\};
 
-    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
+    private static final HashMap<String, Class\[\]\> methodParameters = new HashMap<String, Class[]>() \{\{
         put("setWidth", new Class\[\]\{double.class\});
     \}\};
 
@@ -864,11 +864,11 @@ public class T11TestSetHeight \{
             "setHeight"
     \};
 
-    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+    private static final HashMap<String, Class> methodReturnTypes = new HashMap<String, Class>() \{\{
         put("setHeight", void.class);
     \}\};
 
-    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
+    private static final HashMap<String, Class[]> methodParameters = new HashMap<String, Class\[\]\>() \{\{
         put("setHeight", new Class\[\]\{double.class\});
     \}\};
 
@@ -1733,7 +1733,7 @@ public class T10TestIsCalcProductPerDayAccessModifier \{
     \}\};
 
     private static final HashMap<String, Class\[\]\> methodParameters = new HashMap<String, Class[]>() \{\{
-        put(TEST_METHOD_NAME, new Class\[\]\{\});
+        put(TEST_METHOD_NAME, new Class[]{});
     \}\};
 
 
