@@ -180,7 +180,7 @@ Object returnValue = method.invoke(null, "arg1"); // We use null for static meth
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-21-22-problem-and-solution-getters-and-setters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Getters and Setters" taskId="Java-OOP-Advanced-Reflection-lab-Getters-And-Setters" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput] 
+[code-task title="Getters and Setters" taskId="Java-OOP-Advanced-Reflection-lab-Getters-And-Setters" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
 # Description
@@ -201,11 +201,14 @@ Then print all setters in format:
 [/task-description]
 [code-upload allowedMemory="30" /]
 [tests]
-[test open]
+[test]
 [input]
+```
 Blank Test
+```
 [/input]
 [output]
+```
 getEmail will return class java.lang.String
 getName will return class java.lang.String
 getWebAddress will return class java.lang.String
@@ -214,6 +217,7 @@ setEmail and will set field of class java.lang.String
 setName and will set field of class java.lang.String
 setWebAddress and will set field of class java.lang.String
 setZip and will set field of class int
+```
 [/output]
 [/test]
 [/tests]
