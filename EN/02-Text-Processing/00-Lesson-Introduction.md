@@ -10,7 +10,7 @@
 
 ## In this lesson you will learn:
 
-**1. What strings in JavaScript are**
+**1. What are strings in JavaScript**
 
 -  A more in-depth view of strings
 
