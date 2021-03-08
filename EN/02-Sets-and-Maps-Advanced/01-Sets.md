@@ -73,7 +73,6 @@ System.out.println(hash);
 
 System.out.println(hash.add("Alice"));
 ```
-[image assetsSrc="Java-Advanced-Sets-and-Maps-Advanced-1.gif" /]
 
 - `remove()`: searches for the specified element and returns `true` if the specified element exists in the `HashSet`. Otherwise, it returns `false`
 
@@ -91,7 +90,6 @@ System.out.println(hash);
 System.out.println(hash.remove("Ana"));
 ```
 
-[image assetsSrc="Java-Advanced-Sets-and-Maps-Advanced-2.gif" /]
 
 - `contains()`: returns `true` if the element exists in the `HashSet`, otherwise, it returns `false`
 
@@ -152,7 +150,6 @@ tree.add("George");
 System.out.println(tree);
 ```
 
-[image assetsSrc="Java-Advanced-Sets-and-Maps-Advanced-3.gif" /]
 
 - `remove()`: searches for the specified element and returns `true` if it exists in the `TreeSet`. Otherwise, it returns `false`
 
@@ -217,7 +214,6 @@ System.out.println(linkedHashSet);
 System.out.println(linkedHashSet.add("Alice"));
 ```
 
-[image assetsSrc="Java-Advanced-Sets-and-Maps-Advanced-4.gif" /]
 
 - `remove()`: searches for the specified element and returns `true` if the specified element exists in the `LinkedHashSet`, otherwise returns `false`
 
