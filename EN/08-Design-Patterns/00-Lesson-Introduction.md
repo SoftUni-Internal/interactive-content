@@ -4,7 +4,7 @@
 
 # Lesson Content
 
-## In this lesson you will learn:
+## In this lesson, you will learn:
 
 **1. Definition of Design Pattern**
 **2. Benefits and Drawbacks**
