@@ -166,7 +166,7 @@ Class[] paramTypes = method.getParameterTypes();
 Class returnType = method.getReturnType();
 ```
 
-### Get methods with parameters.
+### Get methods with parameters
 
 ```java
 Method method = myObject.class.getMethod("methodName", String.class);
@@ -180,8 +180,8 @@ Object returnValue = method.invoke(null, "arg1"); // We use null for static meth
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-21-22-problem-and-solution-getters-and-setters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Getters and Setters" taskId="Java-OOP-Advanced-Reflection-lab-Getters-And-Setters" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
-[code-upload allowedMemory="30" /]
+[code-task title="Getters and Setters" taskId="Java-OOP-Advanced-Reflection-lab-Getters-And-Setters" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput] 
+
 [task-description]
 # Description
 Using reflection to get all **Reflection** methods. 
@@ -191,16 +191,17 @@ Then prepare an algorithm that will recognize, which methods are **getters** and
 Sort each collection **alphabetically** by methods names. 
 
 Print to console each **getter** on new line in format:
-- "\{**name**\} will return class \{**Return Type**\}"
+- "\{**name**\} **will return class** \{**Return Type**\}"
 
 Then print all setters in format:
-- "\{**name**\} and will set field of class \{**Parameter Type**\}"
+- "\{**name**\} **and will set field of class** \{**Parameter Type**\}"
 
 **Do this without changing anything in "Reflection.java".**
 
 [/task-description]
+[code-upload allowedMemory="30" /]
 [tests]
-[test]
+[test open]
 [input]
 Blank Test
 [/input]
