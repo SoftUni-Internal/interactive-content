@@ -303,7 +303,7 @@ public static void main(String[] args) {
 | DJAAF |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
