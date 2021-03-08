@@ -209,11 +209,11 @@ Blank Test
 getEmail will return class java.lang.String
 getName will return class java.lang.String
 getWebAddress will return class java.lang.String
-getZip will return int
+getZip will return class int
 setEmail and will set field of class java.lang.String
 setName and will set field of class java.lang.String
 setWebAddress and will set field of class java.lang.String
-setZip and will set field of int
+setZip and will set field of class int
 [/output]
 [/test]
 [/tests]
