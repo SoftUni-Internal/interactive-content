@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 # Problem: Class Box
-[code-task title="Class Box" timeLimit=5000 taskId="Java-OOP-Advanced-Encapsulation-Class-Box" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-task title="Class Box" timeLimit=5000 taskId="Java-OOP-Advanced-Encapsulation-Class-Box" executionType="tests-execution" executionStrategy="java-project-tests" ]
 [code-upload allowedMemory="30" /]
 
 [task-description]
@@ -976,7 +976,7 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: Animal Farm
-[code-task title="Animal Farm" timeLimit=5000 taskId="Java-OOP-Advanced-Encapsulation-Animal-Farm" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-task title="Animal Farm" timeLimit=5000 taskId="Java-OOP-Advanced-Encapsulation-Animal-Farm" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 [task-description]
@@ -1805,7 +1805,7 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: Shopping Spree
-[code-task title="Shopping Spree" timeLimit=5000 taskId="Java-OOP-Advanced-Encapsulation-Shopping-Spree" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-task title="Shopping Spree" timeLimit=5000 taskId="Java-OOP-Advanced-Encapsulation-Shopping-Spree" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 [task-description]
@@ -2817,7 +2817,7 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: Pizza Calories
-[code-task title="Pizza Calories" timeLimit=5000 taskId="Java-OOP-Advanced-Encapsulation-Pizza-Calories" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-task title="Pizza Calories" timeLimit=5000 taskId="Java-OOP-Advanced-Encapsulation-Pizza-Calories" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 [task-description]
