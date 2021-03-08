@@ -4,11 +4,11 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-33-35-Typical-program-errors-and-mistakes-in-Java-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-IntelliJ has a way to show us most of the basics errors we can make.
+IntelliJ has tools to identify most of the basic errors we can make.
 
-It underlines the wrong code that cannot be compiled.
+Wrong code that cannot be compiled will be underlined.
 
-Some of the basic common mistakes we can face:
+Here are some of the basic common mistakes we showld watch out for:
 
 - Mixing of lowercase and uppercase letters in syntax
 
