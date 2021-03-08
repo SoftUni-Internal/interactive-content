@@ -4,21 +4,19 @@
 
 # What is Debugging?
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-3-4-what-is-debugging-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+The process of locating an **error** (**bug**) and after that fixing it, we call **Debugging**.
 
-Debugging is the process of locating and fixing or bypassing bugs (errors) in computer program code.
+There are a few steps that we have to follow when we are **debugging** a program:
 
-To debug a program, a user has to start with a problem.
+- We have to identify the **problem**
 
-After that, the user needs to isolate the source code that is causing problems (bugs).
+- Next, we can isolate the **source** of the problem
 
-The last step is knowing how to fix the bug, as knowledge about problem analysis is expected.
+- Next we have found and isolate it, the next step is to  **fix** the problem
 
-**Debugging tools** (called **debuggers**) help identify coding errors at various development stages.
+Luckily, there are **Debugging tools** that help us to locate the bugs.
 
-Programmers can trace the execution of the whole program step-by-step getting the value of the needed variables on every execution step.
-
-Debugging, you also have the power to change and test the behavior of your code without modifying the source.
+The **Debugging tools** are also called **debuggers**.
 
 [/slide]
 
@@ -26,11 +24,21 @@ Debugging, you also have the power to change and test the behavior of your code 
 
 # Debugging vs. Testing
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-5-debugging-vs-testing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+There is a difference between **Testing** and **Debugging**.
 
-- Testing means that programmers must test the execution flow of the program, then detect if an initial error occurs.
+**Testing** is the process of confirming if the software has bugs.
 
-- Debugging is the process of diagnosing and correcting the root causes of errors that have already been detected.
+We test the application to make sure that it works as it is supposed to work.
+
+We debug the application after it has failed. 
+
+**Debugging** is done to fix the error found during the testing.
+
+The **debugging** cannot be **automated**, unlike the **testing** which can be **automated** or **manual**.
+
+The **debugging** can only be **manual**.
+
+The **testing** is done by a tester, while the **debugging** can be done by a programmer.
 
 [/slide]
 
@@ -38,17 +46,21 @@ Debugging, you also have the power to change and test the behavior of your code 
 
 # Importance of Debugging
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-6-Importance-of-debugging-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+**Debugging** is one of the most important steps when developing an application.
 
-Debugging is an important procedure whether a business item or a venture or individual's applications developing is involved.
+Because there are factors that are not predictable or we cannot control.
 
-Knowing how to debug properly saves precious development time and also helps you understand your code's logic and flow system better.
+In other words, there is no such thing as perfect code.
 
-Debugging and finding defects will save additional time and resources, also it will help you train your logical and analytical understanding.
+There are many legacy projects written before many years.
 
-This is one of the reasons, companies hire consultants.
+In scenarios like this one, we have to orientate quickly.
 
+The debugging will help to understand the project in depth.
 
+**Interesting fact** is that, bugs cause about $60 Billion per year in economic losses.
+
+An example is the [Cluster Spacecraft Failure](https://en.wikipedia.org/wiki/Cluster_(spacecraft)#Launch_failure).
 
 [/slide]
 
@@ -56,16 +68,22 @@ This is one of the reasons, companies hire consultants.
 
 # Debugging Philosophy
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-7-debugging-philosophy-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+We can imagine that the **debugging** is a tree.
 
-**Debugging** can be viewed as one big decision tree.
+The different branches represent independent **theories**.
 
-- Individual nodes represent **theories**
-- Leaf nodes represent possible **root causes**
-- Traversal of tree boils down to process state **inspection**
-- Minimizing time to resolution is **key**
-    - careful traversal of the decision tree
-    - pattern recognition
-    - visualization and ease of use helps minimize time to resolution
+Every one of these branches is a potential error.
+
+The leaves on the branches are the potential causes of the bug.
+
+When we traverse the tree, we process the information that it stores.
+
+Every action consumes time, but there is a way to reduce the time consumed, for example:
+
+- Visualization
+
+- Traverse the code carefully
+
+- Using a [recognition pattern](https://en.wikipedia.org/wiki/Pattern_recognition)
 
 [/slide]

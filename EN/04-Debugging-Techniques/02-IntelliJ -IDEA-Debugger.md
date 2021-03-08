@@ -4,41 +4,35 @@
 
 # How to Debug a Process
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-10-how-to-debug-a-process-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+**IntelliJ IDEA** has a built-in debugging tool.
 
-Almost every **IDE** has a integrated debugger.
+It is helpful because it allows us to:
 
-The debugger itself is a tool, that allows you to execute your code in a **strictly** controlled environment.
+- Add **breakpoints**
+    - we add **breakpoints** when we want to stop the program on a specific line of code
 
-**IntelliJ IDE** gives you a lot of tools to debug your application
+- Visualize the **flow of the program**
+    - this means to see, for example, how many times the **for-loop** will iterate
 
-- Adding **breakpoints**
-  * click the gutter at the executable line of code where you want to set the breakpoint
-  * alternatively, place the caret at the line and press Ctrl+F8
-- Visualize the **program flow**
-- Control the **flow of execution**
-- **Data tips**
-- **Watch variables**
-- Debugging **multithreaded programs**
-- And many more…
-
-
+- Control the **execution flow**
+    - this allows us to **control** step by step the **flow** of the **program execution**
+- Track the **values** stored in the **variables**
 
 [/slide]
 
 [slide hideTitle]
 
-# Starting a Process of Debugging
+# Starting a process of debugging
 
-Starting a session using the debugger is similar to the program in normal mode.
+To run the debugger in **InteliJ IDEA** we have to press **Ctrl + Alt + F5**.
 
-Since the debugger logic is encapsulated behind the scenes, you do not have to configure anything specific.
+After that, a pop-up list will appear, from which we have to select the process we want.
 
-- Starting a process under the IntelliJ debugger
-- Attaching to an already running process
-    - without a solution loaded you can still debug
-    - useful when solution isn't readily available
-    - **Ctrl + Alt + F5**
+Finally, we can debug our program.
+
+We can run the debugger on a program which is not running.
+
+Also, we can attach to a program, which is **not** directly available in **IntelliJ IDEA**.
 
 [image assetsSrc="debugging-techniques-example(1).png" /]
 
@@ -47,55 +41,90 @@ Since the debugger logic is encapsulated behind the scenes, you do not have to c
 
 
 [slide hideTitle]
-# Debugging a Project
+# Debugging a Project 
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-11-debugging-a-project-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+To run the program in **debug mode**, we need to right click and choose the "**Debug** \{**the name of the class**\}**.main()**"
+
+We have another way to run the program in **debug mode**.
+
+There is a shortcut, which is - "**Shift + F9**.
+
+The **debug mode** gives us control over the execution flow.
+
+Also, it allows us to observe the values of the variables.
 
 
-- Right click in **main** method, Debug `{class}.main()`
-    - **Shift + F9** is a shortcut
-- Easier access to the source code and symbols since its loaded in the solution
-- Certain differences exist in comparison to debugging an already running process
+## Debug Windows
 
-**Debug Windows**
+The **Debug Window** shows us the debugging session.
 
-- Debug Windows are the means to introspect on the state of a process
-- Opens a new window with the selected information in it
-- Window categories
-    - frames / threads
-    - variables
-    - watches
-- Accessible from Debug window
+In the window, there is tab for the **console** and tab for the **debugger**.
 
-**Debugging Toolbar**
+In the console we can put the needed input.
+ 
+The **Debugger** tab is shows the steps the program goes through.
 
-- Convenient shortcut to common debugging tasks
-    - **Step over** – F8
-    - **Force Step Into** – through the method calls - Alt + Shift + F7
-    - **Step Out** – Shift + F8
-    - **Step into** – F7
-    - **etc.**
+There are different categories in the window that we can observe:
+
+- Frames / Threads
+
+- Variables
+
+- Watches
+
+## Debugging Toolbar
+
+The **debug mode** of **InteliJ IDEA** allows us to control the program execution step-by-step.
+
+We can do that from the toolbar or by shortcuts.
+
+From the toolbar we can **skip**, **step over**, **step into**, etc.
+
+Here are the shortcuts for the most used actions:
+
+- **Step over** – **F8**
+
+- **Step Out** – **Shift + F8**
+
+- **Step into** – **F7**
+
+- **Pause** - ⏸️
+
+- **Resume** - ⏯
+
     
 
-**Controlling Execution**
+## Controlling Execution
 
-- By default, an app will run uninterrupted (and stop on exception or breakpoint)
-- Debugging is all about looking at the state of the process
-- Controlling execution allows:
-    - **Pausing execution**
-    - **Resuming execution**
+By default, an app will run uninterrupted when it is in **debug mode**.
+
+The behavior will change when we **pause** the program or a **breakpoint** is reached.
+
+When we control the program execution, we can get a better view of the program **state**.
+
+That allows us to see what exactly is happening in our program.
+
+When we are examining the program state, we control the **execution flow** of the program.
+
+That means that we use the **debugging toolbar**.
 
 ## Options and Settings
 
-- IntelliJ offers quite a few knobs and tweaks in the debugging experience
-- Options and settings are available via Settings/Preferences -> 
+To use the debugger, we need to set a few things.
 
-    Build, Execution and Deployment (Ctrl + Alt + S):
+The first one is the **Data views** and the second one is the **Compiler**.
 
-    - debugger -> data views -> **Java**
-    - compiler -> **Java Compiler**
-- **Project Structure** (Ctrl + Shift + Alt + S)
+We can find these pages in the **Build, Execution and Deployment** section of the **Settings**.
 
+The full paths for both setting are:
+ 
+- "**Setting** \-\> **Build, Execution and Deployment** \-\> **Debugger** \-\> **Data Types** \-\> **Java**"
+
+- "**Setting** \-\> **Build, Execution and Deployment** \-\> **Compiler** \-\> **Java Compiler**"
+
+If we want to debug a project, we can change the **project structure**.
+
+From the **Project Structure** option in the **File** menu, or by a shortcut - "**Ctrl + Shift + Alt + S**"
 
 [/slide]
 
@@ -103,28 +132,25 @@ Since the debugger logic is encapsulated behind the scenes, you do not have to c
 
 # Breakpoints
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-16-17-breakpoints-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+The **breakpoints** gives us the ability to stop the program on a specific action.
 
-Ability to stop execution based on certain criteria is key when debugging.
-- When a function is hit
-- When data changes
-- When a specific thread hits a function
-- Much more…
+We can add **breakpoints** by clicking on the **left side** of the **source code window**.
 
-**IntelliJ's debugger** has a huge feature set when it comes to breakpoints.
+Or we can use the "**Ctrl + F8**" shortcut when we are on the line where we want to add a breakpoint.
 
-- Stops execution at a specific instruction (line of code)
-    - can be set using:
-      **Ctrl + F8** shortcut or 
+The **IntelliJ debugger** has many built-in features that we can take advantage of when using breakpoints.
 
-      clicking on the **left most side** of the source code window
+For example, we can set specific options under which to stop the program.
 
-- By default, the breakpoint will hit every time execution reaches the line of the code
-- Additional capabilities: condition, hit count, value changed, when hit, filters
-- Managing breakpoint in the breakpoint window
-    - adding breakpoints
-    - removing or **disabling** breakpoints
-    - open Breakpoints window - **Ctrl + Shift + F8**
+Some of them are **Conditions**, **Filters**, **Remove once hit**, and many more.
+
+To set these options, we need to access the **Breakpoint Window**.
+
+We can do that by **right-clicking breakpoint** or by a **shortcut on the line** where the breakpoint is.
+
+The shortcut is: "**Ctrl + Shift + F8**".
+
+In the breakpoint window, we can not only **remove** or **disable** breakpoints, but we can **move** them.
 
 [image assetsSrc="debugging-techniques-example(2).png" /]
 
