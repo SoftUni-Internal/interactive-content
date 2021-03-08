@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Problem: Santa Workshop Business Logic
+# Problem with Solution: Santa Workshop Business Logic
 [code-task title="Santa Workshop Business Logic" timeLimit=5000 taskId="oop-advanced-java-exam-preparation-1-Santa-Workshop-Business-Logic" executionType="tests-execution" executionStrategy="java-project-tests"]   
 [code-upload allowedMemory="30" /]
 
