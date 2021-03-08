@@ -302,6 +302,7 @@ public static void main(String[] args) {
 | DJAAF |
 
 [/task-description]
+[code-io /]
 [tests]
 [test open]
 [input]
