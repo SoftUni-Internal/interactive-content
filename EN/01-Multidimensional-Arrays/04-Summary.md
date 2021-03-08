@@ -58,13 +58,13 @@ int[][] matrix = {
 - Reading and Printing a Matrix
 
 
-## In the next lesson you will learn:
+## In the next lesson, you will learn:
 
-- Sets
+- Sets:
     - HashSet\<E\>
     - TreeSet\<E\>
     - LinkedHashSet\<E\>
-- Maps
+- Maps:
     - HashMap\<K, V\>
     - TreeMap\<K, V\>
     - LinkedHashMap\<K, V\>
