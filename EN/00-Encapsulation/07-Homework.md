@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 # Problem: Class Box
-[code-task title="Class Box" timeLimit=5000 taskId="Java-OOP-Advanced-Encapsulation-Class-Box" executionType="tests-execution" executionStrategy="java-project-tests"]
+[code-task title="Class Box" timeLimit=100000 taskId="Java-OOP-Advanced-Encapsulation-Class-Box" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 [task-description]
