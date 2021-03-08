@@ -2,6 +2,8 @@
 
 # Mutable vs Immutable Objects
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-24-25-mutable-and-immutable-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The contents of **mutable** objects **can be altered**:
 
 ```java
@@ -45,6 +47,8 @@ When we return our object we give a reference to it's memory, that is why with t
 
 # Mutable Fields Example
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-26-27-mutable-fields-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Example:
 
 ```java
@@ -68,6 +72,8 @@ What happens is that although we do not have a setter, the list is still mutable
 
 # Imutable Fields
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-28-imutable-fields-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 - For securing our collection we can return `Collections.unmodifiableList()`
   * This encloses our reference type and does not permit any change
 
@@ -90,6 +96,9 @@ class Team {
 
 [slide hideTitle]
 # Problem with Solution: First and Reserve Team
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-29-problem-and-solution-first-and-reserve-team-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="First and Reserve Team" timeLimit=5000 taskId="Java-OOP-Advanced-Encapsulation-First-and-Reserve-Team" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
 [code-upload allowedMemory="30" /]
 

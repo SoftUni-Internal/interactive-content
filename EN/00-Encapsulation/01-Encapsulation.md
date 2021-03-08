@@ -2,6 +2,8 @@
 
 # Encapsulation
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-3-4-5-6-encapsulation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Encapsulation is a process of wrapping code and data together into a single unit**
 - Increase flexibility and extensibility of the code
 - Reduce complexity
@@ -52,6 +54,8 @@ Accessors and Mutators should be **public** (+):
 [slide hideTitle]
 
 # Keyword This 
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-7-8-keyword-this-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - `.this` is a reference to the current object
 
