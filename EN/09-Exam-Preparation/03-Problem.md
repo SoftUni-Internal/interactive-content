@@ -1,21 +1,13 @@
-[slide]
-# Problem: Christmas Unit Tests
-[code-task title="Problem: Christmas Unit Tests" taskId="98347f73-4ff1-45fa-9f96-98f5a4b739d9" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[slide hideTitle]
+# Problem with Solution: Christmas Unit Tests
+[code-task title="Christmas Unit Tests" taskId="oop-advanced-java-exam-preparation-1-Christmas-Unit-Tests" executionType="tests-execution" executionStrategy="java-unit-tests" requiresInput]   
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
-## Description
+# Description
 
 # Task 3: Unit Tests (100 points)
+
+Download the skeleton of this problem from [here](https://mega.nz/file/iIpH0SKJ#aSWnnMGgoxZeUaKcGVAvfXX0usPf379wlER3hDhI4iE).
 
 You will receive a skeleton with **Present** and **PresentBag** classes inside. 
 
@@ -25,15 +17,13 @@ You are **NOT ALLOWED** to change any class. Cover the whole class with unit tes
 
 You are provided with a **unit test project** in the **project skeleton**.
 
-Note: The **PresentBag** you need to test is in the **package christmas**, so zip package **christmas**.
+**Note:** The **PresentBag** you need to test is in the **christmas** package, therefore you should put the package in a `.zip` file.
 
-Do **NOT** use **Mocking** in your unit tests!
-
-Download skeleton from [here](https://mega.nz/file/iIpH0SKJ#aSWnnMGgoxZeUaKcGVAvfXX0usPf379wlER3hDhI4iE)
+Do **NOT** use **mocking** in your unit tests!
 
 
 [/task-description]
-[code-io /]
+[code-upload /] 
 [tests]
 [test]
 [input]
