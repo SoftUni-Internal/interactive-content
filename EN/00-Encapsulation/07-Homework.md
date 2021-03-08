@@ -111,7 +111,7 @@ public class T02TestFieldsExists \{
     private static final String FIELD_IS_MISSING_ERROR_MESSAGE = "Field '%s' is missing";
 
     private static final String\[\] classNames = new String\[\]\{"Box"\};
-    private static final Map\<String, String\[\]\> allNeededFields =
+    private static final Map<String, String[]> allNeededFields =
             new HashMap<String, String[]>() \{\{
                 put("Box", new String[]{"length", "width", "height"});
             \}\};
@@ -269,7 +269,7 @@ public class T05TestAllMethodsExists \{
     \};
 
 
-    private static final Map\<String, String\[\]\> methodsInClass =
+    private static final Map<String, String[]> methodsInClass =
             new HashMap<String, String[]>() \{\{
                 put("Box", new String[]\{
                         "calculateSurfaceArea",
