@@ -13,7 +13,7 @@ The project will consist of **model classes** and a **controller class**, which 
 
 # Setup
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/11.Java-OOP-Advanced-Exam-Preparation-2.zip) **for this task.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/11.Java-OOP-Advanced-Exam-Preparation-2.zip) **for these tasks.**
 
 - Upload **only the onlineShop** package in every task **except Unit Tests**
 - **Do not modify the interfaces or their packages**
