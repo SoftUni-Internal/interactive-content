@@ -58,7 +58,7 @@ We can use **Application-level** middleware by declaring `app.use()`, which we d
 
 We can also use the `app.METHOD()` function to create **route-specific** middleware.
 
-# Router-level middleware
+## Router-level middleware
 
 **Router-level** middleware is very similar to the application-level middleware.
 
@@ -81,7 +81,7 @@ router.use((req, res, next) => {
 });
 ```
 
-# Error-handling middleware
+## Error-handling middleware
 
 **ExpressJS** comes bundled with **error-handling parameters** by **default**.
 
@@ -98,9 +98,9 @@ app.use(function (err, req, res, next) {
 
 In this example, we call the `console.error()` with the error stack as a parameter.
 
-We also assign a status of `404 - Not Found` to the response object.
+We also assign a status of "**404 - Not Found**" to the response object.
 
-# Third-party middleware
+## Third-party middleware
 
 **Third-party middleware** enables a lot of **additional functionality**.
 
@@ -156,7 +156,7 @@ app.get("/post/:postId", (req, res) => {
 });
 ```
 
-In this example, we check if a blogpost with a given `postId` exists in a database.
+In this example, we check if a blog post with a given `postId` exists in a database.
 
 Depending on that, we either redirect the user to the homepage or show more information about the post.
 

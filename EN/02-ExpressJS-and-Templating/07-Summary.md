@@ -4,9 +4,9 @@
 
 # In this lesson you learnt:
 
-- ExpressJS is a server framework
-  - Used with Node.js
-  - Middlewares are used to modify the request and response objects
+- **ExpressJS** is a server framework
+  - Used with **Node.js**
+  - **Middlewares** are used to modify the request and response objects
 
 ```js
 const express = require('express')
@@ -20,8 +20,8 @@ app.listen(port, () => console.log(`Express running on port: ${port}...`));
 
 ```
 
-- Templating enables code readability and speeds up development
-  - Templating engines assemble logic and data
+- **Templating** enables code readability and speeds up development
+  - Templating engines **assemble** **logic** and **data**
 
 ```
 <div class="entry">
@@ -43,10 +43,10 @@ app.listen(port, () => console.log(`Express running on port: ${port}...`));
 
 ```
 
-- Handlebar is a templating engine with a lot of features
-  - For-Loops
-  - Conditional Statements
-  - Partials
+- **Handlebars** is a templating engine with a lot of features
+  - **For-Loops**
+  - **Conditional Statements**
+  - **Partials**
 
 ```
 {{#if sunny}}
@@ -58,7 +58,7 @@ app.listen(port, () => console.log(`Express running on port: ${port}...`));
 ```
 
 
-## In the next lesson you will learn:
+## In the next lesson, you will learn:
 
 - Relational and NoSQL Databases
 - What is MongoDB?

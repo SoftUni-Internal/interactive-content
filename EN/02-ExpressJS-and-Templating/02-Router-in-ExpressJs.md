@@ -50,7 +50,7 @@ The arrangement of routes is important because when we have two get routs at the
 [slide hideTitle]
 # Route Methods - 2
 
-There is another parameter in handlers that is called `next`.
+There is another parameter in handlers that is called - `next`.
 
 `Next` allows us to call the next function.
 
@@ -63,9 +63,9 @@ app.all('/about', (req, res, next) => {
   res.send('Show about page.')
 })
 ```
-In this example, we tap the route `app.all` and the function with which we print `Middleware execution..` to the console.
+In this example, we tap the route `app.all` and the function with which we print "**Middleware execution..**" to the console.
 
-Then, thanks to `next` with a separate function we return a response, which in this case is `Show about page.`
+Then, thanks to `next` with a separate function we return a response, which in this case is: "**Show about page.**"
 [/slide]
 
 [slide hideTitle]
@@ -140,7 +140,7 @@ As a response, we can send many things.
 
 We can use:
 
-- `res.download`: if we want to return a file, which the user can download.
+- `res.download`: if we want to return a file, which the user can download
 
 ```js
 app.get('/pdf', (req, res) => {

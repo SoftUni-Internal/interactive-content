@@ -18,13 +18,15 @@ The **Observer** pattern facilitates good object-oriented design and promotes lo
 
 [image assetsSrc="js-application-design-patterns-15.png" /]
 
-- **Subject**: contains collection of observers. 
+- **Subject**: contains collection of observers
 
-It can add or remove observers as needed. Implements an interface that allows observed objects to be added or removed - `subscribe()`, `unsubscribe()`. 
+It can add or remove observers as needed. 
+
+Implements an interface that allows observed objects to be added or removed - `subscribe()`, `unsubscribe()`. 
 
 Sends notifications to the observers attached to it.
 
-- **Observer**: has an interface that sends updates to objects that need to be notified of a subject's changes of state.
+- **Observer**: has an interface that sends updates to objects that need to be notified of a subject's changes of state
 
 [image assetsSrc="JS-Back-End-ExpressJs-and-Templating-1.png" /]
 

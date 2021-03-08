@@ -8,7 +8,7 @@
 
 It is the **most popular** server framework for **Node.js**.
 
-To use Express.Js we need to install the `npm install express` library.
+To use **Express.Js** we need to install the `npm install express` library.
 
 Installing the library:
 
@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 app.listen(port, () => console.log(`Express running on port: ${port}...`));
 ```
 
-To be able to use the ExpressJs library, we should type `const express = require ('express')`, then we should display the function `const app = express ();` so that we can generate our server.
+To be able to use the **ExpressJs** library, we should type `const express = require ('express')`, then we should display the function `const app = express ();` so that we can generate our server.
 
 Then we create the port on which the server will accept requests `const port = 3000;`.
 
@@ -38,8 +38,8 @@ app.get('/', (req, res) => {
 
 When we receive a `GET` request, this handler will be called and will return the corresponding response.
 
-In this case `200` and` Welcome to Express.js! `, which means that our request has been processed.
+In this case `200` and `Welcome to Express.js!`, which means that our request has been processed.
 
-Finally, we call `app.listen`, on which we pass the port on which our application will listen and a callback function, which says that` Express running on port: $ {port} ... `.
+Finally, we call `app.listen`, on which we pass the port on which our application will listen and a callback function, which says that `Express running on port: $ {port} ...`.
 
 [/slide]

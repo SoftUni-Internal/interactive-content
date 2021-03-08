@@ -31,7 +31,7 @@ let data = fs.readdirSync('./myDir', 'utf8');
 console.log(data);
 ```
 
-## In the next lesson you will learn:
+## In the next lesson, you will learn:
 
 - Express​
 - View Engines
