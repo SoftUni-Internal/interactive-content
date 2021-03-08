@@ -2821,7 +2821,7 @@ public class T14ValidateBuyComputerValidMethod \{
 Test Passed!
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 import org.junit.Assert;
 import org.junit.Before;
@@ -2998,7 +2998,7 @@ public class T15ValidateBuyComputerInvalidMethod \{
 Test Passed!
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 import org.junit.Assert;
 import org.junit.Before;
@@ -3164,7 +3164,7 @@ public class T16ValidateBuyBestComputerValidMethod \{
 Test Passed!
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 import org.junit.Assert;
 import org.junit.Before;
@@ -3341,7 +3341,7 @@ public class T18ValidateBuyBestComputerInvalidMethod \{
 Test Passed!
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 import org.junit.Assert;
 import org.junit.Before;
@@ -3507,7 +3507,7 @@ public class T19ValidateGetComputerDataValidMethod \{
 Test Passed!
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 import org.junit.Assert;
 import org.junit.Before;
