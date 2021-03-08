@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# What is Array?
+# What is an Array?
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/interactive-java-advanced-multidimensional-arrays-4-5-Array-In-Java-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -27,7 +27,7 @@ As shown in the illustration above, **the numbering of elements starts with 0**,
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/interactive-java-advanced-multidimensional-arrays-6-Working-With-Array-In-Java-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- Initializing an Array
+Initializing an Array:
 
 ```java live
 int[] numbers = new int[5];
@@ -43,7 +43,8 @@ In the example above, we initialize an empty array of integers with a length of 
 - `new int[5]`: creates a new instance of an array, which will hold five integers
 When we iterate through the array, it will be printing zeros because the default value of an integer is zero
 
-- Assigning values to the Array elements:
+
+Here is how to assign values to the Array elements:
 
 ```java live
 int[] numbers = new int[5];
@@ -54,7 +55,7 @@ for (int i = 0; i < numbers.length; i++) {
 }
 ```
 
-Using a "for" loop, we iterate through the length of the array and assign a value to each element and then print the current element. 
+Using a **for-loop**, we iterate through the length of the array and assign a value to each element and then print the current element. 
 
 - Accessing array elements:
 ``` java live
