@@ -69,7 +69,7 @@ The library should provide the following ready classes for the client:
 - **FileAppender** - appends a log to a file (You need to implement a **CustomFile** class) using the provided layout
 
 - **LogFile** - a custom file class which logs messages in a string builder using a method `write()`
-    - it should have a **getter** for its **size** which is the **sum** of the ascii codes of all alphabet characters it contains (e.g. a-z and A-Z).
+    - it should have a **getter** for its **size** which is the **sum** of the ascii codes of all alphabet characters it contains (e.g. a-z and A-Z)
 
 - **Logger** - a logger class which is used to log messages
     - calls each of its appenders when something needs to be logged
@@ -204,7 +204,7 @@ Console appenders should print directly at the console in the layout they are pr
 - Simple layout example - **"3/31/2015 5:33:07 PM - ERROR - Error parsing request"**
 - Xml layout example (date, level and message tags are indented by 1 tabulation):
 
-```html
+```js
 <log>
     <date>3/31/2015 5:33:07 PM</date>
     <level>ERROR</level>
@@ -223,24 +223,25 @@ Appender type: `<appender type>`, Layout type: `<layout type>`, Report level: `<
 
 ## Input
 
-`2`
-`ConsoleAppender SimpleLayout CRITICAL`
-`FileAppender XmlLayout`
-`INFO|3/26/2015 2:08:11 PM|Everything seems fine`
-`WARNING|3/26/2015 2:22:13 PM|Warning: ping is too high - disconnect imminent`
-`ERROR|3/26/2015 2:32:44 PM|Error parsing request`
-`CRITICAL|3/26/2015 2:38:01 PM|No connection string found in App.config`
-`FATAL|3/26/2015 2:39:19 PM|mscorlib.dll does not respond`
-`END`
+
+2
+ConsoleAppender SimpleLayout CRITICAL
+FileAppender XmlLayout
+INFO\|3/26/2015 2:08:11 PM\|Everything seems fine
+WARNING\|3/26/2015 2:22:13 PM\|Warning: ping is too high - disconnect imminent
+ERROR\|3/26/2015 2:32:44 PM\|Error parsing request
+CRITICAL\|3/26/2015 2:38:01 PM\|No connection string found in App.config
+FATAL\|3/26/2015 2:39:19 PM\|mscorlib.dll does not respond
+END
 
 
 ## Output
 
-`3/26/2015 2:38:01 PM - CRITICAL - No connection string found in App.config`
-`3/26/2015 2:39:19 PM - FATAL - mscorlib.dll does not respond`
-`Logger info`
-`Appender type: ConsoleAppender, Layout type: SimpleLayout, Report level: CRITICAL, Messages appended: 2`
-`Appender type: FileAppender, Layout type: XmlLayout, Report level: INFO, Messages appended: 5, File size: 37526`
+3/26/2015 2:38:01 PM - CRITICAL - No connection string found in App.config
+3/26/2015 2:39:19 PM - FATAL - mscorlib.dll does not respond
+Logger info
+Appender type: ConsoleAppender, Layout type: SimpleLayout, Report level: CRITICAL, Messages appended: 2
+Appender type: FileAppender, Layout type: XmlLayout, Report level: INFO, Messages appended: 5, File size: 37526
 
 [/task-description]
 [tests]

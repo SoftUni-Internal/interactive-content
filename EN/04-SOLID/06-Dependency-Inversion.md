@@ -144,22 +144,20 @@ Understanding what **Dependency Inversion** is may take time, but lets have a lo
 
 **A dependency is any external component/system:**
 
-| **Dependencies** |
-|---|
-| Framework |
-| Third Part Library |
-| Database |
-| File System |
-| Email |
-| Web Service |
-| System resource (e.g. clock) |
-| Configuration |
-| The `new` keyword |
-| Static method |
-| Global function |
-| Random generator |
-| System.in / System.out |
-|   |
+- Framework 
+- Third Part Library 
+- Database 
+- File System 
+- Email 
+- Web Service 
+- System resource (e.g. clock) 
+- Configuration 
+- The `new` keyword 
+- Static method 
+- Global function 
+- Random generator 
+- System.in / System.out 
+  
 
 We want to de-couple our code from specific classes, in order for it to be flexible and at any point of our program to change its behaviour by changing the concrete implementation of its dependencies.
 
