@@ -7,7 +7,7 @@
 
 # Setup
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/10-Java-OOP-Advanced-Exam-Preparation.zip) **for this task.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/10-Java-OOP-Advanced-Exam-Preparation.zip) **for these tasks.**
 
 - Upload **only the santaWorkshop package** in every task **except Unit Tests**
 - **Do not modify the interfaces or their packages**
