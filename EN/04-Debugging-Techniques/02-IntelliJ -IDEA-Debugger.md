@@ -86,7 +86,7 @@ Here are the shortcuts for the most used actions:
 - **Step Out** - "**Shift + F8**"
 - **Step into** - "**F7**"
 - **Resume** - ⏯ 
-- **Pause**: [image assetsSrc="debugging-techniques-example(2).png" /]
+- **Pause**: [image assetsSrc="debugging-techniques-example(5).png" /]
 
 ## Controlling Execution
 
