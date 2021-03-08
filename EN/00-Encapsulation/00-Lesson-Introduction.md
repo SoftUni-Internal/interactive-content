@@ -26,7 +26,7 @@
 
 - What the difference between mutable and immutable objects is 
 
-- Which objects are mutable and which immutable
+- Which objects are mutable and which - immutable
 
 **5. Keyword `final`**
 
