@@ -201,7 +201,7 @@ Then print all setters in format:
 [/task-description]
 [code-upload allowedMemory="30" /]
 [tests]
-[test open]
+[test]
 [input]
 Blank Test
 [/input]
