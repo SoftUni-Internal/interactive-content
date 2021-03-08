@@ -265,7 +265,6 @@ Test Passed!
 
 [slide hideTitle]
 # Problem with Solution: Animals
-
 [code-task title="Animals" timeLimit=5000 taskId="Java-OOP-Advanced-Polymorphism-lab-Animals" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
@@ -309,33 +308,33 @@ public static void main(String[] args) {
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.\*;
+import static org.junit.Assert.*;
 
-public class T01TestAllClassesExists \{
+public class T01TestAllClassesExists {
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
 
-    private static final String\[\] classNames = new String\[\]\{
+    private static final String[] classNames = new String[]{
             "Animal",
             "Cat",
             "Dog",
-    \};
+    };
 
     @Test
-    public void test() \{
+    public void test() {
         assertExistingClasses(classNames);
-    \}
+    }
 
-    private void assertExistingClasses(String\[\] classNames) \{
-        for (String className : classNames) \{
+    private void assertExistingClasses(String[] classNames) {
+        for (String className : classNames) {
             assertClassExists(className);
-        \}
-    \}
+        }
+    }
 
-    private void assertClassExists(String className) \{
+    private void assertClassExists(String className) {
         Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
                 Classes.allClasses.containsKey(className));
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
@@ -353,57 +352,57 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class T02TestAllFieldsExists \{
+public class T02TestAllFieldsExists {
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
     private static final String FIELD_IS_MISSING_ERROR_MESSAGE = "Field '%s' in class '%s' is missing";
-    private static final Class\<?\> animalClass = Classes.allClasses.get("Animal");
+    private static final Class<?> animalClass = Classes.allClasses.get("Animal");
 
-//    private static final String\[\] classNames = new String\[\]\{
+//    private static final String[] classNames = new String[]{
 //            "Animal"
-//    \};
-    private static final Map\<String, String\[\]\> allNeededFields =
-            new HashMap\<String, String\[\]\>() \{\{
-                put("Animal", new String\[\]\{"name", "favouriteFood"\});
-            \}\};
+//    };
+    private static final Map<String, String[]> allNeededFields =
+            new HashMap<String, String[]>() {{
+                put("Animal", new String[]{"name", "favouriteFood"});
+            }};
 
     @Test
-    public void test() \{
+    public void test() {
       haveAllFields("Animal");
       hasMethodExplainSelf();
-    \}
+    }
 
-    private void hasMethodExplainSelf() \{
-        List\<Method\> methods = Arrays.asList(animalClass.getDeclaredMethods());
+    private void hasMethodExplainSelf() {
+        List<Method> methods = Arrays.asList(animalClass.getDeclaredMethods());
         boolean contains = false;
-        for (Method method : methods) \{
-            if (method.getName().equals("explainSelf"))\{
+        for (Method method : methods) {
+            if (method.getName().equals("explainSelf")){
                 contains=true;
-            \}
-        \}
+            }
+        }
 
         Assert.assertTrue("Method ExplainSelf in class Animal not present",contains);
-    \}
+    }
 
-    private void assertHaveAllFields(String\[\] classNames) \{
-        for (String className : classNames) \{
+    private void assertHaveAllFields(String[] classNames) {
+        for (String className : classNames) {
             haveAllFields(className);
-        \}
-    \}
+        }
+    }
 
-    private void haveAllFields(String className) \{
+    private void haveAllFields(String className) {
         Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
                 Classes.allClasses.containsKey(className));
 
         Class cl = Classes.allClasses.get(className);
-        Field\[\] fields = cl.getDeclaredFields();
+        Field[] fields = cl.getDeclaredFields();
 
-        for (String field : allNeededFields.get(className)) \{
+        for (String field : allNeededFields.get(className)) {
             Assert.assertTrue(String.format(FIELD_IS_MISSING_ERROR_MESSAGE, field,className),
                     Arrays.stream(fields)
-                            .anyMatch(x -\> x.getName().equalsIgnoreCase(field)));
-        \}
-    \}
-\}
+                            .anyMatch(x -> x.getName().equalsIgnoreCase(field)));
+        }
+    }
+}
 [/input]
 [output]
 Test Passed!
@@ -417,50 +416,50 @@ import org.junit.Test;
 import java.lang.reflect.Constructor;
 import java.util.HashMap;
 
-public class T03TestAllConstructors \{
+public class T03TestAllConstructors {
     private static final String CONSTRUCTOR_NOT_PRESENT_ERROR_MESSAGE = "Constructor '%s' not present";
-    private static final Class\<?\> animalClass = Classes.allClasses.get("Animal");
-    private static final Class\<?\> catClass = Classes.allClasses.get("Cat");
-    private static final Class\<?\> dogClass = Classes.allClasses.get("Dog");
+    private static final Class<?> animalClass = Classes.allClasses.get("Animal");
+    private static final Class<?> catClass = Classes.allClasses.get("Cat");
+    private static final Class<?> dogClass = Classes.allClasses.get("Dog");
 
 
-    private static final String\[\] classNames = new String\[\]\{
+    private static final String[] classNames = new String[]{
             "Cat",
             "Dog",
             "Animal",
-    \};
+    };
 
-    private static final HashMap\<String, Class\[\]\> constructorParameters = new HashMap\<String, Class\[\]\>() \{\{
-        put("Animal", new Class\[\]\{String.class,String.class\});
-        put("Cat", new Class\[\]\{String.class,String.class\});
-        put("Dog", new Class\[\]\{String.class,String.class\});
-    \}\};
+    private static final HashMap<String, Class[]> constructorParameters = new HashMap<String, Class[]>() {{
+        put("Animal", new Class[]{String.class,String.class});
+        put("Cat", new Class[]{String.class,String.class});
+        put("Dog", new Class[]{String.class,String.class});
+    }};
 
     @Test
-    public void test() throws NoSuchMethodException \{
+    public void test() throws NoSuchMethodException {
         assertConstructors(classNames);
-    \}
+    }
 
-    private void assertConstructors(String\[\] classNames) throws NoSuchMethodException \{
-        for (String className : classNames) \{
+    private void assertConstructors(String[] classNames) throws NoSuchMethodException {
+        for (String className : classNames) {
             assertConstructorExists(className);
-        \}
-    \}
+        }
+    }
 
-    private void assertConstructorExists(String className) throws NoSuchMethodException \{
+    private void assertConstructorExists(String className) throws NoSuchMethodException {
         Class cl = Classes.allClasses.get(className);
 
         Constructor constructor = null;
 
-        try \{
+        try {
             constructor = cl.getDeclaredConstructor(constructorParameters.get(className));
 
-        \} catch (Exception e) \{
-        \}
+        } catch (Exception e) {
+        }
         Assert.assertNotNull(String.format(CONSTRUCTOR_NOT_PRESENT_ERROR_MESSAGE, className), constructor);
 
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
@@ -471,16 +470,16 @@ Test Passed!
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.\*;
+import static org.junit.Assert.*;
 
-public class T04TestCatClass \{
+public class T04TestCatClass {
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
     private static final String ERROR_MESSAGE = "Class '%s' should inherit from class '%s'";
     private static final String PARENT_CLASS_NAME = "Animal";
     private static final String CHILD_CLASS_NAME = "Cat";
 
     @Test
-    public void testChildParent() \{
+    public void testChildParent() {
         Assert.assertTrue(
                 String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, CHILD_CLASS_NAME),
                 Classes.allClasses.containsKey(CHILD_CLASS_NAME));
@@ -491,8 +490,8 @@ public class T04TestCatClass \{
         Assert.assertEquals(String.format(ERROR_MESSAGE, CHILD_CLASS_NAME, PARENT_CLASS_NAME),
                 parent.getSimpleName(), PARENT_CLASS_NAME);
 
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
@@ -503,16 +502,16 @@ Test Passed!
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.\*;
+import static org.junit.Assert.*;
 
-public class T05TestDogClass \{
+public class T05TestDogClass {
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
     private static final String ERROR_MESSAGE = "Class '%s' should inherit from class '%s'";
     private static final String PARENT_CLASS_NAME = "Animal";
     private static final String CHILD_CLASS_NAME = "Dog";
 
     @Test
-    public void testChildParent() \{
+    public void testChildParent() {
         Assert.assertTrue(
                 String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, CHILD_CLASS_NAME),
                 Classes.allClasses.containsKey(CHILD_CLASS_NAME));
@@ -523,9 +522,9 @@ public class T05TestDogClass \{
         Assert.assertEquals(String.format(ERROR_MESSAGE, CHILD_CLASS_NAME, PARENT_CLASS_NAME),
                 parent.getSimpleName(), PARENT_CLASS_NAME);
 
-    \}
+    }
 
-\}
+}
 [/input]
 [output]
 Test Passed!
@@ -541,7 +540,7 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
-public class T06TestAllMethods \{
+public class T06TestAllMethods {
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
     private static final String METHOD_RETURN_TYPE_ERROR = "Method '%s' in class '%s' should have return type '%s'";
     private static final String CLASS_NAME = "Animal";
@@ -549,78 +548,78 @@ public class T06TestAllMethods \{
     private static final String CLASS_NAME_3 = "Dog";
     private static final String SEARCHED_METHOD_1 = "explainSelf";
 
-    private static final String\[\] classNames = new String\[\]\{
+    private static final String[] classNames = new String[]{
             CLASS_NAME,
             CLASS_NAME_2,
             CLASS_NAME_3,
 
-    \};
+    };
 
 
-    private static final Map\<String, String\[\]\> methodsInClass =
-            new HashMap\<String, String\[\]\>() \{\{
-                put(CLASS_NAME, new String\[\]\{
+    private static final Map<String, String[]> methodsInClass =
+            new HashMap<String, String[]>() {{
+                put(CLASS_NAME, new String[]{
                         SEARCHED_METHOD_1,
 
 
-                \});
-                put(CLASS_NAME_2, new String\[\]\{
+                });
+                put(CLASS_NAME_2, new String[]{
                         SEARCHED_METHOD_1,
 
-                \});
-                put(CLASS_NAME_3, new String\[\]\{
+                });
+                put(CLASS_NAME_3, new String[]{
 
                         SEARCHED_METHOD_1,
-                \});
+                });
 
-            \}\};
+            }};
 
-    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+    private static final HashMap<String, Class> methodReturnTypes = new HashMap<String, Class>() {{
         put(SEARCHED_METHOD_1, String.class);
 
-    \}\};
+    }};
 
-    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
-        put(SEARCHED_METHOD_1, new Class\[\]\{\});
-    \}\};
+    private static final HashMap<String, Class[]> methodParameters = new HashMap<String, Class[]>() {{
+        put(SEARCHED_METHOD_1, new Class[]{});
+    }};
 
     @Test
-    public void test() throws NoSuchMethodException \{
+    public void test() throws NoSuchMethodException {
         assertExistingMethods(classNames);
-    \}
+    }
 
-    private void assertExistingMethods(String\[\] classNames) throws NoSuchMethodException \{
-        for (String className : classNames) \{
+    private void assertExistingMethods(String[] classNames) throws NoSuchMethodException {
+        for (String className : classNames) {
 
             Class cl = getClass(className);
-            for (String methodName : methodsInClass.get(className)) \{
+            for (String methodName : methodsInClass.get(className)) {
                 Method method =
                         methodParameters.get(methodName).length == 0
                                 ? cl.getDeclaredMethod(methodName)
                                 : cl.getDeclaredMethod(methodName, methodParameters.get(methodName));
-                Class\<?\> returnType = method.getReturnType();
-//                if (!cl.getSimpleName().equals("Animal")) \{
+                Class<?> returnType = method.getReturnType();
+//                if (!cl.getSimpleName().equals("Animal")) {
 //
 //
 //    //            Assert.assertTrue("Method not ovveriden");
-//                \}
+//                }
                 Assert.assertTrue(
                         String.format(METHOD_RETURN_TYPE_ERROR,
                                 methodName,
                                 className,
                                 methodReturnTypes.get(methodName)),
                         returnType.equals(methodReturnTypes.get(methodName)));
-            \}
+            }
 
-        \}
-    \}
+        }
+    }
 
-    private Class getClass(String className) \{
+    private Class getClass(String className) {
         Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
                 Classes.allClasses.containsKey(className));
         return Classes.allClasses.get(className);
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
