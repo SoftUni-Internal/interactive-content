@@ -6,12 +6,11 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-30-31-type-conversion-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-
 When you assign the value of one data type to another, the two types might not be compatible with each other.
 
-If the data types are compatible, then Java will perform the conversion automatically. 
+If the data types are compatible, Java will perform the conversion automatically. 
 
-This is known as Automatic Type Conversion, and if they are not compatible, they need to be cast or converted explicitly.
+This is known as **Automatic Type Conversion**, and if they are not compatible, they need to be cast or converted explicitly.
 
 For example, assigning an **int** value to a **long** variable.
 
@@ -29,11 +28,11 @@ System.out.println(myInt);
 System.out.println(myDouble);
 ```
 
-Here the lower data type \(having smaller size\) is converted into the higher data type \(having larger size\). 
+Here a lower data type \(having smaller size\) is converted into a higher data type \(having larger size\). 
 
-There is no loss in data. This is why this type of conversion happens automatically.
+There is no loss in data, hence why this type of conversion happens automatically.
 
-- **Narrowing conversion** \(manual\) - converting a larger type to a smaller size type. Also known as **explicit conversion**
+- **Narrowing conversion** \(manual\) - converting a larger type into a smaller size type. Also known as **explicit conversion**
 
 ```java live
 double myDouble = 9.78;
@@ -50,7 +49,6 @@ Here the higher data types \(having larger size\) are converted into lower data 
 When this happens there can be a loss of data/precision.
 
 This is why this type of conversion does not happen automatically. 
-
 
 [/slide]
 
@@ -77,7 +75,7 @@ public class Main {
 
 ## Description
 
-Write a program that accepts an **int** number of **centuries** and converts it to **years**, **days**, **hours**, and **minutes**. 
+Create a program that accepts an **int** number of **centuries** and converts it to **years**, **days**, **hours**, and **minutes**. 
 
 The input will be of type **int**.
 
@@ -176,11 +174,11 @@ public class Main {
 
 ## Description
 
-Write a program that reads 3 lines of input.
+Create a program that reads 3 lines of input.
 
 You will get a single character on each line.
 
-Combine all the characters into one string and print it on the console.
+Combine all the characters into one string and print it to the console.
 
 ## Examples
 
@@ -304,7 +302,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that prints whether a given character is written in upper or lower-case.
+Create a program that prints whether a given character is written in upper or lower-case.
 
 ## Examples
 | **Input** | **Output** |
