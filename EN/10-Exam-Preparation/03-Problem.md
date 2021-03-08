@@ -1,19 +1,20 @@
-[slide]
-# Problem: Online Shop Unit Tests
+[slide hideTitle]
+# Problem with Solution: Online Shop Unit Tests
 
-[code-task title="Online Shop Unit Tests" taskId="java-oop-advanced-exam-prep-2" executionType="tests-execution" executionStrategy="java-unit-tests" requiresInput]
+[code-task title="Online Shop Unit Tests" taskId="oop-advanced-java-exam-preparation-2-Online-Shop-Unit-Tests" executionType="tests-execution" executionStrategy="java-unit-tests" requiresInput]
 
 [task-description]
+# Description
 
 # Task 3: Unit Testing (100 Points)
 
-Download the skeleton from here [mega.nz](https://mega.nz/file/aExQHByZ#e2gCZDTWIFYww3Uuwsy-XOpxXDbjpx0_CabZ1CyPUgI)
+**Use the resources you downloaded in the first task.**
 
 You will receive a skeleton with one class inside. 
 
 The class will have some methods, fields and constructors. 
 
-Cover the whole class with unit test to make sure that the class is working as intended.
+Cover the whole class with unit tests to make sure that the class is working as intended.
 
 [/task-description]
 [code-upload /]
