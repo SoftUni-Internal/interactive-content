@@ -1,25 +1,13 @@
-[slide]
-# Problem: Santa Workshop Structure
-[code-task title="Problem: Santa Workshop Structure" taskId="6fdfd422-5289-405f-9f14-8fd3383d3d48" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
+[slide hideTitle]
+# Problem with Solution: Santa Workshop Structure
+[code-task title="Santa Workshop Structure" timeLimit=5000 taskId="oop-advanced-java-exam-preparation-1-Santa-Workshop-Structure" executionType="tests-execution" executionStrategy="java-project-tests"] 
 
-
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-
-[/code-editor]
+[code-upload allowedMemory="30" /]
 [task-description]
 
 # Setup
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/10-Java-OOP-Advanced-Exam-Preparation.zip) **for this task.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/10-Java-OOP-Advanced-Exam-Preparation.zip) **for these tasks.**
 
 - Upload **only the santaWorkshop package** in every task **except Unit Tests**
 - **Do not modify the interfaces or their packages**
@@ -55,7 +43,7 @@ There should also be a **DwarfRepository**, as well as **PresentRepository**
   * If the **initial** energy is below 0, throw an **IllegalArgumentException** with the message:
  "**Cannot create a Dwarf with negative energy!**"
 
-- **instruments – Collection<Instrument\>**
+- **instruments – Collection**\<**Instrument**\>
   * A collection of a dwarf's instruments
 
 ## Constructor:
@@ -132,7 +120,8 @@ The **InstrumentImpl** is a class that represents the tool, which a **Dwarf** us
 
  The **use()** method **decreases** an instrument's **power** by **10**
 
-   * An instrument's power should **not** drop **below 0**. (If the power becomes less than 0, set it to 0)
+   * An instrument's power should **not** drop **below 0** 
+       * if the power becomes less than 0, set it to 0
 
 `boolean isBroken()` 
 
@@ -167,7 +156,7 @@ An **PresentImpl** should take the following values upon initialization:
 
 The **getCrafted() decreases** the required energy of the present by **10 units**.
 
-  * A present's required energy should **not** drop **below 0**.
+  * A present's required energy should **not** drop **below 0**
 
 `boolean isDone()`
 
@@ -183,11 +172,11 @@ The **WorkshopImpl** class holds the main action, which is the **craft** method.
 
 Here is how the **craft** method works:
 
-- The dwarf starts crafting the present. This is only possible if the dwarf has energy and an instrument that isn't broken.
+- The dwarf starts crafting the present. This is only possible if the dwarf has energy and an instrument that is not broken
 
-- Keep working **until** the present is **done** and while the dwarf has **energy** left (and **instruments** to use).
+- Keep working **until** the present is **done** and while the dwarf has **energy** left (and **instruments** to use)
 
-- If at some point the **power** of the current instrument **reaches** or **drops below 0**, meaning it gets **broken**, then the dwarf should take the **next instrument** from its collection, if it has **any left**.
+- If at some point the **power** of the current instrument **reaches** or **drops below 0**, meaning it gets **broken**, then the dwarf should take the **next instrument** from its collection, if it has **any left**
 
 # DwarfRepository
 
@@ -254,7 +243,6 @@ The present repository is a repository for presents that await to be crafted.
 
 
 [/task-description]
-[code-io /]
 [tests]
 [test open]
 [input]
