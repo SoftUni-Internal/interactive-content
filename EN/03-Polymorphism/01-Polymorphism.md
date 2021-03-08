@@ -2,6 +2,7 @@
 
 # What is Polymorphism?
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/EN/interactive-java-oop-advanced-polymorphism-3-4-What-is-polymorphism-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [image assetsSrc="Polymorphism-example.png" /]
 
@@ -80,6 +81,8 @@ Meow Meow...
 
 # instanceOf Operator
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/EN/interactive-java-oop-advanced-polymorphism-7-Keyword-Instanceof-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 We can use the `instanceOf` operator in Java to check if an **object** is an instance of a **class** or not.
 
 Lets take a look now at the different examples:
@@ -146,6 +149,8 @@ That output shows the `instanceOf` operator works of the **is-a relationship** c
 [slide hideTitle]
 
 # Types of Polymorphism
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/EN/interactive-java-oop-advanced-polymorphism-8-9-Types-of-polymorphism-compile-time-polymorphism-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 There are **two** types of **Polymorphism** in Java:
 
@@ -242,6 +247,9 @@ Dogs can eat meat.
 
 [slide hideTitle]
 # Problem with Solution: Math Operation
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/EN/interactive-java-oop-advanced-polymorphism-10-problem-and-solution-MathOperation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Math Operation" timeLimit=5000 taskId="Java-OOP-Advanced-Polymorphism-lab-Math-Operation" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
 
@@ -393,6 +401,7 @@ Test Passed!
 
 # Rules for Overriding and Overloading Methods
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/EN/interactive-java-oop-advanced-polymorphism-12-Rules-for-overloading-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Rules for Overriding methods:
 
