@@ -107,14 +107,14 @@ And the second returns `-1` because it will not find anything.
 
 To **extract** a substring, we can use `substring()`. 
 
-This method has two parameters:
+This method accepts two parameters:
 
 - The first one is the **start** index
 - The second one is the **end** index
 
 And it will return the part from the **start index** till the **end index**. 
 
-But if we do not give the **second parameter**, it will return the part between the **start index** and the **end**. 
+But if we do not provide a **second parameter**, it will return the part between the **start index** and the **end of the string**. 
 
 **Substring** will not modify the original string, it will return a new one. 
 
