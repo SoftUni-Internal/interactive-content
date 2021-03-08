@@ -7,7 +7,7 @@
 
 # Task 3: Unit Tests (100 points)
 
-Download the skeleton of this problem from [here](https://mega.nz/file/iIpH0SKJ#aSWnnMGgoxZeUaKcGVAvfXX0usPf379wlER3hDhI4iE).
+**Use the resources you downloaded in the first task.**
 
 You will receive a skeleton with **Present** and **PresentBag** classes inside. 
 
