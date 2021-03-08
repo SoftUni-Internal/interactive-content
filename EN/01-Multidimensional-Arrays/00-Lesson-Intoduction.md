@@ -10,14 +10,14 @@
 
 **1. Overview of Arrays in Java**
 
-- Sequence of elements
+- What arrays are
 
 **2. Multidimensional Arrays**
  
-  * definition
-  * declaring and creating Multidimensional Arrays
-  * initializing Multidimenisonal Arrays
-  * accessing elements
+  * What multidimensional arrays are
+  * Declaring and creating Multidimensional Arrays
+  * Initializing Multidimenisonal Arrays
+  * Accessing their elements
 
 **3. Reading and Printing a Multidimensional Array**
 
