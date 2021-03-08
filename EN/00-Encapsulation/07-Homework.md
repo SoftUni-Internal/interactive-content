@@ -65,32 +65,33 @@ Make a private setter that performs data validation internally.
 [tests]
 [test open]
 [input]
+
 import org.junit.Assert;
 import org.junit.Test;
 
-public class T01TestClassesExists \{
+public class T01TestClassesExists {
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
 
-    private static final String\[\] classNames = new String\[\] \{
+    private static final String[] classNames = new String[] {
             "Box"
-    \};
+    };
 
     @Test
-    public void test() \{
+    public void test() {
         assertExistingClasses(classNames);
-    \}
+    }
 
-    private void assertExistingClasses(String\[\] classNames) \{
-        for (String className : classNames) \{
+    private void assertExistingClasses(String[] classNames) {
+        for (String className : classNames) {
             assertClassExists(className);
-        \}
-    \}
+        }
+    }
 
-    private void assertClassExists(String className) \{
+    private void assertClassExists(String className) {
         Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
                 Classes.allClasses.containsKey(className));
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
@@ -411,8 +412,8 @@ public class T06TestCalculateSurfaceArea \{
 
         double result = (double) calculateSurfaceArea.invoke(box);
 
-        double expectedResult = (2 \* BOX_LENGTH \* BOX_WIDTH) +
-                (2 \* BOX_LENGTH \* BOX_HEIGHT) + (2 \* BOX_WIDTH \* BOX_HEIGHT);
+        double expectedResult = (2 * BOX_LENGTH * BOX_WIDTH) +
+                (2 * BOX_LENGTH * BOX_HEIGHT) + (2 * BOX_WIDTH * BOX_HEIGHT);
 
         return expectedResult == result;
     \}
@@ -503,8 +504,8 @@ public class T07CalculateLateralSurfaceArea \{
 
         double result = (double) calculateSurfaceArea.invoke(box);
 
-        double expectedResult = (2 \* BOX_LENGTH \* BOX_HEIGHT) +
-                (2 \* BOX_WIDTH \* BOX_HEIGHT);
+        double expectedResult = (2 * BOX_LENGTH * BOX_HEIGHT) +
+                (2 * BOX_WIDTH * BOX_HEIGHT);
 
         return expectedResult == result;
     \}
@@ -595,7 +596,7 @@ public class T08TestCalculateVolume \{
 
         double result = (double) calculateSurfaceArea.invoke(box);
 
-        double expectedResult = BOX_LENGTH \* BOX_WIDTH \* BOX_HEIGHT;
+        double expectedResult = BOX_LENGTH * BOX_WIDTH * BOX_HEIGHT;
 
         return expectedResult == result;
     \}
