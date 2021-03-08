@@ -66,13 +66,12 @@ It is recommended to **use the proper HTTP status codes in every response** as i
 
 Here are some of the more common status codes and their meaning: 
 
-```js
-200     //Successful operation
-301     //Resource moved permanently to given link
-401     //Unauthorized access
-404     //Resource not found
-500     //Server error
-```
+| **Status Code** | **Description** |
+| 200 | Successful operation |
+| 301 | Resource moved permanently to given link | 
+| 401 | Unauthorized access |
+| 404 | Resource not found | 
+| 500 | Server error |
 
 [/slide]
 

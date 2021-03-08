@@ -86,7 +86,7 @@ As the name suggests, these modules are **created by other people** and **upload
 
 All third-party modules can be accessed through `npm` (**Node Package Manager**).
 
-Every module is available on https://www.npmjs.com/ with **additional information** such as:
+Every module is available on [npm](https://www.npmjs.com/) with **additional information** such as:
 
 - `Installation guide`
 
