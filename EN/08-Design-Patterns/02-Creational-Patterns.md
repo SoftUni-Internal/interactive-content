@@ -2,6 +2,8 @@
 
 # Creational Patterns
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-12-13-creational-patterns-purposes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Creational patterns are **object creational design patterns**.
 
 We use these patterns when we must decide on how to create an object of a class.
@@ -78,6 +80,8 @@ This way, our Singleton class provides a method to get its **static** instance t
 
 # Prototype Pattern
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-16-prototype-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Prototype pattern simply allows us to copy the instance of the class and create a new object from it.
 
 This way of creating it allows us to hide the complexity of making new instances from the client.
@@ -133,6 +137,8 @@ We can use the **Prototype Design Pattern** when:
 [slide hideTitle]
 
 # Builder Pattern
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-19-builder-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The builder design pattern is used to assemble a complex structure step by step.
 
