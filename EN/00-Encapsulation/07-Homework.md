@@ -1091,7 +1091,7 @@ public class T02TestFieldsExists \{
 
     private static final String\[\] classNames = new String\[\]\{"Chicken"\};
     private static final Map\<String, String\[\]\> allNeededFields =
-            new HashMap\<String, String\[\]\>() \{\{
+            new HashMap<String, String[]>() \{\{
                 put("Chicken", new String\[\]\{"name", "age"\});
             \}\};
 
@@ -1142,8 +1142,8 @@ public class T03TestConstructors \{
             "Chicken"
     \};
 
-    private static final HashMap\<String, Class\[\]\> constructorParameters = new HashMap\<String, Class\[\]\>() \{\{
-        put("Chicken", new Class\[\]\{String.class, int.class\});
+    private static final HashMap<String, Class[]> constructorParameters = new HashMap<String, Class[]>() \{\{
+        put("Chicken", new Class[]{String.class, int.class});
 
 
     \}\};
@@ -1254,7 +1254,7 @@ public class T05TestAllMethodsExists \{
 
 
     private static final Map\<String, String\[\]\> methodsInClass =
-            new HashMap\<String, String\[\]\>() \{\{
+            new HashMap<String, String[]>() \{\{
                 put(CLASS_NAME, new String\[\]\{
                         SEARCHED_METHOD_1,
                         SEARCHED_METHOD_2,
@@ -1263,7 +1263,7 @@ public class T05TestAllMethodsExists \{
                 \});
             \}\};
 
-    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+    private static final HashMap<String, Class> methodReturnTypes = new HashMap<String, Class>() \{\{
         put(SEARCHED_METHOD_1, void.class);
         put(SEARCHED_METHOD_2, void.class);
         put(SEARCHED_METHOD_3, double.class);
@@ -1271,7 +1271,7 @@ public class T05TestAllMethodsExists \{
 
     \}\};
 
-    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
+    private static final HashMap<String, Class\[\]\> methodParameters = new HashMap<String, Class[]>() \{\{
         put(SEARCHED_METHOD_1, new Class\[\]\{String.class\});
         put(SEARCHED_METHOD_2, new Class\[\]\{int.class\});
         put(SEARCHED_METHOD_3, new Class\[\]\{\});
@@ -1384,11 +1384,11 @@ public class T07TestSetName \{
             TEST_METHOD_NAME
     \};
 
-    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+    private static final HashMap<String, Class> methodReturnTypes = new HashMap<String, Class>() \{\{
         put(TEST_METHOD_NAME, void.class);
     \}\};
 
-    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
+    private static final HashMap<String, Class[]> methodParameters = new HashMap<String, Class[]>() \{\{
         put(TEST_METHOD_NAME, new Class\[\]\{String.class\});
     \}\};
 
@@ -1499,11 +1499,11 @@ public class T08TestSetAge \{
             TEST_METHOD_NAME
     \};
 
-    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+    private static final HashMap<String, Class> methodReturnTypes = new HashMap<String, Class>() \{\{
         put(TEST_METHOD_NAME, void.class);
     \}\};
 
-    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
+    private static final HashMap<String, Class\[\]\> methodParameters = new HashMap<String, Class\[\]\>() \{\{
         put(TEST_METHOD_NAME, new Class\[\]\{int.class\});
     \}\};
 
@@ -1615,12 +1615,12 @@ public class T09TestProductPerDay \{
             TEST_METHOD_NAME
     \};
 
-    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+    private static final HashMap<String, Class> methodReturnTypes = new HashMap<String, Class>() \{\{
         put(TEST_METHOD_NAME, double.class);
         put(NAME_OF_METHOD_SET_AGE, void.class);
     \}\};
 
-    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
+    private static final HashMap<String, Class[]> methodParameters = new HashMap<String, Class[]>() \{\{
         put(TEST_METHOD_NAME, new Class\[\]\{\});
         put(NAME_OF_METHOD_SET_AGE, new Class\[\]\{int.class\});
     \}\};
@@ -1728,11 +1728,11 @@ public class T10TestIsCalcProductPerDayAccessModifier \{
             TEST_METHOD_NAME
     \};
 
-    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+    private static final HashMap<String, Class\> methodReturnTypes = new HashMap<String, Class>() \{\{
         put(TEST_METHOD_NAME, double.class);
     \}\};
 
-    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
+    private static final HashMap<String, Class\[\]\> methodParameters = new HashMap<String, Class[]>() \{\{
         put(TEST_METHOD_NAME, new Class\[\]\{\});
     \}\};
 
