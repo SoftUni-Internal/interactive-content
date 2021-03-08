@@ -5,24 +5,24 @@
 
 ## In this lesson you learned: 
 
-- What is Coding
+- What is coding
 
-- How to **write basic code**
+- Writing basic code
 
-- A program consists of **sequences of commands**
+- A program is a **sequence of computer commands**
 
 - How to **install** run **IntelliJ**
 
-- How to create a project, files, and simple applications in IntelliJ
+- How to create a project, a file and simple applications in IntelliJ
 
 ## In the next lesson you will learn:
 
-- Data Types
+- What are Data Types
 
 - What are Statements
 
-- How to read and print the user's input
+- How to read and print out user input
 
-- How to perform simple operations
+- How to perform simple operations using Java
 
 [/slide]
