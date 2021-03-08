@@ -6,11 +6,11 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-3-4-what-are-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-An exception is an event, which occurs during the execution of a program. 
+An exception is an event that can happen at any time during the execution of a program. 
 
-When an Exception occurs the normal flow of the program is disrupted and the program terminates. To prevent that, these occurrences should be "handled". 
+When an Exception occurs the normal flow of the program is disrupted which typically results in the program terminating. To prevent that, these occurrences should be "handled". 
 
-In Java exceptions are objects and have detailed information about the error.
+In Java, exceptions are objects that contain detailed information about the error.
 
 [/slide]
 
@@ -20,13 +20,13 @@ In Java exceptions are objects and have detailed information about the error.
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-5-the-throwable-class-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The super class of all errors and exceptions in Java is the **throwable class**. 
+The superclass of all errors and exceptions in Java is the **throwable class**. 
 
 Only objects that are instances of this class (or one of its sub-classes) are "thrown" by the Java Virtual Machine. 
 
 The **Throwable** class is a base for all exceptions in the JVM (Java Virtual Machine). 
 
-A "throwable" contains a snapshot of the execution stack of its thread at the time it was created. 
+Any "throwable" object contains a snapshot of the execution stack of its thread at the time it was created. 
 
 It can also contain a message that gives more information about the error. 
 
@@ -38,7 +38,7 @@ It can also contain a message that gives more information about the error.
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-6-types-of-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Below **Throwable** are:
+Below Throwable in the Java hierarchy we have:
 
 - **Exceptions**
     - used for exceptional conditions that user programs should catch
@@ -75,7 +75,7 @@ There are two types of **Exception**:
   public static void main(String args[]) {
     int num1=10;
     int num2=0;
-    int res=num1/num2; //Since dividing an integer with 0 it should throw ArithmeticException
+    int res=num1/num2; //Throws ArithmeticException (dividing by 0)
   System.out.println(res);
   } //ArithmeticException
 ```
