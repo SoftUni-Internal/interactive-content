@@ -176,32 +176,26 @@ Override the **toString()** method with the format:
 ## Behavior 
 
 - `double getOverallPerformance()`
-
-**Override the base functionality** (if the components collection is empty, it should return only the **computer overall performance**, otherwise return the sum of the computer overall performance and the average overall performance from all components)
+     - **override the base functionality** (if the components collection is empty, it should return only the **computer overall performance**, otherwise return the sum of the computer overall performance and the average overall performance from all components)
 
 - `double getPrice()`
-
-**Override the base functionality** (The price is equal to the **total sum** of the **computer price** with the **sum of all component prices** and the **sum of all peripheral prices**)
+     - **override the base functionality** (the price is equal to the **total sum** of the **computer price** with the **sum of all component prices** and the **sum of all peripheral prices**)
 
 - `void addComponent(Component component)`
-
-- If the components collection contains a component with the same component type, throw an **IllegalArgumentException** with the message "**Component** \{**component type**\} **already exists in** \{**computer type**\} **with Id** \{**id**\}."
-Otherwise add the component in the components collection.
+     - if the components collection contains a component with the same component type, throw an **IllegalArgumentException** with the message "**Component** \{**component type**\} **already exists in** \{**computer type**\} **with Id** \{**id**\}."
+     - otherwise add the component in the components collection
 
 - `Component removeComponent(String componentType)`
-
-If the components collection is empty or does not have a component of that type, throw an **IllegalArgumentException** with the message "**Component** \{**component type**\} **does not exist in** \{**computer type**\} **with Id** \{**id**\}."
-Otherwise remove the component of that type and return it.
+     - if the components collection is empty or does not have a component of that type, throw an **IllegalArgumentException** with the message "**Component** \{**component type**\} **does not exist in** \{**computer type**\} **with Id** \{**id**\}."
+     - otherwise remove the component of that type and return it.
 
 - `void аddPeripheral(Peripheral peripheral)`
-
-If the peripherals collection contains a peripheral with the same peripheral type, throw an **IllegalArgumentException** with the message "**Peripheral** \{**peripheral type**\} **already exists in** \{**computer type**\} **with Id** \{**id**\}."
-Otherwise add the peripheral in peripherals collection.
+     - if the peripherals collection contains a peripheral with the same peripheral type, throw an **IllegalArgumentException** with the message "**Peripheral** \{**peripheral type**\} **already exists in** \{**computer type**\} **with Id** \{**id**\}."
+     - otherwise add the peripheral in peripherals collection
 
 - `Peripheral removePeripheral(String peripheralType)`
-
-If the peripherals collection is empty or does not have a peripheral of that type, throw an **IllegalArgumentException** with the message "**Peripheral** \{**peripheral type**\} **does not exist in** \{**computer type**\} **with Id** \{**id**\}."
-Otherwise remove the peripheral of that type and return it.
+     - if the peripherals collection is empty or does not have a peripheral of that type, throw an **IllegalArgumentException** with the message "**Peripheral** \{**peripheral type**\} **does not exist in** \{**computer type**\} **with Id** \{**id**\}."
+     - otherwise remove the peripheral of that type and return it
 
 ## Child classes
 
