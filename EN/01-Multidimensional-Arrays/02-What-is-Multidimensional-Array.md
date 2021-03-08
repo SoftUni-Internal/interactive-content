@@ -31,7 +31,7 @@ It might look like this:
 
 Two of the **most used** multi-dimensional arrays are **two and three-dimensional array**, known as a `2D` and `3D` array. Anything above is rare.
 
-- Creating Multidimensional Arrays using the `new` - keyword and specifying the size of at least one dimension
+- Creating Multidimensional Arrays using the `new` - keyword and specifying the size of at least one dimension:
 
 ```java 
 int[][] intMatrix = new int[3][];
@@ -71,7 +71,7 @@ int[][] matrix = {
 };
 ```
 
-- **Initializing** two-dimensional array with `for-loop`
+- **Initializing** two-dimensional array with a **for-loop**
 
 ```java
 int[][] matrix = new int[2][4];
@@ -94,8 +94,6 @@ for (int i = 0; i < 2; i++) {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/interactive-java-advanced-multidimensional-arrays-10-Accessing-Elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- Accessing Elements of а "2D Array"
-
 Elements in **two-dimensional arrays** are commonly referred by `x[i][j]` where `i` is **the row number** and the value of `j` is **the column number**.
 
 The syntax is:
@@ -104,7 +102,7 @@ int [][] array = new int [5][5];
 array[0][0]  // the first element of the matrix
 ```
 
-- Accessing an element
+- Accessing an element:
 
 ```java live
 int[][] matrix = {
@@ -118,7 +116,7 @@ System.out.println(element);
 
 ```
 
-- Updating a value on a specific location
+- Updating a value on a specific location:
 
 ```java 
 int[][] matrix = {
