@@ -3009,7 +3009,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
-public class T16ValidateBuyBestComputerValidMethod \{
+public class T16ValidateBuyBestComputerValidMethod {
     private static final String METHOD_INCORRECT_RETURN_VALUE = "Method '%s.%s' returns invalid data (expected res: '%s'; actual - '%s')!";
     private static final String METHOD_INCORRECT_EXCEPTION_MESSAGE = "Method '%s.%s' throws invalid ex (expected: '%s - %s'; actual - '%s - %s')!";
 
@@ -3018,34 +3018,34 @@ public class T16ValidateBuyBestComputerValidMethod \{
     private Object classType;
 
     @Before
-    public void beforeMethod() \{
+    public void beforeMethod() {
         Class controllerClass = getType("ControllerImpl");
 
-        Object controller = createObjectInstance(controllerClass, new Object\[\]\{\});
+        Object controller = createObjectInstance(controllerClass, new Object[]{});
 
         this.classObject = controllerClass;
         this.classType = controller;
 
         String methodName = "addComputer";
-        Object\[\] methodArgs = new Object\[\]\{"DesktopComputer", 1, "Asus", "ROG", 500\};
+        Object[] methodArgs = new Object[]{"DesktopComputer", 1, "Asus", "ROG", 500};
 
-        Class\[\] paramTypes = new Class\[\]\{String.class, int.class, String.class, String.class, double.class\};
+        Class[] paramTypes = new Class[]{String.class, int.class, String.class, String.class, double.class};
 
         // Act
         getMethodValue(this.classType, this.classObject, methodName, methodArgs, paramTypes);
-    \}
+    }
 
     @Test
-    public void addComputerShouldReturnCorrectResult() \{
+    public void addComputerShouldReturnCorrectResult() {
         // Arrange
-        String methodName = "buyBestComputer";
-        Object\[\] methodArgs = new Object\[\]\{1000\};
+        String methodName = "BuyBestComputer";
+        Object[] methodArgs = new Object[]{1000};
 
         String expectedMessage = "Overall Performance: 15.00. Price: 500.00 - DesktopComputer: Asus ROG (Id: 1)" + System.lineSeparator() +
                 " Components (0):" + System.lineSeparator() +
                 " Peripherals (0); Average Overall Performance (0.00):";
 
-        Class\[\] paramTypes = new Class\[\]\{double.class\};
+        Class[] paramTypes = new Class[]{double.class};
 
         // Act
         Object actualResult = getMethodValue(this.classType, this.classObject, methodName, methodArgs, paramTypes);
@@ -3053,32 +3053,32 @@ public class T16ValidateBuyBestComputerValidMethod \{
         // Assert
         String message = String.format(METHOD_INCORRECT_RETURN_VALUE, this.classType.getClass().getSimpleName(), methodName, expectedMessage, actualResult);
         Assert.assertEquals(message, expectedMessage.trim(), actualResultAsString.trim());
-    \}
+    }
 
-    private Object getMethodValue(Object object, Class clazz, String methodName, Object\[\] methodArgs, Class... parameterTypes) \{
+    private Object getMethodValue(Object object, Class clazz, String methodName, Object[] methodArgs, Class... parameterTypes) {
         Method method = getMethod(clazz, methodName, parameterTypes);
 
         Object methodValue = null;
-        if (method != null) \{
-            try \{
+        if (method != null) {
+            try {
                 methodValue = method.invoke(object, methodArgs);
-            \} catch (IllegalAccessException e) \{
-            \} catch (InvocationTargetException e) \{
-            \}
-        \}
+            } catch (IllegalAccessException e) {
+            } catch (InvocationTargetException e) {
+            }
+        }
 
         return methodValue;
-    \}
+    }
 
-    private Object throwMethodException(String expectedExceptionName, String expectedExceptionMessage, Object object, Class clazz, String methodName, Object\[\] methodArgs, Class... parameterTypes) throws Throwable \{
+    private Object throwMethodException(String expectedExceptionName, String expectedExceptionMessage, Object object, Class clazz, String methodName, Object[] methodArgs, Class... parameterTypes) throws Throwable {
         Method method = getMethod(clazz, methodName, parameterTypes);
 
         Object methodValue = null;
-        if (method != null) \{
-            try \{
+        if (method != null) {
+            try {
                 methodValue = method.invoke(object, methodArgs);
-            \} catch (IllegalAccessException e) \{
-            \} catch (InvocationTargetException e) \{
+            } catch (IllegalAccessException e) {
+            } catch (InvocationTargetException e) {
                 String testMessage = String.format(METHOD_INCORRECT_EXCEPTION_MESSAGE,
                         clazz.getSimpleName(),
                         methodName,
@@ -3089,76 +3089,76 @@ public class T16ValidateBuyBestComputerValidMethod \{
 
                 Assert.assertEquals(testMessage, expectedExceptionMessage, e.getTargetException().getMessage());
                 throw e.getTargetException();
-            \}
-        \}
+            }
+        }
 
         return methodValue;
-    \}
+    }
 
-    private Object createObjectInstance(Class clazz, Object\[\] arguments) \{
-        Class\[\] argumentTypes = null;
+    private Object createObjectInstance(Class clazz, Object[] arguments) {
+        Class[] argumentTypes = null;
 
-        if (arguments != null) \{
-            argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class\[\]::new);
-        \}
+        if (arguments != null) {
+            argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class[]::new);
+        }
 
         Constructor ctor = null;
-        try \{
+        try {
             ctor = clazz.getDeclaredConstructor(argumentTypes);
-        \} catch (NoSuchMethodException e) \{
+        } catch (NoSuchMethodException e) {
             mapIntegerToInt(argumentTypes);
 
-            try \{
+            try {
                 ctor = clazz.getDeclaredConstructor(argumentTypes);
-            \} catch (NoSuchMethodException ex) \{
-                try \{
-                    argumentTypes = Arrays.stream(arguments).map(a -\> a.getClass().getInterfaces()\[0\]).toArray(Class\[\]::new);
+            } catch (NoSuchMethodException ex) {
+                try {
+                    argumentTypes = Arrays.stream(arguments).map(a -> a.getClass().getInterfaces()[0]).toArray(Class[]::new);
                     ctor = clazz.getDeclaredConstructor(argumentTypes);
-                \} catch (NoSuchMethodException exc) \{
-                \}
-            \}
-        \}
+                } catch (NoSuchMethodException exc) {
+                }
+            }
+        }
 
         Object obj = null;
 
-        if (ctor != null) \{
-            try \{
+        if (ctor != null) {
+            try {
                 obj = ctor.newInstance(arguments);
-            \} catch (InstantiationException e) \{
+            } catch (InstantiationException e) {
                 e.printStackTrace();
-            \} catch (IllegalAccessException e) \{
-            \} catch (InvocationTargetException e) \{
-            \}
-        \}
+            } catch (IllegalAccessException e) {
+            } catch (InvocationTargetException e) {
+            }
+        }
 
         return obj;
-    \}
+    }
 
-    private void mapIntegerToInt(Class\[\] types) \{
-        for (int i = 0; i \< types.length; i++) \{
-            if (types\[i\].getSimpleName().equals(Integer.class.getSimpleName())) \{
-                types\[i\] = int.class;
-            \}
-        \}
-    \}
+    private void mapIntegerToInt(Class[] types) {
+        for (int i = 0; i < types.length; i++) {
+            if (types[i].getSimpleName().equals(Integer.class.getSimpleName())) {
+                types[i] = int.class;
+            }
+        }
+    }
 
-    private static Class getType(String name) \{
+    private static Class getType(String name) {
         Class clazz = Classes.allClasses.get(name);
 
         return clazz;
-    \}
+    }
 
-    private Method getMethod(Class clazz, String expectedName, Class... parameterTypes) \{
+    private Method getMethod(Class clazz, String expectedName, Class... parameterTypes) {
         Method method = null;
 
-        try \{
+        try {
             method = clazz.getMethod(expectedName, parameterTypes);
-        \} catch (NoSuchMethodException e) \{
-        \}
+        } catch (NoSuchMethodException e) {
+        }
 
         return method;
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
