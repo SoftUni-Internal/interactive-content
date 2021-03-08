@@ -2,6 +2,7 @@
 
 # Access Modifiers
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-24-25-access-modifiers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The way to obtain the class modifiers will be:
 
@@ -49,6 +50,8 @@ Also, we are able to check if the modifiers are protected, public or static with
 
 # Creating Arrays via Java Reflection
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-26-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Lets see how we can create **Arrays** via Reflection:
 
 We may use `Array.newInstance()` method.
@@ -83,6 +86,9 @@ The array elements are: 2 9 3 0 7
 
 [slide hideTitle]
 # Problem with Soltuion: High Quality Mistakes
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-27-problem-and-solution-high-quality-mistakes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="High Quality Mistakes" taskId="Java-OOP-Advanced-Reflection-lab-High-Quality-Mistakes" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [code-upload allowedMemory="30" /]

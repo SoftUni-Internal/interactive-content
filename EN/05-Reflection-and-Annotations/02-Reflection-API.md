@@ -2,6 +2,8 @@
 
 # Reflection API
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-8-9-the-class-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Lets continue with some more detailed information about Classes in Java Reflection.
 
 Java provides us a static class with the name `Class` in `java.lang.package`. 
@@ -36,6 +38,8 @@ Class test = Class.forName("Dog");
 
 # Class Name
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-10-class-name-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Now, lets obtain the `Class` name:
 
 
@@ -66,6 +70,8 @@ Output: Dog
 [slide hideTitle]
 
 # Base Class and Interfaces
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-11-base-class-and-interfaces-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can also obtain our parent class like this:
 
@@ -103,6 +109,9 @@ Class[] interfaces = aClass.getInterfaces();
 
 [slide hideTitle]
 # Problem with Solution: Reflection
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-12-problem-and-solution-reflection-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Reflection" taskId="Java-OOP-Advanced-Reflection-lab-Reflection" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [code-upload allowedMemory="30" /] 
 [task-description]

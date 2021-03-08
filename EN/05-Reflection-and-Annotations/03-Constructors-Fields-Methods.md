@@ -4,6 +4,8 @@
 
 # Constructors
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-14-16-constructors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Lets see how we can obtain a Constructor Objects.
 
 We can use the **constructor class** that provides us the following methods for this purpose:
@@ -45,6 +47,8 @@ Like in the code above - It was a constructor taking `String`, so we supplied on
 
 # Fields Name and Type
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-17-fields-name-and-type-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Analogically to the way we get constructors, we can obtain **class members**.
 
 Lets see how we can recieve all **public** fields:
@@ -73,6 +77,8 @@ Object fieldType = field.getType();
 
 # Fields Set and Get
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-18-fields-set-and-get-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Let us discuss, how we can setting value for a field via Reflection
 
 ``` java
@@ -86,6 +92,8 @@ field.set(object, value); // The object parameter passed to the get and set meth
 [slide hideTitle]
 
 # Get and Invoke Methods
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-19-20-methods-methods-invoke-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Lets asume we have `class` Dog with methods inside:
 
@@ -169,6 +177,9 @@ Object returnValue = method.invoke(null, "arg1"); // We use null for static meth
 
 [slide hideTitle]
 # Problem with Solution: Getters and Setters
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-21-22-problem-and-solution-getters-and-setters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Getters and Setters" taskId="Java-OOP-Advanced-Reflection-lab-Getters-And-Setters" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [code-upload allowedMemory="30" /]
 [task-description]

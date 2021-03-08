@@ -2,6 +2,8 @@
 
 # Annotations
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-29-30-annotation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 What is Java Annotation?
 
 Annotations are kind of **metadata** that you can insert in your Java code.
@@ -15,6 +17,8 @@ Annotations can be applied to **Classes**, **Fields**, **Methods**, etc.
 [slide hideTitle]
 
 # Annotation usage
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-31-annotation-usage-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Lets see simple example of annotations:
 
@@ -33,6 +37,8 @@ These annotation are used to generate or suppress warnings and errors. It is goo
 [slide hideTitle]
 
 # Built-in Annotations
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-32-34-built-in-annotations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Here is example of some **Built-In** annotations:
 
@@ -55,6 +61,8 @@ public <T> void warning(int size) {
 [slide hideTitle]
 
 # Creating Annotations
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-35-creating-annotations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can create Custom Annotations using **@interface** keyword.
 
@@ -97,6 +105,8 @@ public class MyClass {
 [slide hideTitle]
 
 # Meta Annotations 
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-37-38-meta-annotations-target-and-retention-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Another thing we can do is to specify where the annotation is applicable.
 
@@ -143,6 +153,8 @@ Other retention policies:
 
 # Obtaining Annotations
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-41-annotations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 How can we obtain class's annotations?
 
 We can use `getAnnotations()` method to obtain all class annotations.
@@ -174,6 +186,9 @@ Annotation[] methodAnot = method.getDeclaredAnnotations();
 
 [slide hideTitle]
 # Problem with Solution: Create Annotation
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-39-problem-and-solution-create-annotation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Problem: Create Annotation" taskId="Java-OOP-Advanced-Reflection-Create-Annotation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -203,6 +218,9 @@ public class Testclass {
 
 [slide hideTitle]
 # Problem with Solution: Coding Tracker
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-44-problem-and-solution-coding-tracker-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Coding Tracker" taskId="Java-OOP-Advanced-Reflection-Coding-Tracker" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
