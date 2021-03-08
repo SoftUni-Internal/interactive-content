@@ -89,6 +89,7 @@ Here are the shortcuts for the most used actions:
 |**Step into**|"**F7**"|
 |**Resume**|⏯ |
 |**Pause**|[image assetsSrc="debugging-techniques-example(5).png" /]|
+|||
 
 ## Controlling Execution
 
