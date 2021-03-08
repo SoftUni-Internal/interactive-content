@@ -266,7 +266,7 @@ Test Passed!
 [slide hideTitle]
 # Problem with Solution: Animals
 
-[code-task title="Animals" timeLimit=5000 taskId="Java-OOP-Advanced-Polymorphism-lab-Animals" executionType="tests-execution" executionStrategy="java-project-tests"] 
+[code-task title="Animals" timeLimit=5000 taskId="Java-OOP-Advanced-Polymorphism-lab-Animals" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 [task-description]
@@ -303,7 +303,6 @@ public static void main(String[] args) {
 | DJAAF |
 
 [/task-description]
-[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
