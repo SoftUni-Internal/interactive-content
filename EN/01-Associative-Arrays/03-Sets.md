@@ -42,7 +42,7 @@ set.add(10);
 console.log(set);
 ```
 
-Just like Maps, Sets have the`.has()` method. 
+Just like Maps, Sets have the `.has()` method. 
 
 This method returns **true** or **false**.
 
