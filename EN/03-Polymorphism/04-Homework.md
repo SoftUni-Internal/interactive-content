@@ -42,10 +42,7 @@ Finally print the **remaining fuel** for both car and truck rounded **2 digits a
 
 **Truck:** \{**liters**\}"
 
-
-# Examples
-
-## Example 1
+## Example One
 | **Input** | **Output** |
 | --- | --- |
 | Car 15 0.3 | Car travelled 9 km |
@@ -56,7 +53,7 @@ Finally print the **remaining fuel** for both car and truck rounded **2 digits a
 | Refuel Car 50 |  |
 | Drive Truck 10 |  |
 
-## Example 2
+## Example Two
 | **Input** | **Output** |
 | --- | --- |
 | Car 30.4 0.4 | Car needs refueling |
@@ -554,31 +551,28 @@ Use the **DecimalFormat** class.
 ## Note: 
 Consider overriding the default **toString()** method.
 
-
-# Example
-
-## Example 1
+## Example One
 | **Input** | **Output** |
 | --- | --- |
 | Cat Gray 1.1 Home Persian | Meowwww |
 | Vegetable 4 | Cat[Gray, Persian, 1.1, Home, 4] |
 | End |  |
 
-## Example 2
+## Example Two
 | **Input** | **Output** |
 | --- | --- |
 | Tiger Tom 167.7 Asia | ROAAR!!! |
 | Vegetable 1 | Tigers are not eating that type of food! |
 | End | Tiger[Tom, 167.7, Asia, 0] |
 
-## Example 3
+## Example Three
 | **Input** | **Output** |
 | --- | --- |
 | Zebra Jaguar 500 Africa | Zs |
 | Vegetable 150 | Zebra[Jaguar, 500, Africa, 150] |
 | End |  |
 
-## Example 4
+## Example Four
 | **Input** | **Output** |
 | --- | --- |
 | Mouse Jerry 0.5 Anywhere | SQUEEEAAAK! |
@@ -836,9 +830,7 @@ The total running time of your program should be no more than **0.1s**.
 The total memory allowed for use by your program is **16MB**.
 
 
-# Examples
-
-## Example 1
+## Example One
 | **Input** | **Output** |
 | --- | --- |
 | dom3. text | dexom3. t |
@@ -846,7 +838,7 @@ The total memory allowed for use by your program is **16MB**.
 | paste 3 4 |  |
 | exit |  |
 
-## Example 2
+## Example Two
 | **Input** | **Output** |
 | --- | --- |
 | abc d e | dabc E |
@@ -1026,15 +1018,12 @@ The total running time of your program should be no more than **0.1s**.
 
 The total memory allowed for use by your program is **16MB**.
 
-
-# Examples
-
-## Example 1
+## Example One
 | **Input** | **Output** |
 | --- | --- |
 | 1 * 2 * 3 ms * 4 * mr / 2 end | 72 |
 
-## Example 2
+## Example Two
 | **Input** | **Output** |
 | --- | --- |
 | 12 / 3 ms / 2 ms * 5 mr * mr end | 8 |
