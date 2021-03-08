@@ -49,7 +49,7 @@ String lastName = "Doe";
 System.out.println(firstName + " " + lastName);
 ```
 
-Note that we have added an empty text `(" ")` to create a space between firstName and lastName on print.
+Note that we have added an empty text `(" ")` to create a space between **firstName** and **lastName** when printing.
 
 [/slide]
 
@@ -74,7 +74,7 @@ public class Main {
 ## Description
 Read two names and a delimiter.
 
-Print the names joined by the delimiter.
+Print the names joined by the delimiter to the console.
 
 ## Examples
 | **Input** | **Output** |
