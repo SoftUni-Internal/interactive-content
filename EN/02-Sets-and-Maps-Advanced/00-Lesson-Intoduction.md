@@ -7,18 +7,17 @@
 
 ## In this lesson you will learn:
 
-**1. Set Interface**
+**1. Sets**
 
-- Difference between HashSet, TreeSet and LinkedHashSet
+- The difference between HashSet, TreeSet and LinkedHashSet
 
-- Difference between Set and Map
+- The difference between Sets and Maps
 
-**2. Map Interface**
+**2. Maps**
 
-- What "Map" is
+- What Maps are
 
-- Difference between HashMap, TreeMap, LinkedHashMap
-
+- The difference between HashMap, TreeMap, LinkedHashMap
 
 
 [/slide]

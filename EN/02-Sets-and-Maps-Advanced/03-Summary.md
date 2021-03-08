@@ -39,7 +39,7 @@
     Map<String, Integer> linkedHashMap = new LinkedHashMap<>();
     ```
 
-## In the next lesson you will learn:
+## In the next lesson, you will learn:
 
 - What Exceptions are
     - the `Exception` Class
