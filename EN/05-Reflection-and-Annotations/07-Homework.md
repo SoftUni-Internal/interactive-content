@@ -674,8 +674,8 @@ END
 [/slide]
 
 [slide hideTitle]
-# Problem: BarracksWars – A New Factory
-[code-task title="BarracksWars – A New Factory" taskId="oop-advanced-java-reflection-and-annotations-BarracksWars–A-New-Factory" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
+# Problem: BarracksWars - A New Factory
+[code-task title="BarracksWars - A New Factory" taskId="oop-advanced-java-reflection-and-annotations-BarracksWars-A-New-Factory" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
 # Description
@@ -1066,8 +1066,8 @@ Swordsman -\> 2
 [/slide]
 
 [slide hideTitle]
-# Problem: BarracksWars – The Commands Strike Back
-[code-task title="BarracksWars – The Commands Strike Back" taskId="oop-advanced-java-reflection-and-annotations-BarracksWars–The-Commands-Strike-Back" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
+# Problem: BarracksWars - The Commands Strike Back
+[code-task title="BarracksWars - The Commands Strike Back" taskId="oop-advanced-java-reflection-and-annotations-BarracksWars-The-Commands-Strike-Back" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
 # Description
@@ -1340,8 +1340,8 @@ Swordsman -\> 0
 [/slide]
 
 [slide hideTitle]
-# Problem: BarracksWars – Return of the Dependencies
-[code-task title="BarracksWars – Return of the Dependencies" taskId="oop-advanced-java-reflection-and-annotations-BarracksWars–Return-of-the-Dependencies" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
+# Problem: BarracksWars - Return of the Dependencies
+[code-task title="BarracksWars - Return of the Dependencies" taskId="oop-advanced-java-reflection-and-annotations-BarracksWars-Return-of-the-Dependencies" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
 # Description
