@@ -6,7 +6,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-38-40-character-type-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The char data type stores a **single** character. The character must be surrounded by single quotes, like `'A'` or `'c'`.
+The **char** data type stores a **single** character. The character must be surrounded by single quotes, like `'A'` or `'c'`.
 
 ```java live
 char myGrade = 'B';
@@ -38,7 +38,7 @@ In the example above, we convert each character to its **ASCII** representation.
 
 The **ASCII** is an acronym for the **American Standard Code for Information Interchange**.
 
-It is a code for representing 128 English characters as numbers, with each letter assigned a number from 0 to 127. 
+It is a code standard for representing 128 English characters as numbers, each assigned a number from 0 to 127. 
 
 We encourage you to do some research on the ASCII table!
 
@@ -83,7 +83,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that accepts an input of 3 lines of characters and prints them in reversed order with a space between them.
+Create a program that accepts an input of 3 lines of characters and prints them in reversed order with a space between them.
 
 ## Examples
 |**Input**|**Output**|
