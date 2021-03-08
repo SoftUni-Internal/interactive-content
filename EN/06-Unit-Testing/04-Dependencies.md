@@ -262,7 +262,7 @@ We can obtain our **Mockito** dependency from here:
 
 Copy this in to pom.xml file:
 
-```
+``` js
 <dependency>
     <groupId>org.mockito</groupId>
     <artifactId>mockito-core</artifactId>
@@ -280,12 +280,12 @@ Copy this in to pom.xml file:
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-48-49-50-problem-and-solution-mocking-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Include **Mockito** in the project dependencies, then:
-1.	Mock fakes from previous problem
-2.	Implement **Hero Inventory**, holding unequipped weapons
+- Mock fakes from previous problem
+- Implement **Hero Inventory**, holding unequipped weapons
   - method - `Iterable<Weapon> getInventory()`
-3.	Implement Target giving random weapon upon death
+- Implement Target giving random weapon upon death
   - field - `private List<Weapon> possibleLoot`
-4.	Test Hero killing a target getting loot in his inventory
+- Test Hero killing a target getting loot in his inventory
 
 ## Hints
 Locate **pom.xml**
@@ -294,7 +294,7 @@ Locate **pom.xml**
 
 Add **Mockito** dependency
 
-```
+``` js
 <dependency>
   <groupId>org.mockito</groupId>
   <artifactId>mockito-android</artifactId>

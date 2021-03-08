@@ -2,6 +2,8 @@
 
 # Design Patterns
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-4-what-are-design-patterns-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 In software engineering design patterns represent **general** and **reusable solutions** to frequent problems in software design.
 
 It is important to understand, that design patterns **by themselves are not finished and ready for implementation templates**.
@@ -45,6 +47,8 @@ Let's see the Elements of our design patterns:
 [slide hideTitle]
 
 # Benefits and Drawbacks
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-5-what-do-design-patterns-solve-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Benefits
 

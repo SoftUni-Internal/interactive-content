@@ -2,6 +2,8 @@
 
 # Structural Patterns
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-22-23-structural-patterns-purposes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The next category of patterns is **Structural patterns**.
 
 They are concerned with how we compose and arrange our classes and objects to form larger structures.
@@ -86,6 +88,8 @@ This example shows us how a client can **interact** with the facade (in our case
 [slide hideTitle]
 
 # Composite Pattern
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-28-composite-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The composite pattern allows us to **combine** different types of objects in **tree structures**
 

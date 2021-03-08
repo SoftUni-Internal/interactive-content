@@ -2,6 +2,8 @@
 
 # Behavioral Patterns
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-33-34-behavioral-patterns-purposes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The third type of pattern is Behavioral Patterns.
 
 They are concerned with the **interaction** between objects.
@@ -150,6 +152,8 @@ Text is Closed
 [slide hideTitle]
 
 # Template Pattern:
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-40-template-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 What is the nature behind **Template Pattern?**
 
