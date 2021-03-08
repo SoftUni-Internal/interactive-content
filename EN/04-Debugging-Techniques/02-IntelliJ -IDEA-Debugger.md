@@ -90,7 +90,7 @@ Here are the shortcuts for the most used actions:
 
 - **Resume** - ⏯
 
-- **Pause** - [image assetsSrc="debugging-techniques-example(5).png" /]
+- **Pause** - &#10074;
 
 
 ## Controlling Execution
