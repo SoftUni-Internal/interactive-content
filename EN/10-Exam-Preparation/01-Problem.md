@@ -1,21 +1,14 @@
-[slide]
-# Problem: Online Shop
-[code-task title="Problem: Online Shop" taskId="693c51df-c92c-4a8f-8236-1f1fa791af63" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[slide hideTitle]
+# Problem with Solution: Online Shop
+[code-task title="Online Shop" timeLimit=5000 taskId="oop-advanced-java-exam-preparation-2-Online-Shop" executionType="tests-execution" executionStrategy="java-project-tests"]   
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 # Overview
 
-In this exam, you need to build an online shop project, which has **peripherals**, **components**, and **computers**. The project will consist of **model classes** and a **controller class**, which manages the **interaction** between the **peripherals**, **components**, and **computers**.
+In this exam, you need to build an online shop project, which has **peripherals**, **components**, and **computers**. 
+
+The project will consist of **model classes** and a **controller class**, which manages the **interaction** between the **peripherals**, **components**, and **computers**.
 
 
 # Setup
@@ -26,7 +19,7 @@ In this exam, you need to build an online shop project, which has **peripherals*
 - **Do not modify the interfaces or their packages**
 - Use **strong cohesion** and **loose coupling**
 - **Use inheritance and the provided interfaces wherever possible**
-  * This includes **constructors, method parameters** and **return types**
+  * this includes **constructors, method parameters** and **return types**
 - **Do not** violate your **interface implementations** by adding **more public methods** in the specific class than the interface has defined
 - Make sure you have **no public fields** anywhere
 
@@ -35,7 +28,7 @@ In this exam, you need to build an online shop project, which has **peripherals*
 
 # Task 1: Structure (50 points)
 
-*For this task's evaluation, logic, in the methods, isn't included.*
+*For this task's evaluation, logic in the methods is not included.*
 
 You are given interfaces and you have to implement their functionality in the **correct classes**.
 
@@ -48,19 +41,24 @@ The **BaseProduct** is a **base class** for **components, peripherals** and **co
 ## Data
 
 - **id - int**
-  * cannot be **less than or equal to 0**. In that case, throw an **IllegalArgumentException** with the message "**Id can not be less or equal than 0.**"
+  * cannot be **less than or equal to 0**
+  * in that case, throw an **IllegalArgumentException** with the message "**Id can not be less or equal than 0.**"
 
 - **manufacturer – String** 
-  * cannot be **null or whitespace**. In that case, throw an **IllegalArgumentException** with the message "**Manufacturer can not be empty.**"
+  * cannot be **null or whitespace**
+  * in that case, throw an **IllegalArgumentException** with the message "**Manufacturer can not be empty.**"
 
 - **model – String**
-  * cannot be **null or whitespace**. In that case, throw an **IllegalArgumentException** with the message "**Model can not be empty.**"
+  * cannot be **null or whitespace**
+  * in that case, throw an **IllegalArgumentException** with the message "**Model can not be empty.**"
 
 - **price - double**
-  * cannot be **less than or equal to 0**. In that case, throw an **IllegalArgumentException** with the message "**Price can not be less or equal than 0.**"
+  * cannot be **less than or equal to 0**
+  * in that case, throw an **IllegalArgumentException** with the message "**Price can not be less or equal than 0.**"
 
 - **overallPerformance – double**
-  * cannot be **less than or equal to 0**. In that case, throw an **IllegalArgumentException** with the message "**Overall Performance can not be less or equal than 0.**"
+  * cannot be **less than or equal to 0**
+  * in that case, throw an **IllegalArgumentException** with the message "**Overall Performance can not be less or equal than 0.**"
 
 ## Constructor
 
@@ -70,7 +68,7 @@ A **product** should take the following values upon initialization:
 
 Override the **toString()** method with the format:
 
-"Overall Performance: \{overall performance\}. Price: \{price\} - \{product type\}: \{manufacturer\} \{model\} (Id: \{id\})"
+"**Overall Performance:** \{**overall performance**\}. **Price:** \{**price**\} - \{**product type**\}: \{**manufacturer**\} \{**model**\} (**Id:** \{**id**\})"
 
 ## Child classes
 
@@ -96,7 +94,7 @@ A **product** should take the following values upon initialization:
 
 Override the **toString()** method with the format:
 
-"Overall Performance: \{overall performance\}. Price: \{price\} - \{product type\}: \{manufacturer\} \{model\} (Id: \{id\}) Generation: \{generation\}"
+"**Overall Performance:** \{**overall performance**\}. **Price:** \{**price**\} - \{**product type**\}: \{**manufacturer**\} \{**model**\} (**Id:** \{**id**\}) **Generation:** \{**generation**\}"
 
 ## Child classes
 
@@ -127,7 +125,7 @@ A **product** should take the following values upon initialization:
 
 Override the **toString()** method with the format:
 
-"Overall Performance: \{overall performance\}. Price: \{price\} - \{product type\}: \{manufacturer\} \{model\} (Id: \{id\}) Connection Type: \{connection type\}"
+"**Overall Performance:** \{**overall performance**\}. **Price:** \{**price**\} - \{**product type**\}: \{**manufacturer**\} \{**model**\} (**Id:** \{**id**\}) **Connection Type:** \{**connection type**\}"
 
 ## Child classes
 
@@ -155,54 +153,54 @@ A **product** should take the following values upon initialization:
 
 Override the **toString()** method with the format:
 
-"Overall Performance: \{overall performance\}. Price: \{price\} - \{product type\}: \{manufacturer\} \{model\} (Id: \{id\})"
+"**Overall Performance:** \{**overall performance**\}. **Price:** \{**price**\} - \{**product type**\}: \{**manufacturer**\} \{**model**\} (**Id:** \{**id**\})"
 
-" Components (\{components count\}):"
+" **Components** (\{**components count**\}):"
 
-"  \{component one\}"
+"  \{**component one**\}"
 
-"  \{component two\}"
+"  \{**component two**\}"
 
-"  \{component n\}"
+"  \{**component n**\}"
 
-" Peripherals (\{peripherals count\}); Average Overall Performance (\{average overall performance peripherals\}):"
+" **Peripherals** (\{**peripherals count**\}); **Average Overall Performance** (\{**average overall performance peripherals**\}):"
 
-"  \{peripheral one\}"
+"  \{**peripheral one**\}"
 
-"  \{peripheral two\}"
+"  \{**peripheral two**\}"
 
-"  \{peripheral n\}"
+"  \{**peripheral n**\}"
 
 **Note: Be careful, some of the rows have one or two whitespaces at the beginning of the sentences!**
 
 ## Behavior 
 
-`double getOverallPerformance()`
+- `double getOverallPerformance()`
 
 **Override the base functionality** (if the components collection is empty, it should return only the **computer overall performance**, otherwise return the sum of the computer overall performance and the average overall performance from all components)
 
-`double getPrice()`
+- `double getPrice()`
 
 **Override the base functionality** (The price is equal to the **total sum** of the **computer price** with the **sum of all component prices** and the **sum of all peripheral prices**)
 
-`void addComponent(Component component)`
+- `void addComponent(Component component)`
 
-If the components collection contains a component with the same component type, throw an **IllegalArgumentException** with the message **"Component \{component type\} already exists in \{computer type\} with Id \{id\}**."
+- If the components collection contains a component with the same component type, throw an **IllegalArgumentException** with the message "**Component** \{**component type**\} **already exists in** \{**computer type**\} **with Id** \{**id**\}."
 Otherwise add the component in the components collection.
 
-`Component removeComponent(String componentType)`
+- `Component removeComponent(String componentType)`
 
-If the components collection is empty or does not have a component of that type, throw an **IllegalArgumentException** with the message **"Component \{component type\} does not exist in \{computer type\} with Id \{id\}**."
+If the components collection is empty or does not have a component of that type, throw an **IllegalArgumentException** with the message "**Component** \{**component type**\} **does not exist in** \{**computer type**\} **with Id** \{**id**\}."
 Otherwise remove the component of that type and return it.
 
-`void аddPeripheral(Peripheral peripheral)`
+- `void аddPeripheral(Peripheral peripheral)`
 
-If the peripherals collection contains a peripheral with the same peripheral type, throw an **IllegalArgumentException** with the message "**Peripheral \{peripheral type\} already exists in \{computer type\} with Id \{id\}.**"
+If the peripherals collection contains a peripheral with the same peripheral type, throw an **IllegalArgumentException** with the message "**Peripheral** \{**peripheral type**\} **already exists in** \{**computer type**\} **with Id** \{**id**\}."
 Otherwise add the peripheral in peripherals collection.
 
-`Peripheral removePeripheral(String peripheralType)`
+- `Peripheral removePeripheral(String peripheralType)`
 
-If the peripherals collection is empty or does not have a peripheral of that type, throw an **IllegalArgumentException** with the message "**Peripheral \{peripheral type\} does not exist in \{computer type\} with Id \{id\}**."
+If the peripherals collection is empty or does not have a peripheral of that type, throw an **IllegalArgumentException** with the message "**Peripheral** \{**peripheral type**\} **does not exist in** \{**computer type**\} **with Id** \{**id**\}."
 Otherwise remove the peripheral of that type and return it.
 
 ## Child classes
@@ -218,7 +216,6 @@ Child classes should **not** receive an overall performance as a parameter from 
 
 
 [/task-description]
-[code-io /]
 [tests]
 [test open]
 [input]
