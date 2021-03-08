@@ -264,13 +264,13 @@ public class Main {
 [task-description]
 ## Description
 
-Write a program, which **sums the ASCII codes of n characters**. 
+Create a program, which **sums the ASCII codes of n characters**. 
 
 **Print the sum** to the console.
 
 ### Input
 - On the first line, you will receive **n** - the number of lines
-- On the next **n lines** - you will receive letters from the Latin alphabet
+- On the next **n lines** - you will be receiving letters from the Latin alphabet
 
 ### Output
 Print the total sum in the following format:
@@ -389,9 +389,10 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Find more information about ASCII www.ascii-code.com (American Standard Code for Information Interchange) online and write a program that **prints part of the ASCII table** of characters to the console.  
+Find more information about ASCII www.ascii-code.com (American Standard Code for Information Interchange) online and create a program that **prints part of the ASCII table** of characters to the console.  
 
-On the first line of input you will receive the **char index** you should **start** with and on the second line - the index of the **last** character you should print.
+On the first line of input you will receive the **char index** that you should **start** with. 
+On the second line - the index of the **last** character you should print.
 
 ### Example
 | **Input** | **Output** |
@@ -458,7 +459,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that **reads** an integer **n** and **prints all triples of the first n small Latin letters**, ordered **alphabetically**.
+Create a program that **reads** an integer **n** and **prints all triples of the first n small Latin letters**, ordered **alphabetically**.
 
 ### Example
 | **Input** | **Output** |
@@ -961,7 +962,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which **calculates the volume** of **n** beer kegs. 
+Create a program, which **calculates the volume** of **n** beer kegs. 
 
 You will **receive** in total **3 * n lines**.
 
@@ -1080,15 +1081,15 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that **calculates the total amount of spice** that can be extracted from a source. 
+Create a program that **calculates the total amount of spice** that can be extracted from a source. 
 
 The source has a **starting** yield, which indicates how much spice can be mined on the **first day**.
 
-After it has been mined for a day, the yield drops by 10, meaning on the **second day it’ll produce 10 less spice** than on the first, on the **third day 10 less than on the second**, and **so on** (see examples). 
+After it has been mined for a day, the yield drops by 10, meaning on the **second day it'll produce 10 less spice** than on the first, on the **third day 10 less than on the second**, and **so on** (see examples). 
 
 A source is considered **profitable only while its yield is at least 100** - when less than 100 spice is expected in a day, abandon the source.
 
-The mining **crew consumes 26 spice every day** at the **end of their shift and an additional 26** after the mine has been exhausted. 
+The mining crew **consumes 26 spice every day** at the **end of their shift** and **an additional 26** after the mine has been exhausted. 
 
 Note that the workers cannot consume more spice than there is in storage. 
 
@@ -1099,7 +1100,7 @@ When the operation is complete, **print to the console on two separate lines** h
 You will **receive a number**, representing the **starting** yield of the source. 
 
 ### Output
-Print on **two separate lines** how many **days the mine has operated** and the **total amount of spice extracted**.
+Print **two separate lines** that represent how many **days the mine has operated** and the **total amount of spice extracted**.
 
 ### Example
 | **Input** | **Output** |
@@ -1109,11 +1110,11 @@ Print on **two separate lines** how many **days the mine has operated** and the 
 
 **Comments** 
 
-- Day 1 we extract 111 spice and at the end of the shift, the workers consume 26, leaving 85. 
+- On the first day we extract 111 spice and at the end of the shift, the workers consume 26, leaving 85. 
 
 The yield drops by 10 to 101
 
-- Day 2 we extract 101 spice, the workers consume 26, leaving 75. 
+- On the second day we extract 101 spice, the workers consume 26, leaving 75. 
 
 The total is 160 and the yield has dropped to 91
 
@@ -1180,15 +1181,15 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-A Poke Mon is a special type of pokemon which likes to Poke others. 
+A Poke Mon is a special type of pokemon, which likes to poke others. 
 
-But at the end of the day, the Poke Mon wants to keep **statistics** on how many pokes it has managed to do.
+But at the end of the day, the Poke Mon wants to keep **statistics** about how many pokes it has managed to do.
 
-The Poke Mon pokes his target, and then proceeds to poke another target. 
+The Poke Mon pokes his targe, and then proceeds to poke another target. 
 
 The **distance between his targets reduces his poke power**.
 
-You will be given the **poke power** the Poke Mon has, **N** - an integer.
+You will be given the **poke power** that the Poke Mon has, **N** - an integer.
 
 Then you will be given the **distance between the poke targets**, **M** - an integer.
 
@@ -1212,20 +1213,20 @@ Instead, you should continue subtracting.
 
 After dividing, you should **continue subtracting** from N, until it becomes less than M.
 
-When N becomes less than M, you must take what has remained of N and the count of targets you have poked, and print them as output.
+When N becomes less than M, you must take what has remained of N and the count of targets you have poked and print them to the console.
 
 **NOTE:** When you are calculating percentages, you should do it with maximum precision.
 
 Note: 505 is not exactly 50% of 1000, it is 50.5%.
 
 ### Input/ Constraints
-- On the first line you will receive **N** - an integer
-- On the second line you will receive **M** - an integer
-- On the third line you will receive **Y** - an integer
+- On the first line, you will receive **N** - an integer
+- On the second line, you will receive **M** - an integer
+- On the third line, you will receive **Y** - an integer
 
 ### Output
-- On the first line print **what has remained of N**, after subtracting from it
-- On the second line print the **count of targets**, you’ve managed to poke
+- On the first line, print **what has remained of N**, after subtracting from it
+- On the second line, print the **count of targets**, you’ve managed to poke
 
 ### Example
 | **Input** | **Output** |
@@ -1311,35 +1312,35 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Tony and Andi love playing in the snow and having snowball fights, but they always argue who makes the best snowballs. 
+Tony and Andy love playing in the snow and having snowball fights, but they always argue who makes the best snowballs. 
 
-They have decided to involve you in their fray, by making you write a program which **calculates snowball data**, and outputs the best snowball value.
+They have decided to involve you in their fray by making you create a program, which **calculates snowball data** and outputs the best snowball value.
 
-You will receive **N** - an integer, the **number of snowballs being made** by Tony and Andi.
+You will receive **N** - an integer, the **number of snowballs being made** by Tony and Andy.
 
-For each snowball you will receive 3 input lines:
+For each snowball ,you will receive 3 input lines:
 
-- On the first line you will get the **snowballSnow** - an integer
+- On the first line, you will get the **snowballSnow** - an integer
 
-- On the second line you will get the **snowballTime** - an integer
+- On the second line, you will get the **snowballTime** - an integer
 
-- On the third line you will get the **snowballQuality** - an integer
+- On the third line, you will get the **snowballQuality** - an integer
 
-For each snowball you must calculate its snowballValue by the following formula:
+For each snowball you must calculate its **snowballValue** by the following formula:
 **(snowballSnow / snowballTime) ^ snowballQuality**
 
-At the end you must **print the highest calculated** snowballValue.
+At the end you must **print the highest calculated snowballValue**.
 
 
 ### Input/ Constraints
 
-- On the first input line you will receive N - the number of snowballs
+- On the first input line, you will receive N - the number of snowballs
 
-- On the next N \* 3 input lines you will be receiving data about snowballs
+- On the next N \* 3 input lines, you will be receiving data about snowballs
 
 ### Output
 
-- As output you must print the **highest calculated snowballValue**, by the formula, specified above
+- Print the **highest calculated snowballValue** using the formula specified above
 
 - The output format is: 
 
