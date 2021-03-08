@@ -1,6 +1,8 @@
 [slide hideTitle]
 # Using Inherited Members
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-11-using-inherited-members-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **You can access inherited members**
 
 As we mention we can access the inherited members, we do it as we normally call class members.
@@ -33,6 +35,8 @@ What changes here is that we will only have access to the base class members, as
 [slide hideTitle]
 
 # Reusing Constructors
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-12-reusing-constructors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Constructors are not inherited**
 
@@ -76,6 +80,8 @@ class Student extends Person {
 
 # Thinking about Inheritance – Extends
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-13-thinking-about-inheritance-extends-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 What happens with the memory when a class **inherits** another one.
 
 As you can see in the image below, when we inherit, the memory for the **Parent** is allocated plus the new needed memory for the **Derived class**.
@@ -89,6 +95,8 @@ That is because all the members of the **Parent** are declared as well as all th
 [slide hideTitle]
 
 # Inheritance has a Transitive Relation
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-14-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ```java
 class Person { … }                          //Base class with some members.
@@ -104,6 +112,8 @@ That's what transitive relation is, a **Subclass** gets all the functionality fr
 
 [slide hideTitle]
 # Multiple Inheritance
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-15-multiple-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **In Java multiple inheritances is now allowed**
 
@@ -125,6 +135,8 @@ Instead, if you need one class to be from few families you can implement many **
 
 [slide hideTitle]
 # Access to Base Class Members
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-16-access-to-base-class-members-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Sometimes we need to access the base class members.
 
@@ -155,6 +167,9 @@ class Employee extends Person {
 
 [slide hideTitle]
 # Problem with Solution: Multiple Inheritance
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-18-problem-and-solution-multiple-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Multiple Inheritance" timeLimit=5000 taskId="Java-OOP-Advanced-Inheritance-Multiple-Inheritance" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
 [code-upload allowedMemory="30" /]
 
@@ -231,6 +246,9 @@ Test Passed!
 
 [slide hideTitle]
 # Problem with Solution: Hierarchical Inheritance
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-19-problem-and-solution-hierarchical-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Hierarchical Inheritance" timeLimit=5000 taskId="Java-OOP-Advanced-Inheritance-Hierarchical-Inheritance" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
 [code-upload allowedMemory="30" /]
 

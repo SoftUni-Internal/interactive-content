@@ -4,6 +4,8 @@
 
 # Assertions
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-25-26-assertions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 We will take a look at some good practices in Unit Testing.
 
 `assertEquals(expected, actual)` method gives us better description details when we are working with values than `assertTrue()` method.
@@ -40,6 +42,8 @@ Actual :35
 
 # Magic Numbers
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-28-magic-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Another good practice is to avoid using "**magic numbers**".
 
 We must use "**constants**" instead.
@@ -66,6 +70,8 @@ This is better because if we need to change our `amount` variable, we can change
 [slide hideTitle]
 
 # Before
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-29-before-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When we write tests, it is common to find that several tests need similar object to be created before they can run.
 
@@ -100,6 +106,8 @@ Our initialize method will execute before each test.
 [slide hideTitle]
 
 # Naming Test Methods
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-30-naming-tests-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Test naming is very important. 
 
@@ -141,6 +149,8 @@ transferSubtractsFromSourceAddsToDestAccount() {}
 [slide hideTitle]
 
 # Problem with Solution: Refactor Tests
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-31-32-33-problem-and-solution-refactor-tests-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Description
 Refactor the tests for **Axe** and **Dummy** classes

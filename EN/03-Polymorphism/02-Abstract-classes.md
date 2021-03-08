@@ -2,6 +2,8 @@
 
 # Abstract Classes
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/EN/interactive-java-oop-advanced-polymorphism-16-17-Abstract-Classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Lets take a look at **Abstract classes** in Java!
 
 We know from the last lesson that **abstract classes cannot** be instanciated.
@@ -29,7 +31,10 @@ The main goal of an abstract class is to provide shared implementation of common
 
 [slide hideTitle]
 # Problem with Solution: Shapes
-[code-task title="Shapes" taskId="Java-OOP-Advanced-Polymorphism-lab-Shapes" executionType="tests-execution" executionStrategy="java-project-tests"] 
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/EN/interactive-java-oop-advanced-polymorphism-18-problem-and-solution-shapes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[code-task title="Shapes" timeLimit=5000 taskId="Java-OOP-Advanced-Polymorphism-lab-Shapes" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
 
 [task-description]
@@ -53,16 +58,16 @@ Create a **class hierarchy**, starting with an abstract class **Shape**:
 
 Each of them needs to have:
 
-- **Fields \- for **Rectangle**:
+- **Fields \- for Rectangle**:
     - height : Double
     - width : Double 
 
-- **Fields \- for **Circle**:
+- **Fields \- for Circle**:
     - radius : Double
 
 - **Encapsulation for these fields**
 
-- **Public constructor **
+- **Public constructor**
 
 - **Concrete methods for calculations (perimeter and area)**
 
@@ -260,6 +265,7 @@ Test Passed!
 
 [slide hideTitle]
 # Problem with Solution: Animals
+
 [code-task title="Animals" timeLimit=5000 taskId="Java-OOP-Advanced-Polymorphism-lab-Animals" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 

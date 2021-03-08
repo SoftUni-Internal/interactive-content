@@ -2,6 +2,8 @@
 
 # Open Closed Principle
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-9-12-open-closed-principle-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 "The code should be **open for extension**, but **closed for modification**".
 
 Software entities (**classes, modules, methods, etc.**) should be extendable without actually changing the contents of the class you are extending. 
@@ -168,6 +170,8 @@ As well as applying it **reduces the risk of introducing new bugs** to existing 
 
 # OCP - Violations
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-13-ocp-violations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Not following the Open-Close Principle will lead to problems**
 
 **- Cascading changes through modules**
@@ -189,6 +193,7 @@ As well as applying it **reduces the risk of introducing new bugs** to existing 
 
 # Open Close Principle - Soultions
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-14-ocp-silutions-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Inheritance / Abstraction
 

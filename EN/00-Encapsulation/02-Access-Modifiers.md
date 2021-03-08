@@ -4,6 +4,8 @@
 
 # Private Access Modifier
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-9-10-11-12-13-access-modifiers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 With the **private access** modifier an object can hide its data from the rest of the objects in our program.
 
 We choose to make a **field or method** private when we want to preserve the interal logic of our object, so nobody can mess it up:
@@ -83,6 +85,9 @@ public class Team {
 [slide hideTitle]
 
 # Problem with Solution: Sort by Name and Age
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-14-problem-and-solutiom-sort-by-name-and-age-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Sort by Name and Age" timeLimit=5000 taskId="Java-OOP-Advanced-Encapsulation-Sort-By-Name-And-Age" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
 [code-upload allowedMemory="30" /]
 
@@ -324,6 +329,9 @@ Test Passed!
 
 [slide hideTitle]
 # Problem with Solution: Salary Increase
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-16-problem-and-solution-salary-increase-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Salary Increase" timeLimit=5000 taskId="Java-OOP-Advanced-Encapsulation-Salary-Increase" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
 [code-upload allowedMemory="30" /]
 [task-description]

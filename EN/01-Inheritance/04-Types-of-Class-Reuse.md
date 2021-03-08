@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Extension
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-31-32-types-of-class-reuse-extension-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Extension of class is called **IS-A** relationship.
 
 **Student IS-A Person**
@@ -28,6 +30,8 @@ add custom logic to it
 
 [slide hideTitle]
 # Composition
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-33-composition-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Composition is a different type of relationship, in composition we contain the given object in our class.
 
@@ -74,6 +78,9 @@ class Laptop {
 
 [slide hideTitle]
 # Problem with Solution: Stack of Strings
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-35-problem-and-solution-stack-of-strings-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Stack of Strings" timeLimit=5000 taskId="Java-OOP-Advanced-Inheritance-Stack-Of-Strings" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
 [code-upload allowedMemory="30" /]
 
@@ -220,6 +227,8 @@ Test Passed!
 
 [slide hideTitle]
 # When to Use Inheritance
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-37-when-to-use-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can use inheritance when we meet one of the following:
 

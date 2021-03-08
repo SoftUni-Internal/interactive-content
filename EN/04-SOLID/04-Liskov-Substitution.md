@@ -2,6 +2,8 @@
 
 # Liskov Substitution
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-15-17-liskov-substitution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The **Liskov substitution principle**, written by **Barbara Liskov** in 1988, states that functions that reference base classes must be able to use objects of derived (child) classes without knowing it.
 
 In other words, the principle defines that objects of a **Superclass** shall be **replaceable** with objects of its **Subclasses** without breaking the application.
@@ -14,6 +16,8 @@ That requires the objects of your Subclasses to **behave in the same way** as th
 
 # OCP vs LSP​
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-18-ocp-vs-lsp-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The Liskov substitution principle is just an **extension** of the **Open-closed** principle. 
 
 That means that we are able to implement the **Open-closed** principle through **additional objects**, **inheritance**, and **polymorphism**.​
@@ -25,6 +29,8 @@ We must make sure that new derived classes are extending the base classes **with
 [slide hideTitle]
 
 # LSP – Violations and Solutions​
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-19-lsp-violations-and-solutions-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **LSP** is applicable when there’s a **Supertype-Subtype inheritance** relationship by either **extending** a class or **implementing** an interface. 
 

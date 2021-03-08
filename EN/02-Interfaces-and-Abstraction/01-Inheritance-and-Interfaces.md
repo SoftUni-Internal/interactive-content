@@ -2,6 +2,8 @@
 
 # Inheritance and Interfaces
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-3-inheritance-and-interfaces-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Inheritance** and **Interfaces** are two other major concepts in the **object-oriented** programming.
 
 **Inheritance** allows classes to **inherit data and functionality** from a **parent class** (also called "**base class**").
@@ -40,6 +42,8 @@ When a class inherits another class, the **parent class fields** are merged with
 
 [slide hideTitle]
 # Example: Abstract Classes and Concrete Classes
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-4-inheritance-and-interfaces-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [image assetsSrc="Interfaces-and-Abstraction-example.png" /]
 

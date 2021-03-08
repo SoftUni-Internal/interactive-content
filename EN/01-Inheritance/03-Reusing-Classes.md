@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Access Modifiers
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-20-21-reusing-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 - Derived classes **can access all public** and **protected** members
 - Derived classes can access **default** members **if in same package**
 - **Private** fields can not be accessed from the **Subclasses** but they are instantiated as our **Parent** need them for its internal logic
@@ -21,6 +23,8 @@ class Person {
 [slide hideTitle]
 
 # Shadowing Variables
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-22-shadowing-variables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Derived classes **can hide/shadow** Superclass variables by implementing a unit with the same name for itself
 
@@ -46,6 +50,8 @@ class Patient extends Person {
 
 # Shadowing Variables – Access
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-23-shadowing-variables-access-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 - Use **super** and **this** to specify member access
 
 ```java
@@ -65,6 +71,8 @@ class Patient extends Person {
 
 [slide hideTitle]
 # Overriding Derived Methods
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-24-overriding-derived-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Overriding is a mechanism in which we can give a custom implementation of a given class method down the hierarchy, we can achieve it with the keyword `@Override`.
 
@@ -97,6 +105,8 @@ public class Student extends Person {
 [slide hideTitle]
 
 # Final Methods and Classes
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-25-final-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - `final` – defines a method that **can not be overridden**
   - we should use this tool when we want to preserve our method implementation down the class hierarchy
@@ -132,6 +142,8 @@ public class MyMath extends Math { }     // Error…
 
 # Inheritance Benefits 
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-27-inheritance-benefits-abstraction-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 - With inheritance, we can provide an abstraction to the classes we use
 - We can re-use code, less code means fewer bugs
 - We can achieve **Polymorphism**
@@ -156,6 +168,8 @@ people.add(student);
 
 # Extension
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-28-inheritance-benefits-extension-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 - We can extend a class that we can not otherwise change, implementing the custom logic we need
 
 If we take notice of the picture, we see an extension of the `Lists<>` logic, when we derive, although we can not see the original implementation, we can write more methods or parameters to our custom class, thus expanding the original class's logic.
@@ -172,6 +186,9 @@ public class MyArrayList<E> extends ArrayList<E>{
 
 [slide hideTitle]
 # Problem with Solution: Random Array List
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-29-problem-and-solution-random-array-list-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Random Array List" timeLimit=5000 taskId="Java-OOP-Advanced-Inheritance-Random-Array-List" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
 [code-upload allowedMemory="30" /]
 

@@ -4,15 +4,17 @@
 
 # Lesson Content
 
-## In this lesson you will learn:
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**1. What is Encapsulation?** 
+## In this lesson, you will learn:
 
-- Benefits from using Encapsulation
+**1. What Encapsulation is** 
+
+- Benefits from using encapsulation
 
 **2. Access Modifiers**
 
-- What is access modifiers
+- What access modifiers are
 
 - Their types and usage
 
@@ -22,12 +24,12 @@
 
 **4. Mutable and Immutable Objects**
 
-- What is the difference between Mutable and Immutable Objects
+- What the difference between mutable and immutable objects is 
 
-- Which object are Muttable and which Immutable
+- Which objects are mutable and which - immutable
 
 **5. Keyword `final`**
 
-- When do we use the keyword `final`
+- When to use the `final` keyword 
     
 [/slide]

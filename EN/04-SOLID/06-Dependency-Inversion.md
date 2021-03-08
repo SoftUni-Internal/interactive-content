@@ -2,6 +2,8 @@
 
 # Dependency Inversion
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-26-27-dependency-inversion-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 "**Depend on abstractions, not on concretions**"
 
 The **Dependency Inversion principle** defines the concept that **high-level** modules should not depend on **low-level** modules. 
@@ -23,6 +25,8 @@ The goal we are trying to achieve with the abstraction approach is to have **ind
 [slide hideTitle]
 
 # The DI Problem
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-30-the-problem-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In the following example, we have two classes: **Button** and **Lamp**.
 
@@ -59,6 +63,8 @@ The above code is a violation of the **Dependency Inversion principle**.
 [slide hideTitle]
 
 # The DI Problem - Solution
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-31-dependency-inversion-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To solve the design issue behind the previous code, we need to create a **middle-layer** where we can define an **abstract interface associated with `Button`** and implemented by any classes like `Lamp`:
 
@@ -132,6 +138,8 @@ It also means that `Button` will be **able to control objects** that have **not 
 
 # Dependency Examples 
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-32-dependency-examples-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Understanding what **Dependency Inversion** is may take time, but lets have a look at few dependency examples and try to better understand what we are trying to achieve with this principle. 
 
 **A dependency is any external component/system:**
@@ -161,6 +169,8 @@ We want to de-couple our code from specific classes, in order for it to be flexi
 
 # How to DIP?
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-33-35-37-how-to-dip-1-2-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 We can achieve Dependency-Inversion Principle by applying the **Dependency Injection** design pattern. 
 
 Dependency Injection allows us to use **Inversion of Control Container (IOC)**.
@@ -174,6 +184,8 @@ There are 3 types of Dependency Injection and it's important for every developer
 [slide hideTitle]
 
 # Constructor Injection
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-34-constructor-injection-example-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Through this type of DI, the **dependencies are passed through the constructor** of the given class.
 
@@ -212,6 +224,8 @@ public class Copy {​
 [slide hideTitle]
 
 # Setter Injection
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-36-setter-injection-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 With **Setter Injection** as the name suggests the dependencies are passed to the setters.
 
@@ -269,6 +283,8 @@ public class Copy {​
 [slide hideTitle]
 
 # Layering
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-38-39-layering-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 There is a difference between traditional programming layering and dependency inversion layering.
 

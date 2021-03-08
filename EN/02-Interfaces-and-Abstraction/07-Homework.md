@@ -600,8 +600,8 @@ public static void main(String[] args) {
        
        String birthDate = scanner.nextLine();
        
-       Identifiable identifiable
-               = new Citizen(name, age, id, birthDate);
+       Identifiable identifiable = 
+               new Citizen(name, age, id, birthDate);
                
        Birthable birthable = 
                new Citizen(name, age, id, birthDate);
@@ -1374,11 +1374,11 @@ Encompass repeated functionality into interfaces and implement them in your clas
 
 You will receive from the console an unknown amount of lines until the command "**End**" is received,  each line will contain information in one of the following formats:
 
-- "**Citizen \{name\} \{age\} \{id\} \{birthdate\}**" for citizens 
+- "**Citizen** \{**name**\} \{**age**\} \{**id**\} \{**birthdate**\}" for citizens 
 
-- "**Robot \{model\} \{id\}**" for robots
+- "**Robot** \{**model**\} \{**id**\}" for robots
 
-- "**Pet \{name\} \{birthdate\}**" for pets
+- "**Pet** \{**name**\} \{**birthdate**\}" for pets
  
 After the end command on the next line you will receive a single number representing a **specific year**.
 
@@ -2653,9 +2653,9 @@ Implement the **Buyer** interface in the **Citizen** and **Rebel** class, both R
 
 On the first line of the input you will receive an integer **N** - the number of people, on each of the next **N** lines you will receive information in one of the following formats
 
-- "**\{name\} \{age\} \{id\} \{birthdate\}**" for a Citizen 
+- "\{**name**\} \{**age**\} \{**id**\} \{**birthdate**\}" for a Citizen 
 
-- "**\{name\} \{age\} \{group\}**" for a Rebel
+- "\{**name**\} \{**age**\} \{**group**\}" for a Rebel
 
 After the **N** lines until the command "**End**" is received, you will receive names of people who bought food, each on a new line. 
 
@@ -2665,9 +2665,9 @@ On the only line of output, you should print the total amount of food purchased.
 
 [image assetsSrc="interfaces-and-abstraction-example(14).png" /]
 
-## Examples
+# Examples
 
-# Example 1
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | 2 | 20 |
@@ -2678,7 +2678,7 @@ On the only line of output, you should print the total amount of food purchased.
 | Peter |  |
 | End |  |
 
-# Example 2
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | 4 | 25 |
@@ -4131,9 +4131,9 @@ It will hold two lines:
 
 ## Output
 - First **call all numbers** in the order of input then **browse all sites** in order of input
-- The functionality of calling phones is printing on the console the number which are being called in the format: "**Calling... \{number\}**"
+- The functionality of calling phones is printing on the console the number which are being called in the format: "**Calling...** \{**number**\}"
 - The functionality of the browser should print on the console the site in format:
-"**Browsing: \{site\}!**" (pay attention to the exclamation mark when printing URLs)
+"**Browsing**\: \{**site**\}**!**" (pay attention to the exclamation mark when printing URLs)
 - If there is a number in the input of the URLs, print: "**Invalid URL!**" and continue printing the rest of the URLs
 - If there is a character different from a digit in a number, print: "**Invalid number!**" and continue to the next number
 

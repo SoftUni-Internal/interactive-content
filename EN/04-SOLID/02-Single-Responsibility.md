@@ -2,6 +2,8 @@
 
 # Single Responsibility
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-6-8-single-responsibility-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 "A class should have **one**, and **only one**, reason to change".
 
 This is the first **SOLID** principle - **Single Responsibility**.

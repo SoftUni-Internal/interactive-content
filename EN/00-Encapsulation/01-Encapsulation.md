@@ -2,7 +2,9 @@
 
 # Encapsulation
 
-**Encapsulation is a process of wrapping code and data together into a single unit**
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-3-4-5-6-encapsulation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+**Encapsulation is the process of wrapping code and data together into a single unit.**
 - Increase flexibility and extensibility of the code
 - Reduce complexity
 - Structural changes remain local
@@ -23,11 +25,8 @@ class Person {
   public void setAge(int age)
 }
 ```
-[/slide]
 
-[slide hideTitle]
-
-# Encapsulation Example
+## Example
 
 Fields should be **private** (-):
 
@@ -53,9 +52,11 @@ Accessors and Mutators should be **public** (+):
 
 # Keyword This 
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-7-8-keyword-this-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 - `.this` is a reference to the current object
 
-It can refer to current class instance:
+It can refer to the current class instance:
 
 ```java
 public Person(String name) {
@@ -63,7 +64,7 @@ public Person(String name) {
 }
 ```
 
-- `.this` can invoke current class method
+- `.this` can invoke the current class method
 
 ```java
 public String fullName() {
@@ -71,13 +72,14 @@ public String fullName() {
 }
 ```
 
-- `.this` can invoke current class constructor
+- `.this` can invoke the current class constructor
 
 ```java
 public Person(String name) {
   this.firstName = name;
 }
 ```
+
 ```java
 public Person (String name, Integer age) {
   this(name);

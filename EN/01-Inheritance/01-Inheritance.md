@@ -1,6 +1,8 @@
 [slide hideTitle]
 # Inheritance
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-3-4-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Inheritance is a mechanism by which it is possible to inherit properties and methods from a parent object to a child object**
 
 - The class **passing its members** to its child class is called **Superclass** (Base Class, Parent class)
@@ -22,6 +24,8 @@ public class Cow extends Mammal {...}
 [slide hideTitle]
 
 # Inheritance Example
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-5-inheritance-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When we use inheritance, we can have more than one **Subclass**.
 
@@ -46,6 +50,8 @@ Respectively we do the same for the `Student`, but with its own internal logic w
 [slide hideTitle]
 # Class Hierarchies
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-6-class-hierarchies-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Inheritance leads to hierarchies of classes and/or interfaces in an application:**
 
 A real-life analog of **class hierarchies** is a  **family tree**, we have one class starting the family and down the leaves, we have its children and their children, etc.
@@ -58,6 +64,8 @@ A real-life analog of **class hierarchies** is a  **family tree**, we have one c
 [slide hideTitle]
 # Class Hierarchies – Java Collection
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-7-class-hierarchies-java-collection-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 `Object` is a universal **Superclass** that is defined to be the root of the entire class hierarchy in Java.
 
 This means that every class that we create is implicitly a child of the class `Object` without us specifying it.
@@ -68,6 +76,8 @@ This means that every class that we create is implicitly a child of the class `O
 
 [slide hideTitle]
 # Inheritance in Java
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-9-inheritance-in-java-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We **inherite** a given class through the keyword **extends**, placed right after the name of the given **Subclass**, further setting the parent.
 
@@ -92,6 +102,8 @@ class Employee extends Person { … }
 
 # Derived Class
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-10-inheritance-derived-class-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Derived class taking all members from its base class**
 
 The **Derived** classes can inherit and call all the **non-private** members of the **Parent** class.
@@ -106,6 +118,9 @@ If a unit is declared as private, the memory for it is declared as well when we 
 
 [slide hideTitle]
 # Problem with Solution: Single Inheritance
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-17-problem-and-solution-single-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Single Inheritance" timeLimit=100000 taskId="Java-OOP-Advanced-Inheritance-Single-Inheritance" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
 [code-upload allowedMemory="30" /]
 

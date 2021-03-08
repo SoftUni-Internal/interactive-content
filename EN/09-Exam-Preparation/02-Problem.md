@@ -1,17 +1,8 @@
-[slide]
-# Problem: Santa Workshop Business Logic
-[code-task title="Problem: Santa Workshop Business Logic" taskId="e1f327ec-afc3-4481-9e6e-11b2276fa189" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[slide hideTitle]
+# Problem with Solution: Santa Workshop Business Logic
+[code-task title="Santa Workshop Business Logic" timeLimit=5000 taskId="oop-advanced-java-exam-preparation-1-Santa-Workshop-Business-Logic" executionType="tests-execution" executionStrategy="java-project-tests"]   
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 
 # Description
@@ -20,15 +11,23 @@ public class Main {
 
 ## The Controller Class
 
-The business logic of the program should be concentrated around several **commands**. You are given interfaces, which you have to implement in the correct classes.
+The business logic of the program should be concentrated around several **commands**. 
+
+You are given interfaces, which you have to implement in the correct classes.
 
 **Note: The ControllerImpl class SHOULD NOT handle exceptions! The tests are designed to expect exceptions, not messages!**
 
-The first interface is **Controller**. You must create a **ControllerImpl** class, which implements the interface and implements all its methods. The constructor of **ControllerImpl** does not take any arguments. The given methods should have the following logic:
+The first interface is **Controller**. You must create a **ControllerImpl** class, which implements the interface and implements all its methods. 
+
+The constructor of **ControllerImpl** does not take any arguments. 
+
+The given methods should have the following logic:
 
 ## Commands
 
-There are several commands, which control the business logic of the application. They are stated below.
+There are several commands, which control the business logic of the application. 
+
+They are stated below.
 
 ### AddDwarf Command
 
@@ -47,7 +46,7 @@ If the dwarf is invalid, throw an **IllegalArgumentException** with message:
 
 The method should **return** the following message:
 
-- "**Successfully added \{dwarfType\} named \{dwarfName\}!**"
+- "**Successfully added** \{**dwarfType**\} **named** \{**dwarfName**\}**!**"
 
 ### AddInstrumentToDwarf Command
 
@@ -61,13 +60,13 @@ The method should **return** the following message:
 
 Creates an instrument with the given power and adds it to the collection of the dwarf. 
 
-If the dwarf doesn't exist, throw an **IllegalArgumentException** with message:
+If the dwarf does not exist, throw an **IllegalArgumentException** with message:
 
 "**The dwarf you want to add an instrument to doesn't exist!**"
 
 The method should **return** the following message:
 
-"**Successfully added instrument with power \{instrumentPower\} to dwarf \{dwarfName\}!**"
+"**Successfully added instrument with power** \{**instrumentPower**\} **to dwarf** \{**dwarfName**\}**!**"
 
 
 ### AddPresent Command
@@ -83,7 +82,7 @@ Creates a **present** with the provided **name** and **required energy**.
 
 The method should **return** the following message:
 
-- **"Successfully added Present: \{presentName\}!"**
+- "**Successfully added Present:** \{**presentName**\}**!**"
 
 ### CraftPresents Command
 
@@ -97,16 +96,16 @@ When the craft command is called, the action happens.
 
 You should start crafting the given present, by assigning dwarfs which are most ready:
 
-- The dwarfs that you should select are the ones with energy **above** 50 units.
+- The dwarfs that you should select are the ones with energy **above** 50 units
 
-- The suitable ones start working on the given present.
+- The suitable ones start working on the given present
 
 - If **no dwarfs are ready**, throw **IllegalArgumentException** with the following message:
-**"There is no dwarf ready to start crafting!"**
+"**There is no dwarf ready to start crafting!**"
 
 - After the work is done, you must return the following message, reporting whether the present is done and how many instruments have been broken in the process:
 
-"Present \{presentName\} is \{done/not done\}. \{countBrokenInstruments\} instrument/s have been broken while working on it!"
+"**Present** \{**presentName**\} **is** \{**done/not done**\}**.** \{**countBrokenInstruments**\} **instrument/s have been broken while working on it!**"
 
 **Note**: The **name** of the **present** you receive will always be a **valid** one.
 
@@ -116,71 +115,77 @@ You should start crafting the given present, by assigning dwarfs which are most 
 
 Returns information about **crafted presents** and **dwarfs**:
 
-"\{countCraftedPresents\} presents are done!"
+"\{**countCraftedPresents**\} **presents are done!**"
 
-"Dwarfs info:"
+"**Dwarfs info:**"
 
-"Name: \{dwarfName1\}"
+"**Name:** \{**dwarfName1**\}"
 
-"Energy: \{dwarfEnergy1\}"
+"**Energy:** \{**dwarfEnergy1**\}"
 
-"Instruments \{countInstruments\} not broken left"
+"**Instruments** \{**countInstruments**\} **not broken left**"
 
 …
 
-"Name: \{dwarfNameN\}"
+"**Name:** \{**dwarfNameN**\}"
 
-"Energy: \{dwarfEnergyN\}"
+"**Energy:** \{**dwarfEnergyN**\}"
 
-"Instruments \{countInstruments\} not broken left"
+"**Instruments** \{**countInstruments**\} **not broken left**"
 
 # Input / Output
 
-You are provided with one interface, which will help you with the correct execution process of your program. The interface is **Engine** and the class implementing this interface should read the input and when the program finishes, this class should print the output
+You are provided with one interface, which will help you with the correct execution process of your program. 
+
+The interface is **Engine** and the class implementing this interface should read the input and when the program finishes, this class should print the output.
 
 ## Input
 
 Below, you can see the **format** in which **each command** will be given in the input:
 
-- AddDwarf \{dwarfType\} {dwarfName}
+- **AddDwarf** \{**dwarfType**\} \{**dwarfName**\}
 
-- AddPresent \{presentName\} {energyRequired}
+- **AddPresent** \{**presentName**\} \{**energyRequired**\}
 
-- AddInstrumentToDwarf \{dwarfName\}
+- **AddInstrumentToDwarf** \{**dwarfName**\}
 
-- CraftPresent \{presentName\}
+- **CraftPresent** \{**presentName**\}
 
-- Report
+- **Report**
 
-- Exit
+- **Exit**
 
 ## Output
 
-Print the output from each command when issued. If an exception is thrown during any of the commands' execution, print the exception message.
+Print the output from each command when issued. 
 
-## Example:
+If an exception is thrown during any of the commands' execution, print the exception message.
+
+# Example 
+
+## Example 1
 
 | **Input** |
 | --- |
-|  AddDwarf Sleepy SleepyHead |
-AddDwarf Happy Sunshine |
-AddDwarf Invalid Sonny |
-AddInstrumentToDwarf SleepyHead 10 |
-AddInstrumentToDwarf Sunshine 20 |
-AddInstrumentToDwarf Sunshine 20 |
-AddInstrumentToDwarf Sunshine 30 |
-AddInstrumentToDwarf Sunshine 10 |
-AddInstrumentToDwarf Sunshine 30 |
-AddInstrumentToDwarf Sunshine 20 |
-AddInstrumentToDwarf Sunshine 40 |
-AddPresent Truck 20 |
-AddPresent TeddyBear 20 |
-AddPresent Doll 50 |
-CraftPresent Truck |
-CraftPresent TeddyBear |
-CraftPresent Doll |
-Report |
-Exit |
+| AddDwarf Sleepy SleepyHead |
+| AddDwarf Happy Sunshine |
+| AddDwarf Invalid Sonny |
+| AddInstrumentToDwarf SleepyHead 10 |
+| AddInstrumentToDwarf Sunshine 20 |
+| AddInstrumentToDwarf Sunshine 20 |
+| AddInstrumentToDwarf Sunshine 30 |
+| AddInstrumentToDwarf Sunshine 10 |
+| AddInstrumentToDwarf Sunshine 30 |
+| AddInstrumentToDwarf Sunshine 20 |
+| AddInstrumentToDwarf Sunshine 40 |
+| AddPresent Truck 20 |
+| AddPresent TeddyBear 20 |
+| AddPresent Doll 50 |
+| CraftPresent Truck |
+| CraftPresent TeddyBear |
+| CraftPresent Doll |
+| Report |
+| Exit |
 
 
 | **Output** |
@@ -211,7 +216,7 @@ Exit |
 | Energy: 10 |
 | Instruments: 3 not broken left |
 
-## Second Example:
+## Example 2
 
 | **Input** |
 | --- |
@@ -281,7 +286,6 @@ Exit |
 
 
 [/task-description]
-[code-io /]
 [tests]
 [test]
 [input]

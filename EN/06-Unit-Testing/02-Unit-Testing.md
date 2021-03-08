@@ -4,6 +4,7 @@
 
 # What is Unit-Testing?
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-11-13-manual-testing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Unit-Testing means that we test smaller **pieces/units** of our application.
 
@@ -42,6 +43,8 @@ To make the things easier we need a **structured** approach that:
 
 # Automated Testing
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-14-automated-testing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Automated testing contains:
 
 - Unit tests
@@ -61,6 +64,8 @@ Automated testing contains:
 [slide hideTitle]
 
 # JUnit
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-15-16-junit-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 JUnit is one of the first unit testing **Frameworks** for Java.
 
@@ -88,6 +93,8 @@ After creating a Maven project, we must copy and paste this code in our pom.xml 
 
 # JUnit - Writing Tests
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-17-junit-writing-tests-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Lets create a new **package** for our tests.
 
 Than we must create our first class for test methods. (e.g **CalculatorTests**)
@@ -107,6 +114,8 @@ public void commandShouldMultiplyNumbers() {
 [slide hideTitle]
 
 # 3A Pattern
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-18-3A-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 There is a **must-know** pattern when creating unit tests.
 
@@ -139,6 +148,8 @@ Lets take a look at this simple example:
 [slide hideTitle]
 
 # Exceptions
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-19-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In some method we may need to throw an exception for (example: invalid input) in our code, we can test this behaviour like:
 
@@ -189,6 +200,8 @@ Copy the files provided and place them in a package inside src/main/java folder.
 [slide hideTitle]
 
 # Problem: Test Axe
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-20-21-22-problem-and-solutiom-test-axe-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/07.Java-OOP-Advanced-Unit-Testing-Lab-Resources.zip) **for this task.**
 
@@ -275,6 +288,7 @@ axe.attack(dummy);
 
 # Problem: Test Dummy
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-23-24-problem-and-solution-test-dummy-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Description
 Create a class `DummyTests`

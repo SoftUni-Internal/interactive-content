@@ -32,6 +32,8 @@ In this class our `Bank` depends on `AccountManager` and if the dependency bring
 
 # Dependency Injection
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-37-dependency-injection-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 When we use **abstraction** and **dependency injection** the testing of our code becomes easier,
 observe the following graphic and code to understand the concept. 
 
@@ -73,6 +75,8 @@ public void testGetInfoById() {​
 
 # Isolating Test Behaviour
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-38-goal-isolating-test-behavior-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The goal is to **fixate** all **moving parts**, making our code more stable and decoupled, increasing the efficency of our tests. 
 
 [/slide]
@@ -80,6 +84,8 @@ The goal is to **fixate** all **moving parts**, making our code more stable and 
 [slide hideTitle]
 
 # Fake Implementation vs Mocking Objects
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-44-fake-implementations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Lets find the difference between **fakes** and **mocking** objects.
 
@@ -117,6 +123,8 @@ public class FakeRepository implements AccountRepository {
 [slide hideTitle]
 
 # Problem: Fake Axe and Dummy
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-39-40-41-42-43-problem-and-solution-fake-axe-and-dummy-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Description
 Test if hero gains XP when target dies.
@@ -216,6 +224,8 @@ public void attackGainsExperienceIfTargetIsDead(){
 
 # Mocking
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-45-mocking-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 On the other hand **Mocking objects** simulate behavior of real objects.
 
 An example could be the function that calls e-mail sending service.
@@ -244,6 +254,8 @@ public void testAlarmClockShouldRingInTheMorning() {
 
 # Mockito
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-46-47-mockito-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Mockito** is a framework for mocking objects. [Mockito web site](https://site.mockito.org/)
 
 We can obtain our **Mockito** dependency from here: 
@@ -264,6 +276,9 @@ Copy this in to pom.xml file:
 [slide hideTitle]
 
 # Problem: Mocking
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-48-49-50-problem-and-solution-mocking-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Include **Mockito** in the project dependencies, then:
 1.	Mock fakes from previous problem
 2.	Implement **Hero Inventory**, holding unequipped weapons
