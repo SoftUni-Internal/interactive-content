@@ -2047,6 +2047,8 @@ Test Passed!
 [task-description]
 # Description
 
+## NEW
+
 **Build a hierarchy from classes and interfaces for this UML diagram.**
 
 [image assetsSrc="interfaces-and-abstraction-example(8).png" /]
@@ -2084,11 +2086,10 @@ private static void print(Person person) {
 [tests]
 [test open]
 [input]
-```
 import org.junit.Assert;
 import org.junit.Test;
 
-public class TestClasses {
+public class TestClasses \{
 
     // Error messages
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
@@ -2101,30 +2102,26 @@ public class TestClasses {
     private static final String BASE_PERSON = "BasePerson";
 
     @Test
-    public void test() {
+    public void test() \{
         assertClassExists(PERSON);
         assertClassExists(BULGARIAN);
         assertClassExists(EUROPEAN);
         assertClassExists(CHINESE);
         assertClassExists(BASE_PERSON);
-    }
+    \}
 
-    private void assertClassExists(String className) {
+    private void assertClassExists(String className) \{
         Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
                 Classes.allClasses.containsKey(className));
-    }
-}
-```
+    \}
+\}
 [/input]
 [output]
-```
 Test Passed!
-```
 [/output]
 [/test]
 [test open]
 [input]
-```
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -2134,7 +2131,7 @@ import java.lang.reflect.Modifier;
 import java.util.Optional;
 import java.util.stream.Stream;
 
-public class TestMethods {
+public class TestMethods \{
 
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
     private static final String METHOD_NOT_PRESENT_ERROR_MESSAGE = "Method '%s' not present in class '%s'";
@@ -2147,100 +2144,96 @@ public class TestMethods {
     private static final String SET_NAME_METHOD_NAME = "setName";
 
     @Test
-    public void test() {
+    public void test() \{
 
         assertClassExists(BASE_PERSON);
 
         Class carClass = Classes.allClasses.get(BASE_PERSON);
 
-        Method[] carMethods = carClass.getMethods();
+        Method\[\] carMethods = carClass.getMethods();
         assertMethod(carMethods, BASE_PERSON, GET_NAME_METHOD_NAME, String.class);
-    }
+    \}
 
-    private void assertClassExists(String className) {
+    private void assertClassExists(String className) \{
         Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
                 Classes.allClasses.containsKey(className));
-    }
+    \}
 
-    private void assertMethod(Method[] methods, String className, String methodName, Class returnType, Class... expectedParamTypes) {
+    private void assertMethod(Method\[\] methods, String className, String methodName, Class returnType, Class... expectedParamTypes) \{
         assertMethodExists(methods, className, methodName);
         Method method = getMethod(methods, methodName);
         assertCorrectReturnType(method, className, returnType);
         assertCorrectParameterTypes(method, className, expectedParamTypes);
-    }
+    \}
 
-    private void assertCorrectParameterTypes(Method method, String className, Class[] expectedParamTypes) {
-        Class<?>[] actualParamTypes = method.getParameterTypes();
+    private void assertCorrectParameterTypes(Method method, String className, Class\[\] expectedParamTypes) \{
+        Class\<?\>\[\] actualParamTypes = method.getParameterTypes();
         Assert.assertTrue(String.format(INCORRECT_PARAMETER_TYPE_ERROR_MESSAGE, method.getName(), className),
                 expectedParamTypes.length == actualParamTypes.length);
 
-        for (int i = 0; i < expectedParamTypes.length; i++) {
+        for (int i = 0; i \< expectedParamTypes.length; i++) \{
 
-            Class expectedParamType = expectedParamTypes[i];
-            if (expectedParamTypes[i] == int.class) {
+            Class expectedParamType = expectedParamTypes\[i\];
+            if (expectedParamTypes\[i\] == int.class) \{
                 Assert.assertTrue(INCORRECT_PARAMETER_TYPE_ERROR_MESSAGE,
-                        expectedParamType == actualParamTypes[i] || expectedParamType == Integer.class);
-            } else {
+                        expectedParamType == actualParamTypes\[i\] \|\| expectedParamType == Integer.class);
+            \} else \{
                 Assert.assertTrue(INCORRECT_PARAMETER_TYPE_ERROR_MESSAGE,
-                        expectedParamType == actualParamTypes[i]);
-            }
-        }
-    }
+                        expectedParamType == actualParamTypes\[i\]);
+            \}
+        \}
+    \}
 
-    private void assertCorrectReturnType(Method method, String className, Class returnType) {
+    private void assertCorrectReturnType(Method method, String className, Class returnType) \{
         Assert.assertTrue(String.format(INCORRECT_RETURN_TYPE_ERROR_MESSAGE, method.getName(), className),
                 isCorrectReturnType(method, returnType));
-    }
+    \}
 
-    private Method getMethod(Method[] methods, String methodName) {
+    private Method getMethod(Method\[\] methods, String methodName) \{
         return Stream.of(methods)
-                .filter(m -> m.getName().equals(methodName))
+                .filter(m -\> m.getName().equals(methodName))
                 .findFirst()
                 .get();
-    }
+    \}
 
-    private void assertMethodExists(Method[] methods, String className, String methodName) {
-        Optional<Method> methodOptional = Stream.of(methods)
-                .filter(m -> m.getName().equals(methodName))
+    private void assertMethodExists(Method\[\] methods, String className, String methodName) \{
+        Optional\<Method\> methodOptional = Stream.of(methods)
+                .filter(m -\> m.getName().equals(methodName))
                 .findFirst();
 
         Assert.assertTrue(String.format(METHOD_NOT_PRESENT_ERROR_MESSAGE, methodName, className),
                 methodOptional.isPresent());
-    }
+    \}
 
-    private boolean isCorrectReturnType(Method method, Class returnType) {
+    private boolean isCorrectReturnType(Method method, Class returnType) \{
 
-        if (returnType == int.class || returnType == Integer.class) {
-            return method.getReturnType() == int.class || method.getReturnType() == Integer.class;
-        } else {
+        if (returnType == int.class \|\| returnType == Integer.class) \{
+            return method.getReturnType() == int.class \|\| method.getReturnType() == Integer.class;
+        \} else \{
             return method.getReturnType() == returnType;
-        }
-    }
+        \}
+    \}
 
-    private void assertHasNoPrivateFields(String className) {
+    private void assertHasNoPrivateFields(String className) \{
         Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
                 Classes.allClasses.containsKey(className));
 
         Class cl = Classes.allClasses.get(className);
 
-        Field[] fields = cl.getDeclaredFields();
-        long nonPrivateFieldsCount = Stream.of(fields).filter(f -> !Modifier.isPrivate(f.getModifiers())).count();
+        Field\[\] fields = cl.getDeclaredFields();
+        long nonPrivateFieldsCount = Stream.of(fields).filter(f -\> !Modifier.isPrivate(f.getModifiers())).count();
         Assert.assertTrue(
                 String.format(HAS_NON_PRIVATE_FIELDS_ERROR_MESSAGE, className),
                 nonPrivateFieldsCount == 0);
-    }
-}
-```
+    \}
+\}
 [/input]
 [output]
-```
 Test Passed!
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -2248,7 +2241,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 import java.util.stream.Stream;
 
-public class TestEncapsulation {
+public class TestEncapsulation \{
 
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
     private static final String HAS_NON_PRIVATE_FIELDS_ERROR_MESSAGE = "Class %s contains non private fields";
@@ -2256,24 +2249,23 @@ public class TestEncapsulation {
     private static final String BULGARIAN = "BasePerson";
 
     @Test
-    public void test() {
+    public void test() \{
         assertHasNoPrivateFields(BULGARIAN);
-    }
+    \}
 
-    private void assertHasNoPrivateFields(String className) {
+    private void assertHasNoPrivateFields(String className) \{
         Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
                 Classes.allClasses.containsKey(className));
 
         Class cl = Classes.allClasses.get(className);
 
-        Field[] fields = cl.getDeclaredFields();
-        long nonPrivateFieldsCount = Stream.of(fields).filter(f -> !Modifier.isPrivate(f.getModifiers())).count();
+        Field\[\] fields = cl.getDeclaredFields();
+        long nonPrivateFieldsCount = Stream.of(fields).filter(f -\> !Modifier.isPrivate(f.getModifiers())).count();
         Assert.assertTrue(
                 String.format(HAS_NON_PRIVATE_FIELDS_ERROR_MESSAGE, className),
                 nonPrivateFieldsCount == 0);
-    }
-}
-```
+    \}
+\}
 [/input]
 [output]
 Test Passed!
@@ -2281,7 +2273,6 @@ Test Passed!
 [/test]
 [test]
 [input]
-```
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -2290,100 +2281,92 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.stream.Collectors;
 
-public class TestConstructors {
+public class TestConstructors \{
 
     // Error messages
     private static final String CLASS_NOT_PRESENT = "Class '%s' not present";
     private static final String CONSTRUCTOR_NOT_PRESENT = "Constructor(%s) in class '%s' not present";
 
     // Class names
-    private static final String[] classNames = new String[]{ "Bulgarian", "European", "Chinese", "BasePerson" };
+    private static final String\[\] classNames = new String\[\]\{ "Bulgarian", "European", "Chinese", "BasePerson" \};
 
     // Method parameter types
-    private static final HashMap<String, Class[]> constructorParameters = new HashMap<String, Class[]>() {{
-        put("Bulgarian", new Class[]{String.class});
-        put("European", new Class[]{String.class});
-        put("Chinese", new Class[]{String.class});
-        put("BasePerson", new Class[]{String.class});
-    }};
+    private static final HashMap\<String, Class\[\]\> constructorParameters = new HashMap\<String, Class\[\]\>() \{\{
+        put("Bulgarian", new Class\[\]\{String.class\});
+        put("European", new Class\[\]\{String.class\});
+        put("Chinese", new Class\[\]\{String.class\});
+        put("BasePerson", new Class\[\]\{String.class\});
+    \}\};
 
     @Test
-    public void test() {
-        for (String className : classNames) {
+    public void test() \{
+        for (String className : classNames) \{
             assertClassExists(className);
-        }
+        \}
 
-        for (String className : classNames) {
+        for (String className : classNames) \{
             Class currentClass = Classes.allClasses.get(className);
 
-            try {
+            try \{
                 Constructor constructor = currentClass.getDeclaredConstructor(constructorParameters.get(className));
-            } catch (NoSuchMethodException e) {
-                String constructorParams = String.join(", ", Arrays.asList(constructorParameters.get(className)).stream().map(c -> c.toString()).collect(Collectors.toList()));
+            \} catch (NoSuchMethodException e) \{
+                String constructorParams = String.join(", ", Arrays.asList(constructorParameters.get(className)).stream().map(c -\> c.toString()).collect(Collectors.toList()));
                 Assert.assertTrue(String.format(CONSTRUCTOR_NOT_PRESENT, constructorParams, className), false);
-            }
-        }
-    }
+            \}
+        \}
+    \}
 
-    private void assertClassExists(String className) {
+    private void assertClassExists(String className) \{
         Assert.assertTrue(String.format(CLASS_NOT_PRESENT, className),
                 Classes.allClasses.containsKey(className));
-    }
-}
-```
+    \}
+\}
 [/input]
 [output]
-```
 Test Passed!
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 import org.junit.Assert;
 import org.junit.Test;
 
-public class T00_TestClassesExists {
+public class T00_TestClassesExists \{
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "'%s' should inherit from '%s'!";
 
     @Test
-    public void validateTypesExist() {
-        String[] classTypesToAssert = new String[]{
+    public void validateTypesExist() \{
+        String\[\] classTypesToAssert = new String\[\]\{
                 "Bulgarian",
                 "European",
                 "Chinese",
-        };
+        \};
 
         Class expectedParentClass = getType("BasePerson");
 
-        for (String classType : classTypesToAssert) {
+        for (String classType : classTypesToAssert) \{
             String message = String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, classType, expectedParentClass.getName());
 
             Class childClass = getType(classType);
             Class parentClass = childClass.getSuperclass();
 
             Assert.assertEquals(message, expectedParentClass, parentClass);
-        }
-    }
+        \}
+    \}
 
-    private static Class getType(String name) {
+    private static Class getType(String name) \{
         Class clazz = Classes.allClasses.get(name);
 
         return clazz;
-    }
-}
-```
+    \}
+\}
 [/input]
 [output]
-```
 Test Passed!
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -2391,7 +2374,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Modifier;
 import java.util.HashMap;
 
-public class TestConstructorModifier {
+public class TestConstructorModifier \{
 
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
     private static final String METHOD_NOT_PRESENT_ERROR_MESSAGE = "Method '%s' not present in class '%s'";
@@ -2401,12 +2384,12 @@ public class TestConstructorModifier {
 
     private static final String BASE_PERSON = "BasePerson";
 
-    private static final HashMap<String, Class[]> constructorParameters = new HashMap<String, Class[]>() {{
-        put(BASE_PERSON, new Class[]{String.class});
-    }};
+    private static final HashMap\<String, Class\[\]\> constructorParameters = new HashMap\<String, Class\[\]\>() \{\{
+        put(BASE_PERSON, new Class\[\]\{String.class\});
+    \}\};
 
     @Test
-    public void test() throws NoSuchMethodException {
+    public void test() throws NoSuchMethodException \{
 
         assertClassExists(BASE_PERSON);
 
@@ -2416,14 +2399,13 @@ public class TestConstructorModifier {
         Constructor constructor = basePersonClass.getDeclaredConstructor(constructorParameters.get(BASE_PERSON));
 
         Assert.assertTrue(Modifier.isProtected(constructor.getModifiers()));
-    }
+    \}
 
-    private void assertClassExists(String className) {
+    private void assertClassExists(String className) \{
         Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
                 Classes.allClasses.containsKey(className));
-    }
-}
-```
+    \}
+\}
 [/input]
 [output]
 Test Passed!
