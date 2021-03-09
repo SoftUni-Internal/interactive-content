@@ -4,7 +4,7 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-35-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In this lesson you learned:
+## In this lesson, you learned:
 
 **Functional Context** - the object from which the code originated is its default context. 
 
@@ -26,14 +26,18 @@ console.log(praise.apply(dog,
 ));
 ```
 
-- ``bind()`` - creates a **new function**. Allows objects to borrow methods from other objects without us having to manually make copies of that method
+- ``bind()`` - creates a **new function**. 
+
+Allows objects to borrow methods from other objects without us having to manually make copies of that method
 
 **Internal** Object Properties that allow you to modify how the object properties will behave: 
-  - **enumerable**, **configurable** and **writable**
-  - **seal** and **freeze** that deal with the object's **immutability**
+
+- **Enumerable**, **configurable** and **writable**
+
+- **Seal** and **freeze** that deal with the object's **immutability**
 
 
-## In the next lesson you will learn:
+## In the next lesson, you will learn:
 - **Advanced Functions** - what are first-class and higher-order functions
 
 - Currying and Partial Application

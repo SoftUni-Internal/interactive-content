@@ -281,7 +281,7 @@ The output should be **returned** as an **array of objects**. Each object has **
 [
   { area: ${area1}, volume: ${volume1} },
   { area: ${area2}, volume: ${volume2} },
-  . . .
+  ...
 ]
 
 ```
@@ -298,7 +298,7 @@ area, vol, '[
 {"x":"7","y":"7","z":"10"}, 
 {"x":"5","y":"2","z":"10"} 
 ]'
-```            
+```
 
 **Output**
 

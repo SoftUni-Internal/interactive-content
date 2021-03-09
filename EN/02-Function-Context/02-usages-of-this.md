@@ -137,22 +137,20 @@ You can test it yourself by creating an HTML file with the following example cod
 
 ```js
 <html>
-<body>
-    <p>Welcome to your code playground!</p>
-
-    <button id="button">Click me</button>
-
-    <script>
-        function solve() {
-            let button = document.getElementById('button');
-
-            button.addEventListener('click', function (e) {
-                console.log(this);
-            });
-        }
-        solve();
-    </script>
-</body>
+   <body>
+      <p>Welcome to your code playground!</p>
+      <button id="button">Click me</button>
+      <script>
+         function solve() {
+             let button = document.getElementById('button');
+         
+             button.addEventListener('click', function (e) {
+                 console.log(this);
+             });
+         }
+         solve();
+      </script>
+   </body>
 </html>
 ```
 

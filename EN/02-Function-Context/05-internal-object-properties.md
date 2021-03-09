@@ -38,7 +38,7 @@ Output:
 
 - **Configurable** - used to modify the behavior of the property
 
-Setting **configurable: false** makes it so that the property  cannot be deleted. 
+Setting **configurable: false** makes it so that the property cannot be deleted. 
 
 Only properties that are **configurable**  can be deleted.
 
