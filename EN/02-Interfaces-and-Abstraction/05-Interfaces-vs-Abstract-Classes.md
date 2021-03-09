@@ -5,7 +5,16 @@
 
 Once again, let us see the main differences between `Interfaces` and `Abstract` classes.
 
-[image assetsSrc="Interfaces-And-Abstraction-example(4).png" /]
+## Interfaces vs Abstract Classes
+
+|**Interface**|**Abstract Class**|
+|---|---|
+|In the interface, we can only have abstract methods. From Java 8 we can have also static and default methods.|Abstract method can have both abstract and non-abstract methods.|
+|Interface **cannot** provide the implementation of an abstract class.|Abstract class can provide the implementation of all abstract methods in the interface.|
+|Interface can have only **public**, **static** and **final** variables.|Abstract class can have all types of variables: final, non-final, static, non-static, public, private etc.|
+|Interface can have only public class members as interface data members are **public** by default.|An abstract class can have class members as private, protected, public, etc.|
+|Interface can be implemented by using the "interface" keyword and need to provide the implementation for all the methods declared in the interface.|An abstract class can be using the "extend" keyword and need to provide the implementation of all declared methods in the parent or abstract class.|
+|Interface can extend only another interface.|An abstract class can extend another Java class implements multiple interfaces.|
 
 
 From that chart we can assume that we can use `interfaces` when we need to achieve **multiple inheritance**, **full abstraction** by implementing all methods declared in the interface by a class which implements the interface.
@@ -57,16 +66,10 @@ The input will always be valid, no need to check it explicitly!
 The driver's name may contain any ASCII characters.
 
 
-# Examples
-
-## Example 1
+## Examples
 | **Input** | **Output** |
 | --- | --- |
 | Dominic Toretto | 488-Spider/Brakes!/brum-brum-brum-brrrrr/Dominic Toretto |
-
-## Example 2
-| **Input** | **Output** |
-| --- | --- |
 | Brian O'Conner | 488-Spider/Brakes!/brum-brum-brum-brrrrr/Brian O'Conner |
 
 [/task-description]

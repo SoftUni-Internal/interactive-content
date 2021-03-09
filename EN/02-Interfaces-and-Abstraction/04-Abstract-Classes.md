@@ -146,9 +146,8 @@ The output of your program should consist of all detained **Ids** each on a sepa
 
 [image assetsSrc="interfaces-and-abstraction-example(9).png" /]
 
-# Examples
 
-## Example 1
+## Example One
 | **Input** | **Output** |
 | --- | --- |
 | Peter 22 9010101122 | 9010101122 |
@@ -157,7 +156,7 @@ The output of your program should consist of all detained **Ids** each on a sepa
 | End |  |
 | 122 |  |
 
-## Example 2
+## Example Two
 | **Input** | **Output** |
 | --- | --- |
 | Teo 31 7801211340 | 7801211340 |
