@@ -4,13 +4,13 @@
 
 # Project Setup
 
-"Cubicle" is a place, where you can browse some of the most popular Rubik's cubes in the world and add some new cubes that you have discovered.
+"**Cubicle**" is a place, where you can browse some of the most popular Rubik's cubes in the world and add some new cubes that you have discovered.
 
 This is the final part of the workshop, so if you missed some parts, make sure you complete them before you continue because all parts of this workshop are related to each other.
 
 # Main Task
 
-As a final step, you should implement some validation, notification to improve the user experience and protect the data that is stored in the database.
+As a final step, you should implement some **validation**, **notification** to **improve the user experience** and **protect the data** that is **stored in the database**.
 
 # Installing Dependencies
 
@@ -21,25 +21,25 @@ You can use [express-validator](https://www.npmjs.com/package/express-validator)
 [slide hideTitle]
 # User Validations
 
-Before some user register or login, implement the following validations:
+Before some user **register** or **login**, implement the following validations:
 
 - Username
 
-   - Should be **unique** \(add `unique: true` property to each **User Model** username\).
+   - Should be **unique** \(add `unique: true` property to each **User Model** username\)
 
-   - Should consist only with **English letters** and **digits**.
+   - Should consist only with **English letters** and **digits**
 
-   - Should be at least **5 characters** long.
+   - Should be at least **5 characters** long
 
 - Password
 
-   - Should consist only with **English letters** and **digits**.
+   - Should consist only with **English letters** and **digits**
 
-   - Should be at least **8 characters** long.
+   - Should be at least **8 characters** long
 
 - Re\-Password
 
-   - Should be the **same** as the given password.
+   - Should be the **same** as the given password
 
 [image assetsSrc="JS-Web-Validation-And-Error-Handling-1.png" /]
 
@@ -55,15 +55,15 @@ The **cube** and **accessory** forms also should have some validation:
 
 - **Name**:
 
-   - At least **5 characters** long, who could be **English letters**, **digits** and **whitespaces**.
+   - At least **5 characters** long, who could be **English letters**, **digits** and **whitespaces**
 
 - **Description**:
 
-   - At least 20 characters, who could be **English letters**, **digits** and **whitespaces**.
+   - At least 20 characters, who could be **English letters**, **digits** and **whitespaces**
 
 - **ImageUrl**:
 
-   - Referring to actual picture \(starts with `http://...` or `https://...`\).
+   - Referring to actual picture \(starts with `http://...` or `https://...`\)
 
 [image assetsSrc="JS-Web-Validation-And-Error-Handling-3.png" /]
 
@@ -91,7 +91,7 @@ Check the picture below:
 
 [image assetsSrc="JS-Web-Validation-And-Error-Handling-5.png" /]
 
-Also, you should append the following styles into the **site.css** file:
+Also, you should append the following styles into the `site.css` file:
 
 [image assetsSrc="JS-Web-Validation-And-Error-Handling-6.png" /]
 
