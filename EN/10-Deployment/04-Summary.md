@@ -2,7 +2,7 @@
 
 # Summary
 
-# In this lesson you learnt:
+# In this lesson you learned:
 
 - Heroku is a Platform-as-a-Service solution
   - Heroku CLI is used together with Git to manage and scale applications, provision add-ons, and many more features

@@ -14,7 +14,7 @@ Open a command\-line window and type in:
 
 If the output shows a **version number**, you are **ready to go**.
 
-In case your command goes ** unrecognized**, proceed to the following steps.
+In case your command goes **unrecognized**, proceed to the following steps.
 
 ## Installing on Windows
 
@@ -30,7 +30,7 @@ Alternatively, you can [install GitHub Desktop](https://desktop.github.com/), wh
 
 Installing Git on **macOS** requires **Homebrew**.
 
-To install Homebrew, open **Terminal** and paste in:
+To install **Homebrew**, open **Terminal** and paste in:
 
 `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
@@ -68,9 +68,9 @@ You can **download** Heroku [here](https://devcenter.heroku.com/articles/getting
 
 Choose the installer for your operating system and follow the setup process.
 
-An **account** is required to use Heroku.
+An **account** is required to use **Heroku**.
 
-Inside the CLI, type in `heroku login`.
+Inside the **CLI**, type in `heroku login`.
 
 This command will open a **login page** in your default browser.
 
