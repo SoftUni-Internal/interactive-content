@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Instrucțiunea Switch-case
 
-[vimeo-video]
-[stream language="EN" videoId="486873288/8055a584f1" default /]
-[stream language="RO" videoId="486873288/8055a584f1"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-27-28-The-switch-case-statement-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Instrucțiunea de comutare a cazurilor funcționează ca o secvență de blocuri if-else.
 
@@ -38,10 +35,7 @@ switch (selector) {
 
 [slide hideTitle]
 # Cazul implicit
-[vimeo-video]
-[stream language="EN" videoId="486873687/12bb55bdb9" default /]
-[stream language="RO" videoId="486873687/12bb55bdb9"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-29-switch-case-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Cazul implicit specifică secțiunea "**switch**" de executat **dacă expresia de potrivire nu se potrivește cu nici o altă etichetă de caz**.
 
@@ -97,10 +91,7 @@ switch (day) {
 
 [slide hideTitle]
 # Etichete multiple
-[vimeo-video]
-[stream language="EN" videoId="486873816/db58eac4b4" default /]
-[stream language="RO" videoId="486873816/db58eac4b4"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-30-31-Multiple-Labels-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În **JS** avem posibilitatea de a utiliza `cazuri` **multiple** în construcția "**switch-case**", atunci când trebuie să execute **același cod**.
 
@@ -125,10 +116,7 @@ switch (selector) {
 
 [slide hideTitle]
 # Exemplu: Tipul de animal
-[vimeo-video]
-[stream language="EN" videoId="486873964/be087efd1c" default /]
-[stream language="RO" videoId="486873964/be087efd1c"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-32-Multiple-Labels-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Scrieți un program care tipărește tipul animalului în funcție de numele acestuia:
 - dog \-\> **mammal**

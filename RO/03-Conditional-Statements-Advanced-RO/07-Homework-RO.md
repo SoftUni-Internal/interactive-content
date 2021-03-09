@@ -323,10 +323,7 @@ Vowel
 
 [slide hideTitle]
 # Problemă cu soluție: Product of 3 Numbers
-[vimeo-video]
-[stream language="EN" videoId="486874673/6eb04e1bbf" default /]
-[stream language="RO" videoId="486874673/6eb04e1bbf"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/problem1-product-of-3-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Product of 3 Numbers" taskId="pb-js-Conditions-Advanced-Product-of-3-numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -426,10 +423,7 @@ zero
 
 [slide hideTitle]
 # Problemă cu soluție: Sorted Numbers
-[vimeo-video]
-[stream language="EN" videoId="486875734/a16fef14e3" default /]
-[stream language="RO" videoId="486875734/a16fef14e3"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/problem2-sorted-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sorted Numbers" taskId="pb-js-Conditions-Advanced-Sorted-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

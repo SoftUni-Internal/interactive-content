@@ -4,10 +4,7 @@
 
 [slide hideTitle]
 # Condiții mai complexe
-[vimeo-video]
-[stream language="EN" videoId="486871142/63e6f30a5a" default /]
-[stream language="RO" videoId="486871142/63e6f30a5a"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-19-20-21-Logical Operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Să aruncăm o privire la modul în care putem crea mai multe**condiții logice complexe**în programare.
 Putem folosi:
@@ -37,10 +34,7 @@ Vom explica operatorii logici ** **"ȘI"** (`&&`), **"SAU"** (`||`) și **"NU"**
 
 [slide hideTitle]
 # Operatorul logic "ȘI" 
-[vimeo-video]
-[stream language="EN" videoId="486871442/f9e84d4655" default /]
-[stream language="RO" videoId="486871442/f9e84d4655"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-22-Logical-and-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 După cum am văzut,în unele probleme trebuie să facem **multe verificări simultan**.
 
@@ -142,6 +136,8 @@ if (x >= x1 && x <= x2 && y >= y1 && y <= y2) {
 [slide hideTitle]
 # Problemă cu soluție: Bonus Points
 
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-23-Problem-and-Solution-Bonus-Points-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Bonus Points" taskId="pb-js-conditional-statements-advanced-Bonus-Points" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -210,10 +206,7 @@ bonusPoints(1)
 [slide hideTitle]
 # Operator logic "SAU" 
 
-[vimeo-video]
-[stream language="EN" videoId="488463195/decef19bc9" default /]
-[stream language="RO" videoId="488463195/decef19bc9"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-24-25-Logical-or-and-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Logica **OR** (operator `||`) înseamnă că **cel puțin una** dintre câteva condiții este îndeplinită.
 
@@ -261,11 +254,6 @@ Ajungând la `b`, înțelege că are o valoare `adevărată` și întreaga **exp
 
 [slide hideTitle]
 # Problemă cu soluție: Food or Drink
-
-[vimeo-video]
-[stream language="EN" videoId="488477836/b40ae06b15" default /]
-[stream language="RO" videoId="488477836/b40ae06b15"  /]
-[/video-vimeo]
 
 [code-task title="Food or Drink" taskId="pb-js-conditional-statements-advanced-Food-or-Drink" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -348,10 +336,7 @@ unknown
 [slide hideTitle]
 # Operatorul logic "NU"
 
-[vimeo-video]
-[stream language="EN" videoId="486872932/bae112a39e" default /]
-[stream language="RO" videoId="486872932/bae112a39e"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-26-Logical-not-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Negarea logică (operator `!`) înseamnă că o condiție dată nu este** îndeplinită.**
 

@@ -5,10 +5,7 @@
 [slide hideTitle]
 # Ce este o matrice? 
 
-[vimeo-video]
-[stream language="EN" videoId="487119167/37fe7bf771" default /]
-[stream language="RO" videoId="487119167/37fe7bf771"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-9-10-What-is-an-Array-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 Știm deja cum să memoram o singură valoare într-o variabilă. Matricele ne permit să memorăm mai multe valori într-o singură variabilă. 

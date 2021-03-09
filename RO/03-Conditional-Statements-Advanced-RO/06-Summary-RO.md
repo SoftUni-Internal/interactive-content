@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Rezumat
 
-[vimeo-video]
-[stream language="EN" videoId="486874488/8ad9f383d6" default /]
-[stream language="RO" videoId="486874488/8ad9f383d6"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-54-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## În această lecție ați învățat:
 

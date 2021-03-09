@@ -3,10 +3,7 @@
 [slide hideTitle]
 
 # Exemplu de viață reală: Piață
-[vimeo-video]
-[stream language="EN" videoId="486868933/73495d8863" default /]
-[stream language="RO" videoId="486868933/73495d8863"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-6-7-8-Real-Life-Example-Marketplace-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [image assetsSrc="03-conditional-statements-advanced-example.png" /]
 
