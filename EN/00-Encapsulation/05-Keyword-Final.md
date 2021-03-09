@@ -11,8 +11,9 @@
 ```java
 public class Animal {}
 public final class Mammal extends Animal {}
+
 public class Cat extends Mammal {}
-// Can not be done
+// Cannot be done
 ```
 
 **Final methods cannot be overridden:**
@@ -29,7 +30,7 @@ public class Mammal extends Animal {
 
 **A final variable's value cannot be changed once it is set.**
 
-When we declare a field as `final` it is like creating a `constant` but we can give it a value in the constructor.
+When we declare a field as `final` it is like creating a constant, but we assign a value to it in the constructor.
 
 ```java
 private final String name;
