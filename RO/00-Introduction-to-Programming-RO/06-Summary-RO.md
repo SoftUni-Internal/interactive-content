@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Rezumat
 
-[vimeo-video]
-[stream language="EN" videoId="486836367/d4732dbdec" default /]
-[stream language="RO" videoId="486836367/d4732dbdec"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-52-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În această lecție am învățat:
 

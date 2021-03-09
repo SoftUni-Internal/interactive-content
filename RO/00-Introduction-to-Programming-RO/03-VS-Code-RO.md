@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Medii de dezvoltare (IDE) 
 
-[vimeo-video]
-[stream language="EN" videoId="486835445/ac9f325729" default /]
-[stream language="RO" videoId="486835445/ac9f325729"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-17-18-19-Integrated-Development-Environments-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a programa, avem nevoie de un **mediu de dezvoltare integrat** (IDE).
 
@@ -46,10 +43,7 @@ Acesta este un exemplu al modului în care arată acest IDE (codul Visual Studio
 [slide hideTitle]
 # Instalare Node.js and Visual Studio Code
 
-[vimeo-video]
-[stream language="EN" videoId="486835484/98228c39ea" default /]
-[stream language="RO" videoId="486835484/98228c39ea"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-20-21-22-Installing-NodeJS-and-Visual-Studio-Code-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Avem nevoie de **Node.js**, astfel încât să putem executa cod JavaScript în afara unui browser.
 
@@ -115,10 +109,7 @@ Asta e tot. Sunteți gata să lucrați cu Visual Studio Code.
 [slide hideTitle]
 # Medii de dezvoltare: desktop și online
 
-[vimeo-video]
-[stream language="EN" videoId="486835538/7662f7e6ca" default /]
-[stream language="RO" videoId="4486835538/7662f7e6ca"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-23-Development-Environments-Desktop-And-Online-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Instalați codul Microsoft Visual Studio
 
@@ -143,10 +134,7 @@ IDE alternativ (online)
 [slide hideTitle]
 # Ce este codul Visual Studio
 
-[vimeo-video]
-[stream language="EN" videoId="486835601/f6d36a44eb" default /]
-[stream language="RO" videoId="486835601/f6d36a44eb"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-25-What-is-Visual-Studio-Code-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Visual Studio Code este un editor de cod sursă deschis.
 
@@ -163,10 +151,7 @@ Acest lucru îi permite să funcționeze ca un editor **cross-language** pentru 
 [slide hideTitle]
 # Rularea VSC și a extensiilor recomandate
 
-[vimeo-video]
-[stream language="EN" videoId="486835722/828f778f35" default /]
-[stream language="RO" videoId="486835722/828f778f35"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-27-28-Running-VSC-and-recommended-extensions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Visual Studio Code are multe extensii care ne pot face fluxul de lucru mai plăcut.
 
@@ -187,10 +172,7 @@ Noi folosim diferite extensii în funcție de tipul de proiect la care lucrăm.
 [slide hideTitle]
 # Proiecte în VSC
 
-[vimeo-video]
-[stream language="EN" videoId="486835793/082e4ffd04" default /]
-[stream language="RO" videoId="486835793/082e4ffd04"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-29-30-Projects-in-VSC-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Videoclipul de mai sus arată cum putem configura un proiect de bază.
 

@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Limbaje de programare
 
-[vimeo-video]
-[stream language="EN" videoId="486835179/05cf7da9f0" default /]
-[stream language="RO" videoId="486835179/05cf7da9f0"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-13-14-Programming-Languages-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Un limbaj de programare este un **limbaj artificial** pentru emiterea comenzilor pe care dorim ca calculatorul să le **citească**, **să le proceseze** și **să le execute**.
 
@@ -36,10 +33,7 @@ Interpretorul  este `un program pentru executarea programelor`.
 
 # Limba JavaScript
 
-[vimeo-video]
-[stream language="EN" videoId="486835254/ca97b0af6b" default /]
-[stream language="RO" videoId="4486835254/ca97b0af6b"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-15-The-JavaScript-Language-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 JavaScript este**bazat pe prototip**, **multi-paradigmă**, **limbaj dinamic**.
 
@@ -60,10 +54,7 @@ Suportă programarea **imperativă**, **funcțională** și **orientată pe obie
 [/slide]
 [slide hideTitle]
 # Execuție JavaScript
-[vimeo-video]
-[stream language="EN" videoId="486835379/12b65918cb" default /]
-[stream language="RO" videoId="486835379/12b65918cb"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-16-JavaScript-Execution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 După cum am menționat deja, un program este o **secvență de comenzi**.
 

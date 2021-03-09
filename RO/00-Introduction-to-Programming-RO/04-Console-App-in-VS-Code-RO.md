@@ -2,10 +2,7 @@
 [slide]
 # Erori tipice în programele JavaScript
 
-[vimeo-video]
-[stream language="EN" videoId="486836214/5c609fb0fb" default /]
-[stream language="RO" videoId="486836214/5c609fb0fb"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-30-31-Creating-a-console-application-in-VSC-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Virtual Studio Code are o modalitate de a ne arăta majoritatea erorilor de bază pe care le putem face.
 

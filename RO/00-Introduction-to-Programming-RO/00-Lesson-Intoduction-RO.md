@@ -6,10 +6,7 @@
 
 # Conținutul lecției
 
-[vimeo-video]
-[stream language="EN" videoId="489879790/8300ace394" default /]
-[stream language="RO" videoId="489879790/8300ace394"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/Interactive-JS-PB-Intorduction-to-programming-1-2-Introduction-Table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## În această lecție veți învăța:
 

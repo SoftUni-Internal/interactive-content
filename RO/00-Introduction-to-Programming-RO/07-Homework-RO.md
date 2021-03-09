@@ -5,6 +5,9 @@
 [slide hideTitle]
 
 # Problemă cu soluție: Print Hello "JavaScript"
+
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/problem1-print-hello-javascript_1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Print Hello Javascript" taskId="pb-js-introduction-Print-Hello-Javascript" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
 ```
@@ -36,6 +39,9 @@ Hello JavaScript
 [slide hideTitle]
 
 #  Problemă cu soluție: Calculate and Print 5 * 5
+
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/problem2-calculate-and-print-5times5-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Calculate and Print 5 * 5" taskId="pb-js-introduction-Calculate-and-Print" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
 ```
