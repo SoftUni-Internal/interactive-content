@@ -18,9 +18,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You will be given a count of wagons in a train **n**. 
+You will be given a count of wagons in a train represented as **n**. 
 
-On the next **n lines**, you will receive how many people are going to get on that wagon. 
+On the next **n lines**, you will receive the amount of people that are going to get on that wagon. 
 
 In the end **print the whole train** and after that the **sum of the people on the train**.
 
@@ -149,7 +149,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that prints **common elements** in **two arrays**.
+Create a program that prints the **common elements** in **two arrays**.
 
 You have to **compare the elements** of the **second array** to the elements of the **first**.
 
@@ -256,13 +256,13 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that creates **2 arrays**.
+Create a program that creates **2 arrays**.
 
 You will be given an **integer n**.
 
 On the **next n lines**, you will get **2 integers**.
 
-Form 2 arrays as **shown below**.
+Form 2 new arrays in a **zig-zag** pattern as **shown below**.
 
 ### Example
 | **Input** | **Output** |
@@ -380,9 +380,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that **receives an array and a number of rotations** you have to perform.
+Create a program that **receives an array and a number of rotations** that you have to perform.
 
-Rotations are done by switching the element on the first index with the element at the last index.
+The rotations are done by switching the element on the first index with the element at the last index.
 
 **Print the resulting** array.
 
@@ -489,7 +489,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program to **find all the top integers** in an array.
+Create a program to **find all the top integers** in an array.
 
 A top integer is an integer that is **bigger** than all the elements **to its right**.
 
@@ -586,7 +586,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that determines if there **exists an element in the array** such that the **sum of the elements on its left** is **equal** to **the sum of the elements on its right**.
+Create a program that determines if **an element exists in the array** such that the **sum of the elements on its left** is **equal** to **the sum of the elements on its right**.
 
 If there are **no elements to the left or right**, their **sum is considered to be 0**.
 
@@ -739,9 +739,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that **finds the longest sequence of equal elements in an array** of integers.
+Create a program that **finds the longest sequence of equal elements in an array** of integers.
 
-If **several longest sequences exist**, print the **leftmost** one.
+If **several sequences exist**, print the **leftmost** sequence.
 
 ### Example
 | **Input** | **Output** |
@@ -894,7 +894,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which **prints all unique pairs** in an array of integers whose **sum is equal to a given number**.
+Create a program, which **prints all unique pairs** in an array of integers whose **sum is equal to a given number**.
 
 ### Example
 | **Input** | **Output** |
@@ -1006,9 +1006,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You are given a **field size** and the **indexes of ladybugs** inside the field.
+You are given a **field size** and the **indexes of ladybugs** that on the field.
 
-After that on every new line, until the "**end**" command is given, a ladybug **changes its position** either to its **left** or to its **right** by a given fly length.
+On every new line, until the "**end**" command is given, a ladybug **changes its position** either to its **left** or to its **right** by a given **fly length**.
 
 A **command** to a ladybug looks like this: "0 right 1".
 
@@ -1018,7 +1018,7 @@ If the ladybug **lands on a fellow ladybug**, it **continues to fly in the same 
 
 If the ladybug **flies out of the field**, it is **gone**.
 
-For example, imagine you are given a **field with size 3** and ladybugs on indexes **0 and 1**.
+Example: you are given a **field with size 3** and ladybugs on indexes **0 and 1**.
 
 If the ladybug **on index 0 needs to fly to its right by the length of 1** (0 right 1) it will attempt to **land on index 1** but as there is **another ladybug** there it will continue further to the right by additional length of 1, landing on **index 2**.
 
@@ -1028,9 +1028,7 @@ If you are given ladybug **index that does not have ladybug** there, **nothing**
 
 If you are given ladybug index that is **outside the field**, **nothing** happens.
 
-Your job is to create the program, simulating the ladybugs flying around doing nothing.
-
-In the end, **print all cells** in the field **separated** by **blank spaces**.
+In the end, **print all cells** on the field **separated** by **blank spaces**.
 
 For each cell that has a ladybug on it print '1' and for each empty cell print '0'.
 
