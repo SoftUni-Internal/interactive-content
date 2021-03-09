@@ -247,7 +247,7 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# # Descriere
+# Descriere
 Creați un program pentru a verifica dacă o  anumită literă  este o vocală sau o consoană:
 
 *Veți primi **literă** din alfabetul englez
