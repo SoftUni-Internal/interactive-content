@@ -46,7 +46,7 @@ A **number** is **special** when the **sum of its digits is 5, 7, or 11**.
 
 Create a program to read an integer **n**. 
 
-For all numbers in range **1…n**, print the number. If it is special or not - **(True / False)** in the format belowЦан.
+For all numbers in range **1…n**, print the number. If it is special or not - **(True / False)** in the format below.
 
 ## Example
 | **Input** | **Output** |
