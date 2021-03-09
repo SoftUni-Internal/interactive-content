@@ -7,21 +7,21 @@
 
 ## In this lesson you will learn:
 
-**1. The While-Loop in Java**
+**1. While-Loop**
 
-- How we use While-Loop
+- What a **While-loop** is and how we can use it
 
-**2. While or For Loops**
+**2. While-loop and For-loop**
 
-- Difference between While and For loops
+- The difference between **While-loop** and **For-loop**
 
 **3. The Break operator**
 
-- When we use **Break** operator
+- What a **Break** operator is and when we can use it
 
 **5. Infinity While Loops**
 
-- What are **Infinity Loops** and how to safe-use them
+- What **Infinity Loops** are and how we can use them
 
 **6. Practical Exercises**
 
