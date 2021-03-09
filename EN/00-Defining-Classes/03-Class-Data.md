@@ -109,7 +109,7 @@ The **package-private** access modifier means that only code inside the class or
 
 It provides more accessibility than the **private** modifier.
 
-However, it is **more restrictive** than **protected** and **public**.
+The **Package-private** access modifier is **more restrictive** than **protected** and **public**.
 
 The **protected** access modifier is accessible within and outside the package but only through **inheritance**.
 
