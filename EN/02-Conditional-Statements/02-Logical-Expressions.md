@@ -25,7 +25,7 @@ When compared, the result is a Boolean value `true` or `false`, depending on whe
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-10-13-logical-expressions-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Examples of such an expression are as follows:
+Examples of such expressions are:
 ```java live
 int a = 5;
 int b = 10;
@@ -77,5 +77,4 @@ String b = "hello";
 System.out.println(a.equals(b)); // true
 System.out.println(a < b); // error
 ```
-A string is an object and every object has an instance, but this is a knowledge we will acquire later on throughout the course.
 [/slide]
