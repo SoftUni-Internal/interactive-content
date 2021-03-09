@@ -16,7 +16,7 @@ This principle does not count if we are fixing bugs, only then we should modify 
 
 [slide hideTitle]
 
-# Open Closed Principal - Example
+# Open Closed Principle - Example
 
 In the following example, we have the **CalculateArea** class which calculates the area of various shapes.
 
@@ -191,7 +191,7 @@ As well as applying it **reduces the risk of introducing new bugs** to existing 
 
 [slide hideTitle]
 
-# Open Close Principle - Soultions
+# Open Close Principle - Solutions
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-14-ocp-silutions-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
