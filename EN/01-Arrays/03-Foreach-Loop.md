@@ -4,13 +4,13 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-18-19-20-For-each-loop-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-`For-each` is another array traversing technique like `for` loop, `while` loop, `do-while` loop introduced in Java.
+`For-each` is another array traversing technique like the **for-loop**, the **while-loop** and the **do-while-loop** introduced in Java.
 
-It starts with the keyword `for` like a normal `for` loop.
+It starts with the keyword `for` like a normal **for-loop**.
 
-Instead of declaring and initializing a loop counter variable, you declare a variable that is the same type as the base type of the array, followed by a colon (**:**), which is then followed by the name of the array.
+Instead of declaring and initializing a loop counter variable, we declare a variable that is the same type as the base type of the array, followed by a colon (**:**), which is then followed by the name of the array.
 
-In the loop body, you cannot access the current index, but you can use the loop variable you created rather than using an indexed array element.
+In the loop body, we cannot access the current index but we can use the loop variable we have created rather than using an indexed array element.
 
 It is commonly used to iterate over an array.
 
@@ -26,7 +26,7 @@ for (int variableName : arrayName) {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-18-19-20-For-each-loop-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We can **print** an array with **for-each**:
+We can **print** the elements of an array with **for-each**:
 
 ```Java live
 int[] numbers = { 1, 2, 3, 4, 5 };
@@ -35,7 +35,7 @@ for (int number : numbers) {
 }
 ```
 
-One thing to note here, is that you would not be able to manipulate the elements of an array while iterating with **for-each**. 
+One thing to note here, is that we would not be able to manipulate the elements of an array while iterating with **for-each**. 
 
 [/slide]
 
@@ -59,7 +59,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that calculates the difference between the sum of the even and the sum of the odd numbers in an array.
+Create a program that calculates the difference between the **sum of the even** and the **sum of the odd** numbers in an array.
 
 ## Examples
 |**Input**|**Output**|**Comments**|
@@ -164,9 +164,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program to read **an array of integers** and condense them by **summing** adjacent couples of elements until a **single integer** remains.
+Create a program to read **an array of integers** and condense them by **summing** the adjacent couples of elements until a **single integer** remains.
 
-For example, if we have 3 elements \{2, 10, 3\}, we sum the first two and the second two elements and get \{2+10, 10+3\} = \{12, 13\}, then we sum again all adjacent elements and this results in \{12+13\} = \{25\}.
+For example, if we have 3 elements \{2, 10, 3\}. We sum the first two and the second two elements and get \{2+10, 10+3\} = \{12, 13\}, then we sum again all adjacent elements and this results in \{12+13\} = \{25\}.
 
 ## Examples
 |**Input**|**Output**| **Comments** |
