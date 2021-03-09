@@ -36,7 +36,7 @@ System.out.println(a * b); // 35
 **Dividing** numbers is done using the `/` operator. 
 
 It works differently with **integers** and **floating point numbers**.
-* When we divide two integers, **integer division** is applied, and the obtained output will not contan a fractional part.
+* When we divide two integers, **integer division** is applied, and the obtained output will not contain a fractional part.
   * Example: `11 / 3 = 3`
 * When we divide two numbers and at least one of them is a **float** number, **floating division** is applied, and the obtained result is a float number. 
   * Example: `11 / 4.0 = 2.75`
