@@ -1,5 +1,5 @@
 [slide hideTitle]
-# While Loop
+# While-Loop
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/EN/Java-While-Loops-5-6-7-While-Loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -67,10 +67,10 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which:
+Create a program that:
 
 * Reads a number from the console
-* Prints the numbers starting from the number to 1 (**inclusive**)
+* Prints all the numbers between the **input number** and **1** (**inclusive**), each on a new line
 ## Example
 
 | **Input** | **Output** |
@@ -120,11 +120,11 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which:
+Create a program that:
 
 * Reads a **number** from the console
 * Checks if the number is in the range between **1 and 100**
-* If it isn't - it reads a **new one**
+* If it is not in the range - reads a **new number**
 * If it is - **prints the number** and the program stops
 
 ## Example
