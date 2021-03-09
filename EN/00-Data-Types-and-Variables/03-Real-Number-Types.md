@@ -1,15 +1,15 @@
 # Real Number Types
 
 [slide hideTitle]
-# Floating-Point Types?
+# Floating-Point Types
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-18-21-real-number-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-You should use a **floating-point type** whenever you need a number with a decimal, such as 9.99 or 3.14515.
+**Floating-point types** are used when we store a decimal number, such as 9.99 or 3.14515.
 
 Floating-point types also:
 
-- Have range and precision depending on the memory used
+- Have a specific range and precision depending on the memory used
 - Sometimes behave abnormally in the calculations
 - May hold very small and very big values like **0.00000000000001** and **100000000000000000000000000.0**
 
@@ -34,7 +34,7 @@ System.out.println(myNum);
 
 The **default value** of **float** is **0.0F**.
 
-- **Double**: in this course when we need floating-point numbers, we are going to use **double** most of the time
+- **Double**: We are going to use **double** most of the time
 
 ```java live
 double myNum = 19.99;
@@ -57,9 +57,9 @@ System.out.println("Double PI is: " + doublePI);
 
 **NOTE**: The `f` suffix in the first statement!
 
-- Real numbers are interpreted as double by default
+- Real numbers are interpreted as **double** by default
 
-- You should explicitly convert them to float
+- You should explicitly convert them to **float**
 [/slide]
 
 [slide hideTitle]
@@ -81,9 +81,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that converts British pounds to US dollars. 
+Create a program that converts British pounds into US dollars. 
 
-The result should be formatted to 2 decimal places.
+The result should be formatted up to the 2nd decimal place.
 
 Assume that **1 British Pound = 1.31 Dollars**.
 
@@ -162,13 +162,13 @@ Assume that **1 British Pound = 1.31 Dollars**.
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-23-scientific-notation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-When working with large numbers, scientific notation is exceptionally helpful.
+When working with large numbers, the scientific notation is exceptionally helpful.
 
 In scientific notation, the letter `E` represents `10 to the power of E`. 
 
 For example, `1.51E+1` means the same thing as `1.51x10^1`.
 
-Let us review some examples of scientific notation below.
+Let us review some examples of the scientific notation below.
 
 ```java live
 double exampleVariableOne = 1E+3;
@@ -286,7 +286,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that accepts a count of **n** numbers, calculates and prints their **exact sum** (without rounding).
+Create a program that accepts a count of **n** numbers, calculates and prints their **exact sum** (without rounding).
 
 ## Examples
 | **Input** | **Output** |
