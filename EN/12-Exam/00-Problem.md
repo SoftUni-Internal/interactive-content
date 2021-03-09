@@ -46,23 +46,23 @@ The **Database** of the **Tutorials** application needs to support:
 
 ## User
 
-- **Username**: string (required), unique
+- **Username**: string (**required**), **unique**
 
-- **Password**: string (required)
+- **Password**: string (**required**)
 
 - **Enrolled Courses**: a collection of Courses 
 
 ## Course
 
-- **Title**: string (required), unique
+- **Title**: string (**required**), **unique**
 
-- **Description**: string (required), max length of 50 symbols,
+- **Description**: string (**required**), max length of 50 symbols,
 
-- **Image Url**: string (required),
+- **Image Url**: string (**required**)
 
-- **Duration**: string (required),
+- **Duration**: string (**required**)
 
-- **Created at**: Date or String, (required),
+- **Created at**: Date or String, (**required**)
 
 - **Users Enrolled**: a collection of Users
 
@@ -169,21 +169,21 @@ The **Security Requirements** are mainly **access** requirements.
 
 Configurations about which users can access specific functionalities and pages.
 
-- **Guest** (not logged in) users can access **Home** page and functionality.
+- **Guest** (not logged in) users can access **Home** page and functionality
 
-- **Guest** (not logged in) users can access **Login** page and functionality.
+- **Guest** (not logged in) users can access **Login** page and functionality
 
-- **Guest** (not logged in) users can access **Register** page and functionality.
+- **Guest** (not logged in) users can access **Register** page and functionality
 
-- **Users** (logged in) can access **Home page** (**Listed all Courses**) page and functionality.
+- **Users** (logged in) can access **Home page** (**Listed all Courses**) page and functionality
 
-- **Users** (logged in) can access **Course Details** page and functionality.
+- **Users** (logged in) can access **Course Details** page and functionality
    - **Users** (not course creator) can **Enroll once** for the course
    - **Users** (course creator) can **Edit** and **Delete** the current course
 
-- **Users** (logged in) can access **Create Course** page and functionality.
+- **Users** (logged in) can access **Create Course** page and functionality
 
-- **Users** (logged in) can access **Logout** functionality.
+- **Users** (logged in) can access **Logout** functionality
 
 [/slide]
 
