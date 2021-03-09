@@ -95,7 +95,7 @@ System.out.println(3.5 % 1);
 ```
 It is useful if we want to check whether a number is **even** or **odd**.
 
-If the remainder of dividinga a number by 2 is equal to 0, then the number is even, otherwise it is odd.
+If the remainder of dividing a a number by 2 is equal to 0, then the number is even, otherwise it is odd.
 
 Example: 
 ```java live
