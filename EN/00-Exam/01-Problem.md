@@ -1,5 +1,6 @@
 [slide hideTitle]
 # Problem: Easter Races
+
 [code-task title="Easter Races Business Logic" timeLimit=5000 taskId="Java-OOP-Advanced-Easter-Races" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
 [code-upload allowedMemory="30" /]
 
@@ -9,73 +10,71 @@
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/12-Java-OOP-Advanced-Final-Exam-Business-Logic.zip) **for this task.**
 
-- Upload **only the easterRaces** package in every task **except Unit Tests**
+- Upload **only the easterRaces** package in every task **except** in "**Unit Tests**"
 - **Do not modify the interfaces or their packages**
 - Use **strong cohesion** and **loose coupling**
 - **Use inheritance and the provided interfaces wherever possible**
-  * This includes **constructors, method parameters** and **return types**
+  * this includes **constructors, method parameters** and **return types**
 - **Do not** violate your **interface implementations** by adding **more public methods** in the specific class than the interface has defined
 - Make sure you have **no public fields** anywhere
 
 # Task 1: Structure (50 points)
 
-You are given **8** interfaces, and you have to implement their functionality in the **correct classes.**
+You are given **8** interfaces and you have to implement their functionalities in the **correct classes.**
 
-It is not required to implement your structure with **Engine, ConsoleReader, ConsoleWriter** and etc. 
+It is not required to implement your structure with **Engine, ConsoleReader, ConsoleWriter** and etc., however It is a good practice.
 
-It's good practice but it's not required.
-
-There are **3** types of entities and 3 repositories in the application: **Car, Driver, Race and a Repository for each of them:**
+There are **3** types of entities and 3 repositories in the application: **Car, Driver, Race and a repository for each of them:**
 
 # Car
 
-**BaseCar** is a **base class** for any **type of Car** and it **should not be able to be instantiated.**
+**BaseCar is** a **base class** for any **type of Car** and it **should not be able to be instantiated**. 
 
 ## Data
 
 - **model - String**
-  * if the model **is null, whitespace or less than 4 symbols,** throw an **IllegalArgumentException** with message **"Model \{model\} cannot be less than 4 symbols."**
+  * if the model **is null, whitespace or less than 4 symbols**, this should result in an **IllegalArgumentException** with message "**Model** \{**model**\} **cannot be less than 4 symbols.**"
 
   * all models are unique
 
 - **horsePower - int**
-  * **Every type** of car has different range of valid horsepower. If the horsepower is not in the valid range, throw an **IllegalArgumentException** with message **"Invalid horse power: \{horsepower\}."**
+  * **every type** of car has a different range of valid horsepower. If the horsepower is not in the valid range, throw an **IllegalArgumentException** with message "**Invalid horse power:** \{**horsepower**\}**.**"
 
 - **cubicCentimeters - double**
-  * **Every type of car has different cubic centimeters**
+  * **every type of car has different cubic centimeters**
 
 ## Behavior
 
 `double calculatedRacePoints(int laps)`
 
-The **CalculateRacePoints** calculates the race points in the concrete **Race** with this formula:
+The **CalculateRacePoints** method calculates the points, won from the concrete **Race,** using this formula: 
 
 **cubic centimeters / horsepower * laps**
 
 ## Constructor
 
-A **BaseCar** should take the following values upon initialization:
+The **BaseCar** class should take the following values upon initialization: 
 
 **String model, int horsePower, double cubicCentimeters**
 
 ## Child Classes
 
-There are several concrete types of **Cars:**
+There are several different types of **Car classes**: 
 
 ### MuscleCar
 
-The **cubic centimeters** for this type of car are **5000.**
+For this type of car, the **cubic centimeters are 5000.** 
 
-Minimum **horsepower** is **400** and maximum **horsepower** is **600.**
+The minimum **horsepower is 400**, while maximum **horsepower is 600**. 
 
-If you receive horsepower which is not in the given range throw **IllegalArgumentException** with message **"Invalid horse power: \{horsepower\}."**
+If you receive a horsepower value that is not in the given range, this should result in an IllegalArgumentException with the message: **"Invalid horse power:** \{**horsepower**\}**.**"
 
 ### SportsCar 
-The **cubic centimeters** for this type of car are **3000**. 
+For this type of car, the **cubic centimeters are 3000**. 
 
-Minimum **horsepower** is **250** and maximum **horsepower** is **450.**
+The minimum **horsepower is 200**, while maximum **horsepower is 450**. 
 
-If you receive horsepower which is not in the given range throw **IllegalArgumentException** with message **"Invalid horse power: \{horsepower\}."**
+If you receive a horsepower value that is not in the given range, this should result in an **IllegalArgumentException** with the message: **"Invalid horse power:** \{**horsepower**\}**.**"
 
 # Driver
 
@@ -84,23 +83,23 @@ If you receive horsepower which is not in the given range throw **IllegalArgumen
 ## Data
 
 - **name - String**
-  * if the name **is null**, **empty** or less than **5 symbols** throw an **IllegalArgumentException** with message **"Name \{name\} cannot be less than 5 symbols."**
-  * all names are unique
+  * if the name **is null**, **empty** or less than **5 symbols**, throw an **IllegalArgumentException** with message "**Name** \{**name**\} **cannot be less than 5 symbols.**"
+  * the name is unique
 - **car - Car**
 - **numberOfWins - int**
 - **canParticipate - boolean**
-  * default behaviour is **false**
-  * **Driver** can participate in race, **ONLY** if he has a **Car** (**Car** is not **null**)
+  * the default behaviour is **false**
+  * the **Driver** can participate in race, **ONLY** if he has a **Car** (**Car** is not **null**)
 
 ## Behavior
 
 `void addCar(Car car)`
 
-This method adds a **Car** to the **Driver.** 
+This method adds the given **Car** to the **Driver**. 
 
-If the car is **null**, throw **IllegalArgumentException** with message **"Car cannot be null."**
+If the car is **null**, throw an **IllegalArgumentException** with the message "**Car cannot be null.**"
 
-If the given **Car** is not **null**, set the current **Car** as the given one and after that **Driver** can participate to race.
+If the given **Car** is not **null**, set the current **Car** as the given one the **Driver** can participate in race.
 
 `void winRace()`
 
@@ -119,28 +118,30 @@ A **Driver** should take the following values upon initialization:
 ## Data
 
 - **name - String**
-  * If the name is **null**, **empty** or less than **5 symbols** throw an **IllegalArgumentException** with message **"Name \{name\} cannot be less than 5 symbols."**
-  * All names are unique
+  * if the name is **null**, **empty** or less than **5 symbols**, this should result in an **IllegalArgumentException** with the message "**Name** \{**name**\} **cannot be less than 5 symbols.**"
+  * the name is unique 
 - **laps - int** 
-  * Throws **IllegalArgumentException** with message **"Laps cannot be less than 1."**, if the laps are less than **1.**
-- **drivers - A collection of Drivers**
+  * if the laps are less than **1**, this should result in an **IllegalArgumentException** with the message "**Laps cannot be less than 1.**"
+- **drivers - a collection of Drivers**
 
 ## Behavior
 
 `void addDriver(Driver driver)`
 
-This method adds a **Driver** to the **Race** if the **Driver** is valid. If the Driver is not valid, throw an **Exception** with the appropriate message.
+This method adds a **Driver** to the **Race**. if the **Driver** is valid. 
+
+If the Driver is not valid, this should result in an Exception with the appropriate message. 
 
 Exceptions are:
 
-- If a **Driver** is null throw an IllegalArgumentException with message: **"Driver cannot be null."**
-- If a **Driver cannot** participate in the **Race** (the **Driver** doesn't own a **Car**) throw an **IllegalArgumentException** with message: **"Driver \{driver name\} could not participate in race."**
-- If the **Driver** already **exists** in the **Race** throw an **IllegalArgumentException** with message:
-**"Driver \{driver name\} is already added in \{race name\} race."**
+- If the given **Driver** is null, this should result in an **IllegalArgumentException** with message: "**Driver cannot be null.**"
+- If the given **Driver cannot** participate in the **Race** (the **Driver** does not own a **Car**), this should result in an **IllegalArgumentException** with the message:  **"Driver** \{**driver name**\} **could not participate in race."**
+- If the **Driver** is already taking part in the **Race**, this should result in an **IllegalArgumentException** with the message:
+**"Driver** \{**driver name**\} **is already added in** \{**race name**\} **race."**
 
 ## Constructor
 
-**Racer** should take the following values upon initialization:
+A **Racer** should take the following values upon initialization:
 **(String name, int laps)**
 
 # Repository
@@ -149,7 +150,7 @@ The repository holds information about the entity.
 
 ## Data
 
-- **Models - A collection of T (entity)**
+- **Models - a collection of T (entity)**
 
 ## Behavior
 

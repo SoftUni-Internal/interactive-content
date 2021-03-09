@@ -7,11 +7,11 @@
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/12-Java-OOP-Advanced-Final-Exam-Unit-Testing.zip) **for this task.**
 
-You will receive a skeleton with one class inside. 
+You will receive a skeleton with one a class inside. 
 
-The class will have some methods, fields and constructors. 
+The class will have methods, fields and constructors. 
 
-Cover the whole class with unit test to make sure that the class is working as intended.
+Cover the whole class with unit tests to make sure that the class is working as intended.
 
 
 [/task-description]
