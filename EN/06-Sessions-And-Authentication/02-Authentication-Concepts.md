@@ -12,7 +12,7 @@ Authentication is used to **confirm** that the user is **who they claim to be**.
 
 Just like customers at a bank are required to show an ID.
 
-The **cookies** and **sessions** serve the purpose of an ID on the internet.
+The **cookies** and **sessions** serve the purpose of an **ID** on the internet.
 
 They "remember" who the user is and confirm that they are not pretending to be another person.
 
@@ -40,9 +40,9 @@ A popular hashing function is `bcrypt`.
 
 It utilizes a few extra security concepts:
 
-- `salt` - Adding a **unique keyword** to the hash to prevent **rainbow table** attacks which are used to crack hashed passwords.
+- `salt` - Adding a **unique keyword** to the hash to prevent **rainbow table** attacks which are used to crack hashed passwords
 
-- `multiple iterations` - **Increased number of iterations** to prevent **brute force** attacks which guess all the possible combinations.
+- `multiple iterations` - **Increased number of iterations** to prevent **brute force** attacks which guess all the possible combinations
 
 To use `bcrypt` with Express, install the middleware like so:
 

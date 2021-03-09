@@ -4,11 +4,11 @@
 
 # HTTP Communication
 
-HTTP or **Hypertext Transfer Protocol** is responsible for the communication between the **browser** and the **web server**.
+**HTTP** or **Hypertext Transfer Protocol** is responsible for the communication between the **browser** and the **web server**.
 
 The communication happens by **sending a request** to the server and **waiting for its response**.
 
-One of HTTP's characteristics is that it is **stateless**.
+One of **HTTP**'s characteristics is that it is **stateless**.
 
 This means that every interaction (**request** and **response**) happens independently of the others.
 
@@ -18,13 +18,13 @@ The ATM does not know anything about the person's balance and the person does no
 
 Normally, this is a good thing but occasionally data must be stored.
 
-This is what cookies are for.
+This is what **cookies** are for.
 
 A cookie is a **simple string**, **holding information**, and **stored in the browser** (client).
 
 Data can also be stored on the server when necessary with **session cookies**.
 
-Session cookies allow for some **state** to be kept **between many requests**.
+**Session cookies** allow for some **state** to be kept **between many requests**.
 [/slide]
 
 [slide hideTitle]
@@ -33,9 +33,9 @@ Session cookies allow for some **state** to be kept **between many requests**.
 
 It is very important to understand the differences between **sessions** and **client cookies**.
 
-Sessions are used to **keep information** that might be needed **shortly** after being saved.
+**Sessions** are used to **keep information** that might be needed **shortly** after being saved.
 
-Here are some examples of when to use session cookies:
+Here are some examples of when to use **session cookies**:
 
 - Storing data about a user's shopping cart.
 
@@ -43,17 +43,17 @@ Here are some examples of when to use session cookies:
 
 - Keeping authorization status and IDs.
 
-Cookies, on the other hand, are stored in the **browser** and could last for a **very long time**.
+**Cookies**, on the other hand, are stored in the **browser** and could last for a **very long time**.
 
 They typically store user **preferences** and **personal settings**.
 
 The **most important** difference between the two is **security**.
 
-Cookies can be **changed by the user** or a potential **attacker** from the browser.
+**Cookies** can be **changed by the user** or a potential **attacker** from the browser.
 
 They can also be **deleted** or set to **last forever**.
 
-Sessions, however, **cannot be modified** by the client which makes them **more reliable** than cookies.
+**Sessions**, however, **cannot be modified** by the client which makes them **more reliable** than cookies.
 
 [/slide]
 
@@ -61,7 +61,7 @@ Sessions, however, **cannot be modified** by the client which makes them **more 
 
 # Using Cookies
 
-When working with cookies in Express, use the `cookie-parser` middleware.
+When working with **cookies** in **Express**, use the `cookie-parser` middleware.
 
 To install it, just run the following command in the terminal:
 
@@ -106,11 +106,11 @@ npm install express-session
 
 Unlike the `cookie-parser` middleware, sessions require some **additional settings**:
 
-- `secret` - Used to **sign** the cookies. It is recommended to **use a random string**.
+- `secret` - Used to **sign** the cookies. It is recommended to **use a random string**
 
-- `httpOnly` - Specifies that the cookie is readable **only from the server**.
+- `httpOnly` - Specifies that the cookie is readable **only from the server**
 
-- `secure` - The cookie will be sent **only** through **HTTPS**.
+- `secure` - The cookie will be sent **only** through **HTTPS**
 
 This is how to set up the middleware for work:
 

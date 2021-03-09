@@ -1,7 +1,7 @@
 [slide hideTitle]
 # Summary
 
-# In this lesson you learnt:
+# In this lesson you learned:
 
 - **Cookies and sessions**
 
@@ -49,9 +49,9 @@ bcrypt.genSalt(saltRounds, (err, salt) => {
 
     - What **JWT** is.
 
-    - The **structure** of a JSON Web Token.
+    - The **structure** of a **JSON Web Token**.
 
-    - **When** and **How** to use JWT.
+    - **When** and **How** to use **JWT**.
 
 ```js
 const jwt = require("jsonwebtoken");
@@ -65,7 +65,7 @@ const token = jwt.sign(payload, secret, options);
 console.log(token);
 ```
 
-## In the next lesson you will learn:
+## In the next lesson, you will learn:
 
 - **Validation and Error Handling**
 
