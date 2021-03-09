@@ -1,3 +1,5 @@
+# Validation
+
 [slide hideTitle]
 
 # Validation
@@ -15,9 +17,9 @@ private void setSalary(double salary) {
   this.salary = salary;
 }
 ```
-- It is better to throw **exceptions**, rather than printing to the Console
+- It is better to throw **exceptions**, rather than printing to the console
 - Printing with `System.out` **couples** your class
-- **Client** can **handle** class exceptions
+- **Clients** can **handle** class exceptions
 
 **Constructors use private setters with validation logic:**
 
@@ -30,8 +32,9 @@ public Person(String firstName, String lastName,
   setSalary(salary);
 }
 ```
+
 **Validation happens inside the setter:**
-- Guarantees valid state of object in its creation
+- Guarantees valid state of an object in its creation
 - Guarantees valid state for public setters
 
 [/slide]
@@ -42,20 +45,23 @@ public Person(String firstName, String lastName,
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-22-problem-and-solution-validation-data-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Validation Data" taskId="Java-OOP-Advanced-Encapsulation-Validation-Data" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-task title="Validation Data" taskId="Java-OOP-Advanced-Encapsulation-Validation-Data" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 [task-description]
-## Description
+# Description
 Expand **Person** with proper validation for every field:
+
 - Names must be at least 3 symbols
 - Age must not be zero or negative
-- Salary can not be less than 460.0 
-Print proper message to end user (look at example for messages). 
-do not use `System.out.println()` in **Person** class.
+- Salary cannot be less than 460.0 
+
+Print a proper message to the end-user (look at the example for messages). 
+
+Do not use `System.out.println()` in the **Person** class.
 
 
-## Examples
+# Example
 | **Input** | **Output** |
 | --- | --- |
 | 5 | Age cannot be zero or negative integer |
