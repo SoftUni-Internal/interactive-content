@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Depanare
 
-[vimeo-video]
-[stream language="EN" videoId="486879791/6f3c715a5b" default /]
-[stream language="RO" videoId="486879791/6f3c715a5b"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/02-Conditions/02-conditional-statements-js-31-32-Debugging-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Până acum, am scris o mulțime de coduri și au aparut câteva greșeli în el, corect? Acum vom arăta un instrument care ne poate ajuta să găsim greșelile mai ușor: **depanatorul**.
 
@@ -23,10 +20,7 @@ Până acum, am scris o mulțime de coduri și au aparut câteva greșeli în el
 
 # Depanarea in Visual Studio Code
 
-[vimeo-video]
-[stream language="EN" videoId="486879964/71bacdc0d7" default /]
-[stream language="RO" videoId="486879964/71bacdc0d7"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/02-Conditions/02-conditional-statements-js-33-Debugging-in-VSC-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 * Cu `[F5]` va porni programul în modul de depanare
 

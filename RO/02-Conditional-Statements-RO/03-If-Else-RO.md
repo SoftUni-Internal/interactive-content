@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Condiții If-Else
 
-[vimeo-video]
-[stream language="EN" videoId="486879057/c8e3a2cdaa" default /]
-[stream language="RO" videoId="486879057/c8e3a2cdaa"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/02-Conditions/02-conditional-statements-js-17-if-else-conditions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Construcția`if`poate conține, de asemenea, o clauză`else`pentru a da o acțiune specifică în cazul în care expresia booleană(care este setată la început`if(expresia bool)`)se schimbă in rezultat negativ(`false`).
 
@@ -61,10 +58,7 @@ function example(input) {
 [slide hideTitle]
 # Block of Code
 
-[vimeo-video]
-[stream language="EN" videoId="486879069/fa69d41600" default /]
-[stream language="RO" videoId="486879069/fa69d41600"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/02-Conditions/02-conditional-statements-js-18-19-Blocks-of-code-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Când avem **o singură comandă** în corpul construcției **if**, putem **sări peste parantezele crețate**, indicând corpul operatorului condiționat.
 
@@ -100,6 +94,9 @@ if (color == "red") {
 [slide hideTitle]
 
 # Problemă cu soluție: Even or Odd
+
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/02-Conditions/02-conditional-statements-js-20-Problem-Solution-Even-or-Odd-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Even or Odd" taskId="pb-js-conditional-statements-Even-or-Odd" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```

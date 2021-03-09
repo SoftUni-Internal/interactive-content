@@ -4,10 +4,7 @@
 
 # Secvența condițiilor If-Else
 
-[vimeo-video]
-[stream language="EN" videoId="486879402/eb03e7a9d0" default /]
-[stream language="RO" videoId="486879402/eb03e7a9d0"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/02-Conditions/02-conditional-statements-js-24-25-Sequence-of-if-else-conditions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Uneori trebuie să facem o succesiune de condiții înainte de a decide ce acțiuni vor executa programul nostru.
 
@@ -31,10 +28,7 @@ else {
 
 [slide hideTitle]
 # Exemplu: Digits in English
-[vimeo-video]
-[stream language="EN" videoId="486879419/2d0e9d0270" default /]
-[stream language="RO" videoId="486879419/2d0e9d0270"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/02-Conditions/02-conditional-statements-js-26-Series-of-conditions-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Imprimați cifrele în intervalul de la 1 la 9 (cifrele sunt citite de pe consolă) în limba engleză.
 

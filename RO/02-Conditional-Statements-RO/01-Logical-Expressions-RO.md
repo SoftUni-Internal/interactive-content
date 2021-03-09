@@ -4,10 +4,7 @@
 
 # Operatori de comparație
 
-[vimeo-video]
-[stream language="EN" videoId="486878604/02a3167730" default /]
-[stream language="RO" videoId="486878604/02a3167730"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/02-Conditions/02-conditional-statements-js-10-11-Comparison-Operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În programare, putem compara valorile folosind următorii operatori:
 
@@ -39,10 +36,7 @@ Atunci când este comparat, rezultatul este o valoare booleană `adevărat` sau 
 
 # Compararea valorii
 
-[vimeo-video]
-[stream language="EN" videoId="486878826/d63c730134" default /]
-[stream language="RO" videoId="486878826/d63c730134"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/02-Conditions/02-conditional-statements-js-12-Value-Comparison-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Exemple de astfel de expresii sunt următoarele:
 ```js live

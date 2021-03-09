@@ -4,10 +4,7 @@
 [slide hideTitle]
 # Exemplu din viață reală: Udarea plantelor 
 
-[vimeo-video]
-[stream language="EN" videoId="486878426/4bc3595d1b" default /]
-[stream language="RO" videoId="486878426/4bc3595d1b"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/02-Conditions/02-conditional-statements-js-8-9-Real-Life-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [image assetsSrc="02-coditional-statement-1.png" /]
 
@@ -44,10 +41,7 @@ dacă umiditatea este mai mare de 90%
 
 # Condiții simple if
 
-[vimeo-video]
-[stream language="EN" videoId="486878937/52b2a917a9" default /]
-[stream language="RO" videoId="486878937/52b2a917a9"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/02-Conditions/02-conditional-statements-js-13-14-Simple-Conditions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Una dintre cele mai importante instrucțiuni din fiecare limbaj de programare este instrucțiunea `if`.
 
@@ -76,6 +70,7 @@ function example(input) {
 [slide hideTitle]
 
 # Problemă cu soluție: Freezing Weather
+
 [code-task title="Freezing weather" taskId="pb-js-conditional-statements-Freezing-Weather" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
