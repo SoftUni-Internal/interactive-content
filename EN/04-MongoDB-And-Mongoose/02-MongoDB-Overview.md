@@ -56,11 +56,11 @@ More additional information [here](https://docs.mongodb.com/manual/reference/mon
 
 # Working with MongoDB GUI
 
-Many MongoDB graphical user interfaces help developers to manage their databases.
+Many **MongoDB** **graphical user interfaces** help developers to manage their databases.
 
 For this lesson, we will not dive deep into the comparison between different interfaces.
 
-The most popular GUI's are:
+The most popular **GUI**'s are:
 
 - [Robo 3T](https://robomongo.org/download)
 
@@ -77,7 +77,7 @@ You can choose one that matches your project at most.
 
 # Working with MongoDB from Node.js
 
-Here is a simple example of how to connect with MongoDB using Node.js
+Here is a simple example of how to connect with **MongoDB** using Node.js
 
 ``` js
 const mongodb = require('mongodb');
@@ -96,9 +96,9 @@ client.connect(function(err) {
 });
 ```
 
-First, we import MongoClient and set our connection string. 
+First, we import **MongoClient** and set our **connection string**. 
 
-After that, that we have a connection string, we can create an instance of MongoClient.
+After that, that we have a **connection string**, we can create an instance of **MongoClient**.
 
 The last step is to make a function that would collect our info about the people inside.
 

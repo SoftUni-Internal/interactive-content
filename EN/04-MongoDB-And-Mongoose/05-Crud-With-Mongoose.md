@@ -4,9 +4,9 @@
 
 # CRUD
 
-Using Mongoose you can perform all CRUD operations wherever you want in your code.
+Using Mongoose you can perform all **CRUD** operations wherever you want in your code.
 
-**CRUD** stands for - Create, Retrieve, Update, Delete.
+**CRUD** stands for - **Create**, **Retrieve**, **Update**, **Delete**.
 
 - **Create (Persist Data)**: `save()` is used to insert a record in the collection.
 
@@ -42,9 +42,9 @@ Student
   .update({_id: id, {prop: newVal}, callback)
 ```
 
-We must first find the student by their id.
+We must first find the student by their **id**.
 
-After that, we update and save the new values in the model.
+After that, we **update** and **save** the new values in the model.
 
 - **Delete (Remove Data)**
 
@@ -77,9 +77,9 @@ mongoose.connect(connectionStr).then(() => {
 });
 ```
 
-This is a simple example of connecting to the database, creating a schema, and constructing a model.
+This is a simple example of **connecting to the database**, **creating a schema**, and **constructing a model**.
 
-Inside the model, we insert a new Student with a name and age.
+Inside the model, we **insert** a new Student with a "**name**" and "**age**".
 
 Then we save the model using the `save()` method.
 
@@ -121,7 +121,7 @@ Do not forget to always handle errors.
 
 # Update Example
 
-We can update multiple entities.
+We can **update** multiple entities.
 
 ``` js
 Student
@@ -150,7 +150,7 @@ Student
 
 - Syntax: `remove(conditions, [callback])`
 
-Note that if the condition is not passed or empty then all the records will be removed.
+Note that if the condition is **not passed** or **empty** then all the records will be **removed**.
 
 Take a look at the following example:
 
@@ -159,7 +159,7 @@ userModel.remove({userid:"George"})
 // Remove the document having userid "George"
 ```
 
-We can remove all documents of users collection:
+We can **remove** all documents of users collection:
 
 ``` js
 userModel.remove()
