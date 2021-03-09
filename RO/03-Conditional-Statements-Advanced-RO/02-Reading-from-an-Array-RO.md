@@ -3,6 +3,7 @@
 # Citirea unei matrice
 
 [slide hideTitle]
+
 # Ce este o matrice? 
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-9-10-What-is-an-Array-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
@@ -34,6 +35,10 @@ Sunt **7 vagoane** (**elemente**). Fiecare are **pasageri** (**o valoare**). `[3
 Primul element din matrice se află pe poziția `0`, și ultimul se află pe poziția `length-1`. 
 
 În acest curs **nu vom** inițializa o matrice, doar vom accepta vectorul ca un parametru al funcției.
+
+[/slide]
+
+[slide hideTitle]
 
 # Citirea dintr-o matrice
 
