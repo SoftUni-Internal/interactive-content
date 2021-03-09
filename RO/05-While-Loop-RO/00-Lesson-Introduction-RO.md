@@ -1,6 +1,6 @@
 // sectionId: "Javascript::Programming-Basics::While-Loop::Lesson-Introduction"
 
-Introducere
+# Introducere
 
 [slide hideTitle]
 
