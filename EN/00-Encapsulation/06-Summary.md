@@ -21,6 +21,15 @@
     - mutable objects can be altered
     - immutable objects cannot be modified
 
+```java
+String firstName = "John";
+String lastName = "Davis";
+// Strings are immutable
+
+String fullName = firstName.concat(" ").concat(lastName);
+// Concatenating two strings returns a new one
+```
+
 - Keyword `final`
     - prevents entities from being extended and overridden
 
