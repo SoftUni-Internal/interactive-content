@@ -11,7 +11,7 @@
     ```js
     let myNumber = 3.14;
     ```
-    - ntring
+    - string
     ```js
     let myString = 'Hello JavaScript!';
     ```
