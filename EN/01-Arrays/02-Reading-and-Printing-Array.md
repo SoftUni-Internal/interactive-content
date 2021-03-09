@@ -5,9 +5,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-8-9-10-11-Reading-An-Array-and-demos-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-There is no direct way of accepting array input in Java using Scanner or any other utility but the same can be achieved using standard **Scanner** methods and asking some questions to the user.
-
-For example, if you want to accept an **array of strings**, you will first need to get its **length** as input, and you can then use a for-loop to retrieve that many elements and store them in an array.
+One of the ways we can read an array is by receiving its **length** and use that **length** in a **for-loop** to receive the elements and store them in each index of the array.
 
 ```java
 //accept n - length of the array
@@ -24,7 +22,7 @@ for (int i = 0; i < n; i++) {
 
 ## Reading From Single Line
 
-Arrays can be read from a single line of separated values. For example, if we want to read this array: `2 8 30 25 40 72 -2 44 56`:
+Arrays can also be read from a single line of separated values. For example, if we want to read this array: `2 8 30 25 40 72 -2 44 56`:
 
 ```Java
 String values = sc.nextLine();
@@ -38,14 +36,11 @@ for (int i = 0; i < items.length; i++){
 
 First, we read the numbers from the console and split them by the empty spaces between them.
 
-Then we initialize a new array with a length equal to the number of elements we read. 
+Then we initialize a new array with a length equal to the number of elements we have read. 
 
-Finally, using a for loop we insert all the values into the array.
+Finally, using a **for-loop** we insert all of the values into the array.
 
-We can read an array of integers using `java.util.Arrays;` which is a `class` in Java that allows you to create and manipulate arrays.
-
-We are going to learn about **classes** later in this course, but if you are curious feel free to google it.
-
+We can read an array of integers using the `java.util.Arrays;` `class`, which is a `class` in Java that allows us to create and manipulate arrays.
 
 ## A Shorter Way to Read Arrays
 
@@ -66,7 +61,7 @@ int[] arr = Arrays
 
 We are first reading the input from the console as a string using `scanner.nextLine()`. 
 
-Then we split the input by space using `split(" ")`.
+Then we split the input by a single space using `split(" ")`.
 
 We continue by parsing each string to integer values with `mapToInt(Integer::parseInt)`.
 
@@ -80,9 +75,9 @@ Finally, we convert the result to an array.
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-12-Printing-Arrays-to-the-console-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-A `for` loop can be used for printing all the elements of an array.
+A **for-loop** can be used for printing all the elements of an array.
 
-While printing each element we can split them by whitespace or newline.
+While printing each element we can split them by a **whitespace** or a **new line**.
 
 See the following example:
 
@@ -214,13 +209,15 @@ Read **n** numbers and print them in reverse order, separated by a single space.
 
 
 [slide hideTitle]
-# Printing Arrays with String.join()
+# Printing Arrays using String.join()
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-15-printing-arrays-with-for-string.join-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Use `String.join(x, y)`, where x is the **separator** and **y is the array** we want to print. 
+We can use `String.join(x, y)` to join the elements of a collection.
 
-`String.join(…)` works only with `String`:
+In this situation, **x** is the **separator** and **y** is the **array** we want to print. 
+
+`String.join(…)` works only with `Strings`:
 
 ```Java live
 String[] strings = { "one", "two" };
@@ -257,9 +254,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program to read an **array of strings**, reverse it, and **print** its elements.
+Create a program that reads an **array of strings**, reverses it, and **prints** its elements.
 
-The input consists of a sequence of space-separated strings.
+The input consists of a sequence of space-separated **Strings**.
 
 Print the output on a single line \(space separated\).
 
@@ -273,11 +270,11 @@ Print the output on a single line \(space separated\).
 ## Hints
 * Read the array of strings
 
-* **Exchange** the **first** element \(at index 0\) with the **last** element \(at index n-1\)
+* **Swap** the **first** element \(at index 0\) with the **last** element \(at index n-1\)
 
-* **Exchange** the **second** element \(at index 1\) with the element **before the last** \(at index n-2\)
+* **Swap** the **second** element \(at index 1\) with the element **before the last** \(at index n-2\)
 
-* Continue the same way until the middle of the array is reached
+* Continue using this patten until the middle of the array is reached
 
 [/task-description]
 [code-io /]
@@ -354,9 +351,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Read two arrays and print to the console whether they are identical or not.
+Read two arrays and print whether they are identical or not to the console.
 
-Arrays are **identical** if their **elements are equal**.
+The arrays are **identical** if their **elements are equal**.
 
 If the arrays are identical find the **sum of the first one** and print the following message to the console: 
 
