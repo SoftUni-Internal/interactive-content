@@ -1,7 +1,7 @@
 // sectionId: "Javascript::Programming-Basics::While-Loop::Summary"
 
 [slide hideTitle]
-# Recapitulare
+# Rezumat
 
 [vimeo-video]
 [stream language="EN" videoId="487121107/0a5fbdb2bd" default /]

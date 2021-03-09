@@ -50,7 +50,7 @@ console.log(number);
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluția: Odd Number
+# Problemă cu soluție: Odd Number
 
 [code-task title="Odd Number" taskId="pb-js-while-loop-Odd-Number" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -70,14 +70,14 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Cerință
-Creați un program care:
+# Descriere
+Creați un program care imprimă **primul** număr impar dintr-o secvență dată:
 
-* Citește numere de pe consolă până la obținerea unui **număr impar**
-* Imprimă **numărul impar** 
+* Primiți numere de pe consolă 
+* Imprimați primul  **numărul impar** pe care îl găsiți
 
 # Exemplu
-  | **Input** | **Output** |
+  | **Intrare** | **Ieșire** |
 | --- | --- |
 | oddNumber(['2', '4', '8', '3']) | 3 |
 

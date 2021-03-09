@@ -30,7 +30,7 @@ for (;;) {
 
 [slide hideTitle]
 
-# Problemă cu soluția: Sum Numbers Until 0
+# Problemă cu soluție: Sum Numbers Until 0
 
 [vimeo-video]
 [stream language="EN" videoId="487119738/e0db9467e8" default /]
@@ -62,7 +62,7 @@ function adapter(input, code) {
 
 # Description
 
-Creați un program pentru a procesa numerele din parametrii de intrare și imprimați suma lor până când se ajunge la 0.
+Creați un program care adună și imprimă  numerele dintr-o matrice până când se ajunge la 0.
 
 # Exemplu
 

@@ -18,10 +18,9 @@ Operatorii de incrementare și decrementare pot fi scriși astfel:
 
 ## Operatorul de incrementare
 
+
 ### Operatorul de incrementare ca sufix
 Rezultatul lui `x++` este valoarea lui `x` înainte de operație, după cum ne arată acest exemplu:
-
-!!! stop translating
 
 ```js live
 let i = 3;
@@ -34,7 +33,7 @@ console.log(i);   // output: 4
 ### Operatorul de incrementare ca prefix
 Rezultatul lui `++x` este valoarea lui `x` după operație, după cum ne arată acest exemplu:
 
-!!! stop translating
+
 
 ```js live
 let a = 1.5;

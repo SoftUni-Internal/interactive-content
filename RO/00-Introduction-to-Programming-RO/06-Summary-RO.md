@@ -14,7 +14,7 @@
 
 - Programul constă din **secvențe de comenzi.**
 
-- JavaScript este un **limbaj dinamic**, care este executat de un **interpret**
+- JavaScript este un **limbaj dinamic**, care este executat de un **interpretor**
 
 - Cum se **instalează** rulează **VSCode** și **Node.js**
 
@@ -24,7 +24,7 @@
 
 - Tipuri de date
 
-- Ce sunt Declarațiile?
+- Ce sunt instrucțiunile?
 
 - Cum să citim și să imprimăm datele de intrare ale utilizatorului
 

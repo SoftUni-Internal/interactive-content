@@ -1,7 +1,7 @@
 // sectionId: "Javascript::Programming-Basics::Conditional-Statements::Summary"
 
 [slide hideTitle]
-# Recapitulare
+# Rezumat
 
 [vimeo-video]
 [stream language="EN" videoId="486880119/e471e36bc2" default /]
@@ -31,11 +31,11 @@ if (num == 1) {
 }
 ```
 
-- Cum să identificăm bug-urile din program, folosind un debugger
+- Cum să identificăm erorile din program, folosind depanatorul
 
 ## In lecția următoare vom învăța:
 
-- Cum să citim datele de intrare dintr-un array
+- Cum să citim datele de intrare dintr-o matrice
 
 - Cum să folosim condiționările if-else
 

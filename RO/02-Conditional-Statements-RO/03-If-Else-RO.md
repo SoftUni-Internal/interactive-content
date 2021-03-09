@@ -8,7 +8,7 @@
 [stream language="RO" videoId="486879057/c8e3a2cdaa"  /]
 [/video-vimeo]
 
-Construcția`if`poate conține,de asemenea,o clauză`else`pentru a da o acțiune specifică în cazul în care expresia booleană(care este setată la început`if(expresia bool)`)se schimba in rezultat negativ(`false`).
+Construcția`if`poate conține, de asemenea, o clauză`else`pentru a da o acțiune specifică în cazul în care expresia booleană(care este setată la început`if(expresia bool)`)se schimbă in rezultat negativ(`false`).
 
 Construită astfel, **instrucțiunea condițională** se numește `if-else` și comportamentul său este după cum urmează:
 
@@ -45,7 +45,7 @@ Isntrucțiunea sau instrucțiunile din ce instrucțiunea 'then'  sau instrucțiu
 ## Exemplu: Vremea
 Aceasta este o versiune extinsă a exemplului din diapozitivul anterior.
 
-După cum puteți vedea acum, avem un alt caz, care va fi executat atunci când condiția din `if` se dovedește a fi **false.**
+După cum puteți vedea acum, avem un alt caz, care va fi executat atunci când condiția din `if` se dovedește a fi **falsă.**
 
 ```js
 function example(input) {
@@ -66,13 +66,13 @@ function example(input) {
 [stream language="RO" videoId="486879069/fa69d41600"  /]
 [/video-vimeo]
 
-Când avem **o singură comandă** în corpul construcției **if**, putem **sări peste parantezele buclate**, indicând corpul operatorului condiționat.
+Când avem **o singură comandă** în corpul construcției **if**, putem **sări peste parantezele crețate**, indicând corpul operatorului condiționat.
 
-Când vrem să executăm un  **bloc de cod** (un grup de comenzi), parantezele cretate sunt **necesare**.
+Când vrem să executăm un  **bloc de cod** (un grup de comenzi), parantezele crețate sunt **necesare**.
 
 În cazul în care le eliminăm, **numai prima linie** după **clauza if** va fi executată. 
 
-Iată un exemplu în care **omiterea** parantezelor cretate duce la o **confuzie:**
+Iată un exemplu în care **omiterea** parantezelor crețate duce la o **confuzie:**
 
 ```js live
 let color = "red";
@@ -99,7 +99,7 @@ if (color == "red") {
 
 [slide hideTitle]
 
-# Problemă cu soluția: Even or Odd
+# Problemă cu soluție: Even or Odd
 [code-task title="Even or Odd" taskId="pb-js-conditional-statements-Even-or-Odd" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -119,13 +119,13 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program, care verifică dacă un număr este **par sau impar**
+Creați un program care verifică dacă un număr este **par sau impar**
 
 * Dacă este par, tipăriți "**even**"
 * Dacă este impar, tipăriți "**odd**"
 
 # Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | evenOrOdd(4) | even |
 | evenOrOdd(7) | odd |

@@ -22,7 +22,7 @@
 | Mai mic decât |   **<** |
 | Mai mic decât sau egal cu |   **<=** |
 
-Rețineți diferența dintre `===` and`==`.
+Rețineți diferența dintre `===` și`==`.
 Vedeți exemplul:
 
 ```js live
@@ -32,7 +32,7 @@ console.log(a == b) // true
 console.log(a === b) // false
 ```
 
-Atunci când este comparat, rezultatul este o valoare booleană `adevărat` sau `fals`, în funcție de rezultatul comparației este `true` sau `false`.
+Atunci când este comparat, rezultatul este o valoare booleană `adevărat` sau `fals`, în funcție de faptul dacă rezultatul comparației este `true` sau `false`.
 
 [/slide]
 [slide hideTitle]
@@ -71,7 +71,7 @@ Dacă valoarea expresiei din partea stângă este mai mare sau egală cu valoare
 
 ## Compararea de șiruri
 
-Compararea textului utilizând operatorul de egalitate (`==`).
+Compararea textelor utilizând operatorul de egalitate (`==`).
 
 Doi operanzi de șir sunt egali atunci când ambii sunt `null` sau ambii au aceeași lungime și au caractere identice în fiecare poziție de caracter:
 

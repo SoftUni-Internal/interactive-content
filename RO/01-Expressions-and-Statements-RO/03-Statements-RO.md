@@ -1,16 +1,17 @@
 // sectionId: "Javascript::Programming-Basics::Expressions-And-Statements::Statements"
 
-# Declarații
+# Instrucțiuni
+
 
 [slide hideTitle]
-# Comenzile în programele de computer
+# Comenzile în programele de calculator
 
 [vimeo-video]
 [stream language="EN" videoId="486855548/f48e0caa24" default /]
 [stream language="RO" videoId="486855548/f48e0caa24"  /]
 [/video-vimeo]
 
-Acțiunile pe care le aplică un progra sunt exprimate ca **declarații**.
+Acțiunile pe care le aplică un program sunt exprimate ca **instrucțiuni**.
 
 JavaScript suportă **diferite** tipuri de declarații, iar mai jos enunțăm câteva dintre acestea:
 

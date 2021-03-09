@@ -1,6 +1,6 @@
 // sectionId: "Javascript::Programming-Basics::Conditional-Statements-Advanced::Lesson-Introduction"
 
-# Lecție introductivă
+# Introducere
 
 [slide hideTitle]
 
@@ -16,16 +16,13 @@
 **1. Instrucțiuni imbricate if-else**
 - `if-else` în interiorul altui` if-else` 
 
-**2. Matrice**
-- Citirea intrărilor dintr-o matrice
-
-**3. Operatorii Logici**
+**2. Operatorii Logici**
 - Primii pași în limbajul JavaScript
 
-**4. Instrucțiunea Condițională switch-case**
+**3. Instrucțiunea Condițională switch-case**
 - Utilizarea mai multor etichete de caz în **switch-case**
 
-**5. Exerciții Practice de Codificare**
+**4. Exerciții Practice de Codificare**
 
 [/slide]
 

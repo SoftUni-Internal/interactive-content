@@ -1,5 +1,5 @@
 // sectionId: "Javascript::Programming-Basics::Exam-Preparation::Problem-01"
-# Problem: Calculator for TV series
+# Problema 1: Calculator for TV series
 [slide hideTitle]
 # Calculator for TV series
 
@@ -43,9 +43,9 @@ Ca intrare veți primi 4 elemente de consolă:
 
 - Numărul sezoanelor: un număr întreg în intervalul \[1...10\]
 
-- Numărul episoadelor: un număr întreg în intervalul \[10...80\]
+- Numărul episoadelor: un număr întreg în intervalul \[10... 80\]
 
-- Durata unui episod standard fără reclame: dublă în intervalul \[40.0...65.0\]
+- Durata unui episod standard fără reclame: dublă în intervalul \[40.0...65.0 \]
 
 ## Ieșire
 
@@ -62,19 +62,19 @@ Imprimați pe consolă timpul necesar pentru a viziona toate episoadele, rotunji
 [hints]
 
 [hint]
-Calculate the duration of advertisements per episode.
+Calculați durata reclamelor pe un episod.
 [/hint]
 [hint]
 
-Determine the duration of an episode with advertisements.
+Stabiliți durata unui episod cu reclame.
 [/hint]
 [hint]
 
-Add extra time for the specials.
+Adăugați timp suplimentar pentru episoadele speciale.
 [/hint]
 [hint]
 
-Calculate the total time needed to watch the whole series.
+Calculați timpul total necesar pentru a vedea tot serialul.
 [/hint]
 
 [/hints]

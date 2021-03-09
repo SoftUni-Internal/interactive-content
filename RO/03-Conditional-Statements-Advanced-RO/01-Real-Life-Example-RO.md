@@ -10,7 +10,7 @@
 
 [image assetsSrc="03-conditional-statements-advanced-example.png" /]
 
-Piață oferă prețuri diferite pentru anumite produse în funcție de ziua săptămânii.
+o piață oferă prețuri diferite pentru anumite produse în funcție de ziua săptămânii.
 
 
 | **Produs**      | **Ziua lucrătoare** | **Weekend**   |

@@ -1,6 +1,6 @@
 // sectionId: "Javascript::Programming-Basics::Introduction-to-Programming::Lesson-Introduction"
 
-# Lecție introductivă
+# Introducere
 
 [slide hideTitle]
 
@@ -17,7 +17,7 @@
 - Cum să scrieți comenzi și programe simple 
 
 **2. Limbajele de programare**
-- First steps in JavaScript
+- Primii pași în JavaScript
 
 **3. Mediul integrat de dezvoltare (IDE)**
 - Visual Studio Code

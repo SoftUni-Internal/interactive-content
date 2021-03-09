@@ -21,7 +21,7 @@ Aveți câteva plante în grădină care au nevoie de apa.
 
 **Dacă** plouă:
 
-* Nu vom uda plantele din grădin
+* Nu vom uda plantele din grădină
 
 **Altfel**:
 
@@ -35,7 +35,7 @@ Iată un pseudocod cu ajutorul căruia puteți înțelege conceptul instrucțiil
 dacă umiditatea este mai mare de 90%
    Nu udați plantele
  altceva
-   Uați plantele
+   Udați plantele
 ```
 
 [/slide]
@@ -49,7 +49,7 @@ dacă umiditatea este mai mare de 90%
 [stream language="RO" videoId="486878937/52b2a917a9"  /]
 [/video-vimeo]
 
-Una dintre cele mai importante declarații din fiecare limbaj de programare este declarația `if`.
+Una dintre cele mai importante instrucțiuni din fiecare limbaj de programare este instrucțiunea `if`.
 
 În programare **verificăm adesea condiții particulare** și efectuăm diferite acțiuni în funcție de rezultatul verificării.
 
@@ -75,7 +75,7 @@ function example(input) {
 [/slide]
 [slide hideTitle]
 
-# Problemă cu soluția: Freezing Weather
+# Problemă cu soluție: Freezing Weather
 [code-task title="Freezing weather" taskId="pb-js-conditional-statements-Freezing-Weather" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -96,14 +96,14 @@ function adapter(input, code) {
 [task-description]
 
 # Descriere
-Creați un program pentru a verifica vremea înghețată:
+Creați un program pentru a verifica dacă vremea e friguroasă:
 
 * Citiți o temperatură în Celsius (a floating-point number)
 * Tipăriți "**Freezing weather!**", Dacă temperatura este **egală cu** sau **mai mică decât 0**
 
 # Exemplu
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | freezingWeather(-2) | Freezing weather! |
 | freezingWeather(4) | (no output) |

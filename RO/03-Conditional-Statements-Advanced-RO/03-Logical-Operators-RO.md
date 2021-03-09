@@ -42,10 +42,10 @@ Vom explica operatorii logici ** **"ȘI"** (`&&`), **"SAU"** (`||`) și **"NU"**
 [stream language="RO" videoId="486871442/f9e84d4655"  /]
 [/video-vimeo]
 
-După cum am văzut,în unele probleme trebuie să facem**multe verificări simultan**.
+După cum am văzut,în unele probleme trebuie să facem **multe verificări simultan**.
 
 Ce se întâmplă când trebuie îndeplinite toate condițiile simultan și nu vrem să facem negare (else) pentru fiecare dintre ele?
-Opțiunea cu `if` **imbricate** este validă, dar codul ar părea foarte neordonat și sigur - **greu de citit și întreținut**.
+Opțiunea cu `if` **imbricate** este validă, dar codul ar părea foarte neordonat și **greu de citit și întreținut**.
 
 Logica **"ȘI"** (operator `&&`) înseamnă că trebuie îndeplinite simultan câteva condiții.
 
@@ -58,13 +58,13 @@ Se aplică următorul tabel al veridicității:
 | fals | fals | fals |
 
 # Cum funcționează operatorul `&&`?
-Operatorul logic `&&` acceptă câteva instrucțiuni booleene (condiționale), care au o valoare adevărata sau falsa și returnează o declarație 'bool' ca rezultat.
+Operatorul logic `&&` acceptă câteva instrucțiuni booleene (condiționale), care au o valoare adevărata sau falsa și returnează o declarație 'booleană' ca rezultat.
 
-Folosindu-l în loc de câteva blocuri imbricate `if`, face codul **mai lizibil**, **mai ordonat** și **ușor** de întreținut.
+Folosindu-l în loc de câteva blocuri imbricate `if`, facem codul **mai lizibil**, **mai ordonat** și **ușor** de întreținut.
 
 Dar cum funcționează atunci când punem câteva condiții una după cealaltă?
 
-Așa cum am văzut mai sus, logica **"ȘI"** returnează true, numai atunci când acceptă ca argumente instrucțiunile cu valori care sunt `true`. 
+Așa cum am văzut mai sus, logica **"ȘI"** returnează true, numai atunci când acceptă ca argumente instrucțiunile cu valori care sunt `adevărate`. 
 
 Respectiv, atunci când avem o **secvență** de argumente, **logica "ȘI"** verifică fie până când nu mai există argumente, fie până când întâlnește un argument cu o valoare `false`.
 
@@ -140,7 +140,7 @@ if (x >= x1 && x <= x2 && y >= y1 && y <= y2) {
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluția: Bonus Points
+# Problemă cu soluție: Bonus Points
 
 [code-task title="Bonus Points" taskId="pb-js-conditional-statements-advanced-Bonus-Points" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -215,13 +215,13 @@ bonusPoints(1)
 [stream language="RO" videoId="488463195/decef19bc9"  /]
 [/video-vimeo]
 
-Logica **OR** (operator `||`) înseamnă că **cel puțin ana** dintre câteva condiții este îndeplinită.
+Logica **OR** (operator `||`) înseamnă că **cel puțin una** dintre câteva condiții este îndeplinită.
 
-Similar cu operatorul `&&`, **OR** logic acceptă câteva argumente de tip **bool** (condițional) și se schimbă în `true` sau `false`.
+Similar cu operatorul `&&`, **OR** logic acceptă câteva argumente de tip **boolean** (condițional) și se schimbă în `true` sau `false`.
 
 Putem afla cu ușurință că **obținem** o valoare `true` de fiecare dată când cel puțin unul dintre argumente are o valoare `true`.
 
-| **Operand unu** | **Operandul doi** | **SAU** |
+| **Operandul unu** | **Operandul doi** | **SAU** |
 | : ---: | : ----: | : ---: |
 | adevărat | adevărat | adevărat |
 | adevărat | fals | adevărat |
@@ -254,13 +254,13 @@ let result = a || b || c || d;
 console.log(result);
 ```
 
-Programele **verifică** `a`, acceptă că are o valoare`false` și continuă.
+Programul **verifică** `a`, acceptă că are o valoare`false` și continuă.
 
 Ajungând la `b`, înțelege că are o valoare `adevărată` și întreaga **expresie** este calculată ca `adevărată`, fără a fi nevoie de bifat`c` sau `d`, deoarece valorile lor **nu ar fi modificat** rezultatul expresiei.
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluția: Food or Drink
+# Problemă cu soluție: Food or Drink
 
 [vimeo-video]
 [stream language="EN" videoId="488477836/b40ae06b15" default /]
@@ -286,15 +286,14 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care:
+Creați un program care determină dacă **intrarea** este **mâncare** sau **băutură**:
 
-* Citește o singură linie și tipărește **băutură**, **mâncare** sau **necunoscută**
 
-* Alimente: curry, fidea, sushi, spaghete
+* Imprimă "**food**" pentru următoarele: **curry**, **noodles**, **sushi** and **spaghetti**
 
-* Băuturi: ceai, apă, cafea
+* Imprimă "**drink**" pentru următoarele: **tea**, **water** and **coffee**
 
-* Orice altceva este necunoscut
+* Imprimă "**unknown**" pentru orice altceva
 
 # Exemplu
 | **Intrare** | **Ieșire**  |
@@ -347,7 +346,7 @@ unknown
 
 
 [slide hideTitle]
-# Operator logic "NU"
+# Operatorul logic "NU"
 
 [vimeo-video]
 [stream language="EN" videoId="486872932/bae112a39e" default /]
@@ -360,7 +359,7 @@ Negarea logică (operator `!`) înseamnă că o condiție dată nu este** îndep
 | --- | --- |
 | adevărat | fals |
 
-Operatorul `!` Acceptă ca **argument** o variabilă bool și **returnează** valoarea acesteia.
+Operatorul `!` Acceptă ca **argument** o variabilă booleană și **returnează** valoarea acesteia.
 
 # Exemplu: număr nevalid
 Un număr dat este valid dacă este în intervalul `[100 ... 200]` sau este `0`. Faceți o validare pentru un număr nevalid.

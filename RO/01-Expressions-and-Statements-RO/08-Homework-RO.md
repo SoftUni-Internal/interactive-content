@@ -25,20 +25,18 @@ function adapter(input, code) {
 # Descriere
 Creați un program care obține un număr întreg și calculează aria unui pătrat cu latura **a**.
 
-- Obțineți un număr în argumentul funcției
-
-- Multiplicați-l și
-
-- Tipăriți rezultatul în consolă
+Veți primi valoarea laterală ca argument al funcției
+- Folosiți formula pentru a calcula aria
+- Imprimați rezultatul pe consolă
 
 ## Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | calculateArea(5) | 25 |
 
 [hints]
 [hint]
-The formula for calculating the area of a square is - a * a.
+Formula pentru calcularea ariei unui pătrat este - a * a.
 [/hint]
 [/hints]
 
@@ -84,7 +82,7 @@ calculateArea(1)
 [/slide]
 
 [slide hideTitle]
-# Problemă: Currency Converter
+# Problemă cu soluție: Currency Converter
 
 [vimeo-video]
 [stream language="EN" videoId="486857468/b246ee7ca8" default /]
@@ -109,18 +107,18 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Description
+# Descriere
 
 Creați un program pentru a converti de la USD la EUR:
 
-* Citiți un **număr cu virgulă mobilă**: **dolari** care urmează să fie convertiți
+* Veți primi un **număr cu virgulă mobilă**: **dolari** care urmează să fie convertiți
 
 * Convertiți dolari în euro (utilizați rata fixă ​​de dolari în euro: **0,88**)
 
 * Imprimați valoarea convertită în **euro**
 
 ## Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | currencyConverter(17) | 14.96 |
 | currencyConverter(87) | 76.56 |
@@ -198,7 +196,7 @@ Rotunjiți rezultatul la cel mai apropiat număr întreg, folosind **toFixed(0)*
 
 
 ## Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | areaOfTriangle(3.1416) | 180 |
 | areaOfTriangle(6.2832) | 360 |
@@ -246,7 +244,7 @@ areaOfTriangle(3.1416)
 [/slide]
 
 [slide hideTitle]
-# Problemă cu Soluție Days to Minutes
+# Problemă cu Soluție: Days to Minutes
 
 [vimeo-video]
 [stream language="EN" videoId="486857308/5e4892a5b8" default /]
@@ -271,18 +269,18 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Description
+# Descriere
 
 Creați un program care covertează zilele în minute:
 
-* Citiți un număr **întreg** (**zilele** care trebuie să fie convertite)
+* Veți primi un singur număr ** întreg **: ** zilele ** de convertit
 
-* Convertiți zilele în minute (utilizați operațiile de calcul)
+* Convertiți zilele în minute
 
-* Imprimați **minutele**
+* Imprimați ** minutele ** pe consolă
 
   ## Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | daysToMinutes(2) | 2880 |
 | daysToMinutes(5) | 7200 |
@@ -351,14 +349,12 @@ function adapter(input, code) {
 # Descriere
 Creați un program pentru a calcula aria și perimetrul unui **cerc**:
 
-* Citiți numărul în virgulă mobilă: **raza** cercului
+* Veți primi un număr cu virgulă mobilă: ** raza ** unui cerc
+   * Calculați ** aria ** și ** perimetrul ** cercului
+   * Imprimați zona și perimetrul, ** formatat ** la 2 cifre după punctul zecimal
 
-* Calculați **aria** și **perimetrul** cercului
-
-* Imprimați valorile calculate **formatate** până la 2 cifre după punctul zecimal
-
-  ## Example
-| **Input** | **Output** |
+  ## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | circleArea(7) | Area = 153.94 |
 |  | Perimeter = 43.98 |
@@ -369,7 +365,7 @@ The formula for calculating a circle's perimeter is: P = 2 * π * R.
 "R" is the radius.
 [/hint]
 [hint]
-The formula for calculating a circle's area is: A = π * R * R.
+Formula pentru calcularea aria unui cerc este: A = π * R * R.
 [/hint]
 [/hints]
 
@@ -447,11 +443,11 @@ Prețul pe metru pătrat este de **7,61 dolari** cu TVA.
 
 Deoarece curtea lui Peter este destul de **mare**, firma contractantă oferă o reducere de **18%** la prețul final.
 
-## Input
+## Intrare
 Funcția primește un argument:
 - Metri pătrați, care vor fi amenajați - un număr real în intervalul \[0.00… 10000.00\]
 
-## Output
+## Ieșire
  Două linii sunt imprimate pe consolă:
 
 - The final price is: \{final price of the service\} dollars.
@@ -459,7 +455,7 @@ Funcția primește un argument:
 - The discount is: \{discount\} dollars.
 
 ## Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | landscape(550) | The final price is: 3432.11 dollars. |
 |  | The discount is: 753.39 dollars. |
@@ -470,24 +466,24 @@ Funcția primește un argument:
 [hints]
 [hint]
 
-Calculate the price for the landscaping of the whole yard and store it in a variable.
+Calculați prețul pentru amenajarea teritoriului întregii curți și depozitați-l într-o variabilă.
 
 [/hint]
 
 [hint]
 
-Calculate the discount and store the result in a variable.
+Calculați reducerea și stocați rezultatul într-o variabilă.
 
 [/hint]
 
 [hint]
 
-Subtract the discount from the total price.
+Scadeți reducerea din prețul total.
 
 [/hint]
 [hint]
 
-Print the result on the console:
+Imprimați rezultatul pe consolă:
 console.log(The final price is: ${total} dollars.);
 console.log(The discount is: ${discount} dollars.);
 

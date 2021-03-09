@@ -1,10 +1,10 @@
 // sectionId: "Javascript::Programming-Basics::For-Loop::Homework"
 
-# Temă de acasă
+# Teme pentru acasă
 
 [slide hideTitle]
 
-# Problem: Calculate Month Salary
+# Problemă: Calculate Month Salary
 
 [code-task title="Calculate Month Salary" taskId="pb-js-for-loop-Calculate-Month-Salary" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -32,11 +32,11 @@ function adapter(input, code) {
 
 # Descriere
 
-Creați un program care:
+Creați un program care calculează și imprimă salariul total
 
-- Primește numărul de zile lucrătoare pentru luna curentă și salariul pe zi - numere întregi
-- Calculează salariul lunar al unui angajat
-- Tipărește rezultatul pe consolă
+- Primiți numărul de zile lucrătoare pentru luna curentă și salariul pe zi - numere întregi
+- Calculați salariul lunar al unui angajat
+- Imprimați rezultatul pe consolă
 
 # Exemplu
 
@@ -86,7 +86,7 @@ calculateMonthSalary(3, ['10', '20', '30'])
 
 [slide hideTitle]
 
-# Problem: Number Sequence
+# Problemă: Number Sequence
 
 [code-task title="Number Sequence" taskId="pb-js-for-loop-Number-Sequence" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -113,11 +113,11 @@ function adapter(input, code) {
 
 # Descriere
 
-Creați un program care:
+Creați un program care găsește **cel mai mare** și **cel mai mic** număr dintr-o anumită secvență:
 
-- Citește **n** reprezentând numărul de numere de citit în continuare
-- Găsește numerele **max** și **min**
-- Le imprimă pe consolă
+- Veți primi **n** reprezentând numărul de numere de procesat
+- Găsiți numerele **max** și **min**
+- Imprimați-le pe consolă
 
 # Exemplu
 
@@ -163,7 +163,7 @@ Min number: -2
 
 [slide hideTitle]
 
-# Problem and Solution: Power Of Numbers
+# Problemă cu soluție: Power Of Numbers
 
 [vimeo-video]
 [stream language="EN" videoId="488453000/3f94136963" default /]
@@ -195,11 +195,11 @@ function adapter(input, code) {
 
 # Descriere
 
-Creați un program care:
+Creați un program care calculează și imprimă un anumit număr la o putere dată:
 
-- Citește **p** - puterea și **n** - numărul
+- Primiți **p** - puterea și **n** - numărul
 
-- Tipărește rezultatul lui **n** la puterea lui **p**
+- Tipăriți rezultatul lui **n** la puterea lui **p**
 
 - Nu utilizați **Math.Pow()** - nu reprezintă obiectivul exercițiului nostru
 
@@ -266,7 +266,7 @@ powerOfNumbers(5, 3)
 
 [slide hideTitle]
 
-# Problem: Equal Pairs
+# Problemă: Equal Pairs
 
 [code-task title="Equal Pairs" taskId="pb-js-for-loop-Calculate-Equal-Pairs" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -293,11 +293,11 @@ function adapter(input, code) {
 
 # Descriere
 
-Creați un program care:
+Creați un program care verifică dacă suma perechilor din secvență este aceeași:
 
-- Citește numărul **n** și **n perechi** de numere
-- Tipărește `Yes, value={sum}`, dacă **suma tuturor** perechilor este **aceeași**
-- **În caz contrar**, imprimă `No, maxdiff={diff}`
+- Primiți numărul **n** și **n perechi** de numere
+- Tipăriți  `Yes, value={sum}`, dacă **suma tuturor** perechilor este **aceeași**
+- **În caz contrar**, imprimați `No, maxdiff={diff}`
 - diff este **diferența maximă** în suma dintre două perechi
 
 # Exemplu
@@ -372,7 +372,7 @@ Yes, value=10
 
 [slide hideTitle]
 
-# Problem: ZigZag Sum
+# Problemă: ZigZag Sum
 
 [code-task title="ZigZag Sum" taskId="pb-js-for-loop-Zig-Zag-Sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -399,13 +399,13 @@ function adapter(input, code) {
 
 # Descriere
 
-Creați un program care:
+Creați un program care calculează și imprima suma secvenței în zigzag:
 
-- Citește **n** - număr reprezentând cantitatea de numere de intrare
-- Citeste **n numere**
+- Primiți **n** - număr reprezentând cantitatea de numere de intrare
+- Procesați **n numere**
 - Pentru fiecare linie **pară** **se adaugă** numărul la rezultat
 - Pentru fiecare linie **impară** linie **se scade** numărul din rezultat
-- **Tipărește** rezultatul
+- **Tipăriți** rezultatul
 
 # Exemplu
 
@@ -479,7 +479,7 @@ zigZagSum(5, ['4564', '345', '456', '4563', '234'])
 
 [slide hideTitle]
 
-# Problem: Divide Without Remainder
+# Problemă: Divide Without Remainder
 
 [code-task title="Divide Without Remainder" taskId="pb-js-for-loop-Divide-Without-Reminder" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -505,14 +505,13 @@ function adapter(input, code) {
 [task-description]
 
 # Descriere
+Creați un program, care găsește câte numere dintr-o secvență sunt divizibile fără rest:
 
-Creați un program care:
+- Primiți un număr `n` și o **cantitate n** de numere după acesta
 
-- Citește `n` și o **cantitate n** de numere după acesta
+- Calculați **procentul** numerelor pot fi împărțite **fără rest folosind 2, 3 și 4 ca divizori**
 
-- Găsește **procentul** din câte dintre ele pot fi împărțite **fără un rest folosind 2, 3 și 4 ca divizori**
-
-- Tipărește procentele pentru **p1, p2 și p3**, **formatate** la a doua cifră după virgulă
+- Imprimați procentele pentru cei trei divizori, **formatate** la a doua cifră după virgulă
 
 # Exemplu
 
@@ -603,7 +602,7 @@ divideWithoutRemainder(10, ['34', '12', '0', '453', '45', '2342', '654', '76', '
 
 [slide hideTitle]
 
-# Problem: Vowel Sum
+# Problemă: Vowel Sum
 
 [code-task title="Vowel Sum" taskId="pb-js-for-loop-Vowel-Sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -630,17 +629,17 @@ function adapter(input, code) {
 
 # Descriere
 
-Creați un program care:
+Creați un program care calculează suma vocalelor într-o secvență, pe baza informațiilor date:
 
-- Citește **n** - numărul de caractere pe care programul urmează să le primească
+- Veți primi numărul **n** - numărul de caractere pe care programul urmează să le primească
 
-- Dacă caracterul este o vocală, se adaugă caracterele **valoare** la rezultat
+- Dacă caracterul este o vocală, se adaugă **valoarea sa** la rezultat
 
 | **character** | **a** | **e** | **i** | **o** | **u** |
 | :-----------: | :---: | :---: | :---: | :---: | :---: |
 |   **value**   |   1   |   2   |   3   |   4   |   5   |
 
-- Tipărește rezultatul
+- Imprimați rezultatul
 
 # Exemplu
 
@@ -714,7 +713,7 @@ vowelSum(7, ['a', 'e', 'c', 'q', 'i', 'u', 'o'])
 
 [slide hideTitle]
 
-# Problem: Rollercoaster
+# Problemă: Rollercoaster
 
 [code-task title="Rollercoaster" taskId="pb-js-for-loop-Rollercoaster" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -741,15 +740,16 @@ function adapter(input, code) {
 
 # Descriere
 
-Creați un program care:
+Creați un program care verifică dacă un rollercoaster poate porni:
 
-- Citește numărul de **locuri** pe un rollercoaster
+Primele trei numere din intrare sunt următoarele: 
+- numărul de **locuri** 
 
-- **Vârsta minimă a pasagerilor**
+- **vârsta minimă a pasagerilor**
 
-- După aceea primește **numărul de persoane** pe coadă pentru această cursă
+- **numărul de persoane** pe coadă 
 
-- Urmat de **vârsta** pentru fiecare persoană de pe coadă
+- Toate celelalte numere reprezintă **vârsta** fiecărei persoane de pe coadă
 
 - Dacă toate locurile pot fi ocupate, programul tipărește: **The rollercoaster departs**
 
@@ -819,7 +819,7 @@ Waiting...
 
 [slide hideTitle]
 
-# Problem and Solution: Multiply
+# Problemă cu soluție: Multiply
 
 [vimeo-video]
 [stream language="EN" videoId="487119938/9a4818ebf0" default /]
@@ -851,13 +851,13 @@ function adapter(input, code) {
 
 # Descriere
 
-Creați un program care:
+Creați un program care înmulțește un număr dat cu toate numerele din intervalul **1**-**10**:
 
-- Citește `n` - un int
+- Veți primi numărul `n` - numărul care trebuie înmulțit
 
-- Deține o buclă for care imprimă: `{n} x {i} = {result}`
+- Scrieți o buclă for care imprimă: "\{**n**\} **x** \{**i**\} **=** \{**result**\}"
 
-- Unde sunt numerele de la **1 la 10 (inclusiv)**
+- Valoarea **i** reprezintă numerele de la **1 la 10 (inclusiv)**
 
 # Exemplu
 
@@ -986,7 +986,7 @@ multiply(8)
 
 [slide hideTitle]
 
-# Problem: Numbers, Divisible by 9
+# Problemă: Numbers, Divisible by 9
 
 [code-task title="Divisible by 9" taskId="pb-js-for-loop-Numbers-Divisible-by-9" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -1013,13 +1013,16 @@ function adapter(input, code) {
 
 # Description
 
-Creați un program care obține două numere și le imprimă pe consolă, toate numerele din interval care sunt divizibile cu 9 fără rest și suma lor.
+Creați un program care imprimă suma numerelor dintr-un interval dat și toate numerele din interval care sunt divizibile cu 9 fără rest.
 
-Pe prima linie tipăriți suma numerelor, iar pe următoarea linie numerele corespunzătoare cu un spațiu între ele.
+- Veți primi **două numere**: intervalul de procesat 
+- Pe primă linie, imprimați suma numerelor 
+- Pe a doua linie, imprimați numerelor divizibile cu 9 fără rest 
 
-# Example
 
-| **Input**       | **Output**                                  |
+# Exemplu
+
+| **Intrare**       | **Ieșire**                                  |
 | --------------- | ------------------------------------------- |
 | solve(100, 200) | The sum: 1683                               |
 |                 | 108 117 126 135 144 153 162 171 180 189 198 |

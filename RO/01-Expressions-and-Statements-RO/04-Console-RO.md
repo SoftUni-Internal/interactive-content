@@ -1,7 +1,7 @@
 // sectionId: "Javascript::Programming-Basics::Expressions-And-Statements::Console"
 
 [slide hideTitle]
-# Console (Terminal)
+# Consolă (Terminal)
 
 În general, **system console** reprezintă un terminal de text, ceea ce înseamnă că acceptă și vizualizează doar **text**, fără elemente grafice ca butoane, meniuri, etc. 
 
@@ -9,13 +9,13 @@ Arată, de obicei, ca o fereastră colorată în negru ca aceasta.
 
 [image assetsSrc="00.Console-example.png" /]
 
-In majoritatea cazurilor,  **console** este o aplicație independentă în care putem scrie comenzi în consolă.
+In majoritatea cazurilor,  **consola** este o aplicație independentă în care putem scrie comenzi.
 
 Este denumită **Command Prompt** in Windows și **Terminal** în Linux și Mac. 
 
 Consola rulează aplicații pentru consolă.Ele citesc text din liniile de comandă și imprimă textul pe consolă.
 
-Vom învăța să programăm, creând **console applications**.
+Vom învăța să programăm, creând **aplicații de consolă**.
 
 VS Code are propria sa consolă pe care o vom folosi pentru a citi intrările și pentru a imprima ieșirile. 
 
@@ -23,6 +23,7 @@ VS Code are propria sa consolă pe care o vom folosi pentru a citi intrările ș
 [/slide]
 
 [slide hideTitle]
+
 # Variabilele de logare pe consolă
 
 [vimeo-video]
@@ -80,19 +81,19 @@ printNum(10);
 ```
 
 Din setările inițiale,  **input** este **text** – o linie de text, citită de consolă.
-- După ce citiți un text din consolă, puteți **parsa textul** la un număr prin `Number()`.
+- După ce citiți un text de pe consolă, puteți **parsa textul** la un număr prin `Number()`.
 
-- Dacă parsarea la un număr nu s-a putut realiza, **each number** va apărea ca **text**, și vom vedea mesajul **cannot do** operații aritmetice.
+- Dacă parsarea la un număr nu s-a putut realiza, **fiecare număr** va apărea ca **text**, și **nu vom putea** efectua operații aritmetice cu acesta.
 
 # Exemplu: orașul natal
-Haideți să scriem un program care îi solicită utilizatorului să introducă numele orașului natal și printează textul. `I am from {homeTown}!`.
+Haideți să scriem un program care îi solicită utilizatorului să introducă numele orașului natal și imprimă textul `I am from {homeTown}!`.
 
 ```js live
 function town(homeTown) {
   console.log(`I am from ${homeTown}!`);
 }
 
-town("Buccuresht");
+town("București");
 ```
 
 În acest caz expresia `{homeTown}`  este înlocuită cu valoarea de intrare `homeTown`.
@@ -109,11 +110,12 @@ Dacă introducem **București**, ieșirea va fi astfel: `I am from București!`
 [stream language="RO" videoId="486855964/c2b23e3efb"  /]
 [/video-vimeo]
 
-Puteți transmite **parametri multipli pentru o funcție.** 
+Puteți transmite **parametri multipli unei funcții.** 
 
 Avem o funcție care **primește doi parametri:** `firstNum` și `secondNum` și imprimă rezultatul sumei numerelor pe consolă.
 
 Aici, `firstNum` și `secondNum` există doar **în corpul funcției.**
+
 
 ``` js live
 function printSum(firstNum, secondNum) {
@@ -156,18 +158,20 @@ function calculateSquareArea(input) {
 ```
 
 # Folosirea interpolării șirului Dollar String
+Folosirea interpolării șirului Dollar String
 Putem formata text în JS folosind, de asemenea, următoarea sintaxa $ syntax. Aceasta ne oferă  o metodă simplificată de formatare a textului.
 
 Încadrată de simbolurile back-tick (**\` \`**), în loc să fie scris între virgule sau ghilimele. 
 
 Putem folosi simbolul dollarului și acolade
 
+
  (`${expression}`):
 ```js
 let name = "John"; 
 console.log(`Hi, ${name}`);
 ```
-Prefixul `$` înaintea unui șir în JS ne ajută să facem așa-numita **string interpolation**: înlocuirea tuturor expresiilor care sunt plasate între acolade  `{ }` în text, cu valorile lor.
+Prefixul `$` înaintea unui șir în JS ne ajută să facem așa-numita **interpolare a șirului**: înlocuirea tuturor expresiilor care sunt plasate între acolade  `{ }` în text, cu valorile lor.
 
 [/slide]
 
@@ -179,14 +183,14 @@ Prefixul `$` înaintea unui șir în JS ne ajută să facem așa-numita **
 [stream language="RO" videoId="486856186/d812421fbc"  /]
 [/video-vimeo]
 
-Pentru a putea citi un **number** din consolă, trebuie să folosim **declare a variable** și să folosim comanda standard **reading a text line** din consola de sistem și după aceea,**convert the text line into a number** folosind `Number(text)`:
+Pentru a putea citi un **număr** de pe consolă, trebuie să **declarăm o variabilă** și să folosim comanda standard **de citire a unei linii de text** de pe consola de sistem și după aceea,**să convertim accea linie de text într-un număr**, folosind `Number(text)`:
 
 ```js
 function example(input){
   let num = Number(input);
 }
 ```
-Linia de sus in JS code **reads a number**, este prima linie de pe consolă.
+Linia de sus in JS code care  **citește un număr**, este prima linie de pe consolă.
 
 Dacă vrem să alocăm o valoare non-numerică acestei variabile, de exemplu `Hello`, vom primi rezultatul`NaN` care este acronimul de la **Not a number**. 
 
@@ -208,7 +212,7 @@ Aici, vedem cum funcționează programul dacă avem un pătrat cu latura egală 
 
 
 [slide hideTitle]
-# Problemă cu soluția: Greeting
+# Problemă cu soluție: Greeting
 [code-task title="Greeting" taskId="pb-js-expression-and-statements-Greeting" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -227,7 +231,7 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Enunț
+# Descriere
 Creați un program care să citească datele de intrare din consolă: numele și apoi imprimați  `Hello, {name}`, unde `{name}` este introdus de utilizator.  
 
 ## Exemplu

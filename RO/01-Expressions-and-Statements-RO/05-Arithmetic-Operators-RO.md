@@ -58,8 +58,7 @@ console.log(a * b);
 
 Tipul numerelor reprezintă **atât** numerele întregi  (integer), cât și cele în virgulă mobilă (floating point number). Nu este  **împărțire întreagă implicită**.
 
-* If you do this
-
+* Dacă faceți acest lucru
 ```js live
 let result = 5/4;
 console.log(result);
@@ -122,7 +121,7 @@ console.log(f);
 [/slide]
 
 [slide hideTitle]
-# Aminitire
+# Operatorul modulo 
 
 [vimeo-video]
 [stream language="EN" videoId="486856887/86a313dc61" default /]

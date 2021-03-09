@@ -2,12 +2,13 @@
 
 [slide hideTitle]
 # Instrucțiunea Switch-case
+
 [vimeo-video]
 [stream language="EN" videoId="486873288/8055a584f1" default /]
 [stream language="RO" videoId="486873288/8055a584f1"  /]
 [/video-vimeo]
 
-Instrucțiunea de comutare a clauzelor case funcționează ca o secvență de blocuri if-else.
+Instrucțiunea de comutare a cazurilor funcționează ca o secvență de blocuri if-else.
 
 Ori de câte ori munca programului nostru depinde de valoarea unei variabile, în loc să facem condiții consecutive cu blocuri `if-else`, putem **folosi** instrucțiunea condițională "**switch**".
 
@@ -128,6 +129,7 @@ switch (selector) {
 [stream language="EN" videoId="486873964/be087efd1c" default /]
 [stream language="RO" videoId="486873964/be087efd1c"  /]
 [/video-vimeo]
+
 Scrieți un program care tipărește tipul animalului în funcție de numele acestuia:
 - dog \-\> **mammal**
 - crocodile, tortoise, snake \-\> **reptile**

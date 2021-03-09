@@ -1,9 +1,9 @@
 // sectionId: "Javascript::Programming-Basics::Conditional-Statements::Homework"
 
-# Temă
+# Teme pentru acasă
 [slide hideTitle]
 
-# Problemă: Guess the Password
+# Problemă cu soluție: Guess the Password
  
 [code-task title="Guess the Password" taskId="pb-js-Conditions-Guess-The-Password" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -24,16 +24,16 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Enunț
+# Descriere
 Creați un program pentru a verifica o parolă:
 
-* Citiți un string pentru: parola **guess**
+* Veți primi un șir: parola **guess**
   * Imprimați "**Welcome**" dacă parola este "**s3cr3t!**"
   * Imprimați "**Wrong password!**" în orice altă situație
 
 # Exemplu
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | guessThePassword('s3cr3t!') | Welcome |
 | guessThePassword('qwerty') | Wrong password! |
@@ -91,10 +91,10 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Enunț
-Creați un program care caută apă la fierbere: 
+# Descriere
+Creați un program care verifică dacă apa fierbe: 
 
-* Citiți un număr în virgulă mobilă: temperatura  **temperature** (in °C)
+* Veți primi un număr în virgulă mobilă: temperatura  **temperature** (in °C)
 
 * Imprimați "**The water is boiling**" dacă numărul este \> 100
 
@@ -102,7 +102,7 @@ Creați un program care caută apă la fierbere:
 
   # Exemplu
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | boilingWater(104.8) | The water is boiling |
 | boilingWater(29) | The water is not hot enough |
@@ -168,18 +168,18 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Enunț
+# Descriere
 Creați un program pentru a verifica viteza mare/mică: 
 
-* Citiți  **speed** (un număr floating-point)
+Creați un program, care determină dacă vă deplasați ** rapid ** sau ** lent ** cu o viteză dată:
 
-* Imprimați "**Slow**" dacă viteza este \<\= 30
-
-* Imprimați "**Fast**" dacă viteza este \> 30
+* Veți primi ** viteza **: (un număr cu virgulă mobilă)
+* Tipăriți „** Lent **” dacă viteza este ** mai mică de ** sau ** egală cu ** 30
+* Tipăriți „** Rapid **” dacă viteza este ** mai mare ** decât 30
 
   # Exemplu
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | speedInfo(30) | Slow |
 | speedInfo(60) | Fast |
@@ -253,41 +253,41 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Enunț
+# Descriere
 
-Avem un integer cu datele ințiale **number** de puncte.
+Veți primi un număr întreg care reprezintă **numărul** inițial de puncte.
 
-**Bonus points** sunt oferite, în funcție de regulile descrise mai jos. 
+**Punctele bonus** sunt oferite, în funcție de regulile descrise mai jos. 
 
 Creați un program care calculează 
 
-- punctele bonus **received** din număr 
+- punctele bonus **primite** din număr 
 
-- care este valoarea inițială **total number of points** - Care este valoarea **number plus the bonus points.**
+- care este valoarea inițială **a numărului total de puncte** 
 
-Dacă numărul este sub valoarea **100 inclusive**, atunci punctele bonus sunt **5**.
-Dacă numărul este **greater than 100**, punctele bonus sunt **20 percent of the number**.
-Dacă numărul este **greater than 1000**, punctele bonus sunt **10 percent of the number**.
+Dacă numărul este sub valoarea **100 inclusiv**, atunci punctele bonus sunt **5**.
+Dacă numărul este **mai mare decât 100**, punctele bonus sunt **20 la sută din număr**.
+Dacă numărul este **mai mare decât 1000**, punctele bonus sunt **10 la sută din număr**.
 
 Punctele adiționale din bonus, sunt obținute separat din cele anterioare:
 
 - Pentru un număr impar, adăugați 1 punct
 
--	Pentru un număr care se termină cu 5, adăugați 2 puncte 
+-Pentru un număr care se termină cu 5, adăugați 2 puncte 
 
 # Exemplu
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | bonusScore(20)| 6 |
 |  |26 |
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | bonusScore(175)| 37 |
 |  |212 |
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | bonusScore(2703)| 270.3 |
 |  |2973.3 |
@@ -401,24 +401,24 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Enunț
+# Descriere
 Creați un program care să calculeze prețul unui bilet:
 
-* Citiți tipul de bilet: fie **student** fie **regular**
+* Veți primi tipul de bilet: fie **student** fie **regular**
 
 * Imprimați **price** în formatul următor`${price}`:
 
-    * Prețul trebuie să fie **formatted** cu 2 cifre după punctul de zecimale 
+    * Prețul trebuie să fie **formatat** cu 2 cifre după punctul de zecimal 
 
 * Prețul unui bilet de student: **1.00**
 
 * Prețul unui bilet obișnuit: **1.60**
 
-* Pentru un tip nevalid, imprimați "**Invalid ticket type!**"
+* Pentru un bilet nevalid, imprimați "**Invalid ticket type!**"
 
 # Exemplu
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | tickets('student') | $1.00 |
 

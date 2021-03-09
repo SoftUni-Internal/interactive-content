@@ -30,7 +30,7 @@ else {
 [/slide]
 
 [slide hideTitle]
-# Exemplu: cifre în engleză
+# Exemplu: Digits in English
 [vimeo-video]
 [stream language="EN" videoId="486879419/2d0e9d0270" default /]
 [stream language="RO" videoId="486879419/2d0e9d0270"  /]

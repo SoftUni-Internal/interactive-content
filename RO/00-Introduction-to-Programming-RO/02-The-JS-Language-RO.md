@@ -8,15 +8,15 @@
 [stream language="RO" videoId="486835179/05cf7da9f0"  /]
 [/video-vimeo]
 
-Un limbaj de programare este un **limbaj artificial** pentru emiterea comenzilor pe care dorim ca computerul să le **citească**, **să le proceseze** și **să le execute**.
+Un limbaj de programare este un **limbaj artificial** pentru emiterea comenzilor pe care dorim ca calculatorul să le **citească**, **să le proceseze** și **să le execute**.
 
-Folosind limbaje de programare, putem scrie **secvențe de comenzi** (programe), care definesc ce ar trebui să facă computerul.
+Folosind limbaje de programare, putem scrie **secvențe de comenzi** (programe), care definesc ce ar trebui să facă calculatorul.
 
 Unele dintre cele mai populare limbaje de programare în prezent sunt C#, Java, JavaScript, Python, C, C ++, PHP, Swift, Go.
 
 Aceste limbaje **diferă în ceea ce privește filozofia**, sintaxa, scopul, construcțiile de programare și mediul de execuție.
 
-Executarea programelor de calculator se poate face cu un **compilator** sau cu un **interpret**.
+Executarea programelor de calculator se poate face cu un **compilator** sau cu un **interpretor**.
 
 ## Compilatoare
 
@@ -24,9 +24,9 @@ Compilatorul **traduce** codul **din limbajul de programare în** codul mașinii
 
 Împreună, toate compilate în fragmente de cod de mașină reprezintă programul într-un mod în care microprocesorul computerului îl poate procesa.
 
-## Interpreters
+## Interpretori
 
-Interpretul este `un program pentru executarea programelor`.
+Interpretorul  este `un program pentru executarea programelor`.
 
 **execută comenzile** în program una după alta, deoarece este capabil să proceseze nu numai o singură comandă sau o secvență de comenzi, ci și **alte construcții de limbaj.**
 
@@ -71,9 +71,9 @@ Altfel spus, conține o succesiune de **calcule**, **evaluări**, **iterații** 
 
 Un program JavaScript este scris în **formă de text**,iar textul programului se numește **cod sursă**.
 
-**Interpretul** execută codul **direct linie cu linie**.
+**Interpretorul** execută codul **direct linie cu linie**.
 
-Scripturile și limbajele interpretate, cum ar fi JavaScript, Python și PHP, își primesc numele din prizma faptului că sursa lor de cod este **executată pas cu pas de un interpret.**
+Scripturile și limbajele interpretate, cum ar fi JavaScript, Python și PHP, își primesc numele**din prizma faptului că sursa lor de cod este **executată pas cu pas de un interpretor.**
 
 [image assetsSrc="execution-engine.png" /]
 

@@ -1,5 +1,5 @@
 // sectionId: "Javascript::Programming-Basics::Exam-Preparation::Problem-05"
-# Problem 5: TV Series Budget
+# Problema 5: TV Series Budget
 [slide hideTitle]
 
 # TV Series Budget
@@ -28,9 +28,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Ați fost angajat de o companie TV să scrieți un program care calculează dacă este posibil pentru clienții săi să cumpere serialele sale TV. 
-
-Veți primi un număr, reprezentând bugetul clientului, numărul total de titluri de seriale pe care clientul ar vrea să le cumpere și, după aceea, prețul fiecăruia dintre seriale.Unele seriale au aplicate reduceri:
+Unele seriale au aplicate reduceri:
 
 - **Thrones**: 50\%
 - **Lucifer**: 40\%	
@@ -41,15 +39,15 @@ Veți primi un număr, reprezentând bugetul clientului, numărul total de titlu
 ## Intrare
 Primiți de pe consolă:
 
-- Buget: un număr întreg în intervalul \[10.0...100.0\]
+- Buget: un număr întreg în intervalul \[10.0… 100.0\]
 
-- Numărul de seriale: "**n**" - un număr întreg în intervalul \[1...10\]
+- Numărul de seriale: "**n**" – un număr întreg în intervalul \[1… 10\]
 
 Pentru fiecare serie primiți două elemente:
 
 - Numele serialului: un șir
 
-- Prețul serialului: un număr real în intervalul \[1.0...15.0\]
+- Prețul serialului: un număr real în intervalul \[1.0… 15.0\]
 
 ## Ieșire
 Imprimați o linie pe consolă:
@@ -74,11 +72,11 @@ Rezultatul trebuie să fie formatat la două cifre după punctul zecimal.
 [hints]
 
 [hint]
-After receiving the budget and the series count, determine whether the series in the input have a discount.
-Then, calculate the price for each series.
+După primirea bugetului și a numărului de serii, determinați dacă seriile din intrare au o reducere.
+Apoi, calculați prețul pentru fiecare serie.
 [/hint]
 [hint]
-Calculate the price for the all of the series and check if you can buy them.
+Calculați prețul pentru toate seriile și verificați dacă le puteți cumpăra.
 [/hint]
 
 [/hints]

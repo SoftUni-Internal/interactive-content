@@ -1,7 +1,6 @@
 // sectionId: "Javascript::Programming-Basics::Expressions-And-Statements::Lesson-Introduction"
 
-# Lecție introductivă
-
+# Introducere
 [slide hideTitle]
 
 # Conținutul lecției
@@ -21,7 +20,7 @@
 
 - Diferitele tipuri de date în JavaScript
 
-**3. Declarații (comenzi)**
+**3. Instrucțiuni (comenzi)**
 
 - Cum să scrieți comenzi
 
@@ -37,6 +36,7 @@
 
 - Cum să combinați valorile și operatorii
 
-**7. Exerciții aplicative / Aplicații**
+**7. Exerciții practice**
+
 
 [/slide]

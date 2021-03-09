@@ -1,6 +1,6 @@
 // sectionId: "Javascript::Programming-Basics::While-Loop::Homework"
 
-# Temă pentru acasă
+# Teme pentru acasă
 
 [slide hideTitle]
 # Problemă și soluție: Sum Digits
@@ -32,14 +32,14 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care trebuie să îndeplinească urmăatoarele cerințe:
+Creați un program care adună toate cifrele unui număr dat:
 
-* Citește un număr de pe consolă
-* **Calculează suma** **cifrelor** care compun acest număr
-* Tipărește suma cifrelor
+* Veți primi un număr de pe consolă
+* **Calculați **suma** **cifrelor** care compun acest număr
+* Tipăriți suma cifrelor
 
 # Exemplu
-  | **Date de intrare** | **Date de ieșire** |
+  | **Intrare** | **Ieșire** |
 | --- | --- |
 |sumDigits(5634)| 18 |
 
@@ -128,15 +128,16 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care îndeplinește următoarele cerințe: 
+Creați un program care găsește o anumită **carte preferată** dintr-o matrice de cărți: 
 
-* Primește numele cărții preferate
-* Primește numele unor cărți, până ce ajunge la cartea preferată
-* Imprimă `Invalid book: {book name}` pentru toate cărțile nevalide
-* Imprimă `Book found!`, atunci când găsește cartea și programul se oprește.
+* Veți primi un șir, reprezentând ** titlul cărții preferate **
+* Apoi, veți primi titluri de cărți până ce ajungeți la cartea preferată
+* Tipăriți „** Carte nevalidă: ** \ {** titlul cărții ** \}” pentru toate cărțile nevalide
+* Imprimați „** Cartea găsită! **” când întâlniți titlul cărții preferate
+* Rupeți bucla după ce ajungeți la cartea preferată
 
 # Exemplu
-  | **Date de intrare** | **Date de ieșire** |
+  | **Intrare** | **Ieșire** |
 | --- | --- |
 | favoriteBook('Alice in Wonderland', ['Winnie the Pooh', 'Peter Pan', 'Alice in Wonderland']) | Invalid book: Winnie the Pooh |
 ||Invalid book: Peter Pan|
@@ -234,13 +235,13 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care să îndeplinească următoarele cerințe: 
+Creați un program care găsește **cel mai mare** și **cel mai mic** număr dintr-o secvență: 
 
-* Primește numere întregi până când ajungem la **sfârșit** **END**
-* Printează **cel mai mare** și cel mai **mic** număr întreg
+* Primiți numere întregi până când ajungeți la comanda* **END**
+* imprimați **cel mai mare** și cel mai **mic** număr întreg
 
 # Exemplu
-  | **Date de intrare** | **Date de ieșire** |
+  | **Intrare** | **Ieșire** |
 | --- | --- |
 | minAndMax(['10', '20', '304', '0', '50', 'END'])| Max number: 304 |
 ||Min number: 0|
@@ -329,18 +330,18 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
+Creați un program care verifică dacă un număr este special
+
+* Primiți un șir
+
+* **Tipăriți** `{num} is special`, dacă numărul este special
+
+* Altfel, imprimați`{num} is not special` 
+
 Numărul special este numărul **divizibil la toate cifrele sale componente** fără rest. 
 
-Creați un program cu următoarele caracteristici: 
-
-* Primește un șir
-
-* **Tipărește** `{num} is special`, dacă numărul este special
-
-* Altfel, printează `{num} is not special` (numărul nu este special)
-
 # Exemplu
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | specialNumber('23')| 23 is not special |
 
@@ -431,14 +432,14 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care să îndeplinească următoarele sarcini: 
+Creați un program care calculează punctele de bonus, pe baza următoarelor reguli: 
 
-* Citește un număr **intreg** de pe consolă
-* Continuă să citească numerele întregi până când găsește **un număr care este același ca primul număr introdus**
-* Atunci când găsește această valoare, crește valoarea numărului **anterior** **acestuia** cu 100% și o tipărește
+* Veți primi un număr ** întreg ** ** x ** și o ** matrice ** de pe consolă
+* Continuați să procesați numerele întregi din matrice până când găsiți ** același cu x *
+* Când îl găsiți, înmulțiți valoarea numărului ** dinaintea acestuia ** cu 2 și imprimați-l.
 
 # Exemplu
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | specialBonus(25, ['20', '30', '25']) | 60 |
 
@@ -529,14 +530,14 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care: 
+Creați un program care imprimă o secvență de numere până la intrarea dată, pe baza următoarelor reguli: 
 
-* Citește un număr **n** din consolă
-* Printează o **secvență** de numere, care sunt **mai mici sau egale cu n** (**<= n**) și satisfac următoarea condiție:
+* Veți primi un număr **n** de pe consolă
+* Imprimați o **secvență** de numere, care sunt **mai mici sau egale cu n** (**<= n**) și satisfac următoarea condiție:
 * Fiecare număr este egal cu numărul anterior înmulțit cu doi (**2**) la care se adaugă o unitate (**1**)
 
 # Exemplu
-  | **Date de intrare** | **Date de ieșire** |
+  | **Intrare** | **Ieșire** |
 | --- | --- |
 | sequence(8) | 1 |
 ||3|
@@ -640,14 +641,14 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program cu următoarele sarcini: 
+Creați un program care gestionează soldul unui cont: 
 
-* Primește **suma de bani** pentru fiecare tranzacție până când ajungem la sfârșit (`END`)
-* **Adună** banii la **sold** și **tipărește*: `Suplimentare: {money}`, formatează `money` până la a **doua zecimală** după virgulă
-* După `END` calculează și **printează** soldul total: `Total: {balance}`, formatează `balance` până la a **doua zecimală** după virgulă
+* Veți primi **suma de bani** pentru fiecare tranzacție până când ajungeți la comanda **END**
+* **Adunați** banii la **sold** și **tipăriți*: "**Increase:** \{**money**\}", formatați `money` până la a **doua zecimală** după virgulă
+* După **END** calculați și **imprimați** soldul total: "**Total:** \{**balance**\}", formatați `balance` până la a **doua zecimală** după virgulă
 
 # Exemplu
-  | **Date de intrare* | **Date de ieșire** |
+  | **Intrare* | **Ieșire** |
 | --- | --- |
 | accountBalance(['5.51', '69.42', '100', 'END'])| Increase: 5.51 |
 ||Increase: 69.42|

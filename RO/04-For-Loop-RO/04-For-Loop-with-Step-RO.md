@@ -35,7 +35,7 @@ for (let i = 0; i < 10; i += 2) {
 
 S-ar putea să dorim să avem un **pas descrescător** - `i - =` + dimensiunea pasului.
 
-În acest caz, ar trebui să fim atenți la condiția finală pentru a evita **o** buclă infinită.
+În acest caz, ar trebui să fim atenți la condiția finală pentru a evita **o buclă infinită**.
 
 ```js live
 for (let i = 10; i >= 1; i--) {
@@ -47,7 +47,7 @@ for (let i = 10; i >= 1; i--) {
 
 [slide hideTitle]
 
-# Problemă cu soluția: Number Ending with 7
+# Problemă cu soluție: Number Ending with 7
 
 [vimeo-video]
 [stream language="EN" videoId="487119426/15f9ad851f" default /]
@@ -79,14 +79,13 @@ function adapter(input, code) {
 
 # Description
 
-Creați un program care:
-
-- Citește un număr **n**
-- Imprimă toate numerele de la **7 până la n**, **care se termină cu 7**
+Creați un program care imprimă toate numerele care se termină cu 7, până la numărul n 
+- Primiți un număr **n**
+- Imprimați toate numerele de la **7 până la n**, **care se termină cu 7**
 
 # Example
 
-| **Input**              | **Output** |
+| **Intrare**              | **Ieșire** |
 | ---------------------- | ---------- |
 | numbersEndingWith7(30) | 7          |
 |                        | 17         |
@@ -158,7 +157,7 @@ numbersEndingWith7(130)
 
 [slide hideTitle]
 
-# Problemă cu soluția: Exam Countdown
+# Problemă cu soluție: Exam Countdown
 
 [code-task title="Exam Countdown" taskId="pb-js-for-loop-Exam-Countdown" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -183,17 +182,17 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 
-# Description
+# Descriere
 
-Creați un program care:
+Creați un program care numără zilele rămase până la un examen
 
-- Citește un număr întreg - numărul de **zile înainte de examen**
+- Primiți un număr întreg - numărul de **zile înainte de examen**
 - După fiecare zi trecută, imprimă: \{numberOfDaysLeft\} days before the exam
 - La final imprimă: **The exam has come.**
 
 # Example
 
-| **Input**        | **Output**             |
+| **Intrare**        | **Ieșire**             |
 | ---------------- | ---------------------- |
 | examCountdown(3) | 3 days before the exam |
 |                  | 2 days before the exam |

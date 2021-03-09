@@ -1,7 +1,7 @@
 // sectionId: "Javascript::Programming-Basics::For-Loop::Summary"
 
 [slide hideTitle]
-# Recapitulare
+# Rezumat
 
 [vimeo-video]
 [stream language="EN" videoId="487119952/6981ade933" default /]
@@ -24,7 +24,7 @@ for (initialization; condition; update) {
 
     - **Condiție**
 
-    - **Etapa**
+    - **Pas**
 
     - **Corp**
 

@@ -1,6 +1,6 @@
 // sectionId: "Javascript::Programming-Basics::Expressions-And-Statements::Data-Types"
 
-# Tipurile de date și gama de variabile
+# Tipurile de date 
 
 [slide hideTitle]
 # Tipurile de date
@@ -81,7 +81,7 @@ Tipurile de date își pot stabili intervale de valori cu caracteristici similar
 
 Ele se pot caracteriza prin:
 
-* **Nume / Denumire**
+* **Nume**
 
 * **Mărime** (capacitatea de memorie utilizată): Exemplu: 4 biți
 
@@ -93,21 +93,22 @@ Ele se pot caracteriza prin:
 
 În programarea computerizată, convențiile privind nume sunt reprezentate de un set de **reguli** pentru alegerea numelor variabilelor.
 
-În limbajul JavaScript, convenția pentru alocarea unui nume unei variabile este reprezentat de **camel-case**. 
+În limbajul JavaScript, convenția pentru alocarea unui nume unei variabile este reprezentat de **camelCase**. 
 
-Mai există și alte convenții privind denumirea variabilelor care sunt utilizate în alte limbaje de programare, precum `Pascal case` și  `Snake case`. 
+Mai există și alte convenții privind denumirea variabilelor care sunt utilizate în alte limbaje de programare, precum `Pascalcase` și  `Snake case`. 
 
-**Camel case** combină cuvinte după cum urmează:
+**camelCase** combină cuvinte după cum urmează:
 
 * Indicând separarea cuvintelor cu o simpla literă mare la începutul fiecărui cuvânt următor
 
-* Eliminând toate spațiile
+* Eliminând toate spațiile:
+
 
 ```js
 let userLoginCount;
 ```
 
-**Pascal case** combină cuvintele în următoarea manieră:
+**PascalCase** combină cuvintele în următoarea manieră:
 
 * Fiecare cuvânt începe cu literă mare, inclusiv primul
 
@@ -117,12 +118,12 @@ let userLoginCount;
 let UserLoginCount;
 ```
 
-**Snake-case** este o altă convenție privind alocarea unui nume, care combină cuvintele astfel:
+**Snake_case** este o altă convenție privind alocarea unui nume, care combină cuvintele astfel:
 
-* Folosind o liniuță jos ca separator al cuvintelor `_`
-* Eliminând toate spațiile
-* Litera de început a fiecărui element component este de obicei literă mică
-* Prima literă poate fi literă mică sau majusculă, la alegere
+* folosind o liniuță jos ca separator al cuvintelor `_`
+* eliminând toate spațiile
+* litera de început a fiecărui element component este de obicei literă mică
+* prima literă poate fi literă mică sau majusculă, la alegere:
 
 ```js
 let users_count;

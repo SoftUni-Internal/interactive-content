@@ -13,7 +13,7 @@ Comanda `break` oprește executarea unei bucle în momentul apelării sale și c
 
 Acest lucru înseamnă că iterația curentă a buclei nu va fi finalizată și, prin urmare, restul codului din corpul buclei nu va fi executat.
 
-Dacă folosiți bucle imbricate, enunțul acesta va opri executarea buclei celei mai interioare și va începe executarea de la următoarea linie de după bloc. 
+Dacă folosiți bucle imbricate, această instrucțiune va opri executarea buclei celei mai interioare și va începe executarea de la următoarea linie de după bloc. 
 
 [/slide]
 
@@ -39,5 +39,5 @@ while (true) {
   }
 }
 ```
-Când vine vorba despre utilizarea intenționată a unei bucle infinite, `break` va opri bucla atunci când este îndeplinită o condiție dată.
+Când vine vorba despre utilizarea intenționată a unei bucle infinite, operatorul  `break` va opri bucla atunci când este îndeplinită o condiție dată.
 [/slide]

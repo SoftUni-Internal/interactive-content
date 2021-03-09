@@ -1,6 +1,6 @@
 // sectionId: "Javascript::Programming-Basics::While-Loop::Lesson-Introduction"
 
-# Lecție introductivă
+Introducere
 
 [slide hideTitle]
 

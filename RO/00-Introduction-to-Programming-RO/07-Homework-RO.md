@@ -1,10 +1,10 @@
 // sectionId: "Javascript::Programming-Basics::Introduction-to-Programming::Homework"
 
-# Homework
+# Teme pentru acasă
 
 [slide hideTitle]
 
-# Problemă: Print Hello "JavaScript"
+# Problemă cu soluție: Print Hello "JavaScript"
 [code-task title="Print Hello Javascript" taskId="pb-js-introduction-Print-Hello-Javascript" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
 ```
@@ -35,7 +35,7 @@ Hello JavaScript
 
 [slide hideTitle]
 
-# Problemă: Calculate and Print 5 * 5
+#  Problemă cu soluție: Calculate and Print 5 * 5
 [code-task title="Calculate and Print 5 * 5" taskId="pb-js-introduction-Calculate-and-Print" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
 ```

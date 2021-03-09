@@ -1,14 +1,14 @@
 // sectionId: "Javascript::Programming-Basics::Expressions-And-Statements::Summary"
 
 [slide hideTitle]
-# Recapitulare
+# Rezumat
 
 [vimeo-video]
 [stream language="EN" videoId="486857140/d87a2bce63" default /]
 [stream language="RO" videoId="486857140/d87a2bce63"  /]
 [/video-vimeo]
 
-## In această lecție am învățat: 
+## In această lecție ați învățat: 
 
 - Tipurile de date definesc gama de date
 ```js
@@ -17,33 +17,33 @@ let employed = true;
 let age = 35;
 ```
 
-- Declarațiile definesc comenzile
+- Instrucțiunile definesc comenzile
 
 
 ```js
   let counter = 1;
 ```
 
-- Cum să citim și să imprimăm datele furnizate de utilizator 
+- Cum să citiți și să imprimați datele furnizate de utilizator 
 
 ```js
 function town(homeTown) {
   console.log(`I am from ${homeTown}!`);
 }
 
-town("Buccuresht");
+town("Paris");
 ```
 
-- Cum să efectuăm operații aritmetice simple
+- Cum să efectuați operații aritmetice simple
 
 ```js
   let sum = 5 + 10;
   ```
 
-- Cum să formatăm datele de ieșire folosind interpolarea
+- Cum să formatați datele de ieșire folosind interpolarea
 
 ```js
-let homeTown = "Buccuresht";
+let homeTown = "Paris";
 
 console.log(`I am from ${homeTown}!`);
 ```
@@ -54,13 +54,13 @@ console.log(`I am from ${homeTown}!`);
 let r = (150-20) / 2 + 5;
 ```
 
-# # In următoarea lecție vom învăța:
+# # In următoarea lecție veți învăța:
 
-- Cum să comparăm valorile folosind operatorii de comparație
+- Cum să comparați valorile folosind operatorii de comparație
 
-- Ce sunt declarațiile condiționale
+- Ce sunt instrucțiunile condiționale
 
-- Cum să facem depanarea în Virtual Studio Code
+- Cum să faceți depanarea în Virtual Studio Code
 
 
 [/slide]

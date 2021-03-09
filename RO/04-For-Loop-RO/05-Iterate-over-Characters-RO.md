@@ -76,7 +76,7 @@ console.log(asciiValue);
 
 [slide hideTitle]
 
-# Problemă cu soluția: Latin Letters
+# Problemă cu soluție: Latin Letters
 
 [code-task title="Latin Letters" taskId="pb-js-for-loop-Latin-Letters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -101,14 +101,14 @@ function adapter(input, code) {
 
 [/code-adapter]
 [task-description]
-Creați un program care:
+Creați un program care imprimă toate literele dintr-un interval dat:
 
-- Citește 2 litere
-- Imprimă toate literele din intervalul dat inclusiv
+- Primiți 2 litere
+- Imprimați toate literele din intervalul dat inclusiv
 
 # Example
 
-| **Input**              | **Output** |
+| **Intrare**              | **Ieșire** |
 | ---------------------- | ---------- |
 | latinLetters('a', 'c') | a b c      |
 

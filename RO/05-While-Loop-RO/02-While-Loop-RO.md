@@ -37,7 +37,7 @@ Toată această parte se repetă din nou **până într-un anumit punct în care
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluția: Decreasing Numbers
+# Problemă cu soluție: Decreasing Numbers
 
 [vimeo-video]
 [stream language="EN" videoId="487120584/cf3fbb855b" default /]
@@ -63,14 +63,14 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Cerință
-Creați un program care:
+# Descriere
+Creați un program care imprimă toate numerele din intrarea dată în ordine descrescătoare:
 
-* Citește un număr de pe consolă
-* Imprimă numerele începând de la numărul respectiv și până la 1 (**inclusiv**)
+* Primiți un număr de pe consolă
+* Imprimați numerele începând de la numărul respectiv și până la 1 (**inclusiv**)
 
 # Exemplu
-  | **Input** | **Output** |
+  | **Intrare** | **Ieșire** |
 | --- | --- |
 |decreasingNumbers(4)| 4 |
 ||3 |
@@ -147,12 +147,16 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Cerință
+# Descriere
 
-Creați un program care imprimă toate **numerele ≤ n** din seria: **1, 3, 7, 15, 31, …,** presupunând că fiecare număr care urmează = **numărul precedent * 2 + 1**.
+Creați un program, care imprimă toate numerele ** mai mici decât ** și ** egale cu ** un număr dat ** n **:
+
+- primiți un număr ** n **
+
+- Respectați următoarele reguli la imprimare: ** 1, 3, 7, 15, 31,…, n ** presupunând că fiecare număr următor este egal cu ** numărul anterior * 2 + 1 **.
 
 # Exemplu
-  | **Input** | **Output** |
+  | **Intrare** | **Ieșire** |
 | --- | --- |
 |sequence(8)| 1 |
 ||3 |

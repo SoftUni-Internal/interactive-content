@@ -1,7 +1,6 @@
 // sectionId: "Javascript::Programming-Basics::Nested-Loops::Lesson-Introduction"
 
-# Lecție introductivă
-
+# Introducere
 [slide hideTitle]
 
 # Conținutul lecției

@@ -1,7 +1,8 @@
 // sectionId: "Javascript::Programming-Basics::Conditional-Statements-Advanced::Summary"
 
 [slide hideTitle]
-# Recapitulare
+# Rezumat
+
 [vimeo-video]
 [stream language="EN" videoId="486874488/8ad9f383d6" default /]
 [stream language="RO" videoId="486874488/8ad9f383d6"  /]

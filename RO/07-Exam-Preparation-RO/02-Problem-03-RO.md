@@ -41,9 +41,9 @@ Scrieți un program care calculează care este prețul total pe care trebuie să
 
 Sunt, de asemenea, reduceri promoționale disponibile pentru două dintre filme:
 
-- Dacă filmul ales este "**Star Wars**" și sunt cumpărate cel puțin patru bilete, este aplicată o reducere de 30\% pe familie
+- Dacă filmul ales este "**Star Wars**" și sunt cumpărate cel puțin patru bilete, este aplicată o reducere de 30\% pe familie.
 
-- Dacă filmul ales este "**Jumanji**" și sunt cumpărate exact 2 bilete, se aplică o reducere de 15\% pe cuplu
+- Dacă filmul ales este "**Jumanji**" și sunt cumpărate exact 2 bilete, se aplică o reducere de 15\% pe cuplu.
 
 ## Intrare
 
@@ -53,7 +53,7 @@ Ca intrare veți primi 3 elemente de consolă:
 
 - Linia 2: ofertă - șir: "**Drink**", "**Popcorn**" or "**Menu**"
 
-- Linia 3: număr de bilete - un număr întreg în intevalul \[1...30\]
+- Linia 3: număr de bilete  – un număr întreg în intevalul \[1… 30\]
 
 ## Ieșire
 
@@ -72,11 +72,11 @@ Imprimați o linie pe consolă:
 [hints]
 
 [hint]
-Depending on what movie and drink have been chosen, determine the ticket price.
+Stabiliți prețul biletului, în funcție de filmul și băutura alese 
 [/hint]
 
 [hint]
-Check if there will be a discount and calculate the total price.
+Verificați dacă va fi aplicată o reducere și calculați prețul total.
 [/hint]
 [/hints]
 

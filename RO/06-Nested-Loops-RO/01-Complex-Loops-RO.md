@@ -48,7 +48,7 @@ for (let d = 40; d > 0; d /= 2) {
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Numbers from N down to 1
+# Problemă cu soluție: Numbers from N down to 1
 
 [vimeo-video]
 [stream language="EN" videoId="488089892/222dacd55c" default /]
@@ -78,11 +78,12 @@ function adapter(input, code) {
 # Descriere
 Creați un program pentru a imprima numerele de la N până la 1.
 
-Funcția primește un număr **n** și imprimă numerele de la **n** până la 1.
+- Primiți un număr **n** 
+- Imprimați  numerele de la **n** până la 1 în **ordine descrescătoare** 
 
 # Exemplu
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | numbersFromNto1(5) | 5, 4, 3, 2, 1 |
 
@@ -136,7 +137,7 @@ numbersFromNto1(1)
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Numbers from 1 to N with Step 3
+# Problemă cu soluție: Numbers from 1 to N with Step 3
 
 [vimeo-video]
 [stream language="EN" videoId="488090074/f832efa21d" default /]
@@ -165,12 +166,12 @@ function adapter(input, code) {
 # Descriere
 Creați un program pentru a imprima numerele de la 1 la **n** cu pasul 3:
 
-*Primește un număr **n**
+*Primiți un număr **n** ca intrare
 
-*Tipărește numerele de la 1 la **n** cu pasul 3
+*Tipăriți numerele de la 1 la **n** cu pasul 3
 
 # Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | numbersFrom1ton(7) | 1, 4, 7 |
 | numbersFrom1ton(10) | 1, 4, 7, 10 |
@@ -224,7 +225,7 @@ numbersFrom1ton(30)
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Even Powers of 2
+# Problemă cu soluție: Even Powers of 2
 
 [vimeo-video]
 [stream language="EN" videoId="488090120/198b6ba65a" default /]
@@ -253,13 +254,15 @@ function adapter(input, code) {
 # Descriere
 Creați un program pentru a imprima puterile pare cu 2:
 
-* Primește un număr **n**
+Creați un program, care imprimă toate puterile uniforme de 2 până la o intrare dată:
 
-* Tipărește puterile uniforme de la 2 până la **2n**:
+* Veți primi un număr ** n ** ca intrare
+
+* Imprimați puterile pare de 2 până la ** n **:
 
 # Exemplu
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | evenPowersOfTwo(5) | 1, 4, 16 |
 | evenPowersOfTwo(10) | 1, 4, 16, 64, 256, 1024 |

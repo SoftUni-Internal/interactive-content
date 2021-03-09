@@ -71,7 +71,7 @@ for (let r = 0; r <= rows; r++) {
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluția: Triangle of Stars
+# Problemă cu soluție: Triangle of Stars
 [code-task title="Triangle of Stars" taskId="pb-js-nested-loops-Triangle-of-Stars" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -92,12 +92,12 @@ function adapter(input, code) {
 [task-description]
 
 # Descriere
-Creați un program care:
+Creați un program care care imprimă un triunghi de stele cu o anumită dimensiune:
 
-* Citește **înălțimea** unui triunghi de pe consolă
+* Primiți **înălțimea** unui triunghi de pe consolă
 * Tipărește un **triunghi de stele**
 # Exemplu
-| **Input** | **Output**| 
+| **Intrare** | **Ieșire**| 
 | --- | --- |
 | triangleOfStars(5) | \* |
 | | \*\* |

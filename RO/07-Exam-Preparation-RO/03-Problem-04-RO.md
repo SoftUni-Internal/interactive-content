@@ -1,5 +1,5 @@
 // sectionId: "Javascript::Programming-Basics::Exam-Preparation::Problem-04"
-# Problem 4: Cinema Income
+# Problema 4: Cinema Income
 [slide hideTitle]
 # Cinema Income
 
@@ -23,7 +23,7 @@ Ați fost angajat de un cinematograf să scrieți un program care să calculeze 
 
 Trebuie să primiți numărul de locuri din sală și pe următoarele linii din consolă, până ce este introdusă comanda "**Movie time!**", veți primi un număr de spectatori noi.
 
-**Prețul biletului este de 5 USD.**
+Prețul biletului este de 5 USD.
 
 Dacă numărul de oameni care intră în sală poate fi împărțit la trei fără să avem un rest, atunci se va aplica o reducere de $5 la prețul total.
 
@@ -33,16 +33,16 @@ Dacă numărul de spectatori care intră, depășește numărul de locuri rămas
 
 
 ## Intrare
-Citiți de pe consolă:
+Veți primi următoarele elemente de pe consolă:
 
-- Primul element: capacitatea sălii: un număr întreg în intervalul  \[50...150\]
+- Primul element: capacitatea sălii: un număr întreg în intervalul  \[50... 150\]
 
 - 
 Pe fiecare dintre elementele următoare, până când comanda este "**Movie time!**":
 
-- Numărul de oameni care intră în cinematograf: un număr întreg în intervalul  \[1...15\]
+- Numărul de oameni care intră în cinematograf: un număr întreg în intervalul  \[1… 15\]
 
-## Output
+## Ieșire
 Mai întâi, tipăriți următoarele linii:
 
 - Dacă ați primit comanda "**Movie time!**": 
@@ -57,7 +57,7 @@ Mai întâi, tipăriți următoarele linii:
 
  "**Cinema income -** \{**income**\}$"
 
-## Example
+## Exemplu
 
 | **Intrare** | **Ieșire** |
 | --- | --- |
@@ -69,14 +69,14 @@ Mai întâi, tipăriți următoarele linii:
 [hints]
 
 [hint]
-Get the hall's capacity. Then calculate how much each group of visitors will pay.
+Obțineți capacitatea sălii. Apoi calculați cât va plăti fiecare grup de vizitatori.
 [/hint]
 [hint]
 
-If the number of people entering the hall can be divided by 3, apply the discount.
+Dacă numărul de persoane care intră în sală poate fi împărțit la 3, aplicați reducerea.
 [/hint]
 [hint]
-Upon receiving the command "**Movie time!**", print the suitable output.
+După primirea comenzii „** Movie time! **”, imprimați rezultatul adecvat.
 [/hint]
 
 [/hints]

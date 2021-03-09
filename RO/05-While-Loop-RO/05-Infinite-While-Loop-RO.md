@@ -23,7 +23,7 @@ while (true) {
 
 [slide hideTitle]
 
-# Exemplu: Bucla infinită While (Bug)
+# Exemplu: Bucla infinită While (Eroare)
 
 [vimeo-video]
 [stream language="EN" videoId="487120943/858eb0fc69" default /]
@@ -40,7 +40,7 @@ while (command !== "End") {
 
 În exemplul de mai sus, condiția este mereu adevărată (`true`), pentru că nu se schimbă niciodată.
 
-# Exemplu: Bucla finită (Depanarea bug-ului)
+# Exemplu: Bucla finită (Depanarea erorii)
 ```js
 let command = "Add";
 while (command != "End") {

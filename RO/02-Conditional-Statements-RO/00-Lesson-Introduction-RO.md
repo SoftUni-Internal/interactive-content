@@ -1,6 +1,6 @@
 // sectionId: "Javascript::Programming-Basics::Conditional-Statements::Lesson-Introduction"
 
-# Lecție introductivă
+# Introducere
 
 [slide hideTitle]
 
@@ -17,11 +17,11 @@
 
 - Comparați valorile folosind operatorii de comparație.
 
-**2. Ce Reprezintă Declarațiile Condiționale:**
+**2. Ce Reprezintă instrucțiunile condiționale:**
 
-- Declarația `if`                           
-- Declarația  `if-else`                   
-- Declarația `if-else-if-else`- ...    
+- Instrucțiunea `if`                           
+- Instrucțiunea   `if-else`                   
+- Instrucțiunea  `if-else-if-else`- ...    
 
 **3. Depanare**
 

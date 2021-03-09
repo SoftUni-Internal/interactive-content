@@ -1,27 +1,23 @@
 // sectionId: "Javascript::Programming-Basics::Nested-Loops::Homework"
 
-# Temă pentru acasă
+# Teme pentru acasă
 
 [slide hideTitle]
-# Problem: Building
+# Problemă cu soluție: Building
 
 [vimeo-video]
 [stream language="EN" videoId="488090883/a7c270a8f6" default /]
 [stream language="RO" videoId="488090883/a7c270a8f6"  /]
 [/video-vimeo]
 
-# Solution
 
-[vimeo-video]
-[stream language="EN" videoId="488090919/8b4c1a9e61" default /]
-[stream language="RO" videoId="488090919/8b4c1a9e61"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-33-solution-building-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Building" taskId="pb-js-nested-loops-Building" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function building(floors, rooms) {
-    // Scrieți codul dvs. aici
+    // Write your code here
 }
 ```
 [/code-editor]
@@ -36,17 +32,18 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care: 
+Creați un program care imprimă următoarele informații despre o clădire:
 
-Imprimă informațiile despre o construcție: 
-* Construcția poate să aibă: **apartments (odd numbered floors)**, **offices (even numbered floors)** și **(on the last floor) Large Apartments** 
-* Apartamentele sunt indexate cu: **A**\{**buildingNum**\}\{**apartmentNum**\}
-* Birouri: **O**\{**floorNum**\}\{**officeNum**\}
-* Apartamente mari: **L**\{**buildingNum**\}\{**apartmentNum**\}
-* Numerele încep de la 0
+Imprimă informațiile despre o clădire: 
+* Veți primi două numere: numărul de etaje și câte camere are fiecare etaj
+* Clădirea poate găzdui: ** apartamente (etaje cu număr impar) **, ** birouri (etaje cu număr par) ** și ** (la ultimul etaj) Apartamente mari **
+* Apartamentele sunt indexate cu: ** A ** \ {** buildingNum ** \} \ {** apartmentNum ** \}
+* Birourile sunt indexate cu: ** O ** \ {** floorNum ** \} \ {** officeNum ** \}
+* Apartamentele mari sunt indexate cu: ** L ** \ {** buildingNum ** \} \ {** apartmentNum ** \}
+* Numerele încep întotdeauna de la 0
 
 # Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | building(6, 4) | L60 L61 L62 L63|
 || A50 A51 A52 A53|
@@ -176,25 +173,15 @@ A10 A11 A12
 [/slide]
 
 [slide hideTitle]
-# Problem: Passwords
+# Problemă cu soluție: Passwords
 
-[vimeo-video]
-[stream language="EN" videoId="488091064/8c0b8dc12c" default /]
-[stream language="RO" videoId="488091064/8c0b8dc12c"  /]
-[/video-vimeo]
-
-# Solution
-
-[vimeo-video]
-[stream language="EN" videoId="488091095/c49f5f03e5" default /]
-[stream language="RO" videoId="488091095/c49f5f03e5"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-36-solution-password-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Passwords" taskId="pb-js-nested-loops-Passwords" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function passwords(input) {
-    // Scrieți codul dvs. aici
+    // Write your code here
 }
 ```
 [/code-editor]
@@ -209,15 +196,16 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care:
-* Citește un număr întreg - **n**
-* Generează parole specifice, care îndeplinesc următoarele condiții:
-* **Prima** este un număr **par** care nu trebuie să fie mai mare decât **n**
-* **Cea a două**  este un număr **impar** și nu trebuie să fie mai mare decât **n**
+Creați un program care generează parole customizate:
+
+* Primiți un număr întreg - **n** ca intrare
+* Generați parole specifice, care îndeplinesc următoarele condiții:
+* **Prima** parte este un număr **par** care nu trebuie să fie mai mare decât **n**
+* **Cea a două** parte este un număr **impar** și nu trebuie să fie mai mare decât **n**
 * **Ultima** parte  este un **produs** al primelor două
 
 # Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | passwords(6) | 212 236 2510 414 4312 4520 616 6318 6530 |
 
@@ -286,7 +274,7 @@ passwords(15)
 [/slide]
 
 [slide hideTitle]
-# Problem: Magic Number
+# Problemă: Magic Number
 [code-task title="Magic Number" taskId="pb-js-nested-loops-magic-number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -306,12 +294,12 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care:
-* Citește un **număr - n**, de pe consolă
-* Identifică toate **numerele cu 3 cifre** pentru care este valabil ca produsul inmulțirii cifrelor care formează numărul să fie egal cu **n**
+Creați un program care găsește toate numerele magice conform următoarelor condiții:
+* Primiți un **număr - n** de pe consolă
+* Identificați toate **numerele cu 3 cifre** pentru care este valabil ca produsul inmulțirii cifrelor care formează numărul să fie egal cu **n**
 
 # Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | magicNumber(3) | 113 |
 || 131 |
@@ -427,7 +415,7 @@ magicNumber(14)
 [/slide]
 
 [slide hideTitle]
-# Problem: Travelling
+# Problemă: Travelling
 [code-task title="Travelling" taskId="pb-js-nested-loops-travelling" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -447,14 +435,14 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care:
+Creați un program care economisește banii necesari pentru a vizita o destinație dată:
 
-* Citește o **destinație** și un **buget necesar** pentru o vizită 
-* Continuă să adauge numere-sume de bani, până când este **suficient** pentru a face călătoria
-* Dacă primește comanda **End** programul se termină
+* Veți primi o **destinație** și un **buget necesar** pentru o vizită 
+* Continuați să procesați numere-sume de bani, până când este **suficient** pentru a face călătoria
+* Dacă primiți comanda **End** programul se termină
 
 # Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | travelling(['Philippines', 1000, 550, 450, End]) | Going to Philippines! |
 
@@ -580,7 +568,7 @@ Going to Albania!
 [/slide]
 
 [slide hideTitle]
-# Problem: Prime Numbers
+# Problemă: Prime Numbers
 [code-task title="Prime Numbers" taskId="pb-js-nested-prime-numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -600,13 +588,13 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care:
+Creați un program care imprimă toate numerele prime dintr-un interval dat
 
-* Citește **două numere** de pe  consolă
-* Imprimă numurul **prim** din acest **interval**
+* Citește **două numere** de pe  consolă: **începutul** și **sfârșitul** intervalului
+* Imprimați pe consolă numerele **prime** din acest **interval**
 
 # Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | primeNumbers(1, 50) | 1 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 |
 
@@ -681,7 +669,7 @@ primeNumbers(1, 9)
 [/slide]
 
 [slide hideTitle]
-# Problem: Unique PIN Codes
+# Problemă: Unique PIN Codes
 [code-task title="Unique PIN Codes" taskId="pb-js-nested-loops-unique-pin-codes" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -701,10 +689,9 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care:
-
-* Citește **3 cifre** - n1, n2 și n3
-* Generează **Coduri PIN unice cu 3 cifre** care îndeplinesc următoarele **condiții**:
+Creați un program care generază coduri PIN unice:
+Veți primi **3 cifre** - n1, n2 și n3
+* Generați **Coduri PIN unice cu 3 cifre** care îndeplinesc următoarele **condiții**:
 * **Prima** cifră  nu trebuie să fie mai mare decât n1
 * **A doua** cifră nu trebuie să fie mai mare decât n2
 * **A treia** cifră  nu trebuie să fie mai mare decât n3
@@ -712,7 +699,7 @@ Creați un program care:
 * Cea a doua cifră trebuie să fie **primul număr** din interval \[2…7\]
 
 # Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | uniquePinCodes(3, 5, 5) | 222 |
 || 224 |
@@ -867,7 +854,7 @@ uniquePinCodes(2, 3, 5)
 [/slide]
 
 [slide hideTitle]
-# Problem: Letter Combinations
+# Problemă: Letter Combinations
 [code-task title="Letter Combinations" taskId="pb-js-nested-loops-letter-combinations" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -887,16 +874,14 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care:
+Creați un program care imprimă **combinații de litere** și **numărul* combinațiilor generate:
 
-* Imprimă **combinații de litere** și **numere** ale combinațiilor generate 
+* Primele două litere pe care le veți primi reprezintă intervalul cu care va trebui să lucrați
 
-* Veți primi o **serie de litere** pe prima și a doua linie
-
-* Pe a treia linie, va primi o **literă**, pe care trebuie să o **ignoreze** - să nu imprimă combinații din care aceasta să facă parte
+* Ignorați a treia literă și nu imprimați combinații cu aceasta
 
 # Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | letterCombinations('a', 'c', 'b') | aaa aac aca acc caa cac cca ccc 8 |
 
@@ -973,7 +958,7 @@ bbb bbc bbd bbe bcb bcc bcd bce bdb bdc bdd bde beb bec bed bee cbb cbc cbd cbe 
 [/slide]
 
 [slide hideTitle]
-# Problem: Happy Numbers
+# Problemă: Happy Numbers
 [code-task title="Happy Numbers" taskId="pb-js-nested-loops-Happy-numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -993,16 +978,15 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Decriere
-Creați un program care:
+Creați un program care generează toate **numerele cu 4 cifre** cu cifre mai mici decât un număr n  dat: 
+- Veți primi un număr ** n ** ca intrare:
 
-Generează toate **numerele cu 4 cifre** cu cifre mai mici decât n și le imprimă, dacă: 
-
-* Atunci când impărțim numărul în două perechi și adăugăm prima cifră celei de-a doua din fiecare pereche, rezultatul este egal cu **n**
-
-* Atunci când adunăm primele două cifre, rezultatul este divizibil la n, fără rest
+- Imprimați combinațiile care îndeplinesc următoarele cerințe:
+   - Când împărțiți numărul în două perechi și adăugați prima cifră la a doua din fiecare pereche - rezultatul este egal cu ** n **
+   - Când adăugați primele două, rezultatul ar trebui să fie divizibil cu ** n ** fără rest
 
 # Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | happyNumbers(3) | 1212 1221 2112 2121 |
 

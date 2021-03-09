@@ -38,7 +38,7 @@ if (condition1) {
 
 # Soluție: Titluri de persoană
 
-Ar trebui să observăm că **rezultatul**  programului **depinde de câteva lucruri**.
+Ar trebui să observăm că **ieșire**  programului **depinde de câteva lucruri**.
 
 **în primul rând**, trebuie să verificăm care este **genul** specificat și apoi **să verificăm vârsta.**
 
@@ -97,7 +97,7 @@ function marketPlace(input) {
 # Descriere
 Creați un program care:
 
-- Citește un **produs** și o zi de pe consolă
+- Primește un ** tip de produs** și o zi de pe consolă
 
 - Imprimă **prețul**, formatat cu două zecimale după virgulă, pe baza tabelului de mai jos
 
@@ -109,7 +109,7 @@ Creați un program care:
 
 
 # Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | marketPlace(['Banana', 'Weekday'])| 2.50 |
 
@@ -172,7 +172,7 @@ marketPlace(['Banana', 'Weekend'])
 
 
 [slide hideTitle]
-# Problemă cu soluția: Biggest Number of Three
+# Problemă cu soluție: Biggest Number of Three
 
 [code-task title="Biggest Number of Three" taskId="pb-js-conditional-statements-advanced-Biggest-Number-of-Three" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -196,11 +196,11 @@ function adapter(input, code) {
 # Descriere
 Creați un program care:
 
-  * Citește **3 numere** de pe consolă
+  * Primește **3 numere** de pe consolă
   * Tipărește cel mai mare număr
 
 # Exepmlu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |biggestNumberOfThree(['1', '2', '3'])| 3 |
 

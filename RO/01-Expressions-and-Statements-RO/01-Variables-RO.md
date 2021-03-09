@@ -68,7 +68,7 @@ Variabilele pot fi stocate în următoarele spații ale unui program:
 
 Ele se caracterizează prin:
 
-* nume / denumire (identificator)
+* nume (identificator)
 
 * tip (al informației pe care o păstrează)
 
@@ -93,7 +93,7 @@ let age = 35;
 [stream language="RO" videoId="486855151/43dc67876d"  /]
 [/video-vimeo]
 
-Enunțurile care declară variabilele în JavaScript sunt: `let`, `var` și `const`
+Instrucțiunile care declară variabilele în JavaScript sunt: `let`, `var` și `const`
 
 * `let`: declară o variabilă, opțional o și inițializează
 

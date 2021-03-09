@@ -30,7 +30,7 @@ function adapter(input, code) {
 # Descriere
 În timpul pauzei de prânz vreți să vedeți un episod din serialul TV preferat. 
 
-Ceea ce trebuie să faceți este să scrieți un program care să vă ajute să aflați dacă aveți timp suficient să vedeți un întreg episod. 
+Ceea ce trebuie să faceți, este să scrieți un program care să vă ajute să aflați dacă aveți timp suficient să vedeți un întreg episod. 
 
 În pauza de masă trebuie să aveți timp să mâncați și să vă odihniți. 
 
@@ -38,10 +38,10 @@ Ceea ce trebuie să faceți este să scrieți un program care să vă ajute să 
 
 
 ## Intrare
-Ca intrare veți primi 3 elemente de consolă:
+Ca intrare veți primi 3 elemente de pe consolă:
 - Numele serialului: un șir
-- Durata unui episod: un număr întreg în intervalul \[10...90\]
-- Durata pauzei: un număr întreg în intervalul \[10...120\]
+- Durata unui episod: un număr întreg în intervalul \[10… 90\]
+- Durata pauzei: un număr întreg în intervalul \[10… 120\]
 
 ## Ieșire
 Rezultatul ar trebui să fie format dintr-o singură linie:
@@ -54,7 +54,7 @@ Rezultatul ar trebui să fie format dintr-o singură linie:
 
 "**You don't have enough time to watch** \{**name of the series**\}**, you need** \{**time needed**\} **more minutes.**"
 
-**Round the time up** to the nearest whole number.
+Round the time up to the nearest whole number.
 
 ## Example
 | **Intrare** | **Ieșire** |
@@ -65,17 +65,17 @@ Rezultatul ar trebui să fie format dintr-o singură linie:
 [hints]
 
 [hint]
-Determine the time needed for lunch.
+Strabiliți timpul necesar pentru prânz.
 [/hint]
 
 [hint]
-Calculate the relax time.
+Calculați timpul pentru relaxare.
 [/hint]
 
 [hint]
-Figure out how much time is left.
+Calculați cât timp a rămas.
 
-Make sure that the right output is printed to the console.
+Asigurați-vă că ieșirea corectă a fost imprimată pe consolă.
 [/hint]
 [/hints]
 

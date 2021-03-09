@@ -25,7 +25,7 @@ Când îndepliniți acea condiție, bucla se oprește.
 
 [slide hideTitle]
 
-# For Loop
+# Bucla For 
 
 [vimeo-video]
 [stream language="EN" videoId="487119239/423a548f1b" default /]
@@ -34,7 +34,7 @@ Când îndepliniți acea condiție, bucla se oprește.
 
 În programare, de multe ori trebuie executat un bloc de comenzi, în mod repetat.
 
-Pentru a face asta, sunt folosite așa-zisele bucle.
+Pentru a face asta, sunt folosite așa-zisele bucle for.
 
 Să vedem un exemplu de buclă care trece separat prin numerele de la 1 la 10 si le afișează.
 
@@ -85,7 +85,7 @@ Bucla se repetă de 10 ori și fiecate repetare se numește **iterație**.
 
 [slide hideTitle]
 
-# Problemă cu soluția: Print Sum of N Numbers
+# Problemă cu soluție: Print Sum of N Numbers
 
 [code-task title="Print Sum of N Numbers" taskId="pb-js-for-loop-Print-Sum-of-N-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -112,12 +112,12 @@ function adapter(input, code) {
 
 # Descriere
 
-Creați un program care:
+Creați un program care imprimă toate numerele dintr-un interval dat și suma acestora:
 
-- Citește numarul n în consolă
-- **Afișează** toate numerele de la **1** la **n**
-- **Adună** toate numerele de la **1** la **n**
-- **Afișează** suma în consolă la sfârșit
+- Veți primi numarul n pe consolă
+- **Imprimați* toate numerele de la **1** la **n**
+- **Adunăți** toate numerele de la **1** la **n**
+- **Imprimați** suma pe consolă la sfârșit
 
 # Exemplu
 
@@ -167,7 +167,7 @@ printSum(6)
 
 [slide hideTitle]
 
-# Problemă cu soluția: Greatest Number
+# Problemă cu soluție: Greatest Number
 
 [vimeo-video]
 [stream language="EN" videoId="487119324/39b9907585" default /]
@@ -199,17 +199,16 @@ function adapter(input, code) {
 
 # Descriere
 
-Creați un program care:
+Creați un program care imprimă **cel mai mare** număr dintr-o matrice:
 
-- Citește **n**: un număr care reprezintă câte elemente sunt introduse
+- Primește **n**: dimensiunea matricei
+- Procesează n numere
 
-- Citește n numere
-
-- Găsește și afișează cel mai mare număr
+- Găsește și imprimă cel mai mare număr
 
 # Exemplu
 
-| **Input**                             | **Output** |
+| **Intrare**                             | **Ieșire** |
 | ------------------------------------- | ---------- |
 | greatestNumber(3, ['40', '90', '50']) | 90         |
 

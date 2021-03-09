@@ -48,7 +48,7 @@ while (row <= 2) {
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluția: Triangle With Stars Stelelor With While
+# Problemă cu soluție: Triangle With Stars Stelelor With While
 [code-task title="Triangle of Stars with While" taskId="pb-js-nested-loops-Triangle-of-Stars-with-While" executionType="tests-execution" executionStrategy="javascript-code" requiresInput] 
 [code-editor language=javascript]
 ```
@@ -68,12 +68,12 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care:
+Creați un program care imprimă un triunghi de stele cu o anumită dimensiune
 
-* Citește **înălțimea** unui triunghi din consolă 
-* Imprimă un **un triunghi de stele**
+* Primiți **înălțimea** unui triunghi de pe consolă 
+* Imprimați un **un triunghi de stele** pe consolă
 # Exemplu
-| **Input** | **Output**| 
+| **Intrare** | **Ieșire**| 
 | --- | --- |
 | triangleOfStars(5) | \* |
 | | \*\* |
@@ -134,7 +134,7 @@ triangleOfStars(9)
 
 
 [slide hideTitle]
-# Problemă cu soluția: Sum of Digits Calculator
+# Problemă cu soluție: Sum of Digits Calculator
 
 [vimeo-video]
 [stream language="EN" videoId="488090779/48452cdf0b" default /]
@@ -160,14 +160,16 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
+Creați un program care procesează o secvență de numere și imprimă suma cifrelor acestoa 
 Citiți continuu numerele, până când este introdus **End**:
 
-* Imprimați suma cifrelor pentru fiecare număr 
+*Primiți ca intrare o matrice de numere
+*Imprimați suma cifrelor pentru fiecare număr:"**Sum of digits =** \{**sum**\}"
+*Atunci când ajungeți la comanda **END**, imprimați  **Goodbye**
 
-* La final, imprimați **Goodbye**
 
 # Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |`['157', 99', 5', '438', 'End']`|Sum of digits = 13 |
 ||Sum of digits = 13|

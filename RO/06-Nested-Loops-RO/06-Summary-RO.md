@@ -1,7 +1,7 @@
 // sectionId: "Javascript::Programming-Basics::Nested-Loops::Summary"
 
 [slide hideTitle]
-# Sumar
+# Rezumat
 
 [vimeo-video]
 [stream language="EN" videoId="487129429/3a15190b39" default /]

@@ -1,8 +1,8 @@
 // sectionId: "Javascript::Programming-Basics::Conditional-Statements-Advanced::Homework"
 
-# Homework
+# Teme pentru acasă
 [slide hideTitle]
-# Problem: Fruit or Vegetable
+# Problemă: Fruit or Vegetable
 [code-task title="Fruit or Vegetable" taskId="pb-js-Conditions-Advanced-Fruit-or-Vegetable" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -22,12 +22,12 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program pentru a verifica fructele sau legumele:
+Creați un program pentru a verifica dacă **intrarea** reprezintă fructe sau legumele:
 
-* Citiți o singură linie de intrare: un articol din legume
-* Fructe: banana, apple, kiwi, cherry, lemon, grapes
-* Legume: cucumber, pepper, carrot, onion
-* Imprimați: "**vegetable**", "**fruit**" sau  "**unknown**"
+* Veți primi o singură linie de intrare: un articol din legume
+* Imprimă ''**fruit**''pentru următoarele: banana, apple, kiwi, cherry, lemon, grapes
+* Imprimă ''**vegetable**''pentru următoarele: cucumber, pepper, carrot, onion
+** Imprimă : "**unknown**" pentru orice altceva
 
 # Exemplu
   | **Intrare** | **Ieșire** |
@@ -37,7 +37,7 @@ Creați un program pentru a verifica fructele sau legumele:
 
 [hints]
 [hint]
-You can use a switch-case expression to solve the problem easier.
+Puteți folosi o expresie switch-case pentru a rezolva problema mai ușor.
 [/hint]
 [/hints]
 
@@ -122,7 +122,7 @@ vegetable
 [/slide]
 
 [slide hideTitle]
-# Problem: Day of Week
+# Problemă: Day of Week
 [code-task title="Day of Week" taskId="pb-js-Conditions-Advanced-Day-of-Week" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -144,8 +144,8 @@ function adapter(input, code) {
 # Descriere
 Creați un program pentru a imprima ziua săptămânii ca un cuvânt:
 
-* Citire și număr întreg **n**: **ziua săptămânii** în intervalul \[1..7\]
-* Tipăriți *numele zilei* (ca un cuvânt, în engleză)
+* Veți primi un număr întreg **n**: **ziua săptămânii** în intervalul \[1..7\]
+* Imprimați *numele zilei* (ca un cuvânt, în engleză)
 * Imprimați "**Error**", dacă numărul nu se află în intervalul dat
 
 
@@ -228,7 +228,7 @@ Saturday
 [/slide]
 
 [slide hideTitle]
-# Problem: Vowel or Consonant
+# Problemă: Vowel or Consonant
 [code-task title="Vowel or Consonant" taskId="pb-js-Conditions-Advanced-Vowel-or-Consonant" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -248,9 +248,9 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # # Descriere
-Creați un program pentru a verifica o literă dacă este o vocală sau o consoană:
+Creați un program pentru a verifica dacă o  anumită literă  este o vocală sau o consoană:
 
-*Citiți o **literă** din alfabetul englez
+*Veți primi **literă** din alfabetul englez
 *Imprimați  "**Vowel**" sau "**Consonant**"
 
 
@@ -262,8 +262,7 @@ Creați un program pentru a verifica o literă dacă este o vocală sau o consoa
 
 [hints]
 [hint]
-You can use an "if" statement and check if the letter is a vowel. If it is print the correct output. However, if it isn't, enter the "else" statement and print the appropriate output.
-[/hint]
+Puteți folosi o instrucțiune "if" pentru a verifca dacă litera respectivă este o vocală. În cazul în care este, imprimați ieșirea corectă.Dacă nu este, introduceți instrucțiunea "else" și imprimați rezultatul corespunzător.
 [/hints]
 
 [/task-description]
@@ -323,7 +322,7 @@ Vowel
 [/slide]
 
 [slide hideTitle]
-# Problem: Product of 3 Numbers
+# Problemă cu soluție: Product of 3 Numbers
 [vimeo-video]
 [stream language="EN" videoId="486874673/6eb04e1bbf" default /]
 [stream language="RO" videoId="486874673/6eb04e1bbf"  /]
@@ -348,10 +347,10 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Calculați semnul produsului de 3 numere:
+Creați un program care determina semnul produsului de 3 numere:
 
-* Citiți **3 numere în virgulă mobilă** ca matrice
-* Imprimați semnul produsului celor 3 numere introduse: "**positive**", "**negative**" sau "**zero**"
+* Veți primi **3 numere în virgulă mobilă** ca matrice
+* Imprimați **semnul** produsului celor 3 numere introduse: "**positive**", "**negative**" sau "**zero**"
 
 Încercați să faceți acest lucru **fără a înmulți** cele 3 numere
 
@@ -426,7 +425,7 @@ zero
 [/slide]
 
 [slide hideTitle]
-# Problem: Sorted Numbers
+# Problemă cu soluție: Sorted Numbers
 [vimeo-video]
 [stream language="EN" videoId="486875734/a16fef14e3" default /]
 [stream language="RO" videoId="486875734/a16fef14e3"  /]
@@ -451,11 +450,11 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program, care verifică **3 numere sortate**:
+Creați un program, care verifică dacă  **anumite numere** sunt sortate:
 
-* Citiți 3 numere reale
-* Tipăriți "**Ascending**" dacă numerele sunt în ordine crescătoare
-* Tipăriți "**Descending**" dacă numerele sunt în ordine descrescătoare
+* Veți primi 3 numere în virgulă mobilă
+* Tipăriți "**Ascending**", dacă numerele sunt în ordine crescătoare
+* Tipăriți "**Descending**", dacă numerele sunt în ordine descrescătoare
 * Imprimați "**Not sorted**" în orice alt caz
 
 
@@ -538,7 +537,7 @@ Descending
 [/slide]
 
 [slide hideTitle]
-# Problem: Vacation Expenses
+# Problemă: Vacation Expenses
 [code-task title="Vacation Expenses" taskId="pb-js-Conditions-Advanced-Vacation-Expenses" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -560,7 +559,7 @@ function adapter(input, code) {
 # Descriere
 Creați un program, care calculează cheltuielile de vacanță:
 
-* Citiți sezonul, tipul de cazare și  numărul de zile
+* Veți primi sezonul, tipul de cazare și  numărul de zile
 * Imprimați **cheltuielile** totale pe baza tabelului de prețuri de mai jos, formatat la **a doua cifră** după punctul zecimal
 
 
@@ -641,7 +640,7 @@ vacationExpenses('Autumn', 'Camping', 10)
 [/slide]
 
 [slide hideTitle]
-# Problem: Cinema
+# Problemă: Cinema
 [code-task title="Cinema" taskId="pb-js-Conditions-Advanced-Cinema" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -661,10 +660,10 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Calculați **prețul** pentru toate biletele pentru un film cinematografic:
+Creați un program care imprimă **prețul** pentru toate biletele pentru un film cinematografic:
 
-* Citiți **tipul filmului**, **rândurile** și **locurile pe rând** din cinematograf
-* Tipăriți **prețul total** pentru toate locurile **formatate** la a doua cifră după punctul zecimal
+* Veți primi **tipul filmului**, **rândurile** și **locurile pe rând** din cinematograf
+* Imprimați **prețul total** pentru toate locurile **formatate** la a doua cifră după punctul zecimal
 
 
   | **Type** | **Price** |
@@ -849,7 +848,7 @@ cinema('Discount', 78, 9)
 [/slide]
 
 [slide hideTitle]
-# Problem: Operations with Numbers
+# Problemă: Operations with Numbers
 [code-task title="Operations with Numbers" taskId="pb-js-Conditions-Advanced-Operation-With-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -868,12 +867,12 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Description
+# Descriere
 Creați un program pentru a aplica un operator pentru două numere date:
 
-* Citiți doi numere întregi și operatorul matematic de pe consolă
+* Veți primi doi numere întregi și operatorul artimetic de pe consolă
 * Operatorul aritmetic ar putea fi: \+, \-, \/, \% și \*
-* IRezultatul trebuie să fie în următorul **format**: `{N1} {operator} {N2} = {result}`
+* Rezultatul trebuie să fie în următorul **format**: `{N1} {operator} {N2} = {result}`
 
 # Exemplu
   | **Intrare** | **Ieșire** |
@@ -945,7 +944,7 @@ operationswithNumbers(2, 2, '\+')
 [/slide]
 
 [slide hideTitle]
-# Problem: ATM
+# Problemă: ATM
 [code-task title="ATM" taskId="pb-js-Conditions-Advanced-ATM" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -967,7 +966,7 @@ function adapter(input, code) {
 # Descriere
 Creați un program pentru a simula o retragere de numerar de la bancomat
 
-* Citiți: **balance**, **withdraw** și **limit**
+* Veți primi următoarele: **balance**, **withdraw** și **limit**
 * Imprimați "**The withdraw was successful.**" Dacă soldul este suficient
 * Imprimați "**The daily limit was exceeded.**" Dacă limita este depășită
 * Imprimați "**Insufficient availability.**" dacă soldul nu este sufficient
@@ -1034,7 +1033,7 @@ Insufficient availability.
 [/slide]
 
 [slide hideTitle]
-# Problem: Biggest of Five Numbers
+# Problemă: Biggest of Five Numbers
 [code-task title="Biggest of Five Numbers" taskId="pb-js-Conditions-Advanced-Biggest-of-Five-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -1057,9 +1056,9 @@ function adapter(input, code) {
 
 Creați un program pentru a găsi cel mai mare dintre 5 numere
 
-* Citiți **5 numere întregi**
+* Veți primi **5 numere întregi**
 
-* Imprimați cel mai mare**număr.
+* Imprimați **cel mai mare** număr.
 
 
 # Exemplu
