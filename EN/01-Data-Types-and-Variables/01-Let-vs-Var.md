@@ -163,5 +163,5 @@ Because in the future we can add some **functionality** to the function and we h
 
 This rule applies less to functions because it is **not a good practice to change** the functionality of the function.
 
-But this rule applies in full force to the **classes**, because a class can **grow a lot over time** and the name we have given initially is not good.
+But this rule applies in full force to **classes**, because a class can **grow a lot over time** and the name we have given initially is not good.
 [/slide]
