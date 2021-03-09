@@ -10,21 +10,21 @@ There are several types of errors:
 
 - **Technical** or **Network** errors:
 
-   - An example of these errors is when the server is down.
+   - An example of these errors is when the server is down
 
 - **Usual** or **Expected** errors:
 
-   - They are predictable.
+   - They are predictable
 
-   - Example of a **usual** or **expected** error is when a database request fails.
+   - Example of a **usual** or **expected** error is when a database request fails
 
 - **Bugs** or **Logical** errors:
 
    - These errors are not predictable because the software does not work as expected
 
-   - Example of **bugs** or **logical** error is trying to call a function that does not exist.
+   - Example of **bugs** or **logical** error is trying to call a function that does not exist
 
-   - These errors are our fault, and we should fix them through the development process.
+   - These errors are our fault, and we should fix them through the development process
 
 [/slide]
 
@@ -123,12 +123,12 @@ There are several things that we can do to improve the **UX** in moments like th
 
 For example:
 
-- We can **redirect** to an error page.
+- We can **redirect** to an error page
 
 [image assetsSrc="JS-Web-Validation-And-Error-Handling.png" /]
 
-- Every response from the API should have a **specific status code** and **well-described information** about the error.
+- Every response from the API should have a **specific status code** and **well-described information** about the error
 
-- We can display an error notification.
+- We can display an error notification
 
 [/slide]
