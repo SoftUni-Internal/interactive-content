@@ -27,8 +27,6 @@ console.log ("Bine ați venit la codare");
 [slide hideTitle]
 # Programe de calculator
 
-[video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-10-Console-Based-JavaScript-Program-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
 Programele de computer reprezintă **o secvență de comenzi** care sunt scrise într-un anumit **limbaj de programare**, cum ar fi: C #, Java, JavaScript, Python, C ++, PHP, C, Ruby, Swift, Go sau altul.
 
 Exemplu de **program de computer** în JS:
@@ -108,7 +106,7 @@ function findMinNumber() {
 [slide hideTitle]
 # Program JavaScript bazat pe console – Exemplu
 
-[video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-11-12-Console-Based-JavaScript-Program-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-10-Console-Based-JavaScript-Program-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Să vedem un program simplu care ia **o sumă de bani în dolari SUA (USD)** - un număr întreg, îl convertește în **Euro (EUR)** înmulțindu-l cu cursul de schimb și imprimă rezultatul obținut.
 
@@ -125,7 +123,8 @@ convertUsdToEur("5");
 [/slide]
 [slide hideTitle]
 # Browser-Based JavaScript Program – Example
-[video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/website description-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-11-12-Console-Based-JavaScript-Program-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În acest exemplu, putem importa și utiliza o funcție în pagina noastră de web.
 
