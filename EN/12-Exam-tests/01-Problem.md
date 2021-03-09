@@ -38,7 +38,7 @@ There are **3** types of entities and 3 repositories in the application: **Car, 
   * all models are unique
 
 - **horsePower - int**
-  * **Every type** of car has a different range of valid horsepower. If the horsepower is not in the valid range, throw an **IllegalArgumentException** with message "**Invalid horse power:** \{**horsepower**\}**.**"
+  * **every type** of car has a different range of valid horsepower. If the horsepower is not in the valid range, throw an **IllegalArgumentException** with message "**Invalid horse power:** \{**horsepower**\}**.**"
 
 - **cubicCentimeters - double**
   * **every type of car has different cubic centimeters**
@@ -63,7 +63,7 @@ There are several different types of **Car classes**:
 
 ### MuscleCar
 
-For this type of car, the **cubic centimeters** are 5000. 
+For this type of car, the **cubic centimeters are 5000.** 
 
 The minimum **horsepower is 400**, while maximum **horsepower is 600**. 
 
@@ -74,7 +74,7 @@ For this type of car, the **cubic centimeters are 3000**.
 
 The minimum **horsepower is 200**, while maximum **horsepower is 450**. 
 
-If you receive a horsepower value that is not in the given range, this should result in an I**llegalArgumentException** with the message: **"Invalid horse power:** \{**horsepower**\}**.**"
+If you receive a horsepower value that is not in the given range, this should result in an **IllegalArgumentException** with the message: **"Invalid horse power:** \{**horsepower**\}**.**"
 
 # Driver
 
@@ -122,14 +122,15 @@ A **Driver** should take the following values upon initialization:
   * the name is unique 
 - **laps - int** 
   * if the laps are less than **1**, this should result in an **IllegalArgumentException** with the message "**Laps cannot be less than 1.**"
-- **drivers - A collection of Drivers**
+- **drivers - a collection of Drivers**
 
 ## Behavior
 
 `void addDriver(Driver driver)`
 
 This method adds a **Driver** to the **Race**. if the **Driver** is valid. 
-f the Driver is not valid, this should result in an Exception with the appropriate message. 
+
+If the Driver is not valid, this should result in an Exception with the appropriate message. 
 
 Exceptions are:
 
@@ -149,7 +150,7 @@ The repository holds information about the entity.
 
 ## Data
 
-- **Models - A collection of T (entity)**
+- **Models - a collection of T (entity)**
 
 ## Behavior
 

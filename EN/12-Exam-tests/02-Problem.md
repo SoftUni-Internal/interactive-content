@@ -12,7 +12,9 @@ The business logic should be concentrated around several **commands**.
 
 You are given interfaces, which you have to implement in the correct classes.
 
-**Note: The Controller class SHOULD NOT handle exceptions! The tests are designed to expect exceptions, not messages!**
+**Note: The Controller class SHOULD NOT handle exceptions!**
+
+**The tests are designed to expect exceptions, not messages!**
 
 The first interface is **Controller**.
 
@@ -22,13 +24,15 @@ The first interface is **Controller**.
 
  # Commands 
  
- There are several commands, which control the business logic of the application. They are stated below.
+There are several commands, which control the business logic of the application. 
+ 
+They are stated below.
 
 ## CreateDriver Command
 
 **Parameters:**
 
-- **driverName - String**
+- **driverName - string**
 
 **Functionality:**
 
@@ -46,8 +50,8 @@ If a driver already exists with the given name in the driver repository, this sh
 
 **Parameters:**
 
-- **type - String**
-- **model - String**
+- **type - string**
+- **model - string**
 - **horsePower - int**
 
 **Functionality:**
@@ -68,8 +72,8 @@ If the **Car** is successfully created, the method should **return** the followi
 
 **Parameters:**
 
-- **driverName - String**
-- **carModel - String**
+- **driverName - string**
+- **carModel - string**
 
 **Functionality:**
 
@@ -85,7 +89,7 @@ If the **Car does not exist** in the **CarRepository**, this should result in an
 
 If the Car and the Driver exist, you should add the **Car** to the **Driver** and return the following message:
 
-- **"Driver** \{**driver name**\} **received car** \{**car name**\}**.**"**
+- **"Driver** \{**driver name**\} **received car** \{**car name**\}**.**"
 
 `AddDriverToRace Command`
 
@@ -108,7 +112,7 @@ If the **Driver does not exist** in the **DriverRepository**, this should result
 
 You should add the **Driver** to the **Race** and return the following message:
 
-- **"Driver \{driver name\} added in \{race name\} race."**
+- **"Driver** \{**driver name**\} **added in** \{**race name**\} **race."**
 
 ## CreateRace Command
 
@@ -173,135 +177,125 @@ The interface is called **Engine** and the class implementing this interface sho
 
 Below, you can see the **format**, in which **each command** will be given in the input:
 
-- CreateDriver \{name\}
-- CreateCar \{car type\} \{model\} \{horsepower\}
-- AddCarToDriver \{driver name\} \{car name\}
-- AddDriverToRace \{race name\} \{driver name\}
-- CreateRace \{name\} \{laps\}
-- StartRace \{race name\}
-- End
+CreateDriver \{name\}
+CreateCar \{car type\} \{model\} \{horsepower\}
+AddCarToDriver \{driver name\} \{car name\}
+AddDriverToRace \{race name\} \{driver name\}
+CreateRace \{name\} \{laps\}
+StartRace \{race name\}
+End
 
 ## Output
 
-Print the output from each command when issued. 
+Print the output from each command when issued.
 
 If an exception is thrown during any of the commands' executions, print the exception message.
 
-# Examples:
+# Examples One
 
-| **Input** | 
-| --- |
-| CreateDriver Michael | 
-| CreateDriver Peter | 
-| CreateCar Sports Porsche 380 |
-| CreateCar Muscle Mustang 580 |
-| CreateCar Muscle Corvette 440 |
-| CreateRace Daytona 2 |
-| AddCarToDriver Michael Porsche |
-| AddCarToDriver Peter Mustang |
-| AddCarToDriver Michael Corvette |
-| StartRace Daytona |
-| AddDriverToRace Daytona Michael |
-| AddDriverToRace Daytona Peter |
-| StartRace Daytona |
-| CreateDriver Brian |
-| AddDriverToRace Daytona Brian |
-| CreateCar Sports Mazda 350 |
-| AddCarToDriver Brian Mazda |
-| AddDriverToRace Daytona Brian |
-| StartRace Daytona |
-| End |
+**Input**
+CreateDriver Michael 
+CreateDriver Peter 
+CreateCar Sports Porsche 380
+CreateCar Muscle Mustang 580 
+CreateCar Muscle Corvette 440 
+CreateRace Daytona 2 
+AddCarToDriver Michael Porsche
+AddCarToDriver Peter Mustang
+AddCarToDriver Michael Corvette
+StartRace Daytona
+AddDriverToRace Daytona Michael
+AddDriverToRace Daytona Peter
+StartRace Daytona
+CreateDriver Brian
+AddDriverToRace Daytona Brian
+CreateCar Sports Mazda 350
+AddCarToDriver Brian Mazda
+AddDriverToRace Daytona Brian
+StartRace Daytona
+End
 
-| **Output** | 
-| --- |
-| Driver Michael is created. |
-| Driver Peter is created. |
-| SportsCar Porsche is created. |
-| MuscleCar Mustang is created. |
-| MuscleCar Corvette is created. |
-| Race Daytona is created. |
-| Driver Michael received car Porsche. |
-| Driver Peter received car Mustang. |
-| Driver Michael received car Corvette. |
-| Race Daytona cannot start with less than 3 participants. |
-| Driver Michael added in Daytona race. |
-| Driver Peter added in Daytona race. |
-| Race Daytona cannot start with less than 3 participants. |
-| Driver Brian is created. |
-| Driver Brian could not participate in race. |
-| SportsCar Mazda is created. |
-| Driver Brian received car Mazda. |
-| Driver Brian added in Daytona race. |
-| Driver Michael wins Daytona race. |
-| Driver Peter is second in Daytona race. |
-| Driver Brian is third in Daytona race. |
+**Output**
+Driver Michael is created.
+Driver Peter is created.
+SportsCar Porsche is created.
+MuscleCar Mustang is created. 
+MuscleCar Corvette is created. 
+Race Daytona is created. 
+Driver Michael received car Porsche. 
+Driver Peter received car Mustang. 
+Driver Michael received car Corvette. 
+Race Daytona cannot start with less than 3 participants. 
+Driver Michael added in Daytona race. 
+Driver Peter added in Daytona race. 
+Race Daytona cannot start with less than 3 participants. 
+Driver Brian is created. 
+Driver Brian could not participate in race. 
+SportsCar Mazda is created. 
+Driver Brian received car Mazda. 
+Driver Brian added in Daytona race. 
+Driver Michael wins Daytona race.
+Driver Peter is second in Daytona race. 
+Driver Brian is third in Daytona race. 
 
-# Example 2
+# Example Two
 
-| **Input** |
-| --- |
-| CreateDriver Kevin |
-| CreateDriver Kevin |
-| CreateDriver Jose |
-| CreateCar Sports Ford 500 |
-| CreateCar Sports Kia 300 |
-| CreateCar Muscle Ford 550 |
-| CreateCar Muscle Ford 550 |
-| StartRace LeMans |
-| CreateRace LeMans 4 |
-| AddDriverToRace Dakar Kevin |
-| AddDriverToRace LeMans Jose |
-| AddDriverToRace LeMans Kevin |
-| AddCarToDriver Kevin Ford |
-| AddDriverToRace LeMans Kevin |
-| CreateCar Sports Porsche 380 |
-| CreateCar Muscle Mustang 490 |
-| CreateCar Muscle Dodge 500 |
-| CreateRace Daytona 2 |
-| CreateDriver Michael |
-| CreateDriver Peter |
-| AddCarToDriver Michael Porsche |
-| AddCarToDriver Peter Mustang |
-| AddDriverToRace LeMans Michael |
-| AddDriverToRace LeMans Peter |
-| StartRace LeMans |
-| End |
+**Input**
+ CreateDriver Kevin 
+ CreateDriver Kevin 
+ CreateDriver Jose 
+ CreateCar Sports Ford 500 
+ CreateCar Sports Kia 300 
+ CreateCar Muscle Ford 550 
+ CreateCar Muscle Ford 550 
+ StartRace LeMans 
+ CreateRace LeMans 4 
+ AddDriverToRace Dakar Kevin 
+ AddDriverToRace LeMans Jose 
+ AddDriverToRace LeMans Kevin 
+ AddCarToDriver Kevin Ford 
+ AddDriverToRace LeMans Kevin 
+ CreateCar Sports Porsche 380 
+ CreateCar Muscle Mustang 490 
+ CreateCar Muscle Dodge 500 
+ CreateRace Daytona 2 
+ CreateDriver Michael 
+ CreateDriver Peter 
+ AddCarToDriver Michael Porsche 
+ AddCarToDriver Peter Mustang 
+ AddDriverToRace LeMans Michael 
+ AddDriverToRace LeMans Peter 
+ StartRace LeMans 
+ End 
 
-| **Output** |
-| --- |
-| Driver Kevin is created. |
-| Driver Kevin is already created. |
-| Name Jose cannot be less than 5 symbols. |
-| Invalid horse power: 500. |
-| Model Kia cannot be less than 4 symbols. |
-| MuscleCar Ford is created. |
-| Car Ford is already created. |
-| Race LeMans could not be found. |
-| Race LeMans is created. |
-| Race Dakar could not be found. |
-| Driver Jose could not be found. |
-| Driver Kevin could not participate in race. |
-| Driver Kevin received car Ford. |
-| Driver Kevin added in LeMans race. |
-| SportsCar Porsche is created. |
-| MuscleCar Mustang is created. |
-| MuscleCar Dodge is created. |
-| Race Daytona is created. |
-| Driver Michael is created. |
-| Driver Peter is created. |
-| Driver Michael received car Porsche. |
-| Driver Peter received car Mustang. |
-| Driver Michael added in LeMans race. |
-| Driver Peter added in LeMans race. |
-| Driver Peter wins LeMans race. |
-| Driver Kevin is second in LeMans race. |
-| Driver Michael is third in LeMans race. |
-
-
-
-
-
-
+ **Output**
+ Driver Kevin is created. 
+ Driver Kevin is already created. 
+ Name Jose cannot be less than 5 symbols. 
+ Invalid horse power: 500. 
+ Model Kia cannot be less than 4 symbols. 
+ MuscleCar Ford is created. 
+ Car Ford is already created. 
+ Race LeMans could not be found. 
+ Race LeMans is created. 
+ Race Dakar could not be found. 
+ Driver Jose could not be found. 
+ Driver Kevin could not participate in race. 
+ Driver Kevin received car Ford. 
+ Driver Kevin added in LeMans race. 
+ SportsCar Porsche is created. 
+ MuscleCar Mustang is created. 
+ MuscleCar Dodge is created. 
+ Race Daytona is created. 
+ Driver Michael is created. 
+ Driver Peter is created. 
+ Driver Michael received car Porsche. 
+ Driver Peter received car Mustang. 
+ Driver Michael added in LeMans race. 
+ Driver Peter added in LeMans race. 
+ Driver Peter wins LeMans race. 
+ Driver Kevin is second in LeMans race. 
+ Driver Michael is third in LeMans race.
 
 
 [/task-description]
