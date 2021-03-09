@@ -9,7 +9,7 @@
 
 Every day we are faced with decisions, which we make based on conditions that may or may not depend on us.
 
-Let's imagine the following daily situation:
+Let us imagine the following daily situation:
 
 You have some plants in the garden that need watering. 
 
@@ -17,11 +17,11 @@ Depending on the weather outside, you could decide to water them or not.
 
 **If** it is raining:
 
-  * I shall skip watering the plants in the garden
+  * You can skip watering the plants in the garden
 
 **Else**:
 
-  * I will have to water them
+  * You need to water them
 
 This particular situation only has two options to choose from, but in real life, as well as in programming, you could have multiple.
 
