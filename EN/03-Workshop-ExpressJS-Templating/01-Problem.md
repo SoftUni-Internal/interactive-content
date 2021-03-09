@@ -14,6 +14,7 @@ You should implement the following routes:
 
 [slide hideTitle]
 # Main Page
+
 [image assetsSrc="cubicle-workshop-08.png" /]
 
 [image assetsSrc="cubicle-workshop-09.png" /]
@@ -22,24 +23,28 @@ You should implement the following routes:
 
 [slide hideTitle]
 # About Page
+
 [image assetsSrc="cubicle-workshop-10.png" /]
 
 [/slide]
 
 [slide hideTitle]
 # Create Page
+
 [image assetsSrc="cubicle-workshop-11.png" /]
 
 [/slide]
 
 [slide hideTitle]
 # Details Page
+
 [image assetsSrc="cubicle-workshop-12.png" /]
 
 [/slide]
 
 [slide hideTitle]
 # Not Found Page
+
 [image assetsSrc="cubicle-workshop-13.png" /]
 
 [/slide]
@@ -55,8 +60,12 @@ Identify the dynamic parts and use the appropriate syntax for interpolating and 
 [slide hideTitle]
 # Bonus: Search
 
-Implement searching logic. Use the following validation:
+Implement searching logic. 
+
+Use the following validation:
+
 - If the user searches **only** a string and **NO difficulty**, render **all difficulties**
+
 - If the search does **NOT** meet the requirements, just redirect to the home page `/`
 
 ## Good luck!
