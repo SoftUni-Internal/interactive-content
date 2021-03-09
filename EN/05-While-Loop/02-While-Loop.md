@@ -3,38 +3,42 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/EN/Java-While-Loops-5-6-7-While-Loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In programming the `while` **loop** is used when we want to **repeat** the execution of a certain logic while a condition is in effect. 
+In programming, a **while-loop** is used when we want to **repeat** the execution of a certain logic while a specified condition is reached. 
 
-By **"condition"**, we understand every **expression** that returns `true` or `false`. When **the condition** is **wrong**, the while loop is **interrupted**, the program **continues** to execute the remaining code after the loop. 
+By **"condition"**, we understand every **expression** that returns `true` or `false`. If the **condition** returns **false**, the while loop is **interrupted**, and the program **continues** to execute the remaining code after the loop. 
 
 [image assetsSrc="05-use-case-while.png" /]
 
-The while loop looks like this:
+The **syntax of the while-loop** looks like this:
 ```java
 while (condition) {
   loop body;
 }
 ```
 
-In the code example above, condition is any **expression that returns a Boolean result** – `true` or `false`. 
+In the example above, the condition can be any **expression that returns a Boolean result** – `true` or `false`. 
 
-It determines how long the loop body will be repeated and is called `loop condition`. 
+How many times the loop body will be repeated depends on the `condition`. 
 
-In this example the `loop body` is the programming code executed at each iteration of the loop, i.e. whenever the input condition is true.
+In this example, the `loop body` is the programming code that is executed at each iteration of the loop, whenever the **condition is true**.
 
-In the while loop, firstly the Boolean expression is evaluated and if it is `true`, the sequence of operations in the body of the loop is executed. 
+In the **while-loop**, the **condition** is evaluated first, and if it returns **true**, then the statements inside the loop execute.  
 
-Then again the input condition is checked and if it is `true` again, the body of the loop is executed. 
+Next, the condition is checked again, and if it is **true**, the body of the loop is executed. 
 
-All this is repeated again and again **until at some point the conditional expression returns value** `false`.
+This process is repeated again and again **until the conditional expression returns** `false`. 
+
+Then, the control comes out of the loop and jumps to the next statement after the **while-loop** .
+
 
 # Example: Sequence of Numbers 2k+1
-Write a program that prints all **numbers ≤ n** of the series: **1, 3, 7, 15, 31, …,** assuming that each next number = **previous number * 2 + 1**.
+**Problem:** Create a program that prints all **numbers that are smaller than or equal to `n`**. The first number will be equal to **1**. The second number will be equal to **1*2+1**, which is equal to **3**. Each next number is calculated by the formula: **previous number * 2 + 1**.
+Therefore, the first few numbers are: **1, 3, 7, 15, 31, …,** 
 
 Here is how we can solve the problem:
-- We create a num variable for the current number to which we assign an initial **value of 1**
-- For a loop condition, we put **the current number <= n**
-- In **the body of the loop**: we print the value of the current number and increase the current number by using the formula from the problem's description
+- First, we create a **num** variable for the current number, to which we assign an **initial value of 1**
+- For a loop condition, we specify that **the current number should be smaller than or equal to `n`**
+- In **the body of the loop**, we print the value of the **current number**, and we increase it by using the formula provided in the problem's description
 
 Here is a sample implementation of this idea:
 ```java live
