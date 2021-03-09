@@ -71,7 +71,7 @@ JavaScript can also be **directly** inserted into the HTML document:
 
 In this example, a script is inserted into the HTML document by using the `<script>` tag.
 
-And that way, the first title element, which is `Introduction to DOM`, can be printed into the browser's console.
+And that way, the first title element, which is "**Introduction to DOM**", can be printed into the browser's console.
 
 [/slide]
 
@@ -79,7 +79,7 @@ And that way, the first title element, which is `Introduction to DOM`, can be pr
 
 # Another Example of DOM Methods
 
-HTML DOM properties are values that you can `get` or `set`:
+HTML DOM properties are values that you can "**get**" or "**set**":
 
 ```js
 <html>
@@ -104,7 +104,7 @@ The given code produces the following result:
 
 [image assetsSrc="JS-Advanced-Intro-DOM.JPG" /]
 
-With this example ` - DONE` is added to the end of `DOM Properties example` and as a result, there is `DOM Properties example - DONE`.
+With this example "**- DONE**" is added to the end of "**DOM Properties example**" and as a result, there is "**DOM Properties example - DONE**".
 
 This is how to **dynamically** change the content of a web page.
 

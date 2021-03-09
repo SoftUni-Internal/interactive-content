@@ -171,13 +171,13 @@ Then you should create and append an `<option>` to the `<select>` with id "**men
 
 ## Hints
 
-- Your function should take the values of **newItemText** and **newItemValue**. 
+- Your function should take the values of **newItemText** and **newItemValue**
 
 After that you should create a new **option** element and set its **textContent** and its **value** to the newly taken ones.
 
-- Once you have done all of that, you should **append** the newly created **option** as a **child** to the **select** item with id "**menu**".
+- Once you have done all of that, you should **append** the newly created **option** as a **child** to the **select** item with id "**menu**"
 
-- Finally, you should **clear** the value of the two **input** fields.
+- Finally, you should **clear** the value of the two **input** fields
 
 [/task-description]
 [code-io /]
@@ -324,15 +324,15 @@ Link action should be **toggleable** (you should be able to click the button inf
 
 ## Hints
 
-- To **change** the text content of a button, you could use **getElementsByClassName**. 
+- To **change** the text content of a button, you could use **getElementsByClassName**
 
-However, that returns a **collection** and we need only **one** element from it, so the correct way is to use `getElementsByClassName("button")[0]` as it will return the needed span element.
+However, that returns a **collection** and we need only **one** element from it, so the correct way is to use `getElementsByClassName("button")[0]` as it will return the needed span element
 
-- After that we should change the **display style** of the div with an id "**extra**". 
+- After that we should change the **display style** of the div with an id "**extra**"
 
-If the display style is "**none**", we should **change** it to "**block**" and the **opposite**.
+If the display style is "**none**", we should **change** it to "**block**" and the **opposite**
 
-- Along with all of this, we should **change** the text content of the **button** to `[Less]`/`[More]`.
+- Along with all of this, we should **change** the text content of the **button** to `[Less]`/`[More]`
 
 [/task-description]
 [code-io /]
@@ -1340,7 +1340,7 @@ Otherwise, if we create an invalid expression such as `"99 +" (without second/ri
 
 [image assetsSrc="JS-Advanced-DOM-Homework-18.png" /]
 
-The "**Clear**" button should **clear both Expression and Result fields (`#expressionOutput` and `#resultOutput`)
+The "**Clear**" button should clear both Expression and Result fields (`#expressionOutput` and `#resultOutput`)
 
 For instance, if we have the following expression:
 
@@ -1848,7 +1848,7 @@ You have to insert the two options (binary and hexadecimal) inside before contin
 
 Also they should have values (binary and hexadecimal).
 
-- When the `[Convert it]` button is **clicked**, the expected result should appear in the `[Result]` input field.
+- When the `[Convert it]` button is **clicked**, the expected result should appear in the `[Result]` input field
 
 [image assetsSrc="JS-Advanced-DOM-Homework-22.jpg" /]
 

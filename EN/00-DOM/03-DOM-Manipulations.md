@@ -58,7 +58,7 @@ Here are some of the **methods** and **properties** which are used in the proces
 
 - `.attributes` - A property that returns all attributes of an element in a collection
 
-Every item in that collection has **two** values - **attribute** and **value**
+Every item in that collection has **two** values - **attribute** and **value:**
 
 - `.setAttribute()` - A method, used to **add** an attribute to an element, or **update** it, if the element already has the given attribute
 
@@ -93,7 +93,7 @@ It takes two parameters - the element to be replaced and the element to replace 
 
 There are **two** ways to create new HTML elements.
 
-The first one is to **directly** create one using the `.createElement` command.
+The first one is to **directly** create one using the "**.createElement**" command.
 
 ```js
 let h1 = document.createElement("h1");
@@ -162,9 +162,13 @@ function articlesList(){
 
 In this problem, you should create JS functionality which creates articles and appends them into an article section.
 
-The programs in this language are called **scripts**. They can be written directly in the HTML file and **executed automatically** as the page loads.
+The programs in this language are called **scripts**. 
 
-Scripts are provided and executed as a **plain text**. They do not need special preparation or compilation to run.
+They can be written directly in the HTML file and **executed automatically** as the page loads.
+
+Scripts are provided and executed as a **plain text**. 
+
+They do not need special preparation or compilation to run.
 
 In this aspect, JavaScript is very **different** from many other languages, which require compilation and additional steps before it such as Java.
 

@@ -37,7 +37,7 @@ document.location = "https://softuni.org";
 history.back();
 ```
 
-## In the next lesson you will learn:
+## In the next lesson, you will learn:
 
 - **DOM Manipulations**
 
