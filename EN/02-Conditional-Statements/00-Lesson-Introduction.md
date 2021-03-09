@@ -9,19 +9,19 @@
 
 **1. Logical Expressions**
 
-- How we use comparison operators
+- How to use comparison operators
 
 **2. What are Conditional Statements**
 
-- if, if-else conditions
+- The "if" and "if-else" conditions
 
 **3. Series of Checks**
 
-- if-else-if-else-if...
+- Chaining if-else statements
 
 **4. Blocks and Variable Scope**
 
-- What is variable scope
+- What is a variable scope
 
 **5. What is Debugging**
 
