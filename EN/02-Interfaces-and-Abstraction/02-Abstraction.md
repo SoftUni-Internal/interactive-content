@@ -111,6 +111,10 @@ Walking....
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-9-abstraction-vs-encapsulation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[image assetsSrc="Interfaces-and-Abstraction-example(2).png" /]
-
+|**Abstraction**|**Encapsulation**|
+|---|---|
+|Abstraction solves the problem at the design level.|Encapsulation solves the problem at the implementation level.|
+|Abstraction lets you focus on what the object does instead of how it does it.|Encapsulation means holding the internal details or mechanics of how an object does something.|
+|Abstraction is used for hiding unwanted data and providing relevant data.|Encapsulation means holding the code and data into a single unit to protect the data from the outside world.|
+|Abstraction is the outer layout, used in terms of design. Example: Outer look of a mobile phone, like it has a display screen and keypad buttons to dial a number.|Encapsulation is the inner layout, used in terms of implementation. Example: inner implementation detail of a mobile phone, how keypad button and display screen are connected using circuits.|
 [/slide]
