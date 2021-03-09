@@ -1609,13 +1609,12 @@ Vehicle.getHorsePower(480, 2500));
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-25-problem-and-solution-say-hello-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-
-[code-task title="Say Hello" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-lab-Say-Hello"executionType="tests-execution" executionStrategy="java-project-tests"] 
+[code-task title="Say Hello" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-lab-Say-Hello" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
 
 [task-description]
 # Description
-#### UPDATE!!
+#### UPDATE!! 22
 **Build a hierarchy from classes and interfaces for this UML diagram.**
 
 [image assetsSrc="interfaces-and-abstraction-example(7).png" /]
@@ -1680,6 +1679,8 @@ public class TestClasses {
                 Classes.allClasses.containsKey(className));
     }
 }
+
+
 [/input]
 [output]
 Test Passed!
@@ -1793,55 +1794,13 @@ public class TestMethods {
                 nonPrivateFieldsCount == 0);
     }
 }
+
 [/input]
 [output]
 Test Passed!
 [/output]
 [/test]
-[test]
-[input]
-import org.junit.Assert;
-import org.junit.Test;
-
-import java.lang.reflect.Field;
-import java.lang.reflect.Modifier;
-import java.util.stream.Stream;
-
-public class TestEncapsulation {
-
-    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
-    private static final String HAS_NON_PRIVATE_FIELDS_ERROR_MESSAGE = "Class %s contains non private fields";
-
-    private static final String BULGARIAN = "Bulgarian";
-    private static final String EUROPEAN = "European";
-    private static final String CHINESE = "Chinese";
-
-    @Test
-    public void test() {
-        assertHasNoPrivateFields(BULGARIAN);
-        assertHasNoPrivateFields(EUROPEAN);
-        assertHasNoPrivateFields(CHINESE);
-    }
-
-    private void assertHasNoPrivateFields(String className) {
-        Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
-                Classes.allClasses.containsKey(className));
-
-        Class cl = Classes.allClasses.get(className);
-
-        Field[] fields = cl.getDeclaredFields();
-        long nonPrivateFieldsCount = Stream.of(fields).filter(f -> !Modifier.isPrivate(f.getModifiers())).count();
-        Assert.assertTrue(
-                String.format(HAS_NON_PRIVATE_FIELDS_ERROR_MESSAGE, className),
-                nonPrivateFieldsCount == 0);
-    }
-}
-[/input]
-[output]
-Test Passed!
-[/output]
-[/test]
-[test]
+[test open]
 [input]
 import org.junit.Assert;
 import org.junit.Test;
@@ -1890,6 +1849,7 @@ public class TestConstructors {
                 Classes.allClasses.containsKey(className));
     }
 }
+
 [/input]
 [output]
 Test Passed!
@@ -1940,6 +1900,7 @@ public class TestInterfaces {
         }
     }
 }
+
 [/input]
 [output]
 Test Passed!
@@ -2051,6 +2012,7 @@ public class TestMethodsReturnedTypes {
                 nonPrivateFieldsCount == 0);
     }
 }
+
 [/input]
 [output]
 Test Passed!
@@ -2059,7 +2021,6 @@ Test Passed!
 [/tests]
 [/code-task]
 [/slide]
-
 
 [slide hideTitle]
 # Problem with Solution: Say Hello Extended
