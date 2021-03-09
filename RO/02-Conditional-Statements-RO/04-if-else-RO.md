@@ -1,11 +1,11 @@
 [slide hideTitle]
 
 # Condițile If-Else
-Construcția `if` poate conține, de asemenea, o clauză `else` pentru a da o acțiune specifică în cazul în care expresia Boolean (care este setată la începutul `if (expresia bool)`) returnează un rezultat negativ (`false`).
+Construcția `if` poate conține, de asemenea, o clauză `else` pentru a da o acțiune specifică în cazul în care expresia booleană (care este setată la începutul `if (expresia bool)`) returnează un rezultat negativ (`false`).
 
-Construită astfel, **declarația condițională** se numește `if-else` și comportamentul său este după cum urmează:
+Construită astfel, **instrucțiunea  condițională** se numește `if-else` și comportamentul său este după cum urmează:
 * În cazul în care rezultatul condiției este pozitiv (`true`) - vom efectua unele acțiuni
-* Când este negativ („false”) - alt ceva
+* Când este negativ („false”) - altceva
 
 [image assetsSrc="02-usecase-if-else-statement.png" /]
 
@@ -18,30 +18,30 @@ if (condition) {
 }
 ```
 
-În cazul în care condiția este `false`, declarație else se execută.
+În cazul în care condiția este `false`, instrucțiunea else se execută.
 
-Deoarece o condiție nu poate fi in același timp „true” și „false”, declarația then și declarația else a unei declarații `if-else` nu pot **fi executate niciodată ambele**.
+Deoarece o condiție nu poate fi in același timp „true” și „false”, instrucțiunea then și instrucțiunea  else a unei instrucțiuni `if-else` nu pot **fi executate niciodată ambele**.
 
-După declarația then sau declarația `else`, controlul este transferat la următoarea declarație care este după declarație `if`.
+După instrucțiunea  then sau instrucțiunea  `else`, controlul este transferat la următoarea instrucțiune care este după instrucțiune `if`.
 
-Într-o declarație `if` care nu include o declarație else, dacă condiția este `true`, atunci declarația then este executată.
+Într-o instrucțiune `if` care nu include o instrucțiune else, dacă condiția este `true`, atunci instrucțiunea  then este executată.
 
-Dacă condiția este `false`, controlul este transferat la următoarea declarație care este după declarație` if`.
+Dacă condiția este `false`, controlul este transferat la următoarea instrucțiune care este după declarație` if`.
 
-Atât declarația then, cât și declarația else pot consta dintr-o singură declarație sau mai multe declarații care sunt încadrate între paranteze `{}`.
+Atât instrucțiunea  then, cât și instrucțiunea  else pot consta dintr-o singură instrucțiune sau mai multe instrucțiuni care sunt încadrate între paranteze `{}`.
 
-Pentru o singură declarație, parantezele sunt opționale, dar recomandate.
+Pentru o singură instrucțiune, parantezele sunt opționale, dar recomandate.
 
-Declarația sau declarațiile din declarația then și declarația else pot fi de orice fel, inclusiv de alta dacă declarația care  este imbricată în  interiorul declarației originale if.
+Instrucțiunea  sau instrucțiunile din instrucțiunea  then și instrucțiunea  else pot fi de orice fel, inclusiv de alta dacă instrucțiunea  care  este imbricată în  interiorul instrucțiunii originale if.
 [/slide]
 
 [slide hideTitle]
 # Exemplu: vreme
 
 
-Aceasta este o versiune extinsă a exemplului din slide-ul anterior.
+Aceasta este o versiune extinsă a exemplului din diapozitivul  anterior.
 
-După cum puteți vedea acum, avem un alt caz, care va fi executat atunci când condiția din declarați `if` se dovedește  sa fie ** false **.
+După cum puteți vedea acum, avem un alt caz, care va fi executat atunci când condiția din instrucțiunea `if` se dovedește  sa fie ** false **.
 ```java
 Scanner scanner = new Scanner(System.in);
 String weather = scanner.nextLine();
@@ -59,10 +59,10 @@ if (weather.equals("rainy")) {
 
 Când avem **o singură comandă** în corpul construcției **if**, putem **sări peste parantezele buclate**, indicând corpul operatorului condiționat.
 
-Când dorim să executăm **bloc de cod** (grup de comenzi), parantezele buclate sunt **necesare**. 
+Când dorim să executăm **bloc de cod** (grup de comenzi), parantezele crețate sunt **necesare**. 
 
 În cazul în care le eliminăm, **numai prima linie** după clauza **if** va fi executată.
-Mai jos avem  un exemplu în care eliminarea parantezele buclate  ne  duce la o confuzie:
+Mai jos avem  un exemplu în care eliminarea parantezele crețate ne  duce la o confuzie:
 ```java live
 String color = "red";
 if (color.equals("red")) 
@@ -86,7 +86,7 @@ if (color.equals("red")) {
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Even or Odd
+# Problemă cu soluție: Even or Odd
 [code-task title="Even or Odd" taskId="pb-java-Conditional-Statements-even-or-odd"  executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -101,10 +101,10 @@ public class Program {
 [/code-editor]
 [task-description]
 # Descriere
-Scrieți un program, care verifică dacă un număr este **even** sau **odd**
+Scrieți un program, care verifică dacă un număr este **par** sau **impar**
 
-   * Dacă este even, tipăriți **even**
-   * Dacă este odd, tipăriți **odd**
+   * Dacă este par, tipăriți **even**
+   * Dacă este impar, tipăriți **odd**
 # Exemplu
 
 | **Input** | **Output** | 
@@ -147,7 +147,7 @@ even
 
 
 [slide hideTitle]
-# Problem with Solution: Greater Number
+# Problemă cu soluție: Greater Number
 [code-task title="Greater Number" taskId="pb-java-Conditional-Statements-greater-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java

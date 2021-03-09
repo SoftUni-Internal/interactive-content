@@ -20,6 +20,8 @@ Bucla începe cu operatorul `for` și trece prin toate valorile pentru o anumit�
 
 [slide hideTitle]
 # Sintaxă: For-Loop
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/EN/interactive-programming-basics-with-java-for-loops-12-13-for-loop-example-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 La declararea buclei, puteți specifica o **valoare inițială** și o **valoare finală**.
 
 **Corpul** buclei este de obicei închis între paranteze `{ }` și reprezintă un bloc de **una sau mai multe comenzi**.
@@ -30,7 +32,7 @@ for (initialization; condition; update) {
   loop's body;
 }
 ```
-Se compune din:
+Este compus  din:
 * O **parte de inițializare** pentru contor (în modelul `int i = 0`)
 * O condiție **booleană** (`i < 10`) 
 * O expresie pentru **actualizarea** contorului (``i += 1``)
@@ -47,7 +49,7 @@ Bucla se repetă de 10 ori și fiecare dintre aceste repetări se numește **"it
 
 
 [slide hideTitle]
-# Problem with Solution: Print Sum of N Numbers
+# Problemă cu soluție: Print Sum of N Numbers
 [code-task title="Print Sum of N Numbers" taskId="java-basics-for-loop-print-sum-of-n-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java

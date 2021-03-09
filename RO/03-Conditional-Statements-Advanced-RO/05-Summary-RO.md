@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Recapitulare
+# Rezumat
 
 # În această lecție ați învățat: 
 
@@ -34,8 +34,7 @@ if (condition1) {
 
 - Instrucțiunea condițională - **Switch-Case**
 
-  * Etichetele de clauză **Switch-Case**
-
+ 
 ```java
 switch (selector) {
   case value1:
@@ -46,6 +45,7 @@ switch (selector) {
     break;
 }
 ```
+ * Etichetele de clauză **Switch-Case**
 
 ## În lecția următoare veți învăța:
 

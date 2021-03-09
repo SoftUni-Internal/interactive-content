@@ -15,18 +15,18 @@ while (condition) {
 
 In codul din exemplul de mai sus, condiția este orice **expresie care returnează un rezultat boolean** – `true` sau `false`. 
 
-Aceasta determină cât timp corpul buclei va fi repetat și se numește `loop condition`. 
+Aceasta determină cât timp corpul buclei va fi repetat și se numește `condi'ia buclei`. 
 
-In acest exemplu `loop body` este codul de programare executat la fiecare iterare a buclei, oricând condiția de intrare este aevărată.
+In acest exemplu `corpul buclei` este codul de programare executat la fiecare iterare a buclei, oricând condiția de intrare este adevărată.
 
-In bucla while, mai întâi expresia Booleană este evaluată și dacă aceasta este `true`, secvența de operații din corpul buclei este executată.  
+In bucla while, mai întâi expresia booleană este evaluată și dacă aceasta este `true`, secvența de operații din corpul buclei este executată.  
 
 Apoi, condiția de intrare este verificată și dacă este din nou `true`, corpul buclei este executat.
 
 Totul se repetă mereu și mereu **până când la un moment dat expresia condițională returnează o valoare** `false`.
 
 # Exemplu: Secvența de Numere 2k+1
-Scrieți un program care imprimă toate **numerele ≤ n** al seriei: **1, 3, 7, 15, 31, …,** dacă fiecare număr următor = **previous number * 2 + 1**.
+Scrieți un program care imprimă toate **numerele ≤ n** al seriei: **1, 3, 7, 15, 31, …,** dacă fiecare număr următor = **numărul anterior* 2 + 1**.
 
 Iată cum rezolvăm problema:
 - Creăm o variabilă num pentru numărul curent căruia îi asignăm inițial **value of 1**
@@ -46,7 +46,7 @@ while (num <= n) {
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Descreșterea Numerelor
+# Problemă cu soluție: Descreșterea Numerelor
 [code-task title="Decreasing Numbers" taskId="java-basics-while-loop-decreasing-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -60,7 +60,7 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Enunț
+## Descriere
 Scrieți un program care:
 
 * Citește un număr de pe consolă
@@ -97,7 +97,7 @@ Scrieți un program care:
 
 
 [slide hideTitle]
-# Problem with Solution: Un număr din interval
+# Problemă cu soluție: Number in Range
 [code-task title="Number in Range" taskId="java-basics-while-loop-number-in-range" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java

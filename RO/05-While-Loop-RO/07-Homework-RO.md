@@ -1,4 +1,4 @@
-# Temă
+# Teme pentru acasă
 
 [slide hideTitle]
 # Problemă: Sum Digits
@@ -278,7 +278,7 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Desciere
-Numărul special este un număr**divisible by all of its digits** fără rest. 
+Numărul special este un număr**divizibil cu toate cifrele sale** fără rest. 
 
 Scrieți un program care: 
 * Primește un număr întreg
@@ -425,7 +425,7 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Enunț
+## Descriere
 Scrieți un program care: 
 
 * Citește un număr **n** de pe consolă
@@ -538,12 +538,12 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Enunț
+## Descriere
 Scrieți un program care: 
 
 * Primește **o sumă de bani** pentru fiecare tranzacție până la **"END"**
 * * Adaugă ** banii în ** soldul ** și ** tipărește **: "Increase: \{money\}", formatează `banii` la **a două cifră** după virgula de zecimale 
-* După **"END"** calculează și **prints** suma totală din cont: "Total: \{balance\}", formatează `balance` până la **2nd digit** după punctul zecimal
+* După **"END"** calculează și **imprimă** suma totală din cont: "Total: \{balance\}", formatează `balance` până la **2nd digit** după punctul zecimal
 ## Exemplu
 | Input | Output |
 | --- | --- |
@@ -616,7 +616,7 @@ Ajutați-o pe Andreea scriind un program în care Andreea să pună titlul unei 
 - Pe fiecare dintre liniile următoare - titlul unei cărți din bibliotecă - un șir
 
 ## Output
-- Dacă Andreea **nu** găsește cartea, imprimă **doup** linii:
+- Dacă Andreea **nu** găsește cartea, imprimă **două** linii:
   - "The book you search is not here!"
   - "You checked \{count\} books."
 - Dacă Andreea **găsește** cartea, imprimă o **singură** linie:
@@ -2172,7 +2172,7 @@ După ce ați găsit ** toate cele trei caractere de cod din comandă **, trebui
 | c| |
 | End| |
 
-### Comments
+### Commentarii
 - "**H**", "**n**", "**e**", "**l**", "**l**", "**o**", "**o**", "**c**" sunt toate litere citite.
 - Mai întâi citim simbolul "**H**" și îl adăugăm la cuvânt. Următorul simbol este "**n**". Face parte din comandă și **nu-l adăugăm la cuvânt când îl întâlnim pentru prima dată **.
 - Următoarele simboluri sunt"**e**", "**l**", "**l**" și le adăugăm la cuvânt. Citim "**o**" și îl notăm ca vizitat, dar încă o dată **nu-l** adăugăm la cuvânt. Următoarea literă este din nou  "**o**" și o adăugăm. Următorul simbol este  "**c**" și toate cele trei simboluri pentru comanda secretă sunt deja disponibile .
@@ -2624,8 +2624,3 @@ I Like Naruto
 
 
 
-[slide]
-# Rezultatele Temei
-
-[tasks-results/]
-[/slide]

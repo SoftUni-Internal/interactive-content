@@ -1,5 +1,6 @@
 [slide hideTitle]
 # Iterația peste caractere
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/EN/interactive-programming-basics-with-java-for-loops-25-26-27-the-ASCII-table-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 # ASCII Table
 Calculatoarele pot înțelege doar numerele, deci un cod **ASCII** este reprezentarea numerică a unui caracter precum 'a' sau '@' sau o acțiune de un fel.
@@ -30,7 +31,7 @@ for (char ch = 'a'; ch <= 'd'; ch++) {
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Latin Letters
+# Problemă cu soluție: Latin Letters
 [code-task title="Latin Letters" taskId="java-basics-for-loop-numbers-latin-letters" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java

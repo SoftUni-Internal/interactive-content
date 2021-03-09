@@ -1,8 +1,8 @@
 [slide hideTitle]
-# Declarații
-**Acțiunile** pe care le execută un program sunt exprimate ca **declarații**. 
+# Instrucțiuni
+**Acțiunile** pe care le execută un program sunt exprimate ca **instrucțiuni*. 
 
-Java suporta câteva tipuri diferite de declarații și aici sunt câteva dintre ele:
+Java suporta câteva tipuri diferite de instrucțiuni  și aici sunt câteva dintre ele:
   * **Declaration statements** - declară variabilele locale și constante
   * **Expression statements** - evaluează expresii
   * **Selection statements** - selectează una dintre o serie de afirmații posibile

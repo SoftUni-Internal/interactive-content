@@ -41,7 +41,7 @@ Variabilele pot fi stocate în programеlе:
 
 [slide hideTitle]
 
-# Example: Declaring a variable
+# Exemplu: Declararea unei variabile
 
 interactive-programming-basics-with-java-expressions-and-statements-3-7-variables-demo
 

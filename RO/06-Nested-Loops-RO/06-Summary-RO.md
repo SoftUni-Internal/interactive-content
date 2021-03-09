@@ -1,11 +1,12 @@
 [slide hideTitle]
 # Rezumat
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-57-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## În această lecție, am învățat: 
 
 - Ce sunt **Buclele Imbricate**
 
-- Sintaxa și detaliile de ansamblu 
+- Sintaxa și detaliile în ansamblu 
 
 ```java live
 int n = 5;

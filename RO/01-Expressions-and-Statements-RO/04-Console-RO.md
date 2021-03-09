@@ -54,11 +54,11 @@ Acest lucru se întâmplă pentru că pe prima linie de cod folosim `println (..
 
 ## Formatare
 În Java, atunci când se imprimă un text, numere și alte date de pe consola, **le putem alătura** folosind template-uri `% s`,`% d`, `% f` etc.
-* `%s` - formatare **string** 
-* `%d` - formatare **integer** 
-* `%f` - formatare **floating-point numbers** 
+* `%s` - formatare **string** (șir)
+* `%d` - formatare **integer** (număr întreg)
+* `%f` - formatare **floating-point numbers** (numere în virgulă mobilă)
 
-În programare, aceste template-uri se numesc **substituenți**. Acesta este un exemplu simplu:
+În programare, aceste șabloane se numesc **substituenți**. Acesta este un exemplu simplu:
 ```java live
 System.out.printf("%d + %d = %d", 3, 5, 3 + 5);
 ```
@@ -71,7 +71,7 @@ Substituentii `%d` se înlocuiesc cu expresiile date după text.
 
 [slide hideTitle]
 
-# Example: Formatting Text and Numbers
+# Exemplu:Formatarea textelor și numerelor
 
 interactive-programming-basics-with-java-expressions-and-statements-16-formatting-output-demo
 
@@ -108,7 +108,7 @@ I am from Sofia!
 
 [slide hideTitle]
 
-# Example: Reading User Input
+# Exemplu: Citirea intrării utilizatorului
 
 interactive-programming-basics-with-java-expressions-and-statements-17-reading-user-input + 
 
@@ -118,7 +118,7 @@ interactive-programming-basics-with-java-expressions-and-statements-17-reading-u
 
 [slide hideTitle]
 
-# Example: Reading User Input
+# Exemplu: Citirea intrării utilizatorului
 
 interactive-programming-basics-with-java-expressions-and-statements-17-reading-user-input + 
 
@@ -128,8 +128,8 @@ interactive-programming-basics-with-java-expressions-and-statements-17-reading-u
 
 
 [slide hideTitle]
-# Citirea întregilor
-Pentru a citi un **întreg** (nu un float) **număr** de pe consolă, trebuie să **declarăm o variabilă**, să declarăm **tipul de număr** și să folosim comanda standard pentru **citirea unei linii de text** din consola sistemului `scanner.nextLine ()` și după aceea **să transformăm linia de text într-un număr întreg** folosind `Integer.parseInt (text)`:
+# Citirea numerelor întregi
+Pentru a citi un **număr întreg** (nu unul în virgulă mobilă) de pe consolă, trebuie să **declarăm o variabilă**, să declarăm **tipul de număr** și să folosim comanda standard pentru **citirea unei linii de text** de pe consola sistemului `scanner.nextLine ()` și după aceea **să transformăm linia de text într-un număr întreg** folosind `Integer.parseInt (text)`:
 
 ```java
 Scanner scanner = new Scanner(System.in);
@@ -195,7 +195,7 @@ Vom învăța cum să gestionăm excepțiile în cursurile ulterioare.
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluția: Greeting
+# Problemă cu soluție: Greeting
 [code-task title="Greeting" taskId="pb-java-expressions-greeting" executionStrategy="java-code" requiresInput]
 [code-editor language="java"]
 ```java
@@ -211,13 +211,13 @@ public class Program {
 [/code-editor]
 [task-description]
 # Descriere
-Scrieți un **program**, care:
+Scrieți un **program** care:
 
 * Citește o intrare de utilizator - **name**, de pe consolă
 * Tipărește "Hello, \{name\}!", unde \{name\} este intrarea utilizatorului
 # Exemplu:
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Peter | Hello, Peter! |
 |  |  |

@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Problem: Time For Lunch
+# Problemă: Time For Lunch
 [code-task title="Time For Lunch" taskId="java-exam-prep-Time-For-Lunch" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -44,17 +44,17 @@ Imprimați pe consolă o linie:
 [hints]
 
 [hint]
-Determine the time needed for lunch.
+Stabiliți timpul necesar pentru prânz.
 [/hint]
 
 [hint]
-Calculate the relax time.
+Calculați timpul pentru relaxare.
 [/hint]
 
 [hint]
-Figure out how much time is left.
+Calculați cât timp a rămas.
 
-Make sure that the right output is printed to the console.
+Asigurați-vă că ieșirea corectă a fost imprimată pe consolă.
 [/hint]
 [/hints]
 

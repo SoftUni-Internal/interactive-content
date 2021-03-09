@@ -5,7 +5,7 @@ Java-basics-introduction-to-programming-33-35-Typical-program-errors-and-mistake
 
 IntelliJ are o modalitate de a ne arăta erorile de bază pe care le putem face.
 
-Acesta ubliniază codul greșit care nu poate fi compilat.
+Acesta subliniază codul greșit care nu poate fi compilat.
 
 Unele dintre greșelile de bază pe care le putem întâlni:
 
@@ -13,7 +13,7 @@ Unele dintre greșelile de bază pe care le putem întâlni:
 
 - O sintaxă greșită
 
-- Citate lipsă "" sau paranteză ()
+- Lipsa ghilimelelro  "" sau parantezelor ()
 
 
 [/slide]

@@ -1,11 +1,11 @@
-# Lecție introductivă
+# Introducere
 [slide hideTitle]
 
 # Conținutul lecției
 
 ## În această lecție veți afla despre:
 
-**1. Operatori de incrementare și decrementare**
+**1. Operatorii de incrementare și decrementare**
 
 - Cum se utilizează prexicul și sufixul **++** și **-**
 

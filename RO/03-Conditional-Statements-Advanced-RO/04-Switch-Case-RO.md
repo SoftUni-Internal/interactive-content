@@ -1,7 +1,7 @@
 # Instrucțiunea Switch-case
 
 [slide hideTitle]
-# Instrucțiunea de comutare a clauzelor
+# Instrucțiunea de comutare a clauzelor switch-case
 Instrucțiunea de comutare a clauzelor funcționează ca o secvență de blocuri **if-else**.
 
 Ori de câte ori munca programului nostru depinde de valoarea unei variabile, în loc să facem condiții consecutive cu blocuri `if-else`, putem **folosi** instrucțiunea condițională `switch`.
@@ -15,7 +15,7 @@ Instrucțiunea compară o valoare dată cu constante definite și, în funcție 
 - **Consecutiv**, programul începe **să compare** fiecare **valoare** care este **găsită** după **etichetele** `case`
 - În caz de potrivire, executarea codului din locul respectiv începe și continuă până când ajunge la operatorul `break`
 
-În unele limbaje de programare (cum ar fi C și C ++) `break` ar putea fi sarit, pentru a executa un cod din altă construcție 'caz' până când ajunge la un alt operator.
+În unele limbaje de programare (cum ar fi C și C ++) `break` ar putea fi sărit, pentru a executa un cod din altă construcție 'caz' până când ajunge la un alt operator.
 
 În Java, însă, prezența `break` este **obligatoriu** pentru **fiecare** `caz` care conține o logică de program.
 
@@ -77,7 +77,7 @@ switch (choice) {
 
 [slide hideTitle]
 # Etichete multiple
-În **Java** avem posibilitatea de a utiliza etichete **multiple** `case` în construcția 'switch-case', atunci când trebuie să execute **același cod**.
+În **Java** avem posibilitatea de a utiliza etichete **multiple** de caz în construcția 'switch-case', atunci când trebuie să execute **același cod**.
 
 În acest fel, când **programul nostru** găsește o **potrivire**, acesta va executa **următorul** cod, deoarece **după** eticheta respectivă `case` **nu există cod** de executat și un operator `break`. 
 

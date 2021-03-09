@@ -3,7 +3,7 @@
 În Java putem folosi tipurile de date pentru a defini variabilele după cum urmează:
    * **int** - un număr întreg: 1, 2, 3 ...
   * **double** – numere zecimale: -0.5, 3.14, …
-  * **boolean** – valoare Boolean : true, false
+  * **boolean** – valoare booleană : true, false
   * **char** – simbol: 'a', 'b', '#', …
   * **string** - text: "Hello", "World", …
 
@@ -42,7 +42,7 @@ Există alte convenții de denumire care sunt folosite în diferite limbi, cum a
 int userLoginCount;
 ```
 
-**Cazul Pascal** combină cuvintele prin:
+**Pascal case** combină cuvintele prin:
 * Scrierea cu majuscule a fiecărui cuvânt împreună cu primul
 * Eliminarea spațiului:
 ```java
@@ -51,7 +51,7 @@ int UserLoginCount;
 
 **Snake-case** este o altă convenție de denumire, care separă cuvintele cu:
 * Un caracter de subliniere (_)
-* Fara spatii
+* Fara spații
 * Litera inițială a fiecărui element de obicei cu litere mici în compus
 * Prima literă mai mare sau mică
 ```java

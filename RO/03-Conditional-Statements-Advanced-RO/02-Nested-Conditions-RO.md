@@ -23,7 +23,7 @@ if (condition1) {
 - "Miss" - o fată (sex "f") sub 16 ani
 
 # Soluție: Titluri de persoană
-Ar trebui să observăm că **rezultatul**  programului **depinde de câteva lucruri**.
+Ar trebui să observăm că **rezultatul** programului **depinde de câteva lucruri**.
 
 **Mai întâi**, trebuie să verificăm care este **genul** introdus și **apoi** să verificăm **vârsta**.
 
@@ -59,11 +59,11 @@ if (age < 16) {
 # Imbricare adânca
 Imbricarea a **mai mult de trei instrucțiuni condiționale** în interiorul unei alte intrucțiuni nu este considerată o bună practică.
 
-**Trebuie evitată**, mai ales prin optimizarea structurii / algoritmului codului și / sau prin utilizarea unui alt tip de declarație condițională.
+**Trebuie evitată**, mai ales prin optimizarea structurii / algoritmului codului și / sau prin utilizarea unui alt tip de instruțiune condițională.
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Marketplace
+# Problemă cu soluție: Marketplace
 [code-task title="Marketplace" taskId="java-basics-nested-conditions-marketplace" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -124,7 +124,7 @@ Weekend
 
 
 [slide hideTitle]
-# Problem with Solution: Biggest Number of Three
+#  Problemă cu soluție: Biggest Number of Three
 [code-task title="Biggest Number of Three" taskId="java-basics-nested-conditions-biggest-number-of-three" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

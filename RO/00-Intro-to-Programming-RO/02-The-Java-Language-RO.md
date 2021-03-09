@@ -1,20 +1,20 @@
 [slide hideTitle]
 # Limbajele de programare
 
-Un limbaj de programare este un limbaj artificial (sintaxa pentru expresii), care are ca scop să dea comenzi pe care vrem să le **citească**, **proceseze** și **execute** computerul.
+Un limbaj de programare este un limbaj artificial (sintaxa pentru expresii), care are ca scop să dea comenzi pe care vrem să le **citească**, **proceseze** și **execute** calculatorul.
 
-Utilizând limbajele de programare, scriem **secvențe de comenzi** (programe), care definesc ceea ce ar trebui să facă computerul. 
+Utilizând limbajele de programare, scriem **secvențe de comenzi** (programe), care definesc ceea ce ar trebui să facă calculatorul. 
 
 Exemple de limbaje de programare sunt C#, Java, JavaScript, Python, C, C++, PHP, Swift, Go și multe altele. 
 
 Aceste limbaje diferă din perspectiva filosofiei lor, a sintaxei, a scopului, a construcțiilor de programare și a mediului de execuție.  
 
-Execuția unui program de computer poate fi realizată cu un **compilator** (**compiler**) sau cu un **interpret** (**interpreter**).
+Execuția unui program de calculator poate fi realizată cu un **compilator** (**compiler**) sau cu un **interpretor** (**interpreter**).
 
 ## Compilatorii
 **Compilatorul** traduce codul din limbajul de programare într-un **cod de mașină**, iar pentru fiecare dintre construcții (comenzi) din codul respectiv alege un fragment de cod al mașinii adecvat, pregătit dinainte și între timp **verifică** textul programului pentru a identifica **erori**.
 
-Împreună, fragmentele compilate transformă programul într-un cod mașină, așa cum se așteaptă microprocesorul computerului să îl primească.
+Împreună, fragmentele compilate transformă programul într-un cod mașină, așa cum se așteaptă microprocesorul calculatorului să îl primească.
 
 ## Interpreții
 **Interpretul** este un **program pentru executarea de programe**", scris într-un anumit limbaj de programare. 
@@ -26,7 +26,7 @@ El execută comenzile din program **una după cealaltă**, întrucât înțelege
 # Limbajul Java
 **Java** este un limbaj de programare modern, de uz general.
 
-Java este extrem de versatil. Poți crea cu el orice: de la aplicații mobile și pentru Web la jocuri, funcționalități back-end.E
+Java este extrem de versatil. Poți crea cu el orice: de la aplicații mobile și pentru Web la jocuri, funcționalități back-end.
 
 Cererea pentru developeri Java este, în prezent, printre cele mai ridicate. Acest lucru asigură realizarea profesională odată ce ați obținut competențele necesare! Java este utilizat de cca **7,1 milioane** de programatori pe întreg mapamondul (conform SlashData). 
 

@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Ce reprezintă codificarea
-**A programa** înseamnă  **a transmite comenzi** computerului, de exemplu, *"să emită un sunet"*, *"să imprime ceva pe ecran"* sau *"să înmulțească două numere"*. 
+**A programa** înseamnă  **a transmite comenzi** calculatorului, de exemplu, *"să emită un sunet"*, *"să imprime ceva pe ecran"* sau *"să înmulțească două numere"*. 
 
 
 Când comenzile se succed una după alta, ele se numesc **program de calculator**. 
@@ -48,7 +48,7 @@ Size = 5
 Area = 25
 ```
 
-Vom **explica detaliat cum se scrie programele în Java**, de ce avem nevoie să definim o **clasă** și de ce avem nevoie să definim o **metodă** `main()` ceva mai târziu. 
+Vom **explica detaliat cum se scrie programele în Java**, de ce avem nevoie să definim o **clasă** și de ce avem nevoie să definim o **metodă** `main()` mai târziu. 
 
 Acum, să presupunem că limbajul Java ne cere întreg codul de mai sus pentru a executa o secvență de comenzi.
 

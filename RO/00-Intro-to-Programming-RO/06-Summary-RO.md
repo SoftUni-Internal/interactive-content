@@ -1,7 +1,7 @@
 
 [slide hideTitle]
 
-# Recapitulare
+# Rezumat
 
 În această lecție ați învățat:
 

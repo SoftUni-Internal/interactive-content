@@ -1,9 +1,7 @@
 [slide hideTitle]
 # Bucle complexe
 
-interactive-programming-basics-with-java-nested-loops-8-9-complex-loops + 
-
-interactive-programming-basics-with-java-nested-loops-8-9-complex-loops-demo
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-8-9-complex-loops-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Atunci când utilizați bucle for, bucla variabilă poate fi modificată în mai multe moduri.
 
@@ -35,7 +33,7 @@ for (int j = 16; j > 1; j /= 2) {
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Numbers from N down to 1
+# Problemă cu soluție: Numbers from N down to 1
 
 interactive-programming-basics-with-java-nested-loops-10-problem-numbers-from-n-down-to-one + 
 
@@ -51,19 +49,19 @@ public class Main {
 
 ```
 [/code-editor]
-[task-description]
-# Description
-Write a program that prints the numbers from N down to 1.
+[task-Descriere]
+# Descriere
+Scrieți un program care imprimă numerele de la  N până la 1.
 
-The program receives a number `n` and prints the numbers from `n` down to 1. 
+Programul primește un număr `n` și imprimă numerele de la `n` până 1. 
 
-# Example
+# Exemplu
 | **Input** | **Output** |
 | --- | --- |
 |5| 5 4 3 2 1 |
 
 
-[/task-description]
+[/task-Descriere]
 [tests]
 [test]
 [input]
@@ -112,7 +110,7 @@ The program receives a number `n` and prints the numbers from `n` down to 1.
 
 
 [slide hideTitle]
-# Problem with Solution: Numbers from 1 to N with Step 3
+# Problemă cu soluție: Numbers from 1 to N with Step 3
 
 interactive-programming-basics-with-java-nested-loops-12-problem-numbers-from-one-to-n-with-step-three + 
 
@@ -128,22 +126,22 @@ public class Main {
 
 ```
 [/code-editor]
-[task-description]
-# Description
-Write a program that prints the numbers from 1 to `n` with step 3:
+[task-Descriere]
+# Descriere
+Scrieți un program care imprimă numerele de la  1 până la `n` cu pasul 3:
 
-* Receives a number `n`
+* Primește un număr `n`
 
-* Prints the numbers from 1 to `n` with step 3
+* Imprimă numerele de la 1 până la `n` cu pasul 3
 
 
-# Example
+# Exemplu
 | **Input** | **Output** |
 | --- | --- |
 |7| 1 4 7 |
 |10| 1 4 7 10 |
 
-[/task-description]
+[/task-Descriere]
 [tests]
 [test]
 [input]
@@ -194,7 +192,7 @@ Write a program that prints the numbers from 1 to `n` with step 3:
 
 
 [slide hideTitle]
-# Problem with Solution: Even Powers of 2
+# Problemă cu soluție: Even Powers of 2
 
 interactive-programming-basics-with-java-nested-loops-14-problem-even-powers-of-two + 
 
@@ -210,21 +208,21 @@ public class Main {
 
 ```
 [/code-editor]
-[task-description]
-# Description
-Write a program that prints the even powers of 2:
+[task-Descriere]
+# Descriere
+Scrieți un program care imprimă puterile pare ale 2:
 
-* Receives a number `n`
+* Primește un număr `n`
 
-* Prints the even powers of 2 up to `2n`
+* Imprimă puterile pare ale  2 până la `2n`
 
-# Example
+# Exemplu
 | **Input** | **Output** |
 | --- | --- |
 |5| 1 4 16 |
 |10| 1 4 16 64 256 1024 |
 
-[/task-description]
+[/task-Descriere]
 [tests]
 [test]
 [input]

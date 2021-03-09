@@ -3,7 +3,7 @@
 
 Să examinăm **operațiile aritmetice de bază** din programare.
 
-Putem adăuga, scădea, înmulți și împărți numerele folosind operatorii `+`, `-`,` * `și` / `.
+Putem aduna, scădea, înmulți și împărți numerele folosind operatorii `+`, `-`,` * `și` / `.
 
 ## Adunarea numerelor
 
@@ -41,11 +41,11 @@ Funcționează diferit cu **numere întregi** și **numere cu virgulă mobilă**
 * Când împărțim două numere și cel puțin unul dintre ele este un număr float, se aplică o **diviziune mobilă**, iar rezultatul obținut este un număr float, la fel ca în matematică. 
   * Example: `11 / 4.0 = 2.75`
   * Când nu se poate face cu o precizie exactă, rezultatul este rotunjit, de exemplu `11.0 / 3 = 3.66666666666667`.
-  *Numărul întreg **împărțit la 0** cauzează o  **excepție ** în timpul rulării (excepție de runtime).
+  *Numărul întreg **împărțit la 0** cauzează o **excepție ** în timpul rulării (excepție de runtime).
   * Numărul float **împărțit la 0** nu provoacă o excepție, iar rezultatul este **+ / - infinity** sau o valoare specială **NaN**. 
   * Example `5 / 0.0 = ∞`.
 
-Mai jos avem câteva exemple cu operatorul diviziei:
+Mai jos avem câteva exemple cu operatorul împărțirii:
 ```java live
 int a = 25;
 int i = a / 4;
@@ -68,9 +68,9 @@ System.out.println(a / 0);
 ```
 ### Împărțirea numerelor cu virgulă mobilă
 
-Să ne uităm la câteva exemple pentru **diviziune floating**.
+Să ne uităm la câteva exemple pentru **împărțirea în virgulă flotantă**.
 
-Când împărțim numerele cu virgulă mobilă, rezultatul este întotdeauna un **număr float** și diviziunea nu eșuează niciodată.
+Când împărțim numerele în virgulă flotantă, rezultatul este întotdeauna un **număr float** și împărțirea nu eșuează niciodată.
 
 De asemenea, funcționează corect cu valorile speciale **+ ∞** și **- ∞**:
 ```java live
@@ -84,8 +84,8 @@ Când imprimați valorile ∞ și -∞, rezultatul pe consola poate fi `?`.
 
 Acest lucru se întâmplă deoarece consola din Windows nu funcționează corect cu Unicode și distruge majoritatea simbolurilor, literelor și caracterelor speciale care nu sunt standard..
 
-### Remainder
-Operatorul remainder `%` calculează restul după împărțirea operandului său din stânga cu operandul din dreapta.
+### Operatorul modulo
+Operatorul modulo `%` calculează restul după împărțirea operandului său din stânga cu operandul din dreapta.
 ```java live
 int a = 7;
 int b = 2;
@@ -94,7 +94,7 @@ System.out.println(3.5 % 1);
 ```
 Este util dacă vrem să verificăm dacă un număr este **even** sau **odd**.
 
-Dacă remainder-ul împărțit la 2 este egal cu 0, atunci numărul este even, altfel este odd.
+Dacă restul împărțit la 2 este egal cu 0, atunci numărul este even, altfel este odd.
 
 Uitați la următorul exemplu: 
 ```java live
@@ -106,7 +106,7 @@ System.out.println(4 % 2);
 [slide hideTitle]
 # Concatenarea textului și a numerelor
 
-în afară de sumarea numerelor, operatorul `+` este folosit și pentru **unirea bucăților de text** (concatenarea a două șiruri una după alta).
+în afară de adunarea numerelor, operatorul `+` este folosit și pentru **unirea bucăților de text** (concatenarea a două șiruri una după alta).
 
 În programare, funcție care unește două bucăți de text este numită **„concatenare“**. 
 

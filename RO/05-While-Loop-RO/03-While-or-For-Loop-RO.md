@@ -1,7 +1,7 @@
 [slide hideTitle]
-# While or For Loop?
+# Bucla While sau bucla For?
 
-Buclele `while` și `for` **repeat** o secvență de **code**.
+Buclele `while` și `for` **repetă** o secvență de **code**.
 
 Dar există diverse situații în care scrierea codului necesită fie prima buclă, fie celelalte. 
 
@@ -43,7 +43,7 @@ System.out.println(number);
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Număr impar
+# Number in Range: Odd number
 [code-task title="Odd Number" taskId="java-basics-while-loop-odd-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -60,7 +60,7 @@ public class Program {
 ## Descriere
 Scrieți un program care:
 
-*  Citește numerele din consolă până ajunge la un **număr imnpar**
+*  Citește numerele din consolă până ajunge la un **număr impar**
 * Imprimă numărul **impar** 
 
 ## Exemplu
@@ -94,7 +94,7 @@ Scrieți un program care:
 
 
 [slide hideTitle]
-# Problem with Solution: Procesor numeric
+# Problemă cu soluție: Number Processor
 [code-task title="Number Processor" taskId="java-basics-while-loop-number-processor" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java

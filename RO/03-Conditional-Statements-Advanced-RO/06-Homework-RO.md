@@ -1,7 +1,7 @@
 # Homework
 
 [slide hideTitle]
-# Problem: Fruit or Vegetable
+# Problemă: Fruit or Vegetable
 [code-task title="Fruit or Vegetable" taskId="pb-java-Conditional-Statements-A-fruit-or-vegetable" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -74,7 +74,7 @@ vegetable
 [/slide]
 
 [slide hideTitle]
-# Problem: Day of Week
+# Problemă: Day of Week
 [code-task title="Day of Week" taskId="pb-java-Conditional-Statements-A-day-of-week" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -91,7 +91,7 @@ public class Main {
 ## Descriere
 Scrieți un program pentru a imprima ziua săptămânii ca un cuvânt:
 
-* Citire și număr întreg **n**: **ziua săptămânii** în intervalul \[1..7\]
+* Citiți și imprimați un număr întreg **n**: **ziua săptămânii** în intervalul \[1..7\]
 * Imprimați **numele zilei** (ca un cuvânt, în engleză)
 * Imprimați **"Error"**, dacă numărul nu se află în intervalul dat
 
@@ -154,7 +154,7 @@ Sunday
 [/slide]
 
 [slide hideTitle]
-# Problem: Vowel or Consonant
+# Problemă: Vowel or Consonant
 [code-task title="Vowel or Consonant" taskId="pb-java-Conditional-Statements-A-vowel-or-consonant" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -169,7 +169,7 @@ public class Main {
 [/code-editor]
 [task-description]
 # Descriere
-Scrieți un program pentru a verifica o literă pentru vocală sau consoană:
+Scrieți un program pentru a verifica  dacă o literă este vocală sau consoană:
 
 * Citiți o **literă** din alfabetul englez
 * Imprimați **"Vowel"** sau **"Consonant"**
@@ -230,7 +230,7 @@ Consonant
 [/slide]
 
 [slide hideTitle]
-# Problem: Product of 3 Numbers
+# Problemă: Product of 3 Numbers
 [code-task title="Product of 3 Numbers" taskId="pb-java-Conditional-Statements-A-product-of-3-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -314,7 +314,7 @@ zero
 [/slide]
 
 [slide hideTitle]
-# Problem: Sorted Numbers
+# Problemă: Sorted Numbers
 [code-task title="Sorted Numbers" taskId="pb-java-Conditional-Statements-A-Sorted-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -417,7 +417,7 @@ Descending
 [/slide]
 
 [slide hideTitle]
-# Problem: Vacation Expenses
+# Problemă: Vacation Expenses
 [code-task title="Vacation Expenses" taskId="pb-java-Conditional-Statements-A-Vacation-Expenses" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -470,7 +470,7 @@ Hotel
 [/slide]
 
 [slide hideTitle]
-# Problem: Cinema
+# Problemă: Cinema
 [code-task title="Cinema" taskId="pb-java-Conditional-Statements-A-Cinema" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -521,7 +521,7 @@ Normal
 [/slide]
 
 [slide hideTitle]
-# Problem: Operations with Numbers
+# Problemă: Operations with Numbers
 [code-task title="Operations with Numbers" taskId="pb-java-Conditional-Statements-A-operations-with-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -608,7 +608,7 @@ Scrieți un program pentru a aplica un operator pentru două numere date:
 [/slide]
 
 [slide hideTitle]
-# Problem: ATM
+# Problemă: ATM
 [code-task title="ATM" taskId="pb-java-Conditional-Statements-A-ATM" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -623,7 +623,7 @@ public class Main {
 [/code-editor]
 [task-description]
 # Descriere
-Scrieți un program pentru a simula retragerea unui bancomat:
+Scrieți un program pentru a simula retragerea de bani din bancomat:
 
 Citiți: **balance**, **withdraw** și **limit**
 * Imprimați `The withdraw was successful.` Dacă soldul este suficient
@@ -663,7 +663,7 @@ The withdraw was successful.
 [/slide]
 
 [slide hideTitle]
-# Problem: Biggest of Five Numbers
+# Problemă: Biggest of Five Numbers
 [code-task title="Biggest of Five Numbers" taskId="pb-java-Conditional-Statements-A-Biggest-of-five-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -723,7 +723,7 @@ Scrieți un program pentru a găsi cel mai mare dintre 5 numere
 [/slide]
 
 [slide hideTitle]
-# Problem: Personal Titles
+# Problemă: Personal Titles
 [code-task title="Personal Titles" taskId="pb-java-Conditional-Statements-A-Personal-Titles" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -917,7 +917,7 @@ Mr.
 [/slide]
 
 [slide hideTitle]
-# Problem: Fuel Tank
+# Problemă: Fuel Tank
 [code-task title="Fuel Tank" taskId="pb-java-Conditional-Statements-A-Fuel-tank" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1042,7 +1042,7 @@ Invalid fuel!
 
 
 [slide hideTitle]
-# Problem: Trade Commissions
+# Problemă: Trade Commissions
 [code-task title="Trade Commissions" taskId="pb-java-Conditional-Statements-A-Trade-Commisions" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1260,7 +1260,7 @@ error
 [/slide]
 
 [slide hideTitle]
-# Problem: Point on Rectangle Border
+# Problemă: Point on Rectangle Border
 [code-task title="Point on Rectangle Border" taskId="pb-java-Conditional-Statements-A-Point-on-Rectangle-Border" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1306,7 +1306,7 @@ Dacă punctul NU se află pe o latură:
 | 12 | |
 | -1 | |
 
-\* **Sugestie**: utilizați una sau mai multe instrucțiuni condiționale **if** cu operații logice. Un punct **{x, y}** se află lângă un dreptunghi **{x1, y1} - {x2, y2}**, dacă una dintre condițiile specificate este îndeplinită:
+\* **Sfat**: utilizați una sau mai multe instrucțiuni condiționale **if** cu operații logice. Un punct **{x, y}** se află lângă un dreptunghi **{x1, y1} - {x2, y2}**, dacă una dintre condițiile specificate este îndeplinită:
 
 - **x** este egal cu **x1** sau **x2** și în același timp **y** este între **y1** și **y2**
 - **y** este egal cu **y1** sau **y2** și în același timp **x** este între **x** și **x2**
@@ -1556,7 +1556,7 @@ Inside / Outside
 
 
 [slide hideTitle]
-# Problem: Summer Outfit
+# Problemă: Summer Outfit
 [code-task title="Summer Outfit" taskId="pb-java-Conditional-Statements-A-Summer-Outfit" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1727,7 +1727,7 @@ It's 11 degrees, get your Shirt and Moccasins.
 [/slide]
 
 [slide hideTitle]
-# Prolem: Fishing Boat
+# Prolemă: Fishing Boat
 [code-task title="Fishing Boat" taskId="pb-java-Conditional-Statements-A-Fishing-Boat" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1986,7 +1986,7 @@ Yes! You have 1750.00 dollars left.
 [/slide]
 
 [slide hideTitle]
-# Problem: Flowers
+# Problemă: Flowers
 [code-task title="Flowers" taskId="pb-java-Conditional-Statements-A-Flowers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -2002,7 +2002,7 @@ public class Main {
 [task-description]
 ## Descriere
 
-O piață de flori oferă **3tipuri de flori: lilia**, **trandafiri** și **lalele**. Prețurile depind de sezon:
+O piață de flori oferă **3 tipuri de flori: lilii**, **trandafiri** și **lalele**. Prețurile depind de sezon:
 
 | **Season** | **Lilia** | **Rose** | **Tulip** |
 | --- | --- | --- | --- |
@@ -2196,9 +2196,4 @@ Y
 
 
 
-[slide]
-# Homework Results
 
-[tasks-results/]
-
-[/slide]

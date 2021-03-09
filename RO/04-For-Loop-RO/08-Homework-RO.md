@@ -1,7 +1,7 @@
-# Homework
+# Teme pentru acasă
 
 [slide hideTitle]
-# Problem: Biggest Number
+# Problemă: Biggest Number
 [code-task title="Biggest Number" taskId="pb-java-for-loop-biggest-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -71,7 +71,7 @@ Scrieți un program care:
 [/slide]
 
 [slide hideTitle]
-# Problem: Max and Min Numbers
+# Problemă: Max and Min Numbers
 [code-task title="Max and Min Numbers" taskId="pb-java-for-loop-max-and-min" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -161,7 +161,7 @@ Min number: -2
 [/slide]
 
 [slide hideTitle]
-# Problem: Power of Number
+# Problemă: Power of Number
 [code-task title="Power of Number" taskId="pb-java-for-loop-power-of-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -214,7 +214,7 @@ Scrieți un program care:
 [/slide]
 
 [slide hideTitle]
-# Problem: Equal Pairs
+# Problemă: Equal Pairs
 [code-task title="Equal Pairs" taskId="pb-java-for-loop-equal-pairs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -365,7 +365,7 @@ Yes, value=10
 [/slide]
 
 [slide hideTitle]
-# Problem: Zig Zag Sum
+# Problemă: Zig Zag Sum
 [code-task title="Zig Zag Sum" taskId="pb-java-for-loop-zig-zag-sum" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -436,7 +436,7 @@ Scrieți un program care:
 [/slide]
 
 [slide hideTitle]
-# Problem: Divide Without Remainder
+# Problemă: Divide Without Remainder
 [code-task title="Divide Without Remainder" taskId="pb-java-for-loop-Divide-without-reminder" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -499,7 +499,7 @@ Scrieți un program care:
 [/slide]
 
 [slide hideTitle]
-# Problem: Vowel Sum
+# Problemă: Vowel Sum
 [code-task title="Vowel Sum" taskId="pb-java-for-loop-vowel-sum" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -598,7 +598,7 @@ s
 [/slide]
 
 [slide hideTitle]
-# Problem: Rollercoaster
+# Problemă: Rollercoaster
 [code-task title="Rollercoaster" taskId="pb-java-for-loop-rollearcoaster" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -616,8 +616,8 @@ public class Program {
 Scrieți un program care:
 
 * Citește **locuri** rollercoaster, **vârsta minimă**, **numărul de persoane** la coadă și **vârsta** pentru fiecare persoană
-* Dacă toate locurile sunt luate, tipăriți - **"Plecările cu valul montan"**
-* Într-un alt caz, tipărește **"În așteptare ..."**
+* Dacă toate locurile sunt luate, tipăriți - **"The rollercoaster departures"**
+* Într-un alt caz, tipărește **"Waiting..."**
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -699,7 +699,7 @@ The rollercoaster departures
 [/slide]
 
 [slide hideTitle]
-# Problem: Multiply
+# Problemă: Multiply
 
 [code-task title="Multiply" taskId="pb-java-for-loop-multiply" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -776,7 +776,7 @@ Scrieți un program care:
 [/slide]
 
 [slide hideTitle]
-# Problem: Back to the Past
+# Problemă: Back to the Past
 [code-task title="Back to the Past" taskId="pb-java-for-loop-back-to-the-past" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -820,13 +820,13 @@ Imprimați pe consolă o singură linie. Suma trebuie formatată cu două cifre 
 
 ### Comentarii
 - 1800 -> an par;
-     - Josh cheltuie 12000 de dolari
+     - Josh cheltuiește 12000 de dolari
      - 50000 - 12000 = rămân 38000 de dolari
 - 1801 -> an impar
-     - cheltuie 12000 + 19 \* 50 = 12000 + 950 = 12950 dolari
+     - cheltuiește 12000 + 19 \* 50 = 12000 + 950 = 12950 dolari
      - 38000 - 12950 = rămân 25050 de dolari
 - 1802 -> an par
-     - el cheltuie 12000 de dolari
+     - el cheltuiește 12000 de dolari
      - 25050 - 12000 = 13050 dolari rămân
 
 [/task-description]
@@ -927,7 +927,7 @@ He will need 2254960.50 dollars to survive.
 [/slide]
 
 [slide hideTitle]
-# Problem: Bills
+# Problemă: Bills
 [code-task title="Bills" taskId="pb-java-for-loop-bills" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1192,7 +1192,7 @@ Average: 89.10 $
 [/slide]
 
 [slide hideTitle]
-# Problem: Hospital
+# Problemă: Hospital
 [code-task title="Hospital" taskId="pb-java-for-loop-Hospital" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1375,7 +1375,7 @@ Untreated patients: 29978.
 [/slide]
 
 [slide hideTitle]
-# Problem: Numbers Ending in 7
+# Problemă: Numbers Ending in 7
 [code-task title="Numbers Ending in 7" taskId="pb-java-for-loop-Numbers-ending-in-7" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1422,7 +1422,7 @@ Imprimați numerele pe o singură linie, separate printr-un singur spațiu.
 
 
 [slide hideTitle]
-# Problem: Odd / Even Position
+# Problemă: Odd / Even Position
 [code-task title="Odd / Even Position" taskId="pb-java-for-loop-odd-even-position" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1669,7 +1669,7 @@ EvenMax=3433.50
 
 
 [slide hideTitle]
-# Problem: Grades
+# Problemă: Grades
 [code-task title="Grades" taskId="pb-java-for-loop-grades" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1722,12 +1722,12 @@ Toate numerele trebuie formatate la a doua zecimală.
 | 2.44| |
 | 5| | 
 
-### Comments
-- Students with grade 5 and more – three = 30% of 10
-- Between 4 and 4.99 – three = 30% of 10
-- Between 3 and 3.99 – two = 20% of 10
-- Less than 3 – two = 20% of 10
-- Average grade: 3 + 2.99 + 5.68 + 3.01 + 4 + 4 + 6 + 4.50 + 2.44 + 5 = 40.62 / 10 = 4.062
+### Commentarii
+- Studenții cu nota 5 și mai mare – trei = 30% of 10
+- Între 4 și 4.99 – trei = 30% of 10
+- Între 3 și 3.99 – doi= 20% of 10
+- Mai mică decât 3 – doi= 20% of 10
+- Media: 3 + 2.99 + 5.68 + 3.01 + 4 + 4 + 6 + 4.50 + 2.44 + 5 = 40.62 / 10 = 4.062
 [/task-description]
 [tests]
 [test open]

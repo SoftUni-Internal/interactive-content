@@ -33,7 +33,7 @@ for (int i = 10; i >= 1; i--) {
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Numbers Ending with 7 
+# Problemă cu soluție: Numbers Ending with 7 
 [code-task title="Numbers Ending with 7" taskId="java-basics-for-loop-numbers-ending-with-7" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -80,7 +80,7 @@ Scrieți un program care:
 
 
 [slide hideTitle]
-# Problem with Solution: Exam Countdown
+# Problemă cu soluție: Exam Countdown
 [code-task title="Exam Countdown" taskId="java-basics-for-loop-exam-countdown" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java

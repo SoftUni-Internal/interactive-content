@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Problem: TV Series Budget
+# Problemă: TV Series Budget
 [code-task title="TV Series Budget" taskId="java-basics-exam-prep-tv-series-budget" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -57,11 +57,11 @@ Rezultatul trebuie formatat la două cifre după punctul zecimal.
 [hints]
 
 [hint]
-After receiving the budget and the series count, determine whether the series in the input have a discount.
-Then, calculate the price for each series.
+După ce ați primit bugetul și numărul serialelor, stabiliți dacă serialele din intrare au o reducere. 
+Atunci, calculați prețul pentru fiecare seriuial.
 [/hint]
 [hint]
-Calculate the price for all of the series and check if you can buy them.
+Calculați prețul tuturor serialelor și verificați dacă le puteți cumpăra.
 [/hint]
 
 [/hints]

@@ -1,6 +1,8 @@
 [slide hideTitle]
 
 # Bucle Imbricate  While
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-28-30-nested-while-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Utilizarea buclelor imbricate  `while` este foarte similară cu cea a buclelor imbricate `for`.
 
 Aceasta este sintaxa în Java:
@@ -34,7 +36,7 @@ while (i < n) {
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Triangle of Stars with While
+# Problemă cu soluție: Triangle of Stars with While
 [code-task title="Triangle of Stars with While" taskId="java-basics-nested-loops-Triangle-of-Stars-with-While" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -88,9 +90,8 @@ Scrieți un program care:
 
 # Exemplu: Combinarea buclelor while și for
 
-interactive-programming-basics-with-java-nested-loops-33-nesting-while-and-for-loops + 
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-33-34-nesting-while-and-for-loops-and-problem-and-solution-sum-digits-calculator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-interactive-programming-basics-with-java-nested-loops-34-problem-and-solution-sum-digits-calcuulator
 
 
 [/slide]

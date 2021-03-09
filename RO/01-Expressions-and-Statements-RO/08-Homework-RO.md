@@ -1,7 +1,7 @@
 # Teme pentru acasă
 
 [slide hideTitle]
-# Problem: Calculate Speed
+# Problem[: Calculate Speed
 [code-task title="Calculate Speed" taskId="pb-java-statements-calculate-speed" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -17,7 +17,7 @@ public class Program {
 [task-description]
 ## Descriere
 Scrieți un program pentru a calcula viteza în funcție de timp și distanță:
-  * Citește 2 numere cu virgulă mobilă: distanță și timp.
+  * Citește 2 numere în virgulă mobilă: distanță și timp.
   * Calculează viteza necesară pentru a parcurge o distanță dată pentru un anumit timp.
   * Imprima rezultatul calculat.
   * Folosește formula: **viteză = distanță/timp**.
@@ -31,46 +31,46 @@ Scrieți un program pentru a calcula viteza în funcție de timp și distanță:
 [/task-description]
 [tests]
 [test open]
-[input]
+[Input]
 15
 2
-[/input]
+[/Input]
 [output]
 7.5
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 10.0
 2.0
-[/input]
+[/Input]
 [output]
 5.0
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 2.0
 10.0
-[/input]
+[/Input]
 [output]
 0.2
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 4.0
 5.0
-[/input]
+[/Input]
 [output]
 0.8
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 4.5
 10.0
-[/input]
+[/Input]
 [output]
 0.45
 [/output]
@@ -82,7 +82,7 @@ Scrieți un program pentru a calcula viteza în funcție de timp și distanță:
 [/slide]
 
 [slide hideTitle]
-# Problem: Currency Converter
+# Problemă: Currency Converter
 [code-task title="Currency Converter" taskId="pb-java-statements-currency-converter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -98,7 +98,7 @@ public class Program {
 [task-description]
 ## Descriere
 Scrieți un program pentru convertirea din USD la EUR:
-  * Citește **numărul cu virgulă mobilă**: dolarii care urmează să fie convertite.
+  * Citește **numărul în virgulă mobilă**: dolarii care urmează să fie convertite.
   * Convertează **dolari în euro** (utilizați **rata fixă** de dolari în euro: 0.88).
   * Imprima valoarea convertită în euro.
 
@@ -114,49 +114,49 @@ Scrieți un program pentru convertirea din USD la EUR:
 [/task-description]
 [tests]
 [test open]
-[input]
+[Input]
 17
-[/input]
+[/Input]
 [output]
 14.96
 [/output]
 [/test]
 [test open]
-[input]
+[Input]
 87
-[/input]
+[/Input]
 [output]
 76.56
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 10.0
-[/input]
+[/Input]
 [output]
 8.8
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 5.0
-[/input]
+[/Input]
 [output]
 4.4
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 25.5
-[/input]
+[/Input]
 [output]
 22.44
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 12.0
-[/input]
+[/Input]
 [output]
 10.56
 [/output]
@@ -168,7 +168,7 @@ Scrieți un program pentru convertirea din USD la EUR:
 [/slide]
 
 [slide hideTitle]
-# Problem: Area of Triangle
+# Problemă: Area of Triangle
 [code-task title="Area of Triangle" taskId="pb-java-statements-Area-of-Triangle" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -185,7 +185,7 @@ public class Program {
 ## Descriere
 Scrieți un program pentru a calcula aria triunghiului:
 
-   * Citește din intrarea a `laturii a` și `înălțime` - **numere în virgulă mobilă**.
+   * Citește din intrare `latura` și `înălțimea` - **numere în virgulă mobilă**.
    * Calculeaza aria triunghiului.
    * Imprima aria, formatată la a doua cifră după punctul zecimal.
   
@@ -197,53 +197,53 @@ Scrieți un program pentru a calcula aria triunghiului:
 
 [hints]
 [hint]
-The formula for calculating a triangle's area is - Area = 1/2 * a * h
+Formula pentru calcularea ariei unui triunghi este- Area = 1/2 * a * h
 [/hint]
 [/hints]
 
 [/task-description]
 [tests]
 [test open]
-[input]
+[Input]
 5
 10
-[/input]
+[/Input]
 [output]
 25.00
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 12.0
 2.0
-[/input]
+[/Input]
 [output]
 12.00
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 5.0
 4.0
-[/input]
+[/Input]
 [output]
 10.00
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 10.5
 2.5
-[/input]
+[/Input]
 [output]
 13.13
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 1.6
 2.8
-[/input]
+[/Input]
 [output]
 2.24
 [/output]
@@ -255,7 +255,7 @@ The formula for calculating a triangle's area is - Area = 1/2 * a * h
 [/slide]
 
 [slide hideTitle]
-# Problem: Four Operations
+# Problemă: Four Operations
 [code-task title="Four Operations" taskId="pb-java-statements-Four-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -286,10 +286,10 @@ Scrieți un program care:
 [/task-description]
 [tests]
 [test open]
-[input]
+[Input]
 10.0
 5.0
-[/input]
+[/Input]
 [output]
 10.00 + 5.00 = 15.00
 10.00 - 5.00 = 5.00
@@ -298,10 +298,10 @@ Scrieți un program care:
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 2.5
 6.5
-[/input]
+[/Input]
 [output]
 2.50 + 6.50 = 9.00
 2.50 - 6.50 = -4.00
@@ -310,10 +310,10 @@ Scrieți un program care:
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 10.5
 2.5
-[/input]
+[/Input]
 [output]
 10.50 + 2.50 = 13.00
 10.50 - 2.50 = 8.00
@@ -322,10 +322,10 @@ Scrieți un program care:
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 1.6
 2.8
-[/input]
+[/Input]
 [output]
 1.60 + 2.80 = 4.40
 1.60 - 2.80 = -1.20
@@ -340,7 +340,7 @@ Scrieți un program care:
 [/slide]
 
 [slide hideTitle]
-# Problem: Days to Minutes
+# Problemă: Days to Minutes
 [code-task title="Days to Minutes" taskId="pb-java-statements-Days-to-Minutes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -356,7 +356,7 @@ public class Program {
 [task-description]
 ## Descriere
 Scrieți un program pentru a converti **zile** în **minute**:
-  * Citește un **singur întreg** (zilele vor fi transformate).
+  * Citește un **singur număr întreg** (zilele vor fi transformate).
   * Transforma zilele în minute (utilizați calcule).
   * **Imprima** minutele.
 
@@ -372,56 +372,56 @@ Scrieți un program pentru a converti **zile** în **minute**:
 
 [hints]
 [hint]
-One day has 24 hours, one hour has 60 minutes, so one day has 1440 minutes.
+O zi are 24 de ore, o oră are 60 de minute, deci o zi are 1440 de minute.
 [/hint]
 [/hints]
 
 [/task-description]
 [tests]
 [test open]
-[input]
+[Input]
 2
-[/input]
+[/Input]
 [output]
 2880
 [/output]
 [/test]
 [test open]
-[input]
+[Input]
 5
-[/input]
+[/Input]
 [output]
 7200
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 6
-[/input]
+[/Input]
 [output]
 8640
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 10
-[/input]
+[/Input]
 [output]
 14400
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 32
-[/input]
+[/Input]
 [output]
 46080
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 9
-[/input]
+[/Input]
 [output]
 12960
 [/output]
@@ -433,7 +433,7 @@ One day has 24 hours, one hour has 60 minutes, so one day has 1440 minutes.
 [/slide]
 
 [slide hideTitle]
-# Problem: Circle Area and Perimeter
+# Problemă: Circle Area and Perimeter
 [code-task title="Circle Area and Perimeter" taskId="pb-java-statements-Circle-Area-and-Perimeter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -452,7 +452,7 @@ Scrieți un program pentru a calcula aria și perimetrul cercului:
   * Citește un **număr cu virgulă mobilă**: raza unui cerc.
   * Calculeaza **aria și perimetrul** unui cerc.
   * Imprima valorile calculate.
-  * Utilizați **formatarea implicită** pentru numerele cu virgulă mobilă în Java în ieșire (ca în exemplul de mai jos).
+  * Utilizați **formatarea implicită** pentru numerele cu virgulă mobilă în Java în Output (ca în exemplul de mai jos).
 
 ## Exemplu
 | **Input** | **Output** |
@@ -462,56 +462,56 @@ Scrieți un program pentru a calcula aria și perimetrul cercului:
 
 [hints]
 [hint]
-The formula for calculating a circle's perimeter is: P = 2 * π * R.
-"R" is the radius.
+Formula pentru calcularea perimetrului unui cerc este: P = 2 * π * R.
+"R" esta raza cercului.
 [/hint]
 [hint]
-The formula for calculating a circle's area is: A = π * R * R.
+Formula pentru calcularea ariei unui cerc: A = π * R * R.
 [/hint]
 [/hints]
 
 [/task-description]
 [tests]
 [test open]
-[input]
+[Input]
 7
-[/input]
+[/Input]
 [output]
 Area = 153.938040
 Perimeter = 43.982297
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 12.0
-[/input]
+[/Input]
 [output]
 Area = 452.389342
 Perimeter = 75.398224
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 10.0
-[/input]
+[/Input]
 [output]
 Area = 314.159265
 Perimeter = 62.831853
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 5.5
-[/input]
+[/Input]
 [output]
 Area = 95.033178
 Perimeter = 34.557519
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 9.4
-[/input]
+[/Input]
 [output]
 Area = 277.591127
 Perimeter = 59.061942
@@ -555,56 +555,56 @@ Scrieți un program care:
 [/task-description]
 [tests]
 [test open]
-[input]
+[Input]
 Kelly
 Smith
 Ireland
 Cork
-[/input]
+[/Input]
 [output]
 Kelly Smith from Ireland - Cork!
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 John
 Smith
 USA
 LA
-[/input]
+[/Input]
 [output]
 John Smith from USA - LA!
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 Ann
 Green
 France
 Paris
-[/input]
+[/Input]
 [output]
 Ann Green from France - Paris!
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 Pesho
 Peshov
 Bulgaria
 Sofia
-[/input]
+[/Input]
 [output]
 Pesho Peshov from Bulgaria - Sofia!
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 A
 B
 C
 D
-[/input]
+[/Input]
 [output]
 A B from C - D!
 [/output]
@@ -632,7 +632,7 @@ public class Program {
 [task-description]
 ## Descriere
 Scrieți un program care:
-  * Citește **3 rânduri** de intrare: nume (**string**), populație și zonă (**integers**)..
+  * Citește **3 rânduri** de Input: nume (**șir**), populație și zonă (**numere întregi**)..
   * Tipărește informațiile despre un oraș în următorul format: "Town \{name\} has population of \{population\} and area \{area\} square km."
 
 ## Exemplu
@@ -644,51 +644,51 @@ Scrieți un program care:
 [/task-description]
 [tests]
 [test open]
-[input]
+[Input]
 Berlin
 3675000
 984
-[/input]
+[/Input]
 [output]
 Town Berlin has population of 3675000 and area 984 square km.
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 Sofia
 100000
 13000
-[/input]
+[/Input]
 [output]
 Town Sofia has population of 100000 and area 13000 square km.
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 Paris
 20065
 1200
-[/input]
+[/Input]
 [output]
 Town Paris has population of 20065 and area 1200 square km.
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 London
 350000
 1000
-[/input]
+[/Input]
 [output]
 Town London has population of 350000 and area 1000 square km.
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 A
 123456
 789
-[/input]
+[/Input]
 [output]
 Town A has population of 123456 and area 789 square km.
 [/output]
@@ -700,7 +700,7 @@ Town A has population of 123456 and area 789 square km.
 
 
 [slide hideTitle]
-# Problem: Square Area
+# Problemă: Square Area
 [code-task title="Square Area" taskId="pb-java-statements-Square-Areaa" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -716,12 +716,12 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program de consolă care citește un **integer** \'a\' și calculează aria pătratului cu dimensiunea \'a\'.
+Scrieți un program de consolă care citește un număr **întreg** \'a\' și calculează aria pătratului cu dimensiunea \'a\'.
 
 ## Intrare
 
 Citiți de pe consolă:
-- dimensiunea pătratului - **interger** în intervalul \ [1 ... 1000 \
+- dimensiunea pătratului - un număr **întreg** în intervalul \ [1 ... 1000 \
 
 ## Ieșire
 
@@ -739,41 +739,41 @@ Imprimați pe consolă aria calculată.
 [/task-description]
 [tests]
 [test open]
-[input]
+[Input]
 5
-[/input]
+[/Input]
 [output]
 25
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 2
-[/input]
+[/Input]
 [output]
 4
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 3
-[/input]
+[/Input]
 [output]
 9
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 100
-[/input]
+[/Input]
 [output]
 10000
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 1
-[/input]
+[/Input]
 [output]
 1
 [/output]
@@ -830,109 +830,109 @@ Imprimați pe consolă:
 [/task-description]
 [tests]
 [test open]
-[input]
+[Input]
 George
 4
-[/input]
+[/Input]
 [output]
 The architect George will need 12 hours to complete 4 project/s.
 [/output]
 [/test]
 [test open]
-[input]
+[Input]
 Peter
 9
-[/input]
+[/Input]
 [output]
 The architect Peter will need 27 hours to complete 9 project/s.
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 Maria
 20
-[/input]
+[/Input]
 [output]
 The architect Maria will need 60 hours to complete 20 project/s.
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 Ivan
 11
-[/input]
+[/Input]
 [output]
 The architect Ivan will need 33 hours to complete 11 project/s.
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 Dimitar
 2
-[/input]
+[/Input]
 [output]
 The architect Dimitar will need 6 hours to complete 2 project/s.
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 Yana
 14
-[/input]
+[/Input]
 [output]
 The architect Yana will need 42 hours to complete 14 project/s.
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 Radi
 24
-[/input]
+[/Input]
 [output]
 The architect Radi will need 72 hours to complete 24 project/s.
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 Jivko
 21
-[/input]
+[/Input]
 [output]
 The architect Jivko will need 63 hours to complete 21 project/s.
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 Preslava
 40
-[/input]
+[/Input]
 [output]
 The architect Preslava will need 120 hours to complete 40 project/s.
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 Alisiya
 37
-[/input]
+[/Input]
 [output]
 The architect Alisiya will need 111 hours to complete 37 project/s.
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 Galin
 50
-[/input]
+[/Input]
 [output]
 The architect Galin will need 150 hours to complete 50 project/s.
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 Gergana
 22
-[/input]
+[/Input]
 [output]
 The architect Gergana will need 66 hours to complete 22 project/s.
 [/output]
@@ -982,61 +982,61 @@ Imprimați pe consolă un singur număr - aria trapezului, formatat la **a doua 
 [/task-description]
 [tests]
 [test open]
-[input]
+[Input]
 8
 13
 7
-[/input]
+[/Input]
 [output]
 73.50
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 4
 6
 8
-[/input]
+[/Input]
 [output]
 40.00
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 100
 200
 300
-[/input]
+[/Input]
 [output]
 45000.00
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 3
 4
 5
-[/input]
+[/Input]
 [output]
 17.50
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 8
 13
 7
-[/input]
+[/Input]
 [output]
 73.50
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 1.2
 2.5
 3.7
-[/input]
+[/Input]
 [output]
 6.85
 [/output]
@@ -1051,7 +1051,7 @@ Imprimați pe consolă un singur număr - aria trapezului, formatat la **a doua 
 
 
 [slide hideTitle]
-# Problem: Vegetable Market
+# Problemă: Vegetable Market
 [code-task title="Vegetable Market" taskId="pb-java-statements-Vegetable-Market" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1072,15 +1072,15 @@ El vinde legume cu **N dolari** pe kilogram și fructe cu **M dolari** pe kilogr
 
 Scrieți un program care calculează veniturile din recoltă în euro (**1 USD = 0.89 EUR**).
 
-## Input
-Input-ul va fi de **4 numere**, fiecare pe o **singură linie**:
+## Intrare
+Intrarea va fi de **4 numere**, fiecare pe o **singură linie**:
 - Prețul kilogramului de legume - **număr în virgulă mobilă** [0.00 ... 1000.00]
 - Prețul kilogramului de fructe - **număr în virgulă mobilă** [0.00 ... 1000.00]
-- Kilograme in total de legume - **integer** [0… 1000]
-- Kilograme in total de fructe - **integer** [0… 1000]
+- Kilograme in total de legume - **un număr întreg** [0… 1000]
+- Kilograme in total de fructe - **un număr întreg** [0… 1000]
 
-## Output
-Imprimați pe consolă un **număr unic**: venitul din toate fructele și legumele în euro.
+## Ieșire
+Imprimați pe consolă un ** singur număr**: venitul din toate fructele și legumele în euro.
 
 Rezultatul ar trebui formatat la **a doua zecimală**.
 
@@ -1104,133 +1104,133 @@ Rezultatul ar trebui formatat la **a doua zecimală**.
 [/task-description]
 [tests]
 [test open]
-[input]
+[Input]
 0.194
 19.4
 10
 10
-[/input]
+[/Input]
 [output]
 174.39
 [/output]
 [/test]
 [test open]
-[input]
+[Input]
 1.5
 2.5
 10
 10
-[/input]
+[/Input]
 [output]
 35.60
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 12.23
 10
 153
 12
-[/input]
+[/Input]
 [output]
 1772.16
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 0
 0
 0
 0
-[/input]
+[/Input]
 [output]
 0.00
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 1
 1
 1
 1
-[/input]
+[/Input]
 [output]
 1.78
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 19.4
 0.0194
 200
 102
-[/input]
+[/Input]
 [output]
 3454.96
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 1000
 1000
 1000
 1000
-[/input]
+[/Input]
 [output]
 1780000.00
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 999.999
 1929212
 75
 23
-[/input]
+[/Input]
 [output]
 39557719.57
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 0.018
 0.217
 546
 897
-[/input]
+[/Input]
 [output]
 181.98
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 14.85
 13
 932
 123
-[/input]
+[/Input]
 [output]
 13740.89
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 232.21
 329.99
 10
 10
-[/input]
+[/Input]
 [output]
 5003.58
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 42
 42
 42
 42
-[/input]
+[/Input]
 [output]
 3139.92
 [/output]
@@ -1241,7 +1241,7 @@ Rezultatul ar trebui formatat la **a doua zecimală**.
 [/slide]
 
 [slide hideTitle]
-# Problem: Pet Shop
+# Problemă: Pet Shop
 [code-task title="Pet Shop" taskId="pb-java-statements-Pet-Shop" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1260,12 +1260,12 @@ public class Main {
 Scrieți un program care să calculeze cheltuielile pentru cumpărarea alimentelor pentru câini și alte animale.
 
 Fiecare pachet de alimente pentru câini costă 2.5 dolari, iar fiecare altul care NU este pentru ei - 4 dolari.
-## Input
+## Intrare
 Input va fi două linii de pe consolă:
-- Număr de câini - număr întreg în intervalul \ [0 ... 100 \]
-- Numărul de celelalte animale - număr întreg în intervalul \ [0 ... 100 \]
+- Număr de câini - un număr întreg în intervalul \ [0 ... 100 \]
+- Numărul de celelalte animale -un număr întreg în intervalul \ [0 ... 100 \]
 
-## Output
+## Ieșire
 Imprimați pe consolă: "\{total sum\} dollars". Rezultatul trebuie să fie formatat la al doilea punct zecimal.
 
 ## Exemple
@@ -1283,109 +1283,109 @@ Imprimați pe consolă: "\{total sum\} dollars". Rezultatul trebuie să fie form
 [/task-description]
 [tests]
 [test open]
-[input]
+[Input]
 5
 4
-[/input]
+[/Input]
 [output]
 28.50 dollars
 [/output]
 [/test]
 [test open]
-[input]
+[Input]
 13
 9
-[/input]
+[/Input]
 [output]
 68.50 dollars
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 11
 3
-[/input]
+[/Input]
 [output]
 39.50 dollars
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 15
 2
-[/input]
+[/Input]
 [output]
 45.50 dollars
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 14
 12
-[/input]
+[/Input]
 [output]
 83.00 dollars
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 11
 17
-[/input]
+[/Input]
 [output]
 95.50 dollars
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 19
 0
-[/input]
+[/Input]
 [output]
 47.50 dollars
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 20
 4
-[/input]
+[/Input]
 [output]
 66.00 dollars
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 0
 0
-[/input]
+[/Input]
 [output]
 0.00 dollars
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 6
 15
-[/input]
+[/Input]
 [output]
 75.00 dollars
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 24
 88
-[/input]
+[/Input]
 [output]
 412.00 dollars
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 30
 20
-[/input]
+[/Input]
 [output]
 155.00 dollars
 [/output]
@@ -1399,7 +1399,7 @@ Imprimați pe consolă: "\{total sum\} dollars". Rezultatul trebuie să fie form
 
 
 [slide hideTitle]
-# Problem: Fishland
+# Problemă: Fishland
 [code-task title="Fishland" taskId="pb-java-statements-Fishland" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1414,24 +1414,24 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-George decide să cumpere ton, scaduri și midii.
+George decide să cumpere ton, macrou și midii.
 
-Ciiți de la consola **prețurile** de macrou și șprot, cantitatea de ton, scads și midii în **kilograme**.
+Ciiți de la consola **prețurile** de macrou și șprot, cantitatea de ton, macrou și midii în **kilograme**.
 
 **Calculați** de  câți bani va avea nevoie ca să plătească factura, în cazul în care prețurile la Fishland sunt:
 - Ton - **cu 60% mai scump decât macroul**
-- Scads - **cu 80% mai scumpe decât șprot**
+- Macrou - **cu 80% mai scump decât șprot**
 - Midii - **7.50 dolari pe kilogram**
 
-## Input
+## Intrare
 Trebuie să citiți **5 numere** de pe consolă:
 - prețul macrouului pe kilogram - **în virgulă mobilă** număr în intervalul [0.00… 40.00]
 - prețul șproturilor pe kilogram - **în virgulă mobilă** număr în intervalul [0.00 ... 30.00]
 - kilograme de ton - **în virgulă mobilă** număr în intervalul [0.00 ... 50.00]
-- kilograme de scaduri - **număr în virgulă mobilă** în intervalul [0.00 ... 70.00]
+- kilograme de macrou - **număr în virgulă mobilă** în intervalul [0.00 ... 70.00]
 - kilograme de midii - **număr întreg** în intervalul [0 ... 100]
 
-## Output
+## ieșire
 
 Imprimați pe consolă un singur număr cu virgulă mobilă: banii pe care George îi va trebui să plătească factura, formatate la **a doua zecimală**.
 
@@ -1447,165 +1447,165 @@ Imprimați pe consolă un singur număr cu virgulă mobilă: banii pe care Georg
 ### Sugestii
 - Prețul tonului = 6.90 + 6.90 \* 0.60 = 11.04 $/kg
 - Suma totală de ton = 1.5 \* 11.04 = 16.56
-- Prețul scadului = 4.20 + 4.20 \* 0.80 =  7.56$/kg
-- Suma totală de scaduri = 2.5 \* 7.56 = 18.90
+- Prețul macroului = 4.20 + 4.20 \* 0.80 =  7.56$/kg
+- Suma totală de macrou= 2.5 \* 7.56 = 18.90
 - Suma totală a midiilor = 1 \* 7.50 = 7.50
 - Factură = 16.56 + 18.90 + 7.50 = 42.96
 
 [/task-description]
 [tests]
 [test open]
-[input]
+[Input]
 6.90
 4.20
 1.5
 2.5
 1
-[/input]
+[/Input]
 [output]
 42.96
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 5.55
 3.57
 4.3
 3.6
 7
-[/input]
+[/Input]
 [output]
 113.82
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 7.79
 5.35
 9.3
 0
 0
-[/input]
+[/Input]
 [output]
 115.92
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 2.22
 2.52
 3
 4
 5
-[/input]
+[/Input]
 [output]
 66.30
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 7.5432
 9.432
 0.4
 0.2
 9
-[/input]
+[/Input]
 [output]
 75.72
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 10.50
 9.25
 12.2
 13.2
 5
-[/input]
+[/Input]
 [output]
 462.24
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 16.121
 26.27
 25
 52
 26
-[/input]
+[/Input]
 [output]
 3298.71
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 19.99
 12.24
 23
 29
 2
-[/input]
+[/Input]
 [output]
 1389.56
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 27
 22
 10
 10
 10
-[/input]
+[/Input]
 [output]
 903.00
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 31
 12
 22.22
 11.11
 43
-[/input]
+[/Input]
 [output]
 1664.59
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 29.99
 29.99
 29.99
 29.99
 29
-[/input]
+[/Input]
 [output]
 3275.46
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 39.99
 29.99
 39.98
 58.85
 69
-[/input]
+[/Input]
 [output]
 6252.42
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 39.99
 29.99
 49.99
 69.99
 99
-[/input]
+[/Input]
 [output]
 7719.26
 [/output]
@@ -1617,7 +1617,7 @@ Imprimați pe consolă un singur număr cu virgulă mobilă: banii pe care Georg
 
 
 [slide hideTitle]
-# Problem: Yard Greening
+# Problemă: Yard Greening
 [code-task title="Yard Greening" taskId="pb-java-statements-Yard-Greening" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1633,142 +1633,142 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program care să calculeze cheltuielile pentru ecologizarea curții.
+Scrieți un program care să calculeze cheltuielile pentru amenajarea curții.
 
 Prețul pentru **un metru pătrat** este de 7.61 dolari cu TVA. 
 
 Compania oferă 18% **reducere** din prețul total.
 
-## Input
+## Intrare
 
 Singură linie de la consolă:
 
-- Metri pătrați care vor fi verzi - **număr cu virgulă mobila** în intervalul [0.00 ... 10000.00
+- Metri pătrați care vor fi amenajate - **număr în virgulă mobila** în intervalul [0.00 ... 10000.00
 
-## Output
+## Ieșire
 
-PrImprimați pe consolă două linii:   
+Imprimați pe consolă două linii:   
 - "Prețul final este: \{total price\} dollars"
 - "Reducerea este: \{discount\} dollars"
 
 Prețurile trebuie să fie formatate la **a doua zecimală**.
 
-## Examplu
+## Exemplu
 | Input |  Output |
 | --- | --- |
 | 540 | The final price is: 3369.71 dollars |
 |  | The discount is: 739.69 dollars |
 
 ### Comentarii
-- Calculați prețul pentru ecologizarea întregii curți: 540 \* 7.61 = 4109.40 $
+- Calculați prețul pentru amenajarea întregii curți: 540 \* 7.61 = 4109.40 $
 - Calculați reducerea: 0.18 \* 4109.40 = 739.69 $
 - Calculați prețul final: 4109.40 – 739.69 = 3369.71 $
 
 [/task-description]
 [tests]
 [test open]
-[input]
+[Input]
 540
-[/input]
+[/Input]
 [output]
 The final price is: 3369.71 dollars
 The discount is: 739.69 dollars
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 135
-[/input]
+[/Input]
 [output]
 The final price is: 842.43 dollars
 The discount is: 184.92 dollars
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 335
-[/input]
+[/Input]
 [output]
 The final price is: 2090.47 dollars
 The discount is: 458.88 dollars
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 412
-[/input]
+[/Input]
 [output]
 The final price is: 2570.96 dollars
 The discount is: 564.36 dollars
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 500
-[/input]
+[/Input]
 [output]
 The final price is: 3120.10 dollars
 The discount is: 684.90 dollars
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 650
-[/input]
+[/Input]
 [output]
 The final price is: 4056.13 dollars
 The discount is: 890.37 dollars
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 123
-[/input]
+[/Input]
 [output]
 The final price is: 767.54 dollars
 The discount is: 168.49 dollars
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 811
-[/input]
+[/Input]
 [output]
 The final price is: 5060.80 dollars
 The discount is: 1110.91 dollars
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 250
-[/input]
+[/Input]
 [output]
 The final price is: 1560.05 dollars
 The discount is: 342.45 dollars
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 211.05
-[/input]
+[/Input]
 [output]
 The final price is: 1316.99 dollars
 The discount is: 289.10 dollars
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 348.49
-[/input]
+[/Input]
 [output]
 The final price is: 2174.65 dollars
 The discount is: 477.36 dollars
 [/output]
 [/test]
 [test]
-[input]
+[Input]
 74.44
-[/input]
+[/Input]
 [output]
 The final price is: 464.52 dollars
 The discount is: 101.97 dollars

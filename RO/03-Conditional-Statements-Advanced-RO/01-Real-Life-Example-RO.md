@@ -1,7 +1,7 @@
 # Exemplu din viața reală
 
 [slide hideTitle]
-# Exemplu de viață reală: Piata 
+# Exemplu de viață reală: Piață
 O piață oferă prețuri diferite pentru anumite produse în funcție de ziua săptămânii.
 
 [image assetsSrc="03-conditional-statements-advanced-example.png" /]

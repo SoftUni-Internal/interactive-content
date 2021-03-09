@@ -47,7 +47,7 @@ for (int i = 0; i < a; i++) {
 
 
 [slide hideTitle]
-# Problem with Solution: Triangle of Stars
+# Problemă cu soluție: Triangle of Stars
 [code-task title="Triangle of Stars" taskId="java-basics-nested-loops-triangle-of-stars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -64,7 +64,7 @@ public class Main {
 # Descriere
 Scrieți un program care:
 
-* Citește **înălțimea** unui triunghi din consolă
+* Citește **înălțimea** unui triunghi de pe consolă
 * Imprimă un **triunghi format din stele**
 # Exemplu
 

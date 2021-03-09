@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Problem: Calculator For TV Series
+# Problemă: Calculator For TV Series
 [code-task title="Calculator For TV Series" taskId="java-basics-exam-prep-Calculator-For-TV-Series" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -25,7 +25,7 @@ De asemenea, trebuie să rețineți că fiecare sezon se încheie cu un episod s
 ## Intrare
 De pe consolă primiți 4 linii:
 - Numele seriei - un șir
-- Numărați anotimpurile - un număr întreg în intervalul [1 ... 10]
+- Numărați sezoanele - un număr întreg în intervalul [1 ... 10]
 - Numărați episoadele - un număr întreg în intervalul [10… 80]
 - Durata unui episod obișnuit fără reclame - un număr cu două cifre și punct zecimal în intervalul [40.0… 65.0]
 
@@ -44,19 +44,19 @@ Trebuie să imprimați pe consolă timpul necesar pentru a viziona toate episoad
 [hints]
 
 [hint]
-Calculate the duration of advertisements per episode.
+Calculați durata reclamelor pe episod.
 [/hint]
 [hint]
 
-Determine the duration of an episode with advertisements.
+Stabiliți durata unui episod cu reclamele 
 [/hint]
 [hint]
 
-Add extra time for the specials.
+Adăugați un timp suplimentar pentru episoadele speciale.
 [/hint]
 [hint]
 
-Calculate the total time needed to watch the whole series.
+Calculați timpul total necesar pentru a vedea tot serialul.
 [/hint]
 
 [/hints]

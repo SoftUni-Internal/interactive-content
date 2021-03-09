@@ -1,7 +1,7 @@
 [slide hideTitle]
 # Expressii
 **Expresiile** sunt secvențe de operatori, literali și variabile care sunt evaluate la o valoare.
-   * Constă din cel puțin din un **operand**
+   * Constă din cel puțin un **operand**
    * Poate avea unu sau mai mulți **operatori**
 ```java
 int y = x + 5;
@@ -9,7 +9,7 @@ int y = x + 5;
 ```java
 String name = "John Doe";
 ```
-In cele mai multe contexte în care sunt utilizate expresii, de exemplu, în declarații, este de așteptat că expresia să evalueze la o anumită valoare.
+In cele mai multe contexte în care sunt utilizate expresii, de exemplu, în instrucțiuni, este de așteptat că expresia să evalueze la o anumită valoare.
 
 * Dacă `x` și `y` sunt numere intregi, expresia `x + y` se evaluează la o valoare numerică. Fiecare valoare are un tip asociat.
 * De exemplu, dacă x și y sunt variabile de tip **int**, valoarea expresiei `x + y` este, de asemenea, tastată ca **int**. 

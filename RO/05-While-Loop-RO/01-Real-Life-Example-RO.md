@@ -1,4 +1,4 @@
-# Exemplu din Viața Reală
+# Exemplu din viața reală
 [slide hideTitle]
 
 # Exemplu din Viața Reală

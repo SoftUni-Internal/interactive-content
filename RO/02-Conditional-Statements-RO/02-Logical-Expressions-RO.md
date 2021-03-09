@@ -67,5 +67,5 @@ String b = "hello";
 System.out.println(a.equals(b)); // true
 System.out.println(a < b); // error
 ```
-Un șir este un obiect și fiecare obiect are o instanta, dar vom ajunge la aceasta tema mai târziu pe parcursul cursului.
+Un șir este un obiect și fiecare obiect are o instanța, dar vom ajunge la aceasta tema mai târziu pe parcursul cursului.
 [/slide]

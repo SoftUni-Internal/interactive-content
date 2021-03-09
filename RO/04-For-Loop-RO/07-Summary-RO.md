@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Recapitulare
+# Rezumat
 
 În această lecție am învățat:
 

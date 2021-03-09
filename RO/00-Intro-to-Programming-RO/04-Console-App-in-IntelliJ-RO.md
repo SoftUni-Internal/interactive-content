@@ -22,11 +22,11 @@ Dați clic pe [New] și localizați fișierul de instalare pentru JDK:
 
 [slide hideTitle]
 # Scrierea codului de program
-Comenzile programului sunt scrise în `main(String[] args)`, între paranteze cretate `{ }`(deschideți paranteza, scrieți comanda, închideți paranteza).
+Comenzile programului sunt scrise în `main(String[] args)`, între paranteze crețate `{ }`(deschideți paranteza, scrieți comanda, închideți paranteza).
 
 Aceasta este principala metodă (acțiune) care se execută la începerea unui program Java. 
 
-Apăsați `[Enter]` după **paranteza cretată de deschidere** `{` și **începeți să scrieți**.
+Apăsați `[Enter]` după **paranteza crețată de deschidere** `{` și **începeți să scrieți**.
 
 Codul programului se scrie **în interior**, acest lucru fiind o parte din modelarea textului pentru conveniență în timpul depanării și/sau revizuirii.
 
@@ -45,7 +45,7 @@ Comanda System.out.println („Bună ziua Java”) în limbajul Java înseamnă 
 
 La finalul fiecărei comenzi în limbajul Java se pune simbolul `;` care spune că această comandă se finalizează în acel loc (nu mai continuă pe linia următoare).
 
-Această comandă este larg întâlnită în programare: vom spune că un **obiect** dat ar trebui să se găsească (consola, cum este în cazul nostru), iar o oarecare **acțiune** ar trebui să se execute asupra lui (în cazul nostru, este vorba despre printarea a ceva ce este scris în interiorul parantezelor). 
+Această comandă este larg întâlnită în programare: vom spune că un **obiect** dat ar trebui să se găsească (consola, cum este în cazul nostru), iar o oarecare **acțiune** ar trebui să se execute asupra lui (în cazul nostru, este vorba despre imprimarea a ceva ce este scris în interiorul parantezelor). 
 
 Ca să furnizăm o explicație și mai tehnică, `out` este un membru static al clasei `System`, fiind o instanță a PrintStream. Iar println este o metodă normală (supraîncărcată) a clasei PrintStream căreia îi dăm ca parametru un text literal `"Hello Java"`.
 [/slide]

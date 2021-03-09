@@ -1,15 +1,15 @@
-# Lecție de Introducere
+# Introducere
 [slide]
 
 # Conținutul lecției
 
 ## În această lecție, veți învăța despre:
 
-**1. Bucle For mai complexe, cu o incrementare specială**
+**1. Buclele For mai complexe, cu o incrementare specială**
 
 - Sintaxă și prezentare generală
 
-**2. Bucle imbricate**
+**2. Buclele imbricate**
 
 - Buclele din interiorul buclelor și la ce le putem utiliza
 

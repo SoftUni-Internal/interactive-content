@@ -1,9 +1,9 @@
 [slide hideTitle]
-# Summary
+# Rezumat
 
-# In this lesson we learned: 
+# În această lecție am învățat: 
 
-- Comparison Operators (**==** , **!=** , **<** , **>** , **<=** , **>=** )
+- Operatorii de comparație (**==** , **!=** , **<** , **>** , **<=** , **>=** )
 
 ```java live
 int a = 5;
@@ -15,7 +15,7 @@ System.out.println(b == 2 * a); // true
 System.out.println(a != b);     // true
 ```
 
-- Conditional Statements: **if**, **else**
+- Instrucțiunile condiționale: **if**, **else**
 
 ```java
 if (condition) {
@@ -23,7 +23,7 @@ if (condition) {
 }
 ```
 
-- How to make Series of Checks: **if-else-if-else-if...**
+- Cum să facem serii de verificări: **if-else-if-else-if...**
 
 ```java
 if (condition) {
@@ -33,15 +33,15 @@ if (condition) {
 }
 ```
 
-- Block and Variable Scope
+- Blocul și domeniul de aplicare a variabilei
 
-- How to debug code. Using Breakpoints
+- Cum să depanăm codul folosind puncte de întrerupere
 
-## In the next lesson we will learn:
+## În următoarea lecție vom învăța despre:
 
-- **Nested if-else** Statements
+- **Buclele imbricate if-else** 
 
-- Logical Operators: **&&, ||, !**
+- Operatorii logici: **&&, ||, !**
 
 - Switch-case
 

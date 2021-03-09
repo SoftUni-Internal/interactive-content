@@ -118,7 +118,7 @@ if (x >= x1 && x <= x2 && y >= y1 && y <= y2) {
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Bonus Points
+#  Problemă cu soluție: Bonus Points
 [code-task title="Bonus Points" taskId="java-basics-logical-operators-bonus-points" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -184,7 +184,7 @@ Logica **OR** (operator `||`) înseamnă că **cel puțin una** dintre câteva c
 
 Similar cu operatorul `&&`,operatorul logic **OR** acceptă câteva argumente de tip **boolean** (condițional) și se schimba in `true` sau` false`.
 
-Putem ghici cu ușurință că **obținem** o valoare `true` de fiecare dată când cel puțin unul dintre argumente are o valoare `adevărat`.
+Putem ghici cu ușurință că **obținem** o valoare `true` de fiecare dată când cel puțin unul dintre argumente are o valoare `adevărată`.
 
 | Operand1 | Operand2 | SAU|
 |---|---|---|---|
@@ -220,7 +220,7 @@ Ajungând la 'b', înțelege că are o valoare `adevărată` și întreaga **exp
 [/slide]
 
 [slide hideTitle]
-# Problem: Food or Drink
+# Problemă: Food or Drink
 [code-task title="Food or Drink" taskId="java-basics-logical-opators-food-ot-drink" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -292,7 +292,7 @@ Negarea logică (operator **!**) înseamnă că o condiție dată nu este **înd
 | --- | --- |
 | adevărat | fals |
 
-Operatorul `!` Acceptă ca **argument** o variabilă bool și **returnează** valoarea acesteia.
+Operatorul `!` Acceptă ca **argument** o variabilă booleană și **returnează** valoarea acesteia.
 
 # Exemplu: număr nevalid
 Un număr **dat este valid** dacă este în intervalul **\[100 ... 200 \]** sau este **0**. Faceți o validare pentru un număr **nevalid**.

@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Problem: Cinema
+# Problemă: Cinema
 [code-task title="Cinema" taskId="java-basics-exam-prep-Cinema" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -48,11 +48,11 @@ Imprimați un rând pe consolă: "Your bill is \{total price\}$"
 [hints]
 
 [hint]
-Depending on what movie and drink have been chosen, determine the ticket price.
+În funcție de filmul și băutura alese, stabiliți prețul biletului
 [/hint]
 
 [hint]
-Check if there will be a discount and calculate the total price.
+Verificați dacă este o reducere și calculați prețul total.
 [/hint]
 [/hints]
 

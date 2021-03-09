@@ -1,35 +1,35 @@
-# Lesson Introduction
+# Introducere
 [slide hideTitle]
 
 
-# Lesson Content
+# Conținutul lecției
 
-## In this lesson you will learn:
+## În această lecție veți învăța despre:
 
-**1. Logical Expressions**
+**1. Expresiile logice*
 
-- How we use comparison operators
+- Cum să folosiți operatorii de comparație 
 
-**2. What are Conditional Statements**
+**2. Ce reprezintă instrucțiunile condiționale**
 
-- if, if-else conditions
+- Condițiile if, if-else 
 
-**3. Series of checks**
+**3. Serii de verificări**
 
 - if-else-if-else-if...
 
-**4. Blocks and Variable Scope**
+**4. Blocuri și domeniul variabilei**
 
-- What is variable scope
+- Ce reprezintă domeniul variabilei
 
-**5. What is Debugging**
+**5. Ce reprezintă depanarea**
 
-- Debugging techniques
+- Tehnici de depanare 
 
-- Operations with the debugger. How to use breakpoints
+- Operațiile cu depanatorul. Cum să folosiți punctele de întrerupere
 
 
-**6. Practical Coding Exercises**
+**6. Exerciții practrice de codificare**
 
 
 

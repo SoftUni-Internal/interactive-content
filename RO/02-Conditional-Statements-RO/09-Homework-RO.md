@@ -1,7 +1,7 @@
 # Teme pentru acasa
 
 [slide hideTitle]
-# Problem: Guess the Password
+# Problemă: Guess the Password
 [code-task title="Guess the Password" taskId="pb-java-Conditional-Statements-guess-the-password" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -18,9 +18,9 @@ public class Program {
 ## Descriere
 Scrieți un program pentru a verifica o parolă:
 
-  * Citește un șir: parola **ghici**.
-  * Imprima **"Welcome"** acă presupunerea parolei este **"s3cr3t!"**.
-  * PImprima **"Wrong password!"** în toate celelalte cazuri.
+  * Citește un șir: parola **guess**.
+  * Imprimă **"Welcome"** dacă presupunerea parolei este **"s3cr3t!"**.
+  * Imprimă **"Wrong password!"** în toate celelalte cazuri.
 
 ## Exemplu:
 | **Input** | **Output** |
@@ -74,7 +74,7 @@ Wrong password!
 [/slide]
 
 [slide hideTitle]
-# Problem: Boiling Water
+# Problemă: Boiling Water
 [code-task title="Boiling Water" taskId="pb-java-Conditional-Statements-Boiling-water" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
@@ -90,7 +90,7 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care să verifice dacă este apă caldă:
+Scrieți un program care să verifice dacă apa este fierbinte:
 
   * Citește un număr în virgulă mobilă: **temperatura** a apei (în ° C).
   * Imprima **"The water is boiling"** dacă numărul este **> 100**.
@@ -150,7 +150,7 @@ The water is not hot enough
 [/slide]
 
 [slide hideTitle]
-# Problem: Speed Info
+# Problemă: Speed Info
 [code-task title="Speed Info" taskId="pb-java-Conditional-Statements-Speed-Info" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
@@ -225,7 +225,7 @@ Fast
 [/slide]
 
 [slide hideTitle]
-# Problem: Area of Figures
+# Problemă: Area of Figures
 [code-task title="Area of Figures" taskId="pb-java-Conditional-Statements-Area-of-Figures" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
@@ -355,7 +355,7 @@ Unknown figure
 [/slide]
 
 [slide hideTitle]
-# Problem: Tickets
+# Problemă: Tickets
 [code-task title="Tickets" taskId="pb-java-Conditional-Statements-Tickets" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -377,7 +377,7 @@ Scrieți un program pentru a **calcula** prețul biletului:
   * Imprima **prețul** în următorul format "$\{price\}":
     * Prețul trebuie să fie **formatat** la a doua cifră după punctul zecimal.
   * Prețul biletului de tip student: **1.00**.
-  * Prețul biletului d etip regulat: **1.60**.
+  * Prețul biletului de tip regulat: **1.60**.
   * Pentru un tip nevalid imprima **"Invalid ticket type!"**.
   
 ## Exemplu
@@ -443,7 +443,7 @@ Invalid ticket type!
 [/slide]
 
 [slide hideTitle]
-# Problem: Coffee Shop
+# Problemă: Coffee Shop
 [code-task title="Coffee Shop" taskId="pb-java-Conditional-Statements-Coffee-Shop" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
@@ -461,9 +461,9 @@ public class Program {
 ## Descriere
 Scrieți un program pentru a calcula prețul băuturii într-o cafenea:
 
-  * Citește o băutură: fie **"cafea"** ori **"ceai"**.
-  * Citește adăugare: fie **"zahăr"** sau **"no"**.
-  * Imprima prețul în formatul`"Final price: ${price}"`.
+  * Citește o băutură: fie **"cafea"** fie **"ceai"**.
+  * Citește o adăugare: fie **"zahăr"** fie **"no"**.
+  * Imprimă prețul în formatul`"Final price: ${price}"`.
     * Prețul trebuie să fie **formatat** la a doua cifră după punctul zecimal.
   
 Prețuri:
@@ -549,7 +549,7 @@ Final price: $0.60
 [/slide]
 
 [slide hideTitle]
-# Problem: Valid Triangle
+# Problemă: Valid Triangle
 [code-task title="Valid Triangle" taskId="pb-java-Conditional-Statements-Valid-triangle" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
@@ -569,7 +569,7 @@ Scrieți un program pentru a verifica dacă un triunghi este valid după dimensi
 
   * Citește 3 numere întregi: the **laturile unui triunghi**.
   * Verifică dacă fiecare parte este mai mică decât suma celorlalte 2.
-    * Imprima **"Valid Triangle"** dacă condiția de mai sus este îndeplinită.
+    * Imprima **"Valid Triangle"**, dacă condiția de mai sus este îndeplinită.
     * Imprima **"Invalid Triangle"** în caz contrar.
 
     
@@ -630,7 +630,7 @@ Invalid Triangle
 
 
 [slide hideTitle]
-# Problem: Harvest
+# Problemă: Harvest
 [code-task title="Harvest" taskId="pb-java-Conditional-Statements-Harvest" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -655,16 +655,16 @@ Pentru 1 litru de vin sunt necesare **2.5 kg struguri**.
 Cantitatea dorită de vin pentru vânzare este de **Z litri**. 
 
 Scrieți un program care să calculeze cât de mult vin poate fi produs și dacă această cantitate este suficientă.
-- - Dacă este suficient, restul este împărțit în mod egal între lucrătorii viei.
+- Dacă este suficient, restul este împărțit în mod egal între lucrătorii viei.
 
-## Input
+## Intrare
 Intrarea este citită de pe consolă și constă din exact 4 rânduri:
 - **X metru pătrat este via** - număr întreg în intervalul \[10 ... 5000 \]
 - **struguri Y pentru un metru pătrat** - număr în virgulă mobilă în intervalul\[0.00 … 10.00\]
 - **Z litre necesare pentru vin** - număr întreg în intervalul \[10 ... 600 \]
 - **Număr de lucrători** - număr întreg în intervalul \[1 ... 20 \]
 
-## Output
+## Ieșire
 Următoarele ar trebui să fie tipărite pe consolă: 
 -  Dacă vinul produs este mai mic decât este necesar:
     - "It will be a tough winter! More \{unattainable wine\} liters wine needed."
@@ -826,7 +826,7 @@ It will be a tough winter! More 79 liters wine needed.
 
 
 [slide hideTitle]
-# Problem: Time + 15 Minutes
+# Problemă: Time + 15 Minutes
 [code-task title="Time + 15 Minutes" taskId="pb-java-Conditional-Statements-time-15minutes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -841,15 +841,15 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care citește de pe consolă **oră** și **minute** dintr-o zi de 24 de ore
+Scrieți un program care citește de pe consolă **oră** și **minute** dintr-o zi de 24 de ore și calculează ce oră va fi **după 15 minute**.
 
-## Input
+## Intrare
 
 Intrarea constă în **două** linii:
 - Ore - numere întregi în intervalul \[0...23\]
 - Minute - numere întregi în intervalul \[0...59\]
 
-## Output
+## Ieșire
 Imprima rezultatul în următorul format:"\{hours\}:\{minutes\}".
 - Orele trebuie să fie formatate **fără zero**.
 - Minutele trebuie trebuie să fie formatate **cu zero**.
@@ -992,7 +992,7 @@ Imprima rezultatul în următorul format:"\{hours\}:\{minutes\}".
 
 
 [slide hideTitle]
-# Problem: Day of Week
+# Problemă: Day of Week
 [code-task title="Day of Week" taskId="pb-java-Conditional-Statements-day-of-week" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1111,7 +1111,7 @@ Error
 
 
 [slide hideTitle]
-# Problem: Animal Type
+# Problemă: Animal Type
 [code-task title="Animal Type" taskId="pb-java-Conditional-Statements-Animal-Type" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1129,7 +1129,7 @@ public class Main {
 
 Scrieți un program care imprima **tipul** unui animal în funcție de **numele său**.
 
-## Input / Output
+## Intrare / Ieșire
 - **dog -> mammal**
 - **crocodile, tortoise, snake -> reptile**
 - **others -> unknown**
@@ -1212,7 +1212,7 @@ unknown
 
 
 [slide hideTitle]
-# Problem: Pets 
+# Problemă cu soluție: Pets 
 [code-task title="Pets" taskId="pb-java-Conditional-Statements-pets" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1231,7 +1231,7 @@ public class Main {
 Scrieți un **program** care să calculeze **cantitatea de kilograme** de mâncare animalelor ale Martinei care vor mânca in timp ce ea este **în aventură** și **verifică dacă mâncarea este suficientă**.
 Fiecare animal mănâncă o anumită cantitate de mâncare pe zi.
 
-## Input
+## Intrare
 Citește **cinci** rânduri de pe consolă:
 - **numărul de zile** - un număr întreg în intervalul \[1 ... 5000 \]
 - ** mâncare rămasă în kilograme** - un număr întreg în intervalul \[0 ... 100000 \]
@@ -1239,14 +1239,14 @@ Citește **cinci** rânduri de pe consolă:
 - **mâncare pentru pisică pe zi în kilograme** - dublă în intervalul \[0.00…100.00\]
 - **mâncare pentru broască țestoasă pe zi în grame** - dublă în intervalul \[0.00…10000.00\]
 
-## Output
+## Ieșire
 Imprima pe consolă o linie **unică**:
 - Dacă mâncarea rămasă **este suficientă**:
   - "\{kilograms remain\} kilos of food left." Rezultatul trebuie să fie **rotunjit la cel mai apropiat număr întreg inferior**.
 - Dacă mâncarea rămasă **nu este suficientă**:
   - "\{kilograms needed\} more kilos of food are needed." Rezultatul trebui să fie **rotunjit la cel mai apropiat număr întreg superior**.
 
-## Exeamplu
+## Exemplu
 | **Input**  | **Output** |
 | --- | --- |
 | 2 | 3 kilos of food left. |
@@ -1273,7 +1273,7 @@ Imprima pe consolă o linie **unică**:
 | 321 | |
 
 ### Comentarii
-- **Needed food for:**
+- **Mâncarea necesară pentru:**
 - **dog** = **10.5** kg;
 - **pisica** = 5 zile \* 0.8 kg = **4** kg;
 - **broască-ţestoasă** = 5 zile \* 321 g = **1.605** kg;
@@ -1434,7 +1434,7 @@ Imprima pe consolă o linie **unică**:
 
 
 [slide hideTitle]
-# Problem: Pipes In Pool
+# Problemă: Pipes In Pool
 [code-task title="Pipes In Pool" taskId="pb-java-Conditional-Statements-pipes-in-pool" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1451,20 +1451,20 @@ public class Main {
 ## Descriere
 O piscină cu **volum V** are **două țevi** care o umplu.
 
-**Fiecare țeava are un anumit flux cert** (litri de apapă care trec printr-o singură țeava pe oră). 
+**Fiecare țeava are un anumit flux cert** (litri de apă care trec printr-o singură țeava pe oră). 
 
-Muncitorul aprinde conductele **în același timp** și iese **N ore**.
+Muncitorul pornește conductele **în același timp** și iese pentru  **N ore**.
 
 Scrieți un program care să arate starea piscinei **în momentul în care lucrătorul revine**.
 
-## Input
+## Intrare
 ** Patru ** linii de intrare:
 - **V** - **Volumul piscinei în litri** - numere întregi în intervalul \[1…10000\]
 - **P1** - **fluxul primei țevi pe oră** - numere întregi în intervalul \[1…5000\]
 - **P2** - **fluxul celei de-a doua țevi pe oră** - numere întregi în intervalul \[1…5000\]
 - **H** - **ore lucrătorului in timp ce lipsește** - număr cu virgulă mobilă în intervalul \[1.0…24.00\]
 
-## Output
+## Ieșire
 Imprima pe consolă **una dintre ambele posibilități**:
 - Cât de mult a fost umplută piscina și care dintre țevile cât a contribuit în procente
   - "The pool is \{occupancy of the pool in percent\}% full. Pipe 1: \{percent water from the first pipe\}%. Pipe 2: \{percent water from the second pipe\}%."
@@ -1483,7 +1483,7 @@ Imprima pe consolă **una dintre ambele posibilități**:
 ### Commentarii
 - Pentru 3 ore: Prima țeavă se umple cu 300 de  litri
 - A doua țeavă se umple cu 360 de litri
-- In total – 660 l < 1000 l => 66% sunt umplute
+- În total – 660 l < 1000 l => 66% sunt umplute
 - Prima țeavă a contribuit cu 45% (300 din  660 litri).
 - A doua țeavă a contribuit cu 54% (360 din 660 litri).
 
@@ -1498,7 +1498,7 @@ Imprima pe consolă **una dintre ambele posibilități**:
 ### Comentarii
 - Pentru 2.5 ore: Prima țeavă se umple cu 300 de  litri
 - A doua țeavă se umple cu 250 de litri
-- In total – 500 l > 100 l => 400 de litre sunt debordate.
+- În total – 500 l > 100 l => 400 de litre sunt debordate.
 
 [/task-description]
 [tests]

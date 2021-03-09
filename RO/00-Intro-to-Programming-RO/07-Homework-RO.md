@@ -1,4 +1,4 @@
-# Tema pentru acasă
+# Teme pentru acasă
 [slide hideTitle]
 # O problemă cu soluție: Print Hello Java
 [code-task title="Print Hello Java" taskId="pb-java-introduction-print-hello-java" executionType="tests-execution" executionStrategy="java-code"]
@@ -141,7 +141,7 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program care să calculeze și sa printeze valoarea următoarelor expresii:
+Scrieți un program care să calculeze și sa imprime valoarea următoarelor expresii:
 
 * 5 + 3 \* 2
 * 4 \* (2 + 3)
@@ -188,7 +188,7 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program care să execute următoarele:
+Scrieți un program care:
 
 Imprimă un pătrat format din 7 * 7 steluțe, ca în imaginea de mai jos:
 ```
@@ -296,7 +296,7 @@ public class Main {
 
 Scrieți un program care să tipărească numerele de la 1 la 10 (inclusiv).
 
-## Rezultat
+## Ieșire
 
 Fiecare număr ar trebui să fie pe o linie nouă.
 [/task-description]
@@ -359,7 +359,7 @@ Scrieți un program care să **imprime un triunghi** format din steluțe.
 
 Veți imprima un simbol asterisc \(\*\) pe primul rând, două simboluri asterisc pe al doilea rând, și așa mai departe, pentru un total de 5 rânduri. 
 
-## Rezultat
+## Ieșire
 ```
 *
 **

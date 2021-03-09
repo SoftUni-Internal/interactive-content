@@ -24,7 +24,7 @@ else {
 [slide hideTitle]
 # Exemplu: cifre în engleză
 
-Printați cifrele în intervalul de la 1 la 9 (cifrele sunt citite de pe consolă) în limba engleză.
+Imprimați cifrele în intervalul de la 1 la 9 (cifrele sunt citite de pe consolă) în limba engleză.
 
 Putem citi cifra și apoi, printr-o **secvența de condiții**, imprimăm cuvântul englez relevant:
 ```java live
@@ -55,5 +55,5 @@ if (num == 1) {
 
 Logica programului din exemplul de mai sus **compară secvențial** numărul de intrare de pe consolă cu cifrele de la 1 la 9, când **fiecare comparație următoare se efectuează numai în cazul în care comparația anterioară nu este adevărată**.
 
-În cele din urmă, daca niciuna dintre declarațiile `if` nu este true, ultima **clauză** `else` este efectuată.
+În cele din urmă, daca niciuna dintre instrucțiunile `if` nu este true, ultima **clauză** `else` este efectuată.
 [/slide]

@@ -1,7 +1,7 @@
-# Exemple din viața reală
+# Exemplu din viața reală
 
 [slide hideTitle]
-# Exemple din viața reală: Udarea plantelor
+# Exemplu din viața reală: Udarea plantelor
 [image assetsSrc="02-coditional-statements-1.png" /]
 
 În fiecare zi ne confruntăm cu decizii, pe care le luăm pe baza unor condiții care pot depinde de noi sau nu.

@@ -1,32 +1,32 @@
-# Lesson Introduction
+# Introducere
 [slide hideTitle]
 
-# Lesson Content
+# Conținutul lecției
 
-## In this lesson you will learn about:
+## În această lecție veți învăța despre:
 
-**1. Variables**
+**1. Variable**
 
-- How to declare, Read or Modify variable
+- Cum să declarați, citiți sau modificați o variabilă
 
-**2. Data Types**
+**2. Tipurile de date**
 
-- How to process an Integer, Real numbers or Text
+- Cum să procesați un număr întreg, numere reale sau text
 
-**3. Statements (Commands)**
+**3. Instrucțiuni (comenzi)**
 
-**4. Reading User Input and Formatting Output**
+**4. Cum să citiți intrarea de la utilizator și să formatați ieșirea**
 
-- How to read and format user input
+- Cum să citiți și să formatați intrarea de la utilizator
 
-**5. Simple Operators**
+**5. Operatori simpli**
 
-- How to use a simple math operators ( +, -, *, / )
+-Cum să utilzați operatorii aritmetici simpli ( +, -, *, / )
 
-**6. Expressions** 
+**6. Expresii** 
 
-- What are expressions
+- Ce reprezintă expresiile
 
-**7. Practical Coding Exercises**
+**7. Exerciții practice de codificare**
 
 [/slide]

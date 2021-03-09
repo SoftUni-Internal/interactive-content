@@ -1,7 +1,10 @@
-# Homework
+# Teme pentru acasă
 
 [slide hideTitle]
-# Problem: Building
+# Problemă: Building
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-36-Problemă -and-solution-building-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Building" taskId="java-basics-nested-loops-building" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -24,7 +27,7 @@ Scrieți un program care:
 * Etajul "" L {buildingNum} {apartmentNum} ""
 * Numerele încep întotdeauna de la 0
 
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | 6 | L60 L61 L62 L63 |
@@ -179,7 +182,7 @@ A10 A11 A12
 [/slide]
 
 [slide hideTitle]
-# Problem: Passwords
+# Problemă : Passwords
 [code-task title="Passwords" taskId="java-basics-nested-loops-passwords" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -201,7 +204,7 @@ Scrieți un program care:
 * A doua ** parte este un ** număr impar ** și nu trebuie să fie mai mare decât ** n **
 * Ultima parte ** este ** produsul ** din primele două
 
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | 6 | 212 236 2510 414 4312 4520 616 6318 6530 |
@@ -263,7 +266,7 @@ Scrieți un program care:
 [/slide]
 
 [slide hideTitle]
-# Problem: Magic Number
+# Problemă : Magic Number
 [code-task title="Magic Number" taskId="java-basics-nested-loops-magic-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -281,7 +284,7 @@ public class Main {
 Scrieți un program care:
 * Citește un număr **number - n** de pe consolă
 * Găsește toate  **numerele cu 3 cifre** care produs al multiplicării cifrelor lor este egal cu ** n **
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | 3 | 113 |
@@ -320,7 +323,7 @@ Scrieți un program care:
 [/slide]
 
 [slide hideTitle]
-# Problem: Travelling
+# Problemă : Travelling
 [code-task title="Travelling" taskId="java-basics-nested-loops-travelling" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -340,7 +343,7 @@ Scrieți un program care
 * Continuă să citească numere - sume de bani, până când sunt ** suficiente ** pentru destinație
 * Dacă primește comanda ** „End” **, programul se termină
 
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | Philippines | Going to Philippines! |
@@ -349,7 +352,7 @@ Scrieți un program care
 | 450|  |
 | End|  |
 
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | Bulgaria | Going to Bulgaria! |
@@ -657,7 +660,7 @@ Going to Albania!
 [/slide]
 
 [slide hideTitle]
-# Problem: Prime Numbers
+# Problemă : Prime Numbers
 [code-task title="Prime Numbers" taskId="java-basics-nested-loops-prime-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -678,7 +681,7 @@ Scrieți un program care:
 * Tipărește numărul ** prim ** din acel ** interval **
 
 
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | 1 | 1 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 |
@@ -770,7 +773,7 @@ A prime number is a whole number that cannot be created by multiplying other who
 [/slide]
 
 [slide hideTitle]
-# Problem: Unique PIN Codes
+# Problemă : Unique PIN Codes
 [code-task title="Unique PIN Codes" taskId="java-basics-nested-loops-unique-pin-codes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -794,7 +797,7 @@ Scrieți un program care:
 * ** Prima ** și ** a treia ** cifră trebuie să fie pare
 * A doua cifră trebuie să fie un ** număr prim ** în intervalul \ [2 ... 7 \]
 
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | 3 | 222 |
@@ -853,7 +856,7 @@ Scrieți un program care:
 [/slide]
 
 [slide hideTitle]
-# Problem: Letter Combinations
+# Problemă : Letter Combinations
 [code-task title="Letter Combinations" taskId="java-basics-nested-loops-letter-combinations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -909,7 +912,7 @@ aaa aac aca acc caa cac cca ccc 8
 [/slide]
 
 [slide hideTitle]
-# Problem: Happy Numbers
+# Problemă : Happy Numbers
 [code-task title="Happy Numbers" taskId="java-basics-nested-loops-happy-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -931,7 +934,7 @@ Scrieți un program care:
 * Când ** le împărțiți ** în două perechi și ** adăugați ** prima cifră la a doua - rezultatul ** este egal cu ** n
 * Când adăugați primele două cifre una la cealaltă, rezultatul trebuie să fie ** divizibil ** cu n ** fără rest **
 
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | 3 | 1212 1221 2112 2121 |
@@ -962,7 +965,7 @@ Scrieți un program care:
 
 
 [slide hideTitle]
-# Problem: Clock
+# Problemă : Clock
 [code-task title="Clock" taskId="java-basics-nested-loops-clock" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -986,7 +989,7 @@ Intrarea constă din ** 2 ** linii:
 
 ## Output
 - Orele trebuie să fie tipărite pe consolă în formatul „\ {hour \}: \ {minutes \}”.
-## Example
+## Exemplu
 
 | **Input** | **Output** |
 | --- | --- |
@@ -1146,7 +1149,7 @@ Intrarea constă din ** 2 ** linii:
 [/slide]
 
 [slide hideTitle]
-# Problem: Clock - Part 2
+# Problemă : Clock - Part 2
 [code-task title="Clock - Part 2" taskId="java-basics-nested-loops-clock-part2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1171,7 +1174,7 @@ Intrarea este introdusă din consolă ca ** 3 ** linii:
 
 ## Output
 - Rezultatul trebuie să fie tipărit în următorul format „\ {hour \}: \ {minutes \}: \ {seconds \}”.
-## Example
+## Exemplu
 
 | **Input** | **Output** |
 | --- | --- |
@@ -1423,7 +1426,7 @@ Intrarea este introdusă din consolă ca ** 3 ** linii:
 [/slide]
 
 [slide hideTitle]
-# Problem: Combinations
+# Problemă : Combinations
 [code-task title="Combinations" taskId="java-basics-nested-loops-combinations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1451,7 +1454,7 @@ x1 + x2 + x3 + x4 + x5 = n
 ## Output
 - Imprimați pe consolă numărul total de soluții
 
-## Example
+## Exemplu
 | **Input** | **Output** | **Comments** | 
 | --- | --- | --- |
 | 25 | 23751 | Generate all combinations of 5 digits, the first is: |
@@ -1568,7 +1571,7 @@ x1 + x2 + x3 + x4 + x5 = n
 [/slide]
 
 [slide hideTitle]
-# Problem: Word Wars
+# Problemă : Word Wars
 [code-task title="Word Wars" taskId="java-basics-nested-loops-word-wars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1591,7 +1594,7 @@ De pe consolă citiți cuvinte până la comanda „** STOP **”, apoi tipări�
 - "Câștigătorul este \ {cuvântul câștigător \} - \ {valoarea cuvântului \}!"
 More about this source text
 
-## Example
+## Exemplu
 
 | **Input** | **Output** 
 | --- | --- |
@@ -1600,9 +1603,9 @@ More about this source text
 | Destination | |
 | STOP | |
 
-### Comments
+### Comentarii
 -Prima literă este \ 'H \' și valoarea ASCII este 72, \ 'o \' are valoarea 111, \ 'u \' are valoarea 117, \ 's \' are valoarea 115, \ 'e \ 'are valoarea 101. Suma lor este 516.
-- Continuați să faceți aceleași calcule pentru celelalte cuvinte și obțineți că Destinația are cea mai mare valoare - 1154.
+- Continuați să faceți aceleași calcule pentru celelalte cuvinte și obțineți că destinația are cea mai mare valoare - 1154.
 
 [/task-description]
 [tests]
@@ -1691,7 +1694,7 @@ Winner is Baluchonkata - 1229!
 [/slide]
 
 [slide hideTitle]
-# Problem: Coding
+# Problemă : Coding
 [code-task title="Coding" taskId="java-basics-nested-loops-coding" executionType="tests-execution" executionStrategy="java-code" requiresInput ]
 [code-editor language=java]
 ```
@@ -1715,7 +1718,7 @@ Pe fiecare linie trebuie să imprimați un simbol **, care îndeplinește următ
 - Simbolul trebuie să fie tipărit ** de câte ori cifra ** corespunzătoare acestei linii
 - Dacă o linie dată ** se potrivește cu cifra 0 **, pe această linie se imprimă „** ZERO **” o dată
 
-## Example
+## Exemplu
 
 | **Input** | **Output** |
 | --- | --- |
@@ -1928,7 +1931,7 @@ $$$
 [/slide]
 
 [slide]
-# Problem: Train the Trainers
+# Problemă : Train the Trainers
 [code-task title="Train the Trainers" taskId="java-basics-nested-loops-train-the-trainers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1950,7 +1953,7 @@ Ajutați juriul care, scriind un program, să calculeze ** scorul mediu ** al **
 ## Input
 - Pe primul rând al consolei citiți numărul de persoane din juriu - ** n ** - un număr întreg în intervalul \ [1 ... 20 \]
 - Apoi, pe o linie separată, citiți numele prezentării - ** Șir **
-- Pentru fiecare prezentare a noii linii se citește ** n - numărul de evaluări ** - numărul real în intervalul \ [2.00 ... 6.00 \]
+- Pentru fiecare prezentare a noii linii se citește ** n - numărul de evaluări ** - un număr real în intervalul \ [2.00 ... 6.00 \]
 
 ## Output
 - După calcularea ** scorului mediu ** pentru o anumită prezentare, tipăriți pe consolă:
@@ -1960,7 +1963,7 @@ Ajutați juriul care, scriind un program, să calculeze ** scorul mediu ** al **
 
 Toate scorurile trebuie să fie formatate la ** a doua zecimală **.
 
-## Example
+## Exemplu
 
 | **Input** | **Output** |
 | --- | --- |
@@ -2394,8 +2397,3 @@ Student's final assessment is 4.54.
 [/code-task]
 [/slide]
 
-[slide]
-# Homework Results
-
-[tasks-results/]
-[/slide]

@@ -1,9 +1,9 @@
 [slide hideTitle]
-# Summary
+# Rezumat
 
-## In this lesson we learned: 
+## În această lecție am învățat: 
 
-- What are Variables and how we use them
+- Ce reprezintă variabilele și cum să le utilizăm
 
 ```java
 String name = "Bob";
@@ -11,7 +11,7 @@ boolean employed = true;
 int age = 35;
 ```
 
-- Data Types definition
+- Definiția tipurilor de date
 
 ``` java
 int a = 5;
@@ -20,9 +20,9 @@ char letter = 'A';
 float f = 4.2;
 ```
 
-- Statements (commands)
+- Instrucțiunile (comenzi)
 
-- How to read User **Input** and Formatting **Output**
+- Cum să citim  **Intrarea** de la utilizator și cum să formatăm **Ieșirea**
 
 ```java live
 System.out.println("Hello World");
@@ -30,8 +30,7 @@ System.out.println(5);
 System.out.println(3.14159265358979);
 ```
 
-- How to work with simple arithmetical operations
-
+- Cum să lucrăm cu operațiunile aritmetice simple 
 ```java live
 int a = 25;
 int i = a / 4;
@@ -39,21 +38,20 @@ System.out.println(i);
 double f = a / 4.0;
 System.out.println(f);
 ```
-
-- How we use **Expressions** 
+-Cum utilizăm **expresiile** 
 
 ```java
 int r = (150-20) / 2 + 5;
 ```
 
-## In the next lesson we will learn:
+## În lecția următoare, vom învăța despre:
 
-- How we use Comparison Operators
+- Cum să folosim operatorii de comparație
 
-- What are Conditional Statements: **if** and **if-else**
+- Ce reprezintă instrucțiunile condiționale: **if** și **if-else**
 
-- Blocks and Variable Scope
+- Blocuri și domeniul variabilei
 
-- What is Code Debugging and how we use them
+- Ce reprezintă depanarea codului și cum o putem folosi 
 
 [/slide]
