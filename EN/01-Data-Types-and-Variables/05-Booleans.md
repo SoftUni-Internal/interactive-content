@@ -105,7 +105,7 @@ If we use `===` the interpreter **does not convert the number to a string**, so 
 console.log(5 === '5');
 ```
 
-When it comes to "**truthy**" and "**falsey**" values, for example, we can use them in an "**if**" construction to compare different types of data:
+When it comes to "**truthy**" and "**falsy**" values, for example, we can use them in an "**if**" construction to compare different types of data:
 
 ``` js live
 if (5 == true) {
@@ -130,9 +130,9 @@ is **same**, because the interpreter sees them as `1 == true` and turns this int
 
 The values **0** and **1** become the Boolean values **0 false** and **1 true**.
 
-The other numeric values become Boolean values, and they are "**false**"`.
+The other numeric values become Boolean values, and they are "**false**".
 
-In JavaScript we have eight values that are assumed to be "**falsey**":
+In JavaScript we have eight values that are assumed to be "**falsy**":
 
 | **Value** | **Description** | 
 | :---:       |    :----:   |   
