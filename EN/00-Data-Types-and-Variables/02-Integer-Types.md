@@ -5,7 +5,7 @@
 
 **Integer types** store whole numbers, positive or negative (such as 123 or -456), without decimals.
 
-**Byte**, **short**, **int**, and **long** are all integer data types. Choosing which one to use, depends on the numeric value it will need to store.
+**Byte**, **short**, **int**, and **long** are all integer data types. Choosing which one to use depends on the numeric value it will need to store.
 
 |Type| Default Value | Min Value | Max Value| Size |
 |-----|------|-----|------|-----|
@@ -30,7 +30,7 @@ System.out.printf("%d centuries = %d years = %d days = %d hours.",
 //20 centuries = 2000 years = 730484 days = 17531616 hours.
 ```
 
-We can use different integer types, depending on what we want to store in them. 
+We can use different integer types depending on what we want to store in them. 
 
 - The *byte** data type can be used for storing whole numbers from -128 to 127
 
@@ -41,14 +41,14 @@ byte myNum = 100;
 System.out.println(myNum);
 ```
 
-- The **Short** data type can be used to store whole numbers from -32768 to 32767:
+- The **short** data type can be used to store whole numbers from -32768 to 32767:
 
 ```java live
 short myNum = 5000;
 System.out.println(myNum);
 ```
 
-- The **Int** data type can store whole numbers from -2147483648 to 2147483647
+- The **int** data type can store whole numbers from -2147483648 to 2147483647
 
 In general, the **int** data type is the preferred data type when we create variables with a numeric value.
 
@@ -57,7 +57,7 @@ int myNum = 100000;
 System.out.println(myNum);
 ```
 
-- **Long** data type can store whole numbers from -9223372036854775808  to 9223372036854775807
+- The **long** data type can store whole numbers from -9223372036854775808  to 9223372036854775807
 
 This is used when an int is not large enough to store the value.
 
@@ -95,9 +95,9 @@ for (int i = 0; i < 130; i++) {
 
 The counter variable starts from 0 and is incremented with each step of the for loop. 
 
-Eventually when it reaches the maximum value of byte (127), it restarts again from the minimum value (-128). 
+Eventually when it reaches the maximum value of a byte (127), it restarts again from its minimum value (-128). 
 
-This is what we mean by **integer overflow** and it is precisely the reason why choosing your data type correctly is important. 
+This is called **integer overflow** and it is precisely the reason why choosing your data type correctly is important. 
 
 [/slide]
 
@@ -117,8 +117,8 @@ They can be represented in a few different ways, which are not as intuitive:
 - **long integer literals** - values preceded by the letter **L** or **l** - **9876543L**, **0L**
 
 ```java live
-int hexadecimal = 0xA8F1; //43249
-long number = 1L; //1
+int hexadecimal = 0xA8F1; // 43249
+long number = 1L; // 1
 
 System.out.println("hexadecimal: ", hexadecimal);
 System.out.println("long: ", number);
