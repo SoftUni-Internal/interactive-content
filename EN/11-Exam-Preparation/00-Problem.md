@@ -8,7 +8,7 @@
 
 - You have 4 hours to complete the task
 
-- When you are ready, **delete** the `node_modules` folder, make sure all dependencies are listed in the `package.json` file, and submit your archived project
+- When you are ready, **delete** the `node_modules` folder, make sure all dependencies are listed in the `package.json` file, and submit your **archived project**
 
 - You are provided with **HTML and CSS** resources, which you **CAN modify**
 
@@ -51,23 +51,23 @@ The **Database** of the **Theater** application needs to support **two entities:
 
 ## User
 
-- **Username**: string (required), unique
+- **Username**: string (**required**), **unique**
 
-- **Password**: string (required)
+- **Password**: string (**required**)
 
 - **Liked Plays**: a collection of Plays 
 
 ## Play
 
-- **Title**: string (required), unique
+- **Title**: string (**required**), **unique**
 
-- **Description**: string (required), max length of 50 symbols,
+- **Description**: string (**required**), max length of 50 symbols,
 
-- **Image Url**: string (required),
+- **Image Url**: string (**required**),
 
 - **Is Public**: boolean, default - false,
 
-- **Created at**: Date or String, required
+- **Created at**: Date or String, **required**
 
 - **Users Liked**: a collection of Users
 
@@ -116,7 +116,7 @@ List **all public** plays sorted in **descending order** by the **created time**
 
 [image assetsSrc="JS-BackEnd-Exam-Preparation-5.png" /]
 
-If there are no plays in the database yet, display `No plays yet...`
+If there are **no plays** in the database yet, display `No plays yet...`
 
 [image assetsSrc="JS-BackEnd-Exam-Preparation-6.png" /]
 
@@ -173,23 +173,23 @@ The **Security Requirements** are mainly access requirements.
 
 Configurations about which users can access specific functionalities and pages.
 
-- **Guest** (not logged in) users can access **Home** page and functionality.
+- **Guest** (not logged in) users can access **Home** page and functionality
 
-- **Guest** (not logged in) users can access **Login** page and functionality.
+- **Guest** (not logged in) users can access **Login** page and functionality
 
-- **Guest** (not logged in) users can access **Register** page and functionality.
+- **Guest** (not logged in) users can access **Register** page and functionality
 
-- **Users** (logged in) can access **Home page** (**Listed all Plays**) page and functionality.
+- **Users** (logged in) can access **Home page** (**Listed all Plays**) page and functionality
 
-- **Users** (logged in) can access **Play Details** page and functionality.
+- **Users** (logged in) can access **Play Details** page and functionality
 
     - **Users** (not play creator) can **Like** a play **once** 
 
     - **Users** (play creator) can **Edit** and **Delete** the current play
 
-- **Users** (logged in) can access **Create Play** page and functionality.
+- **Users** (logged in) can access **Create Play** page and functionality
 
-- **Users** (logged in) can access **Logout** functionality.
+- **Users** (logged in) can access **Logout** functionality
 
 [/slide]
 
@@ -228,7 +228,7 @@ You should make the following validations while **creating** or **editing a play
 
 # Bonus: 10 Pts
 
-- `[Sort by Likes]`: Filter only the **play with the most likes.**  
+- `[Sort by Likes]`: Filter only the **play with the most likes**  
 
 [image assetsSrc="JS-BackEnd-Exam-Preparation-14.png" /]
 
