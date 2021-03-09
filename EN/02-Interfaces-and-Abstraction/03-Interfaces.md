@@ -1609,7 +1609,7 @@ Vehicle.getHorsePower(480, 2500));
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-25-problem-and-solution-say-hello-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Say Hello" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-lab-Say-Hello" executionType="tests-execution" executionStrategy="java-project-tests"] 
+[code-task title="Say Hello" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-lab-Say-Hello" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 [task-description]
@@ -1639,7 +1639,7 @@ private static void print(Person person) {
 }
 ```
 
-# Examples
+# Example
 | **Output** |
 | --- |
 | Hi |
@@ -1648,8 +1648,9 @@ private static void print(Person person) {
 |   |
 
 [/task-description]
+[code-io /]
 [tests]
-[test]
+[test open]
 [input]
 import org.junit.Assert;
 import org.junit.Test;
@@ -2103,6 +2104,7 @@ private static void print(Person person) {
 |   |
 
 [/task-description]
+[code-io /]
 [tests]
 [test open]
 [input]
@@ -2116,7 +2118,7 @@ public class TestClasses \{
 
     // Class names
     private static final String PERSON = "Person";
-    private static final String AMERICAN = "American";
+    private static final String BULGARIAN = "Bulgarian";
     private static final String EUROPEAN = "European";
     private static final String CHINESE = "Chinese";
     private static final String BASE_PERSON = "BasePerson";
@@ -2124,7 +2126,7 @@ public class TestClasses \{
     @Test
     public void test() \{
         assertClassExists(PERSON);
-        assertClassExists(AMERICAN);
+        assertClassExists(BULGARIAN);
         assertClassExists(EUROPEAN);
         assertClassExists(CHINESE);
         assertClassExists(BASE_PERSON);
@@ -2266,11 +2268,11 @@ public class TestEncapsulation \{
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
     private static final String HAS_NON_PRIVATE_FIELDS_ERROR_MESSAGE = "Class %s contains non private fields";
 
-    private static final String AMERICAN = "BasePerson";
+    private static final String BULGARIAN = "BasePerson";
 
     @Test
     public void test() \{
-        assertHasNoPrivateFields(AMERICAN);
+        assertHasNoPrivateFields(BULGARIAN);
     \}
 
     private void assertHasNoPrivateFields(String className) \{
@@ -2308,11 +2310,11 @@ public class TestConstructors \{
     private static final String CONSTRUCTOR_NOT_PRESENT = "Constructor(%s) in class '%s' not present";
 
     // Class names
-    private static final String\[\] classNames = new String\[\]\{ "American", "European", "Chinese", "BasePerson" \};
+    private static final String\[\] classNames = new String\[\]\{ "Bulgarian", "European", "Chinese", "BasePerson" \};
 
     // Method parameter types
     private static final HashMap\<String, Class\[\]\> constructorParameters = new HashMap\<String, Class\[\]\>() \{\{
-        put("American", new Class\[\]\{String.class\});
+        put("Bulgarian", new Class\[\]\{String.class\});
         put("European", new Class\[\]\{String.class\});
         put("Chinese", new Class\[\]\{String.class\});
         put("BasePerson", new Class\[\]\{String.class\});
@@ -2357,7 +2359,7 @@ public class T00_TestClassesExists \{
     @Test
     public void validateTypesExist() \{
         String\[\] classTypesToAssert = new String\[\]\{
-                "American",
+                "Bulgarian",
                 "European",
                 "Chinese",
         \};
@@ -2434,5 +2436,3 @@ Test Passed!
 [/tests]
 [/code-task]
 [/slide]
-
-
