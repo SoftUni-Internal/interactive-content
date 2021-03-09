@@ -46,7 +46,7 @@ But, it is important that no error is shown and the program works.
 
 That could lead to unexpected results in our program.
 
-Whereas when we declare a variable with `let`, this variable is available in **block scope**.
+Whereas when we declare a variable with `let`, this variable is available in the **block scope**.
 
 Everything that is enclosed in **braces** `{}` is a block where variables live. 
 
