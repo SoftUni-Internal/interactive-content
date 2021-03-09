@@ -23,15 +23,15 @@ public class Car {
 }
 ```
 
-The car has **attributes**, such as **weight** and **colour**, and **methods**, such as **drive** and **brake**.
+The car has **attributes**, such as **weight** and **color**, and **methods**, such as **drive** and **brake**.
 
-A **class** is a **template** that describes the **data** and ** behavior** associated with instances of that class.
+A **class** is a **template** that describes the **data** and **behavior** associated with instances of that class.
 
 When you instantiate a class you create an object that looks and feels like other instances of the same class. 
 
 The data (**attributes**) associated with a class or object is stored in **variables**. 
 
-The ** behavior** associated with a class or object is implemented with **methods**. 
+The **behavior** associated with a class or object is implemented with **methods**. 
 
 [/slide]
 
@@ -40,27 +40,27 @@ The ** behavior** associated with a class or object is implemented with **method
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-5-Naming-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Below are the class naming rules of the Java programming language. 
+There are some naming conventions that should be followed while developing software.
 
-They must be followed while developing software in Java for good maintenance and readability of code. 
+This makes for easier code maintenance and improves readability.
 
-Class names should be nouns, in mixed case with the first letter of each internal word capitalized. 
+Class names should be nouns, in **MixedCase** with the first letter of each word capitalized. 
 
 For example:
 
 ```java
 class CarMaintenanceHistory { ... }
-// Good naming 
+// A good example of a class name
 ```
 
 ```java
 class Carhp { ... }
-// Bad naming
+// A bad example of naming a class
 ```
 
 Try to keep your class names simple and descriptive. 
 
-Use the full forms of words. 
+Use the full form of words. 
 
 Avoid acronyms and abbreviations (unless the abbreviation is much more widely used than the full form, such as URL or HTML).
 
@@ -73,13 +73,13 @@ Avoid acronyms and abbreviations (unless the abbreviation is much more widely us
 
 When a class is defined, it contains only those members of a class declaration that are required.
 
-The obligatory members are:
+The required members are:
 
 - Keyword - `class`
 - Class name
 - Class body - between `{}`
 
-Not obligatory, but frequently used members are:
+The optional but frequently used members are:
 
 - Class fields
 - Constructor
@@ -108,7 +108,7 @@ Creating an object of a defined class is called **instantiation**.
 
 The instance is the object itself, which is created at runtime.
 
-To create an object, specify the **class name**, followed by the **object name**, and use the keyword `new`:
+To create an object, specify the **class name**, followed by the **object name**, and use the `new` keyword:
 
 ```java
 Car firstCar = new Car();
@@ -138,7 +138,7 @@ A variable whose type is a class **contains a reference to an object** of the cl
 
 In Java, objects are constructed and allocated in the **Heap** memory.
 
-So, we cannot store an object in a variable, we can store only its **reference to this object**.
+This means that we cannot store an object in a variable, we can only store a **reference to the object**.
 
 Variables whose type is a class are known as **reference variables** and they are stored in the **Stack** memory.
 
@@ -153,7 +153,7 @@ class Car {
 Car sportsCar = new Car()
 ```
 
-- In the `Stack` memory, we saved `sportsCar(4860c54d)`, which points to the `Heap` memory
+- We saved `sportsCar(4860c54d)` in the `Stack` memory, which points to an address in the `Heap` memory
 
 - In the `Heap` memory, we saved:
 
@@ -178,7 +178,7 @@ int horsePower = 0;
 | Declared using `class` keyword e.g. class Car{} | Created mainly through the `new` keyword -  e.g. `Car firstCar = new Car();` |
 | Declared **once**. | Created as **many times** as required. | 
 | **Does not allocate memory** when it is created. | **Allocates memory** when it is created. |
-| Only one way to define in Java - using the `class` keyword. | Many ways to create in Java - `new` keyword, `newInstance()` method, `clone()` method `factory` method, and deserialization. |
+| Only one way to define in Java - using the `class` keyword. | Many ways to create in Java - `new` keyword, `newInstance()` method, `clone()` method `factory` method and deserialization. |
 [/slide]
 
 
