@@ -6,11 +6,11 @@
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-backend/04-Cubicle-Homework-Part-2-Resources.zip) **for this task.**
 
-"Cubicle" is a place, where you can browse some of the most popular Rubik cubes in the world and add some new cubes that you have discovered.
+"**Cubicle**" is a place, where you can browse some of the most popular Rubik cubes in the world and add some new cubes that you have discovered.
 
 # Main Task
 
-If you were able to complete the previous task, good job! 
+If you were able to complete the previous task, **good job!** 
 
 Now it is time to **upgrade** your app and **implement** a few new features. 
 
@@ -22,7 +22,9 @@ As you already know, you should **install** a bunch of new things so you could b
 
 Here is the list:
 
-1. [MongoDB Download Center](https://www.mongodb.com/try). You can check the [Installation Instructions](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/) as well.
+1. [MongoDB Download Center](https://www.mongodb.com/try). 
+
+    - You can check the [Installation Instructions](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/) as well
 
 2. [MongoDB Node.JS Driver](https://www.npmjs.com/package/mongodb)
 
@@ -45,7 +47,7 @@ The `index.js` file should **require** the exported mongoose connection (**datab
 
 # Model
 
-If you follow the previous structure you probably created ES6 class Model for each cube in this format:
+If you follow the previous structure you probably created **ES6** class Model for each cube in this format:
 
 - **Id**: number
 - **Name**: string
@@ -53,7 +55,7 @@ If you follow the previous structure you probably created ES6 class Model for ea
 - **Image URL**: string
 - **Difficulty Level**: number
 
-Now it is time to refactor this ES6 class to **Mongoose Schema**, so each **Cube** has the following structure:
+Now it is time to refactor this **ES6** class to **Mongoose Schema**, so each **Cube** has the following structure:
 
 - **Id**: ObjectId
 - **Name**: String, required
@@ -94,7 +96,9 @@ And **update the view** on `/details/:id route`, that render the cube's details.
 
 Use the provided Resources to create the additional templates using Handlebars (The authentication here is the same as above - **username: student, password: student**).
 
-Identify the dynamic parts and use the appropriate syntax for interpolating and rendering the application context. Replace the old **CSS** file with the given one.
+Identify the dynamic parts and use the appropriate syntax for interpolating and rendering the application context. 
+
+Replace the old **CSS** file with the given one.
 
 - **Create Accessory Page View**
 
