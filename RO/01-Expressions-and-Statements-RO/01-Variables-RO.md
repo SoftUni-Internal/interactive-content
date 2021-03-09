@@ -5,10 +5,7 @@
 [slide hideTitle]
 # Exemplu din viața reală
 
-[vimeo-video]
-[stream language="EN" videoId="486854871/0266769f7d" default /]
-[stream language="RO" videoId="486854871/0266769f7d"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-4-Real-life-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Dacă ne gândim la variabile ca la niște cutii care conțin informații, putem vedea în imaginea de mai jos cum ar arăta ele:
 
@@ -24,10 +21,7 @@ Putem folosi variabilele pentru a stoca toate tipurile de date de care avem nevo
 [slide hideTitle]
 # Definiția variabilelor
 
-[vimeo-video]
-[stream language="EN" videoId="486854872/71ae21e1d5" default /]
-[stream language="RO" videoId="486854872/71ae21e1d5"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-5-6-What-are-variables-and-how-are-they-used-in-computing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În programare, fiecare **variabilă** stochează o anumită valoare de un anumit tip. 
 
@@ -47,10 +41,7 @@ Datele stocate de acestea pot fi citite și modificate în orice moment.
 [slide hideTitle]
 # Crearea unei variabile
 
-[vimeo-video]
-[stream language="EN" videoId="486854948/925f8eaf2d" default /]
-[stream language="RO" videoId="486854948/925f8eaf2d"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-7-8-8-demo-Variables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Variabilele pot fi stocate în următoarele spații ale unui program:
 
@@ -88,10 +79,7 @@ let age = 35;
 [slide hideTitle]
 # Instrucțiuni de declarare a variabilelor
 
-[vimeo-video]
-[stream language="EN" videoId="486855151/43dc67876d" default /]
-[stream language="RO" videoId="486855151/43dc67876d"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-9-10-Declaration-statements-let-var-const-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Instrucțiunile care declară variabilele în JavaScript sunt: `let`, `var` și `const`
 

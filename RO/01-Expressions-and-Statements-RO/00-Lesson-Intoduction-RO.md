@@ -5,10 +5,7 @@
 
 # Conținutul lecției
 
-[vimeo-video]
-[stream language="EN" videoId="486854823/83a385d5b2" default /]
-[stream language="RO" videoId="486854823/83a385d5b2"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-1-2-Introduction-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## În cadrul acestei lecții veți învăța despre:
 

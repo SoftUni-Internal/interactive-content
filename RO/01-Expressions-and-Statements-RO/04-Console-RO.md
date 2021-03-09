@@ -26,10 +26,7 @@ VS Code are propria sa consolă pe care o vom folosi pentru a citi intrările ș
 
 # Variabilele de logare pe consolă
 
-[vimeo-video]
-[stream language="EN" videoId="486855670/d118990c90" default /]
-[stream language="RO" videoId="486855670/d118990c90"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-16-17-Console-output-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Consola este utilă în scopul testării.
 
@@ -46,10 +43,7 @@ console.log(firstNum + secondNum);
 [slide hideTitle]
 # Citirea datelor de la utilizator
 
-[vimeo-video]
-[stream language="EN" videoId="486855737/188e2502e0" default /]
-[stream language="RO" videoId="486855737/188e2502e0"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-18-Reading-user-input-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In sistemele software, informațiile de la utilizatori vin din multe surse, ca de exemplu, User Interface(UI).
 
@@ -63,10 +57,7 @@ Programele pot, de asemenea, să preia informațiile de la utilizatori(input) pr
 [slide hideTitle]
 # Funcții și parametri
 
-[vimeo-video]
-[stream language="EN" videoId="486855856/06a253a610" default /]
-[stream language="RO" videoId="486855856/06a253a610"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-19-Functions-and-Parameters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Folosiți funcțiile și invocați funcția cu ajutorul numelui său. 
 
@@ -105,10 +96,7 @@ Dacă introducem **București**, ieșirea va fi astfel: `I am from București!`
 [slide hideTitle]
 # Transmiterea Paranetrilor Multipli 
 
-[vimeo-video]
-[stream language="EN" videoId="486855964/c2b23e3efb" default /]
-[stream language="RO" videoId="486855964/c2b23e3efb"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-20-Passing-Multiple-Parameters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Puteți transmite **parametri multipli unei funcții.** 
 
@@ -140,10 +128,7 @@ console.log(firstNum);
 [slide hideTitle]
 # Formatarea ieșirii
 
-[vimeo-video]
-[stream language="EN" videoId="486856070/5392c79701" default /]
-[stream language="RO" videoId="486856070/5392c79701"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-21-21-demo-Formatting-Outputs-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 JavaScript ne permite să formatăm numerele ca virgule mobile. 
 
@@ -178,10 +163,7 @@ Prefixul `$` înaintea unui șir în JS ne ajută să facem așa-numita **
 [slide hideTitle]
 # Citirea numerelor
 
-[vimeo-video]
-[stream language="EN" videoId="486856186/d812421fbc" default /]
-[stream language="RO" videoId="486856186/d812421fbc"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-22-Parsing-Numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a putea citi un **număr** de pe consolă, trebuie să **declarăm o variabilă** și să folosim comanda standard **de citire a unei linii de text** de pe consola de sistem și după aceea,**să convertim accea linie de text într-un număr**, folosind `Number(text)`:
 
@@ -213,6 +195,9 @@ Aici, vedem cum funcționează programul dacă avem un pătrat cu latura egală 
 
 [slide hideTitle]
 # Problemă cu soluție: Greeting
+
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-23-Problem-Greeting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Greeting" taskId="pb-js-expression-and-statements-Greeting" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```

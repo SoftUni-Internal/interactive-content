@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Expresii
 
-[vimeo-video]
-[stream language="EN" videoId="486856973/6e98d5e813" default /]
-[stream language="RO" videoId="486856973/6e98d5e813"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-30-29-Expressions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Expresiile** sunt secvențe de operatori, litere și variabile care sunt evaluate ca o valoare. 
 

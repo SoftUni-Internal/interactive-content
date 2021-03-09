@@ -5,10 +5,7 @@
 [slide hideTitle]
 # Tipurile de date
 
-[vimeo-video]
-[stream language="EN" videoId="486855368/8cbb7ec0db" default /]
-[stream language="RO" videoId="486855368/8cbb7ec0db"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-11-12-What-are-data-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Există șase tipuri primitive de date:
 
@@ -61,10 +58,7 @@ Veți aprofunda tipurile de **obiecte** mai târziu în cadrul cursului.
 [slide hideTitle]
 # Tipurile de date sunt dinamice
 
-[vimeo-video]
-[stream language="EN" videoId="486855395/6827c0da76" default /]
-[stream language="RO" videoId="486855395/6827c0da76"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-13-13-demo-Data-types-are-dynamic-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În limbajul JavaScript, tipurile de date sunt dinamice.
 
