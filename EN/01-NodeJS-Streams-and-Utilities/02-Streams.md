@@ -16,7 +16,7 @@ For instance, a request to an HTTP server is a stream instance.
 
 Streams can be **Readable**, **Writable**, **Duplex** or **Transform**. 
 
-All streams are instances of the "EventEmitter".
+All streams are instances of the "**EventEmitter**".
 
 **Readable** - can only **read** data.
 
@@ -70,7 +70,7 @@ readable.resume();
 
 - **Events**
 
-All streams are instances of "EventEmitter". 
+All streams are instances of "**EventEmitter**". 
 
 They emit events used to read and write data.
 
@@ -96,7 +96,7 @@ To create a server, we need to require the "HTTP" module from Node.js.
 
 Then we use the `createServer()` method to create a server on your computer.
 
-This is a function that receives two callbacks - **req** and **res**.
+This is a function that receives two callbacks - "**req**" and "**res**".
 
 **req** stands for request, and **res** stands for the response.
 
@@ -104,7 +104,7 @@ The `req.on()` method binds an event to an object and adds a listener function f
 
 With the "data" event, we attach the data to the `body` variable.
 
-With the "end" event, we end the data transfer.
+With the "**end**" event, we end the data transfer.
 
 The `.listen()` method creates a listener on the specified port or path.
 
@@ -199,7 +199,7 @@ An HTTP response is an instance of a writable stream.
 
 Take a look at the following example.
 
-First, we require the "fs" module from Node.js, then we create a server, which will be listening on port 5000.
+First, we require the "**fs**" module from Node.js, then we create a server, which will be listening on **port 5000**.
 
 We start reading from a file called `./bigfile.txt`, which is the name of the file in this example.
 
@@ -256,7 +256,7 @@ A transform stream is a special kind of duplex stream where the output is a tran
 
 In the following example we read from `index.js` and then we compress it to `index.js.gz`.
 
-We require "fs" and "zlib" modules from Node.js, then we create a readable and writable stream.
+We require "**fs**" and "**zlib**" modules from Node.js, then we create a readable and writable stream.
 
 Finally using the `.pipe()` method we transfer data from one file to another.
 

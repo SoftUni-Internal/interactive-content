@@ -4,7 +4,7 @@
 
 # In this lesson you learnt:
 
-- Pub/Sub pattern is used to communicate messages.
+- **Pub/Sub** pattern is used to communicate messages.
 - Node.js has various useful utility modules.
 - Streams allow working with big data.
 
@@ -23,7 +23,7 @@ http.createServer((req, res) => {
 
 - Events simplify communication within a large application.
 
-- The fs module gives you access to the file system.
+- The **fs module** gives you access to the file system.
 
 ```js
 let fs = require('fs');
@@ -31,7 +31,7 @@ let data = fs.readdirSync('./myDir', 'utf8');
 console.log(data);
 ```
 
-## In the next lesson you will learn:
+## In the next lesson, you will learn:
 
 - Express​
 - View Engines

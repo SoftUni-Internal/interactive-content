@@ -14,7 +14,7 @@ To be able to access these properties and methods, create an EventEmitter object
 
 With the EventEmitter object, we can assign handlers to our events.
 
-In this example we use the `eventEmitter.on()` method to assign the event handler to an event called "click".
+In this example we use the `eventEmitter.on()` method to assign the event handler to an event called "**click**".
 
 Finally, we fire the event using the `event emitter.emit()` method.
 

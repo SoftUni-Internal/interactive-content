@@ -182,7 +182,7 @@ It may look like this:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-20.jpg" /]
 
-Download the **resources** and put the **site.css** and **favicon.ico** in the "**content**" folder like this:
+Download the **resources** and put the `site.css` and `favicon.ico` in the "**content**" folder like this:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-21.jpg" /]
 
@@ -225,7 +225,7 @@ First, whenever we access our site, we want to display the "default" page or so-
 - Write our view (the HTML and CSS)
 - Make the server and execute the logic we implement in the first step
 
-Now go to the "**handlers**" folder and add new "**home.js**". In the beginning, add the modules we are going to use:
+Now go to the "**handlers**" folder and add new `home.js`. In the beginning, add the modules we are going to use:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-26.jpg" /]
 
@@ -255,9 +255,9 @@ What is left is to find the HTML5 page read it and send it as a response – her
 [slide hideTitle]
 # Hints
 
-Inside the if statement above we should locate the local index.html file (our home page) and store the path to it into a variable called **filePath** for instance.
+Inside the if statement above we should locate the local `index.html` file (our home page) and store the path to it into a variable called **filePath** for instance.
 
-Use **path.normalize** and **path.join** functions and `__`**dirname property** to achieve that.
+Use `path.normalize` and `path.join` functions and `__dirname property` to achieve that.
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-31.jpg" /]
 
@@ -273,15 +273,17 @@ Our HTML page (home page) is almost ready (later the cats will be added).
 
 We are almost ready to test if everything mentioned above is about to work.
 
-Go to the "**handlers**" folder and add the "**index.js**" file.
+Go to the "**handlers**" folder and add the `index.js` file.
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-33.jpg" /]
 
-This **index.js** file inside the "**handlers**" folder will be our file which exports all future handlers which we will create (**static file handler** and **cat handler**).
+This `index.js` file inside the "**handlers**" folder will be our file which exports all future handlers which we will create (**static file handler** and **cat handler**).
 
-After that go back to the **root folder** and open the **index.js** (that file where we create our HTTP server).
+After that go back to the **root folder** and open the `index.js` (that file where we create our HTTP server).
 
-As we mentioned above, the **index.js file** inside the "**handlers**" **folder** will export **all handlers** to the "open world". That is why we should require them in this **index.js** file. Like:
+As we mentioned above, the `index.js` **file** inside the "**handlers**" **folder** will export **all handlers** to the "open world". That is why we should require them in this `index.js` file. 
+
+Like:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-34.jpg" /]
 
@@ -303,7 +305,9 @@ Our **index.html** file but **without any styles**, if you open the **network ta
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-38.jpg" /]
 
-In other words, the server does not have the functionality to serve static files. We will take care of that in the next section.
+In other words, the server does not have the functionality to serve static files. 
+
+We will take care of that in the next section.
 [/slide]
 
 [slide hideTitle]
@@ -322,7 +326,9 @@ It will behave like a normal handler but instead of returning HTML, it will retu
 
 Our public folder will be the "**content**":
 
-First, let us create one function called getContentType which will receive our pathname (url), checks the file extension and returns the **correct content-type**. Like:
+First, let us create one function called getContentType which will receive our pathname (url), checks the file extension and returns the **correct content-type**. 
+
+Like:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-39.jpg" /]
 
@@ -341,13 +347,13 @@ Implement the missing logic.
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-41.jpg" /]
 
-This will work for now, but when we load the cat images locally, we should make some changes here ...
+This will work for now, but when we load the cat images locally, we should make some changes here...
 
 Go back to "**handlers**/**index.js**" and add the static file handler:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-42.jpg" /]
 
-If you have not included the "**site.css**" file and the "**favicon.ico**" in "**home/index.html**" go back and do it.
+If you have not included the `site.css` file and the `favicon.ico` in `home/index.html` go back and do it.
 
 ## Note
 
@@ -410,7 +416,7 @@ Use **readFile** or **createReadStream** function to read each of the HTML files
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-49.jpg" /]
 
-One more thing before we test our application – go to "**handlers**/**index.js**" and add our cat handler:
+One more thing before we test our application – go to `handlers/index.js` and add our cat handler:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-50.jpg" /]
 
@@ -428,7 +434,7 @@ Restart the server and go to the `localhost:3000/cats/add-cat`
 
 To create a new cat, first, we should create the cat breeds functionality, because they will be listed in **addCat page** as **options elements** inside the **select menu**.
 
-Handle the post request in `/cats/add-breed`, save the given breed inside the **breeds.json** file and when the **addCat.html** file is loaded we should use the breeds inside that **JSON** file, so they could be picked when a new cat is added to our application.
+Handle the post request in `/cats/add-breed`, save the given breed inside the `breeds.json` file and when the `addCat.html` file is loaded we should use the breeds inside that **JSON** file, so they could be picked when a new cat is added to our application.
 
 To handle **POST request**, the logic is similar:
 
@@ -438,11 +444,11 @@ You have to:
 
 - **Parse** the **incoming data** from the **form**
 
-- **Read** `the breeds.json` file
+- **Read** the `breeds.json` file
 
 - **Modify** the `breeds.json` file
 
-- **Update** `the breeds.json` file
+- **Update** the `breeds.json` file
 
 - **Redirect** to the home page `/` and **end** the **response**
 
@@ -450,7 +456,7 @@ You have to:
 
 Here is an example of how it works:
 
-**breeds.json before**
+`breeds.json` **before**
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-55.jpg" /]
 
@@ -462,13 +468,13 @@ If you got redirected to the home page, you have successfully implemented adding
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-57.jpg" /]
 
-Now if we check the **breeds.json** again, the result is:
+Now if we check the `breeds.json` again, the result is:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-58.jpg" /]
 
 Now every single breed which is created by the app is saved in this JSON file.
 
-The next step is to visualize all breeds from this JSON file, into the **select menu** as **options** in the **addCat.html** because now the Fluffy Cat Breed is just a placeholder.
+The next step is to visualize all breeds from this JSON file, into the **select menu** as **options** in the `addCat.html` because now the Fluffy Cat Breed is just a placeholder.
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-59.jpg" /]
 
@@ -491,19 +497,19 @@ Every breed should be an **option** which has a value with the current breed and
 
 And all of them should be inside the **select element** with id "**group**".
 
-Now, when we render the **addCat.html** file we should **replace** some of the content inside the HTML.
+Now, when we render the `addCat.html` file we should **replace** some of the content inside the HTML.
 
-To do that we simply modify the **addCat.html** file to be like this:
+To do that we simply modify the `addCat.html` file to be like this:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-61.jpg" /]
 
-After that open the **cat.js handler** and open the statement where you render the **addCat.html** file.
+After that open the `cat.js` **handler** and open the statement where you render the `addCat.html` file.
 
 Modify the data. Replace the `{{catBreeds}}` with the current **breed placeholder** like this:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-62.jpg" /]
 
-In this case, **breeds** is a variable that is **required** at the top of the file and refers to **breeds.json**.
+In this case, **breeds** is a variable that is **required** at the top of the file and refers to `breeds.json`.
 
 We can replace/modify the data and pass it to the `res.write()` method as simple as sounds.
 
@@ -517,7 +523,7 @@ And after we open the **Add Cat** Tab, you will see this time the options are th
 
 As you can guess we can use the same logic to render all created cats on the home page, but first you should make the logic where a new cat is added to our `cat.json` file via a form.
 
-But here comes the funny part, because they add a new cat form that contains the input where the type is '**file**'.
+But here comes the funny part, because they add a new cat form that contains the input where the type is "**file**".
 
 That means this time we must process the incoming data differently.
 
@@ -556,7 +562,9 @@ We already can create new cats.
 
 To fully check if the entire logic is working, you can check the `/content/images/`.
 
-If the uploaded picture from you is there, everything is fine. So, we can use the given template and render all cats inside the `cats.json` file.
+If the uploaded picture from you is there, everything is fine. 
+
+So, we can use the given template and render all cats inside the `cats.json` file.
 
 Here is the cat structure:
 
@@ -568,7 +576,9 @@ When rendering the `index.html` page we should loop through all cats inside `cat
 
 Here is how that work can be done:
 
-Go to `home.js`, because there is the logic we should change. There we load the `index.html` file but with static data.
+Go to `home.js`, because there is the logic we should change. 
+
+There we load the `index.html` file but with static data.
 
 Change it to this:
 
@@ -631,7 +641,9 @@ If you check the `home.js` handler, you will see this:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-77.jpg" /]
 
-This is our **cat template**. When you get the current cat from the `json.file`, you can use the logic from above to get the file and render it and just apply the template:
+This is our **cat template**. 
+
+When you get the current cat from the `json.file`, you can use the logic from above to get the file and render it and just apply the template:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-78.jpg" /]
 
@@ -645,7 +657,7 @@ The logic after clicking over the `[New Home]` button is the same:
 
 - **Search** through `cat.json` file that id.
 
-- **Replace** editCat.html with the current cat information like above.
+- **Replace** `editCat.html` with the current cat information like above.
 
 **POST request** for these two actions is almost the same as the logic for **adding a new cat**.
 

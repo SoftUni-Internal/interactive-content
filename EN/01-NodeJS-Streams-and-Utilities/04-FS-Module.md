@@ -4,15 +4,15 @@
 
 # Working with the File System
 
-The Node.js file system module allows you to work with the file system.
+The Node.js **file system module** allows you to work with the file system.
 
-To include the File System module, use the `require()` method.
+To include the **File System module**, use the `require()` method.
 
 ```js
 let fs = require('fs');
 ```
 
-Commonly used functions for the File System module:
+Commonly used functions for the **File System module**:
 - Read files
 - Create files
 - Update files
@@ -49,7 +49,9 @@ The method accepts two parameters:
 
 The first one is the **path** to the file we are reading from.
 
-The second one is **encoding**. It is a string value that specifies which encoding would be used for the filenames given to the callback argument. 
+The second one is **encoding**. 
+
+It is a string value that specifies which encoding would be used for the filenames given to the callback argument. 
 
 The default value is `utf8`.
 
