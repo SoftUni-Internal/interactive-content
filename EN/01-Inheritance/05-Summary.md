@@ -45,16 +45,16 @@ public class Student extends Person {
 - Consider **Composition** and **Delegation** instead
 
 
-## In the next lesson you will learn:
+## In the next lesson, you will learn:
 
 
-- What are Inheritance and Interfaces
+- What Inheritance and Interfaces are 
 
 - Abstraction as an OOP Principle
 
 - How to use Interfaces
 
-- What are Abstract Classes
+- What Abstract Classes are
 
 - Interfaces vs Abstract Classes
 
