@@ -44,9 +44,6 @@ This process will repeat with any other function that will be called by the prev
 
 When one function is finished, JavaScript will **remove** that function from the **call stack**.
 
-There is an example:
-
-[image assetsSrc="DOM-Manipulation.gif" /]
 
 [/slide]
 

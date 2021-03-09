@@ -12,20 +12,20 @@
     - preventDefault: `event.preventDefault();`
     - stopPropagation: `event.stopPropagation();`
 - Handling Events
-    - Attach
+    - attach
     ```js
     button.addEventListener("click", () => {
     console.log("Button clicked.");
     });
     ```
-    - Remove
+    - remove
      ```js
     button.removeEventListener("click", () => {
     console.log("Button event listener removed.");
     });
     ```
     
-## In the next lesson you will learn:
+## In the next lesson, you will learn:
 
 - What `this` is
 

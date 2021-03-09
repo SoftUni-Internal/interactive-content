@@ -62,9 +62,9 @@ addBtn.removeEventListener("click", handler);
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/EN/JS-Advanced-DOM-Manipulations-22-attaching-click-event-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Here is an example using the "click" type and the "clickMe" function as an event handler.
+Here is an example using the "**click**" type and the "**clickMe**" function as an event handler.
 
-On each click of the button, the "number" will be incremented by one.
+On each click of the button, the "**number**" will be incremented by one.
 
 ```js
 const button = document.getElementsByTagName('button')[0];
@@ -84,11 +84,11 @@ function clickMe(e) {
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/EN/JS-Advanced-DOM-Manipulations-23-24-attaching-hover-event-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Here is an example of using the "mouseOver" type and a function declaration.
+Here is an example of using the "**mouseOver**" type and a function declaration.
 
 The code will run if we **mouse hover** the button. 
 
-The result will be a change of the background color of the button, and a change of the color of the text content of the button
+The result will be a change of the background color of the button, and a change of the color of the text content of the button:
 
 ```js
 const button = document.getElementsByTagName('div')[0];
@@ -111,7 +111,7 @@ button.addEventListener('mouseover', function (e) {
 
 # Attaching Input Events
 
-In this example, we use the "input" type to demonstrate how we can enable a button when we type something in the input field.
+In this example, we use the "**input**" type to demonstrate how we can enable a button when we type something in the input field.
 
 By default, the button is **disabled** in the HTML. 
 
