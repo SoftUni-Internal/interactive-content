@@ -55,9 +55,9 @@ The method should **return** the following message:
 
 **Parameters:**
 
-- **dwarfName – String**
+- **dwarfName - String**
 
-- **power – int**
+- **power - int**
 
 **Functionality:**
 
@@ -77,7 +77,7 @@ The method should **return** the following message:
 **Parameters:**
 
 - **presentName - String**
-- **energyRequired – int** 
+- **energyRequired - int** 
 
 **Functionality:**
 

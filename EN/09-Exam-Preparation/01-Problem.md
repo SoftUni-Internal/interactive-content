@@ -41,12 +41,12 @@ There should also be a **DwarfRepository**, as well as **PresentRepository**
 "**Dwarf name cannot be null or empty.**"
   * all names will be **unique**
 
-- **energy –  int**
+- **energy -  int**
   * the energy of a dwarf
   * if the **initial** energy is below 0, throw an **IllegalArgumentException** with the message:
  "**Cannot create a Dwarf with negative energy!**"
 
-- **instruments – Collection**\<**Instrument**\>
+- **instruments - Collection**\<**Instrument**\>
   * a collection of a dwarf's instruments
 
 ## Constructor:
@@ -187,7 +187,7 @@ The dwarf repository is a repository for the dwarfs working at Santa's Workshop.
 
 ## Data
 
-- **dwarfs – a collection of dwarfs**
+- **dwarfs - a collection of dwarfs**
 
 ## Behavior
 

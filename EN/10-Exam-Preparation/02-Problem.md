@@ -37,11 +37,11 @@ The method must be called **addComputer**.
 
 **Parameters:**
 
-- **computerType – String**
-- **id – int**
-- **manufacturer – String**
-- **model – String**
-- **price – double**
+- **computerType - String**
+- **id - int**
+- **manufacturer - String**
+- **model - String**
+- **price - double**
 
 **Functionality:**
 
@@ -59,14 +59,14 @@ The method must be called **addComponent**.
 
 **Parameters:**
 
-- **computerId – int**
-- **id – int**
-- **componentType – String**
-- **manufacturer – String**
-- **model – String**
-- **price – double**
-- **overallPerformance – double**
-- **generation – int**
+- **computerId - int**
+- **id - int**
+- **componentType - String**
+- **manufacturer - String**
+- **model - String**
+- **price - double**
+- **overallPerformance - double**
+- **generation - int**
 
 **Functionality:**
 
@@ -84,8 +84,8 @@ The method must be called **removeComponent**.
 
 **Parameters:**
 
-- **componentType – String**
-- **computerId – int**
+- **componentType - String**
+- **computerId - int**
 
 **Functionality:**
 
@@ -99,14 +99,14 @@ The method must be called **addPeripheral**.
 
 **Parameters:**
 
-- **computerId – int**
-- **id – int**
-- **peripheralType – String**
-- **manufacturer – String**
-- **model – String**
-- **price – double**
-- **overallPerformance – double**
-- **connectionType – String** 
+- **computerId - int**
+- **id - int**
+- **peripheralType - String**
+- **manufacturer - String**
+- **model - String**
+- **price - double**
+- **overallPerformance - double**
+- **connectionType - String** 
 
 **Functionality:**
 
@@ -124,8 +124,8 @@ The method must be called **removePeripheral**.
 
 **Parameters:**
 
-- **peripheralType – String**
-- **computerId – int**
+- **peripheralType - String**
+- **computerId - int**
 
 **Functionality:**
 
@@ -139,7 +139,7 @@ The method must be called **buyComputer**.
 
 **Parameters:**
 
-- **id – int**
+- **id - int**
 
 **Functionality:**
 
