@@ -2,7 +2,7 @@
 [slide hideTitle]
 # Aplicații de consolă în VS Code
 
-[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-30-31-Creating-a-console-application-in-VSC-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-30-31-Creating-a-console-application-in-VSC-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 Avem deja instalat Visual Studio Code și îl putem starta.
@@ -21,7 +21,7 @@ Create a file **hello.js** to hold your program's source code:
 [slide hideTitle]
 # Scrierea codului programului
 
-[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-32-32-Demo-Writing-the-program-code-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-32-32-Demo-Writing-the-program-code-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Codul sursă al programului JS ar trebui să fie scris într-o funcție, pe care o invocăm mai târziu
  pentru a o rula.
@@ -53,7 +53,7 @@ Această comandă este foarte tipică în programare: deci, ar trebui să găsim
 [slide hideTitle]
 # Pornirea programului
 
-[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-33-Starting-the-program-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-33-Starting-the-program-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a porni programul, apăsați \ [Ctrl + F5 \]
 
