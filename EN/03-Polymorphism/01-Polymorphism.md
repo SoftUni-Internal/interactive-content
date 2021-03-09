@@ -8,7 +8,7 @@ Polymorphism is one of the four OOP pillars in **object-oriented** languages.
 
 It allows us to perform a single action in many different ways.
 
-Giving us the chance to change the behavior of the class's runtime.
+Giving us the chance to change the behavior of the class' runtime.
 
 It lays on the concept that objects of different types can be accessed through the same interface or abstract class.
 
