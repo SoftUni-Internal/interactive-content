@@ -3,7 +3,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-50-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In this lesson you learned: 
+## In this lesson we learned: 
 
 - Comparison Operators (**==** , **!=** , **<** , **>** , **<=** , **>=** )
 
@@ -25,7 +25,7 @@ if (condition) {
 }
 ```
 
-- How to make Series of Checks: **if-else-if-else-if...**
+- How to perform Series of Checks: **if-else-if-else-if...**
 
 ```java
 if (condition) {
@@ -37,15 +37,15 @@ if (condition) {
 
 - Block and Variable Scope
 
-- How to debug code. Using Breakpoints
+- How to debug code. Breakpoints
 
 ## In the next lesson you will learn:
 
-- **Nested if-else** Statements
+- **Nested if-else** statements
 
 - Logical Operators: **&&, ||, !**
 
-- Switch-case
+- The Switch-case
 
 
 [/slide]
