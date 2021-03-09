@@ -4,9 +4,9 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/EN/interactive-java-oop-advanced-polymorphism-16-17-Abstract-Classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Lets take a look at **Abstract classes** in Java!
+Let us take a look at **Abstract classes** in Java.
 
-We know from the last lesson that **abstract classes cannot** be instanciated.
+We know from the last lesson that **abstract classes cannot** be instantiated.
 
 ```java
 public abstract class Animal {} 
@@ -23,9 +23,9 @@ An **abstract class** has an "**IS-A**" type relationship with our subclasses.
 
 So for instance, we could have an **abstract** class `Animal` which has stuff any animal has (like a **eat** or **walk** function), and then a class `Cat`. 
 
-**Every cat is a animal, but not all animals are cats.**
+**Every cat is an animal, but not all animals are cats.**
 
-The main goal of an abstract class is to provide shared implementation of common behaviour - promoting the **reuse of code**.
+The main goal of an abstract class is to provide a shared implementation of common behavior - promoting the **reuse of code**.
 
 [/slide]
 
