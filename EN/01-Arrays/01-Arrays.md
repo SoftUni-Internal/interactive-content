@@ -6,11 +6,11 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-3-4-What-are-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-You already know how to store single data in one variable. Arrays allow us to store multiple data, again, in only one variable.
+**Arrays** allow us to store multiple data in only one variable.
 
-Arrays are useful for preserving a sequence of data and iterating over it.
+They are useful for preserving a sequence of data and iterating over it.
 
-You can initialize an array and set the values inside it by enclosing them in curly brackets and separating the values by commas:
+You can initialize an **array** and set the values inside it by enclosing them in curly brackets and separating the values by commas:
 
 ``` java
 String[] days = { "apple", "pear", "cherry" };
@@ -22,7 +22,7 @@ An array can contain duplicate values.
 int[] numbers = { 1, 1, 2, 4, 5 };
 ```
 
-The values in an array are called elements.
+The values in an array are called **elements**.
 
 ## Real-Life Example
 Imagine a train with multiple wagons and passengers riding in each wagon.
@@ -35,9 +35,7 @@ Take a look at this picture:
 
 There are **7 wagons (elements)**. Each has **passengers (a value)**. \{3, 4, 10, 7, 5, 0, 6\}
 
-Arrays are the **basis** for other abstract data types like **list**, **stack**, **queue**.
-
-You are going to learn about these structures in the following courses.
+Arrays are the **basis** for other abstract data types like **List**, **Stack**, **Queue**.
 
 [/slide]
 
@@ -52,7 +50,7 @@ Arrays have a fixed size. This means they cannot be resized.
 
 Elements are always of the **same type**.
 
-Indexes of an array are numbered from **0** to **length-1**.
+Indexes of an array are numbered from **0** to the **length - 1**.
 
 **Example:**
 ```Java live
@@ -90,11 +88,11 @@ In the for-loop we use `i < numbers.length` because the array's indexes are zero
 
 As we mentioned above the first index of an array is always 0 and the last index is `array.length - 1`.
 
-In total, we have 5 elements in our array, but the last element is at index 4, so we subtract `array.length - 1 = 4` which is our last index.
+In total, we have 5 elements in our array but the last element is at index 4 so we subtract `array.length - 1 = 4`, which is our last index.
 
 The `[]` operator accesses elements by index.
 
-If we try to access the element on an invalid index, we get an exception.
+If we try to access the element on an invalid index we get an exception.
 
 
 [/slide]
