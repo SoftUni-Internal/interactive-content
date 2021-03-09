@@ -77,7 +77,7 @@ if (number) {
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-24-25-boolean-comparisons-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-In addition to "**true**" and "**false**", JavaScript has "**truthy**" and "**false**" (sometimes written "**falsey**"). 
+In addition to "**true**" and "**false**", JavaScript has "**truthy**" and "**falsy**". 
 
 These are values that are **not** "**true**" or "**false**", but when we turn them into a Boolean value they give "**true**" or "**false**".
 
