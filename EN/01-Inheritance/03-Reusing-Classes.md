@@ -6,15 +6,15 @@
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-20-21-reusing-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Derived classes **can access all public** and **protected** members
-- Derived classes can access **default** members **if in same package**
-- **Private** fields can not be accessed from the **Subclasses** but they are instantiated as our **Parent** need them for its internal logic
+- Derived classes can access **default** members **if in the same package**
+- **Private** fields cannot be accessed from the **Subclasses** but they are instantiated, as the **Parent** needs them for its internal logic
 
 ```java
 class Person {
-  protected String address;   //Can be accessed from it is Subclasses.
-  public void sleep();        //Access from everywhere in the project.
-  String name;                //Can be accessed through other methods.
-  private String id;          //It can be accessed only from the class delegator itself.
+  protected String address;   // Can be accessed from its Subclasses.
+  public void sleep();        // Access from everywhere in the project.
+  String name;                // Can be accessed through other methods.
+  private String id;          // It can be accessed only from the class delegator itself.
 }
 ```
 
@@ -74,28 +74,33 @@ class Patient extends Person {
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-24-overriding-derived-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Overriding is a mechanism in which we can give a custom implementation of a given class method down the hierarchy, we can achieve it with the keyword `@Override`.
+**Overriding** is a mechanism in which we can give a custom implementation of a given class method down the hierarchy.
+
+It is done by using the `@Override` keyword.
 
 It is an important tool as it is connected to another pillar of the OOP **Polymorphism**.
 
-The difference between **Shadowing** and **Overriding** is that when you override you can not change the parameters.
+The difference between **Shadowing** and **Overriding** is that when you override you cannot change the parameters.
 
-Other than that, when we have a **variable of a base class type** and we hold a **Subclass object** if we have an overridden class member and we call it, it will use **the logic declared by the Subclass overriding it**, whereas if you use the **shadowing** it will always call the **base class implementation**.
+Other than that, when we have a **variable of a base class type** and we hold a **Subclass object** if we have an overridden class member and we call it, it will use **the logic declared by the Subclass overriding it**.
+
+By contrast, if you use **shadowing**, it will always call the **base class implementation**.
 
 
 ```java
 public class Person {  
   public void sleep() { 
-  System.out.println("Person sleeping"); } //Here we declare a method.
+  System.out.println("Person sleeping"); } // Here we declare a method.
 }
 ```
 - A method that we want to override should not be set as `final`
 
 ```java
 public class Student extends Person {
-  @Override                                   //The Attribute @Override means that this method is being given new/extended implementation.
+  @Override                                   // The Attribute @Override means that this method is being given new/extended implementation.
   public void sleep(){
-  System.out.println("Student sleeping"); }   //Between the brackets we declare the new implementation.
+    System.out.println("Student sleeping");   // Between the brackets we declare the new implementation.
+  }   
 }
 ```
 - Signature and return type **should match**
@@ -108,7 +113,7 @@ public class Student extends Person {
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-25-final-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- `final` – defines a method that **can not be overridden**
+- `final` – defines a method that **cannot be overridden**
   - we should use this tool when we want to preserve our method implementation down the class hierarchy
   - `final` can be declared in any derived class and it gets in power for the classes children down the hierarchy
 
@@ -153,10 +158,10 @@ public class MyMath extends Math { }     // Error…
 [image assetsSrc="inheritance-example(13).png" /]
 
 ```java
-Person person = new Person();    //When we have a base class
-Student student = new Student(); //And another inherited class 
+Person person = new Person();    // When we have a base class
+Student student = new Student(); // And another inherited class 
 
-List<Person> people = new ArrayList(); //We can contain them both in a collection of the base class
+List<Person> people = new ArrayList(); // We can contain both of them in a collection of the base class
 
 people.add(person);
 people.add(student);
@@ -172,7 +177,7 @@ people.add(student);
 
 - We can extend a class that we can not otherwise change, implementing the custom logic we need
 
-If we take notice of the picture, we see an extension of the `Lists<>` logic, when we derive, although we can not see the original implementation, we can write more methods or parameters to our custom class, thus expanding the original class's logic.
+If we take notice of the picture, we see an extension of the `Lists<>` logic, when we derive, although we can not see the original implementation, we can write more methods or parameters to our custom class, therefore expanding the original class's logic.
 
 [image assetsSrc="inheritance-example(14).png" /]
 
@@ -189,7 +194,7 @@ public class MyArrayList<E> extends ArrayList<E>{
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-29-problem-and-solution-random-array-list-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Random Array List" timeLimit=5000 taskId="Java-OOP-Advanced-Inheritance-Random-Array-List" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-task title="Random Array List" timeLimit=5000 taskId="Java-OOP-Advanced-Inheritance-Random-Array-List" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 [task-description]
