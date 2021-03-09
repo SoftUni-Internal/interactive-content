@@ -4,7 +4,7 @@
 
 # What is OOP
 
-**OOP** stands for **Objected-oriented programming**.
+**OOP** stands for **Object-oriented programming**.
 
 It is a programming paradigm based on the concept of **objects**.
 
