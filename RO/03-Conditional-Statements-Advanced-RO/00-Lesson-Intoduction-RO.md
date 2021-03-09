@@ -16,13 +16,18 @@
 **1. Instrucțiuni imbricate if-else**
 - `if-else` în interiorul altui` if-else` 
 
-**2. Operatorii Logici**
+
+**2. Ce este o matrice?**
+- Citirea unei matrice
+
+
+**3. Operatorii Logici**
 - Primii pași în limbajul JavaScript
 
-**3. Instrucțiunea Condițională switch-case**
+**4. Instrucțiunea Condițională switch-case**
 - Utilizarea mai multor etichete de caz în **switch-case**
 
-**4. Exerciții Practice de Codificare**
+**5. Exerciții Practice de Codificare**
 
 [/slide]
 

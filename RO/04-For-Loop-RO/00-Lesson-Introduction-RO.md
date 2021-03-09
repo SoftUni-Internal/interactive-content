@@ -18,19 +18,16 @@
 **1. Operatorii de incrementare și decrementare**
 - Cum să schimbați valoarea unei funcții cu operatori speciali
 
-**2. Ce este o matrice?**
-- Citirea unei matrice
-
-**3. Bucle - blocuri de cod repetitive**
+**2. Bucle - blocuri de cod repetitive**
 - Bucla For
 
-**4. Bucla for cu un pas**
+**3. Bucla for cu un pas**
 - Iterația cu diferiți pași
 
-**5. Iterația prin caractere**
+**4. Iterația prin caractere**
 - Tabelul ASCII
 
-**6. Bucle infinite**
+**5. Bucle infinite**
 - Repetarea unui bloc de cod pe termen nelimitat
 
 
