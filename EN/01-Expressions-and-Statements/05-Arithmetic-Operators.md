@@ -113,7 +113,7 @@ Besides for summing up numbers, the operator `+` is also used for **joining piec
 
 In programming, joining two pieces of text is called **"concatenation"**. 
 
-Here is how we can concatenate a pice of text with a number using the `+` operator:
+Here is how we can concatenate a piece of text with a number using the `+` operator:
 
 ```java live
 String firstName = "John";
