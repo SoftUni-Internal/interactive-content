@@ -37,17 +37,17 @@ There should also be a **DwarfRepository**, as well as **PresentRepository**
 ## Data:
 
 - **name - String**
-  * If the name **is null or whitespace**, throw a **NullPointerException** with the message: 
+  * if the name **is null or whitespace**, throw a **NullPointerException** with the message: 
 "**Dwarf name cannot be null or empty.**"
-  * All names will be **unique**
+  * all names will be **unique**
 
 - **energy –  int**
-  * The energy of a dwarf
-  * If the **initial** energy is below 0, throw an **IllegalArgumentException** with the message:
+  * the energy of a dwarf
+  * if the **initial** energy is below 0, throw an **IllegalArgumentException** with the message:
  "**Cannot create a Dwarf with negative energy!**"
 
 - **instruments – Collection**\<**Instrument**\>
-  * A collection of a dwarf's instruments
+  * a collection of a dwarf's instruments
 
 ## Constructor:
 
@@ -139,12 +139,12 @@ This is the class which holds information about the **Present** that a **Dwarf**
 ## Data
 
 - **name - String**
-  * If the name **is null or whitespace**, **throw a NullPointerException** with the message: 
+  * if the name **is null or whitespace**, **throw a NullPointerException** with the message: 
 "**Present name cannot be null or empty.**"
 
 - **energyRequired - int**
-  * The energy a present requires in order to be crafted
-  * If the **initial** energy is below **0**, throw an **IllegalArgumentException** with the message:
+  * the energy a present requires in order to be crafted
+  * if the **initial** energy is below **0**, throw an **IllegalArgumentException** with the message:
  "**Cannot create a Present requiring negative energy!**"
 
 ## Constructor 
@@ -217,7 +217,7 @@ The present repository is a repository for presents that await to be crafted.
 
 ## Data
 
-- **presents – a collection of presents**
+- **presents - a collection of presents**
 
 ## Behavior
 

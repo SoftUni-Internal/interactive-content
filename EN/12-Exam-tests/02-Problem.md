@@ -8,7 +8,7 @@
 
 # The Controller Class
 
-The business logic of the program should be concentrated around several **commands**. 
+The business logic should be concentrated around several **commands**. 
 
 You are given interfaces, which you have to implement in the correct classes.
 
@@ -32,15 +32,15 @@ The first interface is **Controller**.
 
 **Functionality:**
 
-Creates a **Driver** with the given name and adds it to the appropriate repository.
+Creates a **Driver** with the given name and adds him it to the appropriate repository.
 
 The method should **return** the following message:
 
-**"Driver \{name\} is created."**
+**"Driver** \{**name**\} **is created."**
 
-If a driver with the given name already exists in the driver repository, throw an **IllegalArgumentException** with message 
+If a driver already exists with the given name in the driver repository, this should result in an **IllegalArgumentException** with the message: 
 
-**"Driver \{name\} is already created."**
+**"Driver** \{**name**\} **is already created."**
 
 ## CreateCar Command
 
@@ -52,17 +52,17 @@ If a driver with the given name already exists in the driver repository, throw a
 
 **Functionality:**
 
-Create a **Car** with the provided **model** and **horsepower** and add it to the repository. 
+Creates a **Car** with the provided **model** and **horsepower** and addd it to the repository. 
 
 There are two types of Car: "**MuscleCar**" and "**SportsCar**".
 
-If the **Car** already exists in the appropriate repository throw an **IllegalArgumentException** with following message:
+If the **Car** already exists in the appropriate repository, this should result in an **IllegalArgumentException** with the following message:
 
-**"Car \{model\} is already created."**
+**"Car** \{**model**\} **is already created."**
 
 If the **Car** is successfully created, the method should **return** the following message:
 
-**"\{"MuscleCar"/ "SportsCar"\} \{model\} is created."**
+"\{"**MuscleCar**"/ "**SportsCar**"\} \{**model**\} **is created."**
 
 ## AddCarToDriver Command
 
@@ -73,19 +73,19 @@ If the **Car** is successfully created, the method should **return** the followi
 
 **Functionality:**
 
-Gives the **Car** with given name to the **Driver** with given **name** (if exists).
+Adds the given **Car** to the given **Driver**, if they exist. 
 
-If the **Driver does not exist** in the **DriverRepository**, throw **IllegalArgumentException** with message 
+If the **Driver does not exist** in the **DriverRepository**, this should result in an **IllegalArgumentException** with the message:
 
-- **"Driver \{name\} could not be found."**
+- **"Driver** \{**name**\} **could not be found."**
 
-If the **Car does not exist** in the **CarRepository**, throw **IllegalArgumentException** with message 
+If the **Car does not exist** in the **CarRepository**, this should result in an **IllegalArgumentException** with the message:
 
-- **"Car \{name\} could not be found."**
+- **"Car** \{**name**\} **could not be found."**
 
-If everything is successful you should add the **Car** to the **Driver** and return the following message:
+If the Car and the Driver exist, you should add the **Car** to the **Driver** and return the following message:
 
-- **"Driver \{driver name\} received car \{car name\}."**
+- **"Driver** \{**driver name**\} **received car** \{**car name**\}**.**"**
 
 `AddDriverToRace Command`
 
@@ -98,15 +98,15 @@ If everything is successful you should add the **Car** to the **Driver** and ret
 
 Adds a **Driver** to the **Race**.
 
-If the **Race does not exist** in the **RaceRepository**, throw an **IllegalArgumentException** with message:
+If the **Race does not exist** in the **RaceRepository**, this should result in an **IllegalArgumentException** with the message:
 
-- **"Race \{name\} could not be found."**
+- **"Race** \{**name**\} **could not be found."**
 
-If the **Driver does not exist** in the **DriverRepository**, throw an **IllegalArgumentException** with message:
+If the **Driver does not exist** in the **DriverRepository**, this should result in an **IllegalArgumentException** with the message:
 
-- **"Driver \{name\} could not be found."**
+- **"Driver** \{**name**\} **could not be found."**
 
-If everything is successful, you should add the **Driver** to the **Race** and return the following message:
+You should add the **Driver** to the **Race** and return the following message:
 
 - **"Driver \{driver name\} added in \{race name\} race."**
 
@@ -123,11 +123,11 @@ Creates a **Race** with the given **name** and **laps** and adds it to the **Rac
 
 If the **Race** with the given **name** already **exists**, throw an **IllegalArgumentException** with message:
 
-- **"Race \{name\} is already created."**
+- **"Race** \{**name**\} **is already created."**
 
-If everything is successful you should return the following message:
+You should return the following message:
 
-- **"Race \{name\} is created."**
+- **"Race** \{**name**\} **is created."**
 
 ## StartRace Command
 
@@ -137,29 +137,27 @@ If everything is successful you should return the following message:
 
 **Functionality:**
 
-This method is the big deal. 
+If the information is valid, you should **arrange** all of the **Drivers** and then return the top three fastest **Drivers**.  
 
-If everything is valid, you should **arrange** all **Drivers** and then return the three fastest **Drivers**. 
+To do this, you should sort all of the **Drivers**, in descending order, by the result of the **CalculateRacePoints** method in the **Car** object.  
 
-To do this you should sort all **Drivers** in **descending** order by the result of **CalculateRacePoints** method in the **Car** object. 
+In the end, if everything is valid, **remove** this **Race** from the Race repository. 
 
-At the end, if everything is valid **remove** this **Race** from the race repository.
+If the **Race does not exist** in **RaceRepository**, throw an **IllegalArgumentException** with the message:
 
-If the **Race does not exist** in **RaceRepository**, throw an **IllegalArgumentException** with message:
+- **"Race** \{**name**\} **could not be found."**
 
-- **"Race \{name\} could not be found."**
+If the participants are less than **3**, throw an **IllegalArgumentException** with thw message:
 
-If the participants in the race are less than **3**, throw an **IllegalArgumentException** with message:
+- **"Race** \{**race name**\} **cannot start with less than 3 participants."**
 
-- **"Race \{race name\} cannot start with less than 3 participants."**
+You should return the following message:
 
-If everything is successful, you should return the following message:
+- **"Driver** \{**first driver name**\} **wins** \{**race name**\} **race."**
 
-- **"Driver \{first driver name\} wins \{race name\} race."**
+**"Driver** \{**second driver name**\} **is second in** \{**race name**\} **race."**
 
-**"Driver \{second driver name\} is second in \{race name\} race."**
-
-**"Driver \{third driver name\} is third in \{race name\} race."**
+**"Driver** \{**third driver name**\} **is third in** \{**race name**\} **race."**
 
 ## End Command
 
@@ -169,11 +167,11 @@ If everything is successful, you should return the following message:
 
 You are provided with one interface, which will help with the correct execution process of your program. 
 
-The interface is **Engine** and the class implementing this interface should read the input and when the program finishes, this class should print the output.
+The interface is called **Engine** and the class implementing this interface should read the input and when the program finishes, this class should print the output.
 
 ## Input
 
-Below, you can see the **format** in which **each command** will be given in the input:
+Below, you can see the **format**, in which **each command** will be given in the input:
 
 - CreateDriver \{name\}
 - CreateCar \{car type\} \{model\} \{horsepower\}
@@ -185,7 +183,9 @@ Below, you can see the **format** in which **each command** will be given in the
 
 ## Output
 
-Print the output from each command when issued. If an exception is thrown during any of the commands' execution, print the exception message.
+Print the output from each command when issued. 
+
+If an exception is thrown during any of the commands' executions, print the exception message.
 
 # Examples:
 
