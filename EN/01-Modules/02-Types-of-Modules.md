@@ -81,7 +81,7 @@ Whatever you push in the **module.exports** object is made globally available to
 The following example creates a module that returns a greeting function:
 
 ```js
-module.exports.greeting = function (name) { 
+module.exports.greeting = function(name) {
     console.log('Hello' + name);
 };
 ```
