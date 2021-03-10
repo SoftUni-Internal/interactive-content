@@ -31,7 +31,7 @@ Let us explain the logical **AND** (`&&`), the logical **OR** (`||`), and the lo
 [/slide]
 
 [slide hideTitle]
-# The Logical AND Operator
+# Logical AND
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-19-logical-and-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -186,15 +186,15 @@ Create a program that receives a number as input, and adds another number to it,
 
 
 [slide hideTitle]
-## The Logical OR Operator
+## Logical OR Operator
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-21-logical-or-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The logical **OR** operator (`||`) checks if **at least one** of the set of operands is `true`. 
+The logical **OR** (operator `||`) means that **at least one** of a few conditions is fulfilled. 
 
-Similar to `&&` (the **AND** operator), the logical **OR** accepts a few arguments of **boolean** type and returns `true` or `false`. 
+Similar to the operator `&&`, the logical **OR** accepts a few arguments of **bool** (conditional) type and returns `true` or `false`. 
 
-We will **obtain** `true` every time when at least one of the arguments has a `true` value:
+We can easily guess that we **obtain** a value `true` every time when at least one of the arguments has a `true` value. 
 
 | Operand1 | Operand2 | OR |
 |---|---|---|---|
@@ -203,24 +203,18 @@ We will **obtain** `true` every time when at least one of the arguments has a `t
 | false | true | true |
 | false | false | false |
 
-If a teacher at school says: "John or Peter should clean the board", there are four possible outcomes:
+At school the teacher says: "John or Peter should clean the board". To fulfill this condition (to clean the board), it is possible either just for John to clean it, or just for Peter to clean it, or both of them to do it.
 
-- John cleans the board
-- Peter cleans the board
-- Both of them complete the task
-- None of them can assist the teacher at the moment
+# How Does the `||` Operator Work?
+We have already learned what the logical **OR** represents. But how is it actually being achieved? 
 
-## How Does the `||` Operator Work?
-
-We have already learned what the logical **OR** does. Let us explain how it works.
-
-Just like with the logical **AND**, the program **checks the arguments** starting from the left. 
+Just like with the logical **"AND"**, the program **checks** from left to right **the arguments** that are given. 
 
 In order to obtain `true` from the expression, it is necessary for **just one** argument to have a `true` value. 
 
-A statement made up of logical **OR** checks will stop executing once it reaches an operand holding a `true` value or until it reaches the end of the expression.
+Respectively, the checking **continues** until an **argument** with **such** value is met or until the arguments **are over**.
 
-Here is a **example** of the `||` operator in action:
+Here is one **example** of the `||` operator in action:
 
 ```java live
 boolean a = false;
@@ -231,9 +225,10 @@ boolean result = a || b || c || d;
 System.out.println(result);
 ```
 
-The programs **checks** `a`, which is `false` and continues. 
+The programs **checks** `a`, accepts that it has a value `false` and continues. 
 
-Reaching `b` which has `true` for a value, the whole **expression** is considered `true`, without checking `c` and `d`.
+Reaching `b`, it understands that it has a `true` value and the whole **expression** is calculated as `true`, without having to check `c` or `d`, because their values **wouldn't change** the result of the expression.
+[/slide]
 
 [slide hideTitle]
 # Problem with Solution: Food or Drink
@@ -254,11 +249,11 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Create a program that:
-  * Reads a single line and prints out whether the entered word represents a: "***drink***", "***food***" or "***unknown***"
-  * Possible food entries: curry, noodles, sushi, spaghetti 
+Write a program, which:
+  * Reads single line and print "***drink***", "***food***" or "***unknown***"
+  * Foods: curry, noodles, sushi, spaghetti 
   * Drinks: tea, water, coffee
-  * Unknown: any other entry
+  * Everything else is unknown
 # Example
 ## Input
 - curry
@@ -303,21 +298,20 @@ unknown
 
 
 [slide hideTitle]
-## The Logical NOT Operator
+# Logical NOT Operator
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-23-logical-not-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The logical **negation** operator (**!**) reverses the meaning of its operand.
+Logical negation (operator **!**) means a given condition is **not fulfilled**.
 
 | a | !a |
 |---|---|
 | true | false |
-| false | true |
 
-The operator `!` accepts an **argument** which should be a boolean variable and **returns** its value reversed.
+The operator `!` accepts as an **argument** a bool variable and **returns** its value.
 
-## Example: Invalid Number
-A given **number is valid** if it is between **\[100 … 200\]** or if it is **0**. We should validate 
+# Example: Invalid Number
+A given **number is valid** if it is in the range **\[100 … 200\]** or it is **0**. Do a validation for an **invalid** number.
 
 For example, `75` and `220` are **invalid**, but `150` is **valid**.
 
