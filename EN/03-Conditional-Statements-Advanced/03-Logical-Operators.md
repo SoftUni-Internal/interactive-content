@@ -212,16 +212,18 @@ If a teacher at school says: "John or Peter should clean the board", there are f
 - None of them can assist the teacher at the moment
 
 
-# How Does the `||` Operator Work?
-We have already learned what the logical **OR** represents. But how is it actually being achieved? 
+## How Does the `||` Operator Work?
 
-Just like with the logical **"AND"**, the program **checks** from left to right **the arguments** that are given. 
+We have already learned what the logical **OR** does. Let us explain how it works.
+
+Just like with the logical **AND**, the program **checks the arguments** starting from the left. 
 
 In order to obtain `true` from the expression, it is necessary for **just one** argument to have a `true` value. 
 
-Respectively, the checking **continues** until an **argument** with **such** value is met or until the arguments **are over**.
+A statement made up of logical **OR** checks will stop executing once it reaches an operand holding a `true` value or until it reaches the end of the expression.
 
-Here is one **example** of the `||` operator in action:
+Here is a **example** of the `||` operator in action:
+
 
 ```java live
 boolean a = false;
