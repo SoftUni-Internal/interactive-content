@@ -2,11 +2,11 @@
 
 [slide hideTitle]
 # Problem: Person
-[code-task title="Person" timeLimit=5000 taskId="Java-OOP-Advanced-Inheritance-Person" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-task title="Person" timeLimit=5000 taskId="Java-OOP-Advanced-Inheritance-Person" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 [task-description]
-## Description
+# Description
 You are asked to model an application for storing data about people. 
 
 You should be able to have a **Person** and a **Child**. 
@@ -672,11 +672,11 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: Zoo
-[code-task title="Zoo" timeLimit=5000 taskId="Java-OOP-Advanced-Inheritance-Zoo" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-task title="Zoo" timeLimit=5000 taskId="Java-OOP-Advanced-Inheritance-Zoo" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 [task-description]
-## Description
+# Description
 Create a package zoo. It needs to contain the following classes: 
 
 [image assetsSrc="inheritance-example(19).png" /]
@@ -690,7 +690,7 @@ The Animal class should have field **name – String** and **Getter** for **name
 Every class should have:
 - A public constructor, which accepts one parameter: **name**
 
-Zip your package and upload it in Judge.
+Zip your package and upload it.
 
 ## Note: 
 You need a public class Main.
@@ -854,11 +854,11 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: Players and Monsters
-[code-task title="Players and Monsters" taskId="Java-OOP-Advanced-Inheritance-Players-and-Monsters" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-task title="Players and Monsters" taskId="Java-OOP-Advanced-Inheritance-Players-and-Monsters" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 [task-description]
-## Description
+# Description
 Your task is to create the following game hierarchy: 
 
 [image assetsSrc="inheritance-example(20).png" /]
@@ -1262,10 +1262,10 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: Need for Speed
-[code-task title="Need for Speed" taskId="Java-OOP-Advanced-Inheritance-Need-For-Speed" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-task title="Need for Speed" taskId="Java-OOP-Advanced-Inheritance-Need-For-Speed" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 [task-description]
-## Description
+# Description
 Create the following **hierarchy** with the following **classes**: 
 
 [image assetsSrc="inheritance-example(21).png" /]
@@ -1285,7 +1285,7 @@ The default fuel consumption for **Vehicle** is **1.25**. Some of the classes ha
 - **SportCar – DEFAULT_FUEL_CONSUMPTION = 10**
 - **RaceMotorcycle – DEFAULT_FUEL_CONSUMPTION = 8**
 - **Car – DEFAULT_FUEL_CONSUMPTION = 3**
-Zip your package and upload it in Judge.
+Zip your package and upload it.
 
 ## Hint	
 In the child classes' constructors use `super.setFuelConsumption()` to set **fuelConsumption**
@@ -1831,10 +1831,10 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: Restaurant
-[code-task title="Restaurant" taskId="Java-OOP-Advanced-Inheritance-Restaurant" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-task title="Restaurant" taskId="Java-OOP-Advanced-Inheritance-Restaurant" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 [task-description]
-## Description
+# Description
 Create a **restaurant** package with the following classes and hierarchy:
 
 There are Food and Beverages in the restaurant and they are all products.
@@ -1887,7 +1887,7 @@ A **Salmon** must have the following members upon initialization:
 
 ## Note
 You need a public class **Main**. Create a **restaurant** package.
-Zip your package and upload it in Judge.
+Zip your package and upload it.
 
 [/task-description]
 [tests]
@@ -2395,10 +2395,10 @@ Test Passed!
 [slide hideTitle]
 # Problem: Animals
 
-[code-task title="Animals" taskId="Java-OOP-Advanced-Inheritance-Animals" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-task title="Animals" taskId="Java-OOP-Advanced-Inheritance-Animals" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 [task-description]
-## Description
+# Description
 Create a hierarchy(package) of **animals**. 
 
 Your program should have three different animals – **Dog**, **Frog** and **Cat**. 

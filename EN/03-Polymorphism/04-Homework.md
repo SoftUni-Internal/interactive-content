@@ -10,13 +10,13 @@ Write a program that models two vehicles (**Car** and **Truck**) and will be abl
 
 **Car** and **Truck** both have **fuel quantity**, **fuel consumption in liters per kilometer** and can be **driven given distance** and **refueled with given liters**. 
 
-But in the **summer** both vehicles use air conditioner and their **fuel consumption** per kilometer is **increased by 0.9** liters for the **car** and with **1.6** liters **for the truck**. 
+But in the **summer** both vehicles use an air conditioner and their **fuel consumption** per kilometer is **increased by 0.9** liters for the **car** and with **1.6** liters **for the truck**. 
 
 Also the **truck** has a tiny hole in his tank and when it gets **refueled** it gets only **95%** of given **fuel**. 
 
 The **car** has no problems when refueling and adds **all given fuel to its tank**. 
 
-If vehicle **cannot** travel the given distance, its fuel does not change.
+If the vehicle **cannot** travel the given distance, its fuel does not change.
 
 ## Input
 - On the **first line** - information about the car in format "**Car** \{**fuel quantity**\} \{**liters per km**\}"
@@ -28,7 +28,7 @@ If vehicle **cannot** travel the given distance, its fuel does not change.
     - "**Refuel Car** \{**liters**\}"
     - "**Refuel Truck** \{**liters**\}"
 ## Output
-After each **Drive command** print whether the Car/Truck was able to travel given distance in format if it is successful. 
+After each **Drive command** print whether the Car/Truck was able to travel the given distance in this format if it is successful. 
 
 **Print the distance with two digits after the decimal separator except trailing zeros**. 
 
@@ -36,7 +36,7 @@ Use the **DecimalFormat** class: "**Car/Truck travelled** \{**distance**\} **km*
 
 Or if it is not: "**Car/Truck needs refueling**"
 
-Finally print the **remaining fuel** for both car and truck rounded **2 digits after floating point** in format:
+Finally, print the **remaining fuel** for both car and truck rounded **2 digits after the decimal separator** in the format:
 
 "**Car:** \{**liters**\}
 
@@ -347,11 +347,11 @@ Truck: 176.18
 
 [task-description]
 # Description
-Use your solution of the previous task for starting point and add more functionality. 
+Use your solution of the previous task as a starting point and add more functionality. 
 
 Add a new vehicle – **Bus**. 
 
-Now every vehicle has **tank capacity** and fuel quantity **cannot fall (set) below 0** (If fuel quantity become less than 0 **print** on the console "**Fuel must be a positive number**").
+Now every vehicle has **tank capacity** and fuel quantity **cannot fall (set) below 0** (If fuel quantity becomes less than 0, **print** to the console "**Fuel must be a positive number**").
 
 The **vehicles cannot be filled** with fuel **more than their tank capacity**. 
 
@@ -361,11 +361,11 @@ Add a **new command** for the bus.
 
 The **bus** can **drive with or without people**. 
 
-If the bus is driving **with people**, the **air-conditioner is turned on** and its **fuel consumption** per kilometer **is increased with 1.4 liters**. 
+If the bus is driving **with people**, the **air-conditioner is turned on** and its **fuel consumption** per kilometer **is increased by 1.4 liters**. 
 
 If there are **no people in the bus** when driving the air-conditioner is **turned off** and **does not increase** the fuel consumption.
 ## Input
-- On the **first three lines** you will receive information about the vehicles in format:
+- On the **first three lines** you will receive information about the vehicles in this format:
 
 "**Vehicle** \{**initial fuel quantity**\} \{**liters per km**\} \{**tank capacity**\}"
 
@@ -379,7 +379,7 @@ If there are **no people in the bus** when driving the air-conditioner is **turn
     - **Refuel Truck** \{**liters**\}
     - **Refuel Bus** \{**liters**\}
 ## Output
-- After each **Drive command** print whether the Car/Truck/Bus was able to travel given distance in format if it is successful:
+- After each **Drive command** print whether the Car/Truck/Bus was able to travel the given distance in the following format if it is successful:
 
 "**Car/Truck/Bus travelled** \{**distance**\} **km**"
 
@@ -390,7 +390,7 @@ If there are **no people in the bus** when driving the air-conditioner is **turn
 - If given fuel is **smaller than or equal to 0** print "**Fuel must be a positive number**"
 - If given fuel cannot fit in car or bus tank print "**Cannot fit fuel in tank**"
  
-- Finally print the **remaining fuel** for car, truck and bus rounded **2 digits after floating point** in format:
+- Finally, print the **remaining fuel** for car, truck, and bus rounded to **2 digits after the decimal separator** as follows:
 
 "**Car:** \{**liters**\}
 
@@ -512,13 +512,13 @@ All the classes should be **abstract**, **except** for:
 
 Input should be read from the console. 
 
-Every **even** line will contain information about the **Animal** in following format:
+Every **even** line will contain information about the **Animal** in the following format:
 
 \{**AnimalType**\} \{**AnimalName**\} \{**AnimalWeight**\} \{**AnimalLivingRegion**\} \[\{**CatBreed**\} = Only if it is a cat\]
 
 On the **odd** lines you will receive information about the **food** that you should give to the **Animal**. 
 
-The line will consist of **FoodType** and **quantity** separated by a whitespace.
+The line will consist of **FoodType** and **quantity**, separated by whitespace.
 
 You should build the logic to determine if the animal is going to eat the provided food. 
 
@@ -532,7 +532,7 @@ If it **is**, they will **eat** it.
 
 **Cats** eat **any** kind of food, but **Tigers** accept **only Meat**. 
 
-If **Vegetable** is provided to a **tiger**, message like the one above should be printed on the console.
+If **Vegetable** is provided to a **tiger**, a message like the one above should be printed on the console.
 
 After you read information about the **Animal** and **Food**, invoke the **makeSound()** method of the current animal and **feed** it. 
 
@@ -540,7 +540,7 @@ At the end print the whole object and proceed reading information about the next
 
 The input will continue until you receive "**End**". 
 
-After that, **print** the information of **all received animals** in format:
+After that, **print** the information of **all received animals** in the format:
 
 \{**AnimalType**\} \[\{**AnimalName**\}, \{**CatBreed**\}, \{**AnimalWeight**\}, \{**AnimalLivingRegion**\}, \{**FoodEaten**\}\]
 
@@ -752,18 +752,18 @@ When the command **exit** is entered, the program prints out the modified text a
 In these commands:
 
 - **commandName** is a string describing which command should be used 
-- **startIndex** is an integer which describes from which index in the text the command should be applied
-- **endIndex** is an integer which describes to which index (exclusive) the command should be applied
+- **startIndex** is an integer that describes from which index in the text the command should be applied
+- **endIndex** is an integer that describes to which index (exclusive) the command should be applied
     - i.e. the command is applied on indices starting from **startIndex** and ending in **endIndex - 1** inclusively
 
 The skeleton you are provided with contains the following files:
-- **Main.java** – contains the `main(String[] args)` method, reads input and prints output on the console
+- **Main.java** – contains the `main(String[] args)` method, reads input, and prints output on the console
 - **TextTransform.java** – contains a base class for any text-transform added to the program
-- **Command.java** – contains a class which represents commands
-- **CommandInterface.java** – defines an interface class which handles commands represented as strings (coming from the console, read from `main(String[] args)`) 
+- **Command.java** – contains a class that represents commands
+- **CommandInterface.java** – defines an interface class that handles commands represented as strings (coming from the console, read from `main(String[] args)`) 
 - **CommandImpl.java** – class which holds the implementation of the **CommandInterface**
 
-The code uses an **Initialization.java** file, which is missing, but should define a way to generate a **CommandInterface**.
+The code uses an **Initialization.java** file, which is missing but should define a way to generate a **CommandInterface**.
 
 The files you are given support all the necessary logic to implement the following command:
 
@@ -978,19 +978,19 @@ Any number input overwrites the current result of the calculator, just like in n
 For example, if the expression **3 1 * 4 16 / 2** is input, we would first have **3**, overwrite it with **1**, multiply by **4** and get **4**, but then we overwrite with **16** and divide that by **2** – the result will be **8**.
 
 The skeleton you are provided with contains the following files:
-- **Main.java**– contains the `main(String[] args)` method, reads input and prints output on the console
+- **Main.java**– contains the `main(String[] args)` method, reads input, and prints output on the console
 - **Operation.java** – contains a base class for any operation done by the calculator
-- **MultiplicationOperation.java** – defines a class which inherits the base **Operation** class and implements the multiplication operation (*)
+- **MultiplicationOperation.java** – defines a class that inherits the base **Operation** class and implements the multiplication operation (*)
 - **CalculationEngine.java** – defines the calculator’s central logic of handling number and operations input
-- **InputInterpreter.java** – defines a class which can interpret a string into either a number or an operation and invoke the engine accordingly
+- **InputInterpreter.java** – defines a class that can interpret a string into either a number or an operation and invoke the engine accordingly
 
 The files you are given support all the logic necessary to implement the **multiplication** operation, as well as console input and output (note that input items do not need to be on the same line – you can write **one operation** or number per line and the code will still work) but are missing the logic to instantiate an **InputInterpreter**, which should be defined in the missing **Extensions.java** file.
 
 Your task is to study the provided code and add the following operations:
-- **/** – **division**, divides the current result of the calculator by the next number the calculator receives, and pushes the result to the calculator (i.e. same as multiplication, but divides)
+- **/** – **division**, divides the current result of the calculator by the next number the calculator receives and pushes the result to the calculator (i.e. same as multiplication, but divides)
 - **ms** – saves the current result of the calculator to "**memory**". The result of this operation is the current result of the calculator. For example, the expression **3 * 4 ms * 5** and the expression **3 * 4 * 5** are equivalent in their result
 - **mr** – **memory recall**, removes the last item from memory, and sends it to the calculator
-    - note that this operation can be used in combination with other operations, for example the expression **3 ms * 4 ms * 5 * mr * mr** will save **3** to memory, calculate to **12**, save to memory, calculate **60**, multiply that by **12** from memory, resulting in **720**, then multiply that by **3** from memory, resulting in **2160**
+    - note that this operation can be used in combination with other operations, for example, the expression **3 ms * 4 ms * 5 * mr * mr** will save **3** to memory, calculate to **12**, save to memory, calculate **60**, multiply that by **12** from memory, resulting in **720**, then multiply that by **3** from memory, resulting in **2160**
     - it can also be used without operations –  **3 ms 4 mr** is the same as **3 4 3**
 
 ## Input

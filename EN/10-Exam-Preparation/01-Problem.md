@@ -44,11 +44,11 @@ The **BaseProduct** is a **base class** for **components, peripherals** and **co
   * cannot be **less than or equal to 0**
   * in that case, throw an **IllegalArgumentException** with the message "**Id can not be less or equal than 0.**"
 
-- **manufacturer – String** 
+- **manufacturer - String** 
   * cannot be **null or whitespace**
   * in that case, throw an **IllegalArgumentException** with the message "**Manufacturer can not be empty.**"
 
-- **model – String**
+- **model - String**
   * cannot be **null or whitespace**
   * in that case, throw an **IllegalArgumentException** with the message "**Model can not be empty.**"
 
@@ -56,7 +56,7 @@ The **BaseProduct** is a **base class** for **components, peripherals** and **co
   * cannot be **less than or equal to 0**
   * in that case, throw an **IllegalArgumentException** with the message "**Price can not be less or equal than 0.**"
 
-- **overallPerformance – double**
+- **overallPerformance - double**
   * cannot be **less than or equal to 0**
   * in that case, throw an **IllegalArgumentException** with the message "**Overall Performance can not be less or equal than 0.**"
 
@@ -101,13 +101,13 @@ Override the **toString()** method with the format:
 There are several concrete types of **components** where the **overall performance** has a **different multiplier**:
 
 - **CentralProcessingUnit** - multiplier is **1.25**
-- **Motherboard** – multiplier is **1.25**
-- **PowerSupply** – multiplier is **1.05**
-- **RandomAccessMemory** – multiplier is **1.20**
-- **SolidStateDrive** – multiplier is **1.20**
-- **VideoCard** – multiplier is **1.15**
+- **Motherboard** - multiplier is **1.25**
+- **PowerSupply** - multiplier is **1.05**
+- **RandomAccessMemory** - multiplier is **1.20**
+- **SolidStateDrive** - multiplier is **1.20**
+- **VideoCard** - multiplier is **1.15**
 
-**Example**: If we create the **CentralProcessingUnit** with overallPerformance – 50 from the constructor, and multiplier **1.25**, the overallPerformance should be 62.50.
+**Example**: If we create the **CentralProcessingUnit** with overallPerformance - 50 from the constructor, and multiplier **1.25**, the overallPerformance should be 62.50.
 
 # Peripheral
 
@@ -115,7 +115,7 @@ The **BasePeripheral** is a derived class from **BaseProduct** and a **base clas
 
 ## Data
 
-- **connectionType – String**
+- **connectionType - String**
 
 ## Constructor
 
@@ -142,8 +142,8 @@ The **BaseComputer** is a derived class from **BaseProduct** and a **base class*
 
 ## Data
 
-- **components – List**
-- **peripherals – List**
+- **components - List**
+- **peripherals - List**
 
 ## Constructor
 
@@ -201,13 +201,10 @@ Override the **toString()** method with the format:
 
 There are several specific types of **computers**, where the **overall performance** has a **different value**:
 
-- **DesktopComputer** – overall performance is **15**
-- **Laptop** – overall performance is **10**
+- **DesktopComputer** - overall performance is **15**
+- **Laptop** - overall performance is **10**
 
 Child classes should **not** receive an overall performance as a parameter from the constructor.
-
-
-
 
 [/task-description]
 [tests]

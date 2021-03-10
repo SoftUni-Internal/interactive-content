@@ -4,7 +4,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-8-9-the-class-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Lets continue with some more detailed information about Classes in Java Reflection.
+Let us continue with some more detailed information about Classes in Java Reflection.
 
 Java provides us a static class with the name `Class` in `java.lang.package`. 
 
@@ -14,7 +14,7 @@ We can create object of `Class` by using one of the following options:
 
 - `.class` extension
 
-For example:
+**For example:**
 
 ``` java
 Class test = Dog.class;
@@ -24,9 +24,9 @@ Class test = Dog.class;
 
 - `forName()` method
 
-`forName()` method will take the name of the class and returns the Class object.
+The `forName()` method takes the name of the class and returns the Class object.
 
-For example:
+**For example:**
 
 ``` java
 Class test = Class.forName("Dog");
@@ -40,7 +40,7 @@ Class test = Class.forName("Dog");
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-10-class-name-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Now, lets obtain the `Class` name:
+Now, let us obtain the `Class` name:
 
 
 ``` java
@@ -53,7 +53,7 @@ System.out.println(nameClass);
 Output: com.company.Dog
 ```
 
-If we want to obtain the class name without the package name, we can use `getSimpleName()` method:
+If we want to obtain the class name without the package name, we can use the `getSimpleName()` method:
 
 ``` java
 Class myDogClass = Dog.class;
@@ -77,6 +77,7 @@ We can also obtain our parent class like this:
 
 ```java
 public class Dog extends Mammal {
+    // ...
 }
 ```
 
@@ -85,8 +86,10 @@ public class Dog extends Mammal {
 public class Main {
     public static void main(String[] args) throws ClassNotFoundException {
         Class myDogClass = Dog.class;
-        Class nameClass = myDogClass.getSuperclass();   //Returns the full name of the parent class
+        Class nameClass = myDogClass.getSuperclass();   // Returns the full name of the parent class
         System.out.println(nameClass);
+    }
+}
 ```
 
 And the **output** will be:
@@ -96,9 +99,9 @@ class com.company.Mammal
 ```
 
 
-Now, lets obtain our methods and interfaces in our classes.
+Now, let us obtain our methods and interfaces in our classes.
 
-Interfaces are also represented by `Class` objects in Java Reflection
+Interfaces are also represented by `Class` objects in Java Reflection:
 
 ``` java
 Class[] interfaces = aClass.getInterfaces();

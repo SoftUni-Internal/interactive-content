@@ -52,30 +52,39 @@ Also, we are able to check if the modifiers are protected, public or static with
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-26-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Lets see how we can create **Arrays** via Reflection:
+Let us see how we can create **Arrays** via Reflection:
 
 We may use `Array.newInstance()` method.
 
-Lets make a quick demo in our main class:
+Let us make a quick demo in our main class:
 
 
 ``` java 
 import java.lang.reflect.Array;
-int arr[] = (int[])Array.newInstance(int.class, 5); // a new instance is created using Array.newInstance method.
-      Array.set(arr, 0, 2); // We set the values of the array with Array.set() method.
-      Array.set(arr, 2, 2);
-      Array.set(arr, 1, 9);
-      Array.set(arr, 2, 3);
-      Array.set(arr, 4, 7);
+
+public class Main {
+    public static void main(String[] args) {
+
+        int arr[] = (int[])Array.newInstance(int.class, 5);
+        // A new instance is created using the Array.newInstance method.
+        
+        Array.set(arr, 0, 2); // We set the values of the array with the Array.set() method.
+        Array.set(arr, 2, 2);
+        Array.set(arr, 1, 9);
+        Array.set(arr, 2, 3);
+        Array.set(arr, 4, 7);
+
         System.out.print("The array elements are: ");
+
         for(int i: arr) {
-           System.out.print(i + " ");
-      }
-   }
+            System.out.print(i + " ");
+        }
+    }
 }
+
 ```
 
-Output will be:
+**Output** will be:
 
 ```
 The array elements are: 2 9 3 0 7

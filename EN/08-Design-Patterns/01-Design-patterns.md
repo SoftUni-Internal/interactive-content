@@ -48,7 +48,7 @@ Let's see the Elements of our design patterns:
 
 # Benefits and Drawbacks
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-5-what-do-design-patterns-solve-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-7-8-9-why-design-patterns-benefits-and-drawbacks-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Benefits
 

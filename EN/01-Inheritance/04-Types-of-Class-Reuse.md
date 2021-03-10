@@ -5,24 +5,17 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-31-32-types-of-class-reuse-extension-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Extension of class is called **IS-A** relationship.
+The extension of class is called an **IS-A** relationship.
 
 **Student IS-A Person**
 ```java
 public Student extends Person{}
 ```
 
-- Duplicate code is error prone, but also if we have a bug at one place we have to go and find all the places we
-
-
-  used this code in order to fix it
-
+- Duplicate code is error prone, but also if we have a bug at one place we have to go and find all the places we used this code in order to fix it
 
 - **Reuse classes** through **extension** and add custom logic to it
-- When a class is not from our library and we don't know its implementation we can only extend the given class to
-
-
-add custom logic to it
+- When a class is not from our library and we do not know its implementation we can only extend the given class to add custom logic to it
 
 [image assetsSrc="inheritance-example(15).png" /]
 
@@ -33,13 +26,13 @@ add custom logic to it
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-33-composition-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Composition is a different type of relationship, in composition we contain the given object in our class.
+**Composition** is a different type of relationship, in which we contain the given object in our class.
 
-This relationship is called **HAS-A**
+This relationship is called **HAS-A**:
 
-**The Laptop HAS-A Monitior**
-**The Laptop HAS-A Touchpad**
-**The Laptop HAS-A Keyboard**
+- **The Laptop HAS-A Monitior**
+- **The Laptop HAS-A Touchpad**
+- **The Laptop HAS-A Keyboard**
 
 ```java
 class Laptop {
@@ -56,8 +49,9 @@ class Laptop {
 [slide hideTitle]
 # Delegation
 
-**Delegation is a process of passing attributes between objects**
-This way we can give a common interface for the client to work with as he doesn't really care of the implementation underneath.
+**Delegation is the process of passing attributes between objects.**
+
+This way we can give a common interface for the client to work with as it does not really care of the implementation underneath.
 
 [image assetsSrc="inheritance-example(17).png" /]
 
@@ -81,11 +75,11 @@ class Laptop {
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-35-problem-and-solution-stack-of-strings-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Stack of Strings" timeLimit=5000 taskId="Java-OOP-Advanced-Inheritance-Stack-Of-Strings" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-task title="Stack of Strings" timeLimit=5000 taskId="Java-OOP-Advanced-Inheritance-Stack-Of-Strings" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 [task-description]
-## Description
+# Description
 Create a class **Stack** which can store only strings and has the following functionality:
 - Private field: `data: ArrayList (String)`
 - Public method: `push(String item): void`
@@ -93,8 +87,8 @@ Create a class **Stack** which can store only strings and has the following func
 - Public method: `peek(): String`
 - Public method: `isEmpty(): boolean`
 
-## Hints:
-Use composition/delegation in order to have a field in which to store the stack's data
+## Hints
+Use composition/delegation in order to have a field in which to store the stack's data.
 
 [/task-description]
 [tests]
@@ -234,10 +228,10 @@ We can use inheritance when we meet one of the following:
 
 - Classes share **IS-A** relationship
 
-- Derived class **IS-A-SUBSTITUTE** for the base class
+- The derived class **IS-A-SUBSTITUTE** for the base class
 
-- Share the **same role**
+- They hare the **same role**
 
-- Derived class is the **same as the base class** but adds a **little bit more functionality**
+- The derived class is the **same as the base class** but adds a **little bit more functionality**
 
 [/slide]

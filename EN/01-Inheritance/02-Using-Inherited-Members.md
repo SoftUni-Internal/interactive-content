@@ -3,32 +3,34 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-11-using-inherited-members-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**You can access inherited members**
+We can **access inherited members**.
 
-As we mention we can access the inherited members, we do it as we normally call class members.
+We do it in the same way we **call class members**.
 
-Create an object of the derived class and when we call it we can access all **non-private** members derived or declared.
+First, we create an object of the derived class, and when we call it, we can access all **non-private** members - **derived** or **declared**.
 
 ```java
 class Person { public void sleep() { … } }
 class Student extends Person { … }
 class Employee extends Person { … }
 ```
+
 ```java
 Student student = new Student();
 student.sleep();
+
 Employee employee = new Employee();
 employee.sleep();
 ```
 
-We can also hold a reference to an object of the derived class in the base class variable.
+We can also hold a **reference** to an object of the derived class in the base class variable.
 
 ```java
-Person student = new Student(); // The baseclass variable holds the object of the Subclass type.
+Person student = new Student(); // The base class variable holds the object of the Subclass type.
 Person employee = new Employee();
 ```
 
-What changes here is that we will only have access to the base class members, as we use the `Student` as a `Person`;
+What changes here is that we will only have access to the **base class members**, as we use the `Student` as a `Person`.
 
 [/slide]
 
@@ -38,20 +40,21 @@ What changes here is that we will only have access to the base class members, as
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-12-reusing-constructors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Constructors are not inherited**
+Constructors are **not inherited**.
 
-When a **parent class** declares a **constructor** with parameters everybody that inherits from this class must fulfill the **Parent class's** constructor.
+When a **parent class** declares a **constructor** with parameters, every unit that inherits from this class must fulfill the **parent class'** constructor.
 
-Because the base constructor gets called automatically when the derived class is created.
+That is because the base constructor gets called automatically when the derived class is created.
 
-The parameter from the **constructor** of the derived class must be passed to the parent **constructor** with the keyword super.
+The parameters from the **constructor** of the derived class must be passed to the parent **constructor** with the `super` keyword.
 
-Here is an example of a constructor chaining.
+Here is an example of constructor chaining.
 
 ```java
 class Person{
     private String name;
-    // If we don't have parameterized constructor in the parent class, we can skip calling it in the Subclass.
+    
+    // If we do not have parameterized constructor in the parent class, we can skip calling it in the Subclass.
     public Person(String name){
         this.name = name;
     }
@@ -59,12 +62,14 @@ class Person{
 
 class Student extends Person {
   private School school;
-  public Student(String name, School school) {  // If we don't call our Superclass's constructor a compile-time error will be thrown.
-    super(name); //Best practises says that constructor call should be called first
+  public Student(String name, School school) {  
+  // If we do not call our Superclass' constructor, a compile-time error will be thrown.
+  
+    super(name); // It is a good practice to call the constructor first.
     this.school = school;
   }
 
-//You can also fulfill the parent constructor with some default values, just like this.
+// You can also fill the parent constructor with some default values, just like this.
   public Student(School school){ 
       String defaultName = "John Doe";
       super(defaultName);
@@ -82,11 +87,11 @@ class Student extends Person {
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-13-thinking-about-inheritance-extends-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-What happens with the memory when a class **inherits** another one.
+This is what happens with the memory when a class **inherits** another one.
 
-As you can see in the image below, when we inherit, the memory for the **Parent** is allocated plus the new needed memory for the **Derived class**.
+As you can see in the image below, when we inherit, memory is allocated for the **parent**, plus the new needed memory for the **derived class**.
 
-That is because all the members of the **Parent** are declared as well as all the new members from the **Derived class**.
+That is because all the members of the **parent** are declared, as well as all the new members from the **derived class**.
 
 [image assetsSrc="inheritance-example(6).png" /]
 
@@ -99,9 +104,9 @@ That is because all the members of the **Parent** are declared as well as all th
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-14-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ```java
-class Person { … }                          //Base class with some members.
-class Student extends Person { … }          //Student will get all members from Person and adds more.
-class CollegeStudent extends Student { … }  //CollegeStudent will inherit all members both from Student and Person.
+class Person { … }                          // Base class with some members.
+class Student extends Person { … }          // Student will get all members from Person and adds more.
+class CollegeStudent extends Student { … }  // CollegeStudent will inherit all members from both Student and Person.
 ```
 
 That's what transitive relation is, a **Subclass** gets all the functionality from it is Superclasses up the hierarchy.
@@ -115,17 +120,17 @@ That's what transitive relation is, a **Subclass** gets all the functionality fr
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-15-multiple-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**In Java multiple inheritances is now allowed**
+In Java, **multiple inheritance is not allowed.**
 
 ```java
 public class Person {...}
 
 public class CollegeStudent {...}
 
-public class Student extends Person, CollegeStudent // NOT ALLOWED!
+public class Student extends Person, CollegeStudent // Not allowed!
 ```
 
-Instead, if you need one class to be from few families you can implement many **interfaces** on a single class.
+Instead, if you need one class to be from two or more families, you can implement many **interfaces** on a single class.
 
 **Interfaces** will be covered further in our lessons.
 
@@ -142,9 +147,9 @@ Sometimes we need to access the base class members.
 
 To access the base class members, use the `super` keyword.
 
-We can also re-use some of the logic.
+We can also reuse some of the logic.
 
-Example:
+**Example:**
 
 ```java
 class Person {
@@ -170,7 +175,7 @@ class Employee extends Person {
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-18-problem-and-solution-multiple-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Multiple Inheritance" timeLimit=5000 taskId="Java-OOP-Advanced-Inheritance-Multiple-Inheritance" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-task title="Multiple Inheritance" timeLimit=5000 taskId="Java-OOP-Advanced-Inheritance-Multiple-Inheritance" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 [task-description]
@@ -249,11 +254,11 @@ Test Passed!
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-19-problem-and-solution-hierarchical-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Hierarchical Inheritance" timeLimit=5000 taskId="Java-OOP-Advanced-Inheritance-Hierarchical-Inheritance" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-task title="Hierarchical Inheritance" timeLimit=5000 taskId="Java-OOP-Advanced-Inheritance-Hierarchical-Inheritance" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 [task-description]
-## Description
+# Description
 Create three classes named **Animal**, **Dog** and **Cat**. 
 
 **Animal** with a single public method `.eat()` that prints: **"eating…"**

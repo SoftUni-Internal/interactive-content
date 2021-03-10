@@ -6,7 +6,7 @@
 [code-upload allowedMemory="30" /]
 
 [task-description]
-## Description
+# Description
 You are given a geometric figure Box with fields length, width and height. 
 
 Model a class Box that can be instantiated by the same three parameters. 
@@ -980,7 +980,7 @@ Test Passed!
 [code-upload allowedMemory="30" /]
 
 [task-description]
-## Description
+# Description
 
 You should be familiar with encapsulation already. 
 
@@ -1809,7 +1809,7 @@ Test Passed!
 [code-upload allowedMemory="30" /]
 
 [task-description]
-## Description
+# Description
 Create two classes: class **Person** and class **Product**. 
 
 Each person should have a **name**, **money** and a **bag of products**. 
@@ -2821,7 +2821,7 @@ Test Passed!
 [code-upload allowedMemory="30" /]
 
 [task-description]
-## Description
+# Description
 A Pizza is made of a dough and different toppings. 
 
 You should model a class **Pizza** which should have a **name**, **dough** and **toppings** as fields. 
@@ -4146,7 +4146,7 @@ Test Passed!
 [code-task title="Football Team Generator" taskId="Java-OOP-Advanced-Encapsulation-Football-Team-Generator" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-## Description
+# Description
 **A football team has variable number of players, a name and a rating.**
 
 | **Team** |

@@ -1,3 +1,5 @@
+# Mutable vs Immutable Objects
+
 [slide hideTitle]
 
 # Mutable vs Immutable Objects
@@ -12,7 +14,8 @@ System.out.println(myPoint);
 
 //java.awt.Point[1.0, 0.0]
 ```
-The contents of **immutable** objects **can not be altered**:
+
+The contents of **immutable** objects **cannot be altered**:
 
 ```java
 String str = new String("old String");
@@ -24,6 +27,8 @@ System.out.println(str);
 
 [slide hideTitle]
 # Mutable Fields
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-26-27-mutable-fields-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Private mutable fields are not fully encapsulated:**
 
@@ -39,17 +44,9 @@ class Team {
 ```
 When we work with reference types, getters are quite tricky. 
 
-When we return our object we give a reference to it's memory, that is why with this reference we can change the original memory of the object, thus changing the objects itself.
+When we return our object we give a reference to its memory, that is why with this reference we can change the original memory of the object, therefore changing the object itself.
 
-[/slide]
-
-[slide hideTitle]
-
-# Mutable Fields Example
-
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-26-27-mutable-fields-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-Example:
+## Example
 
 ```java
 Team team = new Team();
@@ -60,9 +57,9 @@ team.getPlayers().clear();
 System.out.println(team.getPlayers().size());  // 0
 ```
 
-In this case our field is not safely encapsulated and it still can be changed.
+In this case, our field is not safely encapsulated and it still can be changed.
 
-The reason behind it is that the `List<>` is a reference type, that is why when we pass it with the `getter` we actually give the reference to the List's memory.
+The reason behind it is that the `List<>` is a reference type, that is why when we pass it with the `getter` we give the reference to the List's memory.
 
 What happens is that although we do not have a setter, the list is still mutable.
 
@@ -74,8 +71,8 @@ What happens is that although we do not have a setter, the list is still mutable
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-28-imutable-fields-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- For securing our collection we can return `Collections.unmodifiableList()`
-  * This encloses our reference type and does not permit any change
+- To secure our collection, we can return `Collections.unmodifiableList()`
+  * This encloses our reference type and does not permit changes
 
 ```java
 class Team {
@@ -99,11 +96,11 @@ class Team {
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-29-problem-and-solution-first-and-reserve-team-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="First and Reserve Team" timeLimit=5000 taskId="Java-OOP-Advanced-Encapsulation-First-and-Reserve-Team" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-task title="First and Reserve Team" timeLimit=5000 taskId="Java-OOP-Advanced-Encapsulation-First-and-Reserve-Team" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 [task-description]
-## Description
+# Description
 Create a **Team** class. 
 
 Add to this team all the people you receive. 
@@ -152,7 +149,7 @@ for (Person player : players) {
 }
 ```
 
-## Examples
+# Example
 | **Input** | **Output** |
 | --- | --- |
 | 5 | First team have 4 players |
