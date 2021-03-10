@@ -15,7 +15,7 @@ class Company {
 [task-description]
 # Your Task
 
-Write a Company Class, Which Supports the Described Functionality Below.
+Write a company class, which supports the described functionality below.
 
 **1. Functionality**
 
@@ -27,7 +27,7 @@ Should have this 1 property: `departments`- an empty array
 
 This function should add a new employee to the department with the given name.
 
-- If one of the passed parameters is an empty string `""`, undefined or null, this function should throw an error with the following message:
+- If one of the passed parameters is an empty string "**''**", undefined or null, this function should throw an error with the following message:
 
 "**Invalid input!**"
 
@@ -43,14 +43,14 @@ This function should add a new employee to the department with the given name.
 
 This **function** should print the department with the highest average salary and its employees, sorted by their salary by descending and by name in the following format:
 
-```
-"Best department is: {best department's name}
-Average salary: {best department's average salary}
-{employee1} {salary} {position}
-{employee2} {salary} {position}
-{employee3} {salary} {position}
+
+"**Best department is:** \{**best department's name**\}
+**Average salary:** \{**best department's average salary**\}
+\{**employee1**\} \{**salary**\} \{**position**\}
+\{**employee2**\} \{**salary**\} \{**position**\}
+\{**employee3**\} \{**salary**\} \{**position**\}
 ..."
-```
+
 
 **2. Submission**
 Submit only your **Company class**.
@@ -75,14 +75,12 @@ console.log(c.bestDepartment());
 
 **Corresponding output**
 
-```
 Best Department is: Construction
 Average salary: 1500.00
 Stan 2000 architect
 Steven 2000 engineer
 Peter 1500 electrical engineer
 Sam 500 dyer
-```
 
 [/task-description]
 [code-io /]
@@ -379,11 +377,11 @@ console.log(a.plus(b).toString()==='0xF');
 ```
 
 ## Output
-```
+
 0xFF
 0xF
 true
-```
+
 
 [/task-description]
 [code-io /]
@@ -854,7 +852,6 @@ You are given the following **HTML** code:
       </script>
    </body>
 </html>
-
 ```
 
 It comes together with the following **JavaScript** code:
@@ -877,10 +874,13 @@ Return a **function** that displays the array elements on the web page.
 
 ## Examples
 
+First Example:
 [image assetsSrc="function-context-12.png" /]
 
+Second Example:
 [image assetsSrc="function-context-13.png" /]
 
+Third Example: 
 [image assetsSrc="function-context-14.png" /]
 
 [/task-description]
@@ -958,7 +958,8 @@ let articles =[
     "A group of cats is called a clowder.",
     "Cats have over 20 muscles that control their ears.",
     "A cat has been mayor of Talkeetna, Alaska, for 15 years. His name is Stubbs.",
-    "The world's largest cat measured 48.5 inches long."
+    "The world's largest cat measured 48.5 inches long.",
+    "Add text to be different."
 ];
 let showNext = result(articles);
 expect(typeof showNext).to.equal('function', "Your solution did not return a function");
