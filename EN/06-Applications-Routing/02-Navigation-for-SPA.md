@@ -41,9 +41,9 @@ To extract the hash, we can use `split('#')`.
 An example for changing the location: 
 
 ```js
-let changePath = function (path) {
-   let currentPath = window.location.href;
-   window.location.href = currentPath.replace(/#(.*)$/, '') + '#' + path;
+let changePath = function(path) {
+    let currentPath = window.location.href;
+    window.location.href = currentPath.replace(/#(.*)$/, '') + '#' + path;
 };
 ```
 
@@ -68,16 +68,16 @@ The subscribing looks like this:
 ```js
 let url = undefined;
 
-let getCurrent = function () {
-   return window.location.hash;
+let getCurrent = function() {
+    return window.location.hash;
 };
 
-let listen = function () {
-   let current = getCurrent();
-   if (current !== url) {
-      url = current;
-   }
-   setTimeout(listen, 200);
+let listen = function() {
+    let current = getCurrent();
+    if (current !== url) {
+        url = current;
+    }
+    setTimeout(listen, 200);
 };
 
 listen();

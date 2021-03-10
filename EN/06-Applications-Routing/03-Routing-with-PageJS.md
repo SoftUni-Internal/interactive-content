@@ -53,12 +53,12 @@ After the redirect, it will leave the **browser history object** clean.
 Here is how `redirect()` looks:
 
 ```js
-page('/index', function () {
-   if (admin) {
-      page.redirect('/admin');
-   } else {
-      page.redirect('/guest');
-   }
+page('/index', function() {
+    if (admin) {
+        page.redirect('/admin');
+    } else {
+        page.redirect('/guest');
+    }
 });
 ```
 

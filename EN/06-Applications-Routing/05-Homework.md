@@ -71,8 +71,8 @@ A sample collection structure is as follows:
 
 ```
 teams {
-  name,
-  comment
+    name,
+    comment
 }
 ```
 
