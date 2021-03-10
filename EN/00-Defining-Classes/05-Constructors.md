@@ -5,13 +5,13 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-25-26-27-28-constructors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-A **constructor** is a special method, which is invoked every time a new **instance of the class** is created. 
+A **constructor** is a special method that is invoked every time a new **instance of the class** is created. 
 
 At the time of calling the constructor, memory for the object is **allocated in memory**.
 
 Every time an object is created using the `new()` keyword, at least one constructor is called.
 
-A constructor has the same name as the class and looks like this in java code:
+A constructor has the same name as the class and looks like this:
 
 ```java
 public class Car {
@@ -25,7 +25,7 @@ public class Car {
 
 ## Default Constructor
 
-In Java, a constructor is called **default** when it does not have any parameters.
+In Java, a constructor is referred to as a **default** one when it does not accept any parameters and does not change the value of anything at initialization.
 
 If you do not have a constructor in your class, the Java compiler will insert a default constructor for you.
 
@@ -38,17 +38,17 @@ public Car() {
 }
 ```
 
-If you **implement a constructor** then you no longer receive a default constructor from the Java compiler.
+If you **implement a constructor**, then you no longer receive a default constructor from the Java compiler.
 
 ## Multiple Constructors
 
-You can have multiple constructors in the same class, as long as their signature (the parameters they take) are not the same.
+You can have multiple constructors in the same class as long as their signature (the parameters they take) are different.
 
 You can define as many constructors as you need. 
 
-When a Java class contains multiple constructors, we say that the constructor is overloaded (comes in multiple versions). 
+When a Java class contains multiple constructors, we say that the constructor is overloaded. 
 
-This is what constructor overloading means, that a Java class contains multiple constructors.
+Constructor overloading means that a Java class contains multiple constructors.
 
 ```java
 public class Car {
@@ -93,9 +93,9 @@ public class Car {
 ```
 In the example above, a constructor is absent, so the compiler provides a default constructor.
 
-Here **null** for the **brand** and **0** for the **horsePower** are provided by default constructor.
+Here **null** for the **brand** and **0** for the **horsePower** are provided by the default constructor.
 
-If you want values different from defaults you can set them in the constructor:
+If you want values different from the default ones, you can set them in the constructor:
 
 ```java
 public class Car {
@@ -108,7 +108,7 @@ public class Car {
     }
 }
 ```
-Here, we have a constructor with one parameter - `brand`.
+In the example above, we have a constructor with one parameter - `brand`.
 
 In the body of the constructor, we set the value of the field **brand** to the given parameter and initialize the **parts** field.
 
@@ -121,7 +121,7 @@ In the body of the constructor, we set the value of the field **brand** to the g
 
 In Java, it is possible to call a constructor from inside another constructor.
 
-This is called **constuctor chaining**.
+This is called **constructor chaining**.
 
 When you call a constructor from inside another constructor, you use the `this` keyword to refer to the constructor.
 
@@ -153,11 +153,11 @@ Inside the body of the second constructor, we find the following Java statement:
 this(brand, -1);
 ```
 
-The `this` keyword followed by parentheses and parameters means that another constructor in the same Java class is being called.
+The `this` keyword, followed by parentheses and parameters means that another constructor in the same Java class is being called.
 
-Which other constructor is being called depends on the passed parameters to the constructor call(inside the parentheses after the `this` keyword)
+Java will determine which constructor the `this` keyword refers to by the number of parameters and their type (the constructor's signature).
 
-In this example, it is the first constructor in the class that is being called.
+In this example, we are calling the first constructor with two parameters, and we are setting the value of `horsePower` to **-1**.
 
 [/slide]
 
@@ -190,7 +190,7 @@ Create a Car class with the following properties:
 
 Make proper constructors for the Car class so you can create car objects with different types of input information.
 
-If you miss information about the field of type **String**, set the value to "**unknown**", and for the **integer** field, set **-1**.
+If you miss information about the field of type **String**, set the value to "**unknown**", and for the **integer** field, set it to **-1**.
 
 The `carInfo()` method should return the info about any car object in the following format:
 
@@ -198,7 +198,7 @@ The `carInfo()` method should return the info about any car object in the follow
 
 ## Hints
 
-First declare a constructor which takes only **the car brand** as parameter:
+First, declare a constructor which takes only **the car brand** as parameter:
 
 ```java
 public Car(String brand) {
@@ -208,7 +208,7 @@ public Car(String brand) {
 }
 ```
 
-Also, create a constructor which sets **all the fields**:
+Create a constructor which sets **all the fields**:
 
 ```java
 public Car(String brand, String model, int horsePower) {
@@ -224,13 +224,13 @@ This method should return the information about any car object in the following 
 
 "The car is: \{brand\} \{model\} – \{horsePower\} HP."
 
-Read information about a car the same way as the previous task.
+Read information about a car the same way as in the previous task.
 
-This time, write **constructors to create the objects**, rather than creating them with the default constructor.
+This time, write **constructors to create the objects** rather than creating them with the default constructor.
 
-You should be able to handle different types of input, the format will be the same as the previous task, but this time some of the data may be missing. 
+You should be able to handle different types of input, the format will be the same as in the previous task, but this time some of the data may be missing. 
 
-For example, you can receive only the car brand – which means you have to set the car **model** to "unknown" and the **horsepower** value to -1.
+For example, you might receive only the car brand – which means you have to set the car **model** to "unknown" and the **horsepower** value to -1.
 
 The main method should look like this:
 
