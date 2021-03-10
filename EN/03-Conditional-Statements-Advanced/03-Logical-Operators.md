@@ -50,7 +50,7 @@ The following table visualizes the outcome of all possible combinations when usi
 | false | true | false |
 | false | false | false |
 
-# How Does && the Operator Work?
+## How Does && the Operator Work?
 
 The `&&` operator accepts **two Boolean** (conditional) statements, which have a `true` or `false` value, and returns one bool statement as a result. 
 
@@ -62,7 +62,7 @@ As we saw above, the logical **"AND"** returns `true`, **only** when it accepts 
 
 Respectively, when we have a **sequence** of arguments, the logical **"AND"** **checks** either until one of the arguments is **over**, or until it **meets** an argument with value `false`. 
 
-# Example
+## Example
 
 ```java live
 boolean a = true;
@@ -80,7 +80,7 @@ The program will run in the **following** way:
 - After the program accepts that the argument `c` has a `false` value, it calculates the expression **before** `c`, **independent** of what the value of `d` is
 - That is why the evaluation of `d` is being **skipped** and the whole expression is calculated as `false`
 
-# Example: Point in a Rectangle
+## Example: Point in a Rectangle
 Checks whether **`point {x, y}`** is placed **inside the rectangle {x1, y1} – {x2, y2}**. 
 
 [image assetsSrc="03.Point-in-rectangle-01.png" /]
@@ -88,7 +88,7 @@ Checks whether **`point {x, y}`** is placed **inside the rectangle {x1, y1} – 
 The input data is read from the console and consists of 6 lines: 
 - the decimal numbers `x1`, `y1`, `x2`, `y2`, `x` and `y` (as it is guaranteed that `x1 < x2` and `y1 < y2`).
 
-# Sample Input and Output
+## Sample Input and Output
 
 |Input|Output|
 |-----|------|
