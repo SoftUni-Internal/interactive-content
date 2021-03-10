@@ -42,7 +42,7 @@ public class Car {
     }
 ```
 
-In the last example, we see that all the methods we are using in the main method are accessible and work, even though we never actually initialized a Car class.
+In the last example, we see that all the methods we are using in the main method are accessible, even though we never actually initialized a Car class.
 
 This works because all the fields and methods in the Car class are static members of the class.
 
