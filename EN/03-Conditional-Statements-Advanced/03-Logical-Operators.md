@@ -80,7 +80,7 @@ The program will run in the **following** way:
 - The evaluation of `d` will be **skipped** 
 
 ## Example: Point in a Rectangle
-Write a piece of code which checks whether a point {with `x, y` coordinates} is placed **inside a rectangle** `{x1, y1} – {x2, y2}`. 
+Write a piece of code which checks whether a point with `x`, `y` coordinates is placed **inside a rectangle** `{x1, y1}` – `{x2, y2}`. 
 
 [image assetsSrc="03.Point-in-rectangle-01.png" /]
 
