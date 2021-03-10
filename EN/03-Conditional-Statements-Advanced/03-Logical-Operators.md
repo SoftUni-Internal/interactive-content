@@ -37,7 +37,7 @@ Let us explain the logical **AND** (`&&`), the logical **OR** (`||`), and the lo
 
 As we saw, in some tasks we have to perform **more than one check at once**. 
 
-The logical **AND** (operator `&&`) means a some conditions have to be **fulfilled simultaneously**. 
+The logical **AND** operator (`&&`) helps us check more than one condition **simultaneously**. 
 
 We can use the logical **AND** to simplify our code and avoid unnecesary constructions such as nesting too many conditional statements.
 
@@ -186,7 +186,7 @@ Create a program that receives a number as input, and adds another number to it,
 
 
 [slide hideTitle]
-## Logical OR Operator
+## The Logical OR Operator
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-21-logical-or-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
