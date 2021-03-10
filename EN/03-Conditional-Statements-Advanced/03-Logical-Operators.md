@@ -3,31 +3,31 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-16-18-logical-operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Let's take a look at how we can create more **complex logical conditions** in programming. 
+Let us take a look at how we can create more **complex logical conditions** in programming. 
 
-We can use:
-* Logical **"AND"** (`&&`)
-* Logical **"OR"** (`||`)
-* Logical **negation** (`!`) 
-* **Brackets** (`()`)
+We can use the following logical operators:
+* **"AND"** (`&&`)
+* **"OR"** (`||`)
+* **Negation** (`!`) 
+* **Parentheses** (`()`)
 
 # Logical "AND", "OR" and "NOT"
-This is a short example that demonstrates the power of logical **"AND"**, logical **"OR"** and logical **"NOT"**:
+This is a short example that demonstrates the usage of logical **"AND"**, logical **"OR"** and logical **"NOT"**:
 ```java
 Scanner scanner = new Scanner(System.in);
 String animal = scanner.nextLine();
 int speed = Integer.parseInt(scanner.nextLine());
 
 if ((animal == "horse" || animal == "donkey") && (speed > 40)) {
-    System.out.println("Run fast");
+    System.out.println("Galloping");
 } else if ((animal == "shark" || animal == "dolphin") && (speed > 45)) {
-    System.out.println("Swim fast");
+    System.out.println("Swimming fast");
 } else if (!(speed > 30 || animal == "turtle")) {
-    System.out.println("Move slow");
+    System.out.println("Moving slow");
 }
 ```
 
-We shall explain the logical **AND** (`&&`), the logical **OR** (`||`), and the logical **NOT** (`!`) in the next few sections, along with examples and exercises.
+Let us explain the logical **AND** (`&&`), the logical **OR** (`||`), and the logical **NOT** (`!`) in the next few sections, along with examples and exercises.
 [/slide]
 
 [slide hideTitle]
@@ -35,15 +35,13 @@ We shall explain the logical **AND** (`&&`), the logical **OR** (`||`), and the 
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-19-logical-and-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-As we saw, in some tasks we have to make **many checks at once**. 
+As we saw, in some tasks we have to perform **more than one check at once**. 
 
-But what happens when in order to execute some code **more** conditions have to be executed and we **don't want** to make a **negation** (`else`) for each one of them? 
+The logical **"AND"** (operator `&&`) means a some conditions have to be **fulfilled simultaneously**. 
 
-The option with nested `if` **blocks** is valid, but the code would look very unordered and for sure – **hard to read and maintain**.
+We can use the logical **"AND"** to simplify our code and avoid unnecesary constructions such as nesting too many conditional statements.
 
-The logical **"AND"** (operator `&&`) means a few conditions have to be **fulfilled simultaneously**. 
-
-The following table of truthfulness is applicable:
+The following table visualizes the outcome of all possible combinations when using this operator:
 
 | Operand1 | Operand2 | AND |
 |---|---|---|---|
@@ -52,8 +50,8 @@ The following table of truthfulness is applicable:
 | false | true | false |
 | false | false | false |
 
-# How Does the `&&` Operator Work?
-The `&&` operator accepts **a couple of Boolean** (conditional) statements, which have a `true` or `false` value, and returns one bool statement as a result. 
+# How Does the && Operator Work?
+The `&&` operator accepts **two Boolean** (conditional) statements, which have a `true` or `false` value, and returns one bool statement as a result. 
 
 Using it instead of a couple of nested `if` blocks, makes the code **more readable**, **ordered** and **easy** to maintain. 
 
