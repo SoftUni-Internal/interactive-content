@@ -4,6 +4,7 @@
 
 # Ce Este o Valoare Booleană?
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-21-22-what-is-a-boolean-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Valorile booleene poartă numele lui [George Boole](https://en.wikipedia.org/wiki/George_Boole), un matematician englez.
 
@@ -26,6 +27,8 @@ Comparațiile booleene sunt cel mai adesea plasate în construcția "**if**", si
 [slide hideTitle]
 
 # Comparații și Condiții
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-23-comparisons-and-conditions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Exemple de operatori de comparație:
 
@@ -69,6 +72,7 @@ if (number) {
 [slide hideTitle]
 # True and False
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-24-25-boolean-comparisons-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În plus față de "**true**" și "**false**", JavaScript are "**truthy**" și "**false**" (uneori scris "**falsey**").
 
@@ -150,6 +154,7 @@ Este întotdeauna mai bine să fii **explicit** pentru a nu fi ambiguu.
 
 # Problem with Solution: Amazing Numbers
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-26-solution-solution-amazing-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Amazing Numbers" taskId="fund-js-data-types-and-variables-lab-amazing-numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -284,6 +289,8 @@ amazingNumbers(65451)
 [slide hideTitle]
 
 # The Typeof Operator
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-28-29-Definition-of-the-typeof-operator-and-examples-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 JavaScript în sine oferă un operator numit `typeof` pentru tot ceea ce funcționează într-un mod simplu.
 

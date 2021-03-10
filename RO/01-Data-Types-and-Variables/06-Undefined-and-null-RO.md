@@ -3,6 +3,7 @@
 [slide hideTitle]
 # Undefined
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-30-31-undefined-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [image assetsSrc="Undefined-Null.png" /]
 
@@ -32,6 +33,8 @@ console.log(car);
 
 # Null
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-32-null-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Nul este un tip de obiect, care poate fi utilizat pentru orice variabilă care deține un obiect pe care nu vrem să-l definim.
 
 De exemplu, când avem funcția de a **returna un obiect** sau o funcție care trebuie să citească ceva din baza de date **și să returneze un obiect**.
@@ -55,6 +58,8 @@ console.log(typeof(person));
 [slide hideTitle]
 
 # Null and Undefined
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-33-null-and-undefined-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Nul** este o valoare pe care o setăm și știm că nu este nimic în interior, adică setăm valoarea nulă în mod explicit.
 
