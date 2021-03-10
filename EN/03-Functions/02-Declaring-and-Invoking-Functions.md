@@ -139,7 +139,7 @@ printHeader();
 
 A function can receive **any number and type of arguments** when invoked.
 
-In this example we pass **two parameteres** as an argument:
+In this example we pass **two parameters** as an argument:
 
 ```js live
 function multiply(a, b) {
