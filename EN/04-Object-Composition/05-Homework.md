@@ -25,15 +25,8 @@ The output must be an array of **rectangles** objects sorted by their **area** i
 ## Example One
 |**Input**|**Output**|
 |---|---|
-|\[\[10,5\], \[5,12\]\]|\[\{width:5, height:12, area:function(), compareTo:function(other)\},|
-||\{width:10, height:5, area:funciton(),compareTo:function(other)\}\]|
-
-
-|**Input**|**Output**|
-|---|---|
-|\[\[10,5\], \[3,20\], \[5,12\]\]|\[\{width:5, height:12, area:function(), compareTo:function(other)\},|
-||\{width:3, height:20, area:funciton(),compareTo:function(other)\},|
-||\{width:10, height:5, area:funciton(),compareTo:function(other)\}\]|
+|\[\[10,5\], \[5,12\]\]|\[\{width:5, height:12, area:function(), compareTo:function(other)\}, \{width:10, height:5, area:funciton(),compareTo:function(other)\}\]|
+|\[\[10,5\], \[3,20\], \[5,12\]\]|\[\{width:5, height:12, area:function(), compareTo:function(other)\}, \{width:3, height:20, area:funciton(),compareTo:function(other)\}, \{width:10, height:5, area:funciton(),compareTo:function(other)\}\]|
 
 
 [/task-description]
