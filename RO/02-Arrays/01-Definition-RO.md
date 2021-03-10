@@ -3,6 +3,7 @@
 [slide hideTitle]
 # Ce Sunt Matricele?
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/02.JS-Fundamentals-Arrays/02.JS-Fundamentals-Arrays-3-4-What-are-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Știți deja cum să stocați **date unice într-o singură variabilă.**
 
@@ -53,6 +54,7 @@ Folosind metoda `Array.length` putem obține o variabilă, care conține lungime
 [slide hideTitle]
 # Crearea Unei Matrice
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/02.JS-Fundamentals-Arrays/02.JS-Fundamentals-Arrays-5-Creating-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Există două moduri de a crea o matrice:
 
@@ -95,6 +97,8 @@ console.log(numbers);
 
 [slide hideTitle]
 # Problem with Solution: Sum First and Last Array Elements
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/02.JS-Fundamentals-Arrays/02.JS-Fundamentals-Arrays-6-Solution-Sum-first-and-last-array-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sum First and Last Array Elements" taskId="fundamentals-js-arrays-lab-Sum-First-and-Last-Array-Elements" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -199,6 +203,8 @@ sum([91, 18, 19])
 [slide hideTitle]
 # Days of Week: Example
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/02.JS-Fundamentals-Arrays/02.JS-Fundamentals-Arrays-7-Example-Days-of-week-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ```js
 let days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 ```
@@ -224,6 +230,7 @@ Primul element, Sunday, se află la indexul 6 al matricei.
 [slide hideTitle]
 # Problem: Days of Week
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/02.JS-Fundamentals-Arrays/02.JS-Fundamentals-Arrays-8-Solution-Days-of-week-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Days of Week" taskId="fundamentals-js-arrays-lab-Days-of-Week" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -346,6 +353,7 @@ Invalid day!
 [slide hideTitle]
 # Matrice de Diferite Tipuri
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/02.JS-Fundamentals-Arrays/02.JS-Fundamentals-Arrays-10-Arrays-of-different-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Matricele pot conține diferite tipuri de elemente:
 
@@ -368,6 +376,8 @@ let mixedArr = [20, new Date(), 'hello', {x:5, y:8}];
 [slide hideTitle]
 # Adăugarea de Elemente Noi
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/02.JS-Fundamentals-Arrays/02.JS-Fundamentals-Arrays-11-Adding-new-array-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Putem adăuga un element la sfârșitul matricei:
 ``` js live
 let arr = [10, 20, 30];
@@ -388,6 +398,8 @@ console.log(arr);
 
 [slide hideTitle]
 # JavaScript Arrays and Invalid Positions
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/02.JS-Fundamentals-Arrays/02.JS-Fundamentals-Arrays-12-JS-Arrays-and-invalid-positions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Dacă încercăm să atribuim o valoare unui index inexistent, JS va umple elementele lipsă cu valori 'nedefinite' și îi va mări dimensiunea:
 

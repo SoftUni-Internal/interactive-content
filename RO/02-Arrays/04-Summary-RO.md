@@ -1,6 +1,7 @@
 [slide hideTitle]
 # Recapitulare
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/02.JS-Fundamentals-Arrays/02.JS-Fundamentals-Arrays-27-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Ce ați învățat în această lecție: 
 
