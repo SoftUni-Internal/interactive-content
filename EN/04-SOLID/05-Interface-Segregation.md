@@ -62,13 +62,13 @@ When an `Employee` class implements that interface, there will not be any proble
 
 That is because the interface methods are suitable for the `Employee` class.​
 
-But let us see what happens when a class `Robot` implements the same interface.​
+Let us see what happens when a class `Robot` implements the same interface.​
 
 The `Robot` class can implement the `work()` method, but the `sleep()` one is not appropriate for this class. 
 
 The problem here is that we force the `Robot` class to implement a method that it should not.​
 
-You saw what problems that Fat Interfaces can bring, let us list them and their potential solutions.
+You saw what problems that fat interfaces can bring, let us list them and their potential solutions.
 
 [/slide]
 
@@ -78,7 +78,7 @@ You saw what problems that Fat Interfaces can bring, let us list them and their 
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-23-fat-interfaces-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Having fat interfaces may lead to few consequences which we should be aware of**
+**Having fat interfaces may lead to few consequences which we should be aware of.**
 
 When we see an interface with more than 5-6 members, we should ask ourselves if it is not two interfaces or more.
 
