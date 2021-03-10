@@ -259,11 +259,11 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Write a program, which:
-  * Reads single line and print "***drink***", "***food***" or "***unknown***"
-  * Foods: curry, noodles, sushi, spaghetti 
+Create a program that:
+  * Reads a single line and prints out whether the entered word represents a: "***drink***", "***food***" or "***unknown***"
+  * Possible food entries: curry, noodles, sushi, spaghetti 
   * Drinks: tea, water, coffee
-  * Everything else is unknown
+  * Unknown: any other entry
 # Example
 ## Input
 - curry
