@@ -37,9 +37,9 @@ Let us explain the logical **AND** (`&&`), the logical **OR** (`||`), and the lo
 
 As we saw, in some tasks we have to perform **more than one check at once**. 
 
-The logical **"AND"** (operator `&&`) means a some conditions have to be **fulfilled simultaneously**. 
+The logical **AND** (operator `&&`) means a some conditions have to be **fulfilled simultaneously**. 
 
-We can use the logical **"AND"** to simplify our code and avoid unnecesary constructions such as nesting too many conditional statements.
+We can use the logical **AND** to simplify our code and avoid unnecesary constructions such as nesting too many conditional statements.
 
 The following table visualizes the outcome of all possible combinations when using this operator:
 
@@ -52,15 +52,15 @@ The following table visualizes the outcome of all possible combinations when usi
 
 ## How Does the `&&` Operator Work?
 
-The `&&` operator accepts **two Boolean** (conditional) statements, which have a `true` or a `false` value, and returns a boolean value as a result. 
+The `&&` operator accepts **two Boolean** (conditional) statements, which have a `true` or a `false` value, and returns a boolean value.
 
-Using it instead of a couple of nested `if` blocks, makes the code **more readable**, **ordered** and **easy** to maintain. 
+Using it instead of a couple of nested `if` blocks, makes the code **more legible**, **ordered** and **easy** to maintain. 
 
-But how does it **work**, when we put a **few** conditions one after another? 
+There is a particular exectution flow when using more than one logical operator.
 
-As we saw above, the logical **"AND"** returns `true`, **only** when it accepts as **arguments statements** with value `true`. 
+As we saw, the logical **AND** returns `true` **only** when both its operands are `true`.
 
-Respectively, when we have a **sequence** of arguments, the logical **"AND"** **checks** either until one of the arguments is **over**, or until it **meets** an argument with value `false`. 
+So a sequence of logical **AND** comparisons returns `false` as a result if one of the boolean variables is `false` and `true` if all variables hold `true` values.
 
 ## Example
 ```java live
@@ -73,14 +73,14 @@ System.out.println(result);
 ```
 
 The program will run in the **following** way: 
-- **It starts** the check form `a`, **reads** it and accepts that it has a `true` value, after which it **checks** `b`
-- After it has **accepted** that `a` and `b` return `true`, **it checks the next** argument
-- It gets to `c` and sees that the variable has a `false` value
-- After the program accepts that the argument `c` has a `false` value, it calculates the expression **before** `c`, **independent** of what the value of `d` is
-- That is why the evaluation of `d` is being **skipped** and the whole expression is calculated as `false`
+- **It starts** from `a`, **reads** it and accepts that it has a `true` value, after which it **checks** `b`
+- After it has **processed** that `a` and `b` both return `true`, **it checks the next** argument
+- The program reads the value of `c`, which is `false`
+- After the program accepts that the argument `c` has a `false` value, it exits the expression, returning a `false` value
+- The evaluation of `d` will be **skipped** 
 
 ## Example: Point in a Rectangle
-Checks whether **`point {x, y}`** is placed **inside the rectangle {x1, y1} – {x2, y2}**. 
+Write a piece of code which checks whether a point {with `x, y` coordinates} is placed **inside a rectangle** `{x1, y1} – {x2, y2}`. 
 
 [image assetsSrc="03.Point-in-rectangle-01.png" /]
 
