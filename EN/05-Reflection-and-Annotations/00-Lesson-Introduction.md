@@ -10,16 +10,16 @@
 
 **1. Reflection**
 
-- What is Reflection
-- Why is it used
-- When is it used
+- What reflection is
+- Why it is used
+- When to use it
 
 **2. Reflection API**
-- Reflecting Classes
-- Reflecting Constructors
-- Reflecting Fields
-- Reflecting Methods
-- Access Modifiers
-- Reflecting Annotations
+- Reflecting classes
+- Reflecting constructors
+- Reflecting fields
+- Reflecting methods
+- Access modifiers
+- Reflecting annotations
 
 [/slide]
