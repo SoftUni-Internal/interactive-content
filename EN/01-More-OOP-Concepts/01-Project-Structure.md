@@ -379,7 +379,7 @@ Points **on the side** of a Square are considered **inside**.
 
 - On the first line, read the coordinates of the bottom left and top right corner of the Rectangle in the format:
 
-`<bottomLeftX>` `<topRightX>` `<topRightY>`
+`<bottomLeftX>` `<bottomLeftY>` `<topRightX>` `<topRightY>`
      
 - On the second line, read an integer **n** and on the next **n** lines, read the coordinates of points
 
