@@ -50,9 +50,9 @@ The following table visualizes the outcome of all possible combinations when usi
 | false | true | false |
 | false | false | false |
 
-## How Does && the Operator Work?
+## How Does the `&&` Operator Work?
 
-The `&&` operator accepts **two Boolean** (conditional) statements, which have a `true` or `false` value, and returns one bool statement as a result. 
+The `&&` operator accepts **two Boolean** (conditional) statements, which have a `true` or a `false` value, and returns a boolean value as a result. 
 
 Using it instead of a couple of nested `if` blocks, makes the code **more readable**, **ordered** and **easy** to maintain. 
 
@@ -63,7 +63,6 @@ As we saw above, the logical **"AND"** returns `true`, **only** when it accepts 
 Respectively, when we have a **sequence** of arguments, the logical **"AND"** **checks** either until one of the arguments is **over**, or until it **meets** an argument with value `false`. 
 
 ## Example
-
 ```java live
 boolean a = true;
 boolean b = true;
@@ -89,7 +88,6 @@ The input data is read from the console and consists of 6 lines:
 - the decimal numbers `x1`, `y1`, `x2`, `y2`, `x` and `y` (as it is guaranteed that `x1 < x2` and `y1 < y2`).
 
 ## Sample Input and Output
-
 |Input|Output|
 |-----|------|
 |2|Inside|
