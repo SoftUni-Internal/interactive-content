@@ -106,16 +106,15 @@ Do not forget to clear its content beforehand.
 [image assetsSrc="JS-Applications-Asynchronous-Programming-Lab-5.jpg" /]
 
 ```js
-<h1 id="post-title" >ASYNCHRONOUS PROGRAMMING</h1>
-<p id="post-body" >
-   "An asynchronous model allows multiple things to happen at the same time. When you start an action, your program
-   continues to run. When the action finishes, the program is informed and gets access to the result (for example, the
+<h1 id="post-title">ASYNCHRONOUS PROGRAMMING</h1>
+<p id="post-body">
+   "An asynchronous model allows multiple things to happen at the same time. When you start an action, your program continues to run. When the action finishes, the program is informed and gets access to the result (for example, the
    data read from disk)."
 </p>
 <h2>Comments</h2>
 <ul id="post-comments">
-   <li id="rrt8713kjxljda5r">So good article. Nice!</1li>
-   <li id="rrt878pe@jxijdgze">Rly helpful. Thanks!</1i>
+   <li id="rrt8713kjxljda5r">So good article. Nice!</li>
+   <li id="rrt878pe@jxijdgze">Rly helpful. Thanks!</li>
 </ul>
 ```
 
