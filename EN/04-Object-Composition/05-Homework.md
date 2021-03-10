@@ -337,10 +337,6 @@ You should print the newly created object.
 | **Input** | **Output** |
 | --- | --- |
 |'\[\{"canMove": true\},\{"canMove":true, "doors": 4\},\{"capacity": 5\}\]'| \{ canMove: true, doors: 4, capacity: 5 \} |
-
-
-| **Input** | **Output** |
-| --- | --- |
 |'\[\{"canFly": true\},\{"canMove":true, "doors": 4\},\{"capacity": 255\},\{"canFly":true, "canLand": true\}\]'| \{ canFly: true, canMove: true, doors: 4, capacity: 255, canLand: true \} |
 
 [/task-description]
@@ -401,14 +397,22 @@ Write a closure that can create and modify objects.
 All created objects should be kept and be accessible by name. 
 
 You should support the following functionality:
+
 - `create <name>` creates an object with the supplied `<name>`
+
 - `create <name> inherits <parentName>` creates an object with the given `<name>`, which inherits from the parent object with the `<parentName>`
+
 - `set <name> <key> <value>` sets the property with key equal to `<key>` to `<value>` in the object with the supplied `<name>`
-- `print <name>` prints the object with the supplied `<name>` in the format `<key1>:<value1>,<key2>:<value2>…`, the printing should also print all inherited properties from parent objects. Inherited properties should come after own properties
+
+- `print <name>` prints the object with the supplied `<name>` in the format `<key1>:<value1>,<key2>:<value2>…`, the printing should also print all inherited properties from parent objects. 
+
+Inherited properties should come after own properties
 
  The input will be in a form of an array of strings, each string represents a command to be executed from your closure.
 
- All commands will always be valid. There will be no nonexistent or incorrect input.
+ All commands will always be valid. 
+ 
+ There will be no nonexistent or incorrect input.
 
 ## Example
 | **Input** | **Output** |
@@ -587,13 +591,13 @@ Fighters have "**name**", `health = 100` and `stamina = 100` and every fighter c
 
 When the fighter fights its stamina decreases by 1 and the following message is printed on the console:
 
-"\$\{**fighter's name**\} **slashes at the foe!**"
+"\{**fighter's name**\} **slashes at the foe!**"
 
 Mages also have "**name**", `health = 100` and `mana = 100`. 
 
 Every mage can cast spells. When a spell is cast the mage's mana decreases by 1 and the following message is printed on the console:
 
-"\$\{**mage's name**\} **cast** \$\{**spell**\}"
+"\{**mage's name**\} **cast** \{**spell**\}"
 
 ## Example
 **Input**
@@ -677,10 +681,12 @@ Write a program that receives a worker object as a parameter and modifies its pr
 
 Workers have the following structure:
 
-\{ weight: Number,
-  experience: Number,
-  levelOfHydrated: Number,
-  dizziness: Boolean \}
+\{
+    weight: Number,
+    experience: Number,
+    levelOfHydrated: Number,
+    dizziness: Boolean
+\}
 
 Weight is expressed in kilograms, experience in years, and levelOfHydrated is in milliliters. 
 
@@ -694,44 +700,58 @@ Once the water is administered, change the dizziness property to **false**.
 
 Workers who do not have dizziness should not be modified in any way. Return them as they are.
 
-## Examples
+## Example One
 
+|**Input**|**Output**|
+|---|---|
+|\{
+    weight: 80,
+    experience: 1,
+    levelOfHydrated: 0,
+    dizziness: true
+\}|\{
+    weight: 80,
+    experience: 1,
+    levelOfHydrated: 8,
+    dizziness: false
+\}|
+
+
+
+
+## Example Two
 **Input**
-\{ weight: 80,
-  experience: 1,
-  levelOfHydrated: 0,
-  dizziness: true \}
-
-**Output**
-\{ weight: 80,
-  experience: 1,
-  levelOfHydrated: 8,
-  dizziness: false \}
-
-**Input**
-\{ weight: 120,
-  experience: 20,
-  levelOfHydrated: 200,
-  dizziness: true \}
+\{
+    weight: 120,
+    experience: 20,
+    levelOfHydrated: 200,
+    dizziness: true
+\}
   
 **Output** 
-\{ weight: 120,
-  experience: 20,
-  levelOfHydrated: 440,
-  dizziness: false \}
+\{
+    weight: 120,
+    experience: 20,
+    levelOfHydrated: 440,
+    dizziness: false
+\}
 
 **Input**  
 
-\{ weight: 95,
-  experience: 3,
-  levelOfHydrated: 0,
-  dizziness: false \}
+\{
+    weight: 95,
+    experience: 3,
+    levelOfHydrated: 0,
+    dizziness: false
+\}
 
 **Output**
-\{ weight: 95,
-  experience: 3,
-  levelOfHydrated: 0,
-  dizziness: false \}
+\{
+    weight: 95,
+    experience: 3,
+    levelOfHydrated: 0,
+    dizziness: false
+\}
 
 
 [/task-description]
