@@ -25,7 +25,22 @@ Whenever there are collections of objects which need to share **common operation
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-15-aggregation-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ```js live
-let dataArray = [ { id: 'a', score: 1 }, { id: 'b', score: 2 }, { id: 'c', score: 5 }, { id: 'a', score: 3 }, { id: 'c', score: 2 }, ];
+let dataArray = [{
+    id: 'a',
+    score: 1
+}, {
+    id: 'b',
+    score: 2
+}, {
+    id: 'c',
+    score: 5
+}, {
+    id: 'a',
+    score: 3
+}, {
+    id: 'c',
+    score: 2
+}, ];
 
 let result = dataArray.reduce((acc, curr, index, array) => {
     let same = acc.find(e => e.id === curr.id);
@@ -75,17 +90,36 @@ When to use:
 It would be useful to **progressively assemble** data structures at runtime, like merging JSON objects, hydrating application state from multiple **sources** or creating updates to immutable state by merging previous state with new data. 
 
 ```js live
-const obj = [
-    { name: 'Peter', age: 35 },
-    { age: 22 },
-    { name: 'Steven' },
-    { height: 190 },
-    { age: 30 },
-    { name: 'Marcus' },
-    { height: 180 },
-    { hairColor: 'brown' }
+const obj = [{
+        name: 'Peter',
+        age: 35
+    },
+    {
+        age: 22
+    },
+    {
+        name: 'Steven'
+    },
+    {
+        height: 190
+    },
+    {
+        age: 30
+    },
+    {
+        name: 'Marcus'
+    },
+    {
+        height: 180
+    },
+    {
+        hairColor: 'brown'
+    }
 ];
-const concatenate = (acc, curr) => ({...acc, ...curr});
+const concatenate = (acc, curr) => ({
+    ...acc,
+    ...curr
+});
 const result = obj.reduce(concatenate, {});
 console.log(result);
 ```
@@ -107,13 +141,24 @@ If we do not use the spread syntax, in front of "**curr**" variable, we will
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-17-concatenation-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ```js live
-const objs = [
-    { name: 'Peter', age: 35 },
-    { age: 22 },
-    { name: 'Steven' },
-    { height: 180 }
+const objs = [{
+        name: 'Peter',
+        age: 35
+    },
+    {
+        age: 22
+    },
+    {
+        name: 'Steven'
+    },
+    {
+        height: 180
+    }
 ];
-const concatenate = (a, o) => ({ ...a, ...o });
+const concatenate = (a, o) => ({
+    ...a,
+    ...o
+});
 const c = objs.reduce(concatenate, {});
 console.log(c);
 ```
@@ -145,11 +190,19 @@ JavaScript's built-in types use **delegation** to forward built-in method that c
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-19-delegation-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ```js live
-const obj = [
-    { name: 'Peter', age: 35 },
-    { age: 22 },
-    { name: 'Steven' },
-    { height: 180 }
+const obj = [{
+        name: 'Peter',
+        age: 35
+    },
+    {
+        age: 22
+    },
+    {
+        name: 'Steven'
+    },
+    {
+        height: 180
+    }
 ];
 const delegate = (acc, curr) => Object.assign(Object.create(acc), curr);
 const result = obj.reduceRight(delegate, {});

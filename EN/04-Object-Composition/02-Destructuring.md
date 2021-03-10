@@ -11,12 +11,16 @@ Let us have a look at some examples:
 ```js live
 const department = {
     name: 'Engineering',
-    data: { employeesCount: 20 }
+    data: {
+        employeesCount: 20
     }
-    const { data } = department;
-    console.log(data);
-    data.employeesCount = 30;
-    console.log(department);
+}
+const {
+    data
+} = department;
+console.log(data);
+data.employeesCount = 30;
+console.log(department);
 ```
 
 In this example, we are referencing the "**data**" object inside the "**department**" object directly by assigning it to a new variable "**data**" using this line of code: `const { data } = department`.
@@ -28,8 +32,14 @@ We can prove that by changing the "**employeesCount**" data, of the newly cr
 Finally, when we print out the "**department**" object, we can see that the "**employeesCount**" has changed to 30 as well. 
 
 ```js live
-const classroom = [ { key: 'StudentOne' }, { key: 'StudentTwo' }, { key: 'StudentThree' } ]
-const [ firstObj, secondObj, thirdObj ] = classroom;
+const classroom = [{
+    key: 'StudentOne'
+}, {
+    key: 'StudentTwo'
+}, {
+    key: 'StudentThree'
+}]
+const [firstObj, secondObj, thirdObj] = classroom;
 console.log(firstObj);
 console.log(secondObj);
 console.log(thirdObj);
@@ -82,7 +92,11 @@ const department = {
         company: 'Quick Build'
     }
 }
-const {data: {director}} = department;
+const {
+    data: {
+        director
+    }
+} = department;
 console.log(director);
 director.name = 'Peter';
 console.log(department);
@@ -101,8 +115,13 @@ When destructuring nested arrays, it is important to know the indexes of what yo
 Also, you need to provide a reference variable, or a comma placeholder, for each element up and until the one you are looking for. 
 
 ```js live
-const departments = [['Engineering', ['secretary', 'director', 'worker']], ['Accounting', ['director', 'accountant']]];
-const [[name, positions]] = departments;
+const departments = [
+    ['Engineering', ['secretary', 'director', 'worker']],
+    ['Accounting', ['director', 'accountant']]
+];
+const [
+    [name, positions]
+] = departments;
 console.log(name);
 console.log(positions);
 ```
@@ -124,8 +143,16 @@ Then print out the result.
 Destructuring an array of objects:
 
 ```js live
-const employees = [{name: 'John', position: 'worker'}, {name: 'Jane', position: 'secretary'}];
-const [{name}] = employees;
+const employees = [{
+    name: 'John',
+    position: 'worker'
+}, {
+    name: 'Jane',
+    position: 'secretary'
+}];
+const [{
+    name
+}] = employees;
 console.log(name);
 ```
 
@@ -144,7 +171,9 @@ const company = {
     employees: ['John', 'Jane', 'Sam', 'Suzanne'],
     name: 'Quick Build',
 }
-const {employees:[employee]} = company;
+const {
+    employees: [employee]
+} = company;
 console.log(employee);
 ```
 

@@ -21,7 +21,10 @@ let student = {
     firstName: 'Maria',
     lastName: 'Green',
     age: 22,
-    location: { lat: 52.520, lng: 13.404 }
+    location: {
+        lat: 52.520,
+        lng: 13.404
+    }
 }
 console.log(student);
 console.log(student.location.lat);
@@ -47,9 +50,16 @@ And finally, we assign the location object to the "**town**" object.
 let name = "Berlin";
 let population = 3769495;
 let country = "Germany";
-let town = { name, population, country };
+let town = {
+    name,
+    population,
+    country
+};
 console.log(town);
-town.location = { lat: 52.520, lng: 13.404 };
+town.location = {
+    lat: 52.520,
+    lng: 13.404
+};
 console.log(town);
 ```
 
@@ -66,26 +76,28 @@ We can also combine data using functions.
 This can be done because functions are also objects in JavaScript. 
 
 The way we add a function to the object:
+
 - We have a function named "grow"
 
 - Followed by a ":" (colon)
 
 - Then the keyword "function" to initialize the function
 
-- We add parameters (if such exists) inside the parentheses of the function. 
+- We add parameters (if such exists) inside the parentheses of the function
 
-- Finally, we add curly brackets containing the scope of the function. 
+- Finally, we add curly brackets containing the scope of the function
 
 ```js live
 let rect = {
     width: 10,
     height: 4,
     grow: function(w, h) {
-        this.width += w; this.height += h;
-        },
-        print: function() {
-            console.log(`[${this.width} x ${this.height}]`);
-            }
+        this.width += w;
+        this.height += h;
+    },
+    print: function() {
+        console.log(`[${this.width} x ${this.height}]`);
+    }
 };
 rect.grow(2, 3);
 rect.print();
@@ -107,11 +119,11 @@ let rect = {
     height: 4,
     toString: function() {
         return `rect[${this.width} x ${this.height}]`;
-        }
+    }
 };
 console.log(rect);
 console.log(rect.toString());
-console.log('' + rect); 
+console.log('' + rect);
 ```
 
 [/slide]
