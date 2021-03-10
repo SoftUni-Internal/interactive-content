@@ -15,7 +15,7 @@
 - The benefits of class encapsulation
 
 **3. Open/Closed Principle**
-- How to extend our classes without breaking changes
+- How to extend our classes without changing existing code
 
 **4. Liskov Substitution**
 - What behavioral subtyping is
