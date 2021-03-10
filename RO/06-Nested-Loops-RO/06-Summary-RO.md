@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Rezumat
 
-[vimeo-video]
-[stream language="EN" videoId="487129429/3a15190b39" default /]
-[stream language="RO" videoId="487129429/3a15190b39"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-51-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In această lecție am învățat: 
 

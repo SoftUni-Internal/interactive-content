@@ -4,10 +4,7 @@
 
 # Bucle imbricate
 
-[vimeo-video]
-[stream language="EN" videoId="488090283/21d2c907ca" default /]
-[stream language="RO" videoId="488090283/21d2c907ca"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-15-16-nested-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 O buclă imbricată este o construcție cu care o buclă este plasată în interiorul \(interior\) corpului celeilalte \(exterior\).
 
@@ -48,10 +45,7 @@ Acest lucru se întâmplă în felul următor:
 
 # Bucle imbricate - Exemple
 
-[vimeo-video]
-[stream language="EN" videoId="488090192/65c460bd1a" default /]
-[stream language="RO" videoId="488090192/65c460bd1a"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-13-14-nested-loops-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Iată un **exemplu** care ilustrează buclele imbricate.
 

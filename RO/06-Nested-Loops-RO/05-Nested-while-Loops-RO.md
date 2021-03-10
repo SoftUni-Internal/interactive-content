@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Bucle imbricate
 
-[vimeo-video]
-[stream language="EN" videoId="488090609/3d873b4b3b" default /]
-[stream language="RO" videoId="488090609/3d873b4b3b"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-22-23-nested-wihle-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Folosirea buclelor imbricate "**while**" este foarte asemănătiare cu folosirea lui "**for**".
 
@@ -27,10 +24,7 @@ while (condition) {
 [slide hideTitle]
 # Exemplu
 
-[vimeo-video]
-[stream language="EN" videoId="488090625/81b4dc254e" default /]
-[stream language="RO" videoId="488090625/81b4dc254e"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-24-nested-while-loops-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ```js live
 let row = 1;
@@ -49,6 +43,9 @@ while (row <= 2) {
 
 [slide hideTitle]
 # Problemă cu soluție: Triangle With Stars Stelelor With While
+
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-25-26-solution-triangle-of-stars-with-while-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Triangle of Stars with While" taskId="pb-js-nested-loops-Triangle-of-Stars-with-While" executionType="tests-execution" executionStrategy="javascript-code" requiresInput] 
 [code-editor language=javascript]
 ```
@@ -136,10 +133,7 @@ triangleOfStars(9)
 [slide hideTitle]
 # Problemă cu soluție: Sum of Digits Calculator
 
-[vimeo-video]
-[stream language="EN" videoId="488090779/48452cdf0b" default /]
-[stream language="RO" videoId="488090779/48452cdf0b"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-29-solution-sum-of-digits-calculator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sum of Digits Calculator" taskId="pb-js-nested-loops-Sum-of-Digits-Calculator"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput] 
 [code-editor language=javascript]

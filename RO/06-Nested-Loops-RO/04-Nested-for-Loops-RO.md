@@ -5,10 +5,7 @@
 # Bucle "for" imbricate
 
 
-[vimeo-video]
-[stream language="EN" videoId="488090349/1e2b80201d" default /]
-[stream language="RO" videoId="488090349/1e2b80201d"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-17-18-nested-for-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 Buclele imbricate sunt instrucțiuni care constă în mai multe bucle for situate una în cealaltă
@@ -49,10 +46,7 @@ for (let i = 1; i <= n; i += 3) {
 [slide hideTitle]
 # Exemplu
 
-[vimeo-video]
-[stream language="EN" videoId="488090388/9cb36b2bd2" default /]
-[stream language="RO" videoId="488090388/9cb36b2bd2"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-19-nested-for-loops-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Iată un exemplu de program JavaScript:
 
@@ -72,6 +66,9 @@ for (let r = 0; r <= rows; r++) {
 
 [slide hideTitle]
 # Problemă cu soluție: Triangle of Stars
+
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-21-solution-triangle-of-stars-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Triangle of Stars" taskId="pb-js-nested-loops-Triangle-of-Stars" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```

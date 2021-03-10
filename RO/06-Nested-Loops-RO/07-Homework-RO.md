@@ -5,10 +5,7 @@
 [slide hideTitle]
 # Problemă cu soluție: Building
 
-[vimeo-video]
-[stream language="EN" videoId="488090883/a7c270a8f6" default /]
-[stream language="RO" videoId="488090883/a7c270a8f6"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-33-solution-building-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 [video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-33-solution-building-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
@@ -175,7 +172,7 @@ A10 A11 A12
 [slide hideTitle]
 # Problemă cu soluție: Passwords
 
-[video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-36-solution-password-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-36-solution-password-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Passwords" taskId="pb-js-nested-loops-Passwords" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
