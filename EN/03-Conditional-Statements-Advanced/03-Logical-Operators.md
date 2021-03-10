@@ -50,7 +50,7 @@ The following table visualizes the outcome of all possible combinations when usi
 | false | true | false |
 | false | false | false |
 
-# How Does the && Operator Work?
+# How Does the \&\& Operator Work?
 
 The `&&` operator accepts **two Boolean** (conditional) statements, which have a `true` or `false` value, and returns one bool statement as a result. 
 
