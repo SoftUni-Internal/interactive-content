@@ -81,7 +81,7 @@ function Digimon(name, specialMove) {
 }
 
 function DigimonFactory() {
-    this.create = function (name, specialMove) {
+    this.create = function(name, specialMove) {
         return new Digimon(name, specialMove)
     }
 }
@@ -138,14 +138,13 @@ let toyota = new Car('Toyota', 'Corolla', 1998);
 function performAction(car) {
     if (toyota instanceof Car) {
         console.log('Do something');
-    }
-    else {
+    } else {
         console.log('Do something else');
     }
 }
 
 performAction(toyota);
-//"Do something""
+// "Do something"
 
 ```
 
@@ -173,20 +172,20 @@ If you were to use a decorator on top of the `Car` object in the above example t
 Here is an example of how the **decorator pattern** works:
 
 ```js live
-let EbookReader = function (cost, screenSize) {
+let EbookReader = function(cost, screenSize) {
     this.cost = cost;
     this.screenSize = screenSize;
-    this.info = function () {
+    this.info = function() {
         console.log(`Cost: ${cost}, Screen size: ${screenSize}`);
     }
 }
 
 /*Decorator 1*/
-let DecoratedEbook = function (ebookReader, model) {
+let DecoratedEbook = function(ebookReader, model) {
     this.cost = ebookReader.cost;
     this.screenSize = ebookReader.screenSize;
     this.model = model;
-    this.info = function () {
+    this.info = function() {
         console.log('Decorated ebook:');
         console.log(`Model: ${this.model}, Cost: ${this.cost}, Screen size: ${this.screenSize}`)
     }
@@ -260,7 +259,11 @@ class ComplaintRegistry {
         } else {
             registry = new ProductComplaints();
         }
-        return registry.addComplaint({ id, customer, details });
+        return registry.addComplaint({
+            id,
+            customer,
+            details
+        });
     }
 }
 
@@ -355,7 +358,7 @@ class Observable {
     }
     unsubscribe(f) {
         this.observers = this.observers.
-            filter(subscriber => subscriber !== f);
+        filter(subscriber => subscriber !== f);
     }
     notify(data) {
         this.observers.forEach(observer => observer(data));

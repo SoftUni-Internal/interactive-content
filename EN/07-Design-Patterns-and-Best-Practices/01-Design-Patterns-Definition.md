@@ -64,16 +64,16 @@ It is a basic language construct and is often used when creating objects of any 
 
 ```js live
 class Book {
-  constructor(title, author) {
-    //setting the values of properties
-    this.title = title;
-    this.author = author;
+    constructor(title, author) {
+        //setting the values of properties
+        this.title = title;
+        this.author = author;
 
-    // declaring a method inside the class
-    this.getInfo = function() {
-      return `${this.title} is written by ${this.author}`;
-    };
-  }
+        // declaring a method inside the class
+        this.getInfo = function() {
+            return `${this.title} is written by ${this.author}`;
+        };
+    }
 }
 
 // creating new instances of Hero
@@ -89,7 +89,6 @@ It is another class-based pattern that also deals with object creation.
 The main difference between the factory pattern and the other creational patterns is that it does not require the use of constructors. 
 
 [image assetsSrc="js-application-design-patterns-01.png" /]
-
 
 - **Prototype**: the **prototype pattern** is used to create objects that serve as a blueprint for other objects
 
