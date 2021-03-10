@@ -234,9 +234,10 @@ boolean result = a || b || c || d;
 System.out.println(result);
 ```
 
-The programs **checks** `a`, accepts that it has a value `false` and continues. 
+The program **checks** `a`, which is `false` and continues. 
 
-Reaching `b`, it understands that it has a `true` value and the whole **expression** is calculated as `true`, without having to check `c` or `d`, because their values **wouldn't change** the result of the expression.
+Reaching `b` which has `true` for a value, the whole **expression** is considered `true`, without checking `c` and `d`.
+
 [/slide]
 
 [slide hideTitle]
