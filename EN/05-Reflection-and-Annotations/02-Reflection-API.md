@@ -21,7 +21,8 @@ We can create an object of `Class` by using one of the following options:
 ``` java
 Class test = Dog.class;
 
-// We can use the test object to achieve reflection as this object will have all the needed information about the class Dog.
+// We can use the test object to achieve reflection as this object
+// will have all the needed information about the class Dog.
 ```
 
 - `forName()` method
@@ -88,7 +89,10 @@ public class Dog extends Mammal {
 public class Main {
     public static void main(String[] args) throws ClassNotFoundException {
         Class myDogClass = Dog.class;
-        Class nameClass = myDogClass.getSuperclass();   // Returns the full name of the parent class
+        
+        // Returns the full name of the parent class
+        Class nameClass = myDogClass.getSuperclass();   
+        
         System.out.println(nameClass);
     }
 }
