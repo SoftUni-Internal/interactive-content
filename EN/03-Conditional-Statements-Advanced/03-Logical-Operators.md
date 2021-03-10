@@ -190,11 +190,11 @@ Create a program that receives a number as input, and adds another number to it,
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-21-logical-or-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The logical **OR** (operator `||`) means that **at least one** of a few conditions is fulfilled. 
+The logical **OR** operator (`||`) checks if **at least one** of the set of operands is `true`. 
 
-Similar to the operator `&&`, the logical **OR** accepts a few arguments of **bool** (conditional) type and returns `true` or `false`. 
+Similar to `&&` (the **AND** operator), the logical **OR** accepts a few arguments of **boolean** type and returns `true` or `false`. 
 
-We can easily guess that we **obtain** a value `true` every time when at least one of the arguments has a `true` value. 
+We will **obtain** `true` every time when at least one of the arguments has a `true` value:
 
 | Operand1 | Operand2 | OR |
 |---|---|---|---|
