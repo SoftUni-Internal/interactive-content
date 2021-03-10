@@ -48,7 +48,7 @@ You can define as many constructors as you need.
 
 When a Java class contains multiple constructors, we say that the constructor is overloaded. 
 
-Constructor overloading means that a Java class contains multiple constructors.
+We have constructor overloading when we create multiple constructors in the same class.
 
 ```java
 public class Car {
