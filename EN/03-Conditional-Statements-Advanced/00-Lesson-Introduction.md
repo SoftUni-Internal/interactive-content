@@ -13,11 +13,11 @@
 
 **2. Logical Operators**
 
-- How we use logical operators in Java - `&&`, `||`, `!`
+- The use of logical operators in Java - `&&`, `||`, `!`
 
-**3. Switch-case**
+**3. The Switch-case**
 
-- Multiple labels in Switch-Case
+- Defining multiple statements with a Switch-Case construction
 
 **4. Practical Coding Exercises**
 
