@@ -74,7 +74,7 @@ You saw what problems that Fat Interfaces can bring, let us list them and their 
 
 [slide hideTitle]
 
-# Fat Interfaces - consequences
+# Fat Interfaces - Consequences
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-23-fat-interfaces-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
