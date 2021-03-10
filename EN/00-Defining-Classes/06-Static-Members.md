@@ -13,7 +13,7 @@ The static keyword can be used with methods, fields, classes (inner/nested), blo
 
 Static methods can access only static fields and methods.
 
-There is no need to instantiate the class to access its static methods.
+There is no need to instantiate the class to access its static members.
 
 ```java live no-template
 public class Car {
