@@ -4,13 +4,13 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-24-25-access-modifiers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The way to obtain the class modifiers will be:
+To obtain the class modifiers, we use the `getModifiers()` method.
 
 ```java
 int modifiers = aClass.getModifiers();
 ```
 
-It is good to remember that `getModifiers()` method can be called on **constructors**, **fields**, and **methods**.
+It is good to remember that the `getModifiers()` method can be called on **constructors**, **fields**, and **methods**.
 
 We can check our modifiers with the following methods:
 
@@ -28,7 +28,7 @@ Field field = Dog.class.getDeclaredField("name");
 System.out.println(Modifier.isPrivate(field.getModifiers()));
 ```
 
-**Output** will be:
+The **output** will be:
 
 ```
 true
@@ -48,7 +48,7 @@ Also, we are able to check if the modifiers are protected, public or static with
 
 [slide hideTitle]
 
-# Creating Arrays via Java Reflection
+# Arrays
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-26-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -84,7 +84,7 @@ public class Main {
 
 ```
 
-**Output** will be:
+The **output** will be:
 
 ```
 The array elements are: 2 9 3 0 7
@@ -94,7 +94,7 @@ The array elements are: 2 9 3 0 7
 [/slide]
 
 [slide hideTitle]
-# Problem with Soltuion: High Quality Mistakes
+# Problem with Solution: High-Quality Mistakes
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-27-problem-and-solution-high-quality-mistakes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -103,17 +103,17 @@ The array elements are: 2 9 3 0 7
 [code-upload allowedMemory="30" /]
 [task-description]
 # Description
-You are already an expert in writing **high quality code**, so you know what kind of **access modifiers** must be set to the members of a class. 
+You are already an expert in writing ** high-quality code**, so you know what kind of **access modifiers** must be set to the members of a class. 
 
 Time for **revenge** has come. 
 
-Now you have to check the code produced by your "**Beautiful and Smart**" trainers in class Reflection. 
+You have to check the code produced by your "**Beautiful and Smart**" trainers in class Reflection. 
 
 Check all **fields and methods access modifiers**. 
 
 Sort each category of members **alphabetically**. 
 
-Print on console all mistakes in **format**:
+Print all mistakes to the console in the following **format**:
 
 - Fields:
 
