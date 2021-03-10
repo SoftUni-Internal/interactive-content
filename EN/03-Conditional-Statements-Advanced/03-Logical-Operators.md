@@ -85,7 +85,7 @@ Write a piece of code which checks whether a point with `x`, `y` coordinates is 
 [image assetsSrc="03.Point-in-rectangle-01.png" /]
 
 The input data is read from the console and consists of 6 lines: 
-- the decimal numbers `x1`, `y1`, `x2`, `y2`, `x` and `y` (as it is guaranteed that `x1 < x2` and `y1 < y2`).
+- the numbers: `x1`, `y1`, `x2`, `y2`, `x`, `y` (it is guaranteed that `x1 < x2` and `y1 < y2`).
 
 ## Sample Input and Output
 |Input|Output|
@@ -140,10 +140,11 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Write a program that applies bonus to given points
-  * If points are between **0** and **3**, adds **5**
-  * If points are between **4** and **6**, adds **15**
-  * If points are between **7** and **9**, adds **20**
+Create a program that receives a number as input, and adds another number to it, according to the following rules:
+
+  * If the input number is between **0** and **3**, adds **5**
+  * If the input number is between **4** and **6**, adds **15**
+  * If the input number is between **7** and **9**, adds **20**
 # Example
 
 | Input | Output |
@@ -185,11 +186,11 @@ Write a program that applies bonus to given points
 
 
 [slide hideTitle]
-# Logical OR Operator
+## Logical OR Operator
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-21-logical-or-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The logical **OR** (operator `||`) means that **at least one** among a few conditions is fulfilled. 
+The logical **OR** (operator `||`) means that **at least one** of a few conditions is fulfilled. 
 
 Similar to the operator `&&`, the logical **OR** accepts a few arguments of **bool** (conditional) type and returns `true` or `false`. 
 
