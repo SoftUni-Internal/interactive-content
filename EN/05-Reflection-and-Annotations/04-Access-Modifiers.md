@@ -68,7 +68,8 @@ public class Main {
         int arr[] = (int[])Array.newInstance(int.class, 5);
         // A new instance is created using the Array.newInstance method.
         
-        Array.set(arr, 0, 2); // We set the values of the array with the Array.set() method.
+        Array.set(arr, 0, 2); 
+        // We set the values of the array with the Array.set() method.
         Array.set(arr, 2, 2);
         Array.set(arr, 1, 9);
         Array.set(arr, 2, 3);
