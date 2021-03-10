@@ -91,7 +91,7 @@ field.set(object, value); // The object parameter passed to the get and set meth
 
 [slide hideTitle]
 
-# Get and Invoke Methods
+# Methods
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-19-20-methods-methods-invoke-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
