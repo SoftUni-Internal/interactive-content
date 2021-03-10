@@ -186,7 +186,7 @@ Create a program that receives a number as input, and adds another number to it,
 
 
 [slide hideTitle]
-## The Logical OR Operator
+# The Logical OR Operator
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-21-logical-or-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -303,7 +303,7 @@ unknown
 
 
 [slide hideTitle]
-## The Logical NOT Operator
+# The Logical NOT Operator
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-23-logical-not-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
