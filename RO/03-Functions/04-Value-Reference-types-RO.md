@@ -4,6 +4,7 @@
 
 # Valoare și Tipuri de Referință
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-23-24-25-value-and-reference-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Tipurile de valori și tipurile de referință sunt cele două categorii principale de tipuri JavaScript
 
@@ -52,9 +53,6 @@ let obj = {firstName:'Maria', lastName:'Agarici'};
 [slide hideTitle]
 # Valoare și Tipuri de Referință: Demo
 
-[vimeo-video]
-[stream language="EN" videoId="489373150/9d47a9faca" default /]
-[stream language="RO" videoId="489373150/9d47a9faca"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-value-vs-refenrence-types-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]

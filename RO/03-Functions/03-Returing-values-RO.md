@@ -3,6 +3,7 @@
 [slide hideTitle]
 # Declarația de Returnare
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-17-18-the-return-statement-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Operatorul `return` este folosit pentru a returna o valoare din interiorul unei funcții.
 
@@ -28,6 +29,7 @@ Dacă încercați să-l utilizați în afara unei funcții, **va genera o eroare
 [slide hideTitle]
 # Utilizarea Valorilor Returnate
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-19-using-the-return-values-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Valoarea returnată poate fi:
 
@@ -53,6 +55,7 @@ multiply(getMax(5,10), 20);
 [slide hideTitle]
 # Valori Returnate: Exemple
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-20-returning-values-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Verificați dacă **indexul matricei** este valid:
 
@@ -86,16 +89,15 @@ console.log(pass(5.32))
 [slide hideTitle]
 # Declarație de Returnare Demo
 
-[vimeo-video]
-[stream language="EN" videoId="489373875/3db9f493f6" default /]
-[stream language="RO" videoId="489373875/3db9f493f6"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-the-return-statement-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 [/slide]
 
 [slide hideTitle]
 # Funcții Imbricate
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-21-22-nested-functions-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Funcția imbricată funcționează în domeniul funcției externe.
 

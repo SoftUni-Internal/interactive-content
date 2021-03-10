@@ -3,6 +3,7 @@
 [slide hideTitle]
 # What are Arrow Functions?
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-27-28-arrow-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Funcții săgeată `=>` au fost introduse cu [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript). 
 

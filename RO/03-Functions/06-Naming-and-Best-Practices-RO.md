@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Denumirea Funcțiilor
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-30-naming-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 - Numele funcțiilor ar trebui să **descrie sarcina lor** într-un mod **clar** și **lipsit de ambiguități**
 - Numele lor trebuie să fie **semnificative și nu foarte lungi**
 - Ar trebui să răspundă la întrebarea:"**Ce face această funcție?**"
@@ -45,6 +47,7 @@ p, p1, p2, populate, LastName, lastName
 
 # Cele mai Bune Practici în Ceea ce Privește Funcțiile
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-29-naming-and-best-practices-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Fiecare funcție trebuie să efectueze o sarcină **unică**, bine definită
 - **Evitați funcțiile lungi**, **împărțiți-le** în **câteva mai scurte**
@@ -90,6 +93,8 @@ function sum()
 
 [slide hideTitle]
 # Problem with Solution: Simple Calculator
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-solution-simple-calculator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Simple Calculator" taskId="fundamentals-js-functions-lab-Simple-Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

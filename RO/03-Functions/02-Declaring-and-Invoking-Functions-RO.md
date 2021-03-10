@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Declararea Unei Funcții
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-6-7-declaring-a-function-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 O funcție este definită, utilizând cuvântul cheie `funcție` urmat de **numele funcției** și un set de **paranteze** pentru a păstra parametrii sau valorile care trebuie primite de funcție.
 
 Funcțiile pot fi declarate în două moduri:
@@ -43,6 +45,8 @@ function printText(text){
 [slide hideTitle]
 # Invocarea Unei Funcții
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-8-invoking-a-function-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 O funcție nu este executată înainte de a fi invocată.
 
 O funcție poate fi invocată de **oriunde în domeniul**, unde este definită.
@@ -59,10 +63,7 @@ hLine();
 
 ## Demo
 
-[vimeo-video]
-[stream language="EN" videoId="489373310/980f876469" default /]
-[stream language="RO" videoId="489373310/980f876469"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-9-invoking-a-function-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 [/slide]
@@ -70,6 +71,7 @@ hLine();
 [slide hideTitle]
 # Invocarea Unei Funcții Dintr-o Altă Funcție
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-21-22-nested-functions-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 De asemenea, putem invoca o **funcție** din **altă funcție:**
 
@@ -83,6 +85,8 @@ function printDocument() {
 
 [slide hideTitle]
 # Recursivitate
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-recursion-and-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 De asemenea, putem invoca o **funcție** **în propriul său corp (recursivitate):**
 
@@ -105,6 +109,7 @@ If **no such condition exists**, the function will call itself **endlessly**.
 [slide hideTitle]
 # Funcțiile și Parametrii
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-11-12-functions-with-and-without-parameters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Putem avea o funcție **cu sau fără** parametri.
 
@@ -125,6 +130,8 @@ printHeader();
 [slide hideTitle]
 
 # Funcții cu Parametrii
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-functions-with-parameters-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 O funcție poate primi **orice număr și tip de argumente** atunci când este invocată:
 
@@ -157,6 +164,8 @@ Dacă dați mai multe argumente, atunci **argumentele suplimentare vor fi ignora
 
 [slide hideTitle]
 # Problem with Solution: Grades
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-14-solution-grades-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Grades" taskId="fundamentals-js-functions-lab-Grades" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -270,6 +279,8 @@ Fail
 
 [slide hideTitle]
 # Problem with Solution: Math Power
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-16-solution-math-power-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Math Power" taskId="fundamentals-js-functions-lab-Math-Power"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
