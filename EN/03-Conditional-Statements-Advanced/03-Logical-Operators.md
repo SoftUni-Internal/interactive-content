@@ -320,10 +320,10 @@ The logical **negation** operator (**!**) reverses the meaning of its operand.
 | true | false |
 | false | true |
 
-The operator `!` accepts as an **argument** a bool variable and **returns** its value.
+The `!` operator accepts a bool variable and **returns** its value reversed.
 
-# Example: Invalid Number
-A given **number is valid** if it is in the range **\[100 … 200\]** or it is **0**. Do a validation for an **invalid** number.
+## Example: Invalid Number
+A given **number is valid** if it is between **\[100 … 200\]** or if it is **0**. We should check whether it answers to these conditions and excercise our use of the `!` operator in the process.
 
 For example, `75` and `220` are **invalid**, but `150` is **valid**.
 
