@@ -30,9 +30,15 @@ Each object will be in the following format:
 
 ```js
 {
-  body: {postBody},
-  id: {postId},
-  title: {postTitle}
+    body: {
+        postBody
+    },
+    id: {
+        postId
+    },
+    title: {
+        postTitle
+    }
 }
 ```
 
@@ -77,9 +83,15 @@ Each object will be in the following format:
 
 ```js
 {
-  	id: {commentId},
-  	postId: {postId},
-  	text: {commentText}
+    id: {
+        commentId
+    },
+    postId: {
+        postId
+    },
+    text: {
+        commentText
+    }
 }
 ```
 

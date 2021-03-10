@@ -52,12 +52,12 @@ Promises offer a variety of useful methods for an easy and effective work proces
 
 ```js live
 Promise.reject('There was an error!').then(
-  (successMessage) => {
-    console.log(successMessage);
-  },
-  (errorMessage) => {
-    console.log(errorMessage);
-  }
+    (successMessage) => {
+        console.log(successMessage);
+    },
+    (errorMessage) => {
+        console.log(errorMessage);
+    }
 );
 ```
 
@@ -67,12 +67,12 @@ If the value is a promise - **returns the promise**.
 
 ```js live
 Promise.resolve('Operation was successful!').then(
-  (successMessage) => {
-    console.log(successMessage);
-  },
-  (errorMessage) => {
-    console.log(errorMessage);
-  }
+    (successMessage) => {
+        console.log(successMessage);
+    },
+    (errorMessage) => {
+        console.log(errorMessage);
+    }
 );
 ```
 
@@ -83,13 +83,13 @@ Otherwise, it would **reject immediately**.
 
 ```js live
 let firstPromise = new Promise((resolve, reject) => {
-  resolve('Information acquired successfully!');
+    resolve('Information acquired successfully!');
 });
 let secondPromise = Promise.resolve('No errors.');
 let thirdPromise = Promise.resolve(7);
 
 Promise.all([firstPromise, secondPromise, thirdPromise]).then((data) => {
-  console.log(data);
+    console.log(data);
 });
 ```
 
@@ -98,21 +98,21 @@ Promise.all([firstPromise, secondPromise, thirdPromise]).then((data) => {
 
 ```js live
 let firstPromise = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    reject('Error!');
-  }, 1000);
+    setTimeout(() => {
+        reject('Error!');
+    }, 1000);
 });
 
 let secondPromise = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve('Success!');
-  }, 3000);
+    setTimeout(() => {
+        resolve('Success!');
+    }, 3000);
 });
 
 Promise.allSettled([firstPromise, secondPromise]).then((data) => {
-  data.forEach((promise) => {
-    console.log(promise);
-  });
+    data.forEach((promise) => {
+        console.log(promise);
+    });
 });
 ```
 
@@ -123,25 +123,25 @@ This method returns a Promise object that resolves or rejects with its value
 
 ```js live
 let firstPromise = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve('This took a lot of time.');
-  }, 5000);
+    setTimeout(() => {
+        resolve('This took a lot of time.');
+    }, 5000);
 });
 
 let secondPromise = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve('Operation finished quickly!');
-  }, 1000);
+    setTimeout(() => {
+        resolve('Operation finished quickly!');
+    }, 1000);
 });
 
 let thirdPromise = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve('This took three seconds to finish!');
-  }, 3000);
+    setTimeout(() => {
+        resolve('This took three seconds to finish!');
+    }, 3000);
 });
 
 Promise.race([firstPromise, secondPromise, thirdPromise]).then((data) => {
-  console.log(data);
+    console.log(data);
 });
 ```
 
@@ -149,12 +149,12 @@ Promise.race([firstPromise, secondPromise, thirdPromise]).then((data) => {
 
 ```js live
 Promise.resolve('Operation succeeded!')
-  .then((data) => {
-    console.log(data);
-  })
-  .finally(() => {
-    console.log('This is printed after the oprations has finished!');
-  });
+    .then((data) => {
+        console.log(data);
+    })
+    .finally(() => {
+        console.log('This is printed after the oprations has finished!');
+    });
 ```
 
 [/slide]
@@ -178,12 +178,12 @@ Here is an example of how `.then()` is used:
 ```js live
 console.log('This will appear first');
 
-new Promise(function (resolve, reject) {
-  setTimeout(function () {
-    resolve('Eddie');
-  }, 1000);
-}).then(function (response) {
-  console.log('My name is: ' + response);
+new Promise(function(resolve, reject) {
+    setTimeout(function() {
+        resolve('Eddie');
+    }, 1000);
+}).then(function(response) {
+    console.log('My name is: ' + response);
 });
 
 console.log('This will appear second');
@@ -208,17 +208,17 @@ Here is how this method is used with the code from the previous example:
 ```js live
 console.log('This will appear first');
 
-new Promise(function (resolve, reject) {
-  setTimeout(function () {
-    reject('Error while getting name!');
-  }, 1000);
-})
-  .then(function (response) {
-    console.log('My name is: ' + response);
-  })
-  .catch(function (err) {
-    console.log(err);
-  });
+new Promise(function(resolve, reject) {
+        setTimeout(function() {
+            reject('Error while getting name!');
+        }, 1000);
+    })
+    .then(function(response) {
+        console.log('My name is: ' + response);
+    })
+    .catch(function(err) {
+        console.log(err);
+    });
 
 console.log('This will appear second');
 ```

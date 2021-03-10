@@ -36,12 +36,12 @@ There are, however, several ways to go around JavaScript's synchronous nature:
 
 ```js
 function calculateTax(income) {
-  console.log(income * 0.2);
+    console.log(income * 0.2);
 }
 
 function outer(callback) {
-  let income = 1000;
-  callback(income);
+    let income = 1000;
+    callback(income);
 }
 
 outer(calculateTax); // outer is called with calculateTax as a callback
@@ -50,8 +50,8 @@ outer(calculateTax); // outer is called with calculateTax as a callback
 - `promise` - A promise is an object, **representing data that will be obtained later on**. It allows the program to keep running, without waiting for that data
 
 ```js
-let promise = new Promise(function (resolve, reject) {
-  // Get data asynchronously, use resolve or reject after.
+let promise = new Promise(function(resolve, reject) {
+    // Get data asynchronously, use resolve or reject after.
 });
 ```
 
@@ -59,10 +59,10 @@ let promise = new Promise(function (resolve, reject) {
 
 ```js
 async function getData(url) {
-  let data = await fetch(url);
-  let text = await data.text();
+    let data = await fetch(url);
+    let text = await data.text();
 
-  console.log(text);
+    console.log(text);
 }
 ```
 
@@ -86,17 +86,17 @@ Here is a diagram of some code's run time to better visualize the concept:
 
 [image assetsSrc="JS-Applications-Asynchronous-Programming-1.png" /]
 
-# Example 1: Asynchronous Programming
+## Example: Asynchronous Programming
 
 Here is an example of some asynchronous behavior in JavaScript:
 
 ```js live
 function printSam() {
-  console.log('Sam');
+    console.log('Sam');
 }
 
 function printGeorge() {
-  console.log('George');
+    console.log('George');
 }
 
 console.log('Jessica');

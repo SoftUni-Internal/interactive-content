@@ -3,7 +3,7 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-25-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In this lesson you learned:
+## In this lesson, you learned:
 
 - **Asynchronous programming**
 
@@ -14,10 +14,10 @@
     * escaping JavaScript's **synchronous** nature
 ```js
 async function getData(url) {
-  let data = await fetch(url);
-  let text = await data.text();
+    let data = await fetch(url);
+    let text = await data.text();
 
-  console.log(text);
+    console.log(text);
 }
 ```
 
@@ -39,19 +39,19 @@ new Promise(executor);
 
 ```js
 async function getDbInfo(url) {
-  try {
-    let data = await fetch(url);
+    try {
+        let data = await fetch(url);
 
-    let dataToJSON = await data.json();
-    dataToJSON.performMethod();
-  } catch (err) {
-    console.log(err);
-  }
+        let dataToJSON = await data.json();
+        dataToJSON.performMethod();
+    } catch (err) {
+        console.log(err);
+    }
 }
 
 ```
 
-## In the next lesson you will learn:
+## In the next lesson, you will learn:
 
 - **Remote Databases**
 

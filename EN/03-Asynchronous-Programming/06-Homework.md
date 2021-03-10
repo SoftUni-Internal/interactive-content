@@ -31,10 +31,12 @@ The response from the server will be an object with the following structure:
 
 ```js
 {
-  name: locationName,
-  forecast: { low: temp,
-              high: temp,
-              condition: condition }
+    name: locationName,
+    forecast: {
+        low: temp,
+        high: temp,
+        condition: condition
+    }
 }
 ```
 
@@ -46,10 +48,12 @@ The response from the server will be an object with the following structure:
 
 ```js
 {
-  name: locationName,
-  forecast: [{ low: temp,
-               high: temp,
-               condition: condition }, … ]
+    name: locationName,
+    forecast: [{
+        low: temp,
+        high: temp,
+        condition: condition
+    }, …]
 }
 ```
 
@@ -67,7 +71,7 @@ Use the following codes for weather symbols:
 - Rain `&#x2614;` // ☂
 - Degrees `&#176;` // °
 
-# Examples
+## Examples
 
 When the app starts, the **forecast div** is **hidden**. 
 
@@ -114,7 +118,7 @@ When the user **enters a name** and **clicks** on the button **Get Weather**, th
 </div>
 ```
 
-# Hints
+## Hints
 
 The server at the address listed above will respond with valid data for location names "**London**", "**New York**" and "**Barcelona**".
 [/slide]
