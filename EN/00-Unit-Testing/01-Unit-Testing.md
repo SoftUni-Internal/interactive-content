@@ -26,7 +26,7 @@ Use the `JSON.stringify()` method to convert to a string and compare it with the
 
 ```js live
 function sortNums(arr) {
-    arr.sort((a,b) => a - b);
+    arr.sort((a, b) => a - b);
 }
 
 // Our test

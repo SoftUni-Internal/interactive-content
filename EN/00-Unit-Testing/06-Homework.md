@@ -44,12 +44,14 @@ We can see there are three outcomes for the function:
 Write one or two tests passing in parameters that are **NOT** of type string to the function, expecting it to return undefined. 
 
 ```js
-describe('Is Odd Or Even', function(){
-    it('should return undefined with a number as parameter', function(){
+describe('Is Odd Or Even', function() {
+    it('should return undefined with a number as parameter', function() {
         expect(isOddOrEven(13)).to.equal(undefined, 'Function did not return the correct result!')
     });
-    it('should return undefined with an object as parameter', function(){
-        expect(isOddOrEven({name: 'George'})).to.equal(undefined, 'Function did not return the correct result!')
+    it('should return undefined with an object as parameter', function() {
+        expect(isOddOrEven({
+            name: 'George'
+        })).to.equal(undefined, 'Function did not return the correct result!')
     });
 })
 ```
@@ -61,11 +63,11 @@ Write a test for each of the cases.
 In the first test, we pass a string with an **even** length and a second one where we pass a string with an **odd** length.
 
 ```js
-describe('Is Odd Or Even', function(){
-    it('should return even', function(){
+describe('Is Odd Or Even', function() {
+    it('should return even', function() {
         expect(isOddOrEven('aaaa')).to.equal('even', 'Function did not return the correct result!')
     });
-    it('should return odd', function(){
+    it('should return odd', function() {
         expect(isOddOrEven('aaa')).to.equal('odd', 'Function did not return the correct result!')
     });
 })
@@ -74,8 +76,8 @@ describe('Is Odd Or Even', function(){
 Finally, make a test passing multiple strings in a row to ensure the function works correctly.
 
 ```js
-describe('Is Odd Or Even', function(){
-    it('should return correct values with multiple checks', function(){
+describe('Is Odd Or Even', function() {
+    it('should return correct values with multiple checks', function() {
         expect(isOddOrEven('cat')).to.equal('odd', 'Function did not return the correct result!')
         expect(isOddOrEven('pet')).to.equal('odd', 'Function did not return the correct result!')
         expect(isOddOrEven('bird')).to.equal('even', 'Function did not return the correct result!')
@@ -229,11 +231,11 @@ Now that we have our exit conditions, we start checking in what situations we ca
 If any of the parameters are of an **incorrect type**,  we return  **undefined**.
 
 ```js
-describe('Character Look Up', function(){
-    it('should return undefined with first parameter as a number', function(){
+describe('Character Look Up', function() {
+    it('should return undefined with first parameter as a number', function() {
         expect(lookupChar(13, 0)).to.equal(undefined, 'Function did not return the correct result!')
     });
-    it('should return undefined with second parameter as a string', function(){
+    it('should return undefined with second parameter as a string', function() {
         expect(lookupChar('Peter', 'George')).to.equal(undefined, 'Function did not return the correct result!')
     });
 })
@@ -246,8 +248,8 @@ While **typeof** would protect us from getting an **index** that is a **non-numb
 The condition says that the index needs to be an **integer**, since floating-point numbers will not be valid indexes.
 
 ```js
-describe('Character Look Up', function(){
-    it('should return undefined with second parameter as a floating point number', function(){
+describe('Character Look Up', function() {
+    it('should return undefined with second parameter as a floating point number', function() {
         expect(lookupChar('Peter', 3.12)).to.equal(undefined, 'Function did not return the correct result!')
     });
 })
@@ -258,14 +260,14 @@ Moving on to the next exit condition - returning an empty string.
 This is the case when we pass in an index that is a negative number or an index that is outside of the bounds of the string. 
 
 ```js
-describe('Character Look Up', function(){
-    it('should return incorrect index with second parameter as incorrect value', function(){
+describe('Character Look Up', function() {
+    it('should return incorrect index with second parameter as incorrect value', function() {
         expect(lookupChar('George', 13)).to.equal('Incorrect index', 'Function did not return the correct result!')
     });
-    it('should return incorrect index with second parameter as negative value', function(){
+    it('should return incorrect index with second parameter as negative value', function() {
         expect(lookupChar('Peter', -1)).to.equal('Incorrect index', 'Function did not return the correct result!')
     });
-    it('should return incorrect index with second parameter equal to the first parameter length', function(){
+    it('should return incorrect index with second parameter equal to the first parameter length', function() {
         expect(lookupChar('Peter', 5)).to.equal('Incorrect index', 'Function did not return the correct result!')
     });
 })
@@ -274,11 +276,11 @@ describe('Character Look Up', function(){
 For the last exit condition, which will be to return a correct result, a simple check for the returned value will be enough.
 
 ```js
-describe('Character Look Up', function(){
-    it('should return correct value with correct parameters', function(){
+describe('Character Look Up', function() {
+    it('should return correct value with correct parameters', function() {
         expect(lookupChar('Peter', 3)).to.equal('e', 'Function did not return the correct result!')
     });
-    it('should return correct value with correct parameters', function(){
+    it('should return correct value with correct parameters', function() {
         expect(lookupChar('Peter', 0)).to.equal('P', 'Function did not return the correct result!')
     });
 })
@@ -435,7 +437,6 @@ describe('Math enforcer', function () {
 Test an object called **mathEnforcer**, which will have the following functionality:
 
 - `addFive(num)`: A function that accepts a **single** parameter
-
     - if the parameter is **NOT** a **number**, the function should return **undefined**
     - if the parameter is a **number**, **adds 5** to it, returns the result
 
@@ -451,19 +452,19 @@ Here is the implementation of the **mathEnforcer** object:
 
 ```js
 let mathEnforcer = {
-    addFive: function (num) {
+    addFive: function(num) {
         if (typeof(num) !== 'number') {
             return undefined;
         }
         return num + 5;
     },
-    subtractTen: function (num) {
+    subtractTen: function(num) {
         if (typeof(num) !== 'number') {
             return undefined;
         }
         return num - 10;
     },
-    sum: function (num1, num2) {
+    sum: function(num1, num2) {
         if (typeof(num1) !== 'number' || typeof(num2) !== 'number') {
             return undefined;
         }
@@ -479,15 +480,15 @@ When using floating-point numbers, the result should be considered correct if it
 When testing a more complex object, write a **nested describe** for each function shown in the example below. 
 
 ```js
-describe('Math Enforcer', function(){
-    describe('Add Five', function(){
-        it('should return undefined passing parameter as a string', function(){
+describe('Math Enforcer', function() {
+    describe('Add Five', function() {
+        it('should return undefined passing parameter as a string', function() {
             // To Do
         });
     })
 
-    describe('Add Five', function(){
-        it('should return 5 if parameter equals 0', function(){
+    describe('Add Five', function() {
+        it('should return 5 if parameter equals 0', function() {
             // To Do
         });
     })
@@ -921,49 +922,49 @@ describe('String Builder', function(){
 [task-description]
 # Description
 
-Use the following "JavaScript" class.
+Use the following JavaScript class.
 
 ```js
 class StringBuilder {
-  constructor(string) {
-    if (string !== undefined) {
-      StringBuilder._vrfyParam(string);
-      this._stringArray = Array.from(string);
-    } else {
-      this._stringArray = [];
+    constructor(string) {
+        if (string !== undefined) {
+            StringBuilder._vrfyParam(string);
+            this._stringArray = Array.from(string);
+        } else {
+            this._stringArray = [];
+        }
     }
-  }
 
-  append(string) {
-    StringBuilder._vrfyParam(string);
-    for(let i = 0; i < string.length; i++) {
-      this._stringArray.push(string[i]);
+    append(string) {
+        StringBuilder._vrfyParam(string);
+        for (let i = 0; i < string.length; i++) {
+            this._stringArray.push(string[i]);
+        }
     }
-  }
 
-  prepend(string) {
-    StringBuilder._vrfyParam(string);
-    for(let i = string.length - 1; i >= 0; i--) {
-      this._stringArray.unshift(string[i]);
+    prepend(string) {
+        StringBuilder._vrfyParam(string);
+        for (let i = string.length - 1; i >= 0; i--) {
+            this._stringArray.unshift(string[i]);
+        }
     }
-  }
 
-  insertAt(string, startIndex) {
-    StringBuilder._vrfyParam(string);
-    this._stringArray.splice(startIndex, 0, ...string);
-  }
+    insertAt(string, startIndex) {
+        StringBuilder._vrfyParam(string);
+        this._stringArray.splice(startIndex, 0, ...string);
+    }
 
-  remove(startIndex, length) {
-    this._stringArray.splice(startIndex, length);
-  }
+    remove(startIndex, length) {
+        this._stringArray.splice(startIndex, length);
+    }
 
-  static _vrfyParam(param) {
-    if (typeof param !== 'string') throw new TypeError('Argument must be string');
-  }
+    static _vrfyParam(param) {
+        if (typeof param !== 'string') throw new TypeError('Argument must be string');
+    }
 
-  toString() {
-    return this._stringArray.join('');
-  }
+    toString() {
+        return this._stringArray.join('');
+    }
 }
 ```
 
@@ -1546,78 +1547,78 @@ describe('Payment package', function(){
 [task-description]
 ## Description
 
-Use the following "JavaScript" class.
+Use the following JavaScript class.
 
 ```js
 class PaymentPackage {
-  constructor(name, value) {
-    this.name = name;
-    this.value = value;
-    this.VAT = 20;      // Default value    
-    this.active = true; // Default value
-  }
-
-  get name() {
-    return this._name;
-  }
-
-  set name(newValue) {
-    if (typeof newValue !== 'string') {
-      throw new Error('Name must be a non-empty string');
+    constructor(name, value) {
+        this.name = name;
+        this.value = value;
+        this.VAT = 20; // Default value    
+        this.active = true; // Default value
     }
-    if (newValue.length === 0) {
-      throw new Error('Name must be a non-empty string');
+
+    get name() {
+        return this._name;
     }
-    this._name = newValue;
-  }
 
-  get value() {
-    return this._value;
-  }
-
-  set value(newValue) {
-    if (typeof newValue !== 'number') {
-      throw new Error('Value must be a non-negative number');
+    set name(newValue) {
+        if (typeof newValue !== 'string') {
+            throw new Error('Name must be a non-empty string');
+        }
+        if (newValue.length === 0) {
+            throw new Error('Name must be a non-empty string');
+        }
+        this._name = newValue;
     }
-    if (newValue < 0) {
-      throw new Error('Value must be a non-negative number');
+
+    get value() {
+        return this._value;
     }
-    this._value = newValue;
-  }
 
-  get VAT() {
-    return this._VAT;
-  }
-
-  set VAT(newValue) {
-    if (typeof newValue !== 'number') {
-      throw new Error('VAT must be a non-negative number');
+    set value(newValue) {
+        if (typeof newValue !== 'number') {
+            throw new Error('Value must be a non-negative number');
+        }
+        if (newValue < 0) {
+            throw new Error('Value must be a non-negative number');
+        }
+        this._value = newValue;
     }
-    if (newValue < 0) {
-      throw new Error('VAT must be a non-negative number');
+
+    get VAT() {
+        return this._VAT;
     }
-    this._VAT = newValue;
-  }
 
-  get active() {
-    return this._active;
-  }
-
-  set active(newValue) {
-    if (typeof newValue !== 'boolean') {
-      throw new Error('Active status must be a boolean');
+    set VAT(newValue) {
+        if (typeof newValue !== 'number') {
+            throw new Error('VAT must be a non-negative number');
+        }
+        if (newValue < 0) {
+            throw new Error('VAT must be a non-negative number');
+        }
+        this._VAT = newValue;
     }
-    this._active = newValue;
-  }
 
-  toString() {
-    const output = [
-      `Package: ${this.name}` + (this.active === false ? ' (inactive)' : ''),
-      `- Value (excl. VAT): ${this.value}`,
-      `- Value (VAT ${this.VAT}%): ${this.value * (1 + this.VAT / 100)}`
-    ];
-    return output.join('\n');
-  }
+    get active() {
+        return this._active;
+    }
+
+    set active(newValue) {
+        if (typeof newValue !== 'boolean') {
+            throw new Error('Active status must be a boolean');
+        }
+        this._active = newValue;
+    }
+
+    toString() {
+        const output = [
+            `Package: ${this.name}` + (this.active === false ? ' (inactive)' : ''),
+            `- Value (excl. VAT): ${this.value}`,
+            `- Value (VAT ${this.VAT}%): ${this.value * (1 + this.VAT / 100)}`
+        ];
+        return output.join('\n');
+    }
 }
 ```
 
@@ -1655,7 +1656,7 @@ If any of the requirements are not met, the operation must throw an error.
 // Should throw an error
 try {
     const hrPack = new PaymentPackage('HR Services');
-} catch(err) {
+} catch (err) {
     console.log('Error: ' + err.message);
 }
 const packages = [
@@ -1669,7 +1670,7 @@ const wrongPack = new PaymentPackage('Transfer Fee', 100);
 // Should throw an error
 try {
     wrongPack.active = null;
-} catch(err) {
+} catch (err) {
     console.log('Error: ' + err.message);
 }
 ```
