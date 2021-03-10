@@ -2,7 +2,7 @@
 
 # Summary
 
-## In this lesson you learned:
+## In this lesson, you learned:
 
 - Client-side rendering is prevalent in the modern web
     * enables instant user interaction
@@ -21,10 +21,13 @@ html`<h1>I am ${user.name} and my favorite artists are ${user.favoriteArtists.jo
     * can be extended using directives
 
 ```js
-import { html, render } from 'lit-html';
+import {
+    html,
+    render
+} from 'lit-html';
 
 const greetingTemplate = () => {
-  return html`
+    return html`
     <h1> Hello, JavaScript!</h1>
   `;
 };

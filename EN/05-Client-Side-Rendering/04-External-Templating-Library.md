@@ -137,10 +137,13 @@ It accepts two parameters:
 **Tagged templates** are function calls that get their arguments from a template **literal**:
 
 ```js
-import { html, render } from 'lit-html';
+import {
+    html,
+    render
+} from 'lit-html';
 
 const template = (username) => {
-  return html`
+    return html`
     <p> Welcome back, ${username}!</p>
   `;
 };
@@ -225,11 +228,11 @@ In this example we use the `handleClick` object as an **event listener**, but we
 ```js
 let handleClick = {
 
-  handleEvent(event) { 
-    console.log('You have clicked a button.');
-  },
-  
-  capture: true,
+    handleEvent(event) {
+        console.log('You have clicked a button.');
+    },
+
+    capture: true,
 };
 
 ```
@@ -290,9 +293,15 @@ In this example, we create an **unordered list**, and generate `li` elements by 
 The `classMap` directive is used to set a **list of classes** based on an **object**:
 
 ```js
-import { classMap } from 'lit-html/directives/class-map.js';
+import {
+    classMap
+} from 'lit-html/directives/class-map.js';
 
-let classes = { enabled: true, hidden: false, important: true };
+let classes = {
+    enabled: true,
+    hidden: false,
+    important: true
+};
 
 const template = (classes) => html`<div class=${classMap(classes)}>This text is important.</div>`;
 
@@ -315,9 +324,14 @@ This template will be **rendered** out like this:
 `styleMap` sets **styles** on an element using an **object** with style properies:
 
 ```js
-import { styleMap } from 'lit-html/directives/style-map.js';
+import {
+    styleMap
+} from 'lit-html/directives/style-map.js';
 
-let stylesArr = { backgroundColor: 'aqua', color: 'black' };
+let stylesArr = {
+    backgroundColor: 'aqua',
+    color: 'black'
+};
 
 html`<h1 style=${styleMap(stylesArr)}>This title is black</h1>`;
 ```
@@ -338,7 +352,9 @@ The **rendered template** looks like this:
 The `repeat` directive creates **multiple templates** from a given **collection** and **updates** them efficiently when **changes** are detected:
 
 ```js
-import { repeat } from './node_modules/lit-html/directives/repeat';
+import {
+    repeat
+} from './node_modules/lit-html/directives/repeat';
 
 const artists = (artistInfo) => html`
   <ul>
@@ -347,10 +363,21 @@ const artists = (artistInfo) => html`
   </ul>
 `;
 
-const artistInfo = [
-  { id: 1, name: 'Rihanna', genre: 'R&B' },
-  { id: 2, name: 'David Bowie', genre: 'Rock' },
-  { id: 3, name: 'Daft Punk', genre: 'Electronic' }
+const artistInfo = [{
+        id: 1,
+        name: 'Rihanna',
+        genre: 'R&B'
+    },
+    {
+        id: 2,
+        name: 'David Bowie',
+        genre: 'Rock'
+    },
+    {
+        id: 3,
+        name: 'Daft Punk',
+        genre: 'Electronic'
+    }
 ];
 
 const element = document.querySelector('#artists-container');
