@@ -10,7 +10,7 @@ The *Schema* itself defines the structure of the document.
 
 It may define a property like default values, validators, whereas the **model** provides an interface to the database.
 
-The schema can be compiled using mongoose.Schema call:
+The schema can be compiled using `mongoose.Schema` call:
 
 Let us take a look at the following example:
 
@@ -104,7 +104,7 @@ console.log(employee.fullname); // Jason Harris
 
 We can use setters to manipulate our string.
 
-This example splits the passed name at any whitespace.
+This example **splits** the passed name at any whitespace.
 
 ``` js
 userSchema.virtual('fullname').set(function (name) {  
@@ -132,11 +132,13 @@ studentSchema.path('firstName')
 }, 'First name must be between 2 and 10 symbols long!') // Error message passed as second parameter
 ```
 
-Data validation is important. That way, we can make sure that "bad" data does not get in the application.
+Data validation is important. 
 
-Mongoose has built-in support for data schemas, and the automatic validation of data when it is persisted.
+That way, we can make sure that "**bad**" data does not get in the application.
 
-Mongoose validators are easy to configure.
+**Mongoose** has **built-in** support for data schemas, and the automatic validation of data when it is persisted.
+
+**Mongoose validators** are easy to configure.
 
 [/slide]
 

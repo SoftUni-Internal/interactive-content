@@ -83,7 +83,7 @@ On the **client-side**, `isEmail()` will also returns **true** or **false**.
 
 We can use **Express-Validator** to wrap the **validator.js** functions.
 
-**Express-Validator** is a set of middlewares to express.js.
+**Express-Validator** is a set of **middlewares** to express.js.
 
 We can set checks for the fields from which we receive data with the `check()` function.
 
@@ -132,7 +132,7 @@ Here are use cases where the sanitizers are useful:
 
 - **Trimming** characters from the input.
 
-- Removing characters that are **blacklisted**.
+- Removing characters that are **blacklisted**
 
 Have a look at a **sanitizer** function:
 
@@ -271,7 +271,7 @@ The **SchemaTypes** are:
    -  **minlength**
    -  **maxlength**
 
-Here is an example of Mongoose schema:
+Here is an example of **Mongoose schema**:
 
 ```js
 const userSchema = new Schema({
@@ -374,11 +374,11 @@ That is why we need to have multiple layers of validation.
 
 Some of the things that we can do when the validation fails are:
 
-- Always return a helpful and readable message.
+- Always return a helpful and readable message
 
-- To test every piece of our code.
+- To test every piece of our code
 
-- To avoid reloading the page because it is a bad user experience.
+- To avoid reloading the page because it is a bad user experience
 
 More info about **express-validator** and **mongoose** you can find on:
 

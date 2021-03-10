@@ -5,7 +5,7 @@
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-backend/03-Cubicle-Workshop-Part-1-Resources.zip) **for this task.**
 
-"Cubicle" is a place, where you can browse some of the most popular Rubik's cubes in the world and add some new cubes that you have discovered. 
+"**Cubicle**" is a place, where you can browse some of the most popular Rubik's cubes in the world and add some new cubes that you have discovered. 
 
 ## Folder Structure View
 
@@ -47,7 +47,7 @@ Configures the app to work with Express JS and to use the routes that are set up
 
 - **Cube Model**
 
-Each cube should have the following properties (for now it could be an ES6 class):
+Each cube should have the following properties (for now it could be an **ES6** class):
 
 **id**: number
 

@@ -5,7 +5,7 @@
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-backend/05-Sessions-and-Authentication-Workshop-Resources.zip) **for this task.**
 
-"Cubicle" is a place, where you can browse some of the most popular Rubik cubes in the world and add some new cubes that you have discovered.  
+"**Cubicle**" is a place, where you can browse some of the most popular Rubik cubes in the world and add some new cubes that you have discovered.  
 
 If you missed the first two parts of this workshop, **make sure you complete them** before you continue because all parts of this workshop are related to each other.
 
@@ -15,7 +15,7 @@ Now it's time to implement user service in your app, so people can **register**,
 
 And each cube can be **edited** or **deleted**. 
 
-Some of the functionality should **requires authentication** such as (create the cube, create accessory) and authorization (such as edit and delete).
+Some of the functionality should **requires authentication** (such as **create the cube**, **create accessory**) and authorization (such as **edit** and **delete**).
 
 Also, all **routes** should be **protected!** 
 
@@ -25,15 +25,15 @@ You should install a few more packages which you will use.
 
 They are: 
 
-- [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken): allows you to decode, verify and generate JWT.
+- [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken): allows you to decode, verify and generate JWT
 
-- [bcrypt](https://www.npmjs.com/package/bcrypt): a library to help you hash passwords. 
+- [bcrypt](https://www.npmjs.com/package/bcrypt): a library to help you hash passwords
 
-- [cookie-parser](https://www.npmjs.com/package/cookie-parser): parse **cookie header** and populate `req.cookies` with an object keyed by the cookie names (if you choose to store the jwt as а cookie). 
+- [cookie-parser](https://www.npmjs.com/package/cookie-parser): parse **cookie header** and populate `req.cookies` with an object keyed by the cookie names (if you choose to store the jwt as а cookie)
 
 # Model 
 
-The User Model structure:
+The **User Model** structure:
 
 - **Id**: ObjectId
 
@@ -51,7 +51,7 @@ Also, you have to add a property on **Cube Model**, which is `creatorId` (type: 
 [slide hideTitle]
 # Authentication 
 
-Make sure the **anonymous** (guest) users **can not reach** the functionality which requires authentication, such as create cube view.
+Make sure the **anonymous** (guest) users **cannot reach** the functionality which requires **authentication**, such as "**create cube view**".
 
 And already logged in users have generated and stored **jwt**, can see the correct navigation and **can not** reach the login and register form.
 
@@ -67,7 +67,7 @@ If some of these scenarios happen, make sure the current user is redirected to t
 - **Register page**
 - **Cube details page**
 
-and can not access and see everyone else.
+and cannot access and see everyone else.
 
 **Logged** in users can see and access the following urls:
 
@@ -111,9 +111,11 @@ You should implement four new routes:
 
 Make sure when you access `/edit` and `/delete` routes, they show the current cube information.
 
-Use the provided resources to create the additional templates using Handlebars (Use **username**: **student**, **password**: **student credentials** to do that).
+Use the provided resources to create the additional templates using Handlebars (Use "**username**: **student**", "**password**: **student credentials**" to do that).
 
-Identify the dynamic parts and use the appropriate syntax for interpolating and rendering the application context. Replace the old CSS file with the given one.
+Identify the dynamic parts and use the appropriate syntax for interpolating and rendering the application context. 
+
+Replace the old CSS file with the given one.
 
 - **Login Page**
 

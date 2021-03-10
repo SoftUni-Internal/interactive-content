@@ -4,21 +4,23 @@
 
 # Pre Middleware
 
-Middleware is functions that are passed control during the execution of asynchronous functions.
+**Middleware** is functions that are passed control during the execution of asynchronous functions.
 
 They are executed before or after a certain function that we specify.
 
-- Pre Middleware
+- **Pre Middleware**
 
-Pre middleware functions are executed one after another. We use them when:
+**Pre middleware** functions are executed one after another. 
 
-- We have a complex validation
+We use them when:
 
-- To remove dependent documents
+- We have a **complex validation**
 
-- When we have asynchronous tasks that a certain action triggers
+- To **remove** dependent documents
 
-As the name suggests, pre middlewares get executed **before** some other method execution on some documents.
+- When we have **asynchronous** tasks that a certain action **triggers**
+
+As the name suggests, **pre middlewares** get executed **before** some other method execution on some documents.
 
 ``` js
 const schema = new Schema(..);
@@ -36,7 +38,7 @@ schema.pre('save', function() {
 
 # Post Middleware
 
-Post middleware is executed once all the pre-hooks have been executed and after the original method has been executed.
+**Post middleware** is executed once all the **pre-hooks** have been executed and after the original method has been executed.
 
 
 `pre-hooks -> method -> post-hooks`

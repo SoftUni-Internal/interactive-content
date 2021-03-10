@@ -4,17 +4,17 @@
 
 # What is JWT?
 
-JWT or **JSON Web Token** is a **standard** used to **securely transfer** a **JSON object** between to parties.
+**JWT** or **JSON Web Token** is a **standard** used to **securely transfer** a **JSON object** between to parties.
 
-JWT is secure because of a digital signature.
+**JWT** is secure because of a digital signature.
 
 There are two ways to digitally sign a token:
 
-- `secret`: Signing with a secret, using the `HMAC` algorithm.
+- `secret`: Signing with a secret, using the **HMAC** algorithm.
 
 - `public/private key`: Signing with a public/private key, using the **RSA** or **ECDSA** algorithms.
 
-Signing the token prevents the notorious **man-in-the-middle** cyberattack.
+Signing the token prevents the notorious **man-in-the-middle** cyber attack.
 
 **Man-in-the-middle** is when which is when the attacker **intercepts** and **alters** the messages between two people.
 
@@ -28,13 +28,13 @@ The two people that their communication is private, however, the whole conversat
 
 # When to use JWT?
 
-There are two very common use cases for JWT:
+There are two very common use cases for **JWT**:
 
 - `Authorization`
 
 - `Information exchange`
 
-JWT is good for **authorization** because of the **digital signature** and its **reliability**.
+**JWT** is good for **authorization** because of the **digital signature** and its **reliability**.
 
 **After** a successful login, tokens are **sent on every request** to **verify** what the user is **permitted** to do.
 
@@ -46,7 +46,7 @@ The famous `OAuth 2.0` protocol uses several tokens for authorization:
 
 - `Refresh token`
 
-Being able to transfer information in a **safe** and **secure** manner makes JWT useful for any other kind of data exchange.
+Being able to transfer information in a **safe** and **secure** manner makes **JWT** useful for any other kind of data exchange.
 
 [/slide]
 
@@ -54,7 +54,7 @@ Being able to transfer information in a **safe** and **secure** manner makes JWT
 
 # JWT Structure
 
-A JSON Web Token consists of **three** parts:
+A **JSON Web Token** consists of **three** parts:
 
 - `Header`: Specifies the **type of token** and **signature algorithm**.
 
@@ -72,7 +72,7 @@ Here is JWT and its parts visualized:
 
 # JWT Usage
 
-Before using the JWT, install it with the following command:
+Before using the **JWT**, install it with the following command:
 
 ```js
 npm install jsonwebtoken
@@ -94,7 +94,7 @@ console.log(token);
 // eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiR2FycnkiLCJhZ2UiOjI3LCJpYXQiOjE2MDk4ODc5NzMsImV4cCI6MTYxMDA2MDc3M30.AIuFu04O39uokaGwfxy7iWzjr9vnsI00gqxXJ-peT8Y
 ```
 
-The JWT signing process is **reversible**.
+The **JWT** signing process is **reversible**.
 
 The token from above could be decoded like this:
 
@@ -107,6 +107,6 @@ const decodedToken = jwt.verify(token, "signing secret"); // decode with the ini
 console.log(decodedToken); // {name: 'Garry', age: 27, iat: 1609887973, exp: 1610060773}
 ```
 
-More information about the JWT can be found on the official [website](https://jwt.io/).
+More information about the **JWT** can be found on the official [website](https://jwt.io/).
 
 [/slide]

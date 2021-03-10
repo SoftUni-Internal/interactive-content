@@ -5,27 +5,27 @@
 
 # Relational Database
 
-A relational database is a collection of information.
+A **relational database** is a collection of information.
 
-The tables used in relational databases store information about the objects.
+The tables used in **relational databases** store information about the objects.
 
 Tables contain rows that hold information, which has a unique identifier - known as a **key**.
 
 Each column contains the attributes of the data.
 
-Almost all relational databases use **SQL** to **extract** data.
+Almost all **relational databases** use **SQL** to **extract** data.
 
-SQL syntax may be different depending on which relational database management system you use.
+SQL syntax may be different depending on which **relational database** management system you use.
 
-Some of the most popular RDBMS are:
+Some of the most popular **RDBMS** are:
 
-- MySQL
+- **MySQL**
 
-- PostgreSQL
+- **PostgreSQL**
 
-- Oracle DB
+- **Oracle DB**
 
-- SQLite
+- **SQLite**
 
 [image assetsSrc="MongoDB-And-Mongoose.png" /]
 
@@ -35,13 +35,15 @@ Some of the most popular RDBMS are:
 
 # Non-relational Database (NoSQL)
 
-Non-relational databases are different from traditional relational databases. 
+**Non-relational databases** are different from traditional relational databases. 
 
 They store data differently than relational databases do.
 
-The Non-Relational database is more flexible than the traditional one since it stores data in a non-tabular form.
+The **Non-Relational database** is more flexible than the traditional one since it stores data in a non-tabular form.
 
-They might be based on structures like documents. Most of the time, the document files can be highly detailed while containing a range of different types of information.
+They might be based on structures like documents. 
+
+Most of the time, the document files can be highly detailed while containing a range of different types of information.
 
 **NoSQL** databases are often used when large and complex data needed to be organized.
 
@@ -92,7 +94,7 @@ So, a new product with different properties can be added:
 },
 ```
 
-In this example, we add a new entry (item) in our table without previous fields.
+In this example, we **add a new entry** (item) in our table without previous fields.
 
 As we see, the new product does not have a **price**, **department**, or **quantity** field.
 
@@ -100,7 +102,7 @@ Instead, it has a new field called **rating**.
 
 This is the main difference. 
 
-In a Non-Relational database, we do not rely on a schema that defines the fields beforehand.
+In a **Non-Relational database**, we do not rely on a schema that defines the fields beforehand.
 
 This adds a **huge** flexibility.
 
