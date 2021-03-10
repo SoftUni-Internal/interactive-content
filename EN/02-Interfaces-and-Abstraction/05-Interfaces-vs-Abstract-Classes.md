@@ -69,8 +69,8 @@ The driver's name may contain any ASCII characters.
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-| Dominic Toretto | 488-Spider/Brakes!/brum-brum-brum-brrrrr/Dominic Toretto |
-| Brian O'Conner | 488-Spider/Brakes!/brum-brum-brum-brrrrr/Brian O'Conner |
+| Dominic Toretto | 488-Spider/Brakes!/Gas!/Dominic Toretto |
+| Brian O'Conner | 488-Spider/Brakes!/Gas!/Brian O'Conner |
 
 [/task-description]
 [tests]
