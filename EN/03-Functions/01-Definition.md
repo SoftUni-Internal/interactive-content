@@ -23,7 +23,7 @@ A function is a **block of code** which is **executed only when called.**
 
 Data can be **passed to it** in the form of parameters.
 
-**Functions** can **return data** too, as a result.
+**Functions** can **return data** as well, as a result.
 [/slide]
 
 [slide hideTitle]
