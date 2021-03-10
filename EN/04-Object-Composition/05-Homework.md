@@ -702,23 +702,22 @@ Workers who do not have dizziness should not be modified in any way. Return them
 
 ## Example One
 
-|**Input**|**Output**|
-|---|---|
-|\{
+**Input**
+\{
     weight: 80,
     experience: 1,
     levelOfHydrated: 0,
     dizziness: true
-\}|\{
+\}
+
+
+**Output**
+\{
     weight: 80,
     experience: 1,
     levelOfHydrated: 8,
     dizziness: false
-\}|
-
-
-
-
+\}
 ## Example Two
 **Input**
 \{
@@ -735,6 +734,8 @@ Workers who do not have dizziness should not be modified in any way. Return them
     levelOfHydrated: 440,
     dizziness: false
 \}
+
+## Example Three
 
 **Input**  
 
@@ -878,45 +879,65 @@ You will receive an object as an argument to your function.
 The format will be as follows:
 
 ```js
-{ model: <model name>,
-  power: <minimum power>,
-  color: <color>,
-  carriage: <carriage type>,
-  wheelsize: <size> }
+{
+    model: <model name> ,
+    power: <minimum power> ,
+    color: <color> ,
+    carriage: <carriage type> ,
+    wheelsize: <size>
+}
 ```
 
 
-# Examples
+## Example One
 
 **Input** 
-\{ model: 'VW Golf II',
-  power: 90,
-  color: 'blue',
-  carriage: 'hatchback',
-  wheelsize: 14 \}
+\{
+    model: 'VW Golf II',
+    power: 90,
+    color: 'blue',
+    carriage: 'hatchback',
+    wheelsize: 14
+\}
 
 **Output**
-  \{ model: 'VW Golf II',
-    engine: \{ power: 90,
-              volume: 1800 \},
-    carriage: \{ type: 'hatchback',
-                color: 'blue' \},
-    wheels: \[13, 13, 13, 13\] \}
+ \{
+    model: 'VW Golf II',
+    engine: \{
+        power: 90,
+        volume: 1800
+    \},
+    carriage: \{
+        type: 'hatchback',
+        color: 'blue'
+    \},
+    wheels: \[13, 13, 13, 13\]
+\}
 
+## Example Two
 **Input**
-\{ model: 'Opel Vectra',
-  power: 110,
-  color: 'grey',
-  carriage: 'coupe',
-  wheelsize: 17 \}
+
+\{
+    model: 'Opel Vectra',
+    power: 110,
+    color: 'grey',
+    carriage: 'coupe',
+    wheelsize: 17
+\}
 
 **Output**
-\{ model: 'Opel Vectra',
-   engine: \{ power: 120,
-             volume: 2400 \},
-   carriage: \{ type: 'coupe',
-               color: 'grey' \},
-   wheels: \[17, 17, 17, 17\] \}
+\{
+    model: 'Opel Vectra',
+    engine: \{
+        power: 120,
+        volume: 2400
+    \},
+    carriage: \{
+        type: 'coupe',
+        color: 'grey'
+    \},
+    wheels: \[17, 17, 17, 17\]
+\}
 
 
 [/task-description]
@@ -1260,7 +1281,7 @@ If no space occurs anywhere in the string, return n \- 3 characters and an ellip
 
 If n is less than 4, return **n** amount of periods.
 
-- `format(string, …params)` - static method to replace placeholders with parameters. 
+- `format(string, …params)` - static method to replace placeholders with parameters
 
 A placeholder is a number surrounded by curly braces. 
 
@@ -1292,15 +1313,15 @@ str = String.format('jumps {0} {1}',
 
 **Output**
 
-'my string'
-'hello my string'
-'hello my string'
-'hello my...'
-'hello...'
-'h...'
-'..'
-'The quick brown fox'
-'jumps dog \{1\}'
+my string
+hello my string
+hello my string
+hello my...
+hello...
+h...
+..
+The quick brown fox
+jumps dog \{1\}
 
 [/task-description]
 [code-io /]
