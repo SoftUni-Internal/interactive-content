@@ -312,11 +312,13 @@ unknown
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-23-logical-not-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Logical negation (operator **!**) means a given condition is **not fulfilled**.
+
+The logical **negation** operator (**!**) reverses the meaning of its operand.
 
 | a | !a |
 |---|---|
 | true | false |
+| false | true |
 
 The operator `!` accepts as an **argument** a bool variable and **returns** its value.
 
