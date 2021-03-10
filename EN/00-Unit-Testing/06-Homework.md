@@ -1767,9 +1767,9 @@ PaymentPackage = class PaymentPackage \{
 
     toString() \{
         const output = \[
-            \`Package: \\$\{this.name\}\` + (this.active === false ? ' (inactive)' : ''),
-            \`- Value (excl. VAT): \\$\{this.value\}\`,
-            \`- Value (VAT \\$\{this.VAT\}%): \\$\{this.value \* (1 + this.VAT / 100)\}\`
+            `Package: \\$\{this.name\}` + (this.active === false ? ' (inactive)' : ''),
+            `- Value (excl. VAT): \\$\{this.value\}`,
+            `- Value (VAT \\$\{this.VAT\}%): \\$\{this.value \* (1 + this.VAT / 100)\}`
         \];
         return output.join('\n');
     \}
