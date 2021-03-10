@@ -6,14 +6,14 @@
 [code-task title="Person and Teacher" taskId="js-advanced-prototypes-and-inheritance-person-and-teacher" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
-   function personAndTeacher() {
-      // Write your code here
+function personAndTeacher() {
+    // Write your code here
 
-      return {
-         Person,
-         Teacher
-      }
-   }
+    return {
+        Person,
+        Teacher
+    }
+}
 ```
 
 [/code-editor]
@@ -88,15 +88,15 @@ yes
 [code-task title="Inheriting and Replacing ToString" taskId="js-advanced-prototypes-and-inheritance-inheriting-and-replacing-toString" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
-   function toStringExtension() {
-      // Write your code here
+function toStringExtension() {
+    // Write your code here
 
-      return {
-         Person,
-         Teacher,
-         Student
-       }
-   }
+    return {
+        Person,
+        Teacher,
+        Student
+    }
+}
 ```
 
 [/code-editor]
@@ -193,7 +193,7 @@ Extend the built-in **Array** object with additional functionality.
 Implement the following functionality:
 
 - `last()`: returns the last element of the array
-- `skip(n)`: returns a new array which includes all original elements, except the first **n** elements; **n** is a **Number** parameter
+- `skip(n)`: returns a new array which includes all original elements, except the first **n** elements **n** is a **Number** parameter
 - `take(n)`: returns a new array containing the first **n** elements from the original array; **n** is a **Number** parameter
 - `sum()`: returns a sum of all array elements
 - `average()`: returns the average of all array elements
@@ -215,8 +215,8 @@ If we have an **instance** of an array, since we know it is an object, adding ne
 ```js
 let myArr = [1, 2, 3]
 
-myArr.last = function () {
-   //TODO
+myArr.last = function() {
+    //TODO
 };
 ```
 
@@ -225,9 +225,9 @@ However, this only adds our new function to this instance.
 To add all functions just one time and have them work on **all arrays**, we have to attach them to array's **prototype** instead:
 
 ```js
-   Array.prototype.last = function () {
-      //TODO
-   };
+Array.prototype.last = function() {
+    //TODO
+};
 ```
 
 With such a declaration, we gain access to the context of the calling instance via the "**this**" keyword. 
@@ -237,29 +237,29 @@ We can then easily access indexes and other existing properties.
 Do not forget we do not want to modify the exiting array but to create a new one:
 
 ```js
-   Array.prototype.last = () => {
+Array.prototype.last = () => {
     return this[this.length - 1];
-   };
+};
 
-   Array.prototype.skip = (n) => {
-      let result = [];
-
-      for (let i = n; i < this.length; i++){
-         result.push(this[i]);
-      }
-
-      return result;
-   };
-
-   Array.prototype.take = (n) => {
+Array.prototype.skip = (n) => {
     let result = [];
 
-      for (let i = n; i < n; i++){
-       result.push(this[i]);
-      }
+    for (let i = n; i < this.length; i++) {
+        result.push(this[i]);
+    }
 
     return result;
-   };
+};
+
+Array.prototype.take = (n) => {
+    let result = [];
+
+    for (let i = n; i < n; i++) {
+        result.push(this[i]);
+    }
+
+    return result;
+};
 ```
 
 Note these functions do not have any error checking - if **n** is **negative** or **outside the bounds** of the array, an exception will be thrown, so be careful when using them, or add your validation. 
@@ -267,19 +267,19 @@ Note these functions do not have any error checking - if **n** is **negative** o
 The last two functions require a little bit of arithmetic to be performed:
 
 ```js
-   Array.prototype.sum = () => {
-      let sum = 0;
+Array.prototype.sum = () => {
+    let sum = 0;
 
-      for (let i = 0; i < this.length; i++){
-         sum += this[i]
-      }
+    for (let i = 0; i < this.length; i++) {
+        sum += this[i]
+    }
 
-      return sum;
-   };
+    return sum;
+};
 
-   Array.prototype.average = () => {
-      return this. sum() / this.length;
-   };
+Array.prototype.average = () => {
+    return this.sum() / this.length;
+};
 ```
 
 To be able to submit the solution, we need to wrap our program in an "**IIFE**". 
@@ -289,17 +289,17 @@ There is **no return value** since the code execution results in functionality b
 We are ready to submit our solution.
 
 ```js
-   (function solve() {
-      Array.prototype.last = () => {};
+(function solve() {
+    Array.prototype.last = () => {};
 
-      Array.prototype.skip = () => {};
+    Array.prototype.skip = () => {};
 
-      Array.prototype.take = () => {};
+    Array.prototype.take = () => {};
 
-      Array.prototype.sum = () => {};
+    Array.prototype.sum = () => {};
 
-      Array.prototype.average = () => {};
-   }, ());
+    Array.prototype.average = () => {};
+}, ()); 
 ```
 
 [/task-description]
@@ -427,14 +427,14 @@ First, we need to create a function, which will hold our classes.
 We create a simple function and, we add the first class, the base class for all Balloons to it.
 
 ```js
-   function solve() {
-      class Ballon {
-         constructor (color, gasWeight) {
+function solve() {
+    class Ballon {
+        constructor(color, gasWeight) {
             this.color = color;
-            this. gasWeight = gasWeight;
-         }
-      }
-   }
+            this.gasWeight = gasWeight;
+        }
+    }
+}
 ```
 
 Now that we have our base class, we can create the first child class - the **PartyBalloon**, which extends the base **Balloon** class.
@@ -446,31 +446,31 @@ We also need to add the **ribbon** object property in the constructor of the **P
 This one is for you to do.
 
 ```js
-   function solve() {
-      class Ballon {
-         constructor (color, gasWeight) {
+function solve() {
+    class Ballon {
+        constructor(color, gasWeight) {
             this.color = color;
-            this. gasWeight = gasWeight;
-         }
-      }
+            this.gasWeight = gasWeight;
+        }
+    }
 
-      class PartyBallon extends Ballon { 
-         constructor (color, gasWeight, ribbonColor, ribbonLength) {
+    class PartyBallon extends Ballon {
+        constructor(color, gasWeight, ribbonColor, ribbonLength) {
             super(color, gasWeight);
             //TODO: Initialize ribbon object
-         }
+        }
 
-         get ribbon() {
+        get ribbon() {
             return this._ribbon;
-         }
-      }
+        }
+    }
 
-      return {
-         Ballon: Ballon,
-         PartyBallon: PartyBallon, 
-         BirthdayBallon: BirthdayBallon
-      }
-   }
+    return {
+        Ballon: Ballon,
+        PartyBallon: PartyBallon,
+        BirthdayBallon: BirthdayBallon
+    }
+}
 ```
 
 Now that we know how to inherit classes, create the **BirthdayBalloon** class on your own.
@@ -482,19 +482,19 @@ It is the same as the previous class.
 Lastly, we need to return an object containing all of our classes, so we can submit the solution.
 
 ```js
-   function solve() {
-      class Ballon {}
+function solve() {
+    class Ballon {}
 
-      class PartyBallon extends Ballon {}
+    class PartyBallon extends Ballon {}
 
-      class BirthdayBallon extends PartyBallon {}
+    class BirthdayBallon extends PartyBallon {}
 
-      return {
-         Ballon: Ballon,
-         PartyBallon: PartyBallon, 
-         BirthdayBallon: BirthdayBallon
-      }
-   }
+    return {
+        Ballon: Ballon,
+        PartyBallon: PartyBallon,
+        BirthdayBallon: BirthdayBallon
+    }
+}
 ```
 
 Submit a **function (NOT IIFE)**, which holds all classes, and returns them as an object.
@@ -740,14 +740,14 @@ We should begin by creating a parent class that will hold all properties shared 
 Looking at the problem description, we see the following structure for our parent object:
 
 ```js
-   {
-      age: Number,
-      name: String,
-      salary: Number,
-      tasks: [],
-      work: Function,
-      collectSalary: Function
-   }
+{
+    age: Number,
+    name: String,
+    salary: Number,
+    tasks: [],
+    work: Function,
+    collectSalary: Function
+}
 ```
 
 Data variables will be part of the object attached to its local context with **this** inside the **constructor**. 
@@ -757,22 +757,22 @@ Any properties that need to be initialized at instantiation time are defined as 
 Functions are defined inside the class body.
 
 ```js
-   class Employee {
-      constructor(name, age) {
-         this.name = name;
-         this.age = age;
-         this.salary = 0;
-         this.tasks = [];
-      }
+  class Employee {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+        this.salary = 0;
+        this.tasks = [];
+    }
 
-      work() {
-         // TODO cycle tasks
-      }
+    work() {
+        // TODO cycle tasks
+    }
 
-      collectSalary() {
-         //TODO get paid
-      }
-   }  
+    collectSalary() {
+        //TODO get paid
+    }
+}
 ```
 
 The problem description requires that the **parent** class is **abstract**. 
@@ -782,15 +782,15 @@ To achieve this, we have to add a condition in the constructor which prevents it
 Using the **new.target** keyword, we can check whether the object is created from the abstract constructor or through a child class.
 
 ```js
-   constructor(name, age) {
-      if (new.target === Employee) {
-         throw new Error("Cannot instantiate directly.")
-      }
-      this.name = name;
-      this.age = age;
-      this.salary = 0;
-      this.tasks = [];
-   }
+constructor(name, age) {
+    if (new.target === Employee) {
+        throw new Error("Cannot instantiate directly.")
+    }
+    this.name = name;
+    this.age = age;
+    this.salary = 0;
+    this.tasks = [];
+}
 ```
 
 The `work()` function has to cycle through the list of tasks and print the current one. 
@@ -798,23 +798,23 @@ The `work()` function has to cycle through the list of tasks and print the curre
 The easiest way to do this is to shift the first element from the array and push it to the end.
 
 ```js
-   work() {
-      let currentTask = this.tasks.shift();
-      console.log(this.name + currentTask);
-      this.tasks.push(currentTask)
-   }  
+work() {
+    let currentTask = this.tasks.shift();
+    console.log(this.name + currentTask);
+    this.tasks.push(currentTask)
+}  
 ```
 
 Printing the salary is pretty straightforward. However, since the manager has a bonus to his salary, it is best to get the whole sum with an internal function, that the manager can **override**.
 
 ```js
-   collectSalary() {
-      console.log(`${this.name} received ${this.getSalary()} this month`);
-   }
+collectSalary() {
+    console.log(`${this.name} received ${this.getSalary()} this month`);
+}
 
-   getSalary() { 
-      return this.salary;
-   }
+getSalary() {
+    return this.salary;
+}
 ```
 
 Now any objects that inherit from **Employee** will have all of their properties as well as anything new that is defined in their declaration. 
@@ -828,23 +828,23 @@ For **Junior** and **Senior**, the only difference from the parent **Employee** 
 Child classes will call the parent with any parameters that are needed and push their tasks directly to the array.
 
 ```js
-   class Junior extends Employee {
-      constructor(name, age) { 
-         super(name, age);
-         this.tasks.push(' is working on simple task.')
-      }
-   }
+class Junior extends Employee {
+    constructor(name, age) {
+        super(name, age);
+        this.tasks.push(' is working on simple task.')
+    }
+}
 ```
 
 ```js
-   class Senior extends Employee {
-      constructor(name, age) {
-         super(name, age);
-         this.tasks.push(' is working on a complicated task.');
-         this.tasks.push(' is taking time off work.');
-         this.tasks.push(' is supervising junior workers.');
-      }
-   }
+class Senior extends Employee {
+    constructor(name, age) {
+        super(name, age);
+        this.tasks.push(' is working on a complicated task.');
+        this.tasks.push(' is taking time off work.');
+        this.tasks.push(' is supervising junior workers.');
+    }
+}
 ```
 
 The **Manager** is not much different, with the exception that his constructor has to attach a **dividend** property that is initially set to zero. 
@@ -852,38 +852,50 @@ The **Manager** is not much different, with the exception that his constructor h
 His definition also needs to override the `getSalary()` function we added to the base class earlier, which includes the bonus.
 
 ```js
-  class Manager extends Employee {
-      constructor(name, age) {
-         super(name, age);
-         this.dividend = 0;
-         this.tasks.push(' scheduled a meeting.');
-         this.tasks.push(' is preparing a quarterly report.');
-      }
-      getSalary() {
-         return this.salary + this.dividend;
-      }
-   }
+class Manager extends Employee {
+    constructor(name, age) {
+        super(name, age);
+        this.dividend = 0;
+        this.tasks.push(' scheduled a meeting.');
+        this.tasks.push(' is preparing a quarterly report.');
+    }
+    getSalary() {
+        return this.salary + this.dividend;
+    }
+}
 ```
 
 After we are done with the definitions of all object constructors, we need to wrap them in a revealing module for use by other parts of our program without polluting the global namespace:
 
 ```js
-   function solve() {
+class Manager extends Employee {
+    constructor(name, age) {
+        super(name, age);
+        this.dividend = 0;
+        this.tasks.push(' scheduled a meeting.');
+        this.tasks.push(' is preparing a quarterly report.');
+    }
+    getSalary() {
+        return this.salary + this.dividend;
+    }
 
-   class Employee {}
+    function solve() {
 
-   class Junior extends Employee {}
+        class Employee {}
 
-   class Senior extends Employee {}
+        class Junior extends Employee {}
 
-   class Manager extends Employee {}
+        class Senior extends Employee {}
 
-   return {
-      Employee,
-      Junior,
-      Senior,
-      Manager,
-   };
+        class Manager extends Employee {}
+
+        return {
+            Employee,
+            Junior,
+            Senior,
+            Manager,
+        };
+    }
 }
 ```
 
@@ -1214,8 +1226,8 @@ Implement the following classes:
       Content: {postContent}
       Rating: {postLikes - postDislikes}
       Comments:
-       _ {comment1}
-       _ {comment2}
+       * {comment1}
+       * {comment2}
     ```
 
 In case **there are no comments**, return information only about the **title**, **content**, and the **rating** of the **post**.
@@ -1436,18 +1448,18 @@ yes
 [code-task title="Computer" taskId="js-advanced-prototypes-and-inheritance-computer" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
-   function computer() {
-      // Write your code here
-      
-      return {
-         Battery,
-         Keyboard,
-         Monitor,
-         Computer,
-         Laptop,
-         Desktop
-      }
-   }
+function computer() {
+    // Write your code here
+
+    return {
+        Battery,
+        Keyboard,
+        Monitor,
+        Computer,
+        Laptop,
+        Desktop
+    }
+}
 ```
 
 [/code-editor]
@@ -1492,11 +1504,11 @@ There should be a **getter** and a **setter** for the property and validation to
 
 - **Desktop** - a concrete class **extending** the **Computer** class that contains:
 
-   - **keyboard** - an instance of the **Keyboard** class containing the Desktop PC's Keyboard.
+   - **keyboard** - an instance of the **Keyboard** class containing the Desktop PC's Keyboard
 
 There should be a **getter** and a **setter** for the property and validation ensuring the argument that is passed in is an instance of the **Keyboard** class.
 
-   - **monitor** - an instance of the **Monitor** class containing the Desktop PC's Monitor.
+   - **monitor** - an instance of the **Monitor** class containing the Desktop PC's Monitor
    
 There should be a **getter** and a **setter** for the property and validation ensuring the argument that is passed in is an instance of the **Monitor** class.
 
@@ -1506,18 +1518,18 @@ There should be a **getter** and a **setter** for the property and validation en
 ## Example
 
 ```js
-   function createComputerHierarchy() {
-       //TODO: implement all the classes, with their properties
+function createComputerHierarchy() {
+    //TODO: implement all the classes, with their properties
 
-       return {
-           Battery,
-           Keyboard,
-           Monitor,
-           Computer,
-           Laptop,
-           Desktop
-       }
-   }
+    return {
+        Battery,
+        Keyboard,
+        Monitor,
+        Computer,
+        Laptop,
+        Desktop
+    }
+}
 ```
 
 You are asked to submit **ONLY the function** that returns an object containing the mentioned above classes.

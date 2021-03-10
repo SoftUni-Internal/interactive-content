@@ -25,20 +25,20 @@ This property allows us to add new **properties** to object **constructors**.
 For example:
 
 ```js live
-   function Person(first, last, age) {
-      this.firstName = first;
-      this.lastName = last;
-      this.age = age;
-   }
-   Person.prototype.nationality = function (nation) {
-      console.log(
-         `I am ${this.firstName} ${this.lastName}, ${this.age}, from ${nation}`
-      );
-   };
+function Person(first, last, age) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+}
+Person.prototype.nationality = function(nation) {
+    console.log(
+        `I am ${this.firstName} ${this.lastName}, ${this.age}, from ${nation}`
+    );
+};
 
-   let person = new Person('Joe', 'Jones', 20);
+let person = new Person('Joe', 'Jones', 20);
 
-   person.nationality('British');
+person.nationality('British');
 ```
 
 Here we have a **Person** function and we add **nationality** to its **prototype** property.
@@ -58,20 +58,20 @@ After **ES6**, we have the sugar syntax with classes.
 Here is an example of how they looked before ES6:
 
 ```js live
-   function Rectangle(width, height) {
-      this.width = width;
-      this.height = height;
-   }
+function Rectangle(width, height) {
+    this.width = width;
+    this.height = height;
+}
 
-   Rectangle.prototype.area = function () {
-      return this.width * this.height;
-   };
+Rectangle.prototype.area = function() {
+    return this.width * this.height;
+};
 
-   let rectangle = new Rectangle(3, 5);
+let rectangle = new Rectangle(3, 5);
 
-   let sum = rectangle.area();
+let sum = rectangle.area();
 
-   console.log(sum);
+console.log(sum);
 ```
 
 In this example, we created a function called **Rectangle**, which accepts as parameters **width** and **heigh**.
@@ -93,21 +93,21 @@ After **ES6**, we can do the same thing from the previous slide with classes.
 Here is how it will look like:
 
 ```js live
-   class Rectangle {
-      constructor(width, height) {
-         this.width = width;
-         this.height = height;
-      }
-      area() {
-         return this.width * this.height;
-      }
-   }
+class Rectangle {
+    constructor(width, height) {
+        this.width = width;
+        this.height = height;
+    }
+    area() {
+        return this.width * this.height;
+    }
+}
 
-   let rect = new Rectangle(3, 5);
+let rect = new Rectangle(3, 5);
 
-   let sum = rect.area();
+let sum = rect.area();
 
-   console.log(sum);
+console.log(sum);
 ```
 
 We create a class called **Rectangle**, which has a **width** and a **height** property.
@@ -149,16 +149,16 @@ It uses an **existing** object **prototype** to **delegate** its features to a *
 Here is an example:
 
 ```js live
-   const Dog = {
-      name: 'Sparky',
-      printInfo: function () {
-         console.log(`My name is ${this.name}. My breed is ${this.breed}`);
-      },
-   };
-   const MyDog = Object.create(Dog);
-   MyDog.name = 'Max';
-   MyDog.breed = 'shepherd';
-   MyDog.printInfo();
+const Dog = {
+    name: 'Sparky',
+    printInfo: function() {
+        console.log(`My name is ${this.name}. My breed is ${this.breed}`);
+    },
+};
+const MyDog = Object.create(Dog);
+MyDog.name = 'Max';
+MyDog.breed = 'shepherd';
+MyDog.printInfo();
 ```
 
 In this example, we declare an object called **Dog** with property **name** and a `printInfo()` method. 
@@ -180,14 +180,14 @@ The result will be printed on the console.
 Here is an example of **literal creation**:
 
 ```js live
-   let Person = {
-      me: 'I am John',
-      speak: function () {
-         console.log('Hello, ' + this.me + '.');
-      },
-   };
+let Person = {
+    me: 'I am John',
+    speak: function() {
+        console.log('Hello, ' + this.me + '.');
+    },
+};
 
-   Person.speak();
+Person.speak();
 ```
 
 We create the **Person** object with a property **name** and a `speak()` method. 
@@ -197,16 +197,16 @@ The `speak()` method will print the result from the concatenation.
 Have a look at the **Constructor creation**:
 
 ```js live
-   function Person(name) {
-      this.me = 'I am ' + name;
-      this.speak = function () {
-         return `Hello, ${this.me} .`;
-      };
-   }
+function Person(name) {
+    this.me = 'I am ' + name;
+    this.speak = function() {
+        return `Hello, ${this.me} .`;
+    };
+}
 
-   let person = new Person('John');
+let person = new Person('John');
 
-   console.log(person.speak());
+console.log(person.speak());
 ```
 
 In this example, we create a function **Person**, in which we set the **name** property and the `speak()` method. 
@@ -276,18 +276,18 @@ And here is an example of **prototype.set**:
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-27-prototype-chain-simple-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ```js live
-   function MakeSentence(greet) {
-      this.greet = greet;
-   }
+function MakeSentence(greet) {
+    this.greet = greet;
+}
 
-   MakeSentence.prototype.name = 'John';
+MakeSentence.prototype.name = 'John';
 
-   MakeSentence.prototype.concatenate = function (punctuation) {
-      return this.greet + ', I am ' + this.name + punctuation;
-   };
+MakeSentence.prototype.concatenate = function(punctuation) {
+    return this.greet + ', I am ' + this.name + punctuation;
+};
 
-   let makeSentence = new MakeSentence('Hi');
-   console.log(makeSentence.concatenate('!'));
+let makeSentence = new MakeSentence('Hi');
+console.log(makeSentence.concatenate('!'));
 ```
 
 We create a function called **MakeSentence** with a parameter **greet**.

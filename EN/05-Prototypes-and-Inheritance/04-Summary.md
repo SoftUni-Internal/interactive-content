@@ -1,10 +1,8 @@
-# Summary
-
 [slide hideTitle]
 
 # Summary
 
-## In this lesson you learned:
+## In this lesson, you learned:
 
 - What is Inheritance:
 
@@ -22,26 +20,26 @@
 
   - **literal creation**
 
-  ```js
-    let Greet = {
-      greet: 'Hi!',
-      print: function () {
+```js
+let Greet = {
+    greet: 'Hi!',
+    print: function() {
         console.log(this.greet);
-      },
-    };
-  ```
+    },
+};
+```
 
   - **Constructor creation**
 
-  ```js 
-    function Greet() {
-      this.greet = 'Hi!';
-      this.print = function () {
+```js 
+ function Greet() {
+    this.greet = 'Hi!';
+    this.print = function() {
         return `${this.greet}`;
-      };
-    }
+    };
+}
 
-    let greet = new Greet();
-  ```
+let greet = new Greet();  
+```
 
 [/slide]

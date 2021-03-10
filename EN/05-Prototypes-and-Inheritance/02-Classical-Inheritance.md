@@ -43,25 +43,25 @@ Child classes can:
 Here is an example:
 
 ```js live
-   class Person {
-      constructor(name, email) {
-         this.name = name;
-         this.email = email;
-     }
-   }
+class Person {
+    constructor(name, email) {
+        this.name = name;
+        this.email = email;
+    }
+}
 
-   class Teacher extends Person {
-      constructor(name, email, subject) {
-         super(name, email);
-         this.subject = subject;
-      }
-   }
+class Teacher extends Person {
+    constructor(name, email, subject) {
+        super(name, email);
+        this.subject = subject;
+    }
+}
 
-   let person = new Person('John', 'john@gmail.com');
-   console.log(`Person: ${person.name} (${person.email})`);
+let person = new Person('John', 'john@gmail.com');
+console.log(`Person: ${person.name} (${person.email})`);
 
-   let teacher = new Teacher('Joe', 'joe@yahoo.com', 'JavaScript');
-   console.log(`Teacher: ${teacher.name} (${teacher.email}), teaches ${teacher.subject}`);
+let teacher = new Teacher('Joe', 'joe@yahoo.com', 'JavaScript');
+console.log(`Teacher: ${teacher.name} (${teacher.email}), teaches ${teacher.subject}`);
 ```
 
 In this example, we create two classes. 
@@ -102,28 +102,28 @@ Here is an example of using classes:
 
 
 ```js live
-   class Person {
-      constructor(who) {
-         this.me = who;
-      }
-      identify() {
-         return 'I am ' + this.me;
-      }
-   }
+class Person {
+    constructor(who) {
+        this.me = who;
+    }
+    identify() {
+        return 'I am ' + this.me;
+    }
+}
 
-   class Man extends Person {
-      constructor(who) {
-         super(who);
-      }
-      speak() {
-         console.log('Hello, ' + this.identify() + '.');
-      }
-   }
+class Man extends Person {
+    constructor(who) {
+        super(who);
+    }
+    speak() {
+        console.log('Hello, ' + this.identify() + '.');
+    }
+}
 
-   let John = new Man('John');
-   let Joe = new Man('Joe');
-   John.speak();
-   Joe.speak();
+let John = new Man('John');
+let Joe = new Man('Joe');
+John.speak();
+Joe.speak();
 ```
 
 In this example, the "**Man**" class inherits the properties and the methods from the **Person** class.
@@ -144,27 +144,27 @@ In the `speak()` method, we use the **identify** method, inherited from the **Pe
 Let us see how it will look with functions:
 
 ```js live
-   function Person(who) {
-      this.me = who;
-   }
-   Person.prototype.identify = function () {
-      return 'I am ' + this.me;
-   };
+function Person(who) {
+    this.me = who;
+}
+Person.prototype.identify = function() {
+    return 'I am ' + this.me;
+};
 
-   function Man(who) {
-      Person.call(this, who);
-   }
+function Man(who) {
+    Person.call(this, who);
+}
 
-   Man.prototype = Object.create(Person.prototype);
+Man.prototype = Object.create(Person.prototype);
 
-   Man.prototype.speak = function () {
-      console.log('Hello, ' + this.identify() + '.');
-   };
+Man.prototype.speak = function() {
+    console.log('Hello, ' + this.identify() + '.');
+};
 
-   let john = new Man('John');
-   let joe = new Man('Joe');
-   john.speak();
-   joe.speak();
+let john = new Man('John');
+let joe = new Man('Joe');
+john.speak();
+joe.speak();
 ```
 
 In this example, we create a **Person** with a parameter **who**. 

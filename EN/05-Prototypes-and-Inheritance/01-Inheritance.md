@@ -42,25 +42,25 @@ This type of inheritance is only used for **extending** the parent class.
 Here is a basic example:
 
 ```js live
-    class Pet {
+class Pet {
     constructor(name) {
         this.name = name;
-        }
+    }
+}
+
+class Dog extends Pet {
+    constructor(name, breed) {
+        super(name);
+        this.breed = breed;
     }
 
-    class Dog extends Pet {
-     constructor(name, breed) {
-         super(name);
-         this.breed = breed;
-      }
-
-      bark() {
-          console.log("Bau Bau")
-      }
+    bark() {
+        console.log('wuf wuf')
     }
+}
 
-    const dog = new Dog()
-    dog.bark()
+const dog = new Dog()
+dog.bark()
 ```
 
 In this example, we **extended** the **class Pet** with a **class Dog**. 
@@ -84,32 +84,32 @@ The **grandchild** class will obtain the features of the **parent** and the **ch
 Here is an example:
 
 ```js live
-    class Vehicle {
+class Vehicle {
     constructor(type) {
-         this.type = type;
-        }
+        this.type = type;
+    }
+}
+
+class Brand extends Vehicle {
+    constructor(type, brand) {
+        super(type);
+        this.brand = brand;
+    }
+}
+
+class Ferrari extends Brand {
+    constructor(type, brand, model) {
+        super(type, brand);
+        this.model = model;
     }
 
-    class Brand extends Vehicle {
-        constructor(type, brand) {
-            super(type);
-            this.brand = brand;
-        }
+    print() {
+        console.log(`${this.type} - ${this.brand} - ${this.model}`)
     }
+}
 
-    class Ferrari extends Brand {
-        constructor(type, brand, model) {
-            super(type, brand);
-            this.model = model;
-        }
-
-        print(){
-            console.log(`${this.type} - ${this.brand} - ${this.model}`)
-        }
-    }
-
-    const ferrari = new Ferrari("Supercar", "Ferrari", "488 GTB")
-    ferrari.print()
+const ferrari = new Ferrari('Supercar', 'Ferrari', '488 GTB')
+ferrari.print()
 ```
 
 In this example, we extended the **Vehicle** class with a class **Brand**.
@@ -135,25 +135,25 @@ The downside is that if we change something in the **parent** class, we need to 
 Here is an example:
 
 ```js
-    class Pet {
-        constructor(name) {
-            this.name = name;
-         }
+class Pet {
+    constructor(name) {
+        this.name = name;
     }
+}
 
-    class Dog extends Pet {
-         constructor(name, age) {
-             super(name);
-             this.age = age;
-          }
+class Dog extends Pet {
+    constructor(name, age) {
+        super(name);
+        this.age = age;
     }
+}
 
-    class Cat extends Pet {
-        constructor(name, age) {
-            super(name);
-            this.age = age;
-          }
+class Cat extends Pet {
+    constructor(name, age) {
+        super(name);
+        this.age = age;
     }
+} 
 ```
 
 In this example, the **Dog** and the **Cat** classes inherit the **Pet** class.
