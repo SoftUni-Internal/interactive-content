@@ -4,10 +4,7 @@
 
 # Infinite Loops
 
-[vimeo-video]
-[stream language="EN" videoId="487119696/795eeac3a1" default /]
-[stream language="RO" videoId="487119696/795eeac3a1" /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/04-For-Loop/JS-basics-for-30-32-infinite-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Buclele infinite pot **repeta un bloc de cod de un număr nelimitat.**
 
@@ -32,10 +29,7 @@ for (;;) {
 
 # Problemă cu soluție: Sum Numbers Until 0
 
-[vimeo-video]
-[stream language="EN" videoId="487119738/e0db9467e8" default /]
-[stream language="RO" videoId="487119738/e0db9467e8" /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/04-For-Loop/JS-basics-for-33-34-problem-and-solution-sum-numbers-until-zero-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sum Numbers Until 0" taskId="pb-js-for-loop-Sum-Numbers-Until-0" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

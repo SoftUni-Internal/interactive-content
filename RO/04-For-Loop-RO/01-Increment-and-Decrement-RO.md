@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Operatori de incrementare și decrementare
 
-[vimeo-video]
-[stream language="EN" videoId="487119117/f65ddf18a0" default /]
-[stream language="RO" videoId="487119117/f65ddf18a0"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/04-For-Loop/JS-basics-for-3-4-5-Increment-and-Decrement-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 Operatorul de incrementare unitar `++` își incrementează operandul cu 1, în timp ce operatorul de decrementare unitar `--` îl decrementează cu 1.

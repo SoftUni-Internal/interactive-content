@@ -6,10 +6,7 @@
 
 # Exemplu din viața reală: Mutatul vaselor
 
-[vimeo-video]
-[stream language="EN" videoId="487119221/9c519c14e8" default /]
-[stream language="RO" videoId="487119221/9c519c14e8" /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/04-For-Loop/JS-basics-for-9-10-Real-life-example-Moving-dishes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Să spunem că vreți să umpleți mașina de spălat vase cu farfurii.
 
@@ -27,10 +24,7 @@ Când îndepliniți acea condiție, bucla se oprește.
 
 # Bucla For 
 
-[vimeo-video]
-[stream language="EN" videoId="487119239/423a548f1b" default /]
-[stream language="RO" videoId="487119239/423a548f1b" /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/04-For-Loop/JS-basics-for-11-13-For-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În programare, de multe ori trebuie executat un bloc de comenzi, în mod repetat.
 
@@ -86,6 +80,8 @@ Bucla se repetă de 10 ori și fiecate repetare se numește **iterație**.
 [slide hideTitle]
 
 # Problemă cu soluție: Print Sum of N Numbers
+
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/04-For-Loop/JS-basics-for-15-Solution-Print-Sum-of-N-Numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Print Sum of N Numbers" taskId="pb-js-for-loop-Print-Sum-of-N-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -169,10 +165,7 @@ printSum(6)
 
 # Problemă cu soluție: Greatest Number
 
-[vimeo-video]
-[stream language="EN" videoId="487119324/39b9907585" default /]
-[stream language="RO" videoId="487119324/39b9907585" /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/04-For-Loop/JS-basics-for-17-solution-biggest-number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Greatest Number" taskId="pb-js-for-loop-Greatest-Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

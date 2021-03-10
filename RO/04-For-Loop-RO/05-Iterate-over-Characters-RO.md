@@ -4,10 +4,7 @@
 
 # Iterația peste caractere
 
-[vimeo-video]
-[stream language="EN" videoId="487119574/ea95aca57d" default /]
-[stream language="RO" videoId="487119574/ea95aca57d" /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/04-For-Loop/JS-basics-for-24-27-iterating-over-characters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Este bine de știut că **buclele for** nu funcționează doar cu numere.
 
@@ -77,6 +74,8 @@ console.log(asciiValue);
 [slide hideTitle]
 
 # Problemă cu soluție: Latin Letters
+
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/04-For-Loop/JS-basics-for-29-solution-latin-letters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Latin Letters" taskId="pb-js-for-loop-Latin-Letters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

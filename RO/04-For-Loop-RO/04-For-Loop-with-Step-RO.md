@@ -4,10 +4,7 @@
 
 # Bucla For cu un pas
 
-[vimeo-video]
-[stream language="EN" videoId="487119404/67365f350f" default /]
-[stream language="RO" videoId="487119404/67365f350f" /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/04-For-Loop/JS-basics-for-18-19-loops-with-a-step-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În această secține vom oferi mai multe detalii cu privre la o parte specială și foarte importantă a buclei "**for**", **și anume pasul.**
 
@@ -49,10 +46,7 @@ for (let i = 10; i >= 1; i--) {
 
 # Problemă cu soluție: Number Ending with 7
 
-[vimeo-video]
-[stream language="EN" videoId="487119426/15f9ad851f" default /]
-[stream language="RO" videoId="487119426/15f9ad851f" /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/04-For-Loop/JS-basics-for-21-solution-numbers-ending-in-7-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Number Ending with 7" taskId="pb-js-for-loop-Number-Ending-with-7" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -158,6 +152,8 @@ numbersEndingWith7(130)
 [slide hideTitle]
 
 # Problemă cu soluție: Exam Countdown
+
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/04-For-Loop/JS-basics-for-23-solution-exam-countdown-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Exam Countdown" taskId="pb-js-for-loop-Exam-Countdown" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
