@@ -338,17 +338,17 @@ if (!inRange) {
 [/slide]
 
 [slide hideTitle]
-# The Parenthesis  Operator
+# Parentheses
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-23-logical-not-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Like the rest of the operators in programming, the operators `&&` and `||` have a priority, as in the case `&&` is with higher priority than `||`. 
+Some of the logical operators have higher priority than others. For example, the `&&` operator has higher priority than `||`. 
 
-The operator `()` serves for **changing the priority of operators** and is being calculated first, just like in maths. 
+We can alter the execution prioritisation using parentheses just like in mathematical expressions.
 
-Using parentheses also gives the code better readability and is considered a good practice.
+Using parentheses can improve code readability. It is generally considered a good practice.
 
-Example of checking whether a variable belongs to certain ranges:
+Here is an example of checking whether a variable belongs to certain ranges, utilizing parentheses:
 ```java 
 if (x < 0) || ((x >= 5) && (x <= 10)) || (x > 20) {
     // Commands
