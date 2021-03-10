@@ -305,7 +305,7 @@ Click "Continue".
 
 Next, we need to add an App.
 
-Click on this sing "</>".
+Click on this sing "\<\/\>".
 
 [image assetsSrc="Remote-Databases(6).png" /]
 
