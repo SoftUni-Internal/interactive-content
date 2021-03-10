@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Cinema Income
 
-[vimeo-video]
-[stream language="EN" videoId="487118285/74e8a9a9c7" default /]
-[stream language="RO" videoId="487118285/74e8a9a9c7"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/07-Exam-Preparation/JS-exam-preparation-4-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Cinema Income" taskId="js-pb-exam-preparation-Cinema-Income" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

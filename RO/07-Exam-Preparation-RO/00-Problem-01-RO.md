@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Calculator for TV series
 
-[vimeo-video]
-[stream language="EN" videoId="487118037/76e61cd949" default /]
-[stream language="RO" videoId="487118037/76e61cd949"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/07-Exam-Preparation/JS-exam-preparation-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Calculator for TV series" taskId="js-pb-exam-preparation-Calculator-for-TV-series" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

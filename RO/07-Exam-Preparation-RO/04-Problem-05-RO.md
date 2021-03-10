@@ -4,10 +4,7 @@
 
 # TV Series Budget
 
-[vimeo-video]
-[stream language="EN" videoId="487118385/044812fcf3" default /]
-[stream language="RO" videoId="487118385/044812fcf3"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/07-Exam-Preparation/JS-exam-preparation-5-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="TV Series Budget" taskId="js-pb-exam-preparation-TV-Series-Budget" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
