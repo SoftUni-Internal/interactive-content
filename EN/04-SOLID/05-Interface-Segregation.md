@@ -102,7 +102,7 @@ The solution to interface segregation is simple.
 
 Just keep your interfaces small but with strong cohesion.
 
-Applying the **Single-Responsibility** will help you make sure that your interfaces serve one role only.
+Applying the **single responsibility principle** alongside ISP will help you make sure that your interfaces serve one role only.
 
 [/slide]
 
