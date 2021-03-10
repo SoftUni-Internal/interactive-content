@@ -103,7 +103,7 @@ Check the examples below to see how your code will be executed
 
 Whenever you receive the command **print**, the output should be the **printed** to the console.
 
-## Examples
+## Example One
 
 | **Input** | **Output** |
 | --- | --- |
@@ -114,6 +114,8 @@ Whenever you receive the command **print**, the output should be the **printed**
 | `firstZeroTest.removeStart(3);` | |
 | `firstZeroTest.removeEnd(4);` | |
 | `firstZeroTest.print();` | |
+
+## Example Two
 
 | **Input** | **Output** |
 | --- | --- |

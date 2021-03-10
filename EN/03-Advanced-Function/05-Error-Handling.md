@@ -167,9 +167,9 @@ If ``TypeError`` is thrown, the rest of the code **will not** be executed.
 
 The **try-catch** construct consists of two main blocks: 
 
-- **try**, which contains your code
+- `try`, which contains your code
 
-- **catch**, containing **error handling** logic
+- `catch`, containing **error handling** logic
 
 ```js
 try {

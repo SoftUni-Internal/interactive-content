@@ -743,31 +743,47 @@ All fields should be named **exactly as described** \(their order is not importa
 
 Look at the sample output for more information.
 
-## Example
+## Example One
 
-|**Input**|**Output**|
-|---|---|
-|'Peter', 29, 75, 182|\{
+**Input**
+
+'Peter', 29, 75, 182
+
+**Output**
+
+```
+{
     name: 'Peter',
-    personalInfo: \{
+    personalInfo: {
         age: 29,
         weight: 75,
         height: 182
-    \}
+    }
     BMI: 23,
     status: 'normal'
-\}|
-|'Honey Boo Boo', 9, 57, 137|\{
-    name: 'Honey Boo Boo',
-    personalInfo: \{
+}
+```
+## Example Two
+
+**Input**
+
+'Adrian', 9, 57, 137
+
+**Output**
+
+```
+{
+    name: 'Adrian',
+    personalInfo: {
         age: 9,
         weight: 57,
         height: 137
-    \},
+    },
     BMI: 30,
     status: 'obese',
     recommendation: 'admission required'
-\}|
+}
+```
 
 [/task-description]
 [code-io /]
@@ -790,9 +806,9 @@ yes
 [/test]
 [test open]
 [input]
-var chart = result('Honey Boo Boo', 9, 57, 137);
+var chart = result('Adrian', 9, 57, 137);
 
-expect(chart.name).to.equal('Honey Boo Boo');
+expect(chart.name).to.equal('Adrian');
 expect(chart.personalInfo.age).to.equal(9);
 expect(chart.personalInfo.weight).to.equal(57);
 expect(chart.personalInfo.height).to.equal(137);
@@ -1181,6 +1197,8 @@ manager('restock flavour 50');  // Success
 manager('prepare lemonade 4');  // Error: not enough carbohydrate in stock
 ```
 
+## Example One
+
 |**Input**|**Output**|
 |---|---|
 |'restock carbohydrate 10'|Success|
@@ -1190,6 +1208,7 @@ manager('prepare lemonade 4');  // Error: not enough carbohydrate in stock
 |'prepare burger 1'|Success|
 |'report'|protein=0 carbohydrate=4 fat=3 flavour=5|
 
+## Example Two
 |**Input**|**Output**|
 |---|---|
 |'prepare turkey 1'|Error: not enough protein in stock|
