@@ -61,17 +61,17 @@ The function will look like this:
 let button = document.getElementById('#load');
 
 button.addEventListener('click', function loadRepos() {
-   let url = 'https://api.github.com/users/softuni/repos';
-   const httpRequest = new XMLHttpRequest();
+    let url = 'https://api.github.com/users/softuni/repos';
+    const httpRequest = new XMLHttpRequest();
 
-   httpRequest.addEventListener('readystatechange', function () {
-      if (httpRequest.readyState == 4 && httpRequest.status == 200) {
-         document.getElementById('res').textContent = httpRequest.responseText;
-      }
-   });
+    httpRequest.addEventListener('readystatechange', function() {
+        if (httpRequest.readyState == 4 && httpRequest.status == 200) {
+            document.getElementById('res').textContent = httpRequest.responseText;
+        }
+    });
 
-   httpRequest.open('GET', url);
-   httpRequest.send();
+    httpRequest.open('GET', url);
+    httpRequest.send();
 });
 ```
 
@@ -109,13 +109,13 @@ In this example, we will see how the **new Promise** works:
 let first = 'Before promise'
 console.log(first);
 
-new Promise(function (resolve, reject) {
-   setTimeout(function () {
-      resolve('done');
-   }, 500);
-}).then(function (res) {
-   let second = 'Then returned: ' + res
-   console.log(second);
+new Promise(function(resolve, reject) {
+    setTimeout(function() {
+        resolve('done');
+    }, 500);
+}).then(function(res) {
+    let second = 'Then returned: ' + res
+    console.log(second);
 });
 
 let third = 'After promise'
@@ -148,8 +148,8 @@ Here is an example of how `fetch()` works:
 
 ```js
 fetch('/api/example.json')
-   .then(function (response) {})
-   .catch(function (err) {});
+    .then(function(response) {})
+    .catch(function(err) {});
 ```
 
 # Basic Fetch Request
@@ -168,10 +168,10 @@ Here is an example of that action:
 
 ```js
 if (response.status !== 200) {
-   console.error('Request failed')
+    console.error('Request failed')
 }
 
-response.json().then(function (data) {});
+response.json().then(function(data) {});
 ```
 
 We check the response status and if it is **200**, we continue with parsing the response.
@@ -194,13 +194,13 @@ Here is a basic example:
 
 ```js
 fetch('example.json')
-   .then(res => res.json())
-   .then(data => {
-      console.log(data)
-   })
-   .catch(err => {
-      console.error('Request Failed');
-   });
+    .then(res => res.json())
+    .then(data => {
+        console.log(data)
+    })
+    .catch(err => {
+        console.error('Request Failed');
+    });
 ```
 
 In this example, we parse the response to JSON, and we print the parsed date on the console.
@@ -223,9 +223,9 @@ Here is an example:
 
 ```js
 fetch('https://api.github.com/users/softuni/repos')
-   .then((response) => response.json())
-   .then((data) => console.log(data))
-   .catch((error) => console.error(error));
+    .then((response) => response.json())
+    .then((data) => console.log(data))
+    .catch((error) => console.error(error));
 ```
 
 To see how it works, run it in the Chrome DevTools console.
@@ -252,9 +252,11 @@ It will look like this:
 
 ```js
 fetch('https://api.github.com/repos/softni/js-apps/issues', {
-   method: 'POST',
-   headers: { 'Content-type': 'application/json' },
-   body: JSON.stringify(data),
+    method: 'POST',
+    headers: {
+        'Content-type': 'application/json'
+    },
+    body: JSON.stringify(data),
 });
 ```
 

@@ -100,7 +100,7 @@ Create a program that tracks the progress of a bus on its route and announces it
 
 The program should display the upcoming stop and once the bus arrives, request the name of the next one.
 
-The bus has two states – **moving** and **stopped**.
+The bus has two states - **moving** and **stopped**.
 
 When it is **stopped**, only the button **Depart** is **enabled** while the infobox shows the name of the **current** stops.
 
@@ -194,14 +194,6 @@ This allows **Depart** to be clicked again, which makes a new request and update
 [/slide]
 
 
-
-
-
-
-
-
-
-
 [slide hideTitle]
 
 # Problem: Messenger
@@ -242,7 +234,6 @@ Use the following message format:
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-20.png" /]
 
 [/slide]
-
 
 
 [slide hideTitle]
