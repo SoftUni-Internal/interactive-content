@@ -203,7 +203,14 @@ We will **obtain** `true` every time when at least one of the arguments has a `t
 | false | true | true |
 | false | false | false |
 
-At school the teacher says: "John or Peter should clean the board". To fulfill this condition (to clean the board), it is possible either just for John to clean it, or just for Peter to clean it, or both of them to do it.
+## Example:
+If a teacher at school says: "John or Peter should clean the board", there are four possible outcomes:
+
+- John cleans the board
+- Peter cleans the board
+- Both of them complete the task
+- None of them can assist the teacher at the moment
+
 
 # How Does the `||` Operator Work?
 We have already learned what the logical **OR** represents. But how is it actually being achieved? 
