@@ -3,8 +3,8 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/java-basics-conditional-statements-advanced-9-10-nested-conditional-statements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Pretty often the program logic requires the use of `if` or `if-else` statements, which are contained one inside another.  
-They are called **nested** `if` or `if-else` statements. 
+Often, program logic requires the use of `if` or `if-else` statements, which are contained one inside another.  
+These are called **nested** `if` or `if-else` statements. 
 
 As implied by the title **"nested"**, these are `if` or `if-else` statements that are placed inside other `if` or `else` statements.
 
@@ -19,24 +19,24 @@ if (condition1) {
 ```
 
 # Example: Personal Titles
-Depending on **age** (decimal number and **gender** (**m** / **f**), print a personal title:
--  "Mr." – a man (gender "m") – 16 or more years old
--  "Master" – a boy (gender "m") under 16 years
--  "Ms." – a woman (gender "f") – 16 or more years old
--  "Miss" – a girl (gender "f") under 16 years
+Depending on someones **age** (integer) and their **gender** (**m** / **f**), print their personal title:
+-  "Mr." – a man (gender "m") – 16 or older
+-  "Master" – a boy (gender "m") - under 16 years old
+-  "Ms." – a woman (gender "f") – 16 or molder
+-  "Miss" – a girl (gender "f") - under 16 years old
 
-# Solution: Person Titles
-We should notice that the **output** of the program **depends on a few things**. 
+# Solution: Personal Titles
+We should notice that the **output** of the program **depends on a few conditions**. 
 
-**First**, we have to check what is the entered **gender** and **then** check the **age**. 
+**First**, we have to check what their **gender** is and **then** their **age**. 
 
-Respectively, we are going to use **a few** `if-else` blocks. 
+We are going to use **a few** `if-else` blocks. 
 
-These blocks will be **nested**, meaning from **the result** of the first, we are going to **define** which one of the **others** to execute.
+These blocks will be **nested**, so that by **the result** of the outer one, we are going to **define** which one of the **nested ones** to execute.
 
 The diagram below illustrates the process in detail:
 
-[image assetsSrc="01.Personal-titles-01.jpg" /]
+[image assetsSrc="01.Personal-titles-01.jpg" /] 
 
 After reading the input data from the console, the following program logic should be executed:
 ```java
@@ -60,9 +60,11 @@ if (age < 16) {
 ```
 
 # Deep nesting
-Nesting of **more than three conditional statements** inside each other is not considered a good practice.
+Nesting **more than three levels of conditional statements** is not considered a good practice.
 
-It **has to be avoided**, mostly through optimization of the structure/the algorithm of the code and/or by using another type of conditional statement.
+We can optimize the code structure by using another type of conditional statement.
+
+
 [/slide]
 
 [slide hideTitle]
@@ -85,9 +87,9 @@ public class Main
 [/code-editor]
 [task-description]
 # Description
-Write a program which:
-  * Reads a **product** and **day** from the console
-  * Prints the **price**, formatted to 2nd digit, based on the price table below
+Create a program that:
+  * Reads a **product** and whether it is a **weekday** or a **weekend** 
+  * Prints out the **price**, formatted up to 2nd decimal place, based on the price table below
 
 |Product|Weekday|Weekend| 
 |-------|-------|-------|
@@ -148,10 +150,10 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Write a program, which:
+Create a program, that:
 
   * Reads **3 numbers** from the console
-  * Prints **the biggest** number
+  * Prints out **the greatest** number
 # Example
 
 | Input | Output |
