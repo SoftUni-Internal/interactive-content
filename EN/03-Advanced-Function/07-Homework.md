@@ -373,8 +373,8 @@ The output should be the **sorted array**.
 
 |**Input**|**Output**|
 |---|---|
-|`[14, 7, 17, 6, 8], 'asc'`|[6, 7, 8, 14, 17]|
-|`[14, 7, 17, 6, 8], 'asc'`|[6, 7, 8, 14, 17]|
+|[14, 7, 17, 6, 8], 'asc'|[6, 7, 8, 14, 17]|
+|[14, 7, 17, 6, 8], 'asc'|[6, 7, 8, 14, 17]|
 
 [/task-description]
 [code-io /]
@@ -483,7 +483,7 @@ You will receive a series of arguments **passed** to your function.
 
 **Output**
 
-```
+``` js
 string: cat
 number: 42
 function: function () { console.log('Hello world!'); }
@@ -491,6 +491,7 @@ string = 1
 number = 1
 function = 1
 ```
+
 
 [/task-description]
 [code-io /]
@@ -715,17 +716,17 @@ You can find information about how to calculate it [here](https://en.wikipedia.o
   
 The status is one of the following:
 
-- **underweight**, for BMI less than 18.5
+- **Underweight**, for BMI less than 18.5
   
-- **normal**, for BMI less than 25
+- **Normal**, for BMI less than 25
   
-- **overweight**, for BMI less than 30
+- **Overweight**, for BMI less than 30
   
-- **obese**, for BMI 30 or more
+- **Obese**, for BMI 30 or more
   
 Once the BMI and status are calculated, you can make a recommendation. 
 
-If the patient is obese, add an additional property called recommendation and set it to “**admission required**”.
+If the patient is obese, add an additional property called recommendation and set it to "**admission required**".
 
 
 ## Input
@@ -744,32 +745,29 @@ Look at the sample output for more information.
 
 ## Example
 
-**Input**
-
-`'Peter', 29, 75, 182`
-
-**Output**
-
-```
-{ name: 'Peter',
-  personalInfo: {
-    age: 29,
-    weight: 75,
-    height: 182
-  }
-  BMI: 23
-  status: 'normal' }
-```
-
-**Input**
-
-`'Honey Boo Boo', 9, 57, 137`
-
-**Output**
-
-```
-{ name: 'Honey Boo Boo', personalInfo: { age: 9, weight: 57, height: 137 }, BMI: 30, status: 'obese', recommendation: 'admission required' }
-```
+|**Input**|**Output**|
+|---|---|
+|'Peter', 29, 75, 182|\{
+    name: 'Peter',
+    personalInfo: \{
+        age: 29,
+        weight: 75,
+        height: 182
+    \}
+    BMI: 23,
+    status: 'normal'
+\}|
+|'Honey Boo Boo', 9, 57, 137|\{
+    name: 'Honey Boo Boo',
+    personalInfo: \{
+        age: 9,
+        weight: 57,
+        height: 137
+    \},
+    BMI: 30,
+    status: 'obese',
+    recommendation: 'admission required'
+\}|
 
 [/task-description]
 [code-io /]
@@ -958,7 +956,7 @@ Look at the sample output for more information.
 |solution.multiply([3.5, -2], 2)|[7, -4]|[3.5 \* 2, (-2) * 2] = [7, -4]|
 |solution.length([3, -4])|5|sqrt(3 \* 3 + (-4) \* (-4)) = 5|
 |solution.dot([1, 0], [0, -1])|0|1 \* 0 + 0 \* (-1) = 0|
-|solution.cross([3, 7], [1, 0])|-7|3 \* 0 \– 7 \* 1 = -7|
+|solution.cross([3, 7], [1, 0])|-7|3 \* 0 - 7 \* 1 = -7|
 
 [/task-description]
 [code-io /]
