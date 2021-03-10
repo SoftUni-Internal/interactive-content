@@ -1,6 +1,8 @@
+# Reflection API
+
 [slide hideTitle]
 
-# Reflection API
+# The Class Object
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-8-9-the-class-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -8,9 +10,9 @@ Let us continue with some more detailed information about Classes in Java Reflec
 
 Java provides us a static class with the name `Class` in `java.lang.package`. 
 
-Instances that are inside the `Class` acts for interfaces and classes in a running Java application.
+Instances that are inside the `Class are responsible for interfaces and classes in a running Java application.
 
-We can create object of `Class` by using one of the following options:
+We can create an object of `Class` by using one of the following options:
 
 - `.class` extension
 
@@ -99,7 +101,7 @@ class com.company.Mammal
 ```
 
 
-Now, let us obtain our methods and interfaces in our classes.
+Now, let us obtain the methods and interfaces in our classes.
 
 Interfaces are also represented by `Class` objects in Java Reflection:
 
