@@ -1,28 +1,32 @@
 [slide hideTitle]
-# While or For Loop?
+# Difference Between While-Loop And For-Loop
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/EN/Java-While-Loops-12-13-While-or-for-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-`while` and `for` loops both **repeat** a block of **code**.
+Both `while-loop` and `for-loop` **repeat** a block of **code**.
 
-But there are different situations when writing code that require either the first loop, or the other.
+There are different situations when we have to choose the right loop in order to achieve our goals. 
 
-When you know **exactly how many times** you want to loop through a block of code, use the `for` loop.
+When we know **exactly how many times** we want to loop through a block of code, we use а `for-loop`. 
 ```java live
 for (int i = 0; i <= 5; i++) {
     System.out.println(i);
 }
 ```
 
-It is usually appropriate for loops in which the initialization and increment are single statements and logically related. 
+A **for-loop** is more structured than а **while-loop**. The keyword `for` is used, followed by three statements:
 
-It is more compact than `while` and it keeps the loop control statements together in one place.
+- Statement 1 sets a variable before the loop starts (int `i` = 0)
 
-But, there could be many **complex** problems where number of iterations depend upon a certain **condition** and can't be predicated beforehand. 
+- Statement 2 defines the condition for the loop to run (`i` must be less than 5). If the condition is **true**, the loop will start over again. If it is **false**, the loop will end
 
-That means we don't know in advance **how many times** to repeat a loop.
+- Statement 3 increases a value (`i`++) each time the code block in the loop has been executed
 
-In those situation it is better to use `while` loop.
+
+There could be many **complex** problems where the number of iterations depends on a certain **condition** so that it can not be predicted beforehand. 
+
+In other words, if the number of iteration is not fixed, it is recommended to use a `while-loop`.
+
 ```java live
 Scanner scanner = new Scanner(System.in);
 String command = scanner.nextLine();
@@ -63,9 +67,9 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which:
+Create a program that:
 
-* Reads numbers from the console until it gets an **odd number**
+* Reads numbers from the console, until an **odd number** is entered
 * Prints the **odd** number
 
 ## Example
@@ -116,13 +120,13 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which:
+Create a program that:
 
 * Reads a number from the console
-* Reads the following commands:
-* **Add** - Аdds 1 to the number
-* **Subtract** - Subtracts 1 from the number
-* **END** -  Prints the number and stops the program
+* Reads the following commands and executes the specified actions:
+* **Add** - Аdds **1** to the number
+* **Subtract** - Subtracts **1** from the number
+* **END** -  Prints the number and ends the program
 
 ## Example
 
