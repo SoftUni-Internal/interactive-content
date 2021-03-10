@@ -101,10 +101,9 @@ let person = {
     age: 50
 }
 
-Object.defineProperty(person, 'age',
-    {
-        enumerable: false
-    });
+Object.defineProperty(person, 'age', {
+    enumerable: false
+});
 
 for (const property in person) {
     const item = `${property}: ${person[property]}`;
@@ -138,9 +137,13 @@ Values of **non-writable** properties cannot be changed using assignments.
 Using `Object.defineProperty` by specifying a property that does not exist in our object, we can add a brand new property to that object, set its value and make it non-writable:
 
 ```js live
-let object = { property: 2 };
-Object.defineProperty(object, 'anotherProperty',
-    { value: 2, writable: false });
+let object = {
+    property: 2
+};
+Object.defineProperty(object, 'anotherProperty', {
+    value: 2,
+    writable: false
+});
 
 console.log('Original value:', object.anotherProperty);
 
@@ -180,11 +183,22 @@ Any attempt to change any other internal property **will fail** and throw a **Ty
 
 ```js
 let ob = {};
-Object.defineProperty(ob, 'a', { configurable: false, writable: true });
-Object.defineProperty(ob, 'a', { enumerable: true }); // throws a TypeError
-Object.defineProperty(ob, 'a', { value: 12 }); // throws a TypeError
-Object.defineProperty(ob, 'a', { writable: false }); // This is allowed!!
-Object.defineProperty(ob, 'a', { writable: true }); // throws a TypeError
+Object.defineProperty(ob, 'a', {
+    configurable: false,
+    writable: true
+});
+Object.defineProperty(ob, 'a', {
+    enumerable: true
+}); // throws a TypeError
+Object.defineProperty(ob, 'a', {
+    value: 12
+}); // throws a TypeError
+Object.defineProperty(ob, 'a', {
+    writable: false
+}); // This is allowed!!
+Object.defineProperty(ob, 'a', {
+    writable: true
+}); // throws a TypeError
 ```
 [/slide]
 
@@ -312,21 +326,21 @@ Note: Check the examples below for more information.
 
 ```js
 let person = new Person('Peter', 'Smith');
-console.log(person.fullName);  //Peter Smith
+console.log(person.fullName); //Peter Smith
 person.firstName = 'George';
-console.log(person.fullName);  //George Smith
+console.log(person.fullName); //George Smith
 person.lastName = 'Peterson';
-console.log(person.fullName);  //George Peterson
+console.log(person.fullName); //George Peterson
 person.fullName = 'Nikola Tesla';
-console.log(person.firstName)  //Nikola
-console.log(person.lastName)   //Tesla
+console.log(person.firstName) //Nikola
+console.log(person.lastName) //Tesla
 let person = new Person('Albert", "Simpson');
-console.log(person.fullName);  //Albert Simpson
+console.log(person.fullName); //Albert Simpson
 person.firstName = 'Simon';
-console.log(person.fullName);  //Simon Simpson
+console.log(person.fullName); //Simon Simpson
 person.fullName = 'Peter';
-console.log(person.firstName)  // Simon
-console.log(person.lastName)   // Simpson
+console.log(person.firstName) // Simon
+console.log(person.lastName)
 ```
 
 [/task-description]

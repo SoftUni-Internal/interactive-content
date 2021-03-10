@@ -21,7 +21,9 @@ function speak(message) {
     console.log(`My name is ${this.name}. ${message}`);
 }
 
-let person = { name: 'John' };
+let person = {
+    name: 'John'
+};
 
 speak.call(person, 'This is my story...');
 ```
@@ -50,7 +52,7 @@ You can have 0, 1 or more arguments and when calling the object you can add them
 The `call()` method does not make a copy of the function, it immediately executes it.
 
 ```js live
-let praise = function (...praises) {
+let praise = function(...praises) {
     console.log(`This is ${this.name}.`);
 
     let compliments = praises.reduce((acc, curr) => {
@@ -127,12 +129,15 @@ functionName.call(thisContext, ...[yourArray]);
 const firstPerson = {
     name: 'Peter',
     prof: 'Fisherman',
-    shareInfo: function () {
+    shareInfo: function() {
         console.log(`${this.name} works as a ${this.prof}`);
     }
 };
 
-const secondPerson = { name: 'George', prof: 'Manager' };
+const secondPerson = {
+    name: 'George',
+    prof: 'Manager'
+};
 firstPerson.shareInfo.apply(secondPerson);
 // George works as a Manager
 ```
@@ -157,7 +162,7 @@ Let us imagine we have a **student** that can `study()`:
 let student = {
     alias: `Motivated student`,
     subject: 'Web Development',
-    study: function (hours) {
+    study: function(hours) {
         console.log(`${this.alias} studies 
       ${this.subject} ${hours} hours a day`);
     }
@@ -170,7 +175,7 @@ We also have a professor that can `teach()`:
 let professor = {
     alias: `Grumpy professor`,
     subject: 'Mathematics',
-    teach: function (hours) {
+    teach: function(hours) {
         console.log(`${this.alias} teaches ${this.subject} ${hours} hours a day`)
     }
 };
@@ -192,7 +197,7 @@ See it in action:
 let student = {
     alias: `Motivated student`,
     subject: 'Web Development',
-    study: function (hours) {
+    study: function(hours) {
         console.log(`${this.alias} studies 
       ${this.subject} ${hours} hours a day`);
     }
@@ -201,7 +206,7 @@ let student = {
 let professor = {
     alias: `Grumpy professor`,
     subject: 'Mathematics',
-    teach: function (hours) {
+    teach: function(hours) {
         console.log(`${this.alias} teaches ${this.subject} ${hours} hours a day`)
     }
 };
@@ -222,14 +227,17 @@ This is known as function borrowing in JavaScript.
 
 ```js live
 const x = 42;
-const getX = function () {
+const getX = function() {
     return this.x;
 }
-const module = { x, getX };
+const module = {
+    x,
+    getX
+};
 const unboundGetX = module.getX;
-console.log(unboundGetX()); // undefined
+console.log(unboundGetX()); // undefined
 const boundGetX = unboundGetX.bind(module);
-console.log(boundGetX()); // 42
+console.log(boundGetX()); // 42
 ```
 
 [/slide]

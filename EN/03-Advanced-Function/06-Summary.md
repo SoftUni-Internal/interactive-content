@@ -14,11 +14,11 @@
 
 ```js
 function sayHello() {
-  return "Hello, ";
+    return "Hello, ";
 }
 
 function greet(sayHello, name) {
-  return sayHello() + name;
+    return sayHello() + name;
 }
 ```
 
@@ -26,10 +26,10 @@ function greet(sayHello, name) {
   - take other **functions** as an argument or **return** a function as a result
 
 ```js
-const sayHello = function () {
-  return function () {
-    console.log("Hello!");
-  };
+const sayHello = function() {
+    return function() {
+        console.log("Hello!");
+    };
 };
 
 const greet = sayHello();
@@ -41,8 +41,8 @@ greet(); // Output: "Hello"
   - it **encapsulates code and data** \(state\)
 
 ```js
-(function () {
-  let name = "James";
+(function() {
+    let name = "James";
 })();
 console.log(name) // TypeError
 ```

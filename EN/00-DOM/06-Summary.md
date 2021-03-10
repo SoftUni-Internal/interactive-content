@@ -11,16 +11,16 @@
 - DOM **methods** and **properties**
 
 ```js
-let p = document.createElement("p");
-let section = document.createElement("section");
+let p = document.createElement('p');
+let section = document.createElement('section');
 ```
 
 - Performing **DOM manipulations**
 
 ```js
-let container = document.getElementById("container");
-let h1 = document.getElementById("heading");
-let content = document.getElementById("content");
+let container = document.getElementById('container');
+let h1 = document.getElementById('heading');
+let content = document.getElementById('content');
 
 h1.remove();
 
@@ -32,7 +32,7 @@ container.removeChild(content);
 ```js
 console.log(navigator.deviceMemory);
 
-document.location = "https://softuni.org";
+document.location = 'https://softuni.org';
 
 history.back();
 ```

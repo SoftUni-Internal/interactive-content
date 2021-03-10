@@ -66,10 +66,10 @@ We use the same function to get the **result** element by id and change its **te
 
 ```js
 function subtract() {
-  let firstNumber = Number(document.getElementById('firstNumber').value);
-  let secondNumber = Number(document.getElementById('secondNumber').value);
+    let firstNumber = Number(document.getElementById('firstNumber').value);
+    let secondNumber = Number(document.getElementById('secondNumber').value);
 
-  document.getElementById('result').textcontent = firstNumber - secondNumber;
+    document.getElementById('result').textcontent = firstNumber - secondNumber;
 }
 
 ```

@@ -33,11 +33,11 @@ To indicate that, it returns the special value `-1`.
 
 ```js live
 function toUppercase(string) {
-  if (typeof string !== 'string') {
-    throw TypeError('The input provided is not a string');
-  }
+    if (typeof string !== 'string') {
+        throw TypeError('The input provided is not a string');
+    }
 
-  return string.toUpperCase();
+    return string.toUpperCase();
 }
 
 toUppercase(5);
@@ -148,11 +148,11 @@ We use the `throw` statement to manually throw an exception:
 
 ```js
 function isEven(num) {
-  if (typeof num !== "number") {
-    throw TypeError("You must provide a number");
-  }
+    if (typeof num !== "number") {
+        throw TypeError("You must provide a number");
+    }
 
-  return num % 2 === 0;
+    return num % 2 === 0;
 }
 ```
 
@@ -173,10 +173,10 @@ The **try-catch** construct consists of two main blocks:
 
 ```js
 try {
-  // Code that can throw an exception
-  // If executed properly, the catch block is ignored
+    // Code that can throw an exception
+    // If executed properly, the catch block is ignored
 } catch (exception) {
-  // Executed only if an error is thrown
+    // Executed only if an error is thrown
 }
 ```
 

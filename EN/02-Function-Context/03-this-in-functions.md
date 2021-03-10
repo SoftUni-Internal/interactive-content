@@ -12,8 +12,8 @@ Attempting to call `this` from within a nested function does not work as expecte
 let socialMediaUser = {
     name: 'John Doe',
     pageLikes: ['Cute Cats Page', 'Web Programming Gurus', 'SoftUni International'],
-    displayLikes: function () {
-        this.pageLikes.forEach(function (page) {
+    displayLikes: function() {
+        this.pageLikes.forEach(function(page) {
             console.log(`User: ${this.name} likes: ${page}`);
         });
     }
@@ -48,7 +48,7 @@ In other words, they inherit the reference of `this` from the parent object or s
 let socialMediaUser = {
     name: 'John Doe',
     pageLikes: ['Cute Cats Page', 'Web Programming Gurus', 'SoftUni International'],
-    displayLikes: function () {
+    displayLikes: function() {
         this.pageLikes.forEach((page) => {
             console.log(`User: ${this.name} likes: ${page}`);
         });

@@ -10,11 +10,11 @@ We use **currying** to evaluate a function with **multiple arguments**, into a *
 
 ```js live
 function sumOfThreeNums(a) {
-  return (b) => {
-    return (c) => {
-      return a + b + c;
+    return (b) => {
+        return (c) => {
+            return a + b + c;
+        };
     };
-  };
 }
 console.log(sumOfThreeNums(5)(6)(8));
 ```
@@ -46,7 +46,7 @@ function add(a, b) {
 }
 
 function partial(func, a) {
-     return (b) => func(a, b);
+    return (b) => func(a, b);
 }
 
 const newAdd = partial(add, 2);

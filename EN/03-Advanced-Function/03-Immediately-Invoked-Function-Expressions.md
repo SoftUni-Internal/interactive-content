@@ -17,10 +17,10 @@ An **Immediately-Invoked Function Expression** is a JavaScript **function** that
 To create an **IIFE**, we put the function declaration between **round brackets**, after which we invoke it **immediately**:
 
 ```js live
-let result = (function () {
-    let name = 'Harper'; 
-    return name; 
-})(); 
+let result = (function() {
+    let name = 'Harper';
+    return name;
+})();
 
 console.log(result);
 ```
@@ -28,8 +28,10 @@ console.log(result);
 The **return value** of an **Immediately-Invoked Function Expression** has to be saved in a variable, otherwise it is **purged from memory right after execution**:
 
 ```js live
-(function () { let name = 'Nick'; });
-console.log(name); 
+(function() {
+    let name = 'Nick';
+});
+console.log(name);
 ```
 As you can see in this example, an IIFE's variables are **only accessible inside the function scope**.
 

@@ -13,10 +13,10 @@ let cat = {
     name: 'Muffins',
     breed: 'British Shorthair',
 
-    info: function () {
+    info: function() {
         return `${this.name} is a ${this.breed}.`
     },
-    whatIsThis: function () {
+    whatIsThis: function() {
         return this;
     }
 }
@@ -32,10 +32,10 @@ Whenever we use `this` in a method, it references the object itself and hence `c
 You can also retrieve the values of object properties by replacing `this` with the object name.
 
 ```js
-info: function () {
+info: function() {
         return `${this.name} is a ${this.breed}.`
     },
-    whatIsThis: function () {
+    whatIsThis: function() {
         return cat;
     }
 ```
@@ -70,7 +70,9 @@ function printContext() {
 let user = {
     count: 10,
     printContext: printContext,
-    printAnotherContext: function () { console.log(this === global); }
+    printAnotherContext: function() {
+        console.log(this === global);
+    }
 }
 
 user.printContext();
@@ -123,7 +125,7 @@ If you create an HTML file and attach the following event handler to an element 
 function solve() {
     let button = document.getElementById('button');
 
-    button.addEventListener('click', function (e) {
+    button.addEventListener('click', function(e) {
         console.log(this);
     });
 }
@@ -173,7 +175,7 @@ class Vehicle {
     constructor(make, model) {
         this.make = make;
         this.model = model;
-        this.displayInfo = function () {
+        this.displayInfo = function() {
             console.log(`The vehicle is a ${this.make} ${this.model}.`);
         }
     }

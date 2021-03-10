@@ -44,7 +44,7 @@ It removes an event handler that has been previously attached with the `addEvent
 
 
 ```js
-addBtn.addEventListener("click", handler, false);
+addBtn.addEventListener('click', handler, false);
 ```
 
 Another method is the `.removeEventListener()` method.
@@ -52,7 +52,7 @@ Another method is the `.removeEventListener()` method.
 It removes previously registered event listener from the target.
 
 ```js
-addBtn.removeEventListener("click", handler);
+addBtn.removeEventListener('click', handler);
 ```
 [/slide]
 
@@ -69,6 +69,7 @@ On each click of the button, the "**number**" will be incremented by one.
 ```js
 const button = document.getElementsByTagName('button')[0];
 button.addEventListener('click', clickMe);
+
 function clickMe(e) {
     const target = e.currentTarget;
     const targetText = target.textContent;
@@ -92,17 +93,19 @@ The result will be a change of the background color of the button, and a change 
 
 ```js
 const button = document.getElementsByTagName('div')[0];
-button.addEventListener('mouseover', function (e) {
+button.addEventListener('mouseover', function(e) {
     const style = e.currentTarget;
-    const { backgroundColor } = style;
-    if(backgroundColor === 'white'){
+    const {
+        backgroundColor
+    } = style;
+    if (backgroundColor === 'white') {
         targetStyles.backgroundColor = '#234465';
         targetStyles.color = 'white';
     } else {
         targetStyles.backgroundColor = 'white';
         targetStyles.color = '#234465';
-    }}
-);
+    }
+});
 ```
 
 [/slide]
@@ -120,7 +123,7 @@ As soon as we type anything in the input field, the button will be **enabled** b
 ```js
 const inputField = document.getElementsByTagName('input')[0];
 const button = document.getElementsByTagName('button')[0];
-inputField.addEventListener('input', function () {
+inputField.addEventListener('input', function() {
     button.setAttribute('disabled', 'false');
 });
 ```
@@ -148,7 +151,8 @@ At this point, we lose the **focus** effect.
 const password = document.querySelector('input[type="password"]');
 const button = document.querySelector('button');
 password.addEventListener('focus', focusEvent);
-function focusEvent (event){
+
+function focusEvent(event) {
     event.target.style.background = '#234465';
 }
 password.addEventListener('blur', (event) => {
@@ -170,10 +174,10 @@ button.addEventListener('click', () => {
 We can add multiple events to the same element without overwriting existing events.
 
 ```js
-element.addEventListener("click", function);
-element.addEventListener("click", myFunction);
-element.addEventListener("mouseover", mySecondFunction);
-element.addEventListener("mouseout", myThirdFunction);
+element.addEventListener('click', function);
+element.addEventListener('click', myFunction);
+element.addEventListener('mouseover', mySecondFunction);
+element.addEventListener('mouseout', myThirdFunction);
 ```
 
 [/slide]
@@ -198,7 +202,7 @@ The `clearInterval()` method clears a timer set with the `setInterval()` method.
 ```js
 let intervalID = setInterval(
     function() {
-        console.log("1 sec. passed");
+        console.log('1 sec. passed');
     }, 1000
 );
 ```
@@ -338,14 +342,14 @@ Then, in the 'if' statement, we add a condition, so that if we click on a `<li>`
 ```
 
 ```js
-document.getElementById("parent-list")
-    .addEventListener("click", function(event) {
-        if(event.target && event.target.nodeName == "LI") {
+document.getElementById('parent-list')
+    .addEventListener('click', function(event) {
+        if (event.target && event.target.nodeName == 'LI') {
             console.log(
-                "List item ", event.target.id, 
-                " was clicked!");
-            }
-});
+                'List item', event.target.id,
+                ' was clicked!');
+        }
+    });
 ```
 
 **Pros and Cons**

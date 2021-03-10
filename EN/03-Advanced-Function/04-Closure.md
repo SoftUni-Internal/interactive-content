@@ -22,13 +22,13 @@ Let us take a look at a simple example:
 
 ```js
 function outerFunc() {
-   var numTwo = 3;
+    var numTwo = 3;
 
-   function innerFunc() {
-         var numOne = 5; 
-         console.log(a + b);
+    function innerFunc() {
+        var numOne = 5;
+        console.log(a + b);
     }
-   return innerFunc;
+    return innerFunc;
 }
 ```
 
@@ -52,11 +52,11 @@ When a function **finishes execution**, any variables that were defined **inside
 A **state** is preserved in the outer function (closure):
 
 ```js live
-const func = (function () {
-    let counter = 0;
-    return function () {
-        console.log(++counter);
-    }
+const func = (function() {
+    let counter = 0;
+    return function() {
+        console.log(++counter);
+    }
 })();
 
 func(); //1

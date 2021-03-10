@@ -34,7 +34,7 @@ var name = "Steven";
 //name is now stored as a property of the window object
 
 function printYear() {
-  console.log(2020);
+    console.log(2020);
 }
 //PrintYear is now a method of the window object
 

@@ -14,14 +14,14 @@
 - Handling Events
     - attach
     ```js
-    button.addEventListener("click", () => {
-    console.log("Button clicked.");
+    button.addEventListener('click', () => {
+    console.log('Button clicked.');
     });
     ```
     - remove
      ```js
-    button.removeEventListener("click", () => {
-    console.log("Button event listener removed.");
+    button.removeEventListener('click', () => {
+    console.log('Button event listener removed.');
     });
     ```
     

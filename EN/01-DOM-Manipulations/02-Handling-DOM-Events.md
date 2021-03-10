@@ -96,7 +96,7 @@ Some of the properties are:
 - ClientX / ClientY
 
 ```js
-addBtn.addEventListener("click", function(e){
+addBtn.addEventListener('click', function(e){
     console.log(e.target);
 })
 ```

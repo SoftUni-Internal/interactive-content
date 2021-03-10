@@ -15,11 +15,11 @@ This means that just like primitive values and objects, functions can be:
 
 ```js live
 function sayHello() {
-  return 'Hello, ';
+    return 'Hello, ';
 }
 
 function greet(helloFunction, name) {
-  return helloFunction() + name;
+    return helloFunction() + name;
 }
 
 console.log(greet(sayHello, 'Peter'));
@@ -30,8 +30,8 @@ In the above example `helloFunction` acts as a placeholder for the `sayHello()` 
 - **Assigned** to variables
 
 ```js live
-let greet = function (name) {
-  return `Hello, ${name}`;
+let greet = function(name) {
+    return `Hello, ${name}`;
 };
 console.log(greet('Johnny'));
 ```
@@ -46,9 +46,9 @@ Hence, they can be returned by another function:
 
 ```js live
 function helloWorld() {
-  return function () {
-    console.log('Hello, world!');
-  };
+    return function() {
+        console.log('Hello, world!');
+    };
 }
 
 helloWorld();
@@ -69,10 +69,10 @@ In short, first-class functions **support all the operations** available to any 
 Here is a higher-order function in action:
 
 ```js live
-const sayHello = function () {
-  return function () {
-    console.log('Hello!');
-  };
+const sayHello = function() {
+    return function() {
+        console.log('Hello!');
+    };
 };
 
 const greet = sayHello();
@@ -94,7 +94,7 @@ A **predicate** is any function that takes one value as input and returns **true
 
 ```js live
 function lessThanFive(num) {
-  return num < 5;
+    return num < 5;
 }
 
 let number = 5;
@@ -163,8 +163,8 @@ Here you can see **reduce** in action:
 
 ```js live
 const arr = [51, 8, 17, 80, 4];
-const sum = arr.reduce(function (accumulator, currentValue) {
-  return accumulator + currentValue;
+const sum = arr.reduce(function(accumulator, currentValue) {
+    return accumulator + currentValue;
 });
 
 console.log(sum);
