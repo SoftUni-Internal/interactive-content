@@ -278,10 +278,11 @@ The URL to which your program should make requests is: `https://phonebook-nakov.
 
 You can use Firebase to create your app.
 
-## Screenshots:
+**First Screenshots:**
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-21.png" /]
 
+**Second Screenshots:**
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-22.png" /]
 
 [/slide]
