@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Operatorul Break
 
-[vimeo-video]
-[stream language="EN" videoId="487120852/ddd6c46acb" default /]
-[stream language="RO" videoId="487120852/ddd6c46acb"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/05-While-Loop/05.PB-JavaScript-While-Loop-21-22-The-break-operator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 Comanda `break` oprește executarea unei bucle în momentul apelării sale și continuă programul de la prima linie de după finalul buclei.
@@ -23,10 +20,7 @@ Dacă folosiți bucle imbricate, această instrucțiune va opri executarea bucle
 
 # Exemplu de funcționare a lui Break
 
-[vimeo-video]
-[stream language="EN" videoId="487120871/e1cde26cec" default /]
-[stream language="RO" videoId="487120871/e1cde26cec"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/05-While-Loop/05.PB-JavaScript-While-Loop-23-Example-with-break-operator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 Acest exemplu oprește bucla atunci când data de intrare este reprezentată de un număr impar:

@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Bucla infinită While
 
-[vimeo-video]
-[stream language="EN" videoId="487120926/1516b4fb70" default /]
-[stream language="RO" videoId="487120926/1516b4fb70"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/05-While-Loop/05.PB-JavaScript-While-Loop-24-25-Infinite-While-Loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 Folosim denumirea de buclă infinită pentru o buclă care repetă la nesfârșit condiția din corpul său.
@@ -25,10 +22,7 @@ while (true) {
 
 # Exemplu: Bucla infinită While (Eroare)
 
-[vimeo-video]
-[stream language="EN" videoId="487120943/858eb0fc69" default /]
-[stream language="RO" videoId="487120943/858eb0fc69"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/05-While-Loop/05.PB-JavaScript-While-Loop-25-Example-infinite-while-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 ```js

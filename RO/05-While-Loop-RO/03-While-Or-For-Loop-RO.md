@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Bucla While sau Bucla For?
 
-[vimeo-video]
-[stream language="EN" videoId="487120722/4b17fd0910" default /]
-[stream language="RO" videoId="487120722/4b17fd0910"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/05-While-Loop/05.PB-JavaScript-While-Loop-15-17-While-or-for-problem-odd-number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 Buclele "**while**" și "**for**" **repetă** un bloc de **cod**.
@@ -51,6 +48,8 @@ console.log(number);
 
 [slide hideTitle]
 # Problemă cu soluție: Odd Number
+
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/05-While-Loop/05.PB-JavaScript-While-Loop-18-Solution-Odd-Number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Odd Number" taskId="pb-js-while-loop-Odd-Number" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

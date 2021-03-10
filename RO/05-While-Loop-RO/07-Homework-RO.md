@@ -6,10 +6,7 @@
 # Problemă și soluție: Sum Digits
 
 
-[vimeo-video]
-[stream language="EN" videoId="488456453/0886f00db0" default /]
-[stream language="RO" videoId="488456453/0886f00db0"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/05-While-Loop/05.PB-JavaScript-While-Loop-27-28-Problem&Solution-Sum-Digits-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 
@@ -102,10 +99,7 @@ sumDigits(8)
 [slide hideTitle]
 # Problemă și soluție: Favorite Book
 
-[vimeo-video]
-[stream language="EN" videoId="488456416/28fe2f16f1" default /]
-[stream language="RO" videoId="488456416/28fe2f16f1"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/05-While-Loop/05.PB-JavaScript-While-Loop-30-Solution-Favourite-Book-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 

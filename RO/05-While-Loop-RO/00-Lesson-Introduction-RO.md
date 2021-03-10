@@ -6,10 +6,7 @@
 
 # Conținutul lecției
 
-[vimeo-video]
-[stream language="EN" videoId="487120473/492d37021b" default /]
-[stream language="RO" videoId="487120473/492d37021b"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/05-While-Loop/05.PB-JavaScript-While-Loop-1-2-Introduction-Table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 ## În cadrul acestei lecții, veți învăța despre:

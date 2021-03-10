@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Rezumat
 
-[vimeo-video]
-[stream language="EN" videoId="487121107/0a5fbdb2bd" default /]
-[stream language="RO" videoId="487121107/0a5fbdb2bd"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/05-While-Loop/05.PB-JavaScript-While-Loop-39-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 ## În cadrul acestei lecții ați învățat că:

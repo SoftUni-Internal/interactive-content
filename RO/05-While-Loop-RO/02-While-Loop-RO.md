@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Bucla While
 
-[vimeo-video]
-[stream language="EN" videoId="487120555/61828bfd47" default /]
-[stream language="RO" videoId="487120555/61828bfd47"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/05-While-Loop/05.PB-JavaScript-While-Loop-8-9-10-While-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 
@@ -39,10 +36,7 @@ Toată această parte se repetă din nou **până într-un anumit punct în care
 [slide hideTitle]
 # Problemă cu soluție: Decreasing Numbers
 
-[vimeo-video]
-[stream language="EN" videoId="487120584/cf3fbb855b" default /]
-[stream language="RO" videoId="487120584/cf3fbb855b"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/05-While-Loop/05.PB-JavaScript-While-Loop-12-Solution-Decreasing-Numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 [code-task title="Decreasing Numbers" taskId="pb-js-while-loop-Decreasing-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -123,10 +117,7 @@ decreasingNumbers(3)
 [slide hideTitle]
 # Problemă: Sequence 2k + 1
 
-[vimeo-video]
-[stream language="EN" videoId="487120652/4dbc030699" default /]
-[stream language="RO" videoId="487120652/4dbc030699"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/05-While-Loop/05.PB-JavaScript-While-Loop-14-Solution-Sequence-2k+1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 [code-task title="Sequence 2k + 1" taskId="pb-js-while-loop-Sequence-2k" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
