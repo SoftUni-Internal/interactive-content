@@ -4,19 +4,19 @@
 
 # Value Types
 
-A variable of a value \(primitive data\) type contains an instance of the type and hold directly their value. 
+A variable of a **value** \(primitive data\) type contains an instance of the type and holds directly their value. 
 
 Primitive data types or value types contain the value of a variable directly inside their own memory location.
 
-With value types, each variable has **its own copy of the data**, and it is not possible for operations on one variable to **affect the another**.
+With value types, each variable has **its own copy of the data** and it is not possible for operations on one variable to **affect another**.
 
-When a value of a primitive is assigned to another variable of the same type, a copy is made.
+When a value of a primitive type is **assigned to another variable** of the same type, a **copy of the primitive type** is made.
 
-When a primitive is passed into a method, only a copy of the primitive is passed. 
+When a primitive type is passed **to a method**, only a **copy of the primitive type** is passed. 
 
-The called method does not have access to the original primitive value and therefore cannot change it. 
+The called method **does not have access** to the original primitive value and therefore **cannot change it**. 
 
-The called method can change the copied value.
+The called method can **change the copied value**.
 
 Primitive data types are: **byte**, **short**, **int**, **long**, **float**, **double**, **boolean** and **char**.
 
@@ -25,17 +25,18 @@ int i = 42; //require 4 bytes of memory
 char ch = 'A'; //require 2 bytes of memory
 boolean result = true; //require 1 byte of memory
 ```
+
 [/slide]
 
 [slide hideTitle]
 
 # Reference Types
 
-**Reference type** variables hold а reference \(pointer / memory address\) to the value.
+**Reference type** variables hold the **reference** \(pointer / memory address\) to the value.
 
-When a reference type is assigned to another reference type, both will point to the same object.
+When a reference type is **assigned to another** reference type, both will **point to the same** object.
 
-When an object is passed into a method, the called method can change the contents of the object passed to it but not the address of the object.
+When an object is **passed to a method**, the called method can **change the value** of the object passed to it but **not the address** of the object.
 
 Reference data types are: `String`, `int[]`, `char[]`, `String[]`.
 
@@ -83,7 +84,7 @@ public static void increment(int[] nums, int value) {
 
 Now we will visually demonstrate how value types are stored, compared to reference types. 
 
-We will first initialize some primitive value type variables, followed by ones that are reference types:
+Let us first initialize some primitive value type variables, followed by ones that are reference types:
 
 ```java
 //primitives
@@ -142,9 +143,9 @@ public static void increment(int[] numbersArray, int incrementValue) {
 
 ```
 
-Arrays store references to memory locations. When we pass the array to the **increment** method it manipulates the values stored at the same memory reference. 
+Arrays store references to memory locations. When we pass the array to the **increment** method, it manipulates the values stored at the same memory reference. 
 
-When we passed **nums** as a value for the **numbersArray** parameter of the method, what happened is, the numbersArray parameter received the reference to the memory location of the original array. 
+When we passed the **nums** array to the method, the **numbersArray** parameter received the reference to the memory location of the **nums** array. 
 
 Any operation that would change an element in the array inside the method will also change the original array as we are working with the same reference.
 
@@ -167,7 +168,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a method that receives **two numbers** and an **operator**, calculates the result and returns it.
+Create a method that receives **t23ates the result and returns it.
 
 You will be given **three lines of input**.
 
