@@ -17,9 +17,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a method to **print the smallest of three integer numbers**.
-
-Think of a good name for the method.
+Create a method that **prints the smallest of three integer numbers**.
 
 ### Example
 | **Input** | **Output** |
@@ -138,9 +136,8 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a method that receives a **single string** and **prints the count of the vowels** contained in it.
+Create a method that receives a **single string** and **prints the count of the vowels** contained in it.
 
-Think of a good name for the method.
 
 ### Example
 | **Input** | **Output** |
@@ -228,7 +225,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a method that receives **two characters** and prints all the **characters in between them according to ASCII** on a single line.
+Create a method that receives **two characters** and prints all the **characters in between them according to ASCII** on a single line.
 
 **NOTE:** If the second letter's ASCII value is less than that of the first one then letters should be swapped.
 
@@ -332,7 +329,7 @@ public class Main {
 ## Description
 Create a program that checks if a given password is **valid**. 
 
-Password **rules** are:
+The password **rules** are:
 - **6 - 10 characters** (inclusive)
 - Consists **only** of **letters and digits**
 - Contains **at least 2 digits** 
@@ -345,7 +342,7 @@ If it is **not valid**, for every unfulfilled rule **print a message**:
 - "Password must have at least 2 digits"
 
 ### Hint
-Write a method for each rule.
+Create a method for each rule.
 
 ### Example
 | **Input** | **Output** |
@@ -461,7 +458,7 @@ public class Main {
 ## Description
 You will receive 3 integers.
 
-Write a method to get the sum of the first two integers and another method that subtracts the third integer from the result from the sum method.
+Create a method that returns the sum of the first two integers and another method that subtracts the third integer from the result of the sum method.
 
 ### Example
 | **Input** | **Output** |
@@ -632,7 +629,7 @@ public class Main {
 ## Description
 You will receive a single string.
 
-Write a method that **prints the middle character**.
+Create a method that **prints the middle character**.
 
 If the **length** of the string is **even** there are **two middle characters**.
 
@@ -769,7 +766,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a method that receives a single integer **n** and prints an **n*n** matrix with that number.
+Create a method that receives a single integer **n** and prints an **n*n** matrix with that number.
 
 ### Example
 | **Input** | **Output** |
@@ -1102,9 +1099,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-A palindrome is a number that reads the same **backward as forward,** such as 323 or 1001.
-
-Write a program that reads positive integer numbers **until you receive** the "END" command. 
+Create a program that reads positive integer numbers **until you receive** the "END" command. 
 
 For each number, **print whether the number is a palindrome or not**.
 
@@ -1282,7 +1277,7 @@ A **top number** is an integer that holds the following properties:
 - Its sum of digits is divisible by 8, e.g. 8, 16, 88
 - Holds at least one odd digit, e.g. 232, 707, 87578
 
-Write a program to print all master numbers in the range \[1…n\].
+Create a program to print all master numbers in the range \[1…n\].
 
 ### Example
 | **Input** | **Output** |
