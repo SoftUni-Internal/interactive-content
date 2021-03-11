@@ -214,7 +214,7 @@ In the `test/java` folder, create a package called **rpg_tests.**
 
 Create an `AxeTests` class.
 
-Write the following tests:
+Write tests for the following cases:
 - Test if the weapon loses durability after each attack
 - Test attacking with a broken weapon
 
@@ -248,7 +248,7 @@ Axe axe = new Axe(10, 10);
 Dummy dummy = new Dummy(10, 10);
 ```
 
-Execute tested behaviour:
+Execute tested behavior:
 ```java
 // Act
 axe.attack(dummy);
@@ -294,7 +294,7 @@ axe.attack(dummy);
 ## Description
 Create a class `DummyTests`.
 
-Write the following tests:
+Write tests for the following cases:
 
 - Dummy loses health if attacked
 - Dead Dummy throws an exception if attacked
