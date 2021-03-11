@@ -8,7 +8,7 @@ Let us take a look at how we can create more **complex logical conditions** in p
 We can use the following logical operators:
 * **"AND"** (`&&`)
 * **"OR"** (`||`)
-* **Negation** (`!`) 
+* **Negation** (`!`)
 * **Parentheses** (`()`)
 
 # Logical "AND", "OR" and "NOT"
@@ -124,7 +124,7 @@ if (x >= x1 && x <= x2 && y >= y1 && y <= y2) {
 [slide hideTitle]
 # Problem with Solution: Bonus Points
 
-interactive-programming-basics-with-java-conditional-statements-advanced-19-logical-and-problem-bonus-points
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-19-solution-and-problem-bonus-points-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Bonus Points" taskId="java-basics-logical-operators-bonus-points" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -147,13 +147,13 @@ Create a program that receives a number as input, and adds another number to it,
   * If the input number is between **7** and **9**, adds **20**
 # Example
 
-| Input | Output |
+| **Input** | **Output** |
 | --- | --- |
 | 4 | 19 |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 4
 [/input]
@@ -243,7 +243,7 @@ Reaching `b` which has `true` for a value, the whole **expression** is considere
 [slide hideTitle]
 # Problem with Solution: Food or Drink
 
-interactive-programming-basics-with-java-conditional-statements-advanced-21-logical-or-problem-food-or-drink
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-21-solution-or-problem-food-or-drink--,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Food or Drink" taskId="java-basics-logical-opators-food-ot-drink" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -264,23 +264,30 @@ Create a program that:
   * Possible food entries: curry, noodles, sushi, spaghetti 
   * Drinks: tea, water, coffee
   * Unknown: any other entry
-# Example
-## Input
-- curry
-## Output
-- food
-## Input
-- flower
-## Output
-- unknown
+
+## Examples
+
+| **Input** | **Output** |
+| --- | --- |
+| curry | food |
+| flower | unknown |
+
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 curry
 [/input]
 [output]
 food
+[/output]
+[/test]
+[test open]
+[input]
+flower
+[/input]
+[output]
+unknown
 [/output]
 [/test]
 [test]
