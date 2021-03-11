@@ -791,7 +791,7 @@ Print out the calculated area.
 
 
 [slide hideTitle]
-# Problem: Projects Creation
+# Problem with Solution: Projects Creation
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-4-projects-creation-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -1410,7 +1410,7 @@ Print out: "\{total sum\} dollars". The result should be formatted to the second
 
 
 [slide hideTitle]
-# Problem: Fishland
+# Problem with Solution: Fishland
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-3-fishland-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -1672,10 +1672,14 @@ Prices should be formatted to the **second decimal point.**
 | 540 | The final price is: 3369.71 dollars |
 |  | The discount is: 739.69 dollars |
 
-### Comments
-- Calculate the price for greening the whole yard: 540 \* 7.61 = 4109.40 $
-- Calculate the discount: 0.18 \* 4109.40 = 739.69 $
-- Calculate the final price: 4109.40 – 739.69 = 3369.71 $
+[hints]
+[hint]
+Calculate the price for greening the whole yard.
+[/hint]
+[hint]
+Calculate the discount and determine the final price.
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
