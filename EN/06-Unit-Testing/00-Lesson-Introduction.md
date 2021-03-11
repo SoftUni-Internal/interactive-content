@@ -9,19 +9,21 @@
 ## In this lesson, you will learn:
 
 **1. Seven Testing Principles**
-- Which are the seven core principles of testing
+- Which the seven core principles of testing are 
 
-**2.What is Unit Testing**
-- **Unit Testing Framework**
-- Different **UTF** in JAVA
+**2. What is Unit Testing**
+- Unit testing frameworks
+- Review of the different UTF in Java
 - The 3A Pattern
 
 **4. Best practices**
+- Rules about assertions and magic numbers
+- Naming conventions
 
 **5. Dependency injection**
-- Why it is easier to test when we keep the dependency inversion princple
+- Why it is easier to test when we keep the dependency inversion principle
 
 **6. Mocking and Mock Objects**
-- What is Mocking and how to use it
+- What is mocking and how to use it
 
 [/slide]
