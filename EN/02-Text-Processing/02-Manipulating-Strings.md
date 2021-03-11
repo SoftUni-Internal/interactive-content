@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Concatenating
 
-[vimeo-video]
-[stream language="EN" videoId="489817452/a5c7ddac9c" default /]
-[stream language="RO" videoId="489817452/a5c7ddac9c"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/EN/interactive-js-fundamentals-text-processing-7-8-concatinating-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Concatenation** in JavaScript is done with the operators: `+` and `+=` or by the `concat()` method.
 
@@ -45,10 +42,7 @@ That is because `+` and `+=` and the `concat()` method do the same but in differ
 [slide hideTitle]
 # Searching for Substrings
 
-[vimeo-video]
-[stream language="EN" videoId="489817455/1fa425821a" default /]
-[stream language="RO" videoId="489817455/1fa425821a"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/EN/interactive-js-fundamentals-text-processing-9-searching-for-substrings-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To **find** a substring, we can use `indexOf()` or `lastIndexOf()`. 
 
@@ -100,10 +94,7 @@ And the second returns `-1` because it will not find anything.
 [slide hideTitle]
 # Extracting Substrings
 
-[vimeo-video]
-[stream language="EN" videoId="489817495/403a2d42fe" default /]
-[stream language="RO" videoId="489817495/403a2d42fe"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/EN/interactive-js-fundamentals-text-processing-10-extracting-substrings-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To **extract** a substring, we can use `substring()`. 
 
@@ -142,10 +133,7 @@ That is because we did not give it the second parameter, which is the **end** in
 [slide hideTitle]
 # String Operations
 
-[vimeo-video]
-[stream language="EN" videoId="489817576/c647cb8ef4" default /]
-[stream language="RO" videoId="489817576/c647cb8ef4"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/EN/interactive-js-fundamentals-text-processing-11-string-operations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 If we want to change a part of a string directly, we will use `replace()`. 
 
@@ -178,10 +166,7 @@ console.log(replacedStr);
 [slide hideTitle]
 # Problem with Solution: Substring
 
-[vimeo-video]
-[stream language="EN" videoId="489817604/03cd593d45" default /]
-[stream language="RO" videoId="489817604/03cd593d45"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/EN/interactive-js-fundamentals-text-processing-12-solution-substring-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Substring" taskId="js-fundamentals-pt2-text-processing-lab-Substring" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -271,10 +256,7 @@ JAko88/(()
 [slide hideTitle]
 # Splitting a String
 
-[vimeo-video]
-[stream language="EN" videoId="489816954/24e31211e5" default /]
-[stream language="RO" videoId="489816954/24e31211e5"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/EN/interactive-js-fundamentals-text-processing-14-splitting-and-finding-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When we want to separate words in a string, we use the `split()` method.
 
@@ -323,10 +305,7 @@ console.log(text.includes('js'));
 [slide hideTitle]
 # Repeating in a String
 
-[vimeo-video]
-[stream language="EN" videoId="489817061/4454e2aa76" default /]
-[stream language="RO" videoId="489817061/4454e2aa76"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/EN/interactive-js-fundamentals-text-processing-15-repeating-strings-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When we want to **repeat** a **string** in JS, we use `repeat()`. 
 
@@ -354,10 +333,7 @@ console.log(str.repeat(5));
 [slide hideTitle]
 # Problem with Solution: Censored Words
 
-[vimeo-video]
-[stream language="EN" videoId="489817109/c566f94bb4" default /]
-[stream language="RO" videoId="489817109/c566f94bb4"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/EN/interactive-js-fundamentals-text-processing-16-solution-censored-words-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Censored Words" taskId="js-fundamentals-pt2-text-processing-Censored-Words" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -448,10 +424,7 @@ aaa \*\*\*\*\* a \*\*\*\*\* abv hey abc
 [slide hideTitle]
 # Trimming Strings
 
-[vimeo-video]
-[stream language="EN" videoId="489817107/ed4fac30e5" default /]
-[stream language="RO" videoId="489817107/ed4fac30e5"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/EN/interactive-js-fundamentals-text-processing-18-trimming-strings-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To **remove whitespaces** we use the `trim()` method. 
 
@@ -494,10 +467,7 @@ console.log(str.trimEnd());
 [slide hideTitle]
 # Starts With or Ends With
 
-[vimeo-video]
-[stream language="EN" videoId="489817165/3eb9153a87" default /]
-[stream language="RO" videoId="489817165/3eb9153a87"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/EN/interactive-js-fundamentals-text-processing-19-starts-with-end-with-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 With `startsWith()`, we can check if a string starts with a specific word, that we will pass to the method as a parameter.
 
@@ -542,10 +512,7 @@ In both examples, the first **console.log**, will return `true`, but the second 
 [slide hideTitle]
 # Padding at the Start and End
 
-[vimeo-video]
-[stream language="EN" videoId="489817167/90a1d0997d" default /]
-[stream language="RO" videoId="489817167/90a1d0997d"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/EN/interactive-js-fundamentals-text-processing-20-padding-at-the-start-and-end-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 If we want to **add** a string **a certain number of times** at **the beginning** or the **end** of another string, we can use the `padStart()` or `padEnd()` methods.
 
@@ -576,10 +543,7 @@ console.log(padded);
 [slide hideTitle]
 # Problem with Solution: Count String Occurrences
 
-[vimeo-video]
-[stream language="EN" videoId="489817230/bda8e696ff" default /]
-[stream language="RO" videoId="489817230/bda8e696ff"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/EN/interactive-js-fundamentals-text-processing-21-solution-count-string-occurences-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Count String Occurrences" taskId="js-fundamentals-pt2-text-processing-Count-String-Occurrences" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

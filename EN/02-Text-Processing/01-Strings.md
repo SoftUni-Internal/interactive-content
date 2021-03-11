@@ -3,10 +3,7 @@
 [slide hideTitle]
 # What is a String?
 
-[vimeo-video]
-[stream language="EN" videoId="489817383/8da2994345" default /]
-[stream language="RO" videoId="489817383/8da2994345"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/EN/interactive-js-fundamentals-text-processing-3-4-5-what-is-a-string-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Strings** are series of **characters.**
 
@@ -81,11 +78,6 @@ That will also return `J` because the two ways of accessing indexes are identica
 [slide hideTitle]
 # Iterate Through a String: Demo
 
-[vimeo-video]
-[stream language="EN" videoId="489817402/1b82ef9f2e" default /]
-[stream language="RO" videoId="489817402/1b82ef9f2e"  /]
-[/video-vimeo]
-
 Iterate through a string using a `for-of` loop:
 
 ```js live
@@ -103,7 +95,7 @@ In this example, every character in `text` will be printed to the console.
 [slide hideTitle]
 # Problem with Solution: Print Characters
 
-## Missing Video
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/EN/interactive-js-fundamentals-text-processing-6-solution-print-characters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Print Characters" taskId="js-fund-part-2-text-processing-lab-Print-Characters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
