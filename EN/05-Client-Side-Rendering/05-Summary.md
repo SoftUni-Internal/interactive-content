@@ -41,8 +41,8 @@ render(greetingTemplate(), element);
 
 ## In the next lesson, you will learn:
 
-- Single Page Application​s
-- Navigation and History​
+- Single page application​s
+- Navigation and history​
 - Routing with page.js
     * hash-based​
     * push-based​ 

@@ -286,7 +286,7 @@ In this example, we create an **unordered list**, and generate `li` elements by 
 
 [slide hideTitle]
 
-# Directives: classes and classMap
+# Directives: Classes and ClassMap
 
 **Directives** are custom **functions** that **modify how lit-html renders values**.
 
