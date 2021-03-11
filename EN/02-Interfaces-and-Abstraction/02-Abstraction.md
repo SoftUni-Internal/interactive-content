@@ -10,12 +10,12 @@ In Java, abstraction is achieved by using the **abstract** keyword for classes a
 
 Abstraction describes selecting data from a larger pool to show only **relevant** details of the object to the user.
 
-It helps to reduce programming complexity and efforts. 
+It reduces programming complexity and efforts. 
 
-It is one of the most important concepts of OOPs.
+It is one of the most important concepts of OOP.
 
 
-There are 2 ways we can achieve **abstraction** in Java:
+There are **two** ways we can achieve **abstraction** in Java:
 
 - Using **abstract** classes
 
