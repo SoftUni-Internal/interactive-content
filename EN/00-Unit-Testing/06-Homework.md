@@ -1534,9 +1534,7 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: Payment Package
-
 [code-task title="Payment Package" taskId="js-applications-Unit-Testing-Payment-Package" executionType="tests-execution" executionStrategy="javascript-code-against-unit-tests-with-mocha" requiresInput]
-
 [code-editor language=javascript]
 ```
 describe('Payment package', function(){
@@ -1767,9 +1765,9 @@ PaymentPackage = class PaymentPackage \{
 
     toString() \{
         const output = \[
-            `Package: \\$\{this.name\}` + (this.active === false ? ' (inactive)' : ''),
-            `- Value (excl. VAT): \\$\{this.value\}`,
-            `- Value (VAT \\$\{this.VAT\}%): \\$\{this.value \* (1 + this.VAT / 100)\}`
+            \`Package: \\$\{this.name\}\` + (this.active === false ? ' (inactive)' : ''),
+            \`- Value (excl. VAT): \\$\{this.value\}\`,
+            \`- Value (VAT \\$\{this.VAT\}%): \\$\{this.value \* (1 + this.VAT / 100)\}\`
         \];
         return output.join('\n');
     \}
