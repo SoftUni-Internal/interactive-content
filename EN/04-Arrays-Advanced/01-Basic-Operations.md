@@ -11,19 +11,19 @@ We can use arrow functions in some of the advanced methods.
 
 Advanced functionality of an array consists of the following functions:
 
-- `push(element)` - adds one or more elements to the end of an array and returns the new length of the array
+- **push(element)** - adds one or more elements to the end of an array and returns the new length of the array
 
-- `pop()` - removes the **last** element from an array and returns that element
+- **pop()** - removes the **last** element from an array and returns that element
 
-- `shift()` - removes the **first** element from an array and returns that element
+- **shift()** - removes the **first** element from an array and returns that element
 
-- `unshift(element)` - **adds new items to the beginning** of an array, and returns the new **length**
+- **unshift(element)** - **adds new items to the beginning** of an array, and returns the new **length**
 
-- `includes(element)` - determines whether an **array includes a certain element**, returnes "**true**" or "**false**"
+- **includes(element)** - determines whether an **array includes a certain element**, returnes "**true**" or "**false**"
 
-- `indexOf(element)` - returns the index of an element, or returns -1, if it cannot find the element
+- **indexOf(element)** - returns the index of an element, or returns -1, if it cannot find the element
 
-Basically, these methods modify the array, and we do not need to write a whole bunch of code, which saves lots of time. 
+These methods modify the array and we do not need to write a whole bunch of code, which saves lots of time. 
 
 [/slide]
 
