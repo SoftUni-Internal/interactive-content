@@ -186,11 +186,11 @@ oddNumbers([4, 12, 34, 2, 8, 6, 1, 31])
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-27-28-sorting-arrays-and-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The `sort()` method **sorts the items** of an array.
+The **sort()** method **sorts the items** of an array.
 
-Depending on the provided **compare function**, the sort order can either be **alphabetic** or **numeric**, and either **ascending** (up) or **descending** (down). 
+Depending on the provided **comparison function**, the sort order can either be **alphabetic** or **numeric**, and either **ascending** (up) or **descending** (down). 
 
-By default, the `sort()` method sorts the values as **strings in alphabetical and ascending order.**
+By default, the **sort()** method sorts the values as **strings in alphabetical and ascending order.**
 
 If we want to sort numbers or other values, we need to provide a correct **compare function.** 
 
@@ -225,9 +225,9 @@ console.log(numbers);
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-29-compare-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The `sort()` method, fortunately, can sort **negative, zero, and positive values** in the **correct order**.
+The **sort()** method, fortunately, can sort **negative, zero, and positive values** in the **correct order**.
 
-When the `sort()` method compares two values, it sends the values to the **compare function**, and sorts the values according to the returned value.  
+When the **sort()** method compares two values, it sends the values to the **compare function**, and sorts the values according to the returned value.  
 
 The result could be: **negative, zero, or positive.** 
 
@@ -248,7 +248,7 @@ console.log(nums.join('|'));
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-30-sorting-string-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The `localeCompare()` method compares **two strings** in the current locale. 
+The **localeCompare()** method compares **two strings** in the current locale. 
 
 It is a **string method**, so it **cannot** be applied directly on an array. 
 
@@ -310,7 +310,7 @@ The **input** comes as an **array** of **numbers**.
 
 - Afterwards, the first two elements in the array are the smallest ones
 
-- We can use the `slice()` method to take the first two elements
+- We can use the **slice()** method to take the first two elements
 
 
 [/task-description]
