@@ -697,11 +697,15 @@ Print one of the following output templates to the console, depending on the res
 | 3 | |
 | | |
 
-### Comments
-- Total Yield in kg: 650 \* 2 = 1300 
-- Wine Produced by this vineyard = (40% \* 1300) / 2.5 = 208
-- 208 > 175 - the goal was reached 
-- 208 \- 175 = 33 liters remain \-> each worker receives 11 liters
+[hints]
+[hint]
+Calculate the total yield in kilograms.
+[/hint]
+[hint]
+Determine the total wine produced and check if the goal was reached.
+Then print the correct output.
+[/hint]
+[/hints]
 
 ## Example
 | **Input** | **Output** |
@@ -1276,14 +1280,6 @@ Print out a **single** line:
 | 1 | |
 | 1200 | |
 
-### Comments
-- **Food needed for:**
-- **dog** = 2 days \* 1 kg = **2** kg;
-- **cat** = 2 days \* 1 kg = **2** kg;
-- **turtle** = 2 days \* 1200 g = **2.4** kg;
-- **Total amount of food** = 2 + 2 + 2.4 = **6.4** kg;
-- **6.4 < 10** => 10 - 6.4 = **3.6** -> **3 kg food remain**
-
 ## Example
 | **Input**  | **Output** |
 | --- | --- |
@@ -1293,13 +1289,6 @@ Print out a **single** line:
 | 0.8 | |
 | 321 | |
 
-### Comments
-- **Needed food for:**
-- **dog** = **10.5** kg;
-- **cat** = 5 days \* 0.8 kg = **4** kg;
-- **turtle** = 5 days \* 321 g = **1.605** kg;
-- **Total amount of food** = 10.5 + 4 + 1.605 = **16.105** ;
-- 16.105 – 10 = 6.105 -> 7 kg of food are needed
 
 [/task-description]
 [tests]
@@ -1494,7 +1483,7 @@ Print to the console **one of the following outcomes**:
   - "For \{amount of time\} hours the pool overflows with \{liters of unnecessary water transferred\} liters."
 - All numbers in the output should be formatted up to the 2nd digit after the decimal point.
 
-## Example
+## Example One
 | **Input** | **Output** |
 | --- | --- |
 | 1000 | The pool is 66.00% full. Pipe 1: 45.45%. Pipe 2: 54.55%. |
@@ -1502,14 +1491,7 @@ Print to the console **one of the following outcomes**:
 | 120 | |
 | 3 | |
 
-### Comments
-- For 3 hours: The first pipe fills up 300 liters
-- The second pipe fills up 360 liters
-- In total – 660 liters < 1000 lliters => 66% are filled up
-- The first pipe has transferred 45% (300 of 660 liters).
-- The second pipe has transferred 54% (360 of 660 liters).
-
-## Example
+## Example Two
 | **Input** | **Output** |
 | --- | --- |
 | 100 | For 2.50 hours the pool overflows with 400.00 liters. |
@@ -1517,10 +1499,17 @@ Print to the console **one of the following outcomes**:
 | 100 | |
 | 2.5 | |
 
-### Comments
-- For 2.5 hours: The first pipe fills up 250 l 
-- The second pipe fills up 250 l
-- In total – 500 l > 100 l => 400 l are overflowed.
+[hints]
+[hint]
+Calculate the capacity for each pipe.
+[/hint]
+[hint]
+Check if the total output from both pipes is enough to fill the pool.
+Then print the correct output.
+[/hint]
+
+[/hints]
+
 
 [/task-description]
 [tests]
