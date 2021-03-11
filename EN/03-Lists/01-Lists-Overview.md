@@ -6,11 +6,11 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-3-5-lists-overview-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Just like an array а **list** is a **sequence of elements**.
+Just like Аrrays, а **list** is a **sequence of elements**.
 
 [image assetsSrc="java-fund-p1-lists-01.png" /]
 
-The main difference between an array and a list is that an array cannot be resized.
+The main difference between an array and a list is that an **array cannot be resized**.
 
 For example, if we have an array and we want to add or remove elements, we have to create a new one, while elements can be **added** and **removed** from a **list** at any time.
 
@@ -62,7 +62,7 @@ Integer[] numbers = new Integer[] {10, 20, 30, 40, 50};
 List<Integer> nums = Arrays.asList(numbers); 
 ```
 
-If you try to convert an array that holds a primitive data type like `int []` to a list, this will result in a **compile error** because **lists** accept only **reference data types** (**objects**). 
+If you try to convert an array that holds a primitive data type like `int[]` to a list, this will result in a **compile error** because **lists** accept only **reference data types** (**objects**). 
 
 ```java live
  int[] numbers = new int[] {10, 20, 30, 40, 50};
@@ -115,7 +115,7 @@ for (String equipment : safetyEquipment) {
 }
 ```
 
-Items are appended to the list in the order that you add them. 
+Items are added to the list in the order that you add them. 
 
 If you would like to insert an item in a different position you can do that using `add(index, element)`.
 
@@ -135,7 +135,7 @@ for (String equipment : safetyEquipment) {
 }
 ```
 
-Now the "Helmet" is printed first because it was inserted at index 0.
+Now "Helmet" is printed first because it was inserted at index 0.
 
 Attempting to add an element from an index that is outside the bounds of the array will result in an **IndexOutOfBoundsException**.
 
@@ -237,7 +237,7 @@ if (names.contains("Maria")){
 
 ## Counting Elements
 
-- `size()` - returns the **size** (**count elements**) of the list
+- `size()` - returns the **size** (**count of elements**) of the list
 
 ```java live
 List<String> names = Arrays.asList("Maria", "Peter", "George");
