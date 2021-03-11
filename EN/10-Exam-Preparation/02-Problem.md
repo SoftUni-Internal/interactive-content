@@ -149,7 +149,7 @@ If it is successful, it returns the **toString method on the removed computer**.
 
 ### BuyBestComputer Command:
 
-The method must be called **buyBestComputer**.
+The method must be called **BuyBestComputer**.
 
 **Parameters:**
 
