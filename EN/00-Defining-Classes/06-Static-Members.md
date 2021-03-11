@@ -5,15 +5,15 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-33-34-35-static-members-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In Java, static members are those that belong to the class and you can access these members without instantiating the class.
+In Java, static members are those members of a class that can be used without initializing the class.
 
 The static keyword can be used with methods, fields, classes (inner/nested), blocks.
 
 ## Static Methods
 
-Static methods can access only static fields, methods.
+Static methods can access only static fields and methods.
 
-To access static methods there is no need to instantiate the class, you can do it just using the class name.
+There is no need to instantiate the class to access its static members.
 
 ```java live no-template
 public class Car {
@@ -41,6 +41,10 @@ public class Car {
         }
     }
 ```
+
+In the last example, we see that all the methods we are using in the main method are accessible, even though we never actually initialized a Car class.
+
+This works because all the fields and methods in the Car class are static members of the class.
 
 ## Static Fields
 
@@ -76,7 +80,7 @@ public class Car {
 Create a `BankAccount` class.
 
 The class should have private fields for:
-- `id`: int (Starts from 1 and increments for every new account)
+- `id`: int (starts from 1 and increases by one for every new account)
 - `balance`: double
 - `interestRate`: double 
     - shared for all accounts
@@ -84,7 +88,7 @@ The class should have private fields for:
 
 The class should also have public methods for:
 - `setInterestRate(double interest): void (static)`
-- `getInterest(int Years): double`
+- `getInterest(int years): double`
 - `deposit(double amount): void`
 
 Create a test client supporting the following commands:
