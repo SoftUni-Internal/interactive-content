@@ -5,23 +5,22 @@
 
 Once again, let us see the main differences between `Interfaces` and `Abstract` classes.
 
-## Interfaces vs Abstract Classes
 
 |**Interface**|**Abstract Class**|
 |---|---|
-|In the interface, we can only have abstract methods. From Java 8 we can have also static and default methods.|Abstract method can have both abstract and non-abstract methods.|
-|Interface **cannot** provide the implementation of an abstract class.|Abstract class can provide the implementation of all abstract methods in the interface.|
-|Interface can have only **public**, **static** and **final** variables.|Abstract class can have all types of variables: final, non-final, static, non-static, public, private etc.|
-|Interface can have only public class members as interface data members are **public** by default.|An abstract class can have class members as private, protected, public, etc.|
-|Interface can be implemented by using the "interface" keyword and need to provide the implementation for all the methods declared in the interface.|An abstract class can be using the "extend" keyword and need to provide the implementation of all declared methods in the parent or abstract class.|
-|Interface can extend only another interface.|An abstract class can extend another Java class implements multiple interfaces.|
+|We can only have abstract methods. From Java 8, we can also have static and default methods.|They can have both abstract and non-abstract methods.|
+|**Cannot** provide the implementation of an abstract class.|Provides the implementation of all abstract methods in the interface.|
+|Can only have **public**, **static** and **final** variables.|Can have all types of variables: final, non-final, static, non-static, public, private etc.|
+|Has only public class members as interface data members are **public** by default.|Can have class members as private, protected, public, etc.|
+|Implemented using the "interface" keyword. Needs to provide the implementation for all the methods declared in the interface.|Can be extended using the "extend" keyword. Needs to provide the implementation of all declared methods in the parent or abstract class.|
+|Able to extend only another interface.|Can extend another Java class that implements multiple interfaces.|
 
 
-From that chart we can assume that we can use `interfaces` when we need to achieve **multiple inheritance**, **full abstraction** by implementing all methods declared in the interface by a class which implements the interface.
+From this chart, we can assume that we can use `interfaces` when we need to achieve **multiple inheritance**, **full abstraction** by implementing all methods declared in the interface by a class that implements the interface.
 
 We use `abstraction` when some classes need to share few lines of code. 
 
-We can put these lines of code in an abstract class and extend by all other related classes.
+We can put these lines of code in an abstract class and extend them to all other related classes.
 
 [/slide]
 
@@ -32,15 +31,15 @@ We can put these lines of code in an abstract class and extend by all other rela
 
 [task-description]
 # Description
-Model an application which contains a **class Ferrari** and an **interface**. 
+Model an application that contains a **class Ferrari** and an **interface**. 
 
-Your task is simple, you have a **car - Ferrari**, its model is "**488-Spider**" and it has a **driver**. 
+Your task is simple - you have a **car - Ferrari**, its model is "**488-Spider**", and it has a **driver**. 
 
-Your Ferrari should have functionality to **use brakes** and **push the gas pedal**. 
+Your Ferrari should have the functionality to **use brakes** and **push the gas pedal**. 
 
 When the **brakes** are pushed down **print "Brakes!"**, and when the **gas pedal** is pushed down - **"Gas!"**. 
 
-As you may have guessed this functionality is typical for all cars, so you should **implement an interface** to describe it.
+As you may have guessed, this functionality is typical for all cars, so you should **implement an interface** to describe it.
 
 Your task is to **create a Ferrari** and **set the driver's name** to the passed one in the input. 
 
@@ -51,10 +50,10 @@ Take a look at the **еxamples** to understand the task better.
 [image assetsSrc="interfaces-and-abstraction-example(10).png" /]
 
 ## Input
-On the **single input line**, you will be given the **driver's name**.
+On the **single input line**, you will receive the **driver's name**.
 
 ## Output
-On the **single output line**, print the model, the messages from the brakes and gas pedal methods and the driver's name. 
+On the **single output line**, print the model, the messages from the brakes and gas pedal methods, and the driver's name. 
 
 In the following format:
 
