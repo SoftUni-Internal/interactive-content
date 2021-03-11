@@ -68,7 +68,7 @@ Therefore, we are going to learn the **principles** of writing computer **code s
 [slide hideTitle]
 # Algorithms
 
-[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-7-8-9-Programming-and-Algorithms-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-7-8-9-Programming-and-Algorithms-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Computer programs usually execute algorithms. 
 
