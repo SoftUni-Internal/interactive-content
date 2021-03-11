@@ -168,7 +168,7 @@ Min number: -2
 
 # Problem with Solution: Power Of Numbers
 
-[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-35-36-37-problem&solution-power-of-number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-37-solution-power-of-number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Power Of Numbers" taskId="pb-js-for-loop-Power-Of-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
