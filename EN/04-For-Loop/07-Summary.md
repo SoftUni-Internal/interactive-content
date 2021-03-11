@@ -5,11 +5,11 @@
 
 ## In this lesson you learned: 
 
-- For loops
+- For-loops
   
-  * overview of what for loops contains
+  * how to define for-loops
 
-  * for loops repeat a certain block of code
+  * for-loops repeat a certain block of code
 
 ```java live
 for (int i = 1; i <= 10; i++) {
@@ -17,7 +17,7 @@ for (int i = 1; i <= 10; i++) {
 }
 ```
 
-- For loops with step
+- For-loops with a special step
 
 ``` java
 for (int i = 10; i >= 1; i--) {
@@ -33,18 +33,18 @@ for (char ch = 'a'; ch <= 'd'; ch++) {
 }
 ```
 
-- Prefix and Postfix overview
+- Prefixes and Postfixes
 
 
 ## In the next lesson you will learn:
 
-- What are **While** loops and how we use them
+- What are **While** loops and how to use them
 
-- Difference between **While** and **For** loops
+- The difference between **While** and **For** loops
 
 - The **Break** operator 
 
-- Infinity Loops and how to safe-use them
+- Infinite Loops and how to use them safely
 
 
 [/slide]

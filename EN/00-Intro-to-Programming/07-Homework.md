@@ -2,6 +2,8 @@
 [slide hideTitle]
 # Problem with Solution: Print "Hello Java"
 
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-36-37-Problem-and-solution-Print-Hello-Java-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-36-37-Problem-Solving-Print-Hello-Java-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Print Hello Java" taskId="pb-java-introduction-print-hello-java" executionType="tests-execution" executionStrategy="java-code"]
@@ -91,9 +93,7 @@ Write a Java program, which:
 [slide hideTitle]
 # Problem with Solution: Name and Expression
 
-Java-basics-introduction-to-programming-41-problem-name-and-expression + 
-
-Java-basics-introduction-to-programming-41-problem-name-and-expression-solution
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-41-problem-and-solution-name-and-expression-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Name and Expression" taskId="pb-java-introduction-Name-and-Expression" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
@@ -138,9 +138,7 @@ Catlyn
 [slide hideTitle]
 # Problem with Solution: Calculations
 
-Java-basics-introduction-to-programming-43-problem-calculations + 
-
-Java-basics-introduction-to-programming-43-problem-calculations-solution
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-43-problem-and-solution-calculations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Calculations" taskId="pb-java-introduction-Calculations" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
@@ -153,6 +151,7 @@ public class Main {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
 ## Description
@@ -190,9 +189,7 @@ Write a program, which calculates and prints the value of the following express
 [slide hideTitle]
 # Problem with Solution: Square of 7 * 7 Stars
 
-Java-basics-introduction-to-programming-45-problem-square-of-7-by-7-stars + 
-
-Java-basics-introduction-to-programming-45-problem-square-of-7-by-7-stars-solution
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-45-problem-and-solution-square-of-7-by-7-stars-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Square of 7 * 7 Stars" taskId="pb-java-introduction-Square-of-7x7" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]

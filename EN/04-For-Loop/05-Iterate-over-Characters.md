@@ -5,17 +5,17 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/EN/interactive-programming-basics-with-java-for-loops-25-26-27-the-ASCII-table-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-# ASCII Table
+# The ASCII Table
 
-**ASCII** stands for American Standard Code for Information Interchange. 
+**ASCII** stands for **American Standard Code for Information Interchange**. 
  
-Computers can only understand numbers, so an **ASCII** code is the numerical representation of a character such as 'a' or '@' or an action of some sort. 
+Computers can only process numbers, so an **ASCII** code is the numerical representation of a character such as 'a' or '@'. 
 
-This is an example part of the table:
+Here is a part of the ASCII table:
 
 [image assetsSrc="04-for-loop-ascii.png" /]
 
-And here you can check the whole **ASCII Table**: **http://www.asciitable.com**
+You can see the entire **ASCII Table** at: **http://www.asciitable.com**
 
 The columns that you would most probably use for the purposes of this course are the **decimal** and **character** ones.
 
@@ -23,11 +23,11 @@ For example, the decimal value of the character **'a'** is **97** and the one co
 
 # Iterating over Characters
 
-It is good to know that the **for loops** don't only work with numbers. 
+It is good to know that **for-loops** do not just work with numbers. 
 
-We can also use **for loops** to iterate over **characters**.
+We can also use **for-loops** to iterate over **characters**.
 
-Here is an example of how a loop can pass sequentially through some **letters** in the English alphabet:
+Here is an example of how a loop can iterate through a range of **letters** in the English alphabet:
 ```java live
 for (char ch = 'a'; ch <= 'd'; ch++) {
   System.out.print(ch + " ");
@@ -53,9 +53,9 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which:
+Create a program, which:
 
-* Reads **2 letters**, each on a separate line
+* Reads **2 letters** (each on a separate line)
 * Prints **all letters** in the given range **inclusive**
 
 ## Example

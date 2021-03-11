@@ -94,7 +94,7 @@ if (color.equals("red")) {
 [slide hideTitle]
 # Problem with Solution: Even or Odd
 
-interactive-programming-basics-with-java-conditional-statements-21-problem-even-or-odd
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-21-problem-and-solution-even-or-odd-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Even or Odd" taskId="pb-java-Conditional-Statements-even-or-odd" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -158,7 +158,7 @@ even
 [slide hideTitle]
 # Problem with Solution: Greater Numbers
 
-interactive-programming-basics-with-java-conditional-statements-23-problem-greater-numbers
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-23-problem-and-solution-greater-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Greater Number" taskId="pb-java-Conditional-Statements-greater-number"  executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

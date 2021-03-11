@@ -31,8 +31,8 @@ This process is repeated again and again **until the conditional expression retu
 Then, the control comes out of the loop and jumps to the next statement after the **while-loop** .
 
 
-# Example: Sequence of Numbers 2k+1
-**Problem:** Create a program that prints all **numbers that are smaller than or equal to `n`**. The first number will be equal to **1**. The second number will be equal to **1*2+1**, which is equal to **3**. Each next number is calculated by the formula: **previous number * 2 + 1**.
+## Example: Sequence of Numbers 2k+1
+Create a program that prints all **numbers that are smaller than or equal to `n`**. The first number will be equal to **1**. The second number will be equal to **1*2+1**, which is equal to **3**. Each next number is calculated by the formula: **previous number * 2 + 1**.
 Therefore, the first few numbers are: **1, 3, 7, 15, 31, …,** 
 
 Here is how we can solve the problem:

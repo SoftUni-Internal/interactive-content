@@ -5,9 +5,9 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-51-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- What are nested conditional statements
+- What **nested conditional statements** are 
 
-  * if-else inside another if-else
+  * placing an `if-else` construction inside another `if-else` construction
 
 
 ```java
@@ -22,7 +22,7 @@ if (condition1) {
 
 - Logical Operators  
 
-  * && , || , ! operators 
+  *  `&&` , `||` , `!`
 
 ``` java
   if ((animal == "horse" || animal == "donkey") && (speed > 40)) {
@@ -34,7 +34,7 @@ if (condition1) {
 }
 ```
 
-- Conditional Statement - **Switch-Case**
+- The **Switch-Case**
 
 ```java
 switch (selector) {
@@ -47,7 +47,7 @@ switch (selector) {
 }
 ```
 
-  * Multiple Labels in **Switch-Case**
+  * Multiple Labels in a **Switch-Case**
 
 ## In the next lesson you will learn:
 
@@ -57,13 +57,13 @@ switch (selector) {
 
   * for-loops
 
-- For loop with a **Step**
+- For-loop with a special **Step**
 
 - Iterating over Characters using loops
 
-- **Infinity** loops
+- **Infinite** loops
 
-  * How to avoid them
+  * How to use them properly
 
 
 [/slide]

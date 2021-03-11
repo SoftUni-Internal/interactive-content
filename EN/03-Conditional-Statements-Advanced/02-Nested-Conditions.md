@@ -18,14 +18,14 @@ if (condition1) {
 }
 ```
 
-# Example: Personal Titles
+## Example: Personal Titles
 Depending on someones **age** (integer) and their **gender** (**m** / **f**), print their personal title:
 -  "Mr." – a man (gender "m") – 16 or older
 -  "Master" – a boy (gender "m") - under 16 years old
 -  "Ms." – a woman (gender "f") – 16 or molder
 -  "Miss" – a girl (gender "f") - under 16 years old
 
-# Solution: Personal Titles
+## Solution: Personal Titles
 We should notice that the **output** of the program **depends on a few conditions**. 
 
 **First**, we have to check what their **gender** is and **then** their **age**. 
@@ -66,7 +66,7 @@ We can optimize the code structure by using another type of conditional statemen
 [slide hideTitle]
 # Problem with Solution: Marketplace
 
-interactive-programming-basics-with-java-conditional-statements-advanced-12-problem-marketplace
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-12-problem-and-solution-marketplace-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Marketplace" taskId="java-basics-nested-conditions-marketplace" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -101,7 +101,7 @@ Create a program that:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 Banana
 Weekday
@@ -130,7 +130,7 @@ Weekend
 [slide hideTitle]
 # Problem with Solution: Biggest Number of Three
 
-interactive-programming-basics-with-java-conditional-statements-advanced-14-problem-greatest-number-of-three
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-14-problem-and-solution-greatest-number-of-three-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Biggest Number of Three" taskId="java-basics-nested-conditions-biggest-number-of-three" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

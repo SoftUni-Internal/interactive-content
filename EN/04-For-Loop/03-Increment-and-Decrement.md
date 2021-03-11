@@ -7,7 +7,7 @@
 
 The unary increment operator `++` increments its operand by 1, while the unary decrement operator `--` decrements it by 1.
 
-The increment and decrement operators are supported in two forms: 
+The increment and decrement operators have two possible forms: 
 
 * The postfix increment/decrement operator, `x++`/`x--` 
 * The prefix increment/decrement operator, `++x`/`--x`
@@ -15,7 +15,7 @@ The increment and decrement operators are supported in two forms:
 ## Increment Operator
 
 ### Postfix Increment Operator
-The result of `x++` is the value of `x` before the operation, as the following example shows:
+The current value of the expression `x++` is the value of `x` before the `++` operation, as the following example shows:
 ```java live
 int i = 3;
 System.out.println(i);   // output: 3
@@ -24,7 +24,7 @@ System.out.println(i);   // output: 4
 ```
 
 ### Prefix Increment Operator
-The result of `++x` is the value of `x` after the operation, as the following example shows:
+The result of `++x` is the value of `x` after the operation:
 ```java live
 double a = 1.5;
 System.out.println(a);   // output: 1.5
@@ -35,7 +35,7 @@ System.out.println(a);   // output: 2.5
 ## Decrement Operator
 
 ### Postfix Decrement Operator
-The result of `x--` is the value of `x` before the operation, as the following example shows:
+The result of `x--` is the value of `x` before the operation:
 ```java live
 int i = 3;
 System.out.println(i);   // output: 3
@@ -44,7 +44,7 @@ System.out.println(i);   // output: 2
 ```
 
 ### Prefix Decrement Operator
-The result of `--x` is the value of `x` after the operation, as the following example shows:
+The result of `--x` is the value of `x` after the operation:
 ```java live
 double a = 1.5;
 System.out.println(a);   // output: 1.5

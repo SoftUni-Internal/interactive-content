@@ -16,9 +16,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program to check for fruit or vegetable:
+Create a program to check whether the input value represents a fruit or a vegetable:
 
-* Read a single input line: an item from the greengrocery
+* Read a single input line: an item from the veggie store
 * Fruits: banana, apple, kiwi, cherry, lemon, grapes
 * Vegetables: cucumber, pepper, carrot, onion
 * Print: **"vegetable"**, **"fruit"** or **"unknown"**
@@ -92,11 +92,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program to print the day of week as words:
+Create a program to print out the given day of the week as a word:
 
-* Read and integer **n**: the **day of the week** in range [1..7]
-* Print the **name of the day** (as words, in English)
-* Print **"Error"** if the number is not in the given range
+* Reads and integer **n**: the **day of the week** in range [1..7]
+* Prints the **name of the day** (as a word)
+* Prints out **"Error"** if the number is not in the given range
 
 ## Example
 | **Input** | **Output** |
@@ -172,10 +172,10 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Write a program to check a letter for vowel or consonant:
+Create a program to check whether a letter is a vowel or a consonant:
 
-* Read a **letter** from the English alphabet
-* Print either **"Vowel"** or **"Consonant"**
+* Reads a **letter** from the English alphabet
+* Prints either **"Vowel"** or **"Consonant"**
 
 ## Example
 | **Input** | **Output** |
@@ -189,7 +189,7 @@ Write a program to check a letter for vowel or consonant:
 
 [hints]
 [hint]
-You can use an "if" statement and check if the letter is a vowel. If it is print the correct output. However, if it isn't, enter the "else" statement and print the appropriate output.
+You can use an "if" statement and check if the letter is a vowel. If it is, print the correct output. However, if it is not, enter the "else" statement and print the appropriate output.
 [/hint]
 [/hints]
 
@@ -254,10 +254,10 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Calculate the sign of the product of 3 numbers:
+Calculate the end sign **positive**, **negative** or **zero** of the product of 3 numbers:
 
 * Read **3 floating-point** numbers
-* Print the **sign** of the product of the entered 3 numbers: **positive**, **negative** or **zero**
+* Print the **sign** of the product of the 3 numbers: **positive**, **negative** or **zero**
 * Try to do this **without multiplying** the numbers
 
 ## Example
@@ -338,7 +338,7 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Write a program, which checks for **sorted 3 numbers**:
+Create a program that reads 3 numbers from the console and checks if they are sorted.
 
 * Read 3 real numbers
 * Print **"Ascending"** if the numbers are in ascending order
@@ -444,10 +444,10 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Write a program, which calculates vacation expenses:
+Create a program that calculates vacation expenses according to the following:
 
-* Read season, accommodation type and count of the days
-* Print the total expenses, based on the price table bellow,formatted to the 2nd * digit after the decimal point
+* Reads: a **season**, the **accommodation type** and the **numer of days**
+* Prints the total expenses, based on the price table bellow, formatted to the 2nd digit after the decimal point
 
 |Season|Hotel|Camping|Discount|
 |-----|------|-------|--------|
@@ -497,7 +497,7 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Calculate the **price** for all the tickets for a cinema movie:
+Calculate the total **price** for all sold tickets to a movie screening in a cinema:
 
 * Reads the **type of the movie**, the **rows** and the **seats per row** in the cinema
 * Prints the **total price** for all seats **formatted** to the 2nd digit after the decimal point
@@ -549,10 +549,10 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Write a program to apply an operator for given two numbers:
+Create a program to perform a calculation using a particular operator.
 
-* Read **two integers** and **math operator** from the console
-* The math operator could be: "+", "-", "/", "%" and "*"
+* Reads **two integers** and a **math operator** from the console
+* The math operator could be: "+",  "-",  "/",  "%"  and  "*"
 * The output should be in the following **format**: "\{N1\} \{operator\} \{N2\} = \{result\}"
 
 ## Example
@@ -636,12 +636,12 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Write a program to simulate an ATM withdrawal:
+Create a program to simulate an ATM:
 
-* Read: **balance**, **withdraw** and **limit**
-* Print **"The withdraw was successful."** if the balance is enough
-* Print **"The daily limit was exceeded."** if the limit is exceeded
-* Print **"Insufficient availability."** if the balance isn't enough
+* Reads: **balance**, **withdraw amount** and **limit**
+* Print **"The withdraw was successful."** if the balance is sufficient
+* Print **"The daily limit was exceeded."** if that is the case
+* Print **"Insufficient availability."** if the balance is insufficient
 
 ## Example
 | **Input** | **Output** |
@@ -691,9 +691,9 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Write a program to find the biggest among 5 numbers
-* Read **5 integers**
-* Print the **biggest** number
+Create a program to find the greatest of 5 numbers
+* Reads **5 integers**
+* Prints the **greatest** number
 
 ## Example
 | **Input** | **Output** |
@@ -750,21 +750,22 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
 
-Write a **console** program that reads **age (floating-point number)** and **gender**("**m**" or "**f**") and and prints an address according to these principles:
-- "**Mr.**" - a man (gender "**m**") of age 16 or more
-- "**Master**" - a boy (gender "**m**") under 16 years old
-- "**Ms.**" - a woman (gender "**f**") of age 16 or more
-- "**Miss**" - a girl (gender "**f**") under 16 years old
+## Example: Personal Titles
+
+Depending on someones **age** (integer) and their **gender** (**m** / **f**), print their personal title:
+-  "Mr." – a man (gender "m") – 16 or older
+-  "Master" – a boy (gender "m") - under 16 years old
+-  "Ms." – a woman (gender "f") – 16 or molder
+-  "Miss" – a girl (gender "f") - under 16 years old
 
 ## Input
-Entered from the console:
+From the console:
 - age - floating-point number
 - gender - "**m**" or "**f**"
 
 ## Output
-Print the expected address on a single line.
+Print the expected Personal Title on a single line.
 
 ## Example
 
@@ -944,18 +945,18 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that knows whether the tank of a vehicle needs refueling or not. 
+Create a program that checks whether the tank of a vehicle needs refueling or not. 
 
 ## Input
-The input is consists of 2 lines:
-- First you have to read from the console the type of fuel - text with options: "Diesel", "Gasoline" or "Gas"
-- The second line of input reads the fuel in the tank in liters
+The input consists of 2 lines:
+- the type of fuel: "Diesel", "Gasoline" or "Gas"
+- the fuel in the tank in liters
 
 ## Output
-- If the fuel is other than the specified print "Invalid fuel!".
-- Otherwise if the fuel in the tank is more than or equal to 25 liters print:
+- If the fuel type is one of the 3 options, print: "Invalid fuel!".
+- If the current fuel level is >= 25 liters print:
     - "You have enough \{type of fuel\}."
-    - Type of the fuel should be printed in lower case.
+    -  The type of fuel should be printed in lower case.
 - Otherwise print:
     - "Fill your tank with \{type of fuel\}!". 
     - Type of the fuel should be printed in lower case.
@@ -1078,17 +1079,17 @@ A company pays the following commissions to its employees according to the city 
 | \[1001-10000\] | 8% | 10% | 12% |
 | > 10000| 12% | 13% | 14.5% |
 
-Write a console program that reads as input the **name of a city** and the **amount of sales** and calculates the value of the **trade commission**. 
+Create a console program that reads as input the **name of the city** and the **amount of sales** and calculates the value of the **commission**. 
 
 ## Input
-Read from the console two lines:
-- Name of a city - String
+Read two lines:
+- City name - String
 - Amount of sales - floating-point number
 
 ## Output
-- Print on the console the calculated value of trade commission.
+- Print out the final value of the commission.
 - The result should be **formatted to the second decimal point**. 
-- If you receive **invalid** name of city **or** amount of sales (negative number), print "**error**".
+- If you receive an **invalid** city **or** an invalid amount of sales (negative number), print "**error**".
 
 ## Example
 | **Input** | **Output** |  
@@ -1286,13 +1287,13 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program to check if a **point {x, y}** is **on** some of the sides of a rectangle **{x1, y1} – {x2, y2}**.  
+Create a program to check if a **point {x, y}** is **on** one of the sides of a rectangle **{x1, y1} – {x2, y2}**.  
 
 ## Input
-The input comes from the console and it consists of **6 rows, introduced from the user: real numbers x1, y1, x2, y2, x and y** (it will be always true that **x1 < x2** and **y1 < y2**).
+The input consists of **6 lines: real numbers x1, y1, x2, y2, x and y** (conidering that: **x1 < x2** and **y1 < y2**).
 
 ## Output
-If the point lies on one of the rectangle's sides:
+If the point lies on one of a rectangle's side:
 - Print "**Border**"
 
 If the point does NOT lie on a side:
@@ -1317,12 +1318,20 @@ If the point does NOT lie on a side:
 | 12 | |
 | -1 | |
 
-\* **Hint**: use one or more conditional **if** statements with logical operations. A point **{x, y}** lies on aside of a rectangle **{x1, y1} – {x2, y2}**, if one of the specified conditions is fulfilled:
 
-- **x** equals **x1** or **x2** and at the same time **y** is between **y1** and **y2**
-- **y** equals **y1** or **y2** and at the same time **x** is between **x1** and **x2**
-
+[hints]
+[hint]
+You can use one or more conditional **if** statements with logical operations. A point **{x, y}** lies on aside of a rectangle **{x1, y1} – {x2, y2}**, if one of the specified conditions is fulfilled:
+[/hint]
+[hint]
+**x** equals **x1** or **x2** and at the same time **y** is between **y1** and **y2**
+**y** equals **y1** or **y2** and at the same time **x** is between **x1** and **x2**
+[/hint]
+[hint]
 You can check the conditions above using one more complicated **if**-**else** construction or using few more simple conditional statements or **nested if**-**else statements.**
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
@@ -1581,28 +1590,27 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-It's summer with changeable weather and Victor needs your help. 
 
-Write a program that recommends Victor which clothes to choose **according to the part of day and degrees (Celsius)**. 
+Create a program to help your frend choose what clothes to wear **according to the part of day and the temperature (in degrees; Celsius)**. 
 
-Your friend has different plans for every part of the day with different outfits – check the **table** below.
+Your friend has different outfits according to the time of the day and the temperature – check the **table** below.
 
 | **Part of Day / Degrees** | Morning | Afternoon | Evening |
 | --- | --- | --- | --- |
-| 10 <= deg <= 18 | Outfit: Sweatshirt | Outfit: Shirt | Outfit: Shirt |
+| 10 <= degrees C <= 18 | Outfit: Sweatshirt | Outfit: Shirt | Outfit: Shirt |
 | | Shoes: Sneakers | Shoes: Moccasins | Shoes: Moccasins |
-| 18 < deg <= 24 | Outfit: Shirt | Outfit: T-Shirt | Outfit: Shirt |
+| 18 < degrees C <= 24 | Outfit: Shirt | Outfit: T-Shirt | Outfit: Shirt |
 | | Shoes: Moccasins | Shoes: Sandals | Shoes: Moccasins |
-| deg >= 25 | Outfit: T-Shirt | Outfit: Swim Suit | Outfit: Shirt |
+| degrees C >= 25 | Outfit: T-Shirt | Outfit: Swim Suit | Outfit: Shirt |
 | | Shoes: Sandals | Shoes: Barefoot | Shoes: Moccasins |
 
 ## Input
 **Read two lines of input:**
 - **Degrees** - an integer in range \[10…42\]
-- **Part of day** - text - possibilities: "Morning", "Afternoon", "Evening"
+- **Part of day** : "Morning", "Afternoon", "Evening"
 
 ## Output
-- Print on the console a **single** line:
+- Print out a **single** line:
     - It's \{degrees\} degrees, get your \{outfit\} and \{shoes\}."
 
 ## Example
@@ -1736,7 +1744,7 @@ It's 11 degrees, get your Shirt and Moccasins.
 [/slide]
 
 [slide hideTitle]
-# Prolem: Fishing Boat
+# Problem: Fishing Boat
 [code-task title="Fishing Boat" taskId="pb-java-Conditional-Statements-A-Fishing-Boat" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1752,30 +1760,30 @@ public class Main {
 [task-description]
 ## Description
 
-Tony and his friends decided to rent a boat - the rent depends on the **season** and the **number** of fishermen.
+Tony and his friends decided to rent a fishing boat - the rent depends on the **season** and the **number** of fishermen.
 
-**The price** on the basis of **season**:
+**The boat rental price** according to the **season** is:
 - **Spring - 3000 $**
-- **Summer and autumn - 4200 $**
+- **Summer/Autumn - 4200 $**
 - **Winter - 2600 $**
 
-**The price** on the basis of **number** of fishermen uses **discount:**
-- If the group is **up to 6 people (inclusive) -  10% discount**
-- If the group members are in range \[7…11\] -  **15% discount**
-- If the group is **12 or more people - 25% discount**
+**The price** based on the **number** of fishermen is **discounted** in the following amounts:
+- **up to 6 people (inclusive) - 10% discount**
+- **7-11 people** - **15% discount**
+- **12 or more people - 25% discount**
 
-The fishermen use another **5 % discount if they are even number** except when it is **NOT** autumn – then they do **NOT** have additional discount.
+The fishermen use another **5% discount if their group consists of an even number of people**. If it is **autumn** – they do **NOT** get an additional discount.
 
-Write a **program** to **calculate** whether the fishermen will gather **enough** money.
+Create a **program** to **calculate** whether the fishermen will have **enough** money for the boat.
 
 ## Input
-The input is consists of exactly **3 lines**:
+The input holds **3 lines**:
 - The **budget** of the group - real number in range \[1…8000\]
 - **Season**  - String : "**Spring**", "**Summer**", "**Autumn**", "**Winter**"
 - **Number** of fishermen - integer in range \[4…18\]
 
 ## Output
-Print on the console a **single** line:
+Print out a **single** line:
 - If the budget **IS** enough: "Yes! You have \{money left\} dollars left."
 - If the budget **IS NOT** enough: "Not enough money! You need \{money needed\} dollars."
 
@@ -1788,10 +1796,6 @@ Print on the console a **single** line:
 | Summer | |
 | 11 | |
 
-### Comments
-- In the summer fishing costs 4200$,
-- **11 fishermen take 15% discount** -> **4200 - 15% = 3570** $, their number is **odd** so they do **not** use **additional** discount.
-- 3000 <= 3570, hence they need 570.00 $ more
 
 ## Example
 | **Input** | **Output** |
@@ -1806,6 +1810,18 @@ Print on the console a **single** line:
 | 3600 | Yes! You have 1035.00 dollars left. |
 | Spring | |
 | 6 | |
+
+[hints]
+[hint]
+Determine the discount for the fishermen and if there's any additional discount.
+In the summer fishing costs 4200$
+**11 fishermen take 15% discount** -> **4200 - 15% = 3570** $, their number is **odd** so they do **not** use **additional** discount.
+3000 <= 3570, hence they need 570.00 $ more
+[/hint]
+[hint]
+Print the correct output.
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -2014,7 +2030,7 @@ public class Main {
 [task-description]
 ## Description
 
-A flower market offers **3 types of flowers: lilia**, **roses** and **tulips**. The prices depend on the season:
+A flower market offers 3 types of flowers: **lilia**, **roses** and **tulips**. The prices depend on the season:
 
 | **Season** | **Lilia** | **Rose** | **Tulip** |
 | --- | --- | --- | --- |
@@ -2024,28 +2040,28 @@ A flower market offers **3 types of flowers: lilia**, **roses** and **tulips**. 
 On holidays the prices of all flowers **increase by 15%**.
 
 The market offers the following **discounts**:
-- If you buy **7 or more tulips during the spring** - **5% of the price of the whole bouquet**
-- If you buy **10 or more roses during the winter** - **10% of the price of the whole bouquet**
-- If you buy **more than 20 flowers in total during ALL seasons - 20% of the price of the whole bouquet**
+- If you buy **7 or more tulips during the spring** - you get a discount of **5% of the price of the whole bouquet**
+- If you buy **10 or more roses during the winter** - you get a discount of **10% of the price of the whole bouquet**
+- If you buy **more than 20 flowers in total during any season** -you get a discount of **20% of the price of the whole bouquet**
 
-**The discounts are applied in the specified order above and can be superimposed!**
+**The discounts are applied in the specified order, there can be cases where we have to apply multiple discounts!**
 
-**All of the discounts should be applied after the increasing of the prices in holidays!**
+**All of the discounts should be applied after the holiday price increase!**
 
-The price of the bouquet arrangement is **always** 2 dollars. 
+There is an arrangement price, which will **always** be 2 dollars and has to be applied at the end of all calculations. 
 
-Write a program to **calculate** the price of a bouquet.
+Create a program to **calculate** the price of a bouquet.
 
 ## Input
-The input is read from the **console** and is exactly **5 lines**:
-- Count of the bought **lilias** - integer in range \[0 ... 200\]
-- Count of the bought **roses** - integer in range \[0 ... 200\]
-- Count of the bought **tulips** - integer in range \[0 ... 200\]
+The input consists of **5 lines**:
+- Count of **lilias** - integer in range \[0 ... 200\]
+- Count of **roses** - integer in range \[0 ... 200\]
+- Count of **tulips** - integer in range \[0 ... 200\]
 - **Season** - \[Spring, Summer, Аutumn, Winter\]
-- If the day is **holiday** - \[Y - yes / N - no\]
+- Whether it is a **holiday** or not - \[Y - yes / N - no\]
 
 ## Output
-Print on the console a **single number** - the price of the flowers, **formatted to the second decimal point**.
+Print out a **single number** - the price of the bouquet, **formatted to the second decimal point**.
 
 ## Example
 | **Input** | **Output** 
@@ -2056,12 +2072,6 @@ Print on the console a **single number** - the price of the flowers, **formatted
 | Spring | |
 | Y | |
 
-### Comments
-- **Price: 2\*2.00 + 4\*4.10 + 8\*2.50 = 40.40 $** 
-- **Holiday** 40.40 + **15%** = 46.46 $
-- **5% discount for more than 7 tulips during the spring** - 44.14
-- In total the flowers are 20 or less - there **isn't a discount**
-- **44.14 + 2 for arrangement = 46.14 $** 
 
 [/task-description]
 [tests]
