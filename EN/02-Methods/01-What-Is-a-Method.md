@@ -5,9 +5,7 @@
 
 A method is a block of code that only runs when it is called.
 
-You can pass data to methods in the form of parameters.
-
-Methods are used to perform certain actions, and they are also known as **functions**.
+You can pass data to methods in the form of **parameters**.
 
 Sample method **definition**:
 
@@ -27,7 +25,7 @@ printHello();
 [slide hideTitle]
 # Why Use Methods?
 
-We use methods in Java for several reasons.
+We use methods for several reasons.
 
 - **Reusability** - we write a method once and use it **multiple times** 
 
@@ -45,7 +43,7 @@ We use methods in Java for several reasons.
 
 - **Simplify problems** - local variables and statements of a method **can not be seen from outside the method**
 
-  - they are **hidden** from other parts of the program, which prevents accidental errors or confusion
+  - they are **hidden** from other parts of the program, which prevent accidental errors or confusion
 
 [/slide]
 
