@@ -30,7 +30,7 @@ First, you will receive **3 lines with integers**, representing the **count of p
 
 On the next line, you will receive **the total amount of people** as a single integer. 
 
-**Every fourth hour, the employees have a one-hour break** before they start working again. 
+**Every fourth hour, the employees will take a one-hour break** before they start working again. 
 
 **Calculate the time needed to answer the questions of all the people** and **print the result in the following format**:
 
@@ -38,7 +38,7 @@ On the next line, you will receive **the total amount of people** as a single in
 
 ## Input / Constraints
 
-- On first 3 lines -  each employee's **efficiency** - **integers**
+- On the first 3 lines -  each employee's **efficiency** - **integers**
 
 - On the 4th line - the amount of people - an **integer**
 
@@ -82,7 +82,7 @@ On the next line, you will receive **the total amount of people** as a single in
 ## Example Three
 | **Input** | **Output** |
 | --- | --- |
-| 3 | Time needed: 5h. |
+| 3 | Time needed: 4h. |
 | 2 | |
 | 5 | |
 | 40 | |
@@ -120,7 +120,7 @@ Time needed\: 10h\.
 40
 [/input]
 [output]
-Time needed\: 5h\.
+Time needed\: 4h\.
 [/output]
 [/test]
 [test]
@@ -164,7 +164,7 @@ Time needed\: 11h\.
 40
 [/input]
 [output]
-Time needed\: 5h\.
+Time needed\: 4h\.
 [/output]
 [/test]
 [test]
