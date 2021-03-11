@@ -1306,12 +1306,17 @@ Dacă punctul NU se află pe o latură:
 | 12 | |
 | -1 | |
 
-\* **Sfat**: utilizați una sau mai multe instrucțiuni condiționale **if** cu operații logice. Un punct **{x, y}** se află lângă un dreptunghi **{x1, y1} - {x2, y2}**, dacă una dintre condițiile specificate este îndeplinită:
+[hints]
+[hint]
+utilizați una sau mai multe instrucțiuni condiționale **if** cu operații logice. Un punct **{x, y}** se află lângă un dreptunghi **{x1, y1} - {x2, y2}**, dacă una dintre condițiile specificate este îndeplinită:
 
 - **x** este egal cu **x1** sau **x2** și în același timp **y** este între **y1** și **y2**
 - **y** este egal cu **y1** sau **y2** și în același timp **x** este între **x** și **x2**
-
+[/hint]
+[hint]
 Puteți verifica condițiile de mai sus folosind o construcție mai complicată **if** - **else** sau folosind câteva instrucțiuni condiționale mai simple sau **instrucțiunilor imbricate if-else**.
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -1779,11 +1784,6 @@ Imprimați pe consolă o linie **unică**:
 | Summer | |
 | 11 | |
 
-### Comentarii
-- Vara, pescuitul costă 4200 USD,
-- **11 pescari beneficiază de 15% reducere** -> **4200 - 15% = 3570** $, numărul lor este **impar**, deci **nu** folosesc **reducere suplimentară**.
-- 3000 <= 3570, deci au nevoie de 570,00 $ mai mult
-
 ## Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
@@ -1797,6 +1797,18 @@ Imprimați pe consolă o linie **unică**:
 | 3600 | Yes! You have 1035.00 dollars left. |
 | Spring | |
 | 6 | |
+
+[hints]
+[hint]
+Determinați reducerea pentru pescari și dacă există vreo reducere suplimentară.
+Vara, pescuitul costă 4200 USD,
+**11 pescari beneficiază de 15% reducere** -> **4200 - 15% = 3570** $, numărul lor este **impar**, deci **nu** folosesc **reducere suplimentară**.
+3000 <= 3570, deci au nevoie de 570,00 $ mai mult
+[/hint]
+[hint]
+Imprimați rezultatul corect.
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -2041,13 +2053,6 @@ Imprimați pe consolă un **număr unic** - prețul florilor, **formatat la a do
 | 8 | |
 | Spring | |
 | Y | |
-
-### Comentarii
-- **Preț: 2\*2.00 + 4\*4.10 + 8\*2.50 = 40.40 $** 
-- **Vacanță** 40.40 + **15%** = 46.46 $
-- **Reducere de 5% pentru mai mult de 7 lalele în primăvară** - 44.14
-- În total florile sunt de 20 sau mai puțin - nu există **o reducere**
-- **44.14 + 2 pentru aranjament = 46.14 $** 
 
 [/task-description]
 [tests]
