@@ -628,6 +628,18 @@ Scrieți un program care:
 | 15 | |
 | 24 | |
 
+## Exemplu 2
+|  **Intrare** | **Ieșire** |
+| --- | --- |
+| 2 | Waiting... |
+| 25 | |
+| 5 | |
+| 10 | |
+| 15 | |
+| 18 | |
+| 5 | |
+| 30 | |
+
 [/task-description]
 [tests]
 [test open]
@@ -820,8 +832,8 @@ Imprimați pe consolă o singură linie. Suma trebuie formatată cu două cifre 
 
 [hints]
 [hint]
-Determine how much money Josh will spend each year and then subtract the total money needed from his legacy money.
-Then, print the correct output
+Stabiliți câți bani va cheltui Josh în fiecare an și apoi scădeți totalul de bani necesari din banii săi vechi.
+Apoi, tipăriți rezultatul corect
 [/hint]
 [/hints]
 
@@ -1714,14 +1726,14 @@ Toate numerele trebuie formatate la a doua zecimală.
 
 [hints]
 [hint]
-Get the total amount of students, then using a for loop, determine how many students have grades between:
-- 5 and more
+Obțineți cantitatea totală de studenți, apoi folosiți o buclă for, determinați câți elevi au note între:
+5 și mai mult
  
-- 4 and 4.99
+4 și 4.99
 
-- 3 and 3.99
+3 și 3.99
 
-- Less than 3
+Mai puțin decât 3
 [/hint]
 [hint]
 Finally, calculate the average grade and print the correct output.
