@@ -5,7 +5,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-23-24-sorting-lists-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-`Collections.sort()` - sorts a List in ascending order. In the case of String values they will be sorted in alphabetical order.
+`Collections.sort()` - sorts a List in ascending order. If the values are of type String, they will be sorted in alphabetical order.
 
 ```java live
 List<String> names = new ArrayList<>(Arrays.asList("Peter", "Michael", "George", "Victor", "John", "Alexander"));
@@ -162,9 +162,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Read a **list of integers**, **remove all negative numbers** from it, and print the remaining elements in **reversed order**.
+Read a **list of integers**, **remove all negative numbers** from it and print the remaining elements in **reversed order**.
 
-If there are no more elements remaining in the list, print "**empty**".
+If there are no elements left in the list, print "**empty**".
 
 ## Examples
 | **Input** | **Output** |
