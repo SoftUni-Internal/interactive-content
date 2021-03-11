@@ -700,10 +700,14 @@ Print one of the following output templates to the console, depending on the res
 [hints]
 [hint]
 Calculate the total yield in kilograms.
+Total Yield in kg: 650 \* 2 = 1300 
 [/hint]
 [hint]
 Determine the total wine produced and check if the goal was reached.
 Then print the correct output.
+Wine Produced by this vineyard = (40% \* 1300) / 2.5 = 208
+208 > 175 - the goal was reached 
+208 \- 175 = 33 liters remain \-> each worker receives 11 liters
 [/hint]
 [/hints]
 
@@ -1280,6 +1284,7 @@ Print out a **single** line:
 | 1 | |
 | 1200 | |
 
+
 ## Example
 | **Input**  | **Output** |
 | --- | --- |
@@ -1502,10 +1507,15 @@ Print to the console **one of the following outcomes**:
 [hints]
 [hint]
 Calculate the capacity for each pipe.
+For 3 hours: The first pipe fills up 300 liters
+The second pipe fills up 360 liters
+In total – 660 liters < 1000 lliters => 66% are filled up
 [/hint]
 [hint]
 Check if the total output from both pipes is enough to fill the pool.
 Then print the correct output.
+The first pipe has transferred 45% (300 of 660 liters).
+The second pipe has transferred 54% (360 of 660 liters).
 [/hint]
 
 [/hints]
