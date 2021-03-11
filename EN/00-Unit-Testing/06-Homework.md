@@ -1776,7 +1776,7 @@ PaymentPackage = class PaymentPackage \{
         const output = \[
             `Package: \\$\{this.name\}` + (this.active === false ? ' (inactive)' : ''),
             `- Value (excl. VAT): \\$\{this.value\}`,
-            `- Value (VAT \\$\{this.VAT\}%): \\$\{this.value \* (1 + this.VAT / 100)\}`
+            `- Value (VAT \\$\{this.VAT\}%): \\$\{this.value * (1 + this.VAT / 100)\}`
         \];
         return output.join('\n');
     \}
@@ -1840,7 +1840,7 @@ PaymentPackage = class PaymentPackage \{
         const output = \[
             `Package: \\$\{this.name\}` + (this.active === false ? ' (inactive)' : ''),
             `- Value (excl. VAT): \\$\{this.value\}`,
-            `- Value (VAT \\$\{this.VAT\}%): \\$\{this.value \* (1 + this.VAT / 100)\}`
+            `- Value (VAT \\$\{this.VAT\}%): \\$\{this.value * (1 + this.VAT / 100)\}`
         \];
         return output.join('\n');
     \}
@@ -1904,7 +1904,7 @@ PaymentPackage = class PaymentPackage \{
         const output = \[
             `Package: \\$\{this.name\}` + (this.active === false ? ' (inactive)' : ''),
             `- Value (excl. VAT): \\$\{this.value\}`,
-            `- Value (VAT \\$\{this.VAT\}%): \\$\{this.value \* (1 + this.VAT / 100)\}`
+            `- Value (VAT \\$\{this.VAT\}%): \\$\{this.value * (1 + this.VAT / 100)\}`
         \];
         return output.join('\n');
     \}
@@ -1968,7 +1968,7 @@ PaymentPackage = class PaymentPackage \{
         const output = \[
             `Package: \\$\{this.name\}` + (this.active === false ? ' (inactive)' : ''),
             `- Value (excl. VAT): \\$\{this.value\}`,
-            `- Value (VAT \\$\{this.VAT\}%): \\$\{this.value \* (1 + this.VAT / 100)\}`
+            `- Value (VAT \\$\{this.VAT\}%): \\$\{this.value * (1 + this.VAT / 100)\}`
         \];
         return output.join('\n');
     \}
@@ -2035,7 +2035,7 @@ PaymentPackage = class PaymentPackage \{
         const output = \[
             `Package: \\$\{this.name\}` + (this.active === false ? ' (inactive)' : ''),
             `- Value (excl. VAT): \\$\{this.value\}`,
-            `- Value (VAT \\$\{this.VAT\}%): \\$\{this.value \* (1 + this.VAT / 100)\}`
+            `- Value (VAT \\$\{this.VAT\}%): \\$\{this.value * (1 + this.VAT / 100)\}`
         \];
         return output.join('\n');
     \}
@@ -2112,7 +2112,7 @@ PaymentPackage = class PaymentPackage \{
         const output = \[
             `Package: \\$\{this.name\}` + (this.active === false ? ' (inactive)' : ''),
             `- Value (excl. VAT): \\$\{this.value\}`,
-            `- Value (VAT \\$\{this.VAT\}%): \\$\{this.value \* (1 + this.VAT / 100)\}`
+            `- Value (VAT \\$\{this.VAT\}%): \\$\{this.value * (1 + this.VAT / 100)\}`
         \];
         return output.join('\n');
     \}
@@ -2189,7 +2189,7 @@ PaymentPackage = class PaymentPackage \{
         const output = \[
             `Package: \\$\{this.name\}` + (this.active === false ? ' (inactive)' : ''),
             `- Value (excl. VAT): \\$\{this.value\}`,
-            `- Value (VAT \\$\{this.VAT\}%): \\$\{this.value \* (1 + this.VAT / 100)\}`
+            `- Value (VAT \\$\{this.VAT\}%): \\$\{this.value * (1 + this.VAT / 100)\}`
         \];
         return output.join('\n');
     \}
@@ -2267,7 +2267,7 @@ PaymentPackage = class PaymentPackage \{
         const output = \[
             `Package: \\$\{this.name\}` + (this.active === false ? ' (inactive)' : ''),
             `- Value (excl. VAT): \\$\{this.value\}`,
-            `- Value (VAT \\$\{this.VAT\}%): \\$\{this.value \* (1 + this.VAT / 100)\}`
+            `- Value (VAT \\$\{this.VAT\}%): \\$\{this.value * (1 + this.VAT / 100)\}`
         \];
         return output.join('\n');
     \}
@@ -2345,7 +2345,7 @@ PaymentPackage = class PaymentPackage \{
         const output = \[
             `Package: \\$\{this.name\}` + (this.active === false ? ' (inactive)' : ''),
             `- Value (excl. VAT): \\$\{this.value\}`,
-            `- Value (VAT \\$\{this.VAT\}%): \\$\{this.value \* (1 + this.VAT / 100)\}`
+            `- Value (VAT \\$\{this.VAT\}%): \\$\{this.value * (1 + this.VAT / 100)\}`
         \];
         return output.join('\n');
     \}
@@ -2423,7 +2423,7 @@ PaymentPackage = class PaymentPackage \{
         const output = \[
             `Package: \\$\{this.name\}` + (this.active === false ? ' (inactive)' : ''),
             `- Value (excl. VAT): \\$\{this.value\}`,
-            `- Value (VAT \\$\{this.VAT\}%): \\$\{this.value \* (1 + this.VAT)\}`
+            `- Value (VAT \\$\{this.VAT\}%): \\$\{this.value * (1 + this.VAT)\}`
         \];
         return output.join('\n');
     \}
@@ -2501,7 +2501,7 @@ PaymentPackage = class PaymentPackage \{
         const output = \[
             `Package: \\$\{this.name\}`,
             `- Value (excl. VAT): \\$\{this.value\}`,
-            `- Value (VAT \\$\{this.VAT\}%): \\$\{this.value \* (1 + this.VAT / 100)\}`
+            `- Value (VAT \\$\{this.VAT\}%): \\$\{this.value * (1 + this.VAT / 100)\}`
         \];
         return output.join('\n');
     \}
