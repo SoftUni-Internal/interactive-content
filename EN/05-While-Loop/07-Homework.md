@@ -19,11 +19,11 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which:
+Create a program that:
 
 * Reads a number from the console
-* **Sums** the **digits** of a number
-* Prints the sum
+* **Sums** all the **digits** of the given number
+* Prints the sum of all digits
 
 ## Example
 | Input | Output |
@@ -101,11 +101,11 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which: 
+Create a program that:
 
-* Reads a **book's name** from the console
-* Receives names until it gets **book with the same name as the first one**
-* Prints "Book found! Attempts: \{attemptsCount\}" and stops afterwards
+* Reads a **string** representing the name of a particular book
+* Reads another string values until it receives the name of the first book again.
+* Prints "Book found! Attempts: \{attemptsCount\}" and stops
 
 ## Example
 | Input | Output |
@@ -172,10 +172,10 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which: 
+Create a program that:
 
-* Receives integers until **"END"**
-* Prints the **biggest** and the **smallest** integer in the following format:
+* Reads integers until the **"END"** command is received
+* Prints the **greatest** and the **smallest** integers in the following format:
    * Max number: \{max number\}
    * Min number: \{min number\}
 
@@ -284,10 +284,10 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Special number is number **divisible by all of its digits** without remainder. 
+A **special** number is a number **divisible by all of its digits** without a remainder. 
 
-Write a program, which: 
-* Receives integer
+Create a program that:
+* Receives an integer value
 * **Prints** "\{num\} is special", if the number is special
 * Otherwise, prints "\{num\} is not special"
 
@@ -367,11 +367,12 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which: 
+Create a program that:
 
-* Reads an **integer** number from the console
-* Keeps reading integers until it finds the **same one as the first one**
-* When it finds it, it increases the value of the **previous** number **before it** with 100% and prints it
+* Reads an **integer** number
+* Keeps reading integers until it receives the **same number**
+* When such a number is received, the value of the **previous** number should be increased by **100%**
+* The **increased number** should be printed to the console
 
 ## Example
 | Input | Output |
@@ -435,11 +436,11 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which: 
+Create a program that:
 
-* Reads a number **n** from the console
-* Prints a **sequence** of numbers, which are **<= n** and satisfy the following condition:
-* Each number is equal to the previous one multiplied by **2** plus **1**
+* Reads an integer number - `n` 
+* Prints a **sequence** of numbers that are **<= `n`** and satisfy the following condition:
+* Each number is equal to the previous one multiplied by **2** plus **1** 
 
 ## Example
 | Input | Output |
@@ -548,11 +549,11 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which: 
+Create a program that:
 
-* Receives the **amount of money** for each transaction untill **"END"**
-* **Adds** the money to the **balance** and **prints**: "Increase: \{money\}", format `money` to the **2nd digit** after the decimal point
-* After **"END"** calculates and **prints** the total balance: "Total: \{balance\}", format `balance` to the **2nd digit** after the decimal point
+* Receives a number representin the **amount of money** for each transaction, untill the **END** command is received
+* **Adds** the money to the **balance** and **prints**: "Increase: \{money\}".  The `money` should be formatted to the **2nd digit** after the decimal point
+* After the **END** command is received, calculates and **prints** the **total balance**: "Total: \{balance\}". The `balance` should be formatted to the **2nd digit** after the decimal point
 
 ## Example
 | Input | Output |
@@ -612,18 +613,18 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Andreea goes to her home town after being a long time abroad. 
+Andreea goes to her hometown after being a long time abroad. 
 
-When she comes home, she sees her grandmother\'s library and remembers her favourite book. 
+When she comes home, she sees her grandmother\'s library and remembers her favorite book. 
 
-Help Andreea writing a program in which Andreea enters the name of the **book** she\'s searching for (**String**) and the **capacity** of the library (**integer**). 
+Help Andreea by writing a program, in which Andreea enters the name of the **book** she\'s searching for (**string**), and the **capacity** of the library (**integer**). 
 
-**Until** Andreea finds her favourite book **or** doesn\'t check all books in the library, the program have to reads every time the name of the next book on a separate line.
+**Until** Andreea finds her favorite book **or** there are more books to be checked, the program has to read a new name of the book, each on a separate line.
 
 ## Input
-- First line of input is the name of the book Andreea's searching for - string
-- Second line is the capacity of the library - integer
-- On every nex line - name of book from library - string
+- The name of the book Andreea is searching for - string
+- The capacity of the library - integer
+- A new name of a book - string
 
 ## Output
 - If Andreea **does not** find the book, print **two** lines:
@@ -643,7 +644,7 @@ Help Andreea writing a program in which Andreea enters the name of the **book** 
 
 ### Comments
 - Andreea is searching for a book with name "Troy", and the library\'s capacity is 8 books.
-- The first book is "Stronger", the second one is "Life Style", the third one is desired - "Troy" and the program ends.
+- The first book is "Stronger", the second one is "Life Style", the third one is the desired one- "Troy", so the program ends
 
 ## Example
 | **Input** | **Output** |
@@ -658,7 +659,7 @@ Help Andreea writing a program in which Andreea enters the name of the **book** 
 ### Comments
 - Andreea is searching for a book with name "The Spot". The library contains 4 books.
 - The first book is "Hunger Games", the second - "Harry Potter", the third - "Torronto", the fourth - "Spotify"
-- Since there aren\'t other books in the library, reading names is stopped. Andreea didn\'t find the book.
+- Since there are not other books in the library, the program should end
 [/task-description]
 [tests]
 [test open]
