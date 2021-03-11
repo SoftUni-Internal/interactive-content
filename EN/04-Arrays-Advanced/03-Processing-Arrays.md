@@ -5,9 +5,9 @@
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-23-transform-elements-with-map-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Starting from EcmaScript 5, the JavaScript **Array** type provides a `map()` method that allows us to **transform the elements of an array** in a cleaner way. 
+Starting from ECMAScript 5, the JavaScript **Array** type provides a **map()** method that allows us to **transform the elements of an array** in a cleaner way. 
 
-The `map()` method creates a **new array** with the results of calling a **function** for **every element** of the array. 
+The **map()** method creates a **new array** with the results of calling a **function** for **every element** of the array. 
 
 In this example, we create a new array using the `map()` method, and we store the **length of each string**: 
 
@@ -40,7 +40,7 @@ You can read more about `map()` [here](https://developer.mozilla.org/en-US/docs/
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-24-filter-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The `filter()` method creates a **new array**, filled with all array elements that **pass a given test** (provided as a function).
+The **filter()** method creates a **new array**, filled with all array elements that **pass a given test** (provided as a function).
 
 In this example, we use the `filter()` method to create a new array, where the **length** of each element is **greater than three**.
 
