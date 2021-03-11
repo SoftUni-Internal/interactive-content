@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Prezentare Generală
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-3-4-overview-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 JavaScript are **funcții încorporate** pentru tratarea matricelor care **pot simplifica codul, ușurează citirea** și, nu în ultimul rând, facilitează depanarea.
 
 Putem folosi funcțiile săgeată în unele dintre metodele avansate.
@@ -28,6 +30,7 @@ Practic, aceste metode modifică matricea și nu este nevoie să scriem o grăma
 [slide hideTitle]
 # Adăugați și Eliminați Funcțiile
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-5-add-at-the-end-remove-from-the-end-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Adăugați la sfârșit, eliminați la sfârșit.
 
@@ -59,6 +62,8 @@ console.log(number);
 [slide hideTitle]
 # Adăugați la început, Eliminați de la început 
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-6-add-at-the-start-remove-from-the-start-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Metoda `array.unshift()` este utilizată pentru a adăuga un element nou la începutul unui matrice.
 
 ``` js live
@@ -83,6 +88,8 @@ console.log(number);
 
 [slide hideTitle]
 # Problem with Solution: Sum First Last
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-problem-1-solution-sum-first-last-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sum First Last" taskId="fundamentals-js-arrays-advanced-lab-Sum-First-Last" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -183,6 +190,8 @@ sumFirstLast(['5', '10'])
 [slide hideTitle]
 # Pushing Into an Array
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-10-pushing-an-array-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Metoda `array.push()` adaugă unul sau mai multe elemente la sfârșitul unui tablou și returnează noua lungime:
 
 ``` js live
@@ -196,6 +205,8 @@ console.log(fruits);
 
 [slide hideTitle]
 # Schimbarea și Neschimbarea într-o Matrice
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-11-shifting-and-unshifting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Metoda `array.shift()` elimină primul element al unei matrice:
 
@@ -219,6 +230,8 @@ console.log(myArray);
 
 [slide hideTitle]
 # Problem with Solution: Negative or Positive Numbers
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-12-problem-and-solution-negative-posivite-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Negative or Positive Numbers" taskId="fundamentals-js-arrays-advanced-lab-Negative-or-Positive-Numbers"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -365,6 +378,8 @@ negativePositive(['\-2', '3', '0', '5', '\-6', '0', '8'])
 
 [slide hideTitle]
 # Găsiți Valorile
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-14-find-values-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 `array.includes()` returnează in adevarat dacă valoarea dată face parte din matrice.
 

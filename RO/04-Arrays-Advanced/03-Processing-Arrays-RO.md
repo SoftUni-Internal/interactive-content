@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Transormarea Elementelor
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-23-transform-elements-with-map-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Începând de la ES5, tipul JavaScript `Array` oferă metoda `map()` care ne permite să transformăm elementele unei matrice într-un mod mai curat.
 
 Metoda `map()` creează o nouă matrice cu rezultatele apelării unei funcții pentru fiecare element al matricei.
@@ -36,6 +38,7 @@ Puteți citi mai multe despre [map()](https://developer.mozilla.org/en-US/docs/W
 [slide hideTitle]
 # Filtrarea Elementelor
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-24-filter-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Metoda `filter()` creează o nouă matrice, plină cu toate elementele matricei care trec un test dat (furnizat ca funcție).
 
@@ -62,6 +65,8 @@ console.log(positiveNums);
 
 [slide hideTitle]
 # Problem with Solution: Process Odd Numbers
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-problem-05-solution-process-odd-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Process Odd Numbers" taskId="fundamentals-js-arrays-advanced-lab-Process-Odd-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -182,6 +187,7 @@ oddNumbers([4, 12, 34, 2, 8, 6, 1, 31])
 [slide hideTitle]
 # Sortarea Matricelor
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-27-28-sorting-arrays-and-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În funcție de **funcția de comparare** oferită, ordinea de sortare poate **fi alphabetică sau numerică**, fie ascendentă (în sus) sau descendentă (în jos).
 
@@ -218,6 +224,7 @@ console.log(numbers);
 [slide hideTitle]
 # Funcții de Comparare
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-29-compare-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Din fericire, metoda `sort()` poate sorta valori negative, zero și pozitive în ordinea corectă.
 
@@ -240,6 +247,8 @@ console.log(nums.join('|'));
 [slide hideTitle]
 # Sortarea Matricelor de Siruri
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-30-sorting-string-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Metoda `localeCompare()` compară două șiruri de caractere în locale actuale.
 
 Este o metodă de șir, deci nu poate fi aplicată direct pe o matrice.
@@ -257,6 +266,8 @@ console.log(words);
 
 [slide hideTitle]
 # Problem with Solution: Smallest two Numbers
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-problem-06-solution-smallest-two-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Smallest two Numbers" taskId="fundamentals-js-arrays-advanced-lab-Smallest-two-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
