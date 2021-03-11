@@ -4,30 +4,24 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In this lesson you will learn about:
+## In this lesson you will learn:
 
-**1. Lists Overview and Manipulations**
+**1. Lists and Manipulations**
 
-- What lists are
+- What **lists** are
 
 - How lists are used and why we need them
 
-- Adding elements
+- **Adding** elements
 
-- Removing elements
+- **Removing** elements
 
-- Modifying elements
+- **Modifying** elements
 
-- Finding elements
+- **Finding** elements
 
 
 **2. Reading and Printing Lists**
-
-- Reading lists from the console
-
-- Reading lists from a single line
-
-- Printing lists to the console
 
 **3. Sorting Lists**
 
