@@ -4,34 +4,38 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-10-11-interfaces-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-`Interface` in Java may look like a **class**, but it is not a class. 
 
-An **interface** can have all the methods and variables like the class do, but the **methods** in the interface are **abstract** by default.
+A Java **interface** can have all the methods and variables that a class does, but the **methods** in the interface are **abstract** by default.
 
-**Interfaces** in Java are used to specify a behavior that **classes** must **implement**.
+**Interfaces** in Java specify a behavior that **classes** must **implement**.
 
 We use **interfaces** when we want to achieve **security**.
 
 As we know, Java does not support "**multiple inheritance**". 
 
-However, we can achieve this easy with **interfaces**, because the class can **implement** multiple interfaces.
+However, we can achieve this using **interfaces** because the class can **implement** multiple interfaces.
 
-In this **example** we can see how **implementation** of `print()` is provided in class `Document`
+In this **example** we can see how the **implementation** of `print()` is provided in the `Document` class:
 
 ``` java
-public interface Printable {        //The interface declares a method print
+public interface Printable {        
+    // The interface declares a print method 
     void print();
 }
 ```
 
 ``` java
-class Document implements Printable {   //And by implementing the interface the class signs a contract which promises to implement the method
+class Document implements Printable {   
+// And by implementing the interface, the class signs a contract that promises to implement the print method
+
   public void print() { 
-    System.out.println("Hello");        //Further the class gives the method its own implementation
-    }
+    // The class gives its implementation to the method
+    System.out.println("Hello");        
+  }
+
   public static void main(String args[]) {
-    Printable doc = new Document();     // We achieve Polymorphism
-    doc.print();  // Hello
+    Printable doc = new Document();    // We achieve polymorphism
+    doc.print();  // Output: "Hello"
   }
 }
 ```
@@ -42,16 +46,16 @@ class Document implements Printable {   //And by implementing the interface the 
 
 # Static Methods in Interfaces
 
-The **Static Methods** in the interfaces are those methods which are defined with the keyword **Static**.
+The **Static Methods** in the interfaces are those methods that are defined with the keyword **Static**.
 
-The difference between the rest of the methods and the static methods is that we have to declare complete definition of the **static method**.
+The difference between the rest of the methods and the static methods is that we have to declare a complete definition of the **static method**.
 
 Further, when a given class implements our interface, it can not change the implementation of the given **static method**.
 
-Now let's see an **Example**:
+Now, let us see an **example**:
 
 ```java
-// Implementation Class 
+// Implementation class 
 public class Test implements TestInterface {
 
     public static void main(String[] args) {
@@ -72,10 +76,10 @@ public class Test implements TestInterface {
     }
 }
 
-//Interface
+// Interface
 interface TestInterface {
 
-    // static method 
+    // Static method 
     static void hello()
     {
         System.out.println("Hello, Test Static Method Here");
@@ -85,7 +89,7 @@ interface TestInterface {
     void overrideMethod(String str);
 }
 
-//OUTPUT
+// Output
 Hello, New Static Method Here
 Hello, Override Method here
 ```
@@ -98,7 +102,7 @@ Hello, Override Method here
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-17-18-extend-interface-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In Java, interface can **extend another interface**.
+In Java, an interface can **extend another interface**.
 
 ``` java
 public interface Callable {
@@ -112,7 +116,7 @@ public interface Printable extends Callable {
 }
 ```
 
-**Class which implements an interface must provide implementation for parent interface as well.**
+**A class that implements an interface must provide an implementation for the parent interface as well.**
 
 [/slide]
 
@@ -1582,9 +1586,11 @@ class TestInterfaceDefault {
 
 Another thing we can do since Java 8 is to **define** and **implement** `static` methods in interfaces.
 
-We can define static methods in interfaces identical to defining one in class. They can be also invoked within other methods.
+We can define static methods in interfaces identical to defining one in class. 
 
-To understand better let's take a look in this example:
+They can be also invoked within other methods.
+
+To understand better let's take a look at this example:
 
 ``` java
 public interface Car {
@@ -1596,7 +1602,7 @@ public interface Car {
 }
 ```
 
-Now, if we want to calculate the **horsepower** of our car's engine we just call our `getHorsePower()` method.
+Now if we want to calculate the **horsepower** of our car's engine, we just call our `getHorsePower()` method.
 
 ``` java
 Vehicle.getHorsePower(480, 2500));
