@@ -10,9 +10,9 @@ A Java field is a variable inside a class.
 
 For instance, in a class representing a car, the Car class might contain the following fields:
 
-- `brand`
-- `model`
-- `horsePower`
+- **brand**
+- **model**
+- **horsePower**
 
 The corresponding Java class is defined as follows:
 
@@ -41,9 +41,9 @@ The class should have **public** fields for:
 - **Model**: String
 - **Horsepower**: Integer
 
-Create a **new class** and ensure **proper naming**
+Create a **new class** and ensure you name it according to the rules for naming classes. 
 
-You should be now able to use your class:
+You should now be able to use your class:
 
 ```java live
 import java.util.*;
@@ -105,15 +105,15 @@ Using a **private** access modifier means that only code inside the class body c
 
 If you do not use any modifier, it is treated as **package-private** by **default**.
 
-The **package-private** access modifier means that only code inside the class itself, or other classes in the same package, can access the field.
+The **package-private** access modifier means that only code inside the class or other classes in the same package can access the field.
 
-It provides more accessibility than private.
+It provides more accessibility than the **private** modifier.
 
-But, it is **more restrictive** than **protected** and **public**.
+The **Package-private** access modifier is **more restrictive** than **protected** and **public**.
 
-The **protected** access modifier is accessible within and outside the package, but through **inheritance** only.
+The **protected** access modifier is accessible within and outside the package but only through **inheritance**.
 
-**Inheritance** is a mechanism in which one object **acquires** all the **properties** and **behaviors** of a **parent** object.
+**Inheritance** is a mechanism where one object **acquires** all the **properties** and **behaviors** of a **parent** object.
 
 You can find out more about **inheritance** [here](https://docs.oracle.com/javase/tutorial/java/concepts/inheritance.html).
 
