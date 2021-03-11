@@ -38,7 +38,7 @@ static void printNumbers(int start, int end) {
 
 ## In the next lesson, you will learn:
 
-- What are **lists**
+- What **lists** are
 - **List** operations
 - **Reading lists** from the console
 - **Sorting lists and arrays**
