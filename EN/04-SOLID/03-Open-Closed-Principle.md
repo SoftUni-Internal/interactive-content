@@ -1,24 +1,22 @@
 [slide hideTitle]
 
-# Open Closed Principle
+# Open-Closed Principle
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-9-12-open-closed-principle-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 "The code should be **open for extension**, but **closed for modification**".
 
-Software entities (**classes, modules, methods, etc.**) should be extendable without actually changing the contents of the class you are extending. 
+Software entities (**classes, modules, methods, etc.**) should be extendable without changing the contents of the class you are extending. 
 
-If we follow this principle strongly enough, it is possible to then modify the behavior of our code **without ever touching** a piece of **the original code** and adding new functionallities to our classes would happen only through adding new code, not fixing old one.
+By following this principle, we can modify the behavior of our code at a later time, **without making changes** to **the original code**.
 
-This principle does not count if we are fixing bugs, only then we should modify the existing code.
+Adding new functionalities to our classes would happen only through adding new code, not fixing the old one.
 
-[/slide]
+This principle does not apply when fixing bugs - in that case we can directly modify the existing code.
 
-[slide hideTitle]
+## Example
 
-# Open Closed Principle - Example
-
-In the following example, we have the **CalculateArea** class which calculates the area of various shapes.
+In the following example, we have the **CalculateArea** class that calculates the area of various shapes.
 
 **CalculateArea** class:
 ```java
@@ -91,7 +89,7 @@ public interface Shape {
 }
 ```
 
-- By implementing the **Shape** Interface, all shapes classes are obligatory in order to implement the `calculateArea()` method
+- By implementing the **Shape** Interface, all shapes classes are obligatory to implement the `calculateArea()` method
 
 **Circle** class:
 
@@ -154,11 +152,11 @@ public class CalculateArea {
 }
 ```
 
-By using the **Open-Closed principle**, we can add a square's area **without modifying** the CalculateArea class, so we can be certain that our existing application will not be affected.
+By using the **open-closed principle**, we can add a square's area **without modifying** the CalculateArea class, so we can be certain that our existing application will not be affected.
 
-Applying **Open-Closed principle** to our projects limits the need to change source code once it has been written, tested and debugged.
+Applying the **open-closed principle** to our projects limits the need to change source code once it has been written, tested, and debugged.
 
-This principle is imporant to follow because if we change the already existing logic of our classes we can brake our client's code.
+This principle is important to follow because if we change the already existing logic of our classes we can break our client's code.
 
 As well as applying it **reduces the risk of introducing new bugs** to existing code, leading to a more robust software.
 
@@ -172,39 +170,40 @@ As well as applying it **reduces the risk of introducing new bugs** to existing 
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-13-ocp-violations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Not following the Open-Close Principle will lead to problems**
+**Not following the open-closed principle will lead to problems:**
 
-**- Cascading changes through modules**
-  If we change the code in our class, everybody that uses this class will change their behaviour implicitly.
+- **Cascading changes through modules**
+  If we change the code in our class, everybody that uses this class will change their behavior implicitly.
   
- It does not matter if the clients are  inheriting or declaring the class's object, changes to the existing code will lead to cascading changes down the line.
+ It does not matter if the clients are inheriting or declaring the class's object, changes to the existing code will lead to cascading changes down the line.
 
-**- Re-testing**
-  Our code needs testing to validate it's correctness, this is an inevitable part of our jobs.
+- **Re-testing**
+  Our code needs testing to validate its correctness, this is an inevitable part of the development process.
 
-  Imagine if every time we want to add new feature and do it throgh changing our old code, we have to go through all the tests we have written for it and refactor them to make them valid again.
+  Imagine if every time we want to add a new feature and do it through changing our old code, we have to go through all the tests we have written for it and refactor them to make them valid again.
 
-**- Logic depends on conditional statements**
-  Some parts of our code depened on conditional statements logic, changing our old code may brake the conditional statements, changing the behaviour of our program, which may lead to bugs which will be hard to find.
+- **Logic depends on conditional statements**
+  Some parts of our code depend on conditional statements logic, changing our old code may break the conditional statements, changing the behavior of our program, which may lead to bugs that will be hard to find.
 
 [/slide]
 
 [slide hideTitle]
 
-# Open Close Principle - Solutions
+# Open-Closed Principle - Solutions
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-14-ocp-silutions-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Inheritance / Abstraction
 
-As we did in the example we can level up an abstraction, giving a solution to our current problem,this way we will be able to keep the **OCP**
+As we did in the example, we can level up an abstraction, giving a solution to our current problem, this way we are enforcing the **OCP**.
     
 - Design Patterns
 
 When we need to solve any design problems, we can check the common design patterns for a tested solution.
 
 They have tested solutions, which will give us an abstract way to solve a given problem.
-Few of the ones that can help us keep the **Open-Close-Principle** are:
+
+A few that can help us keep the **open-closed principle** are:
    - Template Method Pattern
    - Strategy Pattern
    - Decorator Pattern
