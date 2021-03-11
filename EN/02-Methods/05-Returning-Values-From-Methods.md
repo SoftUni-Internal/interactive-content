@@ -3,17 +3,17 @@
 [slide hideTitle]
 # The Return Statement
 
-The `return` keyword finishes the execution of a method, and can be used to return a value from it.
+The `return` keyword returns a value from the method.
 
 
 ```java live
 public class MyClass {
-  static int myMethod(int x) {
+  static int increaseValue(int x) {
     return 5 + x;
   }
 
   public static void main(String[] args) {
-    System.out.println(myMethod(3));
+    System.out.println(increaseValue(3));
   }
 }
 ```
@@ -58,7 +58,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a method that calculates and returns the area of a rectangle by a given width and length:
+Create a method that calculates and returns the area of a rectangle by a given width and length.
 
 ## Examples
 |**Input**|**Output**|
@@ -154,9 +154,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a method that receives a string and a repeat count **n** \(integer\).
+Create a method that receives a **string** and a repeated count **n** \(integer\).
 
-The method should return a new string \(the input string repeated **n** times\).
+The method should return a new **string** \(the input string repeated **n** times\).
 
 ## Examples
 |**Input**|**Output**|
@@ -406,9 +406,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a method that calculates the total price of an order and prints it to the console.
+Create a method that calculates the total price of an order and prints it to the console.
 
-The method should receive one of the **following products**: coffee, coke, water, snacks; and a quantity of the product.
+The method should receive one of the **following products**: coffee, coke, water, snacks; and a value for the quantity of the product.
 
 The prices for a single piece of each product are:
 
