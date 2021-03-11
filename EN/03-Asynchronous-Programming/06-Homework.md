@@ -10,7 +10,7 @@ Create a program that **requests** a weather report **from a server** and **disp
 
 **Use the skeleton from the provided resources.**
 
-When the user writes the name of a location and clicks `Get Weather`, make a **GET** request to the server at address "**https://judgetests.firebaseio.com/locations.json**".
+When the user writes the name of a location and clicks `Get Weather`, make a **GET** request to the server at address **"https://judgetests.firebaseio.com/locations.json"**.
 
 The response will be an array of objects with the following structure: 
 
@@ -25,7 +25,7 @@ Find the object, corresponding to the name that the user submitted in the input 
 
 - For current conditions, request to:
 
-"**https://judgetests.firebaseio.com/forecast/today/{code}.json**"
+**"https://judgetests.firebaseio.com/forecast/today/{code}.json"**
 
 The response from the server will be an object with the following structure:
 
@@ -42,7 +42,7 @@ The response from the server will be an object with the following structure:
 
 - For a 3-day forecast, make a request to:
 
-"**https://judgetests.firebaseio.com/forecast/upcoming/{code}.json**"
+**"https://judgetests.firebaseio.com/forecast/upcoming/{code}.json"**
 
 The response from the server will be an object with the following structure:
 
