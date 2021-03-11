@@ -35,9 +35,9 @@ You have been given the web design of the application as **HTML** \+ **CSS** fil
 
 Your application may **hide/show elements** using CSS (display: none) or **delete/reattach** all unneeded elements from and to the DOM, or just render the views it needs to displayed.
 
-- You may render the views/forms/components with **JavaScript** or **lit-html**.
+- You may render the views/forms/components with **JavaScript** or **lit-html**
 
-- You are **allowed** to add **attributes** to any HTML element.
+- You are **allowed** to add **attributes** to any HTML element
 
 ## Important
 
@@ -171,7 +171,7 @@ Logged-in users should be able to **view the details** about an offer.
 
 Clicking on a **particular offer** should display the **Details page.**
 
-- If the currently logged-in user is the creator, the `[Delete]` and `[Edit]` **buttons** should be set to **visible**. Otherwise there should be only 1 button `[Buy]`.
+- If the currently logged-in user is the creator, the `[Delete]` and `[Edit]` **buttons** should be set to **visible**. Otherwise there should be only 1 button `[Buy]`
 
 [image assetsSrc="js-apps-exam-prep-9.png" /]
 
@@ -198,7 +198,7 @@ Logged-in users should be able to **buy** shoes, added by another user.
 
 **NOTE: A user should NOT be able to buy from offers, created by himself.**
 
-Clicking on the `[Buy]` **button** (on the Details page) should **add the current user's email to the property `People bought it`**.
+Clicking on the `[Buy]` **button** (on the Details page) should **add the current user's email to the property** `People bought it`.
 
 After successfully buying:
 
