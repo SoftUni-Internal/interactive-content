@@ -1,24 +1,24 @@
-# Unit-Testing
+# Unit Testing
 
 [slide hideTitle]
 
-# What is Unit-Testing?
+# Manual Testing
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-11-13-manual-testing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Unit-Testing means that we test smaller **pieces/units** of our application.
+Unit Testing is the process of examining smaller **pieces/units** of our application.
 
-Lets see what is the main difference between manual and automated testing.
+Let us review the main differences between manual and automated testing.
 
-Manual testing:
+**Manual testing:**
 
 - Manual testing is not **structured** and **repeatable**
 
-- Our Manual testing methods cannot **cover** all of our code
+- Manual testing methods cannot **cover** all of our code
 
-- Manual testing methods are not as easy as they should be
+- The testing methods are complicated
 
-Here is an example: 
+Here is an **example**: 
 
 ```java
 void testSum() {
@@ -27,11 +27,11 @@ void testSum() {
 }
 ```
 
-To make the things easier we need a **structured** approach that:
+To make things easier, we need a **structured** approach that:
 
 - Allows **refactoring**
 
-- Reduce the **cost of change**
+- Reduces the **cost of change**
 
 - Help us to reduce the amount of **bugs/defects** in the code
 
@@ -45,16 +45,16 @@ To make the things easier we need a **structured** approach that:
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-14-automated-testing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Automated testing contains:
+**Automated testing** contains:
 
-- Unit tests
-  - a **piece of a single logical unit** in our code (method, class, etc.)
-- Integration tests
-  - a test of a module in our app (payment, registration, etc.)
+- **Unit tests**
+  - used to examine a **piece of a single logical unit** in our code (method, class, etc.)
 
+- **Integration tests**
+  - tests a module in our application (payment, registration, etc.)
 
-- System tests
-  - end-to-End testing of our full system
+- **System tests**
+  - end-to-end testing of our system
 
 
 [image assetsSrc="Unit-Testing-Example(1).png" /]
@@ -67,11 +67,11 @@ Automated testing contains:
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-15-16-junit-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-JUnit is one of the first unit testing **Frameworks** for Java.
+JUnit is one of the first unit testing **frameworks** for Java.
 
-First, we need to set the JUnit repository. 
+To get started, we need to set up the JUnit repository. 
 
-After creating a Maven project, we must copy and paste this code in our pom.xml file.
+After **creating a Maven project**, we must copy and paste this code into our `pom.xml` file.
 
 ```
 <project …>
@@ -95,16 +95,16 @@ After creating a Maven project, we must copy and paste this code in our pom.xml 
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-17-junit-writing-tests-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Lets create a new **package** for our tests.
+Let us create a new **package** for our tests.
 
-Than we must create our first class for test methods. (e.g **CalculatorTests**)
+After that, we must create our first class for test methods (e.g **CalculatorTests**).
 
-We can now create our first **public void** method annotated with `@Test`.
+We can now create our first **public void** method, annotated with `@Test`.
 
 ``` java
 @Test
 public void commandShouldMultiplyNumbers() {
-  /* logic here... */
+  // logic...
 }
 ```
 
@@ -119,29 +119,31 @@ public void commandShouldMultiplyNumbers() {
 
 There is a **must-know** pattern when creating unit tests.
 
-The AAA pattern (**Arrange-Act-Assert**) became the **standard** across our industry.
+The AAA pattern (**Arrange-Act-Assert**) has become the **standard** testing pattern in the software industry.
 
 The basis of this pattern is that all tests should follow a default layer.
 
-At the beginning, we must **Arrange** all the conditions to the system.
-
-After that we take the actions **Act**, needed to produce a result.
-
-Finally, we **Assert** that the expected output is generated.
-
-Lets take a look at this simple example:
+Let us take a look at this simple example:
 
 ``` java
 @Test
     public void testAddition() 
         // Arrange
         Calculator calculator = new Calculator();
+
         // Act
         int result = calculator.multiply(2, 4);
+
         // Assert
         assertEquals("multiply method returns a valid result", 8, result);
     }
 ```
+
+In the beginning, we must **аrrange** all conditions for the testing system.
+
+After that, we take the actions **аct**, needed to produce a result.
+
+Finally, we **аssert** that the expected output matches the generated output.
 
 [/slide]
 
@@ -151,7 +153,9 @@ Lets take a look at this simple example:
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-19-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In some method we may need to throw an exception for (example: invalid input) in our code, we can test this behaviour like:
+In some methods, we may need to **throw an exception** (for example: "invalid input") in our code.
+
+We can test this behavior as follows:
 
 ``` java
 @Test(expected = IllegalArgumentException.class) //Assert
@@ -164,8 +168,6 @@ public void multiplyingWordsShouldThrow() {
 }
 ```
 
-
-
 [/slide]
 
 [slide hideTitle]
@@ -173,17 +175,19 @@ public void multiplyingWordsShouldThrow() {
 # Problem: Create Maven Project
 
 ## Description
-Maven is build automation tool that takes care of dependencies for your project. 
+Maven is a build automation tool that takes care of dependencies for your project. 
 
-Before you can make one, make sure that you enable the plugin in IntelliJ \[File \-\> Settings \-\> Plugins \-\> Maven Integration\]
+Before you can make one, make sure that you enable the plugin in IntelliJ \[**File** \-\> **Settings** \-\> **Plugins** \-\> **Maven Integration**\]
 
 [image assetsSrc="Unit-Testing-Example(2).png" /]
 
-Now, you can create a Maven project. 
+Now you can create a Maven project. 
 
 [image assetsSrc="Unit-Testing-Example(3).png" /]
 
-Group Id should be separated by dots, Artifact Id should be separated by hyphens.
+The **GroupId** must be separated using periods.
+
+The **ArtifactId** must be separated using hyphens.
 
 [image assetsSrc="Unit-Testing-Example(4).png" /]
 
@@ -191,7 +195,7 @@ If everything is ok, you should see the following project structure.
 
 [image assetsSrc="Unit-Testing-Example(5).png" /]
 
-Copy the files provided and place them in a package inside src/main/java folder.
+Copy the files provided and place them in a package inside the src/main/java folder.
 
 [image assetsSrc="Unit-Testing-Example(6).png" /]
 
@@ -199,32 +203,29 @@ Copy the files provided and place them in a package inside src/main/java folder.
 
 [slide hideTitle]
 
-# Problem: Test Axe
+# Problem with Solution: Test Axe
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-20-21-22-problem-and-solutiom-test-axe-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/07.Java-OOP-Advanced-Unit-Testing-Lab-Resources.zip) **for this task.**
 
 ## Description
-In **test/java** folder, create a package called **rpg_tests.**
+In the `test/java` folder, create a package called **rpg_tests.**
 
-Create a class `AxeTests`.
+Create an `AxeTests` class.
 
-Create the following tests:
-- Test if weapon loses durability after each attack
+Write the following tests:
+- Test if the weapon loses durability after each attack
 - Test attacking with a broken weapon
 
-[/slide]
 
-[slide hideTitle]
+## Solution
 
-# Solution: Test Axe
-
-Create the new package **rpg_tests** and inside create the class `AxeTests`
+Create the new package `rpg_tests` and inside create the class `AxeTests`.
 
 [image assetsSrc="Unit-Testing-Example(7).png" /]
 
-Inside the class create your first test:
+Inside the class, create your first test:
 
 ```java
 public class AxeTests{
@@ -242,20 +243,20 @@ public class AxeTests{
 
 Arrange preconditions:
 ```java
-//Arrange
+// Arrange
 Axe axe = new Axe(10, 10);
 Dummy dummy = new Dummy(10, 10);
 ```
 
 Execute tested behaviour:
 ```java
-//Act
+// Act
 axe.attack(dummy);
 ```
 
 Assert postconditions:
 ```java
-//Assert
+// Assert
 Assert.assertEquals(9, age.getDurabilityPoints());
 ```
 
@@ -263,20 +264,20 @@ Create your second text method:
 ```java
 @Test(expected = IllegalStateExcepiton.class) //Assert
 public void brokenWeaponCantAttack(){
-  //Arrange
+  // Arrange
 
-  //Act
+  // Act
 
 }
 ```
 
-Arrange preconditions and test behaviour:
+Arrange preconditions and test behavior:
 ```java
-//Arrange
+// Arrange
 Axe axe - new Axe(10, 1);
 Dummy dummy = new Dummy(20, 10);
 
-//Act
+// Act
 axe.attack(dummy);
 axe.attack(dummy);
 ```
@@ -286,19 +287,19 @@ axe.attack(dummy);
 
 [slide hideTitle]
 
-# Problem: Test Dummy
+# Problem with Solution: Test Dummy
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-23-24-problem-and-solution-test-dummy-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Description
-Create a class `DummyTests`
+Create a class `DummyTests`.
 
-Create the following tests:
+Write the following tests:
 
 - Dummy loses health if attacked
-- Dead Dummy throws exception if attacked
+- Dead Dummy throws an exception if attacked
 - Dead Dummy can give XP
-- Alive Dummy can't give XP
+- Alive Dummy cannot give XP
 
 ## Hints
 Follow the logic of the previous problem.
