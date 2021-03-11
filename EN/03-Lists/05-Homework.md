@@ -21,9 +21,9 @@ On the first line, you will be given a **list of wagons** (integers).
 
 Each **integer** represents the **number of passengers** that are currently in each wagon.
 
-On the next line, you will get the **max capacity of each wagon** (single integer).
+On the next line, you will receive the **max capacity of each wagon** represented as a **single integer**.
 
-**Until** you receive the "end" command you will be given two types of input:
+**Until** you receive the `end` command, you will be receiving two types of input:
 
 - **Add** \{passengers\} - add a wagon to the end with the given number of passengers
 
@@ -261,7 +261,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which **reads a list of integers** from the console and receives **commands** to **manipulate the list**.
+Create a program, which **reads a list of integers** from the console and receives **commands** that **manipulate the list**.
 
 Your program may receive the following **commands**: 
 
@@ -269,9 +269,9 @@ Your program may receive the following **commands**:
 
 - **Insert** \{element\} \{position\} - insert the element at the given position
 
-You should **stop the program** when you receive the "end" command. 
+You should **stop the program** when you receive the `end` command. 
 
-Print all numbers in the array **separated with a single whitespace**.
+Print all numbers in the array **separated by a single whitespace**.
 
 ### Example
 | **Input** | **Output** |
@@ -431,26 +431,25 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that keeps track of the guests that are going to a house party.
+Create a program that keeps track of the guests that are going to a house party.
 
 On the first line of input, you are going to receive **the number of commands**.
 
-On the next lines you are going to receive some of the following: 
-- "\{name\} is going!"
-- "\{name\} is not going!"
+On the next lines, you are going to receive some of the following: 
 
-If you receive the **first** type of input, you have to **add the person if they are not on the guest list**. 
+**\{name\} is going!**
 
-If **the person is on the list** print to the following to the console: 
+- You have to **add the person if they are not on the guest list**. 
+- If **the person is on the list** print to the following to the console: **\{name\} is already in the list!**
 
-- "\{name\} is already in the list!" 
 
-If you receive the second type of input, you have to remove the person if they are in the list. 
+**\{name\} is not going!**
 
-If not print: 
-- "\{name\} is not in the list!"
+- You have to remove the person if they are in the list. 
+- If not, print to the console: **\{name\} is not in the list!**
 
-**At the end print all the guests. Each on a new line.**
+
+At the end of the program, print all of the guests, each on a new line.
 
 ### Example
 | **Input** | **Output** |
@@ -670,7 +669,7 @@ public class Main {
 ## Description
 You will be given a list of **integer** numbers on the first input line.
 
-Until you receive the "End" command, you will be given **operations** you have to apply to the list.
+Until you receive the **End** command, you will be given **operations** you have to apply to the list.
 
 The **possible commands** are:
 
@@ -929,11 +928,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that reads a **sequence of numbers and a special bomb number** with a certain power.
+Create a program that reads a **sequence of numbers and a special bomb number** with a certain power.
 
 Your task is to **detonate every occurrence of the special bomb number** and according to its power **his neighbors from left and right**.
 
-Detonations are performed **from left to right** and all  the detonated numbers **disappear**.
+Detonations are performed **from left to right** and all the detonated numbers **disappear**.
 
 Finally, **print the sum of the remaining elements** in the sequence.
 
@@ -1061,7 +1060,7 @@ You will be given two hands of cards, which will be represented by **integer num
 
 Assume that you have **two players**.
 
-You have to **find** which one is the **winning deck**.
+You have to **find** which one has the **winning deck**.
 
 You start from the beginning of both hands of cards. **Compare** the cards from the first deck to the cards from the second deck. 
 
@@ -1158,7 +1157,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program to **append several arrays** of numbers.
+Create a program to **append several arrays** of numbers.
 
 - **Arrays** are **separated** by '\|'
 
@@ -1245,7 +1244,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-In **Pokemon Don't Go**, when you walk to a certain pokemon, those closest to you, naturally get further, and those further from you, get closer.
+In **Pokemon Don't Go**, when you walk to a certain pokemon, those closest to you get further and those further from you get closer.
 
 You will **receive a sequence of integers, separated by spaces** - the **distance** to the pokemons.
 
@@ -1253,23 +1252,23 @@ Then you will **begin receiving integers**, which will correspond to **indexes**
 
 **When you receive an index**, you must **remove the element at that index** from the sequence (as if you've captured the pokemon).
 
-You must INCREASE the value of all elements in the sequence which are **LESS or EQUAL to the removed element**, with the **value** **of the removed element**.
+You must increase the value of all elements in the sequence, which are **less than or equal to the removed element** with the **value of the removed element**.
 
-You must DECREASE the value of all elements in the sequence which are **GREATER than the removed element**, with the **value of the removed element**.
+You must decrease the value of all elements in the sequence, which are **greater than the removed element** with the **value of the removed element**.
 
-If the given index is **LESS than 0**, **remove the first element of the sequence**, and **COPY the last element to its place**.
+If the given index is **less than 0**, **remove the first element of the sequence** and **copy the last element to its place**.
 
-If the given index is **GREATER than the last index of the sequence**, **remove the last element from the sequence**, and **COPY the first element to its place**.
+If the given index is **greater than the last index of the sequence**, **remove the last element from the sequence** and **copy the first element to its place**.
 
-The increasing and decreasing of elements should also be done in these cases. 
+Increasing and decreasing of elements should also be done in these cases. 
 
-The element, whose value you should use is the **REMOVED element**.
+The element, whose value you should use, is the **removed element**.
 
 The **program ends** when **no more elements remain** in the sequence.
 
 ### Input
 
-- On the first line of input, you will receive a sequence of integers, separated by spaces
+- On the first line, you will receive a sequence of integers, separated by spaces
 
 - On the next several lines you will receive integers - the indexes
 
@@ -1287,9 +1286,9 @@ When the program ends, you must print the summed up value of all REMOVED element
 **Comments:**
 - The array is \{4, 5, 3\} The index is 1
 
-- We remove 5, and we increase all index numbers that are lower than it and decrease all index numbers higher than it
+- We remove 5, and we increase all index numbers that are smaller than 5 and decrease all index numbers bigger
 
-- In this case, there are no higher than 5
+- In this case, there are smaller than 5
 
 - The result is \{9, 8\}
 
@@ -1590,9 +1589,9 @@ Each time you **Swap or Remove a lesson,** you should **do the same with the exe
 **Comments:**
 - We receive the initial schedule
 
-- Next, we add the Databases lesson, because it does not exist
+- Next, we add the **Databases** lesson, because it does not exist
 
-- We insert the Arrays lesson at the given index because it is not present in the schedule
+- We insert the **Arrays** lesson at the given index because it is not present in the schedule
 
 - After receiving the last command and removing the Lists lesson, we print the whole schedule
 
@@ -1609,9 +1608,9 @@ Each time you **Swap or Remove a lesson,** you should **do the same with the exe
 **Comments:**
 - We swap the given lessons because both exist
 
-- After receiving the Exercise command, we see that such a lesson does not exist, so we add the lesson to the end, followed by the exercise
+- After receiving the **Exercise** command, we see that such a lesson does not exist, so we add the lesson to the end, followed by the exercise
 
-- We swap the Lists and the Databases lessons, the Databases-Exercise is also moved after the Databases lesson
+- We swap the Lists and the **Databases** lessons, the **Databases-Exercise** is also moved after the Databases lesson
 
 - We skip the next command because we already have such a lesson on our schedule
 
