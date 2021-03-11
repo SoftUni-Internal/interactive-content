@@ -3,7 +3,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-40-conclusion-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In this lesson you learned:
+## In this lesson, you learned:
 
 - Classes are templates from which objects are created
     - class instances are called objects
@@ -36,7 +36,7 @@ class Animal {
 }
 ```
 
-- Constructors are a special methods, used to initialize objects
+- Constructors are special methods, used to initialize objects
     - constructors are invoked when creating new class instances
     - they set the object's initial state
     
