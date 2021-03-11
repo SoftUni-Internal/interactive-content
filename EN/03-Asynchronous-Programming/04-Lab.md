@@ -1,16 +1,10 @@
-[slide hideTitle]
-# Videos
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/04-JS-Applications-Asynchronous-Programming-lab-videos-step-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/04-JS-Applications-Asynchronous-Programming-lab-videos-step-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/04-JS-Applications-Asynchronous-Programming-lab-videos-step-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[/slide]
-
-[slide hideTitle]
-
 # Problem with Solution: Blog
+
+[slide hideTitle]
+
+# Retrieve Data from Firebase
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/04-JS-Applications-Asynchronous-Programming-lab-videos-step-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/01-JS-Application-Asynchronous-Programming-Lab-Resources.zip) **for this task.**
 
@@ -51,6 +45,13 @@ Each object will be in the following format:
     }
 }
 ```
+[/slide]
+
+[slide hideTitle]
+
+# Render the Titles
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/04-JS-Applications-Asynchronous-Programming-lab-videos-step-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Create an `<option>` for each post using its **object key** as value and **current object title property** as text inside the node with ID "**posts**".
 
@@ -64,6 +65,13 @@ Create an `<option>` for each post using its **object key** as value and **curre
    <option value="-LhdcecRyWr_7UCPtclmM">PROMISES</option>
 </select>
 ```
+[/slide]
+
+[slide hideTitle]
+
+# Display Post's Details
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/04-JS-Applications-Asynchronous-Programming-lab-videos-step-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When the button with ID "**btnViewPost**" is clicked, a **GET** request should be made to:
 
