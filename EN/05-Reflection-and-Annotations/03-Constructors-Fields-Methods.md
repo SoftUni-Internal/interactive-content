@@ -6,22 +6,22 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-14-16-constructors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Lets see how we can obtain a Constructor Objects.
+Let us see how we can obtain constructor objects.
 
 We can use the **constructor class** that provides us the following methods for this purpose:
 
 ```java
 Constructor[] ctors = aClass.getConstructors();
-// This method allows us to only public constructors that are declared in our class and its superclass
+// This method allows us to only obtain public constructors, declared in our class and its superclass
 ```
 
-If we want to obtain all declared constructors we can use `getDeclaredConstructors()` method:
+If we want to obtain all declared constructors, we can use the `getDeclaredConstructors()` method:
 
 ``` java
 Constructor[] ctors = aClass.getDeclaredConstructors();
 ```
 
-Also, we can obtain a following constructor by his parameters:
+Also, we can obtain the following constructor by its parameters:
 
 ```java
 Constructor ctor = aClass.getConstructor(String.class);
@@ -79,7 +79,7 @@ Object fieldType = field.getType();
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-18-fields-set-and-get-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Let us discuss, how we can setting value for a field via Reflection
+Let us discuss how we can set the value for a field via Reflection.
 
 ``` java
 Field field = targetClass.getDeclaredField(fieldName);
@@ -91,11 +91,11 @@ field.set(object, value); // The object parameter passed to the get and set meth
 
 [slide hideTitle]
 
-# Get and Invoke Methods
+# Methods
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-19-20-methods-methods-invoke-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Lets asume we have `class` Dog with methods inside:
+Let us asume we have `class` Dog with methods inside:
 
 ```java
 public class Dog extends Mammal {
@@ -139,7 +139,7 @@ method notify
 method notifyAll
 ```
 
-We can see that besides the **custom methods** we wrote (walk, makeSound, eat) we also have default methods (wait, equals, toString, hashCode, etc).
+We can see that besides the **custom methods** we wrote (`walk`, `makeSound`, `eat`) we also have default methods (`wait`, `equals`, `toString`, `hashCode`, etc).
 
 We can also obtain methods with parameters and return type and invoke them.
 
@@ -150,14 +150,14 @@ Method[] methods = aClass.getMethods();
 Method method = aClass.getMethod("doSomething", String.class);
 ```
 
-### Getting methods without parameters
+## Getting methods without parameters
 
 We can obtain methods without parameters:
 ```java 
 Method method = aClass.getMethod("doSomething", null); // `null` is set when we want a method without parameters. 
 ```
 
-### Getting method's parameters and return type
+## Getting a method's parameters and return type
 
 After we obtain a given method we can get its parameters and return type:
 
@@ -166,7 +166,7 @@ Class[] paramTypes = method.getParameterTypes();
 Class returnType = method.getReturnType();
 ```
 
-### Get methods with parameters
+## Get methods with parameters
 
 ```java
 Method method = myObject.class.getMethod("methodName", String.class);
@@ -184,16 +184,16 @@ Object returnValue = method.invoke(null, "arg1"); // We use null for static meth
 
 [task-description]
 # Description
-Using reflection to get all **Reflection** methods. 
+Use reflection to get all **Reflection** methods. 
 
 Then prepare an algorithm that will recognize, which methods are **getters** and **setters**. 
 
 Sort each collection **alphabetically** by methods names. 
 
-Print to console each **getter** on new line in format:
+Print to console each **getter** on a new line in the format:
 - "\{**name**\} **will return class** \{**Return Type**\}"
 
-Then print all setters in format:
+Then print all setters in the format:
 - "\{**name**\} **and will set field of class** \{**Parameter Type**\}"
 
 **Do this without changing anything in "Reflection.java".**
