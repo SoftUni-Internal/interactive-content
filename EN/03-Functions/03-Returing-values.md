@@ -6,11 +6,11 @@
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-17-18-the-return-statement-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-The `return` operator is used to return a value and end the execution of the function. 
+The **return** operator is used to return a value and end the execution of the function. 
 
-Once the `return` operator is executed, **anything after it inside a function will not run.**
+Once the **return** operator is executed, **anything after it inside a function will not run.**
 
-The `return` operator can be placed anywhere in the function. 
+The **return** operator can be placed anywhere in the function. 
 
 ``` js live
 function readFullName(firstName, lastName) {
@@ -21,7 +21,7 @@ const fullName = readFullName('John', 'Smith');
 console.log(fullName)
 ```
 
-You can only use the `return` operator **inside a function.**
+You can only use the **return** operator **inside a function.**
 
 If you try to use it outside of a function, **it will throw an error.**
 
