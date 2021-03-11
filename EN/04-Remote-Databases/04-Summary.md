@@ -5,7 +5,7 @@
 
 ## In this lesson, you learned:
 
-- What Relational and Non-Relational Databases are
+- What relational and non-relational databases are
 
 - What is a BaaS
 
@@ -14,9 +14,9 @@
 
 ## In the next lesson, you will learn:
 
-- Templating Concepts
-- Simple Templating
-- Templating Engines
-- Handlebars Overview
+- Templating concepts
+- Simple templating
+- Templating engines
+- Handlebars overview
 
 [/slide]

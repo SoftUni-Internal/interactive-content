@@ -110,7 +110,12 @@ Choose the **JSON** format in the last column.
 
 Then copy and paste the following JSON object:
 
-`{"title":"New title", "author":"New author"}`
+```js
+{
+    "title": "New title",
+    "author": "New author"
+}
+```
 
 Here is an example of how it should look in **Postman**.
 
@@ -159,7 +164,13 @@ Choose the **JSON** format in the last column.
 
 Then copy and paste the following JSON object:
 
-`{"title":"Edited", "year":1980, "ISBN":"954X"}`
+```js
+{
+    "title": "Edited",
+    "year": 1980,
+    "ISBN": "954X"
+}
+```
 
 If the book **already exists** in the database, it will be updated and the new JSON data will replace the old data.
 
@@ -279,7 +290,7 @@ Authorization occurs after your identity is successfully authenticated by the sy
 
 Make sure you have a Gmail account and you are signed in.
 
-Open a browser and type in "firebase console".
+Open a browser and type in "**firebase console**".
 
 [image assetsSrc="Remote-Databases(1).png" /]
 
@@ -287,19 +298,21 @@ Once you are signed in, you should be able to see this window:
 
 [image assetsSrc="Remote-Databases(19).png" /]
 
-Create a new project by clicking on "Add project".
+Create a new project by clicking on "**Add project**".
 
 [image assetsSrc="Remote-Databases(2).png" /]
 
-Type in a project name, for example "TestApp", and click "Continue".
+Type in a project name, for example "**TestApp**", and click "**Continue**".
 
 [image assetsSrc="Remote-Databases(3).png" /]
 
-Disable google analytics. You will not need it for now and click "Create project".
+Disable google analytics. 
+
+You will not need it for now and click "**Create project**".
 
 [image assetsSrc="Remote-Databases(4).png" /]
 
-Click "Continue".
+Click "**Continue**".
 
 [image assetsSrc="Remote-Databases(5).png" /]
 
@@ -309,31 +322,31 @@ Click on this sing "\<\/\>".
 
 [image assetsSrc="Remote-Databases(6).png" /]
 
-Type in a name for the App, for example, "books" and click "Register app".
+Type in a name for the App, for example, "**books**" and click "**Register app**".
 
 [image assetsSrc="Remote-Databases(7).png" /]
 
 We will get a script, which we will use later when working with the Firebase SDK.
 
-Click "continue to console".
+Click "**continue to console**".
 
 [image assetsSrc="Remote-Databases(8).png" /]
 
 Create a database.
 
-Click on "Realtime Database".
+Click on "**Realtime Database**".
 
 [image assetsSrc="Remote-Databases(9).png" /]
 
-Click on "Create Database".
+Click on "**Create Database**".
 
 [image assetsSrc="Remote-Databases(10).png" /]
 
-Click "Next".
+Click "**Next**".
 
 [image assetsSrc="Remote-Databases(11).png" /]
 
-Chose the option "Start in test mode" and click "Enable".
+Chose the option "**Start in test mode**" and click "**Enable**".
 
 [image assetsSrc="Remote-Databases(12).png" /]
 
@@ -349,9 +362,9 @@ Example:
 
 [image assetsSrc="Remote-Databases(14).png" /]
 
-To get all of the books, you have to use the **database URL** you received when you created the database plus the name of the **entity**, which is "books" plus ".json".
+To get all of the books, you have to use the **database URL** you received when you created the database plus the name of the **entity**, which is "**books**" plus "**.json**".
 
-The method is "GET".
+The method is "**GET**".
 
 URL: `https://databaseURL/books.json`
 
@@ -361,7 +374,7 @@ URL: `https://databaseURL/books.json`
 
 # Problem: Get a Book
 
-To get a book, choose the "GET" method in Postman and use the following **URL**.
+To get a book, choose the "**GET**" method in Postman and use the following **URL**.
 
 `https://databaseURL/books/bookId.json`
 
@@ -371,9 +384,15 @@ To get a book, choose the "GET" method in Postman and use the following **URL**.
 
 # Problem: Create Books
 
-To create a book, we will have to send a "POST" request, and the JSON body should be in the following format:
+To create a book, we will have to send a "**POST**" request, and the JSON body should be in the following format:
 
-`{"Author": "Steven King",  "title": "IT"}`
+
+```js
+{
+    "Author": "Steven King",
+    "title": "IT"
+}
+```
 
 URL: `https://databaseURL/books.json`
 
@@ -383,13 +402,18 @@ URL: `https://databaseURL/books.json`
 
 # Problem: Patch Book
 
-The HTTP command "PATCH" modifies an existing HTTP resource. 
+The HTTP command "**PATCH**" modifies an existing HTTP resource.
 
-It can also create the resource if it does not exist. 
+It can also create the resource if it does not exist.
 
 The JSON body should be in the following format:
 
-`{"Author": "Steven King",  "year": 1981}`
+```js
+{
+    "Author": "Steven King",
+    "year": 1981
+}
+```
 
 URL: `https://databaseURL/books/bookId.json`
 
@@ -399,13 +423,13 @@ URL: `https://databaseURL/books/bookId.json`
 
 # Problem: Change Book Author
 
-The next task is to execute the "PUT" command. 
+The next task is to execute the "**PUT**" command. 
 
-In our case, we have to change the author's name to "New author was assigned".
+In our case, we have to change the author's name to "**New author was assigned**".
 
 The JSON body should be in the following format:
 
-"New author was assigned".
+"**New author was assigned**".
 
 URL: `https://databaseURL/books/bookId.json`
 

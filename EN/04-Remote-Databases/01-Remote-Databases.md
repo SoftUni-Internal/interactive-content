@@ -22,19 +22,19 @@ The logical connection between different tables is established with  **foreign k
 
 # Non-Relational Databases
 
-The main difference between relational and non-relational databases is how they store their information.
+The main difference between **relational** and **non-relational** databases is how they **store their information.**
 
-Non-relational databases, often called NoSQL databases are different from traditional relational databases in that they store their data in a non-tabular form. 
+**Non-relational** databases, often called **NoSQL** databases are different from traditional relational databases in that they store their data in a **non-tabular form.** 
 
-Non-relational databases are based on data structures like documents. 
+Non-relational databases are based on data structures **like documents.** 
 
-A document can be highly detailed while containing a range of different types of information in different formats. 
+A document can be **highly detailed** while containing a range of different **types** of information in different **formats**. 
 
-This ability to organize various types of information side-by-side makes non-relational databases much more flexible than relational databases.
+This ability to organize various types of information **side-by-side** makes non-relational databases much more **flexible** than relational databases.
 
-Non-relational databases often perform faster because a query does not have to view several tables to deliver an answer, as relational datasets often do. 
+**Non-relational** databases often perform **faster** because a query does not have to **view several tables** to deliver an answer, as relational datasets often do. 
 
-Non-relational databases are ideal for storing data that may be changed frequently or for applications that handle many different kinds of data.
+**Non-relational** databases are ideal for storing data that may be **changed frequently** or for applications that handle many different kinds of data.
 
 [/slide]
 
@@ -46,14 +46,14 @@ Non-relational databases are ideal for storing data that may be changed frequent
 
 **Pros of a Relational Database:**
 - Data is structured into categories
-- They support **ACID** transactional consistency and "JOINs"
+- They support **ACID** transactional consistency and "**JOINs**"
 - Built-in data integrity and a large eco-system
 - Relationships in this system have constraints
 - Limitless indexing
 
-One of the benefits of using a Relational Database is that it allows the user to classify the data into different categories and store them efficiently. 
+One of the **benefits** of using a Relational Database is that it allows the user to **classify the data into different categories** and store them efficiently. 
 
-In computer science, **ACID** (atomicity, consistency, isolation, durability) is a set of properties of database transactions intended to guarantee data validity despite errors, power failures, etc.
+In computer science, **ACID** (atomicity, consistency, isolation, durability) is a set of properties of database transactions intended to **guarantee** data validity despite errors, power failures, etc.
 
 The key constraint specifies that in any relation, all of the values of a primary key must be unique.
 
@@ -68,13 +68,13 @@ Relational databases use indexes to quickly locate data without searching every 
 - High availability
 - Many NoSQL databases are **open source**
 
-NoSQL databases have become popular because they store data in straightforward forms that can be easier to understand than the type of data models used in SQL databases.
+NoSQL databases have become popular because they **store** data in **straightforward** forms that can be easier to **understand** than the type of data models used in SQL databases.
 
-NoSQL databases often allow developers to change the structure of the data.
+NoSQL databases often allow developers to change the **structure of the data**.
 
-They can scale-out "horizontally", meaning that they run on multiple servers that work together, each sharing part of the load.
+They can scale-out "**horizontally**", meaning that they run on multiple **servers** that work together, each sharing part of the load.
 
-High-availability NoSQL databases are systems designed to run without an interruption of a service.
+High-availability NoSQL databases are systems designed to run **without an interruption of a service.**
 
 Many web-based businesses require data services that are available without interruption.
 
