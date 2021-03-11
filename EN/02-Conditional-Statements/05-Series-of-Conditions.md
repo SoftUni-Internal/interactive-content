@@ -4,9 +4,9 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-25-27-series-of-conditions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Sometimes we need to do a sequence of conditions before we decide what actions our program will execute. 
+Sometimes we need a sequence of conditions before we decide what actions our program will execute. 
 
-In such cases, we can apply the construction `if-else if ... -else` **in series**.
+In such cases, we can apply the `if-else if ... -else` construction.
 
 For this purpose, we use the following format:
 ```java
@@ -29,9 +29,9 @@ else {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-25-27-series-of-conditions-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Print the digits in the range of 1 to 9 (digits are read from the console) in English. 
+Print out the actual word for one of the digits from 1 to 9 (a digit is read from the console).
 
-We can read the digit and then, through a **sequence of conditions** we print the relevant English word:
+After receiving the digit, we can run it through a **sequence of conditions** and print out the relevant English word:
 ```java live
 int num = 5;
 
@@ -54,11 +54,11 @@ if (num == 1) {
 } else if (num == 9) {
     System.out.println("nine");
 } else {
-    System.out.println("number too big");
+    System.out.println("number out of range");
 }
 ```
 
-The program logic from the above example **sequentially compares** the input number from the console with the digits from 1 to 9, when **each following comparison is being performed only in case the previous comparison is not true**. 
+The program logic **sequentially compares** the input number with the digits from 1 to 9,**each following comparison is being performed only in case the previous comparison was not true**. 
 
 Eventually, if none of the `if` statements are true, the last `else` **clause** is performed.
 [/slide]
