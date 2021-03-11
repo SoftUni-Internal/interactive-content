@@ -695,11 +695,15 @@ Următoarele ar trebui să fie tipărite pe consolă:
 
 [hints]
 [hint]
-Calculate the total yield in kilograms.
+Calculați randamentul total în kilograme.
+Struguri in total: 650 \* 2 = 1300
+Vin = 40% \* 1300/2.5 = 208
 [/hint]
 [hint]
-Determine the total wine produced and check if the goal was reached.
-Then print the correct output.
+Determinați vinul total produs și verificați dacă obiectivul a fost atins.
+Apoi tipăriți rezultatul corect.
+208 > 175 
+208 \- 175 = 33 de litre rămân \-> 11 litre pentru persoana
 [/hint]
 [/hints]
 
@@ -1486,11 +1490,14 @@ Imprima pe consolă **una dintre ambele posibilități**:
 
 [hints]
 [hint]
-Calculate the capacity for each pipe.
+Pentru 2.5 ore: Prima țeavă se umple cu 300 de  litri
+A doua țeavă se umple cu 250 de litri
+În total – 500 l > 100 l => 400 de litre sunt debordate.
+Calculați capacitatea pentru fiecare țeavă.
 [/hint]
 [hint]
-Check if the total output from both pipes is enough to fill the pool.
-Then print the correct output.
+Verificați dacă puterea totală din ambele conducte este suficientă pentru a umple piscina.
+Apoi tipăriți rezultatul corect.
 [/hint]
 
 [/hints]
