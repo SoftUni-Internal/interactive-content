@@ -12,7 +12,7 @@ In Java, classes are the **building blocks** of any application.
 
 If these blocks are not strong enough, it might be challenging for the building (the **application**) in the future.
 
-When a developer builds software that follows a **bad design **, the code can become inflexible and more brittle, which means that **small changes in the codebase can result in bugs**.
+When a developer builds software that follows a **bad design**, the code can become inflexible and more brittle, which means that **small changes in the codebase can result in bugs**.
 
 To avoid these consequences, we should follow the **SOLID** Principles.
 
