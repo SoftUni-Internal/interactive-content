@@ -1654,10 +1654,10 @@ Prețurile trebuie să fie formatate la **a doua zecimală**.
 
 [hints]
 [hint]
-Calculate the price for greening the whole yard.
+Calculați prețul pentru ecologizarea întregii curți.
 [/hint]
 [hint]
-Calculate the discount and determine the final price.
+Calculați reducerea și determinați prețul final.
 [/hint]
 [/hints]
 
