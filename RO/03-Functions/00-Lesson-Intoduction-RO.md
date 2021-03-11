@@ -1,34 +1,32 @@
-# Lesson Introduction
+# Introducere
 
 [slide hideTitle]
 
-# Lesson Content
+# Conținutul lecției
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-1-2-introduction-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+## În această lecție veți învăța:
 
-## In this lesson you will learn:
+**1. Ce reprezintă o funcție**
 
-**1. What is a Function**
+- Semnificația termenului "funcție" în JavaScript 
 
-- Meaning of the term "function" in JavaScript 
+**2. Declararea și invocarea funcțiilor**
 
-**2. Declaring and Invoking Functions**
+- Sintaxă și utilizare
 
-- Syntax and usage 
+**3. Funcții imbricate**
 
-**3. Nested Functions**
+- Conceptul de plasare a funcțiilor în interiorul altor funcții 
 
-- The concept of placing functions inside other functions 
+**4. Valoare și tipuri de referință**
 
-**4. Value and Reference Types**
+- Diferențele și similaritățile dintre cele două
 
-- Differences and similarities between the two
+**5. Funcții săgeată**
 
-**5. Arrow Functions**
+- Sintaxă și utilizare
 
-- Syntax and usage
+**6. Denumirea și cele mai bune practici**
 
-**6. Naming and Best Practices**
-
-- Naming, creating and the use of functions
+- Denumirea, crearea și utilizarea funcțiilor
 [/slide]

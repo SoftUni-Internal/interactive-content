@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Denumirea Funcțiilor
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-30-naming-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-30-naming-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Numele funcțiilor ar trebui să **descrie sarcina lor** într-un mod **clar** și **lipsit de ambiguități**
 - Numele lor trebuie să fie **semnificative și nu foarte lungi**
@@ -45,9 +45,9 @@ p, p1, p2, populate, LastName, lastName
 
 [slide hideTitle]
 
-# Cele mai Bune Practici în Ceea ce Privește Funcțiile
+# Cele mai bune practici 
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-29-naming-and-best-practices-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-29-naming-and-best-practices-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Fiecare funcție trebuie să efectueze o sarcină **unică**, bine definită
 - **Evitați funcțiile lungi**, **împărțiți-le** în **câteva mai scurte**
@@ -92,9 +92,9 @@ function sum()
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Simple Calculator
+# Problemă cu soluție: Simple Calculator
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-solution-simple-calculator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-solution-simple-calculator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Simple Calculator" taskId="fundamentals-js-functions-lab-Simple-Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -116,11 +116,11 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Write an arrow function that receives an **array containing three elements** (two numbers and a string) and calculates the result depending on the specified operator. 
+Scrieți o funcție săgeată care primește **o matrice cu trei elemente** (două numere și un șir)și calculează rezultatul, în funcție de operatorul specificat. 
 
-The operator could only be one of the following: "**multiply**", "**divide**", "**add**", "**subtract**".
+Operatorul poate fi unul dintre următoarele: "**înumlțire**", "**împărțire**", "**adăugare**", "**scădere**".
 
-## Exemplus
+## Exemple
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | simpleCalculator([5, 5, 'multiply']) | 25 |

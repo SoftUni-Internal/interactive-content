@@ -1,7 +1,7 @@
-# Temă de acasă
+# Teme pentru acasă
 
 [slide hideTitle]
-# Problem: Gramophone
+# Problemă: Gramophone
 [code-task title="Gramophone" taskId="js-fundamentals-1-basic-syntax-Gramophone" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -21,7 +21,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care ca intrare va primi 3 parametrii (șiruri)
+Creați un program care ca intrare va primi **3 parametri** (șiruri):
 
 - Primul șir este numele trupei
 
@@ -145,13 +145,13 @@ Luați în considerare următoarele:
 
 Ca **intrare** veți primi **3 parametri**:
 - **Distanța** pe care trebuie să o parcurgă autobuzul
-- **Pasageri** în el
-- **Preț** pentru **1 litru de motorină**
+- **Pasagerii** în el
+- **Prețul** pentru **1 litru de motorină**
 
 Ca rezultat, ar trebui să imprimați acest mesaj:
 "**Needed money for that trip is** \{**neededMoney**\} **dollars.**
 
-## Exemplus
+## Exemplu
    |**Intrare**|**Ieșire**|
 | --- | --- |
 | fuelMoney(260, 9, 2.49) | Needed money for that trip is 47.559 dollars. |
@@ -254,7 +254,7 @@ Needed money for that trip is 165.0175 dollars.
 [/slide]
 
 [slide hideTitle]
-# Problem: Centuries to Minutes
+# Problemă: Centuries to Minutes
 [code-task title="Centuries to Minutes" taskId="js-fundamentals-1-basic-syntax-Centuries-to-Minutes" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -279,7 +279,7 @@ Creați un program care primește mai multe secole și îl convertește în ani,
 Imprimați rezultatul în următorul format: 
 "\{**number**\} **centuries =** \{**number**\} **years =** \{**number**\} **days =** \{**number**\} **hours =** \{**number**\} **minutes**"
 
-## Exemplus
+## Exemplu
    |**Intrare**|**Ieșire** |
 | --- | --- |
 | centuriesToMinutes(1) | 1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes |
@@ -350,7 +350,7 @@ centuriesToMinutes(6)
 [/slide]
 
 [slide hideTitle]
-# Problem: Special Numbers
+# Problemă: Special Numbers
 [code-task title="Special Numbers" taskId="js-fundamentals-1-basic-syntax-Special-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -385,7 +385,7 @@ Un număr este special atunci când suma cifrelor sale este **5, 7, or 11.**
 ||4 -> False|
 ||5 -> True|
 
-## Sugestii
+## Sfaturi
 
 Pentru a calcula suma cifrelor unui număr dat, puteți repeta următoarele:
 
@@ -530,7 +530,7 @@ specialNumbers(8)
 [/slide]
 
 [slide hideTitle]
-# Problem: Triples of Latin Letters
+# Problemă: Triples of Latin Letters
 [code-task title="Triples of Latin Letters" taskId="js-fundamentals-1-basic-syntax-Triples-of-latin-letters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -550,7 +550,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description
 # Descriere
-Creați un program care primește un **număr** **n** și tipărește toate triplele primelor n litere latine mici, ordonate alfabetic.
+Creați un program care primește un **număr** **n** și tipărește toate triplele primelor **n** litere latine mici, ordonate alfabetic.
 
 ## Exemplu
 |**Intrare**|**Ieșire**|
@@ -564,7 +564,7 @@ Creați un program care primește un **număr** **n** și tipărește toate trip
 ||bba|
 ||bbb|
 
-## Sugestii
+## Sfaturi
 
 Efectuați 3 bucle imbricate de la 0 la n.
  
@@ -1074,7 +1074,7 @@ eee
 [/slide]
 
 [slide hideTitle]
-# Problem: Sum Digits
+# Problemă: Sum Digits
 [code-task title="Sum Digits" taskId="js-fundamentals-1-basic-syntax-sum-digits" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -1095,9 +1095,9 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Create a program that receives a **number** and find the sum of its digits.
+Creați un program care primește **un număr** și găsiți suma cifrelor sale.
 
-## Exemplus
+## Exemplu
    |**Intrare**|**Ieșire**|
 | --- | --- |
 | sumDigits(245678) | 32 |
@@ -1200,7 +1200,7 @@ sumDigits(00000)
 [/slide]
 
 [slide hideTitle]
-# Problem: Reversed Chars
+# Problemă: Reversed Chars
 [code-task title="Reversed Chars" taskId="js-fundamentals-1-basic-syntax-reversed-chars" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -1220,9 +1220,9 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care să ia **3 parametri** (caractere) și să le imprime în **ordine inversă** cu un spațiu între ele.
+Creați un program care primește **3 parametri** (caractere) și să le imprimă în **ordine inversă** cu un spațiu între ele.
 
-## Exemplus
+## Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | reversChars('A', 'B','C') | C B A |
@@ -1310,7 +1310,7 @@ reversChars('1','L','\&')
 [/slide]
 
 [slide hideTitle]
-# Problem: Calculator
+# Problemă: Calculator
 [code-task title="Calculator" taskId="js-fundamentals-1-basic-syntax-Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -1329,7 +1329,7 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-Creați un program care primește **trei parametri șir:**
+Creați un program care primește **trei parametri de tip șir:**
 
 - **număr**
 
@@ -1337,9 +1337,9 @@ Creați un program care primește **trei parametri șir:**
 
 - **un alt număr**
 
-Imprimați **rezultatul calculului** în consola formatată la **a doua zecimală.**
+Sarcina voastră este să **efectuați o calculare** folosind **operatorul** dat și să **imprimați** rezultatul calculului formatat la **a doua zecimală.**
 
-## Exemplus
+## Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | calculator(5, '+', 10) | 15.00 |

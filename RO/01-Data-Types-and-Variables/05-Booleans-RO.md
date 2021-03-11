@@ -4,7 +4,7 @@
 
 # Ce Este o Valoare Booleană?
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-21-22-what-is-a-boolean-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-21-22-what-is-a-boolean-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Valorile booleene poartă numele lui [George Boole](https://en.wikipedia.org/wiki/George_Boole), un matematician englez.
 
@@ -27,8 +27,6 @@ Comparațiile booleene sunt cel mai adesea plasate în construcția "**if**", si
 [slide hideTitle]
 
 # Comparații și Condiții
-
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-23-comparisons-and-conditions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Exemple de operatori de comparație:
 
@@ -70,9 +68,9 @@ if (number) {
 [/slide]
 
 [slide hideTitle]
-# True and False
+# Adevărat și Fals
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-24-25-boolean-comparisons-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-24-25-boolean-comparisons-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În plus față de "**true**" și "**false**", JavaScript are "**truthy**" și "**false**" (uneori scris "**falsey**").
 
@@ -88,7 +86,7 @@ Acest lucru nu împiedică o expresie if care încearcă să compare variabile c
 console.log(5 == '5');
 ```
 
-trecem valori de diferite tipuri, folosind operatorul `==` sau `!=`.
+trecem valori de diferite tipuri, folosind operatorul `==` or`!=`.
 
 În acest caz, interpretul va face așa-numitul **casting implicit**.
 
@@ -152,9 +150,8 @@ Este întotdeauna mai bine să fii **explicit** pentru a nu fi ambiguu.
 
 [slide hideTitle]
 
-# Problem with Solution: Amazing Numbers
+# Problemă cu soluție: Amazing Numbers
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-26-solution-solution-amazing-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Amazing Numbers" taskId="fund-js-data-types-and-variables-lab-amazing-numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -177,13 +174,14 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Creați un program care ca intrare va primi un **număr.**
+Creați un program care ca intrare va primi un **număr** ca intrare și imprimă dacă numărul este uimitor sau nu.
  
-Verificați și tipăriți dacă numărul este uimitor sau nu, în următorul format:
+Un număr uimitor este unul care include **cifra 9** în suma cifrelor sale.
+Imprimați rezultatul în irmătorul format: 
 
 "\{**number**\} **Amazing?** \{**result**\}"
 
-Un număr uimitor este unul care include **cifra 9** în suma cifrelor sale.
+
 
 Exemple pentru numere uimitoare sunt:
 
@@ -191,7 +189,7 @@ Exemple pentru numere uimitoare sunt:
 
 - 583472 (5 + 8 + 3 + 4 + 7 + 2 = 29)
 
-## Exemplus
+## Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | amazingNumbers(1233) | 1233 Amazing? True |
@@ -288,9 +286,8 @@ amazingNumbers(65451)
 
 [slide hideTitle]
 
-# The Typeof Operator
-
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-28-29-Definition-of-the-typeof-operator-and-examples-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+# Operatorul  Typeof 
+video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-28-29-Definition-of-the-typeof-operator-and-examples-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 JavaScript în sine oferă un operator numit `typeof` pentru tot ceea ce funcționează într-un mod simplu.
 

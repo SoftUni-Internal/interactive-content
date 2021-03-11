@@ -1,7 +1,7 @@
-# Teme de Acasă
+# Teme pentru acasă
 
 [slide hideTitle]
-# Problem: Repeat String
+# Problemă: Repeat String
 [code-task title="Repeat String" taskId="js-fundamentals-1-Functions-Repeat-String" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -26,7 +26,7 @@ Scrieți o funcție care primește **un șir** și un număr de repetare - "**n*
 
 Funcția ar trebui să returneze un șir nou (cel vechi repetat de "**n**" ori).
 
-## Exemplus
+## Exemple
 |**Intrare**|**Ieșire** |
 | --- | --- |
 | repeatString('abc', 3) | abcabcabc |
@@ -97,7 +97,7 @@ ivanivan
 [/slide]
 
 [slide hideTitle]
-# Problem: Smallest of Three Numbers
+# Problemă: Smallest of Three Numbers
 [code-task title="Smallest of Three Numbers" taskId="js-fundamentals-1-Functions-Smallest-of-Three-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -122,7 +122,7 @@ Scrieți o funcție care primește trei numere întregi pentru a imprima număru
 
 Folosiți un nume adecvat pentru funcție.
 
-## Exemplus
+## Exemple
 |**Intrare**|**Ieșire** |
 | --- | --- |
 | smallestNumbers(2, 5, 3) | 2 |
@@ -241,7 +241,7 @@ smallestNumbers(1315489464, 15286437, 2013240737)
 [/slide]
 
 [slide hideTitle]
-# Problem: Add and Subtract
+# Problemă: Add and Subtract
 [code-task title="Add and Subtract" taskId="js-fundamentals-1-Functions-Add-and-Substract" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -266,7 +266,7 @@ Veți primi**trei numere întregi.**
 
 Scrieți o funcție `sum()` pentru a obține suma primelor două numere întregi și funcția `subtract()` care scade al treilea număr întreg din rezultat.
 
-## Exemplus
+## Exemple
 |**Intrare**|**Ieșire** |
 | --- | --- |
 | addSubtract(23, 6, 10) | 19 |
@@ -393,7 +393,7 @@ addSubtract(789, 3598, 4387)
 [/slide]
 
 [slide hideTitle]
-# Problem: Characters in Range
+# Problemă: Characters in Range
 [code-task title="Characters in Range" taskId="js-fundamentals-1-Functions-Characters-in-Range" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -418,7 +418,7 @@ Scrieți o funcție care **primește două caractere** și imprimă pe o singur�
 
 Rețineți că **al doilea cod de caractere ar putea fi înaintea primului din tabelul ASCII.**
 
-## Exemplus
+## Exemple
 |**Intrare**|**Ieșire** |
 | --- | --- |
 | charactersInRange('a', 'd') | b c |
@@ -497,7 +497,7 @@ charactersInRange('m', '9')
 [/slide]
 
 [slide hideTitle]
-# Problem: Odd and Even Sum
+# Problemă: Odd and Even Sum
 [code-task title="Odd and Even Sum" taskId="js-fundamentals-1-Functions-Odd-and-Even-sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -518,9 +518,9 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Veți primi un **număr unic**.
+Veți primi un ** singur număr**.
 
-Trebuie să scrieți o funcție care returnează **suma** din **toate cifrele pare** și **toate cifrele impare** din acel număr.
+Scrieți o funcție care returnează **suma** din **toate cifrele pare** și **toate cifrele impare** din acel număr.
 
 ## Exemplus
 |**Intrare**|**Ieșire** |
@@ -592,7 +592,7 @@ Odd sum = 30, Even sum = 8
 [/slide]
 
 [slide hideTitle]
-# Problem: Palindrome Integers
+# Problemă: Palindrome Integers
 [code-task title="Palindrome Integers" taskId="js-fundamentals-1-Functions-Palindrom-Integers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -617,7 +617,7 @@ Un palindrom este un număr care citit  **de la stânga la dreapta sau de la dre
 
 Scrieți o funcție care primește o **matrice de numere  întregi pozitive** și verificați dacă fiecare număr întreg este un palindrom sau nu.
 
-## Example One
+## Exemplul unu
 |**Intrare**|**Ieșire** |
 | --- | --- |
 | palindrome([123, 323, 421, 121]) |  false |
@@ -625,7 +625,7 @@ Scrieți o funcție care primește o **matrice de numere  întregi pozitive** ș
 ||false|
 ||true|
 
-## Example Two
+## Exemplul doi
 |**Intrare**|**Ieșire** |
 | --- | --- |
 | palindrome([32, 2, 232, 1010]) |  false |
@@ -734,7 +734,7 @@ true
 [/slide]
 
 [slide hideTitle]
-# Problem: Password Validator
+# Problemă: Password Validator
 [code-task title="Password Validator" taskId="js-fundamentals-1-Functions-Password-Validator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -755,7 +755,8 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Scrieți o funcție care verifică dacă o parolă dată este validă. Validările parolelor sunt:
+Scrieți o funcție care verifică dacă o parolă dată este validă. 
+Validările parolelor sunt:
 
 - Lungimea trebuie să fie de 6 - 10 caractere (inclusiv)
 - Ar trebui să fie formată doar din litere și cifre
@@ -771,16 +772,16 @@ Dacă este **NU** este validă, pentru fiecare regulă neîmplinită tipăriți 
 
 - "**Password must have at least 2 digits**"
 
-## Example One
+## Exemplul unu
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | passwordValidator('logIn') | Password must be between 6 and 10 characters |
 || Password must have at least 2 digits |
-## Example Two
+## Exemplul  doi
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | passwordValidator('MyPass123') | Password is valid |
-## Example Three
+## Exemplul trei
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | passwordValidator('Pa$s$s') | Password must consist only of letters and digits |
@@ -880,7 +881,7 @@ Password is valid
 [/slide]
 
 [slide hideTitle]
-# Problem: NxN Matrix
+# Problemă: NxN Matrix
 [code-task title="NxN Matrix" taskId="js-fundamentals-1-Functions-NxN-Matrix" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -903,13 +904,13 @@ function adapter(input, code) {
 
 Scrieți o funcție care primește un singur număr întreg **n** și imprimă matricea **nxn** cu acel număr.
 
-## Example One
+## Exemplul Unu
 |**Intrare**|**Ieșire** |
 | --- | --- |
 | matrix(3) | 3 3 3|
 || 3 3 3 |
 || 3 3 3 |
-## Example Two
+## Exemplul Doi
 |**Intrare**|**Ieșire** |
 | --- | --- |
 | matrix(2) | 2 2 |
@@ -1058,7 +1059,7 @@ matrix(13)
 [/slide]
 
 [slide hideTitle]
-# Problem: Perfect Number 
+# Problemă: Perfect Number 
 [code-task title="Perfect Number" taskId="js-fundamentals-1-Functions-Perfect-Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -1079,22 +1080,22 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Scrieți o funcție care primește un număr și reveniți dacă acest număr este **perfect** sau **NU**.
+Scrieți o funcție care primește un număr și stabilește dacă acest număr este **perfect** sau **nu**.
 
 Un număr perfect este un număr întreg **pozitiv** care este egal cu **suma** **divizorilor pozitivi proprii**.
 
 Aceasta este suma divizorilor sale pozitivi, excluzând numărul în sine (cunoscut și ca **suma alicotă**).
 
-## Exemplus
+## Exemple
 | **Intrare** | **Ieșire** | **Comentarii** |
 | :---:       |    :----:   |   :---:     |
 | perfectNumber(6) |We have a perfect number!| 1 + 2 + 3|
 | perfectNumber(28) | We have a perfect number!|1 + 2 + 4 + 7 + 14|
 | perfectNumber(1236498) |It's not so perfect.||
 
-## Sugestie
+## Sfat
 
-În mod echivalent, un număr perfect este un număr care este **o jumătate din suma** tuturor divizorilor săi pozitivi `(incluzând numărul respectiv) => 6` este un număr perfect, deoarece este suma lui `1 + 2 + 3` (toate fiind împărțite fără reziduuri)
+În mod echivalent, un număr perfect este un număr care este **o jumătate din suma** tuturor divizorilor săi pozitivi `(incluzând numărul respectiv) => 6` este un număr perfect, deoarece este suma lui `1 + 2 + 3` (toate fiind împărțite fără rest)
 
 - Citiți despre [Perfect](https://en.wikipedia.org/wiki/Perfect_number) number
 

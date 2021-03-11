@@ -1,4 +1,4 @@
-# Teme de Acasa
+# Teme pentru acasă
 
 [slide hideTitle]
 # Problemă: List of Products
@@ -145,7 +145,7 @@ Restul elementelor vor fi comenzi în următorul format:
 La final, tipăriți starea finală a trenului (toate vagoanele, separate printr-un spațiu).
 
 
-## Exemplus
+## Exemple
 | **Intrare**|**Ieșire** |
 | --- | --- |
 |train(['32 54 21 12 4 0 23','75','Add 10','Add 0','30','10','75'])| 72 54 21 12 4 75 23 10 0|
@@ -242,7 +242,7 @@ Eliminați toate elementele care se repetă din matrice.
 
 Imprimați elementele rezultate (restul), separate printr-un singur spațiu. 
 
-## Exemplus
+## Exemple
 | **Intrare** | **Ieșire** | **Comentarii** |
 | :---:       |    :----:   |   :---:     |
 |distinctArray([1, 2, 3, 4])| 1 2 3 4|No repeating elements |
@@ -351,28 +351,28 @@ Fiecare șir va fi unul dintre următoarele:
 
 -	"\{**name**\} **is not going!**"
 
-If you receive the first type of input, you have to **add** the person if he\/she is not in the list. 
+Dacă primiți primul tip de intrare, trebuie să ** adăugați ** persoana dacă nu se află în listă.
 
-If he\/she is in the list print:
+Dacă el / ea se află în lista, tipăriți:
 
-"\{**name**\} **is already in the list!**".
+„\ {** nume ** \} ** este deja în listă! **”.
 
-If you receive the second type of input, you have to **remove** the person if he\/she is in the list. 
+Dacă primiți al doilea tip de intrare, trebuie să ** eliminați ** persoana dacă se află în listă.
 
-If not print: 
+Dacă nu, tipăriți:
 
-"\{**name**\} **is not in the list!**"
+„\ {** nume ** \} ** nu este în listă! **”
 
-In the end, print all the guests, each on a separate line. 
+La final, tipăriți toți invitații, fiecare pe o linie separată.
 
 
-## Example One
+## Exemplul unu
 |**Intrare**|**Ieșire**|
 | :---:       |    :----:   |   
 |houseParty(['Allie is going!','George is going!','John is not going!','George is not going!'])| John is not in the list!|
 ||Allie|
 
-## Example Two
+## Exemplul doi
 |**Intrare**|**Ieșire**|
 | :---:       |    :----:   |  
 |houseParty(['Tom is going!','Annie is going!','Tom is going!','Garry is going!','Jerry is going!'])|Tom is already in the list!|
@@ -466,7 +466,7 @@ T
 
 
 [slide hideTitle]
-# Problem: Sorting
+# Problemă: Sorting
 [code-task title="Sorting" taskId="js-fundamentals-1-Arrays-Advanced-Sorting" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -574,20 +574,20 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Scrieți o funcție care sortează o serie de șiruri, după lungimea lor în ordine crescătoare, ca criterii primare și după valoarea alfabetică în ordine crescătoare, ca al doilea criteriu.
+Scrieți o funcție care sortează o matrice de șiruri, după lungimea lor în ordine crescătoare, ca criterii primare și după valoarea alfabetică în ordine crescătoare, ca al doilea criteriu.
 
-Intrarea vine ca o serie de șiruri.
+Intrarea este o matrice de șiruri.
 
 Ieșirea este matricea sortată de șiruri. 
 
 
-## Example One
+## Exemplul unu
 |**Intrare**|**Ieșire** |
 | --- | --- |
 |sort(['alpha', 'beta', 'gamma'])|beta|
 ||alpha|
 ||gamma|
-## Example Two
+## Exemplul doi
 |**Intrare**|**Ieșire** |
 | --- | --- |
 |sort(['Isacc', 'Theodor', 'Jack', 'Harrison', 'George'])|Jack|
@@ -596,7 +596,7 @@ Ieșirea este matricea sortată de șiruri.
  ||Theodor|
 ||Harrison|
 
-## Sugestii
+## Sfaturi
 
 - O matrice poate fi sortată trecând o funcție de comparare la funcția `Array.sort()`
 
@@ -737,7 +737,7 @@ Scrieți o funcție care manipulează o serie de numere.
 
 Imprimați starea finală a matricei (separat printr-un singur spațiu).
 
-Intrarea vine ca o serie de șiruri.
+Intrarea vine ca o matrice de șiruri.
 
 Primul element va fi un șir, care conține matricea de manipulat.
 

@@ -1,9 +1,7 @@
-# Problem 2: The Lift
+# Problema 2: The Lift
 
 [slide hideTitle]
 # The Lift
-
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/06.JS-Fundamentals-ExamPrep-2/Video-The lift problem solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="The Lift" taskId="js-fundamentals-examPreparation-2-The-Lift" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -23,7 +21,7 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Description
+# Descriere
 Scrieți un program care să verifice dacă există **locuri goale pe un lift.**
 
 Fiecare dintre cabinele ascensorului nu poate găzdui **mai mult de 4 persoane.**
@@ -56,7 +54,7 @@ Urmat de:
 
 * Dacă liftul este plin și nu mai sunt oameni care așteaptă să intre, ar trebui să imprimați starea fiecărei cabine separate printr-un singur spațiu
 
-## Example One
+## Exemplul unu
 
 |**Intrare**|**Ieșire** |
 | --- | --- |
@@ -71,7 +69,7 @@ Urmat de:
 
 * A treia stare:  4 4 4 0 \-\> 3 persoane au plecat
 
-## Example Two
+## Exemplul doi
 
 |**Intrare**|**Ieșire** |
 | --- | --- |

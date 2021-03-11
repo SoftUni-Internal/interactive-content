@@ -1,7 +1,7 @@
-# Temă de acasă
+# Teme pentru acasă
 
 [slide hideTitle]
-# Problem: Sum Even Numbers
+# Problemă: Sum Even Numbers
 [code-task title="Sum Even Numbers" taskId="js-fundamentals-1-Arrays-Sum-Even-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -21,9 +21,9 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care primește o serie de șiruri, analizați-le la numere și însumați doar numerele pare.
+Creați un program care primește o **matrice de șiruri**, le parsează la **numere** și însumă doar numerele pare.
 
-## Exemplus
+## Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | sumEvenNumbers(['1', '2', '3', '4', '5', '6']) | 12 |
@@ -111,7 +111,7 @@ sumEvenNumbers(['3', '14', '0', '8', '18'])
 [/slide]
 
 [slide hideTitle]
-# Problem: Even and Odd Subtraction
+# Problemă: Even and Odd Subtraction
 [code-task title="Even and Odd Subtraction" taskId="js-fundamentals-1-Arrays-Even-and-Odd-Substraction" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -132,9 +132,9 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Creați un program care calculează diferența dintre suma numerelor pare și suma numerelor impare dintr-o matrice.
+Creați un program care calculează **diferența** dintre suma numerelor **pare** și suma numerelor **impare** dintr-o matrice.
 
-## Exemplus
+## Exemplu
 | **Intrare** | **Ieșire** |**Comentarii** |
 | :--- | :---: | :---:|
 | evenOdd([1, 2, 3, 4, 5, 6]) | 3 | 2 + 4 + 6 = 12, 1 + 3 + 5 = 9, 12 - 9 = 3|
@@ -247,7 +247,7 @@ evenOdd([24, 84, 16, 68, -14])
 [/slide]
 
 [slide hideTitle]
-# Problem: Condense Array to Number
+# Problemă: Condense Array to Number
 [code-task title="Condense Array to Number" taskId="js-fundamentals-1-Arrays-Condense-Array-To-Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -268,9 +268,9 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Creați un program care primește **o serie de numere** și condensați-le prin **însumarea** cuplurilor adiacente de elemente până se obține un **număr unic**.
+Creați un program care primește **o matrice de numere** și le condenzează prin **însumarea** cuplurilor adiacente de elemente până se obține un **număr unic**.
 
-## Exemplus
+## Exemple
 
 De exemplu, dacă avem 3 elemente \[**2, 10, 3**\], însumăm pe primul și al doilea element și apoi pe al doilea și al treilea  și obținem \{**2+10, 10+3**\} = \{**12, 13**\}, atunci însumăm din nou toate elementele adiacente și obțineți \{**12+13**\} = \{**25**\}.
 
@@ -280,7 +280,7 @@ De exemplu, dacă avem 3 elemente \[**2, 10, 3**\], însumăm pe primul și al d
 | condense([5, 0, 4, 1, 2]) | 35 ||
 | condense(\[1\]) | 1 ||
 
-## Sugestii
+## Sfaturi
 
 În timp ce aveți mai multe elemente în matricea **nums**\[\], repetați următoarele:
 
@@ -372,7 +372,7 @@ condense([10])
 [/slide]
 
 [slide hideTitle]
-# Problem: Add or Subtract
+# Problemă: Add or Subtract
 [code-task title="Add or Subtract"taskId="js-fundamentals-1-Arrays-Add-or-Substract" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -393,7 +393,7 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Creați un program, care modifică **valoarea** numerelor impare si pare într-o serie de numere.
+Creați un program, care modifică **valoarea** numerelor impare si pare într-o matrice de numere.
 
 - Dacă numărul este **par**-**adăugați** la valoarea sa poziția indexului
 
@@ -405,14 +405,14 @@ Creați un program, care modifică **valoarea** numerelor impare si pare într-o
 Pe prima linie tipăriți **matricea recent modificată**, pe a doua linie tipăriți suma numerelor din matricea **originală**, pe a treia linie tipăriți suma numerelor din **matricea modificată.**
 
 
-## Example One
+## Exemplul unu
    |**Intrare**|**Ieșire**|
 | --- | --- |
 | addOrSubtract([5, 15, 23, 56, 35]) | [ 5, 14, 21, 59, 31 ] |
 || 134|
 || 130 |
 
-## Example Two
+## Exemplul doi
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | addOrSubtract([-5, 11, 3, 0, 2]) | [ 5, 14, 21, 59, 31 ] |
@@ -508,7 +508,7 @@ addOrSubtract([19, 5, 123, 17, 79])
 [/slide]
 
 [slide hideTitle]
-# Problem: Array Rotation
+# Problemă: Array Rotation
 [code-task title="Array Rotation"taskId="js-fundamentals-1-Arrays-Array-Rotation" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -537,7 +537,7 @@ Primul element al matricei de intrare este numărul de rotații pe care trebuie 
 
 Imprimați elementele matrice rezultate, separați printr-un singur spațiu.
 
-## Exemplus
+## Exemple
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | arrayRotation([51, 47, 32, 61, 21], 2) | 32 61 21 51 47 |
@@ -632,7 +632,7 @@ arrayRotation([21, 69, 4], 0)
 [/slide]
 
 [slide hideTitle]
-# Problem: Magic Sum
+# Problemă: Magic Sum
 [code-task title="Magic Sum"taskId="js-fundamentals-1-Arrays-Magic-Sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -653,22 +653,22 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Create a program, which prints all **unique** pairs are **an array of integers** whose **sum** is **equal** to a given number. 
+Creați un program care imprimă toate perechile **unice** care sunt într-o **matrice de numere întregi** a căror **suma** este **egală** cu un număr dat. 
 
-## Example One
+## Exemplul unu
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | magicSum([1, 7, 6, 2, 19, 23], 8) | 1 7 |
 || 6 2 |
 
-## Example Two
+## Exemplul doi
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | magicSum([14, 20, 60, 13, 7, 19, 8], 27) | 14 13 |
 ||20 7 |
 ||19 8 |
 
-## Example Three
+## Exemplul trei
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | magicSum([1, 2, 3, 4, 5, 6], 6) | 1 5 |

@@ -4,9 +4,9 @@
 
 # Valoare și Tipuri de Referință
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-23-24-25-value-and-reference-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-23-24-25-value-and-reference-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Tipurile de valori și tipurile de referință sunt cele două categorii principale de tipuri JavaScript
+**Tipurile de valori** și **tipurile de referință** sunt cele două categorii principale de tipuri JavaScript
 
 [image assetsSrc="Value-vs-Reference-Types(1).gif" /]
 
@@ -53,6 +53,5 @@ let obj = {firstName:'Maria', lastName:'Agarici'};
 [slide hideTitle]
 # Valoare și Tipuri de Referință: Demo
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-value-vs-refenrence-types-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-value-vs-refenrence-types-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 [/slide]

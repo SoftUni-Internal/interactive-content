@@ -2,7 +2,7 @@
 
 # Ce Este un Tip de Date?
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-8-9-10-what-is-a-data-type-examples-of-data-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-8-9-10-what-is-a-data-type-examples-of-data-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Tipurile de date informează calculatorul ce cantitate de infromații trebuie să citească **din memorie**, dintr-o perspectivă pur tehnică.
 
@@ -30,7 +30,7 @@ Tipurile de date de **referință** sunt: `objects (obiecte)` și `arrays (matri
 
 [image assetsSrc="data-types-in-js.png" /]
 
-Examples:
+Exemple:
 ``` js
 let number = 10; 					     // Number
 let name = 'George';				     // String
@@ -47,7 +47,6 @@ let unknown = undefined;				 // Undefined
 
 # Tipizarea Dinamică
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-11-dynamic-typing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Variabilele în JavaScript nu sunt strict asociate cu un **tip de valoare** specific.
 
@@ -57,7 +56,7 @@ Astfel, putem re-aloca variabile de toate tipurile:
 let variable = 15; 
 console.log(`My variable is ${typeof(variable)}`)
 
-variable = 'Peter'; 
+variable = "Peter"; 
 console.log(`My variable is ${typeof(variable)}`)
 
 variable = false;

@@ -1,7 +1,7 @@
 [slide hideTitle]
-# Recapitulare
+# Rezumat
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/02.JS-Fundamentals-Arrays/02.JS-Fundamentals-Arrays-27-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-27-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Ce ați învățat în această lecție: 
 
@@ -34,17 +34,17 @@ for (const number of numbers) {
 }
 ```
 
-## In the next lesson, you will learn:
+## În lecția umrătoare, veți învăța:
 
-- What is a Function?
+- Cde reprezintă o funcție?
 
-- Declaring and invoking functions
+- Declararea și invocarea funcțiilor
 
-- Nested functions
+- Funcțiile imbricate
 
-- Value and reference types
+- Valoarea și tipurile de referință
 
-- Arrow functions
+- Funcțiile săgeată
 
-- Naming and best practices
+- Denumirea și cele mai bune practici
 [/slide]

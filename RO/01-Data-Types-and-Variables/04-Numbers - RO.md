@@ -2,7 +2,7 @@
 
 # Ce Este un Număr?
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-18-19-what-is-a-number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-18-19-what-is-a-number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Numerele în JavaScript nu au tipuri separate pentru **numerele întregi** și pentru **numerele zecimale.**
 
@@ -68,9 +68,7 @@ console.log(myVar + 10);
 [slide hideTitle]
 
 
-# Problem with Solution: Număr întreg sau număr cu zecimală
-
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-20-solution-integer-or-float-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+# Problemă cu soluție: Integer or Float
 
 [code-task title="Integer or Float" taskId="fund-js-data-types-and-variables-lab-integer-or-float" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -90,16 +88,17 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Descrierea problemei
+# Descriere
+
 Veți primi **trei numere**. 
 
-Sarcina voastră este să aflați **suma** acestora și s-o tipăriți pe consolă, folosind adunarea 
+Sarcina voastră este să aflați **suma** acestora și s-o tipăriți pe consolă, folosind adunarea:
 
 "\{**number**\} - **Integer or Float**"
 
 
-# Exemplus
-  | **Date de intrare** | **Rezultat** |
+# Exemplu
+  | **Intrare** | **Ieșire** |
 | --- | --- |
 | integerOrFloat(9, 100, 1.1) | 110.1 - Float |
 | integerOrFloat(100, 200, 303) | 603 - Integer|

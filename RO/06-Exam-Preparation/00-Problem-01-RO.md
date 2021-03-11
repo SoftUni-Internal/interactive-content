@@ -1,10 +1,8 @@
-# Problem 1: Array Modifier
+# Problema 1: Array Modifier
 
 [slide hideTitle]
 
 # Array Modifier
-
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/06.JS-Fundamentals-ExamPrep-2/Array Modifiers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Array Modifier" taskId="js-fundamentals-examPreparation-2-Array-Modifier" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -25,9 +23,9 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 
-# Description
+# Descriere
 
-Vi se oferă o serie de numere întregi.
+Vi se oferă matrice de numere întregi.
 
 Scrieți un program pentru a modifica matricea, posibilele modificări sunt: "**swap**", "**multiply**" sau "**decrease**".
 
@@ -54,7 +52,7 @@ Comenzile ar putea fi
 
 ## Ieșire
 
-Forma finală a tabloului trebuie tipărită pe consolă, fiecare dintre elementele sale fiind separate printr-o virgulă și un spațiu `,` (virgulă și spațiu unic).
+Forma finală a matricei trebuie tipărită pe consolă, fiecare dintre elementele sale fiind separate printr-o virgulă și un spațiu `,` (virgulă și spațiu unic).
 
 ## Constrângeri
 
@@ -66,7 +64,7 @@ Forma finală a tabloului trebuie tipărită pe consolă, fiecare dintre element
 
 * Indexurile vor fi întotdeauna în raza gamei
 
-## Example One
+## Exemplul unu
 
 |**Intrare**|**Ieșire** |
 | --- | --- |
@@ -78,7 +76,7 @@ Starea inițială a matricei: "23 -2 321 87 42 90 -123"
 
 * "**swap 1(-2)" and "3(87)**"
 
-Starea tabloului după prima comandă: "23 87 321 -2 42 90 -123"
+Starea matricei după prima comandă: "23 87 321 -2 42 90 -123"
 
 * "**swap 3(-2)" and "6(-123)**"
 
@@ -90,7 +88,7 @@ Starea matricei după a treia comandă: "87 23 321 -123 42 90 -2"
 
 * "**multiply 1(23) 2(321) = 7383**"
 
-Starea tabloului după a patra comandă: "87 7383 321 -123 42 290 -2"
+Starea matricei după a patra comandă: "87 7383 321 -123 42 290 -2"
 
 * "**multiply 2(321) 1(7383) = 2369943**"
 
@@ -100,9 +98,8 @@ Starea după a cincea comandă: "87 7383 2369943 -123 42 90 -2"
 
 Starea celei de-a șasea comenzi: "86 7383 2369942 -124 41 89 -3"
 
-## Example Two
-
-|**Intrare**|**Ieșire** |
+## Exemplul doi
+**Intrare**|**Ieșire** |
 | --- | --- |
 |arrayModifier(['1 2 3 4','swap 0 1','swap 1 2','swap 2 3','multiply 1 2','decrease','end'])| 1, 11, 3, 0|
 

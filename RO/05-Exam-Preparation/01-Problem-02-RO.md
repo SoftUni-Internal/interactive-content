@@ -1,9 +1,7 @@
-# Problem with Solution 2: Inventory
+# Problemă cu soluție 2: Inventory
 
 [slide hideTitle]
 # Inventory
-
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/05.JS-Fundamentals-ExamPrep-1/Inventory Problem Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Inventory" taskId="js-fundamentals-examPreparation-Inventory" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -23,7 +21,7 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Description
+# Descriere
 
 Veți primi un șir care conține obiecte curente separate de o virgulă și de un spațiu \(", "\).
 
@@ -55,12 +53,12 @@ Dacă obiectul există deja, puteți să-i schimbați poziția și să îl pune�
 ## Ieșire
 După ce primiți "**Craft!**", Imprimați toate articolele din inventarul dvs., separate prin,o virgulă și un spațiu.
 
-## Examples One
+## Exemplul unu
 |**Intrare**|**Ieșire** |
 | --- | --- |
 |inventory(['Iron, Wood, Sword', 'Collect - Gold', 'Drop - Wood', 'Craft!'])| Iron, Sword, Gold |
 
-## Examples Two
+## Exemplul doi
 |**Intrare**|**Ieșire** |
 | --- | --- |
 |inventory(['Iron, Sword','Drop - Bronze','Combine Items - Sword:Bow','Renew - Iron', 'Craft!'])| Sword, Bow, Iron|

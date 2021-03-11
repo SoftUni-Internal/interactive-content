@@ -1,10 +1,8 @@
-# Problem with Solution 1: Mu Online
+# Problem[ cu soluție 1: Mu Online
 
 [slide hideTitle]
 
 # Mu Online
-
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/05.JS-Fundamentals-ExamPrep-1/JS-Fund-MU Problem -,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Mu Online" taskId="js-fundamentals-examPreparation-Mu-Online" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -25,7 +23,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 
-# Description
+# Descriere
 
 Personajul vostru începe cu **100 health points** și **0 bitcoins.**
 
@@ -90,12 +88,12 @@ Dacă ați reușit să parcurgeți toate camerele din temniță, tipăriți pe u
 "**Health:** \{**health**\}"
 
 ## Intrare
-Un șir, separate printr-o bară verticală ("\|")..
+Un șir, cu comenzi separate printr-o bară verticală ("\|")..
 
 ## Ieșire
 Imprimați mesajele corespunzătoare, așa cum se arată în descriere.
 
-## Example One
+## Exemplul unu
 
 |**Intrare**|**Ieșire** |
 | --- | --- |
@@ -108,7 +106,7 @@ Imprimați mesajele corespunzătoare, așa cum se arată în descriere.
 ||You died! Killed by boss.|
 ||Highest level reached: 6|
 
-## Example Two
+## Exemplul doi
 
 |**Intrare**|**Ieșire** |
 | --- | --- |

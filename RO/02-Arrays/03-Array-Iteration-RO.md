@@ -2,8 +2,7 @@
 
 [slide hideTitle]
 # Imprimarea Matricilor pe Consolă
-
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/02.JS-Fundamentals-Arrays/02.JS-Fundamentals-Arrays-16-17-Array-iteration-and-printing-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-16-17-Array-iteration-and-printing-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a imprima toate elementele matricei, poate fi utilizată o buclă for
 
@@ -26,8 +25,7 @@ console.log(capitals.toString())
 
 [slide hideTitle]
 # Bucla "for-of"
-
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/02.JS-Fundamentals-Arrays/02.JS-Fundamentals-Arrays-23-24-for-of-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-23-24-for-of-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Bucla `for..of` este utilizată pentru a itera peste orice obiect iterabil, dar nu poate fi utilizată pentru a accesa indecșii lor. 
 
@@ -41,9 +39,8 @@ for (const car of cars) {
 [/slide]
 
 [slide hideTitle]
-# Imprimați o matrice cu For-of
-
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/02.JS-Fundamentals-Arrays/02.JS-Fundamentals-Arrays-25-Printing-an-array-with-for-of-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+# Imprimarea unei matrice cu For-of
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-25-Printing-an-array-with-for-of-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ``` js live
 let arr = [1,2,3,4,5,6];
@@ -55,9 +52,8 @@ for(let num of arr){
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Reverse an Array of Numbers
-
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/02.JS-Fundamentals-Arrays/02.JS-Fundamentals-Arrays-18-Solution-Reverse-an-array-of-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+# Problemă cu soluție: Reverse an Array of Numbers
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-18-Solution-Reverse-an-array-of-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Reverse an Array of Numbers" taskId="fundamentals-js-arrays-lab-Reverse-an-Array-of-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -77,12 +73,13 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-Create a program that receives a number **n** and an **array of numbers**.
+# Descriere
+Creați un program care primește un număr **n** și o **matrice de numere**.
 
-Your task is to create a **new array** with **n** numbers, **reversed**, and print its elements on a single line, joined by a single space (" ").
+Sarcina voastră este să creați **o nouă matrice** cu **n** numere, **inversate**, și să imprimați elementele sale pe o singură linie, unite printr-un singur spațiu (" ").
 
 
-## Exemplus
+## Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | reverse(3, [10, 20, 30, 40, 50]) | 30 20 10 |
@@ -185,7 +182,7 @@ reverse(5, [664, 43, 715, 8899, 747, 44, 78])
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Reverse an Array of Strings
+# Problemă cu soluție: Reverse an Array of Strings
 
 [vimeo-video]
 [stream language="EN" videoId="489372618/881c97fdd1" default /]
@@ -217,14 +214,14 @@ Sarcina dvs. este să o inversați și să le imprimați elementele.
 
 **Elemente de schimb.**
 
-## Exemplus
+## Exemplu
 |**Imput**|**Output** |
 | --- | --- |
 | reverse(['a', 'b', 'c', 'd', 'e']) | e d c b a  |
 | reverse(['abc', 'def', 'hig', 'klm', 'nop']) | nop klm hig def abc |
 | reverse(['33', '123', '0', 'dd']) | dd 0 123 33 |
 
-## Comments
+## Comentarii
 Primul element ar trebui să fie ultimul și ultimul ar trebui să devină primul.
 
 [/task-description]

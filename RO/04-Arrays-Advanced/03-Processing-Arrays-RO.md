@@ -2,8 +2,7 @@
 
 [slide hideTitle]
 # Transormarea Elementelor
-
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-23-transform-elements-with-map-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-23-transform-elements-with-map-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Începând de la ES5, tipul JavaScript `Array` oferă metoda `map()` care ne permite să transformăm elementele unei matrice într-un mod mai curat.
 
@@ -38,7 +37,7 @@ Puteți citi mai multe despre [map()](https://developer.mozilla.org/en-US/docs/W
 [slide hideTitle]
 # Filtrarea Elementelor
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-24-filter-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-24-filter-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Metoda `filter()` creează o nouă matrice, plină cu toate elementele matricei care trec un test dat (furnizat ca funcție).
 
@@ -64,10 +63,9 @@ console.log(positiveNums);
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Process Odd Numbers
+# Problemă  cu soluție: Process Odd Numbers
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-problem-05-solution-process-odd-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-problem-05-solution-process-odd-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 [code-task title="Process Odd Numbers" taskId="fundamentals-js-arrays-advanced-lab-Process-Odd-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -89,22 +87,22 @@ function adapter(input, code) {
 
 # Descriere
 
-Vi se oferă o serie de numere.
+Vi se oferă o **matrice de numere**.
 
 Scrieți o funcție care tipărește toate elementele în poziții, dublate și în ordine inversă.
 
-Intrările apar ca o serie de elemente 'șir', care conțin numere.
+**Intrarea** este o matrice de numere
 
-Ieșirea este tipărită pe consolă, **pe o singură linie**, **separată de spațiu.**
+**Ieșirea** este tipărită pe consolă, **pe o singură linie**, **separată de un spațiu.**
 
 
-## Exemplus
+## Exemple
 |**Intrare**|**Ieșire** |
 | --- | --- |
 |oddNumbers([10, 15, 20, 25]) | 50 30 |
 |oddNumbers([3, 0, 10, 4, 7, 3]) | 6 8 0 |
 
-# Sugestii
+# Sfaturi
 
 - Numărarea în matrice începe de la '0'
 - De exemplu: primim 10, 15, 20, 25
@@ -187,8 +185,9 @@ oddNumbers([4, 12, 34, 2, 8, 6, 1, 31])
 [slide hideTitle]
 # Sortarea Matricelor
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-27-28-sorting-arrays-and-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-27-28-sorting-arrays-and-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
+Metoda `sort()` **sortează elementele** unei matrice.
 În funcție de **funcția de comparare** oferită, ordinea de sortare poate **fi alphabetică sau numerică**, fie ascendentă (în sus) sau descendentă (în jos).
 
 În mod implicit, metoda `sort()` sortează valorile ca **șiruri în ordine alfabetică și crescătoare.**
@@ -224,7 +223,7 @@ console.log(numbers);
 [slide hideTitle]
 # Funcții de Comparare
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-29-compare-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-29-compare-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Din fericire, metoda `sort()` poate sorta valori negative, zero și pozitive în ordinea corectă.
 
@@ -232,10 +231,9 @@ Când metoda `sort()` compară două valori, trimite valorile către **funcția 
 
 Rezultatul ar putea fi: **negativ, zero sau pozitiv.**
 
-- If the result is negative, `a` is sorted before `b`
-- If the result is positive, `b` is sorted before `a`
-- If the result is 0, nothing changes
-
+- Dacă rezultatul este negativ, `a` este sorat înainte de  `b`
+- Dacă rezultatul este pozitiv, `b` este sortat înainte de `a`
+- Dacă rezultatul este 0, nu se schimbă nimic
 ``` js live
 let nums = [20, 40, 10, 30, 100, 5];
 nums.sort((a, b) => a-b);
@@ -247,7 +245,7 @@ console.log(nums.join('|'));
 [slide hideTitle]
 # Sortarea Matricelor de Siruri
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-30-sorting-string-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-30-sorting-string-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Metoda `localeCompare()` compară două șiruri de caractere în locale actuale.
 
@@ -265,9 +263,7 @@ console.log(words);
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Smallest two Numbers
-
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-problem-06-solution-smallest-two-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+# Problemă cu soluție: Smallest two Numbers
 
 [code-task title="Smallest two Numbers" taskId="fundamentals-js-arrays-advanced-lab-Smallest-two-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -291,16 +287,16 @@ function adapter(input, code) {
 
 Scrieți o funcție care sortează o matrice în ordine crescătoare și imprimă primele două numere.
 
-Intrările apar ca o serie de elemente **string**, care conțin numere.
+Intrările este o matrice de numere.
 
-## Exemplus
+## Exemple
 |**Intrare**|**Ieșire** |
 | --- | --- |
 |smallestTwoNumbers([30, 15, 50, 5]) | 5 15 |
 |smallestTwoNumbers([3, 0, 10, 4, 7, 3]) | 0 3 |
 
 
-## Sugestii
+## Sfaturi
 - Putem folosi următoarea funcție pentru a sorta elementele matricei: 
 
  ```js
