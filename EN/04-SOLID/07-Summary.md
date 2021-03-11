@@ -5,29 +5,29 @@
 
 ## In this lesson you learned:
 
-In this lesson, you learned:
+- The **SOLID** principles make our software:
 
-- **SOLID** principles make the software:​
+    - **understandable**
 
-    - **understandable​**
-
-    - **flexible​**
+    - **flexible**
 
     - **maintainable**
 
-- **Single Responsibility** - One unit must do only one job
+- **Single Responsibility** - one unit must do only one job
  
-- **Open/Close** - The code should be open to extensions but closed to changes
+- **Open-Closed** - code should be open to extensions but closed to changes
 
-- **Liskov Substitution** - Functions that reference base classes must be able to use objects of derived (child) classes without knowing it
+- **Liskov Substitution** - functions that reference base classes must be able to use objects of derived (child) classes without knowing it
 
-- **Interface Segragation** - A client should not be forced to implement an interface that is not used
+- **Interface Segregation** - a client should not be forced to implement an interface that is not used
 
-- **Depndency Inversion** - Depend on abstractions, not on concretions
+- **Dependency Inversion** - depend on abstractions, not on concretions
 
 
 ## In the next lesson, you will learn:
-- Reflection - What? Why? Where?
+- Reflection
+    - what Java reflection is
+    - when and where to use it
 - Reflection API
 
 [/slide]
