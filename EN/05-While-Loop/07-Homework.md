@@ -19,11 +19,11 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that:
+Write a program, which:
 
 * Reads a number from the console
-* **Sums** all the **digits** of the given number
-* Prints the sum of all digits
+* **Sums** the **digits** of a number
+* Prints the sum
 
 ## Example
 | Input | Output |
@@ -101,11 +101,11 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that:
+Write a program, which: 
 
-* Reads a **string** representing the name of a particular book
-* Reads another string values until it receives the name of the first book again.
-* Prints "Book found! Attempts: \{attemptsCount\}" and stops
+* Reads a **book's name** from the console
+* Receives names until it gets **book with the same name as the first one**
+* Prints "Book found! Attempts: \{attemptsCount\}" and stops afterwards
 
 ## Example
 | Input | Output |
@@ -172,10 +172,10 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that:
+Write a program, which: 
 
-* Reads integers until the **"END"** command is received
-* Prints the **greatest** and the **smallest** integers in the following format:
+* Receives integers until **"END"**
+* Prints the **biggest** and the **smallest** integer in the following format:
    * Max number: \{max number\}
    * Min number: \{min number\}
 
@@ -284,10 +284,10 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-A **special** number is a number **divisible by all of its digits** without a remainder. 
+Special number is number **divisible by all of its digits** without remainder. 
 
-Create a program that:
-* Receives an integer value
+Write a program, which: 
+* Receives integer
 * **Prints** "\{num\} is special", if the number is special
 * Otherwise, prints "\{num\} is not special"
 
@@ -367,12 +367,11 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that:
+Write a program, which: 
 
-* Reads an **integer** number
-* Keeps reading integers until it receives the **same number**
-* When such a number is received, the value of the **previous** number should be increased by **100%**
-* The **increased number** should be printed to the console
+* Reads an **integer** number from the console
+* Keeps reading integers until it finds the **same one as the first one**
+* When it finds it, it increases the value of the **previous** number **before it** with 100% and prints it
 
 ## Example
 | Input | Output |
@@ -436,11 +435,11 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that:
+Write a program, which: 
 
-* Reads an integer number - `n` 
-* Prints a **sequence** of numbers that are **<= `n`** and satisfy the following condition:
-* Each number is equal to the previous one multiplied by **2** plus **1** 
+* Reads a number **n** from the console
+* Prints a **sequence** of numbers, which are **<= n** and satisfy the following condition:
+* Each number is equal to the previous one multiplied by **2** plus **1**
 
 ## Example
 | Input | Output |
@@ -549,11 +548,11 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that:
+Write a program, which: 
 
-* Receives a number representin the **amount of money** for each transaction, untill the **END** command is received
-* **Adds** the money to the **balance** and **prints**: "Increase: \{money\}".  The `money` should be formatted to the **2nd digit** after the decimal point
-* After the **END** command is received, calculates and **prints** the **total balance**: "Total: \{balance\}". The `balance` should be formatted to the **2nd digit** after the decimal point
+* Receives the **amount of money** for each transaction untill **"END"**
+* **Adds** the money to the **balance** and **prints**: "Increase: \{money\}", format `money` to the **2nd digit** after the decimal point
+* After **"END"** calculates and **prints** the total balance: "Total: \{balance\}", format `balance` to the **2nd digit** after the decimal point
 
 ## Example
 | Input | Output |
@@ -613,18 +612,18 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Andreea goes to her hometown after being a long time abroad. 
+Andreea goes to her home town after being a long time abroad. 
 
-When she comes home, she sees her grandmother\'s library and remembers her favorite book. 
+When she comes home, she sees her grandmother\'s library and remembers her favourite book. 
 
-Help Andreea by writing a program, in which Andreea enters the name of the **book** she\'s searching for (**string**), and the **capacity** of the library (**integer**). 
+Help Andreea writing a program in which Andreea enters the name of the **book** she\'s searching for (**String**) and the **capacity** of the library (**integer**). 
 
-**Until** Andreea finds her favorite book **or** there are more books to be checked, the program has to read a new name of the book, each on a separate line.
+**Until** Andreea finds her favourite book **or** doesn\'t check all books in the library, the program have to reads every time the name of the next book on a separate line.
 
 ## Input
-- The name of the book Andreea is searching for - string
-- The capacity of the library - integer
-- A new name of a book - string
+- First line of input is the name of the book Andreea's searching for - string
+- Second line is the capacity of the library - integer
+- On every nex line - name of book from library - string
 
 ## Output
 - If Andreea **does not** find the book, print **two** lines:
@@ -644,7 +643,7 @@ Help Andreea by writing a program, in which Andreea enters the name of the **boo
 
 ### Comments
 - Andreea is searching for a book with name "Troy", and the library\'s capacity is 8 books.
-- The first book is "Stronger", the second one is "Life Style", the third one is the desired one- "Troy", so the program ends
+- The first book is "Stronger", the second one is "Life Style", the third one is desired - "Troy" and the program ends.
 
 ## Example
 | **Input** | **Output** |
@@ -659,7 +658,7 @@ Help Andreea by writing a program, in which Andreea enters the name of the **boo
 ### Comments
 - Andreea is searching for a book with name "The Spot". The library contains 4 books.
 - The first book is "Hunger Games", the second - "Harry Potter", the third - "Torronto", the fourth - "Spotify"
-- Since there are not other books in the library, the program should end
+- Since there aren\'t other books in the library, reading names is stopped. Andreea didn\'t find the book.
 [/task-description]
 [tests]
 [test open]
@@ -875,27 +874,27 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description 
-Your friend should solves problems to prapare for his exams until he receives a message **Enough** from his trainer.
+Write a program in which Martin solves problems for exams until he receives message from his trainer: "**Enough**". 
 
-Every time he solves a problem, he get a grade. **The program should end** when Martin receives a message **Enough**, or when he reaches the limit of poor grades.
+Every time he solves a problem, he get a grade. **The program should ends either** Martin receives "Enough" command, **or obtain the number of poor grades**. 
 
-A poor grade is a grade less than or equal to **4.00**.
+A poor grade is a grade less or equal to 4.00.
 
 ## Input
-- **limit of poor grades** – integer in range \[1…5\]
--  Until the program ends, we will receive the following 2 lines: 
-  - **Name of a problem** - a string value
-  - **Grade** - an integer in range \[2…6\]
+- On the first line – **number of poor grades** – integer in range \[1…5\]
+- **After that repeatedly two lines**:
+  - **Name of a problem - text**
+  - **Grade** - integer in range \[2…6\]
 
 ## Output
-- If Martin receives the **Enough** command, print the following **3** lines:
+- If Martin reaches "**Enough**" command, print **3** lines:
   - "Average score: \{average grade\}"
   - "Number of problems: \{number of ALL problems\}"
   - "Last problem: \{last problem\'s name\}"
-- If he reaches the **specified limit of poor grades**:
+- **If he gets the specified number of poor grades**:
   - "You need a break, \{number poor grades\} poor grades."
 
-The **average score** should be formatted to the second decimal point.
+**The average grade should be formatted to the second decimal point.**
 
 ## Example
 | **Input** | **Output** |
@@ -913,11 +912,11 @@ The **average score** should be formatted to the second decimal point.
 
 ### Comments
 - The number of allowed poor grades is 3.
-- The first problem is called called **Money**. Martin has a grade equal to **6**.
-- The second problem is called **Story**. Martin has a grade equal to **4**.
-- The third problem is called **Spring Time**. Martin has a grade equal to **5**.
-- The fourth problem is called **Bus**. Martin has a grade equal to **6**.
-- Then, we receive **Enough**, which is the end of the program.
+- First problem\'s name is Money, Martin\'s grade is 6.
+- Second problem - Story, grade - 4.
+- Third problem - Spring Time, grade - 5.
+- Fourth problem - Bus, grade - 6.
+- Next command is Enough, the program ends.
 - Average grade: 21 / 4 = 5.25
 - Number of solved problems: 4
 - Last problem: Bus
@@ -935,10 +934,10 @@ The **average score** should be formatted to the second decimal point.
 
 ### Comments
 - The number of allowed poor grades is 2.
-- The first problem is called called **Income**. Martin has a grade equal to **3**.
-- The second problem is called **Game Info**. Martin has a grade equal to **6**.
-- The third problem is called **Best Player**. Martin has a grade equal to **4**.
-- Martin reaches the limit of allowed poor grades, so it is time for him to take a break.
+- The first problem\'s name is Income, Martin\' grade is 3.
+- Second problem - Game Info, grade - 6.
+- Third problem - Best Player, grade - 4.
+- Martin reaches the number of allowed poor grades, it is time for break.
 [/task-description]
 [tests]
 [test open]
@@ -1231,14 +1230,14 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Gaby wants to start a healthy lifestyle so that she sets a goal to walk **10000 steps** a **day**.
+Gaby wants to start healthy life and she sets a goal to walk **10000 steps** a **day**.
 
-Create a program that reads from the console **how many steps** Gaby walks every time she goes out, and **when she reaches the set goal**, prints the following message: 
-- **Goal reached! Good job!**.
+Write a program **that reads from the console how many steps** Gaby walks every time she is out and **when she reaches the set goal**, print a message: 
+- "**Goal reached! Good job!**".
 
-In case she wants to go home **before** reaching the goal, she will enter the command **Going home** and the **steps she had walked while she was going back home**. 
+In case she wants to go home **before** reaching the goal, she will enter "**Going home**" command and the **steps** she had **walked** while she was **going home**. 
 
-If she did not manage to reach her goal, you have to print out the following massage:
+After that, if she didn\'t manage to reach her goal, you have to print the following massage on the console: 
 - "\{difference in steps\} more steps to reach goal."
 
 ## Examples
@@ -1473,30 +1472,30 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-John works in a restaurant and is responsible for loading the dishwasher at the end of the day. 
+John works in a restaurant. He is responsible for loading the dishwasher at the end of the day. 
 
-Your task is to write a program that calculates **whether** a purchased quantity of bottles of dishwasher detergent is **enough** to wash a certain amount of vessels. 
+Your task is to create a program that calculates **whether** the purchased quantity of bottles of dishwasher detergent is **enough** to wash a certain amount of vessels. 
 
 It is known that each bottle contains **750 ml.** detergent. 
 
-For 1 **plate** 5 ml is needed, and for a **pots** 15 ml. 
+For a **plate** are needed **5 ml**. For a **pot** are needed **15 ml*. 
 
-Accept that on every **third** filling with vessels, the dishwasher is filled only with pots, and the other times with plates. 
+On every **third** filling with vessels, the dishwasher is filled only with pots, whereas, the other times - with plates. 
 
-Until you get the command **"END"** you will continue to receive the number of vessels that need to be washed.
+Until we get the command **END**, we will be receiving numbers of vessels that need to be washed.
 
 # Input
 Read from the console: 
-- **Number of bottles of detergent** that will be used for washing of plates - integer in range \[1...10\] 
+- **Number of bottles of detergent** that will be used - integer in range \[1...10\] 
 
-On each **subsequent** line, until the command **"End"** or until **the amount of detergent is not run out**, the **number of vessels** that need to be washed - integer in range \[1...100\]
+- On each subsequent line, until the command **End**, or until **we run out of detergent**, we will receive the **number of vessels** that need to be washed - integer in range \[1...100\]
 
 # Output
-- In case that the amount of detergent **was sufficient** for the washing of the vessels, print three lines of output: 
+- If the amount of the detergent **is sufficient** for washing all the vessels, print the following three lines: 
     - "Detergent was enough!"
     - "\{Number of clean plates\} dishes and \{number of clean pots\} pots were washed."
     - "Leftover detergent \{amount of detergent remaining\} ml." 
-- If the amount of detergent **was not sufficient** for the washing of the vessels, print the following line: 
+- If the amount of detergent **is not sufficient**, print the following line: 
     - "Not enough detergent, \{quantity not reached detergent\} ml. more necessary!"
 
 ## Example
@@ -1511,10 +1510,12 @@ On each **subsequent** line, until the command **"End"** or until **the amount o
 
 ### Comments
 - Detergent quantity = 2 \* 750 = 1500 ml.
-- 53 plates are loaded = > 53 \* 5 = 265 ml.  1500 \- 265 = 1235 ml. (residue)
-- 65 plates = > 65 \* 5 = 325 ml 1235 \- 325 = 910 ml. (residue)
-- 55 pots = > 55 \* 15 = 825 ml 910\- 825 = 85 ml. (residue)
-- We receive the command "End", therefore the quantity is reached and the corresponding message is printed: number of plates = 53 \+ 65 = 118. Number of pots = 55
+- 53 plates are loaded = > 53 \* 5 = 265 ml.  1500 \- 265 = 1235 ml. left
+- 65 plates = > 65 \* 5 = 325 ml 1235 \- 325 = 910 ml. left
+- 55 pots = > 55 \* 15 = 825 ml 910\- 825 = 85 ml. left
+- We receive the command "End". Therefore, we can conclude that the quantity is enough, so the corresponding messages are printed: 
+- number of all plates washed = 53 \+ 65 = 118. 
+- number of all pots washed = 55
 
 ## Example
 | **Input** | **Output** |
