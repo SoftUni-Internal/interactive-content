@@ -162,7 +162,7 @@ Some commonly used patterns in this category are:
 
 - **Iterator**: provides a way to access the elements of a collection (aggregate object) without exposing the underlying representation
 
-This is also known as a "cursor".
+This is also known as a "**cursor**".
 
 [image assetsSrc="js-application-design-patterns-08.png" /]
 
@@ -205,7 +205,7 @@ They are not set in stone and, if a pattern does not work for you, you can alway
 
 - They can **speed up development** and less time is spent on finding solutions
 
-# Drawbacks of Design Patterns
+## Drawbacks of Design Patterns
 
 - Design patterns come with **consequences** and if applied **incorrectly** or without regard to how the application might change in the future, they can **cause problems**
 

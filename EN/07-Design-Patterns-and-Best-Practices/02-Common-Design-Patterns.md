@@ -217,7 +217,7 @@ The **facade pattern** is used a lot in multi-layered applications where only ce
 
 It is also useful in **refactoring** and almost always improves code **usability**.
 
-It is implemented by creating a "wrapper" class, **encapsulating** the subsystem. 
+It is implemented by creating a "**wrapper**" class, **encapsulating** the subsystem. 
 
 The client is only **coupled** to the facade and not to the subsystem(s) behind it.
 
