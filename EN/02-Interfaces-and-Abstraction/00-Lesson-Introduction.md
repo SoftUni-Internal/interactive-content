@@ -10,17 +10,17 @@
 
 **1. Inheritance and Interfaces**
 
-- What is Interface
+- What an interface is
 
-- What is Abstract class 
+- What an abstract class is
 
 **2. Abstraction**
 
-- Abstraction as an Object-Oriented-Principle
+- Abstraction as an object-oriented principle
 
-- Benefits of Abstraction
+- Benefits of abstraction
 
-- How do we achieve Abstraction
+- How to achieve abstraction
 
 **3. Interfaces**
 
