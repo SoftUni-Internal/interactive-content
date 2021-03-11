@@ -21,7 +21,7 @@ We want to calculate the price for certain product and day.
 
 ```
 Read the input 
-If we want to buy a banana
+If the product is a banana
   If it is a weekday the price is 2.50
   Otherwise the price is 2.70
 If the product is an apple
