@@ -5,7 +5,7 @@
 
 Always use verbs when naming methods.
 
-A method represents an action, and its name should clearly state what action they perform.
+A method represents an action and its name should clearly state what action they perform.
 
 Method names can be a single word or 2-3 words as needed to represent the action.
 
@@ -22,7 +22,7 @@ If you cannot find a good name for a method, think about whether it has a **clea
 
 Bad method names: **Method1**, **DoSomething**, **HandleStuff**, **SampleMethod**.
 
-Perhaps your method does too many things, making it difficult to decide on a name.
+Perhaps your method does too many things making it difficult to decide on a name.
 
 This should be a pretty good indicator that you should split it into two or more methods.
 
@@ -65,9 +65,7 @@ You can understand what each of the above methods does by reading their names, e
 
 Make sure to use correct **indentation**.
 
-Leave a **blank line** between **methods**, after **loops**, and after **if** statements.
-
-Always use **curly brackets** for **loops** and **if** statements bodies.
+Leave a **blank line** between **methods**, after **loops** and after **if** statements.
 
 **Avoid long lines** and **complex expressions**.
 
