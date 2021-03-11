@@ -18,14 +18,14 @@ if (condition1) {
 }
 ```
 
-# Example: Personal Titles
+## Example: Personal Titles
 Depending on someones **age** (integer) and their **gender** (**m** / **f**), print their personal title:
 -  "Mr." – a man (gender "m") – 16 or older
 -  "Master" – a boy (gender "m") - under 16 years old
 -  "Ms." – a woman (gender "f") – 16 or molder
 -  "Miss" – a girl (gender "f") - under 16 years old
 
-# Solution: Personal Titles
+## Solution: Personal Titles
 We should notice that the **output** of the program **depends on a few conditions**. 
 
 **First**, we have to check what their **gender** is and **then** their **age**. 
