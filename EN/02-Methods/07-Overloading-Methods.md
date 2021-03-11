@@ -4,9 +4,9 @@
 
 # Method Signature
 
-In Java method signature is part of the method declaration.
+In Java, a method signature is a part of the method declaration.
 
-It is the combination of the method name and the method parameters.
+It is the combination of the **method name** and the **method parameters**.
 
 ```Java
 public static void print(String text) {
@@ -18,7 +18,7 @@ In this example, the signature elements are **print** (method name) and **String
 
 ## Overloading Methods
 
-Overloading methods is done by using the same name for multiple methods with different **signatures** \(method **name** and **parameters**\).
+Overloading a method is done by using the same name for multiple methods with different **signatures** \(method **name** and **parameters**\).
 
 Instead of defining two methods that should do the same thing, it is better to create additional method overloads.
 
@@ -88,7 +88,7 @@ You are given an input of two values of the same type.
 
 The values can be of type **int**, **char**, or **String**.
 
-Create a method called **getMax()** that returns the greater of the two values.
+Create a method called **getMax()** that returns the **parameter with the biggest value**.
 
 ## Examples
 |**Input**|**Output**|
