@@ -67,11 +67,11 @@ The `getHorsePower()` method **returns** the value of the `horsePower` field.
 
 The `setHorsePower()` method **sets** the value of the `horsePower` field.
 
-## "this" Keyword
+## The "this" Keyword
 
 In Java, the keyword `this` is a reference to the current object - the object whose method or constructor is called. 
 
-It is like a pointer (reference), used to access the elements (fields, methods, constructors) of our own class:
+It is like a pointer (reference), used to access the elements (fields, methods, constructors) of our class:
 
 ```java
 class Car {
@@ -87,7 +87,7 @@ class Car {
 
 ```
 
-In the example above `setHorsePowerNotWorking()`, is not working because the method parameter `horsePower` shadows the `horsePower` field. 
+In the example above, `setHorsePowerNotWorking()` would not work because the method parameter `horsePower` shadows the `horsePower` field. 
 
 To overcome this problem, we have to use the `this` keyword:
 
@@ -108,13 +108,13 @@ The most common use of the `this` keyword is to eliminate the confusion between 
 
 By using the `toString()` method, you can represent any object as a string.
 
-In general, the `toString` method returns a string that "textually represents" the object. 
+In general, the `toString()` method returns a string that "textually represents" the object. 
 
 The result should be a concise but informative representation that is easy for a person to read. 
 
 It is recommended that all subclasses override this method.
 
-If you define a custom `toString()` method in your class then your own method will be called, overriding the built-in one:
+If you define a custom `toString()` method in your class then your method will be called, overriding the built-in one:
 
 ```java live no-template
 public class Car {
@@ -150,20 +150,22 @@ The `equals()` method is used to determine if two objects are equal.
 Car firstCar = new Car("TESLA", "MODEL S");
 Car secondCar = new Car("BMW", "5 Series");
 
-boolean isCarsEquals = firstCar.equals(secondCar);
+boolean checkCarsEqual = firstCar.equals(secondCar);
 // false
-System.out.println(isCarsEquals);
+System.out.println(checkCarsEqual);
 ```
+Keep in mind that for the `equals()` method does not work correctly for object comparison unless it is overridden and used together with the `hashcode()` method.
+
 [/slide]
 
 [slide hideTitle]
-# HashCode() Method
+# Hashcode() Method
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-22-hash-code-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `hashCode()` method returns the **integer** hash code value of the object. 
 
-The hash code is always the same if the object does not change.
+The hash code is always the same if the object did not change.
 
 ```java
 Car car = new Car();
@@ -172,6 +174,10 @@ int hash = car.hashCode();
 
 System.out.println(hash); 
 ```
+
+In order to enable correct object comparison you need to use the `equals()` and `hashcode()` methods together.
+
+Typically both of them need to be overridden to get correct results.
 
 [/slide]
 
@@ -206,7 +212,7 @@ It should also include the following public methods:
 
 Use the `Car` class from the previous problem.
 
-Because all fields in the **Car** class are **private**, if you try to access the fields directly through the class you should have a **compilation error**.
+Because all fields in the **Car** class are **private**, if you try to access the fields directly through the class you will get a **compilation error**.
 
 To overcome this problem you have to use getters and setters methods.
 
