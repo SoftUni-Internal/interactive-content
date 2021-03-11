@@ -1444,13 +1444,6 @@ Imprimați pe consolă un singur număr cu virgulă mobilă: banii pe care Georg
 | 2.50 | |
 | 1 | |
 
-### Sugestii
-- Prețul tonului = 6.90 + 6.90 \* 0.60 = 11.04 $/kg
-- Suma totală de ton = 1.5 \* 11.04 = 16.56
-- Prețul macroului = 4.20 + 4.20 \* 0.80 =  7.56$/kg
-- Suma totală de macrou= 2.5 \* 7.56 = 18.90
-- Suma totală a midiilor = 1 \* 7.50 = 7.50
-- Factură = 16.56 + 18.90 + 7.50 = 42.96
 
 [/task-description]
 [tests]
@@ -1659,10 +1652,14 @@ Prețurile trebuie să fie formatate la **a doua zecimală**.
 | 540 | The final price is: 3369.71 dollars |
 |  | The discount is: 739.69 dollars |
 
-### Comentarii
-- Calculați prețul pentru amenajarea întregii curți: 540 \* 7.61 = 4109.40 $
-- Calculați reducerea: 0.18 \* 4109.40 = 739.69 $
-- Calculați prețul final: 4109.40 – 739.69 = 3369.71 $
+[hints]
+[hint]
+Calculate the price for greening the whole yard.
+[/hint]
+[hint]
+Calculate the discount and determine the final price.
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
