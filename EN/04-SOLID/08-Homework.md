@@ -68,10 +68,10 @@ The library should provide the following ready classes for the client:
 
 - **FileAppender** - appends a log to a file (You need to implement a **CustomFile** class) using the provided layout
 
-- **LogFile** - a custom file class which logs messages in a string builder using a method `write()`
-    - it should have a **getter** for its **size** which is the **sum** of the ascii codes of all alphabet characters it contains (e.g. a-z and A-Z)
+- **LogFile** - a custom file class that logs messages in a string builder using a method `write()`
+    - it should have a **getter** for its **size** which is the **sum** of the ASCII codes of all alphabet characters it contains (e.g. a-z and A-Z)
 
-- **Logger** - a logger class which is used to log messages
+- **Logger** - a logger class that is used to log messages
     - calls each of its appenders when something needs to be logged
 
 ### Sample Source Code
@@ -165,11 +165,11 @@ Only messages from error and above are appended.
 
 A file should write all messages internally and it should keep information about its size.
 
-Size of a file is calculated by summing ASCII codes of all alphabet characters (a-Z). 
+The size of a file is calculated by summing ASCII codes of all alphabet characters (a-Z). 
 
-For example, a file appender with simple layout and a single message **"3/31/2015 5:33:07 PM - ERROR - Error parsing request"** has size 2606 (including all characters in PM, ERROR, Error, parsing, request). 
+For example, a file appender with a simple layout and a single message **"3/31/2015 5:33:07 PM - ERROR - Error parsing request"** has size 2606 (including all characters in PM, ERROR, Error, parsing, request). 
 
-In case of Xml layout, the file would have size 6632, because of the extra characters within the tags.
+In the case of XML layout, the file would have a size of 6632, because of the extra characters within the tags.
 
 ## Controller
 
@@ -183,7 +183,7 @@ File appenders write (**save**) the messages, but do not print them.
 
 ### Input
 
-On the first line you will get **N** - the number of appenders. On the next N lines, you will get information about the appenders in one of the formats below:
+On the first line, you will get **N** - the number of appenders. On the next N lines, you will get information about the appenders in one of the formats below:
 
 - "`<appender type>` `<layout type>` `<REPORT LEVEL>`"
 - "`<appender type>` `<layout type>`"
@@ -193,7 +193,7 @@ If no report level is provided, the appender should be set to record all message
 
 If there is no report level, value is **INFO**.
 
-Next, until you get the **END** command, you will receive messages containing report level, time and message separated by pipe `|`:
+Next, until you get the **END** command, you will receive messages containing report level, time, and message separated by pipe `|`:
 
 - `<REPORT LEVEL>|<time>|<message>`
 
@@ -213,7 +213,7 @@ Console appenders should print directly at the console in the layout they are pr
 
 ```
 
-After the "**END**" command you should print **Logger** info which includes statistics about every appender (its type, layout, report level, messages appended and file size for file appenders):
+After the "**END**" command you should print **Logger** info which includes statistics about every appender (its type, layout, report level, messages appended, and file size for file appenders):
 
 "Logger info
 Appender type: `<appender type>`, Layout type: `<layout type>`, Report level: `<REPORT LEVEL>`, Messages appended: `<count>`, File size: `<size>`"
