@@ -4,11 +4,11 @@
 
 # Program Execution
 
-The program flow in Java is controlled via a part of the memory called **the call stack**. 
+The program flow in Java is controlled by a part of the memory called **the call stack**. 
 
 The stack is used for keeping track of what methods were called and the points of the program at which they were called.
 
-As soon as a method finishes its execution, the program flow resumes from the place in the code from which it was invoked.
+As soon as a method finishes its execution, the program flow resumes from the place in the code from, which it was invoked.
 
 Let us see this in action.
 
@@ -41,11 +41,11 @@ public class Main {
 }
 ```
 
-We are using the Scanner class to accept user input through the console.
+We are using the `Scanner` class to accept a user's input through the console.
 
 First, we read the name of the city and immediately call the `printWeather()` method, passing the string as a parameter to it.
 
-The program then skips down several lines to where the `printWeather(String city)` method declaration is found and executes all the code in the method.
+The program then skips down several lines to where the `printWeather(String city)` method is declarated and executes the code inside the method.
 
 Finally, it will return to where the method was called and continue after it by printing a question and prompting the user for a choice of yes or no.
 
