@@ -263,6 +263,7 @@ Creați un program pentru a verifica dacă o  anumită literă  este o vocală s
 [hints]
 [hint]
 Puteți folosi o instrucțiune "if" pentru a verifca dacă litera respectivă este o vocală. În cazul în care este, imprimați ieșirea corectă.Dacă nu este, introduceți instrucțiunea "else" și imprimați rezultatul corespunzător.
+[/hint]
 [/hints]
 
 [/task-description]
