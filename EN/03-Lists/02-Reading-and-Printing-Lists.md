@@ -5,7 +5,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-10-11-reading-lists-from-the-console-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- Reading a list using `for` loop and `scanner.nextLine()`
+- Reading a list using a **for-loop**:
 
 ```java 
 Scanner scanner = new Scanner(System.in);
@@ -37,7 +37,7 @@ for (int i = 0; i < n; i++) {
 
 You can read a list as a single line from the console.
 
-Imagine we have an input that consists of several Integer values, separated by spaces. (10 20 30 40 50)
+Imagine we have an input that consists of several **Integer** values, separated by spaces. (10 20 30 40 50)
 
 ``` java
 // input: 10 20 30 40 50
@@ -55,7 +55,7 @@ List<Integer> items = Arrays
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-13-printitng-lists-on-the-console-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Printing a list using a "for" loop:**
+**Printing a list using a **for-loop**:
 
 ```java live
 List<String> months = new ArrayList<>(
@@ -65,7 +65,7 @@ for (int index = 0; index < months.size(); index++) {
    System.out.print(months.get(index) + " ");
 }
 ```
-**Printing a list using a "for-each" loop:**
+**Printing a list using a **foreach-loop**:
 
 ```java live
 List<String> numbers = new ArrayList<>(
@@ -75,7 +75,7 @@ for (String number : numbers) {
    System.out.print(number + " ");
 }
 ```
-**Printing a list using a "String.join(…)":**
+**Printing a list using a "String.join(…)"**:
 
 ```java live
 List<String> list = new ArrayList<>(
@@ -107,9 +107,9 @@ public class Main {
 [task-description]
 ## Description
 
-Write a program to **sum all adjacent equal numbers** in a list of decimal numbers, starting from **left to right**.
+Create a program to **sum all of the adjacent equal numbers** in a list of decimal numbers, starting from **left to right**.
 
-- After two numbers are summed, the obtained result could be equal to some of its neighbors and should be summed as well (see the examples below)
+- After two numbers are summed, the result could be equal to some of its neighbors and should be summed as well (see the examples below)
 
 - Always sum the leftmost two equal neighbors (if several couples of equal neighbors are available)
 
@@ -228,7 +228,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that sums all numbers in a list in the following order: 
+Create a program that sums all numbers in a list in the following order: 
 - **first** + **last**, **first + 1** + **last - 1**, **first + 2** + **last - 2**, … **first + n**, **last - n**
 
 
