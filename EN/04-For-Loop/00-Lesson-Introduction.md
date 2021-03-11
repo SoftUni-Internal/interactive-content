@@ -13,19 +13,19 @@
 
 **2. For-Loop**
 
-- How to repeat block of code
+- Repeating blocks of code
 
-**3. For-Loop with Step**
+**3. For-Loop with a special Step**
 
-- What is "Step" in the loop
+- What is the "Loop-Step" 
 
 **4. Iterating over Characters**
 
 - How to iterate over characters using loops
 
-**5. Infinity Loops**
+**5. Infinite Loops**
 
-- What are **Infinity Loops** and how to safe-use them
+- What are **Infinite Loops** and how to use them
 
 
 [/slide]
