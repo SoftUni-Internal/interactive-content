@@ -2513,6 +2513,4 @@ Test Passed!
 [/test]
 [/tests]
 [/code-task]
-
-
 [/slide]
