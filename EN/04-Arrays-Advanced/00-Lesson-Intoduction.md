@@ -9,16 +9,16 @@
 
 **1. Basic Operations**
 
-- Adding/Removing elements at the end - `push()`, `pop()`
-- Adding/Removing elements at the start - `unshift()`, `shift()`
+- Adding/Removing elements at the end - **push()**, **pop()**
+- Adding/Removing elements at the start - **unshift()**, **shift()**
 
 **2. Manipulating arrays**
 
-- Using `slice()` and `splice()` to manipulate arrays
+- Using **slice()** and **splice()** to manipulate arrays
 
 **3. Mapping and sorting arrays**
 
-- Creating new arrays using `map()` and `filter()`
-- Using `sort()` on **numbers and strings**
+- Creating new arrays using **map()** and **filter()**
+- Using **sort()** on **numbers and strings**
 
 [/slide]
