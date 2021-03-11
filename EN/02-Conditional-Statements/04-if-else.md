@@ -4,11 +4,11 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-18-simple-conditions-if-else-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The `if` construction may also contain an `else` clause to give a specific action in case the Boolean expression (which is set at the beginning `if (bool expression)` ) returns a negative result (`false`). 
+The `if` construction may also contain an `else` statement providing an alternatve action in case the initial Boolean expression returns a negative result (`false`). 
 
 Built this way, **the conditional statement** is called `if-else` and its behavior is as follows: 
-* If the result of the condition is positive (`true`) – we perform some actions
-* When it is negative (`false`) – others. 
+* If the result of the condition is positive (`true`) – commands placed within it will be executed
+* If it is negative (`false`) – commands placed withing the body of the else statement will be executed 
 
 [image assetsSrc="02-usecase-if-else-statement.png" /]
 
@@ -21,21 +21,19 @@ if (condition) {
 }
 ```
 
-If condition is `false`, the else-statement runs.
+If the condition is `false`, the else-statement runs.
 
-Because a condition can’t be simultaneously `true` and `false`, the then-statement and the else-statement of an `if-else` statement can **never both run**. 
+Because a condition cannot be simultaneously `true` and `false`only one of the if-else cases can be executed.
 
-After the then-statement or the `else`-statement runs, control is transferred to the next statement after the `if` statement.
+After executing the body of the `if` or `else`-statements, control is transferred to the next statement in our code if there are any.
 
-In an `if` statement that doesn’t include an else statement, if condition is `true`, the then-statement runs. 
+In an `if` mechanics that does not include an else-statement, if the condition is true its body will be executed, if not the program will continue execution ignoring the code placed in its body.
 
-If condition is `false`, control is transferred to the next statement after the if statement.
+Both the bodies of if- and else-statements can consist of a single or multiple lines of code that are enclosed in braces `{ }`. 
 
-Both the then-statement and the else-statement can consist of a single statement or multiple statements that are enclosed in braces `{ }`. 
+If the body of an if-statement holds just one line of code, the braces are optional but recommended.
 
-For a single statement, the braces are optional but recommended.
-
-The statement or statements in the then-statement and the else-statement can be of any kind, including another if statement nested inside the original if statement.
+The statement or statements in the if-statement and the else-statement can be of any kind, including other if-statements nested inside the original if-statement.
 [/slide]
 
 [slide hideTitle]
@@ -64,13 +62,13 @@ if (weather.equals("rainy")) {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-19-20-block-of-code-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-When we have **only one command** in the body of the **if construction**, we can **skip the curly brackets**, indicating the conditional operator body. 
+When we have **only one command** in the body of the **if construction**, we can **skip the curly brackets**
 
-When we want to execute **block of code** (group of commands), curly brackets are **required**. 
+When we want to execute a **block of code** (group of commands), the curly brackets are **required**. 
 
-In case we drop them, **only the first line** after the **if clause** will be executed.
+In case we omit them, **only the first line** after the **if clause** will be executed.
 
-Here is an example where dropping curly braces leads to confusion:
+Here is an example where dropping the curly brackets changes the order of execution completely:
 ```java live
 String color = "red";
 if (color.equals("red")) 
@@ -112,10 +110,10 @@ public class Program {
 [/code-editor]
 [task-description]
 # Description
-Write a program, which checks if a number is **even** or **odd**
+Create a program, which checks if a number is **even** or **odd**
 
-  * If it's even, print "**even**"
-  * If it's odd, print "**odd**"
+  * If it is even, print "**even**"
+  * If it is odd, print "**odd**"
 # Example
 
 | **Input** | **Output** | 
@@ -176,7 +174,7 @@ public class Program {
 [/code-editor]
 [task-description]
 # Description
-Write a program, which finds the greater of two numbers:
+Crete a program, which finds the greater of two numbers:
 
   * Read two **integers**
   * Find the greater number
