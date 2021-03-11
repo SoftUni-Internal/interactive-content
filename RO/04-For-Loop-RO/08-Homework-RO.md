@@ -628,6 +628,18 @@ Scrieți un program care:
 | 15 | |
 | 24 | |
 
+## Example 2
+| Input | Output |
+| --- | --- |
+| 2 | Waiting... |
+| 25 | |
+| 5 | |
+| 10 | |
+| 15 | |
+| 18 | |
+| 5 | |
+| 30 | |
+
 [/task-description]
 [tests]
 [test open]

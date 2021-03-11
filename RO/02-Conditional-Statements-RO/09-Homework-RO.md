@@ -684,12 +684,6 @@ Următoarele ar trebui să fie tipărite pe consolă:
 | 3 | |
 | | |
 
-### Comentarii
-- Struguri in total: 650 \* 2 = 1300
-- Vin = 40% \* 1300/2.5 = 208
-- 208 > 175 
-- 208 \- 175 = 33 de litre rămân \-> 11 litre pentru persoana
-
 ## Exemplu
 | **Input** | **Output** |
 | --- |  --- |
@@ -698,6 +692,20 @@ Următoarele ar trebui să fie tipărite pe consolă:
 | 425 | |
 | 4 | |
 | | |
+
+[hints]
+[hint]
+Calculați randamentul total în kilograme.
+Struguri in total: 650 \* 2 = 1300
+Vin = 40% \* 1300/2.5 = 208
+[/hint]
+[hint]
+Determinați vinul total produs și verificați dacă obiectivul a fost atins.
+Apoi tipăriți rezultatul corect.
+208 > 175 
+208 \- 175 = 33 de litre rămân \-> 11 litre pentru persoana
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -1255,14 +1263,6 @@ Imprima pe consolă o linie **unică**:
 | 1 | |
 | 1200 | |
 
-### Comentarii
-- ** Mâncare necesară pentru: **
-- **câine** = 2 zile \* 1 kg = **2** kg;
-- **pisica** = 2 zile \* 1 kg = **2** kg;
-- **broască-ţestoasă** = 2 zile \* 1200 g = **2.4** kg;
-- **Cantitatea totală de mâncare** = 2 + 2 + 2.4 = **6.4** kg;
-- **6.4 < 10** => 10 - 6.4 = **3.6** -> **3 kg de mâncare rămân**
-
 ## Exemplu
 | **Input**  | **Output** |
 | --- | --- |
@@ -1480,13 +1480,6 @@ Imprima pe consolă **una dintre ambele posibilități**:
 | 120 | |
 | 3 | |
 
-### Commentarii
-- Pentru 3 ore: Prima țeavă se umple cu 300 de  litri
-- A doua țeavă se umple cu 360 de litri
-- În total – 660 l < 1000 l => 66% sunt umplute
-- Prima țeavă a contribuit cu 45% (300 din  660 litri).
-- A doua țeavă a contribuit cu 54% (360 din 660 litri).
-
 ## Exemplu
 | **Input** | **Output** |
 | --- | --- |
@@ -1495,10 +1488,19 @@ Imprima pe consolă **una dintre ambele posibilități**:
 | 100 | |
 | 2.5 | |
 
-### Comentarii
-- Pentru 2.5 ore: Prima țeavă se umple cu 300 de  litri
-- A doua țeavă se umple cu 250 de litri
-- În total – 500 l > 100 l => 400 de litre sunt debordate.
+[hints]
+[hint]
+Pentru 2.5 ore: Prima țeavă se umple cu 300 de  litri
+A doua țeavă se umple cu 250 de litri
+În total – 500 l > 100 l => 400 de litre sunt debordate.
+Calculați capacitatea pentru fiecare țeavă.
+[/hint]
+[hint]
+Verificați dacă puterea totală din ambele conducte este suficientă pentru a umple piscina.
+Apoi tipăriți rezultatul corect.
+[/hint]
+
+[/hints]
 
 [/task-description]
 [tests]

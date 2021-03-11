@@ -1,7 +1,7 @@
 # Teme pentru acasă
 
 [slide hideTitle]
-# Problem[: Calculate Speed
+# Problemă: Calculate Speed
 [code-task title="Calculate Speed" taskId="pb-java-statements-calculate-speed" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -82,7 +82,7 @@ Scrieți un program pentru a calcula viteza în funcție de timp și distanță:
 [/slide]
 
 [slide hideTitle]
-# Problemă: Currency Converter
+# Problemă cu soluția: Currency Converter
 [code-task title="Currency Converter" taskId="pb-java-statements-currency-converter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -255,7 +255,7 @@ Formula pentru calcularea ariei unui triunghi este- Area = 1/2 * a * h
 [/slide]
 
 [slide hideTitle]
-# Problemă: Four Operations
+# Problemă cu soluția: Four Operations
 [code-task title="Four Operations" taskId="pb-java-statements-Four-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -524,7 +524,7 @@ Perimeter = 59.061942
 [/slide]
 
 [slide hideTitle]
-# Problem: Person Info
+# Problemă: Person Info
 [code-task title="Person Info" taskId="pb-java-statements-Person-Info" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -616,7 +616,7 @@ A B from C - D!
 [/slide]
 
 [slide hideTitle]
-# Problem: Town Info
+# Problemă: Town Info
 [code-task title="Town Info" taskId="pb-java-statements-Town-Info" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -786,7 +786,7 @@ Imprimați pe consolă aria calculată.
 
 
 [slide hideTitle]
-# Problem: Projects Creation
+# Problemă cu soluția: Projects Creation
 [code-task title="Project Creation" taskId="pb-java-statements-Projects-Creation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -944,7 +944,7 @@ The architect Gergana will need 66 hours to complete 22 project/s.
 
 
 [slide hideTitle]
-# Problem: Trapezoid Area
+# Problemă: Trapezoid Area
 [code-task title="Trapezoid Area" taskId="pb-java-statements-Trapezoid-Area" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1399,7 +1399,7 @@ Imprimați pe consolă: "\{total sum\} dollars". Rezultatul trebuie să fie form
 
 
 [slide hideTitle]
-# Problemă: Fishland
+# Problemă cu soluția: Fishland
 [code-task title="Fishland" taskId="pb-java-statements-Fishland" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

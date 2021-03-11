@@ -199,7 +199,7 @@ Note that if you enter an **invalid data type**, e.g. **"asfd"**, the program wi
 [slide hideTitle]
 # Problem with Solution: Greeting
 
-interactive-programming-basics-with-java-expressions-and-statements-20-problem-with-Solution-Greeting
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-20-21-problem-and-solution-greeting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Greeting" taskId="pb-java-expressions-greeting" executionStrategy="java-code" requiresInput]
 [code-editor language="java"]
