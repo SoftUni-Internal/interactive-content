@@ -21,7 +21,7 @@
 - Naming conventions
 
 **5. Dependency injection**
-- Why it is easier to test when we keep the dependency inversion principle
+- Why it is easier to test when we follow the dependency inversion principle
 
 **6. Mocking and Mock Objects**
 - What is mocking and how to use it
