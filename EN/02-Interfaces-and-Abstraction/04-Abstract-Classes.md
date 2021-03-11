@@ -5,9 +5,9 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-28-29-abstract-class-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Abstract classes in Java are similar to **interfaces** except they can contain default methods implementation.
+Abstract classes in Java are similar to **interfaces**, except they can contain default methods implementation.
 
-They cannot be **instanciated** because we **cannot create** objects of abstract classes.
+They cannot be **instantiated** because we **cannot create** objects of abstract classes.
 
 Our abstract class can have both **abstract** and **regular** methods.
 
@@ -20,16 +20,16 @@ abstract class Animal {
 }
 ```
 
-From this example above we see that is not possible to create an object of the Animal class.
+From this example, we see that it is impossible to create an object of the Animal class.
 
 ``` java
-Animal obj = new Animal(); // this will generate an error.
+Animal obj = new Animal(); // This will generate an error
 ```
 
-To access the abstract class, we must create another class and inherit it from there.
+To access the abstract class, we must create another one and inherit it from there.
 
 ``` java
-// This is subclass (inherit from Animal)
+// This is a subclass (inherited from Animal)
 class Cat extends Animal {
   public void makeSound() {
     // The body of makeSound() is provided here
@@ -55,11 +55,11 @@ class Main {
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-30-abstract-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Lets continue with **abstract methods**.
+Let us continue with **abstract methods**.
 
-**Abstract** methods in their nature are methods that do not have body.
+**Abstract** methods in their nature are methods that do not have a body.
 
-It is important to remember that if our class **contains** an abstract method, then we must declare it as **astract** class.
+It is important to remember that if our class **contains** an abstract method, we must declare it as an **abstract** class.
 
 Otherwise, it will generate an error.
 
@@ -71,16 +71,16 @@ class Device {
 } // Class should be abstract.
 ```
 
-As we already know **abstract** classes **cannot be** instanciated, but we can simply create `subclasses` from them.
+As we already know, **abstract** classes **cannot be** instantiated, but we can create `subclasses` from them.
 
-After that, we can **access** members of our abstract class using the object of the subclass.
+After that, we can **access** members of our abstract class using the subclass's object.
 
 ``` java
 abstract class Device {
 
   // method of abstract class
   public void call() {
-    System.out.println("Calling....");
+    System.out.println("Calling...");
   }
 }
 ```
@@ -102,16 +102,16 @@ class Main extends Device {
 **Output** will be:
 
 ```
-Calling....
+Calling...
 ```
 
 In the above example, we have created an abstract class named `Device`. 
 
 Our class contains a regular method `call`.
 
-Then, we have created the `Main` class which inherits the **abstract class**.
+Then, we have created the `Main` class, which inherits the **abstract class**.
 
-The `obj` is the object of the child class `Main`. 
+`obj` is the object of the child class `Main`. 
 
 We called the method of the abstract class using our object `obj`.
 
@@ -125,7 +125,7 @@ We called the method of the abstract class using our object `obj`.
 
 [task-description]
 # Description
-It is the future, you are the ruler of a totalitarian dystopian society inhabited by **citizens** and **robots**.
+It is the future - you are the ruler of a totalitarian dystopian society inhabited by **citizens** and **robots**.
 
 Since you are afraid of rebellions, you decide to implement strict control of who enters your city. 
 
@@ -142,7 +142,9 @@ After the "**End**" command, on the next line you will receive a single number r
 
 Аll citizens or robots whose **Id** ends with the specified digits must be detained.
 
-The output of your program should consist of all detained **Ids** each on a separate line (the order of printing does not matter).
+The output should consist of all detained **Ids**, each on a separate line.
+
+The order of printing does not matter.
 
 [image assetsSrc="interfaces-and-abstraction-example(9).png" /]
 
