@@ -628,8 +628,8 @@ Scrieți un program care:
 | 15 | |
 | 24 | |
 
-## Example 2
-| Input | Output |
+## Exemplu 2
+|  **Intrare** | **Ieșire** |
 | --- | --- |
 | 2 | Waiting... |
 | 25 | |
@@ -830,16 +830,12 @@ Imprimați pe consolă o singură linie. Suma trebuie formatată cu două cifre 
 | 50000 | Yes! He will live a carefree life and will have 13050.00 dollars left. |
 | 1802 | |
 
-### Comentarii
-- 1800 -> an par;
-     - Josh cheltuiește 12000 de dolari
-     - 50000 - 12000 = rămân 38000 de dolari
-- 1801 -> an impar
-     - cheltuiește 12000 + 19 \* 50 = 12000 + 950 = 12950 dolari
-     - 38000 - 12950 = rămân 25050 de dolari
-- 1802 -> an par
-     - el cheltuiește 12000 de dolari
-     - 25050 - 12000 = 13050 dolari rămân
+[hints]
+[hint]
+Stabiliți câți bani va cheltui Josh în fiecare an și apoi scădeți totalul de bani necesari din banii săi vechi.
+Apoi, tipăriți rezultatul corect
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -1250,12 +1246,6 @@ Imprimați pe consolă 2 linii:
 | 9 | |
 | 1 | |
 
-### Comentarii
-- Ziua 1: 7 pacienți tratați și 0 pacienți netratați pentru ziua respectivă
-- Ziua 2: 7 pacienți tratați și 20 de pacienți netratați pentru ziua respectivă
-- Ziua 3: Până în prezent, pacienții tratați erau 14 și cei netratați - 20 -> Se numește un nou medic -> 8 pacienți tratați și 1 pacient netratat pentru ziua respectivă
-- Ziua 4: 1 pacient tratat și 0 pacienți netratați pentru ziua respectivă
-- Total: 23 pacienți tratați și 21 pacienți netratați
 
 [/task-description]
 [tests]
@@ -1734,12 +1724,21 @@ Toate numerele trebuie formatate la a doua zecimală.
 | 2.44| |
 | 5| | 
 
-### Commentarii
-- Studenții cu nota 5 și mai mare – trei = 30% of 10
-- Între 4 și 4.99 – trei = 30% of 10
-- Între 3 și 3.99 – doi= 20% of 10
-- Mai mică decât 3 – doi= 20% of 10
-- Media: 3 + 2.99 + 5.68 + 3.01 + 4 + 4 + 6 + 4.50 + 2.44 + 5 = 40.62 / 10 = 4.062
+[hints]
+[hint]
+Obțineți cantitatea totală de studenți, apoi folosiți o buclă for, determinați câți elevi au note între:
+5 și mai mult
+ 
+4 și 4.99
+
+3 și 3.99
+
+Mai puțin decât 3
+[/hint]
+[hint]
+Finally, calculate the average grade and print the correct output.
+[/hint]
+[/hints]
 [/task-description]
 [tests]
 [test open]
