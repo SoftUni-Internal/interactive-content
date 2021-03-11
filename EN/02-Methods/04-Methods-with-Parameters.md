@@ -1,17 +1,17 @@
 [slide hideTitle]
 # Method Parameters
 
-Information can be **passed** to methods as parameters. 
+Information can be **passed** to methods as **parameters**. 
 
 Parameters act as **variables** inside the method.
 
-Parameters are specified after the method name, **inside the parentheses**.
+They are specified after the method name **inside the parentheses**.
 
-You can add as **many** parameters as you want, just **separate** them with a comma.
+You can add as **many** parameters as you want **separated** with a comma.
 
 The following example has a method that takes a **String** called **firstName** as a parameter.
 
-When the method is called, we pass the **firstName** to it, which is used inside the method to print the full name:
+When the method is called, we pass the parameter **firstName** to it, which is used inside the method to print the full name:
 
 ```java live no-template
 public class MyClass {
@@ -29,7 +29,7 @@ public class MyClass {
 
 You can pass zero or several parameters.
 
-You can pass parameters of different types.
+You can pass parameters of different types as well.
 
 Each parameter should be given a type followed by a name.
 
@@ -58,6 +58,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
+
 Create a method that checks whether a number is positive, negative or zero and prints the result to the console.
 
 ## Examples
@@ -400,9 +401,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that receives a **string** on the first line \(add, multiply, subtract, divide\) and on the next two lines receives **two numbers**.
+Create a program that receives a **string** on the first line \(add, multiply, subtract, divide\) and, on the next two lines, receives **two numbers**.
 
-Create four **methods** \(for each calculation\) and invoke the right one depending on the command.
+Create four **methods** \(for each calculation\) and invoke the corresponding method depending on the command.
 
 The method should also print the result \(needs to be void\)
 
