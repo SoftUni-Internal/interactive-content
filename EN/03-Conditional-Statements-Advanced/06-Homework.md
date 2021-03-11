@@ -1322,8 +1322,8 @@ If the point does NOT lie on a side:
 You can use one or more conditional **if** statements with logical operations. A point **{x, y}** lies on aside of a rectangle **{x1, y1} – {x2, y2}**, if one of the specified conditions is fulfilled:
 [/hint]
 [hint]
-- **x** equals **x1** or **x2** and at the same time **y** is between **y1** and **y2**
-- **y** equals **y1** or **y2** and at the same time **x** is between **x1** and **x2**
+**x** equals **x1** or **x2** and at the same time **y** is between **y1** and **y2**
+**y** equals **y1** or **y2** and at the same time **x** is between **x1** and **x2**
 [/hint]
 [hint]
 You can check the conditions above using one more complicated **if**-**else** construction or using few more simple conditional statements or **nested if**-**else statements.**
@@ -1812,6 +1812,9 @@ Print on the console a **single** line:
 [hints]
 [hint]
 Determine the discount for the fishermen and if there's any additional discount.
+In the summer fishing costs 4200$
+**11 fishermen take 15% discount** -> **4200 - 15% = 3570** $, their number is **odd** so they do **not** use **additional** discount.
+3000 <= 3570, hence they need 570.00 $ more
 [/hint]
 [hint]
 Print the correct output.
