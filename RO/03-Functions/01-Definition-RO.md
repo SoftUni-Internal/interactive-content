@@ -2,7 +2,8 @@
 
 [slide hideTitle]
 # Funcțiile în JavaScript
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-3-4-functions-in-javascript-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-3-4-functions-in-javascript-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 O funcție este un **subprogram** conceput pentru a efectua o anumită sarcină.
 
 Funcțiile sunt executate atunci când sunt apelate, ceea ce este cunoscut sub numele de **invocarea unei funcții.**
@@ -26,7 +27,7 @@ Funcțiile pot **returna și date**, ca **rezultatul lor**.
 
 [slide hideTitle]
 # De ce să Folosiți Funcțiile?
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-5-why-use-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-5-why-use-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Motivele pentru care trebuie folosite funcțiile sunt:
 - Împart problemele mari **în bucăți mici**

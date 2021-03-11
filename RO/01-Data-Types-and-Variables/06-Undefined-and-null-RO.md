@@ -2,7 +2,8 @@
 
 [slide hideTitle]
 # Undefined
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-30-31-undefined-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-30-31-undefined-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [image assetsSrc="Undefined-Null.png" /]
 
@@ -31,7 +32,8 @@ console.log(car);
 [slide hideTitle]
 
 # Null
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-32-null-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-32-null-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Nul este un tip de obiect, care poate fi utilizat pentru orice variabilă care deține un obiect pe care nu vrem să-l definim.
 
@@ -57,7 +59,9 @@ console.log(typeof(person));
 
 # Null și Undefined
 
-**Nul** este o valoare pe care o setăm și știm că nu este nimic în interior, adică setăm valoarea nulă în mod explicit.
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-33-null-and-undefined-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+**Null** este o valoare pe care o setăm și știm că nu este nimic în interior, adică setăm valoarea nulă în mod explicit.
 
 Nedefinit apare atunci când valoarea nu există sau este declarată, dar nu este setată la o valoare.
 

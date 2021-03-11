@@ -2,7 +2,8 @@
 
 [slide hideTitle]
 # Metode de Matrice
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-13-14-Array-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/02.JS-Fundamentals-Arrays/02.JS-Fundamentals-Arrays-13-14-Array-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Unele operații care funcționează cu matrice ar putea funcționa și cu valori asemănătoare matricei.
 
@@ -40,6 +41,7 @@ console.log(arr);
 [slide hideTitle]
 # Utilizare
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/02.JS-Fundamentals-Arrays/02.JS-Fundamentals-Arrays-15-Usage-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - `includes()`: Returnează `true` dacă matricea conține valoarea plasată în paranteze searchElement și "**false**" în cazul contrar
 

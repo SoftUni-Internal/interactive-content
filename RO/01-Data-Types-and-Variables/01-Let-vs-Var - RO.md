@@ -3,7 +3,8 @@
 [slide hideTitle]
 
 # Var și Let
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-3-4-let-vs-var-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-3-4-let-vs-var-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Tipurile diferite de date au **mărimi** diferite în memoria calculatorului.
 
@@ -72,6 +73,8 @@ Vă încurajăm să folosiți `let` când **declarați variabile**, pentru că a
 
 # Domeniul Variabilei  
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-5-6-variable-scope-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 Domeniul înseamnă **viața** variabilei sau locul unde variabila este **vizibilă**. 
 
@@ -129,6 +132,8 @@ Al patrulea tip de domeniu este **domeniul obiectului**, care este înrudit cu *
 [slide hideTitle]
 
 # Numirea Variabilelor
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-7-naming-variables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 Când creăm o variabilă, folosim `cammelCase`, ceea ce înseamnă că variabila începe cu o **literă mică** și fiecare cuvânt următor începe cu o **literă mare**.

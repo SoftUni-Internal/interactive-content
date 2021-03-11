@@ -3,7 +3,8 @@
 [slide hideTitle]
 # Ce reprezintă funcțiile săgeată?
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-27-28-arrow-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-27-28-arrow-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 Funcțiile săgeată `=>` au fost introduse cu [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript). 
 

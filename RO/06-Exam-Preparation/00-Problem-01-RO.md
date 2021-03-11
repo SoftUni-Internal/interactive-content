@@ -4,6 +4,8 @@
 
 # Array Modifier
 
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/06.JS-Fundamentals-ExamPrep-2/Array Modifiers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Array Modifier" taskId="js-fundamentals-examPreparation-2-Array-Modifier" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
