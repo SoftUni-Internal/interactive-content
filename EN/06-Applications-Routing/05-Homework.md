@@ -20,7 +20,7 @@ The example is styled using [Bootstrap](https://getbootstrap.com/).
 
 # App Structure
 
-- **Home Page**: show the relevant info, depending on the status of the user.
+- **Home Page**: show the relevant info, depending on the status of the user
 
 - **Catalog**: a list of all registered teams
 

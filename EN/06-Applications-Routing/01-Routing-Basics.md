@@ -53,11 +53,11 @@ To create that experience, SPAs use state from **internal** or **external** sour
 
 The internal state is **limited** to only one entry.
 
-We also have location-based **SPA**s, in which the location is always updating.
+We also have location-based **SPAs**, in which the location is always updating.
 
 That means that we can share a link and be sure that anyone that opens it will see the wanted page.
 
-Location-based SPAs need a special object called **Router**.
+Location-based **SPAs** need a special object called **Router**.
 
 [/slide]
 

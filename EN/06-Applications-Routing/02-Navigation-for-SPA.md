@@ -22,7 +22,7 @@ It gives the **user** a better **experience**.
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-17-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We use **hash-based** routing to "deep link" a section of a page.
+We use **hash-based** routing to "**deep link**" a section of a page.
 
 This type of navigation simulates the loading of different content.
 
@@ -151,7 +151,7 @@ This method takes three parameters.
 
 - The page **Title** of the new entry
 
-   - It is ignored by most of the browser nowadays
+   - it is ignored by most of the browser nowadays
 
 - The **URL** is the new history entry, and it must be from the **same origin** as the current URL
 
