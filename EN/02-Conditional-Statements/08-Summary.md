@@ -25,7 +25,7 @@ if (condition) {
 }
 ```
 
-- How to make Series of Checks: **if-else-if-else-if...**
+- How to perform Series of Checks: **if-else-if-else-if...**
 
 ```java
 if (condition) {
@@ -37,15 +37,15 @@ if (condition) {
 
 - Block and Variable Scope
 
-- How to debug code. Using Breakpoints
+- How to debug code. Breakpoints
 
-## In the next lesson you will learn:
+## In the next lesson, you will learn:
 
-- **Nested if-else** Statements
+- **Nested if-else** statements
 
 - Logical Operators: **&&, ||, !**
 
-- Switch-case
+- The Switch-case
 
 
 [/slide]
