@@ -55,7 +55,7 @@ class Main {
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-30-abstract-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Lets continue with **abstract methods**.
+Let us continue with **abstract methods**.
 
 **Abstract** methods in their nature are methods that do not have a body.
 
