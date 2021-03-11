@@ -1317,12 +1317,19 @@ If the point does NOT lie on a side:
 | 12 | |
 | -1 | |
 
-\* **Hint**: use one or more conditional **if** statements with logical operations. A point **{x, y}** lies on aside of a rectangle **{x1, y1} – {x2, y2}**, if one of the specified conditions is fulfilled:
-
+[hints]
+[hint]
+You can use one or more conditional **if** statements with logical operations. A point **{x, y}** lies on aside of a rectangle **{x1, y1} – {x2, y2}**, if one of the specified conditions is fulfilled:
+[/hint]
+[hint]
 - **x** equals **x1** or **x2** and at the same time **y** is between **y1** and **y2**
 - **y** equals **y1** or **y2** and at the same time **x** is between **x1** and **x2**
-
+[/hint]
+[hint]
 You can check the conditions above using one more complicated **if**-**else** construction or using few more simple conditional statements or **nested if**-**else statements.**
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
@@ -1736,7 +1743,7 @@ It's 11 degrees, get your Shirt and Moccasins.
 [/slide]
 
 [slide hideTitle]
-# Prolem: Fishing Boat
+# Problem: Fishing Boat
 [code-task title="Fishing Boat" taskId="pb-java-Conditional-Statements-A-Fishing-Boat" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1788,11 +1795,6 @@ Print on the console a **single** line:
 | Summer | |
 | 11 | |
 
-### Comments
-- In the summer fishing costs 4200$,
-- **11 fishermen take 15% discount** -> **4200 - 15% = 3570** $, their number is **odd** so they do **not** use **additional** discount.
-- 3000 <= 3570, hence they need 570.00 $ more
-
 ## Example
 | **Input** | **Output** |
 | --- | --- |
@@ -1806,6 +1808,15 @@ Print on the console a **single** line:
 | 3600 | Yes! You have 1035.00 dollars left. |
 | Spring | |
 | 6 | |
+
+[hints]
+[hint]
+Determine the discount for the fishermen and if there's any additional discount.
+[/hint]
+[hint]
+Print the correct output.
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -2055,13 +2066,6 @@ Print on the console a **single number** - the price of the flowers, **formatted
 | 8 | |
 | Spring | |
 | Y | |
-
-### Comments
-- **Price: 2\*2.00 + 4\*4.10 + 8\*2.50 = 40.40 $** 
-- **Holiday** 40.40 + **15%** = 46.46 $
-- **5% discount for more than 7 tulips during the spring** - 44.14
-- In total the flowers are 20 or less - there **isn't a discount**
-- **44.14 + 2 for arrangement = 46.14 $** 
 
 [/task-description]
 [tests]
