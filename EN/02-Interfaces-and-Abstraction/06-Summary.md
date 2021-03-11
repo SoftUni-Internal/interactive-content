@@ -5,11 +5,11 @@
 
 ## In this lesson you learned:
 
-- Inheritance and Interfaces
+- Inheritance and interfaces
 
-- How we achieve Abstraction
+- How to achieve abstraction
 
-- What are Interfaces
+- What interfaces are
 
 ``` java
 public interface Printable {
@@ -29,11 +29,11 @@ class Document implements Printable {
 }
 ```
 
-- Differences between `implement` and `extends`
+- The differences between `implement` and `extends`
 
 - `default` and `static` methods
 
-- What is the concept behind abstract classes
+- What the concept behind abstract classes is
 
 ``` java
 class Device {
@@ -64,13 +64,13 @@ class Main extends Device {
 }
 ```
 
-- Interfaces vs Abstract Classes overview
+- The differences between interfaces and abstract classes
 
-## In the next lesson you will learn:
+## In the next lesson, you will learn:
 
-- What is the concept behind `Polymorphism`
-
-- How we achieve `Polymorphism`
+- Polymorphism
+    * the concept behind it
+    * how to achieve polymorphism
 
 
 
