@@ -1702,7 +1702,7 @@ Submit your tests inside a `describe()` statement.
 [tests]
 [test open]
 [input]
-//\<minTestCount\>5\</minTestCount\> - specifies the minimum amount of tests your code should have.
+// \<minTestCount\>5\</minTestCount\> - specifies the minimum amount of tests your code should have.
 var PaymentPackage = function () \{\};
 [/input]
 [output]
