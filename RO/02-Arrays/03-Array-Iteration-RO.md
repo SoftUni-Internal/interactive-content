@@ -43,7 +43,7 @@ for (const car of cars) {
 [slide hideTitle]
 # Imprimați o matrice cu For-of
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/02.JS-Fundamentals-Arrays/02.JS-Fundamentals-Arrays-20-Printing-arrays-with-for-and-join-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/02.JS-Fundamentals-Arrays/02.JS-Fundamentals-Arrays-25-Printing-an-array-with-for-of-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ``` js live
 let arr = [1,2,3,4,5,6];
