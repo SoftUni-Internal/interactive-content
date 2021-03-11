@@ -191,11 +191,11 @@ The **ArtifactId** must be separated using hyphens.
 
 [image assetsSrc="Unit-Testing-Example(4).png" /]
 
-If everything is ok, you should see the following project structure.
+If everything is okay, you should see the following project structure.
 
 [image assetsSrc="Unit-Testing-Example(5).png" /]
 
-Copy the files provided and place them in a package inside the src/main/java folder.
+Copy the files provided and place them in a package inside the `src/main/java` folder.
 
 [image assetsSrc="Unit-Testing-Example(6).png" /]
 
@@ -210,7 +210,7 @@ Copy the files provided and place them in a package inside the src/main/java fol
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/07.Java-OOP-Advanced-Unit-Testing-Lab-Resources.zip) **for this task.**
 
 ## Description
-In the `test/java` folder, create a package called **rpg_tests.**
+In the `test/java` folder, create a package called `rpg_tests`.
 
 Create an `AxeTests` class.
 
