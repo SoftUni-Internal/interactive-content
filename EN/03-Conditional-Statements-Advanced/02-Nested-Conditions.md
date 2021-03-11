@@ -34,10 +34,6 @@ We are going to use **a few** `if-else` blocks.
 
 These blocks will be **nested**, so that by **the result** of the outer one, we are going to **define** which one of the **nested ones** to execute.
 
-The diagram below illustrates the process in detail:
-
-[image assetsSrc="01.Personal-titles-01.jpg" /] 
-
 After reading the input data from the console, the following program logic should be executed:
 ```java
 Scanner scanner = new Scanner(System.in);
