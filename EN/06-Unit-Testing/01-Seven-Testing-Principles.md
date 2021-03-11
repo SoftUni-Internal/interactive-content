@@ -54,7 +54,7 @@ The Pesticide Paradox states that repeating **the same tests** will eventually s
 
 We can overcome this problem by writing new tests and adding new test data.
 
-## 6.Testing shows the presence of defects:
+## 6. Testing shows the presence of defects:
 
 It is crucial to understand that even **after testing**, we cannot state that our product is **100% defect-free**.
 
