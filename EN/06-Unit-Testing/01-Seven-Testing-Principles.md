@@ -4,70 +4,70 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-3-10-seven-testing-principles-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-There are **fundamental** testing principles which helps the testing teams to make the process of testing software more effective.
+There are seven **fundamental** testing principles that make the process of testing software more efficient.
 
-Lets see what is the concept behind testing:
+Let us see what the concept behind testing is:
 
-## 1.Testing is context depedent:
+## 1. Testing is context-dependent
 
-Different kind of sites are tested differently.
+Different kinds of sites must be tested differently.
 
-For example: 
+**For example:**
 
-We can have different domains like **Banking**, **Marketing**, **Advertisement** and much more.
+We can have different domains like a **banking platform**,  a **marketing **,  or an **advertisement**, to name a few.
 
-Each of these domains will be tested differently based on their **requirements**, **functions**, **different techniques** and etc...
+Each of these domains will be tested differently based on their **requirements**, **functions**, **different techniques**, etc.
 
-The same goes for the software applications.
+The same goes for software applications.
 
-## 2.Exhaustive testing is impossible:
+## 2. Exhaustive testing is impossible
 
-Simply we cannot test everything. 
+Put simply - we cannot test everything. 
 
 We have almost **infinite** combinations of **input data**.
 
-Instead of this, we can test a **few combinations** based on **priority** using different techniques.
+Instead, we can test a **few combinations** based on **priority** using different techniques.
 
-Exhaustive testing will take unlimited efforts and most of those efforts are ineffective.
+Exhaustive testing will take unlimited efforts, and most of them are ineffective.
 
-It is recommended to test input data using different methods like **Boundary Value Analysis** or **Equivalence Partitioning**.
+It is widely endorsed to test input data using different methods like **Boundary Value Analysis** or **Equivalence Partitioning**.
 
-## 3.Defect Clustering:
+## 3. Defect Clustering
 
-Most of the defects that are found during **pre-release testing** are related to a small numbers of module.
+Most of the defects found during **pre-release testing** are related to a small number of modules.
 
-The reason behind is that the modules may be **too complex**. 
+The reason is that the modules may be **too complex**. 
 
-Coding related to such modules is complicated.
+Debugging such modules can be a complicated task.
 
-## 4.Early Testing:
+## 4. Early Testing
 
-The later a bug is found - the more it costs!
+The later a bug is found - the more it costs.
 
-The **costs** involved in fixing defects at the start of the projects are cheaper compared to those found during the later stages of testing.
+The **costs** involved in fixing defects at the start of a project are cheaper, compared to those found during the later stages of testing.
 
 [image assetsSrc="Unit-Testing-Example.png" /]
 
-## 5.Pesticide Paradox
+## 5. Pesticide Paradox
 
-The Pesticide Paradox in testing, states that repeating **the same tests** over and over again eventually will stop detecting new defects or bugs.
+The Pesticide Paradox states that repeating **the same tests** will eventually stop detecting new defects or bugs.
 
 We can overcome this problem by writing new tests and adding new test data.
 
-## 6.Testing shows presence of defects:
+## 6.Testing shows the presence of defects:
 
-It is important to understand that even **after testing** we cannot state that our product is **100% defect free**.
+It is crucial to understand that even **after testing**, we cannot state that our product is **100% defect-free**.
 
-However efficient testing techniques **reduces** the chance of undiscovered bugs/defects.
+However, efficient testing techniques **reduce** the chance of undiscovered bugs/defects.
 
-## 7.Absence-of-errors fallacy:
+## 7. Absence-Of-Errors Fallacy
 
-Sometimes our software is tested against wrong requirements.
+Sometimes our software is tested against the wrong requirements.
 
 Finding and fixing defects does not help when:
 
-- Our system built is unusable
+- The system built is practically unusable
 
-- When our software does not fulfill the users needs and expectations
+- When our software does not fulfill the user's needs and expectations
 
 [/slide]
