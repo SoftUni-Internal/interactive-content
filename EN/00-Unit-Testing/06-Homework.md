@@ -1619,7 +1619,7 @@ class PaymentPackage {
     }
 }
 ```
-
+## Functionality
 The above code defines a class that contains information about a payment package. 
 
 An instance of the class should support the following operations:
@@ -1687,6 +1687,15 @@ Package: Partnership Fee
 \- Value (VAT 20%): 8400
 Error: Active status must be a boolean
 
+## Your Task
+
+Using **Mocha** and **Chai** write JavaScript tests that test the full functionality of the **PaymentPackage** class.
+
+Ensure the instances of the **PaymentPackage** class have all the required functionality and validation. 
+
+## Submission
+
+Submit your tests inside a `describe()` statement.
 
 [/task-description]
 [code-io /]
@@ -1703,64 +1712,73 @@ Test Passed!
 [test open]
 [input]
 PaymentPackage = class PaymentPackage \{
-    constructor\(name, value\) \{
-        this\.name \= name;
-        this\.value \= value;
-        this\.VAT \= 20;      // Default value        
-        this\.active \= true; // Default value
+    constructor(name, value) \{
+        this.name = name;
+        this.value = value;
+        this.VAT = 20;      // Default value        
+        this.active = true; // Default value
     \}
-    get name\(\) \{
-        return this\.\_name;
+
+    get name() \{
+        return this._name;
     \}
-    set name\(newValue\) \{
-        if \(typeof newValue \!\=\= 'string'\) \{
-            throw new Error\('Name must be a non-empty string'\);
+
+    set name(newValue) \{
+        if (typeof newValue !== 'string') \{
+            throw new Error('Name must be a non-empty string');
         \}
-        if \(newValue\.length \=\=\= 0\) \{
-            throw new Error\('Name must be a non\-empty string'\);            
+        if (newValue.length === 0) \{
+            throw new Error('Name must be a non-empty string');            
         \}
-        this\.\_name \= newValue;
+        this._name = newValue;
     \}
-    get value\(\) \{
-        return this\.\_value;
+
+    get value() \{
+        return this._value;
     \}
+
     set value(newValue) \{
-        if \(typeof newValue !== 'number'\) \{
-            throw new Error\('Value must be a non-negative number'\);
+        if (typeof newValue !== 'number') \{
+            throw new Error('Value must be a non-negative number');
         \}
-        if \(newValue \< 0\) \{
-            throw new Error\('Value must be a non-negative number'\);            
+        if (newValue \< 0) \{
+            throw new Error('Value must be a non-negative number');            
         \}
-        this\.\_value \= newValue;
-    \}  
-    get VAT\(\) \{
-        return this\.\_VAT;
+        this._value = newValue;
     \}
-    set VAT\(newValue\) \{
-        if \(typeof newValue \!\=\= 'number'\) \{
-            throw new Error\('VAT must be a non-negative number'\);
-        \}
-        if \(newValue \< 0\) \{
-            throw new Error\('VAT must be a non-negative number'\);            
-        \}
-        this\.\_VAT \= newValue;
+    
+    get VAT() \{
+        return this._VAT;
     \}
-    get active\(\) \{
-        return this\.\_active;
-    \}
-    set active\(newValue\) \{
-        if \(typeof newValue \!\=\= 'boolean'\) \{
-            throw new Error\('Active status must be a boolean'\);
+
+    set VAT(newValue) \{
+        if (typeof newValue !== 'number') \{
+            throw new Error('VAT must be a non-negative number');
         \}
-        this\.\_active \= newValue;
+        if (newValue \< 0) \{
+            throw new Error('VAT must be a non-negative number');            
+        \}
+        this._VAT = newValue;
     \}
-    toString\(\) \{
-        const output \= \[
-            \`Package: \$\{this\.name\}\` \+ \(this\.active \=\=\= false \? ' \(inactive\)' \: ''),
-            \`\- Value \(excl\. VAT\)\: \$\{this\.value\}\`,
-            \`\- Value \(VAT \$\{this\.VAT\}\%\)\: \$\{this\.value \* \(1 \+ this\.VAT \/ 100\)\}\`
+
+    get active() \{
+        return this._active;
+    \}
+
+    set active(newValue) \{
+        if (typeof newValue !== 'boolean') \{
+            throw new Error('Active status must be a boolean');
+        \}
+        this._active = newValue;
+    \}
+
+    toString() \{
+        const output = \[
+            `Package: \\$\{this.name\}` + (this.active === false ? ' (inactive)' : ''),
+            `- Value (excl. VAT): \\$\{this.value\}`,
+            `- Value (VAT \\$\{this.VAT\}%): \\$\{this.value \* (1 + this.VAT / 100)\}`
         \];
-        return output\.join\('\\n'\);
+        return output.join('\n');
     \}
 \};
 [/input]
