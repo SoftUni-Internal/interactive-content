@@ -875,27 +875,27 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description 
-Write a program in which Martin solves problems for exams until he receives message from his trainer: "**Enough**". 
+Your friend should solves problems to prapare for his exams until he receives a message **Enough** from his trainer.
 
-Every time he solves a problem, he get a grade. **The program should ends either** Martin receives "Enough" command, **or obtain the number of poor grades**. 
+Every time he solves a problem, he get a grade. **The program should end** when Martin receives a message **Enough**, or when he reaches the limit of poor grades.
 
-A poor grade is a grade less or equal to 4.00.
+A poor grade is a grade less than or equal to **4.00**.
 
 ## Input
-- On the first line – **number of poor grades** – integer in range \[1…5\]
-- **After that repeatedly two lines**:
-  - **Name of a problem - text**
-  - **Grade** - integer in range \[2…6\]
+- **limit of poor grades** – integer in range \[1…5\]
+-  Until the program ends, we will receive the following 2 lines: 
+  - **Name of a problem** - a string value
+  - **Grade** - an integer in range \[2…6\]
 
 ## Output
-- If Martin reaches "**Enough**" command, print **3** lines:
+- If Martin receives the **Enough** command, print the following **3** lines:
   - "Average score: \{average grade\}"
   - "Number of problems: \{number of ALL problems\}"
   - "Last problem: \{last problem\'s name\}"
-- **If he gets the specified number of poor grades**:
+- If he reaches the **specified limit of poor grades**:
   - "You need a break, \{number poor grades\} poor grades."
 
-**The average grade should be formatted to the second decimal point.**
+The **average score** should be formatted to the second decimal point.
 
 ## Example
 | **Input** | **Output** |
@@ -913,11 +913,11 @@ A poor grade is a grade less or equal to 4.00.
 
 ### Comments
 - The number of allowed poor grades is 3.
-- First problem\'s name is Money, Martin\'s grade is 6.
-- Second problem - Story, grade - 4.
-- Third problem - Spring Time, grade - 5.
-- Fourth problem - Bus, grade - 6.
-- Next command is Enough, the program ends.
+- The first problem is called called **Money**. Martin has a grade equal to **6**.
+- The second problem is called **Story**. Martin has a grade equal to **4**.
+- The third problem is called **Spring Time**. Martin has a grade equal to **5**.
+- The fourth problem is called **Bus**. Martin has a grade equal to **6**.
+- Then, we receive **Enough**, which is the end of the program.
 - Average grade: 21 / 4 = 5.25
 - Number of solved problems: 4
 - Last problem: Bus
@@ -935,10 +935,10 @@ A poor grade is a grade less or equal to 4.00.
 
 ### Comments
 - The number of allowed poor grades is 2.
-- The first problem\'s name is Income, Martin\' grade is 3.
-- Second problem - Game Info, grade - 6.
-- Third problem - Best Player, grade - 4.
-- Martin reaches the number of allowed poor grades, it is time for break.
+- The first problem is called called **Income**. Martin has a grade equal to **3**.
+- The second problem is called **Game Info**. Martin has a grade equal to **6**.
+- The third problem is called **Best Player**. Martin has a grade equal to **4**.
+- Martin reaches the limit of allowed poor grades, so it is time for him to take a break.
 [/task-description]
 [tests]
 [test open]
@@ -1231,14 +1231,14 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Gaby wants to start healthy life and she sets a goal to walk **10000 steps** a **day**.
+Gaby wants to start a healthy lifestyle so that she sets a goal to walk **10000 steps** a **day**.
 
-Write a program **that reads from the console how many steps** Gaby walks every time she is out and **when she reaches the set goal**, print a message: 
-- "**Goal reached! Good job!**".
+Create a program that reads from the console **how many steps** Gaby walks every time she goes out, and **when she reaches the set goal**, prints the following message: 
+- **Goal reached! Good job!**.
 
-In case she wants to go home **before** reaching the goal, she will enter "**Going home**" command and the **steps** she had **walked** while she was **going home**. 
+In case she wants to go home **before** reaching the goal, she will enter the command **Going home** and the **steps she had walked while she was going back home**. 
 
-After that, if she didn\'t manage to reach her goal, you have to print the following massage on the console: 
+If she did not manage to reach her goal, you have to print out the following massage:
 - "\{difference in steps\} more steps to reach goal."
 
 ## Examples
