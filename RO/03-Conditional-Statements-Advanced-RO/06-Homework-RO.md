@@ -1800,10 +1800,13 @@ Imprimați pe consolă o linie **unică**:
 
 [hints]
 [hint]
-Determine the discount for the fishermen and if there's any additional discount.
+Determinați reducerea pentru pescari și dacă există vreo reducere suplimentară.
+Vara, pescuitul costă 4200 USD,
+**11 pescari beneficiază de 15% reducere** -> **4200 - 15% = 3570** $, numărul lor este **impar**, deci **nu** folosesc **reducere suplimentară**.
+3000 <= 3570, deci au nevoie de 570,00 $ mai mult
 [/hint]
 [hint]
-Print the correct output.
+Imprimați rezultatul corect.
 [/hint]
 [/hints]
 
