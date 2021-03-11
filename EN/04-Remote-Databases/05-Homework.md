@@ -19,7 +19,7 @@ The following REST services will be created automatically to access your data:
 - **Create a New Book**
    - endpoint: `https://[:projectId].firebaseio.com/books.json`
    - method: **POST**
-   - headers: Basic Authorization with user credentials and content-type `application\/json
+   - headers: Basic Authorization with user credentials and content-type application\/json
    - request body (JSON): `{"title":"…", "author":"…", "isbn":"…"}`
 
 - **Update a Book**
@@ -91,7 +91,7 @@ Create a new collection called "**students**".
 
 Each student has a/an:
 
-- **ID** - a **number**, non-empty
+- **Id** - a **number**, non-empty
 - **FirstName** - a **string**, non-empty
 - **LastName** - a **string**, non-empty
 - **FacultyNumber** - a **string of numbers**, non-empty
@@ -127,15 +127,15 @@ Write **REST services** for a simple Western game.
 
 Create a collection called "players". Each player having a **name**, **money**, and **bullets** to hold information about the players in the game.
 
-- **name** - a **string** representing the name of the current player
-- **money** - an **integer** number representing the current player's money
-- **bullets** - an **integer** number representing the current bullets of the player
+- **Name** - a **string** representing the name of the current player
+- **Money** - an **integer** number representing the current player's money
+- **Bullets** - an **integer** number representing the current bullets of the player
 
 ## HTML and JS
 
 The project skeleton contains an **HTML template** and **JS files**.
 
-The "loadCanvas.js" is a simple implementation for the game and your job is to **attach events** to all of the buttons and make the needed **AJAX requests**.
+The "**loadCanvas.js**" is a simple implementation for the game and your job is to **attach events** to all of the buttons and make the needed **AJAX requests**.
 
 When the page is loaded, a **GET** request should be sent to the server to get all of the players and load them in the div with ID **players**.
 
@@ -146,7 +146,7 @@ Whenever the `[Save]` button is pressed, the progress of the current player, if 
 Use a **PUT** request to update the data on the server:
 
 - The **canvas** and the `[Save]` and `[Reload]` buttons should be hidden
-- The **clearInterval** should be called on the "canvas.intervarId" property used for the main loop of the game
+- The **clearInterval** should be called on the "**canvas.intervarId**" property used for the main loop of the game
 
 Whenever the `[Reload]` button is pressed, the player's money should be **reduced by 60** and their bullets should be **set to 6**.
 
@@ -158,7 +158,7 @@ Pressing the `[Play]` button on a player should:
 
 - Call the `[Save]` button
 - Display the **canvas**, `[Save]` and `[Reload]` buttons
-- Call the `loadCanvas()` function from the "loadCanvas.js" file
+- Call the `loadCanvas()` function from the "**loadCanvas.js**" file
 - Pass to it the **new player** as an **object**, containing those properties name, money, and bullets
 
 When a player's `[Delete]` button is pressed, the player should be deleted, both from the HTML and the server.
