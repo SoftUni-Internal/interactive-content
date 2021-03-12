@@ -1,17 +1,19 @@
 [slide hideTitle]
-# Summary
+# Rezumat
 
-# In this lesson you learned:
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-29-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- A regular expression is a sequence of characters that forms a search pattern
+# În această lecție ați învățat:
+
+- Expresia regulată este o secvență de caractere care formează un șablon
 
 `[A-Z][a-z]+ [A-Z][a-z]+ // Matches "Ben Williams"`
 
-- We define special characters, operators and constructs for building complex patterns
+- Definim caractere speciale, operatori și construcții pentru construirea unor lablone complexe
 
 `[abc]+ // Matches any character that is either "a", "b", or "c"`
 
-- We can utilize character classes, groups, quantifiers and more
+- Putem folosi clase de caractere, grupruri, cuantificatori și altele
 
 ```js live
 let str = 'Hellooo World! Hello Again!';
@@ -20,7 +22,7 @@ let result = str.match(pattern);
 console.log(result);
 ```
 
-## In the next lesson, you will learn:
+## În lecția următoare veți învăța:
 
-- How to solve a practical exam
+- Cum să rezolvați un examen practic
 [/slide]

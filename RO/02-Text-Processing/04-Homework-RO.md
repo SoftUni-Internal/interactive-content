@@ -1,12 +1,12 @@
 # Teme de acasa
 
 [slide hideTitle]
-# Problem: Reveal Words
+# Problemă: Reveal Words
 [[code-task title="Reveal Words" taskId="js-fundamentals-pt2-text-processing-Reveal-Words" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function revealWords(firstStr, secondStr){
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -104,7 +104,7 @@ jdsakl kiro as pesho dsajkk goshho b hdsj stamatko
 [code-editor language=javascript]
 ```
 function modernTimesOfHashTag(input){
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -119,7 +119,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Intrarea va fi un **șir unic.**
+Intrarea va fi un ** singur șir.**
 
 Găsiți toate cuvintele speciale **începând cu** "**#**".
 
@@ -199,7 +199,7 @@ nnj
 [code-editor language=javascript]
 ```
 function extractFile(input){
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 
@@ -221,13 +221,13 @@ Sarcina dvs. este de a scădea **numele fișierului** și extensia acestuia.
 
 Feriți-vă de fișiere precum **template.bak.pptx**, deoarece **template.bak** ar trebui să fie numele fișierului, în timp ce pptx este extensia.
 
-## Example One
+## Exemplul unu
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | extractFile('C:\\\Internal\\\training-internal\\\Template.pptx') | File name: Template |
 || File extension: pptx |
 
-## Example Two
+## Exemplul doi
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | extractFile('C:\\\Projects\\\Data-Structures\\\LinkedList.cs') | File name: LinkedList |
@@ -311,7 +311,7 @@ File extension: docx
 [code-editor language=javascript]
 ```
 function stringSubstring(firstStr, secondStr){
-  // Scrieți codul dvs. aici
+  //  Write your code here
 }
 ```
 
@@ -338,7 +338,7 @@ După ce găsiți rezultatul, imprimați cuvântul și opriți programul.
 Dacă nu găsiți cuvântul print: "\{**word**\} **not found!**".
 
 
-## Examples
+## Exemple
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | stringSubstring('javascript', 'JavaScript is the best programming language') | javascript |
@@ -414,7 +414,7 @@ drashki not found!
 
 ```
 function replaceRepeatingChars(input){
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 
@@ -432,7 +432,7 @@ function adapter(input, code) {
 # Descriere
 Scrieți o funcție care primește un singur șir și **înlocuiește** orice secvență din **aceleași litere** cu o singură literă corespunzătoare.
 
-## Exemplus
+## Exemple
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | replaceRepeatingChars('aaaaabbbbbcdddeeeedssaa') | abcdedsa |
@@ -508,7 +508,7 @@ asdasdasd
 [code-editor language=javascript]
 ```
 function splitter(input){
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 
@@ -532,7 +532,7 @@ Sarcina dvs. aici este de a împărți **fiecare cuvânt separat de șir.**
 
 Imprimați-le împreună cu **o virgulă și un spațiu.**
 
-## Exemplus
+## Exemple
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | splitter('SplitMeIfYouCanHaHaYouCantOrYouCan') | Split, Me, If, You, Can, Ha, Ha, You, Cant, Or, You, Can |
@@ -618,7 +618,7 @@ Mhjbhb
 
 ```
 function cutAndReverse(input){
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 
@@ -635,19 +635,19 @@ function adapter(input, code) {
 [task-description]
 
 # Descriere
-Introducerea va fi un **șir unic.**
+Introducerea va fi un **un singur șir.**
 
 Scrieți o funcție care taie șirul dat **în jumătate** și inversați cele **două jumătăți.**
 
 Imprimați fiecare jumătate pe o **linie separată.**
 
-## Example One
+## Exemplul unu
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | cutAndReverse('tluciffiDsIsihTgnizamAoSsIsihT') | ThisIsDifficult|
 ||ThisIsSoAmazing|
 
-## Example Two
+## Exemplul doi
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | cutAndReverse('sihToDtnaCuoYteBIboJsihTtAdooGoSmI') | IBetYouCantDoThis|

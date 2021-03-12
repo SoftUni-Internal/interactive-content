@@ -1,27 +1,27 @@
-# Lesson Introduction
+# Introducere
 
 [slide hideTitle]
-# Lesson Content
+# Conținutul lecției
 
 
-## In this lesson you will learn:
+## În această lecție veți învăța:
 
-**1. Regular Expressions**
+**1. Expresii regulate**
 
-- Definition
-- Classes
+- Definiție
+- Clase
 
-**2. Quantifiers**
+**2. Cuantificatori**
 
-- Grouping
+- Grupare
 
 **3. Backreferences**
 
-- Numbered Capturing Group
+- Grup de capturare numerotat
 
-**4. Regular Expressions in JavaScript**
+**4. Expresiile regulate în JavaScript**
 
-- How to use
-- Built-in methods
+- Cum să le utilizați
+- Metode incorporate
 
 [/slide]

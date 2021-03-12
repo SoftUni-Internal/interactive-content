@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Ce sunt Clasele?
 
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-24-25-What-are-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 O **clasă** este ca un **plan** (sau șablon) pentru crearea de **obiecte**.
 
 Clasele oferă mijloace de **grupare de date și funcționalitate** împreună.
@@ -15,7 +17,9 @@ Instanțele de clasă pot avea, de asemenea, **metode** pentru **modificarea st�
 [slide hideTitle]
 # Declarație de clasă
 
-**Example:**
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-26-Class-declaration-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+**Exemplu:**
 
 ``` js
 class Student {
@@ -31,7 +35,7 @@ Pentru a declara o clasă, folosim cuvântul cheie `class` cu numele clasei, în
 
 [slide hideTitle]
 # Exemplu de Clasă
-
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-27-Class-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Cuvântul cheie `class` este folosit pentru a crea o clasă.
 
@@ -60,6 +64,8 @@ let student = new Student('Peter', 5.50);
 [slide hideTitle]
 # Funcțiile într-o Clasă
 
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-28-Functions-in-a-class-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Capacitatea de a modifica datele este realizată de funcții speciale care fac parte din clasă și se numesc metode.
 
 Clasele JavaScript acceptă atât metodele **de instanță**, cât și cele **statice**.
@@ -67,6 +73,10 @@ Clasele JavaScript acceptă atât metodele **de instanță**, cât și cele **st
 Metodele de instanță pot **accesa și modifica** datele instanței.
 
 Metodele de instanță pot apela alte metode de instanță, precum și orice metodă statică.
+
+Metodele statice ** se referă la clasa **, mai degrabă decât la o instanță a acesteia.
+
+Prin urmare, nu au ** acces ** la datele instanței.
 
 ``` js live
 class Dog {
@@ -84,7 +94,9 @@ dog.speak();
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Cats
+# Problemă cu soluție: Cats
+
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-31-Solution-Cat-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Cats" taskId="JS-fundamentals-2-Objects-and-Classes-lab-Cats" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -107,7 +119,7 @@ function adapter(input, code) {
 
 # Descriere
 
-Scrieți o funcție care primește o serie de șiruri în următorul format "\{**cat name**\} \{**age**\}".
+Scrieți o funcție care primește o matrice de șiruri în următorul format "\{**cat name**\} \{**age**\}".
 
 Creați o clasă Cat care primește în constructor numele și vârsta analizate din intrare.
 
@@ -115,24 +127,24 @@ De asemenea, ar trebui să aibă o funcție numită **meow** care va tipări "\{
 
 Pentru fiecare dintre șirurile furnizate trebuie să creați un obiect de pisică.
 
-# Example One
+# Exemplul unu
   |**Intrare**|**Ieșire** |
 | --- | --- |
 |cats(['Mellow 2', 'Tom 5'])| Mellow, age 2 says Meow|
 ||Tom, age 5 says Meow|
 
 
-# Example Two
+# Exemplul doi
   |**Intrare**|**Ieșire** |
 | --- | --- |
 |cats(['Millie 3', 'Lola 7'])| Millie, age 3 says Meow|
 ||Lola, age 7 says Meow|
 
-## Sugestii
+## Sfaturi
 
-* Creați o Clasa a pisicilor cu proprietăți și metode descrise mai sus
+* Creați o clasa Cat cu proprietățile și metodele descrise mai sus
 
-* Analizați datele de intrare
+* Parsați datele de intrare
 
 * Creați toate obiectele folosind constructorul clasei și datele de intrare analizate, stocați-le într-o matrice
 

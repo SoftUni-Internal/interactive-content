@@ -3,6 +3,7 @@
 [slide hideTitle]
 # Ce Este un Set?
 
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-32-33-what-is-a-set-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Obiectul Set vă permite să stocați **unice** valori de orice tip, indiferent dacă sunt valori primitive sau referințe la obiect.
 
@@ -14,7 +15,7 @@ Pentru a crea un set folosiți cuvântul constructor `new Set()`.
 
 În exemplul de mai jos avem o serie de numere. Observați că numărul 2 a fost repetat de două ori!
 
-Acum haideți să puenm rezultatul pe  `console.log`, pentru a vedea rezultatul. Toate intrările repetate au fost eliminate, deci rămân doar cu valori unice.
+Acum, haideți să puenm rezultatul pe  `console.log`, pentru a vedea rezultatul. Toate intrările repetate au fost eliminate, deci rămân doar cu valori unice.
 
 Rezultatul este `Set { 1, 2, 3, 4, 5 }`
 
@@ -31,7 +32,7 @@ set.add(10);
 console.log(set);
 ```
 
-La fel ca obiectele Map, seturile au metoda `.has()`. Această metodă se schimba în **true** sau **false**.
+La fel ca Map, seturile au metoda `.has()`. Această metodă se schimba în **true** sau **false**.
 
 ```js live
 let set = new Set([1, 2, 2, 3, 4, 5]);

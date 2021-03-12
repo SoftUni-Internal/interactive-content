@@ -3,10 +3,11 @@
 [slide hideTitle]
 # Ce este o Matrice Asociativă?
 
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-3-4-what-are-associative-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Limbajul JavaScript este construit pe o structură centrală de date - matricea asociativă.
 
-Matricele asociative din JavaScript sunt obiecte în care indexurile sunt înlocuite de chei definite de utilizator.
+Matricele asociative din JavaScript sunt obiecte în care indecșii sunt înlocuiți de chei definite de utilizator.
 
 Nu au o proprietate **lungime** ca matricea normală și nu pot fi iterate folosind o buclă.
 
@@ -24,7 +25,9 @@ Exemplu:
 [/slide]
 
 [slide hideTitle]
-# Declarație
+# Declarare
+
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-5-declaration-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 O matrice asociativa în JavaScript este doar un obiect, deci îl putem declara dinamic.
 
@@ -51,6 +54,8 @@ assocArr.five = 5;
 ```
 
 Iată cum declarăm și inițializăm **cheia** mai întâi și apoi o folosim pentru a-i atribui o **valoare**.
+
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-6-using-for-in-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ```js
 let key = "six";
@@ -81,7 +86,9 @@ for (let key in assocArr) {
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Phone Book
+# Problemă cu soluție: Phone Book
+
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-7-solution-phone-book-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Phone Book" taskId="js-fundamentals-pt2-Associative-Arrays-lab-Phone-Book" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -200,6 +207,8 @@ tyuhjk \-\> 0844565344
 [slide hideTitle]
 # Manipularea Matricelor Asociative
 
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-9-manipulating-associative-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Putem folosi următoarea expresie pentru a verifica dacă o **cheie** este **prezentă**.
 
 Utilizați metoda `.hasOwnProperty("key")`
@@ -230,7 +239,7 @@ assocArr.name = 'John Smith';
 delete assocArr.name;
 console.log(assocArr);
 ```
-Dacă încercați să accesați o cheie care nu există, atunci veți obține rezultatul **nedefinit**.
+Dacă încercați să accesați o cheie care nu există, atunci veți obține rezultatul **undefined**.
 
 Încercați să `console.log()` `assocArr.name` după ștergerea proprietății `name`.
 
@@ -267,7 +276,9 @@ for (let [key, value] of Object.entries(assocArr)) {
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Meetings
+# Problemă cu Soluție: Meetings
+
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-11-solution-meetings-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Meetings" taskId="js-fundamentals-pt2-Associative-Arrays-lab-Meetings" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -302,7 +313,7 @@ Dacă aceeași zi a săptămânii apare a doua oară, tipăriți mesajul **confl
 
 "**Conflict on** \$\{**day**\}**!**"
 
-La final, tipăriți o listă care conține toate programările de succes și conflictuale.
+La final, tipăriți o listă care conține toate programările de succes și cele conflictuale.
 
 ## Exemplu
 
@@ -439,6 +450,8 @@ Tuesday \-\> Ted
 [slide hideTitle]
 # Sortarea Matricelor Asociative
 
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-13-sorting-associative-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Obiectele **nu pot fi sortate**. Pentru a face acest lucru, trebuie să le transformăm în matrice.
 
 Apoi le putem **sorta**, **filtra** și **mapa** pe ele.
@@ -474,6 +487,9 @@ Utilizați metoda `.localeCompare()` pentru a sorta **șiruri** în JavaScript.
 [slide hideTitle]
 # Sortarea După Cheie
 
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-14-sorting-by-key-and-value-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+
 Pentru a **sorta după cheie**, utilizați **primul element** al fiecărei intrări.
 
 Aici `a[0]` este primul element și `b[0]`, al doilea element al funcției de sortare.
@@ -503,7 +519,9 @@ console.log(result);
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: AddressBook
+# Problemă cu soluție:  AddressBook
+
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-15-solution-adress-book-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Address Book" taskId="js-fundamentals-pt2-Associative-Arrays-lab-Address-Book" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -627,6 +645,8 @@ Ted \-\> Dayton Ave
 [slide hideTitle]
 
 # Structuri de Date Imbricate
+
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-18-nested-data-structures-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Valorile stocate în matricele asociative pot fi obiecte sau matrice.
 

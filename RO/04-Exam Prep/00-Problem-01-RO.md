@@ -1,13 +1,15 @@
-# Problem 1: Password Reset
+# Problema 1: Password Reset
 
 [slide hideTitle]
 # Password Reset
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/05.JS-Fundamentals-Exam-Prep/EN/password-reset-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 [code-task title="Password Reset" taskId="js-fundamentals-2-examPreparation-problem-1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function passwordReset(input, commands) {
-   // Scrieți codul dvs. aici
+   // Write your code here
 }
 ```
 [/code-editor]
@@ -34,14 +36,14 @@ Prinde doar caracterele la indici impari și le concatenează împreună pentru 
 
 * Comandă "**Cut** \{**index**\} \{**length**\}": 
 
-Taie un șir cu lungimea dată de cea originală, începând de la indexul specificat și îl imprimă pe consolă.
+Taie un subșir cu lungimea dată de cea originală, începând de la indexul specificat și îl imprimă pe consolă.
 
 Apoi tipărește noua parolă primară pe o nouă linie.
 
 Indicele și lungimea specificate vor fi întotdeauna valabile.
 
 * Comanda "**Substitute** \{**substring**\} \{**substitute**\}": 
-Dacă 'parola primară' conține șirul dat, înlocuiește toate aparițiile sale cu textul substitut dat și imprimă rezultatul.
+Dacă 'parola primară' conține subșirul dat, înlocuiește toate aparițiile sale cu textul substitut dat și imprimă rezultatul.
 
 Dacă nu, imprimați "**Nothing to replace!**".
 
@@ -49,13 +51,13 @@ Dacă nu, imprimați "**Nothing to replace!**".
 
 * Veți primi șiruri până când se primește comanda "**Done**".
 
-* Indexurile comenzii "**Cut** \{**index**\} \{**length**\}" vor fi întotdeauna valabile.
+* Indecșii comenzii "**Cut** \{**index**\} \{**length**\}" vor fi întotdeauna valabili.
 
 ## Ieșire
 
 * După primirea comenzii "**Done**", tipăriți: "**Your password is:** \{**password**\}"
 
-## Examples One
+## Exemplul unu
 
 **Intrare**
 passwordReset('Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr', ['TakeOdd', 'Cut 15 3', 'Substitute :: -', 'Substitute \| \^', 'Done'])
@@ -86,7 +88,7 @@ Luăm caracterele la indici impari 1, 3, 5 etc., iar rezultatul este:
 
 Șirul este: "icecream::hot::summer"
 
-Decupăm un sub-șir care începe de la indexul 15 cu lungimea 3, care este "**sum**", îl eliminăm din parola primară și îl imprimăm.
+Tăiem șubșirul care începe de la indexul 15 cu lungimea 3, care este "**sum**", îl eliminăm din parola primară și îl imprimăm.
 
 Apoi, pe o nouă linie imprimăm noua parolă primară care rezultă: "icecream::hot::mer"
 
@@ -104,7 +106,7 @@ Tipărim: "**Nothing to replace!**"
 
 În cele din urmă, după ce primim comanda "**Done**", imprimăm parola care rezultă în formatul corespunzător.
 
-## Examples Two
+## Exemplul doi
 
 **Intrare**
 passwordReset('up8rgoyg3r1atmlmpiunagt!-irs7!1fgulnnnqy', ['TakeOdd', 'Cut 18 2', 'Substitute ! \*\*\*', 'Substitute ? .!.', 'Done'])

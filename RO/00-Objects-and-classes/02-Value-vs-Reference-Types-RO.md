@@ -3,6 +3,7 @@
 [slide hideTitle]
 # Valoare vs. Tipuri de Referință
 
+
 [image assetsSrc="Value-vs-Reference-Types(1).gif" /]
 
 ## Tipuri de valori
@@ -13,7 +14,7 @@ Cele mai importante șapte tipuri de date sunt "**Boolean**", "**String**", "**N
 
 Ne referim la acestea ca **tipuri de date primitive.**
 
-O singură variabilă poate stoca doar un singur tip de date.
+O singură **variabilă** poate stoca doar **un singur tip de date**.
 
 Dacă un tip primitiv este atribuit unei variabile, am putea spune că această variabilă conține valoarea primitivă:
 
@@ -31,11 +32,11 @@ console.log(`Variable b = ${d}`);
 
 ## Tipuri de Referință
 
-Există trei tipuri comune de date de referință - **Obiecte**, **Matrice** și **Funcții**.
+Există **trei tipuri comune de date de referință** - **Obiecte**, **Matrice** și **Funcții**.
 
-Obiectele și matricele sunt „colecții” - o modalitate de a grupa mai multe puncte de date într-un singur pachet pe care îl putem transmite folosind accesul.
+**Obiectele** și**matricele** sunt „colecții” - o modalitate de a grupa mai multe puncte de date într-un singur pachet pe care îl putem transmite folosind accesul.
 
-Funcțiile sunt, de asemenea, obiecte, un tip special de obiecte numite: **obiecte funcționale.**
+**Funcțiile** sunt, de asemenea, obiecte, un tip special de obiecte numite: **obiecte funcționale.**
 
 Ele pot fi **invocate de câte ori avem nevoie.**
 
@@ -56,16 +57,16 @@ console.log(`First array value: ${array}`);
 console.log(`Second array value: ${array2}`);
 ```
 
-În acest exemplu creăm o matrice, numită "matrice" căreia îi atribuim valori.
+În acest exemplu creăm o matrice, numită `arrayOne` căreia îi atribuim valori.
 
 Această valoare este stocată în memoria și atașarea doar a referinței,însa este atașată si variabilei.
 
-Când atribuim `Matrice` celei de-a doua variabile `array2`, creăm o copie a referinței care indică memoria.
+Când atribuim `arrayOne` celei de-a doua variabile `arrayTwo`, creăm o copie a referinței care indică memoria.
 
 Din acest motiv, atunci când înregistrăm amândouă, obținem același rezultat `['a', 'b', 'c', 'd']`. 
  
-Când adăugăm șirul `e` la matrice făcând `array.push('e')` modificăm valoarea stocată în memorie.
+Când adăugăm șirul `e` la matrice apelând `array.push('e')` modificăm valoarea stocată în memorie.
  
-Deoarece `array2` este doar o copie a punctului de referință la aceeași valoare, obținem același rezultat atunci când `console.log` ambele variabile. 
+Deoarece `arrayTwo` este doar o copie a punctului de referință la aceeași valoare, obținem același rezultat atunci când `console.log` ambele variabile. 
 
 [/slide]

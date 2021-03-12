@@ -1,7 +1,9 @@
 # Expresii regulate în JavaScript
 
 [slide hideTitle]
-# Regular Expressions in JavaScript
+# Expresii regulate în JavaScript
+
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-16-17-Regex-in-JS-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 În JavaScript, putem construi o expresie regulată în două moduri:
@@ -25,6 +27,8 @@ let regExp = new RegExp('[A-Za-z]+', 'g');
 [slide hideTitle]
 # Validarea Şirului După Şablon
 
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-18-Validating-string-by-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Prima metodă pe care o vom analiza este `.test ()`. Pur și simplu determină dacă există o potrivire.
 
 În exemplul de mai jos testăm dacă avem o dată validă. Dacă facem acest lucru, rezultatul va fi **true**, altfel va fi **false**.
@@ -39,6 +43,8 @@ console.log(containsValidDate);
 
 [slide hideTitle]
 # Verificarea Pentru Potriviri 
+
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-19-Checking-for-matches-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Utilizați metoda `.match ()` pentru a verifica dacă există potriviri. 
 
@@ -59,7 +65,7 @@ console.log(matches[1]);
 [slide hideTitle]
 # Folosirea Metodei "Exec()"
 
-
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-20-Using-the-exce()-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Dacă potrivirea reușește, metoda `.exec ()` returnează o matrice cu proprietăți suplimentare \: "index" și "input".
 
@@ -86,6 +92,8 @@ while (result !== null) {
 [slide hideTitle]
 # Încloruirea cu Regex
 
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-21-Replacing-with-regex-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Putem folosi metoda `.replace (regex, stringReplacement)` cu expresii regulate.
 
 Înlocuiește toate șirurile care se potrivesc cu șablonul și su modelul de înlocuire furnizată.
@@ -102,11 +110,13 @@ console.log(result);
 [slide hideTitle]
 # Metoda MatchAll 
 
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-22-Match-all-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Metoda `.matchAll()` returnează un iterator al tuturor rezultatelor care se potrivesc unui șir cu o expresie regulată, inclusiv grupuri de capturare.
 
 Funcționează similar cu metoda `.exec()`. Singura diferență este că obținem toate potrivirile simultan într-o formă de matrice.
 
-Rezultatul este o serie de matrice, de aceea în acest exemplu folosim operatorul spread.
+Rezultatul este o matrice de matrice, de aceea în acest exemplu folosim operatorul spread.
 
 ```js live
 const regexp = /t(e)(st(\d?))/g;
@@ -122,6 +132,8 @@ console.log(array[1][0]);
 [slide hideTitle]
 # Împărțirea cu Regex
 
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-23-Splitting-with-regex-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Metoda `.split()` împarte textul după șablon și returnează o serie de șiruri.
 
 ```js live
@@ -135,7 +147,9 @@ console.log(result);
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Match Full Name
+# Problem[ cu soluție: Match Full Name
+
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-25-Solution-match-full-name-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Match Full Name" taskId="js-fundamentals-pt2-Regular-Expressions-lab-Match-Full-Name" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -299,7 +313,10 @@ Ivan Ivanov Ivan Ivanov
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Match Phone Number
+# Problemă cu soluție: Match Phone Number
+
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-27-Solution-Match-phone-number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 [code-task title="Match Phone Number" taskId="js-fundamentals-pt2-Regular-Expressions-Match-Phone-Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -326,7 +343,7 @@ function adapter(input, code) {
 
 Scrieți o expresie regulată pentru a se potrivi cu un număr de telefon valid de la Sofia.
 
-După ce găsiți toate telefoanele valide, imprimați-le pe consolă, separate printr-o virgulă și un spațiu `,`.
+După ce găsiți toate numerele de telefon valide, imprimați-le pe consolă, separate printr-o virgulă și un spațiu `,`.
 
 Un număr valid are următoarele caracteristici:
 - Începe cu **+359**
@@ -344,7 +361,7 @@ Folosiți o referință de grup pentru a realiza acest lucru.
 - Adăugați o limită de cuvânt la sfârșitul potrivirii pentru a evita potriviri parțiale (ultimul exemplu din partea dreaptă)
 - Asigurați-vă că înainte de semnul **+** există fie un spațiu, fie este începutul șirului
 
-## Exemplus
+## Exemple
 |**Intrare**|**Ieșire** |
 | --- | --- |
 | matchPhone('+359 2 222 2222,359-2-222-2222, +359/2/222/2222, +359-2 222 2222 +359 2-222-2222, +359-2-222-222, +359-2-222-22222 +359-2-222-2222') | \+359 2 222 2222\, \+359\-2\-222\-2222 |

@@ -3,12 +3,13 @@
 [slide hideTitle]
 
 # Fancy Barcodes
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/05.JS-Fundamentals-Exam-Prep/EN/barcodes-problem-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Fancy Barcodes" taskId="js-fundamentals-2-examPreparation-problem-2" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function fancyBarcodes(n, barcodes) {
-	// Scrieți codul dvs. aici
+	// Write your code here
 }
 ```
 [/code-editor]
@@ -23,13 +24,13 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Sarcina dvs. este de a determina dacă secvența dată de caractere este sau nu un cod de bare valid.
+Sarcina dvs. este de a determina dacă secvența dată de caractere este sau nu este un cod de bare valid.
 
 Fiecare linie nu trebuie să conțină altceva decât un cod de bare valid.
 
 Un cod de bare este valabil atunci când:
 
-* • Este, începe și se termină cu un semn "**la**" "**@**" urmat de unul sau mai multe semne hash "\#"
+* • Începe și se termină cu un semn "**@**" urmat de unul sau mai multe semne hash "\#"
 
 * Are cel puțin **6 caractere** (fără "**@**" sau "\#" din jur)
 
@@ -47,7 +48,7 @@ Apoi, va trebui să determinați "grupa de produse" a articolului din codul de b
 
 Dacă nu există cifre în codul de bare, grupul de produse implicit este "**00**".
 
-**Exemplu:** 
+**Exemple:** 
 
 "\@\#FreshFisH\@\#" \-\> product group: 00
 
@@ -69,7 +70,7 @@ Pentru fiecare cod de bare pe care îl procesați, trebuie să imprimați un mes
 
 * Dacă codul de bare este valid: "**Product group:** \{**product group**\}"
 
-## Examples One
+## Exemplul unu
 
 |**Intrare**|**Ieșire**|
 |---|---|
@@ -78,7 +79,7 @@ Pentru fiecare cod de bare pe care îl procesați, trebuie să imprimați un mes
 ||Product group\: 46|
 
 
-## Examples Two
+## Exemplul doi
 
 |**Intrare**|**Ieșire**|
 |---|---|

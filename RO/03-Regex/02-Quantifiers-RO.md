@@ -2,12 +2,14 @@
 
 [slide hideTitle]
 # Cuantificatori
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-9-10-Quantifiers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Cuantificatorii indică numărul de caractere sau de expresii care se potrivesc.
 
-Pentru exemplele de mai jos, avem nevoie de un **șir**, un **tipar** și metoda `.match()`.
+**Cuantificatorii** indică numărul de caractere sau de expresii care se potrivesc.
 
-Tiparul arată în felul următor: `/regularExpression/g`
+Pentru exemplele de mai jos, avem nevoie de un **șir**, un **șablon* și metoda `.match()`.
+
+Șablonul arată în felul următor: `/regularExpression/g`
 
 Modificatorul g este utilizat pentru a realiza o potrivire globală (pentru a găsi toate potrivirile, ca să nu se oprească după prima potrivire).
 
@@ -31,7 +33,7 @@ console.log(result);
 
 `+` corespunde elementului precedent o dată sau de mai multe ori.
 
-Exemplu: `Hellooo World! Hello Again!`
+**Exemplu**: `Hellooo World! Hello Again!`
 
 `o+` va genera o potrivire pentru "ooo", "o", "o".
 
@@ -75,9 +77,11 @@ console.log(result);
 [slide hideTitle]
 # Construcții de Grupuri
 
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-11-Grouping-Expressions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 O parte din șablon poate fi pusă în paranteze (...). 
 
-Acest concept poartă denumirea de "grup de capturare".
+Acest concept poartă denumirea de **grup de capturare**.
 
 Acesta are 2 efecte:
 
@@ -137,7 +141,7 @@ Putem utiliza `(?:subexpresie)` pentru a nu captura grupuri și pentru a le elim
 
 Când lucrăm cu expresii regulate complexe, ne pot fi foarte folositoare.
 
-Simbolul `|` din exemplu semnifică "sau logic".
+Simbolul `|` din exemplu semnifică  logica „or”.
 
 ```js live
 const regex = /(?:Jane|John|Alison)\s(.*?)\s(?:Smith|Smuth)/;
@@ -149,13 +153,14 @@ console.log(result[1]);
 [/slide]
 
 [slide hideTitle]
-# Referințe precedente
+# Backreferences
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-14-15-Backreferences-Match-Previous-Groups-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Un grup poate fi referențiat în șablon utilizând \N, unde N este numărul grupului.
 
 Pentru a clarifica motivul pentru care acest concept este folositor, să considerăm o cerință pentru a extrage o propoziție înconjurată de #.
 
-Primul grup din tipar este `(\#)` și se va potrivi pentru primul `#`. 
+Primul grup din șablon este `(\#)` și se va potrivi pentru primul `#`. 
 
 După aceea, potrivim majuscule, litere mici și spații cu `[A-Z,a-z\s]+`
 
@@ -173,16 +178,20 @@ console.log(result[0]);
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Match Dates
+# Problemă cu soluție: Match Dates
+
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-12S-Solution-Match-Dates-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 Scrieți o expresie regulată care extrage date dintr-un text
 Un format de dată validă: `dd-MMM-yyyy`
 Exemple: `12-Jun-1999, 3-Nov-1999`
 
-**Exemplu:**
 
-M-am născut pe `30-Dec-1994`.
-Tatăl meu s-a născut pe `30-Dec-1994`.
+MI am born on **30-Dec-1994**.
+
+My father is born on the **30-Dec-1994**.
+
 **01-July-2000** nu este o dată validă.
 
 - Format de dată validă: `30-Dec-1994` și `30-Dec-1994`
@@ -193,7 +202,10 @@ Tatăl meu s-a născut pe `30-Dec-1994`.
 
 
 [slide hideTitle]
-# Problem with Solution: Email Validation
+# Problemă cu soluție: Email Validation
+
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-13-Solution-email-validation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 Scrieți o expresie regulată care realizează o simplă **validare de email.**
 

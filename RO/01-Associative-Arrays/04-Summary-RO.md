@@ -17,15 +17,15 @@ let myMap = new Map([
 ```js
 let car = {type:'Tesla', model:'X', color:'Blue'};
 ```
-- Obiectele de tip **Map** au avantaje în unele cazuri:
+- **Map-urile** au avantaje în unele cazuri:
   - puteți utiliza **orice tip de date** ca **cheie**
   - sunt **iterabile**
   - au **o proprietate de dimensiune**
 
-## In the next lesson, you will learn:
+## În lecția următoare veți învăța:
 
-- Strings
-  - manipulating strings
-  - building and modifying strings
+- Șiruri
+  - manipularea șirurilor
+  - construirea și modificarea șirurilor
 
 [/slide]

@@ -1,7 +1,9 @@
-# Introducere Obiectului
+# Introducerea Obiectului
 
 [slide hideTitle]
-# Ce sunt Obiectele?
+# Ce reprezintă Obiectele?
+
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-3-4-What-are-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Obiectele din JavaScript, ca și în **multe alte limbaje de programare**, pot fi comparate cu obiectele din viața reală.
 
@@ -18,16 +20,18 @@ let person = { name:'Peter', age: 20 };
 console.log(person.name);
 ```
 
-În exemplul de mai sus, inițializăm un obiect cu numele `person`.
+În exemplul de mai sus, inițializăm un **obiect** cu numele `person`.
 
-Acest obiect are două proprietăți `name` și `age`.
+Acest obiect are **două proprietăți** `name` și `age`.
 
 Putem accesa valoarea proprietății cu numele clasei `.` nume de proprietate.
 
 [/slide]
 
 [slide hideTitle]
-# Definirea Obiectului 
+# Definirea Obiectului
+ 
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-5-Object-definition-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Putem defini un obiect gol și adăuga proprietățile ulterior:
 
@@ -51,11 +55,13 @@ person.hairColor = 'black';
 [slide hideTitle]
 # Metode de Obiecte
 
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-6-Methods-of-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Funcțiile dintr-un obiect JavaScript se numesc metode.
 
 Putem defini metode folosind mai multe sintaxe.
 
-Prima sintaxă:
+**Prima sintaxă:**
 
 ``` js
 let person = {
@@ -65,7 +71,7 @@ let person = {
 }
 ```
 
-Second syntax:
+**A doua sintaxă:**
 ```js 
 let person = {
   sayHello() {
@@ -74,7 +80,7 @@ let person = {
 }
 ```
 
-Putem adăuga o metodă a unui obiect deja definit:
+Putem **adăuga o metodă** a unui **obiect deja definit**:
 
 ```js
 let person = { name:'Peter', age: 20 };
@@ -86,8 +92,9 @@ person.sayHello = () => console.log('Hi, guys');
 [slide hideTitle]
 # Metode încorporate
 
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-7-Built-in-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Metode:
+Cele mai folosite metode încorporate de obiecte sunt următoarele:
 
 * `Object.entries()`: returnează o matrice de tupluri, care deține toate proprietățile și valorile lor
  
@@ -109,8 +116,10 @@ console.log(Object.values(cat));
 [/slide]
 
 [slide hideTitle]
-# Iterează Prin Chei
+# Iterarea Prin Chei
 
+
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-8-Iterate-through-keys-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Putem itera prin cheile unui obiect, folosind o buclă `for-in` pentru a itera peste proprietățile obiectului prin cheie:
 
@@ -147,11 +156,11 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Write a function that receives **three elements**, sets them to an **object** and **returns** the created object.
+Scrieți o funcție care primește **trei elemente**, le setează la un ** obiect ** și ** returnează ** obiectul creat.
 
-The input comes as 3 separate **strings** in the following order: **firstName**, **lastName**, **age**.
+Intrarea vine ca 3 șiruri ** separate ** în următoarea ordine: **: **firstName**, **lastName**, **age**.
 
-## Exemplus
+## Exemple
 |**Intrare**|**Ieșire** |
 | --- | --- |
 | personInfo('Peter','Pan','20') | \{ firstName: 'Peter', lastName: 'Pan', age: '20' \} |
@@ -224,7 +233,9 @@ personInfo('JO', 'PA', '22')
 
 
 [slide hideTitle]
-# Problemă: City
+# Problemă cu : City
+
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-12-Solution-City-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="City" taskId="JS-fundamentals-2-Objects-and-Classes-lab-City" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -246,18 +257,18 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-You will receive an **оbject** containing city information. 
+Veți primi un **оbiect** care conține informații despre oraș. 
 
-Loop through all the keys and print them with their values in this format:
+Buclați toate cheile și imprimați-le cu valorile lor în acest format:
 
 \{**key**\} **->** \{**value**\}
 
-The input will be in the following order: **name**, **area**, **population**, **country** and **postcode**.
+Intrarea trebuie să aibă următoarea ordine: **name**, **area**, **population**, **country** și **postcode**.
 
-For more information, see the examples below.
+Pentru mai multe informații, vedeți exemplele de mai jos.
 
 
-## Example One
+## Exemplul unu
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | city(\{ name: 'Bucharest', area: '228', population: '1830000', country: 'Romania', postCode: '010082' \})| name \-\> Bucharest |
@@ -266,7 +277,7 @@ For more information, see the examples below.
 ||country \-\> Romania|
 ||postCode \-\> 010082|
 
-## Example Two
+## Exemplul doi
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | city(\{ name: 'London', area: '1572', population: '9000000', country: 'England', postCode: '533537' \})| name \-\> London |

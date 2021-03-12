@@ -42,7 +42,7 @@ Fiecare dată valabilă are următoarele caracteristici:
 Folosiți o referință de grup pentru a verifica acest lucru.
 
 
-## Example One
+## Exemplul unu
 
 |**Intrare**|**Ieșire** |
 | --- | --- |
@@ -50,7 +50,7 @@ Folosiți o referință de grup pentru a verifica acest lucru.
 | | Day\: 10\, Month\: Nov\, Year\: 1934 |
 | | Day\: 25\, Month\: Dec\, Year\: 1937 |
 
-## Example Two
+## Exemplul doi
 |**Intrare**|**Ieșire** |
 | --- | --- |
 | matchDate('28-Mar-2000') | Day\: 28\, Month\: Mar\, Year\: 2000 |
@@ -250,7 +250,7 @@ La final, tipăriți fiecare mobilier cumpărat pe o linie separată în format:
 
 "**Total money spent:** \{**spent money**\}" formatată la a doua zecimală.
 
-## Example One
+## Exemplul unu
 
 |**Intrare**|**Ieșire** |
 | --- | --- |
@@ -259,7 +259,7 @@ La final, tipăriți fiecare mobilier cumpărat pe o linie separată în format:
 | | TV |
 | | Total money spent\: 2436\.69 |
 
-## Example Two
+## Exemplul doi
 
 |**Intrare**|**Ieșire** |
 | --- | --- |
@@ -508,6 +508,7 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
+
 # Descriere
 
 Să luăm o pauză și să vizităm barul de jocuri de la SoftUni.
@@ -538,7 +539,7 @@ Când primiți "**end of shift**" imprimați suma totală de bani pentru zi, rot
 
 "**Total income:** \{**income**\}"
 
-## Example One
+## Exemplul unu
 
 |**Intrare**|**Ieșire** |
 | --- | --- |
@@ -547,7 +548,7 @@ Când primiți "**end of shift**" imprimați suma totală de bani pentru zi, rot
 | | Maria\: Cola \- 2\.40 |
 | | Total income\: 24\.30 |
 
-## Example Two
+## Exemplul doi
 
 |**Intrare**|**Ieșire** |
 | --- | --- |

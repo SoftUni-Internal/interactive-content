@@ -4,9 +4,9 @@
 
 ## În această lecție am învățat că:
 
-- **Strings** are an immutable series of **characters**
+- **Șirurile** sunt serii imuabile de **caractere**
 
-- They have built-in methods that we use to process them, some of them are
+- Acestea au metode incorporate pe care le folosim pentru a le procesa. Unele dintre acestea sunt:
 
    -  `concat()`
 
@@ -29,17 +29,17 @@
    let include = str.includes('John');
    ```
 
--  Most of the methods return a new string
+-  Majoritatea metodelor returnează un șir nou
 
-## In the next lesson, you will learn:
+## În lecția următoare veți învăța:
 
--  Regular Expressions
+-  Expresii regulate
 
-   -  regEx Syntax
+   -  sintaxa regEx 
 
-   -  quantifiers
+   -  cuantificatori
 
-   -  grouping
+   -  grupare
 
    -  backreferences
    

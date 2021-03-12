@@ -2,18 +2,20 @@
 
 [slide hideTitle]
 # Ce este JSON?
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-14-15-What-is-JSON--,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 JSON înseamnă **JavaScript Object Notation** și este un **format de informații bazat pe text** care urmează sintaxa obiectului JavaScript.
 
-JSON este **independent de limbă** și poate fi utilizat fără a depinde de JavaScript, chiar dacă este un **asemănător al sintaxei literale a obiectului JavaScript.**
+JSON este **independent de limbăj** și poate fi utilizat fără a depinde de JavaScript, chiar dacă este un **asemănător al sintaxei literale a obiectului JavaScript.**
 
 JSON este o metodă de stocare a datelor și informațiilor într-o abordare organizată și ușor de accesat. 
 
 [/slide]
 
 [slide hideTitle]
-# Utilizare JSON
+# Utilizarea JSON
 
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-16-JSON-usage-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Cu JSON putem **schimba date între un browser și un server.**
 
@@ -56,6 +58,7 @@ JSON folosește **text citibil de către om pentru a transmite date.**
 [slide hideTitle]
 # Metodele JSON
 
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-18-JSON-Methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Avem două metode JSON:
 
@@ -86,7 +89,9 @@ console.log(data);
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Convert to Object
+# Problemă cu Soluție: Convert to Object
+
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-21-Solution-Convert-to-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Convert to Object" taskId="JS-fundamentals-2-Objects-and-Classes-lab-Convert-to-Object" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -115,14 +120,14 @@ Iterați toate cheile și imprimați-le cu valorile lor în format:
 \{**key**\}**:** \{**value**\}
 
 
-## Example One
+## Exemplul unu
 |**Intrare**|**Ieșire** |
 | --- | --- |
 | convertToObject('\{"name": "George", "age": 40, "town": "Berlin"\}') | name: George |
 ||age: 40|
 ||town: Berlin|
 
-## Example Two
+## Exemplul doi
 
 |**Intrare**|**Ieșire** |
 | --- | --- |
@@ -188,7 +193,9 @@ town\: Erevan
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Convert to JSON
+# Problemă cu soluție: Convert to JSON
+
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-23-Solution-Convert-to-JSON-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Convert to JSON" taskId="JS-fundamentals-2-Objects-and-Classes-lab-Convert-to-JSON" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -210,15 +217,15 @@ function adapter(input, code) {
 [task-description]
 
 # Descriere
-Write a function that receives three strings and sets them to an **object**.
+Scrieți o funcție care primește trei șiruri și le transformă înrt-un **object**.
 
-The strings are **name**, **lastName**, and **hairColor**.
+Șirurile sunt **name**, **lastName** și **hairColor**.
 
-Convert the object to a JSON string and print it.
+Convertiți obiectul într-un șir JSON și îl imprimați.
 
-The input is provided as 3 single strings in the order stated above.
+Intrarea constă în  3 șiruri, în ordinea descrisă mai sus.
 
-## Exemplus
+## Exemple
 |**Intrare**|**Ieșire** |
 | --- | --- |
 | convertToJSON('George', 'Jones', 'Brown') | \{"name":"George", "lastName":"Jones", "hairColor":"Brown"\}|

@@ -1,16 +1,15 @@
-# Lesson Introduction
+# Introducere
 
 [slide hideTitle]
-# Lesson Content
+# Conținutul lecției
 
-## In this lesson you will learn:
+## În această leție veți învăța:
 
 **1. Matrice asociative**
 - Definiție
-- Repetare
+- Iterare
 - Manipulare
-
-**2. Hărți**
+**Map-uri**
 - Metode
 - Sortare
 

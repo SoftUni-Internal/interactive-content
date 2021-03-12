@@ -1,13 +1,15 @@
-# Problem 3: P!rates
+# Problema 3: P!rates
 
 [slide hideTitle]
 # P!rates
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/05.JS-Fundamentals-Exam-Prep/EN/pirates-problem-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 [code-task title="P!rates" taskId="js-fundamentals-2-examPreparation-problem-3" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function pirates(input) {
-	// Scrieți codul dvs. aici
+	// Write your code here
 }
 ```
 
@@ -80,7 +82,7 @@ Dacă nu mai sunt așezări de jefuit, tipăriți:
 
 * Numele orașelor date în cadrul evenimentelor vor fi întotdeauna orașe valabile care ar trebui să fie pe listă.
 
-## Examples One
+## Exemplul unu
 
 |**Intrare**|**Ieșire** |
 |---|---|
@@ -92,7 +94,7 @@ Dacă nu mai sunt așezări de jefuit, tipăriți:
 ||Santo Domingo \-\> Population: 240000 citizens, Gold: 810 kg|
 
 
-## Examples Two
+## Exemplul doi
 
 |**Intrare**|**Ieșire** |
 |---|---|

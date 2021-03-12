@@ -1,4 +1,4 @@
-# Teme de Acasa
+# Teme pentru Acasa
 
 [slide hideTitle]
 # Problemă: Employees
@@ -23,9 +23,9 @@ function adapter(input, code) {
 # Descriere
 Vi se cere să creați o listă de angajați și numerele lor personale.
 
-Veți primi o serie de șiruri.
+Veți primi o matrice de șiruri.
 
-Fiecare șir este un nume **de angajat** și pentru a **atribui un număr personal** trebuie să găsiți lungimea numelui (spații incluse).
+Fiecare șir este **un nume** de angajat și pentru a **atribui un număr personal** trebuie să găsiți lungimea numelui (spații incluse).
 
 Încercați să utilizați un obiect.
 
@@ -639,7 +639,7 @@ Următoarele "**n**" elemente vor fi datele melodiilor în următorul format:
 iar ultimul element va fi Listă de tipuri \/ "**all**".
 Imprimați doar numele melodiilor care apar din acea Listă de tipuri \/ Toate melodiile.
 
-# Examples One
+# Exemplul unu
  **Intrare** 
 songs([3,'favourite_DownTown_3:14','favourite_Kiss_4:16','favourite_Smooth Criminal_4:01','favourite'])
 **Ieșire**
@@ -647,13 +647,13 @@ DownTown
 Kiss 
 Smooth Criminal
 
-# Examples Two
+# Exemplul doi
 **Intrare** 
 songs([4,'favourite_DownTown_3:14','listenLater_Andalouse_3:24','favourite_In To The Night_3:58','favourite_Live It Up_3:48','listenLater']) 
 **Ieșire**
  Andalouse 
 
-# Examples Three
+# Exemplul trei
 **Intrare**
 songs([2, 'like_Replay_3:15','ban_Photoshop_3:48','all'])
 **Ieșire**

@@ -1,16 +1,15 @@
-# Lesson Introduction
+# Introducere
 
 [slide hideTitle]
-# Lesson Content
+# Conținutul lecției
 
+## În această lecție veți învăța:
 
-## In this lesson you will learn:
+**1. Ce reprezintă șirurile în JavaScript**
 
-**1. What strings in JavaScript are**
+-  O prezentare mai detaliată a șirurilor
 
--  A more in-depth view of strings
+**2. Cele mai folosite metode pentru manuipularea șirurilor**
 
-**2. The most used methods for manipulating strings**
-
--  Searching, splitting, trimming, and more
+-  Metodele search, split, trim și altele 
 [/slide]

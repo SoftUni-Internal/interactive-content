@@ -241,7 +241,7 @@ Scrieți o funcție care:
 
 Tipariți rezultatul cu toate numerele de mașină care se află în parcare **sortate în ordine crescătoare după numărul lor de înmatriculare**.
 
-## Example One
+## Exemplul unu
 | **Intrare** | **Ieșire**  |
 | --- | --- |
 | picolo(['IN, CA2844AA', 'IN, CA1234TA', 'OUT, CA2844AA', 'IN, CA9999TT', 'IN, CA2866HI', 'OUT, CA1234TA', 'IN, CA2844AA', 'OUT, CA2866HI', 'IN, CA9876HH', 'IN, CA2822UU']) | CA2822UU |
@@ -249,7 +249,7 @@ Tipariți rezultatul cu toate numerele de mașină care se află în parcare **s
 | | CA9876HH |
 | | CA9999TT |
 
-## Example Two
+## Exemplul doi
 
 | **Intrare** | **Ieșire**  |
 | --- | ---|
@@ -384,7 +384,7 @@ Când primiți comanda: 'PARTY', oaspeții încep să vină.
 
 Scoateți toți invitații care nu au venit la petrecere (**VIP-urile trebuie să fie primii**).
 
-## Example One
+## Exemplul unu
 
 | **Intrare** | **Ieșire**  |
 | --- | --- |
@@ -392,7 +392,7 @@ Scoateți toți invitații care nu au venit la petrecere (**VIP-urile trebuie s�
 | | 7IK9Yo0h   |
 | | tSzE5t0p   |
 
-## Example Two
+## Exemplul doi
 
 | **Intrare** | **Ieșire**  |
 | --- | --- |
@@ -689,7 +689,7 @@ Imprimați numele companiei și ID-ul fiecărui angajat în următorul format:
 - Intrarea este o **matrice de șiruri**, fiecare în format: "\{**companyName**\} \-\> \{**employeeId**\}"
 - Intrarea va fi întotdeauna valabilă
 
-## Example One
+## Exemplul unu
 
 | **Intrare** | **Ieșire**  |
 | --- | --- |
@@ -701,7 +701,7 @@ Imprimați numele companiei și ID-ul fiecărui angajat în următorul format:
 |                                                                                         | \-\- AA12345 |
 |                                                                                         | \-\- BB12345 |
 
-## Example Two
+## Exemplul doi
 
 | **Intrare** | **Ieșire**  |
 | --- | --- |
@@ -890,7 +890,7 @@ Sarcina dvs. este să colectați resursele și să le tiparitiți pe o nouă lin
 Cantitățile introduse vor fi în interval de "\[**1...2 000 000 000**\]"
 
 
-## Example One
+## Exemplul unu
 
 | **Intrare** | **Ieșire**  |
 | --- | --- |
@@ -898,7 +898,7 @@ Cantitățile introduse vor fi în interval de "\[**1...2 000 000 000**\]"
 |                                                   | Silver \-\> 10 |
 |                                                   | Copper \-\> 17 |
 
-## Example Two
+## Exemplul doi
 
 | **Intrare** | **Ieșire**  |
 | --- | --- |

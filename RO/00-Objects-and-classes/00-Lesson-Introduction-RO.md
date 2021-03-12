@@ -1,20 +1,20 @@
-# Lesson Introduction
+# Introducere
 [slide hideTitle]
 
-# Lesson Content
+# Conținutul lecției
 
 
-## In this lesson you will learn:
+## În această lecție veți învăța:
 
-**1. Objects**
-- What an object is
-- Properties and methods
+**1. Obiecte**
+- Ce reprezintă un obiect?
+- Proprietăți și metode
 
 **2. JSON**
-- JSON files overview
+- prezentare generală a fișierrelro JSON 
 
-**3. Classes**
-- What a class is
-- Classes overview and syntax
+**3. Clase**
+- Ce reprezintă o clasă?
+- Prezentarea generală și sintaxa claselor
 
 [/slide]

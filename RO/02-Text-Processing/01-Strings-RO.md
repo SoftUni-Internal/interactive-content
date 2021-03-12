@@ -1,7 +1,12 @@
-# Șir
+# Șiruri
 
 [slide hideTitle]
 # Ce Este un Șir
+
+[vimeo-video]
+[stream language="EN" videoId="489817383/8da2994345" default /]
+[stream language="RO" videoId="489817383/8da2994345"  /]
+[/video-vimeo]
 
 **Șirurile** sunt serii de **caractere.**
 
@@ -11,13 +16,13 @@ Sunt folosite pentru stocarea textului.
 
 Textul ar trebui să fie înfășurat în ghilimele, există trei tipuri care pot fi utilizate:
 
-- **Citate duble**
+- **Ghilimele duble**
 
 ```js
 let myString = "Hello !";
 ```
 
--  **Citate unice**
+-  **Ghilimele unice**
 
 ```js
 let myString = 'Hello !';
@@ -73,9 +78,14 @@ Aceasta va da ca rezultat de asemenea, `J`, deoarece cele două moduri sunt iden
 [/slide]
 
 [slide hideTitle]
-# Iterează Printr-un Șir: Demo
+# Iterarea Printr-un Șir: Demo
 
-Iterează printr-un șir folosind bucla `for-of`:
+[vimeo-video]
+[stream language="EN" videoId="489817402/1b82ef9f2e" default /]
+[stream language="RO" videoId="489817402/1b82ef9f2e"  /]
+[/video-vimeo]
+
+Iterăm printr-un șir folosind bucla `for-of`:
 
 ```js live
 let text = 'Hello, there!'
@@ -84,7 +94,7 @@ for(let el of text){
   console.log(el);
 }
 ```
-In this example, every character in `text` will be printed to the console.
+În acest exemplu, fiecare caracter în `text` va fi imprimat pe consolă.
 [/slide]
 
 [slide hideTitle]
@@ -111,7 +121,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Scrieți o funcție care primește un șir și imprimă caracterele sale pe linii separate.
+Scrieți o funcție care primește un **șir** și imprimă caracterele sale pe linii separate.
 
 ## Exemplu
 |**Intrare**|**Ieșire**|

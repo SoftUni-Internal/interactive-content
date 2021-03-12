@@ -7,7 +7,7 @@ Obiectul Map conține perechi cheie-valoare și păstrează **ordinea originală
 
 Atât obiectele, cât și valorile primitive pot fi utilizate fie ca cheie, fie ca valoare.
 
-O buclă for-of returnează o matrice de `[key, value]` pentru fiecare iterație, atunci când este utilizată pe o hartă.
+O buclă for-of returnează o matrice de `[key, value]` pentru fiecare iterație, atunci când este utilizată pe un map.
 
 Obiectele JavaScript pure sunt ca niște Hărți, deoarece ambele vă permit să:
 1. Alocați valori cheilor
@@ -18,6 +18,7 @@ Obiectele JavaScript pure sunt ca niște Hărți, deoarece ambele vă permit să
 [slide hideTitle]
 # Adăugarea, Accesarea Elementelor
 
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-22-adding-and-accessing-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a adăuga o pereche cheie-valoare, folosiți metoda `.set()`.
 
@@ -55,6 +56,7 @@ console.log(map.size);
 [slide hideTitle]
 # Conține / Șterge
 
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-23-contains-and-delete-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a afla dacă un obiect map are o cheie dată, utilizați metoda `.has ()`.
 
@@ -95,12 +97,13 @@ console.log(map.size);
 [slide hideTitle]
 # Iteratori
 
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-24-iterators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Prin utilizarea iteratorilor, putem returna o matrice care conține perechi `[key-value]`.
 
 Pentru a returna o matrice de perechi `[key-value]` utilizați metoda `.entries()` pe un obiect map.
 
-Rezultatul va fi o serie de matrice `[ [ 1, 'one' ], [ 2, 'two' ] ]`
+Rezultatul va fi o matrice de matrice `[ [ 1, 'one' ], [ 2, 'two' ] ]`
 
 ```js live
 let map = new Map();
@@ -110,7 +113,7 @@ let entries = Array.from(map.entries());
 console.log(entries);
 ```
 
-Pentru a returna o serie de matrice utilizați: `.keys()`.
+Pentru a returna o matrice de matrice utilizați: `.keys()`.
 
 Rezultatul va fi după cum urmează `[1, 2]`.
 
@@ -121,7 +124,7 @@ map.set(2, "two");
 let entries = Array.from(map.keys());
 console.log(entries);
 ```
-Pentru a returna o serie de valori utilizați: `.values()`.
+Pentru a returna o matrice de valori, utilizați: `.values()`.
 
 Rezultatul va fi `[ 'one', 'two' ]`.
 
@@ -138,6 +141,7 @@ console.log(entries);
 [slide hideTitle]
 # Iterarea unui Obiect Map
 
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-25-iterating-a-map-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a tipări un obiect map, pur și simplu utilizați o buclă **for-of**
 
@@ -150,7 +154,7 @@ for (let [key, value] of map.entries()) {
 }
 ```
 
-Pentru a tipări cheile folosiți: `.keys()`.
+Pentru a tipări cheile, folosiți: `.keys()`.
 
 ```js live
 let map = new Map();
@@ -161,7 +165,7 @@ for (let key of map.keys()) {
 }
 ```
 
-Pentru a tipări valorile utilizați: `.values()`.
+Pentru a tipări valorile, utilizați: `.values()`.
 
 ```js live
 let map = new Map();
@@ -175,7 +179,10 @@ for (let values of map.values()) {
 
 [slide hideTitle]
 
-# Problem with Solution: Storage
+# Problemă cu soluție: Storage
+
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-28-solution-storage-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 [code-task title="Storage" taskId="js-fundamentals-pt2-Associative-Arrays-Storage" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -208,7 +215,7 @@ La final tipăriți toate articolele și suma acestora fără a le sorta.
 
 Intrarea vine ca o **matrice de șiruri**.
 
-Folosiți un obiect **Map()**.
+Folosiți o methodă **Map()**.
 
 ## Exemplu
 
@@ -288,7 +295,7 @@ coknfee \-\> 350
 [slide hideTitle]
 # Sortare Map
 
-
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-28-map-sorting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 Pentru a **sorta** un obiect Map, transformați-l mai întâi într-o **matrice**, apoi folosiți metoda `sort()`.
 
 Aici avem o funcție de comparare care definește ordinea de sortare.
@@ -320,7 +327,9 @@ for (let kvp of sorted) {
 
 [slide hideTitle]
 
-# Problem with Solution: School Grades
+# Problemă cu soluție: School Grades
+
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-29-solution-school-grades-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="School Grades" taskId="js-fundamentals-pt2-Associative-Arrays-School-Grades" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

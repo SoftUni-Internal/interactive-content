@@ -1,7 +1,12 @@
-# Manipularea Corzilor
+# Manipularea ;irurilor
 
 [slide hideTitle]
 # Concatenare
+
+[vimeo-video]
+[stream language="EN" videoId="489817452/a5c7ddac9c" default /]
+[stream language="RO" videoId="489817452/a5c7ddac9c"  /]
+[/video-vimeo]
 
 **Concatenarea** în JS se face cu operatorii: `+` și `+ =` sau prin metoda `concat()`.
 
@@ -39,6 +44,11 @@ Acest lucru se datorează faptului că `+` și `+=` și metoda `concat()` fac la
 
 [slide hideTitle]
 # Căutarea de Subșiruri
+
+[vimeo-video]
+[stream language="EN" videoId="489817455/1fa425821a" default /]
+[stream language="RO" videoId="489817455/1fa425821a"  /]
+[/video-vimeo]
 
 Pentru a **găsi** un subșir, putem folosi `indexOf()` sau `lastIndexOf()`.
 
@@ -91,6 +101,11 @@ Iar al doilea returnează `-1` pentru că nu găsește nimic.
 [slide hideTitle]
 # Extragerea de Subșiruri
 
+[vimeo-video]
+[stream language="EN" videoId="489817495/403a2d42fe" default /]
+[stream language="RO" videoId="489817495/403a2d42fe"  /]
+[/video-vimeo]
+
 Pentru a **extrage** un subșir, putem folosi `substring()`. Această metodă are doi parametri:
 
 - Primul este indicele de start
@@ -126,6 +141,11 @@ Asta pentru că nu i-am dat al doilea parametru, care este indicele **sfârșit*
 [slide hideTitle]
 # Operațiuni cu Şiruri
 
+[vimeo-video]
+[stream language="EN" videoId="489817576/c647cb8ef4" default /]
+[stream language="RO" videoId="489817576/c647cb8ef4"  /]
+[/video-vimeo]
+
 Dacă dorim să schimbăm direct o parte a unui șir, vom folosi `replace()`.
 
 La fel ca `substring()`, `replace()` nu **va modifica** șirul original, va **întoarce unul nou**.
@@ -134,14 +154,14 @@ Asta înseamnă că trebuie s-o atribuim unei variabile.
 
 **Înlocuire** este o metodă care necesită doi parametri:
 
-- Model
-- Inlocuire
+-  `pattern`
+-  `replacement`
 
-Pentru partea **model** putem folosi **Regex** sau **șir**.
+Pentru partea **`pattern`** putem folosi **Regex** sau **șir**.
 
-Și pentru **înlocuire** putem folosi `function()` sau un **șir**.
+Și pentru **`replacement`** putem folosi `function()` sau un **șir**.
 
-După ce se potrivește cu acest model, își va schimba doar prima apariție.
+După ce se potrivește cu acest pettern, își va schimba doar prima apariție.
 
 Iată un exemplu:
 
@@ -155,7 +175,12 @@ console.log(replacedStr);
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Substring
+# Problemă cu Soluție: Substring
+
+[vimeo-video]
+[stream language="EN" videoId="489817604/03cd593d45" default /]
+[stream language="RO" videoId="489817604/03cd593d45"  /]
+[/video-vimeo]
 
 [code-task title="Substring" taskId="js-fundamentals-pt2-text-processing-lab-Substring" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -246,13 +271,18 @@ JAko88/(()
 [slide hideTitle]
 # Împărțirea Unui Şir
 
+[vimeo-video]
+[stream language="EN" videoId="489816954/24e31211e5" default /]
+[stream language="RO" videoId="489816954/24e31211e5"  /]
+[/video-vimeo]
+
 Când vrem să separăm cuvintele într-un șir, folosim metoda `split()`.
 
 Împarte un **șir** într-o listă ordonată folosind un model \(separator\), care este primul parametru și returnează o **matrice**.
 
 Avem opțiunea de a adăuga un al doilea parametru, care este**limita**.
 
-Setează **limita** a **indexurilor** în **matricea finală**.
+Setează **limita** a **indecșilor** în **matricea finală**.
 
 Iată un exemplu despre utilizarea `split()`
 
@@ -274,13 +304,11 @@ Această metodă are doi parametri:
 - Șirul pe care îl căutăm
 - Poziția în care să începeți căutarea. Acesta este opțional
 
-Copiază **șirul** și caută-l în cel principal.
+Preia  **șirul** și îl caută în cel principal.
 
-Copiază șirul și caută-l în cel principal.
+Este similar cu `indexOf()`, dar dacă îl găsește, această metodă returnează `true` și `false` în cazul invers.
 
-Este similar cu `indexOf()`, dar dacă îl găsește, această metodă returnează `true` și `false` dacă nu.
-
-**Include** este sensibil la majuscule și minuscule.
+**`includes()`** este sensibil la majuscule și minuscule.
 
 De exemplu:
 
@@ -295,18 +323,23 @@ console.log(text.includes('js'));
 [slide hideTitle]
 # Repetarea într-un Șir
 
+[vimeo-video]
+[stream language="EN" videoId="489817061/4454e2aa76" default /]
+[stream language="RO" videoId="489817061/4454e2aa76"  /]
+[/video-vimeo]
+
 Când vrem să **repetăm** un **șir** în JS, folosim `repeat()`. Aceasta ne permite să facem un anumit număr de **copii** ale aceluiși **șir**.
 
 Primește doi parametri:
 
-- String
-- Count
+-  `string`
+-  `count`
 
 După ce este apelat la un anumit **șir**, **repetați** va lua **șirul** pe care l-am dat și îl va **înmulți** cu **numărul** pe care îl trecem la aceasta.
 
 După aceea, va **returna** un **șir concatenat** din toate copiile.
 
-Iată un exemplu despre cum funcționează **repetarea**:
+Iată un exemplu despre cum funcționează **`repeat()`**:
 
 ```js live
 let str = '*';
@@ -317,7 +350,13 @@ console.log(str.repeat(5));
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Censored Words
+# Problemă cu soluție: Censored Words
+
+[vimeo-video]
+[stream language="EN" videoId="489817109/c566f94bb4" default /]
+[stream language="RO" videoId="489817109/c566f94bb4"  /]
+[/video-vimeo]
+
 [code-task title="Censored Words" taskId="js-fundamentals-pt2-text-processing-Censored-Words" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
@@ -406,12 +445,16 @@ aaa \*\*\*\*\* a \*\*\*\*\* abv hey abc
 [/slide]
 
 [slide hideTitle]
-# Metoda trimming
+# Metoda trim
 
+[vimeo-video]
+[stream language="EN" videoId="489817107/ed4fac30e5" default /]
+[stream language="RO" videoId="489817107/ed4fac30e5"  /]
+[/video-vimeo]
 
 Pentru a **elimina spațiile albe** folosim metoda `trim()`.
 
-**Decuparea** va elimina toate **spațiile albe** dintr-un șir, de la ambele capete.
+**Tăierea** va elimina toate **spațiile albe** dintr-un șir, de la ambele capete.
 
 De aceea avem `trimStart()` și `trimEnd()`.
 
@@ -448,7 +491,13 @@ console.log(str.trimEnd());
 [/slide]
 
 [slide hideTitle]
-# Începe Cu sau se Termină Cu
+# Starts With or Ends With
+
+[vimeo-video]
+[stream language="EN" videoId="489817165/3eb9153a87" default /]
+[stream language="RO" videoId="489817165/3eb9153a87"  /]
+[/video-vimeo]
+
 
 Cu `startsWith()`, putem verifica dacă un șir începe cu un cuvânt specific, că vom trece la metodă ca parametru.
 
@@ -487,12 +536,17 @@ console.log(sentence.endsWith('John'));
 console.log(sentence.endsWith('John', 10));
 ```
 
-În primul exemplu,**console.logs**, va reveni la "**true**", dar în al doilea, va întoarce "**false**", deoarece șirul nu va fi în partea de căutare. 
+În ambele exemple, **console.logs**, va reveni la "**true**", dar în al doilea, va întoarce "**false**", deoarece șirul nu va fi în partea de căutare. 
 
 [/slide]
 
 [slide hideTitle]
 # Padding la Început și la Sfârșit
+
+[vimeo-video]
+[stream language="EN" videoId="489817167/90a1d0997d" default /]
+[stream language="RO" videoId="489817167/90a1d0997d"  /]
+[/video-vimeo]
 
 
 Dacă vrem să **adăugăm** un șir **de un anumit număr de timp** la **începutul** sau **la** sfârșitul al unui alt șir, putem folosi `padStart()` sau `padEnd()` metode.
@@ -523,6 +577,11 @@ console.log(padded);
 
 [slide hideTitle]
 # Problem with Solution: Count String Occurrences
+
+[vimeo-video]
+[stream language="EN" videoId="489817230/bda8e696ff" default /]
+[stream language="RO" videoId="489817230/bda8e696ff"  /]
+[/video-vimeo]
 
 [code-task title="Count String Occurrences" taskId="js-fundamentals-pt2-text-processing-Count-String-Occurrences" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
