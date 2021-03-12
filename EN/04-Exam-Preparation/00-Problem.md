@@ -84,7 +84,7 @@ On the next line, you will receive **the total amount of people** as a single in
 ## Example Three
 | **Input** | **Output** |
 | --- | --- |
-| 3 | Time needed: 4h. |
+| 3 | Time needed: 5h. |
 | 2 | |
 | 5 | |
 | 40 | |
@@ -122,7 +122,7 @@ Time needed\: 10h\.
 40
 [/input]
 [output]
-Time needed\: 4h\.
+Time needed\: 5h\.
 [/output]
 [/test]
 [test]
@@ -166,7 +166,7 @@ Time needed\: 11h\.
 40
 [/input]
 [output]
-Time needed\: 4h\.
+Time needed\: 5h\.
 [/output]
 [/test]
 [test]
