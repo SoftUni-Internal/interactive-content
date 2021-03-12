@@ -25,6 +25,8 @@ These can be either **float** or **double**:
 [slide hideTitle]
 # Floating-Point Numbers
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-20-floating-point-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 - **Float**: used for storing fractional numbers. Note that you should suffix the value with an `f`:
 
 ```java live
@@ -45,6 +47,8 @@ The **default value** of **double** is **0.0D**.
 
 [slide hideTitle]
 # PI Precision
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-21-PI-precision-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 There is a difference in precision when using **float** and **double**:
 
