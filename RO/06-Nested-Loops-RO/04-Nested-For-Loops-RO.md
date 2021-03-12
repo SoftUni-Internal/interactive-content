@@ -78,15 +78,27 @@ Scrieți un program care:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+5
+[/input]
+[output]
+*
+**
+***
+****
+*****
+[/output]
+[/test]
 [test]
 [input]
 4
 [/input]
 [output]
-\*
-\*\*
-\*\*\*
-\*\*\*\*
+*
+**
+***
+****
 [/output]
 [/test]
 [/tests]
@@ -94,4 +106,3 @@ Scrieți un program care:
 [/code-task]
 
 [/slide]
-

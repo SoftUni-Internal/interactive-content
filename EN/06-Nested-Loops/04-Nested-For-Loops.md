@@ -52,7 +52,7 @@ for (int i = 0; i < a; i++) {
 [slide hideTitle]
 # Problem with Solution: Triangle of Stars
 
-interactive-programming-basics-with-java-nested-loops-26-problem-triangle-of-stars
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-26-problem-and-solution-triangle-of-stars-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Triangle of Stars" taskId="java-basics-nested-loops-triangle-of-stars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -84,6 +84,18 @@ Write a program, which:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+5
+[/input]
+[output]
+*
+**
+***
+****
+*****
+[/output]
+[/test]
 [test]
 [input]
 4
