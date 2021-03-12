@@ -8,7 +8,7 @@ Acum, trebuie să înțelegem ce este o **buclă infinită** și când se produc
 
 Numim o **buclă infinită** bucla care **repetă infinit** performanța corpului său.
 
-Bucla infintă  `for` apare atunci când nu există **nicio condiție pentru a termina bucla**.
+Bucla infintă `for` apare atunci când nu există **nicio condiție pentru a termina bucla**.
 
 Iată cum arată o buclă `for` fără o condiție finală:
 

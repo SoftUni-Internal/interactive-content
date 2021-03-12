@@ -91,8 +91,8 @@ Scrieți un program care:
 * Citește **n** reprezentând numărul de numere de citit în continuare
 * Găsește numerele **max** și **min**
 * Le imprimă pe consolă în următorul format:
-   - Max number: \{max number\}
-   - Min number: \{min number\}
+   - "**Max number:** \{**max number**\}"
+   - "**Min number:** \{**min number**\}"
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -180,7 +180,7 @@ Scrieți un program care:
 
 * Citește **p - puterea** și **n - numărul**
 * Tipărește rezultatul lui n alimentat de p
-* Nu utilizați `Math.pow ()`
+* Nu utilizați `Math.pow()`
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -232,8 +232,8 @@ public class Program {
 Scrieți un program care:
 
 * Citește numărul **n** și **n perechi** de numere
-* Tipărește "Yes, value=\{sum\}", dacă **suma tuturor** perechilor este **aceeași**
-* **În caz contrar**, imprimă "No, maxdiff=\{diff\}"
+* Tipărește "**Yes, value=**\{**sum**\}", dacă **suma tuturor** perechilor este **aceeași**
+* **În caz contrar**, imprimă "**No, maxdiff=**\{**diff**\}"
 * diff este **diferența maximă** în suma dintre două perechi
 
 ## Exemplu
@@ -384,9 +384,9 @@ Scrieți un program care:
 
 * Citește **n** - număr care reprezintă cantitatea de numere de intrare
 * Citește **n numere întregi**
-    * Pentru fiecare linie **pară**  **se adaugă** numărul la rezultat
-    * Pentru fiecare linie  **impară**  **se scade** numărul din rezultat
-    * Numărarea începe de la 1.
+    * pentru fiecare linie **pară**  **se adaugă** numărul la rezultat
+    * pentru fiecare linie  **impară**  **se scade** numărul din rezultat
+    * numărarea începe de la 1
 * **Tipărește** rezultatul
 
 ## Exemplu
@@ -731,7 +731,7 @@ Scrieți un program care:
 
 * Citește **n**
 * Tipărește **multiplii n** în formatul "\{n\} x \{i\} = \{result\}"
-* Unde sunt i sunt numerele de la **1 până la 10**(**inclusiv**)
+* Unde sunt `i` sunt numerele de la **1 până la 10**(**inclusiv**)
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -820,9 +820,9 @@ Intrarea este citită de pe consolă și conține exact 2 linii:
 ## Ieșire
 Imprimați pe consolă o singură linie. Suma trebuie formatată cu două cifre zecimale:
 - Dacă banii sunt suficienți:
-     - "Yes! He will live a carefree life and will have \{N\} dollars left." - unde N sunt banii care vor rămâne
+     - "**Yes! He will live a carefree life and will have** \{**N**\} **dollars left.**" - unde N sunt banii care vor rămâne
 - Dacă banii NU sunt suficienți:
-     - "He will need \{М\} dollars to survive." - unde M sunt bani de care are nevoie
+     - "**He will need** \{**М**\} **dollars to survive.**" - unde M sunt bani de care are nevoie
 
 ## Exemplu
 | Intrare | Ieșire |
@@ -969,11 +969,11 @@ Intrarea este citită de pe consolă:
 
 # Ieșire
 Imprimați pe consolă 5 rânduri:
-- "Electricity: \{electricity for all months\} $" 
-- "Water: \{water for all months\} $" 
-- "Internet: \{Internet for all months\} $" 
-- "Other: \{Other for all months\} $" 
-- "Average: \{Average all costs per month\} $ "
+- "**Electricity:** \{**total cost for the entire period**\} **$**" 
+- "**Water:** \{**total cost for the entire period**\} **$**" 
+- "**Internet:** \{**total cost for the entire period**\} **$**" 
+- "**Other:** \{**total cost for the entire period**\} **$**" 
+- "**Average:** \{**total cost for the entire period**\} **$**"
 
 Toate facturile ar trebui să fie formatate la a doua cifră după punctul zecimal.
 
@@ -987,7 +987,7 @@ Toate facturile ar trebui să fie formatate la a doua cifră după punctul zecim
 | 93.53 | Average: 273.75 $ |
 | 63.22 | |
 
-### Comentarii
+## Comentarii
 Pentru 5 luni:
 - Electricitate -> 68.63 \+ 89.25 \+ 132.53 \+ 93.53 \+ 63.22 = 447.16$
 - Apă -> 5 luni \* 20$ = 100$
@@ -1234,8 +1234,8 @@ Intrarea este citită de pe consolă și conține:
 -În rândurile următoare (egal cu numărul de zile) - numărul de pacienți care sosesc pentru examinare pentru ziua curentă - un număr întreg în intervalul \[0... 10 000\]
 
 Imprimați pe consolă 2 linii:
-- Prima linie: "Treated patients: \{Number of patients reviewed\}." 
-- A doua linie: "Untreated patients: \{Number of unreviewed patients\}."
+- "**Treated patients:** \{**Number of received patients**\}." 
+- "**Untreated patients:** \{**Number of patients who could not be seen by a doctor**\}."
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -1545,7 +1545,7 @@ EvenMin=No,
 EvenMax=No
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 0
 [/input]
@@ -1739,6 +1739,7 @@ Mai puțin decât 3
 Finally, calculate the average grade and print the correct output.
 [/hint]
 [/hints]
+
 [/task-description]
 [tests]
 [test open]

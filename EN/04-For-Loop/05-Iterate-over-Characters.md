@@ -9,19 +9,19 @@
 
 **ASCII** stands for **American Standard Code for Information Interchange**. 
  
-Computers can only process numbers, so an **ASCII** code is the numerical representation of a character such as 'a' or '@'. 
+Computers can only process numbers, so an **ASCII** code is the numerical representation of a character such as "a" or "@". 
 
 Here is a part of the ASCII table:
 
 [image assetsSrc="04-for-loop-ascii.png" /]
 
-You can see the entire **ASCII Table** at: **http://www.asciitable.com**
+You can see the entire [ASCII Table](http://www.asciitable.com)
 
-The columns that you would most probably use for the purposes of this course are the **decimal** and **character** ones.
+The columns that you would most probably use for this course are the **decimal** and **character** ones.
 
 For example, the decimal value of the character **'a'** is **97** and the one corresponding to **'@'** is **64**.
 
-# Iterating over Characters
+## Iterating over Characters
 
 It is good to know that **for-loops** do not just work with numbers. 
 

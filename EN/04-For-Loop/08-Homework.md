@@ -23,7 +23,7 @@ Create a program, which:
 
 * Reads **n** - count of integers to be processed by the program
 * Reads **an n number of integers**
-* Finds and prints out the **gretest integer**
+* Finds and prints out the **greatest integer**
 
 ## Example
 | **Input** | **Output** 
@@ -94,8 +94,8 @@ Create a program, which:
 * Reads **n** representing the number of integers to read next
 * Finds the **max** and the **min integers**
 * Prints them to the console in the following format:
-   - Max number: \{max number\}
-   - Min number: \{min number\}
+   - "**Max number:** \{**max number**\}"
+   - "**Min number:** \{**min number**\}"
 
 ## Example
 | **Input** | **Output** 
@@ -181,7 +181,7 @@ public class Program {
 ## Description
 Create a program, which:
 
-* Reads **p – the exponent** and **n – the base**
+* Reads **p - the exponent** and **n - the base**
 * Prints the result of n to the power of p
 * Do not use `Math.pow()` method
 
@@ -235,8 +235,8 @@ public class Program {
 Create a program, which:
 
 * Reads number **n** and **n pairs** of numbers (Sum up each number pair and compare all air-sums with each other)
-* Prints "Yes, value=\{sum\}", if the **sum of all** pairs is **equal**
-* **Otherwise**, prints "No, maxdiff=\{diff\}"
+* Prints "**Yes, value=**\{**sum**\}", if the **sum of all** pairs is **equal**
+* **Otherwise**, prints "**No, maxdiff=**\{**diff**\}"
 * diff is the **max difference** in the sum between two pairs
 
 ## Example
@@ -390,9 +390,9 @@ Create a program, which:
 
 * Reads **n** - number representing the amount of following input numbers
 * Reads **n integers** 
-   * If the number is on an **even** input line, it **adds** the number to the final result
-   * For every entry on an**odd** input line, it **subtracts** the number from the final result
-   * The counting starts from 1.
+   * if the number is on an **even** input line, it **adds** the number to the final result
+   * for every entry on an**odd** input line, it **subtracts** the number from the final result
+   * the counting starts from 1.
 * **Prints out** the result
 
 ## Example
@@ -621,8 +621,12 @@ public class Program {
 ## Description
 Create a program, that calculates if there are enough passengers to fill all seats on a rollercoaster train.
 
-* The input will consist of **available places**, **minimum age for the passengers**, **number of people on the queue**. **The age of each passenger** will be specified as a separate number. 
+* The input will consist of **available places**, **minimum age for the passengers**, **number of people on the queue**
+
+**The age of each passenger** will be specified as a separate number. 
+
 * If all places are taken print out: **"The rollercoaster departures"**
+
 * In all other cases print out: **"Waiting..."**
 
 ## Example
@@ -809,14 +813,18 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Josh is currently 18 years old. He inherts an X amount of money (read from the console) and a time machine. 
+Josh is currently 18 years old. 
 
-He decides to return to year 1800 and rely only on the money he inherited, without having to work for a living.
+He inherits an X amount of money (read from the console) and a time machine. 
 
-Create a program that calculates whether Josh will be able to do that, starting from year 1800 and continuing up to a year that will be specified in the console input.
+He decides to return to the year 1800 and rely only on the money he inherited, without having to work for a living.
 
-- Each even year (1800, 1802, etc.) he will spend 12 000 dollars. 
-- Each odd year (1801, 1803, etc.) he will spend 12 000 + 50 \* \[his age during that year\].
+Create a program that calculates whether Josh will be able to do that, starting from the year 1800 and continuing up to a year that will be specified in the console input.
+
+- Each even year (1800, 1802, etc.) he will spend 12 000 dollars
+
+- Each odd year (1801, 1803, etc.) he will spend 12 000 + 50 \* \[his age during that year\]
+
 
 ## Input
 The input consists of 2 lines:
@@ -827,9 +835,9 @@ The input consists of 2 lines:
 Print out a single line. 
 (all numbers should be formatted up to the second decimal place)
 - If he has enough money:
-    - "Yes! He will live a carefree life and will have \{N\} dollars left." – where N is the remainder of his inheritance
+    - "**Yes! He will live a carefree life and will have** \{**N**\} **dollars left.**" - where N is the remainder of his inheritance
 - If not:
-    - "He will need \{М\} dollars to survive." - where M is the insufficient amount of money
+    - "**He will need** \{**М**\} **dollars to survive.**" - where M is the insufficient amount of money
 
 ## Example
 
@@ -959,14 +967,14 @@ public class Main {
 [task-description]
 ## Description
 
-Create a program to calculate the average living cost for a family over a period of time. 
+Create a program to calculate the average living cost for a family over some time. 
 
 Their monthly expenses are as follows:
 
-- electricity - every month the bill is different and will be read from the console
-- water - 20$
-- internet - 15$
-- other expenses - sum the bills for electricity, water and internet and add 20%
+- Electricity - every month the bill is different and will be read from the console
+- Water - 20$
+- Internet - 15$
+- Other expenses - a sum the bills for electricity, water and internet and add 20%
 
 For each bill, you need to calculate how much total is paid for all months.
 
@@ -979,17 +987,17 @@ The input is read from the console:
 
 # Output
 The output should consist of 5 lines: 
-- "Electricity: \{total cost for the entire period\} $" 
-- "Water: \{total cost for the entire period\} $" 
-- "Internet: \{total cost for the entire period\} $" 
-- "Other: \{total cost for the entire period\} $" 
-- "Average: \{total cost for the entire period\} $ "
+- "**Electricity:** \{**total cost for the entire period**\} **$**" 
+- "**Water:** \{**total cost for the entire period**\} **$**" 
+- "**Internet:** \{**total cost for the entire period**\} **$**" 
+- "**Other:** \{**total cost for the entire period**\} **$**" 
+- "**Average:** \{**total cost for the entire period**\} **$**"
 
 All bills should be formatted to the 2nd digit after the decimal point.
 
 ## Example
 
-| Input | Output |
+| **Input** | **Output** |
 | --- | --- |
 | 5 | Electricity: 447.16 $ |
 | 68.63 | Water: 100.00 $ |
@@ -998,7 +1006,7 @@ All bills should be formatted to the 2nd digit after the decimal point.
 | 93.53 | Average: 273.75 $ |
 | 63.22 | |
 
-### Comments
+## Comments
 For 5 months:
 - Electricity -> 68.63 \+ 89.25 \+ 132.53 \+ 93.53 \+ 63.22 = 447.16$
 - Water -> 5 months \* 20$ = 100$
@@ -1238,21 +1246,21 @@ Every third day the hospital makes calculations and if the number of unserviced 
 
 The appointment of a new doctor occurs before the intake of patients for that day. 
 
-Create a program that calculates and outputs the number of parients that recvceived service as well as the number of the ones tha could not be seen by a doctor in this hospital.
+Create a program that calculates and outputs the number of patients that received service as well as the number of the ones that could not be seen by a doctor in this hospital.
 
 ## Input
 The input contains: 
 
-- The number of days for which we need to perform calculations - an integer in range \[1... 1000\] 
-- On the following lines (equal to the number of days) – the number of patients arriving to the hospital that day - an integer in range \[0... 10 000\]
+- The number of days for which we need to perform calculations - an integer in range \[1 ... 1000\] 
+- On the following lines (equal to the number of days) – the number of patients arriving at the hospital that day - an integer in range \[0 ... 10 000\]
 
 Print out 2 lines:
-- "Treated patients: \{Number of received patients\}." 
-- "Untreated patients: \{Number of patients who could not be seen by a doctor\}."
+- "**Treated patients:** \{**Number of received patients**\}." 
+- "**Untreated patients:** \{**Number of patients who could not be seen by a doctor**\}."
 
 ## Example
 
-| Input | Output |
+| **Input** | **Output** |
 | --- | --- |
 | 4 | Treated patients: 23. |
 | 7 | Untreated patients: 21. |
@@ -1413,6 +1421,7 @@ Print the numbers on a single line, separated by a single space.
 | Input | | Output |
 | --- | --- | --- |
 | (no input) | | 7 17 27 ... 997 |
+
 [/task-description]
 [tests]
 [test open]
@@ -1450,9 +1459,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that reads an integer representing the amount of numbers that will be contained in the following input and calculates which the minimum and maximum values of of the numbers found at odd and even positions (counting from 1) are. 
+Create a program that reads an integer representing the number of numbers that will be contained in the following input and calculates which the minimum and maximum values of the numbers found at odd and even positions (counting from 1) is. 
 
-If no  minimum/maximum element can be identified print out "No".
+If no minimum/maximum element can be identified print out "No".
 
 ## Input
 - N numbers to be read - an integer \[0...100\]
@@ -1471,7 +1480,7 @@ The output should come in the following form:
 
 ## Example
 
-| Input | Output |   
+| **Input** | **Output** |
 | --- | --- |
 | 5 | OddSum=8.00, |
 | 3 | OddMin=-3.00, |
@@ -1480,7 +1489,7 @@ The output should come in the following form:
 | 11 | EvenMin=-2.00, |
 | -3 | EvenMax=11.00 |
 
-| Input | Output |
+| **Input** | **Output** |
 | --- | --- |
 | 0 | OddSum=0.00, |
 | | OddMin=No, |
@@ -1556,7 +1565,7 @@ EvenMin=No,
 EvenMax=No
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 0
 [/input]
@@ -1701,11 +1710,11 @@ Create a program to calculate statistics for some exam grades.
 The program receives the number of students that attended the exam and the grade of each one. 
 
 The program should print out the percentage of students holding a grade between 
-- 2.00 and 2.99; 
-- 3.00 and 3.99; 
-- 4.00 and 4.99; 
-- 5.00 or greater;
-- average grade for all participants
+- 2.00 and 2.99
+- 3.00 and 3.99
+- 4.00 and 4.99
+- 5.00 or greater
+- Average grade for all participants
 
 ## Input
 - The first input line - number of students - an integer in the range \[1 ... 1000\]
@@ -1714,15 +1723,15 @@ The program should print out the percentage of students holding a grade between
 ## Output
 Print 5 lines of output with the following information:
 - "Top students: \{percentage of students with grades 5.00 or grater\}%"
-- "Between 4.00 and 4.99: \{percentage of students with gradesbetween 4.00 and 4.99 inclusive\}%"
-- "Between 3.00 and 3.99: \{percentage of students with gradesbetween 3.00 and 3.99 inclusive\}%"
+- "Between 4.00 and 4.99: \{percentage of students with grades between 4.00 and 4.99 inclusive\}%"
+- "Between 3.00 and 3.99: \{percentage of students with grades between 3.00 and 3.99 inclusive\}%"
 - "Fail: \{percentage of students with grades less than 3.00\}%"
 - "Average: \{average grade\}"
 
 All numbers must be formatted to the second decimal place.
 
 ## Example
-| Input | Output |
+| **Input** | **Output** |
 | --- | --- | 
 | 10 | Top students: 30.00% |
 | 3.00 | Between 4.00 and 4.99: 30.00% |

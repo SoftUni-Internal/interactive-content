@@ -19,7 +19,7 @@ System.out.println(i);   // output: 4
 ```
 
 ### Operator de incrementare sufix
-Rezultatul lui `++x` este valoarea lui` x` după operație, așa cum arată exemplul următor:
+Rezultatul lui `++x` este valoarea lui `x` după operație, așa cum arată exemplul următor:
 ```java live
 double a = 1.5;
 System.out.println(a);   // output: 1.5

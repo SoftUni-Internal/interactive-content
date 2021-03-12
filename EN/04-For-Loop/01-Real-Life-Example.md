@@ -11,11 +11,11 @@ Let us imagine we are loading the dishwasher with the dishes from the sink.
 
 We know **exactly how many** dishes you are going to move from the sink to the dishwasher, as there is a visible number of dishes.
 
-We **won't stop** loading the dishwasher **until** we have completed the task.
+We **will not stop** loading the dishwasher **until** we have completed the task.
 
 So, we will pick up the **first one** and put it in the dishwasher.
 
-Then we'll pick up the **second one** and put it in the dishwasher and continue **repeating the same action** until we put all dishes in the dishwasher.
+Then we will pick up the **second one** and put it in the dishwasher and continue **repeating the same action** until we put all dishes in the dishwasher.
 
 The idea is that we have to repeat this particular action a **number** of times, which **we know beforehand**.
 [/slide]

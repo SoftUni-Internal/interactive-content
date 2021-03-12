@@ -3,7 +3,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/EN/interactive-programming-basics-with-java-for-loops-19-20-for-loop-with-step-and-demo -,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In this section we will look into to a particular and very important part of the **for-loop**, namely the **loop-step**.
+In this section, we will look into a particular and very important part of the **for-loop**, namely the **loop-step**.
 
 **The loop-step** is that **part** of the **for-loop** construction that specifies **how** to **increase** or **decrease** the value of the **llop variable**. 
 
@@ -28,7 +28,7 @@ for (int i = 0; i < 10; i += 2) {
 
 We might want to have a **decreasing step** - `i -=` and a step size. 
 
-In this case we should pay attention to the end condition to **avoid** creating an **infinite loop**.
+In this case, we should pay attention to the end condition to **avoid** creating an **infinite loop**.
 
 ```java live
 for (int i = 10; i >= 1; i--) {
@@ -120,7 +120,7 @@ public class Program {
 Create a program, which:
 
 * Reads an integer - number of **days before an exam**
-* On **each iteration** it prints: "\{currentDay\} days before the exam"
+* On **each iteration** it prints: "\{**currentDay**\} **days before the exam**"
 * Finally it prints: **"The exam has come"**
 
 ## Example

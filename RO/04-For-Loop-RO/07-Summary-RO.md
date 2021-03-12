@@ -5,9 +5,9 @@
 
 - Buclele for
   
-   * Prezentare generală a conținutului buclelor for
+   * prezentare generală a conținutului buclelor for
 
-   * Buclele for repetă un anumit bloc de cod
+   * buclele for repetă un anumit bloc de cod
 
 ```java live
 for (int i = 1; i <= 10; i++) {

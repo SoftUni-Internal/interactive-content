@@ -2,16 +2,18 @@
 # Bucla For cu Pas
 În această secțiune vom acorda atenție unei părți particulare și foarte importante a buclei `for`, și anume **pasul**.
 
-**Pasul** este acea **parte** a construcției buclei `for` care indică ** cu cât** trebuie **să crească** sau **să scadă** valoarea **variabilei sale** principale .
+**Pasul** este acea **parte** a construcției buclei `for` care indică **cu cât** trebuie **să crească** sau **să scadă** valoarea **variabilei sale** principale .
 
 Este declarat ultima în **structura** buclei for.
 
 Cel mai adesea, avem **o dimensiune de** `1` și, în acest caz, în loc să scriem `i += 1` sau `i -= 1`, putem folosi pentru o sintaxă mai scurtă `i++`sau operatorii `i--`.
+
 ```java live
 for (int i = 0; i < 10; i++) {
   System.out.println(i);
 }
 ```
+
 Dacă dorim ca pasul nostru să fie **diferit de 1**, atunci când **creștem**, vom folosi operatorul `i + =` + step size.
 
   Cu pasul 2, bucla ar arăta astfel:
@@ -41,7 +43,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -99,7 +101,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -109,7 +111,7 @@ public class Program {
 Scrieți un program care:
 
 * Citește un număr întreg - numărul de **zile înainte de un examen**
-* Pentru **fiecare zi** imprimă: "\{currentDay\} days before the exam"
+* Pentru **fiecare zi** imprimă: "\{**currentDay**\} **days before the exam**"
 * La final imprimă: **"The exam has come"**
 
 ## Exemplu

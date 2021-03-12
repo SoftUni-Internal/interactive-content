@@ -3,9 +3,9 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/EN/interactive-programming-basics-with-java-for-loops-14-for-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In programming we often need to repeat a block of commands multiple times. 
+In programming, we often need to repeat a block of commands multiple times. 
 
-In order to do that constructions called **loops** are used. 
+To do that constructions called **loops** are used. 
 
 Let us examine an example of a **for-loop** that passes through the numbers from 1 to 10 and prints them:
 ```java live
@@ -14,7 +14,7 @@ for (int i = 1; i <= 10; i += 1) {
 }
 ```
 
-We can get a beeter understanding of this algorithm from this use-case diagram:
+We can get a better understanding of this algorithm from this use-case diagram:
 
 [image assetsSrc="04-for-loop-use-case.png" /]
 
