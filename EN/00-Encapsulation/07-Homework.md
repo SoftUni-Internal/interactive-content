@@ -7,17 +7,21 @@
 
 [task-description]
 # Description
-You are given a geometric figure Box with fields length, width and height. 
+You are given a geometric figure - **box** with fields length, width, and height. 
 
-Model a class Box that can be instantiated by the same three parameters. 
+Model a class **Box** that can be instantiated by the same three parameters. 
 
-Expose to the outside world only methods for its surface area, lateral surface area and its volume.
-[Formulas](http://www.mathwords.com/r/rectangular_parallelepiped.htm).
+Expose to the outside only methods for its surface area, lateral surface area, and volume.
+
+You can find the necessary formulas [here](http://www.mathwords.com/r/rectangular_parallelepiped.htm).
 
 ## Input
-On the first three lines you will get the length, width and height. 
+On the first three lines, you will get the length, width, and height. 
 
-On the next three lines print the surface area, lateral surface area and the volume of the box.
+On the next three lines, print:
+- the surface area
+- lateral surface area
+- the volume of the box
 
 A box’s side should not be zero or a negative number. 
 
@@ -41,20 +45,23 @@ Make a private setter that performs data validation internally.
 | +calculateVolume (): double |
 
 
-## Examples
+# Examples
+
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | 2 | Width cannot be zero or negative. |
 | -3 |  |
 | 4 |  |
 
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | 2 | Surface Area - 52.00 |
 | 3 | Lateral Surface Area - 40.00 |
 | 4 | Volume – 24.00 |
-|  |  |
 
+## Example 3
 | **Input** | **Output** |
 | --- | --- |
 | 1.3 | Surface Area - 30.20 |
@@ -984,11 +991,11 @@ Test Passed!
 
 You should be familiar with encapsulation already. 
 
-For this problem, you’ll need to create class called **Chicken**. 
+For this problem, you will need to create a class called **Chicken**. 
 
-Chicken should contain several **fields**, a **constructor**, and several **methods**. 
+The Chicken class should contain several **fields**, a **constructor**, and several **methods**. 
 
-Your task is to encapsulate or hide anything that is not intended to be viewed or modified from outside the class.
+Your task is to encapsulate or hide anything that must not be viewed or modified from outside the class.
 
 | **Chicken** |
 | --- |
@@ -1004,11 +1011,11 @@ Your task is to encapsulate or hide anything that is not intended to be viewed o
 
 Chicken lives for **15 years**. 
 
-Chicken have **name** for sure, at least **1 symbo**l long. 
+Chicken has a  **name** that must be at least **1 symbol** long. 
 
-Chicken producing eggs:
-- First 6 years it produces 2 eggs per day [0 - 5]
-- Next 6 years it produces 1 egg per day [6 - 11]
+Chicken produces eggs as follows:
+- The first 6 years, it produces 2 eggs per day [0 - 5]
+- The next 6 years, it produces 1 egg per day [6 - 11]
 - And after that it produces 0.75 eggs per day
 
 ## Step 1. Encapsulate Fields
@@ -1019,42 +1026,50 @@ Leaving fields open for modification from outside the class is potentially dange
 Make all fields in the Chicken class private.
 
 In case the value inside a field is needed elsewhere, use **getters** to reveal it.
-## Step 2. Ensure Classes Have a Correct State
-Having **getters and setters** is useless if you don’t actually use them. 
 
-The Chicken constructor modifies the fields directly which is wrong when there are suitable setters available.
+## Step 2. Ensure Classes Have a Correct State
+Having **getters and setters** is pointless if you do not use them. 
+
+The Chicken constructor modifies the fields directly, which is wrong when there are suitable setters available.
 
 Modify the constructor to fix this issue.
+
 ## Step 3. Validate Data Properly
-Validate the chicken’s **name** (it cannot be null, empty or whitespace). 
+Validate the chicken’s **name** (it cannot be **null**, **empty**, or **whitespace**). 
 
-In case of **invalid name**, print exception message "**Name cannot be empty.**"
+In case of an **invalid name**, print the exception message "**Name cannot be empty.**"
 
-Validate the **age** properly, minimum and maximum age are provided, make use of them. 
+Validate the **age** properly - minimum and maximum age are provided, make use of them. 
 
 In case of **invalid age**, print exception message "**Age should be between 0 and 15.**"
+
 ## Step 4. Hide Internal Logic
-If a method is intended to be used only by descendant classes or internally to perform some action, there is no point in keeping them **public**.
+If a method is intended to be used only by descendant classes or to perform some action internally, there is no use in keeping them **public**.
 
 The **calculateProductPerDay()** method is used by the **productPerDay()** public method. 
 
-This means the method can safely be hidden inside the **Chicken** class by declaring it **private**.
-## Step 4. Submit Code to Judge
-Submit your code as a **zip** **file** in Judge. 
+This means the method can be safely hidden inside the **Chicken** class by declaring it  as **private**.
+
+## Step 4. Submit Your Code
+Submit your code as a **zip** file. 
 
 Make sure you have a **public Main** class with a **public static void main** method in it.
 
-## Examples
+# Examples
+
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | Lee | Chicken Lee (age 10) can produce 1.00 eggs per day. |
 | 10 |  |
 
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | Lee | Age should be between 0 and 15. |
 | 17 |  |
 
+## Example 3
 | **Input** | **Output** |
 | --- | --- |
 | George | Chicken George (age 6) can produce 1.00 eggs per day. |
@@ -1812,13 +1827,13 @@ Test Passed!
 # Description
 Create two classes: class **Person** and class **Product**. 
 
-Each person should have a **name**, **money** and a **bag of products**. 
+Each person should have a **name**, **money**, and a **bag of products**. 
 
 Each product should have **name** and **cost**. 
 
-Name cannot be an **empty** string. 
+The name cannot be an **empty** string. 
 
-Be careful about **white space** in name. 
+Be careful about **whitespaces** in the name. 
 
 Money and cost cannot be a **negative** number.
 
@@ -1828,7 +1843,7 @@ Money and cost cannot be a **negative** number.
 | -money:  double | -cost: double|
 | -products:  List(Product) |  |
 |  |  |
-| +Person (String ,  double) | +Product (String,  double) |
+| +Person (String,  double) | +Product (String,  double) |
 | -setName (String) : void | -setCost (double): void |
 | -setMoney (double) : void | -setName (String): void |
 | +buyProduct (Product) : void | +getName(): String |
@@ -1836,27 +1851,36 @@ Money and cost cannot be a **negative** number.
 
 Create a program in which each command corresponds to a person buying a product. 
 
-If the person can afford a product add it to his bag. 
+If the person can afford a product, add it to their bag. 
 
-If a person doesn’t have enough money, print an appropriate message:
-"{Person name} can't afford {Product name}"
+If a person does not have enough money, print an appropriate message:
+"\{**Person name**\} **can't afford** \{**Product name**\}"
 
 ## Input
-On the first two lines you are given all people and all products. 
+On the first two lines, you will receive all people and all products. 
 
 ## Output
-After all purchases print every person in the order of appearance and all products that he has bought also in order of appearance. 
+After all purchases, print every person in the order of appearance and all products that he has bought, also in order of appearance. 
 
-If nothing is bought, print the name of the person followed by "Nothing bought".
+If the person has not bought anything, print their name, followed by "Nothing bought".
 
-Read commands till you find line with "END" command. 
+Read commands until you find the line with an "END" command. 
 
-In case of invalid input (negative money exception message: "Money cannot be negative") or empty name: (empty name exception message "Name cannot be empty") break the program with an appropriate message. 
+In case of invalid input, break the program with an appropriate exception:
+
+- If the balance is negative:
+"Money cannot be negative"
+
+- If the name is empty: 
+"Name cannot be empty" 
+
 
 ## Hint
-Judge does not work with `isBlank()` method. You can use `trim().isEmpty()`.
+The `isBlank()` method may not work. You can use `trim().isEmpty()`.
 
-## Examples
+# Examples
+
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | Peter=11;George=4 | Peter bought Bread |
@@ -1867,6 +1891,7 @@ Judge does not work with `isBlank()` method. You can use `trim().isEmpty()`.
 | Peter Milk | George - Milk, Milk |
 | END |  |
 
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | Merry=0 | Merry can't afford Coffee |
@@ -1874,6 +1899,7 @@ Judge does not work with `isBlank()` method. You can use `trim().isEmpty()`.
 | Merry Coffee |  |
 | END |  |
 
+## Example 3
 | **Input** | **Output** |
 | --- | --- |
 | Gill=-3 | Money cannot be negative |
@@ -2822,9 +2848,9 @@ Test Passed!
 
 [task-description]
 # Description
-A Pizza is made of a dough and different toppings. 
+A pizza consists of **dough** and different **toppings**. 
 
-You should model a class **Pizza** which should have a **name**, **dough** and **toppings** as fields. 
+You should create a **Pizza** class with a **name**, **dough**, and **toppings** as fields. 
 
 Every type of ingredient should have its own class.
 
@@ -2844,11 +2870,11 @@ Every type of ingredient should have its own class.
 
 Every ingredient has **different fields**: 
 
-The dough can be **white** or **wholegrain** and in addition it can be **crispy**, **chewy** or **homemade**. 
+The dough can be **white** or **wholegrain**, and in addition it can be **crispy**, **chewy**, or **homemade**. 
 
 The toppings can be of type **meat**, **veggies**, **cheese** or **sauce**. 
 
-Every ingredient should have a **weight** in grams and a method for calculating its calories according its type. 
+Every ingredient should have a **weight** in grams and a method for calculating its calories according to its type. 
 
 Calories per gram are calculated through modifiers. 
 
@@ -2868,7 +2894,7 @@ Every ingredient has **2 calories per gram as a base** and a **modifier** that g
 
 **Your job** is to model the classes in such a way that they are **properly encapsulated**. 
 
-Provide a public method for every pizza that **calculates its calories according to the ingredients it has**.
+For every pizza, provide a public method that **calculates its calories according to the ingredients it has**.
 
 | **Dough Modifiers** | **Topping Modifiers** |
 | --- | --- |
@@ -2878,33 +2904,37 @@ Provide a public method for every pizza that **calculates its calories according
 | Chewy – 1.1 | Sauce – 0.9 |
 | Homemade – 1.0 |  |
 
-For example, white dough has a modifier of 1.5, a chewy dough has a modifier of 1.1, which means that a white chewy dough weighting 100 grams will have (2 * 100) * 1.5 * 1.1 = 330.00 total calories.
+**For example**:
 
-For example, meat has a modifier of 1.2, which means that a meat weighting 50 grams will have (2 * 50) * 1.2 = 120.00 total calories.
+- White dough has a modifier of 1.5, while chewy dough has a modifier of 1.1, which means that a white chewy dough weighing 100 grams will have (2 * 100) * 1.5 * 1.1 = 330.00 total calories
+
+- Meat has a modifier of 1.2, which means that a slice of meat weighing 50 grams will have (2 * 50) * 1.2 = 120.00 total calories
 
 ## Data Validation
 **Data Validation must be in the order of the Input Data**.
-- If invalid flour type or an invalid baking technique is given an exception is thrown with the message "**Invalid type of dough**".
-- If dough weight is outside of range (1..200) throw an exception with the message "**Dough weight should be in the range (1..200)**"
-- If topping is not one of the provided types throw an exception with the message "**Cannot place {name of invalid argument} on top of your pizza**"
-- If topping weight is outside of range (1..50) throw an exception with the message "**{Topping type name} weight should be in the range (1..50)**"
-- If name of the pizza is empty, only whitespace or longer than 15 symbols throw an exception with the message "**Pizza name should be between 1 and 15 symbols.**"
-- If number of topping is outside of range (0..10) throw an exception with the message "**Number of toppings should be in range (0..10)**"
+- If an invalid flour type or an invalid baking technique is given an exception is thrown with the message "**Invalid type of dough**".
+- If dough weight is outside of the range (1..200) throw an exception with the message "**Dough weight should be in the range (1..200)**"
+- If topping is not one of the provided types throw an exception with the message "**Cannot place**  \{**name of invalid argument**\} **on top of your pizza**"
+- If topping weight is outside of the range (1..50) throw an exception with the message "\{**Topping type name**\} **weight should be in the range (1..50)**"
+- If the name of the pizza is empty, only whitespace or longer than 15 symbols, throw an exception with the message "**Pizza name should be between 1 and 15 symbols.**"
+- If the number of topping is outside of the range (0..10) throw an exception with the message "**Number of toppings should be in range (0..10)**"
 
 ## Input
 **The input for a pizza consists of several lines:**
 - On the first line is the **pizza name** and the **number of toppings it has** in format:
-    - pizza **{pizzaName} {numberOfToppings}**
+    - pizza \{**pizzaName**\} \{**numberOfToppings**\}
 - On the second line you will get input for the **dough** in format:
-    - dough **{flourType} {bakingTechnique} {weightInGrams}**
+    - dough \{**flourType**\} \{**bakingTechnique**\} \{**weightInGrams**\}
 - On the next lines, you will receive every topping the pizza has, until an **"END"** command is given:
-    - topping **{toppingType} {weightInGrams}**
+    - topping \{**toppingType**\} \{**weightInGrams**\}
 
 ## Output
-If creation of the pizza was **successful** print on a single line the name of the pizza and the **total calories** it has, rounded to the second digit after the decimal point.
+If the creation of the pizza was **successful** print on a single line the name of the pizza and the **total calories** it has, rounded to the second digit after the decimal point.
 
 
-## Examples
+# Examples
+
+# Example 1
 | **Input** | **Output** |
 | --- | --- |
 | Pizza Meatless 2 | Meatless - 370.00 |
@@ -2913,6 +2943,7 @@ If creation of the pizza was **successful** print on a single line the name of t
 | Topping Cheese 50 |  |
 | END |  |
 
+# Example 2
 | **Input** | **Output** |
 | --- | --- |
 | Pizza European 20 | Number of toppings should be in range (0..10). |
@@ -2923,6 +2954,7 @@ If creation of the pizza was **successful** print on a single line the name of t
 | Topping Meat 10 |  |
 | END |  |
 
+# Example 3
 | **Input** | **Output** |
 | --- | --- |
 | Pizza European 2 | Invalid type of dough. |
@@ -2933,6 +2965,7 @@ If creation of the pizza was **successful** print on a single line the name of t
 | Topping Meat 10 |  |
 | END |  |
 
+# Example 4
 | **Input** | **Output** |
 | --- | --- |
 | Pizza European 2 | Cannot place Yellow Cheese on top of your pizza. |
@@ -2942,6 +2975,7 @@ If creation of the pizza was **successful** print on a single line the name of t
 | Topping Chicken 20 |  |
 | Topping Meat 10 |  |
 | END |  |
+
 
 [/task-description]
 [tests]
@@ -4147,7 +4181,7 @@ Test Passed!
 
 [task-description]
 # Description
-**A football team has variable number of players, a name and a rating.**
+A **football team** has a variable number of **players**, a **name**, and a **rating**.
 
 | **Team** |
 | --- |
@@ -4161,17 +4195,17 @@ Test Passed!
 | +removePlayer(String) : void |
 | +getRating() : double |
 
-A **player** has a **name** and **stats** which are the basis for his skill level. 
+A **player** has a **name** and **stats**, which are the basis for his skill level. 
 
 The stats a player has are **endurance**, **sprint**, **dribble**, **passing** and **shooting**. 
 
 Each stat can be in the range (0..100). 
 
-The **overall skill** level of a player is calculated as the **average** of his stats. 
+The **overall skill** level of a player equals the **average** of his stats. 
 
-Only the name of a player and his stats should be visible to all of the outside world. 
+Only the name of a player and his stats should be visible to the outside. 
 
-Everything else should be hidden.
+Everything else should be **hidden**.
 
 | **Player** | 
 | --- |
@@ -4192,33 +4226,34 @@ Everything else should be hidden.
 | -setShooting (int) : void |
 | +overallSkillLevel() : double |
 
-A **team** should expose a **name**, a **rating** (calculated by the average skill level of all players in the team) and **methods** for **adding** and **removing** players.
+A **team** should expose a **name**, a **rating** (calculated by the average skill level of all players in the team), and **methods** for **adding** and **removing** players.
 
-Your task is to model the team and the players following the proper principles of **Encapsulation**. 
+Your task is to model the team and the players following the proper principles of **encapsulation**. 
 
-Expose only the fields that needs to be visible and validate data appropriately.
+Expose only the fields that need to be visible and validate data appropriately.
 
 ## Input
 Your application will receive commands until the **"END"** command is given. 
 
 The command can be one of the following:
-- "**Team;{TeamName}**" – add a new team
-- "**Add;{TeamName};{PlayerName};{Endurance};{Sprint};{Dribble};{Passing};{Shooting}**" – add a new player to the team
-- "**Remove;{TeamName};{PlayerName}**" – remove the player from the team
-- "**Rating;{TeamName}**" – print the team rating, rounded to a closest integer
+- "**Team**;\{**TeamName**\}" – add a new team
+- "**Add**;\{**TeamName**\};\{**PlayerName**\};\{**Endurance**\};\{**Sprint**\};\{**Dribble**\};\{**Passing**\};\{**Shooting**\}" – add a new player to the team
+- "**Remove**;\{**TeamName**\};\{**PlayerName**\}" – remove the player from the team
+- "**Rating**;\{**TeamName**\}" – print the team rating, rounded to a closest integer
 
 ## Data Validation
-- A **name** cannot be null, empty or white space. 
+- A **name** cannot be null, empty, or white space. 
 
 If not, print "**A name should not be empty.**"
-- **Stats** should be in the range 0..100. If not, print "**{Stat name} should be between 0 and 100.**"
-- If you receive a command to **remove** a missing player, print 
-    "**Player {Player name} is not in {Team name} team.**"
-- If you receive a command to **add** a player to a missing team, print "**Team {team name} does not exist.**"
-- If you receive a command to **show** stats for a missing team, print "**Team {team name} does not exist.**"
+- **Stats** should be in the range 0..100. If not, print "\{**Stat name**\} **should be between 0 and 100.**"
+- If you receive a command to **remove** a missing player, print "**Player** \{**Player name**\} **is not in** \{**Team name**\} **team.**"
+- If you receive a command to **add** a player to a missing team, print "**Team** {**team name**} **does not exist.**"
+- If you receive a command to **show** stats for a missing team, print "**Team** {**team name**} **does not exist.**"
 
 
-## Examples
+# Examples
+
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | Team;Arsenal | Arsenal – 81 |
@@ -4228,6 +4263,7 @@ If not, print "**A name should not be empty.**"
 | Rating;Arsenal |  |
 | END |  |
 
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | Team;Arsenal | Endurance should be between 0 and 100. |
@@ -4237,6 +4273,7 @@ If not, print "**A name should not be empty.**"
 | Rating;Arsenal |  |
 | END |  |
 
+## Example 3
 | **Input** | **Output** |
 | --- | --- |
 | Team;Arsenal | Arsenal – 0 |
