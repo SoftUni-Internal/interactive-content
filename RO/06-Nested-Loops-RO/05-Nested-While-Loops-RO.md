@@ -97,22 +97,13 @@ Scrieți un program care:
 [/slide]
 
 
-
 [slide hideTitle]
 
-# Exemplu: Combinarea buclelor while și for
+# Problem with Solution: Sum of Digits Calculator
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-33-34-nesting-while-and-for-loops-and-problem-and-solution-sum-digits-calculator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-
-
-[/slide]
-
-[slide hideTitle]
-
-# Sum of Digits Calculator
-
-[code-task title="Triangle of Stars with While" taskId="java-basics-nested-loops-Sum-of-Digits-Calculator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sum of Digits Calculator" taskId="java-basics-nested-loops-Sum-of-Digits-Calculator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -138,10 +129,10 @@ Write a program that:
 
 | **Input** |**Output**|
 | ----- | ----- |
-|157​ |Sum of digits = 13|
-|99​|Sum of digits = 18|
-|5|Sum of digits = 5|​
-|438​|Sum of digits = 15|
+|157​ |Sum of digits = 13
+|99​|Sum of digits = 18
+|5|Sum of digits = 5
+|438​|Sum of digits = 15
 |End|Goodbye
 
 [/task-description]
@@ -164,13 +155,16 @@ Goodbye
 [/test]
 [test]
 [input]
-4
+55
+123
+145
+End
 [/input]
 [output]
-*
-**
-***
-****
+Sum of digits = 10
+Sum of digits = 6
+Sum of digits = 10
+Goodbye
 [/output]
 [/test]
 [/tests]

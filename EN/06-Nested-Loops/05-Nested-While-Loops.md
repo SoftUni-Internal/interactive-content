@@ -102,16 +102,6 @@ Write a program that:
 
 [slide hideTitle]
 
-# Example: Combining "while" and "for" Loops
-
-[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-33-34-nesting-while-and-for-loops-and-problem-and-solution-sum-digits-calculator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-
-[/slide]
-
-
-[slide hideTitle]
-
 # Problem with Solution: Sum of Digits Calculator
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-33-34-nesting-while-and-for-loops-and-problem-and-solution-sum-digits-calculator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
@@ -152,11 +142,11 @@ Write a program that:
 [tests]
 [test open]
 [input]
-"157​"
-"99​"
-"5"
-"438​"
-"End"
+157​
+99​
+5
+438​
+End
 [/input]
 [output]
 Sum of digits = 13​
@@ -168,13 +158,16 @@ Goodbye
 [/test]
 [test]
 [input]
-4
+55
+123
+145
+End
 [/input]
 [output]
-*
-**
-***
-****
+Sum of digits = 10
+Sum of digits = 6
+Sum of digits = 10
+Goodbye
 [/output]
 [/test]
 [/tests]
