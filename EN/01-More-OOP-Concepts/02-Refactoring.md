@@ -45,7 +45,7 @@ class OutputFormatter { public static void print() { … } }
 
 - **Moving methods** or **fields** to more appropriate classes
 
-`Car.open();` => `Door.open;`
+`Car.open();` => `Door.open();`
 
 [/slide]
 
@@ -61,18 +61,18 @@ class OutputFormatter { public static void print() { … } }
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-basics/01-Java-OOP-basics-More-OOP-Concepts-Lab-Resources.zip) **for this task.**
 
-You are given a **working project** for a small **Student System**, but the code is very poorly organized. 
+You are given a **working project** for a simple **Student System**. The code is very poorly organized. 
 
-Break up the code **logically** into **smaller functional units** – **methods** and **classes**, and do not break the functionality.
+Split the code **logically** into **smaller functional units** – **methods** and **classes**, without breaking the program.
 
 The program supports the following commands:
 
 - “**Create** `studentName` `studentAge` `studentGrade`” – creates a new student and adds them to the repository
-- “**Show** `studentName`” – prints on the console information about a student in the format:
+- “**Show** `studentName`” – prints information about a student in the format:
 `{studentName} is {studentAge} years old. {commentary}`, where the **commentary** is based on the student’s grade.
 - “**Exit**” – closes the program
 
-**Do not** add any **extra validation** or **functionality** to the app!
+**Do not** add any **extra validation** or **functionality**!
 
 ## Submit
 
