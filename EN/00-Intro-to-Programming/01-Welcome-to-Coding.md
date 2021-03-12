@@ -57,7 +57,7 @@ Defining a **class** and a `main()` **method** is a part of the logical structur
 
 The Java language requires all the code above in order to execute the sequence of commands.
 
-In order to declare commands, we should know **the syntax and the semantics of the language** which we are working with, in our case – **Java**. 
+In order to declare commands, we should know **the syntax and the semantics of the language** which we are working with, in our case - **Java**. 
 
 In the next lessons of this course we will explore many examples of the basic code and logic structure in Java, starting with its most basic elements.
 
@@ -88,7 +88,9 @@ For example, if we want to fry some eggs, we will most probably use the followin
 
 For example, to arrange a sequence of numbers in an ascending order, an algorithm is needed, e.g. find the smallest number and print it out, then find the smallest number among the rest of the numbers and print it out. This will be repeated until there are no more numbers left.
 
-When creating programs we usually use the help of an IDE, which stands for **Integrated Development Environment**, one example is **IntelliJ IDEA**. An IDE helps us easily run and debug our code avoiding syntax errors. Integrated Development Enviornments can containing a great number of additional tools according to their purpose.
+When creating programs we usually use the help of an IDE, which stands for **Integrated Development Environment**, one example is **IntelliJ IDEA**. 
+
+An IDE helps us easily run and debug our code avoiding syntax errors. Integrated Development Enviornments can containing a great number of additional tools according to their purpose.
 
 [/slide]
 

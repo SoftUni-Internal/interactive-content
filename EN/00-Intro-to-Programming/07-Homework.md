@@ -25,7 +25,7 @@ public class Main {
 
 Write a Java program, which:
 
-Prints "Hello Java" on the console.
+Prints "**Hello Java**" on the console.
 
 [/task-description]
 [code-io /]
@@ -111,7 +111,7 @@ public class Main {
 [task-description]
 ## Description
 
-Write a program to print 'Catlyn' on the first line and calculate and print the result of the expression 5 + 3 on the second line
+Write a program to print "**Catlyn**" on the first line and calculate and print the result of the expression 5 + 3 on the second line
 [/task-description]
 [tests]
 [test open]

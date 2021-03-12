@@ -116,18 +116,18 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program that:
+# Descriere
+Scrieți un program care:
 
-- Continuously read integers until "**End**" is entered​
+- Citește continuu numere întregi până când este introdus "**End**"
 
-  - print the sum of digits for each integer​
+   - imprimați suma cifrelor pentru fiecare număr întreg
 
-- Finally, print "**Goodbye**"
+- În cele din urmă, imprimă  "**Goodbye**"
 
-## Example
+## Exemplu
 
-| **Input** |**Output**|
+| **Date de intrare** |**Date de ieșire**|
 | ----- | ----- |
 |157 |Sum of digits = 13
 |99|Sum of digits = 18
