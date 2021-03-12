@@ -1,16 +1,16 @@
 [slide hideTitle]
-# Nested For Loops
+# Nested For-Loops
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-23-25-nested-for-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Statements that consist of several **for loops** located **inside each other**
+Let us take a look at the statements that consist of several **for-loops** located each **inside each other**
 
-**Nested for loops** are used:
+**Nested for-loops** are used:
 
-* To execute an **action**, which **executes** multiple **actions**
+* To **repeat code logic** an **exact number** of times
 * To make more **complex** calculations and variations
 
-The syntax for a **nested for loop in Java** is as follows:
+The syntax for a **nested for-loop in Java** is as follows:
 ```java
 for (variable initialization; condition; increment) {
   // Outer Loop 
@@ -21,7 +21,7 @@ for (variable initialization; condition; increment) {
   }
 }
 ```
-These are 3 `for` loops nested in one another:
+Here is an example of a mechanics containing 3 levels of nested for-loops.
 ```java live
 int n = 5;
 for (int i = 1; i <= n; i += 3) {
@@ -33,7 +33,7 @@ for (int i = 1; i <= n; i += 3) {
 }
 ```
 # Example
-Here is an example Java program:
+
 ```java live
 int a = 3;
 int b = 3;
@@ -61,14 +61,14 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Place your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 # Description
-Write a program, which:
+Create a program, that:
 
 * Reads the **height** of a triangle from the console
 * Prints a **triangle of stars**
