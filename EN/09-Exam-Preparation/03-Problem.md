@@ -8,21 +8,27 @@
 [task-description]
 # Description
 
-# Task 3: Unit Tests (100 points)
+# Task 3: Unit Tests
 
 **Use the resources you downloaded in the first task.**
 
 You will receive a skeleton with **Present** and **PresentBag** classes inside. 
 
-The class will have some methods, fields and one constructor, which are working properly. 
+The class will have some methods, fields, and one constructor, all of which must be properly working. 
 
-You are **NOT ALLOWED** to change any class. Cover the whole class with unit tests to make sure that the class is working as intended.
+You are **not allowed** to change any class. 
+
+Cover the whole class with **unit tests** to make sure it is working as intended.
 
 You are provided with a **unit test project** in the **project skeleton**.
 
-**Note:** The **PresentBag** you need to test is in the **christmas** package, therefore you should put the package in a `.zip` file.
+**Do not use mocking in your unit tests!**
 
-Do **NOT** use **mocking** in your unit tests!
+## Submit
+
+The **PresentBag** you need to test is in the **Christmas** package.
+
+Therefore, you should put the package in a **zip** file.
 
 
 [/task-description]
