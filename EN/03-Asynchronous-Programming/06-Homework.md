@@ -168,13 +168,13 @@ Create the following REST services to access your data:
 
 - **Update a Catch**
 
-  - Endpoint: **"https://fisher-game.firebaseio.com/catches/{catchId}.json"**
+  - Endpoint: **"https://fisher-game.firebaseio.com/catches/**\{**catchId**\}**.json"**
   - Method: **PUT**
   - Request body (JSON): `{"angler":"…", "weight":…, "species":"…", "location":"…", "bait":"…", "captureTime":…}`
 
 - **Delete a Catch**
 
-  - Endpoint: **"https://fisher-game.firebaseio.com/catches/{catchId}.json"**
+  - Endpoint: **"https://fisher-game.firebaseio.com/catches/**\{**catchId**\}**.json"**
   - Method: **DELETE**
 
 - Pressing the `[Load]` button should **list all** catches.
