@@ -142,10 +142,10 @@ Write a program that:
 [tests]
 [test open]
 [input]
-157​
-99​
+157
+99
 5
-438​
+438
 End
 [/input]
 [output]
