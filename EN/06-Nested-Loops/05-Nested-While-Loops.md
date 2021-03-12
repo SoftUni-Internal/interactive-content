@@ -132,10 +132,10 @@ Write a program that:
 
 | **Input** |**Output**|
 | ----- | ----- |
-|157​ |Sum of digits = 13
-|99​|Sum of digits = 18
+|157 |Sum of digits = 13
+|99|Sum of digits = 18
 |5|Sum of digits = 5
-|438​|Sum of digits = 15
+|438|Sum of digits = 15
 |End|Goodbye
 
 [/task-description]
