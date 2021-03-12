@@ -31,9 +31,9 @@ for (char move : moves) {
  }
 ```
 
-Methods let us easily **reuse code**.
+Methods let us easily **reuse code** without having to retype it in different places.
 
-**Changing the method** once will affect **all calls**.
+**Changing the method** once will change the behavior of the method anywhere it is called.
 
 **Example:**
 
@@ -49,6 +49,13 @@ System.out.println(bankAcc.toString());
 //Override .toString() to set a global printing format
 
 ```
+
+We can override the `toString()` method in the **BankAccount** class to return the account details in String format. 
+
+Although this change is done in one place, it will affect the code globally every time we call the method on any object of type **BankAccount**.
+
+
+
 [/slide]
 
 [slide hideTitle]
@@ -99,11 +106,11 @@ Create a `printRow()` method to easily reuse code.
 
 | **Input** | **Output** |
 | --- | --- |
-| 3 |   \* |
-|  |  \* \* |
-|  | \* \* \* |
-|  |  \* \* |
-|  |   \* |
+| 3 |<pre>   \*</pre>|
+|  |<pre>  \* \* </pre>|
+|  |<pre> \* \* \* </pre>|
+|  |<pre>  \* \* </pre>|
+|  |<pre>   \* </pre>|
 
 ## Example 3
 
