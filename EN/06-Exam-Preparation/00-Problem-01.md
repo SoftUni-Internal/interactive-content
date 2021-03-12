@@ -2,15 +2,7 @@
 [slide hideTitle]
 # Array Modifier
 
-[vimeo-video]
-[stream language="EN" videoId="497664341/656c4f7354" default /]
-[stream language="RO" videoId="497664341/656c4f7354"  /]
-[/video-vimeo]
-
-[vimeo-video]
-[stream language="EN" videoId="497664300/136916d5ee" default /]
-[stream language="RO" videoId="497664300/136916d5ee"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/06.JS-Fundamentals-Exam-Prep-2/EN/array-modifier-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Array Modifier" taskId="js-fundamentals-examPreparation-2-Array-Modifier" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
