@@ -1,5 +1,6 @@
 [slide hideTitle]
 # Aplicații pentru consolă în IntelliJ IDEA
+
 Deja am instalat IntelliJ IDEA și putem începe să îl utilizăm.
 
 Creați o nouă Console Application în IntelliJ IDEA: `[New Project]` \-\> `[Java]` \->\ `[Template Command Line App]` \-\> `[Finish]`

@@ -1,5 +1,8 @@
 [slide hideTitle]
 # Ce reprezintă codificarea
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-3-4-What-is-coding-and-demo-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **A programa** înseamnă  **a transmite comenzi** calculatorului, de exemplu, *"să emită un sunet"*, *"să imprime ceva pe ecran"* sau *"să înmulțească două numere"*. 
 
 
@@ -18,12 +21,16 @@ System.out.println("I am coding");
 
 # Exemplu: Comenzi simple 
 
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-5-Commands-in-Java-and-demo-1-2-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
 
 
 [slide hideTitle]
 # Programele de calculator
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-7-computer-program-example-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Programele de calculator reprezintă **o secvență de comenzi** care sunt scrise în anumite **limbaje de programare**, precum C#, Java, JavaScript, Python, C++, PHP, C, Ruby, Swift, Go sau alt program cunoscut.
 
 Exemple de **programe de calculator** în Java:
@@ -61,10 +68,15 @@ Drept urmare, ne vom familiariza cu sintaxa și semantica limbajului Java, și c
 
 # Exemplu: Program de calculator complet
 
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-8-complete-computer-program-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [/slide]
 
 [slide hideTitle]
 # Algoritmi
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-6-programming-and-algorithms-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Programele de computer execută, de obicei, algoritmi. 
 
 **Algoritmii** sunt o **secvență de pași**, necesari pentru finalizarea unei anumite sarcini și pentru atingerea unui anumit rezultat așteptat, asemănător unei ”rețete”.
@@ -84,6 +96,9 @@ Pentru conveniență, atunci când creăm programe, când scriem coduri de progr
 
 [slide hideTitle]
 # Programele Java bazate pe consolă – Exemplu
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-9-console-based-java-program-example-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Să ne uităm puțin la un program simplu care citește ca date de intrare ale utilizatorului anumite sume de bani exprimate în dolari (USD) - un număr întreg, apoi îl convertește în Euro (EUR) făcând împărțirea sumei prin cursul de schimb Euro-dolar și tipărește rezultatul obținut.
 
 Acesta este un program cu 3 comenzi consecutive:

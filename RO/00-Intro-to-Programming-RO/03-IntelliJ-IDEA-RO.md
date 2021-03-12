@@ -1,6 +1,8 @@
 [slide hideTitle]
 # Mediile integrate de dezvoltare (IDE)
 
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-16-18-IDE-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Pentru a programa, avem nevoie de un mediu integrat de dezvoltare (**Integrated Development Environment**), prescurtat **IDE** (IDE). 
 
 **Un mediu de dezvoltare** (Integrated Development Environment – **IDE**) este o combinație de instrumente tradiționale de dezvoltare a aplicațiilor software. 
@@ -28,6 +30,9 @@ Acesta este un exemplu despre cum poate arăta un mediu de dezvoltare integrat I
 
 [slide hideTitle]
 # Instalarea IntelliJ IDEA
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-21-24-Installing-IntelliJ-IDEA-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Începem prin a instala mediul integrat **IntelliJ IDEA** (Community, version 2019.2.1, latest as of August 2019). 
 
 Instalarea versiunilor mai recente ale IntelliJ IDEA (precum IntelliJ IDEA 2020 și IntelliJ IDEA 2021) ar trebuie să fie foarte asemănătoare.
@@ -76,6 +81,9 @@ Asta este tot. Sunteți gata să lucrați cu IntelliJ IDEA.
 
 [slide hideTitle]
 # Proiectarea de soluții și proiecte în Intellij IDEA
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-25-Project-Solutions-and-Projects-in-IntelliJ-IDEA-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Înainte de a începe să lucrăm cu IntelliJ IDEA, este necesar să ne familiarizăm cu conceptele unui **Proiect IntelliJ IDEA** și ale unui **Modul IntelliJ IDEA**, care sunt aspecte inevitabile ale acestuia.
 
 [image assetsSrc="intro-to-programming-modules-and-projects.png" /]
@@ -113,6 +121,9 @@ Pentru **proiecte mai mici** proiectele și modulele IntelliJ mai degrabă **com
 
 [slide hideTitle]
 # Dezvoltarea mediilor: Desktop și Online
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-19-Development-Environments-Desktop-and-Online-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Instalați de pe JetBrains comunitatea  IntelliJ IDEA Community
 
 * [JetBrains](https://www.jetbrains.com/idea/download/)
