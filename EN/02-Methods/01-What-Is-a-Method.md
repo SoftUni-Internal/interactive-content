@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Methods
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-3-4-Simple-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 A method is a block of code that only runs when it is called.
 
 You can pass data to methods in the form of **parameters**.
@@ -24,6 +26,8 @@ printHello();
 
 [slide hideTitle]
 # Why Use Methods?
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-5-Why-Use-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We use methods for several reasons.
 
@@ -49,6 +53,8 @@ We use methods for several reasons.
 
 [slide hideTitle]
 # Void Type Methods
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-6-Void-type-method-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Methods with the **void** return type execute the code in their code block. 
 

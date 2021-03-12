@@ -4,6 +4,8 @@
 
 # Value Types
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-38-Value-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 A variable of a **value** \(primitive data\) type contains an instance of the type and holds directly their value. 
 
 Primitive data types or value types contain the value of a variable directly inside their own memory location.
@@ -31,6 +33,8 @@ boolean result = true; //require 1 byte of memory
 [slide hideTitle]
 
 # Reference Types
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-39-reference-types-and-demos-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Reference type** variables hold the **reference** \(pointer / memory address\) to the value.
 
@@ -154,6 +158,9 @@ Any operation that would change an element in the array inside the method will a
 
 [slide hideTitle]
 # Problem with Solution: Math Operations
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-problem-and-solution-math-operations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Math Operations" taskId="java-fund-1-Methods-lab-Math-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

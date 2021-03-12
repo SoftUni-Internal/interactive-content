@@ -4,6 +4,8 @@
 
 # Program Execution
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-52-Program-Execution-Call-stack-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The program flow in Java is controlled by a part of the memory called **the call stack**. 
 
 The stack is used for keeping track of what methods were called and the points of the program at which they were called.

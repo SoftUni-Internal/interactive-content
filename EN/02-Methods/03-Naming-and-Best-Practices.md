@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Naming Methods
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-11-12-13-Naming-methods-and-parameters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Always use verbs when naming methods.
 
 A method represents an action and its name should clearly state what action they perform.
@@ -40,6 +42,8 @@ Always write method names in **camelCase**:
 [slide hideTitle]
 # Best Practices
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-14-Methods-Best-Practices-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Each method should perform a **single**, well-defined task.
 
 A method's name should **describe that task** in a precise and non-ambiguous way.
@@ -62,6 +66,8 @@ You can understand what each of the above methods does by reading their names, e
 
 [slide hideTitle]
 # Code Structure and Formatting
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-15-Code-Structure-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Make sure to use correct **indentation**.
 

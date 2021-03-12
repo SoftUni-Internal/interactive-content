@@ -1,6 +1,8 @@
 [slide hideTitle]
 # Summary
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-55-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## In this lesson you learned:
 
 - Methods - **blocks of code** that can be reused multiple times

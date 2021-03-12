@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Creating Methods
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-7-8-Declaring-methods-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 A method must be declared within a class.
 
 It is defined with the name of the method, followed by parentheses **()**.
@@ -30,6 +32,8 @@ public class MyClass {
 
 [slide hideTitle]
 # Invoking Methods
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-9-10-Invoking-a-method-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To call or invoke a method in Java, type the method's name followed by a pair of parentheses **()** and a semicolon **;**.
 
