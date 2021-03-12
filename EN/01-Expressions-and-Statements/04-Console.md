@@ -101,7 +101,7 @@ By default, the `scanner.nextLine()` method returns a **text result** – a text
 
 - If parsing to a number is not done, **each number** will simply be considered as **text**, and we **will not be able to do** arithmetic operations with it
 
-# Example: Home Town
+## Example: Home Town
 Let us create a program that asks the user for their home town and prints out the text: `"I am from {homeTown}!"`.
 
 ```java
