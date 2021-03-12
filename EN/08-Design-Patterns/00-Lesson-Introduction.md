@@ -9,7 +9,8 @@
 ## In this lesson, you will learn:
 
 **1. Definition of Design Pattern**
-- What design patterns are and why they must be followed
+- What design patterns are
+- Why they must be followed
 
 **2. Benefits and Drawbacks**
 - What to keep in mind when following a pattern
