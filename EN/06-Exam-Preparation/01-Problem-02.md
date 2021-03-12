@@ -3,11 +3,7 @@
 [slide hideTitle]
 # The Lift
 
-[vimeo-video]
-[stream language="EN" videoId="497664040/da0b1365f9" default /]
-[stream language="RO" videoId="497664040/da0b1365f9"  /]
-[/video-vimeo]
-
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/06.JS-Fundamentals-Exam-Prep-2/EN/the-lift-problem-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="The Lift" taskId="js-fundamentals-examPreparation-2-The-Lift" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
