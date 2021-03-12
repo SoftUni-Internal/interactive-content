@@ -21,7 +21,7 @@ public class Rectangle {
 ```
 
 
-- We can refactor existing code by **breaking code down** into logical units of classes or methods
+- We can refactor existing code by **breaking code down** into logical units
 
 
 ```java
