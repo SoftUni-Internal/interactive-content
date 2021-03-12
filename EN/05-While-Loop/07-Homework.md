@@ -1708,31 +1708,36 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-At a charity event, payments for the purchased products are always **alternated**: **cash payment and card payment**. **Always first payment method is cash**.
+At a charity event, people can pay for their purchased products **in cash** or by **credit card**. 
+The method of payment alternates as follows:
+- The first payment should be **in cash**
+- The second payment should be made by **credit card**
+- The third one should be **in cash** and so on
+
 
 The following payment rules have been established:
-- If the product **exceeds 100 dollars**, it **cannot be paid in cash**
+- If the product's price **exceeds 100 dollars**, it **cannot be paid in cash**
 - If the product is priced **under 10 dollars**, it **cannot be paid by credit card**
 
-The program ends either after we receive the command **"End"**, or after the **funds are collected**.
+The program ends when we receive the command **End**, or when the needed **funds are collected**.
 
 ## Input
 Read from the console:
-- The amount **expected to be collected** from sales - integer in range \[1...10000\] 
+- The amount that should be **collected** from sales - integer in range \[1...10000\] 
 
-On each subsequent line, until the **"End"** command is received or until **the necessary funds are collected**: 
+- On the next lines, until the program ends:
     - **The prices of items** to be purchased - integer in range \[1...500\]
 
 ## Output
-Print on the console:
-- In case of successful transaction: "Product sold!" 
-- In case of unsuccessful transaction: "Error in transaction!" 
-- If the sum of all purchased products **exceeds or reaches the expected amount**, the program must be completed and **two lines** are printed to the console: 
-    - "Average CS: \{average payment in person's cash\}" 
-    - "Average CC: \{average card payment per person\}"
-    Payments must be **formatted to the second digit after the decimal point**.
-- When the **"End"** command is received, **one line** is written:
-    - "Failed to collect required money for charity."
+Print to the console:
+- In case of successful transaction: **"Product sold!"** 
+- In case of unsuccessful transaction: **"Error in transaction!"** 
+- In case we reach the expected amount of money, the following two lines should be printed out:
+    - **"Average CS: \{average payment in cash per person\}"**
+    - **"Average CC: \{average payment by card per person\}"**
+ All payments must be **formatted to the second digit after the decimal point**.
+- In case the **End** command is received, the following line should be printed out:
+    - **"Failed to collect required money for charity."**
 
 ## Example
 
@@ -1748,17 +1753,19 @@ Print on the console:
 | | Average CC: 286.50|
 
 ### Comments
-- The condition is rotated first in **cash payment**, then through **credit card**
-- 120 > 100 transaction is rejected 
-- 8 < 10 transaction is rejected 
-- 63 <= 100 => the transaction was successful
-- 256 >= 10 => the transaction was successful 
-- 78 <= 100 => the transaction was successful 
-- 317 >= 10 => the transaction was successful 
-- Total amount collected: 63 + 256 + 78 + 317 = 714 
+- The first type of payment should be **in cash**
+- 120 > 100 => the transaction is rejected 
+- 8 < 10 => the transaction is rejected 
+- 63 <= 100 => the transaction is successful
+- 256 >= 10 => the transaction is successful 
+- 78 <= 100 => the transaction is successful 
+- 317 >= 10 => the transaction is successful 
+- Total amount of money collected: 63 + 256 + 78 + 317 = 714 
 - 714 >= 500
-- Total cash: 63 + 78 = 141;  Average cash: 141/2 = 70.50 
-- Total credit cards: 256 \+ 317 = 573; Average credit cards: 573/2 = 286.50
+- Total amount of money in cash: 63 + 78 = 141 
+  - Average amount of money in cash: 141/2 = 70.50 
+- Total amount of money received by credit card: 256 \+ 317 = 573 
+  - Average amount of money received by credit card: 573/2 = 286.50
 
 [/task-description]
 [tests]
@@ -1961,14 +1968,17 @@ public class Main {
 [task-description]
 ## Description
 
-Write a program that calculates the **average grade** of a student from his entire education. 
+Create a program that calculates the **average grade** of a student for his entire education. 
 
 ## Input
-- On the first line you will receive **the name of the student**, and on each following line his annual grades. - The student passes to upper class, if his **annual grade is 4.00 or greater**. 
-- If his grade is less than 4.00, he has to **repeat** the class.
+- On the first line, we will receive **the name of the student** 
+- On the next lines, we will receive his grades.  
+
+- If his grade is **4.00 or greater**, he graduates.
+- If his grade is **less than 4.00**, he has to **repeat** the class.
 
 ## Output
-- If the student graduates **12th** class, you have to print:
+- If the student graduates, we have to print out:
     - "\{student name\} graduated. Average grade: \{average grade from his entire education\}"
 
 **The grade should be formatted to the second decimal point.**
@@ -2159,19 +2169,20 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You will receive symbols the "**End**" command. 
+We will receive symbols until the **End** command is received. 
 
-You skip the **non-letter chars** and the first occurence of **c**, **o**  and **n** (code chars).
+We should skip the **non-letter chars** and the first occurence of **c**, **o**  and **n**.
 
-When you **first receive** one of these letters, you have to mark it as visited, **but it is not saved in the word**.
+When we receive one of those letters ( **c**, **o**, or **n**) for a first time, we should not use it to form our word, but we have to note that it is encontered. 
 
-After you have found **all three code chars from the command**, you have to print the word with a space and reset the counting of the code chars.
+If we receive all the three letters, we have to add а **white space** to the end of our word and print it out. We should reset the count of the appearance of each letter to **0**.
 
 ## Input
-- Read a sequence of lines with a single symbol each, until you receive the "**End**" command
+-Read 
+- We will receive symbols, each on a new line, until we receive the "**End**" command
 
 ## Output
-- Print on the console **every word after the secret command** followed by **space**
+- Print out the word, followed by а **white space**
 
 ## Example
 | **Input** | **Output** |
@@ -2187,10 +2198,10 @@ After you have found **all three code chars from the command**, you have to prin
 | End| |
 
 ### Comments
-- "**H**", "**n**", "**e**", "**l**", "**l**", "**o**", "**o**", "**c**" are all read letters.
-- First we read "**H**" and we add it to the word. The next symbol is "**n**". It\'s part of the command and we **do not add it to the word as we meet it for the first time**.
-- The next symbols are "**e**", "**l**", "**l**" and we add them to the word. We read "**o**" and we mark it as visited, but again we do **not** add it to the word. The next letter is "**o**" again and it\'s added. The next is "**c**" and all three symbols for the secret command are available.
-- We print "**Hello** " and we recieve "End" command and the programs ends. The result is "Hello ".
+- "**H**", "**n**", "**e**", "**l**", "**l**", "**o**", "**o**", "**c**" are all letters that we receive.
+- First, we receive "**H**" and we add it to the word. The next symbol is "**n**". We receive this letter for a first time, so we **do not** add it to our word.
+- The next symbols are: "**e**", "**l**", "**l**" and we add them to the word. We receive "**o**" for a first time, so we **do not** add it to the word. The next letter is "**o**", but this time, we add it to the word. The next letter is "**c**", so all the three symbols (**c**, **o**  and **n**) are met.
+- We print "**Hello** ". Then, we recieve the **"End"** command and the program ends. The result is **"Hello "**.
 
 ## Example
 | **Input** | **Output** |
