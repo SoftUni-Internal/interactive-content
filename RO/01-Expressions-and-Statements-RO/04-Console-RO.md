@@ -95,7 +95,7 @@ String name = scanner.nextLine();
 
 - Dacă parsarea cu un număr nu este posibila, **fiecare număr** va fi pur și simplu **un text** și **nu putem executa** operații aritmetice cu acesta
 
-# Exemplu: Home Town
+## Exemplu: Home Town
 Să scriem un program care cere utilizatorului orașul natal și imprimă textul `"I am from {homeTown}!"`.
 
 ```java
@@ -110,16 +110,6 @@ Dacă introducem **"Bucharest"**, rezultatul va fi după cum urmează:
 ```
 I am from Bucharest!
 ```
-[/slide]
-
-[slide hideTitle]
-
-# Exemplu: Citirea intrării utilizatorului
-
-interactive-programming-basics-with-java-expressions-and-statements-17-reading-user-input + 
-
-interactive-programming-basics-with-java-expressions-and-statements-17-reading-user-input-demo
-
 [/slide]
 
 [slide hideTitle]
