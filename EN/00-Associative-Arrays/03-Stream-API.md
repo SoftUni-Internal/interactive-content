@@ -39,7 +39,7 @@ Most of the methods use lambda expressions on the stream.
 [slide hideTitle]
 # Processing Arrays with the Stream API
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-19-20-processing-arrays-with-stream-api-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-19-20-21-processing-arrays-with-stream-api-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Using **one line operations** on arrays instead of writing loops with indexes or `for-each` loops for simple operations when processing data:
 
