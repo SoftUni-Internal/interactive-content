@@ -16,7 +16,11 @@ They comprise of **two main ideas**:
 
 - **Hiding** how instances of these classes are created
 
-## Singleton Design Pattern
+[/slide]
+
+[slide hideTitle]
+
+# Singleton Design Pattern
 
 The singleton pattern is one of the most used creational design patterns
 
@@ -38,13 +42,13 @@ public class Singleton {
     // This way the class cannot be instantiated
     private Singleton(){}
 
-    //With the getInstance() method we get the only object available
+    // With the getInstance() method we get the only object available
     public static Singleton getInstance() {
         return instance;
     }
 
     public void printMessage() {
-        System.out.println("Hello, I am a singleton class");
+        System.out.println("Hello, I am a singleton class!");
     }
 }
 ```
@@ -56,11 +60,8 @@ public class Main {
     public static void main(String[] args) {
 
         // If we try to create a singleton object via our constructor, we will get an error:
+	// Compile Time Error: The constructor SingleObject() is not visible
 	// Singleton object = new Singleton();
-
-	// Will result in:
-        // Compile Time Error: The constructor SingleObject() is not visible
-        
 
         // Get the only object available
         Singleton object = Singleton.getInstance();
@@ -74,7 +75,7 @@ public class Main {
 The **output** will be:
 
 ```
-Hello, I am a singleton class
+Hello, I am a singleton class!
 ```
 
 This way, our Singleton class provides a method to get its **static** instance to **outside world**.
