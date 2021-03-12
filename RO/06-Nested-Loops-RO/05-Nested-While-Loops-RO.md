@@ -17,7 +17,7 @@ while (condition) {
 }
 ```
 
-# Exemplu
+## Exemplu
 
 ```java live
 int i = 0;
@@ -44,7 +44,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -57,7 +57,7 @@ Scrieți un program care:
 * Imprimă un **triunghi din stele**
 ## Exemplu
 
-| **Date de intrare** |**Date de ieșire**|
+| **Intrare** | **Ieșire** |
 | ----- | ----- |
 | 5 | \* |
 || \*\* |
@@ -110,7 +110,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -127,7 +127,7 @@ Scrieți un program care:
 
 ## Exemplu
 
-| **Date de intrare** |**Date de ieșire**|
+| **Intrare** | **Ieșire** |
 | ----- | ----- |
 |157 |Sum of digits = 13
 |99|Sum of digits = 18

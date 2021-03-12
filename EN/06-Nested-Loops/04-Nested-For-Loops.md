@@ -32,7 +32,7 @@ for (int i = 1; i <= n; i += 3) {
     }
 }
 ```
-# Example
+## Example
 
 ```java live
 int a = 3;

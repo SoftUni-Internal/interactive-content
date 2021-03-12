@@ -377,6 +377,38 @@ Write a program, which:
 [tests]
 [test open]
 [input]
+Philippines
+1000
+550
+450
+End
+[/input]
+[output]
+Going to Philippines!
+[/output]
+[/test]
+[test open]
+[input]
+Bulgaria
+500
+200
+100
+300
+Austria
+700
+200
+200
+200
+200
+End
+[/input]
+[output]
+Going to Bulgaria!
+Going to Austria!
+[/output]
+[/test]
+[test]
+[input]
 Greece
 1000
 200
@@ -398,7 +430,7 @@ Going to Greece!
 Going to Spain!
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 France
 2000
@@ -800,7 +832,7 @@ Write a program, which:
 * The **second** digit should not be greater than n2
 * The **third** digit should not be greater than n3
 * The **first** and the **third** digit must be even
-* The second digit must be a **prime number** in the range \[2…7\]
+* The second digit must be a **prime number** in the range \[2...7\]
 
 ## Example
 | **Input** | **Output** |
@@ -880,14 +912,17 @@ Write a program, which:
 
 * Prints **letters combinations** and the **count** of the printed combinations
 * You will receive the **range of letters** on the first and second line
-* On the third line, you will receive a **letter**, which you must **ignore** - don't print combinations with it
-# Example
-## Input
-- a
-- c
-- b
-## Output
-- aaa aac aca acc caa cac cca ccc 8
+* On the third line, you will receive a **letter**, which you must **ignore** - do not print combinations with it
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| a | aaa aac aca acc caa cac cca ccc 8 |
+| c|  |
+| b|  |
+
+
+
 [/task-description]
 [tests]
 [test open]
@@ -947,6 +982,7 @@ Write a program, which:
 | --- | --- |
 | 3 | 1212 1221 2112 2121 |
 
+
 [/task-description]
 [tests]
 [test open]
@@ -959,10 +995,50 @@ Write a program, which:
 [/test]
 [test]
 [input]
-3
+6
 [/input]
 [output]
-1212 1221 2112 2121
+1111 1212 1221 1515 1524 1533 1542 1551 2112 2121 2415 2424 2433 2442 2451 3315 3324 3333 3342 3351 4215 4224 4233 4242 4251 5115 5124 5133 5142 5151
+[/output]
+[/test]
+[test]
+[input]
+2
+[/input]
+[output]
+1111
+[/output]
+[/test]
+[test]
+[input]
+4
+[/input]
+[output]
+1111 1313 1322 1331 2213 2222 2231 3113 3122 3131
+[/output]
+[/test]
+[test]
+[input]
+5
+[/input]
+[output]
+1414 1423 1432 1441 2314 2323 2332 2341 3214 3223 3232 3241 4114 4123 4132 4141
+[/output]
+[/test]
+[test]
+[input]
+6
+[/input]
+[output]
+1111 1212 1221 1515 1524 1533 1542 1551 2112 2121 2415 2424 2433 2442 2451 3315 3324 3333 3342 3351 4215 4224 4233 4242 4251 5115 5124 5133 5142 5151
+[/output]
+[/test]
+[test]
+[input]
+7
+[/input]
+[output]
+1616 1625 1634 1643 1652 1661 2516 2525 2534 2543 2552 2561 3416 3425 3434 3443 3452 3461 4316 4325 4334 4343 4352 4361 5216 5225 5234 5243 5252 5261 6116 6125 6134 6143 6152 6161
 [/output]
 [/test]
 [/tests]
@@ -988,7 +1064,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that prints **the hours of the day** from given hour and minutes to 23:59 (**inclusive**), each on a separate line. 
+Write a program that prints **the hours of the day** from the given hour and minutes to 23:59 (**inclusive**), each on a separate line. 
 
 ## Input
 The input is consists of **2** lines:
@@ -1173,7 +1249,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program to print **the hours of the day** from given hour, minutes, seconds to 23:59:59 (**inclusive**), each on a separate line. 
+Write a program to print **the hours of the day** from the given hour, minutes, seconds to 23:59:59 (**inclusive**), each on a separate line. 
 
 ## Input
 The input is entered from the console as **3** lines:
@@ -1182,7 +1258,7 @@ The input is entered from the console as **3** lines:
 - Third line - **seconds** - integer in range \[0...59\]
 
 ## Output
-- The output should be printed in the following format "\{hour\} : \{minutes\} : \{seconds\}".
+- The output should be printed in the following format "\{hour\} : \{minutes\} : \{seconds\}"
 
 ## Example
 
@@ -1454,12 +1530,12 @@ public class Main {
 
 Write a program that calculates **how many solutions in natural numbers (including zero)** has the equation:
 
-```
-x1 + x2 + x3 + x4 + x5 = n
-```
+
+`x1 + x2 + x3 + x4 + x5 = n`
+
 
 ## Input
-- The input consits a single number - n - integer
+- The input consists a single number - n - integer
 
 ## Output
 - Print on the console the total number of solutions
@@ -1601,7 +1677,7 @@ Write a program that **calculates the ASCII value of a few words**, as the word 
 The value of a word is calculated when you sum the **ASCII values of all the letters of which it consists of**. 
 
 From the console read words until the command "**STOP**", then print:
-- "Winner is \{winner word\} – \{value of the word\}!"
+- "Winner is \{winner word\} - \{value of the word\}!"
 
 ## Example
 
@@ -1613,8 +1689,10 @@ From the console read words until the command "**STOP**", then print:
 | STOP | |
 
 ### Comments
-- The first letter is \'H\' and it\'s ASCII value is 72, \'o\' has value 111, \'u\' has value 117, \'s\' has value 115, \'e\' has value 101. Their sum is 516. 
-- Keep doing the same calculations for the other words and get that Destination has the highest value - 1154.
+- The first letter is "H| and it\'s ASCII value is 72, "o" has value 111, "u" has value 117, "s" has value 115, "e" has value 101
+
+Their sum is 516.
+- Keep doing the same calculations for the other words and get that Destination has the highest value - 1154
 
 [/task-description]
 [tests]
@@ -1719,11 +1797,17 @@ public class Main {
 [task-description]
 ## Description
 
-Write a program that reads **an integer N** from the console. The console should print **as many lines as the count of digits N has**. The **first line** corresponds to the **units**, the second to the **tens**, third to the **hundreds** of number, etc., until there are **no more digits** of the number.
+Write a program that reads **an integer N** from the console.
+
+The console should print **as many lines as the count of digits N has**. 
+
+The **first line** corresponds to the **units**, the second to the **tens**, third to the **hundreds of** the number, etc., until there are **no more digits** of the number.
 
 On each line you must print a **symbol**, which meets the following conditions:
 
-- The symbol, which must be printed, can be found in the \[ASCII\](http://www.asciitable.com/) table. Its **decimal ASCII code** is calculated by adding **33** to the digit of the input number that corresponds to a given line
+- The symbol, which must be printed, can be found in the [ASCII table](http://www.asciitable.com/) 
+
+Its **decimal ASCII code** is calculated by adding **33** to the digit of the input number that corresponds to a given line
 - The symbol must be printed **as many times as the digit** corresponding to this line
 - If a given line **matches the digit 0**, on this line is printed "**ZERO**" once
 
@@ -1738,19 +1822,30 @@ On each line you must print a **symbol**, which meets the following conditions:
 
 ### Comments
 - The number 2049 has four digits so we will print four rows.
-- The first line corresponds to the digit 9. We add 33 to 9 and get 42.
-- This is the decimal ASCII code of the symbol it should be print on the first row.
-- From the ASCII table we know that the corresponding symbol of 42 is '\*'. 
-- Because to the first line corresponds the digit 9 we print '\*' 9 times.
-- For the second line the digit is 4. 4\+33=37. Using ASCII table we find that the symbol to print is '%'. 
-- We print '%' 4 times.
-- The third line matches a digit 0. On this line we print ZERO once.
-- The last digit of the number is 2. 2\+33=35.
-- From the ASCII table we find the symbol to print - '\#' and we print it twice.
+- The first line corresponds to the digit 9
+
+We add 33 to 9 and get 42.
+
+- This is the decimal ASCII code of the symbol it should be print on the first row
+- From the ASCII table we know that the corresponding symbol of 42 is '\*'
+- Because the first line corresponds to the digit 9 we print '\*' 9 times
+- For the second line the digit is 4. 4\+33=37. Using the ASCII table we find that the symbol to print is '%' 
+- We print '%' 4 times
+- The third line matches a digit 0
+
+On this line, we print ZERO once.
+
+- The last digit of the number is 2. 2\+33=35
+- From the ASCII table we find the symbol to print - '\#' and we print it twice
 
 ### Hints
-- Read the number as a String, save its length in a variable using the **length() method**. Find more **information** about it on the Internet
-- To take the last digit of the number, divide it by 10 (**num % 10**) and save it in a variable. Then **remove the last digit of the number**, dividing it by 10 (**num / 10**) so that the next digit to take is again the last one.
+- Read the number as a String, save its length in a variable using the **length() method**.
+
+Find more **information** about it on the Internet
+- To take the last digit of the number, divide it by 10 (**num % 10**) and save it in a variable
+
+Then **remove the last digit of the number**, dividing it by 10 (**num / 10**) so that the next digit to take is again the last one.
+
 [/task-description]
 [tests]
 [test open]
@@ -1957,17 +2052,17 @@ public class Main {
 ## Description
 The course "Train the trainers" is ending and the final evaluation approaches.
 
-Help the jury which by writing a program to calculate the **average score** of **each presentation** by a student, and the **average of all of them**.
+Help the jury by writing a program to calculate the **average score** of **each presentation** by a student, and the **average of all of them**.
 
 ## Input
 - From the console of the first row read the number of people on the jury - **n** - an integer in the range \[1...20\]
 - Then on a separate line read the name of the presentation - **String**
-- For each presentation of the new line is read **n - the number of ratings** - real number in the interval \[2.00 ... 6.00\]
+- For each presentation of the new line is read **n - the number of ratings** - the real number in the interval \[2.00 ... 6.00\]
 
 ## Output
 - After calculating the **average score** for a particular presentation, print to the console:   
    "\{name of the presentation\} \- \{average score\}."
-- After receiving the command "**Finish**" on the console, print:    
+- After receiving the command "**Finish**" on the console, print:
     "Student\'s final assessment is \{average presentations of all presentations\}." and the program ends.
 
 All scores must be formatted to the **second decimal point**.
@@ -1986,7 +2081,7 @@ All scores must be formatted to the **second decimal point**.
 | Finish | | 
 
 ## Comments
-- 2 – the number of people on the jury - therefore gain a 2 evaluations of the presentation:
+- 2 - the number of people on the jury - therefore gain a 2 evaluations of the presentation:
     - \(6.00 \+ 5.50\) / 2 = 5.75
     - \(5.84 \+ 5.66\) / 2 = 5.75
 - \(6.00 \+ 5.50 \+ 5.84 \+ 5.66\) / 4 = 5.75 

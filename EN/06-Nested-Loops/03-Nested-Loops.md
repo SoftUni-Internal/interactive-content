@@ -3,7 +3,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-21-nested-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-A **nested loop** is a construction which consists of placing a loop (inner loop) inside the body of another loop (outer loop).
+A **nested loop** is a construction that consists of placing a loop (inner loop) inside the body of another loop (outer loop).
 
 We can nest both `for` and `while` loops.
 
@@ -34,7 +34,7 @@ This happens the following way:
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-19-20-Nested-loops-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Here is an **example** to help us unerstand this concept. 
+Here is an **example** to help us understand this concept. 
 
 The aim is to print out a rectangle made of `n` * `n` stars, in which the rows and columns making up the rectangle are rendered using two nested loops.
 

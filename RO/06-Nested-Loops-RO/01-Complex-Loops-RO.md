@@ -43,7 +43,7 @@ interactive-programming-basics-with-java-nested-loops-10-problem-numbers-from-n-
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
-      
+      // Scrieți codul dvs. aici
     }
 }
 
@@ -56,7 +56,7 @@ Scrieți un program care imprimă numerele de la  N până la 1.
 Programul primește un număr `n` și imprimă numerele de la `n` până 1. 
 
 ## Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |5| 5 4 3 2 1 |
 
@@ -120,7 +120,7 @@ interactive-programming-basics-with-java-nested-loops-12-problem-numbers-from-on
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
-      
+      // Scrieți codul dvs. aici
     }
 }
 
@@ -136,7 +136,7 @@ Scrieți un program care imprimă numerele de la  1 până la `n` cu pasul 3:
 
 
 ## Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |7| 1 4 7 |
 |10| 1 4 7 10 |
@@ -211,7 +211,7 @@ interactive-programming-basics-with-java-nested-loops-14-problem-even-powers-of-
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
-      
+      // Scrieți codul dvs. aici
     }
 }
 
@@ -226,7 +226,7 @@ Scrieți un program care imprimă puterile pare ale 2:
 * Imprimă puterile pare ale  2 până la `2n`
 
 ## Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |5| 1 4 16 |
 |10| 1 4 16 64 256 1024 |

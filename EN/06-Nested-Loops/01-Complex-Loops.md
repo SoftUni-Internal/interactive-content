@@ -51,7 +51,7 @@ for (int j = 16; j > 1; j /= 2) {
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
-      
+      // Write your code here
     }
 }
 
@@ -129,7 +129,7 @@ The program receives a number `n` and prints the numbers from `n` down to 1.
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
-      
+      // Write your code here
     }
 }
 
@@ -219,7 +219,7 @@ Create a program that prints out the numbers from 1 to `n` with a step of 3:
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
-      
+      // Write your code here
     }
 }
 

@@ -29,7 +29,7 @@ for (int i = 1; i <= n; i += 3) {
     }
 }
 ```
-# Exemplu
+## Exemplu
 Aici se află un exemplu de program în Java:
 ```java live
 int a = 3;
@@ -55,7 +55,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -69,7 +69,7 @@ Scrieți un program care:
 
 ## Exemplu
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | ----- | ----- |
 | 5 | \* |
 || \*\* |

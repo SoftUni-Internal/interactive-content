@@ -13,7 +13,8 @@
 
 **2. Nested loops**
 
-- Nesting loops inside other loops. Use cases
+- Nesting loops inside other loops
+- Use cases
 
   * Nested while-loops
   * Nested for-loops

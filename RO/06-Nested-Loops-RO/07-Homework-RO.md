@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -21,14 +21,14 @@ public class Main {
 ## Descriere
 Scrieți un program care:
 
-* Imprimă informații despre ** apartamente ** (linii impare), ** birouri ** (linii pare) și ** ultimul etaj ** (ultima linie)
-* Apartament "" A {buildingNum} {apartmentNum} ""
-* Biroul "" O {floorNum} {officeNum} ""
-* Etajul "" L {buildingNum} {apartmentNum} ""
+* Imprimă informații despre **apartamente** (linii impare), **birouri** (linii pare) și **ultimul etaj** (ultima linie)
+* Apartament `"A{buildingNum}{apartmentNum}"`
+* Biroul `"O{floorNum}{officeNum}"`
+* Etajul `"L{buildingNum}{apartmentNum}"`
 * Numerele încep întotdeauna de la 0
 
 ## Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 6 | L60 L61 L62 L63 |
 | 4| A50 A51 A52 A53 |
@@ -190,7 +190,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -200,12 +200,12 @@ public class Main {
 Scrieți un program care:
 * Citește un număr întreg - **n**
 * Generează parole personalizate, care îndeplinesc următoarele condiții:
-* Prima ** parte ** este un  număr ** par ** și nu trebuie să fie mai mare decât ** n **
-* A doua ** parte este un ** număr impar ** și nu trebuie să fie mai mare decât ** n **
-* Ultima parte ** este ** produsul ** din primele două
+* Prima **parte** este un  număr **par** și nu trebuie să fie mai mare decât **n**
+* A doua **parte este un** număr impar și nu trebuie să fie mai mare decât **n**
+* Ultima parte **este** produsul din primele două
 
 ## Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 6 | 212 236 2510 414 4312 4520 616 6318 6530 |
 
@@ -274,7 +274,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -283,9 +283,9 @@ public class Main {
 ## Descriere
 Scrieți un program care:
 * Citește un număr **number - n** de pe consolă
-* Găsește toate  **numerele cu 3 cifre** care produs al multiplicării cifrelor lor este egal cu ** n **
+* Găsește toate  **numerele cu 3 cifre** care produs al multiplicării cifrelor lor este egal cu **n**
 ## Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 3 | 113 |
 | | 131 |
@@ -331,7 +331,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -339,12 +339,12 @@ public class Main {
 [task-description]
 ## Description
 Scrieți un program care
-* Citește o ** destinație ** și ** bugetul necesar ** pentru destinație
-* Continuă să citească numere - sume de bani, până când sunt ** suficiente ** pentru destinație
-* Dacă primește comanda ** „End” **, programul se termină
+* Citește o **destinație** și **bugetul necesar** pentru destinație
+* Continuă să citească numere - sume de bani, până când sunt **suficiente** pentru destinație
+* Dacă primește comanda **"End"**, programul se termină
 
 ## Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Philippines | Going to Philippines! |
 | 1000|  |
@@ -353,7 +353,7 @@ Scrieți un program care
 | End|  |
 
 ## Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Bulgaria | Going to Bulgaria! |
 | 500|  Going to Austria! |
@@ -371,6 +371,38 @@ Scrieți un program care
 [/task-description]
 [tests]
 [test open]
+[input]
+Philippines
+1000
+550
+450
+End
+[/input]
+[output]
+Going to Philippines!
+[/output]
+[/test]
+[test open]
+[input]
+Bulgaria
+500
+200
+100
+300
+Austria
+700
+200
+200
+200
+200
+End
+[/input]
+[output]
+Going to Bulgaria!
+Going to Austria!
+[/output]
+[/test]
+[test]
 [input]
 Greece
 1000
@@ -393,7 +425,7 @@ Going to Greece!
 Going to Spain!
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 France
 2000
@@ -659,6 +691,7 @@ Going to Albania!
 
 [/slide]
 
+
 [slide hideTitle]
 # Problemă : Prime Numbers
 [code-task title="Prime Numbers" taskId="java-basics-nested-loops-prime-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -668,7 +701,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -677,15 +710,16 @@ public class Main {
 ## Descriere
 Scrieți un program care:
 
-* Citește ** două numere ** de pe consolă
-* Tipărește numărul ** prim ** din acel ** interval **
+* Citește **două numere** de pe consolă
+* Tipărește numărul **prim** din acel **interval**
 
 
 ## Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 1 | 1 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 |
 | 50|  |
+
 [hints]
 [hint]
 A prime number is a whole number that cannot be created by multiplying other whole numbers.
@@ -781,7 +815,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -789,16 +823,16 @@ public class Main {
 [task-description]
 ## Descriere
 Scrieți un program care:
-* Citește ** 3 cifre ** - n1, n2 și n3
-* Generează ** coduri PIN unice de 3 cifre **, care îndeplinesc următoarele ** condiții **:
-* ** Prima ** cifră nu trebuie să fie mai mare decât n1
-* A doua ** cifră ** nu trebuie să fie mai mare decât n2
-* Cea de-a treia ** cifră nu trebuie să fie mai mare decât n3
-* ** Prima ** și ** a treia ** cifră trebuie să fie pare
-* A doua cifră trebuie să fie un ** număr prim ** în intervalul \ [2 ... 7 \]
+* Citește **3 cifre** - n1, n2 și n3
+* Generează **coduri PIN unice de 3 cifre**, care îndeplinesc următoarele **condiții**
+* **Prima** cifră nu trebuie să fie mai mare decât n1
+* A doua **cifră** nu trebuie să fie mai mare decât n2
+* Cea de-a treia cifră nu trebuie să fie mai mare decât n3
+* **Prima** și **a treia** cifră trebuie să fie pare
+* A doua cifră trebuie să fie un **număr prim** în intervalul \[2 ... 7 \]
 
 ## Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 3 | 222 |
 | 5| 224 |
@@ -864,7 +898,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -873,16 +907,17 @@ public class Main {
 # Descriere
 Scrieți un program care:
 
-* Tipărește ** combinații de litere ** și ** contează ** combinațiile tipărite
-* Veți primi ** gama de litere ** pe prima și a doua linie
-* Pe a treia linie, veți primi o ** literă **, pe care trebuie să o ** ignorați ** - nu tipăriți combinații cu aceasta
-# Exemplu
-## Input
-- a
-- c
-- b
-## Output
-- aaa aac aca acc caa cac cca ccc 8
+* Tipărește **combinații de litere** și **contează** combinațiile tipărite
+* Veți primi **gama de litere** pe prima și a doua linie
+* Pe a treia linie, veți primi o **literă**, pe care trebuie să o **ignorați** - nu tipăriți combinații cu aceasta
+
+## Exemplu
+| **Intrare** | **Ieșire** |
+| --- | --- |
+| a | aaa aac aca acc caa cac cca ccc 8 |
+| c|  |
+| b|  |
+
 [/task-description]
 [tests]
 [test open]
@@ -920,7 +955,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -930,14 +965,16 @@ public class Main {
 Scrieți un program care:
 
 * Citește un număr n
-* Tipărește ** toate numerele din 4 cifre **, care îndeplinesc următoarele condiții:
-* Când ** le împărțiți ** în două perechi și ** adăugați ** prima cifră la a doua - rezultatul ** este egal cu ** n
-* Când adăugați primele două cifre una la cealaltă, rezultatul trebuie să fie ** divizibil ** cu n ** fără rest **
+* Tipărește **toate numerele din 4 cifre**, care îndeplinesc următoarele condiții:
+* Când **le împărțiți** în două perechi și **adăugați** prima cifră la a doua - rezultatul **este egal cu** n
+* Când adăugați primele două cifre una la cealaltă, rezultatul trebuie să fie **divizibil** cu n **fără rest**
 
 ## Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 3 | 1212 1221 2112 2121 |
+
+
 
 [/task-description]
 [tests]
@@ -951,10 +988,50 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-3
+6
 [/input]
 [output]
-1212 1221 2112 2121
+1111 1212 1221 1515 1524 1533 1542 1551 2112 2121 2415 2424 2433 2442 2451 3315 3324 3333 3342 3351 4215 4224 4233 4242 4251 5115 5124 5133 5142 5151
+[/output]
+[/test]
+[test]
+[input]
+2
+[/input]
+[output]
+1111
+[/output]
+[/test]
+[test]
+[input]
+4
+[/input]
+[output]
+1111 1313 1322 1331 2213 2222 2231 3113 3122 3131
+[/output]
+[/test]
+[test]
+[input]
+5
+[/input]
+[output]
+1414 1423 1432 1441 2314 2323 2332 2341 3214 3223 3232 3241 4114 4123 4132 4141
+[/output]
+[/test]
+[test]
+[input]
+6
+[/input]
+[output]
+1111 1212 1221 1515 1524 1533 1542 1551 2112 2121 2415 2424 2433 2442 2451 3315 3324 3333 3342 3351 4215 4224 4233 4242 4251 5115 5124 5133 5142 5151
+[/output]
+[/test]
+[test]
+[input]
+7
+[/input]
+[output]
+1616 1625 1634 1643 1652 1661 2516 2525 2534 2543 2552 2561 3416 3425 3434 3443 3452 3461 4316 4325 4334 4343 4352 4361 5216 5225 5234 5243 5252 5261 6116 6125 6134 6143 6152 6161
 [/output]
 [/test]
 [/tests]
@@ -965,7 +1042,7 @@ Scrieți un program care:
 
 
 [slide hideTitle]
-# Problemă : Clock
+# Problemă: Clock
 [code-task title="Clock" taskId="java-basics-nested-loops-clock" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -973,7 +1050,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -983,15 +1060,15 @@ public class Main {
 Scrieți un program care imprimă **orele zilei** de la o anumită oră și minutele până la to 23:59 (**inclusiv**), fiecare fiind pe o linie separată. 
 
 ## Input
-Intrarea constă din ** 2 ** linii:
-- Prima linie - ore - număr întreg în intervalul \ [0 ... 23 \]
-- A doua linie - minute - număr întreg în intervalul \ [0 ... 59 \]
+Intrarea constă din **2** linii:
+- Prima linie - ore - număr întreg în intervalul \[0 ... 23 \]
+- A doua linie - minute - număr întreg în intervalul \[0 ... 59 \]
 
 ## Output
-- Orele trebuie să fie tipărite pe consolă în formatul „\ {hour \}: \ {minutes \}”.
+- Orele trebuie să fie tipărite pe consolă în formatul "\{hour\} : \{minutes\}"
 ## Exemplu
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 8 | 08 : 05 |
 | 5 | 08 : 06 |
@@ -1157,26 +1234,26 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program pentru a tipări ** orele zilei ** de la o anumită oră, minute, secunde până la 23:59:59 (** inclusiv **), fiecare pe o linie separată.
+Scrieți un program pentru a tipări **orele zilei** de la o anumită oră, minute, secunde până la 23:59:59 (**inclusiv**), fiecare pe o linie separată.
 
 ## Input
-Intrarea este introdusă din consolă ca ** 3 ** linii:
-- Prima linie - ** ore ** - un număr întreg în intervalul \ [0 ... 23 \]
-- A doua linie - ** minute ** - un număr întreg în intervalul \ [0 ... 59 \]
-- A treia linie - ** secunde ** - un număr întreg în intervalul \ [0 ... 59 \]
+Intrarea este introdusă din consolă ca **3** linii:
+- Prima linie - **ore** - un număr întreg în intervalul \[0 ... 23 \]
+- A doua linie - **minute** - un număr întreg în intervalul \[0 ... 59 \]
+- A treia linie - **secunde** - un număr întreg în intervalul \[0 ... 59 \]
 
 ## Output
-- Rezultatul trebuie să fie tipărit în următorul format „\ {hour \}: \ {minutes \}: \ {seconds \}”.
+- Rezultatul trebuie să fie tipărit în următorul format "\{hour\} : \{minutes\} : \{seconds\}"
 ## Exemplu
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 21 | 21 : 59 : 58 |
 | 59 | 21 : 59 : 59 |
@@ -1434,7 +1511,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1444,9 +1521,9 @@ public class Main {
 
 Scrieți un program care calculează **câte soluții în numere naturale (inclusiv zero)** are ecuația:
 
-""
-x1 + x2 + x3 + x4 + x5 = n
-""
+
+`x1 + x2 + x3 + x4 + x5 = n`
+
 
 ## Input
 - Intrarea conține un singur număr - n - întreg
@@ -1455,7 +1532,7 @@ x1 + x2 + x3 + x4 + x5 = n
 - Imprimați pe consolă numărul total de soluții
 
 ## Exemplu
-| **Input** | **Output** | **Comments** | 
+| **Intrare** | **Ieșire** | **Comentarii** | 
 | --- | --- | --- |
 | 25 | 23751 | Generate all combinations of 5 digits, the first is: |
 | | | 0\+0\+0\+0\+0=0, but because it is not equal to 25,|
@@ -1467,6 +1544,7 @@ x1 + x2 + x3 + x4 + x5 = n
 | | | The third: 0\+0\+0\+2\+23=25  etc.|
 | | | After generating all possible combinations,|
 | | | the number of valid combinations is 23751.|
+
 [/task-description]
 [tests]
 [test open]
@@ -1579,24 +1657,24 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+       // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care ** calculează valoarea ASCII a câtorva cuvinte **, deoarece cuvântul cu ** cea mai mare valoare ** este câștigătorul.
+Scrieți un program care **calculează valoarea ASCII a câtorva cuvinte**, deoarece cuvântul cu **cea mai mare valoare** este câștigătorul.
 
-Valoarea unui cuvânt este calculată atunci când însumați valorile ** ASCII ale tuturor literelor din care este format **.
+Valoarea unui cuvânt este calculată atunci când însumați valorile **ASCII ale tuturor literelor din care este format**.
 
-De pe consolă citiți cuvinte până la comanda „** STOP **”, apoi tipăriți:
-- "Câștigătorul este \ {cuvântul câștigător \} - \ {valoarea cuvântului \}!"
-More about this source text
+De pe consolă citiți cuvinte până la comanda **"STOP"**, apoi tipăriți:
+- "Winner is \{winner word\} - \{value of the word\}!"
+
 
 ## Exemplu
 
-| **Input** | **Output** 
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | House | Winner is Destination - 1154! |
 | Dog | |
@@ -1604,8 +1682,10 @@ More about this source text
 | STOP | |
 
 ### Comentarii
--Prima literă este \ 'H \' și valoarea ASCII este 72, \ 'o \' are valoarea 111, \ 'u \' are valoarea 117, \ 's \' are valoarea 115, \ 'e \ 'are valoarea 101. Suma lor este 516.
-- Continuați să faceți aceleași calcule pentru celelalte cuvinte și obțineți că destinația are cea mai mare valoare - 1154.
+-Prima literă este "H" și valoarea ASCII este 72, "o" are valoarea 111, "u" are valoarea 117, "s" are valoarea 115, "e" are valoarea 101
+
+Suma lor este 516/
+- Continuați să faceți aceleași calcule pentru celelalte cuvinte și obțineți că destinația are cea mai mare valoare - 1154
 
 [/task-description]
 [tests]
@@ -1702,7 +1782,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1710,17 +1790,23 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program care citește ** un număr întreg N ** de pe consolă. Consola ar trebui să tipărească ** câte linii are numărul de cifre N **. ** Prima linie ** corespunde cu ** unitățile **, a doua cu ** zecile **, a treia cu ** sutele ** de număr etc., până când ** nu mai sunt ** cifre ** a numărului.
+Scrieți un program care citește **un număr întreg N** de pe consolă. Consola ar trebui să tipărească **câte linii are numărul de cifre N**. 
 
-Pe fiecare linie trebuie să imprimați un simbol **, care îndeplinește următoarele condiții:
+**Prima linie** corespunde cu **unitățile**, a doua cu **zecile**, a treia cu **sutele** de număr etc., până când **nu mai sunt** cifre a numărului.
 
-- Simbolul, care trebuie tipărit, poate fi găsit în tabelul \ [ASCII \] (http://www.asciitable.com/). ** Codul ASCII zecimal ** al acestuia este calculat prin adăugarea ** 33 ** la cifra numărului de intrare care corespunde unei linii date
-- Simbolul trebuie să fie tipărit ** de câte ori cifra ** corespunzătoare acestei linii
-- Dacă o linie dată ** se potrivește cu cifra 0 **, pe această linie se imprimă „** ZERO **” o dată
+Pe fiecare linie trebuie să imprimați un simbol, care îndeplinește următoarele condiții:
+
+- Simbolul, care trebuie tipărit, poate fi găsit în tabelul [ASCII](http://www.asciitable.com/)
+
+**Codul ASCII zecimal** al acestuia este calculat prin adăugarea **33** la cifra numărului de intrare care corespunde unei linii date.
+
+- Simbolul trebuie să fie tipărit **de câte ori cifra** corespunzătoare acestei lini
+
+- Dacă o linie dată **se potrivește cu cifra 0**, pe această linie se imprimă **"ZERO"** o dată
 
 ## Exemplu
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 2049 | \*\*\*\*\*\*\*\*\* | 
 | | %%%% |
@@ -1728,20 +1814,30 @@ Pe fiecare linie trebuie să imprimați un simbol **, care îndeplinește următ
 | | \#\# |
 
 ### Commentarii
-- Numărul 2049 are patru cifre, așa că vom imprima patru linii.
-- Prima linie corespunde cifrei 9. Adunăm 33 la 9 și obținem 42.
-- Acesta este codul ASCII zecimal al simbolului pe care ar trebui să fie tipărit pe prima linie.
-- Din tabelul ASCII știm că simbolul corespunzător al lui 42 este „\ *”.
-- Deoarece la prima linie corespunde cifra 9 imprimăm de 9 ori „\ *”.
-- Pentru a doua linie cifra este 4. 4 \ + 33 = 37. Folosind tabelul ASCII, descoperim că simbolul de imprimat este „%”.
-- Tipărim „%” de 4 ori.
+- Numărul 2049 are patru cifre, așa că vom imprima patru linii
+- Prima linie corespunde cifrei 9
+
+Adunăm 33 la 9 și obținem 42.
+
+- Acesta este codul ASCII zecimal al simbolului pe care ar trebui să fie tipărit pe prima linie
+- Din tabelul ASCII știm că simbolul corespunzător al lui 42 este "\*"
+- Deoarece la prima linie corespunde cifra 9 imprimăm de 9 ori "\*"
+- Pentru a doua linie cifra este 4. 4 \ + 33 = 37
+Folosind tabelul ASCII, descoperim că simbolul de imprimat este "%".
+- Tipărim "%" de 4 ori
 - A treia linie se potrivește cu o cifră 0. Pe această linie tipărim ZERO o dată.
-- Ultima cifră a numărului este 2. 2 \ + 33 = 35.
-- Din tabelul ASCII găsim simbolul de imprimat - '\ #' și îl imprimăm de două ori.
+- Ultima cifră a numărului este 2. 2 \+ 33 = 35.
+- Din tabelul ASCII găsim simbolul de imprimat - '\#' și îl imprimăm de două ori
 
 ### Sfaturi
-- Citiți numărul ca un șir, salvați lungimea acestuia într-o variabilă folosind metoda ** length () **. Găsiți mai multe ** informații ** despre aceasta pe Internet
-- Pentru a lua ultima cifră a numărului, împărțiți-l la 10 (** num% 10 **) și salvați-l într-o variabilă. Apoi ** eliminați ultima cifră a numărului **, împărțind-o la 10 (** num / 10 **) astfel încât următoarea cifră de luat să fie din nou ultima.
+- Citiți numărul ca un șir, salvați lungimea acestuia într-o variabilă folosind metoda **length()**
+
+Găsiți mai multe **informații** despre aceasta pe Internet.
+
+- Pentru a lua ultima cifră a numărului, împărțiți-l la 10 (**num% 10**) și salvați-l într-o variabilă
+
+Apoi **eliminați ultima cifră a numărului**, împărțind-o la 10 (**num / 10**) astfel încât următoarea cifră de luat să fie din nou ultima.
+
 [/task-description]
 [tests]
 [test open]
@@ -1939,33 +2035,33 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Cursul „Antrenează trainerii” se încheie și abordările finale ale evaluării.
+Cursul "Antrenează trainerii" se încheie și abordările finale ale evaluării.
 
-Ajutați juriul care, scriind un program, să calculeze ** scorul mediu ** al ** fiecărei prezentări ** de către un student și ** media tuturor acestora **.
+Ajutați juriul care, scriind un program, să calculeze **scorul mediu** al **fiecărei prezentări** de către un student și **media tuturor acestora**.
 
 ## Input
-- Pe primul rând al consolei citiți numărul de persoane din juriu - ** n ** - un număr întreg în intervalul \ [1 ... 20 \]
-- Apoi, pe o linie separată, citiți numele prezentării - ** Șir **
-- Pentru fiecare prezentare a noii linii se citește ** n - numărul de evaluări ** - un număr real în intervalul \ [2.00 ... 6.00 \]
+- Pe primul rând al consolei citiți numărul de persoane din juriu - **n** - un număr întreg în intervalul \[1 ... 20 \]
+- Apoi, pe o linie separată, citiți numele prezentării - **Șir**
+- Pentru fiecare prezentare a noii linii se citește **n - numărul de evaluări** - un număr real în intervalul \[2.00 ... 6.00 \]
 
 ## Output
-- După calcularea ** scorului mediu ** pentru o anumită prezentare, tipăriți pe consolă:
-    "\ {numele prezentării \} \ - \ {scor mediu \}."
-- După ce ați primit comanda „** Finish **” pe consolă, tipăriți:
-     "Evaluarea finală a studentului este \ {prezentări medii ale tuturor prezentărilor \}." iar programul se încheie.
+- După calcularea **scorului mediu** pentru o anumită prezentare, tipăriți pe consolă:
+   "\{name of the presentation\} \- \{average score\}."
+- După ce ați primit comanda **"Finish"** pe consolă, tipăriți:
+      "Student\'s final assessment is \{average presentations of all presentations\}." iar programul se încheie.
 
-Toate scorurile trebuie să fie formatate la ** a doua zecimală **.
+Toate scorurile trebuie să fie formatate la **a doua zecimală**.
 
 ## Exemplu
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 2 | While-Loop - 5.75. |
 | While-Loop | For-Loop - 5.75. |
@@ -1977,10 +2073,11 @@ Toate scorurile trebuie să fie formatate la ** a doua zecimală **.
 | Finish | | 
 
 ## Comentarii
-- 2 – numărul persoanelor din juriu - prin urmare, obțineți 2 evaluări ale prezentării:
+- 2 - numărul persoanelor din juriu - prin urmare, obțineți 2 evaluări ale prezentării:
     - \(6.00 \+ 5.50\) / 2 = 5.75
     - \(5.84 \+ 5.66\) / 2 = 5.75
-- \(6.00 \+ 5.50 \+ 5.84 \+ 5.66\) / 4 = 5.75 
+- \(6.00 \+ 5.50 \+ 5.84 \+ 5.66\) / 4 = 5.75
+
 [/task-description]
 [tests]
 [test open]

@@ -8,7 +8,7 @@
 
 [image assetsSrc="06-nested-loops-clock-1200.png" /]
 
-Let us take a look at the code logic representing a clock starting form **11:00** AM. 
+Let us take a look at the code logic representing a clock starting from **11:00** AM. 
 
 The minutes will gradually increase by **1** until they reach **59**. 
 
@@ -23,9 +23,9 @@ The calculates hours, while the inner one is responsible for the minutes.
 ## Pseudocode
 
 ```
-for h which is in range from 0 to 23
-    for m which is in range from 0 to 59
-        print h and m in format similar to the clock
+for h which is in a range from 0 to 23
+    the form which is in the range from 0 to 59
+        print h and m in a format similar to the clock
 ```
 
 [/slide]
