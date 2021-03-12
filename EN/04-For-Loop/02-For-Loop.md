@@ -56,7 +56,7 @@ The loop repeats 10 times and each of these repetitions is called an **"iteratio
 [slide hideTitle]
 # Problem with Solution: Print Sum of N Numbers
 
-interactive-programming-basics-with-java-for-loops-15-problem-print-sum-of-n-numbers
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/EN/interactive-programming-basics-with-java-for-loops-15-problem-and-solution-print-sum-of-n-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Print Sum of N Numbers" taskId="java-basics-for-loop-print-sum-of-n-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -90,7 +90,7 @@ Create a program, which:
 |  | 15 |
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 5
 [/input]

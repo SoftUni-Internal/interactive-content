@@ -82,7 +82,7 @@ Scrieți un program care:
 |  | 15 |
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 5
 [/input]
