@@ -106,11 +106,11 @@ Create a `printRow()` method to easily reuse code.
 
 | **Input** | **Output** |
 | --- | --- |
-| 3 |<pre>   \*</pre>|
-|  |<pre>  \* \* </pre>|
-|  |<pre> \* \* \* </pre>|
-|  |<pre>  \* \* </pre>|
-|  |<pre>   \* </pre>|
+| 3 |&nbsp; &nbsp;\* |
+|  |&nbsp; \* \* |
+|  |&nbsp;\* \* \* |
+|  |&nbsp; \* \* |
+|  |&nbsp; &nbsp;\* |
 
 ## Example 3
 
