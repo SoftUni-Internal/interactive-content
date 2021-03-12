@@ -20,11 +20,11 @@ By default, **enums** start at 0.
 
 Every next value is incremented by 1.
 
-## Customized Enumetations
+## Customized Enumerations
 
 We can **customize** `enum` values.
 
-**Example:** Days of week
+**Example:** Days of the week
 
 ```java
 enum Day { 
@@ -69,7 +69,7 @@ Create a class `PriceCalculator` that calculates the total price of a holiday, g
 
 The **discount type** and **season** should be **enums.**
 
-Use the class in your `main()` method to read input and **print** on the console the **price** of the **whole holiday**.
+Use the class in your `main()` method to read input and **print** the **price** of the **whole holiday** to the console.
 
 The price per day will be multiplied depending on the season by:
 - **1** during Autumn
@@ -83,12 +83,12 @@ The discount is applied to the total price and is one of the following:
 - 0% if there is no discount - **None**
 
 ## Input
-On a **single line** you will receive all the **information** about the **reservation** in the format:
+You will receive all the **information** about the **reservation** on a **single line** in the following format:
 
 “`<pricePerDay>` `<numberOfDays>` `<season>` `<discountType>`”, where:
 
 - The price per day will be a valid decimal in the range `[0.01…1000.00]`
-- The number of days will be a valid integer in range `[1…1000]`
+- The number of days will be a valid integer in the range `[1…1000]`
 - The season will be one of: **Spring, Summer, Autumn, Winter**
 - The discount will be one of: **VIP, SecondVisit, None**
 
