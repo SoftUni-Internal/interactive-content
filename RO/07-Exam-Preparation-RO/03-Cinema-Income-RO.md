@@ -55,7 +55,7 @@ Mai întâi, tipăriți pe consolă o linie:
 
 [hint]
 În funcție de filmul și băutura alese, stabiliți prețul biletului 
-/hint]
+[/hint]
 
 [hint]
 Verificați dacă este o reducere și calculați prețul total
