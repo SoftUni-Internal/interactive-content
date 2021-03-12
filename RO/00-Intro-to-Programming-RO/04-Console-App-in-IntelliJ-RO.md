@@ -52,7 +52,9 @@ Ca să furnizăm o explicație și mai tehnică, `out` este un membru static al 
 
 [slide hideTitle]
 # Începerea programului
-Pentru a începe programul, apăsați `[Ctrl + Shift + F10]`. Dacă nu sunt erori, programul va fi rulat. 
+Pentru a începe programul, apăsați `[Ctrl + Shift + F10]`. 
+
+Dacă nu sunt erori, programul va fi rulat. 
 
 Rezultatul va apărea pe consolă (fereastra terminală):
 
@@ -68,8 +70,3 @@ Hello Java
 ```
 [/slide]
 
-[slide hideTitle]
-
-# Exemplu: Crearea unei aplicații pentru consolă în Intellij IDEA
-
-[/slide]

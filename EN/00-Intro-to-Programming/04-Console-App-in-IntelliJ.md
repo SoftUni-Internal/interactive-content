@@ -88,9 +88,3 @@ Hello Java
 ```
 [/slide]
 
-[slide hideTitle]
-# Example: Creating Console App in IntelliJ IDEA
-
-Java-basics-introduction-to-programming-26-30-Console-app-in-inteliJ-IDEA-demo
-
-[/slide]

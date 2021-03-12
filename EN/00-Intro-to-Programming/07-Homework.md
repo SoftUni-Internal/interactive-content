@@ -67,7 +67,7 @@ public class Main {
 
 Write a Java program, which:
 
-* Calculates the value of 5 * 5
+* Calculates the value of 5 \* 5
 * Prints the result
 [/task-description]
 [code-io /]

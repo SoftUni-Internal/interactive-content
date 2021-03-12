@@ -13,7 +13,7 @@ Unele dintre greșelile de bază pe care le putem întâlni:
 
 - O sintaxă greșită
 
-- Lipsa ghilimelelro  "" sau parantezelor ()
+- Lipsa ghilimelelro  "" sau parantezelor `()`
 
 
 [/slide]
