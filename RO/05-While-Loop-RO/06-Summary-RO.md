@@ -34,7 +34,7 @@ while (true) {
 
 - Buclele imbricate și cum să le folosim
 
-  * Bucle în interiorul buclelor
+  * bucle în interiorul buclelor
 
 - Combinarea buclelor imbricate **for** și **while**
 

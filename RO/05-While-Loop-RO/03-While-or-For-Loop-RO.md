@@ -5,7 +5,7 @@ Buclele `while` și `for` **repetă** o secvență de **code**.
 
 Dar există diverse situații în care scrierea codului necesită fie prima buclă, fie celelalte. 
 
-Atunci când știm ** de câte ori exact** vrem să repetăm bucla într-o anumită secvență de cod, folosim bucla  `for`.
+Atunci când știm **de câte ori exact** vrem să repetăm bucla într-o anumită secvență de cod, folosim bucla  `for`.
 ```java live
 for (int i = 0; i <= 5; i++) {
     System.out.println(i);
@@ -21,6 +21,7 @@ Dar apar mai multe probleme **complexe** atunci când numărul iterațiilor  dep
 Aceasta înseamnă că nu putem ști în avans **de câte ori** trebuie să repetăm bucla. 
 
 In această situație este mai bine să folosim bucla `while`.
+
 ```java live
 Scanner scanner = new Scanner(System.in);
 String command = scanner.nextLine();
@@ -51,7 +52,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -60,7 +61,7 @@ public class Program {
 ## Descriere
 Scrieți un program care:
 
-*  Citește numerele din consolă până ajunge la un **număr impar**
+* Citește numerele din consolă până ajunge la un **număr impar**
 * Imprimă numărul **impar** 
 
 ## Exemplu
@@ -113,7 +114,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -123,7 +124,7 @@ public class Program {
 Scrieți un program care:
 
 * Citește un număr de pe consolă 
-* Citește următoarele comenzi:
+* Citește următoarele comenzi
 * **Add** - Аdaugă 1 numărului
 * **Subtract** - Scade 1 din număr
 * **END** -  Imprimă numărul și oprește programul

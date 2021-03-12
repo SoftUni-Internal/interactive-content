@@ -5,7 +5,7 @@
 
 Both `while-loop` and `for-loop` **repeat** a block of **code**.
 
-There are different situations when we have to choose the right loop in order to achieve our goals. 
+There are different situations when we have to choose the right loop to achieve our goals. 
 
 When we know **exactly how many times** we want to loop through a block of code, we use а `for-loop`. 
 ```java live
@@ -23,7 +23,7 @@ A **for-loop** is more structured than а **while-loop**. The keyword `for` is u
 - Statement 3 increases a value (`i`++) each time the code block in the loop has been executed
 
 
-There could be many **complex** problems where the number of iterations depends on a certain **condition** so that it can not be predicted beforehand. 
+There could be many **complex** problems where the number of iterations depends on a certain **condition** so that it can not be predicted. 
 
 In other words, if the number of iteration is not fixed, it is recommended to use a `while-loop`.
 

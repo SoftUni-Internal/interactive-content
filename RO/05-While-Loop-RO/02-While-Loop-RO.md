@@ -2,7 +2,9 @@
 # Bucla While
 In programare bucla numită `while` se folosește atunci când vrem să **repetăm** executarea unei anumite logici în timp ce condiția este în desfășurare.
 
-Prin **"condiție"**, înțelegem fiecare **expresie** care returnează`true` sau `false`. Când **condiția** este **falsă**, bucla while este **întreruptă**, iar programul **continuă** să execute codul rămas după buclă.  
+Prin **"condiție"**, înțelegem fiecare **expresie** care returnează`true` sau `false`. 
+
+Când **condiția** este **falsă**, bucla while este **întreruptă**, iar programul **continuă** să execute codul rămas după buclă.  
 
 [image assetsSrc="05-use-case-while.png" /]
 
@@ -13,7 +15,7 @@ while (condition) {
 }
 ```
 
-In codul din exemplul de mai sus, condiția este orice **expresie care returnează un rezultat boolean** – `true` sau `false`. 
+In codul din exemplul de mai sus, condiția este orice **expresie care returnează un rezultat boolean** - `true` sau `false`. 
 
 Aceasta determină cât timp corpul buclei va fi repetat și se numește `condi'ia buclei`. 
 
@@ -25,7 +27,7 @@ Apoi, condiția de intrare este verificată și dacă este din nou `true`, corpu
 
 Totul se repetă mereu și mereu **până când la un moment dat expresia condițională returnează o valoare** `false`.
 
-# Exemplu: Secvența de Numere 2k+1
+## Exemplu: Secvența de Numere 2k+1
 Scrieți un program care imprimă toate **numerele ≤ n** al seriei: **1, 3, 7, 15, 31, …,** dacă fiecare număr următor = **numărul anterior* 2 + 1**.
 
 Iată cum rezolvăm problema:
@@ -54,7 +56,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -116,7 +118,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul dvs. aici
     }
 }
 ```

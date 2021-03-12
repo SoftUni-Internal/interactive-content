@@ -5,7 +5,9 @@
 
 In programming, a **while-loop** is used when we want to **repeat** the execution of a certain logic while a specified condition is reached. 
 
-By **"condition"**, we understand every **expression** that returns `true` or `false`. If the **condition** returns **false**, the while loop is **interrupted**, and the program **continues** to execute the remaining code after the loop. 
+By **"condition"**, we understand every **expression** that returns `true` or `false`. 
+
+If the **condition** returns **false**, the while loop is **interrupted**, and the program **continues** to execute the remaining code after the loop. 
 
 [image assetsSrc="05-use-case-while.png" /]
 
@@ -16,7 +18,7 @@ while (condition) {
 }
 ```
 
-In the example above, the condition can be any **expression that returns a Boolean result** – `true` or `false`. 
+In the example above, the condition can be any **expression that returns a Boolean result** - `true` or `false`. 
 
 How many times the loop body will be repeated depends on the `condition`. 
 
@@ -32,12 +34,17 @@ Then, the control comes out of the loop and jumps to the next statement after th
 
 
 ## Example: Sequence of Numbers 2k+1
-Create a program that prints all **numbers that are smaller than or equal to `n`**. The first number will be equal to **1**. The second number will be equal to **1*2+1**, which is equal to **3**. Each next number is calculated by the formula: **previous number * 2 + 1**.
-Therefore, the first few numbers are: **1, 3, 7, 15, 31, …,** 
+Create a program that prints all **numbers that are smaller than or equal to** `n`. 
+
+The first number will be equal to **1**. The second number will be equal to 1 * 2 + 1, which is equal to **3**. 
+
+Each next number is calculated by the formula: **previous number * 2 + 1**.
+
+Therefore, the first few numbers are **1, 3, 7, 15, 31, …,** 
 
 Here is how we can solve the problem:
 - First, we create a **num** variable for the current number, to which we assign an **initial value of 1**
-- For a loop condition, we specify that **the current number should be smaller than or equal to `n`**
+- For a loop condition, we specify that **the current number should be smaller than or equal to** `n`
 - In **the body of the loop**, we print the value of the **current number**, and we increase it by using the formula provided in the problem's description
 
 Here is a sample implementation of this idea:
