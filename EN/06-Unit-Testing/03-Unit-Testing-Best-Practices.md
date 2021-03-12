@@ -6,16 +6,16 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-25-26-assertions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We will take a look at some good practices in Unit Testing.
+We will take a look at the best practices in Unit Testing.
 
-`assertEquals(expected, actual)` method gives us better description details when we are working with values than `assertTrue()` method.
+The `assertEquals(expected, actual)` method gives us more details when working with values, compared to `assertTrue()`.
 
-As an example we can observe the following code when we use `assertTrue()` and the output of it:
+In this example, we can observe the following code when we use `assertTrue()` and the output of it:
 ``` java
 Assert.assertTrue(account.getBalance() == 50);
 ```
 
-Output: 
+The expected **output** is: 
 
 ```
 java.lang.AssertionError <3 internal calls>
@@ -26,7 +26,7 @@ Compared to the output when we use `assertEquals()`:
 Assert.assertEquals(50, account.getBalance());
 ```
 
-Output: 
+**Output:**
 
 ```
 java.lang.AssertionError:
@@ -48,7 +48,7 @@ Another good practice is to avoid using "**magic numbers**".
 
 We must use "**constants**" instead.
 
-Lets take this simple example:
+Let us take a look at this simple example:
 
 ``` java
 private static final int AMOUNT = 100;
@@ -61,9 +61,9 @@ public void depositShouldAddMoney() {
 }
 ```
 
-We observe that it is better to declare our `int` variable outside of the test and use it as a constant.
+As you can see, it is better to declare our `int` variable outside of the test and use it as a constant.
 
-This is better because if we need to change our `amount` variable, we can change it only **outside** of the test and do not worry about the logic inside.
+By doing so, if we need to change our `amount` variable, we can change it only **outside** of the test, without worrying about the logic inside.
 
 [/slide]
 
@@ -73,15 +73,15 @@ This is better because if we need to change our `amount` variable, we can change
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-29-before-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-When we write tests, it is common to find that several tests need similar object to be created before they can run.
+When we write tests, it is common to find that several tests need a similar object to be created before they can run.
 
 We can use `@Before` annotation to create this behavior.
 
-The method with that annotation will be executed each time before running the next test.
+A method, designated with `@Before` will be executed each time before running the next test.
 
 This will ensure consistent and clean data for each test, making our tests more reliable.
 
-Lets take a look with this simple example:
+Let us take a look at this simple example:
 
 ``` java
  public class Example {
@@ -92,10 +92,10 @@ Lets take a look with this simple example:
     }
     
     @Test public void size() {
-      // ... our test logic here
+      // ... test logic goes here
     }
     @Test public void remove() {
-       // ... our test logic here
+       // ... test logic
     }
 ```
 
@@ -109,25 +109,23 @@ Our initialize method will execute before each test.
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-30-naming-tests-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Test naming is very important. 
+Test naming is crucial, especially for long-term projects.
 
-Especially for the long term projects.
+There are  multiple **recommendations** regarding test names:
 
-There are few recommendations regarding test names:
+- Test names should use **business domain terminology**
 
-- Test names should use business domain terminology
+- Test names should be **descriptive** and **readable**
 
-- Test names should be descriptive and readable
+- Our tests should express a **specific requirement**
 
-- Our tests should express a specific requirement
+- Some of our test names could include the **name** of the tested **method** or **class**
 
-- Some of ours test names could include the name of the tested method or class
+- We must write **clean names**
 
-- We must write clean names
+- Do not be afraid to write **long names**, as long as they are necessary to explain the test
 
-- Do not be afriad to write long names, as long as they need to be to explain the test
-
-Lets see some examples of **bad** test naming:
+Let us see some examples of **bad** test naming:
 
 ```
 increaseDMG {}
@@ -136,7 +134,7 @@ testTransfer()
 idontrememberwhatiamtesting {}
 ```
 
-Here is some **proper** test naming examples:
+Here are some **proper** test naming examples:
 
 ```
 depositAddsMoneyToBalance() {}
@@ -157,14 +155,14 @@ Refactor the tests for **Axe** and **Dummy** classes
 
 Make sure that:
 - **Names** of test methods are **descriptive**
-- You use **appropriate assertions** (assert equals vs assert true)
+- You use **appropriate assertions** ("assert equals" vs. "assert true")
 - You use **assertion messages**
 - There are **no magic numbers**
-- There is **no code duplication** (Do not Repeat Yourself)
+- There is **no code duplication** ("Do Not Repeat Yourself")
 
-# Solution: Refactor Tests
+## Solution
 
-Extract constants and private fields for `Axe` class
+Extract constants and private fields for the `Axe` class:
 ```java
 private static final int AXE_ATTACK = 10;
 private static final int AXE_DURABILITY = 1;
@@ -185,7 +183,7 @@ public void initializeTestObjects(){
 }
 ```
 
-Make use of constants and private fields, as well as add assertion messages
+Make use of constants and private fields, as well as assertion messages:
 ```java
 @Test
 public void weaponAttackLosesDurability(){
@@ -199,7 +197,7 @@ public void weaponAttackLosesDurability(){
 }
 ```
 
-Follow the same logic for other test methods and `TestDummy` class
+Follow the same logic for other test methods and the `TestDummy` class.
 
 
 [/slide]
