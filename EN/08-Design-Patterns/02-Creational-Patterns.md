@@ -106,14 +106,15 @@ Let us take a look at this example:
 ``` java
 public abstract class Prototype {
     private String id;
+    
     // This is our Prototype Class
     public Prototype(String id) {
         this.id = id; 
-        }
+    }
 
     public String getId() { 
         return this.id; 
-        }
+    }
     public abstract Prototype clone();
 }
 ```
@@ -124,10 +125,11 @@ class ConcretePrototype extends Prototype {
     public ConcretePrototype(String id) {
         super(id);
     }
+    
     @Override
     public Prototype clone() {
         return (Prototype)this.clone(); 
-        }
+    }
 }
 ```
 
@@ -191,7 +193,7 @@ public final class Hero {
     this.weapon = weapon;
     }
 
-    //...getters
+    //... getters
 }
 ```
 
@@ -210,6 +212,7 @@ public class Builder {
         if (race == null || name == null) {
             throw new IllegalArgumentException("Race and name can not be null");
         }
+	
         this.race = race;
         this.name = name;
     }
