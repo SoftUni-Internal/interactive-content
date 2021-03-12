@@ -3,7 +3,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-28-30-nested-while-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The use of nested `while` loops is very similar to the one of the `for`.
+The use of nested `while-loops` is very similar to the one of `for-loops`, however while-loops are used when we do not know the exact number of necesary repetitions.
 
 Here is the syntax in Java:
 ```java
@@ -54,10 +54,10 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Write a program that:
+Create a program That:
 
-* Read **the height** of a triangle in the console
-* Print a **star triangle**
+* Reads **the height** of a triangle
+* Prints a **triangle made of asterisks**
 ## Example
 
 | **Input** |**Output**|
@@ -120,13 +120,13 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Write a program that:
+Create a program that:
 
-- Continuously read integers until "**End**" is entered​
+- Continuously reads integers until "**End**" is entered​
 
-  - print the sum of digits for each integer​
+  - prints the sum of all received **digits** for each integer​
 
-- Finally, print "**Goodbye**"
+- Finally, prints "**Goodbye**"
 
 ## Example
 
