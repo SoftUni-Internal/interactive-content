@@ -20,7 +20,7 @@ They comprise of **two main ideas**:
 
 [slide hideTitle]
 
-# Singleton Design Pattern
+# Singleton Pattern
 
 The singleton pattern is one of the most used creational design patterns
 
@@ -59,7 +59,7 @@ Let us see what is going on in our `Main` class:
 public class Main {
     public static void main(String[] args) {
 
-        // If we try to create a singleton object via the constructor, we will get an error:
+        // Trying to create a singleton object via the constructor results in an error:
 	// Compile Time Error: The constructor SingleObject() is not visible
 	// Singleton object = new Singleton();
 
@@ -163,7 +163,7 @@ Usage of the builder pattern:
 
 Imagine that we want to create a character for our MMORPG game. 
 
-We can make our constructor create the character for us.
+We can make our constructor **create the character** for us.
 
 Take a look at this code example:
 
@@ -197,7 +197,7 @@ public final class Hero {
 }
 ```
 
-And that is how our builder class should be looking:
+And that is how our **Builder** class should be looking:
 
 ``` java
 public class Builder {
