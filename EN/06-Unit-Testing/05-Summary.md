@@ -6,20 +6,20 @@
 
 ## In this lesson you learned:
 
-- Unit Testing helps us build solid code
-- We use AAA pattern to structure our unit tests
+- Unit testing helps us build solid code
+- We use the AAA pattern to structure our unit tests
 
 ```java
 public class AxeTests{
 
   @Test
   public void weaponAttacksLosesDurability(){
-    //Arrange
+    // Arrange
         Axe axe = new Axe(10, 10);
         Dummy dummy = new Dummy(10, 10);
-    //Act
+    // Act
         axe.attack(dummy);
-    //Assert
+    // Assert
         Assert.assertEquals(9, age.getDurabilityPoints());
   }
 }
@@ -27,25 +27,26 @@ public class AxeTests{
 
 - We need to use descriptive names for our tests
 
-**Bad**
+**The following names are bad:**
 ```
 increaseDMG {}
 test1() {}
 testTransfer()
 idontrememberwhatiamtesting {}
 ```
-**Good**
+
+**This is an example of good naming:**
 ```
 depositAddsMoneyToBalance() {}
 depositNegativeShouldNotAddMoney() {}
 transferSubtractsFromSourceAddsToDestAccount() {}
 ```
 
-- Looses coupling and improves design by using dependency injection
-- Difference between fake implementation and mocking objects
+- Dependency injection looses coupling and improves design 
+- The difference between fake implementation and mocking objects
 
 ## In the next lesson, you will learn:
 
-- The concept of Test Driven Development
+- The concept of test-driven development
 
 [/slide]
