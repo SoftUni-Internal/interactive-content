@@ -69,7 +69,7 @@ public void testGetInfoById() {​
   AccountManager manager = new AccountManager() {​  
     // Anonymous class / Fake Object
     public Account getAccount(String id) { … } ​    
-    //Fake implementation with fixed behaviour
+    //Fake implementation with fixed behavior
   }​
 
   Bank bank = new Bank(manager);​
