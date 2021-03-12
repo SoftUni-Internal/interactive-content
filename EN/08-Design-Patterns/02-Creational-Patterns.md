@@ -193,7 +193,7 @@ public final class Hero {
     this.weapon = weapon;
     }
 
-    //... getters
+    // getters...
 }
 ```
 
