@@ -1,3 +1,5 @@
+# Hiding Implementation
+
 [slide hideTitle]
 
 # Encapsulation
@@ -5,10 +7,13 @@
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-3-4-5-6-encapsulation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Encapsulation is the process of wrapping code and data together into a single unit.**
-- Increase flexibility and extensibility of the code
-- Reduce complexity
+
+This practice bring numerous benefits, such as:
+
+- Increased flexibility and extensibility of the code
+- Reduced complexity
 - Structural changes remain local
-- Allow validation and data binding
+- Allows for validation and data binding
 
 **Objects fields must be private**:
 
