@@ -1,6 +1,6 @@
 # Practici corespunzătoare pentru denumiri
 
-[slide]
+[slide hideTitle]
 # Metode de denumire
 
 Numele unei metode ar trebui să fie mereu un verb.
