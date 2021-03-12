@@ -280,7 +280,7 @@ Creați un program care citește un **număr întreg** și **înmulțește cu su
 54
 [/output]
 [/test]
-[test opne]
+[test open]
 [input]
 -12345
 [/input]
