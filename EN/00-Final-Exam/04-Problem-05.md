@@ -56,7 +56,7 @@ One line is printed to the console:
 | --- | --- |
 |careOfPuppy([4, 130, 345, 400, 180, 230, 120, 'Adopted']) | Food is enough! Leftovers: 2595 grams. |
 |careOfPuppy([2, 999, 456, 999, 999, 123, 456, 'Adopted']) | Food is not enough. You need 2032 grams more. |
-|careOfPuppy([4, 130, 345, 400, 180, 230, 120, 'Adopted']) | Food is enough! Leftovers: 2595 grams. |
+|careOfPuppy([3, 1000, 1000, 1000, 'Adopted']) | Food is enough! Leftovers: 0 grams. |
 
 [hints]
 [hint]
