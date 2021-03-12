@@ -20,10 +20,10 @@ if (condition1) {
 
 ## Example: Personal Titles
 Depending on someones **age** (integer) and their **gender** (**m** / **f**), print their personal title:
--  "Mr." – a man (gender "m") – 16 or older
--  "Master" – a boy (gender "m") - under 16 years old
--  "Ms." – a woman (gender "f") – 16 or molder
--  "Miss" – a girl (gender "f") - under 16 years old
+-  "Mr." - a man (gender "m") - 16 or older
+-  "Master" - a boy (gender "m") - under 16 years old
+-  "Ms." - a woman (gender "f") – 16 or molder
+-  "Miss" - a girl (gender "f") - under 16 years old
 
 ## Solution: Personal Titles
 We should notice that the **output** of the program **depends on a few conditions**. 
@@ -55,7 +55,7 @@ if (age < 16) {
 }
 ```
 
-# Deep nesting
+## Deep nesting
 Nesting **more than three levels of conditional statements** is not considered a good practice.
 
 We can optimize the code structure by using another type of conditional statement.
@@ -87,15 +87,16 @@ Create a program that:
   * Reads a **product** and whether it is a **weekday** or a **weekend** 
   * Prints out the **price**, formatted up to 2nd decimal place, based on the price table below
 
-|Product|Weekday|Weekend| 
-|-------|-------|-------|
+|**Product**|**Weekday**|**Weekend**| 
+|---|---|---|
 |Banana|2.50|2.70|
 |Apple|1.30|1.60|
 |Kiwi|2.20|3.00|
-# Example
 
-| Input | Output |
-| ------- | ------- |
+## Example
+
+| **Input** | **Output** |
+| --- | --- |
 | Banana | 2.50 |
 | Weekday |
 
@@ -150,17 +151,18 @@ Create a program, that:
 
   * Reads **3 numbers** from the console
   * Prints out **the greatest** number
-# Example
 
-| Input | Output |
-| ------- | ------- |
+## Example
+
+| **Input** | **Output** |
+| --- | --- |
 | 1 | 3 |
 | 2 |
 | 3 |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 1
 2

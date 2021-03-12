@@ -25,9 +25,14 @@ switch (selector) {
 }
 ```
 
-- We put **the variable** that we want to **compare** inside the **brackets after the `switch` operator**. This variable is called **"selector"**
+- We put **the variable** that we want to **compare** inside the **brackets after the** `switch` operator
+
+This variable is called **"selector"**.
+
 - Note, that **the data types must be comparable** (numbers, strings)
+
 - The program starts **comparing** the variable with the `labels` of each `switch case`
+
 - Upon a match, the execution of this code block begins and continues until it reaches the `break` operator
 
 In some programming languages (like `C` and `C++`) the `break` operator can be skipped allowing us to execute code from other `case` constructions.
@@ -38,8 +43,8 @@ When **no matches** are **found**, the `default` construction is being executed,
 
 
 
-# The default case
-The default case is executed if **there are no prevous cases matching the switch `selector`**.
+## The default case
+The default case is executed if **there are no prevous cases matching the switch** `selector`.
 
 If a default case is not present and there are no case matches, the switch statements is exited and the program continues executing the code after it.
 

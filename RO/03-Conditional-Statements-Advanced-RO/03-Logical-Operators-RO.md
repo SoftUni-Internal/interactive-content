@@ -8,7 +8,7 @@ Putem folosi:
 * Operatorul  logic **negare** (`!`) 
 * **Paranteze** (`()`).
 
-# Operatorii logici "ȘI", "SAU" și "NU"
+## Operatorii logici "ȘI", "SAU" și "NU"
 Acesta este un scurt exemplu care demonstrează puterea logicii **"ȘI"**, logică **"SAU"** și logică **"NU"**:
 ```java
 Scanner scanner = new Scanner(System.in);
@@ -29,7 +29,7 @@ Vom explica logică **ȘI** (`&&`), logica **SAU** (`||`) și logica **NU** (`!`
 [/slide]
 
 [slide hideTitle]
-# Logica ȘI
+# Logica "ȘI"
 După cum am văzut, în unele sarcini trebuie să facem **multe verificări simultan**.
 
 Dar ce se întâmplă atunci când pentru a executa un anumit cod **mai trebuie** executate condiții și **nu vrem** să facem o **negare** (`else`) pentru fiecare dintre ele?
@@ -40,14 +40,14 @@ Logica **"ȘI"** (operator `&&`) înseamnă că trebuie îndeplinite câteva con
 
 Se aplică următorul tabel al veridicității:
 
-| Operand1 | Operand2 | ȘI |
-|---|---|---|---|
+| **Operand Unu**| **Operand Două** | **ȘI** |
+|---|---|---|
 | adevărat | adevărat | adevărat |
 | adevărat | fals | fals |
 | fals | adevărat | fals |
 | fals | fals | fals |
 
-# Cum funcționează operatorul `&&`?
+## Cum funcționează operatorul `&&`?
 Operatorul `&&` acceptă **câteva instrucțiuni booleene** (condiționate), care au o valoare `adevărată` sau `falsă` și returnează o instrucțiune bool ca rezultat.
 
 Folosindu-l în loc de câteva blocuri imbricate `if`, faceți codul **mai lizibil**, **ordonat** și **ușor** de întreținut.
@@ -76,16 +76,17 @@ Programul va rula în modul **următor**:
 - De aceea evaluarea lui `d` este **sarită**și întreaga expresie este calculată ca `falsă`
 
 # Exemplu: Punct într-un dreptunghi
-Verifică dacă **`punctul {x, y}`** este plasat **în interiorul dreptunghiului {x1, y1} - {x2, y2}**.
+Verifică dacă `punctul {x, y}` este plasat în interiorul dreptunghiului `{x1, y1}` - `{x2, y2}`.
 
 [image assetsSrc = "03.Point-in-rectangle-01.png" /]
 
 Datele de intrare sunt citite de pe consolă și constă din 6 linii:
-- numerele zecimale `x1`,` y1`, `x2`,` y2`, `x` și` y` (deoarece se garantează că `x1 < x2` și` y1 < y2`).
+
+- Numerele zecimale `x1`, `y1`, `x2`, `y2`, `x` și `y` (deoarece se garantează că `x1 < x2` și `y1 < y2`)
 
 ## Eșantion de intrare și ieșire
 | Intrare |Ieșire|
-|-----|------|
+|---|---|
 |2|Inside|
 |-3||
 |12||
@@ -135,12 +136,12 @@ public class Program {
 [task-description]
 # Descriere
 Scrieți un program care aplică bonus punctelor date
-   *Dacă punctele sunt între **0** și **3**, se adaugă **5**
-   *Dacă punctele sunt între **4** și **6**, se adaugă **15**
-   *Dacă punctele sunt între **7** și **9**, se adaugă **20**
-# Exemplu
+* Dacă punctele sunt între **0** și **3**, se adaugă **5**
+* Dacă punctele sunt între **4** și **6**, se adaugă **15**
+* Dacă punctele sunt între **7** și **9**, se adaugă **20**
+## Exemplu
 
-| Intrare | Ieșire |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 4 | 19 |
 
@@ -179,15 +180,15 @@ Scrieți un program care aplică bonus punctelor date
 
 
 [slide hideTitle]
-# Operatorul logic SAU 
+# Operatorul logic "SAU"
 Logica **OR** (operator `||`) înseamnă că **cel puțin una** dintre câteva condiții este îndeplinită.
 
-Similar cu operatorul `&&`,operatorul logic **OR** acceptă câteva argumente de tip **boolean** (condițional) și se schimba in `true` sau` false`.
+Similar cu operatorul `&&`,operatorul logic **OR** acceptă câteva argumente de tip **boolean** (condițional) și se schimba in `true` sau `false`.
 
 Putem ghici cu ușurință că **obținem** o valoare `true` de fiecare dată când cel puțin unul dintre argumente are o valoare `adevărată`.
 
-| Operand1 | Operand2 | SAU|
-|---|---|---|---|
+| **Operand Unu**| **Operand Două** | **ȘI** |
+|---|---|---|
 | adevărat | adevărat | adevărat|
 | adevărat | fals | adevărat|
 | fals | adevărat | adevărat|
@@ -236,28 +237,34 @@ public class Main {
 [task-description]
 # Descriere
 Scrieți un program care:
-   * Citește o singură linie și tipărește "***drink***", "***food***" sau "***unknown***"
-   * Alimente: curry, noodles, sushi, spaghetti 
-   * Băuturi: tea, water, coffee
-   * Orice altceva este unknown
-# Exemplu
-## Intrare
-- curry
-## Ieșire
-- food
-## Intrare
-- flower
-## Ieșire
-- unknown
+* Citește o singură linie și tipărește "**drink**", "**food**" sau "**unknown**"
+* Alimente: curry, noodles, sushi, spaghetti 
+* Băuturi: tea, water, coffee
+* Orice altceva este unknown
+
+## Exemplu
+
+|**Intrare**|**Ieșire** |
+| --- | --- |
+| curry | food |
+| flower | unknown |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 curry
 [/input]
 [output]
 food
+[/output]
+[/test]
+[test open]
+[input]
+flower
+[/input]
+[output]
+unknown
 [/output]
 [/test]
 [test]
@@ -284,8 +291,9 @@ unknown
 
 
 
+
 [slide hideTitle]
-# Operatorul logic NU 
+# Operatorul logic "NU"
 Negarea logică (operator **!**) înseamnă că o condiție dată nu este **îndeplinită**.
 
 | a | ! a |
@@ -294,7 +302,7 @@ Negarea logică (operator **!**) înseamnă că o condiție dată nu este **înd
 
 Operatorul `!` Acceptă ca **argument** o variabilă booleană și **returnează** valoarea acesteia.
 
-# Exemplu: număr nevalid
+## Exemplu: număr nevalid
 Un număr **dat este valid** dacă este în intervalul **\[100 ... 200 \]** sau este **0**. Faceți o validare pentru un număr **nevalid**.
 
 De exemplu, `75` și `220` sunt **nevalide**, dar `150` este**valid**.

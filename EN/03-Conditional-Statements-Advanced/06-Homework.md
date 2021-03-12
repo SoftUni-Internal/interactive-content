@@ -27,10 +27,6 @@ Create a program to check whether the input value represents a fruit or a vegeta
 | **Input** | **Output** |
 | --- | --- |
 | lemon | fruit |
-
-## Example
-| **Input** | **Output** |
-| --- | --- |
 | carrot | vegetable |
 
 [/task-description]
@@ -41,6 +37,14 @@ lemon
 [/input]
 [output]
 fruit
+[/output]
+[/test]
+[test open]
+[input]
+carrot
+[/input]
+[output]
+vegetable
 [/output]
 [/test]
 [test]
@@ -94,19 +98,17 @@ public class Main {
 ## Description
 Create a program to print out the given day of the week as a word:
 
-* Reads and integer **n**: the **day of the week** in range [1..7]
+* Reads and integer **n**: the **day of the week** in range [1 ... 7]
 * Prints the **name of the day** (as a word)
 * Prints out **"Error"** if the number is not in the given range
 
-## Example
+## Examples
 | **Input** | **Output** |
 | --- | --- |
 | 1 | Monday |
-
-## Example
-| **Input** | **Output** |
-| --- | --- |
 | 8 | Error |
+
+
 
 [/task-description]
 [tests]
@@ -181,10 +183,6 @@ Create a program to check whether a letter is a vowel or a consonant:
 | **Input** | **Output** |
 | --- | --- |
 | a | Vowel |
-
-## Example
-| **Input** | **Output** |
-| --- | --- |
 | B | Consonant |
 
 [hints]
@@ -463,9 +461,16 @@ Create a program that calculates vacation expenses according to the following:
 | Hotel |  |
 | 5 |  |
 
+| **Input** | **Output** |
+| --- | --- |
+| Summer |  90.00 |
+| Camping |  |
+| 3 |  |
+
+
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 Winter
 Hotel
@@ -475,8 +480,68 @@ Hotel
 180.00
 [/output]
 [/test]
+[test]
+[input]
+Winter
+Camping
+10
+[/input]
+[output]
+90.00
+[/output]
+[/test]
+[test]
+[input]
+Autumn
+Camping
+6
+[/input]
+[output]
+63.00
+[/output]
+[/test]
+[test]
+[input]
+Summer
+Hotel
+7
+[/input]
+[output]
+350.00
+[/output]
+[/test]
+[test]
+[input]
+Spring
+Camping
+8
+[/input]
+[output]
+64.00
+[/output]
+[/test]
+[test]
+[input]
+Summer
+Hotel
+9
+[/input]
+[output]
+450.00
+[/output]
+[/test]
+[test]
+[input]
+Autumn
+Camping
+10
+[/input]
+[output]
+105.00
+[/output]
+[/test]
 [/tests]
-[code-io/]
+[code-io /]
 [/code-task]
 
 [/slide]
@@ -511,26 +576,228 @@ Calculate the total **price** for all sold tickets to a movie screening in a cin
 ## Example
 | **Input** | **Output** |
 | --- | --- |
-| Normal | 810.00 |
-| 12 |  |
-| 9 |  |
+|Premiere|1440.00|
+|10||
+|12|  |
+
+| **Input** | **Output** |
+| --- | --- |
+|Normal|2047.50 |
+|21||
+|13| |
+
+| **Input** | **Output** |
+| --- | --- |
+|Discount|1800.00|
+|12||
+|30| |
+
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+Premiere
+10
+12
+[/input]
+[output]
+1440.00
+[/output]
+[/test]
+[test open]
+[input]
+Normal
+21
+13
+[/input]
+[output]
+2047.50
+[/output]
+[/test]
+[test open]
+[input]
+Discount
+12
+30
+[/input]
+[output]
+1800.00
+[/output]
+[/test]
 [test]
 [input]
 Normal
-12
+88
+44
+[/input]
+[output]
+29040.00
+[/output]
+[/test]
+[test]
+[input]
+Discount
+43
+15
+[/input]
+[output]
+3225.00
+[/output]
+[/test]
+[test]
+[input]
+Premiere
+42
+62
+[/input]
+[output]
+31248.00
+[/output]
+[/test]
+[test]
+[input]
+Discount
+30
+36
+[/input]
+[output]
+5400.00
+[/output]
+[/test]
+[test]
+[input]
+Premiere
+94
+17
+[/input]
+[output]
+19176.00
+[/output]
+[/test]
+[test]
+[input]
+Discount
+34
+7
+[/input]
+[output]
+1190.00
+[/output]
+[/test]
+[test]
+[input]
+Discount
+34
+93
+[/input]
+[output]
+15810.00
+[/output]
+[/test]
+[test]
+[input]
+Premiere
+68
+50
+[/input]
+[output]
+40800.00
+[/output]
+[/test]
+[test]
+[input]
+Normal
+73
+61
+[/input]
+[output]
+33397.50
+[/output]
+[/test]
+[test]
+[input]
+Normal
+63
+64
+[/input]
+[output]
+30240.00
+[/output]
+[/test]
+[test]
+[input]
+Normal
+84
+98
+[/input]
+[output]
+61740.00
+[/output]
+[/test]
+[test]
+[input]
+Normal
+59
+57
+[/input]
+[output]
+25222.50
+[/output]
+[/test]
+[test]
+[input]
+Premiere
+52
+35
+[/input]
+[output]
+21840.00
+[/output]
+[/test]
+[test]
+[input]
+Normal
+36
+75
+[/input]
+[output]
+20250.00
+[/output]
+[/test]
+[test]
+[input]
+Normal
+65
+68
+[/input]
+[output]
+33150.00
+[/output]
+[/test]
+[test]
+[input]
+Premiere
+59
+35
+[/input]
+[output]
+24780.00
+[/output]
+[/test]
+[test]
+[input]
+Discount
+78
 9
 [/input]
 [output]
-810.00
+3510.00
 [/output]
 [/test]
 [/tests]
-[code-io/]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
@@ -644,22 +911,23 @@ Create a program to simulate an ATM:
 * Print **"Insufficient availability."** if the balance is insufficient
 
 ## Example
-| **Input** | **Output** |
+  | **Input** | **Output** |
 | --- | --- |
-| 420 | The withdraw was successful. |
-| 20 |  |
-| 25 |  |
+|420|The withdraw was successful. |
+|20||
+|25| |
 
-## Example
-| **Input** | **Output** |
+ | **Input** | **Output** |
 | --- | --- |
-| 10 | The daily limit was exceeded. |
-| 50 | Insufficient availability. |
-| 20 |  |
+|10|The daily limit was exceeded.|
+|50|Insufficient availability.|
+|20|  |
+
 
 [/task-description]
+[code-io /]
 [tests]
-[test]
+[test open]
 [input]
 420
 20
@@ -669,10 +937,51 @@ Create a program to simulate an ATM:
 The withdraw was successful.
 [/output]
 [/test]
+[test open]
+[input]
+10
+50
+20
+[/input]
+[output]
+The daily limit was exceeded.
+Insufficient availability.
+[/output]
+[/test]
+[test]
+[input]
+10
+4565
+345
+[/input]
+[output]
+The daily limit was exceeded.
+Insufficient availability.
+[/output]
+[/test]
+[test]
+[input]
+342
+2
+3
+[/input]
+[output]
+The withdraw was successful.
+[/output]
+[/test]
+[test]
+[input]
+10
+50
+20
+[/input]
+[output]
+The daily limit was exceeded.
+Insufficient availability.
+[/output]
+[/test]
 [/tests]
-[code-io/]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
@@ -696,14 +1005,25 @@ Create a program to find the greatest of 5 numbers
 * Prints the **greatest** number
 
 ## Example
-| **Input** | **Output** |
+  | **Input** | **Output** |
 | --- | --- |
-| -1 | -1 |
-| -2 |  |
-| -3 |  |
-| -4 |  |
-| -5 |  |
+| \-1|\-1|
+|\-2||
+|\-3||
+|\-4||
+|\-5|  |
+
+  | **Input** | **Output** |
+| --- | --- |
+| 3|77|
+|4||
+|77||
+|12||
+|33|  |
+
+
 [/task-description]
+[code-io /]
 [tests]
 [test open]
 [input]
@@ -719,21 +1039,68 @@ Create a program to find the greatest of 5 numbers
 [/test]
 [test]
 [input]
-1
-2
-3
-4
 5
+-2
+-3
+9
+-8
 [/input]
 [output]
+9
+[/output]
+[/test]
+[test]
+[input]
+-1
+4
+3
+-4
+1
+[/input]
+[output]
+4
+[/output]
+[/test]
+[test]
+[input]
+4
+2
 5
+43
+1
+[/input]
+[output]
+43
+[/output]
+[/test]
+[test]
+[input]
+234234
+2345
+56756
+67867
+3453
+[/input]
+[output]
+234234
+[/output]
+[/test]
+[test]
+[input]
+3452
+54756
+6786
+3453
+4
+[/input]
+[output]
+54756
 [/output]
 [/test]
 [/tests]
-[code-io/]
 [/code-task]
-
 [/slide]
+
 
 [slide hideTitle]
 # Problem: Personal Titles
@@ -754,15 +1121,15 @@ public class Main {
 ## Example: Personal Titles
 
 Depending on someones **age** (integer) and their **gender** (**m** / **f**), print their personal title:
--  "Mr." – a man (gender "m") – 16 or older
--  "Master" – a boy (gender "m") - under 16 years old
--  "Ms." – a woman (gender "f") – 16 or molder
--  "Miss" – a girl (gender "f") - under 16 years old
+-  "Mr." - a man (gender "m") - 16 or older
+-  "Master" - a boy (gender "m") - under 16 years old
+-  "Ms." - a woman (gender "f") - 16 or molder
+-  "Miss" - a girl (gender "f") - under 16 years old
 
 ## Input
 From the console:
-- age - floating-point number
-- gender - "**m**" or "**f**"
+- Age - floating-point number
+- Gender - "**m**" or "**f**"
 
 ## Output
 Print the expected Personal Title on a single line.
@@ -953,15 +1320,15 @@ The input consists of 2 lines:
 - the fuel in the tank in liters
 
 ## Output
-- If the fuel type is one of the 3 options, print: "Invalid fuel!".
+- If the fuel type is one of the 3 options, print: "**Invalid fuel!**"
 - If the current fuel level is >= 25 liters print:
-    - "You have enough \{type of fuel\}."
-    -  The type of fuel should be printed in lower case.
+    - "**You have enough** \{**type of fuel**\}."
+    -  The type of fuel should be printed in lower case
 - Otherwise print:
-    - "Fill your tank with \{type of fuel\}!". 
-    - Type of the fuel should be printed in lower case.
+    - "**Fill your tank with** \{**type of fuel**\}!"
+    - Type of the fuel should be printed in lower case
 
-### Example
+## Example
 
 | **Input** | **Output** |
 | --- | --- |
@@ -1087,9 +1454,9 @@ Read two lines:
 - Amount of sales - floating-point number
 
 ## Output
-- Print out the final value of the commission.
-- The result should be **formatted to the second decimal point**. 
-- If you receive an **invalid** city **or** an invalid amount of sales (negative number), print "**error**".
+- Print out the final value of the commission
+- The result should be **formatted to the second decimal point**
+- If you receive an **invalid** city **or** an invalid amount of sales (negative number), print "**error**"
 
 ## Example
 | **Input** | **Output** |  
@@ -1287,7 +1654,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program to check if a **point {x, y}** is **on** one of the sides of a rectangle **{x1, y1} – {x2, y2}**.  
+Create a program to check if a **point {x, y}** is **on** one of the sides of a rectangle **{x1, y1} - {x2, y2}**.  
 
 ## Input
 The input consists of **6 lines: real numbers x1, y1, x2, y2, x and y** (conidering that: **x1 < x2** and **y1 < y2**).
@@ -1300,7 +1667,7 @@ If the point does NOT lie on a side:
 - Print "**Inside / Outside**"
 
 ## Example
-| **Input** | **Output** 
+| **Input** | **Output** |
 | --- | --- |
 | 2 | Inside / Outside |
 | -3 | |
@@ -1611,7 +1978,7 @@ Your friend has different outfits according to the time of the day and the tempe
 
 ## Output
 - Print out a **single** line:
-    - It's \{degrees\} degrees, get your \{outfit\} and \{shoes\}."
+    - "It's \{degrees\} degrees, get your \{outfit\} and \{shoes\}."
 
 ## Example
 | **Input** | **Output** 
@@ -1772,15 +2139,17 @@ Tony and his friends decided to rent a fishing boat - the rent depends on the **
 - **7-11 people** - **15% discount**
 - **12 or more people - 25% discount**
 
-The fishermen use another **5% discount if their group consists of an even number of people**. If it is **autumn** – they do **NOT** get an additional discount.
+The fishermen use another **5% discount if their group consists of an even number of people**. 
+
+If it is **autumn** - they do **NOT** get an additional discount.
 
 Create a **program** to **calculate** whether the fishermen will have **enough** money for the boat.
 
 ## Input
 The input holds **3 lines**:
-- The **budget** of the group - real number in range \[1…8000\]
+- The **budget** of the group - real number in range \[1 .... 8000\]
 - **Season**  - String : "**Spring**", "**Summer**", "**Autumn**", "**Winter**"
-- **Number** of fishermen - integer in range \[4…18\]
+- **Number** of fishermen - integer in range \[4 .... 18\]
 
 ## Output
 Print out a **single** line:
