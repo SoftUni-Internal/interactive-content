@@ -6,7 +6,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02.Java-OOP-Basics-More-OOP Concepts-28-29-Static-Keyword-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We mainly use the `Static` keyword for memory arrangement.
+We mainly use the `static` keyword for memory arrangement.
 
 It can be applied to:
 - Nested classes
@@ -26,11 +26,11 @@ static void increaseCount() {
 
 [slide hideTitle]
 
-# Static Class
+# Static Classes
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02.Java-OOP-Basics-More-OOP Concepts-30-Static-class-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- A **top level class** is a class that is **not nested**
+- A **top-level class** is a class that is **not nested**
 - A **nested class** is any class whose declaration occurs **within the body** of another class or interface
 - Only **nested classes** can be **static**
 
@@ -45,7 +45,7 @@ class TopClass {
 
 [slide hideTitle]
 
-# Static Variable
+# Static Variables
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02.Java-OOP-Basics-More-OOP Concepts-31-32-33-Static-variable-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -53,11 +53,9 @@ class TopClass {
 
 **Example:**
 
-- The company name of employees
-- College name of students
-  - Name of the college is common for all of its students
+- When we have many employees in the same company, an Employee class could have a static field for storing the company name as it is the same for all employees
 
-**Memory** for static variables is allocated **only once** - in the class area, at the time of class **loading**.
+**Memory** for static variables is allocated **only once** - in the class area, at the time of class **loading** (during runtime).
 
 **Example:** Counter incrementation
 
@@ -65,8 +63,8 @@ class TopClass {
 class Counter {
   int count = 0;   static int staticCount = 0;
   public Counter() {
-    count++;        // incrementing value
-    staticCount++;  // incrementing value
+    count++;        
+    staticCount++; 
   }
   public void printCounters() {
     System.out.printf("Count: %d%n", count);
@@ -91,7 +89,7 @@ public static void main(String[] args) {
 
 [slide hideTitle]
 
-# Static Method
+# Static Methods
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02.Java-OOP-Basics-More-OOP Concepts-34-35-Static-Method-and-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -99,7 +97,7 @@ public static void main(String[] args) {
 
 - Can be **invoked** without the need for creating an instance of a class
 - Can **access** static data member and can **change** the value of it
-- **Can not use a non-static** data member or call a **non-static method** directly
+- **Cannot use a non-static** data member or call a **non-static method** directly
 - `this` and `super` cannot be used in static context
 
 **Example:** Calculating the volume of a cube
@@ -119,7 +117,7 @@ class Calculate {
 
 [slide hideTitle]
 
-# Static Block
+# Static Blocks
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02.Java-OOP-Basics-More-OOP Concepts-36-37-Statick-block-and-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -149,5 +147,7 @@ class Main {
 //From main
 //10
 ```
+
+Static blocks are also known as **static clauses**.
 
 [/slide]
