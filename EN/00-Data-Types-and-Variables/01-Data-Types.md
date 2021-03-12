@@ -4,6 +4,8 @@
 
 # How does a computer work ?
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-3-4-How-computers-work-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 A computer is an **electronic machine** that processes information or, in other words, an information processor. It takes the raw information (or data) from one end, stores it until it is ready to work on it, then returns the results at the other end.
 
 All of the processes have **names**. 
@@ -16,6 +18,8 @@ Taking in information is called an "input", storing information is better known 
 
 [slide hideTitle]
 # Variables
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-5-Variables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A variable is a name given to a memory location. 
 
@@ -67,6 +71,8 @@ For example, if we have a variable where we store numbers we will not be able to
 [slide hideTitle]
 # What is a Data Type?
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-6-What-is-data-type-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Data types specify the different sizes and values that can be stored in variables. 
 
 There are **two types of data types** in Java:
@@ -92,6 +98,8 @@ There are **two types of data types** in Java:
 
 [slide hideTitle]
 # Data Type Characteristics
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-7-data-type-characteristics-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ```java
 int myNum = 5;               // Integer (whole number)
