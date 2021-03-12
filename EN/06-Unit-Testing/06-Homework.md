@@ -14,7 +14,7 @@ Write **tests** to ensure its methods are working as intended.
 
 ## Constraints
 
-- An array's **capacity** must be **exactly 16 integers.**
+- Stroring array's **capacity** must be **exactly 16 integers.**
 
   * if the size of the array is not 16 integers long, throw **OperationNotSupportedException**
 
@@ -53,7 +53,9 @@ There are the following provided methods:  adding, removing, and finding People.
 
 In other words, it should store People. 
 
-There should be two types of finding methods - first: `findById (long id)` and the second one: `findByUsername (String username)`.
+There should be two types of finding methods:
+- `findById (long id)`
+- `findByUsername (String username)`.
 
 As you may have guessed, each person should have their own unique **id** and unique **username**. 
 
@@ -110,11 +112,12 @@ If there is null passed to the constructor, throw new **OperationNotSupportedExc
 The class should have three main functions:
 
 - `Move` - should move an internal index position to the next index in the list
-* the method should return **true** if it successfully moved and **false** if there is no next index
+    * the method should return **true** if it successfully moved and **false** if there is no next index
 
 - `HasNext` - should return true if there is a next index and false if the index is already at the last element of the list
 
-- `Print` - print the element at the current internal index, calling `Print` on a collection without elements should throw an appropriate exception with the message **"Invalid Operation!"** 
+- `Print` - print the element at the current internal index
+    * calling `Print` on a collection without elements should throw an appropriate exception with the message **"Invalid Operation!"** 
 
 | **Command** | **Return Type** | **Description** |
 | --- | --- | --- |
@@ -185,7 +188,7 @@ Use the Java file **CustomLinkedList.java** and:
 
     * those tests do not need assert messages
 
-- Give **meaningful assert messages** for failed tests
+- Give **meaningful assertion messages** for failed tests
 
 
 [/slide]
@@ -200,7 +203,7 @@ You are given a small project for a system which monitors the pressure in car ti
 
 Your task is to write unit tests for the system. 
 
-You will need to use mocking in order to pass dependencies. 
+You will need to use **mocking** in order to pass dependencies. 
 
 Think about the corner cases of the project.
 
