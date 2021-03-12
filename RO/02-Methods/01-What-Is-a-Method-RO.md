@@ -1,6 +1,6 @@
 # Ce este o metodă?
 
-[slide]
+[slide hideTitle]
 # Method
 
 O metodă este un bloc de cod care rulează doar când este apelată.
