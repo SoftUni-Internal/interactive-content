@@ -59,7 +59,7 @@ Let us see what is going on in our `Main` class:
 public class Main {
     public static void main(String[] args) {
 
-        // If we try to create a singleton object via our constructor, we will get an error:
+        // If we try to create a singleton object via the constructor, we will get an error:
 	// Compile Time Error: The constructor SingleObject() is not visible
 	// Singleton object = new Singleton();
 
