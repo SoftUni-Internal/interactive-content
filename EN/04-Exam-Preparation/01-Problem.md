@@ -55,7 +55,7 @@ The commands could be:
 
 * The commands are limited to: "**swap**", "**multiply**", "**decrease**" and "**end**"
 
-* All elements of the array will be integers can take your exam whenever you feel like and as many times as you 
+* All elements of the array will be integers.
 
 * The number of elements in the array will be in range [2...100]
 
