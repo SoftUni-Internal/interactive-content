@@ -1,8 +1,6 @@
-# Mutable vs Immutable Objects
-
 [slide hideTitle]
 
-# Mutable vs Immutable Objects
+# Mutable vs. Immutable Objects
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-24-25-mutable-and-immutable-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -12,7 +10,7 @@ The contents of **mutable** objects **can be altered**:
 Point myPoint = new Point(0, 0); myPoint.setLocation(1.0, 0.0);
 System.out.println(myPoint);
 
-//java.awt.Point[1.0, 0.0]
+// java.awt.Point[1.0, 0.0]
 ```
 
 The contents of **immutable** objects **cannot be altered**:
@@ -79,12 +77,12 @@ class Team {
   private List<Person> players;
   public void addPlayer(Person person) {
     this.players.add(person);
-    //Add new methods for functionality over list
+    // Adding new functionality for the list
 
   }
   public List<Person> getPlayers() {
     return Collections.unmodifiableList(players);
-    //Returns a safe collections
+    // Returns a safe collection
   }
 } 
 ```
