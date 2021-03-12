@@ -7,8 +7,8 @@
 
 In programming, we can compare values using the following operators:
 
-|Operators|Designation|
-|---------|-----------|
+|**Operators**|**Designation**|
+|---|---|
 | Equal to |   **==** |
 | Not Equal to |   **!=** |
 | Greater than |   **>** |

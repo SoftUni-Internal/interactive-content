@@ -27,7 +27,8 @@
 
 - Debugging techniques
 
-- Operations with the debugger. How to use breakpoints
+- Operations with the debugger
+- How to use breakpoints
 
 
 **6. Practical Coding Exercises**

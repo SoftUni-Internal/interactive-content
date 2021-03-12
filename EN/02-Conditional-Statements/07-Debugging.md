@@ -7,7 +7,7 @@
 So far, we saw a lot of code, and there were some mistakes in it, right? Now we will see a tool that can help us find mistakes: **the debugger**.
 
 # What is "Debugging"?
-**Debugging** is the process which allows us to **track the execution of a program step by step**. 
+**Debugging** is the process that allows us to **track the execution of a program step by step**. 
 
 It allows us to track what happens in our program **line by line**, what path it follows, what are the values of the variables at each step of the execution, and many other elements that allow us to detect errors (**bugs**).
 

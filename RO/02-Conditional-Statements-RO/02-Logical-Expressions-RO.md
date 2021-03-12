@@ -4,8 +4,8 @@
 # Operatori de comparație
 În programare, putem compara valorile folosind următorii operatori:
 
-|Operatori|Desemnare|
-|---------|-----------|
+|**Operatori**|**Desemnare**|
+|---|---|
 | Egal cu | **==** |
 | Nu este egal cu | **!=** |
 | Mai mare decât | **>** |

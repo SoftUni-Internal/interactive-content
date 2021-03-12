@@ -6,7 +6,7 @@
 
 ## În această lecție veți învăța despre:
 
-**1. Expresiile logice*
+**1. Expresiile logice**
 
 - Cum să folosiți operatorii de comparație 
 
@@ -26,7 +26,8 @@
 
 - Tehnici de depanare 
 
-- Operațiile cu depanatorul. Cum să folosiți punctele de întrerupere
+- Operațiile cu depanatorul
+- Cum să folosiți punctele de întrerupere
 
 
 **6. Exerciții practrice de codificare**

@@ -4,8 +4,8 @@
 Construcția `if` poate conține, de asemenea, o clauză `else` pentru a da o acțiune specifică în cazul în care expresia booleană (care este setată la începutul `if (expresia bool)`) returnează un rezultat negativ (`false`).
 
 Construită astfel, **instrucțiunea  condițională** se numește `if-else` și comportamentul său este după cum urmează:
-* În cazul în care rezultatul condiției este pozitiv (`true`) - vom efectua unele acțiuni
-* Când este negativ („false”) - altceva
+* În cazul în care rezultatul condiției este pozitiv ("**true**") - vom efectua unele acțiuni
+* Când este negativ ("**false**") - altceva
 
 [image assetsSrc="02-usecase-if-else-statement.png" /]
 
@@ -18,15 +18,15 @@ if (condition) {
 }
 ```
 
-În cazul în care condiția este `false`, instrucțiunea else se execută.
+În cazul în care condiția este "**false**", instrucțiunea else se execută.
 
-Deoarece o condiție nu poate fi in același timp „true” și „false”, instrucțiunea then și instrucțiunea  else a unei instrucțiuni `if-else` nu pot **fi executate niciodată ambele**.
+Deoarece o condiție nu poate fi in același timp "**true**" și "**false**", instrucțiunea then și instrucțiunea  else a unei instrucțiuni `if-else` nu pot **fi executate niciodată ambele**.
 
-După instrucțiunea  then sau instrucțiunea  `else`, controlul este transferat la următoarea instrucțiune care este după instrucțiune `if`.
+După instrucțiunea  then sau instrucțiunea `else`, controlul este transferat la următoarea instrucțiune care este după instrucțiune `if`.
 
-Într-o instrucțiune `if` care nu include o instrucțiune else, dacă condiția este `true`, atunci instrucțiunea  then este executată.
+Într-o instrucțiune `if` care nu include o instrucțiune else, dacă condiția este "**true**", atunci instrucțiunea  then este executată.
 
-Dacă condiția este `false`, controlul este transferat la următoarea instrucțiune care este după declarație` if`.
+Dacă condiția este "**false**", controlul este transferat la următoarea instrucțiune care este după declarație `if`.
 
 Atât instrucțiunea  then, cât și instrucțiunea  else pot consta dintr-o singură instrucțiune sau mai multe instrucțiuni care sunt încadrate între paranteze `{}`.
 
@@ -39,9 +39,9 @@ Instrucțiunea  sau instrucțiunile din instrucțiunea  then și instrucțiunea 
 # Exemplu: vreme
 
 
-Aceasta este o versiune extinsă a exemplului din diapozitivul  anterior.
+Aceasta este o versiune extinsă a exemplului din diapozitivul anterior.
 
-După cum puteți vedea acum, avem un alt caz, care va fi executat atunci când condiția din instrucțiunea `if` se dovedește  sa fie ** false **.
+După cum puteți vedea acum, avem un alt caz, care va fi executat atunci când condiția din instrucțiunea `if` se dovedește  sa fie "**false**".
 ```java
 Scanner scanner = new Scanner(System.in);
 String weather = scanner.nextLine();
@@ -62,6 +62,7 @@ Când avem **o singură comandă** în corpul construcției **if**, putem **săr
 Când dorim să executăm **bloc de cod** (grup de comenzi), parantezele crețate sunt **necesare**. 
 
 În cazul în care le eliminăm, **numai prima linie** după clauza **if** va fi executată.
+
 Mai jos avem  un exemplu în care eliminarea parantezele crețate ne  duce la o confuzie:
 ```java live
 String color = "red";
@@ -105,16 +106,16 @@ Scrieți un program, care verifică dacă un număr este **par** sau **impar**
 
    * Dacă este par, tipăriți **even**
    * Dacă este impar, tipăriți **odd**
-# Exemplu
+## Exemplu
 
-| **Input** | **Output** | 
+|**Intrare**|**Ieșire** |
 | ---- | ---- |
 | 4 | even|
 | 7 | odd |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 4
 [/input]
@@ -122,7 +123,7 @@ Scrieți un program, care verifică dacă un număr este **par** sau **impar**
 even
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 7
 [/input]
@@ -167,16 +168,16 @@ Scrieți un program, care găsește cel mai mare dintre două numere:
    * Citiți două **numere întregi**
    * Găsiți numărul mai mare
    * Imprimați `Greater number: ` + numărul **mai mare**
-# Exemplu
+## Exemplu
 
-| **Input** | **Output** | 
+|**Intrare**|**Ieșire** |
 | ---- | ---- |
 | 4 | Greater number: 8 |
 | 8 |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 4
 8

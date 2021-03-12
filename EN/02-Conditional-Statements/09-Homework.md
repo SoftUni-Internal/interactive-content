@@ -250,7 +250,7 @@ public class Program {
 Create a program to calculate the area of different figures:
   * Reads a string: the figure **type**.
   * Checks if the figure is a **square**, a **rectangle** or a **circle**.
-  * Accepts one number for a square or a circle or two numbers for rectangle.
+  * Accepts one number for a square or a circle or two numbers for the rectangle.
     * Numbers will be floating-point.
   * Prints out the calculated area **formatted** to the second digit after the decimal point.
   * For unknown figures print out **"Unknown figure"**.
@@ -380,7 +380,7 @@ Create a program to **calculate** the price of a ticket based on the following:
 
   * Read the ticket type: either **student** or **regular**.
   * Print the **price** in the following format "$\{price\}":
-    * The price should be **formatted** to 2nd digit after the decimal point.
+    * The price should be **formatted** to the 2nd digit after the decimal point.
   * Student ticket price: **1.00**.
   * Regular ticket price: **1.60**.
   * In any other input print out: **"Invalid ticket type!"**.
@@ -472,7 +472,7 @@ Create a program to calculate the price for a particular drink in a coffee shop:
   * The first line of input will be either **"coffee"** or **"tea"**.
   * The second: either **"sugar"** or **"no"**.
   * Print the price in the following format: `"Final price: ${price}"`.
-    * The price should be **formatted** to 2nd digit after the decimal point.
+    * The price should be **formatted** to the 2nd digit after the decimal point.
   
 Prices:
 
@@ -671,7 +671,7 @@ If the produced amount is sufficient to meet the goal, the remaining wine is dis
 
 ## Input
 You will receive the following as input from the console:
-- **The size of the the vineyard** in square meters - an integer in range \[10 … 5000\]
+- **The size of the vineyard** in square meters - an integer in range \[10 … 5000\]
 - **The yield per sq. m** - a floating-point number in range \[0.00 … 10.00\]
 - **The production goal in liters** - an integer in range \[10 … 600\]
     - Remember that this particular vineyard is responsible for only 40% of the total production
