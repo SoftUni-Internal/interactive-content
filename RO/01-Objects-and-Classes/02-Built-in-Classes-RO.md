@@ -114,7 +114,7 @@ System.out.println(radians);
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Aleatoriu
 
 Clasa `java.util.Random` este utilizată pentru a genera numere aleatoare de tipuri **întregi**, **plutitoare**, **duble**, **lungi**. 
@@ -220,7 +220,7 @@ Execute the program locally using Integrated development environment
 
 
 
-[slide]
+[slide hideTitle]
 # BigInteger
 
 Clasa `java.math.BigInteger` furnizează **operațiuni analoge** tuturor **operațiunilor întregi primitive ale Java** și pentru **toate metodele relevante** din `java.lang.Math;`.
@@ -302,7 +302,7 @@ public class Main {
 }
 ```
 [/code-editor]
-[task-description
+[task-description]
 ## Descriere
 Veți primi două numere **(0 to 10 ^ 50)**, imprimați suma acestora.
 
