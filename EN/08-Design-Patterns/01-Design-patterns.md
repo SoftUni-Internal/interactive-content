@@ -1,22 +1,26 @@
+# Design Patterns
+
 [slide hideTitle]
 
-# Design Patterns
+# What Are Design Patterns
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-4-what-are-design-patterns-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In software engineering design patterns represent **general** and **reusable solutions** to frequent problems in software design.
+In software engineering, design patterns represent **general** and **reusable solutions** to common flaws in application design.
 
-It is important to understand, that design patterns **by themselves are not finished and ready for implementation templates**.
+It is important to understand that design patterns by themselves **are not** finished and ready for implementation **templates**.
 
-They are more like a **description of templates** for how to solve  problems that can be used in many situations.
+Instead, they are **general descriptions** of problem-solving **templates** that can be applied in many situations.
 
-Why do we use **design patterns**?
+## Why do we use **design patterns**
 
-By using design patterns we can solve software structural problems and speed up the development process by providing **well-proven development paradigms**.
+By applying design patterns, we can solve structural problems and speed up the development process by implementing **well-proven development paradigms**.
 
-Also, we can prevent later issues that can cause serious problems and by using design patterns we improve code readability.
+Also, we can prevent future issues that can cause serious problems.
 
-Most common problems that design pattern solves are:
+In the process, we also improve code readability.
+
+The most common **problems** that design patterns solve are:
 
 - Abstraction
 
@@ -30,15 +34,15 @@ Most common problems that design pattern solves are:
 
 - Divide and conquer
 
-Let's see the Elements of our design patterns:
+Design patterns consist of **four** elements:
 
-- Pattern name that increases the **vocabulary** of developers
+- Pattern name - concise and descriptive
 
-- Problem - Intent, context, and when to apply
+- Problem - intent, context, and when to apply
 
-- Solution - Abstract code, or template idea to solve our problems
+- Solution - abstract code, or a template of an idea to solve our problems
 
-- Consequences - **Results** and trade-offs
+- Consequences - **results** and tradeoffs
 
 
 [/slide]
@@ -52,23 +56,35 @@ Let's see the Elements of our design patterns:
 
 ## Benefits
 
-Let's start with the benefits design patterns deliver:
+Let us start with the benefits design patterns deliver.
 
-Design patterns bring standardization to your projects. It also ensures, that your code follows good programming principles like **coupling** and **cohesion**.
+Design patterns bring standardization to your projects. 
 
-We learn in previous lessons the basics of **coupling** and **cohesion**, but today we will try to expand our knowledge a little bit.
+They also ensure that your code follows programming principles like **coupling** and **cohesion**.
 
-We can say that coupling components interact with each other. This is how they pass the information on each other. High coupling usually leads to complex code.
+We learned the basics of **coupling** and **cohesion** in previous lessons.
 
-We cannot remove entirely the need for components to interact with each other.
+Today, we will try to expand our knowledge a bit.
+
+We can say that **coupled components interact with each other**. 
+
+That is how they pass information to each other. 
+
+High coupling usually leads to complex code.
+
+We cannot completely dismiss the need for components to interact with each other.
 
 Usually, low coupling indicates a **good code structure**.
 
-The coupling has many types, but we would not go that further.
+The coupling has many types, but we will not explore each type.
 
-Design patterns can make our job easier. They can help us analyze the more abstract ideas of our program by **providing well-tested solutions**.
+Design patterns can make our job easier. 
 
-It is important to understand, that design patterns teach us to write **faster** and **more clear** code. It provides us a clearer picture of how we are implementing the software design.
+They can help us analyze the more abstract ideas of our program by **providing well-tested solutions**.
+
+It is important to understand that design patterns teach us to write **faster** and **more clear** code. 
+
+That provides us with a clearer picture of how we are implementing the software design.
 
 ## Drawbacks
 
@@ -76,10 +92,8 @@ Unfortunately, design patterns **do not lead** to direct code reuse.
 
 Sometimes we tend to **overload** and **overdesign** our patterns.
 
-Design patterns should be used only if they are well understood by the developers.
+Design patterns should only be followed if the developer has good knowledge about them.
 
-Often they are used improperly without a realistic understanding of how our software **is going to change in the future**.
-
-Let's continue to the next important information in our lesson: **Design Pattern Types**
+Often they are used improperly, with little thought about a software project's future,
 
 [/slide]
