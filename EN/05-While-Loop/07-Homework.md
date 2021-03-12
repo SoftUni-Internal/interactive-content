@@ -641,9 +641,14 @@ Help Andreea writing a program in which Andreea enters the name of the **book** 
 | Life Style | |
 | Troy | |
 
-### Comments
-- Andreea is searching for a book with name "Troy", and the library\'s capacity is 8 books.
-- The first book is "Stronger", the second one is "Life Style", the third one is desired - "Troy" and the program ends.
+[hints]
+[hint]
+Andreea is searching for a book with name "Troy", and the library\'s capacity is 8 books.
+[/hint]
+[hint]
+The first book is "Stronger", the second one is "Life Style", the third one is desired - "Troy" and the program ends.
+[/hint]
+[/hints]
 
 ## Example
 | **Input** | **Output** |
@@ -655,10 +660,16 @@ Help Andreea writing a program in which Andreea enters the name of the **book** 
 | Torronto | | 
 | Spotify | | 
 
-### Comments
-- Andreea is searching for a book with name "The Spot". The library contains 4 books.
-- The first book is "Hunger Games", the second - "Harry Potter", the third - "Torronto", the fourth - "Spotify"
-- Since there aren\'t other books in the library, reading names is stopped. Andreea didn\'t find the book.
+[hints]
+[hint]
+Andreea is searching for a book with name "The Spot". The library contains 4 books.
+The first book is "Hunger Games", the second - "Harry Potter", the third - "Torronto", the fourth - "Spotify".
+[/hint]
+[hint]
+Since there aren\'t other books in the library, reading names is stopped. Andreea didn\'t find the book.
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
@@ -910,16 +921,23 @@ A poor grade is a grade less or equal to 4.00.
 | 6 | |
 | Enough | |
 
-### Comments
-- The number of allowed poor grades is 3.
-- First problem\'s name is Money, Martin\'s grade is 6.
-- Second problem - Story, grade - 4.
-- Third problem - Spring Time, grade - 5.
-- Fourth problem - Bus, grade - 6.
-- Next command is Enough, the program ends.
-- Average grade: 21 / 4 = 5.25
-- Number of solved problems: 4
-- Last problem: Bus
+[hints]
+[hint]
+The number of allowed poor grades is 3.
+[/hint]
+[hint]
+First problem\'s name is Money, Martin\'s grade is 6.
+Second problem - Story, grade - 4.
+Third problem - Spring Time, grade - 5.
+Fourth problem - Bus, grade - 6.
+Next command is Enough, the program ends.
+[/hint]
+[hint]
+Average grade: 21 / 4 = 5.25
+Number of solved problems: 4
+Last problem: Bus
+[/hint]
+[/hints]
 
 ## Example
 | **Input** | **Output** |
@@ -932,12 +950,17 @@ A poor grade is a grade less or equal to 4.00.
 | Best Player| |
 | 4| |
 
-### Comments
-- The number of allowed poor grades is 2.
-- The first problem\'s name is Income, Martin\' grade is 3.
-- Second problem - Game Info, grade - 6.
-- Third problem - Best Player, grade - 4.
-- Martin reaches the number of allowed poor grades, it is time for break.
+[hints]
+[hint]
+The number of allowed poor grades is 2.
+[/hint]
+[hint]
+The first problem\'s name is Income, Martin\' grade is 3.
+Second problem - Game Info, grade - 6.
+Third problem - Best Player, grade - 4.
+Martin reaches the number of allowed poor grades, it is time for break.
+[/hint]
+[/hints]
 [/task-description]
 [tests]
 [test open]
@@ -1508,14 +1531,19 @@ Read from the console:
 | 55 | |
 | End | |
 
-### Comments
-- Detergent quantity = 2 \* 750 = 1500 ml.
-- 53 plates are loaded = > 53 \* 5 = 265 ml.  1500 \- 265 = 1235 ml. left
-- 65 plates = > 65 \* 5 = 325 ml 1235 \- 325 = 910 ml. left
-- 55 pots = > 55 \* 15 = 825 ml 910\- 825 = 85 ml. left
-- We receive the command "End". Therefore, we can conclude that the quantity is enough, so the corresponding messages are printed: 
+[hints]
+[hint]
+Detergent quantity = 2 \* 750 = 1500 ml.
+53 plates are loaded = > 53 \* 5 = 265 ml.  1500 \- 265 = 1235 ml. left
+65 plates = > 65 \* 5 = 325 ml 1235 \- 325 = 910 ml. left
+55 pots = > 55 \* 15 = 825 ml 910\- 825 = 85 ml. left
+[/hint]
+[hint]
+We receive the command "End". Therefore, we can conclude that the quantity is enough, so the corresponding messages are printed: 
 - number of all plates washed = 53 \+ 65 = 118. 
 - number of all pots washed = 55
+[/hint]
+[/hints]
 
 ## Example
 | **Input** | **Output** |
@@ -1753,20 +1781,25 @@ Print to the console:
 | 317| Average CS: 70.50|
 | | Average CC: 286.50|
 
-### Comments
-- The first type of payment should be **in cash**
-- 120 > 100 => the transaction is rejected 
-- 8 < 10 => the transaction is rejected 
-- 63 <= 100 => the transaction is successful
-- 256 >= 10 => the transaction is successful 
-- 78 <= 100 => the transaction is successful 
-- 317 >= 10 => the transaction is successful 
-- Total amount of money collected: 63 + 256 + 78 + 317 = 714 
-- 714 >= 500
-- Total amount of money in cash: 63 + 78 = 141 
-  - Average amount of money in cash: 141/2 = 70.50 
-- Total amount of money received by credit card: 256 \+ 317 = 573 
-  - Average amount of money received by credit card: 573/2 = 286.50
+
+[hints]
+[hint]
+The condition is rotated first in **cash payment**, then through **credit card**
+120 > 100 transaction is rejected 
+8 < 10 transaction is rejected 
+63 <= 100 => the transaction was successful
+256 >= 10 => the transaction was successful 
+78 <= 100 => the transaction was successful 
+317 >= 10 => the transaction was successful 
+Total amount collected: 63 + 256 + 78 + 317 = 714 
+714 >= 500
+[/hint]
+[hint]
+Total cash: 63 + 78 = 141;  Average cash: 141/2 = 70.50 
+Total credit cards: 256 \+ 317 = 573; Average credit cards: 573/2 = 286.50
+[/hint]
+[/hints]
+
 
 [/task-description]
 [tests]
@@ -2198,11 +2231,17 @@ If we receive all the three letters, we have to add а **white space** to the en
 | c| |
 | End| |
 
-### Comments
-- "**H**", "**n**", "**e**", "**l**", "**l**", "**o**", "**o**", "**c**" are all letters that we receive.
-- First, we receive "**H**" and we add it to the word. The next symbol is "**n**". We receive this letter for a first time, so we **do not** add it to our word.
-- The next symbols are: "**e**", "**l**", "**l**" and we add them to the word. We receive "**o**" for a first time, so we **do not** add it to the word. The next letter is "**o**", but this time, we add it to the word. The next letter is "**c**", so all the three symbols (**c**, **o**  and **n**) are met.
-- We print "**Hello** ". Then, we recieve the **"End"** command and the program ends. The result is **"Hello "**.
+[hints]
+[hint]
+"**H**", "**n**", "**e**", "**l**", "**l**", "**o**", "**o**", "**c**" are all read letters.
+First we read "**H**" and we add it to the word. The next symbol is "**n**". It\'s part of the command and we **do not add it to the word as we meet it for the first time**.
+The next symbols are "**e**", "**l**", "**l**" and we add them to the word. We read "**o**" and we mark it as visited, but again we do **not** add it to the word. The next letter is "**o**" again and it\'s added. The next is "**c**" and all three symbols for the secret command are available.
+[/hint]
+[hint]
+We print "**Hello** " and we recieve "End" command and the programs ends. The result is "Hello ".
+[/hint]
+[/hints]
+
 
 ## Example
 | **Input** | **Output** |
