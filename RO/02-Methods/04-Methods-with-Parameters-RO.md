@@ -57,7 +57,6 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-[task-description]
 ## Cerință
 Creați o metodă care afișează semnul unui număr întreg.
 
