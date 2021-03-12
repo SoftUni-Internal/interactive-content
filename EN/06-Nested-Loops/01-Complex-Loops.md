@@ -11,14 +11,14 @@ For example:
 ``` java live
 for (int i = 0; i <= 10; i += 2) {
     System.out.println(i);
-    // Print only even values of i from 0 to 10
+    // Print only the even values of i from 0 to 10
 }
 ```
 
 ``` java live
 for (int i = 20; i > 0; i -= 5) {
      System.out.println(i);
-    // Print values that are devisible by 5
+    // Print all values that are devisible by 5
 }
 ```
 
@@ -26,7 +26,7 @@ for (int i = 20; i > 0; i -= 5) {
 
 for (int j = 2; j <= 16; j *= 2) {
     System.out.println(j);
-    // Print the results of powers of 2 ascending
+    // Print all results raised to the power of 2 ascending
 }
 ```
 
@@ -34,7 +34,7 @@ for (int j = 2; j <= 16; j *= 2) {
 
 for (int j = 16; j > 1; j /= 2) {
     System.out.println(j);
-    // Print the results of powers of 2 descending
+    // Print all results raised to the power of 2 descending
 }
 
 ```
@@ -59,7 +59,8 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Write a program that prints the numbers from N down to 1.
+
+Create a program that prints out the numbers from N down to 1.
 
 The program receives a number `n` and prints the numbers from `n` down to 1. 
 
@@ -136,11 +137,11 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Write a program that prints the numbers from 1 to `n` with step 3:
+Create a program that prints out the numbers from 1 to `n` with a step of 3:
 
 * Receives a number `n`
 
-* Prints the numbers from 1 to `n` with step 3
+* Prints the numbers from 1 to `n` using 3 for a step
 
 
 ## Examples
@@ -226,11 +227,11 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Write a program that prints the even powers of 2:
+Create a program that prints the scaling powers of 2:
 
 * Receives a number `n`
 
-* Prints the even powers of 2 up to `2n`
+* Prints the powers of 2 up to `2n`
 
 ## Examples
 | **Input** | **Output** |
