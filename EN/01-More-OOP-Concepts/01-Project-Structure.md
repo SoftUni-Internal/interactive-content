@@ -90,39 +90,21 @@ Create a `printRow()` method to easily reuse code.
 
 ## Example 1
 
-| **Input** | **Output** |
-| --- | --- |
-| 1 | \* |
+[image assetsSrc="java-oop-basics-rhombus1.png" /]
+
 
 ## Example 2
 
-| **Input** | **Output** |
-| --- | --- |
-| 2	 |  \* |
-|  | \* \* |
-|  |  \* |
+[image assetsSrc="java-oop-basics-rhombus2.png" /]
 
 ## Example 3
 
-| **Input** | **Output** |
-| --- | --- |
-| 3 |&nbsp; &nbsp;\* |
-|  |&nbsp; \* \* |
-|  |&nbsp;\* \* \* |
-|  |&nbsp; \* \* |
-|  |&nbsp; &nbsp;\* |
+[image assetsSrc="java-oop-basics-rhombus3.png" /]
 
-## Example 3
 
-| **Input** | **Output** |
-| --- | --- |
-| 4 |    \* |
-|  |   \* \* |
-|  |  \* \* \* |
-|  | \* \* \* \* |
-|  |  \* \* \* |
-|  |   \* \* |
-|  |    \* |
+## Example 4
+
+[image assetsSrc="java-oop-basics-rhombus4.png" /]
 
 [/task-description]
 [code-io /]
@@ -319,7 +301,7 @@ Create a `printRow()` method to easily reuse code.
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02-Java-OOP-Basics-More-OOP-Concepts-10-11-12-Splitting-code-into-classes-1 - Copy-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Just like methods, **classes should not know or do too much**.
+Just like methods, **classes should not "know" or do too much**.
 
 **Example:**
 
@@ -332,9 +314,11 @@ master.printToConsole(master.getDate());
 master.printToConsole(numbers);
 ```
 
-We can also break our code up logically into classes:
+The above is an example of a class that does too much.
 
-- **Hiding implementation**
+We should break our code up logically into classes which:
+
+- **Hides implementations**
 - Allows us to **change the output destination**
 - Helps us to **avoid repeating code**
 
@@ -376,9 +360,11 @@ printer.printToConsole(numbers);
 # Description
 Create a class **Point** and a class **Rectangle**.
 
-The **Point** should hold **coordinates X** and **Y** and the **Rectangle** should hold 2 **Points** – its **bottom left** and **top right** corners.
+The **Point** class should hold **coordinates X** and **Y**.
 
-In the **Rectangle** class, you should implement a `contains(Point point)` method that returns **true** or **false**, based on **whether** the **Point** given as **attribute** is **inside** or **outside** of the **Rectangle** object.
+The **Rectangle** class should hold 2 **Points** – its **bottom left** and **top right** corners.
+
+In the **Rectangle** class, you should implement a `contains(Point point)` method that returns **true** or **false**, based on **whether** the **Point** argument passed to the method is **inside** or **outside** of the **Rectangle** object.
 
 Points **on the side** of a Square are considered **inside**.
 
