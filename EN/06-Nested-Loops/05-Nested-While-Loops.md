@@ -37,6 +37,9 @@ while (i < n) {
 
 [slide hideTitle]
 # Problem with Solution: Triangle of Stars with While
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-31-problem-and-solution-triangle-of-stars-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Triangle of Stars with While" taskId="java-basics-nested-loops-Triangle-of-Stars-with-While" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -55,7 +58,7 @@ Write a program that:
 
 * Read **the height** of a triangle in the console
 * Print a **star triangle**
-# Example
+## Example
 
 | **Input** |**Output**|
 | ----- | ----- |
@@ -67,15 +70,27 @@ Write a program that:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+5
+[/input]
+[output]
+*
+**
+***
+****
+*****
+[/output]
+[/test]
 [test]
 [input]
 4
 [/input]
 [output]
-\*
-\*\*
-\*\*\*
-\*\*\*\*
+*
+**
+***
+****
 [/output]
 [/test]
 [/tests]
@@ -90,6 +105,82 @@ Write a program that:
 # Example: Combining "while" and "for" Loops
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-33-34-nesting-while-and-for-loops-and-problem-and-solution-sum-digits-calculator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+
+[/slide]
+
+
+[slide hideTitle]
+
+# Sum of Digits Calculator
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-33-34-nesting-while-and-for-loops-and-problem-and-solution-sum-digits-calculator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[code-task title="Triangle of Stars with While" taskId="java-basics-nested-loops-Sum-of-Digits-Calculator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Write a program that:
+
+- Continuously read integers until "**End**" is entered​
+
+  - print the sum of digits for each integer​
+
+- Finally, print "**Goodbye**"
+
+## Example
+
+| **Input** |**Output**|
+| ----- | ----- |
+|157​ |Sum of digits = 13|
+|99​|Sum of digits = 18|
+|5|Sum of digits = 5|​
+|438​|Sum of digits = 15|
+|End|Goodbye
+
+[/task-description]
+[tests]
+[test open]
+[input]
+157​
+99​
+5
+438​
+End
+[/input]
+[output]
+Sum of digits = 13​
+Sum of digits = 18​
+Sum of digits = 5​
+Sum of digits = 15​
+Goodbye
+[/output]
+[/test]
+[test]
+[input]
+4
+[/input]
+[output]
+*
+**
+***
+****
+[/output]
+[/test]
+[/tests]
+[code-io/]
+[/code-task]
+
 
 
 [/slide]

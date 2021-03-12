@@ -66,7 +66,8 @@ Scrieți un program care:
 
 * Citește **înălțimea** unui triunghi de pe consolă
 * Imprimă un **triunghi format din stele**
-# Exemplu
+
+## Exemplu
 
 | **Date de intrare** | **Date de ieșire** |
 | ----- | ----- |

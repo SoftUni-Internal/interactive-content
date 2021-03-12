@@ -72,7 +72,8 @@ Write a program, which:
 
 * Reads the **height** of a triangle from the console
 * Prints a **triangle of stars**
-# Example
+
+## Example
 
 | **Input** |**Output**|
 | ----- | ----- |
