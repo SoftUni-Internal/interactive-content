@@ -19,28 +19,30 @@ public class Main {
 ## Description
 You have been hired by a cinema to create a program that calculates whether there would be enough viewers to fill the cinema hall and what the income of the event would be. 
 
-On the first line you are going to receive the number of seats in the hall, and on the following lines until the command "Movie time!", how many people enter the hall.
+On the first line, you are going to receive the number of seats in the hall. 
+On the following lines, until the command **"Movie time!"** is received, you will receive how many people want to enter the hall.
 
-The price for a ticket is 5$. 
+The price for a ticket is **5$**. 
 
-If the current number of people that enter the hall can be divided by 3 without remainder, there is 5$. discount on the total price.
+If the current number of people that enter the hall can be divided by **3** without remainder, there is a **5$** discount on the total price.
 
-If there are no more free seats for the people that want to enter, the program must stop reading input from the console. 
+If there are no more free seats for the people that want to enter, the program should end.
 
-If more people than the available seats try to enter the hall, it is considered full and the program should stop receiving input.
+If more people than the available seats count try to enter the hall, it is considered full and the program should stop.
 
 ## Input
 Read from the console:
-- First line – hall capacity – whole number in range [50... 150]
+- Hall capacity – **integer** number in range [50... 150]
 
-On each of the next line until the command "Movie time!":
-- Number of people entering the cinema - integer in range [1… 15]
+- On the following lines, until the command **"Movie time!"** is received:
+ Number of people entering the cinema - **integer** in range [1… 15]
 
 ## Output
-A single line on the console:
-- If you have received the command "Movie time!": "There are \{seats left\} seats left in the cinema."
-- If there are no more free seats in the hall: "The cinema is full."
-- Afterwards, print out: "Cinema income - \{income\}$"
+The output should consist of a single line in the following format:
+- If you have received the command **"Movie time!"**: **"There are \{seats left\} seats left in the cinema."**
+- If there are **no more free seats** in the hall: **"The cinema is full."**
+
+- Afterwards, print out: **"Cinema income - \{income\}$"**
 
 ## Example
 | **Input** | **Output** | 
@@ -55,7 +57,7 @@ A single line on the console:
 [hints]
 
 [hint]
-Depending on what movie and drink have been chosen, determine the ticket price.
+Check if there are enough free seats on each iteration.
 [/hint]
 
 [hint]
