@@ -76,6 +76,17 @@ Scrieți un program care:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+4
+[/input]
+[output]
+4
+3
+2
+1
+[/output]
+[/test]
 [test]
 [input]
 5
@@ -129,10 +140,20 @@ Scrieți un program care:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 -10
 101
+50
+[/input]
+[output]
+50
+[/output]
+[/test]
+[test]
+[input]
+-5
+104
 60
 [/input]
 [output]
@@ -144,4 +165,5 @@ Scrieți un program care:
 [/code-task]
 
 [/slide]
+
 

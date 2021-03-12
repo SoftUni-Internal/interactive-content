@@ -631,10 +631,14 @@ Ajutați-o pe Andreea scriind un program în care Andreea să pună titlul unei 
 | Life Style | |
 | Troy | |
 
-### Comentarii
-- Andreea caută o carte cu titlul "Troy",iar capacitatea bibliotecii este de 8 cărți.
-- Prima carte este "Stronger", a doua carte este "Life Style", a treia este cea căutată - "Troy" și programul se încheie.
-
+[hints]
+[hint]
+Andreea caută o carte cu titlul "Troy",iar capacitatea bibliotecii este de 8 cărți.
+[/hint]
+[hint]
+Prima carte este "Stronger", a doua carte este "Life Style", a treia este cea căutată - "Troy" și programul se încheie.
+[/hint]
+[/hints]
 ## Exemplu
 | **Input** | **Output** |
 | --- | --- |
@@ -645,10 +649,15 @@ Ajutați-o pe Andreea scriind un program în care Andreea să pună titlul unei 
 | Torronto | | 
 | Spotify | | 
 
-### Comentarii
-- Andreea caută o carte cu titlul "The Spot". Biblioteca conține 4 cărți.
-- Prima carte este "Hunger Games", a doua - "Harry Potter", a treia - "Torronto", a patra - "Spotify"
-- Cum nu mai sunt alte cărți în bibliotecă, citirea titlurilor se încheie. Andreea nu a găsit cartea.
+[hints]
+[hint]
+Andreea caută o carte cu titlul "The Spot". Biblioteca conține 4 cărți.
+Prima carte este "Hunger Games", a doua - "Harry Potter", a treia - "Torronto", a patra - "Spotify".
+[/hint]
+[hint]
+Cum nu mai sunt alte cărți în bibliotecă, citirea titlurilor se încheie. Andreea nu a găsit cartea.
+[/hint]
+[/hints]
 [/task-description]
 [tests]
 [test open]
@@ -899,16 +908,23 @@ O notă slabe este mai mică sau egală cu 4.00.
 | 6 | |
 | Enough | |
 
-### Comentarii
-- Numărul de note slabe este 3.
-- Numele primei probleme este Money, nota lui Martin este 6.
-- A doua problemă - Story, nota - 4.
-- A treia problemă - Spring Time, nota - 5.
-- A patra problemă - Bus, nota - 6.
-- Următoarea comandă este Enough, programul se încheie.
-- Media notelor: 21 / 4 = 5.25
-- Numărul problemelor rezolvate: 4
-- Ultima problemă: Bus
+[hints]
+[hint]
+Numărul de note slabe este 3.
+[/hint]
+[hint]
+Numele primei probleme este Money, nota lui Martin este 6.
+A doua problemă - Story, nota - 4.
+A treia problemă - Spring Time, nota - 5.
+A patra problemă - Bus, nota - 6.
+Următoarea comandă este Enough, programul se încheie.
+[/hint]
+[hint]
+Media notelor: 21 / 4 = 5.25
+Numărul problemelor rezolvate: 4
+Ultima problemă: Bus
+[/hint]
+[/hints]
 
 ## Exemplu
 | **Input** | **Output** |
@@ -921,12 +937,17 @@ O notă slabe este mai mică sau egală cu 4.00.
 | Best Player| |
 | 4| |
 
-### Comentarii
-- Numărul permis de note mici este 2.
-- Numele primei probleme este Income, nota lui Martin este 3.
-- A doua problemă - Game Info, nota - 6.
-- A treia problemă - Best Player, nota - 4.
-- Martin atinge numărul de note mici permise, este timpul pentru break.
+[hints]
+[hint]
+Numărul permis de note mici este 2.
+[/hint]
+[hint]
+Numele primei probleme este Income, nota lui Martin este 3.
+A doua problemă - Game Info, nota - 6.
+A treia problemă - Best Player, nota - 4.
+Martin atinge numărul de note mici permise, este timpul pentru break.
+[/hint]
+[/hints]
 [/task-description]
 [tests]
 [test open]
@@ -1497,12 +1518,17 @@ Pe fiecare linie **următoare**, până la comanda **"End"** sau până ce **can
 | 55 | |
 | End | |
 
-### Comentarii
-- Cantitatea de detergent = 2 \* 750 = 1500 ml.
-- 53 farfurii încărcate = > 53 \* 5 = 265 ml.  1500 \- 265 = 1235 ml. (rest)
-- 65 farfurii = > 65 \* 5 = 325 ml 1235 \- 325 = 910 ml. (rest)
-- 55 căni = > 55 \* 15 = 825 ml 910\- 825 = 85 ml. (rest)
-- Primim comanda "End", iar când cantitatea este atinsă, mesajul corespunzător este imprimat: number of plates = 53 \+ 65 = 118. Number of pots = 55
+[hints]
+[hint]
+Cantitatea de detergent = 2 \* 750 = 1500 ml.
+53 farfurii încărcate = > 53 \* 5 = 265 ml.  1500 \- 265 = 1235 ml. (rest)
+65 farfurii = > 65 \* 5 = 325 ml 1235 \- 325 = 910 ml. (rest)
+55 căni = > 55 \* 15 = 825 ml 910\- 825 = 85 ml. (rest)
+[/hint]
+[hint]
+Primim comanda "End", iar când cantitatea este atinsă, mesajul corespunzător este imprimat: number of plates = 53 \+ 65 = 118. Number of pots = 55
+[/hint]
+[/hints]
 
 ## Exemplu
 | **Input** | **Output** |
@@ -1735,18 +1761,23 @@ Imprimă pe consolă:
 | 317| Average CS: 70.50|
 | | Average CC: 286.50|
 
-### Comentarii
-- Condiția este rulată prima oară în **cash payment**, apoi prin **credit card**
-- 120 > 100 tranzacția a fost respinsă 
-- 8 < 10 tranzacție respinsă
-- 63 <= 100 => tranzacție reușită
-- 256 >= 10 => tranzacție reușită
-- 78 <= 100 => tranzacție reușită
-- 317 >= 10 => tranzacție reușită
-- Suma totală colectată: 63 + 256 + 78 + 317 = 714 
-- 714 >= 500
-- Suma totală cash: 63 + 78 = 141;  Suma medie cash: 141/2 = 70.50 
-- Totalul din credit cards: 256 \+ 317 = 573; Suma medie din credit card: 573/2 = 286.50
+[hints]
+[hint]
+Condiția este rulată prima oară în **cash payment**, apoi prin **credit card**
+120 > 100 tranzacția a fost respinsă 
+8 < 10 tranzacție respinsă
+63 <= 100 => tranzacție reușită
+256 >= 10 => tranzacție reușită
+78 <= 100 => tranzacție reușită
+317 >= 10 => tranzacție reușită
+Suma totală colectată: 63 + 256 + 78 + 317 = 714 
+714 >= 500
+[/hint]
+[hint]
+Suma totală cash: 63 + 78 = 141;  Suma medie cash: 141/2 = 70.50 
+Totalul din credit cards: 256 \+ 317 = 573; Suma medie din credit card: 573/2 = 286.50
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -1947,7 +1978,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## DSescriere
+## Descriere
 
 Scrieți un program care să calculeze **nota medie** a unui student în întreaga sa perioadă de educație.
 
@@ -2172,11 +2203,16 @@ După ce ați găsit ** toate cele trei caractere de cod din comandă **, trebui
 | c| |
 | End| |
 
-### Commentarii
-- "**H**", "**n**", "**e**", "**l**", "**l**", "**o**", "**o**", "**c**" sunt toate litere citite.
-- Mai întâi citim simbolul "**H**" și îl adăugăm la cuvânt. Următorul simbol este "**n**". Face parte din comandă și **nu-l adăugăm la cuvânt când îl întâlnim pentru prima dată **.
-- Următoarele simboluri sunt"**e**", "**l**", "**l**" și le adăugăm la cuvânt. Citim "**o**" și îl notăm ca vizitat, dar încă o dată **nu-l** adăugăm la cuvânt. Următoarea literă este din nou  "**o**" și o adăugăm. Următorul simbol este  "**c**" și toate cele trei simboluri pentru comanda secretă sunt deja disponibile .
-- Imprimăm "**Hello** ",  primim comanda  "End" și progrmaul se încheie. Rezultatul este "Hello ".
+[hints]
+[hint]
+"**H**", "**n**", "**e**", "**l**", "**l**", "**o**", "**o**", "**c**" sunt toate litere citite.
+Mai întâi citim simbolul "**H**" și îl adăugăm la cuvânt. Următorul simbol este "**n**". Face parte din comandă și **nu-l adăugăm la cuvânt când îl întâlnim pentru prima dată**.
+Următoarele simboluri sunt"**e**", "**l**", "**l**" și le adăugăm la cuvânt. Citim "**o**" și îl notăm ca vizitat, dar încă o dată **nu-l** adăugăm la cuvânt. Următoarea literă este din nou  "**o**" și o adăugăm. Următorul simbol este  "**c**" și toate cele trei simboluri pentru comanda secretă sunt deja disponibile.
+[/hint]
+[hint]
+Imprimăm "**Hello** ",  primim comanda  "End" și progrmaul se încheie. Rezultatul este "Hello ".
+[/hint]
+[/hints]
 
 ## Exemplu
 | **Input** | **Output** |

@@ -18,14 +18,14 @@ if (condition1) {
 }
 ```
 
-# Example: Personal Titles
+## Example: Personal Titles
 Depending on someones **age** (integer) and their **gender** (**m** / **f**), print their personal title:
--  "Mr." – a man (gender "m") – 16 or older
--  "Master" – a boy (gender "m") - under 16 years old
--  "Ms." – a woman (gender "f") – 16 or molder
--  "Miss" – a girl (gender "f") - under 16 years old
+-  "Mr." - a man (gender "m") - 16 or older
+-  "Master" - a boy (gender "m") - under 16 years old
+-  "Ms." - a woman (gender "f") – 16 or molder
+-  "Miss" - a girl (gender "f") - under 16 years old
 
-# Solution: Personal Titles
+## Solution: Personal Titles
 We should notice that the **output** of the program **depends on a few conditions**. 
 
 **First**, we have to check what their **gender** is and **then** their **age**. 
@@ -55,7 +55,7 @@ if (age < 16) {
 }
 ```
 
-# Deep nesting
+## Deep nesting
 Nesting **more than three levels of conditional statements** is not considered a good practice.
 
 We can optimize the code structure by using another type of conditional statement.
@@ -66,7 +66,7 @@ We can optimize the code structure by using another type of conditional statemen
 [slide hideTitle]
 # Problem with Solution: Marketplace
 
-interactive-programming-basics-with-java-conditional-statements-advanced-12-problem-marketplace
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-12-problem-and-solution-marketplace-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Marketplace" taskId="java-basics-nested-conditions-marketplace" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -87,21 +87,22 @@ Create a program that:
   * Reads a **product** and whether it is a **weekday** or a **weekend** 
   * Prints out the **price**, formatted up to 2nd decimal place, based on the price table below
 
-|Product|Weekday|Weekend| 
-|-------|-------|-------|
+|**Product**|**Weekday**|**Weekend**| 
+|---|---|---|
 |Banana|2.50|2.70|
 |Apple|1.30|1.60|
 |Kiwi|2.20|3.00|
-# Example
 
-| Input | Output |
-| ------- | ------- |
+## Example
+
+| **Input** | **Output** |
+| --- | --- |
 | Banana | 2.50 |
 | Weekday |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 Banana
 Weekday
@@ -130,7 +131,7 @@ Weekend
 [slide hideTitle]
 # Problem with Solution: Biggest Number of Three
 
-interactive-programming-basics-with-java-conditional-statements-advanced-14-problem-greatest-number-of-three
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-14-problem-and-solution-greatest-number-of-three-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Biggest Number of Three" taskId="java-basics-nested-conditions-biggest-number-of-three" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -150,17 +151,18 @@ Create a program, that:
 
   * Reads **3 numbers** from the console
   * Prints out **the greatest** number
-# Example
 
-| Input | Output |
-| ------- | ------- |
+## Example
+
+| **Input** | **Output** |
+| --- | --- |
 | 1 | 3 |
 | 2 |
 | 3 |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 1
 2

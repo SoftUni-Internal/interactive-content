@@ -3,7 +3,7 @@
 Destul de des, logica programului necesită utilizarea instrucțiunilor  `if` sau `if-else`, care sunt conținute una în alta.
 Se numesc instrucțiuni **imbricate** `if` sau `if-else`.
 
-După cum sugerează titlul **`imbricat`**, acestea sunt instrucțiuni `if` sau `if-else` care sunt plasate în alte instrucțiuni `if` sau `else`.
+După cum sugerează titlul "**imbricat**", acestea sunt instrucțiuni `if` sau `if-else` care sunt plasate în alte instrucțiuni `if` sau `else`.
 
 ```java
 if (condition1) {
@@ -56,7 +56,7 @@ if (age < 16) {
 }
 ```
 
-# Imbricare adânca
+## Imbricare adânca
 Imbricarea a **mai mult de trei instrucțiuni condiționale** în interiorul unei alte intrucțiuni nu este considerată o bună practică.
 
 **Trebuie evitată**, mai ales prin optimizarea structurii / algoritmului codului și / sau prin utilizarea unui alt tip de instruțiune condițională.
@@ -83,15 +83,16 @@ Scrieți un program care:
    * Citește un **produs** și **o zi** de pe consolă
    * Tipărește **prețul**, formatat la a doua cifră după virgula zecimală pe baza tabelului de prețuri de mai jos
 
-|Product|Weekday|Weekend| 
-|-------|-------|-------|
+|**Product**|**Weekday**|**Weekend**| 
+|---|---|---|
 |Banana|2.50|2.70|
 |Apple|1.30|1.60|
 |Kiwi|2.20|3.00|
-# Exemplu
 
-| Intrare | Ieșire |
-| ------- | ------- |
+## Exemplu
+
+| **Intrare** | **Ieșire** |
+| --- | --- |
 | Banana | 2.50 |
 | Weekday |
 
@@ -143,17 +144,17 @@ Scrieți un program care:
 
    * Citește **3 numere** de pe consolă
    * Tipărește **cel mai mare** număr
-# Exemplu
+## Exemplu
 
-| Intrare | Ieșire |
-| ------- | ------- |
+| **Intrare** | **Ieșire** |
+| --- | --- |
 | 1 | 3 |
 | 2 |
 | 3 |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 1
 2

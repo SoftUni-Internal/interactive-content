@@ -33,9 +33,9 @@ The are characterized by:
 
 In computer programming, a naming convention is a set of **rules** for choosing the name to be used for variables.
 
-In Java the convention for naming variables are used ***"camel-case"***. 
+In Java, the convention for naming variables are used ***"camelCase"***. 
 
-There are other naming conventions which are used in different languages such as pascal case, snake case. 
+Other naming conventions are used in different languages such as the pascal case, snake case. 
 
 **Camel case** combines words by:
 * Capitalizing all words following the first word

@@ -18,20 +18,15 @@ public class Program {
 ## Descriere
 Scrieți un program pentru a verifica o parolă:
 
-  * Citește un șir: parola **guess**.
-  * Imprimă **"Welcome"** dacă presupunerea parolei este **"s3cr3t!"**.
-  * Imprimă **"Wrong password!"** în toate celelalte cazuri.
+  * Citește un șir: parola **guess**
+  * Imprimă **"Welcome"** dacă presupunerea parolei este **"s3cr3t!"**
+  * Imprimă **"Wrong password!"** în toate celelalte cazuri
 
-## Exemplu:
-| **Input** | **Output** |
+## Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | s3cr3t! | Welcome |
-| | |
-
-| **Input** | **Output** |
-| --- | --- |
 | qwerty | Wrong password! |
-| | |
 
 [/task-description]
 [tests]
@@ -45,7 +40,7 @@ Welcome
 [/test]
 [test open]
 [input]
-random password
+qwerty
 [/input]
 [output]
 Wrong password!
@@ -92,21 +87,16 @@ public class Program {
 ## Descriere
 Scrieți un program care să verifice dacă apa este fierbinte:
 
-  * Citește un număr în virgulă mobilă: **temperatura** a apei (în ° C).
-  * Imprima **"The water is boiling"** dacă numărul este **> 100**.
-  * Imprima **"The water is not hot enough"** în toate celelalte cazuri.
+  * Citește un număr în virgulă mobilă: **temperatura** a apei (în ° C)
+  * Imprima **"The water is boiling"** dacă numărul este **> 100**
+  * Imprima **"The water is not hot enough"** în toate celelalte cazuri
 
   
 ## Exemplu
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 104.8 | The water is boiling |
-| | |
-
-| **Input** | **Output** |
-| --- | --- |
 | 29 | The water is not hot enough |
-| | |
 
 [/task-description]
 [tests]
@@ -118,7 +108,6 @@ Scrieți un program care să verifice dacă apa este fierbinte:
 The water is boiling
 [/output]
 [/test]
-
 [test open]
 [input]
 29
@@ -168,21 +157,16 @@ public class Program {
 ## Descriere
 Scrieți un program pentru a verifica viteza rapidă/lentă:
 
-  * Citește **speed** (un număr în virgulă mobilă).
-  * Imprima **"Slow"** dacă viteza este **<= 30**.
-  * Imprima **"Fast"** dacă viteza este **> 30**.
+  * Citește **speed** (un număr în virgulă mobilă)
+  * Imprima **"Slow"** dacă viteza este **<= 30**
+  * Imprima **"Fast"** dacă viteza este **> 30**
 
 
 ## Exemplu
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 30 | Slow |
-| | | 
-
-| **Input** | **Output** |
-| --- | --- |
 | 60 | Fast |
-| | | 
 
 [/task-description]
 [tests]
@@ -242,38 +226,38 @@ public class Program {
 [task-description]
 ## Descriere
 Scrieți un program pentru a calcula aria diferitelor figuri:
-  * Citește un șir: figura ** tip **.
-  * Verifică dacă cifra introdusă este **square**, **rectangle** sau **circle**.
-  * Citește un număr pentru pătrat și cerc sau două numere pentru dreptunghi.
-    * Numerele vor fi în virgulă mobilă.
-  * Imprimă zona calculată **formatată** la a doua cifră după punctul zecimal.
-  * * Pentru figura necunoscută imprima **"Unknown figure"**.
+  * Citește un șir: figura **tip**
+  * Verifică dacă cifra introdusă este **square**, **rectangle** sau **circle**
+  * Citește un număr pentru pătrat și cerc sau două numere pentru dreptunghi
+    * numerele vor fi în virgulă mobilă
+  * Imprimă zona calculată **formatată** la a doua cifră după punctul zecimal
+  * * Pentru figura necunoscută imprima **"Unknown figure"**
 
-## Exemple:
+## Exemple
 
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | square | 25.00 |
 | 5 |  |
-| | |
 
-| **Input** | **Output** |
+
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | rectangle | 30.00 |
 | 3 |  |
 | 10 |  |
-| | | 
 
-| **Input** | **Output** |
+
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | trapezoid | Unknown figure |
-| | | 
 
-| **Input** | **Output** |
+
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | circle | 19.63 |
 | 2.5 | |
-| | | 
+
 [/task-description]
 [tests]
 [test open]
@@ -374,17 +358,16 @@ public class Program {
 Scrieți un program pentru a **calcula** prețul biletului:
 
   * Citește tipul biletului: fie **student**, fie **obișnuit**
-  * Imprima **prețul** în următorul format "$\{price\}":
-    * Prețul trebuie să fie **formatat** la a doua cifră după punctul zecimal.
-  * Prețul biletului de tip student: **1.00**.
-  * Prețul biletului de tip regulat: **1.60**.
-  * Pentru un tip nevalid imprima **"Invalid ticket type!"**.
+  * Imprima **prețul** în următorul format "$\{**price**\}":
+    * prețul trebuie să fie **formatat** la a doua cifră după punctul zecimal
+  * Prețul biletului de tip student: **1.00**
+  * Prețul biletului de tip regulat: **1.60**
+  * Pentru un tip nevalid imprima **"Invalid ticket type!"**
   
 ## Exemplu
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | student | $1.00 |
-| | | 
 
 [/task-description]
 [tests]
@@ -461,10 +444,10 @@ public class Program {
 ## Descriere
 Scrieți un program pentru a calcula prețul băuturii într-o cafenea:
 
-  * Citește o băutură: fie **"cafea"** fie **"ceai"**.
-  * Citește o adăugare: fie **"zahăr"** fie **"no"**.
-  * Imprimă prețul în formatul`"Final price: ${price}"`.
-    * Prețul trebuie să fie **formatat** la a doua cifră după punctul zecimal.
+  * Citește o băutură: fie **"cafea"** fie **"ceai"**
+  * Citește o adăugare: fie **"zahăr"** fie **"no"**
+  * Imprimă prețul în formatul: "**Final price:** $\{**price**\}"
+    * Prețul trebuie să fie **formatat** la a doua cifră după punctul zecimal
   
 Prețuri:
 
@@ -473,18 +456,15 @@ Prețuri:
   * Sugar price: **0.40**
 
 ## Exemple
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | coffee | Final price: $1.40 |
 | sugar |  |
-| | |
 
-## Example
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | tea | Final price: $0.60 |
 | no |  |
-| | |
 
 [/task-description]
 [tests]
@@ -567,19 +547,18 @@ public class Program {
 ## Descriere
 Scrieți un program pentru a verifica dacă un triunghi este valid după dimensiunile sale:
 
-  * Citește 3 numere întregi: the **laturile unui triunghi**.
-  * Verifică dacă fiecare parte este mai mică decât suma celorlalte 2.
-    * Imprima **"Valid Triangle"**, dacă condiția de mai sus este îndeplinită.
-    * Imprima **"Invalid Triangle"** în caz contrar.
+  * Citește 3 numere întregi: the **laturile unui triunghi**
+  * Verifică dacă fiecare parte este mai mică decât suma celorlalte 2
+    * Imprima **"Valid Triangle"**, dacă condiția de mai sus este îndeplinită
+    * Imprima **"Invalid Triangle"** în caz contrar
 
     
-## Exemplu:
-| **Input** | **Output** |
+## Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 3 | Valid Triangle |
 | 4 |  |
 | 5 |  |
-| | |
 
 [/task-description]
 [tests]
@@ -646,6 +625,7 @@ public class Main {
 [task-description]
 
 # Descriere
+
 40% din cultura vinicolă este alocată dintr-o vie de X metri pătrați.
 
 Din via de  1 metru pătrat se câștigă **Y kilograme de struguri**. 
@@ -660,38 +640,28 @@ Scrieți un program care să calculeze cât de mult vin poate fi produs și dac�
 ## Intrare
 Intrarea este citită de pe consolă și constă din exact 4 rânduri:
 - **X metru pătrat este via** - număr întreg în intervalul \[10 ... 5000 \]
-- **struguri Y pentru un metru pătrat** - număr în virgulă mobilă în intervalul\[0.00 … 10.00\]
+- **struguri Y pentru un metru pătrat** - număr în virgulă mobilă în intervalul\[0.00 ... 10.00\]
 - **Z litre necesare pentru vin** - număr întreg în intervalul \[10 ... 600 \]
 - **Număr de lucrători** - număr întreg în intervalul \[1 ... 20 \]
 
 ## Ieșire
 Următoarele ar trebui să fie tipărite pe consolă: 
 -  Dacă vinul produs este mai mic decât este necesar:
-    - "It will be a tough winter! More \{unattainable wine\} liters wine needed."
-        - Rezultatul trebuie rotunjit la un număr întreg
+    - "**It will be a tough winter!** \{**amount of wine needed**\} **liters of wine needed to reach the goal.**"
+        - rezultatul trebuie rotunjit la un număr întreg
 - Dacă vinul produs este mai mare sau egal cu ceea ce era necesar:
-    - "Good harvest this year! Total wine: \{Total wine\} liters."
-        - Rezultatul trebuie rotunjit la un număr întreg
-    -  "\{remaining wine\} liters left -> \{wine for 1 worker\} liters per person."
-        - Ambele rezultate trebuie rotunjite la numărul întreg superior
+    - "**Good harvest this year! Total wine:** \{**Total wine**\} **liters.**"
+        - rezultatul trebuie rotunjit la un număr întreg
+    -  "\{**remaining wine**\} **liters left** **->** \{**wine for 1 worker**\} **liters per person.**"
+        - ambele rezultate trebuie rotunjite la numărul întreg superior
 
 ## Exemplu
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 650 | Good harvest this year! Total wine: 208 liters. |
 | 2 | 33 liters left -> 11 liters per person. |
 | 175 | |
 | 3 | |
-| | |
-
-## Exemplu
-| **Input** | **Output** |
-| --- |  --- |
-| 1020 | It will be a tough winter! More 180 liters wine needed.|
-| 1.5 | |
-| 425 | |
-| 4 | |
-| | |
 
 [hints]
 [hint]
@@ -706,6 +676,14 @@ Apoi tipăriți rezultatul corect.
 208 \- 175 = 33 de litre rămân \-> 11 litre pentru persoana
 [/hint]
 [/hints]
+
+## Exemplu
+|**Intrare**|**Ieșire** |
+| --- |  --- |
+| 1020 | It will be a tough winter! 180 liters of wine needed to reach the goal.|
+| 1.5 |  |
+| 425 | |
+| 4 | |
 
 [/task-description]
 [tests]
@@ -729,7 +707,7 @@ Good harvest this year! Total wine: 208 liters.
 4
 [/input]
 [output]
-It will be a tough winter! More 180 liters wine needed.
+It will be a tough winter! 180 liters of wine needed to reach the goal.
 [/output]
 [/test]
 [test]
@@ -740,7 +718,7 @@ It will be a tough winter! More 180 liters wine needed.
 2
 [/input]
 [output]
-It will be a tough winter! More 153 liters wine needed.
+It will be a tough winter! 153 liters of wine needed to reach the goal.
 [/output]
 [/test]
 [test]
@@ -775,7 +753,7 @@ Good harvest this year! Total wine: 1372 liters.
 10
 [/input]
 [output]
-It will be a tough winter! More 93 liters wine needed.
+It will be a tough winter! 93 liters of wine needed to reach the goal.
 [/output]
 [/test]
 [test]
@@ -786,7 +764,7 @@ It will be a tough winter! More 93 liters wine needed.
 5
 [/input]
 [output]
-It will be a tough winter! More 600 liters wine needed.
+It will be a tough winter! 600 liters of wine needed to reach the goal.
 [/output]
 [/test]
 [test]
@@ -821,7 +799,7 @@ Good harvest this year! Total wine: 4400 liters.
 9
 [/input]
 [output]
-It will be a tough winter! More 79 liters wine needed.
+It will be a tough winter! 79 liters of wine needed to reach the goal.
 [/output]
 [/test]
 [/tests]
@@ -859,23 +837,33 @@ Intrarea constă în **două** linii:
 
 ## Ieșire
 Imprima rezultatul în următorul format:"\{hours\}:\{minutes\}".
-- Orele trebuie să fie formatate **fără zero**.
-- Minutele trebuie trebuie să fie formatate **cu zero**.
+- Orele trebuie să fie formatate **fără zero**
+- Minutele trebuie trebuie să fie formatate **cu zero**
 
 ## Exemplu:
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 11 | 11:23|
 | 08 | |
-| | |
 
-| **Input** | **Output** |
+
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 1 | 2:01 | 
 | 46 | |
-| | |
+
+
 [/task-description]
 [tests]
+[test open]
+[input]
+11
+08
+[/input]
+[output]
+11:23
+[/output]
+[/test]
 [test open]
 [input]
 1
@@ -883,15 +871,6 @@ Imprima rezultatul în următorul format:"\{hours\}:\{minutes\}".
 [/input]
 [output]
 2:01
-[/output]
-[/test]
-[test open]
-[input]
-0
-01
-[/input]
-[output]
-0:16
 [/output]
 [/test]
 [test]
@@ -999,6 +978,7 @@ Imprima rezultatul în următorul format:"\{hours\}:\{minutes\}".
 [/slide]
 
 
+
 [slide hideTitle]
 # Problemă: Day of Week
 [code-task title="Day of Week" taskId="pb-java-Conditional-Statements-day-of-week" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -1016,19 +996,15 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program care citește un număr întreg de pe consolă și imprima **ziua săptămânii** (în engleză) în intervalul\ [1 ... 7 \] și "**Error**" dacă numărul este **nevalid**.
+Scrieți un program care citește un număr întreg de pe consolă și imprima **ziua săptămânii** (în engleză) în intervalul \[1 ... 7\] și "**Error**" dacă numărul este **nevalid**.
 
 ## Exemplu
 
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- |  --- |
 | 2 | Tuesday |
-| | |
-
-| **Input** | **Output** |
-| --- | --- |
 | -1 | Error |
-| | |
+
 [/task-description]
 [tests]
 [test open]
@@ -1041,7 +1017,7 @@ Monday
 [/test]
 [test open]
 [input]
--2
+-1
 [/input]
 [output]
 Error
@@ -1138,23 +1114,18 @@ public class Main {
 Scrieți un program care imprima **tipul** unui animal în funcție de **numele său**.
 
 ## Intrare / Ieșire
-- **dog -> mammal**
-- **crocodile, tortoise, snake -> reptile**
+- mammals: **dog** 
+- reptiles: **crocodile**, **tortoise**, **snake** 
 - **others -> unknown**
 
 ## Exemplu:
 
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | | --- |
 | dog | mammal |
-
-| **Input** | **Output** |
-| --- | --- |
 | snake | reptile |
-
-| **Input** | **Output** |
-| --- | --- |
 | cat | unknown |
+
 [/task-description]
 [tests]
 [test open]
@@ -1237,6 +1208,7 @@ public class Main {
 ## Descriere
 
 Scrieți un **program** care să calculeze **cantitatea de kilograme** de mâncare animalelor ale Martinei care vor mânca in timp ce ea este **în aventură** și **verifică dacă mâncarea este suficientă**.
+
 Fiecare animal mănâncă o anumită cantitate de mâncare pe zi.
 
 ## Intrare
@@ -1250,12 +1222,16 @@ Citește **cinci** rânduri de pe consolă:
 ## Ieșire
 Imprima pe consolă o linie **unică**:
 - Dacă mâncarea rămasă **este suficientă**:
-  - "\{kilograms remain\} kilos of food left." Rezultatul trebuie să fie **rotunjit la cel mai apropiat număr întreg inferior**.
+  - "\{**kilograms remain**\} **kilos of food left.**" 
+  
+Rezultatul trebuie să fie **rotunjit la cel mai apropiat număr întreg inferior**.
 - Dacă mâncarea rămasă **nu este suficientă**:
-  - "\{kilograms needed\} more kilos of food are needed." Rezultatul trebui să fie **rotunjit la cel mai apropiat număr întreg superior**.
+  - "\{**kilograms needed**\} **more kilos of food are needed.**"
+  
+Rezultatul trebui să fie **rotunjit la cel mai apropiat număr întreg superior**.
 
 ## Exemplu
-| **Input**  | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 2 | 3 kilos of food left. |
 | 10 | |
@@ -1263,8 +1239,8 @@ Imprima pe consolă o linie **unică**:
 | 1 | |
 | 1200 | |
 
-## Exemplu
-| **Input**  | **Output** |
+
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 5 | 7 more kilos of food are needed. |
 | 10 | |
@@ -1458,22 +1434,22 @@ Muncitorul pornește conductele **în același timp** și iese pentru  **N ore**
 Scrieți un program care să arate starea piscinei **în momentul în care lucrătorul revine**.
 
 ## Intrare
-** Patru ** linii de intrare:
-- **V** - **Volumul piscinei în litri** - numere întregi în intervalul \[1…10000\]
-- **P1** - **fluxul primei țevi pe oră** - numere întregi în intervalul \[1…5000\]
-- **P2** - **fluxul celei de-a doua țevi pe oră** - numere întregi în intervalul \[1…5000\]
-- **H** - **ore lucrătorului in timp ce lipsește** - număr cu virgulă mobilă în intervalul \[1.0…24.00\]
+**Patru** linii de intrare:
+- **V** - **Volumul piscinei în litri** - numere întregi în intervalul \[1 ... 10000\]
+- **P1** - **fluxul primei țevi pe oră** - numere întregi în intervalul \[1 ... 5000\]
+- **P2** - **fluxul celei de-a doua țevi pe oră** - numere întregi în intervalul \[1 ... 5000\]
+- **H** - **ore lucrătorului in timp ce lipsește** - număr cu virgulă mobilă în intervalul \[1.0 ... 24.00\]
 
 ## Ieșire
 Imprima pe consolă **una dintre ambele posibilități**:
 - Cât de mult a fost umplută piscina și care dintre țevile cât a contribuit în procente
-  - "The pool is \{occupancy of the pool in percent\}% full. Pipe 1: \{percent water from the first pipe\}%. Pipe 2: \{percent water from the second pipe\}%."
+  - "**The pool is** \**{percentage of volume**\}% **full.** **Pipe 1:** \{**transferred percentage**\}**%.** **Pipe 2:** \{**transferred percentage**\}**%.**"
 - Dacă piscina este debordantă - câți litri sunt debordați pentru timpul dat
-  - "For \{hours pipes are filling the pool\} hours the pool overflows with \{liters water overflow\} liters."
+  - "**For** \{**amount of time**\} **hours the pool overflows with** \{**liters of unnecessary water transferred**\} **liters.**"
 - Toate numerele din ieșire trebuie formatate la a doua cifră după punctul zecimal.
 
 ## Exemplu
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 1000 | The pool is 66.00% full. Pipe 1: 45.45%. Pipe 2: 54.55%. |
 | 100 | |
@@ -1481,7 +1457,7 @@ Imprima pe consolă **una dintre ambele posibilități**:
 | 3 | |
 
 ## Exemplu
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 100 | For 2.50 hours the pool overflows with 400.00 liters. |
 | 100 | |

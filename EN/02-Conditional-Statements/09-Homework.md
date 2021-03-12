@@ -19,19 +19,15 @@ public class Program {
 Create a program to check a password:
 
   * Read a string: the password
-  * Print **"Welcome"** if the password guess is **"s3cr3t!"**.
-  * Print **"Wrong password!"** in all other cases .
+  * Print **"Welcome"** if the password guess is **"s3cr3t!"**
+  * Print **"Wrong password!"** in all other cases 
 
-## Example:
+## Examples
 | **Input** | **Output** |
 | --- | --- |
 | s3cr3t! | Welcome |
-| | |
-
-| **Input** | **Output** |
-| --- | --- |
 | qwerty | Wrong password! |
-| | |
+
 
 [/task-description]
 [tests]
@@ -45,7 +41,7 @@ Welcome
 [/test]
 [test open]
 [input]
-random password
+qwerty
 [/input]
 [output]
 Wrong password!
@@ -95,21 +91,16 @@ public class Program {
 ## Description
 Create a program, which checks whether the water in a pot is boiling: 
 
-  * Read a floating-point number: the water **temperature** (in °C).
-  * Print out **"The water is boiling"** if the number **> 100**.
-  * Prints out **"The water is not hot enough"** in all other cases.
+  * Read a floating-point number: the water **temperature** (in °C)
+  * Print out **"The water is boiling"** if the number **> 100**
+  * Prints out **"The water is not hot enough"** in all other cases
 
   
-## Example
+## Examples
 | **Input** | **Output** |
 | --- | --- |
 | 104.8 | The water is boiling |
-| | |
-
-| **Input** | **Output** |
-| --- | --- |
 | 29 | The water is not hot enough |
-| | |
 
 [/task-description]
 [tests]
@@ -121,7 +112,6 @@ Create a program, which checks whether the water in a pot is boiling:
 The water is boiling
 [/output]
 [/test]
-
 [test open]
 [input]
 29
@@ -171,21 +161,17 @@ public class Program {
 ## Description
 Create a piece pf code that checks wheter an object is moving fast or slow according to its speed:
 
-  * Read the **speed** (a floating-point number).
-  * Print **"Slow"** if the speed is **<= 30**.
-  * Print **"Fast"** if the speedis **> 30**.
+  * Read the **speed** (a floating-point number)
+  * Print **"Slow"** if the speed is **<= 30**
+  * Print **"Fast"** if the speedis **> 30**
 
 
-## Example
+## Examples
 | **Input** | **Output** |
 | --- | --- |
 | 30 | Slow |
-| | | 
-
-| **Input** | **Output** |
-| --- | --- |
 | 60 | Fast |
-| | | 
+
 
 [/task-description]
 [tests]
@@ -248,38 +234,34 @@ public class Program {
 [task-description]
 ## Description
 Create a program to calculate the area of different figures:
-  * Reads a string: the figure **type**.
-  * Checks if the figure is a **square**, a **rectangle** or a **circle**.
-  * Accepts one number for a square or a circle or two numbers for rectangle.
-    * Numbers will be floating-point.
-  * Prints out the calculated area **formatted** to the second digit after the decimal point.
-  * For unknown figures print out **"Unknown figure"**.
+  * Reads a string: the figure **type**
+  * Checks if the figure is a **square**, a **rectangle** or a **circle**
+  * Accepts one number for a square or a circle or two numbers for the rectangle
+    * numbers will be floating-point
+  * Prints out the calculated area **formatted** to the second digit after the decimal point
+  * For unknown figures print out **"Unknown figure"**
 
-## Examples:
+## Examples
 
 | **Input** | **Output** |
 | --- | --- |
 | square | 25.00 |
 | 5 |  |
-| | |
 
 | **Input** | **Output** |
 | --- | --- |
 | rectangle | 30.00 |
 | 3 |  |
 | 10 |  |
-| | | 
 
 | **Input** | **Output** |
 | --- | --- |
 | trapezoid | Unknown figure |
-| | | 
 
 | **Input** | **Output** |
 | --- | --- |
 | circle | 19.63 |
 | 2.5 | |
-| | | 
 [/task-description]
 [tests]
 [test open]
@@ -378,18 +360,17 @@ public class Program {
 ## Description
 Create a program to **calculate** the price of a ticket based on the following:
 
-  * Read the ticket type: either **student** or **regular**.
-  * Print the **price** in the following format "$\{price\}":
-    * The price should be **formatted** to 2nd digit after the decimal point.
-  * Student ticket price: **1.00**.
-  * Regular ticket price: **1.60**.
-  * In any other input print out: **"Invalid ticket type!"**.
+  * Read the ticket type: either **student** or **regular**
+  * Print the **price** in the following format "$\{**price**\}":
+    * the price should be **formatted** to the 2nd digit after the decimal point
+  * Student ticket price: **1.00**
+  * Regular ticket price: **1.60**
+  * In any other input print out: **"Invalid ticket type!"**
   
 ## Example
 | **Input** | **Output** |
 | --- | --- |
 | student | $1.00 |
-| | | 
 
 [/task-description]
 [tests]
@@ -469,10 +450,10 @@ public class Program {
 ## Description
 Create a program to calculate the price for a particular drink in a coffee shop:
 
-  * The first line of input will be either **"coffee"** or **"tea"**.
-  * The second: either **"sugar"** or **"no"**.
-  * Print the price in the following format: `"Final price: ${price}"`.
-    * The price should be **formatted** to 2nd digit after the decimal point.
+  * The first line of input will be either **"coffee"** or **"tea"**
+  * The second: either **"sugar"** or **"no"**
+  * Print the price in the following format: "**Final price:** $\{**price**\}"
+    * the price should be **formatted** to the 2nd digit after the decimal point
   
 Prices:
 
@@ -480,19 +461,16 @@ Prices:
   * Tea price: **0.60**
   * Sugar price: **0.40**
 
-## Example
+## Examples
 | **Input** | **Output** |
 | --- | --- |
 | coffee | Final price: $1.40 |
 | sugar |  |
-| | |
 
-## Example
 | **Input** | **Output** |
 | --- | --- |
 | tea | Final price: $0.60 |
 | no |  |
-| | |
 
 [/task-description]
 [tests]
@@ -575,19 +553,18 @@ public class Program {
 ## Description
 Create a program to check if a triangle could exist judging by the input:
 
-  * Read 3 integers: the **sides of a triangle**.
-  * Check if each side is less than the sum of the others 2.
-    * Prints **"Valid Triangle"** if the above condition is met.
-    * Prints **"Invalid Triangle"** otherwise.
+  * Read 3 integers: the **sides of a triangle**
+  * Check if each side is less than the sum of the others 2
+    * prints **"Valid Triangle"** if the above condition is met
+    * prints **"Invalid Triangle"** otherwise
 
     
-## Example:
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | 3 | Valid Triangle |
 | 4 |  |
 | 5 |  |
-| | |
 
 [/task-description]
 [tests]
@@ -671,7 +648,7 @@ If the produced amount is sufficient to meet the goal, the remaining wine is dis
 
 ## Input
 You will receive the following as input from the console:
-- **The size of the the vineyard** in square meters - an integer in range \[10 … 5000\]
+- **The size of the vineyard** in square meters - an integer in range \[10 … 5000\]
 - **The yield per sq. m** - a floating-point number in range \[0.00 … 10.00\]
 - **The production goal in liters** - an integer in range \[10 … 600\]
     - Remember that this particular vineyard is responsible for only 40% of the total production
@@ -680,12 +657,12 @@ You will receive the following as input from the console:
 ## Output
 Print one of the following output templates to the console, depending on the result:
 -  If the produced wine amount is less than the goal:
-    - "It will be a tough winter! \{amount of wine needed\} liters of wine needed to reach the goal."
-        - The result must be **rounded down** to the nearest integer
+    - "**It will be a tough winter!** \{**amount of wine needed**\} **liters of wine needed to reach the goal.**"
+        - the result must be **rounded down** to the nearest integer
 - If the produced wine amount is more than or equal to the production goal:
-    - "Good harvest this year! Total wine: \{Total wine\} liters."
-        - The result must be **rounded down** to the nearest integer
-    -  "\{remaining wine\} liters left -> \{wine for 1 worker\} liters per person."
+    - "**Good harvest this year! Total wine:** \{**Total wine**\} **liters.**"
+        - the result must be **rounded down** to the nearest integer
+    -  "\{**remaining wine**\} **liters left** **->** \{**wine for 1 worker**\} **liters per person.**"
         - The remaining wine amount and wine per worker must be **rounded up** to the nearest integer
 
 ## Example
@@ -695,7 +672,7 @@ Print one of the following output templates to the console, depending on the res
 | 2 | 33 liters left -> 11 liters per person. |
 | 175 | |
 | 3 | |
-| | |
+
 
 [hints]
 [hint]
@@ -714,11 +691,10 @@ Wine Produced by this vineyard = (40% \* 1300) / 2.5 = 208
 ## Example
 | **Input** | **Output** |
 | --- |  --- |
-| 1020 | It will be a tough winter! 180 liters of wine needed.|
-| 1.5 | |
+| 1020 | It will be a tough winter! 180 liters of wine needed to reach the goal.|
+| 1.5 |  |
 | 425 | |
 | 4 | |
-| | |
 
 [/task-description]
 [tests]
@@ -742,7 +718,7 @@ Good harvest this year! Total wine: 208 liters.
 4
 [/input]
 [output]
-It will be a tough winter! 180 liters of wine needed.
+It will be a tough winter! 180 liters of wine needed to reach the goal.
 [/output]
 [/test]
 [test]
@@ -753,7 +729,7 @@ It will be a tough winter! 180 liters of wine needed.
 2
 [/input]
 [output]
-It will be a tough winter! 153 liters of wine needed.
+It will be a tough winter! 153 liters of wine needed to reach the goal.
 [/output]
 [/test]
 [test]
@@ -788,7 +764,7 @@ Good harvest this year! Total wine: 1372 liters.
 10
 [/input]
 [output]
-It will be a tough winter! 93 liters of wine needed.
+It will be a tough winter! 93 liters of wine needed to reach the goal.
 [/output]
 [/test]
 [test]
@@ -799,7 +775,7 @@ It will be a tough winter! 93 liters of wine needed.
 5
 [/input]
 [output]
-It will be a tough winter! 600 liters of wine needed.
+It will be a tough winter! 600 liters of wine needed to reach the goal.
 [/output]
 [/test]
 [test]
@@ -834,7 +810,7 @@ Good harvest this year! Total wine: 4400 liters.
 9
 [/input]
 [output]
-It will be a tough winter! 79 liters of wine needed.
+It will be a tough winter! 79 liters of wine needed to reach the goal.
 [/output]
 [/test]
 [/tests]
@@ -872,23 +848,31 @@ The input consists of **two** lines:
 
 ## Output
 Print the result in the following format: "\{hours\}:\{minutes\}".
-- The hours should be formatted **without a leading zero**.
-- The minutes should be formatted **with a leading zero**.
+- The hours should be formatted **without a leading zero**
+- The minutes should be formatted **with a leading zero**
 
 ## Example:
 | **Input** | **Output** |
 | --- | --- |
 | 11 | 11:23|
 | 08 | |
-| | |
 
 | **Input** | **Output** |
 | --- | --- |
 | 1 | 2:01 | 
 | 46 | |
-| | |
+
 [/task-description]
 [tests]
+[test open]
+[input]
+11
+08
+[/input]
+[output]
+11:23
+[/output]
+[/test]
 [test open]
 [input]
 1
@@ -896,15 +880,6 @@ Print the result in the following format: "\{hours\}:\{minutes\}".
 [/input]
 [output]
 2:01
-[/output]
-[/test]
-[test open]
-[input]
-0
-01
-[/input]
-[output]
-0:16
 [/output]
 [/test]
 [test]
@@ -1036,12 +1011,8 @@ Create a program that reads an integer \[1...7\] from the console and prints out
 | **Input** | **Output** |
 | --- |  --- |
 | 2 | Tuesday |
-| | |
-
-| **Input** | **Output** |
-| --- | --- |
 | -1 | Error |
-| | |
+
 [/task-description]
 [tests]
 [test open]
@@ -1054,7 +1025,7 @@ Monday
 [/test]
 [test open]
 [input]
--2
+-1
 [/input]
 [output]
 Error
@@ -1167,14 +1138,9 @@ The input may hold the following values:
 | **Input** | **Output** |
 | --- | | --- |
 | dog | mammal |
-
-| **Input** | **Output** |
-| --- | --- |
 | snake | reptile |
-
-| **Input** | **Output** |
-| --- | --- |
 | cat | unknown |
+
 [/task-description]
 [tests]
 [test open]
@@ -1258,24 +1224,30 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Your friend has 3 pets. She would like to go on a trip and needs you to help her calculate whether she currently has enough food to leave to her pets so that they do not starve during her time away.
+Your friend has 3 pets. 
+
+She would like to go on a trip and needs you to help her calculate whether she currently has enough food to leave to her pets so that they do not starve during her time away.
 
 ## Input
 Read **five** lines from the console:
-- **number of days** - an integer in range \[1…5000\]
-- **left food in kilograms** - an integer in range \[0…100000\]
-- **food for the dog per day in kilograms** - a double in range \[0.00…100.00\]
-- **food for the cat per day in kilograms** - a double in range \[0.00…100.00\]
-- **food for the turtle per day in grams** - a double in range \[0.00…10000.00\]
+- **number of days** - an integer in range \[1 ... 5000\]
+- **left food in kilograms** - an integer in range \[0 ... 100000\]
+- **food for the dog per day in kilograms** - a double in range \[0.00 ... 100.00\]
+- **food for the cat per day in kilograms** - a double in range \[0.00 ... 100.00\]
+- **food for the turtle per day in grams** - a double in range \[0.00 ... 10000.00\]
 
 ## Output
 Print out a **single** line:
 - If the food **IS enough**:
-  - "\{kilograms remain\} kilos of food left." The result should be **rounded to the nearest lower integer**.
+  - "\{**kilograms remain**\} **kilos of food left.**" 
+  
+The result should be **rounded to the nearest lower integer**.
 - If the left food **IS NOT enough**:
-  - "\{kilograms needed\} more kilos of food are needed.". The result should be **rounded to the nearest higher integer**.
+  - "\{**kilograms needed**\} **more kilos of food are needed.**"
+  
+The result should be **rounded to the nearest higher integer**.
 
-## Example
+## Examples
 | **Input**  | **Output** |
 | --- | --- |
 | 2 | 3 kilos of food left. |
@@ -1464,7 +1436,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-A pool with a **volume `V`** is filled by **two pipes**.
+A pool with a **volume V** is filled by **two pipes**.
 
 Each pipe has a maximal transfer volume per hour
 
@@ -1474,19 +1446,19 @@ Create a program that calculates the water level in the pool **at the moment the
 
 ## Input
 **Four** lines of input:
-- **V** - **The volume of the pool in liters** - integer in range \[1…10000\]
-- **P1** - **flow of the first pipe per hour** - integer in range \[1…5000\]
-- **P2** - **flow of the second pipe per hour** - integer in range \[1…5000\]
-- **H** - **hours the worker is away** - float-pointing number in range \[1.0…24.00\]
+- **V** - **The volume of the pool in liters** - integer in range \[1 ... 10000\]
+- **P1** - **flow of the first pipe per hour** - integer in range \[1 ... 5000\]
+- **P2** - **flow of the second pipe per hour** - integer in range \[1 ... 5000\]
+- **H** - **hours the worker is away** - float-pointing number in range \[1.0 ... 24.00\]
 
 ## Output
 Print to the console **one of the following outcomes**:
 - How full the pool is and the percentage of water each pipe transferred to the pool in the process
-  - "The pool is \{percentage of volume\}% full. Pipe 1: \{transferred percentage\}%. Pipe 2: \{transferred percentage\}%."
+  - "**The pool is** \**{percentage of volume**\}% **full.** **Pipe 1:** \{**transferred percentage**\}**%.** **Pipe 2:** \{**transferred percentage**\}**%.**"
   - 
 - If the pool is overflowing – the volume of unnecessary water transferred
-  - "For \{amount of time\} hours the pool overflows with \{liters of unnecessary water transferred\} liters."
-- All numbers in the output should be formatted up to the 2nd digit after the decimal point.
+  - "**For** \{**amount of time**\} **hours the pool overflows with** \{**liters of unnecessary water transferred**\} **liters.**"
+- All numbers in the output should be formatted up to the 2nd digit after the decimal point
 
 ## Example One
 | **Input** | **Output** |

@@ -55,7 +55,7 @@ Scrieți un program care imprimă numerele de la  N până la 1.
 
 Programul primește un număr `n` și imprimă numerele de la `n` până 1. 
 
-# Exemplu
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 |5| 5 4 3 2 1 |
@@ -63,7 +63,7 @@ Programul primește un număr `n` și imprimă numerele de la `n` până 1.
 
 [/task-Descriere]
 [tests]
-[test]
+[test open]
 [input]
 5
 [/input]
@@ -135,15 +135,23 @@ Scrieți un program care imprimă numerele de la  1 până la `n` cu pasul 3:
 * Imprimă numerele de la 1 până la `n` cu pasul 3
 
 
-# Exemplu
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 |7| 1 4 7 |
 |10| 1 4 7 10 |
 
-[/task-Descriere]
+[/task-description]
 [tests]
-[test]
+[test open]
+[input]
+7
+[/input]
+[output]
+1 4 7
+[/output]
+[/test]
+[test open]
 [input]
 10
 [/input]
@@ -191,6 +199,7 @@ Scrieți un program care imprimă numerele de la  1 până la `n` cu pasul 3:
 
 
 
+
 [slide hideTitle]
 # Problemă cu soluție: Even Powers of 2
 
@@ -216,15 +225,23 @@ Scrieți un program care imprimă puterile pare ale 2:
 
 * Imprimă puterile pare ale  2 până la `2n`
 
-# Exemplu
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 |5| 1 4 16 |
 |10| 1 4 16 64 256 1024 |
 
-[/task-Descriere]
+[/task-description]
 [tests]
-[test]
+[test open]
+[input]
+5
+[/input]
+[output]
+1 4 16
+[/output]
+[/test]
+[test open]
 [input]
 10
 [/input]
@@ -269,4 +286,3 @@ Scrieți un program care imprimă puterile pare ale 2:
 [/code-task]
 
 [/slide]
-

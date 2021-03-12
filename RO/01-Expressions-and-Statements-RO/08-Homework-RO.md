@@ -17,13 +17,13 @@ public class Program {
 [task-description]
 ## Descriere
 Scrieți un program pentru a calcula viteza în funcție de timp și distanță:
-  * Citește 2 numere în virgulă mobilă: distanță și timp.
-  * Calculează viteza necesară pentru a parcurge o distanță dată pentru un anumit timp.
-  * Imprima rezultatul calculat.
-  * Folosește formula: **viteză = distanță/timp**.
+  * Citește 2 numere în virgulă mobilă: distanță și timp
+  * Calculează viteza necesară pentru a parcurge o distanță dată pentru un anumit timp
+  * Imprima rezultatul calculat
+  * Folosește formula: **viteză = distanță/timp**
   
 ## Exemplu
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 15 | 7.5 |
 | 2|  |
@@ -98,19 +98,17 @@ public class Program {
 [task-description]
 ## Descriere
 Scrieți un program pentru convertirea din USD la EUR:
-  * Citește **numărul în virgulă mobilă**: dolarii care urmează să fie convertite.
-  * Convertează **dolari în euro** (utilizați **rata fixă** de dolari în euro: 0.88).
-  * Imprima valoarea convertită în euro.
+  * Citește **numărul în virgulă mobilă**: dolarii care urmează să fie convertite
+  * Convertează **dolari în euro** (utilizați **rata fixă** de dolari în euro: 0.88)
+  * Imprima valoarea convertită în euro
 
 ## Exemplu
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 17 | 14.96 |
-
-
-| **Input** | **Output** |
-| --- | --- |
 | 87 | 76.56 |
+
+
 [/task-description]
 [tests]
 [test open]
@@ -190,14 +188,14 @@ Scrieți un program pentru a calcula aria triunghiului:
    * Imprima aria, formatată la a doua cifră după punctul zecimal.
   
 ## Exemplu
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 5 | 25.00 |
 | 10 |  |
 
 [hints]
 [hint]
-Formula pentru calcularea ariei unui triunghi este- Area = 1/2 * a * h
+Formula pentru calcularea ariei unui triunghi este- Area = 1/2 \* a \* h
 [/hint]
 [/hints]
 
@@ -271,17 +269,17 @@ public class Program {
 [task-description]
 ## Descriere
 Scrieți un program care:
-  * Citește 2 **numere reale** de pe consolă.
-  * Efectuează 4 **operații aritmetice** pe cele 2 numere obținute, în următoarea ordine:``+``, ``-``, ``*``, ``/``.
-  * * Formatează și imprimă rezultatele ca în acest exemplu:
+  * Citește 2 **numere reale** de pe consolă
+  * Efectuează 4 **operații aritmetice** pe cele 2 numere obținute, în următoarea ordine:`+`, `-`, `*`, `/`
+  * Formatează și imprimă rezultatele ca în acest exemplu:
 
 ## Exemplu
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
-| 5 | 5.00 + 10.00 = 15.00 |
-| 10 | 5.00 - 10.00 = -5.00 |
-|  | 5.00 * 10.00 = 50.00 |
-|  | 5.00 / 10.00 = 0.50 |
+| 10.0 | 10.00 + 5.00 = 15.00 |
+| 5.0 | 10.00 - 5.00 = 5.00 |
+|  | 10.00 * 5.00 = 50.00 |
+|  | 10.00 / 5.00 = 2.00 |
 
 [/task-description]
 [tests]
@@ -356,18 +354,14 @@ public class Program {
 [task-description]
 ## Descriere
 Scrieți un program pentru a converti **zile** în **minute**:
-  * Citește un **singur număr întreg** (zilele vor fi transformate).
-  * Transforma zilele în minute (utilizați calcule).
-  * **Imprima** minutele.
+  * Citește un **singur număr întreg** (zilele vor fi transformate)
+  * Transforma zilele în minute (utilizați calcule)
+  * **Imprima** minutele
 
 ## Exemplu
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 2 | 2880 |
-
-## Exemplu
-| **Input** | **Output** |
-| --- | --- |
 | 5 | 7200 |
 
 [hints]
@@ -449,24 +443,24 @@ public class Program {
 [task-description]
 ## Descriere
 Scrieți un program pentru a calcula aria și perimetrul cercului:
-  * Citește un **număr cu virgulă mobilă**: raza unui cerc.
-  * Calculeaza **aria și perimetrul** unui cerc.
-  * Imprima valorile calculate.
-  * Utilizați **formatarea implicită** pentru numerele cu virgulă mobilă în Java în Output (ca în exemplul de mai jos).
+  * Citește un **număr cu virgulă mobilă**: raza unui cerc
+  * Calculeaza **aria și perimetrul** unui cerc
+  * Imprima valorile calculate
+    * utilizați **formatarea implicită** pentru numerele cu virgulă mobilă în Java în Output (ca în exemplul de mai jos)
 
 ## Exemplu
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 7 | Area = 153.938040 |
 |  | Perimeter = 43.982297 |
 
 [hints]
 [hint]
-Formula pentru calcularea perimetrului unui cerc este: P = 2 * π * R.
+Formula pentru calcularea perimetrului unui cerc este: P = 2 \* π \* R.
 "R" esta raza cercului.
 [/hint]
 [hint]
-Formula pentru calcularea ariei unui cerc: A = π * R * R.
+Formula pentru calcularea ariei unui cerc: A = π \* R \* R.
 [/hint]
 [/hints]
 
@@ -541,11 +535,12 @@ public class Program {
 
 ## Descriere
 Scrieți un program care:
-* Citește **4 rânduri** de șiruri: nume, prenume, țară și oraș.
-* Tipărește informațiile despre o persoană în următorul format: `"{firstName} {lastName} from {country} - {town}!"`.
+* Citește **4 rânduri** de șiruri: nume, prenume, țară și oraș
+* Tipărește informațiile despre o persoană în următorul format: 
+"\{**firstName**\} \{**lastName**\} **from** \{**country**\} - \{**town**\}!"
 
 ## Exemplu
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | Kelly | Kelly Smith from Ireland - Cork! |
 | Smith |  |
@@ -633,7 +628,8 @@ public class Program {
 ## Descriere
 Scrieți un program care:
   * Citește **3 rânduri** de Input: nume (**șir**), populație și zonă (**numere întregi**)..
-  * Tipărește informațiile despre un oraș în următorul format: "Town \{name\} has population of \{population\} and area \{area\} square km."
+  * Tipărește informațiile despre un oraș în următorul format: 
+   "**Town** \{**name**\} **has population of** \{**population**\} **and area** \{**area**\} **square km.**"
 
 ## Exemplu
 | **Input** | **Output** |
@@ -641,6 +637,7 @@ Scrieți un program care:
 | Berlin | Town Berlin has population of 3675000 and area 984 square km. |
 | 3675000 |  |
 | 984 |  |
+
 [/task-description]
 [tests]
 [test open]
@@ -716,12 +713,12 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program de consolă care citește un număr **întreg** \'a\' și calculează aria pătratului cu dimensiunea \'a\'.
+Scrieți un program de consolă care citește un număr **întreg** `a` și calculează aria pătratului cu dimensiunea `a`.
 
 ## Intrare
 
 Citiți de pe consolă:
-- dimensiunea pătratului - un număr **întreg** în intervalul \ [1 ... 1000 \
+- Dimensiunea pătratului - un număr **întreg** în intervalul \ [1 ... 1000 \
 
 ## Ieșire
 
@@ -729,13 +726,12 @@ Imprimați pe consolă aria calculată.
 
 ## Exemple
 
-| Input | Output |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 5 | 25 |
-
-| Input | Output |
-| --- | --- |
 | 6 | 36 |
+
+
 [/task-description]
 [tests]
 [test open]
@@ -744,6 +740,14 @@ Imprimați pe consolă aria calculată.
 [/Input]
 [output]
 25
+[/output]
+[/test]
+[test open]
+[Input]
+6
+[/Input]
+[output]
+36
 [/output]
 [/test]
 [test]
@@ -814,19 +818,20 @@ Citiți **două rânduri** de pe consolă:
 
 Imprimați pe consolă:
 
--  "The architect \{name of the architect\} will need \{necessary hours\} hours to complete \{number of projects\} project/s."
+"**The architect** \{**name of the architect**\} **will need** \{**necessary hours**\} **hours to complete** \{**number of projects**\} **project/s.**"
 
 ## Exemple
 
-| Input | Output | 
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | George | The architect George will need 12 hours to complete 4 project/s. |
 | 4 | |
 
-| Input | Output |  
+|**Intrare**|**Ieșire** | 
 | --- | --- |
 | Peter | The architect Peter will need 27 hours to complete 9 project/s. |
 | 9 | |
+
 [/task-description]
 [tests]
 [test open]
@@ -966,15 +971,15 @@ Formula pentru calcularea ariei unui trapez este ((b1 + b2)/2) * h.
 ## Intrare
 
 Citiți trei numere de pe consolă:
-- baze - b1 și b2 - numere reale în intervalul\ [1 ... 1000 \]
-- înălțime - h - număr real în intervalul\ [1 ... 1000 \]
+- Baze - b1 și b2 - numere reale în intervalul \[1 ... 1000 \]
+- Înălțime - h - număr real în intervalul \[1 ... 1000 \]
 
 ## Ieșire
 
 Imprimați pe consolă un singur număr - aria trapezului, formatat la **a doua zecimală**.
 
 ## Exemplu
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 8 | 73.50 |
 | 13 | |
@@ -1076,24 +1081,24 @@ Scrieți un program care calculează veniturile din recoltă în euro (**1 USD =
 Intrarea va fi de **4 numere**, fiecare pe o **singură linie**:
 - Prețul kilogramului de legume - **număr în virgulă mobilă** [0.00 ... 1000.00]
 - Prețul kilogramului de fructe - **număr în virgulă mobilă** [0.00 ... 1000.00]
-- Kilograme in total de legume - **un număr întreg** [0… 1000]
-- Kilograme in total de fructe - **un număr întreg** [0… 1000]
+- Kilograme in total de legume - **un număr întreg** [0 ... 1000]
+- Kilograme in total de fructe - **un număr întreg** [0 ... 1000]
 
 ## Ieșire
-Imprimați pe consolă un ** singur număr**: venitul din toate fructele și legumele în euro.
+Imprimați pe consolă un **singur număr**: venitul din toate fructele și legumele în euro.
 
 Rezultatul ar trebui formatat la **a doua zecimală**.
 
 ## Exemple
 
-| Input | Output | Comments |
+|**Intrare**|**Ieșire** | **Comentarii** |
 | --- | --- | --- |
 | 0.194 | 174.39 | The vegetables cost - 0.194$ \* 10kg = 1.94$ |
 | 19.4 | | The fruits cost - 19.4$ \* 10kg  = 194$ |
 | 10 | | Total - 195.94$ = 174.39€ |
 | 10 | | |
 
-| Input | Output |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 1.5 | 35.60 |
 | 2.5 | |
@@ -1260,26 +1265,30 @@ public class Main {
 Scrieți un program care să calculeze cheltuielile pentru cumpărarea alimentelor pentru câini și alte animale.
 
 Fiecare pachet de alimente pentru câini costă 2.5 dolari, iar fiecare altul care NU este pentru ei - 4 dolari.
+
 ## Intrare
+
 Input va fi două linii de pe consolă:
-- Număr de câini - un număr întreg în intervalul \ [0 ... 100 \]
-- Numărul de celelalte animale -un număr întreg în intervalul \ [0 ... 100 \]
+- Număr de câini - un număr întreg în intervalul \[0 ... 100 \]
+
+- Numărul de celelalte animale - un număr întreg în intervalul \[0 ... 100 \]
 
 ## Ieșire
-Imprimați pe consolă: "\{total sum\} dollars". Rezultatul trebuie să fie formatat la al doilea punct zecimal.
+Imprimați pe consolă: "\{**total sum**\} **dollars**". Rezultatul trebuie să fie formatat la al doilea punct zecimal.
 
 ## Exemple
 
-| Input | Output |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 5 | 28.50 dollars |
 | 4 | |
 
 
-| Input | Output |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 13 | 68.50 dollars |
 | 9 | |
+
 [/task-description]
 [tests]
 [test open]
@@ -1425,18 +1434,18 @@ Ciiți de la consola **prețurile** de macrou și șprot, cantitatea de ton, mac
 
 ## Intrare
 Trebuie să citiți **5 numere** de pe consolă:
-- prețul macrouului pe kilogram - **în virgulă mobilă** număr în intervalul [0.00… 40.00]
-- prețul șproturilor pe kilogram - **în virgulă mobilă** număr în intervalul [0.00 ... 30.00]
-- kilograme de ton - **în virgulă mobilă** număr în intervalul [0.00 ... 50.00]
-- kilograme de macrou - **număr în virgulă mobilă** în intervalul [0.00 ... 70.00]
-- kilograme de midii - **număr întreg** în intervalul [0 ... 100]
+- Prețul macrouului pe kilogram - **în virgulă mobilă** număr în intervalul [0.00 ... 40.00]
+- Prețul șproturilor pe kilogram - **în virgulă mobilă** număr în intervalul [0.00 ... 30.00]
+- Kilograme de ton - **în virgulă mobilă** număr în intervalul [0.00 ... 50.00]
+- Kilograme de macrou - **număr în virgulă mobilă** în intervalul [0.00 ... 70.00]
+- Kilograme de midii - **număr întreg** în intervalul [0 ... 100]
 
-## ieșire
+## Ieșire
 
 Imprimați pe consolă un singur număr cu virgulă mobilă: banii pe care George îi va trebui să plătească factura, formatate la **a doua zecimală**.
 
 ## Exemplu
-| Input | Output |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 6.90 | 42.96 |
 | 4.20 | |
@@ -1641,13 +1650,13 @@ Singură linie de la consolă:
 ## Ieșire
 
 Imprimați pe consolă două linii:   
-- "Prețul final este: \{total price\} dollars"
-- "Reducerea este: \{discount\} dollars"
+- "**The final price is:** \{**total price**\} **dollars**"
+- "**The discount is:** \{**discount**\} **dollars**"
 
 Prețurile trebuie să fie formatate la **a doua zecimală**.
 
 ## Exemplu
-| Input |  Output |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 540 | The final price is: 3369.71 dollars |
 |  | The discount is: 739.69 dollars |

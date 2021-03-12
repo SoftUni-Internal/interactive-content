@@ -5,7 +5,9 @@
 
 In programming, each **variable** stores a certain value of a particular type. 
 
-For example, data types can be: number, letter, text (string), date, color, image, list and others. Here are some examples of data types:
+For example, data types can be: number, letter, text (string), date, color, image, list and others. 
+
+Here are some examples of data types:
 * Integer: 1, 2, 3, 4, -5, 20, …
 * Float: 0.5, 3.14, -1.5, …
 * Character (symbol): 'a', 'b', 'c', '@', 'X', …

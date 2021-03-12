@@ -3,27 +3,29 @@
 
 # Rezumat
 
-În această lecție ați învățat:
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-47-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Ce este codificarea?
+## În această lecție ați învățat:
 
-Cum să scrieți un cod de bază 
+- Ce este codificarea
 
-Programul reprezintă secvențe de comenzi.
+- Cum să scrieți un cod de bază 
 
-Cum să instalați și să rulați IntelliJ.
+- Programul reprezintă secvențe de comenzi
 
-Cum să creați un proiect, fișiere și aplicații simple în IntelliJ.
+- Cum să instalați și să rulați IntelliJ
 
-În lecția următoare veți învăța:
+- Cum să creați un proiect, fișiere și aplicații simple în IntelliJ
 
-Tipurile de date 
+## În lecția următoare veți învăța:
 
-Ce reprezintă instrucțiunile?
+- Tipurile de date 
 
-Cum să citiți și să imprimați datele intrare de utilizator
+- Ce reprezintă instrucțiunile
 
-Cum să efectuați operații simple
+- Cum să citiți și să imprimați datele intrare de utilizator
+
+- Cum să efectuați operații simple
 
 [/slide]
 

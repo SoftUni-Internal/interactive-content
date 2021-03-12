@@ -9,26 +9,26 @@ A market offers different prices for their products based on the day of the week
 
 [image assetsSrc="03-conditional-statements-advanced-example.png" /]
 
-|Product|Weekday|Weekend| 
-|-------|-------|-------|
+|**Product**|**Weekday**|**Weekend**| 
+|---|---|---|
 |Banana|2.50|2.70|
 |Apple|1.30|1.60|
 |Kiwi|2.20|3.00|
 
-We want to calculate the price for certain product and day.
+We want to calculate the price for a certain product and day.
 
-# Pseudocode
+## Pseudocode
 
 ```
 Read the input 
 If the product is a banana
   If it is a weekday the price is 2.50
-  Otherwise the price is 2.70
+  Otherwise, the price is 2.70
 If the product is an apple
   If it is a weekday the price is 1.30
-  Otherwise the price is 1.60
+  Otherwise, the price is 1.60
 If the product is a kiwi
   If it is a weekday the price is 2.20
-  Otherwise the price is 3.00
+  Otherwise, the price is 3.00
 ``` 
 [/slide]

@@ -838,16 +838,12 @@ Print out a single line.
 | 50000 | Yes! He will live a carefree life and will have 13050.00 dollars left. |
 | 1802 | |
 
-### Comments
-- 1800 -> even year;
-    - Josh spends 12000 dollars
-    - 50000 – 12000 = 38000 dollars remain
-- 1801 -> odd year 
-    - he spends 12000 + 19 \* 50 = 12000 + 950 = 12950 dollars
-    - 38000 – 12950 = 25050 dollars remain
-- 1802 -> even year
-    - he spends 12000 dollars
-    - 25050 – 12000 = 13050 dollars remain
+[hints]
+[hint]
+Determine how much money Josh will spend each year and then subtract the total money needed from his legacy money.
+Then, print the correct output
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -1263,13 +1259,6 @@ Print out 2 lines:
 | 27 | |
 | 9 | |
 | 1 | |
-
-### Comments
-- Day 1: 7 treated and 0 untreated patients for the day 
-- Day 2: 7 treated and 20 untreated patients for the day 
-- Day 3: Until now, the patients treated were 14 and untreated – 20 – > A new doctor is appointed – > 8 treated and 1 untreated patient for the day 
-- Day 4: 1 treated and 0 untreated patient for the day 
-- Total: 23 treated and 21 untreated patients
 
 [/task-description]
 [tests]
@@ -1747,12 +1736,24 @@ All numbers must be formatted to the second decimal place.
 | 2.44| |
 | 5| | 
 
-### Comments
-- Students holding a grade 5 or greater – three = 30% of 10
-- Between 4 and 4.99 – three = 30% of 10
-- Between 3 and 3.99 – two = 20% of 10
-- Less than 3 – two = 20% of 10
-- Average grade: 3 + 2.99 + 5.68 + 3.01 + 4 + 4 + 6 + 4.50 + 2.44 + 5 = 40.62 / 10 = 4.062
+
+
+[hints]
+[hint]
+Get the total amount of students, then using a for loop, determine how many students have grades between:
+- 5 and more
+ 
+- 4 and 4.99
+
+- 3 and 3.99
+
+- Less than 3
+[/hint]
+[hint]
+Finally, calculate the average grade and print the correct output.
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]

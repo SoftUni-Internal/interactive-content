@@ -17,26 +17,26 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-During your lunch break you want to watch an episode from your favorite series. 
+During your lunch break, you want to watch an episode of your favorite series. 
 
 Your task is to create a program that will help you determine whether you have enough time to watch the episode. 
 
-During your lunch break you also spend time to have lunch and unwind. 
+During your lunch break, you also spend time having lunch and resting. 
 
-The time you need for lunch will be 1/8 of your overall break time and the time you need to relax will be 1/4 of the break time.
+The time you will need for lunch will be **1/8** of your overall break time. The time you will need to relax will be **1/4** of the break time.
 
 ## Input
 You receive 3 lines from the console:
-- Name of the series - string
-- Duration of an episode - whole number in range [10… 90]
-- Duration of the break - whole number in range [10… 120]
+- Name of the series - **string**
+- Duration of the episode - **integer** number in range [10… 90]
+- Duration of the break - **integer** number in range [10… 120]
 
 ## Output
-The output should consist of a single line in the following form:
+The output should consist of a single line in the following format:
 
-- If there is enough time  to watch the episode: "You have enough time to watch \{name of the series\} and left with \{time left\} minutes free time."
-- If there is not enough time : "You don't have enough time to watch \{name of the series\}, you need \{time needed\} more minutes."
-    - Round the time up to the nearest whole number.
+- If there is enough time to watch the episode: **"You have enough time to watch \{name of the series\} and left with \{time left\} minutes free time."**
+- If there is not enough time : **"You don't have enough time to watch \{name of the series\}, you need \{time needed\} more minutes."**
+    - Round the **time** up to the nearest integer number.
 
 ## Example
 | **Input** | **Output** |
@@ -48,17 +48,17 @@ The output should consist of a single line in the following form:
 [hints]
 
 [hint]
-Determine the time needed for lunch.
+Determine the time needed for having lunch.
 [/hint]
 
 [hint]
-Calculate the relax time.
+Calculate the time you will be resting.
 [/hint]
 
 [hint]
 Figure out how much time is left.
 
-Make sure that the right output is printed to the console.
+Make sure that the corresponding output is printed out.
 [/hint]
 [/hints]
 

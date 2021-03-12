@@ -1,7 +1,8 @@
 [slide hideTitle]
 # Tipuri de date
 În Java putem folosi tipurile de date pentru a defini variabilele după cum urmează:
-   * **int** - un număr întreg: 1, 2, 3 ...
+
+  * **int** - un număr întreg: 1, 2, 3 ...
   * **double** – numere zecimale: -0.5, 3.14, …
   * **boolean** – valoare booleană : true, false
   * **char** – simbol: 'a', 'b', '#', …
@@ -9,7 +10,9 @@
 
 Odată ce o variabilă este definită, poate schimba valoarea sa de mai multe ori, dar nu poate schimba tipul de date mai târziu. 
 
-Variabilele pot conține numai date de tipul lor. Mai jos putem declara variabile de diferite tipuri:
+Variabilele pot conține numai date de tipul lor. 
+
+Mai jos putem declara variabile de diferite tipuri:
 ```java
 int a = 5;
 String text = "Some text";
@@ -29,9 +32,9 @@ Sunt caracterizate prin:
 [slide hideTitle]
 # Convențiile de denumire
 
-În programarea, o convenție de denumire este un set de ** reguli ** pentru alegerea numelui care trebuie utilizat pentru variabile.
+În programarea, o convenție de denumire este un set de **reguli** pentru alegerea numelui care trebuie utilizat pentru variabile.
 
-In Java pentru convențiile de denumire a variabilelor sunt utilizate ***"camel-case"***. 
+In Java pentru convențiile de denumire a variabilelor sunt utilizate ***"camelCase"***. 
 
 Există alte convenții de denumire care sunt folosite în diferite limbi, cum ar fi cazul pascal, cazul de șarpe.
 

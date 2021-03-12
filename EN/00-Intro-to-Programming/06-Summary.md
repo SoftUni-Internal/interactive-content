@@ -13,11 +13,11 @@
 
 - How to **install** run **IntelliJ**
 
-- How to create a project, a file and simple applications in IntelliJ
+- How to create a project, a file, and simple applications in IntelliJ
 
 ## In the next lesson you will learn:
 
-- What are Data Types
+- What is Data Types
 
 - What are Statements
 

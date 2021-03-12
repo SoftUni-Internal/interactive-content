@@ -74,6 +74,17 @@ Scrieți un program care:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+2
+4
+8
+3
+[/input]
+[output]
+3
+[/output]
+[/test]
 [test]
 [input]
 2
@@ -127,6 +138,16 @@ Scrieți un program care:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+5
+Add
+END
+[/input]
+[output]
+6
+[/output]
+[/test]
 [test]
 [input]
 4

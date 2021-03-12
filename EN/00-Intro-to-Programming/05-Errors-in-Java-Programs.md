@@ -6,7 +6,7 @@
 
 IntelliJ has tools to identify most of the basic errors we can make.
 
-Wrong code that cannot be compiled will be underlined.
+The wrong code that cannot be compiled will be underlined.
 
 Here are some of the basic common mistakes we showld watch out for:
 
@@ -14,7 +14,7 @@ Here are some of the basic common mistakes we showld watch out for:
 
 - Wrong syntax
 
-- Missing quotes " " or parantheses ( )
+- Missing quotes " " or parentheses `( )`
 
 
 [/slide]

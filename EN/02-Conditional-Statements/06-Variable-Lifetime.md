@@ -10,7 +10,7 @@ This range specifies where a variable can be used and how long its **lifetime** 
 
 In Java, the scope in which a variable exists, starts from the line where we **defined it** and ends with the first closing curly bracket `}` (of the method, the **if statement**, etc.).
 
-Therefore, it is important to know that **any variable defined inside the body of an** `if` **statement will not be available outside of it**, unless we have defined beforehand in the code.
+Therefore, it is important to know that **any variable defined inside the body of an** `if` **statement will not be available outside of it** unless we have defined beforehand in the code.
 [/slide]
 
 [slide hideTitle]

@@ -5,7 +5,7 @@
 
 We already have IntelliJ IDEA, so let us start it.
 
-Create new Console Application in IntelliJ IDEA: `[New Project]` -> `[Java]` -> `[Template Command Line App]` -> `[Finish]`
+Create new Console Application in IntelliJ IDEA: `[New Project]` \-\> `[Java]` \-\> `[Template Command Line App]` \-\> `[Finish]`
 
 We should select **a descriptive name** for our program, for example `HelloJava`:
 
@@ -13,12 +13,12 @@ We should select **a descriptive name** for our program, for example `HelloJava`
 
 IntelliJ IDEA is going to create **an empty Java program** for us, where we can place our code logic.
 
-# Configuring JDK in IntelliJ IDEA
+## Configuring JDK in IntelliJ IDEA
 If JDK is still not configured on your system, you should configure it:
 
 [image assetsSrc="intro-to-programming-4.png" /]
 
-Click [New] and locate your JDK installation:
+Click `[New]` and locate your JDK installation:
 
 [image assetsSrc="intro-to-programming-5.png" /]
 [/slide]
@@ -28,7 +28,7 @@ Click [New] and locate your JDK installation:
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-29-writing-programming-code-in-intelliJ-IDEA-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We should place our program code iside the `main(String[] args)`, between the opening and the closing braces `{ }`.
+We should place our program code inside the `main(String[] args)`, between the opening and the closing braces `{ }`.
 
 This is the main method, that is being executed when starting a Java program.
 
@@ -47,13 +47,22 @@ Here is how our program should look like in IntelliJ IDEA:
 
 [image assetsSrc="intro-to-programming-code-in-intellij.png" /]
 
-The command `System.out.println("Hello Java")` in Java means to print (`System.out.println(…)`) the text message `Hello Java` to the console, which we should surround in quotation marks. This way the interpreter will recognize that we are refering to a piece of text.
+The command `System.out.println("Hello Java")` in Java means to print (`System.out.println(…)`) the text message `Hello Java` to the console, which we should surround in quotation marks. 
 
-We pace `;` at the end of each command. This signifies that the command ends (it doesn't continue on the next line).
+This way the interpreter will recognize that we are referring to a piece of text.
+
+We pace `;` at the end of each command. 
+
+This signifies that the command ends (it does not continue on the next line).
 
 This command is very typical in programming: we say a given **object** should be found (in this case the console) and some **action** should be executed upon it (in this case - print out the specified text). 
 
-More technically explained, `out` is a static member in the `System` class, being an instance of PrintStream. And **println** is a normal (overloaded) method of the PrintStream class. As a parameter to it we pass in the text literal `"Hello Java"`.
+More technically explained, `out` is a static member in the `System` class, being an instance of PrintStream. 
+
+And **println** is a normal (overloaded) method of the PrintStream class. 
+
+As a parameter to it, we pass in the text literal `"Hello Java"`.
+
 [/slide]
 
 [slide hideTitle]
@@ -61,7 +70,9 @@ More technically explained, `out` is a static member in the `System` class, bein
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-30-Starting-the-program-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-To start the program, press `[Ctrl + Shift + F10]`. If there are no errors, the program will be executed. 
+To start the program, press `[Ctrl + Shift + F10]`.
+
+If there are no errors, the program will be executed. 
 
 The result will appear on the console (terminal window):
 
@@ -77,9 +88,3 @@ Hello Java
 ```
 [/slide]
 
-[slide hideTitle]
-# Example: Creating Console App in IntelliJ IDEA
-
-Java-basics-introduction-to-programming-26-30-Console-app-in-inteliJ-IDEA-demo
-
-[/slide]

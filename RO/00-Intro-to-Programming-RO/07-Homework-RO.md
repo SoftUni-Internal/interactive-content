@@ -18,7 +18,7 @@ public class Main {
 
 Scrieți un program în limbajul Java care să execute următoarele:
 
-Tipărește "Hello Java" pe consolă
+Tipărește "**Hello Java**" pe consolă
 [/task-description]
 [code-io /]
 [tests]
@@ -59,7 +59,7 @@ public class Main {
 
 Scrieți un program în limbajul Java care să execute următoarele:
 
-* Calculează valoarea înmulțirii 5 * 5
+* Calculează valoarea înmulțirii 5 \* 5
 * Tipărește rezultatul
 [/task-description]
 [code-io /]
@@ -100,7 +100,7 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program care să tipărească 'Catlyn' pe prima linie și să calculeze și să imprimă rezultatul expresiei 5 + 3 pe cea de-a doua linie
+Scrieți un program care să tipărească "**Catlyn**" pe prima linie și să calculeze și să imprimă rezultatul expresiei 5 + 3 pe cea de-a doua linie
 [/task-description]
 [tests]
 [test open]
