@@ -94,6 +94,6 @@ Sometimes we tend to **overload** and **overdesign** our patterns.
 
 Design patterns should only be followed if the developer has good knowledge about them.
 
-Often they are used improperly, with little thought about a software project's future,
+They are often used improperly, with little thought about code flexibility.
 
 [/slide]
