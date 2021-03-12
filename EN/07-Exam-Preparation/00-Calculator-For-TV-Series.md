@@ -17,26 +17,26 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program, which calculates how long it will take you to watch all episodes of a TV series in minutes. 
+Create a program that calculates how long it will take you to watch all episodes of a TV series in minutes. 
 
-You will receive the number of seasons,  number of episodes per season and the duration of each episode. 
+You will receive the number of seasons, the number of episodes per season, and the duration of each episode. 
 
-In every episode there are advertisements, whose duration is 20% of the episode’s duration. 
+In every episode, there are advertisements, whose duration is 20% of the episode’s duration. 
 
 Every season ends with a special episode, which lasts 10 minutes longer than usual. 
 
 ## Input
-From the console you receive 4 lines:
-- Title of the series - String
-- Number of seasons – int in range [1… 10]
-- Number of episodes  – int in range [10… 80]
-- Standard episode duration without the advertisements – double in range [40.0… 65.0]
+You will receive 4 lines from the console:
+- Title of the series - **string**
+- Number of seasons – **integer** in range [1… 10]
+- Number of episodes  – **integer** in range [10… 80]
+- Duration of each episodes, not including the advertisements – **double** in range [40.0… 65.0]
 
 ## Output
-The output should consist of a single line in the following form:
-- If there is enough time to watch the episode: "You have enough time to watch {name of the series} and left with {time left} minutes free time."
-- If there is not enough time: "You don't have enough time to watch {name of the series}, you need {time needed} more minutes."
-    - Round the time up to the nearest whole number.
+The output should consist of a single line in the following format:
+- If there is enough time to watch all episodes: **"You have enough time to watch {name of the series} and left with {time left} minutes free time."**
+- If there is not enough time: **"You don't have enough time to watch {name of the series}, you need {time needed} more minutes."**
+    - Round the time up to the nearest integer number.
 
 
 ## Example
@@ -49,19 +49,19 @@ The output should consist of a single line in the following form:
 [hints]
 
 [hint]
-Calculate the duration of advertisements per episode.
+Calculate the duration of the advertisements per episode.
 [/hint]
 [hint]
 
-Determine the duration of an episode with advertisements.
+Determine the duration of each episode, including the advertisements.
 [/hint]
 [hint]
 
-Add extra time for the specials.
+Add extra time for the **special** episodes.
 [/hint]
 [hint]
 
-Calculate the total time needed to watch the whole series.
+Calculate the total time needed for watching the TV series.
 [/hint]
 
 [/hints]
