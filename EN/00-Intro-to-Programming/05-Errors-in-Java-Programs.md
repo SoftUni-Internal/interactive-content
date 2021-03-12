@@ -14,7 +14,7 @@ Here are some of the basic common mistakes we showld watch out for:
 
 - Wrong syntax
 
-- Missing quotes " " or parentheses ( )
+- Missing quotes " " or parentheses `( )`
 
 
 [/slide]

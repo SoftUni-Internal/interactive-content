@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Instrucțiuni
-**Acțiunile** pe care le execută un program sunt exprimate ca **instrucțiuni*. 
+**Acțiunile** pe care le execută un program sunt exprimate ca **instrucțiuni**. 
 
 Java suporta câteva tipuri diferite de instrucțiuni  și aici sunt câteva dintre ele:
   * **Declaration statements** - declară variabilele locale și constante
@@ -11,24 +11,30 @@ Java suporta câteva tipuri diferite de instrucțiuni  și aici sunt câteva din
   
 Acțiunile obișnuite includ:
 - **Declararea** variabilei
-   Declararea unei variabile înseamnă **definirea** tipului său**.
+
+Declararea unei variabile înseamnă **definirea** tipului său**.
+
   ```java
   int counter;
   ```
+
 - **Atribuirea** unei valori
-   După ce declarați o variabilă, puteți atribui o valoare unei variabile.
 
-  Atribuirea unei valori a variabilei înseamnă **stocarea** unei **valori** unei variabile.
-  ```java
-  counter = 1;
-  ```
+ După ce declarați o variabilă, puteți atribui o valoare unei variabile.
 
-- Declarare + ** inițializare **
+Atribuirea unei valori a variabilei înseamnă **stocarea** unei **valori** unei variabile.
+
+```java
+counter = 1;
+```
+
+- Declarare + **inițializare**
   ```java
   int counter = 1;
   ```
 
 - **Tipărirea** valorii
+
   ```java
   System.out.println(counter);
   ```
@@ -41,4 +47,5 @@ Acțiunile obișnuite includ:
   ```java
   sum = a + b;
   ```
+  
 [/slide]

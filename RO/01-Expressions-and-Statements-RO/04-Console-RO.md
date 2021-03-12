@@ -11,7 +11,9 @@ De obicei, arată ca o fereastră de culoare neagră ca aceasta:
 
 Acesta se numește **Command Prompt** în Windows, și **Terminal** în Linux și Mac.
 
-Consola rulează aplicații pentru consolă. Aplicațiile citesc textul de pe linie de comanda și imprimă textul pe consolă. Vom învăța programarea în principal prin crearea **aplicațiilor de consolă**.
+Consola rulează aplicații pentru consolă. 
+
+Aplicațiile citesc textul de pe linie de comanda și imprimă textul pe consolă. Vom învăța programarea în principal prin crearea **aplicațiilor de consolă**.
 
 **IntelliJ IDEA** are propria sa consolă, pe care o vom folosi pentru a **citi intrarea** și a **imprima ieșirea**:
 [image assetsSrc="intro-to-programming-console.png" /]
@@ -34,13 +36,14 @@ System.out.println(3.14159265358979);
 
 După cum vedem prin folosirea `System.out.println (...)` este posibil să tipăriți diferite tipuri de date deoarece pentru fiecare tip există o versiune predefinită a metodei `println (...)`.
 
-Diferența dintre `print (...)` și `println (...)` este că metoda `print (...)` tipărește pe consolă ceea ce este specificat între paranteze nu și nu face nimic în plus în timp ce metoda `println (...) `înseamnă **„ tipărire de linie ”**.
+Diferența dintre `print (...)` și `println (...)` este că metoda `print (...)` tipărește pe consolă ceea ce este specificat între paranteze nu și nu face nimic în plus în timp ce metoda `println (...)` înseamnă **"tipărire de linie"**.
 
 Această metodă face ceea ce face `println (...)`, dar în plus se duce la o nouă linie.
 
-De fapt, metoda nu imprimă o nouă linie, ci pur și simplu pune o **comandă pentru a muta** cursorul în poziția în care începe linia nouă (această comandă constă din caracterul `\ r` urmat de` \ n`) .
+De fapt, metoda nu imprimă o nouă linie, ci pur și simplu pune o **comandă pentru a muta** cursorul în poziția în care începe linia nouă (această comandă constă din caracterul `\r` urmat de `\n`).
 
 Mai jos avem un exemplu, care ilustrează diferența dintre `print (...)` și `println (...)`:
+
 ```java live
 System.out.println("I love");
 System.out.print("this ");
@@ -48,9 +51,9 @@ System.out.print("course!");
 ```
 Observăm că rezultatul acestui exemplu este tipărit pe două linii, chiar dacă codul este pe trei.
 
-Acest lucru se întâmplă pentru că pe prima linie de cod folosim `println (...)` care tipărește **I love ** și apoi mergem la o nouă linie.
+Acest lucru se întâmplă pentru că pe prima linie de cod folosim `println (...)` care tipărește **"I love"** și apoi mergem la o nouă linie.
 
-În următoarele două rânduri ale codului se folosește metoda `print (...), care tipărește fără să meargă pe o nouă linie și astfel cuvintele **this** și **course!** rămân pe aceeași linia.
+În următoarele două rânduri ale codului se folosește metoda `print (...)`, care tipărește fără să meargă pe o nouă linie și astfel cuvintele **this** și **course!** rămân pe aceeași linia.
 
 ## Formatare
 În Java, atunci când se imprimă un text, numere și alte date de pe consola, **le putem alătura** folosind template-uri `% s`,`% d`, `% f` etc.
@@ -59,12 +62,12 @@ Acest lucru se întâmplă pentru că pe prima linie de cod folosim `println (..
 * `%f` - formatare **floating-point numbers** (numere în virgulă mobilă)
 
 În programare, aceste șabloane se numesc **substituenți**. Acesta este un exemplu simplu:
+
 ```java live
 System.out.printf("%d + %d = %d", 3, 5, 3 + 5);
 ```
 
 Substituentii `%d` se înlocuiesc cu expresiile date după text.
-
 
 
 [/slide]
@@ -80,14 +83,17 @@ interactive-programming-basics-with-java-expressions-and-statements-16-formattin
 [slide hideTitle]
 # Citirea datelor introduse de utilizator
 Pentru a citi un **text** (șir) de pe consolă, din nou, trebuie să **declarăm o nouă variabilă** și să folosim comanda standard **pentru citirea unui text de pe consolă**:
+
 ```java 
 Scanner scanner = new Scanner(System.in);
 String name = scanner.nextLine();
 ```
 
 În mod implicit, metoda `scanner.nextLine ()` returnează **rezultatul textului** - o linie de text, citită de pe consolă.
-- După ce ați citit un text de pe consolă, în plus, puteți **parsa textul** cu un număr întreg prin `Integer.parseInt (...)` sau un număr zecimal prin  `Double.parseDouble (...)`.
-- Dacă parsarea cu un număr nu este posibila, **fiecare număr** va fi pur și simplu **un text** și **nu putem executa** operații aritmetice cu acesta.
+
+- După ce ați citit un text de pe consolă, în plus, puteți **parsa textul** cu un număr întreg prin `Integer.parseInt (...)` sau un număr zecimal prin  `Double.parseDouble (...)`
+
+- Dacă parsarea cu un număr nu este posibila, **fiecare număr** va fi pur și simplu **un text** și **nu putem executa** operații aritmetice cu acesta
 
 # Exemplu: Home Town
 Să scriem un program care cere utilizatorului orașul natal și imprimă textul `"I am from {homeTown}!"`.
@@ -98,11 +104,11 @@ String homeTown = scanner.nextLine();
 System.out.printf("I am from %s!", homeTown);
 ```
 
-În acest caz, expresia `% s` este înlocuită cu valoarea variabilei` homeTown`.
+În acest caz, expresia `% s` este înlocuită cu valoarea variabilei `homeTown`.
 
-Dacă introducem **Sofia**, rezultatul va fi după cum urmează:
+Dacă introducem **"Bucharest"**, rezultatul va fi după cum urmează:
 ```
-I am from Sofia!
+I am from Bucharest!
 ```
 [/slide]
 
@@ -129,17 +135,21 @@ interactive-programming-basics-with-java-expressions-and-statements-17-reading-u
 
 [slide hideTitle]
 # Citirea numerelor întregi
+
 Pentru a citi un **număr întreg** (nu unul în virgulă mobilă) de pe consolă, trebuie să **declarăm o variabilă**, să declarăm **tipul de număr** și să folosim comanda standard pentru **citirea unei linii de text** de pe consola sistemului `scanner.nextLine ()` și după aceea **să transformăm linia de text într-un număr întreg** folosind `Integer.parseInt (text)`:
 
 ```java
 Scanner scanner = new Scanner(System.in);
 int num = Integer.parseInt(scanner.nextLine());
 ```
+
 Linia de mai sus a codului Java **citește un număr întreg** din prima linie de pe consolă.
 
 Încercați să scrieți un număr greșit, de exemplu **hello**.
 
-Veți primi un mesaj de eroare în timpul rulării (excepție). Asta este normal.
+Veți primi un mesaj de eroare în timpul rulării (excepție). 
+
+Asta este normal.
 
 Mai târziu, vom afla cum putem găsi aceste tipuri de erori și putem determina utilizatorului să introducă din nou un număr.
 [/slide]
@@ -148,6 +158,7 @@ Mai târziu, vom afla cum putem găsi aceste tipuri de erori și putem determina
 # Exemplu: Calcularea unei suprafețe pătrate
 
 Acest cod demonstrează modul în care putem calcula suprafața pătrată după lungimea dată a laturii:
+
 ```java
 Scanner scanner = new Scanner(System.in);
 System.out.print("a = ");              
@@ -163,8 +174,6 @@ Mai jos vom vedea cum ar funcționa programul dacă am avea un pătrat cu o lung
 
 [slide hideTitle]
 
-
-
 # Citirea numerelor reale reprezentate în virgulă mobilă cu simplă precizie (float)
 
 Pentru a citi un **număr real reprezentat în virgulă mobilă cu simplă precizie (float)** (număr fracțional, neîntreg) de pe consolă, utilizați următoarea comandă:
@@ -174,9 +183,11 @@ double num = Double.parseDouble(scanner.nextLine());
 ```
 Codul Java de mai sus citește mai întâi o **linie de text** din consolă, apoi o convertește (parsează) într-un **număr real reprezentat în virgulă mobilă cu simplă precizie (float)**.
 
-# Exemplu: Conversia inch în centimetri
+## Exemplu: Conversia inch în centimetri
+
 Să scriem un program care citește un număr real reprezentat în virgulă mobilă cu simplă precizie (float) în inci și îl convertește în centimetri:
-```cs
+
+```java
 Scanner scanner = new Scanner(System.in);
 System.out.print("Inches = ");              
 double inches = Double.parseDouble(scanner.nextLine());
@@ -196,15 +207,17 @@ Vom învăța cum să gestionăm excepțiile în cursurile ulterioare.
 
 [slide hideTitle]
 # Problemă cu soluție: Greeting
+
 [code-task title="Greeting" taskId="pb-java-expressions-greeting" executionStrategy="java-code" requiresInput]
 [code-editor language="java"]
+
 ```java
 import java.util.Scanner;
 
 public class Program {
   public static void main(String[] args) {
       Scanner scanner = new Scanner(System.in);
-      // write code here
+      // Scrieți codul dvs. aici
   }
 }
 ```
@@ -214,13 +227,14 @@ public class Program {
 Scrieți un **program** care:
 
 * Citește o intrare de utilizator - **name**, de pe consolă
-* Tipărește "Hello, \{name\}!", unde \{name\} este intrarea utilizatorului
-# Exemplu:
+* Tipărește "**Hello**, \{**name**\}**!**", unde "\{**name**\}" este intrarea utilizatorului
+
+## Exemplu:
 
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | Peter | Hello, Peter! |
-|  |  |
+
 [/task-description]
 [tests]
 [test open]

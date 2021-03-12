@@ -9,13 +9,18 @@ Most often it is a black colored window like this one:
 
 [image assetsSrc="00.Console-example.png" /]
 
-In most operating systems, the **console** is available as a standalone application which we can use to run computer commands.
+In most operating systems, the **console** is available as a standalone application that we can use to run computer commands.
 
 It is called **Command Prompt** in Windows, and **Terminal** in Linux and Mac. 
 
-The console runs console applications. They read text from the command line and can produce text as output. We are going to learn programming mostly through creating **console applications**.
+The console runs console applications. 
+
+They read text from the command line and can produce text as output. 
+
+We are going to learn programming mostly through creating **console applications**.
 
 **IntelliJ IDEA** has its own console, which we are going to use to **read input** and **print output**:
+
 [image assetsSrc="intro-to-programming-console.png" /]
 
 [/slide]
@@ -25,7 +30,7 @@ The console runs console applications. They read text from the command line and 
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-16-formatting-output-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## Using `System.out.print(…)` and `System.out.println(…)`
+## Using "System.out.print(…)" and "System.out.println(…)"
 Working with these methods is easy because they can print out all of the basic data types (string, numeric and primitive types).
 
 Here are some examples of printing various types of data:
@@ -35,11 +40,13 @@ System.out.println(5);
 System.out.println(3.14159265358979);
 ```
 
-We can use `System.out.println(…)` to print various data types. This is possible because there are predefined versions of the `println(…)` method corresponding to each separate data type we might try to use. 
+We can use `System.out.println(…)` to print various data types. 
 
-The difference between `print(…)` and `println(…)` is that the `print(…)` method outputs directly what is provided in the parentheses and does nothing in addition, while the `println(…)` method outputs the specified content on a **separate** line. 
+This is possible because there are predefined versions of the `println(…)` method corresponding to each separate data type we might try to use. 
 
-In fact the method does not print out a new line but simply uses a **"command" to move** the text cursor to the position where the new line starts (this command consists of the character `\r` followed by `\n`).
+The difference between `print(…)` and `println(…)` is that the `print(…)` method outputs directly what is provided in the parentheses and does nothing besides, while the `println(…)` method outputs the specified content on a **separate** line. 
+
+The method does not print out a new line but simply uses a **"command" to move** the text cursor to the position where the new line starts (this command consists of the character `\r` followed by `\n`).
 
 Here is an example, which illustrates the difference between `print(…)` and `println(…)`:
 ```java live
@@ -89,11 +96,13 @@ String name = scanner.nextLine();
 ```
 
 By default, the `scanner.nextLine()` method returns a **text result** – a text line, read from the console.
-- After you read text from the console, additionally, you can **parse the text** to an integer by `Integer.parseInt(…)` or a floating-point number by `Double.parseDouble(…)`.
-- If parsing to a number is not done, **each number** will simply be considered as **text**, and we **will not be able to do** arithmetic operations with it.
+
+- After you read text from the console, additionally, you can **parse the text** to an integer by `Integer.parseInt(…)` or a floating-point number by `Double.parseDouble(…)`
+
+- If parsing to a number is not done, **each number** will simply be considered as **text**, and we **will not be able to do** arithmetic operations with it
 
 # Example: Home Town
-Let's create a program that asks the user for their home town and prints out the text: `"I am from {homeTown}!"`.
+Let us create a program that asks the user for their home town and prints out the text: `"I am from {homeTown}!"`.
 
 ```java
 Scanner scanner = new Scanner(System.in);
@@ -101,11 +110,11 @@ String homeTown = scanner.nextLine();
 System.out.printf("I am from %s!", homeTown);
 ```
 
-In this case the `%s` placeholder is replaced with the value of the variable `homeTown`. 
+In this case, the `%s` placeholder is replaced with the value of the variable `homeTown`. 
 
-If we enter **"Sofia"**, the output will be as follows:
+If we enter **"Bucharest"**, the output will be as follows:
 ```
-I am from Sofia!
+I am from Bucharest!
 ```
 [/slide]
 
@@ -123,7 +132,9 @@ I am from Sofia!
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-18-reading-integers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In order to read an **integer** (not a float) from the console, we have to **declare a variable**, declare the **data type** and use the standard command for **reading a text line** from the system console `scanner.nextLine()`. After that we have to **convert the text into an integer** using `Integer.parseInt(text)`:
+In order to read an **integer** (not a float) from the console, we have to **declare a variable**, declare the **data type** and use the standard command for **reading a text line** from the system console `scanner.nextLine()`. 
+
+After that we have to **convert the text into an integer** using `Integer.parseInt(text)`:
 
 ```java
 Scanner scanner = new Scanner(System.in);
@@ -132,11 +143,11 @@ int num = Integer.parseInt(scanner.nextLine());
 
 The line above **reads an integer** from the console.
 
-If we try to input symbols which cannot be interpreted as numbers, for example **"hello"**. 
+If we try to input symbols that cannot be interpreted as numbers, for example, **"hello"**. 
 
 We will get an error message during runtime (exception).
 
-Later on, we will see how we can "catch" these kinds of errors and prompt the user to enter a number.
+Later on, we will see how we can **"catch"** these kinds of errors and prompt the user to enter a number.
 [/slide]
 
 [slide hideTitle]
@@ -178,7 +189,8 @@ The code above reads a **text line** from the console, then converts (parses) it
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-19-reading-floating-point-numbers-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Let's write a program that reads a floating-point number in inches and converts it to centimeters:
+Let us write a program that reads a floating-point number in inches and converts it to centimeters:
+
 ```java
 Scanner scanner = new Scanner(System.in);
 System.out.print("Inches = ");              
@@ -203,6 +215,7 @@ Note that if you enter an **invalid data type**, e.g. **"asfd"**, the program wi
 
 [code-task title="Greeting" taskId="pb-java-expressions-greeting" executionStrategy="java-code" requiresInput]
 [code-editor language="java"]
+
 ```java
 import java.util.Scanner;
 
@@ -216,15 +229,17 @@ public class Program {
 [/code-editor]
 [task-description]
 # Description
+
 Create a **program**, which:
 * Reads user input - a **name**, from the console
-* Prints "Hello, \{name\}!", where \{name\} is the user input
-# Example:
+* Prints "**Hello**, \{**name**\}**!**", where "\{**name**\}" is the user input
+
+## Example:
 
 | **Input** | **Output** |
 | --- | --- |
 | Peter | Hello, Peter! |
-|  |  |
+
 [/task-description]
 [tests]
 [test open]

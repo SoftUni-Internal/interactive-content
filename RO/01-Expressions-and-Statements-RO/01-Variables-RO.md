@@ -3,7 +3,9 @@
 
 În programare, fiecare **variabilă** stochează o anumită valoare de un anumit tip. 
 
-De exemplu, tipurile de date pot fi: număr, literă, text (șir), dată, culoare, imagine, listă și altele. Mai jos aveţi câteva exemple de tipuri de date:
+De exemplu, tipurile de date pot fi: număr, literă, text (șir), dată, culoare, imagine, listă și altele. 
+
+Mai jos aveţi câteva exemple de tipuri de date:
 * numere întregi : 1, 2, 3, 4, -5, 20, …
 * numere zecimale: 0.5, 3.14, -1.5, …
 * caracter (simbol): 'a', 'b', 'c', '@', 'X', …
