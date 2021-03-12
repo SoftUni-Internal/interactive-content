@@ -25,7 +25,7 @@ Find the object, corresponding to the name that the user submitted in the input 
 
 - For current conditions, request to:
 
-**"https://judgetests.firebaseio.com/forecast/today/{code}.json"**
+**"https://judgetests.firebaseio.com/forecast/today/**\{**code**\}**.json"**
 
 The response from the server will be an object with the following structure:
 
@@ -42,7 +42,7 @@ The response from the server will be an object with the following structure:
 
 - For a 3-day forecast, make a request to:
 
-**"https://judgetests.firebaseio.com/forecast/upcoming/{code}.json"**
+**"https://judgetests.firebaseio.com/forecast/upcoming/**\{**code**\}**.json"**
 
 The response from the server will be an object with the following structure:
 
