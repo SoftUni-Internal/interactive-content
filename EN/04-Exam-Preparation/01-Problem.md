@@ -22,9 +22,9 @@ public class Main {
 
 The first line of input will consist of an **integer array**. 
 
-Create a program to modify the array.
+Create a program that receive **commands** that **modify the array**.
 
-The possible alterations are: "**swap**", "**multiply**" or "**decrease**".
+The possible **commands** are: "**swap**", "**multiply**" or "**decrease**".
 
 - "**swap** \{**index1**\} \{**index2**\}" - take the two elements and swap their places
 
@@ -38,7 +38,7 @@ Save the product of the two at the index, where the first number was.
 
 On the first input line you will be given the initial array values, separated by a single space.
 
-On the next lines you will be getting one of the commands. The program should stop functioning after receiving the "**end**" command.
+On the next lines you will be receiving **commands**. The program should stop searching for commands after receiving the "**end**" command.
 
 The commands could be:
 
@@ -50,14 +50,14 @@ The commands could be:
 
 ## Output 
 
-**The output** should be printed to the console and should consist of the **elements of the modified array** - **separated by** ", " (a comma and a single space). 
+**The output** should be printed to the console and should consist of the **elements of the modified array separated by** ", " (a comma and a single space). 
 
 ## Constraints 
 
 
 * The commands are limited to: "**swap**", "**multiply**", "**decrease**" and "**end**"
 
-* All elements of the array will be integers in range [-231...231]
+* All elements of the array will be integers.
 
 * The number of elements in the array will be in range [2...100]
 
