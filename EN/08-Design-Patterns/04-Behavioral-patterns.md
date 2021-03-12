@@ -1,6 +1,8 @@
+# Behavioral Patterns
+
 [slide hideTitle]
 
-# Behavioral Patterns
+# Purposes
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-33-34-behavioral-patterns-purposes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -9,6 +11,8 @@
 The idea behind behavioral patterns is to concentrate on the way objects are interconnected.
 
 In short, they represent the relationship between objects.
+
+[/slide]
 
 [slide hideTitle]
 
@@ -138,8 +142,6 @@ The **output** of our program will be:
 Text is Open.
 Text is Closed.
 ```
-
-
 
 [/slide]
 
