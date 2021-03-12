@@ -16,7 +16,7 @@
 - **Do not modify the interfaces or their packages**
 - Use **strong cohesion** and **loose coupling**
 - **Use inheritance and the provided interfaces wherever possible**
-- *This includes constructors, method parameters and return types*
+- **This includes constructors, method parameters, and return types**
 - **Do not** violate your **interface implementations** by adding **more public methods** in the concrete class than the ones already defined in the interface
 - Make sure you have **no public fields** anywhere in your code
 
@@ -32,46 +32,41 @@ There should also be a **DwarfRepository**, as well as **PresentRepository**
 
 # BaseDwarf
 
-**BaseDwarf** is a **base class** or any **type of Dwarf** and it **should not be able to be instantiated**.
+**BaseDwarf** is a **base class** for any **type of Dwarf** and it **should not be able to be instantiated**.
 
 ## Data:
 
 - **name - String**
   * if the name **is null or whitespace**, throw a **NullPointerException** with the message: 
-"**Dwarf name cannot be null or empty.**"
+  "**Dwarf name cannot be null or empty.**"
   * all names will be **unique**
 
 - **energy -  int**
   * the energy of a dwarf
   * if the **initial** energy is below 0, throw an **IllegalArgumentException** with the message:
- "**Cannot create a Dwarf with negative energy!**"
+  "**Cannot create a Dwarf with negative energy!**"
 
 - **instruments - Collection**\<**Instrument**\>
   * a collection of a dwarf's instruments
 
 ## Constructor:
 
-  An **BaseDwarf** should take the following values upon initialization: 
+A **BaseDwarf** should take the following values upon initialization: 
 
-  **(String name, int energy)**
+- **(String name, int energy)**
 
 
 ## Behavior:
 
-`void work()`
+- `void work()`
+  * the **work()** method decreases dwarfs' energy with 10
+  * a dwarf's energy should **not** drop **below 0** (if the power becomes less than 0, set it to 0)
 
-The **work()** method decreases dwarfs' energy with 10
-  * A dwarf's energy should **not** drop **below 0** (If the power becomes less than 0, set it to 0)
+- `void addInstrument(Instrument instrument)` 
+  * this method **adds** an **instrument** to the dwarf's **collection** of instruments. 
 
-`void addInstrument(Instrument instrument)` 
-
-This method **adds** an **instrument** to the dwarf's **collection** of instruments. 
-
-`boolean canWork()`
-
-This method returns:
-
-  * **true**, if the current energy of the dwarf is **greater** than **0**
+- `boolean canWork()`
+  * returns **true**, if the current energy of the dwarf is **greater** than **0**
   * **false**, otherwise
 
 
@@ -85,85 +80,79 @@ Initial **energy** units: **100**
 
 The constructor should take the following values upon initialization:
 
-**(String name)**
+- **(String name)**
 
 ### Sleepy
 
 Initial **energy** units: **50**
 
-The method **work() decreases** the dwarfs' energy by an additional **5 units**
+The **work()** method **decreases** the dwarf's energy by an additional **5 units**.
 
 The constructor should take the following values upon initialization:
 
-**(String name)**
+- **(String name)**
 
 # InstrumentImpl
 
-The **InstrumentImpl** is a class that represents the tool, which a **Dwarf** uses to craft a **Present**
+The **InstrumentImpl** is a class that represents the tool, which a **Dwarf** uses to craft a **Present**.
 
-**It should** be able to be **instantiated**
+**It should** be able to be **instantiated**.
 
 ## Data
 
 - **power - int**
 
-  * The power of an instrument
-  * If the **initial** power is below **0**, throw an **IllegalArgumentException** with the message:
- "**Cannot create an Instrument with negative power!**"
+  * the power of an instrument
+  * if the **initial** power is below **0**, throw an **IllegalArgumentException** with the message:
+  "**Cannot create an Instrument with negative power!**"
 
- ## Constructor
+## Constructor
 
- An **InstrumentImpl** should take the following values upon initialization: 
+An **InstrumentImpl** should take the following values upon initialization: 
 
- **(int power)**
+- **(int power)**
 
- ## Behavior 
+## Behavior 
 
- `void use()`
+- `void use()`
+  * the **use()** method **decreases** an instrument's **power** by **10**
+  * an instrument's power should **not** drop **below 0** 
+  * if the power becomes less than 0, set it to 0
 
- The **use()** method **decreases** an instrument's **power** by **10**
-
-   * An instrument's power should **not** drop **below 0** 
-       * if the power becomes less than 0, set it to 0
-
-`boolean isBroken()` 
-
-This method returns true when its power becomes equal to 0
+- `boolean isBroken()` 
+  * this method returns true when its power becomes equal to 0
 
 # PresentImpl
 
-This is the class which holds information about the **Present** that a **Dwarf** is working on
+This is the class that holds information about the **Present** that a **Dwarf** is working on.
 
-**It should** be able to be **instantiated**
+**It should** be able to be **instantiated**.
 
 ## Data
 
 - **name - String**
   * if the name **is null or whitespace**, **throw a NullPointerException** with the message: 
-"**Present name cannot be null or empty.**"
+  "**Present name cannot be null or empty.**"
 
 - **energyRequired - int**
   * the energy a present requires in order to be crafted
   * if the **initial** energy is below **0**, throw an **IllegalArgumentException** with the message:
- "**Cannot create a Present requiring negative energy!**"
+  "**Cannot create a Present requiring negative energy!**"
 
 ## Constructor 
 
-An **PresentImpl** should take the following values upon initialization: 
+A **PresentImpl** should take the following values upon initialization: 
 
-**(String name, int energyRequired)**
+- **(String name, int energyRequired)**
 
 ## Behavior
 
-`void getCrafted()`
+- `void getCrafted()`
+  * the **getCrafted() decreases** the required energy of the present by **10 units**
+  * a present's required energy should **not** drop **below 0**
 
-The **getCrafted() decreases** the required energy of the present by **10 units**.
-
-  * A present's required energy should **not** drop **below 0**
-
-`boolean isDone()`
-
-The **isDone()** method returns **true** if the **energyRequired** reaches **0**.
+- `boolean isDone()`
+  * the **isDone()** method returns **true** if the **energyRequired** reaches **0**.
 
 # WorkshopImpl
 
@@ -171,11 +160,12 @@ The **WorkshopImpl** class holds the main action, which is the **craft** method.
 
 ## Behavior
 
-`void craft(Present present, Dwarf dwarf)`
+- `void craft(Present present, Dwarf dwarf)`
 
 Here is how the **craft** method works:
 
-- The dwarf starts crafting the present. This is only possible if the dwarf has energy and an instrument that is not broken
+- The dwarf starts crafting the present
+    * this is only possible if the dwarf has energy and an instrument that is not broken
 
 - Keep working **until** the present is **done** and while the dwarf has **energy** left (and **instruments** to use)
 
@@ -183,7 +173,7 @@ Here is how the **craft** method works:
 
 # DwarfRepository
 
-The dwarf repository is a repository for the dwarfs working at Santa's Workshop.
+**DwarfRepository** is a repository for the dwarfs working at Santa's workshop.
 
 ## Data
 
@@ -191,25 +181,19 @@ The dwarf repository is a repository for the dwarfs working at Santa's Workshop.
 
 ## Behavior
 
-`void add(Dwarf dwarf)`
+- `void add(Dwarf dwarf)`
+  * **adds** a dwarf to the collection
+  * every dwarf is **unique** and it is guaranteed that there will be no repeating dwarf names
 
-- **Adds** a dwarf to the collection
+- `boolean remove(Dwarf dwarf)`
+  * **removes** a dwarf from the collection
+  * returns **true** if the deletion was **sucessful**
 
-- Every dwarf is **unique** and it is guaranteed that there will be no repeating dwarf names
+- `Dwarf findByName(String name)`
+  * returns the **dwarf** with that **name** if there is one
 
-`boolean remove(Dwarf dwarf)`
-
-- **Removes** a dwarf from the collection
-
-- Returns **true** if the deletion was **sucessful**
-
-`Dwarf findByName(String name)`
-
-- Returns the **dwarf** with that **name** if there is one
-
-`Collection<Dwarf> getModels()`
-
-- Returns a collection of dwarfs **(unmodifiable)**
+- `Collection<Dwarf> getModels()`
+  * returns a collection of dwarfs **(unmodifiable)**
 
 # PresentRepository
 
@@ -221,27 +205,20 @@ The present repository is a repository for presents that await to be crafted.
 
 ## Behavior
 
-`void add(Present present)`
+- `void add(Present present)`
+  - **adds** a present to be crafted
+  - every present is **unique** and it is guaranteed that there will not be a present with the same name
 
-- **Adds** a present to be crafted
+- `boolean remove(Present present)`
+  - **removes** a present from the collection
+  - **returns** true if the deletion was **sucessful**
 
-- Every present is **unique** and it is guaranteed that there will not be a present with the same name
+- `Present findByName(String name)`
+  - returns a **present** with that **name** if such exists
+  - we are guaranteed that the present **exists** in the collection
 
-`boolean remove(Present present)`
-
-- **Removes** a present from the collection
-
-- **Returns** true if the deletion was **sucessful**
-
-`Present findByName(String name)`
-
-- Returns a **present** with that **name** if such exists
-
-- We are guaranteed that the present **exists** in the collection
-
-`Collection<Present> getModels()`
-
-- Returns the collection of presents (unmodifiable)
+- `Collection<Present> getModels()`
+  - returns the collection of presents (unmodifiable)
 
 
 
