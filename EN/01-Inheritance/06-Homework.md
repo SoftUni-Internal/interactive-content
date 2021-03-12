@@ -44,13 +44,16 @@ public class Main {
 }
 ```
 
-## Examples
+# Examples
+
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | Peter | Peter |
 | 13 | 13 |
 |  |  |
 
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | George | George |
@@ -2425,8 +2428,8 @@ On the first line will be the type of animal and on the second – the name, the
 When the command "**Beast!**" is given, stop the input and print all the animals in the format shown below.
 
 ## Output
-- Print the information for each animal on three lines. On the first line, print: "**\{animalType\}**"
-- On the second line print: "**\{name\}** **\{age\}** **\{gender\}**"
+- Print the information for each animal on three lines. On the first line, print: "\{**animalType**\}"
+- On the second line print: "\{**name**\} \{**age**\} \{**gender**\}"
 - On the third line print the sounds it produces: "\{**produceSound()**\}"
 
 ## Constraints
@@ -2449,7 +2452,9 @@ To find the name of the class you can use `this.getClass().getSimpleName()` in `
 You need a public class **Main**.
 
 
-## Examples
+# Examples
+
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | Cat | Cat  |
@@ -2460,6 +2465,7 @@ You need a public class **Main**.
 |  | Woof! |
 |  |  |
 
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | Frog | Frog  |
