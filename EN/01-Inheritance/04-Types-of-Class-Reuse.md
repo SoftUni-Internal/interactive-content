@@ -7,15 +7,17 @@
 
 The extension of class is called an **IS-A** relationship.
 
-**Student IS-A Person**
+**Student IS-A Person:**
 ```java
 public Student extends Person{}
 ```
 
-- Duplicate code is error prone, but also if we have a bug at one place we have to go and find all the places we used this code in order to fix it
+- Duplicate code is error prone
+    * if we have a bug at one place, we have to go and find all the places we used this code in order to fix it
 
-- **Reuse classes** through **extension** and add custom logic to it
-- When a class is not from our library and we do not know its implementation we can only extend the given class to add custom logic to it
+- **Reuse classes** through **extension** and add custom logic to them
+
+- When a class is not from our library and we do not know its implementation, we can only extend the given class to add custom logic to it
 
 [image assetsSrc="inheritance-example(15).png" /]
 
@@ -39,7 +41,7 @@ class Laptop {
   Monitor monitor;
   Touchpad touchpad;
   Keyboard keyboard;
-  … //Reusing classes
+  // Reusing classes...
 }
 ```
 [image assetsSrc="inheritance-example(16).png" /]
@@ -58,15 +60,24 @@ This way we can give a common interface for the client to work with as it does n
 ```java
 class Laptop {
   Monitor monitor;
-  void incrBrightness() {   //In our class Laptop we provide a method for increasing the brigthness
-    monitor.brighten();     //although that undearneath we are calling the monior's method
-  }                         //we give an interface to our class, without specifying the code that does the job
-                            //this way we can combine complex logic in just one method                      
+  
+  void incrBrightness() {   
+    monitor.brighten();     
+  }                         
+                            
   void decrBrightness() {
     monitor.dim();
   } 
 }
 ```
+
+In our **Laptop** class, we provide a method for increasing the brightness.
+
+Undearneath, we are calling the monitor's method.
+
+We provide an **interface to our class**, without specifying the code that does the work.
+
+By doing so, we can **combine** complex logic in just **one method**.                      
 
 [/slide]
 
