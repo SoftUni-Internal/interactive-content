@@ -1,34 +1,34 @@
-[slide hideTitle]
-
 # Homework
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/07.Java-OOP-Advanced-Unit-Testing-Exercise-Resources.zip) **for this task.**
+[slide hideTitle]
 
 # Problem: Database
 
-You are given a simple class - **Database**. 
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/07.Java-OOP-Advanced-Unit-Testing-Exercise-Resources.zip) **for these tasks.**
+
+You will receive a simple class - **Database**. 
 
 It **stores Integers.** Your task is to **test the class.** 
 
-Write **tests**, so you are sure its methods are working as intended.
+Write **tests** to ensure its methods are working as intended.
 
 ## Constraints
 
-- Storing array's **capacity** must be **exactly 16 integers.**
+- The storing array's **capacity** must be **exactly 16 integers.**
 
   * if the size of the array is not 16 integers long, throw **OperationNotSupportedException**
 
-- **Add** operation, should **add an element at the next free cell.** (just like a stack)
+- **Add** operation - should **add an element at the next free cell** (similarly to a stack)
 
-  * if passed element is null throw **OperationNotSupportedException**
+  * if passed element is null, throw **OperationNotSupportedException**
 
-- **Remove** operation, should support only removing an element **at the last index.** (just like a stack)
+- **Remove** operation - should support only removing an element **at the last index** (like a stack)
 
-  * if you try to remove element from empty Database throw **OperationNotSupportedException**
+  * if you try to remove an element from empty Database throw **OperationNotSupportedException**
 
-- **Constructors** should take integers only, and store them in **array**
+- **Constructors** should take integers only, and store them in an **array**
 
-- **Fetch method** should return the elements as **array**
+- **Fetch method** should return the elements as an **array**
 
 
 ## Hint
@@ -47,33 +47,39 @@ They are methods too!
 
 You already have a class - Database. 
 
-This time it is extended. 
+Your task is to **extend** it.
 
-There are the following provided methods:  adding, removing and finding People. 
+There are the following provided methods:  adding, removing, and finding People. 
 
-In other words, it should store People. There should be two types of finding methods - first: `findById (long id)` and the second one: `findByUsername (String username)`.
+In other words, it should store People. 
 
-As you may guessed, each person should have its own unique id, and unique username. Your task is to test these functions.
+There should be two types of finding methods:
+- `findById (long id)`
+- `findByUsername (String username)`.
+
+As you may have guessed, each person should have their own unique **id** and unique **username**. 
+
+Your task is to test these functions.
 
 ## Constraints
 
-Database should have methods:
+The database should have methods:
 
 - `add`
 
-  * If there are multiple users with this id, throw **OperationNotSupportedException**
+  * if there are multiple users with this id, throw **OperationNotSupportedException**
 
-  * If negative or null ids are present, throw **OperationNotSupportedException**
+  * if negative or null id-s are present, throw **OperationNotSupportedException**
 
 - `remove`
 
 - `findByUsername`
 
-  * If no user is present by this username, throw **OperationNotSupportedException**
+  * if no user is present with this username, throw **OperationNotSupportedException**
 
-  * If username parameter is null, throw **OperationNotSupportedException**
+  * if the username parameter is null, throw **OperationNotSupportedException**
 
-  * Arguments are all CaseSensitive
+  * all arguments are case-sensitive
 
 - `findById`
 
@@ -93,7 +99,11 @@ They are methods too!
 
 # Problem: Iterator Test
 
-You are given a simple class `ListIterator`, it should receive a collection of Strings which it will iterate, injected through its constructor. 
+Use the **resources** you downloaded in the first task.
+
+You are given a simple class `ListIterator`.
+
+It should receive a collection of Strings which it will iterate, injected through its constructor. 
 
 You should store the elements in a `List`. 
 
@@ -101,11 +111,13 @@ If there is null passed to the constructor, throw new **OperationNotSupportedExc
 
 The class should have three main functions:
 
-- `Move` - should move an internal index position to the next index in the list, the method should return true if it successfully moved and false if there is no next index
+- `Move` - should move an internal index position to the next index in the list
+    * the method should return **true** if it successfully moved and **false** if there is no next index
 
 - `HasNext` - should return true if there is a next index and false if the index is already at the last element of the list
 
-- `Print` - print the element at the current internal index, calling `Print` on a collection without elements should throw an appropriate exception with the message **"Invalid Operation!"** 
+- `Print` - print the element at the current internal index
+    * calling `Print` on a collection without elements should throw an appropriate exception with the message **"Invalid Operation!"** 
 
 | **Command** | **Return Type** | **Description** |
 | --- | --- | --- |
@@ -115,23 +127,24 @@ The class should have three main functions:
 
 ## Test 
 
-Create tests, so you are sure all methods in the class `ListIterator` are working as intended.
+Create tests to ensure all methods in the class `ListIterator` are working as intended.
 
 ## Constraints
 
-- There will always be only **1 Create** command and it will always be the first command passed
+- There will always be only one **Create** command and it will always be the first command passed
 
 - The last command will always be the only **END** command
 
-## Example One
+# Examples
 
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | Create | Invalid Operation! |
 | Print | 
 | END | 
 
-## Example Two
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | Create Bob George | true |
@@ -141,7 +154,7 @@ Create tests, so you are sure all methods in the class `ListIterator` are workin
 | Print |
 | END |
 
-## Example Three
+## Example 3
 | **Input** | **Output** |
 | --- | --- |
 | Create 1 2 3 | true |
@@ -161,15 +174,21 @@ Create tests, so you are sure all methods in the class `ListIterator` are workin
 
 # Problem: Custom Linked List
 
-You are given a data structure that needs to be tested. Use the Java file **CustomLinkedList.java** and:
+Use the **resources** you downloaded in the first task.
 
-- Create Test Class and Test Methods for **all public members** that need testing
+You are given a data structure that needs to be tested. 
 
-- Create tests that ensure all methods, getters and setters **work correctly**
+Use the Java file **CustomLinkedList.java** and:
 
-- Use the **@Test(expected = ExpectedException.class)** annotation for methods that are expected to throw exception in case wrong input is entered (those tests do not need assert messages).
+- Create a test class and test methods for **all public members** that need testing
 
-- Give **meaningful assert messages** for failed tests
+- Create tests that ensure all methods, getters, and setters **work correctly**
+
+- Use the **@Test(expected = ExpectedException.class)** annotation for methods that are expected to throw an exception in case wrong input is entered
+
+    * those tests do not need assert messages
+
+- Give **meaningful assertion messages** for failed tests
 
 
 [/slide]
@@ -178,11 +197,13 @@ You are given a data structure that needs to be tested. Use the Java file **Cust
 
 # Problem: Tire Pressure Monitoring System
 
+Use the **resources** you downloaded in the first task.
+
 You are given a small project for a system which monitors the pressure in car tires. 
 
 Your task is to write unit tests for the system. 
 
-You will need to use mocking in order to pass dependencies. 
+You will need to use **mocking** in order to pass dependencies. 
 
 Think about the corner cases of the project.
 
