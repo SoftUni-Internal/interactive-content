@@ -113,7 +113,7 @@ The time of program execution is about 1 second, a lot faster than the concatena
 
 # StringBuilder Methods
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-29-stringbuilder-methods-1-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-29-20-31-stringbuilder-methods-1-2-3-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Here are some of **StringBuilder**'s methods and what they do:
 
