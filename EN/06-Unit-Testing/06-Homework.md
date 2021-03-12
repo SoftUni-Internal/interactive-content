@@ -14,7 +14,7 @@ Write **tests** to ensure its methods are working as intended.
 
 ## Constraints
 
-- Stroring array's **capacity** must be **exactly 16 integers.**
+- The storing array's **capacity** must be **exactly 16 integers.**
 
   * if the size of the array is not 16 integers long, throw **OperationNotSupportedException**
 
