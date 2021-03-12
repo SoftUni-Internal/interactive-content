@@ -6,15 +6,15 @@ O piață oferă prețuri diferite pentru anumite produse în funcție de ziua s
 
 [image assetsSrc="03-conditional-statements-advanced-example.png" /]
 
-| Produs | Ziua săptămânii | Weekend | 
-|-------|-------|-------|
+| **Produs** | **Ziua săptămânii** | **Weekend** | 
+|---|---|---|
 |Banane|2.50|2.70|
 |Măr|1.30|1.60|
 |Kiwi|2.20|3.00|
 
 Vrem să calculăm prețul pentru anumite produse și și o anumită zi.
 
-# Pseudocode
+## Pseudocode
 
 ```
 Citiți intrarea

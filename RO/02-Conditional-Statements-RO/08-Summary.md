@@ -1,7 +1,7 @@
 [slide hideTitle]
 # Rezumat
 
-# În această lecție am învățat: 
+## În această lecție am învățat: 
 
 - Operatorii de comparație (**==** , **!=** , **<** , **>** , **<=** , **>=** )
 

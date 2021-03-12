@@ -51,7 +51,7 @@ System.out.println(number);
 [slide hideTitle]
 # Problem with Solution: Odd Number
 
-Java-While-Loops-14-Problem-Odd-Number
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/EN/Java-While-Loops-14-15-Problem-and-Solution-Odd-Number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Odd Number" taskId="java-basics-while-loop-odd-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -83,6 +83,17 @@ Create a program that:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+2
+4
+8
+3
+[/input]
+[output]
+3
+[/output]
+[/test]
 [test]
 [input]
 2
@@ -104,7 +115,7 @@ Create a program that:
 [slide hideTitle]
 # Problem with Solution: Number Processor
 
-Java-While-Loops-16-Problem-Number-Processor
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/EN/Java-While-Loops-16-17-Problem-and-Solution-Number-Processor-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Number Processor" taskId="java-basics-while-loop-number-processor" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -128,7 +139,7 @@ Create a program that:
 * **Subtract** - Subtracts **1** from the number
 * **END** -  Prints the number and ends the program
 
-## Example
+## Example One
 
 | **Input** | **Output** |
 | ---- | ---- |
@@ -136,14 +147,18 @@ Create a program that:
 | Add |
 | END |
 
-### Input
-- 5
-- Add
-- END
-### Output
-- 6
 [/task-description]
 [tests]
+[test open]
+[input]
+5
+Add
+END
+[/input]
+[output]
+6
+[/output]
+[/test]
 [test]
 [input]
 4

@@ -1495,30 +1495,30 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-John works in a restaurant and is responsible for loading the dishwasher at the end of the day. 
+John works in a restaurant. He is responsible for loading the dishwasher at the end of the day. 
 
-Your task is to write a program that calculates **whether** a purchased quantity of bottles of dishwasher detergent is **enough** to wash a certain amount of vessels. 
+Your task is to create a program that calculates **whether** the purchased quantity of bottles of dishwasher detergent is **enough** to wash a certain amount of vessels. 
 
 It is known that each bottle contains **750 ml.** detergent. 
 
-For 1 **plate** 5 ml is needed, and for a **pots** 15 ml. 
+For a **plate** are needed **5 ml**. For a **pot** are needed **15 ml*. 
 
-Accept that on every **third** filling with vessels, the dishwasher is filled only with pots, and the other times with plates. 
+On every **third** filling with vessels, the dishwasher is filled only with pots, whereas, the other times - with plates. 
 
-Until you get the command **"END"** you will continue to receive the number of vessels that need to be washed.
+Until we get the command **END**, we will be receiving numbers of vessels that need to be washed.
 
 # Input
 Read from the console: 
-- **Number of bottles of detergent** that will be used for washing of plates - integer in range \[1...10\] 
+- **Number of bottles of detergent** that will be used - integer in range \[1...10\] 
 
-On each **subsequent** line, until the command **"End"** or until **the amount of detergent is not run out**, the **number of vessels** that need to be washed - integer in range \[1...100\]
+- On each subsequent line, until the command **End**, or until **we run out of detergent**, we will receive the **number of vessels** that need to be washed - integer in range \[1...100\]
 
 # Output
-- In case that the amount of detergent **was sufficient** for the washing of the vessels, print three lines of output: 
+- If the amount of the detergent **is sufficient** for washing all the vessels, print the following three lines: 
     - "Detergent was enough!"
     - "\{Number of clean plates\} dishes and \{number of clean pots\} pots were washed."
     - "Leftover detergent \{amount of detergent remaining\} ml." 
-- If the amount of detergent **was not sufficient** for the washing of the vessels, print the following line: 
+- If the amount of detergent **is not sufficient**, print the following line: 
     - "Not enough detergent, \{quantity not reached detergent\} ml. more necessary!"
 
 ## Example
@@ -1534,14 +1534,17 @@ On each **subsequent** line, until the command **"End"** or until **the amount o
 [hints]
 [hint]
 Detergent quantity = 2 \* 750 = 1500 ml.
-53 plates are loaded = > 53 \* 5 = 265 ml.  1500 \- 265 = 1235 ml. (residue)
-65 plates = > 65 \* 5 = 325 ml 1235 \- 325 = 910 ml. (residue)
-55 pots = > 55 \* 15 = 825 ml 910\- 825 = 85 ml. (residue)
+53 plates are loaded = > 53 \* 5 = 265 ml.  1500 \- 265 = 1235 ml. left
+65 plates = > 65 \* 5 = 325 ml 1235 \- 325 = 910 ml. left
+55 pots = > 55 \* 15 = 825 ml 910\- 825 = 85 ml. left
 [/hint]
 [hint]
-We receive the command "End", therefore the quantity is reached and the corresponding message is printed: number of plates = 53 \+ 65 = 118. Number of pots = 55
+We receive the command "End". Therefore, we can conclude that the quantity is enough, so the corresponding messages are printed: 
+- number of all plates washed = 53 \+ 65 = 118. 
+- number of all pots washed = 55
 [/hint]
 [/hints]
+
 ## Example
 | **Input** | **Output** |
 | --- | --- |
@@ -1734,31 +1737,36 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-At a charity event, payments for the purchased products are always **alternated**: **cash payment and card payment**. **Always first payment method is cash**.
+At a charity event, people can pay for their purchased products **in cash** or by **credit card**. 
+The method of payment alternates as follows:
+- The first payment should be **in cash**
+- The second payment should be made by **credit card**
+- The third one should be **in cash** and so on
+
 
 The following payment rules have been established:
-- If the product **exceeds 100 dollars**, it **cannot be paid in cash**
+- If the product's price **exceeds 100 dollars**, it **cannot be paid in cash**
 - If the product is priced **under 10 dollars**, it **cannot be paid by credit card**
 
-The program ends either after we receive the command **"End"**, or after the **funds are collected**.
+The program ends when we receive the command **End**, or when the needed **funds are collected**.
 
 ## Input
 Read from the console:
-- The amount **expected to be collected** from sales - integer in range \[1...10000\] 
+- The amount that should be **collected** from sales - integer in range \[1...10000\] 
 
-On each subsequent line, until the **"End"** command is received or until **the necessary funds are collected**: 
+- On the next lines, until the program ends:
     - **The prices of items** to be purchased - integer in range \[1...500\]
 
 ## Output
-Print on the console:
-- In case of successful transaction: "Product sold!" 
-- In case of unsuccessful transaction: "Error in transaction!" 
-- If the sum of all purchased products **exceeds or reaches the expected amount**, the program must be completed and **two lines** are printed to the console: 
-    - "Average CS: \{average payment in person's cash\}" 
-    - "Average CC: \{average card payment per person\}"
-    Payments must be **formatted to the second digit after the decimal point**.
-- When the **"End"** command is received, **one line** is written:
-    - "Failed to collect required money for charity."
+Print to the console:
+- In case of successful transaction: **"Product sold!"** 
+- In case of unsuccessful transaction: **"Error in transaction!"** 
+- In case we reach the expected amount of money, the following two lines should be printed out:
+    - **"Average CS: \{average payment in cash per person\}"**
+    - **"Average CC: \{average payment by card per person\}"**
+ All payments must be **formatted to the second digit after the decimal point**.
+- In case the **End** command is received, the following line should be printed out:
+    - **"Failed to collect required money for charity."**
 
 ## Example
 
@@ -1772,6 +1780,7 @@ Print on the console:
 | 78| Product sold!|
 | 317| Average CS: 70.50|
 | | Average CC: 286.50|
+
 
 [hints]
 [hint]
@@ -1790,6 +1799,7 @@ Total cash: 63 + 78 = 141;  Average cash: 141/2 = 70.50
 Total credit cards: 256 \+ 317 = 573; Average credit cards: 573/2 = 286.50
 [/hint]
 [/hints]
+
 
 [/task-description]
 [tests]
@@ -1992,14 +2002,17 @@ public class Main {
 [task-description]
 ## Description
 
-Write a program that calculates the **average grade** of a student from his entire education. 
+Create a program that calculates the **average grade** of a student for his entire education. 
 
 ## Input
-- On the first line you will receive **the name of the student**, and on each following line his annual grades. - The student passes to upper class, if his **annual grade is 4.00 or greater**. 
-- If his grade is less than 4.00, he has to **repeat** the class.
+- On the first line, we will receive **the name of the student** 
+- On the next lines, we will receive his grades.  
+
+- If his grade is **4.00 or greater**, he graduates.
+- If his grade is **less than 4.00**, he has to **repeat** the class.
 
 ## Output
-- If the student graduates **12th** class, you have to print:
+- If the student graduates, we have to print out:
     - "\{student name\} graduated. Average grade: \{average grade from his entire education\}"
 
 **The grade should be formatted to the second decimal point.**
@@ -2190,19 +2203,20 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You will receive symbols the "**End**" command. 
+We will receive symbols until the **End** command is received. 
 
-You skip the **non-letter chars** and the first occurence of **c**, **o**  and **n** (code chars).
+We should skip the **non-letter chars** and the first occurence of **c**, **o**  and **n**.
 
-When you **first receive** one of these letters, you have to mark it as visited, **but it is not saved in the word**.
+When we receive one of those letters ( **c**, **o**, or **n**) for a first time, we should not use it to form our word, but we have to note that it is encontered. 
 
-After you have found **all three code chars from the command**, you have to print the word with a space and reset the counting of the code chars.
+If we receive all the three letters, we have to add а **white space** to the end of our word and print it out. We should reset the count of the appearance of each letter to **0**.
 
 ## Input
-- Read a sequence of lines with a single symbol each, until you receive the "**End**" command
+-Read 
+- We will receive symbols, each on a new line, until we receive the "**End**" command
 
 ## Output
-- Print on the console **every word after the secret command** followed by **space**
+- Print out the word, followed by а **white space**
 
 ## Example
 | **Input** | **Output** |
@@ -2227,6 +2241,7 @@ The next symbols are "**e**", "**l**", "**l**" and we add them to the word. We r
 We print "**Hello** " and we recieve "End" command and the programs ends. The result is "Hello ".
 [/hint]
 [/hints]
+
 
 ## Example
 | **Input** | **Output** |

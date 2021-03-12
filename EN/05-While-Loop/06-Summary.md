@@ -5,7 +5,7 @@
 
 ## In this lesson you learned: 
 
-- What are **While** loops and how we use them
+- What **while-loops** are and how we can use them
 
 ```java
 while (condition) {
@@ -13,11 +13,11 @@ while (condition) {
 }
 ```
 
-- Difference between **While** and **For** loops
+- Difference between **while-loop** and **for-loop**
 
 
 
-- **Break** operator 
+- The **break** operator 
 
 ```java
 Scanner scanner = new Scanner(System.in);
@@ -30,18 +30,19 @@ while (true) {
 }
 ```
 
-- Infinity Loops
+- What **infinity loops** are 
+
 
 ## In the next lesson you will learn:
 
-- Complex for-loops with special step
+- Complex **for-loops** with a special step
 
-- Nested loops and how we use them
+- What nested loops are and how we can use them
 
-  * loops inside loops
+  * a loop inside another loop
 
 - Combining nested **for** and **while** loops
-
+- Different combinations of nesting **for-loops** and **while-loops**
 
 
 [/slide]

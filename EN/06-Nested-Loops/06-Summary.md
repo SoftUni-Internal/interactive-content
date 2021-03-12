@@ -5,7 +5,7 @@
 
 ## In this lesson you learned: 
 
-- What represent **Nested loops**
+- **Nested loops**
 
 - Syntax and overview 
 
@@ -20,11 +20,11 @@ for (int r = 1; r <= n; r++) {
 }
 ```
 
-- How we use nested **For loop**
+- How to use nested **For-loops**
 
-- How we use nested **While loop**
+- How to use nested **While-loops**
 
-- Combining **For** and **While** loops together
+- Combining **For** and **While** loops
 
 
 [/slide]

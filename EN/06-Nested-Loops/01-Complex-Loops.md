@@ -11,14 +11,14 @@ For example:
 ``` java live
 for (int i = 0; i <= 10; i += 2) {
     System.out.println(i);
-    // Print only even values of i from 0 to 10
+    // Print only the even values of i from 0 to 10
 }
 ```
 
 ``` java live
 for (int i = 20; i > 0; i -= 5) {
      System.out.println(i);
-    // Print values that are devisible by 5
+    // Print all values that are devisible by 5
 }
 ```
 
@@ -26,7 +26,7 @@ for (int i = 20; i > 0; i -= 5) {
 
 for (int j = 2; j <= 16; j *= 2) {
     System.out.println(j);
-    // Print the results of powers of 2 ascending
+    // Print all results raised to the power of 2 ascending
 }
 ```
 
@@ -34,7 +34,7 @@ for (int j = 2; j <= 16; j *= 2) {
 
 for (int j = 16; j > 1; j /= 2) {
     System.out.println(j);
-    // Print the results of powers of 2 descending
+    // Print all results raised to the power of 2 descending
 }
 
 ```
@@ -43,7 +43,7 @@ for (int j = 16; j > 1; j /= 2) {
 [slide hideTitle]
 # Problem with Solution: Numbers from N down to 1
 
-interactive-programming-basics-with-java-nested-loops-10-problem-numbers-from-n-down-to-one + 
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-10-problem-and-solution-numbers-from-n-down-to-one-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Numbers from N down to 1" taskId="pb-js-nested-loops-lab-Numbers-from-N-down-to-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -59,11 +59,12 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Write a program that prints the numbers from N down to 1.
+
+Create a program that prints out the numbers from N down to 1.
 
 The program receives a number `n` and prints the numbers from `n` down to 1. 
 
-# Example
+## Example
 | **Input** | **Output** |
 | --- | --- |
 |5| 5 4 3 2 1 |
@@ -71,7 +72,7 @@ The program receives a number `n` and prints the numbers from `n` down to 1.
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 5
 [/input]
@@ -120,7 +121,7 @@ The program receives a number `n` and prints the numbers from `n` down to 1.
 [slide hideTitle]
 # Problem with Solution: Numbers from 1 to N with Step 3
 
-interactive-programming-basics-with-java-nested-loops-12-problem-numbers-from-one-to-n-with-step-three + 
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-12-problem-and-solution-numbers-from-one-to-n-with-step-three-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Numbers from 1 to N with Step 3" taskId="pb-js-nested-loops-lab-Numbers-from-1-to-N-with-Step-3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -136,14 +137,14 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Write a program that prints the numbers from 1 to `n` with step 3:
+Create a program that prints out the numbers from 1 to `n` with a step of 3:
 
 * Receives a number `n`
 
-* Prints the numbers from 1 to `n` with step 3
+* Prints the numbers from 1 to `n` using 3 for a step
 
 
-# Example
+## Examples
 | **Input** | **Output** |
 | --- | --- |
 |7| 1 4 7 |
@@ -151,7 +152,15 @@ Write a program that prints the numbers from 1 to `n` with step 3:
 
 [/task-description]
 [tests]
-[test]
+[test open]
+[input]
+7
+[/input]
+[output]
+1 4 7
+[/output]
+[/test]
+[test open]
 [input]
 10
 [/input]
@@ -202,7 +211,7 @@ Write a program that prints the numbers from 1 to `n` with step 3:
 [slide hideTitle]
 # Problem with Solution: Even Powers of 2
 
-interactive-programming-basics-with-java-nested-loops-14-problem-even-powers-of-two + 
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-14-problem-and-solution-even-powers-of-two-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Even Powers of 2" taskId="pb-js-nested-loops-lab-Even-Powers-of-2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -218,13 +227,13 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Write a program that prints the even powers of 2:
+Create a program that prints the scaling powers of 2:
 
 * Receives a number `n`
 
-* Prints the even powers of 2 up to `2n`
+* Prints the powers of 2 up to `2n`
 
-# Example
+## Examples
 | **Input** | **Output** |
 | --- | --- |
 |5| 1 4 16 |
@@ -232,7 +241,15 @@ Write a program that prints the even powers of 2:
 
 [/task-description]
 [tests]
-[test]
+[test open]
+[input]
+5
+[/input]
+[output]
+1 4 16
+[/output]
+[/test]
+[test open]
 [input]
 10
 [/input]

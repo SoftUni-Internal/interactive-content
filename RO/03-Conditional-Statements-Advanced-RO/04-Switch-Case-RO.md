@@ -32,7 +32,7 @@ switch (selector) {
 }
 ```
 
-# Cazul implicit
+## Cazul implicit
 Cazul implicit specifică secțiunea `switch` de executat **dacă expresia de potrivire nu se potrivește cu nici o altă etichetă de caz**.
 
 Dacă un caz implicit nu este prezent și expresia de potrivire nu se potrivește cu nici o altă etichetă de caz, fluxul de program **cade** prin instrucțiunea de comutare.
@@ -77,7 +77,7 @@ switch (choice) {
 
 [slide hideTitle]
 # Etichete multiple
-În **Java** avem posibilitatea de a utiliza etichete **multiple** de caz în construcția 'switch-case', atunci când trebuie să execute **același cod**.
+În **Java** avem posibilitatea de a utiliza etichete **multiple** de caz în construcția "**switch-case**", atunci când trebuie să execute **același cod**.
 
 În acest fel, când **programul nostru** găsește o **potrivire**, acesta va executa **următorul** cod, deoarece **după** eticheta respectivă `case` **nu există cod** de executat și un operator `break`. 
 
@@ -97,7 +97,7 @@ switch (selector) {
         break;
 }
 ```
-# Exemplu: Tipul de animal
+## Exemplu: Tipul de animal
 Scrieți un program care tipărește tipul animalului în funcție de numele acestuia:
 -  Dog -> **mammal**
 -  Crocodile, tortoise, snake -> **reptile**

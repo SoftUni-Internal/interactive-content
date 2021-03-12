@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -27,11 +27,8 @@ Scrieți un program pentru a verifica fructele sau legumele:
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | lemon | fruit |
-
-## Exemplu
-|**Intrare**|**Ieșire**|
-| --- | --- |
 | carrot | vegetable |
+
 
 [/task-description]
 [tests]
@@ -41,6 +38,14 @@ lemon
 [/input]
 [output]
 fruit
+[/output]
+[/test]
+[test open]
+[input]
+carrot
+[/input]
+[output]
+vegetable
 [/output]
 [/test]
 [test]
@@ -82,7 +87,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -91,7 +96,7 @@ public class Main {
 ## Descriere
 Scrieți un program pentru a imprima ziua săptămânii ca un cuvânt:
 
-* Citiți și imprimați un număr întreg **n**: **ziua săptămânii** în intervalul \[1..7\]
+* Citiți și imprimați un număr întreg **n**: **ziua săptămânii** în intervalul [1 ... 7]
 * Imprimați **numele zilei** (ca un cuvânt, în engleză)
 * Imprimați **"Error"**, dacă numărul nu se află în intervalul dat
 
@@ -99,10 +104,6 @@ Scrieți un program pentru a imprima ziua săptămânii ca un cuvânt:
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | 1 | Monday |
-
-## Exemplu
-|**Intrare**|**Ieșire**|
-| --- | --- |
 | 8 | Error |
 
 [/task-description]
@@ -162,7 +163,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -178,10 +179,8 @@ Scrieți un program pentru a verifica  dacă o literă este vocală sau consoan�
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | a | Vowel |
-
-## Exemplu
-| --- | --- |
 | B | Consonant |
+
 
 [hints]
 [hint]
@@ -238,7 +237,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write code here
+       // Scrieți codul dvs. aici
     }
 }
 ```
@@ -322,7 +321,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -425,7 +424,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -435,7 +434,7 @@ public class Main {
 Scrieți un program, care calculează cheltuielile de vacanță:
 
 * Citiți sezonul, tipul de cazare și numărul zilelor
-* Imprimați **cheltuielile totale**, pe baza tabelului de prețuri de mai jos, formatat la **a doua cifră ** după punctul zecimal
+* Imprimați **cheltuielile totale**, pe baza tabelului de prețuri de mai jos, formatat la **a doua cifră** după punctul zecimal
 
 | Sezon | Hotel | Camping | Reducere |
 |-----|------|-------|--------|
@@ -451,9 +450,15 @@ Scrieți un program, care calculează cheltuielile de vacanță:
 | Hotel |  |
 | 5 |  |
 
+| **Intrare** | **Ieșire** |
+| --- | --- |
+| Summer |  90.00 |
+| Camping |  |
+| 3 |  |
+
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 Winter
 Hotel
@@ -463,8 +468,68 @@ Hotel
 180.00
 [/output]
 [/test]
+[test]
+[input]
+Winter
+Camping
+10
+[/input]
+[output]
+90.00
+[/output]
+[/test]
+[test]
+[input]
+Autumn
+Camping
+6
+[/input]
+[output]
+63.00
+[/output]
+[/test]
+[test]
+[input]
+Summer
+Hotel
+7
+[/input]
+[output]
+350.00
+[/output]
+[/test]
+[test]
+[input]
+Spring
+Camping
+8
+[/input]
+[output]
+64.00
+[/output]
+[/test]
+[test]
+[input]
+Summer
+Hotel
+9
+[/input]
+[output]
+450.00
+[/output]
+[/test]
+[test]
+[input]
+Autumn
+Camping
+10
+[/input]
+[output]
+105.00
+[/output]
+[/test]
 [/tests]
-[code-io/]
+[code-io /]
 [/code-task]
 
 [/slide]
@@ -478,7 +543,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write code here
+       // Scrieți codul dvs. aici
     }
 }
 ```
@@ -495,29 +560,231 @@ Calculați **prețul** pentru toate biletele pentru un film cinematografic:
 |Normal|7.50|
 |Discount|5.00|
 
-## Exemplu
-| **Intrare** | **Ieșire** |
+## Example
+| **Input** | **Output** |
 | --- | --- |
-| Normal | 810.00 |
-| 12 |  |
-| 9 |  |
+|Premiere|1440.00|
+|10||
+|12|  |
+
+| **Input** | **Output** |
+| --- | --- |
+|Normal|2047.50 |
+|21||
+|13| |
+
+| **Input** | **Output** |
+| --- | --- |
+|Discount|1800.00|
+|12||
+|30| |
+
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+Premiere
+10
+12
+[/input]
+[output]
+1440.00
+[/output]
+[/test]
+[test open]
+[input]
+Normal
+21
+13
+[/input]
+[output]
+2047.50
+[/output]
+[/test]
+[test open]
+[input]
+Discount
+12
+30
+[/input]
+[output]
+1800.00
+[/output]
+[/test]
 [test]
 [input]
 Normal
-12
+88
+44
+[/input]
+[output]
+29040.00
+[/output]
+[/test]
+[test]
+[input]
+Discount
+43
+15
+[/input]
+[output]
+3225.00
+[/output]
+[/test]
+[test]
+[input]
+Premiere
+42
+62
+[/input]
+[output]
+31248.00
+[/output]
+[/test]
+[test]
+[input]
+Discount
+30
+36
+[/input]
+[output]
+5400.00
+[/output]
+[/test]
+[test]
+[input]
+Premiere
+94
+17
+[/input]
+[output]
+19176.00
+[/output]
+[/test]
+[test]
+[input]
+Discount
+34
+7
+[/input]
+[output]
+1190.00
+[/output]
+[/test]
+[test]
+[input]
+Discount
+34
+93
+[/input]
+[output]
+15810.00
+[/output]
+[/test]
+[test]
+[input]
+Premiere
+68
+50
+[/input]
+[output]
+40800.00
+[/output]
+[/test]
+[test]
+[input]
+Normal
+73
+61
+[/input]
+[output]
+33397.50
+[/output]
+[/test]
+[test]
+[input]
+Normal
+63
+64
+[/input]
+[output]
+30240.00
+[/output]
+[/test]
+[test]
+[input]
+Normal
+84
+98
+[/input]
+[output]
+61740.00
+[/output]
+[/test]
+[test]
+[input]
+Normal
+59
+57
+[/input]
+[output]
+25222.50
+[/output]
+[/test]
+[test]
+[input]
+Premiere
+52
+35
+[/input]
+[output]
+21840.00
+[/output]
+[/test]
+[test]
+[input]
+Normal
+36
+75
+[/input]
+[output]
+20250.00
+[/output]
+[/test]
+[test]
+[input]
+Normal
+65
+68
+[/input]
+[output]
+33150.00
+[/output]
+[/test]
+[test]
+[input]
+Premiere
+59
+35
+[/input]
+[output]
+24780.00
+[/output]
+[/test]
+[test]
+[input]
+Discount
+78
 9
 [/input]
 [output]
-810.00
+3510.00
 [/output]
 [/test]
 [/tests]
-[code-io/]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
@@ -529,7 +796,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -616,7 +883,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -626,27 +893,28 @@ public class Main {
 Scrieți un program pentru a simula retragerea de bani din bancomat:
 
 Citiți: **balance**, **withdraw** și **limit**
-* Imprimați `The withdraw was successful.` Dacă soldul este suficient
-* Imprimați `The daily limit was exceeded.` Dacă limita este depășită
-* Imprimați `Insufficient availability.` dacă soldul nu este sufficient
+* Imprimați **"The withdraw was successful."**  Dacă soldul este suficient
+* Imprimați **"The daily limit was exceeded."** Dacă limita este depășită
+* Imprimați **"Insufficient availability."** dacă soldul nu este sufficient
 
-## Exemplu
-| **Intrare** | **Ieșire** |
+## Example
+  | **Intrare** | **Ieșire** |
 | --- | --- |
-| 420 | The withdraw was successful. |
-| 20 |  |
-| 25 |  |
+|420|The withdraw was successful. |
+|20||
+|25| |
 
-## Exemplu
-| **Intrare** | **Ieșire** |
+ | **Intrare** | **Ieșire** |
 | --- | --- |
-| 10 | The daily limit was exceeded. |
-| 50 | Insufficient availability. |
-| 20 |  |
+|10|The daily limit was exceeded.|
+|50|Insufficient availability.|
+|20|  |
+
 
 [/task-description]
+[code-io /]
 [tests]
-[test]
+[test open]
 [input]
 420
 20
@@ -656,10 +924,51 @@ Citiți: **balance**, **withdraw** și **limit**
 The withdraw was successful.
 [/output]
 [/test]
+[test open]
+[input]
+10
+50
+20
+[/input]
+[output]
+The daily limit was exceeded.
+Insufficient availability.
+[/output]
+[/test]
+[test]
+[input]
+10
+4565
+345
+[/input]
+[output]
+The daily limit was exceeded.
+Insufficient availability.
+[/output]
+[/test]
+[test]
+[input]
+342
+2
+3
+[/input]
+[output]
+The withdraw was successful.
+[/output]
+[/test]
+[test]
+[input]
+10
+50
+20
+[/input]
+[output]
+The daily limit was exceeded.
+Insufficient availability.
+[/output]
+[/test]
 [/tests]
-[code-io/]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
@@ -671,7 +980,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -682,15 +991,26 @@ Scrieți un program pentru a găsi cel mai mare dintre 5 numere
 * Citiți **5 numere întregi**
 * Imprimați cel mai mare număr.
 
-## Exemplu
-| **Intrare** | **Ieșire** |
+## Example
+  | **Intrare** | **Ieșire** |
 | --- | --- |
-| -1 | -1 |
-| -2 |  |
-| -3 |  |
-| -4 |  |
-| -5 |  |
+| \-1|\-1|
+|\-2||
+|\-3||
+|\-4||
+|\-5|  |
+
+ | **Intrare** | **Ieșire** |
+| --- | --- |
+| 3|77|
+|4||
+|77||
+|12||
+|33|  |
+
+
 [/task-description]
+[code-io /]
 [tests]
 [test open]
 [input]
@@ -706,20 +1026,66 @@ Scrieți un program pentru a găsi cel mai mare dintre 5 numere
 [/test]
 [test]
 [input]
-1
-2
-3
-4
 5
+-2
+-3
+9
+-8
 [/input]
 [output]
+9
+[/output]
+[/test]
+[test]
+[input]
+-1
+4
+3
+-4
+1
+[/input]
+[output]
+4
+[/output]
+[/test]
+[test]
+[input]
+4
+2
 5
+43
+1
+[/input]
+[output]
+43
+[/output]
+[/test]
+[test]
+[input]
+234234
+2345
+56756
+67867
+3453
+[/input]
+[output]
+234234
+[/output]
+[/test]
+[test]
+[input]
+3452
+54756
+6786
+3453
+4
+[/input]
+[output]
+54756
 [/output]
 [/test]
 [/tests]
-[code-io/]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
@@ -731,7 +1097,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -747,8 +1113,8 @@ Scrieți un program **consolă** care să citească **vârstă (număr în virgu
 
 ## Intrare
 Intrat de pe consolă:
-- vârstă - număr în virgulă mobilă
-- sex - "**m**"sau "**f**"
+- Vârstă - număr în virgulă mobilă
+- Sex - "**m**"sau "**f**"
 
 ## Ieșire
 Imprimați adresa așteptată pe o singură linie.
@@ -760,11 +1126,12 @@ Imprimați adresa așteptată pe o singură linie.
 | 25 | Ms. |
 | f | |
 
-## Exemplu
+
 | **Intrare** | **Ieșire** |
 | --- |  --- |
 | 13.5 | Master |
 | m | |
+
 [/task-description]
 [tests]
 [test open]
@@ -925,7 +1292,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -940,15 +1307,15 @@ Intrarea este formată din 2 linii:
 - A doua linie de intrare citește combustibilul din rezervor în litri
 
 ## Ieșire
-- Dacă combustibilul este altul decât tipărirea specificată "Invalid fuel!".
+- Dacă combustibilul este altul decât tipărirea specificată "**Invalid fuel!**"
 - În caz contrar, dacă combustibilul din rezervor este mai mare sau egal cu 25 litri de imprimare:
-     - "You have enough \{type of fuel\}."
-     - Tipul de combustibil trebuie imprimat cu litere mici.
+     - "**You have enough** \{**type of fuel**\}."
+     - Tipul de combustibil trebuie imprimat cu litere mici
 - Altfel tipăriți:
-     - "Fill your tank with \{type of fuel\}!". 
-     - Tipul de combustibil trebuie imprimat cu litere mici.
+     - "**Fill your tank with** \{**type of fuel**\}!"
+     - Tipul de combustibil trebuie imprimat cu litere mici
 
-### Exemplu
+## Exemplu
 
 | **Intrare** | **Ieșire** |
 | --- | --- |
@@ -1050,7 +1417,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1075,9 +1442,9 @@ Citiți de pe consolă două linii:
 - Valoarea vânzărilor - număr în virgulă mobilă
 
 ## Ieșire
-- Tipăriți pe consolă valoarea calculată a comisionului comercial.
-- Rezultatul ar trebui să fie **formatat cu a doua zecimală**.
-- Dacă primiți **invalid** numele orașului **sau** suma vânzărilor (număr negativ), tipăriți "**error**".
+- Tipăriți pe consolă valoarea calculată a comisionului comercial
+- Rezultatul ar trebui să fie **formatat cu a doua zecimală**
+- Dacă primiți **invalid** numele orașului **sau** suma vânzărilor (număr negativ), tipăriți "**error**"
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -1268,7 +1635,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1288,7 +1655,7 @@ Dacă punctul NU se află pe o latură:
 - Tipăriți "**Inside / Outside**"
 
 ## Exemplu
-| **Intrare** | **Ieșire** 
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 2 | Inside / Outside |
 | -3 | |
@@ -1297,7 +1664,7 @@ Dacă punctul NU se află pe o latură:
 | 8 | |
 | -1 | | 
 
-| **Intrare** | **Ieșire** 
+| **Intrare** | **Ieșire** |
 |  --- | --- |
 | 2 | Border|
 | -3 | |
@@ -1306,12 +1673,17 @@ Dacă punctul NU se află pe o latură:
 | 12 | |
 | -1 | |
 
-\* **Sfat**: utilizați una sau mai multe instrucțiuni condiționale **if** cu operații logice. Un punct **{x, y}** se află lângă un dreptunghi **{x1, y1} - {x2, y2}**, dacă una dintre condițiile specificate este îndeplinită:
+[hints]
+[hint]
+utilizați una sau mai multe instrucțiuni condiționale **if** cu operații logice. Un punct **{x, y}** se află lângă un dreptunghi **{x1, y1} - {x2, y2}**, dacă una dintre condițiile specificate este îndeplinită:
 
 - **x** este egal cu **x1** sau **x2** și în același timp **y** este între **y1** și **y2**
 - **y** este egal cu **y1** sau **y2** și în același timp **x** este între **x** și **x2**
-
+[/hint]
+[hint]
 Puteți verifica condițiile de mai sus folosind o construcție mai complicată **if** - **else** sau folosind câteva instrucțiuni condiționale mai simple sau **instrucțiunilor imbricate if-else**.
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -1564,7 +1936,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1594,7 +1966,7 @@ Prietenul vostru are planuri diferite pentru fiecare parte a zilei, cu ținute d
 
 ## Ieșire
 - Imprimați pe consolă o linie **unică**:
-    - It's \{degrees\} degrees, get your \{outfit\} and \{shoes\}."
+    - "It's \{degrees\} degrees, get your \{outfit\} and \{shoes\}."
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -1735,7 +2107,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1752,18 +2124,18 @@ Tony și prietenii săi au decis să închirieze o barcă - chiria depinde de **
 
 **Prețul** pe baza **numărului** de pescari utilizează **reducere:**
 - Dacă grupul este **până la 6 persoane (inclusiv) - 10% reducere**
-- Dacă membrii grupului se află în intervalul \[7…11\] -  **15% reducere**
+- Dacă membrii grupului se află în intervalul \[7 .... 11\] -  **15% reducere**
 - Dacă grupul are **12 sau mai multe persoane - 25% reducere**
 
 Pescarii folosesc încă o reducere de **5% dacă sunt un număr par**, cu excepția cazului în care **NU** este toamna - atunci **NU** au reducere suplimentară.
 
-Scrieți un **program** pentru ** a calcula** dacă pescarii vor strânge **suficienți** bani.
+Scrieți un **program** pentru **a calcula** dacă pescarii vor strânge **suficienți** bani.
 
 ## Intrare
 Intrarea este alcătuită exact din **3 linii**:
-- **bugetul** al grupului - număr real în intervalul \[1…8000\]
+- **bugetul** al grupului - număr real în intervalul \[1 .... 8000\]
 - **Sezon** - Șir: "**Spring**", "**Summer**", "**Autumn**", "**Winter**"
-- **Numărul** de pescari - număr întreg în intervalul \[4…18\]
+- **Numărul** de pescari - număr întreg în intervalul \[4 .... 18\]
 
 ## Ieșire
 Imprimați pe consolă o linie **unică**:
@@ -1779,11 +2151,6 @@ Imprimați pe consolă o linie **unică**:
 | Summer | |
 | 11 | |
 
-### Comentarii
-- Vara, pescuitul costă 4200 USD,
-- **11 pescari beneficiază de 15% reducere** -> **4200 - 15% = 3570** $, numărul lor este **impar**, deci **nu** folosesc **reducere suplimentară**.
-- 3000 <= 3570, deci au nevoie de 570,00 $ mai mult
-
 ## Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
@@ -1797,6 +2164,18 @@ Imprimați pe consolă o linie **unică**:
 | 3600 | Yes! You have 1035.00 dollars left. |
 | Spring | |
 | 6 | |
+
+[hints]
+[hint]
+Determinați reducerea pentru pescari și dacă există vreo reducere suplimentară.
+Vara, pescuitul costă 4200 USD,
+**11 pescari beneficiază de 15% reducere** -> **4200 - 15% = 3570** $, numărul lor este **impar**, deci **nu** folosesc **reducere suplimentară**.
+3000 <= 3570, deci au nevoie de 570,00 $ mai mult
+[/hint]
+[hint]
+Imprimați rezultatul corect.
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -1994,7 +2373,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+       // Scrieți codul dvs. aici
     }
 }
 ```
@@ -2041,13 +2420,6 @@ Imprimați pe consolă un **număr unic** - prețul florilor, **formatat la a do
 | 8 | |
 | Spring | |
 | Y | |
-
-### Comentarii
-- **Preț: 2\*2.00 + 4\*4.10 + 8\*2.50 = 40.40 $** 
-- **Vacanță** 40.40 + **15%** = 46.46 $
-- **Reducere de 5% pentru mai mult de 7 lalele în primăvară** - 44.14
-- În total florile sunt de 20 sau mai puțin - nu există **o reducere**
-- **44.14 + 2 pentru aranjament = 46.14 $** 
 
 [/task-description]
 [tests]

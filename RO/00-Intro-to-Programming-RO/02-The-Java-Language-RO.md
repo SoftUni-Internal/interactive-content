@@ -31,7 +31,7 @@ Java este extrem de versatil. Poți crea cu el orice: de la aplicații mobile ș
 Cererea pentru developeri Java este, în prezent, printre cele mai ridicate. Acest lucru asigură realizarea profesională odată ce ați obținut competențele necesare! Java este utilizat de cca **7,1 milioane** de programatori pe întreg mapamondul (conform SlashData). 
 
 În prezent, Java este unul dintre cele mai potrivite limbaje de programare pentru **începători**. 
-* Este ușor de învățat Java printr-un set vast de tutoriale video și exerciții în cadrul **SoftUni**. 
+* Este ușor de învățat Java printr-un set vast de tutoriale video și exerciții în cadrul **SoftUni**
 
 Acestea combină **programarea procedurală**, **cea orientată pe obiecte** și **programarea funcțională** cu o **sintaxă clară și concisă**.
 
@@ -58,7 +58,7 @@ JDK este prescurtarea pentru Java Development Toolkit - kitul de dezvoltare în 
 
 * Kit-ul de dezvoltare de soft Java (Java SDK) – este un set de instrumente pentru developeri
 * Include o **mașină virtuală** (JVM), un **compilator Java** (javac) și alte instrumente pentru developer
-* JDK este disponibil pentru descărcare gratuită de la Oracle: https://www.oracle.com/technetwork/java/javase/downloads/
+* JDK este disponibil pentru descărcare gratuită de la [Oracle](https://www.oracle.com/technetwork/java/javase/downloads/)
 
 JDK nu ar trebui să fie confundat cu mediul de execuție Java Runtime Environment (JRE)
 

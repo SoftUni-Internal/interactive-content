@@ -31,8 +31,8 @@ This process is repeated again and again **until the conditional expression retu
 Then, the control comes out of the loop and jumps to the next statement after the **while-loop** .
 
 
-# Example: Sequence of Numbers 2k+1
-**Problem:** Create a program that prints all **numbers that are smaller than or equal to `n`**. The first number will be equal to **1**. The second number will be equal to **1*2+1**, which is equal to **3**. Each next number is calculated by the formula: **previous number * 2 + 1**.
+## Example: Sequence of Numbers 2k+1
+Create a program that prints all **numbers that are smaller than or equal to `n`**. The first number will be equal to **1**. The second number will be equal to **1*2+1**, which is equal to **3**. Each next number is calculated by the formula: **previous number * 2 + 1**.
 Therefore, the first few numbers are: **1, 3, 7, 15, 31, …,** 
 
 Here is how we can solve the problem:
@@ -55,7 +55,7 @@ while (num <= n) {
 [slide hideTitle]
 # Problem with Solution: Decreasing Numbers
 
-Java-While-Loops-8-Problem-Decreasing-Numbers + 
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/EN/Java-While-Loops-8-Problem-and-solution-Decreasing-Numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Decreasing Numbers" taskId="java-basics-while-loop-decreasing-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -86,6 +86,17 @@ Create a program that:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+4
+[/input]
+[output]
+4
+3
+2
+1
+[/output]
+[/test]
 [test]
 [input]
 5
@@ -108,7 +119,7 @@ Create a program that:
 [slide hideTitle]
 # Problem with Solution: Number in Range
 
-Java-While-Loops-10-Problem-Number-in-range
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/EN/Java-While-Loops-10-11-Problem-and-solution-Number-in-range-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Number in Range" taskId="java-basics-while-loop-number-in-range" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -141,10 +152,20 @@ Create a program that:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 -10
 101
+50
+[/input]
+[output]
+50
+[/output]
+[/test]
+[test]
+[input]
+-5
+104
 60
 [/input]
 [output]

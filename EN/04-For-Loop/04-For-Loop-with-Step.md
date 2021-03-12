@@ -1,15 +1,15 @@
   [slide hideTitle]
-# For Loop with Step
+# For-Loop With a special Step
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/EN/interactive-programming-basics-with-java-for-loops-19-20-for-loop-with-step-and-demo -,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In this section we will pay attention to a particular and very important part of the `for` loop, namely the **step**.
+In this section we will look into to a particular and very important part of the **for-loop**, namely the **loop-step**.
 
-**The step** is that **part** of the `for` loop construction that tells **how** much to **increase** or **decrease** the value of its **leading** variable. 
+**The loop-step** is that **part** of the **for-loop** construction that specifies **how** to **increase** or **decrease** the value of the **llop variable**. 
 
-It is declared last in the **skeleton** of the for loop.
+It is declared last in the **declarative structure** of the for-loop.
 
-Most often, we have **a size of** `1`, and in this case, instead of writing `i += 1` or `i -= 1`, we can use for a shorter syntax the `i++` or `i--` operators.
+Most often, we have **a size of** `1`, and in this case, instead of writing `i += 1` or `i -= 1` we can use a shorter syntax: `i++` or `i--`.
 
 ```java live
 for (int i = 0; i < 10; i++) {
@@ -17,18 +17,18 @@ for (int i = 0; i < 10; i++) {
 }
 ```
 
-If we want our step to be **different than 1**, when **increasing**, we use the `i +=` + step size operator.
+If we want our step to be **different than 1**, when **increasing**, we use the `i +=` + **a step size**.
 
- With step of 2, the loop would look like this:
+ With a step of 2, the for-loop would look like this:
 ```java live
 for (int i = 0; i < 10; i += 2) {
   System.out.println(i);
 }
 ```
 
-We might want to have a **decreasing step** - `i -=` + step size. 
+We might want to have a **decreasing step** - `i -=` and a step size. 
 
-In this case we should pay attention to the end condition to **avoid** an **infinite loop**.
+In this case we should pay attention to the end condition to **avoid** creating an **infinite loop**.
 
 ```java live
 for (int i = 10; i >= 1; i--) {
@@ -40,7 +40,7 @@ for (int i = 10; i >= 1; i--) {
 [slide hideTitle]
 # Problem with Solution: Numbers Ending with 7 
 
-interactive-programming-basics-with-java-for-loops-21-problem-numbers-ending-with-seven
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/EN/interactive-programming-basics-with-java-for-loops-21-problem-and-solution-numbers-ending-with-seven-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Numbers Ending with 7" taskId="java-basics-for-loop-numbers-ending-with-7" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -56,10 +56,10 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which:
+Create a program, which:
 
 * Reads a number **n**
-* Prints all numbers from **7 to n**, **ending in 7**
+* Prints all numbers from **7 to n**, **which end in 7**
 
 ## Example
 | **Input** | **Output** 
@@ -67,8 +67,19 @@ Write a program, which:
 | 30 | 7 |
 |  | 17 |
 |  | 27 |
+
 [/task-description]
 [tests]
+[test open]
+[input]
+30
+[/input]
+[output]
+7
+17
+27
+[/output]
+[/test]
 [test]
 [input]
 40
@@ -90,7 +101,7 @@ Write a program, which:
 [slide hideTitle]
 # Problem with Solution: Exam Countdown
 
-interactive-programming-basics-with-java-for-loops-23-problem-exam-countdown
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/EN/interactive-programming-basics-with-java-for-loops-23-problem-and-solution-exam-countdown-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Exam Countdown" taskId="java-basics-for-loop-exam-countdown" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -106,11 +117,11 @@ public class Program {
 [/code-editor]
 [task-description]
 # Description
-Write a program, which:
+Create a program, which:
 
-* Reads an integer - count of **days before an exam**
-* For **each day** prints: "\{currentDay\} days before the exam"
-* At the end prints: **"The exam has come"**
+* Reads an integer - number of **days before an exam**
+* On **each iteration** it prints: "\{currentDay\} days before the exam"
+* Finally it prints: **"The exam has come"**
 
 ## Example
 | **Input** | **Output** 
@@ -119,8 +130,20 @@ Write a program, which:
 |  | 2 days before the exam |
 |  | 1 days before the exam |
 |  | The exam has come |
+
 [/task-description]
 [tests]
+[test open]
+[input]
+3
+[/input]
+[output]
+3 days before the exam
+2 days before the exam
+1 days before the exam
+The exam has come
+[/output]
+[/test]
 [test]
 [input]
 4

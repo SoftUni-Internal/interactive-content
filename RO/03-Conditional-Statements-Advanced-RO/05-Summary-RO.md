@@ -1,7 +1,7 @@
 [slide hideTitle]
 # Rezumat
 
-# În această lecție ați învățat: 
+## În această lecție ați învățat: 
 
 - Ce reprezintă instrucțiunile condiționale imbricate
 

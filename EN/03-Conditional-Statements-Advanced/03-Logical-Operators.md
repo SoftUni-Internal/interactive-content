@@ -8,10 +8,10 @@ Let us take a look at how we can create more **complex logical conditions** in p
 We can use the following logical operators:
 * **"AND"** (`&&`)
 * **"OR"** (`||`)
-* **Negation** (`!`) 
+* **Negation** (`!`)
 * **Parentheses** (`()`)
 
-# Logical "AND", "OR" and "NOT"
+## Logical "AND", "OR" and "NOT"
 This is a short example that demonstrates the usage of logical **"AND"**, logical **"OR"** and logical **"NOT"**:
 ```java
 Scanner scanner = new Scanner(System.in);
@@ -39,12 +39,12 @@ As we saw, in some tasks we have to perform **more than one check at once**.
 
 The logical **AND** operator (`&&`) helps us check more than one condition **simultaneously**. 
 
-We can use the logical **AND** to simplify our code and avoid unnecesary constructions such as nesting too many conditional statements.
+We can use the logical **AND** to simplify our code and avoid unnecessary constructions such as nesting too many conditional statements.
 
 The following table visualizes the outcome of all possible combinations when using this operator:
 
-| Operand1 | Operand2 | AND |
-|---|---|---|---|
+| **Operand One** | **Operand Two** | **AND** |
+|---|---|---|
 | true | true | true |
 | true | false | false |
 | false | true | false |
@@ -56,7 +56,7 @@ The `&&` operator accepts **two Boolean** (conditional) statements, which have a
 
 Using it instead of a couple of nested `if` blocks, makes the code **more legible**, **ordered** and **easy** to maintain. 
 
-There is a particular exectution flow when using more than one logical operator.
+There is a particular execution flow when using more than one logical operator.
 
 As we saw, the logical **AND** returns `true` **only** when both its operands are `true`.
 
@@ -80,16 +80,17 @@ The program will run in the **following** way:
 - The evaluation of `d` will be **skipped** 
 
 ## Example: Point in a Rectangle
-Write a piece of code which checks whether a point with `x`, `y` coordinates is placed **inside a rectangle** `{x1, y1}` – `{x2, y2}`. 
+Write a piece of code that checks whether a point with `x`, `y` coordinates is placed **inside a rectangle** `{x1, y1}` – `{x2, y2}`. 
 
 [image assetsSrc="03.Point-in-rectangle-01.png" /]
 
 The input data is read from the console and consists of 6 lines: 
-- the numbers: `x1`, `y1`, `x2`, `y2`, `x`, `y` (it is guaranteed that `x1 < x2` and `y1 < y2`) .
+
+- The numbers: `x1`, `y1`, `x2`, `y2`, `x`, `y` (it is guaranteed that `x1 < x2` and `y1 < y2`)
 
 ## Sample Input and Output
 |Input|Output|
-|-----|------|
+|---|---|
 |2|Inside|
 |-3||
 |12||
@@ -98,11 +99,11 @@ The input data is read from the console and consists of 6 lines:
 |-1||
 
 ## Solution
-A point is internal for a given polygon, if the following four conditions are applied at the same time:
+A point is internal for a given polygon if the following four conditions are applied at the same time:
 -  The point is placed to the right from the left side of the rectangle
 -  The point is placed to the left from the right side of the rectangle
 -  The point is placed downwards from the upper side of the rectangle
--  The point is placed upwards from the down side of the rectangle
+-  The point is placed upwards from the downside of the rectangle
 
 ```java live
 double x1 = 2;
@@ -124,7 +125,7 @@ if (x >= x1 && x <= x2 && y >= y1 && y <= y2) {
 [slide hideTitle]
 # Problem with Solution: Bonus Points
 
-interactive-programming-basics-with-java-conditional-statements-advanced-19-logical-and-problem-bonus-points
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-19-solution-and-problem-bonus-points-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Bonus Points" taskId="java-basics-logical-operators-bonus-points" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -147,13 +148,13 @@ Create a program that receives a number as input, and adds another number to it,
   * If the input number is between **7** and **9**, adds **20**
 # Example
 
-| Input | Output |
+| **Input** | **Output** |
 | --- | --- |
 | 4 | 19 |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 4
 [/input]
@@ -186,7 +187,7 @@ Create a program that receives a number as input, and adds another number to it,
 
 
 [slide hideTitle]
-## The Logical OR Operator
+## The Logical "OR" Operator
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-21-logical-or-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -194,10 +195,10 @@ The logical **OR** operator (`||`) checks if **at least one** of the set of oper
 
 Similar to `&&` (the **AND** operator), the logical **OR** accepts a few arguments of **boolean** type and returns `true` or `false`. 
 
-We will **obtain** `true` every time when at least one of the arguments has a `true` value:
+We will **obtain** `true` whenever at least one of the arguments has a `true` value:
 
-| Operand1 | Operand2 | OR |
-|---|---|---|---|
+| **Operand One** | **Operand Two** | **AND** |
+|---|---|---|
 | true | true | true |
 | true | false | true |
 | false | true | true |
@@ -218,7 +219,7 @@ We have already learned what the logical **OR** does. Let us explain how it work
 
 Just like with the logical **AND**, the program **checks the arguments** starting from the left. 
 
-In order to obtain `true` from the expression, it is necessary for **just one** argument to have a `true` value. 
+To obtain `true` from the expression, **just one** argument must have a `true` value. 
 
 A statement made up of logical **OR** checks will stop executing once it reaches an operand holding a `true` value or until it reaches the end of the expression.
 
@@ -243,7 +244,7 @@ Reaching `b` which has `true` for a value, the whole **expression** is considere
 [slide hideTitle]
 # Problem with Solution: Food or Drink
 
-interactive-programming-basics-with-java-conditional-statements-advanced-21-logical-or-problem-food-or-drink
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-21-solution-or-problem-food-or-drink--,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Food or Drink" taskId="java-basics-logical-opators-food-ot-drink" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -260,27 +261,34 @@ public class Main {
 [task-description]
 # Description
 Create a program that:
-  * Reads a single line and prints out whether the entered word represents a: "***drink***", "***food***" or "***unknown***"
-  * Possible food entries: curry, noodles, sushi, spaghetti 
-  * Drinks: tea, water, coffee
-  * Unknown: any other entry
-# Example
-## Input
-- curry
-## Output
-- food
-## Input
-- flower
-## Output
-- unknown
+* Reads a single line and prints out whether the entered word represents a: "**drink**", "**food**" or "**unknown**"
+* Possible food entries: curry, noodles, sushi, spaghetti 
+* Drinks: tea, water, coffee
+* Unknown: any other entry
+
+## Examples
+
+| **Input** | **Output** |
+| --- | --- |
+| curry | food |
+| flower | unknown |
+
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 curry
 [/input]
 [output]
 food
+[/output]
+[/test]
+[test open]
+[input]
+flower
+[/input]
+[output]
+unknown
 [/output]
 [/test]
 [test]
@@ -323,7 +331,7 @@ The logical **negation** operator (**!**) reverses the meaning of its operand.
 The `!` operator accepts a bool variable and **returns** its value reversed.
 
 ## Example: Invalid Number
-A given **number is valid** if it is between **\[100 … 200\]** or if it is **0**. We should check whether it answers to these conditions and excercise our use of the `!` operator in the process.
+A given **number is valid** if it is between \[100 … 200\] or if it is **0**. We should check whether it answers these conditions and exercise our use of the `!` operator in the process.
 
 For example, `75` and `220` are **invalid**, but `150` is **valid**.
 
@@ -342,11 +350,13 @@ if (!inRange) {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-23-logical-not-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Some of the logical operators have higher priority than others. For example, the `&&` operator has higher priority than `||`. 
+Some of the logical operators have higher priority than others. For example, the `&&` operator has a higher priority than `||`. 
 
-We can alter the execution prioritisation using parentheses just like in mathematical expressions.
+We can alter the execution prioritization using parentheses just like in mathematical expressions.
 
-Using parentheses can improve code readability. It is generally considered a good practice.
+Using parentheses can improve code readability. 
+
+It is generally considered a good practice.
 
 Here is an example of checking whether a variable belongs to certain ranges, utilizing parentheses:
 ```java 

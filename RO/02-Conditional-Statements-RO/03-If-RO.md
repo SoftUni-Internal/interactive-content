@@ -12,7 +12,7 @@ if (condition) {
 }
 ```
 
-# Exemplu: vreme
+## Exemplu: Vreme
 Aici, dacă starea vremii ploioase la evaluează in `true`, atunci corpul instrucțiunii este executat.
 ```java
 Scanner scanner = new Scanner(System.in);
@@ -43,17 +43,18 @@ public class Program {
 Scrieți un program pentru a verifica dacă vremea e rece:
 
   * Citește o temperatură în Celsius (un număr real reprezentat în virgulă mobilă cu simplă precizie (float))
-  * Imprimă `Freezing weather!`, dacă temperatura este **egală** sau **mai mică de 0**
-  # Exemplu
+  * Imprimă "**Freezing weather!**", dacă temperatura este **egală** sau **mai mică de 0**
+  
+## Exemplu
 
-| **Input** | **Output** | 
+|**Intrare**|**Ieșire** |
 | ---- | ---- |
 | -2 | Freezing weather!|
 | 4 | (no output)
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 -2
 [/input]
@@ -61,7 +62,7 @@ Scrieți un program pentru a verifica dacă vremea e rece:
 Freezing weather!
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 4
 [/input]
@@ -71,6 +72,14 @@ Freezing weather!
 [test]
 [input]
 -5
+[/input]
+[output]
+Freezing weather!
+[/output]
+[/test]
+[test]
+[input]
+-10
 [/input]
 [output]
 Freezing weather!

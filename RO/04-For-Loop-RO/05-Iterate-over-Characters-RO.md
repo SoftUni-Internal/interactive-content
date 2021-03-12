@@ -53,12 +53,12 @@ Scrieți un program care:
 ## Exemplu
 |**Intrare**|**Ieșire** |
 | --- | --- |
-| a | a |
-| c | b |
-|  | c |
+| a | a b c|
+| c | |
+
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 a
 c

@@ -4,11 +4,11 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-18-simple-conditions-if-else-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The `if` construction may also contain an `else` statement providing an alternatve action in case the initial Boolean expression returns a negative result (`false`). 
+The `if` construction may also contain an `else` statement providing an alternative action in case the initial Boolean expression returns a negative result ("**false**"). 
 
 Built this way, **the conditional statement** is called `if-else` and its behavior is as follows: 
-* If the result of the condition is positive (`true`) – commands placed within it will be executed
-* If it is negative (`false`) – commands placed withing the body of the else statement will be executed 
+* If the result of the condition is positive ("**true**") - commands placed within it will be executed
+* If it is negative ("**false**") - commands placed within the body of the else statement will be executed 
 
 [image assetsSrc="02-usecase-if-else-statement.png" /]
 
@@ -21,15 +21,15 @@ if (condition) {
 }
 ```
 
-If the condition is `false`, the else-statement runs.
+If the condition is "**false**", the else-statement runs.
 
-Because a condition cannot be simultaneously `true` and `false`only one of the if-else cases can be executed.
+Because a condition cannot be simultaneously "**true**" and "**false**" only one of the if-else cases can be executed.
 
-After executing the body of the `if` or `else`-statements, control is transferred to the next statement in our code if there are any.
+After executing the body of the `if` or `else`- statements, control is transferred to the next statement in our code if there are any.
 
 In an `if` mechanics that does not include an else-statement, if the condition is true its body will be executed, if not the program will continue execution ignoring the code placed in its body.
 
-Both the bodies of if- and else-statements can consist of a single or multiple lines of code that are enclosed in braces `{ }`. 
+Both the bodies of if - and else-statements can consist of a single or multiple lines of code that are enclosed in braces `{ }`. 
 
 If the body of an if-statement holds just one line of code, the braces are optional but recommended.
 
@@ -64,7 +64,7 @@ if (weather.equals("rainy")) {
 
 When we have **only one command** in the body of the **if construction**, we can **skip the curly brackets**
 
-When we want to execute a **block of code** (group of commands), the curly brackets are **required**. 
+When we want to execute a **block of code** (a group of commands), the curly brackets are **required**. 
 
 In case we omit them, **only the first line** after the **if clause** will be executed.
 
@@ -94,7 +94,7 @@ if (color.equals("red")) {
 [slide hideTitle]
 # Problem with Solution: Even or Odd
 
-interactive-programming-basics-with-java-conditional-statements-21-problem-even-or-odd
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-21-problem-and-solution-even-or-odd-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Even or Odd" taskId="pb-java-Conditional-Statements-even-or-odd" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -114,7 +114,7 @@ Create a program, which checks if a number is **even** or **odd**
 
   * If it is even, print "**even**"
   * If it is odd, print "**odd**"
-# Example
+## Example
 
 | **Input** | **Output** | 
 | ---- | ---- |
@@ -123,7 +123,7 @@ Create a program, which checks if a number is **even** or **odd**
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 4
 [/input]
@@ -131,7 +131,7 @@ Create a program, which checks if a number is **even** or **odd**
 even
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 7
 [/input]
@@ -158,7 +158,7 @@ even
 [slide hideTitle]
 # Problem with Solution: Greater Numbers
 
-interactive-programming-basics-with-java-conditional-statements-23-problem-greater-numbers
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-23-problem-and-solution-greater-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Greater Number" taskId="pb-java-Conditional-Statements-greater-number"  executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -174,7 +174,7 @@ public class Program {
 [/code-editor]
 [task-description]
 # Description
-Crete a program, which finds the greater of two numbers:
+Create a program, which finds the greater of two numbers:
 
   * Read two **integers**
   * Find the greater number
@@ -188,7 +188,7 @@ Crete a program, which finds the greater of two numbers:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 4
 8

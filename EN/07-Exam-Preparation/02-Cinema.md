@@ -17,7 +17,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-For the upcoming premiere of three popular productions a local cinema has hired you to write software that calculates the price, which the clients should to pay, depending on the movie and the offer they have choose.
+For the upcoming premiere of three popular productions, a local cinema has hired you to write software that calculates the price, which the clients should pay, depending on the movie and the offer they have chosen.
 
 |   | John Wick | Star Wars | Jumanji |
 |---|---|---|---|
@@ -25,21 +25,21 @@ For the upcoming premiere of three popular productions a local cinema has hired 
 | Popcorn | 15$ | 25$ | 11$ |
 | Menu | 19$ | 30$ | 14$ |
 
-Create a program that calculates the total price of the tickets.
+Create a program that calculates the **total price** of the tickets.
 
 Discounts should be applied in the following cases:
-- If the chosen movie is "Star Wars" and at least four tickets are bought, there is 30% family discount.
-- If the chosen movie is "Jumanji" and the tickets bought are exactly two, there is 15% discount for two.
+- If the chosen movie is **"Star Wars"** and at least four tickets are bought, there is a **30%** family discount.
+- If the chosen movie is **"Jumanji"** and the tickets bought are **exactly two**, there is a **15%** discount.
 
 ## Input
-You receive 3 lines from the console:
-- First line - movie - string: "John Wick", "Star Wars" or "Jumanji"
-- Second line - offer - string:"Drink", "Popcorn" or "Menu"
-- Third line - number of tickets – whole number in the range [1… 30]
+You will receive 3 lines:
+- Name of the movie - string: **"John Wick"**, **"Star Wars"** or **"Jumanji"**
+- Type of the offer - string: **"Drink"**, **"Popcorn"** or **"Menu"**
+- Number of the tickets – integer number in the range [1… 30]
 
 ## Output
-Print out on a single line: "Your bill is \{total price\}$"
- * The price must be formatted to two decimal places.
+Print out on a single line: **"Your bill is \{total price\}$"**
+ * The price must be formatted to the second digit after the decimal point
 
 ## Example
 | **Input** | **Output** |
@@ -51,7 +51,7 @@ Print out on a single line: "Your bill is \{total price\}$"
 [hints]
 
 [hint]
-Depending on what movie and drink have been chosen, determine the ticket price.
+Depending on the movie and the offer that you have chosen, determine the ticket price.
 [/hint]
 
 [hint]

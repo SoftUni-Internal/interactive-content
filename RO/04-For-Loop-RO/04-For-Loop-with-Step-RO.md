@@ -59,8 +59,19 @@ Scrieți un program care:
 | 30 | 7 |
 |  | 17 |
 |  | 27 |
+
 [/task-description]
 [tests]
+[test open]
+[input]
+30
+[/input]
+[output]
+7
+17
+27
+[/output]
+[/test]
 [test]
 [input]
 40
@@ -110,6 +121,17 @@ Scrieți un program care:
 |  | The exam has come |
 [/task-description]
 [tests]
+[test open]
+[input]
+3
+[/input]
+[output]
+3 days before the exam
+2 days before the exam
+1 days before the exam
+The exam has come
+[/output]
+[/test]
 [test]
 [input]
 4

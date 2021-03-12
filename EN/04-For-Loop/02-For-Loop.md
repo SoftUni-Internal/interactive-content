@@ -3,22 +3,22 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/EN/interactive-programming-basics-with-java-for-loops-14-for-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In programming it is often required to perform a block of commands multiple times. 
+In programming we often need to repeat a block of commands multiple times. 
 
-In order to do that, the so-called **loops** are used. 
+In order to do that constructions called **loops** are used. 
 
-Let's examine an example of a `for` loop that passes sequentially through the numbers from 1 to 10 and prints them:
+Let us examine an example of a **for-loop** that passes through the numbers from 1 to 10 and prints them:
 ```java live
 for (int i = 1; i <= 10; i += 1) {
   System.out.println(i);
 }
 ```
 
-The block of code can be explained with this use case diagram:
+We can get a beeter understanding of this algorithm from this use-case diagram:
 
 [image assetsSrc="04-for-loop-use-case.png" /]
 
-The loop starts with the `for` operator and passes through all values for a particular variable in a given range, for example the numbers from 1 to 10 (included), and for each value it performs a series of commands.
+The loop is declared using the `for` operator and passes through all values for a particular variable in a given range. For example the numbers from 1 to 10 (included), and for each value it performs a series of commands.
 [/slide]
 
 [slide hideTitle]
@@ -26,28 +26,28 @@ The loop starts with the `for` operator and passes through all values for a part
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/EN/interactive-programming-basics-with-java-for-loops-12-13-for-loop-example-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Upon declaring the loop, you can specify a **start value** and an **end value**. 
+Upon declaring the loop, we should specify a **start value** and an **end value**. 
 
 The **body** of the loop is usually enclosed in curly brackets `{ }` and represents a block of **one or multiple commands**.
 
 The code block below shows the structure of a `for` loop:
 ```
 for (initialization; condition; update) {
-  loop's body;
+  loop body;
 }
 ```
 
 It consists of:
 * An **initialization part** for the counter (in the pattern `int i = 0`)
 * A **boolean** condition (`i < 10`)
-* An expression for **updating** the counter (``i += 1``)
+* An expression, **updating** the counter (``i += 1``)
 * Body of the loop
 
-In most cases a `for` loop is run between `1` and `n` times (for example from 1 to 10). 
+In most cases a **for-loop** is run between `1` and `n` times (for example from 1 to 10). 
 
-The purpose of the loop is to pass sequentially through the numbers 1, 2, 3, …, n and for each of them to perform a particular action. 
+The purpose of the loop is to pass sequentially through the numbers 1, 2, 3, …, n and execute a block of code on each iteration. 
 
-In the first example, the `i` variable accepts values from 1 to 10 and the **current** value is printed in the body of the loop. 
+In the first example, the `i` variable accepts the values from 1 to 10 and the **current** value is printed in the body of the loop. 
 
 The loop repeats 10 times and each of these repetitions is called an **"iteration"**.
 [/slide]
@@ -56,7 +56,7 @@ The loop repeats 10 times and each of these repetitions is called an **"iteratio
 [slide hideTitle]
 # Problem with Solution: Print Sum of N Numbers
 
-interactive-programming-basics-with-java-for-loops-15-problem-print-sum-of-n-numbers
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/EN/interactive-programming-basics-with-java-for-loops-15-problem-and-solution-print-sum-of-n-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Print Sum of N Numbers" taskId="java-basics-for-loop-print-sum-of-n-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -72,12 +72,12 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which:
+Create a program, which:
 
-* Reads number n from the console
-* **Prints** all numbers from **1** to **n**
+* Reads a number **n** from the console
+* **Prints out** all numbers from **1** to **n**
 * **Sums** all numbers from **1** to **n**
-* **Prints** the sum on the console at the end
+* **Prints out** the final sum to the console
 
 ## Example
 | **Input** | **Output** 
@@ -90,7 +90,7 @@ Write a program, which:
 |  | 15 |
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 5
 [/input]
