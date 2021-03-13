@@ -96,12 +96,8 @@ Create a class `Jar` that can store anything.
 
 It should have two public methods:
 
-- `void add(element)`
-- `element remove()`
-
-`add()` should add the element on top of any other elements.
-
-`remove()` should get the topmost element.
+- `void add(element)` - adds the element on top of any other elements
+- `element remove()` - gets the topmost element and removes it
 
 # Example
 
