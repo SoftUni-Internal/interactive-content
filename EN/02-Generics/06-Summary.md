@@ -3,7 +3,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/EN/interactive-java-advanced-generics-27-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In this lesson you learned:
+## In this lesson, you learned:
 
 - Generics add type safety
 
@@ -12,7 +12,7 @@ List<String> strings = new ArrayList<String>();
 
 strings.add("1");
 strings.add("2");
-strings.add(3); // Compile time error
+strings.add(3); // Compile-time error
 ```
 
 - Generic code is more reusable
@@ -32,7 +32,7 @@ interface List<T> {
 }
 ```
 
-- Runtime information about type parameters is lost due to erasure
+- Runtime information about type parameters is lost due to type erasure
 
 
 ## In the next lesson, you will learn:
