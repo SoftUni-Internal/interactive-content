@@ -22,7 +22,7 @@ We can create an object of `Class` by using one of the following options:
 Class test = Dog.class;
 
 // We can use the test object to achieve reflection as this object
-// will have all the needed information about the class Dog.
+// will have all the needed information about the Dog class.
 ```
 
 - `forName()` method
@@ -52,8 +52,10 @@ String nameClass = myDogClass.getName();
 System.out.println(nameClass);
 ```
 
+**Output**:
+
 ```
-Output: com.company.Dog
+com.company.Dog
 ```
 
 If we want to obtain the class name without the package name, we can use the `getSimpleName()` method:
@@ -64,8 +66,10 @@ String nameClass = myDogClass.getSimpleName();
 System.out.println(nameClass);
 ```
 
+The **output** will be:
+
 ```
-Output: Dog
+Dog
 ```
 
 [/slide]
@@ -128,7 +132,7 @@ Class[] interfaces = aClass.getInterfaces();
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/06.Java-OOP-Advanced-Reflection-and-Annotations-Lab.zip) **for this task.**
 
-Import "**Reflection.java**" to your "**src**" folder in your project. 
+Import "**Reflection.java**" to the "**src**" folder in your project. 
 
 Try to use **reflection** and print some information about this class. 
 
@@ -136,7 +140,7 @@ Print everything on new line:
 - **This class type**
 - **Super class type**
 - **All interfaces** that are implemented by this class
-- **Instantiate object** using reflection and print it too
+- **Instantiate an object** using reflection and print it too
 
 **Do not change anything in the Reflection class!**
 

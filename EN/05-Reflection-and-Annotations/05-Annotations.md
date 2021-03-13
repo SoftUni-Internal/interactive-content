@@ -1,12 +1,13 @@
+# Annotations
+
 [slide hideTitle]
 
-# Annotations
+# What are Annotations
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-29-30-annotation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-What is Java Annotation?
 
-Annotations are a kind of **metadata** that you can insert into your Java code.
+Annotations are a type of **metadata** that you can insert into your Java code.
 
 They are Java types, preceded by an "**@**" symbol and are used to **describe** parts of your code.
 
@@ -76,7 +77,7 @@ Here are some other things to remember while creating custom annotations:
 
 - Our method declarations must not throw any clause or have any parameters
 
-This is an example of a custom annotation:
+This is an **example** of a custom annotation:
 
 ``` java
 @interface MyAnnotation {
@@ -97,6 +98,7 @@ To use our custom created annotation we can use code like this:
     age=25,
     newNames={"Peter", "Anderson"}
 )
+
 public class MyClass {
     // ...
 }
@@ -112,6 +114,8 @@ public class MyClass {
 
 Another thing we can do is to specify where the annotation is applicable.
 
+## Target
+
 We can achieve this using `@Target`:
 
 ``` java
@@ -120,15 +124,17 @@ public @interface FieldAnnotation {
 }
 ```
 
-Available Element Types are:
+The available `ElementType`s are:
 
-- CONSTRUCTOR
-- FIELD
-- LOCAL_VARIABLE
-- METHOD
-- PACKAGE
-- PARAMETER
-- TYPE
+- **CONSTRUCTOR**
+- **FIELD**
+- **LOCAL_VARIABLE**
+- **METHOD**
+- **PACKAGE**
+- **PARAMETER**
+- **TYPE**
+
+## Retention
 
 We use `@Retention` to specify if our custom annotation should be available during runtime.
 
@@ -139,13 +145,11 @@ public @interface RuntimeAnnotation {
 }
 ```
 
-Other retention policies:
+Other **retention policies**:
 
-- SOURCE
-- CLASS
-- RUNTIME
-
-
+- **SOURCE**
+- **CLASS**
+- **RUNTIME**
 
 
 [/slide]
