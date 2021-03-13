@@ -5,10 +5,10 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/EN/interactive-java-advanced-generics-1-2-Introduction-Table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In this lesson you will learn:
+## In this lesson, you will learn:
 
 **1. The Problem before Java 5.0**
-- How type safety makes our code less prone to bugs
+- How **type safety** makes our code less prone to bugs
 
 **2. Generics Syntax**
 - How to use generics
@@ -20,6 +20,6 @@
 - Using generic methods
 
 **5. Type Erasure, Type Parameter Bounds**
-- How the Java compiler implements generic behavior
+- How the generics behavior is implemented in Java
 
 [/slide]
