@@ -1,5 +1,8 @@
 [slide hideTitle]
 # Tipuri de date
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-8-10-data-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 În Java putem folosi tipurile de date pentru a defini variabilele după cum urmează:
 
   * **int** - un număr întreg: 1, 2, 3 ...

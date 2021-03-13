@@ -1,5 +1,8 @@
 [slide hideTitle]
 # Expressii
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-28-29-expressions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Expresiile** sunt secvențe de operatori, literali și variabile care sunt evaluate la o valoare.
    * Constă din cel puțin un **operand**
    * Poate avea unu sau mai mulți **operatori**

@@ -23,6 +23,8 @@ Aplicațiile citesc textul de pe linie de comanda și imprimă textul pe consol�
 [slide hideTitle]
 # Tipărirea și formatarea textului și a numerelor
 
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-16-formatting-output-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## Utilizarea `System.out.print(…)` and `System.out.println(…)`
 Lucrul cu aceste metode este ușor, deoarece pot imprima toate tipurile de bază (șiruri, tipuri numerice și primitive).
 
@@ -76,12 +78,15 @@ Substituentii `%d` se înlocuiesc cu expresiile date după text.
 
 # Exemplu:Formatarea textelor și numerelor
 
-interactive-programming-basics-with-java-expressions-and-statements-16-formatting-output-demo
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-16-formatting-output-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
 
 [slide hideTitle]
 # Citirea datelor introduse de utilizator
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-15-reading-user-input-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Pentru a citi un **text** (șir) de pe consolă, din nou, trebuie să **declarăm o nouă variabilă** și să folosim comanda standard **pentru citirea unui text de pe consolă**:
 
 ```java 
@@ -116,15 +121,15 @@ I am from Bucharest!
 
 # Exemplu: Citirea intrării utilizatorului
 
-interactive-programming-basics-with-java-expressions-and-statements-17-reading-user-input + 
-
-interactive-programming-basics-with-java-expressions-and-statements-17-reading-user-input-demo
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-17-reading-user-input-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
 
 
 [slide hideTitle]
 # Citirea numerelor întregi
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-18-reading-integers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a citi un **număr întreg** (nu unul în virgulă mobilă) de pe consolă, trebuie să **declarăm o variabilă**, să declarăm **tipul de număr** și să folosim comanda standard pentru **citirea unei linii de text** de pe consola sistemului `scanner.nextLine ()` și după aceea **să transformăm linia de text într-un număr întreg** folosind `Integer.parseInt (text)`:
 
@@ -147,6 +152,8 @@ Mai târziu, vom afla cum putem găsi aceste tipuri de erori și putem determina
 [slide hideTitle]
 # Exemplu: Calcularea unei suprafețe pătrate
 
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-18-reading-integers-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Acest cod demonstrează modul în care putem calcula suprafața pătrată după lungimea dată a laturii:
 
 ```java
@@ -166,6 +173,8 @@ Mai jos vom vedea cum ar funcționa programul dacă am avea un pătrat cu o lung
 
 # Citirea numerelor reale reprezentate în virgulă mobilă cu simplă precizie (float)
 
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-19-reading-floating-point-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Pentru a citi un **număr real reprezentat în virgulă mobilă cu simplă precizie (float)** (număr fracțional, neîntreg) de pe consolă, utilizați următoarea comandă:
 ```java
 Scanner scanner = new Scanner(System.in);
@@ -173,7 +182,13 @@ double num = Double.parseDouble(scanner.nextLine());
 ```
 Codul Java de mai sus citește mai întâi o **linie de text** din consolă, apoi o convertește (parsează) într-un **număr real reprezentat în virgulă mobilă cu simplă precizie (float)**.
 
-## Exemplu: Conversia inch în centimetri
+[/slide]
+
+[slide hideTitle]
+
+# Exemplu: Conversia inch în centimetri
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-19-reading-floating-point-numbers-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Să scriem un program care citește un număr real reprezentat în virgulă mobilă cu simplă precizie (float) în inci și îl convertește în centimetri:
 
@@ -197,6 +212,8 @@ Vom învăța cum să gestionăm excepțiile în cursurile ulterioare.
 
 [slide hideTitle]
 # Problemă cu soluție: Greeting
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-20-21-problem-and-solution-greeting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Greeting" taskId="pb-java-expressions-greeting" executionStrategy="java-code" requiresInput]
 [code-editor language="java"]

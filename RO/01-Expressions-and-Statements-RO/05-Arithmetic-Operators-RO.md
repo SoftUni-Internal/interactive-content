@@ -1,6 +1,8 @@
 [slide hideTitle]
 # Operații aritmetice
 
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-23-27-arithmetic-operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Să examinăm **operațiile aritmetice de bază** din programare.
 
 Putem aduna, scădea, înmulți și împărți numerele folosind operatorii `+`, `-`,` * `și` / `.
@@ -119,6 +121,8 @@ System.out.println(4 % 2);
 
 [slide hideTitle]
 # Concatenarea textului și a numerelor
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-22-concatenating-text-and-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 în afară de adunarea numerelor, operatorul `+` este folosit și pentru **unirea bucăților de text** (concatenarea a două șiruri una după alta).
 
