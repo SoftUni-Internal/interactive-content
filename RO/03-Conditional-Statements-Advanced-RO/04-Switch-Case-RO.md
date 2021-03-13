@@ -83,6 +83,9 @@ switch (choice) {
 
 [slide hideTitle]
 # Etichete multiple
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-27-29-multiple-labels-in-switch-case-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 În **Java** avem posibilitatea de a utiliza etichete **multiple** de caz în construcția "**switch-case**", atunci când trebuie să execute **același cod**.
 
 În acest fel, când **programul nostru** găsește o **potrivire**, acesta va executa **următorul** cod, deoarece **după** eticheta respectivă `case` **nu există cod** de executat și un operator `break`. 
