@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Valoare vs. Tipuri de Referință
 
-[image assetsSrc="Value-vs-Reference-Types(1).gif" /]
+[image assetsSrc="Value-vs-Reference-Types(1).png" /]
 
 ## Tipuri de valori
 
