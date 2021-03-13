@@ -1,7 +1,7 @@
 [slide hideTitle]
 
 # Depanare
-[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-32-34-debugging-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-32-34-debugging-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 Până acum, am scris o mulțime de coduri și au aparut câteva greșeli în ele, corect? Acum vom arăta un instrument care ne poate ajuta să găsim greșelile mai ușor: **depanatorul**.
@@ -20,7 +20,7 @@ Putem urmări **linie cu linie** ce se întâmplă în programul nostru, ce cale
 [slide hideTitle]
 
 # Depanare in IntelliJ IDEA 
-[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-32-34-debugging-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-32-34-debugging-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Apăsând butonul `[Shift + F9]`, rulăm programul în **modul de depanare**. 
 

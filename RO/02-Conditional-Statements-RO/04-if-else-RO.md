@@ -1,6 +1,9 @@
 [slide hideTitle]
 
 # Condițile If-Else
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-18-simple-conditions-if-else-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Construcția `if` poate conține, de asemenea, o clauză `else` pentru a da o acțiune specifică în cazul în care expresia booleană (care este setată la începutul `if (expresia bool)`) returnează un rezultat negativ (`false`).
 
 Construită astfel, **instrucțiunea  condițională** se numește `if-else` și comportamentul său este după cum urmează:
@@ -38,6 +41,7 @@ Instrucțiunea  sau instrucțiunile din instrucțiunea  then și instrucțiunea 
 [slide hideTitle]
 # Exemplu: vreme
 
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-18-simple-conditions-if-else-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Aceasta este o versiune extinsă a exemplului din diapozitivul anterior.
 
@@ -56,6 +60,8 @@ if (weather.equals("rainy")) {
 
 [slide hideTitle]
 # Bloc de cod
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-19-20-block-of-code-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Când avem **o singură comandă** în corpul construcției **if**, putem **sări peste parantezele buclate**, indicând corpul operatorului condiționat.
 
@@ -88,6 +94,9 @@ if (color.equals("red")) {
 
 [slide hideTitle]
 # Problemă cu soluție: Even or Odd
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-21-problem-and-solution-even-or-odd-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Even or Odd" taskId="pb-java-Conditional-Statements-even-or-odd"  executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -149,6 +158,9 @@ even
 
 [slide hideTitle]
 # Problemă cu soluție: Greater Number
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-23-problem-and-solution-greater-numbers-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Greater Number" taskId="pb-java-Conditional-Statements-greater-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java

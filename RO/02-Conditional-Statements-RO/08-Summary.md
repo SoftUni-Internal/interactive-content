@@ -1,6 +1,8 @@
 [slide hideTitle]
 # Rezumat
 
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-50-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## În această lecție am învățat: 
 
 - Operatorii de comparație (**==** , **!=** , **<** , **>** , **<=** , **>=** )

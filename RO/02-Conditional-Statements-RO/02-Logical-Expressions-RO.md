@@ -2,6 +2,9 @@
 
 [slide hideTitle]
 # Operatori de comparație
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-10-13-logical-expressions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 În programare, putem compara valorile folosind următorii operatori:
 
 |**Operatori**|**Desemnare**|
@@ -18,6 +21,9 @@ Atunci când se compara, rezultatul este valoare Boolean `true` sau `false`, în
 
 [slide hideTitle]
 # Exemple de compararea numerelor
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-10-13-logical-expressions-demo-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Exemple de astfel de expresii sunt următoarele:
 ```java live
 int a = 5;
@@ -46,6 +52,9 @@ Dacă valoarea expresiei din partea stângă este mai mare sau egală cu valoare
 [slide hideTitle]
 
 # Comparație de șiruri
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-10-13-logical-expressions-demo-2-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Compararea textului folosind metoda `equals ()`.
 
 Doi operanzi de șir sunt egali atunci când ambii sunt `null` sau ambele instanțe de șir sunt de aceeași lungime și au caractere identice în fiecare poziție de caracter:

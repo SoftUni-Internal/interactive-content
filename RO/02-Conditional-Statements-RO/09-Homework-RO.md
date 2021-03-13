@@ -69,7 +69,10 @@ Wrong password!
 [/slide]
 
 [slide hideTitle]
-# Problemă: Boiling Water
+# Problemă cu soluție: Boiling Water
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-38-problem-and-solution-boiling-water-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Boiling Water" taskId="pb-java-Conditional-Statements-Boiling-water" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
@@ -209,7 +212,10 @@ Fast
 [/slide]
 
 [slide hideTitle]
-# Problemă: Area of Figures
+# Problemă cu soluție: Area of Figures
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-42-problem-and-solution-area-of-figures-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Area of Figures" taskId="pb-java-Conditional-Statements-Area-of-Figures" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
@@ -426,7 +432,10 @@ Invalid ticket type!
 [/slide]
 
 [slide hideTitle]
-# Problemă: Coffee Shop
+# Problemă cu soluție: Coffee Shop
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-46-problem-and-solution-coffee-shop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Coffee Shop" taskId="pb-java-Conditional-Statements-Coffee-Shop" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
@@ -1192,6 +1201,9 @@ unknown
 
 [slide hideTitle]
 # Problemă cu soluție: Pets 
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-47-problem-and-solution-pets-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Pets" taskId="pb-java-Conditional-Statements-pets" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

@@ -1,6 +1,9 @@
 [slide hideTitle]
 
 # Secvența condițiilor If-Else 
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-25-27-series-of-conditions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Uneori trebuie să facem o secvența de condiții înainte de a decide ce acțiuni va executa programul nostru.
 
 În astfel de cazuri, putem aplica construcția `if-else if ... -else` **in serie**.
@@ -23,6 +26,8 @@ else {
 
 [slide hideTitle]
 # Exemplu: cifre în engleză
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-25-27-series-of-conditions-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Imprimați cifrele în intervalul de la 1 la 9 (cifrele sunt citite de pe consolă) în limba engleză.
 
