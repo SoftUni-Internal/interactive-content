@@ -181,9 +181,9 @@ Here is how the **craft** method works:
 
 ## Behavior
 
-- `void add(Dwarf dwarf)`
-  * **adds** a dwarf to the collection
-  * every dwarf is **unique** and it is guaranteed that there will be no repeating dwarf names
+- `void add(Dwarf dwarf)`
+  - **adds** a dwarf to the collection
+  - every dwarf is **unique** and it is guaranteed that there will be no repeating dwarf names
 
 - `boolean remove(Dwarf dwarf)`
   * **removes** a dwarf from the collection
