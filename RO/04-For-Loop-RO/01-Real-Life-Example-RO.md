@@ -7,7 +7,7 @@
 
 Să ne imaginăm că trebuie să încărcați mașina de spălat vase cu toate vasele din chiuvetă.
 
-[image assetsSrc = "04.For-Loop-Real-Life-Example-Dishes.png" /]
+[image assetsSrc="04.For-Loop-Real-Life-Example-Dishes.png" /]
 
 Știți **exact câte** vase veți muta din chiuvetă în mașina de spălat vase înainte de a începe această sarcină, deoarece există un anumit număr de vase murdare în chiuvetă.
 
