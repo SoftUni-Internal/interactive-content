@@ -20,6 +20,6 @@
 - Using generic methods
 
 **5. Type Erasure, Type Parameter Bounds**
-- The implementation of Generics in Java
+- How Generics are implemented in Java
 
 [/slide]
