@@ -19,7 +19,7 @@ function hello() {
 
 Create a JavaScript program, which:
 
-Prints "**Hello JavaScript**" on the console.
+Prints "**Hello JavaScript**" to the console.
 
 [/task-description]
 [code-io /]
