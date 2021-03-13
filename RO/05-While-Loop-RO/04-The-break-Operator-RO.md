@@ -1,5 +1,8 @@
 [slide hideTitle]
 # Operatorul break
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/RO/Java-While-Loops-18-19-20-Break-operator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Operatorul `break` oprește executarea unei bucle în momentul în care este apelată și continuă de la prima linie de după finalul buclei.
 
 Asta înseamnă că iterația curentă a buclei nu va fi completată conform, iar restul codului din corpul buclei nu va fi executat. 

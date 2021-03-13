@@ -1,5 +1,8 @@
 [slide hideTitle]
 # Bucla While
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/RO/Java-While-Loops-5-6-7-While-Loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 In programare bucla numită `while` se folosește atunci când vrem să **repetăm** executarea unei anumite logici în timp ce condiția este în desfășurare.
 
 Prin **"condiție"**, înțelegem fiecare **expresie** care returnează`true` sau `false`. 
@@ -49,6 +52,9 @@ while (num <= n) {
 
 [slide hideTitle]
 # Problemă cu soluție: Descreșterea Numerelor
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/RO/Java-While-Loops-8-Problem-and-solution-Decreasing-Numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Decreasing Numbers" taskId="java-basics-while-loop-decreasing-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -111,6 +117,9 @@ Scrieți un program care:
 
 [slide hideTitle]
 # Problemă cu soluție: Number in Range
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/RO/Java-While-Loops-10-11-Problem-and-solution-Number-in-range-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Number in Range" taskId="java-basics-while-loop-number-in-range" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java

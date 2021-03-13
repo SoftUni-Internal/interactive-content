@@ -1,6 +1,8 @@
 [slide hideTitle]
 # Bucla While sau bucla For?
 
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/RO/Java-While-Loops-12-13-While-or-for-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Buclele `while` și `for` **repetă** o secvență de **code**.
 
 Dar există diverse situații în care scrierea codului necesită fie prima buclă, fie celelalte. 
@@ -44,7 +46,10 @@ System.out.println(number);
 [/slide]
 
 [slide hideTitle]
-# Number in Range: Odd number
+# Problemă cu soluție: Odd number
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/RO/Java-While-Loops-14-15-Problem-and-Solution-Odd-Number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Odd Number" taskId="java-basics-while-loop-odd-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -107,6 +112,9 @@ Scrieți un program care:
 
 [slide hideTitle]
 # Problemă cu soluție: Number Processor
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/RO/Java-While-Loops-16-17-Problem-and-Solution-Number-Processor-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Number Processor" taskId="java-basics-while-loop-number-processor" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java

@@ -1,7 +1,10 @@
 # Teme pentru acasă
 
 [slide hideTitle]
-# Problemă: Sum Digits
+# Problemă cu soluție: Sum Digits
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/RO/Java-While-Loops-Problem-and-Solution-Sum-Digits-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Sum Digits" taskId="pb-java-while-loop-sum-digits" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -151,7 +154,10 @@ Book found! Attempts: 12
 [/slide]
 
 [slide hideTitle]
-# Problemă: Find Min and Max
+# Problemă cu soluție: Find Min and Max
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/RO/Java-While-Loops-Problem-and-Solution-Find-Min-and-Max-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Find Min and Max" taskId="pb-java-while-loop-find-min-and-max" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -340,7 +346,10 @@ Scrieți un program care:
 [/slide]
 
 [slide hideTitle]
-# Problemă: Special Bonus
+# Problemă cu soluție: Special Bonus
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/RO/Java-While-Loops-Problem-and-Solution-Special-Bonus-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Special Bonus" taskId="pb-java-while-loop-special-bonus" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
