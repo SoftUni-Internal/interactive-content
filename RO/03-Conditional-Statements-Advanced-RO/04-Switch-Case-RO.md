@@ -2,6 +2,9 @@
 
 [slide hideTitle]
 # Instrucțiunea de comutare a clauzelor switch-case
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-24-25-switch-case-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Instrucțiunea de comutare a clauzelor funcționează ca o secvență de blocuri **if-else**.
 
 Ori de câte ori munca programului nostru depinde de valoarea unei variabile, în loc să facem condiții consecutive cu blocuri `if-else`, putem **folosi** instrucțiunea condițională `switch`.
@@ -56,6 +59,9 @@ switch (selector) {
 
 [slide hideTitle]
 # Exemplu: "Yes" or "No"
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-26-switch-case-example-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Să scriem un program care tipărește **"Yes" or "No"** (în limba engleză) în funcție de **numărul dat** (Y, N) sau **"Invalid response"** dacă este dată o intrare nevalidă.
 
 ```java

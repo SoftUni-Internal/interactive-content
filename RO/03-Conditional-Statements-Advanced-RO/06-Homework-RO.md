@@ -79,7 +79,10 @@ vegetable
 [/slide]
 
 [slide hideTitle]
-# Problemă: Day of Week
+# Problemă cu soluție: Day of Week
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-30-33-problem-solving-day-of-week-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Day of Week" taskId="pb-java-Conditional-Statements-A-day-of-week" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -229,7 +232,10 @@ Consonant
 [/slide]
 
 [slide hideTitle]
-# Problemă: Product of 3 Numbers
+# Problemă cu soluție: Product of 3 Numbers
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-37-problem-product-of-three-numbers-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Product of 3 Numbers" taskId="pb-java-Conditional-Statements-A-product-of-3-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -416,7 +422,10 @@ Descending
 [/slide]
 
 [slide hideTitle]
-# Problemă: Vacation Expenses
+# Problemă cu soluție: Vacation Expenses
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-41-problem-vacation-expenses-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Vacation Expenses" taskId="pb-java-Conditional-Statements-A-Vacation-Expenses" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -2365,7 +2374,10 @@ Yes! You have 1750.00 dollars left.
 [/slide]
 
 [slide hideTitle]
-# Problemă: Flowers
+# Problemă cu soluție: Flowers
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-42-problem-flowers-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Flowers" taskId="pb-java-Conditional-Statements-A-Flowers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

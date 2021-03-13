@@ -1,5 +1,8 @@
 [slide hideTitle]     
 # Condiții imbricate
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-9-10-nested-conditional-statements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Destul de des, logica programului necesită utilizarea instrucțiunilor  `if` sau `if-else`, care sunt conținute una în alta.
 Se numesc instrucțiuni **imbricate** `if` sau `if-else`.
 
@@ -64,6 +67,9 @@ Imbricarea a **mai mult de trei instrucțiuni condiționale** în interiorul une
 
 [slide hideTitle]
 # Problemă cu soluție: Marketplace
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-12-problem-and-solution-marketplace-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Marketplace" taskId="java-basics-nested-conditions-marketplace" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -126,6 +132,9 @@ Weekend
 
 [slide hideTitle]
 #  Problemă cu soluție: Biggest Number of Three
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-14-problem-and-solution-greatest-number-of-three-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Biggest Number of Three" taskId="java-basics-nested-conditions-biggest-number-of-three" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

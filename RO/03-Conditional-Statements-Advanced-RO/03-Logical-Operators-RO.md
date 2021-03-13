@@ -1,5 +1,8 @@
 [slide hideTitle]
 # Condiții mai complexe
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-16-18-logical-operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Să aruncăm o privire la modul în care putem crea mai multe **condiții logice complexe** în programare.
 
 Putem folosi:
@@ -30,6 +33,9 @@ Vom explica logică **ȘI** (`&&`), logica **SAU** (`||`) și logica **NU** (`!`
 
 [slide hideTitle]
 # Logica "ȘI"
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-19-logical-and-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 După cum am văzut, în unele sarcini trebuie să facem **multe verificări simultan**.
 
 Dar ce se întâmplă atunci când pentru a executa un anumit cod **mai trebuie** executate condiții și **nu vrem** să facem o **negare** (`else`) pentru fiecare dintre ele?
@@ -120,6 +126,9 @@ if (x >= x1 && x <= x2 && y >= y1 && y <= y2) {
 
 [slide hideTitle]
 #  Problemă cu soluție: Bonus Points
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-19-logical-and-problem-and-solution-bonus-points-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Bonus Points" taskId="java-basics-logical-operators-bonus-points" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -181,6 +190,9 @@ Scrieți un program care aplică bonus punctelor date
 
 [slide hideTitle]
 # Operatorul logic "SAU"
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-21-logical-or-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Logica **OR** (operator `||`) înseamnă că **cel puțin una** dintre câteva condiții este îndeplinită.
 
 Similar cu operatorul `&&`,operatorul logic **OR** acceptă câteva argumente de tip **boolean** (condițional) și se schimba in `true` sau `false`.
@@ -222,6 +234,9 @@ Ajungând la 'b', înțelege că are o valoare `adevărată` și întreaga **exp
 
 [slide hideTitle]
 # Problemă: Food or Drink
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-21-logical-or-problem-and-solution-food-or-drink-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Food or Drink" taskId="java-basics-logical-opators-food-ot-drink" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -294,6 +309,9 @@ unknown
 
 [slide hideTitle]
 # Operatorul logic "NU"
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-23-logical-not-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Negarea logică (operator **!**) înseamnă că o condiție dată nu este **îndeplinită**.
 
 | a | ! a |
@@ -319,6 +337,9 @@ if (!inRange) {
 
 [slide]
 # Operatorul de paranteză
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-23-logical-not-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 La fel ca restul operatorilor din programare, operatorii `&&` și `||` au prioritate, ca în cazul `&&` are prioritate mai mare decât `||`.
 
 Operatorul `()` servește pentru **schimbarea priorității operatorilor** și este calculat mai întâi, la fel ca în matematică.

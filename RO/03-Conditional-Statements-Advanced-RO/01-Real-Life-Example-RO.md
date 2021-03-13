@@ -2,6 +2,9 @@
 
 [slide hideTitle]
 # Exemplu de viață reală: Piață
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-6-7-8-real-life-example-marketplace-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 O piață oferă prețuri diferite pentru anumite produse în funcție de ziua săptămânii.
 
 [image assetsSrc="03-conditional-statements-advanced-example.png" /]
