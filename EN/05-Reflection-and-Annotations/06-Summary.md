@@ -9,10 +9,10 @@
 - Reflection API
 
 ``` java
-//Get class by its name
+// Get class by its name
 Class test = Class.forName("Dog");
 
-//Get names of a given class
+// Get names of a given class
 String nameClass = myDogClass.getName();
 String nameClass = myDogClass.getSimpleName();
 

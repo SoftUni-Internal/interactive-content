@@ -38,7 +38,7 @@ class Document implements Printable {
 ``` java
 class Device {
 
-  // abstract method
+  // Abstract method
   abstract void call();
 } // Class should be abstract.
 
@@ -54,11 +54,11 @@ class Main extends Device {
 
   public static void main(String[] args) {
     
-    // create an object of Main
+    // Create an object of Main
     Main obj = new Main();
 
-    // access method of abstract class
-    // using object of Main class
+    // Access method of abstract class
+    // Using object of Main class
     obj.call();
   }
 }

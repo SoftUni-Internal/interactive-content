@@ -55,8 +55,12 @@ Team real = new Team("Real");
 real.setName("Real Madrid");
 System.out.println(real.getName()); 
 
-// Output:
-// Real Madrid
+```
+
+The output will be:
+
+```
+Real Madrid
 ```
 
 ## Public Access Modifier

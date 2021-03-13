@@ -1,6 +1,7 @@
-[slide hideTitle]
+# Polymorphism
 
-# What is Polymorphism?
+[slide hideTitle]
+# What is Polymorphism
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/EN/interactive-java-oop-advanced-polymorphism-3-4-What-is-polymorphism-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -24,7 +25,7 @@ For example, let us say we have **superclass** called `Mammal` that has a method
 
 **Subclasses** of our class Mammal could be **Cats**, **Dogs**, **Pigs**, **Horses** - And they also have their individual implementation for making a sound.
 
-Lets see that in code: 
+Let us see that in code: 
 
 ``` java
 class Mammal {
@@ -170,7 +171,7 @@ We can overload a method by changing the parameter types, the count of parameter
 
 We can not have two methods with the same name and the same parameters, **the name of parameters does not matter**!
 
-Lets see this simple example:
+Let us see this simple example:
 
 ``` java
 class Calculation {  
@@ -204,7 +205,7 @@ That is called **method overriding**.
 
 This way, a **child class** can give its own **implementation/property** to a method that is already provided by the **parent class**.
 
-To understand better, lets take a look at this **example**:
+To understand better, let us take a look at this **example**:
 
 ``` java
 class Animal {

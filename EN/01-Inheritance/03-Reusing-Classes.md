@@ -37,9 +37,9 @@ class Person {
   }
 
 class Patient extends Person {
-  protected float weight; //hides (shadows) int weight.
+  protected float weight; // Hides (shadows) the weight Integer.
   public void method() {
-    double weight = 0.5d; //As it is more concrete, it hides both but it lives only inside the method brackets.
+    double weight = 0.5d; // As it is more concrete, it hides both, but it lives only inside the method brackets.
   }
 }
 ```
@@ -60,9 +60,9 @@ class Person { protected int weight; }
 class Patient extends Person {
   protected float weight;
   public void method() {
-    double weight = 0.5d; //Local variable
-    this.weight = 0.6f; //Instance member
-    super.weight = 1; //Base class member
+    double weight = 0.5d; // Local variable
+    this.weight = 0.6f;   // Instance member
+    super.weight = 1;     // Base class member
   }
 }
 
@@ -97,9 +97,11 @@ public class Person {
 
 ```java
 public class Student extends Person {
-  @Override                                   // The Attribute @Override means that this method is being given new/extended implementation.
+  // The @Override attribute means that this method is being given a new/extended implementation.
+  @Override                                   
   public void sleep(){
-    System.out.println("Student sleeping");   // Between the brackets we declare the new implementation.
+    // Between the brackets, we declare the new implementation.
+    System.out.println("Student sleeping");   
   }   
 }
 ```
@@ -183,7 +185,7 @@ If we take notice of the picture, we see an extension of the `Lists<>` logic, wh
 
 ```java
 public class MyArrayList<E> extends ArrayList<E>{
-  //Custom logic...
+  // Custom logic...
 }
 ```
 
