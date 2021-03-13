@@ -1,5 +1,8 @@
 [slide hideTitle]
 # Operatori de Incrementare și Decrementare
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/RO/interactive-programming-basics-with-java-for-loops-7-9-increment-and-decrement-oprator-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Operatorul unar de incrementare `++` își mărește operandul cu 1, în timp ce operatorul unar de decrementare `--` îl scade cu 1.
 
 Operatorii de incrementare și decrementare sunt suportați în două forme:

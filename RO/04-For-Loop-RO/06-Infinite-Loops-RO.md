@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Bucle Infinite
-[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/EN/interactive-programming-basics-with-java-for-loops-30-31-32-infinite-loops-in-programming-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/RO/interactive-programming-basics-with-java-for-loops-30-31-32-infinite-loops-in-programming-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Până în prezent, am fost introduși în bucla `for`, învățând ce structură are și cum este aplicată.
 
@@ -29,6 +29,6 @@ Deci, trebuie să aveți grijă să nu provocați apariția sa în mod accidenta
 
 # Exemplu: Bucla infinită for în programare
 
-[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/EN/interactive-programming-basics-with-java-for-loops-32-infinite-loops-in-programming-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/RO/interactive-programming-basics-with-java-for-loops-30-31-32-infinite-loops-in-programming-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]

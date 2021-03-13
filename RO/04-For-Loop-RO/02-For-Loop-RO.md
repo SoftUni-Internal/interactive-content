@@ -1,5 +1,8 @@
 [slide hideTitle]
 # For Loop
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/RO/interactive-programming-basics-with-java-for-loops-14-for-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 În programare este adesea necesar să efectuați un bloc de comenzi de mai multe ori.
 
 Pentru a face acest lucru, sunt utilizate așa-numitele **bucle**.
@@ -20,7 +23,7 @@ Bucla începe cu operatorul `for` și trece prin toate valorile pentru o anumit�
 
 [slide hideTitle]
 # Sintaxă: For-Loop
-[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/EN/interactive-programming-basics-with-java-for-loops-12-13-for-loop-example-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/RO/interactive-programming-basics-with-java-for-loops-12-13-for-loop-example-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 La declararea buclei, puteți specifica o **valoare inițială** și o **valoare finală**.
 
@@ -50,6 +53,9 @@ Bucla se repetă de 10 ori și fiecare dintre aceste repetări se numește **"it
 
 [slide hideTitle]
 # Problemă cu soluție: Print Sum of N Numbers
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/RO/interactive-programming-basics-with-java-for-loops-15-problem-and-solution-print-sum-of-n-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Print Sum of N Numbers" taskId="java-basics-for-loop-print-sum-of-n-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java

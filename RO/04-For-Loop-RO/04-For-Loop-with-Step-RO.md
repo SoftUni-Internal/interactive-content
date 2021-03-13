@@ -1,5 +1,8 @@
 [slide hideTitle]
 # Bucla For cu Pas
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/RO/interactive-programming-basics-with-java-for-loops-19-20-for-loop-with-step-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 În această secțiune vom acorda atenție unei părți particulare și foarte importante a buclei `for`, și anume **pasul**.
 
 **Pasul** este acea **parte** a construcției buclei `for` care indică **cu cât** trebuie **să crească** sau **să scadă** valoarea **variabilei sale** principale .
@@ -36,6 +39,9 @@ for (int i = 10; i >= 1; i--) {
 
 [slide hideTitle]
 # Problemă cu soluție: Numbers Ending with 7 
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/RO/interactive-programming-basics-with-java-for-loops-21-problem-and-solution-numbers-ending-with-seven-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Numbers Ending with 7" taskId="java-basics-for-loop-numbers-ending-with-7" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -94,6 +100,9 @@ Scrieți un program care:
 
 [slide hideTitle]
 # Problemă cu soluție: Exam Countdown
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/RO/interactive-programming-basics-with-java-for-loops-23-problem-and-solution-exam-countdown-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Exam Countdown" taskId="java-basics-for-loop-exam-countdown" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
