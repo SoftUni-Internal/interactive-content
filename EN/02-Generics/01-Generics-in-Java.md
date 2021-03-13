@@ -12,7 +12,7 @@ It makes the code stable by detecting the bugs at compile-time.
 
 Before the introduction of generics, we could store any type of object in a collection, i.e., non-generic. 
 
-Generics force the Java programmer to store specific types of objects.
+Generics force the Java programmer to specify the type of object that will be stored in any collection.
 
 Let us see the following example:
 
