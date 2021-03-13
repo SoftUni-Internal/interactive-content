@@ -38,7 +38,7 @@ System.out.println(strings instanceof List<String>);
 
 After compilation, the compiler deletes all angle bracket syntax.
 
-Because of that, the Compile Time Error occurs in an attempt to check whether the **strings** is an instanceOf `List<Strings>`.
+Because of that, the Compile Time Error occurs when we attempt to check whether the **strings** is an instanceOf `List<Strings>`.
 
 The compiler adds type casts for us (in byte-code).
 
