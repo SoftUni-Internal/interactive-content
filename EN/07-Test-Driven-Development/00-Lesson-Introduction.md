@@ -9,10 +9,12 @@
 ## In this lesson, you will learn:
 
 **1. Code and Tests**
+- Writing tests for every functionality of our project
 
-**2. Test-Driven-Development**
-- What is Test-Driven-Development
+**2. Test-Driven Development**
+- What test-driven development is
 
-**3. Reason to Use Test-Driven-Development**
+**3. Reasons to Use Test-Driven Development**
+- The benefits of developing tests before writing code
 
 [/slide]

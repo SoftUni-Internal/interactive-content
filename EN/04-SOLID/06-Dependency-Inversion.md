@@ -1,10 +1,12 @@
+# Dependency Inversion
+
 [slide hideTitle]
 
-# Dependency Inversion
+# Dependency Inversion Principle (DIP)
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-26-27-dependency-inversion-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-"**Depend on abstractions, not on concretions**"
+"**Depend on abstractions, not on concretions.**"
 
 The **Dependency Inversion principle** defines the concept that **high-level** modules should not depend on **low-level** modules. 
 
@@ -12,11 +14,11 @@ They both **should depend on abstractions**.
 
 It is better to **use interfaces** in the transmission of information **than specific classes**. 
 
-In this way we will **rely more on abstraction than on concretion**.
+In this way, we will **rely more on abstraction than on concretion**.
 
 Abstractions should **not rely on any implementation details**.​
 
-Instead, the **details have to be based on abstractions**.​
+Instead, the **details must be founded upon abstractions**.​
 
 The goal we are trying to achieve with the abstraction approach is to have **independent modules**.​
 
@@ -24,14 +26,14 @@ The goal we are trying to achieve with the abstraction approach is to have **ind
 
 [slide hideTitle]
 
-# The DI Problem
+# The Problem
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-30-the-problem-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In the following example, we have two classes: **Button** and **Lamp**.
 
-The **Button** class recieves a `poll()` message that determines whether or not a user has pressed it. 
-
+The **Button** class receives a `poll()` message that determines whether a user has pressed it or not. 
+ 
 And a **Lamp** class, which receives a **turnOn()** message and a **turnOff()** message:
 
 ```java
@@ -52,9 +54,11 @@ public class Button() {
    }
 }
 ```
-**Button** class **depends directly on Lamp** class: if Lamp changes, then Button will have to be changed too.
+The **Button** class **depends directly on the Lamp** class.
 
-Furthermore, **Button class is not reusable**: you cannot use it to switch on a coffee machine, for example.
+If the Lamp class changes, then Button will have to be changed too.
+
+Furthermore, the **Button class is not reusable**: you cannot use it to switch on a coffee machine, for example.
 
 The above code is a violation of the **Dependency Inversion principle**.
 
@@ -62,11 +66,11 @@ The above code is a violation of the **Dependency Inversion principle**.
 
 [slide hideTitle]
 
-# The DI Problem - Solution
+# Dependency Inversion Solution
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-31-dependency-inversion-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-To solve the design issue behind the previous code, we need to create a **middle-layer** where we can define an **abstract interface associated with `Button`** and implemented by any classes like `Lamp`:
+To solve the design issue behind the previous code, we need to create a **middle-layer** where we can define an **abstract interface associated with `Button`** and implement it by any classes like `Lamp`:
 
 ```java
 public interface SwitchableDevice {
@@ -76,7 +80,7 @@ public interface SwitchableDevice {
 }
 ```
 
-The `Button` class depends on the `SwitchableDevice` interface, not on concrete class such as `Lamp`:
+The `Button` class depends on the `SwitchableDevice` interface, not on a concrete class such as `Lamp`:
 
 ```java 
 public class Button {
@@ -130,7 +134,7 @@ public class Main {
 
 The design above allows a `Button` to control any device that is willing to implement the **SwitchableDevice** interface. 
 
-It also means that `Button` will be **able to control objects** that have **not yet been invented**, and this makes the application **more flexible**.
+It also means that `Button` will be **able to control objects** that have **not been yet initialized**, and this makes the application **more flexible**.
 
 [/slide]
 
@@ -140,42 +144,42 @@ It also means that `Button` will be **able to control objects** that have **not 
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-32-dependency-examples-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Understanding what **Dependency Inversion** is may take time, but lets have a look at few dependency examples and try to better understand what we are trying to achieve with this principle. 
+Understanding what **Dependency Inversion** is may take time, but let us have a look at few dependency examples and try to better understand what we are trying to achieve with this principle. 
 
 **A dependency is any external component/system:**
 
 - Framework 
-- Third Part Library 
+- Third-party library 
 - Database 
-- File System 
+- File system 
 - Email 
-- Web Service 
+- Web service 
 - System resource (e.g. clock) 
 - Configuration 
 - The `new` keyword 
 - Static method 
 - Global function 
 - Random generator 
-- System.in / System.out 
+- `System.in` / `System.out` 
   
 
-We want to de-couple our code from specific classes, in order for it to be flexible and at any point of our program to change its behaviour by changing the concrete implementation of its dependencies.
+We want to decouple our code from specific classes, for it to be flexible and at any point of our program to change its behavior by changing the concrete implementation of its dependencies.
 
 [/slide]
 
 [slide hideTitle]
 
-# How to DIP?
+# How to DIP
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-33-35-37-how-to-dip-1-2-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We can achieve Dependency-Inversion Principle by applying the **Dependency Injection** design pattern. 
+We can achieve the dependency inversion principle by applying the **dependency injection** design pattern. 
 
-Dependency Injection allows us to use **Inversion of Control Container (IOC)**.
+Dependency injection allows us to use  **Inversion of Control Container (IOC)**.
 
-Basically, it is a tool in which we register all dependencies as \{**Interface**\} = \{**Class to generate**\}, then every time we need a dependency it passes it to us without us specifying it. 
+It is a tool in which we register all dependencies as \{**Interface**\} = \{**Class to generate**\}, then every time we need a dependency it passes it to us without us specifying it. 
 
-There are 3 types of Dependency Injection and it's important for every developer to know them.
+There are 3 types of Dependency Injection and every developer needs to know them.
 
 [/slide]
 
@@ -193,14 +197,10 @@ Through this type of DI, the **dependencies are passed through the constructor**
 - Always valid state
 
 **Cons**
-- Many Parameters
+- Many parameters
 - Some methods may not need everything
 
-[/slide]
-
-[slide hideTitle]
-
-# Constructor Injection - Example
+## Example
 
 ```java
 public class Copy {​
@@ -235,11 +235,7 @@ With **Setter Injection** as the name suggests the dependencies are passed to th
 - Possible invalid state of the object
 - Less intuitive
 
-[/slide]
-
-[slide hideTitle]
-
-# Setter Injection - Example
+## Example
 
 ```java
 public class Copy {​
@@ -286,13 +282,13 @@ public class Copy {​
 
 There is a difference between traditional programming layering and dependency inversion layering.
 
-### Traditional Programming
+## Traditional Programming
 
 - **High-level** modules use **low-level** modules​
 
 [image assetsSrc="solid-example(4).png" /]
 
-### Dependency Inversion Layering
+## Dependency Inversion Layering
 
 - **High** and **low-level** modules depend on **abstractions**
 

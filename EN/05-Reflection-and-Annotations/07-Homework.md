@@ -9,11 +9,9 @@
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/Java-OOP-Advanced-Reflection-and-Annotations-harvestingFields.zip) **for this task.**
 
-You are given a **RichSoilLand** class with lots of fields. 
+You will receive a **RichSoilLand** class with lots of fields, which you must harvest. 
 
-Like the good farmer you are, you must harvest them. 
-
-Harvesting means that you must print each **field** in a certain format (see the output).
+Harvesting means that you must print each **field** in a given format (see the output).
 
 ## Input
 You will receive a maximum of 100 lines with one of the following commands:
@@ -24,7 +22,7 @@ You will receive a maximum of 100 lines with one of the following commands:
 - **HARVEST** - end the input
 
 ## Output
-For each command you must print the **fields** that have the **given access modifier** as described in the input section. 
+For each command, you must print the **fields** that have the **given access modifier**, as described in the input section. 
 
 The format in which the fields should be printed is:
 
@@ -467,7 +465,7 @@ private Stream secretStream
 
 You are helping a buddy of yours who is still in the OOP Basics course.
 
-He is rather slow and made a class with all private members. 
+He has made a class with all private members. 
 
 Your tasks are to **instantiate** an object from his class (always with start value 0) and then **invoke** the different methods it has. 
 
@@ -517,7 +515,9 @@ You stop receiving input when you encounter the command "**END**".
 ## Output
 Each command (except the **END** one) should print the current value of **innerValue** of the **BlackBoxInt** object you instantiated. 
 
-**Do not cheat** by overriding **toString** in the class - you must get the value from the **private** field.
+**Do not cheat** by overriding **toString** in the class.
+
+You must get the value from the **private** field.
 
 # Example
 | **Input** | **Output** |
@@ -682,11 +682,14 @@ END
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/Java-OOP-Advanced-Reflection-and-Annotations-barracksWars.zip) **for this task.**
 
-You are given a small console based project called Barracks. 
+You are given a small console-based project called Barracks. 
 
-The general functionality the project has is adding new units to its repository and printing a report with statistics about the units currently in the repository. 
+The project has two functionalities:
+- adding new units to its repository
+- printing a report with statistics about the units currently in the repository
 
 First, let us go over the original task before the project was created.
+
 ## Input
 The input consists of multiple commands, each on a separate line. 
 
@@ -694,6 +697,7 @@ Commands that execute the functionality are:
 - **add** \{**Archer/Swordsman/Pikeman/**\{**…**\}\} - adds a unit to the repository
 - **report** - prints a lexicological ordered statistic about the units in the repository
 - **fight** - ends the input
+
 ## Output
 Each command except **fight** should print output on the console.
 - **add** should print: 
@@ -703,17 +707,19 @@ Each command except **fight** should print output on the console.
 - **report** should print all the info in the repository in the format: 
 
     "\{**UnitType**\} -\> \{**UnitQuantity**\}", sorted by UnitType
+
 ## Constraints
 - The input will consist of no more than **1000** lines
-- The **report** command will never be given before any valid add command was provided
+- The **report** command will never be given before any valid **add** command is provided
+
 ## Your Task
 You have to **study the code of the project and figure out how it works.**
 
-However, there are parts of it that are not implemented (left with TODOs (**TODO** window will be useful)). 
+There are parts of it that are not implemented (left with TODOs (**TODO** window will be useful)). 
 
-You must implement the functionality of the **createUnit** method in the **UnitFactoryImpl** class so that it creates a unit based on the unit type received as parameter. 
+You must implement the functionality of the **createUnit** method in the **UnitFactoryImpl** class so that it creates a unit based on the unit type received as a parameter. 
 
-Implement it in such a way that whenever you add a new unit it will be creatable without the need to change anything in the **UnitFactoryImpl** class (psst - use reflection). 
+Implement it in such a way that whenever you add a new unit, it can be created without the need to change anything in the **UnitFactoryImpl** class (psst - use reflection). 
 
 You can use the approach called **Simple Factory**.
 
@@ -1073,15 +1079,15 @@ Swordsman -\> 2
 # Description
 As you might have noticed, the commands in the project from **Problem 3** are implemented via a switch case with method calls in the **Engine** class. 
 
-Although this approach works, it is flawed when you add a new command because you have to add a new case for it. 
+Although this approach works, it is flawed because you have to add a new case for each command. 
 
-In some projects you might not have access to the engine and this would not work. 
+In some projects, you might not have access to the engine, and this would not work. 
 
-Imagine this project will be outsourced and the outsourcing firm will not have access to the engine. 
+Imagine this project will be outsourced - in this case, the outsourcing firm will not have access to the Engine. 
 
-Make it so whenever they want to add a new command they will not have to change anything in the **Engine.**
+Make it so whenever they want to add a new command they will not have to change anything in the **Engine**.
 
-To do so, employ the design pattern called [Command Pattern](https://www.baeldung.com/java-command-pattern).
+To do so, employ the [Command Pattern](https://www.baeldung.com/java-command-pattern).
 
 Here is how the base (abstract) command should look like:
 
@@ -1112,17 +1118,17 @@ public abstract class Command implements Executable {
     }
 }
 ```
-Notice how all commands that extend this one will have both a **Repository** and a **UnitFactory** although not all of them need these. 
+Notice how all commands that extend this one will have both a **Repository** and a **UnitFactory**, although not all of them need these. 
 
-Leave it like this for this problem, because for the reflection to work we need all constructors to accept the same parameters. 
+Leave it like this for this problem, because for the reflection to work, we need all constructors to accept the same parameters. 
 
 We will see how to go around this issue in **Problem 5.**
 
-Once you've implemented the pattern add a new command. 
+Once you have implemented the pattern, add a new command. 
 
 It will have the following syntax:
 - **retire** \{**UnitType**\} - All it has to do is **remove** a unit of the provided type from the repository
-    - if there are no such units currently in the repository print: "**No such units in repository.**"
+    - if there are no such units currently in the repository, print: "**No such units in repository.**"
     - if there is such a unit currently in the repository, print: "\{**UnitType**\} **retired!**"
 
 To implement this command, you will also have to implement a corresponding method in the **UnitRepository.**
@@ -1345,11 +1351,11 @@ Swordsman -\> 0
 
 [task-description]
 # Description
-In the final part of this epic problem trilogy we will resolve the issue where all Commands received all utility classes as parameters in their constructors. 
+In the final part of this epic problem trilogy, we will resolve the issue where all Commands received all utility classes as parameters in their constructors. 
 
 We can accomplish this by using an approach called **dependency injection container**. 
 
-This approach is used in many frameworks like **Spring** for instance.
+This approach is used in many frameworks, like **Spring** - for instance.
 
 We will do a little twist on that approach. 
 
@@ -1357,9 +1363,9 @@ Remove all fields from the abstract command except the **data**.
 
 Instead, put whatever fields each command needs in the concrete class. 
 
-Create an annotation called **Inject** and make it so it can be used only on fields. 
+Create an annotation called **Inject** and make it usable only on fields. 
 
-Put the annotation over the fields we need to set trough reflection. 
+Put the annotation over the fields we need to set through reflection. 
 
 Once you have prepared all of this, write the necessary reflection code in the **Command Interpreter** (which you should have refactored out from the engine in **Problem 4**).
 

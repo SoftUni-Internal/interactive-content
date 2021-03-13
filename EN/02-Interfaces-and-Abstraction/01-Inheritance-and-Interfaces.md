@@ -6,9 +6,9 @@
 
 **Inheritance** and **Interfaces** are two other major concepts in the **object-oriented** programming.
 
-**Inheritance** allows classes to **inherit data and functionality** from a **parent class** (also called "**base class**").
+**Inheritance** allows classes to **inherit data and functionality** from a **parent class** (also called a **base class**).
 
-When a class inherits another class, the **parent class fields** are merged with the **child class fields** and they form the **set of data fields** for the child class.
+When a class inherits another class, the **parent class fields** are merged with the **child class fields**, and they form the **set of data fields** for the child class.
 
 **Interfaces** define abstract actions.
 
@@ -16,9 +16,9 @@ When a class inherits another class, the **parent class fields** are merged with
 
 - Interfaces define a **set of empty (or abstract) methods** (or actions) which shall be obligatory implemented in the child classes
 
-- Interfaces are also called **"contracts"**, because they define certain set of functionalities, a contract to implement certain methods
+- Interfaces are also called **contracts** because they define a distinct set of functionalities, a contract to implement given methods
 
-**Abstract** classes are used to model abstractions.
+We use **abstract** classes to model abstractions.
 
 - An abstract class allows you to create functionality that subclasses can **implement** or **override**
 
@@ -26,7 +26,7 @@ When a class inherits another class, the **parent class fields** are merged with
 
 - You cannot instantiate them, and they may contain a mix of **methods** declared with or without an implementation
 
-- For example, the class **Figure** is not a concrete figure like square or rectangle, but the concept or the abstraction of "figure"
+- For example, the **Figure** class is not a concrete figure like square or rectangle, but the concept or the abstraction of a **figure**
 
 - Abstract classes defines **data + actions** (or normal methods) + **abstract actions** (or empty methods)
 
@@ -49,30 +49,31 @@ When a class inherits another class, the **parent class fields** are merged with
 
 In this example we demonstrate **abstract** classes and **concrete** classes.
 
-This is an example of abstract class, which models an abstraction **"Figure"**.
+This is an example of an abstract class, which models an abstraction **"Figure"**.
 
 - It defines two data **fields**: `x` and `y`
 
-- It defines also an **abstract action** (or method) for calculating the area of the figure
+- It also defines an **abstract action** (or method) for calculating the area of the figure
 
-- This method is **empty** (or **abstract**), because it is specific to the concrete figure, like *"circle"* or *"rectangle"*
+- This method is **empty** (or **abstract**), because it is specific to the concrete figure, like **"circle"** or **"rectangle"**
 
-- In the child (or descendent) classes this abstract action **will become concrete**, it will hold the code to calculate a circle area or rectangle area depending on the concrete figure
+- In the child (or descendent) classes, this abstract action **will become concrete**
+	* it will hold the code to calculate a circle area or rectangle area depending on the concrete figure
 
 - This abstract class models the generic **abstraction "Figure"** and **child classes** will determine the type of the figure
 
- The **child class "Circle**" – is a class, which inherit properties from the **abstract** class "Figure"
+ The **child class "Circle**" is a class, which inherits properties from the **abstract** class "Figure"
 
-- This way the child class **has 3 fields**: two inherited from the parent class and one defined additionally
+- This way, the child class **has three fields**: two inherited from the parent class and one defined additionally
 
 - It **inherits** the fields **"x"** and **"y"** from "Figure" and appends an additional field **"radius"**
 
-- The class **Circle** defines a **concrete implementation** of the abstract method **"calcArea"**, which calculates the circle area using the well-known formula from the school-level math
+- The class **Circle** defines a **concrete implementation** of the abstract method **"calcArea"**, which calculates the circle area using the well-known formula from school level mathematics
 
 The **child class "Rectangle"** inherits the properties from the **base class "Figure"**.
 
-- The "Rectangle" class defines two additional fields: **width** and **height**.
+- The "Rectangle" class defines two additional fields: **width** and **height**
 
-- It provides different concrete implementation of the "**calcArea**" abstract method, which calculates the rectangle area.
+- It provides a different concrete implementation of the "**calcArea**" abstract method, which calculates the rectangle area
 
 [/slide]

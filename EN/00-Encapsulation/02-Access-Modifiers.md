@@ -128,10 +128,10 @@ public static void main(String[] args) throws IOException {
 # Example
 | **Input** | **Output** |
 | --- | --- |
-| 5 | George Lee is 44 years old. |
-| George Air 65 | George Air is 65 years old. |
-| Anderson Paak 57 | Bob Manner is 35 years old. |
-| Lee Parker 27 | Anderson Paak is 57 years old. |
+| 5 | Anderson Paak is 57 years old. |
+| George Air 65 | Bob Manner is 35 years old. |
+| Anderson Paak 57 | George Lee is 44 years old. |
+| Lee Parker 27 | George Air is 65 years old. |
 | George Lee 44 | Lee Parker is 27 years old. |
 | Bob Manner 35 |  |
 
