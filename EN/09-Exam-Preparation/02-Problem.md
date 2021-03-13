@@ -10,7 +10,7 @@
 
 # Description
 
-# Task 2: Business Logic (150 points)
+## Task 2: Business Logic
 
 ## The Controller Class
 
@@ -18,7 +18,9 @@ The business logic of the program should be concentrated around several **comman
 
 You are given interfaces, which you have to implement in the correct classes.
 
-**Note: The ControllerImpl class SHOULD NOT handle exceptions! The tests are designed to expect exceptions, not messages!**
+**Note:** The ControllerImpl class **should not** handle exceptions! 
+
+**The tests are designed to expect exceptions, not messages!**
 
 The first interface is **Controller**. You must create a **ControllerImpl** class, which implements the interface and implements all its methods. 
 
@@ -30,7 +32,7 @@ The given methods should have the following logic:
 
 There are several commands, which control the business logic of the application. 
 
-They are stated below.
+They are listed below.
 
 ### AddDwarf Command
 
@@ -43,7 +45,7 @@ They are stated below.
 
 Creates a dwarf with the given name of the given type. 
 
-If the dwarf is invalid, throw an **IllegalArgumentException** with message:
+If the dwarf type is invalid, throw an **IllegalArgumentException** with the message:
 
 **"Dwarf type doesn't exist!"**
 
@@ -63,7 +65,7 @@ The method should **return** the following message:
 
 Creates an instrument with the given power and adds it to the collection of the dwarf. 
 
-If the dwarf does not exist, throw an **IllegalArgumentException** with message:
+If the dwarf does not exist, throw an **IllegalArgumentException** with the message:
 
 "**The dwarf you want to add an instrument to doesn't exist!**"
 
@@ -97,7 +99,7 @@ The method should **return** the following message:
 
 When the craft command is called, the action happens. 
 
-You should start crafting the given present, by assigning dwarfs which are most ready:
+You should start crafting the given present, by assigning the dwarfs which are the readiest:
 
 - The dwarfs that you should select are the ones with energy **above** 50 units
 
@@ -136,11 +138,13 @@ Returns information about **crafted presents** and **dwarfs**:
 
 "**Instruments** \{**countInstruments**\} **not broken left**"
 
-# Input / Output
+# Input/Output
 
-You are provided with one interface, which will help you with the correct execution process of your program. 
+You are provided with one interface, which will assist the correct execution process of your program. 
 
-The interface is **Engine** and the class implementing this interface should read the input and when the program finishes, this class should print the output.
+The interface is **Engine**, and the class implementing this interface should read the input.
+
+When the program finishes, this class should print the output.
 
 ## Input
 
