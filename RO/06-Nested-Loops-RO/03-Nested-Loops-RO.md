@@ -1,6 +1,8 @@
 [slide hideTitle]
 # Bucle Imbricate
 
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/RO/interactive-programming-basics-with-java-nested-loops-21-nested-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Obuclă imbricată** este o construcție în care **conținutul unei bucle** (cea exterioară) **se află într-o altă buclă** (cea interioară). 
 
 Există bucle imbricate de tip `for` și de tip `while`.
@@ -29,6 +31,8 @@ Acest lucru are loc:
 
 [slide hideTitle]
 # Bucle Imbricate - Exemple
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/RO/interactive-programming-basics-with-java-nested-loops-19-20-Nested-loops-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Aici se află un **exemplu** care ilustrează utilizarea buclelor imbricate. 
 
@@ -61,6 +65,8 @@ Bucla interioară se va executa de câte ori se execută conținutul buclei exte
 [slide hideTitle]
 
 # Nivele multiple de bucle imbricate
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/RO/interactive-programming-basics-with-java-nested-loops-22-multiple-levels-of-nested-loops-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Este posibil să aveți mai multe nivele de bucle imbricate.
 

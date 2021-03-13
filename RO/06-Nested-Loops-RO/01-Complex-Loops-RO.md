@@ -1,7 +1,7 @@
 [slide hideTitle]
 # Bucle complexe
 
-[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-8-9-complex-loops-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/RO/interactive-programming-basics-with-java-nested-loops-8-9-complex-loops-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Atunci când utilizați bucle for, bucla variabilă poate fi modificată în mai multe moduri.
 
@@ -35,7 +35,7 @@ for (int j = 16; j > 1; j /= 2) {
 [slide hideTitle]
 # Problemă cu soluție: Numbers from N down to 1
 
-interactive-programming-basics-with-java-nested-loops-10-problem-numbers-from-n-down-to-one + 
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/RO/interactive-programming-basics-with-java-nested-loops-10-problem-and-solution-numbers-from-n-down-to-one-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Numbers from N down to 1" taskId="pb-js-nested-loops-lab-Numbers-from-N-down-to-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -112,7 +112,7 @@ Programul primește un număr `n` și imprimă numerele de la `n` până 1.
 [slide hideTitle]
 # Problemă cu soluție: Numbers from 1 to N with Step 3
 
-interactive-programming-basics-with-java-nested-loops-12-problem-numbers-from-one-to-n-with-step-three + 
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/RO/interactive-programming-basics-with-java-nested-loops-12-problem-and-solution-numbers-from-one-to-n-with-step-three-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Numbers from 1 to N with Step 3" taskId="pb-js-nested-loops-lab-Numbers-from-1-to-N-with-Step-3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -203,7 +203,7 @@ Scrieți un program care imprimă numerele de la  1 până la `n` cu pasul 3:
 [slide hideTitle]
 # Problemă cu soluție: Even Powers of 2
 
-interactive-programming-basics-with-java-nested-loops-14-problem-even-powers-of-two + 
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/RO/interactive-programming-basics-with-java-nested-loops-14-problem-and-solution-even-powers-of-two-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Even Powers of 2" taskId="pb-js-nested-loops-lab-Even-Powers-of-2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

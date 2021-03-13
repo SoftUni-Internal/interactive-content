@@ -1,7 +1,7 @@
 [slide hideTitle]
 
 # Bucle Imbricate  While
-[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-28-30-nested-while-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/RO/interactive-programming-basics-with-java-nested-loops-28-30-nested-while-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Utilizarea buclelor imbricate  `while` este foarte similară cu cea a buclelor imbricate `for`.
 
@@ -37,6 +37,9 @@ while (i < n) {
 
 [slide hideTitle]
 # Problemă cu soluție: Triangle of Stars with While
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/RO/interactive-programming-basics-with-java-nested-loops-31-problem-and-solution-triangle-of-stars-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Triangle of Stars with While" taskId="java-basics-nested-loops-Triangle-of-Stars-with-While" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -99,9 +102,9 @@ Scrieți un program care:
 
 [slide hideTitle]
 
-# Problem with Solution: Sum of Digits Calculator
+# Problemă cu soluție: Sum of Digits Calculator
 
-[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-33-34-nesting-while-and-for-loops-and-problem-and-solution-sum-digits-calculator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/RO/interactive-programming-basics-with-java-nested-loops-33-34-nesting-while-and-for-loops-and-problem-and-solution-sum-digits-calculator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sum of Digits Calculator" taskId="java-basics-nested-loops-Sum-of-Digits-Calculator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

@@ -1,5 +1,8 @@
 [slide hideTitle]
 # Bucle Imbricate de Tip For
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/RO/interactive-programming-basics-with-java-nested-loops-23-25-nested-for-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Instrucțiuni care consta în câteva **bucle for** localizate **una în interiorul celeilalte**
 
 **Buclele imbricate de tip for** sunt utilizate pentru:
@@ -48,6 +51,9 @@ for (int i = 0; i < a; i++) {
 
 [slide hideTitle]
 # Problemă cu soluție: Triangle of Stars
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/RO/interactive-programming-basics-with-java-nested-loops-26-problem-and-solution-triangle-of-stars-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Triangle of Stars" taskId="java-basics-nested-loops-triangle-of-stars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
