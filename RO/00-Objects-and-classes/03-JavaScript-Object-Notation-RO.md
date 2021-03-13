@@ -2,7 +2,8 @@
 
 [slide hideTitle]
 # Ce este JSON?
-[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-14-15-What-is-JSON--,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/RO/01.JS-Fundamentals-Object-and-Classes-14-15-What-is-JSON--,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 JSON înseamnă **JavaScript Object Notation** și este un **format de informații bazat pe text** care urmează sintaxa obiectului JavaScript.
 
@@ -15,7 +16,7 @@ JSON este o metodă de stocare a datelor și informațiilor într-o abordare org
 [slide hideTitle]
 # Utilizarea JSON
 
-[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-16-JSON-usage-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/RO/01.JS-Fundamentals-Object-and-Classes-16-JSON-usage-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Cu JSON putem **schimba date între un browser și un server.**
 
@@ -29,7 +30,7 @@ JSON folosește **text citibil de către om pentru a transmite date.**
 [slide hideTitle]
 # Exemplu JSON
 
-
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/RO/01.JS-Fundamentals-Object-and-Classes-17-JSON-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ``` js
 {
@@ -58,7 +59,7 @@ JSON folosește **text citibil de către om pentru a transmite date.**
 [slide hideTitle]
 # Metodele JSON
 
-[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-18-JSON-Methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/RO/01.JS-Fundamentals-Object-and-Classes-18-JSON-Methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Avem două metode JSON:
 
@@ -91,7 +92,7 @@ console.log(data);
 [slide hideTitle]
 # Problemă cu Soluție: Convert to Object
 
-[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-21-Solution-Convert-to-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/RO/01.JS-Fundamentals-Object-and-Classes-21-Solution-Convert-to-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Convert to Object" taskId="JS-fundamentals-2-Objects-and-Classes-lab-Convert-to-Object" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -195,7 +196,7 @@ town\: Erevan
 [slide hideTitle]
 # Problemă cu soluție: Convert to JSON
 
-[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-23-Solution-Convert-to-JSON-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/RO/01.JS-Fundamentals-Object-and-Classes-23-Solution-Convert-to-JSON-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Convert to JSON" taskId="JS-fundamentals-2-Objects-and-Classes-lab-Convert-to-JSON" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
