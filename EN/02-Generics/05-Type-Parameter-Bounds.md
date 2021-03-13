@@ -32,7 +32,7 @@ In our case, that will be a `Number` class.
 T extends Number
 ```
 
-The above code should look like this:
+The code should look like this:
 
 ```java
 public class PowerOfThree<T extends Number>  {
@@ -48,7 +48,7 @@ The type parameter `T` extends Number to restrict the type of objects that can b
 
 The `Number` is a superclass of all numeric classes, such as `Integer`, `Float` and `Double`.
 
-If we try to use another class which is **not a subclass of Number**, the compiler will throw a compile-time error.
+If we try to use another class that is **not a subclass of Number**, the compiler will throw a compile-time error.
 
 
 [/slide]
@@ -78,7 +78,7 @@ The scale should have a single method:
 
 The **greater of the two elements is heavier**. 
 
-The method should return `null` if elements are **equal**.
+The method should return `null` if the elements are **equal**.
 
 
 
