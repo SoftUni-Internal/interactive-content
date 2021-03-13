@@ -160,10 +160,10 @@ We can test this behavior as follows:
 ``` java
 @Test(expected = IllegalArgumentException.class) //Assert
 public void multiplyingWordsShouldThrow() {
-  //Arrange
+  // Arrange
   Calculator calculator = new Calculator();
   
-  //Act
+  // Act
   calculator.multiply(a, b);
 }
 ```
@@ -232,11 +232,11 @@ public class AxeTests{
 
   @Test
   public void weaponAttacksLosesDurability(){
-    //Arrange
+    // Arrange
 
-    //Act
+    // Act
 
-    //Assert
+    // Assert
   }
 }
 ```

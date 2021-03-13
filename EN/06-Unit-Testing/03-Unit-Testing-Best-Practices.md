@@ -187,10 +187,10 @@ Make use of constants and private fields, as well as assertion messages:
 ```java
 @Test
 public void weaponAttackLosesDurability(){
-  //Act
+  // Act
   this.axe.attack(this.dummy);
 
-  //Assert
+  // Assert
   Assert.assertEquals("Wrong Durability, "),
           EXPECTED_DURABILITY,
           this.axe.getDurabilityPoints());
