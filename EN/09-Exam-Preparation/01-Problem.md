@@ -205,7 +205,7 @@ The present repository is a repository for presents that await to be crafted.
 
 ## Behavior
 
-- `void add(Present present)`
+- `void add(Present present)`
   - **adds** a present to be crafted
   - every present is **unique** and it is guaranteed that there will not be a present with the same name
 
