@@ -7,7 +7,7 @@ Calculatoarele pot înțelege doar numerele, deci un cod **ASCII** este reprezen
 
 Acesta este un exemplu de parte a tabelului:
 
-[image assetsSrc = "04-for-loop-ascii.png" /]
+[image assetsSrc="04-for-loop-ascii.png" /]
 
 Și aici puteți verifica întregul [Tabel ASCII](http://www.asciitable.com)
 
