@@ -99,7 +99,7 @@ It should have two public methods:
 - `void add(element)`
 - `element remove()`
 
-`add()` should add on top of its contents.
+`add()` should add the element on top of any other elements.
 
 `remove()` should get the topmost element.
 
@@ -118,7 +118,7 @@ Pickle pickle = jarOfPickles.remove();
 Use the syntax `Jar<T>` to create a generic class.
 
 ## Submit
-To submit your solution, **zip** your whole package with the `Jar` and `Main` classes:
+To submit your solution, create a **zip** file with your whole package containing the `Jar` and `Main` classes:
 
 [image assetsSrc="generics-example(2).png" /]
 
@@ -315,7 +315,7 @@ jar.add(new Vegetable()); // Error
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/EN/interactive-java-advanced-generics-12-Generic-Interfaces-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-A **generic Java interface** is an interface which can be **typed** - meaning it can be specialized to work with a specific type (e.g. interface or class) when used.
+A **generic Java interface** is an interface that is declared with type parameters - meaning it can be specialized to work with a specific type (e.g. interface or class) when used.
 
 Generic interfaces are **specified just like generic classes**. 
 
@@ -331,9 +331,9 @@ In the example above, we declare the Mathematics interface which declares the me
 
 The type parameter `T` extends Number to restrict the type of objects that can be used in the parameterized type.
 
-The `Number` is a superclass of all numeric classes, such as `Integer`, `Float` and `Double`.
+The `Number` is a superclass of all numeric classes, such as `Integer`, `Float`, and `Double`.
 
-So, if we try to use another class which is **not a subclass of Number**, the compiler will throw `compile-time-error`.
+So, if we try to use another class that is **not a subclass of Number**, the compiler will throw `compile-time-error`.
 
 [/slide]
 
