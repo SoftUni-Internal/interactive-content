@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Ce Este un Set?
 
-[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-32-33-what-is-a-set-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/RO/02.JS-Fundamentals-Associative-Arrays-32-33-what-is-a-set-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Obiectul Set vă permite să stocați **unice** valori de orice tip, indiferent dacă sunt valori primitive sau referințe la obiect.
 

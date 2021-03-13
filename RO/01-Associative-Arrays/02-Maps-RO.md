@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Ce Este Obiectul Map?
 
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/RO/02.JS-Fundamentals-Associative-Arrays-20-21-what-is-a-map-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Obiectul Map conține perechi cheie-valoare și păstrează **ordinea originală de inserare** a cheilor.
 
 Atât obiectele, cât și valorile primitive pot fi utilizate fie ca cheie, fie ca valoare.
@@ -18,7 +20,7 @@ Obiectele JavaScript pure sunt ca niște Hărți, deoarece ambele vă permit să
 [slide hideTitle]
 # Adăugarea, Accesarea Elementelor
 
-[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-22-adding-and-accessing-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/RO/02.JS-Fundamentals-Associative-Arrays-22-adding-and-accessing-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a adăuga o pereche cheie-valoare, folosiți metoda `.set()`.
 
@@ -56,7 +58,7 @@ console.log(map.size);
 [slide hideTitle]
 # Conține / Șterge
 
-[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-23-contains-and-delete-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/RO/02.JS-Fundamentals-Associative-Arrays-23-contains-and-delete-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a afla dacă un obiect map are o cheie dată, utilizați metoda `.has ()`.
 
@@ -97,7 +99,7 @@ console.log(map.size);
 [slide hideTitle]
 # Iteratori
 
-[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-24-iterators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/RO/02.JS-Fundamentals-Associative-Arrays-24-iterators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Prin utilizarea iteratorilor, putem returna o matrice care conține perechi `[key-value]`.
 
@@ -141,7 +143,7 @@ console.log(entries);
 [slide hideTitle]
 # Iterarea unui Obiect Map
 
-[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-25-iterating-a-map-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/RO/02.JS-Fundamentals-Associative-Arrays-25-iterating-a-map-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a tipări un obiect map, pur și simplu utilizați o buclă **for-of**
 
@@ -181,7 +183,7 @@ for (let values of map.values()) {
 
 # Problemă cu soluție: Storage
 
-[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-28-solution-storage-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/RO/02.JS-Fundamentals-Associative-Arrays-28-solution-storage-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 [code-task title="Storage" taskId="js-fundamentals-pt2-Associative-Arrays-Storage" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -295,7 +297,8 @@ coknfee \-\> 350
 [slide hideTitle]
 # Sortare Map
 
-[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-28-map-sorting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/RO/02.JS-Fundamentals-Associative-Arrays-28-map-sorting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Pentru a **sorta** un obiect Map, transformați-l mai întâi într-o **matrice**, apoi folosiți metoda `sort()`.
 
 Aici avem o funcție de comparare care definește ordinea de sortare.
@@ -329,7 +332,7 @@ for (let kvp of sorted) {
 
 # Problemă cu soluție: School Grades
 
-[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-29-solution-school-grades-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/RO/02.JS-Fundamentals-Associative-Arrays-29-solution-school-grades-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="School Grades" taskId="js-fundamentals-pt2-Associative-Arrays-School-Grades" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

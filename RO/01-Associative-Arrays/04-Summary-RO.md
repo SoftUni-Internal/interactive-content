@@ -2,6 +2,8 @@
 
 # Rezumat
 
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/RO/02.JS-Fundamentals-Associative-Arrays-34-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## În această lecție ați învățat că:
 
 - Putem utiliza ambele categorii **Objects** și **Maps** pentru a stoca perechi **key-value**
