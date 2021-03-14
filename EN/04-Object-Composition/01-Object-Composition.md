@@ -34,7 +34,7 @@ console.log(student.location.lat);
 
 [slide hideTitle]
 
-# Composing an object
+# Composing an Object
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-5-composing-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
