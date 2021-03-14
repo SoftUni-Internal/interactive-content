@@ -1,12 +1,12 @@
 [slide hideTitle]
-# Problem with Solution: Online Shop Unit Tests
+# Problem: Online Shop Unit Tests
 
 [code-task title="Online Shop Unit Tests" taskId="oop-advanced-java-exam-preparation-2-Online-Shop-Unit-Tests" executionType="tests-execution" executionStrategy="java-unit-tests" requiresInput]
 
 [task-description]
 # Description
 
-# Task 3: Unit Testing (100 Points)
+# Task 3: Unit Testing
 
 **Use the resources you downloaded in the first task.**
 

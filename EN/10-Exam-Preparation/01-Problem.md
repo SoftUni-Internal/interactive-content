@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Problem with Solution: Online Shop
+# Problem: Online Shop
 [code-task title="Online Shop" timeLimit=5000 taskId="oop-advanced-java-exam-preparation-2-Online-Shop" executionType="tests-execution" executionStrategy="java-project-tests"]   
 [code-upload allowedMemory="30" /]
 
@@ -26,7 +26,7 @@ The project will consist of **model classes** and a **controller class**, which 
 
 # Description
 
-# Task 1: Structure (50 points)
+# Task 1: Structure
 
 *For this task's evaluation, logic in the methods is not included.*
 

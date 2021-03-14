@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Problem with Solution: Online Shop Business Logic
+# Problem: Online Shop Business Logic
 [code-task title="Online Shop Business Logic" timeLimit=5000 taskId="oop-advanced-java-exam-preparation-2-Online-Shop-Business-Logic" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
@@ -7,7 +7,7 @@
 [task-description]
 # Description
 
-# Task 2: Business Logic (150 Points)
+# Task 2: Business Logic
 
 ## The Controller Class
 

@@ -22,7 +22,7 @@
 
 # Description
 
-## Task 1: Structure
+# Task 1: Structure
 
 You are given interfaces, and you have to implement their functionality in the **correct classes**.
 

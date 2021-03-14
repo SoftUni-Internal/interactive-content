@@ -10,7 +10,7 @@
 
 # Description
 
-# Task 2: Business Logic (150 points)
+# Task 2: Business Logic
 
 ## The Controller Class
 
