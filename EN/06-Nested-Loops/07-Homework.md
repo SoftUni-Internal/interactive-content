@@ -288,7 +288,7 @@ public class Main {
 ## Description
 Create a program, that:
 * Reads a **number** from the console
-* Finds all **3-digit numbers** that produce this number when multyplying all their digits.
+* Finds all **3-digit numbers** that produce this number when multyplying all their digits by each other.
 
 ## Example
 
@@ -350,16 +350,19 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which:
+Create a program, that:
 
-* Reads a **destination** and **needed budget** for destination
-* Continues reading numbers - amounts of money, until they are **enough** for the destination
-* If it receives the command **"End"** the program ends
+
+* Rceives a tourist **destination**
+* After that, the **budget** required in order to visit it is specified
+* We will receive the **next destination** from the console each time we reach the sufficient budget for the current one.
+* Each next input line will contain amounts of money, until we have **enough** to make the trip
+* The program should end imidiately on receiving the command: **"End"**
 
 ## Example
 | **Input** | **Output** |
 | --- | --- |
-| Philippines | Going to Philippines! |
+| Austria | Going to Austria! |
 | 1000|  |
 | 550|  |
 | 450|  |
@@ -385,14 +388,14 @@ Write a program, which:
 [tests]
 [test open]
 [input]
-Philippines
+Austria
 1000
 550
 450
 End
 [/input]
 [output]
-Going to Philippines!
+Going to Austria!
 [/output]
 [/test]
 [test open]
@@ -720,10 +723,10 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which:
+Create a program, that:
 
 * Reads **two numbers** from the console
-* Prints the **prime** number in that **range**
+* Prints all **prime** numbers holding values in **range** between them 
 
 ## Example
 | **Input** | **Output** |
@@ -732,7 +735,7 @@ Write a program, which:
 | 50|  |
 [hints]
 [hint]
-A prime number is a whole number that cannot be created by multiplying other whole numbers.
+A prime number is **an integer** that can only be devided by `itself` and the number `1` **without a remainder**.
 [/hint]
 [/hints]
 
@@ -832,15 +835,15 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which:
+Create a program, that:
 
 * Reads **3 digits** - n1, n2 and n3
-* Generates **unique 3 digit PIN Codes**, which meet the following **conditions**:
-* The **first** digit should not be greater than n1
-* The **second** digit should not be greater than n2
-* The **third** digit should not be greater than n3
-* The **first** and the **third** digit must be even
-* The second digit must be a **prime number** in the range \[2...7\]
+* Generates all **unique 3 digit PIN Codes**, which meet the following **conditions**:
+* The **first** PIN digit should not be greater than n1
+* The **second** PIN digit should not be greater than n2
+* The **third** PIN digit should not be greater than n3
+* The **first** PIN and the **third** digit must be an even number
+* The second digit must be a **prime number** in range \[2...7\]
 
 ## Example
 | **Input** | **Output** |
@@ -916,11 +919,12 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Write a program, which:
+Create a program, that:
 
-* Prints **letters combinations** and the **count** of the printed combinations
-* You will receive the **range of letters** on the first and second line
+* Prints out **3 letter combinations** and the final **number** of generated combinations
+* You will receive the begin and end **range of letters** on the first and second lines of input
 * On the third line, you will receive a **letter**, which you must **ignore** - do not print combinations with it
+* Generate an print out all 3 letter combinations, using the letters in the given range, ignoring the one letter specified in the input.
 
 ## Example
 | **Input** | **Output** |
@@ -978,12 +982,12 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which:
+Create a program, that:
 
-* Reads a number n
+* Reads a number `n` from the console
 * Prints **all 4 digit numbers**, which meet the following conditions:
-* When you **split** them in two pairs and **add** the first digit to the second - the result **equals** n
-* When you add the first two digits to each other, the result must be **divisible** by n **without a remainder**
+* When you **split** them in two pairs and **add** the first digit to the second their result **should equal** `n`
+* When you add the first two digits to each other, the result must be **divisible** by `n` **without a remainder**
 
 ## Example
 | **Input** | **Output** |
@@ -1072,15 +1076,16 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that prints **the hours of the day** from the given hour and minutes to 23:59 (**inclusive**), each on a separate line. 
+Crete a program that prints out **the time**, receiving a number representing the current hour and another one representing the minutes.
+The program should start at the given time and run until reaching 23:59. Increment the minute and hour values accordingly.
 
 ## Input
-The input is consists of **2** lines:
+The input consists of **2** lines:
 - First line - hours - integer in range \[0...23\]
 - Second line - minutes - integer in range \[0...59\]
 
 ## Output
-- Hours must be printed on the console in "\{hour\} : \{minutes\}" format.
+- Hours must be printed to the console in the following: "\{hour\} : \{minutes\}" format. Add filler zeroes to the hour and minute output if their values consist of a single digit.
 
 ## Example
 
@@ -1257,16 +1262,17 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program to print **the hours of the day** from the given hour, minutes, seconds to 23:59:59 (**inclusive**), each on a separate line. 
+Crete a program that prints out **the time** this time there will be another number, representing the seconds.
+The program should start at the given time and run until reaching 23:59:59. Increment the second, minute and hour values accordingly.
 
 ## Input
-The input is entered from the console as **3** lines:
+The input comes in the form of **3** lines:
 - First line - **hours** - integer in range \[0...23\]
 - Second line - **minutes** - integer in range \[0...59\]
 - Third line - **seconds** - integer in range \[0...59\]
 
 ## Output
-- The output should be printed in the following format "\{hour\} : \{minutes\} : \{seconds\}"
+- The output should be printed in the following format "\{hour\} : \{minutes\} : \{seconds\}". Add filler zeroes if the output for any of the output elements cosists of a single digit.
 
 ## Example
 
@@ -1536,17 +1542,17 @@ public class Main {
 [task-description]
 ## Description
 
-Write a program that calculates **how many solutions in natural numbers (including zero)** has the equation:
-
+Create a program that calculates **all possible solutions** to the equation:
+The value of each element can include 0 and must be an Integer.
 
 `x1 + x2 + x3 + x4 + x5 = n`
 
 
 ## Input
-- The input consists a single number - n - integer
+- The input consists a single number - n - (integer)
 
 ## Output
-- Print on the console the total number of solutions
+- Print out total number of solutions
 
 ## Example
 | **Input** | **Output** | **Comments** | 
@@ -1680,11 +1686,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that **calculates the ASCII value of a few words**, as the word with the **highest value** is the winner.
+Create a program that **calculates the ASCII value of some input words**. The word with the **highest value** is the winner.
 
-The value of a word is calculated when you sum the **ASCII values of all the letters of which it consists of**. 
+The value of a word is calculated when we sum the **ASCII values of all the letters which it consists of**. 
 
-From the console read words until the command "**STOP**", then print:
+The program should accept words from the console and calculate their value until the input: "**STOP**" is received, then prints:
 - "Winner is \{winner word\} - \{value of the word\}!"
 
 ## Example
@@ -1700,7 +1706,7 @@ From the console read words until the command "**STOP**", then print:
 - The first letter is "H| and it\'s ASCII value is 72, "o" has value 111, "u" has value 117, "s" has value 115, "e" has value 101
 
 Their sum is 516.
-- Keep doing the same calculations for the other words and get that Destination has the highest value - 1154
+- Performs same calculations for the following words and determines that **Destination** has the highest value - 1154
 
 [/task-description]
 [tests]
@@ -1805,19 +1811,20 @@ public class Main {
 [task-description]
 ## Description
 
-Write a program that reads **an integer N** from the console.
+Crate a program that reads **an integer `N`** from the console.
 
-The console should print **as many lines as the count of digits N has**. 
+There should be as many lines of output as the number of the **digits** N holds. If the number is made up of **3 digits** we should have **3 lines** of output, for example.
 
-The **first line** corresponds to the **units**, the second to the **tens**, third to the **hundreds of** the number, etc., until there are **no more digits** of the number.
+For the output value of each line wi should separate the digits of `N` starting form **right** to **left**, so that we will start form its last digit and go forward to the next one to the left.
 
-On each line you must print a **symbol**, which meets the following conditions:
+Each output line should be filled by a single symbol:
 
-- The symbol, which must be printed, can be found in the [ASCII table](http://www.asciitable.com/) 
+- Symbols are determined using the [ASCII table]:
 
-Its **decimal ASCII code** is calculated by adding **33** to the digit of the input number that corresponds to a given line
-- The symbol must be printed **as many times as the digit** corresponding to this line
-- If a given line **matches the digit 0**, on this line is printed "**ZERO**" once
+Their **ASCII code** is calculated by adding **33** to the curent digit
+- The symbol must be printed **as many times as the digit** 
+- If **0** should be used as a symbol on a certain line, the actual output should look like this: "**ZERO**"
+
 
 ## Example
 
@@ -1829,30 +1836,30 @@ Its **decimal ASCII code** is calculated by adding **33** to the digit of the in
 | | \#\# |
 
 ### Comments
-- The number 2049 has four digits so we will print four rows.
-- The first line corresponds to the digit 9
+- The number 2049 has four digits so we will print out four lines.
+- The first line will use the digit: `9`
 
 We add 33 to 9 and get 42.
 
-- This is the decimal ASCII code of the symbol it should be print on the first row
-- From the ASCII table we know that the corresponding symbol of 42 is '\*'
-- Because the first line corresponds to the digit 9 we print '\*' 9 times
-- For the second line the digit is 4. 4\+33=37. Using the ASCII table we find that the symbol to print is '%' 
-- We print '%' 4 times
+- This is the decimal ASCII code of the symbol that should fill the first output line
+- The corresponding ASCII code for 42 is `'\*'`
+- We have to print it out 9 times: '\*' 9 times
+- The second digit is 4. 4\+33=37. The ASCII code for: `%`
+- We print `%` 4 times
 - The third line matches a digit 0
 
-On this line, we print ZERO once.
+On this line, we print out the word `ZERO` once.
 
-- The last digit of the number is 2. 2\+33=35
-- From the ASCII table we find the symbol to print - '\#' and we print it twice
+- The last digit is 2. 2\+33=35
+    - That is - `\#` and we print it twice
 
 ### Hints
-- Read the number as a String, save its length in a variable using the **length() method**.
+- Read the number as a String and save its length in a variable using the **length() method**.
 
-Find more **information** about it on the Internet
-- To take the last digit of the number, divide it by 10 (**num % 10**) and save it in a variable
+You can more **information** about the elements of this problem on the Internet
+- To get the last digit of the number, divide it by 10 (**num % 10**) and save it in a variable
 
-Then **remove the last digit of the number**, dividing it by 10 (**num / 10**) so that the next digit to take is again the last one.
+- To **remove the last digit of the number**, divide it by 10 (**num / 10**).
 
 [/task-description]
 [tests]
@@ -2060,18 +2067,18 @@ public class Main {
 ## Description
 The course "Train the trainers" is ending and the final evaluation approaches.
 
-Help the jury by writing a program to calculate the **average score** of **each presentation** by a student, and the **average of all of them**.
+Help the jury by creating a program to calculate the **average score** of **each topic** that the trainer has presented, and the **the average grade of participant's performance**.
 
 ## Input
-- From the console of the first row read the number of people on the jury - **n** - an integer in the range \[1...20\]
-- Then on a separate line read the name of the presentation - **String**
-- For each presentation of the new line is read **n - the number of ratings** - the real number in the interval \[2.00 ... 6.00\]
+- The first line of input will represent the number of members in the joury - **n** - an integer in range \[1...20\]
+- The next line will hold a topic - a **String**
+- For each topic, the following lines of input will provide grades from each of the joury members - real numbers in range \[2.00 ... 6.00\]
 
 ## Output
-- After calculating the **average score** for a particular presentation, print to the console:   
-   "\{name of the presentation\} \- \{average score\}."
-- After receiving the command "**Finish**" on the console, print:
-    "Student\'s final assessment is \{average presentations of all presentations\}." and the program ends.
+- After calculating the **score** for each particular subject, print out:   
+   "\{name\} \- \{average score\}."
+- Upon receiving the command: "**Finish**", print:
+    "Student\'s final assessment is \{average of all grades\}."
 
 All scores must be formatted to the **second decimal point**.
 
