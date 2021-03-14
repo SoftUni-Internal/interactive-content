@@ -84,7 +84,8 @@ calculateArea(1)
 [slide hideTitle]
 # Problem with Solution: Currency Converter
 
-[video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/problem2-currency-converter-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/problem2-currency-converter-solution-TRIM-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8
+" poster="" /]
 
 [code-task title="Currency Converter" taskId="pb-js-expressions-Currency-Converted" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language="javascript"]
@@ -238,7 +239,8 @@ areaOfTriangle(3.1416)
 [slide hideTitle]
 # Problem with Solution: Days to Minutes
 
-[video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/problem1-days-to-minutes-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/problem1-days-to-minutes-solution-TRIM-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8
+" poster="" /]
 
 [code-task title="Days to Minutes" taskId="pb-js-expressions-Days-to-Minutes" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language="javascript"]
