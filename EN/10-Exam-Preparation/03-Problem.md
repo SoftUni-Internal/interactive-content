@@ -6,13 +6,13 @@
 [task-description]
 # Description
 
-**Use the resources you downloaded in the first task.**
+**Use the resources from previous task.**
 
 You will receive a skeleton with one class inside. 
 
 The class will have some methods, fields and constructors. 
 
-Cover the whole class with unit tests to make sure that the class is working as intended.
+Cover the whole class with unit tests to make sure that it works as intended.
 
 [/task-description]
 [code-upload /]

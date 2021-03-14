@@ -6,7 +6,7 @@
 [task-description]
 # Overview
 
-In this exam, you need to build an online shop project, which has **peripherals**, **components**, and **computers**. 
+In this exam, you have to build an online shop project, which has **peripherals**, **components**, and **computers**. 
 
 The project will consist of **model classes** and a **controller class**, which manages the **interaction** between the **peripherals**, **components**, and **computers**.
 
@@ -30,7 +30,7 @@ The project will consist of **model classes** and a **controller class**, which 
 
 You are given interfaces and you have to implement their functionality in the **correct classes**.
 
-There are **4** types of entities in the application: **Product, Component, Peripheral and Computer**.
+There are **4** types of entities in the application: **Product, Component, Peripheral, and Computer**.
 
 # Product 
 
@@ -68,7 +68,7 @@ Override the **toString()** method with the format:
 
 "**Overall Performance:** \{**overall performance**\}. **Price:** \{**price**\} - \{**product type**\}: \{**manufacturer**\} \{**model**\} (**Id:** \{**id**\})"
 
-## Child classes
+## Child Classes
 
 There are several concrete types of **products**:
 
@@ -94,7 +94,7 @@ Override the **toString()** method with the format:
 
 "**Overall Performance:** \{**overall performance**\}. **Price:** \{**price**\} - \{**product type**\}: \{**manufacturer**\} \{**model**\} (**Id:** \{**id**\}) **Generation:** \{**generation**\}"
 
-## Child classes
+## Child Classes
 
 There are several concrete types of **components** where the **overall performance** has a **different multiplier**:
 
@@ -125,7 +125,7 @@ Override the **toString()** method with the format:
 
 "**Overall Performance:** \{**overall performance**\}. **Price:** \{**price**\} - \{**product type**\}: \{**manufacturer**\} \{**model**\} (**Id:** \{**id**\}) **Connection Type:** \{**connection type**\}"
 
-## Child classes
+## Child Classes
 
 There are several concrete types of **peripherals**:
 
@@ -174,28 +174,29 @@ Override the **toString()** method with the format:
 ## Behavior 
 
 - `double getOverallPerformance()`
-     - **override the base functionality** (if the components collection is empty, it should return only the **computer overall performance**, otherwise return the sum of the computer overall performance and the average overall performance from all components)
+     - **override the base functionality** (if the components collection is empty, it should return only the **computer's overall performance**
+     - otherwise, return the sum of the computer's overall performance and the average overall performance from all components)
 
 - `double getPrice()`
      - **override the base functionality** (the price is equal to the **total sum** of the **computer price** with the **sum of all component prices** and the **sum of all peripheral prices**)
 
 - `void addComponent(Component component)`
      - if the components collection contains a component with the same component type, throw an **IllegalArgumentException** with the message "**Component** \{**component type**\} **already exists in** \{**computer type**\} **with Id** \{**id**\}."
-     - otherwise add the component in the components collection
+     - otherwise, add the component to the components collection
 
 - `Component removeComponent(String componentType)`
      - if the components collection is empty or does not have a component of that type, throw an **IllegalArgumentException** with the message "**Component** \{**component type**\} **does not exist in** \{**computer type**\} **with Id** \{**id**\}."
-     - otherwise remove the component of that type and return it.
+     - otherwise, remove the component of that type and return it.
 
 - `void аddPeripheral(Peripheral peripheral)`
      - if the peripherals collection contains a peripheral with the same peripheral type, throw an **IllegalArgumentException** with the message "**Peripheral** \{**peripheral type**\} **already exists in** \{**computer type**\} **with Id** \{**id**\}."
-     - otherwise add the peripheral in peripherals collection
+     - otherwise, add the peripheral in peripherals collection
 
 - `Peripheral removePeripheral(String peripheralType)`
      - if the peripherals collection is empty or does not have a peripheral of that type, throw an **IllegalArgumentException** with the message "**Peripheral** \{**peripheral type**\} **does not exist in** \{**computer type**\} **with Id** \{**id**\}."
-     - otherwise remove the peripheral of that type and return it
+     - otherwise, remove the peripheral of that type and return it
 
-## Child classes
+## Child Classes
 
 There are several specific types of **computers**, where the **overall performance** has a **different value**:
 
