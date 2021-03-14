@@ -6,8 +6,6 @@
 [task-description]
 # Description
 
-# Task 3: Unit Testing
-
 **Use the resources you downloaded in the first task.**
 
 You will receive a skeleton with one class inside. 

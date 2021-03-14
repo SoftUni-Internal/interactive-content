@@ -10,8 +10,6 @@
 
 # Description
 
-# Task 2: Business Logic
-
 ## The Controller Class
 
 The business logic of the program should be concentrated around several **commands**. 

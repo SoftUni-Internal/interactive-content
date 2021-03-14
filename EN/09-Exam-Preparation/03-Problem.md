@@ -8,8 +8,6 @@
 [task-description]
 # Description
 
-# Task 3: Unit Tests
-
 **Use the resources you downloaded in the first task.**
 
 You will receive a skeleton with **Present** and **PresentBag** classes inside. 

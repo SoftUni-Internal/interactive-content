@@ -26,8 +26,6 @@ The project will consist of **model classes** and a **controller class**, which 
 
 # Description
 
-# Task 1: Structure
-
 **For this task's evaluation, logic in the methods is not included.**
 
 You are given interfaces and you have to implement their functionality in the **correct classes**.
