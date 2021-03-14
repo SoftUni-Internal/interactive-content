@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 # P!rates
-[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/05.JS-Fundamentals-Exam-Prep/EN/pirates-problem-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/05.JS-Fundamentals-Exam-Prep/RO/Exam 3-3-pirates-Video-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 [code-task title="P!rates" taskId="js-fundamentals-2-examPreparation-problem-3" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
