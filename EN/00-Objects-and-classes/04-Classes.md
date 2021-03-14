@@ -37,7 +37,8 @@ The `constructor` method will be called every time the class is **instantiated**
 [slide hideTitle]
 # Class Example
 
-[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-27-Class-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-27-Class-example-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8
+" poster="" /]
 
 The `class` keyword is used to create a class.
 
@@ -66,7 +67,8 @@ let student = new Student('Peter', 5.50);
 [slide hideTitle]
 # Functions in a Class
 
-[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-28-Functions-in-a-class-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-28-Functions-in-a-class-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8
+" poster="" /]
 
 TODO: The first slide (Class Example) in this video must be removed.
 
