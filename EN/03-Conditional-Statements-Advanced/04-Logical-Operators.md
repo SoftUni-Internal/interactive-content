@@ -142,8 +142,7 @@ if (x >= x1 && x <= x2 && y >= y1 && y <= y2) {
 [slide hideTitle]
 # Problem with Solution: Bonus Points
 
-[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-23-Problem-and-Solution-Bonus-Points-solution-TRIM-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8
-" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-23-Problem-and-Solution-Bonus-Points-solution-TRIM-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Bonus Points" taskId="pb-js-conditional-statements-advanced-Bonus-Points" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -268,8 +267,7 @@ Reaching `b`, it understands that it has a `true` value and the whole **expressi
 # Problem with Solution: Food or Drink
 
 
-[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-24-25-Logical-or-and-Problem and Solution-Food-Or-Drink-TRIM-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8
-" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-24-25-Logical-or-and-Problem and Solution-Food-Or-Drink-TRIM-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Food or Drink" taskId="pb-js-conditional-statements-advanced-Food-or-Drink" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
