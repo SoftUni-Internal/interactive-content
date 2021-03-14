@@ -1,11 +1,12 @@
+# Abstract Classes
 
 [slide hideTitle]
 
-# Abstract Classes
+# What Is an Abstract Class
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-28-29-abstract-class-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Abstract classes in Java are similar to **interfaces**, except they can contain default methods implementation.
+Abstract classes in Java are similar to **interfaces**, except they can contain default method implementation.
 
 They cannot be **instantiated** because we **cannot create** objects of abstract classes.
 
