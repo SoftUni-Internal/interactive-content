@@ -40,7 +40,7 @@ public class Student extends Person {
 
 - Look for classes with the **same role**
 
-- Look for **IS-A** and **IS-A-SUBSTITUT**E for relationship
+- Look for **IS-A** and **IS-A-SUBSTITUTE** for relationship
 
 - Consider **Composition** and **Delegation** instead
 

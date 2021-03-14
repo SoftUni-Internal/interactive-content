@@ -163,7 +163,7 @@ class Person {
 class Employee extends Person { 
   public void fire(String reasons) { 
     System.out.println(
-        super.name +     // We use the `super` keyword to access the Superclass/Inherited class members.
+        super.name + // We use the `super` keyword to access the Superclass/Inherited class members.
         " got fired because " + reasons);
   }
 }
@@ -182,13 +182,13 @@ class Employee extends Person {
 ## Description
 Create three classes named **Animal, Dog** and **Puppy**. 
 
-**Animal** with a single public method `.eat()` that prints: **"eating…"**.
+**Animal** - with a single public method `.eat()` that prints: **"eating…"**.
 
-**Dog** with a single public method `.bark()` that prints: **"barking…"**.
+**Dog** - with a single public method `.bark()` that prints: **"barking…"**.
 
-Puppy with a single public method weep() that prints: **"weeping…"**.
+**Puppy** - with a single public method weep() that prints: **"weeping…"**.
 
-**Dog** should inherit from **Animal**. **Puppy** should inherit from **Dog**. 
+**Dog** - should inherit from **Animal**. **Puppy** should inherit from **Dog**. 
 
 [image assetsSrc="inheritance-example(10).png" /]
 

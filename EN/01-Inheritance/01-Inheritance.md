@@ -16,7 +16,7 @@ The idea behind using **Inheritance** is that you can build classes upon already
 
 ```java
 public class Mammal {...}
-// Mammal is the parent class, this class passes its members to its children
+// Mammal is the parent class, this class passes its members to its children.
 
 public class Cow extends Mammal {...}
 // Cow is the child class, this class inherits the members of its parent class.

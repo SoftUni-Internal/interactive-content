@@ -28,7 +28,7 @@ String nameClass = myDogClass.getSimpleName();
 ## In the next lesson, you will learn:
 
 - Unit Testing
-- Junit
+  - JUnit
 
 
 

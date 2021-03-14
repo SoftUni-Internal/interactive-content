@@ -29,7 +29,8 @@ class Person {
 - Derived classes **can hide/shadow** Superclass variables by implementing a unit with the same name for itself
 
 
-- When you are using **shadowing** you can rebase an entire method, this means changing its parameters and logic inside, but not its return type. 
+- When you are using **shadowing**, you can rebase an entire method
+  * this means changing its parameters and logic inside, but not its return type
 
 ```java
 class Person { 
@@ -37,9 +38,12 @@ class Person {
   }
 
 class Patient extends Person {
-  protected float weight; // Hides (shadows) the weight Integer.
+  protected float weight; 
+  // Hides (shadows) the weight Integer.
+
   public void method() {
-    double weight = 0.5d; // As it is more concrete, it hides both, but it lives only inside the method brackets.
+    // As it is more concrete, it hides both, but it lives only inside the method brackets.
+    double weight = 0.5d;
   }
 }
 ```
@@ -78,9 +82,9 @@ class Patient extends Person {
 
 It is done by using the `@Override` keyword.
 
-It is an important tool as it is connected to another pillar of the OOP **Polymorphism**.
+It is an important tool as it is connected to another pillar of the OOP **polymorphism**.
 
-The difference between **Shadowing** and **Overriding** is that when you override you cannot change the parameters.
+The difference between **shadowing** and **overriding** is that when you override, you cannot change the parameters.
 
 Other than that, when we have a **variable of a base class type** and we hold a **Subclass object** if we have an overridden class member and we call it, it will use **the logic declared by the Subclass overriding it**.
 
@@ -152,8 +156,8 @@ public class MyMath extends Math { }     // Error…
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-27-inheritance-benefits-abstraction-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - With inheritance, we can provide an abstraction to the classes we use
-- We can re-use code, less code means fewer bugs
-- We can achieve **Polymorphism**
+- We can reuse code, less code means fewer bugs
+- We can achieve **polymorphism**
 - Inheritance provides a clear model structure, which is easy to understand
 - With inheritance, if we have a bug in the parent class, we can fix it for all child classes as well
 
@@ -200,7 +204,7 @@ public class MyArrayList<E> extends ArrayList<E>{
 [code-upload allowedMemory="30" /]
 
 [task-description]
-## Description
+# Description
 
 Create a **RandomArrayList** class that has all the functionality of an **ArrayList**.
 
