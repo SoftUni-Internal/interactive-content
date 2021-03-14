@@ -19,13 +19,18 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which:
+Create a program, that:
 
-* Prints information about **apartments** (odd rows), **offices** (even rows) and the **last floor** (last row)
-* Apartment `"A{buildingNum}{apartmentNum}"`
-* Office `"O{floorNum}{officeNum}"`
-* Floor `"L{buildingNum}{apartmentNum}"`
-* The numbers always start from 0
+* Prints information about a building:
+
+*  Odd-numbered floors can contain only **apartments**, indicated by a capital `A`
+*  Even-numbered floors can contain only **offices**, indicated by a capital `O`
+*  The last floor, no matter its number, can only hold **large apartments** marked by a capital `L`
+*  Use the following naming pattern for the spaces on each floor:
+* Apartments: `"A{buildingNum}{apartmentNum}"`
+* Offices: `"O{floorNum}{officeNum}"`
+* Large apartments: `"L{buildingNum}{apartmentNum}"`
+* The floor numbering starts from 0
 
 ## Example
 | **Input** | **Output** |
@@ -197,7 +202,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which:
+Create a program, that:
 * Reads an integer - **n**
 * Generates custom passwords, which meet the following conditions:
 * The **first** part is an **even** number and should not be greater than **n**
@@ -281,11 +286,14 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which:
-* Reads a **number - n**, from the console
-* Finds all **3-digit numbers** which product of the multiplication of their digits is equal to **n**
+Create a program, that:
+* Reads a **number** from the console
+* Finds all **3-digit numbers** that produce this number when multyplying all their digits.
 
 ## Example
+
+113 = 1\*1\*3 == 3; 131 = 1\*\3\*1 == 3; 311 = 3\*1\*1 == 3
+
 | **Input** | **Output** |
 | --- | --- |
 | 3 | 113 |
