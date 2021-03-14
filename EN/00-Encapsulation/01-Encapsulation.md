@@ -39,7 +39,7 @@ Fields should be **private** (-):
 
 `-age: int`
 
-Accessors and Mutators should be **public** (+):
+Accessors and mutators should be **public** (+):
 
 `+Person(String name, int age)`
 
