@@ -48,7 +48,7 @@ public class CalculateArea {
 public class Circle {
 
     private double radius;
-    // TODO add getters and setters
+     // TODO: add getters and setters
 }
 ``` 
 
@@ -60,7 +60,7 @@ public class Rectangle {
 
     private double width;
     private double height;
-    // TODO add getters and setters
+     // TODO: add getters and setters
 
 }
 ``` 
@@ -97,7 +97,7 @@ public interface Shape {
 public class Circle implements Shape {
 
     private double radius;
-    // TODO add getters and setters
+     // TODO: add getters and setters
 
     
     @Override
@@ -114,7 +114,7 @@ public class Rectangle implements Shape {
 
     private double width;
     private double height;
-    // TODO add getters and setters
+     // TODO: add getters and setters
 
 
     @Override
@@ -131,7 +131,7 @@ public class Square implements Shape {
 
     private double side;
 
-    // TODO add getters and setters
+     // TODO: add getters and setters
    
     @Override
     public double calculateArea() {

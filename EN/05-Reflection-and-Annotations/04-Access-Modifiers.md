@@ -34,7 +34,7 @@ The **output** will be:
 true
 ```
 
-Also, we are able to check if the modifiers are protected, public or static with the following methods:
+Also, we are able to **check** if the modifiers are **protected, public or static** with the following **methods**:
 
 - `Modifier.isProtected(modifiers)`
 

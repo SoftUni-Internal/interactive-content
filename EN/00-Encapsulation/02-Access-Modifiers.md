@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Access Modifiers
+# Access Modifier Types
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-9-10-11-12-13-access-modifiers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -55,8 +55,12 @@ Team real = new Team("Real");
 real.setName("Real Madrid");
 System.out.println(real.getName()); 
 
-// Output:
-// Real Madrid
+```
+
+The output will be:
+
+```
+Real Madrid
 ```
 
 ## Public Access Modifier

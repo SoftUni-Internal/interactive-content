@@ -51,7 +51,7 @@ Like in the code above - It was a constructor taking `String`, so we supplied on
 
 Analogically to the way we get constructors, we can obtain **class members**.
 
-Lets see how we can recieve all **public** fields:
+Let us see how we can recieve all **public** fields:
 
 ``` java
 Field field = aClass.getField("fieldname");
@@ -83,8 +83,10 @@ Let us discuss how we can set the value for a field via Reflection.
 
 ``` java
 Field field = targetClass.getDeclaredField(fieldName);
-field.setAccessible(true); // We need to change the behavior of the AccessibleObject
-field.set(object, value); // The object parameter passed to the get and set method should be an instance of the class that owns the field.
+field.setAccessible(true); // We need to change the behavior of the AccessibleObject.
+
+field.set(object, value); // The object parameter passed to the get and set method 
+                          // should be an instance of the class that owns the field.
 ```
 
 [/slide]
@@ -123,7 +125,7 @@ public class Main {
     }
 ```
 
-The output will be:
+The **output** will be:
 ```
 method walk
 method makeSound
@@ -154,7 +156,8 @@ Method method = aClass.getMethod("doSomething", String.class);
 
 We can obtain methods without parameters:
 ```java 
-Method method = aClass.getMethod("doSomething", null); // `null` is set when we want a method without parameters. 
+Method method = aClass.getMethod("doSomething", null); 
+// `null` is set when we want a method without parameters. 
 ```
 
 ## Getting a method's parameters and return type
@@ -170,7 +173,8 @@ Class returnType = method.getReturnType();
 
 ```java
 Method method = myObject.class.getMethod("methodName", String.class);
-Object returnValue = method.invoke(null, "arg1"); // We use null for static methods
+Object returnValue = method.invoke(null, "arg1"); 
+// We use null for static methods
 ```
 
 [/slide]

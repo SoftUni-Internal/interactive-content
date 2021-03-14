@@ -1,6 +1,8 @@
+# Interfaces
+
 [slide hideTitle]
 
-# Interfaces
+# What Are Interfaces
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-10-11-interfaces-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

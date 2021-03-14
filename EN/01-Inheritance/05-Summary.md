@@ -17,10 +17,10 @@ class Employee extends Person { … }
 - **Subclass inherits** members from **Superclass**
 
 ```java
-class Person { … } // baseclass/ParentClass
+class Person { … } // Base Class/Parent Class
 
-class Student extends Person { … }  //Subclass/Child
-class Employee extends Person { … } //Subclass/Child
+class Student extends Person { … }  // Subclass/Child
+class Employee extends Person { … } // Subclass/Child
 ```
 
 - Subclass can **override** methods
@@ -40,7 +40,7 @@ public class Student extends Person {
 
 - Look for classes with the **same role**
 
-- Look for **IS-A** and **IS-A-SUBSTITUT**E for relationship
+- Look for **IS-A** and **IS-A-SUBSTITUTE** for relationship
 
 - Consider **Composition** and **Delegation** instead
 

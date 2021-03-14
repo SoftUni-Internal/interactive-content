@@ -61,12 +61,12 @@ public class MotorCar implements Vehicle {
     private Engine engine;
  
     public void startEngine() {
-        // start the engine!
+        // Start the engine
         engine.on();
     }
  
     public void accelerate() {
-        // accelerate
+        // Accelerate
         engine.powerOn(1000);
     }
 }
@@ -84,7 +84,7 @@ public class ElectricCar implements Vehicle {
     }
  
     public void accelerate() {
-        // accelerate
+        // Accelerate
     }
 }
 ```
@@ -128,12 +128,12 @@ public class MotorCar implements Car {
     private Engine engine;
  
     public void startEngine() {
-        // start the engine!
+        // Start the engine
         engine.on();
     }
  
     public void accelerate() {
-        // accelerate
+        // Accelerate
         engine.powerOn(1000);
     }
 }
@@ -146,12 +146,12 @@ public class ElectricCar implements ElectricVehicle {
 
     @Override
     public int batteryLife() {
-        // battery life
+        // Battery life
     }
 
     @Override
     public void accelerate() {
-        // accelerate
+        // Accelerate
     }
 }
 ```

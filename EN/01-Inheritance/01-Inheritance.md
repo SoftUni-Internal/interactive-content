@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Inheritance
+# What Is Inheritance
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-3-4-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -16,10 +16,10 @@ The idea behind using **Inheritance** is that you can build classes upon already
 
 ```java
 public class Mammal {...}
-//Mammal is the parent class, this class passes its members to its children
+// Mammal is the parent class, this class passes its members to its children.
 
 public class Cow extends Mammal {...}
-//Cow is the child class, this class inherits the members of its parent class.
+// Cow is the child class, this class inherits the members of its parent class.
 ```
 
 [/slide]
