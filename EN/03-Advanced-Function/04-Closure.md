@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# What is a closure?
+# What is a Closure?
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-20-21-closure-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
