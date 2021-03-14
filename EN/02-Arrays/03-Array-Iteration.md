@@ -191,8 +191,7 @@ reverse(5, [664, 43, 715, 8899, 747, 44, 78])
 [slide hideTitle]
 # Problem with Solution: Reverse an Array of Strings
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-21-Problem-Reverse-array-of-strings-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8
-" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-21-Problem-Reverse-array-of-strings-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Reverse an Array of Strings" taskId="fundamentals-js-arrays-lab-Reverse-an-Array-of-Strings" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
