@@ -16,22 +16,22 @@ public class Program {
 ## Description
 The Smiths are planning their family trip. 
 
-Your task is to create a program that calculates whether their budget will be enough, knowing how many nights they have planned to stay, what the price per night is and what percentage of the budget has been provided for additional costs.
+Your task is to create a program that calculates whether their budget will be sufficient, knowing how many nights they have planned to stay, what the price per night is and what percentage of their budget must be spent on additional costs.
 
-Keep in mind that if the number of nights is greater than 7, the price per night should be reduced by 5%.
+Keep in mind that if they stay longer than 7 nights, the price per night should be reduced by 5%.
 
 ## Input
-You will receive **4 lines of input from the console**:
-- The budget that they have – **a real number** in the range [1.00 … 10000.00] 
-- The count of nights – **an integer** in range [0 … 1000] 
+You will receive **4 lines of input**:
+- The budget that they have – **a real number** in range [1.00 … 10000.00] 
+- The number of nights – **an integer** in range [0 … 1000] 
 - The price per night – **a real number** in range [1.00 … 500.00] 
 - The additional cost percentage – **an integer** in range [0 … 100] 
 
 ## Output
-The output depends on the budget:
-- If the budget **is enough**:
+The output depends on whether the budget is sufficient or not:
+- If the budget **is sufficient**:
 	- "The Smiths will be left with \{money left after the trip\} dollars after the vacation."
-- If the budget is **NOT enough**:
+- If the budget is **does not suffice**:
 	- "\{money needed\} dollars needed."
 
 The sum must be formatted to the second digit after the decimal point.
@@ -46,9 +46,9 @@ The sum must be formatted to the second digit after the decimal point.
 
 ### Comments
 - 8 nights > 7, therefore there is a 5% discount on the price per night, which is 100$
-- 5% from 100 is 5 -> 100 - 5 = 95$ per night after the discount, 8 * 95$ = 760$
-- 2% of the budget is provided for additional costs. 2% from 800.50 is 16.01$
-- 760 + 16.01 = 776.01 <= 800.50, therefore the money is enough and after the trip they return with 800.50 - 776.01 = 24.49$
+- 5% of 100 is 5 -> 100 - 5 = 95$ per night after the discount, 8 * 95$ = 760$
+- 2% of the budget is spent on additional costs. 2% from 800.50 is 16.01$
+- 760 + 16.01 = 776.01 <= 800.50, therefore they have enough money and after the trip they return keeping 800.50 - 776.01 = 24.49$
  
 [/task-description]
 [code-io /]
