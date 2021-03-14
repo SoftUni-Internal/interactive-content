@@ -264,7 +264,7 @@ Then, create a nested class **LibIterator** from UML diagram below:
 [image assetsSrc="java-oop-basics-uml-book-iterable2.png" /]
 
 
-| `<Iterator<Book>>` |
+| `<<Iterator<Book>>` |
 | --- |
 | **LibIterator** |
 |- counter: int |
