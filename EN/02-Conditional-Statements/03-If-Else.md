@@ -87,7 +87,8 @@ if (color == "red") {
 [slide hideTitle]
 # Problem with Solution: Even or Odd
 
-[video src="https://videos.softuni.org/hls/javascript-basics/02.Conditions/EN/02-conditional-statements-js-20-Problem-Solution-Even-or-Odd-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/02.Conditions/EN/02-conditional-statements-js-20-Problem-Solution-Even-or-Odd-solution-TRIM-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8
+" poster="" /]
 
 
 [code-task title="Even or Odd" taskId="pb-js-conditional-statements-Even-or-Odd" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
