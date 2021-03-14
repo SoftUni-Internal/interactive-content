@@ -147,7 +147,7 @@ console.log(result);
 [/slide]
 
 [slide hideTitle]
-# Problem[ cu soluție: Match Full Name
+# Problem cu soluție: Match Full Name
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-25-Solution-match-full-name-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
