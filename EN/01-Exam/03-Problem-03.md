@@ -23,22 +23,22 @@ Create a program that calculates the cost of drinks, that a customer has bought 
 | Tea | 0.50$ | 0.60$ | 0.70$ |
 
 Keep in mind the following discounts:
-- There is a 35% discount if the selected drink is without sugar
+- There is a 35% discount if the selected drink should **not** contain **sugar**
 - There is a 25% discount if 5 cups of Espresso have been purchased
-- There is a 20% discount from the final price, if the cost exceeds 15$
+- There is a 20% discount from the total bill, if it exceeds 15$
 
 The discounts are applied in the order of their description.
 
 ## Input
-You will receive **3 lines of input from the console**:
-- The first line will be for the drink - **a string**: "Espresso", "Cappuccino" or "Tea" 
-- The second line will be for the sugar - **a string**: "Without", "Normal" or "Extra" 
-- The third line will be for the count of drinks - **an integer** in range [1… 50] 
+You will receive **3 lines of input**:
+- The first line will hold the type of drink - **a string**: "Espresso", "Cappuccino" or "Tea" 
+- The second line will regard the sugar level - **a string**: "Without", "Normal" or "Extra" 
+- The third line will specify the number of drinks - **an integer** in range [1… 50] 
 
 ## Output
-Print **one line** to the console:
+Print **a single line** to the console:
 - "You bought \{count drinks\} cups of \{drink\} for \{total price\} dollars."
-The price must be formatted to **two decimal places**.
+The price must be formatted up to **the second decimal place**.
 
 ## Example
 | **Input** | **Output** |
@@ -48,8 +48,8 @@ The price must be formatted to **two decimal places**.
 | 10 |  |
 
 ### Comments
-- 10 cups of espresso without sugar, 0.90$ each -> 9$
-- 35% discount for a sugar free drink of 9$ -> 3.15$ -> 9 – 3.15 = 5.85$
+- 10 cups of espresso, no sugar, 0.90$ each -> 9$
+- 35% discount for a sugar-free drink of 9$ -> 3.15$ -> 9 – 3.15 = 5.85$
 - 25% discount on the purchase of at least 5 cups of espresso. 25% of 5.85$ -> 1.4625$
 - 5.85 – 1.4625 -> 4.3875$
 
