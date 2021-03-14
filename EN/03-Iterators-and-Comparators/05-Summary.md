@@ -13,7 +13,7 @@ void method(int... b){
 }
 ```
 
-- Nested Classes
+- Classes can be nested to group them logically
 
 ```java
 class OuterClass
