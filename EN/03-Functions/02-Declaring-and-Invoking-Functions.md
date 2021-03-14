@@ -3,7 +3,8 @@
 [slide hideTitle]
 # Declaring a Function
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-6-7-declaring-a-function-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-6-7-declaring-a-function-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8
+" poster="" /]
 
 A function is defined by using the keyword `function` followed by the name of the function and a set of parentheses which hold parameters or values to be received by the function. 
 
@@ -46,7 +47,8 @@ function printText(text){
 [slide hideTitle]
 # Invoking a Function
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-8-invoking-a-function-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-8-9-invoking-a-function-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8
+" poster="" /]
 
 
 A function is not executed before it is invoked.
