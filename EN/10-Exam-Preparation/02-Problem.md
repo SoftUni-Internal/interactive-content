@@ -7,9 +7,9 @@
 [task-description]
 # Description
 
-# Task 2: Business Logic (150 Points)
+## Task 2: Business Logic (150 Points)
 
-## The Controller Class
+# The Controller Class
 
 The business logic of the program should be concentrated around several **commands**. 
 
@@ -27,9 +27,13 @@ The given methods should have the logic, described below.
 
 ## Commands
 
-There are several commands, which control the business logic of the application. They are stated below. 
+There are several commands, which control the business logic of the application. 
 
-**NOTE:** For each command, except for "**addComputer**" and "**buyBest**", you should check if a computer, with that ID, exists in the computers collection. If it does not, throw an **IllegalArgumentException** with the message "**Computer with this id does not exist.**".
+They are listed below. 
+
+**NOTE:** For each command, except for "**addComputer**" and "**buyBest**", you should check if a computer with that ID exists in the **computers** collection. 
+
+If it does not, throw an **IllegalArgumentException** with the message "**Computer with this id does not exist.**".
 
 ### AddComputer Command:
 
@@ -89,7 +93,7 @@ The method must be called **removeComponent**.
 
 **Functionality:**
 
-Removes a component, with the given **type from the computer with that ID** and removes the component from the **collection of components**.
+Removes a component with the given **type from the computer with that ID** and removes the component from the **collection of components**.
 
 If it is successful, it returns "**Successfully removed** \{**component type**\} **with id** \{**component id**\}."
 
@@ -110,9 +114,9 @@ The method must be called **addPeripheral**.
 
 **Functionality:**
 
-Creates a peripheral, with the correct type, and **adds it to the computer with that id, then adds it to the collection of peripherals in the controller**.
+Creates a peripheral with the correct type, and **adds it to the computer with that id, then adds it to the collection of peripherals in the controller**.
 
-If a peripheral, with the **same id**, already exists in **the peripherals collection**, it throws an **IllegalArgumentException** with the message "**Peripheral with this id already exists.**"
+If a peripheral with the **same id** already exists in **the peripherals collection**, it throws an **IllegalArgumentException** with the message "**Peripheral with this id already exists.**"
 
 If the peripheral type is invalid, throws an **IllegalArgumentException** with the message "**Peripheral type is invalid.**"
 
@@ -129,7 +133,7 @@ The method must be called **removePeripheral**.
 
 **Functionality:**
 
-Removes a peripheral, with the given **type from the computer** with that **id**, then removes the peripheral from the **collection of peripherals**.
+Removes a peripheral with the given **type from the computer** with matching **id**, then removes the peripheral from the **collection of peripherals**.
 
 If it is successful, it returns **"Successfully removed** \{**peripheral type**\} **with id** \{**peripheral id**\}.".
 
@@ -143,9 +147,9 @@ The method must be called **buyComputer**.
 
 **Functionality:**
 
-Removes a computer, with the given **ID**, from the **collection of computers**.
+Removes a computer with the given **id** from the **collection of computers**.
 
-If it is successful, it returns the **toString method on the removed computer**.
+If it is successful, it returns the **toString method of the removed computer**.
 
 ### BuyBestComputer Command:
 
@@ -157,9 +161,11 @@ The method must be called **BuyBestComputer**.
 
 **Functionality:**
 
-Removes the computer with the highest overall performance and with a price, less or equal to the budget, from the collection of computers.
+**Removes** from the collection, the computer with:
+- the **highest overall performance**
+- a **price, less or equal to the budget** 
 
-If there are not any computers in the collection or the budget is insufficient for any computer, throws an **IllegalArgumentException** with the message **"Can't buy a computer with a budget of** \$\{**budget**\}."
+If there are not any computers in the collection or the budget is insufficient for any computer, it throws an **IllegalArgumentException** with the message **"Can't buy a computer with a budget of** \$\{**budget**\}."
 
 If it is successful, it returns the **toString method on the removed computer**.
 
@@ -185,13 +191,15 @@ Ends the program.
 
 # Input / Output
 
-You are provided with one interface, which will help you with the correct execution process of your program. 
+You are provided with one interface which will help you with the correct execution process of your program. 
 
-The interface is called **Engine** and the class implementing this interface should read the input and when the program finishes, this class should print the output.
+The interface is called **Engine**, and the class implementing this interface should read the input
+
+When the program finishes, this class should print the output.
 
 You are given the **EngineImpl** class with written logic in it. 
 
-In order the code to be **compiled**, some parts are **commented, don not forget to comment them out**.
+In order for the code to be **compiled**, some parts are **commented, do not forget to comment them out**.
 
 The **try-catch block** is also **commented** in order for the program to **throw exceptions and for you to see them, comment it out** when you are **ready** with this too.
 
@@ -209,9 +217,9 @@ The **try-catch block** is also **commented** in order for the program to **thro
 
 ## Output
 
-Print the output, from each command, when issued.
+Print the output from each command, when issued.
 
-If an exception is thrown, during any of the commands' execution, print the exception message.
+If an exception is thrown during any of the commands' execution, print the exception message.
 
 # Examples
 
