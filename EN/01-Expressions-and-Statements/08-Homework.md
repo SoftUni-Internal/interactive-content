@@ -1473,14 +1473,6 @@ Print a single float to the console: the money George will need to pay the bill,
 | 2.50 | |
 | 1 | |
 
-### Hints
-- The price of the tuna = 6.90 + 6.90 \* 0.60 = 11.04 $/kg
-- Total sum of tuna = 1.5 \* 11.04 = 16.56
-- The price of the scads = 4.20 + 4.20 \* 0.80 =  7.56$/kg
-- Total sum of scads = 2.5 \* 7.56 = 18.90
-- The total sum of mussels = 1 \* 7.50 = 7.50
-- Bill = 16.56 + 18.90 + 7.50 = 42.96
-
 [/task-description]
 [tests]
 [test open]
