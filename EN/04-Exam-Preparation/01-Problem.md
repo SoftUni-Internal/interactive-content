@@ -19,43 +19,45 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program, that checks **if registrations are valid**.
+Create a program that checks **if some registration attempts can be processed or not**.
 
-Each registration consists of a **Username and a Password**.
+Each registration consists of a **username** and a **password**.
 
 
-On the **first line**, you will get a **number that indicates how many inputs** you will receive on the **next** lines.
+On the **first line**, you will receive a **number that indicates how many inputs** you will receive on the **next** lines.
 
 A **registration is valid** when:
 
-- The **username is surrounded by** "U\$"
+- The username is surrounded by ``"U\$"``
 
-- The **username needs to contain a minimum of 3 characters**, **start** with an **uppercase letter**, followed **only by lowercase letters**
+- The username needs to contain a **minimum of 3 characters**, to **start** with an **uppercase letter**, followed **only by lowercase letters**
 
-- The **password is surrounded by** "P@\$"
+- The password is surrounded by ``"P@\$"``
 
-- The **password needs to start with a minimum of 5 alphabetical letters** (not including digits) and **must end with a digit**
+- The password needs to start with a **minimum of 5 alphabetical characters** (not including digits) and to end with a **digit**
 
-**Example for a valid** registration: 
+**Example of a valid** registration: 
 - "U\$MichaelU\$P@\$asdqwe123P@\$"
 
-You must check if the registration is **valid and if it is,  print**:
+You have to check if the registration is **valid**. 
+
+- **If it is valid**, print out the following messages:
 - "Registration was successful"
 - "Username: \{Username\}, Password: \{Password\}"
 
-**If it is not** - print the following message:
+**If it is not valid** - print out the following message:
 - "Invalid username or password"
 
-In the end **print the count of successful registrations**:
+In the end, **print out the count of successful registrations**:
 - "Successful registrations: \{successfulRegistrationsCount\}"
 
 ### Input
 
-- On the first line, you will receive **n** - the count of inputs
-- On the next **n** lines - input that you have to check for valid registrations
+- On the first line, you will receive a number **n** - the count of input lines that you will receive
+- On the next **n** lines - a text, containing an username and a password that you have to check
 
 ### Output
-- Print all results from each input, each on a new line
+- Print all the expected messages, each on a new line
 - In the end, print the count of successful registrations
 
 ### Example
@@ -67,10 +69,10 @@ In the end **print the count of successful registrations**:
 | U\$UserU$P@\$ad2P@\$ | Invalid username or password |
 | | Successful registrations: 1 |
 
-### Comment
-- We have 3 input lines to check
-- The first one follows the rules and is valid
-- The second one does not because the password does not end with a digit
+### Comments
+- We have 3 input lines to check:
+- The first one follows the rules, so it is valid
+- The second one is not valid because the password does not end with a digit
 - The third one is not valid because the password is too short
 
 ### Example
