@@ -22,8 +22,6 @@
 
 # Description
 
-## Task 1: Structure
-
 You are given interfaces, and you have to implement their functionality in the **correct classes**.
 
 There are **4** types of entities in the application: **Dwarf, Present, Workshop, Instrument**. 
