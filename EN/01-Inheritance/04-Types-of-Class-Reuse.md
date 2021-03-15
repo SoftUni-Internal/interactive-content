@@ -36,6 +36,8 @@ Th;is relationship is called **HAS-A**:
 - **The Laptop HAS-A Touchpad**
 - **The Laptop HAS-A Keyboard**
 
+[image assetsSrc="inheritance-example(16).png" /]
+
 ```java
 class Laptop {
   Monitor monitor;
@@ -44,7 +46,7 @@ class Laptop {
   // Reusing classes...
 }
 ```
-[image assetsSrc="inheritance-example(16).png" /]
+
 
 [/slide]
 
