@@ -139,7 +139,7 @@ Create a program that:
 * **Subtract** - Subtracts **1** from the number
 * **END** -  Prints the number and ends the program
 
-## Example One
+## Example
 
 | **Input** | **Output** |
 | ---- | ---- |

@@ -890,8 +890,8 @@ O notă slabe este mai mică sau egală cu 4.00.
 ## Input
 - Pe prima linie – **număr de note bune** – un număr întreg în intervalul \[1…5\]
 - **După aceea în mod repetat două linii**:
-  - **Numele problemei - text**
-  - **Notă** - un număr întreg în intervalul\[2…6\]
+  - **numele problemei - text**
+  - **notă** - un număr întreg în intervalul\[2…6\]
 
 ## Output
 - Dacă Martin ajunge la comanda **Enough**", imprimă **3** linii:
@@ -1276,7 +1276,7 @@ După aceea, dacă nu ajunge să atingă obiectivul, va trebui să imprime mesaj
 | 2500| |
 | 3000| |
 | Going home| |
-| 200| | |
+| 200| |
 [/task-description]
 [tests]
 [test open]

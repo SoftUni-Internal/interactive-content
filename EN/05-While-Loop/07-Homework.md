@@ -894,8 +894,8 @@ A poor grade is a grade less or equal to 4.00.
 ## Input
 - On the first line – **number of poor grades** – integer in range \[1...5\]
 - **After that repeatedly two lines**:
-  - **Name of a problem - text**
-  - **Grade** - integer in range \[2...6\]
+  - **name of a problem - text**
+  - **grade** - integer in range \[2...6\]
 
 ## Output
 - If Martin reaches "**Enough**" command, print **3** lines:
@@ -1280,7 +1280,7 @@ After that, if she didn\'t manages to reach her goal, you have to print the foll
 | 2500| |
 | 3000| |
 | Going home| |
-| 200| | |
+| 200| | 
 [/task-description]
 [tests]
 [test open]
