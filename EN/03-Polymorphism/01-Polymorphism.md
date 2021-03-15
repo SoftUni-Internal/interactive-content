@@ -193,19 +193,19 @@ class Calculation {
 
 ## Dynamic Polymorphism
 
-**Dynamic Polymorphism** is a Polymorphism that is exhibited at runtime.
+**Dynamic polymorphism** is exhibited at runtime.
 
-Therefore the **behavior** of the **method** is decided at **runtime**.
+Therefore, the **behavior** of the **method** is decided at **runtime**.
 
-**Dynamic Polymorphism** can be achieved using **method overriding**.
+**Dynamic polymorphism** can be achieved using **method overriding**.
 
-We can declare a method in our **sub-class** while the method is already present in the **parent class**. 
+We can declare a method in our **subclass** while the method is already present in the **parent class**. 
 
 That is called **method overriding**.
 
 This way, a **child class** can give its own **implementation/property** to a method that is already provided by the **parent class**.
 
-To understand better, let us take a look at this **example**:
+To understand that better, let us take a look at this **example**:
 
 ``` java
 class Animal {
@@ -256,7 +256,7 @@ Dogs can eat meat.
 # Description
 Create a class **MathOperation**, which should have an `add()` method. 
 
-The `add()` method has to be invoked with **two**, **three** or **four** **Integers**.
+The `add()` method has to be invoked with **two**, **three** or **four** **integers**.
 
 **You should be able to use the class like this:**
 
@@ -404,26 +404,26 @@ Test Passed!
 
 ## Rules For Overriding Methods
 
-- We can override the method in a **Subclass**
+- We can override the methods in a **Subclass**
 
-- Parameters must be the same as parameters in **parent method**
+- Parameters must be the same as parameters in the **parent method**
 
-- The overriding method must have **same return type**
+- The overriding method must have the **same return type**
 
 - We cannot override **private**, **static** or **final** methods
 
-- Overriding methods cannot throw a **checked Exception** which is higher in the hierarchy than one thrown by the overridden method
+- Overriding methods cannot throw a **checked exception** which is higher in the hierarchy than one thrown by the overridden method
 
 ## Rules For Overloading Methods
 
-- We can **overload** method that take place in the **same class** or in its **sub-class**
+- We can **overload** methods that take place in the **same class** or in its **Subclass**
 
-- We can **overload Constructors** in Java
+- We can **overload constructors** in Java
 
-- Overloaded methods can have the **same** or **different** **return** types
+- Overloaded methods can have the **same or different return types**
 
-- Overloaded methods must have **different argument list**
+- Overloaded methods must have a **different argument list**
 
-- Overloaded method should always be the part of the same class, with **same name** but **different parameters**
+- Overloaded methods should always be the part of the same class, with **same name** but **different parameters**
 
 [/slide]
