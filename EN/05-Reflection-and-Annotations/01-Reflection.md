@@ -12,6 +12,8 @@ The software can be design to read, generate, transform or analyze our data.
 
 Based on that we can tell that **Java reflection** is a process of examining or modifying internal properties or behavior of a class at **runtime**.
 
+## What is Reflection
+
 Let us see a little more **detailed explanation** of what reflection is.
 
 All objects in Java own `getClass()` method. 
