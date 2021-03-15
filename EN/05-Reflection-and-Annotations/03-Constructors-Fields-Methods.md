@@ -188,7 +188,7 @@ Object returnValue = method.invoke(null, "arg1");
 
 [task-description]
 # Description
-Use reflection to get all **reflection** methods. 
+Use reflection to get all **Reflection** methods. 
 
 Then prepare an algorithm that will recognize, which methods are **getters** and **setters**. 
 
