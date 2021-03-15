@@ -7,8 +7,8 @@ Instrucțiuni care consta în câteva **bucle for** localizate **una în interio
 
 **Buclele imbricate de tip for** sunt utilizate pentru:
 
-* a executa o **acțiune**, care **execută** multiple **acțiuni**
-* a face calcule și variații mai **complexe** 
+* A executa o **acțiune**, care **execută** multiple **acțiuni**
+* A face calcule și variații mai **complexe** 
 
 Sintaxa unei **bucle imbricate for în Java** este după cum urmează:
 ```java
