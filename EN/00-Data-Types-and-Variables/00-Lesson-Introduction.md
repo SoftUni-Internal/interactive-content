@@ -10,27 +10,27 @@
 
 **1. Data Types and Variables**
 
-- Data types and their meaning
+- Data types. Definition
 
 - What is a variable 
 
-**2.The integer and double Data Types**
+**2. The integer and double Data Types**
 
-- The difference between The integer and double types
+- The difference between The Integer and Double types
 
-**3. Type Conversion**
+**3. Type Conversion (Casting)**
 
 - Implicit vs explicit conversion
 
 **4. Boolean Type**
 
-- What is a boolean
+- What is a boolean value
 
-- An overview of the boolean data type and what it is used for
+- An overview of the Boolean data type 
 
 **5. Character and String Type**
 
-- An overview of the character data type
+- An overview of the Character data type
 
 - An overview of the String data type
 
