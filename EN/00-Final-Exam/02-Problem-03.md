@@ -54,7 +54,7 @@ If the **piece is not in the collection**, you need to print:
 * Command "**ChangeKey**\|\{**piece**\}\|\{**newKey**\}":
 If the **piece is in the collection**, change its key to the specified one and print: 
 
-"**Changed the key of** \{**piece**\} **to** \{**newKey**}!"
+"**Changed the key of** \{**piece**\} **to** \{**newKey**\}!"
 
 If the **piece is not in the collection**, print: 
 "**Invalid operation!** \{**piece**\} **does not exist in the collection.**"
