@@ -15,7 +15,7 @@ public class Program {
 [/code-editor]
 [task-description]
 
-# nDescription
+# Description
 The weather is getting warmer and all clubs are launching promising offers. 
 
 Create a program that calculates the profit of a club for the evening and checks whether it reaches a certain goal or not.
