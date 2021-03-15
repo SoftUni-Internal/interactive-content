@@ -1731,20 +1731,18 @@ All numbers must be formatted to the second decimal place.
 
 ## Example
 | **Input** | **Output** |
-| --- | --- | 
+| --- | --- |
 | 10 | Top students: 30.00% |
 | 3.00 | Between 4.00 and 4.99: 30.00% |
 | 2.99| Between 3.00 and 3.99: 20.00% |
 | 5.68| Fail: 20.00% |
 | 3.01| Average: 4.06 |
+| 4| |
 | 4| | 
-| 4| | | 
 | 6.00| |
 | 4.50| |
 | 2.44| |
-| 5| | 
-
-
+| 5| |
 
 [hints]
 [hint]
