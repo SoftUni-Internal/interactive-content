@@ -151,11 +151,11 @@ That output shows the `instanceOf` operator works of the **is-a relationship** c
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/EN/interactive-java-oop-advanced-polymorphism-8-9-Types-of-polymorphism-compile-time-polymorphism-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-There are **two** types of **Polymorphism** in Java:
+There are **two** types **polymorphism** in Java:
 
-- Dynamic Polymorphism
+- **Dynamic** polymorphism
 
-- Static Polymorphism
+- **Static** polymorphism
 
 ## Static Polymorphism
 
@@ -169,9 +169,9 @@ The method signature contains:
 
 We can overload a method by changing the parameter types, the count of parameters, or the order of the parameters.
 
-We can not have two methods with the same name and the same parameters, **the name of parameters does not matter**!
+We can not have two methods with the same name and the same parameters, **the name of parameters does not matter**.
 
-Let us see this simple example:
+Let us see this simple **example**:
 
 ``` java
 class Calculation {  
@@ -398,11 +398,11 @@ Test Passed!
 
 [slide hideTitle]
 
-# Rules for Overriding and Overloading Methods
+# Rules For Overriding And Overloading Methods
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/EN/interactive-java-oop-advanced-polymorphism-12-Rules-for-overloading-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## Rules for Overriding methods:
+## Rules For Overriding Methods
 
 - We can override the method in a **Subclass**
 
@@ -414,7 +414,7 @@ Test Passed!
 
 - Overriding methods cannot throw a **checked Exception** which is higher in the hierarchy than one thrown by the overridden method
 
-## Rules for Overloading methods:
+## Rules For Overloading Methods
 
 - We can **overload** method that take place in the **same class** or in its **sub-class**
 

@@ -40,13 +40,13 @@ public final class Mammal extends Animal {}
 
 ## In the next lesson, you will learn:
 
-- What Inheritance is
+- What inheritance is
 
-- Class Hierarchies
+- Class hierarchies
 
 - How to access members of the base class
 
-- Types of Class Reuse
+- Types of class reuse
     - extension
     - composition
     - delegation

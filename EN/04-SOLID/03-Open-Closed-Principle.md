@@ -193,11 +193,11 @@ As well as applying it **reduces the risk of introducing new bugs** to existing 
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-14-ocp-silutions-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- Inheritance / Abstraction
+- **Inheritance / Abstraction**
 
 As we did in the example, we can level up an abstraction, giving a solution to our current problem, this way we are enforcing the **OCP**.
     
-- Design Patterns
+- **Design Patterns**
 
 When we need to solve any design problems, we can check the common design patterns for a tested solution.
 

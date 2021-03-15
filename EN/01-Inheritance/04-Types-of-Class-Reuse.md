@@ -30,7 +30,7 @@ public Student extends Person{}
 
 **Composition** is a different type of relationship, in which we contain the given object in our class.
 
-This relationship is called **HAS-A**:
+Th;is relationship is called **HAS-A**:
 
 - **The Laptop HAS-A Monitior**
 - **The Laptop HAS-A Touchpad**

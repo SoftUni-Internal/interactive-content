@@ -28,7 +28,7 @@ If the vehicle **cannot** travel the given distance, its fuel does not change.
     - "**Refuel Car** \{**liters**\}"
     - "**Refuel Truck** \{**liters**\}"
 ## Output
-After each **Drive command** print whether the Car/Truck was able to travel the given distance in this format if it is successful. 
+After each **Drive** command, print whether the Car/Truck was able to travel the given distance in this format if it is successful. 
 
 **Print the distance with two digits after the decimal separator except trailing zeros**. 
 

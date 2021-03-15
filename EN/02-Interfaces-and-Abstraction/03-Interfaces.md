@@ -48,7 +48,7 @@ class Document implements Printable {
 
 # Static Methods in Interfaces
 
-The **Static Methods** in the interfaces are those methods that are defined with the keyword **Static**.
+**Static methods** in interfaces are those defined with the `static` keyword.
 
 The difference between the rest of the methods and the static methods is that we have to declare a complete definition of the **static method**.
 
@@ -63,11 +63,11 @@ public class Test implements TestInterface {
     public static void main(String[] args) {
         Test testInterfaceDemo = new Test();
 
-        // Calling the static method of interface 
+        // Calling the static method of the interface 
         TestInterface.hello();
 
-        // Calling the abstract method of interface 
-        testInterfaceDemo.overrideMethod("Hello, Override Method here");
+        // Calling the abstract method of the interface 
+        testInterfaceDemo.overrideMethod("Hello, Override Method Here");
     }
 
     // Implementing interface method 
@@ -87,13 +87,13 @@ interface TestInterface {
         System.out.println("Hello, Test Static Method Here");
     }
 
-    // Public and abstract method of Interface 
+    // Public and abstract method of the interface 
     void overrideMethod(String str);
 }
 
 // Output
-Hello, New Static Method Here
-Hello, Override Method here
+Hello, Test Static Method Here
+Hello, Override Method Here
 ```
 
 [/slide]
@@ -118,7 +118,7 @@ public interface Printable extends Callable {
 }
 ```
 
-**A class that implements an interface must provide an implementation for the parent interface as well.**
+A class that **implements an interface** must **provide an implementation** for the **parent interface** as well.
 
 [/slide]
 

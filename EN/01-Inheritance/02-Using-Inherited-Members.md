@@ -26,7 +26,9 @@ employee.sleep();
 We can also hold a **reference** to an object of the derived class in the base class variable.
 
 ```java
-Person student = new Student(); // The base class variable holds the object of the Subclass type.
+Person student = new Student();
+// The base class variable holds the object of the Subclass type.
+
 Person employee = new Employee();
 ```
 
@@ -109,7 +111,7 @@ class Student extends Person { … }          // Student will get all members fr
 class CollegeStudent extends Student { … }  // CollegeStudent will inherit all members from both Student and Person.
 ```
 
-That's what transitive relation is, a **Subclass** gets all the functionality from it is Superclasses up the hierarchy.
+That is what **transitive relation** is, a **Subclass** gets all the functionality from it is Superclasses up the hierarchy.
 
 [image assetsSrc="inheritance-example(7).png" /]
 

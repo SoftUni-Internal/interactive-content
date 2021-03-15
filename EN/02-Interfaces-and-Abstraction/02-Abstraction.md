@@ -61,7 +61,7 @@ public class Main {
 }
 ```
 
-Using the `abstract` classes, the **Output** will be:
+Using the `abstract` classes, the **output** will be:
 
 ``` 
 Woof, Woof
@@ -99,7 +99,7 @@ class Dog implements Pet {
 }
 ```
 
-The **Output** will be:
+The **output** will be:
 
 ```
 Walking...

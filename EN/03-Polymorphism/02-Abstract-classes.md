@@ -4,7 +4,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/EN/interactive-java-oop-advanced-polymorphism-16-17-Abstract-Classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Let us take a look at **Abstract classes** in Java.
+Let us take a look at **abstract classes** in Java.
 
 We know from the last lesson that **abstract classes cannot** be instantiated.
 

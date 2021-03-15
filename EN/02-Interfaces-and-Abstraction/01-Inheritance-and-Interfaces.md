@@ -4,7 +4,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-3-inheritance-and-interfaces-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Inheritance** and **Interfaces** are two other major concepts in the **object-oriented** programming.
+**Inheritance** and **interfaces** are two other major concepts in **object-oriented** programming.
 
 **Inheritance** allows classes to **inherit data and functionality** from a **parent class** (also called a **base class**).
 
@@ -32,9 +32,9 @@ We use **abstract** classes to model abstractions.
 
 - Abstract classes are **designed to be inherited** (or extended)
 
-`Concrete` classes like **Circle** and **Rectangle** represent **real** entities, not abstractions
+`Concrete` classes like **Circle** and **Rectangle** represent **real** entities, not abstractions.
 
-- Concrete classes define data fields + concrete functionality (methods)
+- Concrete classes define **data fields** + **concrete functionality** (methods)
 
 - They can **implement interfaces** and **inherit abstract** and other classes
 
@@ -72,8 +72,8 @@ This is an example of an abstract class, which models an abstraction **"Figure"*
 
 The **child class "Rectangle"** inherits the properties from the **base class "Figure"**.
 
-- The "Rectangle" class defines two additional fields: **width** and **height**
+- The **"Rectangle"** class defines two additional fields: **width** and **height**
 
-- It provides a different concrete implementation of the "**calcArea**" abstract method, which calculates the rectangle area
+- It provides a different concrete implementation of the **"calcArea"** abstract method, which calculates the rectangle area
 
 [/slide]

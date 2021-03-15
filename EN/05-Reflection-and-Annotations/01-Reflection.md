@@ -28,7 +28,7 @@ Lots of **frameworks** use reflection because of that.
 
 For example, if we need to write a framework that has to **interoperate** with **user-defined classes** and we do not know what the members will be Reflection will allow us to deal with any class without knowing it in advance.
 
-However, we must be aware of when to use **Reflection** and when we try to avoid it.
+However, we must be aware of when to use **reflection** and when we try to avoid it.
 
 Let us see in what cases we **do not** use Reflection.
 

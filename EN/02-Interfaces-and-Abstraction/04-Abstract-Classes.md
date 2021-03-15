@@ -21,7 +21,7 @@ abstract class Animal {
 }
 ```
 
-From this example, we see that it is impossible to create an object of the Animal class.
+From this example, we see that it is impossible to create an object from the Animal class.
 
 ``` java
 Animal obj = new Animal(); // This will generate an error

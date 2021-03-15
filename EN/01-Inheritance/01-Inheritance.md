@@ -12,7 +12,7 @@
 
 - The class **receiving members** from its base class is called **Subclass** (Child class, Derived Class)
 
-The idea behind using **Inheritance** is that you can build classes upon already existing classes, therefore reusing code, one of the golden rules in programming.
+The idea behind using **inheritance** is that you can build classes upon already existing classes, therefore reusing code, one of the golden rules in programming.
 
 ```java
 public class Mammal {...}
@@ -37,7 +37,7 @@ In this example we create a base class `Person`, this class has properties that 
 
 When we create another object of type `Employee` our employee also needs to know its **name and address**.
 
-That is one of the reasons **Inheritance** exists, instead of creating the same properties for our `Employee` we can `extend` the class `Person` and we will inherit and re-use its properties.
+That is one of the reasons **inheritance** exists, instead of creating the same properties for our `Employee` we can `extend` the class `Person` and we will inherit and re-use its properties.
 
 Therefore, it is called a **derived** class.
 
@@ -85,11 +85,11 @@ This means that every class that we create is implicitly a child of the class `O
 
 We **inherit** a given class through the keyword **extends**, placed right after the name of the given **Subclass**.
 
-We have to use **Inheritance** when we need to re-use some logic.
+We have to use **inheritance** when we need to reuse some logic.
 
 But in Java there is a rule, we can inherit **only one** parent per class.
 
-That is why we say that in Java we have **Single-Inheritance**.
+That is why we say that in Java, we have **single inheritance**.
 
 ```java
 class Person { … }
@@ -110,9 +110,9 @@ class Employee extends Person { … }
 
 A **derived class** takes all of its members from the **base class**.
 
-**Derived** classes can inherit and call all the **non-private** members of the **Parent** class.
+**Derived** classes can inherit and call all the **non-private** members of the **parent** class.
 
-If a unit is declared as private, the memory for it is declared when the class is initialized, but we can use it through our **derived** class.
+If a unit is declared as private, the memory for it is declared when the class is initialized, but we can use it throughout our **derived** class.
 
 [image assetsSrc="inheritance-example(5).png" /]
 
