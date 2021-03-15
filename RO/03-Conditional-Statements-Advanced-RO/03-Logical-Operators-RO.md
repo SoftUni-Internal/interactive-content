@@ -84,7 +84,7 @@ Programul va rula în modul **următor**:
 # Exemplu: Punct într-un dreptunghi
 Verifică dacă `punctul {x, y}` este plasat în interiorul dreptunghiului `{x1, y1}` - `{x2, y2}`.
 
-[image assetsSrc = "03.Point-in-rectangle-01.png" /]
+[image assetsSrc="03.Point-in-rectangle-01.png" /]
 
 Datele de intrare sunt citite de pe consolă și constă din 6 linii:
 

@@ -39,6 +39,7 @@ for (int j = 16; j > 1; j /= 2) {
 
 [code-task title="Numbers from N down to 1" taskId="pb-js-nested-loops-lab-Numbers-from-N-down-to-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.*;
 public class Main {
@@ -46,14 +47,13 @@ public class Main {
       // Scrieți codul dvs. aici
     }
 }
-
 ```
 [/code-editor]
-[task-Descriere]
+[task-description]
 # Descriere
-Scrieți un program care imprimă numerele de la  N până la 1.
+Scrieți un program care imprimă numerele de la N până la 1.
 
-Programul primește un număr `n` și imprimă numerele de la `n` până 1. 
+Programul primește un număr `n` și imprimă numerele de la `n` până 1.
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -108,7 +108,6 @@ Programul primește un număr `n` și imprimă numerele de la `n` până 1.
 [/code-task]
 [/slide]
 
-
 [slide hideTitle]
 # Problemă cu soluție: Numbers from 1 to N with Step 3
 
@@ -126,7 +125,7 @@ public class Main {
 
 ```
 [/code-editor]
-[task-Descriere]
+[task-description]
 # Descriere
 Scrieți un program care imprimă numerele de la  1 până la `n` cu pasul 3:
 
@@ -197,9 +196,6 @@ Scrieți un program care imprimă numerele de la  1 până la `n` cu pasul 3:
 
 [/slide]
 
-
-
-
 [slide hideTitle]
 # Problemă cu soluție: Even Powers of 2
 
@@ -217,7 +213,7 @@ public class Main {
 
 ```
 [/code-editor]
-[task-Descriere]
+[task-description]
 # Descriere
 Scrieți un program care imprimă puterile pare ale 2:
 
