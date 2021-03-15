@@ -17,8 +17,9 @@
 [/slide]
 
 [slide hideTitle]
-# Example: different integer types should be used considering the size of the numbers that we are working with: 
+# Example: Centuries
 
+We should choose different integer types according to their value.
 
 ```java live
 byte centuries = 20; 
