@@ -94,7 +94,9 @@ void method(String a, int... b){
 
 [task-description]
 # Description
-Create a `Book` class from the UML diagram below:
+Create a `Book` class based on the UML diagram:
+
+[image assetsSrc="java-oop-basics-uml-book.png" /]
 
 
 | Book |
