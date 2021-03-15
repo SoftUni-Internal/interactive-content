@@ -16,7 +16,7 @@ Use the class that you have created and test it with the class `java.lang.String
 
 ## Input
 
-On the first line, you will get the integer **n** - the number of Strings to read from the console. 
+On the first line, you will get an integer **n** - the number of Strings to read from the console. 
 
 On the next **n** lines, you will get the actual strings. 
 
@@ -367,7 +367,7 @@ As in the previous problems, read **n** number of boxes of type **Integer** and 
 
 On the next line, you will receive a swap command consisting of **two indexes**. 
 
-Use the method you've created to swap the elements that correspond to the given indexes and **print each** element in the list.
+Use the method you created before to swap the elements that correspond to the given indexes and **print each** element in the list.
 
 # Example
 | **Input** | **Output** |
@@ -467,11 +467,11 @@ java.lang.Integer: 2147483647
 
 [task-description]
 # Description
-Create a **method** that receives as argument a **list of any type that can be compared** and an **element of the given type**.
+Create a **method** that receives a **list of any type that can be compared** and an **element of the given type** as arguments.
 
 The method should **return the count of elements that are greater than the value of the given element**.
 
-**Modify your Box class** to support **comparing by value** of the data stored.
+**Modify your Box class** to support **value comparison** of the stored data.
 
 On the **first line**, you will receive **n** - the number of elements to add to the list. 
 
@@ -582,11 +582,11 @@ pp
 
 [task-description]
 # Description
-Create a **method** that receives as argument a **list of Double** and an **element of the given type**.
+Create a **method** that receives a **list of Double** and an **element of the given type** as arguments.
 
 The method should **return the count of elements that are greater than the value of the given element**.
 
-**Modify your Box class** to support **comparing by value** of the data stored.
+**Modify your Box class** to support **value comparison** of the stored data.
 
 On the **first line**, you will receive **n** - the number of elements to add to the list. 
 
@@ -707,13 +707,13 @@ Create a command interpreter that reads commands and modifies the custom list th
 
 - `Add <element>` - Adds the given element to the end of the list
 - `Remove <index>` - Removes the element at the given index
-- `Contains <element>` - Prints if the list contains the given element **(true or false)**
+- `Contains <element>` - Checks if the list contains the given element and prints **true or false**
 - `Swap <index> <index>` - Swaps the elements at the given indexes
 - `Greater <element>` - Counts the elements that are greater than the given element and prints their count
 - `Max` - Prints the maximum element in the list
 - `Min` - Prints the minimum element in the list
 - `Print` - Prints all elements in the list, each on a separate line
-- `END` - stops the reading of commands
+- `END` - stops accepting commands
 
 **Note**: For the **tests**, use **String** as **T**.
 
@@ -1066,9 +1066,9 @@ f
 
 [task-description]
 # Description
-Extend the previous problem by making your custom list class to implement **Iterable**.
+Extend the code from the previous task by implementing **Iterable** in your custom list class.
 
-For the print command, you have probably used a **for** loop.
+You probably used a **for-loop** for the print command.
 
 This should allow you to iterate your list in a **foreach** statement.
 
@@ -1243,17 +1243,17 @@ f
 # Description
 There is a sequence of elements, called **"Tuple"**.
 
-It is a class, which contains two objects: the first one is **"item1"**; the second one is **"item2"**.
+It is a class, that contains two objects: the first one is **"item1"**; the second one is **"item2"**.
 
 It is similar to **Map.Entry** but it **only has items**, which are **neither key nor value**.
 
 It is unknown what these objects are holding.
 
-The class name does not give enough information, the methods which it has – too.
+The class name does not provide enough information.
 
 Your task is to try to implement it in Java, just for practicing generics.
 
-Create a class **"Tuple"**, which is holding two objects. 
+Create a class **"Tuple"**, which holds two objects. 
 
 The first one will be `item1` and the second one - `item2`.
 
@@ -1265,8 +1265,8 @@ When you create a new object of class -  **"Tuple"**, you should specify the ite
 
 The input consists of three lines:
 
-- The first one is holding a **person's name** and **city of residence**
-    - both are **separated by space(s)**. 
+- The first one consists of a **person's name** and **city of residence**
+    - both are **separated by space(s)**
     - you have to collect them in the Tuple and print them to the console
 
 This input comes in the following format:
@@ -1289,11 +1289,11 @@ This input comes in the following format:
 
 ## Constraints
 
-Use the good practices we have learned. 
+Use all the good practices we learned so far.
 
-Create the class and make it have getters and setters for its class variables. 
+Create the class and with getters and setters for its class variables. 
 
-The input will be valid, there is no need to check it explicitly!
+The input will always be valid, there is no need to check it explicitly!
 
 # Example
 | **Input** | **Output** |
@@ -1383,20 +1383,20 @@ Its name shows that the **Threeuple** should **hold three objects**.
 
 It should also have getters and setters. 
 
-You can extend the previous class - Tuple.
+You can extend the previous Tuple class.
 
 ## Input
 The input consists of three lines.
 
-- The first one is holding a person's name and city and country of residence in the following format:
+- The first contains a person's name, city, and country of residence in the following format:
 
 `{{first name} {last name}} {city} {country}`
 
-- The second line is holding a name, amount of hobbies, and a **Boolean variable** - happy or not, in the following format:
+- The second line holds a name, amount of hobbies, and a **Boolean variable** - happy (true) or not (false), in the following format:
 
 `{name} {hobbies} {happy or not}`
 
-- The last line will hold a name, a bank balance (double) and a bank name, formatted as follows:
+- The last line will contain a name, a bank balance (double) and a bank name, formatted as follows:
 
 `{name} {account balance} {bank name}`
 
