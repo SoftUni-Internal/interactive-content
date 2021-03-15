@@ -40,7 +40,7 @@ System.out.println(i);
 double f = a / 4.0;
 System.out.println(f);
 ```
--Cum utilizăm **expresiile** 
+- Cum utilizăm **expresiile** 
 
 ```java
 int r = (150-20) / 2 + 5;

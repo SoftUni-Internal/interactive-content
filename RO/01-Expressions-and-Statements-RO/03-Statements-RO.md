@@ -15,7 +15,7 @@ Java suporta câteva tipuri diferite de instrucțiuni  și aici sunt câteva din
 Acțiunile obișnuite includ:
 - **Declararea** variabilei
 
-Declararea unei variabile înseamnă **definirea** tipului său**.
+Declararea unei variabile înseamnă **definirea** tipului său.
 
   ```java
   int counter;
@@ -23,32 +23,32 @@ Declararea unei variabile înseamnă **definirea** tipului său**.
 
 - **Atribuirea** unei valori
 
- După ce declarați o variabilă, puteți atribui o valoare unei variabile.
+După ce declarați o variabilă, puteți atribui o valoare unei variabile.
 
 Atribuirea unei valori a variabilei înseamnă **stocarea** unei **valori** unei variabile.
-
 ```java
 counter = 1;
 ```
 
 - Declarare + **inițializare**
-  ```java
-  int counter = 1;
-  ```
+
+```java
+int counter = 1;
+```
 
 - **Tipărirea** valorii
 
-  ```java
-  System.out.println(counter);
-  ```
+```java
+System.out.println(counter);
+```
 
 - **Modificarea** valorii
-  ```java
-  counter++;
-  ```
+```java
+counter++;
+```
   
-  ```java
-  sum = a + b;
-  ```
+```java
+sum = a + b;
+```
   
 [/slide]

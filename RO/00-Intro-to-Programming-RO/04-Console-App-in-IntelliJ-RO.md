@@ -3,7 +3,7 @@
 
 Deja am instalat IntelliJ IDEA și putem începe să îl utilizăm.
 
-Creați o nouă Console Application în IntelliJ IDEA: `[New Project]` \-\> `[Java]` \->\ `[Template Command Line App]` \-\> `[Finish]`
+Creați o nouă Console Application în IntelliJ IDEA: `[New Project]` \-\> `[Java]` \-\> `[Template Command Line App]` \-\> `[Finish]`
 
 Vom seta **un nume cu sens** pentru programul nostru, de exemplu `HelloJava`:
 

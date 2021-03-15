@@ -40,7 +40,7 @@ System.out.println(a * b); // 35
 Funcționează diferit cu **numere întregi** și **numere cu virgulă mobilă**.
 
 * Când împărțim două numere întregi, se aplică o **împărțire întreagă**, iar rezultatul obținut este fără partea sa fracționată
-  * Example: `11 / 3 = 3`
+  * example: `11 / 3 = 3`
   
 * Când împărțim două numere și cel puțin unul dintre ele este un număr float, se aplică o **diviziune mobilă**, iar rezultatul obținut este un număr float, la fel ca în matematică
 
@@ -51,7 +51,7 @@ Funcționează diferit cu **numere întregi** și **numere cu virgulă mobilă**
 
 * Fumărul float **împărțit la 0** nu provoacă o excepție, iar rezultatul este **+ / - infinity** sau o valoare specială **NaN**
 
-  * Example `5 / 0.0 = ∞`
+  * example `5 / 0.0 = ∞`
 
 Mai jos avem câteva exemple cu operatorul împărțirii:
 

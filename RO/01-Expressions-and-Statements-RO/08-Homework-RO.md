@@ -724,7 +724,7 @@ Scrieți un program de consolă care citește un număr **întreg** `a` și calc
 ## Intrare
 
 Citiți de pe consolă:
-- Dimensiunea pătratului - un număr **întreg** în intervalul \ [1 ... 1000 \
+- Dimensiunea pătratului - un număr **întreg** în intervalul [1 ... 1000]
 
 ## Ieșire
 
@@ -821,7 +821,7 @@ Crearea unui proiect durează aproximativ 3 ore.
 ## Intrare
 Citiți **două rânduri** de pe consolă:
 - Numele arhitectului - **String**
-- Numărul de proiecte - **integer** în intervalul \ [0 ... 100 \]
+- Numărul de proiecte - **integer** în intervalul \[0 ... 100 \]
 
 ## Ieșire
 
@@ -1639,7 +1639,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1657,7 +1657,7 @@ Compania oferă 18% **reducere** din prețul total.
 
 Singură linie de la consolă:
 
-- Metri pătrați care vor fi amenajate - **număr în virgulă mobila** în intervalul [0.00 ... 10000.00
+- Metri pătrați care vor fi amenajate - **număr în virgulă mobila** în intervalul \[0.00 ... 10000.00\]
 
 ## Ieșire
 

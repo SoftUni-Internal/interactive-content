@@ -236,7 +236,7 @@ Scrieți un **program** care:
 * Citește o intrare de utilizator - **name**, de pe consolă
 * Tipărește "**Hello**, \{**name**\}**!**", unde "\{**name**\}" este intrarea utilizatorului
 
-## Exemplu:
+## Exemplu
 
 | **Intrare** | **Ieșire** |
 | --- | --- |
