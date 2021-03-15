@@ -1622,7 +1622,7 @@ Vehicle.getHorsePower(480, 2500));
 
 [task-description]
 # Description
-#### UPDATE!! WITH BACK
+
 **Build a hierarchy from classes and interfaces for this UML diagram.**
 
 [image assetsSrc="interfaces-and-abstraction-example(7).png" /]
@@ -1651,10 +1651,9 @@ private static void print(Person person) {
 # Example
 | **Output** |
 | --- |
-| Hi |
+| Здравей |
 | Hello |
-| Djydjybydjy |
-|   |
+| 你好 |
 
 [/task-description]
 [tests]
@@ -2055,8 +2054,6 @@ Test Passed!
 [task-description]
 # Description
 
-## NEW
-
 **Build a hierarchy from classes and interfaces for this UML diagram.**
 
 [image assetsSrc="interfaces-and-abstraction-example(8).png" /]
@@ -2082,13 +2079,12 @@ private static void print(Person person) {
 }
 ```
 
-# Examples
+# Example
 | **Output** |
 | --- |
-| Hi |
+| Здравей |
 | Hello |
-| Djydjybydjy |
-|   |
+| 你好 |
 
 [/task-description]
 [tests]
