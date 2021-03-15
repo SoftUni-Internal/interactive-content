@@ -7,9 +7,7 @@ A lambda expression is an **anonymous function** containing **expressions and st
 
 It **replaces an entire function** and **improves** code writing. 
 
-It is used mostly **with Stream API**, which is explained in the next chapter.  
-
-Lambda function is a **shorter-expression** that gives result, but it is not always necessary.
+A lambda function is a **shorter-expression** that gives result but it is not always necessary.
 
 Use the lambda operator `->`, which is read as "goes to"
 
@@ -19,7 +17,7 @@ The **right** side holds the method body of the lambda function - **expression**
 
 Lambda functions are **inline methods** (functions) that take input parameters and return values:
 
-Instead of writing a function that accepts for example an integer parameter `int a` and then returns whether `a` is larger than 5 or not. 
+Instead of writing a method that accepts an integer parameter `int a` and then returns whether `a` is larger than 5 or not. 
 
 It is possible to write that like this using lambda expression:
 
@@ -46,14 +44,15 @@ static boolean function(int x) {
 ```
 
 - This lambda function `() -> 42` is equivalent to this method that always returns `42`
+
 ```java
 static int function() { 
     return 42; 
 }
 ```
 
-When there is no parameter just type empty brackets `()`. 
+If the lambda function requires more than one input value, we need to type them in parentheses `()`.
 
-If there are multiple parameters type them in brackets `()` separated by a comma.
+If it does not require any input values, we need to type only parentheses `()` for the input.
 
 [/slide]
