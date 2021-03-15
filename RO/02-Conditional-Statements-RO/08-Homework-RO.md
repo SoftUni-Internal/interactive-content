@@ -175,11 +175,11 @@ function adapter(input, code) {
 # Descriere
 Creați un program pentru a verifica viteza mare/mică: 
 
-Creați un program, care determină dacă vă deplasați ** rapid ** sau ** lent ** cu o viteză dată:
+Creați un program, care determină dacă vă deplasați **rapid** sau **lent** cu o viteză dată:
 
-* Veți primi ** viteza **: (un număr cu virgulă mobilă)
-* Tipăriți „** Lent **” dacă viteza este ** mai mică de ** sau ** egală cu ** 30
-* Tipăriți „** Rapid **” dacă viteza este ** mai mare ** decât 30
+* Veți primi **viteza**: (un număr cu virgulă mobilă)
+* Tipăriți "**Slow**" dacă viteza este **mai mică de** sau **egală cu** 30
+* Tipăriți "**Fast**" dacă viteza este **mai mare** decât 30
 
   # Exemplu
 
@@ -410,9 +410,9 @@ Creați un program care să calculeze prețul unui bilet:
 
 * Veți primi tipul de bilet: fie **student** fie **regular**
 
-* Imprimați **price** în formatul următor`${price}`:
+* Imprimați **price** în formatul următor "${**price**}":
 
-    * Prețul trebuie să fie **formatat** cu 2 cifre după punctul de zecimal 
+    * prețul trebuie să fie **formatat** cu 2 cifre după punctul de zecimal 
 
 * Prețul unui bilet de student: **1.00**
 

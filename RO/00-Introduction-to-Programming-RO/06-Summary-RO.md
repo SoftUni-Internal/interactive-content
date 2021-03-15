@@ -9,19 +9,18 @@
 
 - Cum să **scriem codul de bază**
 
-- Programul constă din **secvențe de comenzi.**
+- Programul constă din **secvențe de comenzi**
 
 - JavaScript este un **limbaj dinamic**, care este executat de un **interpretor**
 
 - Cum se **instalează** rulează **VSCode** și **Node.js**
-
-- Cum să creăm un proiect, fișiere și aplicații de consolă în VSCode.
+- Cum să creăm un proiect, fișiere și aplicații de consolă în VSCode
 
 ## În lecția următoare vom învăța:
 
 - Tipuri de date
 
-- Ce sunt instrucțiunile?
+- Ce sunt instrucțiunile
 
 - Cum să citim și să imprimăm datele de intrare ale utilizatorului
 

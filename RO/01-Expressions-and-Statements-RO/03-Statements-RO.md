@@ -36,15 +36,15 @@ După ce am declarat o variabilă, putem să îi alocăm o valoare.
 
 Alocarea unei valori unei variabile înseamnă că stocăm în ea o valoare. 
 
-  ```js
-  counter = 1;
-  ```
+```js
+counter = 1;
+```
 
 - Declararea inițializării \+
 
-  ```js
-  let counter = 1;
-  ```
+```js
+let counter = 1;
+```
 
 - Tipărirea unei valori
 
@@ -55,12 +55,12 @@ console.log(counter);
 
 - **Modificarea** unei valori
 
-  ```js
-  counter++;
-  ```
+```js
+counter++;
+```
   
-  ```js
-  sum = a + b;
-  ```
+```js
+sum = a + b;
+```
   
 [/slide]

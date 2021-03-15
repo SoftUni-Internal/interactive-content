@@ -114,10 +114,10 @@ let UserLoginCount;
 
 **Snake_case** este o altă convenție privind alocarea unui nume, care combină cuvintele astfel:
 
-* folosind o liniuță jos ca separator al cuvintelor `_`
-* eliminând toate spațiile
-* litera de început a fiecărui element component este de obicei literă mică
-* prima literă poate fi literă mică sau majusculă, la alegere:
+* Folosind o liniuță jos ca separator al cuvintelor `_`
+* Eliminând toate spațiile
+* Litera de început a fiecărui element component este de obicei literă mică
+* Prima literă poate fi literă mică sau majusculă, la alegere:
 
 ```js
 let users_count;

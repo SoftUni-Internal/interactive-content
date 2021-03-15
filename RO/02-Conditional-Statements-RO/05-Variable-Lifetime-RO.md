@@ -13,7 +13,7 @@ Această gamă specifică unde poate fi utilizată o variabilă și cât de lung
 
 Astfel, este important să știm că **orice variabilă definită în interiorul unei anumite instrucțiuni** `if` **nu va fi disponibilă în afara acesteia**, cu excepția cazului în care am definit-o anterior într-un domeniu mai înalt în codificare.
 
-## Domeniul de aplicare a variabilei -Exemplu 
+## Domeniul de aplicare a variabilei - Exemplu 
 
 În exemplul de mai jos, pe ultima linie încercăm să imprimăm variabila `salariu` care este definită în declarația `if`, vom primi o **eroare** deoarece nu avem acces la ea.
 

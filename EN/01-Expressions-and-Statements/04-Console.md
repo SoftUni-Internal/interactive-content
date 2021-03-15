@@ -112,7 +112,7 @@ function printSum(firstNum, secondNum) {
 printSum(5, 10);
 ```
 
-If we try to access `firstNum` outside of the function body, we'll get an error.
+If we try to access `firstNum` outside of the function body, we well get an error.
 
 ``` js live
 function printSum(firstNum, secondNum) {

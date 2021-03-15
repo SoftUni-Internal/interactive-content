@@ -8,9 +8,9 @@
 **A programa**, exprimat în termeni simpli, înseamnă a **da comenzi** computerului.
 Câteva exemple de bază sunt:
 
-- `A crea un sunet`
-- `A lista ceva de pe ecran`
-- `A multiplica două numere`
+- A crea un sunet
+- A lista ceva de pe ecran
+- A multiplica două numere
 
 Când avem o succesiune de comenzi,urmându-se unа pe cealaltă- aceasta ar putea fi numită un **program de computer**.
 
@@ -31,12 +31,11 @@ Programele de computer reprezintă **o secvență de comenzi** care sunt scrise 
 
 Exemplu de **program de computer** în JS:
 
-```js live no-template
-funcția calculateArea () {
- lăsăm dimensiunea = 5;
-   console.log ("Size = " + size);
-   console.log ("Area = " + size * size);
-}
+```js live
+let size = 5;
+
+console.log("Size = " + size);
+console.log("Area = " + size * size);
 ```
 Programul de mai sus definește o funcție care deține o secvență de **3 comenzi** și o numește după aceea:
 
@@ -93,18 +92,17 @@ Un instrument foarte convenabil la scrierea **codului de programare**, utilizat 
 Acesta este un exemplu foarte simplu de algoritm care găsește cel mai mic număr dintr-o matrice.
 Vom discuta despre matrice mai târziu.
 
-``` js live no-template
-function findMinNumber() {
-  const arr = [15, 2, 42, 55, 123, 8, 52, 67, 75, 4]
-  const min = Math.min(...arr)
-  console.log(min)
-}
+``` js live
+let arr = [15, 2, 42, 55, 123, 8, 52, 67, 75, 4];
+let min = Math.min(...arr);
+
+console.log(min)
 ```
 
 [/slide]
 
 [slide hideTitle]
-# Program JavaScript bazat pe console – Exemplu
+# Program JavaScript bazat pe console - Exemplu
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-10-Console-Based-JavaScript-Program-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

@@ -267,11 +267,11 @@ function adapter(input, code) {
 
 Creați un program care covertează zilele în minute:
 
-* Veți primi un singur număr ** întreg **: ** zilele ** de convertit
+* Veți primi un singur număr **întreg**: **zilele** de convertit
 
 * Convertiți zilele în minute
 
-* Imprimați ** minutele ** pe consolă
+* Imprimați **minutele** pe consolă
 
   ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -444,15 +444,18 @@ Funcția primește un argument:
 ## Ieșire
  Două linii sunt imprimate pe consolă:
 
-- The final price is: \{final price of the service\} dollars.
+- "**The final price is:** \{**final price of the service**\} **dollars.**"
 
-- The discount is: \{discount\} dollars.
+- "**The discount is:** \{**discount**\} **dollars.**"
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | landscape(550) | The final price is: 3432.11 dollars. |
 |  | The discount is: 753.39 dollars. |
+
+| **Intrare** | **Ieșire** |
+| --- | --- |
 | landscape(150) | The final price is: 936.03 dollars. |
 |  | The discount is: 205.47 dollars. |
 

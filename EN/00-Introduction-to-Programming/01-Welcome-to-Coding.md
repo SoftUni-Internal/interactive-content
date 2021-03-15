@@ -103,7 +103,7 @@ console.log(min)
 [/slide]
 
 [slide hideTitle]
-# Console-Based JavaScript Program – Example
+# Console-Based JavaScript Program - Example
 
 [video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-10-Console-Based-JavaScript-Program-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

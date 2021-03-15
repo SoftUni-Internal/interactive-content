@@ -27,11 +27,11 @@ Putem folosi variabilele pentru a stoca toate tipurile de date de care avem nevo
 
 De exemplu, tipurile de date pot fi: 
 
-* date numerice (stochează un număr): 1, 2, 3.14, -1, 1.5e38 etc.
+* Date numerice (stochează un număr): 1, 2, 3.14, -1, 1.5e38 etc.
 
-* date sub formă de text (string): 'Hello', "Hi", "How are you?" etc.
+* Date sub formă de text (string): 'Hello', "Hi", "How are you?" etc.
 
-* date de tip boolean: adevărat sau fals
+* Date de tip boolean: adevărat sau fals
 
 Ne putem imagina **variabilele** ca niște containere de date sau ca niște zone specificate în memorie.  
 
@@ -59,11 +59,11 @@ Variabilele pot fi stocate în următoarele spații ale unui program:
 
 Ele se caracterizează prin:
 
-* nume (identificator)
+* Nume (identificator)
 
-* tip (al informației pe care o păstrează)
+* Tip (al informației pe care o păstrează)
 
-* valoare (informația stocată)
+* Valoare (informația stocată)
 
 Fiecare variabilă în JavaScript are un nume, un tip și o valoare. 
 
@@ -93,11 +93,8 @@ console.log("Age:", age);
 * `var`: similar enunțului `let`, cu mențiunea că acordă o arie de cuprindere mai mare
 
 ``` js live
-function example() {
-  var productID = 120491283761;
-  console.log(productID); 
-}
-example();
+var productID = 120491283761;
+console.log(productID); 
 
 ```
 

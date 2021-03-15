@@ -53,8 +53,8 @@ De asemenea, puteți compara expresii numerice.
 
 Expresiile pe care le comparați pot fi expresii complexe, ca în exemplul următor.
 
-``` js live
-x / 45 * (y +17)> = Math.sqrt (z) / (p - (x * 16))
+```js
+x / 45 * (y +17) >= Math.sqrt(z) / (p - (x * 16))
 ```
 
 Expresia complexă precedentă include **literale**, **variabile** și **apeluri de funcții.**

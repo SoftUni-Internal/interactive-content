@@ -49,15 +49,15 @@ Avem nevoie de **Node.js**, astfel încât să putem executa cod JavaScript în 
 
 *Runtime JS pe partea de server.
 
-[image assetsSrc = "intro-to-programming-3.png" /]
+[image assetsSrc="intro-to-programming-3.png" /]
 
 Puteți descărca [Node.js](https://nodejs.org/en/download/).
 
-[image assetsSrc = "intro-to-programming-install-nodejs-1.png" /]
+[image assetsSrc="intro-to-programming-install-nodejs-1.png" /]
 
 Selectați OS-ul vostru și continuați cu instalarea.
 
-[image assetsSrc = "intro-to-programming-install-nodejs-2.png" /]
+[image assetsSrc="intro-to-programming-install-nodejs-2.png" /]
 
 Să continuăm cu instalarea mediului integrat **Microsoft Visual Studio Code**.
 
@@ -71,37 +71,37 @@ Următoarele linii descriu în detaliu pașii pentru instalarea Visual Studio Co
 
 După ce descărcăm fișierul de instalare și îl pornim, apare următorul ecran:
 
-[image assetsSrc = "intro-to-programming-install-vscode-1.png" /]
+[image assetsSrc="intro-to-programming-install-vscode-1.png" /]
 
 Apăsați butonul `[Next]` și veți vedea ecranul de mai jos:
 
-[image assetsSrc = "intro-to-programming-install-vscode-2.png" /]
+[image assetsSrc="intro-to-programming-install-vscode-2.png" /]
 
 Puteți alege o locație de destinație sau să o lăsați pe cea implicită. Apoi apăsați din nou butonul `[Next]`.
 
-[image assetsSrc = "intro-to-programming-install-vscode-3.png" /]
+[image assetsSrc="intro-to-programming-install-vscode-3.png" /]
 
 Acum trebuie să specificăm un nume pentru folderul programului care va fi creat în meniul Start.
 
 Următorul pas este să puneți bife în următoarele sarcini:
 
-[image assetsSrc = "intro-to-programming-install-vscode-4.png" /]
+[image assetsSrc="intro-to-programming-install-vscode-4.png" /]
 
 VS este acum gata pentru instalare. Apăsați butonul `[Instalare]`. Practic asta este totul.
 
-[image assetsSrc = "intro-to-programming-install-vscode-5.png" /]
+[image assetsSrc="intro-to-programming-install-vscode-5.png" /]
 
 Instalarea Visual Studio începe și va apărea un ecran ca cel de mai jos:
 
-[image assetsSrc = "intro-to-programming-install-vscode-6.png" /]
+[image assetsSrc="intro-to-programming-install-vscode-6.png" /]
 
 După instalarea Visual Studio, va apărea un ecran informativ. Apăsați butonul `[Lansare]` pentru a-l porni.
 
-[image assetsSrc = "intro-to-programming-install-vscode-7.png" /]
+[image assetsSrc="intro-to-programming-install-vscode-7.png" /]
 
 La **pornirea VS Code** se afișează vizualizarea principală a Visual Studio Code.
 
-[image assetsSrc = "intro-to-programming-install-vscode-8.png" /]
+[image assetsSrc="intro-to-programming-install-vscode-8.png" /]
 
 Asta e tot. Sunteți gata să lucrați cu Visual Studio Code.
 [/slide]
@@ -127,7 +127,7 @@ IDE alternativ (online)
 
 * [Python](https://repl.it)
 
-[image assetsSrc = "intro-to-programming-1.png" /]
+[image assetsSrc="intro-to-programming-1.png" /]
 
 [/slide]
 
