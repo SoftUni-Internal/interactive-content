@@ -6,7 +6,9 @@
 
 [task-description]
 ## Description
-Create a `Person` class with two fields `String name` and `int age`, write a program that reads from the console **N** lines of personal information, and then prints all people whose **age** is **more than 30** years, **sorted in alphabetical order**.
+Create a `Person` class with two fields `String name` and `int age`.
+
+Write a program that reads **N** lines of personal information from the console, and then prints all people whose **age** is **more than 30** years old, **sorted in alphabetical order**.
 
 **Note:** you can use `stream()` to filter the people.
 
@@ -205,15 +207,19 @@ Anntoanette - 39
 
 [task-description]
 ## Description
-Define a class **Employee** that holds the following information: **name, salary, position, department, email** and **age**.
+Define a class **Employee** that holds the following information: **name, salary, position, department, email**, and **age**.
 
-The **name, salary, position** and **department** are **mandatory** while the rest are **optional**.
+The **name, salary, position**, and **department** are **mandatory** while the rest are **optional**.
 
-Your task is to write a program which takes **N** lines of information about employees from the console and calculates the department with the highest average salary and prints for each employee in that department his **name, salary, email and age** - **sorted by salary in descending order**. 
+Your task is to write a program that takes **N** lines of information about employees from the console and calculates the department with the highest average salary. 
 
-If an employee **does not have** an **email** – in place of that field you should print **"n/a"** instead, if he does not have an **age** – print **"-1"** instead. 
+Prints information for each employee in that department with their **name, salary, email, and age** - **sorted by salary in descending order**. 
 
-The **salary** should be printed to **two decimal places** after the separator.
+If an employee **does not have** an **email** – in place of that field you should print **"n/a"** instead.
+
+If they do not have an **age** – print **"-1"** instead. 
+
+The **salary** should be rounded to **two decimal places** after the separator.
 
 **Hint**: you can define a **Department** class that holds a list of employees.
 
@@ -383,13 +389,13 @@ Victor 0.03 sales@uni.eu 23
 
 [task-description]
 ## Description
-Your task is to implement a program that keeps track of cars and their fuel and supports methods for moving cars.
+Your task is to implement a program that keeps track of cars and their fuel. It should also support methods for moving the cars.
 
-Define a class **Car** that keeps track of a car information **Model, fuel amount, fuel cost for 1 kilometer**, and **distance traveled**.
+Define a class **Car** that keeps track of a car information **Model, fuel amount, fuel cost for 1 kilometer**, and **traveled distance**.
 
 A Car Model is **unique** - there will never be 2 cars with the same model.
 
-On the first line of the input you will receive a number **N** - the number of cars you need to track. 
+On the first line of the input, you will receive a number **N** - the number of cars you need to track. 
 
 On **each** of the next **N** lines you will receive information for a car in the following format: 
 
@@ -397,21 +403,23 @@ On **each** of the next **N** lines you will receive information for a car in th
 
 All **cars start at 0 kilometers traveled**.
 
-After the **N** lines until the command `End` is received, you will receive commands in the following format: 
+After the initial **N** lines, and until the `End` command is received, you will receive commands in the following format: 
 
 `Drive <carModel> <amountOfKm>`
 
 Implement a method in the **Car** class to calculate whether a car **can** move that distance or **not**. 
 
-If it can, the car **fuel amount** should be **reduced** by the amount of used fuel and its **distance traveled** should be increased by the number of kilometers traveled, otherwise the car should not move (its fuel amount and distance traveled should stay the same) and you should print on the console 
+If it can move, reduce the **fuel amount** of the car by the amount of fuel needed for the drive. Increase the **traveled distance** by the number of kilometers traveled.
+
+If the car cannot move its fuel amount and traveled distance stay the same, and you should print this to the console:
 
 `Insufficient fuel for the drive` 
 
-After the `End` command is received, print each car in order of appearing in input and its current fuel amount and distance traveled in the format:
+After the `End` command is received, print each car in order of appearing in the input and its current fuel amount and traveled distance in the format:
 
 `<model> <fuelAmount> <distanceTraveled>`
 
-Where the fuel amount should be rounded to the **second decimal place**.
+The fuel amount should be rounded to the **second decimal place**.
 
 # Examples
 
@@ -609,25 +617,27 @@ K 0.00 4
 ## Description
 You are the owner of a courier company and you want to make a system for tracking your cars and their cargo.
 
-Define a class **Car** that holds information about **model, engine, cargo**, and a **collection of exactly 4 tires**.
+Define a class **Car** that holds information about the **model, engine, cargo**, and a **collection of exactly 4 tires**.
 
-The engine, cargo, and tire **should be separate classes**, create a constructor that receives all information about the Car, and creates and initializes its inner components (engine, cargo, and tires).
+The Engine, Cargo, and Tire **should be separate classes**.
 
-On the first line of the input you will receive a number **N** - the number of cars you have. 
+Create a constructor that receives all information about the car, and creates and initializes its inner components (engine, cargo, and tires).
 
-On each of the next **N** lines you will receive information about a car in the format: 
+On the first line of the input, you will receive a number **N** - the number of cars you have. 
+
+On each of the next **N** lines, you will receive information about a car in the format: 
 
 `<model> <engineSpeed> <enginePower> <cargoWeight> <cargoType> <tire1Pressure> <tire1Age> <tire2Pressure> <tire2Age> <tire3Pressure> <tire3Age> <tire4Pressure> <tire4Age>`
 
 Where the speed, power, weight and tire age are **integers**, tire pressure is a **double**.
 
-After the **N** lines you will receive a single line with one of 2 commands `fragile` or `flamable`.
+After the **N** lines you will receive a single line with one of 2 commands `fragile` or `flammable`.
 
 If the command is `fragile` print all cars whose **cargoType is** `fragile` with a **tire** whose **pressure is < 1**.
 
-If the command is `flamable` print all cars whose **cargoType is** `flamable` and have **enginePower > 250**. 
+If the command is `flammable` print all cars whose **cargoType is** `flammable` and have **enginePower > 250**. 
 
-The cars should be printed in order of appearing in the input on a separate lines.
+The cars should be printed in the order of appearing in the input, each on a separate line.
 
 # Examples
 
@@ -645,11 +655,11 @@ The cars should be printed in order of appearing in the input on a separate line
 | **Input** | **Output** |
 | --- | --- |
 | 4 | ChevroletExpress |
-| ChevroletExpress 215 255 1200 flamable 2.5 1 2.4 2 2.7 1 2.8 1 | DaciaDokker |
-| ChevroletAstro 210 230 1000 flamable 2 1 1.9 2 1.7 3 2.1 1 |  |
-| DaciaDokker 230 275 1400 flamable 2.2 1 2.3 1 2.4 1 2 1 |  |
+| ChevroletExpress 215 255 1200 flammable 2.5 1 2.4 2 2.7 1 2.8 1 | DaciaDokker |
+| ChevroletAstro 210 230 1000 flammable 2 1 1.9 2 1.7 3 2.1 1 |  |
+| DaciaDokker 230 275 1400 flammable 2.2 1 2.3 1 2.4 1 2 1 |  |
 | Citroen2CV 190 165 1200 fragile 0.8 3 0.85 2 0.7 5 0.95 2 |  |
-| flamable |  |
+| flammable |  |
 
 [/task-description]
 [code-upload allowedMemory="30" /]
@@ -668,11 +678,11 @@ Citroen2CV
 [test open]
 [input]
 4
-ChevroletExpress 215 255 1200 flamable 2.5 1 2.4 2 2.7 1 2.8 1
-ChevroletAstro 210 230 1000 flamable 2 1 1.9 2 1.7 3 2.1 1
-DaciaDokker 230 275 1400 flamable 2.2 1 2.3 1 2.4 1 2 1
+ChevroletExpress 215 255 1200 flammable 2.5 1 2.4 2 2.7 1 2.8 1
+ChevroletAstro 210 230 1000 flammable 2 1 1.9 2 1.7 3 2.1 1
+DaciaDokker 230 275 1400 flammable 2.2 1 2.3 1 2.4 1 2 1
 Citroen2CV 190 165 1200 fragile 0.8 3 0.85 2 0.7 5 0.95 2
-flamable
+flammable
 [/input]
 [output]
 ChevroletExpress
@@ -682,12 +692,12 @@ DaciaDokker
 [test]
 [input]
 5
-ChevroletExpress 215 255 1200 flamable 2.5 1 2.4 2 2.7 1 2.8 1
-ChevroletAstro 210 230 1000 flamable 2 1 1.9 2 1.7 3 2.1 1
-DaciaDokker 230 275 1400 flamable 2.2 1 2.3 1 2.4 1 2 1
+ChevroletExpress 215 255 1200 flammable 2.5 1 2.4 2 2.7 1 2.8 1
+ChevroletAstro 210 230 1000 flammable 2 1 1.9 2 1.7 3 2.1 1
+DaciaDokker 230 275 1400 flammable 2.2 1 2.3 1 2.4 1 2 1
 Citroen2CV 190 165 1200 fragile 0.8 3 0.85 2 0.7 5 0.95 2
-LaTroca 150 350 1500 flamable 2 1 1.9 2 1.7 3 2.1 1
-flamable
+LaTroca 150 350 1500 flammable 2 1 1.9 2 1.7 3 2.1 1
+flammable
 [/input]
 [output]
 ChevroletExpress
@@ -713,13 +723,13 @@ M
 [test]
 [input]
 6
-ChevroletExpress 215 255 1200 flamable 2.5 1 2.4 2 2.7 1 2.8 1
-ChevroletAstro 210 230 1000 flamable 2 1 1.9 2 1.7 3 2.1 1
-DaciaDokker 230 275 1400 flamable 2.2 1 2.3 1 2.4 1 2 1
+ChevroletExpress 215 255 1200 flammable 2.5 1 2.4 2 2.7 1 2.8 1
+ChevroletAstro 210 230 1000 flammable 2 1 1.9 2 1.7 3 2.1 1
+DaciaDokker 230 275 1400 flammable 2.2 1 2.3 1 2.4 1 2 1
 Citroen2CV 190 165 1200 fragile 0.8 3 0.85 2 0.7 5 0.95 2
-Chevrolantiq 210 270 1000 flamable 2 1 1.9 2 1.7 3 2.1 1
-KappaMobile 210 330 1000 flamable 2 1 1.9 2 1.7 3 2.1 1
-flamable
+Chevrolantiq 210 270 1000 flammable 2 1 1.9 2 1.7 3 2.1 1
+KappaMobile 210 330 1000 flammable 2 1 1.9 2 1.7 3 2.1 1
+flammable
 [/input]
 [output]
 ChevroletExpress
@@ -732,8 +742,8 @@ KappaMobile
 [input]
 2
 ChevroletExpress 215 200 1200 fragile 2.5 1 2.4 2 2.7 1 2.8 1
-ChevroletAstro 210 200 1000 flamable 2 1 1.9 2 1.7 3 2.1 1
-flamable
+ChevroletAstro 210 200 1000 flammable 2 1 1.9 2 1.7 3 2.1 1
+flammable
 [/input]
 [output]
 
@@ -742,8 +752,8 @@ flamable
 [test]
 [input]
 1
-T 2000 1800 10000 flamable 1.3 1 1.5 2 1.4 2 1.7 4
-flamable
+T 2000 1800 10000 flammable 1.3 1 1.5 2 1.4 2 1.7 4
+flammable
 [/input]
 [output]
 T
@@ -760,9 +770,9 @@ T
 
 [task-description]
 ## Description
-Define two classes **Car** and **Engine**.
+Define two classes - **Car** and **Engine**.
 
-A **Car** has a **model, engine, weight** and **color**.
+A **Car** has a **model, engine, weight**, and **color**.
 
 An Engine has **model, power, displacement** and **efficiency**.
 
@@ -770,7 +780,7 @@ A Car's **weight** and **color** and its Engine's **displacements** and **effici
 
 On the first line, you will read a number **N** which will specify how many lines of engines you will receive. 
 
-On each of the next **N** lines you will receive information about an **Engine** in the following format:
+On each of the next **N** lines, you will receive information about an **Engine** in the following format:
 
 `<model> <power> <displacement> <efficiency>`
 
@@ -780,9 +790,9 @@ On each of the next **M** lines the information about a **Car** will follow in t
 
 `<model> <engine> <weight> <color>`
 
-Where the engine in the format will be the **model of an existing Engine**. 
+The engine in the above input will be the **model of an existing Engine**. 
 
-When creating the object for a **Car**, you should keep a **reference to the real engine** in it, instead of just the engines model, **note** that the optional properties **might be missing** from the formats.
+When creating the object for a **Car**, you should keep a **reference to the real engine** in it, instead of just the engine's model, **note** that the optional properties **might be missing** in the input.
 
 Your task is to print each car (in the **order** you **received** them) and its information in the format defined below. 
 
@@ -1883,17 +1893,17 @@ Color: Gray
 
 [task-description]
 ## Description
-You wanna be the very best pokemon trainer, like no one ever was, so you set out to catch pokemon.
+You wanna be the very best pokemon trainer, so you set out to catch pokemon.
 
 Define a class **Trainer** and a class **Pokemon**.
 
-Trainer has a **name**, **number of badges** and a **collection of pokemon**.
+The **Trainer** class has **name**, **number of badges** and a **collection of pokemon**.
 
-Pokemon has a **name**, an **element** and **health**, all values are **mandatory**.
+The **Pokemon** class has a **name**, an **element** and **health**, all values are **mandatory**.
 
 Every Trainer **starts with 0 badges**.
 
-From the console you will receive an unknown number of lines until you receive the command `Tournament`. 
+You will receive an unknown number of lines from the console until you receive the `Tournament` command. 
 
 Each line will carry information about a pokemon and the trainer who caught it in the format:
 
@@ -1901,19 +1911,19 @@ Each line will carry information about a pokemon and the trainer who caught it i
 
 Where **trainerName** is the name of the Trainer who caught the pokemon. 
 
-Names are **unique**, there can not be 2 trainers with the same name. 
+Names are **unique**, there cannot be 2 trainers with the same name. 
 
-After receiving the command `Tournament` an unknown number of lines containing one of three elements **"Fire"**, **"Water"**, **"Electricity"** will follow until the command `End` is received. 
+After receiving the `Tournament`command an unknown number of lines containing one of three elements **"Fire"**, **"Water"**, **"Electricity"** will follow until the command `End` is received. 
 
-For every command you must check if a trainer has **at least 1** pokemon with the given element. 
+For every command, you must check if a trainer has **at least 1** pokemon with the given element. 
 
-If he does, he receives 1 badge, otherwise all his pokemon **lose 10 health**. 
+If he does, he receives 1 badge, otherwise, all his pokemon **lose 10 health**. 
 
-If a pokemon falls **to 0 or less health he dies** and must be deleted from the trainer's collection. 
+If a **pokemon's health falls to 0 or less** it is defeated and must be deleted from the trainer's collection. 
 
-After the command `End` is received you should print all trainers **sorted by the number of badges they have in descending order**. 
+After the `End` command is received, you should print all trainers **sorted by the number of badges they have in descending order**. 
 
-If two trainers have the same amount of badges they should be sorted by order of appearance in the input. 
+If two trainers have the same amount of badges, they should be sorted by order of appearance in the input. 
 
 Print in the format:
 
@@ -2232,11 +2242,11 @@ G 0 0
 
 [task-description]
 ## Description
-You and your friends decide to create a Class that holds all the information about all of you, even your pokemon collection.
+You and your friends decide to create a class that holds all the information about all of you, even your pokemon collection.
 
-Since you are good at writing code, they asked you to design that Class.
+Since you are good at writing code, they asked you to design that class.
 
-From the console you will receive lines until the command `End`.
+You will receive lines of input from the console until you get the `End` command.
 
 Each of those lines contains information about a person in one of the following formats:
 
@@ -2256,13 +2266,13 @@ Person names are **unique** - there will not be two people with the same name.
 
 A person can have **only one company** and **one car**, but can have **multiple parents, children** and **pokemon**. 
 
-After the command `End`, you will receive a **single** name on the next line.
+After the `End` command, you will receive a **single** name on the next line.
 
 You should **print** all information about that person. 
 
 **Note** that the information can change **during** the **input**.
 
-For example, if you receive multiple lines which specify a person company, only the **last one** should be the one remembered. 
+For example, if you receive multiple lines which specify a person's company, only the **last one** should be stored. 
 
 The salary must be formatted to **the second decimal place**.
 
@@ -2505,15 +2515,15 @@ LR 01/01/1000
 ## Description
 *You want to build your family tree, so you went to ask your grandmother.*
 
-*Sadly your grandmother keeps remembering information about your predecessors in pieces, so it falls to you to group the information and build the family tree.*
+*Sadly your grandmother keeps remembering information about your predecessors in pieces, so it falls on you to group the information and build the family tree.*
 
-On the first line of the input, you will receive either a name or a birthdate in the format:
+On the first line of the input, you will receive either a name or a date of birth in the format:
 
 `<FirstName> <LastName>` or `day/month/year`
 
 Your task is to find information about the person in the family tree. 
 
-On the next lines, until the command `End`, you will receive information about your predecessors that is needed for the family tree.
+On the next lines, until the `End` command is received, you will get information about your predecessors that is needed for the family tree.
 
 The information will be in one of the following formats:
 
@@ -2527,9 +2537,9 @@ The first 4 formats reveal a family tie:
 
 The person **on the left** is the **parent** to the person **on the right**.
 
-The format can be **without names**. 
+Some inputs might not includes names at all.
 
-For example, the 4th format means the person **born on the left date** is the **parent to the person born on the right** date. 
+For example, the 4th type of format means the person **born on the specified date on the left** is the **parent of the person born on the date that is on the right side**.
 
 The last format ties **different** information together – i.e. **the person with that name was born on that date**. 
 
@@ -2537,13 +2547,13 @@ The last format ties **different** information together – i.e. **the person wi
 
 There will **always** be enough entries to construct the family tree (all people names and birthdates are known and they have **at least one** connection to another person in the tree).
 
-After the command `End` is received you should print all information about the person whose name or birthdate you received on the first line – his **name, birthday, parents, and children** (check the examples for the format). 
+After the `End` command is received, you should print all information about the person whose name or birthdate you received on the very first line – his **name, birthday, parents, and children** (check the examples for the format). 
 
 The people in the parents and children lists should be **ordered** by their **first appearance** in the input.
 
 Regardless if they appeared as a birthdate or a name. 
 
-For example in the first input Stan is before Jenny because his birthdate appeared first in the second line, while she appeared in the third line.
+For example, in the first input, Stan is before Jenny because his birthdate appeared first in the second line, while she appeared in the third line.
 
 # Examples
 
@@ -2821,7 +2831,7 @@ For example, the special characteristic of the **Siamese** cats is their **ear s
 
 All the information about the cats, their breed and characteristics should be collected.
 
-From the console you will receive lines of information about a cat until the command `End`.
+You will receive lines of information about a cat until you get the `End` command.
 
 The information will come in **one of** the following formats:
 
@@ -2829,9 +2839,12 @@ The information will come in **one of** the following formats:
 - `Cymric <name> <furLength>`
 - `DomesticShorthair  <name> <meowingVolume>`
 
-On the last line after the command `End` you will receive a **name** of a cat. 
+On the last line after the `End` command, you will receive a cat's name. 
 
-You should print that cat and round the number of its s **two digits** after the decimal separator.
+You should print the cat's information in the format: 
+`<breed> <name> <numeric value of their special characteristic>`
+
+**Round** the numeric value of their ear size, fur length or meowing volume **to the second digit after the decimal place**.
 
 # Examples
 
