@@ -349,7 +349,7 @@ Scrieți un program care
 ## Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
-| Philippines | Going to Philippines! |
+| Austria | Going to Austria! |
 | 1000|  |
 | 550|  |
 | 450|  |
@@ -375,14 +375,14 @@ Scrieți un program care
 [tests]
 [test open]
 [input]
-Philippines
+Austria
 1000
 550
 450
 End
 [/input]
 [output]
-Going to Philippines!
+Going to Austria!
 [/output]
 [/test]
 [test open]
