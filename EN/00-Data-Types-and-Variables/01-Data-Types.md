@@ -75,7 +75,7 @@ For example, if we have a variable meant to hold integers we will not be able to
 
 Data types specify the different sizes and values that can be stored in variables. 
 
-There are **two general types of `data type`** in Java:
+There are **two general data types** in Java:
 
 **Primitive data types**
 
