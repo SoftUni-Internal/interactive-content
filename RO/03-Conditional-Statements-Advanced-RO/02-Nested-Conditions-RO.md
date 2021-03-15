@@ -34,9 +34,6 @@ Respectiv, vom folosi **câteva** blocuri `if-else`.
 
 Aceste blocuri vor fi **imbricate**, adică din **rezultatul** primului, urmează să **definim** care dintre **celelalte** să executăm.
 
-Diagrama de mai jos ilustrează în detaliu procesul:
-
-[image assetsSrc="01.Personal-titles-01.jpg" /]
 
 După citirea datelor de intrare de pe consolă, ar trebui executată următoarea logică a programului:
 ```java

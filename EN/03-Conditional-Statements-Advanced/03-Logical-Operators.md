@@ -89,7 +89,7 @@ The input data is read from the console and consists of 6 lines:
 - The numbers: `x1`, `y1`, `x2`, `y2`, `x`, `y` (it is guaranteed that `x1 < x2` and `y1 < y2`)
 
 ## Sample Input and Output
-|Input|Output|
+|**Input**|**Output**|
 |---|---|
 |2|Inside|
 |-3||
