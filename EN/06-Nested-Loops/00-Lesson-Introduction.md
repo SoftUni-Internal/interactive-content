@@ -16,9 +16,9 @@
 - Nesting loops inside other loops
 - Use cases
 
-  * Nested while-loops
-  * Nested for-loops
-  * Combining while- and for-loops
+  * nested while-loops
+  * nested for-loops
+  * combining while- and for-loops
 
 **3. Practical Exercises**
 

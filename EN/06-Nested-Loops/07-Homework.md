@@ -1077,7 +1077,10 @@ public class Main {
 [task-description]
 ## Description
 Crete a program that prints out **the time**, receiving a number representing the current hour and another one representing the minutes.
-The program should start at the given time and run until reaching 23:59. Increment the minute and hour values accordingly.
+
+The program should start at the given time and run until reaching 23:59. 
+
+Increment the minute and hour values accordingly.
 
 ## Input
 The input consists of **2** lines:
@@ -1085,7 +1088,9 @@ The input consists of **2** lines:
 - Second line - minutes - integer in range \[0...59\]
 
 ## Output
-- Hours must be printed to the console in the following: "\{hour\} : \{minutes\}" format. Add filler zeroes to the hour and minute output if their values consist of a single digit.
+- Hours must be printed to the console in the following: "\{hour\} : \{minutes\}" format
+
+Add filler zeroes to the hour and minute output if their values consist of a single digit.
 
 ## Example
 
@@ -1263,7 +1268,10 @@ public class Main {
 [task-description]
 ## Description
 Crete a program that prints out **the time** this time there will be another number, representing the seconds.
-The program should start at the given time and run until reaching 23:59:59. Increment the second, minute and hour values accordingly.
+
+The program should start at the given time and run until reaching 23:59:59. 
+
+Increment the second, minute and hour values accordingly.
 
 ## Input
 The input comes in the form of **3** lines:
@@ -1272,7 +1280,9 @@ The input comes in the form of **3** lines:
 - Third line - **seconds** - integer in range \[0...59\]
 
 ## Output
-- The output should be printed in the following format "\{hour\} : \{minutes\} : \{seconds\}". Add filler zeroes if the output for any of the output elements cosists of a single digit.
+- The output should be printed in the following format "\{hour\} : \{minutes\} : \{seconds\}"
+
+Add filler zeroes if the output for any of the output elements cosists of a single digit.
 
 ## Example
 
