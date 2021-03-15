@@ -12,7 +12,7 @@ It is important to understand that design patterns by themselves **are not** fin
 
 Instead, they are **general descriptions** of problem-solving **templates** that can be applied in many situations.
 
-## Why do we use **design patterns**
+## Why Do We Use **Design Patterns**
 
 By applying design patterns, we can solve structural problems and speed up the development process by implementing **well-proven development paradigms**.
 
@@ -50,7 +50,7 @@ Design patterns consist of **four** elements:
 
 [slide hideTitle]
 
-# Benefits and Drawbacks
+# Why Design Patterns
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-7-8-9-why-design-patterns-benefits-and-drawbacks-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
