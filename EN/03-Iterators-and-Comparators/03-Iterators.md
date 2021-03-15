@@ -5,7 +5,7 @@
 
 # Collections Hierarchy
 
-The Collection interface extends Iterable and hence all child classes of Collection also implement Iterable.
+The Collection interface extends Iterable and all child classes of Collection implement Iterable.
 
 [image assetsSrc="iterators-example(1).png" /]
 
@@ -19,7 +19,7 @@ The Collection interface extends Iterable and hence all child classes of Collect
 
 `Iterable<T>` is the root interface of the Java collection classes.
 
-An Iterable represents a collection which can be traversed.
+An Iterable represents a collection that can be traversed.
 
 A class that implements the `Iterable<T>` can be used with the new for-loop.
 
@@ -68,11 +68,11 @@ while(iterator.hasNext()) {
 
 - `forEach(Consumer<? super T> action)`
 
-Another way to iterate the elements of a Java Iterable is via its forEach() method. 
+Another way to iterate over the elements of a Java Iterable is via its forEach() method. 
 
 The forEach() method takes a Java Lambda Expression as a parameter. 
 
-This lambda expression is called once for each element in the Iterable. 
+This lambda expression is called once for each element in the Iterable collection. 
 
 We use the `forEach()` method to iterate over the collection.
 
@@ -118,9 +118,9 @@ This example shows how to implement the `Iterator<T>` interface in a custom iter
 
 Let us suppose, we want a custom list with names.
 
-We want our NamesList to iterate only the names that start with "A".
+We want our NamesList to iterate only over the names that start with "A".
 
-For that reason, our NamesList class have to implement the Iterable interface.
+For that reason, our NamesList class has to implement the Iterable interface.
 
 ```java
 public class NamesList implements Iterable<String> {
@@ -139,7 +139,7 @@ public class NamesList implements Iterable<String> {
 
 The next step is to create a constructor.
 
-Our constructor accepts varargs (of type String) so, we can create **multiple instances of the object** with different number of arguments each time we create it.
+Our constructor accepts varargs (of type String) so we can create **multiple instances of the object** with a different number of arguments each time we create it.
 
 ```java
 public class NamesList implements Iterable<String> {
@@ -153,7 +153,7 @@ public class NamesList implements Iterable<String> {
 }
 ```
 
-After that, we have to implement the `iterator()` -  method which is inherited by the Iterable interface.
+After that, we have to implement the `iterator()` method which is inherited by the Iterable interface.
 
 
 ```java
@@ -173,21 +173,21 @@ public class NamesList implements Iterable<String> {
 }
 ```
 
-We have to create an **inner** `NamesIterator` class which implements `Iterator<String>`. 
+We have to create an **inner** `NamesIterator` class that implements `Iterator<String>`. 
 
 In this class, we have a field `int counter;`.
 
-In the constructor, we set the initial value of the field `counter` to 0.
+In the constructor, we set the initial value of the `counter` field to 0.
 
-Next, we implement the `hasNext()` - method which is mandatory when we implement the Iterator interface.
+Next, we implement the `hasNext()` method which is mandatory when implementing the Iterator interface.
 
-The boolean `hasNext()` - method returns `true` every time the name starts with `A`.
+The boolean `hasNext()` method returns `true` every time the name starts with `A`.
 
-The next one method which is mandatory to implement is the `next()` method.
+The next method that is mandatory to implement is the `next()` method.
 
 This method return the **current** name from our `names` array.
 
-Lastly, we have to return `new NamesIterator()` in the `iterator()` method.
+Lastly, we have to returns `new NamesIterator()` in the `iterator()` method.
 
 ```java
 public class NamesList implements Iterable<String> {
@@ -249,6 +249,10 @@ public class NamesList implements Iterable<String> {
 # Description
 Create a class **Library** from the UML diagram below:
 
+
+[image assetsSrc="java-oop-basics-uml-book-iterable.png" /]
+
+
 | `<<Iterable<Book>>>` |
 | --- |
 | **Library** |
@@ -257,7 +261,10 @@ Create a class **Library** from the UML diagram below:
 
 Then, create a nested class **LibIterator** from UML diagram below:
 
-| `<Iterator<Book>>` |
+[image assetsSrc="java-oop-basics-uml-book-iterable2.png" /]
+
+
+| `<<Iterator<Book>>` |
 | --- |
 | **LibIterator** |
 |- counter: int |
