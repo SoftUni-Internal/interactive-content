@@ -14,28 +14,28 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-It's hot and sunny outside so you decides to go to the swimming pool with your friends. 
+It's hot and sunny outside so you decide to go to the swimming pool with your friends. 
 
-Your task is to write a program that calculates the amount that should be paid. 
+Your task is to create a program that calculates the amount that should be paid for entry to the pool. 
 
 **Every person should pay an entrace fee.** 
 
-You should keep in mind that **an umbrella is enough for two people** and only **75% of the group wants sunbeds**. 
+You should keep in mind that **an umbrella can provide shade for two people** and only **75% of the group would want sunbeds**. 
 
 When calculating the number of umbrellas and sunbeds, their number should be **rounded up to the next integer**.
 
 ## Input
-You will receive **4 lines of input from the console**: 
-- The number of people - **an integer** in the range [1... 100]
-- The entrance fee for one person - **a real number** in the range [0.00... 50.00]
-- The price for a single sunbed - **a real number** in the range [0.00... 50.00]
-- The price for one umbrella - **a real number** in the range [0.00... 50.00] 
+You will receive **4 lines of input**: 
+- The number of people - **an integer** in range [1... 100]
+- The entrance fee per person - **a real number** in range [0.00... 50.00]
+- The price for a sunbed - **a real number** in range [0.00... 50.00]
+- The price for an umbrella - **a real number** in range [0.00... 50.00] 
 
 ## Output
 The output should consist of one line:
 - "\{total price\} euro" 
 
-The result must be formatted to **two decimal places**. 
+The result must be formatted up to **the second decimal place**. 
 
 ## Example
 | **Input** | **Output** | **Comments** |
