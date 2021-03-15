@@ -45,12 +45,21 @@ Print out:
 - Then, print out the **best** movie: **"The best movie for you is** \{**movie title**\} **with** \{**sum of symbols**\} **ASCII sum."**
 
 ## Example
-| **Input** | **Output** | **Comments** |
-| --- | --- | --- |
-| Matrix | The best movie for you is Breaking bad with 878 ASCII sum. | First, we receive "Matrix", the first letter is "M" and it has a value of "77", but it is a capital letter, so we subtract from it the length of the title: 77 - 6 = 71. |
-| Breaking bad | | The second letter is "a"  and it has a value of "97". We subtract twice the length of the movie title: 97 - 12 = 85.|
-| Legend | | Similarly, we proceed with each subsequent letter and receive an amount of 563. |
-| STOP | | Upon receiving the "STOP" command, we print the title with the highest value, which is "Breaking bad". The total points are 878. |
+| **Input** | **Output** |
+| --- | --- | 
+| Matrix | The best movie for you is Breaking bad with 878 ASCII sum. | 
+| Breaking bad | |
+| Legend | | 
+| STOP | |
+
+[hints]
+[hint]
+When we receive the first film, we have to calculate the points for it. Similarly, we proceed with each film until we receive the command "STOP".
+[/hint]
+[hint]
+Upon receiving the "STOP" command, we print the title with the highest value.
+[/hint]
+[/hints]
 
 [/task-description]
 [code-io /]
