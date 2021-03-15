@@ -1,3 +1,4 @@
+# Problem: Pool Day
 [slide hideTitle]
 # Pool Day
 [code-task title="Pool Day" taskId="pb-java-exam-Pool-day" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -13,8 +14,8 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Description
-It's hot and sunny outside so you decide to go to the swimming pool with your friends. 
+# Description
+It is hot and sunny outside so you decide to go to the swimming pool with your friends. 
 
 Your task is to create a program that calculates the amount that should be paid for entry to the pool. 
 
@@ -26,14 +27,14 @@ When calculating the number of umbrellas and sunbeds, their number should be **r
 
 ## Input
 You will receive **4 lines of input**: 
-- The number of people - **an integer** in range [1... 100]
-- The entrance fee per person - **a real number** in range [0.00... 50.00]
-- The price for a sunbed - **a real number** in range [0.00... 50.00]
-- The price for an umbrella - **a real number** in range [0.00... 50.00] 
+- The number of people - **an integer** in range [1 ... 100]
+- The entrance fee per person - **a real number** in range [0.00 ... 50.00]
+- The price for a sunbed - **a real number** in range [0.00 ... 50.00]
+- The price for an umbrella - **a real number** in range [0.00 ... 50.00] 
 
 ## Output
 The output should consist of one line:
-- "\{total price\} euro" 
+- "\{**total price**\} **euro**" 
 
 The result must be formatted up to **the second decimal place**. 
 

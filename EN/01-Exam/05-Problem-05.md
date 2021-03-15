@@ -1,3 +1,4 @@
+# Problem: Football Tournament
 [slide hideTitle]
 # Football Tournament
 [code-task title="Football Tournament" taskId="pb-java-exam-football-tournament" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -13,7 +14,7 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 Create a program that receives the name of a football team and displays its statistics, based on its matches played this season. 
 
 The statistics should include the total of points earned during the current season, detailed statistics on the outcome of the games played and thier win rate. 
@@ -30,23 +31,23 @@ There are three possible outcomes from a match:
 ## Input
 You will receive **two lines** of input:
 - The name of the football team that we are analyzing - a string
-- The number of games, played during the season - an integer in range [0… 100] 
+- The number of games, played during the season - an integer in range [0 ... 100] 
 
 **For each game**, a separate line is given:
-- The result of the game - a character ('W', 'D' or 'L')
+- The result of the game - a character ("W", "D" or "L")
 
 ## Output
 Depending on whether the team has played any games or not in the current season, there are two possible outcomes:
 
 - If the team has not played a single match, print out a single line in the following format:
-	- "\{team name\} hasn't played any games during this season."
+	- "\{**team name**\} **hasn't played any games during this season.**"
 - If the team has played at least one match, six lines should be displayed in the following format:
-	- "\{team name\} has won \{count points\} points during this season."
-	- "Total stats:"
-	- "## W: \{number of games won\}"
-	- "## D: \{number draws\}" 
-	- "## L: \{number of games lost\}" 
-	- "Win rate: \{win rate(percentage)\}%"
+	- "\{**team name**\} **has won** \{**count points**\} **points during this season.**"
+	- "**Total stats:**"
+	- "**## W:** \{**number of games won**\}"
+	- "**## D:** \{**number draws**\}" 
+	- "**## L:** \{**number of games lost**\}" 
+	- "**Win rate:** \{**win rate(percentage)**\}**%**"
 
 The percentage must be formatted to the second decimal place.
 
@@ -66,7 +67,7 @@ The percentage must be formatted to the second decimal place.
 | W |  |
 | W |  |
 
-### Comments
+## Comments
 - The name of our team is Liverpool
 - They have played 10 games during the season:
 - 5 won * 3 points = 15 points

@@ -1,3 +1,4 @@
+# Problem: Tournament for Christmas
 [slide hideTitle]
 # Tournament for Christmas
 [code-task title="Tournament for Christmas" taskId="pb-java-exam-tournament-for-christmas" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -13,7 +14,7 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Create a program that tracks your team's performance at a Christmas charity tournament.
 
@@ -31,15 +32,15 @@ At the end of the tournament, if you have won on most days, you win the tourname
 
 ## Input
 
-**The number of days the tournamemnt will be runnung for - an integer in range \[1… 20\]**
+**The number of days the tournamemnt will be runnung for - an integer in range [1 ... 20]**
 
 Until you receive the "**Finish**" command, read:
 
-  - game name - **a string**
+  - Game name - **a string**
 
 For each game read:
 
-  * result - **a string, options: "win" or "lose"**
+  * Result - **a string, options: "win" or "lose"**
 
 
 ## Output
@@ -48,11 +49,11 @@ The output consists of one line:
 
 - If you **win** the tournament:
 
-     "You won the tournament! Total money raised: \{earned money\}"
+     "**You won the tournament! Total money raised:** \{**earned money**\}"
 
 - If you **lose** the tournament:
 
-    "You lost the tournament! Total money raised: \{earned money\}"
+    "**You lost the tournament! Total money raised:** \{**earned money**\}"
 
 **The amount of money should be formatted to the second digit after the decimal point.**
 

@@ -1,3 +1,4 @@
+# Problem: Club
 [slide hideTitle]
 # Club
 [code-task title="Club" taskId="pb-java-exam-Club" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -14,7 +15,7 @@ public class Program {
 [/code-editor]
 [task-description]
 
-## Description
+# nDescription
 The weather is getting warmer and all clubs are launching promising offers. 
 
 Create a program that calculates the profit of a club for the evening and checks whether it reaches a certain goal or not.
@@ -24,22 +25,22 @@ If the price of an order is an odd number - there is **a 25% discount** on it.
 
 # Input
 You will receive:
-- On the first line – the desired profit of the club - **a real number** in range [1.00... 15000.00]
+- On the first line - the desired profit of the club - **a real number** in range [1.00 ... 15000.00]
 
 On the next lines, you will be receiving two rows until you receive the command: **"Party!"** or until the desired profit is reached: 
 - The name of a cocktail - **a string** 
-- The number of times this is contained in the order - **an integer** in range [1… 50] 
+- The number of times this is contained in the order - **an integer** in range [1 ... 50] 
 
 ## Output
 First, print one of the following lines to the console:
 
-- If you receive the command "Party!":
-	- "We need \{money needed\} dollars more."
+- If you receive the command **"Party!"**:
+	- "**We need** \{**money needed**\} **dollars more.**"
 - If the desired profit is reached:
-	- "Target acquired."
+	- "**Target acquired.**"
 
 Then:
-- "Club income - \{club's profit\} dollars."
+- "**Club income -** \{**club's profit**\} **dollars.**"
 
 The amount of money must be formatted up **to the second decimal place**.
 
@@ -55,12 +56,26 @@ The amount of money must be formatted up **to the second decimal place**.
 | Party! |  |
 
 ### Comments
-- The goal of the club is to collect 500$.
-- The first order consists of 6 Bellini cocktails.
-- The price of the cocktail is the length of its name - 7. The total cost of the order is 6 * 7$ -> 42$. Since 42 is an even number, there is no discount.
-- The next order is for 7 Bamboo cocktails, its ammount is 6$. 7 * 6$-> 42$. Again, there is no discount.
-- We receive the command "Party!". The program stops.
-- The club has a profit of 42 + 42 = 84$. The target is 500$, which means the goal is not reached. 500 – 84 = 416$ more is needed.
+- The goal of the club is to collect 500$
+- The first order consists of 6 Bellini cocktails
+- The price of the cocktail is the length of its name - 7. The total cost of the order is 6 * 7$ -> 42$
+
+Since 42 is an even number, there is no discount.
+
+- The next order is for 7 Bamboo cocktails, its ammount is 6$ 
+
+7 * 6$-> 42$
+
+Again, there is no discount.
+
+- We receive the command "**Party!**"
+
+The program stops.
+- The club has a profit of 42 + 42 = 84$
+
+The target is 500$, which means the goal is not reached. 
+
+500 - 84 = 416$ more is needed.
 
 [/task-description]
 [code-io /]

@@ -1,3 +1,4 @@
+# Problem: Family Trip
 [slide hideTitle]
 # Family Trip
 [code-task title="Family Trip" taskId="pb-java-exam-family-trip" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -13,7 +14,7 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 The Smiths are planning their family trip. 
 
 Your task is to create a program that calculates whether their budget will be sufficient, knowing how many nights they have planned to stay, what the price per night is and what percentage of their budget must be spent on additional costs.
@@ -22,17 +23,17 @@ Keep in mind that if they stay longer than 7 nights, the price per night should 
 
 ## Input
 You will receive **4 lines of input**:
-- The budget that they have – **a real number** in range [1.00 … 10000.00] 
-- The number of nights – **an integer** in range [0 … 1000] 
-- The price per night – **a real number** in range [1.00 … 500.00] 
-- The additional cost percentage – **an integer** in range [0 … 100] 
+- The budget that they have - **a real number** in range [1.00 ... 10000.00] 
+- The number of nights - **an integer** in range [0 ... 1000] 
+- The price per night - **a real number** in range [1.00 ... 500.00] 
+- The additional cost percentage - **an integer** in range [0 ... 100] 
 
 ## Output
 The output depends on whether the budget is sufficient or not:
 - If the budget **is sufficient**:
-	- "The Smiths will be left with \{money left after the trip\} dollars after the vacation."
+	- "**The Smiths will be left with** \{**money left after the trip**\} **dollars after the vacation.**"
 - If the budget is **does not suffice**:
-	- "\{money needed\} dollars needed."
+	- "\{**money needed**\} **dollars needed.**"
 
 The sum must be formatted to the second digit after the decimal point.
 
