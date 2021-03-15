@@ -1,4 +1,4 @@
-# Boolean Type
+# Boolean
 [slide hideTitle]
 
 # The Boolean Data Type
