@@ -119,7 +119,7 @@ We called the method of the abstract class using our object `obj`.
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Border Control
+# Problem: Border Control
 
 [code-task title="Border Control" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-lab-Border-Control" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
@@ -150,7 +150,8 @@ The order of printing does not matter.
 [image assetsSrc="interfaces-and-abstraction-example(9).png" /]
 
 
-## Example One
+# Examples
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | Peter 22 9010101122 | 9010101122 |
@@ -159,7 +160,7 @@ The order of printing does not matter.
 | End |  |
 | 122 |  |
 
-## Example Two
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | Teo 31 7801211340 | 7801211340 |

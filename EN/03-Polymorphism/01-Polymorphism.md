@@ -256,7 +256,7 @@ Dogs can eat meat.
 # Description
 Create a class **MathOperation**, which should have an `add()` method. 
 
-The `add()` method has to be invoked with **two**, **three** or **four** **integers**.
+The `add()` method has to be invoked with **two**, **three** or **four integers**.
 
 **You should be able to use the class like this:**
 

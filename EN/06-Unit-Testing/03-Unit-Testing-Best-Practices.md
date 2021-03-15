@@ -1,4 +1,4 @@
-# Unit-Testing Best Practices
+# Unit Testing Best Practices
 
 [slide hideTitle]
 

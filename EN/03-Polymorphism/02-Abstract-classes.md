@@ -264,7 +264,7 @@ Test Passed!
 
 
 [slide hideTitle]
-# Problem with Solution: Animals
+# Problem: Animals
 [code-task title="Animals" timeLimit=5000 taskId="Java-OOP-Advanced-Polymorphism-lab-Animals" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 

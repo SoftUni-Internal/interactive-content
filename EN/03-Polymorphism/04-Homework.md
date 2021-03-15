@@ -42,7 +42,9 @@ Finally, print the **remaining fuel** for both car and truck rounded **2 digits 
 
 **Truck:** \{**liters**\}"
 
-## Example One
+# Examples
+
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | Car 15 0.3 | Car travelled 9 km |
@@ -53,7 +55,7 @@ Finally, print the **remaining fuel** for both car and truck rounded **2 digits 
 | Refuel Car 50 |  |
 | Drive Truck 10 |  |
 
-## Example Two
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | Car 30.4 0.4 | Car needs refueling |
@@ -387,8 +389,8 @@ If there are **no people in the bus** when driving the air-conditioner is **turn
 
 "**Car/Truck/Bus needs refueling**"
 
-- If given fuel is **smaller than or equal to 0** print "**Fuel must be a positive number**"
-- If given fuel cannot fit in car or bus tank print "**Cannot fit fuel in tank**"
+- If given fuel is **smaller than or equal to 0**, print "**Fuel must be a positive number**"
+- If given fuel cannot fit in car or bus tank, print "**Cannot fit fuel in tank**"
  
 - Finally, print the **remaining fuel** for car, truck, and bus rounded to **2 digits after the decimal separator** as follows:
 
@@ -499,14 +501,7 @@ Bus: 23.00
 # Description
 Your task is to create a class **hierarchy** like the picture below. 
 
-All the classes should be **abstract**, **except** for:
-
-- **Vegetable**
-- **Meat**
-- **Mouse**
-- **Tiger**
-- **Cat**
-- **Zebra** 
+All the classes should be **abstract**, **except** for **Vegetable**, **Meat**, **Mouse**, **Tiger**, **Cat**, and **Zebra**.
 
 [image assetsSrc="interfaces-and-abstraction-example(17).png" /]
 
@@ -551,28 +546,29 @@ Use the **DecimalFormat** class.
 ## Note: 
 Consider overriding the default **toString()** method.
 
-## Example One
+# Examples
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | Cat Gray 1.1 Home Persian | Meowwww |
 | Vegetable 4 | Cat[Gray, Persian, 1.1, Home, 4] |
 | End |  |
 
-## Example Two
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | Tiger Tom 167.7 Asia | ROAAR!!! |
 | Vegetable 1 | Tigers are not eating that type of food! |
 | End | Tiger[Tom, 167.7, Asia, 0] |
 
-## Example Three
+## Example 3
 | **Input** | **Output** |
 | --- | --- |
 | Zebra Jaguar 500 Africa | Zs |
 | Vegetable 150 | Zebra[Jaguar, 500, Africa, 150] |
 | End |  |
 
-## Example Four
+## Example 4
 | **Input** | **Output** |
 | --- | --- |
 | Mouse Jerry 0.5 Anywhere | SQUEEEAAAK! |
@@ -829,8 +825,8 @@ The total running time of your program should be no more than **0.1s**.
 
 The total memory allowed for use by your program is **16MB**.
 
-
-## Example One
+# Examples
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | dom3. text | dexom3. t |
@@ -838,7 +834,7 @@ The total memory allowed for use by your program is **16MB**.
 | paste 3 4 |  |
 | exit |  |
 
-## Example Two
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | abc d e | dabc E |
@@ -1018,12 +1014,13 @@ The total running time of your program should be no more than **0.1s**.
 
 The total memory allowed for use by your program is **16MB**.
 
-## Example One
+# Examples
+## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | 1 * 2 * 3 ms * 4 * mr / 2 end | 72 |
 
-## Example Two
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | 12 / 3 ms / 2 ms * 5 mr * mr end | 8 |
