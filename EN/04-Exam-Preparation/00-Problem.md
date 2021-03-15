@@ -20,34 +20,34 @@ public class Main {
 [task-description]
 ## Description
 
-Write a password reset program that performs a series of commands on a predefined string. 
+Create a program that performs a series of commands on a predefined string, which is representing a password. 
 
-First, you will receive a string. Until the command "**Done**", you will be receiving strings with commands split by a single space. 
+First, you will receive a string. Until the command "**Done**", you will be receiving **strings** containing commands split by a single space. 
 
 The commands will be the following:
 
 - **TakeOdd**
-  * takes only the characters at **odd indices** and **concatenates** them together to obtain the **new raw password** and then **prints** it
-- Cut \{index\} \{length\}
-  * gets the substring with the **given length** starting from the **given index** from the password and removes its first occurrence of it, then prints the password on the console
-  * the given index and length will **always be valid**
-- Substitute \{substring\} \{substitute\}
-  * if the raw password contains the given substring, replaces all of its occurrences with the substitute text given and prints the result
+  * takes only the characters at **odd indices** and **concatenates** them together to obtain the **new raw password**, and then **prints** it
+- **Cut \{index\} \{length\}**
+  * gets the substring with the **given length**, starting from the **given index**, and removes the first occurrence of it, then prints the password to the console
+  * the given **index** and the given **length** will **always be valid**
+- **Substitute \{substring\} \{substitute\}**
+  * if the raw password contains the given substring, replaces all of its occurrences with the given substitute, and prints out the result
   * if it does not, prints "**Nothing to replace!**"
 
 
 ## Input
 
-  - You will be receiving strings until the "**Done**" command is given
+  - You will be receiving strings until the "**Done**" command is received
 
 ## Output
 
-- After the "**Done**" command is received, print:
+- After the "**Done**" command is received, print out:
   * "Your password is: \{password\}"
 
 ## Constraints
 
-- The indexes from the "Cut \{index\} \{length\}" command will always be valid
+- The indexes from the **"Cut \{index\} \{length\}"** command will always be valid
 
 
 ## Examples
@@ -62,28 +62,31 @@ The commands will be the following:
 
 ## Comments
 
-TakeOdd
+**TakeOdd**
 
 - " Siiceercaroetavm\!\:\?\:ahsott\.\:i\:nstupmomceqr" \-\> "icecream\:\:hot\:\:summer"
 
+- We only take the chars at odd indices: 1, 3, 5 etc.
 
-- We only take the chars at odd indices 1, 3, 5 etc.
+**Cut 15 3** 
 
-"Cut 15  3" \-\> "icecream\:\:hot\:\:summer" \-\> sum
+- \-\> "icecream\:\:hot\:\:summer" \-\> sum
 
 - icecream\:\:hot\:\:mer
 
-We cut a substring starting at index 15 with a length of 3, remove it from the raw password and print it. 
+We remove the substring starting at index 15 with a length of 3.
 
-Then, on a new line we print the resulting new raw password.
+Then, on a new line, we print the new raw password.
 
-"Substitute \:\: \-" \-\> "icecream\:\:hot\:\:summer" \-\> "icream\-hot\-summer"
+**Substitute \:\: \-** 
+
+- \-\> "icecream\:\:hot\:\:summer" \-\> "icream\-hot\-summer"
 
 - We replace "\:\:" with "\-"
 
-"Substitute \| \^" \-\> "Nothing to replace!" 
+**Substitute \| \^** \-\> **"Nothing to replace!"** 
 
-- "|" is not found anywhere in the raw password
+- "\|" is not found anywhere in the raw password
 
 - Finally, after receiving the "**Done**" command, we print the resulting password in the proper format
 
