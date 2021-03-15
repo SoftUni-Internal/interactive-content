@@ -58,7 +58,9 @@ The amount of money must be formatted up **to the second decimal place**.
 ### Comments
 - The goal of the club is to collect 500$
 - The first order consists of 6 Bellini cocktails
-- The price of the cocktail is the length of its name - 7. The total cost of the order is 6 * 7$ -> 42$
+- The price of the cocktail is the length of its name - 7
+
+The total cost of the order is 6 * 7$ -> 42$.
 
 Since 42 is an even number, there is no discount.
 
