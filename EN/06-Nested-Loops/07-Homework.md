@@ -1702,11 +1702,16 @@ The program should accept words from the console and calculate their value until
 | Destination | |
 | STOP | |
 
-### Comments
-- The first letter is "H| and it\'s ASCII value is 72, "o" has value 111, "u" has value 117, "s" has value 115, "e" has value 101
-
+[hints]
+[hint]
+The first letter is "H| and it\s ASCII value is 72, "o" has value 111, "u" has value 117, "s" has value 115, "e" has value 101
 Their sum is 516.
-- Performs same calculations for the following words and determines that **Destination** has the highest value - 1154
+[/hint]
+[hint]
+Performs same calculations for the following words and determines that **Destination** has the highest value - 1154
+[/hint]
+[/hints]
+
 
 [/task-description]
 [tests]
@@ -1835,31 +1840,43 @@ Their **ASCII code** is calculated by adding **33** to the curent digit
 | | ZERO |
 | | \#\# |
 
-### Comments
-- The number 2049 has four digits so we will print out four lines.
-- The first line will use the digit: `9`
+[hints]
+[hint]
+The number 2049 has four digits so we will print four rows.
+The first line corresponds to the digit 9
 
 We add 33 to 9 and get 42.
 
-- This is the decimal ASCII code of the symbol that should fill the first output line
-- The corresponding ASCII code for 42 is `'\*'`
-- We have to print it out 9 times: '\*' 9 times
-- The second digit is 4. 4\+33=37. The ASCII code for: `%`
-- We print `%` 4 times
-- The third line matches a digit 0
+This is the decimal ASCII code of the symbol it should be print on the first row
+From the ASCII table we know that the corresponding symbol of 42 is '\*'
+Because the first line corresponds to the digit 9 we print '\*' 9 times
+[/hint]
+[hint]
+For the second line the digit is 4. 4\+33=37. Using the ASCII table we find that the symbol to print is '%' 
+We print '%' 4 times
+[/hint]
+[hint]
+The third line matches a digit 0
 
-On this line, we print out the word `ZERO` once.
+On this line, we print ZERO once.
+[/hint]
+[hint]
+The last digit of the number is 2. 2\+33=35
+From the ASCII table we find the symbol to print - '\#' and we print it twice
+[/hint]
+[/hints]
 
-- The last digit is 2. 2\+33=35
-    - That is - `\#` and we print it twice
+[hints]
+[hint]
+Read the number as a String, save its length in a variable using the **length() method**.
 
-### Hints
-- Read the number as a String and save its length in a variable using the **length() method**.
+Find more **information** about it on the Internet
+To take the last digit of the number, divide it by 10 (**num % 10**) and save it in a variable
 
-You can more **information** about the elements of this problem on the Internet
-- To get the last digit of the number, divide it by 10 (**num % 10**) and save it in a variable
+Then **remove the last digit of the number**, dividing it by 10 (**num / 10**) so that the next digit to take is again the last one.
+[/hint]
+[/hints]
 
-- To **remove the last digit of the number**, divide it by 10 (**num / 10**).
 
 [/task-description]
 [tests]
@@ -2095,11 +2112,14 @@ All scores must be formatted to the **second decimal point**.
 | 5.66 | | 
 | Finish | | 
 
-## Comments
-- 2 - the number of people on the jury - therefore gain a 2 evaluations of the presentation:
+[hints]
+[hint]
+2 - the number of people on the jury - therefore gain a 2 evaluations of the presentation:
     - \(6.00 \+ 5.50\) / 2 = 5.75
     - \(5.84 \+ 5.66\) / 2 = 5.75
-- \(6.00 \+ 5.50 \+ 5.84 \+ 5.66\) / 4 = 5.75 
+\(6.00 \+ 5.50 \+ 5.84 \+ 5.66\) / 4 = 5.75
+[/hint]
+[/hints]
 [/task-description]
 [tests]
 [test open]
