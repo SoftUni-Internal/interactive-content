@@ -16,7 +16,7 @@ When a developer builds software that follows a **bad design**, the code can bec
 
 To avoid these consequences, we should follow the **SOLID** Principles.
 
-The **SOLID** Principles are a **coding standard** that all developers should have a **clear concept** for developing software in a **way** that **avoids bad design**.
+The **SOLID** Principles are a **coding standard** that provides developers with a **clear concept** for developing software in a **way** that **avoids bad design**.
 
 They were developed by **Robert Martin** and are used across the object-oriented design paradigm.
 
