@@ -243,7 +243,7 @@ System.out.println(num);
 
 Keep in mind that sometimes floating-point might also behave abnormally in calculations
 
-You can read more about **IEEE 754** by looking it up in any seach engine.
+You can read more about **IEEE 754** by looking it up in any search engine.
 
 ```java live
 BigDecimal bigDecimal1 =
