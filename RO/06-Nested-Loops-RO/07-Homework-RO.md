@@ -349,7 +349,7 @@ Scrieți un program care
 ## Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
-| Philippines | Going to Philippines! |
+| Austria | Going to Austria! |
 | 1000|  |
 | 550|  |
 | 450|  |
@@ -375,14 +375,14 @@ Scrieți un program care
 [tests]
 [test open]
 [input]
-Philippines
+Austria
 1000
 550
 450
 End
 [/input]
 [output]
-Going to Philippines!
+Going to Austria!
 [/output]
 [/test]
 [test open]
@@ -1687,11 +1687,15 @@ De pe consolă citiți cuvinte până la comanda **"STOP"**, apoi tipăriți:
 | Destination | |
 | STOP | |
 
-### Comentarii
--Prima literă este "H" și valoarea ASCII este 72, "o" are valoarea 111, "u" are valoarea 117, "s" are valoarea 115, "e" are valoarea 101
-
-Suma lor este 516/
-- Continuați să faceți aceleași calcule pentru celelalte cuvinte și obțineți că destinația are cea mai mare valoare - 1154
+[hints]
+[hint]
+Prima literă este "H" și valoarea ASCII este 72, "o" are valoarea 111, "u" are valoarea 117, "s" are valoarea 115, "e" are valoarea 101
+Suma lor este 516.
+[/hint]
+[hint]
+Continuați să faceți aceleași calcule pentru celelalte cuvinte și obțineți că destinația are cea mai mare valoare - 1154
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -1819,30 +1823,42 @@ Pe fiecare linie trebuie să imprimați un simbol, care îndeplinește următoar
 | | ZERO |
 | | \#\# |
 
-### Commentarii
-- Numărul 2049 are patru cifre, așa că vom imprima patru linii
-- Prima linie corespunde cifrei 9
+[hints]
+[hint]
+Numărul 2049 are patru cifre, așa că vom imprima patru linii
+Prima linie corespunde cifrei 9
 
 Adunăm 33 la 9 și obținem 42.
 
-- Acesta este codul ASCII zecimal al simbolului pe care ar trebui să fie tipărit pe prima linie
-- Din tabelul ASCII știm că simbolul corespunzător al lui 42 este "\*"
-- Deoarece la prima linie corespunde cifra 9 imprimăm de 9 ori "\*"
-- Pentru a doua linie cifra este 4. 4 \ + 33 = 37
+Acesta este codul ASCII zecimal al simbolului pe care ar trebui să fie tipărit pe prima linie
+Din tabelul ASCII știm că simbolul corespunzător al lui 42 este "\*"
+Deoarece la prima linie corespunde cifra 9 imprimăm de 9 ori "\*"
+[/hint]
+[hint]
+Pentru a doua linie cifra este 4. 4 \ + 33 = 37
 Folosind tabelul ASCII, descoperim că simbolul de imprimat este "%".
-- Tipărim "%" de 4 ori
-- A treia linie se potrivește cu o cifră 0. Pe această linie tipărim ZERO o dată.
-- Ultima cifră a numărului este 2. 2 \+ 33 = 35.
-- Din tabelul ASCII găsim simbolul de imprimat - '\#' și îl imprimăm de două ori
+Tipărim "%" de 4 ori
+[/hint]
+[hint]
+A treia linie se potrivește cu o cifră 0. Pe această linie tipărim ZERO o dată.
+[/hint]
+[hint]
+Ultima cifră a numărului este 2. 2 \+ 33 = 35.
+Din tabelul ASCII găsim simbolul de imprimat - '\#' și îl imprimăm de două ori
+[/hint]
+[/hints]
 
-### Sfaturi
-- Citiți numărul ca un șir, salvați lungimea acestuia într-o variabilă folosind metoda **length()**
+[hints]
+[hint]
+Citiți numărul ca un șir, salvați lungimea acestuia într-o variabilă folosind metoda **length()**
 
 Găsiți mai multe **informații** despre aceasta pe Internet.
 
-- Pentru a lua ultima cifră a numărului, împărțiți-l la 10 (**num% 10**) și salvați-l într-o variabilă
+Pentru a lua ultima cifră a numărului, împărțiți-l la 10 (**num% 10**) și salvați-l într-o variabilă
 
 Apoi **eliminați ultima cifră a numărului**, împărțind-o la 10 (**num / 10**) astfel încât următoarea cifră de luat să fie din nou ultima.
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -2078,11 +2094,14 @@ Toate scorurile trebuie să fie formatate la **a doua zecimală**.
 | 5.66 | | 
 | Finish | | 
 
-## Comentarii
-- 2 - numărul persoanelor din juriu - prin urmare, obțineți 2 evaluări ale prezentării:
+[hints]
+[hint]
+2 - numărul persoanelor din juriu - prin urmare, obțineți 2 evaluări ale prezentării:
     - \(6.00 \+ 5.50\) / 2 = 5.75
     - \(5.84 \+ 5.66\) / 2 = 5.75
-- \(6.00 \+ 5.50 \+ 5.84 \+ 5.66\) / 4 = 5.75
+\(6.00 \+ 5.50 \+ 5.84 \+ 5.66\) / 4 = 5.75
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
