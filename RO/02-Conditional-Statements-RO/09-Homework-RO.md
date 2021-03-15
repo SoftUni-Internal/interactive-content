@@ -1260,14 +1260,6 @@ Rezultatul trebui să fie **rotunjit la cel mai apropiat număr întreg superior
 | 0.8 | |
 | 321 | |
 
-### Comentarii
-- **Mâncarea necesară pentru:**
-- **dog** = **10.5** kg;
-- **pisica** = 5 zile \* 0.8 kg = **4** kg;
-- **broască-ţestoasă** = 5 zile \* 321 g = **1.605** kg;
-- **Cantitatea totală de mâncare** = 10.5 + 4 + 1.605 = **16.105** ;
-- 16.105 – 10 = 6.105 -> 7 kg de mâncare sunt necesare
-
 [/task-description]
 [tests]
 [test open]
