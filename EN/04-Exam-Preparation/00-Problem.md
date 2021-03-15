@@ -20,9 +20,9 @@ public class Main {
 [task-description]
 ## Description
 
-Write a password reset program that performs a series of commands on a predefined string. 
+Create a program that performs a series of commands on a predefined string, which is representing a password. 
 
-First, you will receive a string. Until the command "**Done**", you will be receiving strings with commands split by a single space. 
+First, you will receive a string. Until the command "**Done**", you will be receiving **strings** containing commands split by a single space. 
 
 The commands will be the following:
 
