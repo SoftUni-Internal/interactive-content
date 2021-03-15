@@ -1,5 +1,6 @@
-[slide hideTitle]
 # Problem: Cinema Income
+[slide hideTitle]
+# Cinema Income
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/07-Exam-Preparation/EN/interactive-programming-basics-with-java-exam-preparation-4-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -16,10 +17,11 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-You have been hired by a cinema to create a program that calculates whether there would be enough viewers to fill the cinema hall and what the income of the event would be. 
+# Description
+You have been hired by a cinema to create a program that calculates whether there would be enough viewers to fill the cinema hall and what the income of the event would be.
 
-On the first line, you are going to receive the number of seats in the hall. 
+On the first line, you are going to receive the number of seats in the hall.
+
 On the following lines, until the command **"Movie time!"** is received, you will receive how many people want to enter the hall.
 
 The price for a ticket is **5$**. 
@@ -32,17 +34,19 @@ If more people than the available seats count try to enter the hall, it is consi
 
 ## Input
 Read from the console:
-- Hall capacity – **integer** number in range [50... 150]
+- Hall capacity - **integer** number in the range [50... 150]
 
 - On the following lines, until the command **"Movie time!"** is received:
- Number of people entering the cinema - **integer** in range [1… 15]
+ Number of people entering the cinema - **integer** in the range [1… 15]
 
 ## Output
 The output should consist of a single line in the following format:
-- If you have received the command **"Movie time!"**: **"There are \{seats left\} seats left in the cinema."**
+
+- If you have received the command **"Movie time!"**: **"There are** \{**seats left**\} **seats left in the cinema."**
+
 - If there are **no more free seats** in the hall: **"The cinema is full."**
 
-- Afterwards, print out: **"Cinema income - \{income\}$"**
+- Afterwards, print out: **"Cinema income -** \{**income**\}**$"**
 
 ## Example
 | **Input** | **Output** | 
@@ -54,6 +58,7 @@ The output should consist of a single line in the following format:
 | 20 | 
 | 15 | 
 | Movie time! | 
+
 [hints]
 
 [hint]
@@ -67,6 +72,19 @@ Check if there will be a discount and calculate the total price.
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+60
+10
+6
+3
+20
+15
+[/input]
+[output]
+There are 6 seats left in the cinema.
+Cinema income - 255$
+[/test]
 [test]
 [input]
 140

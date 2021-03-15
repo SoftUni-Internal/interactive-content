@@ -1,5 +1,6 @@
-[slide hideTitle]
 # Problemă: TV Series Budget
+[slide hideTitle]
+# TV Series Budget
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/07-Exam-Preparation/RO/interactive-programming-basics-with-java-exam-preparation-5-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -16,7 +17,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Descriere
+# Descriere
 Sunteți angajat intr-o companie TV pentru a scrie un program care să calculeze dacă este posibil ca clienții să cumpere seria dorită.
 
 Aveți un buget și un număr de serii pe care utilizatorul va dori să le achiziționeze.
@@ -41,8 +42,8 @@ Pentru fiecare serie primiți două rânduri:
 
 ## Ieșire
 Imprimați o linie pe consolă:
-- Dacă bugetul dvs. este mai mare sau egal cu prețul seriei: "You bought all the series and left with \{money left\}$"
-- Dacă bugetul dvs. este mai mic decât prețul seriei: "You need \{money needed\}$ more to buy the series!"
+- Dacă bugetul dvs. este mai mare sau egal cu prețul seriei: **"You bought all the series and left with** \{**money left**\}**$"**
+- Dacă bugetul dvs. este mai mic decât prețul seriei: **"You need** \{**money needed**\}**$ more to buy the series!"**
 
 Rezultatul trebuie formatat la două cifre după punctul zecimal.
 
@@ -71,6 +72,20 @@ Calculați prețul tuturor serialelor și verificați dacă le puteți cumpăra.
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+10
+3
+Thrones
+5
+Riverdale
+5
+Gotham
+2
+[/input]
+[output]
+You bought all the series and left with 0.50$
+[/test]
 [test]
 [input]
 25

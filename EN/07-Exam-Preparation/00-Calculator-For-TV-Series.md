@@ -1,10 +1,14 @@
-[slide hideTitle]
 # Problem: Calculator For TV Series
+
+[slide hideTitle]
+
+# Calculator For TV Series
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/07-Exam-Preparation/EN/interactive-programming-basics-with-java-exam-preparation-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Calculator For TV Series" taskId="java-basics-exam-prep-Calculator-For-TV-Series" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -14,38 +18,45 @@ public class Main {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
-## Description
-Create a program that calculates how long it will take you to watch all episodes of a TV series in minutes. 
 
-You will receive the number of seasons, the number of episodes per season, and the duration of each episode. 
+# Description
 
-In every episode, there are advertisements, whose duration is 20% of the episode’s duration. 
+Create a program that calculates how long it will take you to watch all episodes of a TV series in **minutes**.
 
-Every season ends with a special episode, which lasts 10 minutes longer than usual. 
+You will receive the **number of seasons**, **the number of episodes per season**, and **the duration of each episode**.
+
+In every episode, there are **advertisements**, whose duration is 20% of the episode's duration.
+
+Every season ends with a special episode, which lasts **10 minutes longer than usual**.
 
 ## Input
+
 You will receive 4 lines from the console:
+
 - Title of the series - **string**
-- Number of seasons – **integer** in range [1… 10]
-- Number of episodes  – **integer** in range [10… 80]
-- Duration of each episodes, not including the advertisements – **double** in range [40.0… 65.0]
+- Number of seasons - **integer** in range [1 ... 10]
+- Number of episodes - **integer** in range [10 ... 80]
+- Duration of each episode, not including the advertisements - **double** in the range [40.0 ... 65.0]
 
 ## Output
-The output should consist of a single line in the following format:
-- If there is enough time to watch all episodes: **"You have enough time to watch {name of the series} and left with {time left} minutes free time."**
-- If there is not enough time: **"You don't have enough time to watch {name of the series}, you need {time needed} more minutes."**
-    - Round the time up to the nearest integer number.
+
+You have to print on the console that time needed to watch all of the episodes, rounded down to the nearest whole number in the following format:
+
+- "**Total time needed to watch the** \{**name of the series**\} **series is** \{**time**\} **minutes.**"
 
 
 ## Example
+
 | **Input** | **Output** |
 | --- | --- | 
-| Lucifer | Total time needed to watch the Lucifer series is 3594 minutes. | 
-| 3 | 
-| 18 | 
-| 55 | 
+| Lucifer   | Total time needed to watch the Lucifer series is 3594 minutes. |
+| 3         |
+| 18        |
+| 55        |
+
 [hints]
 
 [hint]
@@ -68,6 +79,17 @@ Calculate the total time needed for watching the TV series.
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+Lucifer
+3
+18
+55
+[/input]
+[output]
+Total time needed to watch the Lucifer series is 3594 minutes.
+[/output]
+[/test]
 [test]
 [input]
 Flash

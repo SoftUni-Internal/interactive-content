@@ -1,5 +1,7 @@
-[slide hideTitle]
 # Problemă: Cinema
+[slide hideTitle]
+
+# Cinema
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/07-Exam-Preparation/RO/interactive-programming-basics-with-java-exam-preparation-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -16,30 +18,35 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Descriere
+# Descriere
 Pentru viitoarea premieră a trei producții populare, un cinematograf local v-a angajat să scrieți un software care calculează prețul, pe care clienții trebuie să-l plătească, în funcție de film și de oferta pe care au ales-o.
 
-|   | John Wick | Star Wars | Jumanji |
+| -  | **John Wick** | **Star Wars**| **Jumanji** |
 | --- | --- | --- | --- |
-| Drink | 12 $ | 18 $ | 9 $ |
-| Popcorn | 15 $ | 25 $ | 11 $ |
+| Drink | 12$ | 18$ | 9$ |
+| Popcorn | 15$ | 25$ | 11$ |
 | Menu | 19$ | 30$ | 14$ |
 
 Scrieți un program care calculează prețul care trebuie plătit.
 
 Rețineți că există reduceri:
-- Dacă filmul ales este "Star Wars" și se cumpără cel puțin patru bilete, există o reducere de 30% pentru o familie.
-- Dacă filmul ales este "Jumanji" și biletele cumpărate sunt exact două, există o reducere de 15% pentru două persoane.
+
+- Dacă filmul ales este "**Star Wars**" și se cumpără cel puțin patru bilete, există o reducere de 30% pentru o familie
+
+- Dacă filmul ales este "**Jumanji**" și biletele cumpărate sunt exact două, există o reducere de 15% pentru două persoane
 
 ## Intrare
 Primești 3 linii de pe consolă:
-- Prima linie - film - un șir: "John Wick", "Star Wars" sau "Jumanji"
-- A doua linie - ofertă - un șir: "Drink", "Popcorn" sau "Menu"
-- A treia linie - numărați bilete -un număr întreg în intervalul [1… 30]
+- Prima linie - film - un șir: "**John Wick**", "**Star Wars**" sau "**Jumanji**"
+
+- A doua linie - ofertă - un șir: "**Drink**", "**Popcorn**" sau "**Menu**"
+
+- A treia linie - numărați bilete - un număr întreg în intervalul [1 ... 30]
 
 ## Ieșire
-Imprimați un rând pe consolă: "Your bill is \{total price\}$"
-  * Prețul trebuie formatat la două cifre după punctul zecimal.
+Imprimați un rând pe consolă: **"Your bill is** \{**total price**\}**$"**
+
+Prețul trebuie formatat la două cifre după punctul zecimal.
 
 ## Exemplu
 |**Intrare**|**Ieșire**|
@@ -62,6 +69,16 @@ Verificați dacă este o reducere și calculați prețul total.
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+John Wick
+Drink
+6
+[/input]
+[output]
+Your bill is 72.00$
+[/output]
+[/test]
 [test]
 [input]
 John Wick

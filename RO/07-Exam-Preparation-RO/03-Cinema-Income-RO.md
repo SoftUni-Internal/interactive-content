@@ -1,5 +1,8 @@
-[slide hideTitle]
+
 # Problem: Cinema Income
+[slide hideTitle]
+
+# Cinema Income
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/07-Exam-Preparation/RO/interactive-programming-basics-with-java-exam-preparation-4-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -17,10 +20,10 @@ public class Main {
 [/code-editor]
 [task-description]
 
-## Descriere
+# Descriere
 Ați fost angajat la un cinematograf pentru a scrie un program care calculează dacă un film va fi suficient, astfel încât sala cinematografului să fie umplută și de câți bani va fi profitul.
 
-Veți primi numărul de locuri în sală și pe rândurile următoare până la comanda "Movie time!", Câți oameni intră în sală.
+Veți primi numărul de locuri în sală și pe rândurile următoare până la comanda "**Movie time!**", Câți oameni intră în sală.
 
 Prețul pentru un bilet este de 5 $.
 
@@ -34,14 +37,15 @@ Dacă mai mulți oameni decât locurile disponibile încearcă să intre în sal
 Citiți de pe consolă:
 - Prima linie - capacitatea sălii - un număr întreg în intervalul \[50 ... 150\]
 
-Pe fiecare dintre următoarele rânduri până la comanda "Movie time!":
-- Numărul de persoane care intră în cinematograf - un număr întreg în intervalul \[1… 15\]
+Pe fiecare dintre următoarele rânduri până la comanda "**Movie time!**":
+- Numărul de persoane care intră în cinematograf - un număr întreg în intervalul \[1 ... 15\]
 
 ## Ieșire
 Mai întâi, tipăriți pe consolă o linie:
-- Dacă ați primit comanda "Movie time!": "There are \{seats left\} seats left in the cinema."
-- Dacă nu mai sunt locuri libere în sală: "The cinema is full."
-- Ulterior, tipăriți: "Cinema income - \{income\}$"
+- Dacă ați primit comanda **"Movie time!"**: **"There are** \{**seats left**\} **seats left in the cinema."**
+
+- Dacă nu mai sunt locuri libere în sală: **"The cinema is full."**
+- Ulterior, tipăriți: **"Cinema income -** \{**income**\}**$"**
 
 ## Example
 | **Input** | **Output** | 
@@ -68,6 +72,19 @@ Verificați dacă este o reducere și calculați prețul total
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+60
+10
+6
+3
+20
+15
+[/input]
+[output]
+There are 6 seats left in the cinema.
+Cinema income - 255$
+[/test]
 [test]
 [input]
 140

@@ -1,5 +1,6 @@
-[slide hideTitle]
 # Problemă: The Best Movie
+[slide hideTitle]
+# The Best Movie
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/07-Exam-Preparation/RO/interactive-programming-basics-with-java-exam-preparation-6-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -17,8 +18,8 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Descriere
-Până la comanda "STOP" veți primi titlurile filmelor voastre preferate.
+# Descriere
+Până la comanda "**STOP**" veți primi titlurile filmelor voastre preferate.
 
 Cel mai bun film pentru voi va fi cel care are cele mai multe puncte.
 
@@ -27,23 +28,25 @@ Punctele sunt calculate ca suma valorilor caracterelor ASCII din titlul filmului
 Nu va exista un caz în care să avem două filme cu un număr egal de puncte.
 
 Rețineți următoarele:
-- Pentru fiecare literă minusculă din titlu, trebuie să scădem din sumă de două ori lungimea titlului filmului.
+
+- Pentru fiecare literă minusculă din titlu, trebuie să scădem din sumă de două ori lungimea titlului filmului
+
 - Pentru fiecare literă majusculă din titlu, lungimea titlului filmului trebuie scăzută din sumă.
-Puteți avea maximum 7 titluri de film.
+Puteți avea maximum 7 titluri de film
 
 ## Intrare
-Primiți mai multe linii de pe consolă până la comanda "STOP" sau până la atingerea limitei de 7 filme:
-- Titlul filmului - un șir;
+Primiți mai multe linii de pe consolă până la comanda "**STOP**" sau până la atingerea limitei de 7 filme:
+- Titlul filmului - un șir
 
 ## Ieșire
 Imprimați pe consolă:
-- Dacă ați atins limita de 7 filme, trebuie să imprimați: "The limit is reached."
-- Imprimați cel mai bun film pentru dvs.: "The best movie for you is \{movie title\} with \{sum of symbols\} ASCII sum."
+- Dacă ați atins limita de 7 filme, trebuie să imprimați: **"The limit is reached."**
+- Imprimați cel mai bun film pentru dvs.: **"The best movie for you is** \{**movie title**\} **with** \{**sum of symbols**\} **ASCII sum."**
 
 ## Exemplu
 |**Intrare**|**Ieșire**|**Comentarii** |
 | --- | --- | --- |
-| Matrix | The best movie for you is Breaking bad with 878 ASCII sum. | Mai întâi obținem Matrix, prima literă este M cu o valoare de 77, dar este o literă mare și scădem din ea lungimea titlului: 77 - 6 = 71. |
+| Matrix | The best movie for you is Breaking bad with 878 ASCII sum. | Mai întâi obținem "Matrix", prima literă este M cu o valoare de 77, dar este o literă mare și scădem din ea lungimea titlului: 77 - 6 = 71. |
 | Breaking bad | | A doua literă este a cu o valoare de 97 și scădem de două ori titlul filmului: 97 - 12 = 85. |
 | Legend | | În mod similar, continuăm cu fiecare literă ulterioară și primim o sumă de 563. |
 | STOP | | La primirea comenzii STOP, imprimăm titlul cu cea mai mare valoare, care este Breaking bad cu suma de 878. |
@@ -51,6 +54,17 @@ Imprimați pe consolă:
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+Matrix
+Breaking bad
+Legend
+STOP
+[/input]
+[output]
+The best movie for you is Breaking bad with 878 ASCII sum.
+[/output]
+[/test]
 [test]
 [input]
 The maze

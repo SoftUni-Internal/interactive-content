@@ -1,5 +1,6 @@
-[slide hideTitle]
 # Problem: The Best Movie
+[slide hideTitle]
+# The Best Movie
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/07-Exam-Preparation/EN/interactive-programming-basics-with-java-exam-preparation-6-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -16,8 +17,8 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-Until the command "STOP" is received, you will be receiving movie titles.
+# Description
+Until the command "**STOP**" is received, you will be receiving movie titles.
 
 The best movie for you will be the one that has the most points.
 
@@ -26,31 +27,45 @@ Points are calculated by adding all of the **ASCII** character values in the mov
 There will not be a case, in which there are two films with an equal number of points.
 
 Keep in mind the following:
-- For each lowercase letter in the movie title, you must **subtract twice the length of the movie title** from the final sum.
-- For each uppercase letter in the title, **the length of the movie title should be subtracted** from the final sum.
+
+- For each lowercase letter in the movie title, you must **subtract twice the length of the movie title** from the final sum
+
+- For each uppercase letter in the title, **the length of the movie title should be subtracted** from the final sum
+
 There can be a maximum of 7 movie titles.
 
 ## Input
-You will receive multiple lines from the console until the command "STOP" is received, or until the limit of 7 movies is reached:
-- Movie title – **string**
+You will receive multiple lines from the console until the command "**STOP**" is received, or until the limit of 7 movies is reached:
+- Movie title - **string**
 
 ## Output
 Print out:
 
 - If you have reached the limit of 7 movies, you should print out: **"The limit is reached."**
-- Then, print out the **best** movie: **"The best movie for you is \{movie title\} with \{sum of symbols\} ASCII sum."**
+- Then, print out the **best** movie: **"The best movie for you is** \{**movie title**\} **with** \{**sum of symbols**\} **ASCII sum."**
 
 ## Example
 | **Input** | **Output** | **Comments** |
 | --- | --- | --- |
 | Matrix | The best movie for you is Breaking bad with 878 ASCII sum. | First, we receive "Matrix", the first letter is "M" and it has a value of "77", but it is a capital letter, so we subtract from it the length of the title: 77 - 6 = 71. |
-| Breaking bad | | The second letter is "a"  and it has a value of "97". We subtract twice the lenght of the movie title: 97 - 12 = 85.|
+| Breaking bad | | The second letter is "a"  and it has a value of "97". We subtract twice the length of the movie title: 97 - 12 = 85.|
 | Legend | | Similarly, we proceed with each subsequent letter and receive an amount of 563. |
-| STOP | | Upon receiving the "STOP" command, we print the title with the highest value, which is "Breaking bad". The total points are: 878. |
+| STOP | | Upon receiving the "STOP" command, we print the title with the highest value, which is "Breaking bad". The total points are 878. |
 
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+Matrix
+Breaking bad
+Legend
+STOP
+[/input]
+[output]
+The best movie for you is Breaking bad with 878 ASCII sum.
+[/output]
+[/test]
 [test]
 [input]
 The maze

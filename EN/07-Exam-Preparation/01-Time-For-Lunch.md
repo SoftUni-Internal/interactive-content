@@ -1,5 +1,6 @@
-[slide hideTitle]
 # Problem: Time For Lunch
+[slide hideTitle]
+# Time For Lunch
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/07-Exam-Preparation/EN/interactive-programming-basics-with-java-exam-preparation-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -16,27 +17,30 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-During your lunch break, you want to watch an episode of your favorite series. 
+# Description
+During your lunch break, you want to watch an episode of your favorite series.
 
-Your task is to create a program that will help you determine whether you have enough time to watch the episode. 
+Your task is to create a program that will help you determine whether you have enough time to watch the episode.
 
-During your lunch break, you also spend time having lunch and resting. 
+During your lunch break, you also spend time having lunch and resting.
 
-The time you will need for lunch will be **1/8** of your overall break time. The time you will need to relax will be **1/4** of the break time.
+The time you will need for lunch will be **1/8** of your overall break time.
+
+The time you will need to relax will be **1/4** of the break time.
 
 ## Input
 You receive 3 lines from the console:
 - Name of the series - **string**
-- Duration of the episode - **integer** number in range [10… 90]
-- Duration of the break - **integer** number in range [10… 120]
+- Duration of the episode - **integer** number in range [10 ...90]
+- Duration of the break - **integer** number in range [10 ... 120]
 
 ## Output
 The output should consist of a single line in the following format:
 
 - If there is enough time to watch the episode: **"You have enough time to watch \{name of the series\} and left with \{time left\} minutes free time."**
 - If there is not enough time : **"You don't have enough time to watch \{name of the series\}, you need \{time needed\} more minutes."**
-    - Round the **time** up to the nearest integer number.
+
+Round the **time** up to the nearest integer number.
 
 ## Example
 | **Input** | **Output** |
@@ -65,6 +69,16 @@ Make sure that the corresponding output is printed out.
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+Game of Thrones
+60
+96
+[/input]
+[output]
+You have enough time to watch Game of Thrones and left with 0 minutes free time.
+[/output]
+[/test]
 [test]
 [input]
 Riverdale

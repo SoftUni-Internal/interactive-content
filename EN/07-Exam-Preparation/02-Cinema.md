@@ -1,5 +1,6 @@
-[slide hideTitle]
 # Problem: Cinema
+[slide hideTitle]
+# Cinema
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/07-Exam-Preparation/EN/interactive-programming-basics-with-java-exam-preparation-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -16,10 +17,10 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 For the upcoming premiere of three popular productions, a local cinema has hired you to write software that calculates the price, which the clients should pay, depending on the movie and the offer they have chosen.
 
-|   | John Wick | Star Wars | Jumanji |
+| -  | **John Wick** | **Star Wars**| **Jumanji** |
 |---|---|---|---|
 | Drink | 12$ | 18$ | 9$ |
 | Popcorn | 15$ | 25$ | 11$ |
@@ -28,18 +29,23 @@ For the upcoming premiere of three popular productions, a local cinema has hired
 Create a program that calculates the **total price** of the tickets.
 
 Discounts should be applied in the following cases:
-- If the chosen movie is **"Star Wars"** and at least four tickets are bought, there is a **30%** family discount.
-- If the chosen movie is **"Jumanji"** and the tickets bought are **exactly two**, there is a **15%** discount.
+
+- If the chosen movie is **"Star Wars"** and at least four tickets are bought, there is a **30%** family discount
+- If the chosen movie is **"Jumanji"** and the tickets bought are **exactly two**, there is a **15%** discount
 
 ## Input
 You will receive 3 lines:
+
 - Name of the movie - string: **"John Wick"**, **"Star Wars"** or **"Jumanji"**
+
 - Type of the offer - string: **"Drink"**, **"Popcorn"** or **"Menu"**
-- Number of the tickets – integer number in the range [1… 30]
+
+- Number of the tickets – integer number in the range [1 ... 30]
 
 ## Output
-Print out on a single line: **"Your bill is \{total price\}$"**
- * The price must be formatted to the second digit after the decimal point
+Print out on a single line: **"Your bill is** \{**total price**\}**$"**
+
+The price must be formatted to the second digit after the decimal point.
 
 ## Example
 | **Input** | **Output** |
@@ -62,6 +68,16 @@ Check if there will be a discount and calculate the total price.
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+John Wick
+Drink
+6
+[/input]
+[output]
+Your bill is 72.00$
+[/output]
+[/test]
 [test]
 [input]
 John Wick

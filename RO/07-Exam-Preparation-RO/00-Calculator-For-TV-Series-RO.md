@@ -1,5 +1,8 @@
-[slide hideTitle]
 # Problemă: Calculator For TV Series
+
+[slide hideTitle]
+# Calculator For TV Series
+
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/07-Exam-Preparation/RO/interactive-programming-basics-with-java-exam-preparation-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -16,28 +19,28 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Descriere
-Scrieți un program, care calculează cât vă va dura să urmăriți toate episoadele unui serial în câteva minute.
+# Descriere
+Scrieți un program, care calculează cât vă va dura să urmăriți toate episoadele unui serial în câteva **minute**.
 
-Veți primi unui număr de sezoane, numărul de episoade pe sezon și durata fiecărui episod.
+Veți primi unui **număr de sezoane**, **numărul de episoade pe sezon** și **durata fiecărui episod**.
 
-În fiecare episod există reclame, a căror durată este de 20% din durata episodului.
+În fiecare episod există **reclame**, a căror durată este de 20% din durata episodului.
 
-De asemenea, trebuie să rețineți că fiecare sezon se încheie cu un episod special, care durează cu 10 minute mai mult decât de obicei. 
+De asemenea, trebuie să rețineți că fiecare sezon se încheie cu un episod special, care durează cu **10 minute mai mult decât de obicei**. 
 
 ## Intrare
 De pe consolă primiți 4 linii:
-- Numele seriei - un șir
-- Numărați sezoanele - un număr întreg în intervalul [1 ... 10]
-- Numărați episoadele - un număr întreg în intervalul [10… 80]
-- Durata unui episod obișnuit fără reclame - un număr cu două cifre și punct zecimal în intervalul [40.0… 65.0]
+- Numele seriei - **un șir**
+- Numărați sezoanele - un **număr** întreg în intervalul [1 ... 10]
+- Numărați episoadele - un **număr** întreg în intervalul [10 ... 80]
+- Durata unui episod obișnuit fără reclame - un număr cu **două** cifre și punct zecimal în intervalul [40.0 ... 65.0]
 
 ## Ieșire
 Trebuie să imprimați pe consolă timpul necesar pentru a viziona toate episoadele, rotunjite la cel mai apropiat număr întreg, în următorul format:
-- "Total time needed to watch the \{name of the series\} series is \{time\} minutes."
+- "**Total time needed to watch the** \{**name of the series**\} **series is** \{**time**\} **minutes.**"
 
 ## Exemplu
-|**Intrare**|**Ieșire**|**Comentarii**|
+|**Intrare**|**Ieșire**|
 | --- | --- | 
 | Lucifer | Total time needed to watch the Lucifer series is 3594 minutes. | 
 | 3 | 
@@ -55,7 +58,7 @@ Stabiliți durata unui episod cu reclamele
 [/hint]
 [hint]
 
-Adăugați un timp suplimentar pentru episoadele speciale.
+Adăugați un timp suplimentar pentru episoadele **speciale**.
 [/hint]
 [hint]
 
@@ -66,6 +69,17 @@ Calculați timpul total necesar pentru a vedea tot serialul.
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+Lucifer
+3
+18
+55
+[/input]
+[output]
+Total time needed to watch the Lucifer series is 3594 minutes.
+[/output]
+[/test]
 [test]
 [input]
 Flash

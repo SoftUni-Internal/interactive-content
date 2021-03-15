@@ -1,5 +1,6 @@
-[slide hideTitle]
 # Problem: TV Series Budget
+[slide hideTitle]
+# TV Series Budget
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/07-Exam-Preparation/EN/interactive-programming-basics-with-java-exam-preparation-5-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -24,25 +25,29 @@ You receive a budget and the number of series that the user will want to purchas
 Each item has a **title** and a **price**.
 
 There are discounts for some of the titles:
-- Thrones – 50%
-- Lucifer – 40%	
-- Protector – 30%
-- TotalDrama – 20%
-- Area – 10%
+- Thrones - 50%
+- Lucifer - 40%	
+- Protector - 30%
+- TotalDrama - 20%
+- Area - 10%
 
 ## Input
 You will receive from the console:
-- Budget - **real** number in range [10.0… 100.0]
-- Number of series – **integer** number in range [1… 10]
+
+- Budget - **real** number in range [10.0 ... 100.0]
+
+- Number of series - **integer** number in range [1 ... 10]
 
 For each series, you receive two lines:
+
 - Title of the series - **string**
-- Price of the series - **real** number in range [1.0… 15.0]
+
+- Price of the series - **real** number in range [1.0 ... 15.0]
 
 ## Output
 The output should consist of a single line in the following format:
-- If the budget is greater than or equal to the price of the series: **"You bought all the series and left with \{money left\}$"**
-- If the budget is less than the price of the series: **"You need \{money needed\}$ more to buy the series!"**
+- If the budget is greater than or equal to the price of the series: **"You bought all the series and left with** \{**money left**\}**$"**
+- If the budget is less than the price of the series: **"You need** \{**money needed**\}**$ more to buy the series!"**
 
 The result must be formatted to the second digit after the decimal point.
 ## Example
@@ -71,6 +76,20 @@ Calculate the price for all of the series and check if you can buy them.
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+10
+3
+Thrones
+5
+Riverdale
+5
+Gotham
+2
+[/input]
+[output]
+You bought all the series and left with 0.50$
+[/test]
 [test]
 [input]
 25

@@ -1,5 +1,6 @@
-[slide hideTitle]
 # Problemă: Time For Lunch
+[slide hideTitle]
+# Time For Lunch
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/07-Exam-Preparation/RO/interactive-programming-basics-with-java-exam-preparation-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -16,14 +17,14 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Descriere
+# Descriere
 În pauza de masă doriți să urmăriți un episod din serialul preferat.
 
 Sarcina dvs. este să scrieți un program care vă va ajuta să determinați dacă aveți suficient timp pentru a viziona episodul.
 
 În pauza de masă petreceți timpul pentru a lua masa și pentru a vă relaxa.
 
-Timpul pentru prânz va fi 1/8 din pauza, iar timpul pentru relaxare va fi 1/4 din pauza.
+Timpul pentru prânz va fi **1/8** din pauza, iar timpul pentru relaxare va fi **1/4** din pauza.
 
 ## Intrare
 Primiți 3 linii de pe consolă:
@@ -33,9 +34,10 @@ Primiți 3 linii de pe consolă:
 
 ## Ieșire
 Imprimați pe consolă o linie:
-- Dacă timpul este suficient pentru a viziona episodul: "You have enough time to watch \{name of the series\} and left with \{time left\} minutes free time."
-- Dacă timpul nu este suficient: "You don't have enough time to watch \{name of the series\}, you need \{time needed\} more minutes."
-    - Rotunjiți timpul până la cel mai apropiat număr întreg.
+- Dacă timpul este suficient pentru a viziona episodul: **"You have enough time to watch \{name of the series\} and left with \{time left\} minutes free time."**
+- Dacă timpul nu este suficient: **"You don't have enough time to watch \{name of the series\}, you need \{time needed\} more minutes."**
+
+Rotunjiți timpul până la cel mai apropiat număr întreg.
 
 ## Exemplu
 |**Intrare**|**Ieșire**|
@@ -64,6 +66,16 @@ Asigurați-vă că ieșirea corectă a fost imprimată pe consolă.
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+Game of Thrones
+60
+96
+[/input]
+[output]
+You have enough time to watch Game of Thrones and left with 0 minutes free time.
+[/output]
+[/test]
 [test]
 [input]
 Riverdale
