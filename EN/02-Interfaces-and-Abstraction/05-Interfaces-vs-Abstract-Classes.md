@@ -25,7 +25,7 @@ We can put these lines of code in an abstract class and extend them to all other
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Ferrari
+# Problem: Ferrari
 [code-task title="Ferrari" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-Ferrari" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
 
@@ -37,7 +37,7 @@ Your task is simple - you have a **car - Ferrari**, its model is "**488-Spider**
 
 Your Ferrari should have the functionality to **use brakes** and **push the gas pedal**. 
 
-When the **brakes** are pushed down **print "Brakes!"**, and when the **gas pedal** is pushed down - **"Gas!"**. 
+When the **brakes** are pushed down, **print "Brakes!"**, and when the **gas pedal** is pushed down - **"Gas!"**. 
 
 As you may have guessed, this functionality is typical for all cars, so you should **implement an interface** to describe it.
 
