@@ -4,11 +4,16 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/EN/interactive-java-advanced-iterators-and-comparators-30-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In this lesson you learned:
+## In this lesson, you learned:
 
 - Variable Arguments (**Varargs**) in Java
+```java
+void method(int... b){
 
-- What are Nested Classes
+}
+```
+
+- Classes can be nested to group them logically
 
 ```java
 class OuterClass

@@ -8,13 +8,13 @@
 # Description
 Create a class `ListyIterator`.
 
-It should receive the collection of **Strings** which it will iterate, through its constructor.
+It should receive a collection of **Strings** to iterate over through its constructor.
 
 You should store the elements in a **List**.
 
 The class should have three main functions:
 
-- `Move` - should move an internal **index** position to the next index in the list, the method should return **true** if it successfully moved and **false** if there is no next index
+- `Move` - moves an internal **index** position to the next index in the list, the method should return **true** if it successfully moved and **false** if there is no next index
 
 - `HasNext` - should return **true** if there is a next index and **false** if the index is already at the **last** element of the list
 
@@ -27,25 +27,26 @@ Your program should support the following commands:
 
 | **Command** | **Return Type** | **Description** |
 | --- | --- | --- |
-| Create {e1 e2 …} | void | Creates a ListyIterator from the specified collection. In the case of a Create command without any elements, you should create a ListyIterator with an empty collection. |
+| Create {e1 e2 …} | void | Creates a ListyIterator from the specified collection. In case you receive a Create command without any elements, you should create a ListyIterator with an empty collection. |
 | Move | boolean | This command should move the internal index to the next index. |
 | Print | void | This command should print the element at the current internal index. |
 | HasNext | boolean | Returns whether the collection has the next element. |
-| END | void | Stops the input. |
+| END | void | Stops accepting input. |
 
 ## Input
 
 Input will come from the console as **lines** of commands.
-The first line will **always** be **Create** command in the input. 
+The first line will **always** be a **Create** command.
+
 The last command received will **always** be `END`.
 
 ## Output
 
-For every command from the input (except for the **END** and **Create** commands) print the result of that command to the console, each on a **new line**. 
+For every command (except for the **END** and **Create** commands) print the result of that command to the console, each on a **new line**. 
 
-In the case of the **Move** or **HasNext** commands, print the **returned value** of the method, in case of a **Print** command you do not have to do anything additional as the method itself should already print to the console. 
+If you receive the **Move** or the **HasNext** commands, print the **return value** of the method. 
 
-Your program should catch **any exceptions thrown** because of validations (calling Print on an empty collection) and print their messages instead.
+Your program should catch **any exceptions thrown** from validations (calling Print on an empty collection) and print the error messages.
 
 ## Constraints
 
@@ -247,9 +248,9 @@ END
 # Description
 Using the `ListyIterator` from the last problem, extend it by implementing the `Iterable` interface.
 
-Implement **all** methods desired by the interface manually.
+Implement **all** methods required by the interface manually.
 
-Add a new method to the class `PrintAll()`, the method should use `foreach` on the collection and print all elements on a **single line** separated by a space.
+Add a new method to the `PrintAll()`class, the method should use **foreach** on the collection and print all elements on a **single line** separated by a space.
 
 ## Input
 The input will come from the console as **lines** of commands. 
@@ -259,11 +260,11 @@ The first line will always be the `Create` command.
 The **last** command received will always be the `END` command.
 
 ## Output
-For every command from the input (with the exception of the `END` and `Create` commands) print the result of that command to the console, each on a **new line**. 
+For every command from the input (except for the `END` and the `Create` commands) print the result of that command to the console, each on a **new line**. 
 
-In the case of `Move` or `HasNext` commands print the returned value of the method, in case of a `Print` command you do not have to do anything additional as the method itself should already print to the console. 
+In case you receive the `Move` or the `HasNext` commands, print the return value of the method.
 
-In the case of a `PrintAll` command, you should print all elements on a single line **separated by spaces**. Your program should catch **any exceptions** thrown because of validations and print their messages instead.
+If you get the `PrintAll` command, you should print all elements on a single line **separated by spaces**. Your program should catch **any exceptions** thrown due to validations and print their messages.
 
 ## Constraints
 - **Do not use the built-in iterators**
@@ -465,23 +466,21 @@ Steven John Kevin
 # Description
 You have a task to create your custom Stack.
 
-You already know the Stack structure.
+You already know the structure of a Stack.
 
 The elements are stored in a collection.
 
-It has two functions (not from the functional programming) - to `push` and `pop` an element.
+It has two functions - `push` and `pop` an element.
 
-The first **popped** element is on the **last position** in the collection.
+The first **popped** element is in the **last position** in the collection.
 
 The `push` method adds an element to the **top** of the collection and the `pop` method returns the **top** element and **removes** it.
 
 Write your custom implementation of `Stack<Integer>` and implement your custom **iterator**. 
 
-Your Stack class should implement the `Iterable<Integer>` interface and your **Iterator Class** should implement `Iterator<Integer>` interface. 
+Your Stack class should implement the `Iterable<Integer>` interface and your **Iterator Class** should implement the `Iterator<Integer>` interface. 
 
-Your Custom Iterator should follow the rules of the **Abstract Data Type - Stack**. 
-
-The first element is the element at the top, and so on. 
+Your Custom Iterator should follow the rules of the **Abstract Data Type - Stack**. (First In First Out) 
 
 Iterators are used only for iterating through the collection, they **should not** remove or mutate the elements.
 
@@ -495,15 +494,15 @@ Each command will come on a separate line.
 - `Pop`
 
 ## Output
-The program should stop when you receive the command `END`. 
+The program should stop when you receive the `END` command. 
 
-Foreach the stack **twice** and print all elements. Each element should be on a **new line**.
+**Foreach** the stack **twice** and print all elements. Each element should be on a **new line**.
 
 ## Constraints
 - The elements in the `Push` command will be **valid** integers **between** [2 ^ -32 ... 2 ^ 32 - 1]
-- The commands will always be **valid** (always be either `Push`, `Pop`, or `END`)
+- The commands will always be **valid** (either `Push`, `Pop`, or `END`)
 - There will be no more than **16** elements in the `Push` command
-- If `Pop` command **could not** be executed as expected (e.g. no elements in the stack), print to the console: `No elements`
+- If the `Pop` command **could not** be executed as expected (e.g. no elements in the stack), print to the console: `No elements`
 
 
 # Examples
@@ -675,7 +674,7 @@ No elements
 # Description
 Let's play a game.
 
-You have a tiny little **Frog**, and a **Lake** with numbers.
+You have a tiny little **Frog** and a **Lake** with numbers.
 
 The **Lake** and its numbers, you will get by an input from the console.
 
@@ -683,29 +682,30 @@ Imagine, your **Frog** belongs to the **Lake**.
 
 The **Frog jumps** only when the `END` command is received.
 
-When the **Frog** starts jumping, print to the console **each number** the **Frog** have stepped over.
+When the **Frog** starts jumping, print to the console **each number** the **Frog** has stepped over.
 
 To calculate the jumps, use the guidelines:
 
 The jumps start from the **zero index**. 
 
-And follows the pattern - first all even indexes in **ascending** order(0 -> 2 -> 4 -> 6 and so on) and then all odd indexes in **ascending** order (1 -> 3 -> 5 -> 7 and so on). 
+They follow the pattern - first all even indexes in **ascending** order(0 -> 2 -> 4 -> 6 and so on) and then all odd indexes in **ascending** order (1 -> 3 -> 5 -> 7 and so on). 
 
 Consider the **zero** index as **even**.
 
-Long story short: Create a Class `Lake`, it should implement the interface - `Iterable`. 
+Long story short: Create a **Lake** class, it should implement the - **Iterable** interface. 
 
-Inside the `Lake`, create a Class - `Frog` and implement the interface `Iterator`. 
+Inside the **Lake**, create a `Frog` class and implement the `Iterator` interface. 
 
 You will receive **only integers**.
 
 ## Input
-The input will consist of two lines. First-line - the **initial** numbers of the lake, **separated** by comma and a single space. 
+The input will consist of two lines. 
 
-The second line command is `END`.
+First-line - the **initial** numbers of the lake, **separated** by a comma and a single space. 
+
+The second line will be the `END` command.
 
 ## Output
-When you receive `END`, the input is over. 
 
 **Foreach** the collection of numbers, the **Frog** has jumped over, and print **each** element.
 
@@ -716,8 +716,8 @@ The output should be print on a **single** line.
 `{number}, {second number}, {third number} ...`
 
 ## Constraints
-- **Lake's** numbers will be **valid** integers in the **range** [2 ^ -32 ... 2 ^ 32 - 1]
-- The command will always be **valid** - `END`
+- The **Lake's** numbers will be **valid** integers in the **range** [2 ^ -32 ... 2 ^ 32 - 1]
+- The command will always be **valid**
 
 # Examples
 
@@ -820,26 +820,32 @@ END
 # Description
 Create a **class** `Person`.
 
-Each person should have **name**, **age** and **town**.
+Each person object should have **name**, **age**, and **town**.
 
 As you may know, there is a built-in Comparable interface.
 
-You should implement the interface - `Comparable` and try to override the `compareTo` method.
+You should implement the `Comparable` interface, and try to override the `compareTo` method.
 
-When you compare two people, first you should compare their **names**, after that - their **age** and last but not at least - compare their **town**.
+When you compare two people, first you should compare their **names**, after that - their **age** and finally, compare their **town**.
 
 
 ## Input
-On single lines, you will be given people in format:
+The input consists of lines of information about people in the following format:
 
 `{name} {age} {town}`
 
-Collect them until you receive `END`.
+Keep accepting input until you receive the `END` command.
 
-After that, you will receive an integer **N** - the **N**\-th person in your collection.
+After that, you will receive an integer **N**.
+
+This integer refers to the **N**\-th person in your collection.
 
 ## Output
-On the single output line, you should bring statistics, how many people are **equal** to the **Nth person**, how many people are **not** equal to this person, and the **total** people in your collection.
+
+Print the following information on a single line:
+- Number people objects that are **equal** to the **Nth person**\
+- Number of people objects **not equal** to this person
+- Total number of people in your collection
 
 **Format:**
 
@@ -847,8 +853,8 @@ On the single output line, you should bring statistics, how many people are **eq
 
 ## Constraints
 - Names, ages, and addresses will be **valid**
-- Input number will be always a **valid** integer in **range** [2 ... 100]
-- If there are no equal people print: `No matches`
+- **N** will be always a **valid** integer in the **range** [2 ... 100]
+- If there are no equal objects, print: `No matches`
 
 # Examples
 
@@ -963,19 +969,19 @@ No matches
 
 [task-description]
 # Description
-An interesting pattern you may have heard of is the Strategy Pattern.
+An interesting pattern you may have heard of is the Strategy Design Pattern.
 
-If we have multiple ways to do a task (let us say sort a collection) it allows the client to choose the way that most fits his needs.
+If we have multiple ways to do a task, it allows the client to choose the way that most fits their needs.
 
-A famous implementation of the pattern in Java is the `Collections.sort()` method that takes a **Comparator**.
+A popular implementation of the pattern used for sorting objects in Java is the `Collections.sort()` method that takes a **Comparator**.
 
 Create a class `Person` that holds **name** and **age**. 
 
-Create 2 Comparators for Person (classes which implement the `Comparator<Person>` **interface**). 
+Create 2 Comparators for Person (classes that implement the `Comparator<Person>` **interface**). 
 
 The first comparator should compare people based on the **length of their name** as a first parameter.
 
-If two persons have a name with the **same** length, perform a **case-insensitive** compare based on the **first letter of their name** instead. 
+If two people have a name with the **same** length, perform a **case-insensitive** comparison based on the **first letter of their name** instead. 
 
 The second comparator should compare them based on their **age**. 
 
@@ -1156,7 +1162,7 @@ aria 33
 [task-description]
 # Description
 
-Create a **class** `Person` holding **name** and **age**.
+Create a **class** `Person` that has **name** and **age**.
 
 A person with the **same** name and age should be considered the same.
 
@@ -1178,7 +1184,7 @@ Add the people from the input into **both** sets (both sets should hold all the 
 
 The output should consist of **exactly** 2 lines. 
 
-On the first, you should print the **size** of the `TreeSet` and on the second - the **size** of the `HashSet`.
+On the first, you should print the **size** of the `TreeSet`, and on the second - the **size** of the `HashSet`.
 
 ## Constraints
 
@@ -1188,9 +1194,9 @@ On the first, you should print the **size** of the `TreeSet` and on the second -
 
 ## Hint
 
-You should override **both** the equals and **hashCode** methods. 
+You should override **both** the **equals()** and the **hashCode()** methods. 
 
-You can check online for implementation of hashCode - it does not have to be perfect, but it should be good enough to produce the same hash code for objects with the **same** name and age, and different enough hash codes for objects with **different** name and/or age.
+You can check online for an implementation of hashCode - it does not have to be perfect, but it should be good enough to produce the same hash code for objects with the **same** name and age, and different enough hash codes for objects with **different** name and/or age.
 
 
 # Examples
@@ -1348,7 +1354,7 @@ I 3
 
 You ask your employees to create a program that will store all information about the pets in the database.
 
-Each pet should have **name**, **age** and **kind**.
+Each pet should have **name**, **age**, and **kind**.
 
 
 Your application should support a few basic operations, such as: 
@@ -1367,7 +1373,7 @@ For example, let us take a look at a clinic with 5 rooms.
 
 The **first** room where a pet will be treated is the **central** one (room 3). 
 
-So the order of which an animal is entering is: the first animal is going to the **center** (3) room and after that the next pets are entering first to the **left** (2) and then to the **right** (4) room. 
+So the order in which an animal is entering is: the first animal is going to the **center** (3) room and after that, the next pets are entering first to the **left** (2) and then to the **right** (4) room. 
 
 The last rooms in which pets can enter are room 1 and room 5. 
 
@@ -1383,17 +1389,19 @@ And the last two pets would be going to rooms - 1 and 5. -> **1** 2 3 4 **5**
 
 Now when we have covered adding the pets, it is time to find a way to release them. 
 
-The process of releasing them is not so simple when the release method is called, we start from the **center** room (3) and continue **right** (4, 5… and so on) until we find a pet or reach the **last** room. 
+The process of releasing them is not so simple. 
+
+When the release method is called, we start from the **center** room (3) and continue **right** (4, 5… and so on) until we find a pet or reach the **last** room. 
 
 If we reach the last room, we start from the **first** (1) and again move right until we reach the **center** room (3). 
 
-If a pet is found, we **remove** it from the collection, stop the further search, and **return** `true`, if a pet is **NOT** found, the operation **returns** `false`.
+If a pet is found, we **remove** it from the collection, stop searching for a room, and **return** `true`. If a pet is **NOT** found, the operation **returns** `false`.
 
 When a `Print` command for a room is called, if the room contains a pet we print the pet on a single line in the format `{pet name} {pet age} {pet kind}`. 
 
 Alternatively, if the room is empty print **"Room empty"** instead. 
 
-When a `Print` command for a clinic is called it should print **all** rooms in the clinic in **order** of their number.
+When a `Print` command for a clinic is called it should print **all** rooms in the clinic in ordered by room number.
 
 ### Commands
 
@@ -1405,7 +1413,7 @@ When a `Print` command for a clinic is called it should print **all** rooms in t
 | `Release {clinic's name}` | boolean | This command should release an animal from the specified clinic (true if the operation is successful and false if it is not) |
 | `HasEmptyRooms {clinic's name}` | boolean | Returns whether the clinic has any empty rooms (true if it has and false if it does not) |
 | `Print {clinic's name}` | void | This command should print each room in the specified clinic, ordered by room number |
-| `Print {clinic's name} {room}` | void | Prints on a single line the content of the specified room |
+| `Print {clinic's name} {room}` | void | Prints the pets that are currently being treated in the specified room on a single line |
 
 ## Input
 
@@ -1419,11 +1427,11 @@ Commands and parameters will always be **correct** ( `Add`, `Release`, `HasEmpty
 
 For each command with a boolean **return** type received through the input, you should print its return value on a **separate** line. 
 
-In case of a method **throwing** an **exception** (such as trying to create a clinic with an even number of rooms or trying to add a pet that does not exist) you should **catch** the exceptions and instead, print `Invalid Operation!`. 
+In a method **throws** an **exception** (such as trying to create a clinic with an even number of rooms or trying to add a pet that does not exist) you should **catch** the exceptions and print `Invalid Operation!`. 
 
 The `Print` command with a clinic and a room should print information for that room in the format **specified** above. 
 
-The `Print` command with only a clinic should print information **for each** room in the clinic in **order** of their numbers.
+The `Print` command with only a clinic should print information **for each** room in the clinic in ordered by room numbers.
 
 ## Constraints
 
@@ -1657,9 +1665,9 @@ Elephant 4 Elephant
 
 [task-description]
 # Description
-You need to write your simplified implementation of a generic Linked List that has an Iterator.
+You need to write a simplified implementation of a generic Linked List that has an Iterator.
 
-The list should support the `Add` and `Remove` operations, should reveal the number of elements it has with a `getSize` function and should have an implemented iterator (should be `foreach`-able).
+The list should support the `Add` and `Remove` operations, should reveal the number of elements it has with a `getSize` function and should have an implemented iterator (should be **foreach**-able).
 
 The `add` method should add the new element at the end of the collection.
 
@@ -1678,7 +1686,7 @@ On each of the next **N** lines you will receive a command in one of the followi
 
 - `Add {number}` - adds a number to your linked list
 - `Remove {number}` - removes the first occurrence of the number from the linked list
-    - if there is no such element this command leaves the collection **unchanged**
+    - if there is no such element the collection remains **unchanged**
 
 ## Output
 
@@ -1686,17 +1694,13 @@ The output should consist of exactly 2 lines.
 
 On the first, you should print the result of calling the `getSize` function on the Linked list. 
 
-On the next lines, you should print **all elements** of the collection by calling **for each** on the collection.
+On the next line, you should print **all the elements** of the collection by iterating over the collection with **foreach**.
 
 ## Constraints
 
 - All numbers in the input will be **valid** integers **between** [2 ^ -32 ... 2 ^ 32 - 1]
-- All commands received through the input will be **valid** (will be only `Add` or `Remove`)
+- All commands received through the input will be **valid** (`Add` or `Remove`)
 - The number **N** will be a positive integer **between** [1 ... 500]
-
-## Hint
-
-You can use the Linked List from your **Workshop**.
 
 # Examples
 
