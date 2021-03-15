@@ -638,7 +638,6 @@ Create a program, that calculates if there are enough passengers to fill all sea
 | 15 | |
 | 24 | |
 
-## Example 2
 | Input | Output |
 | --- | --- |
 | 2 | Waiting... |

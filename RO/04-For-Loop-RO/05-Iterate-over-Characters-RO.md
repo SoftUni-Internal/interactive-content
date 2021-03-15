@@ -2,12 +2,24 @@
 # Iterația peste caractere
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/RO/interactive-programming-basics-with-java-for-loops-25-26-27-the-ASCII-table-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-# ASCII Table
+## ASCII Table
 Calculatoarele pot înțelege doar numerele, deci un cod **ASCII** este reprezentarea numerică a unui caracter precum "a" sau "@" sau o acțiune de un fel.
 
 Acesta este un exemplu de parte a tabelului:
 
-[image assetsSrc="04-for-loop-ascii.png" /]
+| **Dec** | **Hex** | **Char** | **Dec** | **Hex** | **Char** |
+| :-----: | :-----: | :------: | :-----: | :-----: | :------: |
+|   64    |   40    |    \@    |   96    |   60    |    \`    |
+|   65    |   41    |    A     |   97    |   61    |    a     |
+|   66    |   42    |    B     |   98    |   62    |    b     |
+|   67    |   43    |    C     |   99    |   63    |    c     |
+|   68    |   44    |    D     |   100   |   64    |    d     |
+|   69    |   45    |    E     |   101   |   65    |    e     |
+|   70    |   46    |    F     |   102   |   66    |    f     |
+|   71    |   47    |    G     |   103   |   67    |    g     |
+|   72    |   48    |    H     |   104   |   68    |    h     |
+|   73    |   49    |    I     |   105   |   69    |    i     |
+|   74    |   4A    |    J     |   106   |   6A    |    j     |
 
 Și aici puteți verifica întregul [Tabel ASCII](http://www.asciitable.com)
 

@@ -634,7 +634,6 @@ Scrieți un program care:
 | 15 | |
 | 24 | |
 
-## Exemplu 2
 |  **Intrare** | **Ieșire** |
 | --- | --- |
 | 2 | Waiting... |
