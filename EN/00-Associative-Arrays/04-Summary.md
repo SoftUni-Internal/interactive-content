@@ -6,11 +6,11 @@
 ## In this lesson you learned:
 
 - Maps hold {`key` -> `value`} pairs
-    - keyset holds a set of unique keys
-    - values holds a collection of values
+    - `keyset` holds a set of unique keys
+    - `values` holds a collection of values
     - iterating over map takes the entries as `Map.Entry<K, V>`
     
-- Lambda and Stream API helps collection processing
+- Lambda and Stream API helps processing collections
 
 ```java
 import java.util.Map;
@@ -24,12 +24,12 @@ public class Main {
 
 ## In the next lesson you will learn:
 
-- What is a String
+- What a String is
 
 - Manipulating Strings
 
 - Building and Modifying Strings
-    - using StringBuilder Class
-    - why Concatenation is a slow operation
+    - using the `StringBuilder` Class
+    - why concatenation is a slow operation
 
 [/slide]
