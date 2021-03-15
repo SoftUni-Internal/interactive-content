@@ -237,7 +237,7 @@ public void attackGainsExperienceIfTargetIsDead(){
 
 **Mocking objects** simulate the behavior of real objects.
 
-An **example+* could be a function that calls an e-mail sending service.
+An **example** could be a function that calls an e-mail sending service.
 
 It is pointless and ineffective to send an e-mail every time we run a test.
 

@@ -693,6 +693,8 @@ The Animal class should have field **name – String** and **Getter** for **name
 Every class should have:
 - A public constructor, which accepts one parameter: **name**
 
+## Submit
+
 Zip your package and upload it.
 
 ## Note: 
@@ -1288,6 +1290,9 @@ The default fuel consumption for **Vehicle** is **1.25**. Some of the classes ha
 - **SportCar – DEFAULT_FUEL_CONSUMPTION = 10**
 - **RaceMotorcycle – DEFAULT_FUEL_CONSUMPTION = 8**
 - **Car – DEFAULT_FUEL_CONSUMPTION = 3**
+
+## Submit 
+
 Zip your package and upload it.
 
 ## Hint	
@@ -1890,6 +1895,9 @@ A **Salmon** must have the following members upon initialization:
 
 ## Note
 You need a public class **Main**. Create a **restaurant** package.
+
+## Submit
+
 Zip your package and upload it.
 
 [/task-description]
