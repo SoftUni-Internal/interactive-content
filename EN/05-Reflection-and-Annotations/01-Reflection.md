@@ -16,15 +16,15 @@ Based on that we can tell that **Java reflection** is a process of examining or 
 
 Let us see a little more **detailed explanation** of what reflection is.
 
-All objects in Java own `getClass()` method. 
+All objects in Java own a `getClass()` method. 
 
 This method allows us to determine the object's class even if we do not know it during **compile time**.
 
-That might seem insignificant, but such a process is not possible in less dynamic languages, such as `C++`.
+That might seem insignificant, but such a process is **not possible in less dynamic languages**, such as `C++`.
 
-The importance here is that reflection is allowing us to write programs that do not have to **know** everything at compile time. 
+Reflection allows us to write programs that do not have to **know** everything at compile time. 
 
-That makes them more dynamic.
+That makes them more **dynamic**.
 
 Lots of **frameworks** use reflection because of that. 
 
