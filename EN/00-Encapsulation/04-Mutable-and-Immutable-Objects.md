@@ -1,5 +1,3 @@
-# Mutable and Immutable Objects
-
 [slide hideTitle]
 
 # Mutable vs. Immutable Objects
@@ -30,7 +28,7 @@ System.out.println(str);
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-26-27-mutable-fields-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Private mutable fields are not fully encapsulated:**
+**Private mutable fields are not fully encapsulated.**
 
 ```java
 class Team {
@@ -42,9 +40,12 @@ class Team {
   }
 } 
 ```
-When we work with reference types, getters are quite tricky. 
 
-When we return our object we give a reference to its memory, that is why with this reference we can change the original memory of the object, therefore changing the object itself.
+When we work with **reference types**, getters are quite **tricky**. 
+
+When we **return our object**, we give a **reference** to its memory.
+
+That is why with this reference, we can change the **original memory** of the object, therefore changing the object itself.
 
 ## Example
 
@@ -57,11 +58,13 @@ team.getPlayers().clear();
 System.out.println(team.getPlayers().size());  // 0
 ```
 
-In this case, our field is not safely encapsulated and it still can be changed.
+In this case, our field is **not safely encapsulated** and it can still be **changed**.
 
-The reason behind it is that the `List<>` is a reference type, that is why when we pass it with the `getter` we give the reference to the List's memory.
+The reason behind it is that the `List<>` is a reference type.
 
-What happens is that although we do not have a setter, the list is still mutable.
+That is why when we pass it with the `getter` we give the reference to the List's memory.
+
+What happens is that although we **do not have a setter**, the list is still **mutable**.
 
 [/slide]
 

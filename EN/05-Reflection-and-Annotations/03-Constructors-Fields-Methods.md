@@ -79,7 +79,7 @@ Object fieldType = field.getType();
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-18-fields-set-and-get-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Let us discuss how we can set the value for a field via Reflection.
+Let us discuss how we can set the value for a field via reflection.
 
 ``` java
 Field field = targetClass.getDeclaredField(fieldName);
@@ -152,7 +152,7 @@ Method[] methods = aClass.getMethods();
 Method method = aClass.getMethod("doSomething", String.class);
 ```
 
-## Getting methods without parameters
+## Getting Methods Without Parameters
 
 We can obtain methods without parameters:
 ```java 
@@ -160,7 +160,7 @@ Method method = aClass.getMethod("doSomething", null);
 // `null` is set when we want a method without parameters. 
 ```
 
-## Getting a method's parameters and return type
+## Getting a Method's Parameters And Return Type
 
 After we obtain a given method we can get its parameters and return type:
 
@@ -169,7 +169,7 @@ Class[] paramTypes = method.getParameterTypes();
 Class returnType = method.getReturnType();
 ```
 
-## Get methods with parameters
+## Get Methods With Parameters
 
 ```java
 Method method = myObject.class.getMethod("methodName", String.class);

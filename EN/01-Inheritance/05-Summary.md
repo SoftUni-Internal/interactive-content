@@ -48,14 +48,12 @@ public class Student extends Person {
 ## In the next lesson, you will learn:
 
 
-- What Inheritance and Interfaces are 
-
+- Inheritance and Interfaces
+  * definition
+  * use cases 
+  
 - Abstraction as an OOP Principle
-
-- How to use Interfaces
-
-- What Abstract Classes are
-
-- Interfaces vs Abstract Classes
+- What abstract classes are
+- Interfaces vs. Abstract Classes
 
 [/slide]

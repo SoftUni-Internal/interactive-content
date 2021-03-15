@@ -567,7 +567,9 @@ Test Passed!
 
 [task-description]
 # Description
-Using the code from the previous task, define an interface **Identifiable** with a **String** method **getId** and an interface **Birthable** with a **String** method **getBirthDate** and implement them in the **Citizen** class. 
+Using the code from the previous task, define an interface **Identifiable** with a **String** method **getId**, and an interface **Birthable** with a **String** method **getBirthDate**
+
+Implement them in the **Citizen** class. 
 
 Rewrite the **Citizen** constructor to accept the new parameters.
 

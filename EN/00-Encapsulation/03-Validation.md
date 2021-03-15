@@ -6,11 +6,12 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-19-20-21-validation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Data validation happens in setters:**
+**Data validation happens in setters.**
 
 ```java
 private void setSalary(double salary) {
-  if (salary < 460) {   //Validation happens here
+  if (salary < 460) {   
+    // Validation happens here
     throw new IllegalArgumentException("Message");
   }
   
@@ -52,11 +53,11 @@ public Person(String firstName, String lastName,
 # Description
 Expand **Person** with proper validation for every field:
 
-- Names must be at least 3 symbols
-- Age must not be zero or negative
-- Salary cannot be less than 460.0 
+- **Names** must be at least 3 symbols
+- **Age** must not be zero or negative
+- **Salary** cannot be less than 460.0 
 
-Print a proper message to the end-user (look at the example for messages). 
+Print a proper **message** to the end-user (look at the example for the messages). 
 
 Do not use `System.out.println()` in the **Person** class.
 

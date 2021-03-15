@@ -26,7 +26,7 @@ class Person {
 
 ## Protected Access Modifier
 
-When we declare a unit with the access modifier **protected** we say that only members of the **class hierarchy** (the current class and it is children) can see and access the given unit:
+When we declare a unit with the access modifier **protected** we say that only members of the **class hierarchy** (the current class and its children) can see and access the given unit.
 
 ```java
 class Team {
@@ -35,12 +35,12 @@ class Team {
 }
 ```
 
-- **Protected** modifier cannot be applied to classes and interfaces
+- **Protected** modifiers cannot be applied to classes and interfaces
 - Prevents a **nonrelated** class from trying to use it
 
 ## Default Access Modifier
 
-When we do not specifically declare a modifier, a Default Access Modifier gets in use:
+When we do not specifically declare a modifier, a default access modifier gets in use:
 
 ```java
 class Team {
@@ -48,7 +48,8 @@ class Team {
   void setName(String name) {…}
 }
 ```
-Each element with this Access Modifier is **Available** to any other class in the same **package**:
+
+Each element with this access modifier is **available** to any other class in the same **package**:
 
 ```java
 Team real = new Team("Real");
@@ -57,7 +58,7 @@ System.out.println(real.getName());
 
 ```
 
-The output will be:
+The **output** will be:
 
 ```
 Real Madrid

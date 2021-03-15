@@ -167,7 +167,8 @@ public class MyMath extends Math { }     // Error…
 Person person = new Person();    // When we have a base class
 Student student = new Student(); // And another inherited class 
 
-List<Person> people = new ArrayList(); // We can contain both of them in a collection of the base class
+List<Person> people = new ArrayList(); 
+// We can contain both of them in a collection of the base class
 
 people.add(person);
 people.add(student);
