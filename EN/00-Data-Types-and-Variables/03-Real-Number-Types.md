@@ -5,13 +5,13 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-18-21-real-number-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Floating-point types** are used when we store a decimal number, such as 9.99 or 3.14515.
+**Floating-point data types** are used when we need to store a decimal number, such as 9.99 or 3.14515.
 
 Floating-point types also:
 
-- Have a specific range and precision depending on the memory used
-- Sometimes behave abnormally in the calculations
-- May hold very small and very big values like **0.00000000000001** and **100000000000000000000000000.0**
+- Have a specific range and precision (number of decimal places) depending on the amount of memory they occupy
+- May behave abnormally in calculations
+- May hold both very small and great values like **0.00000000000001** and **100000000000000000000000000.0**
 
 These can be either **float** or **double**:
 
@@ -27,7 +27,7 @@ These can be either **float** or **double**:
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-20-floating-point-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- **Float**: used for storing fractional numbers. Note that you should suffix the value with an `f`:
+- **Float**: used for to store fractional numbers. Note that you should suffix the value with an `f`:
 
 ```java live
 float myNum = 5.75f;
@@ -59,11 +59,11 @@ System.out.println("Float PI is: " + floatPI);
 System.out.println("Double PI is: " + doublePI);
 ```
 
-**NOTE**: The `f` suffix in the first statement!
+**NOTE**: The `f` suffix in the first statement signifies that it should be interpreted as a float
 
 - Real numbers are interpreted as **double** by default
 
-- You should explicitly convert them to **float**
+- We can explicitly convert them to **float** in case we need this
 [/slide]
 
 [slide hideTitle]
@@ -166,13 +166,13 @@ Assume that **1 British Pound = 1.31 Dollars**.
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-23-scientific-notation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-When working with large numbers, the scientific notation is exceptionally helpful.
+When working with large numbers, scientific notation is exceptionally helpful.
 
 In scientific notation, the letter `E` represents `10 to the power of E`. 
 
-For example, `1.51E+1` means the same thing as `1.51x10^1`.
+For example, `1.51E+1` means: `1.51x10^1`.
 
-Let us review some examples of the scientific notation below.
+Let us review some examples using scientific notation:
 
 ```java live
 double exampleVariableOne = 1E+3;
@@ -191,7 +191,7 @@ System.out.println(exampleVariableThree);
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-24-floating-point-division-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Integral division and floating-point division are different.
+There are two types of dividing numbers, depending on their type: integral-division and floating-point division
 
 See the examples below:
 
@@ -211,9 +211,9 @@ System.out.println(8 % 2.5);
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-25-floating-point-calculations-abnormalities-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Keep in mind that sometimes floating-point numbers work incorrectly!
+Keep in mind that sometimes floating-point numbers migth exhibit unexpected behavior.
 
-We encourage you to read more about `IEEE 754`.
+We encourage you to read more about the `IEEE 754` standard online.
 
 ## Example
 
@@ -241,9 +241,9 @@ System.out.println(num);
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-26-big-decimal-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Keep in mind that sometimes floating-point numbers work incorrectly!
+Keep in mind that sometimes floating-point might also behave abnormally in calculations
 
-We encourage you to read more about **IEEE 754**.
+You can read more about **IEEE 754** by looking it up in any search engine.
 
 ```java live
 BigDecimal bigDecimal1 =
@@ -290,7 +290,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that accepts a count of **n** numbers, calculates and prints their **exact sum** (without rounding).
+Create a program that accepts numbers, calculates and prints their **exact sum** (without rounding).
 
 ## Examples
 | **Input** | **Output** |
