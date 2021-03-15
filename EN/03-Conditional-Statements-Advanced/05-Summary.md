@@ -63,7 +63,7 @@ switch (selector) {
 
 - **Infinite** loops
 
-  * How to use them properly
+  * how to use them properly
 
 
 [/slide]

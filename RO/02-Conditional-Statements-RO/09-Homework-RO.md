@@ -849,7 +849,7 @@ Imprima rezultatul în următorul format:"\{hours\}:\{minutes\}".
 - Orele trebuie să fie formatate **fără zero**
 - Minutele trebuie trebuie să fie formatate **cu zero**
 
-## Exemplu:
+## Exemplu
 |**Intrare**|**Ieșire** |
 | --- | --- |
 | 11 | 11:23|
@@ -1127,10 +1127,10 @@ Scrieți un program care imprima **tipul** unui animal în funcție de **numele 
 - reptiles: **crocodile**, **tortoise**, **snake** 
 - **others -> unknown**
 
-## Exemplu:
+## Exemplu
 
 |**Intrare**|**Ieșire** |
-| --- | | --- |
+| --- | --- |
 | dog | mammal |
 | snake | reptile |
 | cat | unknown |

@@ -15,7 +15,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Descriere
+# Descriere
 Scrieți un program pentru a verifica fructele sau legumele:
 
 * Citiți o singură linie de intrare: un articol din legume
@@ -96,7 +96,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Descriere
+# Descriere
 Scrieți un program pentru a imprima ziua săptămânii ca un cuvânt:
 
 * Citiți și imprimați un număr întreg **n**: **ziua săptămânii** în intervalul [1 ... 7]
@@ -187,7 +187,11 @@ Scrieți un program pentru a verifica  dacă o literă este vocală sau consoan�
 
 [hints]
 [hint]
-You can use an "if" statement and check if the letter is a vowel. If it is print the correct output. However, if it isn't, enter the "else" statement and print the appropriate output.
+You can use an "if" statement and check if the letter is a vowel. 
+
+If it is print the correct output. 
+
+However, if it isn't, enter the "else" statement and print the appropriate output.
 [/hint]
 [/hints]
 
@@ -263,7 +267,6 @@ Calculați semnul produsului de 3 numere:
 | 3 |  |
 | -1 |  |
 
-## Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | 2 | positive |
@@ -348,15 +351,12 @@ Scrieți un program, care verifică **3 numere sortate**:
 | 2 |  |
 | 3 |  |
 
-## Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | 3 | Not sorted |
 | 5 |  |
 | 2 |  |
 
-
-## Exemplu
 |**Intrare** |**Ieșire**|
 | --- | --- |
 | 5 | Descending |
@@ -445,8 +445,8 @@ Scrieți un program, care calculează cheltuielile de vacanță:
 * Citiți sezonul, tipul de cazare și numărul zilelor
 * Imprimați **cheltuielile totale**, pe baza tabelului de prețuri de mai jos, formatat la **a doua cifră** după punctul zecimal
 
-| Sezon | Hotel | Camping | Reducere |
-|-----|------|-------|--------|
+| **Sezon** | **Hotel** | **Camping** | **Reducere** |
+|---|---|---|---|
 |Spring|30|10|20%|
 |Summer|50|30|0%|
 |Autumn|20|15|30%|
@@ -563,8 +563,8 @@ Calculați **prețul** pentru toate biletele pentru un film cinematografic:
 * Citiți **tipul filmului**, **rândurile** și **locurile pe rând** din cinematograf
 * Tipăriți **prețul total** pentru toate locurile **formatate** la a doua cifră după punctul zecimal
 
-|Type|Price|
-|-----|----|
+|**Type**|**Price**|
+|---|---|
 |Premiere|12.00|
 |Normal|7.50|
 |Discount|5.00|
@@ -1112,7 +1112,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Descriere
+# Descriere
 
 Scrieți un program **consolă** care să citească **vârstă (număr în virgulă mobilă)** și **sex** ("**m**" sau "**f**") și să imprime o adresă în funcție de aceste principii:
 - "**Mr.**" - un bărbat (sex "**m**") cu vârsta de 16 ani sau mai mult
@@ -1307,12 +1307,12 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Descriere
+# Descriere
 Scrieți un program care să știe dacă rezervorul unui vehicul necesită realimentare sau nu.
 
 ## Intrare
 Intrarea este formată din 2 linii:
-- Mai întâi trebuie să citiți de pe consolă tipul de combustibil - text cu opțiuni: "Diesel", "Gasoline" sau "Gas"
+- Mai întâi trebuie să citiți de pe consolă tipul de combustibil - text cu opțiuni: "**Diesel**", "**Gasoline**" sau "**Gas**"
 - A doua linie de intrare citește combustibilul din rezervor în litri
 
 ## Ieșire
@@ -1432,11 +1432,11 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Descriere
+# Descriere
 
 O companie plătește angajaților săi următoarele comisioane în funcție de orașul în care lucrează și de valoarea vânzărilor:
 
-| **Vânzări / Oraș** | London | New York | Sydney|
+| **Vânzări / Oraș** | **London** | **New York** | **Sydney**|
 | --- | --- | --- | --- | 
 | \[0-500\] | 5% | 4.5% | 5.5% |
 | \[501-1000\] | 7% | 7.5% | 8% | 
@@ -1650,11 +1650,11 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Descriere
-Scrieți un program pentru a verifica dacă un **punct {x, y}** este **pe** una dintre laturile unui dreptunghi **{x1, y1} - {x2, y2}**.
+# Descriere
+Scrieți un program pentru a verifica dacă un `punct {x, y}` este **pe** una dintre laturile unui dreptunghi `{x1, y1} - {x2, y2}`.
 
 ## Intrare
-Intrarea provine de pe consolă și constă din **6 linii, introduse de utilizator: numere reale x1, y1, x2, y2, x și y** (va fi întotdeauna adevărat că**x1 < x2** și **y1 < y2**).
+Intrarea provine de pe consolă și constă din **6 linii, introduse de utilizator: numere reale x1, y1, x2, y2, x și y** (va fi întotdeauna adevărat că **x1 < x2** și **y1 < y2**).
 
 ## Ieșire
 Dacă punctul se află pe una dintre laturile dreptunghiului:
@@ -1684,7 +1684,7 @@ Dacă punctul NU se află pe o latură:
 
 [hints]
 [hint]
-utilizați una sau mai multe instrucțiuni condiționale **if** cu operații logice. Un punct **{x, y}** se află lângă un dreptunghi **{x1, y1} - {x2, y2}**, dacă una dintre condițiile specificate este îndeplinită:
+utilizați una sau mai multe instrucțiuni condiționale **if** cu operații logice. Un punct `{x, y}` se află lângă un dreptunghi `{x1, y1} - {x2, y2}`, dacă una dintre condițiile specificate este îndeplinită:
 
 - **x** este egal cu **x1** sau **x2** și în același timp **y** este între **y1** și **y2**
 - **y** este egal cu **y1** sau **y2** și în același timp **x** este între **x** și **x2**
@@ -1951,14 +1951,14 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Descriere
+# Descriere
 Este vară cu vreme schimbătoare și Victor are nevoie de ajutorul vostru.
 
 Scrieți un program care să-i recomande lui Victor ce haine să aleagă **în funcție de partea de zi și de grade (Celsius)**.
 
 Prietenul vostru are planuri diferite pentru fiecare parte a zilei, cu ținute diferite - vedeți **tabelul** de mai jos.
 
-| **O parte din zi / Grade** | Morning | Afternoon | Evening |
+| **O parte din zi / Grade** | **Morning** | **Afternoon** | **Evening** |
 | --- | --- | --- | --- |
 | 10 <= deg <= 18 | Outfit: Sweatshirt | Outfit: Shirt | Outfit: Shirt |
 | | Shoes: Sneakers | Shoes: Moccasins | Shoes: Moccasins |
@@ -2122,7 +2122,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Descriere
+# Descriere
 
 Tony și prietenii săi au decis să închirieze o barcă - chiria depinde de **sezon** și de **numărul** de pescari.
 
@@ -2160,14 +2160,12 @@ Imprimați pe consolă o linie **unică**:
 | Summer | |
 | 11 | |
 
-## Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | 2000 | Yes! You have 50.00 dollars left. |
 | Winter | |
 | 13 | |
 
-## Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | 3600 | Yes! You have 1035.00 dollars left. |
@@ -2391,9 +2389,11 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Descriere
+# Descriere
 
-O piață de flori oferă **3 tipuri de flori: lilii**, **trandafiri** și **lalele**. Prețurile depind de sezon:
+O piață de flori oferă **3 tipuri de flori: lilii**, **trandafiri** și **lalele**. 
+
+Prețurile depind de sezon:
 
 | **Season** | **Lilia** | **Rose** | **Tulip** |
 | --- | --- | --- | --- |
@@ -2571,13 +2571,3 @@ Y
 [code-io /]
 [/code-task]
 [/slide]
-
-
-
-
-
-
-
-
-
-

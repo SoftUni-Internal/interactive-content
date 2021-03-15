@@ -15,7 +15,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 Create a program to check whether the input value represents a fruit or a vegetable:
 
 * Read a single input line: an item from the veggie store
@@ -95,7 +95,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 Create a program to print out the given day of the week as a word:
 
 * Reads and integer **n**: the **day of the week** in range [1 ... 7]
@@ -265,7 +265,6 @@ Calculate the end sign **positive**, **negative** or **zero** of the product of 
 | 3 |  |
 | -1 |  |
 
-## Example
 | **Input** | **Output** |
 | --- | --- |
 | 2 | positive |
@@ -350,7 +349,6 @@ Create a program that reads 3 numbers from the console and checks if they are so
 | 2 |  |
 | 3 |  |
 
-## Example
 | **Input** | **Output** |
 | --- | --- |
 | 3 | Not sorted |
@@ -358,7 +356,6 @@ Create a program that reads 3 numbers from the console and checks if they are so
 | 2 |  |
 
 
-## Example
 | **Input** | **Output** |
 | --- | --- |
 | 5 | Descending |
@@ -447,8 +444,8 @@ Create a program that calculates vacation expenses according to the following:
 * Reads: a **season**, the **accommodation type** and the **numer of days**
 * Prints the total expenses, based on the price table bellow, formatted to the 2nd digit after the decimal point
 
-|Season|Hotel|Camping|Discount|
-|-----|------|-------|--------|
+|**Season**|**Hotel**|**Camping**|**Discount**|
+|---|---|---|---|
 |Spring|30|10|20%|
 |Summer|50|30|0%|
 |Autumn|20|15|30%|
@@ -567,8 +564,8 @@ Calculate the total **price** for all sold tickets to a movie screening in a cin
 * Reads the **type of the movie**, the **rows** and the **seats per row** in the cinema
 * Prints the **total price** for all seats **formatted** to the 2nd digit after the decimal point
 
-|Type|Price|
-|-----|----|
+|**Type**|**Price**|
+|---|---|
 |Premiere|12.00|
 |Normal|7.50|
 |Discount|5.00|
@@ -1311,22 +1308,22 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 Create a program that checks whether the tank of a vehicle needs refueling or not. 
 
 ## Input
 The input consists of 2 lines:
-- the type of fuel: "Diesel", "Gasoline" or "Gas"
-- the fuel in the tank in liters
+- The type of fuel: "**Diesel**", "**Gasoline**" or "**Gas**"
+- The fuel in the tank in liters
 
 ## Output
 - If the fuel type is one of the 3 options, print: "**Invalid fuel!**"
 - If the current fuel level is >= 25 liters print:
     - "**You have enough** \{**type of fuel**\}."
-    -  The type of fuel should be printed in lower case
+    -  the type of fuel should be printed in lower case
 - Otherwise print:
     - "**Fill your tank with** \{**type of fuel**\}!"
-    - Type of the fuel should be printed in lower case
+    - type of the fuel should be printed in lower case
 
 ## Example
 
@@ -1435,11 +1432,11 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 A company pays the following commissions to its employees according to the city they work in and the amount of sales:
 
-| **Sales / City** | London | New York | Sydney|
+| **Sales / City** | **London** | **New York** | **Sydney**|
 | --- | --- | --- | --- | 
 | \[0-500\] | 5% | 4.5% | 5.5% |
 | \[501-1000\] | 7% | 7.5% | 8% | 
@@ -1653,7 +1650,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 Create a program to check if a **point {x, y}** is **on** one of the sides of a rectangle **{x1, y1} - {x2, y2}**.  
 
 ## Input
@@ -1688,7 +1685,7 @@ If the point does NOT lie on a side:
 
 [hints]
 [hint]
-You can use one or more conditional **if** statements with logical operations. A point **{x, y}** lies on aside of a rectangle **{x1, y1} – {x2, y2}**, if one of the specified conditions is fulfilled:
+You can use one or more conditional **if** statements with logical operations. A point **{x, y}** lies on aside of a rectangle **{x1, y1} - {x2, y2}**, if one of the specified conditions is fulfilled:
 [/hint]
 [hint]
 **x** equals **x1** or **x2** and at the same time **y** is between **y1** and **y2**
@@ -1956,13 +1953,13 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Create a program to help your frend choose what clothes to wear **according to the part of day and the temperature (in degrees; Celsius)**. 
 
 Your friend has different outfits according to the time of the day and the temperature – check the **table** below.
 
-| **Part of Day / Degrees** | Morning | Afternoon | Evening |
+| **Part of Day / Degrees** | **Morning** | **Afternoon** | **Evening** |
 | --- | --- | --- | --- |
 | 10 <= degrees C <= 18 | Outfit: Sweatshirt | Outfit: Shirt | Outfit: Shirt |
 | | Shoes: Sneakers | Shoes: Moccasins | Shoes: Moccasins |
@@ -2125,7 +2122,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Tony and his friends decided to rent a fishing boat - the rent depends on the **season** and the **number** of fishermen.
 
@@ -2135,7 +2132,7 @@ Tony and his friends decided to rent a fishing boat - the rent depends on the **
 - **Winter - 2600 $**
 
 **The price** based on the **number** of fishermen is **discounted** in the following amounts:
-- **up to 6 people (inclusive) - 10% discount**
+- **Up to 6 people (inclusive) - 10% discount**
 - **7-11 people** - **15% discount**
 - **12 or more people - 25% discount**
 
@@ -2166,14 +2163,12 @@ Print out a **single** line:
 | 11 | |
 
 
-## Example
 | **Input** | **Output** |
 | --- | --- |
 | 2000 | Yes! You have 50.00 dollars left. |
 | Winter | |
 | 13 | |
 
-## Example
 | **Input** | **Output** |
 | --- | --- |
 | 3600 | Yes! You have 1035.00 dollars left. |
@@ -2397,7 +2392,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 A flower market offers 3 types of flowers: **lilia**, **roses** and **tulips**. The prices depend on the season:
 

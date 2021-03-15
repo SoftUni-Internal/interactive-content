@@ -851,7 +851,7 @@ Print the result in the following format: "\{hours\}:\{minutes\}".
 - The hours should be formatted **without a leading zero**
 - The minutes should be formatted **with a leading zero**
 
-## Example:
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | 11 | 11:23|
@@ -1133,10 +1133,10 @@ The input may hold the following values:
 - **crocodile, tortoise, snake -> reptile**
 - **anything else -> unknown**
 
-## Example:
+## Example
 
 | **Input** | **Output** |
-| --- | | --- |
+| --- | --- |
 | dog | mammal |
 | snake | reptile |
 | cat | unknown |
