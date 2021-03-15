@@ -1109,12 +1109,22 @@ The result should be formatted to the **second decimal point.**
 
 ## Examples
 
-| **Input** | **Output** | **Comments** |
-| --- | --- | --- |
-| 0.194 | 174.39 | The vegetables cost - 0.194$ \* 10kg = 1.94$ |
-| 19.4 | | The fruits cost - 19.4$ \* 10kg  = 194$ |
-| 10 | | Total - 195.94$ = 174.39€ |
-| 10 | | |
+| **Input** | **Output** |
+| --- | --- | 
+| 0.194 | 174.39 | 
+| 19.4 | | 
+| 10 | | 
+| 10 | | 
+
+[hints]
+[hint]
+The vegetables cost - 0.194$ \* 10kg = 1.94$
+The fruits cost - 19.4$ \* 10kg  = 194$
+[/hint]
+[hint]
+Total - 195.94$ = 174.39€
+[/hint]
+[/hints]
 
 | **Input** | **Output** |
 | --- | --- |
