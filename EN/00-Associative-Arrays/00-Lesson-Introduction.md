@@ -8,28 +8,24 @@
 
 ## In this lesson you will learn:
 
-**1. Maps**
+**1. Associative Arrays**
 
-- What maps are
+- Definition
 
-- Collections of Key and Value pairs
+- Declaration and Initialization
 
-**2. Map Methods**
+- Iteration
 
-- The `put()` method
+- Built-In methods
 
-- The `remove()` method
+**2. Lambda Functions**
 
-**3. Lambda Expressions**
+**3. Stream API**
 
-- Lambda Functions
+- Stream Definition
 
-**4. Stream API**
+- Processing collections with the Stream API
 
-- What a Stream is
-
-- How to process collections with the Stream API
-
-- How to filter and sort Collections
+- Filtering and sorting Collections
 
 [/slide]
