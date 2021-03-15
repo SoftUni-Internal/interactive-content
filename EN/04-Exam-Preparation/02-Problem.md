@@ -19,27 +19,27 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that **manages users and emails** sent by users.
+Create a program that keeps the whole information about some users, their usernames, and their emails.
 
-You need to keep information about their username and their sent emails.
+The emails are represented as **strings**.
 
-The emails are **represented as strings**.
-
-You will be **receiving lines with commands separated by** "->" **until you receive** the "**Statistics**" command.
+You will be receiving lines, containing commands that are separated by **"->"**, until you receive the "**Statistics**" command.
 
 There are **three possible commands**:
-- "Add->\{username\}" 
-    - **check if the username exists and if it does print** - "\{username\} is already registered"
-    - if it does not exist, then add the user to the collection of users
-- "Send->\{username\}->\{Email\}" 
-    - add the \{Email\} to the \{username\}'s collection of sent emails
-- "Delete->\{username\}"
-    - delete the given user, if he exists
-    - if the user does not exist, print "\{username\} not found!"
+- "Add->\{**username**\}" 
+    - you should check if the username exists, and if it does, print out - **"\{username\} is already registered"**
+    - if it does not exist, then you need to add the user to the collection of all users
+- "Send->\{username\}->\{Email\}"
+    - add the \{**Email**\} to the \{**username**\}'s collection of emails
+- "Delete->\{**username**\}"
+    - delete the given user, if such exists
+    - if the user does not exist, print out - "\{username\} not found!"
 
-In the end, you have to **print the count of users**, **each user with their emails**. 
+In the end, you have to **print the count of all users** and **all users with their emails**. 
 
-**Users** need to be **sorted in descending order** by the **count of emails they sent and then by their username in ascending order in the following format**:  
+The **users** have to be sorted by the **count of their emails** in **descending** order, and then by their **username** in **ascending** order.
+
+The output should be in the following format: 
 
 Users count: \{count\}
 
@@ -52,14 +52,11 @@ Users count: \{count\}
  - \{EmailN\}
 
 ### Input
-- You will be receiving lines until you receive the "**Statistics**" command
+- You will be receiving lines of input, until you receive the "**Statistics**" command
 - The commands will be in the format described above
 
 ### Output
-- Print the collection in the format described above after the "**Statistics**" command
-
-### Output
-Print the collection in the format described above after receiving the "**Statistics**" command.
+Print out the collection in the format described above after receiving the "**Statistics**" command.
 
 ### Example
 | **Input** | **Output** |
@@ -74,9 +71,10 @@ Print the collection in the format described above after receiving the "**Statis
 | Statistics |  - Another random test mail |
 
 ### Comments
-- First we receive our users
-- Since they are not already in our collection, we add them
-- Then they start sending emails and in the end we print the output in the described format
+- First, we receive the users
+- Since they are not already in our collection, we add all of them
+- Then, they start sending emails
+- In the end, we print the expected output
 
 
 ### Example
