@@ -9,7 +9,7 @@
 
 **1. Event Loop**
 
-- What an event loop is
+- What is an event loop
 - How the "Event" loop works
 
 **2. Event Types**
@@ -19,7 +19,7 @@
 
 **3. Event Object Properties and Methods**
 
-- What an "Event" object is
+- What is an "Event" object
 - Properties that are common to all еvents
 
 **4. Handling Events**
