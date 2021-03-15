@@ -44,12 +44,28 @@ Imprimați pe consolă:
 - Imprimați cel mai bun film pentru dvs.: **"The best movie for you is** \{**movie title**\} **with** \{**sum of symbols**\} **ASCII sum."**
 
 ## Exemplu
-|**Intrare**|**Ieșire**|**Comentarii** |
-| --- | --- | --- |
-| Matrix | The best movie for you is Breaking bad with 878 ASCII sum. | Mai întâi obținem "Matrix", prima literă este M cu o valoare de 77, dar este o literă mare și scădem din ea lungimea titlului: 77 - 6 = 71. |
-| Breaking bad | | A doua literă este a cu o valoare de 97 și scădem de două ori titlul filmului: 97 - 12 = 85. |
-| Legend | | În mod similar, continuăm cu fiecare literă ulterioară și primim o sumă de 563. |
-| STOP | | La primirea comenzii STOP, imprimăm titlul cu cea mai mare valoare, care este Breaking bad cu suma de 878. |
+|**Intrare**|**Ieșire**|
+| --- | --- | 
+| Matrix | The best movie for you is Breaking bad with 878 ASCII sum. |
+| Breaking bad | |
+| Legend | | 
+| STOP | | 
+
+[hints]
+[hint]
+
+Mai întâi vom primi **Matrix**, prima literă este M cu valoarea de 77f, este o literă majusculă, așa că vom scădea din aceasta lungimea titlului 77 \- 6 \= 71.
+[/hint]
+[hint]
+A doua literă are valoarea 97 și scădem lungimea titlului \* 2 din suma 97 \- 12 = 85.
+
+În mod similar, procedăm cu fiecare literă care urmează, până ajungem la rezultatul final de 563.
+[/hint]
+[hint]
+După ce am primit comanda "**STOP**" , imprimăm titlul cu cea mai mare valoare, care este **Breaking** cu suma de 878.
+[/hint]
+
+[/hints]
 
 [/task-description]
 [code-io /]
