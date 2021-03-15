@@ -1417,9 +1417,9 @@ Print the numbers on a single line, separated by a single space.
 
 ## Example
 
-| Input | | Output |
-| --- | --- | --- |
-| (no input) | | 7 17 27 ... 997 |
+| **Input** | **Output** |
+| --- | --- | 
+| (no input) | 7 17 27 ... 997 |
 
 [/task-description]
 [tests]

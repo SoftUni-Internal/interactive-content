@@ -1405,8 +1405,8 @@ Imprimați numerele pe o singură linie, separate printr-un singur spațiu.
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
-| --- | --- | --- |
-| (no input) | | 7 17 27 ... 997 |
+| --- | --- | 
+| (no input) | 7 17 27 ... 997 |
 [/task-description]
 [tests]
 [test open]
@@ -1725,12 +1725,12 @@ Toate numerele trebuie formatate la a doua zecimală.
 | 2.99| Between 3.00 and 3.99: 20.00% |
 | 5.68| Fail: 20.00% |
 | 3.01| Average: 4.06 |
-| 4| | 
-| 4| | | 
-| 6.00| |
-| 4.50| |
-| 2.44| |
-| 5| | 
+| 4| |
+| 4| |
+|6.00| |
+|4.50| |
+|2.44| |
+|5| |
 
 [hints]
 [hint]
