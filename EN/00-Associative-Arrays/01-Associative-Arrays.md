@@ -3,29 +3,27 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-3-4-associative-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Associative arrays are collections of type parameters **Key** and **Value** pairs and are indexed by **Keys**, not by numbers like arrays. 
+Associative arrays are collections that hold parameters in **Key** and **Value** pairs and are indexed by **Keys**. 
 
-**The Key** represents **the index** of the map. Keys and Values are **objects** and each pair is known as **an entry**.
+**The Key** represents **the index** of the map. The **Keys** and **Values** are **objects** and each pair is known as **an entry**.
 
 One object is used as a **Key** (index) to another object (**Value**). 
 
-They **can not** be **primitive types** like int, double, boolean, etc. 
+They **can not** be **primitive types** like **int**, **double**, **boolean**, etc. 
 
-They **must be specified** with the equivalent **wrapper class**: Integer, Double, Boolean, etc. 
+They **must be specified** with the equivalent **wrapper class**: **Integer**, **Double**, **Boolean**, etc. 
 
-**The type of Key and Value** can be the **same or different**, depends on the case.
+**The types of Keys and the Values** can be the **same or different**, depends on the case.
 
-In Java associative arrays are called **Maps**. 
+In Java, the associative arrays are called **Maps**. 
 
-A Map **cannot contain duplicate Keys**, each Key can map to at most one Value. 
+A Map **cannot contain duplicate Keys**. Each **Key** can be associated to only one **Value**. 
 
-But **the values can be duplicated**. 
+**The Values of different Keys can be duplicated**. 
 
-**For one Key only one Value** can be stored **in the same Map instance**. 
+**One Key** can only store **one Value** in the **same Map instance**. 
 
-There can be stored **different values for the same Key in different Map instances**. 
-
-For example:
+Example:
 
 | *Name* | *Phone number* |
 | ------- | --------- |
@@ -42,52 +40,50 @@ For example:
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-5-collections-of-key-and-value-pairs-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The Java Collections API contains several Map **implementations**, which allow a Map's contents to be viewed as:
+The Java Collections API contains several Map **implementations**, which allow a Map's content to be viewed as:
 
 - A set of keys
 
 - A collection of values
 
-- A set of key-value mappings 
+- A set of key-value pairs 
 
-The commonly used **Map implementations** are `HashMap`, `LinkedHashMap` and `TreeMap`. 
+The most used **Map implementations** are `HashMap`, `LinkedHashMap` and `TreeMap`. 
 
-The **order** of a Map depends on the **chosen collection view**. 
+The **order** of a Map depends on the **chosen collection implementation**. 
 
-Some Map implementations, like the **TreeMap** class, make specific **guarantees to their order**. 
+Some Map implementations, like the **TreeMap** class, **guarantee a specific order**.
 
 Others, like the **HashMap** class, **do not**. 
 
-**HashMap** and **LinkedHashMap** allow `null` Keys and Values, but **TreeMap** does not allow any `null` Key or Value.
+The **HashMap** and the **LinkedHashMap** classes allow one `null` value for the **Key** and multiple `null` values for the **Values**
+
+The **TreeMap** class does not allow any `null` values.
 
 ## HashMap < Key, Value >
 
-`HashMap` maps a Key and a Value, but it **does not maintain any order** of the elements stored internally on the Map. 
+The elements, which are stored internally in the `HashMap` class, **do not maintain any order**. 
 
-This is the **fastest** of the Map implementations, so if there is no need to sort the elements in the Map is recommended to use `HashMap`.
+It is typically used when you will not be performing index-based operations on the stored data.
 
 ## LinkedHashMap < Key, Value >
 
-`LinkedHashMap` also maps a Key and a Value. 
+The **LinkedHashMap** class extends the **HashMap** class but **maintains a specific order**. 
 
-It inherits **HashMap** class, but **maintains insertion order**. 
-
-Keeps the Keys **in order of addition**.
+The Keys are kept **in the order of addition**.
 
 ## TreeMap < Key, Value >
 
-`TreeMap` also maps a Key and a Value. 
-
-It **maintains ascending order** while always keeping its keys **stored** and using a balanced search tree.
+The **TreeMap** class **maintains an ascending order** of the pairs based on the **Keys**.
 
 [/slide]
 
 [slide hideTitle]
 # Map Declaration and Initialization
 
-To use `Map` in Java **import** `java.util.Map` package. 
+To use a `Map` in Java, **import** the `java.util.Map` package. 
 
-Create an **instance** of one of the classes that implement the Java **Map interface**.
+Create an **instance** of one of the classes that implement the **Map interface**.
 
 ```java
 import java.util.Map;
@@ -101,11 +97,11 @@ public class Main {
 
 To initialize a map:
 
-- Specify the **generic type** of the Key and the Value in the angle brackets `<>`
+- Specify the **generic type** of the Key and the Value in the angle brackets `<>` separated by a comma and a space **, **
 
-- Set the map **name**, which should be **descriptive** enough to understand what the **Key and the Value represent**
+- Set the map **name**, which should be **descriptive** enough to understand what **the Key and the Value represent**
 
-- After the equals sign `=` use the keyword `new` and the **intended type** of the Map
+- After the equals sign `=`, use the keyword `new` and the **intended type** of the Map
 
 ```java
 Map <Key, Value> airplanes = new HashMap<>();
@@ -119,7 +115,7 @@ Map <Key, Value> shoppingList = new LinkedHashMap<>();
 Map <Key, Value> phoneBook = new TreeMap<>();
 ```
 
-It is important to know that once the `Key` and the `Value` are set, the map can only accept their generic types.
+It is important to know that once the types for the **Key** and the **Value** are set, they can not be changed.
 
 [/slide]
 
@@ -127,23 +123,22 @@ It is important to know that once the `Key` and the `Value` are set, the map can
 [slide hideTitle]
 # Built-in methods
 
-There are several built-in methods for a `HashMap`: 
+The `HashMap` class contains several built-in methods: 
 
-- `put(K key, V value)` - Used to **add items** (insert an entry) in the map 
+- `put(K key, V value)` - Used for **adding items** (insert an entry) in the map 
 
-Only a **single Key + Value pair** for each Key can exist in the Map **at the same time**. 
-
-If `put()` is called more than once with the same Key, **the latest Value** passed to `put()` for that Key will **overwrite** what is already stored in the Map for that Key. 
-
-**The latest Value replaces the existing Value** for the given Key.
+If the `put()` method is called more than once with the same Key, **the latest Value replaces the existing Value** for the given Key.
 
 ```java
 HashMap<String, Integer> airplanes = new HashMap<>();
 airplanes.put("Boeing 737", 130);
 airplanes.put("Airbus A320", 150);
+
+airplanes.put("Boeing 737", 180);
+System.out.println(airplanes.get("Boeing 737"));
 ```
 
-- `putIfAbsent(K key, V value)` - Used to insert the specified `Value` with the specified `Key` in the Map only if it is **not already existing**
+- `putIfAbsent(K key, V value)` - Used for **adding items** (insert an entry) in the map if the specified **Key** is **not in the collection**.
 
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -152,7 +147,7 @@ airplanes.putIfAbsent("Boeing 737", 100);
 System.out.println(airplanes.get("Boeing 737"));
 ```
 
-- `get(K key)` - Used to **access a Value** in the Map using its Key and **return the Value** object
+- `get(K key)` - Used to **access a Value** in the Map using its Key. **Returns** the object **Value**.
 
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -170,7 +165,7 @@ airplanes.remove("Boeing 737");
 System.out.println(airplanes.get("Boeing 737"));
 ```
 
-- `clear()` - Used to remove all items (entries) in the map, reset the Map
+- `clear()` - Used to remove **all items (entries)** in the map
 
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -190,7 +185,7 @@ airplanes.put("Airbus A320", 150);
 System.out.println(airplanes.size());
 ```
 
-- `containsKey(K key)` - Used to check **if there is such Key object** in the Map and if there is return `true`, else return `false`
+- `containsKey(K key)` - Checks if the Map **contains the speficied Key object**. Returns a boolean value.
 
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -200,7 +195,7 @@ if (airplanes.containsKey("Airbus A320")) {
 }
 ```
 
-- `containsValue(V value)` - Used to check **if there is such Value object** in the Map and if there is return `true`, else return `false`
+- `containsValue(V value)` - Checks if the Map **contains the speficied Value object**. Returns a boolean value.
 
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -209,7 +204,7 @@ System.out.println(airplanes.containsValue(150));
 System.out.println(airplanes.containsValue(100));
 ```
 
-- `isEmpty()` - Used to return `true` if the Map is **empty** and `false` if it contains **at least one Key**
+- `isEmpty()` - Return `true` if the Map is **empty** and `false` if it contains **at least one pair**
 
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -267,6 +262,7 @@ for (Double price : fruitsPrice.values()) {
 ```
 
 - Iterating through the items of a map using the build-in method `entrySet()`
+
   - `entry.getKey()` - obtains the Keys
   - `entry.getValue()` - obtains the Values
 
@@ -435,7 +431,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that keeps a map with synonyms.
+Create a program that keeps a map with synonyms.
 
 The **key** of the map will be the **word**.
 
@@ -451,7 +447,7 @@ On the next **2 * n** lines you will be given a **word** and a **synonym** each 
 
 - \{**synonym**\}
 
-If you get the same word for the second time, just add the new synonym to the list.
+If you receive a word that is **already in the Map**, add the new synonym to the list.
 
 ### Output 
 
@@ -651,7 +647,10 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that extracts from a given sequence of words all elements that are present in it an **odd number of times (case-insensitive)**.
+
+You will be given a string, which contains words, separated by a **single space**.
+
+Create a program that finds all words in the string, that are **repeated an odd number of times** (case insensitive)
 
 ### Input / Constraints
 
