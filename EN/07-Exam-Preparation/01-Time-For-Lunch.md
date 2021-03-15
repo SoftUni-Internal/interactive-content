@@ -37,8 +37,8 @@ You receive 3 lines from the console:
 ## Output
 The output should consist of a single line in the following format:
 
-- If there is enough time to watch the episode: **"You have enough time to watch \{name of the series\} and left with \{time left\} minutes free time."**
-- If there is not enough time : **"You don't have enough time to watch \{name of the series\}, you need \{time needed\} more minutes."**
+- If there is enough time to watch the episode: **"You have enough time to watch** \{**name of the series**\} **and left with** \{**time left**\} **minutes free time."**
+- If there is not enough time: **"You don't have enough time to watch** \{**name of the series**\}**, you need** \{**time needed**\} **more minutes."**
 
 Round the **time** up to the nearest integer number.
 

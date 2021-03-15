@@ -34,8 +34,8 @@ Primiți 3 linii de pe consolă:
 
 ## Ieșire
 Imprimați pe consolă o linie:
-- Dacă timpul este suficient pentru a viziona episodul: **"You have enough time to watch \{name of the series\} and left with \{time left\} minutes free time."**
-- Dacă timpul nu este suficient: **"You don't have enough time to watch \{name of the series\}, you need \{time needed\} more minutes."**
+- Dacă timpul este suficient pentru a viziona episodul: **"You have enough time to watch** \{**name of the series**\} **and left with** \{**time left**\} **minutes free time."**
+- Dacă timpul nu este suficient: **"You don't have enough time to watch** \{**name of the series**\}**, you need** \{**time needed**\} **more minutes."**
 
 Rotunjiți timpul până la cel mai apropiat număr întreg.
 

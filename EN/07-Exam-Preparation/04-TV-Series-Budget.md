@@ -50,6 +50,7 @@ The output should consist of a single line in the following format:
 - If the budget is less than the price of the series: **"You need** \{**money needed**\}**$ more to buy the series!"**
 
 The result must be formatted to the second digit after the decimal point.
+
 ## Example
 | **Input** | **Output** | 
 | --- | --- |

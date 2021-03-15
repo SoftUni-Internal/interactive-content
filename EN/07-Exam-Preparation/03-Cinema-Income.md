@@ -34,10 +34,10 @@ If more people than the available seats count try to enter the hall, it is consi
 
 ## Input
 Read from the console:
-- Hall capacity - **integer** number in the range [50... 150]
+- Hall capacity - **integer** number in the range [50 ... 150]
 
 - On the following lines, until the command **"Movie time!"** is received:
- Number of people entering the cinema - **integer** in the range [1… 15]
+ Number of people entering the cinema - **integer** in the range [1 ... 15]
 
 ## Output
 The output should consist of a single line in the following format:
