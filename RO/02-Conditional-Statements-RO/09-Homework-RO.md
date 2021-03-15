@@ -237,7 +237,7 @@ Scrieți un program pentru a calcula aria diferitelor figuri:
   * Citește un număr pentru pătrat și cerc sau două numere pentru dreptunghi
     * numerele vor fi în virgulă mobilă
   * Imprimă zona calculată **formatată** la a doua cifră după punctul zecimal
-  * * Pentru figura necunoscută imprima **"Unknown figure"**
+  * Pentru figura necunoscută imprima **"Unknown figure"**
 
 ## Exemple
 
@@ -456,7 +456,7 @@ Scrieți un program pentru a calcula prețul băuturii într-o cafenea:
   * Citește o băutură: fie **"cafea"** fie **"ceai"**
   * Citește o adăugare: fie **"zahăr"** fie **"no"**
   * Imprimă prețul în formatul: "**Final price:** $\{**price**\}"
-    * Prețul trebuie să fie **formatat** la a doua cifră după punctul zecimal
+    * prețul trebuie să fie **formatat** la a doua cifră după punctul zecimal
   
 Prețuri:
 
@@ -558,8 +558,8 @@ Scrieți un program pentru a verifica dacă un triunghi este valid după dimensi
 
   * Citește 3 numere întregi: the **laturile unui triunghi**
   * Verifică dacă fiecare parte este mai mică decât suma celorlalte 2
-    * Imprima **"Valid Triangle"**, dacă condiția de mai sus este îndeplinită
-    * Imprima **"Invalid Triangle"** în caz contrar
+    * imprima **"Valid Triangle"**, dacă condiția de mai sus este îndeplinită
+    * imprima **"Invalid Triangle"** în caz contrar
 
     
 ## Exemplu
@@ -1226,7 +1226,7 @@ Fiecare animal mănâncă o anumită cantitate de mâncare pe zi.
 ## Intrare
 Citește **cinci** rânduri de pe consolă:
 - **numărul de zile** - un număr întreg în intervalul \[1 ... 5000 \]
-- ** mâncare rămasă în kilograme** - un număr întreg în intervalul \[0 ... 100000 \]
+- **mâncare rămasă în kilograme** - un număr întreg în intervalul \[0 ... 100000 \]
 - **mâncare pentru câine pe zi în kilograme** -  dublă în intervalul \[0.00…100.00\]
 - **mâncare pentru pisică pe zi în kilograme** - dublă în intervalul \[0.00…100.00\]
 - **mâncare pentru broască țestoasă pe zi în grame** - dublă în intervalul \[0.00…10000.00\]
@@ -1455,10 +1455,10 @@ Scrieți un program care să arate starea piscinei **în momentul în care lucr�
 ## Ieșire
 Imprima pe consolă **una dintre ambele posibilități**:
 - Cât de mult a fost umplută piscina și care dintre țevile cât a contribuit în procente
-  - "**The pool is** \**{percentage of volume**\}% **full.** **Pipe 1:** \{**transferred percentage**\}**%.** **Pipe 2:** \{**transferred percentage**\}**%.**"
+  - "**The pool is** \{**percentage of volume**\}% **full.** **Pipe 1:** \{**transferred percentage**\}**%.** **Pipe 2:** \{**transferred percentage**\}**%.**"
 - Dacă piscina este debordantă - câți litri sunt debordați pentru timpul dat
   - "**For** \{**amount of time**\} **hours the pool overflows with** \{**liters of unnecessary water transferred**\} **liters.**"
-- Toate numerele din ieșire trebuie formatate la a doua cifră după punctul zecimal.
+- Toate numerele din ieșire trebuie formatate la a doua cifră după punctul zecimal
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
