@@ -59,7 +59,7 @@ The commands could be:
 
 * All elements of the array will be integers.
 
-* The number of elements in the array will be in range [2...100]
+* The number of elements in the array will be in range \[2...100\]
 
 * Indices will always be inside the range of the array
 
