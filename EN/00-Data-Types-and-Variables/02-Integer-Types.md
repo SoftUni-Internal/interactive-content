@@ -5,7 +5,7 @@
 
 **Integer types** store whole numbers, positive or negative (such as 123 or -456), without decimals.
 
-**Byte**, **short**, **int**, and **long** are all integer data types. Choosing which one to use depends on the numeric value it will need to store.
+**Byte**, **short**, **int**, and **long** are all different integer data types. Choosing which one to use depends on the numeric value it will need to store.
 
 |Type| Default Value | Min Value | Max Value| Size |
 |-----|------|-----|------|-----|
@@ -18,6 +18,8 @@
 
 [slide hideTitle]
 # Example: Centuries
+
+We should choose different integer types according to their value.
 
 ```java live
 byte centuries = 20; 
@@ -32,25 +34,25 @@ System.out.printf("%d centuries = %d years = %d days = %d hours.",
 
 We can use different integer types depending on what we want to store in them. 
 
-- The *byte** data type can be used for storing whole numbers from -128 to 127
+- The *byte** data type can be used to store whole numbers from -128 to 127
 
-**Byte** can be used instead to save memory when you are certain that the value will be within -128 to 127:
+**Byte** is used to save memory when you are certain that its value will not exceed these limits: -128 to 127:
 
 ```java live
 byte myNum = 100;
 System.out.println(myNum);
 ```
 
-- The **short** data type can be used to store whole numbers from -32768 to 32767:
+- The **short** data type can be used to store whole numbers varying from -32768 to 32767:
 
 ```java live
 short myNum = 5000;
 System.out.println(myNum);
 ```
 
-- The **int** data type can store whole numbers from -2147483648 to 2147483647
+- The **int** data type can store whole numbers ranging from -2147483648 to 2147483647
 
-In general, the **int** data type is the preferred data type when we create variables with a numeric value.
+The **int** data type is the most commonly used data type when we create variables holding a numeric value.
 
 ```java live
 int myNum = 100000;
@@ -59,9 +61,9 @@ System.out.println(myNum);
 
 - The **long** data type can store whole numbers from -9223372036854775808  to 9223372036854775807
 
-This is used when an int is not large enough to store the value.
+It is used when an int is not large enough to store the value.
 
-Note that you should end the value with an "L":
+Note that you should end the value with an "L" when using this data type:
 
 ```java live
 long myNum = 15000000000L;
@@ -76,9 +78,9 @@ System.out.println(myNum);
 
 All integers have a range - a minimum and maximum value. 
 
-This means that integers can overflow, resulting in incorrect values. 
+This means that integers can overflow, producing incorrect values. 
 
-Take a look at the below example.
+Example:
 
 ```java
 byte counter = 0;
@@ -95,9 +97,9 @@ for (int i = 0; i < 130; i++) {
 //-127
 ```
 
-The counter variable starts from 0 and is incremented with each step of the for loop. 
+The `counter` starts from 0 and is incremented on each step of the for loop. 
 
-Eventually when it reaches the maximum value of a byte (127), it restarts again from its minimum value (-128). 
+Eventually when it reaches the maximum value of a byte (127), it assumes its minimum value (-128). 
 
 This is called **integer overflow** and it is precisely the reason why choosing your data type correctly is important. 
 
@@ -108,15 +110,15 @@ This is called **integer overflow** and it is precisely the reason why choosing 
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-16-integer-literals-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Integer literals are numbers, which do not have a floating point part. 
+Integer literals are numbers which do not have a floating point part. 
 
-**541** is a literal value by that definition.
+**541** is a literal value, for example.
 
 They can be represented in a few different ways, which are not as intuitive:
 
-- **hexadecimal integer literals** - values beginning with **0x** and **OX** - **0xFE**, **0xA8F1**, **0xFFFFFFFF**
+- **hexadecimal integer literals** - values using the hexdecimal numeral system; beginning with **0x** and **OX** - **0xFE**, **0xA8F1**, **0xFFFFFFFF**
 
-- **long integer literals** - values preceded by the letter **L** or **l** - **9876543L**, **0L**
+- **long integer literals** - numeric values followed by the letter **L** or **l** - **9876543L**, **0L**
 
 ```java live
 int hexadecimal = 0xA8F1; // 43249
@@ -147,10 +149,11 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-You will be given an integer. It will be used to store a given distance in meters.
+## Description.
 
-Create a program that converts meters to kilometers, formatted to the second decimal point.
+The program input will contain an integer representing an integer value in meters.
+
+Create a program that converts meters to kilometers - formatted to the second decimal point.
 
 ## Examples
 |**Input**|**Output**|
