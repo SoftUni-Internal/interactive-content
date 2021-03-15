@@ -1565,18 +1565,26 @@ The value of each element can include 0 and must be an Integer.
 - Print out total number of solutions
 
 ## Example
-| **Input** | **Output** | **Comments** | 
-| --- | --- | --- |
-| 25 | 23751 | Generate all combinations of 5 digits, the first is: |
-| | | 0\+0\+0\+0\+0=0, but because it is not equal to 25,|
-| | | continuing 0\+0\+0\+0\+1=1 - again, it\'s not 25, etc. |
-| | | We come to the first valid combination: |
-| | | 0\+0\+0\+0\+25=25, expanding the number of valid |
-| | | combinations of 1, the second valid combination is:| 
-| | | 0\+0\+0\+1\+24=25|
-| | | The third: 0\+0\+0\+2\+23=25  etc.|
-| | | After generating all possible combinations,|
-| | | the number of valid combinations is 23751.|
+| **Input** | **Output** |
+| --- | --- | 
+| 25 | 23751 | 
+
+
+[hints]
+[hint]
+Generate all combinations of 5 digits, the first is: 
+0\+0\+0\+0\+0=0, but because it is not equal to 25,
+continuing 0\+0\+0\+0\+1=1 - again, it\'s not 25, etc.
+We come to the first valid combination:
+0\+0\+0\+0\+25=25, expanding the number of valid
+combinations of 1, the second valid combination is:
+0\+0\+0\+1\+24=25
+The third: 0\+0\+0\+2\+23=25  etc.
+After generating all possible combinations,
+the number of valid combinations is 23751.
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
