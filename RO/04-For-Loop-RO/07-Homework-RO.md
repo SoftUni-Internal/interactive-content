@@ -138,13 +138,16 @@ Creați un program care găsește **cel mai mare** și **cel mai mic** număr di
 
 # Exemplu
 
-| **Intrare**                                      | **Ieșire**      |
+| **Intrare**| **Ieșire** |
 | ---| --- |
 | numberSequence(5, ['10', '304', '0', '0', '50']) | Max number: 304 |
 |                                                  | Min number: 0   |
-| **Intrare**    | **Ieșire**     |
-| ---| --- |
-| numberSequence(4, ['15', '155', '34', '71'])     | Max number: 155 | 
+
+
+
+| **Intrare** | **Ieșire**     |
+| --- | --- |
+| numberSequence(4, ['15', '155', '34', '71']) | Max number: 155 |
 |                                                  | Min number: 15  |
 
 [/task-description]
@@ -1018,7 +1021,7 @@ Creați un program care înmulțește un număr dat cu toate numerele din interv
 |             | 2 x 10 = 20 |
 
 
-| **Intrare**   | ***Ieșire**   |
+| **Intrare**   | **Ieșire**   |
 | ----------- | ----------- |
 | multiply(5) | 5 x 1 = 5   |
 |             | 5 x 2 = 10  |

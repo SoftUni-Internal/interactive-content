@@ -119,6 +119,22 @@ Create a program, which prints all letters in a given range:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+latinLetters('a', 'c')
+[/input]
+[output]
+a b c
+[/output]
+[/test]
+[test open]
+[input]
+latinLetters('e', 'h')
+[/input]
+[output]
+e f g h
+[/output]
+[/test]
 [test]
 [input]
 latinLetters('d', 'u')

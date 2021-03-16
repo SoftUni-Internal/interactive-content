@@ -138,14 +138,18 @@ Create a program, which finds the **biggest** and the **smallest** number from a
 
 # Example
 
-| **Input**  | **Output**      |
+
+| **Input**| **Output** |
 | ---| --- |
 | numberSequence(5, ['10', '304', '0', '0', '50']) | Max number: 304 |
 |                                                  | Min number: 0   |
-| **Input**  | **Output**      |
-| ---| --- |
-| numberSequence(4, ['15', '155', '34', '71'])     | Max number: 155 | 
-|                                                  | Min number: 15  |
+
+
+
+| **Input**| **Output** |
+| --- | --- |
+| numberSequence(4, ['15', '155', '34', '71']) | Max number: 155 |
+|                                                  | Min number: 15  |                                                  | Min number: 15  |
 
 [/task-description]
 [tests]
