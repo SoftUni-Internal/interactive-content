@@ -18,17 +18,17 @@ function subtraction(){
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/01-Subtraction.zip) **for this task.**
 
-An HTML page holds **two text fields** with ids "**firstNumber**" and "**secondNumber**". 
+An HTML page holds **two text fields** with **id**s "**firstNumber**" and "**secondNumber**". 
 
-Write a function to **subtract** the values from these text fields and display the result in the `div` named "**result**".
+Write a function to **subtract** the values from these text fields and display the result in the `<div>` named "**result**".
 
 ## HTML and JavaScript Code
 
-Implement the above to provide the following functionality:
+Implement the description above to provide the following functionality:
 
-- Your function should take the values of "**firstNumber**" and "**secondNumber**", **convert** them to numbers, **subtract** the second number from the first one and then append the result to the `<div>` with `d="result"`.
+- Your function should take the values of "**firstNumber**" and "**secondNumber**", **convert** them to numbers, **subtract** the second number from the first one and then append the result to the `<div>` with `id="result"`
 
-- Your function should be able to work with **any 2 numbers** in the inputs, not only the ones given in the example.
+- Your function should be able to work with **any 2 numbers** in the inputs, not only the ones given in the example
 
 ## Example
 
@@ -36,12 +36,14 @@ Implement the above to provide the following functionality:
 
 ## Hints
 
-We see that the **textboxes** and the **div** have **id** attributes on them.
+We see that the **textboxes** and the **div**s have **id** attributes on them.
 
 ```js
 <div id="wrapper">
-   <input type="text" id="firstNumber" value="13.33" disabled>
-   <input type="text" id="secondNumber" value="22.18" disabled>
+   <input type="text" id="firstNumber" 
+        value="13.33" disabled>
+   <input type="text" id="secondNumber" 
+        value="22.18" disabled>
    <div id="result"></div>
 </div>
 
@@ -56,8 +58,11 @@ We get the values of the two **textboxes**, the value of a textbox, as one would
 In order to get a **number**, we need to use a function to **parse them**.
 
 ```js
-let firstNumber = document.getElementById('firstNumber').value;
-let secondNumber = document.getElementById('secondNumber').value;
+let firstNumber = document
+    .getElementById('firstNumber').value;
+
+let secondNumber = document
+    .getElementById('secondNumber').value;
 ```
 
 All that is left now is to append the result to the **div**.
@@ -66,17 +71,22 @@ We use the same function to get the **result** element by id and change its **te
 
 ```js
 function subtract() {
-    let firstNumber = Number(document.getElementById('firstNumber').value);
-    let secondNumber = Number(document.getElementById('secondNumber').value);
+    let firstNumber = Number(document
+        .getElementById('firstNumber').value);
+    let secondNumber = Number(document
+        .getElementById('secondNumber').value);
 
-    document.getElementById('result').textcontent = firstNumber - secondNumber;
+    document.getElementById('result')
+        .textcontent = firstNumber - secondNumber;
 }
 
 ```
 
 Our code is ready now. 
 
-Submit only the `subtract()` function in judge.
+## Submit
+
+Submit only the `subtract()` function.
 
 
 [/task-description]
@@ -161,9 +171,9 @@ function fillDropdown(){
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/02-Fill-Dropdown.zip) **for this task.**
 
-Your task is to take values from **input** fields with ids "**newItemText**" and "**newItemValue**".
+Your task is to take values from **input** fields with **id**s "**newItemText**" and "**newItemValue**".
 
-Then you should create and append an `<option>` to the `<select>` with id "**menu**".
+Then you should **create** and **append** an `<option>` to the `<select>` with id "**menu**".
 
 ## Example
 
@@ -173,9 +183,9 @@ Then you should create and append an `<option>` to the `<select>` with id "**men
 
 - Your function should take the values of **newItemText** and **newItemValue**
 
-After that you should create a new **option** element and set its **textContent** and its **value** to the newly taken ones.
+After that, you should create a new **option** element and set its **textContent** and its **value** to the newly retrieved ones.
 
-- Once you have done all of that, you should **append** the newly created **option** as a **child** to the **select** item with id "**menu**"
+- Once you have done all of that, you should **append** the newly created `<option>` as a **child** to the `<select>` item with id "**menu**"
 
 - Finally, you should **clear** the value of the two **input** fields
 
@@ -310,13 +320,15 @@ function accordion(){
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/03-Accordion.zip) **for this task.**
 
-An **html** file is given and your task is to show **more/less** information by clicking a `[ADD]` button (it is not an actual button, but a **span** that has an **onclick** event attached to it).
+You will receive an **HTML** file.
 
-When `[More]` button is clicked, it **reveals** the content of a **hidden** div and **changes** the text of the button to `[Less]`.
+Your task is to show **more/less** information by clicking on an `[ADD]` button (it is not an actual button, but a **span** that has an `onclick` event attached to it).
 
-When the same link is clicked **again** (now reading **Less**), **hide** the div and **change** the text of the link to **More**.
+When the `[More]` button is clicked, it **reveals** the content of a **hidden** `div`, and the text of the button is **changed** to `[Less]`.
 
-Link action should be **toggleable** (you should be able to click the button infinite amount of times).
+When the same link is clicked **again** (now reading **Less**), **hide** the `div` and **change** the text of the link to **More**.
+
+The link action should be **toggleable** (you should be able to **click** the button an **infinite** amount of times).
 
 ## Example
 
@@ -326,9 +338,9 @@ Link action should be **toggleable** (you should be able to click the button inf
 
 - To **change** the text content of a button, you could use **getElementsByClassName**
 
-However, that returns a **collection** and we need only **one** element from it, so the correct way is to use `getElementsByClassName("button")[0]` as it will return the needed span element
+However, that returns a **collection** and we need only **one** element from it, so the correct way is to use `getElementsByClassName("button")[0]` as it will return the needed `span` element.
 
-- After that we should change the **display style** of the div with an id "**extra**"
+- After that, we should change the **display style** of the `div` with an id "**extra**"
 
 If the display style is "**none**", we should **change** it to "**block**" and the **opposite**
 
@@ -910,11 +922,11 @@ Write a **function** to create the functionality of **a chat room.**
 
 [image assetsSrc="JS-Advanced-DOM-Homework-11.jpg" /]
 
-**Note: Do not forget** to a**dd event listener** to the **send button!**
+**Note:** Do not forget to **add an event listener** to the **send button!**
 
-**The new div element with class message my-message** should contain the current message that is about to be send.
+The **new** `div` element with class **"message my-message"** should contain the **current message** that is about to be send.
 
-The **current div** should be appended to the div with an `id="chat_messages"`.
+The **current** `div` should be appended to the `div` with an `id="chat_messages"`.
 
 **The input should be cleared on each click of the send button.**
 
@@ -1318,25 +1330,25 @@ function numpadCalculator(){
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/06-Numpad-Calculator.zip) **for this task.**
 
-Write a function that implements a calculator that has the following functionalities:
+Write a **function** that implements a **calculator** with the following functionalities.
 
 [image assetsSrc="JS-Advanced-DOM-Homework-14.png" /]
 
-When one of **the buttons is clicked**, its value should be shown in the "**Expression**" **field (#expressionOutput).**
+When one of **the buttons is clicked**, its value should be shown in the "**Expression**" field (`#expressionOutput`).
 
-For instance, if we click on the button with value **9**, the expected result should be:
+For instance, if we click on the button with value **9**, the expected **result** should be:
 
 [image assetsSrc="JS-Advanced-DOM-Homework-15.png" /]
 
-If the **current Expression** field (**#expresisonOutput**) contains the whole math expression (**left operand**, **operator** and **right operand: Example: 9 + 2)**, the expected result should be:
+If the **current Expression** field (`#expresisonOutput`) contains the whole mathematical expression (**left operand**, **operator** and **right operand**: "**9 + 2**", for example), the expected **result** should be:
 
 [image assetsSrc="JS-Advanced-DOM-Homework-16.png" /]
 
-When the **equal sign** `=` **is pressed, the result of that expression** should appear in the **Result** field `#resultOutput`
+When the **equal sign** `=` **is pressed**, the **result of that expression** should appear in the **Result** (`#resultOutput`) field.
 
 [image assetsSrc="JS-Advanced-DOM-Homework-17.png" /]
 
-Otherwise, if we create an invalid expression such as `"99 +" (without second/right operand)` and we hit the equal sign `=`, the expected result should be:
+Otherwise, if we create an **invalid expression**, such as `"99 +" (without second/right operand)`, and we click on the equal sign `=`, the expected result should be:
 
 [image assetsSrc="JS-Advanced-DOM-Homework-18.png" /]
 
@@ -1836,17 +1848,16 @@ Write a function that **converts** a **decimal number** to **binary** and **hexa
 
 The given number will always be in **decimal format.**
 
-The "**From**" select menu will only have a
-**Decimal** option, but the "**To**" select menu will have **two options:** **binary** and **hexadeicmal**.
+The "**From**" select menu will only have a **Decimal** option, but the "**To**" select menu will have **two options:** **binary** and **hexadeicmal**.
 
 This means that our program should have the functionality to **convert decimal** to **binary** and
 **decimal** to **hexadecimal**.
 
-Note that "**To**" **select menu** by default is empty.
+Note that the "**To**" **select menu** is empty by default.
 
-You have to insert the two options (binary and hexadecimal) inside before continue.
+You have to insert the two options (**binary** and **hexadecimal**) inside before continuing.
 
-Also they should have values (binary and hexadecimal).
+Also, they should have **values** (binary and hexadecimal).
 
 - When the `[Convert it]` button is **clicked**, the expected result should appear in the `[Result]` input field
 

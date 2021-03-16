@@ -167,7 +167,7 @@ After that, we created the new **MyDog** object with `Object.create()`, using th
 
 We set the **name** property of **MyDog** and we add a new property called **breed**, which is not present in the **Dog** object.
 
-The result will be printed on the console.
+The result will be printed to the console.
 
 [/slide]
 
@@ -296,7 +296,7 @@ Then, we attach a property **name** and a method **concatenate** to the **MakeSe
 
 The **concatenate** method concatenates the **greet**, the **name** and the **punctuation** properties.
 
-After that, we instantiate **MakeSentence** and print the **concatenate** method result on the console.
+After that, we instantiate **MakeSentence** and print the **concatenate** method result to the console.
 
 [/slide]
 

@@ -160,7 +160,7 @@ function articlesList(){
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/01-Article_list_problem.zip) **for this task.**
 
-In this problem, you should create JS functionality which creates articles and appends them into an article section.
+In this problem, you should create a JavaScript function that creates articles and appends them into an `article` section.
 
 The programs in this language are called **scripts**. 
 
@@ -170,7 +170,7 @@ Scripts are provided and executed as a **plain text**.
 
 They do not need special preparation or compilation to run.
 
-In this aspect, JavaScript is very **different** from many other languages, which require compilation and additional steps before it such as Java.
+In this aspect, JavaScript is very **different** from many other languages, which require compilation and additional steps before it, such as Java.
 
 [image assetsSrc="JS-Advanced-DOM-Lab-1.jpg" /]
 
@@ -182,11 +182,11 @@ In this aspect, JavaScript is very **different** from many other languages, whic
 
 - Both new created elements (**h3** and **p**) should be appended to a new **article element** `<article\>`
 
-- **The current article element** should be **appended** to the section which has id articles (`#articles`)
+- **The current article element** should be **appended** to the section which has an **id** of "**articles**" (`#articles`)
 
-- You should create new **article element** only if **title** and **content are not empty**
+- You should create a new **article element** only if the **title** and **content are not empty**
 
-- After the button is pressed you must **clear** the **title value** and **text value**
+- After the button is pressed, you must **clear** the **title value** and **text value**
 
 ```js
 <div id="createArticle">
@@ -216,12 +216,14 @@ In this aspect, JavaScript is very **different** from many other languages, whic
    <article>
       <h3>JavaScript</h3>
       <p>
-         "JavaScript is a programming language that adds
-         interactivity to your website (for example games, responses
-         when buttons are pressed or data is entered in forms,
-         dynamic styling, animation). This article helps you get
-         started with this exciting language and gives you an idea
-         of what is possible."
+         "JavaScript is a programming language
+         that adds interactivity to your website
+         (for example games, responses when buttons
+         are pressed or data is entered in forms,
+         dynamic styling, animation). This article
+         helps you get started with this exciting
+         language and gives you an idea of
+         what is possible."
       </p>
    </article>
 </section>
@@ -639,7 +641,7 @@ function growingWord(){
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/01-Growing_word_problem.zip) **for this task.**
 
-In this problem, you should **create a JS functionality** which **changes the size and the color** of a given **paragraph** on **every click**.
+In this problem, you should **create a JavaScript functionality** that **changes the size and the color** of a given **paragraph** on **every click**.
 
 [image assetsSrc="JS-Advanced-DOM-Lab-6.jpg" /]
 
@@ -651,7 +653,9 @@ In this problem, you should **create a JS functionality** which **changes the si
       <div id="redDiv">Red</div>
    </div>
    <div>
-      <button type="button" onclick="growingWord()">CHANGE</button>
+      <button type="button" onclick="growingWord()">
+        CHANGE
+      </button>
    </div>
    <p>Growing Word</p>
 </div>
@@ -660,11 +664,13 @@ In this problem, you should **create a JS functionality** which **changes the si
 
 Every time when we **click** on the `[CHANGE]` button, **the color** and **the size** of **the paragraph** which contains "**Growing Word**" **should change**!
 
-**After every click**, the current paragraph **font size** should be **changed** to **the current font size multiplied by 2**. Also, **the color** of that paragraph should change, depending on the **previous color**.
+**After every click**, the current paragraph **font size** should be **changed** to **the current font size multiplied by 2**. 
 
-## Example:
+Also, **the color** of that paragraph should change, depending on the **previous color**.
 
-- If we click **once**, the color should be changed to **blue** and the font size should be **2** (First initial size)
+## Example
+
+- If we click **once**, the color should be changed to **blue** and the font size should be **2** (the first, initial size)
 
 - If we click **twice**, the color should be changed to **green** and the font size should be **4** (2 \* 2)
 
@@ -672,15 +678,17 @@ Every time when we **click** on the `[CHANGE]` button, **the color** and **the s
 
 - If our paragraph already has a **red color**, on the next click, the color should turn to **blue**
 
-Just loop throw these three colors (blue, green, red) again and again and again... while you are clicking on that button.
+Just **loop through** these three colors (blue, green, red) again and again and again... while you are **clicking** on that button.
 
 [image assetsSrc="JS-Advanced-DOM-Lab-8.jpg" /]
 
 ```js
 <div id="exercise">
    <div id="colors">...</div>
-   <div>... </div>
-   <p style="color: blue; font-size: 2px;"> Growing Word</p>
+   <div>...</div>
+   <p style="color: blue; font-size: 2px;"> 
+        Growing Word
+   </p>
 </div>
 ```
 
@@ -689,8 +697,10 @@ Just loop throw these three colors (blue, green, red) again and again and again.
 ```js
 <div id="exercise">
    <div id="colors">...</div>
-   <div>... </div>
-   <p style="color: green; font-size: 4px;">Growing Word</p>
+   <div>...</div>
+   <p style="color: green; font-size: 4px;">
+        Growing Word
+   </p>
 </div>
 
 ```
@@ -701,7 +711,9 @@ Just loop throw these three colors (blue, green, red) again and again and again.
 <div id="exercise">
    <div id="colors">... </div>
    <div>...</div>
-   <p style="color: red; font-size: 8px;"> Growing Word</p>
+   <p style="color: red; font-size: 8px;">
+        Growing Word
+   </p>
 </div>
 ```
 

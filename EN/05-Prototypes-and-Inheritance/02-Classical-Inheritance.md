@@ -76,7 +76,7 @@ Also, add another parameter to the **Teacher** class, called **subject**.
 
 In the first `console.log()`, we output the **Person** with its parameters: **name** and **email**.
 
-In the second, we print on the console the **Teacher** object with its parameters.
+In the second, we print to the console the **Teacher** object with its parameters.
 
 [/slide]
 
