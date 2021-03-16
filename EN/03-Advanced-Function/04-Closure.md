@@ -85,7 +85,7 @@ function commandProcessor() {
 [task-description]
 # Description
 
-Write a function that keeps a string **inside its context** and can execute different **commands** that modify or print the string on the console.
+Write a function that keeps a string **inside its context** and can execute different **commands** that modify or print the string to the console.
 
 - `append(string)` - append the given **string** at the end of the internal string
 

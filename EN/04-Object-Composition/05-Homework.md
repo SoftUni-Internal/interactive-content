@@ -589,13 +589,13 @@ Every hero has a state.
 
 Fighters have "**name**", `health = 100` and `stamina = 100` and every fighter can fight.  
 
-When the fighter fights its stamina decreases by 1 and the following message is printed on the console:
+When the fighter fights its stamina decreases by 1 and the following message is printed to the console:
 
 "\{**fighter's name**\} **slashes at the foe!**"
 
 Mages also have "**name**", `health = 100` and `mana = 100`. 
 
-Every mage can cast spells. When a spell is cast the mage's mana decreases by 1 and the following message is printed on the console:
+Every mage can cast spells. When a spell is cast the mage's mana decreases by 1 and the following message is printed to the console:
 
 "\{**mage's name**\} **cast** \{**spell**\}"
 
@@ -677,7 +677,7 @@ function constructionCrew(input){
 [task-description]
 # Description
 
-Write a program that receives a worker object as a parameter and modifies its properties. 
+Create a program that receives a worker object as a parameter and modifies its properties. 
 
 Workers have the following structure:
 
@@ -844,7 +844,7 @@ function carFactory(input){
 [task-description]
 # Description
 
-Write a program that assembles a car by given requirements out of existing components. 
+Create a program that assembles a car by given requirements out of existing components. 
 
 The client will place an order in the form of an object describing the car. 
 

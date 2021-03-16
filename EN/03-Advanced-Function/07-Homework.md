@@ -12,7 +12,7 @@ function add() {
 [task-description]
 ## Description
 
-Write a program that keeps a number **inside its context** and **returns** a new function that **adds** a **given** number to the previous one.
+Create a program that keeps a number **inside its context** and **returns** a new function that **adds** a **given** number to the previous one.
 
 ## Input
 
@@ -240,7 +240,7 @@ function adapter(input, code) {
 [task-description]
 ## Description
 
-Write a program that filters the employees of your company. 
+Create a program that filters the employees of your company. 
 
 You should print the result in a specific format. 
 
@@ -696,7 +696,7 @@ function personalBmi(name, age, weight, heightCm) {
 [task-description]
 ## Description
 
-A wellness clinic has contacted you with an offer - they want you to write a program that creates **patient charts** and performs some preliminary evaluation of their condition. 
+A wellness clinic has contacted you with an offer - they want you to create a program that creates **patient charts** and performs some preliminary evaluation of their condition. 
 
 The data comes in the form of **several arguments**, describing a person - their **name**, **age**, **weight** in kilograms and **height** in centimeters. 
 
