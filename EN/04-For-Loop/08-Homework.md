@@ -1005,7 +1005,8 @@ All bills should be formatted to the 2nd digit after the decimal point.
 | 93.53 | Average: 273.75 $ |
 | 63.22 | |
 
-## Comments
+[hints]
+[hint]
 For 5 months:
 - Electricity -> 68.63 \+ 89.25 \+ 132.53 \+ 93.53 \+ 63.22 = 447.16$
 - Water -> 5 months \* 20$ = 100$
@@ -1016,8 +1017,12 @@ For 5 months:
     - (132.53+20+15) + 20% = 201.036
     - (93.53+20+15) + 20% = 154.236
     - (63.22+20+15) + 20% = 117.864
-- Total = 746.592$
-- Average bills per month = (447.16+100+75+746.592)/5 = 273.7504$
+[/hint]
+[hint]
+Total = 746.592$
+Average bills per month = (447.16+100+75+746.592)/5 = 273.7504$
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
