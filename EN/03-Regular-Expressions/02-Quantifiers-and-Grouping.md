@@ -6,28 +6,28 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-9-10-Quantifiers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Quantifiers** specify **how many** instances of a **character**, **group**, or **character class** must be **present** in the input for a match to be found.
+**Quantifiers** allow users to specify the number of occurrences to match against. 
 
 | **Notation** | **Meaning** |
 | --- | --- |
 |`*`|**Zero** or **more** occurrences|
 |`+`|**One** or **more** occurrences|
-|`?`|**Previous** element zero or one occurrences|
+|`?`|Occurs **zero** or **one** time, shorter for {0,1}|
 |`{}`|**Exactly** the specified number of occurrences|
 
-- `*` - Matches the previous element zero or more times
+- `*` - Matches the element before it zero or more times
 
 [image assetsSrc="regex-example(13).png" /]
 
-- `+` - Matches the previous element one or more times
+- `+` - Matches the element before it one or more times
 
 [image assetsSrc="regex-example(14).png" /]
 
-- `?` - Matches the previous element zero or one time
+- `?` - Matches the element before it zero or one time
 
 [image assetsSrc="regex-example(15).png" /]
 
-- `{3}` - Matches the previous element exactly 3 times
+- `{3}` - Matches the element before it exactly 3 times
 
 [image assetsSrc="regex-example(16).png" /]
 
