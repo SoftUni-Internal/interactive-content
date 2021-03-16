@@ -4,6 +4,8 @@
 
 # Serializing and Deserializing Objects
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-44-Serializations-Of-Custom-Objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Serialization in Java is the process of representing an object as a sequence of bytes. 
 
 This sequence contains information about the object's type and the type of data stored in it.
@@ -89,7 +91,7 @@ class Cube implements Serializable {
 
 # Problem with Solution: Serialize Custom Object
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-45-Problem-Serialize-custom-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-45-Serialize-custom-object-Problem-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Create a class called "**Cube**". It should have **properties** for **color**, **width**, **height**, and **depth**.
 Create an instance of the class with the following values:
