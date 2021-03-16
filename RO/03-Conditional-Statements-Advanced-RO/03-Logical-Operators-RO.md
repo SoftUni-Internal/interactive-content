@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Condiții mai complexe
+# Condiții mai Complexe
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-16-18-logical-operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -64,7 +64,7 @@ După cum am văzut mai sus, logica **"ȘI"** se schimba in `adevarat`, **numai*
 
 Respectiv, atunci când avem o **secvență** de argumente, operatorul logic **"ȘI"**  **verifică** fie până când unul dintre argumente s-a **îndeplinit**, fie până când **îndeplinește** un argument cu valoare `false`.
 
-# Exemplu
+## Exemplu
 ```java live
 boolean a = true;
 boolean b = true;
@@ -81,7 +81,7 @@ Programul va rula în modul **următor**:
 - După ce programul acceptă că argumentul `c` are o valoare `falsă`, acesta calculează expresia **înainte de** `c`, **independent** de ce este valoarea lui `d`
 - De aceea evaluarea lui `d` este **sarită**și întreaga expresie este calculată ca `falsă`
 
-# Exemplu: Punct într-un dreptunghi
+## Exemplu: Punct într-un dreptunghi
 Verifică dacă `punctul {x, y}` este plasat în interiorul dreptunghiului `{x1, y1}` - `{x2, y2}`.
 
 [image assetsSrc="03.Point-in-rectangle-01.png" /]
@@ -91,7 +91,7 @@ Datele de intrare sunt citite de pe consolă și constă din 6 linii:
 - Numerele zecimale `x1`, `y1`, `x2`, `y2`, `x` și `y` (deoarece se garantează că `x1 < x2` și `y1 < y2`)
 
 ## Eșantion de intrare și ieșire
-| Intrare |Ieșire|
+| **Intrare** |**Ieșire**|
 |---|---|
 |2|Inside|
 |-3||
@@ -125,7 +125,7 @@ if (x >= x1 && x <= x2 && y >= y1 && y <= y2) {
 [/slide]
 
 [slide hideTitle]
-#  Problemă cu soluție: Bonus Points
+#  Problemă cu Soluție: Bonus Points
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-19-logical-and-problem-and-solution-bonus-points-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -156,7 +156,7 @@ Scrieți un program care aplică bonus punctelor date
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 4
 [/input]
@@ -189,7 +189,7 @@ Scrieți un program care aplică bonus punctelor date
 
 
 [slide hideTitle]
-# Operatorul logic "SAU"
+# Operatorul Logic "SAU"
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-21-logical-or-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -208,7 +208,7 @@ Putem ghici cu ușurință că **obținem** o valoare `true` de fiecare dată c�
 
 La școală, profesorul spune: "John sau Peter ar trebui să curățe tabla". Pentru a îndeplini această condiție (pentru a curăța tabla), este posibil fie ca John s-o curățe, fie doar ca Petru s-o curățe, sau ambii s-o facă.
 
-# Cum funcționează operatorul '||'?
+## Cum funcționează operatorul '||'?
 Am învățat deja ce reprezintă logica **SAU**. Dar cum se realizează de fapt?
 
 La fel ca și  în cazul operatorului logic **"ȘI"** , programul **verifică** de la stânga la dreapta **argumentele** care sunt date.
@@ -308,13 +308,13 @@ unknown
 
 
 [slide hideTitle]
-# Operatorul logic "NU"
+# Operatorul Logic "NU"
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-23-logical-not-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Negarea logică (operator **!**) înseamnă că o condiție dată nu este **îndeplinită**.
 
-| a | ! a |
+| **a** | **!a** |
 | --- | --- |
 | adevărat | fals |
 
@@ -335,8 +335,8 @@ if (!inRange) {
 ```
 [/slide]
 
-[slide]
-# Operatorul de paranteză
+[slide hideTitle]
+# Operatorul de Paranteză
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-23-logical-not-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

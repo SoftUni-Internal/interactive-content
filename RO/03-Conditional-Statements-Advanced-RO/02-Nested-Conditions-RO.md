@@ -1,5 +1,5 @@
 [slide hideTitle]     
-# Condiții imbricate
+# Condiții Imbricate
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-9-10-nested-conditional-statements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -25,7 +25,7 @@ if (condition1) {
 - "Ms." - o femeie (sex "f") - 16 ani sau mai mult
 - "Miss" - o fată (sex "f") sub 16 ani
 
-# Soluție: Titluri de persoană
+## Soluție: Titluri de persoană
 Ar trebui să observăm că **rezultatul** programului **depinde de câteva lucruri**.
 
 **Mai întâi**, trebuie să verificăm care este **genul** introdus și **apoi** să verificăm **vârsta**.
@@ -63,7 +63,7 @@ Imbricarea a **mai mult de trei instrucțiuni condiționale** în interiorul une
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Marketplace
+# Problemă cu Soluție: Marketplace
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-12-problem-and-solution-marketplace-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -83,8 +83,8 @@ public class Main
 [task-description]
 # Descriere
 Scrieți un program care:
-   * Citește un **produs** și **o zi** de pe consolă
-   * Tipărește **prețul**, formatat la a doua cifră după virgula zecimală pe baza tabelului de prețuri de mai jos
+* Citește un **produs** și **o zi** de pe consolă
+* Tipărește **prețul**, formatat la a doua cifră după virgula zecimală pe baza tabelului de prețuri de mai jos
 
 |**Product**|**Weekday**|**Weekend**| 
 |---|---|---|
@@ -101,7 +101,7 @@ Scrieți un program care:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 Banana
 Weekday
@@ -128,7 +128,7 @@ Weekend
 
 
 [slide hideTitle]
-#  Problemă cu soluție: Biggest Number of Three
+#  Problemă cu Soluție: Biggest Number of Three
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-14-problem-and-solution-greatest-number-of-three-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

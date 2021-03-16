@@ -1,7 +1,7 @@
 # Instrucțiunea Switch-case
 
 [slide hideTitle]
-# Instrucțiunea de comutare a clauzelor switch-case
+# Instrucțiunea de Comutare a Clauzelor "switch-case"
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-24-25-switch-case-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -35,7 +35,7 @@ switch (selector) {
 }
 ```
 
-## Cazul implicit
+## Cazul Implicit
 Cazul implicit specifică secțiunea `switch` de executat **dacă expresia de potrivire nu se potrivește cu nici o altă etichetă de caz**.
 
 Dacă un caz implicit nu este prezent și expresia de potrivire nu se potrivește cu nici o altă etichetă de caz, fluxul de program **cade** prin instrucțiunea de comutare.
@@ -82,7 +82,7 @@ switch (choice) {
 [/slide]
 
 [slide hideTitle]
-# Etichete multiple
+# Etichete Multiple
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-27-29-multiple-labels-in-switch-case-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -106,7 +106,7 @@ switch (selector) {
         break;
 }
 ```
-## Exemplu: Tipul de animal
+## Exemplu: Tipul de Animal
 Scrieți un program care tipărește tipul animalului în funcție de numele acestuia:
 -  Dog -> **mammal**
 -  Crocodile, tortoise, snake -> **reptile**

@@ -173,7 +173,7 @@ public class Main {
 [/code-editor]
 [task-description]
 # Descriere
-Scrieți un program pentru a verifica  dacă o literă este vocală sau consoană:
+Scrieți un program pentru a verifica dacă o literă este vocală sau consoană:
 
 * Citiți o **literă** din alfabetul englez
 * Imprimați **"Vowel"** sau **"Consonant"**
@@ -187,11 +187,12 @@ Scrieți un program pentru a verifica  dacă o literă este vocală sau consoan�
 
 [hints]
 [hint]
-You can use an "if" statement and check if the letter is a vowel. 
 
-If it is print the correct output. 
+Puteți utiliza o declarație "if" și puteți verifica dacă litera este o vocală.
 
-However, if it isn't, enter the "else" statement and print the appropriate output.
+Dacă este imprimat rezultatul corect.
+
+Cu toate acestea, dacă nu este, introduceți instrucțiunea "else" și imprimați rezultatul corespunzător.
 [/hint]
 [/hints]
 
@@ -475,6 +476,16 @@ Hotel
 [/input]
 [output]
 180.00
+[/output]
+[/test]
+[test open]
+[input]
+Summer
+Camping
+3
+[/input]
+[output]
+90.00
 [/output]
 [/test]
 [test]
@@ -816,7 +827,7 @@ Scrieți un program pentru a aplica un operator pentru două numere date:
 
 * Citiți **două numere întregi** și **operatorul matematic** de pe consolă
 * Operatorul aritmetic ar putea fi: "+", "-", "/", "%" și "*"
-* Rezultatul trebuie să fie în următorul **format**: "\{N1\} \{operator\} \{N2\} = \{result\}"
+* Rezultatul trebuie să fie în următorul **format**: "\{**N1**\} \{**operator**\} \{**N2**\} = \{**result**\}"
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -902,7 +913,7 @@ public class Main {
 Scrieți un program pentru a simula retragerea de bani din bancomat:
 
 Citiți: **balance**, **withdraw** și **limit**
-* Imprimați **"The withdraw was successful."**  Dacă soldul este suficient
+* Imprimați **"The withdraw was successful."** Dacă soldul este suficient
 * Imprimați **"The daily limit was exceeded."** Dacă limita este depășită
 * Imprimați **"Insufficient availability."** dacă soldul nu este sufficient
 
@@ -1031,6 +1042,18 @@ Scrieți un program pentru a găsi cel mai mare dintre 5 numere
 [/input]
 [output]
 -1
+[/output]
+[/test]
+[test open]
+[input]
+3
+4
+77
+12
+33
+[/input]
+[output]
+77
 [/output]
 [/test]
 [test]
@@ -1319,10 +1342,10 @@ Intrarea este formată din 2 linii:
 - Dacă combustibilul este altul decât tipărirea specificată "**Invalid fuel!**"
 - În caz contrar, dacă combustibilul din rezervor este mai mare sau egal cu 25 litri de imprimare:
      - "**You have enough** \{**type of fuel**\}."
-     - Tipul de combustibil trebuie imprimat cu litere mici
+     - tipul de combustibil trebuie imprimat cu litere mici
 - Altfel tipăriți:
      - "**Fill your tank with** \{**type of fuel**\}!"
-     - Tipul de combustibil trebuie imprimat cu litere mici
+     - tipul de combustibil trebuie imprimat cu litere mici
 
 ## Exemplu
 
@@ -1441,7 +1464,7 @@ O companie plătește angajaților săi următoarele comisioane în funcție de 
 | \[0-500\] | 5% | 4.5% | 5.5% |
 | \[501-1000\] | 7% | 7.5% | 8% | 
 | \[1001-10000\] | 8% | 10% | 12% |
-| > 10000| 12% | 13% | 14.5% |
+| \> 10000| 12% | 13% | 14.5% |
 
 Scrieți un program de consolă care să citească ca intrare **numele unui oraș** și **suma vânzărilor** și să calculeze valoarea **comisionului comercial**.
 
@@ -1466,6 +1489,7 @@ Citiți de pe consolă două linii:
 | --- | --- | 
 | Moscow | error |
 | -50 | |
+
 [/task-description]
 [tests]
 [test open]
@@ -2133,7 +2157,7 @@ Tony și prietenii săi au decis să închirieze o barcă - chiria depinde de **
 
 **Prețul** pe baza **numărului** de pescari utilizează **reducere:**
 - Dacă grupul este **până la 6 persoane (inclusiv) - 10% reducere**
-- Dacă membrii grupului se află în intervalul \[7 .... 11\] -  **15% reducere**
+- Dacă membrii grupului se află în intervalul \[7 .... 11\] - **15% reducere**
 - Dacă grupul are **12 sau mai multe persoane - 25% reducere**
 
 Pescarii folosesc încă o reducere de **5% dacă sunt un număr par**, cu excepția cazului în care **NU** este toamna - atunci **NU** au reducere suplimentară.
@@ -2148,8 +2172,8 @@ Intrarea este alcătuită exact din **3 linii**:
 
 ## Ieșire
 Imprimați pe consolă o linie **unică**:
-- Dacă bugetul **ESTE** suficient: "Yes! You have \{money left\} dollars left."
-- Dacă bugetul **NU este** suficient: "Not enough money! You need \{money needed\} dollars."
+- Dacă bugetul **ESTE** suficient: "**Yes! You have** \{**money left**\} **dollars left.**"
+- Dacă bugetul **NU este** suficient: "**Not enough money! You need** \{**money needed**\} **dollars.**"
 
 **Prețurile trebuie formatate cu a doua zecimală.**
 
@@ -2372,7 +2396,7 @@ Yes! You have 1750.00 dollars left.
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Flowers
+# Problemă cu Soluție: Flowers
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-42-problem-flowers-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

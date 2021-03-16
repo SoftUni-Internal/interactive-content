@@ -21,7 +21,7 @@ if (condition1) {
 
 - Operatorii logici  
 
-  *  operatorii && , || , ! 
+  *  operatorii `&&` , `||` , `!` 
 
   
 ``` java
@@ -34,7 +34,7 @@ if (condition1) {
 }
 ```
 
-- Instrucțiunea condițională - **Switch-Case**
+- Instrucțiunea condițională - **switch-case**
 
  
 ```java
@@ -47,23 +47,23 @@ switch (selector) {
     break;
 }
 ```
- * Etichetele de clauză **Switch-Case**
+ * Etichetele de clauză **switch-case**
 
 ## În lecția următoare veți învăța:
 
-- Operatorii de  **incrementare** și **decrementare** 
+- Operatorii de **incrementare** și **decrementare** 
 
 - Repetarea blocurilor de cod
 
-  *  Buclele for
+  * buclele for
 
 - Buclele for cu un **pas**
 
 - Iterația peste caractere prin utilizarea buclelor 
 
--  Buclele **infinite** 
+- Buclele **infinite** 
 
-  * Cum să le evitați
+  * cum să le evitați
 
 
 [/slide]

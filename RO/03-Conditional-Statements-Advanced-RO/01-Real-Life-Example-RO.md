@@ -1,7 +1,7 @@
-# Exemplu din viața reală
+# Exemplu din Viața Reală
 
 [slide hideTitle]
-# Exemplu de viață reală: Piață
+# Exemplu de Viață Reală: Piață
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-6-7-8-real-life-example-marketplace-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
