@@ -62,7 +62,7 @@ Although this change is done in one place, it will affect the code globally ever
 
 # Problem with Solution: Rhombus of Stars
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02.Java-OOP-Basics-More-OOP Concepts-7-Problem-Rhombus-of-stars-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/interactive-java-oop-basics-more-oop-concepts-7-rhombus-of-stars-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Rhombus of Stars" taskId="oop-basics-java-more-oop-concepts-lab-Rhombus-of-Stars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -352,7 +352,7 @@ printer.printToConsole(numbers);
 [slide hideTitle]
 # Problem with Solution: Point in Rectangle
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02.Java-OOP-Basics-More-OOP Concepts-13-Point-in-rectangle-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/interactive-java-oop-basics-more-oop-concepts-13-point-in-rectangle-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Point in Rectangle" taskId="oop-basics-java-more-oop-concepts-lab-Point-in-Rectangle" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
