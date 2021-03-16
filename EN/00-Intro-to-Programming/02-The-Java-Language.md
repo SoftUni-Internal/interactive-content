@@ -4,7 +4,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-10-11-Programming Languages-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-A programming language is an artificial language created for declaring commands that we want a computer to **read**, **process**, and **execute**..
+A programming language is an artificial language created for declaring commands that we want a computer to **read**, **process**, and **execute**.
 
 Using programming languages we compile **sequences of commands** (programs), which define actions to be executed by the computer. 
 
@@ -20,7 +20,7 @@ The **compiler** translates the code from programming language to **machine code
 Together, all compiled fragments build up the program machine code, making it executable by a **microprocessor**.
 
 ## Interpreters
-The **interpreter** is "a **program which executes programs**". 
+The **interpreter** is "**a program which executes programs**". 
 
 An interpreter itself is also written in a programming language. 
 
