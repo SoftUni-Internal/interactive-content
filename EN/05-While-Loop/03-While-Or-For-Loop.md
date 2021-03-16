@@ -29,12 +29,12 @@ In those situation it is better to use **while-loop**.
 ```js
 let command = input.shift();
 let number = Number(input.shift());
-while (command != "End") {
+while (command != 'End') {
     switch (command) {
-        case "Add":
+        case 'Add':
             number += 1;
             break;
-        case "Subtract":
+        case 'Subtract':
             number -= 1;
             break;
     }

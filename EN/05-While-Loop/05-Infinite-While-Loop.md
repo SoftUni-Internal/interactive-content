@@ -25,9 +25,9 @@ while (true) {
 
 
 ```js
-let command = "Add";
-while (command !== "End") {
-  console.log("Executing: " + command);
+let command = 'Add';
+while (command !== 'End') {
+  console.log('Executing: ' + command);
 }
 ```
 
@@ -35,9 +35,9 @@ In the example above, the condition is always `true` because it is never changed
 
 ## Example: Finite Loop (Bug Fixed)
 ```js
-let command = "Add";
-while (command != "End") {
-  console.log("Executing: " + command);
+let command = 'Add';
+while (command != 'End') {
+  console.log('Executing: ' + command);
 
   command = input.shift();
 }

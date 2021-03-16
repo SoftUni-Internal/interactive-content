@@ -18,7 +18,7 @@ Usage in Programming:
 
 ```js
 for (;;) {
-  console.log("Hello World");
+  console.log('Hello World');
 }
 // You can skip the initialization, condition, and the increment
 ```

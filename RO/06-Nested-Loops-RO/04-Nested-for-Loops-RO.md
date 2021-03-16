@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Bucle "for" Imbricate
+# Bucle For Imbricate
 
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-17-18-nested-for-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]

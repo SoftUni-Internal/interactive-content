@@ -43,7 +43,7 @@ Create a program, which sums all the digits of a given number:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 sumDigits(5634)
 [/input]
@@ -51,7 +51,7 @@ sumDigits(5634)
 18
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 sumDigits(45666)
 [/input]
@@ -514,7 +514,7 @@ Create a program, which calculates bonus points based on the following rules:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 specialBonus(25, ['20', '30', '25'])
 [/input]
@@ -522,7 +522,7 @@ specialBonus(25, ['20', '30', '25'])
 60
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 specialBonus(5, ['3', '4', '7', '8', '5'])
 [/input]

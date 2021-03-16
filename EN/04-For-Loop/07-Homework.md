@@ -263,7 +263,7 @@ powerOfNumbers(5, 2)
 [/test]
 [test open]
 [input]
-powerOfNumbers(5, 2)
+powerOfNumbers(5, 5)
 [/input]
 [output]
 3125
@@ -1204,6 +1204,7 @@ Create a program, which prints the sum of a given range of numbers and all the n
 | --------------- | ------------------------------------------- |
 | solve(100, 200) | The sum: 1683                               |
 |                 | 108 117 126 135 144 153 162 171 180 189 198 |
+
 
 | **Input**   | **Output**  |
 | ----------- | ----------- |

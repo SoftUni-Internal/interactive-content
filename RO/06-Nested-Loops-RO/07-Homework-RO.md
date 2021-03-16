@@ -224,7 +224,7 @@ Creați un program care generează parole customizate:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 passwords(6)
 [/input]

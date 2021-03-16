@@ -35,7 +35,7 @@ Create a program, which prints the following information about a building:
 * Large apartments are indexed with: "**L**\{**buildingNum**\}\{**apartmentNum**\}"
 * The numbers always start from 0
 
-# Example
+# Examples
 | **Input** | **Output** |
 | --- | --- |
 | building(6, 4) | L60 L61 L62 L63|
@@ -224,7 +224,7 @@ Create a program, which generates custom passwords:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 passwords(6)
 [/input]

@@ -59,7 +59,6 @@ function numbersEndingWith7(n) {
 
 [/code-editor]
 [code-adapter]
-
 ```
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
@@ -67,7 +66,6 @@ function adapter(input, code) {
     return code(...inputParams);
 }
 ```
-
 [/code-adapter]
 [task-description]
 

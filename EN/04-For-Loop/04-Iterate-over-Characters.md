@@ -16,9 +16,9 @@ Here is an example of how a loop can pass sequentially through **letters** in th
 function latinLetters(startChar, endChar) {
   let startValue = startChar.charCodeAt(0);
   let endValue = endChar.charCodeAt(0);
-  let result = "";
+  let result = '';
   for (let i = startValue; i <= endValue; i++) {
-    result += String.fromCharCode(i) + " ";
+    result += String.fromCharCode(i) + ' ';
   }
   console.log(result);
 }
@@ -52,7 +52,7 @@ And here you can check the whole [ASCII Table](http://www.asciitable.com)
 
 The columns that you would most probably use for the purposes of this course are the **decimal** and **character** ones.
 
-For example, the decimal value of the character **'a'** is **97** and the one corresponding to `@` is `64`.
+For example, the decimal value of the character "**a**" is **97** and the one corresponding to `@` is `64`.
 
 ## Character Conversions
 
@@ -66,7 +66,7 @@ console.log(letter);
 Convert a character to its ASCII / Unicode code:
 
 ```js live
-let letter = "A";
+let letter = 'A';
 let asciiValue = letter.charCodeAt(0);
 console.log(asciiValue);
 ```

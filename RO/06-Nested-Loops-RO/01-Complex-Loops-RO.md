@@ -1,7 +1,7 @@
 // sectionId: "Javascript::Programming-Basics::Nested-Loops::Complex-Loops"
 
 [slide hideTitle]
-# Bucle complexe
+# Bucle Complexe
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-3-4-complex-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -45,7 +45,7 @@ for (let d = 40; d > 0; d /= 2) {
 [/slide]
 
 [slide hideTitle]
-# Problemă cu Soluție: Numbers Drom N Down to 1S
+# Problemă cu Soluție: Numbers Drom N Down to 1
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-5-6-solution-numbers-from-n-down-to-one-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
