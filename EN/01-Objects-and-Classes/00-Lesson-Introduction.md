@@ -10,20 +10,18 @@
 
 **1. Classes**
 
-- What Classes represent
+- Definition of Classes
 
-- How to define a simple class
+- Defining Classes
 
 - Constructors, Fields, Methods, Properties
 
 **2. Objects**
 
-- What Objects are
+- Definition of Objects
 
 - Object Values
 
 **3. Built-in Classes in Java**
-
-- Overview of some Java's Built-in classes
 
 [/slide]
