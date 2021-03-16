@@ -149,6 +149,24 @@ Create a program, which finds the **biggest** and the **smallest** number from a
 
 [/task-description]
 [tests]
+[test open]
+[input]
+numberSequence(5, ['10', '304', '0', '0', '50'])
+[/input]
+[output]
+Max number: 304
+Min number: 0
+[/output]
+[/test]
+[test open]
+[input]
+numberSequence(4, ['15', '155', '34', '71']) 
+[/input]
+[output]
+Max number: 155
+Min number: 15
+[/output]
+[/test]
 [test]
 [input]
 numberSequence(4, ['100', '200', '0', '300'])

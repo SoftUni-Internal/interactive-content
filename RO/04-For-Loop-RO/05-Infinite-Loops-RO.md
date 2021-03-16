@@ -75,7 +75,7 @@ Creați un program, care rezumă și tipărește numere într-o matrice până l
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 sumNumbers([5, 3, 2, 0])
 [/input]
@@ -83,6 +83,16 @@ sumNumbers([5, 3, 2, 0])
 Sum \= 5
 Sum \= 8
 Sum \= 10
+Good bye
+[/output]
+[/test]
+[test open]
+[input]
+sumNumbers([3, 15, 0])
+[/input]
+[output]
+Sum \= 3
+Sum \= 18
 Good bye
 [/output]
 [/test]
@@ -94,7 +104,7 @@ sumNumbers([6, 4, 3, 0])
 Sum \= 6
 Sum \= 10
 Sum \= 13
-Goodbye
+Good bye
 [/output]
 [/test]
 [test]
@@ -105,7 +115,7 @@ sumNumbers([9, 7, 5, 0])
 Sum \= 9
 Sum \= 16
 Sum \= 21
-Goodbye
+Good bye
 [/output]
 [/test]
 [/tests]

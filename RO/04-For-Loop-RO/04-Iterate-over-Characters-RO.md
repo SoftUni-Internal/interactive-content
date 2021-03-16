@@ -112,9 +112,26 @@ Creați un program care imprimă toate literele dintr-un interval dat:
 | **Intrare**              | **Ieșire** |
 | ---------------------- | ---------- |
 | latinLetters('a', 'c') | a b c      |
+| latinLetters('e', 'h') | e f g h    |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+latinLetters('a', 'c')
+[/input]
+[output]
+a b c  
+[/output]
+[/test]
+[test open]
+[input]
+latinLetters('e', 'h')
+[/input]
+[output]
+e f g h
+[/output]
+[/test]
 [test]
 [input]
 latinLetters('d', 'u')

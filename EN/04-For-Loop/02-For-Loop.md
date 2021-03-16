@@ -116,7 +116,7 @@ Create a program, which prints all numbers in a given range and their sum:
 - **Calculate** the **sum** of all numbers from **1** to **n**
 - **Print** the sum to the console at the end
 
-# Example
+# Examples
 
 | **Input**   | **Output** |
 | ----------- | ---------- |
@@ -126,6 +126,9 @@ Create a program, which prints all numbers in a given range and their sum:
 |             | 4          |
 |             | 5          |
 |             | 15         |
+
+| **Input**   | **Output**  |
+| ----------- | ----------- |
 | printSum(3) | 1          |
 |             | 2          |
 |             | 3          |
@@ -133,6 +136,30 @@ Create a program, which prints all numbers in a given range and their sum:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+printSum(5)
+[/input]
+[output]
+1
+2
+3
+4
+5
+15
+[/output]
+[/test]
+[test open]
+[input]
+ printSum(3)
+[/input]
+[output]
+1
+2
+3
+6
+[/output]
+[/test]
 [test]
 [input]
 printSum(5)
@@ -205,7 +232,7 @@ Create a program, which prints **the greatest** number in an array:
 
 - Find and print the greatest number
 
-# Example
+# Examples
 
 | **Input**                             | **Output** |
 | ------------------------------------- | ---------- |
@@ -214,6 +241,22 @@ Create a program, which prints **the greatest** number in an array:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+greatestNumber(3, ['40', '90', '50'])
+[/input]
+[output]
+90
+[/output]
+[/test]
+[test open]
+[input]
+greatestNumber(4, ['5', '3', '14', '35'])
+[/input]
+[output]
+35
+[/output]
+[/test]
 [test]
 [input]
 greatestNumber(3, ['30', '80', '40'])
@@ -222,7 +265,7 @@ greatestNumber(3, ['30', '80', '40'])
 80
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 greatestNumber(3, ['30', '80', '40'])
 [/input]

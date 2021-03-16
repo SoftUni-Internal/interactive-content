@@ -117,7 +117,7 @@ Creați un program care imprimă toate numerele dintr-un interval dat și suma a
 
 # Exemplu
 
-| **Input**   | **Output** |
+| **Intrare**  | **Ieșire** |
 | ----------- | ---------- |
 | printSum(5) | 1          |
 |             | 2          |
@@ -126,8 +126,39 @@ Creați un program care imprimă toate numerele dintr-un interval dat și suma a
 |             | 5          |
 |             | 15         |
 
+| **Intrare**   | **Ieșire**  |
+| ----------- | ----------- |
+| printSum(3) | 1          |
+|             | 2          |
+|             | 3          |
+|             | 6          |
+
 [/task-description]
 [tests]
+[test open]
+[input]
+printSum(5)
+[/input]
+[output]
+1
+2
+3
+4
+5
+15
+[/output]
+[/test]
+[test open]
+[input]
+ printSum(3)
+[/input]
+[output]
+1
+2
+3
+6
+[/output]
+[/test]
 [test]
 [input]
 printSum(5)
@@ -204,9 +235,26 @@ Creați un program care imprimă **cel mai mare** număr dintr-o matrice:
 | **Intrare**                             | **Ieșire** |
 | ------------------------------------- | ---------- |
 | greatestNumber(3, ['40', '90', '50']) | 90         |
+| greatestNumber(4, ['5', '3', '14', '35']) | 35 |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+greatestNumber(3, ['40', '90', '50'])
+[/input]
+[output]
+90
+[/output]
+[/test]
+[test open]
+[input]
+greatestNumber(4, ['5', '3', '14', '35'])
+[/input]
+[output]
+35
+[/output]
+[/test]
 [test]
 [input]
 greatestNumber(3, ['30', '80', '40'])

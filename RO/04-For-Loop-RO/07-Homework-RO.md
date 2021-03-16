@@ -899,7 +899,7 @@ Primele trei numere din intrare sunt următoarele:
 | rollercoaster(['2', '10', '2', '15', '24']) | The rollercoaster departs |
 | rollercoaster(['3', '15', '1', '23'])       | Waiting...                   |
 
-/task-description]
+[/task-description]
 [tests]
 [test open]
 [input]
