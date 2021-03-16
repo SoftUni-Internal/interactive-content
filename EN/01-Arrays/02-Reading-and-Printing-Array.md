@@ -5,7 +5,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-8-9-10-11-Reading-An-Array-and-demos-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-One of the ways we can read an array is by receiving its **length** and use that **length** in a **for-loop** to receive the elements and store them in each index of the array.
+One of the ways we can read an array is by using its **length** in a **for-loop** to receive all elements and store them at each index.
 
 ```java
 //accept n - length of the array
@@ -34,7 +34,7 @@ for (int i = 0; i < items.length; i++){
 }
 ```
 
-First, we read the numbers from the console and split them by the empty spaces between them.
+We read the numbers from the console and split them using a space `" "` as a delimiter.
 
 Then we initialize a new array with a length equal to the number of elements we have read. 
 
@@ -42,9 +42,9 @@ Finally, using a **for-loop** we insert all of the values into the array.
 
 We can read an array of integers using the `java.util.Arrays;` `class`, which is a `class` in Java that allows us to create and manipulate arrays.
 
-## A Shorter Way to Read Arrays
+## Alternatives
 
-Here is a much shorter way to read an input and create an array from it.
+Here is a much shorter way to read input and create an array from it.
 
 ```Java
 String inputLine = sc.nextLine();
@@ -59,11 +59,11 @@ int[] arr = Arrays
   .toArray();                  
 ```
 
-We are first reading the input from the console as a string using `scanner.nextLine()`. 
+We read the input from the console as a string using `scanner.nextLine()`. 
 
-Then we split the input by a single space using `split(" ")`.
+Then we split it by a single space using `split(" ")`.
 
-We continue by parsing each string to integer values with `mapToInt(Integer::parseInt)`.
+We continue by parsing each string to integer with `mapToInt(Integer::parseInt)`.
 
 Finally, we convert the result to an array.
 
@@ -75,11 +75,11 @@ Finally, we convert the result to an array.
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-12-Printing-Arrays-to-the-console-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-A **for-loop** can be used for printing all the elements of an array.
+A **for-loop** can be used to print all elements of an array.
 
-While printing each element we can split them by a **whitespace** or a **new line**.
+While printing each element we can separate them by a **whitespace** or a **new line**.
 
-See the following example:
+As in the following example:
 
 ```Java live
 String[] arr = {"one", "two"};
@@ -268,7 +268,7 @@ Print the output on a single line \(space separated\).
 
 
 ## Hints
-* Read the array of strings
+* Afer reading the array of strings
 
 * **Swap** the **first** element \(at index 0\) with the **last** element \(at index n-1\)
 
@@ -351,11 +351,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Read two arrays and print whether they are identical or not to the console.
+Read two arrays and determine whether they are identical or not.
 
-The arrays are **identical** if their **elements are equal**.
+The arrays are **identical** if all their **elements are equal**.
 
-If the arrays are identical find the **sum of the first one** and print the following message to the console: 
+If the arrays are identical find the **sum of the elements of one of them** and print the following message to the console: 
 
 "**Arrays are identical. Sum:** \{**sum**\}"
 
