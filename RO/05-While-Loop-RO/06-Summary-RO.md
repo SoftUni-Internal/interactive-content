@@ -8,7 +8,7 @@
 
 ## În cadrul acestei lecții ați învățat că:
 - Bucla **While** execută un bloc de cod de mai **multe** ori
-   - Cât timp  condiția din buclă este adevărată
+   - cât timp  condiția din buclă este adevărată
 ```js
 while (condition) {
   loop body;

@@ -34,7 +34,7 @@ while (command !== "End") {
 
 În exemplul de mai sus, condiția este mereu adevărată (`true`), pentru că nu se schimbă niciodată.
 
-# Exemplu: Bucla finită (Depanarea erorii)
+## Exemplu: Bucla finită (Depanarea erorii)
 ```js
 let command = "Add";
 while (command != "End") {

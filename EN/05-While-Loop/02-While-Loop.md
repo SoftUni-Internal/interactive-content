@@ -70,6 +70,9 @@ Create a program, which prints all the numbers from a given input in decreasing 
 ||3 |
 ||2 |
 || 1|
+
+ | **Input** | **Output** |
+| --- | --- |
 | decreasingNumbers(3)| 3 |
 || 2 |
 || 1 |
@@ -88,7 +91,7 @@ decreasingNumbers(5)
 1
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 decreasingNumbers(4)
 [/input]
@@ -99,7 +102,7 @@ decreasingNumbers(4)
 1
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 decreasingNumbers(3)
 [/input]
@@ -154,6 +157,10 @@ Create a program, which prints all numbers **smaller than** and **equal to** a g
 |sequence(8)| 1 |
 ||3 |
 ||7 |
+
+
+ | **Input** | **Output** |
+| --- | --- |
 |sequence(15)| 1 |
 || 3 |
 || 7 |
@@ -161,6 +168,27 @@ Create a program, which prints all numbers **smaller than** and **equal to** a g
 
 [/task-description]
 [tests]
+[test open]
+[input]
+sequence(8)
+[/input]
+[output]
+1
+3
+7
+[/output]
+[/test]
+[test open]
+[input]
+sequence(15)
+[/input]
+[output]
+1
+3
+7
+15
+[/output]
+[/test]
 [test]
 [input]
 sequence(3)

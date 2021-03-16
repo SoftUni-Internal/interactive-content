@@ -79,9 +79,26 @@ Creați un program care imprimă **primul** număr impar dintr-o secvență dat�
   | **Intrare** | **Ieșire** |
 | --- | --- |
 | oddNumber(['2', '4', '8', '3']) | 3 |
+| oddNumber(['7', '32', '6', '12'])| 7 |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+oddNumber(['2', '4', '8', '3'])
+[/input]
+[output]
+3
+[/output]
+[/test]
+[test open]
+[input]
+oddNumber(['7', '32', '6', '12'])
+[/input]
+[output]
+7
+[/output]
+[/test]
 [test]
 [input]
 oddNumber(['2', '4', '8', '5'])

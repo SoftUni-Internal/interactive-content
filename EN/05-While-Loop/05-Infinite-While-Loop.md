@@ -33,7 +33,7 @@ while (command !== "End") {
 
 In the example above, the condition is always `true` because it is never changed.
 
-# Example: Finite Loop (Bug Fixed)
+## Example: Finite Loop (Bug Fixed)
 ```js
 let command = "Add";
 while (command != "End") {

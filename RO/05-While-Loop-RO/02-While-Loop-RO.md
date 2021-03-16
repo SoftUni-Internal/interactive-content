@@ -9,7 +9,9 @@
 
 În programare, **bucla** `while` este utilizată atunci când dorim să **repetăm** execuția unei anumite logici cât timp se îndeplinește o anumită condiție. 
 
-Prin **"condiție"**, înțelegem orice **expresie** care returnează `true` sau `false`. Când **condiția** nu e **îndeplinită**, bucla while este **întreruptă**, programul **continuă** să execute codul de după buclă.
+Prin **"condiție"**, înțelegem orice **expresie** care returnează `true` sau `false`. 
+
+Când **condiția** nu e **îndeplinită**, bucla while este **întreruptă**, programul **continuă** să execute codul de după buclă.
  
 [image assetsSrc="05-use-case-while.png" /]
 Bucla while arată în felul următor:
@@ -71,6 +73,12 @@ Creați un program care imprimă toate numerele din intrarea dată în ordine de
 ||2 |
 || 1|
 
+
+ | **Intrare** | **Ieșire** |
+| --- | --- |
+| decreasingNumbers(3)| 3 |
+|| 2 |
+|| 1 |
 [/task-description]
 [tests]
 [test]
@@ -85,7 +93,7 @@ decreasingNumbers(5)
 1
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 decreasingNumbers(4)
 [/input]
@@ -96,7 +104,7 @@ decreasingNumbers(4)
 1
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 decreasingNumbers(3)
 [/input]
@@ -140,11 +148,11 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Creați un program, care imprimă toate numerele ** mai mici decât ** și ** egale cu ** un număr dat ** n **:
+Creați un program, care imprimă toate numerele **mai mici decât** și **egale cu** un număr dat **n**:
 
-- primiți un număr ** n **
+- primiți un număr **n**
 
-- Respectați următoarele reguli la imprimare: ** 1, 3, 7, 15, 31,…, n ** presupunând că fiecare număr următor este egal cu ** numărul anterior * 2 + 1 **.
+- Respectați următoarele reguli la imprimare: **1, 3, 7, 15, 31,…, n** presupunând că fiecare număr următor este egal cu **numărul anterior * 2 + 1**.
 
 # Exemplu
   | **Intrare** | **Ieșire** |
@@ -153,8 +161,37 @@ Creați un program, care imprimă toate numerele ** mai mici decât ** și ** eg
 ||3 |
 ||7 |
 
+
+| **Intrare** | **Ieșire** |
+| --- | --- |
+|sequence(15)| 1 |
+|| 3 |
+|| 7 |
+|| 15 |
+
 [/task-description]
 [tests]
+[test open]
+[input]
+sequence(8)
+[/input]
+[output]
+1
+3
+7
+[/output]
+[/test]
+[test open]
+[input]
+sequence(15)
+[/input]
+[output]
+1
+3
+7
+15
+[/output]
+[/test]
 [test]
 [input]
 sequence(3)
@@ -169,4 +206,3 @@ sequence(3)
 [/code-task]
 
 [/slide]
-

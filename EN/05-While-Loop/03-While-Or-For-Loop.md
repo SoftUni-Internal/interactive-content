@@ -23,7 +23,7 @@ It is more compact than "**while**" and it keeps the loop control statements tog
 
 But, there could be many **complex** problems where the number of iterations depends on these **situations** and can not be predicted. 
 
-That means we don't know in advance **how many times** to repeat a loop.
+That means we do not know in advance **how many times** to repeat a loop.
 
 In those situation it is better to use **while-loop**.
 ```js
@@ -84,6 +84,22 @@ Create a program, which prints the **first** odd number in a given sequence:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+oddNumber(['2', '4', '8', '3'])
+[/input]
+[output]
+3
+[/output]
+[/test]
+[test open]
+[input]
+oddNumber(['7', '32', '6', '12'])
+[/input]
+[output]
+7
+[/output]
+[/test]
 [test]
 [input]
 oddNumber(['2', '4', '8', '5'])

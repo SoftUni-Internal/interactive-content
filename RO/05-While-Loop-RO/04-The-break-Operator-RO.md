@@ -33,5 +33,5 @@ while (true) {
   }
 }
 ```
-Când vine vorba despre utilizarea intenționată a unei bucle infinite, operatorul  `break` va opri bucla atunci când este îndeplinită o condiție dată.
+Când vine vorba despre utilizarea intenționată a unei bucle infinite, operatorul `break` va opri bucla atunci când este îndeplinită o condiție dată.
 [/slide]

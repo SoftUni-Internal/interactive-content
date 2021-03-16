@@ -45,6 +45,22 @@ Create a program, which sums all the digits of a given number:
 [tests]
 [test]
 [input]
+sumDigits(5634)
+[/input]
+[output]
+18
+[/output]
+[/test]
+[test]
+[input]
+sumDigits(45666)
+[/input]
+[output]
+27
+[/output]
+[/test]
+[test]
+[input]
 sumDigits(123456)
 [/input]
 [output]
@@ -135,12 +151,35 @@ Create a program, which finds a given **favorite book** in an array of books:
 | favoriteBook('Alice in Wonderland', ['Winnie the Pooh', 'Peter Pan', 'Alice in Wonderland']) | Invalid book: Winnie the Pooh |
 ||Invalid book: Peter Pan|
 ||Book found!|
+
+| **Input** | **Output** |
+| --- | --- |
 | favoriteBook('The Hunger Games', ['Harry Potter', 'Lord of the Rings', 'The Hunger Games']) | Invalid book: Harry Potter |
 || Invalid book: Lord of the Rings |
 ||Book found!|
 
 [/task-description]
 [tests]
+[test open]
+[input]
+favoriteBook('Alice in Wonderland', ['Winnie the Pooh', 'Peter Pan', 'Alice in Wonderland'])
+[/input]
+[output]
+Invalid book: Winnie the Pooh
+Invalid book: Peter Pan
+Book found!
+[/output]
+[/test]
+[test open]
+[input]
+favoriteBook('The Hunger Games', ['Harry Potter', 'Lord of the Rings', 'The Hunger Games'])
+[/input]
+[output]
+Invalid book: Harry Potter
+Invalid book: Lord of the Rings
+Book found!
+[/output]
+[/test]
 [test]
 [input]
 favoriteBook('Fav Book', ['Book1', 'Book2', 'Book3', 'Fav Book'])
@@ -241,12 +280,33 @@ Create a program, which finds the **largest** and the **smallest** number in a s
 | --- | --- |
 | minAndMax(['10', '20', '304', '0', '50', 'END'])| Max number: 304 |
 ||Min number: 0|
+
+  | **Input** | **Output** |
+| --- | --- |
 | minAndMax(['5', '13', '145', 'END', '35', '66'])| Max number: 145 |
 ||Min number: 5|
 
 
 [/task-description]
 [tests]
+[test open]
+[input]
+minAndMax(['10', '20', '304', '0', '50', 'END'])
+[/input]
+[output]
+Max number: 304
+Min number: 0
+[/output]
+[/test]
+[test open]
+[input]
+minAndMax(['5', '13', '145', 'END', '35', '66'])
+[/input]
+[output]
+Max number: 145
+Min number: 5
+[/output]
+[/test]
 [test]
 [input]
 minAndMax(['5', '10', '66', '456', '-4', '1', '0', 'END'])
@@ -347,7 +407,15 @@ The special number is a number **divisible by all of its digits** without a rema
 
 [/task-description]
 [tests]
-[test]
+[test open]
+[input]
+specialNumber('23')
+[/input]
+[output]
+23 is not special
+[/output]
+[/test]
+[test open]
 [input]
 specialNumber('55')
 [/input]
@@ -434,7 +502,7 @@ function adapter(input, code) {
 Create a program, which calculates bonus points based on the following rules: 
 
 * You will receive an **integer** **x** and an **array** from the console
-* Keep processing the integers in the array until you find the **same one as x*
+* Keep processing the integers in the array until you find the **same one as x**
 * When you find it, multiply the value of the number **before it** by 2 and print it
 
 # Example
@@ -446,6 +514,22 @@ Create a program, which calculates bonus points based on the following rules:
 
 [/task-description]
 [tests]
+[test]
+[input]
+specialBonus(25, ['20', '30', '25'])
+[/input]
+[output]
+60
+[/output]
+[/test]
+[test]
+[input]
+specialBonus(5, ['3', '4', '7', '8', '5'])
+[/input]
+[output]
+16
+[/output]
+[/test]
 [test]
 [input]
 specialBonus(20, ['5', '5', '20'])
@@ -534,7 +618,7 @@ Create a program, which prints a sequence of numbers up to a given input, based 
 
 - You will receive a number **n** from the console
 - Print a **sequence** of numbers, which are **less than** or **equal to** **n**, and fulfill the following condition:
-  - Each number has to be equal to the previous one multiplied by **2** plus **1**
+  - each number has to be equal to the previous one multiplied by **2** plus **1**
 
 # Example
   | **Input** | **Output** |
@@ -542,6 +626,9 @@ Create a program, which prints a sequence of numbers up to a given input, based 
 | sequence(8) | 1 |
 ||3|
 || 7|
+
+  | **Input** | **Output** |
+| --- | --- |
 | sequence(16) | 1 |
 || 3 |
 || 7 |
@@ -549,6 +636,27 @@ Create a program, which prints a sequence of numbers up to a given input, based 
 
 [/task-description]
 [tests]
+[test open]
+[input]
+sequence(8)
+[/input]
+[output]
+1
+3
+7
+[/output]
+[/test]
+[test open]
+[input]
+sequence(16)
+[/input]
+[output]
+1
+3
+7
+15
+[/output]
+[/test]
 [test]
 [input]
 sequence(1)
@@ -657,6 +765,9 @@ Create a program, which manages an account balance:
 ||Increase: 69.42|
 ||Increase: 100.00 |
 || Total: 174.93 |
+
+  | **Input** | **Output** |
+| --- | --- |
 | accountBalance(['55.00', '45.00', 'END']) | Increase: 55.00 |
 ||Increase: 45.00|
 || Total: 100.00 |
@@ -664,7 +775,7 @@ Create a program, which manages an account balance:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 accountBalance(['5.50', '60.23', '100', 'END'])
 [/input]
@@ -673,6 +784,16 @@ Increase: 5.50
 Increase: 60.23
 Increase: 100.00
 Total: ‭165.73‬
+[/output]
+[/test]
+[test open]
+[input]
+accountBalance(['55.00', '45.00', 'END'])
+[/input]
+[output]
+Increase: 55.00
+Increase: 45.00
+Total: 100.00
 [/output]
 [/test]
 [test]

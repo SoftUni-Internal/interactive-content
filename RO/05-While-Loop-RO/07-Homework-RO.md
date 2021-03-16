@@ -32,16 +32,33 @@ function adapter(input, code) {
 Creați un program care adună toate cifrele unui număr dat:
 
 * Veți primi un număr de pe consolă
-* **Calculați **suma** **cifrelor** care compun acest număr
+* **Calculați suma cifrelor** care compun acest număr
 * Tipăriți suma cifrelor
 
 # Exemplu
   | **Intrare** | **Ieșire** |
 | --- | --- |
 |sumDigits(5634)| 18 |
+|sumDigits(45666)| 27 |
 
 [/task-description]
 [tests]
+[test]
+[input]
+sumDigits(5634)
+[/input]
+[output]
+18
+[/output]
+[/test]
+[test]
+[input]
+sumDigits(45666)
+[/input]
+[output]
+27
+[/output]
+[/test]
 [test]
 [input]
 sumDigits(123456)
@@ -124,10 +141,10 @@ function adapter(input, code) {
 # Descriere
 Creați un program care găsește o anumită **carte preferată** dintr-o matrice de cărți: 
 
-* Veți primi un șir, reprezentând ** titlul cărții preferate **
+* Veți primi un șir, reprezentând **titlul cărții preferate**
 * Apoi, veți primi titluri de cărți până ce ajungeți la cartea preferată
-* Tipăriți „** Carte nevalidă: ** \ {** titlul cărții ** \}” pentru toate cărțile nevalide
-* Imprimați „** Cartea găsită! **” când întâlniți titlul cărții preferate
+* Tipăriți "**Invalid book:** \{**book title**\}" pentru toate cărțile nevalide
+* Imprimați "**Book found!**" când întâlniți titlul cărții preferate
 * Rupeți bucla după ce ajungeți la cartea preferată
 
 # Exemplu
@@ -137,8 +154,34 @@ Creați un program care găsește o anumită **carte preferată** dintr-o matric
 ||Invalid book: Peter Pan|
 ||Book found!|
 
+| **Intrare** | **Ieșire** |
+| --- | --- |
+| favoriteBook('The Hunger Games', ['Harry Potter', 'Lord of the Rings', 'The Hunger Games']) | Invalid book: Harry Potter |
+|| Invalid book: Lord of the Rings |
+||Book found!|
+
 [/task-description]
 [tests]
+[test open]
+[input]
+favoriteBook('Alice in Wonderland', ['Winnie the Pooh', 'Peter Pan', 'Alice in Wonderland'])
+[/input]
+[output]
+Invalid book: Winnie the Pooh
+Invalid book: Peter Pan
+Book found!
+[/output]
+[/test]
+[test open]
+[input]
+favoriteBook('The Hunger Games', ['Harry Potter', 'Lord of the Rings', 'The Hunger Games'])
+[/input]
+[output]
+Invalid book: Harry Potter
+Invalid book: Lord of the Rings
+Book found!
+[/output]
+[/test]
 [test]
 [input]
 favoriteBook('Fav Book', ['Book1', 'Book2', 'Book3', 'Fav Book'])
@@ -241,8 +284,32 @@ Creați un program care găsește **cel mai mare** și **cel mai mic** număr di
 ||Min number: 0|
 
 
+| **Intrare** | **Ieșire** |
+| --- | --- |
+| minAndMax(['5', '13', '145', 'END', '35', '66'])| Max number: 145 |
+||Min number: 5|
+
+
 [/task-description]
 [tests]
+[test open]
+[input]
+minAndMax(['10', '20', '304', '0', '50', 'END'])
+[/input]
+[output]
+Max number: 304
+Min number: 0
+[/output]
+[/test]
+[test open]
+[input]
+minAndMax(['5', '13', '145', 'END', '35', '66'])
+[/input]
+[output]
+Max number: 145
+Min number: 5
+[/output]
+[/test]
 [test]
 [input]
 minAndMax(['5', '10', '66', '456', '-4', '1', '0', 'END'])
@@ -328,9 +395,9 @@ Creați un program care verifică dacă un număr este special
 
 * Primiți un șir
 
-* **Tipăriți** `{num} is special`, dacă numărul este special
+* **Tipăriți** "\{**num**\} **is special**", dacă numărul este special
 
-* Altfel, imprimați`{num} is not special` 
+* Altfel, imprimați "\{**num**\} **is not special**" 
 
 Numărul special este numărul **divizibil la toate cifrele sale componente** fără rest. 
 
@@ -338,11 +405,19 @@ Numărul special este numărul **divizibil la toate cifrele sale componente** f�
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | specialNumber('23')| 23 is not special |
-
+| specialNumber('55')| 55 is special |
 
 [/task-description]
 [tests]
-[test]
+[test open]
+[input]
+specialNumber('23')
+[/input]
+[output]
+23 is not special
+[/output]
+[/test]
+[test open]
 [input]
 specialNumber('55')
 [/input]
@@ -428,18 +503,35 @@ function adapter(input, code) {
 # Descriere
 Creați un program care calculează punctele de bonus, pe baza următoarelor reguli: 
 
-* Veți primi un număr ** întreg ** ** x ** și o ** matrice ** de pe consolă
-* Continuați să procesați numerele întregi din matrice până când găsiți ** același cu x *
-* Când îl găsiți, înmulțiți valoarea numărului ** dinaintea acestuia ** cu 2 și imprimați-l.
+* Veți primi un număr **întreg** **x** și o **matrice** de pe consolă
+* Continuați să procesați numerele întregi din matrice până când găsiți **același cu x**
+* Când îl găsiți, înmulțiți valoarea numărului **dinaintea acestuia** cu 2 și imprimați-l
 
 # Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | specialBonus(25, ['20', '30', '25']) | 60 |
+| specialBonus(5, ['3', '4', '7', '8', '5']) | 16 |
 
 
 [/task-description]
 [tests]
+[test]
+[input]
+specialBonus(25, ['20', '30', '25'])
+[/input]
+[output]
+60
+[/output]
+[/test]
+[test]
+[input]
+specialBonus(5, ['3', '4', '7', '8', '5'])
+[/input]
+[output]
+16
+[/output]
+[/test]
 [test]
 [input]
 specialBonus(20, ['5', '5', '20'])
@@ -528,7 +620,7 @@ Creați un program care imprimă o secvență de numere până la intrarea dată
 
 * Veți primi un număr **n** de pe consolă
 * Imprimați o **secvență** de numere, care sunt **mai mici sau egale cu n** (**<= n**) și satisfac următoarea condiție:
-* Fiecare număr este egal cu numărul anterior înmulțit cu doi (**2**) la care se adaugă o unitate (**1**)
+  * fiecare număr este egal cu numărul anterior înmulțit cu doi (**2**) la care se adaugă o unitate (**1**)
 
 # Exemplu
   | **Intrare** | **Ieșire** |
@@ -538,8 +630,36 @@ Creați un program care imprimă o secvență de numere până la intrarea dată
 || 7|
 || |
 
+ | **Intrare** | **Ieșire** |
+| --- | --- |
+| sequence(16) | 1 |
+|| 3 |
+|| 7 |
+|| 15 |
+
 [/task-description]
 [tests]
+[test open]
+[input]
+sequence(8)
+[/input]
+[output]
+1
+3
+7
+[/output]
+[/test]
+[test open]
+[input]
+sequence(16)
+[/input]
+[output]
+1
+3
+7
+15
+[/output]
+[/test]
 [test]
 [input]
 sequence(1)
@@ -650,9 +770,15 @@ Creați un program care gestionează soldul unui cont:
 || Total: 174.93 |
 
 
+ | **Intrare** | **Ieșire** |
+| --- | --- |
+| accountBalance(['55.00', '45.00', 'END']) | Increase: 55.00 |
+||Increase: 45.00|
+|| Total: 100.00 |
+
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 accountBalance(['5.50', '60.23', '100', 'END'])
 [/input]
@@ -661,6 +787,16 @@ Increase: 5.50
 Increase: 60.23
 Increase: 100.00
 Total: ‭165.73‬
+[/output]
+[/test]
+[test open]
+[input]
+accountBalance(['55.00', '45.00', 'END'])
+[/input]
+[output]
+Increase: 55.00
+Increase: 45.00
+Total: 100.00
 [/output]
 [/test]
 [test]
@@ -738,4 +874,3 @@ Total: 891.72
 [/code-task]
 
 [/slide]
-
