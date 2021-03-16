@@ -5,6 +5,8 @@
 
 # Collections Hierarchy
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/EN/interactive-java-advanced-iterators-and-comparators-12-13-Iterable-and-Iterator-Collections-Hierarchy -,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The Collection interface extends Iterable and all child classes of Collection implement Iterable.
 
 [image assetsSrc="iterators-example(1).png" /]
@@ -15,7 +17,7 @@ The Collection interface extends Iterable and all child classes of Collection im
 
 # Iterable
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/EN/interactive-java-advanced-iterators-and-comparators-12-13-Iterable-and-Iterator-Collections-Hierarchy -,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/EN/interactive-java-advanced-iterators-and-comparators-14-15-Iterable-T-and-Methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 `Iterable<T>` is the root interface of the Java collection classes.
 
@@ -111,6 +113,8 @@ names.forEachRemaining((name) -> System.out.println(name));
 [slide hideTitle]
 
 # Iterator
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/EN/interactive-java-advanced-iterators-and-comparators-16-Iterator-T-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `iterator()` method returns a `new Iterator` which implements `Iterator<String>` and passes them to the `iterator()` method.
 
