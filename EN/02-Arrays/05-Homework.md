@@ -309,7 +309,7 @@ condense([5, 0, 4, 1, 2])
 35
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 condense([1])
 [/input]

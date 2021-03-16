@@ -7,7 +7,7 @@
 
 - Matricile sunt secvențe de elemente 
 
-    - elementele lor sunt numărate de la  0 până la `length-1 `
+    - elementele lor sunt numărate de la  0 până la `length-1`
 
 ``` js live
 let numbers = [1, 2, 3, 4, 5];

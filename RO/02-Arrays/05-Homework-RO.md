@@ -309,7 +309,7 @@ condense([5, 0, 4, 1, 2])
 35
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 condense([1])
 [/input]
@@ -655,20 +655,20 @@ function adapter(input, code) {
 
 Creați un program care imprimă toate perechile **unice** care sunt într-o **matrice de numere întregi** a căror **suma** este **egală** cu un număr dat. 
 
-## Exemplul unu
+## Exemplul Unu
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | magicSum([1, 7, 6, 2, 19, 23], 8) | 1 7 |
 || 6 2 |
 
-## Exemplul doi
+## Exemplul Doi
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | magicSum([14, 20, 60, 13, 7, 19, 8], 27) | 14 13 |
 ||20 7 |
 ||19 8 |
 
-## Exemplul trei
+## Exemplul Trei
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | magicSum([1, 2, 3, 4, 5, 6], 6) | 1 5 |

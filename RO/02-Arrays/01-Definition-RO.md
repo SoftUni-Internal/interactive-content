@@ -395,7 +395,7 @@ console.log(arr);
 [/slide]
 
 [slide hideTitle]
-# Mmatricele JavaScript și pozițiile nevalide
+# Mmatricele JavaScript și Pozițiile Nevalide
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/02.JS-Fundamentals-Arrays/02.JS-Fundamentals-Arrays-12-JS-Arrays-and-invalid-positions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
