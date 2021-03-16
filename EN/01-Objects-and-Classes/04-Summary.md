@@ -29,17 +29,13 @@ class Dice {
 
 ## In the next lesson, you will learn:
 
-- Associative Arrays - Maps
-    - `HashMap <key, value>`
-    - `LinkedHashMap <key, value>`
-    - `TreeMap <key, value>`
+- What a String is
 
-- Lambda Expressions
+- Manipulating Strings
 
-- Stream API
-    - filtering
-    - mapping
-    - ordering
+- Building and Modifying Strings
+    - using the `StringBuilder` Class
+    - why concatenation is a slow operation
     
 [/slide] 
 
