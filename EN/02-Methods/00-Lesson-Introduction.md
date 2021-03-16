@@ -8,8 +8,8 @@
 
 **1. Methods**
 
-- What methods are
-- Why we use methods
+- Definition
+- Purposes
 
 **2. Naming and Best Practices** 
 
@@ -31,17 +31,17 @@
 
 **5. Returning Values from Methods**
 
-- Using the "return" values from methods
+- Using the "return" statement
 
 **6. Value vs References type**
 
 - Value types vs references types
 
-- Memory Stack and Heap
+- Memory: Stack and Heap
 
 **7. Overloading Methods**
 
-- What **method overloading** is and how to do it
+- What is **method overloading** 
 
 **8. Program Execution Flow**
 
