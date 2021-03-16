@@ -22,7 +22,7 @@ The input will come in form of an **array of arrays** - every nested array will 
 
 The output must be an array of **rectangles** objects sorted by their **area** in **descending** order as a first criterion and by their **width** in **descending** order as a second criterion.  
 
-## Example One
+## Example 1
 |**Input**|**Output**|
 |---|---|
 |\[\[10,5\], \[5,12\]\]|\[\{width:5, height:12, area:function(), compareTo:function(other)\}, \{width:10, height:5, area:funciton(),compareTo:function(other)\}\]|
@@ -333,7 +333,7 @@ You will receive an array and your goal is to create a new object with all the u
 You should print the newly created object.
  
 
-## Examples
+# Examples
 | **Input** | **Output** |
 | --- | --- |
 |'\[\{"canMove": true\},\{"canMove":true, "doors": 4\},\{"capacity": 5\}\]'| \{ canMove: true, doors: 4, capacity: 5 \} |
@@ -478,7 +478,7 @@ function sum(){
 [task-description]
 # Description
 
-Create a function that returns an object that can modify the DOM. 
+Write a function that returns an object that can modify the DOM. 
 
 The returned object should support the following functionality\:
 - `init(selector1, selector2, resultSelector)` initializes the object to work with the elements corresponding to the supplied selectors
@@ -581,7 +581,7 @@ function heroes(){
 [task-description]
 # Description
 
-Create a function that returns an object with 2 methods "**mage**" and "**fighter**". 
+Write a function that returns an object with 2 methods "**mage**" and "**fighter**". 
 
 This object should be able to create heroes "**fighters**" and "**mages**". 
 
@@ -599,8 +599,9 @@ Every mage can cast spells. When a spell is cast the mage's mana decreases by 1 
 
 "\{**mage's name**\} **cast** \{**spell**\}"
 
-## Example
-**Input**
+# Example
+
+## Input
 
 ```js
 let create = solve();
@@ -614,7 +615,7 @@ console.log(scorcher2.stamina);
 console.log(scorcher.mana);
 ```
 
-**Output**
+## Output
 
 Scorcher cast fireball
 Scorcher cast thunder
@@ -700,9 +701,9 @@ Once the water is administered, change the dizziness property to **false**.
 
 Workers who do not have dizziness should not be modified in any way. Return them as they are.
 
-## Example One
+## Example 1
 
-**Input**
+## Input
 \{
     weight: 80,
     experience: 1,
@@ -711,15 +712,15 @@ Workers who do not have dizziness should not be modified in any way. Return them
 \}
 
 
-**Output**
+## Output
 \{
     weight: 80,
     experience: 1,
     levelOfHydrated: 8,
     dizziness: false
 \}
-## Example Two
-**Input**
+## Example 2
+## Input
 \{
     weight: 120,
     experience: 20,
@@ -727,7 +728,7 @@ Workers who do not have dizziness should not be modified in any way. Return them
     dizziness: true
 \}
   
-**Output** 
+## Output 
 \{
     weight: 120,
     experience: 20,
@@ -737,7 +738,7 @@ Workers who do not have dizziness should not be modified in any way. Return them
 
 ## Example Three
 
-**Input**  
+## Input  
 
 \{
     weight: 95,
@@ -746,7 +747,7 @@ Workers who do not have dizziness should not be modified in any way. Return them
     dizziness: false
 \}
 
-**Output**
+## Output
 \{
     weight: 95,
     experience: 3,
@@ -889,9 +890,9 @@ The format will be as follows:
 ```
 
 
-## Example One
+## Example 1
 
-**Input** 
+## Input 
 \{
     model: 'VW Golf II',
     power: 90,
@@ -900,7 +901,7 @@ The format will be as follows:
     wheelsize: 14
 \}
 
-**Output**
+## Output
  \{
     model: 'VW Golf II',
     engine: \{
@@ -914,8 +915,8 @@ The format will be as follows:
     wheels: \[13, 13, 13, 13\]
 \}
 
-## Example Two
-**Input**
+## Example 2
+## Input
 
 \{
     model: 'Opel Vectra',
@@ -925,7 +926,7 @@ The format will be as follows:
     wheelsize: 17
 \}
 
-**Output**
+## Output
 \{
     model: 'Opel Vectra',
     engine: \{
@@ -1111,7 +1112,7 @@ function extensibleObject(){
 
 Create an object that can clone the functionality of another object into itself. 
 
-Implement an extend\(template\) function that would copy all of the properties of the template to the parent object and if the property is a function, add it to the object’s prototype instead.
+Implement an extend\(template\) function that will copy all of the properties of the template to the parent object and if the property is a function, add it to the object’s prototype instead.
 
 Your code should return the extensible object instance. 
 
@@ -1291,10 +1292,13 @@ Note static methods are attached to the String object instead of its prototype.
 
 See the examples for more info.
 
-Your main code should be structured as an IIFE without input or output. It should modify the existing String prototype instead.
+Your main code should be structured as an IIFE without input or output. 
+
+It should modify the existing String prototype instead.
 
 # Example
-**Input**
+
+## Input
 
 ```js
 let str = 'my string';
@@ -1311,7 +1315,7 @@ str = String.format('jumps {0} {1}',
   'dog');
 ```
 
-**Output**
+## Output
 
 my string
 hello my string

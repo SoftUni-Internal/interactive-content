@@ -8,11 +8,11 @@ Event propagation is a way to describe the "stack" of events that are fired in a
 
 In the browser we have 3 phases of event propagation:
 
-- Capturing phase: the event goes down to the element
+- **Capturing** phase: the event goes down to the element
 
-- Target phase: the event reaches the target element
+- **Target** phase: the event reaches the target element
 
-- Bubbling phase: the event bubbles up from the element
+- **Bubbling** phase: the event bubbles up from the element
 
 [image assetsSrc="Dom-Manipulation(2).gif" /]
 
@@ -20,7 +20,7 @@ When clicking on the `<A>` element, the event first goes through the chain down 
 
 To catch an event on the **capturing phase**, we need to set the handler capture option to **true**.
 
-During this phase, only the capturers found on the path from the Window to the event target parent are called.
+During this phase, only the capturers found on the **path** from the **Window** to the **event target parent** are called.
 
 If this parameter is omitted, its default value is **false**, and the listener is not a **capturer**.
 
@@ -31,7 +31,7 @@ el.addEventListener('click', listener, true);
 
 When an event happens on an element, it first runs the handlers on it, then on its parent, and then all the way up on other ancestors. This is the **bubbling phase**.
 
-In this example, the handler is assigned to the `<div>` element, but it also runs if we click on any nested tag like  `<em>` or `<code>`.
+In this example, the handler is assigned to the `<div>` element, but it also runs if we click on any **nested tag**, like  `<em>` or `<code>`.
 
 ```js
 <div onclick="alert('The handler!')">
@@ -39,9 +39,9 @@ In this example, the handler is assigned to the `<div>` element, but it also run
 </div>
 ```
 
-A bubbling event goes up to "document" object, and some events even reach "window", calling all handlers on the path.
+A bubbling event goes up to the "document" object, and some events even reach "window", calling all handlers on the path.
 
-We can stop the **bubbling** using a method called `event.stopPropagation()`.
+We can stop **bubbling** by using a method, called `event.stopPropagation()`.
 
 In this example, `body.onclick` does not work if we click on `<button>`.
 
@@ -105,7 +105,7 @@ The **target** event property returns the element that triggered the event.
 
 The **timeStamp** event property is read-only. 
 
-It returns the **time in milliseconds** from the beginning of the current document's lifetime till the event was created.
+It returns the **time in milliseconds** from the beginning of the current document's lifetime until the event was created.
 
 The **isTrusted** event property returns a Boolean value that is indicating whether the event is trusted or not.
 
@@ -137,7 +137,7 @@ The `stopImmediatePropagation()` method prevents other listeners of the same eve
 [code-task title="List Of Items" taskId="Js-Advanced-Dom-Manipulations-lab-List-Of-Items" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
-function listOfItems(){
+function addItem(){
   // Write your code here
 }
 ```
@@ -147,7 +147,7 @@ function listOfItems(){
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/JS-Advanced-DOM-Manipulations-Lab-01.List-Of-Items.zip) **for this task.**
 
-Create a function that **reads** a text inside an input field and **appends** the specified text to a list inside an HTML page.
+Write a function that **reads** a text inside an input field and **appends** the specified text to a list inside an HTML page.
 
 # Example
 [image assetsSrc="Dom-Manipulation(3).png" /]

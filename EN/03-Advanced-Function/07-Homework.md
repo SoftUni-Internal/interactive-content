@@ -22,7 +22,7 @@ Check the **examples below** to see how your code will be executed.
 
 Your function should **return** the final result.
 
-## Example One
+## Example 1
 
 | **Input** | **Output** |
 | --- | --- |
@@ -30,7 +30,7 @@ Your function should **return** the final result.
 | `console.log(add5(2));` | 8 |
 | `console.log(add5(3));` |  |
 
-## Example Two
+## Example 2
 | **Input** | **Output** |
 | --- | --- |
 | `let add7 = solution(7);` | 9 |
@@ -260,14 +260,14 @@ The output should be the **printed** to the console.
 
 For more information check the examples.
 
-## Example One
+## Example 1
 
 |**Input**|**Output**|
 |---|---|
 |filterEmployees('\[\{"id": "1","first_name": "Ardine","last_name": "Bassam","email": "abassam0@cnn.com","gender": "Female"\}, \{"id": "2","first_name": "Kizzee","last_name": "Jost","email": "kjost1@forbes.com","gender": "Female"\}, \{"id": "3","first_name": "Evanne","last_name": "Maldin","email": "emaldin2@hostgator.com","gender": "Male"\}\]', 'gender-Female')|0\. Ardine Bassam - abassam0@cnn.com|
 ||1\. Kizzee Jost - kjost1@forbes.com|
 
-## Example Two
+## Example 2
 
 |**Input**|**Output**|
 |---|---|
@@ -369,7 +369,7 @@ You will receive a **numeric array** and a **string** as input parameters.
 
 The output should be the **sorted array**.
 
-## Examples
+# Examples
 
 |**Input**|**Output**|
 |---|---|
@@ -473,15 +473,15 @@ You will receive a series of arguments **passed** to your function.
 
 **Print to the console** the **type** and **value** of each argument passed into your function.
 
-## Example
+# Example
 
-**Input**
+## Input
 
 ```js
 'cat', 42, function () { console.log('Hello world!'); }
 ```
 
-**Output**
+## Output
 
 ``` js
 string: cat
@@ -743,13 +743,13 @@ All fields should be named **exactly as described** \(their order is not importa
 
 Look at the sample output for more information.
 
-## Example One
+# Example 1
 
-**Input**
+## Input
 
 'Peter', 29, 75, 182
 
-**Output**
+## Output
 
 ```
 {
@@ -763,13 +763,13 @@ Look at the sample output for more information.
     status: 'normal'
 }
 ```
-## Example Two
+# Example Two
 
-**Input**
+## Input
 
 'Adrian', 9, 57, 137
 
-**Output**
+## Output
 
 ```
 {
@@ -964,7 +964,7 @@ All fields should be named **exactly as described** \(their order is not importa
 
 Look at the sample output for more information.
 
-## Example
+# Example
 
 |**Input**|**Output**|**Explanation**|
 |---|---|---|
@@ -1188,7 +1188,7 @@ Look at the sample output for more information.
 - Recipes and ingredients in commands will always have valid names.
   
 
-## Examples
+# Examples
 
 **Execution:**
 ```js
@@ -1197,7 +1197,7 @@ manager('restock flavour 50');  // Success
 manager('prepare lemonade 4');  // Error: not enough carbohydrate in stock
 ```
 
-## Example One
+## Example 1
 
 |**Input**|**Output**|
 |---|---|
@@ -1208,7 +1208,7 @@ manager('prepare lemonade 4');  // Error: not enough carbohydrate in stock
 |'prepare burger 1'|Success|
 |'report'|protein=0 carbohydrate=4 fat=3 flavour=5|
 
-## Example Two
+## Example 2
 |**Input**|**Output**|
 |---|---|
 |'prepare turkey 1'|Error: not enough protein in stock|
