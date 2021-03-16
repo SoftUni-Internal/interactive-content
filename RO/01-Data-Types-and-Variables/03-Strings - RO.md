@@ -65,7 +65,7 @@ console.log(`Hello, my name is ${name}, I am ${age} years old.`);
 
 [slide hideTitle]
 
-# Problemă cu soluție: Concantenate Names
+# Problemă cu Soluție: Concantenate Names
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-16-solution-concatenate-names-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -180,7 +180,7 @@ JanpWhite
 
 [slide hideTitle]
 
-# Problemă cu soluție: Right Place
+# Problemă cu Soluție: Right Place
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-17-solution-last-name-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

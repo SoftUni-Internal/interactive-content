@@ -53,7 +53,7 @@ for(let num of arr){
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Reverse an Array of Numbers
+# Problemă cu Soluție: Reverse an Array of Numbers
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/02.JS-Fundamentals-Arrays/02.JS-Fundamentals-Arrays-18-Solution-Reverse-an-array-of-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Reverse an Array of Numbers" taskId="fundamentals-js-arrays-lab-Reverse-an-Array-of-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -183,7 +183,7 @@ reverse(5, [664, 43, 715, 8899, 747, 44, 78])
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Reverse an Array of Strings
+# Problemă cu Soluție: Reverse an Array of Strings
 
 [vimeo-video]
 [stream language="EN" videoId="489372618/881c97fdd1" default /]

@@ -18,7 +18,7 @@ function printStars(count) {
 printStars(4)
 ```
 
-O funcție este un **bloc de cod* care este** executat numai atunci când este apelat**.
+O funcție este un **bloc de cod care este** executat numai atunci când este apelat.
 
 Datele pot fi **transmise** funcțiilor ca **parametrii**.
 

@@ -1,4 +1,4 @@
-# Operațiuni de bază
+# Operațiuni de Bază
 
 [slide hideTitle]
 # Prezentare Generală
@@ -35,7 +35,7 @@ Practic, aceste metode modifică matricea și nu este nevoie să scriem o grăma
 
 JavaScript are **metode incorporate** pentru a adăuga sau a elimina elemente din sfârșitul și începutul matricei.
 
--**Adăugarea unui element la sfârșitul matricei**
+- **Adăugarea unui element la sfârșitul matricei**
 
 Metoda `array.push()` este utilizată pentru a adăuga un element nou la sfârșitul matricei.
 
@@ -96,7 +96,7 @@ console.log(number);
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Sum First Last
+# Problemă cu Soluție: Sum First Last
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-problem-1-solution-sum-first-last-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -238,7 +238,7 @@ console.log(myArray);
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Negative or Positive Numbers
+# Problemă cu Soluție: Negative or Positive Numbers
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-12-problem-and-solution-negative-posivite-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

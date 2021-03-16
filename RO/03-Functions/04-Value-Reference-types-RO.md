@@ -8,7 +8,7 @@
 
 **Tipurile de valori** și **tipurile de referință** sunt cele două categorii principale de tipuri JavaScript
 
-[image assetsSrc="Value-vs-Reference-Types(1).gif" /]
+[image assetsSrc="Value-vs-Reference-Types(1).png" /]
 
 ## Tipuri de valori
 

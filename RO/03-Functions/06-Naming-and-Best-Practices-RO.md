@@ -91,7 +91,7 @@ function sum() {
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Simple Calculator
+# Problemă cu Soluție: Simple Calculator
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-solution-simple-calculator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

@@ -77,7 +77,7 @@ If **you have died** the expected output is:
 
 Consider each pair of input to be a separate room in a dungeon that your character goes through. 
 
-If you have the following input of `rat 10\|bat 20\|potion 10\|rat 10\`, this means you will attempt to battle your way through 4 different rooms.
+If you have the following input of "rat 10\|bat 20\|potion 10\|rat 10\", this means you will attempt to battle your way through 4 different rooms.
 
 Once the game is over, print the **number** of the **last room you have managed to reach**: 
 

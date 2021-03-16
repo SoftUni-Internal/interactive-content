@@ -405,14 +405,14 @@ Creați un program, care modifică **valoarea** numerelor impare si pare într-o
 Pe prima linie tipăriți **matricea recent modificată**, pe a doua linie tipăriți suma numerelor din matricea **originală**, pe a treia linie tipăriți suma numerelor din **matricea modificată.**
 
 
-## Exemplul unu
+## Exemplul Unu
    |**Intrare**|**Ieșire**|
 | --- | --- |
 | addOrSubtract([5, 15, 23, 56, 35]) | [ 5, 14, 21, 59, 31 ] |
 || 134|
 || 130 |
 
-## Exemplul doi
+## Exemplul Doi
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | addOrSubtract([-5, 11, 3, 0, 2]) | [ 5, 14, 21, 59, 31 ] |

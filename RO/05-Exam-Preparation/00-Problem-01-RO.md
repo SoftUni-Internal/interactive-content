@@ -95,7 +95,7 @@ Un șir, cu comenzi separate printr-o bară verticală ("\|")..
 ## Ieșire
 Imprimați mesajele corespunzătoare, așa cum se arată în descriere.
 
-## Exemplul unu
+## Exemplul Unu
 
 |**Intrare**|**Ieșire** |
 | --- | --- |
@@ -108,7 +108,7 @@ Imprimați mesajele corespunzătoare, așa cum se arată în descriere.
 ||You died! Killed by boss.|
 ||Highest level reached: 6|
 
-## Exemplul doi
+## Exemplul Doi
 
 |**Intrare**|**Ieșire** |
 | --- | --- |

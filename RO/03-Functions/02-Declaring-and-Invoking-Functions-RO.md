@@ -114,7 +114,7 @@ Dacă **nu există o astfel de condiție**, funcția se va numi **la nesfârșit
 
 Putem avea o funcție **cu sau fără** parametri.
 
-*Parametrii** funcției se comportă ca variabile locale din **corpul funcției.**
+**Parametrii** funcției se comportă ca variabile locale din **corpul funcției.**
 
 Dacă o funcție nu primește argumente, atunci când este invocată, rezultatul **este întotdeauna același**(cu excepția cazului în care citește date din exterior): 
 

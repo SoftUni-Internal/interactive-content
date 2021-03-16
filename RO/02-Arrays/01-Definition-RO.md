@@ -95,7 +95,7 @@ console.log(numbers);
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Sum First and Last Array Elements
+# Problemă cu Soluție: Sum First and Last Array Elements
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/02.JS-Fundamentals-Arrays/02.JS-Fundamentals-Arrays-6-Solution-Sum-first-and-last-array-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -228,7 +228,7 @@ Primul element, Sunday, se află la indexul 6 al matricei.
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Days of Week
+# Problemă cu Soluție: Days of Week
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/02.JS-Fundamentals-Arrays/02.JS-Fundamentals-Arrays-8-Solution-Days-of-week-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Days of Week" taskId="fundamentals-js-arrays-lab-Days-of-Week" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]

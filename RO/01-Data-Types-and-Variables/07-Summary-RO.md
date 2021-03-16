@@ -6,41 +6,55 @@
 ## În această lecție ați învățat:
   - Există**opt tipuri de date**în JavaScript: 
     - number
+
     ```js
     let myNumber = 3.14;
     ```
+
     - string
+
     ```js
     let myString = 'Hello JavaScript!';
     ```
+
     - symbol
+
     ```js
     let mySymbol = 'R';
     ```
+
     - null
 
-     ```js
+    ```js
     let variable = null;
     ```
+
     - undefined
      ```js
     let variable = undefined;
     ```
     - object
-     ```js
-  let car = {type:'Tesla', model:'S', color:'white'};
+
+    ```js
+      let car = {type:'Tesla', model:'S', color:'white'};
     ```
-    - boolean
-     ```js
-    let bool = true;
-    ```
+
+   - boolean
+   
+```js
+let bool = true;
+```
+
   - `let` are domeniu de obiect, `var` domeniu funcțional
+
 - Prin  `typeof` putem obține tipul variabilei
+
 ``` js live
 let cars = ['Nio', 'Tesla', 'Xpeng'];
 
 console.log(typeof(cars));
 ```
+
 - `Null` este 'nimic', nedefinit există, dar este gol
 
 ## În lecția următoare, veți învăța despre:
