@@ -5,7 +5,7 @@
 
 ## In this lesson you learned:
 
-  - Data is stored within **variables**
+  - Data is stored in **variables**
 
 
   ```java
@@ -16,9 +16,9 @@
   String myText = "Goodbye";     
   ```
 
-  - Numeric types: 
-    - represent numbers
-    - have specific ranges for every type
+  - Numeric data types: 
+    - hold numbers
+    - have specific ranges depending on their type
 
 
     ```java
@@ -30,8 +30,8 @@
     ```
 
 
-  - String and text types: 
-    - represent text
+  - String and text data types: 
+    - hold text
     - strings are sequences of Unicode characters
 
     ```java
@@ -42,16 +42,16 @@
     String text = "Example";
     ```
 
-  - Type conversion: implicit and explicit
+  - There are two types of data type conversion: implicit and explicit
 
-  - Boolean can have only two possible values - **true** or **false**
+  - Booleans can hold only one of two possible values - **true** or **false**
 
 ## In the next lesson, you will learn:
 - Arrays
 - Reading Arrays from the console
-    - `For Loop` and `String.split()`
+    - Using a `For-Loop` in the process and the `String.split()` method
 - Printing Arrays to the console
-- The Foreach Loop
+- The For-each Loop
 [/slide]
 
 
