@@ -175,7 +175,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a method that receives **t23ates the result and returns it.
+Write a method that receives **two numbers** and an **operator**, calculates the result and returns it.
 
 You will be given **three lines of input**.
 
