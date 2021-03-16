@@ -87,6 +87,8 @@ Write a **regular expression** that **extracts dates from text**.
 [slide hideTitle]
 # Problem with Solution: Email Validation
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-13-Probelm-and-solution-email-validation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Write a regular expression that performs simple **email validation**
 
 - An email consists of: **username**, **@**, **domain name**
