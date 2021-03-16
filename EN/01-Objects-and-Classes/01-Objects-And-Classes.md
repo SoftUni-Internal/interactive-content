@@ -9,9 +9,9 @@ Everything in Java is associated with classes and objects, along with their fiel
 
 An object is a **basic unit** and an **instance of a class**.
 
-Classes define templates for objects like **fields**, **constructors**, and **methods**.
+Classes define templates for **fields**, **constructors**, and **methods**.
 
-An object represents **real-life subjects**. 
+Objects represent **real-life subjects**. 
 
 An object has:
 
@@ -21,11 +21,11 @@ An object has:
 
 - **identity** - Gives a **unique name** to an object
 
-In real life, dogs have a **breed** state and **barking** behavior.
+In real life, dogs have a **breed** state and a **barking** behavior.
 
 An object holds a set of **named values**.
 
-A birthday object, for example, will have values like `day`, `month`, `year` etc.
+A birthday object will have values like `day`, `month`, `year` etc.
 
 ```java live
 import java.time.LocalDate;
@@ -48,9 +48,7 @@ public class Main {
 
 Classes and objects are the **two main aspects** of object-orientated programming. 
 
-In programming classes provide the **structure for describing and creating objects**. 
-
-It builds the specification of a given type object from the real-world.
+Classes provide the **structure for describing and creating objects**. 
 
 Classes define: 
 
@@ -66,6 +64,7 @@ This is how **objects** can be derived from a **class**:
 - `LocalDate` - A sample **class**
 
 - `birthdayPeter` and `birthdayMaria` - Sample **objects**
+
 [/slide]
 
 [slide hideTitle]
@@ -73,13 +72,13 @@ This is how **objects** can be derived from a **class**:
 
 All entities with similar characteristics can be arranged in categories.
 
-For example, all animals are grouped in a single `class` and each animal is an `object` of that class.
+For example, all animals are grouped in a single **class** and each animal is an **object** of that class.
 
 [image assetsSrc="ObjectsAndClasses_RealLifeExample.png" /]
 
-Each animal has states like type, age, colour, preferred food, etc. and behaviour like eat, drink water, move, make sound, etc. 
+Each animal has а type, age, colour, preferred food, etc. and behaviour like eat, drink water, move, make sound, etc. 
 
-A class is like an object constructor, that contains all of their similar characteristics. 
+A class is like an object constructor that contains all of their similar characteristics. 
 
 It is a "blueprint" for creating objects.
 
@@ -93,19 +92,17 @@ It is a "blueprint" for creating objects.
 
 Creating an object based on a predefined class is called **instantiation**.
 
-The **instance** is the object itself, which is created at runtime.
+An **instance** is the object itself, which is created at runtime.
 
-All instances have common **behavior**. 
+All instances have common **behaviors**. 
 
 To create an object: 
 
-1) Declare the `main` **method**
+1) Specify the **class name** 
 
-2) Specify the **class name** 
+2) Set an **object name**
 
-3) Set an **object name**
-
-4) Use the `new` **keyword** 
+3) Use the `new` **keyword** 
 
 ```java
 public class Animal {
