@@ -10,20 +10,20 @@
 
 **1. Arrays**
 
-- What are arrays
+- Definition
 
 - Working with arrays
 
-- Arrays syntax
+- Array syntax
 
-**2. Reading Arrays from the Console**
+**2. Processing Arrays**
 
 - Reading an array from the console
 
 - Printing an array to the console
 
-**3. Foreach Loop**
+**3. The For-each Loop**
 
-- Printing Array with ForEach loop
+- Printing an Array using a For-Each loop
 
 [/slide]
