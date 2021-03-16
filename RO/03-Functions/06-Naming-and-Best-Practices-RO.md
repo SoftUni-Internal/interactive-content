@@ -7,7 +7,7 @@
 
 - Numele funcțiilor ar trebui să **descrie sarcina lor** într-un mod **clar** și **lipsit de ambiguități**
 - Numele lor trebuie să fie **semnificative și nu foarte lungi**
-- Ar trebui să răspundă la întrebarea:"**Ce face această funcție?**"
+- Ar trebui să răspundă la întrebarea: "**Ce face această funcție?**"
 
 Exemple pentru nume **bune**:
 ```js
@@ -45,7 +45,7 @@ p, p1, p2, populate, LastName, lastName
 
 [slide hideTitle]
 
-# Cele mai bune practici 
+# Cele mai Bune Practici 
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-29-naming-and-best-practices-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -82,10 +82,9 @@ function sum() {
 - Exemplu de o **funcție prost structurată:**
 
 ```js
-function sum()
-      {
-          // some code…
-// some more code…
+function sum() {
+    // some code…
+    // some more code…
 }
 ```
 

@@ -21,7 +21,7 @@ There are some contexts in which we cannot use them, and we will see why.
 
 ```js live
 let increment = function(x) {
-  return x + 1;
+   return x + 1;
 }
 
 console.log(increment(5));  

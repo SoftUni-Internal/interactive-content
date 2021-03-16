@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Conținutul lecției
+# Conținutul Lecției
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-1-2-introduction-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

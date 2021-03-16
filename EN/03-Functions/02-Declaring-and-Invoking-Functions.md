@@ -57,7 +57,7 @@ We can declare a function, and then we can invoke (call) the function by its nam
 
 ```js live
 function hLine() {
-  console.log('----------');
+    console.log('----------');
 }
 
 hLine();
@@ -91,8 +91,10 @@ We can also invoke a **function in its own body (recursion):**
 
 ``` js
 function countDown(x) {
-  console.log(x);
-  if (x > 0) { countDown(x - 1); }
+    console.log(x);
+    if (x > 0) {
+        countDown(x - 1);
+    }
 }
 ```
 
@@ -120,9 +122,9 @@ If a function does not receive arguments when invoked then **it will always prod
 
 ``` js live
 function printHeader() {
-  console.log('~~~-   {@}   -~~~');
-  console.log('~- Certificate -~');
-  console.log('~~~-  ~---~  -~~~');
+    console.log('~~~-   {@}   -~~~');
+    console.log('~- Certificate -~');
+    console.log('~~~-  ~---~  -~~~');
 }
 printHeader();
 ```
@@ -139,7 +141,7 @@ In this example we pass **two parameters** as an argument:
 
 ```js live
 function multiply(a, b) {
-  console.log(a*b);
+    console.log(a * b);
 }
 multiply(5, 7);
 ```

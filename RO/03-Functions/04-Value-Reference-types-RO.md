@@ -44,8 +44,11 @@ Când un obiect este trecut într-o metodă, metoda numită poate schimba conți
 
 
 ```js
-let cars = ['NIO', 'XPang', 'Tesla'];
-let obj = {firstName:'Maria', lastName:'Agarici'};
+let cars = ['Nio', 'XPang', 'Tesla'];
+let obj = {
+    firstName: 'Maria',
+    lastName: 'Agarici'
+};
 ```
 
 [/slide]

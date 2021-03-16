@@ -18,7 +18,7 @@ function myFunction(){
 
 ```js live
 function myFunction(){
-  console.log('Hello World!');
+   console.log('Hello World!');
 }
 
 myFunction();
@@ -28,7 +28,7 @@ myFunction();
 
 ```js live
 function myFunction(input){
-  console.log(input);
+   console.log(input);
 }
 
 myFunction('I love JavaScript!');

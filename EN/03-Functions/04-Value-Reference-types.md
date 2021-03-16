@@ -43,8 +43,11 @@ When an object is passed to a method, the called method can change the contents 
 Reference data types are: **object**, **array** and **function**.
 
 ```js
-let cars = ['NIO', 'XPang', 'Tesla'];
-let obj = {firstName:'Maria', lastName:'Agarici'};
+let cars = ['Nio', 'XPang', 'Tesla'];
+let obj = {
+    firstName: 'Maria',
+    lastName: 'Agarici'
+};
 ```
 
 [/slide]

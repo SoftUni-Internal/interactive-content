@@ -91,22 +91,24 @@ De asemenea, putem invoca o **funcție** **în propriul său corp (recursivitate
 
 ``` js
 function countDown(x) {
-  console.log(x);
-  if (x > 0) { countDown(x - 1); }
+    console.log(x);
+    if (x > 0) {
+        countDown(x - 1);
+    }
 }
 ```
-** Recursivitatea ** este procesul în care o funcție ** se invocă pe sine**.
+**Recursivitatea** este procesul în care o funcție **se invocă pe sine**.
 
-Astfel de funcții se numesc ** recursive **.
+Astfel de funcții se numesc **recursive**.
 
-Funcțiile recursive adecvate ** se opresc ** invocându-se atunci când se obține un ** rezultat ** dorit.
+Funcțiile recursive adecvate **se opresc** invocându-se atunci când se obține un **rezultat** dorit.
 
-Dacă ** nu există o astfel de condiție **, funcția se va numi ** la nesfârșit **.
+Dacă **nu există o astfel de condiție**, funcția se va numi **la nesfârșit**.
 
 [/slide]
 
 [slide hideTitle]
-# Funcții fără parametri
+# Funcții Fără Parametri
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-11-12-functions-with-and-without-parameters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -137,7 +139,7 @@ O funcție poate primi **orice număr și tip de argumente** atunci când este i
 
 ```js live
 function multiply(a, b) {
-  console.log(a*b);
+    console.log(a * b);
 }
 multiply(5, 7);
 ```

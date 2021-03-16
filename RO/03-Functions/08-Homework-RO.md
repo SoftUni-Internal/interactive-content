@@ -518,7 +518,7 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Veți primi un ** singur număr**.
+Veți primi un **singur număr**.
 
 Scrieți o funcție care returnează **suma** din **toate cifrele pare** și **toate cifrele impare** din acel număr.
 
@@ -617,7 +617,7 @@ Un palindrom este un număr care citit  **de la stânga la dreapta sau de la dre
 
 Scrieți o funcție care primește o **matrice de numere  întregi pozitive** și verificați dacă fiecare număr întreg este un palindrom sau nu.
 
-## Exemplul unu
+## Exemplul Unu
 |**Intrare**|**Ieșire** |
 | --- | --- |
 | palindrome([123, 323, 421, 121]) |  false |
@@ -625,7 +625,7 @@ Scrieți o funcție care primește o **matrice de numere  întregi pozitive** ș
 ||false|
 ||true|
 
-## Exemplul doi
+## Exemplul Doi
 |**Intrare**|**Ieșire** |
 | --- | --- |
 | palindrome([32, 2, 232, 1010]) |  false |
@@ -772,16 +772,16 @@ Dacă este **NU** este validă, pentru fiecare regulă neîmplinită tipăriți 
 
 - "**Password must have at least 2 digits**"
 
-## Exemplul unu
+## Exemplul Unu
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | passwordValidator('logIn') | Password must be between 6 and 10 characters |
 || Password must have at least 2 digits |
-## Exemplul  doi
+## Exemplul  Di
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | passwordValidator('MyPass123') | Password is valid |
-## Exemplul trei
+## Exemplul Trei
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | passwordValidator('Pa$s$s') | Password must consist only of letters and digits |
@@ -886,7 +886,7 @@ Password is valid
 [code-editor language=javascript]
 ```
 function matrix(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]

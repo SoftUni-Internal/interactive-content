@@ -16,7 +16,7 @@ function myFunction(){
 - Funcțiile sunt invocate prin tipărirea numele lor în codul programului 
 ```js live
 function myFunction(){
-  console.log('Hello JavaScript!');
+   console.log('Hello JavaScript!');
 }
 
 myFunction();
@@ -24,7 +24,7 @@ myFunction();
 - Funcțiile pot primi paramteri
 ```js live
 function myFunction(input){
-  console.log(input);
+   console.log(input);
 }
 
 myFunction('Hello JavaScript!');

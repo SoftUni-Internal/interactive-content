@@ -87,10 +87,9 @@ function sum() {
 - Example of a **badly structured function:**
 
 ```js
-function sum()
-      {
-          // some code…
-// some more code…
+function sum() {
+    // some code…
+    // some more code…
 }
 ```
 
