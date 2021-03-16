@@ -1,7 +1,7 @@
 // sectionId: "Javascript::Programming-Basics::Conditional-Statements::If-Else"
 
 [slide hideTitle]
-# Condiții If-Else
+# Condiții if-else
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/02-Conditions/02-conditional-statements-js-17-if-else-conditions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

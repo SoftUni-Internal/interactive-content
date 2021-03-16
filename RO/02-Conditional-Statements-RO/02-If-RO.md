@@ -1,6 +1,6 @@
 // sectionId: "Javascript::Programming-Basics::Conditional-Statements::If"
 
-# Condiții simple if
+# Condiții Simple "if"
 [slide hideTitle]
 # Exemplu din Viață Reală: Udarea Plantelor 
 
