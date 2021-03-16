@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Reading a Multidimensional Array
+# Reading and Printing a Multidimensional Array
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/interactive-java-advanced-multidimensional-arrays-11-Reading-A-Matrix-Example-And-Demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -36,11 +36,7 @@ for (int row = 0; row < rows; row++) {
 - Next, we need an inner loop that will traverse through the column of a particular one-dimensional array
 - At the end we set the actual value of our matrix
 
-
-[/slide]
-
-[slide hideTitle]
-# Printing a Multidimensional Array
+This is one of the standard ways to print a two-dimensional array.
 
 ```java live
 int[][] matrix = {{1, 2, 3, 4},
@@ -59,7 +55,6 @@ for (int row = 0; row < matrix.length; row++) {
     System.out.println();
 }
 ```
-This is one of the standard ways to print a two-dimensional array.
 
 We access each element of the array one by one and print them separated by a space.
 [/slide]
