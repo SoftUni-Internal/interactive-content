@@ -84,7 +84,7 @@ function subtract() {
 
 Our code is ready now. 
 
-## Submit
+## Submit
 
 Submit only the `subtract()` function.
 
@@ -173,7 +173,7 @@ function fillDropdown(){
 
 Your task is to take values from **input** fields with **id**s "**newItemText**" and "**newItemValue**".
 
-Then you should **create** and **append** an `<option>` to the `<select>` with id "**menu**".
+Then you should **create** and **append** an `<option>` to the `<select>` with an **id** of "**menu**".
 
 ## Example
 
@@ -340,7 +340,7 @@ The link action should be **toggleable** (you should be able to **click** the bu
 
 However, that returns a **collection** and we need only **one** element from it, so the correct way is to use `getElementsByClassName("button")[0]` as it will return the needed `span` element.
 
-- After that, we should change the **display style** of the `div` with an id "**extra**"
+- After that, we should change the **display style** of the `div` with an id of "**extra**"
 
 If the display style is "**none**", we should **change** it to "**block**" and the **opposite**
 
@@ -485,8 +485,7 @@ Write a **function that orders names alphabetically.**
 
 You will receive a **name of a student as an input.**
 
-When the **"Register"** button is **clicked**, you should
-add the given student name in the SoftUni Database, while **keeping** the **alphabetical order.**
+When the **"Register"** button is **clicked**, you should add the given student name in the SoftUni Database, while **keeping** the **alphabetical order.**
 
 For instance, if we register **David**, his name should appear in the **D** column.
 
@@ -494,8 +493,7 @@ For instance, if we register **David**, his name should appear in the **D** colu
 
 [image assetsSrc="JS-Advanced-DOM-Homework-9.jpg" /]
 
-If you **receive more than one name with the same starting letter**, you should **join all names** by a
-comma and a space **(", ")**.
+If you **receive more than one name with the same starting letter**, you should **join all names** by acomma and a space **(", ")**.
 
 [image assetsSrc="JS-Advanced-DOM-Homework-10.jpg" /]
 
@@ -1850,8 +1848,7 @@ The given number will always be in **decimal format.**
 
 The "**From**" select menu will only have a **Decimal** option, but the "**To**" select menu will have **two options:** **binary** and **hexadeicmal**.
 
-This means that our program should have the functionality to **convert decimal** to **binary** and
-**decimal** to **hexadecimal**.
+This means that our program should have the functionality to **convert decimal** to **binary** and **decimal** to **hexadecimal**.
 
 Note that the "**To**" **select menu** is empty by default.
 
