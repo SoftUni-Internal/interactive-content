@@ -6,7 +6,7 @@
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-3-4-complex-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-# Buclele  for pot avea pași diferiți
+## Buclele  for pot avea pași diferiți
 
 * Bucla for inversată
 
@@ -45,7 +45,7 @@ for (let d = 40; d > 0; d /= 2) {
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Numbers from N down to 1
+# Problemă cu Soluție: Numbers Drom N Down to 1S
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-5-6-solution-numbers-from-n-down-to-one-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -80,16 +80,25 @@ Creați un program pentru a imprima numerele de la N până la 1.
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | numbersFromNto1(5) | 5, 4, 3, 2, 1 |
+| numbersFromNto1(10)| 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 |
 
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 numbersFromNto1(5)
 [/input]
 [output]
 5, 4, 3, 2, 1
+[/output]
+[/test]
+[test open]
+[input]
+numbersFromNto1(10)
+[/input]
+[output]
+10, 9, 8, 7, 6, 5, 4, 3, 2, 1
 [/output]
 [/test]
 [test]
@@ -131,7 +140,7 @@ numbersFromNto1(1)
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Numbers from 1 to N with Step 3
+# Problemă cu Soluție: Numbers from 1 to N With Step 3
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-7-8-numbers-from-one-to-n-with-step-three-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -169,7 +178,15 @@ Creați un program pentru a imprima numerele de la 1 la **n** cu pasul 3:
 
 [/task-description]
 [tests]
-[test]
+[test open]
+[input]
+numbersFrom1ton(7)
+[/input]
+[output]
+1, 4, 7
+[/output]
+[/test]
+[test opne]
 [input]
 numbersFrom1ton(10)
 [/input]
@@ -216,7 +233,7 @@ numbersFrom1ton(30)
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Even Powers of 2
+# Problemă cu Soluție: Even Powers of 2
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-9-10-even-powers-of-two-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -244,9 +261,9 @@ Creați un program pentru a imprima puterile pare cu 2:
 
 Creați un program, care imprimă toate puterile uniforme de 2 până la o intrare dată:
 
-* Veți primi un număr ** n ** ca intrare
+* Veți primi un număr **n** ca intrare
 
-* Imprimați puterile pare de 2 până la ** n **:
+* Imprimați puterile pare de 2 până la **n**
 
 # Exemplu
 
@@ -257,7 +274,15 @@ Creați un program, care imprimă toate puterile uniforme de 2 până la o intra
 
 [/task-description]
 [tests]
-[test]
+[test open]
+[input]
+evenPowersOfTwo(5)
+[/input]
+[output]
+1, 4, 16
+[/output]
+[/test]
+[test open]
 [input]
 evenPowersOfTwo(10)
 [/input]

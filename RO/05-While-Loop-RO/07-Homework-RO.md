@@ -758,11 +758,11 @@ function adapter(input, code) {
 Creați un program care gestionează soldul unui cont: 
 
 * Veți primi **suma de bani** pentru fiecare tranzacție până când ajungeți la comanda **END**
-* **Adunați** banii la **sold** și **tipăriți*: "**Increase:** \{**money**\}", formatați `money` până la a **doua zecimală** după virgulă
+* **Adunați** banii la **sold** și **tipăriți**: "**Increase:** \{**money**\}", formatați `money` până la a **doua zecimală** după virgulă
 * După **END** calculați și **imprimați** soldul total: "**Total:** \{**balance**\}", formatați `balance` până la a **doua zecimală** după virgulă
 
 # Exemplu
-  | **Intrare* | **Ieșire** |
+  | **Intrare** | **Ieșire** |
 | --- | --- |
 | accountBalance(['5.51', '69.42', '100', 'END'])| Increase: 5.51 |
 ||Increase: 69.42|

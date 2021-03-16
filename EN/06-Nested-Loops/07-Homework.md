@@ -30,9 +30,9 @@ Create a program, which prints the following information about a building:
 
 * You will receive two numbers: the number of floors and how many rooms each floor has
 * The building can hold: **apartments (odd numbered floors)**, **offices (even numbered floors)** and **(on the last floor) Large Apartments** 
-* Apartments are indexed with: **A**\{**buildingNum**\}\{**apartmentNum**\}
-* Offices are indexed with: **O**\{**floorNum**\}\{**officeNum**\}
-* Large apartments are indexed with: **L**\{**buildingNum**\}\{**apartmentNum**\}
+* Apartments are indexed with: "**A**\{**buildingNum**\}\{**apartmentNum**\}"
+* Offices are indexed with: "**O**\{**floorNum**\}\{**officeNum**\}"
+* Large apartments are indexed with: "**L**\{**buildingNum**\}\{**apartmentNum**\}"
 * The numbers always start from 0
 
 # Example
@@ -44,11 +44,28 @@ Create a program, which prints the following information about a building:
 ||A30 A31 A32 A33 |
 ||O20 O21 O22 O23 |
 || A10 A11 A12 A13|
+
+
+| **Input** | **Output** |
+| --- | --- |
 | building(2, 5) | L20 L21 L22 L23 L24|
 || A10 A11 A12 A13 A14|
 
 [/task-description]
 [tests]
+[test open]
+[input]
+building(6, 4)
+[/input]
+[output]
+L60 L61 L62 L63
+A50 A51 A52 A53
+O40 O41 O42 O43
+A30 A31 A32 A33
+O20 O21 O22 O23
+A10 A11 A12 A13
+[/output]
+[/test]
 [test]
 [input]
 bulding(1, 7)
@@ -65,7 +82,7 @@ building(0, 0)
 
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 building(2, 5)
 [/input]
@@ -209,6 +226,14 @@ Create a program, which generates custom passwords:
 [tests]
 [test]
 [input]
+passwords(6)
+[/input]
+[output]
+212 236 2510 414 4312 4520 616 6318 6530
+[/output]
+[/test]
+[test]
+[input]
 passwords(8)
 [/input]
 [output]
@@ -239,7 +264,7 @@ passwords(3)
 212 236
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 passwords(2)
 [/input]
@@ -296,12 +321,15 @@ Create a program, which finds all the magic numbers based on the following condi
 * You will receive a number **n** from the console
 * Find all **3-digit numbers** for which the product of the multiplication of their separate digits is equal to **n** 
 
-# Example
+# Examples
 | **Input** | **Output** |
 | --- | --- |
 | magicNumber(3) | 113 |
 || 131 |
 || 311 |
+
+| **Input** | **Output** |
+| --- | --- |
 | magicNumber(4)| 114 |
 || 122 |
 || 141 |
@@ -311,7 +339,17 @@ Create a program, which finds all the magic numbers based on the following condi
  
 [/task-description]
 [tests]
-[test]
+[test open]
+[input]
+magicNumber(3)
+[/input]
+[output]
+113
+131
+311
+[/output]
+[/test]
+[test open]
 [input]
 magicNumber(4)
 [/input]
@@ -445,14 +483,27 @@ Create a program, which saves money, needed to visit a given destination:
 * You should continue processing numbers - amounts of money, until you have **enough** money to go on the trip 
 * If you receive the command **End** the program ends
 
-# Example
+# Examples
 | **Input** | **Output** |
 | --- | --- |
 | travelling(['Philippines', 1000, 550, 450, 'End']) | Going to Philippines! |
-| travelling(['End']) | |
+
+
+| **Input** | **Output** |
+| --- | --- |
+| travelling(['Greece', 1000, 200, 200, 300, 100, 150, 240, 'Spain', 1200, 300, 500, 193, 423, 'End']) | Going to Greece! |
+||Going to Spain!|
 
 [/task-description]
 [tests]
+[test open]
+[input]
+travelling(['Philippines', 1000, 550, 450, 'End'])
+[/input]
+[output]
+Going to Philippines!
+[/output]
+[/test]
 [test open]
 [input]
 travelling(['Greece', 1000, 200, 200, 300, 100, 150, 240, 'Spain', 1200, 300, 500, 193, 423, 'End'])
@@ -462,7 +513,7 @@ Going to Greece!
 Going to Spain!
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 travelling(['France', 2000, 300, 300, 200, 400, 190, 258, 360, 'Portugal', 1450, 400, 400, 200, 300, 300, 'Egypt', 1900, 1000, 280, 300, 500, 'End'])
 [/input]
@@ -612,6 +663,22 @@ A prime number is a whole number that cannot be created by multiplying other who
 
 [/task-description]
 [tests]
+[test open]
+[input]
+primeNumbers(1, 50)
+[/input]
+[output]
+1 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47
+[/output]
+[/test]
+[test open]
+[input]
+prmeNumbers(10, 30)
+[/input]
+[output]
+11 13 17 19 23 29
+[/output]
+[/test]
 [test]
 [input]
 primeNumbers(1, 4)
@@ -699,13 +766,13 @@ Create a program, which generates unique PIN codes:
 
 - You will receive 3 digits **n1, n2 and n3**
 - Generate **unique 3-digit PIN Codes**, which meet the following **criteria**:
-  - The **first** digit should not be greater than n1
-  - The **second** digit should not be greater than n2
-  - The **third** digit should not be greater than n3
-  - The **first** and the **third** digits must be even
-  - The second digit must be a **prime number** in the range \[2…7\]
+  - the **first** digit should not be greater than n1
+  - the **second** digit should not be greater than n2
+  - the **third** digit should not be greater than n3
+  - the **first** and the **third** digits must be even
+  - the second digit must be a **prime number** in the range \[2…7\]
 
-# Example
+# Examples
 | **Input** | **Output** |
 | --- | --- |
 | uniquePinCodes(3, 5, 5) | 222 |
@@ -714,6 +781,10 @@ Create a program, which generates unique PIN codes:
 || 234 |
 || 252 |
 || 254 |
+
+
+| **Input** | **Output** |
+| --- | --- |
 | uniquePinCodes(2, 4, 6) | 222 |
 || 224 |
 || 226 |
@@ -723,6 +794,32 @@ Create a program, which generates unique PIN codes:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+uniquePinCodes(3, 5, 5)
+[/input]
+[output]
+222
+224
+232
+234
+252
+254
+[/output]
+[/test]
+[test open]
+[input]
+uniquePinCodes(2, 4, 6)
+[/input]
+[output]
+222
+224
+226
+232
+234
+236
+[/output]
+[/test]
 [test]
 [input]
 uniquePinCodes(8, 2, 8)
@@ -897,11 +994,10 @@ Create a program, which prints **letter combinations** and the **number** of gen
 | **Input** | **Output** |
 | --- | --- |
 | letterCombinations('a', 'c', 'b') | aaa aac aca acc caa cac cca ccc 8 |
-| letterCombinations('d', 'a', 'x') | 0 |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 letterCombinations('a', 'c', 'b')
 [/input]
@@ -997,8 +1093,8 @@ Create a program, which generates all **4 digit numbers** with digits less than 
 - You will receive a number **n** as an input:
 
 - Print the combinations which meet the following requirements:
-  - When you split the number into two pairs and add the first digit to the second one of each pair - the result equals **n**
-  - When you add the first two, the result should be divisible by **n** without a remainder
+  - when you split the number into two pairs and add the first digit to the second one of each pair - the result equals **n**
+  - when you add the first two, the result should be divisible by **n** without a remainder
 
 # Example
 | **Input** | **Output** |
@@ -1025,7 +1121,7 @@ happyNumbers(6)
 1111 1212 1221 1515 1524 1533 1542 1551 2112 2121 2415 2424 2433 2442 2451 3315 3324 3333 3342 3351 4215 4224 4233 4242 4251 5115 5124 5133 5142 5151
 [/output]
 [/test]
-[test]
+[test opne]
 [input]
 happyNumbers(2)
 [/input]

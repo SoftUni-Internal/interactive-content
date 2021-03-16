@@ -81,12 +81,20 @@ Create a program, which prints the numbers from **n** down to 1.
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 numbersFromNto1(5)
 [/input]
 [output]
 5, 4, 3, 2, 1
+[/output]
+[/test]
+[test open]
+[input]
+numbersFromNto1(10)
+[/input]
+[output]
+10, 9, 8, 7, 6, 5, 4, 3, 2, 1
 [/output]
 [/test]
 [test]
@@ -166,7 +174,15 @@ Create a program, which prints the numbers from 1 to **n** with a step 3:
 
 [/task-description]
 [tests]
-[test]
+[test open]
+[input]
+numbersFrom1ton(7)
+[/input]
+[output]
+1, 4, 7
+[/output]
+[/test]
+[test opne]
 [input]
 numbersFrom1ton(10)
 [/input]
@@ -250,7 +266,15 @@ Create a program, which prints all the even powers of 2 up to a given input:
 
 [/task-description]
 [tests]
-[test]
+[test open]
+[input]
+evenPowersOfTwo(5)
+[/input]
+[output]
+1, 4, 16
+[/output]
+[/test]
+[test open]
 [input]
 evenPowersOfTwo(10)
 [/input]

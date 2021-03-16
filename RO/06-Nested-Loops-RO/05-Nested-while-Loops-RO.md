@@ -1,7 +1,7 @@
 // sectionId: "Javascript::Programming-Basics::Nested-Loops::Nested-While-Loops"
 
 [slide hideTitle]
-# Bucle imbricate
+# Bucle Imbricate
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-22-23-nested-wihle-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -42,7 +42,7 @@ while (row <= 2) {
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Triangle With Stars Stelelor With While
+# Problemă cu Soluție: Triangle with Stars Stelelor with While
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-25-26-solution-triangle-of-stars-with-while-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -69,6 +69,7 @@ Creați un program care imprimă un triunghi de stele cu o anumită dimensiune
 
 * Primiți **înălțimea** unui triunghi de pe consolă 
 * Imprimați un **un triunghi de stele** pe consolă
+
 # Exemplu
 | **Intrare** | **Ieșire**| 
 | --- | --- |
@@ -81,9 +82,9 @@ Creați un program care imprimă un triunghi de stele cu o anumită dimensiune
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
-triangleOfStars(6)
+triangleOfStars(5)
 [/input]
 [output]
 \*
@@ -96,7 +97,7 @@ triangleOfStars(6)
 [/test]
 [test]
 [input]
-triangleOfStars(7)
+triangleOfStars(6)
 [/input]
 [output]
 \*
@@ -110,7 +111,7 @@ triangleOfStars(7)
 [/test]
 [test]
 [input]
-triangleOfStars(9)
+triangleOfStars(8)
 [/input]
 [output]
 \*
@@ -127,6 +128,7 @@ triangleOfStars(9)
 [/tests]
 [/code-task]
 [/slide]
+
 
 
 
@@ -165,16 +167,43 @@ Citiți continuu numerele, până când este introdus **End**:
 # Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
-|`['157', 99', 5', '438', 'End']`|Sum of digits = 13 |
-||Sum of digits = 13|
-||Sum of digits = 18|
-||Sum of digits = 5|
-||Sum of digits = 15|
+| sumOfDigits(['157', 99', 5', '438', 'End']) |Sum of digits: 13 |
+||Sum of digits: 18|
+||Sum of digits: 5|
+||Sum of digits: 15|
+||Goodbye|
+
+| **Intrare** | **Ieșire** |
+| --- | --- |
+| sumOfDigits(['33', '52', 'END']) | Sum of digits: 6 |
+||Sum of digits: 7 |
 ||Goodbye|
 
 
 [/task-description]
 [tests]
+[test open]
+[input]
+sumOfDigits(['157', 99', 5', '438', 'End'])
+[/input]
+[output]
+Sum of digits: 13
+Sum of digits: 18
+Sum of digits: 5
+Sum of digits: 15
+Goodbye
+[/output]
+[/test]
+[test open]
+[input]
+sumOfDigits(['33', '52', 'END'])
+[/input]
+[output]
+Sum of digits: 6
+Sum of digits: 7
+Goodbye
+[/output]
+[/test]
 [test]
 [input]
 sumOfDigits(['124', '33', '2', '563', 'End'])

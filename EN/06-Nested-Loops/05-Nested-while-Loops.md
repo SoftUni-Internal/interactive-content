@@ -77,16 +77,13 @@ Create a program, which prints a triangle of stars with a given size:
 | | \*\*\* |
 |  | \*\*\*\* |
 | | \*\*\*\*\* |
-| triangleOfStars(3) | \* |
-| | \*\* |
-| | \*\*\* |
 
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
-triangleOfStars(6)
+triangleOfStars(5)
 [/input]
 [output]
 \*
@@ -99,7 +96,7 @@ triangleOfStars(6)
 [/test]
 [test]
 [input]
-triangleOfStars(7)
+triangleOfStars(6)
 [/input]
 [output]
 \*
@@ -113,7 +110,7 @@ triangleOfStars(7)
 [/test]
 [test]
 [input]
-triangleOfStars(9)
+triangleOfStars(8)
 [/input]
 [output]
 \*
@@ -168,18 +165,43 @@ Create a program, which processes a sequence of numbers and prints the sum of th
 # Example
 | **Input** | **Output** |
 | --- | --- |
-| sumOfDigits(['157', 99', 5', '438', 'End']) |Sum of digits = 13 |
-||Sum of digits = 18|
-||Sum of digits = 5|
-||Sum of digits = 15|
+| sumOfDigits(['157', 99', 5', '438', 'End']) |Sum of digits: 13 |
+||Sum of digits: 18|
+||Sum of digits: 5|
+||Sum of digits: 15|
 ||Goodbye|
-| sumOfDigits(['33', '52', 'END']) | Sum of digits = 6 |
-||Sum of digits = 7 |
+
+| **Input** | **Output** |
+| --- | --- |
+| sumOfDigits(['33', '52', 'END']) | Sum of digits: 6 |
+||Sum of digits: 7 |
 ||Goodbye|
 
 
 [/task-description]
 [tests]
+[test open]
+[input]
+sumOfDigits(['157', 99', 5', '438', 'End'])
+[/input]
+[output]
+Sum of digits: 13
+Sum of digits: 18
+Sum of digits: 5
+Sum of digits: 15
+Goodbye
+[/output]
+[/test]
+[test open]
+[input]
+sumOfDigits(['33', '52', 'END'])
+[/input]
+[output]
+Sum of digits: 6
+Sum of digits: 7
+Goodbye
+[/output]
+[/test]
 [test]
 [input]
 sumOfDigits(['124', '33', '2', '563', 'End'])

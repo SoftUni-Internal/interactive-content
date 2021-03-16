@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Bucle "for" imbricate
+# Bucle "for" Imbricate
 
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-17-18-nested-for-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
@@ -10,7 +10,7 @@
 
 Buclele imbricate sunt instrucțiuni care constă în mai multe bucle for situate una în cealaltă
 
-Buclele for sunt folosite**:
+Buclele for sunt folosite:
 
 * Pentru a executa o **acțiune**, care **execută** mai multe **acțiuni**
 * Pentru a face calcule și variante mai **complexe**
@@ -65,7 +65,7 @@ for (let r = 0; r <= rows; r++) {
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Triangle of Stars
+# Problemă cu Soluție: Triangle of Stars
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-21-solution-triangle-of-stars-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -93,6 +93,7 @@ Creați un program care care imprimă un triunghi de stele cu o anumită dimensi
 
 * Primiți **înălțimea** unui triunghi de pe consolă
 * Tipărește un **triunghi de stele**
+
 # Exemplu
 | **Intrare** | **Ieșire**| 
 | --- | --- |
@@ -105,7 +106,7 @@ Creați un program care care imprimă un triunghi de stele cu o anumită dimensi
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 triangleOfStars(5)
 [/input]

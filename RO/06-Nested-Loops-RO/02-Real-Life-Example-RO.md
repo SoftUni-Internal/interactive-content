@@ -8,13 +8,13 @@
 
 [image assetsSrc="06-nested-loops-clock-1159.png" /]
 
-[image assetsSrc="06-nested-loops-clock-1200.png" /]
-
 Imaginați-vă că ora curentă este **11:00 AM.**
 
 Minutele de pe ceas vor crește treptat cu **1 până când vor ajunge la 59.**
 
 După ce ajung la 60, orele vor fi incrementate cu 1, iar minutele vor fi resetate la 00.
+
+[image assetsSrc="06-nested-loops-clock-1200.png" /]
 
 Putem reprezenta acest proces folosind **buclele for.**
 
@@ -24,7 +24,8 @@ După cum puteți vedea în exemplul de pseudocod, există două Bucle for: una 
 
 Cea exterioară reprezintă orele, în timp ce cea interoară- minutele.
 
-# Pseudocode
+## Pseudocode
+
 ```
 for h which is in range from 0 to 23
     for m which is in range from 0 to 59

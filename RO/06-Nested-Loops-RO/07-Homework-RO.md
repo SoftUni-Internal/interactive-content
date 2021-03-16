@@ -11,7 +11,7 @@
 [code-editor language=javascript]
 ```
 function building(floors, rooms) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -30,10 +30,10 @@ Creați un program care imprimă următoarele informații despre o clădire:
 
 Imprimă informațiile despre o clădire: 
 * Veți primi două numere: numărul de etaje și câte camere are fiecare etaj
-* Clădirea poate găzdui: ** apartamente (etaje cu număr impar) **, ** birouri (etaje cu număr par) ** și ** (la ultimul etaj) Apartamente mari **
-* Apartamentele sunt indexate cu: ** A ** \ {** buildingNum ** \} \ {** apartmentNum ** \}
-* Birourile sunt indexate cu: ** O ** \ {** floorNum ** \} \ {** officeNum ** \}
-* Apartamentele mari sunt indexate cu: ** L ** \ {** buildingNum ** \} \ {** apartmentNum ** \}
+* Clădirea poate găzdui: **apartamente (etaje cu număr impar)**, **birouri (etaje cu număr par)** și **(la ultimul etaj) Apartamente mari**
+* Apartamentele sunt indexate cu:  "**A**\{**buildingNum**\}\{**apartmentNum**\}"
+* Birourile sunt indexate cu: "**O**\{**floorNum**\}\{**officeNum**\}"
+* Apartamentele mari sunt indexate cu: "**L**\{**buildingNum**\}\{**apartmentNum**\}"
 * Numerele încep întotdeauna de la 0
 
 # Exemplu
@@ -46,8 +46,26 @@ Imprimă informațiile despre o clădire:
 ||O20 O21 O22 O23 |
 || A10 A11 A12 A13|
 
+| **Intrare** | **Ieșire** |
+| --- | --- |
+| building(2, 5) | L20 L21 L22 L23 L24|
+|| A10 A11 A12 A13 A14|
+
 [/task-description]
 [tests]
+[test open]
+[input]
+building(6, 4)
+[/input]
+[output]
+L60 L61 L62 L63
+A50 A51 A52 A53
+O40 O41 O42 O43
+A30 A31 A32 A33
+O20 O21 O22 O23
+A10 A11 A12 A13
+[/output]
+[/test]
 [test]
 [input]
 bulding(1, 7)
@@ -64,7 +82,7 @@ building(0, 0)
 
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 building(2, 5)
 [/input]
@@ -175,7 +193,7 @@ A10 A11 A12
 [code-editor language=javascript]
 ```
 function passwords(input) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -202,9 +220,18 @@ Creați un program care generează parole customizate:
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | passwords(6) | 212 236 2510 414 4312 4520 616 6318 6530 |
+| passwords(2) | 212 |
 
 [/task-description]
 [tests]
+[test]
+[input]
+passwords(6)
+[/input]
+[output]
+212 236 2510 414 4312 4520 616 6318 6530
+[/output]
+[/test]
 [test]
 [input]
 passwords(8)
@@ -237,7 +264,7 @@ passwords(3)
 212 236
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 passwords(2)
 [/input]
@@ -299,9 +326,28 @@ Creați un program care găsește toate numerele magice conform următoarelor co
 || 131 |
 || 311 |
  
+| **Intrare** | **Ieșire** |
+| --- | --- |
+| magicNumber(4)| 114 |
+|| 122 |
+|| 141 |
+|| 212 |
+|| 221 |
+|| 411 |
+ 
 [/task-description]
 [tests]
-[test]
+[test open]
+[input]
+magicNumber(3)
+[/input]
+[output]
+113
+131
+311
+[/output]
+[/test]
+[test open]
 [input]
 magicNumber(4)
 [/input]
@@ -438,10 +484,23 @@ Creați un program care economisește banii necesari pentru a vizita o destinaț
 # Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
-| travelling(['Philippines', 1000, 550, 450, End]) | Going to Philippines! |
+| travelling(['Philippines', 1000, 550, 450, 'End']) | Going to Philippines! |
+
+| **Intrare** | **Ieșire** |
+| --- | --- |
+| travelling(['Greece', 1000, 200, 200, 300, 100, 150, 240, 'Spain', 1200, 300, 500, 193, 423, 'End']) | Going to Greece! |
+||Going to Spain!|
 
 [/task-description]
 [tests]
+[test open]
+[input]
+travelling(['Philippines', 1000, 550, 450, 'End'])
+[/input]
+[output]
+Going to Philippines!
+[/output]
+[/test]
 [test open]
 [input]
 travelling(['Greece', 1000, 200, 200, 300, 100, 150, 240, 'Spain', 1200, 300, 500, 193, 423, 'End'])
@@ -451,7 +510,7 @@ Going to Greece!
 Going to Spain!
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 travelling(['France', 2000, 300, 300, 200, 400, 190, 258, 360, 'Portugal', 1450, 400, 400, 200, 300, 300, 'Egypt', 1900, 1000, 280, 300, 500, 'End'])
 [/input]
@@ -591,15 +650,32 @@ Creați un program care imprimă toate numerele prime dintr-un interval dat
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | primeNumbers(1, 50) | 1 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 |
+| prmeNumbers(10, 30) | 11 13 17 19 23 29 |
 
 [hints]
 [hint]
-A prime number is a whole number that cannot be created by multiplying other whole numbers.
+Un număr prim este un număr întreg care nu poate fi creat prin înmulțirea altor numere întregi.
 [/hint]
 [/hints]
  
 [/task-description]
 [tests]
+[test open]
+[input]
+primeNumbers(1, 50)
+[/input]
+[output]
+1 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47
+[/output]
+[/test]
+[test open]
+[input]
+prmeNumbers(10, 30)
+[/input]
+[output]
+11 13 17 19 23 29
+[/output]
+[/test]
 [test]
 [input]
 primeNumbers(1, 4)
@@ -684,13 +760,15 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 Creați un program care generază coduri PIN unice:
+
 Veți primi **3 cifre** - n1, n2 și n3
+
 * Generați **Coduri PIN unice cu 3 cifre** care îndeplinesc următoarele **condiții**:
-* **Prima** cifră  nu trebuie să fie mai mare decât n1
-* **A doua** cifră nu trebuie să fie mai mare decât n2
-* **A treia** cifră  nu trebuie să fie mai mare decât n3
-* Prima cifra și cea a treia cifră trebuie să fie impare
-* Cea a doua cifră trebuie să fie **primul număr** din interval \[2…7\]
+  * **prima** cifră  nu trebuie să fie mai mare decât n1
+  * **a doua** cifră nu trebuie să fie mai mare decât n2
+  * **a treia** cifră  nu trebuie să fie mai mare decât n3
+  * prima cifra și cea a treia cifră trebuie să fie impare
+  * cea a doua cifră trebuie să fie **primul număr** din interval \[2…7\]
 
 # Exemplu
 | **Intrare** | **Ieșire** |
@@ -702,8 +780,43 @@ Veți primi **3 cifre** - n1, n2 și n3
 || 252 |
 || 254 |
 
+| **Intrare** | **Ieșire** |
+| --- | --- |
+| uniquePinCodes(2, 4, 6) | 222 |
+|| 224 |
+|| 226 |
+|| 232 |
+|| 234 |
+|| 236 |
+
 [/task-description]
 [tests]
+[test open]
+[input]
+uniquePinCodes(3, 5, 5)
+[/input]
+[output]
+222
+224
+232
+234
+252
+254
+[/output]
+[/test]
+[test open]
+[input]
+uniquePinCodes(2, 4, 6)
+[/input]
+[output]
+222
+224
+226
+232
+234
+236
+[/output]
+[/test]
 [test]
 [input]
 uniquePinCodes(8, 2, 8)
@@ -881,7 +994,7 @@ Creați un program care imprimă **combinații de litere** și **numărul* combi
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 letterCombinations('a', 'c', 'b')
 [/input]
@@ -973,17 +1086,18 @@ function adapter(input, code) {
 [task-description]
 # Decriere
 Creați un program care generează toate **numerele cu 4 cifre** cu cifre mai mici decât un număr n  dat: 
-- Veți primi un număr ** n ** ca intrare:
+
+- Veți primi un număr **n** ca intrare:
 
 - Imprimați combinațiile care îndeplinesc următoarele cerințe:
-   - Când împărțiți numărul în două perechi și adăugați prima cifră la a doua din fiecare pereche - rezultatul este egal cu ** n **
-   - Când adăugați primele două, rezultatul ar trebui să fie divizibil cu ** n ** fără rest
+   - când împărțiți numărul în două perechi și adăugați prima cifră la a doua din fiecare pereche - rezultatul este egal cu **n**
+   - când adăugați primele două, rezultatul ar trebui să fie divizibil cu **n** fără rest
 
 # Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | happyNumbers(3) | 1212 1221 2112 2121 |
-
+| happyNumbers(2) | 1111 |
 
 [/task-description]
 [tests]
@@ -1003,7 +1117,7 @@ happyNumbers(6)
 1111 1212 1221 1515 1524 1533 1542 1551 2112 2121 2415 2424 2433 2442 2451 3315 3324 3333 3342 3351 4215 4224 4233 4242 4251 5115 5124 5133 5142 5151
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 happyNumbers(2)
 [/input]

@@ -8,7 +8,7 @@
 ## In this lesson you learned:
 
 - **For-loops** can use different **steps**
-   - E.g. `i += 2` or `i *= 2` or `i = i * i`
+   - e.g. `i += 2` or `i *= 2` or `i = i * i`
 - **Nested loops** are loops, placed **within another loop**
 
 ```js

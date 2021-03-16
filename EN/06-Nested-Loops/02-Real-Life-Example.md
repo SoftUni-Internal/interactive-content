@@ -7,13 +7,13 @@
 
 [image assetsSrc="06-nested-loops-clock-1159.png" /]
 
-[image assetsSrc="06-nested-loops-clock-1200.png" /]
-
 Imagine the current time is **11:00 AM.** 
 
 The minutes on the clock will gradually increase by **1 until they reach 59.** 
 
 Once they get to 60, the hours will be incremented by 1 and the minutes will reset back to 00. 
+
+[image assetsSrc="06-nested-loops-clock-1200.png" /]
 
 We can represent this process using **for-loops**.
 
@@ -23,7 +23,8 @@ As you can see in the pseudocode example there are two loops: an inner and an ou
 
 The outer one represents the hours, while the inner one - the minutes. 
 
-# Pseudocode
+## Pseudocode
+
 ```
 for h which is in the range from 0 to 23
     for m which is in the range from 0 to 59

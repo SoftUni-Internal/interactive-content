@@ -95,14 +95,11 @@ Create a program, which prints a triangle of stars with a given size:
 | | \*\*\* |
 |  | \*\*\*\* |
 | | \*\*\*\*\* |
-| triangleOfStars(3)| \* |
-| | \*\* |
-| | \*\*\* |
 
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 triangleOfStars(5)
 [/input]
