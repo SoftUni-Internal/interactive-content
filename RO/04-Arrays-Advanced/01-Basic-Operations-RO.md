@@ -29,7 +29,7 @@ Practic, aceste metode modifică matricea și nu este nevoie să scriem o grăma
 
 [slide hideTitle]
 
-# Adăugați la sfârșit, eliminați la sfârșit.
+# Adăugați la Sfârșit, Eliminați la Sfârșit
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-5-add-at-the-end-remove-from-the-end-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -65,7 +65,7 @@ console.log(number);
 [/slide]
 
 [slide hideTitle]
-# Adăugați la început, Eliminați de la început 
+# Adăugați la Început, Eliminați de la Început 
 
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-6-add-at-the-start-remove-from-the-start-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
@@ -197,14 +197,14 @@ sumFirstLast(['5', '10'])
 [/slide]
 
 [slide hideTitle]
-# Metoda push în matrice
+# Metoda Push în Matrice
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-10-pushing-an-array-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Metoda `array.push()` adaugă unul sau mai multe elemente la sfârșitul unui tablou și returnează noua lungime:
 
 ``` js live
-let fruits = ['apple','banana','kiwi'];
+let fruits = ['apple', 'banana', 'kiwi'];
 
 fruits.push('pineapple', 'orange');
 
@@ -271,14 +271,15 @@ Adăugați fiecare element negativ la început și fiecare element pozitiv (sau 
 
 **Ieșirea** trebuie imprimată pe consolă, fiecare element pe **o nouă linie**
 
-## Examplul unu
+## Examplul Unu
 | **Input** | **Output** |
 | --- | --- |
 |negativePositive(['7', '-2', '8', '9']) | \-2 |
 | | 7 |
 | | 8 |
 | | 9 |
-## Exemplul doi
+
+## Exemplul Doi
 | **Input** | **Output** |
 | --- | --- |
 |negativePositive(['3', '-2', '0', '-1'])  | \-1 |
@@ -395,7 +396,7 @@ negativePositive(['\-2', '3', '0', '5', '\-6', '0', '8'])
 let myArray = ['Peter', 'George', 'Mary'];
 
 let isGeorgeInclude = myArray.includes('George');
-let isJohnInclude =myArray.includes('John');
+let isJohnInclude = myArray.includes('John');
 
 console.log(isGeorgeInclude);
 console.log(isJohnInclude);

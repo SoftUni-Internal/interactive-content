@@ -40,6 +40,7 @@ console.log(weekend.join(', '));
 ```
 
 - Putem sorta o matrice printr-o funcție de comparare 
+
 ```js live
 let ages = [25, 15, 82, 39];
 ages.sort((a, b) => a - b);

@@ -64,7 +64,7 @@ console.log(positiveNums);
 [/slide]
 
 [slide hideTitle]
-# Problemă  cu soluție: Process Odd Numbers
+# Problemă  cu Soluție: Process Odd Numbers
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-problem-05-solution-process-odd-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -190,6 +190,7 @@ oddNumbers([4, 12, 34, 2, 8, 6, 1, 31])
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-27-28-sorting-arrays-and-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Metoda `sort()` **sortează elementele** unei matrice.
+
 În funcție de **funcția de comparare** oferită, ordinea de sortare poate **fi alphabetică sau numerică**, fie ascendentă (în sus) sau descendentă (în jos).
 
 În mod implicit, metoda `sort()` sortează valorile ca **șiruri în ordine alfabetică și crescătoare.**
@@ -236,6 +237,7 @@ Rezultatul ar putea fi: **negativ, zero sau pozitiv.**
 - Dacă rezultatul este negativ, `a` este sorat înainte de  `b`
 - Dacă rezultatul este pozitiv, `b` este sortat înainte de `a`
 - Dacă rezultatul este 0, nu se schimbă nimic
+
 ``` js live
 let nums = [20, 40, 10, 30, 100, 5];
 nums.sort((a, b) => a-b);
@@ -265,7 +267,7 @@ console.log(words);
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Smallest two Numbers
+# Problemă cu Soluție: Smallest two Numbers
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-problem-06-solution-smallest-two-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

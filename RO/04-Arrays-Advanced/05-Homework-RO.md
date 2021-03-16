@@ -148,8 +148,8 @@ La final, tipăriți starea finală a trenului (toate vagoanele, separate printr
 ## Exemple
 | **Intrare**|**Ieșire** |
 | --- | --- |
-|train(['32 54 21 12 4 0 23','75','Add 10','Add 0','30','10','75'])| 72 54 21 12 4 75 23 10 0|
-|train(['0 0 0 10 2 4','10','Add 10','10','10','10','8','6'])| 10 10 10 10 10 10 10|
+|train(['32 54 21 12 4 0 23', '75', 'Add 10', 'Add 0', '30', '10', '75'])| 72 54 21 12 4 75 23 10 0|
+|train(['0 0 0 10 2 4', '10', 'Add 10', '10', '10', '10', '8', '6'])| 10 10 10 10 10 10 10|
 
 [/task-description]
 [code-io /]
@@ -351,31 +351,31 @@ Fiecare șir va fi unul dintre următoarele:
 
 -	"\{**name**\} **is not going!**"
 
-Dacă primiți primul tip de intrare, trebuie să ** adăugați ** persoana dacă nu se află în listă.
+Dacă primiți primul tip de intrare, trebuie să **adăugați** persoana dacă nu se află în listă.
 
 Dacă el / ea se află în lista, tipăriți:
 
-„\ {** nume ** \} ** este deja în listă! **”.
+"\{**nume** \} **este deja în listă!**"
 
-Dacă primiți al doilea tip de intrare, trebuie să ** eliminați ** persoana dacă se află în listă.
+Dacă primiți al doilea tip de intrare, trebuie să **eliminați** persoana dacă se află în listă.
 
 Dacă nu, tipăriți:
 
-„\ {** nume ** \} ** nu este în listă! **”
+"\{**nume** \} **nu este în listă!**"
 
 La final, tipăriți toți invitații, fiecare pe o linie separată.
 
 
-## Exemplul unu
+## Exemplul Unu
 |**Intrare**|**Ieșire**|
-| :---:       |    :----:   |   
-|houseParty(['Allie is going!','George is going!','John is not going!','George is not going!'])| John is not in the list!|
+| :---:       |    :----:   |
+|houseParty(['Allie is going!', 'George is going!', 'John is not going!', 'George is not going!'])| John is not in the list!|
 ||Allie|
 
-## Exemplul doi
+## Exemplul Doi
 |**Intrare**|**Ieșire**|
 | :---:       |    :----:   |  
-|houseParty(['Tom is going!','Annie is going!','Tom is going!','Garry is going!','Jerry is going!'])|Tom is already in the list!|
+|houseParty(['Tom is going!', 'Annie is going!', 'Tom is going!', 'Garry is going!', 'Jerry is going!'])|Tom is already in the list!|
 ||Tom|
 ||Annie|
 ||Garry|
@@ -581,13 +581,13 @@ Intrarea este o matrice de șiruri.
 Ieșirea este matricea sortată de șiruri. 
 
 
-## Exemplul unu
+## Exemplul Unu
 |**Intrare**|**Ieșire** |
 | --- | --- |
 |sort(['alpha', 'beta', 'gamma'])|beta|
 ||alpha|
 ||gamma|
-## Exemplul doi
+## Exemplul Doi
 |**Intrare**|**Ieșire** |
 | --- | --- |
 |sort(['Isacc', 'Theodor', 'Jack', 'Harrison', 'George'])|Jack|

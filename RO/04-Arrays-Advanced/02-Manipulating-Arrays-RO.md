@@ -20,7 +20,7 @@ console.log(myArray.slice(2,4));
 [/slide]
 
 [slide hideTitle]
-# Splice: Tăierea și înserarea Elementelor de Matrice
+# Splice: Tăierea și Înserarea Elementelor de Matrice
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-17-cutting-and-inserting-elements-with-splice-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -43,7 +43,7 @@ console.log(nums.join('|'));
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: First and Last K Numbers
+# Problemă cu Soluție: First and Last K Numbers
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-problem-03-solution-first-and-last-k-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -79,13 +79,13 @@ Pe **prima linie**, tipăriți **primele elemente k** , separate printr-un **spa
 
 Pe **a doua linie**, tipăriți **ultimele elemente k** , separate printr-un **spațiu**. 
 
-## Examplul unu
+## Examplul Unu
 |**Intrare**|**Ieșire** |
 | --- | --- |
 |numbers([2, 7, 8, 9]) | 7 8 |
 | | 8 9 |
 
-## Examplul doi
+## Examplul Doi
 |**Intrare**|**Ieșire** |
 | --- | --- |
 |numbers([3, 6, 7, 8, 9]) | 6 7 8 |
