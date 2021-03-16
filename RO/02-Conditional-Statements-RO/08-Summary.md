@@ -43,7 +43,7 @@ if (condition) {
 
 - **Buclele imbricate if-else** 
 
-- Operatorii logici: **&&, ||, !**
+- Operatorii logici: `&&`, `||`, `!`
 
 - Switch-case
 

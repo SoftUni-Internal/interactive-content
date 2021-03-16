@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Condiții simple if
+# Condiții Simple "if"
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-14-15-simple-conditions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

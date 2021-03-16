@@ -1,7 +1,7 @@
-# Expresii logice
+# Expresii Logice
 
 [slide hideTitle]
-# Operatori de comparație
+# Operatori de Comparație
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-10-13-logical-expressions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -20,7 +20,7 @@ Atunci când se compara, rezultatul este valoare Boolean `true` sau `false`, în
 [/slide]
 
 [slide hideTitle]
-# Exemple de compararea numerelor
+# Exemple de Compararea Numerelor
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-10-13-logical-expressions-demo-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -51,7 +51,7 @@ Dacă valoarea expresiei din partea stângă este mai mare sau egală cu valoare
 
 [slide hideTitle]
 
-# Comparație de șiruri
+# Comparație de Şiruri
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-10-13-logical-expressions-demo-2-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

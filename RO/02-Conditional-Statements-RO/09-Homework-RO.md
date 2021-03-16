@@ -69,7 +69,7 @@ Wrong password!
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Boiling Water
+# Problemă cu Soluție: Boiling Water
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-38-problem-and-solution-boiling-water-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -212,7 +212,7 @@ Fast
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Area of Figures
+# Problemă cu Soluție: Area of Figures
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-42-problem-and-solution-area-of-figures-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -432,7 +432,7 @@ Invalid ticket type!
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Coffee Shop
+# Problemă cu Soluție: Coffee Shop
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-46-problem-and-solution-coffee-shop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -644,7 +644,8 @@ Pentru 1 litru de vin sunt necesare **2.5 kg struguri**.
 Cantitatea dorită de vin pentru vânzare este de **Z litri**. 
 
 Scrieți un program care să calculeze cât de mult vin poate fi produs și dacă această cantitate este suficientă.
-- Dacă este suficient, restul este împărțit în mod egal între lucrătorii viei.
+
+- Dacă este suficient, restul este împărțit în mod egal între lucrătorii viei
 
 ## Intrare
 Intrarea este citită de pe consolă și constă din exact 4 rânduri:
@@ -1123,9 +1124,9 @@ public class Main {
 Scrieți un program care imprima **tipul** unui animal în funcție de **numele său**.
 
 ## Intrare / Ieșire
-- mammals: **dog** 
-- reptiles: **crocodile**, **tortoise**, **snake** 
-- **others -> unknown**
+- Mmmals: **dog** 
+- Reptiles: **crocodile**, **tortoise**, **snake** 
+- **Others -> unknown**
 
 ## Exemplu
 
@@ -1200,7 +1201,7 @@ unknown
 
 
 [slide hideTitle]
-# Problemă cu soluție: Pets 
+# Problemă cu Soluție: Pets 
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-47-problem-and-solution-pets-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -1225,11 +1226,11 @@ Fiecare animal mănâncă o anumită cantitate de mâncare pe zi.
 
 ## Intrare
 Citește **cinci** rânduri de pe consolă:
-- **numărul de zile** - un număr întreg în intervalul \[1 ... 5000 \]
-- **mâncare rămasă în kilograme** - un număr întreg în intervalul \[0 ... 100000 \]
-- **mâncare pentru câine pe zi în kilograme** -  dublă în intervalul \[0.00…100.00\]
-- **mâncare pentru pisică pe zi în kilograme** - dublă în intervalul \[0.00…100.00\]
-- **mâncare pentru broască țestoasă pe zi în grame** - dublă în intervalul \[0.00…10000.00\]
+- **Numărul de zile** - un număr întreg în intervalul \[1 ... 5000 \]
+- **Mâncare rămasă în kilograme** - un număr întreg în intervalul \[0 ... 100000 \]
+- **Mâncare pentru câine pe zi în kilograme** -  dublă în intervalul \[0.00…100.00\]
+- **Mâncare pentru pisică pe zi în kilograme** - dublă în intervalul \[0.00…100.00\]
+- **Mâncare pentru broască țestoasă pe zi în grame** - dublă în intervalul \[0.00…10000.00\]
 
 ## Ieșire
 Imprima pe consolă o linie **unică**:
@@ -1447,7 +1448,7 @@ Scrieți un program care să arate starea piscinei **în momentul în care lucr�
 ## Ieșire
 Imprima pe consolă **una dintre ambele posibilități**:
 - Cât de mult a fost umplută piscina și care dintre țevile cât a contribuit în procente
-  - "**The pool is** \{**percentage of volume**\}% **full.** **Pipe 1:** \{**transferred percentage**\}**%.** **Pipe 2:** \{**transferred percentage**\}**%.**"
+  - "**The pool is** \{**percentage of volume**\}**%** **full.** **Pipe 1:** \{**transferred percentage**\}**%.** **Pipe 2:** \{**transferred percentage**\}**%.**"
 - Dacă piscina este debordantă - câți litri sunt debordați pentru timpul dat
   - "**For** \{**amount of time**\} **hours the pool overflows with** \{**liters of unnecessary water transferred**\} **liters.**"
 - Toate numerele din ieșire trebuie formatate la a doua cifră după punctul zecimal
@@ -1498,7 +1499,7 @@ The pool is 66.00% full. Pipe 1: 45.45%. Pipe 2: 54.55%.
 [test open]
 [input]
 100
-100
+100S
 100
 2.5
 [/input]

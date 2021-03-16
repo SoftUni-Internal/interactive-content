@@ -6,7 +6,7 @@
 
 Până acum, am scris o mulțime de coduri și au aparut câteva greșeli în ele, corect? Acum vom arăta un instrument care ne poate ajuta să găsim greșelile mai ușor: **depanatorul**.
 
-## Ce este "Depanarea"?
+## Ce este "depanarea"?
 
 **Depanarea** este procesul de "**atașare**" la execuția programului, care ne permite să **urmărim pas cu pas procesul**.
 

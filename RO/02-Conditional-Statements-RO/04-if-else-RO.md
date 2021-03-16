@@ -1,6 +1,6 @@
 [slide hideTitle]
 
-# Condițile If-Else
+# Condițile "if-else"
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-18-simple-conditions-if-else-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -31,15 +31,15 @@ După instrucțiunea  then sau instrucțiunea `else`, controlul este transferat 
 
 Dacă condiția este "**false**", controlul este transferat la următoarea instrucțiune care este după declarație `if`.
 
-Atât instrucțiunea  then, cât și instrucțiunea  else pot consta dintr-o singură instrucțiune sau mai multe instrucțiuni care sunt încadrate între paranteze `{}`.
+Atât instrucțiunea  then, cât și instrucțiunea else pot consta dintr-o singură instrucțiune sau mai multe instrucțiuni care sunt încadrate între paranteze `{}`.
 
 Pentru o singură instrucțiune, parantezele sunt opționale, dar recomandate.
 
-Instrucțiunea  sau instrucțiunile din instrucțiunea  then și instrucțiunea  else pot fi de orice fel, inclusiv de alta dacă instrucțiunea  care  este imbricată în  interiorul instrucțiunii originale if.
+Instrucțiunea sau instrucțiunile din instrucțiunea then și instrucțiunea else pot fi de orice fel, inclusiv de alta dacă instrucțiunea care este imbricată în interiorul instrucțiunii originale if.
 [/slide]
 
 [slide hideTitle]
-# Exemplu: vreme
+# Exemplu: Vreme
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-18-simple-conditions-if-else-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -59,7 +59,7 @@ if (weather.equals("rainy")) {
 [/slide]
 
 [slide hideTitle]
-# Bloc de cod
+# Bloc de Cod
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-19-20-block-of-code-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -93,7 +93,7 @@ if (color.equals("red")) {
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Even or Odd
+# Problemă cu Soluție: Even or Odd
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-21-problem-and-solution-even-or-odd-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -157,7 +157,7 @@ even
 
 
 [slide hideTitle]
-# Problemă cu soluție: Greater Number
+# Problemă cu Soluție: Greater Number
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-23-problem-and-solution-greater-numbers-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

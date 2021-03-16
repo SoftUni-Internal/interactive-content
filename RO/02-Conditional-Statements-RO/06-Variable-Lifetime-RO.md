@@ -1,12 +1,13 @@
 [slide hideTitle]
 
-# Domeniul de aplicare a variabilei
+# Domeniul de Aplicare a Variabilei
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-30-31-variable-scope-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Each variable has a range in which it exists, called **variable scope**. 
 
 This range specifies where a variable can be used and how long is its **lifetime**. 
+
 Fiecare variabilă există intr-un interval numit **domeniul de aplicare a variabilei**.
 
 În limbajul Java, domeniul în care există o variabilă, începe de la linia în care am **definit-o** și se termină cu prima paranteză închisă `}` (a metodei, instrucțiunii **if** etc.)
