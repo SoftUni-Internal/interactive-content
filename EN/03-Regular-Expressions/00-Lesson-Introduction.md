@@ -12,7 +12,7 @@
 
 - RegEx Syntax
 
-- Regex Pattern sites
+- Websites that we can use to build, test, and debug Regular expressions
 
 **2. Quantifiers and Grouping**
 
