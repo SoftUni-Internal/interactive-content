@@ -992,7 +992,8 @@ Toate facturile ar trebui să fie formatate la a doua cifră după punctul zecim
 | 93.53 | Average: 273.75 $ |
 | 63.22 | |
 
-## Comentarii
+[hints]
+[hint]
 Pentru 5 luni:
 - Electricitate -> 68.63 \+ 89.25 \+ 132.53 \+ 93.53 \+ 63.22 = 447.16$
 - Apă -> 5 luni \* 20$ = 100$
@@ -1003,8 +1004,12 @@ Pentru 5 luni:
     - (132.53+20+15) + 20% = 201.036
     - (93.53+20+15) + 20% = 154.236
     - (63.22+20+15) + 20% = 117.864
-- Totalul = 746.592$
-- Facturi medii pe lună = (447.16+100+75+746.592)/5 = 273.7504$
+[/hint]
+[hint]
+Totalul = 746.592$
+Facturi medii pe lună = (447.16+100+75+746.592)/5 = 273.7504$
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
