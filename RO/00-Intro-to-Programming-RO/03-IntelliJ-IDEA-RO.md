@@ -1,11 +1,11 @@
 [slide hideTitle]
-# Mediile integrate de dezvoltare (IDE)
+# Mediile Integrate de Dezvoltare (IDE)
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-16-18-IDE-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a programa, avem nevoie de un mediu integrat de dezvoltare (**Integrated Development Environment**), prescurtat **IDE** (IDE). 
 
-**Un mediu de dezvoltare** (Integrated Development Environment – **IDE**) este o combinație de instrumente tradiționale de dezvoltare a aplicațiilor software. 
+**Un mediu de dezvoltare** (Integrated Development Environment - **IDE**) este o combinație de instrumente tradiționale de dezvoltare a aplicațiilor software. 
 
 În mediul de dezvoltare scriem cod, compilăm și executăm programele. 
 
@@ -18,7 +18,9 @@ Dacă nu utilizăm un mediu de dezvoltare, va trebui să scriem codul într-un e
 Pentru programarea cu **limbajul Java** cel mai des utilizat IDE este **IntelliJ IDEA**, care este dezvoltat și distribuit gratuit de JetBrains și poate fi descărcat de pe site-ul [web](https://www.jetbrains.com/idea/download/).
 
 Alternativele Visual Studio sunt:
+
 - [Eclipse](https://www.eclipse.org/downloads/)
+
 - [NetBeans](https://netbeans.org/downloads/8.0.2/)
 
 În cadrul acestui curs, vom folosi mediul de dezvoltare **IntelliJ IDEA**. 
@@ -80,7 +82,7 @@ Asta este tot. Sunteți gata să lucrați cu IntelliJ IDEA.
 [/slide]
 
 [slide hideTitle]
-# Proiectarea de soluții și proiecte în Intellij IDEA
+# Proiectarea de Soluții și Proiecte în Intellij IDEA
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-25-Project-Solutions-and-Projects-in-IntelliJ-IDEA-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -120,18 +122,19 @@ Pentru **proiecte mai mici** proiectele și modulele IntelliJ mai degrabă **com
 [/slide]
 
 [slide hideTitle]
-# Dezvoltarea mediilor: Desktop și Online
+# Dezvoltarea Mediilor: Desktop și Online
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-19-Development-Environments-Desktop-and-Online-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Instalați de pe JetBrains comunitatea  IntelliJ IDEA Community
 
 * [JetBrains](https://www.jetbrains.com/idea/download/)
+
 * Puteți folosi și o versiune mai veche, dar cel mai bine descărcați-o pe cea mai recentă
 
 Alternative IDE (online)
 
-* [Java](https://www.compilejava.net) , [Repl.it](https://repl.it/languages/java)
+* [Java](https://www.compilejava.net), [Repl.it](https://repl.it/languages/java)
 * [C#](https://dotnetfiddle.net)
 * [Python](https://repl.it)
 * JavaScript: folosiți direct consola browser-ului Web (apăsând tasta \[F12\])

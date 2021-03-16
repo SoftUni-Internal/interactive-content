@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Limbajele de programare
+# Limbajele de Programare
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-10-11-Programming Languages-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -33,9 +33,12 @@ El execută comenzile din program **una după cealaltă**, întrucât înțelege
 
 Java este extrem de versatil. Poți crea cu el orice: de la aplicații mobile și pentru Web la jocuri, funcționalități back-end.
 
-Cererea pentru developeri Java este, în prezent, printre cele mai ridicate. Acest lucru asigură realizarea profesională odată ce ați obținut competențele necesare! Java este utilizat de cca **7,1 milioane** de programatori pe întreg mapamondul (conform SlashData). 
+Cererea pentru developeri Java este, în prezent, printre cele mai ridicate. 
+
+Acest lucru asigură realizarea profesională odată ce ați obținut competențele necesare! Java este utilizat de cca **7,1 milioane** de programatori pe întreg mapamondul (conform SlashData). 
 
 În prezent, Java este unul dintre cele mai potrivite limbaje de programare pentru **începători**. 
+
 * Este ușor de învățat Java printr-un set vast de tutoriale video și exerciții în cadrul **SoftUni**
 
 Acestea combină **programarea procedurală**, **cea orientată pe obiecte** și **programarea funcțională** cu o **sintaxă clară și concisă**.
@@ -43,7 +46,7 @@ Acestea combină **programarea procedurală**, **cea orientată pe obiecte** și
 [/slide]
 
 [slide hideTitle]
-# Compilarea și execuția în Java
+# Compilarea și Execuția în Java
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-13-Java-compilation-and-execution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -68,7 +71,9 @@ Cu **scripturi și limbaje interpretate**, precum JavaScript, Python și PHP, co
 JDK este prescurtarea pentru Java Development Toolkit - kitul de dezvoltare în Java
 
 * Kit-ul de dezvoltare de soft Java (Java SDK) – este un set de instrumente pentru developeri
+
 * Include o **mașină virtuală** (JVM), un **compilator Java** (javac) și alte instrumente pentru developer
+
 * JDK este disponibil pentru descărcare gratuită de la [Oracle](https://www.oracle.com/technetwork/java/javase/downloads/)
 
 JDK nu ar trebui să fie confundat cu mediul de execuție Java Runtime Environment (JRE)

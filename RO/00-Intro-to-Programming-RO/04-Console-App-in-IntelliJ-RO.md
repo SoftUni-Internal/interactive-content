@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Aplicații pentru consolă în IntelliJ IDEA
+# Aplicații Pentru Consolă în IntelliJ IDEA
 
 Deja am instalat IntelliJ IDEA și putem începe să îl utilizăm.
 
@@ -66,6 +66,7 @@ O altă modalitate de a vă iniția programul este prin clic pe butonul din drea
 [image assetsSrc="run-intellij-right-click.png" /]
 
 De fapt, rezultatul din program este următorul mesaj text:
+
 ```
 Hello Java
 ```

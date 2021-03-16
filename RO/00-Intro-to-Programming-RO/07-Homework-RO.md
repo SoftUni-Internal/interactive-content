@@ -83,7 +83,7 @@ Scrieți un program în limbajul Java care să execute următoarele:
 [/slide]
 
 [slide hideTitle]
-# O problemă cu soluție: Name and Expression
+# O problemă cu Soluție: Name and Expression
 [code-task title="Name and Expression" taskId="pb-java-introduction-Name-and-Expression" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
@@ -125,7 +125,7 @@ Catlyn
 [/slide]
 
 [slide hideTitle]
-# O problemă cu soluție: Calculations
+# O problemă cu Soluție: Calculations
 [code-task title="Calculations" taskId="pb-java-introduction-Calculations" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
@@ -172,7 +172,7 @@ Scrieți un program care să calculeze și sa imprime valoarea următoarelor exp
 [/slide]
 
 [slide hideTitle]
-# O problemă cu soluție: Square of 7 * 7 Stars
+# O problemă cu Soluție: Square of 7 * 7 Stars
 [code-task title="Square of 7 * 7 Stars" taskId="pb-java-introduction-Square-of-7x7" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```

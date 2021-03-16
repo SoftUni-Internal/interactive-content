@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Ce reprezintă codificarea
+# Ce reprezintă Codificarea
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-3-4-What-is-coding-and-demo-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -11,6 +11,7 @@ Când comenzile se succed una după alta, ele se numesc **program de calculator*
 Textul unui program de calculator se numește **cod de program** (sau **cod sursă**, sau chiar și mai scurt – **cod**).
 
 Exemple de comenzi pentru calculator:
+
 ```java live
 System.out.println("I am coding");
 ```
@@ -19,7 +20,7 @@ System.out.println("I am coding");
 
 [slide hideTitle]
 
-# Exemplu: Comenzi simple 
+# Exemplu: Comenzi Simple 
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-5-Commands-in-Java-and-demo-1-2-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -27,14 +28,15 @@ System.out.println("I am coding");
 
 
 [slide hideTitle]
-# Programele de calculator
+# Programele de Calculator
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-7-computer-program-example-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Programele de calculator reprezintă **o secvență de comenzi** care sunt scrise în anumite **limbaje de programare**, precum C#, Java, JavaScript, Python, C++, PHP, C, Ruby, Swift, Go sau alt program cunoscut.
 
 Exemple de **programe de calculator** în Java:
-```java live no-template
+
+```java live
 public class Main {
   public static void main(String[] args) {
     int size = 5;
@@ -45,6 +47,7 @@ public class Main {
 ```
 
 Programul mai sus menționat definește o **clasă** `Main`, care are în ea o **metodă** `main()`, care deține o secvență de **3 comenzi**:
+
 - Declară și alocă o **variabilă**: `int size = 5;`
 - Calculează și **imprimă** o **expresie**: `System.out.println("Size = " + size);`
 - Calculează și **imprimă** o **expresie**: `System.out.println("Area = " + size * size);`
@@ -66,7 +69,7 @@ Drept urmare, ne vom familiariza cu sintaxa și semantica limbajului Java, și c
 
 [slide hideTitle]
 
-# Exemplu: Program de calculator complet
+# Exemplu: Program de Calculator Complet
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-8-complete-computer-program-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -95,7 +98,7 @@ Pentru conveniență, atunci când creăm programe, când scriem coduri de progr
 [/slide]
 
 [slide hideTitle]
-# Programele Java bazate pe consolă – Exemplu
+# Programele Java Bazate pe Consolă - Exemplu
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-9-console-based-java-program-example-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
