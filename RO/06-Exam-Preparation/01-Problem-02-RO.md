@@ -57,7 +57,7 @@ Urmat de:
 
 * Dacă liftul este plin și nu mai sunt oameni care așteaptă să intre, ar trebui să imprimați starea fiecărei cabine separate printr-un singur spațiu
 
-## Exemplul unu
+## Exemplul Unu
 
 |**Intrare**|**Ieșire** |
 | --- | --- |
@@ -72,7 +72,7 @@ Urmat de:
 
 * A treia stare:  4 4 4 0 \-\> 3 persoane au plecat
 
-## Exemplul doi
+## Exemplul Doi
 
 |**Intrare**|**Ieșire** |
 | --- | --- |

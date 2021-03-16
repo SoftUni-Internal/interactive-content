@@ -55,15 +55,15 @@ Dacă obiectul există deja, puteți să-i schimbați poziția și să îl pune�
 ## Ieșire
 După ce primiți "**Craft!**", Imprimați toate articolele din inventarul dvs., separate prin,o virgulă și un spațiu.
 
-## Exemplul unu
+## Exemplul Unu
 |**Intrare**|**Ieșire** |
 | --- | --- |
 |inventory(['Iron, Wood, Sword', 'Collect - Gold', 'Drop - Wood', 'Craft!'])| Iron, Sword, Gold |
 
-## Exemplul doi
+## Exemplul Doi
 |**Intrare**|**Ieșire** |
 | --- | --- |
-|inventory(['Iron, Sword','Drop - Bronze','Combine Items - Sword:Bow','Renew - Iron', 'Craft!'])| Sword, Bow, Iron|
+|inventory(['Iron, Sword', 'Drop - Bronze', 'Combine Items - Sword:Bow', 'Renew - Iron', 'Craft!'])| Sword, Bow, Iron|
 
 
 [/task-description]

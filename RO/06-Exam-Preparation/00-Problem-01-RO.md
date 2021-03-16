@@ -66,11 +66,11 @@ Forma finală a matricei trebuie tipărită pe consolă, fiecare dintre elemente
 
 * Indexurile vor fi întotdeauna în raza gamei
 
-## Exemplul unu
+## Exemplul Unu
 
 |**Intrare**|**Ieșire** |
 | --- | --- |
-|arrayModifier(['23 -2 321 87 42 90 -123', 'swap 1 3','swap 3 6','swap 1 0','multiply 1 2','multiply 2 1','decrease','end'])| 86, 7382, 2369942, -124, 41, 89, -3|
+|arrayModifier(['23 -2 321 87 42 90 -123', 'swap 1 3', 'swap 3 6', 'swap 1 0', 'multiply 1 2', 'multiply 2 1', 'decrease', 'end'])| 86, 7382, 2369942, -124, 41, 89, -3|
 
 ## Comentarii
 
@@ -100,10 +100,10 @@ Starea după a cincea comandă: "87 7383 2369943 -123 42 90 -2"
 
 Starea celei de-a șasea comenzi: "86 7383 2369942 -124 41 89 -3"
 
-## Exemplul doi
+## Exemplul Doi
 **Intrare**|**Ieșire** |
 | --- | --- |
-|arrayModifier(['1 2 3 4','swap 0 1','swap 1 2','swap 2 3','multiply 1 2','decrease','end'])| 1, 11, 3, 0|
+|arrayModifier(['1 2 3 4', 'swap 0 1', 'swap 1 2', 'swap 2 3', 'multiply 1 2', 'decrease', 'end'])| 1, 11, 3, 0|
 
 
 [/task-description]
