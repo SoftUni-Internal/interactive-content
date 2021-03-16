@@ -34,8 +34,8 @@ Boolean comparisons are most often put in an "**if**" construction, but we can a
 
 Examples of comparison operators:
 
-| Operator | Description | Example   |
-| :---:       |    :----:   |   :---:   |
+| **Operator** | **Description** | **Example**   |
+| :---:       |    :---:   |   :---:   |
 | `==` | equal to (no type) | `if (day == 'Monday')` |
 | `===` | equal to (with type) | `if (5 === 5)` |
 | `!=`| not equal (no type) | `if (5 != 5)` |
@@ -140,10 +140,10 @@ In JavaScript we have eight values that are assumed to be "**falsy**":
 | `0` | The number zero | 
 | `-0`| The number negative zero | 
 | `0n` | BigInt, when used as a boolean | 
-| `""` |  Empty string value | 
+| `''` |  Empty string value | 
 | `null` |  `null` - the absence of any value | 
 | `undefined` | `undefined` - the primitive value | 
-| `NaN` |  	`NaN` - not a number | 
+| `NaN` |  `NaN` - not a number | 
 
 All other values are "**true**", for example an empty array `[]` and an empty object `{}` are true.
 
@@ -291,7 +291,7 @@ amazingNumbers(65451)
 
 [slide hideTitle]
 
-# The Typeof operator
+# The Typeof Operator
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-28-29-Definition-of-the-typeof-operator-and-examples-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

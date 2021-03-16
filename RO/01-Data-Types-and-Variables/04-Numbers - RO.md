@@ -43,21 +43,21 @@ console.log(5 + nanVar);
 
 Parsarea numerelor poate fi făcută în câteva moduri:
 
-- folosind `parseInt`: preluăm doar partea întreagă a unui număr, fără a-l rotunji
+- Folosind `parseInt`: preluăm doar partea întreagă a unui număr, fără a-l rotunji
 
 ``` js live
 let myVar = parseInt('3.14');
 console.log(myVar);
 ```
 
-- folosind `parseFloat`: preluăm numărul așa cum este el, împreună cu zecimalele sale
+- Folosind `parseFloat`: preluăm numărul așa cum este el, împreună cu zecimalele sale
 
 ``` js live
 let myVar = parseFloat('3.14');
 console.log(myVar);
 ```
 
-- folosind `Number`: parsăm un șir ca număr
+- Folosind `Number`: parsăm un șir ca număr
 
 ``` js live
 let myVar = Number('10');

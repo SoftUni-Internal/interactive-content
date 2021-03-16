@@ -57,7 +57,7 @@ Astfel, putem re-aloca variabile de toate tipurile:
 let variable = 15; 
 console.log(`My variable is ${typeof(variable)}`)
 
-variable = "Peter"; 
+variable = 'Peter'; 
 console.log(`My variable is ${typeof(variable)}`)
 
 variable = false;

@@ -28,7 +28,7 @@
     ```
     - object
      ```js
-    let car = {type:"Tesla", model:"S", color:"white"};
+  let car = {type:'Tesla', model:'S', color:'white'};
     ```
     - boolean
      ```js

@@ -33,7 +33,7 @@ Comparațiile booleene sunt cel mai adesea plasate în construcția "**if**", si
 Exemple de operatori de comparație:
 
 | **Operator** | **Descriere** | **Exemplu**   |
-| :---:       |    :----:   |   :---:   |
+| :---:       |    :---:   |   :---:   |
 | `==` | egal cu (fără tip) | `if (day == 'Monday')` |
 | `===` | egal cu (cu tip) | `if (5 === 5)` |
 | `!=`| nu este egal (fără tip) | `if (5 != 5)` |
@@ -137,10 +137,10 @@ Celelalte valori numerice devin valori booleene și sunt "**false**".
 | `0` | Numărul zero | 
 | `-0`| Numărul zero negativ | 
 | `0n` | BigInt, când este utilizat ca boolean | 
-| `""` |  Valoarea șirului gol | 
+| `''` |  Valoarea șirului gol | 
 | `null` |  `null` - absența oricărei valori | 
 | `undefined` | `undefined` - valoarea primitivă | 
-| `NaN` |  	`NaN` - nu un număr | 
+| `NaN` |  `NaN` - nu un număr | 
 
 Toate celelalte valori sunt "**true**", de exemplu o matrice goală `[]` și un obiect gol `{}` sunt adevărate.
 

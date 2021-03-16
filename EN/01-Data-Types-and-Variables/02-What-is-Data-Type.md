@@ -18,7 +18,7 @@ For example, if we have declared a variable as a number, we can easily change it
 let myVar = 5;
 console.log(`The number is ${myVar}`);
 
-myVar = "JavaScript";
+myVar = 'JavaScript';
 console.log(`I love ${myVar}!`);
 ```
 
@@ -62,7 +62,7 @@ We can reassign variables of all types:
 let variable = 15; 
 console.log(`My variable is ${typeof(variable)}`)
 
-variable = "Peter"; 
+variable = 'Peter'; 
 console.log(`My variable is ${typeof(variable)}`)
 
 variable = false;

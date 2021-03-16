@@ -24,9 +24,9 @@ Un literal în programare înseamnă să scriem o variabilă cu o valoare în a�
 
 `var` este o vairabilă care operează într-un scop așa-numit funcțional. 
 
-``` JavaScript
+``` js live
 {
-     var x = 2;
+  var x = 2;
 }
 console.log(x); // 2
 ```
@@ -51,11 +51,11 @@ Tot ceea ce este inclus între **parantezele acolade** `{}` este un bloc unde su
 
 El poate fi corpul vreunei construcții `if`, al vreunei bucle, sau corpul unei funcții.
 
-``` js
+```js live
 {
-    let x = 2;
+  let x = 2;
 }
-console.log(x) // undefined
+console.log(x)
 ```
 
 Când declarăm o variabilă cu let, nu o putem accesa; dacă încercăm să o accesăm, obținem o eroare.
@@ -65,6 +65,7 @@ console.log(myVar);
 
 let myVar = 'Peter';
 ```
+
 Vă încurajăm să folosiți `let` când **declarați variabile**, pentru că astfel vă puteți proteja de comportamente nedorite ale programului. 
 
 [/slide]

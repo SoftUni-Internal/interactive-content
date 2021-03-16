@@ -26,7 +26,7 @@ console.log(myString.length);
 [slide hideTitle]
 
 
-# Strings Are Immutable
+# Strings are Immutable
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-14-strings-are-immutable-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
