@@ -1,4 +1,4 @@
-# Character Type
+# Character
 
 [slide hideTitle]
 
@@ -15,11 +15,11 @@ System.out.println(myGrade);
 
 The character data type also:
 
-- Assigns each symbol a corresponding integer code
+- Assigns each symbol a corresponding integer ASCII code
 
 - Has a default value of `\0`
 
-- Takes up 16 bits of memory \(from **U+0000** to **U+FFFF**\)
+- Reserves 16 bits of memory \(from **U+0000** to **U+FFFF**\)
 
 - Holds a single Unicode character \(or part of a character\)
 
@@ -36,11 +36,11 @@ System.out.printf("The code of '%c' is: %d%n", ch, (int) ch);
 
 In the example above, we convert each character to its **ASCII** representation. 
 
-The **ASCII** is an acronym for the **American Standard Code for Information Interchange**.
+**ASCII** is an acronym for the **American Standard Code for Information Interchange**.
 
-It is a code standard for representing 128 English characters as numbers, each assigned a number from 0 to 127. 
+It is a code standard, representing 128 characters as numbers, each assigned a number from 0 to 127. 
 
-We encourage you to do some research on the ASCII table!
+You can find more information about the ASCII table online.
 
 ## Characters and Unicode
 
@@ -83,7 +83,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that accepts an input of 3 lines of characters and prints them in reversed order with a space between them.
+Create a program that accepts an input of 3 lines of characters and prints them out in reversed order with a space between them.
 
 ## Examples
 |**Input**|**Output**|
