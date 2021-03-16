@@ -209,7 +209,7 @@ let person = new Person('John');
 console.log(person.speak());
 ```
 
-In this example, we create a function **Person**, in which we set the **name** property and the `speak()` method. 
+In this example, we write a function **Person**, in which we set the **name** property and the `speak()` method. 
 
 The `speak()` method will return the result from the string interpolation.
 
@@ -290,7 +290,7 @@ let makeSentence = new MakeSentence('Hi');
 console.log(makeSentence.concatenate('!'));
 ```
 
-We create a function called **MakeSentence** with a parameter **greet**.
+We write a function called **MakeSentence** with a parameter **greet**.
 
 Then, we attach a property **name** and a method **concatenate** to the **MakeSentence** function. 
 

@@ -8,9 +8,9 @@ HTML elements in the DOM tree have their own **methods** and **properties**.
 
 They are an **additional tool**, which is very useful in a software engineer's job.
 
-DOM methods are **actions that can be performed on HTML elements, and change them.**
+DOM methods are **actions that can be performed on HTML elements and change them.**
 
-DOM properties are **information, that can be received and changed.**
+DOM properties are **information that can be received and changed.**
 
 [/slide]
 
@@ -104,8 +104,8 @@ The given code produces the following result:
 
 [image assetsSrc="JS-Advanced-Intro-DOM.JPG" /]
 
-With this example "**- DONE**" is added to the end of "**DOM Properties example**" and as a result, there is "**DOM Properties example - DONE**".
+With this example, "**- DONE**" is added to the end of "**DOM Properties example**" and as a result, there is "**DOM Properties example - DONE**".
 
-This is how to **dynamically** change the content of a web page.
+That is how to change the content of a web page **dynamically**.
 
 [/slide]

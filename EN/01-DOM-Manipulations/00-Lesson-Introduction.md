@@ -10,11 +10,11 @@
 **1. Event Loop**
 
 - What is an event loop
-- How the "Event" loop works
+- How the event loop works
 
 **2. Event Types**
 
-- The different types of Events in JavaScript
+- The different types of events in JavaScript
 - How we can use them
 
 **3. Event Object Properties and Methods**

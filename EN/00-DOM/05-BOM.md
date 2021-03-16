@@ -6,15 +6,15 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-40-41-browser-object-model-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The **Browser Object Model** acts as a connection just like the **Document Object Model**.
+The **Browser Object Model** acts as a connection, just like the **Document Object Model**.
 
-It connects Javascript to the **browser** just like the DOM connects it to the **HTML document**.
+It connects JavaScript to the **browser** the same way the DOM connects it to the **HTML document**.
 
 The **BOM** allows browser elements to be accessed and manipulated by **representing them as objects**.
 
 [image assetsSrc="Js-advanced-DOM-1.png" /]
 
-The following commands show some of the browser's objects:
+The following commands show some of the browser's **objects**:
 
 ```js
 console.dir(window);
@@ -53,18 +53,18 @@ window.printYear();
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-42-playing-with-bom-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Here are some interesting and educational BOM properties:
+Here are some interesting and educational **BOM properties**:
 
 ```js
-console.log(navigator.deviceMemory); //displays the RAM memory of the current machine
+console.log(navigator.deviceMemory); // Displays the RAM memory of the current machine
 
-document.location = "https://softuni.org"; //redirects to given location
+document.location = "https://softuni.org"; // Redirects to given location
 
-history.back(); //goes back one time
+history.back(); // Goes back one time
 
-console.log(location.host); //displays the current host
+console.log(location.host); // Displays the current host
 
-location.reload(); //reloads page
+location.reload(); // Reloads the page
 ```
 
 [/slide]

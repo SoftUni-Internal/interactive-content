@@ -422,7 +422,7 @@ Implement another class **BirthdayBalloon**, which inherits the **PartyBalloon**
 
 ## Hints
 
-First, we need to create a function, which will hold our classes. 
+First, we need to write a function, which will hold our classes. 
 
 We create a simple function and, we add the first class, the base class for all Balloons to it.
 

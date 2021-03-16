@@ -161,7 +161,7 @@ New value: 2
 
 If you modify the code above and set writable to **true**, as it is by default, then you would be able to assign the value **1000** to **anotherProperty**. 
 
-The output would be:
+The output will be:
 
 ```js
 Original value: 2
@@ -251,7 +251,7 @@ frozenObj.prop3.innerProperty = 'this will not work';
 
 You can use `Object.isFrozen(someObject)`. 
 
-If **someObject** is frozen this would return **true**.
+If **someObject** is frozen, this would return **true**.
 
 ## Object Seal
 `Object.seal()`- does not allow adding new properties to the object and all its properties become **non-configurable**. 
@@ -320,9 +320,9 @@ A **valid** **full name** is in the format: "\{**firstName**\} \{**lastName**\}"
 
 Note: Check the examples below for more information.
 
-## Examples
+# Examples
 
-**Sample Input**
+## Input
 
 ```js
 let person = new Person('Peter', 'Smith');

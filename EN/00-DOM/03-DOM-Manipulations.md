@@ -118,7 +118,7 @@ They are just **JavaScript variables**.
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-16-deleting-dom-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-As always, to perform any kind of operation on an element, it must be **accessed** first.
+As always, to perform any type of operation on an element, it must be **accessed** first.
 
 Here is an example of how to **get** and **remove** a DOM element.
 
@@ -678,7 +678,7 @@ Also, **the color** of that paragraph should change, depending on the **previous
 
 - If our paragraph already has a **red color**, on the next click, the color should turn to **blue**
 
-Just **loop through** these three colors (blue, green, red) again and again and again... while you are **clicking** on that button.
+Just **loop through** these three colors (blue, green, red) over and over... while you are **clicking** on that button.
 
 [image assetsSrc="JS-Advanced-DOM-Lab-8.jpg" /]
 
@@ -1016,7 +1016,7 @@ let h1 = article.firstElementChild; // returns the <h1> tag of the article
 let p = article.lastElementChild; // returns the <p> tag of the article
 ```
 
-Both of these methods would return **null** if there are no children elements.
+Both of these methods would return **null** if there were no children elements.
 
 Other properties for navigation between **next** and **previous** elements are:
 
@@ -1046,9 +1046,9 @@ let thirdLi = latsLi.previousElementSibling;
 console.log(thirdLi.textContent); //Anne
 ```
 
-These properties would also return **null** if there is just one child element.
+These properties would also return **null** if there was just one child element.
 
-The last two methods to mention are used to add a child to the **front** and the **back** of a parent element.
+The last two methods are used to add a child to the **front** and the **back** of a parent element:
 
 - `.appendChild`
 

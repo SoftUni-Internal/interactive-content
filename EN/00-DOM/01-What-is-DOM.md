@@ -14,7 +14,7 @@ The DOM eases working with HTML by **translating it to objects**, which can easi
 
 DOM is simply a **link** between HTML documents and the JavaScript programming language.
 
-Through DOM manipulations the developer can:
+Through DOM manipulations, the developer can:
 
 - Get an HTML element
 
@@ -30,7 +30,7 @@ Here is an example of an HTML element:
 <p>This is some random text</p>
 ```
 
-In the example the element is surrounded by opening and closing tags, specifying its type (in this case - a paragraph).
+In this example, the element is surrounded by opening and closing tags, specifying its type (in this case - a paragraph).
 
 Between the two tags, there is the text value of the element.
 

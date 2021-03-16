@@ -18,9 +18,9 @@ They could be as simple as:
 
 These events are useful because they can be **tracked** and **handled** whenever they happen.
 
-DOM events are typically used together **with a handler function**, which is executed **after** the event as a reaction to it.
+DOM events are typically used together **with a handler function**, executed **after** the event, as a reaction to it.
 
-Here is an example of how to attach a handler for an event:
+Here is an example of how to **attach a handler** for an event:
 
 ```js
 h1Ref.addEventListener("click", handlerFunction);
@@ -34,6 +34,6 @@ The `.addEventListener()` method accepts the following parameters:
 
 - **The function to handle the event**
 
-There is another optional parameter to this method, which will be covered later.
+There is another **optional parameter** to this method, which will be covered later.
 
 [/slide]

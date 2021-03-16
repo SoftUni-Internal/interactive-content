@@ -85,9 +85,9 @@ If the statement is **false** we push the current element to the "**acc**", othe
 
 Concatenation is when an object is formed by adding new properties to an existing object.
 
-When to use: 
+**When to use:**
 
-It would be useful to **progressively assemble** data structures at runtime, like merging JSON objects, hydrating application state from multiple **sources** or creating updates to immutable state by merging previous state with new data. 
+It can be useful to **progressively assemble** data structures at runtime, like merging JSON objects, hydrating application state from multiple **sources** or creating updates to immutable state by merging previous state with new data. 
 
 ```js live
 const obj = [{
@@ -212,7 +212,7 @@ console.log(result.height);
 
 In the example, we use the `.reduceRight()` method. 
 
-First, create a function called "**delegate**", which will take two parameters. 
+First, write called "**delegate**", which will take two parameters. 
 
 The "**acc**" array will be our result after the execution of the `.reduceRight()` method. 
 

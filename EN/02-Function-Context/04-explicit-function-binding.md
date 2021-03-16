@@ -296,9 +296,9 @@ The output should be **returned** as an **array of objects**. Each object has **
 
 **Note: Submit only the solve function.**
 
-## Examples
+# Examples
 
-**Input**
+## Input
 
 ```js
 area, vol, '[ 
@@ -308,7 +308,7 @@ area, vol, '[
 ]'
 ```
 
-**Output**
+## Output
 
 ```js
 [
@@ -319,7 +319,7 @@ area, vol, '[
 ```
 
 
-**Input**
+## Input
 
 ```js
 area, vol, '[ 
@@ -331,7 +331,7 @@ area, vol, '[
 ]' 
 ```
 
-**Output**
+## Output
 
 ```js
 [

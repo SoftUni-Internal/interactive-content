@@ -23,18 +23,18 @@ You will receive an **array** of strings.
 
 For each text, create a **div** with a **paragraph** with the string in it.
 
-Each paragraph is initially hidden, having the display attribute to `display:none`.
+Each paragraph is initially hidden, with the display attribute set to `display:none`.
 
 Add a **click event listener** to each **div** that displays the hidden paragraph.
 
-Finally, you should **append** all divs to the element with an **id** **content**.
+Finally, you should **append** all **div**s to the element with an **id** of **content**.
 
 # Example
 
-**Input**
+## Input
 [image assetsSrc="Dom-Manipulation(5).png" /]
 
-**Output**
+## Output
 [image assetsSrc="Dom-Manipulation(6).png" /]
 
 [/task-description]
@@ -141,16 +141,16 @@ Create a **function** that receives a string **message** and **displays** it ins
 
 The **div** is initially **hidden**, but when the function is called, it must be shown.
 
-After 2 seconds, **hide** the div.
+After 2 seconds, **hide** the **div**.
 
-In the example below, a notification is shown when you click the button.
+In the example below, a **notification** is shown when you click the button.
 
 # Example
 
-**Input**
+## Input
 [image assetsSrc="Dom-Manipulation(7).png" /]
 
-**Output**
+## Output
 [image assetsSrc="Dom-Manipulation(8).png" /]
 
 [/task-description]
@@ -365,10 +365,10 @@ For example, if we type in 48 hours and click **convert**, the value of the days
 
 # Example
 
-**Input**
+## Input
 [image assetsSrc="Dom-Manipulation(9).png" /]
 
-**Output**
+## Output
 [image assetsSrc="Dom-Manipulation(10).png" /]
 
 [/task-description]
@@ -554,9 +554,9 @@ function lockedProfile(){
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/04-Locked-Profile.zip) **for this task.**
 
-In this problem, you should **create a JS functionality** that **shows** and **hides** the additional information about users.
+In this problem, you should **create a JavaScript functionality** that **shows** and **hides** the additional information about users.
 
-When the "**Show more**" button is clicked, the **hidden information** inside the div should be shown, only **if the profile is not locked**.
+When the "**Show more**" button is clicked, the **hidden information** inside the **div** should be shown, only **if the profile is not locked**.
 
 If the current profile is **locked**, nothing should happen.
 
@@ -566,10 +566,10 @@ Otherwise, when the profile is **unlocked** and we click on the "**Hide it**" bu
 
 # Example
 
-**Input**
+## Input
 [image assetsSrc="Dom-Manipulation(11).png" /]
 
-**Output**
+## Output
 [image assetsSrc="Dom-Manipulation(12).png" /]
 
 [/task-description]
@@ -1409,35 +1409,35 @@ function encodeAndDecodeMessages(){
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/05-Encode-and-Decode-Messages.zip) **for this task.**
 
-Create a JavaScript functionality that encodes and decodes some messages which travel to the network.
+Create a JavaScript functionality that **encodes and decodes** some messages which travel to the network.
 
-The program should contain two functionalities.
+The program should contain **two functionalities**.
 
-The first one is to encode the given message and send it to the receiver.
+The **first** one is to **encode the given message and send it to the receiver**.
 
-The second one is to decode the received message and display it.
+The **second** one is to **decode the received message and display it**.
 
-When the "**Encode and send it**" button is clicked, you should get the given message from the first texta rea.
+When the "**Encode and send it**" button is clicked, you should get the given message from the first text area.
 
 When you get the current message, you should encode it as follows:
 
-- Change the ASCII CODE on every single character in that message by adding 1 to the current ASCII NUMBER that represents the current character in that message.
+- **Change the ASCII CODE** on every single character in that message by adding 1 to the current ASCII NUMBER that represents the current character in that message
 
-- Clear the sender text area and append the encoded message to the receiver text area.
+- **Clear the sender text area** and **append the encoded message** to the **receiver text area**
 
 After that, when the "**Decode and read it**" button is clicked, you need to get the encoded message from the receiver text area and do the opposite logic:
 
-- Subtract 1 from the current ASCII NUMBER that represents the current character in that message.
+- **Subtract 1** from the current ASCII NUMBER that represents the current character in that message
 
-- Replace the encoded message with your decoded message in the receiver text area to make it readable.
+- **Replace the encoded message** with your decoded message in the receiver text area to make it readable
 
 # Example
 
-**Input**
+## Input
 [image assetsSrc="Dom-Manipulation(13).png" /]
 [image assetsSrc="Dom-Manipulation(14).png" /]
 
-**Output**
+## Output
 [image assetsSrc="Dom-Manipulation(15).png" /]
 
 [/task-description]
@@ -1662,9 +1662,9 @@ function tableSearchEngine(){
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/06-Table-Search-Engine.zip) **for this task.**
 
-Create a function that searches in a table by a given input.
+Write a function that searches in a table by a given input.
 
-When the "**Search**" button is clicked, go through all cells in the table, except for the first row, which is the header of the table: Student name, Student email, and Student course.
+When the "**Search**" button is clicked, go through all cells in the table, except for the first row, which is the header of the table: **Student name, Student email, and Student course**.
 
 Check if the given input has a match. Check for both full words and single letters.
 
@@ -1674,14 +1674,14 @@ If any of the rows contain the submitted string, add a **select class** to that 
 
 If there is no match, **nothing should happen**.
 
-Note: After every search, **clear the input** field and remove all already selected classes, if any exist from the previous search, in order to make sure the new search will contain only the new result.
+**Note:** After every search, **clear the input** field and remove all already selected classes, if any exist from the previous search, in order to make sure the new search will contain only the new result.
 
 # Example
 
-**Input**
+## Input
 [image assetsSrc="Dom-Manipulation(16).png" /]
 
-**Output**
+## Output
 [image assetsSrc="Dom-Manipulation(17).png" /]
 
 [/task-description]
@@ -2227,22 +2227,22 @@ You will be given furniture as an array of objects.
 
 Each object will have a name, a price, and a decoration factor.
 
-When the "**Generate**" button is **clicked**, add a new row to the table for each piece of furniture with its **image**, **name**, **price**, and d**ecoration factor**.
+When the "**Generate**" button is **clicked**, add a new row to the table for each piece of furniture with its **image**, **name**, **price**, and **decoration factor**.
 
-When the "**Buy**" button is clicked, get all checkboxes that are marked, and show in the result textbox the names of the furniture that were **checked**, separated by a comma and a single space, in the following format: 
+When the "**Buy**" button is clicked, get all checkboxes that are marked, and show in the **result** textbox the **names of the furniture** that were **checked**, separated by a comma and a single space, in the following format: 
 
 "**Bought furniture:** \{**furniture1**\} \{**furniture2**\}**...**"
 
 On the next line, print the total price in the format: "**Total price:** \{**totalPrice**\}", formatted two digits after the decimal point.
 
-Finally, print the average decoration factor in the format: "**Average decoration factor:** \{**decFactor**\}".
+Finally, print the **average decoration factor** in the format: "**Average decoration factor:** \{**decFactor**\}".
 
 # Example
 
-**Input**
+## Input
 `[{"name": "Sofa", "img": "https://res.cloudinary.com/maisonsdumonde/image/upload/q_auto,f_auto/w_200/img/grey-3-seater-sofa-bed-200-13-0-175521_9.jpg", "price": 150, "decFactor": 1.2}]`
 
-**Output**
+## Output
 [image assetsSrc="Dom-Manipulation(18).png" /]
 
 [/task-description]
@@ -2727,7 +2727,7 @@ function cards(){
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/08-Cards.zip) **for this task.**
 
-Create a function that checks cards, shows which one is greater, and keeps the history of all hands.
+Write a function that checks cards, shows which one is greater, and keeps the history of all hands.
 
 First, **add click events to all cards**.
 
@@ -2748,10 +2748,10 @@ After every hand, push the current cards' names in the **history div** in the fo
 
 # Example
 
-**Input**
+## Input
 [image assetsSrc="Dom-Manipulation(19).png" /]
 
-**Output**
+## Output
 [image assetsSrc="Dom-Manipulation(20).png" /]
 
 [/task-description]
