@@ -161,7 +161,7 @@ try (InputStream in = new FileInputStream(path)) {
 [slide hideTitle]
 # Problem with Solution: Read File
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-10-Problem-Read-File-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-10-read-file-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Read File" taskId="java-advanced-streams-files-lab-read-file" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -245,7 +245,7 @@ try (FileInputStream fileStream = new FileInputStream(path)) {
 [slide hideTitle]
 # Problem with Solution: Write to File
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-12-Problem-Write-To-File-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-12-Write-To-File-Problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Write to File" taskId="java-advanced-streams-files-lab-write-to-file" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
