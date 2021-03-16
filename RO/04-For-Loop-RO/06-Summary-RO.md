@@ -19,11 +19,11 @@ for (initialization; condition; update) {
 
 * Inițializare
 
-    - **Condiție**
+    - **condiție**
 
-    - **Pas**
+    - **pas**
 
-    - **Corp**
+    - **corp**
 
 ## În lecția următoare vom învăța:
    

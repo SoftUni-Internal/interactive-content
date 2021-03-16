@@ -4,7 +4,7 @@
 
 [slide hideTitle]
 
-# Exemplu din viața reală: Mutatul vaselor
+# Exemplu Din Viața Reală: Mutatul Vaselor
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/04-For-Loop/JS-basics-for-9-10-Real-life-example-Moving-dishes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -59,13 +59,13 @@ for (initialization; condition; update) {
 
 Acesta constă în:
 
-- o **parte de inițialzare** pentru numărător (după modelul `let i = 0`)
+- O **parte de inițialzare** pentru numărător (după modelul `let i = 0`)
 
-- un condiție **booleană** (`i < 10`)
+- Un condiție **booleană** (`i < 10`)
 
-- o expresie pentru **a actualiza** numărătorul (`i += 1`)
+- O expresie pentru **a actualiza** numărătorul (`i += 1`)
 
-- corpul buclei
+- Corpul buclei
 
 În cele mai multe cazuri, bucla `for` este cuprinsă între `1` și `n` ori (de exemplu de la 1 la 10).
 
@@ -79,7 +79,7 @@ Bucla se repetă de 10 ori și fiecate repetare se numește **iterație**.
 
 [slide hideTitle]
 
-# Problemă cu soluție: Print Sum of N Numbers
+# Problemă cu Soluție: Print Sum of N Numbers
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/04-For-Loop/JS-basics-for-15-Solution-Print-Sum-of-N-Numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -111,7 +111,7 @@ function adapter(input, code) {
 Creați un program care imprimă toate numerele dintr-un interval dat și suma acestora:
 
 - Veți primi numarul n pe consolă
-- **Imprimați* toate numerele de la **1** la **n**
+- **Imprimați toate numerele de la 1 la n**
 - **Adunăți** toate numerele de la **1** la **n**
 - **Imprimați** suma pe consolă la sfârșit
 
@@ -163,7 +163,7 @@ printSum(6)
 
 [slide hideTitle]
 
-# Problemă cu soluție: Greatest Number
+# Problemă cu Soluție: Greatest Number
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/04-For-Loop/JS-basics-for-17-solution-biggest-number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

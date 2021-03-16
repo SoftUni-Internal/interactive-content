@@ -47,6 +47,22 @@ Create a program, which calculates and prints the total salary:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+calculateMonthSalary(2, ['100', '200'])
+[/input]
+[output]
+300
+[/output]
+[/test]
+[test open]
+[input]
+calculateMonthSalary(3, ['200', '240', '130'])
+[/input]
+[output]
+570
+[/output]
+[/test]
 [test]
 [input]
 calculateMonthSalary(2, ['100', '300'])
@@ -122,10 +138,12 @@ Create a program, which finds the **biggest** and the **smallest** number from a
 
 # Example
 
-| **Input**                                        | **Output**      |
-| ------------------------------------------------ | --------------- |
+| **Input**  | **Output**      |
+| ---| --- |
 | numberSequence(5, ['10', '304', '0', '0', '50']) | Max number: 304 |
 |                                                  | Min number: 0   |
+| **Input**  | **Output**      |
+| ---| --- |
 | numberSequence(4, ['15', '155', '34', '71'])     | Max number: 155 | 
 |                                                  | Min number: 15  |
 
@@ -213,6 +231,22 @@ Create a program, which calculates and prints a given number to a given power
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+powerOfNumbers(5, 2)  
+[/input]
+[output]
+32
+[/output]
+[/test]
+[test open]
+[input]
+powerOfNumbers(5, 2)
+[/input]
+[output]
+3125
+[/output]
+[/test]
 [test]
 [input]
 powerOfNumbers(7, 4)
@@ -310,6 +344,30 @@ Create a program, which determines if the sum of pairs in a sequence is the same
 
 [/task-description]
 [tests]
+[test open]
+[input]
+equalPairs(2, ['-1', '0', '0', '-1'])
+[/input]
+[output]
+Yes, value=\-1
+[/output]
+[/test]
+[test open]
+[input]
+equalPairs(2, [1, 2, 0, 1])
+[/input]
+[output]
+No, maxdiff=2
+[/output]
+[/test]
+[test]
+[input]
+equalPairs(2, [1, 2, 0, 1])
+[/input]
+[output]
+No, maxdiff=2
+[/output]
+[/test]
 [test]
 [input]
 equalPairs(3, ['1', '2', '0', '3', '4', '-1'])
@@ -418,6 +476,22 @@ Create a program, which calculates and prints the sum of a sequence in zigzag:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+zigZagSum(2, ['10', '20'])
+[/input]
+[output]
+10
+[/output]
+[/test]
+[test open]
+[input]
+zigZagSum(3, ['5', '5'])
+[/input]
+[output]
+0
+[/output]
+[/test]
 [test]
 [input]
 zigZagSum(4, ['20', '20', '20', '20'])
@@ -519,18 +593,40 @@ Create a program, which finds how many numbers of a sequence are divisible witho
 
 # Example
 
-| **Input**                                  | **Output** |
-| ------------------------------------------ | ---------- |
+| **Input** | **Output** |
+|   ---      |    --- |
 | divideWithoutRemainder(3, ['3', '6', '9']) | 33.33\%    |
 |                                            | 100.00\%   |
 |                                            | 0.00\%     |
-|                                            |            |
+
+| **Input** | **Output** |
+|   ---      |    --- |
 | divideWithoutRemainder(2, ['8', '6', '4']) | 100.00\%   |
 |                                            | 0.00\%     | 
 |                                            | 66.66\%    |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+divideWithoutRemainder(3, ['3', '6', '9'])
+[/input]
+[output]
+33.33\%
+100.00\%
+0.00\%
+[/output]
+[/test]
+[test open]
+[input]
+divideWithoutRemainder(2, ['8', '6', '4'])
+[/input]
+[output]
+100.00\%
+0.00\%
+66.66\%
+[/output]
+[/test]
 [test]
 [input]
 divideWithoutRemainder(3, ['12', '27', '6'])
@@ -657,6 +753,22 @@ Create a program, which calculates the sum of vowels in a sequence based on the 
 
 [/task-description]
 [tests]
+[test open]
+[input]
+vowelSum(2, ['a', 'g'])
+[/input]
+[output]
+1
+[/output]
+[/test]
+[test opne]
+[input]
+vowelSum(3, ['o', 'k', 'e'])
+[/input]
+[output]
+6
+[/output]
+[/test]
 [test]
 [input]
 vowelSum(2, ['i', 'u'])
@@ -770,12 +882,20 @@ Create a program, which determines if a rollercoaster can depart:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 rollercoaster(['2', '10', '2', '15', '24'])
 [/input]
 [output]
 The rollercoaster departs
+[/output]
+[/test]
+[test open]
+[input]
+rollercoaster(['3', '15', '1', '23'])
+[/input]
+[output]
+Waiting...  
 [/output]
 [/test]
 [test]
@@ -877,6 +997,10 @@ Create a program, which multiplies a given number by all the numbers from **1** 
 |             | 2 x 8 = 16  |
 |             | 2 x 9 = 18  |
 |             | 2 x 10 = 20 |
+
+
+| **Input**   | **Output**  |
+| ----------- | ----------- |
 | multiply(5) | 5 x 1 = 5   |
 |             | 5 x 2 = 10  |
 |             | 5 x 3 = 15  |
@@ -890,7 +1014,24 @@ Create a program, which multiplies a given number by all the numbers from **1** 
 
 [/task-description]
 [tests]
-[test]
+[test open]
+[input]
+multiply(2)
+[/input]
+[output]
+2 x 1 = 2
+2 x 2 = 4
+2 x 3 = 6
+2 x 4 = 8
+2 x 5 = 10
+2 x 6 = 12
+2 x 7 = 14
+2 x 8 = 16
+2 x 9 = 18
+2 x 10 = 20
+[/output]
+[/test]
+[test open]
 [input]
 multiply(5)
 [/input]
@@ -1041,18 +1182,30 @@ Create a program, which prints the sum of a given range of numbers and all the n
 | --------------- | ------------------------------------------- |
 | solve(100, 200) | The sum: 1683                               |
 |                 | 108 117 126 135 144 153 162 171 180 189 198 |
+
+| **Input**   | **Output**  |
+| ----------- | ----------- |
 | solve(10, 20)   | The sum: 165                                |
 |                 | 18                                          |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 solve(100, 200)
 [/input]
 [output]
 The sum: 1683
 108 117 126 135 144 153 162 171 180 189 198
+[/output]
+[/test]
+[test open]
+[input]
+solve(10, 20)
+[/input]
+[output]
+The sum: 165
+18
 [/output]
 [/test]
 [test]

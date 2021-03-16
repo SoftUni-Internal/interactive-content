@@ -43,9 +43,26 @@ Creați un program care calculează și imprimă salariul total
 | **Intrare**                             | **Ieșire** |
 | --------------------------------------- | ---------- |
 | calculateMonthSalary(2, ['100', '200']) | 300        |
+| calculateMonthSalary(3, ['200', '240', '130']) | 570 |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+calculateMonthSalary(2, ['100', '200'])
+[/input]
+[output]
+300
+[/output]
+[/test]
+[test open]
+[input]
+calculateMonthSalary(3, ['200', '240', '130'])
+[/input]
+[output]
+570
+[/output]
+[/test]
 [test]
 [input]
 calculateMonthSalary(2, ['100', '300'])
@@ -122,12 +139,34 @@ Creați un program care găsește **cel mai mare** și **cel mai mic** număr di
 # Exemplu
 
 | **Intrare**                                      | **Ieșire**      |
-| ------------------------------------------------ | --------------- |
+| ---| --- |
 | numberSequence(5, ['10', '304', '0', '0', '50']) | Max number: 304 |
 |                                                  | Min number: 0   |
+| **Intrare**    | **Ieșire**     |
+| ---| --- |
+| numberSequence(4, ['15', '155', '34', '71'])     | Max number: 155 | 
+|                                                  | Min number: 15  |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+numberSequence(5, ['10', '304', '0', '0', '50'])
+[/input]
+[output]
+Max number: 304
+Min number: 0
+[/output]
+[/test]
+[test open]
+[input]
+numberSequence(4, ['15', '155', '34', '71']) 
+[/input]
+[output]
+Max number: 155
+Min number: 15
+[/output]
+[/test]
 [test]
 [input]
 numberSequence(4, ['100', '200', '0', '300'])
@@ -204,11 +243,28 @@ Creați un program care calculează și imprimă un anumit număr la o putere da
 
 | **Intrare** | **Ieșire** |
 | ----------- | ---------- |
-| 5, 2        | 32         |
+| powerOfNumbers(5, 2)      | 32         |
+| powerOfNumbers(5, 5)      | 3125       |
 
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+powerOfNumbers(5, 2)  
+[/input]
+[output]
+32
+[/output]
+[/test]
+[test open]
+[input]
+powerOfNumbers(5, 2)
+[/input]
+[output]
+3125
+[/output]
+[/test]
 [test]
 [input]
 powerOfNumbers(7, 4)
@@ -243,7 +299,7 @@ powerOfNumbers(3, 8)
 [/test]
 [test]
 [input]
-powerOfNumbers(8, 2)
+powerOfNumbes(8, 2)
 [/input]
 [output]
 256
@@ -293,18 +349,43 @@ function adapter(input, code) {
 Creați un program care verifică dacă suma perechilor din secvență este aceeași:
 
 - Primiți numărul **n** și **n perechi** de numere
-- Tipăriți  `Yes, value={sum}`, dacă **suma tuturor** perechilor este **aceeași**
-- **În caz contrar**, imprimați `No, maxdiff={diff}`
-- diff este **diferența maximă** în suma dintre două perechi
+- Tipăriți "**Yes, value=**\{**sum**\}", dacă **suma tuturor** perechilor este **aceeași**
+- **În caz contrar**, imprimați "**No, maxdiff=**\{**diff**\}"
+- Diff este **diferența maximă** în suma dintre două perechi
 
 # Exemplu
 
 | **Intrare**                           | **Ieșire**     |
 | ------------------------------------- | -------------- |
 | equalPairs(2, ['-1', '0', '0', '-1']) | Yes, value=\-1 |
+| equalPairs(2, [1, 2, 0, 1])           | No, maxdiff=2  |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+equalPairs(2, ['-1', '0', '0', '-1'])
+[/input]
+[output]
+Yes, value=\-1
+[/output]
+[/test]
+[test open]
+[input]
+equalPairs(2, [1, 2, 0, 1])
+[/input]
+[output]
+No, maxdiff=2
+[/output]
+[/test]
+[test]
+[input]
+equalPairs(2, [1, 2, 0, 1])
+[/input]
+[output]
+No, maxdiff=2
+[/output]
+[/test]
 [test]
 [input]
 equalPairs(3, ['1', '2', '0', '3', '4', '-1'])
@@ -409,9 +490,26 @@ Creați un program care calculează și imprima suma secvenței în zigzag:
 | **Intrare**                | **Ieșire** |
 | -------------------------- | ---------- |
 | zigZagSum(2, ['10', '20']) | 10         |
+| zigZagSum(3, ['5', '5'])   | 0          |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+zigZagSum(2, ['10', '20'])
+[/input]
+[output]
+10
+[/output]
+[/test]
+[test open]
+[input]
+zigZagSum(3, ['5', '5'])
+[/input]
+[output]
+0
+[/output]
+[/test]
 [test]
 [input]
 zigZagSum(4, ['20', '20', '20', '20'])
@@ -513,14 +611,39 @@ Creați un program, care găsește câte numere dintr-o secvență sunt divizibi
 # Exemplu
 
 | **Intrare**                                | **Ieșire** |
-| ------------------------------------------ | ---------- |
+|   ---      |    --- |
 | divideWithoutRemainder(3, ['3', '6', '9']) | 33.33\%    |
 |                                            | 100.00\%   |
 |                                            | 0.00\%     |
-|                                            |            |
+
+| **Intrare**  | **Ieșire** |
+|   ---      |    --- |
+| divideWithoutRemainder(2, ['8', '6', '4']) | 100.00\%   |
+|                                            | 0.00\%     | 
+|                                            | 66.66\%    |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+divideWithoutRemainder(3, ['3', '6', '9'])
+[/input]
+[output]
+33.33\%
+100.00\%
+0.00\%
+[/output]
+[/test]
+[test open]
+[input]
+divideWithoutRemainder(2, ['8', '6', '4'])
+[/input]
+[output]
+100.00\%
+0.00\%
+66.66\%
+[/output]
+[/test]
 [test]
 [input]
 divideWithoutRemainder(3, ['12', '27', '6'])
@@ -643,9 +766,26 @@ Creați un program care calculează suma vocalelor într-o secvență, pe baza i
 | **Intrare**             | **Ieșire** |
 | ----------------------- | ---------- |
 | vowelSum(2, ['a', 'g']) | 1          |
+| vowelSum(3, ['o', 'k', 'e']) | 6     |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+vowelSum(2, ['a', 'g'])
+[/input]
+[output]
+1
+[/output]
+[/test]
+[test opne]
+[input]
+vowelSum(3, ['o', 'k', 'e'])
+[/input]
+[output]
+6
+[/output]
+[/test]
 [test]
 [input]
 vowelSum(2, ['i', 'u'])
@@ -740,32 +880,41 @@ function adapter(input, code) {
 Creați un program care verifică dacă un rollercoaster poate porni:
 
 Primele trei numere din intrare sunt următoarele: 
-- numărul de **locuri** 
+   - numărul de **locuri** 
 
-- **vârsta minimă a pasagerilor**
+  - **vârsta minimă a pasagerilor**
 
-- **numărul de persoane** pe coadă 
+  - **numărul de persoane** pe coadă 
 
 - Toate celelalte numere reprezintă **vârsta** fiecărei persoane de pe coadă
 
-- Dacă toate locurile pot fi ocupate, programul tipărește: **The rollercoaster departs**
+- Dacă toate locurile pot fi ocupate, programul tipărește: "**The rollercoaster departs**"
 
-- În orice alt caz, tipărește: **Waiting...**
+- În orice alt caz, tipărește: "**Waiting...**"
 
 # Exemplu
 
 | **Intrare**                                 | **Ieșire**                   |
 | ------------------------------------------- | ---------------------------- |
 | rollercoaster(['2', '10', '2', '15', '24']) | The rollercoaster departs |
+| rollercoaster(['3', '15', '1', '23'])       | Waiting...                   |
 
-[/task-description]
+/task-description]
 [tests]
-[test]
+[test open]
 [input]
 rollercoaster(['2', '10', '2', '15', '24'])
 [/input]
 [output]
 The rollercoaster departs
+[/output]
+[/test]
+[test open]
+[input]
+rollercoaster(['3', '15', '1', '23'])
+[/input]
+[output]
+Waiting...  
 [/output]
 [/test]
 [test]
@@ -816,7 +965,7 @@ Waiting...
 
 [slide hideTitle]
 
-# Problemă cu soluție: Multiply
+# Problemă cu Soluție: Multiply
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/04-For-Loop/JS-basics-for-38-39-solution-multiply-number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -868,9 +1017,40 @@ Creați un program care înmulțește un număr dat cu toate numerele din interv
 |             | 2 x 9 = 18  |
 |             | 2 x 10 = 20 |
 
+
+| **Intrare**   | ***Ieșire**   |
+| ----------- | ----------- |
+| multiply(5) | 5 x 1 = 5   |
+|             | 5 x 2 = 10  |
+|             | 5 x 3 = 15  |
+|             | 5 x 4 = 20  |
+|             | 5 x 5 = 25  |
+|             | 5 x 6 = 30  |
+|             | 5 x 7 = 35  | 
+|             | 5 x 8 = 40  |
+|             | 5 x 9 = 45  |
+|             | 5 x 10 = 50 |
+
 [/task-description]
 [tests]
-[test]
+[test open]
+[input]
+multiply(2)
+[/input]
+[output]
+2 x 1 = 2
+2 x 2 = 4
+2 x 3 = 6
+2 x 4 = 8
+2 x 5 = 10
+2 x 6 = 12
+2 x 7 = 14
+2 x 8 = 16
+2 x 9 = 18
+2 x 10 = 20
+[/output]
+[/test]
+[test open]
 [input]
 multiply(5)
 [/input]
@@ -1021,15 +1201,29 @@ Creați un program care imprimă suma numerelor dintr-un interval dat și toate 
 | solve(100, 200) | The sum: 1683                               |
 |                 | 108 117 126 135 144 153 162 171 180 189 198 |
 
+| **Intrare**   | **Ieșire**   |
+| ----------- | ----------- |
+| solve(10, 20)   | The sum: 165                                |
+|                 | 18                                          |
+
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 solve(100, 200)
 [/input]
 [output]
 The sum: 1683
 108 117 126 135 144 153 162 171 180 189 198
+[/output]
+[/test]
+[test open]
+[input]
+solve(10, 20)
+[/input]
+[output]
+The sum: 165
+18
 [/output]
 [/test]
 [test]

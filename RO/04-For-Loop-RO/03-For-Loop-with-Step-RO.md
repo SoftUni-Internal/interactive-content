@@ -44,7 +44,7 @@ for (let i = 10; i >= 1; i--) {
 
 [slide hideTitle]
 
-# Problemă cu soluție: Number Ending with 7
+# Problemă cu Soluție: Number Ending With 7
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/04-For-Loop/JS-basics-for-21-solution-numbers-ending-in-7-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -87,6 +87,16 @@ Creați un program care imprimă toate numerele care se termină cu 7, până la
 
 [/task-description]
 [tests]
+[test open]
+[input]
+numbersEndingWith7(30)
+[/input]
+[output]
+7
+17
+27
+[/output]
+[/test]
 [test]
 [input]
 numbersEndingWith7(40)
@@ -151,7 +161,7 @@ numbersEndingWith7(130)
 
 [slide hideTitle]
 
-# Problemă cu soluție: Exam Countdown
+# Problemă cu Soluție: Exam Countdown
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/04-For-Loop/JS-basics-for-23-solution-exam-countdown-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -183,8 +193,8 @@ function adapter(input, code) {
 Creați un program care numără zilele rămase până la un examen
 
 - Primiți un număr întreg - numărul de **zile înainte de examen**
-- După fiecare zi trecută, imprimă: \{numberOfDaysLeft\} days before the exam
-- La final imprimă: **The exam has come.**
+- După fiecare zi trecută, imprimă: "\{**numberOfDaysLeft**\} **days before the exam**"
+- La final imprimă: "**The exam has come.**"
 
 # Example
 
@@ -197,6 +207,17 @@ Creați un program care numără zilele rămase până la un examen
 
 [/task-description]
 [tests]
+[test open]
+[input]
+examCountdown(3)
+[/input]
+[output]
+3 days before the exam
+2 days before the exam
+1 days before the exam
+The exam has come.
+[/output]
+[/test]
 [test]
 [input]
 examCountdown(4)

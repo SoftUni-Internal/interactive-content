@@ -27,7 +27,7 @@ for (;;) {
 
 [slide hideTitle]
 
-# Problemă cu soluție: Sum Numbers Until 0
+# Problemă cu Soluție: Sum Numbers Until 0
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/04-For-Loop/JS-basics-for-33-34-problem-and-solution-sum-numbers-until-zero-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -56,7 +56,13 @@ function adapter(input, code) {
 
 # Description
 
-Creați un program care adună și imprimă  numerele dintr-o matrice până când se ajunge la 0.
+Creați un program, care rezumă și tipărește numere într-o matrice până la numărul **0**.
+
+- Veți primi o serie de numere
+
+- Parcurgeți matricea și imprimați suma pentru fiecare iterație
+
+- Când ajungeți la **0**, tipăriți: "**Good bye**"
 
 # Exemplu
 

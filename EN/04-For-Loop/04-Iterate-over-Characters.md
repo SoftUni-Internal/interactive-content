@@ -22,9 +22,11 @@ function latinLetters(startChar, endChar) {
   }
   console.log(result);
 }
+
+latinLetters('a', 'k') 
 ```
 
-# ASCII Table
+## ASCII Table
 
 **ASCII** stands for American Standard Code for Information Interchange.
 
@@ -52,7 +54,7 @@ The columns that you would most probably use for the purposes of this course are
 
 For example, the decimal value of the character **'a'** is **97** and the one corresponding to `@` is `64`.
 
-# Character Conversions
+## Character Conversions
 
 Convert an ASCII / Unicode number into a character:
 

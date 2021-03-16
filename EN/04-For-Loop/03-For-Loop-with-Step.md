@@ -85,14 +85,20 @@ Create a program, which prints all the numbers, ending with 7, up to a given num
 | numbersEndingWith7(30) | 7          |
 |                        | 17         |
 |                        | 27         |
-| numbersEndingWith7(50) | 7          |
-|                        | 17         |
-|                        | 27         |
-|                        | 37         |
-|                        | 47         |
+
 
 [/task-description]
 [tests]
+[test open]
+[input]
+numbersEndingWith7(30)
+[/input]
+[output]
+7
+17
+27
+[/output]
+[/test]
 [test]
 [input]
 numbersEndingWith7(40)
@@ -189,8 +195,8 @@ function adapter(input, code) {
 Create a program, which counts down the days before an exam:
 
 - You will receive an integer - number of **days before an exam**
-- After each day, print: \{**numberOfDaysLeft**\} days before the exam
-- At the end, print: **The exam has come.**
+- After each day, print: "\{**numberOfDaysLeft**\} days before the exam"
+- At the end, print: "**The exam has come.**"
 
 # Example
 
@@ -200,13 +206,21 @@ Create a program, which counts down the days before an exam:
 |                  | 2 days before the exam |
 |                  | 1 days before the exam |
 |                  | The exam has come.     |
-| examCountdown(2) | 2 days before the exam |
-|                  | 1 days before the exam |
-|                  | The exam has come.     |
 
 
 [/task-description]
 [tests]
+[test open]
+[input]
+examCountdown(3)
+[/input]
+[output]
+3 days before the exam
+2 days before the exam
+1 days before the exam
+The exam has come.
+[/output]
+[/test]
 [test]
 [input]
 examCountdown(4)

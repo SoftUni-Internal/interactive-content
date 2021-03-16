@@ -22,9 +22,11 @@ function latinLetters(startChar, endChar) {
   }
   console.log(result);
 }
+
+latinLetters('a', 'k') 
 ```
 
-# ASCII Table
+## ASCII Table
 
 **ASCII** înseamnă American Standard Code for Information Interchange.
 
@@ -52,7 +54,7 @@ Coloanele pe care le-ați folosi cel mai probabil în scopul acestui curs sunt c
 
 De exemplu, valoarea zecimală a caracterului **a** este **97** și cea corespunzătoare lui `@` este `64`.
 
-# Conversii de caractere
+## Conversii de caractere
 
 Convertiți un număr ASCII / Unicode într-un caracter:
 
@@ -73,7 +75,7 @@ console.log(asciiValue);
 
 [slide hideTitle]
 
-# Problemă cu soluție: Latin Letters
+# Problemă cu Soluție: Latin Letters
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/04-For-Loop/JS-basics-for-29-solution-latin-letters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -82,7 +84,7 @@ console.log(asciiValue);
 
 ```
 function latinLetters(startChar, endChar) {
-    // Write your code here...
+    // Scrieți codul dvs. aici
 }
 
 ```
