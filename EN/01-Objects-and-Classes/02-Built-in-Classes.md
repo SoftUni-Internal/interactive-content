@@ -5,28 +5,28 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-8-9-built-in-api-classes-in-java-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Java provides **ready-to-use** classes, which are organized inside **Packages**. 
+Java provides **ready-to-use** classes, which are organized inside **packages**. 
 
-These classes provide **predefined methods** and **fields** that help to save time and effort in writing code and repeating it.
+These classes provide **predefined methods** and **fields** that help save time and effort when creating applications.
 
 Some of these methods are:
 
 - `java.util.Scanner` 
 
-- `java.utils.List` 
+- `java.util.List` 
 
 - `java.lang.Math` 
 
 - `java.math.BigInteger`
 
-Using **static** Java classes and their methods requires only calling the class name and the needed method:
+Using **static** methods require calling the name of the class and the needed method:
 
 ```java
 LocalDateTime today = LocalDateTime.now();
 double cosine = Math.cos(Math.PI);
 ```
 
-Using **non-static** Java classes and their methods requires creating object (instance) of the current class:
+Using **non-static** methods require creating a new instance of an object of the current class:
 
 ```java
 Random rnd = new Random();
@@ -38,7 +38,7 @@ int randomNumber = rnd.nextInt(10);
 [slide hideTitle]
 # Math
 
-`Math` class methods are **static** and help performing the **numeric operations** and commonly used **mathematical functions** like:
+The methods of the `Math` class are **static** and they help perform **numeric operations** and commonly used **mathematical functions** like:
 
 - Rounding
 
@@ -65,41 +65,45 @@ System.out.println(a);
 System.out.println(b);
 ```
 
-- `ceil(a)` - Rounds a floating point value `a` up to the nearest integer value, returned as a `double`
+- `ceil(a)` - Rounds the floating point value `a` up to the nearest integer value and is returned as a `double`
 
 ```java live
 double ceil = Math.ceil(8.357);
 System.out.println(ceil);
 ```
 
-- `floor(a)` - Rounds a floating point value `a` down to the nearest integer value, returned as a `double`
+- `floor(a)` - Rounds the floating point value `a` down to the nearest integer value and is returned as a `double`
 
 ```java live
 double floor = Math.floor(8.357);
 System.out.println(floor);
 ```
 
-- `max(a, b)` - Returns the largest of two values passed as parameter
+- `max(a, b)` - Returns the largest of the two values that are passed as parameters
 
 ```java live
 int max = Math.max(5, 10);
 System.out.println(max);
 ```
 
-- `min(a, b)` - Returns the smallest of two values passed as parameter
+- `min(a, b)` - Returns the smallest of the two values that are passed as parameters
 
 ```java live
 int min = Math.min(5, 10);
 System.out.println(min);
 ```
 
-- `round(a)` - Rounds a float or double to the nearest integer using normal math round rules (either up or down)
+- `round(a)` - Rounds the floating point value to the nearest integer using the normal math round rules (either up or down)
 
 ```java live
 double roundedDown = Math.round(29.459);
-double roundedUp = Math.round(29.549);
 System.out.println(roundedDown);
+        
+double roundedUp = Math.round(29.549);
 System.out.println(roundedUp);
+        
+double roundedUpAgain = Math.round(29.5);
+System.out.println(roundedUpAgain);
 ```
 
 - `pow(a, b)` - Returns the value of the first parameter `a` raised to the power of the second parameter `b`
@@ -123,7 +127,7 @@ double degrees = Math.toDegrees(3.141592653589793);
 System.out.println(degrees);
 ```
 
-- `toRadians(a)` - Reverse of `toDegrees`, converts an angle in degrees to radians
+- `toRadians(a)` - Converts an angle in degrees to radians
 
 ```java live
 double radians = Math.toRadians(180);
@@ -138,11 +142,9 @@ System.out.println(radians);
 [slide hideTitle]
 # Random
 
-The class `java.util.Random` is used to generate random numbers of types **integer**, **float**, **double**, **long**. 
+The `java.util.Random` class is used to generate random numbers of types **integer**, **float**, **double**, **long**. 
 
-It can also generate a random boolean type and return a result between `true` or `false`.
-
-Random class methods are **not-static**.
+The methods from the `Random` class are **not-static**.
 
 The following code is an example of how to create a `Random` **instance**:
 
@@ -158,21 +160,24 @@ public class Main {
 
 These are some of the `Random` methods:
 
-- `nextInt()` - Returns the next pseudorandom `int` value from random number sequence
+- `nextInt()` - Returns the next pseudorandom `int` value from a random number sequence
 
 ```java live
 Random random = new Random();
+
 int number = random.nextInt();
 System.out.println(number);
 ```
 
-- `nextInt(n)` - Returns the next pseudorandom `int` value in the range from 0 to 9 both inclusive
+- `nextInt(n)` - Returns the next pseudorandom `int` value in the range from 0 (inclusive) to the specified value (exclusive)
 
 ```java live
 Random random = new Random();
+
 int numOne = random.nextInt(10);
-int numTwo = random.nextInt(10);
 System.out.println(numOne);
+
+int numTwo = random.nextInt(10);
 System.out.println(numTwo);
 ```
 
@@ -180,9 +185,11 @@ System.out.println(numTwo);
 
 ```java live 
 Random random = new Random();
+
 double numOne = random.nextDouble();
-double numTwo = random.nextDouble();
 System.out.println(numOne);
+
+double numTwo = random.nextDouble();
 System.out.println(numTwo);
 ```
 
@@ -190,6 +197,7 @@ System.out.println(numTwo);
 
 ```java live
 Random random = new Random();
+
 boolean isValid = random.nextBoolean();
 System.out.println(isValid);
 ```
@@ -200,24 +208,19 @@ System.out.println(isValid);
 # Problem with Solution: Randomize Words
 
 ## Description
-You are given a **list of words in one line**.
+You are given a **string**, which contains words, separated by a space.
 
 **Randomize their order** and print **each word at a separate line**.
 
 ## Hints
 
-- Split the input string (by space) and create an array of words
-- Create a random number generator - an object rnd of type Random
-- In a for-loop exchange each number at positions 0, 1, ..., words.Length-1 by a number at random position
+- Split the input string (by a space) and create an array of words
+- Create a random number generator - an object `rnd` of type `Random`
+- In a `for-loop` exchange each number at positions 0, 1, ..., words.Length-1 by a number at random position
 
-To generate a random number in range use rnd.nextInt(words.length)
+To generate a random number in range use `rnd.nextInt(words.length)`
 
 - Print each word in the array on new line
-
-## Constrains
-
-Execute the program locally using Integrated development environment
-
 
 ## Examples
 
@@ -232,27 +235,24 @@ Execute the program locally using Integrated development environment
 | | have | |
 | | to | |
 
-
-
-
 [/slide]
 
 [slide hideTitle]
 # BigInteger
 
-The `java.math.BigInteger` class provides **operations analogues** to all of Java's **primitive integer operations** and for **all relevant methods** from `java.lang.Math;`.
+The `java.math.BigInteger` class provides **operations analogues** to all of Java's **primitive integer operations** and for **all relevant methods** from `java.lang.Math;` class.
 
 The `BigInteger` class helps dealing with **very large Integers**. 
 
-BigInteger class methods are **non-static**.
+Its methods are **non-static**.
 
-This is how to declare a BigInteger: 
+This is how to declare a `BigInteger`: 
 
-- `BigInteger num = BigInteger.valueOf(1234567890);` 
+- `BigInteger num = BigInteger.valueOf(1234567890);`
   - the number `1234567890` is a `long` variable (64 bits)
 
 - `BigInteger num = new BigInteger("12345688901234567890");`
-  - the number `12345688901234567890` is too large and cannot fit in 64bits, so the parameter is a **numeric String**
+  - the number `12345688901234567890` is too large and cannot fit in 64bits, hence why the parameter is a **numeric String**
 
 The `BigInteger` **fields** are:
 
@@ -264,7 +264,7 @@ The `BigInteger` **fields** are:
 
 The `BigInteger` **methods** are:
 
-- `abs()` - Returns the absolute value of current BigInteger
+- `abs()` - Returns the absolute value of the current BigInteger
 
 ```java live
 BigInteger number = BigInteger.valueOf(-123);
@@ -272,7 +272,7 @@ number = number.abs();
 System.out.println(number);
 ```
 
-- `add(value)` - Assigns **new value** to current BigInteger, performs **addition** (current + value)
+- `add(value)` - Assigns a **new value** to the current BigInteger and performs an **addition** (current + value)
 
 ```java live
 BigInteger number = BigInteger.valueOf(123);
@@ -280,7 +280,7 @@ number = number.add(BigInteger.TEN);
 System.out.println(number);
 ```
 
-- `subtract(value)` - Assigns **new value** to current BigInteger, performs **subtraction** (current - value)
+- `subtract(value)` - Assigns a **new value** to the current BigInteger and performs a **subtraction** (current - value)
 
 ```java live
 BigInteger number = BigInteger.valueOf(123);
@@ -288,7 +288,7 @@ number = number.subtract(BigInteger.TEN);
 System.out.println(number);
 ```
 
-- `multiply(value)` - Assigns **new value** to current BigInteger, performs **multiplication** (current * value)
+- `multiply(value)` - Assigns a **new value** to the current BigInteger and performs a **multiplication** (current * value)
 
 ```java live
 BigInteger number = BigInteger.valueOf(123);
@@ -296,7 +296,7 @@ number = number.multiply(BigInteger.TEN);
 System.out.println(number);
 ```
 
-- `divide(value)` - Assigns **new value** to current BigInteger, performs **division** (current / value)
+- `divide(value)` - Assigns a **new value** to the current BigInteger and performs a **division** (current / value)
 
 ```java live
 BigInteger number = BigInteger.valueOf(123);
@@ -304,7 +304,7 @@ number = number.divide(BigInteger.TEN);
 System.out.println(number);
 ```
 
-- `pow(value)` - Assigns **new value** to current BigInteger, performs **power raise** (current ^ value)
+- `pow(value)` - Assigns a **new value** to the current BigInteger and performs a **power raise** (current ^ value)
 
 ```java live
 BigInteger number = BigInteger.valueOf(123);
@@ -312,11 +312,11 @@ number = number.pow(2);
 System.out.println(number);
 ```
 
-- `intValue()` - Converts to an `int`
+- `intValue()` - Converts to value to an `int`
 
-- `doubleValue()` - Converts to a `double`
+- `doubleValue()` - Converts to value to a `double`
 
-- `toString()` - Returns the decimal String representation
+- `toString()` - Returns the String representation
 
 [/slide]
 
@@ -340,7 +340,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You will receive two numbers **(0 to 10 ^ 50)**, print their sum.
+You will receive two numbers **(0 to 10 ^ 50)**. Print their sum.
 
 ## Examples
 
@@ -457,7 +457,7 @@ public class Main {
 ## Description
 You will receive N - number in range \[0 - 1000\].
 
-Calculate **Factorial of N** and print the result.
+Calculate the **Factorial of N** and print the result.
 
 ## Examples
 
