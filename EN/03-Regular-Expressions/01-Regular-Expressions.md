@@ -1,7 +1,7 @@
 # Regular Expressions
 
 [slide hideTitle]
-# What are Regular Expressions?
+# What Regular Expressions Are
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-3-4-What-are-regular-expressions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -11,11 +11,11 @@ A **regular expression** defines a **search pattern** for **strings**.
  
 The search pattern can be anything from a **simple character**, a **fixed string**, or a complex expression containing special characters describing the pattern.
 
-Patterns are defined by special syntax:
+Patterns can be defined by using a special syntax:
 
 - `[0-9]+` - Matches non-empty sequence of digits
 
-- `[A-Z][a-z]*` - Matches a capital and small letters
+- `[A-Z][a-z]*` - Matches a capital letter and none or several small letters
 
  
 You can **practice** creating custom regular expressions at:
@@ -42,21 +42,21 @@ You can **practice** creating custom regular expressions at:
 
 In the **context of regular expressions**, a character class is a **set of characters enclosed within square brackets**. 
 
-It specifies the **characters** that will **successfully match** a **single character** from a given **input string**.
+It specifies the potential **characters** that will **successfully match** a **single character** from a given **input string**.
 
 - **Simple Class** - A set of characters side-by-side within square brackets:
 
 [image assetsSrc="regex-example(2).png" /]
 
-In the example above, the class `[abc]` matches any character that is either **a**, **b**, or **c**.
+In the example above, the class `[abc]` matches any character that is either `a`, `b`, or `c`.
 
-- **Negation** - The `^` metacharacter at the beginning of the character class matches all characters except the listed
-  - `[^abc]` - matches any character that is **not** **a**,**b** or **c**
+- **Negation** - The `^` metacharacter at the beginning of the character class matches all characters except the listed ones
+  - `[^abc]` - matches any character that is **different from** `a`, `b`, or `c`
 
 [image assetsSrc="regex-example(3).png" /]
 
-- **Ranges** - Insert a `-` between the first and last character to set the range
-  - `[0-9]` - character **range** matches any digit from 0 to 9
+- **Ranges** - Insert a `-` between the first and last character to set a range
+  - `[0-9]` - character **range** that matches any digit from **0** to **9**
 
 [image assetsSrc="regex-example(4).png" /]
 [/slide]
@@ -70,11 +70,11 @@ In the example above, the class `[abc]` matches any character that is either **a
 | **Notation** | **Meaning (Returns a match where…)** |
 | --- | --- |
 |`\w`|matches any **word** characters from `a` to `Z`, digits from `0-9`, and the underscore `_` character|
-|`\W`|matches any **non-word** character (the opposite of \w)|
+|`\W`|matches any **non-word** character (the opposite of `\w`|
 |`\s`|matches any **white-space** character|
-|`\S`|matches any **non-white-space**  character (opposite of \s)|
-|`\d`|matches any **decimal digit** (0-9)|
-|`\D`|matches any **non-decimal character** (the opposite of \d)|
+|`\S`|matches any **non-white-space**  character (the opposite of `\s`)|
+|`\d`|matches any **digit** \[0-9\]|
+|`\D`|matches any **non-digit** (the opposite of `\d`)|
 
 
 
@@ -82,7 +82,7 @@ In the example above, the class `[abc]` matches any character that is either **a
 
 [image assetsSrc="regex-example(5).png" /]
 
-- `\W` - Matches any **non-word** character (the opposite of \w)
+- `\W` - Matches any **non-word** character (the opposite of `\w`)
 
 [image assetsSrc="regex-example(6).png" /]
 
@@ -90,15 +90,15 @@ In the example above, the class `[abc]` matches any character that is either **a
 
 [image assetsSrc="regex-example(7).png" /]
 
-- `\S` - Matches any **non-white-space**  character (opposite of \s)
+- `\S` - Matches any **non-white-space**  character (the opposite of `\s`)
 
 [image assetsSrc="regex-example(8).png" /]
 
-- `\d` - Matches any **decimal digit** \[0-9\]
+- `\d` - Matches any **digit** \[0-9\]
 
 [image assetsSrc="regex-example(9).png" /]
 
-- `\D` - Matches any **non-decimal** character
+- `\D` - Matches any **non-digit** character
 
 [image assetsSrc="regex-example(10).png" /]
 
@@ -117,13 +117,13 @@ In the example above, the class `[abc]` matches any character that is either **a
 
 ## Anchors
 
-- `^` - The match must start at the beginning of the string or line
+- `^` - Finds regex that must match at the beginning of the line.
 
-- `$` - The match must occur at the end of the string or before next line
+- `$` - Finds regex that must match at the end of the line.
 
 [image assetsSrc="regex-example(12).png" /]
 
-The example above matches the **entire string** with a length between **6** and **12** characters.
+The example above matches the **entire string** that has a length between **6** and **12** characters.
 
 [/slide]
 
