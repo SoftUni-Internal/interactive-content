@@ -123,6 +123,8 @@ It is important to know that once the types for the **Key** and the **Value** ar
 [slide hideTitle]
 # Built-in methods
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-6-7-8-9-built-in-methods-demo-hashmap-put-and-remove-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The `HashMap` class contains several built-in methods: 
 
 - `put(K key, V value)` - Used for **adding items** (insert an entry) in the map 
