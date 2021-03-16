@@ -39,16 +39,16 @@ Nu va exista situația în care două filme să aibă un număr egal de puncte.
 
 Rețineți următoarele:
 
-- Pentru fiecare literă mică din titlu, veți extrage din sumă, lungimea titlului înmulțită cu 2.
+- Pentru fiecare literă mică din titlu, veți extrage din sumă, lungimea titlului înmulțită cu 2
 
-- Pentru fiecare literă majusculă din titlu, lungimea titlului filmului trebuie scăzută din sumă. 
+- Pentru fiecare literă majusculă din titlu, lungimea titlului filmului trebuie scăzută din sumă
 
 - Puteți avea maxim 7 titluri de filme 
 
 ## Intrare
 Primiți mai multe elemente de pe consolă, până ce primiți comanda "**STOP**" sau până la atingerea limitei de 7 filme:
 
-- Numele filmului: un șir;
+- Numele filmului: un șir
 
 ## Ieșire
 Imprimați pe consolă:
@@ -65,6 +65,8 @@ Imprimați pe consolă:
 | **Intrare** | **Ieșire** |
 | --- | --- |
 |movie(['Matrix', 'Breaking bad', 'Legend', 'STOP'])| The best movie for you is Breaking bad its ASCII sum is: 878.|
+|movie(['Wrong turn', 'The maze', 'Area 51', 'Night Club', 'Ice age', 'Harry Potter', 'Wizards'])| Title limit has been reached.|
+||The best movie for you is Harry Potter its ASCII sum is: 948.|
 
 [hints]
 [hint]

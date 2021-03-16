@@ -8,11 +8,20 @@
 [code-task title="Cinema Income" taskId="js-pb-exam-preparation-Cinema-Income" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function solve(input) {
+function cinemaIncome(input) {
 	// Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 ## Descriere
 
@@ -34,8 +43,7 @@ Veți primi următoarele elemente de pe consolă:
 
 - Primul element: capacitatea sălii: un număr întreg în intervalul  \[50... 150\]
 
-- 
-Pe fiecare dintre elementele următoare, până când comanda este "**Movie time!**":
+- Pe fiecare dintre elementele următoare, până când comanda este "**Movie time!**":
 
 - Numărul de oameni care intră în cinematograf: un număr întreg în intervalul  \[1… 15\]
 
@@ -73,7 +81,7 @@ Obțineți capacitatea sălii. Apoi calculați cât va plăti fiecare grup de vi
 Dacă numărul de persoane care intră în sală poate fi împărțit la 3, aplicați reducerea.
 [/hint]
 [hint]
-După primirea comenzii „** Movie time! **”, imprimați rezultatul adecvat.
+După primirea comenzii "**Movie time!**", imprimați rezultatul adecvat.
 [/hint]
 
 [/hints]
@@ -81,6 +89,15 @@ După primirea comenzii „** Movie time! **”, imprimați rezultatul adecvat.
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+cinemaIncome([60, 10, 6, 3, 20, 15, 'Movie time!'])
+[/input]
+[output]
+There are 6 seats left in the cinema.
+Cinema income - 255$
+[/output]
+[/test]
 [test open]
 [input]
 cinemaIncome([140, 15, 15, 10, 5, 6, 7, 8, 9, 'Movie time!'])

@@ -89,6 +89,15 @@ Upon receiving the command "**Movie time!**", print the suitable output.
 [tests]
 [test open]
 [input]
+cinemaIncome([60, 10, 6, 3, 20, 15, 'Movie time!'])
+[/input]
+[output]
+There are 6 seats left in the cinema.
+Cinema income - 255$
+[/output]
+[/test]
+[test open]
+[input]
 cinemaIncome([140, 15, 15, 10, 5, 6, 7, 8, 9, 'Movie time!'])
 [/input]
 [output]

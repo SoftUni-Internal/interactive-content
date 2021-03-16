@@ -69,7 +69,7 @@ Imprimați o linie pe consolă:
 [hints]
 
 [hint]
-Stabiliți prețul biletului, în funcție de filmul și băutura alese 
+Stabiliți prețul biletului, în funcție de filmul și băutura alese.
 [/hint]
 
 [hint]
@@ -128,7 +128,7 @@ cinema(['Star Wars', 'Popcorn', 3])
 Your bill is 75.00$
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 cinema(['Star Wars', 'Menu', 1])
 [/input]
