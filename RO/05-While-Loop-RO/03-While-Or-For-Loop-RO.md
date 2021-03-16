@@ -29,12 +29,12 @@ Ceea ce înseamnă că nu știm exact dinainte **de câte ori** trebuie să repe
 ```js
 let command = input.shift();
 let number = Number(input.shift());
-while (command != "End") {
+while (command != 'End') {
     switch (command) {
-        case "Add":
+        case 'Add':
             number += 1;
             break;
-        case "Subtract":
+        case 'Subtract':
             number -= 1;
             break;
     }
@@ -47,7 +47,7 @@ console.log(number);
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Odd Number
+# Problemă cu Soluție: Odd Number
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/05-While-Loop/05.PB-JavaScript-While-Loop-18-Solution-Odd-Number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

@@ -262,7 +262,7 @@ powerOfNumbers(5, 2)
 [/test]
 [test open]
 [input]
-powerOfNumbers(5, 2)
+powerOfNumbers(5, 5)
 [/input]
 [output]
 3125
@@ -1203,6 +1203,7 @@ Creați un program care imprimă suma numerelor dintr-un interval dat și toate 
 | --------------- | ------------------------------------------- |
 | solve(100, 200) | The sum: 1683                               |
 |                 | 108 117 126 135 144 153 162 171 180 189 198 |
+
 
 | **Intrare**   | **Ieșire**   |
 | ----------- | ----------- |

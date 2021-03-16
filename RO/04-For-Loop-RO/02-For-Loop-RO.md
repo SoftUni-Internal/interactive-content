@@ -102,7 +102,6 @@ function adapter(input, code) {
     return code(...inputParams);
 }
 ```
-
 [/code-adapter]
 [task-description]
 
@@ -150,7 +149,7 @@ printSum(5)
 [/test]
 [test open]
 [input]
- printSum(3)
+printSum(3)
 [/input]
 [output]
 1
@@ -217,7 +216,6 @@ function adapter(input, code) {
     return code(...inputParams);
 }
 ```
-
 [/code-adapter]
 [task-description]
 

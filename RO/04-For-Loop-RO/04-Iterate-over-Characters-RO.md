@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Iterația peste caractere
+# Iterația Peste Caractere
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/04-For-Loop/JS-basics-for-24-27-iterating-over-characters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -16,9 +16,9 @@ Iată un exemplu despre cum o buclă poate trece secvențial prin unele **litere
 function latinLetters(startChar, endChar) {
   let startValue = startChar.charCodeAt(0);
   let endValue = endChar.charCodeAt(0);
-  let result = "";
+  let result = '';
   for (let i = startValue; i <= endValue; i++) {
-    result += String.fromCharCode(i) + " ";
+    result += String.fromCharCode(i) + ' ';
   }
   console.log(result);
 }
@@ -52,7 +52,7 @@ Acesta este un exemplu de parte a tabelului:
 
 Coloanele pe care le-ați folosi cel mai probabil în scopul acestui curs sunt cele **zecimale** și **charactere**.
 
-De exemplu, valoarea zecimală a caracterului **a** este **97** și cea corespunzătoare lui `@` este `64`.
+De exemplu, valoarea zecimală a caracterului "**a**" este **97** și cea corespunzătoare lui `@` este `64`.
 
 ## Conversii de caractere
 
@@ -66,7 +66,7 @@ console.log(letter);
 Convertiți un caracter în codul ASCII / Unicode:
 
 ```js live
-let letter = "A";
+let letter = 'A';
 let asciiValue = letter.charCodeAt(0);
 console.log(asciiValue);
 ```

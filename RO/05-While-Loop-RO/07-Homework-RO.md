@@ -3,7 +3,7 @@
 # Teme pentru acasă
 
 [slide hideTitle]
-# Problemă și soluție: Sum Digits
+# Problemă și Soluție: Sum Digits
 
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/05-While-Loop/05.PB-JavaScript-While-Loop-27-28-Problem&Solution-Sum-Digits-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
@@ -43,7 +43,7 @@ Creați un program care adună toate cifrele unui număr dat:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 sumDigits(5634)
 [/input]
@@ -51,7 +51,7 @@ sumDigits(5634)
 18
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 sumDigits(45666)
 [/input]
@@ -516,7 +516,7 @@ Creați un program care calculează punctele de bonus, pe baza următoarelor reg
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 specialBonus(25, ['20', '30', '25'])
 [/input]
@@ -524,7 +524,7 @@ specialBonus(25, ['20', '30', '25'])
 60
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 specialBonus(5, ['3', '4', '7', '8', '5'])
 [/input]

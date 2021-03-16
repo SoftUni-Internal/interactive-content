@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Bucla For cu un pas
+# Bucla For cu un Pas
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/04-For-Loop/JS-basics-for-18-19-loops-with-a-step-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -59,7 +59,6 @@ function numbersEndingWith7(n) {
 
 [/code-editor]
 [code-adapter]
-
 ```
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
@@ -67,7 +66,6 @@ function adapter(input, code) {
     return code(...inputParams);
 }
 ```
-
 [/code-adapter]
 [task-description]
 

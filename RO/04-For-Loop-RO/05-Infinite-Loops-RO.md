@@ -18,7 +18,7 @@ Utilizare în programare:
 
 ```js
 for (;;) {
-  console.log("Hello World");
+  console.log('Hello World');
 }
 // Puteți sări peste inițializare, condiție și increment
 ```
@@ -71,6 +71,13 @@ Creați un program, care rezumă și tipărește numere într-o matrice până l
 | sumNumbers([5, 3, 2, 0]) | Sum = 5    |
 |                          | Sum = 8    |
 |                          | Sum = 10   |
+|                          | Good bye   |
+
+
+| **Intrare**              | **Ieșire** |
+| ----------- | ----------- |
+| sumNumbers([3, 15, 0])   | Sum = 3    |
+|                          | Sum = 18   |
 |                          | Good bye   |
 
 [/task-description]

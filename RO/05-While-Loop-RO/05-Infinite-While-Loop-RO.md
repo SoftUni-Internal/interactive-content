@@ -26,9 +26,9 @@ while (true) {
 
 
 ```js
-let command = "Add";
-while (command !== "End") {
-  console.log("Executing: " + command);
+let command = 'Add';
+while (command !== 'End') {
+  console.log('Executing: ' + command);
 }
 ```
 
@@ -36,9 +36,9 @@ while (command !== "End") {
 
 ## Exemplu: Bucla finită (Depanarea erorii)
 ```js
-let command = "Add";
-while (command != "End") {
-  console.log("Executing: " + command);
+let command = 'Add';
+while (command != 'End') {
+  console.log('Executing: ' + command);
 
   command = input.shift();
 }
