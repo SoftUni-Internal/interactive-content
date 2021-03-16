@@ -59,7 +59,7 @@ switch (selector) {
 }
 ```
 
-# Example: Day of the Week
+## Example: Day of the Week
 Let us write a program that prints **the day of the week** (in English) depending on the **given number** (1 … 7) or "**Error!**" if invalid input is given.
 
 ```js

@@ -25,9 +25,9 @@ function adapter(input, code) {
 Creați un program pentru a verifica dacă **intrarea** reprezintă fructe sau legumele:
 
 * Veți primi o singură linie de intrare: un articol din legume
-* Imprimă ''**fruit**''pentru următoarele: banana, apple, kiwi, cherry, lemon, grapes
-* Imprimă ''**vegetable**''pentru următoarele: cucumber, pepper, carrot, onion
-** Imprimă : "**unknown**" pentru orice altceva
+* Imprimă "**fruit**" pentru următoarele: **banana**, **apple**, **kiwi**, **cherry**, **lemon**, **grapes**
+* Imprimă "**vegetable**" pentru următoarele: **cucumber**, **pepper**, **carrot**, **onion**
+* Imprimă "**unknown**" pentru orice altceva
 
 # Exemplu
   | **Intrare** | **Ieșire** |
@@ -145,7 +145,7 @@ function adapter(input, code) {
 Creați un program pentru a imprima ziua săptămânii ca un cuvânt:
 
 * Veți primi un număr întreg **n**: **ziua săptămânii** în intervalul \[1..7\]
-* Imprimați *numele zilei* (ca un cuvânt, în engleză)
+* Imprimați numele zilei (ca un cuvânt, în engleză)
 * Imprimați "**Error**", dacă numărul nu se află în intervalul dat
 
 
@@ -250,8 +250,8 @@ function adapter(input, code) {
 # Descriere
 Creați un program pentru a verifica dacă o  anumită literă  este o vocală sau o consoană:
 
-*Veți primi **literă** din alfabetul englez
-*Imprimați  "**Vowel**" sau "**Consonant**"
+* Veți primi **literă** din alfabetul englez
+* Imprimați  "**Vowel**" sau "**Consonant**"
 
 
 # Exemplu
@@ -962,8 +962,8 @@ function adapter(input, code) {
 Creați un program pentru a simula o retragere de numerar de la bancomat
 
 * Veți primi următoarele: **balance**, **withdraw** și **limit**
-* Imprimați "**The withdraw was successful.**" Dacă soldul este suficient
-* Imprimați "**The daily limit was exceeded.**" Dacă limita este depășită
+* Imprimați "**The withdraw was successful.**" dacă soldul este suficient
+* Imprimați "**The daily limit was exceeded.**" dacă limita este depășită
 * Imprimați "**Insufficient availability.**" dacă soldul nu este sufficient
 
 # Exemplu
@@ -1053,7 +1053,7 @@ Creați un program pentru a găsi cel mai mare dintre 5 numere
 
 * Veți primi **5 numere întregi**
 
-* Imprimați **cel mai mare** număr.
+* Imprimați **cel mai mare** număr
 
 
 # Exemplu

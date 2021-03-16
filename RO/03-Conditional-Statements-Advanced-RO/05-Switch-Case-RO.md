@@ -13,14 +13,15 @@ Aceasta este utilizată pentru **alegerea între o listă de posibilități**.
 
 Instrucțiunea compară o valoare dată cu constantele definite și, în funcție de rezultat, ia o măsură.
 
-- Punem **variabila** pe care vrem să o **comparăm**, în **parantezele după operatorul** "**switch**" și acesta se numește **"selector"**.
+- Punem **variabila** pe care vrem să o **comparăm**, în **parantezele după operatorul** "**switch**" și acesta se numește **"selector"**
 - **Tipul trebuie să fie comparabil** (numere, șiruri etc.)
-- **Consecutiv**, programul începe să compare fiecare valoare care se găsește după etichetele 'case'.
-- În caz de potrivire, executarea codului din locul respectiv începe și continuă până când ajunge la operatorul `break`.
+- **Consecutiv**, programul începe să compare fiecare valoare care se găsește după etichetele 'case'
+- În caz de potrivire, executarea codului din locul respectiv începe și continuă până când ajunge la operatorul `break`
 
 În unele limbaje de programare (cum ar fi C și C ++) `break` ar putea fi sarit, pentru a executa un cod din altă construcție 'caz' până când ajunge la un alt operator.
 
 Când **nu sunt găsite** potriviri, se execută construcția `implicită`, **dacă** aceasta **există**.
+
 ```js
 switch (selector) {
   case value1:
@@ -34,7 +35,7 @@ switch (selector) {
 [/slide]
 
 [slide hideTitle]
-# Cazul implicit
+# Cazul Implicit
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-29-switch-case-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Cazul implicit specifică secțiunea "**switch**" de executat **dacă expresia de potrivire nu se potrivește cu nici o altă etichetă de caz**.
@@ -56,7 +57,8 @@ switch (selector) {
     break;
 }
 ```
-# Exemplu: Ziua săptămânii
+
+## Exemplu: Ziua săptămânii
 Să scriem un program care tipărește **ziua săptămânii** (în limba engleză) în funcție de **numărul dat** (1 ... 7) sau **"Error!"** dacă este dată o intrare nevalidă.
 ```js
 let day = Number(input);
@@ -90,7 +92,7 @@ switch (day) {
 [/slide]
 
 [slide hideTitle]
-# Etichete multiple
+# Etichete Multiple
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-30-31-Multiple-Labels-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În **JS** avem posibilitatea de a utiliza `cazuri` **multiple** în construcția "**switch-case**", atunci când trebuie să execute **același cod**.
@@ -115,13 +117,13 @@ switch (selector) {
 [/slide]
 
 [slide hideTitle]
-# Exemplu: Tipul de animal
+# Exemplu: Tipul de Animal
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-32-Multiple-Labels-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Scrieți un program care tipărește tipul animalului în funcție de numele acestuia:
-- dog \-\> **mammal**
-- crocodile, tortoise, snake \-\> **reptile**
-- others \-\> **unknown**
+- Dog \-\> **mammal**
+- Crocodile, tortoise, snake \-\> **reptile**
+- Others \-\> **unknown**
 
 Putem rezolva sarcina cu condiții de "**switch-case**" cu mai multe etichete în felul următor:
 ```js live

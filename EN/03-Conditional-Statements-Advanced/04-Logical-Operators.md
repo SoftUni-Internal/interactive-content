@@ -68,7 +68,7 @@ As we saw above, the logical **"AND"** returns true, only when it accepts as arg
 
 Respectively, when we have a **sequence** of arguments, the logical **"AND"** checks either until there are no more arguments, or until it meets an argument with a `false` value. 
 
-# Example
+## Example
 ```js live
 let a = true;
 let b = true;
@@ -90,14 +90,14 @@ The program will run in the **following** way:
 
 - That is why the evaluation of `d` is being **skipped** and the whole expression is calculated as `false`
 
-# Example: Point in a Rectangle
+## Example: Point in a Rectangle
 Checks whether `point {x, y}` is placed **inside the rectangle {x1, y1} – {x2, y2}**. 
 
 [image assetsSrc="03.Point-in-rectangle-01.png" /]
 
 The input data is read from the console and consists of 6 lines: 
 
-- the decimal numbers `x1`, `y1`, `x2`, `y2`, `x` and `y` (as it is guaranteed that `x1 < x2` and `y1 < y2`).
+- The decimal numbers `x1`, `y1`, `x2`, `y2`, `x` and `y` (as it is guaranteed that `x1 < x2` and `y1 < y2`).
 
 ## Sample Input and Output
 
@@ -236,8 +236,10 @@ At school, the teacher says: "John or Peter should clean the board".
 
 To fulfill this condition (to clean the board), it is possible either just for John to clean it, or just for Peter to clean it, or both of them to do it.
 
-# How Does the `||` Operator Work?
-We have already learned what the logical **OR** represents. But how is it being achieved? 
+## How Does the `||` Operator Work?
+We have already learned what the logical **OR** represents. 
+
+But how is it being achieved? 
 
 Just like with the logical **"AND"**, the program checks from left to right the given arguments. 
 
@@ -356,7 +358,7 @@ Logical negation (operator `!` ) means that a given condition is **not fulfilled
 
 The operator `!` accepts as an **argument** a bool variable and **returns** its value.
 
-# Example: Invalid Number
+## Example: Invalid Number
 
 A given number is valid if it is in the range `[100 … 200]` or it is `0`. Validate an invalid number. 
 

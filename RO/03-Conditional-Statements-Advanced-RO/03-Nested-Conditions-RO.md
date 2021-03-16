@@ -21,7 +21,7 @@ if (condition1) {
 }
 ```
 
-# Exemplu: Titluri de persoană
+## Exemplu: Titluri de persoană
 
 În funcție de vârstă (număr zecimal) și sexul (**m** / **f**) al unei persoane, tipăriți un titlu:
 
@@ -33,7 +33,7 @@ if (condition1) {
 
 - `Miss`: o fată (sex **f**) - sub 16 ani
 
-# Soluție: Titluri de persoană
+## Soluție: Titluri de persoană
 
 Ar trebui să observăm că **ieșire**  programului **depinde de câteva lucruri**.
 
@@ -69,11 +69,11 @@ if (age < 16) {
 }
 ```
 
-# Imbricare adâncă
+## Imbricare adâncă
 
 Imbricarea a **mai mult de trei instrucțiuni condiționale** în interiorul altor instrucțiuni nu este considerată o bună practică.
 
-**Trebuie sa fie evitată**, mai ales prin optimizarea structurii / algoritmului codului și / sau prin utilizarea unui alt tip de instrucțiune condițională.
+**Trebuie sa fie evitată**, mai ales prin optimizarea structurii algoritmului codului și sau prin utilizarea unui alt tip de instrucțiune condițională.
 
 [/slide]
 
@@ -96,11 +96,11 @@ function marketPlace(input) {
 # Descriere
 Creați un program care:
 
-- Primește un ** tip de produs** și o zi de pe consolă
+- Primește un **tip de produs** și o zi de pe consolă
 
 - Imprimă **prețul**, formatat cu două zecimale după virgulă, pe baza tabelului de mai jos
 
- | Produs      | Ziua lucratoare| Weekend   |
+ | **Produs**      | **Ziua lucratoare**| **Weekend**   |
 | :---:       |    :----:   |   :---:     |
 | Banana      | 2.50        | 2.70 |
 | Mere        | 1.30        | 1.60    |

@@ -13,7 +13,7 @@ Putem folosi:
 * operatorul **negare** (`!`) 
 * **paranteze** (`()`).
 
-# Operatorii logici "ȘI","SAU" și "NU"
+## Operatorii logici "ȘI","SAU" și "NU"
 Acesta este un scurt exemplu care demonstrează puterea logicii **"ȘI"**, logicii  **"SAU"** și logicii  **"NU"**:
 
 ```js live
@@ -29,7 +29,7 @@ if ((animal == "horse" || animal == "donkey") && (speed > 40)) {
     console.log("Move slow");
 }
 ```
-Vom explica operatorii logici ** **"ȘI"** (`&&`), **"SAU"** (`||`) și **"NU"** (`!`) în următoarele secțiuni, împreună cu exemple și exerciții.
+Vom explica operatorii logici **"ȘI"** (`&&`), **"SAU"** (`||`) și **"NU"** (`!`) în următoarele secțiuni, împreună cu exemple și exerciții.
 [/slide]
 
 [slide hideTitle]
@@ -44,14 +44,15 @@ Opțiunea cu `if` **imbricate** este validă, dar codul ar părea foarte neordon
 Logica **"ȘI"** (operator `&&`) înseamnă că trebuie îndeplinite simultan câteva condiții.
 
 Se aplică următorul tabel al veridicității:
-| **Operandul unu** | **Operandul doi** | **ȘI** |
-| : ---: | : ----: | : ---: |
-| adevărat | adevărat | adevărat |
-| adevărat | fals | fals |
-| fals | adevărat | fals |
-| fals | fals | fals |
 
-# Cum funcționează operatorul `&&`?
+ | **Operandul unu** | **Operandul doi** | **ȘI**   |
+| :---:       |    :----:   |   :---:   |
+| adevărat | adevărat | adevărat |
+| adevărat | false | false |
+| false | adevărat | false |
+| false | false | false |
+
+## Cum funcționează operatorul `&&`?
 Operatorul logic `&&` acceptă câteva instrucțiuni booleene (condiționale), care au o valoare adevărata sau falsa și returnează o declarație 'booleană' ca rezultat.
 
 Folosindu-l în loc de câteva blocuri imbricate `if`, facem codul **mai lizibil**, **mai ordonat** și **ușor** de întreținut.
@@ -62,7 +63,7 @@ Așa cum am văzut mai sus, logica **"ȘI"** returnează true, numai atunci cân
 
 Respectiv, atunci când avem o **secvență** de argumente, **logica "ȘI"** verifică fie până când nu mai există argumente, fie până când întâlnește un argument cu o valoare `false`.
 
-# Exemplu
+## Exemplu
 ```js live
 let a = true;
 let b = true;
@@ -84,11 +85,11 @@ Programul va rula în modul **următor**:
 
 - De aceea evaluarea lui `d` este **sărita** și întreaga expresie este calculată ca `false`.
 
-# Exemplu: Punct într-un dreptunghi
+## Exemplu: Punct într-un dreptunghi
 
 Verifică dacă `punctul {x, y}` este plasat în interiorul dreptunghiului `{x1, y1} - {x2, y2}`.
 
-[image assetsSrc = "03.Point-in-rectangle-01.png" /]
+[image assetsSrc="03.Point-in-rectangle-01.png" /]
 
 Datele de intrare sunt citite de pe consolă și constă din 6 linii:
 
@@ -158,6 +159,7 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 Creați un program care aplică un bonus punctelor date
+
 * Dacă punctele sunt între **0** și **3**, se adaugă **5**
 
 * Dacă punctele sunt între **4** și **6**, se adaugă **15**
@@ -225,7 +227,7 @@ La școală, profesorul spune: "Ioan sau Petru ar trebui să curățe tabla".
 
 Pentru a îndeplini această condiție (pentru a curăța tabla), este posibil fie doar ca Ioan s-o curățe, fie doar ca Petru s-o curățe, sau ambii s-o facă.
 
-# Cum funcționează operatorul `||`?
+## Cum funcționează operatorul `||`?
 Am învățat deja ce reprezintă logica **SAU**. Dar cum se realizează de fapt?
 
 La fel ca și în cazul logicii **"ȘI"**, programul verifică de la stânga la dreapta argumentele date.
@@ -238,9 +240,9 @@ Iată un **exemplu** al operatorului `||` în acțiune:
 
 ```js live
 let a = false;
-let b = adevărat;
+let b = true;
 let c = false;
-let d = adevărat;
+let d = true;
 
 let result = a || b || c || d;
 
@@ -276,7 +278,6 @@ function adapter(input, code) {
 # Descriere
 Creați un program care determină dacă **intrarea** este **mâncare** sau **băutură**:
 
-
 * Imprimă "**food**" pentru următoarele: **curry**, **noodles**, **sushi** and **spaghetti**
 
 * Imprimă "**drink**" pentru următoarele: **tea**, **water** and **coffee**
@@ -287,11 +288,8 @@ Creați un program care determină dacă **intrarea** este **mâncare** sau **b�
 | **Intrare** | **Ieșire**  |
 | --- | --- |
 |foodOrDrink('curry')| food |
-
-
-| **Intrare** | **Ieșire**  |
-| --- | --- |
 |foodOrDrink('flower')| unknown |
+
 
 [/task-description]
 [tests]
@@ -346,7 +344,7 @@ Negarea logică (operator `!`) înseamnă că o condiție dată nu este** îndep
 
 Operatorul `!` Acceptă ca **argument** o variabilă booleană și **returnează** valoarea acesteia.
 
-# Exemplu: număr nevalid
+## Exemplu: număr nevalid
 Un număr dat este valid dacă este în intervalul `[100 ... 200]` sau este `0`. Faceți o validare pentru un număr nevalid.
 
 De exemplu, `75` și `220` sunt **nevalide**, dar `150` este **valid**.

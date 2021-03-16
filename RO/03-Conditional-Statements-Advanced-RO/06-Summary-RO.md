@@ -26,10 +26,10 @@ if (condition1) {
 ```
 
 - Operatorii logici execută expresii booleene
-  - Logical **"AND"** `&&`
-  - Logical **"OR"** `||`
-  - Logical **negation** `!`
-  - **Brackets** `()`
+  - logical **"AND"** `&&`
+  - logical **"OR"** `||`
+  - logical **negation** `!`
+  - **brackets** `()`
 
 - Instrucțiunea **switch-case** este o alternativă a instrucțiunii **if-else**
 
