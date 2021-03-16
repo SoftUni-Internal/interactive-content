@@ -4,11 +4,11 @@
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-8-10-data-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In Java we can use data types to define variables as follows:
-  * **int** – an integer number: 1, 2, 3…
-  * **double** – a floating-point: -0.5, 3.14, …
-  * **boolean** – a Boolean value: true, false
-  * **char** – a symbol: 'a', 'b', '#', …
-  * **String** – text: "Hello", "World", …
+  * **Int** – an integer number: 1, 2, 3
+  * **Double** – a floating-point: -0.5, 3.14
+  * **Boolean** – a Boolean value: true, false
+  * **Char** – a symbol: 'a', 'b', '#'
+  * **String** – text: "Hello", "World"
 
 Once a variable is defined, it can change its value many times, but it cannot change its data type later. 
 

@@ -26,6 +26,7 @@ Declararea unei variabile înseamnă **definirea** tipului său.
 După ce declarați o variabilă, puteți atribui o valoare unei variabile.
 
 Atribuirea unei valori a variabilei înseamnă **stocarea** unei **valori** unei variabile.
+
 ```java
 counter = 1;
 ```

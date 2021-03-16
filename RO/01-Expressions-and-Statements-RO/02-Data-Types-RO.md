@@ -5,11 +5,11 @@
 
 În Java putem folosi tipurile de date pentru a defini variabilele după cum urmează:
 
-  * **int** - un număr întreg: 1, 2, 3 ...
-  * **double** – numere zecimale: -0.5, 3.14, …
-  * **boolean** – valoare booleană : true, false
-  * **char** – simbol: 'a', 'b', '#', …
-  * **string** - text: "Hello", "World", …
+  * **Int** - un număr întreg: 1, 2, 3 
+  * **Double** – numere zecimale: -0.5, 3.14
+  * **Boolean** – valoare booleană : true, false
+  * **Char** – simbol: 'a', 'b', '#'
+  * **String** - text: "Hello", "World"
 
 Odată ce o variabilă este definită, poate schimba valoarea sa de mai multe ori, dar nu poate schimba tipul de date mai târziu. 
 
@@ -33,11 +33,11 @@ Sunt caracterizate prin:
 [/slide]
 
 [slide hideTitle]
-# Convențiile de denumire
+# Convențiile de Denumire
 
 În programarea, o convenție de denumire este un set de **reguli** pentru alegerea numelui care trebuie utilizat pentru variabile.
 
-In Java pentru convențiile de denumire a variabilelor sunt utilizate ***"camelCase"***. 
+In Java pentru convențiile de denumire a variabilelor sunt utilizate **"camelCase"**. 
 
 Există alte convenții de denumire care sunt folosite în diferite limbi, cum ar fi cazul pascal, cazul de șarpe.
 

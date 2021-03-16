@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Operații aritmetice
+# Operații Aritmetice
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-23-27-arithmetic-operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -120,7 +120,7 @@ System.out.println(4 % 2);
 [/slide]
 
 [slide hideTitle]
-# Concatenarea textului și a numerelor
+# Concatenarea Textului și a Numerelor
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-22-concatenating-text-and-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -138,7 +138,7 @@ String str = firstName + " " + lastName + " @ " + age;
 System.out.println(str);  // John Doe @ 19
 ```
 
-## Exemplu: Concatenarea textului și a numerelor
+## Exemplu: Concatenarea Textului și a Numerelor
 
 Mai jos avem un un alt **exemplu** de concatenare a textului și a numerelor:
 

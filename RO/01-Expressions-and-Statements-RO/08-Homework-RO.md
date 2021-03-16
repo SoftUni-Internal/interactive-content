@@ -256,7 +256,7 @@ Formula pentru calcularea ariei unui triunghi este- Area = 1/2 \* a \* h
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluția: Four Operations
+# Problemă cu Soluția: Four Operations
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-2-four-operations-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -796,7 +796,7 @@ Imprimați pe consolă aria calculată.
 
 
 [slide hideTitle]
-# Problemă cu soluția: Projects Creation
+# Problemă cu Soluția: Projects Creation
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-4-projects-creation-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

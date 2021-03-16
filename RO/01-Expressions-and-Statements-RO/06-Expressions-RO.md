@@ -4,14 +4,19 @@
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-28-29-expressions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Expresiile** sunt secvențe de operatori, literali și variabile care sunt evaluate la o valoare.
-   * Constă din cel puțin un **operand**
-   * Poate avea unu sau mai mulți **operatori**
+
+* Constă din cel puțin un **operand**
+
+* Poate avea unu sau mai mulți **operatori**
+
 ```java
 int y = x + 5;
 ```
+
 ```java
 String name = "John Doe";
 ```
+
 In cele mai multe contexte în care sunt utilizate expresii, de exemplu, în instrucțiuni, este de așteptat că expresia să evalueze la o anumită valoare.
 
 * Dacă `x` și `y` sunt numere intregi, expresia `x + y` se evaluează la o valoare numerică. Fiecare valoare are un tip asociat
@@ -19,7 +24,7 @@ In cele mai multe contexte în care sunt utilizate expresii, de exemplu, în ins
 
 * Dacă valoarea este alocată unei variabile de alt tip sau dacă `x` și `y` sunt tipuri diferite, acestea trebuie transformate într-un anumit tip
 
-## Expresii numerice
+## Expresii Numerice
 
 În programare, putem calcula expresii numerice, de exemplu:
 

@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Consolă (terminal)
+# Consolă (Terminal)
 
 În general, **consola sistemului** reprezintă un terminal de text, ceea ce înseamnă că acceptă și vizibilizează doar **textul** fără elemente grafice, cum ar fi butoane, meniuri,
 
@@ -21,7 +21,7 @@ Aplicațiile citesc textul de pe linie de comanda și imprimă textul pe consol�
 [/slide]
 
 [slide hideTitle]
-# Tipărirea și formatarea textului și a numerelor
+# Tipărirea și Formatarea Textului și a Numerelor
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-16-formatting-output-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -63,7 +63,9 @@ Acest lucru se întâmplă pentru că pe prima linie de cod folosim `println (..
 * `%d` - formatare **integer** (număr întreg)
 * `%f` - formatare **floating-point numbers** (numere în virgulă mobilă)
 
-În programare, aceste șabloane se numesc **substituenți**. Acesta este un exemplu simplu:
+În programare, aceste șabloane se numesc **substituenți**. 
+
+Acesta este un exemplu simplu:
 
 ```java live
 System.out.printf("%d + %d = %d", 3, 5, 3 + 5);
@@ -76,14 +78,14 @@ Substituentii `%d` se înlocuiesc cu expresiile date după text.
 
 [slide hideTitle]
 
-# Exemplu:Formatarea textelor și numerelor
+# Exemplu:Formatarea Textelor și Numerelor
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-16-formatting-output-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
 
 [slide hideTitle]
-# Citirea datelor introduse de utilizator
+# Citirea Datelor Introduse de Utilizator
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-15-reading-user-input-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -101,7 +103,7 @@ String name = scanner.nextLine();
 - Dacă parsarea cu un număr nu este posibila, **fiecare număr** va fi pur și simplu **un text** și **nu putem executa** operații aritmetice cu acesta
 
 ## Exemplu: Home Town
-Să scriem un program care cere utilizatorului orașul natal și imprimă textul `"I am from {homeTown}!"`.
+Să scriem un program care cere utilizatorului orașul natal și imprimă textul `I am from {homeTown}!`.
 
 ```java
 Scanner scanner = new Scanner(System.in);
@@ -119,7 +121,7 @@ I am from Bucharest!
 
 [slide hideTitle]
 
-# Exemplu: Citirea intrării utilizatorului
+# Exemplu: Citirea Intrării Utilizatorului
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-17-reading-user-input-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -127,11 +129,11 @@ I am from Bucharest!
 
 
 [slide hideTitle]
-# Citirea numerelor întregi
+# Citirea Numerelor Întregi
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-18-reading-integers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Pentru a citi un **număr întreg** (nu unul în virgulă mobilă) de pe consolă, trebuie să **declarăm o variabilă**, să declarăm **tipul de număr** și să folosim comanda standard pentru **citirea unei linii de text** de pe consola sistemului `scanner.nextLine ()` și după aceea **să transformăm linia de text într-un număr întreg** folosind `Integer.parseInt (text)`:
+Pentru a citi un **număr întreg** (nu unul în virgulă mobilă) de pe consolă, trebuie să **declarăm o variabilă**, să declarăm **tipul de număr** și să folosim comanda standard pentru **citirea unei linii de text** de pe consola sistemului `scanner.nextLine()` și după aceea **să transformăm linia de text într-un număr întreg** folosind `Integer.parseInt (text)`:
 
 ```java
 Scanner scanner = new Scanner(System.in);
@@ -150,7 +152,7 @@ Mai târziu, vom afla cum putem găsi aceste tipuri de erori și putem determina
 [/slide]
 
 [slide hideTitle]
-# Exemplu: Calcularea unei suprafețe pătrate
+# Exemplu: Calcularea unei Suprafețe Pătrate
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-18-reading-integers-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -164,6 +166,7 @@ int area = a * a;
 System.out.print("Square area = ");
 System.out.println(area);
 ```
+
 Mai jos vom vedea cum ar funcționa programul dacă am avea un pătrat cu o lungime laterală egală cu 3:
 
 [image assetsSrc="expressions-and-statements-console-example-area.png" /]
@@ -171,7 +174,7 @@ Mai jos vom vedea cum ar funcționa programul dacă am avea un pătrat cu o lung
 
 [slide hideTitle]
 
-# Citirea numerelor reale reprezentate în virgulă mobilă cu simplă precizie (float)
+# Citirea Numerelor Reale Reprezentate în Virgulă Mobilă cu Simplă Precizie (Float)
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-19-reading-floating-point-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -186,7 +189,7 @@ Codul Java de mai sus citește mai întâi o **linie de text** din consolă, apo
 
 [slide hideTitle]
 
-# Exemplu: Conversia inch în centimetri
+# Exemplu: Conversia Inch în Centimetri
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-19-reading-floating-point-numbers-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -211,7 +214,7 @@ Vom învăța cum să gestionăm excepțiile în cursurile ulterioare.
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Greeting
+# Problemă cu Soluție: Greeting
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-20-21-problem-and-solution-greeting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

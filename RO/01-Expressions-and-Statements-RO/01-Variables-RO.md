@@ -23,9 +23,9 @@ Practic, **variabilele** au un rol de:
    * **Modificarea** datelor stocate
   
 **Variabilele** se caracterizează prin:
-   * nume (identificator)
-   * tip (al informațiilor păstrate)
-   * valoare (informații stocate)
+   * Nume (identificator)
+   * Tip (al informațiilor păstrate)
+   * Valoare (informații stocate)
 
 Fiecare dintre variabilele din Java are un nume, un tip și o valoare.
 
