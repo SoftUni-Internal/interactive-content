@@ -6,11 +6,11 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-3-4-What-are-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Arrays** allow us to store multiple data in only one variable.
+**Arrays** allow us to store multiple data in a sinlgle variable.
 
-They are useful for preserving a sequence of data and iterating over it.
+They are useful for sequences of data and iterating over it.
 
-You can initialize an **array** and set the values inside it by enclosing them in curly brackets and separating the values by commas:
+You can initialize an **array** and the values inside it by enclosing them in curly brackets, separating the values by commas:
 
 ``` java
 String[] days = { "apple", "pear", "cherry" };
@@ -22,20 +22,20 @@ An array can contain duplicate values.
 int[] numbers = { 1, 1, 2, 4, 5 };
 ```
 
-The values in an array are called **elements**.
+The values of an array are called **elements**.
 
 ## Real-Life Example
 Imagine a train with multiple wagons and passengers riding in each wagon.
 
-Now imagine this as an array of integers, each element represent a wagon and its value is the passengers.
+Now imagine this as an array of integers, each element represents a wagon and its value is the passengers.
 
-Take a look at this picture:
+An array of integers is often visialized in the following way:
 
 [image assetsSrc="array-real-live-example.jpg" /]
 
-There are **7 wagons (elements)**. Each has **passengers (a value)**. \{3, 4, 10, 7, 5, 0, 6\}
+Let us say this one has **7 wagons (elements)**. Each one has **passengers (a value)**. \{3, 4, 10, 7, 5, 0, 6\}
 
-Arrays are the **basis** for other abstract data types like **List**, **Stack**, **Queue**.
+Arrays are the code **basis** for other abstract data types like: **List**, **Stack**, **Queue**.
 
 [/slide]
 
@@ -44,11 +44,11 @@ Arrays are the **basis** for other abstract data types like **List**, **Stack**,
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-5-working-with-arrays-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Arrays are used for storing multiple values in a single variable, instead of declaring separate variables for each value.
+Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each one.
 
-Arrays have a fixed size. This means they cannot be resized.
+They have a fixed size. This means they cannot be resized.
 
-Elements are always of the **same type**.
+Their elements can only be of the **same data type**.
 
 Indexes of an array are numbered from **0** to the **length - 1**.
 
@@ -72,25 +72,25 @@ Indexes of an array are numbered from **0** to the **length - 1**.
  // System.out.println(numbers[5]);  Error: Index 5 out of bounds for length 5 at Array.
 ```
 
-Here are some explanations about the last example.
+Let us explain the example above:
 
 We **allocate** an array of 5 integers.
 
-Then we **initialize** the array, but all values are 0 because the default of **int** is zero.
+Then we **initialize** the array, all values are set to 0 because the default value of an **int** is zero.
 
 We **assign** a value to the array elements.
 
 The length holds the number of array elements.
 
-In the for-loop we use `i < numbers.length` because the array's indexes are zero-based, which means that the first index of an array is 0 and the last element is `numbers[4]`.
+In the for-loop we use `i < numbers.length` because the array indexes are zero-based, which means that the first index of an array is 0 and the last one is `numbers[4]`.
 
-**Accessing** array elements by index.
+We are then **Accessing** array elements by index.
 
 As we mentioned above the first index of an array is always 0 and the last index is `array.length - 1`.
 
 In total, we have 5 elements in our array but the last element is at index 4 so we subtract `array.length - 1 = 4`, which is our last index.
 
-The `[]` operator accesses elements by index.
+The `[]` operator refers to elements by index.
 
 If we try to access the element on an invalid index we get an exception.
 
@@ -117,7 +117,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Enter a **day number** \[1…7\] and print the **day name** \(in English\) or "**Invalid Day!**".
+Enter a number in range 1-7 and print out the **word** representing it or "**Invalid Day!**".
 
 Use an **array of strings**.
 
@@ -133,7 +133,7 @@ Use an **array of strings**.
 
 * Use an array of strings holding the day names: `{Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday}`
 
-* Print the element at index \(day-1\) when it is in the range \[1…7\] or "**Invalid Day!**" otherwise
+* Print the element at index \(day-1\) when it is in range or "**Invalid Day!**" if there is no such index
 
 
 [/task-description]
@@ -259,7 +259,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Read an array from the console and sum only the even numbers.
+Read an array from the console and sum only its even values.
 
 ## Examples
 |**Input**|**Output**|**Comments**|
