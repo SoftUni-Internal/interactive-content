@@ -1,7 +1,7 @@
 // sectionId: "Javascript::Programming-Basics::Expressions-And-Statements::Arithmetic-Operators"
 
 [slide hideTitle]
-# Operatorii aritmetici
+# Operatorii Aritmetici
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-25-26-Arithmetic-operators-Plus-Minus-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -33,7 +33,7 @@ console.log(a - b);
 [/slide]
 
 [slide hideTitle]
-# Înmulțirea numerelor
+# Înmulțirea Numerelor
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-27-Arithmetic-Operators-Multiplication-Divison-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -53,12 +53,13 @@ console.log(a * b);
 Tipul numerelor reprezintă **atât** numerele întregi  (integer), cât și cele în virgulă mobilă (floating point number). Nu este  **împărțire întreagă implicită**.
 
 * Dacă faceți acest lucru
+
 ```js live
 let result = 5/4;
 console.log(result);
 ```
 
-rezultatul așteptat este 1, dar răspunsul este 1.25.
+Rezultatul așteptat este 1, dar răspunsul este 1.25.
 
 Împărțirea întreagă poate fi atinsă foarte ușor prin rotunjirea în jos a rezultatului împărțirii, utilizând `Math.floor()`:
 
@@ -115,7 +116,7 @@ console.log(f);
 [/slide]
 
 [slide hideTitle]
-# Operatorul modulo 
+# Operatorul Modulo 
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-29-Arithmetic-operators-Modular-Division-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

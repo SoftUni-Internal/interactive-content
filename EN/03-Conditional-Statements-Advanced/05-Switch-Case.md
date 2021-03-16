@@ -1,7 +1,7 @@
 // sectionId: "Javascript::Programming-Basics::Conditional-Statements-Advanced::Switch-Case"
 
 [slide hideTitle]
-# The Switch-Case Statement
+# The "switch-case" Statement
 
 [video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-27-28-The-switch-case-statement-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -66,28 +66,28 @@ Let us write a program that prints **the day of the week** (in English) dependin
 let day = Number(input);
 switch (day) {
     case 1:
-      console.log("Monday");
+      console.log('Monday');
       break;
     case 2:
-      console.log("Tuesday");
+      console.log('Tuesday');
       break;
     case 3:
-      console.log("Wednesday");
+      console.log('Wednesday');
       break;
     case 4:
-      console.log("Thursday");
+      console.log('Thursday');
       break;
     case 5:
-      console.log("Friday");
+      console.log('Friday');
       break;
     case 6:
-      console.log("Saturday");
+      console.log('Saturday');
       break;
     case 7:
-      console.log("Sunday");
+      console.log('Sunday');
       break;
     default:
-      console.log("Error!");
+      console.log('Error!');
       break;
 }
 ```
@@ -126,25 +126,25 @@ switch (selector) {
 [video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-32-Multiple-Labels-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Write a program that prints the type of animal depending on its name:
--  dog \-\> **mammal**
--  crocodile, tortoise, snake \-\> **reptile**
--  others \-\> **unknown**
+-  Sog \-\> **mammal**
+-  Crocodile, tortoise, snake \-\> **reptile**
+-  Others \-\> **unknown**
 
 We can solve the task with "**switch-case**" conditions with multiple labels in the following way:
 ```js live
-let animal = "snake";
+let animal = 'snake';
 switch (animal) {
-    case "dog":
-    case "cat":
-      console.log("mammal");
+    case 'dog':
+    case 'cat":
+      console.log('mammal');
       break;
-    case "crocodile":
-    case "tortoise":
-    case "snake":
-      console.log("reptile");
+    case 'crocodile':
+    case 'tortoise':
+    case 'snake':
+      console.log('reptile');
       break;
     default:
-      console.log("unknown");
+      console.log('unknown');
       break;
 }
 ```

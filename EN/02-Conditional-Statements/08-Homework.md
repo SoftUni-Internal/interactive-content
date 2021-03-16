@@ -112,7 +112,7 @@ Create a program, which determines if the water in a pot is boiling:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 boilingWater(104.8)
 [/input]
@@ -120,7 +120,7 @@ boilingWater(104.8)
 The water is boiling
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 boilingWater(29)
 [/input]
@@ -275,14 +275,21 @@ Additional bonus points, added separately from the previous ones:
 
 - For a number ending in 5, you should add 2 points
 
-# Example
+# Examples
 
 | **Input** | **Output** |
 | --- | --- |
 | bonusScore(20)| 6 |
 |  |26 |
+
+
+| **Input** | **Output** |
+| --- | --- |
 | bonusScore(175)| 37 |
 |  |212 |
+
+| **Input** | **Output** |
+| --- | --- |
 | bonusScore(2703)| 270.3 |
 |  |2973.3 |
 
@@ -391,7 +398,7 @@ Create a program, which calculates ticket price:
 
 * You will receive a ticket type: either **student** or **regular**
 
-* Print the **price** in the following format **$**\{**price**\}:
+* Print the **price** in the following format "**$**\{**price**\}":
     * The price should be **formatted** to 2nd digit after the decimal point
 
 * Student ticket price: **1.00**
@@ -410,12 +417,20 @@ Create a program, which calculates ticket price:
 
 [/task-description]
 [tests]
-[test]
-[input open]
+[test open]
+[input]
 tickets('student')
 [/input]
 [output]
 $1.00
+[/output]
+[/test]
+[test open]
+[input]
+tickets('teacher')
+[/input]
+[output]
+Invalid ticket type!
 [/output]
 [/test]
 [test]

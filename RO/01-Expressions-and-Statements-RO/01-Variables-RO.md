@@ -1,9 +1,9 @@
 // sectionId: "Javascript::Programming-Basics::Expressions-And-Statements::Variables"
 
-# Variabilele și stocarea datelor
+# Variabilele și Stocarea Datelor
 
 [slide hideTitle]
-# Exemplu din viața reală
+# Exemplu din Viața Reală
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-4-Real-life-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -19,7 +19,7 @@ Putem folosi variabilele pentru a stoca toate tipurile de date de care avem nevo
 
 
 [slide hideTitle]
-# Definiția variabilelor
+# Definiția Variabilelor
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-5-6-What-are-variables-and-how-are-they-used-in-computing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -27,9 +27,9 @@ Putem folosi variabilele pentru a stoca toate tipurile de date de care avem nevo
 
 De exemplu, tipurile de date pot fi: 
 
-* Date numerice (stochează un număr): 1, 2, 3.14, -1, 1.5e38 etc.
+* Date numerice (stochează un număr): 1, 2, 3.14, -1, 1.5e38 
 
-* Date sub formă de text (string): 'Hello', "Hi", "How are you?" etc.
+* Date sub formă de text (string): 'Hello', "Hi", "How are you?"
 
 * Date de tip boolean: adevărat sau fals
 
@@ -39,7 +39,7 @@ Datele stocate de acestea pot fi citite și modificate în orice moment.
 [/slide]
 
 [slide hideTitle]
-# Crearea unei variabile
+# Crearea unei Variabile
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-7-8-8-demo-Variables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -77,7 +77,7 @@ let age = 35;
 [/slide]
 
 [slide hideTitle]
-# Instrucțiuni de declarare a variabilelor
+# Instrucțiuni de dDeclarare a Variabilelor
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-9-10-Declaration-statements-let-var-const-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

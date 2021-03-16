@@ -72,19 +72,19 @@ printNum(10);
 ```
 
 By default, the **input** is **text** – a text line, read from the console.
-- After you read a text from the console, additionally, you can **parse the text** to a number by `Number()`.
+- After you read a text from the console, additionally, you can **parse the text** to a number by `Number()`
 
 - If parsing to a number is not done, **each number** will simply be **text**, and we **cannot do** arithmetic operations with it.
 
-# Example: Home Town
-Let's write a program that asks the user for their home town and prints the text `I am from {homeTown}!`.
+## Example: Home Town
+Let us write a program that asks the user for their home town and prints the text `I am from {homeTown}!`.
 
 ```js live
 function town(homeTown) {
   console.log(`I am from ${homeTown}!`);
 }
 
-town("Bucharest");
+town('Bucharest');
 ```
 
 In this case, the `{homeTown}` expression is replaced with the value of the input `homeTown`.
@@ -143,7 +143,7 @@ function calculateSquareArea(input) {
 calculateSquareArea(5);
 ```
 
-# Using the Dollar String Interpolation
+## Using the Dollar String Interpolation
 We can format text in JS using also the following $ syntax. It provides simplified text formatting.
 
 Еnclosed by the back-tick (**\`  \`**) character instead of double or single quotes
@@ -151,7 +151,7 @@ We can format text in JS using also the following $ syntax. It provides simplifi
 May contain placeholders which are indicated by the dollar sign and curly braces (`${expression}`):
 
 ```js live
-let name = "John"; 
+let name = 'John'; 
 console.log(`Hi, ${name}`);
 ```
 
@@ -180,7 +180,7 @@ The above line of JS code **reads a number** from the first line on the console.
 
 If we try to assign a non-numeric value to this variable, for example, `Hello`, we will receive `NaN` which is the acronym for **Not a number**. 
 
-# Example: Calculating a Square Area
+## Example: Calculating a Square Area
 This code demonstrates how we can calculate the area of a square by given length of its side: 
 
 ```js live
@@ -228,11 +228,19 @@ Create a program, which reads a user's name from the console and then prints "**
 ## Example
 | **Input** | **Output** |
 | --- | --- |
+| sayHello('Peter') | Hello, Peter |
 | sayHello('John') | Hello, John |
-| sayHello('Anna') | Hello, Anna |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+sayHello('Peter')
+[/input]
+[output]
+Hello, Peter
+[/output]
+[/test]
 [test open]
 [input]
 sayHello('John')
@@ -269,4 +277,3 @@ Hello, George
 [code-io/]
 [/code-task]
 [/slide]
-

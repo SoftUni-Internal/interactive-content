@@ -1,7 +1,7 @@
 // sectionId: "Javascript::Programming-Basics::Introduction-to-Programming::The-JS-Language"
 
 [slide hideTitle]
-# Limbaje de programare
+# Limbaje de Programare
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-13-14-Programming-Languages-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -35,7 +35,7 @@ Interpretorul  este `un program pentru executarea programelor`.
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-15-The-JavaScript-Language-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-JavaScript este**bazat pe prototip**, **multi-paradigmă**, **limbaj dinamic**.
+JavaScript este **bazat pe prototip**, **multi-paradigmă**, **limbaj dinamic**.
 
 Este utilizat atât pe partea de client **(în browserul web), cât și pe partea de server** (în Node.js).
 
@@ -64,7 +64,7 @@ Un program JavaScript este scris în **formă de text**,iar textul programului s
 
 **Interpretorul** execută codul **direct linie cu linie**.
 
-Scripturile și limbajele interpretate, cum ar fi JavaScript, Python și PHP, își primesc numele**din prizma faptului că sursa lor de cod este **executată pas cu pas de un interpretor.**
+Scripturile și limbajele interpretate, cum ar fi JavaScript, Python și PHP, își primesc numele din prizma faptului că sursa lor de cod este **executată pas cu pas de un interpretor.**
 
 [image assetsSrc="execution-engine.png" /]
 

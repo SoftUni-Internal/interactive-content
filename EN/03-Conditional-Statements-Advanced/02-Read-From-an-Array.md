@@ -18,7 +18,7 @@ Arrays are useful for **preserving** a sequence of **data**.
 They are enclosed in **square brackets** and the values inside them are **separated by a comma**.
 
 ```js
-let fruit = ["apple", "pear", "cherry"];
+let fruit = ['apple', 'pear', 'cherry'];
 ```
 
 The values in an array are called elements. 

@@ -24,7 +24,7 @@ VS Code are propria sa consolă pe care o vom folosi pentru a citi intrările ș
 
 [slide hideTitle]
 
-# Variabilele de logare pe consolă
+# Variabilele de Logare pe Consolă
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-16-17-Console-output-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -41,7 +41,7 @@ console.log(firstNum + secondNum);
 [/slide]
 
 [slide hideTitle]
-# Citirea datelor de la utilizator
+# Citirea Fatelor de la Utilizator
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-18-Reading-user-input-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -51,11 +51,11 @@ Veți avea o fereastră text care vă va spune `please type your username and ty
 
 Este unul dintre modurile de a primi informații de la utilizatori.
 
-Programele pot, de asemenea, să preia informațiile de la utilizatori(input) prin intermediul rest API sau ca parametri ai unei funcții. a
+Programele pot, de asemenea, să preia informațiile de la utilizatori(input) prin intermediul rest API sau ca parametri ai unei funcții.
 [/slide]
 
 [slide hideTitle]
-# Funcții și parametri
+# Funcții și Parametri
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-19-Functions-and-Parameters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -76,7 +76,7 @@ Din setările inițiale,  **input** este **text** – o linie de text, citită d
 
 - Dacă parsarea la un număr nu s-a putut realiza, **fiecare număr** va apărea ca **text**, și **nu vom putea** efectua operații aritmetice cu acesta.
 
-# Exemplu: orașul natal
+## Exemplu: Orașul Natal
 Haideți să scriem un program care îi solicită utilizatorului să introducă numele orașului natal și imprimă textul `I am from {homeTown}!`.
 
 ```js live
@@ -126,7 +126,7 @@ console.log(firstNum);
 [/slide]
 
 [slide hideTitle]
-# Formatarea ieșirii
+# Formatarea Ieșirii
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-21-21-demo-Formatting-Outputs-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -142,18 +142,15 @@ function calculateSquareArea(input) {
 }
 ```
 
-# Folosirea interpolării șirului Dollar String
+## Folosirea Interpolării Sirului Dollar String
 Folosirea interpolării șirului Dollar String
 Putem formata text în JS folosind, de asemenea, următoarea sintaxa $ syntax. Aceasta ne oferă  o metodă simplificată de formatare a textului.
 
 Încadrată de simbolurile back-tick (**\` \`**), în loc să fie scris între virgule sau ghilimele. 
 
-Putem folosi simbolul dollarului și acolade
-
-
- (`${expression}`):
+Putem folosi simbolul dollarului și acolade (`${expression}`):
 ```js
-let name = "John"; 
+let name = 'John'; 
 console.log(`Hi, ${name}`);
 ```
 Prefixul `$` înaintea unui șir în JS ne ajută să facem așa-numita **interpolare a șirului**: înlocuirea tuturor expresiilor care sunt plasate între acolade  `{ }` în text, cu valorile lor.
@@ -161,30 +158,36 @@ Prefixul `$` înaintea unui șir în JS ne ajută să facem așa-numita **
 [/slide]
 
 [slide hideTitle]
-# Citirea numerelor
+# Citirea Numerelor
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-22-Parsing-Numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a putea citi un **număr** de pe consolă, trebuie să **declarăm o variabilă** și să folosim comanda standard **de citire a unei linii de text** de pe consola de sistem și după aceea,**să convertim accea linie de text într-un număr**, folosind `Number(text)`:
 
-```js
+```js live
 function example(input){
   let num = Number(input);
+
+  console.log(num);
 }
+
+example('25');
 ```
 Linia de sus in JS code care  **citește un număr**, este prima linie de pe consolă.
 
-Dacă vrem să alocăm o valoare non-numerică acestei variabile, de exemplu `Hello`, vom primi rezultatul`NaN` care este acronimul de la **Not a number**. 
+Dacă vrem să alocăm o valoare non-numerică acestei variabile, de exemplu `Hello`, vom primi rezultatul `NaN` care este acronimul de la **Not a number**. 
 
-# Exemplu: Calcularea ariei unui pătrat
+## Exemplu: Calcularea Ariei Unui Pătrat
 Acest cod ne arată cum putem calcula aria unui pătrat în funcție de lungimea laturii acestuia: 
 
-```js
+```js live
 function example(input){
     let a = Number(input);
     let area = a * a;
     console.log(`Square area = ${area}`);
   }
+
+example('3');
 ```
 
 Aici, vedem cum funcționează programul dacă avem un pătrat cu latura egală cu 3:
@@ -194,7 +197,7 @@ Aici, vedem cum funcționează programul dacă avem un pătrat cu latura egală 
 
 
 [slide hideTitle]
-# Problemă cu soluție: Greeting
+# Problemă cu Soluție: Greeting
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-23-Problem-Greeting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -217,16 +220,25 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care să citească datele de intrare din consolă: numele și apoi imprimați  `Hello, {name}`, unde `{name}` este introdus de utilizator.  
+Creați un program care să citească datele de intrare din consolă: numele și apoi imprimați  "**Hello,** \{**name**\}", unde \{**name**\} este introdus de utilizator.  
 
 ## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | sayHello('Peter') | Hello, Peter |
+| sayHello('John') | Hello, John |
 
 [/task-description]
 [tests]
-[test]
+[test open]
+[input]
+sayHello('Peter')
+[/input]
+[output]
+Hello, Peter
+[/output]
+[/test]
+[test open]
 [input]
 sayHello('John')
 [/input]

@@ -10,7 +10,7 @@
 - Data types define the data range
 
 ```js
-let name = "Bob";
+let name = 'Bob';
 let employed = true;
 let age = 35;
 ```
@@ -29,7 +29,7 @@ function town(homeTown) {
   console.log(`I am from ${homeTown}!`);
 }
 
-town("Paris");
+town('Paris');
 ```
 
 - How to perform simple arithmetic operations
@@ -41,7 +41,7 @@ let sum = 5 + 10;
 - How to format output using interpolation
 
 ```js
-let homeTown = "Paris";
+let homeTown = 'Paris';
 
 console.log(`I am from ${homeTown}!`);
 ```

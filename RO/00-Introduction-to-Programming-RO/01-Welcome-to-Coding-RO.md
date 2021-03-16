@@ -1,7 +1,7 @@
 // sectionId: "Javascript::Programming-Basics::Introduction-to-Programming::Welcome-To-Coding"
 
 [slide hideTitle]
-# Ce este codarea?
+# Ce Este Codarea?
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-3,4-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -25,7 +25,7 @@ console.log ("Bine ați venit la codare");
 [/slide]
 
 [slide hideTitle]
-# Programe de calculator
+# Programe de Calculator
 
 Programele de computer reprezintă **o secvență de comenzi** care sunt scrise într-un anumit **limbaj de programare**, cum ar fi: C #, Java, JavaScript, Python, C ++, PHP, C, Ruby, Swift, Go sau altul.
 
@@ -102,7 +102,7 @@ console.log(min)
 [/slide]
 
 [slide hideTitle]
-# Program JavaScript bazat pe console - Exemplu
+# Program JavaScript Bazat pe Cconsole - Exemplu
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-10-Console-Based-JavaScript-Program-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -120,7 +120,7 @@ convertUsdToEur("5");
 ```
 [/slide]
 [slide hideTitle]
-# Browser-Based JavaScript Program – Example
+# Browser-Based JavaScript Program - Example
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-11-12-Console-Based-JavaScript-Program-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -128,7 +128,7 @@ convertUsdToEur("5");
 
 Folosind blocul de cod din exemplu, creăm o casetă de text ca în diapozitiv.
 
-```
+```js
 <html><body>
   <script src="converter.js"></script>
   Dollars: <input type="text" id="dollarsBox" />

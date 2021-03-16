@@ -1,39 +1,39 @@
 // sectionId: "Javascript::Programming-Basics::Conditional-Statements-Advanced::Logical-Operators"
 
-# Operatori logici
+# Operatori Logici
 
 [slide hideTitle]
-# Condiții mai complexe
+# Condiții mai Complexe
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-19-20-21-Logical Operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Să aruncăm o privire la modul în care putem crea mai multe**condiții logice complexe**în programare.
 Putem folosi:
-* operatorul logic **"ȘI"** (`&&`)
-* operatorul logic **"SAU"** (`||`)
-* operatorul **negare** (`!`) 
-* **paranteze** (`()`).
+* Operatorul logic **"ȘI"** (`&&`)
+* Operatorul logic **"SAU"** (`||`)
+* Operatorul **negare** (`!`) 
+* **Paranteze** (`()`).
 
 ## Operatorii logici "ȘI","SAU" și "NU"
 Acesta este un scurt exemplu care demonstrează puterea logicii **"ȘI"**, logicii  **"SAU"** și logicii  **"NU"**:
 
 ```js live
-let input = ["shark", "50"];
+let input = ['shark', '50'];
 let animal = input[0];
 let speed =  Number(input[1]);
 
-if ((animal == "horse" || animal == "donkey") && (speed > 40)) {
+if ((animal == 'horse' || animal == 'donkey') && (speed > 40)) {
     console.log("Run fast");
-} else if ((animal == "shark" || animal == "dolphin") && (speed > 45)) {
-    console.log("Swim fast");
-} else if (!(speed > 30 || animal == "turtle")) {
-    console.log("Move slow");
+} else if ((animal == 'shark' || animal == 'dolphin') && (speed > 45)) {
+    console.log('Swim fast');
+} else if (!(speed > 30 || animal == 'turtle')) {
+    console.log('Move slow');
 }
 ```
 Vom explica operatorii logici **"ȘI"** (`&&`), **"SAU"** (`||`) și **"NU"** (`!`) în următoarele secțiuni, împreună cu exemple și exerciții.
 [/slide]
 
 [slide hideTitle]
-# Operatorul logic "ȘI" 
+# Operatorul Logic "ȘI" 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-22-Logical-and-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 După cum am văzut,în unele probleme trebuie să facem **multe verificări simultan**.
@@ -93,7 +93,7 @@ Verifică dacă `punctul {x, y}` este plasat în interiorul dreptunghiului `{x1,
 
 Datele de intrare sunt citite de pe consolă și constă din 6 linii:
 
-- numerele zecimale `x1`,` y1`, `x2`,` y2`, `x` și` y` (deoarece se garantează că `x1 <x2` și` y1 <y2`).
+- Numerele zecimale `x1`, `y1`, `x2`, `y2`, `x` și `y` (deoarece se garantează că `x1 <x2` și `y1 <y2`).
 
 ## Eșantion de intrare și ieșire
 
@@ -127,15 +127,15 @@ let x = 8;
 let y = -1;
 
 if (x >= x1 && x <= x2 && y >= y1 && y <= y2) {
-    console.log("Inside");
+    console.log('Inside');
 } else {
-    console.log("Outside");
+    console.log('Outside');
 }
 ```
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Bonus Points
+# Problemă cu Soluție: Bonus Points
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-23-Problem-and-Solution-Bonus-Points-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -169,7 +169,8 @@ Creați un program care aplică un bonus punctelor date
 # Exemplu
    | **Intrare** | **Ieșire** |
 | --- | --- |
-|bonusPoints(4)| 19 |
+| bonusPoints(4) | 19 |
+| bonusPoints(8) | 28 |
 
 [/task-description]
 [tests]
@@ -181,7 +182,7 @@ bonusPoints(4)
 19
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 bonusPoints(8)
 [/input]
@@ -206,7 +207,7 @@ bonusPoints(1)
 
 
 [slide hideTitle]
-# Operator logic "SAU" 
+# Operator Logic "SAU" 
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-24-25-Logical-or-and-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -217,7 +218,7 @@ Similar cu operatorul `&&`, **OR** logic acceptă câteva argumente de tip **boo
 Putem afla cu ușurință că **obținem** o valoare `true` de fiecare dată când cel puțin unul dintre argumente are o valoare `true`.
 
 | **Operandul unu** | **Operandul doi** | **SAU** |
-| : ---: | : ----: | : ---: |
+| :---: | :---: | :---: |
 | adevărat | adevărat | adevărat |
 | adevărat | fals | adevărat |
 | fals | adevărat | adevărat |
@@ -255,7 +256,7 @@ Ajungând la `b`, înțelege că are o valoare `adevărată` și întreaga **exp
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Food or Drink
+# Problemă cu Soluție: Food or Drink
 
 [code-task title="Food or Drink" taskId="pb-js-conditional-statements-advanced-Food-or-Drink" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -332,11 +333,11 @@ unknown
 
 
 [slide hideTitle]
-# Operatorul logic "NU"
+# Operatorul Logic "NU"
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-26-Logical-not-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Negarea logică (operator `!`) înseamnă că o condiție dată nu este** îndeplinită.**
+Negarea logică (operator `!`) înseamnă că o condiție dată nu este **îndeplinită.**
 
 | **a** | **!a**|
 | --- | --- |
@@ -345,7 +346,9 @@ Negarea logică (operator `!`) înseamnă că o condiție dată nu este** îndep
 Operatorul `!` Acceptă ca **argument** o variabilă booleană și **returnează** valoarea acesteia.
 
 ## Exemplu: număr nevalid
-Un număr dat este valid dacă este în intervalul `[100 ... 200]` sau este `0`. Faceți o validare pentru un număr nevalid.
+Un număr dat este valid dacă este în intervalul `[100 ... 200]` sau este `0`. 
+
+Faceți o validare pentru un număr nevalid.
 
 De exemplu, `75` și `220` sunt **nevalide**, dar `150` este **valid**.
 
@@ -354,13 +357,13 @@ let num = 75;
 
 let inRange = (num >= 100 && num <= 200) || num == 0;
 if (!inRange) {
-    console.log("invalid");
+    console.log('invalid');
 }
 ```
 [/slide]
 
 [slide hideTitle]
-# Operatorul de paranteză
+# Operatorul de Paranteză
 La fel ca și restul operatorilor din programare, operatorii `&&` și `||` au prioritate, ca în acest caz: `&&` are prioritate mai mare decât `||`.
 
 Operatorul `()` servește pentru **modificarea priorității operatorilor** și este calculat mai întâi, la fel ca și în matematică.

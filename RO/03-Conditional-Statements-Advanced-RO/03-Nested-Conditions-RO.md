@@ -1,7 +1,7 @@
 // sectionId: "Javascript::Programming-Basics::Conditional-Statements-Advanced::Nested-Conditions"
 
 [slide hideTitle]
-# Condiții imbricate
+# Condiții Imbricate
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-13-14-Nested-Conditional-Statements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -50,21 +50,21 @@ Diagrama de mai jos ilustrează procesul în detaliu:
 După citirea datelor de intrare de pe consolă, ar trebui executată următoarea logică a programului:
 
 ```js live
-let input = [14, "m"];
+let input = [14, 'm'];
 let age = Number(input[0]);
 let gender = input[1];
 
 if (age < 16) {
-    if (gender == "m") {
-        console.log("Master");
-    } else if (gender == "f") {
-        console.log("Miss");
+    if (gender == 'm') {
+        console.log('Master');
+    } else if (gender == 'f') {
+        console.log('Miss');
     }
 } else {
-    if (gender == "m") {
-        console.log("Mr.");
-    } else if (gender == "f") {
-        console.log("Ms.");
+    if (gender == 'm') {
+        console.log('Mr.');
+    } else if (gender == 'f') {
+        console.log('Ms.');
     }
 }
 ```
@@ -79,7 +79,7 @@ Imbricarea a **mai mult de trei instrucțiuni condiționale** în interiorul alt
 
 [slide hideTitle]
 
-# Problemă cu soluția: Marketplace
+# Problemă cu Soluția: Marketplace
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-15-16-Problem-and-Solution-Marketplace-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -91,6 +91,15 @@ function marketPlace(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Descriere
@@ -110,7 +119,8 @@ Creați un program care:
 # Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
-| marketPlace(['Banana', 'Weekday'])| 2.50 |
+| marketPlace(['Banana', 'Weekday']) | 2.50 |
+| marketPlace(['Kiwi', 'Weekend']) | 3.00 |
 
 
 [/task-description]
@@ -131,7 +141,7 @@ marketPlace(['Apple', 'Weekend'])
 1.60
 [/output]
 [/test]
-[test]
+[test opne]
 [input]
 marketPlace(['Kiwi', 'Weekday'])
 [/input]
@@ -171,7 +181,7 @@ marketPlace(['Banana', 'Weekend'])
 
 
 [slide hideTitle]
-# Problemă cu soluție: Biggest Number of Three
+# Problemă cu Soluție: Biggest Number of Three
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-17-18-Problem-and-Solution-Biggest-number-of-three-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -215,6 +225,14 @@ biggestNumberOfThree(['1', '2', '3'])
 3
 [/output]
 [/test]
+[test open]
+[input]
+biggestNumberOfThree(['55', '17', '100'])
+[/input]
+[output]
+100
+[/output]
+[/test]
 [test]
 [input]
 biggestNumberOfThree(['-1', '-5', '-9'])
@@ -252,3 +270,4 @@ biggestNumberOfThree(['1000', '5000', '10000000000000000000'])
 [/code-task]
 
 [/slide]
+

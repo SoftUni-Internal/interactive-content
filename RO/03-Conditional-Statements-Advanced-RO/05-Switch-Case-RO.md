@@ -1,7 +1,7 @@
 // sectionId: "Javascript::Programming-Basics::Conditional-Statements-Advanced::Switch-Case"
 
 [slide hideTitle]
-# Instrucțiunea Switch-case
+# Instrucțiunea "switch-case"
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-27-28-The-switch-case-statement-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -58,34 +58,34 @@ switch (selector) {
 }
 ```
 
-## Exemplu: Ziua săptămânii
+## Exemplu: Ziua Săptămânii
 Să scriem un program care tipărește **ziua săptămânii** (în limba engleză) în funcție de **numărul dat** (1 ... 7) sau **"Error!"** dacă este dată o intrare nevalidă.
 ```js
 let day = Number(input);
 switch (day) {
     case 1:
-      console.log("Monday");
+      console.log('Monday');
       break;
     case 2:
-      console.log("Tuesday");
+      console.log('Tuesday');
       break;
     case 3:
-      console.log("Wednesday");
+      console.log('Wednesday');
       break;
     case 4:
-      console.log("Thursday");
+      console.log('Thursday');
       break;
     case 5:
-      console.log("Friday");
+      console.log('Friday');
       break;
     case 6:
-      console.log("Saturday");
+      console.log('Saturday');
       break;
     case 7:
-      console.log("Sunday");
+      console.log('Sunday');
       break;
     default:
-      console.log("Error!");
+      console.log('Error!');
       break;
 }
 ```
@@ -127,19 +127,19 @@ Scrieți un program care tipărește tipul animalului în funcție de numele ace
 
 Putem rezolva sarcina cu condiții de "**switch-case**" cu mai multe etichete în felul următor:
 ```js live
-let animal = "snake";
+let animal = 'snake';
 switch (animal) {
-    case "dog":
-    case "cat":
-      console.log("mammal");
+    case 'dog':
+    case 'cat":
+      console.log('mammal');
       break;
-    case "crocodile":
-    case "tortoise":
-    case "snake":
-      console.log("reptile");
+    case 'crocodile':
+    case 'tortoise':
+    case 'snake':
+      console.log('reptile');
       break;
     default:
-      console.log("unknown");
+      console.log('unknown');
       break;
 }
 ```

@@ -30,8 +30,8 @@ function adapter(input, code) {
 Creați un program pentru a verifica o parolă:
 
 * Veți primi un șir: parola **guess**
-  * Imprimați "**Welcome**" dacă parola este "**s3cr3t!**"
-  * Imprimați "**Wrong password!**" în orice altă situație
+  * imprimați "**Welcome**" dacă parola este "**s3cr3t!**"
+  * imprimați "**Wrong password!**" în orice altă situație
 
 # Exemplu
 
@@ -113,7 +113,7 @@ Creați un program care verifică dacă apa fierbe:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 boilingWater(104.8)
 [/input]
@@ -121,7 +121,7 @@ boilingWater(104.8)
 The water is boiling
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 boilingWater(29)
 [/input]
@@ -410,7 +410,7 @@ Creați un program care să calculeze prețul unui bilet:
 
 * Veți primi tipul de bilet: fie **student** fie **regular**
 
-* Imprimați **price** în formatul următor "${**price**}":
+* Imprimați **price** în formatul următor "**$**\{**price**\}":
 
     * prețul trebuie să fie **formatat** cu 2 cifre după punctul de zecimal 
 
@@ -425,16 +425,25 @@ Creați un program care să calculeze prețul unui bilet:
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | tickets('student') | $1.00 |
+| tickets('teacher') | Invalid ticket type! |
 
 
 [/task-description]
 [tests]
-[test]
-[input open]
+[test open]
+[input]
 tickets('student')
 [/input]
 [output]
 $1.00
+[/output]
+[/test]
+[test open]
+[input]
+tickets('teacher')
+[/input]
+[output]
+Invalid ticket type!
 [/output]
 [/test]
 [test]

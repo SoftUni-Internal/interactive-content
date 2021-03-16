@@ -22,7 +22,7 @@ In majoritatea contextelor în care sunt folosite expresiile, ca de exemplu, în
 
 * Dacă `x` și `y` sunt numere, expresia `x + y` este evaluată ca o valoare numerică
 
-# Expresiile numerice 
+## Expresiile numerice 
 
 In programare, putem calcula expresii numerice, de exemplu:
 

@@ -7,9 +7,12 @@
 
 The `if` construction may also contain an `else` clause to give a specific action in case the Boolean expression (which is set at the beginning `if (bool expression)` ) returns a negative result (`false`). 
 
-Built this way, **the conditional statement** is called `if-else` and its behavior is as follows: 
-* If the result of the condition is positive (`true`) – we perform some actions
-* When it is negative (`false`) – other. 
+Built this way, **the conditional statement** is called `if-else` and its behavior is as follows:
+
+* If the result of the condition is positive (`true`) - we perform some actions
+
+* When it is negative (`false`) - other
+
 [image assetsSrc="02-usecase-if-else-statement.png" /]
 
 The format of the construction is:
@@ -23,7 +26,7 @@ if (condition) {
 
 The condition represents an expression that is considered to be either `truthy` or `falsy`.
 
-Because a condition can’t be simultaneously `true` and `false`, the `if`-statement and the `else`-statement of an `if-else` statement can **never both run**. 
+Because a condition can’t be simultaneously `true` and `false`, the `if`- statement and the `else`- statement of an `if-else` statement can **never both run**. 
 
 If the condition in the `if`-statement returns `true`, we enter the condition body of the `if`-statement.
 
@@ -41,10 +44,10 @@ This is an extended version of the example from the previous slide.
 As you can see now we have another case, which will be executed when the condition in the `if` turns out to be **false.**
 ```js
 function example(input) {
-  if (weather == "rainy") {
-    console.log("Take an umbrella!");
+  if (weather == 'rainy') {
+    console.log('Take an umbrella!');
   } else {
-    console.log("Leave your umbrella at home!")
+    console.log('Leave your umbrella at home!')
   }
 }
 ```
@@ -62,24 +65,25 @@ When we want to execute a **block of code** (a group of commands), curly bracket
 In case we drop them, **only the first line** after the **if clause** will be executed.
 
 Here is an example where **skipping** the curly brackets leads to **confusion:**
+
 ```js live
-let color = "red";
-if (color == "red") 
-  console.log("tomato");
+let color = 'red';
+if (color == 'red') 
+  console.log('tomato');
 else
-  console.log("banana");
-console.log("lemon"); 
+  console.log('banana');
+console.log('lemon'); 
 ```
 
 With curly brackets:
 ```js live
-let color = "red";
-if (color == "red") {
-  console.log("tomato");
-  console.log("strawberry"); 
+let color = 'red';
+if (color == 'red') {
+  console.log('tomato');
+  console.log('strawberry'); 
 } else {
-  console.log("banana");
-  console.log("lemon");
+  console.log('banana');
+  console.log('lemon');
 }
 ```
 [/slide]

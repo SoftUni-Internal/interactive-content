@@ -1,7 +1,7 @@
 // sectionId: "Javascript::Programming-Basics::Introduction-to-Programming::Typicals-Errors-In-JS-Programs"
 
 [slide hideTitle]
-# Erori tipice în programele JavaScript
+# Erori Tipice în Programele JavaScript
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-38-39-40-Typical-Errors-In-JS-Programs-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

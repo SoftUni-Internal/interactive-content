@@ -20,14 +20,14 @@ if (condition1) {
 }
 ```
 
-# Example: Personal Titles
+## Example: Personal Titles
 Depending on the age (decimal number) and the gender (**m** / **f**) of a person, print a title: 
 - `Mr.`: a man (gender **m**) - 16 or more years old
 - `Master`: a boy (gender **m**) - under 16 years
 - `Ms.`: a woman (gender **f**) - 16 or more years old
 - `Miss`: a girl (gender **f**) -  under 16 years
 
-# Solution: Person Titles
+## Solution: Person Titles
 We should note that the **output** of the program **depends on a few things**. 
 
 **First**, we have to check what is the specified **gender** and **then** to check the **age.** 
@@ -43,26 +43,26 @@ The diagram below illustrates the process in detail:
 After reading the input data from the console, the following program logic should be executed:
 
 ```js live
-let input = [14, "m"];
+let input = [14, 'm'];
 let age = Number(input[0]);
 let gender = input[1];
 
 if (age < 16) {
-    if (gender == "m") {
-        console.log("Master");
-    } else if (gender == "f") {
-        console.log("Miss");
+    if (gender == 'm') {
+        console.log('Master');
+    } else if (gender == 'f') {
+        console.log('Miss');
     }
 } else {
-    if (gender == "m") {
-        console.log("Mr.");
-    } else if (gender == "f") {
-        console.log("Ms.");
+    if (gender == 'm') {
+        console.log('Mr.');
+    } else if (gender == 'f') {
+        console.log('Ms.');
     }
 }
 ```
 
-# Deep nesting
+## Deep nesting
 Nesting of **more than three conditional statements** inside each other is not considered a good practice.
 
 It **has to be avoided**, mostly through optimization of the structure/the algorithm of the code and/or by using another type of conditional statement.
@@ -132,7 +132,7 @@ marketPlace(['Apple', 'Weekend'])
 1.60
 [/output]
 [/test]
-[test]
+[test opne]
 [input]
 marketPlace(['Kiwi', 'Weekday'])
 [/input]
@@ -214,6 +214,14 @@ biggestNumberOfThree(['1', '2', '3'])
 [/input]
 [output]
 3
+[/output]
+[/test]
+[test open]
+[input]
+biggestNumberOfThree(['55', '17', '100'])
+[/input]
+[output]
+100
 [/output]
 [/test]
 [test]

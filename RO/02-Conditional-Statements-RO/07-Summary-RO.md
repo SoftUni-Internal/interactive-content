@@ -5,7 +5,7 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/02-Conditions/02-conditional-statements-js-49-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In această lecție am învățat:
+## In această lecție am învățat:
 
 - Ce este o expresie logică booleană  
    - cum să folosim operatorii de comparație 
@@ -18,13 +18,13 @@ In această lecție am învățat:
 
 ```js
 if (num == 1) {
-    console.log("one");
+    console.log('one');
 } else if (num == 2) {
-    console.log("two");
+    console.log('two');
 } else if (num == 3) {
-    console.log("three");
+    console.log('three');
 } else if (num == 4) {
-    console.log("four");
+    console.log('four');
 }
 ```
 

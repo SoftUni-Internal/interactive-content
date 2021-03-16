@@ -2,7 +2,7 @@
 
 # Condiții simple if
 [slide hideTitle]
-# Exemplu din viață reală: Udarea plantelor 
+# Exemplu din Viață Reală: Udarea Plantelor 
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/02-Conditions/02-conditional-statements-js-8-9-Real-Life-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -39,7 +39,7 @@ dacă umiditatea este mai mare de 90%
 
 [slide hideTitle]
 
-# Condiții simple if
+# Condiții Simple "if"
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/02-Conditions/02-conditional-statements-js-13-14-Simple-Conditions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -56,20 +56,20 @@ if (condition) {
   // condition body;
 }
 ```
-# Exemplu: vreme
+## Exemplu: vreme
 
 Aici, dacă condiția vremii ploioase se evaluează la **adevărat**, atunci corpul instrucțiunii este executat.
 ```js
 function example(input) {                               
-  if (input == "rainy") {                                         
-    console.log("Take an umbrella!");                  
+  if (input == 'rainy') {                                         
+    console.log('Take an umbrella!');                  
   }
 }
 ```
 [/slide]
 [slide hideTitle]
 
-# Problemă cu soluție: Freezing Weather
+# Problemă cu Soluție: Freezing Weather
 
 [code-task title="Freezing weather" taskId="pb-js-conditional-statements-Freezing-Weather" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

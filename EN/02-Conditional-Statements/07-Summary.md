@@ -18,13 +18,13 @@
 
 ```js
 if (num == 1) {
-    console.log("one");
+    console.log('one');
 } else if (num == 2) {
-    console.log("two");
+    console.log('two');
 } else if (num == 3) {
-    console.log("three");
+    console.log('three');
 } else if (num == 4) {
-    console.log("four");
+    console.log('four');
 }
 ```
 

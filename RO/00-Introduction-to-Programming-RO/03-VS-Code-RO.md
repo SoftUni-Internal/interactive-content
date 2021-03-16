@@ -1,7 +1,7 @@
 // sectionId: "Javascript::Programming-Basics::Introduction-to-Programming::VS-Code"
 
 [slide hideTitle]
-# Medii de dezvoltare (IDE) 
+# Medii de Dezvoltare (IDE) 
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-17-18-19-Integrated-Development-Environments-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -107,7 +107,7 @@ Asta e tot. Sunteți gata să lucrați cu Visual Studio Code.
 [/slide]
 
 [slide hideTitle]
-# Medii de dezvoltare: desktop și online
+# Medii de Dezvoltare: Desktop și Online
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-23-Development-Environments-Desktop-And-Online-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -132,7 +132,7 @@ IDE alternativ (online)
 [/slide]
 
 [slide hideTitle]
-# Ce este codul Visual Studio
+# Ce Este Dodul Visual Studio
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-25-What-is-Visual-Studio-Code-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -149,19 +149,19 @@ Acest lucru îi permite să funcționeze ca un editor **cross-language** pentru 
 [/slide]
 
 [slide hideTitle]
-# Rularea VSC și a extensiilor recomandate
+# Rularea VSC și a Extensiilor Recomandate
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-27-28-Running-VSC-and-recommended-extensions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Visual Studio Code are multe extensii care ne pot face fluxul de lucru mai plăcut.
 
-- **Beautify**: Beautify formate de fișiere precum HTML. Codul neformatat din aceste fișiere este convertit în cod formatat.
+- **Beautify**: Beautify formate de fișiere precum HTML. Codul neformatat din aceste fișiere este convertit în cod formatat
 
 Trebuie să activăm această setare în tab-ul preferințe cod VS și va formata automat tot codul.
 
-- **ESLint**: ESLint analizează codul nostru JavaScript și ne ajută să remediem erorile.
+- **ESLint**: ESLint analizează codul nostru JavaScript și ne ajută să remediem erorile
 
-- **JSHint**: JSHint impune dezvoltatorilor să folosească convențiile de codare JavaScript.
+- **JSHint**: JSHint impune dezvoltatorilor să folosească convențiile de codare JavaScript
 
 Ajută la detectarea potențialelor erori în codul JavaScript.
 

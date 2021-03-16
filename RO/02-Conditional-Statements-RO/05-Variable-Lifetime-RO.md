@@ -1,7 +1,7 @@
 // sectionId: "Javascript::Programming-Basics::Conditional-Statements::Variable-Lifetime"
 
 [slide hideTitle]
-# Domeniul de aplicare a variabiei
+# Domeniul de Aplicare a Variabiei
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/02-Conditions/02-conditional-statements-js-29-30-Variable-life-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -13,7 +13,7 @@ Această gamă specifică unde poate fi utilizată o variabilă și cât de lung
 
 Astfel, este important să știm că **orice variabilă definită în interiorul unei anumite instrucțiuni** `if` **nu va fi disponibilă în afara acesteia**, cu excepția cazului în care am definit-o anterior într-un domeniu mai înalt în codificare.
 
-## Domeniul de aplicare a variabilei - Exemplu 
+## Domeniul de Aplicare a Variabilei - Exemplu 
 
 În exemplul de mai jos, pe ultima linie încercăm să imprimăm variabila `salariu` care este definită în declarația `if`, vom primi o **eroare** deoarece nu avem acces la ea.
 

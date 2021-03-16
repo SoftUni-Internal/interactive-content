@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Secvența condițiilor If-Else
+# Secvența Condițiilor "if-else"
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/02-Conditions/02-conditional-statements-js-24-25-Sequence-of-if-else-conditions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -37,25 +37,25 @@ Putem citi cifra și apoi, printr-o **succesiune de condiții**, putem imprima c
 let num = Number(input);
 
 if (num == 1) {
-    console.log("one");
+    console.log('one');
 } else if (num == 2) {
-    console.log("two");
+    console.log('two');
 } else if (num == 3) {
-    console.log("three");
+    console.log('three');
 } else if (num == 4) {
-    console.log("four");
+    console.log('four');
 } else if (num == 5) {
-    console.log("five");
+    console.log('five');
 } else if (num == 6) {
-    console.log("six");
+    console.log('six');
 } else if (num == 7) {
-    console.log("seven");
+    console.log('seven');
 } else if (num == 8) {
-    console.log("eight");
+    console.log('eight');
 } else if (num == 9) {
-    console.log("nine");
+    console.log('nine');
 } else {
-    console.log("number too big");
+    console.log('number too big');
 }
 ```
 

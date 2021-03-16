@@ -1,10 +1,10 @@
 // sectionId: "Javascript::Programming-Basics::For-Loop::Reading-From-An-Array"
 
-# Citirea unei matrice
+# Citirea Unei Matrice
 
 [slide hideTitle]
 
-# Ce este o matrice? 
+# Ce Este o Matrice? 
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-9-10-What-is-an-Array-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -18,7 +18,7 @@ Matricea este folositoare pentru a **păstra** o secvență de **date**.
 Sunt scrise între **paranteze pătrate** și valorile din interior sunt **separate prin virgulă**.
 
 ```js
-let fruit = ["apple", "pear", "cherry"];
+let fruit = ['apple', 'pear', 'cherry'];
 ```
 
 Valorile unei matrice se numesc elemente. 
@@ -26,6 +26,7 @@ Valorile unei matrice se numesc elemente.
 Imaginați-vă un tren, care are vagoane și fiecare vagon are pasageri. 
 
 Acum imaginați-vi-l  o matrice cu numere întregi, în care elementele reprezintă vagoanele și valorile lor reprezintă pasagerii.
+
 Uitați-vă la această imagine:
 
 [image assetsSrc="list-example.png" /]
@@ -40,7 +41,7 @@ Primul element din matrice se află pe poziția `0`, și ultimul se află pe poz
 
 [slide hideTitle]
 
-# Citirea dintr-o matrice
+# Citirea Dintr-o Matrice
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-11-Reading-from-Arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

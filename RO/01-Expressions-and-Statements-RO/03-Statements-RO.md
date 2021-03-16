@@ -4,7 +4,7 @@
 
 
 [slide hideTitle]
-# Comenzile în programele de calculator
+# Comenzile în Programele de Calculator
 
 Acțiunile pe care le aplică un program sunt exprimate ca **instrucțiuni**.
 

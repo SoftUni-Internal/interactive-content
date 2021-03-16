@@ -14,20 +14,20 @@ We can use:
 * Logical **negation** (`!`) 
 * **Parentheses** (`()`)
 
-# Logical "AND", "OR" and "NOT"
+## Logical "AND", "OR" and "NOT"
 This is a short example that demonstrates the power of the logical **"AND"**, the logical **"OR"** and the logical **"NOT"**: 
 
 ```js live
-let input = ["shark", "50"];
+let input = ['shark', '50'];
 let animal = input[0];
 let speed =  Number(input[1]);
 
-if ((animal == "horse" || animal == "donkey") && (speed > 40)) {
+if ((animal == 'horse' || animal == 'donkey') && (speed > 40)) {
     console.log("Run fast");
-} else if ((animal == "shark" || animal == "dolphin") && (speed > 45)) {
-    console.log("Swim fast");
-} else if (!(speed > 30 || animal == "turtle")) {
-    console.log("Move slow");
+} else if ((animal == 'shark' || animal == 'dolphin') && (speed > 45)) {
+    console.log('Swim fast');
+} else if (!(speed > 30 || animal == 'turtle')) {
+    console.log('Move slow');
 }
 ```
 
@@ -91,7 +91,7 @@ The program will run in the **following** way:
 - That is why the evaluation of `d` is being **skipped** and the whole expression is calculated as `false`
 
 ## Example: Point in a Rectangle
-Checks whether `point {x, y}` is placed **inside the rectangle {x1, y1} – {x2, y2}**. 
+Checks whether `point {x, y}` is placed inside the rectangle `{x1, y1} – {x2, y2}`. 
 
 [image assetsSrc="03.Point-in-rectangle-01.png" /]
 
@@ -132,9 +132,9 @@ let x = 8;
 let y = -1;
 
 if (x >= x1 && x <= x2 && y >= y1 && y <= y2) {
-    console.log("Inside");
+    console.log('Inside');
 } else {
-    console.log("Outside");
+    console.log('Outside');
 }
 ```
 [/slide]
@@ -187,7 +187,7 @@ bonusPoints(4)
 19
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 bonusPoints(8)
 [/input]
@@ -225,7 +225,7 @@ We can easily guess that we **obtain** a value `true` whenever at least one of t
 
 
  | **Operand one** | **Operand two** | **OR** |
-| :---:       |    :----:   |   :---:   |
+| :---: |    :---:   |   :---:   |
 | true | true | true |
 | true | false | true |
 | false | true | true |
@@ -245,7 +245,7 @@ Just like with the logical **"AND"**, the program checks from left to right the 
 
 To obtain `true` from the expression, it is necessary to have at least one argument with a `true` value. 
 
-Respectively, the checking **continues** until an **argument** with **such** value is encountered or until there aren't any arguments **left**.
+Respectively, the checking **continues** until an **argument** with **such** value is encountered or until there are not any arguments **left**.
 
 Here is one **example** of the `||` operator in action:
 
@@ -360,7 +360,9 @@ The operator `!` accepts as an **argument** a bool variable and **returns** its 
 
 ## Example: Invalid Number
 
-A given number is valid if it is in the range `[100 … 200]` or it is `0`. Validate an invalid number. 
+A given number is valid if it is in the range `[100 ... 200]` or it is `0`. 
+
+Validate an invalid number. 
 
 For example, `75` and `220` are **invalid**, but `150` is **valid**.
 
@@ -369,13 +371,13 @@ let num = 75;
 
 let inRange = (num >= 100 && num <= 200) || num == 0;
 if (!inRange) {
-    console.log("invalid");
+    console.log('invalid');
 }
 ```
 [/slide]
 
 [slide hideTitle]
-# The Parenthesis  Operator
+# The Parenthesis Operator
 
 Like the rest of the operators in the programming, the operators `&&` and `||` have a priority, as in this case: `&&` is with higher priority than `||`. 
 

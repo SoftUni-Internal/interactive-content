@@ -9,7 +9,7 @@
 
 - Tipurile de date definesc gama de date
 ```js
-let name = "Bob";
+let name = 'Bob';
 let employed = true;
 let age = 35;
 ```
@@ -28,7 +28,7 @@ function town(homeTown) {
   console.log(`I am from ${homeTown}!`);
 }
 
-town("Paris");
+town('Paris');
 ```
 
 - Cum să efectuați operații aritmetice simple
@@ -40,7 +40,7 @@ town("Paris");
 - Cum să formatați datele de ieșire folosind interpolarea
 
 ```js
-let homeTown = "Paris";
+let homeTown = 'Paris';
 
 console.log(`I am from ${homeTown}!`);
 ```
@@ -51,7 +51,7 @@ console.log(`I am from ${homeTown}!`);
 let r = (150-20) / 2 + 5;
 ```
 
-# # In următoarea lecție veți învăța:
+## In următoarea lecție veți învăța:
 
 - Cum să comparați valorile folosind operatorii de comparație
 

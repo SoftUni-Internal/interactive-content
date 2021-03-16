@@ -1,9 +1,9 @@
 // sectionId: "Javascript::Programming-Basics::Expressions-And-Statements::Data-Types"
 
-# Tipurile de date 
+# Tipurile de Date 
 
 [slide hideTitle]
-# Tipurile de date
+# Tipurile de Date
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-11-12-What-are-data-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -56,7 +56,7 @@ Veți aprofunda tipurile de **obiecte** mai târziu în cadrul cursului.
 [/slide]
 
 [slide hideTitle]
-# Tipurile de date sunt dinamice
+# Tipurile de Fate sunt Dinamice
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-13-13-demo-Data-types-are-dynamic-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -83,7 +83,7 @@ Ele se pot caracteriza prin:
 [/slide]
 
 [slide hideTitle]
-# Convenții referitoare la denumire
+# Convenții Referitoare la Denumire
 
 În programarea computerizată, convențiile privind nume sunt reprezentate de un set de **reguli** pentru alegerea numelor variabilelor.
 

@@ -5,7 +5,7 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/01-PB-JavaScript-expressions-and-statements-25-26-Arithmetic-operators-Plus-Minus-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Let's examine the basic **arithmetic operations** in programming. 
+Let us examine the basic **arithmetic operations** in programming. 
 
 We can add, subtract, multiply and divide numbers using the operators `+`, `-`, `*`, and `/`.
 
@@ -59,16 +59,22 @@ Integer division can easily be achieved by flooring the quotient of the two numb
 let result = Math.floor(5/4);
 console.log(result);
 ```
-This leads to a problem though. What if we have a situation like this: 
+
+This leads to a problem though. 
+
+What if we have a situation like this: 
+
 ```js live
 let result = Math.floor(-5/4);
 console.log(result);
 ```
 In this case, the quotient is negative. 
 
-* The expected answer is -1, but you’ll get -2 instead
+* The expected answer is -1, but you will get -2 instead
 
-* Flooring works the opposite way for negative numbers. An `if statement` can fix this
+* Flooring works the opposite way for negative numbers 
+
+An `if statement` can fix this:
 
 ```js live
 let result = -5/4;

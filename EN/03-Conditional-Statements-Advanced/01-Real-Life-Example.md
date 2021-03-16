@@ -19,7 +19,7 @@ A market offers different prices for certain products based on the day of the we
 
 We want to calculate the price for a certain product, depending on the day of the week:
 
-# Pseudocode
+## Pseudocode
 
 ```
 Read the input
