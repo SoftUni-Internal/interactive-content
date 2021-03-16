@@ -1,4 +1,4 @@
-# String Type
+# String
 
 [slide hideTitle]
 
@@ -6,7 +6,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-45-48-string-data-type-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Strings are used for storing text.
+Strings are used to store text.
 
 A **String** variable contains a collection of characters surrounded by double quotes and has a default value of **null** (no value).
 
@@ -31,7 +31,7 @@ You can use `String.format` to insert the values of string variables into anothe
 
 ## Example: Saying Hello
 
-Here is how we can combine the first and last names of a person to print their full name.
+Here is how we can combine the first and last names of a person and print out their full name.
 
 ```Java live
 String firstName = "John";
@@ -41,7 +41,7 @@ System.out.printf("Your full name is %s.", fullName);
 ```
 ## String Concatenation
 
-The `+` operator can be used to combine two strings together. This is called concatenation:
+The `+` operator can be used to combine two strings. This is called concatenation:
 
 ```Java live
 String firstName = "John";
@@ -49,7 +49,7 @@ String lastName = "Doe";
 System.out.println(firstName + " " + lastName);
 ```
 
-Note that we have added an empty text `(" ")` to create a space between **firstName** and **lastName** when printing.
+Note that we have added an empty space `(" ")` between the **firstName** and **lastName** when printing.
 
 [/slide]
 
