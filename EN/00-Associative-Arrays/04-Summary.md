@@ -24,12 +24,14 @@ public class Main {
 
 ## In the next lesson you will learn:
 
-- What a String is
+- Classes
+    - Definition of Classes
+    - Methods, Properties, Fields
 
-- Manipulating Strings
+- Objects
+    - Definition
+    - Values
 
-- Building and Modifying Strings
-    - using the `StringBuilder` Class
-    - why concatenation is a slow operation
+- Built-in Classes
 
 [/slide]
