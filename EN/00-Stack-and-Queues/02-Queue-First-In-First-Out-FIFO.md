@@ -238,7 +238,7 @@ Hot potato is a game in which **kids form a circle and start passing a hot potat
 
 The counting starts with the first kid.
 
-**Every n-th toss, the kid left holding the potato leaves the game**.
+**Every n-th toss, the kid which holds the potato leaves the game**.
 
 When a kid leaves the game, it passes the potato forward.
 

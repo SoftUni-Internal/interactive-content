@@ -461,7 +461,7 @@ Implement an elegant solution **using a Stack**.
 
 ## Hints
 - If the given number is 0, print 0
-- Else, while the number is greater than zero, divide it by 2 and push the reminder into the stack
+- Else, while the number is greater than zero, divide it by 2 and push the remаinder into the stack
 
 ```java
 while (decimal != 0) {
