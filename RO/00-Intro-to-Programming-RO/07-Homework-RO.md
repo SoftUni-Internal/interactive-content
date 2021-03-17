@@ -104,7 +104,7 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program care să tipărească "**Catlyn**" pe prima linie și să calculeze și să imprimă rezultatul expresiei 5 + 3 pe cea de-a doua linie
+Scrieți un program care să tipărească "**Catlyn**" pe prima linie și să calculeze și să imprime rezultatul expresiei 5 + 3 pe cea de-a doua linie
 [/task-description]
 [tests]
 [test open]
@@ -148,7 +148,7 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program care să calculeze și sa imprime valoarea următoarelor expresii:
+Scrieți un program care să calculeze și să imprime valoarea următoarelor expresii:
 
 * 5 + 3 \* 2
 * 4 \* (2 + 3)
@@ -190,7 +190,7 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -265,7 +265,7 @@ Scrieți un program care să execute următoarele:
 * Laturile dreptunghiului au valorile 5 și 10
 
 ## Rezultat
-* Printează suprafața calculată
+* Tipărește suprafața calculată
 [/task-description]
 [code-io /]
 [tests]
@@ -306,7 +306,7 @@ public class Main {
 
 Scrieți un program care să tipărească numerele de la 1 la 10 (inclusiv).
 
-## Ieșire
+## Rezultat
 
 Fiecare număr ar trebui să fie pe o linie nouă.
 [/task-description]
@@ -358,7 +358,7 @@ Fiecare număr ar trebui să fie pe o linie nouă.
 ```
 public class Main {
   public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -369,7 +369,7 @@ Scrieți un program care să **imprime un triunghi** format din steluțe.
 
 Veți imprima un simbol asterisc \(\*\) pe primul rând, două simboluri asterisc pe al doilea rând, și așa mai departe, pentru un total de 5 rânduri. 
 
-## Ieșire
+## Rezultat
 ```
 *
 **
