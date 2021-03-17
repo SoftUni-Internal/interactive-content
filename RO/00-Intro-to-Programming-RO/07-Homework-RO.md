@@ -1,4 +1,4 @@
-# Teme pentru acasă
+# Teme Pentru Acasă
 [slide hideTitle]
 # O problemă cu soluție: Print Hello Java
 [code-task title="Print Hello Java" taskId="pb-java-introduction-print-hello-java" executionType="tests-execution" executionStrategy="java-code"]
