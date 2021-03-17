@@ -1028,22 +1028,23 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program to extract all email addresses from a given text.
+Create a program that extracts all email addresses from a given text.
 
-The text comes at the **only input line**.
+You will receive only one line of input.
 
-**Print the emails on the console**, each at a separate line.
+Emails are considered to be in the following **format**: \{user\}\@\{host\} 
 
-Emails are considered to be in **format** \{user\}\@\{host\}, where: 
-
-- \{user\} is a sequence of **letters and digits**, where '.', '-' and '_' can appear between them
+- \{user\} is a sequence of **letters and digits**, where '.', '-' and '_' can appear somewhere in the text, except in the beginning
     - examples of **valid users**: "stephan", "mike03", "s.johnson", "st_steward", "12345"
     - examples of **invalid users**: ''--123", ".....", "_steve", ".info"
-- \{host\} is a **sequence of at least two words, separated by dots** '.'. Each word is **sequence of letters and can have hyphens** '-' between the letters
-    - examples of **hosts**: "softuni.org", "software-university.com", "intoprogramming.info", "mail.softuni.org"
+- \{host\} is a **sequence of at least two words, separated by dots** (' . '). Each word is **sequence of letters and can have hyphens** ('-') between the letters
+    - examples of **valid hosts**: "softuni.org", "software-university.com", "intoprogramming.info", "mail.softuni.org"
     - examples of **invalid hosts**: "helloworld", ".unknown.soft.", "invalid-host-", "invalid-"
 - Examples of **valid emails**: info\@softuni.org, kiki\@hotmail.co.uk, no-reply\@github.com, s.peterson\@mail.uu.net, info-bg\@software-university.software.academy
 - Examples of **invalid emails**: --123\@gmail.com, …\@mail.bg, .info\@info.info, _steve\@yahoo.cn, mike\@helloworld, mike\@.unknown.soft., s.johnson\@invalid-
+
+
+You should print out all valid emails, each on a new line.
 
 ### Example
 | **Input** | **Output** |
