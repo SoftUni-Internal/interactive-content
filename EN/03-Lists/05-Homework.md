@@ -1060,7 +1060,7 @@ public class Main {
 ## Description
 You will be given two hands of cards, which will be represented by **integers**.
 
-Assume each one is held by a different player **two players**.
+Assume each one is held by a different player
 
 You have to **find** which one has the **winning deck**.
 
