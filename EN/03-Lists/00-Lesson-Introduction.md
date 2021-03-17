@@ -8,9 +8,9 @@
 
 **1. Lists and Manipulations**
 
-- What **lists** are
+- Lists: definition
 
-- How lists are used and why we need them
+- Use of lists
 
 - **Adding** elements
 
