@@ -358,27 +358,29 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Calculate the profit from the products that were sold throughout the day.
+Create a program that calculates the total profit from the products that were sold throughout the day.
 
-**Until you receive a line** with text "**end of shift**" you will **be given lines of input**.
+You will be receiving lines of input until you receive the **end of shift** command.
 
-But before processing that line you have to do some **validations** first.
+Before processing each line of input, you have to do some **validations**.
 
-Each valid order should have a **customer, product, count and a price**.
+Each valid line should contain a **customer**, a **product**, a **count**, and a **price**.
 
 A **valid**: 
-- **Customer's name** should be surrounded by '%' and must start with a capital letter, followed by lower-case letters
-- **Product** contains any word character and must be surrounded by '\<' and '\>' 
-- **Count** is an integer, surrounded by '\|'
-- **Price** is any real number followed by '$'
+- The **Customer's name** should be surrounded by `%` and must start with a capital letter, followed only by lower-case letters
+- The **Product's name** should be surrounded by '\<' and '\>' 
+- The **Count** should be an integer, surrounded by '\|'
+- The **Price** is a real number, followed by '$'
 
 The parts of a **valid order should appear in the order given**: **customer, product, count and a price**.
+A line of input is considered to be valid if its parts appear in the following order:  a **customer**, a **product**, a **count**, and a **price**. 
 
 Between each **part there can be other symbols**, **except** ('\|', '$', '%' and '.')
+There could be other symbols between the parts of the input lines, **except**: ('\|', '$', '%' and '.')
 
-**For each valid line print** on the console: "\{customerName\}: \{product\} - \{totalPrice\}"
+For each valid, line print out the following message: "\{customerName\}: \{product\} - \{totalPrice\}"
 
-When you receive "end of shift" **print the total amount of money** for the day rounded to **2 decimal places** in the following format: 
+When you receive the **end of shift** command, print out the total amount of money earned that day, rounded to the second digit after the decimal point in the following format: 
 - "Total income: \{income\}".
 
 ### Example
@@ -390,8 +392,8 @@ When you receive "end of shift" **print the total amount of money** for the day 
 | end of shift | Total income: 24.30 |
 
 ### Comments
-- Each line is valid, so we print each order, calculating the total price of the product bought
-- At the end we print the total income for the day
+- Each line is valid, so we print the expected message for each input line, calculating the price of the order
+- It the end, we print out the total income for the day
 
 ### Example
 | **Input** | **Output** |
@@ -403,10 +405,10 @@ When you receive "end of shift" **print the total amount of money** for the day 
 | end of shift | |
 
 ### Comments
-- On the first line, the customer name is not valid, so we skip that line
-- The second line is missing product count
-- The third line don't have a valid price
-- And only the forth line is valid
+- On the first line, the name of the customer is not valid, so we skip that line
+- On the second line, the count of the products to be sold is missing, so it is not valid
+- On the third line, the price is not valid
+- The forth line is valid, so we calculate the total income fot the day
 
 [/task-description]
 [code-io /]
