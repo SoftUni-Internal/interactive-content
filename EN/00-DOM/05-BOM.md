@@ -31,18 +31,18 @@ All global variables are its **properties** and all global functions are its **m
 
 ```js
 var name = "Steven";
-//name is now stored as a property of the window object
+// name is now stored as a property of the window object
 
 function printYear() {
     console.log(2020);
 }
-//PrintYear is now a method of the window object
+// PrintYear is now a method of the window object
 
 name === window.name;
-//returns true
+// returns true
 
 window.printYear();
-//invokes the function through the window object
+// invokes the function through the window object
 ```
 
 [/slide]

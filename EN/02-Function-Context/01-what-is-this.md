@@ -6,7 +6,9 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-3-4-what-is-this-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Function context** refers to the object that **owns** the code, which is currently being executed. The context depends on the way the function is invoked. 
+**Function context** refers to the object that **owns** the code, which is currently being executed. 
+
+The context depends on the way the function is invoked. 
 
 Functions can be called in several different ways:
  - Global invoke: `func()` - `this` is a global function
@@ -25,11 +27,13 @@ Functions can be called in several different ways:
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-5-this-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The value of `this` is always a reference to an object - the object from which it was called. In other words - `this` references the object that is executing the current function.
+The value of `this` is always a reference to an object - the object from which it was called. 
+
+In other words - `this` references the object that is executing the current function.
 
 The goal of the current lesson will be to understand how `this` behaves in **non-strict mode**. 
 
-Keep in mind that in **strict mode** there are differences and `this` can be any value.
+Keep in mind that in **strict mode** there are differences, and `this` can be any value.
 
 The object referenced by `this` **changes** when the execution context is changed.
 
@@ -50,7 +54,7 @@ function testThis() {
 console.log(testThis() === global);
 ```
 
-When run, the above example returns **true**, meaning that `this` is indeed equal to the global object.
+When run, the above example returns **true**, meaning that `this` is indeed **equal to the global object**.
 
 [/slide]
 
@@ -83,7 +87,7 @@ console.log('My name is', this.name);
 
 Running the code above outputs **undefined** to the console.
 
-This is because variables, declared with `let`, have limited scope and are not attached to the global object.
+This is because variables declared with `let`, have limited scope and are not attached to the global object.
 
 [image assetsSrc="function-context-02.png" /]
 

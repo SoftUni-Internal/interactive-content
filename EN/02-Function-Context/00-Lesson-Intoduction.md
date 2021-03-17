@@ -9,7 +9,8 @@
 ## In this lesson, you will learn:
 
 **1. What "this" is** 
-- What is behind the `this` keyword and the meaning of **function context**
+- What is behind the `this` keyword
+- The meaning of **function context**
 
 **2. Usages of "this" Keyword** 
 - What `this` refers to in different situations
@@ -21,6 +22,7 @@
 - Definition of **binding**, using `call()`, `bind()` and `apply()` to change the context of functions
 
 **5. Internal Object Properties**
-- Using internal properties to change property behavior. Learning what `freeze()` and `seal()` do
+- Using internal properties to change property behavior
+    * learning what `freeze()` and `seal()` do
 
 [/slide]

@@ -104,7 +104,7 @@ And the other one is to copy **existing** elements.
 
 ```js
 let h1 = document.getElementById("page-title");
-let newH1 = h1.cloneNode(true); //returns a duplicate of the h1 tag above
+let newH1 = h1.cloneNode(true); // returns a duplicate of the h1 tag above
 ```
 
 It is important to know that even though these elements are created, they **do not exist** in the HTML document.
@@ -130,13 +130,13 @@ Here is an example of how to **get** and **remove** a DOM element.
 ```
 
 ```js
-let parent = document.getElementById("post"); //returns the article element
-let title = document.getElementById("title"); //returns the h1 element
-let content = document.getElementById("content"); //returns the p element
+let parent = document.getElementById("post"); // returns the article element
+let title = document.getElementById("title"); // returns the h1 element
+let content = document.getElementById("content"); // returns the p element
 
-title.remove(); //directly removes the DOM element
+title.remove(); // directly removes the DOM element
 
-parent.removeChild(content); //removes the element by accessing its parent
+parent.removeChild(content); // removes the element by accessing its parent
 ```
 
 [/slide]
@@ -149,7 +149,7 @@ parent.removeChild(content); //removes the element by accessing its parent
 
 [code-task title="Articles List" taskId="js-advanced-DOM-Articles-List" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 ```
-function articlesList(){
+function createArticle(){
   // Write your code here
 }
 ```
@@ -535,7 +535,7 @@ div.innerHTML += "<p>What's your name</p>";
 
 ```js
 let input = document.getElementById("name-input");
-console.log(input.value); //logs the value of the input field
+console.log(input.value); // logs the value of the input field
 ```
 
 [/slide]
@@ -589,7 +589,7 @@ Takes one parameter - **the name of the attribute**.
 ```js
 let input = document.getElementById("first-input");
 input.hasAttribute("type"); // true
-input.hasAttribute("name"); //false
+input.hasAttribute("name"); // false
 ```
 
 Since an HTML element can have **multiple class names**, there is a property that returns an **array** of all of them.
@@ -615,9 +615,9 @@ const h1 = document.getElementById("title").classList;
 ```js
 let h1 = document.getElementById("title");
 
-h1.classList.add("first"); //adds the "first" class
+h1.classList.add("first"); // adds the "first" class
 
-h1.classList.remove("first"); //removes the "first" class
+h1.classList.remove("first"); // removes the "first" class
 ```
 
 [/slide]
@@ -1043,7 +1043,7 @@ let secondLi = firstLi.nextElementSibling;
 console.log(secondLi.textContent); // Kate
 
 let thirdLi = latsLi.previousElementSibling;
-console.log(thirdLi.textContent); //Anne
+console.log(thirdLi.textContent); // Anne
 ```
 
 These properties would also return **null** if there was just one child element.
@@ -1066,9 +1066,9 @@ let list = document.getElementById("years");
 let firstLi = document.createElement("li");
 let lastLi = document.createElement("li");
 
-list.appendChild(lastLi); //adds the "lastLi" element to the back of the list
+list.appendChild(lastLi); // adds the "lastLi" element to the back of the list
 
-list.prependChild(firstLi); //adds the "firstLi" element to the front of the list
+list.prependChild(firstLi); // adds the "firstLi" element to the front of the list
 ```
 
 [/slide]

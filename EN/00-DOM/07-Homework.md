@@ -177,7 +177,7 @@ Then you should **create** and **append** an `<option>` to the `<select>` with a
 
 ## Example
 
-[image assetsSrc="JS-Advanced-DOM-Homework-5.png" /]
+[image assetsSrc="JS-Advanced-DOM-Homework-5.gif" /]
 
 ## Hints
 
@@ -332,7 +332,7 @@ The link action should be **toggleable** (you should be able to **click** the bu
 
 ## Example
 
-[image assetsSrc="JS-Advanced-DOM-Homework-6.png" /]
+[image assetsSrc="JS-Advanced-DOM-Homework-6.gif" /]
 
 ## Hints
 

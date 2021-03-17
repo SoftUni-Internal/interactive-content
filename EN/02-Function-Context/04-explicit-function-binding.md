@@ -14,7 +14,7 @@ This allows us to bind a function to a particular object and use it as if it was
 
 This essentially changes the context of `this`. In other words, we are binding the function to a context of our choice.
 
-Let's look at an example using `call()`:
+Let uss look at an example using `call()`:
 
 ```js live
 function speak(message) {
@@ -186,7 +186,7 @@ Now imagine the student has advanced so much that he is now able to `teach()`. U
 ```js
 let teach = professor.teach.bind(student, 2);
 teach();
-//Motivated student teaches Web Development for 2 hours a day
+// Motivated student teaches Web Development for 2 hours a day
 ```
 
 By using `bind(student, 2)` we passed the **student** object as a first argument, changing the context of `this` from **professor** to **student** and passed **2** as a second argument.

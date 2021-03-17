@@ -42,8 +42,8 @@ This is how to get the title `h1`, using JavaScript:
 
 ```js
 let h1Element = document.getElementsByTagName("h1")[0];
-//getElementsByTagName returns an array of all HTML elements with a given tag
-//[0] specifies the first h1 element of that array
+// getElementsByTagName returns an array of all HTML elements with a given tag
+// [0] specifies the first h1 element of that array
 
 console.log(h1Element);
 ```

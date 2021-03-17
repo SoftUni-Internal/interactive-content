@@ -78,20 +78,20 @@ Note: Instead of the **for loop** you could log the result of `Object.keys(perso
 
 ```js
 console.log(Object.keys(person));
-//output -> [ 'name', 'age' ]
+// output -> [ 'name', 'age' ]
 ```
 
 We can change the value of the internal properties by using the ``Object.defineProperty()`` method. 
 
 You can change one, or you can even modify all internal properties at once.
 
-In this example we'll change both the value of **age** and set **enumerable** to **false**.
+In this example we will change both the value of **age** and set **enumerable** to **false**.
 
 ```js
 Object.defineProperty(object1, 'property1', {
     enumerable: false,
     writable: true
-    //and so on
+    // and so on
 });
 ```
 
@@ -246,7 +246,7 @@ To prevent this from happening, you can **freeze** the object property:
 Object.freeze(frozenObj.property3);
 
 frozenObj.prop3.innerProperty = 'this will not work'; 
-//Type Error
+// Type Error
 ```
 
 You can use `Object.isFrozen(someObject)`. 
@@ -326,18 +326,24 @@ Note: Check the examples below for more information.
 
 ```js
 let person = new Person('Peter', 'Smith');
-console.log(person.fullName); //Peter Smith
+console.log(person.fullName); // Peter Smith
+
 person.firstName = 'George';
-console.log(person.fullName); //George Smith
+console.log(person.fullName); // George Smith
+
 person.lastName = 'Peterson';
-console.log(person.fullName); //George Peterson
+console.log(person.fullName); // George Peterson
+
 person.fullName = 'Nikola Tesla';
-console.log(person.firstName) //Nikola
-console.log(person.lastName) //Tesla
+console.log(person.firstName) // Nikola
+console.log(person.lastName)  // Tesla
+
 let person = new Person('Albert", "Simpson');
-console.log(person.fullName); //Albert Simpson
+console.log(person.fullName); // Albert Simpson
+
 person.firstName = 'Simon';
-console.log(person.fullName); //Simon Simpson
+console.log(person.fullName); // Simon Simpson
+
 person.fullName = 'Peter';
 console.log(person.firstName) // Simon
 console.log(person.lastName)
