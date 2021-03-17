@@ -42,7 +42,7 @@ We use methods for several reasons.
 
 - Methods make code more readable and easier to debug
 
-  - for example, a method called `printHello()` explains to a great degree what its putspse might be
+  - for example, a method called `printHello()` explains to a great degree what its purpose might be
 
 
 - **Simplify problems** - local variables and statements of a method **can not be seen from outside the method**
