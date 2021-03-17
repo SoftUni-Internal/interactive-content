@@ -17,7 +17,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a method that **prints the smallest of three integer numbers**.
+Create a method that **prints out the smallest of three integer numbers**.
 
 ### Example
 | **Input** | **Output** |
@@ -136,7 +136,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a method that receives a **single string** and **prints the count of the vowels** contained in it.
+Create a method that receives a **single string** and **prints out the number of vowels** contained in it.
 
 
 ### Example
@@ -225,9 +225,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a method that receives **two characters** and prints all the **characters in between them according to ASCII** on a single line.
+Create a method that receives **two characters** and prints all the **characters between them according to ASCII** (on a single line).
 
-**NOTE:** If the second letter's ASCII value is less than that of the first one then letters should be swapped.
+**NOTE:** If the second letter's ASCII value is less than that of the first one then the two initial letters should be swapped.
 
 ### Example
 | **Input** | **Output** |
@@ -329,17 +329,17 @@ public class Main {
 ## Description
 Create a program that checks if a given password is **valid**. 
 
-The password **rules** are:
-- **6 - 10 characters** (inclusive)
-- Consists **only** of **letters and digits**
-- Contains **at least 2 digits** 
+The password validation **rules** are:
+- It should contain **6 - 10 characters** (inclusive)
+- It should contain **only** of **letters and digits**
+- It should contain **at least 2 digits** 
 
-If a password is **valid** print "Password is valid". 
+If a password is **valid** print out: "Password is valid". 
 
-If it is **not valid**, for every unfulfilled rule **print a message**:
+If it is **not valid**, for any unfulfilled rule **print the corresponding message**:
 - "Password must be between 6 and 10 characters"
 - "Password must consist only of letters and digits"
-- "Password must have at least 2 digits"
+- "Password must contain at least 2 digits"
 
 ### Hint
 Create a method for each rule.
@@ -629,7 +629,7 @@ public class Main {
 ## Description
 You will receive a single string.
 
-Create a method that **prints the middle character**.
+Create a method that **prints the character found at its middle**.
 
 If the **length** of the string is **even** there are **two middle characters**.
 
@@ -766,7 +766,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a method that receives a single integer **n** and prints an **n*n** matrix with that number.
+Create a method that receives a single integer **n** and prints an **n\*n** matrix using this number as a filler.
 
 ### Example
 | **Input** | **Output** |
@@ -956,11 +956,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Read **two integer numbers**.
+Read **two integers**.
 
 Calculate the **factorial** of each number.
 
-**Divide the first result by the second** and print the division **formatted to the second decimal point**.
+**Divide the first result by the second** and print the result of the division **formatted to the second decimal point**.
 
 ### Example
 | **Input** | **Output** |
@@ -1099,7 +1099,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that reads positive integer numbers **until you receive** the "END" command. 
+Create a program that reads positive integers **until you receive** the "END" command. 
 
 For each number, **print whether the number is a palindrome or not**.
 
@@ -1277,7 +1277,8 @@ A **top number** is an integer that holds the following properties:
 - Its sum of digits is divisible by 8, e.g. 8, 16, 88
 - Holds at least one odd digit, e.g. 232, 707, 87578
 
-Create a program to print all master numbers in the range \[1…n\].
+Create a program to print all top numbers in range \[1…n\].
+You will receice a single integer from the console, representing the end value.
 
 ### Example
 | **Input** | **Output** |
