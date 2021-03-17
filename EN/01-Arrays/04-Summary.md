@@ -34,7 +34,7 @@ for (int number : numbers) {
 }
 ```
 
-- For-each loop
+- The For-each loop
 
 ```Java
 int[] numbers = { 1, 2, 3, 4, 5 };
