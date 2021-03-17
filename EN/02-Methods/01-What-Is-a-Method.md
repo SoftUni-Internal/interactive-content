@@ -5,11 +5,11 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-3-4-Simple-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-A method is a block of code that only runs when it is called.
+A method is a block of code that only runs when called.
 
-You can pass data to methods in the form of **parameters**.
+You can pass in data to methods in the form of **parameters**.
 
-Sample method **definition**:
+Example:
 
 ```Java
 public static void printHello () {
@@ -31,11 +31,10 @@ printHello();
 
 We use methods for several reasons.
 
-- **Reusability** - we write a method once and use it **multiple times** 
+- **Reusability** - once created, a method can be used **multiple times** 
 
-  - we do not have to copy the same blocks of code in multiple places to use them
-  
-  Think of it as, `write once, reuse multiple times`
+  - this way we do not have to copy the same blocks of code whenever we need to use them
+ 
 
 - **To parameterize code** - you will often want to use `parameters` that change the way the method behaves
 
@@ -43,7 +42,8 @@ We use methods for several reasons.
 
 - Methods make code more readable and easier to debug
 
-  - for example, the `printHello()` method is so readable, that we can know what this method will print `Hello`
+  - for example, a method called `printHello()` explains to a great degree what its purpose might be
+
 
 - **Simplify problems** - local variables and statements of a method **can not be seen from outside the method**
 
@@ -56,9 +56,9 @@ We use methods for several reasons.
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-6-Void-type-method-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Methods with the **void** return type execute the code in their code block. 
+Methods of the **void** type: 
 
-They can accept parameters but do not return any result. 
+* can accept parameters but do not return any result. 
 
 ```java
 public static void doSomething() {
@@ -66,7 +66,7 @@ public static void doSomething() {
 }
 ```
 
-The **main()** method we have been writing code into is also a void method.
+The **main()** method we have been placing code into is also a void method.
 
 ```java
 public static void main(String[] args) {
