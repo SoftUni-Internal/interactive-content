@@ -10,7 +10,7 @@
 
 All the properties of an object have properties of their own, namely **Enumerable, Configurable, Writable** and **Value**.
 
-To list the internal properties of any object property use `Oject.getOwnPropertyDescriptor(yourObject, 'propertyName');`
+To **list the internal properties** of any object property, use `Oject.getOwnPropertyDescriptor(yourObject, 'propertyName');`
 
 ```js
 let person = {
@@ -23,7 +23,7 @@ const descriptor = Object.getOwnPropertyDescriptor(person, 'name');
 console.log(descriptor);
 ```
 
-Output:
+**Output:**
 ```js
 {
   value: 'Billy',
@@ -40,7 +40,7 @@ Output:
 
 Setting **configurable: false** makes it so that the property cannot be deleted. 
 
-Only properties that are **configurable**  can be deleted.
+Only properties that are **configurable** can be deleted.
 
 - **Writable** - properties marked as **writable: true** can be modified and their values can be updated by simply assigning a new value to them
 
@@ -67,14 +67,14 @@ for (const property in person) {
 }
 ```
 
-The expected output here is:
+The expected **output** here is:
 
 ```js
 name: 'Billy'
 age: 50
 ```
 
-Note: Instead of the **for loop** you could log the result of `Object.keys(person)` and the properties will be returned as an array. 
+**Note:** Instead of the **for loop**, you could log the result of `Object.keys(person)`, and the properties will be returned as an array. 
 
 ```js
 console.log(Object.keys(person));
@@ -111,7 +111,7 @@ for (const property in person) {
 }
 ```
 
-Now he expected output is:
+Now the **expected output** is:
 
 ```js
 name: Billy
@@ -318,7 +318,7 @@ This means that:
 
 A **valid** **full name** is in the format: "\{**firstName**\} \{**lastName**\}"
 
-Note: Check the examples below for more information.
+**Note:** Check the examples below for more information.
 
 # Examples
 

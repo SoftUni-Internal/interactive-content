@@ -16,8 +16,6 @@ In the browser we have 3 phases of event propagation:
 
 - **Bubbling** phase: the event bubbles up from the element
 
-[image assetsSrc="Dom-Manipulation(2).gif" /]
-
 When clicking on the `<A>` element, the event first goes through the chain down to the element, which is called a **capturing phase**, then it reaches the target and triggers a **target phase**, and then it goes up, which is called a **bubbling phase**, calling handlers on its way up.
 
 To catch an event on the **capturing phase**, we need to set the handler capture option to **true**.
