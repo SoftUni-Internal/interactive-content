@@ -251,7 +251,7 @@ console.log(boundGetX()); // 42
 [code-task title="Area and Volume Calculator" taskId="js-advanced-function-context-Area-and-Volume-Calculator" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
-function calculator(area, vol, input) {
+function solve(area, vol, input) {
     // Write your code here
 }
 ```
@@ -296,7 +296,7 @@ The output should be **returned** as an **array of objects**. Each object has **
 
 **Note: Submit only the solve function.**
 
-# Examples
+# Example 1
 
 ## Input
 
@@ -318,7 +318,7 @@ area, vol, '[
 ]
 ```
 
-
+# Example 2
 ## Input
 
 ```js
