@@ -6,32 +6,34 @@
 [code-task title="Articles" taskId="java-fund-2-Objects-and-Classes-Articles" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [task-description]
 ## Description
+
 Create an article class with the following properties:
-- Title – a string
-- Content – a string
-- Author – a string
+- title – a string
+- content – a string
+- author – a string
 
 The class should have a constructor and the following methods:
-- **Edit** (new content) – change the old content with the new one
-- **ChangeAuthor** (new author) – change the author
-- **Rename** (new title) – change the title of the article
+- **edit** (new content) – change the old content with the new one
+- **changeAuthor** (new author) – change the author
+- **rename** (new title) – change the title of the article
 - **override ToString** – print the article in the following format: 
 
 "\{title\} - \{content\}:\{author\}"
 
-Write a program that reads an article in the following **format** "\{title\}, \{content\}, \{author\}". 
+Create a program that reads an article in the following **format** "\{title\}, \{content\}, \{author\}". 
 
-On the next line, you will get a **number n**. 
+On the next line, you will receive a **number n**. 
 
 On the **next n lines**, you will get one of the following **commands**: 
+
 - "Edit: \{new content\}" 
 - "ChangeAuthor: \{new author\}" 
 - "Rename: \{new title\}". 
 
 At the end, **print the final article**.
 
-
 ### Example
+
 | **Input** | **Output** |
 | --- | --- |
 | some title, some content, some author | better title - better content: better author |
@@ -133,7 +135,7 @@ The haunting of hill house - better content2:  Shirley Jackson
 [code-task title="Opinion Poll" taskId="java-fund-2-Objects-and-Classes-Opinion-Poll" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [task-description]
 ## Description
-Using the **Person class**, write a program that reads from the console **N lines of personal information** and then **prints all people** whose **age is more than 30 years** in the following **format**:
+Using the **Person class**, create a program that reads **N lines of personal information** and then **prints all of the people** who are **older than 30 years old** in the following **format**:
 
 \{name\} - \{age\}
 
@@ -338,9 +340,9 @@ Anntoanette - 39
 [code-task title="Articles 2.0" taskId="java-fund-2-Objects-and-Classes-Articles-2.0" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [task-description]
 ## Description
-Change the program "Articles", so you can store a **list of articles**.
+Update the class "Articles", so you can store a **list of articles**.
 
-You will not need the methods any more (**except** the ToString method).
+You will not need the methods any more (**except** for the toString method).
 
 On the **first line**, you will get a **number n**.
 
@@ -472,8 +474,6 @@ Most Valuable Playboy - content4: Lauren Blakely
 [/slide]
 
 
-
-
 [slide hideTitle]
 # Problem: Students
 
@@ -481,9 +481,10 @@ Most Valuable Playboy - content4: Lauren Blakely
 
 [task-description]
 ## Description
-Write a program that receives **n count of students** and **orders them by grade (in descending)**. 
 
-Each student should have **first name** (string), **last name** (string) **and grade** (floating-point number). 
+Create a program that receives **n count of students** and **orders them by grade (in descending)**. 
+
+Each student should have a **first name** (String), a **last name** (String) **and a grade** (floating-point number). 
 
 ### Input
 
@@ -613,10 +614,11 @@ Amias Mathews: 2.30
 
 [task-description]
 ## Description
-Until you receive the **command** "End" you will receive lines of input in the format:
+Until you receive the **command** "`End`", you will receive lines of input in the format:
+
 - \{typeOfVehicle\} \{model\} \{color\} \{horsepower\}
 
-After the "End" command, you will start receiving **models of vehicles**. **Print for every received vehicle** its data in the **format**:
+After the "End" command, you will start receiving **models of vehicles**. **For every received vehicle**, print its data in the **format**:
 
 Type: \{typeOfVehicle\}
 
@@ -626,7 +628,7 @@ Color: \{colorOfVehicle\}
 
 Horsepower: \{horsepowerOfVehicle\}
 
-When you receive the command "Close the Catalogue", stop receiving **input and print the average horsepower** for the cars and for the trucks in the **format**:
+When you receive the command "Close the Catalogue", **print the average horsepower** for the cars and for the trucks in the **format**:
 
 "\{typeOfVehicles\} have average horsepower of \{averageHorsepower\}."
 
@@ -808,19 +810,20 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
+
 You will receive **an unknown number of lines**.
 
-On each line, you will receive **array with 3 elements**.
+On each line, you will receive an **array with 3 elements**.
 
-The **first** element will be **string** and represents the **name of the person**. 
+The **first** element will be of type **string** and represents the **name of the person**. 
 
-The **second** element will be a **string** and will represent the **ID of the person**. 
+The **second** element will be of type **string** and represents the **ID of the person**. 
 
-The last element will be an **integer** and represents the **age of the person**.
+The last element will be of type **integer** and represents the **age of the person**.
 
-If you get a person whose **ID you have already received**, then **update** the name and age for that ID with that **of the new person**.
+If you get a person whose **ID you have already received**, **update** the name and age for that ID with that **of the new person**.
 
-When you receive the **command** "End", **stop** taking input and **print all the people**.
+When you receive the **command** "`End`", **print all of the people**.
 
 ### Example
 | **Input** | **Output** |
