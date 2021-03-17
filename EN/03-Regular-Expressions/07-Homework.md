@@ -184,7 +184,7 @@ public class Main {
 ## Description
 Create a program that processes information about a race.
 
-On the first line, you will be given a **list of participants**, separated by a dot and a single white space (", ").
+On the first line, you will be given a **list of participants**, separated by a comma and a single white space (", ").
 
 On the next lines, until you receive the "end of race" command, you will be given some info that will represent some **alphanumeric characters**.
 
