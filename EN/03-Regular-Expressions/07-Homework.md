@@ -184,25 +184,27 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that processes information about a race.
+Create a program that processes information about a race.
 
-On the **first line** you will be given a **list of participants separated** by ", ".
+On the first line, you will be given a **list of participants**, separated by a comma and a single white space (", ").
 
-On the **next few lines until you receive** a line "end of race" you will be given some info which will be some **alphanumeric characters**.
+On the next lines, until you receive the "end of race" command, you will be given some info that will represent some **alphanumeric characters**.
 
-In between them you could have **some extra characters which you should ignore**.
+There could be **some extra characters that you should ignore**.
 
-For **example**: "G!32e%o7r#32g$235@!2e".
 
-The **letters are the name of the person** and the **sum of the digits is the distance he ran**.
+The **name** of the person is formed by **concatenating all letters**. 
+The **distance** that each person ran is calculated by **summing all of the digits**.
 
-So here we have **George who ran 29 km**.
+For example: "G!32e%o7r#32g$235@!2e".
 
-**Store the information** about the **person only if the list of racers contains the name** of the person.
+The name of the person is **George** and he ran **29 km**.
 
-If you receive the **same person more than once** just **add the distance to his old distance**.
+You should store the information about the person only if **the list of racers contains the name** of this person.
 
-At the end **print the top 3 racers ordered by distance in descending** in the format:
+If you receive the **same person more than once**, just add the new distance to the old distance he has run.
+
+In the end, print out the **top 3** racers ordered by the distance they have run in **descending order** in the following format:
 
 "1st place: \{first racer\}
 
@@ -223,11 +225,11 @@ At the end **print the top 3 racers ordered by distance in descending** in the f
 | end of race | |
 
 ### Comments
-- On the third input line we have Ray
-- He is not in the list, so we do not count his result
-- The other ones are valid
-- George has total of 55 km, Peter has 25 and Tom has 19
-- We do not print Bill because he is on the fourth place
+- On the third line, we have **Ray**
+- He is not in the list of participants, so we ignore him
+- The other people are in the list of participants
+- **George** has run a total of **55** km, **Peter** has run a total of **25**, and **Tom** has run a total of **19**
+- We print the winners (the people at the top 3 places)
 
 [/task-description]
 [code-io /]
