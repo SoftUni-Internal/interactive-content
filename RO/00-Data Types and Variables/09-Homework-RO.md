@@ -1,7 +1,7 @@
-# Teme de Casă
+# Teme pentru acasă
 
 [slide hideTitle]
-# Problem: Integer Operations
+# Problemă: Integer Operations
 
 [code-task title="Integer Operations" taskId="java-fund-1-data-types-and-variables-Integer-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -19,7 +19,7 @@ public class Main {
 ## Descriere
 Citiți **patru numere întregi**.
 
-**Adăugați** **primul** la **al doilea**, **împărțiți** (întreg) **suma** la **al treilea** număr și **înmulțiți** rezultatul cu **al patrulea** număr.
+**Adăugați** **primul** număr la **al doilea**, **împărțiți** (împărțire întreagă) **suma** la **al treilea** număr și **înmulțiți** rezultatul cu **al patrulea** număr.
 
 **Imprimați** rezultatul.
 
@@ -94,7 +94,7 @@ Citiți **patru numere întregi**.
 [/slide]
 
 [slide hideTitle]
-# Problem: Sum Digits
+# Problemă: Sum Digits
 [code-task title="Sum Digits" taskId="java-fund-1-data-types-and-variables-Sum-Digit" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -102,7 +102,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -110,7 +110,7 @@ public class Main {
 [task-description]
 ## Descriere
 
-Vi se va da un întreg **unic**.
+Vi se va da un **singur** întreg.
 
 Sarcina dvs. este de a găsi **suma cifrelor sale**.
 
@@ -164,7 +164,7 @@ Sarcina dvs. este de a găsi **suma cifrelor sale**.
 [/slide]
 
 [slide hideTitle]
-# Problem: Elevator
+# Problemă: Elevator
 
 [code-task title="Elevator" taskId="java-fund-1-data-types-and-variables-Elevator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -173,7 +173,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 
@@ -182,7 +182,7 @@ public class Main {
 [task-description]
 ## Descriere
 
-Calculați câte cursuri vor fi necesare pentru a **ridica n persoane** utilizând un lift cu **capacitate de p persoane**.
+Calculați câte cursuri vor fi necesare unui lift pentru a **ridica n persoane** în vârful clădirii.
 
 **Intrarea** conține **două linii**:
 
@@ -249,7 +249,7 @@ Calculați câte cursuri vor fi necesare pentru a **ridica n persoane** utilizâ
 [/slide]
 
 [slide hideTitle]
-# Problem: Sum of Chars
+# Problemă: Sum of Chars
 [code-task title="Sum of Chars" taskId="java-fund-1-data-types-and-variables-Sum-of-Chars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -257,7 +257,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -271,9 +271,9 @@ Scrieți un program, care **rezumă codurile ASCII de n caractere**.
 
 ### Intrare
 
-- Pe prima linie, veți primi n - numărul de linii, care va urma
+- Pe prima linie, veți primi **n** - numărul de linii, care va urma
 
-- Pe următoarele n linii - veți primi litere din alfabetul latin
+- Pe următoarele **n linii** - veți primi litere din alfabetul latin
 
 ### Ieșire
 Imprimați suma totală în următorul format:
@@ -377,7 +377,7 @@ The sum equals: 1940
 [/slide]
 
 [slide hideTitle]
-# Problem: Print Part of the ASCII Table
+# Problemă: Print Part of the ASCII Table
 [code-task title="Print Part of the ASCII Table" taskId="java-fund-1-data-types-and-variables-Print-Part-of-the-ASCII-Table" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -385,7 +385,7 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-      // Scrieți codul dvs. aici
+      // Write your code here
     }
 }
 ```
@@ -393,9 +393,10 @@ public class Main {
 [task-description]
 
 ## Descriere
-Găsiți online mai multe informații despre ASCII www.ascii-code.com (American Standard Code for Information Interchange) și scrieți un program care **tipărește o parte din tabelul ASCII**de caractere pe consolă.
+Găsiți online mai multe informații despre ASCII www.ascii-code.com (American Standard Code for Information Interchange) și creați un program care **tipărește o parte din tabelul ASCII**de caractere pe consolă.
 
-Pe prima linie de intrare veți primi **indicele char** cu care ar trebui să **începeți** și pe a doua linie - indexul **ultimului** caracter pe care ar trebui să-l imprimați.
+Pe prima linie de intrare veți primi **indicele char** cu care ar trebui să **începeți** 
+Pe a doua linie - indexul **ultimului** caracter pe care ar trebui să-l imprimați.
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -447,7 +448,7 @@ a b c d e f g h
 [/slide]
 
 [slide hideTitle]
-# Problem: Triples of Latin Letters
+# Problemă: Triples of Latin Letters
 [code-task title="Triples of Latin Letters" taskId="java-fund-1-data-types-and-variables-Triples-of-Latin-Letters" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -455,14 +456,14 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-      // Scrieți codul dvs. aici
+      // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program pentru a **citi** un număr întreg **n** și **tipări toate triplele primelor n litere latine mici**, ordonate **alfabetic**.
+Creați un program pentru a **citi** un număr întreg **n** și **tipări toate triplurile de primele n litere latine mici**, ordonate **alfabetic**.
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -844,7 +845,7 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-      // Scrieți codul dvs. aici
+      // Write your code here
     }
 }
 ```
@@ -949,7 +950,7 @@ Insufficient capacity!
 [/slide]
 
 [slide hideTitle]
-# Problem: Beer Kegs
+# Problemă: Beer Kegs
 
 [code-task title="Beer Kegs" taskId="java-fund-1-data-types-and-variables-Beer-Kegs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -958,7 +959,7 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-      // Scrieți codul dvs. aici
+      // Write your code here
     }
 }
 ```
@@ -966,19 +967,19 @@ public class Main {
 [task-description]
 
 ## Descriere
-Scrieți un program care **calculează volumul** de **n** butoaie de bere.
+Creați un program care **calculează volumul** de **n** butoaie de bere.
 
 **Veți primi** în total **3 * n linii**.
 
-Fiecare **trei rânduri** va conține informații pentru un **butoi unic**.
+Fiecare **trei rânduri** va conține informații pentru un **singur butoi**.
 
-**În primul rând** sus este **modelul** al butoiului, **după aceea** este **raza** (un număr în virgulă mobilă) al butoiului și **în sfârșit** este **înălțimea** a butoiului.
+**În primul rând** este **modelul**  butoiului, **după aceea** este **raza** (un număr în virgulă mobilă) al butoiului și **în sfârșit** este **înălțimea** butoiului.
 
 Calculați **volumul** folosind următoarea formulă:
 
 `π * r^2 * h` 
 
-La final, **tipăriți modelul celui mai mare butoi**.
+La final, **imprimați modelul celui mai mare butoi**.
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -1078,7 +1079,7 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-      // Scrieți codul dvs. aici
+      // Write your code here
     }
 }
 ```
@@ -1086,17 +1087,20 @@ public class Main {
 [task-description]
 
 ## Descriere
-Scrieți un program care **calculează cantitatea totală de condimente** care poate fi extrasă dintr-o sursă.
+Creați un program care ** calculează cantitatea totală de condimente ** care poate fi extrasă dintr-o sursă.
 
-Sursa are un randament **de pornire**, care indică cât de mult condiment poate fi extras în **prima zi**.
+Sursa are un randament ** de pornire **, care indică cât de mult condiment poate fi extras în ** prima zi **.
 
-După ce a fost exploatat pentru o zi, randamentul scade cu 10, ceea ce înseamnă că în a doua zi va produce 10 condimente mai puțin **decât în ​​prima, în a treia zi cu 10 mai puțin decât în ​​a doua**, și **și așa mai departe**(vezi exemple).
+După ce  sursa a fost exploatată  pentru o zi, randamentul ei scade cu 10, ceea ce înseamnă că în a doua zi va produce cu 10 condimente mai puțin ** decât în prima zi, în a treia zi cu 10 condimente mai puțin decât în a doua ** , și ** și așa mai departe ** (vezi exemple).
 
-O sursă este considerată **profitabilă numai în timp ce randamentul acesteia este de cel puțin 100** - când se așteaptă mai puțin de 100 de condimente într-o zi, abandonați sursa.
+O sursă este considerată ** profitabilă numai în timp ce randamentul acesteia este de cel puțin 100 ** - când se așteaptă mai puțin de 100 de condimente într-o zi, abandonați  sursa.
 
-Echipajul **de minerit consumă 26 de condimente în fiecare zi** la **sfârșitul schimbului și încă 26** după epuizarea minei. Rețineți că muncitorii nu pot consuma mai mult condiment decât există în depozit.
+Echipajul minier ** consumă 26 de condimente în fiecare zi ** la ** sfârșitul turei ** și ** încă 26 ** după epuizarea minei.
 
-Când operațiunea este finalizată, **tipăriți pe consolă pe două linii separate** câte **zile** a funcționat mina și **cantitatea totală** de condiment extras.
+Rețineți că lucrătorii nu pot consuma mai mult condiment decât există în depozit.
+
+Când operațiunea este finalizată, ** tipăriți pe consolă pe două linii separate ** câte ** zile ** a funcționat mina și ** cantitatea totală ** de condiment extras.
+
 
 
 ### Intrare
@@ -1113,17 +1117,17 @@ Imprimați **două rânduri separate** câte **zile a funcționat mina** și **c
 
 **Comentarii**
 
-- In prima zi extragem 111de condimente și la sfârșitul turei, muncitorii consumă 26, lăsând 85. 
+- In prima zi extragem 111 de condimente și la sfârșitul turei, muncitorii consumă 26, lăsând 85. 
 
 Randamentul scade cu 10 până la 101
 
-- In a-2-a zi extragem 101de condimente, muncitorii consumă 26, lăsând 75. 
+- In a-2-a zi extragem 101 de condimente, muncitorii consumă 26, lăsând 75. 
 
 Totalul este 160 și randamentul a scăzut la 91
 
 - Deoarece randamentul așteptat este mai mic de 100, abandonăm sursa. 
 
-Muncitorii iau încă 26, lăsând 134. Mina a funcționat 2 zile
+Muncitorii iau încă 26, lăsând 134. Mina a funcționat 2 zile.
 
 [/task-description]
 [code-io /]
@@ -1177,7 +1181,7 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-      // Scrieți codul dvs. aici
+      // Write your code here
     }
 }
 ```
@@ -1187,41 +1191,41 @@ public class Main {
 ## Descriere
 A Poke Mon este un tip special de pokemon căruia îi place să-i împingă pe alții. 
 
-Dar la sfârșitul zilei, Poke Mon vrea să păstreze **statistici**, despre câte poke a reușit să facă.
+Dar la sfârșitul zilei, Poke Mon vrea să păstreze **statistici**, despre câte împingeri a reușit să facă.
 
 Poke Mon își aruncă ținta și apoi trece la o altă țintă. 
 
-**Distanța dintre ținte își reduce puterea de lovitură**.
+**Distanța dintre ținte reduce puterea sa de împingere**.
 
-Vi se va oferi **puterea de poke** pe care Poke Mon o are, **N** - un număr întreg.
+Vi se va oferi **puterea de împingere** (poke power)  pe care Poke Mon o are, **N** - un număr întreg.
 
-Apoi vi se va acorda **distanța dintre țintele poke**, **M** - un număr întreg.
+Apoi vi se va acorda **distanța dintre țintele împingerii** (poke targets), **M** - un număr întreg.
 
-Apoi vi se va da **exhaustorFactor Y** - un număr întreg.
+Apoi vi se va da **exhaustionFactor Y** - un număr întreg.
 
-Sarcina ta este să începi **scăzând M din N până când N devine mai mic decât M**, adică Poke Mon nu are suficientă putere pentru a atinge următoarea țintă.
+Sarcina voastră este să începeți **scăzând M din N până când N devine mai mic decât M**, adică Poke Mon nu are suficientă putere pentru a atinge următoarea țintă.
 
-**De fiecare dată când scazi M de la N înseamnă că ai atins o țintă** și ai tras-o cu succes. 
+**De fiecare dată când scadeți M de la N înseamnă că ați atins o țintă** și ați împins-o cu succes. 
 
-CONTAȚI câte ținte ați introdus - veți avea nevoie de acest număr.
+Numărați câte ținte ați împins - veți avea nevoie de acest număr.
 
 Poke Mon devine treptat **mai epuizat**. 
 
-**Dacă N devine egal cu EXACT 50% din valoarea inițială, trebuie să împărțiți N la Y**, dacă este POSIBIL. 
+**Dacă N devine egal cu EXACT 50% din valoarea inițială, trebuie să împărțiți N la Y**, dacă este **posibil**. 
 
-Această DIVIZIUNE este între numere întregi.
+Folosiți împărțirea numerelor întregi.
 
-Dacă o divizare nu este posibilă, NU ar trebui să o faceți. În schimb, ar trebui să continuați scăderea.
+Dacă o împărțire nu este posibilă, NU ar trebui să o faceți. În schimb, ar trebui să continuați scăderea.
 
 După împărțire, ar trebui să **continuați scăderea** din N, până când devine mai mic decât M.
 
-Când N devine mai mic decât M, trebuie să luați ceea ce a rămas din N și numărul de ținte pe care le-ați atins și să le imprimați ca rezultat.
+Când N devine mai mic decât M, trebuie să luați ceea ce a rămas din N și numărul de ținte pe care le-ați împins și să le imprimați ca rezultat.
 
-NOTĂ: Când calculați procentele, ar trebui să fiți PRECIS la maximum.
+**NOTĂ**: Când calculați procentele, ar trebui să calculați cu maxima precizie.
 
-Exemplu: 505 NU este EXACT 50% din 1000, 50.5%.
+Notă: 505 NU este EXACT 50% din 1000, ci 50.5%.
 
-### Intrare / Constrângeri
+### Intrare / Limitări
 
 - Pe prima linie veți primi **N** - un număr întreg
 
@@ -1231,9 +1235,9 @@ Exemplu: 505 NU este EXACT 50% din 1000, 50.5%.
 
 ### Ieșire
 
-- Pe prima linie tipăriți **ceea ce a rămas din N**, după ce a scăzut din acesta
+- Pe prima linie tipăriți **ceea ce a rămas din N**, după ce ați scăzut din acesta
 
-- Pe cea de-a doua linie tipăriți **numărul de ținte**, ați reușit să pătrundeți
+- Pe cea de-a doua linie tipăriți **numărul de ținte**, pe care ați reușit să le împingeți
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -1245,8 +1249,8 @@ Exemplu: 505 NU este EXACT 50% din 1000, 50.5%.
 **Comentarii**
 - N = 5, M = 2, Y = 3
 - Începem să scădem M de la N
-- N - M = 3. 1 țintă aruncată
-- N - M = 1. 2 ținte aruncate
+- N - M = 3. 1 țintă împinsă
+- N - M = 1. 2 ținte împinsă
 - N < M
 - Tipărim ceea ce a rămas din N, care este 1
 - Printăm numărul de ținte, care este 2
@@ -1303,7 +1307,7 @@ Exemplu: 505 NU este EXACT 50% din 1000, 50.5%.
 [/slide]
 
 [slide hideTitle]
-# Problem: Snowballs
+# Problemă: Snowballs
 
 [code-task title="Snowballs" taskId="java-fund-1-data-types-and-variables-Snowballs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1312,7 +1316,7 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-      // Scrieți codul dvs. aici
+      // Write your code here
     }
 }
 ```
@@ -1320,9 +1324,9 @@ public class Main {
 [task-description]
 
 ## Descriere
-Tony și Andi adoră să se joace în zăpadă și să se lupte cu bulgări de zăpadă, dar se ceartă întotdeauna care este cel mai bun bulgăre de zăpadă.
+Tony și Andi adoră să se joace în zăpadă și să se lupte cu bulgări de zăpadă, dar se ceartă întotdeauna cine face cele mai bune bulgăre de zăpadă.
 
-Au decis să vă implice în lupta lor, făcându-vă să scrieți un program care **să calculeze datele bulgărului** și să redea cea mai bună valoare a bulgărului.
+Au decis să vă implice în lupta lor, făcându-vă să creați un program care **să calculeze datele bulgărelui** și să imprimă cea mai bună valoare a bulgărelui.
 
 Veți primi **N** - un număr întreg, **numărul de bulgări de zăpadă fiind făcut** de Tony și Andi.
 
@@ -1334,13 +1338,13 @@ Pentru fiecare bulgăre de zăpadă veți primi 3 linii de intrare:
 
 - Pe a treia linie veți obține **snowballQuality** - un număr întreg
 
-Pentru fiecare bulgăre de zăpadă trebuie să calculați Valoarea acesteia cu următoarea formulă:
+Pentru fiecare bulgăre de zăpadă trebuie să calculați valoarea acestuia cu următoarea formulă:
 
 **(snowballSnow / snowballTime) ^ snowballQuality**
 
-La sfârșit, trebuie să **imprimați** cea mai mare valoare calculată cu zăpadă.
+La sfârșit, trebuie să **imprimați** cea mai mare valoare calculată (snowballValue)
 
-### Intrare / Constrângeri
+### Intrare / Limitări
 
 - Pe prima linie de intrare veți primi N - numărul de bulgări de zăpadă
 
@@ -1348,7 +1352,7 @@ La sfârșit, trebuie să **imprimați** cea mai mare valoare calculată cu zăp
 
 ### Ieșire
 
-- Ca ieșire, trebuie să imprimați **cea mai mare valoare calculată a zăpezii**, după formula specificată mai sus
+- Imprimați **cea mai mare valoare calculată (snowballValue)**, folosind formula specificată mai sus
 
 - Formatul de ieșire este:
 

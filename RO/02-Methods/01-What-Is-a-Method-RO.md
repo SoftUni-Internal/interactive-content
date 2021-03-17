@@ -1,13 +1,12 @@
 # Ce este o metodă?
 
 [slide hideTitle]
-# Method
+# Metode
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-3-4-Simple-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 O metodă este un bloc de cod care rulează doar când este apelată.
 
-Puteți să pasați date, adică parametrii, într-o metodă.
-
-Metodele sunt folosite pentru a face anumite acțiuni, adică **funcții**.
+Puteți trece date, adică parametrii, într-o metodă.
 
 Exemplu de metodă **definiție**:
 
@@ -17,7 +16,7 @@ public static void printHello () {
 }
 ```
 
-* Apelarea unei metode \(Invoking\)
+* Invocarea/apelarea unei metode 
 
 ```Java
 printHello();
@@ -27,35 +26,39 @@ printHello();
 [slide hideTitle]
 # De ce să folosim metodele?
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-5-Why-Use-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Metodele sunt folosite în Java din mai multe motive:
 
 - **Refolosirea**: putem scrie o metodă o dată și să o folosim de **mai multe ori**
 
-Nutrebuie să rescriem codul de mai multe ori. Gândiți-vă așa, `write once, reuse multiple times`.
+Nu trebuie să rescriem codul de mai multe ori. 
+
+Gândiți-vă așa, `scriem o dată, folosim de mai multe ori`.
 
 - **Pentru a parametriza codul**: pe lângă refolosirea codului, care este la fel în toate cazurile,  
-De multe ori veți vrea să folosiți `parameters` care schimbă modul de funcționare al metodei
+De multe ori veți vrea să folosiți `parametri` care schimbă modul de funcționare al metodei.
 
-- **Crearea de unități conceptuale**:  creați metode care fac ceva într-o singură acțiune în **viziunea voastră asupra problemei**
+- **Crearea de unități conceptuale**:  creați metode pentru fiecare sarcină aparte pe care programul vostru o va rezolva.
 
-Asta va face munca cu programele voastre **mult mai ușoară**.
+- Metodele fac codul să fie mai citeț și mai ușor de depanat.
 
-- Metodele fac codul să fie mai citeț și mai ușor de făcut debugging pe el
+- De exemplu, metoda `printHello()` este atât de concisă, astfel încât vom știi că această metodă va afișa `Hello`.
 
-De exemplu, metoda `printHello()` este atât de concisă, astfel încât vom știi că această metodă va afișa `Hello`.
+- **Simplificarea problemelor**: Deoarece variabilele locale și instrucțiunile unei metode **nu pot fi văzute din exteriorul acesteia**
 
-- **Simplificarea problemelor**: Deoarece variabilele locale și afirmațiile unei metode **nu pot fi văzute din exteriorul acesteia**
-
-Ele \(șicomplexitatea lor\) sunt **ascunse** de alte părți ale programului, atfel prevenind erori accidentale și confuzii.
+Ele sunt **ascunse** de alte părți ale programului, atfel prevenind erori accidentale și confuzii.
 
 [/slide]
 
 [slide hideTitle]
-# Void Type Methods
+# Metode de tipul void
 
-Methods with the **void** return type execute the code in their code block. 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-6-Void-type-method-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-They can accept parameters but do not return any result. 
+Metodele cu tipul de returnare ** void ** execută codul în blocul lor de cod.
+
+Aceștia pot accepta parametri, dar nu returnează niciun rezultat.
 
 ```java
 public static void doSomething() {
@@ -63,7 +66,7 @@ public static void doSomething() {
 }
 ```
 
-The **main()** method we have been writing code into is also a void method.
+Metoda **main()** în care scriem cod este de asemenea o metodă de tipul void. 
 
 ```java
 public static void main(String[] args) {

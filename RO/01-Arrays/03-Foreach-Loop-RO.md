@@ -1,8 +1,9 @@
-# For-each Loop
+# Bucla For-each 
 [slide hideTitle]
-# Definition
+# Definiție
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-18-19-20-For-each-loop-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-`For-each` este o alta tehnica de traversara a matricei ca şi buclele  `for`, `while`, `do-while` introduse în Java.
+`For-each` este o alta tehnica de traversare a matricei ca şi buclele  `for`, `while`, `do-while` introduse în Java.
 
 Începe cu cuvântul cheie `for` ca o buclă normală `for`.
 
@@ -20,9 +21,11 @@ for (var item : collection) {
 [/slide]
 
 [slide hideTitle]
-# Printing an Array With Foreach
+# Imprimarea unei matrice cu bucla Foreach
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-18-19-20-For-each-loop-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Putem **imprima** o matrice cu **for-each**::
+
+Putem **imprima** o matrice cu **for-each**:
 
 ```Java live
 int[] numbers = { 1, 2, 3, 4, 5 };
@@ -31,13 +34,15 @@ for (int number : numbers) {
 }
 ```
 
-One thing to note here, is that you would not be able to manipulate the elements of an array while iterating with **for-each**. 
+Un lucru de remarcat aici este că nu ați putea manipula elementele unei matrice, în timp ce iterați cu ** for-each **. 
 
 
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Even and Odd Subtraction
+# Problemă cu Soluție: Even and Odd Subtraction
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-21-22-problem-and-solution-even-and-odd-subtraction-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Even and Odd Subtraction" taskId="java-fund-1-arrays-lab-even-and-odd-subtraction" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -55,16 +60,16 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care calculează diferența dintre suma numerelor even și odd intr-o matrice.
+Creați un program care calculează diferența dintre **suma numerelor pare** și **suma numerelor impare** dintr-o matrice.
 
 ## Exemple
-|**Input**|**Output**|**Comments**|
+|**Intrare**|**Ieșire**|**Comentarii**|
 |-----|------|------|
 | 1 2 3 4 5 6 | 3|2 + 4 + 6 = 12 |
 | | |1 + 3 + 5 = 9|
 | | |12 – 9 = 3|
 
-|**Input**|**Output**|
+|**Intrare**|**Ieșire**|
 |-----|------|------|
 | 3 5 7 9 | -24|
 
@@ -142,7 +147,9 @@ Scrieți un program care calculează diferența dintre suma numerelor even și o
 
 
 [slide hideTitle]
-# Problem with Solution: Condense Array to Number
+# Problemă cu soluție: Condense Array to Number
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-problem-and-solution-condense-array-to-number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Condense Array to Number" taskId="java-fund-1-arrays-lab-condense-array-to-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -160,24 +167,24 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program pentru a citi o **matrice de numere întregi** și condensați-le prin **adunarea** cuplurilor adiacente de elemente până când se obține un **număr întreg unic**
+Creați un program care citește o **matrice de numere întregi** și le condensează prin **adunarea** cuplurilor adiacente de elemente până când se obține un ** singur număr întreg**
 
-De exemplu, dacă avem 3 elemente \{2, 10, 3\}, adunăm primele două și ultimele două elemente și obținem \{2+10, 10+3\} = \{12, 13\}, după care adunăm toate elementele adiacente și obținem \{12+13\} = \{25\}.
+De exemplu, dacă avem 3 elemente \{2, 10, 3\}, adunăm primele două și ultimele două elemente și obținem \{2+10, 10+3\} = \{12, 13\}, după ce adunăm toate elementele adiacente și obținem \{12+13\} = \{25\}.
 
 ## Exemple
-|**Input**|**Output**| **Comments** |
+|**Intrare**|**Ieșire**| **Comentarii** |
 |-----|------|------|
 | 2 10 3| 25|2 10 3 -> 2+10 10+3 -> 12 13 -> 12 + 13 -> 25 |
 | 5 0 4 1 2 | 35|5 0 4 1 2 -> 5+0 0+4 4+1 1+2 -> 5 4 5 3 -> 5+4 4+5 5+3 -> 9 9 8 -> 9+9 9+8 -> 18 17 -> 18+17 -> 35|
 | 1 | 1 | 1 is already condensed to number |
 
 
-### Sugestii
+### Sfaturi
 
 În timp ce avem mai multe elemente în matricea `nums []`, repetați următoarele:
 
 * Alocați o nouă matrice `condensed[]` de dimensiune `nums.length`
-* Sum the numbers from `nums[]` to `condensed[]`:
+* Adunați numerele de la  `nums[]` la `condensed[]`:
 	- `condensed[i]` = `nums[i]` + `nums[i+1]`
     - `nums[] = condensed[]`
 

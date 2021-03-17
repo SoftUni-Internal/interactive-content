@@ -1,16 +1,18 @@
-# Lists Overview and Manipulations
+# Prezentarea generală și manipularea listelor
 
 [slide hideTitle]
 
-# Definition and Initialization
+# Definiție și inițializare
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-3-5-lists-overview-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-La fel ca o matrice o **Listă** este o **secvență de elemente**.
+
+La fel ca o matrice  **lista** este o **secvență de elemente**.
 
 [image assetsSrc="java-fund-p1-lists-01.png" /]
 
-Principala diferență dintre ele este că o matrice nu poate fi redimensionată.
+Principala diferență dintre ele este că **o matrice nu poate fi redimensionată**.
 
-De exemplu, dacă doriți să adăugați sau să eliminați elemente din/dintr-o matrice, trebuie să creați unul nou, în timp ce elementele pot fi **adăugate** și **eliminate** din **Listă** oricând doriți.
+De exemplu, dacă doriți să adăugați sau să eliminați elemente dintr-o matrice, trebuie să creați unul nou, în timp ce elementele pot fi **adăugate** și **eliminate** din **listă** oricând doriți.
 
 ```java live
 //Create an empty list of strings
@@ -32,9 +34,9 @@ Principalele **caracteristici** ale **listelor** sunt:
 
 - Listele pot stoca **obiecte** de orice tip (întreg, dublu, șir etc.)
 
-- Elementele sunt numerotate de la **0** la **mărimea-1**
+- Elementele sunt numerotate de la **0** la **size-1**
 
-- **dimensiunea** din **lista** este **extensibilă**
+- **dimensiunea** **listei** este **extensibilă**
 
 - **Listele** acceptă o mulțime de **metode utile**
 
@@ -44,24 +46,24 @@ Principalele **caracteristici** ale **listelor** sunt:
 - Inițializați o **Listă** goală folosind cuvântul cheie `new` și `ArrayList<>()`
 
 ```java
-//Create an empty List of strings
+//Creați o listă goală de șiruri
 List<String> names = new ArrayList<>(); 
 ```
-- Initialization using `asList()` - method 
+- Inițializare prin folosirea metodei `asList()` - 
 ```java
 // Create a List of strings with 3 elements
 List<String> names = new ArrayList<>(Arrays.asList("Maria", "Peter", "George")); 
 ```
-- Initialization by **converting** an **array** to **List**
+- Inițializare prin **convertirea** unei **matrice** într-o **listă**
 
 ```java
 Integer [] numbers = new Integer[] {10, 20, 30, 40, 50};
 
-// Convert the Integer array into List
+// Convertirea unei matrice de întregi într-o listă
 List<Integer> nums = Arrays.asList(numbers); 
 ```
 
-- Dacă încercați să convertiți o matrice care deține un tip de date primitiv, cum ar fi `int []` în Listă, aceasta va produce o **eroare de compilare**, deoarece **Listele** acceptă numai **Tipuri de date de referință** (**obiecte**) 
+- Dacă încercați să convertiți o matrice care deține un tip de date primitiv, cum ar fi `int []` în Listă, aceasta va produce o **eroare de compilare**, deoarece **listele** acceptă numai **Tipuri de date de referință** (**obiecte**) 
 
 ```java live
  int [] numbers = new int[] {10, 20, 30, 40, 50};
@@ -72,31 +74,33 @@ List<Integer> nums = Arrays.asList(numbers);
 [/slide]
 
 [slide hideTitle]
-# List Methods
+# Metoele listelor
 
-Lists provide functionality that lets you **add**, **remove** and **find** elements.
+Listele oferă funcționalități care vă permit să **adăugați*, **eliminați** și să **găsiți** elemente. 
 
-- `add(element)` - adds an element to the end of the list
-- `add(index, element)` - adds an element at the specified index
-- `remove(element)` - removes the element if found and returns a boolean value
-- `remove(index)` - removes the element at the specified index
-- `size()` - returns the number of elements
-- `contains(element)` - checks if the list contains a certain element and returns a boolean value
-- `set(index, item)` - replaces the element at the given index
+
+- `add(element)` - adaugă un element la sfârșitul listei
+- `add(index, element)` - adaugă un element la indexul specificat
+- `remove(element)` - elimină elementul găsit și returnează o valoare booleană
+- `remove(index)` - elimină un element de la indexul specificat
+- `size()` - returnează numărul de elemente
+- `contains(element)` - verifică dacă lista conține un anumit element și  returnează o valoare booleană
+- `set(index, item)` - înlocuiește elementul de la un index dat
 
 [/slide]
 
 [slide hideTitle]
-# Adding & Removing Elements
+# Adăugarea și eliminarea de elemente
 
-## Adding Elements
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-7-9-add-remove-add(index, El)-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The `add()` method is used for inserting new elements into a list. 
+## Adăugarea de elemente
 
-The type of elements that can be added is determined at the time of list creation. 
+Metoda `add()` este folosită pentru inserarea de elemente noi într-o listă. 
 
-If you gave `List<String>` you will not be able to add anything other than a String into your list.
+Tipul de elemente cate pot adăugate este stabilit Tipul de elemente care pot fi adăugate este determinat în momentul creării listei.
 
+Dacă ați dat `List <String>` nu veți putea adăuga altceva decât un șir în lista dvs.
 
 **add(element):**
 
@@ -111,11 +115,9 @@ for (String equipment : safetyEquipment) {
 }
 ```
 
-Items are appended to the list in the order that you add them. 
+Articolele sunt atașate la listă în ordinea în care le adăugați.
 
-If you would like to insert an item in a different position you can do that using `add(index, element)`.
-
-
+Dacă doriți să inserați un element într-o poziție diferită, puteți face acest lucru folosind `add (index, element)`.
 **add(index, element):**
 
 ```java live
@@ -131,18 +133,18 @@ for (String equipment : safetyEquipment) {
 }
 ```
 
-Now the "Helmet" is printed first because it was inserted at index 0.
+Acum „Casca” este tipărită mai întâi, deoarece a fost inserată la indexul 0.
 
-Attempting to add an element from an index that is outside the bounds of the array will result in an **IndexOutOfBoundsException**.
+Încercarea de a adăuga un element dintr-un index care se află în afara limitelor matricei va avea ca rezultat o ** IndexOutOfBoundsException **.
 
-When an element is added the count of elements increases by one.
+Când se adaugă un element, numărul de elemente crește cu unul.
 
 
-## Removing Elements
+## Eliminarea de elemente
 
-The `remove()` method deletes an element from the list.
+Metoda  `remove()` șterge un element din listă.
 
-**remove(element)** - **removes** the **first occurrence** of the **specified element** (returns **true** / **false**):
+**remove(element)** - **elimină** ** prima apariție ** a ** elementului specificat ** (returnează ** adevărat ** / ** fals **):
 
 ```java live
 List<String> names = new ArrayList<>();
@@ -163,7 +165,7 @@ for (String name : names){
 `System.out.println(names.remove("Maria"))` returns **true** because we had the element was found and removed.
 `System.out.println(names.remove("John"))` returns **false** because the element was not found.
 
-**remove(index)** - **removes** the **element** at the **specified index**:
+**remove(index)** - **elimină**  **elementul** de la **indexul specificat**:
 
 ```java live
 List<String> digimons = new ArrayList<>();
@@ -178,18 +180,17 @@ for (String name : names){
   System.out.println(name);
 }
 ```
-Attempting to remove an element from an index that is outside the bounds of the array will result in an **IndexOutOfBoundsException**.
+Încercarea de a elimina un element dintr-un index care se află în afara limitelor matricei va avea ca rezultat o ** IndexOutOfBoundsException **.
 
-When an element is deleted the count of elements decreases by one.
-
+Când un element este șters, numărul de elemente scade cu unul.
 
 [/slide]
 
 
 [slide hideTitle]
-# More List Methods
+# Mai multe metode pentru liste
 
-## Changing Elements
+## Modificarea elementelor
 
 - `set(index, item)` - **replaces** element at a **specified index**
 
@@ -207,9 +208,9 @@ for (Integer num : nums) {
 }
 ```
 
-## Accessing Elements
+## Accesarea elementelor
 
-- `get()` - **access** an element to the **specified index**
+- `get()` - **accesează** un element de la  **indexul specificat**
 
 ```java live
 List<Integer> nums = Arrays.asList(10, 20, 30, 40, 50);
@@ -219,7 +220,7 @@ int numberAtIndex4 = nums.get(4);
 System.out.println(numberAtIndex4);
 ```
 
-## Finding Elements
+## Găsirea elementelor
 
 - `contains(element)` - checks if an **element is in the list**
 
@@ -231,10 +232,9 @@ if (names.contains("Maria")){
 }
 ```
 
-## Counting Elements
+## Numărarea elementelor
 
-- `size()` - returns the **size** (**count elements**) of the list
-
+- `size()` - returnează **dimensiunea** (**numărul de elemente**) listei
 ```java live
 List<String> names = Arrays.asList("Maria", "Peter", "George");
 

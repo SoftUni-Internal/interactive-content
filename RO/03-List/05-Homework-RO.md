@@ -1,7 +1,7 @@
-# Temă de Casă
+# Temă pentru acasă
 
 [slide hideTitle]
-# Problem: Train
+# Problemă: Train
 
 [code-task title="Train" taskId="java-fund-1-Lists-Train" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -21,10 +21,10 @@ Pe prima linie vi se va oferi o **listă de vagoane** (numere întregi).
 
 Fiecare **întreg** reprezintă **numărul de pasageri** care sunt în prezent în fiecare vagon.
 
-Pe linia următoare veți obține **capacitatea maximă a fiecărui vagon** (număr întreg).
+Pe linia următoare veți obține **capacitatea maximă a fiecărui vagon** reprezentat ca un **singur număr întreg**.
 
 **Până**veți primi "end" vi se vor oferi două tipuri de intrări:
-- **Add** \{passengers\} - adăugați un vagon la final cu numărul dat de pasageri
+- **Add** \{passengers\}- adaugați un vagon la final cu numărul dat de pasageri
 - \{passengers\} - **găsiți un vagon existent** care să se potrivească tuturor pasagerilor (începând cu primul vagon)
 La sfârșit **tipăriți** starea finală a trenului (toate vagoanele separate printr-un spațiu)
 
@@ -242,7 +242,7 @@ end
 [/slide]
 
 [slide hideTitle]
-# Problem: Change List
+# Problemă: Change List
 [code-task title="Change List" taskId="java-fund-1-Lists-Change-List" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -262,7 +262,7 @@ Scrieți un program, care **citește o listă de numere întregi** de pe consol�
 
 Programul dvs. poate primi următoarele **comenzi**:
 - **Delete** \{element\} - șterge toate elementele din matrice, care sunt egale cu elementul dat
-- **Insert** \{element\} \{position\} - introduceți elementul și poziția dată
+- **Insert** \{element\} \{position\} - introduce elementul și poziția dată
 Ar trebui să **opriți programul** când primiți comanda "end". Imprimați toate numerele din matrice **separate cu un singur spațiu alb**.
 
 ### Exemplu
@@ -406,7 +406,7 @@ end
 [/slide]
 
 [slide hideTitle]
-# Problem: House Party
+# Problemă: House Party
 
 [code-task title="House Party" taskId="java-fund-1-Lists-House-Party" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -424,25 +424,24 @@ public class Main {
 [task-description]
 
 ## Descriere
-Scrieți un program care ține evidența oaspeților care merg la o petrecere în casă.
+Creați un program care ține evidența oaspeților care merg la o petrecere în casă.
 
-Pe prima linie de intrare veți primi **câte comenzi** veți avea.
+Pe prima linie de intrare veți primi **numărul comenzilor**.
 
-În rândurile următoare veți primi câteva dintre următoarele intrări:
+Pe liniile următoare veți primi câteva dintre următoarele intrări:
 -	"\{name\} is going!"
--	"\{name\} is not going!"
 
-Dacă primiți **primul** tip de intrare, trebuie să **adăugați persoana dacă nu este în listă**.
+- Trebuie să ** adăugați persoana dacă nu se află pe lista de invitați **.
+- Dacă ** persoana este pe listă ** tipăriți pe consolă următoarele: ** \ {nume \}is already in the list! **
 
-Dacă **el/ea se află în lista de imprimare** de pe consolă: 
-- "\{name\} is already in the list!" 
 
-Dacă primiți al doilea tip de intrare, trebuie să eliminați persoana dacă se află în listă.
+** \ {name \} is not going! **
 
-Dacă nu tipăriți:
-- "\{name\} is not in the list!"
+- Trebuie să eliminați persoana dacă se află în listă.
+- Dacă nu, tipăriți pe consolă: ** \ {nume \} is not in the list! **
 
-**La final, tipăriți toți oaspeții. Fiecare pe o nouă linie.**
+
+La sfârșitul programului, tipăriți toți invitații, fiecare pe o nouă linie.
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -644,7 +643,7 @@ Adriana
 [/slide]
 
 [slide hideTitle]
-# Problem: List Operations
+# Problemă: List Operations
 [code-task title="List Operations" taskId="java-fund-1-Lists-List-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -667,11 +666,11 @@ Până când primiți "End" vi se vor da **operațiuni** pe care trebuie să le 
 **Comenzile posibile** sunt:
 - **Add** \{number\} - adăugați un număr la sfârșit
 - **Insert** \{number\} \{index\} - introduceți numărul la indexul dat
-- **Remove** \{index\} - eliminare la index
-- **Shift left** \{count\} - primul număr devine ultimul 'count' ori
-- **Shift right** \{count\} - ultimul număr devine primul 'count'
+- **Remove** \{index\} - eliminarea numărul de la indexul dat
+- **Shift left** \{count\} - primul număr devine ultimul de **n număr de ori**
+- **Shift right** \{count\} - ultimul număr devine primul de **n număr de ori*
 
-**Notă**: este posibil ca indicele dat să fie în afara limitelor matricei. În acest caz, tipăriți "Invalid index"
+**Notă**: este posibil ca indexul dat să fie în afara limitelor matricei. În acest caz, tipăriți "Invalid index"
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -899,7 +898,7 @@ Invalid index
 [/slide]
 
 [slide hideTitle]
-# Problem: Bomb Numbers
+# Problemă: Bomb Numbers
 
 [code-task title="Bomb Numbers" taskId="java-fund-1-Lists-Bomb-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -916,7 +915,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care citește **secvența numerelor și numărul special al bombei** cu o anumită putere.
+Scrieți un program care citește ** o secvență de numere și numărul special al bombei** cu o anumită putere.
 
 Sarcina dvs. este să **detonați fiecare apariție a numărului special de bombă** și în funcție de puterea sa **vecinii săi din stânga și din dreapta**.
 
@@ -932,7 +931,8 @@ Detonările se efectuează **de la stânga la dreapta** și toate numerele deton
 
 **Comentarii:**
 - Numărul special este 4 cu puterea 2
-- După detonare am plecat cu secvența \[1, 2, 9\] cu suma 12
+-După detonare rămâne următoarea secvență \[1, 2, 9\] cu suma de  12
+
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -942,8 +942,8 @@ Detonările se efectuează **de la stânga la dreapta** și toate numerele deton
 
 **Comentarii:**
 - Numărul special este 9 cu puterea 3
-- După detonare am plecat cu secvența \[1, 4\] cu suma 5
-- Deoarece 9 are doar 1 vecin din dreapta, eliminăm doar (un număr în loc de 3)
+- După detonare rămâne următoarea secvență \[1, 4\], cu suma de 5
+- Deoarece 9 are doar 1 vecin din dreapta, eliminăm doar numărul 9 (eliminăm doar un număr, în loc de 3)
 
 [/task-description]
 [code-io /]
@@ -1025,7 +1025,7 @@ Detonările se efectuează **de la stânga la dreapta** și toate numerele deton
 [/slide]
 
 [slide hideTitle]
-# Problem: Cards Game
+# Problemă: Card Game
 [code-task title="Card Game" taskId="java-fund-1-Lists-Cards-Game" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1044,17 +1044,17 @@ public class Main {
 ## Descriere
 Vi se vor oferi două mâini de cărți, care vor fi **numere întregi**.
 
-Să presupunem că ai **doi jucători**.
+Să presupunem că sunt **doi jucători**.
 
-Trebuie să **aflați** pachetul câștigător și, respectiv, câștigătorul.
+Trebuie să **aflați** mâna câștigătoare și, respectiv, câștigătorul.
 
-Începi de la începutul ambelor mâini. **Comparați** cărțile din primul pachet cu cărțile din cel de-al doilea pachet.
+Începeți de la începutul ambelor mâini. **Comparați** cărțile din prima mâna cu cărțile din cea de-a doua mână.
 
-Jucătorul, **care are cartea cea mai mare**, ia ambele cărți și pune-le în partea din spatele mâinii - cartea celui de-al doilea jucător este ultima, iar cartea primei persoane (cea câștigătoare) este înaintea ei) și jucătorul cu cartea mai mică trebuie să scoată cartea din pachetul său.
+Jucătorul, **care are cartea cea mai mare**, ia ambele cărți și le pune în partea din spatele mâinii - cartea celui de-al doilea jucător este ultima, iar cartea primei persoane (cea câștigătoare) este înaintea ei) și jucătorul cu cartea mai mică trebuie să scoată cartea de pe puntea sa de cărți.
 
 Dacă ambele cărți ale jucătorilor **au aceleași valori** - nimeni nu câștigă, iar cele două cărți trebuie scoase de pe punți.
 
-**Jocul s-a terminat**, când unul dintre punți rămâne **fără nicio carte**.
+**Jocul s-a terminat**, când una dintre punți rămâne **fără nicio carte**.
 
 Trebuie să **tipăriți câștigătorul pe consolă** și **suma cărților** stânga: "\{First/Second\} player wins! Sum: \{sum\}".
 
@@ -1126,7 +1126,7 @@ Second player wins! Sum: 826
 [/slide]
 
 [slide hideTitle]
-# Problem: Append Arrays
+# Problemă: Append Arrays
 
 [code-task title="Append Arrays" taskId="java-fund-1-Lists-Append-Arrays" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1143,10 +1143,10 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program pentru a **adăuga mai multe matrice** de numere.
+Creați un program pentru a **adăuga mai multe matrice** de numere.
 - **Matricele** sunt **separate** prin '\|'
-- **Valorile** sunt **separate** de spații (' ', unul sau mai multe)
-- Ordonați matricele de la ultimul la primul și valorile lor de la stânga la dreapta
+- **Valorile** sunt **separate** prin  spații (' ', unul sau mai multe)
+- Ordonați matricele de la ultima la prima și valorile lor de la stânga la dreapta
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -1210,7 +1210,7 @@ Scrieți un program pentru a **adăuga mai multe matrice** de numere.
 [/slide]
 
 [slide hideTitle]
-# Problem: Pokemon Don't Go
+# Problemă: Pokemon Don't Go
 
 [code-task title="Pokemon Don't Go" taskId="java-fund-1-Lists-Pokemon-Don't-Go" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1227,35 +1227,35 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-În Pokemon Don't Go, când te duci la un anumit pokemon, cei mai apropiați de tine, în mod firesc, ajung mai departe, iar cei mai departe de tine, se apropie.
+În Pokemon Don't Go, când vă duceți  la un anumit pokemon, cei mai apropiați de voi, în mod firesc, ajung mai departe, iar cei mai departe de voi se apropie.
 
 Veți primi **o secvență de numere întregi, separate prin spații** - **distanțe** până la pokemon.
 
-Apoi, veți începe **să primiți numere întregi**, care vor corespunde cu **indexurile** din acea succesiune.
+Apoi, veți începe **să primiți numere întregi**, care vor corespunde cu **indecșii** din acea succesiune.
 
 **Când primiți un index**, trebuie să **eliminați elementul din acel index** din secvență (ca și cum ați fi capturat pokemonul).
 
-- Trebuie să MĂREȘTI valoarea tuturor elementelor din secvență care sunt **MAI MIC sau EGAL pentru elementul eliminat**, cu **valoarea** **a elementului eliminat**
+- Trebuie să măriți valoarea tuturor elementelor din secvență care sunt **mai mici decât sau egal cu valoarea elementului eliminat**, cu **valoarea** **elementului eliminat**
 
-- Trebuie să DECREȚI valoarea tuturor elementelor din secvență care sunt **MAI MARI decât elementul eliminat**, cu **valoarea elementului eliminat**
+- Trebuie să reduceți valoarea tuturor elementelor din secvență care sunt **mai mari decât elementul eliminat** cu **valoarea elementului eliminat**
 
-Dacă indicele dat este **MAI MIC decât 0**, **eliminați primul element al secvenței** și **COPIAȚI ultimul element la locul său**.
+Dacă indexul dat este **mai decât 0**, **eliminați primul element al secvenței** și **copiați ultimul element la locul său**.
 
-Dacă indicele dat este **MAI MARE decât ultimul index al secvenței**, **scoateți ultimul element din secvență** și **COPIAȚI primul element la locul său**.
+Dacă indexul  dat este **mai mare decât ultimul index al secvenței**, **scoateți ultimul element din secvență** și **copiați primul element la locul său**.
 
 Creșterea și scăderea elementelor ar trebui făcută și în aceste cazuri. 
 
-Elementul, a cărui valoare ar trebui să îl utilizați este **elementul REMOVED**.
+Elementul, a cărui valoare ar trebui s-o utilizați este **elementul eliminat**.
 
-**Programul se termină** când secvența nu are **elemente**.
+** Programul se încheie ** când ** nu mai rămân ** elemente în secvență.
 
 
 ### Intrare
-- Pe prima linie de intrare veți primi o succesiune de numere întregi, separate prin spații
-- Pe următoarele câteva linii veți primi numere întregi - indicii
+- Pe prima linie de intrare veți primi o secvență de numere întregi, separate prin spații
+- Pe următoarele câteva linii veți primi numere întregi - indecșii
 
 ### Ieșire
-- Când programul se termină, trebuie să imprimați pe consolă, valoarea însumată a tuturor elementelor ÎNLĂTURATE
+- Când programul se termină, trebuie să imprimați pe consolă, valoarea însumată a tuturor elementelor ELIMINATE.
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -1266,13 +1266,13 @@ Elementul, a cărui valoare ar trebui să îl utilizați este **elementul REMOVE
 | 0 | |
 
 **Comentarii:**
-- Matricea este \{4, 5, 3\} Indicele este 1
-- Îndepărtăm 5 și creștem cu totul mai jos decât acesta și scăzem cu totul mai mult decât el
-- În acest caz nu există mai mult de 5
+- Matricea este \{4, 5, 3\} Indexul este 1
+- Eliminăm 5 și creștem toți indexșii care sunt mai mici decât 5 și reducem toți indecșii mai mari
+- În acest caz,  cu toții sunt mai mici decât 5
 - Rezultatul este \{9, 8\}
-- Indicele este 1. Deci eliminăm 8 și scădem cu totul mai mult decât acesta
+- Indexul este 1. Deci eliminăm 8 și scădem toți indecșii mai mari decât acesta
 - Rezultatul este \{1\}
-- Indicele este 0. Deci eliminăm 1
+- Indexul este 0. Deci eliminăm 1
 - Nu mai există elemente, așa că imprimăm suma tuturor elementelor eliminate
 - 5 + 8 + 1 = 14
 
@@ -1505,7 +1505,7 @@ Elementul, a cărui valoare ar trebui să îl utilizați este **elementul REMOVE
 [/slide]
 
 [slide hideTitle]
-# Problem: SoftUni Course Planning
+# Problemă: SoftUni Course Planning
 [code-task title="SoftUni Course Planning" taskId="java-fund-1-Lists-SoftUni-Course-Planning" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1521,23 +1521,23 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Sunteți însărcinat să ajutați la planificarea următorului curs de fundamentare a programării, urmărind lecțiile, care vor fi incluse în curs, precum și toate exercițiile pentru lecții.
+Sunteți însărcinat să ajutați la planificarea următorului curs Programming Fundamentals, urmărind lecțiile, care vor fi incluse în curs, precum și toate exercițiile pentru lecții.
 
-Pe prima linie de introducere veți primi programul inițial al lecțiilor și exercițiilor care vor face parte din cursul următor, separate prin virgulă și spațiu ", ".
+Pe prima linie a intrării veți primi planificarea inițială al lecțiilor și exercițiilor care vor face parte din cursul următor, separate prin virgulă și spațiu ", ".
 
 Dar, înainte de începerea cursului, trebuie făcute câteva modificări.
 
-Până când veți primi "course start" vi se vor oferi câteva **comenzi pentru a modifica programul cursului**.
+Până când veți primi "course start" vi se vor oferi câteva **comenzi pentru a modifica planificarea cursului**.
 
 **Comenzile posibile** sunt:
 - Add:\{lessonTitle\} - **adăugați lecția la sfârșitul** planificării, dacă **nu există**
-- Insert:\{lessonTitle\}:\{index\} - **introduceți** lecția în **indexul dat**, dacă **nu există**
+- Insert:\{lessonTitle\}:\{index\} - **introduceți** lecția la **indexul dat**, dacă **nu există**
 - Remove:\{lessonTitle\} - **eliminați lecția**, dacă **există**
 - Swap:\{lessonTitle\}:\{lessonTitle\} - **schimbați locul** celor două lecții, **dacă există**
-- Exercise:\{lessonTitle\} - **adăugați Exercițiu în program imediat după indexul lecției**, dacă lecția există și nu există deja exercițiu, în următorul format: "- - - \{lessonTitle\}-Exercise"
-    - dacă **lecția nu există**, **adăugați** lecția **la sfârșitul** programului cursului, **urmat de exercițiu**
+- Exercise:\{lessonTitle\} - **adăugați Exercițiul în program, imediat după indexul lecției**, dacă lecția există și nu există încă un exercițiu, în următorul format: "- - - \{lessonTitle\}-Exercise"
+    - dacă **lecția nu există**, **adăugați** lecția **la sfârșitul** programului cursului, **urmat de un exercițiu**
 
-De fiecare dată când **Schimbați sau Eliminați o lecție,** ar trebui **să faceți același lucru cu exercițiile**, dacă există, care urmează lecțiile.
+De fiecare dată când **schimbați sau eliminați o lecție,** ar trebui **să faceți același lucru cu exercițiile**,care urmează lecțiile, în cazul în care acestea există.
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -1548,12 +1548,11 @@ De fiecare dată când **Schimbați sau Eliminați o lecție,** ar trebui **să 
 | Remove:Lists | 4.Databases |
 | course start | |
 
-**Comments:**
-- We receive the initial schedule
-- Next, we add Databases lesson, because it does not exist
-- We Insert at the given index lesson Arrays, because its not present in the schedule
-- After receiving the last command and removing lesson Lists, we print the whole schedule
-
+**Comentarii:**
+- Primim planificarea inițială
+- Apoi, adăugăm lecția **Databases**, deoarece acesta nu există
+- Inserăm la indexul dat lecția **Arrays**, fiindcă nu este prezent în program
+- După ce am primit ultima comanda și am eliminat lecția **Lists**, imprimăm întreaga planificare
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -1568,8 +1567,8 @@ De fiecare dată când **Schimbați sau Eliminați o lecție,** ar trebui **să 
 **Comentarii:**
 - Schimbăm lecțiile date, pentru că ambele există
 - După primirea comenzii Exercițiu, vedem că o astfel de lecție nu există, așa că adăugăm lecția la final, urmată de exercițiu
-- Schimbăm lecții de liste și baze de date
-- Bazele de date-Exercițiul este, de asemenea, mutat după lecția Bazele de date
+- Schimbăm lecțiile **Lists** și **Databases**
+- **Databases**-Exercițiul este, de asemenea, mutat după lecția **Databases**
 - Omitem următoarea comandă, deoarece avem deja o astfel de lecție în programul nostru
 
 [/task-description]

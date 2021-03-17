@@ -1,36 +1,30 @@
-# Lesson Introduction
+# Introducere
 [slide hideTitle]
-# Lesson Content
+# Con'inutul lec'iei
 
-## In this lesson you will learn about:
+## În această lecție veți învăța despre:
 
 **1. Liste**
 
-- What lists are
+- Ce reprezintă listele
 
-- How lists are used and why we need them
+- Cum să utilizăm listele și de ce avem nevoie de acestea 
 
-- Adding elements
+- **Adăugarea** elementelor
 
-- Removing elements
+- **Eliminarea** elementelor
 
-- Modifying elements
+- **Modificarea** elementelor
 
-- Finding elements
+- **Găsirea** elementelor
 
-**2. Lista manipulării**
+**2. Citirea și imprimarea listelor**
 
-- Citirea listelor de pe consolă
+**3. Sortarea listelor**
 
-- Citirea listelor dintr-o singură linie
+- Operații de sortare a listelor
 
-- Tipărirea listelor pe consolă
-
-**3. Sortarea listelor și a matricelor**
-
-- Sortarea listelor de prezentare generală și sintaxă
-
-- Comanda **String.join()**
+- Metoda **String.join()**
 
 
 [/slide]

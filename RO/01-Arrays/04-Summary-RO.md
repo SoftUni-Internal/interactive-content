@@ -2,6 +2,8 @@
 [slide hideTitle]
 # Rezumat
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-24-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## În această lecție ați învățat:
 - Matricele conțin o secvență de elemente
 - Crearea (alocarea) unei matrice
@@ -23,7 +25,7 @@ for (int i = 0; i < n; i++) {
   arr[i] = Integer.parseInt(sc.nextLine()); //read array elements
 }
 ```
-- Imprimarea elementelor a matricei 
+- Imprimarea elementelor matricei 
 
 ```java
 int[] numbers = { 1, 2, 3, 4, 5 };
@@ -32,7 +34,7 @@ for (int number : numbers) {
 }
 ```
 
-- Buclă For-each loop/For-each loop/
+- Buclă For-each 
 
 ```Java
 int[] numbers = { 1, 2, 3, 4, 5 };
@@ -42,13 +44,13 @@ for (int number : numbers) {
 ```
 
 ## În lecția următoare, veți învăța:
-- Ce este o metodă?
+- Ce este o **metodă**?
 - Denumirea și cele mai bune practici
-- Declararea și invocarea metodelor
+- Declararea și **invocarea metodelor**
    - metode de tip Void și Return
 - Metode cu parametri
-- Valoare vs. Tipuri de referință
-- Metode de supraîncărcare
+- **Tipuri de valoare** vs. **Tipuri de referință**
+- Metode de **supraîncărcare**
 - Fluxul de execuție a programului
 [/slide]
 

@@ -1,8 +1,10 @@
-# Provlem 1: SoftUni Reception 
+# Problema 1: SoftUni Reception 
 
 [slide hideTitle]
 
 # SoftUni Reception 
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/05.Java-Fundamentals-Exam-Preparation/EN/Java-Fund-Exam-Prep-1-Softuni-Receptionist-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="SoftUni Reception" taskId="java-fund-18-Exam-Preparation-problem-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -25,7 +27,7 @@ Fiecare dintre ei poate gestiona **un număr diferit de persoane pe oră**.
 
 Sarcina dvs. este să **calculați cât timp va dura pentru a răspunde la toate întrebările** ale unui număr dat de persoane.
 
-Mai întâi veți primi **3 rânduri cu numere întregi**, reprezentând **numărul de persoane pe care fiecare angajat le poate ajuta pe zi**.
+Mai întâi, veți primi **3 rânduri cu numere întregi**, reprezentând **numărul de persoane pe care fiecare angajat le poate ajuta pe zi**.
 
 Pe linia următoare **veți primi numărul total de persoane** numărate ca un singur întreg.
 
@@ -35,9 +37,9 @@ Pe linia următoare **veți primi numărul total de persoane** numărate ca un s
 
 "**Time needed:** \{**time**\}**h.**"
 
-## Intrare / Constrângeri
-- Pe primele 3 rânduri - **eficiența** fiecărui angajat - un **întreg**
-- Pe a 4-a linie - oamenii **contează** - un **întreg**
+## Intrare / Limitări 
+Pe primele 3 linii - **eficiența** fiecărui angajat -  **numere întregi**
+- Pe a 4-a linie - numărul de persoane- un **număr întreg**
 
 ## Ieșire
 - Imprimați o **singură linie**:
@@ -55,7 +57,7 @@ Pe linia următoare **veți primi numărul total de persoane** numărate ca un s
 ## Cometariu
 - Toți angajații pot răspunde la 15 persoane pe oră
 
-- După prima oră au mai rămas 5 persoane pentru a primi răspuns
+- După prima oră au mai rămas 5 persoane pentru a primi un răspuns
 
 - Toți oamenii vor primi răspuns în a doua oră
 
@@ -76,10 +78,9 @@ Pe linia următoare **veți primi numărul total de persoane** numărate ca un s
 
 - După următoarele 3 ore sunt 18 + 6 \* 3 = 36 de persoane cu răspuns
 
-- După pauză timp de o oră, există doar 9 persoane pentru a răspunde
+- După pauză timp de o oră, există doar 9 persoane care așteaptă un răspuns 
 
-- Ora 10 - toate întrebările oamenilor vor primi răspuns
-
+- Ora 10 - toate întrebările oamenilor au primit un răspuns
 
 ## Exemplu
 |**Intrare**|**Ieșire**|

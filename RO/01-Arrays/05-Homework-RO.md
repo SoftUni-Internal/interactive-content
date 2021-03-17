@@ -1,7 +1,7 @@
 # Teme pentru acasă
 
 [slide hideTitle]
-# Problem: Train
+# Problemă: Train
 
 [code-task title="Train" taskId="java-fund-1-arrays-Train" executionType="tests-execution" executionStrategy="java-code" requiresInput requiresInput]
 [code-editor language=java]
@@ -19,22 +19,22 @@ public class Main {
 [task-description]
 ## Descriере
 
-Avem un număr de vagoane într-un tren **n**
+Veți primi un număr de vagoane într-un tren, reprezentate ca  **n**
 
-În următoarele **n linii** veți primi câți oameni vor urca pe acel vagon.
+În următoarele **n linii** veți primi numărul persoanelor care vor urca pe acel vagon.
 
-La final **imprimați întregul tren** și după aceea **calculați câți oameni vor fi in trenul**.
+La final **imprimați întregul tren** și după aceea **calculați câte persoane vor fi in trenul**.
 
 ### Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 3 | 13 24 8 |
 | 13 | 45 |
 | 24 | |
 | 8 | |
 
-### Example
-| **Input** | **Output** |
+### Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 1 | 100 |
 | 100 | 100 |
@@ -134,7 +134,7 @@ La final **imprimați întregul tren** și după aceea **calculați câți oamen
 [/slide]
 
 [slide hideTitle]
-# Problem: Common Elements
+# Problemă: Common Elements
 [code-task title="Common Elements" taskId="java-fund-1-arrays-Common-Elements" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -151,12 +151,12 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program, care imparima **elemente comune** în **două matrice**.
+Creați un program, care imparima **elemente comune** în **două matrice**.
 
 Trebuie să **comparați elementele** din **a doua matricea** cu elementele din cea **prima**.
 
 ### Exemple
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Hey hello 2 4 | 4 hello |
 | 10 hey 4 hello | |
@@ -241,7 +241,7 @@ ggg
 [/slide]
 
 [slide hideTitle]
-# Problem: Zig-Zag Arrays
+# Problemă: Zig-Zag Arrays
 
 [code-task title="Zig-Zag Arrays" taskId="java-fund-1-arrays-Zig-Zag-Array" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -259,16 +259,16 @@ public class Main {
 [task-description]
 
 ## Descriere
-Scrieți un program care creează **2 matrice**.
+Creați un program care creează **2 matrice**.
 
-Aveți un număr **integer n**.
+Aveți un număr **întreg n**.
 
 Pe **următoarele n linii** primiți **2 numere întregi**.
 
-Formați 2 matrici așa cum se arată **mai jos**.
+Formați 2 matrici așa cum este arătat **mai jos**.
 
 ### Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 2 | 80 19 |
 | 80 23 | 23 31 |
@@ -367,7 +367,7 @@ Formați 2 matrici așa cum se arată **mai jos**.
 [/slide]
 
 [slide hideTitle]
-# Problem: Array Rotation
+# Problemă: Array Rotation
 [code-task title="Array Rotation" taskId="java-fund-1-arrays-Rotation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -384,11 +384,11 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program care **primește o matrice și un număr de rotații** pe care trebuie să le efectuați (primul element merge la final).
+Creați un program care **primește o matrice și un număr de rotații** pe care trebuie să le efectuați (primul element merge la final).
 **Imprimați** rezultatul  matricei 
 
 ### Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 51 47 32 61 21 | 32 61 21 51 47 |
 | 2 | |
@@ -473,7 +473,7 @@ Scrieți un program care **primește o matrice și un număr de rotații** pe ca
 [/slide]
 
 [slide hideTitle]
-# Problem: Top Integers
+# Problemă: Top Integers
 
 [code-task title="Top Integers" taskId="java-fund-1-arrays-Top-Integers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -491,12 +491,12 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program pentru a **găsi cele mai mari numere întregi** dintr-o matrice.
+Creați un program pentru a **găsi cele mai mari numere întregi** dintr-o matrice.
 
-Un top integer este un  integer care este *mai mare** decât toate elementele **din dreapta sa**.
+Un integer de top  este un  număr întreg care este *mai mare** decât toate elementele **din dreapta sa**.
 
 ### Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 14 24 3 19 15 17 | 24 19 17 |
 
@@ -572,7 +572,7 @@ Un top integer este un  integer care este *mai mare** decât toate elementele **
 [/slide]
 
 [slide hideTitle]
-# Problem: Equal Sums
+# Problemă: Equal Sums
 [code-task title="Equal Sums" taskId="java-fund-1-arrays-Equal-Sums" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -588,14 +588,14 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care să determine dacă există **un element în matrice** astfel încât **suma elementelor din stânga sa** să fie **egală** cu **suma elementelor din dreapta sa** .
+Creați un program care să determine dacă există **un element în matrice** astfel încât **suma elementelor din stânga sa** să fie **egală** cu **suma elementelor din dreapta sa** .
 
 Dacă nu există **elemente în stânga/dreapta**, suma lor **este considerată să fie 0**.
 
-**Imprimați** **indexul** care îndeplinește condiția necesară sau "nu" dacă nu există un astfel de index. 
+**Imprimați** **indexul** care îndeplinește condiția necesară sau "no" dacă nu există un astfel de index. 
 
 ### Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 1 2 3 3 | 2 |
 
@@ -724,7 +724,7 @@ no
 [/slide]
 
 [slide hideTitle]
-# Problem: Max Sequence of Equal Elements
+# Problemă: Max Sequence of Equal Elements
 
 [code-task title="Max Sequence of Equal Elements" taskId="java-fund-1-arrays-Max-Sequence-of-Equal-Elements" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -741,12 +741,12 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care **găsește cea mai lungă secvență de elemente egale într-o matrice** de numere întregi.
+Creați un program care **găsește cea mai lungă secvență de elemente egale într-o matrice** de numere întregi.
 
 Dacă există **câteva secvențe mai lungi**, imprimați-o pe cea **din stânga**.
 
 ### Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 0 1 1 5 2 2 6 3 3 | 1 1 |
 | 1 1 1 2 3 1 3 3 | 1 1 1 |
@@ -881,7 +881,7 @@ Dacă există **câteva secvențe mai lungi**, imprimați-o pe cea **din stânga
 [/slide]
 
 [slide hideTitle]
-# Problem: Magic Sum
+# Problemă: Magic Sum
 [code-task title="Magic Sum" taskId="java-fund-1-arrays-Magic-Sum" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -897,15 +897,15 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
- Scrieți un program, care **imprima toate perechile unice** într-o matrice de numere întregi a căror **sumă este egală cu un număr dat**.
+ Creați un program, care **imprima toate perechile unice** dintr-o matrice de numere întregi a căror **sumă este egală cu un număr dat**.
 ### Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 1 7 6 2 19 23 | 1 7 |
 | 8 | 6 2 |
 
 ### Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 14 20 60 13 7 19 8 | 14 13 |
 | 27 | 20 7 |
@@ -991,7 +991,7 @@ public class Main {
 [/slide]
 
 [slide hideTitle]
-# Problem: LadyBugs
+# Problemă: LadyBugs
 
 [code-task title="LadyBugs" taskId="java-fund-1-arrays-LadyBugs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1009,21 +1009,21 @@ public class Main {
 [task-description]
 ## Descriere
 
-Aveți o **dimensinue câmpului** și **indicii de buburuze** în interiorul câmpului.
+Aveți o **dimensinue a câmpului** și **indicii de buburuze** în interiorul câmpului.
 
-După aceea, la fiecare nouă linie, până când este dată comanda "**end**", o buburuză **își schimbă poziția** fie la **stânga**, fie la * dreapta** cu o anumită lungime de zbor.
+După aceea, pe fiecare nouă linie, până când este dată comanda "**end**", o buburuză **își schimbă poziția** fie la **stânga**, fie la * dreapta** cu o anumită lungime de zbor.
 
 O **comandă** pentru o buburuză arată in acest mod:"0 right 1".
 
 Aceasta înseamnă că insectă mică **plasată pe index-ul 0 ar trebui să zboare un index spre dreapta sa**.
 
-Dacă buburuză **aterizează pe locul colegii săi**, aceasta **continuă să zboare în aceeași direcție cu aceeași lungime a zborului**.
+Dacă buburuză **aterizează pe locul colegele sale**, aceasta **continuă să zboare în aceeași direcție cu aceeași lungime a zborului**.
 
 Dacă buburuză **zboară din afară din câmpului**, ea **dispare**.
 
-De exemplu, imaginați-vă că vi se oferă un câmp **cu dimensiunea 3** și buburuze pe indexuri **0 și 1**.
+De exemplu, imaginați-vă că vi se oferă un câmp **cu dimensiunea de 3** și buburuze pe indexuri **0 și 1**.
 
-Dacă buburuză **din index-ul 0 trebuie să zboare la dreapta sa cu lungimea de 1** (0 right 1) ea va încerca să **aterizeze pe index-ul 1** dar, din cauză că acolo există **o altă buburuză** ea va continua mai departe spre dreapta cu o lungime suplimentară de 1, aterizând pe **index-ul 2**.
+Dacă buburuza **din index-ul 0 trebuie să zboare la dreapta sa cu lungimea de 1** (0 right 1) ea va încerca să **aterizeze pe index-ul 1** dar, din cauză că acolo există **o altă buburuză** ea va continua mai departe spre dreapta cu o lungime suplimentară de 1, aterizând pe **index-ul 2**.
 
 După aceea, dacă aceeași buburuză trebuie să zboare la dreapta sa cu lungimea de 1 (2 right 1), va ateriza undeva **în afara câmpului**, așa că zboară **departe**: 
 
@@ -1039,24 +1039,24 @@ Pentru fiecare celulă care conține buburuze imprimați '1' și pentru fiecare 
 
 Pentru exemplul de mai sus, rezultatul ar trebui să fie '0 1 0'.
 
-### Input
+### Intrare
 
 - Pe prima linie veți primi un număr întreg - dimensiunea câmpului
 
-- Pe a doua linie veți primi indexurile inițiale ale tuturor buburuzelor separate printr-un spațiu gol
+- Pe a doua linie veți primi indecșii inițiali ai tuturor buburuzelor separate printr-un spațiu gol
 
-Indiciile date pot să fiu sau nu în interiorul domeniului câmpului
+Indecșii dați pot fi sau nu în interiorul domeniului câmpului
 
 - Pe liniile următoare, până când veți obține comanda "**end**" veți primi comenzi în formatul: "\{ladybug index\} \{direction\} \{fly length\}"
 
-### Output
+### Ieșire
 - Imprimați toate celulele din câmpul în formatul: "\{cell\} \{cell\} … \{cell\}"
     - dacă o celulă are buburuză, tipăriți '1'
     - dacă o celulă este goală, imprimați'0' 
 
 
 ### Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 3 | 0 1 0 |
 | 0 1 | |
@@ -1065,9 +1065,9 @@ Indiciile date pot să fiu sau nu în interiorul domeniului câmpului
 | end | |
 
 ### Comentarii
-- 1 1 0 - Initial field
-- 0 1 1 - field after "0 right 1"
-- 0 1 0 - field after "2 right 1"
+- 1 1 0 - Câmpul inițial
+- 0 1 1 - câmpul după "0 right 1"
+- 0 1 0 - câmpul după "2 right 1"
 
 [/task-description]
 [code-io /]

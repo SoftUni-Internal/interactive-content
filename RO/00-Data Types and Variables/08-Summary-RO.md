@@ -3,7 +3,7 @@
 
 ## În această lecție ați învățat:
 
-   - Variabile - stochează date
+   - Datele sunt stocate în **variabile**
 
   ```java
   int myNum = 3;               // Integer (whole number)
@@ -15,7 +15,7 @@
 
   
   - Tipuri de numere:
-     - reprezentați numerele
+     - reprezintă  numerele
      - au intervale specifice pentru fiecare tip
 
     ```java
@@ -27,8 +27,8 @@
     ```
 
   - Șiruri și tipuri de text:
-     - reprezentați textul
-     - secvențe de caractere Unicode
+     - reprezentă textul
+     - șirurile sunt secvențe de caractere Unicode
 
 
     ```java
@@ -40,14 +40,14 @@
     ```
 
   - Conversia tipului: implicită și explicită
-  - Boolean can have only two possible values - **true** or **false**
+  - Tipul boolean poate avea doar două valori posibile0 - **true** sau **false**
 
   ## În lecția următoare, veți învăța:
    - Matrice
    - Citirea matricelor de pe consolă
-     - `For Loop` și `String.split()`
-   - Imprimarea tablourilor pe consolă
-   - Pentru fiecare Buclă
+     - Bucla `For și `String.split()`
+   - Imprimarea matricelor pe consolă
+   - Bucla Foreach
 [/slide]
 
 

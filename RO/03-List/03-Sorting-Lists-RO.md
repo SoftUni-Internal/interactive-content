@@ -3,31 +3,31 @@
 [slide hideTitle]
 # Sortarea Listelor
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-23-24-sorting-lists-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- Sortarea listelor de șiruri în ordine crescătoare folosind `Collections.sort()`
-```java live
-List<String> names = new ArrayList<>(Arrays.asList("Peter", "Michael", "George", "Victor", "John", "Alexander"));
 
-Collections.sort(names); // sort in ascending (alphabetical) order
-
-System.out.println(String.join(", ", names));
-```
-- Sortarea Listelor de Șiruri în ordine descrescătoare folosind `Collections.sort()` si `Collections.reverse()`
+Collections.sort(names); // sortarea colecției în ordine crescătoare (alfabetică) 
 
 ```java live
 List<String> names = new ArrayList<>(Arrays.asList("Peter", "Michael", "George", "Victor", "John", "Alexander"));
 
-Collections.sort(names);     // sort in ascending order
-
-Collections.reverse(names);  // reverse the List 
-
 System.out.println(String.join(", ", names));
 ```
+`Collections.reverse()` - sortarea colecției în ordine descrescătoare.
+
+```java live
+List<String> names = new ArrayList<>(Arrays.asList("Peter", "Michael", "George", "Victor", "John", "Alexander"));
+
+Collections.reverse(names); 
+
+System.out.println(String.join(", ", names));
 [/slide]
 
 
 [slide hideTitle]
-# Problem with Solution: List of Products
+# Problemă cu soluție: List of Products
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-25-problem-and-solution-list-of-products-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="List of Products" taskId="java-fund-1-Lists-lab-List-of-products" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -142,7 +142,10 @@ d
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Remove Negatives and Reverse
+# Problemă cu soluție: Remove Negatives and Reverse
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-27-problem-and-solution-remove-negatives-and-reverse-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 [code-task title="Remove Negatives and Reverse" taskId="java-1-fund-Lists-lab-Remove-Negatives-and-Reverse" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

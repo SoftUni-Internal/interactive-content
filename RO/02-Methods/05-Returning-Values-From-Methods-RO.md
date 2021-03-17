@@ -1,8 +1,9 @@
 # Returnarea de valori de la metode
 
 [slide hideTitle]
-# Afirmația de returnare
+# Instrucțiunea de returnare
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-27-28-The-return-statement-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Cuvântul-cheie `return` termină execuția unei metode, și poate fi folosit pentru a returna o valoare de la o metodă.
 
@@ -22,6 +23,8 @@ public class MyClass {
 [slide hideTitle]
 # Folosirea valorilor de returnare
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-29-Using-the-return-values-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Valorile de returnare pot fi:
 
 * **Atribuite** unei variabile
@@ -29,19 +32,21 @@ Valorile de returnare pot fi:
 int max = getMax(5, 10);
 ```
 
-* **Folosite** în expresie
+* **Folosite** într-o expresie
 ```Java
 double total = getPrice() * quantity * 1.20;
 ```
 
-* **Pasate** unei alte metode
+* **Trecute** unei alte metode
 ```Java
 int age = Integer.parseInt(sc.nextLine());
 ```
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Calculate Rectangle Area
+# Problemă cu soluție: Calculate Rectangle Area
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-30-problem-and-solution-calculate-rectangle-area-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Calculate Rectangle Area" taskId="java-fund-1-Methods-lab-Calculate-Rectangle-Area" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -55,8 +60,8 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
-Creați o metodă care calculează și afișează aria unui dreptunghi cu lungimea si lățimea dată:
+## Descriere
+Creați o metodă care calculează și afișează aria unui dreptunghi cu lungimea si lățimea date:
 
 ## Exemple
 |**Date de intrare**|**Date de ieșire**|
@@ -138,7 +143,7 @@ Creați o metodă care calculează și afișează aria unui dreptunghi cu lungim
 
 
 [slide hideTitle]
-# Problem with Solution: Repeat String
+# Problemă cu soluție: Repeat String
 [code-task title="Repeat String" taskId="java-fund-1-Methods-lab-Repeat-String" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -152,10 +157,10 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
-Scrieți o metodă care primește un șir și-l repetă de n ori \(întreg\).
+## Descriere
+Creați o metodă care primește un **șir** și un număr repetat  **n** \(un număr întreg\).
 
-Metoda va afișa un nou șir \(cel vechi repetat de n ori\).
+Metoda va afișa un nou **șir** \(cel vechi repetat de **n** ori\).
 
 ## Exemple
 |**Date de intrare**|**Date de ieșire**|
@@ -241,7 +246,7 @@ ivanivan
 
 
 [slide hideTitle]
-# Problem with Solution: Math Power
+# Problemă cu soluție: Math Power
 [code-task title="Math Power" taskId="java-fund-1-Methods-lab-Math-Power" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -257,8 +262,11 @@ public class Main {
 [/code-editor]
 [task-description]
 
-## Cerință
-Creați o metodă care calculează și returnează valoarea unui număr ridicat la o anumită putere
+## Descriere
+Creați o metodă care calculează și returnează valoarea unui număr ridicat la o anumită putere.
+
+## Sfat
+Folosiți **BigDecimal**.
 
 ## Exemple
 |**Date de intrare**|**Date de ieșire**|
@@ -388,7 +396,10 @@ Creați o metodă care calculează și returnează valoarea unui număr ridicat 
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Orders
+# Problemă cu soluție: Orders
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-problem-and-solution-orders-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Orders" taskId="java-fund-1-Methods-lab-Orders" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -402,8 +413,8 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
-Creați o metodă care calculează prețul total al unei comenzi și-l afișează pe consolă.
+## Descriere
+Creați o metodă care calculează prețul total al unei comenzi și-l imprimă pe consolă.
 
 Metoda va primi unul din **următoarele produse**: cafea, cola, apă, gustări; și o cantitate a produsului.
 
@@ -416,7 +427,7 @@ Prețul pentru fiecare produs este:
 | coke | 1.40 |
 | snacks | 2.00 |
 
-Afișați rezultatul final rotunjit la a doua zecimală.
+Imprimați rezultatul final rotunjit la a doua zecimală.
 
 ## Exemple
 |**Date de intrare**|**Date de ieșire**|

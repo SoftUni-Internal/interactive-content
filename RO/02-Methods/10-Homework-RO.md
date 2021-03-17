@@ -1,7 +1,7 @@
 # Temă de casă
 
 [slide hideTitle]
-# Problem: Smallest of Three Numbers
+# Problemă: Smallest of Three Numbers
 
 [code-task title="Smallest of Three Numbers" taskId="java-fund-1-Methods-Smallest-of-Three-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -16,10 +16,9 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
-Scrieți o metodă care **afișează cel mai mic număr dintre 3 numere naturale**.
+## Descriere
+Creați o metodă care **imprimă cel mai mic număr dintre 3 numere întrege**.
 
-Folosiți un nume corespunzător pentru metodă.
 
 ### Exemplu
 | **Date de intrare** | **Date de ieșire** |
@@ -123,7 +122,7 @@ Folosiți un nume corespunzător pentru metodă.
 [/slide]
 
 [slide hideTitle]
-# Problem: Vowels Count
+# Problemă: Vowels Count
 [code-task title="Vowels Count" taskId="java-fund-1-Methods-Vowels-Count" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -137,10 +136,8 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
-Scrieți o metodă care primește **un șir** și **afișează numărul de vocale**.
-
-Folosiți un nume corespunzător pentru metodă.
+## Descriere
+Creați  o metodă care primește **un singur șir** și **imprimă numărul de vocale**.
 
 ### Exemplu
 | **Date de intrare** | **Date de ieșire** |
@@ -212,7 +209,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non.
 [/slide]
 
 [slide hideTitle]
-# Problem: Characters in Range
+# Problemă: Characters in Range
 
 [code-task title="Characters in Range" taskId="java-fund-1-Methods-Characters-in-Range" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -227,10 +224,10 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
-Scrieți o metodă care primește **două caractere** și afișează pe o singură linie **toate caracterele inclluse între ele după ASCII**.
+## Descriere
+Creați  o metodă care primește **două caractere** și afișează pe o singură linie **toate caracterele inclluse între ele, în conformitate cu ASCII**.
 
-**OBSERVAȚIE:** Dacă a doua literă este mai mică ca prima acestea ar trebui inversate.
+**NOTĂ:** Dacă valoarea ASCII a doua literă este mai mică decât cea a primei, atunci literele ar trebui inversate.
 
 ### Exemplu
 | **Date de intrare** | **Date de ieșire** |
@@ -315,7 +312,7 @@ B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _ ` a b c d e f g h i 
 [/slide]
 
 [slide hideTitle]
-# Problem: Password Validator
+# Problemă: Password Validator
 [code-task title="Password Validator" taskId="java-fund-1-Methods-Password-Validator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -329,22 +326,22 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
-Scrieți un program dacă o parolă dată este **validă**. 
+## Descriere
+Creați un program care verifică dacă o parolă dată este **validă**. 
 
-Regulile **parolei** sunt:
+**Regulile** parolei sunt următoarele:
 - **6 - 10 caractere** (inclusiv)
 - Este formată **doar** din **litere și numere**
-- să aibă **cel puțin 2 cifre** 
-Dacă parola este **validă** se va afișa "Password is valid". 
+- Conține **cel puțin 2 cifre** 
+Dacă parola este **validă**, imprimați "Password is valid". 
 
-Dacă nu **este validă**, pentru fiecare regulă încălcată **se afișează un mesaj**:
+Dacă nu **este validă**, pentru fiecare regulă încălcată **imprimați unul idntre următoarele mesaje**:
 - "Password must be between 6 and 10 characters"
 - "Password must consist only of letters and digits"
 - "Password must have at least 2 digits"
 
-### Observație
-Scrieți o metodă pentru fiecare regulă.
+### Sfat
+Creați  o metodă pentru fiecare regulă.
 
 ### Exemplu
 | **Date de intrare** | **Date de ieșire** |
@@ -442,7 +439,7 @@ Password is valid
 [/slide]
 
 [slide hideTitle]
-# Problem: Add and Subtract
+# Problemă: Add and Subtract
 
 [code-task title="Add and Subtract" taskId="java-fund-1-Methods-Add-and-Subtract" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -458,9 +455,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You will receive 3 integers.
+Veți primi  3 numere întregi.
 
-Write a method sum to get the sum of the first two integers and subtract method that subtracts the third integer from the result from the Sum method.
+Creați o metodă care returnează suma primelor două numere întregi și o altă metodă care scade al treilea număr întreg din rezultatul metodei sum.
 
 ### Example
 | **Input** | **Output** |
@@ -614,7 +611,7 @@ Write a method sum to get the sum of the first two integers and subtract method 
 [/slide]
 
 [slide hideTitle]
-# Problem: Middle Characters
+# Problemă: Middle Characters
 [code-task title="Middle Characters" taskId="java-fund-1-Methods-Middle-Characters" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -628,12 +625,12 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
+## Descriere
 Veți primi un singur șir.
 
-Scrieți o metodă care **afișează caracterul din mijloc**.
+Creați  o metodă care **imprimă caracterul din mijloc**.
 
-Dacă **lungimea** șirului este **pară** atunci există **2 caractere mijlocii**.
+Dacă **lungimea** șirului este **pară**, atunci există **2 caractere mijlocii**.
 
 ### Exemplu
 | **Date de intrare** | **Date de ieșire** |
@@ -753,7 +750,7 @@ ea
 [/slide]
 
 [slide hideTitle]
-# Problem: NxN Matrix
+# Problemă: NxN Matrix
 
 
 [code-task title="NxN Matrix" taskId="java-fund-1-Methods-NxN-Matrix" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -769,9 +766,8 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
-Scrieți o metodă care primește o singură variabilă n și afișează o schemă nxn cu ea.
-
+## Descriere
+Creați o metodă care primește un singur întreg ** n ** și tipărește o matrice ** n * n ** cu acel număr.
 ### Exemplu
 | **Date de intrare** | **Date de ieșire** |
 | --- | --- |
@@ -945,7 +941,7 @@ Scrieți o metodă care primește o singură variabilă n și afișează o schem
 [/slide]
 
 [slide hideTitle]
-# Problem: Factorial Division
+# Problemă: Factorial Division
 [code-task title="Factorial Division" taskId="java-fund-1-Methods-Factorial-Division" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -959,12 +955,12 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
+## Descriere
 Citiți **2 numere întregi**.
 
 Calculați **factorialul** fiecărui număr.
 
-**Împărțiți primul rezultat la al doilea** și se afișează **câtul rotunjit la a doua** zecimală.
+**Împărțiți primul rezultat la al doilea** și imprimați **rezultatul rotunjit la a doua** zecimală**.
 
 ### Exemplu
 | **Date de intrare** | **Date de ieșire** |
@@ -1088,7 +1084,7 @@ Calculați **factorialul** fiecărui număr.
 [/slide]
 
 [slide hideTitle]
-# Problem: Palindrome Integers
+# Problemă: Palindrome Integers
 [code-task title="Palindrome Integers" taskId="java-fund-1-Methods-Palindrome-Integers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1102,10 +1098,9 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
-Un palindrom este un număr care se citește la fel **și invers,** cum ar fii 323 sau 1001.
+## Descriere
 
-Scrieți un program care citește numere întrgi pozitive **până când se citește** "END", iar pentru fiecare număr **se afișează dacă este sau nu palindrom**.
+Creați  un program care citește numere întrgi pozitive **până când primește** "END", iar pentru fiecare număr **imprimă dacă este sau nu palindrom**.
 
 ### Exemplu
 | **Date de intrare** | **Date de ieșire** |
@@ -1261,7 +1256,7 @@ true
 [/slide]
 
 [slide hideTitle]
-# Problem: Top Number
+# Problemă: Top Number
 
 [code-task title="Top Number" taskId="java-fund-1-Methods-Top-Number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1276,12 +1271,12 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
-Un **număr top** este un număr întreg cu următoarele proprietăți:
+## Descriere
+Un **număr de top** este un număr întreg cu următoarele proprietăți:
 - Suma cifrelor sale este divizibilă cu 8, e.g. 8, 16, 88
-- Are cel puțin o cifră impară, e.g. 232, 707, 87578
+- Are cel puțin o cifră impară, ca de exemplu 232, 707, 87578
 
-Scrieți un program care afișează toae numerele top din intervalul \[1…n\].
+Creați  un program care afișează toate numerele de top din intervalul \[1…n\].
 
 ### Exemplu
 | **Date de intrare** | **Date de ieșire** |

@@ -3,11 +3,13 @@
 [slide hideTitle]
 # Crearea unei metode
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-7-8-Declaring-methods-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 O metodă trebuie declarată într-o clasă.
 
-Este definită cu numele metodei, urmată de paranteze `()`.
+Este definită cu numele metodei, urmată de paranteze **()**.
 
-Java oferă niște metode predefinite, cum ar fii `System.out.println()`, dar puteți sp vă creați propriile metode pentru a face anumite acțiuni:
+Java oferă niște metode predefinite, cum ar fi `System.out.println()`, dar puteți să vă creați propriile metode pentru a face anumite acțiuni:
 
 ```Java
 public class MyClass {
@@ -18,7 +20,7 @@ public class MyClass {
 }
 ```
 
-* `public` definește modul de acces a metodei din exemplu, de unde poate fii accesată în aplicația voastră
+* `public` definește modul de acces a metodei din exemplu, de unde poate fi accesată în aplicația voastră
 
 * `void` înseamnă că această metodă nu are o valoare de returnare
 
@@ -28,11 +30,13 @@ public class MyClass {
 [/slide]
 
 [slide hideTitle]
+
 # Apelarea unei metode (invocarea)
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-9-10-Invoking-a-method-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Pentru a apela o metodă în Java, scriem numele metodei, urmată de cele două paranteze și apoi de punct și virgulă **;**.
+Pentru a apela sau a invoca o metodă în Java, scriem numele metodei, urmat de cele două paranteze **()** și de un punct și virgulă **;**.
 
-În următorul exemplu, `printHello()` este folosit pentru a afișa un text (acțiunea), când este apelată:
+În următorul exemplu, `printHello()` este folosit pentru a afișa textul `Hello World!`, atunci când este apelat:
 
 ```java live no-template
 public class MyClass {
@@ -46,7 +50,7 @@ public class MyClass {
 }
 ```
 
-A method can also be called multiple times:
+O metodă poate fi apelată de mai multe ori:
 
 ```java live no-template
 public class MyClass {

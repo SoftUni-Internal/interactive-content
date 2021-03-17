@@ -1,8 +1,9 @@
-# String Type
+# Tipul Șir
 
 [slide hideTitle]
 
-# The String Data Type
+# Tipul de date Șir
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-45-48-string-data-type-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Șirurile sunt utilizate pentru stocarea textului.
 
@@ -15,8 +16,28 @@ Creați o variabilă de tip **Șir** și atribuiți-i o valoare:
 String greeting = "Hello";
 System.out.println(greeting);
 ```
+## Formatarea șirului
 
-## Concatenare șir
+```Java live
+String secret = "loves metal music";
+String name = "Tom";
+String secretRevealed = String.format("%s has a secret, he %s.", name, secret);
+System.out.println(secretRevealed);
+```
+
+Puteți folosi `String.format` pentru a insera valorile unei variabile șir într-un alt șir.
+
+## Exemplu: Saying Hello
+
+Iată cum putem combina prenumele și numele unei persoane pentru a imprima numele complet al acesteia.
+
+```Java live
+String firstName = "John";
+String lastName = "Smith";
+String fullName = String.format("%s %s", firstName, lastName);
+System.out.printf("Your full name is %s.", fullName);
+
+## Concatenarea șirului
 
 Operatorul `+` poate fi folosit între șiruri pentru a le combina. Aceasta se numește concatenare:
 
@@ -28,28 +49,11 @@ System.out.println(firstName + " " + lastName);
 
 * Rețineți că am adăugat un text gol `(" ")` pentru a crea un spațiu între prenume și prenume pe tipărire
 
-## Șirurile de format inserează valori variabile după model
-
-```Java live
-String firstName = "John";
-String lastName = "Smith";
-String fullName = String.format("%s %s", firstName, lastName);
-System.out.println(fullName);
-```
-
-## Combinând numele unei persoane pentru a obține numele complet
-
-```Java live
-String firstName = "John";
-String lastName = "Smith";
-String fullName = String.format("%s %s", firstName, lastName);
-System.out.printf("Your full name is %s.", fullName);
-```
 
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Concat Names
+# Problemă cu soluție: Concat Names
 [code-task title="Concat Names" taskId="java-fund-1-data-types-lab-concat-names" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

@@ -1,24 +1,24 @@
-# Lesson Introduction
+# Introducere
 [slide hideTitle]
-# Lesson Content
+# Conținutul lecției
 
-## In this lesson you will learn:
+## În această lecție veți învăța:
 
-**1. Ce este o metodă?**
+**1. Metode**
 
 - Ce este o metodă
 
 - De ce folosim metodele
 
-**2. Convențile de denumire** 
+**2. Denumirea și cele mai bune practici** 
 
 - Metode de denumire
 
 - Metode de denumire cu parametrii
 
-- Practici corespunzătoare
+- Cdele mai bune practici
 
-**3. Declarând și invocând metode**
+**3. Declararea și invocarea metodelor**
 
 - Cum declarăm metode
 
@@ -26,13 +26,13 @@
 
 **4. Metode cu parametrii**
 
-- Prezentarea metodei cu parametrii
+- Prezentarea metodelor care acceptă parametri
 
 **5. Returnarea de valori de la metode**
 
 - Cum folosim valoarea "return"
 
-**6. Tip de valori vs tip de referințe**
+**6. Tipul de valori vs tipul de referințe**
 
 - Tipuri de valori vs Tipuri de referințe
 
@@ -40,7 +40,7 @@
 
 **7. Metode de supraîncărcare**
 
-- Ce este "Method Overloading"
+- Ce reprezintă "Supraîncărcarea metodei"
 
 **8. Fluxul de execuție a programului**
 

@@ -2,12 +2,13 @@
 
 [slide hideTitle]
 # Definiție
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-3-4-What-are-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Ști deja cum să stocaţi date individuale într-o singură variabilă. Matricele ne permit să stocăm mai multe date, din nou, într-o singură variabilă.
+**Matricele** ne permit să stocăm mai multe date într-o singură variabilă.
 
-Matricele sunt utile pentru păstrarea unei secvențe de date și repetarea lor.
+Matricele sunt utile pentru păstrarea unei secvențe de date și repetarea acesteia.
 
-Acestea sunt încadrate între paranteze cretate, iar valorile din interiorul acesteia sunt separate printr-o virgulă.
+Puteți inițializa o **matrice** și să setați valorile înăuntrul ei prin încadrarea acestora între acolade, separând valorile prin virgule. 
 
 ``` java
 String[] days = { "apple", "pear", "cherry" };
@@ -19,7 +20,7 @@ O singură matrice poate conține valori duplicate.
 int[] numbers = { 1, 1, 2, 4, 5 };
 ```
 
-Valorile dintr-o matrice se numesc elemente.
+Valorile dintr-o matrice se numesc **elemente**.
 
 ## Exemplu din viața reală
 
@@ -33,22 +34,22 @@ Uitați-vă la această imagine:
 
 Există **7 vagoane (elemente)**. Fiecare are  **pasageri (o valoare)**. \{3, 4, 10, 7, 5, 0, 6\}
 
-Matricele sunt **baza** pentru alt etipuri de date abstracte precum  **list**, **stack**, **queue**.
+Matricele sunt **baza** pentru alte tipuri de date abstracte precum  **list**, **stack**, **queue**.
 
-Veți afla despre aceste structuri în cursurile următoare.
 
 [/slide]
 
 [slide hideTitle]
-# Cum lucră cu matricele
+# Cum să lucrați cu matricele
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-5-working-with-arrays-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Matricele sunt utilizate pentru stocarea mai multor valori într-o singură variabilă, în loc pentru  declararea variabilor separate pentru fiecare valoare.
+Matricele sunt utilizate pentru stocarea mai multor valori într-o singură variabilă, în loc de declararea variabilelor separate pentru fiecare valoare.
 
 Matricele au o dimensiune fixă. Aceasta înseamnă că nu pot fi redimensionate.
 
 Elementele sunt întotdeauna de **același tip**.
 
-Indicile matricelor sunt numerotate de la from **0** la **lungime-1**.
+Indecșii matricelor sunt numerotați de la **0** la **length - 1**.
 
 **Exemplu:**
 ```Java live
@@ -74,13 +75,13 @@ Mai jos avem câteva explicații despre exemplul pe care îl puteți vedea mai s
 
 **Alocăm** o matrice cu 5 numere întregi.
 
-Apoi **inițializăm** matricele, dar toate valorile sunt 0, deoarece valoarea sa implicită este zero.
+Apoi **inițializăm** matricele, dar toate valorile sunt 0, deoarece valoarea implicită a  **int** este zero.
 
 **Atribuim** o valoare elementelor matricei.
 
 Lungimea conține numărul elementelor matricei.
 
-In for-loop noi folosim `i < numbers.length` deoarece indexurile matricei sunt bazate pe zero, ceea ce înseamnă că primul index al unei matrice este 0, iar ultimul element este `numbers[4]`.
+În bucla for folosim `i < numbers.length`, deoarece indecșii matricei sunt bazate pe zero, ceea ce înseamnă că primul index al unei matrice este 0, iar ultimul element este `numbers[4]`.
 
 **Accesarea** elementelor matricei după index.
 
@@ -96,7 +97,9 @@ Dacă încercăm să accesăm elementul de pe un index nevalid, vom obține o ex
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Day of Week
+# Problemă cu soluție: Day of Week
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-6-7-problem-and-solution-day-of-week-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 [code-task title="Day of Week" taskId="java-fund-1-arrays-lab-day-of-week" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -125,10 +128,10 @@ Utilizați o **matrice de șiruri**.
 | 7 | Sunday |
 | 0 | Invalid day! |
 
-## Sugestii
-* Utilizați o matrice de șiruri care conțin numele zilei: `{Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday}`
+## Sfaturi
+* Utilizați o matrice de șiruri care conține numele zilelor: `{Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday}`
 
-* Imprimați elementul la indexul \(day-1\) atunci când este în intervalul \[1…7\] sau "**Invalid Day!**" in caz contrar
+* Imprimați elementul la indexul \(day-1\), atunci când este în intervalul \[1…7\] sau "**Invalid Day!**" in caz contrar
 
 
 [/task-description]
@@ -237,6 +240,8 @@ Invalid day!
 [slide hideTitle]
 # Problem with Solution: Sum Even Numbers
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-problem-and-solution-sum-even-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Sum Even Numbers" taskId="java-fund-1-arrays-lab-sum-even-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -252,10 +257,10 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Citiți o matrice de pe consolă și adunați doar numerele pare/Even/.
+Citiți o matrice de pe consolă și adunați doar numerele pare.
 
 ## Exemple
-|**Input**|**Output**|**Comments**|
+|**Intrare**|**Ieșire**|**Comentarii**|
 |-----|------|------|
 | 1 2 3 4 5 6 | 12|
 | 3 5 7 9 | 0 |

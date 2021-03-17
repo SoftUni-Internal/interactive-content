@@ -2,13 +2,13 @@
 # Rezumat
 
 ## În această lecție ați învățat:
-- Listă - structură de date care conține o succesiune de elemente
-- They are resizable
-- Inițializarea unei liste - `new ArrayList<E>()`
+- Listele sunt structuri de date care conțin o secvență de elemente
+- Acestea pot fi redimensionate
+- Inițializarea unei liste prin folosirea `new ArrayList<E>()`
 ``` java
 List<String> names = new ArrayList<>();
 ```
-- Lists methods
+- Metodele pentru liiste
     - `add()`, `remove()`, `set()`
     - `get()`, `contains()`, `size()`
     ``` java
@@ -29,10 +29,10 @@ List<Integer> list = new ArrayList<>(); // Then we initialize our list
 ``` java
 for (int i = 0; i < n; i++) { 
 
-    // read the element from the console        
+    // citește elementul de pe consolă      
     int number = Integer.parseInt(scanner.nextLine()); 
 
-    // add the element to the List        
+    // adaugă elementul la listă        
     list.add(number); 
 }
 ```
@@ -47,14 +47,13 @@ List<Integer> items = Arrays
         .collect(Collectors.toList()); // convert to List
 ```
 
-- Sortarea Listelor și a Matricelor - `Collections.sort()`, `Arrays.sort()`
+- Sortarea Listelor în ordine crescătoare prin - `Collections.sort()`, `Arrays.sort()` sau prin  `Collections.reverse()` pentru sortarea în ordine descrescăto
 
-``` java
+```java
 List<String> names = new ArrayList<>(Arrays.asList("Peter", "Michael", "George", "Victor", "John", "Alexander"));
 
-Collections.sort(names); // sort in ascending (alphabetical) order
-
-System.out.println(String.join(", ", names)
+Collections.sort(names);
+Collections.reverse(names);
 ```
 
 [/slide]

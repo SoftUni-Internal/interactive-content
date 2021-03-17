@@ -2,11 +2,9 @@
 
 [slide hideTitle]
 # Citirea matricelor
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-8-9-10-11-Reading-An-Array-and-demos-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-
-Nu există nicio posibilitate directă de a prelua matrice în Java folosind Scanner sau orice alt instrument, dar este destul de ușor să obțineți același lucru folosind metode standard **Scanner** și adresând câteva întrebări utilizatorului.
-
-De exemplu, dacă doriți să utilizați o **matrice de șir** ca intrare, aveți nevoie de **lungimea** matricei și apoi puteți utiliza o buclă (loop) pentru a recupera mai multe elemente și a le stoca într-o matrice.
+Unul dintre modurile în care putem citi o matrice este prin primirea ** lungimii ** sale și folosirea acelei ** lungimi ** într-o ** bucla for ** pentru a primi elementele și a le stoca în fiecare index al matricei.
 
 ```java
 //accept n - length of the array
@@ -34,19 +32,19 @@ for (int i = 0; i < items.length; i++){
   arr[i] = Integer.parseInt(items[i]);
 }
 ```
-First, we read the numbers from the console and split them by the empty spaces between them.
+Mai întâi, citim numerele de pe consolă și le împărțim după spațiile goale dintre ele.
 
-Then we initialize a new array with a length equal to the number of elements we read. 
+Apoi inițializăm o nouă matrice cu o lungime egală cu numărul de elemente pe care le citim.
 
-Finally, using a for loop we insert all the values into the array.
+În cele din urmă, folosind o buclă for, inserăm toate valorile în matrice.
 
-We can read an array of integers using `java.util.Arrays;` which is a `class` in Java that allows you to create and manipulate arrays.
+Putem citi o serie de numere întregi folosind `java.util.Arrays;` care este o „clasă” în Java care vă permite să creați și să manipulați matrice.
 
-We are going to learn about **classes** later in this course, but if you are curious feel free to google it.
+Vom învăța despre ** clase ** mai târziu în acest curs, dar dacă sunteți curioși, nu ezitați să-l faceți google.
 
-## A Shorter Way to Read Arrays
+## Un mod mai scurt pentru a citi matricele
 
-Here is a much shorter way to read an input and create an array from it.
+Aici pute'i vedea un mod mult mai scurt pentru a citi intrarea și a crea o matrice din aceasta.
 
 ```Java
 String inputLine = sc.nextLine();
@@ -61,23 +59,25 @@ int[] arr = Arrays
   .toArray();                  
 ```
 
-We are first reading the input from the console as a string using `scanner.nextLine()`. 
+Citim mai întâi intrarea de pe consolă ca un șir folosind `scanner.nextLine ()`.
 
-Then we split the input by space using `split(" ")`.
+Apoi împărțim intrarea prin spațiu folosind `split (" ")`.
 
-We continue by parsing each string to integer values with `mapToInt(Integer::parseInt)`.
+Continuăm parsând fiecare șir la valori întregi cu `mapToInt (Integer :: parseInt)`.
 
-Finally, we convert the result to an array.
+În cele din urmă, convertim rezultatul într-o matrice.
+
 [/slide]
 
 [slide hideTitle]
-# Imprimarea matricei folosind for-loop
+# Imprimarea matricei 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-12-Printing-Arrays-to-the-console-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Pentru a imprima toate elementele a unei este utlizat instrumentul `for` loop.
+Pentru a imprima toate elementele a unei matrice, utilizăm o **bucla for**.
 
-În timp ce imprimăm fiecare element, putem folosi un spațiu alb sau o linie nouă, pentru a le împărți.
+În timp ce imprimăm fiecare element, putem folosi **un spațiu alb** sau **o linie nouă**, pentru a le împărți.
 
-Avem mai jos un exemplu:
+Vedeți exemplul de mai jos:
 
 ```Java live
 String[] arr = {"one", "two"};
@@ -90,7 +90,10 @@ for (int i = 0; i < arr.length; i++) {
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Reverse an Array of Integers
+# Problemă cu soluție: Reverse an Array of Integers
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-13-14-problem-and-solution-print-numbers-in-reverse-order-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Reverse an Array of Integers" taskId="java-fund-1-arrays-lab-reverse-array-of-integers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
@@ -107,17 +110,17 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Citiți numere n și imprimați-le în ordine inversă, separate printr-un singur spațiu.
+Citiți numere **n** și imprimați-le în ordine inversă, separate printr-un singur spațiu.
 
 ## Exemple
-|**Input**|**Output**|
+|**Intrare**|**Ieșire**|
 |-----|------|
 | 3 | 30 20 10 |
 | 10 | |
 | 20 | |
 | 30 | |
 
-|**Input**|**Output**|
+|**Intrare**|**Ieșire**|
 |-----|------|
 | 3 | 10 20 30 |
 | 30 | |
@@ -206,16 +209,19 @@ Citiți numere n și imprimați-le în ordine inversă, separate printr-un singu
 [slide hideTitle]
 # Imprimarea Matricei folosind String.join()
 
-Utilizați `String.join(x, y)`, unde x este  **separatorul** și **y este matricea** pe care dorim să o imprimăm. 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-15-printing-arrays-with-for-string.join-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-`String.join(…)` funcționează numai cu `String`:
+
+Utilizați `String.join(x, y)`, unde **x** este  **separatorul** și **y** este matricea  pe care doriți să o imprimați. 
+
+`String.join(…)` funcționează numai cu `șiruri`:
 
 ```Java live
 String[] strings = { "one", "two" };
 System.out.println(String.join(" ", strings));
 ```
 
-Dacă încercăm să tipărim int, vom primi o eroare:
+Dacă încercăm să tipărim o matrice de tipul **int**, vom primi o eroare:
 
 ```Java live
 int[] arr = { 1, 2, 3 };
@@ -224,7 +230,10 @@ System.out.println(String.join(" ", arr));
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Reverse an Array of Strings
+# Problemă cu soluție: Reverse an Array of Strings
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-16-17-problem-and-solution-reverse-an-array-of-strings-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 [code-task title="Reverse an Array of Strings" taskId="java-fund-1-arrays-lab-reverse-an-array-of-strings" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -241,26 +250,26 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program pentru a citi o **matrice de șiruri**, inversați-le și **imprimați** elementele sale.
+Creați un program care citește o **matrice de șiruri**, o inversează și **imprimă** elementele sale.
 
-Intrarea constă dintr-o secvență de șiruri separate de spațiu.
+Intrarea constă dintr-o secvență de **șiruri** separate de spațiu.
 
 Imprimați ieșirea pe o singură linie \(separate prin spațiu\).
 
 ## Exemplu
-|**Input**|**Output**|
+|**Intrare**|**Ieșire**|
 |-----|------|
 | a b c d e | e d c b a |
 |-1 hi ho w | w ho hi -1 |
 
 
-## Sugestii
+## Sfaturi
 
 * Citiți matricea de șiruri
 
 * **Schimbați**  **primul** element \(at index 0\) cu **ultimul** element \(at index n-1\)
 
-* **Schimbați**  **al doilea** element \(at index 1\) cu **înainte de ultimul** element\(at index n-2\)
+* **Schimbați**  **al doilea** element \(at index 1\) cu **penultimul** element\(at index n-2\)
 
 * Continuați în același mod până când ajungeți la mijlocul matricei
 
@@ -320,7 +329,9 @@ f60 e50 d40 c30 b20 a10
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Equal Arrays
+# Problemă cu soluție: Equal Arrays
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-problem-and-solution-equal-arrays-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Equal Arrays" taskId="java-fund-1-Arrays-lab-Equal-Arrays" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -348,12 +359,12 @@ Dacă matricile sunt identice, găsiți **suma primei** și imprimați pe consol
 "**Arrays are not identical. Found difference at** \{index\} **index.**"
 
 ## Exemple
-|**Input**|**Output**|
+|**Intrare**|**Ieșire**|
 |-----|------|------|
 | 10 20 30 | Arrays are identical. Sum: 60|
 | 10 20 30 | |
 
-|**Input**|**Output**|
+|**Intrare**|**Ieșire**|
 |-----|------|------|
 | 1 2 3 4 5 | Arrays are not identical. Found difference at 2 index.|
 | 1 2 4 3 5 | |

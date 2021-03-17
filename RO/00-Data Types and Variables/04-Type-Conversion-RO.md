@@ -1,10 +1,12 @@
-# Type Conversion
+# Conversia tipului
 
 [slide hideTitle]
 
-# Type Conversion
+# Conversia tipului
 
-Când atribuiți valorii unui tip de date altuia, este posibil ca cele două tipuri să nu fie compatibile între ele.
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-30-31-type-conversion-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+Când atribuiți valoarea  unui tip de date altuia, este posibil ca cele două tipuri să nu fie compatibile între ele.
 
 Dacă tipurile de date sunt compatibile, atunci Java va efectua conversia cunoscută automat sub numele de Conversie automată de tip și, dacă nu, atunci trebuie să fie exprimate sau convertite în mod explicit.
 
@@ -43,7 +45,8 @@ Prin urmare, există pierderea de date. Acesta este motivul pentru care acest ti
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Centuries to Minutes
+# Problemă cu soluție: Centuries to Minutes
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-33-problem-and-solution-centuries-to-minutes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Centuries to Minutes" taskId="java-fund-1-data-types-lab-centuries-to-minutes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -63,7 +66,8 @@ public class Main {
 
 ## Descriere
 
-Scrieți programul pentru a introduce un număr întreg de **secole** și convertiți-l în **ani**, **zile**, **ore** și **minute**.
+Creați un program care aceptă un număr **int** de **secole** și le convertește în **ani**,**zile**, **ore** și **minute**.
+Intrarea va fi de tipul **int**. 
 
 ## Exemple
 
@@ -137,7 +141,10 @@ Scrieți programul pentru a introduce un număr întreg de **secole** și conver
 
 
 [slide hideTitle]
-# Problem with Solution: Chars to String
+# Problemă cu soluție: Chars to String
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-problem-and-solution-chars-to-string-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 [code-task title="Chars to String" taskId="java-fund-1-data-types-lab-chars-to-string" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -157,9 +164,9 @@ public class Main {
 
 ## Descriere
 
-Scrieți un program care citește 3 linii de intrare.
+Creați un program care citește 3 linii de intrare.
 
-Pe fiecare linie primești un singur personaj.
+Pe fiecare linie primiți un singur personaj.
 
 Combinați toate caracterele într-un singur șir și imprimați-le pe consolă.
 
@@ -266,8 +273,9 @@ b
 
 
 [slide hideTitle]
-# Problem with Solution: Lower or Upper
-
+# Problemă cu soluție: Lower or Upper
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-problem-and-solution-low
+er-or-upper-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 [code-task title="Lower or Upper" taskId="java-fund-1-data-types-lab-lower-or-upper" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -282,7 +290,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care imprimă dacă un caracter dat este cu majuscule sau minuscule.
+Creați un program care imprimă dacă un caracter dat este scris cu majuscule sau minuscule.
 
 ## Exemple
 |**Intrare**|**Ieșire**|

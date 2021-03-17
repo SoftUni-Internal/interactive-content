@@ -1,8 +1,10 @@
-# Lesson Introduction
-
+# Introducere
 [slide hideTitle]
 
-# Lesson Content
+# Conținutul lecției
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-1-2-Introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 ## În această lecție veți afla despre:
 
@@ -16,13 +18,13 @@
 
 **2. Citirea matricelor de pe consolă**
 
-- Reading an array from the console
+- Citirea matricelor de pe consolă
 
-- Printing an array to the console
+- Imprimarea unei matrice pe consolă
 
-**3. Foreach Loop**
+**3.Bucla Foreach**
 
-- Imprimarea matricei cu ForEach loop
+- Imprimarea matricei cu bucla ForEach 
 
 
 [/slide]

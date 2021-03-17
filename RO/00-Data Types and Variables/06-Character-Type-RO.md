@@ -1,19 +1,20 @@
-# Character Type
+# Tipul Caracter
 
 [slide hideTitle]
 
-# Tipul Caracterului
+# Tipul Caracter
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-38-40-character-type-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Tipul de date char este utilizat pentru a stoca un caracter**unic**.
+Tipul de date char este utilizat pentru a stoca un **singur** caracter
 
-Personajul trebuie să fie înconjurat de ghilimele unice, cum ar fi `'A'` sau `'c'`.
+Caracterul ar trebui să fie înconjurat de ghilimele unice, cum ar fi `'A'` sau `'c'`.
 
 ```java live
 char myGrade = 'B';
 System.out.println(myGrade);
 ```
 
-De asemenea, personajul:
+De asemenea, tipul de date caracter:
 
 * Oferă fiecărui simbol un cod întreg corespunzător
 
@@ -44,9 +45,9 @@ Vă încurajăm să îl cercetați singur!
 
 ## Characters and Unicode
 
-There is an integer value behind each character. 
+Există o valoare întreagă în spatele fiecărui caracter.
 
-This value corresponds to a letter in the Unicode table.
+Această valoare corespunde unei litere din tabelul Unicode.
 
 ```java live
 char ch = 'a';
@@ -59,13 +60,15 @@ ch = 'щ';
 System.out.printf("'%c' is: %d%n", ch, (int) ch);
 ```
 
-The Unicode table is separated into different parts and almost all living languages are represented in it.
+Tabelul Unicode este separat în diferite părți și aproape toate limbile vii sunt reprezentate în acesta.
 
 [/slide]
 
 
 [slide hideTitle]
-# Problem with Solution: Reversed Chars
+# Problemă cu soluție: Reversed Chars
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-41-problem-and-solution-reversed-chars-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Reversed Chars" taskId="java-fund-1-data-types-lab-reversed-chars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -81,16 +84,15 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that accepts an input of 3 lines of characters and prints them in reversed order with a space between them.
-
-## Examples
-|**Input**|**Output**|
+Creați un program care acceptă o intrare de 3 linii de caractere și le imprimă în ordine inversată și cu spații între ele. 
+## Exemple
+|**Intrare**|**Ieșire**|
 |-----|------|
 | A | C B A |
 | B |  |
 | C |  |
 
-|**Input**|**Output**|
+|**Intrare**|**Ieșire**|
 |-----|------|
 | 1 | & L 1 |
 | L |  |
@@ -165,34 +167,39 @@ a
 [/slide]
 
 [slide hideTitle]
-# Caracterele Scăpate
-Deoarece șirurile trebuie scrise între ghilimele, Java va înțelege greșit acest șir și va genera o eroare:
+# Caractere evadate
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-43-escaping-characters-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+Fiecare limbaj de programare, inclusiv Java, are câteva caractere rezervate care nu pot fi utilizate direct.
+
+Un exemplu în acest sens îl reprezintă ghilimelele duble în șiruri care ar trebui evitate.
+
 
 ```Java
 String txt = "We are the so-called "Vikings" from the north.";
 ```
 
-Soluția pentru a evita această problemă este să folosiți caracterul de ieșire inversă.
+
+Pentru evita această problemă, adăugăm o bară inversă \ (\\\), care este utilizată ca caracter de evadare
 
 Caracterul de bară inversă \(\\\) transformă caracterele speciale în caractere șir:
 
-**Caracter de Scăpare**:
+**Caractere de evadare
 
-|Escape Sequence |Character| Description|
+|Secvență de evadare |Caracter| Descriere|
 |-----|--------|--------|
-|\\'|**'**       |Single quote|
-|\\"  |**''**      |Double quote|
-|\\\  |**\\**     |Backslash|
+|\\'|**'**       |Ghilimele singulare|
+|\\"  |**''**      |Ghilimele duble|
+|\\\  |**\\**     |Bară oblică|
 
 
-Secvența `\"` inserează un ghilimel dublu într-un șir:
+Secvența `\"` inserează ghilimele duble într-un șir:
 
 ```Java live
 String txt = "We are the so-called \"Vikings\" from the north.";
 System.out.println(txt);
 ```
 
-Secvența `\'` inserează un singur ghilimel într-un șir:
+Secvența `\'` inserează ghilimele unice într-un șir:
 
 ```Java live
 String txt = "It\'s alright.";
@@ -209,9 +216,8 @@ System.out.println(txt);
 [/slide]
 
 [slide hideTitle]
-# Character Literals
-
-Character literals are all the character expressions that are embedded in Java. 
+# Caractere literale
+Caracterele literale sunt toate expresiile de caractere care sunt încorporate în Java. 
 
 ```java
 char symbol = 'a'; // An ordinary character

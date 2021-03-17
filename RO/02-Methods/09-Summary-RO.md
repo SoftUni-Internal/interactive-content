@@ -12,7 +12,7 @@ public static void printText(String text) {
 }
 ```
 
-- Metodele sunt formate din **declarație** și **cuprins**
+- Metodele sunt formate din **declarație** și **corp**
 
 - Metodele sunt invocate prin `name` + `()`
 
@@ -33,16 +33,15 @@ static void printNumbers(int start, int end) {
 ```
 - Metodele pot **returna o valoare** sau nimic - `void`
 
-- You can **overload** methods by declaring a new method with the same name but a different type or number of parameters
-
-- The call stack - stores information about the active methods and the point where execution should return to after a method completes its task
+- Puteți **supraîncărca** metodele prin declararea unei noi metode cu același nume, dar cu tipul diferit sau cu un număr diferit de parametri
+- Stiva de apel - stochează informații despre metodele active și punctul în care execuția ar trebui să revină după ce o metodă își finalizează sarcina
 
 ## În următoarea lecție vei învăța:
 
 - Ce sunt **Listele** în Java
 - **Manipularea listelor**
-- **Citirea listelor** din Consolă
-- **Sortarea de liste și mulțimi**
+- **Citirea listelor** de pe consolă
+- **Sortarea de liste și matrice**
 
 
 [/slide]

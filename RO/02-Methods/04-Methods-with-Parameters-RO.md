@@ -1,7 +1,8 @@
 [slide hideTitle]
 # Parametrii metodelor
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-16-17-18-Methods-with-parameters-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Informația poate fii **transmisă** metodelor ca parametru. 
+Informațiile pot fi **transmise** metodelor ca **parametri**. 
 
 Parametrii se comportă ca **variabile** înăuntrul unei metode.
 
@@ -9,9 +10,9 @@ Parametrii sunt specificați după numele metodei, **între paranteze**.
 
 Puteți adăuga **câți** parametrii doriți, doar să-i **separați** prin virgule.
 
-Următorul exemplu are o metodă ce ia un `String` numit `firstName` ca parametru.
+Următorul exemplu are o metodă ce preia un **șir** numit **firstName** ca parametru.
 
-Când metoda este apelată, îi dăm un nume, care este folosit în interiorul metodei pentru a afișa întregul nume:
+Când metoda este apelată, trecem paramterul  **firstName**, care este folosit în interiorul metodei pentru a afișa întregul nume:
 
 ```java live no-template
 public class MyClass {
@@ -27,9 +28,9 @@ public class MyClass {
 }
 ```
 
-Puteți pasa unul sau mai mulți parametrii.
+Puteți trece unul sau mai mulți parametrii.
 
-Puteți pasa parametrii de diferite tipuri.
+Puteți trece parametrii de diferite tipuri.
 
 Fiecare parametru are un nume și un tip.
 
@@ -43,7 +44,7 @@ public static void printStudent(String name, int age, double grade) {
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Sign of Integer
+# Problemă cu soluție: Sign of Integer
 [code-task title="Sign of Integer" taskId="java-fund-1-Methods-lab-Sign-of-Integer" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -57,8 +58,8 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
-Creați o metodă care afișează semnul unui număr întreg.
+## Descriere
+Creați o metodă care verifică dacă un număr dat este pozitiv, negativ sau zero și imprimă rezultatul pe consolă.
 
 ## Exemple
 | **Date de intrare** | **Date de ieșire** |
@@ -100,7 +101,7 @@ The number 0 is zero.
 
 
 [slide hideTitle]
-# Problem with Solution: Grades
+# Problemă cu soluție: Grades
 [code-task title="Grades" taskId="java-fund-1-lab-Methods-Grades" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -114,8 +115,8 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
-Scrieți o metodă **care primește** o notă între **2.00** și **6.00** și **afișează nota corespunzătoare în cuvinte**:
+## Descriere
+Scrieți o metodă **care primește** o notă între **2.00** și **6.00** și ** imprimă nota corespunzătoare în cuvinte**:
 
 * 2.00 – 2.99 - "Fail"
 * 3.00 – 3.49 - "Poor"
@@ -123,7 +124,7 @@ Scrieți o metodă **care primește** o notă între **2.00** și **6.00** și *
 * 4.50 – 5.49 - "Very good"
 * 5.50 – 6.00 - "Excellent"
 
-## Examples
+## Exemple
 | **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | 3.33 | Poor |
@@ -203,7 +204,10 @@ Fail
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Printing Triangle
+# Problemă cu soluție: Printing Triangle
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-23-problem-and-solution-printing-triangle-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Printing Triangle" taskId="java-fund-1-Methods-lab-Printing-Triangle" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -217,7 +221,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
+## Descriere
 Creați o metodă pentru a afișa triunghiuri ca în exemplul de mai jos:
 
 ## Exemple
@@ -384,7 +388,10 @@ Creați o metodă pentru a afișa triunghiuri ca în exemplul de mai jos:
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Calculations
+# Problemă cu soluție: Calculations
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-problem-and-solution-calculations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Calculations" taskId="java-fund-1-Methods-Calculations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -398,12 +405,12 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
-Scrieți un program care primește un **șir** pe prima linie \(adunare, înmulțire, diferență, împărțire\) și pe următoarele 2 linii primește **2 numere**.
+## Descriere
+Creați un program care primește un **șir** pe prima linie \(adunare, înmulțire, scădere, împărțire\) și pe următoarele 2 linii primește **2 numere**.
 
 Creați 4 **metode** \(pentru fiecare operație\) și s-o invocați pe cea corectă în funcție de comandă.
 
-Metoda ar trebui să afișeze și rezultatul \(trebuie să fie nul\)
+Metoda ar trebui să imprimă și rezultatul \(trebuie să fie de tipul void\)
 
 ## Exemple
 | **Date de intrare** | **Date de ieșire** |

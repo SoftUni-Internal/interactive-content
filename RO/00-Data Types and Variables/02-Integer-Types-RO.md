@@ -1,7 +1,8 @@
 [slide hideTitle]
 # Tipuri întregi
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-12-13-Integer-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Tipuri întregi**stochează numere întregi, pozitive sau negative (cum ar fi 123 sau -456), fără zecimale.
+**Tipurile întregi**stochează numere întregi, pozitive sau negative (cum ar fi 123 sau -456), fără zecimale.
 
 Tipurile valide sunt **byte**, **short**, **int** și **long**, tipul pe care ar trebui să îl utilizați, depinde de valoarea numerică.
 
@@ -15,7 +16,7 @@ Tipurile valide sunt **byte**, **short**, **int** și **long**, tipul pe care ar
 [/slide]
 
 [slide hideTitle]
-# Example: Centuries
+# Exemplu: Centuries
 
 ```java live
 byte centuries = 20; 
@@ -28,9 +29,9 @@ System.out.printf("%d centuries = %d years = %d days = %d hours.",
 //20 centuries = 2000 years = 730484 days = 17531616 hours.
 ```
 
-We can use different integer types, depending on what we want to store in them. 
+Putem folosi diferite tipuri întregi, în funcție de ceea ce dorim să stocăm în ele.  
 
-- Tipul de date **Byte** poate stoca numere întregi de la -128 la 127
+- Tipul de date **byte** poate stoca numere întregi de la -128 la 127
 
 Acest lucru poate fi folosit în loc de **int** sau alte tipuri întregi pentru a salva memoria atunci când sunteți sigur că valoarea va fi cuprinsă între -128 și 127:
 
@@ -39,14 +40,14 @@ byte myNum = 100;
 System.out.println(myNum);
 ```
 
-- **Short** tipul de date poate stoca numere întregi de la -32768 la 32767:
+- Tipul de date **Short**  de date poate stoca numere întregi de la -32768 la 32767:
 
 ```java live
 short myNum = 5000;
 System.out.println(myNum);
 ```
 
-- **Int** tipul de date poate stoca numere întregi de la -2147483648 la 2147483647
+- Tipul de date **Int**  poate stoca numere întregi de la -2147483648 la 2147483647
 
 În general și în cursul nostru, tipul de date **int** este tipul de date preferat atunci când creăm variabile cu o valoare numerică.
 
@@ -56,7 +57,7 @@ int myNum = 100000;
 System.out.println(myNum);
 ```
 
-- **Long** tipul de date poate stoca numere întregi de la -9223372036854775808 la 9223372036854775807.
+- Tipul de date **Long**  poate stoca numere întregi de la -9223372036854775808 la 9223372036854775807.
 
 Acesta este utilizat atunci când un int nu este suficient de mare pentru a stoca valoarea.
 
@@ -73,11 +74,12 @@ System.out.println(myNum);
 [slide hideTitle]
 # Integer Overflow
 
-All integers have a range - a minimum and maximum value. 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-15-Integer-overflow-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-This means that integers can overflow, resulting in incorrect values. 
+Toate numerele întregi au interval - o valoare minimă și una maximă. 
 
-Take a look at the below example.
+Acest lucru înseamnă că intervalul numerelor întregi pate fi depășit, ceea ce poate rezulta în valori incorecte.
+Aruncați o privire la exemplul de mai jos.
 
 ```java
 byte counter = 0;
@@ -104,30 +106,32 @@ This is what we mean by **integer overflow** and it is precisely the reason why 
 
 [slide hideTitle]
 # Integer Literals
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-16-integer-literals-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Integer literals are numbers, which do not have a floating point part. 
+Literele întregi sunt numere, care nu au o parte în virgulă mobilă.
 
-**541** is a literal value by that definition.
+** 541 ** este o valoare literală prin acea definiție.
 
-They can be represented in a few different ways, which are not as intuitive:
+Ele pot fi reprezentate în câteva moduri diferite, care nu sunt la fel de intuitive:
 
-- **hexadecimal integer literals** - values beginning with **0x** and **OX** - **0xFE**, **0xA8F1**, **0xFFFFFFFF**
+- ** Litere întregi hexazecimale ** - valori care încep cu ** 0x ** și ** OX ** - ** 0xFE **, ** 0xA8F1 **, ** 0xFFFFFFFF **
 
-- **long integer literals** - values preceded by the letter **L** or **l** - **9876543L**, **0L**
+- ** Litere întregi lungi ** - valori precedate de litera ** L ** sau ** l ** - ** 9876543L **, ** 0L **```java live
 
 ```java live
-int hexadecimal = 0xA8F1; //43249
-long number = 1L; //1
+int hexadecimal = 0xA8F1; // 43249
+long number = 1L; // 1
 
 System.out.println("hexadecimal: ", hexadecimal);
 System.out.println("long: ", number);
-```
 
 [/slide]
 
 
 [slide hideTitle]
-# Problem with Solution: Convert Meters to Kilometers
+# Problemă cu soluție: Convert Meters to Kilometers
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-17-problem-and-solution-convert-meters-to-kilometers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Problem: Convert Meters to Kilometers" taskId="java-fund-1-data-types-lab-convert-meters-to-kilometers-problem" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

@@ -2,36 +2,38 @@
 
 [slide hideTitle]
 # Citirea Listelor 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-10-11-reading-lists-from-the-console-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- Citirea unei liste folosind bucla `for` și `scanner.nextLine()`
+- Citirea unei liste folosind bucla **for** 
 ```java 
 Scanner scanner = new Scanner(System.in);
 
-    // reading the List size 
+    // citirea dimensiunii litei
 int n = Integer.parseInt(scanner.nextLine()); 
         
-    // initializing empty List of Integers
+    // inișializarea unei lite goale de întregi
 List<Integer> list = new ArrayList<>(); 
 
-    // creating a for loop with the size of the List
+    // crearea unei bucle  for cu dimensiunea listei
 for (int i = 0; i < n; i++) { 
 
-    // read the element from the console        
+    // citirea unui element de pe consolă   
     int number = Integer.parseInt(scanner.nextLine()); 
 
-    // add the element to the List        
+    // adăugarea unui element la listă     
     list.add(number); 
 }
 ```
 [/slide]
 
 [slide hideTitle]
-# Reading from a Single Line
+# Citirea de pe o singură linie
 
-You can read a list as a single line from the console.
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-12-reading-values-from-a-single-line-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Imagine we have an input that consists of several Integer values, separated by spaces. (10 20 30 40 50)
+Puteți citi o listă ca o singură linie pe consolă.
 
+Imaginați-vă că avem o intrare care constă din mai multe valori întregi, separate prin spații. (10 20 30 40 50)
 ``` java
 // input: 10 20 30 40 50
 String values = scanner.nextLine();   
@@ -44,9 +46,11 @@ List<Integer> items = Arrays
 [/slide]
 
 [slide hideTitle]
-# Listele de Tipărire 
+# Imprimarea listelor
 
-**Tipărirea unei liste utilizând o buclă "for"**
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-13-printitng-lists-on-the-console-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+**Imprimarea unei liste utilizând o buclă "for"**
 
 ```java live
 List<String> months = new ArrayList<>(
@@ -57,7 +61,7 @@ for (int index = 0; index < months.size(); index++) {
 }
 ```
 
-**Printing a list using "for-each" loop**
+**Imprimarea unei liste utilizând o buclă "for-each"**
 
 ```java live
 List<String> numbers = new ArrayList<>(
@@ -68,7 +72,7 @@ for (String number : numbers) {
 }
 ```
 
-**Printing a list using a "String.join(…)"**
+**Imprimarea unei liste utilizând "String.join(…)"**
 
 ```java live
 List<String> list = new ArrayList<>(
@@ -79,7 +83,9 @@ System.out.println(String.join(" ", list));
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Sum Adjacent Equal Numbers
+# Problemă cu soluție: Sum Adjacent Equal Numbers
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-14-problem-and-solution-print-adjacent-equal-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sum Adjacent Equal Numbers" taskId="java-1-fund-Lists-lab-Sum-Adjacent-Equal-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -98,14 +104,14 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program pentru a **însuma toate numerele egale adiacente** într-o listă de numere zecimale, începând de la **stânga la dreapta**.
+Creați un program pentru a **însuma toate numerele egale adiacente** într-o listă de numere zecimale, începând de la **stânga la dreapta**.
 
-- După însumarea a două numere, rezultatul obținut ar putea fi egal cu unii dintre vecinii săi și ar trebui să fie însumat și (vezi exemplele de mai jos)
+- După însumarea a două numere, rezultatul obținut ar putea fi egal cu unii dintre vecinii săi și ar trebui, de asemenea, să fie însumat  (vezi exemplele de mai jos)
 
 - Sumați întotdeauna cei doi vecini egali din stânga (dacă sunt disponibile mai multe cupluri de vecini egali)
 
 ## Exemple
-|**Intrare**|**Ieșir** |**Comentarii**|
+|**Intrare**|**Ieșire** |**Comentarii**|
 | --- | --- | --- |
 | 3 3 6 1 | 12 1 | **3 3** 6 1 -> **6 6** 1 -> 12 1 |
 | 8 2 2 4 8 16 | 16 8 16 | 8 **2 2** 4 8 16 -> 8**4 4** 8 16 -> **8 8** 8 16 -> 16 8 16 |
@@ -199,7 +205,9 @@ Scrieți un program pentru a **însuma toate numerele egale adiacente** într-o 
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Gauss' Trick
+# Problemă cu soluție: Gauss' Trick
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-17-problem-and-solution-gauss-trick-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Gauss' Trick" taskId="java-fund-1-Lists-lab-Gauss'-Trick" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -217,7 +225,7 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program care să rezume toate numerele dintr-o listă în următoarea ordine:
+Creați un program care însumează toate numerele într-o listă în ordinea următoare:
 
 - **primul** + **ultimul**, **primul + 1** + **ultimul - 1**, **primul + 2** + **ultimul - 2**, ...**primul + n**, **ultimul - n**
 
@@ -293,7 +301,9 @@ Scrieți un program care să rezume toate numerele dintr-o listă în următoare
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Merging Lists
+# Problemă cu soluție: Merging Lists
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-19-problem-merging-and-solution-lists-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 [code-task title="Merging Lists" taskId="java-fund-1-Lists-lab-Merging-Lists" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

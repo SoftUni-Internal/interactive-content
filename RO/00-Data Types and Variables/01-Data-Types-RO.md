@@ -3,7 +3,9 @@
 [slide hideTitle]
 # Cum funcționează calculatorul?
 
-Un computer este o e **mașină electronică** care procesează informații, cu alte cuvinte, un procesor de informații: preia informații brute (sau date) la un capăt, le stochează până când este gata să lucreze pe ea, o mestecă și o sfâșie pentru un pic, apoi scuipă rezultatele la celălalt capăt.
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-3-4-How-computers-work-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+Un calculator este o e **mașină electronică** care procesează informații, cu alte cuvinte, un procesor de informații: acesta ia informațiile brute (sau datele) de la un capăt, le stochează până când este gata să lucreze la ele, apoi returnează rezultatele la celălalt capăt.
 
 Toate aceste procese au un **nume**.
 
@@ -15,12 +17,13 @@ Preluarea informațiilor se numește intrare, stocarea informațiilor este mai b
 
 [slide hideTitle]
 # Variabile
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-5-Variables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 O variabilă este un nume dat unei locații de memorie. 
 
 Este unitatea de bază de stocare într-un program.
 
-* Valoarea stocată într-o variabilă poate fi modificată în timpul executării programului
+* Valoarea stocată într-o variabilă poate fi modificată în timpul executării programului.
 
 * O variabilă este doar un nume dat unei locații de memorie, toate operațiunile efectuate asupra variabilei efectează locația de memorie
 
@@ -37,7 +40,7 @@ int count = 5;
 * **Nume variabilă**: nume dat variabilei
 * **Valoare variabilă**: este valoarea inițială stocată în variabilă
 
-O variabilă poate fi declarată, fără inițializare:
+O variabilă poate fi declarată, fără inițializare și inițalizată mai târziu:
 
 ```java
 int count;
@@ -51,8 +54,6 @@ Aici am dat acea valoare variabilă de `5`.
 ## Exemplu din Viața Reală
 
 Vă puteți gândi la variabile ca la borcane de bucătărie.
-
-Putea să stocați cafeaua în borcanul cu zahăr, dar acestea vor fi diferite.
 
 Imaginați-vă că în fiecare borcan puteți stoca doar una dintre următoarele: sare, zahăr sau cafea.
 
@@ -69,13 +70,16 @@ Folosim variabilele care acționează ca borcane pentru date diferite, cum ar fi
 [slide hideTitle]
 # Ce este un tip de date?
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-6-What-is-data-type-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+
 Tipurile de date specifică diferitele dimensiuni și valori care pot fi stocate în variabilă.
 
 Există **două tipuri de tipuri de date** în Java:
 
 **Tipuri de date primitive**
 
-- Încorporat într-un limbaj de programare
+- Încorporate într-un limbaj de programare
 
 - Dimensiunea și tipul valorilor variabilei sunt specificate și nu pot fi modificate
 
@@ -83,7 +87,7 @@ Există **două tipuri de tipuri de date** în Java:
 
 **Tipuri de date neprimitive**
 
-- Nu este definit de limbajul de programare, ci de programator
+- Nu sunt definite de limbajul de programare, ci de programator
 
 - Variabile de referință apelate deoarece dețin adresa în memoria computerului (RAM) unde sunt stocate datele
 
@@ -111,6 +115,7 @@ După cum vedeți în exemplul de mai sus, **tipurile de date** au:
 
 [slide hideTitle]
 # Variabile de denumire
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-7-data-type-characteristics-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În programarea computerului, o convenție de denumire este un set de **reguli** pentru alegerea numelui care trebuie utilizat pentru variabile.
 
@@ -118,7 +123,7 @@ Convențiile de denumire fac programele mai ușor de înțeles, făcându-le mai
 
 În Java, se folosește convenția pentru numirea variabilelor "**camelCase**".
 
-**cazulCamel** este practica scrierii frazelor:
+"**camelCase**" este practica scrierii frazelor:
 
 - Fiecare cuvânt sau abreviere din mijlocul frazei începe cu o literă mare
 
@@ -143,6 +148,8 @@ Numele variabilei ar trebui să explice scopul acesteia.
 
 [slide hideTitle]
 # Domeniul de Aplicare și Durata de Viață a Variabilei
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-9-variable-scope-and-lifetime-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 **Domeniul de aplicare** al unei variabile se referă la ce zone sau secțiuni ale unui program poate fi accesată variabila și **durata de viață** a unei variabile se referă la cât timp variabila rămâne în viață în memorie.
 
@@ -150,7 +157,7 @@ Convenția generală pentru domeniul de aplicare al unei variabile este că, est
 
 Un bloc **începe** cu o acoladă stângă `{` și **se termină** cu o acoladă dreaptă `}`.
 
-## Example
+## Exemplu
 ```java
 public static void main(String[] args) {
   String outer = "I'm inside the Main()";
@@ -170,9 +177,9 @@ public static void main(String[] args) {
 [/slide]
 
 [slide hideTitle]
-# Interval variabil
+# Intervalul variabilei
 
-Variabila **span** este cât timp înainte de a fi apelată o variabilă.
+**Intervalul** variabilei este cât timp înainte de a fi apelată o variabilă.
 
 Este o bună practică să creați o variabilă cât mai târziu (de exemplu, o durată mai scurtă).
 
@@ -194,13 +201,14 @@ static void main(String[] args) {
 [/slide]
 
 [slide hideTitle]
-# Keeping Variable Span Short
+# Menținerea intervalului variabilei scurt
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-11-keep-variable-span-short-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Ca regulă generală bună, încercați să mențineți intervalul variabil mai scurt.
 
 Un interval mai scurt simplifică codul și îi îmbunătățește **lizibilitatea** și **mentenabilitatea**.
 
-Putem reduce intervalul variabil **outer** după cum urmează:
+Putem reduce intervalul variabilei **exterioare** după cum urmează:
 
 
 ```java

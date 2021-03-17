@@ -1,32 +1,32 @@
-# Lesson Introduction
+# Introducere
 
 [slide hideTitle]
 
-# Lesson Content
+# Conținutul lecției
 
 ## În această lecție veți afla despre:
 
 **1. Tipuri de date și variabile**
 
-- How does computing work
+- Cum funcționează calculatoarele?
 
-- Data types and their meaning
+- Tipurile de date și semnificația lor 
 
-- What is a variable
+- Ce reprezintă o variabilă
 
 **2. Tip întreg și număr real**
 
 - Diferența dintre tipurile de număr întreg și numărul real
 
-**3. Tipul Convension**
+**3. Conversia de tip**
 
-- Convorbire implicită vs explicită
+- Conversia implicită vs explicită
 
-**4. Tip boolean**
+**4. Tipul boolean**
 
-- What is a boolean
+- Ce reprezintă tipul boolean
 
-- Prezentare generală booleană și ce conține
+- Prezentare generală a tipului de date booleene și ce conține
 
 **5. Tip de caractere și șiruri**
 

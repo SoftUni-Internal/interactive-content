@@ -2,73 +2,61 @@
 
 [slide hideTitle]
 # Semnătura metodei
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-44-45-46-47-Method-Overlading-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In Java method signature is part of the method declaration.
 
-Este o combinație între numele metodei și lista de parametrii.
+In Java, semn[tura metodei face parte din declararea metodei.
 
-```Java
-public static void print(String text) {
-  System.out.println(text);
-}
-```
+Este o combinație între **numele metodei** și **lista de parametrii**.
 
-Semnătura **metodei** nu include tipul de returnare a metodei.
-
-O clasă nu poate avea două metode cu aceeași semnătură.
-
-Dacă încercăm să declarăm două metode cu aceeași semnătură vom primi o eroare de compilare.
+În acest exemplu, elementele semnăturii sunt ** print ** (numele metodei) și ** String text ** (parametru).
 
 ```Java
 public static void print(String text) {
   System.out.println(text);
 }
-
-public static String print(String text) {
-  return text;
-}
-// Compile-time error!
 ```
 
 ## Metode de supraîncărcare
 
-Folosirea aceluiași nume pentru metode cu semnături **diferite** \(numele **metodei** și **parametrii**\)
+Supraîncărcarea unei metode se face folosind același nume pentru mai multe metode cu diferite ** semnături ** \ (metoda ** nume ** și ** parametri ** \).
 
 În loc să definim două metode care fac același lucru, este ma bine să supraîncărcăm una.
 
-În exemplul de mai jos, vom supraîncărca metoda `plusMethod` ca să funcționeze pentru `int` și `double`:
+În exemplul de mai jos, supraîncărcăm metoda ** addTwoNumbers ** pentru a funcționa atât cu ** int **, cât și cu ** double **:
 
 ```java live no-template
 public class MyClass {
- static int plusMethodInt(int x, int y) {
-  return x + y;
- }
+  static int addTwoNumbers(int x, int y) {
+    return x + y;
+  }
 
- static double plusMethodDouble(double x, double y) {
-  return x + y;
- }
+  static double addTwoNumbers(double x, double y) {
+    return x + y;
+  }
 
- public static void main(String[] args) {
-  int myNum1 = plusMethodInt(8, 5);
-  double myNum2 = plusMethodDouble(4.3, 6.26);
+  public static void main(String[] args) {
+    int myNum1 = addTwoNumbers(8, 5);
+    double myNum2 = addTwoNumbers(4.3, 6.26);
 
-  System.out.println("int: " + myNum1);
+    System.out.println("int: " + myNum1);
 
-  System.out.println("double: " + myNum2);
- }
+    System.out.println("double: " + myNum2);
+  }
 }
 ```
+
 
 [/slide]
 
 [slide hideTitle]
-# Signature and Return Type
+# Semnătura și tipul de returnare 
 
-The method **signature** does not include the return type of the method.
+Metoda  **signature** nu inculde tipul de returnare a metodei.
 
-A class cannot have two methods with the same signature.
+O clasp nu poate avea două metode cu aceeași semnătură. 
 
-If we try to declare two methods with the same signature we will get a compile-time error.
+Dacă încercăm să declarăm două metode cu aceeași semnătură, vom primi o eroare în timpul compilării.
 
 ```Java
 public static void print(String text) {
@@ -83,7 +71,10 @@ public static String print(String text) {
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Greater of Two Values
+# Problemă cu soluție: Greater of Two Values
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-problem-and-solution-greater-of-two-values-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Greater of Two Values" taskId="java-fund-1-Methods-lab-Greater-of-Two-Values" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
@@ -98,12 +89,12 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
-Primiți două valori care sunt la fel ca tip de dată.
+## Descriere
+Primiți două valori care sunt de același tip de date.
 
-Valorile pot fi **int**, **char** sau **String**.
+Valorile pot fi de tipul  **int**, **char** sau **String**.
 
-Creați o metodă **getMax()** care returnează valoarea mai mare dintre cele 2 numere:
+Creați o metodă numită **getMax()** care returnează **paramaetru cu cea mai mare valoare**:
 
 ## Exemple
 |**Date de intrare**|**Date de ieșire**|
@@ -238,7 +229,9 @@ int
 
 
 [slide hideTitle]
-# Problem with Solution: Multiply Evens by Odds
+# Problemă cu soluție: Multiply Evens by Odds
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-problem-and-solution-multiply-evens-by-odds-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Multiply Evens by Odds" taskId="java-fund-1-Methods-lab-Multiply-Evens-by-Odds" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -252,7 +245,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
+## Descriere
 Creați un program care citește un **număr întreg** și **înmulțește cu suma cifrelor sale pare** cu **suma cifrelor sale impare**:
 
 ## Exemple

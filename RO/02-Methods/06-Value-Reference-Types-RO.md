@@ -3,20 +3,23 @@
 [slide hideTitle]
 
 # Tipuri de valori
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-38-Value-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Variabila unei valori \(date primitive\) conține o instanță a tipului ce arată direct valoarea lor. 
+Variabila de tipul **valoare** \(date primitive\) conține o instanță a tipului care conține direct valoarea lor. 
 
-Cu tipuri de valori, fiecare variabilă are **o copie a datelor**, și nu este posibil ca operațiile pe o variabilă să **le afecteze și pe celelalte**.
+Tipurile primitive de date sau tipurile de valoare conțin valoarea unei variabile direct în propria locație de memorie.
 
-Când valoarea unei primitive îi este atribuită altei variabile de același tip, se crează o copie.
+Cu tipurile de valori, fiecare variabilă are **o copie proprie a datelor**, și nu este posibil ca operațiile pe o variabilă să **le afecteze și pe celelalte**.
 
-Când o primitivă este pasată unei metode, doar o copie a unei primitive este pasată. 
+Când valoarea unei primitive **îi este atribuită altei variabile** de același tip, se crează o copie.
 
-Metoda apelată nu are acces la valoarea originala a primitivei, deci nu o poate schimba. 
+Când o primitivă este trecută unei metode, doar **o copie a tipului primitiv** este creată. 
 
-Metoda apelată poate schimba valoarea copiată.
+Metoda apelată **nu are acces** la valoarea originala a tipului primitiv, deci **nu o poate schimba**. 
 
-* Tipurile de date primitive sunt: **byte**, **short**, **int**, **long**, **float**, **double**, **boolean** și **char**
+Metoda apelată poate **schimba valoarea copiată**.
+
+Tipurile de date primitive sunt: **byte**, **short**, **int**, **long**, **float**, **double**, **boolean** și **char**
 
 ```Java
 int i = 42; //require 4 bytes of memory
@@ -26,13 +29,13 @@ boolean result = true; //require 1 byte of memory
 [/slide]
 
 [slide hideTitle]
-# Tipurile de referințe
+# Tipurile de referință
 
 **Tipul de referință** al variabilei ține o referință \(indicator / adresă de memorie\) a valorii în sine.
 
-Când un tip de referință îi este atribuit unui alt tip de referință, ambele vor indica același obiect.
+Atunci când un tip de referință îi este **atribuit unui alt** tip de referință, ambele vor indica același obiect.
 
-Când un obiect este pasat într-o metodă, metoda apelată poate schimba conținutul obiectului pasat dar nu și adresa obiectului.
+Atunci când un obiect este ***trecut într-o metodă**, metoda apelată poate **schimba valoarea** obiectului trecut, dar nu și **adresa** obiectului.
 
 * Tipurile de date de referință sunt: `String`, `int[]`, `char[]`, `String[]`.
 
@@ -56,7 +59,7 @@ public static void increment(int num, int value) {
 }
 ```
 
-## Exemple de tipuri de referințe
+## Exemple de tipuri de referință
 
 ```java live no-template
 public class MyClass {
@@ -74,13 +77,13 @@ public static void increment(int[] nums, int value) {
 [/slide]
 
 [slide hideTitle]
-# Value types vs. Reference Types
+# Tipuri de valoare vs. tipuri de referință
 
 [image assetsSrc="java-fund-methods-01.gif" /]
 
-Now we will visually demonstrate how value types are stored, compared to reference types. 
+Acum vom demonstra vizual modul în care sunt stocate tipurile de valori, în comparație cu tipurile de referință.
 
-We will first initialize some primitive value type variables, followed by ones that are reference types:
+Mai întâi vom inițializa câteva variabile primitive de tip valoare, urmate de unele care sunt de tipul  de referință:
 
 ```java
 //primitives
@@ -99,8 +102,7 @@ byte[] bytes ={ 1, 2, 3 };
 
 [slide hideTitle]
 
-# Example: Value Types
-
+# Exemplu: Tipuri de valoare
 ```java
 public static void main(String[] args) {
    int num = 5;
@@ -113,17 +115,17 @@ public static void incrementNumber(int num, int incrementValue) {
 }
 ```
 
-We have an **incrementNumber** method that takes a number and increments it by another number - **incrementValue**.
+Avem o metodă ** incrementNumber ** care ia un număr și îl incrementează cu un alt număr - ** incrementValue **.
 
-Even though we performed some operations with the **num** variable, its value will not change when **num** is printed to the console. 
+Chiar dacă am efectuat unele operații cu variabila ** num **, valoarea acesteia nu se va schimba când ** num ** este tipărit pe consolă.
 
-This is because **int** is a primitive type and when passed a copy of its value is passed to the method.
+Acest lucru se datorează faptului că ** int ** este un tip primitiv și când este trecută, o copie a valorii sale a fost transmisă metodei.
 
 [/slide]
 
 [slide hideTitle]
 
-# Example: Reference Types
+# Exemplu: Tipuri de referință
 
 
 ```java
@@ -139,16 +141,15 @@ public static void increment(int[] numbersArray, int incrementValue) {
 
 ```
 
-Arrays store references to memory locations. When we pass the array to the **increment** method it manipulates the values stored at the same memory reference. 
+Matricele stochează referințe la locațiile de memorie. Când trecem matricea la metoda ** increment **, aceasta  manipulează valorile stocate la aceeași referință de memorie.
 
-When we passed **nums** as a value for the **numbersArray** parameter of the method, what happened is, the numbersArray parameter received the reference to the memory location of the original array. 
+Când am trecut ** nums ** ca valoare pentru parametrul ** numbersArray ** al metodei, ceea ce s-a întâmplat este că parametrul numbersArray a primit referința la locația de memorie a matricei originale.
 
-Any operation that would change an element in the array inside the method will also change the original array as we are working with the same reference.
-
+Orice operație care ar schimba un element din matricea din interiorul metodei va schimba, de asemenea, matricea originală, deoarece lucrăm cu aceeași referință.
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Math Operations
+# Problemă cu soluție: Math Operations
 [code-task title="Math Operations" taskId="java-fund-1-Methods-lab-Math-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -162,8 +163,8 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
-Scrieți o metodă care primește **2 numere** și un **operator**, calculează rezultatul și-l returnează.
+## Descriere
+Creați  o metodă care primește **2 numere** și un **operator**, calculează rezultatul și-l returnează.
 
 Veți primi **3 linii pentru datele de intrare**.
 
