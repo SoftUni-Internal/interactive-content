@@ -49,17 +49,17 @@ You must check if the registration is **valid and if it is,  print**:
 In the end **print the count of successful registrations**:
 - "Successful registrations: \{successfulRegistrationsCount\}"
 
-### Input
+### Intrare
 
 - On the first line, you will receive **n** - the count of inputs
 - On the next **n** lines - input that you have to check for valid registrations
 
-### Output
+### Ieșire
 - Print all results from each input, each on a new line
 - In the end, print the count of successful registrations
 
-### Example
-| **Input** | **Output** |
+### Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 3 | Registration was successful |
 | U\$MichaelU\$P@$asdqwe123P@\$ | Username: Michael, Password: asdqwe123 |
@@ -73,8 +73,8 @@ In the end **print the count of successful registrations**:
 - The second one does not because the password does not end with a digit
 - The third one is not valid because the password is too short
 
-### Example
-| **Input** | **Output** |
+### Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 2 | Registration was successful |
 | U\$TommyU\$P@\$asdqwe123P@\$ | Username: Tommy, Password: asdqwe123 |

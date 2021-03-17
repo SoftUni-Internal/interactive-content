@@ -51,18 +51,18 @@ Users count: \{count\}
 
  - \{EmailN\}
 
-### Input
+### Intrare
 - You will be receiving lines until you receive the "**Statistics**" command
 - The commands will be in the format described above
 
-### Output
+### Ieșire
 - Print the collection in the format described above after the "**Statistics**" command
 
 ### Output
 Print the collection in the format described above after receiving the "**Statistics**" command.
 
-### Example
-| **Input** | **Output** |
+### Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | Add->Mike | Users count: 2 |
 | Add->George | George |
@@ -79,8 +79,8 @@ Print the collection in the format described above after receiving the "**Statis
 - Then they start sending emails and in the end we print the output in the described format
 
 
-### Example
-| **Input** | **Output** |
+### Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | Add->Mike | Mike is already registered |
 | Add->George | Peter not found! |

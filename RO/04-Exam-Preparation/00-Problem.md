@@ -36,11 +36,11 @@ The commands will be the following:
   * if it does not, prints "**Nothing to replace!**"
 
 
-## Input
+## Intrare
 
   - You will be receiving strings until the "**Done**" command is given
 
-## Output
+## Ieșire
 
 - After the "**Done**" command is received, print:
   * "Your password is: \{password\}"
@@ -50,9 +50,8 @@ The commands will be the following:
 - The indexes from the "Cut \{index\} \{length\}" command will always be valid
 
 
-## Examples
-
-| **Input** | **Output** |
+## Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | Siiceercaroetavm\!\:\?\:ahsott\.\:i\:nstupmomceqr | icecream\:\:hot\:\:summer |
 | TakeOdd | icecream\:\:hot\:\:mer |
@@ -87,7 +86,8 @@ Then, on a new line we print the resulting new raw password.
 
 - Finally, after receiving the "**Done**" command, we print the resulting password in the proper format
 
-| **Input** | **Output** |
+## Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | up8rgoyg3r1atmlmpiunagt\!\-irs7\!1fgulnnnqy | programming\!is\!funny |
 | TakeOdd | programming\!is\!fun |
