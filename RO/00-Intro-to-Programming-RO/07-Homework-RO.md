@@ -190,6 +190,7 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
+
       // Write your code here
     }
 }
@@ -264,8 +265,10 @@ Scrieți un program care să execute următoarele:
 * Calculează suprafața dreptunghiului
 * Laturile dreptunghiului au valorile 5 și 10
 
+
 ## Ieșire
 * Printează suprafața calculată
+
 [/task-description]
 [code-io /]
 [tests]
@@ -306,7 +309,7 @@ public class Main {
 
 Scrieți un program care să tipărească numerele de la 1 la 10 (inclusiv).
 
-## Ieșire
+## Rezultat
 
 Fiecare număr ar trebui să fie pe o linie nouă.
 [/task-description]
@@ -358,7 +361,9 @@ Fiecare număr ar trebui să fie pe o linie nouă.
 ```
 public class Main {
   public static void main(String[] args) {
+
       // Write your code here
+
     }
 }
 ```
@@ -369,7 +374,7 @@ Scrieți un program care să **imprime un triunghi** format din steluțe.
 
 Veți imprima un simbol asterisc \(\*\) pe primul rând, două simboluri asterisc pe al doilea rând, și așa mai departe, pentru un total de 5 rânduri. 
 
-## Ieșire
+## Rezultat
 ```
 *
 **
