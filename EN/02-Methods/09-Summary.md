@@ -5,7 +5,7 @@
 
 ## In this lesson you learned:
 
-- Methods - **blocks of code** that can be reused multiple times
+- Methods are **blocks of code** that can be re-used multiple times
 
 ``` java
 public static void printText(String text) {
@@ -32,11 +32,11 @@ static void printNumbers(int start, int end) {
   }
 }
 ```
-- Methods can **return a value** or nothing - `void`
+- Methods could **return a value**, if they do not they are of type: `void`
 
-- You can **overload** methods by declaring a new method with the same name but a different type or number of parameters
+- You can **overload** methods by declaring a method of the same name but different data types or number of parameters
 
-- The call stack - stores information about the active methods and the point where execution should return to after a method completes its task
+- The **call stack** - stores information about the active methods and the point where execution should return to after a method finishes running
 
 ## In the next lesson, you will learn:
 
