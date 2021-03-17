@@ -216,7 +216,7 @@ If we have an **instance** of an array, since we know it is an object, adding ne
 let myArr = [1, 2, 3]
 
 myArr.last = function() {
-    //TODO
+    // TODO
 };
 ```
 
@@ -226,7 +226,7 @@ To add all functions just one time and have them work on **all arrays**, we have
 
 ```js
 Array.prototype.last = function() {
-    //TODO
+    // TODO
 };
 ```
 
@@ -457,7 +457,7 @@ function solve() {
     class PartyBallon extends Ballon {
         constructor(color, gasWeight, ribbonColor, ribbonLength) {
             super(color, gasWeight);
-            //TODO: Initialize ribbon object
+            // TODO: Initialize ribbon object
         }
 
         get ribbon() {
@@ -766,11 +766,11 @@ Functions are defined inside the class body.
     }
 
     work() {
-        // TODO cycle tasks
+        // TODO: Cycle tasks
     }
 
     collectSalary() {
-        //TODO get paid
+        // TODO: Get paid
     }
 }
 ```

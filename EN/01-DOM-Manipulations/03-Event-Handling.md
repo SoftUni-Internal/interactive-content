@@ -81,9 +81,11 @@ function clickMe(e) {
 
 [slide hideTitle]
 
-# Attaching hover event
+# Attaching Hover and Input Events
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/EN/JS-Advanced-DOM-Manipulations-23-24-attaching-hover-event-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+## Attaching Hover Events
 
 Here is an example of using the "**mouseOver**" type and a function declaration.
 
@@ -107,12 +109,7 @@ button.addEventListener('mouseover', function(e) {
     }
 });
 ```
-
-[/slide]
-
-[slide hideTitle]
-
-# Attaching Input Events
+## Attaching Input Events
 
 In this example, we use the "**input**" type to demonstrate how we can enable a button when we type something in the input field.
 
@@ -171,7 +168,7 @@ button.addEventListener('click', () => {
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/EN/JS-Advanced-DOM-Manipulations-26-multiple-events-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We can add multiple events to the same element without overwriting existing events.
+We can add multiple events to the same element, without overwriting existing events.
 
 ```js
 element.addEventListener('click', function);
@@ -194,7 +191,7 @@ The `setInterval()` method calls a function or evaluates an expression at specif
 
 The `setInterval()` method will continue calling the function until `clearInterval()` is called, or the window is closed.
 
-In the example below, the interval is 1000 milliseconds or 1 second.
+In the example below, the interval is 1000 milliseconds, or 1 second.
 
 The `clearInterval()` method clears a timer set with the `setInterval()` method.
 
@@ -222,7 +219,7 @@ clearInterval(intervalID);
 
 [code-task title="Add Delete" taskId="Js-Advanced-Dom-Manipulations-Add-Delete" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 ```
-function addDelete(){
+function addItem(){
   // Write your code here
 }
 ```
@@ -352,7 +349,7 @@ document.getElementById('parent-list')
     });
 ```
 
-**Pros and Cons**
+## Pros and Cons
 
 **Advantages:**
 

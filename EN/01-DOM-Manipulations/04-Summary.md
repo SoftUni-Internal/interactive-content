@@ -6,12 +6,12 @@
 
 ## In this lesson, you learned:
 
-- Event Loop
-- Event Types: `document.addEventListener('click', getEventType);`
-- Event Object Properties and Methods
+- The event loop
+- Event types: `document.addEventListener('click', getEventType);`
+- Event object - properties and methods
     - preventDefault: `event.preventDefault();`
     - stopPropagation: `event.stopPropagation();`
-- Handling Events
+- Handling events
     - attach
     ```js
     button.addEventListener('click', () => {

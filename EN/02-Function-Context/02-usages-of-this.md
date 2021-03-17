@@ -62,11 +62,11 @@ If there is a variable with the same name already defined and if it is in scope 
 Consider the example below:
 
 ```js live
-//Defining a function
+// Defining a function
 function printContext() {
     console.log(this === global);
 }
-//Creating an object called user
+// Creating an object called user
 let user = {
     count: 10,
     printContext: printContext,
@@ -96,11 +96,13 @@ Creating an object **user** with two methods:
 
 Calling `user.printContext();` invokes the method belonging to the **user** object. Returns: **false**, because `this` is used within an object's method and returns the object itself.
 
-`let globalFunction = user.printAnotherContext;` Now we define a new function, and we are assigning the method **printAnotherContext** from the **user** object to it
+`let globalFunction = user.printAnotherContext;` 
+
+Now we define a new function, and we are assigning the method **printAnotherContext** from the **user** object to it
 
 Returns **true**, because now `this` is called by the function **globalFunction** and not from the user object's method. 
 
-`this` is indeed equal to **global**
+`this` is indeed equal to **global**.
 
 - `user.printAnotherContext();` will return **false** because `printAnotherContext()` is a method of the object **user** and `this` will return the object itself like it did with the **printContext** method
 
@@ -189,6 +191,6 @@ In the example above we are accessing the properties of the **car** class by usi
 
 Remember we previously learned about using the `this` keyword in objects and it behaved in the same way.
 
-This is because classes are templates for creating objects!
+This is because classes are templates for creating objects.
 
 [/slide]

@@ -87,13 +87,13 @@ The event object has many **properties** and **methods**.
 
 Some of the properties are:
 
-- target
+- **target**
 
-- timeStamp
+- **timeStamp**
 
-- isTrusted
+- **isTrusted**
 
-- ClientX / ClientY
+- **ClientX / ClientY**
 
 ```js
 addBtn.addEventListener('click', function(e){

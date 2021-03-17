@@ -31,11 +31,7 @@ Finally, you should **append** all **div**s to the element with an **id** of **c
 
 # Example
 
-## Input
-[image assetsSrc="Dom-Manipulation(5).png" /]
-
-## Output
-[image assetsSrc="Dom-Manipulation(6).png" /]
+[image assetsSrc="Dom-Manipulation(5).gif" /]
 
 [/task-description]
 [code-io /]
@@ -147,11 +143,7 @@ In the example below, a **notification** is shown when you click the button.
 
 # Example
 
-## Input
-[image assetsSrc="Dom-Manipulation(7).png" /]
-
-## Output
-[image assetsSrc="Dom-Manipulation(8).png" /]
+[image assetsSrc="Dom-Manipulation(7).gif" /]
 
 [/task-description]
 [code-io /]
@@ -356,20 +348,16 @@ Your task is to add a **click** event listener to all "**CONVERT**" buttons.
 
 When a button is **clicked**, read the **corresponding** input field and **display** the converted values inside the other three input fields.
 
-One day is equal to 24 hours, 1440 minutes, 86400 seconds.
+One day is equal to 24 hours, 1440 minutes, or 86400 seconds.
 
-Whichever button we click, the input fields should change, depending on the added value.
+Whichever **button** we click, the **input fields** should **change**, depending on the added **value**.
 
 For example, if we type in 48 hours and click **convert**, the value of the days' field should change to **2**.
 
 
 # Example
 
-## Input
-[image assetsSrc="Dom-Manipulation(9).png" /]
-
-## Output
-[image assetsSrc="Dom-Manipulation(10).png" /]
+[image assetsSrc="Dom-Manipulation(9).gif" /]
 
 [/task-description]
 [code-io /]
@@ -1666,7 +1654,9 @@ Write a function that searches in a table by a given input.
 
 When the "**Search**" button is clicked, go through all cells in the table, except for the first row, which is the header of the table: **Student name, Student email, and Student course**.
 
-Check if the given input has a match. Check for both full words and single letters.
+Check if the given input has a match. 
+
+Check for both full words and single letters.
 
 If any of the rows contain the submitted string, add a **select class** to that row.
 

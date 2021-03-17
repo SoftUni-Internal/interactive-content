@@ -86,7 +86,7 @@ And if there are any comments then print them in this format:
 Comments:
 Comment content goes here
 Comment content goes here
-//and so on
+// and so on
 ```
 
 **Note: For more information see the examples below!**
@@ -129,7 +129,7 @@ Orders:
 { customerName } - { orderDescription }.
 { customerName } - { orderDescription }.
 { customerName } - { orderDescription }.
-//and so on
+// and so on
 ```
 
 **Note: For more information see the examples below!**
