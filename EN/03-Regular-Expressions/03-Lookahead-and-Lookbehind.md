@@ -2,35 +2,38 @@
 [slide hideTitle]
 # Lookahead 
 
-There are **two** ways to use `Lookahead` with RegEx:
+`Lookahead` and `Lookbehind` are zero-length assertions that match characters, but then give up the match, returning only the result: **match or no match**.
+
+
+There are two kind of `Lookahead` assertions: **Positive Lookahead** and **Negative Lookahead**
 
 - **Positive Lookahead**
 
 [image assetsSrc="regex-example(20).png" /]
 
-In the example above the regex matches only `abc` because they are followed by one or more digits.
+In the example above, the regular expression matches only `abc` because these letters are followed by one or more digits.
 
 - **Negative Lookahead**
 
 [image assetsSrc="regex-example(21).png" /]
 
-In the example above the regex matches only `ab` because they are **not** followed by one or more digits.
+In the example above, the regular expression matches only `ab` because these letters are **not** followed by one or more digits.
 
 
 ## Lookbehind
 
-There are also **two** ways to use `Lookbehind`:
+There are also two kind of `Lookbehind` assertions: **Positive Lookbehind** and **Negative Lookbehind**
 
 - **Positive Lookbehind**
 
 [image assetsSrc="regex-example(22).png" /]
 
-In the example above the regex matches only `abc` because they are preceded by one or more digits.
+In the example above, the regular expression matches only `abc` because these letters are preceded by one or more digits.
 
 - **Negative Lookbehind**
 
 [image assetsSrc="regex-example(23).png" /]
 
-In the example above the regex matches only `bc` because they are **not preceded** by one or more digits.
+In the example above, the regular expression matches only `bc` because these letters are **not preceded** by one or more digits.
 
 [/slide]
