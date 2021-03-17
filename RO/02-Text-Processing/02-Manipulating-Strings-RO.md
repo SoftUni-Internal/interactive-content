@@ -40,7 +40,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -51,8 +51,8 @@ Scrieți un program care citește o **matrice de șiruri**.
 
 Fiecare șir se repetă **n** ori, unde **n** este **lungimea a șirului**.
 
-## Examples
-| **Input** | **Output** |
+## Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | hi abc add | hihiabcabcabcaddaddadd |
 | work | workworkworkwork |
@@ -132,7 +132,7 @@ linearlinearlinearlinearlinearlinear
 
 [slide hideTitle]
 
-# Şiruri de caractere
+# Şiruri de Caractere
 
 As the name suggests, `substring` extracts only a **part** of a `String`.
 
@@ -216,15 +216,14 @@ Scrieți un program care **elimină toate aparițiile** din **primul șir** din 
 
 La sfârșit **tipăriți șirul rămas**
 
-## Example
-| **Input** | **Output** |
+## Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | ice | kgb |
-| kicegiciceeb |  |
 
 # Sugestii
 - **Citiți intrarea**
-- Găsiți **primul index** unde apare cheia.
+- Găsiți **primul index** unde apare cheia
     - utilizați metoda încorporată `indexOf()`
 - **Eliminați potrivirea**
     - utilizați metoda încorporată `replace(String oldValue, String newValue)`
@@ -368,8 +367,8 @@ Scrieți un program care acceptă un **text** și un **șir de cuvinte interzise
 
 Intrările din lista de interdicții vor fi separate printr-o **virgulă** și **spațiu** ", ".
 
-## Examples
-| **Input** | **Output** |
+## Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | Linux, Windows | It is not \*\*\*\*\*, it is GNU/\*\*\*\*\*. \*\*\*\*\* is merely the kernel, while GNU adds the functionality. Therefore we owe it to them by calling the OS GNU/\*\*\*\*\*! Sincerely, a \*\*\*\*\*\*\* client |
 | It is not Linux, it is GNU/Linux. Linux is merely the kernel, while GNU adds the functionality. Therefore we owe it to them by calling the OS GNU/Linux! Sincerely, a Windows client |  |

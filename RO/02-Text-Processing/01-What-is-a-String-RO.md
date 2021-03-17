@@ -52,7 +52,7 @@ Principalele **caracteristici** ale **Șirurilor** sunt:
 [/slide]
 
 [slide hideTitle]
-# Inițializarea unui șir
+# Inițializarea Snui Șir
 
 - Initializarea folosind **Șir literal**
 

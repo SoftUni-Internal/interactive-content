@@ -10,7 +10,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -24,8 +24,8 @@ Un **nume de utilizator valid** este:
 - Conține **numai litere, cifre, cratime și sublinieri**
 - Nu are **simboluri redundante** înainte, după sau între ele
 
-### Exemple
-| **Input** | **Output** |
+### Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | Jeff, john45, ab, cd, peter-white, @smith | Jeff | 
 | | john45 |
@@ -122,7 +122,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -135,8 +135,8 @@ Apoi **continuați cu următoarele două caractere**.
 
 **Dacă una dintre șiruri este mai lungă decât cealaltă**, **adăugați codurile de caractere rămase** la suma totală fără multiplicare.
 
-### Example
-| **Input** | **Output** |
+### Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | a aaaa | 9700 | 
 | John Smith | 42025 | 
@@ -224,7 +224,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -233,14 +233,14 @@ public class Main {
 ## Descriere
 Scrieți un program care **citește calea către un fișier** și **scade numele fișierului și extensia acestuia**.
 
-### Example
-| **Input** | **Output** |
+### Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | C:\Internal\training-internal\Template.pptx | File name: Template | 
 | | File extension: pptx |
 
-### Example
-| **Input** | **Output** |
+### Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | C:\Projects\Data-Structures\LinkedList.cs | File name: LinkedList | 
 | | File extension: cs |
@@ -324,7 +324,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -339,8 +339,8 @@ Scrieți un program care **returnează o versiune criptată a aceluiași text**.
 
 **Imprimați textul criptat**.
 
-### Example
-| **Input** | **Output** |
+### Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | Programming is cool! | Surjudpplqj#lv#frro$ | 
 
@@ -416,7 +416,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -431,14 +431,14 @@ Trebuie să afișați produsul acestor numere.
 
 **Notă**: nu utilizați clasa BigInteger.
 
-### Example
-| **Input** | **Output** |
+### Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 23 | 46 | 
 | 2 | |
 
-### Example
-| **Input** | **Output** |
+### Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 923847238931983192462832102 | 3695388955727932769851328408 | 
 | 4 | |
@@ -531,7 +531,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -540,8 +540,8 @@ public class Main {
 ## Descriere
 Scrieți un program care **citește un șir din consolă** și **înlocuiește orice secvență din aceleași litere cu o singură literă corespunzătoare**.
 
-### Example
-| **Input** | **Output** |
+### Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | aaaaabbbbbcdddeeeedssaa | abcdedsa |
 | qqqwerqwecccwd | qwerqwecwd |
@@ -620,7 +620,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -664,8 +664,8 @@ Veți primi o singură linie cu șirul.
 ### Ieșire
 Imprimați ce a rămas din șir după explozii.
 
-### Example
-| **Input** | **Output** |
+### Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | abv\>1\>1\>2\>2asdasd | abv\>\>\>\>dasd |
 
@@ -756,7 +756,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -830,16 +830,16 @@ Nu este nevoie să o verificați în mod explicit.
 ### Ieșire
 Imprimați pe consolă un singur număr: suma totală a tuturor numerelor procesate rotunjite la două cifre după separatorul zecimal.
 
-### Example
-| **Input** | **Output** |
+### Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | A12b s17G | 330.00 |
 
 ### Comments
 12\/1=12, 12+2=14, 17\*19=323, 323–7=316, 14+316=330
 
-### Example
-| **Input** | **Output** |
+### Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | P34562Z q2576f   H456z | 46015.13 |
 
