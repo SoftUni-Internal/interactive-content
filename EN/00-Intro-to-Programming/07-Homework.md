@@ -272,7 +272,7 @@ Write a program, which:
 * Sides of the rectangle are 5 and 10
 
 ## Output
-* Print the the calculated area
+* Prints the calculated area
 [/task-description]
 [code-io /]
 [tests]
