@@ -1,4 +1,4 @@
-# Teme pentru acasă
+# Teme Pentru Acasă
 
 [slide hideTitle]
 # Problem: Furniture
@@ -44,8 +44,8 @@ La final **imprimați fiecare mobila cumpărată pe o linie separată** în form
 Și pe **ultima linie imprimați** următoarele:
 - "Total money spend: \{spend money\}" **formatate** la a doua zecimală.
 
-### Exemple
-| **Input** | **Output** |
+### Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | >>Sofa<<312.23!3 | Bought furniture: |
 | >>TV<<300!5 | Sofa |
@@ -208,8 +208,8 @@ La final **imprimați primii 3 alergători ordonate în funcție de distanța de
 
 3rd place: \{third racer\}"
 
-### Exemple
-| **Input** | **Output** |
+### Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | George, Peter, Bill, Tom | 1st place: George |
 | G4e@55or%6g6!68e!!@ | 2nd place: Peter |
@@ -369,7 +369,7 @@ Fiecare comandă validă trebuie să aibă un **client, produs, total și prețu
 - **Total** este un număr întreg, înconjurat de'\|'
 - **Prețul** este orice număr real urmat de '$'
 
-Părțile unei **comenzi valide ar trebui să apară în comanda dată **:** client, produs, total și un prețul**.
+Părțile unei **comenzi valide ar trebui să apară în comanda dată : client, produs, total și un prețul**.
 
 Între fiecare **parte pot exista și alte simboluri**, **cu excepția** ('\|', '$', '%' and '.')
 
@@ -380,7 +380,7 @@ Când primiți "end of shift" **imprimați suma totală** pentru ziua rotunjita 
 - "Total income: \{income\}".
 
 ### Exemplu
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | %George%\<Croissant\>\|2\|10.3\$ | George: Croissant - 20.60 |
 | %Peter%\<Gum\>\|1\|1.3\$ | Peter: Gum - 1.30 |
@@ -392,7 +392,7 @@ Când primiți "end of shift" **imprimați suma totală** pentru ziua rotunjita 
 - La final imprimăm venitul total al zilei
 
 ### Exemplu
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | %InvalidName%\<Croissant\>\|2\|10.3\$ | Valid: Valid - 200.00 |
 | %Peter%\<Gum\>1.3\$ | Total income: 200.00 |
@@ -601,7 +601,7 @@ Fiecare parte poate fi **separată de celelalte prin orice caracter, cu excepți
 Planetele ar trebui să fie ordonate după nume in mod **alfabetic**.
 
 ### Exemplu
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 2 | Attacked planets: 1 |
 | STCDoghudd4=63333$D$0A53333 | -> Alderaa |
@@ -619,7 +619,7 @@ Primim două mesaje, pentru a le decripta calculăm cheia:
 - După decriptarea tuturor mesajelor, imprimăm fiecare planetă conform formatului dat
 
 ### Exemplu
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 3 | Attacked planets: 0 |
 | tt(''DGsvywgerx>6444444444%H%1B9444 | Destroyed planets: 2 |
@@ -851,12 +851,12 @@ Veți primi **toți demonii pe o singură linie**, **separate prin virgule și z
 
 Sortați-le în **ordine alfabetică și imprimaț numele lor** conform **sănătății și daunelor fiecărui**.
 
-### Input
+### Intrare
 - Intrarea va fi citită de pe consolă
 - Intrarea constă dintr-o singură linie care conține toate numele demonilor separate prin virgule și zero sau mai multe spații în format:
     - "\{demon name\}, \{demon name\}, … \{demon name\}"
 
-### Output
+### Ieșire
 Imprimați toți demonii sortate după numele lor în ordine crescătoare, fiecare pe o linie separată în format:
     - "\{demon name\} - \{health points\} health, \{damage points\} damage"
 
@@ -868,7 +868,7 @@ Imprimați toți demonii sortate după numele lor în ordine crescătoare, fieca
     - de exemplu, toate acestea sunt numere valide:'4', '+4', '-4', '3.5', '+3.5', '-3.5'
 
 ### Exemplu
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | M3ph-0.5s-0.5t0.0** | M3ph-0.5s-0.5t0.0** - 524 health, 8.00 damage |
 
@@ -878,7 +878,7 @@ Imprimați toți demonii sortate după numele lor în ordine crescătoare, fieca
     - Damage = (3 + (-0.5) + (-0.5) + 0.0) \* 2 \* 2 = 8 damage
 
 ### Exemplu
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | M3ph1st0**, Azazel | Azazel - 615 health, 0.00 damage  |
 | | M3ph1st0** - 524 health, 16.00 damage |
@@ -1046,8 +1046,8 @@ E-mailurile sunt considerate a fi în **format** \{user\}\@\{host\}, unde:
 - Exemple de **e-mailuri valide**: info\@softuni.org, kiki\@hotmail.co.uk, no-reply\@github.com, s.peterson\@mail.uu.net, info-bg\@software-university.software.academy 
 - Exemple de **e-mailuri invalide**: --123\@gmail.com, …\@mail.bg, .info\@info.info, _steve\@yahoo.cn, mike\@helloworld, mike\@.unknown.soft., s.johnson\@invalid-
 
-### Exemple
-| **Input** | **Output** |
+### Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | Just send email to s.miller@mit.edu and j.hopking@york.ac.uk for more information. | s.miller@mit.edu  |
 | | j.hopking@york.ac.uk |

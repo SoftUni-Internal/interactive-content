@@ -36,7 +36,7 @@ Acest obiect de potrivire vă permite apoi să executați **operații regex pe u
 [/slide]
 
 [slide hideTitle]
-# Metode de potrivire
+# Metode de Potrivire
 
 The `find()` method scans the input sequence looking for the next subsequence that matches the pattern.
 

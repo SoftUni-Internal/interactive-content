@@ -1,7 +1,11 @@
-[slide]
+# Lesson Introduction
+
+[slide hideTitle]
+
+# Lesson Content
 
 
-# În această lecție veți afla despre:
+## În această lecție veți afla despre:
 
 1. **RegEx**
 

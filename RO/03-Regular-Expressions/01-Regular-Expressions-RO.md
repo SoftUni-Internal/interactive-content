@@ -1,7 +1,7 @@
 # Regular Expressions
 
 [slide hideTitle]
-# Ce sunt Expresiile Regulate??
+# Ce sunt Expresiile Regulate?
 
 **Abrevierea** pentru **expresia regulată** este **regex**.
 
@@ -17,8 +17,8 @@ O **expresie regulată** definește un  **șablon de căutare** pentru **șiruri
  
 Puteți **juca** cu **regex live** la:
 
-- [regexr.com](regexr.com)
-- [regex101.com](regex101.com)
+- [Regexr](regexr.com)
+- [Regex101](regex101.com)
 
 
 [/slide]
@@ -33,7 +33,7 @@ Puteți **juca** cu **regex live** la:
 
 [slide hideTitle]
 
-# Clasele de caractere
+# Clasele de Caractere
 
 În **contextul expresiilor regulate**, o clasă de caractere este un **set de caractere încadrate între paranteze drepte**.
   
@@ -74,19 +74,19 @@ Specifică **caracterele** care **se vor potrivi cu succes** unui **singur carac
 - `\w` - se potrivește cu un caracter alfanumeric \[a-z, A-Z, 0-9, _\]
 [image assetsSrc="regex-example(5).png" /]
 
-- `\W` - se potrivește cu un caracter nealfanumeric (opusul lui \ w)|
+- `\W` - se potrivește cu un caracter nealfanumeric (opusul lui \w)
 [image assetsSrc="regex-example(6).png" /]
 
 - `\s` - se potrivește cu un caracter de **whitespace**
 [image assetsSrc="regex-example(7).png" /]
 
-- `\S` - se potrivește cu orice în afară de whitespace(opusul lui \s)|
+- `\S` - se potrivește cu orice în afară de whitespace(opusul lui \s)
 [image assetsSrc="regex-example(8).png" /]
 
 - `\d` - se potrivește cu o **cifră** \[0-9\]
 [image assetsSrc="regex-example(9).png" /]
 
-- `\D` -se potrivește cu orice în afară de **cifră**
+- `\D` - se potrivește cu orice în afară de **cifră**
  [image assetsSrc="regex-example(10).png" /]
 
 

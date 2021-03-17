@@ -1,4 +1,4 @@
-# Cuantificatori și gruparea
+# Cuantificatori și Gruparea
 
 [slide hideTitle]
 # Cuantificatori
@@ -59,7 +59,7 @@ Textul verde evidențiat este un grup care nu este capturat.
 [slide hideTitle]
 # Problem with Solution: Match All Words
 
-Scrieți o **expresie regulată** la [www.regex101.com](www.regex101.com) care **extrage toate cuvintele** secvențe de caractere **dintr-un text dat**.
+Scrieți o **expresie regulată** la [regex101](www.regex101.com) care **extrage toate cuvintele** secvențe de caractere **dintr-un text dat**.
 
 [image assetsSrc="regex-example(25).png" /]
 
@@ -79,7 +79,7 @@ Scrieți o **expresie regulată** care **extrage datele din text**.
 
 
 [slide hideTitle]
-# Problemă: Validare e-mail
+# Problemă: Validare E-mail
 
 Scrieți o expresie regulată care efectuează **validare simplă a e-mailului**
 
