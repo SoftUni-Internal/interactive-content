@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Program {
   public static void main(String[] args) {
-    // Scrieți codul aici
+    // Write your code here
   }
 }
 ```
@@ -19,7 +19,7 @@ public class Program {
 Scrieți un program pentru a calcula viteza în funcție de timp și distanță:
   * Citește 2 numere în virgulă mobilă: distanță și timp
   * Calculează viteza necesară pentru a parcurge o distanță dată pentru un anumit timp
-  * Imprima rezultatul calculat
+  * Imprimă rezultatul calculat
   * Folosește formula: **viteză = distanță/timp**
   
 ## Exemplu
@@ -93,17 +93,17 @@ import java.util.Scanner;
 
 public class Program {
   public static void main(String[] args) {
-      // Scrieți codul aici
+      // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program pentru convertirea din USD la EUR:
-  * Citește **numărul în virgulă mobilă**: dolarii care urmează să fie convertite
-  * Convertează **dolari în euro** (utilizați **rata fixă** de dolari în euro: 0.88)
-  * Imprima valoarea convertită în euro
+Scrieți un program pentru convertirea din USD în EUR:
+  * Citește **numărul în virgulă mobilă**: suma în dolari care urmează să fie convertită
+  * Convertește **dolari în euro** (utilizați **rata fixă** de dolari în euro: 0.88)
+  * Imprimă valoarea convertită în euro
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -177,7 +177,7 @@ import java.util.Scanner;
 
 public class Program {
   public static void main(String[] args) {
-      // Scrieți codul aici
+      // Write your code here
     }
 }
 ```
@@ -187,8 +187,8 @@ public class Program {
 Scrieți un program pentru a calcula aria triunghiului:
 
    * Citește din intrare `latura` și `înălțimea` - **numere în virgulă mobilă**.
-   * Calculeaza aria triunghiului.
-   * Imprima aria, formatată la a doua cifră după punctul zecimal.
+   * Calculează aria triunghiului.
+   * Imprimă aria, formatată la a doua cifră după punctul zecimal.
   
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -198,7 +198,7 @@ Scrieți un program pentru a calcula aria triunghiului:
 
 [hints]
 [hint]
-Formula pentru calcularea ariei unui triunghi este- Area = 1/2 \* a \* h
+Formula pentru calcularea ariei unui triunghi este - Area = 1/2 \* a \* h
 [/hint]
 [/hints]
 
@@ -267,7 +267,7 @@ import java.util.Scanner;
 
 public class Program {
   public static void main(String[] args) {
-      // Scrieți codul aici
+      // Write your code here
     }
 }
 ```
@@ -276,7 +276,7 @@ public class Program {
 ## Descriere
 Scrieți un program care:
   * Citește 2 **numere reale** de pe consolă
-  * Efectuează 4 **operații aritmetice** pe cele 2 numere obținute, în următoarea ordine:`+`, `-`, `*`, `/`
+  * Efectuează 4 **operații aritmetice** cu cele 2 numere obținute, în următoarea ordine:`+`, `-`, `*`, `/`
   * Formatează și imprimă rezultatele ca în acest exemplu:
 
 ## Exemplu
@@ -352,7 +352,7 @@ import java.util.Scanner;
 
 public class Program {
   public static void main(String[] args) {
-      // Scrieți codul aici
+      // Write your code here
     }
 }
 ```
@@ -361,8 +361,8 @@ public class Program {
 ## Descriere
 Scrieți un program pentru a converti **zile** în **minute**:
   * Citește un **singur număr întreg** (zilele vor fi transformate)
-  * Transforma zilele în minute (utilizați calcule)
-  * **Imprima** minutele
+  * Transformă zilele în minute (utilizați calcule)
+  * **Imprimă** minutele
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -441,7 +441,7 @@ import java.util.Scanner;
  
 public class Program {
   public static void main(String[] args) {
-      // Scrieți codul aici
+      // Write your code here
     }
 }
 ```
@@ -450,8 +450,8 @@ public class Program {
 ## Descriere
 Scrieți un program pentru a calcula aria și perimetrul cercului:
   * Citește un **număr cu virgulă mobilă**: raza unui cerc
-  * Calculeaza **aria și perimetrul** unui cerc
-  * Imprima valorile calculate
+  * Calculează **aria și perimetrul** unui cerc
+  * Imprimă valorile calculate
     * utilizați **formatarea implicită** pentru numerele cu virgulă mobilă în Java în Output (ca în exemplul de mai jos)
 
 ## Exemplu
@@ -532,7 +532,7 @@ import java.util.Scanner;
 
 public class Program {
   public static void main(String[] args) {
-      // Scrieți codul aici
+      // Write your code here
     }
 }
 ```
@@ -625,7 +625,7 @@ import java.util.Scanner;
 
 public class Program {
   public static void main(String[] args) {
-      // Scrieți codul aici
+      // Write your code here
     }
 }
 ```
@@ -633,12 +633,12 @@ public class Program {
 [task-description]
 ## Descriere
 Scrieți un program care:
-  * Citește **3 rânduri** de Input: nume (**șir**), populație și zonă (**numere întregi**)..
+  * Citește **3 rânduri** de intrare: nume (**șir**), populație și zonă (**numere întregi**)
   * Tipărește informațiile despre un oraș în următorul format: 
    "**Town** \{**name**\} **has population of** \{**population**\} **and area** \{**area**\} **square km.**"
 
 ## Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Berlin | Town Berlin has population of 3675000 and area 984 square km. |
 | 3675000 |  |
@@ -711,7 +711,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {r
-        // Scrieți codul aici
+        // Write your code here
     }
 }
 ```
@@ -807,14 +807,14 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care să calculeze câte ore va fi necesar unui arhitect pentru a crea proiecte ale unor obiecte de construcție.
+Scrieți un program care să calculeze câte ore vor fi necesare unui arhitect pentru a crea proiecte ale unor obiecte de construcție.
 
 Crearea unui proiect durează aproximativ 3 ore.
 
@@ -966,7 +966,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Write your code here
     }
 }
 ```
@@ -1073,14 +1073,14 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Grădinarul își vinde recolta la piața de legume.
+Grădinarul își vinde recolta la piața de legume. Trebuie să îl ajutăm la calcule.
 
 El vinde legume cu **N dolari** pe kilogram și fructe cu **M dolari** pe kilogram.
 
@@ -1090,8 +1090,8 @@ Scrieți un program care calculează veniturile din recoltă în euro (**1 USD =
 Intrarea va fi de **4 numere**, fiecare pe o **singură linie**:
 - Prețul kilogramului de legume - **număr în virgulă mobilă** [0.00 ... 1000.00]
 - Prețul kilogramului de fructe - **număr în virgulă mobilă** [0.00 ... 1000.00]
-- Kilograme in total de legume - **un număr întreg** [0 ... 1000]
-- Kilograme in total de fructe - **un număr întreg** [0 ... 1000]
+- Kilograme în total de legume - **un număr întreg** [0 ... 1000]
+- Kilograme în total de fructe - **un număr întreg** [0 ... 1000]
 
 ## Ieșire
 Imprimați pe consolă un **singur număr**: venitul din toate fructele și legumele în euro.
@@ -1274,7 +1274,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Write your code here
     }
 }
 ```
@@ -1282,16 +1282,16 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program care să calculeze cheltuielile pentru cumpărarea alimentelor pentru câini și alte animale.
+Scrieți un program care să calculeze cheltuielile pentru cumpărarea alimentelor pentru câini și alte animale. Fiecare animal necesită un pachet de alimente.
 
-Fiecare pachet de alimente pentru câini costă 2.5 dolari, iar fiecare altul care NU este pentru ei - 4 dolari.
+Fiecare pachet de alimente pentru câini costă 2.5 dolari, iar fiecare altul care NU este pentru câini - 4 dolari.
 
 ## Intrare
 
-Input va fi două linii de pe consolă:
+Intrarea va fi două linii de pe consolă:
 - Număr de câini - un număr întreg în intervalul \[0 ... 100 \]
 
-- Numărul de celelalte animale - un număr întreg în intervalul \[0 ... 100 \]
+- Numărul celorlalte animale - un număr întreg în intervalul \[0 ... 100 \]
 
 ## Ieșire
 Imprimați pe consolă: "\{**total sum**\} **dollars**". Rezultatul trebuie să fie formatat la al doilea punct zecimal.
@@ -1439,7 +1439,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Write your code here
     }
 }
 ```
@@ -1457,15 +1457,15 @@ Ciiți de la consola **prețurile** de macrou și șprot, cantitatea de ton, mac
 
 ## Intrare
 Trebuie să citiți **5 numere** de pe consolă:
-- Prețul macrouului pe kilogram - **în virgulă mobilă** număr în intervalul [0.00 ... 40.00]
-- Prețul șproturilor pe kilogram - **în virgulă mobilă** număr în intervalul [0.00 ... 30.00]
+- Prețul macroului pe kilogram - **în virgulă mobilă** număr în intervalul [0.00 ... 40.00]
+- Prețul șprotului pe kilogram - **în virgulă mobilă** număr în intervalul [0.00 ... 30.00]
 - Kilograme de ton - **în virgulă mobilă** număr în intervalul [0.00 ... 50.00]
 - Kilograme de macrou - **număr în virgulă mobilă** în intervalul [0.00 ... 70.00]
 - Kilograme de midii - **număr întreg** în intervalul [0 ... 100]
 
 ## Ieșire
 
-Imprimați pe consolă un singur număr cu virgulă mobilă: banii pe care George îi va trebui să plătească factura, formatate la **a doua zecimală**.
+Imprimați pe consolă un singur număr cu virgulă mobilă: banii de care George are nevoie să plătească factura, formatat la **a doua zecimală**.
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -1650,7 +1650,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -1666,9 +1666,9 @@ Compania oferă 18% **reducere** din prețul total.
 
 ## Intrare
 
-Singură linie de la consolă:
+O singură linie de la consolă:
 
-- Metri pătrați care vor fi amenajate - **număr în virgulă mobila** în intervalul \[0.00 ... 10000.00\]
+- Metri pătrați care vor fi amenajați - **număr în virgulă mobila** în intervalul \[0.00 ... 10000.00\]
 
 ## Ieșire
 
