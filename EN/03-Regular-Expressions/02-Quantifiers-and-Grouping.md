@@ -39,32 +39,32 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-11-Grouping-Expressions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We can split regex into **groups** and we can use these groups to **extract information** about **part of the match**.
+We can split a regular expression into **groups** and we can use these groups to **extract information** about **part of the match**.
 
 - `subexpression` - Captures the matched subexpression as numbered group
 
 [image assetsSrc="regex-example(17).png" /]
 
-In the example above there is only one group - the green highlighted text.
+In the example above, there is only one group - the green highlighted text.
 
 - `?:subexpression` - Defines a non-capturing group
 
 [image assetsSrc="regex-example(18).png" /]
 
-The green highlighted text is a non-capture group.
+In the example above, the green highlighted text represents a non-capturing group.
 
 - `?<name>subexpression` - Defines a named capturing group
 
 [image assetsSrc="regex-example(19).png" /]
 
-In the example above **day**, **month**, **year** are the group's names.
+In the example above, the group's names are: **day**, **month**, and **year**.
 
 [/slide]
 
 [slide hideTitle]
 # Problem with Solution: Match All Words
 
-Write a **regular expression** at [www.regex101.com](www.regex101.com) which **extracts all word** char sequences **from a given text**.
+Create a **regular expression** that will **extract all words from a given text**, by using the following website: [www.regex101.com](www.regex101.com)
 
 [image assetsSrc="regex-example(25).png" /]
 
@@ -75,7 +75,7 @@ Write a **regular expression** at [www.regex101.com](www.regex101.com) which **e
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-24-Problem-and-Soluttion-Match-Dates-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Write a **regular expression** that **extracts dates from text**.
+Create a **regular expression** that will **extract all valid dates from a given text**.
 
 - Valid date format: `dd-MMM-yyyy`
 - Examples: `12-Jun-1999`, `3-Nov-1999`
@@ -89,15 +89,15 @@ Write a **regular expression** that **extracts dates from text**.
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-13-Probelm-and-solution-email-validation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Write a regular expression that performs simple **email validation**
+ Create a regular expression that performs simple **email validation**
 
-- An email consists of: **username**, **@**, **domain name**
+- An email consists of: a **username**, **@**, and a **domain name**
 
-- **Usernames** are **alphanumeric**
+- All **usernames** are **alphanumeric**
 
-- **Domain names** consist of **two strings**, separated by a **period**
+- The **Domain names** consist of **two strings**, separated by a **dot**
 
-- **Domain names** may contain only **English letters**
+- The **Domain names** may contain only **English letters**
 
 [image assetsSrc="regex-example(27).png" /]
 
