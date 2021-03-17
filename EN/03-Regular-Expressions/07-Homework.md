@@ -365,7 +365,7 @@ Before processing each line of input, you have to do some **validations**.
 Each valid line should contain a **customer**, a **product**, a **count**, and a **price**.
 
 A **valid**: 
-- The **Customer's name** should be surrounded by **%** and must start with a capital letter, followed only by lower-case letters
+- The **Customer's name** should be surrounded by `%` and must start with a capital letter, followed only by lower-case letters
 - The **Product's name** should be surrounded by '\<' and '\>' 
 - The **Count** should be an integer, surrounded by '\|'
 - The **Price** is a real number, followed by '$'
