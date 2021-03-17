@@ -1,9 +1,9 @@
 [slide hideTitle]
 # Stream API
 
-Java Stream API provides a **functional approach to process collections of objects/elements**. 
+The Java **Stream API** provides a **functional approach to process collections of objects/elements**. 
 
-It allows to **reduce the code**, to create **more readable programs**, and to **improve productivity**. 
+It allows us to **reduce the code**, to create **more readable programs**, and to **improve productivity**. 
 
 It also provides **easier coding of parallel operations**. 
 
@@ -15,7 +15,7 @@ The stream does **not change the original data structure**, it provides result.
 
 Stream pipeline is a **chain of stream source**, **intermediate operations**, and a **terminal operation**. 
 
-The API has many **terminal operations** that aggregate a stream to a **type** or a **primitive**:  
+The API has many **terminal operations** that aggregate a stream to a **type**:
 
 - `count()` 
 
@@ -27,11 +27,11 @@ The API has many **terminal operations** that aggregate a stream to a **type** o
 
 These operations work according to the predefined implementation. 
 
-It is called **terminal operation** because in order to get the minimum value, for example, have to **traverse the values inside the stream** and get the result. 
+It is called **terminal operation** because, in order to get the minimum value, we have to **traverse the values inside the stream** and get the result. 
 
-After getting the min value it is **not possible to convert that back into the stream** because the minimum value is just a value. 
+After getting the min value, it is **not possible to convert that back into the stream**. 
 
-Most of the methods use lambda expressions on the stream.
+Most of the methods use **lambda expressions** on the stream.
 
 [/slide]
 
@@ -41,7 +41,7 @@ Most of the methods use lambda expressions on the stream.
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-19-20-21-processing-arrays-with-stream-api-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Using **one line operations** on arrays instead of writing loops with indexes or `for-each` loops for simple operations when processing data:
+We can process Arrays using **one line operations** instead of writing loops with indexes or `for-each` loops for simple operations when processing data:
 
 - `min()` - Finds and returns the **smallest** element in a collection
 
@@ -53,7 +53,7 @@ int min = Arrays.stream(numbers)
 System.out.println(min);
 ```
 
-It is possible to set an alternative return value instead of the minimum value, using `orElse()`.
+It is possible to set an alternative return value instead of the minimum value using the `orElse()` method.
 
 ```java live
 int [] numbers = new int[]{15, 25, 35};
@@ -63,7 +63,7 @@ int min = Arrays.stream(numbers)
 System.out.println(min);
 ```
 
-The value set in the `orElse()` operation is returned, if the array is empty.
+The value set in the `orElse()` operation is returned if the array is empty.
 
 ```java live
 int [] numbers = new int[]{};
@@ -275,11 +275,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Read an array of **strings**, take only words which length is **even**.
+Read an array of **strings**. Print each word on a new line, whose length is an **even** number.
 
 ## Input / Constraints
 
-Read an array of strings.
+Read an array of **strings**.
 
 ## Output
 
@@ -571,18 +571,19 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Read a **list of integers** and **print largest 3 of them**.
+Read a **list of integers** and **print the 3 largest integers**.
 
 If there are **less** than 3, print **all** of them.
 
-Order the list using **Stream API**.
+Order the list using the **Stream API**.
 
 ## Input / Constraints
+
 Read a list of integers.
 
 ## Output 
 
-Print top 3 numbers with **for** loop.
+Print the 3 largest numbers.
 
 ## Examples
 | **Input** | **Output** |
