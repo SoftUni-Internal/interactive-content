@@ -930,7 +930,9 @@ public class Main {
 ## Description
 Create a program that reads a sequence of numbers and a special **bomb** number **holding a certain power**.
 
-Your task is to **detonate every occurrence of the special bomb number** and according to its power **its neighbors from left and right**.
+Your task is to **detonate every occurrence of the special bomb number** and according to its power **the numbers to its left and right**.
+
+The bomb power refers to how many numbers to the left and right will be removed, no matter their values.
 
 Detonations are performed **from left to right** and all the detonated numbers **disappear**.
 
@@ -1056,21 +1058,21 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You will be given two hands of cards, which will be represented by **integer numbers**.
+You will be given two hands of cards, which will be represented by **integers**.
 
-Assume that you have **two players**.
+Assume each one is held by a different player **two players**.
 
 You have to **find** which one has the **winning deck**.
 
 You start from the beginning of both hands of cards. **Compare** the cards from the first deck to the cards from the second deck. 
 
-The player, **who has the more powerful card**, takes both cards and puts them at the back of his hand - the second player's card is last, and the first person's card (the winning one) is before it (second to last) and the player with the less powerful card must remove the card from his deck. 
+The player, **who holds the more powerful card** on the current iteration, takes both cards and puts them at the back of his hand - the second player's card is placed last, and the first person's card (the winning one) comes after it (second to last)  
 
-If both players' cards **have the same values** - no one wins, and the two cards must be removed from the decks. 
+If both players' cards **have the same values** - no one wins, and the two cards must be removed from both hands. 
 
-The **game is over** when one of the decks is left **without any cards**. 
+The **game is over** when only one of the decks is left **without any cards**. 
 
-You have to **print the winner to the console** and **the sum of the remaining** cards: "\{First/Second\} player wins! Sum: \{sum\}".
+You have to **display the result on the console** and **the sum of the remaining** cards: "\{First/Second\} player wins! Sum: \{sum\}".
 
 ### Example
 | **Input** | **Output** |
@@ -1157,13 +1159,13 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program to **append several arrays** of numbers.
+Create a program to **append several arrays** of numbers one after another.
 
 - **Arrays** are **separated** by '\|'
 
-- **Values** are **separated** by spaces (' ', one or several)
+- Their **Values** are **separated** by spaces (' ', one or several)
 
-- Order the arrays from the last to the first, and their values from left to right
+- Take all arrays starting from the **rightmost** and going to the **left** and place them in a new array in that order.
 
 ### Example
 | **Input** | **Output** |
@@ -1252,15 +1254,15 @@ Then you will **begin receiving integers**, which will correspond to **indexes**
 
 **When you receive an index**, you must **remove the element at that index** from the sequence (as if you've captured the pokemon).
 
-You must increase the value of all elements in the sequence, which are **less than or equal to the removed element** with the **value of the removed element**.
+You must increase the value of all elements in the sequence, which are **less than or equal to the removed element** by the **value of the removed element**.
 
-You must decrease the value of all elements in the sequence, which are **greater than the removed element** with the **value of the removed element**.
+You must decrease the value of all elements in the sequence, which are **greater than the removed element** by the **value of the removed element**.
 
-If the given index is **less than 0**, **remove the first element of the sequence** and **copy the last element to its place**.
+If the given index is **less than 0**, **remove the first element of the sequence** and **copy the last element at its place**.
 
-If the given index is **greater than the last index of the sequence**, **remove the last element from the sequence** and **copy the first element to its place**.
+If the given index is **greater than the last index of the sequence**, **remove the last element from the sequence** and **copy the first element at its place**.
 
-Increasing and decreasing of elements should also be done in these cases. 
+Increasing and decreasing all elements should be performed in all cases. 
 
 The element, whose value you should use, is the **removed element**.
 
@@ -1273,7 +1275,7 @@ The **program ends** when **no more elements remain** in the sequence.
 - On the next several lines you will receive integers - the indexes
 
 ### Output
-When the program ends, you must print the summed up value of all REMOVED elements to the console
+When the program ends, you must print the summed up value of all REMOVED elements
 
 ### Example
 | **Input** | **Output** |
@@ -1284,19 +1286,19 @@ When the program ends, you must print the summed up value of all REMOVED element
 | 0 | |
 
 **Comments:**
-- The array is \{4, 5, 3\} The index is 1
+- The array conists of \{4, 5, 3\} The index is 1
 
 - We remove 5, and we increase all index numbers that are smaller than 5 and decrease all index numbers bigger
 
-- In this case, there are smaller than 5
+- In this case, there are elements less than 5
 
 - The result is \{9, 8\}
 
-- The index is 1. So we remove 8 and decrease all higher than it
+- The index is 1. So we remove 8 and decrease all elements greater than it
 
 - The result is \{1\}
 
-- The index is 0. So we remove 1
+- The next index is 0. So we remove 1
 
 - There are no elements left, so we print the sum of all removed elements 
 
@@ -1554,11 +1556,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You are tasked to help planning the next Programming Fundamentals course by keeping track of the lessons, that are going to be included in the course, as well as all the exercises for the lessons.
+Help planning the next Programming Fundamentals course by keeping track of the lessons, that are going to be included in the course, as well as all the exercises for the lessons.
 
-On the first input line, you will receive the initial schedule of lessons and exercises that are going to be part of the next course, separated by comma and space ", ". 
+On the first input line, you will receive the initial schedule of lessons and exercises that are going to be part of the next course, separated by a comma and a space ", ". 
 
-But before the course starts, there are some changes to be made. 
+Before the course starts, there are some changes to be made. 
 
 Until you receive the "course start" command, you will be given some **commands to modify the course schedule**. 
 
@@ -1572,10 +1574,10 @@ The **possible commands** are:
 
 - Swap:\{lessonTitle\}:\{lessonTitle\} - **swap the position** of the two lessons, **if they exist**
 
-- Exercise:\{lessonTitle\} - **add the Exercise in the schedule right after the lesson index**, if the lesson exists and there is no exercise already, in the following format: "- - - \{lessonTitle\}-Exercise"
-    - if the **lesson doesn't exist**, **add** the lesson **to the end** of the course schedule, **followed by the exercise**
+- Exercise:\{lessonTitle\} - **add the Exercise to the schedule right after the lesson index**, if the lesson exists and there is no exercise already, in the following format: "- - - \{lessonTitle\}-Exercise"
+    - if the **lesson does not exist**, **add** the lesson **to the end** of the course schedule, **followed by the exercise**
 
-Each time you **Swap or Remove a lesson,** you should **do the same with the exercises**, if there are any, which follow the lessons.
+Each time you **Swap or Remove a lesson,** you should **do the same with the exercises**, if there are any followinf the lessons.
 
 ### Example
 | **Input** | **Output** |
