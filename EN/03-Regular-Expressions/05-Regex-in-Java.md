@@ -77,9 +77,9 @@ public class Main {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-20-Replacing-with-Regex-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-There are **two** ways to replace a pattern with **Regex**:
+There are **two** methods that we can use to replace a part of a string with another string, using a **regular expression**.
 
-- `replaceAll()` - Replaces all the matched subsequences in the input with the given string value and returns the result
+- `replaceAll()` - Replaces all the substrings that fits the given regular expression with the replacement string and returns the result
 
 ```java live
 import java.util.regex.Matcher;
@@ -98,8 +98,8 @@ public class Main {
 }
 ```
 
-- `replaceFirst()` - Replaces the first matched subsequences in the input with the given string value and returns the result
-
+- `replaceFirst()` - Replaces the first substring that fits the specified regular expression with the replacement string and returns the result
+  
 ```java live no-template
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -126,7 +126,7 @@ public class Main {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-21-Splitting-with-Regex-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The `split(String pattern)` method splits the text by the pattern and returns a `String[]`.
+The `split(String pattern)` method splits the text by the specified pattern and returns a `String[]`.
 
 ```java live
 String text = "1   2 3      4";
@@ -161,7 +161,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a Java Program to **match full names** from a list of names and **print** them on the console.
+Create a program that **matches all valid full names** from a given list of names, and **prints** them out.
+The input will consist of one line and it will contain a few full names.
+Your task is to create a regular expression to check which the valid names are.
 
 ## Examples
 | **Input** | **Output** |
@@ -282,9 +284,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a regular expression to match all numbers from a given string.
+Create a regular expression that matches all **numbers** from a given string.
 
-After you find all numbers, print them on the console, separated by space " ".
+Print the valid numbers out, separated by a **single space**.
 
 ## Examples
 | **Input** | **Output** |
