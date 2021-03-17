@@ -5,7 +5,7 @@
 
 ## In această lecție ați învățat:
 
-- Map conține perechi \{`key` \-\> `value`\}
+- Map conține perechi `{key -> value}`
     - keyset cuprinde un set de chei unice
     - values cuprinde o colecție de valori 
     - iterarea over map consideră intrările ca `Map.Entry<K, V>`

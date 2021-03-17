@@ -24,6 +24,7 @@ Este posibil să scriem la fel, folosind expresia lambda:
 ```java
 (a -> a > 5)
 ```
+
 Exemple:
 
 - Această funcție lambda `x -> x / 2` este echivalentul metodei care acceptă un parametru integer ca un singur parametru și returnează un integer împărțit în 2:

@@ -27,7 +27,7 @@ Aici pot fi stocate **different values for the same Key in different Map instanc
 
 De exemplu:
 
-| *Name* | *Phone number* |
+| **Name** | **Phone number** |
 | ------- | --------- |
 | **Key** | **Value** |
 | John Smith | +1-555-8976 |
@@ -122,7 +122,7 @@ It is important to know that once the `Key` and the `Value` are set, the map can
 
 
 [slide hideTitle]
-# Built-in methods
+# Built-in Methods
 
 There are several built-in methods for a `HashMap`: 
 
@@ -228,7 +228,7 @@ System.out.println(airplanes.isEmpty());
 [/slide]
 
 [slide hideTitle]
-# Iterarea prin Map
+# Iterarea Prin Map
 
 Iterarea prin obicete de tip  `Map.Entry <K, V>`. 
 
@@ -299,18 +299,18 @@ Citiți o **list of real numbers** și imprimați-le în ordine **ascending orde
 ## Exemple
 | **Input** | **Output** |
 | --- | --- |
-| 82282 | 2 -> 3 |
+| 8 2 2 8 2 | 2 -> 3 |
 |  | 8 -> 2 |
 
 | **Input** | **Output** |
 | --- | --- |
-| 1513 | 1 -> 2 |
+| 1 5 1 3 | 1 -> 2 |
 |  | 3 -> 1 |
 |  | 5 -> 1 |
 
 | **Input** | **Output** |
 | --- | --- |
-| -2002 | -2 -> 1 |
+| -2 0 0 2 | -2 -> 1 |
 |  | 0 -> 2 |
 |  | 2 -> 1 |
 
@@ -432,11 +432,11 @@ Cheia **key** din map va fi **word**.
 
 Valoarea **value** va fi o **list of all the synonyms of that word**.
 
-### Input / Constraints
+## Input / Constraints
 
 Veți primi un număr **n**.
 
-Pe următoarele **2 * n** linii veți primi un **word** și un **synonym**, fiecare pe o linie separată, astfel :
+Pe următoarele **2 * n** linii veți primi un **word** și un **synonym**, fiecare pe o linie separată, astfel:
 
 - \{**word**\}
 
@@ -444,7 +444,7 @@ Pe următoarele **2 * n** linii veți primi un **word** și un **synonym**, fiec
 
 Dacă primiți același cuvânt de două ori, adăugați noi sinonime acestei liste.
 
-### Output 
+## Output 
 
 Imprimați cuvintele în următorul format:
 
@@ -645,11 +645,11 @@ public class Main {
 ## Enunț
 Scrieți un program care extrage dintr-o secvență dată de cuvinte, tpate elementele care sunt prezente în aceasta **odd number of times (case-insensitive)**.
 
-### Input / Constraints
+## Input / Constraints
 
 Cuvintele sunt date pe o **single line**, **space-separated**.
 
-### Output
+## Output
 
 Imprimați rezultatele ca elemente in **lowercase in their order of appearance separated by comma**.
 

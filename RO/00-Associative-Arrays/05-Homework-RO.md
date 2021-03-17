@@ -967,7 +967,7 @@ După ce ați executat toate comenzile, **print** toți **currently registered u
 - "\{**username**\} \=\> \{**licensePlateNumber**\}"
 
 ### Input
-- Prima linie: n – număr de comenzi – integer
+- Prima linie: n - număr de comenzi - integer
 - Următoarele n linii: comenzi într-unul dintre cele două formate posibile:
     - Register: "**register** \{**username**\} \{**licensePlateNumber**\}"
     - Unregister: "**unregister** \{**username**\}"
@@ -1911,7 +1911,7 @@ Sony
 [test]
 [input]
 Apple -> EG51303
-BestBuy -> IM52664	
+BestBuy -> IM52664
 Ebay -> AC22875
 Apple -> UQ49150
 Pepsi -> VU98184
@@ -1941,7 +1941,7 @@ Subway
 [test]
 [input]
 Apple -> EG51303
-BestBuy -> IM52664	
+BestBuy -> IM52664
 Ebay -> AC22875
 Pepsi -> DK12387
 Apple -> UQ49150
@@ -1970,14 +1970,14 @@ Subway
 [test]
 [input]
 Apple -> EG51303
-BestBuy -> IM52664	
+BestBuy -> IM52664
 Ebay -> AC22875
 Pepsi -> DK12387
 Apple -> UQ49150
 Subway -> UQ49150
 Pepsi -> VU98184
-BestBuy -> VU98184	
-BestBuy -> IM52664	
+BestBuy -> VU98184
+BestBuy -> IM52664
 Apple -> UQ49150
 Pepsi -> DK12387
 Subway -> QM12984
@@ -2025,17 +2025,17 @@ Nike
 [/test]
 [test]
 [input]
-BestBuy -> QW62766	
+BestBuy -> QW62766
 Pepsi -> YQ12022
 Pepsi -> HB92932
 Subway -> PU61190
 Apple -> GV85833
-BestBuy -> UJ28125	
+BestBuy -> UJ28125
 Subway -> ES16007
 Ebay -> PA51310
 Pepsi -> TO11520
 Apple -> PF47880
-BestBuy -> FG66075	
+BestBuy -> FG66075
 Subway -> RY44017
 Apple -> WT62658
 End
