@@ -1,7 +1,7 @@
-# Teme pentru acasă
+# Teme Pentru Acasă
 
 [slide hideTitle]
-# Problemă cu soluție: Sum Digits
+# Problemă cu Soluție: Sum Digits
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/RO/Java-While-Loops-Problem-and-Solution-Sum-Digits-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -29,9 +29,18 @@ Scrieți un program care:
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | 5634 | 18 |
+
 [/task-description]
 [tests]
 [test open]
+[input]
+5634
+[/input]
+[output]
+18
+[/output]
+[/test]
+[test]
 [input]
 123456
 [/input]
@@ -94,7 +103,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -154,7 +163,7 @@ Book found! Attempts: 12
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Find Min and Max
+# Problemă cu Soluție: Find Min and Max
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/RO/Java-While-Loops-Problem-and-Solution-Find-Min-and-Max-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -425,7 +434,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1201,7 +1210,7 @@ New House
 6
 Old Library
 6
-Fishing Boat 
+Fishing Boat
 6
 Enough
 [/input]
@@ -1484,7 +1493,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1746,15 +1755,15 @@ Citește din consolă:
 - Suma **așteptată de a fi adunată** din vânzări - un număr întreg în intervalul \[1...10000\] 
 
 Pe fiecare linie urmptoare  până la comanda **"End"** sau până la **adunarea fondurilor necesare**: 
-    - **Prețurile produselor** de cumpărat - un număr întreg în intervalul \[1...500\]
+- **Prețurile produselor** de cumpărat - un număr întreg în intervalul \[1...500\]
 
 ## Output
 Imprimă pe consolă:
 - In cazul unei tranzacții reușite: **"Product sold!"** 
 - In cazul unei tranzacții eșuate: **"Error in transaction!"**  
 - Dacă suma tuturor produselor cumpărate **depășește sau ajunge la suma expectată**, programul a fost finalizat și **două linii** sunt imprimate pe consolă: 
-    - **"Average CS: \{average payment in cash per person\}"**
-    - **"Average CC: \{average payment by card per person\}"**
+    - **"Average CS:** \{**average payment in cash per person**\}"
+    - **"Average CC:** \{**average payment by card per person**\}"
 Plățile trebuie **formatate la a două cifră după punctul zecimal**.
 - Când am primit comanda **"End"** , se scrie **o linie**:
     - **"Failed to collect required money for charity."**
@@ -1995,8 +2004,8 @@ Scrieți un program care să calculeze **nota medie** a unui student în întrea
 
 ## Input
 - Pe prima linie, veți primi **numele studentului**, pe fiecare linie următoare sunt notele pe ani
-- Studentul promovează anul dacă **nota anuală este 4.00 sau mai mare**. 
-- Dacă nota sa este mai mică decât 4.00, el trebuie să **repetă** clasa.
+- Studentul promovează anul dacă **nota anuală este 4.00 sau mai mare**
+- Dacă nota sa este mai mică decât 4.00, el trebuie să **repetă** clasa
 
 ## Output
 - Dacă studentul promovează clasa **12-ea** trebuie să imprime:
@@ -2291,7 +2300,7 @@ e
 End
 [/input]
 [output]
-Hello there 
+Hello there
 [/output]
 [/test]
 [test open]
@@ -2316,7 +2325,7 @@ D
 End
 [/input]
 [output]
-BooM 
+BooM
 [/output]
 [/test]
 [test]
@@ -2340,7 +2349,7 @@ n
 End
 [/input]
 [output]
-Solve me 
+Solve me
 [/output]
 [/test]
 [test]
@@ -2354,7 +2363,7 @@ n
 End
 [/input]
 [output]
-co 
+co
 [/output]
 [/test]
 [test]
@@ -2421,7 +2430,7 @@ n
 End
 [/input]
 [output]
-Here we go with the signs 
+Here we go with the signs
 [/output]
 [/test]
 [test]
@@ -2441,7 +2450,7 @@ n
 End
 [/input]
 [output]
-C O N 
+C O N
 [/output]
 [/test]
 [test]
@@ -2493,7 +2502,7 @@ k
 End
 [/input]
 [output]
-In the end 
+In the end
 [/output]
 [/test]
 [test]
@@ -2565,7 +2574,7 @@ k
 End
 [/input]
 [output]
-There Is A Hidden Message Not Printed 
+There Is A Hidden Message Not Printed
 [/output]
 [/test]
 [test]
@@ -2669,6 +2678,3 @@ I Like Naruto
 [code-io /]
 [/code-task]
 [/slide]
-
-
-

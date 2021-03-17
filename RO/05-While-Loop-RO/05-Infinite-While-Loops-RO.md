@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Bucla While infinită
+# Bucla While Infinită
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/RO/Java-While-Loops-21-22-23-24-25-Infinite-While-Loop-and-Example-with-Break-operator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -12,7 +12,7 @@ while (true) {
 }
 ```
 
-# Exemplu: Bucla While infinită (Bug)
+## Exemplu: Bucla While infinită (Bug)
 ```java
 String command = "Add";
 while (command != "End") {
