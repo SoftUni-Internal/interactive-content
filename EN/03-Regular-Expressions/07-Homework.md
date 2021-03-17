@@ -20,18 +20,18 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program to **calculate the total cost** of different types of furniture.
+Create a program that **calculates the total cost** of all bought furniture.
 
-You will be given some lines of input **until you receive the line** "Purchase". 
+You will be given some lines of input until you receive the **Purchase** command. 
 
-For the **line to be valid** it should be in the following **format**:
+A line is considered to be **valid** if it is in the following format:
 - "\>\>\{furniture name\}\<\<\{price\}!\{quantity\}"
 
-The price can be a **floating-point number or a whole number**. 
+The price can be a **floating-point** number or an **integer** number. 
 
-Store the **names of the furniture and the total price**. 
+You should store the **names of the furniture** and the **total price**. 
 
-At the end **print each bought furniture on a separate line** in the format:
+In the end, you should print out the **names of all bought furniture**, each on a new line in the following format:
 
 "Bought furniture:
 
@@ -41,8 +41,10 @@ At the end **print each bought furniture on a separate line** in the format:
 
 …"
 
-And **on the last line print** the following: 
-- "Total money spend: \{spend money\}" **formatted** to the second decimal point.
+**On the last line** print out the following message: 
+- "Total money spend: \{spend money\}" 
+
+Note that all numbers should be **formatted** to the second digit after the decimal point.
 
 
 ### Example
@@ -54,9 +56,9 @@ And **on the last line print** the following:
 | Purchase | Total money spend: 2436.69 |
 
 ### Comments
-- Only the Sofa and the TV are valid
-- For each of them we multiply the price by the quantity
-- Print the result
+- Only the **Sofa** and the **TV** are valid items 
+- For each one of them, we **multiply** the price by the quantity
+- We print out the result
 
 [/task-description]
 [code-io /]
