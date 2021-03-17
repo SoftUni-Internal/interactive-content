@@ -1577,7 +1577,7 @@ The **possible commands** are:
 - Exercise:\{lessonTitle\} - **add the Exercise to the schedule right after the lesson index**, if the lesson exists and there is no exercise already, in the following format: "- - - \{lessonTitle\}-Exercise"
     - if the **lesson does not exist**, **add** the lesson **to the end** of the course schedule, **followed by the exercise**
 
-Each time you **Swap or Remove a lesson,** you should **do the same with the exercises**, if there are any followinf the lessons.
+Each time you **Swap or Remove a lesson,** you should **do the same with the exercises**, if there are any following the lessons.
 
 ### Example
 | **Input** | **Output** |
