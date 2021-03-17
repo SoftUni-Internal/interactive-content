@@ -1,7 +1,7 @@
-# Teme pentru acasă
+# Teme Pentru Acasă
 
 [slide hideTitle]
-# Problemă cu soluție: Building
+# Problemă cu Soluție: Building
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/RO/interactive-programming-basics-with-java-nested-loops-36-problem-and-solution-building-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -182,7 +182,7 @@ A10 A11 A12
 [/slide]
 
 [slide hideTitle]
-# Problemă : Passwords
+# Problemă: Passwords
 [code-task title="Passwords" taskId="java-basics-nested-loops-passwords" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -266,7 +266,7 @@ Scrieți un program care:
 [/slide]
 
 [slide hideTitle]
-# Problemă : Magic Number
+# Problemă: Magic Number
 [code-task title="Magic Number" taskId="java-basics-nested-loops-magic-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -323,7 +323,7 @@ Scrieți un program care:
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Travelling
+# Problemă cu Soluție: Travelling
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/RO/interactive-programming-basics-with-java-nested-loops-36-problem-and-solution-travelling-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -725,7 +725,7 @@ Scrieți un program care:
 
 [hints]
 [hint]
-A prime number is a whole number that cannot be created by multiplying other whole numbers.
+Un număr prim este un număr întreg care nu poate fi creat prin înmulțirea altor numere întregi.
 [/hint]
 [/hints]
 
@@ -810,7 +810,7 @@ A prime number is a whole number that cannot be created by multiplying other who
 [/slide]
 
 [slide hideTitle]
-# Problemă : Unique PIN Codes
+# Problemă: Unique PIN Codes
 [code-task title="Unique PIN Codes" taskId="java-basics-nested-loops-unique-pin-codes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -893,7 +893,7 @@ Scrieți un program care:
 [/slide]
 
 [slide hideTitle]
-# Problemă : Letter Combinations
+# Problemă: Letter Combinations
 [code-task title="Letter Combinations" taskId="java-basics-nested-loops-letter-combinations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -950,7 +950,7 @@ aaa aac aca acc caa cac cca ccc 8
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Happy Numbers
+# Problemă cu Soluție: Happy Numbers
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/RO/interactive-programming-basics-with-java-nested-loops-36-problem-and-solution-happy-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -1071,7 +1071,7 @@ Intrarea constă din **2** linii:
 - A doua linie - minute - număr întreg în intervalul \[0 ... 59 \]
 
 ## Output
-- Orele trebuie să fie tipărite pe consolă în formatul "\{hour\} : \{minutes\}"
+- Orele trebuie să fie tipărite pe consolă în formatul "\{**hour**\} : \{**minutes**\}"
 ## Exemplu
 
 | **Intrare** | **Ieșire** |
@@ -1232,7 +1232,7 @@ Intrarea constă din **2** linii:
 [/slide]
 
 [slide hideTitle]
-# Problemă : Clock - Part 2
+# Problemă: Clock - Part 2
 [code-task title="Clock - Part 2" taskId="java-basics-nested-loops-clock-part2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1256,7 +1256,7 @@ Intrarea este introdusă din consolă ca **3** linii:
 - A treia linie - **secunde** - un număr întreg în intervalul \[0 ... 59 \]
 
 ## Output
-- Rezultatul trebuie să fie tipărit în următorul format "\{hour\} : \{minutes\} : \{seconds\}"
+- Rezultatul trebuie să fie tipărit în următorul format "\{**hour**\} : \{**minutes**\} : \{**seconds**\}"
 ## Exemplu
 
 | **Intrare** | **Ieșire** |
@@ -1544,16 +1544,16 @@ Scrieți un program care calculează **câte soluții în numere naturale (inclu
 
 [hints]
 [hint]
-Generate all combinations of 5 digits, the first is: 
-0\+0\+0\+0\+0=0, but because it is not equal to 25,
-continuing 0\+0\+0\+0\+1=1 - again, it\'s not 25, etc.
-We come to the first valid combination:
-0\+0\+0\+0\+25=25, expanding the number of valid
-combinations of 1, the second valid combination is:
-0\+0\+0\+1\+24=25
-The third: 0\+0\+0\+2\+23=25  etc.
-After generating all possible combinations,
-the number of valid combinations is 23751.
+Generați toate combinațiile de 5 cifre, prima este:
+0\+0\+0\+0\+0 = 0, dar pentru că nu este egal cu 25,
+continuarea 0\+0\+0\+0\+1 = 1 - din nou, nu este 25 etc.
+Ajungem la prima combinație validă:
+0\+0\+0\+0\+25 = 25, extinzând numărul de valide
+combinații de 1, a doua combinație validă este:
+0\+0\+0\+1\+24 = 25
+Al treilea: 0\+0\+0\+2\+23 = 25 etc.
+După generarea tuturor combinațiilor posibile,
+numărul combinațiilor valide este 23751.
 [/hint]
 [/hints]
 
@@ -1661,7 +1661,7 @@ the number of valid combinations is 23751.
 [/slide]
 
 [slide hideTitle]
-# Problemă : Word Wars
+# Problemă: Word Wars
 [code-task title="Word Wars" taskId="java-basics-nested-loops-word-wars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1681,7 +1681,7 @@ Scrieți un program care **calculează valoarea ASCII a câtorva cuvinte**, deoa
 Valoarea unui cuvânt este calculată atunci când însumați valorile **ASCII ale tuturor literelor din care este format**.
 
 De pe consolă citiți cuvinte până la comanda **"STOP"**, apoi tipăriți:
-- "Winner is \{winner word\} - \{value of the word\}!"
+- "**Winner is** \{**winner word**\} - \{**value of the word**\}!"
 
 
 ## Exemplu
@@ -2081,7 +2081,7 @@ Ajutați juriul care, scriind un program, să calculeze **scorul mediu** al **fi
 
 ## Output
 - După calcularea **scorului mediu** pentru o anumită prezentare, tipăriți pe consolă:
-   "\{name of the presentation\} \- \{average score\}."
+   "\{**name of the presentation**\} \- \{**average score**\}."
 - După ce ați primit comanda **"Finish"** pe consolă, tipăriți:
       "Student\'s final assessment is \{average presentations of all presentations\}." iar programul se încheie.
 
@@ -2524,4 +2524,3 @@ Student's final assessment is 4.54.
 [code-io /]
 [/code-task]
 [/slide]
-

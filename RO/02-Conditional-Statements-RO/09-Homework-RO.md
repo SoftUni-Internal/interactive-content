@@ -1,4 +1,4 @@
-# Teme pentru acasa
+# Teme Pentru Acasă
 
 [slide hideTitle]
 # Problemă: Guess the Password

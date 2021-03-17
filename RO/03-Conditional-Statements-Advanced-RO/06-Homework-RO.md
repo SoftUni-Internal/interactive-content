@@ -1,4 +1,4 @@
-# Homework
+# Teme Pentru Acasă
 
 [slide hideTitle]
 # Problemă: Fruit or Vegetable

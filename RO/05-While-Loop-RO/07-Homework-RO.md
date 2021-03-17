@@ -557,7 +557,7 @@ public class Program {
 Scrieți un program care: 
 
 * Primește **o sumă de bani** pentru fiecare tranzacție până la **"END"**
-* * Adaugă **banii în** soldul **și** tipărește: "**Increase:**\{**money**\}", formatează `banii` la **a două cifră** după virgula de zecimale 
+* Adaugă **banii în** soldul **și** tipărește: "**Increase:**\{**money**\}", formatează `banii` la **a două cifră** după virgula de zecimale 
 * După **"END"** calculează și **imprimă** suma totală din cont: "**Total:** \{**balance**\}", formatează `balance` până la **2nd digit** după punctul zecimal
 
 ## Exemplu
@@ -907,7 +907,7 @@ O notă slabe este mai mică sau egală cu 4.00.
   - "**Average score:** \{**average grade**\}"
   - "**Number of problems:** \{**number of ALL problems**\}"
   - "**Last problem:** \{**last problem\'s name**\}"
-- **Dacă obține numărul specificat de note slabe **:
+- **Dacă obține numărul specificat de note slabe**:
    - "**You need a break**, \{**number poor grades**\} **poor grades.**"
 
 **Nota medie ar trebui să fie formatată la a doua zecimală.**

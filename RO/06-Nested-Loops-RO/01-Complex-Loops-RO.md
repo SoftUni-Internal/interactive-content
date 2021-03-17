@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Bucle complexe
+# Bucle Complexe
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/RO/interactive-programming-basics-with-java-nested-loops-8-9-complex-loops-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -33,7 +33,7 @@ for (int j = 16; j > 1; j /= 2) {
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Numbers from N down to 1
+# Problemă cu Soluție: Numbers from N Down to 1
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/RO/interactive-programming-basics-with-java-nested-loops-10-problem-and-solution-numbers-from-n-down-to-one-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -109,7 +109,7 @@ Programul primește un număr `n` și imprimă numerele de la `n` până 1.
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Numbers from 1 to N with Step 3
+# Problemă cu Soluție: Numbers from 1 to N with Step 3
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/RO/interactive-programming-basics-with-java-nested-loops-12-problem-and-solution-numbers-from-one-to-n-with-step-three-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -197,7 +197,7 @@ Scrieți un program care imprimă numerele de la  1 până la `n` cu pasul 3:
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Even Powers of 2
+# Problemă cu Soluție: Even Powers of 2
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/RO/interactive-programming-basics-with-java-nested-loops-14-problem-and-solution-even-powers-of-two-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

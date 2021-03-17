@@ -36,7 +36,7 @@ Acest lucru are loc:
 
 Aici se află un **exemplu** care ilustrează utilizarea buclelor imbricate. 
 
-Scopul este, din nou, imprimarea unui dreptunghi format din `n` * `n` steluțe, în care, pentru fiecare linie, bucla iterează de la **1** la `n`, iar pentru fiecare coloană se execută o buclă imbricată de la **1** la * `n`:
+Scopul este, din nou, imprimarea unui dreptunghi format din `n` \* `n` steluțe, în care, pentru fiecare linie, bucla iterează de la **1** la `n`, iar pentru fiecare coloană se execută o buclă imbricată de la **1** la \* `n`:
 
 ```java live
 int n = 5;
@@ -64,7 +64,7 @@ Bucla interioară se va executa de câte ori se execută conținutul buclei exte
 
 [slide hideTitle]
 
-# Nivele multiple de bucle imbricate
+# Nivele Multiple de Bucle Imbricate
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/RO/interactive-programming-basics-with-java-nested-loops-22-multiple-levels-of-nested-loops-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
