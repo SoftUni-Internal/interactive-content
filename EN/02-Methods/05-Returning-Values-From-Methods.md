@@ -5,7 +5,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-27-28-The-return-statement-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The `return` keyword returns a value from the method.
+The `return` keyword returns a value and ends the method execution.
 
 
 ```java live
@@ -34,12 +34,12 @@ The return value can be:
 int max = getMax(5, 10);
 ```
 
-- **Used** in expression
+- **Used** in expressions
 ```Java
 double total = getPrice() * quantity * 1.20;
 ```
 
-- **Passed** to another method
+- **Passed** in to another method
 ```Java
 int age = Integer.parseInt(sc.nextLine());
 ```
@@ -65,7 +65,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a method that calculates and returns the area of a rectangle by a given width and length.
+Create a method that calculates and returns the area of a rectangle by its side width and length.
 
 ## Examples
 |**Input**|**Output**|
@@ -164,9 +164,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a method that receives a **string** and a repeated count **n** \(integer\).
+Create a method that receives a **string** and a repetition number **n** \(integer\).
 
-The method should return a new **string** \(the input string repeated **n** times\).
+The method should return a new **string**, containing the initial one, repeated **n** times.
 
 ## Examples
 |**Input**|**Output**|
@@ -421,9 +421,9 @@ public class Main {
 ## Description
 Create a method that calculates the total price of an order and prints it to the console.
 
-The method should receive one of the **following products**: coffee, coke, water, snacks; and a value for the quantity of the product.
+The method should receive one of the **following products**: coffee, coke, water, snacks; and of the quantity of the product.
 
-The prices for a single piece of each product are:
+The prices for a single item of each product are:
 
 |**Product**|**Price**|
 | --- | --- |
