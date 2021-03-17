@@ -6,10 +6,10 @@
 
 ## In this lesson you learned:
 
-- Regular Expressions (RegEx)
-    - describe patterns for searching through text
-    - define special characters, operators and constructs for building complex pattern
-    - can utilize character classes, groups, quantifiers and more
+- What regular expressions are
+- How to describe patterns for searching through a given text
+- How to define special characters and operators, and how to build more complex patterns
+- How to utilize character classes, groups, quantifiers, and more
 
 ```java live
 import java.util.regex.Matcher;
