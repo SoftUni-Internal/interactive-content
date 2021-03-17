@@ -573,9 +573,10 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You are tasked to create a program to **decrypt messages**.
+Your task is to create a program that **decrypts messages**.
 
-You will receive **several messages, which are encrypted** using the legendary star enigma. 
+First, you will receive the number of messages you should expect.
+Then, you will receive the messages themselves. Note that they will be encrypted. 
 
 You should **decrypt the messages**, following these rules:
 - To properly decrypt a message, **you should count all the letters** [s, t, a, r] - **case insensitive and remove the count** from the current ASCII value of each symbol of the encrypted message.
@@ -830,44 +831,43 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Mighty battle is coming. 
+А мighty battle is coming. 
 
-In the stormy Nether Realms, demons are fighting against each other for supremacy in a duel from which only one will survive. 
+In the stormy Nether Realms, demons are fighting against each other for supremacy in a duel. In the end, only one will survive. 
 
-Your job, however, is not so exciting. 
+However, your job is not so exciting. 
 
 You are assigned to **sign in all the participants** in the Nether Realm's mighty battle's demon book, which of course is **sorted alphabetically**. 
 
-A demon's name contains **his health and his damage**. 
+Based on the demon's name, you could find out the **demon's health** and the **demon's damage**. 
 
-The **sum of the ASCII codes of all characters** (excluding numbers (0-9), arithmetic symbols ('+', '-', '*', '/') and **delimiter do**t ('.')) **gives a demon's total health**. 
+The demon's total **health** is calculated by summing the ASCII codes of all characters (excluding numbers (0-9), arithmetic symbols ('+', '-', '*', '/'), and the dot('.'))
 
-The **sum of all numbers in his name forms his base damage**. 
+The base **damage** is calculated by summing all numbers in a demon's name.
 
-Note that you should consider the **plus** '+' and **minus** '-' signs (e.g. +10 is 10 and -10 is -10). 
+Note that you should consider the **plus** '+' and the **minus** '-' signs (e.g. +10 is 10, and -10 is -10). 
 
-However, there are **some symbols** ('\*' and '/') that **can further alter the base damage by multiplying or dividing it by 2** (e.g. in the name "m15\*/c-5.0", the base damage is 15 + (-5.0) = 10 and then **you need to multiply it by 2** (e.g. 10 \* 2 = 20) and **then divide it by 2** (e.g. 20 / 2 = 10)). 
+However, there are **some symbols** ('\*' and '/') that **can further alter the base damage by multiplying or dividing it by 2** (e.g. in the name "m15\*/c-5.0", the base damage is 15 + (-5.0) = 10. After that, you need to **multiply it by 2** (e.g. 10 \* 2 = 20), and then to **divide it by 2** (e.g. 20 / 2 = 10)). 
 
-So, **multiplication and division are applied only after all numbers are included in the calculation** and in the order they appear in the name. 
+So, **multiplication** and **division** should be applied after the sum of all numbers is calculated. You should perform them in the order they appear in the name. 
 
-You will get **all demons on a single line**, **separated by commas and zero or more blank spaces**. 
-
-Sort them in **alphabetical order and print their names** along their **health and damage**. 
+The demons should be sorted in **alphabetical order**. 
+For each demon, you should print out their **name** along with their **health** and their **damage**. 
 
 ### Input
 - The input will be read from the console
-- The input consists of a single line containing all demon names separated by commas and zero or more spaces in the format:
+- The input consists of a single line containing all demons' names, separated by commas and zero or more white spaces in the following format:
     - "\{demon name\}, \{demon name\}, … \{demon name\}"
 
 ### Output
-- Print all demons sorted by their name in ascending order, each on a separate line in the format:
+- Print all demons, sorted by their name in ascending order, each on a new line in the following format:
     - "\{demon name\} - \{health points\} health, \{damage points\} damage"
 
 ### Constraints
 - A demon's name will contain at least one character
 - A demon's name cannot contain blank spaces ' ' or commas ','
 - A floating-point number will always have digits before and after its decimal separator
-- Number in a demon's name is considered everything that is a valid integer or floating point number (with dot '.' used as separator) 
+- A number in a demon's name is considered to be everything that is a valid integer or a valid floating point number (with a dot '.' used as separator) 
     - for example, all these are valid numbers: '4', '+4', '-4', '3.5', '+3.5', '-3.5' 
 
 ### Example
@@ -888,7 +888,8 @@ Sort them in **alphabetical order and print their names** along their **health a
 
 ### Comments
 - Azazel: 
-    - Health - 'A' + 'z' + 'a' + 'z' + 'e' + 'l' = 615 health. Damage - no digits = 0 damage.
+    - Health - 'A' + 'z' + 'a' + 'z' + 'e' + 'l' = 615 health. 
+    - Damage - no digits = 0 damage.
 - M3ph1st0**:
     - Health - 'M' + 'p' + 'h' + 's' + 't' = 524 health.
     - Damage - (3 + 1 + 0) \* 2 \* 2 = 16 damage.
