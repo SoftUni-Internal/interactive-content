@@ -148,8 +148,8 @@ We use the `throw` statement to manually throw an exception:
 
 ```js
 function isEven(num) {
-    if (typeof num !== "number") {
-        throw TypeError("You must provide a number");
+    if (typeof num !== 'number') {
+        throw TypeError('You must provide a number');
     }
 
     return num % 2 === 0;

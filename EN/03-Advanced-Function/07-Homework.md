@@ -441,7 +441,7 @@ yes
 
 [slide hideTitle]
 # Problem: Argument Info
-[code-task title="Problem: Argument Info" taskId="js-advanced-advanced-functions-homework-Argument-Info" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="Argument Info" taskId="js-advanced-advanced-functions-homework-Argument-Info" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
 function argumentInfo() {
