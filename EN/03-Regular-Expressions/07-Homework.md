@@ -184,25 +184,27 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that processes information about a race.
+Create a program that processes information about a race.
 
-On the **first line** you will be given a **list of participants separated** by ", ".
+On the first line, you will be given a **list of participants**, separated by a comma and a single white space (", ").
 
-On the **next few lines until you receive** a line "end of race" you will be given some info which will be some **alphanumeric characters**.
+On the next lines, until you receive the "end of race" command, you will be given some info that will represent some **alphanumeric characters**.
 
-In between them you could have **some extra characters which you should ignore**.
+There could be **some extra characters that you should ignore**.
 
-For **example**: "G!32e%o7r#32g$235@!2e".
 
-The **letters are the name of the person** and the **sum of the digits is the distance he ran**.
+The **name** of the person is formed by **concatenating all letters**. 
+The **distance** that each person ran is calculated by **summing all of the digits**.
 
-So here we have **George who ran 29 km**.
+For example: "G!32e%o7r#32g$235@!2e".
 
-**Store the information** about the **person only if the list of racers contains the name** of the person.
+The name of the person is **George** and he ran **29 km**.
 
-If you receive the **same person more than once** just **add the distance to his old distance**.
+You should store the information about the person only if **the list of racers contains the name** of this person.
 
-At the end **print the top 3 racers ordered by distance in descending** in the format:
+If you receive the **same person more than once**, just add the new distance to the old distance he has run.
+
+In the end, print out the **top 3** racers ordered by the distance they have run in **descending order** in the following format:
 
 "1st place: \{first racer\}
 
@@ -223,11 +225,11 @@ At the end **print the top 3 racers ordered by distance in descending** in the f
 | end of race | |
 
 ### Comments
-- On the third input line we have Ray
-- He is not in the list, so we do not count his result
-- The other ones are valid
-- George has total of 55 km, Peter has 25 and Tom has 19
-- We do not print Bill because he is on the fourth place
+- On the third line, we have **Ray**
+- He is not in the list of participants, so we ignore him
+- The other people are in the list of participants
+- **George** has run a total of **55** km, **Peter** has run a total of **25**, and **Tom** has run a total of **19**
+- We print the winners (the people at the top 3 places)
 
 [/task-description]
 [code-io /]
@@ -356,27 +358,29 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Calculate the profit from the products that were sold throughout the day.
+Create a program that calculates the total profit from the products that were sold throughout the day.
 
-**Until you receive a line** with text "**end of shift**" you will **be given lines of input**.
+You will be receiving lines of input until you receive the **end of shift** command.
 
-But before processing that line you have to do some **validations** first.
+Before processing each line of input, you have to do some **validations**.
 
-Each valid order should have a **customer, product, count and a price**.
+Each valid line should contain a **customer**, a **product**, a **count**, and a **price**.
 
 A **valid**: 
-- **Customer's name** should be surrounded by '%' and must start with a capital letter, followed by lower-case letters
-- **Product** contains any word character and must be surrounded by '\<' and '\>' 
-- **Count** is an integer, surrounded by '\|'
-- **Price** is any real number followed by '$'
+- The **Customer's name** should be surrounded by `%` and must start with a capital letter, followed only by lower-case letters
+- The **Product's name** should be surrounded by '\<' and '\>' 
+- The **Count** should be an integer, surrounded by '\|'
+- The **Price** is a real number, followed by '$'
 
 The parts of a **valid order should appear in the order given**: **customer, product, count and a price**.
+A line of input is considered to be valid if its parts appear in the following order:  a **customer**, a **product**, a **count**, and a **price**. 
 
 Between each **part there can be other symbols**, **except** ('\|', '$', '%' and '.')
+There could be other symbols between the parts of the input lines, **except**: ('\|', '$', '%' and '.')
 
-**For each valid line print** on the console: "\{customerName\}: \{product\} - \{totalPrice\}"
+For each valid, line print out the following message: "\{customerName\}: \{product\} - \{totalPrice\}"
 
-When you receive "end of shift" **print the total amount of money** for the day rounded to **2 decimal places** in the following format: 
+When you receive the **end of shift** command, print out the total amount of money earned that day, rounded to the second digit after the decimal point in the following format: 
 - "Total income: \{income\}".
 
 ### Example
@@ -388,8 +392,8 @@ When you receive "end of shift" **print the total amount of money** for the day 
 | end of shift | Total income: 24.30 |
 
 ### Comments
-- Each line is valid, so we print each order, calculating the total price of the product bought
-- At the end we print the total income for the day
+- Each line is valid, so we print the expected message for each input line, calculating the price of the order
+- It the end, we print out the total income for the day
 
 ### Example
 | **Input** | **Output** |
@@ -401,10 +405,10 @@ When you receive "end of shift" **print the total amount of money** for the day 
 | end of shift | |
 
 ### Comments
-- On the first line, the customer name is not valid, so we skip that line
-- The second line is missing product count
-- The third line don't have a valid price
-- And only the forth line is valid
+- On the first line, the name of the customer is not valid, so we skip that line
+- On the second line, the count of the products to be sold is missing, so it is not valid
+- On the third line, the price is not valid
+- The forth line is valid, so we calculate the total income fot the day
 
 [/task-description]
 [code-io /]
@@ -569,9 +573,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
+
 Create a program to decrypt messages.
 
 We will receive several messages, which are encrypted using the legendary **star enigma** encryption code.
+
 
 Decrypt the messages, following these rules:
 - Count the number of times any of these letters is contained on each separate line of input [s, t, a, r] - **case insensitive**. The final number is the encryption key.
@@ -829,44 +835,43 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Mighty battle is coming. 
+А мighty battle is coming. 
 
-In the stormy Nether Realms, demons are fighting against each other for supremacy in a duel from which only one will survive. 
+In the stormy Nether Realms, demons are fighting against each other for supremacy in a duel. In the end, only one will survive. 
 
-Your job, however, is not so exciting. 
+However, your job is not so exciting. 
 
 You are assigned to **sign in all the participants** in the Nether Realm's mighty battle's demon book, which of course is **sorted alphabetically**. 
 
-A demon's name contains **his health and his damage**. 
+Based on the demon's name, you could find out the **demon's health** and the **demon's damage**. 
 
-The **sum of the ASCII codes of all characters** (excluding numbers (0-9), arithmetic symbols ('+', '-', '*', '/') and **delimiter do**t ('.')) **gives a demon's total health**. 
+The demon's total **health** is calculated by summing the ASCII codes of all characters (excluding numbers (0-9), arithmetic symbols ('+', '-', '*', '/'), and the dot('.'))
 
-The **sum of all numbers in his name forms his base damage**. 
+The base **damage** is calculated by summing all numbers in a demon's name.
 
-Note that you should consider the **plus** '+' and **minus** '-' signs (e.g. +10 is 10 and -10 is -10). 
+Note that you should consider the **plus** '+' and the **minus** '-' signs (e.g. +10 is 10, and -10 is -10). 
 
-However, there are **some symbols** ('\*' and '/') that **can further alter the base damage by multiplying or dividing it by 2** (e.g. in the name "m15\*/c-5.0", the base damage is 15 + (-5.0) = 10 and then **you need to multiply it by 2** (e.g. 10 \* 2 = 20) and **then divide it by 2** (e.g. 20 / 2 = 10)). 
+However, there are **some symbols** ('\*' and '/') that **can further alter the base damage by multiplying or dividing it by 2** (e.g. in the name "m15\*/c-5.0", the base damage is 15 + (-5.0) = 10. After that, you need to **multiply it by 2** (e.g. 10 \* 2 = 20), and then to **divide it by 2** (e.g. 20 / 2 = 10)). 
 
-So, **multiplication and division are applied only after all numbers are included in the calculation** and in the order they appear in the name. 
+So, **multiplication** and **division** should be applied after the sum of all numbers is calculated. You should perform them in the order they appear in the name. 
 
-You will get **all demons on a single line**, **separated by commas and zero or more blank spaces**. 
-
-Sort them in **alphabetical order and print their names** along their **health and damage**. 
+The demons should be sorted in **alphabetical order**. 
+For each demon, you should print out their **name** along with their **health** and their **damage**. 
 
 ### Input
 - The input will be read from the console
-- The input consists of a single line containing all demon names separated by commas and zero or more spaces in the format:
+- The input consists of a single line containing all demons' names, separated by commas and zero or more white spaces in the following format:
     - "\{demon name\}, \{demon name\}, … \{demon name\}"
 
 ### Output
-- Print all demons sorted by their name in ascending order, each on a separate line in the format:
+- Print all demons, sorted by their name in ascending order, each on a new line in the following format:
     - "\{demon name\} - \{health points\} health, \{damage points\} damage"
 
 ### Constraints
 - A demon's name will contain at least one character
 - A demon's name cannot contain blank spaces ' ' or commas ','
 - A floating-point number will always have digits before and after its decimal separator
-- Number in a demon's name is considered everything that is a valid integer or floating point number (with dot '.' used as separator) 
+- A number in a demon's name is considered to be everything that is a valid integer or a valid floating point number (with a dot '.' used as separator) 
     - for example, all these are valid numbers: '4', '+4', '-4', '3.5', '+3.5', '-3.5' 
 
 ### Example
@@ -887,7 +892,8 @@ Sort them in **alphabetical order and print their names** along their **health a
 
 ### Comments
 - Azazel: 
-    - Health - 'A' + 'z' + 'a' + 'z' + 'e' + 'l' = 615 health. Damage - no digits = 0 damage.
+    - Health - 'A' + 'z' + 'a' + 'z' + 'e' + 'l' = 615 health. 
+    - Damage - no digits = 0 damage.
 - M3ph1st0**:
     - Health - 'M' + 'p' + 'h' + 's' + 't' = 524 health.
     - Damage - (3 + 1 + 0) \* 2 \* 2 = 16 damage.
@@ -1031,22 +1037,23 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program to extract all email addresses from a given text.
+Create a program that extracts all email addresses from a given text.
 
-The text comes at the **only input line**.
+You will receive only one line of input.
 
-**Print the emails on the console**, each at a separate line.
+Emails are considered to be in the following **format**: \{user\}\@\{host\} 
 
-Emails are considered to be in **format** \{user\}\@\{host\}, where: 
-
-- \{user\} is a sequence of **letters and digits**, where '.', '-' and '_' can appear between them
+- \{user\} is a sequence of **letters and digits**, where '.', '-' and '_' can appear somewhere in the text, except in the beginning
     - examples of **valid users**: "stephan", "mike03", "s.johnson", "st_steward", "12345"
     - examples of **invalid users**: ''--123", ".....", "_steve", ".info"
-- \{host\} is a **sequence of at least two words, separated by dots** '.'. Each word is **sequence of letters and can have hyphens** '-' between the letters
-    - examples of **hosts**: "softuni.org", "software-university.com", "intoprogramming.info", "mail.softuni.org"
+- \{host\} is a **sequence of at least two words, separated by dots** (' . '). Each word is **sequence of letters and can have hyphens** ('-') between the letters
+    - examples of **valid hosts**: "softuni.org", "software-university.com", "intoprogramming.info", "mail.softuni.org"
     - examples of **invalid hosts**: "helloworld", ".unknown.soft.", "invalid-host-", "invalid-"
 - Examples of **valid emails**: info\@softuni.org, kiki\@hotmail.co.uk, no-reply\@github.com, s.peterson\@mail.uu.net, info-bg\@software-university.software.academy
 - Examples of **invalid emails**: --123\@gmail.com, …\@mail.bg, .info\@info.info, _steve\@yahoo.cn, mike\@helloworld, mike\@.unknown.soft., s.johnson\@invalid-
+
+
+You should print out all valid emails, each on a new line.
 
 ### Example
 | **Input** | **Output** |

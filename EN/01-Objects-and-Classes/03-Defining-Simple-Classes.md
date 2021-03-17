@@ -13,23 +13,17 @@ The **obligatory** components are:
 
 - A **name** for the class
 
-- The **body** of the class, between **curly brackets**
+- The **body** of the class
 
 Not obligatory, but **credential** components are: 
 
-- Class fields
+- Fields
 
-- Constructor
-
-- Getters and Setters
-
-- Class methods
+- Мethods (constructors, getters, setters, etc.)
 
 Each **class**, **field**, **constructor** or **method** is initialized with an **access modifier** in front, which specifies the **accessibility**. 
 
-Тhe **access level** can be **changed** by applying the **access modifier** on it. 
-
-We will cover this in the next course. 
+Тhe **access level** can be **changed** by applying the **access modifier** on it.
 
 There is a possibility to generate **automatically** via IntelliJ IDEA **constructors**, **getters**, **setters**, and other most used methods. 
 
@@ -37,9 +31,9 @@ To do so, just use `Right-click + Generate`.
 
 The short command depends on the operation system of the computer: 
 
-- In Windows and Linux it is `Alt + Insert` 
+- On Windows and Linux, it is `Alt + Insert` 
 
-- In Macintosh it is `Cmd + N`
+- On Macintosh, it is `Cmd + N`
 
 [/slide]
 
@@ -49,7 +43,7 @@ The short command depends on the operation system of the computer:
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-16-naming-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The class name is with the initial letter capitalized by convention, i.e. **PascalCase naming**. 
+The class naming convention is **PascalCase**. 
 
 The class name should contain descriptive nouns.
 
@@ -99,9 +93,9 @@ class Car {
 [slide hideTitle]
 # Methods
 
-It was previously covered that methods describe the **behavior** of an object.
+Methods describe the **behavior** of an object.
 
-They can do so by storing **executable code** which manipulates the **state** when called.
+They store **executable code**, which manipulates the **state** when called.
 
 Take a look at how a method affects a field:
 
@@ -123,25 +117,23 @@ class Car {
 [/slide]
 
 [slide hideTitle]
-# Getters and Setters
+# Getters and Setters Methods
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-19-Getters-and-setters-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-A getter and a setter can be declared for each field.
+A **getter** method and a **setter** method can be declared for each field.
 
-Getters provide **access** to the field and read its value. 
+Getters provide **access** to the field and its value. 
 
-They always begin with the word `get`, followed by the variable name:
+They always begin with the word `get`, followed by the variable's name:
 
 - `getColor`
 
 - `getType`
 
-Since the getter method is **return** type, the data type of the value returned by the method is the same as the field type.
-
 Setters **change** and **update** a field's value.
 
-They always begin with the word `set`, followed by the variable name:
+They always begin with the word `set`, followed by the variable's name:
 
 - `setColor`
 
@@ -200,15 +192,13 @@ class Program {
 [slide hideTitle]
 # Constructor
 
-A special method, executed during object creation, that **sets object's initial state**.
+The **constructor** method is a **method** that is executed **during the creation** of the object. It sets the **initial state** of the object.
 
-The constructor name is the **same as the name of the class**.
+The name of the method is the **same as the name of the class**.
 
-Constructor **can take parameters**, which is used to **initialize fields**.
+The constructor **can take parameters**, which is used to **initialize fields**.
 
-All classes have **constructor by default**. 
-
-There can be **multiple constructors of the same class**. 
+Classes can have **multiple constructors**.
 
 This helps to instantiate objects in various ways with a different number of arguments.
 
@@ -220,9 +210,8 @@ public class Animal {
     private boolean herbivorous;
 
     // constructors
-    public Animal() {
-
-    }
+    public Animal() { }
+    
     public Animal(String type) {
         this.type = type;
     }
@@ -245,17 +234,17 @@ Define a class **Student**, which holds the following information about students
  - first name
  - last name
  - age
- - hometown
+ - home town
 
 ### Input / Constraints
 
-Read a list of students until you receive **"end"** command.
+Read a list of students until you receive the **"end"** command.
 
 After that, you will receive a **city name**.
 
 ### Output
 
-Print only students which are from the given city, in the following format: 
+Print the students, which are from the given city, in the following format: 
 "\{firstName\} \{lastName\} is \{age\} years old.".
 
 ## Example
@@ -487,7 +476,8 @@ J P is 61 years old
 [task-description]
 ## Description
 
-Define a class **Song**, which holds the following information about songs: 
+Define a class **Song**, which holds the following information about songs:
+
 - **Type List**
 
 - **Name**
@@ -498,14 +488,14 @@ Define a class **Song**, which holds the following information about songs:
 
 - On the first line you will receive the **number of songs - N**.
 
-- On the next N-lines you will be receiving data in the following format: 
+- On the next N-lines, you will be receiving data in the following format: 
 "\{typeList\}\_\{name\}\_\{time\}".
 
-- On the last line you will receive **Type List** or **"all"**.
+- On the last line, you will receive **Type List** or **"all"**.
 
 ### Output
 
-Print only the **Names of the songs** which are from that **Type List** or **All songs**.
+Print only the **Names of the songs**, which are from that **Type List** or **All songs**.
 
 ## Examples
 
@@ -532,8 +522,6 @@ Print only the **Names of the songs** which are from that **Type List** or **All
 | like_Replay_3:15 | Photoshop |
 | ban_Photoshop_3:48 | |
 | all | |
-
-
 
 [/task-description]
 [code-upload allowedMemory="30" /]
