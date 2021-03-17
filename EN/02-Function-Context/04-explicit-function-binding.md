@@ -14,7 +14,7 @@ This allows us to bind a function to a particular object and use it as if it was
 
 This essentially changes the context of `this`. In other words, we are binding the function to a context of our choice.
 
-Let uss look at an example using `call()`:
+Let us look at an example using `call()`:
 
 ```js live
 function speak(message) {
