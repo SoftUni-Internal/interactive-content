@@ -17,17 +17,17 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-On the first line, you will be given a **list of wagons** (integers).
+On the first line, we will receive a **list of wagons** (integers).
 
-Each **integer** represents the **number of passengers** that are currently in each wagon.
+Each **integer** represents the **number of passengers** that are currently in each wagon of a passenger train.
 
-On the next line, you will receive the **max capacity of each wagon** represented as a **single integer**.
+On the next line, you will receive the **max capacity of a wagon** represented as a **single integer**.
 
 **Until** you receive the `end` command, you will be receiving two types of input:
 
-- **Add** \{passengers\} - add a wagon to the end with the given number of passengers
+- **Add** \{passengers\} - add a wagon to the end of the train with the given number of passengers
 
-- \{passengers\} -  **find an existing wagon** to fit all the passengers (starting from the first wagon)
+- \{passengers\} -  **find a single wagon** to fit all the incomming passengers (starting from the first wagon)
 
 In the end, **print** the final state of the train (all the wagons separated by a space).
 
@@ -261,7 +261,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program, which **reads a list of integers** from the console and receives **commands** that **manipulate the list**.
+Create a program, that **reads a list of integers** from the console and receives **commands** to **manipulate the list**.
 
 Your program may receive the following **commands**: 
 
@@ -269,7 +269,7 @@ Your program may receive the following **commands**:
 
 - **Insert** \{element\} \{position\} - insert the element at the given position
 
-You should **stop the program** when you receive the `end` command. 
+You should **exit the program** when you receive the `end` command. 
 
 Print all numbers in the array **separated by a single whitespace**.
 
@@ -433,23 +433,23 @@ public class Main {
 ## Description
 Create a program that keeps track of the guests that are going to a house party.
 
-On the first line of input, you are going to receive **the number of commands**.
+On the first line of input, you are going to receive **the number of commands that will follow**.
 
 On the next lines, you are going to receive some of the following: 
 
 **\{name\} is going!**
 
-- You have to **add the person if they are not on the guest list**. 
+- You have to **add the person if they are not in the guest list already**. 
 - If **the person is on the list** print to the following to the console: **\{name\} is already in the list!**
 
 
 **\{name\} is not going!**
 
 - You have to remove the person if they are in the list. 
-- If not, print to the console: **\{name\} is not in the list!**
+- If not, print out: **\{name\} is not in the list!**
 
 
-At the end of the program, print all of the guests, each on a new line.
+Finally, print all of the guests, each on a new line.
 
 ### Example
 | **Input** | **Output** |
@@ -667,21 +667,21 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You will be given a list of **integer** numbers on the first input line.
+The first input line will hold a list of **integers**.
 
-Until you receive the **End** command, you will be given **operations** you have to apply to the list.
+Until we receive the **End** command, we will be given **operations** we have to apply to the list.
 
 The **possible commands** are:
 
-- **Add** \{number\} - add the given number to the end
+- **Add** \{number\} - add the given number to the end of the list
 
 - **Insert** \{number\} \{index\} - insert the number at the given index
 
 - **Remove** \{index\} - remove the number at the given index
 
-- **Shift left** \{count\} - first number becomes last 'count' times
+- **Shift left** \{number\} - first number becomes last. This has to be repeated the specified number of times
 
-- **Shift right** \{count\} - last number becomes first 'count' times
+- **Shift right** \{number\} - last number becomes first. To be repeated the specified number of times
 
 **Note**: the index given may be outside of the bounds of the array. In that case print: "Invalid index".
 
@@ -928,9 +928,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that reads a **sequence of numbers and a special bomb number** with a certain power.
+Create a program that reads a sequence of numbers and a special **bomb** number **holding a certain power**.
 
-Your task is to **detonate every occurrence of the special bomb number** and according to its power **his neighbors from left and right**.
+Your task is to **detonate every occurrence of the special bomb number** and according to its power **its neighbors from left and right**.
 
 Detonations are performed **from left to right** and all the detonated numbers **disappear**.
 
