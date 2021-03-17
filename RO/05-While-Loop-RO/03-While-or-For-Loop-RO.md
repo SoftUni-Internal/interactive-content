@@ -108,7 +108,6 @@ Scrieți un program care:
 
 [/slide]
 
-S
 
 [slide hideTitle]
 # Problemă cu Soluție: Number Processor
