@@ -8,11 +8,11 @@
 
 The program flow in Java is controlled by a part of the memory called **the call stack**. 
 
-The stack is used for keeping track of what methods were called and the points of the program at which they were called.
+The stack is used to keep track of what methods were called and the points of the program at which they were called.
 
-As soon as a method finishes its execution, the program flow resumes from the place in the code from, which it was invoked.
+As soon as a method finishes its execution, the program flow resumes from executing the code that follows it.
 
-Let us see this in action.
+Let us see this in an example.
 
 ```java
 public class Main {
@@ -43,13 +43,13 @@ public class Main {
 }
 ```
 
-We are using the `Scanner` class to accept a user's input through the console.
+We use the `Scanner` class to accept user input through the console.
 
-First, we read the name of the city and immediately call the `printWeather()` method, passing the string as a parameter to it.
+First, we read the name of the city and immediately call the `printWeather()` method, passing in this string as a parameter.
 
-The program then skips down several lines to where the `printWeather(String city)` method is declarated and executes the code inside the method.
+The program then skips down several lines to the `printWeather(String city)` method and executes the code inside it.
 
-Finally, it will return to where the method was called and continue after it by printing a question and prompting the user for a choice of yes or no.
+Finally, it returns to where the method was called and continues by printing out the question and prompting the user for their input.
 
 
 [/slide]
@@ -58,11 +58,11 @@ Finally, it will return to where the method was called and continue after it by 
 
 # The Call Stack
 
-The stack contains **stack frames** for each method call. These stack frames store information on:
+The stack contains **stack frames** for each method call. These stack frames store information about:
 
-- Any arguments passed into the method
+- Any arguments passed in the method
 - Local variables
-- The address to which to return after a method finishes executing
+- The address to which it has to return after the current method finishes executing
 
 
 
