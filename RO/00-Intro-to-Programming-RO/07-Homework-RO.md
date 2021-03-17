@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -50,7 +50,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -95,7 +95,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 
@@ -140,7 +140,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -190,7 +190,8 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-      // Scrieți codul dvs. aici
+
+      // Write your code here
     }
 }
 ```
@@ -252,7 +253,7 @@ Imprimă un pătrat format din 7 * 7 steluțe, ca în imaginea de mai jos:
 ```
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -264,8 +265,10 @@ Scrieți un program care să execute următoarele:
 * Calculează suprafața dreptunghiului
 * Laturile dreptunghiului au valorile 5 și 10
 
-## Rezultat
-* Tipărește suprafața calculată
+
+## Ieșire
+* Printează suprafața calculată
+
 [/task-description]
 [code-io /]
 [tests]
@@ -295,7 +298,7 @@ Scrieți un program care să execute următoarele:
 ```
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 
@@ -358,7 +361,9 @@ Fiecare număr ar trebui să fie pe o linie nouă.
 ```
 public class Main {
   public static void main(String[] args) {
-      // Scrieți codul dvs. aici
+
+      // Write your code here
+
     }
 }
 ```
