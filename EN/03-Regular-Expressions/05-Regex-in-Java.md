@@ -6,7 +6,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-17-18-Regex-in-Java-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The `java.util.regex.Pattern` and `java.util.regex.Matcher` classes are used for advanced regular expressions.
+The `java.util.regex.Pattern` and the `java.util.regex.Matcher` classes are used for advanced regular expressions.
 
 ```java live
 import java.util.regex.Matcher;
@@ -29,13 +29,13 @@ public class Main {
 }
 ```
 
-These are the steps that the previous exampel follows: 
+The previous example works as follows: 
 
-- First, create a **Pattern object** which **defines the regular expression**
+- First, a **Pattern object** that **defines the regular expression** is created
 
-- This Pattern object allows **creating a Matcher object for a given string**
+- This Pattern object allows **creating a Matcher object** for a given string
 
-- The Matcher object then allows performing **regex operations on a String**
+- Then, the Matcher object allows performing **regex operations on a String**
 
 [/slide]
 
@@ -45,7 +45,7 @@ These are the steps that the previous exampel follows:
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-19-Checking-For-A-Single-Match-and-Demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The `find()` method scans the input sequence looking for the next subsequence that matches the pattern.
+The `find()` method tries to find the occurrence of a regex pattern within a given string. **If multiple occurrences are found** in the string, then **the first call** to `find()` will jump to the **first occurrence**. Thereafter, each subsequent call to the `find()` method will go to the next matching occurrence, one by one.
 
 Check the following example:
 
