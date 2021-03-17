@@ -6,13 +6,13 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-3-5-lists-overview-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Just like Аrrays, а **list** is a **sequence of elements**.
+Just like an Аrray, а **list** is a **sequence of elements**.
 
 [image assetsSrc="java-fund-p1-lists-01.png" /]
 
 The main difference between an array and a list is that an **array cannot be resized**.
 
-For example, if we have an array and we want to add or remove elements, we have to create a new one, while elements can be **added** and **removed** from a **list** at any time.
+For example, if we have an array and we want to add or remove elements from it, we have to create a new one, while elements can be **added** and **removed** from a **list** at any time.
 
 ```java live
 //Create an empty list of strings
@@ -33,27 +33,27 @@ The main **features** of **lists** are:
 
 - Lists can store **objects** of any type (Integer, Double, String, etc.)
 
-- Elements are numbered from **0** to **size-1**
+- Their elements are numbered from **0** to **size-1**
 
 - The **size** of the **List** is **expandable**
 
-- **Lists** support a lot of useful **methods**
+- **Lists** support a lot of built-in **methods**
 
 ## Initializing a List
 
-- Initialize an empty **list** using keyword `new` and  `ArrayList<>()`
+- We initialize an empty **list** using the `new` keyword followed by  `ArrayList<>()`
 
 ```java
 //Create an empty List of strings
 List<String> names = new ArrayList<>(); 
 ```
-- Initialization using `asList()` - method 
+- We can also use the `asList()` method 
 
 ```java
 // Create a List of strings with 3 elements
 List<String> names = new ArrayList<>(Arrays.asList("Maria", "Peter", "George")); 
 ```
-- Initialization by **converting** an **array** to a **list**
+- We can **convert** an **array** to a **list**
 
 ```java
 Integer[] numbers = new Integer[] {10, 20, 30, 40, 50};
@@ -95,11 +95,11 @@ Lists provide functionality that lets you **add**, **remove** and **find** eleme
 
 ## Adding Elements
 
-The `add()` method is used for inserting new elements into a list. 
+The `add()` method is used to insert new elements into a list. 
 
-The type of elements that can be added is determined at the time of list creation. 
+The type of elements that can be added is determined when creating the list. 
 
-If you gave `List<String>` you will not be able to add anything other than a String into your list.
+If you specified `List<String>` you will not be able to add anything other than Strings into your list.
 
 
 **add(element):**
@@ -115,7 +115,7 @@ for (String equipment : safetyEquipment) {
 }
 ```
 
-Items are added to the list in the order that you add them. 
+The **add** method places each next item at the end of the list.
 
 If you would like to insert an item in a different position you can do that using `add(index, element)`.
 
@@ -135,11 +135,11 @@ for (String equipment : safetyEquipment) {
 }
 ```
 
-Now "Helmet" is printed first because it was inserted at index 0.
+"Helmet" is printed first because it was inserted at index 0.
 
-Attempting to add an element from an index that is outside the bounds of the array will result in an **IndexOutOfBoundsException**.
+Attempting to add an element to an index that is outside list bounds will result in an **IndexOutOfBoundsException**.
 
-When an element is added the count of elements increases by one.
+When an element is added the number of elements increases by one.
 
 
 ## Removing Elements
@@ -164,8 +164,8 @@ for (String name : names){
 }
 ```
 
-`System.out.println(names.remove("Maria"))` returns **true** because we had the element was found and removed.
-`System.out.println(names.remove("John"))` returns **false** because the element was not found.
+`System.out.println(names.remove("Maria"))` will return **true** because the element can be found and removed.
+`System.out.println(names.remove("John"))` returns **false** because the element is not contained in the list.
 
 **remove(index)** - **removes** the **element** at the **specified index**:
 
@@ -182,9 +182,9 @@ for (String name : names){
   System.out.println(name);
 }
 ```
-Attempting to remove an element from an index that is outside the bounds of the array will result in an **IndexOutOfBoundsException**.
+Attempting to remove an element from an index that is outside the bounds of the list will result in an **IndexOutOfBoundsException**.
 
-When an element is deleted the count of elements decreases by one.
+When an element is deleted the number of elements decreases by one.
 
 
 [/slide]
