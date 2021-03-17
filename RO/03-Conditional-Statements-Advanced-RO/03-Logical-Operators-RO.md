@@ -34,7 +34,7 @@ Vom explica logică **ȘI** (`&&`), logica **SAU** (`||`) și logica **NU** (`!`
 [slide hideTitle]
 # Logica "ȘI"
 
-[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-19-logical-and-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-19-logical-and-FIX-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 După cum am văzut, în unele sarcini trebuie să facem **multe verificări simultan**.
 
