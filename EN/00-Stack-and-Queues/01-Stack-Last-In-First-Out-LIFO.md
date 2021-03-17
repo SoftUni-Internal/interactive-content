@@ -577,9 +577,9 @@ Scan through the string and **extract** each **sub-expression**.
 ## Hints 
 - Use a stack, implemented with`ArrayDeque()` 
 - Scan through the expression searching for brackets 
-   - If you find an opening bracket, push the index into the stack 
-   - If you find a closing bracket, pop the top element from the stack. This is the index of the opening bracket 
-   - Use the current and the popped index to extract the sub-expression 
+   - if you find an opening bracket, push the index into the stack 
+   - if you find a closing bracket, pop the top element from the stack. This is the index of the opening bracket 
+   - use the current and the popped index to extract the sub-expression 
 [/task-description]
 [code-io /]
 [tests]
