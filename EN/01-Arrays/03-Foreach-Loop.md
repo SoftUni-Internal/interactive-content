@@ -8,11 +8,11 @@
 
 It starts with the keyword `for` like a normal **for-loop**.
 
-Instead of declaring and initializing a loop counter variable, we declare a variable that is the same type as the base type of the array, followed by a colon (**:**), which is then followed by the name of the array.
+Instead of declaring and initializing a loop counter variable, we declare a variable that should hold the same data type as the base type of the array, followed by a colon (**:**), which is then followed by the name of the array.
 
-In the loop body, we cannot access the current index but we can use the loop variable we have created rather than using an indexed array element.
+The loop variable of a `For-each` loop holds the value of each loop element, not its index number.
 
-It is commonly used to iterate over an array.
+It is commonly used to iterate over an array, when we do not need to use particulat index numbers.
 
 ```java
 for (int variableName : arrayName) {
@@ -26,7 +26,7 @@ for (int variableName : arrayName) {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-18-19-20-For-each-loop-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We can **print** the elements of an array with **for-each**:
+We can **print** the elements of an array with a **for-each** loop:
 
 ```Java live
 int[] numbers = { 1, 2, 3, 4, 5 };
@@ -35,7 +35,7 @@ for (int number : numbers) {
 }
 ```
 
-One thing to note here, is that we would not be able to manipulate the elements of an array while iterating with **for-each**. 
+We are not able to manipulate the elements of an array while iterating with a **for-each**. 
 
 [/slide]
 
@@ -164,9 +164,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program to read **an array of integers** and condense them by **summing** the adjacent couples of elements until a **single integer** remains.
+Create a program to read **an array of integers** and condense them by **summing** all adjacent couples of elements until a **single integer** remains.
 
-For example, if we have 3 elements \{2, 10, 3\}. We sum the first two and the second two elements and get \{2+10, 10+3\} = \{12, 13\}, then we sum again all adjacent elements and this results in \{12+13\} = \{25\}.
+For example, if we have 3 elements \{2, 10, 3\}. We sum the first two and the second two elements and get \{2+10, 10+3\} = \{12, 13\}, then we sum all adjacent elements again and this results in \{12+13\} = \{25\}.
 
 ## Examples
 |**Input**|**Output**| **Comments** |
