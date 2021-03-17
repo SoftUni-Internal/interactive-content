@@ -573,29 +573,32 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Your task is to create a program that **decrypts messages**.
 
-First, you will receive the number of messages you should expect.
-Then, you will receive the messages themselves. Note that they will be encrypted. 
+Create a program to decrypt messages.
 
-You should **decrypt the messages**, following these rules:
-- To properly decrypt a message, **you should count all the letters** [s, t, a, r] - **case insensitive and remove the count** from the current ASCII value of each symbol of the encrypted message.
+We will receive several messages, which are encrypted using the legendary **star enigma** encryption code.
+
+
+Decrypt the messages, following these rules:
+- Count the number of times any of these letters is contained on each separate line of input [s, t, a, r] - **case insensitive**. The final number is the encryption key.
+- Remove this number from the ASCII value of each symbol in the encrypted message.
 
 **After decryption**:
-- Each **message** should have **a planet name, population, attack type** ('A', as attack or 'D', as destruction) and **soldier count**
-- The **planet name starts after** '\@' and **contains only letters from the Latin alphabet**
-- The **planet population starts after** ':' and **is an integer**
-- The **attack type** may be "A"(attack) or "D"(destruction) and **must be surrounded by** "!" (exclamation mark)
-- The **soldier count starts after** "->" and **should be an integer**
+- Each message should contain a **planet name**, **population**, **attack status**** ('A' stands for attacked; 'D' stands for destroyed), and a **soldier count**.
+- The **planet name** is marked by '@' followed only by letters from the English alphabet
+- The **planet population** starts after a ':' sign and will be an **integer**
+- The **planet might be "A"(attacked) or "D"(destroyed)**, and this value will be surrounded by "!" (exclamation marks)
+- The **soldier count** is placed afer this sign: "->", and will be an **integer**
 
-The **order in the message** should be: 
-**planet name -> planet population -> attack type -> soldier count** 
+The order of a **valid** message is: 
+**planet name -> planet population -> attack type -> soldier count**
 
-Each part can be **separated from the others by any character except**: '\@', '-', '!', ':' and '>'.
+Each part can be separated from the others by any character, excluding: '@', '-', '!', ':' and '>'.
 
 ### Output
-**After decrypting all messages**, you should **print the decrypted information in the following format**:
-- First print the attacked planets, then the destroyed planets
+
+**After decrypting all messages**, you should print the received information in the following format:
+- Print out the attacked planets first, then the destroyed planets
 - "Attacked planets: \{attackedPlanetsCount\}"
 - "-> \{planetName1\}"
 - ...
@@ -615,13 +618,14 @@ The planets should be ordered by name **alphabetically**.
 
 ### Comments
 We receive two messages, to decrypt them we calculate the key:
-- First message has decryption key 3
-    - so we substract from each characters code 3
-    - PQ@Alderaa1:30000!A!->20000
-- The second message has key 5
-    - @Cantonica:3000!D!->4000NM
-- Both messages are valid and they contain planet, population, attack type and soldiers count 
-- After decrypting all messages we print each planet according the format given
+- The first message has a decryption key of: 3 (as it contains **one** occurance of the letter "S", **one** occurance of the letter "T" and **one** occurance of the letter "A")
+    - So, we subtract 3 from the ASCII value of each character.
+    - The deciphered message is: PQ@Alderaa1:30000!A!->20000
+- The second message's key is: 5
+    - The deciphered message is: @Cantonica:3000!D!->4000NM
+    - 
+- Both messages are valid and they contain a planet, population, whether they are attacked or destroyed, and their soldier count
+- After decrypting all messages, we print out the contained information
 
 ### Example
 | **Input** | **Output** |
@@ -633,12 +637,12 @@ We receive two messages, to decrypt them we calculate the key:
 
 ### Comments
 We receive three messages.
-- Message one is decrypted with key 4:
+- Message one is decrypted using 4 as a key
     - pp$##@Coruscant:2000000000!D!->5000
-- Message two is decrypted with key 7:
+- Message two is decrypted with key: 7
     - @Jakku:200000!A!MMMM
-    - this is invalid message, missing soldier count, so we continue
-- The third message has key 5
+    - this is an invalid message as it does not contain a soldier count, so it should be ignored
+- The third message has 5 for a key
     - @Cantonica:3000!D!->4000NM
 
 [/task-description]
