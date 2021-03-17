@@ -6,11 +6,11 @@
 
 ## In this lesson, you learned:
 
-**Functional Context** - the object from which the code originated is its default context. 
+- **Functional Context** - the object from which the code originated is its default context.
 
-What **this** refers, to depends on **where** and **how** the **function** that is being executed **is called**.
+- What **this** refers to depends on **where** and **how** the **function** that is being executed **is called**
 
-The functions **bind**, **apply** and **call** that can all be used to explicitly set the value of **this**.
+- The functions **bind**, **apply** and **call** that can all be used to explicitly set the value of **this**.
 
  - ``call()`` - changes the context of the function to the given object
 
@@ -18,7 +18,7 @@ The functions **bind**, **apply** and **call** that can all be used to explicitl
 functionName.call(objectToBind, additionalArguments);
 ```
 
-- ``apply()``- same function as **call()** but accepts a list of arguments, while **apply()** accepts an array
+- ``apply()`` - same function as **call()**, but accepts a list of arguments, while **apply()** accepts an array
 
 ```js
 console.log(praise.apply(dog,
@@ -26,9 +26,8 @@ console.log(praise.apply(dog,
 ));
 ```
 
-- ``bind()`` - creates a **new function**. 
-
-Allows objects to borrow methods from other objects without us having to manually make copies of that method
+- ``bind()`` - creates a **new function**.
+    * allows objects to borrow methods from other objects without us having to manually make copies of that method
 
 **Internal** Object Properties that allow you to modify how the object properties will behave: 
 
@@ -38,7 +37,9 @@ Allows objects to borrow methods from other objects without us having to manuall
 
 
 ## In the next lesson, you will learn:
-- **Advanced Functions** - what are first-class and higher-order functions
+
+- **Advanced Functions**
+    * what are first-class and higher-order functions
 
 - Currying and Partial Application
 
