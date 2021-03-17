@@ -137,7 +137,7 @@ The haunting of hill house - better content2:  Shirley Jackson
 ## Descriere
 Folosind **Clasa persoană**, scrieți un program care citește de pe consolă **N linii de informații personale** și apoi **imprimă toate persoanele** a căror **vârstă este mai mare de 30 de ani** în următoarele **format**:
 
-\{name\} - \{age\}
+"\{name\} - \{age\}"
 
 ### Exemplu
 |**Intrare**|**Ieșire**|

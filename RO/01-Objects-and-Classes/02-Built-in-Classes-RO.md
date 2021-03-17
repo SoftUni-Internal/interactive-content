@@ -1,7 +1,7 @@
 
 
 [slide hideTitle]
-# Clase încorporate
+# Clase Încorporate
 
 Java oferă **clase gata de utilizare**, care sunt organizate în **Packages**. 
 
@@ -37,19 +37,19 @@ int randomNumber = rnd.nextInt(10);
 
 Metodele de clasă matematică sunt **statice** și ajută la efectuarea **operațiilor numerice** și **funcții matematice** utilizate în mod obișnuit cum ar fi:
 
-- rotunjire
+- Rotunjire
 
-- compararea
+- Compararea
 
-- rădăcină pătrată
+- Rădăcină pătrată
 
-- rădăcină cubică
+- Rădăcină cubică
 
-- exponențială
+- Exponențială
 
-- logaritm
+- Logaritm
 
-- operații trigonometrice.
+- Operații trigonometrice.
 
 Metodele matematice includ:
 
@@ -63,48 +63,65 @@ System.out.println(a);
 System.out.println(b);
 ```
 - `ceil(a)` : Rotunjește o valoare în virgulă mobilă `a` până la cea mai apropiată valoare întreagă, returnată ca `double`
+
 ```java live
 double ceil = Math.ceil(8.357);
 System.out.println(ceil);
 ```
+
 - `floor(a)` : Rotunjește o valoare în virgulă mobilă `a` până la cea mai apropiată valoare întreagă, returnată ca `double`
+
 ```java live
 double floor = Math.floor(8.357);
 System.out.println(floor);
 ```
+
 - `max(a, b)` : Returnează cea mai mare dintre cele două valori transmise ca parametru
+
 ```java live
 int max = Math.max(5, 10);
 System.out.println(max);
 ```
+
 - `min(a, b)` : Returnează cea mai mică dintre cele două valori transmise ca parametru
+
 ```java live
 int min = Math.min(5, 10);
 System.out.println(min);
 ```
+
 - `round(a)` : Rotunjește un flotor sau dublează la cel mai apropiat număr întreg folosind reguli normale rotunde matematice (fie în sus, fie în jos)
+
 ```java live
 double roundedDown = Math.round(29.459);
 double roundedUp = Math.round(29.549);
 System.out.println(roundedDown);
 System.out.println(roundedUp);
 ```
+
 - `pow(a, b)` : Returnează valoarea primului parametru `a` ridicat la puterea celui de-al doilea parametru `b`
+
 ```java live
 double number = Math.pow(3,2);
 System.out.println(number);
 ```
+
 - `sqrt(a)` : Calculează rădăcina pătrată a parametrului dat `a`
+
 ```java live
 double number = Math.sqrt(9);
 System.out.println(number);
 ```
+
 - `toDegrees(a)` : Convertește un unghi în radiani în grade
+
 ```java live
 double degrees = Math.toDegrees(3.141592653589793);
 System.out.println(degrees);
 ```
+
 - `toRadians(a)` : Inversarea `toDegrees`, convertește un unghi în grade în radiani
+
 ```java live
 double radians = Math.toRadians(180);
 System.out.println(radians);

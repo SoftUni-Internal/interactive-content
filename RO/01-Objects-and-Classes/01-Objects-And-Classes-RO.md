@@ -79,7 +79,7 @@ This is how **objects** can be derived from a **class**:
 
 [slide hideTitle]
 
-# Exemplu de viață reală
+# Exemplu de Viață Reală
 
 Toate entitățile cu caracteristici similare pot fi aranjate în categorii.
 
@@ -98,7 +98,7 @@ Este un "plan" pentru crearea obiectelor.
 
 [slide hideTitle]
 
-# Creați un obiect
+# Creați un Obiect
 
 Crearea unui obiect dintr-o clasă definită se numește **instanțiere**.
 
