@@ -52,7 +52,7 @@ Bucla se repetă de 10 ori și fiecare dintre aceste repetări se numește **"it
 
 
 [slide hideTitle]
-# Problemă cu soluție: Print Sum of N Numbers
+# Problemă cu Soluție: Print Sum of N Numbers
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/RO/interactive-programming-basics-with-java-for-loops-15-problem-and-solution-print-sum-of-n-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -63,7 +63,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul dvs. aici
     }
 }
 ```

@@ -1,7 +1,7 @@
 # Teme pentru acasă
 
 [slide hideTitle]
-# Problemă cu soluție: Biggest Number
+# Problemă cu Soluție: Biggest Number
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/RO/interactive-programming-basics-with-java-for-loops-35-problem-and-solution-greatest-number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -82,7 +82,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -172,7 +172,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -225,7 +225,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -368,7 +368,7 @@ Yes, value=10
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Zig Zag Sum
+# Problemă cu Soluție: Zig Zag Sum
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/RO/interactive-programming-basics-with-java-for-loops-35-problem-and-solution-zig-zag-sum-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -379,7 +379,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -450,7 +450,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -513,7 +513,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -612,7 +612,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -725,7 +725,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -801,7 +801,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -813,12 +813,12 @@ Josh are 18 ani și primește o moștenire care constă din suma de bani X și m
 A decis să se întoarcă până în 1800, dar nu știa dacă banii ar fi suficienți pentru a trăi fără să muncească.
 
 Scrieți un program care să calculeze dacă Josh va avea suficienți bani pentru a nu fi nevoit să lucreze până la un anumit an.
-- Presupunând că pentru fiecare an (1800, 1802 etc.) se vor cheltui 12 000 de dolari.
-- Pentru fiecare an impar (1801, 1803 etc.) se vor cheltui 12 000 + 50 \* \[vârsta de abni într-un anumit an\].
+- Presupunând că pentru fiecare an (1800, 1802 etc.) se vor cheltui 12 000 de dolari
+- Pentru fiecare an impar (1801, 1803 etc.) se vor cheltui 12 000 + 50 \* \[vârsta de abni într-un anumit an\]
 
 ## Intrare
 Intrarea este citită de pe consolă și conține exact 2 linii:
-- Banii vechi - număr real în intervalul \[1,00 ... 1,000,000,00\]
+- Banii vechi - număr real în intervalul \[1.00 ... 1 000 000.00\]
 - An de trăit (inclusiv) - un număr întreg în intervalul \[1801 ... 1900\]
 
 
@@ -830,7 +830,7 @@ Imprimați pe consolă o singură linie. Suma trebuie formatată cu două cifre 
      - "**He will need** \{**М**\} **dollars to survive.**" - unde M sunt bani de care are nevoie
 
 ## Exemplu
-| Intrare | Ieșire |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 50000 | Yes! He will live a carefree life and will have 13050.00 dollars left. |
 | 1802 | |
@@ -948,7 +948,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -956,11 +956,13 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program pentru a calcula costul mediu pe lună pentru o familie pe o perioadă de timp. Pentru fiecare lună, costurile sunt următoarele:
+Scrieți un program pentru a calcula costul mediu pe lună pentru o familie pe o perioadă de timp. 
+
+Pentru fiecare lună, costurile sunt următoarele:
 
 - Pentru electricitate - în fiecare lună factura este diferită și va fi citită de pe consolă
-- Pentru apă - 20 $
-- Pentru internet - 15 $
+- Pentru apă - 20$
+- Pentru internet - 15$
 - Pentru altele - suma facturilor pentru electricitate, apă și Internet și adăugați 20%
 
 Pentru fiecare factură, trebuie să calculați suma totală plătită pentru toate lunile.
@@ -970,7 +972,7 @@ Pentru fiecare factură, trebuie să calculați suma totală plătită pentru to
 Intrarea este citită de pe consolă:
 
 - Lunile pentru care se caută costul mediu - număr întreg în intervalul \[1 ... 100 \]
-- Pentru fiecare lună - factura pentru electricitate - un număr real în intervalul \[1.00... 1000.00\]
+- Pentru fiecare lună - factura pentru electricitate - un număr real în intervalul \[1.00 ... 1000.00\]
 
 # Ieșire
 Imprimați pe consolă 5 rânduri:
@@ -1210,7 +1212,7 @@ Average: 89.10 $
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Hospital
+# Problemă cu Soluție: Hospital
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/RO/interactive-programming-basics-with-java-for-loops-35-problem-and-solution-hospital-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -1221,7 +1223,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1396,7 +1398,7 @@ Untreated patients: 29978.
 ```
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1445,7 +1447,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1454,7 +1456,7 @@ public class Main {
 ## Descriere
 Scrieți un program care citește n - numărul din numerele introduse de utilizator și calculează suma numărului minim și maxim de poziții impar si par (numărând de la 1). 
 
-Dacă nu există element minim / maxim tipăriți "No".
+Dacă nu există element minim / maxim tipăriți "**No**".
 
 ## Intrare
 - Pe prima linie de intrare citiți numărul din numerele - N - întreg \[0 ... 100\]
@@ -1692,7 +1694,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1703,7 +1705,7 @@ Scrieți un program pentru a calcula statisticile notelor examenului.
 
 La început, programul primește numărul de elevi care au participat la examen și nota obținută de fiecare elev.
 
-În cele din urmă, programul ar trebui să imprime procentul de elevi cu nota cuprinsă între 2,00 și 2,99, între 3,00 și 3,99, 4,00 și 4,99 și între 5,00 sau mai mult.
+În cele din urmă, programul ar trebui să imprime procentul de elevi cu nota cuprinsă între 2.00 și 2.99, între 3.00 și 3.99, 4.00 și 4.99 și între 5.00 sau mai mult.
 
 De asemenea, nota medie a examenului.
 

@@ -1,7 +1,7 @@
-# Exemplu din viața reală
+# Exemplu din Viața Reală
 
 [slide hideTitle]
-# Exemplu din viața reală: mutarea vaselor
+# Exemplu din Viața Reală: Mutarea Vaselor
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/RO/interactive-programming-basics-with-java-for-loops-10-11-for-loop-and-for-loop-example-dishes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
