@@ -1,6 +1,7 @@
 # Teme Pentru Acasă
 [slide hideTitle]
 # O problemă cu soluție: Print Hello Java
+
 [code-task title="Print Hello Java" taskId="pb-java-introduction-print-hello-java" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
@@ -84,6 +85,9 @@ Scrieți un program în limbajul Java care să execute următoarele:
 
 [slide hideTitle]
 # O problemă cu Soluție: Name and Expression
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-41-name-and-expression-solution-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Name and Expression" taskId="pb-java-introduction-Name-and-Expression" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
@@ -126,6 +130,9 @@ Catlyn
 
 [slide hideTitle]
 # O problemă cu Soluție: Calculations
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-43-calculations-slution-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Calculations" taskId="pb-java-introduction-Calculations" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
@@ -173,6 +180,9 @@ Scrieți un program care să calculeze și sa imprime valoarea următoarelor exp
 
 [slide hideTitle]
 # O problemă cu Soluție: Square of 7 * 7 Stars
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-45-square-of-7-by-7-stars-solution-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Square of 7 * 7 Stars" taskId="pb-java-introduction-Square-of-7x7" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
