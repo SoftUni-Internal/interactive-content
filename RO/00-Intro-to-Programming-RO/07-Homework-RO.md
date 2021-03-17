@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -50,7 +50,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -95,7 +95,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 
@@ -104,7 +104,7 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program care să tipărească "**Catlyn**" pe prima linie și să calculeze și să imprimă rezultatul expresiei 5 + 3 pe cea de-a doua linie
+Scrieți un program care să tipărească "**Catlyn**" pe prima linie și să calculeze și să imprime rezultatul expresiei 5 + 3 pe cea de-a doua linie
 [/task-description]
 [tests]
 [test open]
@@ -140,7 +140,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -148,7 +148,7 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program care să calculeze și sa imprime valoarea următoarelor expresii:
+Scrieți un program care să calculeze și să imprime valoarea următoarelor expresii:
 
 * 5 + 3 \* 2
 * 4 \* (2 + 3)
@@ -190,7 +190,7 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-      // Write code here
+      // Write your code here
     }
 }
 ```
@@ -252,7 +252,7 @@ Imprimă un pătrat format din 7 * 7 steluțe, ca în imaginea de mai jos:
 ```
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -264,7 +264,7 @@ Scrieți un program care să execute următoarele:
 * Calculează suprafața dreptunghiului
 * Laturile dreptunghiului au valorile 5 și 10
 
-## Rezultat
+## Ieșire
 * Printează suprafața calculată
 [/task-description]
 [code-io /]
@@ -295,7 +295,7 @@ Scrieți un program care să execute următoarele:
 ```
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 
@@ -358,7 +358,7 @@ Fiecare număr ar trebui să fie pe o linie nouă.
 ```
 public class Main {
   public static void main(String[] args) {
-      // Write code here
+      // Write your code here
     }
 }
 ```
