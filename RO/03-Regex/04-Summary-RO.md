@@ -3,7 +3,7 @@
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-29-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-# În această lecție ați învățat:
+## În această lecție ați învățat:
 
 - Expresia regulată este o secvență de caractere care formează un șablon
 

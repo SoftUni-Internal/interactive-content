@@ -1,7 +1,7 @@
 # Expresii Regulate
 
 [slide hideTitle]
-# Ce reprezintă expresiile regulate?
+# Ce Reprezintă Expresiile Regulate?
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-3-4-What-are-regular-expressions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -9,7 +9,7 @@
 
 Ele oferă o sintaxă concisă pentru a realiza cerințe complexe care, în mod normal, ar necesita multe linii de cod.
 
-"JavaScript" oferă tipul integrat "RegExp" care ne permite să lucrăm cu expresii regulate în mod eficient.
+JavaScript oferă tipul integrat "RegExp" care ne permite să lucrăm cu expresii regulate în mod eficient.
 
 Pentru a testa expresiile noastre regulate, putem utiliza următorul site:
 
@@ -18,7 +18,7 @@ Pentru a testa expresiile noastre regulate, putem utiliza următorul site:
 [/slide]
 
 [slide hideTitle]
-# Șablonele de expresii regulate
+# Șablonele de Expresii Regulate
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-6-Regular-expressions-pattern-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

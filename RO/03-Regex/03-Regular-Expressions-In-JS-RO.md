@@ -1,7 +1,7 @@
 # Expresii regulate în JavaScript
 
 [slide hideTitle]
-# Expresii regulate în JavaScript
+# Expresii Regulate în JavaScript
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-16-17-Regex-in-JS-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -67,13 +67,13 @@ console.log(matches[1]);
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-20-Using-the-exce()-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Dacă potrivirea reușește, metoda `.exec ()` returnează o matrice cu proprietăți suplimentare \: "index" și "input".
+Dacă potrivirea reușește, metoda `.exec()` returnează o matrice cu proprietăți suplimentare \: "index" și "input".
 
 Actualizează proprietatea „lastIndex” a obiectului expresie regulată.
 
 Matricea returnată are textul potrivit ca primul element, apoi un articol pentru fiecare grup de captare parantetic al textului potrivit.
 
-Dacă potrivirea eșuează, metoda `.exec ()` returnează ** null ** și setează „lastIndex” la 0.
+Dacă potrivirea eșuează, metoda `.exec()` returnează **null** și setează "lastIndex" la 0.
 
 Este important să utilizați steagul global `g`.
 
@@ -147,7 +147,7 @@ console.log(result);
 [/slide]
 
 [slide hideTitle]
-# Problem cu soluție: Match Full Name
+# Problem cu Soluție: Match Full Name
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-25-Solution-match-full-name-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -156,7 +156,7 @@ console.log(result);
 
 ```
 function matchName(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 
@@ -188,7 +188,7 @@ Un nume complet valid are următoarele caracteristici:
 Pentru a vă ajuta, am prezentat mai mulți pași:
 1. Utilizați un tester de regex online, cum ar fi: [Regex101] (https://regex101.com)
 2. Verificați modul de utilizare a seturilor de caractere \ (notate cu paranteze drepte \- \"\[\]\"\)
-3. Specificați că doriți două cuvinte cu un spațiu între ele \ (caracterul spațial \ '\' și nu orice simbol al spațiului alb \).
+3. Specificați că doriți două cuvinte cu un spațiu între ele \ (caracterul spațial \ '\' și nu orice simbol al spațiului alb \)
 4. Pentru fiecare cuvânt, specificați că ar trebui să înceapă cu o literă mare, utilizând un set de caractere. Caracterele dorite se află într-un interval \: de la A la Z
 5. Pentru fiecare cuvânt, specificați că prima literă este urmată doar de litere mici, una sau mai multe \- utilizați un alt set de caractere și cuantificatorul corect
 6. Pentru a preveni capturarea literelor pe linii noi, puneți \\**b** la începutul și la sfârșitul regexului
@@ -313,7 +313,7 @@ Ivan Ivanov Ivan Ivanov
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Match Phone Number
+# Problemă cu Soluție: Match Phone Number
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-27-Solution-Match-phone-number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -323,7 +323,7 @@ Ivan Ivanov Ivan Ivanov
 
 ```
 function matchPhone(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 
@@ -355,7 +355,7 @@ După aceea, este urmat de numărul în sine:
 
 Puteți utiliza următoarele proprietăți RegEx pentru a ajuta la potrivirea:
 - Folosiți cuantificatoare pentru a potrivi un anumit număr de cifre
-- Utilizați un grup de capturare pentru a vă asigura că delimitatorul este doar unul dintre caracterele permise (spațiu sau cratimă) și nu o combinație a ambelor \ (de ex. \+359 2 \-111 111 are delimitatoare mixte, este nevalid \).
+- Utilizați un grup de capturare pentru a vă asigura că delimitatorul este doar unul dintre caracterele permise (spațiu sau cratimă) și nu o combinație a ambelor \(de ex. \+359 2 \-111 111 are delimitatoare mixte, este nevalid \).
 
 Folosiți o referință de grup pentru a realiza acest lucru.
 - Adăugați o limită de cuvânt la sfârșitul potrivirii pentru a evita potriviri parțiale (ultimul exemplu din partea dreaptă)

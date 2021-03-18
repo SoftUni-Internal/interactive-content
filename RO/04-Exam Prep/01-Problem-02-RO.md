@@ -9,7 +9,7 @@
 [code-editor language=javascript]
 ```
 function fancyBarcodes(n, barcodes) {
-	// Write your code here
+	// Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -30,7 +30,7 @@ Fiecare linie nu trebuie să conțină altceva decât un cod de bare valid.
 
 Un cod de bare este valabil atunci când:
 
-* • Începe și se termină cu un semn "**@**" urmat de unul sau mai multe semne hash "\#"
+* Începe și se termină cu un semn "**@**" urmat de unul sau mai multe semne hash "\#"
 
 * Are cel puțin **6 caractere** (fără "**@**" sau "\#" din jur)
 
@@ -70,7 +70,7 @@ Pentru fiecare cod de bare pe care îl procesați, trebuie să imprimați un mes
 
 * Dacă codul de bare este valid: "**Product group:** \{**product group**\}"
 
-## Exemplul unu
+## Exemplul Unu
 
 |**Intrare**|**Ieșire**|
 |---|---|
@@ -79,7 +79,7 @@ Pentru fiecare cod de bare pe care îl procesați, trebuie să imprimați un mes
 ||Product group\: 46|
 
 
-## Exemplul doi
+## Exemplul Doi
 
 |**Intrare**|**Ieșire**|
 |---|---|

@@ -9,7 +9,7 @@
 [code-editor language=javascript]
 ```
 function passwordReset(input, commands) {
-   // Write your code here
+   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -57,7 +57,7 @@ Dacă nu, imprimați "**Nothing to replace!**".
 
 * După primirea comenzii "**Done**", tipăriți: "**Your password is:** \{**password**\}"
 
-## Exemplul unu
+## Exemplul Unu
 
 **Intrare**
 passwordReset('Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr', ['TakeOdd', 'Cut 15 3', 'Substitute :: -', 'Substitute \| \^', 'Done'])
@@ -106,7 +106,7 @@ Tipărim: "**Nothing to replace!**"
 
 În cele din urmă, după ce primim comanda "**Done**", imprimăm parola care rezultă în formatul corespunzător.
 
-## Exemplul doi
+## Exemplul Doi
 
 **Intrare**
 passwordReset('up8rgoyg3r1atmlmpiunagt!-irs7!1fgulnnnqy', ['TakeOdd', 'Cut 18 2', 'Substitute ! \*\*\*', 'Substitute ? .!.', 'Done'])

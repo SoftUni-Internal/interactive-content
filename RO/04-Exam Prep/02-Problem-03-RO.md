@@ -9,7 +9,7 @@
 [code-editor language=javascript]
 ```
 function pirates(input) {
-	// Write your code here
+	// Scrieți codul dvs. aici
 }
 ```
 
@@ -82,7 +82,7 @@ Dacă nu mai sunt așezări de jefuit, tipăriți:
 
 * Numele orașelor date în cadrul evenimentelor vor fi întotdeauna orașe valabile care ar trebui să fie pe listă.
 
-## Exemplul unu
+## Exemplul Unu
 
 |**Intrare**|**Ieșire** |
 |---|---|
@@ -94,7 +94,7 @@ Dacă nu mai sunt așezări de jefuit, tipăriți:
 ||Santo Domingo \-\> Population: 240000 citizens, Gold: 810 kg|
 
 
-## Exemplul doi
+## Exemplul Doi
 
 |**Intrare**|**Ieșire** |
 |---|---|

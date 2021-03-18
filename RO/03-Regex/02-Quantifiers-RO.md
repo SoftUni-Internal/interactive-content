@@ -85,8 +85,9 @@ Acest concept poartă denumirea de **grup de capturare**.
 
 Acesta are 2 efecte:
 
-- Permite preluarea unei părți din potrivire ca o informație separată în vectorul de rezultate.
-- Dacă adăugăm un cuantificator după paranteze, acesta se aplică întregii paranteze.
+- Permite preluarea unei părți din potrivire ca o informație separată în vectorul de rezultate
+
+- Dacă adăugăm un cuantificator după paranteze, acesta se aplică întregii paranteze
 
 În următorul exemplu, vom căuta expresia "go".
 
@@ -130,8 +131,8 @@ var pattern = /(?<number>\d+)/g;
 var match = pattern.exec(str);
 
 while (match != null) {
-console.log(match.groups.number);
-match = pattern.exec(str);
+    console.log(match.groups.number);
+    match = pattern.exec(str);
 }
 ```
 
@@ -141,7 +142,7 @@ Putem utiliza `(?:subexpresie)` pentru a nu captura grupuri și pentru a le elim
 
 Când lucrăm cu expresii regulate complexe, ne pot fi foarte folositoare.
 
-Simbolul `|` din exemplu semnifică  logica „or”.
+Simbolul `|` din exemplu semnifică  logica "or".
 
 ```js live
 const regex = /(?:Jane|John|Alison)\s(.*?)\s(?:Smith|Smuth)/;
@@ -178,7 +179,7 @@ console.log(result[0]);
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Match Dates
+# Problemă cu Soluție: Match Dates
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-12S-Solution-Match-Dates-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -202,7 +203,7 @@ My father is born on the **30-Dec-1994**.
 
 
 [slide hideTitle]
-# Problemă cu soluție: Email Validation
+# Problemă cu Soluție: Email Validation
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-13-Solution-email-validation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

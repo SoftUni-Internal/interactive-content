@@ -9,7 +9,7 @@
 
 ```
 function matchDate(input){
-   // Write your code here 
+   // Scrieți codul dvs. aici
 }
 ```
 
@@ -46,7 +46,7 @@ Folosiți o referință de grup pentru a verifica acest lucru.
 
 |**Intrare**|**Ieșire** |
 | --- | --- |
-| matchDate('13/Jul/1928, 10-Nov-1934 , 01/Jan-1951, 25.Dec.1937, 23/09/1973, 1/Feb/2016') | Day\: 13\, Month\: Jul\, Year\: 1928 |
+| matchDate('13/Jul/1928, 10-Nov-1934, 01/Jan-1951, 25.Dec.1937, 23/09/1973, 1/Feb/2016') | Day\: 13\, Month\: Jul\, Year\: 1928 |
 | | Day\: 10\, Month\: Nov\, Year\: 1934 |
 | | Day\: 25\, Month\: Dec\, Year\: 1937 |
 
@@ -59,7 +59,7 @@ Folosiți o referință de grup pentru a verifica acest lucru.
 [tests]
 [test open]
 [input]
-matchDate('13/Jul/1928, 10-Nov-1934 , 01/Jan-1951, 25.Dec.1937, 23/09/1973, 1/Feb/2016')
+matchDate('13/Jul/1928, 10-Nov-1934, 01/Jan-1951, 25.Dec.1937, 23/09/1973, 1/Feb/2016')
 [/input]
 [output]
  Day\: 13\, Month\: Jul\, Year\: 1928
@@ -208,7 +208,7 @@ Day\: 07\, Month\: Feb\, Year\: 2008
 
 ```
 function furniture(input) {
-   // Write youer code here
+   // Scrieți codul dvs. aici
 }
 ```
 
@@ -250,7 +250,7 @@ La final, tipăriți fiecare mobilier cumpărat pe o linie separată în format:
 
 "**Total money spent:** \{**spent money**\}" formatată la a doua zecimală.
 
-## Exemplul unu
+## Exemplul Unu
 
 |**Intrare**|**Ieșire** |
 | --- | --- |
@@ -259,7 +259,7 @@ La final, tipăriți fiecare mobilier cumpărat pe o linie separată în format:
 | | TV |
 | | Total money spent\: 2436\.69 |
 
-## Exemplul doi
+## Exemplul Doi
 
 |**Intrare**|**Ieșire** |
 | --- | --- |
@@ -365,7 +365,7 @@ Total money spend: 8593.09
 
 ```
 function race(input) {
-   // Write your code here
+   // Scrieți codul dvs. aici
 }
 ```
 
@@ -493,7 +493,7 @@ race(['Joro\, George\, Georgi\, Stamat', '\^\&\^\%\^232St\#\$ama\&\&\^\^t', '\^\
 
 ```
 function income(input) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 
@@ -539,7 +539,7 @@ Când primiți "**end of shift**" imprimați suma totală de bani pentru zi, rot
 
 "**Total income:** \{**income**\}"
 
-## Exemplul unu
+## Exemplul Unu
 
 |**Intrare**|**Ieșire** |
 | --- | --- |
@@ -548,7 +548,7 @@ Când primiți "**end of shift**" imprimați suma totală de bani pentru zi, rot
 | | Maria\: Cola \- 2\.40 |
 | | Total income\: 24\.30 |
 
-## Exemplul doi
+## Exemplul Doi
 
 |**Intrare**|**Ieșire** |
 | --- | --- |
