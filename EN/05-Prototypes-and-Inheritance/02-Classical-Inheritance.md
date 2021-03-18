@@ -40,7 +40,7 @@ Child classes can:
 - Add or replace **methods**
 - Add or replace **accessor** properties
 
-Here is an example:
+Here is an **example**:
 
 ```js live
 class Person {
@@ -98,7 +98,7 @@ Parent classes **delegate** the methods to their children, and the **keys**, and
 
 If a method is not **declared** in the child instance, we will call it from the **parent** instance. 
 
-Here is an example of using classes:
+Here is an **example** of using classes:
 
 
 ```js live
@@ -141,7 +141,7 @@ In the `speak()` method, we use the **identify** method, inherited from the **Pe
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-16-prototype-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Let us see how it will look with functions:
+Let us see how it will look with **functions**:
 
 ```js live
 function Person(who) {

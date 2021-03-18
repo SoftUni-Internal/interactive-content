@@ -20,28 +20,28 @@
 
 - There are two ways to create an object
 
-  - **literal creation**
+    - **literal creation**
 
-```js
-let Greet = {
-    greet: 'Hi!',
-    print: function() {
-        console.log(this.greet);
-    },
-};
-```
-
-  - **Constructor creation**
-
-```js 
- function Greet() {
-    this.greet = 'Hi!';
-    this.print = function() {
-        return `${this.greet}`;
+    ```js
+    let Greet = {
+        greet: 'Hi!',
+        print: function() {
+            console.log(this.greet);
+        },
     };
-}
+    ```
 
-let greet = new Greet();  
-```
+    - **constructor creation**
+
+    ```js 
+     function Greet() {
+        this.greet = 'Hi!';
+        this.print = function() {
+            return `${this.greet}`;
+        };
+    }
+
+    let greet = new Greet();  
+    ```
 
 [/slide]

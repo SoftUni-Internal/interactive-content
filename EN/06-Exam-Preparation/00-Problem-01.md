@@ -72,7 +72,10 @@ The HTML structure looks like this:
    <div>
       <article>
          <h3>JS Exam preparation</h3>
-         <p>Description: To make tasks for JS Advanced Exam</p>
+         <p>
+            Description: To make tasks
+            for JS Advanced Exam
+         </p>
          <p>Due Date: 2020.03.15</p>
          <div class="flex">
             <button class="red">Delete</button>

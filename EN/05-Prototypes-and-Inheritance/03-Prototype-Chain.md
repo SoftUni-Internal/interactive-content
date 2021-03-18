@@ -194,7 +194,7 @@ We create the **Person** object with a property **name** and a `speak()` method.
 
 The `speak()` method will print the result from the concatenation.
 
-Have a look at the **Constructor creation**:
+Have a look at the **constructor creation**:
 
 ```js live
 function Person(name) {

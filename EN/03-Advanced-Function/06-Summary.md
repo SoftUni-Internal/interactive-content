@@ -8,7 +8,7 @@
 
 ## In this lesson, you learned:
 
-- **First-class functions**:
+- **First-class functions**
   - can be passed as an **argument**
   - can be **returned**
 
@@ -22,7 +22,7 @@ function greet(sayHello, name) {
 }
 ```
 
-- **Higher-Order Functions**:
+- **Higher-order functions**
   - take other **functions** as an argument or **return** a function as a result
 
 ```js
@@ -37,7 +37,7 @@ greet(); // Output: "Hello"
 ```
 
 
-- **IIFE** is short for Immediately-Invoked Function Expression:
+- **IIFE** is short for Immediately-Invoked Function Expression
   - it **encapsulates code and data** \(state\)
 
 ```js

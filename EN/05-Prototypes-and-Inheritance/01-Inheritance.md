@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# What is Inheritance
+# Types of Inheritance
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-3-4-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -12,15 +12,15 @@ In JavaScript, **inheritance** can also be called **Delegation Behavior**.
 
 - Because the functionality from one object is delegated to another one
 
-The inheritance in JavaScript is a type of **dependence**.
+Inheritance in JavaScript is a type of **dependency**.
 
-**Types of Inheritance**
+**These are the five types of inheritance:**
 
-- **Simple** Inheritance
-- **Multilevel** Inheritance
-- **Hierarchal** Inheritance
-- **Multiple** Inheritance
-- **Hybrid** Inheritance
+- **Simple** inheritance
+- **Multilevel** inheritance
+- **Hierarchal** inheritance
+- **Multiple** inheritance
+- **Hybrid** inheritance
 
 [/slide]
 
@@ -33,13 +33,13 @@ The inheritance in JavaScript is a type of **dependence**.
 
 A **child** class **inherits** the features of the **parent** class.
 
-It is called **Simple inheritance**. 
+It is called **simple inheritance**. 
 
 This type of inheritance is only used for **extending** the parent class.
 
 [image assetsSrc="JS-Advanced-Prototypes-and-Inheritance.png" /]
 
-Here is a basic example:
+Here is a basic **example**:
 
 ```js live
 class Pet {
@@ -75,13 +75,13 @@ The **Dog** class will **inherit** all features of the **Pet** class.
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-6-multi-level-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In **Multilevel inheritance**, the **parent** class is inherited from the **grandchild** class through a **child** class.
+In **multilevel inheritance**, the **parent** class is inherited from the **grandchild** class through a **child** class.
 
 The **grandchild** class will obtain the features of the **parent** and the **child** classes.
 
 [image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-1.png" /]
 
-Here is an example:
+Here is an **example**:
 
 ```js live
 class Vehicle {
@@ -126,13 +126,13 @@ The **Ferrari** class will **obtain** all of the methods that **Brand** and **Ve
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-7-hierarchical-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In **Hierarchical inheritance**, multiple classes **inherit the traits** of a **single class**.
+In **hierarchical inheritance**, multiple classes **inherit the traits** of a **single class**.
 
 The downside is that if we change something in the **parent** class, we need to change it in all of its **children**.
 
 [image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-2.png" /]
 
-Here is an example:
+Here is an **example**:
 
 ```js
 class Pet {
@@ -167,13 +167,13 @@ All of them will have the properties and methods that the **Pet** class has.
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-8-multiple-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Multiple Inheritance** is a directly inheriting feature from more than one parent class.
+**Multiple inheritance** is a directly inheriting feature from more than one parent class.
 
 The problem with this type of inheritance comes when there are methods with the same names in both parent classes. 
 
 The compiler will not know which one to prioritize, and the application will fail.
 
-**JavaScript does not support Multiple Inheritance.**
+**JavaScript does not support multiple inheritance.**
 
 [image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-3.png" /]
 

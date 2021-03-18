@@ -12,13 +12,13 @@
     - preventDefault: `event.preventDefault();`
     - stopPropagation: `event.stopPropagation();`
 - Handling events
-    - attach
+    - attaching an event listener
     ```js
     button.addEventListener('click', () => {
     console.log('Button clicked.');
     });
     ```
-    - remove
+    - removing an event listener
      ```js
     button.removeEventListener('click', () => {
     console.log('Button event listener removed.');
