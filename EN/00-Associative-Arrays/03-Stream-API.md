@@ -495,7 +495,7 @@ products.entrySet()
 
 The `forEach()` method is used to iterate over every pair in a Map.
 
-Take a look at the example below:
+Take a look at the following example:
 
 ```java live
 Map<String, List<Integer>> courseGrades = new HashMap<>();
@@ -569,9 +569,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Read a **list of integers** and **print the 3 largest integers**.
+Read a **list of integers** and **print the largest 3 of them**.
 
-If there are **less** than 3, print **all** of them.
+If there are **less** than 3 numbers, print **all** of them.
 
 Order the list using the **Stream API**.
 
@@ -581,7 +581,7 @@ Read a list of integers.
 
 ## Output 
 
-Print the 3 largest numbers.
+Print the largest 3 numbers.
 
 ## Examples
 | **Input** | **Output** |
