@@ -28,7 +28,7 @@ The **Bank** class should have these **2 properties:**
 
 - `newCustomer (customer)`: the **customer** is of type object "\{**firstName, lastName, personalId**\}"
 
-Check if they are a customer of the bank. If they are already, throws an error:
+Check if they are a customer of the bank. If they are already, throw an error:
 "\{**firstName**\} \{**lastName**\} **is already our customer!**"
 
 Otherwise, this function should add a new customer with the provided details.
