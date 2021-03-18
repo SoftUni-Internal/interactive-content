@@ -19,7 +19,7 @@ public class Main {
 [task-description]
 # Description
 
-Create a program that **processes a sequence of integers separated by a space.** 
+Create a program that **processes a sequence of integers separated by spaces.** 
 
 Find and print the **top 5** numbers that are **greater than the average** value of the sequence, sorted in **descending order.** 
 
@@ -27,7 +27,7 @@ Print "**No**" if there are no numbers that are greater than the average value.
 
 ## Input 
 
-A sequence of integers separated by a space from the console. 
+A sequence of integers, each separated by a space from the console. 
 
 ## Output 
 
