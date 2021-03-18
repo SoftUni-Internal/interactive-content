@@ -7,15 +7,15 @@ It allows us to **reduce the code**, to create **more readable programs**, and t
 
 It also provides **easier coding of parallel operations**. 
 
-A Java Stream is a component that is capable of **internal iteration of its elements**, this means it can **iterate its elements itself**. 
+A Java Stream is a component that is capable of **internal iteration of its elements**, which means that it can **iterate its elements itself**. 
 
 A stream is a **sequence of objects** that supports **various methods**. 
 
-The stream does **not change the original data structure**, it provides result. 
+The stream does **not change the original data structure**, it only provides result. 
 
 Stream pipeline is a **chain of stream source**, **intermediate operations**, and a **terminal operation**. 
 
-The API has many **terminal operations** that aggregate a stream to a **type**:
+The API has many **terminal operations** that aggregate a stream and return **one** value by combining the contents of the stream:
 
 - `count()` 
 
@@ -31,7 +31,7 @@ It is called **terminal operation** because, in order to get the minimum value, 
 
 After getting the min value, it is **not possible to convert that back into the stream**. 
 
-Most of the methods use **lambda expressions** on the stream.
+Most of the methods use **lambda expressions**.
 
 [/slide]
 
@@ -41,7 +41,7 @@ Most of the methods use **lambda expressions** on the stream.
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-19-20-21-processing-arrays-with-stream-api-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We can process Arrays using **one line operations** instead of writing loops with indexes or `for-each` loops for simple operations when processing data:
+We can process **arrays** using **one-line operations**, instead of writing loops with indexes or `for-each` loops for simple operations when processing data:
 
 - `min()` - Finds and returns the **smallest** element in a collection
 
@@ -53,7 +53,7 @@ int min = Arrays.stream(numbers)
 System.out.println(min);
 ```
 
-It is possible to set an alternative return value instead of the minimum value using the `orElse()` method.
+It is possible to set an alternative **return value**, using the `orElse()` method.
 
 ```java live
 int [] numbers = new int[]{15, 25, 35};
@@ -91,7 +91,7 @@ int sum = Arrays.stream(numbers).sum();
 System.out.println(sum);
 ```
 
-- `average()` - Finds and returns **the average** of all elements
+- `average()` - Finds and returns **the average value** of all elements
 
 ```java live
 int [] numbers = new int[]{15, 25, 35};
