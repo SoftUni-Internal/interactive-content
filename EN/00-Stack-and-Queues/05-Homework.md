@@ -1595,9 +1595,9 @@ You are given a task to create  a simple text editor.
 
 Your task is to implement **4 types of commands** for text manipulation:
 
-- 1 **[string]** - **appends** a given string to the end of the text
-- 2 **[count]** - **erases** the last **count** elements from the text
-- 3 **[index]** - **returns** the element at position **index** from the text
+- 1 \[string\] - **appends** a given string to the end of the text
+- 2 \[count\] - **erases** the last **count** elements from the text
+- 3 \[index\] - **returns** the element at position **index** from the text
 - 4 - **undoes** the last command of type 1 or 2 and returns the text to the state before that operation
 
 ### Input

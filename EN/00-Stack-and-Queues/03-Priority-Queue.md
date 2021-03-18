@@ -76,7 +76,7 @@ PriorityQueue<String> strings = new PriorityQueue<>();
     }
 ```
 
-In the example above, the elements are removed based on the natural order of strings, which is alphabetical order. When two strings start with the same character, their lengths are compared and the shortest one is removed first.
+In the example above, the elements are removed based on the natural order of strings, which is **alphabetical order**. When two strings start with the same character, their lengths are compared and the shortest one is removed first.
 
 [image assetsSrc="Java-Advanced-Stack-and-Queues-12.png" /]
 
