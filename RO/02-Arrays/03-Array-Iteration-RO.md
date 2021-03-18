@@ -185,10 +185,7 @@ reverse(5, [664, 43, 715, 8899, 747, 44, 78])
 [slide hideTitle]
 # Problemă cu Soluție: Reverse an Array of Strings
 
-[vimeo-video]
-[stream language="EN" videoId="489372618/881c97fdd1" default /]
-[stream language="RO" videoId="489372618/881c97fdd1"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/02.JS-Fundamentals-Arrays/02.JS-Fundamentals-Arrays-21-Solution-Reverse-array-of-strings-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Reverse an Array of Strings" taskId="fundamentals-js-arrays-lab-Reverse-an-Array-of-Strings" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
