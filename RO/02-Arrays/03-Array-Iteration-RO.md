@@ -40,7 +40,7 @@ for (const car of cars) {
 [/slide]
 
 [slide hideTitle]
-# Imprimarea unei matrice cu For-of
+# Imprimarea Unei Matrice cu "for-of"
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/02.JS-Fundamentals-Arrays/02.JS-Fundamentals-Arrays-25-Printing-an-array-with-for-of-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ``` js live

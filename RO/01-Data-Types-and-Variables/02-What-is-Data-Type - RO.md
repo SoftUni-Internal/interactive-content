@@ -26,7 +26,7 @@ Variabilele în Javascript **nu au** un tip, în ele putem **stoca** orice tipur
 
 Tipurile de date **primitive** sunt: `Boolean`, `Null`, `Undefined`, `Number`, `String`, `Symbol`, `BigInt`.
 
-Tipurile de date de **referință** sunt: `objects (obiecte)` și `arrays (matrici)`.
+Tipurile de date de **referință** sunt: `objects` și `arrays`.
 
 [image assetsSrc="data-types-in-js.png" /]
 

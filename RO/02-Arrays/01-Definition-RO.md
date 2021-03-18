@@ -35,6 +35,7 @@ Ai putea să te gândești la el ca la un **tren**, fiecare vagon din care **poa
 Acum să ne imaginăm **o serie de numere întregi**, fiecare element reprezentând un vagon și fiecare valoare este numărul de pasageri.
 
 Ca și în această reprezentare grafică:
+
 [image assetsSrc="array-example.png" /]
 
 Acesta are **7 vagoane** (**elemente**).
@@ -400,7 +401,7 @@ console.log(arr);
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/02.JS-Fundamentals-Arrays/02.JS-Fundamentals-Arrays-12-JS-Arrays-and-invalid-positions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-Dacă încercăm să atribuim o valoare unui index inexistent, JS va umple elementele lipsă cu valori 'nedefinite' și îi va mări dimensiunea:
+Dacă încercăm să atribuim o valoare unui index inexistent, JavaScript va umple elementele lipsă cu valori 'nedefinite' și îi va mări dimensiunea:
 
 ``` js live
 let nums = [10, 20, 30];

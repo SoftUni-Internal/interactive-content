@@ -31,7 +31,7 @@ Un literal în programare înseamnă să scriem o variabilă cu o valoare în a�
 console.log(x); // 2
 ```
 
-Folosind `var`, putem accesa o variabilă înainte de a o declara.:
+Folosind `var`, putem accesa o variabilă înainte de a o declara:
 
 ``` js live
 console.log(myVar);

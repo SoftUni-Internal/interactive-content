@@ -299,7 +299,9 @@ JavaScript în sine oferă un operator numit `typeof` pentru tot ceea ce funcți
 
 Cu toate acestea, tipurile de date JavaScript și operatorul `typeof` nu sunt tocmai perfecte.
 
-De exemplu, pentru matrice și `null`, este returnat un `obiect` . Pentru `NaN` și `Infinity` -un număr.
+De exemplu, pentru matrice și `null`, este returnat un `obiect`. 
+
+Pentru `NaN` și `Infinity` - un număr.
 
 Exemple:
 
