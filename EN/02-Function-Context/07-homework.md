@@ -19,7 +19,8 @@ Write a **company** class, which supports the described functionality below.
 
 ## Functionality
 
-### `Constructor()`
+`constructor()`:
+
 
 Should have a property `departments`- an empty array
 
