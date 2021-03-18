@@ -85,7 +85,7 @@ You can use the default configuration for all the following options.
 
 Press the `[Start using IntelliJ IDEA]` button and the main view of IntelliJ IDEA Community will be displayed:
 
-[image assetsSrc="intro-to-programming-install-intelliJ-9.png" /]
+[image assetsSrc="intro-to-programming-install-intelliJ-9.jpg" /]
 
 That is all. 
 
