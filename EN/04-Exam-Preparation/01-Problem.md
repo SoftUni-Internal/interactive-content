@@ -38,7 +38,7 @@ Save the product of the two at the index, where the first number was.
 
 On the first input line you will be given the initial array values, separated by a single space.
 
-On the next lines you will be receiving **commands**. The program should stop searching for commands after receiving the "**end**" command.
+On the next lines you will be receiving **commands**. The program should stop searching for commands after receiving: "**end**" as input. The program should then stop running and print out the modified array.
 
 The commands could be:
 
