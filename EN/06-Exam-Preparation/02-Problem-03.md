@@ -19,21 +19,21 @@ Write a **Bank** class that implements the following functionality:
 
 ## Functionality
 
-- `constructor (bankName)` - receives **1 parameter** at initialization of the class (**bankName**).
+- `constructor (bankName)` - receives **1 parameter** at initialization of the class (**bankName**)
 
 The **Bank** class should have these **2 properties:**
 
 - bankName \- a **private** property of type string
 - allCustomers \- initially an empty array
 
-"**newCustomer (customer)**": the **customer** is of type object "\{**firstName, lastName, personalId**\}".
+- `newCustomer (customer)`: the **customer** is of type object "\{**firstName, lastName, personalId**\}"
 
-Check if they are already a customer of the bank. If they are already a customer throws an error:
+Check if they are a customer of the bank. If they are already, throw an error:
 "\{**firstName**\} \{**lastName**\} **is already our customer!**"
 
 Otherwise, this function should add a new customer with the provided details.
 
-"**depositMoney (personalId, amount)**": **personalId** and **amount** should be numbers
+- `depositMoney (personalId, amount)`: **personalId** and **amount** should be numbers
 
 Check if the given **personalId** corresponds to a customer in the **customers array**, if not throw a new error:
 
@@ -43,15 +43,15 @@ Otherwise, add the amount to the corresponding customer in a property named **to
 
 "\{**totalMoney**\}\$"
 
-"**withdrawMoney (personalId, amount)**":  **personalId** and **amount** should be numbers.
+- `withdrawMoney (personalId, amount)`:  **personalId** and **amount** should be numbers
 
 Check if the given **personalId** corresponds to a customer **in the customers' array**, if not **throw a new error:**
 
-"**We have no customer with this ID!**`"
+"**We have no customer with this ID!**"
 
-If there is a customer with the given **personalId**, check if the customer **has enough money** to withdraw the given amount from his account. 
+If there is a customer with the given **personalId**, check if the customer **has enough money** to withdraw the given amount from their account. 
 
-If the money is not enough **throw a new error:**
+If the money is not enough, **throw a new error:**
 
 "\{**firstName**\} \{**lastName**\} **does not have enough money to withdraw that amount!**"
 
@@ -59,7 +59,7 @@ Otherwise, subtract the **amount** from the "**totalMoney**" of the customer and
 
 "\{**totalMoney**\}\$"
 
-"**customerInfo (personalId)**": **personalId** is of **type number**
+- `customerInfo (personalId)`: **personalId** is of **type number**
 
 Check if the given **personalId** corresponds to a customer in the customers' array, if not throw a new error:
 
@@ -93,7 +93,7 @@ The **transaction information** contains information about:
 # Examples
 This is an example of how the code is **intended to be used**:
 
-**Sample code usage** 
+**Sample code usage:** 
 
 ```js
 let bank = new Bank("SoftUni Bank");
@@ -113,7 +113,7 @@ console.log(bank.customerInfo(6233267));
  
 ```
 
-**Corresponding output**
+**Corresponding output:**
 
 ```
 { firstName: "John", lastName: "Miller", personalId: 6233267 } 
@@ -136,7 +136,7 @@ Transactions:
 [tests]
 [test open]
 [input]
-//zero test 1
+// zero test 1
 let Bank = result;
 let name = 'SoftUni Bank';
 let bank = new Bank(name);
@@ -179,7 +179,7 @@ yes
 [/test]
 [test open]
 [input]
-//zero test 2
+// zero test 2
 let Bank = result;
 let name = 'SoftUni Bank';
 let bank = new Bank(name);
