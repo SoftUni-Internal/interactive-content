@@ -237,11 +237,11 @@ System.out.println(airplanes.isEmpty());
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-11-iterating-through-map-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-When iterating through objects of type `Map.Entry <K, V>`, it is **impossible** to modify the collection(read-only).
+When iterating through objects of type `Map.Entry <K, V>`, it is **impossible** to modify the collection(it is read-only).
 
-There are several ways to iterate the Keys stored in a Map.
+There are several ways to iterate through the data that is stored in a **Map**.
 
-- Iterating through the items of a map using a **for-each** loop
+- Iterating through the items of a map, using a **for-each** loop
 
   - `keySet()` - obtains only the keys
 
@@ -265,7 +265,7 @@ for (Double price : fruitsPrice.values()) {
 }
 ```
 
-- Iterating through the items of a map using the build-in method `entrySet()`
+- Iterating through the items of a map, using the build-in method `entrySet()`
 
   - `entry.getKey()` - obtains the Keys
   - `entry.getValue()` - obtains the Values
@@ -301,7 +301,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Read a **list of real numbers** and print them in **ascending order** along with their **number of occurrences**.
+Read a **list of real numbers** and print them out in **ascending order**, along with their **number of occurrences**.
 
 ## Examples
 | **Input** | **Output** |
