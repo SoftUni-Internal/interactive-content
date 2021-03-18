@@ -17,7 +17,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program which **counts all characters** in a string except space (' ').
+Create a program, which **counts all characters** in a string except space (' ').
 
 **Print** all occurrences in the following **format**:
 
@@ -219,9 +219,9 @@ public class Main {
 ## Description
 You are given a **sequence of strings**, each on a new line until the command "**stop**".
 
-Every **odd line** on the console is representing a **resource** (e.g. Gold, Silver, Copper, and so on).
+Every **odd line** represents a **resource** (e.g. Gold, Silver, Copper, and so on).
 
-And every even - **quantity**. 
+And every even - **quantity** of the **resource**. 
 
 Your task is to collect the resources and print them each on a new line.
 
@@ -234,7 +234,7 @@ Your task is to collect the resources and print them each on a new line.
 | --- | --- |
 | Gold | Gold \-\> 155 | 
 | 155 | Silver \-\> 10 |
-| Silver | Gold \-\> 17 |
+| Silver | Copper \-\> 17 |
 | 10 | | 
 | Copper | |
 | 17 | |
@@ -245,7 +245,7 @@ Your task is to collect the resources and print them each on a new line.
 | --- | --- |
 | gold | Gold \-\> 170 | 
 | 155 | Silver \-\> 10 |
-| silver | Gold \-\> 17 |
+| silver | Copper \-\> 17 |
 | 10 | | 
 | copper | |
 | 17 | |
@@ -411,10 +411,6 @@ Platinium -> 36756
 [/slide]
 
 
-
-
-
-
 [slide hideTitle]
 # Problem: Legendary Farming
 [code-task title="Legendary Farming" taskId="Java-Fundamentals-2-Associative-Arrays-Legendary-Farming" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -441,21 +437,25 @@ The **possible items** are:
 
 - **Dragonwrath** - requires 250 **Motes**
 
-**Shards, Fragments and Motes** are the **key materials**, everything else is junk. 
+**Shards, Fragments and Motes** are the **important materials**, everything else is junk. 
 
-Keep track of the key materials - the **first** that **reaches the 250** mark wins the race. 
+Keep track of the important materials - the **first** that **gets the 250 of their desired material** wins the race. 
 
-At that point, **print** the **corresponding legendary item** obtained. 
+At that point, **print** the **corresponding legendary item**. 
 
-Then, **print** the **remaining shards, fragments, motes**, **ordered by quantity in descending** order, then **by name in ascending** order, **each** on a **new line**. 
+Then, **print** the **remaining shards, fragments, motes**, **ordered by quantity in descending** order then **by name in ascending** order, **each** on a **new line**. 
 
 Finally, **print** the collected **junk items**, in **alphabetical** order.
 
 
 ### Input
-Each line of input is in format "\{**quantity**\} \{**material**\} \{**quantity**\} \{**material**\} … \{**quantity**\} \{**material**\}"
+
+Each line of input is in the following format:
+
+"\{**quantity**\} \{**material**\} \{**quantity**\} \{**material**\} … \{**quantity**\} \{**material**\}"
 
 ### Output
+
 - On the **first line**, print the obtained item in format "\{**Legendary item**\} **obtained!**"
 
 - On the **next three lines**, print the **remaining key materials** in **descending** order by **quantity**
@@ -464,9 +464,9 @@ Each line of input is in format "\{**quantity**\} \{**material**\} \{**quantity*
 
 - On the **final several lines**, print the **junk items in alphabetical** order
 
-    - all materials are printed in format: "\{**material**\}: \{**quantity**\}"
+    - all materials are printed in the following format: "\{**material**\}: \{**quantity**\}"
 
-    - all output should be **lowercase**, except the **first** letter of the legendary
+    - all values should be **lowercase**, except the **first** letter of the obtained legendary
 
 
 ### Examples
@@ -708,26 +708,30 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which keeps information about **products and their prices**.
+Create a program, which keeps information about **products and their prices**.
 
 Each product has **a name, a price and its quantity**.
 
 If the **product doesn't exist** yet, **add it with its starting quantity**.
 
-If you receive a **product, which already exists** **increase its quantity** by the input quantity and if its **price is different, replace the price as well**.
+If you receive a **product, which already exists**, **increase its quantity** by the input quantity.
 
-You will receive **products' names, prices and quantities on new lines**. 
+If the **price is different, replace the price as well**.
+
+You will receive **the names, the prices and the quantities of products on new lines**. 
 
 Until you receive the **command** "**buy**", keep adding items.
 
 When you do receive the command "**buy**", **print** the **items** with their **names** and **total price** of all the products with that name. 
 
 ### Input
-- Until you receive "**buy**", the products come in the **format**: "\{**name**\} \{**price**\} \{**quantity**\}"
-- The product data is always delimited by a single space
+
+- Until you receive "**buy**", the products come in the following **format**: "\{**name**\} \{**price**\} \{**quantity**\}"
+- The information about a product is always separated by a single space
 
 ### Output
-- Print information about each product, following the **format**: 
+
+- Print information about each product in the following **format**: 
     - "\{**productName**\} \-\> \{**totalPrice**\}"
 - Format the total price to the **second digit** after the decimal point
 
@@ -948,19 +952,23 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which **validates parking** for an online service.
+Create a program, which **validates a parking** for an online service.
 
 Users can **register to park and unregister to leave**.
 
 The program receives **2 commands**:
-- "**register** \{**username**\} \{**licensePlateNumber**\}":
-    - the system **only supports one car per user** at the moment, so if a user tries to register another license plate, using the same username, the system should **print**: "**ERROR: already registered with plate number** \{**licensePlateNumber**\}"
-    - if the aforementioned checks pass **successfully**, the **plate can be registered**, so the system should **print**: "\{**username**\} **registered** \{**licensePlateNumber**\} **successfully**"
-- "**unregister** \{**username**\}":
-    - if the user is **not present in the database**, the system should **print**: "**ERROR: user** \{**username**\} **not found**"
-    - if the aforementioned check passes **successfully**, the system should **print**: "\{**username**\} **unregistered successfully**"
 
-After you execute all of the commands, **print** all the **currently registered users and their license plates** in the format:
+- "**register** \{**username**\} \{**licensePlateNumber**\}":
+    - the program **only supports one car per user**.
+    - if a user tries to register another license plate, using the same username, the system should **print**: "**ERROR: already registered with plate number** \{**licensePlateNumber**\}"
+    - The program should **print**: "\{**username**\} **registered** \{**licensePlateNumber**\} **successfully**"
+
+
+- "**unregister** \{**username**\}":
+    - if the user is **not present in the database**, the program should **print**: "**ERROR: user** \{**username**\} **not found**"
+    - The program should **print**: "\{**username**\} **unregistered successfully**"
+
+After executing all of the commands, **print** all the **currently registered users and their license plates** in the following format:
 - "\{**username**\} \=\> \{**licensePlateNumber**\}"
 
 ### Input
@@ -1195,11 +1203,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which keeps information about **courses**.
+Create a program, which keeps information about **courses**.
 
 Each course has a **name** and **registered students**.
 
-You will receive **course name and student name**, **until** you receive the **command** "**end**". 
+You will receive **a course name and a student name**, **until** you receive the **command** "**end**". 
 
 **Check** if such **course already exists**, and if **not**, **add the course**. 
 
@@ -1207,20 +1215,19 @@ You will receive **course name and student name**, **until** you receive the **c
 
 When you do receive the **command** "**end**", **print** the courses with their **names** and **total registered users**, ordered by the count of **registered** users in descending order. 
 
-For each **contest print registered users** **ordered by name in ascending** order.
+For each **contest**, print **the registered users** ordered by **the name in ascending** order.
 
 ### Input
 - Until you receive "**end**", the **input come in the format**:
-
  "\{**courseName**\} : \{**studentName**\}".
-- The product data is **always delimited** by " : "
+ 
+- The product data is **always be separated** by a **" : "**
 
 ### Output
-- Print information about each **course**, following the **format**: 
-
+- Print the information about each **course** in the following **format**: 
 "\{**courseName**\}: \{**registeredStudents**\}"
-- Print information about each **student**, following the **format**:
 
+- Print information about each **student** in the following **format**:
 "-- \{**studentName**\}"
 
 ### Examples
@@ -1463,21 +1470,21 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which keeps information about students and their grades.
+Create a program, which keeps information about students and their grades.
 
-You will receive **n pair of rows**. 
+You will receive **n** pair of rows. 
 
-First you will receive the **student's name**, after that you will receive his/her **grade**. 
+First you will receive the **student's name**. Аfter that you will receive their **grade**. 
 
-Check if the **student already exists**, and if **not**, **add** him/her. 
+If the **student does not exists**, **add** them. 
 
-Keep track of **all grades for each student**.
+Keep track of **all of the grades for each student**.
 
-When you finish reading data, keep the students with average grade **higher or equal to 4.50**. 
+When you finish reading the data, keep the students with an average grade **higher or equal to 4.50**. 
 
-Order filtered students by average grade in **descending**.
+Order the filtered students by the average grade in **descending** order.
 
-**Print the students and their average grade** in format:
+**Print the students and their average grade** in the following format:
 
 - "\{**name**\} -> \{**averageGrade**\}"
 
@@ -1761,32 +1768,30 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program which keeps information about companies and their employees.
+Create a program, which keeps information about companies and their employees.
 
-You will receive **company name** and **employee's id**, until you receive the **command** "**End**". 
+You will receive a **company names** and **employee ids**, until you receive the **command** "**End**". 
 
 **Add** each **employee** to the **given company**.
 
 Keep in mind that a **company cannot have two employees with the same id**.
 
-When you finish reading data, **order** the companies by the name in ascending order.
+When you finish reading the data, **order** the companies by the name in **ascending** order.
 
 Print the company name and each employee's id in the following format:
+
 "\{**companyName**\}
-
 -- \{**id1**\}
-
 -- \{**id2**\}
-
 -- \{**idN**\}"
 
 ### Input
-Until you receive "**End**", the input come **in the format**:
 
+Until you receive the command "**End**", the input come **in the following format**:
 "\{**companyName**\} -> \{**employeeId**\}"
 
-
 ### Examples
+
 | **Input** | **Output** |
 | --- | --- |
 | SoftUni \-\> AA12345 | HP | 
@@ -2080,23 +2085,24 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-The force users are struggling to remember which side are the different force users from, because they switch them too often.
+The force users are struggling to remember which side are the different force users from because they switch them too often.
 
 So you are tasked to create a program to manage their profiles.
 
 You should store information for **every unique force user**, registered in the application.
 
 You will receive several **input lines in one of the following formats**:
+
 - "\{forceSide\} \| \{forceUser\}"
 - "\{forceUser\} -> \{forceSide\}"
 
-The **force user and force side are strings**, containing any character.
+The **force user and force side are strings**, containing characters.
 
-If you receive force side \| force user you should **check if such force user already exists**, and if not, **add him/her** to the corresponding side.
+If you receive **{force side \| force user}**, you should **check if such force user already exists**. If they do not, **add them** to the corresponding side.
 
-If you receive a force user -> force side you should **check if there is such force user already** and if so, **change his/her side**. 
+If you receive **{force user -> force side}**, you should **check if there is such force user already**. If they do, **change their side**. 
 
-If there is no such force user, **add him/her to the corresponding force side**, treating the command as new registered force user.
+If there is no such force user, **add them to the corresponding force side**, treating the command as new registered force user.
 
 Then you should print on the console: 
 
@@ -2104,19 +2110,21 @@ Then you should print on the console:
 
 You should **end your program when you receive the command** "**End**". 
 
-At that point you should print each force side, **ordered descending by force users count**, than **ordered by name**. 
+At that point you should print each force side by the **count of force users in descending order** then **ordered by name**. 
 
-For each side print the force users, **ordered by name**.
+For each side, print the force users **ordered by name**.
 
-In case there are **no force users** in a side, you **shouldn't print the side information**.
+In case there are **no force users** on a side, you **should not print the side information**.
 
 ### Input
+
 - The input comes in the form of commands in one of the formats specified above
+
 - The input ends when you receive the command "**End**"
 
 ### Output
 
-- As output for each force side, ordered descending by force users count, then by name, you must print all the force users, ordered by name alphabetically
+- Print each force side by the **count of force users in descending order** then **ordered by name**
 
 - The output format is:
 
@@ -2125,7 +2133,7 @@ In case there are **no force users** in a side, you **shouldn't print the side i
 ! \{**forceUser**\}
 ! \{**forceUser**\}"
 
-- In case there are NO force users, do not print this side
+- In case there are no force users, do not print the specific side
 
 ### Examples
 | **Input** | **Output** |
@@ -2138,7 +2146,7 @@ In case there are **no force users** in a side, you **shouldn't print the side i
 ### Comments
 We register George in the Light side and Peter in the Dark side.
 
-After receiving "**End**" we print both sides, ordered by membersCount and then by name.
+After receiving "**End**" we print both sides, ordered by the count of users and then by name.
 
 ### Examples
 | **Input** | **Output** |
@@ -2373,40 +2381,41 @@ You will be receiving lines in the following format: "\{**username**\}-\{**langu
 
 You should store each **username** and his **submissions and points**. 
 
-You can receive a command to ban a user for **cheating** in the following format: "\{**username**\}**-banned**". 
+You can receive a command that bans a user for **cheating** in the following format: "\{**username**\}**-banned**". 
 
-In that case, you should remove the user from the contest, but preserve his submissions in the total count of submissions for each language.
+In that case, you should remove the user from the contest but preserve his submissions in the total count of submissions for each language.
 
-After receiving "**exam finished**", **print** each of the participants, ordered **descending** by their **max** **points**, then by **username**, in the following **format**:
+After receiving "**exam finished**", **print** each of the participants in **descending** order by their **max points** then by **username** in the following **format**:
 
 "**Results:**
 \{**username**\} \| \{**points**\}
 ..."
 
-After that print each language, used in the exam, ordered **descending** by total **submission count** and **then** by language **name**, in the following format:
+After that print each language that is used in the exam in **descending** order by total **submission count** and **then** by language **name**, in the following format:
 
 "**Submissions:**
 \{**language**\} - \{**submissionsCount**\}
 ..."
 
 ## Input / Constraints
+
 Until you receive "**exam finished**", you will be receiving participant submissions in the following format: "\{**username**\}-\{**language**\}-\{**points**\}"
 You can receive a ban command \-\> "\{**username**\}-**banned**"
 The points of the participant will always be a valid integer in the range \[0-100\]
 
 ## Output
-- Print the exam results for each participant, ordered descending by max points and then by username, in the following format:
+
+- Print the exam results for each participant in descending order by their max points and then by username, in the following format:
 
 "**Results:**
 \{**username**\} \| \{**points**\}
 ..."
-- After that print each language, ordered descending by total submissions and then by language name, in the following format:
 
+- After that print each language that is used in the exam in **descending** order by total **submission count** and **then** by language **name**, in the following format:
 
 "**Submissions:**
 \{**language**\} - \{**submissionsCount**\}
 ..."
-
 
 ### Examples
 | **Input** | **Output** |
@@ -2419,7 +2428,7 @@ The points of the participant will always be a valid integer in the range \[0-10
 | exam finished | Java - 2 |
 
 ### Comments
-Mike is banned so he is removed from the contest, but his submissions are still preserved in the submissions count. 
+Mike is banned so he is removed from the contest but his submissions are still preserved in the submissions count. 
 
 So although there are only 2 participants in the results, there are 4 submissions in total.
 
