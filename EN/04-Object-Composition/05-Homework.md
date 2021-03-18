@@ -237,7 +237,7 @@ The input will be in a form of an array of strings - each string represents a co
 ## Example
 | **Input** | **Output** |
 | --- | --- |
-|\['add hello', 'add again', 'remove hello', 'add again', 'print'\]| again\, again |
+|\['add hello', 'add again', 'remove hello', 'add again', 'print'\]| again,again |
 
 
 [/task-description]
