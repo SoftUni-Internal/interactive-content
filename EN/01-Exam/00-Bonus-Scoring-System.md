@@ -17,27 +17,27 @@ public class Main {
 [task-description]
 ## Description
 
-Create a program that calculates the **bonus points** for each **student**, for a certain course.
+Create a program that calculates the **bonus points** each **student** receives when attending a course.
 
-On the first line, you are going to receive **the number of students** for the course.
+On the first line, you are going to receive **the number of students** attending the course.
 
-**On the second line**, you are going to receive **the number of the lectures** in the course.
+**On the second line**, you are going to receive **the number of the lectures** the course contains.
 
-On the third line, you are going to receive the **additional bonus** for the **course**. 
+On the third line, you are going to receive the **initial bonus** for the **course**. 
 
-On the next lines, you will be receiving the **number of attendances for each student**. 
+On the next lines, you will be receiving the **number of lectures each student attended**. 
 
 The bonus points are calculated using the following **formula**: 
 
-\{total bonus\} = \{student attendances\} \/ \{course lectures\} \* (5 + \{additional bonus\})
+\{total bonus\} = \{student attendances\} \/ \{course lectures\} \* (5 + \{initial bonus\})
 
-Find the student with the **most bonus points** and print their total **points** along with **attendances** in the following format: 
+Find the student with the **most bonus points** and print out their total **points** along with their number of **attendances** in the following format: 
 
 "**Max Bonus:** \{**maxBonusPoints**\}."
 "**The student has attended** \{**studentAttendances**\} **lectures.**"
 
 
-In the end, round the bonus points up to **the next whole number**.
+Round the bonus points up to **the nearest integer**.
 
 ### Input / Constrains
 
@@ -53,7 +53,7 @@ In the end, round the bonus points up to **the next whole number**.
 
 ### Output
 
-- Print the maximum bonus points, rounded up to the nearest whole number, along with the attendance of the given student, in the format described above 
+- Print the maximum bonus points, rounded up to the nearest integer, along with the number of attended lectures of the given student, in the format described above 
 
 ## Example One
 | **Input** | **Output** |
@@ -71,7 +71,7 @@ In the end, round the bonus points up to **the next whole number**.
 
 First, we receive the **number of students** enrolled in the course - 5.
 
-The total count of the lectures is 25 and the initial bonus is 30.
+The total number of the lectures is 25 and the initial bonus is 30.
 
 Then we calculate the bonus of the student with 12 attendances, which is 16.8.
 
