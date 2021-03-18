@@ -23,9 +23,9 @@ A class instance can also have **methods** for **modifying its state**, they are
 
 ``` js
 class Student {
-  constructor(name) {
-    this.name = name;
-  }
+    constructor(name) {
+        this.name = name;
+    }
 }
 ```
 
@@ -47,10 +47,10 @@ The `class` keyword is used to create a class.
 
 ```js
 class Student {
-  constructor(name, grade) {
-    this.name = name;
-    this.grade = grade;
-  }
+    constructor(name, grade) {
+        this.name = name;
+        this.grade = grade;
+    }
 }
 ```
 
@@ -84,11 +84,11 @@ Therefore, they have **no access** to instance data.
 
 ``` js live
 class Dog {
-  constructor() {
-    this.speak = () => {
-      console.log('Woof');
+    constructor() {
+        this.speak = () => {
+            console.log('Woof');
+        }
     }
-  }
 }
 
 let dog = new Dog();

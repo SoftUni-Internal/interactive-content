@@ -23,9 +23,9 @@ Instanțele de clasă pot avea, de asemenea, **metode** pentru **modificarea st�
 
 ``` js
 class Student {
-  constructor(name) {
-    this.name = name;
-  }
+    constructor(name) {
+        this.name = name;
+    }
 }
 ```
 Pentru a declara o clasă, folosim cuvântul cheie `class` cu numele clasei, în acest caz `Student`.
@@ -45,10 +45,10 @@ Cuvântul cheie `class` este folosit pentru a crea o clasă.
 
 ```js
 class Student {
-  constructor(name, grade) {
-    this.name = name;
-    this.grade = grade;
-  }
+    constructor(name, grade) {
+        this.name = name;
+        this.grade = grade;
+    }
 }
 ```
 
@@ -62,7 +62,7 @@ let student = new Student('Peter', 5.50);
 [/slide]
 
 [slide hideTitle]
-# Funcțiile într-o Clasă
+# Funcțiile Într-o Clasă
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/RO/01.JS-Fundamentals-Object-and-Classes-28-Functions-in-a-class-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -74,17 +74,17 @@ Metodele de instanță pot **accesa și modifica** datele instanței.
 
 Metodele de instanță pot apela alte metode de instanță, precum și orice metodă statică.
 
-Metodele statice ** se referă la clasa **, mai degrabă decât la o instanță a acesteia.
+Metodele statice **se referă la clasa**, mai degrabă decât la o instanță a acesteia.
 
-Prin urmare, nu au ** acces ** la datele instanței.
+Prin urmare, nu au **acces** la datele instanței.
 
 ``` js live
 class Dog {
-  constructor() {
-    this.speak = () => {
-      console.log('Woof');
+    constructor() {
+        this.speak = () => {
+            console.log('Woof');
+        }
     }
-  }
 }
 
 let dog = new Dog();
@@ -94,7 +94,7 @@ dog.speak();
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Cats
+# Problemă cu Soluție: Cats
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/RO/01.JS-Fundamentals-Object-and-Classes-31-Solution-Cat-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -102,7 +102,7 @@ dog.speak();
 [code-editor language=javascript]
 ```
 function cats(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]

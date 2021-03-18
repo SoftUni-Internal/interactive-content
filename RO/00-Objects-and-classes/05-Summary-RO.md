@@ -8,21 +8,23 @@
 
  Obiecte - Definție, proprietăți și metode
 ```js
-let person = { name: 'Peter', 
-age: 20,
-sayHello() {
-     console.log('Hi, guys');
-  }
+let person = {
+    name: 'Peter',
+    age: 20,
+    sayHello() {
+        console.log('Hi, guys');
+    }
 };
 ```
 - Metodele de obiecte
 
 ```js live
-let person = { name: 'John', 
-age: 43,
-sayHello() {
-     console.log('Hello, my name is ' + this.name);
-  }
+let person = {
+    name: 'John',
+    age: 43,
+    sayHello() {
+        console.log('Hello, my name is ' + this.name);
+    }
 };
 
 person.sayHello();
@@ -31,10 +33,14 @@ person.sayHello();
 - Iterarea obiectelor
 
 ``` js live
-let person = { name:'Peter', age:'18', grade:'5.50' };
+let person = {
+    name: 'Peter',
+    age: '18',
+    grade: '5.50'
+};
 
 for (let key in person) {
-   console.log(`${key}: ${person[key]}`);
+    console.log(`${key}: ${person[key]}`);
 }
 
 ```
@@ -68,9 +74,9 @@ console.log(data);
 
 ``` js
 class Student {
-  constructor(name) {
-    this.name = name;
-  }
+    constructor(name) {
+        this.name = name;
+    }
 }
 ```
 
@@ -80,7 +86,8 @@ class Student {
 
 - Metode de mapare
 
-- Expresii Lambda 
+- Expresii Lambda
+ 
 - Stream API
 
 [/slide]

@@ -33,7 +33,7 @@ console.log(`Variable b = ${d}`);
 
 Există **trei tipuri comune de date de referință** - **Obiecte**, **Matrice** și **Funcții**.
 
-**Obiectele** și**matricele** sunt „colecții” - o modalitate de a grupa mai multe puncte de date într-un singur pachet pe care îl putem transmite folosind accesul.
+**Obiectele** și**matricele** sunt "colecții" - o modalitate de a grupa mai multe puncte de date într-un singur pachet pe care îl putem transmite folosind accesul.
 
 **Funcțiile** sunt, de asemenea, obiecte, un tip special de obiecte numite: **obiecte funcționale.**
 

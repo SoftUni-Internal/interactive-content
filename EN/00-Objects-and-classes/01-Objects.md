@@ -16,7 +16,10 @@ In JavaScript, you can **add** and **remove properties** from any object at **ru
 Example: 
 
 ``` js live
-let person = { name:'Peter', age: 20 };
+let person = {
+    name: 'Peter',
+    age: 20
+};
 console.log(person.name);
 ```
 
@@ -36,14 +39,18 @@ We can **access** a property's value with the class name, followed by a period `
 This example shows how to define an object:
 
 ``` js
-let person = { name:'Peter', age: 20, hairColor: 'black'} ;
+let person = {
+    name: 'Peter',
+    age: 20,
+    hairColor: 'black'
+};
 ```
 
 We can also define an empty object and add the properties later:
 
 ``` js
 let person = {};
-person.name ='Peter';
+person.name = 'Peter';
 person['lastName'] = 'Parker';
 person.age = 20;
 person.hairColor = 'black';
@@ -64,9 +71,9 @@ We can define methods using several syntaxes.
 
 ``` js
 let person = {
-    sayHello : function() {
-    console.log('Hi, guys');
-  }
+    sayHello: function() {
+        console.log('Hi, guys');
+    }
 }
 ```
 
@@ -74,16 +81,19 @@ let person = {
 
 ```js 
 let person = {
-  sayHello() {
-     console.log('Hi, guys');
-  }
+    sayHello() {
+        console.log('Hi, guys');
+    }
 }
 ```
 
 We can **add a method** to an **already defined object**:
 
 ```js
-let person = { name:'Peter', age: 20 };
+let person = {
+    name: 'Peter',
+    age: 20
+};
 person.sayHello = () => console.log('Hi, guys');
 ```
 
@@ -103,10 +113,15 @@ The most used built-in object methods are:
 * `Object.values()` - returns an array with all the values of the properties of the object
 
 ``` js live
-let cat = { name:'Tom', age: 5 };
+let cat = {
+    name: 'Tom',
+    age: 5
+};
 
 console.log(Object.entries(cat));
+
 console.log(Object.keys(cat));
+
 console.log(Object.values(cat));
 
 ```
@@ -123,10 +138,14 @@ We can iterate through the keys of an object by using a **for-in loop**.
 This enables us to access the property of a given key:
 
 ``` js live
-let person = { name:'Peter', age:'18', grade:'5.50' };
+let person = {
+    name: 'Peter',
+    age: '18',
+    grade: '5.50'
+};
 
 for (let key in person) {
-   console.log(`${key}: ${person[key]}`);
+    console.log(`${key}: ${person[key]}`);
 }
 
 ```

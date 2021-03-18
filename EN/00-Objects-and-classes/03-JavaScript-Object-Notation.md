@@ -43,7 +43,7 @@ JSON uses **human-readable text to transmit data.**
 }
 ```
 
-In this example:
+**In this example:**
 
 * Braces `{}` define a JSON
 
@@ -76,12 +76,12 @@ console.log(data);
 
 ``` js live
 let car = {
-  Car: 'Nio',
-  Model: 'EP9',
-  Colour: 'Blue',
+    Car: 'Nio',
+    Model: 'EP9',
+    Colour: 'Blue',
 };
 
-var data = JSON.stringify(car);  
+var data = JSON.stringify(car);
 
 console.log(data);
 ```

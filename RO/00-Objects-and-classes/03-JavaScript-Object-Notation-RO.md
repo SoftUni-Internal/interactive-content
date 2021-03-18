@@ -50,7 +50,7 @@ JSON folosește **text citibil de către om pentru a transmite date.**
 
 * Cheile sunt între ghilimele duble: "name", "age", "grades", "Math", "Chemistry"
 
-* Valori separate prin: `"George", 25, \[2.50, 3.50\], \[4.50\]
+* Valori separate prin: "George", 25, \[2.50, 3.50\], \[4.50\]
 
 * Este posibil să aveți obiecte imbricate
 
@@ -77,12 +77,12 @@ console.log(data);
 
 ``` js live
 let car = {
-  Car: 'Nio',
-  Model: 'EP9',
-  Colour: 'Blue',
-}; 
+    Car: 'Nio',
+    Model: 'EP9',
+    Colour: 'Blue',
+};
 
-var data = JSON.stringify(car);  
+var data = JSON.stringify(car);
 
 console.log(data);
 ```
@@ -121,14 +121,14 @@ Iterați toate cheile și imprimați-le cu valorile lor în format:
 \{**key**\}**:** \{**value**\}
 
 
-## Exemplul unu
+## Exemplul Unu
 |**Intrare**|**Ieșire** |
 | --- | --- |
 | convertToObject('\{"name": "George", "age": 40, "town": "Berlin"\}') | name: George |
 ||age: 40|
 ||town: Berlin|
 
-## Exemplul doi
+## Exemplul Doi
 
 |**Intrare**|**Ieșire** |
 | --- | --- |
@@ -194,7 +194,7 @@ town\: Erevan
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Convert to JSON
+# Problemă cu Soluție: Convert to JSON
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/RO/01.JS-Fundamentals-Object-and-Classes-23-Solution-Convert-to-JSON-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -202,7 +202,7 @@ town\: Erevan
 [code-editor language=javascript]
 ```
 function convertToJSON(name, lastName, hairColor){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]

@@ -1,7 +1,7 @@
 # Introducerea Obiectului
 
 [slide hideTitle]
-# Ce reprezintă Obiectele?
+# Ce Reprezintă Obiectele?
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/RO/01.JS-Fundamentals-Object-and-Classes-3-4-What-are-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -16,7 +16,10 @@ Un obiect constă din mai multe variabile și funcții numite proprietăți și 
 Exemplu: 
 
 ``` js live
-let person = { name:'Peter', age: 20 };
+let person = {
+    name: 'Peter',
+    age: 20
+};
 console.log(person.name);
 ```
 
@@ -36,7 +39,11 @@ Putem accesa valoarea proprietății cu numele clasei `.` nume de proprietate.
 Putem defini un obiect gol și adăuga proprietățile ulterior:
 
 ``` js
-let person = {name:'Peter', age: 20, hairColor: 'black'};
+let person = {
+    name: 'Peter',
+    age: 20,
+    hairColor: 'black'
+};
 ```
 
 Putem defini obiectul gol și adăuga proprietățile ulterior:
@@ -44,7 +51,7 @@ Putem defini obiectul gol și adăuga proprietățile ulterior:
 
 ``` js
 let person = {};
-person.name ='Peter';
+person.name = 'Peter';
 person['lastName'] = 'Parker';
 person.age = 20;
 person.hairColor = 'black';
@@ -65,32 +72,35 @@ Putem defini metode folosind mai multe sintaxe.
 
 ``` js
 let person = {
-    sayHello : function() {
-    console.log('Hi, guys');
-  }
+    sayHello: function() {
+        console.log('Hi, guys');
+    }
 }
 ```
 
 **A doua sintaxă:**
 ```js 
 let person = {
-  sayHello() {
-     console.log('Hi, guys');
-  }
+    sayHello() {
+        console.log('Hi, guys');
+    }
 }
 ```
 
 Putem **adăuga o metodă** a unui **obiect deja definit**:
 
 ```js
-let person = { name:'Peter', age: 20 };
+let person = {
+    name: 'Peter',
+    age: 20
+};
 person.sayHello = () => console.log('Hi, guys');
 ```
 
 [/slide]
 
 [slide hideTitle]
-# Metode încorporate
+# Metode Încorporate
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/RO/01.JS-Fundamentals-Object-and-Classes-7-Built-in-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -103,7 +113,10 @@ Cele mai folosite metode încorporate de obiecte sunt următoarele:
 * `Object.values()`: returnează o matrice cu toate valorile proprietăților obiectului
 
 ``` js live
-let cat = { name:'Tom', age: 5 };
+let cat = {
+    name: 'Tom',
+    age: 5
+};
 
 console.log(Object.entries(cat));
 
@@ -124,10 +137,14 @@ console.log(Object.values(cat));
 Putem itera prin cheile unui obiect, folosind o buclă `for-in` pentru a itera peste proprietățile obiectului prin cheie:
 
 ``` js live
-let person = { name:'Peter', age:'18', grade:'5.50' };
+let person = {
+    name: 'Peter',
+    age: '18',
+    grade: '5.50'
+};
 
 for (let key in person) {
-   console.log(`${key}: ${person[key]}`);
+    console.log(`${key}: ${person[key]}`);
 }
 
 ```
@@ -143,7 +160,7 @@ for (let key in person) {
 [code-editor language=javascript]
 ```
 function personInfo(firstName, lastName, age){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -158,9 +175,9 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Scrieți o funcție care primește **trei elemente**, le setează la un ** obiect ** și ** returnează ** obiectul creat.
+Scrieți o funcție care primește **trei elemente**, le setează la un **obiect** și **returnează** obiectul creat.
 
-Intrarea vine ca 3 șiruri ** separate ** în următoarea ordine: **: **firstName**, **lastName**, **age**.
+Intrarea vine ca 3 șiruri **separate** în următoarea ordine: **firstName**, **lastName**, **age**.
 
 ## Exemple
 |**Intrare**|**Ieșire** |
@@ -243,7 +260,7 @@ personInfo('JO', 'PA', '22')
 [code-editor language=javascript]
 ```
 function city(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -270,7 +287,7 @@ Intrarea trebuie să aibă următoarea ordine: **name**, **area**, **population*
 Pentru mai multe informații, vedeți exemplele de mai jos.
 
 
-## Exemplul unu
+## Exemplul Unu
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | city(\{ name: 'Bucharest', area: '228', population: '1830000', country: 'Romania', postCode: '010082' \})| name \-\> Bucharest |
@@ -279,7 +296,7 @@ Pentru mai multe informații, vedeți exemplele de mai jos.
 ||country \-\> Romania|
 ||postCode \-\> 010082|
 
-## Exemplul doi
+## Exemplul Doi
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | city(\{ name: 'London', area: '1572', population: '9000000', country: 'England', postCode: '533537' \})| name \-\> London |

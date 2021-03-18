@@ -635,31 +635,29 @@ Primul element "**n**" va fi numărul de melodii.
 
 Următoarele "**n**" elemente vor fi datele melodiilor în următorul format: 
 
-"\{**typeList**\}\_\{**name**\}\_\{**time**\}", 
-iar ultimul element va fi Listă de tipuri \/ "**all**".
+"\{**typeList**\}\_\{**name**\}\_\{**time**\}", iar ultimul element va fi Listă de tipuri \/ "**all**".
+
 Imprimați doar numele melodiilor care apar din acea Listă de tipuri \/ Toate melodiile.
 
-# Exemplul unu
- **Intrare** 
-songs([3,'favourite_DownTown_3:14','favourite_Kiss_4:16','favourite_Smooth Criminal_4:01','favourite'])
-**Ieșire**
-DownTown
-Kiss 
-Smooth Criminal
+# Exemplul Unu
 
-# Exemplul doi
-**Intrare** 
-songs([4,'favourite_DownTown_3:14','listenLater_Andalouse_3:24','favourite_In To The Night_3:58','favourite_Live It Up_3:48','listenLater']) 
-**Ieșire**
- Andalouse 
+|**Intrare**|**Ieșire** |
+|---|---|
+|songs([3, 'favourite_DownTown_3:14', 'favourite_Kiss_4:16', 'favourite_Smooth Criminal_4:01', 'favourite'])|DownTown|
+||Kiss|
+||Smooth Criminal|
 
-# Exemplul trei
-**Intrare**
-songs([2, 'like_Replay_3:15','ban_Photoshop_3:48','all'])
-**Ieșire**
-Replay 
-Photoshop
+# Exemplul Doi
+|**Intrare**|**Ieșire** |
+|---|---|
+|songs([4, 'favourite_DownTown_3:14', 'listenLater_Andalouse_3:24', 'favourite_In To The Night_3:58', 'favourite_Live It Up_3:48', 'listenLater']) |Andalouse|
 
+# Exemplul Trei
+
+|**Intrare**|**Ieșire** |
+|---|---|
+|songs([2, 'like_Replay_3:15', 'ban_Photoshop_3:48', 'all'])|Replay |
+||Photoshop|
 
 [/task-description]
 [tests]
