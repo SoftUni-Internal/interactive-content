@@ -115,10 +115,11 @@ Your program will receive a function that **takes 4 parameters** and **returns a
 
 Your task is to return another function that only **takes one parameter** and **returns** the **same formatted string**.
 
-You will receive the following function:
+You will receive the following **function**:
 
 ```js
-function currencyFormatter(separator, symbol, symbolFirst, value) {
+function currencyFormatter(separator, symbol,
+        symbolFirst, value) {
     let result = Math.trunc(value) + separator;
     result += value.toFixed(2).substr(-2,2);
     if (symbolFirst) return symbol + ' ' + result;
@@ -128,11 +129,11 @@ function currencyFormatter(separator, symbol, symbolFirst, value) {
 
 Set the following parameters to fixed values:
 
-`separator: ","`
+- `separator: ","`
 
-`symbol: "$"`
+- `symbol: "$"`
 
-`symbolFirst: true`
+- `symbolFirst: true`
 
 The final parameter **value** is the one that the returned function will receive.
 
@@ -146,7 +147,7 @@ You need to **return a function** that takes one parameter - **value**.
 
 ## Example
 
-**Input/Output**
+**Input/Output:**
 
 ```js
 let dollarFormatter = result(currencyFormatter);
@@ -240,25 +241,25 @@ function adapter(input, code) {
 [task-description]
 ## Description
 
-Create a program that filters the employees of your company. 
+Create a program that **filters** the **employees** of your company. 
 
-You should print the result in a specific format. 
+You should **print the result** in a specific **format**. 
 
 You will receive **2** parameters \("**data**", "**criteria**"\). 
 
-You should **parse** the input, find all employees that fulfills the criteria and print these employees.
+You should **parse** the input, find all **employees** that **fulfill** the criteria and **print these employees**.
 
 ## Input
 
-You will receive a **string** with all the employees, and the **criteria** by which you should sort the employees.
+You will receive a **string** with all the employees, and the **criteria** by which you should sort them.
 
-If the criteria is "**all**" print all the employees in the given format.
+If the criteria is "**all**", print all the employees in the given format.
 
 ## Output
 
 The output should be the **printed** to the console.
 
-For more information check the examples.
+For more information, check the examples.
 
 ## Example 1
 
@@ -357,9 +358,9 @@ Write a function that **sorts an array** with **numeric** values in **ascending*
 
 You will receive a **numeric array** and a **string** as arguments to the first function in your code. 
 
-- If the second argument is "**asc**", the array should be sorted in **ascending order** \(smallest values first\).
+- If the second argument is "**asc**", the array should be sorted in **ascending order** \(smallest values first\)
 
-- If it is "**desc**", the array should be sorted in **descending order** \(largest first\).
+- If it is "**desc**", the array should be sorted in **descending order** \(largest first\)
 
 ## Input
 
@@ -473,7 +474,7 @@ You will receive a series of arguments **passed** to your function.
 
 **Print to the console** the **type** and **value** of each argument passed into your function.
 
-# Example
+# Example
 
 ## Input
 
@@ -704,16 +705,16 @@ Your program must compose this information into an **object** and **return** it 
 
 The patient chart object must contain the following properties:
 
-- **name**;
+- **name**
   
-- **personalInfo** which is an object holding the patient's age, weight, and height as properties;
+- **personalInfo** which is an object holding the patient's age, weight, and height as properties
   
-- **BMI** \- body mass index. 
+- **BMI** \- body mass index
 
 You can find information about how to calculate it [here](https://en.wikipedia.org/wiki/Body_mass_index);
   
 - **status**
-  
+
 The status is one of the following:
 
 - **Underweight**, for BMI less than 18.5
@@ -731,7 +732,7 @@ If the patient is obese, add an additional property called recommendation and se
 
 ## Input
 
-Your function needs to take four arguments - **name**, **age**, **weight** and **height**
+Your function needs to take four arguments - **name**, **age**, **weight** and **height**.
 
 ## Output
 
@@ -747,11 +748,11 @@ Look at the sample output for more information.
 
 ## Input
 
-'Peter', 29, 75, 182
+`'Peter', 29, 75, 182`
 
 ## Output
 
-```
+```js
 {
     name: 'Peter',
     personalInfo: {
@@ -763,15 +764,15 @@ Look at the sample output for more information.
     status: 'normal'
 }
 ```
-# Example Two
+# Example Two
 
 ## Input
 
-'Adrian', 9, 57, 137
+`'Adrian', 9, 57, 137`
 
 ## Output
 
-```
+```js
 {
     name: 'Adrian',
     personalInfo: {
@@ -904,11 +905,11 @@ function vectorMath() {
 [task-description]
 ## Description
 
-Write several functions for performing **calculations** with **vectors** in 2D space 
+Write several functions for performing **calculations** with **vectors** in 2D space.
 
 [image assetsSrc="advanced-functions-07.png" /] 
 
-and collect them all in a **single object** \(namespace\), so they do not pollute the global scope. 
+Collect them all in a **single object** \(namespace\), so they do not pollute the global scope. 
 
 Implement the following functions:
 
@@ -1123,7 +1124,7 @@ function breakfastRobot() {
 
 Your task is to write the management software for a breakfast chef robot. 
 
-It needs to **take orders**, keep track of available **ingredients** and output an **error** if something is wrong. 
+It needs to **take orders**, keep track of available **ingredients**, and output an **error**, if something is wrong. 
 
 The cooking instructions have already been installed, so your module needs to **plug into** the system and only take care of **orders** and **ingredients**. 
 

@@ -1,4 +1,4 @@
-# Objects and Array Destructuring 
+# Forms of Object Composition
 
 [slide hideTitle]
 

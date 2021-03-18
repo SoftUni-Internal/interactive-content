@@ -52,7 +52,7 @@ In this example, we have an object "**classroom**", which is an array of objects
 
 After destructuring: 
 
-- Тhe object at index 0 will be assigned to **firstObj** 
+- Тhe object at index 0 will be assigned to "**firstObj**" 
 
 - Тhe object at index 1 to "**secondObj**" 
 

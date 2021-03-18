@@ -67,17 +67,17 @@ Check if the given **personalId** corresponds to a customer in the customers' ar
 
 Otherwise, return all the customer information in the following format:
 
-```
-Bank name: {bankName}
-Customer name: {firstName} {lastName}
-Customer ID: {personalId}
-Total Money: {totalMoney}$
-Transactions:
-n. {firstName} {lastName} made deposit of {amount}$!
+
+"**Bank name:** \{**bankName**\}
+**Customer name:** \{**firstName**\} \{**lastName**\}
+**Customer ID:** \{**personalId**\}
+**Total Money:** \{**totalMoney**\}$
+**Transactions:**
+**n.** \{**firstName**\} \{**lastName**\} **made deposit of** \{**amount**\}\$!
 ...
-2. {firstName} {lastName} withdrew {amount}$!
-1. {firstName} {lastName} made deposit of {amount}$!
-```
+1. \{**firstName**\} \{**lastName**\} **withdrew** \{**amount**\}\$!
+2. \{**firstName**\} \{**lastName**\} **made deposit of** \{**amount**\}\$!"
+
 
 The **transaction information** contains information about:
 
@@ -98,8 +98,10 @@ This is an example of how the code is **intended to be used**:
 ```js
 let bank = new Bank("SoftUni Bank");
 
-console.log(bank.newCustomer({firstName: "Svetlin", lastName: "Nakov", personalId: 6233267}));
-console.log(bank.newCustomer({firstName: "Mihaela", lastName: "Mileva", personalId: 4151596}));
+console.log(bank.newCustomer({firstName: "Svetlin", 
+    lastName: "Nakov", personalId: 6233267}));
+console.log(bank.newCustomer({firstName: "Mihaela", 
+    lastName: "Mileva", personalId: 4151596}));
 
 bank.depositMoney(6233267, 250);
 console.log(bank.depositMoney(6233267, 250));

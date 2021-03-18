@@ -74,14 +74,14 @@ console.log(c.bestDepartment());
 
 **Output:**
 
-```
+
 Best Department is: Construction
 Average salary: 1500.00
 Stan 2000 architect
 Steven 2000 engineer
 Peter 1500 electrical engineer
 Sam 500 dyer
-```
+
 
 [/task-description]
 [code-io /]

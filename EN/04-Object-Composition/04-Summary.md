@@ -6,7 +6,7 @@
 
 ## In this lesson, you learned:
 
-- Object composition: combines data and functions into JavaScript objects
+- **Object composition** combines data and functions into JavaScript objects
 
 ```js
 let student = {
@@ -20,9 +20,79 @@ let student = {
 }
 ```
 
-- Aggregation: forming an object from an enumerable collection
-- Concatenation: adding new properties
-- Delegation: imitates class inheritance
+- **Aggregation** - forming an object from an enumerable collection
+
+```js live
+let data = [{
+    id: 'a',
+    score: 12
+}, {
+    id: 'b',
+    score: 84
+}, {
+    id: 'c',
+    score: 59
+}];
+
+let result = data.reduce((acc, curr, index, array) => {
+    let same = acc.find(e => e.id === curr.id);
+    if (!same) {
+        acc.push(curr);
+    } else {
+        same.score += curr.score;
+    }
+
+    return acc;
+}, []);
+```
+
+- **Concatenation** - adding new properties
+
+```js live
+const obj = [{
+        name: 'Ethan',
+        age: 35
+    },
+    {
+        age: 52
+    },
+    {
+        name: 'James'
+    },
+    {
+        height: 170
+    }
+];
+
+const concatenate = (acc, curr) => ({
+    ...acc,
+    ...curr
+});
+
+const result = obj.reduce(concatenate, {});
+```
+- **Delegation** - imitates class inheritance
+
+```js live
+const obj = [{
+        name: 'Mark',
+        age: 65
+    },
+    {
+        age: 32
+    },
+    {
+        name: 'Lynda'
+    },
+    {
+        height: 150
+    }
+];
+
+const delegate = (acc, curr) => Object.assign(Object.create(acc), curr);
+const result = obj.reduceRight(delegate, {});
+```
+
 
 ## In the next lesson, you will learn:
 

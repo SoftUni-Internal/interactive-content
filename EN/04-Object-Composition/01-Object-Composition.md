@@ -56,6 +56,7 @@ let town = {
     country
 };
 console.log(town);
+
 town.location = {
     lat: 52.520,
     lng: 13.404
@@ -71,11 +72,11 @@ console.log(town);
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-6-combining-data-with-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We can also combine data using functions. 
+We can also **combine data** using **functions**. 
 
-This can be done because functions are also objects in JavaScript. 
+This is possible because functions are also objects in JavaScript. 
 
-The way we add a function to the object:
+The way we **add a function to the object**:
 
 - We have a function named "grow"
 
@@ -99,6 +100,7 @@ let rect = {
         console.log(`[${this.width} x ${this.height}]`);
     }
 };
+
 rect.grow(2, 3);
 rect.print();
 ```
@@ -121,6 +123,7 @@ let rect = {
         return `rect[${this.width} x ${this.height}]`;
     }
 };
+
 console.log(rect);
 console.log(rect.toString());
 console.log('' + rect);
