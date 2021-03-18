@@ -1,4 +1,4 @@
-# Teme pentru acasă
+# Teme Pentru Acasă
 
 [slide hideTitle]
 # Problemă: Train
@@ -385,7 +385,8 @@ public class Main {
 ## Descriere
 
 Creați un program care **primește o matrice și un număr de rotații** pe care trebuie să le efectuați (primul element merge la final).
-**Imprimați** rezultatul  matricei 
+
+**Imprimați** rezultatul  matricei.
 
 ### Exemplu
 | **Intrare** | **Ieșire** |
@@ -493,7 +494,7 @@ public class Main {
 
 Creați un program pentru a **găsi cele mai mari numere întregi** dintr-o matrice.
 
-Un integer de top  este un  număr întreg care este *mai mare** decât toate elementele **din dreapta sa**.
+Un integer de top  este un  număr întreg care este **mai mare** decât toate elementele **din dreapta sa**.
 
 ### Exemplu
 | **Intrare** | **Ieșire** |
@@ -926,7 +927,7 @@ public class Main {
 [/test]
 [test open]
 [input]
-14 20 60 13 7 19 8 
+14 20 60 13 7 19 8
 27
 [/input]
 [output]
@@ -1011,7 +1012,7 @@ public class Main {
 
 Aveți o **dimensinue a câmpului** și **indicii de buburuze** în interiorul câmpului.
 
-După aceea, pe fiecare nouă linie, până când este dată comanda "**end**", o buburuză **își schimbă poziția** fie la **stânga**, fie la * dreapta** cu o anumită lungime de zbor.
+După aceea, pe fiecare nouă linie, până când este dată comanda "**end**", o buburuză **își schimbă poziția** fie la **stânga**, fie la **dreapta** cu o anumită lungime de zbor.
 
 O **comandă** pentru o buburuză arată in acest mod:"0 right 1".
 

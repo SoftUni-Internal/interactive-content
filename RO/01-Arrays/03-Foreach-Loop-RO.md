@@ -1,9 +1,9 @@
-# Bucla For-each 
+# Bucla "for-each" 
 [slide hideTitle]
 # Definiție
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/RO/02-Java-Fundamentals-Arrays-18-19-For-each-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-`For-each` este o alta tehnica de traversare a matricei ca şi buclele  `for`, `while`, `do-while` introduse în Java.
+`For-each` este o alta tehnica de traversare a matricei ca şi buclele `for`, `while`, `do-while` introduse în Java.
 
 Începe cu cuvântul cheie `for` ca o buclă normală `for`.
 
@@ -21,20 +21,26 @@ for (var item : collection) {
 [/slide]
 
 [slide hideTitle]
-# Imprimarea unei matrice cu bucla Foreach
+# Imprimarea Unei Matrice cu Bucla Foreach
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/RO/02-Java-Fundamentals-Arrays-20-For-each-loop-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 Putem **imprima** o matrice cu **for-each**:
 
 ```Java live
-int[] numbers = { 1, 2, 3, 4, 5 };
-for (int number : numbers) {
-   System.out.println(number + " ");
+int[] numbers = {
+    1,
+    2,
+    3,
+    4,
+    5
+};
+for (int number: numbers) {
+    System.out.println(number + " ");
 }
 ```
 
-Un lucru de remarcat aici este că nu ați putea manipula elementele unei matrice, în timp ce iterați cu ** for-each **. 
+Un lucru de remarcat aici este că nu ați putea manipula elementele unei matrice, în timp ce iterați cu **for-each**. 
 
 
 [/slide]
@@ -70,7 +76,7 @@ Creați un program care calculează diferența dintre **suma numerelor pare** ș
 | | |12 – 9 = 3|
 
 |**Intrare**|**Ieșire**|
-|-----|------|------|
+|-----|------|
 | 3 5 7 9 | -24|
 
 
@@ -147,7 +153,7 @@ Creați un program care calculează diferența dintre **suma numerelor pare** ș
 
 
 [slide hideTitle]
-# Problemă cu soluție: Condense Array to Number
+# Problemă cu Soluție: Condense Array to Number
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/RO/02-Java-Fundamentals-Arrays-problem-and-solution-condense-array-to-number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -167,7 +173,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Creați un program care citește o **matrice de numere întregi** și le condensează prin **adunarea** cuplurilor adiacente de elemente până când se obține un ** singur număr întreg**
+Creați un program care citește o **matrice de numere întregi** și le condensează prin **adunarea** cuplurilor adiacente de elemente până când se obține un **singur număr întreg**
 
 De exemplu, dacă avem 3 elemente \{2, 10, 3\}, adunăm primele două și ultimele două elemente și obținem \{2+10, 10+3\} = \{12, 13\}, după ce adunăm toate elementele adiacente și obținem \{12+13\} = \{25\}.
 

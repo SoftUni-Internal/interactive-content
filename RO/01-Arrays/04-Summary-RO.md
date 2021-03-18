@@ -44,7 +44,7 @@ for (int number : numbers) {
 ```
 
 ## În lecția următoare, veți învăța:
-- Ce este o **metodă**?
+- Ce este o **metodă**
 - Denumirea și cele mai bune practici
 - Declararea și **invocarea metodelor**
    - metode de tip Void și Return

@@ -40,12 +40,14 @@ Matricele sunt **baza** pentru alte tipuri de date abstracte precum  **list**, *
 [/slide]
 
 [slide hideTitle]
-# Cum să lucrați cu matricele
+# Cum să Lucrați cu Matricele
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/RO/02-Java-Fundamentals-Arrays-5-working-with-arrays-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Matricele sunt utilizate pentru stocarea mai multor valori într-o singură variabilă, în loc de declararea variabilelor separate pentru fiecare valoare.
 
-Matricele au o dimensiune fixă. Aceasta înseamnă că nu pot fi redimensionate.
+Matricele au o dimensiune fixă. 
+
+Aceasta înseamnă că nu pot fi redimensionate.
 
 Elementele sunt întotdeauna de **același tip**.
 
@@ -53,22 +55,22 @@ Indecșii matricelor sunt numerotați de la **0** la **length - 1**.
 
 **Exemplu:**
 ```Java live
- //Allocating
- int[] numbers = new int[5];
- System.out.println(Arrays.toString(numbers));
+//Allocating
+int[] numbers = new int[5];
+System.out.println(Arrays.toString(numbers));
 
- for (int i = 0; i < numbers.length; i++) {
-  //Assigning a value
-  numbers[i] = i + 1;
- }
+for (int i = 0; i < numbers.length; i++) {
+    //Assigning a value
+    numbers[i] = i + 1;
+}
 
- System.out.println(Arrays.toString(numbers));
+System.out.println(Arrays.toString(numbers));
 
- //Accessing
- numbers[4] = numbers[2] + numbers[3];
- System.out.println(numbers[4]);
+//Accessing
+numbers[4] = numbers[2] + numbers[3];
+System.out.println(numbers[4]);
 
- // System.out.println(numbers[5]);  Error: Index 5 out of bounds for length 5 at Array.
+// System.out.println(numbers[5]);  Error: Index 5 out of bounds for length 5 at Array.
 ```
 
 Mai jos avem câteva explicații despre exemplul pe care îl puteți vedea mai sus.
@@ -97,7 +99,7 @@ Dacă încercăm să accesăm elementul de pe un index nevalid, vom obține o ex
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Day of Week
+# Problemă cu Soluție: Day of Week
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/RO/02-Java-Fundamentals-Arrays-6-7-problem-and-solution-day-of-week-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
