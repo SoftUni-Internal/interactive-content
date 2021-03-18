@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Declararea Unei Funcții
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-6-7-declaring-a-function-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-6-7-declaring-a-function-NEW2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 O funcție este definită, utilizând cuvântul cheie `funcție` urmat de **numele funcției** și un set de **paranteze** pentru a păstra parametrii sau valorile care trebuie primite de funcție.
 
@@ -45,7 +45,7 @@ function printText(text){
 [slide hideTitle]
 # Invocarea Unei Funcții
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-8-invoking-a-function-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-8-9-invoking-a-function-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 O funcție nu este executată înainte de a fi invocată.
 
@@ -60,10 +60,6 @@ function hLine() {
 
 hLine();
 ```
-
-## Demo
-
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-9-invoking-a-function-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
 
@@ -85,7 +81,7 @@ function printDocument() {
 [slide hideTitle]
 # Recursivitate
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-recursion-and-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-recursion-and-example-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 De asemenea, putem invoca o **funcție** **în propriul său corp (recursivitate):**
 
