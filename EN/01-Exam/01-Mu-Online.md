@@ -23,7 +23,7 @@ You will be given a **String**, representing the rooms of the dungeon.
 
 Each room is separated by a "\|" (vertical bar): room1\|room2\|room3…
 
-The text of each room contains **2 values**. 
+The text representation of each room contains **2 values**. 
 
 The first value can be:
 
@@ -32,28 +32,30 @@ The first value can be:
    - you are healed in the amount of the second value
 
    - your health **cannot exceed** your **initial health (100)**
+   
+   - two lines of output should follow:
+   
+   - "\{amount\} health points restored."
 
-   - first print: "\{amount\} health points restored."
-
-   - after that, print your current health: "**Current health:** \{**health**\} **hp.**"
+   - "**Current health:** \{**health**\} **hp.**"
 
 - A chest:
 
-    - increase the amount of bitcoins with the amount of the second value
+    - increases the amount of bitcoins in the amount of the second value
 
-    - after that, print out: "**You found** \{**amount**\} **bitcoins.**"
+    - print out: "**You found** \{**amount**\} **bitcoins.**"
 
 - In any other case, you are facing a monster that you are going to fight
 
-The second value of the room contains the attack points of the monster.
+The second value of the room text representation contains the attack points of the monster.
 
-You should remove the value of the monster's attack from your health.
+You should remove the value of the monster's attack points from your health.
 
-- If you are **still alive** (health \> 0), you have slayed the monster and you should print: "**You have slayed a** \{**type of monster**\}."
+- If you are **still alive** (health \> 0), you have slayed the monster and you should print out: "**You have slayed a** \{**type of monster**\}."
 
-- If you died, print "**You died! Killed by** \{**monster**\}." and your quest is over
+- If you died, print out: "**You died! Killed by** \{**monster**\}." in this case the program should stop.
 
-Print the best highest number of a room you have managed to reach: "**Best room:** \{**room**\}".
+Print the last (highest) number of a room you have managed to reach: "**Best room:** \{**room**\}".
 
 If you managed to go through all of the rooms in the dungeon, print on the next three lines:
 
@@ -69,7 +71,7 @@ You will receive a String, representing the rooms of the dungeon, separated by a
 
 ### Output
 
-Print the corresponding messages, described above.
+Print the corresponding messages, according to each event.
 
 ## Examples One
 
