@@ -5,7 +5,7 @@
 
 ## În această lecție am învățat:
 
-- Matricele în  JavaScript have a lot of built\-in methods
+- Matricele în JavaScript have a lot of built\-in methods
 
 ```js live
 let numbers = [3, 8, 15, 22];

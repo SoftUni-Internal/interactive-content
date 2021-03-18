@@ -40,7 +40,7 @@ Atunci când un tip de referință este atribuit unui alt tip de referință, am
 
 Când un obiect este trecut într-o metodă, metoda numită poate schimba conținutul obiectului transmis acestuia, dar nu și adresa obiectului.
 
-- Datele de tip referință sunt următoarele: **object**, **array** and **function**.
+- Datele de tip referință sunt următoarele: **object**, **array** and **function**
 
 
 ```js

@@ -66,8 +66,11 @@ p, p1, p2, populate, LastName, lastName
 ## Structura Codului și Formatarea Codului
 
 Asigurați-vă că utilizați indentarea corectă
+
 - Lăsați o linie goală între funcții și după blocuri
+
 - Utilizați întotdeauna paranteze cretate pentru corpuri condiționate și bucle
+
 - Evitați rândurile lungi și expresiile complexe
 
 - Exemplu de o **funcție bine structurată:**

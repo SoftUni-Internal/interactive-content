@@ -46,8 +46,8 @@ array.push(5);
 
 console.log(array);
 ```
-- **Eliminarea unui element de la sfârșit**
 
+- **Eliminarea unui element de la sfârșit**
 
 Metoda `array.pop()` este utilizată pentru a obține și a elimina elementul de la sfârșitul matricei.
 
@@ -213,7 +213,7 @@ console.log(fruits);
 [/slide]
 
 [slide hideTitle]
-# Schimbarea și Neschimbarea într-o Matrice
+# Schimbarea și Neschimbarea Într-o Matrice
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-11-shifting-and-unshifting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

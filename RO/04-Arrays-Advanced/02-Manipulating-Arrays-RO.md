@@ -189,7 +189,7 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-Vi se dau două numere întregi: **n** și **k**. 
+Vi se dau două numere întregi: **n** și **k**.
 
 Scrieți o funcție care generează și imprimă următoarea secvență:
 

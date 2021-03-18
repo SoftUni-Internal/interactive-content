@@ -587,6 +587,8 @@ Ieșirea este matricea sortată de șiruri.
 |sort(['alpha', 'beta', 'gamma'])|beta|
 ||alpha|
 ||gamma|
+
+
 ## Exemplul Doi
 |**Intrare**|**Ieșire** |
 | --- | --- |
@@ -602,7 +604,7 @@ Ieșirea este matricea sortată de șiruri.
 
 - Crearea unei **funcții de comparare** cu două criterii poate fi realizată comparând mai întâi după criteriile principale și dacă cele două elemente sunt diferite \(rezultatul comparației nu este 0\) - returnează rezultatul **funcției de comparare**
 
-Dacă cele două elemente sunt identice cu criteriile principale \(rezultatul comparării este 0\), trebuie să le comparăm după al doilea criteriu, iar rezultatul acestei comparații va fi rezultatul **funcției de comparare** 
+Dacă cele două elemente sunt identice cu criteriile principale \(rezultatul comparării este 0\), trebuie să le comparăm după al doilea criteriu, iar rezultatul acestei comparații va fi rezultatul **funcției de comparare.** 
 
 
 [/task-description]
@@ -749,7 +751,7 @@ Ieșirea este matricea manipulată, pe care ar trebui s-o imprimăm pe consolă 
 # Exemplu
 |**Intrare**|**eșire** |
 | --- | --- |
-|arrayManipulations(['4 19 2 53 6 43', 'Add 3','Remove 2','RemoveAt 1','Insert 8 3'])|4 53 6 8 43 3|
+|arrayManipulations(['4 19 2 53 6 43', 'Add 3', 'Remove 2', 'RemoveAt 1', 'Insert 8 3'])|4 53 6 8 43 3|
 
 [/task-description]
 [code-io /]

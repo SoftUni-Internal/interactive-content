@@ -262,7 +262,7 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Veți primi**trei numere întregi.**
+Veți primi **trei numere întregi.**
 
 Scrieți o funcție `sum()` pentru a obține suma primelor două numere întregi și funcția `subtract()` care scade al treilea număr întreg din rezultat.
 
@@ -777,10 +777,12 @@ Dacă este **NU** este validă, pentru fiecare regulă neîmplinită tipăriți 
 | --- | --- |
 | passwordValidator('logIn') | Password must be between 6 and 10 characters |
 || Password must have at least 2 digits |
+
 ## Exemplul  Di
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | passwordValidator('MyPass123') | Password is valid |
+
 ## Exemplul Trei
 |**Intrare**|**Ieșire**|
 | --- | --- |
@@ -910,6 +912,7 @@ Scrieți o funcție care primește un singur număr întreg **n** și imprimă m
 | matrix(3) | 3 3 3|
 || 3 3 3 |
 || 3 3 3 |
+
 ## Exemplul Doi
 |**Intrare**|**Ieșire** |
 | --- | --- |
@@ -1082,7 +1085,7 @@ function adapter(input, code) {
 
 Scrieți o funcție care primește un număr și stabilește dacă acest număr este **perfect** sau **nu**.
 
-Un număr perfect este un număr întreg **pozitiv** care este egal cu **suma** **divizorilor pozitivi proprii**.
+Un număr perfect este un număr întreg **pozitiv** care este egal cu **suma divizorilor pozitivi proprii**.
 
 Aceasta este suma divizorilor sale pozitivi, excluzând numărul în sine (cunoscut și ca **suma alicotă**).
 
@@ -1097,7 +1100,7 @@ Aceasta este suma divizorilor sale pozitivi, excluzând numărul în sine (cunos
 
 În mod echivalent, un număr perfect este un număr care este **o jumătate din suma** tuturor divizorilor săi pozitivi `(incluzând numărul respectiv) => 6` este un număr perfect, deoarece este suma lui `1 + 2 + 3` (toate fiind împărțite fără rest)
 
-- Citiți despre [Perfect](https://en.wikipedia.org/wiki/Perfect_number) number
+- Citiți despre [perfect](https://en.wikipedia.org/wiki/Perfect_number) number
 
 [/task-description]
 [code-io /]

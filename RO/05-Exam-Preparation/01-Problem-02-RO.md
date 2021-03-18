@@ -49,22 +49,17 @@ Dacă nu există, ignorați comanda.
 
 * Dați comanda "**Renew -** \{**item**\}":
 
-Dacă obiectul există deja, puteți să-i schimbați poziția și să îl puneți pe ultima poziție în inventar. 
+Dacă obiectul există deja, puteți să-i schimbați poziția și să îl puneți pe ultima poziție în inventar.
 
 
 ## Ieșire
 După ce primiți "**Craft!**", Imprimați toate articolele din inventarul dvs., separate prin,o virgulă și un spațiu.
 
-## Exemplul Unu
+## Exemplu
 |**Intrare**|**Ieșire** |
 | --- | --- |
 |inventory(['Iron, Wood, Sword', 'Collect - Gold', 'Drop - Wood', 'Craft!'])| Iron, Sword, Gold |
-
-## Exemplul Doi
-|**Intrare**|**Ieșire** |
-| --- | --- |
 |inventory(['Iron, Sword', 'Drop - Bronze', 'Combine Items - Sword:Bow', 'Renew - Iron', 'Craft!'])| Sword, Bow, Iron|
-
 
 [/task-description]
 [code-io /]
