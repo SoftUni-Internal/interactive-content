@@ -435,23 +435,25 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that keeps a map with synonyms.
+Create a program that keeps few words and their synonyms.
 
-The **key** of the map will be the **word**.
+For that purpose, create a Map.
+
+The **key** of the map will be a single word.
 
 The **value** will be a **list of all the synonyms of that word**.
 
 ### Input / Constraints
 
-You will be given a number **n**.
+You will be given an integer number - `n`.
 
-On the next **2 * n** lines you will be given a **word** and a **synonym** each on a separate line like this:
+On the next **2 * n** lines, you will be given a **word** and a **synonym** `n` times, each on a separate line:
 
 - \{**word**\}
 
 - \{**synonym**\}
 
-If you receive a word that is **already in the Map**, add the new synonym to the list.
+If you receive a word that is **already in the Map**, add the new synonym to its list.
 
 ### Output 
 
