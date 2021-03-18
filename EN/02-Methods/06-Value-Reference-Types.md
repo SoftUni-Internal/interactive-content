@@ -48,37 +48,6 @@ Reference data types are: `String`, `int[]`, `char[]`, `String[]`.
 String str = "Hello";
 byte[] bytes = { 1, 2, 3 };
 ```
-## Value Types Example
-
-```java live no-template
-public class MyClass {
- public static void main(String[] args) {
-   int num = 5;
-   increment(num, 15);
-   System.out.println(num);
-}
-
-public static void increment(int num, int value) {
-   num += value;
- }
-}
-```
-
-## Reference Types Example
-
-```java live no-template
-public class MyClass {
-public static void main(String[] args) {
-  int[] nums = { 5 };
-  increment(nums, 15);
-  System.out.println(nums[0]);
-}
-
-public static void increment(int[] nums, int value) {
-  nums[0] += value;
- }
-} 
-```
 [/slide]
 
 [slide hideTitle]
