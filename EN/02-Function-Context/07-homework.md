@@ -19,7 +19,7 @@ Write a company class, which supports the described functionality below.
 
 **1. Functionality**
 
-`Constructor()`:
+`constructor()`:
 
 Should have this 1 property: `departments`- an empty array
 
