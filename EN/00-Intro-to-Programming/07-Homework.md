@@ -24,7 +24,7 @@ public class Main {
 
 Write a Java program, which:
 
-Prints "**Hello Java**" on the console.
+Prints "**Hello Java**" to the console.
 
 [/task-description]
 [code-io /]
