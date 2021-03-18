@@ -82,8 +82,8 @@ Iterăm printr-un șir folosind bucla `for-of`:
 ```js live
 let text = 'Hello, there!'
 
-for(let el of text){
-  console.log(el);
+for (let el of text) {
+    console.log(el);
 }
 ```
 În acest exemplu, fiecare caracter în `text` va fi imprimat pe consolă.

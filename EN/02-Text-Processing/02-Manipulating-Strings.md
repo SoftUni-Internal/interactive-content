@@ -70,6 +70,7 @@ let str = 'I love JS a lot';
 
 console.log(str.indexOf('js'));
 ```
+
 Now it returns `-1` because `indexOf` is case sensitive and does not detect **"js"** as **"JS"** 
 
 Let us check `lastIndexOf()`. 
@@ -313,8 +314,8 @@ That allows us to make a certain number of **copies** of that **string**.
 
 It receives two parameters:
 
--  `string`
--  `count`
+- `string`
+- `count`
 
 After it is called on a specific **string**, **repeat** will take the **string** that we gave and it will **multiply** it by the **number** that we pass to it. 
 

@@ -1,4 +1,4 @@
-# Manipularea ;irurilor
+# Manipularea Sirurilor
 
 [slide hideTitle]
 # Concatenare
@@ -97,7 +97,9 @@ Iar al doilea returnează `-1` pentru că nu găsește nimic.
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/RO/interactive-js-fundamentals-text-processing-10-extracting-substrings-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Pentru a **extrage** un subșir, putem folosi `substring()`. Această metodă are doi parametri:
+Pentru a **extrage** un subșir, putem folosi `substring()`. 
+
+Această metodă are doi parametri:
 
 - Primul este indicele de start
 - Al doilea este indicele final
@@ -121,6 +123,7 @@ let subStrTwo = str.substring(5)
 console.log(subStrOne);
 console.log(subStrTwo);
 ```
+
 Aici **subStrOne** va reveni **la**, deoarece aceasta este partea care se află în intervalul indexului de început și sfârșit.
 
 Dar **subStrTwo** returnează totul de la **la** până la sfârșit.
@@ -145,9 +148,9 @@ Asta înseamnă că trebuie s-o atribuim unei variabile.
 -  `pattern`
 -  `replacement`
 
-Pentru partea **`pattern`** putem folosi **Regex** sau **șir**.
+Pentru partea **pattern** putem folosi **Regex** sau **șir**.
 
-Și pentru **`replacement`** putem folosi `function()` sau un **șir**.
+Și pentru **replacement** putem folosi `function()` sau un **șir**.
 
 După ce se potrivește cu acest pettern, își va schimba doar prima apariție.
 
@@ -262,7 +265,7 @@ Când vrem să separăm cuvintele într-un șir, folosim metoda `split()`.
 
 Împarte un **șir** într-o listă ordonată folosind un model \(separator\), care este primul parametru și returnează o **matrice**.
 
-Avem opțiunea de a adăuga un al doilea parametru, care este**limita**.
+Avem opțiunea de a adăuga un al doilea parametru, care este **limita**.
 
 Setează **limita** a **indecșilor** în **matricea finală**.
 
@@ -290,7 +293,7 @@ Preia  **șirul** și îl caută în cel principal.
 
 Este similar cu `indexOf()`, dar dacă îl găsește, această metodă returnează `true` și `false` în cazul invers.
 
-**`includes()`** este sensibil la majuscule și minuscule.
+`includes()` este sensibil la majuscule și minuscule.
 
 De exemplu:
 
@@ -303,22 +306,24 @@ console.log(text.includes('js'));
 [/slide]
 
 [slide hideTitle]
-# Repetarea într-un Șir
+# Repetarea Într-un Șir
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/RO/interactive-js-fundamentals-text-processing-15-repeating-strings-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Când vrem să **repetăm** un **șir** în JS, folosim `repeat()`. Aceasta ne permite să facem un anumit număr de **copii** ale aceluiși **șir**.
+Când vrem să **repetăm** un **șir** în JS, folosim `repeat()`. 
+
+Aceasta ne permite să facem un anumit număr de **copii** ale aceluiși **șir**.
 
 Primește doi parametri:
 
--  `string`
--  `count`
+- `string`
+- `count`
 
 După ce este apelat la un anumit **șir**, **repetați** va lua **șirul** pe care l-am dat și îl va **înmulți** cu **numărul** pe care îl trecem la aceasta.
 
 După aceea, va **returna** un **șir concatenat** din toate copiile.
 
-Iată un exemplu despre cum funcționează **`repeat()`**:
+Iată un exemplu despre cum funcționează `repeat()`:
 
 ```js live
 let str = '*';
@@ -329,7 +334,7 @@ console.log(str.repeat(5));
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Censored Words
+# Problemă cu Soluție: Censored Words
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/RO/interactive-js-fundamentals-text-processing-16-solution-censored-words-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

@@ -6,7 +6,7 @@
 [code-editor language=javascript]
 ```
 function revealWords(firstStr, secondStr){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -104,7 +104,7 @@ jdsakl kiro as pesho dsajkk goshho b hdsj stamatko
 [code-editor language=javascript]
 ```
 function modernTimesOfHashTag(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -119,7 +119,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Intrarea va fi un ** singur șir.**
+Intrarea va fi un **singur șir.**
 
 Găsiți toate cuvintele speciale **începând cu** "**#**".
 
@@ -199,7 +199,7 @@ nnj
 [code-editor language=javascript]
 ```
 function extractFile(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 
@@ -221,13 +221,13 @@ Sarcina dvs. este de a scădea **numele fișierului** și extensia acestuia.
 
 Feriți-vă de fișiere precum **template.bak.pptx**, deoarece **template.bak** ar trebui să fie numele fișierului, în timp ce pptx este extensia.
 
-## Exemplul unu
+## Exemplul Unu
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | extractFile('C:\\\Internal\\\training-internal\\\Template.pptx') | File name: Template |
 || File extension: pptx |
 
-## Exemplul doi
+## Exemplul Doi
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | extractFile('C:\\\Projects\\\Data-Structures\\\LinkedList.cs') | File name: LinkedList |
@@ -311,7 +311,7 @@ File extension: docx
 [code-editor language=javascript]
 ```
 function stringSubstring(firstStr, secondStr){
-  //  Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 
@@ -414,7 +414,7 @@ drashki not found!
 
 ```
 function replaceRepeatingChars(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 
@@ -508,7 +508,7 @@ asdasdasd
 [code-editor language=javascript]
 ```
 function splitter(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 
@@ -618,7 +618,7 @@ Mhjbhb
 
 ```
 function cutAndReverse(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 
@@ -641,13 +641,13 @@ Scrieți o funcție care taie șirul dat **în jumătate** și inversați cele *
 
 Imprimați fiecare jumătate pe o **linie separată.**
 
-## Exemplul unu
+## Exemplul Unu
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | cutAndReverse('tluciffiDsIsihTgnizamAoSsIsihT') | ThisIsDifficult|
 ||ThisIsSoAmazing|
 
-## Exemplul doi
+## Exemplul Doi
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | cutAndReverse('sihToDtnaCuoYteBIboJsihTtAdooGoSmI') | IBetYouCantDoThis|
