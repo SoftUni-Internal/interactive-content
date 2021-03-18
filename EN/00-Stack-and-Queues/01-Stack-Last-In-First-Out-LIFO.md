@@ -5,7 +5,13 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-10-11-Stack-Functionality-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Stacks** are data structures similar to **lists**. The elements in a stack are ordered based on the **LIFO** principle - **Last In First Out**. When you add an element, it is always placed **on top** of the stack. Removing an element also removes it **from the top** of the stack.
+**Stacks** are data structures similar to **lists**.
+
+The elements in a stack are ordered based on the **LIFO** principle - **Last In First Out**.
+
+When you add an element, it is always placed **on top** of the stack.
+
+Removing an element also removes it **from the top** of the stack.
 
 Stacks provide the following functionality:
 - **pushing** an element to the top of the stack
@@ -21,7 +27,7 @@ Stacks provide the following functionality:
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-12-ArrayDeque-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
  
-- Stack Implementation using `ArrayDeque<E>`:
+- Stack Implementation using the `ArrayDeque<E>` class:
 
 ```java
 ArrayDeque<Integer> stack = new ArrayDeque<>();
@@ -52,7 +58,7 @@ stack.pop();
 stack.forEach(System.out::println);
 ```
 
-- `peek()`: gets the value of the top element in the stack:
+- `peek()`: returns the value of the top element from the stack:
 
 ```java live
 ArrayDeque<Integer> stack = new ArrayDeque<>();
@@ -114,8 +120,6 @@ System.out.println(stackOfCars.contains("BMW M3"));
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-14-Stack-Overview-of-all-operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The animation below illustrates all the stack operations that we can use for solving the upcoming programming problems.
-
 [image assetsSrc="Java-Advanced-Stack-and-Queues-10.gif" /]
 
 [/slide]
@@ -139,17 +143,17 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that takes two types of browser commands:
+Create a program that takes two types of **browser** commands:
 
-- Normal navigation: a **URL**, provided in **string format**
+- Normal navigation: a **URL**, provided as a **string**
 
-- **back** - command that sets the current URL to the last set URL
+- **back** - command that sets the current URL to the previous URL
 
 After each command, the program should **print the current URL**. 
 
 If the **back** command can not be executed, print: `no previous URLs`.
 
-The input **ends** with the `Home` command. The program **stops** at that point.
+The program **stops** after receiving the `Home` command.
 
 
 ## Examples
@@ -166,10 +170,10 @@ The input **ends** with the `Home` command. The program **stops** at that point.
 | `Home` |  |
 
 ## Hints
-- Use `ArrayDeque<>`
-- Use `String` to store the current URL
-- Use `push()` when moving to the next URL
-- Use `pop()` when going back
+- Use an `ArrayDeque<>`
+- Use a variable of type `String` to store the current URL
+- Use the `push()` method when moving to the next URL
+- Use the `pop()` method when going back to the previous URL
 
 
 
@@ -340,7 +344,7 @@ public class Main {
 ## Description
 **Create a calculator** to **evaluate simple expressions**. It should work with only two operations - addition (+) and subtraction (-).
 
-There will be no operations placed in brackets, and implementing operator precedence **is not** required.
+There will be no operations placed in brackets and implementing operator precedence **is not** required.
 
 Solve the problem **using a Stack**.
 
@@ -354,7 +358,7 @@ Solve the problem **using a Stack**.
 | 2 - 2 + 5 | 5 |
 
 ## Hints
-- Use `ArrayDeque<>`
+- Use an `ArrayDeque<>`
 - Consider using the `add()` method
 - You can either:
     - add the elements and then pop them out 
@@ -539,8 +543,6 @@ while (decimal != 0) {
 [slide hideTitle]
 # Problem with Solution: Matching Brackets
 
-TODO: Add video.
-
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-21-Problem-and-solution-Decimal-To-Binary-Converter-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Matching Brackets" taskId="java-advanced-lab-stack-and-queue-Matching-Brackets" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -575,7 +577,7 @@ Scan through the string and **extract** each **sub-expression**.
 |  | `(2 + 3)` |
 
 ## Hints 
-- Use a stack, implemented with`ArrayDeque()` 
+- Use a stack, implemented with an `ArrayDeque()` 
 - Scan through the expression searching for brackets 
    - if you find an opening bracket, push the index into the stack 
    - if you find a closing bracket, pop the top element from the stack. This is the index of the opening bracket 
