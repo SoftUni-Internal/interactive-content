@@ -57,7 +57,7 @@ Iată cum declarăm și inițializăm **cheia** mai întâi și apoi o folosim p
 
 
 ```js
-let key = "six";
+let key = 'six';
 assocArr[key] = 6;
 ```
 [/slide]
@@ -78,8 +78,9 @@ let assocArr = {};
 assocArr['one'] = 1;
 assocArr['two'] = 2;
 assocArr['three'] = 3;
+
 for (let key in assocArr) {
-  console.log(key + ' = ' + assocArr[key]);
+    console.log(key + ' = ' + assocArr[key]);
 }
 ```
 
@@ -221,9 +222,9 @@ Rezultatul ar trebui să fie "true".
 let assocArr = {};
 assocArr.name = 'John Smith';
 if (assocArr.hasOwnProperty('name')) {
-  console.log(true);
-} else{
-  console.log(false);
+    console.log(true);
+} else {
+    console.log(false);
 }
 ```
 
@@ -239,6 +240,7 @@ assocArr.name = 'John Smith';
 delete assocArr.name;
 console.log(assocArr);
 ```
+
 Dacă încercați să accesați o cheie care nu există, atunci veți obține rezultatul **undefined**.
 
 Încercați să `console.log()` `assocArr.name` după ștergerea proprietății `name`.
@@ -256,7 +258,7 @@ Puteți utiliza, de asemenea, ceva numit destructurare.
 
 Sintaxa de alocare a destructurării este o expresie JavaScript care face posibilă despachetarea valorilor din matrice sau proprietăți din obiecte, în valori separate.
 
-Metoda `Object.entries ()` returnează o serie de matrice ale propriilor perechi `[ key , value ]` ale unui anumit obiect.
+Metoda `Object.entries()` returnează o serie de matrice ale propriilor perechi `[ key, value ]` ale unui anumit obiect.
 
 În bucla for-of din exemplul de mai jos declarăm variabilele noastre **cheie** și **valoare**.
 
@@ -269,7 +271,7 @@ let assocArr = {};
 assocArr.name = 'John Smith';
 assocArr.age = 28;
 for (let [key, value] of Object.entries(assocArr)) {
-  console.log(`${key} -> ${value}`);
+    console.log(`${key} -> ${value}`);
 }
 ```
 
@@ -461,7 +463,10 @@ Folosind metoda `Object.entries()` obținem o serie de matrice.
 Vedeți exemplul de mai jos.
 
 ```js live
-let phonebook = { Tim: '0876566344', Bill: '0896543112' };
+let phonebook = {
+    Tim: '0876566344',
+    Bill: '0896543112'
+};
 let entries = Object.entries(phonebook);
 console.log(entries);
 ```
@@ -469,7 +474,10 @@ console.log(entries);
 Deci, folosind indexarea putem obține **cheia** și **valoarea** pentru fiecare **intrare**.
 
 ```js live
-let phonebook = { Tim: '0876566344', Bill: '0896543112' };
+let phonebook = {
+    Tim: '0876566344',
+    Bill: '0896543112'
+};
 let entries = Object.entries(phonebook);
 let firstEntry = entries[0];
 console.log(firstEntry[0]);
@@ -499,7 +507,10 @@ Expresia `a[0].localeCompare(b[0])` va sorta matricea în ordine crescătoare.
 Dacă avem `b[0].localeCompare(a[0])` funcția va sorta matricea în ordine descrescătoare.
 
 ```js live
-let phonebook = { Tim: '0876566344', Bill: '0896543112' };
+let phonebook = {
+    Tim: '0876566344',
+    Bill: '0896543112'
+};
 let entries = Object.entries(phonebook);
 let result = entries.sort((a, b) => a[0].localeCompare(b[0]));
 console.log(result);
@@ -510,7 +521,10 @@ Pentru a **sorta după valoare**, utilizați **al doilea element** al fiecărei 
 Acest exemplu este același ca cel de mai sus, singura diferență fiind că folosim al doilea element ca criteriu de sortare.
 
 ```js live
-let phonebook = { Tim: '0876566344', Bill: '0896543112' };
+let phonebook = {
+    Tim: '0876566344',
+    Bill: '0896543112'
+};
 let entries = Object.entries(phonebook);
 let result = entries.sort((a, b) => a[1].localeCompare(b[1]));
 console.log(result);
@@ -662,8 +676,14 @@ Putem accesa această proprietate din obiectul "Bill", utilizând variabila `bil
 
 ```js live
 let contacts = {
-  Tim: { phone: '0876566344', address: 'Doe Crossing' },
-  Bill: { phone: '0896543112', address: 'Nelson Place' },
+    Tim: {
+        phone: '0876566344',
+        address: 'Doe Crossing'
+    },
+    Bill: {
+        phone: '0896543112',
+        address: 'Nelson Place'
+    },
 };
 let billsContact = contacts['Bill'];
 console.log(billsContact.phone);
@@ -671,18 +691,26 @@ console.log(billsContact.phone);
 
 ## Sortarea structurilor de date imbricate
 
-Putem **sorta** structura datelor după **valorile proprietății** ale fiecărei intrări. În acest caz, vom folosi destructurarea =] pentru a sorta cartea de contact **alfabetic** după adresa fiecărei persoane.
+Putem **sorta** structura datelor după **valorile proprietății** ale fiecărei intrări. 
+
+În acest caz, vom folosi destructurarea pentru a sorta cartea de contact **alfabetic** după adresa fiecărei persoane.
 
 ```js live
 let contacts = {
-  Tim: { phone: '0876566344', address: 'Doe Crossing' },
-  Bill: { phone: '0896543112', address: 'Nelson Place' },
+    Tim: {
+        phone: '0876566344',
+        address: 'Doe Crossing'
+    },
+    Bill: {
+        phone: '0896543112',
+        address: 'Nelson Place'
+    },
 };
 let entries = Object.entries(contacts);
 let result = entries.sort(([keyA, refA], [keyB, refB]) => {
-  let addrA = refA.address;
-  let addrB = refB.address;
-  return addrA.localeCompare(addrB);
+    let addrA = refA.address;
+    let addrB = refB.address;
+    return addrA.localeCompare(addrB);
 });
 console.log(result);
 ```

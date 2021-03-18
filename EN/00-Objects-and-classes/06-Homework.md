@@ -639,37 +639,24 @@ Print only the names of the songs which are from that Type List \/ All songs.
 
 # Examples One
 
- **Input:**
-
-songs([3,'favourite_DownTown_3:14','favourite_Kiss_4:16','favourite_Smooth Criminal_4:01','favourite'])
-
-**Output:**
-
-DownTown
-Kiss 
-Smooth Criminal
+|**Input**|**Output** |
+|---|---|
+|songs([3, 'favourite_DownTown_3:14', 'favourite_Kiss_4:16', 'favourite_Smooth Criminal_4:01', 'favourite'])|DownTown|
+||Kiss|
+||Smooth Criminal|
 
 # Examples Two
 
-**Input:** 
-
-songs([4,'favourite_DownTown_3:14','listenLater_Andalouse_3:24','favourite_In To The Night_3:58','favourite_Live It Up_3:48','listenLater']) 
-
-**Output:**
-
- Andalouse 
+|**Input**|**Output** |
+|---|---|
+|songs([4, 'favourite_DownTown_3:14', 'listenLater_Andalouse_3:24', 'favourite_In To The Night_3:58', 'favourite_Live It Up_3:48', 'listenLater']) |Andalouse|
 
 # Examples Three
 
-**Input:**
-
-songs([2, 'like_Replay_3:15','ban_Photoshop_3:48','all'])
-
-**Output:**
-
-Replay 
-Photoshop
-
+|**Input**|**Output** |
+|---|---|
+|songs([2, 'like_Replay_3:15', 'ban_Photoshop_3:48', 'all'])|Replay |
+||Photoshop|
 
 [/task-description]
 [tests]

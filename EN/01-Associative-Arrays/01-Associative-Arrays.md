@@ -83,8 +83,9 @@ let assocArr = {};
 assocArr['one'] = 1;
 assocArr['two'] = 2;
 assocArr['three'] = 3;
+
 for (let key in assocArr) {
-  console.log(key + ' = ' + assocArr[key]);
+    console.log(key + ' = ' + assocArr[key]);
 }
 ```
 
@@ -225,9 +226,9 @@ The result should be "true":
 let assocArr = {};
 assocArr.name = 'John Smith';
 if (assocArr.hasOwnProperty('name')) {
-  console.log(true);
-} else{
-  console.log(false);
+    console.log(true);
+} else {
+    console.log(false);
 }
 ```
 
@@ -235,7 +236,9 @@ Removing entries is done using the keyword `delete`.
 
 To test that, we will declare an empty object and assign a key to it.
 
-Next, we will delete the key. The output is an empty object as you can see from the example:
+Next, we will delete the key. 
+
+The output is an empty object as you can see from the example:
 
 ```js live
 let assocArr = {};
@@ -274,7 +277,7 @@ let assocArr = {};
 assocArr.name = 'John Smith';
 assocArr.age = 28;
 for (let [key, value] of Object.entries(assocArr)) {
-  console.log(`${key} -> ${value}`);
+    console.log(`${key} -> ${value}`);
 }
 ```
 
@@ -467,7 +470,10 @@ By using the `Object.entries()` method we get an array of arrays.
 See the **example** below:
 
 ```js live
-let phonebook = { Tim: '0876566344', Bill: '0896543112' };
+let phonebook = {
+    Tim: '0876566344',
+    Bill: '0896543112'
+};
 let entries = Object.entries(phonebook);
 console.log(entries);
 ```
@@ -475,7 +481,10 @@ console.log(entries);
 So, by using indexing we can get the **key** and the **value** of each **entry**.
 
 ```js live
-let phonebook = { Tim: '0876566344', Bill: '0896543112' };
+let phonebook = {
+    Tim: '0876566344',
+    Bill: '0896543112'
+};
 let entries = Object.entries(phonebook);
 let firstEntry = entries[0];
 console.log(firstEntry[0]);
@@ -506,7 +515,10 @@ The expression `a[0].localeCompare(b[0])` will sort the array in ascending order
 If we use `b[0].localeCompare(a[0])` the function will sort the array in descending order.
 
 ```js live
-let phonebook = { Tim: '0876566344', Bill: '0896543112' };
+let phonebook = {
+    Tim: '0876566344',
+    Bill: '0896543112'
+};
 let entries = Object.entries(phonebook);
 let result = entries.sort((a, b) => a[0].localeCompare(b[0]));
 console.log(result);
@@ -517,7 +529,10 @@ To **sort by value**, use the **second element** of each entry.
 In this example it is the same as above, the only difference is that we use the second element as a sorting criteria.
 
 ```js live
-let phonebook = { Tim: '0876566344', Bill: '0896543112' };
+let phonebook = {
+    Tim: '0876566344',
+    Bill: '0896543112'
+};
 let entries = Object.entries(phonebook);
 let result = entries.sort((a, b) => a[1].localeCompare(b[1]));
 console.log(result);
@@ -671,8 +686,14 @@ We can access this property from the "Bill" object, using the `billsContact` var
 
 ```js live
 let contacts = {
-  Tim: { phone: '0876566344', address: 'Doe Crossing' },
-  Bill: { phone: '0896543112', address: 'Nelson Place' },
+    Tim: {
+        phone: '0876566344',
+        address: 'Doe Crossing'
+    },
+    Bill: {
+        phone: '0896543112',
+        address: 'Nelson Place'
+    },
 };
 let billsContact = contacts['Bill'];
 console.log(billsContact.phone);
@@ -686,14 +707,20 @@ In this case, we will use destructuring to sort the contacts book **alphabetical
 
 ```js live
 let contacts = {
-  Tim: { phone: '0876566344', address: 'Doe Crossing' },
-  Bill: { phone: '0896543112', address: 'Nelson Place' },
+    Tim: {
+        phone: '0876566344',
+        address: 'Doe Crossing'
+    },
+    Bill: {
+        phone: '0896543112',
+        address: 'Nelson Place'
+    },
 };
 let entries = Object.entries(contacts);
 let result = entries.sort(([keyA, refA], [keyB, refB]) => {
-  let addrA = refA.address;
-  let addrB = refB.address;
-  return addrA.localeCompare(addrB);
+    let addrA = refA.address;
+    let addrB = refB.address;
+    return addrA.localeCompare(addrB);
 });
 console.log(result);
 ```

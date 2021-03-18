@@ -142,7 +142,9 @@ function adapter(input, code) {
 
 Scrieți o funcție care extrage toate elementele unei propoziții, care sunt prezente într-un șir de un număr impar (**majuscula ar trebui ignorată**).
 
-Intrarea este un **singur șir**. Cuvintele vor fi **separate printr-un singur spațiu**.
+Intrarea este un **singur șir**. 
+
+Cuvintele vor fi **separate printr-un singur spațiu**.
 
 ## Exemplu
 
@@ -376,15 +378,17 @@ Există o petrecere la SoftUni. Sunt mai mulți invitați și sunt **două tipur
 
 Când oaspeții vin la petrecere, verificați dacă el/ea **există** în oricare dintre **cele două liste de rezervare**.
 
-Rezultatul va fi **omatrice de șiruri**. Vi se va da lista cu invitații pe care trebuie să o procesați până la următoarea comandă: 'PARTY'.
+Rezultatul va fi **omatrice de șiruri**. 
+
+Vi se va da lista cu invitații pe care trebuie să o procesați până la următoarea comandă: "**PARTY**".
 
 Toate **numerele VIP încep cu o cifră**.
 
-Când primiți comanda: 'PARTY', oaspeții încep să vină.
+Când primiți comanda: "**PARTY**"., oaspeții încep să vină.
 
 Scoateți toți invitații care nu au venit la petrecere (**VIP-urile trebuie să fie primii**).
 
-## Exemplul unu
+## Exemplul Unu
 
 | **Intrare** | **Ieșire**  |
 | --- | --- |
@@ -392,7 +396,7 @@ Scoateți toți invitații care nu au venit la petrecere (**VIP-urile trebuie s�
 | | 7IK9Yo0h   |
 | | tSzE5t0p   |
 
-## Exemplul doi
+## Exemplul Doi
 
 | **Intrare** | **Ieșire**  |
 | --- | --- |
@@ -549,14 +553,19 @@ Imprimați valoarea totală a cărții pe care fiecare jucător o are în mână
 
 [/task-description]
 [tests]
+[test open]
+[input]
+cardGame(['Peter: 2C, 4H, 9H, AS, QS', 'Tomas: 3H, 10S, JC, KD, 5S, 10S', 'Andrea: QH, QC, QS, QD', 'Tomas: 6H, 7S, KC, KD, 5S, 10C', 'Andrea: QH, QC, JS, JD, JC', 'Peter: JD, JD, JD, JD, JD, JD'])
+[/input]
+[output]
+Peter\: 167
+Tomas\: 175
+Andrea\: 197
+[/output]
+[/test]
 [test]
 [input]
-Pesho\: 2C\, 4H\, 9H\, AS\, QS
-Slav\: 3H\, 10S\, JC\, KD\, 5S\, 10S
-Peshoslav\: QH\, QC\, QS\, QD
-Slav\: 6H\, 7S\, KC\, KD\, 5S\, 10C
-Peshoslav\: QH\, QC\, JS\, JD\, JC
-Pesho\: JD\, JD\, JD\, JD\, JD\, JD
+cardGame(['Pesho: 2C, 4H, 9H, AS, QS', 'Slav: 3H, 10S, JC, KD, 5S, 10S', 'Peshoslav: QH, QC, QS, QD', 'Slav: 6H, 7S, KC, KD, 5S, 10C', 'Peshoslav: QH, QC, JS, JD, JC', 'Pesho: JD, JD, JD, JD, JD, JD'])
 [/input]
 [output]
 Pesho\: 167
@@ -566,7 +575,7 @@ Peshoslav\: 197
 [/test]
 [test]
 [input]
-Jonathan DA\: JD\, JD\, JD\, JD
+cardGame(['Jonathan DA: JD, JD, JD, JD'])
 [/input]
 [output]
 Jonathan DA\: 22
@@ -574,12 +583,7 @@ Jonathan DA\: 22
 [/test]
 [test]
 [input]
-Pesho\: 2C\, 4H\, 9H\, AS\, QS
-Pesh0\: 3H\, 10S\, JC\, KD\, 5S\, 10S
-pesho\: QH\, QC\, QS\, QD
-Pe$ho\: 6H\, 7S\, KC\, KD\, 5S\, 10C
-PESHO\: QH\, QC\, JS\, JD\, JC
-P3sho\: JD\, 7D\, 3D\, 4D\, 5D\, 6D
+cardGame(['Pesho: 2C, 4H, 9H, AS, QS', 'Pesh0: 3H, 10S, JC, KD, 5S, 10S', 'pesho: QH, QC, QS, QD', 'Pe$ho: 6H, 7S, KC, KD, 5S, 10C', 'PESHO: QH, QC, JS, JD, JC', 'P3sho: JD, 7D, 3D, 4D, 5D, 6D'])
 [/input]
 [output]
 Pesho\: 145
@@ -592,11 +596,7 @@ P3sho\: 72
 [/test]
 [test]
 [input]
-Pesho\: 2C\, 4H\, 9H\, AS\, QS
-Slav\: 3H\, 10S\, JC\, KD\, 5S\, 10S
-Slav\: 6H\, 7S\, KC\, KD\, 5S\, 10C
-Peshoslav\: QH\, QC\, JS\, JD\, JC
-Pesho\: JD\, JD\, JD\, JD
+cardGame(['Pesho: 2C, 4H, 9H, AS, QS', 'Slav: 3H, 10S, JC, KD, 5S, 10S', 'Slav: 6H, 7S, KC, KD, 5S, 10C', 'Peshoslav: QH, QC, JS, JD, JC', 'Pesho: JD, JD, JD, JD'])
 [/input]
 [output]
 Pesho\: 167
@@ -606,15 +606,7 @@ Peshoslav\: 125
 [/test]
 [test]
 [input]
-Pesho\: 2C\, 4H\, 9H\, AS\, QS
-Slav\: 3H\, 10S\, JC\, KD\, 5S\, 10S
-A\: 6H\, 7S\, KC\, KD\, 5S\, 10C
-Peshoslav\: QH\, QC\, JS\, JD\, JC
-Slav\: 6H\, 7S\, KC\, KD\, 5S\, 10C
-Peshoslav\: QH\, QC\, JS\, JD\, JC
-A\: 6H\, 7S\, KC\, KD\, 5S\, 10C
-Peshoslav\: QH\, QC\, JS\, JD\, JC
-Pesho\: JD\, JD\, JD\, JD
+cardGame(['Pesho: 2C, 4H, 9H, AS, QS', 'Slav: 3H, 10S, JC, KD, 5S, 10S', 'A: 6H, 7S, KC, KD, 5S, 10C', 'Peshoslav: QH, QC, JS, JD, JC', 'Slav: 6H, 7S, KC, KD, 5S, 10C', 'Peshoslav: QH, QC, JS, JD, JC', 'A: 6H, 7S, KC, KD, 5S, 10C', 'Peshoslav: QH, QC, JS, JD, JC', 'Pesho: JD, JD, JD, JD'])
 [/input]
 [output]
 Pesho\: 167
@@ -625,13 +617,7 @@ Peshoslav\: 125
 [/test]
 [test]
 [input]
-A\: 6H\, 7S\, KC\, KD\, 5S\, 10C
-Peshoslav\: QH\, QC\, JS\, JD\, JC
-Slav\: 6H\, 7S\, KC\, KD\, 5S\, 10C
-Peshoslav\: QH\, QC\, JS\, JD\, JC
-A\: 6H\, 7S\, KC\, KD\, 5S\, 10C
-Peshoslav\: QH\, QC\, JS\, JD\, JC
-Pesho\: JD\, JD\, JD\, JD
+cardGame(['A: 6H, 7S, KC, KD, 5S, 10C', 'Peshoslav: QH, QC, JS, JD, JC', 'Slav: 6H, 7S, KC, KD, 5S, 10C', 'Peshoslav: QH, QC, JS, JD, JC', 'A: 6H, 7S, KC, KD, 5S, 10C', 'Peshoslav: QH, QC, JS, JD, JC', 'Pesho: JD, JD, JD, JD'])
 [/input]
 [output]
 A\: 115
@@ -645,6 +631,7 @@ Pesho\: 22
 [/code-task]
 
 [/slide]
+
 [slide hideTitle]
 
 # Problemă: Company Users
@@ -689,7 +676,7 @@ Imprimați numele companiei și ID-ul fiecărui angajat în următorul format:
 - Intrarea este o **matrice de șiruri**, fiecare în format: "\{**companyName**\} \-\> \{**employeeId**\}"
 - Intrarea va fi întotdeauna valabilă
 
-## Exemplul unu
+## Exemplul Unu
 
 | **Intrare** | **Ieșire**  |
 | --- | --- |
@@ -701,7 +688,7 @@ Imprimați numele companiei și ID-ul fiecărui angajat în următorul format:
 |                                                                                         | \-\- AA12345 |
 |                                                                                         | \-\- BB12345 |
 
-## Exemplul doi
+## Exemplul Doi
 
 | **Intrare** | **Ieșire**  |
 | --- | --- |

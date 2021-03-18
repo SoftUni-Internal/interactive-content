@@ -56,7 +56,7 @@ console.log(map.size);
 [/slide]
 
 [slide hideTitle]
-# Conține / Șterge
+# Conține/Șterge
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/RO/02.JS-Fundamentals-Associative-Arrays-23-contains-and-delete-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -217,7 +217,7 @@ La final tipăriți toate articolele și suma acestora fără a le sorta.
 
 Intrarea vine ca o **matrice de șiruri**.
 
-Folosiți o methodă **Map()**.
+Folosiți o methodă `Map()`.
 
 ## Exemplu
 
@@ -322,7 +322,7 @@ map.set('eight', 8);
 map.set('two', 2);
 let sorted = Array.from(map.entries()).sort((a, b) => a[1] - b[1]);
 for (let kvp of sorted) {
-  console.log(`${kvp[0]} -> ${kvp[1]}`);
+    console.log(`${kvp[0]} -> ${kvp[1]}`);
 }
 ```
 
@@ -330,7 +330,7 @@ for (let kvp of sorted) {
 
 [slide hideTitle]
 
-# Problemă cu soluție: School Grades
+# Problemă cu Soluție: School Grades
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/RO/02.JS-Fundamentals-Associative-Arrays-29-solution-school-grades-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

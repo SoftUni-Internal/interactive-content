@@ -220,7 +220,7 @@ In the end, print all the items and their amount without sorting them.
 
 The input comes as an **array of strings**.
 
-Use a "**Map()**" method.
+Use a `Map()` method.
 
 ## Example
 
@@ -326,7 +326,7 @@ map.set('eight', 8);
 map.set('two', 2);
 let sorted = Array.from(map.entries()).sort((a, b) => a[1] - b[1]);
 for (let kvp of sorted) {
-  console.log(`${kvp[0]} -> ${kvp[1]}`);
+    console.log(`${kvp[0]} -> ${kvp[1]}`);
 }
 ```
 
