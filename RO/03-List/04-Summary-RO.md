@@ -1,6 +1,8 @@
 [slide hideTitle]
 # Rezumat
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/RO/interactive-java-fundamntals-lists-30-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## În această lecție ați învățat:
 - Listele sunt structuri de date care conțin o secvență de elemente
 - Acestea pot fi redimensionate

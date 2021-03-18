@@ -3,8 +3,6 @@
 [slide hideTitle]
 
 # Definiție și inițializare
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-3-5-lists-overview-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
 
 La fel ca o matrice  **lista** este o **secvență de elemente**.
 
@@ -76,6 +74,8 @@ List<Integer> nums = Arrays.asList(numbers);
 [slide hideTitle]
 # Metoele listelor
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/RO/interactive-java-fundamntals-lists-6-list-data-structure-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Listele oferă funcționalități care vă permit să **adăugați*, **eliminați** și să **găsiți** elemente. 
 
 
@@ -92,7 +92,7 @@ Listele oferă funcționalități care vă permit să **adăugați*, **eliminaț
 [slide hideTitle]
 # Adăugarea și eliminarea de elemente
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-7-9-add-remove-add(index, El)-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/RO/interactive-java-fundamntals-lists-7-9-add-remove-add(index, El)-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Adăugarea de elemente
 

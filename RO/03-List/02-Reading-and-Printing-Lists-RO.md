@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 # Citirea Listelor 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-10-11-reading-lists-from-the-console-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/RO/interactive-java-fundamntals-lists-10-11-reading-lists-from-the-console-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Citirea unei liste folosind bucla **for** 
 ```java 
@@ -29,7 +29,7 @@ for (int i = 0; i < n; i++) {
 [slide hideTitle]
 # Citirea de pe o singură linie
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-12-reading-values-from-a-single-line-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/RO/interactive-java-fundamntals-lists-12-reading-values-from-a-single-line-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Puteți citi o listă ca o singură linie pe consolă.
 
@@ -48,7 +48,7 @@ List<Integer> items = Arrays
 [slide hideTitle]
 # Imprimarea listelor
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-13-printitng-lists-on-the-console-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/RO/interactive-java-fundamntals-lists-13-printitng-lists-on-the-console-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Imprimarea unei liste utilizând o buclă "for"**
 
@@ -84,8 +84,6 @@ System.out.println(String.join(" ", list));
 
 [slide hideTitle]
 # Problemă cu soluție: Sum Adjacent Equal Numbers
-
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-14-problem-and-solution-print-adjacent-equal-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sum Adjacent Equal Numbers" taskId="java-1-fund-Lists-lab-Sum-Adjacent-Equal-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -207,7 +205,7 @@ Creați un program pentru a **însuma toate numerele egale adiacente** într-o l
 [slide hideTitle]
 # Problemă cu soluție: Gauss' Trick
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-17-problem-and-solution-gauss-trick-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/RO/interactive-java-fundamntals-lists-17-problem-and-solution-gauss-trick-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Gauss' Trick" taskId="java-fund-1-Lists-lab-Gauss'-Trick" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -302,7 +300,7 @@ Creați un program care însumează toate numerele într-o listă în ordinea ur
 
 [slide hideTitle]
 # Problemă cu soluție: Merging Lists
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-19-problem-merging-and-solution-lists-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/RO/interactive-java-fundamntals-lists-19-problem-merging-and-solution-lists-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 [code-task title="Merging Lists" taskId="java-fund-1-Lists-lab-Merging-Lists" executionType="tests-execution" executionStrategy="java-code" requiresInput]
