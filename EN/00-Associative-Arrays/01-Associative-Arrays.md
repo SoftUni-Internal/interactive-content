@@ -97,13 +97,13 @@ public class Main {
 }
 ```
 
-To initialize a map:
+To initialize a **Map**:
 
-- Specify the **generic type** of the Key and the Value in the angle brackets `<>` separated by a comma and a space **, **
+- Specify the **generic type** of the Key and the Value in the angle brackets `<>`, separated by a comma and a single space (", ")
 
-- Set the map **name**, which should be **descriptive** enough to understand what **the Key and the Value represent**
+- Set the **name** of the Map, which should be **descriptive** enough to understand what **the Key and the Value represent**
 
-- After the equals sign `=`, use the keyword `new` and the **intended type** of the Map
+- After the equals sign (`=`), use the keyword `new` and the **intended type** of the Map
 
 ```java
 Map <Key, Value> airplanes = new HashMap<>();
