@@ -45,37 +45,6 @@ Atunci când un obiect este ***trecut într-o metodă**, metoda apelată poate *
 String str = "Hello";
 byte[] bytes = { 1, 2, 3 };
 ```
-## Exemple de tipuri de valori
-
-```java live no-template
-public class MyClass {
- public static void main(String[] args) {
-   int num = 5;
-   increment(num, 15);
-   System.out.println(num);
-}
-
-public static void increment(int num, int value) {
-   num += value;
- }
-}
-```
-
-## Exemple de tipuri de referință
-
-```java live no-template
-public class MyClass {
-public static void main(String[] args) {
-  int[] nums = { 5 };
-  increment(nums, 15);
-  System.out.println(nums[0]);
-}
-
-public static void increment(int[] nums, int value) {
-  nums[0] += value;
- }
-} 
-```
 [/slide]
 
 [slide hideTitle]
@@ -117,11 +86,11 @@ public static void incrementNumber(int num, int incrementValue) {
 }
 ```
 
-Avem o metodă ** incrementNumber ** care ia un număr și îl incrementează cu un alt număr - ** incrementValue **.
+Avem o metodă **incrementNumber** care ia un număr și îl incrementează cu un alt număr - **incrementValue**.
 
-Chiar dacă am efectuat unele operații cu variabila ** num **, valoarea acesteia nu se va schimba când ** num ** este tipărit pe consolă.
+Chiar dacă am efectuat unele operații cu variabila **num**, valoarea acesteia nu se va schimba când **num** este tipărit pe consolă.
 
-Acest lucru se datorează faptului că ** int ** este un tip primitiv și când este trecută, o copie a valorii sale a fost transmisă metodei.
+Acest lucru se datorează faptului că **int** este un tip primitiv și când este trecută, o copie a valorii sale a fost transmisă metodei.
 
 [/slide]
 
@@ -143,9 +112,9 @@ public static void increment(int[] numbersArray, int incrementValue) {
 
 ```
 
-Matricele stochează referințe la locațiile de memorie. Când trecem matricea la metoda ** increment **, aceasta  manipulează valorile stocate la aceeași referință de memorie.
+Matricele stochează referințe la locațiile de memorie. Când trecem matricea la metoda **increment**, aceasta  manipulează valorile stocate la aceeași referință de memorie.
 
-Când am trecut ** nums ** ca valoare pentru parametrul ** numbersArray ** al metodei, ceea ce s-a întâmplat este că parametrul numbersArray a primit referința la locația de memorie a matricei originale.
+Când am trecut **nums** ca valoare pentru parametrul **numbersArray** al metodei, ceea ce s-a întâmplat este că parametrul numbersArray a primit referința la locația de memorie a matricei originale.
 
 Orice operație care ar schimba un element din matricea din interiorul metodei va schimba, de asemenea, matricea originală, deoarece lucrăm cu aceeași referință.
 [/slide]
