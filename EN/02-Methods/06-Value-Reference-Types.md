@@ -80,13 +80,13 @@ byte[] bytes ={ 1, 2, 3 };
 
 ```java
 public static void main(String[] args) {
-   int num = 5;
-   incrementNumber(num, 15);
-   System.out.println(num);
+    int num = 5;
+    incrementNumber(num, 15);
+    System.out.println(num);
 }
 
 public static void incrementNumber(int num, int incrementValue) {
-   num += incrementValue;
+    num += incrementValue;
 }
 ```
 
@@ -105,13 +105,15 @@ This is because **int** is a primitive type and when passed a copy of its value 
 
 ```java
 public static void main(String[] args) {
-  int[] nums = { 5 };
-  increment(nums, 15);
-  System.out.println(nums[0]);
+    int[] nums = {
+        5
+    };
+    increment(nums, 15);
+    System.out.println(nums[0]);
 }
 
 public static void increment(int[] numbersArray, int incrementValue) {
-  numbersArray[0] += incrementValue;
+    numbersArray[0] += incrementValue;
 }
 
 ```

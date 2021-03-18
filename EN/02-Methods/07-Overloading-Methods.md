@@ -28,22 +28,22 @@ In the example below, we overload the **addTwoNumbers** method to work with both
 
 ```java live no-template
 public class MyClass {
-  static int addTwoNumbers(int x, int y) {
-    return x + y;
-  }
+    static int addTwoNumbers(int x, int y) {
+        return x + y;
+    }
 
-  static double addTwoNumbers(double x, double y) {
-    return x + y;
-  }
+    static double addTwoNumbers(double x, double y) {
+        return x + y;
+    }
 
-  public static void main(String[] args) {
-    int myNum1 = addTwoNumbers(8, 5);
-    double myNum2 = addTwoNumbers(4.3, 6.26);
+    public static void main(String[] args) {
+        int myNum1 = addTwoNumbers(8, 5);
+        double myNum2 = addTwoNumbers(4.3, 6.26);
 
-    System.out.println("int: " + myNum1);
+        System.out.println("int: " + myNum1);
 
-    System.out.println("double: " + myNum2);
-  }
+        System.out.println("double: " + myNum2);
+    }
 }
 ```
 
@@ -60,11 +60,11 @@ If we try to declare two methods with the same signature we will get a compile-t
 
 ```Java
 public static void print(String text) {
-  System.out.println(text);
+    System.out.println(text);
 }
 
 public static String print(String text) {
-  return text;
+    return text;
 }
 // Compile-time error!
 ```

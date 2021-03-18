@@ -39,31 +39,31 @@ To call or invoke a method in Java, we type the method's name followed by a pair
 
 In the following example, `printHello()` is used to print out `Hello World!` when it is called:
 
-```java live no-template
+```java live 
 public class MyClass {
-  public static void main(String[] args) {
-    printHello();
-  }
+    public static void main(String[] args) {
+        printHello();
+    }
 
-  public static void printHello() {
-    System.out.println("Hello World!");
-  }
+    public static void printHello() {
+        System.out.println("Hello World!");
+    }
 }
 ```
 
 A method can be called as many times we need to:
 
-```java live no-template
+```java live 
 public class MyClass {
-  public static void main(String[] args) {
-    printHello();
-    printHello();
-    printHello();
-  }
+    public static void main(String[] args) {
+        printHello();
+        printHello();
+        printHello();
+    }
 
-  public static void printHello() {
-    System.out.println("Hello World!");
-  }
+    public static void printHello() {
+        System.out.println("Hello World!");
+    }
 }
 ```
 [/slide]

@@ -10,7 +10,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -21,14 +21,14 @@ Creați o metodă care **imprimă cel mai mic număr dintre 3 numere întrege**.
 
 
 ### Exemplu
-| **Date de intrare** | **Date de ieșire** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 2 | 2 |
 | 5 | |
 | 3 | |
 
 ### Exemplu
-| **Date de intrare** | **Date de ieșire** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 25 | -21 |
 | -21 | |
@@ -130,7 +130,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -140,7 +140,7 @@ public class Main {
 Creați  o metodă care primește **un singur șir** și **imprimă numărul de vocale**.
 
 ### Exemplu
-| **Date de intrare** | **Date de ieșire** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | SoftUni | 3 |
 | Cats | 1 |
@@ -218,7 +218,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -230,13 +230,13 @@ Creați  o metodă care primește **două caractere** și afișează pe o singur
 **NOTĂ:** Dacă valoarea ASCII a doua literă este mai mică decât cea a primei, atunci literele ar trebui inversate.
 
 ### Exemplu
-| **Date de intrare** | **Date de ieșire** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | a | b c |
 | d | |
 
 ### Exemplu
-| **Date de intrare** | **Date de ieșire** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | # | $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 |
 | : | |
@@ -320,7 +320,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -333,24 +333,24 @@ Creați un program care verifică dacă o parolă dată este **validă**.
 - **6 - 10 caractere** (inclusiv)
 - Este formată **doar** din **litere și numere**
 - Conține **cel puțin 2 cifre** 
-Dacă parola este **validă**, imprimați "Password is valid". 
+Dacă parola este **validă**, imprimați "**Password is valid**". 
 
 Dacă nu **este validă**, pentru fiecare regulă încălcată **imprimați unul idntre următoarele mesaje**:
-- "Password must be between 6 and 10 characters"
-- "Password must consist only of letters and digits"
-- "Password must have at least 2 digits"
+- "**Password must be between 6 and 10 characters**"
+- "**Password must consist only of letters and digits**"
+- "**Password must have at least 2 digits**"
 
 ### Sfat
 Creați  o metodă pentru fiecare regulă.
 
 ### Exemplu
-| **Date de intrare** | **Date de ieșire** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | logIn | Password must be between 6 and 10 characters |
 | | Password must have at least 2 digits |
 
 ### Exemplu
-| **Date de intrare** | **Date de ieșire** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | MyPass123 | Password is valid |
 
@@ -448,26 +448,26 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Description
-Veți primi  3 numere întregi.
+Veți primi 3 numere întregi.
 
 Creați o metodă care returnează suma primelor două numere întregi și o altă metodă care scade al treilea număr întreg din rezultatul metodei sum.
 
-### Example
-| **Input** | **Output** |
+### Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 23 | 19 |
 | 6 | |
 | 10 | |
 
-### Example
-| **Input** | **Output** |
+### Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 1 | -12 |
 | 17 | |
@@ -619,7 +619,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -633,7 +633,7 @@ Creați  o metodă care **imprimă caracterul din mijloc**.
 Dacă **lungimea** șirului este **pară**, atunci există **2 caractere mijlocii**.
 
 ### Exemplu
-| **Date de intrare** | **Date de ieșire** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | aString | r |
 | someText | eT |
@@ -760,16 +760,16 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Creați o metodă care primește un singur întreg ** n ** și tipărește o matrice ** n * n ** cu acel număr.
+Creați o metodă care primește un singur întreg **n** și tipărește o matrice `n * n` cu acel număr.
 ### Exemplu
-| **Date de intrare** | **Date de ieșire** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 3 | 3 3 3 |
 | | 3 3 3 |
@@ -949,7 +949,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -960,10 +960,10 @@ Citiți **2 numere întregi**.
 
 Calculați **factorialul** fiecărui număr.
 
-**Împărțiți primul rezultat la al doilea** și imprimați **rezultatul rotunjit la a doua** zecimală**.
+**Împărțiți primul rezultat la al doilea** și imprimați **rezultatul rotunjit la a doua** zecimală.
 
 ### Exemplu
-| **Date de intrare** | **Date de ieșire** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 5 | 60.00 |
 | 2 | |
@@ -1092,7 +1092,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1100,10 +1100,10 @@ public class Main {
 [task-description]
 ## Descriere
 
-Creați  un program care citește numere întrgi pozitive **până când primește** "END", iar pentru fiecare număr **imprimă dacă este sau nu palindrom**.
+Creați un program care citește numere întrgi pozitive **până când primește** "**END**", iar pentru fiecare număr **imprimă dacă este sau nu palindrom**.
 
 ### Exemplu
-| **Date de intrare** | **Date de ieșire** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 123 | false |
 | 323 | true |
@@ -1265,7 +1265,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1279,7 +1279,7 @@ Un **număr de top** este un număr întreg cu următoarele proprietăți:
 Creați  un program care afișează toate numerele de top din intervalul \[1…n\].
 
 ### Exemplu
-| **Date de intrare** | **Date de ieșire** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 100 | 17 |
 | | 35 |

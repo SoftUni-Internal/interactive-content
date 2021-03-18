@@ -17,15 +17,15 @@ When the method is called, we pass the parameter **firstName** to it, which is u
 
 ```java live no-template
 public class MyClass {
-  static void printName(String firstName) {
-    System.out.println(firstName + " Rudolf");
-  }
+    static void printName(String firstName) {
+        System.out.println(firstName + " Refsnes");
+    }
 
-  public static void main(String[] args) {
-    printName("Liam");
-    printName("Jenny");
-    printName("Anja");
-  }
+    public static void main(String[] args) {
+        printName("Liam");
+        printName("Jenny");
+        printName("Anja");
+    }
 }
 ```
 

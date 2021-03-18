@@ -1,7 +1,7 @@
-# Returnarea de valori de la metode
+# Returnarea de Valori de la Metode
 
 [slide hideTitle]
-# Instrucțiunea de returnare
+# Instrucțiunea de Returnare
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-27-28-The-return-statement-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -9,19 +9,19 @@ Cuvântul-cheie `return` termină execuția unei metode, și poate fi folosit pe
 
 ```java live
 public class MyClass {
-  static int myMethod(int x) {
-    return 5 + x;
-  }
+    static int myMethod(int x) {
+        return 5 + x;
+    }
 
-  public static void main(String[] args) {
-    System.out.println(myMethod(3));
-  }
+    public static void main(String[] args) {
+        System.out.println(myMethod(3));
+    }
 }
 ```
 [/slide]
 
 [slide hideTitle]
-# Folosirea valorilor de returnare
+# Folosirea Valorilor de Returnare
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-29-Using-the-return-values-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -44,7 +44,7 @@ int age = Integer.parseInt(sc.nextLine());
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Calculate Rectangle Area
+# Problemă cu Soluție: Calculate Rectangle Area
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-30-problem-and-solution-calculate-rectangle-area-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Calculate Rectangle Area" taskId="java-fund-1-Methods-lab-Calculate-Rectangle-Area" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -54,7 +54,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -63,8 +63,8 @@ public class Main {
 ## Descriere
 Creați o metodă care calculează și afișează aria unui dreptunghi cu lungimea si lățimea date:
 
-## Exemple
-|**Date de intrare**|**Date de ieșire**|
+## Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 3 | 12 |
 | 4 |  |
@@ -143,7 +143,7 @@ Creați o metodă care calculează și afișează aria unui dreptunghi cu lungim
 
 
 [slide hideTitle]
-# Problemă cu soluție: Repeat String
+# Problemă cu Soluție: Repeat String
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-33-problem-and-solution-repeat-string-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -154,7 +154,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -165,13 +165,13 @@ Creați o metodă care primește un **șir** și un număr repetat  **n** \(un n
 
 Metoda va afișa un nou **șir** \(cel vechi repetat de **n** ori\).
 
-## Exemple
-|**Date de intrare**|**Date de ieșire**|
+## Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | abc | abcabcabc |
 | 3 |  |
 
-|**Date de intrare**|**Date de ieșire**|
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | String | StringString |
 | 2 |  |
@@ -249,7 +249,7 @@ ivanivan
 
 
 [slide hideTitle]
-# Problemă cu soluție: Math Power
+# Problemă cu Soluție: Math Power
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-34-problem-and-solution-math-power-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -261,7 +261,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -274,13 +274,13 @@ Creați o metodă care calculează și returnează valoarea unui număr ridicat 
 ## Sfat
 Folosiți **BigDecimal**.
 
-## Exemple
-|**Date de intrare**|**Date de ieșire**|
+## Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 2 | 256 |
 | 9 |  |
 
-|**Date de intrare**|**Date de ieșire**|
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 5.5 | 166.375 |
 | 3 |  |
@@ -402,7 +402,7 @@ Folosiți **BigDecimal**.
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Orders
+# Problemă cu Soluție: Orders
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-problem-and-solution-orders-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -413,7 +413,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -435,13 +435,13 @@ Prețul pentru fiecare produs este:
 
 Imprimați rezultatul final rotunjit la a doua zecimală.
 
-## Exemple
-|**Date de intrare**|**Date de ieșire**|
+## Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | water | 5.00 |
 | 5 | |
 
-|**Date de intrare**|**Date de ieșire**|
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | coffee | 2.00 |
 | 2 | |

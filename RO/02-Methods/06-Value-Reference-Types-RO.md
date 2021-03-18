@@ -1,8 +1,8 @@
-# Tipuri de valori și referințe
+# Tipuri de Valori și Referințe
 
 [slide hideTitle]
 
-# Tipuri de valori
+# Tipuri de Valori
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-38-Value-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Variabila de tipul **valoare** \(date primitive\) conține o instanță a tipului care conține direct valoarea lor. 
@@ -29,7 +29,7 @@ boolean result = true; //require 1 byte of memory
 [/slide]
 
 [slide hideTitle]
-# Tipurile de referință
+# Tipurile de Referință
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-39-reference-types-and-demos-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -48,7 +48,7 @@ byte[] bytes = { 1, 2, 3 };
 [/slide]
 
 [slide hideTitle]
-# Tipuri de valoare vs. tipuri de referință
+# Tipuri de Valoare vs. Tipuri de Referință
 
 [image assetsSrc="java-fund-methods-01.gif" /]
 
@@ -74,15 +74,16 @@ byte[] bytes ={ 1, 2, 3 };
 [slide hideTitle]
 
 # Exemplu: Tipuri de valoare
+
 ```java
 public static void main(String[] args) {
-   int num = 5;
-   incrementNumber(num, 15);
-   System.out.println(num);
+    int num = 5;
+    incrementNumber(num, 15);
+    System.out.println(num);
 }
 
 public static void incrementNumber(int num, int incrementValue) {
-   num += incrementValue;
+    num += incrementValue;
 }
 ```
 
@@ -101,13 +102,15 @@ Acest lucru se datorează faptului că **int** este un tip primitiv și când es
 
 ```java
 public static void main(String[] args) {
-  int[] nums = { 5 };
-  increment(nums, 15);
-  System.out.println(nums[0]);
+    int[] nums = {
+        5
+    };
+    increment(nums, 15);
+    System.out.println(nums[0]);
 }
 
 public static void increment(int[] numbersArray, int incrementValue) {
-  numbersArray[0] += incrementValue;
+    numbersArray[0] += incrementValue;
 }
 
 ```
@@ -120,7 +123,7 @@ Orice operație care ar schimba un element din matricea din interiorul metodei v
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Math Operations
+# Problemă cu Soluție: Math Operations
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-problem-and-solution-math-operations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -131,7 +134,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -146,14 +149,14 @@ Prima va fii pentru primul **număr**, a doua pentru **operator** și ultima pen
 
 Operatorii posibili sunt: `/` `*` `+` `-`
 
-## Exemple
-|**Date de intrare**|**Date de ieșire**|
+## Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- | 
 | 5 | 25 |
 | \* ||
 | 5 ||
 
-|**Date de intrare**|**Date de ieșire**|
+|**Intrare**|**Ieșire** |
 | --- | --- | 
 | 4 | 12 |
 | \+ ||

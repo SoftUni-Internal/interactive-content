@@ -10,13 +10,13 @@ The `return` keyword returns a value and ends the method execution.
 
 ```java live
 public class MyClass {
-  static int increaseValue(int x) {
-    return 5 + x;
-  }
+    static int myMethod(int x) {
+        return 5 + x;
+    }
 
-  public static void main(String[] args) {
-    System.out.println(increaseValue(3));
-  }
+    public static void main(String[] args) {
+        System.out.println(myMethod(3));
+    }
 }
 ```
 

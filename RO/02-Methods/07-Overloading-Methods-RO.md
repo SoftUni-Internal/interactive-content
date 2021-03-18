@@ -1,7 +1,7 @@
-# Metode de supraîncărcare
+# Metode de Supraîncărcare
 
 [slide hideTitle]
-# Semnătura metodei
+# Semnătura Metodei
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-44-45-46-47-Method-Overlading-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
@@ -9,7 +9,7 @@ In Java, semn[tura metodei face parte din declararea metodei.
 
 Este o combinație între **numele metodei** și **lista de parametrii**.
 
-În acest exemplu, elementele semnăturii sunt ** print ** (numele metodei) și ** String text ** (parametru).
+În acest exemplu, elementele semnăturii sunt **print** (numele metodei) și **String text** (parametru).
 
 ```Java
 public static void print(String text) {
@@ -19,30 +19,30 @@ public static void print(String text) {
 
 ## Metode de supraîncărcare
 
-Supraîncărcarea unei metode se face folosind același nume pentru mai multe metode cu diferite ** semnături ** \ (metoda ** nume ** și ** parametri ** \).
+Supraîncărcarea unei metode se face folosind același nume pentru mai multe metode cu diferite **semnături** \ (metoda **nume** și **parametri** \).
 
 În loc să definim două metode care fac același lucru, este ma bine să supraîncărcăm una.
 
-În exemplul de mai jos, supraîncărcăm metoda ** addTwoNumbers ** pentru a funcționa atât cu ** int **, cât și cu ** double **:
+În exemplul de mai jos, supraîncărcăm metoda **addTwoNumbers** pentru a funcționa atât cu **int *, cât și cu **double**:
 
 ```java live no-template
 public class MyClass {
-  static int addTwoNumbers(int x, int y) {
-    return x + y;
-  }
+    static int addTwoNumbers(int x, int y) {
+        return x + y;
+    }
 
-  static double addTwoNumbers(double x, double y) {
-    return x + y;
-  }
+    static double addTwoNumbers(double x, double y) {
+        return x + y;
+    }
 
-  public static void main(String[] args) {
-    int myNum1 = addTwoNumbers(8, 5);
-    double myNum2 = addTwoNumbers(4.3, 6.26);
+    public static void main(String[] args) {
+        int myNum1 = addTwoNumbers(8, 5);
+        double myNum2 = addTwoNumbers(4.3, 6.26);
 
-    System.out.println("int: " + myNum1);
+        System.out.println("int: " + myNum1);
 
-    System.out.println("double: " + myNum2);
-  }
+        System.out.println("double: " + myNum2);
+    }
 }
 ```
 
@@ -50,7 +50,7 @@ public class MyClass {
 [/slide]
 
 [slide hideTitle]
-# Semnătura și tipul de returnare 
+# Semnătura și Tipul de Returnare 
 
 Metoda  **signature** nu inculde tipul de returnare a metodei.
 
@@ -60,18 +60,18 @@ Dacă încercăm să declarăm două metode cu aceeași semnătură, vom primi o
 
 ```Java
 public static void print(String text) {
-  System.out.println(text);
+    System.out.println(text);
 }
 
 public static String print(String text) {
-  return text;
+    return text;
 }
 // Compile-time error!
 ```
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Greater of Two Values
+# Problemă cu Soluție: Greater of Two Values
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-problem-and-solution-greater-of-two-values-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -83,7 +83,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -96,14 +96,14 @@ Valorile pot fi de tipul  **int**, **char** sau **String**.
 
 Creați o metodă numită **getMax()** care returnează **paramaetru cu cea mai mare valoare**:
 
-## Exemple
-|**Date de intrare**|**Date de ieșire**|
+## Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- | 
 | int | 16 |
 | 2 | |
 | 16 | |
 
-|**Date de intrare**|**Date de ieșire**|
+|**Intrare**|**Ieșire** |
 | --- | --- | 
 | char | z |
 | a | |
@@ -229,7 +229,7 @@ int
 
 
 [slide hideTitle]
-# Problemă cu soluție: Multiply Evens by Odds
+# Problemă cu Soluție: Multiply Evens by Odds
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-problem-and-solution-multiply-evens-by-odds-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Multiply Evens by Odds" taskId="java-fund-1-Methods-lab-Multiply-Evens-by-Odds" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -239,7 +239,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -248,8 +248,8 @@ public class Main {
 ## Descriere
 Creați un program care citește un **număr întreg** și **înmulțește cu suma cifrelor sale pare** cu **suma cifrelor sale impare**:
 
-## Exemple
-|**Date de intrare**|**Date de ieșire**|**Comentarii**|
+## Exemplu
+|**Intrare**|**Ieșire** |**Comentarii**|
 | --- | --- | --- |
 | 12345 | 54 | 12345 are 2 cifre pare - 2 și 4. cifrele  |
 | | | pare adunate sunt 6. |
@@ -258,7 +258,7 @@ Creați un program care citește un **număr întreg** și **înmulțește cu su
 | | | Înmulțim 6 cu 9 și avem 54. |
 
 
-|**Date de intrare**|**Date de ieșire**|
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | -12345 | 54 |
 

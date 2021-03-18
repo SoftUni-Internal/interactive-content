@@ -1,4 +1,4 @@
-# Practici corespunzătoare pentru denumiri
+# Practici Corespunzătoare Pentru Denumiri
 
 [slide hideTitle]
 # Metode de denumire
@@ -37,7 +37,7 @@ De asemenea ar trebui să scriem metodele în **camelCase**:
 [/slide]
 
 [slide hideTitle]
-# Cele mai bune practici 
+# Cele Mai Bune Practici 
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-14-Methods-Best-Practices-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -59,7 +59,7 @@ public static void printReceipt() {
 [/slide]
 
 [slide hideTitle]
-# Structura și formatul codului
+# Structura și Formatul Codului
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-15-Code-Structure-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 

@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Parametrii metodelor
+# Parametrii Metodelor
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-16-17-18-Methods-with-parameters-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Informațiile pot fi **transmise** metodelor ca **parametri**. 
@@ -16,15 +16,15 @@ Când metoda este apelată, trecem paramterul  **firstName**, care este folosit 
 
 ```java live no-template
 public class MyClass {
-  static void printName(String firstName) {
-    System.out.println(firstName + " Refsnes");
-  }
+    static void printName(String firstName) {
+        System.out.println(firstName + " Refsnes");
+    }
 
-  public static void main(String[] args) {
-    printName("Liam");
-    printName("Jenny");
-    printName("Anja");
-  }
+    public static void main(String[] args) {
+        printName("Liam");
+        printName("Jenny");
+        printName("Anja");
+    }
 }
 ```
 
@@ -44,7 +44,7 @@ public static void printStudent(String name, int age, double grade) {
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Sign of Integer
+# Problemă cu Soluție: Sign of Integer
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-19-problem-and-solution-sign-of-integer-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -55,7 +55,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -64,9 +64,9 @@ public class Main {
 ## Descriere
 Creați o metodă care verifică dacă un număr dat este pozitiv, negativ sau zero și imprimă rezultatul pe consolă.
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
-| --- | --- |
+## Exemplu
+|**Intrare**|**Ieșire** |
+|---|---|
 | 2 | The number 2 is positive. |
 | -5 | The number -5 is negative. |
 
@@ -104,7 +104,7 @@ The number 0 is zero.
 
 
 [slide hideTitle]
-# Problemă cu soluție: Grades
+# Problemă cu Soluție: Grades
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-21-problem-and-solution-grades-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -115,14 +115,14 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți o metodă **care primește** o notă între **2.00** și **6.00** și ** imprimă nota corespunzătoare în cuvinte**:
+Scrieți o metodă **care primește** o notă între **2.00** și **6.00** și **imprimă nota corespunzătoare în cuvinte**:
 
 * 2.00 – 2.99 - "Fail"
 * 3.00 – 3.49 - "Poor"
@@ -130,8 +130,8 @@ Scrieți o metodă **care primește** o notă între **2.00** și **6.00** și *
 * 4.50 – 5.49 - "Very good"
 * 5.50 – 6.00 - "Excellent"
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 3.33 | Poor |
 | 4.50 | Very good |
@@ -210,7 +210,7 @@ Fail
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Printing Triangle
+# Problemă cu Soluție: Printing Triangle
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-23-problem-and-solution-printing-triangle-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -221,7 +221,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -230,8 +230,8 @@ public class Main {
 ## Descriere
 Creați o metodă pentru a afișa triunghiuri ca în exemplul de mai jos:
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 3 | 1 |
 |  | 1 2 |
@@ -239,7 +239,7 @@ Creați o metodă pentru a afișa triunghiuri ca în exemplul de mai jos:
 |  | 1 2 |
 |  | 1 |
 
-| **Date de intrare** | **Date de ieșire** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 4 | 1 |
 |  | 1 2 |
@@ -394,7 +394,7 @@ Creați o metodă pentru a afișa triunghiuri ca în exemplul de mai jos:
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Calculations
+# Problemă cu Soluție: Calculations
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-problem-and-solution-calculations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -405,7 +405,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -418,14 +418,14 @@ Creați 4 **metode** \(pentru fiecare operație\) și s-o invocați pe cea corec
 
 Metoda ar trebui să imprimă și rezultatul \(trebuie să fie de tipul void\)
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | subtract | 1 |
 | 5 |  |
 | 4 |  |
 
-| **Date de intrare** | **Date de ieșire** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | divide | 2 |
 | 8 |  |

@@ -1,4 +1,4 @@
-# Ce este o metodă?
+# Ce Este o Metodă?
 
 [slide hideTitle]
 # Metode
@@ -24,7 +24,7 @@ printHello();
 [/slide]
 
 [slide hideTitle]
-# De ce să folosim metodele?
+# De ce să Folosim Metodele?
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-5-Why-Use-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -36,14 +36,15 @@ Nu trebuie să rescriem codul de mai multe ori.
 
 Gândiți-vă așa, `scriem o dată, folosim de mai multe ori`.
 
-- **Pentru a parametriza codul**: pe lângă refolosirea codului, care este la fel în toate cazurile,  
+- **Pentru a parametriza codul**: pe lângă refolosirea codului, care este la fel în toate cazurile
+
 De multe ori veți vrea să folosiți `parametri` care schimbă modul de funcționare al metodei.
 
-- **Crearea de unități conceptuale**:  creați metode pentru fiecare sarcină aparte pe care programul vostru o va rezolva.
+- **Crearea de unități conceptuale**:  creați metode pentru fiecare sarcină aparte pe care programul vostru o va rezolva
 
-- Metodele fac codul să fie mai citeț și mai ușor de depanat.
+- Metodele fac codul să fie mai citeț și mai ușor de depanat
 
-- De exemplu, metoda `printHello()` este atât de concisă, astfel încât vom știi că această metodă va afișa `Hello`.
+- De exemplu, metoda `printHello()` este atât de concisă, astfel încât vom știi că această metodă va afișa `Hello`
 
 - **Simplificarea problemelor**: Deoarece variabilele locale și instrucțiunile unei metode **nu pot fi văzute din exteriorul acesteia**
 
@@ -52,11 +53,11 @@ Ele sunt **ascunse** de alte părți ale programului, atfel prevenind erori acci
 [/slide]
 
 [slide hideTitle]
-# Metode de tipul void
+# Metode de Tipul Void
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-6-Void-type-method-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Metodele cu tipul de returnare ** void ** execută codul în blocul lor de cod.
+Metodele cu tipul de returnare "**void**" execută codul în blocul lor de cod.
 
 Aceștia pot accepta parametri, dar nu returnează niciun rezultat.
 
