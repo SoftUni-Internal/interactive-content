@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Cum funcționează calculatorul?
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-3-4-How-computers-work-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-3-4-How-computers-work-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Un calculator este o e **mașină electronică** care procesează informații, cu alte cuvinte, un procesor de informații: acesta ia informațiile brute (sau datele) de la un capăt, le stochează până când este gata să lucreze la ele, apoi returnează rezultatele la celălalt capăt.
 
@@ -17,7 +17,7 @@ Preluarea informațiilor se numește intrare, stocarea informațiilor este mai b
 
 [slide hideTitle]
 # Variabile
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-5-Variables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-5-Variables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 O variabilă este un nume dat unei locații de memorie. 
 
@@ -70,7 +70,7 @@ Folosim variabilele care acționează ca borcane pentru date diferite, cum ar fi
 [slide hideTitle]
 # Ce este un tip de date?
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-6-What-is-data-type-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-6-What-is-data-type-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 Tipurile de date specifică diferitele dimensiuni și valori care pot fi stocate în variabilă.
@@ -97,6 +97,8 @@ Există **două tipuri de tipuri de date** în Java:
 [slide hideTitle]
 # Data Type Characteristics
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-7-data-type-characteristics-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ```java
 int myNum = 5;               // Integer (whole number)
 float myFloatNum = 5.99f;    // Floating point number
@@ -115,7 +117,7 @@ După cum vedeți în exemplul de mai sus, **tipurile de date** au:
 
 [slide hideTitle]
 # Variabile de denumire
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-7-data-type-characteristics-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-8-naming-our-variables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În programarea computerului, o convenție de denumire este un set de **reguli** pentru alegerea numelui care trebuie utilizat pentru variabile.
 
@@ -148,7 +150,7 @@ Numele variabilei ar trebui să explice scopul acesteia.
 
 [slide hideTitle]
 # Domeniul de Aplicare și Durata de Viață a Variabilei
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-9-variable-scope-and-lifetime-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-9-variable-scope-and-lifetime-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 **Domeniul de aplicare** al unei variabile se referă la ce zone sau secțiuni ale unui program poate fi accesată variabila și **durata de viață** a unei variabile se referă la cât timp variabila rămâne în viață în memorie.
@@ -179,6 +181,8 @@ public static void main(String[] args) {
 [slide hideTitle]
 # Intervalul variabilei
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-10-variable-span-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Intervalul** variabilei este cât timp înainte de a fi apelată o variabilă.
 
 Este o bună practică să creați o variabilă cât mai târziu (de exemplu, o durată mai scurtă).
@@ -202,7 +206,7 @@ static void main(String[] args) {
 
 [slide hideTitle]
 # Menținerea intervalului variabilei scurt
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-11-keep-variable-span-short-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-11-keep-variable-span-short-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Ca regulă generală bună, încercați să mențineți intervalul variabil mai scurt.
 

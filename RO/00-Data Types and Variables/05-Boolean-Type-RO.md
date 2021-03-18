@@ -2,7 +2,7 @@
 [slide hideTitle]
 
 # Tipul de date boolean
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-34-35-boolean-type-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-34-35-boolean-type-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Un tip de date boolean este declarat prin cuvântul cheie **boolean** cu două opțiuni de valoare: **true** sau **false**:
 
@@ -25,7 +25,7 @@ Un tip de date boolean este declarat prin cuvântul cheie **boolean** cu două o
 
 [slide hideTitle]
 # Problemă cu soluție: Special Numbers
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-36-problem-and-solution-special-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-36-problem-and-solution-special-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Special Numbers" taskId="java-fund-1-data-types-lab-special-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
