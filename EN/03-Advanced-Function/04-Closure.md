@@ -34,7 +34,7 @@ function outerFunc() {
 
 The above example has two functions:
 
-- `outerFunc()` function which has a variable b, and returns the `innerFunc()` function
+- `outerFunc()` function which has a variable `b`, and returns the `innerFunc()` function
 
 - `innerFunc()` function which has a variable called `a`, and accesses an outer variable - `b` within its function body
 
@@ -64,7 +64,7 @@ func(); //2
 func(); //3
 ```
 
-Every time we call the function `func()` the counter will be output to the console and it will be incremented by one. 
+Every time we call `func()`, the counter will be output to the console and it will be incremented by one. 
 
 
 [/slide]
@@ -97,11 +97,11 @@ Write a function that keeps a string **inside its context** and can execute diff
 
 ## Input
 
-Check the examples below to see how your code will be executed
+Check the examples below to see how your code will be executed.
 
 ## Output
 
-Whenever you receive the command **print**, the output should be the **printed** to the console.
+Whenever you receive the `print` command, the output should be the **printed** to the console.
 
 ## Example 1
 

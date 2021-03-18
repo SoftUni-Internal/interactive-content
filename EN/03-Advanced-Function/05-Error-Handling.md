@@ -22,6 +22,7 @@ When a function or method fails to do what its name suggests, it **should** eith
 
 ```js live
 const years = [1991, 1968, 2009];
+
 console.log(years.indexOf(2020));
 ```
 
@@ -58,12 +59,12 @@ The three most common types of **errors** are:
   
   - every programming language has a set of **grammar rules** which, if mistaken, cause problems
   
-  - most [IDEs](https://en.wikipedia.org/wiki/Integrated_development_environment) have with the ability to warn you about **Syntax Errors** at the time of writing your code
+  - most [IDEs](https://en.wikipedia.org/wiki/Integrated_development_environment) include the ability to warn you about **Syntax Errors** at the time of writing your code
   
 
 - **Runtime Errors**
   
-  - runtime Errors happen after compilation, as a **user is executing your application**
+  - runtime errors happen after compilation, as **the application is running**
   
   - making use of [software frameworks](https://en.wikipedia.org/wiki/Software_framework) can significantly lower the chance of such errors
 
@@ -84,17 +85,25 @@ The three most common types of **errors** are:
 An exception occurs when a function is unable to do execute its task successfully resulting in an error.
 
 
-**RangeError**
+- **RangeError**
+
+**Range errors** occur when a value is **outside of a given range**.
 
 ```js
-let arr = new Array(-1); //Invalid array length
+let arr = new Array(-1); // Invalid array length
 ```
+
+Initializing an array with a **length of -1** will result in a TypeError, because array length cannot be negative.
 
 ```js 
 let bigArr = new Array(9999999999); // RangeError
 ```
 
-**TypeError** 
+The same error will occur when the **length** parameter is over **4 294 567 295** (2\^32 -1) - the **maximum length** of an array in **JavaScript**.
+
+- **TypeError** 
+
+**Type errors** are the result of an **unexpected value type**.
 
 ```js
 let index = undefined.indexOf('hi'); // TypeError
@@ -104,7 +113,9 @@ let index = undefined.indexOf('hi'); // TypeError
 console.print('hi');   // Uncaught TypeError
 ```
 
-**ReferenceError**
+- **ReferenceError**
+
+**Reference errors** signify that an **inexistent variable** has been **referenced**.
 
 ```js
 console.log(George);   // Uncaught ReferenceError
@@ -118,6 +129,7 @@ console.log(George);   // Uncaught ReferenceError
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-30-error-handling-special-values-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
+Some built-in Javascript methods can return **special values**, in the case of ill-matched data.
 
 ```js
 let sqrt = Math.sqrt(-1); // NaN (special value)
@@ -156,7 +168,7 @@ function isEven(num) {
 }
 ```
 
-If ``TypeError`` is thrown, the rest of the code **will not** be executed.
+If `TypeError` is thrown, the rest of the code **will not** be executed.
 
 [/slide]
 
