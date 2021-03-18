@@ -19,9 +19,9 @@ public class Main {
 
 ### Input / Constraints
 
-You will receive a journal containing items, separated by ", " **(comma and space)**. After that, until you receive the command "**Craft!**", you will be receiving different commands.
+You will receive a journal containing items, separated by ", " **(comma and space)**. After that, until you receive the command: "**Craft!**", you will be receiving varying commands.
 
-The commands are split by " - " **(space dash space)**:
+The commands are separated by " - " **(space dash space)**:
 
 - "**Collect - **\{**item**\}": Receiving this command, you should **add** the given item to your inventory
 
@@ -37,7 +37,7 @@ Otherwise, ignore the command.
 
 ### Output
 
-After receiving "**Craft!**" print the items in your inventory, separated by ", " **(comma and space)**
+After receiving "**Craft!**" print out all items in your inventory, separated by ", " **(comma and space)**
 
 ## Examples One
 | **Input** | **Output** |
