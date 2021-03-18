@@ -244,7 +244,7 @@ List<Integer> numbers = Arrays.stream(scanner.nextLine()
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-27-filtering-collections-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The `filter()` method goes through a collection and gets only the elements that match a certain criteria:
+The `filter()` method goes through a collection and gets only the elements that match certain criteria:
 
 ```java
 int[] numbers = Arrays.stream(scanner.nextLine()
@@ -275,7 +275,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Read an array of **strings**. Print each word on a new line, whose length is an **even** number.
+Read an array of **strings**. Print out the words whose length is an **even** number, each on a new line.
 
 ## Input / Constraints
 
@@ -285,7 +285,7 @@ Read an array of **strings**.
 
 Print each word on a new line.
 
-Filter those whose length is even.
+Filter only those words whose length is an **even** number.
 
 
 ## Examples
