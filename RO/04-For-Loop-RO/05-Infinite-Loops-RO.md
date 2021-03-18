@@ -29,7 +29,7 @@ for (;;) {
 
 # Problemă cu Soluție: Sum Numbers Until 0
 
-[video src="https://videos.softuni.org/hls/javascript-basics/RO/04-For-Loop/JS-basics-for-33-34-problem-and-solution-sum-numbers-until-zero-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/04-For-Loop/JS-basics-for-33-34-problem-and-solution-sum-numbers-until-zero-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sum Numbers Until 0" taskId="pb-js-for-loop-Sum-Numbers-Until-0" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
