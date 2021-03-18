@@ -13,35 +13,36 @@ class Company {
 ```
 [/code-editor]
 [task-description]
-# Your Task
+## Description  
 
-Write a company class, which supports the described functionality below.
+Write a **company** class, which supports the described functionality below.
 
-**1. Functionality**
+## Functionality
 
 `constructor()`:
 
-Should have this 1 property: `departments`- an empty array
+
+Should have a property `departments`- an empty array
 
 "**AddEmployee**(\{**username**\}, \{**Salary**\}, \{**Position**\}, \{**Department**\})":
 
 This function should add a new employee to the department with the given name.
 
-- If one of the passed parameters is an empty string "**''**", undefined or null, this function should throw an error with the following message:
+- If one of the passed parameters is an empty string **""**, **undefined** or **null**, this function should throw an error with the following message:
 
 "**Invalid input!**"
 
-- If salary is less than 0, this function should throw an error with the following message:
+- If salary is **less than 0**, this function should throw an error with the following message:
 
 "**Invalid input!**"
 
-- If the new employee is hired successfully, you should add him into the departments array and return the following message:
+- If the new employee is **hired successfully**, you should **add** him into the **departments array** and return the following message:
 
 "**New employee is hired. Name:** \{**name**\}. **Position:** \{**position**\}"
 
-`bestDepartment()`:
+### `bestDepartment()`
 
-This **function** should print the department with the highest average salary and its employees, sorted by their salary by descending and by name in the following format:
+This **function** should **print the department with the highest average salary and its employees**, sorted by their salary by descending and by name in the following format:
 
 
 "**Best department is:** \{**best department's name**\}
@@ -52,14 +53,12 @@ This **function** should print the department with the highest average salary an
 ..."
 
 
-**2. Submission**
+## Submit
 Submit only your **Company class**.
 
-**3. Examples**
+## Examples
 
 This is an example how the code is **intended to be used**:
-
-**Sample code usage**
 
 ```js
 let c = new Company();
@@ -73,14 +72,16 @@ c.addEmployee("George", 1350, "HR", "Human resources");
 console.log(c.bestDepartment());
 ```
 
-**Corresponding output**
+**Output:**
 
+```
 Best Department is: Construction
 Average salary: 1500.00
 Stan 2000 architect
 Steven 2000 engineer
 Peter 1500 electrical engineer
 Sam 500 dyer
+```
 
 [/task-description]
 [code-io /]
@@ -378,10 +379,11 @@ console.log(a.plus(b).toString()==='0xF');
 
 ## Output
 
+```
 0xFF
 0xF
 true
-
+```
 
 [/task-description]
 [code-io /]
@@ -500,8 +502,6 @@ Use the provided [resources](https://videos.softuni.org/resources/javascript/jav
 
 [image assetsSrc="function-context-07.png" /]
 
-**1. Your Task**
-
 Write the missing JavaScript code to make the **Table** application work as expected.
 
 When you **click** on an item from the table, you should change its **background color** to `#413f5e`. 
@@ -533,7 +533,7 @@ When you **click** on an item from the table, you should change its **background
 
 [image assetsSrc="function-context-09.png" /]
 
-If the item you've clicked **already** has a **style** property, you should **remove** it. 
+If the item you have clicked **already** has a **style** property, you should **remove** it. 
 
 [image assetsSrc="function-context-10.png" /]
 
@@ -820,7 +820,7 @@ Write a function that sequentially **displays articles** on a web page when the 
 
 You will receive an **array of strings** that will initialize the program. 
 
-You need to return a function that keeps the initial array in its closure and every time it is called, it takes the first element from the array and displays it on the web page, inside a div with ID "**content**". 
+You need to return a function that keeps the initial array in its closure and every time it is called, it takes the first element from the array and displays it on the web page, inside a `div` with ID "**content**". 
 
 If there are no more elements left, your function should do nothing.
 
@@ -872,15 +872,15 @@ You will receive and **array** of strings.
 ## Output
 Return a **function** that displays the array elements on the web page.
 
-## Examples
+# Examples
 
-First Example:
+## Example 1:
 [image assetsSrc="function-context-12.png" /]
 
-Second Example:
+## Example 2:
 [image assetsSrc="function-context-13.png" /]
 
-Third Example: 
+## Example 3:
 [image assetsSrc="function-context-14.png" /]
 
 [/task-description]
