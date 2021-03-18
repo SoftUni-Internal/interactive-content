@@ -8,7 +8,7 @@
 
 The prototype is an **object**, which has an **internal property**. 
 
-It used for implementing **prototype-based inheritance** and **shared properties**
+It is used for implementing **prototype-based inheritance** and **shared properties**
 
 All methods and properties will be inherited by reference in the **prototype-based inheritance**. 
 
