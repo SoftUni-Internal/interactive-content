@@ -324,7 +324,7 @@ Vowel
 
 [slide hideTitle]
 # Problemă cu soluție: Product of 3 Numbers
-[video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/problem1-product-of-3-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/problem1-product-of-3-numbers-solution-TRIM-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Product of 3 Numbers" taskId="pb-js-Conditions-Advanced-Product-of-3-numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -424,7 +424,7 @@ zero
 
 [slide hideTitle]
 # Problemă cu soluție: Sorted Numbers
-[video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/problem2-sorted-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/problem2-sorted-numbers-solution-TRIM-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sorted Numbers" taskId="pb-js-Conditions-Advanced-Sorted-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
