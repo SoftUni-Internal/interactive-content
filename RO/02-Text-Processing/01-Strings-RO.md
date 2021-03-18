@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Ce Este un Șir
 
-[vimeo-video]
-[stream language="EN" videoId="489817383/8da2994345" default /]
-[stream language="RO" videoId="489817383/8da2994345"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/RO/interactive-js-fundamentals-text-processing-3-4-5-what-is-a-string-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Șirurile** sunt serii de **caractere.**
 
@@ -80,11 +77,6 @@ Aceasta va da ca rezultat de asemenea, `J`, deoarece cele două moduri sunt iden
 [slide hideTitle]
 # Iterarea Printr-un Șir: Demo
 
-[vimeo-video]
-[stream language="EN" videoId="489817402/1b82ef9f2e" default /]
-[stream language="RO" videoId="489817402/1b82ef9f2e"  /]
-[/video-vimeo]
-
 Iterăm printr-un șir folosind bucla `for-of`:
 
 ```js live
@@ -99,6 +91,8 @@ for(let el of text){
 
 [slide hideTitle]
 # Problem with Solution: Print Characters
+
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/RO/interactive-js-fundamentals-text-processing-6-solution-print-characters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Print Characters" taskId="js-fund-part-2-text-processing-lab-Print-Characters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

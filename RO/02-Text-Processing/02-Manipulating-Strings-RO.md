@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Concatenare
 
-[vimeo-video]
-[stream language="EN" videoId="489817452/a5c7ddac9c" default /]
-[stream language="RO" videoId="489817452/a5c7ddac9c"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/RO/interactive-js-fundamentals-text-processing-7-8-concatinating-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Concatenarea** în JS se face cu operatorii: `+` și `+ =` sau prin metoda `concat()`.
 
@@ -45,10 +42,7 @@ Acest lucru se datorează faptului că `+` și `+=` și metoda `concat()` fac la
 [slide hideTitle]
 # Căutarea de Subșiruri
 
-[vimeo-video]
-[stream language="EN" videoId="489817455/1fa425821a" default /]
-[stream language="RO" videoId="489817455/1fa425821a"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/RO/interactive-js-fundamentals-text-processing-9-searching-for-substrings-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a **găsi** un subșir, putem folosi `indexOf()` sau `lastIndexOf()`.
 
@@ -101,10 +95,7 @@ Iar al doilea returnează `-1` pentru că nu găsește nimic.
 [slide hideTitle]
 # Extragerea de Subșiruri
 
-[vimeo-video]
-[stream language="EN" videoId="489817495/403a2d42fe" default /]
-[stream language="RO" videoId="489817495/403a2d42fe"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/RO/interactive-js-fundamentals-text-processing-10-extracting-substrings-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a **extrage** un subșir, putem folosi `substring()`. Această metodă are doi parametri:
 
@@ -141,10 +132,7 @@ Asta pentru că nu i-am dat al doilea parametru, care este indicele **sfârșit*
 [slide hideTitle]
 # Operațiuni cu Şiruri
 
-[vimeo-video]
-[stream language="EN" videoId="489817576/c647cb8ef4" default /]
-[stream language="RO" videoId="489817576/c647cb8ef4"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/RO/interactive-js-fundamentals-text-processing-11-string-operations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Dacă dorim să schimbăm direct o parte a unui șir, vom folosi `replace()`.
 
@@ -177,10 +165,7 @@ console.log(replacedStr);
 [slide hideTitle]
 # Problemă cu Soluție: Substring
 
-[vimeo-video]
-[stream language="EN" videoId="489817604/03cd593d45" default /]
-[stream language="RO" videoId="489817604/03cd593d45"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/RO/interactive-js-fundamentals-text-processing-12-solution-substring-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Substring" taskId="js-fundamentals-pt2-text-processing-lab-Substring" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -271,10 +256,7 @@ JAko88/(()
 [slide hideTitle]
 # Împărțirea Unui Şir
 
-[vimeo-video]
-[stream language="EN" videoId="489816954/24e31211e5" default /]
-[stream language="RO" videoId="489816954/24e31211e5"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/RO/interactive-js-fundamentals-text-processing-14-splitting-and-finding-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Când vrem să separăm cuvintele într-un șir, folosim metoda `split()`.
 
@@ -323,10 +305,7 @@ console.log(text.includes('js'));
 [slide hideTitle]
 # Repetarea într-un Șir
 
-[vimeo-video]
-[stream language="EN" videoId="489817061/4454e2aa76" default /]
-[stream language="RO" videoId="489817061/4454e2aa76"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/RO/interactive-js-fundamentals-text-processing-15-repeating-strings-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Când vrem să **repetăm** un **șir** în JS, folosim `repeat()`. Aceasta ne permite să facem un anumit număr de **copii** ale aceluiși **șir**.
 
@@ -352,10 +331,7 @@ console.log(str.repeat(5));
 [slide hideTitle]
 # Problemă cu soluție: Censored Words
 
-[vimeo-video]
-[stream language="EN" videoId="489817109/c566f94bb4" default /]
-[stream language="RO" videoId="489817109/c566f94bb4"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/RO/interactive-js-fundamentals-text-processing-16-solution-censored-words-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Censored Words" taskId="js-fundamentals-pt2-text-processing-Censored-Words" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -447,10 +423,7 @@ aaa \*\*\*\*\* a \*\*\*\*\* abv hey abc
 [slide hideTitle]
 # Metoda trim
 
-[vimeo-video]
-[stream language="EN" videoId="489817107/ed4fac30e5" default /]
-[stream language="RO" videoId="489817107/ed4fac30e5"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/RO/interactive-js-fundamentals-text-processing-18-trimming-strings-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a **elimina spațiile albe** folosim metoda `trim()`.
 
@@ -493,10 +466,7 @@ console.log(str.trimEnd());
 [slide hideTitle]
 # Starts With or Ends With
 
-[vimeo-video]
-[stream language="EN" videoId="489817165/3eb9153a87" default /]
-[stream language="RO" videoId="489817165/3eb9153a87"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/RO/interactive-js-fundamentals-text-processing-19-starts-with-end-with-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 Cu `startsWith()`, putem verifica dacă un șir începe cu un cuvânt specific, că vom trece la metodă ca parametru.
@@ -543,10 +513,7 @@ console.log(sentence.endsWith('John', 10));
 [slide hideTitle]
 # Padding la Început și la Sfârșit
 
-[vimeo-video]
-[stream language="EN" videoId="489817167/90a1d0997d" default /]
-[stream language="RO" videoId="489817167/90a1d0997d"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/RO/interactive-js-fundamentals-text-processing-20-padding-at-the-start-and-end-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 Dacă vrem să **adăugăm** un șir **de un anumit număr de timp** la **începutul** sau **la** sfârșitul al unui alt șir, putem folosi `padStart()` sau `padEnd()` metode.
@@ -578,10 +545,7 @@ console.log(padded);
 [slide hideTitle]
 # Problem with Solution: Count String Occurrences
 
-[vimeo-video]
-[stream language="EN" videoId="489817230/bda8e696ff" default /]
-[stream language="RO" videoId="489817230/bda8e696ff"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/RO/interactive-js-fundamentals-text-processing-21-solution-count-string-occurences-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Count String Occurrences" taskId="js-fundamentals-pt2-text-processing-Count-String-Occurrences" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
