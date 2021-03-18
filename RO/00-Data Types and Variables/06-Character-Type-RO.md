@@ -66,7 +66,7 @@ Tabelul Unicode este separat în diferite părți și aproape toate limbile vii 
 
 
 [slide hideTitle]
-# Problemă cu soluție: Reversed Chars
+# Problemă cu Soluție: Reversed Chars
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-41-problem-and-solution-reversed-chars-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -77,15 +77,15 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
+## Descriere
 Creați un program care acceptă o intrare de 3 linii de caractere și le imprimă în ordine inversată și cu spații între ele. 
-## Exemple
+## Exemplu
 |**Intrare**|**Ieșire**|
 |-----|------|
 | A | C B A |
@@ -167,7 +167,7 @@ a
 [/slide]
 
 [slide hideTitle]
-# Caractere evadate
+# Caractere Evadate
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-43-escaping-characters-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -218,7 +218,7 @@ System.out.println(txt);
 [/slide]
 
 [slide hideTitle]
-# Caractere literale
+# Caractere Literale
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-44-character-literals-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

@@ -1,8 +1,8 @@
-# Conversia tipului
+# Conversia Tipului
 
 [slide hideTitle]
 
-# Conversia tipului
+# Conversia Tipului
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-30-31-type-conversion-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -24,9 +24,9 @@ System.out.println(myInt);
 System.out.println(myDouble);
 ```
 
-Aici tipul inferior de date \(având o dimensiune mai mică\) este convertit în tipul de date mai mare \(având o dimensiune mai mare\). 
+Aici tipul inferior de date \(având o dimensiune mai mică\) este convertit în tipul de date mai mare \(având o dimensiune mai mare\)
 
-Prin urmare, nu există pierderi de date. Acesta este motivul pentru care acest tip de conversie are loc automat.
+Prin urmare, nu există pierderi de date. Acesta este motivul pentru care acest tip de conversie are loc automat
 
 - Casting restrâns \(manual\) - convertirea unui tip mai mare într-un tip de dimensiune mai mică
 
@@ -45,7 +45,7 @@ Prin urmare, există pierderea de date. Acesta este motivul pentru care acest ti
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Centuries to Minutes
+# Problemă cu Soluție: Centuries to Minutes
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-33-problem-and-solution-centuries-to-minutes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Centuries to Minutes" taskId="java-fund-1-data-types-lab-centuries-to-minutes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -141,7 +141,7 @@ Intrarea va fi de tipul **int**.
 
 
 [slide hideTitle]
-# Problemă cu soluție: Chars to String
+# Problemă cu Soluție: Chars to String
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-problem-and-solution-chars-to-string-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -154,7 +154,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -273,7 +273,7 @@ b
 
 
 [slide hideTitle]
-# Problemă cu soluție: Lower or Upper
+# Problemă cu Soluție: Lower or Upper
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-problem-and-solution-lower-or-upper-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Lower or Upper" taskId="java-fund-1-data-types-lab-lower-or-upper" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -283,7 +283,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```

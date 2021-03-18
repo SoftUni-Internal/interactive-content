@@ -1,8 +1,8 @@
-# Data types
+# Data Types
 
 [slide hideTitle]
 
-# How does a computer work ?
+# How does a Computer Work ?
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-3-4-How-computers-work-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -116,7 +116,7 @@ String myText = "Hello";     // String
 
 * **Value**: every variable holds a value
 
-Non-primitive data types hold references to the location of a value in memory
+Non-primitive data types hold references to the location of a value in memory.
 
 [/slide]
 
@@ -198,17 +198,17 @@ It is a good practice to create a variable as **late as possible** (shorter span
 
 ```java
 static void main(String[] args) {
-  String outer = "I'm inside the main()";
+    String outer = "I'm inside the main()";
 
-  //beginning of "outer" variable span
-  for (int i = 0; i < 10; i++) {
-    String inner = "I'm inside the loop";
-    System.out.println(inner);
-  }
-   //end of "outer" variable span
+    //beginning of "outer" variable span
+    for (int i = 0; i < 10; i++) {
+        String inner = "I'm inside the loop";
+        System.out.println(inner);
+    }
+    //end of "outer" variable span
 
-  System.out.println(outer);
-  //System.out.println(inner); Error
+    System.out.println(outer);
+    //System.out.println(inner); Error
 }
 ```
 [/slide]
@@ -226,18 +226,18 @@ We can reduce the **outer** variable span using the previous example:
 
 ```java
 static void main(String[] args) {
-  
-  for (int i = 0; i < 10; i++) {
-    String inner = "I'm inside the loop";
-    System.out.println(inner);
-  }
 
-  //beginning of "outer" variable span
-  String outer = "I'm inside the main()";
-  System.out.println(outer);
-  //end of "outer" variable span
+    for (int i = 0; i < 10; i++) {
+        String inner = "I'm inside the loop";
+        System.out.println(inner);
+    }
 
-  //System.out.println(inner); Error
+    //beginning of "outer" variable span
+    String outer = "I'm inside the main()";
+    System.out.println(outer);
+    //end of "outer" variable span
+
+    //System.out.println(inner); Error
 }
 ```
 

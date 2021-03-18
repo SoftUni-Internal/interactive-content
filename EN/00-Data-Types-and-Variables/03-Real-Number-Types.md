@@ -27,7 +27,9 @@ These can be either **float** or **double**:
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-20-floating-point-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- **Float**: used for to store fractional numbers. Note that you should suffix the value with an `f`:
+- **Float**: used for to store fractional numbers. 
+
+Note that you should suffix the value with an `f`:
 
 ```java live
 float myNum = 5.75f;
@@ -229,7 +231,7 @@ System.out.printf("a+b=%f \nsum=%f \nequal=%b", a + b, sum, (a + b == sum));
 double num = 0;
 
 for (int i = 0; i < 10000; i++) {
-num += 0.0001;
+    num += 0.0001;
 }
 
 System.out.println(num);

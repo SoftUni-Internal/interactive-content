@@ -5,7 +5,9 @@
 
 **Integer types** store whole numbers, positive or negative (such as 123 or -456), without decimals.
 
-**Byte**, **short**, **int**, and **long** are all different integer data types. Choosing which one to use depends on the numeric value it will need to store.
+**Byte**, **short**, **int**, and **long** are all different integer data types. 
+
+Choosing which one to use depends on the numeric value it will need to store.
 
 |Type| Default Value | Min Value | Max Value| Size |
 |-----|------|-----|------|-----|
@@ -85,8 +87,8 @@ Example:
 ```java
 byte counter = 0;
 for (int i = 0; i < 130; i++) {
-  counter++;
-  System.out.println(counter);
+    counter++;
+    System.out.println(counter);
 }
 
 //1

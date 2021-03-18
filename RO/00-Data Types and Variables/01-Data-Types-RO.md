@@ -1,7 +1,7 @@
-# Tipuri de date
+# Tipuri de Date
 
 [slide hideTitle]
-# Cum funcționează calculatorul?
+# Cum Funcționează Calculatorul?
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-3-4-How-computers-work-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -23,7 +23,7 @@ O variabilă este un nume dat unei locații de memorie.
 
 Este unitatea de bază de stocare într-un program.
 
-* Valoarea stocată într-o variabilă poate fi modificată în timpul executării programului.
+* Valoarea stocată într-o variabilă poate fi modificată în timpul executării programului
 
 * O variabilă este doar un nume dat unei locații de memorie, toate operațiunile efectuate asupra variabilei efectează locația de memorie
 
@@ -57,7 +57,7 @@ Vă puteți gândi la variabile ca la borcane de bucătărie.
 
 Imaginați-vă că în fiecare borcan puteți stoca doar una dintre următoarele: sare, zahăr sau cafea.
 
-[image assetsSrc = "Variables-real-life-example.png" /]
+[image assetsSrc="Variables-real-life-example.png" /]
 
 În programare, este aproape la fel.
 
@@ -68,7 +68,7 @@ Folosim variabilele care acționează ca borcane pentru date diferite, cum ar fi
 [/slide]
 
 [slide hideTitle]
-# Ce este un tip de date?
+# Ce Este un Tip de Date?
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-6-What-is-data-type-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -179,7 +179,7 @@ public static void main(String[] args) {
 [/slide]
 
 [slide hideTitle]
-# Intervalul variabilei
+# Intervalul Variabilei
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-10-variable-span-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -189,17 +189,17 @@ Este o bună practică să creați o variabilă cât mai târziu (de exemplu, o 
 
 ```java
 static void main(String[] args) {
-  String outer = "I'm inside the main()";
+    String outer = "I'm inside the main()";
 
-  //beginning of "outer" variable span
-  for (int i = 0; i < 10; i++) {
-    String inner = "I'm inside the loop";
-    System.out.println(inner);
-  }
-   //end of "outer" variable span
+    //beginning of "outer" variable span
+    for (int i = 0; i < 10; i++) {
+        String inner = "I'm inside the loop";
+        System.out.println(inner);
+    }
+    //end of "outer" variable span
 
-  System.out.println(outer);
-  //System.out.println(inner); Error
+    System.out.println(outer);
+    //System.out.println(inner); Error
 }
 ```
 [/slide]
@@ -217,18 +217,18 @@ Putem reduce intervalul variabilei **exterioare** după cum urmează:
 
 ```java
 static void main(String[] args) {
-  
-  for (int i = 0; i < 10; i++) {
-    String inner = "I'm inside the loop";
-    System.out.println(inner);
-  }
 
-  //beginning of "outer" variable span
-  String outer = "I'm inside the main()";
-  System.out.println(outer);
-  //end of "outer" variable span
+    for (int i = 0; i < 10; i++) {
+        String inner = "I'm inside the loop";
+        System.out.println(inner);
+    }
 
-  //System.out.println(inner); Error
+    //beginning of "outer" variable span
+    String outer = "I'm inside the main()";
+    System.out.println(outer);
+    //end of "outer" variable span
+
+    //System.out.println(inner); Error
 }
 ```
 [/slide]

@@ -1,7 +1,7 @@
 # Tipul Boolean
 [slide hideTitle]
 
-# Tipul de date boolean
+# Tipul de Date Boolean
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-34-35-boolean-type-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Un tip de date boolean este declarat prin cuvântul cheie **boolean** cu două opțiuni de valoare: **true** sau **false**:
@@ -14,17 +14,17 @@ Un tip de date boolean este declarat prin cuvântul cheie **boolean** cu două o
  boolean secondBoolean = false;
 
  if (firstNumber < secondNumber) {
-  System.out.println(firstBoolean);
+     System.out.println(firstBoolean);
  } else {
-  System.out.println(secondBoolean);
- }       
+     System.out.println(secondBoolean);
+ }    
 ```
 
 
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Special Numbers
+# Problemă cu Soluție: Special Numbers
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-36-problem-and-solution-special-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Special Numbers" taskId="java-fund-1-data-types-lab-special-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -34,7 +34,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -45,6 +45,7 @@ public class Main {
 Un **număr** este **special** când **suma cifrelor sale este 5, 7 sau 11**.
 
 Creați un program pentru a citi un număr întreg **n**. 
+
 Imprimați numărul pentru toate numerele din intervalul **1 ... n** și dacă este special sau nu **(True / False)** în fomratul arătat maijos.
 
 ## Exemplu

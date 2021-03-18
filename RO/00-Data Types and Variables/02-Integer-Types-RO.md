@@ -1,8 +1,8 @@
 [slide hideTitle]
-# Tipuri întregi
+# Tipuri Întregi
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-12-13-Integer-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Tipurile întregi**stochează numere întregi, pozitive sau negative (cum ar fi 123 sau -456), fără zecimale.
+**Tipurile întregi** stochează numere întregi, pozitive sau negative (cum ar fi 123 sau -456), fără zecimale.
 
 Tipurile valide sunt **byte**, **short**, **int** și **long**, tipul pe care ar trebui să îl utilizați, depinde de valoarea numerică.
 
@@ -84,8 +84,8 @@ Aruncați o privire la exemplul de mai jos.
 ```java
 byte counter = 0;
 for (int i = 0; i < 130; i++) {
-  counter++;
-  System.out.println(counter);
+    counter++;
+    System.out.println(counter);
 }
 
 //1
@@ -114,9 +114,9 @@ Literele întregi sunt numere, care nu au o parte în virgulă mobilă.
 
 Ele pot fi reprezentate în câteva moduri diferite, care nu sunt la fel de intuitive:
 
-- ** Litere întregi hexazecimale ** - valori care încep cu ** 0x ** și ** OX ** - ** 0xFE **, ** 0xA8F1 **, ** 0xFFFFFFFF **
+- **Litere întregi hexazecimale** - valori care încep cu **0x** și **OX** - **0xFE**, **0xA8F1**, **0xFFFFFFFF**
 
-- ** Litere întregi lungi ** - valori precedate de litera ** L ** sau ** l ** - ** 9876543L **, ** 0L **```java live
+- **Litere întregi lungi** - valori precedate de litera **L** sau **l** - **9876543L**, **0L**
 
 ```java live
 int hexadecimal = 0xA8F1; // 43249
@@ -129,7 +129,7 @@ System.out.println("long: ", number);
 
 
 [slide hideTitle]
-# Problemă cu soluție: Convert Meters to Kilometers
+# Problemă cu Soluție: Convert Meters to Kilometers
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-17-problem-and-solution-convert-meters-to-kilometers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

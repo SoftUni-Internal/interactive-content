@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -102,7 +102,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -173,7 +173,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 
@@ -257,7 +257,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -385,7 +385,7 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-      // Write your code here
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -393,7 +393,7 @@ public class Main {
 [task-description]
 
 ## Descriere
-Găsiți online mai multe informații despre ASCII www.ascii-code.com (American Standard Code for Information Interchange) și creați un program care **tipărește o parte din tabelul ASCII**de caractere pe consolă.
+Găsiți online mai multe informații despre ASCII www.ascii-code.com (American Standard Code for Information Interchange) și creați un program care **tipărește o parte din tabelul ASCII** de caractere pe consolă.
 
 Pe prima linie de intrare veți primi **indicele char** cu care ar trebui să **începeți** 
 Pe a doua linie - indexul **ultimului** caracter pe care ar trebui să-l imprimați.
@@ -456,7 +456,7 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-      // Write your code here
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -845,7 +845,7 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-      // Write your code here
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -959,7 +959,7 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-      // Write your code here
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1079,7 +1079,7 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-      // Write your code here
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1087,21 +1087,19 @@ public class Main {
 [task-description]
 
 ## Descriere
-Creați un program care ** calculează cantitatea totală de condimente ** care poate fi extrasă dintr-o sursă.
+Creați un program care **calculează cantitatea totală de condimente** care poate fi extrasă dintr-o sursă.
 
-Sursa are un randament ** de pornire **, care indică cât de mult condiment poate fi extras în ** prima zi **.
+Sursa are un randament **de pornire**, care indică cât de mult condiment poate fi extras în **prima zi**.
 
-După ce  sursa a fost exploatată  pentru o zi, randamentul ei scade cu 10, ceea ce înseamnă că în a doua zi va produce cu 10 condimente mai puțin ** decât în prima zi, în a treia zi cu 10 condimente mai puțin decât în a doua ** , și ** și așa mai departe ** (vezi exemple).
+După ce  sursa a fost exploatată  pentru o zi, randamentul ei scade cu 10, ceea ce înseamnă că în a doua zi va produce cu 10 condimente mai puțin **decât în prima zi, în a treia zi cu 10 condimente mai puțin decât în a doua** , și **și așa mai departe** (vezi exemple).
 
-O sursă este considerată ** profitabilă numai în timp ce randamentul acesteia este de cel puțin 100 ** - când se așteaptă mai puțin de 100 de condimente într-o zi, abandonați  sursa.
+O sursă este considerată **profitabilă numai în timp ce randamentul acesteia este de cel puțin 100** - când se așteaptă mai puțin de 100 de condimente într-o zi, abandonați  sursa.
 
-Echipajul minier ** consumă 26 de condimente în fiecare zi ** la ** sfârșitul turei ** și ** încă 26 ** după epuizarea minei.
+Echipajul minier **consumă 26 de condimente în fiecare zi** la **sfârșitul turei** și **încă 26** după epuizarea minei.
 
 Rețineți că lucrătorii nu pot consuma mai mult condiment decât există în depozit.
 
-Când operațiunea este finalizată, ** tipăriți pe consolă pe două linii separate ** câte ** zile ** a funcționat mina și ** cantitatea totală ** de condiment extras.
-
-
+Când operațiunea este finalizată, **tipăriți pe consolă pe două linii separate** câte **zile** a funcționat mina și **cantitatea totală** de condiment extras.
 
 ### Intrare
 Veți primi **un număr**, reprezentând randamentul **inițial** al sursei.
@@ -1117,15 +1115,15 @@ Imprimați **două rânduri separate** câte **zile a funcționat mina** și **c
 
 **Comentarii**
 
-- In prima zi extragem 111 de condimente și la sfârșitul turei, muncitorii consumă 26, lăsând 85. 
+- In prima zi extragem 111 de condimente și la sfârșitul turei, muncitorii consumă 26, lăsând 85
 
 Randamentul scade cu 10 până la 101
 
-- In a-2-a zi extragem 101 de condimente, muncitorii consumă 26, lăsând 75. 
+- In a-2-a zi extragem 101 de condimente, muncitorii consumă 26, lăsând 75
 
 Totalul este 160 și randamentul a scăzut la 91
 
-- Deoarece randamentul așteptat este mai mic de 100, abandonăm sursa. 
+- Deoarece randamentul așteptat este mai mic de 100, abandonăm sursa
 
 Muncitorii iau încă 26, lăsând 134. Mina a funcționat 2 zile.
 
@@ -1181,7 +1179,7 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-      // Write your code here
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1215,7 +1213,9 @@ Poke Mon devine treptat **mai epuizat**.
 
 Folosiți împărțirea numerelor întregi.
 
-Dacă o împărțire nu este posibilă, NU ar trebui să o faceți. În schimb, ar trebui să continuați scăderea.
+Dacă o împărțire nu este posibilă, NU ar trebui să o faceți. 
+
+În schimb, ar trebui să continuați scăderea.
 
 După împărțire, ar trebui să **continuați scăderea** din N, până când devine mai mic decât M.
 
@@ -1316,7 +1316,7 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-      // Write your code here
+      // Scrieți codul dvs. aici
     }
 }
 ```

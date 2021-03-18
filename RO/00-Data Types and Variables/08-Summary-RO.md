@@ -47,7 +47,7 @@
   ## În lecția următoare, veți învăța:
    - Matrice
    - Citirea matricelor de pe consolă
-     - Bucla `For și `String.split()`
+     - bucla `For și `String.split()`
    - Imprimarea matricelor pe consolă
    - Bucla Foreach
 [/slide]

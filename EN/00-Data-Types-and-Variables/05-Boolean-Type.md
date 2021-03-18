@@ -15,10 +15,10 @@ The boolean data type is declared with the **boolean** keyword. It can hold only
  boolean secondBoolean = false;
 
  if (firstNumber < secondNumber) {
-  System.out.println(firstBoolean);
+     System.out.println(firstBoolean);
  } else {
-  System.out.println(secondBoolean);
- }       
+     System.out.println(secondBoolean);
+ }      
  ```
 [/slide]
 

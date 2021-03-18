@@ -49,7 +49,7 @@
 ## In the next lesson, you will learn:
 - Arrays
 - Reading Arrays from the console
-    - Using a `For-Loop` in the process and the `String.split()` method
+    - using a `For-Loop` in the process and the `String.split()` method
 - Printing Arrays to the console
 - The For-each Loop
 [/slide]

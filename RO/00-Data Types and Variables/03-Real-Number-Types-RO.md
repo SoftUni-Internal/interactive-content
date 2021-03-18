@@ -1,7 +1,7 @@
-# Tipul numerelor reale
+# Tipul Numerelor Reale
 
 [slide hideTitle]
-# Tipuri  în virulă mobilă
+# Tipuri în Virulă Mobilă
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-18-19-What-are-floating-point-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -9,9 +9,9 @@ Ar trebui să utilizați un **tip cu virgulă mobilă** ori de câte ori aveți 
 
 Tipurile cu virgulă mobilă, de asemenea:
 
-- Au autonomie și precizie în funcție de memoria utilizată.
-- Uneori se comportă anormal în calcule.
-- Poate deține valori foarte mici și foarte mari, cum ar fi **0.00000000000001** și **10000000000000000000000000000.0**.
+- Au autonomie și precizie în funcție de memoria utilizată
+- Uneori se comportă anormal în calcule
+- Poate deține valori foarte mici și foarte mari, cum ar fi **0.00000000000001** și **10000000000000000000000000000.0**
 
 Tipurile valide sunt **float** și **double**:
 
@@ -23,17 +23,20 @@ Tipurile valide sunt **float** și **double**:
 [/slide]
 
 [slide hideTitle]
-# Numere în virgulă mobilă
+# Numere în Virgulă Mobilă
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-20-floating-point-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- **Float**: tipul de date poate stoca numere fracționare. Rețineți că ar trebui să încheiați valoarea cu un `f`:
+- **Float**: tipul de date poate stoca numere fracționare. 
+
+Rețineți că ar trebui să încheiați valoarea cu un `f`:
 
 ```java live
 float myNum = 5.75f;
 System.out.println(myNum);
+```
 
-Valoarea **implicită ** a ** float ** este ** 0,0F **.
+Valoarea **implicită** a **float** este **0,0F**.
 
 - **Double**: în acest curs când avem nevoie de numere în virgulă mobilă, de cele mai multe ori vom folosi **double**
 
@@ -66,7 +69,7 @@ System.out.println("Double PI is: " + doublePI);
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Pounds to Dollars
+# Problemă cu Soluție: Pounds to Dollars
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-22-problem-and-solution-pounds-to-dollars-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Problem: Pounds to Dollars" taskId="java-fund-1-data-types-lab-pounds-to-dollars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -158,13 +161,13 @@ Scrieți un program care convertește lire sterline în dolari SUA formatat în 
 
 
 [slide hideTitle]
-# Notatie stiintifica
+# Notatie Stiintifica
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-23-scientific-notation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Când lucrați cu un număr mare, notația științifică este extrem de utilă.
 
-În notația științifică, litera `E` reprezintă `10 la puterea lui E`. 
+În notația științifică, litera `E` reprezintă `10 la puterea lui E`.
 
 De exemplu, `1.51E + 1` înseamnă același lucru ca și `1.51x10 ^ 1`.
 
@@ -226,7 +229,7 @@ System.out.printf("a+b=%f \nsum=%f \nequal=%b", a + b, sum, (a + b == sum));
 double num = 0;
 
 for (int i = 0; i < 10000; i++) {
-num += 0.0001;
+    num += 0.0001;
 }
 
 System.out.println(num);

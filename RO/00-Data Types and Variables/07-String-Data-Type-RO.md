@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Tipul de date Șir
+# Tipul de Date Șir
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-45-48-string-data-type-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Șirurile sunt utilizate pentru stocarea textului.
@@ -16,6 +16,7 @@ Creați o variabilă de tip **Șir** și atribuiți-i o valoare:
 String greeting = "Hello";
 System.out.println(greeting);
 ```
+
 ## Formatarea șirului
 
 ```Java live
@@ -36,10 +37,13 @@ String firstName = "John";
 String lastName = "Smith";
 String fullName = String.format("%s %s", firstName, lastName);
 System.out.printf("Your full name is %s.", fullName);
+```
 
 ## Concatenarea șirului
 
-Operatorul `+` poate fi folosit între șiruri pentru a le combina. Aceasta se numește concatenare:
+Operatorul `+` poate fi folosit între șiruri pentru a le combina. 
+
+Aceasta se numește concatenare:
 
 ```Java live
 String firstName = "John";
@@ -53,7 +57,7 @@ System.out.println(firstName + " " + lastName);
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Concat Names
+# Problemă cu Soluție: Concat Names
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-49-problem-and-solution-concat-names-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -64,7 +68,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -75,7 +79,7 @@ Citiți două nume și un delimitator.
 
 Imprimați numele alăturate de delimitator.
 
-## Exemple
+## Exemplu
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | John | John->Smith |
