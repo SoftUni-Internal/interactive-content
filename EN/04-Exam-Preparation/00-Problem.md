@@ -22,19 +22,19 @@ public class Main {
 [task-description]
 # Description
 
-There are **3 employees working** on the reception all day long.
+There are **3 employees working** on the reception ат SoftUni full time.
 
-Each of them can handle a **different number of people per hour**.
+Each of them can process a **different number of customer help requests and questions per hour**.
 
-Your task is to **calculate how much time it will take to answer all of the questions** of a given number of people.
+Your task is to **calculate how much time it will take them to answer a certain amount of questions** .
 
-First, you will receive **3 lines with integers**, representing the **count of people that each of the employees can help per hour**. 
+First, you will receive **3 lines with integers**, representing the **number of people that each of the employees can help per hour**. 
 
-On the next line, you will receive **the total amount of people** as a single integer. 
+On the next line, you will receive **the total amount of people** as a single integer, each of them is cosidered as a separate request to be processed. 
 
 **Every fourth hour, the employees will take a one-hour break** before they start working again. 
 
-**Calculate the time needed to answer the questions of all the people** and **print the result in the following format**:
+**Calculate the time needed to answer the questions** and **print the result in the following format**:
 
 "**Time needed:** \{**time**\}**h.**"
 
@@ -61,8 +61,8 @@ On the next line, you will receive **the total amount of people** as a single in
 ## Comment
 
 - All of the employees can answer the questions of 15 people per hour
-- After the first hour, the questions of 5 people remain to answer
-- All people's questions will have been answered within the second hour
+- After the first hour, the questions of 5 people remain unanswered
+- Everyone's questions will be answered within the second hour
 
 ## Example Two
 | **Input** | **Output** |
@@ -74,12 +74,12 @@ On the next line, you will receive **the total amount of people** as a single in
 
 ## Comment
 
-- All the employees together can answer the questions of 6 people per hour
+- All front desk workers combined can answer the questions of 6 people per hour
 - In the first 3 hours, they have answered the questions of 18 people (6 \* 3)
-- Then they take a break for an hour
-- After the next 3 hours, they have serviced 36 people (18 + 6 \* 3)
-- After their one-hour break, only 9 people's questions remain
-- Everyone's questions will have been answered on the 10th hour
+- Then they take an hour break
+- In the next 3 hours, they have serviced 36 people (18 + 6 \* 3)
+- After their one-hour break, only 9 unanswered questions remain
+- Everyone's questions will be answered on the 10th hour
 
 ## Example Three
 | **Input** | **Output** |
