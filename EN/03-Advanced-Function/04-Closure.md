@@ -22,10 +22,10 @@ Let us take a look at a simple example:
 
 ```js
 function outerFunc() {
-    var numTwo = 3;
+    var b = 3;
 
     function innerFunc() {
-        var numOne = 5;
+        var a = 5;
         console.log(a + b);
     }
     return innerFunc;
