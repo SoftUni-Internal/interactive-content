@@ -18,7 +18,7 @@ If JDK is still not configured on your system, you should configure it:
 
 [image assetsSrc="intro-to-programming-4.png" /]
 
-Click `[New]` and locate your JDK installation:
+Click `[edit]` and locate your JDK installation:
 
 [image assetsSrc="intro-to-programming-5.png" /]
 [/slide]
