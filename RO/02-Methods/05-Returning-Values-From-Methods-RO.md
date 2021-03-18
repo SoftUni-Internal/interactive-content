@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Instrucțiunea de returnare
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-27-28-The-return-statement-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-27-28-The-return-statement-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Cuvântul-cheie `return` termină execuția unei metode, și poate fi folosit pentru a returna o valoare de la o metodă.
 
@@ -23,7 +23,7 @@ public class MyClass {
 [slide hideTitle]
 # Folosirea valorilor de returnare
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-29-Using-the-return-values-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-29-Using-the-return-values-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Valorile de returnare pot fi:
 
@@ -45,7 +45,7 @@ int age = Integer.parseInt(sc.nextLine());
 
 [slide hideTitle]
 # Problemă cu soluție: Calculate Rectangle Area
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-30-problem-and-solution-calculate-rectangle-area-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-30-problem-and-solution-calculate-rectangle-area-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Calculate Rectangle Area" taskId="java-fund-1-Methods-lab-Calculate-Rectangle-Area" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -144,6 +144,9 @@ Creați o metodă care calculează și afișează aria unui dreptunghi cu lungim
 
 [slide hideTitle]
 # Problemă cu soluție: Repeat String
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-33-problem-and-solution-repeat-string-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Repeat String" taskId="java-fund-1-Methods-lab-Repeat-String" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -247,6 +250,9 @@ ivanivan
 
 [slide hideTitle]
 # Problemă cu soluție: Math Power
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-34-problem-and-solution-math-power-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Math Power" taskId="java-fund-1-Methods-lab-Math-Power" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -398,7 +404,7 @@ Folosiți **BigDecimal**.
 [slide hideTitle]
 # Problemă cu soluție: Orders
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-problem-and-solution-orders-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-problem-and-solution-orders-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Orders" taskId="java-fund-1-Methods-lab-Orders" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

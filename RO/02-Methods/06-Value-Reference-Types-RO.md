@@ -3,7 +3,7 @@
 [slide hideTitle]
 
 # Tipuri de valori
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-38-Value-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-38-Value-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Variabila de tipul **valoare** \(date primitive\) conține o instanță a tipului care conține direct valoarea lor. 
 
@@ -30,6 +30,8 @@ boolean result = true; //require 1 byte of memory
 
 [slide hideTitle]
 # Tipurile de referință
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-39-reference-types-and-demos-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Tipul de referință** al variabilei ține o referință \(indicator / adresă de memorie\) a valorii în sine.
 
@@ -150,6 +152,9 @@ Orice operație care ar schimba un element din matricea din interiorul metodei v
 
 [slide hideTitle]
 # Problemă cu soluție: Math Operations
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-problem-and-solution-math-operations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Math Operations" taskId="java-fund-1-Methods-lab-Math-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

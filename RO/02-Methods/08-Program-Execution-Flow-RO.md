@@ -4,7 +4,7 @@
 
 # Executarea programului
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-52-Program-Execution-Call-stack-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-50-51-Program-Execution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 Fluxul programului în Java este controlat printr-o parte a memoriei numită ** stiva de apel **.
@@ -57,6 +57,8 @@ Programul trece apoi pe câteva linii până unde se găsește declarația metod
 [slide hideTitle]
 
 # Stiva de apel
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-52-Program-Execution-Call-stack-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Stiva conține ** cadre de stivă ** pentru fiecare apel de metodă. Aceste cadre de stivă stochează informații despre:
 
