@@ -67,17 +67,17 @@ Check if the given **personalId** corresponds to a customer in the customers' ar
 
 Otherwise, return all the customer information in the following format:
 
-
-"**Bank name:** \{**bankName**\}
-**Customer name:** \{**firstName**\} \{**lastName**\}
-**Customer ID:** \{**personalId**\}
-**Total Money:** \{**totalMoney**\}$
-**Transactions:**
-**n.** \{**firstName**\} \{**lastName**\} **made deposit of** \{**amount**\}\$!
+```
+Bank name: {bankName}
+Customer name: {firstName} {lastName}
+Customer ID: {personalId}
+Total Money: {totalMoney}$
+Transactions:
+n. {firstName} {lastName} made deposit of {amount}$!
 ...
-1. \{**firstName**\} \{**lastName**\} **withdrew** \{**amount**\}\$!
-2. \{**firstName**\} \{**lastName**\} **made deposit of** \{**amount**\}\$!"
-
+1. {firstName} {lastName} withdrew {amount}$!
+2. {firstName} {lastName} made deposit of {amount}$!
+```
 
 The **transaction information** contains information about:
 
@@ -98,10 +98,10 @@ This is an example of how the code is **intended to be used**:
 ```js
 let bank = new Bank("SoftUni Bank");
 
-console.log(bank.newCustomer({firstName: "Svetlin", 
-    lastName: "Nakov", personalId: 6233267}));
-console.log(bank.newCustomer({firstName: "Mihaela", 
-    lastName: "Mileva", personalId: 4151596}));
+console.log(bank.newCustomer({firstName: "John", 
+    lastName: "Miller", personalId: 6233267}));
+console.log(bank.newCustomer({firstName: "Michelle", 
+    lastName: "Davis", personalId: 4151596}));
 
 bank.depositMoney(6233267, 250);
 console.log(bank.depositMoney(6233267, 250));
@@ -116,18 +116,18 @@ console.log(bank.customerInfo(6233267));
 **Corresponding output**
 
 ```
-{ firstName: "Svetlin", lastName: "Nakov", personalId: 6233267 } 
-{ firstName: "Mihaela", lastName: "Mileva", personalId: 4151596 }
+{ firstName: "John", lastName: "Miller", personalId: 6233267 } 
+{ firstName: "Michelle", lastName: "Davis", personalId: 4151596 }
 500$
 375$
 Bank name: SoftUni Bank
-Customer name: Svetlin Nakov
+Customer name: John Miller
 Customer ID: 6233267
 Total Money: 375$
 Transactions:
-3. Svetlin Nakov withdrew 125$!
-2. Svetlin Nakov made adepostit of 250$!
-1. Svetlin Nakov made a depostit of 250$!
+3. John Miller withdrew 125$!
+2. John Miller made adepostit of 250$!
+1. John Miller made a depostit of 250$!
 
 ```
 
@@ -142,11 +142,11 @@ let name = 'SoftUni Bank';
 let bank = new Bank(name);
 
 
-let customer1 = bank.newCustomer({ firstName: 'Svetlin', lastName: 'Nakov', personalId: 1111111 });
-expect(customer1.firstName).to.be.equal('Svetlin');
+let customer1 = bank.newCustomer({ firstName: 'John', lastName: 'Miller', personalId: 1111111 });
+expect(customer1.firstName).to.be.equal('John');
 
-let customer2 = bank.newCustomer({ firstName: 'Mihaela', lastName: 'Mileva', personalId: 3333333 });
-expect(customer2.lastName).to.be.equal('Mileva');
+let customer2 = bank.newCustomer({ firstName: 'Michelle', lastName: 'Davis', personalId: 3333333 });
+expect(customer2.lastName).to.be.equal('Davis');
 expect(customer2.personalId).to.be.equal(3333333);
 
 let totalMoney1 = bank.depositMoney(1111111, 250);
@@ -163,13 +163,13 @@ expect(totalMoney4).to.equal('375$', 'Function withdrawMoney returns incorrect t
 
 let output = bank.customerInfo(1111111);
 let expectedOutput = \`Bank name: SoftUni Bank
-Customer name: Svetlin Nakov
+Customer name: John Miller
 Customer ID: 1111111
 Total Money: 375$
 Transactions:
-3\. Svetlin Nakov withdrew 125$!
-2\. Svetlin Nakov made deposit of 250$!
-1\. Svetlin Nakov made deposit of 250$!\`;
+3\. John Miller withdrew 125$!
+2\. John Miller made deposit of 250$!
+1\. John Miller made deposit of 250$!\`;
 expect(expectedOutput).to.be.equal(output, 'Incorrect output');
 
 [/input]
@@ -185,9 +185,9 @@ let name = 'SoftUni Bank';
 let bank = new Bank(name);
 
 
-bank.newCustomer(\{ firstName: 'Svetlin', lastName: 'Nakov', personalId: 1111111 \});
-let sameCustomer = () =\> bank.newCustomer(\{ firstName: 'Svetlin', lastName: 'Nakov', personalId: 1111111 \});
-expect(sameCustomer).to.throw(Error, 'Svetlin Nakov is already our customer!');
+bank.newCustomer(\{ firstName: 'John', lastName: 'Miller', personalId: 1111111 \});
+let sameCustomer = () =\> bank.newCustomer(\{ firstName: 'John', lastName: 'Miller', personalId: 1111111 \});
+expect(sameCustomer).to.throw(Error, 'John Miller is already our customer!');
 [/input]
 [output]
 yes
