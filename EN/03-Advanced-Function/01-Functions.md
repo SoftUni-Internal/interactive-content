@@ -46,12 +46,12 @@ Hence, they can be returned by another function:
 
 ```js live
 function helloWorld() {
-    return function() {
+    return function greet() {
         console.log('Hello, world!');
     };
 }
 
-helloWorld();
+console.log(helloWorld());
 ```
 
 In short, first-class functions **support all the operations** available to any JavaScript primitive or object.
@@ -218,11 +218,19 @@ function add(a, b) {
   return a + b;
 }
 
-let letOne = add(5, 7);
-let letTwo = 12;
+function mult(a, b) {
+  return a * b;
+}
 
-console.log(letOne);
-console.log(letTwo);
+let multResult = mult(5, 7);
+
+let x = add(2, mult(5, 7)); // 37
+
+// Replacing mult(5, 7) with its return value 
+let y = add(2, multResult); // 37
+
+console.log(x);
+console.log(y);
 ```
 
 A **referentially transparent** function **only depends on its input**.
