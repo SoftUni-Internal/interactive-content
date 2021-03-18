@@ -155,7 +155,7 @@ public class Main {
 [task-description]
 ## Description
 
-Write a program, which calculates and prints the value of the following expressions:
+Write a program that calculates and prints the value of the following expressions:
 
 * 5 + 3 \* 2
 * 4 \* (2 + 3)
@@ -207,7 +207,7 @@ public class Main {
 
 Write a program, which:
 
-Prints a square of 7 * 7 stars like this:
+Prints a square of 7 * 7 stars like this one:
 ```
 * * * * * * *
 * * * * * * *
@@ -266,12 +266,10 @@ public class Main {
 [task-description]
 ## Description
 
-Write a program, which:
-* Calculates the area of the rectangle
-* Sides of the rectangle are 5 and 10
+Write a program that calculates the area of а rectangle with sides 5 and 10.
 
 ## Output
-* Print the the calculated area
+* Print the calculated area
 [/task-description]
 [code-io /]
 [tests]
@@ -310,7 +308,7 @@ public class Main {
 [task-description]
 ## Description
 
-Write a program to print numbers from 1 to 10 (inclsuive).
+Write a program which prints the numbers from 1 to 10 (inclsuive).
 
 ## Output
 
@@ -371,7 +369,7 @@ public class Main {
 ## Description
 Write a program, which **prints a triangle** of stars. 
 
-You print one asteriks symbol \(\*\) for the first row, two asteriks symbols for the second row and so on for five rows. 
+Print one asteriks symbol \(\*\) for the first row, two asteriks symbols for the second row and so on.
 
 ## Output
 ```
