@@ -3,11 +3,9 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-3-4-associative-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-An associative array stores the set of elements in the form of **Key-Value** pairs.
+Associative arrays are collections that hold parameters in **Key** and **Value** pairs and are indexed by **Keys**. 
 
-It is a collection of **unique keys** and collections of values where **each key is associated with one value**.
-
-**The Key** represents **the index** of the map. The **Keys** and the **Values** are **objects**, and each pair is known as **an entry**.
+**The Key** represents **the index** of the map. The **Keys** and **Values** are **objects** and each pair is known as **an entry**.
 
 One object is used as a **Key** (index) to another object (**Value**). 
 
@@ -15,15 +13,15 @@ They **can not** be **primitive types** like **int**, **double**, **boolean**, e
 
 They **must be specified** with the equivalent **wrapper class**: **Integer**, **Double**, **Boolean**, etc. 
 
-The Key and the Value could be of the **same type**, or they can be of **different types**, depending on the case.
+**The types of Keys and the Values** can be the **same or different**, depends on the case.
 
 In Java, the associative arrays are called **Maps**. 
 
-A Map **cannot contain duplicate Keys**. Each **Key** can be associated with only one **Value**. 
+A Map **cannot contain duplicate Keys**. Each **Key** can be associated to only one **Value**. 
 
-The Values of **different Keys** can be duplicated. 
+**The Values of different Keys can be duplicated**. 
 
-**One Key** can only store **one Value** in the same **Map instance**. 
+**One Key** can only store **one Value** in the **same Map instance**. 
 
 Example:
 
@@ -54,29 +52,31 @@ The most used **Map implementations** are `HashMap`, `LinkedHashMap` and `TreeMa
 
 The **order** of a Map depends on the **chosen collection implementation**. 
 
-Some Map implementations, like the **TreeMap** class, **guarantee a specific order**.
+Some **Map** implementations, like the `TreeMap` class, **guarantee a specific order**.
 
-Others, like the **HashMap** class, **do not**. 
+Others, like the `HashMap` class, **do not**. 
 
-The **HashMap** and the **LinkedHashMap** classes allow one `null` value for the **Key** and multiple `null` values for the **Values**
+The **HashMap** and the **LinkedHashMap** classes allow one `null` value for the **Key** and multiple `null` values for the **Values**.
 
 The **TreeMap** class does not allow any `null` values.
 
 ## HashMap < Key, Value >
 
-The elements, which are stored internally in the `HashMap` class, **do not maintain any order**. 
+The elements that are stored internally in the `HashMap` class **do not maintain any order**. 
 
-It is typically used when you will not be performing index-based operations on the stored data.
+The **HashMap** is typically used when we will not be performing index-based operations on the stored data.
 
 ## LinkedHashMap < Key, Value >
 
-The **LinkedHashMap** class extends the **HashMap** class but **maintains a specific order**. 
+The **LinkedHashMap** class extends the **HashMap** class, but **maintains a specific order**. 
 
-The Keys are kept **in the order of addition**.
+The **Keys** are kept **in the order of their addition**.
 
 ## TreeMap < Key, Value >
 
-The **TreeMap** class **maintains an ascending order** of the pairs based on the **Keys**.
+The **TreeMap** class sorts all its entries according to their natural ordering.
+
+For integers, this would mean ascending order, and for strings, alphabetical order.
 
 [/slide]
 
