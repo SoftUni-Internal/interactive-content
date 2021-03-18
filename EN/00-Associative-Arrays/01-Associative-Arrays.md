@@ -652,17 +652,17 @@ public class Main {
 [task-description]
 ## Description
 
-You will be given a string, which contains words, separated by a **single space**.
+You will be given a **string** that will contain few words, separated by a **single space**.
 
-Create a program that finds all words in the string, that are **repeated an odd number of times** (case insensitive)
+Create a program that finds all words that are **repeated an odd number of times** in the string. (case insensitive)
 
 ### Input / Constraints
 
-Words are given in a **single line**, **space-separated**.
+All words will be received on a **single line**, separated by a single space.
 
 ### Output
 
-Print the result elements in **lowercase in their order of appearance separated by comma**.
+Print out the elements that fulfill the specified condition **in lowercase in the order of their appearance**, separated by a comma.
 
 ## Examples
 | **Input** | **Output** |
