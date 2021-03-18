@@ -93,7 +93,7 @@ An **exception** occurs when a function is **unable to execute its task successf
 let arr = new Array(-1); // Invalid array length
 ```
 
-Initializing an array with a **length of -1** will result in a TypeError, because array length cannot be negative.
+Initializing an array with a **length of -1** will result in a TypeError, because array length cannot be a negative number.
 
 ```js 
 let bigArr = new Array(9999999999); // RangeError
@@ -129,7 +129,7 @@ console.log(George);   // Uncaught ReferenceError
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-30-error-handling-special-values-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Some built-in Javascript methods can return **special values**, in the case of ill-matched data.
+Some built-in JavaScript methods can return **special values**, in the case of ill-matched data.
 
 ```js
 let sqrt = Math.sqrt(-1); // NaN (special value)
