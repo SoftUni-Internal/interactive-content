@@ -129,7 +129,7 @@ It is important to know that once the types for the **Key** and the **Value** ar
 
 The `HashMap` class contains several built-in methods: 
 
-- `put(K key, V value)` - Used for **adding items** (insert an entry) in the map 
+- `put(K key, V value)` - Used for **adding items** (inserting an entry) in the Map 
 
 If the `put()` method is called more than once with the same Key, **the latest Value replaces the existing Value** for the given Key.
 
@@ -142,7 +142,7 @@ airplanes.put("Boeing 737", 180);
 System.out.println(airplanes.get("Boeing 737"));
 ```
 
-- `putIfAbsent(K key, V value)` - Used for **adding items** (insert an entry) in the map if the specified **Key** is **not in the collection**.
+- `putIfAbsent(K key, V value)` - Used for **adding items** (inserting an entry) in the map if the specified **Key** is **not in the collection**
 
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -151,7 +151,7 @@ airplanes.putIfAbsent("Boeing 737", 100);
 System.out.println(airplanes.get("Boeing 737"));
 ```
 
-- `get(K key)` - Used to **access a Value** in the Map using its Key. **Returns** the object **Value**.
+- `get(K key)` - Used to **access a Value** in the Map, using its Key. **Returns** the **Value** of the specified object
 
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -160,7 +160,7 @@ int peopleCount = airplanes.get("Boeing 737");
 System.out.println(peopleCount);
 ```
 
-- `remove(K key)` - Used to **delete** an item (entry) **using its Key**
+- `remove(K key)` - Used to **delete** an item (entry), **using its Key**
 
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -169,7 +169,7 @@ airplanes.remove("Boeing 737");
 System.out.println(airplanes.get("Boeing 737"));
 ```
 
-- `clear()` - Used to remove **all items (entries)** in the map
+- `clear()` - Used to remove **all items (entries)** in the Map
 
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -189,7 +189,7 @@ airplanes.put("Airbus A320", 150);
 System.out.println(airplanes.size());
 ```
 
-- `containsKey(K key)` - Checks if the Map **contains the speficied Key object**. Returns a boolean value.
+- `containsKey(K key)` - Checks if the Map **contains the speficied Key object**. Returns a boolean value
 
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -199,7 +199,7 @@ if (airplanes.containsKey("Airbus A320")) {
 }
 ```
 
-- `containsValue(V value)` - Checks if the Map **contains the speficied Value object**. Returns a boolean value.
+- `containsValue(V value)` - Checks if the Map **contains the specified Value object**. Returns a **boolean** value
 
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -208,7 +208,7 @@ System.out.println(airplanes.containsValue(150));
 System.out.println(airplanes.containsValue(100));
 ```
 
-- `isEmpty()` - Return `true` if the Map is **empty** and `false` if it contains **at least one pair**
+- `isEmpty()` - Return `true` if the Map is **empty**, and `false` if it contains **at least one pair**
 
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
