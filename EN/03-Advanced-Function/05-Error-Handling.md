@@ -82,7 +82,7 @@ The three most common types of **errors** are:
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-29-error-handling-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-An exception occurs when a function is unable to do execute its task successfully resulting in an error.
+An **exception** occurs when a function is **unable to execute its task successfully**, resulting in an error.
 
 
 - **RangeError**
