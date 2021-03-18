@@ -3,9 +3,11 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-3-4-associative-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Associative arrays are collections that hold parameters in **Key** and **Value** pairs and are indexed by **Keys**. 
+An associative array stores the set of elements in the form of **Key-Value** pairs.
 
-**The Key** represents **the index** of the map. The **Keys** and **Values** are **objects** and each pair is known as **an entry**.
+It is a collection of **unique keys** and collections of values where **each key is associated with one value**.
+
+**The Key** represents **the index** of the map. The **Keys** and the **Values** are **objects**, and each pair is known as **an entry**.
 
 One object is used as a **Key** (index) to another object (**Value**). 
 
@@ -13,15 +15,15 @@ They **can not** be **primitive types** like **int**, **double**, **boolean**, e
 
 They **must be specified** with the equivalent **wrapper class**: **Integer**, **Double**, **Boolean**, etc. 
 
-**The types of Keys and the Values** can be the **same or different**, depends on the case.
+The Key and the Value could be of the **same type**, or they can be of **different types**, depending on the case.
 
 In Java, the associative arrays are called **Maps**. 
 
-A Map **cannot contain duplicate Keys**. Each **Key** can be associated to only one **Value**. 
+A Map **cannot contain duplicate Keys**. Each **Key** can be associated with only one **Value**. 
 
-**The Values of different Keys can be duplicated**. 
+The Values of **different Keys** can be duplicated. 
 
-**One Key** can only store **one Value** in the **same Map instance**. 
+**One Key** can only store **one Value** in the same **Map instance**. 
 
 Example:
 
