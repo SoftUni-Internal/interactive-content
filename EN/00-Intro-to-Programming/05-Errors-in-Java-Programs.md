@@ -10,7 +10,7 @@ The wrong code that cannot be compiled will be underlined.
 
 Here are some of the basic common mistakes we showld watch out for:
 
-- Mixing of lowercase and uppercase letters in syntax
+- Mixing of lowercase and uppercase letters in the syntax
 
 - Wrong syntax
 
