@@ -165,8 +165,14 @@ try (InputStream in = new FileInputStream(path)) {
 
 [code-task title="Read File" taskId="java-advanced-streams-files-lab-read-file" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
+```java
+import java.util.*;
 
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -249,8 +255,14 @@ try (FileInputStream fileStream = new FileInputStream(path)) {
 
 [code-task title="Write to File" taskId="java-advanced-streams-files-lab-write-to-file" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
+```java
+import java.util.*;
 
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]

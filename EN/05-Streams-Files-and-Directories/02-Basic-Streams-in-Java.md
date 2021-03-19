@@ -35,8 +35,14 @@ Although there are many classes related to byte streams, the most frequently use
 
 [code-task title="Copy Bytes" taskId="java-advanced-streams-files-lab-copy-bytes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
+```java
+import java.util.*;
 
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -185,8 +191,14 @@ We have done that by wrapping `System.in` which is nothing more but a constant h
 
 [code-task title="Extract Integers" taskId="java-advanced-streams-files-lab-exact-integers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
+```java
+import java.util.*;
 
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -275,8 +287,14 @@ This significantly will **boost the performance** of our applications.
 
 [code-task title="Write Every Third Line" taskId="java-advanced-streams-files-lab-write-every-third-line" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
+```java
+import java.util.*;
 
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]

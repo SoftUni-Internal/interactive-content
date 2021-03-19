@@ -36,8 +36,14 @@ Here are some useful **methods** of the **File** class:
 
 [code-task title="List Files" taskId="java-advanced-streams-files-lab-list-files" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
+```java
+import java.util.*;
 
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -90,8 +96,14 @@ output.txt: \[14328\]
 
 [code-task title="Nested Folders" taskId="java-advanced-streams-files-lab-nested-folders" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
+```java
+import java.util.*;
 
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]

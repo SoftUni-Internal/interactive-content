@@ -116,8 +116,14 @@ Files.write(outPath, lines);
 
 [code-task title="Sort Lines" taskId="java-advanced-streams-files-lab-sort-lines" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
+```java
+import java.util.*;
 
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
