@@ -1,4 +1,5 @@
-﻿[slide hideTitle]
+# Problem: Football Tournament
+[slide hideTitle]
 # Football Tournament
 [code-task title="Football Tournament" taskId="pb-java-exam-football-tournament" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -13,44 +14,42 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Description
-Create a program that takes the name of a football team and displays its statistics, based on their matches played this season. 
+# Description
+Create a program that receives the name of a football team and displays its statistics, based on its matches played this season. 
 
-Its statistics should include the total number of points earned in the current season, detailed statistics on the outcome of the games played and a win rate in the season. 
+The statistics should include the total of points earned during the current season, detailed statistics on the outcome of the games played and thier win rate. 
 
-If for some reason the team has not played any matches in the current season, a special message is displayed. 
+If for some reason the team has not played any games this season, a special message should be displayed. 
 
-Your task is to create a program that analyzes the statistics of the name of a given team.
-
-During one season, each team plays a certain number of football matches and, for each match played, points are awarded depending on the outcome.
+During the season, each team plays a certain number of football matches and, for each match played, points are awarded depending on the outcome.
 
 There are three possible outcomes from a match: 
-- W - The team wins and gets 3 points 
-- D - The game on a draw and the team gets 1 point 
-- L - The team has lost the match and does not receive any points
+- W - the team wins and receives 3 points 
+- D - a draw - the team gets 1 point 
+- L - the team has lost the match and does not receive any points
 
 ## Input
-You will receive two lines from the console:
-- The name of the football team we're analyzing - String
-- The number of games, played in the current season - An integer in range [0… 100] 
+You will receive **two lines** of input:
+- The name of the football team that we are analyzing - a string
+- The number of games, played during the season - an integer in range [0 ... 100] 
 
-For each game played, a separate line is read:
-- The result of the game played in one of the format - A character: 'W', 'D' or 'L' 
+**For each game**, a separate line is given:
+- The result of the game - a character ("W", "D" or "L")
 
 ## Output
-Depending on whether the team has played any games or not in the current season, two types of output are displayed:
+Depending on whether the team has played any games or not in the current season, there are two possible outcomes:
 
-- If the team has not played a single match in the current season, print out a line in the following format:
-	- "\{team name\} hasn't played any games during this season."
-- If the team has played at least one match, six lines are displayed in the following format:
-	- "\{team name\} has won \{count points\} points during this season."
-	- "Total stats:"
-	- "## W: \{count games won\}"
-	- "## D: \{number of games with even score\}" 
-	- "## L: \{count games lost\}" 
-	- "Win rate: \{percent games won\}%"
+- If the team has not played a single match, print out a single line in the following format:
+	- "\{**team name**\} **hasn't played any games during this season.**"
+- If the team has played at least one match, six lines should be displayed in the following format:
+	- "\{**team name**\} **has won** \{**count points**\} **points during this season.**"
+	- "**Total stats:**"
+	- "**## W:** \{**number of games won**\}"
+	- "**## D:** \{**number draws**\}" 
+	- "**## L:** \{**number of games lost**\}" 
+	- "**Win rate:** \{**win rate(percentage)**\}**%**"
 
-The percentage must be formatted after the 2nd decimal point.
+The percentage must be formatted to the second decimal place.
 
 ## Example
 | **Input** | **Output** |
@@ -68,15 +67,15 @@ The percentage must be formatted after the 2nd decimal point.
 | W |  |
 | W |  |
 
-### Comments
-- The name of our team is Liverpool.
-- 10 played games in the season:
+## Comments
+- The name of our team is Liverpool
+- They have played 10 games during the season:
 - 5 won * 3 points = 15 points
-- 4 scored even * 1 points = 4 points
+- 4 even * 1 points = 4 points
 - 1 lost -> no points added
-- Total points after the season: 19 points
+- Total points finishing the season: 19 points
 - 5 wins of 10 games played = 50% win rate
-- After formatting to the second digit -> 50.00%
+- After formatting the result -> 50.00%
 
 [/task-description]
 [code-io /]
