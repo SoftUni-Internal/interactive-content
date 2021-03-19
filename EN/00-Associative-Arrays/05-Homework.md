@@ -1489,17 +1489,18 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program, which keeps information about companies and their employees.
+Create a program that keeps information about some companies and their employees.
 
-You will receive a **company names** and **employee ids**, until you receive the **command** "**End**". 
+You will be receiving **company names** and **employee ids**, until you receive the "**End**" command. 
 
 **Add** each **employee** to the **given company**.
 
 Keep in mind that a **company cannot have two employees with the same id**.
 
-When you finish reading the data, **order** the companies by the name in **ascending** order.
+When you finish reading the data, **order** the companies by their name in **ascending** order.
 
-Print the company name and each employee's id in the following format:
+Print the **name of each company** and the **ids of all employees** who work in the specified company in the following format:
+
 
 "\{**companyName**\}
 -- \{**id1**\}
@@ -1508,7 +1509,7 @@ Print the company name and each employee's id in the following format:
 
 ### Input
 
-Until you receive the command "**End**", the input come **in the following format**:
+Until you receive the "**End**"command, you will be receiving input lines **in the following format**:
 "\{**companyName**\} -> \{**employeeId**\}"
 
 ### Examples
