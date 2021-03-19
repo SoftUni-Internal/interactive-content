@@ -258,8 +258,6 @@ Ajungând la `b`, înțelege că are o valoare `adevărată` și întreaga **exp
 [slide hideTitle]
 # Problemă cu Soluție: Food or Drink
 
-[video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/interactive-programming-basics-with-java-conditional-statements-advanced-21-logical-or-solution-food-or-drink-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
 [code-task title="Food or Drink" taskId="pb-js-conditional-statements-advanced-Food-or-Drink" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
