@@ -17,52 +17,49 @@ function solveClasses(){
 ```
 [/code-editor]
 [task-description]
-# Your task
+# Your Task
 
-Implement the following classes: `Pet`, `Cat`, `Dog`.
+Implement the following classes: `Pet`, `Cat`, and `Dog`.
 
 ## Pet Class
 
-- `constructor(owner, name)`
+- `constructor(owner, name)` - should have these **3 properties:**
+    * **owner** - string
+    * **name** - string
+    * **comments** - array
 
-Should have these **3 properties:**
-
-* **owner** - string
-* **name** - string
-* **comments** - array
-
-- `addComment(comment)`
+- `addComment(comment)`:
 
 This function should receive a single **comment** as a string, add it to the **comments** array and return a message:
 
-`Comment is added.`
+"**Comment is added.**"
 
-If the the same comment was **already added** to the comments array, throw an error:
+If the same comment was **already added** to the comments array, throw an error:
 
-`This comment is already added!`
+"**This comment is already added!**"
 
 - `feed()`:
 
 This **function** should **return** a simple message:
 
-`{ name } is fed`
+"\{**name**\} **is fed**`
 
 - `toString()`:
 
 This **function** should **return** a string:
 
-`Here is { owner }'s pet { name }.`
+"**Here is** \{**owner**\}'**s pet** \{**name**\}."
 
 If there are any **comments** then add them on a new line:
 
-`Special requirements: { comment1 }, { comment2 }, { comment3 ...}`
+"**Special requirements:** \{**comment1**\}, \{**comment2**\}, \{**comment3 ...**\}"
 
 
 ## Cat Class
 
 The `Cat` class inherits from `Pet`.
 
-Should have these **4 properties:**
+It should have these **4 properties:**
 
 * **owner** - string
 * **name** - string
@@ -73,49 +70,46 @@ Should have these **4 properties:**
 
 This function should inherit the `feed()` method of the `Pet` class and extend the **returned** message adding this to the end of the same line:
 
-`, happy and purring.`
+"**, happy and purring.**"
 
 - `toString()`:
 
-This function should extend the `toString()` method of the `Pet` class, returning the **message** with some more lines at the end which are:
+This function should extend the `toString()` method of the `Pet` class, returning the **message** with some more lines at the end, which are:
 
-`Main information:`
-`{ name } is a cat with { insideHabits }`
+"**Main information:**
+\{**name**\} **is a cat with** \{**insideHabits**\}"
 
 
 And if the value of the **scratching** prоperty is **true** you should add this at the end: 
 
-`, but beware of scratches.`  
+"**, but beware of scratches.**"  
 
-**Note: For more information see the examples below!**
+**Note: For more information, see the examples below!**
 
 ## Dog Class
 
 The `Dog` class inherits from `Pet`.
 
-- `constructor(owner, name, runningNeeds, trainability)`
-
-Should have these **4 properties:**
-
-- **owner** - string
-- **name** - string
-- **runningNeeds** - string
-- **trainability** - string 
+- `constructor(owner, name, runningNeeds, trainability)` - it should have these **4 properties:**
+    - **owner** - string
+    - **name** - string
+    - **runningNeeds** - string
+    - **trainability** - string 
 
 - `feed()`:
 
-This **function** should inherit the `feed()` method of the `Pet` class and extend the returned message adding this at the end:
+This **function** should inherit the `feed()` method of the `Pet` class and extend the returned message, adding this at the end:
 
-`, happy and wagging tail.`
+"**, happy and wagging tail.**"
 
 - `toString()`:
 
-This **function** should extend the `toString()` method of the `Pet` class returning the message with some more lines at the end which are:
+This **function** should extend the `toString()` method of the `Pet` class returning the message with some more lines at the end, which are:
 
-`Main information:`
-`{ name } is a dog with need of { runningNeeds }km running every day and { trainability } trainability.`
+"**Main information:**
+\{**name**\} **is a dog with need of** \{**runningNeeds**\}**km running every day and** \{**trainability**\} **trainability.**"
 
-**Note:  For more information see the examples below!**
+**Note:  For more information, see the examples below!**
 
 ## Submission
 Submit your `solveClasses` function.
@@ -134,9 +128,9 @@ function solveClasses(){
 ```
 
 # Examples
-This is an example how the code is **intended to be used:**
+This is an example of how the code is **intended to be used:**
 
-**Sample code usage** 
+**Sample code usage:** 
 ```js
 let classes = solveClasses();
 let pet = new classes.Pet('Ann', 'Merry');
@@ -145,7 +139,8 @@ console.log(pet.addComment('likes sweets'));
 console.log(pet.feed());
 console.log(pet.toString());
 
-let cat = new classes.Cat('Jim', 'Sherry', 'very good habits', true);
+let cat = new classes.Cat('Jim', 
+              'Sherry', 'very good habits', true);
 console.log(cat.addComment('likes to be brushed'));
 console.log(cat.addComment('sleeps a lot'));
 console.log(cat.feed());
@@ -158,7 +153,7 @@ console.log(dog.feed());
 console.log(dog.toString());
 ```
 
-**Corresponding output**
+**Corresponding output:**
 
 ```
 Comment is added.
@@ -173,15 +168,18 @@ Sherry is fed, happy and purring.
 Here is Jim's pet Sherry.
 Special requirements: likes to be brushed, sleeps a lot
 Main information:
-Sherry is a cat with very good habits, but beware of scratches.
+Sherry is a cat with very good habits, 
+but beware of scratches.
 
 Comment is added.
 Comment is added.
 Max is fed, happy and wagging tail.
 Here is Susan's pet Max.
-Special requirements: likes to be brushed, sleeps a lot
+Special requirements: likes to be brushed, 
+sleeps a lot
 Main information:
-Max is a dog with need of 5km running every day and good trainability.
+Max is a dog with need of 5km running every day 
+and good trainability.
 ```
 
 [/task-description]
