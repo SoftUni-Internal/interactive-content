@@ -19,7 +19,7 @@ Write a **Bank** class that implements the following functionality:
 
 ## `constructor (bankName)` 
 
-Receives **1 parameter** at initialization of the class (**bankName**)
+Receives **1 parameter** at initialization of the class (**bankName**).
 
 The **Bank** class should have these **2 properties:**
 
