@@ -145,15 +145,23 @@ You will receive a **function** parameter.
 
 You need to **return a function** that takes one parameter - **value**.
 
-## Example
+# Example
 
-**Input/Output:**
+## Input
 
 ```js
 let dollarFormatter = result(currencyFormatter);
-console.log(dollarFormatter(5345));   // $ 5345,00
-console.log(dollarFormatter(3.1429)); // $ 3,14
-console.log(dollarFormatter(2.709));  // $ 2,71
+console.log(dollarFormatter(5345));   
+console.log(dollarFormatter(3.1429)); 
+console.log(dollarFormatter(2.709));  
+```
+
+## Output
+
+```
+$ 5345,00
+$ 3,14
+$ 2,71
 ```
 
 [/task-description]
@@ -260,6 +268,8 @@ If the criteria is "**all**", print all the employees in the given format.
 The output should be the **printed** to the console.
 
 For more information, check the examples.
+
+# Examples
 
 ## Example 1
 
@@ -1191,11 +1201,10 @@ Look at the sample output for more information.
 ## Constraints
 
 - Recipes and ingredients in commands will always have valid names.
-  
 
-## Examples
+# Examples
 
-**Execution:**
+**Sample execution:**
 ```js
 let manager = solution();
 manager('restock flavour 50');  
@@ -1205,7 +1214,6 @@ manager('prepare lemonade 4');
 // Error: not enough carbohydrate in stock
 ```
 
-# Examples
 ## Example 1
 
 |**Input**|**Output**|
