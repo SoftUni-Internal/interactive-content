@@ -426,13 +426,15 @@ The following functionality should be supported:
 
 It should also print all **inherited properties** from **parent objects**. 
 
-Inherited properties should come after own properties
+Inherited properties should come after own properties.
 
- The input will be in a form of an array of strings, each string represents a command to be executed from your closure.
+## Input
 
- All commands will always be valid. 
+The input will be in a form of an array of strings, each string represents a command to be executed from your closure.
+
+All commands will always be valid. 
  
- There will be no nonexistent or incorrect input.
+There will be no nonexistent or incorrect input.
 
 # Example
 | **Input** | **Output** |
@@ -504,9 +506,11 @@ The returned object should support the following functionality\:
 
 - `init(selector1, selector2, resultSelector)` - initializes the object to work with the elements corresponding to the supplied selectors
   
-- `add()` - adds the numerical value of the element corresponding to `selector1` to the numerical value of the element corresponding to `selector2`, and then writes the result in the element corresponding to `resultSelector`
+- `add()` - adds the numerical value of the element corresponding to `selector1` to the numerical value of the element corresponding to `selector2`
+    * then, writes the result in the element corresponding to `resultSelector`
 
-- `subtract()` - subtracts the numerical value of the element corresponding to `selector2` from the numerical value of the element corresponding to `selector1`, and then writes the result in the element corresponding to `resultSelector`
+- `subtract()` - subtracts the numerical value of the element corresponding to `selector2` from the numerical value of the element corresponding to `selector1`
+    * then, writes the result in the element corresponding to `resultSelector`
 
 ## Input
 There will be no input your function must only provide an object.
@@ -640,12 +644,14 @@ console.log(scorcher.mana);
 
 ## Output
 
+```
 Scorcher cast fireball
 Scorcher cast thunder
 Scorcher cast light
 Scorcher 2 slashes at the foe\!
 99
 97
+```
 
 [/task-description]
 [code-io /]
@@ -1193,7 +1199,7 @@ template: {
 }
 ```
 
-**Resulting Object**
+**Resulting Object:**
 
 ```js
 myObj: {
