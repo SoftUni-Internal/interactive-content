@@ -110,11 +110,11 @@ This **function** should receive "**customerName**" and "**orderDescription**" a
 
 Here you should check the **customers array** and the same order has already been placed by the same customer, throw an error with the following message: 
 
-"**This customer has already ordered this review.**
+"**This customer has already ordered this review.**"
 
 Otherwise, add the **customer** object into the **customers array** and return this message:
 
-"\{ **customerName** \} **has ordered a review for** \{ **book name** \}`
+"\{ **customerName** \} **has ordered a review for** \{ **book name** \}"
 
 `toString()`: 
 
@@ -122,7 +122,7 @@ This **function** should extend the `toString()` method of the "**Article**" cla
 
 "**Book:** \{ **book name** \}"
 
-Additionally, if there are **any orders** you should print each of them on a new line:
+Additionally, if there are **any orders**, you should print each of them on a new line:
 
 ```
 Orders:
@@ -132,7 +132,7 @@ Orders:
 // and so on
 ```
 
-**Note: For more information see the examples below!**
+**Note: For more information, see the examples below!**
 
 ## Submit
 
