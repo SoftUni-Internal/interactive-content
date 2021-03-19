@@ -10,7 +10,7 @@
 
 **1. What is Coding**
 
-- Introduction to simple Commands and Programs
+- Introduction to simple computer commands and basic programs
 
 **2. The Java Language**
 
@@ -18,7 +18,7 @@
 
 **3. Development Environments (IDEs) for Java**
 
-- How to configure our IDE for work
+- How to configure an IDE
 
 **4. Creating and Running Console Apps**
 
