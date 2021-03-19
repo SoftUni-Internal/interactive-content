@@ -22,7 +22,7 @@ public class Main {
 [task-description]
 ## Description
 
-Write a Java program, which:
+Create a Java program, that:
 
 Prints "**Hello Java**" to the console.
 
@@ -64,10 +64,10 @@ public class Main {
 [task-description]
 ## Description
 
-Write a Java program, which:
+Create a Java program, that:
 
 * Calculates the value of 5 \* 5
-* Prints the result
+* Prints out the result
 [/task-description]
 [code-io /]
 [tests]
@@ -110,7 +110,7 @@ public class Main {
 [task-description]
 ## Description
 
-Write a program to print "**Catlyn**" on the first line and calculate and print the result of the expression 5 + 3 on the second line
+Create a program to print out "**Catlyn**" on the first line of output and then calculate and print out the result of the expression 5 + 3 on the second line
 [/task-description]
 [tests]
 [test open]
@@ -155,7 +155,7 @@ public class Main {
 [task-description]
 ## Description
 
-Write a program that calculates and prints the value of the following expressions:
+Create a program that calculates and prints the value of the following expressions:
 
 * 5 + 3 \* 2
 * 4 \* (2 + 3)
@@ -205,7 +205,7 @@ public class Main {
 [task-description]
 ## Description
 
-Write a program, which:
+Create a program, that:
 
 Prints a square of 7 * 7 stars like this one:
 ```
@@ -266,10 +266,10 @@ public class Main {
 [task-description]
 ## Description
 
-Write a program that calculates the area of а rectangle with sides 5 and 10.
+Create a program that calculates the area of а rectangle with sides 5 and 10.
 
 ## Output
-* Print the calculated area
+* Print the result
 [/task-description]
 [code-io /]
 [tests]
@@ -308,7 +308,7 @@ public class Main {
 [task-description]
 ## Description
 
-Write a program which prints the numbers from 1 to 10 (inclsuive).
+Create a program which prints out the numbers from 1 to 10 (inclsuive).
 
 ## Output
 
@@ -367,9 +367,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which **prints a triangle** of stars. 
+Create a program, which **prints a triangle** of stars. 
 
-Print one asteriks symbol \(\*\) for the first row, two asteriks symbols for the second row and so on.
+Print one asterik symbol \(\*\) for the first row, two asterik symbols for the second row and so on.
 
 ## Output
 ```
