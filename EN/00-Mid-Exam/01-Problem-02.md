@@ -39,7 +39,7 @@ If the book is already present on the shelf, ignore the command.
 
 Remove the book with the specified title only if it's on the shelf, otherwise ignore this command.
 
-* Command "**Swap Books** \| {**book1**} \| {**book2**}": 
+* Command "**Swap Books** \| \{**book1**\} \| \{**book2**\}": 
 
 If both books are on the shelf, swap their places.
 
