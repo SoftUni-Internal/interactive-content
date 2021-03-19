@@ -673,28 +673,28 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program, which **validates a parking** for an online service.
+Create a program to help your friend manage his parking lot.
 
-Users can **register to park and unregister to leave**.
+Users should **register to park** and **unregister to leave** the parking lot.
 
 The program receives **2 commands**:
 
 - "**register** \{**username**\} \{**licensePlateNumber**\}":
     - the program **only supports one car per user**.
-    - if a user tries to register another license plate, using the same username, the system should **print**: "**ERROR: already registered with plate number** \{**licensePlateNumber**\}"
-    - The program should **print**: "\{**username**\} **registered** \{**licensePlateNumber**\} **successfully**"
+    - if a user tries to register another license plate, using the same username, the system should print out: "**ERROR: already registered with plate number** \{**licensePlateNumber**\}"
+    - If the operation is successful, the program should print out: "\{**username**\} **registered** \{**licensePlateNumber**\} **successfully**"
 
 
 - "**unregister** \{**username**\}":
-    - if the user is **not present in the database**, the program should **print**: "**ERROR: user** \{**username**\} **not found**"
-    - The program should **print**: "\{**username**\} **unregistered successfully**"
+    - if the user is **not present in the database**, the program should print out: "**ERROR: user** \{**username**\} **not found**"
+    - If the operation is successful, the program should print out: "\{**username**\} **unregistered successfully**"
 
-After executing all of the commands, **print** all the **currently registered users and their license plates** in the following format:
+After executing all of the commands, print out the **names of all currently registered users and their license plates** in the following format:
 - "\{**username**\} \=\> \{**licensePlateNumber**\}"
 
 ### Input
-- First line: n – number of commands – integer
-- Next n lines: commands in one of two possible formats:
+- On the first line, you will receive an integer **n** – number of commands
+- On the next **n** lines: commands in one of the two possible formats:
     - Register: "**register** \{**username**\} \{**licensePlateNumber**\}"
     - Unregister: "**unregister** \{**username**\}"
 
