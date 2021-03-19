@@ -706,7 +706,7 @@ Workers who do not have dizziness should not be modified in any way. Return them
 ## Examples
 ## Example 1
 
-## Input
+## Input
 
 ```
 {
@@ -729,7 +729,7 @@ Workers who do not have dizziness should not be modified in any way. Return them
 
 ## Example 2
 
-## Input
+## Input
 ```
 {
     weight: 120,
@@ -751,7 +751,7 @@ Workers who do not have dizziness should not be modified in any way. Return them
 
 ## Example 3
 
-## Input  
+## Input  
 
 ```
 {
@@ -909,7 +909,7 @@ The format will be as follows:
 
 ## Example 1
 
-## Input 
+## Input 
 \{
     model: 'VW Golf II',
     power: 90,
@@ -933,7 +933,7 @@ The format will be as follows:
 \}
 
 ## Example 2
-## Input
+## Input
 
 \{
     model: 'Opel Vectra',
@@ -1316,7 +1316,7 @@ It should modify the existing String prototype instead.
 
 ## Example
 
-## Input
+## Input
 
 ```js
 let str = 'my string';

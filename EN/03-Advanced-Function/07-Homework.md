@@ -967,7 +967,7 @@ All fields should be named **exactly as described** \(their order is not importa
 
 Look at the sample output for more information.
 
-# Example
+# Example
 
 |**Input**|**Output**|**Explanation**|
 |---|---|---|

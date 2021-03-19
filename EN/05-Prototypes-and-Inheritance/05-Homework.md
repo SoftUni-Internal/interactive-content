@@ -758,7 +758,7 @@ Any properties that need to be initialized at instantiation time are defined as 
 Functions are defined inside the class body.
 
 ```js
-  class Employee {
+class Employee {
     constructor(name, age) {
         this.name = name;
         this.age = age;

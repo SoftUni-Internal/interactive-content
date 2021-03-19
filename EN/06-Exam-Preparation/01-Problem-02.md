@@ -134,7 +134,7 @@ Orders:
 
 **Note: For more information see the examples below!**
 
-## Submission
+## Submit
 
 **Submit your pressHouse function.**
 

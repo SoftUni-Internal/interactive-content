@@ -17,9 +17,7 @@ class Company {
 
 Write a **company** class, which supports the described functionality below.
 
-## Functionality
-
-`constructor()`:
+## `constructor()`
 
 
 Should have a property `departments`- an empty array
@@ -28,7 +26,7 @@ Should have a property `departments`- an empty array
 
 This function should add a new employee to the department with the given name.
 
-- If one of the passed parameters is an empty string **""**, **undefined** or **null**, this function should throw an error with the following message:
+- If one of the passed parameters is an empty string **""**, **undefined** or **null**, this function should throw an error with the following message:
 
 "**Invalid input!**"
 
@@ -40,7 +38,7 @@ This function should add a new employee to the department with the given name.
 
 "**New employee is hired. Name:** \{**name**\}. **Position:** \{**position**\}"
 
-### `bestDepartment()`
+## `bestDepartment()`
 
 This **function** should **print the department with the highest average salary and its employees**, sorted by their salary by descending and by name in the following format:
 
