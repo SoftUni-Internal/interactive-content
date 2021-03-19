@@ -12,7 +12,7 @@ class VeterinaryClinic {
 ```
 [/code-editor]
 [task-description]
-# Your task
+# Your Task
 
 Write a `VeterinaryClinic` class and implement the following functionality:
 
@@ -20,19 +20,19 @@ Write a `VeterinaryClinic` class and implement the following functionality:
 
 - `constructor (clinicName, capacity)`
 
-Receives `2` parameters at initialization of the class - **clinicName and capacity.**
+Receives **2** parameters at initialization of the class - **clinicName and capacity.**
 
 Should have these **3 properties:**
 
-* **clinicName** - a property of type string;
-* **capacity** - a property of type number;
-* **customers** - initially an empty array;
+* **clinicName** - a property of type string
+* **capacity** - a property of type number
+* **customers** - initially an empty array
 
-Hint: Add more properties like `totalProfit` and `currentWorkload` to help you complete the task. Read the problem description **until the end** to understand what is required.
+**Hint:** Add more properties like `totalProfit` and `currentWorkload` to help you complete the task. Read the problem description **until the end** to understand what is required.
 
 - `newCustomer(ownerName, petName, kind, procedures)`:
 
-The `ownerName`, `petName` and ``kind`` are of type **string** and the **procedures** are an **array** of strings. 
+The `ownerName`, `petName` and `kind` are of type **string** and the **procedures** are an **array** of strings. 
 
 This information will be used in the following `toString()` method.
 
@@ -60,7 +60,7 @@ An **array** of strings that stores the procedures that need to be performed on 
 
 **You know that a pet is currently a patient of the clinic when one or more procedures are recorded in their list of procedures.**
 
-When the pet is healed and leaves the clinic, **its array of procedures must be emptied** so if the pet comes back again it can be listed with new procedures.
+When the pet is healed and leaves the clinic, **its array of procedures must be emptied** so if the pet comes back again, it can be listed with new procedures.
 
 **Before registering:**
 
@@ -68,27 +68,27 @@ When the pet is healed and leaves the clinic, **its array of procedures must be 
 
 If the clinic is full **throw an error**:
 
-`Sorry, we are not able to accept more patients!`
+"**Sorry, we are not able to accept more patients!**"
 
 - Check if the pet is already registered under this owner's name. 
 
 If it is registered and still has a full list of procedures, you should **throw an error:**
 
-`This pet is already registered under { ownerName } name! { petName } is on our lists, waiting for { all their procedures separated by ', ' }.`
+"**This pet is already registered under** \{**ownerName**\} **name!** \{**petName**\} **is on our lists, waiting for** \{**all their procedures, separated by ', '**\}."
 
 - Otherwise, this function should add the customer and their pet, update the current clinic  **workload** and **return:**
 
-`Welcome { petName }!`
+"**Welcome** \{**petName**\}!"
 
 - `onLeaving (ownerName, petName)`:
 
 Check if the given `ownerName` corresponds to a customer in the **customers array**, if not **throw an error:**
 
-`Sorry, there is no such customer!`
+"**Sorry, there is no such customer!**"
 
 Then check if the given `petName` is registered under this `ownerName`, if not or if it is **registered but the procedures array is empty**, then **throw an error:**
 
-`Sorry, there are no procedures for { petName }!`
+"**Sorry, there are no procedures for** \{**petName**\}!"
 
 Otherwise, on leaving **generate** bill of the current customer, add it to the total profit of the clinic and save the data. 
 
@@ -102,23 +102,23 @@ When a pet leaves the clinic, `petName` and **kind** should be kept in the clini
 
 After that return, the following string:
 
-`Goodbye { petName }. Stay safe!`
+"**Goodbye** \{**petName**\}. **Stay safe!**"
 
 - `toString()`:
 
 **Return** the full clinic's status information.
 
-First, we have to calculate how busy the clinic is in **percentages**. 
+First, we have to calculate how busy the clinic is, in **percentages**. 
 
-The Percentage represents all current pets that have procedures based on the **full capacity** of the clinic.
+The percentage represents all current pets that have procedures, based on the **full capacity** of the clinic.
 
-The percentage is rounded down to the nearest number:
+It is rounded down to the nearest number:
 
-`{ clinicName } is { percentage }% busy today!`
+"**\{**clinicName**\} **is** \{**percentage**\}\% **busy today!**"
 
-On the second line return the collected **profit**, which must be **formatted** to the **second digit** after the decimal point: 
+On the second line, return the collected **profit**, which must be **formatted** to the **second digit** after the decimal point: 
 
-`Total profit: { profit }$`
+"**Total profit:** \{**profit**\}\$"
 
 On the next lines, return the entire information about the owners in the following format. 
 
@@ -126,26 +126,37 @@ Print the **kind** property in **lowercase**.
 
 All owners should be returned in **alphabetical order**, along with all their pets also in **alphabetical order**:
 
-`{ ownerName } with:`
-`---{ petName } - a { kind } that needs: { procedures separated by ', '}`
+"\{**ownerName**\} **with:**
+\-\-\-\{**petName**\} \- **a** \{**kind**\} **that needs:** \{**procedures separated by ', '**\}"
 
 
 ## Examples
-This is an example of how the code is **intended to be used:**
+This is an example of how the code is **intended to be used.**
 
-**Sample code usage** 
+**Sample code usage:** 
 ```js
 let clinic = new VeterinaryClinic('SoftCare', 10);
-console.log(clinic.newCustomer('Jim Jones', 'Tom', 'Cat', ['A154B', '2C32B', '12CDB']));
-console.log(clinic.newCustomer('Anna Morgan', 'Max', 'Dog', ['SK456', 'DFG45', 'KS456']));
-console.log(clinic.newCustomer('Jim Jones', 'Tiny', 'Cat', ['A154B'])); 
+
+console.log(clinic.newCustomer('Jim Jones', 'Tom', 
+            'Cat', ['A154B', '2C32B', '12CDB']));
+            
+console.log(clinic.newCustomer('Anna Morgan', 'Max', 
+            'Dog', ['SK456', 'DFG45', 'KS456']));
+            
+console.log(clinic.newCustomer('Jim Jones', 'Tiny', 
+            'Cat', ['A154B'])); 
+            
 console.log(clinic.onLeaving('Jim Jones', 'Tiny'));
+
 console.log(clinic.toString());
-clinic.newCustomer('Jim Jones', 'Sara', 'Dog', ['A154B']); 
+
+clinic.newCustomer('Jim Jones', 'Sara', 'Dog',
+                  ['A154B']); 
+
 console.log(clinic.toString());
 ```
 
-**Corresponding output**
+**Corresponding output:**
 
 ```
 Welcome Tom!
