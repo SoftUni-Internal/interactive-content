@@ -63,7 +63,7 @@ Any new item that is added should have the **following structure:**
 
 You should create a **list** element that contains a **paragraph** element with the name, age, and kind of the new pet (cat, dog, parrot, and so on). 
 
-**Format:** `{ name } is a { years } year old { kind }`, where  **name**, **years** and **kind** are inside `<strong>` elements within the paragraph. 
+**Format:** "\{**name**\} **is a** \{**years**\} **year old** \{**kind**\}", where  **name**, **years** and **kind** are inside `<strong>` elements within the paragraph. 
 
 After the list element, we have a **span** element with `Owner: { owner name }` and a `[Contact Owner]`  button.
 
