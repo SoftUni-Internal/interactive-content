@@ -924,31 +924,31 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program, which keeps information about **courses**.
+Create a program that keeps information about some **courses**.
 
 Each course has a **name** and **registered students**.
 
-You will receive **a course name and a student name**, **until** you receive the **command** "**end**". 
+You will be receiving **a course name and a student name**, until you receive the "**end**" command. 
 
 **Check** if such **course already exists**, and if **not**, **add the course**. 
 
 **Register** the **user** into the **course**. 
 
-When you do receive the **command** "**end**", **print** the courses with their **names** and **total registered users**, ordered by the count of **registered** users in descending order. 
+When you receive the "**end**" command, print the **names of all courses** and the **total registered users** in each one of them, ordered by the count of **registered users** in **descending** order. 
 
-For each **contest**, print **the registered users** ordered by **the name in ascending** order.
+For each **course**, print **the registered users** ordered by their name in **ascending** order.
 
 ### Input
-- Until you receive "**end**", the **input come in the format**:
+- Until you receive the "**end**" command, you will be receiving input lines in the following format:
  "\{**courseName**\} : \{**studentName**\}".
  
-- The product data is **always be separated** by a **" : "**
+- The name of the course and the name of the student will always be separated by a **" : "**
 
 ### Output
 - Print the information about each **course** in the following **format**: 
 "\{**courseName**\}: \{**registeredStudents**\}"
 
-- Print information about each **student** in the following **format**:
+- Print the information about each **student** in the following **format**:
 "-- \{**studentName**\}"
 
 ### Examples
