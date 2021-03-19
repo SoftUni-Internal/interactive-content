@@ -4,13 +4,13 @@
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-3-4-What-is-coding-and-demo-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-**To program** means to **give commands** to the computer, for example *"to play a sound"*, *"to print something on the screen"* or *"to multiply two numbers"*. 
+**Programming** is the process of **declaring series computer commands** which generally aim to manipulate and process numbers and text.
 
-Computer commands comprise **computer programs**. 
+**Computer programs** are sequences of such commands. 
 
 The text of a computer program is called **program code** (or **source code**, or just **code**).
 
-Here is an example of a simple computer program:
+The following line of code is also a simple computer program:
 ```java live
 System.out.println("I am coding");
 ```
@@ -30,9 +30,9 @@ System.out.println("I am coding");
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-7-compute-program-example-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Computer programs contain **sequences of commands** written in a certain **programming language**, like C#, Java, JavaScript, Python, C++, PHP, C, Ruby, Swift, Go to name a few.
+Computer programs contain **sequences of commands** applicable in the context of a certain **programming language**. Some popular examples of programming languages are: C#, Java, JavaScript, Python, C++, PHP, C, Ruby, Swift, Go to name a few.
 
-Example:
+Here is a simple program which uses the Java syntax:
 ```java live no-template
 public class Main {
   public static void main(String[] args) {
@@ -43,23 +43,23 @@ public class Main {
 }
 ```
 
-The above program defines a **class** `Main`, holding a **method** `main()`, which holds a sequence of **3 commands**:
-- Declaring and assigning a **variable**: `int size = 5;`
-- Calculating and **printing** an **expression**: `System.out.println("Size = " + size);`
-- Calculating and **printing** an **expression**: `System.out.println("Area = " + size * size);`
+The above program defines a **class** `Main`, which holds a **method** `main()`. Iside it, there is a sequence of **3 commands**:
+- The first command declares and initiates a **variable**: `int size = 5;`
+- The second one **calculates and prints out** an **expression**: `System.out.println("Size = " + size);`
+- The thrd one **calculates and prints out** another **expression**: `System.out.println("Area = " + size * size);`
 
 The result (output) from the above program is as follows:
 ```
 Size = 5
 Area = 25
 ```
-Defining a **class** and a `main()` **method** is a part of the logical structure in Java which is necessary in order for our program to function. 
+Defining a **class** and a `main()` **method** is a part of the logical structure in Java which is necessary in order for a program to function. 
 
-The Java language requires all the code above in order to execute the sequence of commands.
+The Java language requires all the code above in order to execute any sequence of commands.
 
 In order to declare commands, we should know **the syntax and the semantics of the language** which we are working with, in our case - **Java**. 
 
-In the next lessons of this course we will explore many examples of the basic code and logic structure in Java, starting with its most basic elements.
+This course will explore many examples of the code structure used in Java, starting with its most basic elements.
 
 [/slide]
 
@@ -78,19 +78,19 @@ In the next lessons of this course we will explore many examples of the basic co
 
 Computer programs usually execute an algorithm. 
 
-**An algorithm** is a **sequence of steps**, necessary for the completion of a certain task, something like a "recipe".
+**An algorithm** is a **sequence of steps**, necessary for the completion of a certain task, it is something like a "recipe".
 
-For example, if we want to fry some eggs, we will most probably use the following algorithm: 
+For example, if we want to fry some eggs, we use an algorithm: 
 - Heat up the oil in a pan
-- Put the eggs in
+- Put the eggs in it
 - Wait for them to fry
 - Move them away from the stove
 
-For example, to arrange a sequence of numbers in an ascending order, an algorithm is needed, e.g. find the smallest number and print it out, then find the smallest number among the rest of the numbers and print it out. This will be repeated until there are no more numbers left.
+For example, to arrange a sequence of numbers in ascending order, an algorithm is needed. The most basic one would repeat the same action: find the greatest number and move it at last place in the sequence, then find the next one and place it before it, running until the algorithm has processed all numbers in the sequence.
 
 When creating programs we usually use the help of an IDE, which stands for **Integrated Development Environment**, one example is **IntelliJ IDEA**. 
 
-An IDE helps us easily run and debug our code avoiding syntax errors. Integrated Development Enviornments can containing a great number of additional tools according to their purpose.
+An IDE helps us easily run and debug code avoiding syntax errors. Integrated Development Enviornments can contain a great number of additional tools according to their purpose.
 
 [/slide]
 
@@ -99,7 +99,7 @@ An IDE helps us easily run and debug our code avoiding syntax errors. Integrated
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-9-console-based-java-program-example-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Let us create a simple piece of code that reads an amount of money (an Integer) in U.S. Dollars (USD) as user input, converts it into Euro (EUR) by dividing it using the exchange rate and prints out the obtained result. 
+Let us create a simple piece of code that accepts a number form the console (an amount of money (an Integer)) in U.S. Dollars (USD) as user input, converts it to Euro (EUR) by dividing it using the specified exchange rate and prints out the obtained result. 
 
 This will be a program of 3 consecutive commands:
 ```java 
