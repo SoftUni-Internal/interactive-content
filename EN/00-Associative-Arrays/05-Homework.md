@@ -17,9 +17,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program, which **counts all characters** in a string except space (' ').
+Create a program that **counts all characters** in a string, except the white-spaces (' ').
 
-**Print** all occurrences in the following **format**:
+**Print** all characters in the following **format**:
 
 "\{**char**\} \-\> \{**occurrences**\}"
 
@@ -217,15 +217,15 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You are given a **sequence of strings**, each on a new line until the command "**stop**".
+You will be given a **sequence of strings**, each on a new line until the **stop** command is received.
 
 Every **odd line** represents a **resource** (e.g. Gold, Silver, Copper, and so on).
 
-And every even - **quantity** of the **resource**. 
+Every **even line** - **quantity** of the **resource**. 
 
-Your task is to collect the resources and print them each on a new line.
+Your task is to collect the resources and to print them out, each on a new line.
 
-**Print** the resources and their quantities in **format**: 
+**Print** the resources and their quantities in the following **format**: 
 
 "\{**resource**\} -> \{**quantity**\}"
 
@@ -673,28 +673,28 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program, which **validates a parking** for an online service.
+Create a program to help your friend manage his parking lot.
 
-Users can **register to park and unregister to leave**.
+Users should **register to park** and **unregister to leave** the parking lot.
 
 The program receives **2 commands**:
 
 - "**register** \{**username**\} \{**licensePlateNumber**\}":
     - the program **only supports one car per user**.
-    - if a user tries to register another license plate, using the same username, the system should **print**: "**ERROR: already registered with plate number** \{**licensePlateNumber**\}"
-    - The program should **print**: "\{**username**\} **registered** \{**licensePlateNumber**\} **successfully**"
+    - if a user tries to register another license plate, using the same username, the system should print out: "**ERROR: already registered with plate number** \{**licensePlateNumber**\}"
+    - If the operation is successful, the program should print out: "\{**username**\} **registered** \{**licensePlateNumber**\} **successfully**"
 
 
 - "**unregister** \{**username**\}":
-    - if the user is **not present in the database**, the program should **print**: "**ERROR: user** \{**username**\} **not found**"
-    - The program should **print**: "\{**username**\} **unregistered successfully**"
+    - if the user is **not present in the database**, the program should print out: "**ERROR: user** \{**username**\} **not found**"
+    - If the operation is successful, the program should print out: "\{**username**\} **unregistered successfully**"
 
-After executing all of the commands, **print** all the **currently registered users and their license plates** in the following format:
+After executing all of the commands, print out the **names of all currently registered users and their license plates** in the following format:
 - "\{**username**\} \=\> \{**licensePlateNumber**\}"
 
 ### Input
-- First line: n – number of commands – integer
-- Next n lines: commands in one of two possible formats:
+- On the first line, you will receive an integer **n** – number of commands
+- On the next **n** lines: commands in one of the two possible formats:
     - Register: "**register** \{**username**\} \{**licensePlateNumber**\}"
     - Unregister: "**unregister** \{**username**\}"
 
@@ -924,31 +924,31 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program, which keeps information about **courses**.
+Create a program that keeps information about some **courses**.
 
 Each course has a **name** and **registered students**.
 
-You will receive **a course name and a student name**, **until** you receive the **command** "**end**". 
+You will be receiving **a course name and a student name**, until you receive the "**end**" command. 
 
 **Check** if such **course already exists**, and if **not**, **add the course**. 
 
 **Register** the **user** into the **course**. 
 
-When you do receive the **command** "**end**", **print** the courses with their **names** and **total registered users**, ordered by the count of **registered** users in descending order. 
+When you receive the "**end**" command, print the **names of all courses** and the **total registered users** in each one of them, ordered by the count of **registered users** in **descending** order. 
 
-For each **contest**, print **the registered users** ordered by **the name in ascending** order.
+For each **course**, print **the registered users** ordered by their name in **ascending** order.
 
 ### Input
-- Until you receive "**end**", the **input come in the format**:
+- Until you receive the "**end**" command, you will be receiving input lines in the following format:
  "\{**courseName**\} : \{**studentName**\}".
  
-- The product data is **always be separated** by a **" : "**
+- The name of the course and the name of the student will always be separated by a **" : "**
 
 ### Output
 - Print the information about each **course** in the following **format**: 
 "\{**courseName**\}: \{**registeredStudents**\}"
 
-- Print information about each **student** in the following **format**:
+- Print the information about each **student** in the following **format**:
 "-- \{**studentName**\}"
 
 ### Examples
@@ -1191,25 +1191,27 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program, which keeps information about students and their grades.
+Create a program that keeps information about some students and their grades.
 
-You will receive **n** pair of rows. 
+You will receive an integer number - **n**.
 
-First you will receive the **student's name**. Аfter that you will receive their **grade**. 
+Then, you will receive **2 * n** rows of input.
+
+First, you will receive the **student's name**. Аfter that, you will receive their **grade**. 
 
 If the **student does not exists**, **add** them. 
 
-Keep track of **all of the grades for each student**.
+Keep track of **all of the grades of each student**.
 
-When you finish reading the data, keep the students with an average grade **higher or equal to 4.50**. 
+When you finish reading the data, keep only the students which have an average grade **higher or equal to 4.50**. 
 
-Order the filtered students by the average grade in **descending** order.
+Order the filtered students by their average grade in **descending** order.
 
-**Print the students and their average grade** in the following format:
+Print the students and their average grade in the following format:
 
 - "\{**name**\} -> \{**averageGrade**\}"
 
-**Format** the average grade to the **second decimal** place.
+**Format** the average grade to the second decimal place.
 
 ### Examples
 | **Input** | **Output** |
@@ -1489,17 +1491,18 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program, which keeps information about companies and their employees.
+Create a program that keeps information about some companies and their employees.
 
-You will receive a **company names** and **employee ids**, until you receive the **command** "**End**". 
+You will be receiving **company names** and **employee ids**, until you receive the "**End**" command. 
 
 **Add** each **employee** to the **given company**.
 
 Keep in mind that a **company cannot have two employees with the same id**.
 
-When you finish reading the data, **order** the companies by the name in **ascending** order.
+When you finish reading the data, **order** the companies by their name in **ascending** order.
 
-Print the company name and each employee's id in the following format:
+Print the **name of each company** and the **ids of all employees** who work in the specified company in the following format:
+
 
 "\{**companyName**\}
 -- \{**id1**\}
@@ -1508,7 +1511,7 @@ Print the company name and each employee's id in the following format:
 
 ### Input
 
-Until you receive the command "**End**", the input come **in the following format**:
+Until you receive the "**End**" command, you will be receiving input lines **in the following format**:
 "\{**companyName**\} -> \{**employeeId**\}"
 
 ### Examples

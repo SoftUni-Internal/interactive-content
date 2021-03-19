@@ -8,9 +8,9 @@
 - Maps hold {`key` -> `value`} pairs
     - `keyset` holds a set of unique keys
     - `values` holds a collection of values
-    - iterating over map takes the entries as `Map.Entry<K, V>`
+    - iterating over a map takes the entries as `Map.Entry<K, V>`
     
-- Lambda and Stream API helps processing collections
+- Lambda expressions and Stream API help processing collections
 
 ```java
 import java.util.Map;

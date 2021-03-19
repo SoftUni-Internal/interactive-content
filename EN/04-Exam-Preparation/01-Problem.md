@@ -28,11 +28,11 @@ On the **first line**, you will receive a **number that indicates how many input
 
 A **registration is valid** when:
 
-- The username is surrounded by ``"U\$"``
+- The username is surrounded by `"U\$"`
 
 - The username needs to contain a **minimum of 3 characters**, to **start** with an **uppercase letter**, followed **only by lowercase letters**
 
-- The password is surrounded by ``"P@\$"``
+- The password is surrounded by `"P@\$"`
 
 - The password needs to start with a **minimum of 5 alphabetical characters** (not including digits) and to end with a **digit**
 
@@ -42,14 +42,14 @@ A **registration is valid** when:
 You have to check if the registration is **valid**. 
 
 - **If it is valid**, print out the following messages:
-- "Registration was successful"
-- "Username: \{Username\}, Password: \{Password\}"
+- "**Registration was successful**"
+- "**Username**: \{**Username**\}, **Password**: \{**Password**\}"
 
 **If it is not valid** - print out the following message:
-- "Invalid username or password"
+- "**Invalid username or password**"
 
 In the end, **print out the count of successful registrations**:
-- "Successful registrations: \{successfulRegistrationsCount\}"
+- "**Successful registrations:** \{**successfulRegistrationsCount**\}"
 
 ### Input
 

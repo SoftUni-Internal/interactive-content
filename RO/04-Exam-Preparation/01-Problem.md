@@ -1,4 +1,4 @@
-# Problem 2: Registration
+# Problema 2: Registration
 
 [slide hideTitle]
 # Registration
@@ -12,54 +12,53 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
-Create a program, that checks **if registrations are valid**.
+## Descriere
+Creați un program care verifică **dacă înregistrările sunt valide**.
 
-Each registration consists of a **Username and a Password**.
+Fiecare înregistrare constă dintr-un **nume de utilizator și o parolă**.
 
+Pe **prima linie**, veți primi un **număr care indică câte intrări** veți primi pe **următoarele** linii.
 
-On the **first line**, you will get a **number that indicates how many inputs** you will receive on the **next** lines.
+O **înregistrare este valabilă** când:
 
-A **registration is valid** when:
+- Numele de utilizator **este înconjurat de** `"U\$"`
 
-- The **username is surrounded by** "U\$"
+- **numele de utilizator trebuie să conțină cel puțin 3 caractere**, **începe** cu o **literă majusculă**, urmată **numai de litere mici**
 
-- The **username needs to contain a minimum of 3 characters**, **start** with an **uppercase letter**, followed **only by lowercase letters**
+- Parola **este înconjurată de** `"P@\$"`
 
-- The **password is surrounded by** "P@\$"
+- Parola **trebuie să înceapă cu minimum 5 litere alfabetice** (fără cifre) și **trebuie să se termine cu o cifră**
 
-- The **password needs to start with a minimum of 5 alphabetical letters** (not including digits) and **must end with a digit**
-
-**Example for a valid** registration: 
+**Exemplu pentru o înregistrare** validă:
 - "U\$MichaelU\$P@\$asdqwe123P@\$"
 
-You must check if the registration is **valid and if it is,  print**:
-- "Registration was successful"
-- "Username: \{Username\}, Password: \{Password\}"
+Trebuie să verificați dacă înregistrarea este **valabilă și dacă este, imprimați**:
+- "**Registration was successful**"
+- "**Username**: \{**Username**\}, **Password**: \{**Password**\}"
 
-**If it is not** - print the following message:
-- "Invalid username or password"
+**Dacă nu este** - tipăriți următorul mesaj:
+- "**Invalid username or password**"
 
-In the end **print the count of successful registrations**:
-- "Successful registrations: \{successfulRegistrationsCount\}"
+În final **tipăriți numărul de înregistrări reușite**:
+- "**Successful registrations:** \{**successfulRegistrationsCount**\}"
 
 ### Intrare
 
-- On the first line, you will receive **n** - the count of inputs
-- On the next **n** lines - input that you have to check for valid registrations
+- Pe prima linie, veți primi **n** - numărul de intrări
+- În următoarele **n** linii - intrare pe care trebuie să o verificați pentru înregistrări valide
 
 ### Ieșire
-- Print all results from each input, each on a new line
-- In the end, print the count of successful registrations
+- Imprimați toate rezultatele din fiecare intrare, fiecare pe o nouă linie
+- La final, tipăriți numărul înregistrărilor reușite
 
 ### Exemplu
-|**Intrare**|**Ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 3 | Registration was successful |
 | U\$MichaelU\$P@$asdqwe123P@\$ | Username: Michael, Password: asdqwe123 |
@@ -67,14 +66,14 @@ In the end **print the count of successful registrations**:
 | U\$UserU$P@\$ad2P@\$ | Invalid username or password |
 | | Successful registrations: 1 |
 
-### Comment
-- We have 3 input lines to check
-- The first one follows the rules and is valid
-- The second one does not because the password does not end with a digit
-- The third one is not valid because the password is too short
+### Cometariu
+- Avem 3 linii de intrare de verificat
+- Primul respectă regulile și este valabil
+- Al doilea nu, deoarece parola nu se termină cu o cifră
+- A treia nu este validă, deoarece parola este prea scurtă
 
 ### Exemplu
-|**Intrare**|**Ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 2 | Registration was successful |
 | U\$TommyU\$P@\$asdqwe123P@\$ | Username: Tommy, Password: asdqwe123 |

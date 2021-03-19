@@ -26,14 +26,14 @@ The emails are represented as **strings**.
 You will be receiving lines, containing commands that are separated by **"->"**, until you receive the "**Statistics**" command.
 
 There are **three possible commands**:
-- "Add->\{**username**\}" 
-    - you should check if the username exists, and if it does, print out - **"\{username\} is already registered"**
+- "**Add->**\{**username**\}" 
+    - you should check if the username exists, and if it does, print out - "\{**username**\} **is already registered"**
     - if it does not exist, then you need to add the user to the collection of all users
-- "Send->\{username\}->\{Email\}"
+- "**Send->**\{**username**\}**->**\{**Email**\}"
     - add the \{**Email**\} to the \{**username**\}'s collection of emails
-- "Delete->\{**username**\}"
+- "**Delete->**\{**username**\}"
     - delete the given user, if such exists
-    - if the user does not exist, print out - "\{username\} not found!"
+    - if the user does not exist, print out - "\{**username**\} **not found!**"
 
 In the end, you have to **print the count of all users** and **all users with their emails**. 
 
@@ -41,15 +41,11 @@ The **users** have to be sorted by the **count of their emails** in **descending
 
 The output should be in the following format: 
 
-Users count: \{count\}
-
-\{username\} 
-
- - \{Email1\}
-
- - \{Email2\}
-
- - \{EmailN\}
+"**Users count:** \{**count**\}
+\{**username**\} 
+ - \{**Email1**\}
+ - \{**Email2**\}
+ - \{**EmailN**\}"
 
 ### Input
 - You will be receiving lines of input, until you receive the "**Statistics**" command
