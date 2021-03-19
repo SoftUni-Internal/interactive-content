@@ -1191,25 +1191,27 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program, which keeps information about students and their grades.
+Create a program that keeps information about some students and their grades.
 
-You will receive **n** pair of rows. 
+You will receive an integer number - **n**.
 
-First you will receive the **student's name**. Аfter that you will receive their **grade**. 
+Then, you will receive **2 * n** rows of input.
+
+First, you will receive the **student's name**. Аfter that, you will receive their **grade**. 
 
 If the **student does not exists**, **add** them. 
 
-Keep track of **all of the grades for each student**.
+Keep track of **all of the grades of each student**.
 
-When you finish reading the data, keep the students with an average grade **higher or equal to 4.50**. 
+When you finish reading the data, keep only the students which have an average grade **higher or equal to 4.50**. 
 
-Order the filtered students by the average grade in **descending** order.
+Order the filtered students by their average grade in **descending** order.
 
-**Print the students and their average grade** in the following format:
+Print the students and their average grade in the following format:
 
 - "\{**name**\} -> \{**averageGrade**\}"
 
-**Format** the average grade to the **second decimal** place.
+**Format** the average grade to the second decimal place.
 
 ### Examples
 | **Input** | **Output** |
