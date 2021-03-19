@@ -1572,7 +1572,7 @@ You are asked to submit **ONLY the function** that returns an object containing 
 
 To achieve code reusability, it is a good idea to have an abstract class containing common information. 
 
-Check the classes for common characteristics, that can be grouped in a base class.
+Check the classes for common characteristics that can be grouped in a base class.
 
 [/task-description]
 [code-io /]
