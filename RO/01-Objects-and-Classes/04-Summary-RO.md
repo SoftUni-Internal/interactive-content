@@ -3,12 +3,14 @@
 
 ## În această lecție ați învățat:
 
-- Clasele definesc șabloane pentru obiect
+- Clasele definesc următoarele șabloane pentru obiecte
      - câmpuri
      - constructori
      - proprietăți
      - metode
+
 - Obiectele conțin un set de valori numite
+
 ``` java
 LocalDate birthday = 
 LocalDate.of(2018, 5, 5);
@@ -25,15 +27,14 @@ class Dice {
 
 ## În lecția următoare, veți învăța:
 
-- Matrice asociative - Hărți
-     - `HashMap <cheie, valoare>`
-     - `LinkedHashMap <cheie, valoare>`
-     - `TreeMap <cheie, valoare>`
-- Expresii Lambda
-- API Stream
-     - filtrare
-     - cartografiere
-     - comanda
+- Ce este un șir
+
+- Manipularea șirurilor
+
+- Construirea și Modificarea Șirurilor
+    - folosind clasa `StringBuilder`
+    - de ce concatenarea este o operație lentă
+   
 [/slide]
 
 

@@ -1,7 +1,8 @@
-# Temă
+# Teme pentru acas[
 
 [slide hideTitle]
-# Problem: Count Chars in a String
+
+# Problemă: Count Chars in a String
 [code-task title="Count Chars in a String" taskId="Java-Fundamentals-2-Associative-Arrays-Count-Char-In-A-String" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -15,22 +16,23 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Enunț
-Scrieți un program care să **counts all characters** dintr-un string, cu excepția spațiului (' ').
+## Descriere
 
-**Print** toate variantele in următorul **format**:
+Scrieți un program care **numără toate caracterele** dintr-un șir, cu excepția spațiului (' ').
+
+**Imprimați** toate aparițiile in următorul **format**:
 
 "\{**char**\} \-\> \{**occurrences**\}"
 
 ### Exemplu
-|**Intrare**|**Ieșire** |
+| **Intrare* | **Ieșire** |
 | --- | --- |
 | text | t \-\> 2 | 
 | | e \-\> 1 |
 | | x \-\> 1 |
 
 ### Exemplu
-|**Intrare**|**Ieșire** |
+| **Intrare* | **Ieșire** |
 | --- | --- |
 | text text text | t \-\> 6 | 
 | | e \-\> 3 |
@@ -201,7 +203,7 @@ b -> 1
 
 
 [slide hideTitle]
-# Problem: A Miner Task
+# Problemă: A Miner Task
 [code-task title="A Miner Task" taskId="Java-Fundamentals-2-Associative-Arrays-A-Miner-task" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -215,21 +217,22 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Enunț
-Aveți o secvență dată **sequence of strings**, fiecare pe o linie nouă, până la comanda "**stop**".
+## Descriere
 
-Fiecare **odd line** din consolă reprezintă o **resource** (e.g. Aur, Argint, Cupru samd).
+Aveți o **secvență dată de șiruri**, fiecare pe o linie nouă, până la comanda "**stop**".
 
-Fiecare **quantity** trebuie să fie pară. 
+Fiecare **linie impară** de pe consolă reprezintă o **resură** (e.g. Aur, Argint, Cupru samd).
 
-Sarcina voastră este să colectați resursele și să le scrieți pe o linie nouă. 
+Fiecare **cantitate** trebuie să fie pară. 
 
-**Print** resursele și cantitățile lor în **format**: 
+Sarcina voastră este să colectați resursele și să le imprimați fiecare pe o linie nouă. 
+
+**Imprimați** resursele și cantitățile lor în **format**: 
 
 "\{**resource**\} -> \{**quantity**\}"
 
 ### Exemplu
-|**Intrare**|**Ieșire** |
+| **Intrare* | **Ieșire** |
 | --- | --- |
 | Gold | Gold \-\> 155 | 
 | 155 | Silver \-\> 10 |
@@ -240,7 +243,7 @@ Sarcina voastră este să colectați resursele și să le scrieți pe o linie no
 | stop | |
 
 ### Exemplu
-|**Intrare**|**Ieșire** |
+| **Intrare* | **Ieșire** |
 | --- | --- |
 | gold | Gold \-\> 170 | 
 | 155 | Silver \-\> 10 |
@@ -414,285 +417,10 @@ Platinium -> 36756
 
 
 
-[slide hideTitle]
-# Problem: Legendary Farming
-[code-task title="Legendary Farming" taskId="Java-Fundamentals-2-Associative-Arrays-Legendary-Farming" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Scrieți codul dvs. aici
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Enunț
-Sarcina voastră este să obțineți un item legendar care înseamnă să colectați materiale.
-
-Variantele posibile **possible items** sunt:
-
-- **Shadowmourne** - necesită 250 **Shards**
-
-- **Valanyr** - necesită 250 **Fragments**
-
-- **Dragonwrath** - necesită 250 **Motes**
-
-**Shards, Fragments and Motes** sunt materiale **key materials**, orice alt material este gunoi.
-
-Țineți socoteala materialelor key,  **first** care **reaches the 250**  câștigă cursa. 
-
-În acest punct, **print** acele **corresponding legendary item** obținute. 
-
-Apoi, **print** celelalte **remaining shards, fragments, motes**,ordine **ordered by quantity in descending**, apoi in ordine **by name in ascending**  **each** pe o **new line**. 
-
-În final, **print** dacă ați colectat **junk items**, in ordine **alphabetical**.
-
-
-### Intrare
-Fiecare linie de input este in format "\{**quantity**\} \{**material**\} \{**quantity**\} \{**material**\} … \{**quantity**\} \{**material**\}"
-
-### Ieșire
-- Pe **first line**, imprimați itemii obținuți în format "\{**Legendary item**\} **obtained!**"
-
-- Pe următoarele **next three lines**, imprimați **remaining key materials** în ordine **descending**, după **quantity**
-
-    - dacă **two key materials** au **same quantity**, imprimați-i in ordine **alphabetical**
-
-- Pe liniile **final several lines**, imprimați **junk items in alphabetical** ordine
-
-    - toate materialele sunt imprimate in format: "\{**material**\}: \{**quantity**\}"
-
-    - toate output trebuie să fie **lowercase**, cu excepția  **first** litere ale legendary
-
-
-### Exemple
-|**Intrare**|**Ieșire** |
-| --- | --- |
-| 3 Motes 5 stones 5 Shards | Valanyr obtained! | 
-| 6 leathers 255 fragments 7 Shards | fragments: 5 |
-| | shards: 5 |
-| | motes: 3 | 
-| | leathers: 6 |
-| | stones: 5 |
-
-### Exemple
-|**Intrare**|**Ieșire** |
-| --- | --- |
-| 123 silver 6 shards 8 shards 5 motes | Dragonwrath obtained! | 
-| 9 fangs 75 motes 103 MOTES 8 Shards | shards: 22 |
-| 86 Motes 7 stones 19 silver | motes: 19 |
-| | fragments: 0 | 
-| | fangs: 9 |
-| | silver: 123 |
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-3 Motes 5 stones 5 Shards
-6 leathers 255 fragments 7 Shards
-[/input]
-[output]
-Valanyr obtained!
-fragments: 5
-shards: 5
-motes: 3
-leathers: 6
-stones: 5
-[/output]
-[/test]
-[test open]
-[input]
-123 silver 6 shards 8 shards 5 motes
-9 fangs 75 motes 103 MOTES 8 Shards
-86 Motes 7 stones 19 silver
-[/input]
-[output]
-Dragonwrath obtained!
-shards: 22
-motes: 19
-fragments: 0
-fangs: 9
-silver: 123
-[/output]
-[/test]
-[test]
-[input]
-5 shards 5 motes 255 fragments
-[/input]
-[output]
-Valanyr obtained!
-fragments: 5
-motes: 5
-shards: 5
-[/output]
-[/test]
-[test]
-[input]
-16 leathers 22 leather 82 leathers 17 LEATHER 88 LEATHERS
-28 shards 78 motes 66 motes 215 shards 7 shards 3 fragments
-[/input]
-[output]
-Shadowmourne obtained!
-motes: 144
-fragments: 0
-shards: 0
-leather: 39
-leathers: 186
-[/output]
-[/test]
-[test]
-[input]
-8 iron
-3 gold
-7 silver 15 shards
-15 onions 236 shards
-8 freshwater
-9 souls
-[/input]
-[output]
-Shadowmourne obtained!
-shards: 1
-fragments: 0
-motes: 0
-gold: 3
-iron: 8
-onions: 15
-silver: 7
-[/output]
-[/test]
-[test]
-[input]
-249 shards 249 fragments 249 motes 8 linen 5 silver 123 silk 22 embersilk
-13 alpha-gems 0 shards 0 fragments 1 motes
-[/input]
-[output]
-Dragonwrath obtained!
-fragments: 249
-shards: 249
-motes: 0
-alpha-gems: 13
-embersilk: 22
-linen: 8
-silk: 123
-silver: 5
-[/output]
-[/test]
-[test]
-[input]
-98 spirit-shards 17 SPIRiT-SHARDS 123 SPIRIT-SHARDS 12 sPI_ritShards 92 gems 1 gem
-6 fragments 9 Fragments 129 Fragments 1 Shards 0 Shards 123 Shards 9 Motes
-123 Motes 123 Fragments 1098 MotES
-[/input]
-[output]
-Valanyr obtained!
-motes: 132
-shards: 124
-fragments: 17
-gem: 1
-gems: 92
-spi_ritshards: 12
-spirit-shards: 238
-[/output]
-[/test]
-[test]
-[input]
-0 shards
-1 shards
-2 shards
-3 shards
-4 shards
-0 SHARDS 126 SHARDS
-122 SHARDS
-1 motes
-1 fragments
-[/input]
-[output]
-Shadowmourne obtained!
-shards: 8
-fragments: 0
-motes: 0
-[/output]
-[/test]
-[test]
-[input]
-77 heavy-leather 123 light-leather
-789 fragments 8889 fragments 88123 motes
-[/input]
-[output]
-Valanyr obtained!
-fragments: 539
-motes: 0
-shards: 0
-heavy-leather: 77
-light-leather: 123
-[/output]
-[/test]
-[test]
-[input]
-988 HEAVY-STONES
-1230812 HEAVY-STONes
-120398 Fragments
-[/input]
-[output]
-Valanyr obtained!
-fragments: 120148
-motes: 0
-shards: 0
-heavy-stones: 1231800
-[/output]
-[/test]
-[test]
-[input]
-123 leathers
-12 leather
-12 leathe
-12 motes
-12 shards
-262 fragments
-[/input]
-[output]
-Valanyr obtained!
-fragments: 12
-motes: 12
-shards: 12
-leathe: 12
-leather: 12
-leathers: 123
-[/output]
-[/test]
-[test]
-[input]
-71 linen 71 linen 71 linen 71 linen 71 linen 71 linen 71 linen 71 linen 71 linen 71 linen 71 linen 71 linen 71 linen 71 linen
-71 linen 71 linen 71 linen 71 linen 71 linen 71 linen
-15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes
-15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes
-15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes
-15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes
-15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes
-15 shards 15 fragments 15 motes
-15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes
-15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes
-[/input]
-[output]
-Shadowmourne obtained!
-fragments: 240
-motes: 240
-shards: 5
-linen: 1420
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
 
 
 [slide hideTitle]
-# Problem: Orders
+# Problemă: Orders
 [code-task title="Orders" taskId="Java-Fundamentals-2-Associative-Arrays-Orders" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -706,20 +434,20 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Enunț
-Scrieți un program care conține informații despre **products and their prices**.
+## Descriere
+Creați un program care conține informații despre **produsele și prețurile acestora**.
 
-Fiecare produs are **a name, a price and its quantity**.
+Fiecare produs are **un nume, un preți și o cantitate**.
 
-Dacă **product doesn't exist** totuși, **add it with its starting quantity**.
+Dacă **produsul nu esxistă** încă, **aduăgați-l cu cantitatea sa inițială**.
 
-Dacă primiți **product, which already exists** **increase its quantity** cu cantitatea din input, iar dacă **price is different, replace the price as well**.
+Dacă primiți **un produs care deja există** **creșteți cantitatea sa** cu cantitatea din intrare, iar dacă **prețul este diferit, înlocuiți și prețul**.
 
-Veți primi **products' names, prices and quantities on new lines**. 
+Veți primi **numele produselor, prețurile și cantitățile** pe linii noi. 
 
-Până primiți **command** "**buy**", continuați să adăugați itemi.
+Până primiți **comanda** "**buy**", continuați să adăugați articole.
 
-Când ați primit comanda "**buy**", **print** **items** cu numele lor **names** și **total price** ale tuturor produselor cu acest nume.
+Când primiți comanda "**buy**", **imprimați** **articolele** cu **numele lor** și **prețul total** al tuturor produselor cu acest nume.
 
 ### Intrare
 
@@ -732,10 +460,10 @@ Când ați primit comanda "**buy**", **print** **items** cu numele lor **names**
 
     - "\{**productName**\} \-\> \{**totalPrice**\}"
 
-- Formatați prețul total la  **second digit** după punctul de zecimale
+- Formatați prețul total la  **a două cifră** după punctul zecimal
 
 ### Exemplu
-|**Intrare**|**Ieșire** |
+| **Intrare* | **Ieșire** |
 | --- | --- |
 | Beer 2.20 100 | Beer \-\> 220.00 | 
 | IceTea 1.50 50 | IceTea \-\> 75.00 |
@@ -744,7 +472,7 @@ Când ați primit comanda "**buy**", **print** **items** cu numele lor **names**
 | buy | | 
 
 ### Exemplu
-|**Intrare**|**Ieșire** |
+| **Intrare* | **Ieșire** |
 | --- | --- |
 | CaesarSalad 10.20 25 | CaesarSalad \-\> 255.00 | 
 | SuperEnergy 0.80 400 | SuperEnergy \-\> 320.00 |
@@ -936,7 +664,7 @@ IceCream -> 37.50
 
 
 [slide hideTitle]
-# Problem: Parking
+# Problemă: Parking
 [code-task title="Parking" taskId="Java-Fundamentals-2-Associative-Arrays-Parking" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -950,20 +678,20 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Enunț
-Scrieți un program, care **validates parking** pentru un serviciu online.
+## Descriere
+Creați un program, care **validează parcarea** pentru un serviciu online.
 
-Utilizatorii pot **register to park and unregister to leave**.
+Utilizatorii  se pot **înregistra pentru a parca și a deregistra pentru a pleca**.
 
-Programul primește **2 commands**:
+Programul primește **2 comenzi**:
 - "**register** \{**username**\} \{**licensePlateNumber**\}":
-    - sistemul **only supports one car per user** pe moment, deci dacă un utilizator încearcă să înregistreze o altă plăcuță de înmatriculare, folosind același username, sistemul va **print**: "**ERROR: already registered with plate number** \{**licensePlateNumber**\}"
+    - sistemul **suportă doar un utiliuzator** pe moment, deci dacă un utilizator încearcă să înregistreze o altă plăcuță de înmatriculare, folosind același username, sistemul va **imprima**: "**ERROR: already registered with plate number** \{**licensePlateNumber**\}"
     - dacă utilizatorul menționat trece **successfully**, atunci **plate can be registered**, deci sistemul va trebui să **print**: "\{**username**\} **registered** \{**licensePlateNumber**\} **successfully**"
 - "**unregister** \{**username**\}":
-    - dacă utilizatorul este **not present in the database**, sistemul va **print**: "**ERROR: user** \{**username**\} **not found**"
+    - dacă utilizatorul **nu este prezent în baza de date**, sistemul va **imprima**: "**ERROR: user** \{**username**\} **not found**"
     - dacă utilizatorul trece **successfully**, sistemul va trebui să **print**: "\{**username**\} **unregistered successfully**"
 
-După ce ați executat toate comenzile, **print** toți **currently registered users and their license plates** in format:
+După ce ați executat toate comenzile, **imprimați** toți **utilizatorii înregistrați la momentul dat și plăcile lor de înmatriculare** in format:
 - "\{**username**\} \=\> \{**licensePlateNumber**\}"
 
 ### Intrare
@@ -972,8 +700,8 @@ După ce ați executat toate comenzile, **print** toți **currently registered u
     - Register: "**register** \{**username**\} \{**licensePlateNumber**\}"
     - Unregister: "**unregister** \{**username**\}"
 
-### Ieșire
-| **Input** | **Output** |
+### Exemple
+| **Intrare* | **Ieșire** |
 | --- | --- |
 | 5 | John registered CS1234JS successfully | 
 | register John CS1234JS | George registered JAVA123S successfully |
@@ -984,8 +712,8 @@ După ce ați executat toate comenzile, **print** toți **currently registered u
 | | George => JAVA123S | 
 | | Jesica => VR1223EE | 
 
-### Exemplu
-|**Intrare**|**Ieșire** |
+### Exemple
+| **Intrare* | **Ieșire** |
 | --- | --- |
 | 4 | Jony registered AA4132BB successfully | 
 | register Jony AA4132BB | ERROR: already registered with plate number AA4132BB |
@@ -1183,7 +911,7 @@ Acho => AD1538BC
 
 
 [slide hideTitle]
-# Problem: Courses
+# Problemă: Courses
 [code-task title="Courses" taskId="Java-Fundamentals-2-Associative-Arrays-Courses" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1197,28 +925,28 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Enunț
-Scrieți un program care cuprinde informații despre **courses**.
+## Descriere
+Scrieți un program care cuprinde informații despre **cursuri**.
 
-Fiecare curs are un **name** și **registered students**.
+Fiecare curs are un **nume** și **studenți înscriși**.
 
-Veți primi **course name and student name**, **until** până veți primi **command** "**end**". 
+Veți primi **numele cursului și numele unui student**, **până ce**  primiți **comanda** "**end**". 
 
-**Check** dacă astfel de **course already exists**, și dacă **not**, **add the course**. 
+**Verificați** dacă un astfel de **curs există deja**, și dacă **nu există**, **adăugați cursul**. 
 
-**Register** un **user** la **course**. 
+**Înregistrați* un **utilizatot** la **curs**. 
 
-Atunci când primiți **command** "**end**", **print** cursurile cu **names** lor și **total registered users**, indicați de numărul userilor **registered**  in ordine descendentă. 
+Atunci când primiți **comanda** "**end**", **imprimați** cursurile cu **numele** lor și **numărul total al utilizatorilor înregistrați**, ordonați după numărul utilizatorilor **înregistrați**  in ordine descendentă. 
 
-Pentru fiecare **contest print registered users** **ordered by name in ascending** ordine.
+Pentru fiecare ** concurs imprimați utilizatori înregistrați ** ** ordonați după nume în ordine crescătoare **.
 
 ### Intrare
-- Până primiți "**end**", **input come in the format**:
+- Până primiți "**end**", **intrare vien în format**:
 
  "\{**courseName**\} : \{**studentName**\}".
 - Datele despre produs sunt **always delimited** de " : "
 
-### Ieșire
+### Output
 - Imprimați informația despre fiecare **course**, după **format**: 
 
 "\{**courseName**\}: \{**registeredStudents**\}"
@@ -1226,8 +954,8 @@ Pentru fiecare **contest print registered users** **ordered by name in ascending
 
 "-- \{**studentName**\}"
 
-### Exemplu
-|**Intrare**|**Ieșire** |
+### Exemple
+| **Intrare* | **Ieșire** |
 | --- | --- |
 | Programming Fundamentals : John Smith | Programming Fundamentals: 2 | 
 | Programming Fundamentals : Linda Johnson | -- John Smith |
@@ -1451,7 +1179,7 @@ Programming Fundamentals: 1
 
 
 [slide hideTitle]
-# Problem: Student Academy 
+# Problemă: Student Academy 
 [code-task title="Student Academy" taskId="Java-Fundamentals-2-Associative-Arrays-Student-Academy" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1465,28 +1193,28 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Enunț
+## Descriere
 Scrieți un program care să cuprindă informații despre studenți și notele lor.
 
-Veți primi un **n pair of rows**. 
+Veți primi un număr **n de perechi de rânduri**. 
 
-Mai întâi veți primi **student's name**, după aceea, veți primi pentru fiecare **grade**. 
+Mai întâi veți primi **numele studentului**, după aceea, veți primi **nota** acestuia. 
 
-Verificați dacă **student already exists**, și dacă **not**, **add**. 
+Verificați dacă **există deja**, și dacă **nu**, **îl adăugați**. 
 
-Țineți minte toate **all grades for each student**.
+Urmăriți **toate notele tuturor studenților**.
 
-Când ați terminat de citit datele, țineți doar studenții cu nota medie **higher or equal to 4.50**. 
+Când ați terminat de citit datele, țineți doar studenții cu nota medie **mai mare decât sau egală cu 4.50**. 
 
-Ordonați studenții aleși, după nota medie, în ordine **descending**.
+Ordonați studenții aleși, după nota medie, în ordine **descrescătoare**.
 
-**Print the students and their average grade** in format:
+**Imprimați studenții și mediile lor** in format:
 - "\{**name**\} -> \{**averageGrade**\}"
 
-**Format** nota medie până la **second decimal**.
+**Formatați** nota medie până la **a două cifră după zecimală**.
 
-### Exemplu
-|**Intrare**|**Ieșire** |
+### Exemple
+| **Intrare* | **Ieșire** |
 | --- | --- |
 | 5 | John -> 5.00 | 
 | John | George -> 5.00 |
@@ -1748,7 +1476,7 @@ Mitko -> 4.67
 
 
 [slide hideTitle]
-# Problem: Company Users
+# Problemă: Company Users
 [code-task title="Company Users" taskId="Java-Fundamentals-2-Associative-Arrays-Company-Users" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1762,21 +1490,19 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Enunț
+## Descriere
 Scrieți un program care conține informații despre companii și angajații lor. 
 
-Veți primi **company name** și **employee's id**,până primiți **command** "**End**". 
+Veți primi **numele companiei** și **ID-ul angajatului**, până primiți **comandă** "Sfârșit". 
 
-**Add** fiecare **employee** de la fiecare **given company**.
+**Adăugați** fiecare **angajat** de la fiecare **companie**.
 
-Rețineți că **company cannot have two employees with the same id**.
+Rețineți că **compania nu poate avea doi angajați cu același ID**.
 
-Când ați terminat de citit date, **order** companiile după nume, în ordine ascendentă.
+Când ați terminat de citit date, **ordonați** companiile după nume, în ordine ascendentă.
 
-Imprimați numele companiei și id-ul fiecărui angajat, în următorul format:
-
-"\{**companyName**\}
-
+Imprimați numele companiei și ID-ul fiecărui angajat, în următorul format:
+- \{companyName\}
 -- \{**id1**\}
 
 -- \{**id2**\}
@@ -1784,13 +1510,14 @@ Imprimați numele companiei și id-ul fiecărui angajat, în următorul format:
 -- \{**idN**\}"
 
 ### Intrare
-Până la primirea mesajului "**End**", input-ul vine **in the format**:
+ntrare
+Până la primirea mesajului "Sfârșit", datele de intrare vin **în format**:
 
 "\{**companyName**\} -> \{**employeeId**\}"
 
 
-### Exemplu
-|**Intrare**|**Ieșire** |
+### Exemple
+| **Intrare* | **Ieșire** |
 | --- | --- |
 | SoftUni \-\> AA12345 | HP | 
 | SoftUni \-\> BB12345 | -- BB12345 |
@@ -2068,7 +1795,7 @@ Subway
 
 
 [slide hideTitle]
-# Problem: ForceBook
+# Problemă: ForceBook
 [code-task title="ForceBook" taskId="Java-Fundamentals-2-Associative-Arrays-Forcebook" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -2082,54 +1809,55 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Enunț
+## Descriere
 Utilizatorii de forță se luptă să-și amintească de ce parte sunt fiecare, fiindcă se schimbă prea des.
 
-Deci sunteți pus să creați un program pentru a le manageria profilele.
+Deci sunteți puși să creați un program pentru a le gestiona profilele.
 
-Trebuie să stocați informația pentru **every unique force user**, inregistrat în aplicație.
+Trebuie să stocați informația pentru **fiecare utilizator unic de forță**, inregistrat în aplicație.
 
-Veți primi câteva **input lines in one of the following formats**:
+Veți primi câteva **linii de intrare într-unul din următoarele formate**:
+
 - "\{forceSide\} \| \{forceUser\}"
 - "\{forceUser\} -> \{forceSide\}"
 
-Acei **force user and force side are strings**, conținând orice caracter.
+Aici **forța utilizatorului și echipa de forță sunt șiruri**, conținând orice caractere.
 
-Dacă primiți force side \| force user trebuie să **check if such force user already exists**, și dacă nu, **add him/her** în partea corespunzătoare. 
+Dacă primiți force side \| force user trebuie să **verificați dacă un astfel de utilizator de forță există deja**, și dacă nu, **adaugă-l/o** în partea corespunzătoare. 
 
-Dacă primiți un force user -> force side trebuie să should **check if there is such force user already** și dacă da, **change his/her side**. 
+Dacă primiți un force user -> force side trebuie să **verificați dacă există deja un astfel de utilizator de forță** și dacă da, **schimba-i/o partea**. 
 
-Dacă nu există astfel de force user, **add him/her to the corresponding force side**, folosind comenzile ca pentru un user nou înregistrat.
+Dacă nu există astfel de force user, **adăugați-l/o la partea de forță corespunzătoare**, folosind comenzile ca pentru un nou utilizator înregistrat.
 
-Apoi, poți printa pe consolă: 
+Apoi, puteți printa pe consolă: 
 
-"\{**forceUser**\} **joins the** \{**forceSide**\} **side!**"
+"\{forceUser\} joins the \{forceSide\} side!"
 
-Trebuie să **end your program when you receive the command** "**End**". 
+Trebuie să **încheiați programul când primiți comanda** "End". 
 
-În acest punct, trebuie să printezi fiecare parte de forță **ordered descending by force users count**, apoi **ordered by name**. 
+În acest punct, trebuie să printați fiecare parte de forță **ordonat descrescător prin forță utilizatorii**, apoi **ordonați după nume**. 
 
-Pentru fiecare parte, imprimăm force users, **ordered by name**.
+Pentru fiecare parte, imprimăm force users, **ordonați după nume**.
 
-In cazul în care avem **no force users** de o parte, atunci **shouldn't print the side information**.
+In cazul în care nu avem **utilizatori de forță** de o parte, atunci **nu ar trebui să imprimați informațiile**.
 
 ### Intrare
-- Inputul vine sub formă de comenzi într-unul din formatele specificate mai sus
--  Input-ul se încheie când primim comanda "**End**"
+- Datele de intrare vin sub formă de comenzi într-unul din formatele specificate mai sus.
+- Datele de intrare se încheie când primim comanda "End".
 
 ### Ieșire
-- Ca output pentru fiecare force side, ordonată descendent în funcție de numprul de force users, apoi după nume, trebuie să imprimăm toți force users, ordonată după nume, alfabetic
-
+- Ca date de intrare pentru fiecare force side, ordonată descendent în funcție de numprul de force users, apoi după nume, trebuie să imprimăm toți force users, ordonată după nume, alfabetic.
 - Formatul output este:
-"**Side:** \{**forceSide**\}, **Members:** \{**forceUsersCount**\}
-! \{**forceUser**\}
-! \{**forceUser**\}
-! \{**forceUser**\}"
 
-- In cazul în care nu avem niciun force users, nu imprimăm această parte
+Side: \{forceSide\}, Members: \{forceUsersCount\}
+! \{forceUser\}
+! \{forceUser\}
+! \{forceUser\}
+- In cazul în care nu avem niciun force users, nu imprimăm această parte.
 
-### Exemplu
-|**Intrare**|**Ieșire** |
+
+### Exemple
+| **Intrare* | **Ieșire** |
 | --- | --- |
 | Light \| George | Side: Dark, Members: 1 | 
 | Dark \| Peter | ! Peter |
@@ -2137,12 +1865,11 @@ In cazul în care avem **no force users** de o parte, atunci **shouldn't print t
 | | ! George |
 
 ### Comentarii
-L-am înregistrat pe George de partea Luminii și pe Peter, de partea întunericului. 
+L-am înregistrat pe George de partea Luminii și pe Peter, de partea Întunericului. 
 
-După ce am primit "**End**", printăm ambele părți, ordonate de numărul de membri și apoi, de numele lor. 
-
-### Exemplu
-|**Intrare**|**Ieșire** |
+După ce am primit "End", printăm ambele părți, ordonate de numărul de membri și apoi, de numele lor. 
+### Exemple
+| **Intrare* | **Ieșire** |
 | --- | --- |
 | Lighter \| Ronn | John joins the Lighter side! | 
 | Darker \| Dean | Dean joins the Lighter side! |
@@ -2353,7 +2080,7 @@ Side: e, Members: 2
 [/slide]
 
 [slide hideTitle]
-# Problem: SoftUni Exam Results
+# Problemă: SoftUni Exam Results
 [code-task title="SoftUni Exam Results" taskId="Java-Fundamentals-2-Associative-Arrays-Softuni-Exam-Results" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -2367,49 +2094,49 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Enunț
+## Descriere
 Trebuie să colectați toate înscrierile și să imprimați rezultatele finale și statisticile despre fiecare limbă în care participanții și-au prezentat soluțiile. 
 
-Veți primi linii în formatul următor: "\{**username**\}-\{**language**\}-\{**points**\}" until you receive "**exam finished**". 
+Veți primi linii în formatul următor: "\{username\}-\{language\}-\{points\}" până cânf primiți "examen terminat". 
 
-Trebuie să stocați fiecare **username** și, de asemenea,  **submissions and points** pentru fiecare. 
+Trebuie să stocați fiecare **nume de utilizator** și, de asemenea,  **observațiile și punctele** pentru fiecare. 
 
-Puteți primi o comandă să interziceți un user pentru  **cheating** in formatul următor: "\{**username**\}**-banned**". 
+Puteți primi o comandă să interziceți unui utilizator pentru  **înșelare** in formatul următor: "\{username\}-banned". 
 
-In acest caz, trebuie să înlăturați userul din concurs, dar să păstrați aplicația sa în numărul total de aplicații pentru fiecare limbă.
+In acest caz, trebuie să înlăturați utilizatorul din concurs, dar să păstrați aplicația sa în numărul total de aplicații pentru fiecare limbă.
 
-După ce ați primit  "**exam finished**", **print** fiecare participant în ordine **descending** după numărul **max** **points**, apoi după **username**, in următorul **format**:
+După ce ați primit  "examen terminat", **imprimați** fiecare participant în ordine **descendentă** după numărul **maximal** de **puncte**, apoi după **nume de utilizator**, în următorul **format**:
 
-"**Results:**
-\{**username**\} \| \{**points**\}
-..."
+Rezultate:
+\{username\} \| \{points\}
+…
 
-După ce am imprimat fiecare limbă folosită în examen, ordonăm **descending** după numărul total **submission count** și **then** după **name** limbii, in următorul format:
+După ce am imprimat fiecare limbă folosită în examen, ordonăm **descendent** după numărul total **număr observații** și **după aceea** conform **nume** limbii, în următorul format:
 
-"**Submissions:**
-\{**language**\} - \{**submissionsCount**\}
-..."
+Submisii:
+\{language\} - \{submissionsCount\}
+…
 
-## Intrare / Constraints
-Pânpă primiți "**exam finished**", veți primi aplicațiile participanților în formatul următor: "\{**username**\}-\{**language**\}-\{**points**\}"
-Puteți primi o comandă de interzicere -> "\{**username**\}-**banned**"
-Punctele participantului vor fi un integer valid în gama \[0-100\]
+## Intrare / Limitări
+Până primiți "examen terminat", veți primi aplicațiile participanților în formatul următor: "\{username\}-\{language\}-\{points\}"
+Puteți primi o comandă de interzicere -> "\{username\}-banned"
+Punctele participantului vor fi un număr întreg valid în gama \[0-100\]
 
 ## Ieșire
-- Imprimați rezultatele examenului pentru fiecare participant, ordonate descendent după numărul de participanți și apoi după username, în următorul format:
+- Imprimați rezultatele examenului pentru fiecare participant, ordonate descendent după numărul de participanți și apoi după nume de utilizator, în următorul format:
 
-"**Results:**
-\{**username**\} \| \{**points**\}
-..."
-- După ce am printat fiecare limbă, ordonăm descendent după numărul total de aplicații și apoi după numele limbii, în formatul următor: 
+Rezultate:
+\{username\} \| \{points\}
+…
+- După ce am imprimat fiecare limbă, ordonăm descendent după numărul total de aplicații și apoi după numele limbii, în formatul următor: 
 
-"**Submissions:**
-\{**language**\} - \{**submissionsCount**\}
-..."
+Submisii:
+\{language\} - \{submissionsCount\}
+…
 
 
-### Exemplu
-|**Intrare**|**Ieșire** |
+### Exemple
+| **Input** | **Output** |
 | --- | --- |
 | Peter-Java-91 | Results: |
 | George-C#-84 | Peter \| 91 |

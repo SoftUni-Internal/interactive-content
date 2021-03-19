@@ -1,8 +1,12 @@
-# Manipulating Strings
+# Manipularea Șirurilor
+
 [slide hideTitle]
 # Concatenare
 
-- Folosirea  `+` sau `+ =` operatori
+Există **două** moduri de a concatena un `șir`
+
+- Folosind operatorii `+` sau `+ =`
+
 ```java live
 String text = "Hello" + ", " + "SoftUni";
 
@@ -10,7 +14,8 @@ text += "!";
 
 System.out.println(text); // "Hello, SoftUni!"
 ```
-- Folosind metoda `concat ()`
+- Folosind metoda `concat()`
+
 ```java live
 String greet = "Hello, ";
 
@@ -25,7 +30,7 @@ System.out.println(result); // "Hello, SoftUni!"
 
 [slide hideTitle]
 
-# Joining Strings
+# Unirea Șirurilor
 
 
 [/slide]
@@ -40,7 +45,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -49,7 +54,7 @@ public class Main {
 ## Descriere
 Scrieți un program care citește o **matrice de șiruri**.
 
-Fiecare șir se repetă **n** ori, unde **n** este **lungimea a șirului**.
+Fiecare șir se repetă **n** ori, unde **n** este **lungimea șirului**.
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -132,13 +137,11 @@ linearlinearlinearlinearlinearlinear
 
 [slide hideTitle]
 
-# Şiruri de Caractere
+# Subșir
 
-As the name suggests, `substring` extracts only a **part** of a `String`.
+După cum sugerează numele, `substring` reprezintă doar o **parte** dintr-un `String`.
 
-- `substring (int startIndex)` - returnează **Şir nou** care conține șiruri de caractere din cele date
-
-  șir din specificat **startIndex** (**inclusiv**)
+- `substring (int startIndex)` - Returnează un **șir nou** care conține subșirul din șirul dat, de la **startIndex** specificat (**inclusiv**)
 
 ```java live
 String text = "My name is John";
@@ -148,9 +151,7 @@ String extractWord = text.substring(11);
 System.out.println(extractWord); // John
 ```
 
-- `substring(int startIndex, int endIndex)` - returnează **nou șir** conținând șirul de
-
-  șirul dat de specificatul **începeIndex** (inclusiv) la **sfârşiIndex** (exclusiv)
+- `substring(int startIndex, int endIndex)` - Returnează un **șir nou** începând de la **startIndex** specificat (inclusiv) până la **endIndex** (exclusiv)
 
 ```java live
 String fullName = "John Doe";
@@ -165,10 +166,11 @@ System.out.println(firstName); // John
 
 [slide hideTitle]
 
-# În Căutarea
-It is possible to search for the first or last occurences of a pattern in a string:
+# Căutarea
 
-- `indexOf()` - se returnează **primul index de potrivire**, dacă nu există **nu se potrivește** se returnează **- 1** 
+Este posibilă căutarea primelor sau ultimelor apariții ale unor tipare într-un șir:
+
+- `indexOf()` - Returnează **primul indice potrivit**, dacă nu există **o potrivire** se returnează **-1** 
 
 ```java live 
 String fruits = "banana, apple, kiwi, banana, apple";
@@ -179,7 +181,7 @@ System.out.println(fruits.indexOf("orange"));    // -1
 
 ```
 
-- `lastIndexOf()` - găsește ultima apariție
+- `lastIndexOf()` - Găsește ultima apariție
 
 ```java live
 String fruits = "banana, apple, kiwi, banana, apple";
@@ -201,7 +203,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-       // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -212,22 +214,23 @@ Pe **prima linie** veți primi un **șir**.
 
 Pe **a doua linie** veți primi un **al doilea șir**.
 
-Scrieți un program care **elimină toate aparițiile** din **primul șir** din **al doilea** până când nu există nicio potrivire.
+Scrieți un program care **elimină toate aparițiile** **primului șir** din **al doilea** până când nu există nicio potrivire.
 
-La sfârșit **tipăriți șirul rămas**
+La sfârșit **tipăriți șirul rămas**.
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
 | --- | --- |
 | ice | kgb |
+| kicegiciceeb |  |
 
 # Sugestii
-- **Citiți intrarea**
-- Găsiți **primul index** unde apare cheia
+- **Citiți intrarea.**
+- Găsiți **primul indice** unde apare cuvântul cheie.
     - utilizați metoda încorporată `indexOf()`
 - **Eliminați potrivirea**
     - utilizați metoda încorporată `replace(String oldValue, String newValue)`
-- **Repetați-l** până când textul **nu mai conține cheia**
+- **Repetați** până când textul **nu mai conține cuvântul cheie**
 
 
 [/task-description]
@@ -295,11 +298,11 @@ stration
 
 [slide hideTitle]
 
-# Împărțirea
+# Împărțire
 
- A `String` could be split by **one** or **multiple** criteria, using the `split()` method.
+ Un `String` poate fi împărțit în funcție de **unul** sau **mai multe** criterii, folosind metoda `split()`.
 
-- `split()` - împarte un șir de un model dat
+- *Împărțirea* unui șir în funcție de un **model** dat
 
 ```java live
 String text
@@ -311,7 +314,7 @@ System.out.println(words[1]);
 System.out.println(words[2]);
 ```
 
-- `split()` - împarte prin mai multe separatoare
+- Împărțirea prin **separatoare multiple**
 
 ```java live
 
@@ -329,9 +332,9 @@ System.out.println(String.join(", ",words));
 
 # Înlocuire
 
-Java also makes it possible to make **replacements** in a String.
+Java face posibilă **înlocuirea** într-un șir. 
 
-- `replace(match, replacement)` - **înlocuiește toate aparițiile** și returnează un **șir nou** (șirurile sunt imuabile)
+- `replace(match, replacement)` - **Înlocuiește toate aparițiile** și returnează un **șir nou** (șirurile sunt imuabile)
 
 ```java live
 String text = "I have three bananas, three oranges, three apples.";
@@ -363,7 +366,7 @@ public class Main {
 ## Descriere
 Scrieți un program care acceptă un **text** și un **șir de cuvinte interzise**.
 
-**Toate cuvintele incluse** în **lista de interdicții** trebuie **înlocuite** cu **asteriscuri** \"__\*__\", egală cu **lungimea cuvântului.**
+**Toate cuvintele incluse** în **lista de interdicții** trebuie **înlocuite** cu **asteriscuri** \"__\*__\", în număr egal cu **lungimea cuvântului.**
 
 Intrările din lista de interdicții vor fi separate printr-o **virgulă** și **spațiu** ", ".
 
@@ -375,9 +378,8 @@ Intrările din lista de interdicții vor fi separate printr-o **virgulă** și *
 
 
 # Sugestii
-
 - **Citiți intrarea**.
-- **Înlocuiți toate cuvintele de interdicție** din text **cu** **asterisc** \(__\*__\)
+- **Înlocuiți toate cuvintele interzise** din text **cu** **asterisc** \(__\*__\)
    - utilizați **metoda încorporată** `replace(banWord, replacement)`
 
 

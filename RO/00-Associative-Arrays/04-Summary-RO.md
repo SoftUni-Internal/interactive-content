@@ -1,14 +1,16 @@
 [slide hideTitle]
 # Rezumat
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-36-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 ## In această lecție ați învățat:
 
 - Map conține perechi `{key -> value}`
-    - keyset cuprinde un set de chei unice
-    - values cuprinde o colecție de valori 
-    - iterarea over map consideră intrările ca `Map.Entry<K, V>`
+   - `keyset`  cuprinde un set de chei unice
+   - `values` cuprinde o colecție de valori 
+    - iterarea prin map consideră intrările ca `Map.Entry<K, V>`
+
 - Lambda și Stream API ajută la procesarea colecțiilor 
 
 ```java
@@ -22,10 +24,15 @@ public class Main {
 ```
 ## In următoarea lecție veți învăța:
 
-- Ce este un String
-- Manipularea String-urilor
-- Construcția și modificarea String-urilor 
-    - cum se folosește Clasa StringBuilder 
-    - de ce concatenarea este o operație înceată
+-Clase
+  -DefiniȚia claselor
+  -Metode, proprietăți, câmpuri
+
+-Obiecte 
+  - Definiție
+  - Valori
+
+-Clase încorporate 
+
 
 [/slide]

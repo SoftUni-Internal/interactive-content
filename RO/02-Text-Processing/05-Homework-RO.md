@@ -1,8 +1,8 @@
-# Homework
+# Teme Pentru Acasă
 
 
 [slide hideTitle]
-# Problem: Valid Usernames
+# Problemă: Valid Usernames
 [code-task title="Valid Usernames" taskId="Java-Fundamentals-2-Text-Processing-Valid-Usernames" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -10,19 +10,19 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care citește numele utilizatorilor pe o singură linie (alăturat de ", ") și **tipărește toate numele de utilizatori valizi**.
+Scrieți un program care citește numele utilizatorilor pe o singură linie (însoțite de ", ") și **tipărește toate numele de utilizatori valizi**.
 
-Un **nume de utilizator valid** este:
-- Are **lungime între 3 și 16 caractere**
+Un **nume de utilizator valid**:
+- Are **lungimea între 3 și 16 caractere**
 - Conține **numai litere, cifre, cratime și sublinieri**
-- Nu are **simboluri redundante** înainte, după sau între ele
+- Nu are **simboluri redundante** înainte, după sau între ele.
 
 ### Exemplu
 |**Intrare**|**Ieșire** |
@@ -114,7 +114,7 @@ bogart
 
 
 [slide hideTitle]
-# Problem: Character Multiplier
+# Problemă: Character Multiplier
 [code-task title="Character Multiplier" taskId="Java-Fundamentals-2-Text-Processing-Character-Multiplier" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -122,18 +122,18 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Creați o metodă **care ia două șiruri** ca argumente și **returnează suma codurilor de caractere înmulțite** (înmulțiți str1 \[0\] cu str2 \[0\] și adăugați suma totală)
+Creați o **metodă care ia două șiruri** ca argumente și **returnează suma codurilor caracterelor lor înmulțite** (înmulțiți str1 \[0\] cu str2 \[0\] și adăugați suma totală)
 
 Apoi **continuați cu următoarele două caractere**.
 
-**Dacă una dintre șiruri este mai lungă decât cealaltă**, **adăugați codurile de caractere rămase** la suma totală fără multiplicare.
+**Dacă unul dintre șiruri este mai lung decât celălalt**, **adăugați codurile de caractere rămase** la suma totală fără multiplicare.
 
 ### Exemplu
 |**Intrare**|**Ieșire** |
@@ -216,7 +216,7 @@ ioers;hiuesyv843sao384uyvP309308u 0s8o48eieoveatgo4rh;owia390'a92qa
 
 
 [slide hideTitle]
-# Problem: Extract File
+# Problemă: Extract File
 [code-task title="Extract File" taskId="Java-Fundamentals-2-Text-Processing-Extract-Files" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -224,7 +224,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -316,7 +316,7 @@ File extension: sln
 [/slide]
 
 [slide hideTitle]
-# Problem: Caesar Cipher
+# Problemă: Caesar Cipher
 [code-task title="Caesar Cipher" taskId="Java-Fundamentals-2-Text-Processing-Caesar-Cipher" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -324,7 +324,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -408,7 +408,7 @@ P\|#Pxp#wulhv#wr#eh#frro#e\|#vd\|lqj#wkdw#vkh#olnhv#doo#wkh#vdph#wklqjv#wkdw#L#g
 [/slide]
 
 [slide hideTitle]
-# Problem: Multiply Big Number
+# Problemă: Multiply Big Number
 [code-task title="Multiply Big Number" taskId="Java-Fundamentals-2-Text-Processing-Multiply-Big-Number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -416,14 +416,14 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Ți se oferă **două rânduri**-**primul poate fi un număr foarte mare** (de la 0 la 1050).
+Se dau **două rânduri**- **primul poate fi un număr foarte mare** (de la 0 la 1050).
 
 Cel de-al doilea **va fi o singură cifră** (de la 0 la 9).
 
@@ -523,7 +523,7 @@ Trebuie să afișați produsul acestor numere.
 [/slide]
 
 [slide hideTitle]
-# Problem: Replace Repeating Chars
+# Problemă: Replace Repeating Chars
 [code-task title="Replace Repeating Chars" taskId="Java-Fundamentals-2-Text-Processing-Replace-Repeating-Chars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -531,14 +531,14 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care **citește un șir din consolă** și **înlocuiește orice secvență din aceleași litere cu o singură literă corespunzătoare**.
+Scrieți un program care **citește un șir din consolă** și **înlocuiește orice secvență formată din aceleași litere cu o singură literă corespunzătoare**.
 
 ### Exemplu
 |**Intrare**|**Ieșire** |
@@ -612,7 +612,7 @@ asdasdasd
 
 
 [slide hideTitle]
-# Problem: String Explosion
+# Problemă: String Explosion
 [code-task title="String Explosion" taskId="Java-Fundamentals-2-Text-Processing-String-Explosion" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -620,7 +620,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -631,13 +631,13 @@ public class Main {
 
 Imediat după marcare, va exista un număr întreg, care semnifică **puterea exploziei**.
 
-Ar trebui să **eliminați x caractere** (unde x este punctul forte al exploziei), **începând după caracterul lovitura** ('\>').
+Trebuie să **eliminați x caractere** (unde x este forța exploziei), **începând după caracterul care marchează explozia** ('\>').
 
-Dacă găsiți **un alt semn de explozie** ('\>') **în timp ce ștergeți caractere**, ar trebui să **adăugați forța exploziei anterioare**.
+Dacă găsiți **un alt semn de explozie** ('\>') **în timp ce ștergeți caractere**, trebuie să **adăugați forța exploziei anterioare**.
 
 Când toate caracterele sunt procesate, **tipăriți șirul fără caracterele șterse**.
 
-**Nu ar trebui să ștergeți caracterul de explozie** - '\>', dar **ar trebui să ștergeți întregii**, care reprezintă puterea.
+**Nu trebuie să ștergeți caracterul de explozie** - '\>', dar **trebuie să ștergeți numerele întregi**, care reprezintă puterea.
 
 ### Intrare
 Veți primi o singură linie cu șirul.
@@ -653,23 +653,23 @@ Imprimați ce a rămas din șir după explozii.
 ### Comentarii
 Prima explozie este la indicele 3 și are o putere de 1.
 
-Ștergem doar cifra după caracterul exploziei.
+Ștergem doar cifra după caracterul care marchează explozia.
 
-Șirul va arăta astfel: abv \>\> 1\> 2\> 2asdasd.
+Șirul va arăta astfel: abv\>\>1\>2\>2asdasd.
 
-A doua explozie este cu puterea unu și șirul se transformă în asta: abv \>\>\> 2\> 2asdasd
+A doua explozie este de putere unu și șirul se transformă în: abv\>\>\>2\>2asdasd
 
 A 3-a explozie are acum o putere de 2.
 
 Ștergem cifra și găsim o altă explozie.
 
-În acest moment șirul arată astfel: abv \>\>\>\> 2asdasd.
+În acest moment șirul arată astfel: abv\>\>\>\>2asdasd.
 
 A 4-a explozie este cu puterea 2.
 
-Mai avem 1 putere din explozia anterioară, adăugăm puterea exploziei actuale la ceea ce a rămas și asta se adaugă la o putere totală de 3.
+Mai avem 1 putere rămasă din explozia anterioară, adăugăm puterea exploziei actuale la ceea ce a rămas și asta însumează o putere totală de 3.
 
-Ștergem următoarele trei caractere și primim șirul abv \>\>\>\> dasd.
+Ștergem următoarele trei caractere și obținem șirul abv \>\>\>\> dasd.
 
 Nu mai avem explozii și imprimăm rezultatul: abv\>\>\>\>dasd.
 
@@ -729,7 +729,7 @@ frtkvd>>>
 [/slide]
 
 [slide hideTitle]
-# Problem: Letters Change Numbers
+# Problemă: Letters Change Numbers
 [code-task title="Letters Change Numbers" taskId="Java-Fundamentals-2-Text-Processing-Letters-Change-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -737,26 +737,26 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Lui John îi place Matematica.
+Lui John îi place matematica.
 
-Dar îi place mult și alfabetul englezesc.
+Dar îi place mult și alfabetul limbii engleze.
 
-A inventat un **joc cu cifre și litere** din alfabetul englez.
+A inventat un **joc cu cifre și litere** din alfabetul limbii engleze.
 
 Jocul a fost simplu.
 
 Obțineți un șir **format dintr-un număr între două litere**.
 
-În funcție de, dacă litera **se afla în fața numărului** sau **după ea, veți efectua diferite operații matematice** asupra numărului pentru a obține rezultatul.
+În funcție de poziția literei, adică dacă litera **se află în fața numărului** sau **după el, veți efectua diferite operații matematice** asupra numărului pentru a obține rezultatul.
 
-**Mai întâi începeți cu litera înaintea numărului**.
+**Mai întâi începeți cu litera dinaintea numărului**.
 
 - Dacă este **majusculă**, **împărțiți numărul la poziția literei** în alfabet
 
@@ -764,30 +764,26 @@ Obțineți un șir **format dintr-un număr între două litere**.
 
 Apoi **treceți la litera de după număr**.
 
-- Dacă este **majusculă, îi scădeți poziția** numărului care rezultă
+- Dacă este **majusculă, îi scădeți poziția** din numărul care rezultă
 
 - Dacă este **cu litere mici, îi adăugați poziția** la numărul care rezultă
 
-Dar jocul a devenit prea ușor pentru John si cu adevărat rapid.
+Dar jocul a devenit prea ușor pentru John foarte repede.
 
 El a decis să-l complice puțin **făcând același lucru, dar cu mai multe șiruri, urmărind doar suma totală** a tuturor rezultatelor.
 
 Odată ce a început să rezolve acest lucru cu **mai multe șiruri și numere mai mari**, a devenit destul de greu să-l facă doar în mintea lui.
 
-Deci, el vă cere să **scrieți un program care să calculeze suma tuturor numerelor** după ce au fost efectuate operațiunile de pe fiecare număr.
+Deci, el vă cere să **scrieți un program care să calculeze suma tuturor numerelor** după ce au fost efectuate operațiile asupra fiecărui număr.
 
 
 **De exemplu**, vi se oferă secvența "A12b s17G":
 
 Avem două șiruri - "A12b" și "s17G". 
 
-Facem **operațiunile pe fiecare și le însumăm**. 
+Facem **operațiile pe fiecare și le însumăm**. **Începem cu litera dinaintea numărului** din primul șir.
 
-**Începem cu litera dinaintea numărului** din primul șir.
-
-A este **majusculă și poziția sa în alfabet este 1**. 
-
-Deci **împărțim numărul 12 cu poziția 1** (12/1 = 12).
+A este **majusculă și poziția sa în alfabet este 1**. Deci **împărțim numărul 12 la poziția 1** (12/1 = 12).
 
 Apoi **ne mutăm la litera de după număr**. b este **cu litere mici** și poziția sa **este 2**.
 
@@ -804,19 +800,17 @@ Intrarea provine de pe consolă ca o singură linie, ținând secvența șiruril
 
 Șirurile sunt separate de unul sau mai multe spații albe.
 
-Datele de intrare vor fi întotdeauna valabile și în formatul descris. 
-
-Nu este nevoie să o verificați în mod explicit.
+Datele de intrare vor fi întotdeauna valabile și în formatul descris. Nu este nevoie să o verificați în mod explicit.
 
 ### Ieșire
-Imprimați pe consolă un singur număr: suma totală a tuturor numerelor procesate rotunjite la două cifre după separatorul zecimal.
+Imprimați pe consolă un singur număr: suma totală a tuturor numerelor procesate rotunjită la două cifre după separatorul zecimal.
 
 ### Exemplu
 |**Intrare**|**Ieșire** |
 | --- | --- |
 | A12b s17G | 330.00 |
 
-### Comments
+### Comentarii
 12\/1=12, 12+2=14, 17\*19=323, 323–7=316, 14+316=330
 
 ### Exemplu

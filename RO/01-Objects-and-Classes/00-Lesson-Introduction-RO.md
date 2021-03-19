@@ -2,14 +2,14 @@
 
 [slide hideTitle]
 
-# Conținutul Lecției
+# Conținutul lecției
 
 
-## În această lecție veți afla despre:
+## În această lecție veți învăța despre:
 
 **1. Clase**
 
-- Ce clase reprezintă
+- Ce reprezintă clasele
 
 - Cum se definește clasa simplă
 

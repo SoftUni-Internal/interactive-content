@@ -2,33 +2,32 @@
 
 [slide hideTitle]
 
-# Conținutul Lecției
+# Conținutul lecției
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## In această lecție veți învăța despre:
 
-**1. Maps**
+**1. Matrici asociative**
 
-- Ce sunt maps
+- Definiție
 
-- Colecții de perechi Key și Value
+- Declarare și inițializare
 
-**2. Metode Map**
+**2. Iterare**
 
-- metoda `put()` 
+- Iterare
 
-- metoda `remove()` 
+- Metode incorporate
 
-**3. Expresii Lambda**
+**2.  Funcții Lambda**
 
-- Funcții Lambda
+**3. Stream API**
 
+- Definiția lui Stream 
 
-**4. Stream API**
+- Procesarea colecțiilor prin Stream API
 
-- Ce este  Stream
-
-- Cum procesăm colecțiile cu Stream API
-
-- Filtrarea și sortarea  Colecțiilor
+- Filtrarea și sortarea colecțiilor
 
 [/slide]

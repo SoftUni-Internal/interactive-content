@@ -1,21 +1,21 @@
-# Teme de Casă
+# Teme Pentru Acasă
 
 [slide hideTitle]
-# Problem: Articles
+# Problemă: Articles
 
 [code-task title="Articles" taskId="java-fund-2-Objects-and-Classes-Articles" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [task-description]
 
 ## Descriere
-Creați o clasă de articol cu următoarele proprietăți:
+Creați o clasă articol cu următoarele proprietăți:
 - Title - un șir
 - Content - un șir
 - Author - un șir
 
 Clasa ar trebui să aibă un constructor și următoarele metode:
-- **Edit** (new content) - modificați conținutul vechi cu cel nou
-- **ChangeAuthor** (new author) - schimbați autorul
-- **Rename** (new title) - modificați titlul articolului
+- **edit** (new content) - schimbați conținutul vechi cu cel nou
+- **changeAuthor** (new author) - schimbați autorul
+- **rename** (new title) - modificați titlul articolului
 - **override ToString** - tipărește articolul în următorul format: 
 
 "\{title\} - \{content\}:\{author\}"
@@ -25,6 +25,7 @@ Scrieți un program care citește un articol în următorul **format** "\{title\
 Pe linia următoare, veți obține un **număr n**.
 
 Pe **următoarele n linii**, veți primi una dintre următoarele **comenzi**:
+
 - "Edit: \{new content\}" 
 - "ChangeAuthor: \{new author\}" 
 - "Rename: \{new title\}". 
@@ -129,13 +130,13 @@ The haunting of hill house - better content2:  Shirley Jackson
 
 
 [slide hideTitle]
-# Problem: Opinion Poll
+# Problemă: Opinion Poll
 
 [code-task title="Opinion Poll" taskId="java-fund-2-Objects-and-Classes-Opinion-Poll" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [task-description]
 
 ## Descriere
-Folosind **Clasa persoană**, scrieți un program care citește de pe consolă **N linii de informații personale** și apoi **imprimă toate persoanele** a căror **vârstă este mai mare de 30 de ani** în următoarele **format**:
+Folosind **clasa Person**, scrieți un program care citește de pe consolă **N linii de informații personale** și apoi **imprimă toate persoanele** a căror **vârstă este mai mare de 30 de ani** în următorul **format**:
 
 "\{name\} - \{age\}"
 
@@ -339,22 +340,22 @@ Annie - 31
 [/slide]
 
 [slide hideTitle]
-# Problem: Articles 2.0
+# Problemă: Articles 2.0
 [code-task title="Articles 2.0" taskId="java-fund-2-Objects-and-Classes-Articles-2.0" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [task-description]
 
 ## Descriere
 Schimbați programul "Articles", astfel încât să puteți stoca o **listă de articole**.
 
-Nu veți mai avea nevoie de metode (**cu excepția** metodei ToString).
+Nu veți mai avea nevoie de metode (**cu excepția** metodei toString).
 
 Pe **prima linie**, veți primi un **număr n**.
 
-În următoarele **n linii**, veți primi câteva **articole în același format ca sarcina anterioară** ("\{title\}, \{content\}, \{author\}").
+Pe următoarele **n linii**, veți primi câteva **articole în același format ca sarcina anterioară** ("\{title\}, \{content\}, \{author\}").
 
 În cele din urmă, veți primi unul dintre cele **trei criterii**: "title", "content", "author".
 
-Trebuie să comandați articolele **alfabetic** pe baza comenzii și să le imprimați sortate după **criteriile** date.
+Trebuie să ordonați articolele **alfabetic** pe baza comenzii și să le imprimați sortate după **criteriile** date.
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -481,59 +482,52 @@ Most Valuable Playboy - content4: Lauren Blakely
 
 
 [slide hideTitle]
-# Problem: Students
+# Problemă: Students
 
 [code-task title="Students" taskId="java-fund-2-Objects-and-Classes-Students" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
 
 ## Descriere
-Scrieți un program care primește **n număr** de elevi cu note și imprimă dacă au trecut cu succes un test.
 
-Dacă **nota** este **mai mare sau egală cu 3,00**, testul este **trecut**.
+Scrieți un program care primește **un număr n de elevi** și îi **ordonează (descendent) în funcție de note** .
 
-Fiecare elev trebuie să aibă **First name** (string), **Last name** (string) și **grade** (floating-point number).
+Fiecare elev trebuie să aibă **first name** (șir), **Last name** (șir) și **grade** (număr în virgulă mobilă).
 
 ### Intrare
-- Prima linie va fi un **număr n**
-- Următoarele **n linii** veți primi informații despre student în **format**
 
-"\{first name\} \{second name\} \{grade\}"
+- Prima linie va fi un **număr n**
+- Următoarele **n linii** veți primi informații despre elev în **formatul** "\{first name\} \{second name\} \{grade\}"
 
 ### Ieșire
-- Dacă **testul este trecut**, tipăriți:
-
-"\{first name\} \{second name\}: \{PASS\}"
-
-- Dacă **testul nu este trecut**, tipăriți:
-
-"\{first name\} \{second name\}"
+-Tipăriți fiecare elev în următorul format "\{first name\} \{second name\}: \{grade\}"
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
-| 4 | Lakia Eason: PASS |
-| Lakia Eason 3.90 | Prince Messing: PASS |
-| Prince Messing 5.49 | Akiko Segers |
-| Akiko Segers 2.85 | Rocco Erben: PASS |
+| 4 | Rocco Erben: 6.00 |
+| Lakia Eason 3.90 | Prince Messing: 5.49 |
+| Prince Messing 5.49 | Akiko Segers: 4.85 |
+| Akiko Segers 2.85 | Lakia Eason: 3.90 |
 | Rocco Erben 6.00 | |
 
+
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
 4
 Lakia Eason 3.90
 Prince Messing 5.49
-Akiko Segers 2.85
+Akiko Segers 4.85
 Rocco Erben 6.00
 [/input]
 [output]
-Lakia Eason: PASS
-Prince Messing: PASS
-Akiko Segers
-Rocco Erben: PASS
+Rocco Erben: 6.00
+Prince Messing: 5.49
+Akiko Segers: 4.85
+Lakia Eason: 3.90
 [/output]
 [/test]
 [test]
@@ -545,10 +539,10 @@ Mora Tod 2.78
 Pete Kendrick 2.61
 [/input]
 [output]
-Sydnie Britton: PASS
-Amias Mathews
-Mora Tod
-Pete Kendrick
+Sydnie Britton: 5.79
+Mora Tod: 2.78
+Pete Kendrick: 2.61
+Amias Mathews: 2.30
 [/output]
 [/test]
 [test]
@@ -559,9 +553,9 @@ Deena Banks 5.83
 Asher West 5.76
 [/input]
 [output]
-Cletus Henry: PASS
-Deena Banks: PASS
-Asher West: PASS
+Deena Banks: 5.83
+Asher West: 5.76
+Cletus Henry: 4.34
 [/output]
 [/test]
 [test]
@@ -572,9 +566,9 @@ Deena Banks 5.33
 Asher West 3.59
 [/input]
 [output]
-Cletus Henry: PASS
-Deena Banks: PASS
-Asher West: PASS
+Cletus Henry: 5.50
+Deena Banks: 5.33
+Asher West: 3.59
 [/output]
 [/test]
 [test]
@@ -588,12 +582,12 @@ Mora Tod 2.78
 Pete Kendrick 2.61
 [/input]
 [output]
-Sydnie Britton: PASS
-Cletus Henry: PASS
-Deena Banks: PASS
-Asher West: PASS
-Mora Tod
-Pete Kendrick
+Sydnie Britton: 5.79
+Cletus Henry: 5.50
+Deena Banks: 5.24
+Asher West: 4.59
+Mora Tod: 2.78
+Pete Kendrick: 2.61
 [/output]
 [/test]
 [test]
@@ -608,13 +602,13 @@ Mora Tod 2.78
 Pete Kendrick 2.61
 [/input]
 [output]
-Cletus Henry: PASS
-Deena Banks: PASS
-Asher West: PASS
-Sydnie Britton: PASS
-Amias Mathews
-Mora Tod
-Pete Kendrick
+Sydnie Britton: 5.79
+Cletus Henry: 5.50
+Deena Banks: 5.33
+Asher West: 3.59
+Mora Tod: 2.78
+Pete Kendrick: 2.61
+Amias Mathews: 2.30
 [/output]
 [/test]
 [/tests]
@@ -622,13 +616,16 @@ Pete Kendrick
 [/slide]
 
 
+
+
 [slide hideTitle]
-# Problem: Vehicle Catalogue
+# Problemă: Vehicle Catalogue
 [code-task title="Vehicle Catalogue" taskId="java-fund-2-Objects-and-Classes-Vehicle-Catalogue" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
 ## Descriere
-Până când primiți **comanda** "End" veți primi linii de intrare în format:
+Până când primiți **comanda** "`End`", veți primi linii de intrare în format:
+
 - \{typeOfVehicle\} \{model\} \{color\} \{horsepower\}
 
 După comanda "End", veți începe să primiți **modele de vehicule**. **Imprimați pentru fiecare vehicul primit** datele sale în **format**:
@@ -641,11 +638,11 @@ Color: \{colorOfVehicle\}
 
 Horsepower: \{horsepowerOfVehicle\}
 
-Când primiți comanda "Close the Catalogue", nu mai primiți **intrare și imprimați puterea medie** pentru mașini și camioane în **format**:
+Când primiți comanda "Close the Catalogue", **imprimați puterea medie** pentru mașini și camioane în **format**:
 
 "\{typeOfVehicles\} have average horsepower of \{averageHorsepower\}."
 
-Puterea medie este **calculată** prin **împărțirea sumei de cai putere pentru toate vehiculele de tip la numărul total de vehicule din același tip**.
+Puterea medie este **calculată** prin **împărțirea sumei de cai putere pentru toate vehiculele de acel tip la numărul total de vehicule de același tip**.
 
 Formatați răspunsul la **a doua zecimală**.
 
@@ -806,7 +803,7 @@ Trucks have average horsepower of: 365.67.
 
 
 [slide hideTitle]
-# Problem: Person ID
+# Problemă: Person ID
 
 [code-task title="Person ID" taskId="java-fund-2-Objects-and-Classes-Exercise-Person-ID" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -815,26 +812,27 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
+
 Veți primi **un număr necunoscut de linii**.
 
-Pe fiecare linie, veți primi **matrice cu 3 elemente**.
+Pe fiecare linie, veți primi o **matrice cu 3 elemente**.
 
-**Primul** element va fi **șir** și reprezintă **numele persoanei**.
+**Primul** element va fi de tip **șir** și reprezintă **numele persoanei**.
 
-Cel de-al doilea **element va fi un** șir **și va reprezent ID-ul persoanei**.
+Cel de-al **doilea** element va fi de tip **șir** și va reprezenta **ID-ul persoanei**.
 
-Ultimul element va fi un **întreg** și reprezintă **vârsta persoanei**.
+Ultimul element va fi un de tip **număr întreg** și reprezintă **vârsta persoanei**.
 
-Dacă primiți o persoană al cărei **ID ați primit deja**, atunci **actualizați** numele și vârsta ID-ului respectiv cu acel **al noii persoane**.
+Dacă primiți o persoană al cărei **ID l-ați primit deja**, atunci **actualizați** numele și vârsta ID-ului respectiv cu cele **ale noii persoane**.
 
-Când primiți **comanda** "End", **opriți** preluarea de date și **imprimați toți oamenii**.
+Când primiți **comanda** "End", **imprimați toate persoanele**.
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
