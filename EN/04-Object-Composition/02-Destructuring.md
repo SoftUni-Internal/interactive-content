@@ -60,7 +60,7 @@ After destructuring:
 
 Remember that "**firstObj**", "**secondObj**", and "**thirdObj**" are referencing the objects inside the "**classroom**" array.
 
-Now let us change the `firstObj.key` to be equal to "John Smith" and print out the "**classroom**".
+Now, let us change the `firstObj.key` to be equal to "John Smith", and print out the "**classroom**".
 
 We can see that the change has been reflected there too.
 

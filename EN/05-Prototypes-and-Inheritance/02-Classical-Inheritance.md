@@ -88,9 +88,9 @@ In the second, we print to the console the **Teacher** object with its parameter
 
 In JavaScript, classes are **based** on **prototype inheritance**.
 
-- They **do** **not** introduce a new inheritance model to JavaScript
+- They **do not** introduce a new inheritance model to JavaScript
 
-Classes in JavaScript **delegate** **blueprints** rather than create **blueprints**.
+Classes in JavaScript **delegate blueprints** rather than **creating them**.
 
 Not all methods will be copied when a class is inherited.  
 

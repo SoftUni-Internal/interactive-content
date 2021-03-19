@@ -71,7 +71,7 @@ Both **personalId** and **amount** are numbers.
 
 "**We have no customer with this ID!**"
 
-- Otherwise, return all the customer information in the following format:
+- Otherwise, **return all the customer information** in the following format:
 
 ```
 Bank name: {bankName}

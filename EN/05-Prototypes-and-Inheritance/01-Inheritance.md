@@ -37,8 +37,6 @@ It is called **simple inheritance**.
 
 This type of inheritance is only used for **extending** the parent class.
 
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance.png" /]
-
 Here is a basic **example**:
 
 ```js live
@@ -78,8 +76,6 @@ The **Dog** class will **inherit** all features of the **Pet** class.
 In **multilevel inheritance**, the **parent** class is inherited from the **grandchild** class through a **child** class.
 
 The **grandchild** class will obtain the features of the **parent** and the **child** classes.
-
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-1.png" /]
 
 Here is an **example**:
 
@@ -130,8 +126,6 @@ In **hierarchical inheritance**, multiple classes **inherit the traits** of a **
 
 The downside is that if we change something in the **parent** class, we need to change it in all of its **children**.
 
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-2.png" /]
-
 Here is an **example**:
 
 ```js
@@ -174,7 +168,5 @@ The problem with this type of inheritance comes when there are methods with the 
 The compiler will not know which one to prioritize, and the application will fail.
 
 **JavaScript does not support multiple inheritance.**
-
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-3.png" /]
 
 [/slide]

@@ -109,6 +109,8 @@ The buttons, including their parent `div` element, should be removed.
 </section>
 ```
 
+## Submission
+
 **Submit your solution in the body of the** `solve()` **function.**
 
 [/task-description]

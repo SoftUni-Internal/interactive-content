@@ -64,7 +64,7 @@ The resulting function takes in **one**, instead of **two** parameters.
 [/slide]
 
 [slide hideTitle]
-# Currying vs Partial Application
+# Currying vs. Partial Application
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-17-currying-vs-partial-application-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

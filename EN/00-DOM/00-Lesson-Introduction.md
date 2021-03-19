@@ -8,7 +8,7 @@
 
 **1. DOM**
 
-- What is the idea behind the DOM (Document Object Model)
+- What the idea behind the DOM (Document Object Model) is
 
 **2. DOM Methods**
 
@@ -32,6 +32,6 @@
 
 **7. BOM**
 
-- What is the BOM (Browser Object Model)
+- What the BOM (Browser Object Model) is
 
 [/slide]

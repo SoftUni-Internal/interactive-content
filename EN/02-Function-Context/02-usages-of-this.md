@@ -59,7 +59,7 @@ If there is a variable with the same name already defined and if it is in scope 
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-10-this-refers-to-the-parent-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Consider the example below:
+Take a look at this **example**:
 
 ```js live
 // Defining a function
@@ -88,7 +88,7 @@ Let us see what is going on in the code step by step to understand it better.
 
 Defining a function `printContext()` which checks if `this===global` (`this===window` if running it in the browser) and prints the result to the console.
 
-Creating an object **user** with two methods:
+Creating a **user** object with **two methods**:
 
 - `printContext: printContext` - stores the **printContext** function we defined in step 1 inside a method with the same name
 
@@ -123,7 +123,7 @@ Returns **true**, because now `this` is called by the function **globalFunction*
 
 When used in event handlers, `this` points to the specific element that the event fired from.
 
-If you create an HTML file and attach the following event handler to an element with id "button", what would the resulting output in the console be?
+If you create an HTML file and attach the following event handler to an element with id "button", what would the resulting output to the console be?
 
 ```js
 function solve() {

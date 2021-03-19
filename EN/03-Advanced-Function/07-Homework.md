@@ -370,7 +370,7 @@ You will receive a **numeric array** and a **string** as input parameters.
 
 The output should be the **sorted array**.
 
-## Examples
+# Examples
 
 |**Input**|**Output**|
 |---|---|
@@ -476,7 +476,7 @@ You will receive a series of arguments **passed** to your function.
 
 **Print to the console** the **type** and **value** of each argument passed into your function.
 
-## Example
+# Example
 
 ## Input
 
@@ -967,7 +967,7 @@ All fields should be named **exactly as described** \(their order is not importa
 
 Look at the sample output for more information.
 
-## Example
+# Example
 
 |**Input**|**Output**|**Explanation**|
 |---|---|---|
@@ -1164,6 +1164,8 @@ The robot is equipped with quantum field storage, so it can hold an **unlimited 
 
 Their availability is checked in the **order** in which they **appear** in the recipe, so the error should reflect the first requirement that was not met.
 
+## Submission
+
 Submit a **closure** that returns the management function. 
 
 The management function takes one parameter.
@@ -1203,6 +1205,7 @@ manager('prepare lemonade 4');
 // Error: not enough carbohydrate in stock
 ```
 
+# Examples
 ## Example 1
 
 |**Input**|**Output**|

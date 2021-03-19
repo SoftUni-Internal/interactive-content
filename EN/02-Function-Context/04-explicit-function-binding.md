@@ -304,8 +304,7 @@ Each object has **two properties**: the figure's **area** and **volume**.
 
 ```
 
-**Note: Submit only the solve function.**
-
+# Example
 ## Example 1
 
 ## Input
@@ -352,6 +351,10 @@ area, vol, '[
   { area: 4400, volume: 1100000 }
 ]
 ```
+
+## Submission
+
+Submit only the `solve()` function.
 
 [/task-description]
 [code-io /]
