@@ -8,8 +8,6 @@
 
 **Queues** are data structures similar to **stacks**. 
 
-Queues keeps their elements in sorted order. 
-
 Queue elements are ordered based on the **FIFO** principle - **First In First Out**. 
 
 When you add an element, it is always placed **at the bottom** of the queue. 
@@ -26,7 +24,7 @@ This data structure is modeled based on queues in real life, where the person wh
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-28-Queue-Abstract-Data-Type-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- Adding an element to the the end of the queue (the bottom of the queue):
+- Adding an element to the end of the queue (the bottom of the queue):
 
 [image assetsSrc="Java-Advanced-Stack-and-Queues-4.png" /]
 
@@ -47,27 +45,27 @@ This data structure is modeled based on queues in real life, where the person wh
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-29-30-34-ArrayDeque-Java-Implementation-1-2-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- Queue Implementation using `ArrayDeque<E>`:
+- Queue Implementation using the `ArrayDeque<E>` class:
 
 ```java
 ArrayDeque<Integer> queue = new ArrayDeque<>();
 ```
 
-- `offer(element)` and `add(element)` - both methods add elements to the end of the queue. The difference between them is that
+- `offer(element)` and `add(element)` - both methods add the element to the end of the queue. The difference between them is that
 
-    - `add()` - throws **exception** if the queue is full
+    - `add()` - throws an **exception** if the queue is full
 
     - `offer()` - returns **false** if the queue is full
 
 
 - `poll()` and `remove()` - both methods remove the first (the top) element from the queue
 
-    - `remove()` - throws **exception** if the queue is empty
+    - `remove()` - throws an **exception** if the queue is empty
 
     - `poll()` - **returns null** if the queue is empty, otherwise returns the removed element
 
 
-- `peek()` - gets the value of the first element
+- `peek()` - returns the value of the first element
 
 [/slide]
 
@@ -79,7 +77,7 @@ ArrayDeque<Integer> queue = new ArrayDeque<>();
 
 ## Add() / Offer()
 
-Both functions are used for adding elements to the top of the queue.
+Both methods are used for adding elements to the top of the queue.
 
 ```java live 
 ArrayDeque<Integer> queue = new ArrayDeque<>();
@@ -95,19 +93,18 @@ They are used in different scenarios:
 
 - if the queue has no size restriction (unlimited capacity queue) - then you can use either of the two functions
 
-- if the queue is capacity-restricted, it is generally better to use `offer()` because if the function fails, it simply returns  **false**
+- if the queue is capacity-restricted, it is generally better to use `offer()` because if the function fails, it simply returns **false**
 
-- if you use `add()` with a capacity-restricted queue and it failed, this would result in an **IllegalStateException** that has to be handled
+- if you use `add()` with a capacity-restricted queue and it fails, this would result in an **IllegalStateException** that has to be handled
 
 [image assetsSrc="Java-Advanced-Stack-and-Queues-7.gif" /]
 
 
 ## Remove() / Poll()
 
-Both functions remove the first/top element of the queue, removing it from the queue.
+Both functions remove the first (top) element from the queue, removing it from the queue.
 
 The main difference between the two is that when used on an empty queue `poll()` returns **null**, while `remove()` throws a **NoSuchElementException**.
-
 
 Here is an example with `poll()`:
 
@@ -122,23 +119,23 @@ queue.offer(10);
 System.out.println("The removed element is: " + queue.poll());
 queue.forEach(element -> System.out.print(element + " "));
 ```
-It does not matter if we use **remove** or **poll** here. Both would do exactly the same, because the queue contains some elements.
+It does not matter if we use **remove()** or **poll()** here. Both would do exactly the same because the queue contains elements.
 
 Things are different when working with an empty queue:
 
-``java live
+```java live
 ArrayDeque<Integer> queue = new ArrayDeque<>();
 System.out.println("The removed element is: " + queue.poll());
 ```
 
-The above results in **null** but if you try using `remove()` in the same scenario, you end up with an error:
+The above result will be **null** but if you try using `remove()` in the same scenario, the method will throw an error:
 
-``java live
+```java live
 ArrayDeque<Integer> queue = new ArrayDeque<>();
 System.out.println(queue.remove());
 ```
 
-Running the last piece of code should result in a **NoSuchElementException**.
+Running the last piece of code will result in a **NoSuchElementException**.
 
 
 [image assetsSrc="Java-Advanced-Stack-and-Queues-8.gif" /]
@@ -146,7 +143,7 @@ Running the last piece of code should result in a **NoSuchElementException**.
 
 ## Peek()
 
-This function returns the first element of the queue (the bottom element), without removing it.
+This function returns the first element of the queue (the bottom element) without removing it.
 
 ```java live
 ArrayDeque<Integer> queue = new ArrayDeque<>();
@@ -193,7 +190,7 @@ Integer[] arr = queueOfCars.toArray();
     }
 ```
 
-- `contains(element)` - checks if the queue contains the element or not. Returns **true** if the element is found and **false** if it is not found:
+- `contains(element)` - checks if the queue contains the specified element. Returns **true** if the element is found and **false** if it is not:
 
 ```java live
 ArrayDeque<String> queueOfCars = new ArrayDeque<>();
@@ -211,7 +208,7 @@ System.out.println(queueOfCars.contains("BMW 7"));
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-35-Queue-Overview-of-all-operations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The animation below illustrates all the queue operations that we can use for solving the upcoming programming problems.
+The animation illustrates all the queue operations that we can use for solving the upcoming programming problems.
 
 [image assetsSrc="Java-Advanced-Stack-and-Queues-11.gif" /]
 
@@ -234,11 +231,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Hot potato is a game in which **kids form a circle and start passing a hot potato**.
+Hot potato is a game, in which **kids form a circle and start passing a hot potato**.
 
 The counting starts with the first kid.
 
-**Every n-th toss, the kid which holds the potato leaves the game**.
+**Every n-th toss the kid, which holds the potato, leaves the game**.
 
 When a kid leaves the game, it passes the potato forward.
 
@@ -417,11 +414,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Rework the previous problem so that a **kid is removed only on a composite (not prime) cycle** (cycles start from 1).
+Rework the previous solution so that a **kid is removed only on a composite (not prime) cycle** (cycles start from 1).
 
-If a **cycle is prime**, just **print the kid's name**.
+If a **cycle is prime**, **print the kid's name**.
 
-As before, print the name of the last remaining kid.
+Print the name of the last remaining kid.
  
 ## Examples
 | **Input** | **Output** |
