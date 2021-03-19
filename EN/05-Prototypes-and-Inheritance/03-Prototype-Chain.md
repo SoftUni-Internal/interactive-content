@@ -76,7 +76,7 @@ console.log(sum);
 
 In this example, we created a function called **Rectangle**, which accepts as parameters **width** and **heigh**.
 
-To the **Rectangle** function, we attach another one that will multiply the **width** and the **heigh**.
+To the **Rectangle** function, we attach another one that will multiply the **width** and the **height**.
 
 The result will be printed in the console.
 
