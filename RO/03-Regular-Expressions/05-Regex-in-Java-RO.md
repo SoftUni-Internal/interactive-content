@@ -150,8 +150,8 @@ public class Main {
 ## Descriere
 Scrieți un program Java pentru a se potrivi cu **numele complete** dintr-o listă de nume și **imprimați-le** pe consolă.
 
-## Exemple
-| **Input** | **Output** |
+## Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | John Smith, John smith, john Smith, JOhn Smith, Alice White, John	Smith | John Smith Alice White |
 
