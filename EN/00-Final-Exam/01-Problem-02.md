@@ -17,7 +17,7 @@ function solveClasses(){
 ```
 [/code-editor]
 [task-description]
-# Your task
+# Your Task
 
 Implement the following classes: `Pet`, `Cat`, and `Dog`.
 
