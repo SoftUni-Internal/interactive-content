@@ -5,7 +5,9 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-3-4-Sets-In-Java-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The Java **Collection Framework** contains numerous **interfaces**, one of which is the **Set** interface, which provides the features of the mathematical set in Java.
+The Java **Collection Framework** contains numerous **interfaces**, one of which is the **Set** interface
+
+It is modeled after the mathematical set abstraction.
 
 The **Set** interface extends the **Collection** interface.
 
@@ -13,7 +15,7 @@ The **Set** interface extends the **Collection** interface.
 
 The interface's job is to **specify the existence of certain methods**, with a particular behavior, and any class can implement them.
 
-**Interfaces** are not in the **scope of ttheir course**, hence why we are going to learn more in-depth about them in the Java OOP course.
+**Interfaces** are not in the **scope of this course**, we will learn more about them in the Java OOP course.
 
 **There are three different types of Sets:**
 - `HashSet<E>`
@@ -24,19 +26,17 @@ The interface's job is to **specify the existence of certain methods**, with a p
 - Duplicate elements are not allowed
 - Elements are not stored in order
 - Offers very fast performance
-- Can have only a single null value at most
-- Unlike List and Arrays, Set does **NOT** support indexing or positioning of its elements
+- Can contain only one single null value at most
+- Unlike Lists and Arrays, Sets do **NOT** support indexing or positioning of their elements
 
-**Based on the features of the Sets, it is better to use them when:**
-- You want to store elements distinctly, without duplication, or store unique elements
-- You want faster performance and don't care about the order of the elements
+**Based on the above specifics of the Sets, it is better to use them when:**
+- You want to store unique elements with no duplicates
+- You want faster performance and do not care about the exact order in which the elements are stored
 
 **For example**, you can use a Set to store:
 - **Unique integer numbers**
-- **Cards randomly in a card game**
+- **Unique Cards in a card game**
 - **Numbers in random order**, etc
-
-You can find out more about Interfaces [here](https://docs.oracle.com/javase/tutorial/java/concepts/interface.html#:~:text=Interfaces%20form%20a%20contract%20between,the%20class%20will%20successfully%20compile.).
 
 [/slide]
 
@@ -104,7 +104,7 @@ System.out.println(hash.contains("Alice"));
 System.out.println(hash.contains("Ana"));
 ```
 
-- `size()`: returns how many elements (size) exists in the `HashSet`:
+- `size()`: returns the number of elements contained in the `HashSet`:
 
 ```java live
 Set<String> hash = new HashSet<>();
@@ -447,7 +447,7 @@ CA2822UU
 
 
 [slide hideTitle]
-# Problem: SoftUni Party
+# Problem with Solution: SoftUni Party
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-12-13-Problem-and-Solution-Softuni-Party-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -469,21 +469,21 @@ There is a party. Many guests are invited, and they are two types: **VIP** and *
 
 When a guest comes, you have to check **if he/she exists** in any of the **two reservation lists**.
 
-All **reservation numbers** will be with **8 chars**.
+All **reservation numbers** consist of **8 characters**.
 
 All VIP **reservation numbers** start with a **digit**.
 
 ## Input
 
-- Until the `PARTY` command, you will receive guest invitations
+- You will be getting guest invitations until the `PARTY` command is received
 
-- Until the `END` command, you will receive a second list of guests that came to the party
+- You will be getting input consisting of guest that actually came to the party until the `END` command is received
 
 ## Output 
 
 - On the first line, print the number of guests who did not come to the party
 
-- On the next lines, print all of the guests, who did not come to the party (**VIPs must be first**)
+- On the next lines, print all of the reservation numbers of guests, who did not come to the party (**VIPs must be printed be first**)
 
 ## Examples
 | **Input** | **Output** |
@@ -775,12 +775,12 @@ The game ends after 50 rounds or if any player loses all of their numbers.
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-| 26 58 16 92 44 65 65 77 57 23 71 57 7 52 85 44 32 70 38 23 | Second player win! |
+| 26 58 16 92 44 65 65 77 57 23 71 57 7 52 85 44 32 70 38 23 | Second player wins! |
 | 43 95 33 51 62 93 57 55 0 31 32 95 68 34 30 51 37 32 11 97 |  |
 
 | **Input** | **Output** |
 | --- | --- |
-| 74 78 82 42 19 39 29 69 20 42 31 77 57 36 76 26 4 9 83 42 | First player win! |
+| 74 78 82 42 19 39 29 69 20 42 31 77 57 36 76 26 4 9 83 42 | First player wins! |
 | 15 43 80 71 22 88 78 35 28 30 46 41 76 51 76 18 14 52 47 38 |  |
 
 [/task-description]
@@ -792,7 +792,7 @@ The game ends after 50 rounds or if any player loses all of their numbers.
 43 95 33 51 62 93 57 55 0 31 32 95 68 34 30 51 37 32 11 97
 [/input]
 [output]
-Second player win!
+Second player wins!
 [/output]
 [/test]
 [test open]
@@ -801,7 +801,7 @@ Second player win!
 15 43 80 71 22 88 78 35 28 30 46 41 76 51 76 18 14 52 47 38
 [/input]
 [output]
-First player win!
+First player wins!
 [/output]
 [/test]
 [test]
@@ -810,7 +810,7 @@ First player win!
 42 15 96 41 37 11 29 10 94 69 98 60 22 13 0 68 84 58 76 15
 [/input]
 [output]
-First player win!
+First player wins!
 [/output]
 [/test]
 [test]
@@ -819,7 +819,7 @@ First player win!
 81 63 52 85 72 63 35 46 81 29 20 3 63 44 77 51 21 41 13 30
 [/input]
 [output]
-First player win!
+First player wins!
 [/output]
 [/test]
 [test]
@@ -828,7 +828,7 @@ First player win!
 9 8 90 60 74 8 28 64 22 49 27 22 65 36 65 37 2 68 95 6
 [/input]
 [output]
-First player win!
+First player wins!
 [/output]
 [/test]
 [test]
@@ -837,7 +837,7 @@ First player win!
 67 60 93 9 8 88 0 86 13 68 32 80 38 87 5 17 89 26 88 8
 [/input]
 [output]
-First player win!
+First player wins!
 [/output]
 [/test]
 [test]
@@ -846,7 +846,7 @@ First player win!
 44 5 31 38 2 64 50 94 52 85 75 84 34 51 79 43 13 96 38 25
 [/input]
 [output]
-Second player win!
+Second player wins!
 [/output]
 [/test]
 [/tests]
