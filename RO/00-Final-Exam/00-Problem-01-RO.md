@@ -1,79 +1,106 @@
 # Problem 1: Study Materials
+[slide hideTitle]
+# Study Materials
 
-[slide]
-
-# Descriere
-Anul școlar a început deja și Annie trebuie să cumpere un anumit număr de**pachete de creioane**,**pachete de markere**și un** detergent**pentru curățarea plăcii.
-
-Este un client obișnuit al unei librării și există o**reducere**pentru ea, care reprezintă un**procent**din total.
-
-Scrieți un program care să calculeze câți bani va trebui să** economisească**Annie pentru a plăti factura, ținând cont de următoarea listă de prețuri:
-
-- **Pachet de creioane:** 5,80 USD
-
-- **Markere:** 7,20 USD
-
-- Un**litru de detergent**: 1,20 USD
-
-# Intrare
-Patru numere sunt citite de pe consolă:
-
-- Numărați pachetele cu creioane. Număr întreg în intervalul \[0 ... 100\]
-
-- Numărați pachetele de markeri. Număr întreg în intervalul \[0 ... 100\]
-
-- Litri de detergent pentru curățarea plăcii. Număr real în intervalul \[0,00 ... 50,00\]
-
-- Reducerea procentuală. Număr întreg în intervalul \[0 ... 100\]
-
-# Ieșire
-
-Imprimați pe consolă câți bani va avea Annie pentru a-și plăti factura. Rezultatul trebuie să fie **formatat** la a treia zecimală.
-
-[code-task title="Study materials" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Study materials" taskId="JavaScript-Programming-Basics-exam-Study-Materials" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function solve(input) {
-	// Write your code here
+function studyMaterials(input) {
+	// Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
+# Descriere
+Anul școlar a început deja și Annie trebuie să cumpere un anumit număr de **pachete de creioane**, **pachete de markere** și un **detergent** pentru curățarea plăcii.
 
-# Exemplu
+Este un client obișnuit al unei librării și există o **reducere** pentru ea, care reprezintă un **procent** din total.
+
+Scrieți un program care să calculeze câți bani va trebui să **economisească** Annie pentru a plăti factura, ținând cont de următoarea listă de prețuri:
+
+- **Pachet de creioane:** $5.80
+
+- **Markere:** $7.20
+
+- Un **litru de detergent**: $1.20 
+
+## Intrare
+Intrarea vine ca o **matrice de patru numere**:
+
+- Numărați pachetele cu creioane - număr întreg în intervalul \[0 ... 100\]
+
+- Numărați pachetele de markeri - număr întreg în intervalul \[0 ... 100\]
+
+- Litri de detergent pentru curățarea plăcii - număr real în intervalul \[0.00 ... 50.00\]
+
+- Reducerea procentuală - număr întreg în intervalul \[0 ... 100\]
+
+## Ieșire
+
+Imprimați pe consolă câți bani va avea Annie pentru a-și plăti factura. 
+
+Rezultatul trebuie să fie **formatat** la a treia zecimală.
+
+## Exemplu
 
 |**Intrare**|**Ieșire**|
 | --- | --- |
-|`["2", "3", "2.5", "25"]` | 27.150 |
+|studyMaterials([4, 2, 5, 13])| 37.932 |
+|studyMaterials([7, 8, 0.5, 45])|54.340|
+|studyMaterials([2, 3, 2.5, 25])| 27.150 |
 
-# Comentarii
 
-- Preț pentru**creioane**: `2 * 5.80 = 11.60`
 
-- Preț pentru**marcatori**: `3 * 7.20 = 21.60`
+[hints]
+[hint]
+Calculați prețul individual al creioanelor, al markerelor și al detergentului. 
 
-- Preț pentru**detergent**: `2.5 * 1.20 = 3.00`
-
-- **Preț total:** `11.60 + 21.60 + 3.00 = 36.20`
-
-- **Preț cu reducere:** `36.20 – ((36.20 * 25) / 100) = 27.150`
-
-# Mai multe exemple
-
-|**Intrare**|**Ieșire**|
-| --- | --- |
-|`["4", "2", "5", "13"]` | 37.932 |
-|`["7, "8", "0.5", "45"]` | 54.340 |
+Apoi, calculați prețul total.
+[/hint]
+[hint]
+Determinați prețul final rezultat în urma aplicării reducerii.
+[/hint]
+[/hints]
  
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+studyMaterials([2, 3, 2.5, 25])
+[/input]
+[output]
+27.150
+[/output]
+[/test]
+[test open]
+[input]
+studyMaterials([4, 2, 5, 13])
+[/input]
+[output]
+37.932
+[/output]
+[/test]
+[test open]
+[input]
+studyMaterials([7, 8, 0.5, 45])
+[/input]
+[output]
+54.340
+[/output]
+[/test]
 [test]
 [input]
-1
-8
-5.5
-40
+studyMaterials([1, 8, 5.5, 40])
 [/input]
 [output]
 42.000
@@ -81,10 +108,7 @@ function solve(input) {
 [/test]
 [test]
 [input]
-9
-9
-4
-15
+studyMaterials([9, 9, 4, 15])
 [/input]
 [output]
 103.530
@@ -92,10 +116,7 @@ function solve(input) {
 [/test]
 [test]
 [input]
-11
-2
-4.5
-16
+studyMaterials([11, 2, 4.5, 16])
 [/input]
 [output]
 70.224
@@ -103,10 +124,7 @@ function solve(input) {
 [/test]
 [test]
 [input]
-12
-12
-10
-5
+studyMaterials([12, 12, 10, 5])
 [/input]
 [output]
 159.600
@@ -114,10 +132,7 @@ function solve(input) {
 [/test]
 [test]
 [input]
-1
-1
-1
-1
+studyMaterials([1, 1, 1, 1])
 [/input]
 [output]
 14.058
@@ -125,10 +140,7 @@ function solve(input) {
 [/test]
 [test]
 [input]
-3
-11
-8
-50
+studyMaterials([3, 11, 8, 50])
 [/input]
 [output]
 53.100
@@ -136,10 +148,7 @@ function solve(input) {
 [/test]
 [test]
 [input]
-17
-19
-35.6
-45
+studyMaterials([17, 19, 35.6, 45])
 [/input]
 [output]
 152.966
@@ -147,10 +156,7 @@ function solve(input) {
 [/test]
 [test]
 [input]
-48
-62
-32.54
-18
+studyMaterials([48, 62, 32.54, 18])
 [/input]
 [output]
 626.355
@@ -158,10 +164,7 @@ function solve(input) {
 [/test]
 [test]
 [input]
-73
-84
-50.0
-65
+studyMaterials([73, 84, 50.0, 65])
 [/input]
 [output]
 380.870
@@ -169,10 +172,7 @@ function solve(input) {
 [/test]
 [test]
 [input]
-100
-100
-50
-100
+studyMaterials([100, 100, 50, 100])
 [/input]
 [output]
 0.000

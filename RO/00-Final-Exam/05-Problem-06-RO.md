@@ -1,7 +1,25 @@
-# Problem 6: Study Materials
+# Problem 6: Tournament of Christmas 
+[slide hideTitle]
+# Tournament of Christmas 
 
-[slide]
-
+[code-task title="Tournament of Christmas" taskId="JavaScript-Programming-Basics-exam-Tournament-of-Christmas" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function tournament(input) {
+   // Write your code here
+}
+```
+[/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
+[task-description]
 # Descriere
 Scrie un program care urmărește performanța echipei tale la un turneu caritabil de Crăciun.
 
@@ -19,109 +37,74 @@ Nu veți avea niciodată un număr egal de jocuri câștigate și pierdute.
 
 
 # Intrare
-Inițial, **numărul de zile ale turneului este citit de pe consolă** - un număr întreg în intervalul \ [1 ... 20 \]
 
-Până când primiți comanda `Finish`, citiți:
+**The input comes as an array of elements.** 
 
-- Sport - șir
+Until you receive the "**Finish**" command, you receive:
 
-**Pentru fiecare sport citiți:**
+- **First Element:**
 
-- Rezultat - text cu posibilități: `win`sau `lose`
+**The number of days of the tournament**: an integer in the interval \[1… 20\]
+
+- **Until you receive the** "**Finish**" **command, read:**
+
+**Sport** - String
+
+- **For each sport read:**
+
+**Result** - Text with possibilities:  "**win**" or "**lose**"
 
 
 # Ieșire
 
 În cele din urmă, se imprimă o linie:
 
-- Dacă ai câștigat, turneul: `You won the tournament! Total raised money: {the money earned}`
+- Dacă ai câștigat, turneul:
 
-- Dacă ai pierdut, turneul: `You lost the tournament! Total raised money: {the money earned}`
+"**You won the tournament! Total raised money:** \{**the money earned**\}"
 
-Banii ar trebui să fie**formatați la a doua cifră după punctul zecimal.**
+- Dacă ai pierdut, turneul:
 
+"**You lost the tournament! Total raised money:** \{**the money earned**\}"
 
-[code-task title="Study materials" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function solve(input) {
-	// Write your code here
-}
-```
-[/code-editor]
-[task-description]
+Banii ar trebui să fie **formatați la a doua cifră după punctul zecimal.**
 
-# Exemplu
+## Exemplu
 
-| **Input** | **Output** |
+| **Intrare**|**Ieșire**|
 | --- | --- |
-|`["2", "volleyball", "win", "football","lose", "basketball", "win", "Finish", "golf", "win", "tennis", "win", "badminton", "win", "Finish"]` | You won the tournament! Total raised money: 132.00 |
+|tournament([3, 'darts', 'lose', 'handball', 'lose', 'judo', 'win', 'Finish', 'snooker', 'lose', 'swimming', 'lose', 'squash', 'lose', 'table tennis', 'win', 'Finish', 'volleyball', 'win', 'basketball', 'win', 'Finish']) | You lost the tournament! Total raised money: 84.00 |
+|tournament([2, 'volleyball', 'win', 'football','lose', 'basketball', 'win', 'Finish', 'golf', 'win', 'tennis', 'win', 'badminton', 'win', 'Finish']) | You won the tournament! Total raised money: 132.00 |
 
-# Comentarii
+[hints]
+[hint]
+Determine the amount of money won from each day of the tournament. 
 
-Turneul **este de 2 zile.**
+Check if the won games are more than the lost. If they are, add a 10% bonus.
 
-Prima zi:
+Upon receving the "**Finish**" command, calculate the total sum of money.
+[/hint]
+[hint]
+Finally, check if the overall wins are more than the losses. 
 
-- Jucăm volei și câștigăm `20 de dolari`
-- Jucăm fotbal și pierdem `0 dolari`
-- Jucăm baschet și câștigăm `20 de dolari`
-
-Primim comanda 'Finish' și jocurile pentru ziua respectivă s-au încheiat.
-
-Câștigat bani `20 + 0 + 20 = 40 de dolari .`
-
-Avem mai multe jocuri câștigate decât pierdute, respectiv creștem banii zilei cu `10% -> 44 de dolari`.
-
-A doua zi:
-
-- Jucăm golf și câștigăm `20 de dolari`
-- Jucăm tenis și câștigăm `20 de dolari`
-- Jucăm badminton și câștigăm `20 de dolari`
-
-Primim comanda 'Finish' și jocurile pentru ziua respectivă s-au încheiat.
-
-Bani câștigati  `20 + 20 + 20 = 60 de dolari`
-
-Am câștigat doar jocuri, respectiv mărim banii zilei cu `10% -> 66 de dolari`.
-
-Bani câștigați  din ambele zile: `44 + 66 = 110 de dolari`
-
-Deoarece avem mai multe victorii decât pierderi, câștigăm turneul și creștem banii cu `20% -> 132 de dolari`
-
-# Mai multe exemple
-
-|**Intrare**|**Ieșire**|
-| --- | --- |
-|`["2", "sport","lose","Finish", "sport", "lose", "Finish"]` | You lost the tournament! Total raised money: 0.00|
+If they are, add 20% and print the correct output.
+[/hint]
+[/hints]
  
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
-3
-darts
-lose
-handball
-lose
-judo
-win
-Finish
-snooker
-lose
-swimming
-lose
-squash
-lose
-table tennis
-win
-Finish
-volleyball
-win
-basketball
-win
-Finish
+tournament([2, 'volleyball', 'win', 'football', 'lose', 'basketball', 'win', 'Finish', 'golf', 'win', 'tennis', 'win', 'badminton', 'win', 'Finish'])
+[/input]
+[output]
+You won the tournament! Total raised money: 132.00
+[/output]
+[/test]
+[test open]
+[input]
+tournament([3, 'darts', 'lose', 'handball', 'lose', 'judo', 'win', 'Finish', 'snooker', 'lose', 'swimming', 'lose', 'squash', 'lose', 'table tennis', 'win', 'Finish', 'volleyball', 'win', 'basketball', 'win', 'Finish'])
 [/input]
 [output]
 You lost the tournament! Total raised money: 84.00
@@ -129,13 +112,15 @@ You lost the tournament! Total raised money: 84.00
 [/test]
 [test]
 [input]
-2
-sport
-win
-Finish
-sport
-win
-Finish
+tournament([2, 'sport', 'lose', 'Finish', 'sport', 'lose', 'Finish'])
+[/input]
+[output]
+You lost the tournament! Total raised money: 0.00
+[/output]
+[/test]
+[test]
+[input]
+tournament([2, 'sport', 'win', 'Finish', 'sport', 'win', 'Finish'])
 [/input]
 [output]
 You won the tournament! Total raised money: 52.80
@@ -143,28 +128,7 @@ You won the tournament! Total raised money: 52.80
 [/test]
 [test]
 [input]
-3
-sport
-win
-sport
-win
-Finish
-sport
-lose
-sport
-lose
-sport
-win
-Finish
-sport
-win
-sport
-win
-sport
-lose
-sport
-win
-Finish
+tournament([3, 'sport', 'win', 'sport', 'win', 'Finish', 'sport', 'lose', 'sport', 'lose', 'sport', 'win', 'Finish', 'sport', 'win', 'sport', 'win', 'sport', 'lose', 'sport', 'win', 'Finish'])
 [/input]
 [output]
 You won the tournament! Total raised money: 156.00
@@ -172,44 +136,7 @@ You won the tournament! Total raised money: 156.00
 [/test]
 [test]
 [input]
-5
-sport
-win
-sport
-win
-sport
-win
-Finish
-sport
-win
-sport
-win
-sport
-win
-sport
-win
-sport
-win
-sport
-win
-Finish
-sport
-win
-sport
-win
-sport
-win
-Finish
-sport
-win
-Finish
-sport
-win
-sport
-win
-sport
-win
-Finish
+tournament([5, 'sport', 'win', 'sport', 'win', 'sport', 'win', 'Finish', 'sport', 'win', 'sport', 'win', 'sport', 'win', 'sport', 'win', 'sport', 'win', 'sport', 'win', 'Finish', 'sport', 'win', 'sport', 'win', 'sport', 'win', 'Finish', 'sport', 'win', 'Finish', 'sport', 'win', 'sport', 'win', 'sport', 'win', 'Finish'])
 [/input]
 [output]
 You won the tournament! Total raised money: 422.40
@@ -217,36 +144,7 @@ You won the tournament! Total raised money: 422.40
 [/test]
 [test]
 [input]
-3
-sport
-win
-sport
-win
-sport
-win
-sport
-lose
-sport
-lose
-Finish
-sport
-win
-sport
-win
-sport
-lose
-Finish
-sport
-lose
-sport
-lose
-sport
-win
-sport
-lose
-sport
-win
-Finish
+tournament([3, 'sport', 'win', 'sport', 'win', 'sport', 'win', 'sport', 'lose', 'sport', 'lose', 'Finish', 'sport', 'win', 'sport', 'win', 'sport', 'lose', 'Finish', 'sport', 'lose', 'sport', 'lose', 'sport', 'win', 'sport', 'lose', 'sport', 'win', 'Finish'])
 [/input]
 [output]
 You won the tournament! Total raised money: 180.00
@@ -254,37 +152,7 @@ You won the tournament! Total raised money: 180.00
 [/test]
 [test]
 [input]
-4
-sport
-lose
-sport
-lose
-sport
-win
-sport
-lose
-Finish
-sport
-lose
-sport
-lose
-sport
-lose
-Finish
-sport
-win
-sport
-win
-Finish
-sport
-lose
-sport
-lose
-sport
-lose
-sport
-win
-Finish
+tournament([4, 'sport', 'lose', 'sport', 'lose', 'sport', 'win', 'sport', 'lose', 'Finish', 'sport', 'lose', 'sport', 'lose', 'sport', 'lose', 'Finish', 'sport', 'win', 'sport', 'win', 'Finish', 'sport', 'lose', 'sport', 'lose', 'sport', 'lose', 'sport', 'win', 'Finish'])
 [/input]
 [output]
 You lost the tournament! Total raised money: 84.00
@@ -292,27 +160,7 @@ You lost the tournament! Total raised money: 84.00
 [/test]
 [test]
 [input]
-2
-sport
-win
-sport
-win
-sport
-win
-sport
-lose
-sport
-lose
-sport
-lose
-sport
-lose
-Finish
-sport
-lose
-sport
-lose
-Finish
+tournament([2, 'sport', 'win', 'sport', 'win', 'sport', 'win', 'sport', 'lose', 'sport', 'lose', 'sport', 'lose', 'sport', 'lose', 'Finish', 'sport', 'lose', 'sport', 'lose', 'Finish'])
 [/input]
 [output]
 You lost the tournament! Total raised money: 60.00
@@ -320,20 +168,7 @@ You lost the tournament! Total raised money: 60.00
 [/test]
 [test]
 [input]
-1
-sport
-win
-sport
-lose
-sport
-win
-sport
-lose
-sport
-win
-sport
-win
-Finish
+tournament([1, 'sport', 'win', 'sport', 'lose', 'sport', 'win', 'sport', 'lose', 'sport', 'win', 'sport', 'win', 'Finish'])
 [/input]
 [output]
 You won the tournament! Total raised money: 105.60
@@ -341,35 +176,7 @@ You won the tournament! Total raised money: 105.60
 [/test]
 [test]
 [input]
-4
-sport
-win
-sport
-win
-sport
-win
-sport
-lose
-sport
-lose
-sport
-win
-Finish
-sport
-win
-sport
-win
-Finish
-sport
-lose
-sport
-lose
-sport
-win
-Finish
-sport
-win
-Finish
+tournament([4, 'port', 'win', 'sport', 'win', 'sport', 'win', 'sport', 'lose', 'sport', 'lose', 'sport', 'win', 'Finish', 'sport', 'win', 'sport', 'win', 'Finish', 'sport', 'lose', 'sport', 'lose', 'sport', 'win', 'Finish', 'sport', 'win', 'Finish'])
 [/input]
 [output]
 You won the tournament! Total raised money: 208.80
@@ -377,35 +184,7 @@ You won the tournament! Total raised money: 208.80
 [/test]
 [test]
 [input]
-4
-sport
-lose
-sport
-lose
-sport
-win
-sport
-lose
-sport
-lose
-sport
-win
-Finish
-sport
-win
-sport
-win
-Finish
-sport
-lose
-sport
-lose
-sport
-win
-Finish
-sport
-lose
-Finish
+tournament([4, 'sport', 'lose', 'sport', 'lose', 'sport', 'win', 'sport', 'lose', 'sport', 'lose', 'sport', 'win', 'Finish', 'sport', 'win', 'sport', 'win', 'Finish', 'sport', 'lose', 'sport', 'lose', 'sport', 'win', 'Finish', 'sport', 'lose', 'Finish'])
 [/input]
 [output]
 You lost the tournament! Total raised money: 104.00
