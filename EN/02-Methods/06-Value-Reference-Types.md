@@ -34,7 +34,7 @@ boolean result = true; //require 1 byte of memory
 
 # Reference Types
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-39-reference-types-and-demos-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-39-reference-types-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Reference type** variables hold the **reference** \(pointer / memory address\) to the value.
 
@@ -52,6 +52,8 @@ byte[] bytes = { 1, 2, 3 };
 
 [slide hideTitle]
 # Value types vs. Reference Types
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-36-Memory-Stack-And-heap-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [image assetsSrc="java-fund-methods-01.gif" /]
 
@@ -78,6 +80,8 @@ byte[] bytes ={ 1, 2, 3 };
 
 # Example: Value Types
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-39-value-type-modification-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ```java
 public static void main(String[] args) {
     int num = 5;
@@ -101,6 +105,8 @@ This is because **int** is a primitive type and when passed a copy of its value 
 [slide hideTitle]
 
 # Example: Reference Types
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/EN/interactive-java-fundamentals-methods-39-increment-with-a-method-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 ```java
