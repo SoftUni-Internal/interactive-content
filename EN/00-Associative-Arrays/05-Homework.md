@@ -1509,7 +1509,7 @@ Print the **name of each company** and the **ids of all employees** who work in 
 
 ### Input
 
-Until you receive the "**End**"command, you will be receiving input lines **in the following format**:
+Until you receive the "**End**" command, you will be receiving input lines **in the following format**:
 "\{**companyName**\} -> \{**employeeId**\}"
 
 ### Examples
