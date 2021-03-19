@@ -5,13 +5,13 @@
 
 We already have IntelliJ IDEA, so let us start it.
 
-Create new Console Application in IntelliJ IDEA: `[New Project]` \-\> `[Java]` \-\> `[Template Command Line App]` \-\> `[Finish]`
+Let us create new Console Application in IntelliJ IDEA: `[New Project]` \-\> `[Java]` \-\> `[Template Command Line App]` \-\> `[Finish]`
 
 We should select **a descriptive name** for our program, for example `HelloJava`:
 
 [image assetsSrc="intro-to-programming-name-hellojava.png" /]
 
-IntelliJ IDEA is going to create **an empty Java program** for us, where we can place our code logic.
+The IDE is going to create **an empty Java program** for us, where we can place our code logic.
 
 ## Configuring JDK in IntelliJ IDEA
 If JDK is still not configured on your system, you should configure it:
@@ -28,13 +28,13 @@ Click `[edit]` and locate your JDK installation:
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-29-writing-programming-code-in-intelliJ-IDEA-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We should place our program code inside the `main(String[] args)`, between the opening and the closing braces `{ }`.
+The program code should be placed inside the `main(String[] args)`, between the opening and the closing braces `{ }`.
 
-This is the main method, that is being executed when starting a Java program.
+This is the main method, it is being executed when starting a Java program.
 
-Press `[Enter]` after **the opening parentheses** `{` and **start writing**.
+Press `[Enter]` after **the opening parentheses** `{` and **start typing**.
 
-The code of the program is written **inwards**, as this makes it easier to read and understand.
+The code of the program is placed **inwards**, as this makes it easier to read and understand.
 
 [image assetsSrc="intro-to-programming-inwards-example.png" /]
 
@@ -43,7 +43,7 @@ Type in the following command:
 System.out.println("Hello Java");
 ```
 
-Here is how our program should look like in IntelliJ IDEA:
+Here is how our program should look in IntelliJ IDEA:
 
 [image assetsSrc="intro-to-programming-code-in-intellij.png" /]
 
