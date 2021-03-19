@@ -62,35 +62,35 @@ int b = Math.abs(-10);
 System.out.println(a);
 System.out.println(b);
 ```
-- `ceil(a)` : Rotunjește o valoare în virgulă mobilă `a` până la cea mai apropiată valoare întreagă, returnată ca `double`
+- `ceil(a)`: Rotunjește o valoare în virgulă mobilă `a` până la cea mai apropiată valoare întreagă, returnată ca `double`
 
 ```java live
 double ceil = Math.ceil(8.357);
 System.out.println(ceil);
 ```
 
-- `floor(a)` : Rotunjește o valoare în virgulă mobilă `a` până la cea mai apropiată valoare întreagă, returnată ca `double`
+- `floor(a)`: Rotunjește o valoare în virgulă mobilă `a` până la cea mai apropiată valoare întreagă, returnată ca `double`
 
 ```java live
 double floor = Math.floor(8.357);
 System.out.println(floor);
 ```
 
-- `max(a, b)` : Returnează cea mai mare dintre cele două valori transmise ca parametru
+- `max(a, b)`: Returnează cea mai mare dintre cele două valori transmise ca parametru
 
 ```java live
 int max = Math.max(5, 10);
 System.out.println(max);
 ```
 
-- `min(a, b)` : Returnează cea mai mică dintre cele două valori transmise ca parametru
+- `min(a, b)`: Returnează cea mai mică dintre cele două valori transmise ca parametru
 
 ```java live
 int min = Math.min(5, 10);
 System.out.println(min);
 ```
 
-- `round(a)` : Rotunjește un flotor sau dublează la cel mai apropiat număr întreg folosind reguli normale rotunde matematice (fie în sus, fie în jos)
+- `round(a)`: Rotunjește un flotor sau dublează la cel mai apropiat număr întreg folosind reguli normale rotunde matematice (fie în sus, fie în jos)
 
 ```java live
 double roundedDown = Math.round(29.459);
@@ -99,28 +99,28 @@ System.out.println(roundedDown);
 System.out.println(roundedUp);
 ```
 
-- `pow(a, b)` : Returnează valoarea primului parametru `a` ridicat la puterea celui de-al doilea parametru `b`
+- `pow(a, b)`: Returnează valoarea primului parametru `a` ridicat la puterea celui de-al doilea parametru `b`
 
 ```java live
 double number = Math.pow(3,2);
 System.out.println(number);
 ```
 
-- `sqrt(a)` : Calculează rădăcina pătrată a parametrului dat `a`
+- `sqrt(a)`: Calculează rădăcina pătrată a parametrului dat `a`
 
 ```java live
 double number = Math.sqrt(9);
 System.out.println(number);
 ```
 
-- `toDegrees(a)` : Convertește un unghi în radiani în grade
+- `toDegrees(a)`: Convertește un unghi în radiani în grade
 
 ```java live
 double degrees = Math.toDegrees(3.141592653589793);
 System.out.println(degrees);
 ```
 
-- `toRadians(a)` : Inversarea `toDegrees`, convertește un unghi în grade în radiani
+- `toRadians(a)`: Inversarea `toDegrees`, convertește un unghi în grade în radiani
 
 ```java live
 double radians = Math.toRadians(180);
@@ -195,7 +195,7 @@ System.out.println(isValid);
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Randomize Words
+# Problemă cu Soluție: Randomize Words
 
 ## Description
 You are given a **list of words in one line**.
@@ -217,9 +217,9 @@ To generate a random number in range use rnd.nextInt(words.length)
 Execute the program locally using Integrated development environment
 
 
-## Examples
+## Exemplu
 
-| **Input** | **Output** | **Comments** |
+| **Intrare** | **Ieșire** | **Comments** |
 | --- | --- | --- |
 | Welcome to SoftUni and have fun learning programming | learning | The order of the words in the output will be different after each program execution. |
 | | Welcome | |
@@ -266,31 +266,31 @@ BigInteger number = BigInteger.valueOf(-123);
 number = number.abs();
 System.out.println(number);
 ```
-- `add(value)` : Atribuie **valoare nouă** BigInteger-ului curent, efectuează **adăugare** (valoare curentă +)
+- `add(value)`: Atribuie **valoare nouă** BigInteger-ului curent, efectuează **adăugare** (valoare curentă +)
 ```java live
 BigInteger number = BigInteger.valueOf(123);
 number = number.add(BigInteger.TEN);
 System.out.println(number);
 ```
-- `subtract(value)` : Atribuie **valoare nouă** BigInteger-ului curent, efectuează **scădere** (curent - valoare)
+- `subtract(value)`: Atribuie **valoare nouă** BigInteger-ului curent, efectuează **scădere** (curent - valoare)
 ```java live
 BigInteger number = BigInteger.valueOf(123);
 number = number.subtract(BigInteger.TEN);
 System.out.println(number);
 ```
-- `multiply(value)` : Atribuie **valoare nouă** BigIntegerului curent, efectuează **multiplicare** (valoare curentă*)
+- `multiply(value)`: Atribuie **valoare nouă** BigIntegerului curent, efectuează **multiplicare** (valoare curentă*)
 ```java live
 BigInteger number = BigInteger.valueOf(123);
 number = number.multiply(BigInteger.TEN);
 System.out.println(number);
 ```
-- `divide(value)` : Atribuie **valoare nouă** BigIntegerului actual, efectuează **divizare** (curent / valoare)
+- `divide(value)`: Atribuie **valoare nouă** BigIntegerului actual, efectuează **divizare** (curent / valoare)
 ```java live
 BigInteger number = BigInteger.valueOf(123);
 number = number.divide(BigInteger.TEN);
 System.out.println(number);
 ```
-- `pow(value)` : Atribuie **valoare nouă** BigInteger-ului curent, efectuează **creșterea puterii** (valoarea curentă ^)
+- `pow(value)`: Atribuie **valoare nouă** BigInteger-ului curent, efectuează **creșterea puterii** (valoarea curentă ^)
 ```java live
 BigInteger number = BigInteger.valueOf(123);
 number = number.pow(2);
@@ -304,7 +304,7 @@ System.out.println(number);
 
 
 [slide hideTitle]
-# Problem with Solution: Sum Big Numbers
+# Problemă cu Soluție: Sum Big Numbers
 
 [code-task title="Sum Big Numbers" taskId="java-fund-2-Objects-and-Classes-lab-Sum-Big-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -314,7 +314,7 @@ import java.math.BigInteger;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -323,7 +323,7 @@ public class Main {
 ## Descriere
 Veți primi două numere **(0 to 10 ^ 50)**, imprimați suma acestora.
 
-## Exemple
+## Exemplu
 
 |**Intrare**|**Ieșire**|
 | --- | --- |
@@ -415,7 +415,7 @@ Veți primi două numere **(0 to 10 ^ 50)**, imprimați suma acestora.
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Big Factorial
+# Problemă cu Soluție: Big Factorial
 
 [code-task title="Big Factorial" taskId="java-fund-2-Objects-and-Classes-lab-Big-Factorial" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -425,7 +425,7 @@ import java.math.BigInteger;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -436,7 +436,7 @@ Veți primi numărul N în intervalul  \[0 - 1000\].
 
 Calculați **Factorialul lui N** și tipăriți rezultatul.
 
-## Exemple
+## Exemplu
 
 |**Intrare**|**Ieșire**|
 | --- | --- |

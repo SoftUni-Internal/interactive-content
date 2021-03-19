@@ -214,12 +214,12 @@ public class Animal {
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Students
+# Problemă cu Soluție: Students
 
 [code-task title="Students" taskId="java-fund-2-Objects-and-Classes-lab-Students" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-## Description
+## Descriere
 
 Definiți o clasă **Student**, care conține următoarele informații despre elevi:
  - first name
@@ -227,7 +227,7 @@ Definiți o clasă **Student**, care conține următoarele informații despre el
  - age
  - hometown
 
-### Intrare / constrângeri
+### Intrare / Constrângeri
 
 Citiți o listă de studenți până când primiți comanda **"end"**.
 
@@ -238,7 +238,7 @@ După aceea, veți primi un **nume de oraș**.
 Imprimați numai studenții care sunt din orașul dat, în următorul format:
 "\{firstName\} \{lastName\} is \{age\} years old."
 
-## Exemple
+## Exemplu
 
 |**Intrare**|**Ieșire**|
 | --- | --- |
@@ -366,17 +366,17 @@ Port Lee is 14 years old
 
 
 [slide hideTitle]
-# Problem with Solution: Students 2.0
+# Problemă cu Soluție: Students 2.0
 
 [code-task title="Students 2.0" taskId="java-fund-2-Objects-and-Classes-lab-Students-2.0" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-## Description
+## Descriere
 Folosiți clasa din problema anterioară.
 
 Dacă primiți un student, care există deja (**prenume** și **prenume** ar trebui să fie **unic**) suprascrieți informațiile.
 
-## Exemple
+## Exemplu
 
 |**Intrare**|**Ieșire**|
 | --- | --- |
@@ -459,7 +459,7 @@ J P is 61 years old
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Songs
+# Problemă cu Soluție: Songs
 
 [code-task title="Songs" taskId="java-fund-2-Objects-and-Classes-lab-Songs" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [task-description]
@@ -472,7 +472,7 @@ Definiți o clasă **Song**, care conține următoarele informații despre melod
 
 - **Time**
 
-### Intrare / constrângeri
+### Intrare / Constrângeri
 
 - Pe prima linie veți primi **numărul de melodii - N**.
 
@@ -485,7 +485,7 @@ Definiți o clasă **Song**, care conține următoarele informații despre melod
 
 Imprimați numai **Numele melodiilor** care aparțin acelei **Lista de tipuri** sau **Toate melodiile**.
 
-## Exemple
+## Exemplu
 
 |**Intrare**|**Ieșire**|
 | --- | --- |
