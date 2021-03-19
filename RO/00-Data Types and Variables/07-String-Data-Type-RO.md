@@ -9,7 +9,6 @@
 
 O variabilă **Șir** conține o colecție de caractere înconjurate de ghilimele duble și are o valoare implicită **nul** (fără valoare).
 
-- Exemplu:
 Creați o variabilă de tip **Șir** și atribuiți-i o valoare:
 
 ```Java live
