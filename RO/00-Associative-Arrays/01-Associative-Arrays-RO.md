@@ -277,7 +277,7 @@ for (Map.Entry<String, Double> entry : fruitsPrice.entrySet()) {
 
 
 [slide hideTitle]
-# Problem with Solution: Count Real Numbers
+# Problemă cu Soluție: Count Real Numbers
 
 [code-task title="Count Real Numbers" taskId="Java-Fundamentals-2-Associative-arrays-lab-Count-real-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -296,19 +296,19 @@ public class Main {
 ## Enunț
 Citiți o **list of real numbers** și imprimați-le în ordine **ascending order** alături de **number of occurrences**.
 
-## Exemple
-| **Input** | **Output** |
+## Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 8 2 2 8 2 | 2 -> 3 |
 |  | 8 -> 2 |
 
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 1 5 1 3 | 1 -> 2 |
 |  | 3 -> 1 |
 |  | 5 -> 1 |
 
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | -2 0 0 2 | -2 -> 1 |
 |  | 0 -> 2 |
@@ -409,7 +409,7 @@ Citiți o **list of real numbers** și imprimați-le în ordine **ascending orde
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Word Synonyms
+# Problemă cu Soluție: Word Synonyms
 
 [code-task title="Word Synonyms" taskId="Java-Fundamentals-2-Associative-Arrays-lab-Words-Synonyms" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -450,8 +450,8 @@ Imprimați cuvintele în următorul format:
 
 "\{**word**\} - \{**synonym1, synonym2… synonymN**\}"
 
-## Exemple
-| **Input** | **Output** |
+## Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 3 | cute - adorable, charming |
 | cute | smart - clever |
@@ -461,7 +461,7 @@ Imprimați cuvintele în următorul format:
 | smart |  |
 | clever |  |
 
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 2 | task – problem, assignment |
 | task |  |
@@ -628,7 +628,7 @@ customer - client, purchaser
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Odd Occurrences
+# Problemă cu Soluție: Odd Occurrences
 [code-task title="Odd Occurrences" taskId="Java-Fundamentals-2-Associative-Arrays-lab-Odd-Occurrences" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -645,16 +645,16 @@ public class Main {
 ## Enunț
 Scrieți un program care extrage dintr-o secvență dată de cuvinte, tpate elementele care sunt prezente în aceasta **odd number of times (case-insensitive)**.
 
-## Input / Constraints
+## Intrare / Constraints
 
 Cuvintele sunt date pe o **single line**, **space-separated**.
 
-## Output
+## Ieșire
 
 Imprimați rezultatele ca elemente in **lowercase in their order of appearance separated by comma**.
 
 ## Exemple
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | Java C# PHP PHP JAVA C java | java, c#, c |
 | 3 5 5 hi pi HO Hi 5 ho 3 hi pi | 5, hi |

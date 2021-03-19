@@ -23,14 +23,14 @@ Scrieți un program care să **counts all characters** dintr-un string, cu excep
 "\{**char**\} \-\> \{**occurrences**\}"
 
 ### Exemplu
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | text | t \-\> 2 | 
 | | e \-\> 1 |
 | | x \-\> 1 |
 
 ### Exemplu
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | text text text | t \-\> 6 | 
 | | e \-\> 3 |
@@ -229,7 +229,7 @@ Sarcina voastră este să colectați resursele și să le scrieți pe o linie no
 "\{**resource**\} -> \{**quantity**\}"
 
 ### Exemplu
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | Gold | Gold \-\> 155 | 
 | 155 | Silver \-\> 10 |
@@ -240,7 +240,7 @@ Sarcina voastră este să colectați resursele și să le scrieți pe o linie no
 | stop | |
 
 ### Exemplu
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | gold | Gold \-\> 170 | 
 | 155 | Silver \-\> 10 |
@@ -451,10 +451,10 @@ Apoi, **print** celelalte **remaining shards, fragments, motes**,ordine **ordere
 În final, **print** dacă ați colectat **junk items**, in ordine **alphabetical**.
 
 
-### Input
+### Intrare
 Fiecare linie de input este in format "\{**quantity**\} \{**material**\} \{**quantity**\} \{**material**\} … \{**quantity**\} \{**material**\}"
 
-### Output
+### Ieșire
 - Pe **first line**, imprimați itemii obținuți în format "\{**Legendary item**\} **obtained!**"
 
 - Pe următoarele **next three lines**, imprimați **remaining key materials** în ordine **descending**, după **quantity**
@@ -469,7 +469,7 @@ Fiecare linie de input este in format "\{**quantity**\} \{**material**\} \{**qua
 
 
 ### Exemple
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 3 Motes 5 stones 5 Shards | Valanyr obtained! | 
 | 6 leathers 255 fragments 7 Shards | fragments: 5 |
@@ -479,7 +479,7 @@ Fiecare linie de input este in format "\{**quantity**\} \{**material**\} \{**qua
 | | stones: 5 |
 
 ### Exemple
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 123 silver 6 shards 8 shards 5 motes | Dragonwrath obtained! | 
 | 9 fangs 75 motes 103 MOTES 8 Shards | shards: 22 |
@@ -721,13 +721,13 @@ Până primiți **command** "**buy**", continuați să adăugați itemi.
 
 Când ați primit comanda "**buy**", **print** **items** cu numele lor **names** și **total price** ale tuturor produselor cu acest nume.
 
-### Input
+### Intrare
 
 - Până primiți "**buy**", produsele apar în **format**: "\{**name**\} \{**price**\} \{**quantity**\}"
 
 - Datele despre produs sunt întotdeauna delimitate de un singur spațiu
 
-### Output
+### Ieșire
 - Imprimați informația despre fiecare produs, în **format**:
 
     - "\{**productName**\} \-\> \{**totalPrice**\}"
@@ -735,7 +735,7 @@ Când ați primit comanda "**buy**", **print** **items** cu numele lor **names**
 - Formatați prețul total la  **second digit** după punctul de zecimale
 
 ### Exemplu
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | Beer 2.20 100 | Beer \-\> 220.00 | 
 | IceTea 1.50 50 | IceTea \-\> 75.00 |
@@ -744,7 +744,7 @@ Când ați primit comanda "**buy**", **print** **items** cu numele lor **names**
 | buy | | 
 
 ### Exemplu
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | CaesarSalad 10.20 25 | CaesarSalad \-\> 255.00 | 
 | SuperEnergy 0.80 400 | SuperEnergy \-\> 320.00 |
@@ -966,13 +966,13 @@ Programul primește **2 commands**:
 După ce ați executat toate comenzile, **print** toți **currently registered users and their license plates** in format:
 - "\{**username**\} \=\> \{**licensePlateNumber**\}"
 
-### Input
+### Intrare
 - Prima linie: n - număr de comenzi - integer
 - Următoarele n linii: comenzi într-unul dintre cele două formate posibile:
     - Register: "**register** \{**username**\} \{**licensePlateNumber**\}"
     - Unregister: "**unregister** \{**username**\}"
 
-### Exemple
+### Ieșire
 | **Input** | **Output** |
 | --- | --- |
 | 5 | John registered CS1234JS successfully | 
@@ -984,8 +984,8 @@ După ce ați executat toate comenzile, **print** toți **currently registered u
 | | George => JAVA123S | 
 | | Jesica => VR1223EE | 
 
-### Exemple
-| **Input** | **Output** |
+### Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 4 | Jony registered AA4132BB successfully | 
 | register Jony AA4132BB | ERROR: already registered with plate number AA4132BB |
@@ -1212,13 +1212,13 @@ Atunci când primiți **command** "**end**", **print** cursurile cu **names** lo
 
 Pentru fiecare **contest print registered users** **ordered by name in ascending** ordine.
 
-### Input
+### Intrare
 - Până primiți "**end**", **input come in the format**:
 
  "\{**courseName**\} : \{**studentName**\}".
 - Datele despre produs sunt **always delimited** de " : "
 
-### Output
+### Ieșire
 - Imprimați informația despre fiecare **course**, după **format**: 
 
 "\{**courseName**\}: \{**registeredStudents**\}"
@@ -1226,8 +1226,8 @@ Pentru fiecare **contest print registered users** **ordered by name in ascending
 
 "-- \{**studentName**\}"
 
-### Exemple
-| **Input** | **Output** |
+### Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | Programming Fundamentals : John Smith | Programming Fundamentals: 2 | 
 | Programming Fundamentals : Linda Johnson | -- John Smith |
@@ -1485,8 +1485,8 @@ Ordonați studenții aleși, după nota medie, în ordine **descending**.
 
 **Format** nota medie până la **second decimal**.
 
-### Exemple
-| **Input** | **Output** |
+### Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 5 | John -> 5.00 | 
 | John | George -> 5.00 |
@@ -1783,14 +1783,14 @@ Imprimați numele companiei și id-ul fiecărui angajat, în următorul format:
 
 -- \{**idN**\}"
 
-### Input
+### Intrare
 Până la primirea mesajului "**End**", input-ul vine **in the format**:
 
 "\{**companyName**\} -> \{**employeeId**\}"
 
 
-### Exemple
-| **Input** | **Output** |
+### Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | SoftUni \-\> AA12345 | HP | 
 | SoftUni \-\> BB12345 | -- BB12345 |
@@ -2113,11 +2113,11 @@ Pentru fiecare parte, imprimăm force users, **ordered by name**.
 
 In cazul în care avem **no force users** de o parte, atunci **shouldn't print the side information**.
 
-### Input
+### Intrare
 - Inputul vine sub formă de comenzi într-unul din formatele specificate mai sus
 -  Input-ul se încheie când primim comanda "**End**"
 
-### Output
+### Ieșire
 - Ca output pentru fiecare force side, ordonată descendent în funcție de numprul de force users, apoi după nume, trebuie să imprimăm toți force users, ordonată după nume, alfabetic
 
 - Formatul output este:
@@ -2128,8 +2128,8 @@ In cazul în care avem **no force users** de o parte, atunci **shouldn't print t
 
 - In cazul în care nu avem niciun force users, nu imprimăm această parte
 
-### Exemple
-| **Input** | **Output** |
+### Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | Light \| George | Side: Dark, Members: 1 | 
 | Dark \| Peter | ! Peter |
@@ -2141,8 +2141,8 @@ L-am înregistrat pe George de partea Luminii și pe Peter, de partea întuneric
 
 După ce am primit "**End**", printăm ambele părți, ordonate de numărul de membri și apoi, de numele lor. 
 
-### Exemple
-| **Input** | **Output** |
+### Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | Lighter \| Ronn | John joins the Lighter side! | 
 | Darker \| Dean | Dean joins the Lighter side! |
@@ -2390,12 +2390,12 @@ După ce am imprimat fiecare limbă folosită în examen, ordonăm **descending*
 \{**language**\} - \{**submissionsCount**\}
 ..."
 
-## Input / Constraints
+## Intrare / Constraints
 Pânpă primiți "**exam finished**", veți primi aplicațiile participanților în formatul următor: "\{**username**\}-\{**language**\}-\{**points**\}"
 Puteți primi o comandă de interzicere -> "\{**username**\}-**banned**"
 Punctele participantului vor fi un integer valid în gama \[0-100\]
 
-## Output
+## Ieșire
 - Imprimați rezultatele examenului pentru fiecare participant, ordonate descendent după numărul de participanți și apoi după username, în următorul format:
 
 "**Results:**
@@ -2408,8 +2408,8 @@ Punctele participantului vor fi un integer valid în gama \[0-100\]
 ..."
 
 
-### Exemple
-| **Input** | **Output** |
+### Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | Peter-Java-91 | Results: |
 | George-C#-84 | Peter \| 91 |

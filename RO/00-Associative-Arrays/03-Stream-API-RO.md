@@ -16,7 +16,7 @@ Un stream **not change the original data structure**, dar oferă rezultate.
 
 Stream pipeline este un **chain of stream source**, **intermediate operations**, și o **terminal operation**. 
 
-Un API are multe **terminal operations** care agregă un stream va un **type** sau **primitive**, de examplu `count()` `max()` `min()` `sum()`, dar aceste operații lucrează conform cu implementările predefinite. 
+Un API are multe **terminal operations** care agregă un stream va un **type** sau **primitive**, de examplu `count()`, `max()`, `min()`, `sum()`, dar aceste operații lucrează conform cu implementările predefinite. 
 
 Se numește **terminal operation** fiindcă pentru a obșine valoarea minimă, de exemplu, trebuie să **traverse the values inside the stream** și să obținem rezultate. 
 
@@ -237,7 +237,7 @@ int[] numbers = Arrays.stream(scanner.nextLine()
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Word Filter
+# Problemă cu Soluție: Word Filter
 
 [code-task title="Word Filter" taskId="Java-Fundamentals-2-Associative-Arrays-lab-Word-Filter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -255,25 +255,25 @@ public class Main {
 ## Enunț
 Citiți un array de **strings**, luați în considerare doar cuvintele a căror lungime este **even**.
 
-## Input / Constraints
+## Intrare / Constraints
 
 Citiți un array de string-uri.
 
-## Output
+## Ieșire
 
 Imprimați fiecare cuvânt pe o nouă linie.
 
 Filtrați cuvintele a căror lungime este pară.
 
 
-## Exemple
-| **Input** | **Output** |
+## Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | kiwi orange banana apple | kiwi |
 |  | orange |
 |  | banana |
 
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | pizza cake pasta chips | cake |
 
@@ -547,15 +547,15 @@ If there are **less** than 3, print **all** of them.
 
 Order the list using **Stream API**.
 
-## Input / Constraints
+## Intrare / Constraints
 Read a list of integers.
 
-## Output 
+## Ieșire 
 
 Print top 3 numbers with **for** loop.
 
-## Exemple
-| **Input** | **Output** |
+## Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 10 30 15 20 50 5 | 50 30 20 |
 | 20 30 | 30 20 |
