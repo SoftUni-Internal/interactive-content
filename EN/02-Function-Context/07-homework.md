@@ -863,7 +863,7 @@ function getArticleGenerator(articles) {
 Your function will be called automatically, there is **no need** to attach any event listeners.
 
 ## Input
-You will receive and **array** of strings.
+You will receive an **array** of strings.
 
 ## Output
 Return a **function** that displays the array elements on the web page.
