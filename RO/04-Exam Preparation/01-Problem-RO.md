@@ -20,7 +20,7 @@ public class Main {
 [task-description]
 # Descriere
 
-Prima linie de intrare va consta dintr-o **matrice întreagă**.
+Prima linie de intrare va consta dintr-o **matrice de numere întregi**.
 
 Creați un program care primește **comenzi** care **modifică matricea**.
 
@@ -30,7 +30,7 @@ Creați un program care primește **comenzi** care **modifică matricea**.
 
 - "**multiply** \{**index1** \} \{**index2** \}" - luați numărul din primul index specificat și multiplicați-l cu numărul din al doilea
 
-Salvați produsul celor doi la indexil unde era primul număr.
+Salvați produsul celor doi la indexiul unde era primul număr.
 
 - "**decrease**" - scade toate elementele din matrice cu 1
 
@@ -38,7 +38,7 @@ Salvați produsul celor doi la indexil unde era primul număr.
 
 Pe prima linie de intrare vi se vor da valorile matricei inițiale, separate printr-un singur spațiu.
 
-În rândurile următoare veți primi **comenzi**. 
+Pe liniile următoare veți primi **comenzi**. 
 
 Programul ar trebui să înceteze căutarea comenzilor după ce a primit comanda "**end**".
 
@@ -59,11 +59,11 @@ Comenzile ar putea fi:
 
 * Comenzile sunt limitate la: "**swap**", "**multiply**", "**decrease**" și "**end**"
 
-* Toate elementele matricei vor fi întregi
+* Toate elementele matricei vor fi numere întregi
 
 * Numărul de elemente din matrice va fi în intervalul \[2...100\]
 
-* Indicii vor fi întotdeauna în raza gamei
+* Indicii vor fi întotdeauna în intervalul matricei
 
 ## Primul Exemplu
 | **Intrare** | **Ieșire** |

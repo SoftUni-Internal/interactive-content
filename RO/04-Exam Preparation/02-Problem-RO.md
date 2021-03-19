@@ -27,11 +27,11 @@ Imprimați "**No**" dacă nu există numere mai mari decât valoarea medie.
 
 ## Intrare
 
-O succesiune de numere întregi separate printr-un spațiu din consolă.
+O secvență de numere întregi separate printr-un spațiu.
 
 ## Ieșire
 
-Imprimați numerele pe o singură linie separată de un spațiu.
+Imprimați numerele pe o singură linie separate printr-un spațiu.
 
 ## Constrângeri
 
@@ -61,7 +61,7 @@ Numărul de elemente nu va depăși 10000.
 
 ## Cometariu
 
-- Valoare medie = 28.08
+- Valoare medie = 28,08
 
 - Numerele mai mari decât 28.08 sunt: ​​\[Text Wrapping Break \] \{30, 40, 50, 50, 60, 60, 51\}
 
@@ -85,9 +85,9 @@ Numărul de elemente nu va depăși 10000.
 
 ## Cometariu
 
-- Valoare medie = -3,5
+- Valoare medie = -3.5
 
-- Numerele mai mari de -3,5 sunt: ​​\{-1, -2, -3\}
+- Numerele mai mari de -3.5 sunt: ​​\{-1, -2, -3\}
 
 - Primele 5 numere dintre ele, în ordine descrescătoare sunt: ​​\{-1, -2, -3\}
 
