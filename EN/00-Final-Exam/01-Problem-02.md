@@ -19,7 +19,7 @@ function solveClasses(){
 [task-description]
 # Your task
 
-Implement the following classes: `Pet`, `Cat`, `Dog`.
+Implement the following classes: `Pet`, `Cat`, and `Dog`.
 
 ## Pet Class
 
@@ -37,7 +37,7 @@ This function should receive a single **comment** as a string, add it to the **c
 
 `Comment is added.`
 
-If the the same comment was **already added** to the comments array, throw an error:
+If the same comment was **already added** to the comments array, throw an error:
 
 `This comment is already added!`
 
@@ -62,7 +62,7 @@ If there are any **comments** then add them on a new line:
 
 The `Cat` class inherits from `Pet`.
 
-Should have these **4 properties:**
+It should have these **4 properties:**
 
 * **owner** - string
 * **name** - string
@@ -87,15 +87,14 @@ And if the value of the **scratching** prоperty is **true** you should add this
 
 `, but beware of scratches.`  
 
-**Note: For more information see the examples below!**
+**Note: For more information, see the examples below!**
 
 ## Dog Class
 
 The `Dog` class inherits from `Pet`.
 
 - `constructor(owner, name, runningNeeds, trainability)`
-
-Should have these **4 properties:**
+It should have these **4 properties:**
 
 - **owner** - string
 - **name** - string
@@ -110,12 +109,12 @@ This **function** should inherit the `feed()` method of the `Pet` class and exte
 
 - `toString()`:
 
-This **function** should extend the `toString()` method of the `Pet` class returning the message with some more lines at the end which are:
+This **function** should extend the `toString()` method of the `Pet` class returning the message with some more lines at the end, which are:
 
 `Main information:`
 `{ name } is a dog with need of { runningNeeds }km running every day and { trainability } trainability.`
 
-**Note:  For more information see the examples below!**
+**Note:  For more information, see the examples below!**
 
 ## Submission
 Submit your `solveClasses` function.
@@ -134,9 +133,9 @@ function solveClasses(){
 ```
 
 # Examples
-This is an example how the code is **intended to be used:**
+This is an example of how the code is **intended to be used:**
 
-**Sample code usage** 
+**Sample code usage:** 
 ```js
 let classes = solveClasses();
 let pet = new classes.Pet('Ann', 'Merry');
@@ -145,7 +144,8 @@ console.log(pet.addComment('likes sweets'));
 console.log(pet.feed());
 console.log(pet.toString());
 
-let cat = new classes.Cat('Jim', 'Sherry', 'very good habits', true);
+let cat = new classes.Cat('Jim', 
+              'Sherry', 'very good habits', true);
 console.log(cat.addComment('likes to be brushed'));
 console.log(cat.addComment('sleeps a lot'));
 console.log(cat.feed());
@@ -158,7 +158,7 @@ console.log(dog.feed());
 console.log(dog.toString());
 ```
 
-**Corresponding output**
+**Corresponding output:**
 
 ```
 Comment is added.
@@ -173,15 +173,18 @@ Sherry is fed, happy and purring.
 Here is Jim's pet Sherry.
 Special requirements: likes to be brushed, sleeps a lot
 Main information:
-Sherry is a cat with very good habits, but beware of scratches.
+Sherry is a cat with very good habits, 
+but beware of scratches.
 
 Comment is added.
 Comment is added.
 Max is fed, happy and wagging tail.
 Here is Susan's pet Max.
-Special requirements: likes to be brushed, sleeps a lot
+Special requirements: likes to be brushed, 
+sleeps a lot
 Main information:
-Max is a dog with need of 5km running every day and good trainability.
+Max is a dog with need of 5km running every day 
+and good trainability.
 ```
 
 [/task-description]
