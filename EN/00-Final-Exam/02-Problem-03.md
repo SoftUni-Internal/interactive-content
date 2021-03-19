@@ -18,15 +18,12 @@ Write a `VeterinaryClinic` class and implement the following functionality:
 
 ## Functionality
 
-- `constructor (clinicName, capacity)`
+- `constructor (clinicName, capacity)` - should have these **3 properties:**
+    * **clinicName** - a property of type string
+    * **capacity** - a property of type number
+    * **customers** - initially an empty array
 
 Receives **2** parameters at initialization of the class - **clinicName and capacity.**
-
-Should have these **3 properties:**
-
-* **clinicName** - a property of type string
-* **capacity** - a property of type number
-* **customers** - initially an empty array
 
 **Hint:** Add more properties like `totalProfit` and `currentWorkload` to help you complete the task. Read the problem description **until the end** to understand what is required.
 
@@ -82,7 +79,7 @@ If it is registered and still has a full list of procedures, you should **throw 
 
 - `onLeaving (ownerName, petName)`:
 
-Check if the given `ownerName` corresponds to a customer in the **customers array**, if not **throw an error:**
+Check if the given `ownerName` corresponds to a customer in the **customers array**, if not, **throw an error:**
 
 "**Sorry, there is no such customer!**"
 
