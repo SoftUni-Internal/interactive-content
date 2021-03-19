@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 # Semnătura Metodei
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-44-45-46-47-Method-Overlading-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-44-45-46-Method-Signature-Overlading-Methods-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 In Java, semn[tura metodei face parte din declararea metodei.
@@ -51,6 +51,8 @@ public class MyClass {
 
 [slide hideTitle]
 # Semnătura și Tipul de Returnare 
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-47-Signature-type-and-return-type-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Metoda  **signature** nu inculde tipul de returnare a metodei.
 
