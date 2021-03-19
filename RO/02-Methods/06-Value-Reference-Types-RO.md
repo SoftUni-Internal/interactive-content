@@ -31,7 +31,7 @@ boolean result = true; //require 1 byte of memory
 [slide hideTitle]
 # Tipurile de Referință
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-39-reference-types-and-demos-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-39-reference-types-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Tipul de referință** al variabilei ține o referință \(indicator / adresă de memorie\) a valorii în sine.
 
@@ -49,6 +49,8 @@ byte[] bytes = { 1, 2, 3 };
 
 [slide hideTitle]
 # Tipuri de Valoare vs. Tipuri de Referință
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-36-Memory-Stack-And-heap-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [image assetsSrc="java-fund-methods-01.gif" /]
 
@@ -75,6 +77,8 @@ byte[] bytes ={ 1, 2, 3 };
 
 # Exemplu: Tipuri de valoare
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-39-value-type-modification-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ```java
 public static void main(String[] args) {
     int num = 5;
@@ -99,6 +103,7 @@ Acest lucru se datorează faptului că **int** este un tip primitiv și când es
 
 # Exemplu: Tipuri de referință
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-39-increment-with-a-method-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ```java
 public static void main(String[] args) {
