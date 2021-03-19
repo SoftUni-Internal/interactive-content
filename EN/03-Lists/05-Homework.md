@@ -23,11 +23,11 @@ Each **integer** represents the **number of passengers** that are currently in e
 
 On the next line, you will receive the **max capacity of a wagon** represented as a **single integer**.
 
-**Until** you receive the `end` command, you will be receiving two types of input:
+**Until** you receive the "**end**" command, you will be receiving two types of input:
 
-- **Add** \{passengers\} - add a wagon to the end of the train with the given number of passengers
+- "**Add** \{**passengers**\}" - add a wagon to the end of the train with the given number of passengers
 
-- \{passengers\} -  **find a single wagon** to fit all the incomming passengers (starting from the first wagon)
+- "\{**passengers**\}" -  **find a single wagon** to fit all the incomming passengers (starting from the first wagon)
 
 In the end, **print** the final state of the train (all the wagons separated by a space).
 
@@ -265,11 +265,11 @@ Create a program, that **reads a list of integers** from the console and receive
 
 Your program may receive the following **commands**: 
 
-- **Delete** \{element\} - delete all elements in the array, which are equal to the given element
+- "**Delete** \{**element**\}" - delete all elements in the array, which are equal to the given element
 
-- **Insert** \{element\} \{position\} - insert the element at the given position
+- "**Insert** \{**element**\} \{**position**\}" - insert the element at the given position
 
-You should **exit the program** when you receive the `end` command. 
+You should **exit the program** when you receive the "**end**" command. 
 
 Print all numbers in the array **separated by a single whitespace**.
 
@@ -437,16 +437,16 @@ On the first line of input, you are going to receive **the number of commands th
 
 On the next lines, you are going to receive some of the following: 
 
-**\{name\} is going!**
+"\{**name**\} **is going!**"
 
-- You have to **add the person if they are not in the guest list already**. 
-- If **the person is on the list** print to the following to the console: **\{name\} is already in the list!**
+- You have to **add the person if they are not in the guest list already**
+- If **the person is on the list** print to the following to the console: "\{**name**\} **is already in the list!**"
 
 
-**\{name\} is not going!**
+"\{**name**\} **is not going!**"
 
 - You have to remove the person if they are in the list. 
-- If not, print out: **\{name\} is not in the list!**
+- If not, print out: "\{**name**\} **is not in the list!**"
 
 
 Finally, print all of the guests, each on a new line.
@@ -673,17 +673,19 @@ Until we receive the **End** command, we will be given **operations** we have to
 
 The **possible commands** are:
 
-- **Add** \{number\} - add the given number to the end of the list
+- "**Add** \{**number**\}" - add the given number to the end of the list
 
-- **Insert** \{number\} \{index\} - insert the number at the given index
+- "**Insert** \{**number**\} \{**index**\}" - insert the number at the given index
 
-- **Remove** \{index\} - remove the number at the given index
+- "**Remove** \{**index**\}" - remove the number at the given index
 
-- **Shift left** \{number\} - first number becomes last. This has to be repeated the specified number of times
+- "**Shift left** \{**number**\}" - first number becomes last. This has to be repeated the specified number of times
 
-- **Shift right** \{number\} - last number becomes first. To be repeated the specified number of times
+- "**Shift right** \{**number**\}" - last number becomes first. To be repeated the specified number of times
 
-**Note**: the index given may be outside of the bounds of the array. In that case print: "Invalid index".
+**Note**: the index given may be outside of the bounds of the array. 
+
+In that case print: "**Invalid index**".
 
 ### Example
 | **Input** | **Output** |
@@ -945,7 +947,9 @@ Finally, **print the sum of the remaining elements** in the sequence.
 | 4 2 | |
 
 **Comments:**
+
 - The special number is 4 with a power of 2
+
 - After detonation this sequence remains: \[1, 2, 9\] with a sum of 12
 
 ### Example
@@ -1072,7 +1076,7 @@ If both players' cards **have the same values** - no one wins, and the two cards
 
 The **game is over** when only one of the decks is left **without any cards**. 
 
-You have to **display the result on the console** and **the sum of the remaining** cards: "\{First/Second\} player wins! Sum: \{sum\}".
+You have to **display the result on the console** and **the sum of the remaining** cards: "\{**First/Second**\} **player wins! Sum:** \{**sum**\}".
 
 ### Example
 | **Input** | **Output** |
@@ -1252,7 +1256,7 @@ You will **receive a sequence of integers, separated by spaces** - the **distanc
 
 Then you will **begin receiving integers**, which will correspond to **indexes** in that sequence.
 
-**When you receive an index**, you must **remove the element at that index** from the sequence (as if you've captured the pokemon).
+**When you receive an index**, you must **remove the element at that index** from the sequence (as if you have captured the pokemon).
 
 You must increase the value of all elements in the sequence, which are **less than or equal to the removed element** by the **value of the removed element**.
 
@@ -1275,7 +1279,7 @@ The **program ends** when **no more elements remain** in the sequence.
 - On the next several lines you will receive integers - the indexes
 
 ### Output
-When the program ends, you must print the summed up value of all REMOVED elements
+When the program ends, you must print the summed up value of all **REMOVED** elements.
 
 ### Example
 | **Input** | **Output** |
@@ -1562,19 +1566,19 @@ On the first input line, you will receive the initial schedule of lessons and ex
 
 Before the course starts, there are some changes to be made. 
 
-Until you receive the "course start" command, you will be given some **commands to modify the course schedule**. 
+Until you receive the "**course start**" command, you will be given some **commands to modify the course schedule**. 
 
 The **possible commands** are: 
 
-- Add:\{lessonTitle\} - **add the lesson to the end** of the schedule, if it **does not exist**
+- "**Add:**\{**lessonTitle**\}" - **add the lesson to the end** of the schedule, if it **does not exist**
 
-- Insert:\{lessonTitle\}:\{index\} - **insert** the lesson to the **given index**, if it **does not exist**
+- "**Insert:**\{**lessonTitle**\}:\{**index**\}" - **insert** the lesson to the **given index**, if it **does not exist**
 
-- Remove:\{lessonTitle\} - **remove the lesson**, if it **exists**
+- "**Remove:**\{**lessonTitle**\}" - **remove the lesson**, if it **exists**
 
-- Swap:\{lessonTitle\}:\{lessonTitle\} - **swap the position** of the two lessons, **if they exist**
+- "**Swap:**\{**lessonTitle**\}:\{**lessonTitle**\}" - **swap the position** of the two lessons, **if they exist**
 
-- Exercise:\{lessonTitle\} - **add the Exercise to the schedule right after the lesson index**, if the lesson exists and there is no exercise already, in the following format: "- - - \{lessonTitle\}-Exercise"
+- "**Exercise:**\{**lessonTitle**\}" - **add the Exercise to the schedule right after the lesson index**, if the lesson exists and there is no exercise already, in the following format: "**- - -** \{**lessonTitle**\}**-Exercise**"
     - if the **lesson does not exist**, **add** the lesson **to the end** of the course schedule, **followed by the exercise**
 
 Each time you **Swap or Remove a lesson,** you should **do the same with the exercises**, if there are any following the lessons.

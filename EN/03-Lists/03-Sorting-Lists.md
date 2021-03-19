@@ -170,15 +170,7 @@ If there are no elements left in the list, print "**empty**".
 | **Input** | **Output** |
 | --- | --- |
 | 10 -5 7 9 -33 50 | 50 9 7 10 |
-|  |  |
-
-| **Input** | **Output** |
-| --- | --- |
 | 7 -2 -10 1 | 1 7 |
-|  |  |
-
-| **Input** | **Output** |
-| --- | --- |
 | -1 -2 -3 | empty |
 
 [/task-description]

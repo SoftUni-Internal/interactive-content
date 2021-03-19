@@ -55,7 +55,7 @@ List<Integer> items = Arrays
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/EN/interactive-java-fundamntals-lists-13-printitng-lists-on-the-console-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Printing a list using a **for-loop**:
+- **Printing a list using a **for-loop**:
 
 ```java live
 List<String> months = new ArrayList<>(
@@ -65,7 +65,7 @@ for (int index = 0; index < months.size(); index++) {
    System.out.print(months.get(index) + " ");
 }
 ```
-**Printing a list using a **foreach-loop**:
+- **Printing a list using a **foreach-loop**:
 
 ```java live
 List<String> numbers = new ArrayList<>(
@@ -75,7 +75,7 @@ for (String number : numbers) {
    System.out.print(number + " ");
 }
 ```
-**Printing a list using a "String.join(…)"**:
+- **Printing a list using a "String.join(…)"**:
 
 ```java live
 List<String> list = new ArrayList<>(

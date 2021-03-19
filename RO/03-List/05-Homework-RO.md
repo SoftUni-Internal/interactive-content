@@ -1,4 +1,4 @@
-# Temă pentru acasă
+# Temă Pentru Acasă
 
 [slide hideTitle]
 # Problemă: Train
@@ -10,7 +10,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -23,10 +23,10 @@ Fiecare **întreg** reprezintă **numărul de pasageri** care sunt în prezent �
 
 Pe linia următoare veți obține **capacitatea maximă a fiecărui vagon** reprezentat ca un **singur număr întreg**.
 
-**Până**veți primi "end" vi se vor oferi două tipuri de intrări:
-- **Add** \{passengers\}- adaugați un vagon la final cu numărul dat de pasageri
-- \{passengers\} - **găsiți un vagon existent** care să se potrivească tuturor pasagerilor (începând cu primul vagon)
-La sfârșit **tipăriți** starea finală a trenului (toate vagoanele separate printr-un spațiu)
+**Până**veți primi "**end**" vi se vor oferi două tipuri de intrări:
+- "**Add** \{**passengers**\}"  - adaugați un vagon la final cu numărul dat de pasageri
+- "\{**passengers**\}" - **găsiți un vagon existent** care să se potrivească tuturor pasagerilor (începând cu primul vagon)
+La sfârșit **tipăriți** starea finală a trenului (toate vagoanele separate printr-un spațiu).
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -251,7 +251,7 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -261,9 +261,11 @@ public class Main {
 Scrieți un program, care **citește o listă de numere întregi** de pe consolă și primește **comenzi**, care **manipulează lista**.
 
 Programul dvs. poate primi următoarele **comenzi**:
-- **Delete** \{element\} - șterge toate elementele din matrice, care sunt egale cu elementul dat
-- **Insert** \{element\} \{position\} - introduce elementul și poziția dată
-Ar trebui să **opriți programul** când primiți comanda "end". Imprimați toate numerele din matrice **separate cu un singur spațiu alb**.
+- "**Delete** \{**element**\}" - șterge toate elementele din matrice, care sunt egale cu elementul dat
+- "**Insert** \{**element**\} \{**position**\}" - introduce elementul și poziția dată
+Ar trebui să **opriți programul** când primiți comanda "**end**". 
+
+Imprimați toate numerele din matrice **separate cu un singur spațiu alb**.
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -416,7 +418,7 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -429,16 +431,16 @@ Creați un program care ține evidența oaspeților care merg la o petrecere în
 Pe prima linie de intrare veți primi **numărul comenzilor**.
 
 Pe liniile următoare veți primi câteva dintre următoarele intrări:
--	"\{name\} is going!"
+"\{**name**\} **is going!**"
 
-- Trebuie să ** adăugați persoana dacă nu se află pe lista de invitați **.
-- Dacă ** persoana este pe listă ** tipăriți pe consolă următoarele: ** \ {nume \}is already in the list! **
+- Trebuie să **adăugați persoana dacă nu se află pe lista de invitați**.
+- Dacă **persoana este pe listă** tipăriți pe consolă următoarele: "\{**name**\} **is already in the list!**"
 
 
-** \ {name \} is not going! **
+"\{**name**\} **is not going!**"
 
 - Trebuie să eliminați persoana dacă se află în listă.
-- Dacă nu, tipăriți pe consolă: ** \ {nume \} is not in the list! **
+- Dacă nu, tipăriți pe consolă: "\{**name**\} **is not in the list!**"
 
 
 La sfârșitul programului, tipăriți toți invitații, fiecare pe o nouă linie.
@@ -652,7 +654,7 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -664,13 +666,15 @@ Veți primi o listă de numere **întregi** pe prima linie de intrare.
 Până când primiți "End" vi se vor da **operațiuni** pe care trebuie să le aplicați pe listă.
 
 **Comenzile posibile** sunt:
-- **Add** \{number\} - adăugați un număr la sfârșit
-- **Insert** \{number\} \{index\} - introduceți numărul la indexul dat
-- **Remove** \{index\} - eliminarea numărul de la indexul dat
-- **Shift left** \{count\} - primul număr devine ultimul de **n număr de ori**
-- **Shift right** \{count\} - ultimul număr devine primul de **n număr de ori*
+- "**Add** \{**number**\}" - adăugați un număr la sfârșit
+- "**Insert** \{**number**\} \{**index**\}" - introduceți numărul la indexul dat
+- "**Remove** \{**index**\}" - eliminarea numărul de la indexul dat
+- "**Shift left** \{**count**\}" - primul număr devine ultimul de **n număr de ori**
+- "**Shift right** \{**count**\}" - ultimul număr devine primul de **n număr de ori**
 
-**Notă**: este posibil ca indexul dat să fie în afara limitelor matricei. În acest caz, tipăriți "Invalid index"
+**Notă**: este posibil ca indexul dat să fie în afara limitelor matricei. 
+
+În acest caz, tipăriți "**Invalid index**"
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -908,14 +912,14 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care citește ** o secvență de numere și numărul special al bombei** cu o anumită putere.
+Scrieți un program care citește **o secvență de numere și numărul special al bombei** cu o anumită putere.
 
 Sarcina dvs. este să **detonați fiecare apariție a numărului special de bombă** și în funcție de puterea sa **vecinii săi din stânga și din dreapta**.
 
@@ -930,8 +934,10 @@ Detonările se efectuează **de la stânga la dreapta** și toate numerele deton
 | 4 2 | |
 
 **Comentarii:**
+
 - Numărul special este 4 cu puterea 2
--După detonare rămâne următoarea secvență \[1, 2, 9\] cu suma de  12
+
+- După detonare rămâne următoarea secvență \[1, 2, 9\] cu suma de  12
 
 
 ### Exemplu
@@ -942,7 +948,9 @@ Detonările se efectuează **de la stânga la dreapta** și toate numerele deton
 
 **Comentarii:**
 - Numărul special este 9 cu puterea 3
+
 - După detonare rămâne următoarea secvență \[1, 4\], cu suma de 5
+
 - Deoarece 9 are doar 1 vecin din dreapta, eliminăm doar numărul 9 (eliminăm doar un număr, în loc de 3)
 
 [/task-description]
@@ -1034,7 +1042,7 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1056,7 +1064,7 @@ Dacă ambele cărți ale jucătorilor **au aceleași valori** - nimeni nu câșt
 
 **Jocul s-a terminat**, când una dintre punți rămâne **fără nicio carte**.
 
-Trebuie să **tipăriți câștigătorul pe consolă** și **suma cărților** stânga: "\{First/Second\} player wins! Sum: \{sum\}".
+Trebuie să **tipăriți câștigătorul pe consolă** și **suma cărților** stânga: "\{**First/Second**\} **player wins! Sum:** \{**sum**\}".
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -1136,7 +1144,7 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1144,8 +1152,11 @@ public class Main {
 [task-description]
 ## Descriere
 Creați un program pentru a **adăuga mai multe matrice** de numere.
+
 - **Matricele** sunt **separate** prin '\|'
+
 - **Valorile** sunt **separate** prin  spații (' ', unul sau mai multe)
+
 - Ordonați matricele de la ultima la prima și valorile lor de la stânga la dreapta
 
 ### Exemplu
@@ -1220,7 +1231,7 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1247,15 +1258,18 @@ Creșterea și scăderea elementelor ar trebui făcută și în aceste cazuri.
 
 Elementul, a cărui valoare ar trebui s-o utilizați este **elementul eliminat**.
 
-** Programul se încheie ** când ** nu mai rămân ** elemente în secvență.
+** Programul se încheie ** când **nu mai rămân** elemente în secvență.
 
 
 ### Intrare
+
 - Pe prima linie de intrare veți primi o secvență de numere întregi, separate prin spații
+
 - Pe următoarele câteva linii veți primi numere întregi - indecșii
 
 ### Ieșire
-- Când programul se termină, trebuie să imprimați pe consolă, valoarea însumată a tuturor elementelor ELIMINATE.
+
+Când programul se termină, trebuie să imprimați pe consolă, valoarea însumată a tuturor elementelor **ELIMINATE**.
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -1266,13 +1280,21 @@ Elementul, a cărui valoare ar trebui s-o utilizați este **elementul eliminat**
 | 0 | |
 
 **Comentarii:**
+
 - Matricea este \{4, 5, 3\} Indexul este 1
+
 - Eliminăm 5 și creștem toți indexșii care sunt mai mici decât 5 și reducem toți indecșii mai mari
+
 - În acest caz,  cu toții sunt mai mici decât 5
+
 - Rezultatul este \{9, 8\}
+
 - Indexul este 1. Deci eliminăm 8 și scădem toți indecșii mai mari decât acesta
+
 - Rezultatul este \{1\}
+
 - Indexul este 0. Deci eliminăm 1
+
 - Nu mai există elemente, așa că imprimăm suma tuturor elementelor eliminate
 - 5 + 8 + 1 = 14
 
@@ -1514,7 +1536,7 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1530,11 +1552,11 @@ Dar, înainte de începerea cursului, trebuie făcute câteva modificări.
 Până când veți primi "course start" vi se vor oferi câteva **comenzi pentru a modifica planificarea cursului**.
 
 **Comenzile posibile** sunt:
-- Add:\{lessonTitle\} - **adăugați lecția la sfârșitul** planificării, dacă **nu există**
-- Insert:\{lessonTitle\}:\{index\} - **introduceți** lecția la **indexul dat**, dacă **nu există**
-- Remove:\{lessonTitle\} - **eliminați lecția**, dacă **există**
-- Swap:\{lessonTitle\}:\{lessonTitle\} - **schimbați locul** celor două lecții, **dacă există**
-- Exercise:\{lessonTitle\} - **adăugați Exercițiul în program, imediat după indexul lecției**, dacă lecția există și nu există încă un exercițiu, în următorul format: "- - - \{lessonTitle\}-Exercise"
+- "**Add:**\{**lessonTitle**\}" - **adăugați lecția la sfârșitul** planificării, dacă **nu există**
+- "Insert:\{**lessonTitle**\}:\{**index**\}" - **introduceți** lecția la **indexul dat**, dacă **nu există**
+- "**Remove:**\{**lessonTitle**\}" - **eliminați lecția**, dacă **există**
+- "**Swap:**\{**lessonTitle**\}:\{**lessonTitle**\}" - **schimbați locul** celor două lecții, **dacă există**
+- "**Exercise:**\{**lessonTitle**\}" - **adăugați Exercițiul în program, imediat după indexul lecției**, dacă lecția există și nu există încă un exercițiu, în următorul format: "**- - -** \{**lessonTitle**\}**-Exercise**"
     - dacă **lecția nu există**, **adăugați** lecția **la sfârșitul** programului cursului, **urmat de un exercițiu**
 
 De fiecare dată când **schimbați sau eliminați o lecție,** ar trebui **să faceți același lucru cu exercițiile**,care urmează lecțiile, în cazul în care acestea există.
@@ -1568,7 +1590,7 @@ De fiecare dată când **schimbați sau eliminați o lecție,** ar trebui **să 
 - Schimbăm lecțiile date, pentru că ambele există
 - După primirea comenzii Exercițiu, vedem că o astfel de lecție nu există, așa că adăugăm lecția la final, urmată de exercițiu
 - Schimbăm lecțiile **Lists** și **Databases**
-- **Databases**-Exercițiul este, de asemenea, mutat după lecția **Databases**
+- **Databases** - Exercițiul este, de asemenea, mutat după lecția **Databases**
 - Omitem următoarea comandă, deoarece avem deja o astfel de lecție în programul nostru
 
 [/task-description]

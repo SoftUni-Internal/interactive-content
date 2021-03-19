@@ -6,7 +6,7 @@
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/RO/interactive-java-fundamntals-lists-23-24-sorting-lists-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-Collections.sort(names); // sortarea colecției în ordine crescătoare (alfabetică) 
+`Collections.sort(names)`- sortarea colecției în ordine crescătoare (alfabetică) 
 
 ```java live
 List<String> names = new ArrayList<>(Arrays.asList("Peter", "Michael", "George", "Victor", "John", "Alexander"));
@@ -26,7 +26,7 @@ System.out.println(String.join(", ", names));
 
 
 [slide hideTitle]
-# Problemă cu soluție: List of Products
+# Problemă cu Soluție: List of Products
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/RO/interactive-java-fundamntals-lists-25-problem-and-solution-list-of-products-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -37,7 +37,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -143,7 +143,7 @@ d
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Remove Negatives and Reverse
+# Problemă cu Soluție: Remove Negatives and Reverse
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/RO/interactive-java-fundamntals-lists-27-problem-and-solution-remove-negatives-and-reverse-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -156,7 +156,7 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -167,19 +167,11 @@ Citiți o**listă de numere întregi**, **eliminați toate numerele negative** d
 
 În cazul în care nu există elemente rămase în listă, tipăriți "**empty**".
 
-## Exemple
+## Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | 10 -5 7 9 -33 50 | 50 9 7 10 |
-|  |  |
-
-|**Intrare**|**Ieșire**|
-| --- | --- |
 | 7 -2 -10 1 | 1 7 |
-|  |  |
-
-|**Intrare**|**Ieșire**|
-| --- | --- |
 | -1 -2 -3 | empty |
 
 [/task-description]

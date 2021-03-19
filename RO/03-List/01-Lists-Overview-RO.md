@@ -1,8 +1,8 @@
-# Prezentarea generală și manipularea listelor
+# Prezentarea Generală și Manipularea Pistelor
 
 [slide hideTitle]
 
-# Definiție și inițializare
+# Definiție și Inițializare
 
 La fel ca o matrice  **lista** este o **secvență de elemente**.
 
@@ -47,7 +47,7 @@ Principalele **caracteristici** ale **listelor** sunt:
 //Creați o listă goală de șiruri
 List<String> names = new ArrayList<>(); 
 ```
-- Inițializare prin folosirea metodei `asList()` - 
+- Inițializare prin folosirea metodei `asList()`
 ```java
 // Create a List of strings with 3 elements
 List<String> names = new ArrayList<>(Arrays.asList("Maria", "Peter", "George")); 
@@ -72,7 +72,7 @@ List<Integer> nums = Arrays.asList(numbers);
 [/slide]
 
 [slide hideTitle]
-# Metoele listelor
+# Metoele Listelor
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/RO/interactive-java-fundamntals-lists-6-list-data-structure-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -90,11 +90,11 @@ Listele oferă funcționalități care vă permit să **adăugați*, **eliminaț
 [/slide]
 
 [slide hideTitle]
-# Adăugarea și eliminarea de elemente
+# Adăugarea și Eliminarea de Elemente
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/RO/interactive-java-fundamntals-lists-7-9-add-remove-add(index, El)-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## Adăugarea de elemente
+## Adăugarea de Elemente
 
 Metoda `add()` este folosită pentru inserarea de elemente noi într-o listă. 
 
@@ -102,7 +102,7 @@ Tipul de elemente cate pot adăugate este stabilit Tipul de elemente care pot fi
 
 Dacă ați dat `List <String>` nu veți putea adăuga altceva decât un șir în lista dvs.
 
-**add(element):**
+- **add(element)**
 
 ```java live
 List<String> safetyEquipment = new ArrayList<>(); 
@@ -118,7 +118,8 @@ for (String equipment : safetyEquipment) {
 Articolele sunt atașate la listă în ordinea în care le adăugați.
 
 Dacă doriți să inserați un element într-o poziție diferită, puteți face acest lucru folosind `add (index, element)`.
-**add(index, element):**
+
+- **add(index, element)**
 
 ```java live
 List<String> safetyEquipment = new ArrayList<>(); 
@@ -133,18 +134,18 @@ for (String equipment : safetyEquipment) {
 }
 ```
 
-Acum „Casca” este tipărită mai întâi, deoarece a fost inserată la indexul 0.
+Acum "Casca" este tipărită mai întâi, deoarece a fost inserată la indexul 0.
 
-Încercarea de a adăuga un element dintr-un index care se află în afara limitelor matricei va avea ca rezultat o ** IndexOutOfBoundsException **.
+Încercarea de a adăuga un element dintr-un index care se află în afara limitelor matricei va avea ca rezultat o **IndexOutOfBoundsException**.
 
 Când se adaugă un element, numărul de elemente crește cu unul.
 
 
-## Eliminarea de elemente
+## Eliminarea de Elemente
 
-Metoda  `remove()` șterge un element din listă.
+Metoda `remove()` șterge un element din listă.
 
-**remove(element)** - **elimină** ** prima apariție ** a ** elementului specificat ** (returnează ** adevărat ** / ** fals **):
+**remove(element)** - **elimină** **prima apariție** a **elementului specificat** (returnează **adevărat** / **fals**):
 
 ```java live
 List<String> names = new ArrayList<>();
@@ -180,7 +181,7 @@ for (String name : names){
   System.out.println(name);
 }
 ```
-Încercarea de a elimina un element dintr-un index care se află în afara limitelor matricei va avea ca rezultat o ** IndexOutOfBoundsException **.
+Încercarea de a elimina un element dintr-un index care se află în afara limitelor matricei va avea ca rezultat o **IndexOutOfBoundsException**.
 
 Când un element este șters, numărul de elemente scade cu unul.
 
@@ -188,9 +189,9 @@ Când un element este șters, numărul de elemente scade cu unul.
 
 
 [slide hideTitle]
-# Mai multe metode pentru liste
+# Mai Multe Metode Pentru Liste
 
-## Modificarea elementelor
+## Modificarea Elementelor
 
 - `set(index, item)` - **replaces** element at a **specified index**
 
@@ -208,7 +209,7 @@ for (Integer num : nums) {
 }
 ```
 
-## Accesarea elementelor
+## Accesarea Lementelor
 
 - `get()` - **accesează** un element de la  **indexul specificat**
 
@@ -220,7 +221,7 @@ int numberAtIndex4 = nums.get(4);
 System.out.println(numberAtIndex4);
 ```
 
-## Găsirea elementelor
+## Găsirea Elementelor
 
 - `contains(element)` - checks if an **element is in the list**
 
@@ -232,7 +233,7 @@ if (names.contains("Maria")){
 }
 ```
 
-## Numărarea elementelor
+## Numărarea Elementelor
 
 - `size()` - returnează **dimensiunea** (**numărul de elemente**) listei
 ```java live

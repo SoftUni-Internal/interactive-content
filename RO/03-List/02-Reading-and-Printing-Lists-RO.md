@@ -27,7 +27,7 @@ for (int i = 0; i < n; i++) {
 [/slide]
 
 [slide hideTitle]
-# Citirea de pe o singură linie
+# Citirea de pe o Singură Linie
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/RO/interactive-java-fundamntals-lists-12-reading-values-from-a-single-line-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -46,11 +46,11 @@ List<Integer> items = Arrays
 [/slide]
 
 [slide hideTitle]
-# Imprimarea listelor
+# Imprimarea Listelor
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/RO/interactive-java-fundamntals-lists-13-printitng-lists-on-the-console-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Imprimarea unei liste utilizând o buclă "for"**
+- **Imprimarea unei liste utilizând o buclă "for"**
 
 ```java live
 List<String> months = new ArrayList<>(
@@ -61,7 +61,7 @@ for (int index = 0; index < months.size(); index++) {
 }
 ```
 
-**Imprimarea unei liste utilizând o buclă "for-each"**
+- **Imprimarea unei liste utilizând o buclă "for-each"**
 
 ```java live
 List<String> numbers = new ArrayList<>(
@@ -72,7 +72,7 @@ for (String number : numbers) {
 }
 ```
 
-**Imprimarea unei liste utilizând "String.join(…)"**
+- **Imprimarea unei liste utilizând "String.join(…)"**
 
 ```java live
 List<String> list = new ArrayList<>(
@@ -83,7 +83,7 @@ System.out.println(String.join(" ", list));
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Sum Adjacent Equal Numbers
+# Problemă cu Soluție: Sum Adjacent Equal Numbers
 
 [code-task title="Sum Adjacent Equal Numbers" taskId="java-1-fund-Lists-lab-Sum-Adjacent-Equal-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -94,7 +94,7 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -108,7 +108,7 @@ Creați un program pentru a **însuma toate numerele egale adiacente** într-o l
 
 - Sumați întotdeauna cei doi vecini egali din stânga (dacă sunt disponibile mai multe cupluri de vecini egali)
 
-## Exemple
+## Exemplu
 |**Intrare**|**Ieșire** |**Comentarii**|
 | --- | --- | --- |
 | 3 3 6 1 | 12 1 | **3 3** 6 1 -> **6 6** 1 -> 12 1 |
@@ -203,7 +203,7 @@ Creați un program pentru a **însuma toate numerele egale adiacente** într-o l
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Gauss' Trick
+# Problemă cu Soluție: Gauss' Trick
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/RO/interactive-java-fundamntals-lists-17-problem-and-solution-gauss-trick-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -215,7 +215,7 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -229,7 +229,7 @@ Creați un program care însumează toate numerele într-o listă în ordinea ur
 
 [image assetsSrc="lists-problem-gaus-trick(1).png" /]
 
-## Exemple
+## Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | 1 2 3 4 5 | 6 6 3 |
@@ -299,7 +299,7 @@ Creați un program care însumează toate numerele într-o listă în ordinea ur
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Merging Lists
+# Problemă cu Soluție: Merging Lists
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/RO/interactive-java-fundamntals-lists-19-problem-merging-and-solution-lists-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
@@ -311,7 +311,7 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -326,7 +326,7 @@ Creați o listă de rezultate care **conține** numerele **din** ambele liste.
 
 Dacă **lungimea** celor două liste **nu este egală**, doar **adăugați** elementele rămase **la sfârșitul listei**.
 
-## Exemple
+## Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | 3 5 2 43 12 3 54 10 23 | 3 76 5 5 2 34 43 2 12 4 3 12 54 10 23 |

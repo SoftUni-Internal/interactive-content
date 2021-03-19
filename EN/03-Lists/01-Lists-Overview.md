@@ -102,7 +102,7 @@ The type of elements that can be added is determined when creating the list.
 If you specified `List<String>` you will not be able to add anything other than Strings into your list.
 
 
-**add(element):**
+- **add(element):**
 
 ```java live
 List<String> safetyEquipment = new ArrayList<>(); 
@@ -120,7 +120,7 @@ The **add** method places each next item at the end of the list.
 If you would like to insert an item in a different position you can do that using `add(index, element)`.
 
 
-**add(index, element):**
+- **add(index, element):**
 
 ```java live
 List<String> safetyEquipment = new ArrayList<>(); 
@@ -146,7 +146,7 @@ When an element is added the number of elements increases by one.
 
 The `remove()` method deletes an element from the list.
 
-**remove(element)** - **removes** the **first occurrence** of the **specified element** (returns **true** / **false**):
+- **remove(element)** - **removes** the **first occurrence** of the **specified element** (returns **true** / **false**):
 
 ```java live
 List<String> names = new ArrayList<>();
@@ -167,7 +167,7 @@ for (String name : names){
 `System.out.println(names.remove("Maria"))` will return **true** because the element can be found and removed.
 `System.out.println(names.remove("John"))` returns **false** because the element is not contained in the list.
 
-**remove(index)** - **removes** the **element** at the **specified index**:
+- **remove(index)** - **removes** the **element** at the **specified index**:
 
 ```java live
 List<String> digimons = new ArrayList<>();
