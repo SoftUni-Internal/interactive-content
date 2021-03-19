@@ -126,9 +126,9 @@ The exception that can occur once we try to open a FileInputStream can typically
 
 It has to be handled by the developer and in this example, we are going to print "File not found!".
 
-The closing of the Input Stream is in a ``finally`` block which means it will always be executed even if an exception is thrown.
+The closing of the Input Stream is in a `finally` block which means it will always be executed even if an exception is thrown.
 
-The way this works is that the code in the ``try`` block will run and if there is an IOException the "File not found!" error will be printed.
+The way this works is that the code in the `try` block will run and if there is an IOException the "File not found!" error will be printed.
 
 After all of this is done the Input Stream will close and the resources used by it will be freed up.
 
