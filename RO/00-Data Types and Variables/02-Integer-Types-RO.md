@@ -110,7 +110,7 @@ This is what we mean by **integer overflow** and it is precisely the reason why 
 
 Literele întregi sunt numere, care nu au o parte în virgulă mobilă.
 
-** 541 ** este o valoare literală prin acea definiție.
+**541** este o valoare literală prin acea definiție.
 
 Ele pot fi reprezentate în câteva moduri diferite, care nu sunt la fel de intuitive:
 
