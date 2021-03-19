@@ -30,14 +30,14 @@ The company offers **small** and **large** cuts with two or five energy bars.
 
 The price of one bar depends on its flavor.
 
-The cut size(small or big) affects the price of a bar as well.
+The cut size (small or big) affects the price of a bar as well.
 
 The flavor and cut size are read from the console.
 
 You will also receive the number of cuts in the order.
 
 Create a program, which calculates the total amount for the order.
-
+#
 
 | \- | Watermelon  | Mango | Pineapple   | Raspberry |
 | :---:       |    :----:   |   :---:     |  :---:     | :---:     |

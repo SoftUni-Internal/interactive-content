@@ -63,7 +63,9 @@ The result should be **formatted** to the third decimal place.
 
 [hints]
 [hint]
-Calculate the individual price for the pencils, markers and detergent. Then calculate the total price.
+Calculate the individual price for the pencils, markers and detergent. 
+
+Then calculate the total price.
 [/hint]
 [hint]
 Determine the final price after applying the discount.

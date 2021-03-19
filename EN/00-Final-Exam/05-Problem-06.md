@@ -77,11 +77,16 @@ The money should be **formatted to the second digit after the decimal point.**
 
 [hints]
 [hint]
-Determine the amount of money won from each day of the tournament. Check if the won games are more than the lost. If they are, add a 10% bonus.
-Upon receving the "Finish" command, calculate the total sum of money.
+Determine the amount of money won from each day of the tournament. Check if the won games are more than the lost. 
+
+If they are, add a 10% bonus.
+
+Upon receving the "**Finish**" command, calculate the total sum of money.
 [/hint]
 [hint]
-Finally, check if the overall wins are more than the losses. If they are, add 20% and print the correct output.
+Finally, check if the overall wins are more than the losses. 
+
+If they are, add 20% and print the correct output.
 [/hint]
 [/hints]
 

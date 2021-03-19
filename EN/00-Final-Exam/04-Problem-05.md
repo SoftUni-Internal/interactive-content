@@ -60,7 +60,9 @@ One line is printed to the console:
 
 [hints]
 [hint]
-Calculate the total amount of food in grams. Then determine the total amount of food the puppy ate before it was adopted.
+Calculate the total amount of food in grams. 
+
+Then determine the total amount of food the puppy ate before it was adopted.
 [/hint]
 [hint]
 Check if there is any food left and print the correct output.

@@ -81,6 +81,11 @@ The percentage of food **must be formatted to the second digit after the decimal
 || 84.00% of the food has been eaten. |
 || 78.57% eaten from the dog. |
 || 21.43% eaten from the cat. |
+
+
+
+|**Intrare**|**Ieșire**|
+| --- | --- |
 |foodForPets([3, 1000, 300, 20, 100, 30, 110, 40]) | Total eaten biscuits: 15gr. |
 || 60.00% of the food has been eaten. |
 || 85.00% eaten from the dog. |
@@ -91,7 +96,9 @@ The percentage of food **must be formatted to the second digit after the decimal
 Calculate the total food for both the cat and dog. Note that every third day they receive a prize.
 [/hint]
 [hint]
-Print the total cookies that were eaten. Determine how much percent of the total food was eaten, how much of that the dog and cat have eaten.
+Print the total cookies that were eaten. 
+
+Determine how much percent of the total food was eaten, how much of that the dog and cat have eaten.
 [/hint]
 [/hints]
 

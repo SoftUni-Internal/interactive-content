@@ -29,7 +29,7 @@ The input consists of the record George has to improve in seconds, the distance 
 
 Create a function that determines **whether he has coped with the task**, given that:
 
-- The slope of the terrain **slows him down by 30** seconds for **every 50 meters**.
+- The slope of the terrain **slows him down by 30** seconds for **every 50 meters**
 
 **Calculate** the seconds George will need to climb the **distance** to the top and the time **difference from the record**.
 
@@ -75,7 +75,9 @@ The result must be **formatted** to the second digit after the decimal point.
 
 [hints]
 [hint]
-Calculate how much time it will take for George to climb the whole distance. Then, determine how much he will be slowed by the terrain and add the time to the total time.
+Calculate how much time it will take for George to climb the whole distance. 
+
+Then, determine how much he will be slowed by the terrain and add the time to the total time.
 [/hint]
 [hint]
 Check if he will beat the current record and print the correct output.
