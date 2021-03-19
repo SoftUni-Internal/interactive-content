@@ -5,6 +5,8 @@
 
 # Obiecte
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/interactive-java-fundamentals-objects-and-classes-3-4-objects-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Totul în Java este asociat cu clase și obiecte, împreună cu câmpurile și metodele lor.
 
 Un obiect este **unitatea de bază** și o **instanță a unei clase**.
@@ -43,6 +45,8 @@ public class Main {
 
 [slide hideTitle]
 # Clase
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/interactive-java-fundamentals-objects-and-classes-5-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Clasele și obiectele sunt cele **două aspecte principale** ale programării orientate pe obiecte.
 
@@ -88,6 +92,8 @@ Este un "plan" pentru crearea obiectelor.
 [slide hideTitle]
 # Obiectele - Instanțe ale Claselor
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/interactive-java-fundamentals-objects-and-classes-6-objects-instances-of-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Crearea unui obiect dintr-o clasă predefinită se numește **instanțiere**.
 
 **Instanța** este obiectul în sine, care este creat în timpul rulării.
@@ -117,6 +123,6 @@ public class Animal {
 
 # Clase vs. Obiecte
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-7-classes-vs-objects-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/interactive-java-fundamentals-objects-and-classes-7-classes-vs-objects-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
