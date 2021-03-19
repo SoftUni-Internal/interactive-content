@@ -23,11 +23,11 @@ Puteți găsi multe obiecte în jurul nostru: mașini din clasa Vehicle, câini 
 
 Un obiect are:
 
-- stare, care este reprezentată de **câmpuri**
+- Stare, care este reprezentată de **câmpuri**
 
-- comportament, care este reprezentat de **metode** - un obiect interacționează cu un alt obiect prin invocarea metodelor
+- Comportament, care este reprezentat de **metode** - un obiect interacționează cu un alt obiect prin invocarea metodelor
 
-- identitate, care dă un **nume unic** unui obiect
+- Identitate, care dă un **nume unic** unui obiect
 
 
 Exemplu din viața reală: un câine are stări - culoare, nume, rasă; și comportamente - lătrat, mâncat, dând din coadă.
