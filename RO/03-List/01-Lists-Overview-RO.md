@@ -4,6 +4,8 @@
 
 # Definiție și Inițializare
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/RO/interactive-java-fundamntals-lists-3-5-lists-overview-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 La fel ca o matrice  **lista** este o **secvență de elemente**.
 
 [image assetsSrc="java-fund-p1-lists-01.png" /]
