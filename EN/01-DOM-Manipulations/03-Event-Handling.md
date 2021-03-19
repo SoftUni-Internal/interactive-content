@@ -233,7 +233,7 @@ Extend the previous problem to display a `[Delete]` link after each list item.
 
 Clicking on it should delete the item with no confirmation.
 
-## Example
+# Example
 [image assetsSrc="Dom-Manipulation(4).gif" /]
 
 

@@ -51,10 +51,10 @@ This **function** should **print the department with the highest average salary 
 ..."
 
 
-## Submit
+## Submission
 Submit only your **Company class**.
 
-## Examples
+# Examples
 
 This is an example how the code is **intended to be used**:
 
@@ -217,7 +217,7 @@ There will be no input.
 ## Output
 The output must be a Fibonacci number and must be **returned** from the function.
 
-## Examples
+# Examples
 
 **Sample exectuion:**
 
@@ -355,10 +355,10 @@ This function should subtract a number or a Hex object and return a new Hex obje
 - `Parse({string})`:
 Create a parse class method that can parse Hexidecimal numbers and convert them to standard decimal numbers.
 
-## Submit
+## Submission
 Submit only your **Hex class**.
 
-## Example
+# Example
 This is an example how the code is **intended to be used**:
 
 ## Input
@@ -863,12 +863,12 @@ function getArticleGenerator(articles) {
 Your function will be called automatically, there is **no need** to attach any event listeners.
 
 ## Input
-You will receive and **array** of strings.
+You will receive an **array** of strings.
 
 ## Output
 Return a **function** that displays the array elements on the web page.
 
-## Examples
+# Examples
 
 ## Example 1
 [image assetsSrc="function-context-12.png" /]

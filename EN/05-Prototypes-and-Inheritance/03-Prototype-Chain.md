@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# What is Prototype
+# What is a Prototype?
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-19-20-what-is-a-prototype-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -22,7 +22,7 @@ All the inherited **properties** and **methods** come from the **prototype** pro
 
 This property allows us to add new **properties** to object **constructors**.
 
-For example:
+**For example:**
 
 ```js live
 function Person(first, last, age) {
@@ -47,7 +47,7 @@ Here we have a **Person** function and we add **nationality** to its **prototype
 
 [slide hideTitle]
 
-# Prototype Chain
+# Prototype Methods
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-21-prototype-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -74,11 +74,11 @@ let sum = rectangle.area();
 console.log(sum);
 ```
 
-In this example, we created a function called **Rectangle**, which accepts as parameters **width** and **heigh**.
+In this example, we created a function called **Rectangle**, which accepts as parameters **width** and **height**.
 
-To the **Rectangle** function, we attach another one that will multiply the **width** and the **heigh**.
+To the **Rectangle** function, we attach another one that will multiply the **width** and the **height**.
 
-The result will be printed in the console.
+The result will be printed to the console.
 
 [/slide]
 
@@ -88,7 +88,7 @@ The result will be printed in the console.
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-22-comparison-with-the-new-syntax-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-After **ES6**, we can do the same thing from the previous slide with classes.
+After **ES6**, we can do the same thing from the previous slide with **classes**.
 
 Here is how it will look like:
 
@@ -114,7 +114,7 @@ We create a class called **Rectangle**, which has a **width** and a **height** p
 
 The **Rectangle** class also has an `area()` method, which multiplies the **width** and the **height**.
 
-We will output the result in the console.
+We will output the result to the console.
 
 [/slide]
 
@@ -142,11 +142,11 @@ This property points at the **set** prototype.
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-18-object-create-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-we can use `object.create()` when we want to **extend** an object. 
+We can use `object.create()` when we want to **extend** an object. 
 
 It uses an **existing** object **prototype** to **delegate** its features to a **new object**.
 
-Here is an example:
+Here is an **example**:
 
 ```js live
 const Dog = {
@@ -221,15 +221,19 @@ In the end, we print the result that the `speak()` method returns.
 
 [slide hideTitle]
 
-# Proto vs Prototype Property
+# Proto vs. Prototype Property
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-25-proto-vs-prototype-property-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-There is a difference between the `__proto__` and the **prototype property**.
+There is a difference between the `__proto__` and the **prototype** properties.
 
-The `__proto__`, is an **accessor** property of the object and **exposes** its **internal prototype**.
+## Proto
+
+`__proto__`, is an **accessor** property of the object and **exposes** its **internal prototype**.
 
 We should not use `__proto__` directly in our code because it is **deprecated**.
+
+## Prototype
 
 The **constructor function** sets the **Prototype** of an object.
 
@@ -290,7 +294,7 @@ let makeSentence = new MakeSentence('Hi');
 console.log(makeSentence.concatenate('!'));
 ```
 
-We write a function called **MakeSentence** with a parameter **greet**.
+We write a function called **MakeSentence**, with a parameter **greet**.
 
 Then, we attach a property **name** and a method **concatenate** to the **MakeSentence** function. 
 
@@ -324,7 +328,7 @@ Write a function that receives a **class** and adds a property **species** and a
 
 When called, the function returns a string in the format:
 
-`I am a <species>. <toString()>`
+"**I am a** \<**species**\>. \<**toString()**\>"
 
 The function `toString()` is called from the current instance (use the **this** keyword to call it).
 

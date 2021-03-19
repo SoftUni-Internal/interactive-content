@@ -59,7 +59,7 @@ If there is a variable with the same name already defined and if it is in scope 
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-10-this-refers-to-the-parent-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Consider the example below:
+Take a look at this **example**:
 
 ```js live
 // Defining a function
@@ -88,13 +88,13 @@ Let us see what is going on in the code step by step to understand it better.
 
 Defining a function `printContext()` which checks if `this===global` (`this===window` if running it in the browser) and prints the result to the console.
 
-Creating an object **user** with two methods:
+Creating a **user** object with **two methods**:
 
 - `printContext: printContext` - stores the **printContext** function we defined in step 1 inside a method with the same name
 
 - `printAnotherContext: function() { console.log(this === global); }` - the **printAnotherContext** method checks if `this === global` and prints the result to the console
 
-Calling `user.printContext();` invokes the method belonging to the **user** object. 
+Calling `user.printContext();` invokes the method that belongs to the **user** object. 
 
 Returns: **false**, because `this` is used within an object's method and returns the object itself.
 
@@ -123,7 +123,7 @@ Returns **true**, because now `this` is called by the function **globalFunction*
 
 When used in event handlers, `this` points to the specific element that the event fired from.
 
-If you create an HTML file and attach the following event handler to an element with id "button", what would the resulting output in the console be?
+Here, we create an HTML file and attach the following event handler to an element with an **id** of `button`.
 
 ```js
 function solve() {
@@ -160,7 +160,7 @@ You can test it yourself by creating an HTML file with the following example cod
 </html>
 ```
 
-Clicking on the button in the example produces the following output in the console:
+Clicking on the button in the example produces the following **output** in the console:
 
 [image assetsSrc="function-context-04.png" /]
 

@@ -84,7 +84,7 @@ function subtract() {
 
 Our code is ready now. 
 
-## Submit
+## Submission
 
 Submit only the `subtract()` function.
 

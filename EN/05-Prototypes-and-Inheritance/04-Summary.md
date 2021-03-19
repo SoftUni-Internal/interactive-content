@@ -6,7 +6,7 @@
 
 ## In this lesson, you learned:
 
-- What is Inheritance:
+- What inheritance is:
 
     - **inheritance** is the ability of a class to copy the functions of another class
 

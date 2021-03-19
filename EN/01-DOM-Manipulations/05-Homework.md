@@ -29,7 +29,7 @@ Add a **click event listener** to each `div` that displays the hidden paragraph.
 
 Finally, you should **append** all `div`s to the element with an **id** of **content**.
 
-## Example
+# Example
 
 [image assetsSrc="Dom-Manipulation(5).gif" /]
 
@@ -141,7 +141,7 @@ After 2 seconds, **hide** the `div`.
 
 In the example below, a **notification** is shown when you click the button.
 
-## Example
+# Example
 
 [image assetsSrc="Dom-Manipulation(7).gif" /]
 
@@ -355,7 +355,7 @@ Whichever **button** we click, the **input fields** should **change**, depending
 For example, if we type in 48 hours and click **convert**, the value of the days' field should change to **2**.
 
 
-## Example
+# Example
 
 [image assetsSrc="Dom-Manipulation(9).gif" /]
 
@@ -552,7 +552,7 @@ If the hidden information is displayed, and we lock the profile again, the "**Hi
 
 Otherwise, when the profile is **unlocked** and we click on the "**Hide it**" button, the fields must hide again.
 
-## Example
+# Example
 
 ## Input
 [image assetsSrc="Dom-Manipulation(11).png" /]
@@ -1419,7 +1419,7 @@ After that, when the "**Decode and read it**" button is clicked, you need to get
 
 - **Replace the encoded message** with your decoded message in the receiver text area to make it readable
 
-## Example
+# Example
 
 ## Input
 [image assetsSrc="Dom-Manipulation(13).png" /]
@@ -1666,7 +1666,7 @@ If there is no match, **nothing should happen**.
 
 **Note:** After every search, **clear the input** field and remove all already selected classes, if any exist from the previous search, in order to make sure the new search will contain only the new result.
 
-## Example
+# Example
 
 ## Input
 [image assetsSrc="Dom-Manipulation(16).png" /]
@@ -2227,7 +2227,7 @@ On the next line, print the total price in the format: "**Total price:** \{**tot
 
 Finally, print the **average decoration factor** in the format: "**Average decoration factor:** \{**decFactor**\}".
 
-## Example
+# Example
 
 ## Input
 `[{"name": "Sofa", "img": "https://res.cloudinary.com/maisonsdumonde/image/upload/q_auto,f_auto/w_200/img/grey-3-seater-sofa-bed-200-13-0-175521_9.jpg", "price": 150, "decFactor": 1.2}]`
@@ -2736,7 +2736,7 @@ You should clear the span elements that hold the current cards' names when both 
 After every hand, push the current cards' names in the **history div** in the following format:
 "\[\{**top side card name**\} **vs** \{**bottom side card name**\}\]"
 
-## Example
+# Example
 
 ## Input
 [image assetsSrc="Dom-Manipulation(19).png" /]

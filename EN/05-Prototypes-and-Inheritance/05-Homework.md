@@ -282,6 +282,8 @@ Array.prototype.average = () => {
 };
 ```
 
+## Submission
+
 To be able to submit the solution, we need to wrap our program in an "**IIFE**". 
 
 There is **no return value** since the code execution results in functionality being added to an existing object. 
@@ -409,20 +411,29 @@ yes
 # Description
 
 You have been tasked with creating several classes for balloons.
+## Balloon Class
 
 Implement a class **Balloon**, which is initialized with a **color** (String) and **gasWeight** (Number). 
 
 These two arguments should be **public members**.
 
-Implement another class **PartyBalloon**, which inherits the **Balloon** class and is initialized with **2 additional parameters** - **ribbonColor** (String) and **ribbonLength** (Number).
+## PartyBalloon Class
 
-The **PartyBalloon** class should have a **property ribbon** which is an object with **color** and **length** - the ones given upon initialization. The ribbon property should have a **getter**.
+Implement a **PartyBalloon** class, which inherits **Balloon** and is initialized with **2 additional parameters** - **ribbonColor** (String) and **ribbonLength** (Number).
 
-Implement another class **BirthdayBalloon**, which inherits the **PartyBalloon** class and is initialized with **1 extra parameter** - **text** (String). The **text** should be a property and should have a **getter**
+The **PartyBalloon** class should have a **property ribbon** which is an object with **color** and **length** - the ones given upon initialization. 
+
+The ribbon property should have a **getter**.
+
+## BirthdayBalloon Class
+
+Implement another class - **BirthdayBalloon**, which inherits the **PartyBalloon** class and is initialized with **1 extra parameter** - **text** (String). 
+
+The **text** should be a property and should have a **getter**
 
 ## Hints
 
-First, we need to write a function, which will hold our classes. 
+First, we need to write a function that will hold our classes. 
 
 We create a simple function and, we add the first class, the base class for all Balloons to it.
 
@@ -497,6 +508,8 @@ function solve() {
     }
 }
 ```
+
+## Submission
 
 Submit a **function (NOT IIFE)**, which holds all classes, and returns them as an object.
 
@@ -730,6 +743,8 @@ Any input will be passed as valid arguments where applicable.
 
 Print any output that is required to the console as a **string**.
 
+## Submission
+
 Submit your code as a revealing module, containing the **three classes**. 
 
 All definitions need to be named as described above.
@@ -803,7 +818,7 @@ The easiest way to do this is to shift the first element from the array and push
 work() {
     let currentTask = this.tasks.shift();
     console.log(this.name + currentTask);
-    this.tasks.push(currentTask)
+    this.tasks.push(currentTask);
 }  
 ```
 
@@ -834,7 +849,7 @@ Child classes will call the parent with any parameters that are needed and push 
 class Junior extends Employee {
     constructor(name, age) {
         super(name, age);
-        this.tasks.push(' is working on simple task.')
+        this.tasks.push(' is working on simple task.');
     }
 }
 ```
@@ -843,9 +858,11 @@ class Junior extends Employee {
 class Senior extends Employee {
     constructor(name, age) {
         super(name, age);
-        this.tasks.push(' is working on a complicated task.');
+        this.tasks.push(
+            ' is working on a complicated task.');
         this.tasks.push(' is taking time off work.');
-        this.tasks.push(' is supervising junior workers.');
+        this.tasks.push(
+            ' is supervising junior workers.');
     }
 }
 ```
@@ -1251,32 +1268,41 @@ In case **there are no comments**, return information only about the **title**, 
    Views: {postViews}
    ```
 
-## Example
+# Example
+
+## Input
 
 ```js
    let post = new Post("Post", "Content");
 
    console.log(post.toString());
 
-   // Post: Post
-   // Content: Content
-
-   let scm = new SocialMediaPost("TestTitle", "TestContent", 25, 30);
+   let scm = new SocialMediaPost(
+       "TestTitle", "TestContent", 25, 30);
 
    scm.addComment("Good post");
    scm.addComment("Very good post");
    scm.addComment("Wow!");
 
    console.log(scm.toString());
-
-   // Post: TestTitle
-   // Content: TestContent
-   // Rating: -5
-   // Comments:
-   //  * Good post
-   //  * Very good post
-   //  * Wow!
 ```
+
+## Output
+
+```
+Post: Post
+Content: Content
+----------------------------
+Post: TestTitle
+Content: TestContent
+Rating: -5
+Comments:
+ * Good post
+ * Very good post
+ * Wow!
+```
+
+## Submission
 
 Submit a **function (NOT IIFE)**, which holds all classes, and returns them as an object.
 
@@ -1524,7 +1550,8 @@ There should be a **getter** and a **setter** for the property and validation en
 
 ```js
 function createComputerHierarchy() {
-    //TODO: implement all the classes, with their properties
+    // TODO: Implement all the classes, 
+    // with their properties
 
     return {
         Battery,
@@ -1537,13 +1564,15 @@ function createComputerHierarchy() {
 }
 ```
 
-You are asked to submit **ONLY the function** that returns an object containing the mentioned above classes.
+## Submission
+
+You are asked to submit **ONLY the function** that returns an object containing the classes mentioned above.
 
 ## Bonus
 
 To achieve code reusability, it is a good idea to have an abstract class containing common information. 
 
-Check the classes, for common characteristics share that can be grouped in a base class?
+Check the classes for common characteristics, that can be grouped in a base class.
 
 [/task-description]
 [code-io /]

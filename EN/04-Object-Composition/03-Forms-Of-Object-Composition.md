@@ -6,7 +6,7 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-13-14-aggregation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We perform an "aggregation" when an object is formed from an **enumerable** collection of sub-objects. 
+We perform an **aggregation** when an object is formed from an **enumerable** collection of sub-objects. 
 
 This is an object which **contains** other objects. 
 
@@ -204,8 +204,10 @@ const obj = [{
         height: 180
     }
 ];
+
 const delegate = (acc, curr) => Object.assign(Object.create(acc), curr);
 const result = obj.reduceRight(delegate, {});
+
 console.log(result);
 console.log(result.height);
 ```

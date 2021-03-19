@@ -18,11 +18,21 @@ Create objects to represent the rectangles.
 
 The objects should additionally have two functions **area**, which returns the area of the rectangle, and **compareTo** function, which compares the current rectangle with another one.
 
-The input will come in form of an **array of arrays** - every nested array will contain exactly 2 variables the **width** and the **height** of the rectangle.
+## Input
 
-The output must be an array of **rectangles** objects sorted by their **area** in **descending** order as a first criterion and by their **width** in **descending** order as a second criterion.  
+The input will come in form of an **array of arrays**.
 
-## Example 1
+Every nested array will contain exactly **2 variables**:
+- the **width** of the rectangle
+- the **height** of the rectangle
+
+## Output
+
+The output must be an array of **rectangles** objects sorted by:
+- their **area** in **descending** order, as a first criterion
+- their **width** in **descending** order, as a second criterion
+
+# Example
 |**Input**|**Output**|
 |---|---|
 |\[\[10,5\], \[5,12\]\]|\[\{width:5, height:12, area:function(), compareTo:function(other)\}, \{width:10, height:5, area:funciton(),compareTo:function(other)\}\]|
@@ -229,12 +239,14 @@ Using a closure, create an inner object to process list commands.
 The commands supported should be the following:
 - `add <string>` adds the following string in an inner collection
 - `remove <string>` removes all occurrences of the supplied `<string>` from the inner collection
-- `print` prints all elements of the inner collection joined by "**,**"
+- `print` prints all elements of the inner collection, joined by a comma: "**,**"
+
+## Input
 
 The input will be in a form of an array of strings - each string represents a command to be executed from the command execution engine.
  
 
-## Example
+# Example
 | **Input** | **Output** |
 | --- | --- |
 |\['add hello', 'add again', 'remove hello', 'add again', 'print'\]| again,again |
@@ -328,12 +340,16 @@ function objectFactory(input){
 
 Write a function that can compose objects. 
 
+## Input
+
 You will receive an array and your goal is to create a new object with all the unique properties you were given. 
+
+## Output
 
 You should print the newly created object.
  
 
-## Examples
+# Examples
 | **Input** | **Output** |
 | --- | --- |
 |'\[\{"canMove": true\},\{"canMove":true, "doors": 4\},\{"capacity": 5\}\]'| \{ canMove: true, doors: 4, capacity: 5 \} |
@@ -392,19 +408,23 @@ function cars(input){
 [task-description]
 # Description
 
-Write a closure that can create and modify objects. 
+Write a **closure** that can create and modify **objects**. 
 
-All created objects should be kept and be accessible by name. 
+All created objects should be kept and be accessible **by name**. 
 
-You should support the following functionality:
+The following functionality should be supported:
 
-- `create <name>` creates an object with the supplied `<name>`
+- `create <name>` - creates an object with the supplied `<name>`
 
-- `create <name> inherits <parentName>` creates an object with the given `<name>`, which inherits from the parent object with the `<parentName>`
+- `create <name> inherits <parentName>` - creates an object with the given `<name>`, which inherits from the parent object with the `<parentName>`
 
-- `set <name> <key> <value>` sets the property with key equal to `<key>` to `<value>` in the object with the supplied `<name>`
+- `set <name> <key> <value>` - sets the property with key equal to `<key>` to `<value>` in the object with the supplied `<name>`
 
-- `print <name>` prints the object with the supplied `<name>` in the format `<key1>:<value1>,<key2>:<value2>…`, the printing should also print all inherited properties from parent objects. 
+- `print <name>` - prints the object with the supplied `<name>`, in the format:
+
+"\<**key1**\>:\<**value1**\>,\<**key2**\>:\<**value2**\>…"
+
+It should also print all **inherited properties** from **parent objects**. 
 
 Inherited properties should come after own properties
 
@@ -414,7 +434,7 @@ Inherited properties should come after own properties
  
  There will be no nonexistent or incorrect input.
 
-## Example
+# Example
 | **Input** | **Output** |
 | --- | --- |
 |\['create c1', 'create c2 inherit c1', 'set c1 color red', 'set c2 model new', 'print c1', 'print c2'\]| color\:red |
@@ -481,9 +501,12 @@ function sum(){
 Write a function that returns an object that can modify the DOM. 
 
 The returned object should support the following functionality\:
-- `init(selector1, selector2, resultSelector)` initializes the object to work with the elements corresponding to the supplied selectors
-- `add()` adds the numerical value of the element corresponding to selector1 to the numerical value of the element corresponding to selector2 and then writes the result in the element corresponding to resultSelector
-- `subtract()` subtracts the numerical value of the element corresponding to selector2 from the numerical value of the element corresponding to selector1 and then writes the result in the element corresponding to resultSelector
+
+- `init(selector1, selector2, resultSelector)` - initializes the object to work with the elements corresponding to the supplied selectors
+  
+- `add()` - adds the numerical value of the element corresponding to `selector1` to the numerical value of the element corresponding to `selector2`, and then writes the result in the element corresponding to `resultSelector`
+
+- `subtract()` - subtracts the numerical value of the element corresponding to `selector2` from the numerical value of the element corresponding to `selector1`, and then writes the result in the element corresponding to `resultSelector`
 
 ## Input
 There will be no input your function must only provide an object.
@@ -493,9 +516,9 @@ Your function should return an object that meets the specified requirements.
 
 ## Constraints
 
-- All commands will always be valid, there will be no nonexistent or incorrect input.
+- All commands will always be valid, there will be no nonexistent or incorrect input
 
-- All selectors will point to single textbox elements.
+- All selectors will point to single textbox elements
 
 ## HTML
 You are given the following HTML for testing purposes:
@@ -599,7 +622,7 @@ Every mage can cast spells. When a spell is cast the mage's mana decreases by 1 
 
 "\{**mage's name**\} **cast** \{**spell**\}"
 
-## Example
+# Example
 
 ## Input
 
@@ -697,13 +720,15 @@ If you receive a worker who's dizziness property is set to **true** it means he 
 
 The required amount is 0\.1ml per kilogram per year of experience. 
 
-The required amount must be added to the existing amount. 
+The **required amount** must be added to the **existing amount**. 
 
 Once the water is administered, change the dizziness property to **false**.
 
-Workers who do not have dizziness should not be modified in any way. Return them as they are.
+Workers who **do not have dizziness** should not be modified in any way. 
 
-## Examples
+**Return** them as they are.
+
+# Examples
 ## Example 1
 
 ## Input
@@ -862,7 +887,7 @@ function carFactory(input){
 [task-description]
 # Description
 
-Create a program that assembles a car by given requirements out of existing components. 
+Create a program that **assembles a car**, by given requirements, out of existing components. 
 
 The client will place an order in the form of an object describing the car. 
 
@@ -870,7 +895,7 @@ You need to determine which parts to use to fulfill the client’s order.
 
 You have the following parts in storage:
 
-An engine has power and volume. Power is in horsepower and volume is in cubic centimeters.
+An **engine** has **power and volume**. Power is in horsepower and volume is in cubic centimeters.
 
 Both of these values are numbers. When selecting an engine, pick the smallest possible that still meets the requirements.
 
@@ -884,9 +909,9 @@ A carriage has a type and color.
 
 Both of these values are strings. You have two types of carriages in storage and you can paint them in any color.
 
-`Hatchback: { type: 'hatchback', color: <as required> }`
+- `Hatchback: { type: 'hatchback', color: <as required> }`
 
-`Coupe: { type: 'coupe', color: <as required> }`
+- `Coupe: { type: 'coupe', color: <as required> }`
 
 The wheels will be represented by an array of 4 numbers, each number represents the diameter of the wheel in inches. 
 
@@ -894,7 +919,7 @@ The size can only be an odd number. Round down any requirements you receive to t
 
 You will receive an object as an argument to your function. 
 
-The format will be as follows:
+The **format** will be as follows:
 
 ```js
 {
@@ -906,56 +931,65 @@ The format will be as follows:
 }
 ```
 
+# Examples
 
 ## Example 1
 
 ## Input 
-\{
+```
+{
     model: 'VW Golf II',
     power: 90,
     color: 'blue',
     carriage: 'hatchback',
     wheelsize: 14
-\}
+}
+```
 
 ## Output
- \{
+```
+ {
     model: 'VW Golf II',
-    engine: \{
+    engine: {
         power: 90,
         volume: 1800
-    \},
-    carriage: \{
+    },
+    carriage: {
         type: 'hatchback',
         color: 'blue'
-    \},
-    wheels: \[13, 13, 13, 13\]
-\}
+    },
+    wheels: [13, 13, 13, 13]
+}
+```
 
 ## Example 2
-## Input
 
-\{
+## Input
+```
+{
     model: 'Opel Vectra',
     power: 110,
     color: 'grey',
     carriage: 'coupe',
     wheelsize: 17
-\}
+}
+```
 
 ## Output
-\{
+```
+{
     model: 'Opel Vectra',
-    engine: \{
+    engine: {
         power: 120,
         volume: 2400
-    \},
-    carriage: \{
+    },
+    carriage: {
         type: 'coupe',
         color: 'grey'
-    \},
-    wheels: \[17, 17, 17, 17\]
-\}
+    },
+    wheels: [17, 17, 17, 17]
+}
+```
 
 
 [/task-description]
@@ -1139,7 +1173,7 @@ To gain access to the prototype of an instance, use the `Object.getPrototypeOf()
 
 To make a function shared between all instances, it will have to be attached to the prototype instead of the instance.
 
-## Example
+# Example
 
 **Extensible Object:**
 
@@ -1280,13 +1314,13 @@ function stringExtension(){
 [task-description]
 # Description
 
-Extend the build-in String object with additional functionality. 
+**Extend** the built-in String object with additional functionality. 
 
-Implement the following functions:
+Implement the following **functions**:
 
-- `ensureStart(str)` - append str to the beginning of a string, only if it is not already present
+- `ensureStart(str)` - append `str` to the beginning of a string, only if it is not already present
 
-- `ensureEnd(str)` - append str to the end of a string, only if it’s not already present
+- `ensureEnd(str)` - append `str` to the end of a string, only if it’s not already present
 
 - `isEmpty()` - return **true** if the string is empty, **false** otherwise
 
@@ -1302,17 +1336,17 @@ If n is less than 4, return **n** amount of periods.
 
 - `format(string, …params)` - static method to replace placeholders with parameters
 
-A placeholder is a number surrounded by curly braces. 
+A placeholder is a **number, surrounded by curly braces**. 
 
 If parameter index cannot be found for a certain placeholder, do not modify it. 
 
-Note static methods are attached to the String object instead of its prototype. 
+**Note:** Static methods are attached to the String object instead of its prototype. 
 
-See the examples for more info.
+**See the examples for more info.**
 
-Your main code should be structured as an IIFE without input or output. 
+Your main code should be structured as an **IIFE without input or output**. 
 
-It should modify the existing String prototype instead.
+It should **modify the existing String prototype** instead.
 
 ## Example
 
@@ -1334,7 +1368,7 @@ str = String.format('jumps {0} {1}',
 ```
 
 ## Output
-
+```
 my string
 hello my string
 hello my string
@@ -1343,7 +1377,8 @@ hello...
 h...
 ..
 The quick brown fox
-jumps dog \{1\}
+jumps dog {1}
+```
 
 [/task-description]
 [code-io /]
@@ -1472,9 +1507,9 @@ Implement a collection, which keeps a list of numbers, sorted in **ascending** o
 
 It must support the following functionality:
 
-- `add(element)`- adds a new element to the collection
+- `add(element)` - adds a new element to the collection
 
-- `remove(index)`- removes the element at position index
+- `remove(index)` - removes the element at position index
 
 - `get(index)` - returns the value of the element at position index
 
@@ -1489,7 +1524,7 @@ Note the **size** of the collection is **NOT** a function.
 Write your code such that the **first function in your solution** returns an instance of your Sorted List.
 
 
-## Example
+# Example
 
 ``` js
 function sortedList() {
