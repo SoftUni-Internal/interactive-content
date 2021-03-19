@@ -23,19 +23,19 @@ Use the **provided project skeleton** to solve this problem.
 
 [image assetsSrc="exam-pic1.png" /]
 
-## Your task
+## Your Task
 
 Write the missing JavaScript code to make the **Pet Me** application work as expected.
 
-Each new registered pet must have the following properties: `Name`, `Age`, `Kind` and `Current Owner`.
+Each new registered pet must have the following properties: `Name`, `Age`, `Kind`, and `Current Owner`.
 
-When the `[Add]` button is clicked a new **list** item should be added to the section with id `adoption`. 
+When the `[Add]` button is clicked, a new **list** item should be added to the section with an **id** of `adoption`. 
 
 Do not add anything if **any of the input fields are empty** or if the age entered is not a number.
 
 Do not forget to **clear the inputs** after a new pet is added or in case of invalid input (see above).
 
-## Existing pets
+## Existing Pets
 
 [image assetsSrc="exam-pic2.png" /]
 
@@ -63,15 +63,15 @@ Any new item that is added should have the **following structure:**
 
 You should create a **list** element that contains a **paragraph** element with the name, age, and kind of the new pet (cat, dog, parrot, and so on). 
 
-Format: `{ name } is a { years } year old { kind }`, where  **name**, **years** and **kind** are inside `<strong>` elements within the paragraph. 
+**Format:** "\{**name**\} **is a** \{**years**\} **year old** \{**kind**\}", where  **name**, **years** and **kind** are inside `<strong>` elements within the paragraph. 
 
 After the list element, we have a **span** element with `Owner: { owner name }` and a `[Contact Owner]`  button.
 
-When the `[Contact Owner]` button is clicked, an input appears and the button changes to `[ Yes! I will take it! ]` like this:
+When the `[Contact Owner]` button is clicked, an input appears, and the button changes to `[ Yes! I will take it! ]` like this:
 
 [image assetsSrc="exam-pic4.png" /]
 
-The new elements should be placed inside a `div` element and **the structure changes like so:**
+The new elements should be placed inside a `div` element, and **the structure changes like so:**
 
 ```js
 <ul>
