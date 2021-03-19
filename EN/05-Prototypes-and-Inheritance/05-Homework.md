@@ -419,7 +419,7 @@ These two arguments should be **public members**.
 
 ## PartyBalloon Class
 
-Implement another class **PartyBalloon**, which inherits the **Balloon** class and is initialized with **2 additional parameters** - **ribbonColor** (String) and **ribbonLength** (Number).
+Implement a **PartyBalloon** class, which inherits **Balloon** and is initialized with **2 additional parameters** - **ribbonColor** (String) and **ribbonLength** (Number).
 
 The **PartyBalloon** class should have a **property ribbon** which is an object with **color** and **length** - the ones given upon initialization. 
 
@@ -427,13 +427,13 @@ The ribbon property should have a **getter**.
 
 ## BirthdayBalloon Class
 
-Implement another class **BirthdayBalloon**, which inherits the **PartyBalloon** class and is initialized with **1 extra parameter** - **text** (String). 
+Implement another class - **BirthdayBalloon**, which inherits the **PartyBalloon** class and is initialized with **1 extra parameter** - **text** (String). 
 
 The **text** should be a property and should have a **getter**
 
 ## Hints
 
-First, we need to write a function, which will hold our classes. 
+First, we need to write a function that will hold our classes. 
 
 We create a simple function and, we add the first class, the base class for all Balloons to it.
 
@@ -1572,7 +1572,7 @@ You are asked to submit **ONLY the function** that returns an object containing 
 
 To achieve code reusability, it is a good idea to have an abstract class containing common information. 
 
-Check the classes for common characteristics that can be grouped in a base class.
+Check the classes for common characteristics, that can be grouped in a base class.
 
 [/task-description]
 [code-io /]
