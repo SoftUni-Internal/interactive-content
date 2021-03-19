@@ -1,40 +1,31 @@
-# Objects and Classes
+# Obiecte și clase
 
 
 [slide hideTitle]
 
 # Obiecte
 
-Un obiect este **unitate de bază** și o **instanță a unei clase**.
-Clasele definesc șabloane pentru obiecte: câmpuri, constructori, metode.
+Totul în Java este asociat cu clase și obiecte, împreună cu câmpurile și metodele lor.
 
-Exemplu:
+Un obiect este **unitatea de bază** și o **instanță a unei clase**.
 
-- Clasa eșantion: LocalDate
+Clasele definesc șabloane pentru  **câmpuri**, **constructori**, **metode**.
 
-- Exemple de obiecte: birthdayPeter, birthdayMaria
-
-
-Un obiect reprezintă **subiecți din viața reală**.
-
-Dacă comparați obiectul software cu un obiect din lumea reală, acestea au caracteristici foarte similare.
-
-Puteți găsi multe obiecte în jurul nostru: mașini din clasa Vehicle, câini din clasa Animal, oameni din clasa Person etc.
+Obiectele reprezintă **subiecți din viața reală**.
 
 Un obiect are:
 
-- stare, care este reprezentată de **câmpuri**
+- **stare**, care este reprezentată de **câmpuri**
 
-- comportament, care este reprezentat de **metode** - un obiect interacționează cu un alt obiect prin invocarea metodelor
+- **comportament**, care este reprezentat de **metode** - un obiect interacționează cu un alt obiect prin invocarea metodelor
 
-- identitate, care dă un **nume unic** unui obiect
+- **identitate**, care dă un **nume unic** unui obiect
 
+Exemplu din viața reală: câinii au stări - culoare, nume, rasă; și comportamente - lătrat, mâncat, dat din coadă.
 
-Exemplu din viața reală: un câine are stări - culoare, nume, rasă; și comportamente - lătrat, mâncat, dând din coadă.
+Un obiect deține un set de **valori numite**.
 
-Un obiect deține un set de valori numite.
-
-Exemplu: obiectul zilei de naștere conține ziua, luna și anul.
+Exemplu: obiectul zilei de naștere va avea valori precum **ziua**, **luna** și **anul** etc.
 
 ```java live
 import java.time.LocalDate;
@@ -53,43 +44,41 @@ public class Main {
 [slide hideTitle]
 # Clase
 
-Classes and objects are the **two main aspects** of object-orientated programming. 
+Clasele și obiectele sunt cele **două aspecte principale** ale programării orientate pe obiecte.
 
-In programming classes provide the **structure for describing and creating objects**. 
+Clasele oferă **structura utilizată pentru a descrie și a crea obiecte**.
 
-It builds the specification of a given type object from the real-world.
+Clasele definesc:
 
-Classes define: 
+- **Câmpuri** (variabile private) - Reprezintă starea unui obiect
 
-- **Fields** (private variables) - Represent the state of an object
+- **Getters/Setters** - Returnează sau actualizează câmpuri
 
-- **Getters/Setters** - Return or update fields
-
-- **Methods** - Represent the behavior of an object
+- **Metode** - Reprezintă comportamentul unui obiect
 
 
-This is how **objects** can be derived from a **class**:
+**Obiectele** pot fi derivate dintr-o **clasă** în felul următor:
 
-- `LocalDate` - A sample **class**
+- `LocalDate` - O **clasă** șablon
 
-- `birthdayPeter` and `birthdayMaria` - Sample **objects**
+- `birthdayPeter` and `birthdayMaria` - **obiecte** șablon
 
 
 [/slide]
 
 [slide hideTitle]
 
-# Exemplu de Viață Reală
+# Exemplu din Viață Reală
 
 Toate entitățile cu caracteristici similare pot fi aranjate în categorii.
 
-De exemplu, toate animalele sunt grupate într-o singură `class` și fiecare animal este un `object` al acelei clase.
+De exemplu, toate animalele sunt grupate într-o singură **clasă** și fiecare animal este un **obiect** al acelei clase.
 
 [image assetsSrc="ObjectsAndClasses_RealLifeExample.png" /]
 
-Fiecare animal are stări precum tipul, vârsta, culoarea, mâncarea preferată etc. și comportament cum ar fi să mănânce, să bea apă, să se miște, să facă sunet etc.
+Fiecare animal are stări precum tipul, vârsta, culoarea, mâncarea preferată etc. și comportament, cum ar fi să mănânce, să bea apă, să se miște, să facă sunet etc.
 
-O clasă este ca un constructor de obiecte, care conține toate caracteristicile lor similare. 
+O clasă este ca un constructor de obiecte care conține toate caracteristicile lor similare. 
 
 Este un "plan" pentru crearea obiectelor.
 
@@ -97,24 +86,21 @@ Este un "plan" pentru crearea obiectelor.
 [/slide]
 
 [slide hideTitle]
+# Obiectele - Instanțe ale Claselor
 
-# Creați un Obiect
+Crearea unui obiect dintr-o clasă predefinită se numește **instanțiere**.
 
-Crearea unui obiect dintr-o clasă definită se numește **instanțiere**.
+**Instanța** este obiectul în sine, care este creat în timpul rulării.
 
-**Instanța** este obiectul în sine, care este creat de timpul de rulare.
+Toate instanțele au un **comportament** comun.
 
-All instances have common **behavior**. 
+Pentru a crea un obiect:
 
-To create an object: 
+1) Specificați **numele clasei**
 
-1) Declare the `main` **method**
+2) Selectați **numele obiectului**
 
-2) Specify the **class name** 
-
-3) Set an **object name**
-
-4) Use the `new` **keyword** 
+3) Folosiți cuvântul cheie `new`
 
 ```java
 public class Animal {
@@ -129,7 +115,8 @@ public class Animal {
 
 [slide hideTitle]
 
-# Classes vs. Objects
+# Clase vs. Obiecte
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-7-classes-vs-objects-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]

@@ -1,8 +1,8 @@
-# Lesson Introduction
+# Introducere
 
 [slide hideTitle]
 
-# Lesson Content
+# Conținutul Lecției
 
 
 ## În această lecție veți afla despre:

@@ -843,7 +843,7 @@ Numele unui demon conține **starea sănătații lui și daunele lui**.
 
 Rețineți că ar trebui să luați în considerare semnele **plus** '+' și **minus** '-'  (e.g. +10 este 10 și -10 este -10). 
 
-Cu toate acestea, există **unele simboluri** ('\*' and '/') care **pot modifica în continuare daunele de bază înmulțindu-le sau împărțindu-le la 2** (de exemplu, în numele "m15\*/c-5.0", daunele de bază sunt 15 + (-5.0) = 10 și apoi **trebuie să le înmulțițim cu 2** (de ex. 10 \ * 2 = 20) și ** apoi să o împărțiți cu 2 ** (de ex. 20/2 = 10)).  
+Cu toate acestea, există **unele simboluri** ('\*' and '/') care **pot modifica în continuare daunele de bază înmulțindu-le sau împărțindu-le la 2** (de exemplu, în numele "m15\*/c-5.0", daunele de bază sunt 15 + (-5.0) = 10 și apoi **trebuie să le înmulțițim cu 2** (de ex. 10 \ * 2 = 20) și **apoi să o împărțiți cu 2** (de ex. 20/2 = 10)).  
 
 Deci, **înmulțire și împărțire se aplică numai după ce toate numerele sunt incluse în calcul** și în ordinea în care apar în numele. 
 
@@ -874,8 +874,8 @@ Imprimați toți demonii sortate după numele lor în ordine crescătoare, fieca
 
 ### Comentarii
 - M3ph-0.5s-0.5t0.0**:
-    - Health = 'M' + 'p' + 'h' + 's' + 't' = 524 health
-    - Damage = (3 + (-0.5) + (-0.5) + 0.0) \* 2 \* 2 = 8 damage
+    - health = 'M' + 'p' + 'h' + 's' + 't' = 524 health
+    - damage = (3 + (-0.5) + (-0.5) + 0.0) \* 2 \* 2 = 8 damage
 
 ### Exemplu
 |**Intrare**|**Ieșire** |
@@ -885,10 +885,11 @@ Imprimați toți demonii sortate după numele lor în ordine crescătoare, fieca
 
 ### Comments
 - Azazel: 
-    - Health - 'A' + 'z' + 'a' + 'z' + 'e' + 'l' = 615 health. Damage - no digits = 0 damage
+    - health - 'A' + 'z' + 'a' + 'z' + 'e' + 'l' = 615 health
+    - damage - no digits = 0 damage
 - M3ph1st0**:
-    - Health - 'M' + 'p' + 'h' + 's' + 't' = 524 health
-    - Damage - (3 + 1 + 0) \* 2 \* 2 = 16 damage
+    - health - 'M' + 'p' + 'h' + 's' + 't' = 524 health
+    - damage - (3 + 1 + 0) \* 2 \* 2 = 16 damage
 
 [/task-description]
 [code-io /]

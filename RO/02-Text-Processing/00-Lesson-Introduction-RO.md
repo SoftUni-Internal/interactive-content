@@ -1,26 +1,26 @@
-# Lesson Introduction
+# Introducere
 
 [slide hideTitle]
 
-# Lesson Content
+# Conținutul lecției
 
-## În această lecție veți afla despre:
+## În această lecție veți învăța despre:
 
 **1. Şir**
 
-- Ce este un Şir
+- Ce este un șir
 
-- Colecție de Perechi Cheie și Valoare
+- Colecție de perechi Key și Value
 
-**2. Șiruri de manipulare**
+**2. Manipularea Șirurilor **
 
 - Concatenarea șirului
 
 - Metode de șir
 
-**3. Construirea și modificarea șirurilor**
+**3. Construirea și Modificarea Șirurilor**
 
-- Prezentare generală a StringBuilder
+- Prezentarea generală a StringBuilder
 
 - Metode StringBuilder
 

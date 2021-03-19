@@ -3,7 +3,7 @@
 # Rezumat
 
 
-# În această lecție ați învățat:
+## În această lecție ați învățat:
 
 - Expresiile Regulate - RegEx
     - descrierea șablonelor de căutare prin text

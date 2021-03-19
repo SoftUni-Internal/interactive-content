@@ -2,25 +2,34 @@
 [slide hideTitle]
 # Stream API
 
-Java Stream API permite o **functional approach to process collections of objects/elements**. 
+Java Stream  API permite o **abordare funcțională a procesării colecțiilor de obiecte/elemente**. 
 
-Ea ne permite să **reduce the code**, pentru a crea **more readable programs**, și pentru a **improve productivity**. 
+Ne permite să **reducem codul**, pentru a crea **programe care pot fi citite mai ușor**, și pentru a **îmbunătățiți productivitatea**.
 
-De asemenea, ne permite **easier coding of parallel operations**. 
+ De asemenea, ne permite **codificarea mai ușoară a operațiunilor paralele**. 
 
-Un Java Stream este o componentă care este capabilă de **internal iteration of its elements**, ceea ce înseamnă că poate să **iterate its elements itself**. 
+Java Stream  este o componentă care este capabilă de **iterația internă a elementelor sale**, ceea ce înseamnă că poate să **itereze elementele sale în sine**. 
 
-Un stream este o **sequence of objects** care suportă **various methods**. 
+Un stream este o **secvență de obiecte** care suportă **diverse metode**.
 
-Un stream **not change the original data structure**, dar oferă rezultate.
+Stream-ul  **nu modifică structura de date originală**, dar oferă rezultate.
 
-Stream pipeline este un **chain of stream source**, **intermediate operations**, și o **terminal operation**. 
+Stream pipeline reprezintă un **lanț de stream sursă**, ** operațiuni intermediare**, și o **operațiune terminală**.
 
-Un API are multe **terminal operations** care agregă un stream va un **type** sau **primitive**, de examplu `count()`, `max()`, `min()`, `sum()`, dar aceste operații lucrează conform cu implementările predefinite. 
+Un stream API are multe **operațiuni terminale** care agregă un flux într-un **tip** sau o **primitivă**:
+count()`
 
-Se numește **terminal operation** fiindcă pentru a obșine valoarea minimă, de exemplu, trebuie să **traverse the values inside the stream** și să obținem rezultate. 
+ `max()` 
 
-După ce obținem valoarea minimă, este **not possible to convert that back into the stream** pentru că valoarea minumă este doar o valoare.
+`min()`
+
+`sum()`
+
+Aceste operații lucrează conform cu implementările predefinite. 
+
+Se numește **operațiune terminală**, fiindcă pentru a obține valoarea minimă, de exemplu, trebuie să **traverseze valorile din interiorul fluxului** și să obținem rezultate.
+
+ După ce obținem valoarea minimă, **nu este posibil pentru a-o converti înapoi în flux** pentru că valoarea minimă este doar o valoare.
 
 Cele mai multe dintre metode folosesc expresii lambda în stream.
 
@@ -28,12 +37,13 @@ Cele mai multe dintre metode folosesc expresii lambda în stream.
 
 
 [slide hideTitle]
-# Procesarea Array-urilor cu Stream API
+# Procesarea matricelor cu API flux
 
-Folosim **one line operations** pentru array-uri, bucle cu indexuri sau bucle`for-each` pentru operații simple, atunci când procesăm date:
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-19-20-21-processing-arrays-with-stream-api-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
+Folosirea de **operațiuni cu o singură linie** pentru matrice în loc de bucle cu indecși sau bucle`for-each` pentru operațiuni simple, atunci când procesăm date:
 
-- `min()` - găsește și returnează elementul **smallest** dintr-o colecție:
+- `min()` - găsește și returnează elementul **cel mai mic** dintr-o colecție:
 ```java live
 int [] numbers = new int[]{15, 25, 35};
 int min = Arrays.stream(numbers)
@@ -42,7 +52,7 @@ int min = Arrays.stream(numbers)
 System.out.println(min);
 ```
 
-Nu este posibil să fixăm o valoare alternativă care să fie returnată în loc de valoarea minimă, folosind `orElse()`.
+Este posibil să fixăm o valoare alternativă care să fie returnată în loc de valoarea minimă, folosind `orElse()`.
 
 ```java live
 int [] numbers = new int[]{15, 25, 35};
@@ -52,7 +62,7 @@ int min = Arrays.stream(numbers)
 System.out.println(min);
 ```
 
-Valoarea fixată în operația `orElse()` este returnată, dacă array-ul este gol.
+Valoarea fixată în operațiunea `orElse()` este returnată, dacă matricea este goală.
 
 ```java live
 int [] numbers = new int[]{};
@@ -62,8 +72,7 @@ int min = Arrays.stream(numbers)
 System.out.println(min);
 ```
 
-- `max()` - găsește și returnează cel mai **largest** element dintr-o colecție
-
+- `max()` - găsește și returnează cel mai **mare** element dintr-o colecție.
 ```java live
 int [] numbers = new int[]{15, 25, 35};
 int max = Arrays.stream(numbers)
@@ -72,16 +81,14 @@ int max = Arrays.stream(numbers)
 System.out.println(max);
 ```
 
-- `sum()` - găsește și returnează **the sum** tuturor elementelor dintr-o colecție
-
+- `sum()` - găsește și returnează **suma** tuturor elementelor dintr-o colecție
 ```java live
 int [] numbers = new int[]{15, 25, 35};
 int sum = Arrays.stream(numbers).sum();
 System.out.println(sum);
 ```
 
-- `average()` - găsește și returnează **the average** tuturor elementelor
-
+- `average()` - găsește și returnează **media** tuturor elementelor
 ```java live
 int [] numbers = new int[]{15, 25, 35};
 double average = Arrays.stream(numbers)
@@ -90,15 +97,51 @@ double average = Arrays.stream(numbers)
 System.out.println(average);
 ```
 
+- `toArray()` - convertește colecția într-o matrice
+```java
+int[] numbers = Arrays.stream(scanner.nextLine()
+            .split(" "))
+            .mapToInt(e -> Integer.parseInt(e))
+            .toArray();
+```
+
+- `map()` - manipulează elementele dintr-o colecție
+```java
+int[] numbers = Arrays.stream(scanner.nextLine()
+            .split(" "))
+            .mapToInt(e -> Integer.parseInt(e))
+            .toArray();
+```
+
+```java live
+String[] words = {"abc", "def", "geh", "yyy"};
+words = Arrays.stream(words)
+            .map(w -> w + "yyy")
+            .toArray(String[]::new);
+for (String word : words) {
+    System.out.println(word);
+}
+```
+
+`filter()` - selectează elementele după o anumită condiție dată
+```java
+int[] numbers = Arrays.stream(scanner.nextLine()
+            .split(" "))
+            .mapToInt(e -> Integer.parseInt(e))
+            .filter(n -> n > 0)
+            .toArray();
+```
+
 [/slide]
 
+
 [slide hideTitle]
-# Procesarea Colecțiilor cu Stream API
+# Procesarea Matricilor cu Stream API
 
 Folosește operațiile de pe o singură linie, cum ar fi lists, maps, in loc să scrie bucle cu indexuri `for-each` pentru operațiile simple, atunci când procesează date:
 
 
-- `min()` - găsește și returnează **smallest** element dintr-o colectie:
+- `min()` - găsește și returnează **cel mai mic** element dintr-o colectie:
 ```java live
 List<Integer> numbers = new ArrayList<>() {{
     add(15); add(25); add(35);
@@ -109,7 +152,7 @@ int min = numbers.stream()
             .getAsInt();
 System.out.println(min);
 ```
-
+Este posibil să setăm o valoare alternativă de returnare în loc de o valoare minimă, folosind `orElse()`.
 ```java live
 List<Integer> numbers = new ArrayList<>() {{
     add(15); add(25); add(35);
@@ -120,7 +163,7 @@ int min = numbers.stream()
 System.out.println(min);
 ```
 
-- `max()` - găsește și returnează  **largest** element dintr-o colecție
+- `max()` - Găsește și returnează  **cel mai mare** element dintr-o colecție
 ```java live
 List<Integer> numbers = new ArrayList<>() {{
     add(15); add(25); add(35);
@@ -142,7 +185,7 @@ int max = numbers.stream()
 System.out.println(max);
 ```
 
-- `sum()` - găsește și returnează **the sum** a tuturor elementelor dintr-o colecție
+- `sum()` - Găsește și returnează **suma** tuturor elementelor dintr-o colecție
 
 ```java live
 List<Integer> numbers = new ArrayList<>() {{
@@ -154,7 +197,84 @@ int sum = numbers.stream()
 System.out.println(sum);
 ```
 
-- `average()` - găsește și returnează **the average** tuturor elementelor
+- `average()` - Găsește și returnează **the average** tuturor elementelor
+```java live
+List<Integer> numbers = new ArrayList<>() {{
+    add(15); add(25); add(35);
+}};
+double average = numbers.stream()
+            .mapToInt(n -> n.intValue())
+            .average()
+            .getAsDouble();
+System.out.println(average);
+```
+
+[/slide]
+
+[slide hideTitle]
+# Processing Collections with Stream API
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-26-converting-collections-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+Folosește operațiile de pe o singură linie, cum ar fi liste, mape, în loc să scrie bucle cu indexcși `for-each` pentru operațiile simple, atunci când procesează date:
+
+
+- `min()` - găsește și returnează **cel mai mic** element dintr-o colectie:
+```java live
+List<Integer> numbers = new ArrayList<>() {{
+    add(15); add(25); add(35);
+}};
+int min = numbers.stream()
+            .mapToInt(n -> n.intValue())
+            .min()
+            .getAsInt();
+System.out.println(min);
+```
+
+```java live
+List<Integer> numbers = new ArrayList<>() {{
+    add(15); add(25); add(35);
+}};
+int min = numbers.stream()
+            .min((n1, n2) -> n1.compareTo(n2))
+            .get();
+System.out.println(min);
+```
+
+- `max()` - găsește și returnează  **cel mai mare** element dintr-o colecție
+```java live
+List<Integer> numbers = new ArrayList<>() {{
+    add(15); add(25); add(35);
+}};
+int max = numbers.stream()
+            .mapToInt(n -> n.intValue())
+            .max()
+            .getAsInt();
+System.out.println(max);
+```
+
+```java live
+List<Integer> numbers = new ArrayList<>() {{
+    add(15); add(25); add(35);
+}};
+int max = numbers.stream()
+            .max((n1, n2) -> n1.compareTo(n2))
+            .get();
+System.out.println(max);
+```
+
+- `sum()` - găsește și returnează **suma** a tuturor elementelor dintr-o colecție
+```java live
+List<Integer> numbers = new ArrayList<>() {{
+    add(15); add(25); add(35);
+}};
+int sum = numbers.stream()
+            .mapToInt(n -> n.intValue())
+            .sum();
+System.out.println(sum);
+```
+
+- `average()` - găsește și returnează **media** tuturor elementelor
 ```java live
 List<Integer> numbers = new ArrayList<>() {{
     add(15); add(25); add(35);
@@ -170,11 +290,11 @@ System.out.println(average);
 
 [slide hideTitle]
 
-# Manipulating Collections
+# Manipularea colecțiilor
 
-Collections can be **modified** by using the `map()` method.
+Colecțiile pot fi **modificate** prin folosirea metodei `map()` .
 
-Take a look at the following example:
+Vedeți următorul exemplu:
 
 ```java
 int[] numbers = Arrays.stream(scanner.nextLine()
@@ -197,11 +317,13 @@ for (String word : words) {
 
 [slide hideTitle]
 
-# Converting Collections
+# Convertirea colecțiilor
 
-There are **two** ways to convert collections in Java:
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-26-converting-collections-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- `toArray()` - converteșye colecția într-un array
+Sunt **două** moduri de a converti colecțiile în Java:
+
+- `toArray()` - converteșye colecția într-o **matrice**
 
 ```java
 int[] numbers = Arrays.stream(scanner.nextLine()
@@ -210,7 +332,7 @@ int[] numbers = Arrays.stream(scanner.nextLine()
             .toArray();
 ```
 
-- `toList()` - convertește colecția într-o listă
+- `toList()` - convertește colecția într-o **listă**
 
 ```java
 List<Integer> numbers = Arrays.stream(scanner.nextLine()
@@ -222,9 +344,11 @@ List<Integer> numbers = Arrays.stream(scanner.nextLine()
 
 [slide hideTitle]
 
-# Filtering Collections
+# Filtrarea colecțiilor
 
-`filter()` - selectează elementele după o anumită condiție dată
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-27-filtering-collections-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+Metoda `filter()` - trece printr-o colecție și selectează elementele după o anumită condiție dată
 
 ```java
 int[] numbers = Arrays.stream(scanner.nextLine()
@@ -239,6 +363,8 @@ int[] numbers = Arrays.stream(scanner.nextLine()
 [slide hideTitle]
 # Problemă cu Soluție: Word Filter
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-28-problem-and-solution-word-filter-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Word Filter" taskId="Java-Fundamentals-2-Associative-Arrays-lab-Word-Filter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -252,12 +378,13 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Enunț
-Citiți un array de **strings**, luați în considerare doar cuvintele a căror lungime este **even**.
+## Descriere
 
-## Intrare / Constraints
+Citiți o matrice de  **șiruri**, luați în considerare doar cuvintele a căror lungime este **pară**.
 
-Citiți un array de string-uri.
+## Intrare/Limitări
+
+Citiți o matrice de șiruri.
 
 ## Ieșire
 
@@ -266,14 +393,14 @@ Imprimați fiecare cuvânt pe o nouă linie.
 Filtrați cuvintele a căror lungime este pară.
 
 
-## Exemplu
-|**Intrare**|**Ieșire** |
+## Exemple
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | kiwi orange banana apple | kiwi |
 |  | orange |
 |  | banana |
 
-|**Intrare**|**Ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | pizza cake pasta chips | cake |
 
@@ -381,9 +508,11 @@ sell
 [slide hideTitle]
 # Ordonarea / Sortarea Colecțiilor
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-30-sorting-collections-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 There are **two** ways to sort collections:
 
-- Sortați în ordine ascendenă (Naturală)
+- Sortarea în ordine **ascendentă** (**Naturală**)
 
 ```java live
 import java.util.*;
@@ -407,7 +536,7 @@ public class Main {
 }
 ```
 
-- Sortați în ordine descendentă
+- Sortarea  în ordine **descendentă**:
 
 ```java live
 import java.util.*;
@@ -437,9 +566,12 @@ public class Main {
 
 # Sorting Collections by Multiple Criteria
 
-It is also possible to sort collections by multiple criteria.
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-31-sorting-collections-by-multiple-criteria-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Consider the following example:
+
+De asemenea, este posibil să sortați colecții după multe criterii.
+
+Vedeți următorul exemplu:
 
 ```java live
 Map<String, Integer> products = new HashMap<>();
@@ -467,9 +599,11 @@ products.entrySet()
 
 # Using Functional ForEach
 
-The `forEach()` method is used to iterate over every pair in a Map.
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-32-33-using-functional-for-each-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Take a look at the example below:
+Metoda  `forEach()` pentru a itera prin fiecare perechie dintr-un Map.
+
+Aruncați o privire asupra exemplului de mai jos:
 
 ```java live
 Map<String, List<Integer>> courseGrades = new HashMap<>();
@@ -524,7 +658,9 @@ courseGrades.entrySet()
 
 
 [slide hideTitle]
-# Problem with Solution: Largest 3 Numbers
+# Problemă cu Soluție: Largest 3 Numbers
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-34-problem-largest-three-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Largest 3 Numbers" taskId="Java-Fundamentals-2-Associative-Arrays-lab-large-3-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -541,21 +677,21 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Read a **list of integers** and **print largest 3 of them**.
+Citiți **o listă de numere întregi** și  **imprimați cele mari 3 dintre acestea**.
 
-If there are **less** than 3, print **all** of them.
+Dacă sunt **puținr** decât 3, le imprimați pe **toate**.
 
-Order the list using **Stream API**.
+Ordonați lista folosind **Stream API**.
 
-## Intrare / Constraints
-Read a list of integers.
+## Intrare/Limitări
+Citiți o listă de numere îtregi.
 
 ## Ieșire 
 
-Print top 3 numbers with **for** loop.
+Imprimați cele mai mari 3 numere cu o buclă  **for**.
 
-## Exemplu
-|**Intrare**|**Ieșire** |
+## Exemple
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 10 30 15 20 50 5 | 50 30 20 |
 | 20 30 | 30 20 |

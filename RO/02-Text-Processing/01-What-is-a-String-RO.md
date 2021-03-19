@@ -1,15 +1,15 @@
-# Strings
+# Șiruri
 
 [slide hideTitle]
 # Ce Este un Şir?
 
-Un **Șir** este un **obiect** care reprezintă o **secvență de caractere** - `char []`.
+Un **șir** este un **obiect** care reprezintă o **secvență de caractere** - `char []`.
 
 [image assetsSrc="String-example(1).png" /]
 
-La fel ca o serie de caractere, **Șirurile sunt imuabile**.
+La fel ca o matrice de caractere, **șirurile sunt imuabile**.
 
-Ori de câte ori se face o **schimbare** într-un șir, se creează un **întreg nou obiect Șir**. 
+Ori de câte ori se face o **schimbare** într-un șir, se creează un **obiect nou de tip șir**. 
 
 ```java live
 String name = "SoftUni!";
@@ -20,24 +20,23 @@ name = "Peter!";
 System.out.println(name.hashCode());
 ```
 
-Să explicăm ce înseamnă codul de mai sus:
-
-- După atribuirea unei noi valori în variabila **nume** apare o nouă adresă în memorie - se creează un **obiect Şirnou**
+După atribuirea unei noi valori variabilei **name** în exemplul precedent, apare ca o nouă adresă în memorie - un **obiect newString este creat**
 
 
 
 **Șirurile folosesc Unicode** (pot folosi majoritatea alfabetelor, de ex. Arabă) 
+
 ```java 
 String greeting = "مرحبا";  // Bună în Arabă
 ```
 
-Principalele **caracteristici** ale **Șirurilor** sunt:
+Principalele **caracteristici** ale **șirurilor** sunt:
 
 - Șirurile reprezintă o **secvență de caractere**
 
 - Șirurile sunt folosite pentru a **stoca text**
 
-- Clasa Java Șir are o mulțime de **metode** pentru **procesarea textului**
+- Clasa Java String are o mulțime de **metode** pentru **procesarea textului**
 
 - Șirurile sunt imuabile (**numai citire**)
 
@@ -46,15 +45,16 @@ Principalele **caracteristici** ale **Șirurilor** sunt:
 
 [slide hideTitle]
 
-# Strings are Immutable
+# Șirurile sunt imuabile
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-5-strings-are-immutable-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
 
 [slide hideTitle]
-# Inițializarea Snui Șir
+# Inițializarea unui Șir
 
-- Initializarea folosind **Șir literal**
+- Inițializarea folosind **șir literal**
 
 ```java
 String greeting = "Hello, SoftUni";

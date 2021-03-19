@@ -1,5 +1,3 @@
-
-
 [slide hideTitle]
 # Rezumat
 
@@ -7,6 +5,7 @@
 # În această lecție ați învățat:
 
 - Șirurile sunt secvențe imuabile de caractere Unicode
+
 - Metode de procesare a șirurilor:
     - `concat()`, `indexOf()`, `contains()`, `substring()`, `split()`, `replace()`, etc.
 
@@ -36,10 +35,15 @@ System.out.println(result); // "Hello, SoftUni!"
 # În lecția următoare, veți învăța:
 
 - Ce sunt expresiile regulate
-- Sintaxă RegEx
-- Cuantificatoare și grupare
-- PrivesteÎnainte și Uita-te in spate
+
+- Sintaxa RegEx
+
+- Cuantificatori și Grupare
+
+- Lookahead și Lookbehind
+
 - Backreferences
+
 - Regex în Java
 
 [/slide]

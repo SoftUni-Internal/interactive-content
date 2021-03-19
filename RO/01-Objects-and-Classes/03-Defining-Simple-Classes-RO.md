@@ -1,49 +1,56 @@
-
+# Crearea Claselor Particularizate
 
 [slide hideTitle]
 # Definirea Claselor Simple
 
-La definirea clasei, conține doar acele componente ale unei declarații de clasă care sunt necesare.
+La definirea clasei, aceasta conține doar acele componente ale unei declarații de clasă care sunt necesare.
 
-Componentele obligatorii sunt:
-- Cuvânt cheie - `class`
-- Numele clasei
-- Corpul clasei - între `{}`
+Componentele **obligatorii** sunt:
 
-Componentele nu sunt obligatorii, dar acreditările sunt:
+- Cuvântul cheie `class`
+
+- **Numele** clasei
+
+- **Corpul** clasei - între **{}**
+
+Componente de **legitimație**, dar care nu sunt obligatorii:
+
 - Câmpuri de clasă
+
 - Constructor
+
 - Getters și Setters
+
 - Metode de clasă
 
-Each **class**, **field**, **constructor** or **method** is initialized with an **access modifier** in front, which specifies the **accessibility**. 
+Fiecare **clasă**, **câmp**, **constructor** sau **metodă** este inițializată cu un **modificator de acces** înainte, care specifică **accessibilitea**. 
 
-Тhe **access level** can be **changed** by applying the **access modifier** on it. 
+**Nivelul de acces** poate fi **schimbat** prin aplicarea **modificatorului de acces** . 
 
-We will cover this in the next course. 
+Vom discuta despre asta în cursul următor. 
 
-There is a possibility to generate **automatically** via IntelliJ IDEA **constructors**, **getters**, **setters**, and other most used methods. 
+Există posibilitatea de a genera **automat** prin IntelliJ IDEA **constructori**, **getters**, **setters**, și cele mai folosite metode. 
 
-To do so, just use `Right-click + Generate`. 
+Pentru a face asta, folosiți `Right-click + Generate`. 
 
-The short command depends on the operation system of the computer: 
+Comanda scurtă depinde de sistemul de operare: 
 
-- In Windows and Linux it is `Alt + Insert` 
+- În Windows and Linux este `Alt + Insert` 
 
-- In Macintosh it is `Cmd + N`
+- În Macintosh este `Cmd + N`
 
 
 [/slide]
 
 
 [slide hideTitle]
-# Naming Classes
+# Numirea Claselor
 
-The class name is with the initial letter capitalized by convention, i.e. **PascalCase naming**. 
+Numele clasei începe cu majusculă, prin convenție, i.e. **PascalCase naming**. 
 
-The class name should contain descriptive nouns.
+Numele clasei ar trebui să conțină substantive descriptive.
 
-Abbreviations are required to be avoided (except widely known, e.g. URL, HTTP, etc.).
+Abrevierile trebuie evitate(cu excepția celor cunoscute, e.g. URL, HTTP, etc.).
 
 ```java
 public class MyClass {
@@ -54,21 +61,21 @@ public class MyClass {
 [/slide]
 [slide hideTitle]
 
-# Class Members
+# Membri Clasei
 
-**Fields** and **methods** define the **state** and **behavior** of a class.
+**Câmpurile** și **metodele** definesc **starea** și **comportamentul** unei clase.
 
-**Fields** provide the state of the class and its objects:
+**Câmpurile** furnizează starea unei clase și a obiectelor sale:
 
 - `String type` 
 
 - `int age`
 
-**Methods** implement the behavior of the class and its objects: 
+**Metodele** implementează comportamentul unei clase și al obiectelor sale: 
 
 - `makeSound()`
 
-Consider the following example:
+Luați în considerare următorul exemplu:
 
 ```java
 class Car {
@@ -83,13 +90,13 @@ class Car {
 
 [/slide]
 [slide hideTitle]
-# Methods
+# Metode
 
-It was previously covered that methods describe the **behavior** of an object.
+S-a stabilit anterior că metodele descriu **comportamentul** unui obiect.
 
-They can do so by storing **executable code** which manipulates the **state** when called.
+Pot face asta prin stocarea **codului executabil** care manipulează **starea** atunci când este invocat.
 
-Take a look at how a method affects a field:
+Observați cum o metodă afectează un câmp:
 
 ```java
 class Car {
@@ -109,29 +116,29 @@ class Car {
 [/slide]
 
 [slide hideTitle]
-# Getters and Setters
+# Getters și Setters
 
-A getter and a setter can be declared for each field.
+Un getter și un setter pot fi declarați pentru fiecare câmp.
 
-Getters provide **access** to the field and read its value. 
+Getters furnizează **acces** la câmp și citesc valoarea acestuia. 
 
-They always begin with the word `get`, followed by the variable name:
+Aceștia încep întotdeauna cu cuvântul `get`, urmat de numele variabilei:
 
 - `getColor`
 
 - `getType`
 
-Since the getter method is **return** type, the data type of the value returned by the method is the same as the field type.
+Din moment ce metoda getter este de tipul **return**, tipul de date al valorii returnate de către metodă este de același tip cu cel al câmpului.
 
-Setters **change** and **update** a field's value.
+Setters **schimbă** și **actualizează** valoarea unui câmp.
 
-They always begin with the word `set`, followed by the variable name:
+Aceștia încep întotdeauna cu cuvântul `set`, urmat de numele variabilei:
 
 - `setColor`
 
 - `setType`
 
-The setter method is of type **void**.
+Metoda setter este de tip **void**.
 
 ```java
 public class Car {
@@ -154,19 +161,19 @@ public class Car {
 
 [slide hideTitle]
 
-# Creating an Object
+# Crearea unui Obiect
 
-Each time an object is **created**, some **memory** is **dedicated** for it.
+De fiecare dată când un obiect este **creat**, acestuia îi este **dedicată** niște **memorie**.
 
-This is why **local variables** are created as **references** to that part of the memory.
+Din acest motiv **variabilele locale** sunt create ca **referințe** pentru acea parte din memorie.
 
-The **Java Virtual Machine** is responsible for **tracking** the object references.
+**Java Virtual Machine** este responsabilă pentru **urmărirea** referințelor obiectului.
 
-If there are **no references** to an object, it becomes **garbage** and is **deleted**.
+Dacă nu sunt **referințe** pentru un obiect, acesta devine **gunoi** și este **șters**.
 
-It is possible to create **many objects** out of one class by using the `new` keyword.
+Este posibilă crearea a **multor obiecte* dintr-o clasă folosind cuvântul cheie `new`. 
 
-Consider the following example:
+Luați în considerare exemplul următor:
 
 ```java
 class Program {
@@ -182,17 +189,17 @@ class Program {
 [slide hideTitle]
 # Constructor
 
-A special method, executed during object creation, that **sets object's initial state**.
+O metodă specială, executată în timpul creării unui obiect, care **setează starea inițială a obiectului**.
 
-The constructor name is the **same as the name of the class**.
+Numele constructor-ului este **același cu numele clasei** .
 
-Constructor **can take parameters**, which is used to **initialize fields**.
+Constructor-ul **poate să aibă parametri**, fapt care se folosește pentru **inițializarea câmpurilor**.
 
-All classes have **constructor by default**. 
+Toate clasele au **implicit constructor**. 
 
-There can be **multiple constructors of the same class**. 
+Pot să existe **constructori multipli ai aceleiași clase**. 
 
-This helps to instantiate objects in various ways with a different number of arguments.
+Acest lucru ajută la instanțierea obiectelor în diferite moduri cu un număr diferit de argumente.
 
 ```java
 public class Animal {
@@ -214,12 +221,12 @@ public class Animal {
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Students
+# Problemă cu Soluție: Students
 
 [code-task title="Students" taskId="java-fund-2-Objects-and-Classes-lab-Students" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-## Description
+## Descriere
 
 Definiți o clasă **Student**, care conține următoarele informații despre elevi:
  - first name
@@ -227,7 +234,7 @@ Definiți o clasă **Student**, care conține următoarele informații despre el
  - age
  - hometown
 
-### Intrare / constrângeri
+### Intrare / Constrângeri
 
 Citiți o listă de studenți până când primiți comanda **"end"**.
 
@@ -366,7 +373,7 @@ Port Lee is 14 years old
 
 
 [slide hideTitle]
-# Problem with Solution: Students 2.0
+# Problemă cu Soluție: Students 2.0
 
 [code-task title="Students 2.0" taskId="java-fund-2-Objects-and-Classes-lab-Students-2.0" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
@@ -374,7 +381,7 @@ Port Lee is 14 years old
 ## Description
 Folosiți clasa din problema anterioară.
 
-Dacă primiți un student, care există deja (**prenume** și **prenume** ar trebui să fie **unic**) suprascrieți informațiile.
+Dacă primiți un student, care există deja (**first name** și **last name** ar trebui să fie **unic**) suprascrieți informațiile.
 
 ## Exemple
 
@@ -459,7 +466,7 @@ J P is 61 years old
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Songs
+# Problemă cu Soluție: Songs
 
 [code-task title="Songs" taskId="java-fund-2-Objects-and-Classes-lab-Songs" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [task-description]
@@ -472,18 +479,18 @@ Definiți o clasă **Song**, care conține următoarele informații despre melod
 
 - **Time**
 
-### Intrare / constrângeri
+### Intrare / Constrângeri
 
 - Pe prima linie veți primi **numărul de melodii - N**.
 
 - Pe următoarele linii N veți primi date în următorul format:
 "\{typeList\}\_\{name\}\_\{time\}".
 
-- Pe ultima linie veți primi **Lista de tipuri** sau **"all"**.
+- Pe ultima linie veți primi **Type List** sau **"all"**.
 
 ### Ieșire
 
-Imprimați numai **Numele melodiilor** care aparțin acelei **Lista de tipuri** sau **Toate melodiile**.
+Imprimați numai **Numele melodiilor** care aparțin de **Type list** sau **All songs**.
 
 ## Exemple
 

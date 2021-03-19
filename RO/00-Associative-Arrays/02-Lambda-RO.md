@@ -3,31 +3,30 @@
 [slide hideTitle]
 # Expresiile Lambda
 
-O expresie lambda este o **anonymous function** care conține **expressions and statements**. 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-16-18-lambda-functions-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Ea **replaces an entire function** și **improves** scrierea de cod. Este folosită mai mult cu **with Stream API**, care va fi explicat în capitolul următor.
+O expresie lambda este o **funcție anonimă** care conține **expresii și instrucțiuni**. 
 
-Funcția Lambda este o **shorter-expression** care oferă un rezultat, dar nu este întotdeauna necesară.
+Ea **înlocuiește o funcție întreagă** și **îmbunătățește** scrierea de cod. 
 
-Folosiți operatorul lambda `->`, care este citit ca "goes to".
+Funcția Lambda este o **expresie mai scurtă** care oferă un rezultat, dar nu este întotdeauna necesară.
 
-Partea din **left**  a operatorului specifică parametrii de **input**.
+Folosiți operatorul lambda `->`, care este citit ca "goes as"
 
-Partea din **right** conține corpul metodei funcției lambda - **expression** sau **statement**.
+Partea din **stângă**  a operatorului specifică parametrii de **intrare**.
 
-Funcțiile Lambda sunt **inline methods** (funcții) care primesc parametri de input și returnează valori:
+Partea din **dreaptă** conține corpul metodei funcției lambda - **expresie** sau **instrucțiune**.
 
-In loc să scriem o funcție care acceptă, de exemplu, un parametru integer `int a` și apoi returnează dacă `a` este mai mare decât 5 sau nu. 
+Funcțiile Lambda sunt **metode inline** (funcții) care primesc parametri de intrare și returnează valori:
 
-Este posibil să scriem la fel, folosind expresia lambda:
+In loc să scriem o funcție care acceptă, de exemplu, un parametru întreg `int a` și care apoi returnează dacă `a` este mai mare decât 5 sau nu. , еste posibil să scriem același lucru, folosind expresia lambda:
 
 ```java
 (a -> a > 5)
 ```
+Găsiți mai jos câteva exemple pentru **funcțiile lambda**:
 
-Exemple:
-
-- Această funcție lambda `x -> x / 2` este echivalentul metodei care acceptă un parametru integer ca un singur parametru și returnează un integer împărțit în 2:
+- Această funcție lambda `x -> x / 2` este echivalentul metodei care acceptă un parametru întreg ca un singur parametru și returnează un număr întreg împărțit cu 2:
 
 ```java
 static int function(int x) { 
@@ -35,7 +34,7 @@ static int function(int x) {
 }
 ```
 
-- Această funcție lambda `x -> x != 0` este echivalentul metodei care acceptă un integer ca un singur parametru și returnează un boolean:
+- Această funcție lambda `x -> x != 0` este echivalentul metodei care acceptă un număr întreg ca un singur parametru și returnează un o valoare booleană:
 
 ```java
 static boolean function(int x) { 
@@ -43,16 +42,13 @@ static boolean function(int x) {
 }
 ```
 
-- Această funcție lambda `() -> 42` este echivalentă cu metoda care returnează întotdeauna `42`:
-
+- Această funcție lambda `() -> 42` este echivalentă cu metoda care returnează întotdeauna `42` :
 ```java
 static int function() { 
     return 42; 
 }
 ```
-
-Când nu avem niciun parametru, imprimăm doar paranteze goale `()`. 
-
-Dacă avem mai mulți parametru, îi imprimăm între paranteze `()`, separați prin virgule.
+Dacă funcția lambda cere mai multe de o ieșire, ar trebui să le introducem în paranteze `()`.
+Când nu avem niciun parametru, imprimăm doar paranteze goale `()`. Dacă avem mai mulți parametri, îi imprimăm între paranteze `()`, separați prin virgule.
 
 [/slide]
