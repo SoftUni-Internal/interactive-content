@@ -1,3 +1,4 @@
+# Problem: Tournament for Christmas
 [slide hideTitle]
 # Tournament for Christmas
 [code-task title="Tournament for Christmas" taskId="pb-java-exam-tournament-for-christmas" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -17,7 +18,7 @@ public class Program {
 
 Scrie un program care urmărește performanța echipei tale la un turneu de caritate de Crăciun.
 
-Pentru fiecare zi a turneului veți primi **diferite tipuri de nume de joc**, până când se primește comanda „**Finalizare**”.
+Pentru fiecare zi a turneului veți primi **diferite tipuri de nume de joc**, până când se primește comanda "**Finish**".
 
 **Câștigând** fiecare joc, câștigi **20 euro** pentru caritate.
 
@@ -31,9 +32,9 @@ La sfârșitul turneului, dacă ați câștigat în majoritatea zilelor, câști
 
 ## Intrare
 
-**Inițial, numărul de zile al turneului este citit de pe consolă - un număr întreg în intervalul \[1 ... 20 \]**
+**Inițial, numărul de zile al turneului este citit de pe consolă - un număr întreg în intervalul [1 ... 20 ]**
 
-Până când primiți comanda „**Finish**”, citiți:
+Până când primiți comanda "**Finish**", citiți:
 
   - sport - **un șir**
 
@@ -48,11 +49,11 @@ Ieșirea constă dintr-o singură linie:
 
 - Dacă **câștigi** turneul:
 
-     "You won the tournament! Total money raised: \{earned money\}"
+     "**You won the tournament! Total money raised:** \{**earned money**\}"
 
 - Dacă **pierzi** turneul:
 
-     "You lost the tournament! Total money raised: \{earned money\}"
+     "**You lost the tournament! Total money raised:** \{**earned money**\}"
 
 **Banii ar trebui formatați la a doua cifră după punctul zecimal.**
 
@@ -60,7 +61,7 @@ Ieșirea constă dintr-o singură linie:
 
 | **Intrare** | **Ieșire** |
 | --- | --- | 
-| **2** | You won the tournament! Total money raised: 132.00 |
+ **2** | You won the tournament! Total money raised: 132.00 |
 | volleyball | |
 | win | | 
 | football | |
@@ -91,7 +92,9 @@ Jucăm baschet și câștigăm -> am câștigat încă 20 de euro.
 
 Primim comanda Finish și jocurile pentru ziua respectivă s-au încheiat.
 
-Câștigat pentru ziua 20 + 0 + 20 = 40 euro. Am câștigat mai multe jocuri decât am pierdut, prin urmare sporim banii zilei cu 10% -> 44 euro.
+Câștigat pentru ziua 20 + 0 + 20 = 40 euro. 
+
+Am câștigat mai multe jocuri decât am pierdut, prin urmare sporim banii zilei cu 10% -> 44 euro.
 
 **A doua zi:**
 
@@ -101,7 +104,7 @@ Jucăm tenis și câștigăm -> 20 euro.
 
 Jucăm badminton și câștigăm -> 20 euro.
 
-Primim comanda **Finish** și jocurile pentru ziua respectivă s-au încheiat.
+Primim comanda "**Finish**" și jocurile pentru ziua respectivă s-au încheiat.
 
 Câștigat 20 + 20 + 20 = 60 euro. Am câștigat doar jocuri, respectiv mărim banii zilei cu 10% -> 66 euro.
 

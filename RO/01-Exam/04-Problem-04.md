@@ -1,4 +1,5 @@
-﻿[slide hideTitle]
+﻿# Problem: Club
+[slide hideTitle]
 # Club
 [code-task title="Club" taskId="pb-java-exam-Club" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -7,7 +8,7 @@ import java.util.Scanner;
 
 public class Program {
   public static void main(String[] args) {
-    // Write code here
+    // Scrieți codul dvs. aici
   }
 }
 ```
@@ -24,30 +25,30 @@ Prețul unui cocktail este lungimea numelui său.
 
 Dacă prețul unei comenzi este un număr impar, există o reducere de 25% de la prețul comenzii.
 
-# Input
+# Intrare
 Veți primi:
 - Pe prima linie - profitul dorit al clubului - număr real în intervalul [1.00 ... 15000.00]
 
-O serie de două rânduri până la comanda „Party!” sau până la atingerea profitului dorit:
+O serie de două rânduri până la comanda **"Party!"** sau până la atingerea profitului dorit:
 - Numele cocktailului - șir
 - Numărul de cocktailuri pentru comandă - număr întreg în intervalul [1 ... 50]
 
-## Output
+## Ieșire
 Mai întâi, imprimați o linie pe consolă:
 
-- Dacă primiți comanda "Party!":
-	- "We need \{money needed\} dollars more."
+- Dacă primiți comanda **"Party!"**:
+	- "**We need** \{**money needed**\} **dollars more.**"
 - Dacă este atins profitul dorit:
-	- "Target acquired."
+	- "**Target acquired.**"
 
 Apoi imprimați:
-- "Club income - \{club's profit\} dollars."
+- "**Club income -** \{**club's profit**\} **dollars.**"
 
 Banii trebuie formatați la a doua cifră după punctul zecimal.
 
 
-## Exemple
-| **Input** | **Output** |
+## Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 500 | We need 416.00 dollars more. |
 | Bellini | Club income - 84.00 dollars. |
@@ -58,12 +59,20 @@ Banii trebuie formatați la a doua cifră după punctul zecimal.
 
 ### Comentarii
 
-- Scopul clubului este de a colecta 500 $.
-- Prima comandă este pentru 6 cocktailuri Bellini.
-- Prețul cocktailului este lungimea numelui său - 7.6 Cocktailuri de 7 $ -> 42 $, ultima cifră este 2, prin urmare nu există reducere.
-- Următoarea comandă este pentru 7 cocktailuri Bamboo, prețul său este de 6 $. 6 * 7-> 42 $, din nou nu există reducere.
-- Primim comanda Party! Programul se oprește.
-- Clubul are 42 + 42 = 84 $ și scopul este 500. Sunt necesare 500 - 84 = 416 $.
+- Scopul clubului este de a colecta 500$
+- Prima comandă este pentru 6 cocktailuri Bellini
+- Prețul cocktailului este lungimea numelui său - 7.6 
+
+Cocktailuri de 7 $ -> 42$, ultima cifră este 2, prin urmare nu există reducere
+
+- Următoarea comandă este pentru 7 cocktailuri Bamboo, prețul său este de 6$
+
+6 * 7-> 42$, din nou nu există reducere
+
+- Primim comanda "**Party!**" Programul se oprește
+- Clubul are 42 + 42 = 84$ și scopul este 500
+
+Sunt necesare 500 - 84 = 416$
 
 [/task-description]
 [code-io /]

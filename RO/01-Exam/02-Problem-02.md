@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Program {
   public static void main(String[] args) {
-    // Write code here
+    // Scrieți codul dvs. aici
   }
 }
 ```
@@ -22,7 +22,7 @@ Sarcina dvs. este să scrieți un program care să calculeze dacă bugetul lor v
 
 Rețineți că, dacă numărul de nopți este mai mare de 7, prețul pe noapte se reduce cu 5%.
 
-## Input 
+## Intrare 
 
 Veți primi 4 linii de pe consolă:
 - Bugetul care este disponibil - număr real în intervalul [1.00 ... 10000.00]
@@ -30,17 +30,17 @@ Veți primi 4 linii de pe consolă:
 - Preț pe noapte - număr real în intervalul [1.00 ... 500.00]
 - Procent de costuri suplimentare - număr întreg în intervalul [0 ... 100]
 
-## Output
+## Ieșire
 Imprimarea pe consolă depinde de rezultatul:
 - Dacă bugetul este suficient:
-	- "The Smiths will be left with \{money left after the trip\} dollars after vacation."
+	-  "**The Smiths will be left with** \{**money left after the trip**\} **dollars after the vacation.**"
 - Dacă bugetul NU este suficient:
-	- "\{money needed\} dollars needed."
+	- "\{**money needed**\} **dollars needed.**"
 
 Suma trebuie formatată la a doua cifră după punctul zecimal.
 
 ## Exemple
-| **Input** | **Output** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 800.50 | The Smiths will be left with 24.49 dollars after the vacation. |
 | 8 | |
@@ -48,13 +48,14 @@ Suma trebuie formatată la a doua cifră după punctul zecimal.
 | 2 | |
 
 ### Comentarii
-- 8 nopți> 7, prin urmare, există o reducere de 5% la prețul pe noapte, care este de 100 USD
 
-- 5% din 100 este 5. -> 100 - 5-> 95 $ pe noapte după reducere, 8 nopți 95 $ -> 760 $
+- 8 nopți \> 7, prin urmare, există o reducere de 5% la prețul pe noapte, care este de 100 USD
 
-- 2% din buget este asigurat pentru costuri suplimentare. 2% de la 800,50 este 16,01 $
+- 5\% din 100 este 5 \-\> 100 \- 5 \= 95$ pe noapte după reducere, 8 \* 95\$ \= 760$
 
-- 760 + 16,01 = 776,01 <= 800,50, prin urmare banii sunt suficienți și după călătorie se întorc cu 800,50 - 776,01 = 24,49 $
+- 2% din buget este asigurat pentru costuri suplimentare. 2% de la 800.50 este 16.01$
+
+- 760 + 16.01 = 776.01 <= 800.50, prin urmare banii sunt suficienți și după călătorie se întorc cu 800.50 \- 776.01 = 24.49$
 
 [/task-description]
 [code-io /]

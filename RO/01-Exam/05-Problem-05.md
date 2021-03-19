@@ -1,4 +1,5 @@
-﻿[slide hideTitle]
+﻿# Problem: Football Tournament
+[slide hideTitle]
 # Football Tournament
 [code-task title="Football Tournament" taskId="pb-java-exam-football-tournament" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -7,7 +8,7 @@ import java.util.Scanner;
 
 public class Program {
   public static void main(String[] args) {
-    // Write code here
+    // Scrieți codul dvs. aici
   }
 }
 ```
@@ -30,30 +31,30 @@ Statisticile sale ar trebui să includă numărul total de puncte câștigate î
 
 Dacă din anumite motive echipa nu a jucat niciun meci în sezonul curent, se afișează un mesaj special.
 
-## Input
+## Intrare
 veți primi două linii de pe consolă:
 - Numele echipei de fotbal despre care facem statistici - șir
 - Numărul de jocuri jucate în sezonul curent - număr întreg în intervalul [0 ... 100]
 
 Pentru fiecare joc jucat, se citește o linie separată:
-- Rezultatul jocului jucat într-unul dintre formatele de mai sus - caracterele: „W”, „D” sau „L”
+- Rezultatul jocului jucat într-unul dintre formatele de mai sus - caracterele: ("W", "D" sau "L")
 
-## Output
+## Ieșire
 În funcție de faptul dacă echipa a jucat jocuri în sezonul curent, sunt afișate două tipuri de rezultate.
 - Dacă echipa nu a jucat un singur meci în sezonul curent, o linie este afișată în următorul format:
-	- "\{team name\} hasn't played any games during this season."
--Dacă echipa a jucat un meci sau mai multe, șase linii sunt afișate în următorul format:
-	- "\{team name\} has won \{count points\} points during this season."
-	- "Total stats:"
-	- "## W: \{count games won\}"
-	- "## D: \{number of games with even score\}" 
-	- "## L: \{count games lost\}" 
-	- "Win rate: \{percent games won\}%"
+	- "\{**team name**\} **hasn't played any games during this season.**"
+- Dacă echipa a jucat un meci sau mai multe, șase linii sunt afișate în următorul format:
+	- "\{**team name**\} **has won** \{**count points**\} **points during this season.**"
+	- "**Total stats:**"
+	- "**## W:** \{**number of games won**\}"
+	- "**## D:** \{**number draws**\}" 
+	- "**## L:** \{**number of games lost**\}" 
+	- "**Win rate:** \{**win rate(percentage)**\}**%**"
 
 Procentul trebuie formatat la a doua cifră după punctul zecimal.
 
-## Exemple
-| **Input** | **Output** |
+## Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | Liverpool | Liverpool has won 19 points during this season. |
 | 10 | Total stats: |
@@ -68,15 +69,15 @@ Procentul trebuie formatat la a doua cifră după punctul zecimal.
 | W |  |
 | W |  |
 
-### Comentarii
-- Numele echipei noastre este Liverpool.
-- 10 jocuri jucate în sezon:
-- 5 câștigate * 3 puncte = 15 puncte
-- 4 au marcat par * 1 puncte = 4 puncte
-- 1 pierdut -> niciun punct adăugat
-- Total puncte după sezon: 19 puncte
-- 5 victorii din 10 jocuri jucate = 50% rata de câștig
-- După formatare la a doua cifră -> 50,00%
+## Comments
+- The name of our team is Liverpool
+- They have played 10 games during the season:
+- 5 won * 3 points = 15 points
+- 4 even * 1 points = 4 points
+- 1 lost -> no points added
+- Total points finishing the season: 19 points
+- 5 wins of 10 games played = 50% win rate
+- After formatting the result -> 50.00%
 
 [/task-description]
 [code-io /]

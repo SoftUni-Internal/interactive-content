@@ -1,3 +1,4 @@
+# Problem: Pool Day
 [slide hideTitle]
 # Pool Day
 [code-task title="Pool Day" taskId="pb-java-exam-Pool-day" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -7,7 +8,7 @@ import java.util.Scanner;
 
 public class Program {
   public static void main(String[] args) {
-    // Write code here
+    // Scrieți codul dvs. aici
   }
 }
 ```
@@ -25,19 +26,20 @@ Trebuie să aveți cont de faptul că o umbrelă este suficientă pentru două p
 
 În calculul numărului de umbrele și șezlonguri, numărul acestora trebuie rotunjit la cel mai apropiat număr întreg.
 
-## Input
+## Intrare
 Din consolă se citesc 4 rânduri:
 - Prima linie - numărul de persoane - număr întreg în intervalul [1 ... 100]
 - A doua linie - taxa de intrare - număr real în interval [0.00... 50.00]
 - A treia linie - preț pentru un șezlong - număr real în intervalul [0.00... 50.00]
 - A patra linie - preț pentru o umbrelă - număr real în intervalul [0.00... 50.00]
 
-## Output
-"\{total price\} dollars." 
-- Rezultatul trebuie formatat la a doua cifră după punctul zecimal.
+## Ieșire
+Rezultatul trebuie formatat la a doua cifră după punctul zecimal:
+"\{**total price**\} **euro**" 
+
 
 ## Exemplu
-| **Input** | **Output** | **Comments** |
+|**Intrare**|**Ieșire** |**Comentarii** |
 | --- | --- | --- |
 | 21 | 254.10 dollars. | 21 people \* 5.50$ = 115.50$ |
 | 5.50 | | 75% of 21 people are 16 -> 16 * 4.40 = 70.40$ |
@@ -55,7 +57,7 @@ Din consolă se citesc 4 rânduri:
 6.20
 [/input]
 [output]
-254.10 dollars.
+254.10 euro
 [/output]
 [/test]
 [test]
@@ -66,7 +68,7 @@ Din consolă se citesc 4 rânduri:
 4
 [/input]
 [output]
-272.00 dollars.
+272.00 euro
 [/output]
 [/test]
 [test]
@@ -77,7 +79,7 @@ Din consolă se citesc 4 rânduri:
 5
 [/input]
 [output]
-3325.00 dollars.
+3325.00 euro
 [/output]
 [/test]
 [test]
@@ -88,7 +90,7 @@ Din consolă se citesc 4 rânduri:
 6
 [/input]
 [output]
-8994.00 dollars.
+8994.00 euro
 [/output]
 [/test]
 [test]
@@ -99,7 +101,7 @@ Din consolă se citesc 4 rânduri:
 1
 [/input]
 [output]
-3.00 dollars.
+3.00 euro
 [/output]
 [/test]
 [test]
@@ -110,7 +112,7 @@ Din consolă se citesc 4 rânduri:
 1.6
 [/input]
 [output]
-166.00 dollars.
+166.00 euro
 [/output]
 [/test]
 [test]
@@ -121,7 +123,7 @@ Din consolă se citesc 4 rânduri:
 23.6
 [/input]
 [output]
-2465.80 dollars.
+2465.80 euro
 [/output]
 [/test]
 [test]
@@ -132,7 +134,7 @@ Din consolă se citesc 4 rânduri:
 5.60
 [/input]
 [output]
-1614.50 dollars.
+1614.50 euro
 [/output]
 [/test]
 [test]
@@ -143,7 +145,7 @@ Din consolă se citesc 4 rânduri:
 33.33
 [/input]
 [output]
-4155.14 dollars.
+4155.14 euro
 [/output]
 [/test]
 [test]
@@ -154,7 +156,7 @@ Din consolă se citesc 4 rânduri:
 1.3
 [/input]
 [output]
-1418.60 dollars.
+1418.60 euro
 [/output]
 [/test]
 [test]
@@ -165,7 +167,7 @@ Din consolă se citesc 4 rânduri:
 50
 [/input]
 [output]
-11250.00 dollars.
+11250.00 euro
 [/output]
 [/test]
 [/tests]
