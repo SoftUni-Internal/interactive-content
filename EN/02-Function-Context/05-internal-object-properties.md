@@ -320,7 +320,7 @@ A **valid** **full name** is in the format: "\{**firstName**\} \{**lastName**\}"
 
 **Note:** Check the examples below for more information.
 
-# Examples
+## Examples
 
 ## Input
 

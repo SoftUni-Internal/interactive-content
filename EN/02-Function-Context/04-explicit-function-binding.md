@@ -12,7 +12,9 @@ Binding allows us to modify the context of a function, essentially changing what
 
 This allows us to bind a function to a particular object and use it as if it was a method of that object. 
 
-This essentially changes the context of `this`. In other words, we are binding the function to a context of our choice.
+This essentially changes the context of `this`. 
+
+In other words, we are binding the function to a context of our choice.
 
 Let us look at an example using `call()`:
 
@@ -41,7 +43,9 @@ It is an outside function but still behaves as though `speak()` is a method that
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-18-19-changing-the-context-call-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-`call()` calls a function with a given value of `this` and optional arguments. It changes the context of the function to the given object.
+`call()` calls a function with a given value of `this` and optional arguments. 
+
+It changes the context of the function to the given object.
 
 ```js
 functionName.call(objectToBind, additionalArguments);
@@ -90,9 +94,11 @@ Every time we used `call()` the context of `this` was different.
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-20-changing-the-context-apply-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-`apply()` and `call()` serve the same purpose. However, `call()` takes a list of arguments, while `apply()` takes an array.
+`apply()` and `call()` serve the same purpose. 
 
-To illustrate this with the previous example:
+However, `call()` takes a list of arguments, while `apply()` takes an array.
+
+To illustrate this with the previous **example**:
 
 Using ``call()``:
 
@@ -110,7 +116,7 @@ console.log(praise.apply(dog,
 ));
 ```
 
-If you have an array of arguments, you can still use `call()` by using the spread operator:
+If you have an array of arguments, you can still utilize `call()` by using the spread operator:
 
 ```js
 functionName.call(thisContext, ...[yourArray]);
@@ -181,7 +187,9 @@ let professor = {
 };
 ```
 
-Now imagine the student has advanced so much that he is now able to `teach()`. Use `bind()` to borrow the method from the **professor** object.
+Now imagine the student has advanced so much that he is now able to `teach()`. 
+
+Use `bind()` to borrow the method from the **professor** object.
 
 ```js
 let teach = professor.teach.bind(student, 2);
@@ -283,7 +291,9 @@ You will receive 3 parameters - the functions area and vol and a string, which c
 
 
 ## Output
-The output should be **returned** as an **array of objects**. Each object has **two properties**: the figure's **area** and **volume**.
+The output should be **returned** as an **array of objects**. 
+
+Each object has **two properties**: the figure's **area** and **volume**.
 
 ```js
 [
@@ -296,7 +306,7 @@ The output should be **returned** as an **array of objects**. Each object has **
 
 **Note: Submit only the solve function.**
 
-# Example 1
+## Example 1
 
 ## Input
 
@@ -318,7 +328,7 @@ area, vol, '[
 ]
 ```
 
-# Example 2
+## Example 2
 ## Input
 
 ```js

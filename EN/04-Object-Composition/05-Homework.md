@@ -333,7 +333,7 @@ You will receive an array and your goal is to create a new object with all the u
 You should print the newly created object.
  
 
-# Examples
+## Examples
 | **Input** | **Output** |
 | --- | --- |
 |'\[\{"canMove": true\},\{"canMove":true, "doors": 4\},\{"capacity": 5\}\]'| \{ canMove: true, doors: 4, capacity: 5 \} |
@@ -599,7 +599,7 @@ Every mage can cast spells. When a spell is cast the mage's mana decreases by 1 
 
 "\{**mage's name**\} **cast** \{**spell**\}"
 
-# Example
+## Example
 
 ## Input
 
@@ -682,12 +682,14 @@ Create a program that receives a worker object as a parameter and modifies its p
 
 Workers have the following structure:
 
-\{
+```
+{
     weight: Number,
     experience: Number,
     levelOfHydrated: Number,
     dizziness: Boolean
-\}
+}
+```
 
 Weight is expressed in kilograms, experience in years, and levelOfHydrated is in milliliters. 
 
@@ -701,59 +703,74 @@ Once the water is administered, change the dizziness property to **false**.
 
 Workers who do not have dizziness should not be modified in any way. Return them as they are.
 
+## Examples
 ## Example 1
 
-## Input
-\{
+## Input
+
+```
+{
     weight: 80,
     experience: 1,
     levelOfHydrated: 0,
     dizziness: true
-\}
-
+}
+```
 
 ## Output
-\{
+```
+{
     weight: 80,
     experience: 1,
     levelOfHydrated: 8,
     dizziness: false
-\}
+}
+```
+
 ## Example 2
-## Input
-\{
+
+## Input
+```
+{
     weight: 120,
     experience: 20,
     levelOfHydrated: 200,
     dizziness: true
-\}
+}
+```
   
 ## Output 
-\{
+```
+{
     weight: 120,
     experience: 20,
     levelOfHydrated: 440,
     dizziness: false
-\}
+}
+```
 
-## Example Three
+## Example 3
 
-## Input  
+## Input  
 
-\{
+```
+{
     weight: 95,
     experience: 3,
     levelOfHydrated: 0,
     dizziness: false
-\}
+}
+```
 
 ## Output
-\{
+```
+{
     weight: 95,
     experience: 3,
     levelOfHydrated: 0,
     dizziness: false
-\}
+}
+```
 
 
 [/task-description]
@@ -892,7 +909,7 @@ The format will be as follows:
 
 ## Example 1
 
-## Input 
+## Input 
 \{
     model: 'VW Golf II',
     power: 90,
@@ -916,7 +933,7 @@ The format will be as follows:
 \}
 
 ## Example 2
-## Input
+## Input
 
 \{
     model: 'Opel Vectra',
@@ -1122,8 +1139,9 @@ To gain access to the prototype of an instance, use the `Object.getPrototypeOf()
 
 To make a function shared between all instances, it will have to be attached to the prototype instead of the instance.
 
-# Example
-**Extensible Object**
+## Example
+
+**Extensible Object:**
 
 ```js
 myObj: {
@@ -1132,7 +1150,7 @@ myObj: {
 }
 ```
 
-**Template Object**
+**Template Object:**
 
 ```js
 template: {
@@ -1296,9 +1314,9 @@ Your main code should be structured as an IIFE without input or output.
 
 It should modify the existing String prototype instead.
 
-# Example
+## Example
 
-## Input
+## Input
 
 ```js
 let str = 'my string';
@@ -1471,7 +1489,7 @@ Note the **size** of the collection is **NOT** a function.
 Write your code such that the **first function in your solution** returns an instance of your Sorted List.
 
 
-# Example
+## Example
 
 ``` js
 function sortedList() {

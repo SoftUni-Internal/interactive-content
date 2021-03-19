@@ -13,13 +13,11 @@ class Company {
 ```
 [/code-editor]
 [task-description]
-## Description  
+# Description  
 
 Write a **company** class, which supports the described functionality below.
 
-## Functionality
-
-`constructor()`:
+## `constructor()`
 
 
 Should have a property `departments`- an empty array
@@ -28,7 +26,7 @@ Should have a property `departments`- an empty array
 
 This function should add a new employee to the department with the given name.
 
-- If one of the passed parameters is an empty string **""**, **undefined** or **null**, this function should throw an error with the following message:
+- If one of the passed parameters is an empty string **""**, **undefined** or **null**, this function should throw an error with the following message:
 
 "**Invalid input!**"
 
@@ -40,7 +38,7 @@ This function should add a new employee to the department with the given name.
 
 "**New employee is hired. Name:** \{**name**\}. **Position:** \{**position**\}"
 
-### `bestDepartment()`
+## `bestDepartment()`
 
 This **function** should **print the department with the highest average salary and its employees**, sorted by their salary by descending and by name in the following format:
 
@@ -208,7 +206,7 @@ function fibonacci() {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 Write a function that returns the next Fibonacci number, starting from 0, 1. 
 
 Use a **closure** to keep the current number.
@@ -331,18 +329,17 @@ class Hex {
 ```
 [/code-editor]
 [task-description]
-
-**1. Your Task**
+# Description
 Write a Hex class, which supports the described functionality below.
 
-**2. Functionality**
+## Functionality
 
-Constructor(`{value}`)
+Constructor(`{value}`):
 
 Should have **1** property:
 - **value** - number
 
-Functions:
+**Functions**:
 - `ValueOf()`:
 This function should return the value property of the Hex class.
 
@@ -358,12 +355,11 @@ This function should subtract a number or a Hex object and return a new Hex obje
 - `Parse({string})`:
 Create a parse class method that can parse Hexidecimal numbers and convert them to standard decimal numbers.
 
-**3. Submission**
+## Submit
 Submit only your **Hex class**.
 
-**4. Examples**
+## Example
 This is an example how the code is **intended to be used**:
-
 
 ## Input
 
@@ -494,7 +490,7 @@ function table(){
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Use the provided [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/04-JS-Advanced-Function-Context-Homework-Resources.zip) file to complete this problem. 
 
@@ -872,15 +868,15 @@ You will receive and **array** of strings.
 ## Output
 Return a **function** that displays the array elements on the web page.
 
-# Examples
+## Examples
 
-## Example 1:
+## Example 1
 [image assetsSrc="function-context-12.png" /]
 
-## Example 2:
+## Example 2
 [image assetsSrc="function-context-13.png" /]
 
-## Example 3:
+## Example 3
 [image assetsSrc="function-context-14.png" /]
 
 [/task-description]

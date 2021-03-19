@@ -455,7 +455,8 @@ function solve() {
     }
 
     class PartyBallon extends Ballon {
-        constructor(color, gasWeight, ribbonColor, ribbonLength) {
+        constructor(color, gasWeight, 
+            ribbonColor, ribbonLength) {
             super(color, gasWeight);
             // TODO: Initialize ribbon object
         }
@@ -757,7 +758,7 @@ Any properties that need to be initialized at instantiation time are defined as 
 Functions are defined inside the class body.
 
 ```js
-  class Employee {
+class Employee {
     constructor(name, age) {
         this.name = name;
         this.age = age;
@@ -784,7 +785,8 @@ Using the **new.target** keyword, we can check whether the object is created fro
 ```js
 constructor(name, age) {
     if (new.target === Employee) {
-        throw new Error("Cannot instantiate directly.")
+        throw new Error(
+            "Cannot instantiate directly.")
     }
     this.name = name;
     this.age = age;
@@ -809,7 +811,8 @@ Printing the salary is pretty straightforward. However, since the manager has a 
 
 ```js
 collectSalary() {
-    console.log(`${this.name} received ${this.getSalary()} this month`);
+    console.log(`${this.name} received
+        ${this.getSalary()} this month`);
 }
 
 getSalary() {
@@ -857,7 +860,8 @@ class Manager extends Employee {
         super(name, age);
         this.dividend = 0;
         this.tasks.push(' scheduled a meeting.');
-        this.tasks.push(' is preparing a quarterly report.');
+        this.tasks.push(
+            ' is preparing a quarterly report.');
     }
     getSalary() {
         return this.salary + this.dividend;
@@ -873,7 +877,8 @@ class Manager extends Employee {
         super(name, age);
         this.dividend = 0;
         this.tasks.push(' scheduled a meeting.');
-        this.tasks.push(' is preparing a quarterly report.');
+        this.tasks.push(
+            ' is preparing a quarterly report.');
     }
     getSalary() {
         return this.salary + this.dividend;
@@ -1200,7 +1205,7 @@ yes
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
 You need to create several classes for **Posts**.
 
