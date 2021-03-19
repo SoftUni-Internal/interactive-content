@@ -16,15 +16,15 @@ public class Main {
 [task-description]
 ## Descriere
 
-Pe prima linie a intrării standard, veți primi un număr întreg "**n**" - numărul de eroi pe care îl puteți alege pentru jocul dvs.
+Pe prima linie a intrării standard, veți primi un număr întreg "**n**" - numărul de eroi pe care îi puteți alege pentru jocul dvs.
 
-Pe următoarele rânduri "**n**", eroii vor urma cu **punctele lor de lovire** și **punctele de mana** separate prin spațiu gol în următorul format:
+Pe următoarele rânduri "**n**", eroii vor urma cu **hit points** și **mana points** separate prin spațiu gol în următorul format:
 
 "\{**hero name**\} \{**HP**\} \{**MP**\}"
 
-**HP** reprezintă punctele de lovire și **MP** pentru punctele de mană. Un erou poate avea un **maxim** de **100 CP** și **200 MP**.
+**HP** reprezintă hit points și **MP** - mana points. Un erou poate avea un **maxim** de **100 HP** și **200 MP**.
 
-După ce ți-ai ales cu succes eroii, poți începe jocul.
+După ce v-ați ales cu succes eroii, puteți începe jocul.
 
 Veți primi comenzi diferite, fiecare pe o nouă linie, separate prin " - " (spațiu liniuță), până când este dată comanda "**End**".
 
@@ -32,7 +32,9 @@ Există mai multe acțiuni care pot fi efectuate de eroi:
 
 - "**CastSpell -** \{**hero name**\} - \{**MP needed**\} – \{**spell name**\}":
 
-Dacă eroul are MP necesară, aruncă vraja care reduce MP. Imprimați următorul mesaj:
+Dacă eroul are MP necesare, aruncați  vraja care reduce MP. 
+
+Imprimați următorul mesaj:
 
 "\{**hero name**\} **has successfully cast** \{**spell name**\} **and now has** \{**mana points left**\} **MP!**"
 
@@ -42,21 +44,22 @@ Dacă eroul nu este capabil să arunce vraja, tipăriți:
 
 - "**TakeDamage -** \{**hero name**\} - \{**damage**\} \- \{**attacker**\}":
 
-Reduceți eroul HP cu suma de daune dată.
+Reduceți HP-urile eroului cu suma de daune dată.
 
-Dacă eroul este încă în viață (HP-ul lor este mai mare de 0) tipăriți:
+Dacă eroul este încă în viață (HP-urile acestuia sunt mai maulte decât 0) tipăriți:
 
 "\{**hero name**\} **was hit for** \{**damage**\} **HP by** \{**attacker**\} **and now has** \{**current HP**\} **HP left!**"
 
-Dacă eroul a murit, scoate-i din joc și tipărește:
+Dacă eroul a murit, scoateți-i din joc și tipăriți:
 
 "\{**hero name**\} **has been killed by** \{**attacker**\}!"
 
 - "**Recharge -** \{**hero name**\} - \{**amount**\}":
 
-Eroul își mărește MP.
+Eroul își mărește MP-urile.
 
-Dacă se dă o comandă care ar aduce MP eroului peste "**200**", MP este mărit astfel încât să atingă maximul.
+Dacă se dă o comandă care ar aduce MP-uri eroului peste "**200**", MP-urile sunt mărite astfel încât să atingă maximul.
+
 
 Imprimați următorul mesaj:
 
@@ -64,9 +67,9 @@ Imprimați următorul mesaj:
 
 - "**Heal -** \{**hero name**\} - \{**amount**\}":
 
-Eroul își mărește HP.
+Eroul își mărește HP-urile.
 
-Dacă se dă o comandă care ar aduce HP eroului peste "**100**", HP este crescut astfel încât să atingă maximul.
+Dacă se dă o comandă care ar aduce HP-uri eroului peste "**100**", HP-urile sunt crescute astfel încât să atingă maximul.
 
 Imprimați următorul mesaj:
 
@@ -76,13 +79,13 @@ Imprimați următorul mesaj:
 
 - Pe prima linie a intrării standard, veți primi un număr întreg "**n**"
 
-- Pe următoarele linii `n`, eroii înșiși vor urma cu **punctele lor de lovitură** și **punctele de mana** separate prin spațiu gol în formatul următor
+- Pe următoarele linii `n`, eroii înșiși vor urma cu propriile **hit points** și mana ponts** separate prin spațiu gol în formatul următor
 
-- Veți primi diferite **comenzi**, fiecare pe o nouă linie, separate prin " - " (spațiu liniuță), până când este dată comanda "**End**"
+- Veți primi diferite **comenzi**, fiecare pe o nouă linie, separate prin " - " (spațiu cratimă), până când este dată comanda "**End**"
 
 ### Ieșire
 
-- Imprimați toți membrii grupului dvs. care sunt încă **în viață**, sortați după **HP-ul lor în ordine descrescătoare**, apoi după **numele lor în ordine crescătoare**, în formatul următor (HP / MP necesită să fie indentat 2 spații):
+- Imprimați toți membrii grupului dvs. care sunt încă **în viață**, sortați după **HP-urile lor în ordine descrescătoare**, apoi după **numele lor în ordine crescătoare**, în formatul următor (HP / MP necesită să fie indentat 2 spații):
 
 "\{**hero name**\}
 **HP:** \{**current HP**\}
@@ -91,12 +94,11 @@ Imprimați următorul mesaj:
 
 ### Constrângeri
 
-- HP \/ MP de pornire al eroilor va fi valid, numere întregi pe 32 de biți, nu va fi niciodată negativ sau va depăși limitele respective
+- HP \/ MP de pornire ale eroilor vor fi numere întregi valide, pe 32 de biți, nu vor fi niciodată negative sau vor depăși limitele respective
 
 - Sumele HP \/ MP din comenzi nu vor fi niciodată negative
 
-- Numele eroilor din comenzi vor fi întotdeauna membri valizi ai grupului tău
-
+- Numele eroilor din comenzi vor fi întotdeauna membri valizi ai grupului vostru
 Nu este nevoie să verificați în mod explicit acest lucru
 
 ## Primul Exemplu
@@ -116,11 +118,11 @@ Nu este nevoie să verificați în mod explicit acest lucru
 
 ### Comentarii
 
-"**Heal**" - SirMullich s-a vindecat cu 30 CP din cauza limitei maxime HP.
+"**Heal**" - SirMullich s-a vindecat cu 30 HP din cauza limitei maxime HP.
 
 "**Recharge**" - Adela reîncărcată pentru 50 MP din cauza limitei maxime de MP.
 
-"**CastSpell**" - Tyris nu are suficient MP pentru a arăta vraja.
+"**CastSpell**" - Tyris nu are suficient MP pentru a arunca vraja.
 
 "**TakeDamage**" - HP-ul lui Tyris este redus cu 99, devenind astfel -5, ceea ce înseamnă că este mort.
 

@@ -16,21 +16,21 @@ public class Main {
 [task-description]
 ## Descriere
 
-Prima dvs. sarcină este de a determina dacă secvența dată de caractere este un **cod de bare** valid sau **nu**.
+Prima dvs. sarcină este de a determina dacă secvența dată de caractere este un cod de bare **valid** sau **nu**.
 
 **Fiecare linie trebuie să conțină numai coduri de bare valide**.
 
 Un cod de bare este valabil atunci când:
 
-- este înconjurat de un "**@**" urmat de unul sau mai multe "\#"
+- Este înconjurat de un "**@**" urmat de unul sau mai multe "\#"
 
-- are cel puțin 6 caractere (fără "**@**" sau "\#" din jur)
+- Are cel puțin 6 caractere (fără "**@**" sau "\#" din jur)
 
 - începe cu o literă mare
 
-- conține doar litere (litere mici și majuscule) și cifre
+- Conține doar litere (litere mici și majuscule) și cifre
 
-- se termină cu o majusculă
+- Se termină cu o majusculă
 
 Exemple de coduri de bare valide: "\@\#FreshFisH\@\#", "\@\#\#\#Brea0D\@\#\#\#", "\@\#\#Che46sE\ @\#\#"
 
