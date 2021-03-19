@@ -29,13 +29,13 @@ Veți primi **linii cu comenzi separate prin** "->" **până când veți primi**
 
 Există **trei comenzi posibile**:
 - "**Add->**\{**username**\}" 
-    - **verificați dacă numele de utilizator există și dacă se tipărește** - "\{**username**\} **is already registered"**
+    - **verificați dacă numele de utilizator există și dacă se imprimă** - "\{**username**\} **is already registered"**
     - dacă nu există, atunci adăugați utilizatorul la colecția de utilizatori
 - "**Send->**\{**username**\}**->**\{**Email**\}"
     - adăugați mesajul \{**Email**\} la colecția de e-mailuri trimise din \{**username**\}
 - "**Delete->**\{**username**\}"
     - ștergeți utilizatorul dat, dacă acesta există
-    - dacă utilizatorul nu există, tipăriți  "\{**username**\} **not found!**"
+    - dacă utilizatorul nu există, tipăriți "\{**username**\} **not found!**"
 
 În cele din urmă, trebuie să **tipăriți numărul de utilizatori**, **fiecare utilizator cu e-mailurile sale**.
 
@@ -71,8 +71,8 @@ Imprimați colecția în formatul descris mai sus după ce ați primit comanda "
 
 ### Comentarii
 - Mai întâi primim utilizatorii noștri
-- Deoarece nu sunt deja în colecția noastră, le adăugăm
-- Apoi încep să trimită e-mailuri și la final imprimăm rezultatul în formatul descris
+- Deoarece nu sunt încă în colecția noastră, îi adăugăm
+- Apoi acesștia încep să trimită e-mailuri și la final imprimăm rezultatul în formatul descris
 
 
 ### Exemplu

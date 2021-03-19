@@ -22,12 +22,14 @@ public class Main {
 
 Scrieți un program de resetare a parolei care efectuează o serie de comenzi pe un șir predefinit.
 
-În primul rând, veți primi un șir. Până la comanda "**Done**", veți primi șiruri cu comenzi împărțite de un singur spațiu.
+În primul rând, veți primi un șir.
+
+Până la comanda "**Done**", veți primi șiruri cu comenzi împărțite de un singur spațiu.
 
 Comenzile vor fi următoarele:
 
 - **TakeOdd**
-  * ia doar caracterele de la **indici impari** și **le concatenează** împreună pentru a obține **noua parolă brută** și apoi **o imprimă**
+  * preia doar caracterele de la **indici impari** și **le concatenează** împreună pentru a obține **noua parolă brută** și apoi **o imprimă**
 - "**Cut** \{**index**\} \{**length**\}"
   * obține șirul cu **lungimea dată** începând din **indexul dat** din parolă și elimină prima apariție a acesteia, apoi imprimă parola pe consolă
   * indicele și lungimea date vor fi **întotdeauna valabile**
