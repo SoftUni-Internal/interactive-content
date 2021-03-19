@@ -2,7 +2,7 @@
 [slide hideTitle]
 # Problem with Solution: Print "Hello Java"
 
-[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-43-problem-and-solution-calculations-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-36-37-Problem-and-solution-Print-Hello-Java-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 [code-task title="Print Hello Java" taskId="pb-java-introduction-print-hello-java" executionType="tests-execution" executionStrategy="java-code"]
@@ -137,7 +137,7 @@ Catlyn
 [slide hideTitle]
 # Problem with Solution: Calculations
 
-[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-43-problem-and-solution-calculations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-43-problem-and-solution-calculations-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Calculations" taskId="pb-java-introduction-Calculations" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
