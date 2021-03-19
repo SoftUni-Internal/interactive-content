@@ -887,7 +887,7 @@ function carFactory(input){
 [task-description]
 # Description
 
-Create a program that **assembles a car** by given requirements out of existing components. 
+Create a program that **assembles a car**, by given requirements, out of existing components. 
 
 The client will place an order in the form of an object describing the car. 
 
@@ -931,7 +931,7 @@ The **format** will be as follows:
 }
 ```
 
-# Example
+# Examples
 
 ## Example 1
 
