@@ -19,17 +19,19 @@ public class Main {
 
 ### Intrare / constrângeri
 
-Veți primi un jurnal care conține unele articole, separate prin ", " **(virgulă și spațiu)**.După aceea, până când veți primi comanda "**Craft!**", veți primi diferite comenzi.
+Veți primi un jurnal care conține unele articole, separate prin ", " **(virgulă și spațiu)**
+
+.După aceea, până când veți primi comanda "**Craft!**", veți primi diferite comenzi.
 
 Comenzile sunt împărțite de " - " **(spațiu liniuță)**:
 
-- "**Collect -** \{**element** \}": primind această comandă, ar trebui **să adaugi** elementul dat la inventar
+- "**Collect -** \{**element** \}": primind această comandă, ar trebui **să adaugați** elementul dat la inventar
 
 Dacă articolul este deja în inventarul dvs., **ar trebui să renunțați**.
 
 - "**Drop -** \{**element** \}": ar trebui să **eliminați** articolul din inventar, **dacă acesta este prezent în inventar**
 
-- "**Combine items -** \{**element vechi** \}:\{**element nou** \}": ar trebui să verificați dacă elementul vechi este prezent, dacă da, plasați noul element după cel vechi 
+- "**Combine items -** \{**element vechi** \}:\{**element nou** \}": ar trebui să verificați dacă elementul vechi este prezent, dacă da, plasați noul element după cel vechi  
 
 În caz contrar, ignorați comanda.
 

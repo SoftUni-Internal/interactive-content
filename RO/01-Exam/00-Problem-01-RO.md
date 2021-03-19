@@ -31,9 +31,9 @@ Pe a treia linie, veți primi **bonusul suplimentar** pentru curs.
 
 Punctele bonus sunt calculate utilizând următoarea **formulă**:
 
-\{bonus total \} = \{prezențe studenți\} \/ \{numărul prelegerilor \} \* (5 + \{bonus suplimentar\})
+\{bonus total \} = \{prezențe studenți \} \/ \{numărul prelegerilor \} \* (5 + \{bonus suplimentar \})
 
-Găsiți studentul cu **cele mai multe puncte bonus** și tipăriți-i **punctele** împreună cu **prezențe** în următorul format:
+Găsiți studentul cu **cele mai multe puncte bonus** și tipăriți-i **punctele** împreună cu **prezențele** în următorul format:
 
 
 "**Max Bonus:** \{**maxBonusPoints**\}."
@@ -42,7 +42,7 @@ Găsiți studentul cu **cele mai multe puncte bonus** și tipăriți-i **punctel
 
 La final, rotunjiți punctele bonus până la **următorul număr întreg**.
 
-### Intrare / Constrângeri
+### Intrare / limitări
 
 - Pe **prima linie**, veți primi numărul de studenți - un număr întreg în intervalul \[0...50\]
 
@@ -50,13 +50,13 @@ La final, rotunjiți punctele bonus până la **următorul număr întreg**.
 
 - Pe **a treia linie**, veți primi **bonusul inițial** - un număr întreg în intervalul \[0...100\]
 
-- **În următoarele rânduri**, veți primi numărul de **prezență al fiecărui student**
+- **În următoarele rânduri**, veți primi numărul de **prezențe al fiecărui student**
 
 - Nu vor fi **studenți cu aceeași sumă finală de puncte bonus**
 
 ### Ieșire
 
-- Imprimați punctele bonus maxime, rotunjite la cel mai apropiat număr, împreună cu prezența studentului dat, în formatul descris mai sus
+- Imprimați punctele bonus maxime, rotunjite la cel mai apropiat număr, împreună cu prezențele studentului dat, în formatul descris mai sus
 
 ## Primul Exemplu
 | **Intrare** | **Ieșire** |
@@ -76,11 +76,11 @@ La final, rotunjiți punctele bonus până la **următorul număr întreg**.
 
 Numărul total al prelegerilor este de 25, iar bonusul inițial este de 30.
 
-Apoi calculăm bonusul elevului cu 12 prezențe, adică 16,8.
+Apoi calculăm bonusul studentului cu 12 prezențe, adică 16,8.
 
 Continuăm să calculăm **punctele bonus ale fiecărui student**.
 
-Cel **cu** 24 **participări** are **cel mai mare bonus** - 33,6 (34 **rotunjit**), așa că imprimăm mesajul corespunzător pe consolă.
+Cel **cu** 24 **prezențe** are **cel mai mare bonus** - 33,6 (34 **rotunjit**), așa că imprimăm mesajul corespunzător pe consolă.
 
 ## Al Doilea Exemplu
 | **Intrare** | **Ieșire** |

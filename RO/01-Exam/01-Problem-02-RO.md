@@ -19,9 +19,9 @@ public class Main {
 
 Începeți jocul cu **100 health and 0 bitcoins**.
 
-Vi se va oferi un **Șir**, reprezentând camerele temniței.
+Vi se va oferi un **șir**, reprezentând camerele temniței.
 
-Fiecare cameră este separată printr-un „\|” (bară verticală): cameră1\|cameră2\|cameră3...
+Fiecare cameră este separată printr-un "\|" (bară verticală): room1\|room2\|room3…
 
 Textul fiecărei camere conține **2 valori**.
 
@@ -29,9 +29,9 @@ Prima valoare poate fi:
 
 - O poțiune:
 
-   - ești vindecat cu suma celei de-a doua valori
+   - sunteți vindecați cu suma celei de-a doua valori
 
-   - starea ta de sănătate **nu poate depăși** **starea de sănătate inițială (100)**
+   - starea voastră de sănătate **nu poate depăși** **starea de sănătate inițială (100)**
 
    - prima imprimare: "\{**amount**\} **health points restored.**"
 
@@ -47,7 +47,7 @@ Prima valoare poate fi:
 
 A doua valoare a camerei conține punctele de atac ale monstrului.
 
-Ar trebui să elimini valoarea atacului monstrului din sănătatea ta.
+Ar trebui să eliminați  valoarea atacului monstrului din sănătatea voastră.
 
 - Dacă sunteți **încă în viață** (sănătate \> 0), ați ucis monstrul și ar trebui să imprimați: "**You have slayed a** \{**type of monster**\}."
 
@@ -65,13 +65,13 @@ Dacă ați reușit să parcurgeți toate camerele din temniță, imprimați pe u
 
 ### Intrare \/ Constrângeri
 
-Veți primi un șir, care reprezintă camerele temniței, separate printr-un "\|" (bară verticală): cameră1\|cameră2\|cameră3...".
+Veți primi un șir, care reprezintă camerele temniței, separate printr-un „\|” (bară verticală): cameră1\|cameră2\|cameră3...".
 
 ### Ieșire
 
 Imprimați mesajele corespunzătoare, descrise mai sus.
 
-## Primul exemplu
+## Primul Exemplu
 
 | **Intrare** | **Ieșire** |
 | --- | --- |
