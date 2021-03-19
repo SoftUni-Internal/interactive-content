@@ -318,7 +318,7 @@ function extendPrototype(classToExtend) {
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
 Write a function that receives a **class** and adds a property **species** and a function `toSpeciesString()` to it.
 

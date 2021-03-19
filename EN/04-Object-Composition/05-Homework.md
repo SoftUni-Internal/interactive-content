@@ -10,7 +10,7 @@ function orderRectangles(input){
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 You will be passed a few pairs of **widths** and **heights** of rectangles.
 
@@ -222,7 +222,7 @@ function listProcessor(input){
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Using a closure, create an inner object to process list commands. 
 
@@ -324,7 +324,7 @@ function objectFactory(input){
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Write a function that can compose objects. 
 
@@ -390,7 +390,7 @@ function cars(input){
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Write a closure that can create and modify objects. 
 
@@ -476,7 +476,7 @@ function sum(){
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Write a function that returns an object that can modify the DOM. 
 
@@ -579,7 +579,7 @@ function heroes(){
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Write a function that returns an object with 2 methods "**mage**" and "**fighter**". 
 
@@ -676,7 +676,7 @@ function constructionCrew(input){
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Create a program that receives a worker object as a parameter and modifies its properties. 
 
@@ -860,7 +860,7 @@ function carFactory(input){
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Create a program that assembles a car by given requirements out of existing components. 
 
@@ -1125,7 +1125,7 @@ function extensibleObject(){
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Create an object that can clone the functionality of another object into itself. 
 
@@ -1278,7 +1278,7 @@ function stringExtension(){
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Extend the build-in String object with additional functionality. 
 
@@ -1466,7 +1466,7 @@ function sortedList(){
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Implement a collection, which keeps a list of numbers, sorted in **ascending** order. 
 

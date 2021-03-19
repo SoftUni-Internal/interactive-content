@@ -156,7 +156,7 @@ function createArticle(){
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/01-Article_list_problem.zip) **for this task.**
 
@@ -637,7 +637,7 @@ function growingWord(){
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/01-Growing_word_problem.zip) **for this task.**
 

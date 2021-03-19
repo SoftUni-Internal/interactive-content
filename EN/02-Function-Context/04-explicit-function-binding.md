@@ -265,7 +265,7 @@ function solve(area, vol, input) {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Write a function which **calculates** the **area** and the **volume** of a figure, which is **defined** by its **coordinates** 
 (**x**, **y**, **z**). 

@@ -225,7 +225,7 @@ function addItem(){
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/JS-Advanced-DOM-Manipulations-Lab-02.Add-Delete.zip) **for this task.**
 

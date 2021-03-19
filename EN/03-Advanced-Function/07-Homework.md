@@ -10,7 +10,7 @@ function add() {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Create a program that keeps a number **inside its context** and **returns** a new function that **adds** a **given** number to the previous one.
 
@@ -107,7 +107,7 @@ function currencyFormatter(separator, symb, symbolFirst, value) {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Write a **higher-order** function that fixes some of the parameters of another function. 
 
@@ -239,7 +239,7 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-## Description
+# Description
 
 Create a program that **filters** the **employees** of your company. 
 
@@ -352,7 +352,7 @@ function sortArray(data, type) {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Write a function that **sorts an array** with **numeric** values in **ascending** or **descending** order, depending on the **argument** that is passed to it. 
 
@@ -452,7 +452,7 @@ function argumentInfo() {
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
 Write a function that displays **information** about the **arguments** which are passed to it (**type** and **value**) and a **summary** about the number of each type in the following format: 
 
@@ -697,7 +697,7 @@ function personalBmi(name, age, weight, heightCm) {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 A wellness clinic has contacted you with an offer - they want you to create a program that creates **patient charts** and performs some preliminary evaluation of their condition. 
 
@@ -905,7 +905,7 @@ function vectorMath() {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Write several functions for performing **calculations** with **vectors** in 2D space.
 
@@ -1118,7 +1118,7 @@ function breakfastRobot() {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 *It is finally the future!*
 *Robots take care of everything and man has been freed from the mundane tasks of everyday life.*

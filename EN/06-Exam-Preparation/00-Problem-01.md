@@ -13,7 +13,7 @@ function solve(){
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/JS-Advanced-Exam-Preparation-First-Task-Resources.zip) **for this task.**
 

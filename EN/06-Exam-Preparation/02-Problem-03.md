@@ -13,7 +13,7 @@ class Bank {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Write a **Bank** class that implements the following functionality:
 

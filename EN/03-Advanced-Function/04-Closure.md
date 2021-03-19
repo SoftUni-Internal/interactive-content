@@ -83,7 +83,7 @@ function commandProcessor() {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Write a function that keeps a string **inside its context** and can execute different **commands** that modify or print the string to the console.
 

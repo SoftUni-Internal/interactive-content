@@ -19,7 +19,7 @@ function pressHouse() {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 You need to create several classes for **Press House**.
 

@@ -15,7 +15,7 @@ function sections(input) {
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/01-Sections.zip) **for this task.**
 
@@ -129,7 +129,7 @@ function notification(message){
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/02-Notification.zip) **for this task.**
 
@@ -338,7 +338,7 @@ function timeConverter(){
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/03-Time-Converter.zip) **for this task.**
 
@@ -538,7 +538,7 @@ function lockedProfile(){
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/04-Locked-Profile.zip) **for this task.**
 
@@ -1393,7 +1393,7 @@ function encodeAndDecodeMessages(){
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/05-Encode-and-Decode-Messages.zip) **for this task.**
 
@@ -1646,7 +1646,7 @@ function tableSearchEngine(){
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/06-Table-Search-Engine.zip) **for this task.**
 
@@ -2209,7 +2209,7 @@ function furniture(){
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/07-Furniture.zip) **for this task.**
 
@@ -2713,7 +2713,7 @@ function cards(){
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/08-Cards.zip) **for this task.**
 

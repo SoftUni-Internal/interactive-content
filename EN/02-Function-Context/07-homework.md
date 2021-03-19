@@ -13,7 +13,7 @@ class Company {
 ```
 [/code-editor]
 [task-description]
-## Description  
+# Description  
 
 Write a **company** class, which supports the described functionality below.
 
@@ -206,7 +206,7 @@ function fibonacci() {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 Write a function that returns the next Fibonacci number, starting from 0, 1. 
 
 Use a **closure** to keep the current number.
@@ -329,7 +329,7 @@ class Hex {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 Write a Hex class, which supports the described functionality below.
 
 ## Functionality
@@ -490,7 +490,7 @@ function table(){
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Use the provided [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/04-JS-Advanced-Function-Context-Homework-Resources.zip) file to complete this problem. 
 
@@ -811,7 +811,7 @@ function getArticleGenerator(articles) {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 Write a function that sequentially **displays articles** on a web page when the user **clicks** a button. 
 
 You will receive an **array of strings** that will initialize the program. 

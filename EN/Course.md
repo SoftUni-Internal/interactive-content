@@ -1,6 +1,6 @@
 # Programming Advanced with JavaScript
 
-## Description
+# Description
 This course teaches the **fundamentals of coding**, such as:
  - Using variables and expressions
  - Reading and printing at the console
