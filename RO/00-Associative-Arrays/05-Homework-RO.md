@@ -1,4 +1,4 @@
-# Teme pentru acas[
+# Teme pentru acas
 
 [slide hideTitle]
 
@@ -411,10 +411,6 @@ Platinium -> 36756
 [/tests]
 [/code-task]
 [/slide]
-
-
-
-
 
 
 
