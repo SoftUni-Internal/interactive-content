@@ -23,7 +23,7 @@
 
 **5. Simple Operators**
 
-- How to use the simple math operators ( +, -, *, / )
+- How to use the simple math operators ( +, -, *, / ) 
 
 **6. Expressions** 
 
