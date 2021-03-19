@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Concatenare
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/RO/interactive-java-fundamentals-text-processing-7-8-manipulate-strings-concatenating-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Există **două** moduri de a concatena un `șir`
 
 - Folosind operatorii `+` sau `+ =`
@@ -32,11 +34,14 @@ System.out.println(result); // "Hello, SoftUni!"
 
 # Unirea Șirurilor
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/RO/interactive-java-fundamentals-text-processing-9-joining-strings-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
 
 [slide hideTitle]
 # Problemă cu Soluție: Repeat strings
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/RO/interactive-java-fundamentals-text-processing-10-problem-and-solution-repeat-strings-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Repeat strings" taskId="Java-Fundamentals-2-String-Processing-lab-Repeat-Strings" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -139,6 +144,8 @@ linearlinearlinearlinearlinearlinear
 
 # Subșir
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/RO/interactive-java-fundamentals-text-processing-13-substring-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 După cum sugerează numele, `substring` reprezintă doar o **parte** dintr-un `String`.
 
 - `substring (int startIndex)` - Returnează un **șir nou** care conține subșirul din șirul dat, de la **startIndex** specificat (**inclusiv**)
@@ -168,6 +175,8 @@ System.out.println(firstName); // John
 
 # Căutarea
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/RO/interactive-java-fundamentals-text-processing-14-15-searching-1-2-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Este posibilă căutarea primelor sau ultimelor apariții ale unor tipare într-un șir:
 
 - `indexOf()` - Returnează **primul indice potrivit**, dacă nu există **o potrivire** se returnează **-1** 
@@ -195,6 +204,8 @@ System.out.println(fruits.lastIndexOf("orange")); // -1
 
 [slide hideTitle]
 # Problemă cu Soluție: Substring
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/RO/interactive-java-fundamentals-text-processing-16-problem-and-solution-substring-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Substring" taskId="Java-Fundamentals-2-String-Processing-lab-Substring" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -300,6 +311,8 @@ stration
 
 # Împărțire
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/RO/interactive-java-fundamentals-text-processing-18-splitting-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
  Un `String` poate fi împărțit în funcție de **unul** sau **mai multe** criterii, folosind metoda `split()`.
 
 - *Împărțirea* unui șir în funcție de un **model** dat
@@ -332,6 +345,8 @@ System.out.println(String.join(", ",words));
 
 # Înlocuire
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/RO/interactive-java-fundamentals-text-processing-19-replacing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Java face posibilă **înlocuirea** într-un șir. 
 
 - `replace(match, replacement)` - **Înlocuiește toate aparițiile** și returnează un **șir nou** (șirurile sunt imuabile)
@@ -349,6 +364,8 @@ System.out.println(replacedText);
 
 [slide hideTitle]
 # Problemă cu Soluție: Text Filter
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/RO/interactive-java-fundamentals-text-processing-20-problem-and-solution-text-filter-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Text Filter" taskId="Java-Fundamentals-2-String-Processing-lab-Text-Filter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

@@ -3,6 +3,8 @@
 [slide hideTitle]
 # StringBuilder: Cum funcționează?
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/RO/interactive-java-fundamentals-text-processing-24-25-stringbuilder-how-it-works-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 La fel ca `String`, `StringBuilder` este o **secvență de caractere**.
 
 Principala diferență dintre ele este că `StringBuilder` este **modificabil (poate fi modificat).**
@@ -32,6 +34,8 @@ System.out.println(sb.capacity()); // 16
 
 [slide hideTitle]
 # Utilizarea clasei StringBuilder
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/RO/interactive-java-fundamentals-text-processing-26-using-stringbuilder-class-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Există câteva moduri de a inițializa un `StringBuilder`:
 
@@ -65,6 +69,8 @@ System.out.println(sb.capacity()); // 25
 [slide hideTitle]
 
 # Concatenare vs StringBuilder
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/RO/interactive-java-fundamentals-text-processing-27-28-concatenation-vs-stringbuilder-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - **Concatenarea șirurilor** este o operațiune **lentă**, deoarece fiecare iterație creează un **șir nou**
 
@@ -108,6 +114,8 @@ Timpul de execuție al programului este de aproximativ 1 secundă, mult mai rapi
 [slide hideTitle]
 
 # Metode StringBuilder
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/RO/interactive-java-fundamentals-text-processing-29-30-31-stringbuilder-methods-1-2-3-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Mai jos aveți câteva dintre metodele **StringBuilder** și utilitatea cestora:
 
