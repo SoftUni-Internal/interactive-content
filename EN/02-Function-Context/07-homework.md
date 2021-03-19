@@ -56,30 +56,36 @@ Submit only your **Company class**.
 
 # Examples
 
-This is an example how the code is **intended to be used**:
+## Input
 
 ```js
 let c = new Company();
-c.addEmployee("Steven", 2000, "engineer", "Construction");
-c.addEmployee("Peter", 1500, "electrical engineer", "Construction");
+c.addEmployee("Steven", 2000, "engineer",
+              "Construction");
+c.addEmployee("Peter", 1500, "electrical engineer", 
+              "Construction");
 c.addEmployee("Sam", 500, "dyer", "Construction");
-c.addEmployee("Stan", 2000, "architect", "Construction");
-c.addEmployee("Steven", 1200, "digital marketing manager", "Marketing");
-c.addEmployee("Peter", 1000, "graphical designer", "Marketing");
+c.addEmployee("Stan", 2000, "architect", 
+              "Construction");
+c.addEmployee("Steven", 1200, "digital marketing manager",
+              "Marketing");
+c.addEmployee("Peter", 1000, "graphical designer", 
+              "Marketing");
 c.addEmployee("George", 1350, "HR", "Human resources");
+
 console.log(c.bestDepartment());
 ```
 
-**Output:**
+## Output
 
-
-"**Best Department is: Construction**
-**Average salary: 1500.00**
-**Stan 2000 architect**
-**Steven 2000 engineer**
-**Peter 1500 electrical engineer**
-**Sam 500 dyer**"
-
+```
+Best Department is: Construction
+Average salary: 1500.00
+Stan 2000 architect
+Steven 2000 engineer
+Peter 1500 electrical engineer
+Sam 500 dyer
+```
 
 [/task-description]
 [code-io /]
@@ -359,7 +365,7 @@ Create a parse class method that can parse Hexidecimal numbers and convert them 
 Submit only your **Hex class**.
 
 # Example
-This is an example how the code is **intended to be used**:
+This is an example how the code is **intended to be used**.
 
 ## Input
 
@@ -829,20 +835,32 @@ You are given the following **HTML** code:
    <head>
       <meta charset="UTF-8">
       <title>Next Article</title>
-      <style>div{width:600px; text-align: center; font-size: 1.5em} article{border: 2px solid blue; padding: 2em; margin: 1em}</style>
-      <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+      <style>
+        div{width:600px; text-align: center; 
+        font-size: 1.5em} article{border: 2px 
+        solid blue; padding: 2em; margin: 1em}
+      </style>
+      <script 
+      src="https://code.jquery.com/jquery-3.1.1.min.js" 
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" 
+      crossorigin="anonymous"></script>
       <script src="next-article.js"></script>
    </head>
    <body>
       <div id="content"></div>
       <div><button onclick="showNext()">Show Next Article</button></div>
       <script>
-         let articles =[
-           "Cats are the most popular pet in the United States: There are 88 million pet cats and 74 million dogs.",
-           "A group of cats is called a clowder.",
-           "Cats have over 20 muscles that control their ears.",
-           "A cat has been mayor of Talkeetna, Alaska, for 15 years. His name is Stubbs.",
-           "The world's largest cat measured 48.5 inches long."
+         let articles = [
+           `Cats are the most popular pet in the 
+            United States: There are 88 million 
+            pet cats and 74 million dogs.`,
+           `A group of cats is called a clowder.`,
+           `Cats have over 20 muscles that control 
+            their ears.`,
+           `A cat has been mayor of Talkeetna, Alaska,
+            for 15 years. His name is Stubbs.`,
+           `The world's largest cat measured 48.5
+            inches long.`
          ];
          let showNext = getArticleGenerator(articles);
       </script>
