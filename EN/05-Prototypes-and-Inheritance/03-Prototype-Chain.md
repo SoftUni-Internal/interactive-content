@@ -122,7 +122,7 @@ We will output the result to the console.
 
 # Object Creation
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-23-object-creation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8c" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-23-object-creation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 There are two ways to create an object. 
 
