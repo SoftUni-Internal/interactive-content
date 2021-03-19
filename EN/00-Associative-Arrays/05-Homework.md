@@ -1792,7 +1792,6 @@ Subway
 [/slide]
 
 
-
 [slide hideTitle]
 # Problem: ForceBook
 [code-task title="ForceBook" taskId="Java-Fundamentals-2-Associative-Arrays-Forcebook" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -1809,46 +1808,44 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-The force users are struggling to remember which side are the different force users from because they switch them too often.
+The force users are struggling to remember which side they have chosen last because they switch them too often.
 
-So you are tasked to create a program to manage their profiles.
+Your task is to create a program that manages their profiles.
 
-You should store information for **every unique force user**, registered in the application.
+You should store information about **every unique force user** who is registered in the application.
 
-You will receive several **input lines in one of the following formats**:
+You will receive several input lines in one of the following formats:
 
 - "\{forceSide\} \| \{forceUser\}"
 - "\{forceUser\} -> \{forceSide\}"
 
-The **force user and force side are strings**, containing characters.
 
-If you receive **{force side \| force user}**, you should **check if such force user already exists**. If they do not, **add them** to the corresponding side.
+If you receive {force side \| force user}, check **if such a force user already exists**. If they do not, **add them** to the corresponding side.
 
-If you receive **{force user -> force side}**, you should **check if there is such force user already**. If they do, **change their side**. 
 
-If there is no such force user, **add them to the corresponding force side**, treating the command as new registered force user.
+If you receive {force user -> force side}, check **if there is already such a force user**. If there is, **change their side**. 
 
-Then you should print on the console: 
+If there is no such a force user, **add them to the corresponding force side**.
+
+If the command is executed successfully, print out:
 
 "\{**forceUser**\} **joins the** \{**forceSide**\} **side!**"
 
-You should **end your program when you receive the command** "**End**". 
 
-At that point you should print each force side by the **count of force users in descending order** then **ordered by name**. 
+The program ends when you receive the "**End**" command. 
 
-For each side, print the force users **ordered by name**.
-
-In case there are **no force users** on a side, you **should not print the side information**.
 
 ### Input
 
-- The input comes in the form of commands in one of the formats specified above
+- The input comes in the form of commands in one of the specified formats
 
-- The input ends when you receive the command "**End**"
+- The program stops when you receive the "**End**" command 
 
 ### Output
 
-- Print each force side by the **count of force users in descending order** then **ordered by name**
+- Print out the **names of all force sides** ordered by the count of their force users in descending order, and then by their names in ascending order
+
+- For each side, print out **the names of all force users** that participate in it, ordered by their names
 
 - The output format is:
 
@@ -1857,7 +1854,7 @@ In case there are **no force users** on a side, you **should not print the side 
 ! \{**forceUser**\}
 ! \{**forceUser**\}"
 
-- In case there are no force users, do not print the specific side
+- In case **there are not force users** who participate in the specified side, you should not print the information about this side.
 
 ### Examples
 | **Input** | **Output** |
@@ -1868,9 +1865,9 @@ In case there are **no force users** on a side, you **should not print the side 
 | | ! George |
 
 ### Comments
-We register George in the Light side and Peter in the Dark side.
+We register George in the Light side, and Peter in the Dark side.
 
-After receiving "**End**" we print both sides, ordered by the count of users and then by name.
+After receiving "**End**", we print both sides, ordered by the count of their users, and then ordered by their names.
 
 ### Examples
 | **Input** | **Output** |
@@ -1883,11 +1880,11 @@ After receiving "**End**" we print both sides, ordered by the count of users and
 | | ! Ronn |
 
 ### Comments
-Although John does not have a profile, we register him and add him to the Lighter side.
+Although John does not have a profile, we register him and we add him to the Lighter side.
 
-We remove Dean from Darker side and add him to Lighter side.
+We remove Dean from the Darker side, and we add him to Lighter side.
 
-We print only Lighter side because Darker side has no members.
+We print only the information about the Lighter side, because th Darker side has no members.
 
 [/task-description]
 [code-io /]
@@ -2099,23 +2096,23 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You should collect all the submissions and print the final results and statistics about each language that the participants submitted their solutions in.
+Create a program that keeps information about all submissions made by few participants, and prints the final results and statistics about each language that the participants submitted their solutions in.
 
-You will be receiving lines in the following format: "\{**username**\}-\{**language**\}-\{**points**\}" until you receive "**exam finished**". 
+You will be receiving lines of input in the following format: "\{**username**\}-\{**language**\}-\{**points**\}", until you receive "**exam finished**". 
 
-You should store each **username** and his **submissions and points**. 
+You should store the **username** of each participant, their **submissions**, and their **points**. 
 
-You can receive a command that bans a user for **cheating** in the following format: "\{**username**\}**-banned**". 
+You can receive a command that bans a user because of **cheating**. The command will be in the following format: "\{**username**\}**-banned**". 
 
-In that case, you should remove the user from the contest but preserve his submissions in the total count of submissions for each language.
+In that case, you should remove the user from the contest, but preserve his submissions in the total count of submissions for each language.
 
-After receiving "**exam finished**", **print** each of the participants in **descending** order by their **max points** then by **username** in the following **format**:
+After receiving "**exam finished**", print the names of all participants ordered by their **max points** in **descending** order, and then by their **usernames** in the following format:
 
 "**Results:**
 \{**username**\} \| \{**points**\}
 ..."
 
-After that print each language that is used in the exam in **descending** order by total **submission count** and **then** by language **name**, in the following format:
+After that, print **all language used in the exam**, ordered by their total **submissions count** in descending order, and then by their **names** in the following format:
 
 "**Submissions:**
 \{**language**\} - \{**submissionsCount**\}
@@ -2123,19 +2120,19 @@ After that print each language that is used in the exam in **descending** order 
 
 ## Input / Constraints
 
-Until you receive "**exam finished**", you will be receiving participant submissions in the following format: "\{**username**\}-\{**language**\}-\{**points**\}"
+Until you receive "**exam finished**", you will be receiving information about participant submissions in the following format: "\{**username**\}-\{**language**\}-\{**points**\}"
 You can receive a ban command \-\> "\{**username**\}-**banned**"
 The points of the participant will always be a valid integer in the range \[0-100\]
 
 ## Output
 
-- Print the exam results for each participant in descending order by their max points and then by username, in the following format:
+- Print the names of all participants ordered by their **max points** in **descending** order, and then by their **usernames** in the following format:
 
 "**Results:**
 \{**username**\} \| \{**points**\}
 ..."
 
-- After that print each language that is used in the exam in **descending** order by total **submission count** and **then** by language **name**, in the following format:
+- After that, print **all language used in the exam**, ordered by their total **submissions count** in descending order, and then by their **names** in the following format:
 
 "**Submissions:**
 \{**language**\} - \{**submissionsCount**\}
@@ -2152,9 +2149,9 @@ The points of the participant will always be a valid integer in the range \[0-10
 | exam finished | Java - 2 |
 
 ### Comments
-Mike is banned so he is removed from the contest but his submissions are still preserved in the submissions count. 
+Mike is banned, so he is removed from the contest, but his submissions are still preserved in the submissions count. 
 
-So although there are only 2 participants in the results, there are 4 submissions in total.
+Therefore, there are only 2 participants in the results, and there are 4 submissions in total.
 
 [/task-description]
 [code-io /]
