@@ -17,9 +17,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program, which **counts all characters** in a string except space (' ').
+Create a program that **counts all characters** in a string, except the white-spaces (' ').
 
-**Print** all occurrences in the following **format**:
+**Print** all characters in the following **format**:
 
 "\{**char**\} \-\> \{**occurrences**\}"
 
@@ -217,15 +217,15 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You are given a **sequence of strings**, each on a new line until the command "**stop**".
+You will be given a **sequence of strings**, each on a new line until the **stop** command is received.
 
 Every **odd line** represents a **resource** (e.g. Gold, Silver, Copper, and so on).
 
-And every even - **quantity** of the **resource**. 
+Every **even line** - **quantity** of the **resource**. 
 
-Your task is to collect the resources and print them each on a new line.
+Your task is to collect the resources and to print them out, each on a new line.
 
-**Print** the resources and their quantities in **format**: 
+**Print** the resources and their quantities in the following **format**: 
 
 "\{**resource**\} -> \{**quantity**\}"
 
