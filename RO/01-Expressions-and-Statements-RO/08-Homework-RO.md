@@ -1,4 +1,4 @@
-# Teme pentru acasă
+# Teme Pentru Acasă
 
 [slide hideTitle]
 # Problemă: Calculate Speed
@@ -17,10 +17,10 @@ public class Program {
 [task-description]
 ## Descriere
 Scrieți un program pentru a calcula viteza în funcție de timp și distanță:
-  * Citește 2 numere în virgulă mobilă: distanță și timp
-  * Calculează viteza necesară pentru a parcurge o distanță dată pentru un anumit timp
-  * Imprimă rezultatul calculat
-  * Folosește formula: **viteză = distanță/timp**
+  * Citiți 2 numere în virgulă mobilă: distanță și timp
+  * Calculați viteza necesară pentru a parcurge o distanță dată pentru un anumit timp
+  * Imprimați rezultatul calculat
+  * Folosiți formula: **viteză = distanță/timp**
   
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -82,7 +82,7 @@ Scrieți un program pentru a calcula viteza în funcție de timp și distanță:
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluția: Currency Converter
+# Problemă cu Soluție: Currency Converter
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-1-currency-convertor-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -101,9 +101,9 @@ public class Program {
 [task-description]
 ## Descriere
 Scrieți un program pentru convertirea din USD în EUR:
-  * Citește **numărul în virgulă mobilă**: suma în dolari care urmează să fie convertită
-  * Convertește **dolari în euro** (utilizați **rata fixă** de dolari în euro: 0.88)
-  * Imprimă valoarea convertită în euro
+  * Citiți **numărul în virgulă mobilă**: suma în dolari care urmează să fie convertită
+  * Convertiți **dolari în euro** (utilizați **rata fixă** de dolari în euro: 0.88)
+  * Imprimați valoarea convertită în euro
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -186,9 +186,9 @@ public class Program {
 ## Descriere
 Scrieți un program pentru a calcula aria triunghiului:
 
-   * Citește din intrare `latura` și `înălțimea` - **numere în virgulă mobilă**.
-   * Calculează aria triunghiului.
-   * Imprimă aria, formatată la a doua cifră după punctul zecimal.
+   * Citiți din intrare `latura` și `înălțimea` - **numere în virgulă mobilă**.
+   * Calculați aria triunghiului.
+   * Imprimați aria, formatată la a doua cifră după punctul zecimal.
   
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -256,7 +256,7 @@ Formula pentru calcularea ariei unui triunghi este - Area = 1/2 \* a \* h
 [/slide]
 
 [slide hideTitle]
-# Problemă cu Soluția: Four Operations
+# Problemă cu Soluție: Four Operations
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-2-four-operations-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -360,9 +360,9 @@ public class Program {
 [task-description]
 ## Descriere
 Scrieți un program pentru a converti **zile** în **minute**:
-  * Citește un **singur număr întreg** (zilele vor fi transformate)
-  * Transformă zilele în minute (utilizați calcule)
-  * **Imprimă** minutele
+  * Citiți un **singur număr întreg** (zilele care vor fi transformate)
+  * Transformați zilele în minute (utilizați calcule)
+  * **Imprimați** minutele
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -448,11 +448,11 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program pentru a calcula aria și perimetrul cercului:
-  * Citește un **număr cu virgulă mobilă**: raza unui cerc
-  * Calculează **aria și perimetrul** unui cerc
-  * Imprimă valorile calculate
-    * utilizați **formatarea implicită** pentru numerele cu virgulă mobilă în Java în Output (ca în exemplul de mai jos)
+Scrieți un program pentru a calcula aria și perimetrul unui cerc:
+  * Citiți un **număr în virgulă mobilă**: raza unui cerc
+  * Calculați **aria și perimetrul** unui cerc
+  * Imprimați valorile calculate
+    * la ieșire utilizați **formatarea implicită** pentru numerele în virgulă mobilă în Java (ca în exemplul de mai jos)
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -724,7 +724,7 @@ Scrieți un program de consolă care citește un număr **întreg** `a` și calc
 ## Intrare
 
 Citiți de pe consolă:
-- Dimensiunea pătratului - un număr **întreg** în intervalul [1 ... 1000]
+- dimensiunea pătratului - un număr **întreg** în intervalul [1 ... 1000]
 
 ## Ieșire
 
@@ -796,7 +796,7 @@ Imprimați pe consolă aria calculată.
 
 
 [slide hideTitle]
-# Problemă cu Soluția: Projects Creation
+# Problemă cu Soluție: Projects Creation
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-4-projects-creation-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -814,14 +814,14 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care să calculeze câte ore vor fi necesare unui arhitect pentru a crea proiecte ale unor obiecte de construcție.
+Scrieți un program care să calculeze câte ore vor fi necesare unui arhitect pentru a crea niște proiecte.
 
 Crearea unui proiect durează aproximativ 3 ore.
 
 ## Intrare
 Citiți **două rânduri** de pe consolă:
-- Numele arhitectului - **String**
-- Numărul de proiecte - **integer** în intervalul \[0 ... 100 \]
+- Numele arhitectului - **șir**
+- Numărul de proiecte - **număr întreg** în intervalul \[0 ... 100 \]
 
 ## Ieșire
 
@@ -1090,13 +1090,13 @@ Scrieți un program care calculează veniturile din recoltă în euro (**1 USD =
 Intrarea va fi de **4 numere**, fiecare pe o **singură linie**:
 - Prețul kilogramului de legume - **număr în virgulă mobilă** [0.00 ... 1000.00]
 - Prețul kilogramului de fructe - **număr în virgulă mobilă** [0.00 ... 1000.00]
-- Kilograme în total de legume - **un număr întreg** [0 ... 1000]
-- Kilograme în total de fructe - **un număr întreg** [0 ... 1000]
+- Kilograme în total de legume - **număr întreg** [0 ... 1000]
+- Kilograme în total de fructe - **număr întreg** [0 ... 1000]
 
 ## Ieșire
 Imprimați pe consolă un **singur număr**: venitul din toate fructele și legumele în euro.
 
-Rezultatul ar trebui formatat la **a doua zecimală**.
+Rezultatul trebuie formatat la **a doua zecimală**.
 
 ## Exemple
 
@@ -1288,8 +1288,8 @@ Fiecare pachet de alimente pentru câini costă 2.5 dolari, iar fiecare altul ca
 
 ## Intrare
 
-Intrarea va fi două linii de pe consolă:
-- Număr de câini - un număr întreg în intervalul \[0 ... 100 \]
+Intrarea va fi formată din două linii de pe consolă:
+- Numărul câinilor - un număr întreg în intervalul \[0 ... 100 \]
 
 - Numărul celorlalte animale - un număr întreg în intervalul \[0 ... 100 \]
 
@@ -1428,7 +1428,7 @@ Imprimați pe consolă: "\{**total sum**\} **dollars**". Rezultatul trebuie să 
 
 
 [slide hideTitle]
-# Problemă cu soluția: Fishland
+# Problemă cu Soluție: Fishland
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-3-fishland-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -1448,7 +1448,7 @@ public class Main {
 ## Descriere
 George decide să cumpere ton, macrou și midii.
 
-Ciiți de la consola **prețurile** de macrou și șprot, cantitatea de ton, macrou și midii în **kilograme**.
+Ciiți de la consolă **prețurile** de macrou și șprot, cantitatea de ton, macrou și midii în **kilograme**.
 
 **Calculați** de  câți bani va avea nevoie ca să plătească factura, în cazul în care prețurile la Fishland sunt:
 - Ton - **cu 60% mai scump decât macroul**
@@ -1457,15 +1457,15 @@ Ciiți de la consola **prețurile** de macrou și șprot, cantitatea de ton, mac
 
 ## Intrare
 Trebuie să citiți **5 numere** de pe consolă:
-- Prețul macroului pe kilogram - **în virgulă mobilă** număr în intervalul [0.00 ... 40.00]
-- Prețul șprotului pe kilogram - **în virgulă mobilă** număr în intervalul [0.00 ... 30.00]
-- Kilograme de ton - **în virgulă mobilă** număr în intervalul [0.00 ... 50.00]
+- Prețul macroului pe kilogram - **număr în virgulă mobilă** în intervalul [0.00 ... 40.00]
+- Prețul șprotului pe kilogram - **număr în virgulă mobilă** în intervalul [0.00 ... 30.00]
+- Kilograme de ton - **număr în virgulă mobilă** în intervalul [0.00 ... 50.00]
 - Kilograme de macrou - **număr în virgulă mobilă** în intervalul [0.00 ... 70.00]
 - Kilograme de midii - **număr întreg** în intervalul [0 ... 100]
 
 ## Ieșire
 
-Imprimați pe consolă un singur număr cu virgulă mobilă: banii de care George are nevoie să plătească factura, formatat la **a doua zecimală**.
+Imprimați pe consolă un singur număr în virgulă mobilă: banii de care George are nevoie să plătească factura, formatat la **a doua zecimală**.
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -1686,7 +1686,7 @@ Prețurile trebuie să fie formatate la **a doua zecimală**.
 
 [hints]
 [hint]
-Calculați prețul pentru ecologizarea întregii curți.
+Calculați prețul pentru amenajarea întregii curți.
 [/hint]
 [hint]
 Calculați reducerea și determinați prețul final.
