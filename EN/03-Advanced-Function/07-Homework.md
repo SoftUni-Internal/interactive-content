@@ -107,7 +107,7 @@ function currencyFormatter(separator, symb, symbolFirst, value) {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 
 Write a **higher-order** function that fixes some of the parameters of another function. 
 
@@ -370,7 +370,7 @@ You will receive a **numeric array** and a **string** as input parameters.
 
 The output should be the **sorted array**.
 
-# Examples
+## Examples
 
 |**Input**|**Output**|
 |---|---|
@@ -452,13 +452,15 @@ function argumentInfo() {
 [/code-editor]
 [task-description]
 
-# Description
+## Description
 
 Write a function that displays **information** about the **arguments** which are passed to it (**type** and **value**) and a **summary** about the number of each type in the following format: 
 
 "\{**argument type**\}: \{**argument value**\}"
 
-Print **each** argument description on a **new line**. At the end print a **summary** with counts for each type in **descending order**, each on a new line in the following format:
+Print **each** argument description on a **new line**. 
+
+At the end, print a **summary** with counts for each type in **descending order**, each on a new line in the following format:
 
 "\{**type**\} = \{**count**\}"
 
@@ -474,7 +476,7 @@ You will receive a series of arguments **passed** to your function.
 
 **Print to the console** the **type** and **value** of each argument passed into your function.
 
-# Example
+## Example
 
 ## Input
 
@@ -744,7 +746,7 @@ All fields should be named **exactly as described** \(their order is not importa
 
 Look at the sample output for more information.
 
-# Example 1
+## Example 1
 
 ## Input
 
@@ -764,7 +766,7 @@ Look at the sample output for more information.
     status: 'normal'
 }
 ```
-# Example Two
+## Example 2
 
 ## Input
 
@@ -1189,13 +1191,16 @@ Look at the sample output for more information.
 - Recipes and ingredients in commands will always have valid names.
   
 
-# Examples
+## Examples
 
 **Execution:**
 ```js
 let manager = solution();
-manager('restock flavour 50');  // Success
-manager('prepare lemonade 4');  // Error: not enough carbohydrate in stock
+manager('restock flavour 50');  
+// Success
+
+manager('prepare lemonade 4');  
+// Error: not enough carbohydrate in stock
 ```
 
 ## Example 1

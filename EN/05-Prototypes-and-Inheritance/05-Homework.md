@@ -19,7 +19,7 @@ function personAndTeacher() {
 [/code-editor]
 [task-description]
 
-# Description
+## Description
 
 Write a class **Person** and a class **Teacher** which extends **Person**.
 
@@ -102,7 +102,7 @@ function toStringExtension() {
 [/code-editor]
 [task-description]
 
-# Description
+## Description
 
 Extend the **Person** and **Teacher** classes from the previous task and add a class **Student** inheriting from **Person**. 
 
@@ -186,7 +186,7 @@ yes
 [/code-editor]
 [task-description]
 
-# Description
+## Description
 
 Extend the built-in **Array** object with additional functionality. 
 
@@ -406,7 +406,7 @@ yes
 [/code-editor]
 [task-description]
 
-# Description
+## Description
 
 You have been tasked with creating several classes for balloons.
 
@@ -455,7 +455,8 @@ function solve() {
     }
 
     class PartyBallon extends Ballon {
-        constructor(color, gasWeight, ribbonColor, ribbonLength) {
+        constructor(color, gasWeight, 
+            ribbonColor, ribbonLength) {
             super(color, gasWeight);
             // TODO: Initialize ribbon object
         }
@@ -686,7 +687,7 @@ yes
 [/code-editor]
 [task-description]
 
-# Description
+## Description
 
 Define several classes that represent a company's employee records. 
 
@@ -784,7 +785,8 @@ Using the **new.target** keyword, we can check whether the object is created fro
 ```js
 constructor(name, age) {
     if (new.target === Employee) {
-        throw new Error("Cannot instantiate directly.")
+        throw new Error(
+            "Cannot instantiate directly.")
     }
     this.name = name;
     this.age = age;
@@ -809,7 +811,8 @@ Printing the salary is pretty straightforward. However, since the manager has a 
 
 ```js
 collectSalary() {
-    console.log(`${this.name} received ${this.getSalary()} this month`);
+    console.log(`${this.name} received
+        ${this.getSalary()} this month`);
 }
 
 getSalary() {
@@ -857,7 +860,8 @@ class Manager extends Employee {
         super(name, age);
         this.dividend = 0;
         this.tasks.push(' scheduled a meeting.');
-        this.tasks.push(' is preparing a quarterly report.');
+        this.tasks.push(
+            ' is preparing a quarterly report.');
     }
     getSalary() {
         return this.salary + this.dividend;
@@ -873,7 +877,8 @@ class Manager extends Employee {
         super(name, age);
         this.dividend = 0;
         this.tasks.push(' scheduled a meeting.');
-        this.tasks.push(' is preparing a quarterly report.');
+        this.tasks.push(
+            ' is preparing a quarterly report.');
     }
     getSalary() {
         return this.salary + this.dividend;
@@ -1465,7 +1470,7 @@ function computer() {
 [/code-editor]
 [task-description]
 
-# Description
+## Description
 
 Implement the class hierarchy for a computer business.
 

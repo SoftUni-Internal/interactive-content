@@ -331,18 +331,17 @@ class Hex {
 ```
 [/code-editor]
 [task-description]
-
-**1. Your Task**
+## Description
 Write a Hex class, which supports the described functionality below.
 
-**2. Functionality**
+## Functionality
 
-Constructor(`{value}`)
+Constructor(`{value}`):
 
 Should have **1** property:
 - **value** - number
 
-Functions:
+**Functions**:
 - `ValueOf()`:
 This function should return the value property of the Hex class.
 
@@ -358,12 +357,11 @@ This function should subtract a number or a Hex object and return a new Hex obje
 - `Parse({string})`:
 Create a parse class method that can parse Hexidecimal numbers and convert them to standard decimal numbers.
 
-**3. Submission**
+## Submit
 Submit only your **Hex class**.
 
-**4. Examples**
+## Example
 This is an example how the code is **intended to be used**:
-
 
 ## Input
 
@@ -815,7 +813,7 @@ function getArticleGenerator(articles) {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a function that sequentially **displays articles** on a web page when the user **clicks** a button. 
 
 You will receive an **array of strings** that will initialize the program. 
@@ -872,15 +870,15 @@ You will receive and **array** of strings.
 ## Output
 Return a **function** that displays the array elements on the web page.
 
-# Examples
+## Examples
 
-## Example 1:
+## Example 1
 [image assetsSrc="function-context-12.png" /]
 
-## Example 2:
+## Example 2
 [image assetsSrc="function-context-13.png" /]
 
-## Example 3:
+## Example 3
 [image assetsSrc="function-context-14.png" /]
 
 [/task-description]

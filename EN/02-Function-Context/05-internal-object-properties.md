@@ -303,7 +303,7 @@ class Person{
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a class which takes **first** and **last** names as **parameters** and returns an object with **firstName**, **lastName** and **fullName**: "\{**firstName**\} \{**lastName**\}`. 
 
 Properties should all be **accessible**. We discovered that "accessible" also means "mutable". 
@@ -320,7 +320,7 @@ A **valid** **full name** is in the format: "\{**firstName**\} \{**lastName**\}"
 
 **Note:** Check the examples below for more information.
 
-# Examples
+## Examples
 
 ## Input
 

@@ -15,21 +15,21 @@ function sections(input) {
 [/code-editor]
 [task-description]
 
-# Description
+## Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/01-Sections.zip) **for this task.**
 
 You will receive an **array** of strings.
 
-For each text, create a **div** with a **paragraph** with the string in it.
+For each text, create a `div` with a **paragraph** with the string in it.
 
 Each paragraph is initially hidden, with the display attribute set to `display:none`.
 
-Add a **click event listener** to each **div** that displays the hidden paragraph.
+Add a **click event listener** to each `div` that displays the hidden paragraph.
 
-Finally, you should **append** all **div**s to the element with an **id** of **content**.
+Finally, you should **append** all `div`s to the element with an **id** of **content**.
 
-# Example
+## Example
 
 [image assetsSrc="Dom-Manipulation(5).gif" /]
 
@@ -129,19 +129,19 @@ function notification(message){
 [/code-editor]
 [task-description]
 
-# Description
+## Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/02-Notification.zip) **for this task.**
 
-Create a **function** that receives a string **message** and **displays** it inside a **div** with an **id notification** for 2 seconds.
+Create a **function** that receives a string **message** and **displays** it inside a `div` with an **id notification** for 2 seconds.
 
-The **div** is initially **hidden**, but when the function is called, it must be shown.
+The `div` is initially **hidden**, but when the function is called, it must be shown.
 
-After 2 seconds, **hide** the **div**.
+After 2 seconds, **hide** the `div`.
 
 In the example below, a **notification** is shown when you click the button.
 
-# Example
+## Example
 
 [image assetsSrc="Dom-Manipulation(7).gif" /]
 
@@ -338,7 +338,7 @@ function timeConverter(){
 [/code-editor]
 [task-description]
 
-# Description
+## Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/03-Time-Converter.zip) **for this task.**
 
@@ -355,7 +355,7 @@ Whichever **button** we click, the **input fields** should **change**, depending
 For example, if we type in 48 hours and click **convert**, the value of the days' field should change to **2**.
 
 
-# Example
+## Example
 
 [image assetsSrc="Dom-Manipulation(9).gif" /]
 
@@ -538,13 +538,13 @@ function lockedProfile(){
 [/code-editor]
 [task-description]
 
-# Description
+## Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/04-Locked-Profile.zip) **for this task.**
 
 In this problem, you should **create a JavaScript functionality** that **shows** and **hides** the additional information about users.
 
-When the "**Show more**" button is clicked, the **hidden information** inside the **div** should be shown, only **if the profile is not locked**.
+When the "**Show more**" button is clicked, the **hidden information** inside the `div` should be shown, only **if the profile is not locked**.
 
 If the current profile is **locked**, nothing should happen.
 
@@ -552,7 +552,7 @@ If the hidden information is displayed, and we lock the profile again, the "**Hi
 
 Otherwise, when the profile is **unlocked** and we click on the "**Hide it**" button, the fields must hide again.
 
-# Example
+## Example
 
 ## Input
 [image assetsSrc="Dom-Manipulation(11).png" /]
@@ -1393,7 +1393,7 @@ function encodeAndDecodeMessages(){
 [/code-editor]
 [task-description]
 
-# Description
+## Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/05-Encode-and-Decode-Messages.zip) **for this task.**
 
@@ -1419,7 +1419,7 @@ After that, when the "**Decode and read it**" button is clicked, you need to get
 
 - **Replace the encoded message** with your decoded message in the receiver text area to make it readable
 
-# Example
+## Example
 
 ## Input
 [image assetsSrc="Dom-Manipulation(13).png" /]
@@ -1646,7 +1646,7 @@ function tableSearchEngine(){
 [/code-editor]
 [task-description]
 
-# Description
+## Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/06-Table-Search-Engine.zip) **for this task.**
 
@@ -1666,7 +1666,7 @@ If there is no match, **nothing should happen**.
 
 **Note:** After every search, **clear the input** field and remove all already selected classes, if any exist from the previous search, in order to make sure the new search will contain only the new result.
 
-# Example
+## Example
 
 ## Input
 [image assetsSrc="Dom-Manipulation(16).png" /]
@@ -2209,7 +2209,7 @@ function furniture(){
 [/code-editor]
 [task-description]
 
-# Description
+## Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/07-Furniture.zip) **for this task.**
 
@@ -2227,7 +2227,7 @@ On the next line, print the total price in the format: "**Total price:** \{**tot
 
 Finally, print the **average decoration factor** in the format: "**Average decoration factor:** \{**decFactor**\}".
 
-# Example
+## Example
 
 ## Input
 `[{"name": "Sofa", "img": "https://res.cloudinary.com/maisonsdumonde/image/upload/q_auto,f_auto/w_200/img/grey-3-seater-sofa-bed-200-13-0-175521_9.jpg", "price": 150, "decFactor": 1.2}]`
@@ -2713,7 +2713,7 @@ function cards(){
 [/code-editor]
 [task-description]
 
-# Description
+## Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/08-Cards.zip) **for this task.**
 
@@ -2736,7 +2736,7 @@ You should clear the span elements that hold the current cards' names when both 
 After every hand, push the current cards' names in the **history div** in the following format:
 "\[\{**top side card name**\} **vs** \{**bottom side card name**\}\]"
 
-# Example
+## Example
 
 ## Input
 [image assetsSrc="Dom-Manipulation(19).png" /]

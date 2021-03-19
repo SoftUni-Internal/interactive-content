@@ -94,7 +94,9 @@ Creating an object **user** with two methods:
 
 - `printAnotherContext: function() { console.log(this === global); }` - the **printAnotherContext** method checks if `this === global` and prints the result to the console
 
-Calling `user.printContext();` invokes the method belonging to the **user** object. Returns: **false**, because `this` is used within an object's method and returns the object itself.
+Calling `user.printContext();` invokes the method belonging to the **user** object. 
+
+Returns: **false**, because `this` is used within an object's method and returns the object itself.
 
 `let globalFunction = user.printAnotherContext;` 
 

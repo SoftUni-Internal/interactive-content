@@ -29,7 +29,9 @@ If this parameter is omitted, its default value is **false**, and the listener i
 el.addEventListener('click', listener, true);
 ```
 
-When an event happens on an element, it first runs the handlers on it, then on its parent, and then all the way up on other ancestors. This is the **bubbling phase**.
+When an event happens on an element, it first runs the handlers on it, then on its parent, and then all the way up on other ancestors. 
+
+This is the **bubbling phase**.
 
 In this example, the handler is assigned to the `<div>` element, but it also runs if we click on any **nested tag**, like  `<em>` or `<code>`.
 
@@ -85,6 +87,8 @@ The argument `e`, which is passed to the function, is our **reference to the eve
 
 The event object has many **properties** and **methods**. 
 
+## Properties
+
 Some of the properties are:
 
 - **target**
@@ -112,6 +116,8 @@ The **isTrusted** event property returns a Boolean value that is indicating whet
 The **clientX** property returns the horizontal coordinate (according to the client area) of the mouse pointer when a mouse event was triggered.
 
 The **clientY** property returns the vertical coordinate.
+
+## Methods
 
 Some of the methods are:
 
@@ -143,13 +149,13 @@ function addItem(){
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/JS-Advanced-DOM-Manipulations-Lab-01.List-Of-Items.zip) **for this task.**
 
 Write a function that **reads** a text inside an input field and **appends** the specified text to a list inside an HTML page.
 
-# Example
+## Example
 [image assetsSrc="Dom-Manipulation(3).png" /]
 
 [/task-description]

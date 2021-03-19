@@ -7,13 +7,13 @@
 [code-task title="Task Manager" taskId="js-advanced-exam-preparation-task-manager" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
-function taskManager(){
+function solve(){
   // Write your code here
 }
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/JS-Advanced-Exam-Preparation-First-Task-Resources.zip) **for this task.**
 
@@ -23,7 +23,7 @@ Use the "**index.html**" and "**app.js**" files to solve this problem.
 
 [image assetsSrc="exam-prep-picture1.jpg" /]
 
-## Your task
+## Your Task
 
 Write the **missing JavaScript code** to make the Task Manager Functionality works as follows:
 

@@ -14,7 +14,7 @@ function subtraction(){
 [/code-editor]
 [task-description]
 
-# Description
+## Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/01-Subtraction.zip) **for this task.**
 
@@ -36,7 +36,7 @@ Implement the description above to provide the following functionality:
 
 ## Hints
 
-We see that the **textboxes** and the **div**s have **id** attributes on them.
+We see that the **textboxes** and the `div`s have **id** attributes on them.
 
 ```js
 <div id="wrapper">
@@ -65,7 +65,7 @@ let secondNumber = document
     .getElementById('secondNumber').value;
 ```
 
-All that is left now is to append the result to the **div**.
+All that is left now is to append the result to the `div`.
 
 We use the same function to get the **result** element by id and change its **text content** to the result of the **subtraction**.
 
@@ -167,7 +167,7 @@ function fillDropdown(){
 [/code-editor]
 [task-description]
 
-# Description
+## Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/02-Fill-Dropdown.zip) **for this task.**
 
@@ -316,7 +316,7 @@ function accordion(){
 [/code-editor]
 [task-description]
 
-# Description
+## Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/03-Accordion.zip) **for this task.**
 
@@ -475,7 +475,7 @@ function orderTheNames(){
 [/code-editor]
 [task-description]
 
-# Description
+## Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/04-Order-the-Names.zip) **for this task.**
 
@@ -912,7 +912,7 @@ function chatRoom(){
 [/code-editor]
 [task-description]
 
-# Description
+## Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/05-Chat-Room.zip) **for this task.**
 
@@ -1324,7 +1324,7 @@ function numpadCalculator(){
 [/code-editor]
 [task-description]
 
-# Description
+## Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/06-Numpad-Calculator.zip) **for this task.**
 
@@ -1836,7 +1836,7 @@ function repeatString(){
 [/code-editor]
 [task-description]
 
-# Description
+## Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/07-Number-Convertor.zip) **for this task.**
 

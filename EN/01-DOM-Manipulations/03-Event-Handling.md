@@ -225,7 +225,7 @@ function addItem(){
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/JS-Advanced-DOM-Manipulations-Lab-02.Add-Delete.zip) **for this task.**
 
@@ -233,7 +233,7 @@ Extend the previous problem to display a `[Delete]` link after each list item.
 
 Clicking on it should delete the item with no confirmation.
 
-# Example
+## Example
 [image assetsSrc="Dom-Manipulation(4).gif" /]
 
 
