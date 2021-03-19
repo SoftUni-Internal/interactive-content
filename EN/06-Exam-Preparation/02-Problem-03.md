@@ -122,8 +122,10 @@ console.log(bank.customerInfo(6233267));
 **Corresponding output:**
 
 ```
-{ firstName: "John", lastName: "Miller", personalId: 6233267 } 
-{ firstName: "Michelle", lastName: "Davis", personalId: 4151596 }
+{ firstName: "John", lastName: "Miller", 
+personalId: 6233267 } 
+{ firstName: "Michelle", lastName: "Davis", 
+personalId: 4151596 }
 500$
 375$
 Bank name: SoftUni Bank
