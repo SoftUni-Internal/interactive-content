@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 # Matrici Asociative
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-3-4-associative-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/RO/interactive-java-fundamentals-associative-arrays-3-4-associative-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Matricile  asociative sunt colecții care conțin parametri **Key** și **Value**  și sunt indexate prin  **Keys**. 
 
@@ -41,7 +41,7 @@ De exemplu:
 [slide hideTitle]
 # Colecții de perechi Cheie-Valoare
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-5-collections-of-key-and-value-pairs-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/RO/interactive-java-fundamentals-associative-arrays-5-collections-of-key-and-value-pairs-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Colecțiile API din Java conțin câteva **implementări** ale Map, care permit conținutului unui Mapsă fie văzut ca:
 
@@ -228,7 +228,7 @@ System.out.println(airplanes.isEmpty());
 
 # TreeMap<K, V> - Exemplu
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-10-treemap-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/RO/interactive-java-fundamentals-associative-arrays-10-treemap-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
 
@@ -236,7 +236,7 @@ System.out.println(airplanes.isEmpty());
 [slide hideTitle]
 # Iterarea Prin Map
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-11-iterating-through-map-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/RO/interactive-java-fundamentals-associative-arrays-11-iterating-through-map-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 Atunci când iterăm prin obicete de tipul `Map.Entry <K, V>`, este **imposibil** de a modifica colecția (read-only).
@@ -286,7 +286,7 @@ for (Map.Entry<String, Double> entry : fruitsPrice.entrySet()) {
 [slide hideTitle]
 # Problemă cu soluție: Count Real Numbers
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-12-problem-and-solut-count-real-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/RO/interactive-java-fundamentals-associative-arrays-12-problem-and-solut-count-real-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 [code-task title="Count Real Numbers" taskId="Java-Fundamentals-2-Associative-arrays-lab-Count-real-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -420,6 +420,8 @@ Citiți o **listă de numere reale** și imprimați-le în ordine **ascendentă*
 
 [slide hideTitle]
 # Problemă cu Soluție: Word Synonyms
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/RO/interactive-java-fundamentals-associative-arrays-14-problem-and-solution-word-synonyms-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Word Synonyms" taskId="Java-Fundamentals-2-Associative-Arrays-lab-Words-Synonyms" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -639,6 +641,7 @@ customer - client, purchaser
 
 [slide hideTitle]
 # Problemă cu Soluție: Odd Occurrences
+
 [code-task title="Odd Occurrences" taskId="Java-Fundamentals-2-Associative-Arrays-lab-Odd-Occurrences" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
