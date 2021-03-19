@@ -1,4 +1,4 @@
-# Problem 3: The Pianist
+# Problema 3: The Pianist
 [slide hideTitle]
 # The Pianist
 
@@ -6,7 +6,7 @@
 [code-editor language=javascript]
 ```
 function thePianist(number, input) {
-	// Write your code here
+	// Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -20,66 +20,66 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Description
+# Descriere
 
-*You are a pianist and you like to keep a list of your favorite piano pieces.* 
-*Create a program, to help you organize it and add, change, remove pieces from it!*
+*Sunteți pianist și vă place să păstrați o listă a pieselor dvs. preferate de pian.*
+*Creați un program, pentru a vă ajuta să îl organizați și să adăugați, să schimbați, să eliminați piese din el!*
 
-On the first line of the input, you will receive an **integer** "**n**" - representing the number of pieces that you will initially have. 
+Pe prima linie a intrării, veți primi un **integer** "**n**" - reprezentând numărul de piese pe care le veți avea inițial.
 
-On the next "**n**" lines, you will receive the title of each piece, followed by its **composer and key**, separated by "\|" in the following format: 
+Pe următoarele rânduri "**n**", veți primi titlul fiecărei piese, urmat de **compozitorul și cheia**, separate prin „\|” în următorul format:
 **
 "\{**piece**}\|\{**composer**\}\|\{**key**\}"
 
-Then, you will receive **different commands**, each on a new line, separated by "\|", until the "**Stop**" command is given: 
+Apoi, veți primi **comenzi diferite**, fiecare pe o nouă linie, separate prin "\|", până când este dată comanda „**Stop**”:
 
-* Command "**Add**\|\{**piece**\}\|\{**composer**\}\|\{**key**\}":
-You need to **add the piece and the information** about it to the other pieces. 
+* Comanda "**Add**\|\{**piece**\}\|\{**composer**\}\|\{**key**\}":
+Trebuie să **adăugați piesa și informațiile** despre aceasta la celelalte piese.
 
-If the piece is **already in the collection**, you should print: 
+Dacă piesa este deja **în colecție**, ar trebui să tipăriți: 
 "\{**piece**\} **is already in the collection!**"
 
-If the piece **is not in the collection**, you should print: 
+Dacă piesa **nu se află în colecție**, ar trebui să tipăriți:
 "\{**piece**\} **by** \{**composer**\} **in** \{**key**\} **added to the collection!**"
 
-* Command "**Remove**\|\{**piece**\}":
-If the **piece is in the collection**, you have to remove it. 
+* Comanda "**Remove**\|\{**piece**\}":
+Dacă **piesa este în colecție**, trebuie să o eliminați.
 
-Then, you have to print the following message: 
+Apoi, trebuie să imprimați următorul mesaj:
 "**Successfully removed** \{**piece**\}!"
 
-If the **piece is not in the collection**, you need to print: 
+Dacă **piesa nu se află în colecție**, trebuie să imprimați:
 "**Invalid operation!** \{**piece**\} **does not exist in the collection.**"
 
-* Command "**ChangeKey**\|\{**piece**\}\|\{**newKey**\}":
-If the **piece is in the collection**, change its key to the specified one and print: 
+* Comanda "**ChangeKey**\|\{**piece**\}\|\{**newKey**\}":
+Dacă **piesa este în colecție**, schimbați cheia cu cea specificată și imprimați:
 
 "**Changed the key of** \{**piece**\} **to** \{**newKey**\}!"
 
-If the **piece is not in the collection**, print: 
+Dacă **piesa nu se află în colecție**, tipăriți:
 "**Invalid operation!** \{**piece**\} **does not exist in the collection.**"
 
-Upon receiving the "**Stop**" command, you need to print all pieces in the collection, sorted by **their name and by the name of their composer in alphabetical order**, in the following format: 
+La primirea comenzii "**Stop**", trebuie să imprimați toate piesele din colecție, sortate după **numele lor și după numele compozitorului lor în ordine alfabetică**, în următorul format:
 
 "\{**piece**\} \-\> **composer:** \{**composer**\}, **Key:** \{**key**\}"
 
-## Input
+## Intrare
 
-- First, you will receive a single integer - the initial number of pieces in the collection 
+- Mai întâi, veți primi un singur număr întreg - numărul inițial de piese din colecție
 
-- For each piece, you will receive a single line of text containing information about it
+- Pentru fiecare piesă, veți primi o singură linie de text care conține informații despre aceasta
 
-- Then, you will receive multiple commands in the way described above, until you receive the command "**Stop**"
+- Apoi, veți primi mai multe comenzi în modul descris mai sus, până când veți primi comanda "**Stop**"
 
-**Note**: Commands that you will receive will modify the object.
+**Notă**: Comenzile pe care le veți primi vor modifica obiectul.
 
-## Output
+## Ieșire
 
-* All the output messages and the appropriate formats are described in the problem description
+*Toate mesajele de ieșire și formatele corespunzătoare sunt descrise în descrierea problemei
 
-## Examples One
+## Exemplul Unu
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |thePianist(3, ['Fur Elise\|Beethoven\|A Minor', 'Moonlight Sonata\|Beethoven\|C\# Minor', 'Clair de Lune\|Debussy\|C\# Minor', 'Add\|Sonata No.2\|Chopin\|B Minor', 'Add\|Hungarian Rhapsody No.2\|Liszt\|C\# Minor', 'Add\|Fur Elise\|Beethoven\|C# Minor', 'Remove\|Clair de Lune', 'ChangeKey\|Moonlight Sonata\|C\# Major', 'Stop'])|Sonata No.2 by Chopin in B Minor added to the collection!|
 ||Hungarian Rhapsody No.2 by Liszt in C# Minor added to the collection!|
@@ -92,25 +92,25 @@ Upon receiving the "**Stop**" command, you need to print all pieces in the c
 ||Sonata No.2 \-\> Composer: Chopin, Key: B Minor|
 
 
-**Comments**
+**Comentarii**
 
-After you receive the initial pieces and the information about them, you start receiving commands. 
+După ce primiți piesele inițiale și informațiile despre ele, începeți să primiți comenzi.
 
-The first two commands are to add a piece to the collection. Since the pieces are not in the collection, you add them. 
+Primele două comenzi sunt adăugarea unei piese la colecție. Deoarece piesele nu se află în colecție, le adăugați.
 
-By the third command, which is also "**add**", you **attempt to add a piece** that is already in the collection, so you **print the appropriate message**, but you do not add the piece. 
+Prin a treia comandă, care este și "**adăugați**", **încercați să adăugați o piesă** care este deja în colecție, astfel încât să **imprimați mesajul corespunzător**, dar nu adăugați bucată.
 
-After that, you receive the "**remove**" **command**. 
+După aceea, primiți comanda "**remove**" **command**. 
 
-The last command **requires changing the key of a piece**. 
+Ultima comandă **necesită schimbarea cheii unei piese**.
 
-Since the piece is **present in the collection**, you **modify** its key.
+Deoarece piesa este **prezentă în colecție**, îi **modificați** cheia.
 
-Next, you receive the "**Stop**" command, you **print the information about the pieces**, sorted the way described above, and the program ends. 
+Apoi, primiți comanda "**Stop**", **imprimați informațiile despre piese**, ați sortat modul descris mai sus și programul se încheie.
 
-## Examples Two
+## Exemplul Doi
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |thePianist(4, ['Eine kleine Nachtmusik\|Mozart\|G Major', 'La Campanella\|Liszt\|G\# Minor', 'The Marriage of Figaro\|Mozart\|G Major', 'Hungarian Dance No\.5\|Brahms\|G Minor', 'Add\|Spring\|Vivaldi\|E Major', 'Remove\|The Marriage of Figaro', 'Remove\|Turkish March', 'ChangeKey\|Spring\|C Major', 'Add\|Nocturne\|Chopin\|C\# Minor', 'Stop'])|Spring by Vivaldi in E Major added to the collection\!|
 ||Successfully removed The Marriage of Figaro\!|
