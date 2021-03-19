@@ -94,7 +94,7 @@ Creating a **user** object with **two methods**:
 
 - `printAnotherContext: function() { console.log(this === global); }` - the **printAnotherContext** method checks if `this === global` and prints the result to the console
 
-Calling `user.printContext();` invokes the method belonging to the **user** object. 
+Calling `user.printContext();` invokes the method that belongs to the **user** object. 
 
 Returns: **false**, because `this` is used within an object's method and returns the object itself.
 
@@ -123,7 +123,7 @@ Returns **true**, because now `this` is called by the function **globalFunction*
 
 When used in event handlers, `this` points to the specific element that the event fired from.
 
-If you create an HTML file and attach the following event handler to an element with id "button", what would the resulting output to the console be?
+Here, we create an HTML file and attach the following event handler to an element with an **id** of `button`.
 
 ```js
 function solve() {
@@ -160,7 +160,7 @@ You can test it yourself by creating an HTML file with the following example cod
 </html>
 ```
 
-Clicking on the button in the example produces the following output in the console:
+Clicking on the button in the example produces the following **output** in the console:
 
 [image assetsSrc="function-context-04.png" /]
 
