@@ -21,6 +21,8 @@ Choosing which one to use depends on the numeric value it will need to store.
 [slide hideTitle]
 # Example: Centuries
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-12-15-integer-types-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 We should choose different integer types according to their value.
 
 ```java live
