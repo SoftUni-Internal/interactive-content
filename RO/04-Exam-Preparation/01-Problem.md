@@ -29,7 +29,7 @@ O **înregistrare este valabilă** când:
 
 - Numele de utilizator **este înconjurat de** `"U\$"`
 
-- **numele de utilizator trebuie să conțină cel puțin 3 caractere**, **începe** cu o **literă majusculă**, urmată **numai de litere mici**
+- **Numele de utilizator trebuie să conțină cel puțin 3 caractere**, **începe** cu o **literă majusculă**, urmată **numai de litere mici**
 
 - Parola **este înconjurată de** `"P@\$"`
 
@@ -68,8 +68,8 @@ Trebuie să verificați dacă înregistrarea este **valabilă și dacă este, im
 
 ### Cometariu
 - Avem 3 linii de intrare de verificat
-- Primul respectă regulile și este valabil
-- Al doilea nu, deoarece parola nu se termină cu o cifră
+- Prima respectă regulile și este valabilă
+- A doua nu este valabilă, deoarece parola nu se termină cu o cifră
 - A treia nu este validă, deoarece parola este prea scurtă
 
 ### Exemplu
