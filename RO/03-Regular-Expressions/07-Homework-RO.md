@@ -1,7 +1,7 @@
 # Teme Pentru Acasă
 
 [slide hideTitle]
-# Problem: Furniture
+# Problemă: Furniture
 
 [code-task title="Furniture" taskId="Java-Fundamentals-2-Regular-Expressions-Furniture" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -12,16 +12,16 @@ import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Creați  codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program pentru a **calcula costul total** al diferitelor tipuri de mobila.
+Creați  un program pentru a **calcula costul total** al diferitelor tipuri de mobilier cumpărat .
 
-Veți primi câteva linii de intrare **până când veți primi linia** "Purchase".
+Veți primi câteva linii de intrare **până când veți primi comanda ** "Purchase".
 
 Pentru ca linia **să fie valabilă** ar trebui să fie în următorul **format**:
 
@@ -29,9 +29,9 @@ Pentru ca linia **să fie valabilă** ar trebui să fie în următorul **format*
 
 Prețul poate fi un **număr cu virgulă mobilă sau un număr întreg**.
 
-Stocați **denumirea mobilei și prețul total**.
+Stocați **denumirea mobilierukui și prețul total**.
 
-La final **imprimați fiecare mobila cumpărată pe o linie separată** în formatul următor:
+La final **imprimați fiecare mobilierul cumpărat pe o linie separată** în formatul următor:
 
 "Bought furniture:
 
@@ -163,7 +163,7 @@ Total money spend: 8593.09
 [/slide]
 
 [slide hideTitle]
-# Problem: Race
+# Problemă: Race
 [code-task title="Race" taskId="Java-Fundamentals-2-Regex-Race" executionType="tests-execution" executionStrategy="java-code"  requiresInput]
 [code-editor language=java]
 ```
@@ -174,7 +174,7 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Creați  codul aici
     }
 }
 ```
@@ -182,9 +182,9 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program care procesează informații despre o cursă.
+Creați  un program care procesează informații despre o cursă.
 
-Pe **prima linie** vi  se va oferi o **lista de participanți separate** prin ", ".
+Pe **prima linie** vi  se va oferi o **lista de participanți separați** prin ", ".
 
 Pe **următoarele rânduri până când primiți** o linie "end of race" vi se vor oferi informații care vor fi câteva **caractere alfanumerice**.
 
@@ -196,11 +196,11 @@ De **exemplu**: "G!32e%o7r#32g$235@!2e".
 
 Aici avem **George who ran 29 km**.
 
-**Stocați informațiile** despre **persoana numai dacă lista de curse conține numele** persoanei respective.
+**Stocați informațiile** despre **persoană numai dacă lista de curse conține numele** persoanei respective.
 
 Dacă primiți **aceeași persoană de mai multe ori** numai **adăugați distanța la vechea sa distanță**.
 
-La final **imprimați primii 3 alergători ordonate în funcție de distanța descrescătoare** în formatul:
+La final **imprimați primii 3 alergători ordonați în funcție de distanța descrescătoare** în formatul:
 
 "1st place: \{first racer\}
 
@@ -338,7 +338,7 @@ end of race
 
 
 [slide hideTitle]
-# Problem: Bar Income
+# Problemă: Bar Income
 [code-task title="Bar Income" taskId="Java-Fundamentals-2-Regex-Bar-Income" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -348,7 +348,7 @@ import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Creați  codul aici
     }
 }
 ```
@@ -552,7 +552,7 @@ Total income: 20.00
 [/slide]
 
 [slide hideTitle]
-# Problem: Star Enigma
+# Problemă: Star Enigma
 [code-task title="Star Enigma" taskId="Java-Fundamentals-2-Regex-Star-Enigma" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -562,7 +562,7 @@ import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Creați  codul aici
     }
 }
 ```
@@ -573,7 +573,7 @@ Aveți sarcina să creați un program pentru a **decripta mesajele**.
 
 Veți primi **câteva mesaje, care sunt criptate** folosind enigmă legendara stelară.
 
-Trebui să **decriptați mesajele**, urmând aceste reguli:
+Ar trebui să **decriptați mesajele**, urmând aceste reguli:
 - Pentru a decripta în mod corespunzător un mesaj, **ar trebui să calculați toate literele** [s, t, a, r] - **insensibile la majuscule și să eliminați clacul** din valoarea ASCII curentă a fiecărui simbol al mesajului criptat
 
 **După decriptare**:
@@ -583,12 +583,12 @@ Trebui să **decriptați mesajele**, urmând aceste reguli:
 - **Tipul de atac** poate fi "A"(attack) sau "D"(destruction) și **trebuie să fie înconjurat de** "!" (semnul exclamarii)
 - **Numărul de soldați începe după** "->" și **ar trebui să fie un număr întreg**
 
-**Ordinea mesajului** trebui să fie:
+**Ordinea mesajului** trebuie să fie:
 **planet name -> planet population -> attack type -> soldier count**
 
 Fiecare parte poate fi **separată de celelalte prin orice caracter, cu excepția**: '\@', '-', '!', ':' și '>'.
 
-### Output
+### Ieșire
 **După decriptarea tuturor mesajelor**, ar trebui să **imprimați informațiile decriptate în următorul format**:
 -  Mai întâi imprimați planetele atacate, apoi planetele distruse
 - "Attacked planets: \{attackedPlanetsCount\}"
@@ -809,7 +809,7 @@ Destroyed planets: 1
 
 
 [slide hideTitle]
-# Problem: Nether Realms
+# Problemă: Nether Realms
 [code-task title="Nether Realms" taskId="Java-Fundamentals-2-Regex-Nether-Realm" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -819,7 +819,7 @@ import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Creați  codul aici
     }
 }
 ```
@@ -829,11 +829,11 @@ public class Main {
 
 Se apropie o luptă puternică.
 
-În furtunoasă Nether Realms, demonii luptă unul împotriva celuilalt pentru supremație într-un duel din care doar unul va supraviețui.
+În țara furtunoasă Nether Realms, demonii luptă unul împotriva celuilalt pentru supremație într-un duel din care doar unul va supraviețui.
 
 Sarcina dvs, totuși, nu este atât de captivantă.
 
-Sunteți desemnate să **conectați toți participanții** pe cartea demonilor intr-o luptă puternică la Nether Realms, care este **sortată in mod alfabetic**.
+Sunteți desemnați să **conectați toți participanții** pe cartea demonilor intr-o luptă puternică la Nether Realms, care este **sortată in mod alfabetic**.
 
 Numele unui demon conține **starea sănătații lui și daunele lui**.
 
@@ -843,7 +843,7 @@ Numele unui demon conține **starea sănătații lui și daunele lui**.
 
 Rețineți că ar trebui să luați în considerare semnele **plus** '+' și **minus** '-'  (e.g. +10 este 10 și -10 este -10). 
 
-Cu toate acestea, există **unele simboluri** ('\*' and '/') care **pot modifica în continuare daunele de bază înmulțindu-le sau împărțindu-le la 2** (de exemplu, în numele "m15\*/c-5.0", daunele de bază sunt 15 + (-5.0) = 10 și apoi **trebuie să le înmulțițim cu 2** (de ex. 10 \ * 2 = 20) și **apoi să o împărțiți cu 2** (de ex. 20/2 = 10)).  
+Cu toate acestea, există **unele simboluri** ('\*' and '/') care **pot modifica în continuare daunele de bază înmulțindu-le sau împărțindu-le la 2** (de exemplu, în numele "m15\*/c-5.0", daunele de bază sunt 15 + (-5.0) = 10 și apoi **trebuie să le înmulțițim cu 2** (de ex. 10 \ * 2 = 20) și ** apoi să o împărțiți cu 2 ** (de ex. 20/2 = 10)).  
 
 Deci, **înmulțire și împărțire se aplică numai după ce toate numerele sunt incluse în calcul** și în ordinea în care apar în numele. 
 
@@ -860,10 +860,10 @@ Sortați-le în **ordine alfabetică și imprimaț numele lor** conform **sănă
 Imprimați toți demonii sortate după numele lor în ordine crescătoare, fiecare pe o linie separată în format:
     - "\{demon name\} - \{health points\} health, \{damage points\} damage"
 
-### Constrângeri
+### Limitări
 - Numele unui demon va conține cel puțin un caracter
 - Numele unui demon nu poate conține spații goale ' ' sau virgule  ','
-- Un număr cu virgulă mobilă va avea întotdeauna cifre înainte și după separatorul său zecimal
+- Un număr în virgulă mobilă va avea întotdeauna cifre înainte și după separatorul său zecimal
 - Numărul in numele unui demon este considerat tot ceea ce este un număr întreg valid sau un număr cu virgulă mobilă (punctul '.' este folosit ca separator)
     - de exemplu, toate acestea sunt numere valide:'4', '+4', '-4', '3.5', '+3.5', '-3.5'
 
@@ -874,8 +874,8 @@ Imprimați toți demonii sortate după numele lor în ordine crescătoare, fieca
 
 ### Comentarii
 - M3ph-0.5s-0.5t0.0**:
-    - health = 'M' + 'p' + 'h' + 's' + 't' = 524 health
-    - damage = (3 + (-0.5) + (-0.5) + 0.0) \* 2 \* 2 = 8 damage
+    - Health = 'M' + 'p' + 'h' + 's' + 't' = 524 health
+    - Damage = (3 + (-0.5) + (-0.5) + 0.0) \* 2 \* 2 = 8 damage
 
 ### Exemplu
 |**Intrare**|**Ieșire** |
@@ -885,11 +885,10 @@ Imprimați toți demonii sortate după numele lor în ordine crescătoare, fieca
 
 ### Comments
 - Azazel: 
-    - health - 'A' + 'z' + 'a' + 'z' + 'e' + 'l' = 615 health
-    - damage - no digits = 0 damage
+    - Health - 'A' + 'z' + 'a' + 'z' + 'e' + 'l' = 615 health. Damage - no digits = 0 damage
 - M3ph1st0**:
-    - health - 'M' + 'p' + 'h' + 's' + 't' = 524 health
-    - damage - (3 + 1 + 0) \* 2 \* 2 = 16 damage
+    - Health - 'M' + 'p' + 'h' + 's' + 't' = 524 health
+    - Damage - (3 + 1 + 0) \* 2 \* 2 = 16 damage
 
 [/task-description]
 [code-io /]
@@ -1013,7 +1012,7 @@ k0.0rab0.02a0.5* - 513 health, 1.04 damage
 [/slide]
 
 [slide hideTitle]
-# Problem: Extract Emails
+# Problemă: Extract Emails
 [code-task title="Extract Emails" taskId="Java-Fundamentals-2-Regex-Extract-Emails" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1023,14 +1022,14 @@ import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Creați  codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program pentru a extrage toate adresele de e-mail dintr-un text dat.
+Creați  un program pentru a extrage toate adresele de e-mail dintr-un text dat.
 
 Textul apare la **singura linie de intrare**.
 

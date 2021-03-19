@@ -1,16 +1,18 @@
-# Cuantificatori și Gruparea
+# Cuantificatorii și Gruparea
 
 [slide hideTitle]
 # Cuantificatori
 
-**Cuantificatorii** specifică **de câte ori** instanțele ale unui **caracter**, **grup**, sau **clasa de caractere** trebuie să fie **prezente** în intrare pentru ca o potrivire să fie găsită.
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-9-10-Quantifiers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-| **Notation** | **Meaning** |
+**Cuantificatorii** permit utilizatorilor să specifice numărul de aparițți ale potrivirilor.
+
+| **Notație** | **Semnificație** |
 | --- | --- |
-|`*`|**Zero** or **more** occurrences|
-|`+`|**One** or **more** occurrences|
-|`?`|**Previous** element zero or one occurrences|
-|`{}`|**Exactly** the specified number of occurrences|
+|`*`|**Zero** sau **mai multe** apariții|
+|`+`|**Una** sau **mai mult** apariții|
+|`?`|Apare **zero** sau **o** dată, prescurtare pentru {0,1}|
+|`{}`|Numărul **exact** speciificat al aparițiilor|
 
 - `*` - se potrivește cu elementul precedent zero sau de mai multe ori
 
@@ -34,15 +36,17 @@
 
 # Gruparea
 
-Putem împărți regexul în **grupuri** și putem folosi aceste grupuri pentru a **extrage informații** despre **o parte a potrivirii**.
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-11-Grouping-Expressions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+Putem împărți expresiile regualte în **grupuri** și putem folosi aceste grupuri pentru a **extrage informații** despre **o parte a potrivirii**.
 
 - `subexpression` - captează subexpresia potrivită ca grup numerotat
 
 [image assetsSrc="regex-example(17).png" /]
 
-În exemplul de mai sus, există doar un singur grup - textul evidențiat verde.
+În exemplul de mai sus, există doar un singur grup - textul evidențiat în verde.
 
-- `?:subexpression` - definește un grup care nu captează
+- `?:subexpression` - definește un grup necapturat
 
 [image assetsSrc="regex-example(18).png" /]
 
@@ -57,18 +61,22 @@ Textul verde evidențiat este un grup care nu este capturat.
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Match All Words
+# Problemă cu soluție: Match All Words
 
-Scrieți o **expresie regulată** la [regex101](www.regex101.com) care **extrage toate cuvintele** secvențe de caractere **dintr-un text dat**.
+Creați o **expresie regulată** care **extrage toate cuvintele dintr-un text dat** , folosind următorul site web: 
+[www.regex101.com](www.regex101.com)
 
 [image assetsSrc="regex-example(25).png" /]
+
 
 [/slide]
 
 [slide hideTitle]
-# Problemă: Potrivere datelor
+# Problemă  cu soluție: Match Dates
 
-Scrieți o **expresie regulată** care **extrage datele din text**.
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-24-Problem-and-Soluttion-Match-Dates-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+Creați o **expresie regulată** care **extrage toate  datele valide  dintr-un text dat**.
 
 - Format de dată valid: `dd-MMM-yyyy`
 - Exemple: `12-Jun-1999`, `3-Nov-1999`
@@ -79,15 +87,17 @@ Scrieți o **expresie regulată** care **extrage datele din text**.
 
 
 [slide hideTitle]
-# Problemă: Validare E-mail
+# Problemă cu soluție: Email Validation
 
-Scrieți o expresie regulată care efectuează **validare simplă a e-mailului**
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-13-Probelm-and-solution-email-validation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+Creați o expresie regulată care efectuează **validare simplă a e-mailului**
 
 - Un e-mail constă din: **username**, **@**, **domain name**
 
 - **Usernames** sunt**alfanumerice**
 
-- **Domain names** constau din **două șiruri**, separate printr-o **perioadă**
+- **Domain names** constau din **două șiruri**, separate printr-un **punct**
 
 - **Domain names** pot conține numai **litere în limba engleză**
 

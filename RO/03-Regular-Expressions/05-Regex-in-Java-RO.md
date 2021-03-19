@@ -1,7 +1,8 @@
-# Regex in Java
+# Expresiile regulate în Java
 
 [slide hideTitle]
-# Clasele Regex Built-in
+#  Regex în Java
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-17-18-Regex-in-Java-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru expresii regulate avansate sunt utilizate clasele `java.util.regex.Pattern` și `java.util.regex.Matcher`.
 
@@ -33,14 +34,19 @@ Acest obiect de tip șablon vă permite să **creați un obiect de potrivire pen
 
 Acest obiect de potrivire vă permite apoi să executați **operații regex pe un șir**.
 
+
 [/slide]
 
 [slide hideTitle]
-# Metode de Potrivire
+# Verificarea pentru o singură potrivire
 
-The `find()` method scans the input sequence looking for the next subsequence that matches the pattern.
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-19-Checking-For-A-Single-Match-and-Demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Check the following example:
+metoda `find()` încearcă să găsească apariția șablonului regex înăuntrul unui șir dat.
+ **În cazul în care sunt găsite mai multe potriviri** în șir, atunci **primul apel** către `find()` va sări la ** prima apariție **.
+După aceea, fiecare apel ulterior către metoda `find ()` va merge la următoarea apariție potrivită, unul câte unul.
+
+Uitați-vă la urmpătorul exemplu:
 
 ```java live
 import java.util.regex.Pattern;
@@ -65,11 +71,14 @@ public class Main {
 
 [slide hideTitle]
 
-# Replacing with Regex
+# Înlocuirea cu Regex
 
-There are **two** ways to replace a pattern with **Regex**:
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-20-Replacing-with-Regex-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- `replaceAll()` - înlocuiește toate subsecvențele potrivite din intrare cu valoarea șirului dat și returnează rezultatul
+
+Există **două** moduri de a înlocui un șablon cu **Regex**:
+
+- `replaceAll()` - Înlocuiește toate șirurile care se potrivesc expresiei regulate date cu șirul de înlocuire și returnează rezultatul
 
 ```java live
 import java.util.regex.Matcher;
@@ -112,9 +121,9 @@ public class Main {
 
 [slide hideTitle]
 
-# Splitting with Regex
+# Împărțirea cu Regex
 
-- `split(String pattern)` - împartă textul după șablonul, returnează `String[]`
+- Metoda `split(String pattern)` - împarte textul după șablonul specificat și returnează `String[]`
 
 ```java live
 String text = "1   2 3      4";
@@ -128,7 +137,7 @@ System.out.println(String.join(", ",tokens));
 
 
 [slide hideTitle]
-# Problem with Solution: Match Full Name
+# Problemă cu soluție: Match Full Name
 
 [code-task title="Match Full Name" taskId="Java-Fundamentals-2-Regex-lab-Match-Full-Name" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -148,10 +157,12 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program Java pentru a se potrivi cu **numele complete** dintr-o listă de nume și **imprimați-le** pe consolă.
+Creați un program care ** se potrivește cu toate numele complete valide ** dintr-o listă dată de nume și ** le imprimă **.
+Intrarea va consta dintr-o singură linie și va conține câteva nume complete.
+Sarcina dvs. este să creați o expresie regulată pentru a verifica care sunt numele valabile.
 
-## Exemplu
-|**Intrare**|**Ieșire** |
+## Exemple
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | John Smith, John smith, john Smith, JOhn Smith, Alice White, John	Smith | John Smith Alice White |
 
@@ -252,7 +263,7 @@ Ivan Ivanov Ivan Ivanov
 
 
 [slide hideTitle]
-# Problem with Solution: Match Numbers
+# Problemă cu soluție: Match Numbers
 [code-task title="Match Numbers" taskId="Java-Fundamentals-2-Regex-lab-Match-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -270,12 +281,12 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți o expresie regulată pentru a se potrivi cu toate numerele dintr-un șir dat.
+Creați o expresie regulată pentru a se potrivi cu toate numerele dintr-un șir dat.
 
-După ce găsiți toate numerele, imprimați-le pe consolă, separate prin spațiu " ".
+După ce găsiți toate numerele valide, imprimați-le pe consolă, separate prin spațiu " ".
 
 ## Exemple
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 1 -1 1s 123 s-s -123 \_55_ _f 123.456 -123.456 s-1.1 s2 -1- zs-2 s-3.5 | 1 -1 123 -123 123.456 -123.456 |
 

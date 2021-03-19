@@ -2,6 +2,7 @@
 
 [slide hideTitle]
 # Ce sunt Expresiile Regulate?
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-3-4-What-are-regular-expressions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Abrevierea** pentru **expresia regulată** este **regex**.
 
@@ -15,7 +16,7 @@ O **expresie regulată** definește un  **șablon de căutare** pentru **șiruri
 
 - `[A-Z][a-z]*` - se potrivește cu majuscule + litere mici
  
-Puteți **juca** cu **regex live** la:
+Puteți **practica** cu **regex live** la:
 
 - [Regexr](regexr.com)
 - [Regex101](regex101.com)
@@ -25,7 +26,9 @@ Puteți **juca** cu **regex live** la:
 
 [slide hideTitle]
 
-# Regular Expression Patterns - Example
+# Șabloane pentru expresiile regulate - Exemplu
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-6-Regular-expressions-pattern-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 [/slide]
@@ -33,24 +36,27 @@ Puteți **juca** cu **regex live** la:
 
 [slide hideTitle]
 
-# Clasele de Caractere
+# Clasele de Caractere: Intervale
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-7-Character-classes-ranges-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 În **contextul expresiilor regulate**, o clasă de caractere este un **set de caractere încadrate între paranteze drepte**.
   
 Specifică **caracterele** care **se vor potrivi cu succes** unui **singur caracter** dintr-un anumit **șir de intrare**.
 
-- Clasă simplă - un set de caractere unul lângă altul între paranteze drepte:
+- **Clasă simplă** - un set de caractere unul lângă altul între paranteze drepte:
 
 [image assetsSrc="regex-example(2).png" /]
 
 În exemplul de mai sus, clasa `[abc]` se potrivește cu orice caracter fie **a** **b** sau **c**.
 
 - Negare - metacaracterul `^` la începutul clasei de caractere se potrivește cu toate caracterele, cu excepția celor enumerate
-  - `[^abc]` - matches any character that is **not** **a**,**b** or **c**
+  - `[^abc]` - se potrivește cu orice caracter care **nu este** **a**,**b** sau **c**
 
 [image assetsSrc="regex-example(3).png" /]
 
-- Gamă - se introduce un "-" între primul și ultimul caracter pentru a seta intervalul
+- Interval - se introduce un "-" între primul și ultimul caracter pentru a seta intervalul
   - `[0-9]` - caracterul **interval** se potrivește cu orice cifră de la 0 la 9:
 
 [image assetsSrc="regex-example(4).png" /]
@@ -65,8 +71,8 @@ Specifică **caracterele** care **se vor potrivi cu succes** unui **singur carac
 | --- | --- |
 |`\w`|se potrivește cu orice **cuvânt** cu caractere de la `a` la `Z`, cifre  de la `0-9`, și caracterul de subliniere `_`|
 |`\W`|se potrivește cu un caracter nealfanumeric (opusul lui \w)|
-|`\s`|se potrivește cu un caracter de **whitespace**|
-|`\S`|se potrivește cu orice în afară de whitespace(opusul lui \s)|
+|`\s`|se potrivește cu un caracter de **spațiu alb**|
+|`\S`|se potrivește cu orice în afară de spațiul alb (opusul lui \s)|
 |`\d`|se potrivește cu o **cifră** (0-9)|
 |`\D`|se potrivește cu orice în afară de **cifră** (opusul lui \d)|
 
@@ -77,10 +83,10 @@ Specifică **caracterele** care **se vor potrivi cu succes** unui **singur carac
 - `\W` - se potrivește cu un caracter nealfanumeric (opusul lui \w)
 [image assetsSrc="regex-example(6).png" /]
 
-- `\s` - se potrivește cu un caracter de **whitespace**
+- `\s` - se potrivește cu un caracter de **spațiu alb**
 [image assetsSrc="regex-example(7).png" /]
 
-- `\S` - se potrivește cu orice în afară de whitespace(opusul lui \s)
+- `\S` - se potrivește cu orice în afară de spațiul alb (opusul lui \s)
 [image assetsSrc="regex-example(8).png" /]
 
 - `\d` - se potrivește cu o **cifră** \[0-9\]
@@ -96,7 +102,7 @@ Specifică **caracterele** care **se vor potrivi cu succes** unui **singur carac
 
 # Metacaractere
 
-## Caracterul Escapes
+## Caractere de evadare 
 
 - `\` -  evadează caractere speciale pentru a suprima sensul lor special
 
