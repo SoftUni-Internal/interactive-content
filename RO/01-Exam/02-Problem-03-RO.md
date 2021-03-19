@@ -1,3 +1,4 @@
+# Problema 2: Heroes of Code and Logic VII
 [slide hideTitle]
 # Heroes of Code and Logic VII
 [code-task title="Heroes of Code and Logic VII" taskId="Java-Fund-Part-Two-Exam-Heroes-Of-Code-And-Logic" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -7,99 +8,99 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
+## Descriere
 
-On the first line of the standard input, you will receive an integer "**n**" - the number of heroes that you can choose for your party.
+Pe prima linie a intrării standard, veți primi un număr întreg "**n**" - numărul de eroi pe care îl puteți alege pentru jocul dvs.
 
-On the next "**n**" lines, the heroes will follow with their **hit points** and **mana points** separated by empty space in the following format:
+Pe următoarele rânduri "**n**", eroii vor urma cu **punctele lor de lovire** și **punctele de mana** separate prin spațiu gol în următorul format:
 
 "\{**hero name**\} \{**HP**\} \{**MP**\}"
 
-**HP** stands for hit points and **MP** for mana points. A hero can have a **maximum** of **100 HP** and **200 MP**.
+**HP** reprezintă punctele de lovire și **MP** pentru punctele de mană. Un erou poate avea un **maxim** de **100 CP** și **200 MP**.
 
-After you have successfully picked your heroes, you can start playing the game.
+După ce ți-ai ales cu succes eroii, poți începe jocul.
 
-You will be receiving different commands, each on a new line, separated by " - " (space dash space), until the "**End**" command is given.
+Veți primi comenzi diferite, fiecare pe o nouă linie, separate prin " - " (spațiu liniuță), până când este dată comanda "**End**".
 
-There are several actions that can be performed by the heroes:
+Există mai multe acțiuni care pot fi efectuate de eroi:
 
 - "**CastSpell -** \{**hero name**\} - \{**MP needed**\} – \{**spell name**\}":
 
-If the hero has the required MP, they cast the spell which reduces their MP. Print the following message: 
+Dacă eroul are MP necesară, aruncă vraja care reduce MP. Imprimați următorul mesaj:
 
 "\{**hero name**\} **has successfully cast** \{**spell name**\} **and now has** \{**mana points left**\} **MP!**"
 
-If the hero is unable to cast the spell, print:
+Dacă eroul nu este capabil să arunce vraja, tipăriți:
 
 "\{**hero name**\} **does not have enough MP to cast** \{**spell name**\}!"
 
 - "**TakeDamage -** \{**hero name**\} - \{**damage**\} \- \{**attacker**\}":
 
-Reduce the hero HP by the given damage amount.
+Reduceți eroul HP cu suma de daune dată.
 
-If the hero is still alive (their HP is greater than 0) print:
+Dacă eroul este încă în viață (HP-ul lor este mai mare de 0) tipăriți:
 
 "\{**hero name**\} **was hit for** \{**damage**\} **HP by** \{**attacker**\} **and now has** \{**current HP**\} **HP left!**"
 
-If the hero has died, remove them from your party and print:
+Dacă eroul a murit, scoate-i din joc și tipărește:
 
 "\{**hero name**\} **has been killed by** \{**attacker**\}!"
 
 - "**Recharge -** \{**hero name**\} - \{**amount**\}":
 
-The hero increases their MP.
+Eroul își mărește MP.
 
-If a command is given that would bring the MP of the hero above "**200**", MP is increased so that it reaches the maximum.
+Dacă se dă o comandă care ar aduce MP eroului peste "**200**", MP este mărit astfel încât să atingă maximul.
 
-Print the following message:
+Imprimați următorul mesaj:
 
 "\{**hero name**\} **recharged for** \{**amount recovered**\} **MP!**"
 
 - "**Heal -** \{**hero name**\} - \{**amount**\}":
 
-The hero increases his HP.
+Eroul își mărește HP.
 
-If a command is given that would bring the HP of the hero above "**100**", HP is increased so that it reaches the maximum.
+Dacă se dă o comandă care ar aduce HP eroului peste "**100**", HP este crescut astfel încât să atingă maximul.
 
-Print the following message:
+Imprimați următorul mesaj:
 
 - "\{**hero name**\} **healed for** \{**amount recovered**\} **HP!**"
 
-### Input
+### Intrare
 
-- On the first line of the standard input, you will receive an integer "**n**"
+- Pe prima linie a intrării standard, veți primi un număr întreg "**n**"
 
-- On the next `n` lines, the heroes themselves will follow with their **hit points** and **mana points** separated by empty space in the following format
+- Pe următoarele linii `n`, eroii înșiși vor urma cu **punctele lor de lovitură** și **punctele de mana** separate prin spațiu gol în formatul următor
 
-- You will be receiving different **commands**, each on a new line, separated by " - " (space dash space ), until the "**End**" command is given
+- Veți primi diferite **comenzi**, fiecare pe o nouă linie, separate prin " - " (spațiu liniuță), până când este dată comanda "**End**"
 
-### Output
+### Ieșire
 
-- Print all members of your party who are **still alive**, sorted by their **HP in descending order**, then by their **name in ascending order**, in the following format (their HP/MP need to be indented 2 spaces):
+- Imprimați toți membrii grupului dvs. care sunt încă **în viață**, sortați după **HP-ul lor în ordine descrescătoare**, apoi după **numele lor în ordine crescătoare**, în formatul următor (HP / MP necesită să fie indentat 2 spații):
 
 "\{**hero name**\}
 **HP:** \{**current HP**\}
 **MP:** \{**current MP**\}
 ..."
 
-### Constraints
+### Constrângeri
 
-- The starting HP\/MP of the heroes will be valid, 32-bit integers, will never be negative, or exceed the respective limits
+- HP \/ MP de pornire al eroilor va fi valid, numere întregi pe 32 de biți, nu va fi niciodată negativ sau va depăși limitele respective
 
-- The HP\/MP amounts in the commands will never be negative
+- Sumele HP \/ MP din comenzi nu vor fi niciodată negative
 
-- The hero names in the commands will always be valid members of your party
+- Numele eroilor din comenzi vor fi întotdeauna membri valizi ai grupului tău
 
-No need to check that explicitly
+Nu este nevoie să verificați în mod explicit acest lucru
 
-## Example One
-| **Input** | **Output** |
+## Primul Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 4 | SirMullich healed for 30 HP! |
 | Adela 90 150 | Adela recharged for 50 MP! |
@@ -112,25 +113,24 @@ No need to check that explicitly
 | TakeDamage - Tyris - 99 - Fireball | Adela |
 | TakeDamage - Ivor - 3 - Mosquito | HP: 90 |
 | End | MP: 200 |
-|  |  |
 
-### Comments
+### Comentarii
 
-"**Heal**" - SirMullich healed for 30 HP due to the HP max limit.
+"**Heal**" - SirMullich s-a vindecat cu 30 CP din cauza limitei maxime HP.
 
-"**Recharge**" - Adela recharged for 50 MP due to the MP max limit.
+"**Recharge**" - Adela reîncărcată pentru 50 MP din cauza limitei maxime de MP.
 
-"**CastSpell**" - Tyris does not have enough MP to cast the spell.
+"**CastSpell**" - Tyris nu are suficient MP pentru a arăta vraja.
 
-"**TakeDamage**" - Tyris's HP is reduced by 99, thus becoming -5, which means that he is dead.
+"**TakeDamage**" - HP-ul lui Tyris este redus cu 99, devenind astfel -5, ceea ce înseamnă că este mort.
 
-"**TakeDamage**" - Ivor's HP is now -2, so he is dead too.
+"**TakeDamage**" - HP-ul lui Ivor este acum -2, deci și el este mort.
 
-After the "**End**" command we print the remaining living heroes, sorted by their HP in decending order.
+După comanda "**End**", tipărim eroii vii rămași, sortați în funcție de HP în ordine descendentă.
 
 
-## Example Two
-| **Input** | **Output** |
+## Al Doilea Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 2 | Solmyr healed for 10 HP! |
 | Solmyr 85 120 | Solmyr recharged for 50 MP! |
@@ -142,7 +142,7 @@ After the "**End**" command we print the remaining living heroes, sorted by thei
 | End | Kyrre |
 |  | HP: 33 |
 |  | MP: 35 |
-|  |  |
+
 
 [/task-description]
 [code-io /]
