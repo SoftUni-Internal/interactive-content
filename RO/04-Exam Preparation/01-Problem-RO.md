@@ -1,9 +1,9 @@
-# Problem 2: Array Modifier
+# Problema 2: Array Modifier
 [slide hideTitle]
 
 # Array Modifier
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/05.Java-Fundamentals-Exam-Preparation/RO/Java-Fund-Exam-Prep-1-Array-Modyfier-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/05.Java-Fundamentals-Exam-Preparation/EN/Java-Fund-Exam-Prep-1-Array-Modyfier-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Array Modifier" taskId="java-fund-18-Exam-Preparation-problem-2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -12,35 +12,37 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-# Description
+# Descriere
 
-The first line of input will consist of an **integer array**. 
+Prima linie de intrare va consta dintr-o **matrice întreagă**.
 
-Create a program to modify the array.
+Creați un program care primește **comenzi** care **modifică matricea**.
 
-The possible alterations are: "**swap**", "**multiply**" or "**decrease**".
+**Comenzile** posibile sunt: ​​"**swap**", "**multiply**" sau "**decrease**".
 
-- "**swap** \{**index1**\} \{**index2**\}" - take the two elements and swap their places
+- "**swap** \{**index1**\} \{**index2**\}" - luați cele două elemente și schimbați-le locurile
 
-- "**multiply** \{**index1**\} \{**index2**\}" - take the number from the first specified index and multiply it by the number at the second one
+- "**multiply** \{**index1** \} \{**index2** \}" - luați numărul din primul index specificat și multiplicați-l cu numărul din al doilea
 
-Save the product of the two at the index, where the first number was.
+Salvați produsul celor doi la indexil unde era primul număr.
 
-- "**decrease**" - decreases all elements in the array by 1
+- "**decrease**" - scade toate elementele din matrice cu 1
 
-## Input 
+## Intrare
 
-On the first input line you will be given the initial array values, separated by a single space.
+Pe prima linie de intrare vi se vor da valorile matricei inițiale, separate printr-un singur spațiu.
 
-On the next lines you will be getting one of the commands. The program should stop functioning after receiving the "**end**" command.
+În rândurile următoare veți primi **comenzi**. 
 
-The commands could be:
+Programul ar trebui să înceteze căutarea comenzilor după ce a primit comanda "**end**".
+
+Comenzile ar putea fi:
 
 * "**swap** \{**index1**\} \{**index2**\}"
 
@@ -48,23 +50,23 @@ The commands could be:
 
 * "**decrease**"
 
-## Output 
+## Ieșire
 
-**The output** should be printed to the console and should consist of the **elements of the modified array** - **separated by** ", " (a comma and a single space). 
+**Ieșirea** ar trebui să fie tipărită pe consolă și ar trebui să fie formată din **elementele matricei modificate separate prin** ", " (o virgulă și un spațiu unic).
 
-## Constraints 
+## Constrângeri
 
 
-* The commands are limited to: "**swap**", "**multiply**", "**decrease**" and "**end**"
+* Comenzile sunt limitate la: "**swap**", "**multiply**", "**decrease**" și "**end**"
 
-* All elements of the array will be integers in range [-231...231]
+* Toate elementele matricei vor fi întregi
 
-* The number of elements in the array will be in range [2...100]
+* Numărul de elemente din matrice va fi în intervalul \[2...100\]
 
-* Indices will always be inside the range of the array
+* Indicii vor fi întotdeauna în raza gamei
 
-## Example One
-| **Input** | **Output** |
+## Primul Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |23 -2 321 87 42 90 -123 | 86, 7382, 2369942, -124, 41, 89, -3|
 |swap 1 3 ||
@@ -75,36 +77,35 @@ The commands could be:
 |decrease ||
 |end ||
 
-## Comments
+## Comentarii
 
-The initial state of the array is: "23 -2 321 87 42 90 -123"
+Starea inițială a matricei este: "23 -2 321 87 42 90 -123"
 
-* "**swap 1(-2)" and "3(87)**"
+* "**swap 1 (-2)" și "3 (87)**"
 
-The state of the array after the first command: "23 87 321 -2 42 90 -123"
+Starea matricei după prima comandă: "23 87 321 -2 42 90 -123"
 
-* "**swap 3(-2)" and "6(-123)**"
+* "**swap 3 (-2)" și "6 (-123)**"
 
-The state of the array after the second command: "23 87 321 -123 42 90 -2"
+Starea matricei după a doua comandă: "23 87 321 -123 42 90 -2"
 
-* "**swap 1(87)" and "0(23)**"
+* "**swap 1 (87)" și "0 (23)**"
 
-The state of the array after the third command: "87 23 321 -123 42 90 -2"
+Starea tabloului după a treia comandă: "87 23 321 -123 42 90 -2"
 
-* "**multiply 1(23) 2(321) = 7383**"
+* "**multiply 1 (23) 2 (321) = 7383**"
 
-The state of the array after the fourth command: "87 7383 321 -123 42 290 -2"
+Starea matricei după a patra comandă: "87 7383 321 -123 42 290 -2"
 
-* "**multiply 2(321) 1(7383) = 2369943**"
+* "**multiply 2 (321) 1 (7383) = 2369943**"
 
-The state of the after the fifth command: "87 7383 2369943 -123 42 90 -2"
+Starea comenzii după a cincea: "87 7383 2369943 -123 42 90 -2"
 
 * "**decrease - all - 1**"
 
-The state of the after the sixth command: "86 7383 2369942 -124 41 89 -3"
-
-## Example Two
-| **Input** | **Output** |
+Starea comenzii după a șasea: "86 7383 2369942 -124 41 89 -3"
+## Al Doilea Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |1 2 3 4 |1, 11, 3, 0 |
 |swap 0 1 ||

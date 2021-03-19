@@ -1,8 +1,8 @@
-# Problem 3: Numbers
+# Problema 3: Numbers
 [slide hideTitle]
 # Numbers
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/05.Java-Fundamentals-Exam-Preparation/RO/Java-Fund-Exam-Prep-1-Numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/05.Java-Fundamentals-Exam-Preparation/EN/Java-Fund-Exam-Prep-1-Numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Numbers" taskId="java-fund-18-Exam-Preparation-problem-3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -11,85 +11,85 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-# Description
+# Descriere
 
-Create a program that **processes a sequence of integers separated by a space.** 
+Creați un program care **procesează o secvență de numere întregi separate printr-un spațiu.**
 
-Find and print the **top 5** numbers that are **greater than the average** value of the sequence, sorted in **descending order.** 
+Găsiți și tipăriți **primele 5** numere care sunt **mai mari decât valoarea medie** a secvenței, sortate în **ordine descrescătoare.**
 
-Print "**No**" if there are no numbers that are greater than the average value. 
+Imprimați "**No**" dacă nu există numere mai mari decât valoarea medie.
 
-## Input 
+## Intrare
 
-A sequence of integers separated by a space from the console. 
+O succesiune de numere întregi separate printr-un spațiu din consolă.
 
-## Output 
+## Ieșire
 
-Print the numbers on a single line separated by a space. 
+Imprimați numerele pe o singură linie separată de un spațiu.
 
-## Constraints 
+## Constrângeri
 
-All input numbers are integers 
+Toate numerele de intrare sunt întregi
 
-The number of elements will not exceed 10000. 
+Numărul de elemente nu va depăși 10000.
 
-## Example One
-| **Input** | **Output** |
+## Primul Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 10 20 30 40 50  | 50 40  |
 
 
-## Comment
-- Average value = 30
+## Cometariu
+- Valoare medie = 30
 
-- The numbers which are greater than 30 are: \{40, 50\}
+- Numerele mai mari de 30 sunt: ​​\{40, 50\}
 
-- Sorted in descending order: \{50, 40\} 
+- Sortate în ordine descrescătoare: \{50, 40\}
 
-- Since there are only two numbers that meet the citeria all of them should be included in the final result
+- Deoarece există doar două numere care îndeplinesc criteriile, toate acestea ar trebui incluse în rezultatul final
 
-## Example Two
-| **Input** | **Output** |
+## Al Eoilea Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 5 2 3 4 -10 30 40 50 20 50 60 60 51  | 60 60 51 50 50  |
 
-## Comment
+## Cometariu
 
-- Average value = 28.08
+- Valoare medie = 28.08
 
-- Numbers greater than 28.08 are: \[Text Wrapping Break\] \{30, 40, 50, 50, 60, 60, 51\}
+- Numerele mai mari decât 28.08 sunt: ​​\[Text Wrapping Break \] \{30, 40, 50, 50, 60, 60, 51\}
 
-- The greatest 5 numbers in descending order are: \{60, 60, 51, 50, 50\}
+- Cele mai mari 5 numere în ordine descrescătoare sunt: ​​\{60, 60, 51, 50, 50\}
 
-## Example Three
-| **Input** | **Output** |
+## Al Treilea Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 1  | No  |
 
-## Comment
+## Cometariu
 
-- Average value = 1
+- Valoare medie = 1
 
-- There are no numbers, greater than 1
+- Nu există numere mai mari de 1
 
-## Example Four
-| **Input** | **Output** |
+## Al Patrulea Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | -1 -2 -3 -4 -5 -6  | -1 -2 -3   |
 
-## Comment
+## Cometariu
 
-- Average value = -3.5 
+- Valoare medie = -3,5
 
-- Numbers greater than -3.5 are: \{-1, -2, -3\}
+- Numerele mai mari de -3,5 sunt: ​​\{-1, -2, -3\}
 
-- The top 5 numbers among them, in descending order are: \{-1, -2, -3\}
+- Primele 5 numere dintre ele, în ordine descrescătoare sunt: ​​\{-1, -2, -3\}
 
 [/task-description]
 [code-io /]
