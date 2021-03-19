@@ -5,19 +5,19 @@
 
 ## In this lesson you learned: 
 
-- What is coding
+- Coding. Definition
 
 - Writing basic code
 
 - A program is a **sequence of computer commands**
 
-- How to **install** run **IntelliJ**
+- How to **install** and run **IntelliJ**
 
-- How to create a project, a file, and simple applications in IntelliJ
+- How to create a project, a file, and simple applications using IntelliJ
 
 ## In the next lesson you will learn:
 
-- What is Data Types
+- What are Data Types
 
 - What are Statements
 
