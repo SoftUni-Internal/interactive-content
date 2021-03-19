@@ -14,7 +14,7 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 The Smiths are planning their family trip. 
 
 Your task is to create a program that calculates whether their budget will be sufficient, knowing how many nights they have planned to stay, what the price per night is and what percentage of their budget must be spent on additional costs.

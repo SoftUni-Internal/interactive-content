@@ -1,4 +1,5 @@
-﻿[slide hideTitle]
+﻿# Problem: Family Trip
+[slide hideTitle]
 # Family Trip
 [code-task title="Family Trip" taskId="pb-java-exam-family-trip" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -41,7 +42,7 @@ Suma trebuie formatată la a doua cifră după punctul zecimal.
 ## Exemple
 | **Input** | **Output** |
 | --- | --- |
-| 800.50 | The Smiths will be left with 24.49 dollars after vacation. |
+| 800.50 | The Smiths will be left with 24.49 dollars after the vacation. |
 | 8 | |
 | 100 | |
 | 2 | |
@@ -63,7 +64,7 @@ Suma trebuie formatată la a doua cifră după punctul zecimal.
 2
 [/input]
 [output]
-The Smiths will be left with 24.49 dollars after vacation.
+The Smiths will be left with 24.49 dollars after the vacation.
 [/output]
 [/test]
 [test]
@@ -85,7 +86,7 @@ The Smiths will be left with 24.49 dollars after vacation.
 18
 [/input]
 [output]
-The Smiths will be left with 265.40 dollars after vacation.
+The Smiths will be left with 265.40 dollars after the vacation.
 [/output]
 [/test]
 [test]
@@ -107,7 +108,7 @@ The Smiths will be left with 265.40 dollars after vacation.
 30
 [/input]
 [output]
-The Smiths will be left with 310.70 dollars after vacation.
+The Smiths will be left with 310.70 dollars after the vacation.
 [/output]
 [/test]
 [test]
@@ -129,7 +130,7 @@ The Smiths will be left with 310.70 dollars after vacation.
 60
 [/input]
 [output]
-The Smiths will be left with 225.00 dollars after vacation.
+The Smiths will be left with 225.00 dollars after the vacation.
 [/output]
 [/test]
 [test]
@@ -151,7 +152,7 @@ The Smiths will be left with 225.00 dollars after vacation.
 10
 [/input]
 [output]
-The Smiths will be left with 50.00 dollars after vacation.
+The Smiths will be left with 50.00 dollars after the vacation.
 [/output]
 [/test]
 [test]
@@ -162,7 +163,7 @@ The Smiths will be left with 50.00 dollars after vacation.
 0
 [/input]
 [output]
-The Smiths will be left with 0.00 dollars after vacation.
+The Smiths will be left with 0.00 dollars after the vacation.
 [/output]
 [/test]
 [test]
@@ -173,7 +174,7 @@ The Smiths will be left with 0.00 dollars after vacation.
 10
 [/input]
 [output]
-The Smiths will be left with 0.00 dollars after vacation.
+The Smiths will be left with 0.00 dollars after the vacation.
 [/output]
 [/test]
 [/tests]
