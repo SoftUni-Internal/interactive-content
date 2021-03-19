@@ -139,7 +139,9 @@ StringBuilder sb = new StringBuilder("Hello Peter, how are you?");
 System.out.println(sb.length()); // 25
 ```
 
-- `setLength(int newLength)` - Setează **lungimea șirului**. Dacă **nouaLungime** este **mai puțin** decât **lungimea()**, **ultimele caractere** din șir sunt **trunchiate**
+- `setLength(int newLength)` - Setează **lungimea șirului**
+
+Dacă **nouaLungime** este **mai puțin** decât **lungimea()**, **ultimele caractere** din șir sunt **trunchiate**
 
 ```java live
 StringBuilder sb = new StringBuilder("Hello Peter, how are you?");

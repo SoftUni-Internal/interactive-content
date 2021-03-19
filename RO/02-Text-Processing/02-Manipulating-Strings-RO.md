@@ -31,7 +31,7 @@ System.out.println(result); // "Hello, SoftUni!"
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Repeat strings
+# Problemă cu Soluție: Repeat strings
 
 [code-task title="Repeat strings" taskId="Java-Fundamentals-2-String-Processing-lab-Repeat-Strings" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -192,7 +192,7 @@ System.out.println(fruits.lastIndexOf("orange")); // -1
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Substring
+# Problemă cu Soluție: Substring
 
 [code-task title="Substring" taskId="Java-Fundamentals-2-String-Processing-lab-Substring" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -201,7 +201,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+       // Scrieți codul dvs. aici
     }
 }
 ```
@@ -345,7 +345,7 @@ System.out.println(replacedText);
 
 
 [slide hideTitle]
-# Problem with Solution: Text Filter
+# Problemă cu Soluție: Text Filter
 
 [code-task title="Text Filter" taskId="Java-Fundamentals-2-String-Processing-lab-Text-Filter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
