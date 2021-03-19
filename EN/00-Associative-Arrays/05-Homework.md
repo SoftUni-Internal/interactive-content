@@ -427,7 +427,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Your task is to obtain a legendary item, which requires collecting materials.
+Your task is to obtain a legendary item. For that purpose, you have to collect some materials.
 
 The **possible items** are:
 
@@ -437,36 +437,36 @@ The **possible items** are:
 
 - **Dragonwrath** - requires 250 **Motes**
 
-**Shards, Fragments and Motes** are the **important materials**, everything else is junk. 
+**Shards, Fragments, and Motes** are the **important materials**, everything else is not needed. 
 
-Keep track of the important materials - the **first** that **gets the 250 of their desired material** wins the race. 
+Keep track of the important materials - if the quantity of one of the items gets **250 or more**, you should stop collecting materials. 
 
-At that point, **print** the **corresponding legendary item**. 
+Print out: "\{**Legendary item**\} **obtained!**"
 
-Then, **print** the **remaining shards, fragments, motes**, **ordered by quantity in descending** order then **by name in ascending** order, **each** on a **new line**. 
+Then, print the **remaining shards, fragments, and motes**, **ordered by their quantity in descending** order, and then **by their name in ascending** order, **each** on a **new line**. 
 
 Finally, **print** the collected **junk items**, in **alphabetical** order.
 
 
 ### Input
 
-Each line of input is in the following format:
+Each line of input will be in the following format:
 
 "\{**quantity**\} \{**material**\} \{**quantity**\} \{**material**\} … \{**quantity**\} \{**material**\}"
 
 ### Output
 
-- On the **first line**, print the obtained item in format "\{**Legendary item**\} **obtained!**"
+- On the **first line**, print out the obtained item in the following format: "\{**Legendary item**\} **obtained!**"
 
-- On the **next three lines**, print the **remaining key materials** in **descending** order by **quantity**
+- On the **next three lines**, print out the **remaining key materials** ordered by their quantity in **descending** order
 
-    - if **two key materials** have the **same quantity**, print them in **alphabetical** order
+    - if **two key materials** have the **same quantity**, print them out in **alphabetical** order
 
-- On the **final several lines**, print the **junk items in alphabetical** order
+- On the **final several lines**, print out the collected junk items in **alphabetical** order
 
-    - all materials are printed in the following format: "\{**material**\}: \{**quantity**\}"
+    - all materials should be printed in the following format: "\{**material**\}: \{**quantity**\}"
 
-    - all values should be **lowercase**, except the **first** letter of the obtained legendary
+    - all values should be **lowercase**, except the **first** letter of the obtained legendary item
 
 
 ### Examples
