@@ -131,6 +131,8 @@ This hierarchical structure is convenient with more serious projects (let us say
 
 For **smaller projects** this structure may even **complicate the process**, rather than help but we should use it nevertheless, as it will help us when reaching to the more advanced levels.
 
+[/slide]
+
 [slide hideTitle]
 # Development Environments: Desktop and Online
 
