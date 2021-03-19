@@ -49,8 +49,11 @@ Suma trebuie formatată la a doua cifră după punctul zecimal.
 
 ### Comentarii
 - 8 nopți> 7, prin urmare, există o reducere de 5% la prețul pe noapte, care este de 100 USD
+
 - 5% din 100 este 5. -> 100 - 5-> 95 $ pe noapte după reducere, 8 nopți 95 $ -> 760 $
+
 - 2% din buget este asigurat pentru costuri suplimentare. 2% de la 800,50 este 16,01 $
+
 - 760 + 16,01 = 776,01 <= 800,50, prin urmare banii sunt suficienți și după călătorie se întorc cu 800,50 - 776,01 = 24,49 $
 
 [/task-description]
