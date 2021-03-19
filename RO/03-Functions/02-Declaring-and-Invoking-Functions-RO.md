@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Declararea Unei Funcții
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-6-7-declaring-a-function-NEW2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-6-7-declaring-a-function-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 O funcție este definită, utilizând cuvântul cheie `funcție` urmat de **numele funcției** și un set de **paranteze** pentru a păstra parametrii sau valorile care trebuie primite de funcție.
 
