@@ -1,4 +1,4 @@
-# Teme pentru acasă
+# Teme Pentru Acasă
 
 [slide hideTitle]
 # Problemă: Guess the Password
@@ -18,9 +18,9 @@ public class Program {
 ## Descriere
 Scrieți un program pentru a verifica o parolă:
 
-  * Citește un șir: parola **guess**
-  * Imprimă **"Welcome"** dacă presupunerea parolei este **"s3cr3t!"**
-  * Imprimă **"Wrong password!"** în toate celelalte cazuri
+  * Citiți un șir: parola
+  * Imprimați **"Welcome"** dacă presupunerea parolei este **"s3cr3t!"**
+  * Imprimați **"Wrong password!"** în toate celelalte cazuri
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -90,9 +90,9 @@ public class Program {
 ## Descriere
 Scrieți un program care să verifice dacă apa dintr-un vas fierbe:
 
-  * Citește un număr în virgulă mobilă: **temperatura** apei (în °C)
-  * Imprimă **"The water is boiling"** dacă numărul este **> 100**
-  * Imprimă **"The water is not hot enough"** în toate celelalte cazuri
+  * Citiți un număr în virgulă mobilă: **temperatura** apei (în °C)
+  * Imprimați **"The water is boiling"** dacă numărul este **> 100**
+  * Imprimați **"The water is not hot enough"** în toate celelalte cazuri
 
   
 ## Exemplu
@@ -160,9 +160,9 @@ public class Program {
 ## Descriere
 Scrieți un program pentru a verifica dacă un obiect se mișcă rapid sau încet în funcție de viteza sa:
 
-  * Citește **speed** (un număr în virgulă mobilă)
-  * Imprimă **"Slow"** dacă viteza este **<= 30**
-  * Imprimă **"Fast"** dacă viteza este **> 30**
+  * Citiți **speed** (un număr în virgulă mobilă)
+  * Imprimați **"Slow"** dacă viteza este **<= 30**
+  * Imprimați **"Fast"** dacă viteza este **> 30**
 
 
 ## Exemplu
@@ -232,12 +232,12 @@ public class Program {
 [task-description]
 ## Descriere
 Scrieți un program pentru a calcula aria diferitelor figuri:
-  * Citește un șir: figura **type**
+  * Citește un șir: **type**
   * Verifică dacă figura introdusă este **square**, **rectangle** sau **circle**
   * Citește un număr pentru pătrat și cerc sau două numere pentru dreptunghi
     * numerele vor fi în virgulă mobilă
   * Imprimă aria calculată **formatată** la a doua cifră după punctul zecimal
-  * Pentru figura necunoscută imprimă **"Unknown figure"**
+  * Pentru figuri necunoscute imprimă **"Unknown figure"**
 
 ## Exemple
 
@@ -363,12 +363,12 @@ public class Program {
 ## Descriere
 Scrieți un program pentru a **calcula** prețul biletului:
 
-  * Citește tipul biletului: fie **student**, fie **regular**
-  * Imprimă **prețul** în următorul format "$\{**price**\}":
+  * Citiți tipul biletului: fie **student**, fie **regular**
+  * Imprimați **prețul** în următorul format "$\{**price**\}":
     * prețul trebuie să fie **formatat** la a doua cifră după punctul zecimal
   * Prețul biletului de tip student: **1.00**
   * Prețul biletului de tip regular: **1.60**
-  * Pentru un tip nevalid imprimă **"Invalid ticket type!"**
+  * Pentru un tip nevalid imprimați **"Invalid ticket type!"**
   
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -432,7 +432,7 @@ Invalid ticket type!
 [/slide]
 
 [slide hideTitle]
-# Problemă cu Soluție: Coffee Shop
+# Problemă: Coffee Shop
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-46-problem-and-solution-coffee-shop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -453,9 +453,9 @@ public class Program {
 ## Descriere
 Scrieți un program pentru a calcula prețul unei băuturi într-o cafenea:
 
-  * Citește o băutură: fie **"coffee"** fie **"tea"**
-  * Citește o adăugare: fie **"sugar"** fie **"no"**
-  * Imprimă prețul în formatul: "**Final price:** $\{**price**\}"
+  * Prima linie de intrare va fi fie **"coffee"**, fie **"tea"**
+  * A doua linie: fie **"sugar"** fie **"no"**
+  * Imprimați prețul în formatul: "**Final price:** $\{**price**\}"
     * prețul trebuie să fie **formatat** la a doua cifră după punctul zecimal
   
 Prețuri:
@@ -556,8 +556,8 @@ public class Program {
 ## Descriere
 Scrieți un program pentru a verifica dacă un triunghi este valid după dimensiunile sale:
 
-  * Citește 3 numere întregi: **laturile unui triunghi**
-  * Verifică dacă fiecare latură este mai mică decât suma celorlalte 2
+  * Citiți 3 numere întregi: **laturile unui triunghi**
+  * Verificați dacă fiecare latură este mai mică decât suma celorlalte 2
     * imprimă **"Valid Triangle"**, dacă condiția de mai sus este îndeplinită
     * imprimă **"Invalid Triangle"** în caz contrar
 
@@ -635,35 +635,37 @@ public class Main {
 
 # Descriere
 
-40% din cultura vinicolă este provine dintr-o vie de X metri pătrați.
+Compania Happy Wine Brothers v-a cerut să creați un program simplu pentru a determina dacă va reuși să atingă ținta de producție pentru vin în una din viile lor.
 
-Dintr-o vie de 1 metru pătrat se câștigă **Y kilograme de struguri**. 
+Această vie este responsabilă pentru 40% din recolta vinicolă.
+
+Dintr-o vie de 1 metru pătrat se recoltează **Y kilograme de struguri**. Această valoare va fi furnizată ca intrare.
 
 Pentru 1 litru de vin sunt necesare **2.5 kg struguri**.
 
-Cantitatea dorită de vin pentru vânzare este de **Z litri**. 
+Compania are o țintă de producție pentru vinul care urmează să fie vândut.  Această valoare va fi de asemenea furnizată ca intrare.
 
-Scrieți un program care să calculeze cât de mult vin poate fi produs și dacă această cantitate este suficientă.
+Scrieți un program care să calculeze cât de mult vin poate fi produs și dacă această cantitate este suficientă pentru atingerea țintei de producție.
 
-Dacă este suficientă, restul este împărțit în mod egal între lucrătorii viei
+Dacă este suficientă, restul este împărțit în mod egal între lucrătorii viei.
 
 ## Intrare
-Intrarea este citită de pe consolă și constă din exact 4 rânduri:
-- **X metri pătrați are via** - număr întreg în intervalul \[10 ... 5000 \]
-- **Y kilograme struguri pentru un metru pătrat** - număr în virgulă mobilă în intervalul\[0.00 ... 10.00\]
-- **Z litri necesari pentru vin** - număr întreg în intervalul \[10 ... 600 \] (țineți cont că via este responsabilă pentru 40% din producție)
+Intrarea este citită de pe consolă și constă în:
+- **Suprafața viei** - număr întreg în intervalul \[10 ... 5000 \]
+- **Recolta pentru un metru pătrat** - număr în virgulă mobilă în intervalul\[0.00 ... 10.00\]
+- **Ținta de producție** - număr întreg în intervalul \[10 ... 600 \] (țineți cont că această vie este responsabilă pentru 40% din producție)
 - **Număr de lucrători** - număr întreg în intervalul \[1 ... 20 \]
 
 ## Ieșire
-Următoarele ar trebui să fie tipărite pe consolă: 
+Următoarele ar trebui să fie tipărite pe consolă, în funcție de rezultat: 
 -  Dacă cantitatea de vin produsă este mai mică decât este necesar:
     - "**It will be a tough winter!** \{**amount of wine needed**\} **liters of wine needed to reach the goal.**"
-        - rezultatul trebuie rotunjit în jos la un număr întreg
-- Dacă cantitatea de vin produsă este mai mare sau egală cu ceea ce era necesar:
+        - rezultatul trebuie rotunjit în jos la cel mai apropiat număr întreg
+- Dacă cantitatea de vin produsă este mai mare sau egală cu ceea ce este necesar:
     - "**Good harvest this year! Total wine:** \{**Total wine**\} **liters.**"
-        - rezultatul trebuie rotunjit în jos la un număr întreg
+        - rezultatul trebuie rotunjit în jos la cel mai apropiat număr întreg
     -  "\{**remaining wine**\} **liters left** **->** \{**wine for 1 worker**\} **liters per person.**"
-        - ambele rezultate trebuie rotunjite în sus la un număr întreg 
+        - cantitatea de vin rămasă și cantitatea de vin pentru fiecare lucrător trebuie rotunjite în sus la cel mai apropiat număr întreg 
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -675,15 +677,15 @@ Următoarele ar trebui să fie tipărite pe consolă:
 
 [hints]
 [hint]
-Calculați randamentul total în kilograme.
-Struguri în total: 650 \* 2 = 1300
-Vin = 40% \* 1300/2.5 = 208
+Calculați producția totală în kilograme.
+Producția totală în kg: 650 \* 2 = 1300
 [/hint]
 [hint]
-Determinați vinul total produs și verificați dacă obiectivul a fost atins.
+Determinați cantitatea de vin produsă și verificați dacă obiectivul a fost atins.
 Apoi tipăriți rezultatul corect.
-208 > 175 
-208 \- 175 = 33 de litri rămân \-> 11 litri pentru o persoană
+Vin produs de această vie = (40% \* 1300) / 2.5 = 208
+208 > 175 - ținta a fost atinsă
+208 \- 175 = 33 de litri rămași \-> 11 litri pentru fiecare lucrător
 [/hint]
 [/hints]
 
@@ -837,18 +839,18 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care citește de pe consolă **oră** și **minute** dintr-o zi de 24 de ore și calculează ce oră va fi **după 15 minute**.
+Scrieți un program care citește de pe consolă două numere întregi ce reprezintă ora fixă în formatul: **"\{hours\}:\{minutes\}"** și tipărește ce oră va fi dupa 15 minute.
 
 ## Intrare
 
 Intrarea constă în **două** linii:
-- Ore - numere întregi în intervalul \[0...23\]
-- Minute - numere întregi în intervalul \[0...59\]
+- Ora - număr întreg în intervalul \[0...23\]
+- Minute - număr întreg în intervalul \[0...59\]
 
 ## Ieșire
-Imprimă rezultatul în următorul format:"\{hours\}:\{minutes\}".
-- Orele trebuie să fie formatate **fără zero**
-- Minutele trebuie trebuie să fie formatate **cu zero**
+Imprimați rezultatul în următorul format:"\{hours\}:\{minutes\}".
+- Ora trebuie să fie formatată **fără zero**
+- Minutele trebuie să fie formatate **cu zero**
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
