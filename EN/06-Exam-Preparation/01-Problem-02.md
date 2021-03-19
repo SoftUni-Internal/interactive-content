@@ -23,8 +23,7 @@ function pressHouse() {
 
 You need to create several classes for **Press House**.
 
-**Implement** the following classes:
-"**Article**", "**ShortReports**", "**BookReview**".
+**Implement** the following classes: "**Article**", "**ShortReports**", and "**BookReview**".
 
 ## Article
 
@@ -95,16 +94,13 @@ Comment content goes here
 
 The "**BookReview"** class inherits from the "**Article**" class.
 
-- `constructor(title, content, book)`
+- `constructor(title, content, book)` - **BookReview** should have **4 properties:**
+    - **title** \- string
+    - **content** \- string
+    - **book** \- an object with properties **name** and **author**
+    - **customers** \- an array of **customer** objects. Each **customer** object should have the following structure "\{**customerName, orderDescription**\}"
 
-**BookReview** should have **4 properties:**
-
-- **title** \- string
-- **content** \- string
-- **book** \- an object with properties **name** and **author**
-- **customers** \- an array of **customer** objects. Each **customer** object should have the following structure "\{**customerName, orderDescription**\}"
-
-"**addCustomer(customerName,  orderDescription)**": 
+- `addCustomer(customerName,  orderDescription)`: 
 
 This **function** should receive "**customerName**" and "**orderDescription**" as strings.  
 
@@ -116,7 +112,7 @@ Otherwise, add the **customer** object into the **customers array** and return t
 
 "\{ **customerName** \} **has ordered a review for** \{ **book name** \}"
 
-`toString()`: 
+- `toString()`: 
 
 This **function** should extend the `toString()` method of the "**Article**" class by adding some more lines:
 
