@@ -276,6 +276,7 @@ The input lines end with the string `END`.
 
 ## Output
 Print the output with all of the car numbers which are in the parking lot.
+If the parking lot is empty print: `Parking Lot is Empty`.
 
 ## Examples
 | **Input** | **Output** |
