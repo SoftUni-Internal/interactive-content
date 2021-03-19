@@ -1,4 +1,4 @@
-# Problem 3: Inbox Manager
+# Problema 3: Inbox Manager
 
 [slide hideTitle]
 # Inbox Manager
@@ -12,57 +12,53 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
-Create a program that **manages users and emails** sent by users.
+## Descriere
+Creați un program care **gestionează utilizatorii și e-mailurile** trimise de utilizatori.
 
-You need to keep information about their username and their sent emails.
+Trebuie să păstrați informații despre numele de utilizator și e-mailurile trimise.
 
-The emails are **represented as strings**.
+E-mailurile sunt **reprezentate ca șiruri**.
 
-You will be **receiving lines with commands separated by** "->" **until you receive** the "**Statistics**" command.
+Veți primi **linii cu comenzi separate prin** "->" **până când veți primi** comanda "**Statistics**".
 
-There are **three possible commands**:
-- "Add->\{username\}" 
-    - **check if the username exists and if it does print** - "\{username\} is already registered"
-    - if it does not exist, then add the user to the collection of users
-- "Send->\{username\}->\{Email\}" 
-    - add the \{Email\} to the \{username\}'s collection of sent emails
-- "Delete->\{username\}"
-    - delete the given user, if he exists
-    - if the user does not exist, print "\{username\} not found!"
+Există **trei comenzi posibile**:
+- "**Add->**\{**username**\}" 
+    - **verificați dacă numele de utilizator există și dacă se tipărește** - "\{**username**\} **is already registered"**
+    - dacă nu există, atunci adăugați utilizatorul la colecția de utilizatori
+- "**Send->**\{**username**\}**->**\{**Email**\}"
+    - adăugați mesajul \{**Email**\} la colecția de e-mailuri trimise din \{**username**\}
+- "**Delete->**\{**username**\}"
+    - ștergeți utilizatorul dat, dacă acesta există
+    - dacă utilizatorul nu există, tipăriți  "\{**username**\} **not found!**"
 
-In the end, you have to **print the count of users**, **each user with their emails**. 
+În cele din urmă, trebuie să **tipăriți numărul de utilizatori**, **fiecare utilizator cu e-mailurile sale**.
 
-**Users** need to be **sorted in descending order** by the **count of emails they sent and then by their username in ascending order in the following format**:  
+**Utilizatorii** trebuie să fie **sortați în ordine descrescătoare** după **numărul de e-mailuri trimise și apoi după numele lor de utilizator în ordine crescătoare în următorul format**:
 
-Users count: \{count\}
-
-\{username\} 
-
- - \{Email1\}
-
- - \{Email2\}
-
- - \{EmailN\}
+"**Users count:** \{**count**\}
+\{**username**\} 
+ - \{**Email1**\}
+ - \{**Email2**\}
+ - \{**EmailN**\}"
 
 ### Intrare
-- You will be receiving lines until you receive the "**Statistics**" command
-- The commands will be in the format described above
+- Veți primi linii până când veți primi comanda "**Statistics**"
+- Comenzile vor fi în formatul descris mai sus
 
 ### Ieșire
-- Print the collection in the format described above after the "**Statistics**" command
+- Imprimați colecția în formatul descris mai sus după comanda "**Statistics**"
 
-### Output
-Print the collection in the format described above after receiving the "**Statistics**" command.
+### Ieșire
+Imprimați colecția în formatul descris mai sus după ce ați primit comanda "**Statistics**".
 
 ### Exemplu
-|**Intrare**|**Ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Add->Mike | Users count: 2 |
 | Add->George | George |
@@ -73,14 +69,14 @@ Print the collection in the format described above after receiving the "**Statis
 | Send->Mike->Another random test mail |  - Hello, do you want to meet up tomorrow? |
 | Statistics |  - Another random test mail |
 
-### Comments
-- First we receive our users
-- Since they are not already in our collection, we add them
-- Then they start sending emails and in the end we print the output in the described format
+### Comentarii
+- Mai întâi primim utilizatorii noștri
+- Deoarece nu sunt deja în colecția noastră, le adăugăm
+- Apoi încep să trimită e-mailuri și la final imprimăm rezultatul în formatul descris
 
 
 ### Exemplu
-|**Intrare**|**Ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Add->Mike | Mike is already registered |
 | Add->George | Peter not found! |

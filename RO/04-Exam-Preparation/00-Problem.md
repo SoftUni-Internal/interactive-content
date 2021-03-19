@@ -1,4 +1,4 @@
-# Problem 1: Password Reset
+# Problema 1: Password Reset
 
 [slide hideTitle]
 # Password Reset
@@ -12,46 +12,47 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
+## Descriere
 
-Write a password reset program that performs a series of commands on a predefined string. 
+Scrieți un program de resetare a parolei care efectuează o serie de comenzi pe un șir predefinit.
 
-First, you will receive a string. Until the command "**Done**", you will be receiving strings with commands split by a single space. 
+În primul rând, veți primi un șir. Până la comanda "**Done**", veți primi șiruri cu comenzi împărțite de un singur spațiu.
 
-The commands will be the following:
+Comenzile vor fi următoarele:
 
 - **TakeOdd**
-  * takes only the characters at **odd indices** and **concatenates** them together to obtain the **new raw password** and then **prints** it
-- Cut \{index\} \{length\}
-  * gets the substring with the **given length** starting from the **given index** from the password and removes its first occurrence of it, then prints the password on the console
-  * the given index and length will **always be valid**
-- Substitute \{substring\} \{substitute\}
-  * if the raw password contains the given substring, replaces all of its occurrences with the substitute text given and prints the result
-  * if it does not, prints "**Nothing to replace!**"
+  * ia doar caracterele de la **indici impari** și **le concatenează** împreună pentru a obține **noua parolă brută** și apoi **o imprimă**
+- "**Cut** \{**index**\} \{**length**\}"
+  * obține șirul cu **lungimea dată** începând din **indexul dat** din parolă și elimină prima apariție a acesteia, apoi imprimă parola pe consolă
+  * indicele și lungimea date vor fi **întotdeauna valabile**
+- "**Substitute** \{**substring**\} \{**substitute**\}"
+  * dacă parola brută conține șirul dat, înlocuiește toate aparițiile sale cu textul înlocuit dat și imprimă rezultatul
+  * dacă nu, imprimă "**Nothing to replace!**"
 
 
 ## Intrare
 
-  - You will be receiving strings until the "**Done**" command is given
+  - Veți primi șiruri până când este dată comanda "**Done**"
 
 ## Ieșire
 
-- After the "**Done**" command is received, print:
-  * "Your password is: \{password\}"
+- După ce se primește comanda "**Done**", tipăriți:
+  * **"Your password is:** \{**password**\}"
 
-## Constraints
+## Constrângeri
 
-- The indexes from the "Cut \{index\} \{length\}" command will always be valid
+- Indexurile din comanda "**Cut** \{**index**\} \{**length**\}" vor fi întotdeauna valabile
 
 
 ## Exemplu
-|**Intrare**|**Ieșire** |
+
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Siiceercaroetavm\!\:\?\:ahsott\.\:i\:nstupmomceqr | icecream\:\:hot\:\:summer |
 | TakeOdd | icecream\:\:hot\:\:mer |
@@ -59,35 +60,34 @@ The commands will be the following:
 | Substitute \:\: \- | Nothing to replace! |
 | Substitute \| \^ | Your password is\: icecream\-hot\-mer |
 
-## Comments
+## Comentarii
 
 TakeOdd
 
 - " Siiceercaroetavm\!\:\?\:ahsott\.\:i\:nstupmomceqr" \-\> "icecream\:\:hot\:\:summer"
 
 
-- We only take the chars at odd indices 1, 3, 5 etc.
+- Luăm caracterele numai la indici impari 1, 3, 5 etc.
 
 "Cut 15  3" \-\> "icecream\:\:hot\:\:summer" \-\> sum
 
 - icecream\:\:hot\:\:mer
 
-We cut a substring starting at index 15 with a length of 3, remove it from the raw password and print it. 
+Decupăm un șir care începe de la indexul 15 cu o lungime de 3, îl scoatem din parola brută și îl imprimăm.
 
-Then, on a new line we print the resulting new raw password.
+Apoi, pe o nouă linie imprimăm noua parolă brută rezultată.
 
 "Substitute \:\: \-" \-\> "icecream\:\:hot\:\:summer" \-\> "icream\-hot\-summer"
 
-- We replace "\:\:" with "\-"
+- Înlocuim "\:\:" with "\-"
 
 "Substitute \| \^" \-\> "Nothing to replace!" 
 
-- "|" is not found anywhere in the raw password
+- "|" nu este găsit nicăieri în parola brută
 
-- Finally, after receiving the "**Done**" command, we print the resulting password in the proper format
+- În cele din urmă, după ce primim comanda "**Done**", imprimăm parola rezultată în formatul corespunzător
 
-## Exemplu
-|**Intrare**|**Ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | up8rgoyg3r1atmlmpiunagt\!\-irs7\!1fgulnnnqy | programming\!is\!funny |
 | TakeOdd | programming\!is\!fun |
@@ -102,7 +102,7 @@ Then, on a new line we print the resulting new raw password.
 [tests]
 [test open]
 [input]
-Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr 
+Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr
 TakeOdd
 Cut 15 3
 Substitute :: -

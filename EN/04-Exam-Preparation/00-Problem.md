@@ -28,10 +28,10 @@ The commands will be the following:
 
 - **TakeOdd**
   * takes only the characters at **odd indices** and **concatenates** them together to obtain the **new raw password** and then **prints** it
-- Cut \{index\} \{length\}
+- "**Cut** \{**index**\} \{**length**\}"
   * gets the substring with the **given length** starting from the **given index** from the password and removes its first occurrence of it, then prints the password on the console
   * the given index and length will **always be valid**
-- Substitute \{substring\} \{substitute\}
+- "**Substitute** \{**substring**\} \{**substitute**\}"
   * if the raw password contains the given substring, replaces all of its occurrences with the substitute text given and prints the result
   * if it does not, prints "**Nothing to replace!**"
 
@@ -43,11 +43,11 @@ The commands will be the following:
 ## Output
 
 - After the "**Done**" command is received, print:
-  * "Your password is: \{password\}"
+  * **"Your password is:** \{**password**\}"
 
 ## Constraints
 
-- The indexes from the "Cut \{index\} \{length\}" command will always be valid
+- The indexes from the "**Cut** \{**index**\} \{**length**\}" command will always be valid
 
 
 ## Examples
@@ -102,7 +102,7 @@ Then, on a new line we print the resulting new raw password.
 [tests]
 [test open]
 [input]
-Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr 
+Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr
 TakeOdd
 Cut 15 3
 Substitute :: -
