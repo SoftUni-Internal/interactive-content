@@ -1,5 +1,0 @@
-[slide]
-
-# Course Intro
-
-[/slide]
