@@ -49,26 +49,25 @@ Pentru comenzi:
 
 ## Intrare
 
-The input comes as an **array of which contains three elements:**
+Datele de intrare sunt date sub forma unei **matrice care conține 3 elemente:**
 
-- **First Element:**  
+- **Primul Element:**
 
-Flavor, text with possibilities: **Watermelon**, **Mango**, **Pineapple** or **Raspberry**
+Aroma, un text ce poate lua următoarele forme: **Watermelon**, **Mango**, **Pineapple** sau **Raspberry**
 
-- **Second Element:** 
+- **Al doilea Element:**
 
-Cut size, text with options: **small** or **big**
+Dimensiunea feliei, un text ce poate lua următoarele forme: **small** sau **big**
 
-- **Third Element:** 
+- **Al treilea Element:**
 
-Number of ordered cuts: integer in the interval \[1 … 10000\]
-
+Numărul de felii comandate: un număr întreg din intervalul \[1 … 10000\]
 
 ## Ieșire
 
 **O linie** este imprimată pe consolă:
 
-- **Prețul de plătit**,**formatat la a doua cifră după punctul zecimal**, în următorul format: 
+- **Prețul de plătit**, **formatat la a doua cifră după punctul zecimal**, în următorul format: 
 
 "\{**price**\} **dollars.**"
 
@@ -79,16 +78,16 @@ Number of ordered cuts: integer in the interval \[1 … 10000\]
 |energyBooster(['Pineapple', 'small', 1]) | 84.20 dollars. |
 |energyBooster(['Raspberry', 'small', 50])|1000.00 dollars.|
 |energyBooster(['Watermelon', 'big', '4']) | 487.90 dollars. |
-
+ 
 [hints]
 [hint]
-Calculate the individual price for 1 pack of energy bars.
+Calculați prețul individual al unui pachet de batoane proteice.
 [/hint]
 [hint]
-Calculate the total price and check if there's a discount.
+ Calculați prețul total și verificați dacă există o reducere.
 [/hint]
 [hint]
-If there is a discount, subtract it from the total price and print the correct output.
+Dacă există o anumită reducere, scădeți acea sumă din prețul total și printați datele de ieșire corespunzătoare.
 [/hint]
 [/hints]
 

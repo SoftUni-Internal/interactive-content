@@ -35,27 +35,25 @@ La **sfârșitul turneului**, dacă ați fost câștigătorul celor mai multor z
 
 Nu veți avea niciodată un număr egal de jocuri câștigate și pierdute.
 
+## Intrare
 
-# Intrare
+**Datele de intrare sunt introduse sub forma unei matrice de elemente:**
 
-**The input comes as an array of elements.** 
+Până la introducerea comenzii "**Finish**", veți primi:
 
-Until you receive the "**Finish**" command, you receive:
+- **Primul Element:**
 
-- **First Element:**
+**Numărul de zile ale turneului**: un număr întreg din intervalul \[1 ... 20\]
 
-**The number of days of the tournament**: an integer in the interval \[1… 20\]
+- **Până la introducerea comenzii** "**Finish**", **citiți:**
 
-- **Until you receive the** "**Finish**" **command, read:**
+**Sport** - șir de caractere
 
-**Sport** - String
+- **Pentru fiecare sport citit:**
 
-- **For each sport read:**
+**Result** - Text ce poate avea următoarele valori:  "**win**" sau "**lose**"
 
-**Result** - Text with possibilities:  "**win**" or "**lose**"
-
-
-# Ieșire
+## Ieșire
 
 În cele din urmă, se imprimă o linie:
 
@@ -78,16 +76,17 @@ Banii ar trebui să fie **formatați la a doua cifră după punctul zecimal.**
 
 [hints]
 [hint]
-Determine the amount of money won from each day of the tournament. 
+Determinați suma de bani câștigată în fiecare zi a turneului.
 
-Check if the won games are more than the lost. If they are, add a 10% bonus.
 
-Upon receving the "**Finish**" command, calculate the total sum of money.
+Verificați dacă jocurile câștigate sunt în număr mai mare decât cele pierdute. În acest caz, adăugați un bonus de 10%.
+
+Până la introducerea comenzii "**Finish**", calculați suma totală de bani.
 [/hint]
 [hint]
-Finally, check if the overall wins are more than the losses. 
+În final, verificați dacă, per total, numărul de câștiguri e mai mare decât numărul de înfrângeri.
 
-If they are, add 20% and print the correct output.
+În acest caz, adăugați 20% și printați datele de ieșire corespunzătoare.
 [/hint]
 [/hints]
  

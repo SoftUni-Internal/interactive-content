@@ -27,25 +27,25 @@ Mănâncă zilnic o anumită cantitate de mâncare.
 
 Scrieți un program care să verifice dacă **cantitatea de mâncarea achiziționată pentru cățeluș** va fi suficientă **până când câinele va fi adoptat.**
 
-## Input
+## Intrare
 
-**The input comes as an array of elements:**
+**Datele de intrare sunt introduse sub forma unei matrice de elemente:**
 
-- **First Element:**
+- **Primul Element:**
 
-Purchased **amount of food for the puppy in kilograms**: an integer in the interval \[1 …100\]
+**Cantitatea de mâncare achiziționată pentru cățel, exprimată în kilograme**: un număr întreg din intervalul \[1  ... 100\]
 
-- On each subsequent element until you receive the "**Adopted**" command, you will receive **how many grams the puppy eats at each meal**: an integer in the interval \[10 …1000\]
+- Fiecare element care urmează, până la introducerea comenzii "**Adopted**", va reprezenta **cantitatea de mâncare consumată de cățel la fiecare masă, exprimată în grame**, un număr întreg din intervalul \[10 ... 1000\]
 
-## Output
+## Ieșire
 
-One line is printed to the console:
+Se printează o linie în consolă:
 
-- If the amount of food **is enough**, print:
+- Dacă avem o cantitate de mâncare cu mențiunea **is enough**, se printează:
 
 "**Food is enough! Leftovers:** \{**leftover food**\} **grams.**" 
 
-- If the amount of food is **not enough**, print:
+- Dacă avem o cantitate de mâncare cu mențiunea **not enough**, se printează:
 
 "**Food is not enough. You need** \{**need the amount of food**\} **grams more.**"
 
@@ -56,15 +56,15 @@ One line is printed to the console:
 |careOfPuppy([4, 130, 345, 400, 180, 230, 120, 'Adopted']) | Food is enough! Leftovers: 2595 grams. |
 |careOfPuppy([2, 999, 456, 999, 999, 123, 456, 'Adopted']) | Food is not enough. You need 2032 grams more. |
 |careOfPuppy([3, 1000, 1000, 1000, 'Adopted']) | Food is enough! Leftovers: 0 grams. |
-
+ 
 [hints]
 [hint]
-Calculate the total amount of food in grams. 
+Calculați cantitatea totală de mâncare, exprimată în grame. 
 
-Then determine the total amount of food the puppy ate before it was adopted.
+Apoi, determinați cantitatea totală de mâncare consumată de către cățel înainte ca acesta să fie adoptat.
 [/hint]
 [hint]
-Check if there is any food left and print the correct output.
+Verificați dacă a mai rămas mâncare și printați datele de ieșire corespunzătoare.
 [/hint]
 [/hints]
 

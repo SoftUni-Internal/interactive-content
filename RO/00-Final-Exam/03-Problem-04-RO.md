@@ -40,21 +40,21 @@ Programul dvs. ar trebui să tipărească **statistici despre cantitatea de bisc
 
 
 ## Intrare
-**The input comes as an array of numbers:**
+**Datele de intrare sunt introduse sub forma unei matrice de numere:**
 
-- **First Number:**
+- **Primul Număr:**
 
-Number of days: a number in the range \[1…30\]
+Numărul de zile: un număr din intervalul \[1 ... 30\]
 
-- **Second Number:**
+- **Al doilea Număr:**
 
-Total amount of food: a number in the range \[0.00…10000.00\]
+Cantitatea totală de mâncare: un număr din intervalul \[0.00 ... 10000.00\]
 
-**Then for each day it is read:**
+**Apoi, pentru fiecare zi, se citesc:**
 
-- The amount of food eaten by the dog: a number in the range \[10…500\]
+- Cantitatea de mâncare consumată de către câine: un număr din intervalul \[10 ... 500\]
 
-- The amount of food eaten by the cat: a number in the rang \[10…500\]
+- Cantitatea de mâncare consumată de către pisică: un număr aflat în intervalul \[10 ... 500\]
 
 
 ## Ieșire
@@ -90,15 +90,15 @@ Procentul de alimente **trebuie formatat la a doua cifră după punctul zecimal.
 || 60.00% of the food has been eaten. |
 || 85.00% eaten from the dog. |
 || 15.00% eaten from the cat. |
-
+ 
 [hints]
 [hint]
-Calculate the total food for both the cat and dog. Note that every third day they receive a prize.
+Țineți cont de faptul că, odată la 3 zile, aceștia primesc un premiu.
 [/hint]
 [hint]
-Print the total cookies that were eaten. 
+Printați numărul total de fursecuri care au fost mâncate. 
 
-Determine how much percent of the total food was eaten, how much of that the dog and cat have eaten.
+Determinați procentul de mâncare consumată din cantitatea totală de mâncare, atât de către câine, cât și de către pisică.
 [/hint]
 [/hints]
 

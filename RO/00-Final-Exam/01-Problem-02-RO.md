@@ -39,17 +39,19 @@ Când **se calculează de câte ori George va încetini** ca urmare a pantei câ
 ## Intrare
 Datele de intrare sunt date sub forma unui **vector care conține 3 numere**:
 
-- **First Number:**  
+- **Primul Număr:**
 
-The record in seconds, floating-point  in the interval \[0.00 … 100000.00\]
+Recordul exprimat în secunde, un număr real din intervalul \[0.00 … 100000.00\]
 
-- **Second Number:** 
 
-The distance in meters, floating-point in the interval \[0.00 … 100000.00\]
+- **Al doilea Număr:**
 
-- **Third Number:**
+Distanța în metri, un număr real din intervalul \[0.00 … 100000.00\]
 
-The time in seconds for which he climbs 1 meter, floating-point in the interval \[0.00 … 1000.00\]
+
+- **Al treilea număr**
+
+Timpul necesar urcării unui metru, exprimat în secunde, un număr real din intervalul \[0.00 … 1000.00\]
 
 ## Ieșire
 
