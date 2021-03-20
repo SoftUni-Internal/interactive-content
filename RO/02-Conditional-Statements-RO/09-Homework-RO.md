@@ -160,7 +160,7 @@ public class Program {
 ## Descriere
 Scrieți un program pentru a verifica dacă un obiect se mișcă rapid sau încet în funcție de viteza sa:
 
-  * Citiți **speed** (un număr în virgulă mobilă)
+  * Citiți **viteza** (un număr în virgulă mobilă)
   * Imprimați **"Slow"** dacă viteza este **<= 30**
   * Imprimați **"Fast"** dacă viteza este **> 30**
 
@@ -651,7 +651,7 @@ Dacă este suficientă, restul este împărțit în mod egal între lucrătorii 
 
 ## Intrare
 Intrarea este citită de pe consolă și constă în:
-- **Suprafața viei** - număr întreg în intervalul \[10 ... 5000 \]
+- **Suprafața viei în metri pătrați** - număr întreg în intervalul \[10 ... 5000 \]
 - **Recolta pentru un metru pătrat** - număr în virgulă mobilă în intervalul\[0.00 ... 10.00\]
 - **Ținta de producție** - număr întreg în intervalul \[10 ... 600 \] (țineți cont că această vie este responsabilă pentru 40% din producție)
 - **Număr de lucrători** - număr întreg în intervalul \[1 ... 20 \]
@@ -1008,7 +1008,7 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program care citește un număr întreg de pe consolă și imprimă **ziua săptămânii** (în engleză) în intervalul \[1 ... 7\] sau "**Error**" dacă numărul este **nevalid**.
+Scrieți un program care citește de pe consolă un număr întreg în intervalul \[1 ... 7\] și imprimă **ziua săptămânii** (în engleză) sau "**Error**" dacă numărul este **nevalid**.
 
 ## Exemplu
 
@@ -1230,9 +1230,9 @@ Aceasta își dorește să plece într-o excursie și vă cere să o ajutați s�
 Citiți **cinci** rânduri de pe consolă:
 - **Numărul de zile** - un număr întreg în intervalul \[1 ... 5000 \]
 - **Mâncare rămasă în kilograme** - un număr întreg în intervalul \[0 ... 100000 \]
-- **Mâncare pentru câine pe zi în kilograme** -  dublă în intervalul \[0.00…100.00\]
-- **Mâncare pentru pisică pe zi în kilograme** - dublă în intervalul \[0.00…100.00\]
-- **Mâncare pentru broască țestoasă pe zi în grame** - dublă în intervalul \[0.00…10000.00\]
+- **Mâncare pentru câine pe zi în kilograme** -  double în intervalul \[0.00…100.00\]
+- **Mâncare pentru pisică pe zi în kilograme** - double în intervalul \[0.00…100.00\]
+- **Mâncare pentru broască țestoasă pe zi în grame** - double în intervalul \[0.00…10000.00\]
 
 ## Ieșire
 Imprimă pe consolă o linie **unică**:
@@ -1445,7 +1445,7 @@ Scrieți un program care să arate starea piscinei **în momentul în care lucr�
 **Patru** linii de intrare:
 - **V** - **Volumul piscinei în litri** - număr întreg în intervalul \[1 ... 10000\]
 - **P1** - **fluxul primei conducte pe oră** - număr întreg în intervalul \[1 ... 5000\]
-- **P2** - **fluxul celei de-a doua conducte pe oră** - număr întregi în intervalul \[1 ... 5000\]
+- **P2** - **fluxul celei de-a doua conducte pe oră** - număr întreg în intervalul \[1 ... 5000\]
 - **H** - **ore în care lucrătorul lipsește** - număr în virgulă mobilă în intervalul \[1.0 ... 24.00\]
 
 ## Ieșire
@@ -1482,8 +1482,8 @@ A doua conductă are capacitatea de 360 de litri.
 [hint]
 Verificați dacă capacitatea totală a ambelor conducte este suficientă pentru a umple piscina.
 Apoi tipăriți rezultatul corect.
-Prima conductă a contribuit în procent de 45%.
-A douaconductă a contribuit în procent de 55%.
+Prima conductă a contribuit în procent de 45% (300 l din 660 l)
+A douaconductă a contribuit în procent de 55%. (360 din 660 l)
 [/hint]
 
 [/hints]
