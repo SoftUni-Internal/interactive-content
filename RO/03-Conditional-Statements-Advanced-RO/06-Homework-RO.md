@@ -1,4 +1,4 @@
-# Homework
+# Teme Pntru Acasă
 
 [slide hideTitle]
 # Problemă: Fruit or Vegetable
@@ -9,16 +9,16 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 # Descriere
-Scrieți un program pentru a verifica fructele sau legumele:
+Scrieți un program pentru a verifica dacă o valoare introdusă este fruct sau legumă:
 
-* Citiți o singură linie de intrare: un articol din legume
+* Citiți o singură linie de intrare: un articol de la aprozar
 * Fructe: banana, apple, kiwi, cherry, lemon, grapes
 * Legume: cucumber, pepper, carrot, onion
 * Imprimați: **"vegetable"**, **"fruit"** sau **"unknown"**
@@ -90,7 +90,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -166,7 +166,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -188,11 +188,11 @@ Scrieți un program pentru a verifica dacă o literă este vocală sau consoană
 [hints]
 [hint]
 
-Puteți utiliza o declarație "if" și puteți verifica dacă litera este o vocală.
+Puteți utiliza o instrucțiune "if" și puteți verifica dacă litera este o vocală.
 
-Dacă este imprimat rezultatul corect.
+Dacă este, imprimați rezultatul corect.
 
-Cu toate acestea, dacă nu este, introduceți instrucțiunea "else" și imprimați rezultatul corespunzător.
+Dacă nu este, introduceți instrucțiunea "else" și imprimați rezultatul corespunzător.
 [/hint]
 [/hints]
 
@@ -237,7 +237,7 @@ Consonant
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Product of 3 Numbers
+# Problemă cu Soluție: Product of 3 Numbers
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-37-problem-product-of-three-numbers-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -248,18 +248,18 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-       // Scrieți codul dvs. aici
+       // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 # Descriere
-Calculați semnul produsului de 3 numere:
+Calculați semnul produsului a 3 numere:
 
 * Citiți **3 numere în virgulă mobilă**
-* Imprimați semnul al produsului celor 3 numere introduse: **positive**, **negative** sau **zero**
-* Încercați să faceți acest lucru **fără a înmulți** numerele
+* Imprimați semnul produsului celor 3 numere introduse: **positive**, **negative** sau **zero**
+* Încercați să faceți acest lucru **fără a înmulțiți** numerele
 
 ## Exemplu
 |**Intrare**|**Ieșire**|
@@ -331,14 +331,14 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 # Descriere
-Scrieți un program, care verifică **3 numere sortate**:
+Scrieți un program care citește 3 numere de la consolă și verifică dacă sunt ordonate:
 
 * Citiți 3 numere reale
 * Tipăriți **"Ascending"** dacă numerele sunt în ordine crescătoare
@@ -423,7 +423,7 @@ Descending
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Vacation Expenses
+# Problemă cu Soluție: Vacation Expenses
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-41-problem-vacation-expenses-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -434,7 +434,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -443,7 +443,7 @@ public class Main {
 # Descriere
 Scrieți un program, care calculează cheltuielile de vacanță:
 
-* Citiți sezonul, tipul de cazare și numărul zilelor
+* Citiți **sezonul**, **tipul de cazare** și **numărul zilelor**
 * Imprimați **cheltuielile totale**, pe baza tabelului de prețuri de mai jos, formatat la **a doua cifră** după punctul zecimal
 
 | **Sezon** | **Hotel** | **Camping** | **Reducere** |
@@ -563,37 +563,37 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-       // Scrieți codul dvs. aici
+       // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 # Descriere
-Calculați **prețul** pentru toate biletele pentru un film cinematografic:
+Calculați **prețul** pentru toate biletele vândute pentru un film cinematografic:
 * Citiți **tipul filmului**, **rândurile** și **locurile pe rând** din cinematograf
-* Tipăriți **prețul total** pentru toate locurile **formatate** la a doua cifră după punctul zecimal
+* Tipăriți **prețul total** pentru toate locurile **formatatt** la a doua cifră după punctul zecimal
 
-|**Type**|**Price**|
+|**Tip**|**Preț**|
 |---|---|
 |Premiere|12.00|
 |Normal|7.50|
 |Discount|5.00|
 
-## Example
-| **Input** | **Output** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |Premiere|1440.00|
 |10||
 |12|  |
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |Normal|2047.50 |
 |21||
 |13| |
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |Discount|1800.00|
 |12||
@@ -816,14 +816,14 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 # Descriere
-Scrieți un program pentru a aplica un operator pentru două numere date:
+Scrieți un program pentru a efectua un calcul folosind un operator particular:
 
 * Citiți **două numere întregi** și **operatorul matematic** de pe consolă
 * Operatorul aritmetic ar putea fi: "+", "-", "/", "%" și "*"
@@ -903,7 +903,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -913,8 +913,8 @@ public class Main {
 Scrieți un program pentru a simula retragerea de bani din bancomat:
 
 Citiți: **balance**, **withdraw** și **limit**
-* Imprimați **"The withdraw was successful."** Dacă soldul este suficient
-* Imprimați **"The daily limit was exceeded."** Dacă limita este depășită
+* Imprimați **"The withdraw was successful."** dacă soldul este suficient
+* Imprimați **"The daily limit was exceeded."** dacă limita este depășită
 * Imprimați **"Insufficient availability."** dacă soldul nu este sufficient
 
 ## Example
@@ -1000,18 +1000,18 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 # Descriere
-Scrieți un program pentru a găsi cel mai mare dintre 5 numere
+Scrieți un program pentru a găsi cel mai mare număr dintre 5 numere:
 * Citiți **5 numere întregi**
-* Imprimați cel mai mare număr.
+* Imprimați cel mai mare număr
 
-## Example
+## Exemplu
   | **Intrare** | **Ieșire** |
 | --- | --- |
 | \-1|\-1|
@@ -1129,7 +1129,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -1137,19 +1137,19 @@ public class Main {
 [task-description]
 # Descriere
 
-Scrieți un program **consolă** care să citească **vârstă (număr în virgulă mobilă)** și **sex** ("**m**" sau "**f**") și să imprime o adresă în funcție de aceste principii:
+Scrieți un program **consolă** care să citească **vârstă (număr în virgulă mobilă)** și **sex** ("**m**" sau "**f**") și să imprime o formulă de adresare în funcție de aceste principii:
 - "**Mr.**" - un bărbat (sex "**m**") cu vârsta de 16 ani sau mai mult
 - "**Master**" - un băiat (sex "**m**") sub 16 ani
 - "**Ms.**" - o femeie (sex "**f**") cu vârsta de 16 ani sau mai mult
 - "**Miss**" - o fată (sex "**f**") sub 16 ani
 
 ## Intrare
-Intrat de pe consolă:
+Intrare de pe consolă:
 - Vârstă - număr în virgulă mobilă
 - Sex - "**m**"sau "**f**"
 
 ## Ieșire
-Imprimați adresa așteptată pe o singură linie.
+Imprimați formula de adresare corespunzătoare pe o singură linie.
 
 
 ## Exemplu
@@ -1324,23 +1324,23 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 # Descriere
-Scrieți un program care să știe dacă rezervorul unui vehicul necesită realimentare sau nu.
+Scrieți un program care verifică dacă rezervorul unui vehicul necesită realimentare sau nu.
 
 ## Intrare
 Intrarea este formată din 2 linii:
-- Mai întâi trebuie să citiți de pe consolă tipul de combustibil - text cu opțiuni: "**Diesel**", "**Gasoline**" sau "**Gas**"
-- A doua linie de intrare citește combustibilul din rezervor în litri
+- Tipul de combustibil: "**Diesel**", "**Gasoline**" sau "**Gas**"
+- Combustibilul din rezervor în litri
 
 ## Ieșire
-- Dacă combustibilul este altul decât tipărirea specificată "**Invalid fuel!**"
-- În caz contrar, dacă combustibilul din rezervor este mai mare sau egal cu 25 litri de imprimare:
+- Dacă combustibilul este altul decât tipărirea specificată, tipăriți "**Invalid fuel!**"
+- Dacă nivelul de combustibil din rezervor este mai mare sau egal cu 25 litri, imprimați:
      - "**You have enough** \{**type of fuel**\}."
      - tipul de combustibil trebuie imprimat cu litere mici
 - Altfel tipăriți:
@@ -1449,7 +1449,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -1466,17 +1466,17 @@ O companie plătește angajaților săi următoarele comisioane în funcție de 
 | \[1001-10000\] | 8% | 10% | 12% |
 | \> 10000| 12% | 13% | 14.5% |
 
-Scrieți un program de consolă care să citească ca intrare **numele unui oraș** și **suma vânzărilor** și să calculeze valoarea **comisionului comercial**.
+Scrieți un program de consolă care să citească ca intrare **numele unui oraș** și **valoarea vânzărilor** și să calculeze valoarea **comisionului**.
 
 ## Intrare
 Citiți de pe consolă două linii:
-- Numele unui oraș - Șir
+- Numele unui oraș - șir
 - Valoarea vânzărilor - număr în virgulă mobilă
 
 ## Ieșire
-- Tipăriți pe consolă valoarea calculată a comisionului comercial
-- Rezultatul ar trebui să fie **formatat cu a doua zecimală**
-- Dacă primiți **invalid** numele orașului **sau** suma vânzărilor (număr negativ), tipăriți "**error**"
+- Tipăriți pe consolă valoarea calculată a comisionului 
+- Rezultatul trebuie să fie **formatat la a doua zecimală**
+- Dacă primiți un nume al orașului **invalid**  **sau** o valoare invalidă a vânzărilor (număr negativ), tipăriți "**error**"
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -1668,17 +1668,17 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 # Descriere
-Scrieți un program pentru a verifica dacă un `punct {x, y}` este **pe** una dintre laturile unui dreptunghi `{x1, y1} - {x2, y2}`.
+Scrieți un program pentru a verifica dacă un **`punct {x, y}`** este **pe** una dintre laturile unui dreptunghi **`{x1, y1} - {x2, y2}`**.
 
 ## Intrare
-Intrarea provine de pe consolă și constă din **6 linii, introduse de utilizator: numere reale x1, y1, x2, y2, x și y** (va fi întotdeauna adevărat că **x1 < x2** și **y1 < y2**).
+Intrarea provine de pe consolă și constă în **6 linii, introduse de utilizator: numere reale x1, y1, x2, y2, x și y** (va fi întotdeauna adevărat că **x1 < x2** și **y1 < y2**).
 
 ## Ieșire
 Dacă punctul se află pe una dintre laturile dreptunghiului:
@@ -1708,13 +1708,13 @@ Dacă punctul NU se află pe o latură:
 
 [hints]
 [hint]
-utilizați una sau mai multe instrucțiuni condiționale **if** cu operații logice. Un punct `{x, y}` se află lângă un dreptunghi `{x1, y1} - {x2, y2}`, dacă una dintre condițiile specificate este îndeplinită:
+Utilizați una sau mai multe instrucțiuni condiționale **if** cu operații logice. Un punct `{x, y}` se află pe o laturp a unui dreptunghi `{x1, y1} - {x2, y2}`, dacă una dintre condițiile specificate este îndeplinită:
 
 - **x** este egal cu **x1** sau **x2** și în același timp **y** este între **y1** și **y2**
 - **y** este egal cu **y1** sau **y2** și în același timp **x** este între **x** și **x2**
 [/hint]
 [hint]
-Puteți verifica condițiile de mai sus folosind o construcție mai complicată **if** - **else** sau folosind câteva instrucțiuni condiționale mai simple sau **instrucțiunilor imbricate if-else**.
+Puteți verifica condițiile de mai sus folosind o construcție mai complicată **if** - **else** sau folosind câteva instrucțiuni condiționale mai simple sau **instrucțiuni imbricate if-else**.
 [/hint]
 [/hints]
 
@@ -1969,18 +1969,16 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 # Descriere
-Este vară cu vreme schimbătoare și Victor are nevoie de ajutorul vostru.
+Scrieți un program pentru a-l ajuta pe prietenul vostru să își aleagă hainele **în funcție de partea zilei și de temperatură (în grade; Celsius)**.
 
-Scrieți un program care să-i recomande lui Victor ce haine să aleagă **în funcție de partea de zi și de grade (Celsius)**.
-
-Prietenul vostru are planuri diferite pentru fiecare parte a zilei, cu ținute diferite - vedeți **tabelul** de mai jos.
+Prietenul vostru are planuri diferite pentru fiecare parte a zilei, în funcție de temperatură - vedeți **tabelul** de mai jos.
 
 | **O parte din zi / Grade** | **Morning** | **Afternoon** | **Evening** |
 | --- | --- | --- | --- |
@@ -1994,8 +1992,8 @@ Prietenul vostru are planuri diferite pentru fiecare parte a zilei, cu ținute d
 
 ## Intrare
 **Citiți două linii de intrare:**
-- **grade** - un număr întreg în intervalul \[10…42\]
-- **O parte din zi**- text - posibilități: "Morning", "Afternoon", "Evening"
+- **Grade** - un număr întreg în intervalul \[10…42\]
+- **O parte din zi**: "Morning", "Afternoon", "Evening"
 
 ## Ieșire
 - Imprimați pe consolă o linie **unică**:
@@ -2140,7 +2138,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -2148,25 +2146,25 @@ public class Main {
 [task-description]
 # Descriere
 
-Tony și prietenii săi au decis să închirieze o barcă - chiria depinde de **sezon** și de **numărul** de pescari.
+Tony și prietenii săi au decis să închirieze o barcă de pescuit - tariful de închiriere depinde de **sezon** și de **numărul** de pescari.
 
-**Prețul** pe baza **sezonului**:
-- **Primăvară - 3000 $**
+**Prețul** în funcție de **sezon**:
+- **Primăvara - 3000 $**
 - **Vara și toamna - 4200 $**
 - **Iarna - 2600 $**
 
-**Prețul** pe baza **numărului** de pescari utilizează **reducere:**
+**Prețul** pe baza **numărului** de pescari utilizează **reducerile:**
 - Dacă grupul este **până la 6 persoane (inclusiv) - 10% reducere**
 - Dacă membrii grupului se află în intervalul \[7 .... 11\] - **15% reducere**
 - Dacă grupul are **12 sau mai multe persoane - 25% reducere**
 
-Pescarii folosesc încă o reducere de **5% dacă sunt un număr par**, cu excepția cazului în care **NU** este toamna - atunci **NU** au reducere suplimentară.
+Pescarii folosesc încă o reducere de **5% dacă sunt un număr par**, cu excepția cazului în care **NU** este toamnă - atunci **NU** au reducere suplimentară.
 
-Scrieți un **program** pentru **a calcula** dacă pescarii vor strânge **suficienți** bani.
+Scrieți un **program** pentru **a calcula** dacă pescarii vor strânge **suficienți** bani pentru a închiria barca.
 
 ## Intrare
 Intrarea este alcătuită exact din **3 linii**:
-- **bugetul** al grupului - număr real în intervalul \[1 .... 8000\]
+- **Bugetul** grupului - număr real în intervalul \[1 .... 8000\]
 - **Sezon** - Șir: "**Spring**", "**Summer**", "**Autumn**", "**Winter**"
 - **Numărul** de pescari - număr întreg în intervalul \[4 .... 18\]
 
@@ -2175,7 +2173,7 @@ Imprimați pe consolă o linie **unică**:
 - Dacă bugetul **ESTE** suficient: "**Yes! You have** \{**money left**\} **dollars left.**"
 - Dacă bugetul **NU este** suficient: "**Not enough money! You need** \{**money needed**\} **dollars.**"
 
-**Prețurile trebuie formatate cu a doua zecimală.**
+**Prețurile trebuie formatate la a doua zecimală.**
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -2407,7 +2405,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-       // Scrieți codul dvs. aici
+       // Write your code here
     }
 }
 ```
@@ -2429,11 +2427,11 @@ La sărbători prețurile tuturor florilor **cresc cu 15%**.
 Piața oferă următoarele **reduceri**:
 - Dacă cumpărați **7 sau mai multe lalele în timpul primăverii** - **5% din prețul întregului buchet**
 - Dacă cumpărați **10 sau mai mulți trandafiri în timpul iernii** - **10% din prețul întregului buchet**
-- Dacă cumpărați **mai mult de 20 de flori în total în TOATE anotimpurile - 20% din prețul întregului buchet**
+- Dacă cumpărați **mai mult de 20 de flori în total în orice anotimp - 20% din prețul întregului buchet**
 
 **Toate reducerile trebuie aplicate după creșterea prețurilor în vacanță!**
 
-Prețul aranjamentului buchetului este **întotdeauna** 2 dolari.
+Există un comision pentru aranjarea buchetului, care va fi **întotdeauna** 2 dolari și trebuie adăugat la sfărșitul calculelor.
 
 Scrieți un program pentru a **calcula** prețul unui buchet.
 
@@ -2446,7 +2444,7 @@ Intrarea este citită din **consola** și este exact **5 linii**:
 - Dacă ziua este **de sărbătoare** - \[Y - yes / N - no\]
 
 ## Ieșire
-Imprimați pe consolă un **număr unic** - prețul florilor, **formatat la a doua zecimală**.
+Imprimați pe consolă un **număr unic** - prețul buchetului, **formatat la a doua zecimală**.
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
