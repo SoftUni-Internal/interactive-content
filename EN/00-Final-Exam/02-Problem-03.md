@@ -111,7 +111,7 @@ The percentage represents all current pets that have procedures, based on the **
 
 It is rounded down to the nearest number:
 
-"**\{**clinicName**\} **is** \{**percentage**\}\% **busy today!**"
+"\{**clinicName**\} **is** \{**percentage**\}\% **busy today!**"
 
 On the second line, return the collected **profit**, which must be **formatted** to the **second digit** after the decimal point: 
 
