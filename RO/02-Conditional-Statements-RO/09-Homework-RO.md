@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Scrieți codul aici
+      // Write your code here
     }
 }
 ```
@@ -18,9 +18,9 @@ public class Program {
 ## Descriere
 Scrieți un program pentru a verifica o parolă:
 
-  * Citește un șir: parola **guess**
-  * Imprimă **"Welcome"** dacă presupunerea parolei este **"s3cr3t!"**
-  * Imprimă **"Wrong password!"** în toate celelalte cazuri
+  * Citiți un șir: parola
+  * Imprimați **"Welcome"** dacă presupunerea parolei este **"s3cr3t!"**
+  * Imprimați **"Wrong password!"** în toate celelalte cazuri
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -81,18 +81,18 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Scrieți codul aici
+      // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care să verifice dacă apa este fierbinte:
+Scrieți un program care să verifice dacă apa dintr-un vas fierbe:
 
-  * Citește un număr în virgulă mobilă: **temperatura** a apei (în ° C)
-  * Imprima **"The water is boiling"** dacă numărul este **> 100**
-  * Imprima **"The water is not hot enough"** în toate celelalte cazuri
+  * Citiți un număr în virgulă mobilă: **temperatura** apei (în °C)
+  * Imprimați **"The water is boiling"** dacă numărul este **> 100**
+  * Imprimați **"The water is not hot enough"** în toate celelalte cazuri
 
   
 ## Exemplu
@@ -151,18 +151,18 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Scrieți codul aici
+      // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program pentru a verifica viteza rapidă/lentă:
+Scrieți un program pentru a verifica dacă un obiect se mișcă rapid sau încet în funcție de viteza sa:
 
-  * Citește **speed** (un număr în virgulă mobilă)
-  * Imprima **"Slow"** dacă viteza este **<= 30**
-  * Imprima **"Fast"** dacă viteza este **> 30**
+  * Citiți **viteza** (un număr în virgulă mobilă)
+  * Imprimați **"Slow"** dacă viteza este **<= 30**
+  * Imprimați **"Fast"** dacă viteza este **> 30**
 
 
 ## Exemplu
@@ -224,7 +224,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-   // Scrieți codul aici
+   // Write your code here
     }
 }
 ```
@@ -232,12 +232,12 @@ public class Program {
 [task-description]
 ## Descriere
 Scrieți un program pentru a calcula aria diferitelor figuri:
-  * Citește un șir: figura **tip**
-  * Verifică dacă cifra introdusă este **square**, **rectangle** sau **circle**
+  * Citește un șir: **type**
+  * Verifică dacă figura introdusă este **square**, **rectangle** sau **circle**
   * Citește un număr pentru pătrat și cerc sau două numere pentru dreptunghi
     * numerele vor fi în virgulă mobilă
-  * Imprimă zona calculată **formatată** la a doua cifră după punctul zecimal
-  * Pentru figura necunoscută imprima **"Unknown figure"**
+  * Imprimă aria calculată **formatată** la a doua cifră după punctul zecimal
+  * Pentru figuri necunoscute imprimă **"Unknown figure"**
 
 ## Exemple
 
@@ -353,7 +353,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Scrieți codul aici
+      // Write your code here
     }
 }
 ```
@@ -363,12 +363,12 @@ public class Program {
 ## Descriere
 Scrieți un program pentru a **calcula** prețul biletului:
 
-  * Citește tipul biletului: fie **student**, fie **obișnuit**
-  * Imprima **prețul** în următorul format "$\{**price**\}":
+  * Citiți tipul biletului: fie **student**, fie **regular**
+  * Imprimați **prețul** în următorul format "$\{**price**\}":
     * prețul trebuie să fie **formatat** la a doua cifră după punctul zecimal
   * Prețul biletului de tip student: **1.00**
-  * Prețul biletului de tip regulat: **1.60**
-  * Pentru un tip nevalid imprima **"Invalid ticket type!"**
+  * Prețul biletului de tip regular: **1.60**
+  * Pentru un tip nevalid imprimați **"Invalid ticket type!"**
   
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -444,25 +444,25 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Scrieți codul aici
+      // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program pentru a calcula prețul băuturii într-o cafenea:
+Scrieți un program pentru a calcula prețul unei băuturi într-o cafenea:
 
-  * Citește o băutură: fie **"cafea"** fie **"ceai"**
-  * Citește o adăugare: fie **"zahăr"** fie **"no"**
-  * Imprimă prețul în formatul: "**Final price:** $\{**price**\}"
+  * Prima linie de intrare va fi fie **"coffee"**, fie **"tea"**
+  * A doua linie: fie **"sugar"** fie **"no"**
+  * Imprimați prețul în formatul: "**Final price:** $\{**price**\}"
     * prețul trebuie să fie **formatat** la a doua cifră după punctul zecimal
   
 Prețuri:
 
-  * Preţul de cafea: **1.00**
-  * Preţul de ceai: **0.60**
-  * Sugar price: **0.40**
+  * Preţul cafelei: **1.00**
+  * Preţul ceaiului: **0.60**
+  * Prețul zahărului: **0.40**
 
 ## Exemple
 |**Intrare**|**Ieșire** |
@@ -547,7 +547,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Scrieți codul aici
+      // Write your code here
     }
 }
 ```
@@ -556,10 +556,10 @@ public class Program {
 ## Descriere
 Scrieți un program pentru a verifica dacă un triunghi este valid după dimensiunile sale:
 
-  * Citește 3 numere întregi: the **laturile unui triunghi**
-  * Verifică dacă fiecare parte este mai mică decât suma celorlalte 2
-    * imprima **"Valid Triangle"**, dacă condiția de mai sus este îndeplinită
-    * imprima **"Invalid Triangle"** în caz contrar
+  * Citiți 3 numere întregi: **laturile unui triunghi**
+  * Verificați dacă fiecare latură este mai mică decât suma celorlalte 2
+    * imprimă **"Valid Triangle"**, dacă condiția de mai sus este îndeplinită
+    * imprimă **"Invalid Triangle"** în caz contrar
 
     
 ## Exemplu
@@ -626,7 +626,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Write your code here
     }
 }
 ```
@@ -635,35 +635,37 @@ public class Main {
 
 # Descriere
 
-40% din cultura vinicolă este alocată dintr-o vie de X metri pătrați.
+Compania Happy Wine Brothers v-a cerut să creați un program simplu pentru a determina dacă va reuși să atingă ținta de producție pentru vin în una din viile lor.
 
-Din via de  1 metru pătrat se câștigă **Y kilograme de struguri**. 
+Această vie este responsabilă pentru 40% din recolta vinicolă.
+
+Dintr-o vie de 1 metru pătrat se recoltează **Y kilograme de struguri**. Această valoare va fi furnizată ca intrare.
 
 Pentru 1 litru de vin sunt necesare **2.5 kg struguri**.
 
-Cantitatea dorită de vin pentru vânzare este de **Z litri**. 
+Compania are o țintă de producție pentru vinul care urmează să fie vândut.  Această valoare va fi de asemenea furnizată ca intrare.
 
-Scrieți un program care să calculeze cât de mult vin poate fi produs și dacă această cantitate este suficientă.
+Scrieți un program care să calculeze cât de mult vin poate fi produs și dacă această cantitate este suficientă pentru atingerea țintei de producție.
 
-- Dacă este suficient, restul este împărțit în mod egal între lucrătorii viei
+Dacă este suficientă, restul este împărțit în mod egal între lucrătorii viei.
 
 ## Intrare
-Intrarea este citită de pe consolă și constă din exact 4 rânduri:
-- **X metru pătrat este via** - număr întreg în intervalul \[10 ... 5000 \]
-- **struguri Y pentru un metru pătrat** - număr în virgulă mobilă în intervalul\[0.00 ... 10.00\]
-- **Z litre necesare pentru vin** - număr întreg în intervalul \[10 ... 600 \]
+Intrarea este citită de pe consolă și constă în:
+- **Suprafața viei în metri pătrați** - număr întreg în intervalul \[10 ... 5000 \]
+- **Recolta pentru un metru pătrat** - număr în virgulă mobilă în intervalul\[0.00 ... 10.00\]
+- **Ținta de producție** - număr întreg în intervalul \[10 ... 600 \] (țineți cont că această vie este responsabilă pentru 40% din producție)
 - **Număr de lucrători** - număr întreg în intervalul \[1 ... 20 \]
 
 ## Ieșire
-Următoarele ar trebui să fie tipărite pe consolă: 
--  Dacă vinul produs este mai mic decât este necesar:
+Următoarele ar trebui să fie tipărite pe consolă, în funcție de rezultat: 
+-  Dacă cantitatea de vin produsă este mai mică decât este necesar:
     - "**It will be a tough winter!** \{**amount of wine needed**\} **liters of wine needed to reach the goal.**"
-        - rezultatul trebuie rotunjit la un număr întreg
-- Dacă vinul produs este mai mare sau egal cu ceea ce era necesar:
+        - rezultatul trebuie rotunjit în jos la cel mai apropiat număr întreg
+- Dacă cantitatea de vin produsă este mai mare sau egală cu ceea ce este necesar:
     - "**Good harvest this year! Total wine:** \{**Total wine**\} **liters.**"
-        - rezultatul trebuie rotunjit la un număr întreg
+        - rezultatul trebuie rotunjit în jos la cel mai apropiat număr întreg
     -  "\{**remaining wine**\} **liters left** **->** \{**wine for 1 worker**\} **liters per person.**"
-        - ambele rezultate trebuie rotunjite la numărul întreg superior
+        - cantitatea de vin rămasă și cantitatea de vin pentru fiecare lucrător trebuie rotunjite în sus la cel mai apropiat număr întreg 
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -675,15 +677,15 @@ Următoarele ar trebui să fie tipărite pe consolă:
 
 [hints]
 [hint]
-Calculați randamentul total în kilograme.
-Struguri in total: 650 \* 2 = 1300
-Vin = 40% \* 1300/2.5 = 208
+Calculați producția totală în kilograme.
+Producția totală în kg: 650 \* 2 = 1300
 [/hint]
 [hint]
-Determinați vinul total produs și verificați dacă obiectivul a fost atins.
+Determinați cantitatea de vin produsă și verificați dacă obiectivul a fost atins.
 Apoi tipăriți rezultatul corect.
-208 > 175 
-208 \- 175 = 33 de litre rămân \-> 11 litre pentru persoana
+Vin produs de această vie = (40% \* 1300) / 2.5 = 208
+208 > 175 - ținta a fost atinsă
+208 \- 175 = 33 de litri rămași \-> 11 litri pentru fiecare lucrător
 [/hint]
 [/hints]
 
@@ -830,25 +832,25 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care citește de pe consolă **oră** și **minute** dintr-o zi de 24 de ore și calculează ce oră va fi **după 15 minute**.
+Scrieți un program care citește de pe consolă două numere întregi ce reprezintă ora fixă în formatul: **"\{hours\}:\{minutes\}"** și tipărește ce oră va fi dupa 15 minute.
 
 ## Intrare
 
 Intrarea constă în **două** linii:
-- Ore - numere întregi în intervalul \[0...23\]
-- Minute - numere întregi în intervalul \[0...59\]
+- Ora - număr întreg în intervalul \[0...23\]
+- Minute - număr întreg în intervalul \[0...59\]
 
 ## Ieșire
-Imprima rezultatul în următorul format:"\{hours\}:\{minutes\}".
-- Orele trebuie să fie formatate **fără zero**
-- Minutele trebuie trebuie să fie formatate **cu zero**
+Imprimați rezultatul în următorul format:"\{hours\}:\{minutes\}".
+- Ora trebuie să fie formatată **fără zero**
+- Minutele trebuie să fie formatate **cu zero**
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -998,7 +1000,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Write your code here
     }
 }
 ```
@@ -1006,7 +1008,7 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program care citește un număr întreg de pe consolă și imprima **ziua săptămânii** (în engleză) în intervalul \[1 ... 7\] și "**Error**" dacă numărul este **nevalid**.
+Scrieți un program care citește de pe consolă un număr întreg în intervalul \[1 ... 7\] și imprimă **ziua săptămânii** (în engleză) sau "**Error**" dacă numărul este **nevalid**.
 
 ## Exemplu
 
@@ -1113,7 +1115,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Write your code here
     }
 }
 ```
@@ -1121,12 +1123,13 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program care imprima **tipul** unui animal în funcție de **numele său**.
+Scrieți un program care imprimă **tipul** unui animal. Există trei variante posibile de ieșire: **mammal**, **reptile** și **unknown**
 
 ## Intrare / Ieșire
-- Mmmals: **dog** 
-- Reptiles: **crocodile**, **tortoise**, **snake** 
-- **Others -> unknown**
+Intrarea poate să aibă următoarele valori:
+- mammals: **dog** 
+- reptiles: **crocodile**, **tortoise**, **snake** 
+- **others -> unknown**
 
 ## Exemplu
 
@@ -1212,36 +1215,36 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
+Prietena dumneavoastră are 3 animale.
 
-Scrieți un **program** care să calculeze **cantitatea de kilograme** de mâncare animalelor ale Martinei care vor mânca in timp ce ea este **în aventură** și **verifică dacă mâncarea este suficientă**.
-
-Fiecare animal mănâncă o anumită cantitate de mâncare pe zi.
+Aceasta își dorește să plece într-o excursie și vă cere să o ajutați să determine dacă are mâncare suficientă pentru a hrăni animalele cât timp ea este plecată.
 
 ## Intrare
-Citește **cinci** rânduri de pe consolă:
+Citiți **cinci** rânduri de pe consolă:
 - **Numărul de zile** - un număr întreg în intervalul \[1 ... 5000 \]
 - **Mâncare rămasă în kilograme** - un număr întreg în intervalul \[0 ... 100000 \]
-- **Mâncare pentru câine pe zi în kilograme** -  dublă în intervalul \[0.00…100.00\]
-- **Mâncare pentru pisică pe zi în kilograme** - dublă în intervalul \[0.00…100.00\]
-- **Mâncare pentru broască țestoasă pe zi în grame** - dublă în intervalul \[0.00…10000.00\]
+- **Mâncare pentru câine pe zi în kilograme** -  double în intervalul \[0.00…100.00\]
+- **Mâncare pentru pisică pe zi în kilograme** - double în intervalul \[0.00…100.00\]
+- **Mâncare pentru broască țestoasă pe zi în grame** - double în intervalul \[0.00…10000.00\]
 
 ## Ieșire
-Imprima pe consolă o linie **unică**:
-- Dacă mâncarea rămasă **este suficientă**:
+Imprimă pe consolă o linie **unică**:
+- Dacă mâncarea **este suficientă**:
   - "\{**kilograms remain**\} **kilos of food left.**" 
   
 Rezultatul trebuie să fie **rotunjit la cel mai apropiat număr întreg inferior**.
+
 - Dacă mâncarea rămasă **nu este suficientă**:
   - "\{**kilograms needed**\} **more kilos of food are needed.**"
   
-Rezultatul trebui să fie **rotunjit la cel mai apropiat număr întreg superior**.
+Rezultatul trebuie să fie **rotunjit la cel mai apropiat număr întreg superior**.
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -1423,31 +1426,31 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-O piscină cu **volum V** are **două țevi** care o umplu.
+O piscină cu **volum V** este umplută prin **două conducte**.
 
-**Fiecare țeava are un anumit flux cert** (litri de apă care trec printr-o singură țeava pe oră). 
+**Fiecare conductă are un anumit flux cert** (litri de apă care trec printr-o singură conductă într-o oră). 
 
-Muncitorul pornește conductele **în același timp** și iese pentru  **N ore**.
+Muncitorul pornește conductele **în același timp** și le lasă pornite pentru  **N ore**.
 
 Scrieți un program care să arate starea piscinei **în momentul în care lucrătorul revine**.
 
 ## Intrare
 **Patru** linii de intrare:
-- **V** - **Volumul piscinei în litri** - numere întregi în intervalul \[1 ... 10000\]
-- **P1** - **fluxul primei țevi pe oră** - numere întregi în intervalul \[1 ... 5000\]
-- **P2** - **fluxul celei de-a doua țevi pe oră** - numere întregi în intervalul \[1 ... 5000\]
-- **H** - **ore lucrătorului in timp ce lipsește** - număr cu virgulă mobilă în intervalul \[1.0 ... 24.00\]
+- **V** - **Volumul piscinei în litri** - număr întreg în intervalul \[1 ... 10000\]
+- **P1** - **fluxul primei conducte pe oră** - număr întreg în intervalul \[1 ... 5000\]
+- **P2** - **fluxul celei de-a doua conducte pe oră** - număr întreg în intervalul \[1 ... 5000\]
+- **H** - **ore în care lucrătorul lipsește** - număr în virgulă mobilă în intervalul \[1.0 ... 24.00\]
 
 ## Ieșire
-Imprima pe consolă **una dintre ambele posibilități**:
-- Cât de mult a fost umplută piscina și care dintre țevile cât a contribuit în procente
+Imprimați pe consolă **una dintre posibilitățile**:
+- Cât de mult a fost umplută piscina și cât a contribuit fiecare conductă în procente
   - "**The pool is** \{**percentage of volume**\}**%** **full.** **Pipe 1:** \{**transferred percentage**\}**%.** **Pipe 2:** \{**transferred percentage**\}**%.**"
 - Dacă piscina este debordantă - câți litri sunt debordați pentru timpul dat
   - "**For** \{**amount of time**\} **hours the pool overflows with** \{**liters of unnecessary water transferred**\} **liters.**"
@@ -1471,14 +1474,16 @@ Imprima pe consolă **una dintre ambele posibilități**:
 
 [hints]
 [hint]
-Pentru 2.5 ore: Prima țeavă se umple cu 300 de  litri
-A doua țeavă se umple cu 250 de litri
-În total – 500 l > 100 l => 400 de litre sunt debordate.
-Calculați capacitatea pentru fiecare țeavă.
+Calculați capacitatea pentru fiecare conductă. 
+Pentru 3 ore: prima conductă are capacitatea de 300 de litri.
+A doua conductă are capacitatea de 360 de litri.
+În total – 660 l < 1000 l => piscina este umplută în proporție de 66%
 [/hint]
 [hint]
-Verificați dacă puterea totală din ambele conducte este suficientă pentru a umple piscina.
+Verificați dacă capacitatea totală a ambelor conducte este suficientă pentru a umple piscina.
 Apoi tipăriți rezultatul corect.
+Prima conductă a contribuit în procent de 45% (300 l din 660 l)
+A douaconductă a contribuit în procent de 55%. (360 din 660 l)
 [/hint]
 
 [/hints]
