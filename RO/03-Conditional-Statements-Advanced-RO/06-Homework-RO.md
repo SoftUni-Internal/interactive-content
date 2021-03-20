@@ -1,4 +1,4 @@
-# Teme Pntru Acasă
+# Teme Pentru Acasă
 
 [slide hideTitle]
 # Problemă: Fruit or Vegetable
@@ -79,7 +79,7 @@ vegetable
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Day of Week
+# Problemă cu Soluție: Day of Week
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-30-33-problem-solving-day-of-week-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -190,9 +190,9 @@ Scrieți un program pentru a verifica dacă o literă este vocală sau consoană
 
 Puteți utiliza o instrucțiune "if" și puteți verifica dacă litera este o vocală.
 
-Dacă este, imprimați rezultatul corect.
+Dacă este, imprimați ieșirea corectă.
 
-Dacă nu este, introduceți instrucțiunea "else" și imprimați rezultatul corespunzător.
+Dacă nu este, introduceți instrucțiunea "else" și imprimați ieșirea corespunzătoare.
 [/hint]
 [/hints]
 
@@ -259,7 +259,7 @@ Calculați semnul produsului a 3 numere:
 
 * Citiți **3 numere în virgulă mobilă**
 * Imprimați semnul produsului celor 3 numere introduse: **positive**, **negative** sau **zero**
-* Încercați să faceți acest lucru **fără a înmulțiți** numerele
+* Încercați să faceți acest lucru **fără a înmulți** numerele
 
 ## Exemplu
 |**Intrare**|**Ieșire**|
@@ -572,7 +572,7 @@ public class Main {
 # Descriere
 Calculați **prețul** pentru toate biletele vândute pentru un film cinematografic:
 * Citiți **tipul filmului**, **rândurile** și **locurile pe rând** din cinematograf
-* Tipăriți **prețul total** pentru toate locurile **formatatt** la a doua cifră după punctul zecimal
+* Tipăriți **prețul total** pentru toate locurile **formatat** la a doua cifră după punctul zecimal
 
 |**Tip**|**Preț**|
 |---|---|
@@ -1137,7 +1137,7 @@ public class Main {
 [task-description]
 # Descriere
 
-Scrieți un program **consolă** care să citească **vârstă (număr în virgulă mobilă)** și **sex** ("**m**" sau "**f**") și să imprime o formulă de adresare în funcție de aceste principii:
+Scrieți un program de **consolă** care să citească **vârsta (număr în virgulă mobilă)** și **sexul** ("**m**" sau "**f**") și să imprime o formulă de adresare în funcție de aceste principii:
 - "**Mr.**" - un bărbat (sex "**m**") cu vârsta de 16 ani sau mai mult
 - "**Master**" - un băiat (sex "**m**") sub 16 ani
 - "**Ms.**" - o femeie (sex "**f**") cu vârsta de 16 ani sau mai mult
@@ -1708,7 +1708,7 @@ Dacă punctul NU se află pe o latură:
 
 [hints]
 [hint]
-Utilizați una sau mai multe instrucțiuni condiționale **if** cu operații logice. Un punct `{x, y}` se află pe o laturp a unui dreptunghi `{x1, y1} - {x2, y2}`, dacă una dintre condițiile specificate este îndeplinită:
+Utilizați una sau mai multe instrucțiuni condiționale **if** cu operații logice. Un punct `{x, y}` se află pe o latură a unui dreptunghi `{x1, y1} - {x2, y2}`, dacă una dintre condițiile specificate este îndeplinită:
 
 - **x** este egal cu **x1** sau **x2** și în același timp **y** este între **y1** și **y2**
 - **y** este egal cu **y1** sau **y2** și în același timp **x** este între **x** și **x2**
@@ -1978,7 +1978,7 @@ public class Main {
 # Descriere
 Scrieți un program pentru a-l ajuta pe prietenul vostru să își aleagă hainele **în funcție de partea zilei și de temperatură (în grade; Celsius)**.
 
-Prietenul vostru are planuri diferite pentru fiecare parte a zilei, în funcție de temperatură - vedeți **tabelul** de mai jos.
+Prietenul vostru are planuri diferite pentru ținută în funcție de fiecare parte a zilei și de temperatură - vedeți **tabelul** de mai jos.
 
 | **O parte din zi / Grade** | **Morning** | **Afternoon** | **Evening** |
 | --- | --- | --- | --- |
@@ -2158,7 +2158,9 @@ Tony și prietenii săi au decis să închirieze o barcă de pescuit - tariful d
 - Dacă membrii grupului se află în intervalul \[7 .... 11\] - **15% reducere**
 - Dacă grupul are **12 sau mai multe persoane - 25% reducere**
 
-Pescarii folosesc încă o reducere de **5% dacă sunt un număr par**, cu excepția cazului în care **NU** este toamnă - atunci **NU** au reducere suplimentară.
+Pescarii folosesc o reducere suplimentară de **5% dacă sunt un număr par**.
+
+Dacă este **toamnă** - aceștia **NU** primesc reducere suplimentară.
 
 Scrieți un **program** pentru **a calcula** dacă pescarii vor strânge **suficienți** bani pentru a închiria barca.
 
@@ -2171,7 +2173,7 @@ Intrarea este alcătuită exact din **3 linii**:
 ## Ieșire
 Imprimați pe consolă o linie **unică**:
 - Dacă bugetul **ESTE** suficient: "**Yes! You have** \{**money left**\} **dollars left.**"
-- Dacă bugetul **NU este** suficient: "**Not enough money! You need** \{**money needed**\} **dollars.**"
+- Dacă bugetul **NU ESTE** suficient: "**Not enough money! You need** \{**money needed**\} **dollars.**"
 
 **Prețurile trebuie formatate la a doua zecimală.**
 
@@ -2197,9 +2199,9 @@ Imprimați pe consolă o linie **unică**:
 [hints]
 [hint]
 Determinați reducerea pentru pescari și dacă există vreo reducere suplimentară.
-Vara, pescuitul costă 4200 USD,
+Vara, pescuitul costă 4200 USD
 **11 pescari beneficiază de 15% reducere** -> **4200 - 15% = 3570** $, numărul lor este **impar**, deci **nu** folosesc **reducere suplimentară**.
-3000 <= 3570, deci au nevoie de 570,00 $ mai mult
+3000 <= 3570, deci mai au nevoie de 570,00 $ 
 [/hint]
 [hint]
 Imprimați rezultatul corect.
