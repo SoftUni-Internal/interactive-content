@@ -4,7 +4,7 @@
 
 # Backreferences se potrivesc cu grupurile anterioare
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-14-15-Backreferences-Match-Previous-Groups-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-14-15-Backreferences-Match-Previous-Groups-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
  **Backreferences** sunt o modalitate de a repeta un grup de capturare. O backreference  este utilizată în interiorul unei expresii regulate prin inserarea numărului grupului precedat de o singură bară inversă.
 
