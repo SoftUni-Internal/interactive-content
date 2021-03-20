@@ -1,7 +1,7 @@
-# Teme pentru acasă
+# Teme Pentru Acasă
 
 [slide hideTitle]
-# Problemă cu soluție: Biggest Number
+# Problemă cu Soluție: Biggest Number
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/RO/interactive-programming-basics-with-java-for-loops-35-problem-and-solution-greatest-number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Write your code here
     }
 }
 ```
@@ -21,9 +21,9 @@ public class Program {
 ## Descriere
 Scrieți un program care:
 
-* Citește **n** - număr care reprezintă cantitatea de numere de intrare
+* Citește **n** - totalul de numere întregi care vor fi procesate de program
 * Citește **n numere întregi**
-* Găsește și imprimă **cel mai mare număr**
+* Găsește și imprimă **cel mai mare număr întreg**
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -82,7 +82,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Write your code here
     }
 }
 ```
@@ -172,7 +172,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Write your code here
     }
 }
 ```
@@ -182,7 +182,7 @@ public class Program {
 Scrieți un program care:
 
 * Citește **p - puterea** și **n - numărul**
-* Tipărește rezultatul lui n alimentat de p
+* Tipărește rezultatul lui n la puterea p
 * Nu utilizați `Math.pow()`
 
 ## Exemplu
@@ -225,7 +225,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Write your code here
     }
 }
 ```
@@ -234,10 +234,10 @@ public class Program {
 ## Descriere
 Scrieți un program care:
 
-* Citește numărul **n** și **n perechi** de numere
+* Citește numărul **n** și **n perechi** de numere (faceți suma numerelor din fiecare pereche și apoi comparați sumele perechilor între ele)
 * Tipărește "**Yes, value=**\{**sum**\}", dacă **suma tuturor** perechilor este **aceeași**
 * **În caz contrar**, imprimă "**No, maxdiff=**\{**diff**\}"
-* diff este **diferența maximă** în suma dintre două perechi
+* diff este **diferența maximă** dintre sumele a două perechi
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -368,7 +368,7 @@ Yes, value=10
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Zig Zag Sum
+# Problemă cu Soluție: Zig Zag Sum
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/RO/interactive-programming-basics-with-java-for-loops-35-problem-and-solution-zig-zag-sum-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -379,7 +379,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Write your code here
     }
 }
 ```
@@ -388,7 +388,7 @@ public class Program {
 ## Descriere
 Scrieți un program care:
 
-* Citește **n** - număr care reprezintă cantitatea de numere de intrare
+* Citește **n** - număr care reprezintă totalul de numere care urmează să fie introduse
 * Citește **n numere întregi**
     * pentru fiecare linie **pară**  **se adaugă** numărul la rezultat
     * pentru fiecare linie  **impară**  **se scade** numărul din rezultat
@@ -450,7 +450,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Write your code here
     }
 }
 ```
@@ -459,8 +459,8 @@ public class Program {
 ## Descriere
 Scrieți un program care:
 
-* Citește **n** și **n numere**
-* Găsește în **procente** câte dintre acetea pot fi **împărțite fără rest** la **2**, **3** și **4**
+* Citește **n** și apoi **n numere**
+* Găsește în **procente** câte dintre acestea pot fi **împărțite fără rest** la **2**, **3** și **4**
 * Imprimă procentele p1, p2 and p3, **formatate** până la a două zecimală
 
 ## Exemplu
@@ -513,7 +513,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Write your code here
     }
 }
 ```
@@ -522,7 +522,7 @@ public class Program {
 ## Descriere
 Scrieți un program care:
 
-* Citește **n**- numărul de caractere:
+* Citește **n**- numărul de caractere
 * Dacă caracterul este o **vocală** își adaugă valoarea rezultatului
 
 |caracter|a|e|i|o|u|
@@ -612,16 +612,16 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care:
-
-* Citește **locuri** rollercoaster, **vârsta minimă**, **numărul de persoane** la coadă și **vârsta** pentru fiecare persoană
+Scrieți un program care: determină dacă sunt destui pasageri ca să ocupe toate locurile într-un rollercoaster
+ * Citește **locurile disponibile**, **vârsta minimă**, **numărul de persoane** de la coadă 
+Vârsta fiecărui pasager va fi specificată ca un număr separat.
 * Dacă toate locurile sunt luate, tipăriți - **"The rollercoaster departures"**
 * Într-un alt caz, tipărește **"Waiting..."**
 
@@ -725,7 +725,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Write your code here
     }
 }
 ```
@@ -735,8 +735,8 @@ public class Program {
 Scrieți un program care:
 
 * Citește **n**
-* Tipărește **multiplii n** în formatul "\{n\} x \{i\} = \{result\}"
-* Unde sunt `i` sunt numerele de la **1 până la 10**(**inclusiv**)
+* Tipărește acel număr înmulțit cu `i` "\{n\} x \{i\} = \{result\}"
+* Unde `i` este reprezentat de numerele de la **1 până la 10**(**inclusiv**)
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -808,18 +808,18 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Josh are 18 ani și primește o moștenire care constă din suma de bani X și mașina timpului.
+Josh are 18 ani și primește o moștenire care constă în suma de bani X și o mașină a timpului.
 
 A decis să se întoarcă până în 1800, dar nu știa dacă banii ar fi suficienți pentru a trăi fără să muncească.
 
-Scrieți un program care să calculeze dacă Josh va avea suficienți bani pentru a nu fi nevoit să lucreze până la un anumit an.
-- Presupunând că pentru fiecare an (1800, 1802 etc.) se vor cheltui 12 000 de dolari.
-- Pentru fiecare an impar (1801, 1803 etc.) se vor cheltui 12 000 + 50 \* \[vârsta de abni într-un anumit an\].
+Scrieți un program care să calculeze dacă Josh va avea suficienți bani pentru a nu fi nevoit să lucreze până la un anumit an, specificat de la consolă.
+- În fiecare an par (1800, 1802 etc.) el va cheltui 12 000 de dolari.
+- În fiecare an impar (1801, 1803 etc.) el va cheltui 12 000 + 50 \* \[vârsta sa în acel an\].
 
 ## Intrare
 Intrarea este citită de pe consolă și conține exact 2 linii:
-- Banii vechi - număr real în intervalul \[1,00 ... 1,000,000,00\]
-- An de trăit (inclusiv) - un număr întreg în intervalul \[1801 ... 1900\]
+- Banii moșteniți - număr real în intervalul \[1,00 ... 1,000,000,00\]
+- An până la  care trebuie calculate costurile - un număr întreg în intervalul \[1801 ... 1900\]
 
 
 ## Ieșire
@@ -837,8 +837,8 @@ Imprimați pe consolă o singură linie. Suma trebuie formatată cu două cifre 
 
 [hints]
 [hint]
-Stabiliți câți bani va cheltui Josh în fiecare an și apoi scădeți totalul de bani necesari din banii săi vechi.
-Apoi, tipăriți rezultatul corect
+Stabiliți câți bani va cheltui Josh în fiecare an și apoi scădeți totalul de bani necesari din banii săi moșteniți.
+Apoi, tipăriți rezultatul corect.
 [/hint]
 [/hints]
 
@@ -961,7 +961,7 @@ Scrieți un program pentru a calcula costul mediu pe lună pentru o familie pe o
 - Pentru electricitate - în fiecare lună factura este diferită și va fi citită de pe consolă
 - Pentru apă - 20 $
 - Pentru internet - 15 $
-- Pentru altele - suma facturilor pentru electricitate, apă și Internet și adăugați 20%
+- Pentru altele - însumați facturile pentru electricitate, apă și internet și adăugați 20%
 
 Pentru fiecare factură, trebuie să calculați suma totală plătită pentru toate lunile.
 
@@ -969,7 +969,7 @@ Pentru fiecare factură, trebuie să calculați suma totală plătită pentru to
 
 Intrarea este citită de pe consolă:
 
-- Lunile pentru care se caută costul mediu - număr întreg în intervalul \[1 ... 100 \]
+- Numărul de luni - număr întreg în intervalul \[1 ... 100 \]
 - Pentru fiecare lună - factura pentru electricitate - un număr real în intervalul \[1.00... 1000.00\]
 
 # Ieșire
@@ -980,7 +980,7 @@ Imprimați pe consolă 5 rânduri:
 - "**Other:** \{**total cost for the entire period**\} **$**" 
 - "**Average:** \{**total cost for the entire period**\} **$**"
 
-Toate facturile ar trebui să fie formatate la a doua cifră după punctul zecimal.
+Toate facturile trebuie să fie formatate la a doua cifră după punctul zecimal.
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -998,7 +998,7 @@ Pentru 5 luni:
 - Electricitate -> 68.63 \+ 89.25 \+ 132.53 \+ 93.53 \+ 63.22 = 447.16$
 - Apă -> 5 luni \* 20$ = 100$
 - Internet -> 5 luni \* 15$ = 75$
-- Alții:
+- Altele:
     - 68.63+20+15) + 20% = 124.356  
     - (89.25+20+15) + 20% = 149.1
     - (132.53+20+15) + 20% = 201.036
