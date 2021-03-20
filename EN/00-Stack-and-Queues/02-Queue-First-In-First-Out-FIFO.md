@@ -8,13 +8,13 @@
 
 **Queues** are data structures similar to **stacks**. 
 
-Queue elements are ordered based on the **FIFO** principle - **First In First Out**. 
+Queue elements are ordered according to the **FIFO** principle - **First In First Out**. 
 
 When you add an element, it is always placed **at the bottom** of the queue. 
 
 Removing an element removes it from **the top** of the queue.
 
-This data structure is modeled based on queues in real life, where the person who comes first is served before everyone else.
+This data structure is modeled based on the concept of queues we are all familiar with, where the person who comes first is served before everyone else.
 
 [/slide]
 
@@ -45,7 +45,7 @@ This data structure is modeled based on queues in real life, where the person wh
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-29-30-34-ArrayDeque-Java-Implementation-1-2-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- Queue Implementation using the `ArrayDeque<E>` class:
+- Queue implementation using the `ArrayDeque<E>` class:
 
 ```java
 ArrayDeque<Integer> queue = new ArrayDeque<>();
@@ -65,7 +65,7 @@ ArrayDeque<Integer> queue = new ArrayDeque<>();
     - `poll()` - **returns null** if the queue is empty, otherwise returns the removed element
 
 
-- `peek()` - returns the value of the first element
+- `peek()` - returns the value of the first element (the one on the top)
 
 [/slide]
 
@@ -91,9 +91,9 @@ System.out.println(queue);
 
 They are used in different scenarios:
 
-- if the queue has no size restriction (unlimited capacity queue) - then you can use either of the two functions
+- if the queue has **no size restriction** (unlimited capacity queue) - then you can use either of the two functions
 
-- if the queue is capacity-restricted, it is generally better to use `offer()` because if the function fails, it simply returns **false**
+- if the queue is **capacity-restricted**, it is generally better to use `offer()` because if the function fails, it simply returns **false** without throwing an exception
 
 - if you use `add()` with a capacity-restricted queue and it fails, this would result in an **IllegalStateException** that has to be handled
 
@@ -102,7 +102,7 @@ They are used in different scenarios:
 
 ## Remove() / Poll()
 
-Both functions remove the first (top) element from the queue, removing it from the queue.
+Both functions remove the first (top) element from the queue.
 
 The main difference between the two is that when used on an empty queue `poll()` returns **null**, while `remove()` throws a **NoSuchElementException**.
 
@@ -119,7 +119,7 @@ queue.offer(10);
 System.out.println("The removed element is: " + queue.poll());
 queue.forEach(element -> System.out.print(element + " "));
 ```
-It does not matter if we use **remove()** or **poll()** here. Both would do exactly the same because the queue contains elements.
+It does not matter if we use **remove()** or **poll()** here. Both would do exactly the same because the queue is not empty.
 
 Things are different when working with an empty queue:
 
@@ -167,38 +167,38 @@ queue.forEach(element -> System.out.print(element + " "));
 - `size()` - returns the number of elements in the queue:
 
 ```java live
-ArrayDeque<String> queueOfCars = new ArrayDeque<>();
-queueOfCars.add("Of Mice and Men");
-queueOfCars.add("The Great Escape");
-queueOfCars.add("A Guide in Lucid Dreaming");
+ArrayDeque<String> queueOfBooks = new ArrayDeque<>();
+queueOfBooks.add("Of Mice and Men");
+queueOfBooks.add("The Great Escape");
+queueOfBooks.add("A Guide in Lucid Dreaming");
 
-System.out.println("The size of this queue is: " + queueOfCars.size());
+System.out.println("The size of this queue is: " + queueOfBooks.size());
 ```
 
 - `toArray()` - converts the queue to an array:
 
 ```java live
-ArrayDeque<String> queueOfCars = new ArrayDeque<>();
-queueOfCars.add("Rocket");
-queueOfCars.add("Paper");
-queueOfCars.add("Tank");
+ArrayDeque<String> queueOfWords = new ArrayDeque<>();
+queueOfWords.add("Rocket");
+queueOfWords.add("Paper");
+queueOfWords.add("Tank");
 
-Integer[] arr = queueOfCars.toArray();
+Object[] arr = queueOfWords.toArray();
 
- for (String element: arr) {
-        System.out.println(element);
-    }
+for (int j = 0; j < arr.length; j++) {
+    System.out.println(arr[j]); 
+}
 ```
 
 - `contains(element)` - checks if the queue contains the specified element. Returns **true** if the element is found and **false** if it is not:
 
 ```java live
-ArrayDeque<String> queueOfCars = new ArrayDeque<>();
-queueOfCars.push("Plush Bear");
-queueOfCars.push("Ridiculous Rabbit");
-queueOfCars.push("Boiler");
+ArrayDeque<String> queueOfWords = new ArrayDeque<>();
+queueOfWords.push("Plush Bear");
+queueOfWords.push("Ridiculous Rabbit");
+queueOfWords.push("Boiler");
 
-System.out.println(queueOfCars.contains("BMW 7"));
+System.out.println(queueOfWords.contains("BMW 7"));
 ```
 
 [/slide]
@@ -233,13 +233,13 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Hot potato is a game, in which **kids form a circle and start passing a hot potato**.
+Hot Potato is a game, in which **kids form a circle and start passing a hot potato**.
 
 The counting starts with the first kid.
 
-**Every n-th toss the kid, which holds the potato, leaves the game**.
+**Every n-th toss, the kid holding the potato, leaves the game**.
 
-When a kid leaves the game, it passes the potato forward.
+When a kid leaves the game, it passes the potato to the next kid.
 
 This continues repeating **until there is only one kid left**.
 
@@ -248,6 +248,19 @@ Create a program that simulates the game of Hot Potato.
 **Print the name of every kid that is removed from the circle**.
 
 In the end, **print the name of the last kid**.
+
+## Input
+
+- On the first line, you will receive the names of the kids separated by space
+
+- On the second line, you will receive a number **n** representing the n-th toss of the potato. Remember, **every n-th toss, the kid holding the potato at that point, leaves the game**
+
+## Output
+
+- Each time a kid leaves the game, print a message in the format: `Removed {name}`.
+
+- When the game ends, print the name of the winner: `Last is {name}`
+
 
 ## Examples
 | **Input** | **Output** |
