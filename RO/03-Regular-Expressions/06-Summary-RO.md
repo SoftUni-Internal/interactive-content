@@ -2,7 +2,7 @@
 [slide hideTitle]
 # Rezumat
 
-# În această lecție ați învățat:
+## În această lecție ați învățat:
 
     - Ce reprezintă expresiile regulate
     - Cum să descrieți șablonele de căutare prin text
