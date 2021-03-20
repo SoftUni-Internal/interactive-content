@@ -44,12 +44,12 @@ In the end, if you have **any stored flowers you should make as many wreaths as 
 ## Output
 
 - Print whether you have succeeded making **at least 5 wreaths**: 
-  - **"You made it, you are going to the competition with {count of wreaths} wreaths!"**
-  - **"You didn't make it, you need {wreaths needed} wreaths more!"** 
+  - **"You made it, you are going to the competition with** \{**count of wreaths**\} **wreaths!"**
+  - **"You didn't make it, you need** \{**wreaths needed**\} **wreaths more!"**
 
 ## Constraints
 
-- All of the given numbers will be valid integers in the range **[0, 120]**. 
+- All of the given numbers will be valid integers in the range \[0, 120\]. 
 
 - Don't have situation with negative number.
 
