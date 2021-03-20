@@ -27,7 +27,7 @@ Stacks provide the following functionality:
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-12-ArrayDeque-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
  
-- Stack Implementation using the `ArrayDeque<E>` class:
+- Stack implementation using the `ArrayDeque<E>` class:
 
 ```java
 ArrayDeque<Integer> stack = new ArrayDeque<>();
@@ -147,9 +147,9 @@ Create a program that takes two types of **browser** commands:
 
 - Normal navigation: a **URL**, provided as a **string**
 
-- **back** - command that sets the current URL to the previous URL
+- a **back** - command that sets the current URL to the previous URL
 
-After each command, the program should **print the current URL**. 
+After executing each command, the program should **print the current URL**. 
 
 If the **back** command can not be executed, print: `no previous URLs`.
 
@@ -465,7 +465,7 @@ Implement an elegant solution **using a Stack**.
 
 ## Hints
 - If the given number is 0, print 0
-- Else, while the number is greater than zero, divide it by 2 and push the remаinder into the stack
+- Else, while the number is greater than zero, divide it by 2 and push the remainder into the stack
 
 ```java
 while (decimal != 0) {
@@ -474,7 +474,7 @@ while (decimal != 0) {
 }
 ```
 
-- When you are done dividing, pop all reminders from the stack. This is the binary representation.
+- When you are done dividing, pop all remainders from the stack. This is the binary representation.
 
 
 [/task-description]
