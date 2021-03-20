@@ -4,6 +4,8 @@
 
 # IntelliJ Data Inspection
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-20-21-data-inspections-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The most important part of debugging is the **data inspection**.
 
 It is serious because we can see the **variables** and what they keep in the **memory**. 
@@ -17,6 +19,8 @@ To have a fast resolution time, we need to have better data inspection.
 [slide hideTitle]
 
 # Data Inspection
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-22-intellij-data-inspection-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The build-in debugger from **IntelliJ IDEA** gives us tools for effortless check of the **data inspection.**
 
@@ -44,6 +48,8 @@ Some of them are:
 
 # Variables and Watches Windows
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-23-variables-and-watches-tabs-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The Variables and the Watches tabs give us the freedom to inspect the states of the application.
 
 If we want to track something that is not displayed in the **Variables tab**, we can set up a **watch**.
@@ -62,7 +68,10 @@ Also, we can create custom **watches**, which can contain only variables that we
 
 [slide hideTitle]
 
+
 # Evaluate Expression Window
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-24-evaluate-expression-window-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The debugger allows us to evaluate expressions during the debugging session.
 
@@ -81,6 +90,8 @@ There is a shortcut to access the **evaluation window** - "**Alt + F**".
 
 # Finding a Defect
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-25-26-finding-a-defect-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 When we found an error, we need to take a few steps to fix it.
 
 The first one is to make the error **predictable**.
@@ -97,6 +108,8 @@ If everything works as expected, we can continue with searching for other errors
 
 [slide hideTitle]
 # Tips for Finding Defects
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-27-28-tips-for-finding-defects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Here are some tips for finding errors:
 
@@ -115,6 +128,7 @@ Here are some tips for finding errors:
 
 # Fixing a Defect
 
+
 When the bug is found, we have to fix it.
  
 But before that, we have to understand why the program behaves that way.
@@ -131,6 +145,9 @@ If the test runs without a problem, we can continue with fixing other bugs.
 
 [slide hideTitle]
 # Psychological Considerations
+
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-30-psychological-considerations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The more code we write, the more confidence we have. 
 

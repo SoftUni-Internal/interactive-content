@@ -4,6 +4,8 @@
 
 # What is Debugging?
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-3-4-what-is-debugging-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The process of locating an **error** (**bug**) and after that fixing it, we call **Debugging**.
 
 There are a few steps that we have to follow when we are **debugging** a program:
@@ -23,6 +25,8 @@ The **Debugging tools** are also called **debuggers**.
 [slide hideTitle]
 
 # Debugging vs. Testing
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-5-debugging-vs-testing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 There is a difference between **Testing** and **Debugging**.
 
@@ -46,6 +50,8 @@ The **testing** is done by a tester, while the **debugging** can be done by a pr
 
 # Importance of Debugging
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-6-Importance-of-debugging-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Debugging** is one of the most important steps when developing an application.
 
 Because there are factors that are not predictable or we cannot control.
@@ -67,6 +73,8 @@ An example is the [Cluster Spacecraft Failure](https://en.wikipedia.org/wiki/Clu
 [slide hideTitle]
 
 # Debugging Philosophy
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-7-debugging-philosophy-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can imagine that the **debugging** is a tree.
 
