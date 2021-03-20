@@ -63,6 +63,8 @@ Textul verde evidențiat este un grup care nu este capturat.
 [slide hideTitle]
 # Problemă cu soluție: Match All Words
 
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-22-Match-all-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Creați o **expresie regulată** care **extrage toate cuvintele dintr-un text dat** , folosind următorul site web: 
 [www.regex101.com](www.regex101.com)
 
