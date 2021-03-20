@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Bee
-[code-task title="Problem: Bee" taskId="java-advanced-exam-Bee" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Bee" taskId="java-advanced-exam-Bee" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -56,13 +56,13 @@ The bee needs **at least 5 pollinated flowers**.
 - On the first line:
   - If the bee goes out of its territory print: **"The bee got lost!"**
 - On the second line:
-  - If the bee couldn’t pollinate enough flowers print: **"The bee couldn't pollinate the flowers, she needed {needed} flowers more"**
-  - If the bee successfully pollinated enough flowers print: **"Great job, the bee manage to pollinate {polinationed flowers} flowers!"**
+  - If the bee couldn’t pollinate enough flowers print: **"The bee couldn't pollinate the flowers, she needed** \{**needed**\} **flowers more"**
+  - If the bee successfully pollinated enough flowers print: **"Great job, the bee manage to pollinate** \{**polinationed flowers**\} **flowers!"**
 - In the end print the matrix.
 
 ## Constraints
 
-- The size of the **square** matrix will be between **\[2…10\]**. 
+- The size of the **square** matrix will be between \[2…10\]. 
 
 - There will **always** be **0** or **1** bonus, marked with - **'O'**. 
 
