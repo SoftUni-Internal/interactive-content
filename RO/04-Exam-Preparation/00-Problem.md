@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Password Reset
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/05.Java-Fundamentals-Exam-Preparation/EN/01-password-reset-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/05.Java-Fundamentals-Exam-Preparation/RO/01-password-reset-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Password Reset" taskId="java-fundamentals-part-2-exam-preparation-password-reset" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
