@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Population Counter
-[code-task title="Problem: Population Counter" taskId="java-advanced-exam-Population-Counter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Population Counter" taskId="java-advanced-exam-Population-Counter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -19,7 +19,7 @@ So many people! It’s hard to count them all. But that’s your job as a statis
 
 You get raw data for a given city and you need to aggregate it.  
 
-On each input line you’ll be given data in format: **"city|country|population"**. 
+On each input line you’ll be given data in format: "city\|country\|population". 
 
 There will be **no redundant whitespaces anywhere** in the input. 
 
@@ -27,7 +27,7 @@ Aggregate the data **by country and by city** and print it on the console.
 
 **For each** country, print its **total population** and on separate lines the data for each of its cities. 
 
-**Countries** should be ordered by **their total population in descending order** and within each country, the **cities** should be ordered by **the same criterion. **
+**Countries** should be ordered by **their total population in descending order** and within each country, the **cities** should be ordered by **the same criterion.**
 
 If two countries/cities have the same population, keep them in the **order** in which they were **entered**. 
 
@@ -49,7 +49,7 @@ Check out the examples. Follow the output format strictly!
 
 ## Constraints
 
-- The name of the city, country and the population count will be separated from each other by a **pipe ('|')**. 
+- The name of the city, country and the population count will be separated from each other by a pipe ('\|'). 
 
 - The **number of input lines** will be in the range [2 … 50]. 
 
@@ -57,7 +57,6 @@ Check out the examples. Follow the output format strictly!
 
 - The **population count** of each city will be an integer in the range [0 … 2 000 000 000]. 
 
-- Allowed working time for your program: 0.1 seconds. Allowed memory: 16 MB.  
 
 ## Examples
 
