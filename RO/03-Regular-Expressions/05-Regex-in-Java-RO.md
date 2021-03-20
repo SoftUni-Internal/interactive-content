@@ -42,8 +42,8 @@ Acest obiect de potrivire vă permite apoi să executați **operații regex pe u
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/RO/04.Java-Fundamentals-Regular-Expressions-19-Checking-For-A-Single-Match-and-Demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-metoda `find()` încearcă să găsească apariția șablonului regex înăuntrul unui șir dat.
- **În cazul în care sunt găsite mai multe potriviri** în șir, atunci **primul apel** către `find()` va sări la ** prima apariție **.
+Metoda `find()` încearcă să găsească apariția șablonului regex înăuntrul unui șir dat.
+ **În cazul în care sunt găsite mai multe potriviri** în șir, atunci **primul apel** către `find()` va sări la **prima apariție**.
 După aceea, fiecare apel ulterior către metoda `find ()` va merge la următoarea apariție potrivită, unul câte unul.
 
 Uitați-vă la urmpătorul exemplu:
