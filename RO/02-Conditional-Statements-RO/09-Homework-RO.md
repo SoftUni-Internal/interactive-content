@@ -1008,7 +1008,7 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program care citește un număr întreg de pe consolă și imprimă **ziua săptămânii** (în engleză) în intervalul \[1 ... 7\] și "**Error**" dacă numărul este **nevalid**.
+Scrieți un program care citește un număr întreg de pe consolă și imprimă **ziua săptămânii** (în engleză) în intervalul \[1 ... 7\] sau "**Error**" dacă numărul este **nevalid**.
 
 ## Exemplu
 
@@ -1123,12 +1123,13 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program care imprimă **tipul** unui animal în funcție de **numele său**.
+Scrieți un program care imprimă **tipul** unui animal. Există trei variante posibile de ieșire: **mammal**, **reptile** și **unknown**
 
 ## Intrare / Ieșire
-- Mammals: **dog** 
-- Reptiles: **crocodile**, **tortoise**, **snake** 
-- **Others -> unknown**
+Intrarea poate să aibă următoarele valori:
+- mammals: **dog** 
+- reptiles: **crocodile**, **tortoise**, **snake** 
+- **others -> unknown**
 
 ## Exemplu
 
@@ -1223,12 +1224,10 @@ public class Main {
 ## Descriere
 Prietena dumneavoastră are 3 animale.
 
-Scrieți un **program** care să calculeze **cantitatea de kilograme** de mâncare consumată de către animalele ei în timp ce aceasta este plecată și **verifică dacă mâncarea este suficientă**.
-
-Fiecare animal mănâncă o anumită cantitate de mâncare pe zi.
+Aceasta își dorește să plece într-o excursie și vă cere să o ajutați să determine dacă are mâncare suficientă pentru a hrăni animalele cât timp ea este plecată.
 
 ## Intrare
-Citește **cinci** rânduri de pe consolă:
+Citiți **cinci** rânduri de pe consolă:
 - **Numărul de zile** - un număr întreg în intervalul \[1 ... 5000 \]
 - **Mâncare rămasă în kilograme** - un număr întreg în intervalul \[0 ... 100000 \]
 - **Mâncare pentru câine pe zi în kilograme** -  dublă în intervalul \[0.00…100.00\]
@@ -1237,10 +1236,11 @@ Citește **cinci** rânduri de pe consolă:
 
 ## Ieșire
 Imprimă pe consolă o linie **unică**:
-- Dacă mâncarea rămasă **este suficientă**:
+- Dacă mâncarea **este suficientă**:
   - "\{**kilograms remain**\} **kilos of food left.**" 
   
 Rezultatul trebuie să fie **rotunjit la cel mai apropiat număr întreg inferior**.
+
 - Dacă mâncarea rămasă **nu este suficientă**:
   - "\{**kilograms needed**\} **more kilos of food are needed.**"
   
@@ -1433,24 +1433,24 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-O piscină cu **volum V** este umplută de **două țevi**.
+O piscină cu **volum V** este umplută prin **două conducte**.
 
-**Fiecare țeava are un anumit flux cert** (litri de apă care trec printr-o singură țeava pe oră). 
+**Fiecare conductă are un anumit flux cert** (litri de apă care trec printr-o singură conductă într-o oră). 
 
-Muncitorul pornește conductele **în același timp** și iese pentru  **N ore**.
+Muncitorul pornește conductele **în același timp** și le lasă pornite pentru  **N ore**.
 
 Scrieți un program care să arate starea piscinei **în momentul în care lucrătorul revine**.
 
 ## Intrare
 **Patru** linii de intrare:
-- **V** - **Volumul piscinei în litri** - numere întregi în intervalul \[1 ... 10000\]
-- **P1** - **fluxul primei țevi pe oră** - numere întregi în intervalul \[1 ... 5000\]
-- **P2** - **fluxul celei de-a doua țevi pe oră** - numere întregi în intervalul \[1 ... 5000\]
-- **H** - **ore în care lucrătorul lipsește** - număr cu virgulă mobilă în intervalul \[1.0 ... 24.00\]
+- **V** - **Volumul piscinei în litri** - număr întreg în intervalul \[1 ... 10000\]
+- **P1** - **fluxul primei conducte pe oră** - număr întreg în intervalul \[1 ... 5000\]
+- **P2** - **fluxul celei de-a doua conducte pe oră** - număr întregi în intervalul \[1 ... 5000\]
+- **H** - **ore în care lucrătorul lipsește** - număr în virgulă mobilă în intervalul \[1.0 ... 24.00\]
 
 ## Ieșire
-Imprimă pe consolă **una dintre posibilitățile**:
-- Cât de mult a fost umplută piscina și cât a contribuit fiecare țeavă în procente
+Imprimați pe consolă **una dintre posibilitățile**:
+- Cât de mult a fost umplută piscina și cât a contribuit fiecare conductă în procente
   - "**The pool is** \{**percentage of volume**\}**%** **full.** **Pipe 1:** \{**transferred percentage**\}**%.** **Pipe 2:** \{**transferred percentage**\}**%.**"
 - Dacă piscina este debordantă - câți litri sunt debordați pentru timpul dat
   - "**For** \{**amount of time**\} **hours the pool overflows with** \{**liters of unnecessary water transferred**\} **liters.**"
@@ -1474,14 +1474,16 @@ Imprimă pe consolă **una dintre posibilitățile**:
 
 [hints]
 [hint]
-Pentru 2.5 ore: Prima țeavă se umple cu 300 de  litri
-A doua țeavă se umple cu 250 de litri
-În total – 500 l > 100 l => 400 de litri sunt debordați.
-Calculați capacitatea pentru fiecare țeavă.
+Calculați capacitatea pentru fiecare conductă. 
+Pentru 3 ore: prima conductă are capacitatea de 300 de litri.
+A doua conductă are capacitatea de 360 de litri.
+În total – 660 l < 1000 l => piscina este umplută în proporție de 66%
 [/hint]
 [hint]
-Verificați dacă puterea totală din ambele conducte este suficientă pentru a umple piscina.
+Verificați dacă capacitatea totală a ambelor conducte este suficientă pentru a umple piscina.
 Apoi tipăriți rezultatul corect.
+Prima conductă a contribuit în procent de 45%.
+A douaconductă a contribuit în procent de 55%.
 [/hint]
 
 [/hints]
