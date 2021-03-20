@@ -12,13 +12,13 @@ Before they are modified, these elements need to be **selected** first.
 
 Here are the four ways to select an element:
 
-- `getElementById()` - Returns only **one** element with the desired id
+- getElementById() - Returns only **one** element with the desired id
 
-- `getElementsByTagName()` - Returns an **array** of the elements with this tag
+- getElementsByTagName() - Returns an **array** of the elements with this tag
 
-- `getElementsByClassName()` - Returns an **array** of the elements with this class
+- getElementsByClassName() - Returns an **array** of the elements with this class
 
-- `querySelector()` - Returns the **first** element to match the selector, or **null** if there are none
+- querySelector() - Returns the **first** element to match the selector, or **null** if there are none
 
 [/slide]
 
