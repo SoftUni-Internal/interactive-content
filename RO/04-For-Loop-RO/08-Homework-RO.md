@@ -619,7 +619,7 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care: determină dacă sunt destui pasageri ca să ocupe toate locurile într-un rollercoaster
+Scrieți un program care determină dacă sunt destui pasageri ca să ocupe toate locurile într-un rollercoaster.
  * Citește **locurile disponibile**, **vârsta minimă**, **numărul de persoane** de la coadă 
 Vârsta fiecărui pasager va fi specificată ca un număr separat.
 * Dacă toate locurile sunt luate, tipăriți - **"The rollercoaster departures"**
@@ -1210,7 +1210,7 @@ Average: 89.10 $
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Hospital
+# Problemă cu Soluție: Hospital
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/RO/interactive-programming-basics-with-java-for-loops-35-problem-and-solution-hospital-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -1228,15 +1228,14 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Pentru o perioadă de timp, pacienții ajung în fiecare zi la spital pentru examinare.
 
-ASpitalul are inițial 7 medici.
+Un spital are 7 medici.
 
 Fiecare medic poate examina doar un pacient pe zi, dar uneori există un deficit de medici, astfel încât alți pacienți sunt trimiși la alte spitale.
 
 La fiecare trei zile, spitalul face calcule și dacă numărul pacienților neevaluați este mai mare decât numărul de revizuit, este numit încă un medic.
 
-Deoarece numirea medicului are loc înainte de administrarea pacienților pentru o zi.
+Numirea medicului are loc înainte de preluarea pacienților pentru o zi.
 
 Scrieți un program care să calculeze numărul de pacienți examinați și neexaminați pentru perioada dată.
 
@@ -1244,7 +1243,7 @@ Scrieți un program care să calculeze numărul de pacienți examinați și neex
 Intrarea este citită de pe consolă și conține:
 
 - Perioada pentru care trebuie să efectuați calcule - număr întreg în intervalul \[1... 1000\] 
--În rândurile următoare (egal cu numărul de zile) - numărul de pacienți care sosesc pentru examinare pentru ziua curentă - un număr întreg în intervalul \[0... 10 000\]
+- Pe rândurile următoare (egal cu numărul de zile) - numărul de pacienți care sosesc pentru examinare pentru ziua curentă - un număr întreg în intervalul \[0... 10 000\]
 
 Imprimați pe consolă 2 linii:
 - "**Treated patients:** \{**Number of received patients**\}." 
@@ -1404,7 +1403,7 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program care tipărește numerele din intervalul \[1...1000\], care se termină cu 7.
+Scrieți un program care tipărește numerele din intervalul \[1...1000\] care se termină cu 7.
 
 Imprimați numerele pe o singură linie, separate printr-un singur spațiu.
 
@@ -1452,16 +1451,16 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care citește n - numărul din numerele introduse de utilizator și calculează suma numărului minim și maxim de poziții impar si par (numărând de la 1). 
+Scrieți un program care citește un număr întreg care reprezintă totalul de numere introduse de utilizator și calculează care sunt numerele minime și maxime de pe poziții impare și pare (numărând de la 1). 
 
 Dacă nu există element minim / maxim tipăriți "No".
 
 ## Intrare
-- Pe prima linie de intrare citiți numărul din numerele - N - întreg \[0 ... 100\]
-- La fiecare rând următor, citiți un număr - număr cu floating-point \[-100...100\]
+- Pe prima linie de intrare citiți numărul din numerele - N - număr întreg \[0 ... 100\]
+- Pe fiecare rând următor - număr în virgulă mobilă \[-100...100\]
 
 ## Ieșire
-Rezultatul trebuie formatat în următoarea formă:
+Ieșirea trebuie să aibă următoarea  structură:
 
 - "OddSum=" + \{sum of the numbers on odd positions\},
 - "OddMin=" + \{minimum value of the numbers of odd positions\} / \{"No"\},
@@ -1699,13 +1698,16 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program pentru a calcula statisticile notelor examenului.
+Scrieți un program pentru a calcula statisticile notelor unui examen.
 
-La început, programul primește numărul de elevi care au participat la examen și nota obținută de fiecare elev.
+Programul primește numărul de elevi care au participat la examen și nota obținută de fiecare elev.
 
-În cele din urmă, programul ar trebui să imprime procentul de elevi cu nota cuprinsă între 2,00 și 2,99, între 3,00 și 3,99, 4,00 și 4,99 și între 5,00 sau mai mult.
-
-De asemenea, nota medie a examenului.
+Programul trebuie să imprime procentul de elevi cu nota cuprinsă între 
+ - 2,00 și 2,99 
+ - 3,00 și 3,99
+ - 4,00 și 4,99
+ - 5,00 sau mai mult.
+ - nota medie a tuturor participanților la examen
 
 ## Intrare
 Citiți de pe consolă o serie de numere, fiecare pe o linie separată:
@@ -1739,17 +1741,14 @@ Toate numerele trebuie formatate la a doua zecimală.
 
 [hints]
 [hint]
-Obțineți cantitatea totală de studenți, apoi folosiți o buclă for, determinați câți elevi au note între:
-5 și mai mult
- 
-4 și 4.99
-
-3 și 3.99
-
-Mai puțin decât 3
+Obțineți numărul total de elevi, apoi folosiți o buclă for, determinați câți elevi au note între:
+ - 5 și mai mult
+ - 4 și 4.99
+ - 3 și 3.99
+ - mai mică decât 3
 [/hint]
 [hint]
-Finally, calculate the average grade and print the correct output.
+La final, calculați nota medie și tipăriși ieșirea corectă.
 [/hint]
 [/hints]
 
