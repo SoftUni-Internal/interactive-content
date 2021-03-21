@@ -1,7 +1,7 @@
-# Teme pentru acasă
+# Teme Pentru Acasă
 
 [slide hideTitle]
-# Problemă cu soluție: Building
+# Problemă cu Soluție: Building
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/RO/interactive-programming-basics-with-java-nested-loops-36-problem-and-solution-building-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -20,12 +20,15 @@ public class Main {
 [task-description]
 ## Descriere
 Scrieți un program care:
-
-* Imprimă informații despre **apartamente** (linii impare), **birouri** (linii pare) și **ultimul etaj** (ultima linie)
-* Apartament `"A{buildingNum}{apartmentNum}"`
-* Biroul `"O{floorNum}{officeNum}"`
-* Etajul `"L{buildingNum}{apartmentNum}"`
-* Numerele încep întotdeauna de la 0
+* Imprimă informații despre **clădiri**:
+* Nivelele impare pot fi formate doar din apartamente, indicate prin majuscula `A`
+* Nivelele pare pot fi formate doar din birouri, indicate prin majuscula `O`
+* Ultimul nivel, indiferent de numărul său, poate să fie format doar din apartamente mari, indicate prin majuscula `L`
+* Folosiți următoarele notații pentru spațiile de pe fiecare nivel:
+* Apartamente: `"A{buildingNum}{apartmentNum}"`
+* Birouri: `"O{floorNum}{officeNum}"`
+* Apartamente mari: `"L{buildingNum}{apartmentNum}"`
+* Numărarea nivelurilor începe întotdeauna de la 0
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -190,7 +193,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -274,7 +277,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -282,8 +285,8 @@ public class Main {
 [task-description]
 ## Descriere
 Scrieți un program care:
-* Citește un număr **number - n** de pe consolă
-* Găsește toate  **numerele cu 3 cifre** care produs al multiplicării cifrelor lor este egal cu **n**
+* Citește un număr de pe consolă
+* Găsește toate  **numerele de 3 cifre** care produc acel număr prin multiplicarea tuturor cifrelor lor.
 ## Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
@@ -323,7 +326,7 @@ Scrieți un program care:
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Travelling
+# Problemă cu Soluție: Travelling
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/RO/interactive-programming-basics-with-java-nested-loops-36-problem-and-solution-travelling-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -334,16 +337,18 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
-Scrieți un program care
-* Citește o **destinație** și **bugetul necesar** pentru destinație
-* Continuă să citească numere - sume de bani, până când sunt **suficiente** pentru destinație
+## Descriere
+Scrieți un program care:
+* Citește o **destinație** 
+* Apoi citește **bugetul necesar** pentru destinație
+* Vom primi destinația următoare de la consolă de fiecare dată când atingem bugetul suficient pentru cea curentă.
+* Fiecare linie următoare va conține o sumă de bani, până când bugetul este suficient pentru a realiza această călătorie
 * Dacă primește comanda **"End"**, programul se termină
 
 ## Exemplu
@@ -696,7 +701,7 @@ Going to Albania!
 
 
 [slide hideTitle]
-# Problemă : Prime Numbers
+# Problemă: Prime Numbers
 [code-task title="Prime Numbers" taskId="java-basics-nested-loops-prime-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -704,7 +709,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -725,7 +730,7 @@ Scrieți un program care:
 
 [hints]
 [hint]
-A prime number is a whole number that cannot be created by multiplying other whole numbers.
+Un număr prim este un **număr întreg** care se poate divide doar prin `sine însuși` și prin numărul `1` **fără rest**.
 [/hint]
 [/hints]
 
@@ -810,7 +815,7 @@ A prime number is a whole number that cannot be created by multiplying other who
 [/slide]
 
 [slide hideTitle]
-# Problemă : Unique PIN Codes
+# Problemă: Unique PIN Codes
 [code-task title="Unique PIN Codes" taskId="java-basics-nested-loops-unique-pin-codes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -818,7 +823,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -827,10 +832,10 @@ public class Main {
 ## Descriere
 Scrieți un program care:
 * Citește **3 cifre** - n1, n2 și n3
-* Generează **coduri PIN unice de 3 cifre**, care îndeplinesc următoarele **condiții**
+* Generează **coduri PIN unice de 3 cifre**, care îndeplinesc următoarele **condiții**:
 * **Prima** cifră nu trebuie să fie mai mare decât n1
-* A doua **cifră** nu trebuie să fie mai mare decât n2
-* Cea de-a treia cifră nu trebuie să fie mai mare decât n3
+* **A doua** cifră nu trebuie să fie mai mare decât n2
+* **Cea de-a treia cifră** nu trebuie să fie mai mare decât n3
 * **Prima** și **a treia** cifră trebuie să fie pare
 * A doua cifră trebuie să fie un **număr prim** în intervalul \[2 ... 7 \]
 
@@ -893,7 +898,7 @@ Scrieți un program care:
 [/slide]
 
 [slide hideTitle]
-# Problemă : Letter Combinations
+# Problemă: Letter Combinations
 [code-task title="Letter Combinations" taskId="java-basics-nested-loops-letter-combinations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -901,7 +906,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -909,10 +914,10 @@ public class Main {
 [task-description]
 # Descriere
 Scrieți un program care:
-
-* Tipărește **combinații de litere** și **contează** combinațiile tipărite
-* Veți primi **gama de litere** pe prima și a doua linie
+* Tipărește **combinații de litere** și **numărul** de combinații generate
+* Veți primi **începutul și sfârșitul intervalului de litere** pe prima și a doua linie
 * Pe a treia linie, veți primi o **literă**, pe care trebuie să o **ignorați** - nu tipăriți combinații cu aceasta
+* Generați și tipăriți toate combinațiile de 3 litere, folosind literele din intervalul dat, ignorând litera specificată în intrare.
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
