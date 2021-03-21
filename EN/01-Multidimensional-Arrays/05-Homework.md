@@ -16,7 +16,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write two **methods** that **fill** a **matrix** of size  **N x N** in **two** different **patterns.** Both patterns are described below:
+Write two **methods** that **fill** a **matrix** of size **N x N** in **two** different **patterns.** Both patterns are described below:
 
 [image assetsSrc="Fill-the-Matrix.png"/]
 
@@ -207,9 +207,9 @@ For example:
 
 ## Input
 
-- The numbers **r** and **c** stay at the first line at the input.
-- **r** and **c** are integers in the range `[1 ... 26]`.
-- `r + c <= 27`
+- You will receive a single line of input with two numbers, the number of rows and columns in the multidimensional array
+- The numbers will be integers in the range `[1 ... 26]`.
+- `number1 + number2 <= 27`
 
 ## Examples
 | **Input** | **Output** |
@@ -376,8 +376,8 @@ Create a program that finds the **difference between the sums of the square matr
 
 - Use a **single** loop i = [1 ... n] to sum the diagonals.
 
-- The **primary diagonal** holds all cells `{row,col}` where `row == col == i`.
-- The **secondary diagonal** holds all cells `{row,col}` where `row == i` and `col == n - 1 - i`.
+- The **primary diagonal** holds all cells `{row, col}` where `row == col == i`.
+- The **secondary diagonal** holds all cells `{row, col}` where `row == i` and `col == n - 1 - i`.
 
 
 ## Examples
@@ -385,7 +385,7 @@ Create a program that finds the **difference between the sums of the square matr
 | :---: | :---: | :---: |
 | 3 | 15 | **Primary diagonal:** `sum = 11 + 5 + (-12) = 4`  |
 | 11 2 4 |  | **Secondary diagonal:** `sum = 4 + 5 + 10 = 19`  |
-| 4 5 6 |  | **Difference:** `4 - 19 = 15`  |
+| 4 5 6 |  | **Difference:** `4 - 19 = 15` (absolute) |
 | 10 8 -12 |  |  |
 
 [/task-description]
@@ -504,8 +504,8 @@ Create a program that finds the **difference between the sums of the square matr
 
 
 [slide hideTitle]
-# Problem: Maximal Sum
-[code-task title="Maximal Sum" taskId="java-advanced-multidimensional-arrays-Maximal-Sum" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Maximum Sum
+[code-task title="Maximum Sum" taskId="java-advanced-multidimensional-arrays-Maximal-Sum" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -519,11 +519,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that reads a rectangular integer matrix of size **N x M** and finds the square **3 x 3** that **has the maximal sum of its elements**.
+Create a program that reads a rectangular integer matrix of size **N x M** and finds the **3 x 3** square inside it that **has the biggest sum of elements**.
 
 ## Input
 
-- On the first line, you will receive the rows **N** and columns **M**
+- On the first line, you will receive the rows **N** and the columns **M**
 - On the next **N lines** you will receive **each row with its elements**
 
 Print the **elements** of the 3 x 3 square as a matrix, along with their **sum**. See the format of the output below:
@@ -736,9 +736,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that reads a string matrix from the console and performs certain operations with its elements.
+Create a program that reads a matrix of strings from the console and performs certain operations with its elements.
 
-User input is provided in a similar way as in the problems above - first, you read the **dimensions** and then the **data**.
+User input is provided in a similar way as in the previous task - first, you read the **dimensions** and then the **data**.
 
 Your program should then receive commands in the format: `swap row1 col1 row2c col2` where row1, row2, col1, col2 are **coordinates** in the matrix. 
 
@@ -1093,7 +1093,7 @@ You are given a **sequence of text lines**.
 
 Assume these text lines form a **matrix of characters** (pad the missing positions with spaces to build a rectangular matrix).
 
-Write a program to **rotates the matrix** by 90, 180, 270, 360, … degrees.
+Write a program to **rotate the matrix** by 90, 180, 270, 360, … degrees.
 
 Print the result at the console as a sequence of strings after receiving the `END` command.
 
@@ -1105,9 +1105,9 @@ Print the result at the console as a sequence of strings after receiving the `EN
 
 The input is read from the console:
 
-- The first line holds the command in the format `Rotate(X)` where **X** are the degrees of the requested rotation.
-- The next lines contain the **lines of the matrix** for rotation.
-- The input ends with the command `END`.
+- On the first line, you will receive a command in the format: `Rotate(X)`, where **X** is the degrees of the rotation
+- On the next lines you will receive lines containing the characters in the matrix
+- The input ends with the `END` command 
 
 The input data will always be valid and in the format described. 
 
@@ -1115,13 +1115,13 @@ There is no need to check it explicitly.
 
 ## Output
 
-Print at the console the **rotated matrix** as a sequence of text lines.
+Print **rotated matrix** as a sequence of text lines.
 
 ## Constraints
 
-- The rotation **degrees** is positive integer in the range `[0 ... 90000]`, where **degrees** is **multiple of 90**.
-- The number of matrix lines is in the range `[1 ... 1 000]`.
-- The matrix lines are **strings** of length `[1 ... 1 000]`.
+- The **degrees** will always be a positive integer in the range `[0 ... 90000]`, where **degrees** is **multiple of 90**
+- The number of lines in the matrix is in the range `[1 ... 1000]`
+- The matrix lines are **strings** of length `[1 ... 1000]`
 
 
 ## Examples
@@ -1542,9 +1542,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You will receive **two integers**, which represent the **dimensions** of a **matrix**.
+You will receive **two integers**, representing the **dimensions** of a **matrix**.
 
-Then, you must **fill the matrix** with **increasing integers** starting from 1, and continuing on every row, like this:
+Then, you must **fill the matrix** with **increasing integers** starting from 1, following the below logic for every line:
 
 First row: `1, 2, 3, ..., n`
 Second row: `n + 1, n + 2, n + 3, ..., n + n`
@@ -1562,22 +1562,22 @@ Destroying cells **cross-like** means that you form a **cross figure** with a ce
 
 See the examples for more info.
 
-The **input ends** when you receive the command `Nuke it from orbit`. 
+The **input ends** when you receive the `Nuke it from orbit` command. 
 
 When that happens, you must print what has remained from the initial matrix.
 
 ## Input
 
 - On the first line, you will receive the dimensions of the matrix. You must then fill the matrix according to those dimensions
-- On the next several lines you will begin receiving 3 integers separated by a single **space**, which represents the row, col, and radius.
+- On the next several lines you will begin receiving 3 integers separated by a single **space**, which represent the row, col, and radius
 
 You must then destroy cells according to those coordinates
-- When you receive the command `Nuke it from orbit` the input ends
+- Input stops when you receive the `Nuke it from orbit` command 
 
 ## Output
 
-- The output is simple. You must print what is left from the matrix
-- Every row must be printed on a new line and every column of a row - separated by a space
+- You must print what is left from the matrix after destroing the cells
+- Every row must be printed on a new line and every column element of each row - separated by a space
 
 ## Constraints
 
@@ -2062,13 +2062,13 @@ public class Main {
 ## Description
 Create a program for an automated parking system.
 
-The parking lot is a **rectangular** matrix where the **first** column is **always** free of the other cells are parking spots. 
+The parking lot is a **rectangular** matrix where the **first** column is **always** free and the other cells represent the parking spots. 
 
-A car can enter from **any cell** of the **first column** and then decides to go to a specific spot. 
+A car can enter from **any cell** of the **first column** and then go to a specific spot. 
 
-If that spot is **not** free, the car searches for the **closest** free spot on the **same** row. 
+If that spot is **not** free, search for the **closest** free spot on the **same** row. 
 
-If **all** of the cells, on that specific row, are used, the car cannot park and leaves. 
+If **all** of the cells, on that specific row, are used, the car cannot park and must leave the row. 
 
 If **two** free cells are located at the **same** distance from the **initial** parking spot, the cell which is **closer** to the entrance is preferred. 
 
@@ -2078,17 +2078,17 @@ Your task is to calculate the distance traveled by each car to its parking spot.
 
 Example: A car enters the parking at row 1. 
 
-It wants to go to cells 2, 2 so it moves through **exactly four** cells to reach its parking spot.
+The driver wants to pakr at cell 2, 2 so the car moves trough **exactly four** cells to reach its parking spot.
 
 [image assetsSrc="Java-Advanced-Multidimensional-Arrays-7.png" /]
 
 ## Input
 
-- On the first line of input, you are given the integers **R** and **C**, defining the dimensions of the parking lot
+- On the first line of input, you are given the integers **R** and **C**, representing the dimensions of the parking lot
 
 - On the next several lines, you are given the integers **Z, X, Y** where **Z** is the entry row and **X, Y** are the coordinates of the desired parking spot
 
-- The input stops with the command `stop`
+- The input stops with the `stop` command 
 
 All integers are separated by a **single** space
 
@@ -2101,7 +2101,7 @@ All integers are separated by a **single** space
 
 - `2 <= R,C <= 10000`
 - Z, X, Y are inside the dimensions of the matrix. Y is never on the first column
-- There are no more than 1000 input lines
+- There will be no more than 1000 input lines
 
 ## Examples
 | **Input** | **Output** |
@@ -2566,39 +2566,39 @@ First, you will receive a line holding the integers **N** and **M** , which repr
 
 Then, you will receive **N** amount of strings that can consist **only** of `.`, `B` , `P`. 
 
-The **bunnies** are marked with the letter `B`, the **player** is marked with the letter `P`, and **everything** else is free space, marked with a dot `.`. 
-
 They represent the initial state of the lair. 
+
+The **bunnies** are marked with the letter `B`, the **player** is marked with the letter `P`, and **everything** else is free space, marked with a dot `.`. 
 
 Then, you will receive a string with **commands** such as `LLRRUUDD*` - where each letter represents the next **move** of the player (Left, Right, Up, Down).
 
-**After** each step of the player, each of the bunnies spread to the up, down, left, and right (neighboring cells marked as `.` **changes** their value to `B`). 
+**After** each step of the player, each of the bunnies spread to the up, down, left, and right (neighboring cells marked as `.` **change** their value to `B`). 
 
-If the player **moves** to a cell, which contains a bunny, or a bunny **reaches** the player, the player dies.
+If the player **moves** to a cell, which contains a bunny, or a bunny **reaches** the player, the player loses the game.
 
 If the player goes **out** of the lair **without** encountering a bunny, the player wins.
 
-When the player **dies** or **wins** , the game ends. 
+When the player **loses** or **wins** , the game ends. 
 
-All of the activities for ,**this** turn, continue (e.g. all the bunnies spread normally), but there are no more turns. 
+All of the activities for, **this** turn, continue (e.g. all the bunnies spread normally), but there are no more turns. 
 
-There will be **no** stalemates where the moves of the player end before he dies or escapes.
+There will be **no** stalemates where the moves of the player end before he is defeated or escapes.
 
 Finally, print the final state of the lair with every row on a separate line. 
 
 On the last line, print either `dead: {row} {col}` or `won: {row} {col}`. 
 
-"row" and "col" are the coordinates of the cell where the player has died or the last cell he has been in before escaping the lair.
+"row" and "col" are the coordinates of the cell where the player was defeated or the last cell he has been in before escaping the lair.
 
 ## Input
 
-- On the first line of input, the numbers **N** and **M** are received - the number of **rows** and **columns** in the lair
+- On the first line of input, you will receive **N** and **M** - the number of **rows** and **columns** in the lair
 
-- On the next N lines, each row is received in the form of a string. The string will contain only `.`, `B` , `P`. 
+- On the next N lines, each row is received in the form of a string. The string will contain only `.`, `B` , or `P`
 
 All strings will be the same length. 
 
-There will be only one `P` for all the input
+There will be only one `P` (representing the player)
 
 - On the last line, the directions are received in the form of a string, containing `R`, `L`, `U`, `D`
 
@@ -2610,8 +2610,8 @@ There will be only one `P` for all the input
 ## Constraints
 
 - The dimensions of the lair are in the range `[3 ... 20]`
-- The directions string length is in the range `[1 ... 20]`
-- There will be **only** one player. 
+- The length of the dimensions string is in the range `[1 ... 20]`
+- There will be **only** one player
 
 ## Examples
 | **Input** | **Output** |
@@ -2929,15 +2929,15 @@ Print each diagonal on a new line.
 
 ## Input
 
-On the first line, single integer the number **R** of rows in the matrix. 
+On the first line, you will receive a single integer **R**, representing the number of rows in the matrix. 
 
-On each of the next **R** lines, **C** numbers are separated by single spaces. 
+On each of the next **R** lines, you will receive **C** numbers separated by single spaces. 
 
 Note that **R** and **C** may have different values.
 
 ## Output
 
-The output should consist of R lines, each consisting of exactly C characters, separated by spaces, representing the matrix diagonals reversed.
+The output should consist of **R** lines, each consisting of exactly **C** number of characters, separated by spaces, representing the matrix diagonals reversed.
 
 ## Constraints
 
@@ -3298,32 +3298,32 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You are given a matrix (2D array) of lowercase alphanumeric characters ( `a-z` , `0-9` ), a starting position – defined by a start row `startRow` and a start column `startCol` - and a filling symbol `fillChar`.
+You are given a matrix (2D array) of lowercase alphanumeric characters ( `a-z` , `0-9` ), a starting position – defined by a start row `startRow` and a start column `startCol` - and a filler symbol `fillChar`.
 
 Let us call the symbol originally at `startRow` and `startCol` the `startChar`.
 
-Write a program, which, starting from the symbol at `startRow` and `startCol`, changes to `fillChar` every symbol in the matrix which:
+Write a program, which, starting from the symbol at `startRow` and `startCol`, changes every symbol to `fillChar` if the symbol is:
 
 - is equal to `startChar`
 - can be reached from `startChar` by going up ( `row – 1` ), down ( `row + 1` ), left ( `col – 1` ) and right ( `col + 1` ) and `stepping` ONLY on symbols equal `startChar`
 
-Start from `startRow` and `startCol` and move either by changing the **row** or **column** (not both at once, i.e. you can not go diagonally) by **1**, and can only go to positions that have the `startChar` written on them. 
+Start from `startRow` and `startCol` and move by either changing the **row** or **column** (not both at once, i.e. you cannot go diagonally) by **1**, and can only go to positions that contain `startChar`.
 
-Once you find all those positions, you change them to `fillChar`.
+Once you find all those positions, replace them with the value of `fillChar`.
 
 ## Input
 
-On the first line, two integers will be entered – the number **R** of rows and number **C** of columns.
+On the first line, you will receive two integers – the number **R** (rows) and number **C** (columns).
 
-On each of the next **R** lines, **C** characters separated by single spaces will be entered – the symbols of the **R** row of the matrix, starting from the **0** column and ending at the **C - 1** column.
+On each of the next **R** lines, you will receive **C** characters separated by single spaces – the symbols of the **R** row of the matrix, starting from the **0** column and ending at the **C - 1** column.
 
-On the next line, a single character - the `fillChar` - will be entered.
+On the next line, you will receive a single character - the `fillChar`.
 
-On the last line, two integers - `startRow` and `startCol` - separated by a single space, will be entered.
+On the last line, you will get two integers - `startRow` and `startCol` - separated by a single space.
 
 ## Output
 
-The output should consist of **R** lines, each consisting of exactly **C** characters, **not separated** by spaces, representing the matrix after the fill operation has been finished.
+The output should consist of **R** lines, each consisting of exactly **C** characters, **not separated** by spaces, representing the matrix after the fill operation has been completed.
 
 ## Constraints
 
@@ -3336,7 +3336,7 @@ All symbols in the input matrix will be lowercase alphanumerics ( `a-z` , `0-9` 
 
 ## Hints
 
-For some of the tests, you can solve the problem with a simple approach. The complete solution can be obtained by using **Stack**, **Queue**, **DFS**, or **BFS**.
+The complete solution can be achieved by using **Stack**, **Queue**, **DFS**, or **BFS**.
 
 ## Examples
 | **Input** | **Output** |
