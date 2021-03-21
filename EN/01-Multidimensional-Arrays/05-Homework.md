@@ -524,7 +524,7 @@ Create a program that reads a rectangular integer matrix of size **N x M** and f
 ## Input
 
 - On the first line, you will receive the rows **N** and the columns **M**
-- On the next **N lines** you will receive **each row with its elements**
+- On the next **N lines**, you will receive **each row with its elements**
 
 Print the **elements** of the 3 x 3 square as a matrix, along with their **sum**. See the format of the output below:
 
@@ -1106,7 +1106,7 @@ Print the result at the console as a sequence of strings after receiving the `EN
 The input is read from the console:
 
 - On the first line, you will receive a command in the format: `Rotate(X)`, where **X** is the degrees of the rotation
-- On the next lines you will receive lines containing the characters in the matrix
+- On the next lines, you will receive lines containing the characters in the matrix
 - The input ends with the `END` command 
 
 The input data will always be valid and in the format described. 
@@ -1576,7 +1576,7 @@ You must then destroy cells according to those coordinates
 
 ## Output
 
-- You must print what is left from the matrix after destroing the cells
+- You must print what is left from the matrix after destroying the cells
 - Every row must be printed on a new line and every column element of each row - separated by a space
 
 ## Constraints
@@ -2078,7 +2078,7 @@ Your task is to calculate the distance traveled by each car to its parking spot.
 
 Example: A car enters the parking at row 1. 
 
-The driver wants to pakr at cell 2, 2 so the car moves trough **exactly four** cells to reach its parking spot.
+The driver wants to park at cell 2, 2 so the car moves through **exactly four** cells to reach its parking spot.
 
 [image assetsSrc="Java-Advanced-Multidimensional-Arrays-7.png" /]
 
@@ -2562,7 +2562,7 @@ public class Main {
 [task-description]
 ## Description
 
-First, you will receive a line holding the integers **N** and **M** , which represent the rows and columns in the lair. 
+First, you will receive a line holding the integers **N** and **M**, representing the rows and columns in the lair. 
 
 Then, you will receive **N** amount of strings that can consist **only** of `.`, `B` , `P`. 
 
@@ -2578,7 +2578,7 @@ If the player **moves** to a cell, which contains a bunny, or a bunny **reaches*
 
 If the player goes **out** of the lair **without** encountering a bunny, the player wins.
 
-When the player **loses** or **wins** , the game ends. 
+When the player **loses** or **wins**, the game ends. 
 
 All of the activities for, **this** turn, continue (e.g. all the bunnies spread normally), but there are no more turns. 
 
