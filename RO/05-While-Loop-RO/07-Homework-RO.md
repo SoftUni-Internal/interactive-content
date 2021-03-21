@@ -1,7 +1,7 @@
-# Teme pentru acasă
+# Teme Pentru Acasă
 
 [slide hideTitle]
-# Problemă cu soluție: Sum Digits
+# Problemă cu Soluție: Sum Digits
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/RO/Java-While-Loops-Problem-and-Solution-Sum-Digits-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Scrieți codul dvs. aici
+      // Write your code here
     }
 }
 ```
@@ -94,7 +94,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Write your code here
     }
 }
 ```
@@ -103,8 +103,8 @@ public class Program {
 ## Descriere
 Scrieți un program care: 
 
-* Citește **numele cărții** de pe consolă
-* Primește numele până ce ajunge la **cartea cu același nume ca prima**
+* Citește **numele unei cărți** de pe consolă
+* Primește nume până ce ajunge la **cartea cu același nume ca prima**
 * Imprimă "**Book found! Attempts:** \{**attemptsCount**\}" și după aceea se  oprește
 
 ## Exemplu
@@ -154,7 +154,7 @@ Book found! Attempts: 12
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Find Min and Max
+# Problemă cu Soluție: Find Min and Max
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/RO/Java-While-Loops-Problem-and-Solution-Find-Min-and-Max-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -165,7 +165,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Scrieți codul dvs. aici
+      // Write your code here
     }
 }
 ```
@@ -175,7 +175,7 @@ public class Program {
 Scrieți un program care: 
 
 * Primește numere întregi până la mesajul **"END"**
-* Imprimă **cel mai mare** și **cel mai mic** număr întreg in următorul format:
+* Imprimă **cel mai mare** și **cel mai mic** număr întreg în următorul format:
    * "**Max number:** \{**max number**\}"
    * "**Min number:** \{**min number**\}"
 
@@ -277,14 +277,14 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Scrieți codul dvs. aici
+      // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Desciere
-Numărul special este un număr**divizibil cu toate cifrele sale** fără rest. 
+Numărul special este un număr **divizibil cu toate cifrele sale** fără rest. 
 
 Scrieți un program care: 
 * Primește un număr întreg
@@ -357,7 +357,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Scrieți codul dvs. aici
+      // Write your code here
     }
 }
 ```
@@ -367,7 +367,7 @@ public class Program {
 Scrieți un program care: 
 
 * Citește un număr **întreg** de pe consolă
-* Continuă să citrescă numerele întregi până ce ajunge la **același număr ca primul**
+* Continuă să citescă numerele întregi până ce ajunge la **același număr ca primul**
 * Când îl găsește, crește valoarea **numărului** anterior **dinaintea lui** cu 100% și îl imprimă
 
 ## Exemplu
@@ -425,7 +425,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Write your code here
     }
 }
 ```
@@ -436,7 +436,7 @@ Scrieți un program care:
 
 * Citește un număr **n** de pe consolă
 * Imprimă o **secvență** de numere care sunt **<= n** și îndeplinesc următoarea condiție:
-* Fiecare dintre numere este egal cu numărul aflat imediat inaintea sa, multiplicat cu **2** plus **1**
+* Fiecare dintre numere este egal cu numărul aflat imediat înaintea sa, multiplicat cu **2**, plus **1**
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -538,7 +538,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Scrieți codul dvs. aici
+      // Write your code here
     }
 }
 ```
@@ -548,8 +548,8 @@ public class Program {
 Scrieți un program care: 
 
 * Primește **o sumă de bani** pentru fiecare tranzacție până la **"END"**
-* * Adaugă **banii în** soldul **și** tipărește: "**Increase:**\{**money**\}", formatează `banii` la **a două cifră** după virgula de zecimale 
-* După **"END"** calculează și **imprimă** suma totală din cont: "**Total:** \{**balance**\}", formatează `balance` până la **2nd digit** după punctul zecimal
+* **Adaugă** banii în  **sold** și **tipărește: "**Increase:**\{**money**\}", formatați `banii` la **a două cifră** după punctul zecimal 
+* După **"END"** calculează și **imprimă** suma totală din cont: "**Total:** \{**balance**\}", formatați `balance` până la **a doua cifră** după punctul zecimal
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -602,7 +602,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -613,7 +613,7 @@ Andreea merge acasă după ce a fost plecată mult timp în afara țării.
 
 Când ajunge acasă, ea vede biblioteca bunicii și își amintește de cartea sa preferată.
 
-Ajutați-o pe Andreea scriind un program în care Andreea să pună titlul unei **cărți** pe care o caută  (**un șir**) și **capacitatea** bibliotecii(**un număr întreg**). 
+Ajutați-o pe Andreea scriind un program în care Andreea să introducă titlul unei **cărți** pe care o caută  (**un șir**) și **capacitatea** bibliotecii(**un număr întreg**). 
 
 **Până ce** Andreea găsește cartea sa preferată **sau** nu verifică toate cărțile din bibliotecă, programul trebuie să citească de fiecare dată titlul următoarei cărți pe o linie separată.
 
@@ -640,7 +640,7 @@ Ajutați-o pe Andreea scriind un program în care Andreea să pună titlul unei 
 
 [hints]
 [hint]
-Andreea caută o carte cu titlul "Troy",iar capacitatea bibliotecii este de 8 cărți.
+Andreea caută o carte cu titlul "Troy", iar capacitatea bibliotecii este de 8 cărți.
 [/hint]
 [hint]
 Prima carte este "Stronger", a doua carte este "Life Style", a treia este cea căutată - "Troy" și programul se încheie.
@@ -874,7 +874,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-      // Scrieți codul dvs. aici
+      // Write your code here
     }
 }
 ```
@@ -883,17 +883,17 @@ public class Main {
 ## Descriere
 Scrieți un program prin care Martin rezolvă probleme pentru examen până când primește din partea profesorului său, mesajul: "**Enough**". 
 
-De fiecare dată când rezolvă o problemă, primește o notă. **Programul ar trebui să se oprească ori cînd** Martin primește comanda "Enough" **primește numărul de note slabe**. 
+De fiecare dată când rezolvă o problemă, primește o notă. **Programul trebuie să se oprească când** Martin primește comanda "Enough" sau **primește numărul de note slabe**. 
 
-O notă slabe este mai mică sau egală cu 4.00.
+O notă slabă este mai mică sau egală cu 4.00.
 
-## Input
-- Pe prima linie – **număr de note bune** – un număr întreg în intervalul \[1…5\]
+## Intrare
+- Pe prima linie – **număr de note proaste** – un număr întreg în intervalul \[1…5\]
 - **După aceea în mod repetat două linii**:
   - **numele problemei - text**
   - **notă** - un număr întreg în intervalul\[2…6\]
 
-## Output
+## Ieșire
 - Dacă Martin ajunge la comanda **Enough**", imprimă **3** linii:
   - "**Average score:** \{**average grade**\}"
   - "**Number of problems:** \{**number of ALL problems**\}"
@@ -901,7 +901,7 @@ O notă slabe este mai mică sau egală cu 4.00.
 - **Dacă obține numărul specificat de note slabe **:
    - "**You need a break**, \{**number poor grades**\} **poor grades.**"
 
-**Nota medie ar trebui să fie formatată la a doua zecimală.**
+**Nota medie trebuie să fie formatată la a doua zecimală.**
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -954,7 +954,7 @@ Numărul permis de note mici este 2.
 Numele primei probleme este Income, nota lui Martin este 3.
 A doua problemă - Game Info, nota - 6.
 A treia problemă - Best Player, nota - 4.
-Martin atinge numărul de note mici permise, este timpul pentru break.
+Martin atinge numărul de note mici permise, este timpul pentru o pauză.
 [/hint]
 [/hints]
 [/task-description]
@@ -1242,7 +1242,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -1251,12 +1251,12 @@ public class Main {
 ## Descriere
 Gaby vrea să înceapă o viață sănătoasă și își propune să meargă **10000 de pași** pe **zi**.
 
-Scrieți un program **care citește de pe consolă câte pași** Gaby merge de fiecare dată când iese și **când ajunge obiectivul stabilit**, printează mesajul: 
+Scrieți un program **care citește de pe consolă câți pași** Gaby merge de fiecare dată când iese și **când atinge obiectivul stabilit**, printează mesajul: 
 - "**Goal reached! Good job!**"
 
-In cazul în care vrea să ajungă acasă **înainte de** atingerea scopului, va introduce comanda "**Going home**" și numărul de **pași** pe care i-a **mers** în timp ce **gmerge acasă**. 
+În cazul în care vrea să ajungă acasă **înainte de** atingerea scopului, va introduce comanda "**Going home**" și numărul de **pași** pe care i-a **făcut** în timp ce **gmerge acasă**. 
 
-După aceea, dacă nu ajunge să atingă obiectivul, va trebui să imprime mesajul următor pe consolă: 
+După aceea, dacă nu reușește să atingă obiectivul, va trebui să imprime mesajul următor pe consolă: 
 - "\{**difference in steps**\} **more steps to reach goal.**"
 
 ## Exemple
@@ -1493,28 +1493,28 @@ public class Main {
 ## Descriere
 John lucrează la un restaurant și este responsabil de încărcarea mașinii de spălat vase, la finalul zilei.
 
-Tema este să scriem un program care să calculeze **dacă** o cantitate de sticle și detergent este  **suficientă** pentru spălarea unui anumit număr de vase.
+Sarcina voastră este să scrieți un program care să calculeze **dacă** o cantitate de sticle de detergent este  **suficientă** pentru spălarea unui anumit număr de vase.
 
 Știm că fiecare sticlă conține **750 ml.** de detergent. 
 
-Pentru un număr de 1 **farfurie** sunt necesari 5 ml, iar pentru 1 **cană** 15 ml. 
+Pentru o  **farfurie** sunt necesari 5 ml, iar pentru 1 **cană** 15 ml. 
 
-Este acceptat ca la fiecare **a treia** umplere cu vase, mașina de spălat vase este plină doar cu căni, iar în celelalte cazuri cu farfurii. 
+La fiecare **a treia** umplere cu vase, mașina de spălat vase este plină doar cu căni, iar în celelalte cazuri cu farfurii. 
 
 Până la primirea comenzii **"END"** veți continua să primiți numărul de vase care este necesar să fie spălate.
 
-## Input
-Citim din consolă: 
-- **Number of bottles of detergent** care vor fi utilizate pentru spălarea farfuriilor - un număr întreg în gama\[1...10\] 
+## Intrare
+Citiți din consolă: 
+- **Numărul de sticle de detergent** care vor fi utilizate pentru spălarea vaselor - un număr întreg în intervalul \[1...10\] 
 
-Pe fiecare linie **următoare**, până la comanda **"End"** sau până ce **cantitatea de detergent este epuizată**, **numărul de vase** care trebuie să fie spălate - un număr întreg în gama \[1...100\]
+Pe fiecare linie **următoare**, până la comanda **"End"** sau până ce **cantitatea de detergent este epuizată**, **numărul de vase** care trebuie să fie spălate - un număr întreg în intervalul \[1...100\]
 
-## Output
-- In cazul în care cantitatea de detergent **a fost suficientă** pentru spălarea vaselor, printează trei linii de ieșire: 
+## Ieșire
+- În cazul în care cantitatea de detergent **a fost suficientă** pentru spălarea vaselor, printați trei linii de ieșire: 
     - "**Detergent was enough!**"
     - "\{**Number of clean plates**\} **dishes and** \{**number of clean pots**\} **pots were washed.**"
     - "**Leftover detergent** \{**amount of detergent remaining**\} **ml.**" 
-- Dacă cantitatea de detergent **nu a fost suficientă** pentru spălarea vaselor, imprimă următoarea linie: 
+- Dacă cantitatea de detergent **nu a fost suficientă** pentru spălarea vaselor, imprimați următoarea linie: 
     - "**Not enough detergent**, \{**quantity not reached detergent**\} **ml. more necessary!**"
 
 ## Exemplu
@@ -1535,7 +1535,9 @@ Cantitatea de detergent = 2 \* 750 = 1500 ml.
 55 căni = > 55 \* 15 = 825 ml 910\- 825 = 85 ml. (rest)
 [/hint]
 [hint]
-Primim comanda "End", iar când cantitatea este atinsă, mesajul corespunzător este imprimat: number of plates = 53 \+ 65 = 118. Number of pots = 55
+Primim comanda "End". Putem concluziona că detergentul a fost suficient, deci mesajele corespunzătoare trebuie imprimate: 
+- number of plates = 53 \+ 65 = 118
+- number of pots = 55
 [/hint]
 [/hints]
 
@@ -1724,39 +1726,40 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-La un eveniment caritabil, plarra  pentru produsele cumpărate este întotdeauna **alternată**: **plată în numerar și plată cu cardul**. 
+La un eveniment caritabil, plata pentru produsele cumpărate se poate face astfel: **plată în numerar și plată cu cardul**. Metoda de plată alternează astfel:
 
-**Întotdeauna prima metodă de plată este în numerar**.
+ - Prima plată se face în numerar
+ - A doua plată se face cu cardul
+ - A treia plată trebuie să fie în numerar, și asa mai departe
 
 Următoarele reguli de plată au fost stabilite:
 - Dacă produsul **depășește 100 de dolari**, atunci **atunci nu poate fi achitat în numerar**
 - Dacă produsul are prețul **sub 10 dolari**, acesta **acesta nu poate fi achitat cu cardul**
 
-Programul se încheie după ce primim comanda **"End"**, sau după ce **fondurile au fost adunate**.
+Programul se încheie după ce primim comanda **"End"**, sau după ce **fondurile necesare au fost adunate**.
 
-## Input
-Citește din consolă:
-- Suma **așteptată de a fi adunată** din vânzări - un număr întreg în intervalul \[1...10000\] 
+## Intrare
+Citiți din consolă:
+- Suma **care trebuie adunată** din vânzări - un număr întreg în intervalul \[1...10000\] 
+- Pe fiecare linie următoare  până la comanda **"End"** sau până la **adunarea fondurilor necesare**: 
+    - **Prețurile produselor** cumpărate - un număr întreg în intervalul \[1...500\]
 
-Pe fiecare linie urmptoare  până la comanda **"End"** sau până la **adunarea fondurilor necesare**: 
-    - **Prețurile produselor** de cumpărat - un număr întreg în intervalul \[1...500\]
-
-## Output
-Imprimă pe consolă:
-- In cazul unei tranzacții reușite: **"Product sold!"** 
-- In cazul unei tranzacții eșuate: **"Error in transaction!"**  
-- Dacă suma tuturor produselor cumpărate **depășește sau ajunge la suma expectată**, programul a fost finalizat și **două linii** sunt imprimate pe consolă: 
+## Ieșire
+Imprimați pe consolă:
+- În cazul unei tranzacții reușite: **"Product sold!"** 
+- În cazul unei tranzacții eșuate: **"Error in transaction!"**  
+- Dacă suma tuturor produselor cumpărate **depășește sau atinge suma așteptată**, programul a fost finalizat și **două linii** sunt imprimate pe consolă: 
     - **"Average CS: \{average payment in cash per person\}"**
     - **"Average CC: \{average payment by card per person\}"**
 Plățile trebuie **formatate la a două cifră după punctul zecimal**.
-- Când am primit comanda **"End"** , se scrie **o linie**:
+- Când este primită comanda **"End"** , se tipărește **o linie**:
     - **"Failed to collect required money for charity."**
 
 ## Exemplu
@@ -1774,7 +1777,7 @@ Plățile trebuie **formatate la a două cifră după punctul zecimal**.
 
 [hints]
 [hint]
-Condiția este rulată prima oară în **cash payment**, apoi prin **credit card**
+Condiția este rulată prima oară în **numerar**, apoi prin **card**
 120 > 100 tranzacția a fost respinsă 
 8 < 10 tranzacție respinsă
 63 <= 100 => tranzacție reușită
@@ -1785,8 +1788,8 @@ Suma totală colectată: 63 + 256 + 78 + 317 = 714
 714 >= 500
 [/hint]
 [hint]
-Suma totală cash: 63 + 78 = 141;  Suma medie cash: 141/2 = 70.50 
-Totalul din credit cards: 256 \+ 317 = 573; Suma medie din credit card: 573/2 = 286.50
+Suma totală în numerar: 63 + 78 = 141;  Suma medie în numerar: 141/2 = 70.50 
+Totalul din plata cu cardul: 256 \+ 317 = 573; Suma medie din plata cu cardul: 573/2 = 286.50
 [/hint]
 [/hints]
 
@@ -1983,23 +1986,23 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
+Scrieți un program care să calculeze **nota medie** a unui student pentru întreaga sa perioadă de educație.
 
-Scrieți un program care să calculeze **nota medie** a unui student în întreaga sa perioadă de educație.
+## Intrare
+- Pe prima linie, veți primi **numele studentului**
+- Pe fiecare linie următoare sunt notele pe ani
+- Studentul promovează anul dacă **nota anuală este 4.00 sau mai mare** 
+- Dacă nota sa este mai mică decât 4.00, el trebuie să **repete** clasa
 
-## Input
-- Pe prima linie, veți primi **numele studentului**, pe fiecare linie următoare sunt notele pe ani
-- Studentul promovează anul dacă **nota anuală este 4.00 sau mai mare**. 
-- Dacă nota sa este mai mică decât 4.00, el trebuie să **repetă** clasa.
-
-## Output
-- Dacă studentul promovează clasa **12-ea** trebuie să imprime:
+## Ieșire
+- Dacă studentul promovează clasa trebuie să imprimați:
     - "\{**student name**\}**graduated. Average grade:** \{**average grade from his entire education**\}"
 
 **Nota trebuie să fie formatată la a două cifră după punctul zecimal.**
@@ -2183,24 +2186,26 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Omiteți cele **fără litere** și prima apariție a **c**, **o** și **n** (caractere cu cod).
+Vom primi simboluri până când comanda **End** este primită. 
 
-Când **primiți prima dată** una dintre aceste litere, trebuie să o marcați ca vizitată, **dar nu este salvată în cuvânt**.
+Trebuie să omitem caracterele care **nu sunt litere** și prima apariție a **c**, **o** și **n**.
 
-După ce ați găsit **toate cele trei caractere de cod din comandă**, trebuie să imprimați cuvântul cu un spațiu și să resetați numărarea caracterelor de cod.
+Când **primim prima dată** una dintre aceste litere, trebuie să o marcăm ca vizitată, **dar nu este salvată în cuvânt**.
 
-## Input
-- Citiți o secvență de linii cu un singur simbol pe linie, până veți primi comanda "**End**"
+Dacă am găsit **toate cele trei litere din comandă**, trebuie să imprimăm cuvântul nostru cu un spațiu la sfârșit. Trebuie să resetăm numărătoarea apariției fiecărei litere la 0.
 
-## Output
-- Imprimați pe consolă **fiecare cuvânt după comanda secretă** urmată de **spațiu**
+## Intrare
+- Vom primi o secvență de linii cu un singur simbol pe linie, până când primim comanda "**End**"
+
+## Ieșire
+- Imprimați pe consolă cuvântul , urmat de **un spațiu**
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -2217,12 +2222,12 @@ După ce ați găsit **toate cele trei caractere de cod din comandă**, trebuie 
 
 [hints]
 [hint]
-"**H**", "**n**", "**e**", "**l**", "**l**", "**o**", "**o**", "**c**" sunt toate litere citite.
-Mai întâi citim simbolul "**H**" și îl adăugăm la cuvânt. Următorul simbol este "**n**". Face parte din comandă și **nu-l adăugăm la cuvânt când îl întâlnim pentru prima dată**.
-Următoarele simboluri sunt"**e**", "**l**", "**l**" și le adăugăm la cuvânt. Citim "**o**" și îl notăm ca vizitat, dar încă o dată **nu-l** adăugăm la cuvânt. Următoarea literă este din nou  "**o**" și o adăugăm. Următorul simbol este  "**c**" și toate cele trei simboluri pentru comanda secretă sunt deja disponibile.
+"**H**", "**n**", "**e**", "**l**", "**l**", "**o**", "**o**", "**c**" sunt toate literele citite.
+Mai întâi citim simbolul "**H**" și îl adăugăm la cuvânt. Următorul simbol este "**n**". Face parte din comandă și **nu îl adăugăm la cuvânt când îl întâlnim pentru prima dată**.
+Următoarele simboluri sunt"**e**", "**l**", "**l**" și le adăugăm la cuvânt. Citim "**o**" și îl notăm ca vizitat, dar încă o dată **nu îl** adăugăm la cuvânt. Următoarea literă este din nou  "**o**" și o adăugăm. Următorul simbol este  "**c**" și toate cele trei simboluri pentru comanda secretă sunt deja disponibile.
 [/hint]
 [hint]
-Imprimăm "**Hello**",  primim comanda  "End" și progrmaul se încheie. Rezultatul este "Hello".
+Imprimăm "**Hello**",  primim comanda  "End" și programul se încheie. Rezultatul este "Hello".
 [/hint]
 [/hints]
 
