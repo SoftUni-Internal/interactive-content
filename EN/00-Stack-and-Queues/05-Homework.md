@@ -227,24 +227,24 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You have an empty sequence, and you will be given **N**  commands.
+You have an empty sequence, and you will be given **N** commands.
 
 Each command is one of the following types:
 
 - `1 X` - **Push** the element **X** into the stack
 - `2` - **Delete** the element present at the top of the stack
-- `3` - **Print** the maximum element in the stack to the console
+- `3` - **Print** the biggest element in the stack to the console
 
 ## Input
 
 - The first line of input contains an integer **N**, where `1 ≤ N ≤ 10 ^ 5`
-- The next  **N** lines contain commands. All commands will be valid and in the format described
+- The next  **N** lines contain commands. All commands will be valid and in the described format
 - The element **X** will be in the range `1 ≤ X ≤ 10 ^ 9`
 - The **type of the command** will be in the range `1 ≤ Type ≤ 3`
 
 ## Output
 
-- For each command of type `3`, **print the maximum element** in the stack on a new line
+- For each command of type `3`, **print the biggest element** in the stack on a new line
 
 ## Examples
 | **Input** | **Output** | **Comments** |
@@ -256,9 +256,9 @@ Each command is one of the following types:
 | 2 |  | Pop an element |
 | 1 26 |  | Push 26 |
 | 1 20 |  | Push 20 |
-| 3 | 26 | Print the maximum element (26) |
+| 3 | 26 | Print the biggest element (26) |
 | 1 91 |  | Push 91 |
-| 3 |91 | Print the maximum element (91) |
+| 3 |91 | Print the biggest element (91) |
 
 [/task-description]
 [code-io /]
@@ -586,11 +586,11 @@ When a **robot is free** it should **take a product for processing**, log the ro
 
 Each robot **processes a product coming from the assembly line**. 
 
-A **product is coming** from the line **each second** (so the first product should appear at `[start time + 1 second]`). 
+A **product is coming** from the line **each second** (so the first product should appear at \[start time + 1 second\]). 
 
-If a product passes the line and **no robot is currently free** to take it, it should be **queued at the end of the line again**.
+If a product passes through the assembly line and **no robot is currently free** to take it, it should be **queued at the end of the line again**.
 
-The robots are **standing at the assembly line in the order of their appearance**.
+The robots are **standing at the assembly line in the order of their appearance in the input**.
 
 ## Input
 
@@ -1307,7 +1307,7 @@ public class Main {
 [task-description]
 ## Description
 
-**Given a sequence consisting of parentheses**, determine **whether the expression is balanced**.
+**Given a sequence of parentheses**, determine **whether the expression is balanced**.
 
 A sequence of parentheses **is balanced if** every open parenthesis can be paired uniquely with a closing parenthesis that occurs after the opening parenthesis.
 
@@ -1315,9 +1315,9 @@ Also, **the interval between them must be balanced**.
 
 You will be given three types of parentheses: `(`,  `{`, and `[`.
 
-`{[()]}` - these are balanced parenthesis.
+`{[()]}` - these are balanced parentheses.
 
-`{[(])}` - these are not balanced parenthesis.
+`{[(])}` - these are not balanced parentheses.
 
 ## Input
 
@@ -1449,10 +1449,11 @@ Therefore the sequence goes like 1, 1, 2, 3, 5, 8, 13, 21, 34...
 
 The following sequence can be generated with an array, but that is easy, so **your task is to implement it recursively**.
 
-If the function `getFibonacci(n)` returns the nth Fibonacci number, we can express it using 
-`getFibonacci(n) = getFibonacci(n-1) + getFibonacci(n-2)`.
+If the function `getFibonacci(n)` returns the nth Fibonacci number, we can express it using:
 
-However, this function would never stop, resulting in a Stack Overflow Exception.
+`getFibonacci(n) = getFibonacci(n-1) + getFibonacci(n-2)`
+
+However, this function's recursion would never stop, resulting in a Stack Overflow Exception.
 
 In order to stop the recursion, it has to have a "bottom". 
 
@@ -1462,7 +1463,7 @@ The same goes for getFibonacci(0)`.
 
 ## Input
 
-- You will receive the wanted Fibonacci number N on a single line.  It will always be in the range `1 <= N <= 49` 
+- You will receive the required Fibonacci number **N** on a single line.  It will always be in the range `1 <= N <= 49` 
 
 ## Output
 
@@ -1591,7 +1592,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You are given a task to create  a simple text editor.
+You are given a task to create a simple text text editor.
 
 Your task is to implement **4 types of commands** for text manipulation:
 
@@ -1604,7 +1605,7 @@ Your task is to implement **4 types of commands** for text manipulation:
 
 - The first line contains **N**, the number of operations, where `1 ≤ N ≤ 105`
 - Each of the following **N** lines contains the name of the operation, followed by the command argument, if any, separated by space in the following format `command argument`
-- **The length of the text** will not exceed **1000000**
+- **The length of the text** will not exceed **1000000** characters
 - All input characters will be **English letters**
 - It is **guaranteed** that the sequence of **input operations is possible to perform**
 
