@@ -29,7 +29,7 @@ It might look like this:
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/interactive-java-advanced-multidimensional-arrays-8-Declaring-And-Creating-Array-And-Demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Two of the **most used** multi-dimensional arrays are **two and three-dimensional array**, known as a `2D` and `3D` array. Anything above is rare.
+Two of the **most used** multi-dimensional arrays are the **two and three-dimensional arrays**, known as a `2D` and `3D` arrays. Anything above thre-dimensions is rarely used.
 
 - Creating Multidimensional Arrays using the `new` - keyword and specifying the size of at least one dimension:
 
@@ -38,11 +38,11 @@ int[][] intMatrix = new int[3][];
 ```
 In this example, we declare an empty two-dimensional array of integers. We use `int[][]` to tell the compiler that we want a two-dimensional array.
 
-Similarly to the one-dimensional array, we use the `new` keyword to allocate memory into the heap for our array. 
+Similarly to the a one-dimensional array, we use the `new` keyword to allocate memory into the heap for our array. 
 
 Notice that we need to provide a size for our multidimensional array and, in this case, our row will contain three elements.
 
-By default, this array will contain only zeros.
+By default, this array will contain only zeroes.
 
 ```java
 String[][][] stringCube = new String[5][5][5];
@@ -50,7 +50,7 @@ String[][][] stringCube = new String[5][5][5];
 
 We can create a multidimensional array with any of the known data types.
 
-Here we create a three-dimensional array of strings. 
+Here we create a three-dimensional array that will hold data of type String. 
 
 [/slide]
 
@@ -116,7 +116,7 @@ System.out.println(element);
 
 ```
 
-- Updating a value on a specific location:
+- Updating a value in a specific location:
 
 ```java 
 int[][] matrix = {
