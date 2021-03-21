@@ -40,8 +40,8 @@ In the example above, we initialize an empty array of integers with a length of 
 
 - `int[]`: to initialize an array, we need to provide a data type
 - `numbers`: is the name of the variable
-- `new int[5]`: creates a new instance of an array, which will hold five integers
-When we iterate through the array, it will be printing zeros because the default value of an integer is zero
+- `new int[5]`: creates a new instance of an array, which can hold up to 5 integers
+When we iterate through the array, it will be printing zeroes because the default value of an integer is zero
 
 
 Here is how to assign values to the Array elements:
@@ -55,7 +55,7 @@ for (int i = 0; i < numbers.length; i++) {
 }
 ```
 
-Using a **for-loop**, we iterate through the length of the array and assign a value to each element and then print the current element. 
+Using a **for-loop**, we iterate through the length of the array and assign a value to each element, and then we print the current element. 
 
 - Accessing array elements:
 ``` java live
