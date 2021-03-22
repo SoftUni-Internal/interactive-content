@@ -1,3 +1,5 @@
+# Citirea și Tipărirea unei Matrice Multidimensională
+
 [slide hideTitle]
 
 # Citirea și Tipărirea unei Matrice Multidimensională
