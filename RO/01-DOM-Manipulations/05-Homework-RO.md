@@ -27,7 +27,7 @@ Fiecare paragraf este inițial ascuns, având atributul de afișare `display:non
 
 Adăugați un **click event listener** fiecărui **div** care afișează paragraful ascuns. 
 
-În final, puteți **adăuga** toate divs la elementul cu  un **id** **conţinut**.
+În final, puteți **adăuga** toate divs la elementul cu un **id** **conţinut**.
 
 # Exemplu
 
