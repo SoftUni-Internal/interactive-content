@@ -45,11 +45,18 @@ The sum must be formatted to the second digit after the decimal point.
 | 100 | |
 | 2 | |
 
-### Comments
-- 8 nights > 7, therefore there is a 5% discount on the price per night, which is 100$
-- 5% of 100 is 5 -> 100 - 5 = 95$ per night after the discount, 8 * 95$ = 760$
-- 2% of the budget is spent on additional costs. 2% from 800.50 is 16.01$
-- 760 + 16.01 = 776.01 <= 800.50, therefore they have enough money and after the trip they return keeping 800.50 - 776.01 = 24.49$
+[hints]
+[hint]
+Determine if there will be a discount if the Smiths are staying more than 7 days.
+If there's a discount, calculate how much is it and subtract it from the price per 1 night.
+[/hint]
+[hint]
+Calculate the price for the all the nights and add the additional costs.
+[/hint]
+[hint]
+Check if their budget is sufficient and print the correct output.
+[/hint]
+[/hints]
  
 [/task-description]
 [code-io /]
