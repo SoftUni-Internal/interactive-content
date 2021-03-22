@@ -575,12 +575,13 @@ h1.classList.remove("first"); // elimină „prima" clasă
 
 # Problem with Solution: Growing Word
 
-[code-task title="Problem: Growing Word" taskId="js-advanced-DOM-lab-Growing-Word" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
+[code-task title="Growing Word" taskId="js-advanced-DOM-Growing-Word" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
+```
 function growingWord(){
  // Scrieți codul dvs. aici
 }
-
+```
 [/code-editor]
 [task-description]
 
