@@ -77,15 +77,15 @@ h1.style.color = "blue"; // .color selectează proprietatea CSS care urmează s�
 Există **două** moduri de a crea elemente HTML noi.
 
 Primul mod este să creezi **direct** un element folosind comanda .createElement.
-
+```js
 let h1 = document.createElement("h1");
 let div = document.createElement("div");
-
+```
 Iar celălalt mod este prin copierea elementelor deja **existente**.
-
+```js
 let h1 = document.getElementById("page-title");
 let newH1 = h1.cloneNode(true); //returnează un duplicat al etichetei h1 de mai sus
-
+```
 Este important să știm că, deși aceste elemente sunt create, ele **nu există** în documentul HTML.
 
 Ele sunt doar **variabile Javascript**. 
