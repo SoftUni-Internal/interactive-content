@@ -81,7 +81,7 @@ function clickMe(e) {
 
 [slide hideTitle]
 
-# Atașarea unui Eveniment Hover
+# Atașarea Evenimentelor Hover și Intrare
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/RO/JS-Advanced-DOM-Manipulations-23-24-attaching-hover-event-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -110,7 +110,7 @@ button.addEventListener('mouseover', function(e) {
 });
 ```
 
-## Attaching Input Events
+## Atașarea unui Eveniment Intrare
 
 În acest exemplu, folosim tipul "**input**" pentru a demonstra cum putem activa un buton când scriem ceva în câmpul de intrare. 
 
@@ -227,7 +227,7 @@ function addItem(){
 [task-description]
 # Descriere
 
-***Aici este un link către** [resurse](https://videos.softuni.org/resources/javascript/javascript-advanced/JS-Advanced-DOM-Manipulations-Lab-02.Add-Delete.zip) **pentru această sarcină.**
+**Aici este un link către** [resurse](https://videos.softuni.org/resources/javascript/javascript-advanced/JS-Advanced-DOM-Manipulations-Lab-02.Add-Delete.zip) **pentru această sarcină.**
 
 Extindeți problema anterioară pentru a afișa un link `[Delete]` după fiecare element din listă. 
 
