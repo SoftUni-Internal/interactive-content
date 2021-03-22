@@ -451,7 +451,6 @@ yes
 [/code-task]
 [/slide]
 
-[slide hideTitle]
 
 [slide hideTitle]
 
@@ -582,7 +581,8 @@ function growingWord(){
  // Scrieți codul dvs. aici
 }
 
-[/code-editor][task-description]
+[/code-editor]
+[task-description]
 
 # Descriere
 
