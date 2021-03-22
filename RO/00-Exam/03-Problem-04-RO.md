@@ -57,22 +57,16 @@ Banii trebuie formatați la a doua cifră după punctul zecimal.
 | 7 |  |
 | Party! |  |
 
-### Comentarii
-
-- Scopul clubului este de a colecta 500$
-- Prima comandă este pentru 6 cocktailuri Bellini
-- Prețul cocktailului este lungimea numelui său - 7.6 
-
-Cocktailuri de 7 $ -> 42$, ultima cifră este 2, prin urmare nu există reducere
-
-- Următoarea comandă este pentru 7 cocktailuri Bamboo, prețul său este de 6$
-
-6 * 7-> 42$, din nou nu există reducere
-
-- Primim comanda "**Party!**" Programul se oprește
-- Clubul are 42 + 42 = 84$ și scopul este 500
-
-Sunt necesare 500 - 84 = 416$
+[hints]
+[hint]
+Note that the individual price of each cocktail is the length of its name. If the price for an order is an odd number, apply the discount. 
+Calculate the price for each order and add them to the total.
+[/hint]
+[hint]
+If you reach the desired profit before receiving the "Party!" command, print the correct output.
+If you receive the command "Party!" and you haven't reached the desired profit, determine how much money is needed and print the correct output.
+[/hint]
+[/hints]
 
 [/task-description]
 [code-io /]
