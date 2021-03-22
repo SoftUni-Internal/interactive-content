@@ -48,11 +48,18 @@ Imprimați o linie pe consolă:
 | Without |  |
 | 10 |  |
 
-### Comentarii
-- Sunt selectate 10 cupe de espresso fără zahăr 0.90 fiecare -> 9 $
-- 35% reducere pentru o băutură fără zahăr de 9$ -> 3.15$ -> 9 – 3.15 = 5.85$
-- 25% reducere la achiziționarea a cel puțin 5 cupe de espresso. 25% of 5.85$ -> 1.4625$
-- 5.85 – 1.4625 -> 4.3875$
+[hints]
+[hint]
+Calculate the total price for the drinks. Then check if there's a discount.
+[/hint]
+[hint]
+If there is a discount for the drink, determine how much is it and subtract it from the total price for the drinks.
+[/hint]
+[hint]
+Check if there's any additional discount. 
+Finally, determine the final price and print the correct output. Note that the price must be formatted up to the second decimal place.
+[/hint]
+[/hints]
 
 [/task-description]
 [code-io /]
