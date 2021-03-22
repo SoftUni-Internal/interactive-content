@@ -573,7 +573,7 @@ function heroes(){
 [task-description]
 # Descriere
 
-Creați o funcție care returnează un obiect cu 2 metode "**mage**" și` fighter
+Creați o funcție care returnează un obiect cu 2 metode "**mage**" și "**fighter**".
 
 Acest obiect ar trebui să poată crea eroi "**fighters**" and "**mage**". 
 
@@ -592,8 +592,9 @@ Fiecare mag poate face vrăji. Când se lansează o vrăjeală, mana magului sca
 "\{**mage's name**\} **cast** \{**spell**\}"
 
 
-## Exemplu
-**Intrare**
+# Exemplu
+
+## Intrare
 
 ```js
 let create = solve();
@@ -607,14 +608,16 @@ console.log(scorcher2.stamina);
 console.log(scorcher.mana);
 ```
 
-**Ieșire**
+## Ieșire
 
+```
 Scorcher cast fireball
 Scorcher cast thunder
 Scorcher cast light
 Scorcher 2 slashes at the foe\!
 99
 97
+```
 
 [/task-description]
 [code-io /]
@@ -673,12 +676,14 @@ function constructionCrew(input){
 Scrieți un program care primește un obiect lucrător ca parametru și îi modifică proprietățile.
 
 Lucrătorii au următoarea structură:
-\{
+```
+{
     weight: Number,
     experience: Number,
     levelOfHydrated: Number,
     dizziness: Boolean
-\}
+}
+```
 
 Greutatea este exprimată în kilograme, experiența în ani, iar "**levelOfHydrated**" în mililitri.
 
@@ -692,59 +697,73 @@ Odată ce apa este administrată, schimbați proprietatea de amețeală la **fal
 
 Lucrătorii care nu au amețeli nu trebuie modificați în niciun fel. Întoarce-le așa cum sunt.
 
+# Exemple
+
 ## Exemplu 1 
 
 ## Intrare
-\{
+```
+{
     weight: 80,
     experience: 1,
     levelOfHydrated: 0,
     dizziness: true
-\}
-
+}
+```
 
 ## Ieșire
-\{
+```
+{
     weight: 80,
     experience: 1,
     levelOfHydrated: 8,
     dizziness: false
-\}
+}
+```
+
 ## Exemplu 2
+
 ## Intrare
-\{
+```
+{
     weight: 120,
     experience: 20,
     levelOfHydrated: 200,
     dizziness: true
-\}
+}
+```
   
 ## Ieșire 
-\{
+```
+{
     weight: 120,
     experience: 20,
     levelOfHydrated: 440,
     dizziness: false
-\}
+}
+```
 
 ## Exemplu 3
 
 ## Intrare  
-
-\{
+```
+{
     weight: 95,
     experience: 3,
     levelOfHydrated: 0,
     dizziness: false
-\}
+}
+```
 
 ## Ieșire
-\{
+```
+{
     weight: 95,
     experience: 3,
     levelOfHydrated: 0,
     dizziness: false
-\}
+}
+```
 
 [/task-description]
 [code-io /]
@@ -880,57 +899,65 @@ Formatul va fi după cum urmează:
 }
 ```
 
-
+# Exemple
 
 ## Exemplu 1
 
-## Intrare
-\{
+## Intrare
+```
+{
     model: 'VW Golf II',
     power: 90,
     color: 'blue',
     carriage: 'hatchback',
     wheelsize: 14
-\}
+}
+```
 
 ## Ieșire
- \{
+```
+{
     model: 'VW Golf II',
-    engine: \{
+    engine: {
         power: 90,
         volume: 1800
-    \},
-    carriage: \{
+    },
+    carriage: {
         type: 'hatchback',
         color: 'blue'
-    \},
-    wheels: \[13, 13, 13, 13\]
-\}
+    },
+    wheels: [13, 13, 13, 13]
+}
+```
 
 ## Exemplu 2
-## Intrare
 
-\{
+## Intrare
+```
+{
     model: 'Opel Vectra',
     power: 110,
     color: 'grey',
     carriage: 'coupe',
     wheelsize: 17
-\}
+}
+```
 
 ## Ieșire
-\{
+```
+{
     model: 'Opel Vectra',
-    engine: \{
+    engine: {
         power: 120,
         volume: 2400
-    \},
-    carriage: \{
+    },
+    carriage: {
         type: 'coupe',
         color: 'grey'
-    \},
-    wheels: \[17, 17, 17, 17\]
-\}
+    },
+    wheels: [17, 17, 17, 17]
+}
+```
 
 [/task-description]
 [code-io /]
