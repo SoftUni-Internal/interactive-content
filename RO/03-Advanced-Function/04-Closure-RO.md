@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Ce este închiderea?
+# Ce Este Închiderea?
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/RO/js-advanced-advanced-functions-20-21-closure-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -91,7 +91,7 @@ Scrieți o funcție care păstrează un șir **inside its context** și poate ex
 
 - `removeStart(n)` - **elimina** **primul n** caractere din șir, **n** este un număr întreg
 
-- `removeEnd(n)` - **elimina**  **ultimul n** caractere din șir, **n** fiind un număr întreg
+- `removeEnd(n)` - **elimina** **ultimul n** caractere din șir, **n** fiind un număr întreg
 
 - `print` - **imprimare** șirul stocat în **console**
 

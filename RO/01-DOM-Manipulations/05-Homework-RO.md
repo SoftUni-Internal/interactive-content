@@ -1,4 +1,4 @@
-# Rezumat
+# Teme Pentru Acasă
 
 [slide hideTitle]
 

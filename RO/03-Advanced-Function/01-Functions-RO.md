@@ -157,7 +157,7 @@ Metoda `reduce()` execută funcția callback la **each member of a given array**
 
 Ea acceptă doi parametri :
 
-- Funcția callback **reducer**,  care acceptă un `accumulator` și o `currentValue`
+- Funcția callback **reducer**, care acceptă un `accumulator` și o `currentValue`
 - O `initialValue`, care este opțională
 
 Aici putem vedea **reduce** în acțiune :

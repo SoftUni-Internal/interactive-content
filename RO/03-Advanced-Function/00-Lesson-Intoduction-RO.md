@@ -21,7 +21,7 @@
 - Înțelegerea scopului funcției 
 
 **5. Error Handling**
-- Cum să abordăm rezultatele neașteptate :
+- Cum să abordăm rezultatele neașteptate:
    - abordarea erorilor
    - tipuri de erori 
    - lansarea excepțiilor 

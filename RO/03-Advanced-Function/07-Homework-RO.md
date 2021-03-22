@@ -1,4 +1,4 @@
-# Temă
+# Teme Pentru Acasă
 
 [slide hideTitle]
 # Problemă: Add
@@ -223,7 +223,7 @@ yes
 
 ```
 function filterEmployees(data, criteria) {
-    // Write your solution here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
