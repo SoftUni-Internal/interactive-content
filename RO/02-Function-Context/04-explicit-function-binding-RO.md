@@ -27,7 +27,7 @@ let person = {
 
 speak.call(person, 'This is my story...');
 ```
-În mod normal `this` ar indica  la **global object** sau **window** și ar fi returnat `undefined` pentru `this.name`.
+În mod normal `this` ar indica la **global object** sau **window** și ar fi returnat `undefined` pentru `this.name`.
 
 Am legat în mod explicit obiectul **person** de funcția `speak()` folosind `call()`.
 
@@ -259,7 +259,7 @@ function calculator(area, vol, input) {
 [task-description]
 # Description
 
-Scrieți o funcție care **calculează**  **area** și **volumul** unei figuri, care este **definită** prin **coordonatele sale** 
+Scrieți o funcție care **calculează** **area** și **volumul** unei figuri, care este **definită** prin **coordonatele sale** 
 (**x**, **y**, **z**). 
 
 Funcțiile **zona** și **vol** sunt **transmise ca parametri** funcției dvs:
