@@ -292,7 +292,7 @@ Pentru a preveni acest lucru, putem, de asemenea să **freeze (înghețăm)** pr
 
 # Problem with Solution: Person
 
-[code-task title="Problem: Person" taskId="js-advanced-function-context-lab-Person" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="Person" taskId="js-advanced-function-context-Person" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
 class Person{
     // Scrieți codul dvs. aici
