@@ -20,7 +20,7 @@ public class Main {
 [task-description]
 ## Descriere
 Scrieți un program care:
-* Imprimă informații despre **clădiri**:
+* Imprimă informații despre **o clădire**:
 * Nivelele impare pot fi formate doar din apartamente, indicate prin majuscula `A`
 * Nivelele pare pot fi formate doar din birouri, indicate prin majuscula `O`
 * Ultimul nivel, indiferent de numărul său, poate să fie format doar din apartamente mari, indicate prin majuscula `L`
@@ -185,7 +185,7 @@ A10 A11 A12
 [/slide]
 
 [slide hideTitle]
-# Problemă : Passwords
+# Problemă: Passwords
 [code-task title="Passwords" taskId="java-basics-nested-loops-passwords" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -203,9 +203,9 @@ public class Main {
 Scrieți un program care:
 * Citește un număr întreg - **n**
 * Generează parole personalizate, care îndeplinesc următoarele condiții:
-* Prima **parte** este un  număr **par** și nu trebuie să fie mai mare decât **n**
+* Prima **parte** este un număr **par** și nu trebuie să fie mai mare decât **n**
 * A doua **parte este un** număr impar și nu trebuie să fie mai mare decât **n**
-* Ultima parte **este** produsul din primele două
+* Ultima parte **este** produsul dintre primele două
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -269,7 +269,7 @@ Scrieți un program care:
 [/slide]
 
 [slide hideTitle]
-# Problemă : Magic Number
+# Problemă: Magic Number
 [code-task title="Magic Number" taskId="java-basics-nested-loops-magic-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -286,7 +286,7 @@ public class Main {
 ## Descriere
 Scrieți un program care:
 * Citește un număr de pe consolă
-* Găsește toate  **numerele de 3 cifre** care produc acel număr prin multiplicarea tuturor cifrelor lor.
+* Găsește toate **numerele de 3 cifre** care produc acel număr prin multiplicarea tuturor cifrelor lor.
 ## Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
@@ -345,8 +345,8 @@ public class Main {
 [task-description]
 ## Descriere
 Scrieți un program care:
-* Citește o **destinație** 
-* Apoi citește **bugetul necesar** pentru destinație
+* Primește o **destinație** 
+* Apoi citește **bugetul necesar** pentru vizitarea destinației
 * Vom primi destinația următoare de la consolă de fiecare dată când atingem bugetul suficient pentru cea curentă.
 * Fiecare linie următoare va conține o sumă de bani, până când bugetul este suficient pentru a realiza această călătorie
 * Dacă primește comanda **"End"**, programul se termină
@@ -719,7 +719,7 @@ public class Main {
 Scrieți un program care:
 
 * Citește **două numere** de pe consolă
-* Tipărește numărul **prim** din acel **interval**
+* Tipărește numerele **prime** din **intervalul** format de cele două numere
 
 
 ## Exemplu
@@ -832,7 +832,7 @@ public class Main {
 ## Descriere
 Scrieți un program care:
 * Citește **3 cifre** - n1, n2 și n3
-* Generează **coduri PIN unice de 3 cifre**, care îndeplinesc următoarele **condiții**:
+* Generează toate **codurile PIN unice de 3 cifre**, care îndeplinesc următoarele **condiții**:
 * **Prima** cifră nu trebuie să fie mai mare decât n1
 * **A doua** cifră nu trebuie să fie mai mare decât n2
 * **Cea de-a treia cifră** nu trebuie să fie mai mare decât n3
@@ -914,8 +914,8 @@ public class Main {
 [task-description]
 # Descriere
 Scrieți un program care:
-* Tipărește **combinații de litere** și **numărul** de combinații generate
-* Veți primi **începutul și sfârșitul intervalului de litere** pe prima și a doua linie
+* Tipărește **combinații de 3 litere** și **numărul** de combinații generate
+* Veți primi începutul și sfârșitul **intervalului de litere** pe prima și a doua linie
 * Pe a treia linie, veți primi o **literă**, pe care trebuie să o **ignorați** - nu tipăriți combinații cu aceasta
 * Generați și tipăriți toate combinațiile de 3 litere, folosind literele din intervalul dat, ignorând litera specificată în intrare.
 
@@ -955,7 +955,7 @@ aaa aac aca acc caa cac cca ccc 8
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Happy Numbers
+# Problemă cu Soluție: Happy Numbers
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/RO/interactive-programming-basics-with-java-nested-loops-36-problem-and-solution-happy-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -976,7 +976,7 @@ public class Main {
 Scrieți un program care:
 
 * Citește un număr `n` de la consolă
-* Tipărește **toate numerele din 4 cifre**, care îndeplinesc următoarele condiții:
+* Tipărește **toate numerele de 4 cifre**, care îndeplinesc următoarele condiții:
 * Când **le împărțiți** în două perechi și **adăugați** prima cifră la a doua - rezultatul **este egal cu** `n`
 * Când adăugați primele două cifre una la cealaltă, rezultatul trebuie să fie **divizibil** cu `n` **fără rest**
 
@@ -1074,7 +1074,6 @@ Programul trebuie să înceapă de la ora dată și să ruleze până la 23:59.
 
 Incrementați valoarea orei și a minutelor în mod corespunzător.
 
-
 ## Intrare
 Intrarea constă în **2** linii:
 - Prima linie - ore - număr întreg în intervalul \[0 ... 23 \]
@@ -1082,7 +1081,9 @@ Intrarea constă în **2** linii:
 
 ## Ieșire
 - Orele trebuie să fie tipărite pe consolă în formatul "\{hour\} : \{minutes\}"
-- 
+
+Adăugați zerouri la valoarea orei și a minutelor dacă valorile lor sunt constituite de o singură cifră.
+
 ## Exemplu
 
 | **Intrare** | **Ieșire** |
@@ -1262,7 +1263,7 @@ Scrieți un program pentru a tipări **orele zilei**. De data aceasta, va exista
 
 Programul trebuie să înceapă de la ora dată și să se termine la 23:59:59.
 
-Incrementați valorile secundelor, minutelor și orei în mod corespunzător.
+Incrementați valorile secundelor, minutelor și orelor în mod corespunzător.
 
 ## Intrare
 Intrarea este introdusă din consolă ca **3** linii:
@@ -1569,8 +1570,8 @@ Ajungem la prima combinație validă:
 la 1, a doua combinație validă fiind:
 0\+0\+0\+1\+24=25
 A treia: 0\+0\+0\+2\+23=25  etc.
-După generarea tuturor combinațiilor validd,
-numărul de combinașii valide este 23751.
+După generarea tuturor combinațiilor valide,
+numărul de combinații valide este 23751.
 [/hint]
 [/hints]
 
@@ -1693,7 +1694,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care **calculează valoarea ASCII a câtorva cuvinte**. Cuvântul cu **cea mai mare valoare** este câștigător.
+Scrieți un program care **calculează valoarea ASCII a câtorva cuvinte introduse**. Cuvântul cu **cea mai mare valoare** este câștigător.
 
 Valoarea unui cuvânt este calculată atunci când însumăm valorile **ASCII ale tuturor literelor din care este format**.
 
@@ -1833,10 +1834,9 @@ Fiecare linie trebuie să conțină un singur simbol:
 
 - Simbolurile sunt determinate cu ajutorul [tabelului ASCII]
 
-**Codul ASCII** al acestuia este calculat prin adăugarea **33** la cifra curentă.
+**Codul ASCII** al acestora este calculat prin adăugarea **33** la cifra curentă.
 
 - Simbolul trebuie să fie tipărit **de numărul de ori indicat de cifră**
-
 - Dacă 0 trebuie folosit ca simbol pe o linie, ieșirea va arăta așa: **"ZERO"**
 
 ## Exemplu
@@ -1850,36 +1850,37 @@ Fiecare linie trebuie să conțină un singur simbol:
 
 [hints]
 [hint]
-Numărul 2049 are patru cifre, așa că vom imprima patru rânduri
+Numărul 2049 are patru cifre, așa că vom imprima patru rânduri.
 Prima linie corespunde cifrei 9.
 
 Adunăm 33 la 9 și obținem 42.
 
-Acesta este codul ASCII zecimal al simbolului care trebuie să fie tipărit pe primul rând
-Din tabelul ASCII știm că simbolul corespunzător al lui 42 este "\*"
-Deoarece primei linii îi corespunde cifra 9 imprimăm de 9 ori "\*"
+Acesta este codul ASCII zecimal al simbolului care trebuie să fie tipărit pe primul rând.
+Din tabelul ASCII știm că simbolul corespunzător lui 42 este "\*".
+Deoarece primei linii îi corespunde cifra 9 imprimăm de 9 ori "\*".
 [/hint]
 [hint]
-Pentru a doua linie cifra este 4. 4 \ + 33 = 37
-Folosind tabelul ASCII, descoperim că simbolul care trebuie imprimat este "%".
-Tipărim "%" de 4 ori
+Pentru a doua linie cifra este 4. 4\+33=37. Folosind tabelul ASCII, descoperim că simbolul care trebuie imprimat este "%".
+Tipărim "%" de 4 ori.
 [/hint]
 [hint]
-A treia linie corespunde cu cifra 0. Pe această linie tipărim ZERO o dată.
+A treia linie corespunde cu cifra 0. 
+
+Pe această linie tipărim ZERO o dată.
 [/hint]
 [hint]
-Ultima cifră a numărului este 2. 2 \+ 33 = 35.
-Din tabelul ASCII găsim simbolul de imprimat - '\#' și îl imprimăm de două ori
+Ultima cifră a numărului este 2. 2\+33=35.
+Din tabelul ASCII găsim simbolul de imprimat - '\#' și îl imprimăm de două ori.
 [/hint]
 [/hints]
 
 [hints]
 [hint]
-Citiți numărul ca un șir, salvați lungimea acestuia într-o variabilă folosind metoda **length()**
+Citiți numărul ca un șir, salvați lungimea acestuia într-o variabilă folosind metoda **length()**.
 
-Găsiți mai multe **informații** despre aceasta pe Internet.
+Găsiți mai multe **informații** despre asta pe Internet.
 
-Pentru a lua ultima cifră a numărului, împărțiți-l la 10 (**num% 10**) și salvați-l într-o variabilă
+Pentru a lua ultima cifră a numărului, împărțiți-l la 10 (**num % 10**) și salvați-l într-o variabilă.
 
 Apoi **eliminați ultima cifră a numărului**, împărțindu-l la 10 (**num / 10**) astfel încât următoarea cifră care trebuie luată să fie din nou ultima.
 [/hint]
@@ -2089,14 +2090,14 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Cursul "Antrenează antrenorii" se încheie și evaluările finale se apropie.
+Cursul "Antrenează antrenorii" se încheie și evaluarea finală se apropie.
 
-Ajutați juriul scriind un program care să calculeze **scorul mediu** al **fiecărei prezentări** făcută de către un antrenor și **media tuturor acestora**.
+Ajutați juriul scriind un program care să calculeze **scorul mediu** al **fiecărei prezentări** făcute de către un antrenor și **media tuturor acestora**.
 
 ## Intrare
 - Pe primul rând al consolei citiți numărul de persoane din juriu - **n** - un număr întreg în intervalul \[1 ... 20 \]
 - Apoi, pe o linie separată, citiți numele prezentării - **Șir**
-- Pentru fiecare prezentare, liniile următoare de intrare vor furniza note de la fiecare membru al juriului- numere reale în intervalul \[2.00 ... 6.00 \]
+- Pentru fiecare prezentare, liniile următoare de intrare vor furniza note de la fiecare membru al juriului - numere reale în intervalul \[2.00 ... 6.00 \]
 
 ## Ieșire
 - După calcularea **scorului mediu** pentru o anumită prezentare, tipăriți pe consolă:
