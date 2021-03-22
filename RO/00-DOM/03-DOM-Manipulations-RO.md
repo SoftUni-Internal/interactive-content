@@ -41,7 +41,7 @@ Iată câteva modalități de a le utiliza:
 
 # Manipulări DOM
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/RO/JS-Advanced-DOM-10-dom-manipulations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/RO/JS-Advanced-DOM-13-14-dom-manipulations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Elementele DOM pot fi **citite** și **prelucrate** folosind Javascript.
 
@@ -464,7 +464,7 @@ yes
 
 [slide hideTitle]
 
-# Proprietăți vs. atribute
+# Proprietăți vs. Atribute
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/RO/JS-Advanced-DOM-20-21-dom-properties-and-html-attributes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -476,7 +476,7 @@ Chiar dacă ar putea arăta la fel, **nu sunt** la fel.
 
 Există proprietăți DOM care **nu corespund** unui element HTML și invers.
 
-**Atributele HTML inițializează proprietățile DOM** și, deși proprietățile DOM **se pot modifica** , un atribut HTML rămâne la fel.
+**Atributele HTML inițializează proprietățile DOM** și, deși proprietățile DOM **se pot modifica**, un atribut HTML rămâne la fel.
 
 [/slide]
 
@@ -598,10 +598,6 @@ h1.classList.remove('first'); // elimină "prima" clasă
 
 # Problem with Solution: Growing Word
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/RO/JS-Advanced-DOM-29-problem-and-explanation-two-growing-word-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/RO/JS-Advanced-DOM-29-solution-two-growing-word-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/RO/JS-Advanced-DOM-29-solution-two-growing-word_1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Growing Word" taskId="js-advanced-DOM-Growing-Word" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
@@ -620,7 +616,9 @@ function growingWord(){
 
 În această problemă, ar trebui **să creați o funcționalitate JS** care **schimbă dimensiunea și culoarea** unui **paragraf** dat **la fiecare clic.**
 
+
 [image assetsSrc="JS-Advanced-DOM-Lab-6.jpg" /]
+
 ```js
 <div id="exercise">
  <div id="colors">

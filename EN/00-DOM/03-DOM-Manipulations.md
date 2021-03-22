@@ -48,7 +48,7 @@ Here are a few ways to utilize them:
 
 # DOM Manipulations
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-10-dom-manipulations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-13-14-dom-manipulations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 DOM elements can be **read** and **manipulated** with JavaScript.
 

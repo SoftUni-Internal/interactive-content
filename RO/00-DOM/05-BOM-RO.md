@@ -12,7 +12,7 @@ Conecteazâ JavaScript la **navigator** la fel cum DOM şi conectează la **docu
 
 **BOM** permite accesarea şi manipularea elementelor navigatorului prin **reprezentarea lor ca obiecte**.
 
-[image assetsSrc="JS-Advanced-DOM.png" /]
+[image assetsSrc="Js-advanced-DOM-1.png" /]
 
 Următoarele comenzi arată câteva dintre obiectele navigatorului:
 
