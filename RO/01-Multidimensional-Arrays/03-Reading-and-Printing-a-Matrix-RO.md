@@ -63,7 +63,7 @@ Accesăm fiecare element al matricei unul câte unul, și le tipărim, separate 
 
 [code-task title="Compare Matrices" taskId="java-advanced-lab-multidimensional-arrays-Compare-Matrices" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
+```java
 import java.util.*;
 
 public class Main {
@@ -567,7 +567,6 @@ Pe **următoarele linii**,  o să aveți elementele pentru fiecare rând **separ
 [/code-task]
 [/slide]
 
-
 [slide hideTitle]
 # Problemă cu Soluția: Maximum Sum of 2X2 Submatrix
 
@@ -575,7 +574,7 @@ Pe **următoarele linii**,  o să aveți elementele pentru fiecare rând **separ
 
 [code-task title="Maximum Sum of 2X2 Submatrix" taskId="java-advanced-lab-multidimensional-arrays-Maximum-Sum-of-2X2-Submatrix" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
+```java
 import java.util.*;
 
 public class Main {
