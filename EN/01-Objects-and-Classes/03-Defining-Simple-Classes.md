@@ -5,7 +5,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-14-15-defining-simple-classes-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-When defining a class, it contains only those components of a class declaration that are required.
+There are some required components to define a class in Java.
 
 The **obligatory** components are:
 
@@ -21,13 +21,13 @@ Not obligatory, but **credential** components are:
 
 - Мethods (constructors, getters, setters, etc.)
 
-Each **class**, **field**, **constructor** or **method** is initialized with an **access modifier** in front, which specifies the **accessibility**. 
+Each **class**, **field**, **constructor**, or **method** can have an **access modifier**, which specifies their **accessibility**.
 
-Тhe **access level** can be **changed** by applying the **access modifier** on it.
+Тhe default **access level** can be **changed** by declaring the class/field/method/etc with the desired modifier.
 
-There is a possibility to generate **automatically** via IntelliJ IDEA **constructors**, **getters**, **setters**, and other most used methods. 
+There is a possibility to **automatically** generate **constructors**, **getters**, **setters**, and other commonly used methods via **IntelliJ IDEA**. 
 
-To do so, just use `Right-click + Generate`. 
+To do so, use `Right-click + Generate`. 
 
 The short command depends on the operation system of the computer: 
 
@@ -45,7 +45,7 @@ The short command depends on the operation system of the computer:
 
 The class naming convention is **PascalCase**. 
 
-The class name should contain descriptive nouns.
+The class name should be descriptive and easy to understand.
 
 Abbreviations are required to be avoided (except widely known, e.g. URL, HTTP, etc.).
 
@@ -63,7 +63,7 @@ public class CompanyEmployee {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-17-Class-Members-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Fields** and **methods** define the **state** and **behavior** of a class.
+**Fields** and **methods** define the **state** and the **behavior** of a class.
 
 **Fields** provide the state of the class and its objects:
 
@@ -97,7 +97,7 @@ Methods describe the **behavior** of an object.
 
 They store **executable code**, which manipulates the **state** when called.
 
-Take a look at how a method affects a field:
+There is an example of how a method can affect a field:
 
 ```java
 class Car {
