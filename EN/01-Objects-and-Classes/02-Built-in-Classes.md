@@ -38,7 +38,7 @@ int randomNumber = rnd.nextInt(10);
 [slide hideTitle]
 # Math
 
-The methods of the `Math` class are **static** and they help perform **numeric operations** and commonly used **mathematical functions** like:
+The methods of the `Math` class are **static** and they help perform **numeric operations** and provide us with commonly used **mathematical functions** like:
 
 - Rounding
 
@@ -54,7 +54,7 @@ The methods of the `Math` class are **static** and they help perform **numeric o
 
 - Trigonometric operations
 
-`Math` methods include:
+The `Math` class **methods** are:
 
 - `abs(a)` - Returns the absolute value of the passed parameter `a`
 
@@ -65,14 +65,14 @@ System.out.println(a);
 System.out.println(b);
 ```
 
-- `ceil(a)` - Rounds the floating point value `a` up to the nearest integer value and is returned as a `double`
+- `ceil(a)` - Rounds the floating-point value `a` up to the nearest integer value. The value is returned as a `double`
 
 ```java live
 double ceil = Math.ceil(8.357);
 System.out.println(ceil);
 ```
 
-- `floor(a)` - Rounds the floating point value `a` down to the nearest integer value and is returned as a `double`
+- `floor(a)` - Rounds the floating-point value `a` down to the nearest integer value. The value is returned as a `double`
 
 ```java live
 double floor = Math.floor(8.357);
@@ -93,7 +93,7 @@ int min = Math.min(5, 10);
 System.out.println(min);
 ```
 
-- `round(a)` - Rounds the floating point value to the nearest integer using the normal math round rules (either up or down)
+- `round(a)` - Rounds the floating-point value to the nearest integer using the specified mathematical rules
 
 ```java live
 double roundedDown = Math.round(29.459);
@@ -120,21 +120,21 @@ double number = Math.sqrt(9);
 System.out.println(number);
 ```
 
-- `toDegrees(a)` - Converts an angle in radians to degrees
+- `toDegrees(a)` - Converts an angle in radians to an equivalent angle in degrees
 
 ```java live
 double degrees = Math.toDegrees(3.141592653589793);
 System.out.println(degrees);
 ```
 
-- `toRadians(a)` - Converts an angle in degrees to radians
+- `toRadians(a)` - Converts an angle in degrees to an equivalent angle in radians
 
 ```java live
 double radians = Math.toRadians(180);
 System.out.println(radians);
 ```
 
-- Trigonometric Functions - Calculate the value of angles in radians `sin(a)` `cos(a)` `tan(a)`
+- Trigonometric Functions - Calculate the value of angles in radians: `sin(a)`, `cos(a)`, `tan(a)`
 
 [/slide]
 
@@ -142,9 +142,9 @@ System.out.println(radians);
 [slide hideTitle]
 # Random
 
-The `java.util.Random` class is used to generate random numbers of types **integer**, **float**, **double**, **long**. 
+The `java.util.Random` class is used to generate generate different random data types such as **integer**, **float**, **double**, **long**. 
 
-The methods from the `Random` class are **not-static**.
+The methods provided from the `Random` class are **not-static**.
 
 The following code is an example of how to create a `Random` **instance**:
 
@@ -157,10 +157,9 @@ public class Main {
     }
 }
 ```
+The `Random` class **methods** are:
 
-These are some of the `Random` methods:
-
-- `nextInt()` - Returns the next pseudorandom `int` value from a random number sequence
+- `nextInt()` - Returns the next pseudorandom `int` value from  this random number generator's sequence
 
 ```java live
 Random random = new Random();
@@ -169,7 +168,7 @@ int number = random.nextInt();
 System.out.println(number);
 ```
 
-- `nextInt(n)` - Returns the next pseudorandom `int` value in the range from 0 (inclusive) to the specified value (exclusive)
+- `nextInt(n)` - Returns the next pseudorandom `int` value between 0 (inclusive) and the specified value (exclusive)
 
 ```java live
 Random random = new Random();
@@ -181,7 +180,7 @@ int numTwo = random.nextInt(10);
 System.out.println(numTwo);
 ```
 
-- `nextDouble()` - Returns the next pseudorandom `double` value in the range from 0.0 to 1.0
+- `nextDouble()` - Returns the next pseudorandom `double` value between 0.0 and 1.0
 
 ```java live 
 Random random = new Random();
@@ -208,19 +207,19 @@ System.out.println(isValid);
 # Problem with Solution: Randomize Words
 
 ## Description
-You are given a **string**, which contains words, separated by a space.
+You will be given a **string** that will contain words separated by a single space.
 
-**Randomize their order** and print **each word at a separate line**.
+**Randomize their order** and print **each word on a new line**.
 
 ## Hints
 
-- Split the input string (by a space) and create an array of words
+- Split the input string (by a single space) and create an array of words
 - Create a random number generator - an object `rnd` of type `Random`
-- In a `for-loop` exchange each number at positions 0, 1, ..., words.Length-1 by a number at random position
+- By using a `for-loop`, exchange each number at positions **0, 1, ..., words.Length-1** with a number at random position
 
-To generate a random number in range use `rnd.nextInt(words.length)`
+To generate a random number in the specified range, use `rnd.nextInt(words.length)`
 
-- Print each word in the array on new line
+- Print out each word on a new line
 
 ## Examples
 
@@ -240,19 +239,19 @@ To generate a random number in range use `rnd.nextInt(words.length)`
 [slide hideTitle]
 # BigInteger
 
-The `java.math.BigInteger` class provides **operations analogues** to all of Java's **primitive integer operations** and for **all relevant methods** from `java.lang.Math;` class.
+The `java.math.BigInteger` class provides **operations analogues** to all of Java's **primitive integer operations** and for **all relevant methods** from the `java.lang.Math;` class.
 
-The `BigInteger` class helps dealing with **very large Integers**. 
+The `BigInteger` class helps dealing with very **big integer** calculations that are outside the limit of all available primitive data types.
 
 Its methods are **non-static**.
 
 This is how to declare a `BigInteger`: 
 
 - `BigInteger num = BigInteger.valueOf(1234567890);`
-  - the number `1234567890` is a `long` variable (64 bits)
+  - the number **1234567890** is a **long** variable (64 bits)
 
 - `BigInteger num = new BigInteger("12345688901234567890");`
-  - the number `12345688901234567890` is too large and cannot fit in 64bits, hence why the parameter is a **numeric String**
+  - the number **12345688901234567890** is too large, so it cannot fit in 64bits. That is why the parameter is a **numeric String**
 
 The `BigInteger` **fields** are:
 
@@ -262,7 +261,7 @@ The `BigInteger` **fields** are:
 
 - `BigInteger.TEN` - Constant ten
 
-The `BigInteger` **methods** are:
+The `BigInteger` class **methods** are:
 
 - `abs()` - Returns the absolute value of the current BigInteger
 
@@ -312,11 +311,11 @@ number = number.pow(2);
 System.out.println(number);
 ```
 
-- `intValue()` - Converts to value to an `int`
+- `intValue()` - Converts the value to an `integer`
 
-- `doubleValue()` - Converts to value to a `double`
+- `doubleValue()` - Converts the value to a `double`
 
-- `toString()` - Returns the String representation
+- `toString()` - Returns the String representation of the value
 
 [/slide]
 
@@ -340,7 +339,8 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You will receive two numbers **(0 to 10 ^ 50)**. Print their sum.
+You will receive two numbers in range \[0 - 10 ^ 50\]. 
+Print out their sum.
 
 ## Examples
 
@@ -455,9 +455,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You will receive N - number in range \[0 - 1000\].
+You will receive a number `N` in range \[0 - 1000\].
 
-Calculate the **Factorial of N** and print the result.
+Calculate the **Factorial of N** and print out the result.
 
 ## Examples
 
