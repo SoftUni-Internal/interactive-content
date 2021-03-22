@@ -4,7 +4,9 @@
 
 # Model de Obiect Document
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-3-4-document-object-model-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/RO/JS-Advanced-DOM-3-4-document-object-model-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+
 
 Fiecare pagină web este un document HTML, care constă din text simplu și etichete.
 
@@ -40,7 +42,7 @@ Iată un exemplu de element HTML:
 
 # HTML DOM
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-5-html-dom-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/RO/JS-Advanced-DOM-5-html-dom-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 DOM-ul HTML este un **Model de obiect** pentru documentul HTML.
 
