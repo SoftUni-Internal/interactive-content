@@ -55,29 +55,16 @@ The amount of money must be formatted up **to the second decimal place**.
 | 7 |  |
 | Party! |  |
 
-### Comments
-- The goal of the club is to collect 500$
-- The first order consists of 6 Bellini cocktails
-- The price of the cocktail is the length of its name - 7
-
-The total cost of the order is 6 * 7$ -> 42$.
-
-Since 42 is an even number, there is no discount.
-
-- The next order is for 7 Bamboo cocktails, its ammount is 6$ 
-
-7 * 6$-> 42$
-
-Again, there is no discount.
-
-- We receive the command "**Party!**"
-
-The program stops.
-- The club has a profit of 42 + 42 = 84$
-
-The target is 500$, which means the goal is not reached. 
-
-500 - 84 = 416$ more is needed.
+[hints]
+[hint]
+Note that the individual price of each cocktail is the length of its name. If the price for an order is an odd number, apply the discount. 
+Calculate the price for each order and add them to the total.
+[/hint]
+[hint]
+If you reach the desired profit before receiving the "Party!" command, print the correct output.
+If you receive the command "Party!" and you haven't reached the desired profit, determine how much money is needed and print the correct output.
+[/hint]
+[/hints]
 
 [/task-description]
 [code-io /]
