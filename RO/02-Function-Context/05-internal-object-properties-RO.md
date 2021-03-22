@@ -4,7 +4,7 @@
 
 # Internal Properties
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-27-28-internal-object-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-27-28-internal-object-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [image assetsSrc="function-context-06.png" /]
 
@@ -50,7 +50,7 @@ Numai proprietățile care sunt **configurable**  pot fi șterse.
 [slide hideTitle]
 # Non-Enumerable Properties
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-29-objects-non-enumerable-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-29-objects-non-enumerable-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Rulați codul de mai jos:
 
@@ -130,7 +130,7 @@ Nici imprimarea obiectului în sine cu `console.log(person)` nu va imprima propr
 [slide hideTitle]
 # Non-Writable Properties
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-30-objects-non-writable-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-30-objects-non-writable-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Valorile proprietăților **non-writable (care nu se pot modifica)** nu pot fi modificate folosind atribuții.
 
@@ -175,7 +175,7 @@ Dacă proprietatea **non-writable** este un obiect, atunci referința obiectului
 
 # Non-Configurable Properties
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-31-object-non-configurable-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-31-object-non-configurable-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Dacă setați **configurable:false**, pentru orice proprietate veți putea modifica doar proprietatea **writable** care este true la false și nimic altceva.
 
@@ -206,7 +206,7 @@ Object.defineProperty(ob, 'a', {
 
 # Object Freeze and Seal
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-32-object-freeze-and-seal-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-32-object-freeze-and-seal-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Sintaxă: `Object.freeze(obj)` și `Object.seal(obj)`
 
@@ -291,6 +291,8 @@ Pentru a preveni acest lucru, putem, de asemenea să **freeze (înghețăm)** pr
 [slide hideTitle]
 
 # Problem with Solution: Person
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-34-solution-person-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Person" taskId="js-advanced-function-context-Person" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```

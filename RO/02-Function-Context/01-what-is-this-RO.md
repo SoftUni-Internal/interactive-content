@@ -4,7 +4,7 @@
 
 # Contextul funcției
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-3-4-what-is-this-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-3-4-what-is-this-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Contextul funcției** se referă la obiectul care **deține** codul, care este în curs de executare.
 
@@ -25,7 +25,7 @@ Funcțiile pot fi apelate în mai multe moduri diferite:
 
 # Ce este "this" 
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-5-this-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-5-this-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Valoarea `this` este întotdeauna o referință la un obiect - obiectul de la care a fost chemat. 
 
@@ -42,7 +42,7 @@ Obiectul la care se face referire prin `this` **se modifică** când se schimbă
 
 # "this" prin referire la obiectul global 
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-6-this-refers-to-the-global-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-6-this-refers-to-the-global-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Dacă `this` este folosit singur, acesta returnează întotdeauna obiectul global - `Object [global]`
 
@@ -61,7 +61,7 @@ Când este rulat, exemplul de mai sus returnează **true**, ceea ce înseamnă c
 
 # "this" în Browser
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-7-this-keyword-in-the-browser-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-7-this-keyword-in-the-browser-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Obiectul global** din browser-ul este **window**. 
 

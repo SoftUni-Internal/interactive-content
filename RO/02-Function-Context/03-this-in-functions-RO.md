@@ -4,7 +4,7 @@
 
 # "this" With Inner Functions
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-13-14-this-with-inner-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-13-14-this-with-inner-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Inner functions** sunt funcții care sunt imbricate în interiorul altor funcții.
 
@@ -34,7 +34,7 @@ Dacă doriți să utilizați `this` în situații similare, puteți face acest l
 [slide hideTitle]
 # "this" With Arrow Functions
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-15-this-with-arrow-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-15-this-with-arrow-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Cu **arrow functions** (`=>`), `this` păstrează valoarea **contextului lexical care o înconjoară**
 

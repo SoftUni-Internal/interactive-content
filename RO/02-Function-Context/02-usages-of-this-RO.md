@@ -4,7 +4,7 @@
 
 # "this" într-o metodă
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-8-9-this-in-a-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-8-9-this-in-a-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Când se află în interiorul unei metode, `this` este folosit pentru a accesa informațiile, stocate în obiect, care "deține" obiectul:
 
@@ -56,7 +56,7 @@ Dacă există o variabilă cu același nume deja definită și dacă este în do
 
 # "this" se referă la obiectul Parent
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-10-this-refers-to-the-parent-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-10-this-refers-to-the-parent-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Luați în considerare exemplul de mai jos:
 
@@ -117,7 +117,7 @@ Returnează **true**, deoarece acum `this` este apelat de funcția **globalFunct
 
 # În Evenimente/Events
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-11-in-events-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-11-in-events-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Atunci când este utilizat în event handler, `this` indică elementul specific din care s-a declanșat evenimentul.
 
@@ -168,7 +168,7 @@ Dacă faceți clic pe butonul din exemplul, se produce următoarul rezultat în 
 
 # In Classes
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-12-this-in-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-12-this-in-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Când este utilizată în clase, valoarea `this` se referă la instanța clasei pe care o inițializați utilizând cuvântul cheie `new`.
 
