@@ -2,9 +2,9 @@
 
 [slide hideTitle]
 
-# Ce este moștenirea?
+# Ce Este Moștenirea?
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-3-4-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/RO/interactive-javascript-advanced-prototypes-and-inheritance-3-4-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Moștenirea este abilitatea unei clase să copieze funcțiile altei clase părinte.
 În JavaScript, **moștenirea** poate fi numită și **Comportament al Delegării**.
@@ -26,17 +26,15 @@ Moștenirea în JavaScript este un tip de **dependență**.
 
 [slide hideTitle]
 
-# Moștenirea simplă
+# Moștenirea Simplă
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-5-simple-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/RO/interactive-javascript-advanced-prototypes-and-inheritance-5-simple-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 O **clasă** copil **moștenește** caracteristicile clasei **părinte**.
 
 Se numește **Moștenire simplă**. 
 
 Acest tip de moștenire se folosește doar pentru **extinderea** clasei părinte.
-
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance.png" /]
 
 Aici avem un exemplu simplu:
 
@@ -70,15 +68,13 @@ Clasa **Dog** va **moșteni** toate caracteristicile clasei **Pet**.
 
 [slide hideTitle]
 
-# Moștenirea pe mai multe nivele
+# Moștenirea pe Mai Multe Nivele
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-6-multi-level-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/RO/interactive-javascript-advanced-prototypes-and-inheritance-6-multi-level-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În **Moștenirea pe mai multe nivele**, clasa **părinte** este moștenită din clasa **nepot** printr-o clasă **copil**.
 
 Clasa **nepot** va obține caracteristicile claselor **părinte** și **copil**.
-
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-1.png" /]
 
 Aici avem un exemplu:
 
@@ -121,15 +117,14 @@ Clasa **Ferrari** va **obține** toate metodele pe care le au clasele **Brand** 
 
 [slide hideTitle]
 
-# Moștenirea ierarhică
+# Moștenirea Ierarhică
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-7-hierarchical-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/RO/interactive-javascript-advanced-prototypes-and-inheritance-7-hierarchical-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În **Moștenirea ierarhică**, mai multe clase **moștenesc caracteristicile** unei **singure clase**.
 
 Dezavantajul este că dacă schimbăm ceva în clasa **părinte**, trebuie s-o schimbăm în toți **copiii**.
 
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-2.png" /]
 
 Aici avem un exemplu:
 
@@ -162,17 +157,16 @@ Toate vor avea proprietățile și caracteristicile clasei **Pet**.
 [/slide]
 
 [slide hideTitle]
-# Moștenirea multiplă
+# Moștenirea Multiplă
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-8-multiple-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/RO/interactive-javascript-advanced-prototypes-and-inheritance-8-multiple-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Moștenirea multiplă** este o caracteristică care moștenește direct din mai multe clase părinte.
 
 Problema la acest tip de moștenire apare atunci când sunt mai multe metode cu același nume în ambele clase. 
 
 Compilatorul nu va știi pe care s-o prioritizeze și aplicația va eșua.
-**JavaScript nu susține moștenirea multiplă.**
 
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-3.png" /]
+**JavaScript nu susține moștenirea multiplă.**
 
 [/slide]

@@ -1,10 +1,10 @@
-# Prototip înlănțuit
+# Prototip Înlănțuit
 
 [slide hideTitle]
 
-# Ce este prototipul?
+# Ce Este Prototipul?
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-19-20-what-is-a-prototype-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/RO/interactive-javascript-advanced-prototypes-and-inheritance-19-20-what-is-a-prototype-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Prototipul este un **obiect**, care are o **proprietate internă**. 
 
@@ -14,7 +14,7 @@ Toate metodele și proprietățile vor fi moștenite de referință în **moște
 
 Ele pot fi folosite de **noul obiect**, dar pot aparține încă prototipului de unde **au venit**.
 
-Asta crează o **legătură ** între **prototip** și **obiectul** moștenit. 
+Asta crează o **legătură** între **prototip** și **obiectul** moștenit. 
 
 Cu alte cuvinte, metodele și proprietățile nu sunt **copiate**, sunt moștenite **de referință**.
 
@@ -47,9 +47,9 @@ Aici avem o funcție **Person** și să adăugăm **naționalitatea** la proprie
 
 [slide hideTitle]
 
-# Lanț de prototip
+# Lanț de Prototip
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-21-prototype-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/RO/interactive-javascript-advanced-prototypes-and-inheritance-21-prototype-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Am creat clasele manual prin funcții înainte de **ES6 (ES2015)**.
 
@@ -84,9 +84,9 @@ Rezultatul va fi afișat pe consolă.
 
 [slide hideTitle]
 
-# Comparație cu noua sintaxă
+# Comparație cu Noua Sintaxă
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-22-comparison-with-the-new-syntax-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/RO/interactive-javascript-advanced-prototypes-and-inheritance-22-comparison-with-the-new-syntax-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 După **ES6**, putem face același lucru din slide-ul precedent cu clase.
 
@@ -120,9 +120,9 @@ Vom afișa rezultatul pe consolă.
 
 [slide hideTitle]
 
-# Crearea de obiecte
+# Crearea de Obiecte
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-23-object-creation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8c" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/RO/interactive-javascript-advanced-prototypes-and-inheritance-23-object-creation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Există două moduri de a crea un obiect. 
 Primul este creația **Literal** și a doua este creația **Constructor**.
@@ -137,11 +137,11 @@ Această proprietate indică către prototipul **set**.
 
 [slide hideTitle]
 
-# object.create()
+# Object.create()
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-18-object-create-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/RO/interactive-javascript-advanced-prototypes-and-inheritance-18-object-create-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-putem folosi `object.create()` când vrem să **extindem** un obiect. 
+Putem folosi `object.create()` când vrem să **extindem** un obiect. 
 
 Folosește un **prototip** obiect **existent** tpentru a **delega** caracteristicile sale unui **nou obiect**.
 
@@ -172,9 +172,9 @@ Rezultatul va fi afișat pe consolă.
 
 [slide hideTitle]
 
-# Obiecte Javascript
+# Obiecte JavaScript
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-24-javascript-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/RO/interactive-javascript-advanced-prototypes-and-inheritance-24-javascript-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Aici avem un exemplu de **creație literală**:
 
@@ -219,9 +219,9 @@ La final vom afișa rezultatul pe care îl returnează metoda `speak()`.
 
 [slide hideTitle]
 
-# Proto vs proprietatea prototipului
+# Proto vs Proprietatea Prototipului
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-25-proto-vs-prototype-property-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/RO/interactive-javascript-advanced-prototypes-and-inheritance-25-proto-vs-prototype-property-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Există o diferență între `__proto__` și **prototype property**.
 
@@ -239,9 +239,9 @@ Obiectele normale **nu au** proprietatea **prototipului**.
 
 [slide hideTitle]
 
-# Accesarea proprietăților private
+# Accesarea Proprietăților Private
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-26-accessing-private-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/RO/interactive-javascript-advanced-prototypes-and-inheritance-26-accessing-private-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a marca proprietățile ca **private**, trebuie să le **precedăm** cu un **hashtag** `#`.
 
@@ -269,9 +269,9 @@ Aici avem un exemplu de **prototype.set**:
 
 [slide hideTitle]
 
-# Lanț de prototip exemplu
+# Lanț de Prototip Exemplu
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-27-prototype-chain-simple-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/RO/interactive-javascript-advanced-prototypes-and-inheritance-27-prototype-chain-simple-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ```js live
 function MakeSentence(greet) {
@@ -301,9 +301,15 @@ Apoi instanțiem **MakeSentence** și afișăm rezultatul metodei **concatenate*
 
 [slide hideTitle]
 
-# Problemă cu soluție: extindere de prototip
+# Problemă cu Soluție: Extending Prototype
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-29-solution-extending-prototype-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/RO/interactive-javascript-advanced-prototypes-and-inheritance-28-29-problem-and-solution-extending-prototype-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/RO/interactive-javascript-advanced-prototypes-and-inheritance-28-problem-extending-prototype-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/RO/interactive-javascript-advanced-prototypes-and-inheritance-29-solution-extending-prototype-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+
 
 [code-task title="Extending Prototype" taskId="js-advanced-prototypes-and-inheritance-extending-prototype" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 

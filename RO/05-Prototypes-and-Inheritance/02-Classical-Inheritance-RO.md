@@ -1,14 +1,14 @@
-# Moștenirea clasică
+# Moștenirea Clasică
 
 [slide hideTitle]
 
-# Clasele tradiționale
+# Clasele Tradiționale
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-9-10-classical-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/RO/interactive-javascript-advanced-prototypes-and-inheritance-9-10-classical-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Clasele sunt **planuri** pentru crearea obiectelor.
 
-Când sunt **instanțiate **, o **copie** a clasei este creată și devine instanța curentă. 
+Când sunt **instanțiate**, o **copie** a clasei este creată și devine instanța curentă. 
 
 Clasele se pot **moșteni** una pe alta. 
 
@@ -26,11 +26,12 @@ Proprietățile **protejate** pot fi folosite în scopul clasei și în copiii s
 
 [slide hideTitle]
 
-# Clasa moștenire
+# Clasa Moștenire
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-11-12-13-class-inheritance-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/RO/interactive-javascript-advanced-prototypes-and-inheritance-11-12-13-class-inheritance-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Cuvântul cheie **extinde** este folosit pentru a crea o clasă copil din una părinte.
+
 Când o clasă **extinde** un părinte, ei **moștenesc** datele și metodele sale.
 
 Clasele copil pot:
@@ -74,6 +75,7 @@ Clasa **Person** primește un **nume** și un **email** ca parametrii.
 De asemenea adăugăm încă un parametru clasei **Teacher**, numit **subject**. 
 
 În primul `console.log()`, afișăm **Person** cu parametrii săi: **name** și **email**.
+
 În al doilea, afișăm pe consolă obiectul **Teacher** cu parametrii săi.
 
 [/slide]
@@ -82,7 +84,7 @@ De asemenea adăugăm încă un parametru clasei **Teacher**, numit **subject**.
 
 # Clasele în JavaScript
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-14-15-classes-in-javascript-class-syntax-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/RO/interactive-javascript-advanced-prototypes-and-inheritance-14-15-classes-in-javascript-class-syntax-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În JavaScript, clasele sunt **bazate** pe **moștenirea prototipului**.
 
@@ -135,9 +137,9 @@ De la "**Man**", putem accesa parametrii și metodele clasei **Person**.
 
 [slide hideTitle]
 
-# Moștenirea prototipului
+# Moștenirea Prototipului
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-16-prototype-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/RO/interactive-javascript-advanced-prototypes-and-inheritance-16-prototype-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Șă vedem cum va arata cu funcții:
 
