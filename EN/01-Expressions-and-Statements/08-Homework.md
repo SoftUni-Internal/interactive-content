@@ -16,7 +16,7 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Create a program to calculate the speed of a moving body by its travel time and traveled distance:
+Create a program to calculate the speed of a moving vehicle by its travel time and distance traveled:
   * Read 2 floating-point numbers: distance and time
   * Calculate the speed at which the body needs to move to travel a given distance for a given time
   * Print out the result
@@ -100,7 +100,7 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Create a program to convert from USD to EUR:
+Create a program to convert USD to EUR:
   * Read a **floating-point number**: the amount dollars to be converted
   * Convert **dollars to euro** (use this **transfer rate** of dollars to euro: 0.88)
   * Print the converted value in euro
@@ -277,7 +277,7 @@ public class Program {
 ## Description
 Create a program, which:
   * Reads 2 **real numbers** from the console.
-  * Performs 4 **arithmetic operations** on the obtained 2 numbers, in the following order: `+`, `-`, `*`, `/`
+  * Performs 4 **arithmetic operations** using these numbers each time, in the following order: `+`, `-`, `*`, `/`
   * Formats and prints the results like in this example:
 
 ## Example
@@ -360,7 +360,7 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Write a program to convert **days** to **minutes**:
+Create a program to convert **days** to **minutes**:
   * Read a **single integer** (the days to be converted)
   * Convert the days to minutes (use calculations)
   * **Print** the result
@@ -821,9 +821,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that calculates how many hours will be necessary for an architect to complete some projects.
+Create a program that calculates how many hours will be necessary for an architect to complete a given number of projects.
 
-Creating one project takes 3 hours.
+Finishing a project takes 3 hours.
 
 ## Input
 Read **two lines** from the console:
@@ -1093,10 +1093,10 @@ A gardener is selling some products on the farmers market. We need to help him w
 
 He sells vegetables for **N dollars** per kilogram and fruits for **M dollars** per kilogram. 
 
-Create a program that calculates his income in euros (**1 USD = 0.89 EUR**).
+Create a program that calculates his income in euro (**1 USD = 0.89 EUR**).
 
 ## Input
-The input will be **4 numbers**, each on a **single** line:
+The input will consist of **4 numbers**, each on a **single** line:
 - The price for a kilogram of vegetables - **floating-point number** [0.00 ... 1000.00]
 - The price for a kilogram of fruits - **floating-point number** [0.00 ... 1000.00]
 - The total kilograms of vegetables - **integer** [0 ... 1000]
@@ -1299,7 +1299,7 @@ Any other type of animal food - 4 dollars.
 
 The input will consist of two lines.
 - Number of dogs - an integer in range \[0 ... 100\]
-- Number of the others animals - integer in range \[0 ... 100\]
+- Number of others animals - integer in range \[0 ... 100\]
 
 ## Output
 Print out: "\{**total sum**\} **dollars**". The result should be formatted to the second decimal point.
@@ -1472,7 +1472,7 @@ You have to read **5 numbers** from the console:
 - Кilograms of mussels - **integer number** in range [0 ... 100]
 
 ## Output
-Print a single float to the console: the money George will need to pay the bill, formatted to the **second decimal point**
+Print a single float number to the console: the money George will need to pay the bill, formatted to the **second decimal point**
 
 ## Example
 | **Input** | **Output** |
