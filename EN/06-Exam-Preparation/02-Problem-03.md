@@ -55,7 +55,8 @@ Both **personalId** and **amount** are numbers.
 
 "**We have no customer with this ID!**"
 
-- If there is a customer with the given **personalId**, check if the customer **has enough money** to withdraw the given amount from their account. If the money is not enough, **throw a new error:**
+- If there is a customer with the given **personalId**, check if the customer **has enough money** to withdraw the given amount from their account
+    * if the money is not enough, **throw a new error:**
 
 "\{**firstName**\} \{**lastName**\} **does not have enough money to withdraw that amount!**"
 
@@ -96,7 +97,7 @@ The **transaction information** contains information about:
 - the **amount** of the transaction
 
 
-## Examples
+# Examples
 This is an example of how the code is **intended to be used**:
 
 **Sample code usage:** 
