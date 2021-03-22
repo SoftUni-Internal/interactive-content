@@ -1,4 +1,4 @@
-# Teme Pentru Acasă
+# Temă
 
 [slide hideTitle]
 # Problemă: Order Rectangles
