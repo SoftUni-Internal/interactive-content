@@ -1,7 +1,7 @@
 # Bucla de Eveniment
 
 [slide hideTitle]
-# Callback
+# Callbacks
 
 În primul rând, **JavaScript** este executat de cele mai multe ori **in the browser.**
 
@@ -22,15 +22,13 @@ O funcție **callback** este o funcție pasată într-o altă funcție ca argume
 
 # Execuția Stack 
 
-add video 5-6 arrays
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/EN/JS-Advanced-DOM-Manipulations-5-10-stack-execution-of-the-event-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/RO/JS-Advanced-DOM-Manipulations-5-10-stack-execution-of-the-event-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În acest exemplu, putem vedea cele două tipuri de memorie: **Stack** și **Heap**.
 
 **The Heap** este locul în care obiectele sunt stocate atunci când definim variabile. 
 
-**The Stacks** reține doar apelările funcției.
+**The Stack** reține doar apelările funcției.
 
 De fiecare dată când apelăm o nouă funcție, aceasta este împinsă în capătul grămezii (stack). 
 
@@ -51,7 +49,7 @@ Când o funcție s-a terminat, JavaScript va **remove** acea funcție din **call
 [slide hideTitle]
 # Bucla Event
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/EN/JS-Advanced-DOM-Manipulations-3-4-event-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/RO/JS-Advanced-DOM-Manipulations-3-4-event-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In acest exemplu, **avem o funcție**, care invocă o altă funcție, dar de această dată funcția crează un **event into the event queue**.
 
