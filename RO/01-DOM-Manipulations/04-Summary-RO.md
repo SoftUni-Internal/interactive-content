@@ -2,7 +2,7 @@
 
 # Sumar
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/EN/JS-Advanced-DOM-Manipulations-36-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/RO/JS-Advanced-DOM-Manipulations-36-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## In această lecție ați învățat: 
 
@@ -12,13 +12,13 @@
     - preventDefault: `event.preventDefault();`
     - stopPropagation: `event.stopPropagation();`
 - Organizatori de evenimente
-    - Attach
+    - attach
     ```js
     button.addEventListener('click', () => {
     console.log('Button clicked.');
     });
     ```
-    - Remove
+    - remove
      ```js
     button.removeEventListener('click', () => {
     console.log('Button event listener removed.');
