@@ -4,7 +4,7 @@
 
 # Currying
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-13-15-currying-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/RO/js-advanced-advanced-functions-13-15-currying-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Folosim **currying** pentru a evalua o funcție cu **multiple arguments**, într-o **sequence** de funcții cu un **single argument**.
 
@@ -34,7 +34,7 @@ Câteva example de folosire a **currying** sunt:
 [slide hideTitle]
 # Aplicarea Parțială
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-16-partial-application-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/RO/js-advanced-advanced-functions-16-partial-application-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Reducing** numărul de **parameters** ai funcției prin convertirea acesteia într-o **funcție nouă cu mai puțini parametri**, se numește **Partial Application**.
 
@@ -66,7 +66,7 @@ Funcția care rezultă ia un număr de **unu** parametri, în loc de **două** p
 [slide hideTitle]
 # Comparație între Currying și Aplicare Parțială 
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-17-currying-vs-partial-application-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/RO/js-advanced-advanced-functions-17-currying-vs-partial-application-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Diferențele dintre **currying** și **partial application** sunt:
 

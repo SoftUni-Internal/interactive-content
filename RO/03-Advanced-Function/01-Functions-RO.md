@@ -4,7 +4,7 @@
 
 # Funcții de Prim Rang
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-3-7-first-class-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/RO/js-advanced-advanced-functions-3-7-first-class-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 In JavaScript funcțiile sunt tratate ca **first-class citizens**.
@@ -63,7 +63,7 @@ Pe scurt, funcțiile de prim rang **susține toate operațiunile** posibile pent
 
 # Funcțiile de Rang Înalt
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-8-higher-order-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/RO/js-advanced-advanced-functions-8-higher-order-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Higher-order functions** pot accepta alte funcții ca **arguments** și le returnează pe acestea ca **values**.
 
@@ -88,7 +88,7 @@ Când este invocată, funcția `sayHello` returnează o altă funcție care este
 
 # Predicatele
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-9-predicates-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/RO/js-advanced-advanced-functions-9-predicates-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 Un **predicate** este orice funcție care ia o valoare ca input și returnează **true** sau **false** bazat pe oricare dintre valorile care **îndeplinește condiția**.
@@ -113,7 +113,7 @@ Ea returnează o valoare **boolean**, ceea ce înseamnă că este un **predicate
 
 # Funcțiile de Rang Înalt Built-in
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-10-built-in-higher-order-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/RO/js-advanced-advanced-functions-10-built-in-higher-order-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Funcțiile de rang înalt Built\-in acceptă o **callback function** ca argument, care este apelată la **fiecare element** dintr-o matrice.
 
@@ -181,7 +181,7 @@ La final, rezultatul este stocat în variabila **sum**.
 
 # Funcțiile Pure
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-11-pure-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/RO/js-advanced-advanced-functions-11-pure-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 O funcție pură returnează întotdeauna același rezultat dacă îi este pasat același argument :
 
@@ -208,7 +208,7 @@ Nu contează de câte ori rulăm funcția **aceeași intrare**, aceasta va **pro
 
 # Transparența Referențială
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-12-referencial-transparency-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/RO/js-advanced-advanced-functions-12-referencial-transparency-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 O funcție **referentially transparent** poate fi înlocuită cu **return value** a sa și **not affect** restul programului. 

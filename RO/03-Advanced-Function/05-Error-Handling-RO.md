@@ -4,7 +4,7 @@
 
 # Definiție
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-25-27-error-handling-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/RO/js-advanced-advanced-functions-25-27-error-handling-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Error handling** cuprinde **response** și **recovery procedures** ale condițiilor de eroare dintr-o aplicație.
 
@@ -50,7 +50,7 @@ Funcția `toUppercase()` va arunca o eroare de scriere (TypeError), pentru că e
 [slide hideTitle]
 # Tipuri de Erori 
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-28-types-of-errors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/RO/js-advanced-advanced-functions-28-types-of-errors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Cele trei tipuri comune de **errors** sunt :
 
@@ -79,7 +79,7 @@ Cele trei tipuri comune de **errors** sunt :
 
 # Abordarea Erorilor - Excepții
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-29-error-handling-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/RO/js-advanced-advanced-functions-29-error-handling-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 O **excepție** apare atunci când o funcție este **incapabilă să fie executată cu succes**, ceea ce duce la apariția unei erori.
 
@@ -126,7 +126,7 @@ console.log(George);   // Uncaught ReferenceError
 
 # Abordarea Erorilor - Valori Speciale
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-30-error-handling-special-values-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/RO/js-advanced-advanced-functions-30-error-handling-special-values-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Anumite metode incorporate ale limbajului JavaScript pot returna **valori speciale**, în cazul unor date nepotrivite.
 
@@ -153,7 +153,7 @@ let date = invalid.getDate(); // NaN
 [slide hideTitle]
 # Lansarea Excepțiilor
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-31-throwing-errors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/RO/js-advanced-advanced-functions-31-throwing-errors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Folosim declarația `throw` pentru a lansa manual o excepție :
 
@@ -174,7 +174,7 @@ Dacă este lansat `TypeError`, restul codului **will not** fi executat.
 [slide hideTitle]
 # Try-Catch
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-32-try-catch-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/RO/js-advanced-advanced-functions-32-try-catch-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Constructorul **try-catch** cuprinde două blocuri principale: 
 
@@ -196,7 +196,7 @@ try {
 [slide hideTitle]
 # Proprietățile Excepției 
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-33-exception-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/RO/js-advanced-advanced-functions-33-exception-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Obiectul `Error` are mai multe proprietăți:
 

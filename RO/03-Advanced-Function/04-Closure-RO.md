@@ -4,7 +4,7 @@
 
 # Ce este închiderea?
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-20-21-closure-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/RO/js-advanced-advanced-functions-20-21-closure-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Într-o **closure**, un **inner function scope** include parametrul **outer (enclosing) function**.
 
@@ -47,7 +47,7 @@ Când o funcție **finishes execution**, orice variabile care au fost definite *
 
 # Funcțiile care Returnează Funcții
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-22-functions-returning-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/RO/js-advanced-advanced-functions-22-functions-returning-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 O **state** este conservată în exteriorul funcției (closure):
 
@@ -71,6 +71,8 @@ De fiecare dată când apelăm funcția `func()` cronometrul va fi ieșirea căt
 
 [slide hideTitle]
 # Problemă cu Soluție: Command Processor
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/RO/js-advanced-advanced-functions-24-solution-command-processor-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Command Processor" taskId="js-advanced-advanced-functions-Command-Processor"  executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
