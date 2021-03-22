@@ -91,8 +91,8 @@ public class Program {
 ## Descriere
 Scrieți un program care:
 
-* Citește **n** reprezentând numărul de numere de citit în continuare
-* Găsește numerele **max** și **min**
+* Citește **n**, reprezentând numărul de numere întregi de citit în continuare
+* Găsește numerele întregi **max** și **min**
 * Le imprimă pe consolă în următorul format:
    - "**Max number:** \{**max number**\}"
    - "**Min number:** \{**min number**\}"
@@ -522,7 +522,7 @@ public class Program {
 ## Descriere
 Scrieți un program care:
 
-* Citește **n**- numărul de caractere
+* Citește **n**- numărul de caractere care vor urma în intrare
 * Dacă caracterul este o **vocală** își adaugă valoarea rezultatului
 
 |caracter|a|e|i|o|u|
@@ -622,8 +622,8 @@ public class Program {
 Scrieți un program care determină dacă sunt destui pasageri ca să ocupe toate locurile într-un rollercoaster.
  * Citește **locurile disponibile**, **vârsta minimă**, **numărul de persoane** de la coadă 
 Vârsta fiecărui pasager va fi specificată ca un număr separat.
-* Dacă toate locurile sunt luate, tipăriți - **"The rollercoaster departures"**
-* Într-un alt caz, tipărește **"Waiting..."**
+* Dacă toate locurile sunt luate, tipăriți: **"The rollercoaster departures"**
+* Într-un alt caz, tipăriți **"Waiting..."**
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -734,7 +734,7 @@ public class Program {
 ## Descriere
 Scrieți un program care:
 
-* Citește **n**
+* Citește un număr **n**
 * Tipărește acel număr înmulțit cu `i` "\{n\} x \{i\} = \{result\}"
 * Unde `i` este reprezentat de numerele de la **1 până la 10**(**inclusiv**)
 
@@ -808,11 +808,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Josh are 18 ani și primește o moștenire care constă în suma de bani X și o mașină a timpului.
+Josh are 18 ani și primește o moștenire care constă în suma de bani X (citită de la consolă) și o mașină a timpului.
 
 A decis să se întoarcă până în 1800, dar nu știa dacă banii ar fi suficienți pentru a trăi fără să muncească.
 
-Scrieți un program care să calculeze dacă Josh va avea suficienți bani pentru a nu fi nevoit să lucreze până la un anumit an, specificat de la consolă.
+Scrieți un program care să calculeze dacă Josh va avea suficienți bani pentru a nu fi nevoit să lucreze, începând de la 1800 până la un anumit an, specificat de la consolă.
 - În fiecare an par (1800, 1802 etc.) el va cheltui 12 000 de dolari.
 - În fiecare an impar (1801, 1803 etc.) el va cheltui 12 000 + 50 \* \[vârsta sa în acel an\].
 
@@ -827,7 +827,7 @@ Imprimați pe consolă o singură linie. Suma trebuie formatată cu două cifre 
 - Dacă banii sunt suficienți:
      - "**Yes! He will live a carefree life and will have** \{**N**\} **dollars left.**" - unde N sunt banii care vor rămâne
 - Dacă banii NU sunt suficienți:
-     - "**He will need** \{**М**\} **dollars to survive.**" - unde M sunt bani de care are nevoie
+     - "**He will need** \{**М**\} **dollars to survive.**" - unde M sunt banii de care are nevoie
 
 ## Exemplu
 | Intrare | Ieșire |
@@ -956,7 +956,9 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program pentru a calcula costul mediu pe lună pentru o familie pe o perioadă de timp. Pentru fiecare lună, costurile sunt următoarele:
+Scrieți un program pentru a calcula costul mediu pe lună pentru o familie pe o perioadă de timp. 
+
+Pentru fiecare lună, costurile sunt următoarele:
 
 - Pentru electricitate - în fiecare lună factura este diferită și va fi citită de pe consolă
 - Pentru apă - 20 $
@@ -1233,7 +1235,7 @@ Un spital are 7 medici.
 
 Fiecare medic poate examina doar un pacient pe zi, dar uneori există un deficit de medici, astfel încât alți pacienți sunt trimiși la alte spitale.
 
-La fiecare trei zile, spitalul face calcule și dacă numărul pacienților neevaluați este mai mare decât numărul de revizuit, este numit încă un medic.
+La fiecare trei zile, spitalul face calcule și dacă numărul pacienților neevaluați este mai mare decât numărul celor acceptați, este numit încă un medic.
 
 Numirea medicului are loc înainte de preluarea pacienților pentru o zi.
 
@@ -1242,7 +1244,7 @@ Scrieți un program care să calculeze numărul de pacienți examinați și neex
 ## Intrare
 Intrarea este citită de pe consolă și conține:
 
-- Perioada pentru care trebuie să efectuați calcule - număr întreg în intervalul \[1... 1000\] 
+- Perioada pentru care trebuie să efectuăm calcule - număr întreg în intervalul \[1... 1000\] 
 - Pe rândurile următoare (egal cu numărul de zile) - numărul de pacienți care sosesc pentru examinare pentru ziua curentă - un număr întreg în intervalul \[0... 10 000\]
 
 Imprimați pe consolă 2 linii:
@@ -1402,7 +1404,6 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-
 Scrieți un program care tipărește numerele din intervalul \[1...1000\] care se termină cu 7.
 
 Imprimați numerele pe o singură linie, separate printr-un singur spațiu.
@@ -1456,7 +1457,7 @@ Scrieți un program care citește un număr întreg care reprezintă totalul de 
 Dacă nu există element minim / maxim tipăriți "No".
 
 ## Intrare
-- Pe prima linie de intrare citiți numărul din numerele - N - număr întreg \[0 ... 100\]
+- Pe prima linie de intrare citiți totalul de numerele care trebuie citite - N - număr întreg \[0 ... 100\]
 - Pe fiecare rând următor - număr în virgulă mobilă \[-100...100\]
 
 ## Ieșire
@@ -1710,9 +1711,8 @@ Programul trebuie să imprime procentul de elevi cu nota cuprinsă între
  - nota medie a tuturor participanților la examen
 
 ## Intrare
-Citiți de pe consolă o serie de numere, fiecare pe o linie separată:
 - Prima linie - numărul de elevi care au participat la examen - un număr întreg în intervalul \[1 ... 1000\]
-- Pentru fiecare elev pe o linie separată - nota examenului - număr real în intervalul \[2.00 ... 6.00\]
+- Pentru fiecare elev, pe o linie separată - nota examenului - număr real în intervalul \[2.00 ... 6.00\]
 
 ## Ieșire
 Imprimați pe consolă 5 linii care conțin următoarele informații:
