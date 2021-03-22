@@ -1,4 +1,4 @@
-# Teme pentru acasă
+# Rezumat
 
 [slide hideTitle]
 

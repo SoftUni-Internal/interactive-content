@@ -24,7 +24,7 @@ Există 3 moduri de a înregistra un eveniment:
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/RO/JS-Advanced-DOM-Manipulations-21-event-listener-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Pentru a putea folosi funcția noastră **event handler** funcție, trebuie să aplicăm metoda`.addEventListener()`.
+Pentru a putea folosi funcția noastră **event handler** funcție, trebuie să aplicăm metoda `.addEventListener()`.
 
 Prima oară folosim **type**, care este un șir case sensitive ce reprezintă tipul de eveniment pe care dorim să-l ascultăm. 
 
@@ -44,7 +44,7 @@ Ea îndepărtează un organizator de evenimente care a fost atașat anterior met
 
 
 ```js
-addBtn.addEventListener("click", handler, false);
+addBtn.addEventListener('click', handler, false);
 ```
 
 O altă metoda este metoda `.removeEventListener()`.
@@ -52,7 +52,7 @@ O altă metoda este metoda `.removeEventListener()`.
 Ea îndepărtează ascultătorul de evenimente înregistrat anterior din țintă. 
 
 ```js
-addBtn.removeEventListener("click", handler);
+addBtn.removeEventListener('click', handler);
 ```
 [/slide]
 
@@ -171,10 +171,10 @@ button.addEventListener('click', () => {
 Putem adăuga mai multe evenimente aceluiași element, fără să rescriem evenimentele existente. 
 
 ```js
-element.addEventListener("click", function);
-element.addEventListener("click", myFunction);
-element.addEventListener("mouseover", mySecondFunction);
-element.addEventListener("mouseout", myThirdFunction);
+element.addEventListener('click', function);
+element.addEventListener('click', myFunction);
+element.addEventListener('mouseover', mySecondFunction);
+element.addEventListener('mouseout', myThirdFunction);
 ```
 
 [/slide]
@@ -233,7 +233,7 @@ Extindeți problema anterioară pentru a afișa un link `[Delete]` după fiecare
 
 Dând click, vom șterge elementul, fără să primim vreo confirmare. 
 
-# Exemplu
+## Exemplu
 [image assetsSrc="Dom-Manipulation(4).gif" /]
 
 [/task-description]
@@ -330,7 +330,7 @@ Dacă avem o mulțime de elemente care sunt tratate în același fel, atunci, î
 Apoi, în declarația 'if', adăugăm o condiție, astfel încât dacă dăm click pe elementul `<li>`, metoda `console.log()` să afișeze un mesaj care să ne spună exact pe ce element am dat click.
 
 
-```
+```js
 <ul id="parent-list">
     <li id="post-1">Item 1</li>
     <li id="post-2">Item 2</li>
