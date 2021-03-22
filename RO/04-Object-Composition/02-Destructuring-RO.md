@@ -59,7 +59,7 @@ După destructurare:
 
 - Obiectul de la indexul 2 va fi asignat lui "**thirdObj**"
 
-Amintiți-vă faptul că "**firstObj**", "**secondObj**"  și "**thirdObj**" referențiază obiecte din interiorul vectorului "**classroom**". 
+Amintiți-vă faptul că "**firstObj**", "**secondObj**" și "**thirdObj**" referențiază obiecte din interiorul vectorului "**classroom**". 
 
 Acum, să schimbăm valoarea lui `firstObj.key` în "John Smith" și să printăm valoarea lui "**classroom**".
 
