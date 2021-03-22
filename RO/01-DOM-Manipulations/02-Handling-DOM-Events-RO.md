@@ -4,15 +4,17 @@
 
 # Propagarea Evenimentelor 
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/RO/JS-Advanced-DOM-Manipulations-11-12-dom-events-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Propagarea evenimentelor este un mod de a descrie o "stack" de evenimente care sunt declanșate în browser.  
 
 În browser vom avea 3 faze ale propagării evenimentului: 
 
-- Faza de capturare: evenimentul merge către element
+- Faza de **capturare**: evenimentul merge către element
 
-- Faza de țintă:  evenimentul ajunge la elementul țintă 
+- Faza de **țintă**:  evenimentul ajunge la elementul țintă 
 
-- Bubbling phase: evenimentul se ridică la suprafață dinspre element 
+- **Bubbling** phase: evenimentul se ridică la suprafață dinspre element 
 
 [image assetsSrc="Dom-Manipulation(2).gif" /]
 
@@ -57,7 +59,7 @@ Putem opri faza **bubbling** folosind o metodă numită `event.stopPropagation()
 
 # Tipuri de Evenimente în DOM API
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/EN/JS-Advanced-DOM-Manipulations-13-event-types-in-dom-api-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/RO/JS-Advanced-DOM-Manipulations-13-event-types-in-dom-api-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Iată câteva tipuri de evenimente folosite în DOM.
 
@@ -75,7 +77,7 @@ Iată câteva tipuri de evenimente folosite în DOM.
 
 # Proprietățile și Metodele Obiectelor Event
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/EN/JS-Advanced-DOM-Manipulations-14-15-event-object-properties-and-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/RO/JS-Advanced-DOM-Manipulations-14-15-event-object-properties-and-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Să examinăm Obiectul Eveniment. 
 
@@ -85,13 +87,15 @@ Argumentul nostru `e`, care este pasat funcției, este **reference to the event 
 
 Obicetul event are mai multe **properties** și **methods**. 
 
+## Proprietăți
+
 Unele dintre proprietăți sunt: 
 
-- **Target**
+- **target**
 
-- **TimeStamp** 
+- **timeStamp** 
 
-- **IsTrusted**
+- **isTrusted**
 
 - **ClientX / ClientY**
 
@@ -113,6 +117,8 @@ Proprietatea **clientX** returnează o coordonată orizontală (în acord cu ari
 
 Proprietatea **clientY** returnează coordonata verticală. 
 
+## Metode
+
 Câteva dintre metode sunt: 
 
 - `preventDefault()`
@@ -130,22 +136,24 @@ Metoda `stopImmediatePropagation()` previne apelarea altor ascultători ai acelu
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Lista de Elemente
+# Problemă cu Soluție: List Of Items
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/RO/JS-Advanced-DOM-Manipulations-16-17-solution-list-of-items-html-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="List Of Items" taskId="Js-Advanced-Dom-Manipulations-lab-List-Of-Items" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
-function listOfItems(){
+function addItem(){
   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
 [task-description]
-# Enunț
+# Descriere
 
 **Aici este un link către** [resurse](https://videos.softuni.org/resources/javascript/javascript-advanced/JS-Advanced-DOM-Manipulations-Lab-01.List-Of-Items.zip) **pentru această sarcină.**
 
-Creați o funcție care **reads** un text din interiorul unui câmp de intrare și **appends** textul specificat unei liste din interiorul unei pagini HTML.
+Creați o funcție care **citește** un text din interiorul unui câmp de intrare și **adaugă** textul specificat unei liste din interiorul unei pagini HTML.
 
 # Exemplu
 [image assetsSrc="Dom-Manipulation(3).png" /]
@@ -153,9 +161,36 @@ Creați o funcție care **reads** un text din interiorul unui câmp de intrare �
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+document.body.innerHTML = \`
+\<h1\>List of Items\</h1\>
+    \<main\>
+        \<ul id="items"\>
+            \<li\>First\</li\>
+            \<li\>Second\</li\>
+        \</ul\>
+        \<input type="text" id="newItemText" /\>
+        \<input type="button" value="Add""\>
+    \</main\>
+\`;
+
+document.getElementById('newItemText').value = 'new mode';
+
+result();
+
+let liElements = document.getElementsByTagName('li');
+
+assert.equal(liElements.length, 3, 'List items count is invalid');
+assert.equal(liElements\[2\].textContent, 'new mode', 'The new list item contains something different');
+[/input]
+[output]
+yes
+[/output]
+[/test]
 [test]
 [input]
-document.body.innerHTML = `
+document.body.innerHTML = \`
 \<h1\>List of Items\</h1\>
     \<main\>
         \<ul id="items"\>
@@ -165,7 +200,7 @@ document.body.innerHTML = `
         \<input type="text" id="newItemText" /\>
         \<input type="button" value="Add" onclick="addItem()"\>
     \</main\>
-`;
+\`;
 
 \\$('\#newItemText').val('new mode');
 result();
@@ -178,33 +213,6 @@ let liElements = document.getElementsByTagName('li');
 assert.equal(liElements.length, 4, 'List items count is invalid');
 assert.equal(liElements\[2\].textContent, 'new mode', 'The new list item contains something different');
 assert.equal(liElements\[3\].textContent, 'Fourth Grade', 'The new list item contains something different');
-[/input]
-[output]
-yes
-[/output]
-[/test]
-[test]
-[input]
-document.body.innerHTML = `
-\<h1\>List of Items\</h1\>
-    \<main\>
-        \<ul id="items"\>
-            \<li\>First\</li\>
-            \<li\>Second\</li\>
-        \</ul\>
-        \<input type="text" id="newItemText" /\>
-        \<input type="button" value="Add""\>
-    \</main\>
-`;
-
-document.getElementById('newItemText').value = 'new mode';
-
-result();
-
-let liElements = document.getElementsByTagName('li');
-
-assert.equal(liElements.length, 3, 'List items count is invalid');
-assert.equal(liElements\[2\].textContent, 'new mode', 'The new list item contains something different');
 [/input]
 [output]
 yes
