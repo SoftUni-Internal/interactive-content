@@ -15,7 +15,7 @@ function sections(input) {
 [/code-editor]
 [task-description]
 
-# Enunț
+# Descriere
 
 **Aici este un link către** [resurse](https://videos.softuni.org/resources/javascript/javascript-advanced/01-Sections.zip) **pentru această sarcină.**
 
@@ -129,7 +129,7 @@ function notification(){
 [/code-editor]
 [task-description]
 
-# Enunț
+# Descriere
 
 **Aici este un link către** [resurse](https://videos.softuni.org/resources/javascript/javascript-advanced/02-Notification.zip) **pentru această sarcină.**
 
@@ -338,13 +338,13 @@ function timeConverter(){
 [/code-editor]
 [task-description]
 
-# Enunț
+# Descriere
 
 **Aici este un link către** [resurse](https://videos.softuni.org/resources/javascript/javascript-advanced/03-Time-Converter.zip) **pentru această sarcină.**
 
 Creați un program care **converti** diferite unități de timp. 
 
-Sarcina voastră este să adăugați un ascultător de evenimente **click** la toate butoanele \`CONVERT\`.
+Sarcina voastră este să adăugați un ascultător de evenimente **click** la toate butoanele `CONVERT`.
 
 Când un buton este **clicked**, citește câmpul de intrare **corespunzător** și **afişa** valorile convertite în interiorul celorlalte trei câmpuri de intrare. 
 
@@ -538,7 +538,7 @@ function lockedProfile(){
 [/code-editor]
 [task-description]
 
-# Enunț
+# Descriere
 
 **Aici este un link către** [resurse](https://videos.softuni.org/resources/javascript/javascript-advanced/04-Locked-Profile.zip) **pentru această sarcină.**
 
@@ -554,10 +554,10 @@ Altfel, când profilul este **deblocat** și dăm click pe butonul `Hide it`, c�
 
 # Exemplu
 
-**Input**
+## Intrare
 [image assetsSrc="Dom-Manipulation(11).png" /]
 
-**Output**
+## Ieșire
 [image assetsSrc="Dom-Manipulation(12).png" /]
 
 [/task-description]
@@ -1393,7 +1393,7 @@ function encodeAndDecodeMessages(){
 [/code-editor]
 [task-description]
 
-# Description
+# Descriere
 
 **Aici este un link către** [resurse](https://videos.softuni.org/resources/javascript/javascript-advanced/05-Encode-and-Decode-Messages.zip) **pentru această sarcină.**
 
@@ -1419,13 +1419,13 @@ After that, when the `Decode and read it` button is clicked, you need to get the
 
 - Replace the encoded message with your decoded message in the receiver textarea to make it readable
 
-# Example
+# Exemplu
 
-**Intrare**
+## Intrare
 [image assetsSrc="Dom-Manipulation(13).png" /]
 [image assetsSrc="Dom-Manipulation(14).png" /]
 
-**Ieșire**
+## Ieșire
 [image assetsSrc="Dom-Manipulation(15).png" /]
 
 [/task-description]
@@ -1646,7 +1646,7 @@ function tableSearchEngine(){
 [/code-editor]
 [task-description]
 
-# Description
+# Descriere
 
 **Aici este un link către** [resurse](https://videos.softuni.org/resources/javascript/javascript-advanced/06-Table-Search-Engine.zip) **pentru această sarcină.**
 
@@ -1664,12 +1664,12 @@ If there is no match, **nu ar trebui să se întâmple nimic**.
 
 Note: After every search, **ștergeți intrarea** field and remove all already selected classes, if any exist from the previous search, in order to make sure the new search will contain only the new result.
 
-# Example
+# Exemplu
 
-**Intrare**
+## Intrare
 [image assetsSrc="Dom-Manipulation(16).png" /]
 
-**Ieșire**
+## Ieșire
 [image assetsSrc="Dom-Manipulation(17).png" /]
 [/task-description]
 [code-io /]
@@ -2208,7 +2208,7 @@ function furniture(){
 [/code-editor]
 [task-description]
 
-# Description
+# Descriere
 
 **Aici este un link către** [resurse](https://videos.softuni.org/resources/javascript/javascript-advanced/07-Furniture.zip) **pentru această sarcină.**
 
@@ -2226,12 +2226,12 @@ On the next line, print the total price in format: "**Total price:** \{**totalPr
 
 Finally, print the average decoration factor in the format: "**Average decoration factor:** \{**decFactor**\}".
 
-# Example
+# Exemplu
 
-**Intrare**
+## Intrare
 `[{"name": "Sofa", "img": "https://res.cloudinary.com/maisonsdumonde/image/upload/q_auto,f_auto/w_200/img/grey-3-seater-sofa-bed-200-13-0-175521_9.jpg", "price": 150, "decFactor": 1.2}]`
 
-**Ieșire**
+## Ieșire
 [image assetsSrc="Dom-Manipulation(18).png" /]
 
 [/task-description]
@@ -2712,7 +2712,7 @@ function cards(){
 [/code-editor]
 [task-description]
 
-# Description
+# Descriere
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/08-Cards.zip) **for this task.**
 
@@ -2735,12 +2735,12 @@ You should clear the span elements that hold the current cards' names, when both
 After every hand, push the current cards' names in the **history div** in the following format:
 `[{top side card name} vs {bottom side card name}]`
 
-# Example
+# Exemplu
 
-**Input**
+## Intrare
 [image assetsSrc="Dom-Manipulation(19).png" /]
 
-**Output**
+## Ieșire
 [image assetsSrc="Dom-Manipulation(20).png" /]
 
 [/task-description]
