@@ -4,7 +4,7 @@
 
 # Agregare
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-13-14-aggregation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/RO/JS-Advanced-Object-Composition-13-14-aggregation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Avem agregare atunci când un obiect este format dintr-o colecție **enumerabilă** de subobiecte.
 
@@ -23,7 +23,7 @@ Când există colecții de obiecte care trebuie să partajeze **operațiuni comu
 
 # Aggregation Example
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-15-aggregation-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/RO/JS-Advanced-Object-Composition-15-aggregation-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ```js live
 let dataArray = [{
@@ -83,7 +83,7 @@ Dacă declarația est **false** împingem elementul curent la "**acc**", altfel 
 
 # Concatenare
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-16-concatenation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/RO/JS-Advanced-Object-Composition-16-concatenation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Concatenarea este utilizata atunci când un obiect este format prin adăugarea de proprietăți noi unui obiect existent.
 
@@ -141,7 +141,7 @@ Dacă nu folosim sintaxa răspândirii în fața variabilei `curr` vom primi doa
 
 # Exemple de Concatenare
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-17-concatenation-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/RO/JS-Advanced-Object-Composition-17-concatenation-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ```js live
 const objs = [{
@@ -171,7 +171,7 @@ console.log(c);
 [slide hideTitle]
 
 # Delegare
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-18-delegation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/RO/JS-Advanced-Object-Composition-18-delegation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Delegarea este atunci când un obiect transmite sau delegează altui obiect.
 
@@ -189,7 +189,7 @@ Tipurile încorporate JavaScript folosesc delegarea pentru a redirecționa metod
 
 # Exemple de Delegare
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-19-delegation-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/RO/JS-Advanced-Object-Composition-19-delegation-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ```js live
 const obj = [{

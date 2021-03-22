@@ -36,7 +36,7 @@ console.log(student.location.lat);
 
 # Compunerea Unui Obiect
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-5-composing-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/RO/JS-Advanced-Object-Composition-5-composing-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Aici aveți un exemplu cum putem compune un obiect.
 
@@ -44,7 +44,7 @@ Aici aveți un exemplu cum putem compune un obiect.
 
 După aceea, atribuim variabilile obiectului "**town**".
 
-Și, în cele din urmă, atribuim obiectului locație objiectul "**town**".
+Și, în cele din urmă, atribuim obiectului "**location**" objiectul "**town**".
 
 
 ```js live
@@ -70,11 +70,11 @@ console.log(town);
 
 # Combinarea Datelor cu Funcțiile
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-6-combining-data-with-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/RO/JS-Advanced-Object-Composition-6-combining-data-with-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 De asemenea, putem combina datele folosind funcții, pentru că funcțiile sunt și obiecte în JavaScript.
 
-Modul în care adăugăm o funcție obiectului:
+Modul în care **adăugăm o funcție obiectului**:
 
 - În primul rând, avem numele funcției "grow"
 - Urmat de ":" 
@@ -104,7 +104,7 @@ rect.print();
 
 # Imprimarea Obiectelor
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-7-printing-objects-tostring-function-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/RO/JS-Advanced-Object-Composition-7-printing-objects-tostring-function-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Imprimarea obiectelor utilizând funcția `toString()`:
 
