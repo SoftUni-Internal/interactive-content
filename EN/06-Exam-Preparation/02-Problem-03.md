@@ -17,7 +17,7 @@ class Bank {
 
 Write a **Bank** class that implements the following functionality:
 
-## `constructor (bankName)` 
+- `constructor (bankName)` 
 
 Receives **1 parameter** at initialization of the class (**bankName**).
 
@@ -26,7 +26,7 @@ The **Bank** class should have these **2 properties:**
 - bankName \- a **private** property of type string
 - allCustomers \- initially an empty array
 
-## `newCustomer (customer)`
+- `newCustomer (customer)`
 
 The **customer** is of type object "\{**firstName, lastName, personalId**\}".
 
@@ -35,7 +35,7 @@ The **customer** is of type object "\{**firstName, lastName, personalId**\}".
 
 - Otherwise, this function should **add a new customer** with the provided details
 
-## `depositMoney (personalId, amount)`
+- `depositMoney (personalId, amount)`
 
 Both the **personalId** and **amount** should be numbers.
 
@@ -47,7 +47,7 @@ Both the **personalId** and **amount** should be numbers.
 
 "\{**totalMoney**\}\$"
 
-## `withdrawMoney (personalId, amount)`
+- `withdrawMoney (personalId, amount)`
 
 Both **personalId** and **amount** are numbers.
 
