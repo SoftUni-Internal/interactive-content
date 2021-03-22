@@ -2,7 +2,7 @@
 
 # Destructurarea
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-8-9-destructuring-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/RO/JS-Advanced-Object-Composition-8-9-destructuring-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Sintaxa de alocare a destructurării este o expresie JavaScript care face posibilă despachetarea valorilor din tablouri sau proprietăți din obiecte în variabile distincte.
 
@@ -71,7 +71,7 @@ Putem observa că schimbările au avut loc și acolo, de asemenea.
 
 # Destructurarea Imbricată
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-10-nested-destructuring-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/RO/JS-Advanced-Object-Composition-10-nested-destructuring-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Acum să aruncăm o privire asupra unor destructurări imbricate.
 
@@ -107,7 +107,7 @@ console.log(department);
 
 # Destructurarea Matricilor Imbricate
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-11-destructuring-nested-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/RO/JS-Advanced-Object-Composition-11-destructuring-nested-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 La destructurarea matricilor imbricate este important să cunoașteți poziția la care o căutați.
 
@@ -138,9 +138,9 @@ Apoi, printați rezultatul.
 [slide hideTitle]
 # Obiecte și Matrice de Destructurare
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-12-objects-and-arrays-destructuring-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/RO/JS-Advanced-Object-Composition-12-objects-and-arrays-destructuring-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Destructurarea unei matrice de obiecte.
+Destructurarea unei matrice de obiecte:
 
 ```js live
 const employees = [{
