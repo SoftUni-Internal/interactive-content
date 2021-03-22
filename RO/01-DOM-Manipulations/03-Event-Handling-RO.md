@@ -212,7 +212,7 @@ clearInterval(intervalID);
 
 [slide hideTitle]
 # Problemă cu soluție: Add Delete
-[code-task title="Add Delete" taskId="Js-Advanced-Dom-Manipulations-lab-Add-Delete" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
+[code-task title="Add Delete" taskId="Js-Advanced-Dom-Manipulations-Add-Delete" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 ```
 function addDelete(){
   // Scrieți codul dvs. aici
