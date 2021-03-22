@@ -1,13 +1,13 @@
-# Homework
+# Teme pentru acasă
 
 [slide hideTitle]
 
-# Problem: Person and Teacher
+# Problemă: Person and Teacher
 [code-task title="Person and Teacher" taskId="js-advanced-prototypes-and-inheritance-person-and-teacher" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
 function personAndTeacher() {
-    // Write your code here
+    // Scrieți codul aici
 
     return {
         Person,
@@ -19,16 +19,16 @@ function personAndTeacher() {
 [/code-editor]
 [task-description]
 
-# Description
+# Descriere
 
-Write a class **Person** and a class **Teacher** which extends **Person**.
+Scrieți o clasă **Person** și o clasă **Profesor** care extinde **Persoană**.
 
-- The **Person** class should have a **name** and an **email**
-- The **Teacher** class should have a **name**, an **email**, and a **subject**
+- Clasa **Person** ar trebui să aibă un **nume** și un **e-mail**
+- Clasa **Profesor** ar trebui să aibă un **nume**, un **e-mail** și un **subiect**
 
-## Input and Output
+## Intrare și ieșire
 
-There will be **NO** input. Your function should return an object containing the classes **Person** and **Teacher**.
+Va exista o intrare **NU**. Funcția dvs. ar trebui să returneze un obiect care conține clasele **Person** și **Profesor**.
 
 [/task-description]
 [code-io /]
@@ -84,12 +84,12 @@ yes
 
 [slide hideTitle]
 
-# Problem: Inheriting and Replacing ToString
+# Problemă: Inheriting and Replacing ToString
 [code-task title="Inheriting and Replacing ToString" taskId="js-advanced-prototypes-and-inheritance-inheriting-and-replacing-toString" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
 function toStringExtension() {
-    // Write your code here
+    // Scrieți codul aici
 
     return {
         Person,
@@ -102,23 +102,23 @@ function toStringExtension() {
 [/code-editor]
 [task-description]
 
-# Description
+# Descriere
 
-Extend the **Person** and **Teacher** classes from the previous task and add a class **Student** inheriting from **Person**. 
+Extindeți clasele **Persoană** și **Profesor** din sarcina anterioară și adăugați o clasă **Student** care moștenește de la **Persoană**.
 
-Add `toString()` functions to all classes, the format should be as follows:
+Adăugați funcția `toString ()` la toate clasele, formatul ar trebui să fie după cum urmează:
 
-- **Person** - returns "**Person (name:** \{**name**\}**, email:** \{**email**\}**)**"
-- **Student** - returns "**Student (name:** \{**name**\}**, email:** \{**email**\}**, course:** \{**course**\}**)**"
-- **Teacher** - returns "**Teacher (name:** \{**name**\}**, email:** \{**email**\}**, subject:** \{**subject**\}**)**"
+- **Person** - returnează „**Persoană (nume:** \{**nume**\}**, e-mail:** \{**e-mail**\}**)**”
+- **Student** - returnează „**Student (nume:** \{**nume**\}**, e-mail:** \{**e-mail**\}**, curs:** \{**curs**\}**)**"
+- **Profesor** - returnează „**Profesor (nume:** \{**nume** \}**, e-mail:** \{**e-mail**\}**, subiect:** \{**subiect**\}**)**"
 
-Try to reuse code by using the `toString()` function of the base class.
+Încercați să refolosiți codul folosind funcția `toString ()` din clasa de bază.
 
-## Input and Output
+## Intrare și ieșire
 
-There will be **NO** input. 
+Va exista o intrare **NU**.
 
-Your function should return an object containing the classes **Person**, **Teacher**, and **Student**.
+Funcția dvs. ar trebui să returneze un obiect care conține clasele **Person**, **Profesor** și **Student**.
 
 [/task-description]
 [code-io /]
@@ -174,43 +174,43 @@ yes
 
 [slide hideTitle]
 
-# Problem: Array Extension
+# Problemă: Array Extension
 [code-task title="Array Extension" taskId="js-advanced-prototypes-and-inheritance-array-extension" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
    function arrayExtension() {
-      // Write your code here
+      // Scrieți codul aici
    }
 ```
 
 [/code-editor]
 [task-description]
 
-# Description
+# Descriere
 
-Extend the built-in **Array** object with additional functionality. 
+Extindeți obiectul **Array** încorporat cu funcționalități suplimentare.
 
-Implement the following functionality:
+Implementați următoarele funcționalități:
 
-- `last()`: returns the last element of the array
-- `skip(n)`: returns a new array which includes all original elements, except the first **n** elements **n** is a **Number** parameter
-- `take(n)`: returns a new array containing the first **n** elements from the original array; **n** is a **Number** parameter
-- `sum()`: returns a sum of all array elements
-- `average()`: returns the average of all array elements
+- `last ()`: returnează ultimul element al matricei
+- `skip (n)`: returnează o nouă matrice care include toate elementele originale, cu excepția primelor **n** elemente **n** este un parametru **Număr**
+- `take (n)`: returnează o nouă matrice care conține primele **n** elemente din matricea originală; **n** este un parametru **Număr**
+- `sum ()`: returnează o sumă a tuturor elementelor matricei
+- `average ()`: returnează media tuturor elementelor matricei
 
-## Input and Output
+## Intrare și ieșire
 
-The input for functions that expect it will be passed as valid parameters. 
+Intrarea pentru funcțiile care așteaptă să fie transmisă ca parametri valizi.
 
-The output should be their **return** value.
+Rezultatul ar trebui să fie valoarea lor **de returnare**.
 
-## Constraints
+## Constrângeri
 
-Structure your code as an **IIFE**.
+Structurați-vă codul ca **IIFE**.
 
-## Hints
+## Sugestii
 
-If we have an **instance** of an array, since we know it is an object, adding new properties to it is pretty straightforward:
+Dacă avem o **instanță** a unui tablou, deoarece știm că este un obiect, adăugarea de noi proprietăți este destul de simplă:
 
 ```js
 let myArr = [1, 2, 3]
@@ -220,9 +220,9 @@ myArr.last = function() {
 };
 ```
 
-However, this only adds our new function to this instance. 
+Cu toate acestea, acest lucru adaugă doar noua noastră funcție la această instanță.
 
-To add all functions just one time and have them work on **all arrays**, we have to attach them to array's **prototype** instead:
+Pentru a adăuga toate funcțiile o singură dată și pentru ca acestea să funcționeze la **toate matricele**, trebuie să le atașăm la **prototipul** matricei în schimb:
 
 ```js
 Array.prototype.last = function() {
@@ -230,11 +230,11 @@ Array.prototype.last = function() {
 };
 ```
 
-With such a declaration, we gain access to the context of the calling instance via the "**this**" keyword. 
+Cu o astfel de declarație, avem acces la contextul instanței apelante prin intermediul cuvântului cheie „**this**”.
 
-We can then easily access indexes and other existing properties. 
+Putem apoi accesa cu ușurință indexuri și alte proprietăți existente.
 
-Do not forget we do not want to modify the exiting array but to create a new one:
+Nu uitați că nu dorim să modificăm matricea care iese, ci să creăm una nouă:
 
 ```js
 Array.prototype.last = () => {
@@ -262,9 +262,9 @@ Array.prototype.take = (n) => {
 };
 ```
 
-Note these functions do not have any error checking - if **n** is **negative** or **outside the bounds** of the array, an exception will be thrown, so be careful when using them, or add your validation. 
+Rețineți că aceste funcții nu au nicio verificare a erorilor - dacă **n** este **negativ** sau **în afara limitelor** ale tabloului, va fi afișată o excepție, deci aveți grijă când le utilizați sau adăugați o validare.
 
-The last two functions require a little bit of arithmetic to be performed:
+Ultimele două funcții necesită un pic de aritmetică pentru a fi efectuate:
 
 ```js
 Array.prototype.sum = () => {
@@ -282,13 +282,11 @@ Array.prototype.average = () => {
 };
 ```
 
-## Submission
+Pentru a putea trimite soluția, trebuie să ne înfășurăm programul într-un „**IIFE**”.
 
-To be able to submit the solution, we need to wrap our program in an "**IIFE**". 
+Nu există **nici o valoare de returnare**, deoarece executarea codului are ca rezultat adăugarea funcționalității la un obiect existent.
 
-There is **no return value** since the code execution results in functionality being added to an existing object. 
-
-We are ready to submit our solution.
+Suntem gata să trimitem soluția noastră.
 
 ```js
 (function solve() {
@@ -396,46 +394,37 @@ yes
 
 [slide hideTitle]
 
-# Problem: Balloons
+# Problemă: Balloons
 [code-task title="Balloons" taskId="js-advanced-prototypes-and-inheritance-balloons" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
    function balloons() {
-      // Write your code here
+      // Scrieți codul aici
    }
 ```
 
 [/code-editor]
 [task-description]
 
-# Description
+# Descriere
 
-You have been tasked with creating several classes for balloons.
-## Balloon Class
+Vi s-a însărcinat să creați mai multe clase pentru baloane.
 
-Implement a class **Balloon**, which is initialized with a **color** (String) and **gasWeight** (Number). 
+Implementați o clasă **Balloon**, care este inițializată cu o **culoare** (String) și **gasWeight** (Number).
 
-These two arguments should be **public members**.
+Aceste două argumente ar trebui să fie **membri publici**.
 
-## PartyBalloon Class
+Implementați o altă clasă **PartyBalloon**, care moștenește clasa **Balloon** și este inițializată cu **2 parametri suplimentari** - **ribbonColor** (String) și **ribbonLength** (Number).
 
-Implement a **PartyBalloon** class, which inherits **Balloon** and is initialized with **2 additional parameters** - **ribbonColor** (String) and **ribbonLength** (Number).
+Clasa **PartyBalloon** ar trebui să aibă o **panglică de proprietate** care este un obiect cu **culoare** și **lungime** - cele date la inițializare. Proprietatea panglică ar trebui să aibă un **getter**.
 
-The **PartyBalloon** class should have a **property ribbon** which is an object with **color** and **length** - the ones given upon initialization. 
+Implementați o altă clasă **BirthdayBalloon**, care moștenește clasa **PartyBalloon** și este inițializată cu **1 parametru suplimentar** - **text** (Șir). **textul** ar trebui să fie o proprietate și ar trebui să aibă un **getter**
 
-The ribbon property should have a **getter**.
+## Sugestii
 
-## BirthdayBalloon Class
+În primul rând, trebuie să scriem o funcție, care va ține clasele noastre.
 
-Implement another class - **BirthdayBalloon**, which inherits the **PartyBalloon** class and is initialized with **1 extra parameter** - **text** (String). 
-
-The **text** should be a property and should have a **getter**
-
-## Hints
-
-First, we need to write a function that will hold our classes. 
-
-We create a simple function and, we add the first class, the base class for all Balloons to it.
+Creăm o funcție simplă și, adăugăm prima clasă, clasa de bază pentru toate baloanele.
 
 ```js
 function solve() {
@@ -448,13 +437,13 @@ function solve() {
 }
 ```
 
-Now that we have our base class, we can create the first child class - the **PartyBalloon**, which extends the base **Balloon** class.
+Acum că avem clasa noastră de bază, putem crea prima clasă pentru copii - **PartyBalloon**, care extinde clasa de bază **Balloon**.
 
-Upon inheriting the **Balloon** class, the constructor of the **PartyBalloon** class will require the use of the `super()` method to initialize the **Balloon** base constructor.
+După moștenirea clasei **Balloon**, constructorul clasei **PartyBalloon** va necesita utilizarea metodei „super ()“ pentru a inițializa constructorul de bază **Balloon**.
 
-We also need to add the **ribbon** object property in the constructor of the **PartyBalloon** class. 
+De asemenea, trebuie să adăugăm proprietatea obiectului **ribbon** în constructorul clasei **PartyBalloon**.
 
-This one is for you to do.
+Acesta este pentru tine de făcut.
 
 ```js
 function solve() {
@@ -466,8 +455,7 @@ function solve() {
     }
 
     class PartyBallon extends Ballon {
-        constructor(color, gasWeight, 
-            ribbonColor, ribbonLength) {
+        constructor(color, gasWeight, ribbonColor, ribbonLength) {
             super(color, gasWeight);
             // TODO: Initialize ribbon object
         }
@@ -485,13 +473,13 @@ function solve() {
 }
 ```
 
-Now that we know how to inherit classes, create the **BirthdayBalloon** class on your own.
+Acum, că știm cum să moștenim clase, creați singuri clasa **BirthdayBalloon**.
 
-The **BirthdayBalloon** class should extend the **PartyBalloon** class and add an **extra property**.
+Clasa **BirthdayBalloon** ar trebui să extindă clasa **PartyBalloon** și să adauge o **proprietate suplimentară**.
 
-It is the same as the previous class.
+Este la fel ca clasa anterioară.
 
-Lastly, we need to return an object containing all of our classes, so we can submit the solution.
+În cele din urmă, trebuie să returnăm un obiect care conține toate clasele noastre, astfel încât să putem trimite soluția.
 
 ```js
 function solve() {
@@ -509,9 +497,7 @@ function solve() {
 }
 ```
 
-## Submission
-
-Submit a **function (NOT IIFE)**, which holds all classes, and returns them as an object.
+Trimiteți o funcție **(NU IIFE)**, care conține toate clasele și le returnează ca obiect.
 
 [/task-description]
 [code-io /]
@@ -687,44 +673,44 @@ yes
 
 [slide hideTitle]
 
-# Problem: People
+# Problemă: People
 
 [code-task title="People" taskId="js-advanced-prototypes-and-inheritance-people" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
    function people() {
-      // Write your code here
+      // Scrieți codul aici
    }
 ```
 
 [/code-editor]
 [task-description]
 
-# Description
+# Descriere
 
-Define several classes that represent a company's employee records. 
+Definiți mai multe clase care reprezintă înregistrările angajaților unei companii.
 
-Every employee has a **name** and **age**, a **salary**, and a list of **tasks**, while every position has specific properties not present in the others. 
+Fiecare angajat are un **nume** și **vârstă**, un **salariu** și o listă de **sarcini**, în timp ce fiecare funcție are proprietăți specifice care nu sunt prezente în celelalte.
 
-Place all common functionality in an **abstract parent** class. 
+Plasați toate funcționalitățile comune într-o clasă **părinte abstract**.
 
-Follow the diagram below:
+Urmați diagrama de mai jos:
 
 [image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-4.png" /]
 
-Every position has different tasks. In addition to all common properties, the manager position has a **dividend** he can collect along with his salary.
+Fiecare poziție are sarcini diferite. În plus față de toate proprietățile comune, funcția de manager are un **dividend** pe care îl poate încasa împreună cu salariul său.
 
-All employees have a `work()` function when called cycles through the list of responsibilities for that position and prints the current one. 
+Toți angajații au funcția `work()` atunci când sunt chemați, parcurge lista responsabilităților pentru funcția respectivă și o imprimă pe cea curentă.
 
-When all tasks have been printed, the list starts over from the beginning. Employees can also collect **salary**, which outputs the amount plus any **bonuses**.
+Când toate sarcinile au fost tipărite, lista începe de la început. Angajații pot colecta, de asemenea, **salariu**, care generează suma plus orice **bonusuri**.
 
-Your program needs to expose a module containing the three classes **Junior**, **Senior**, and **Manager**. 
+Programul dvs. trebuie să expună un modul care conține cele trei clase **Junior**, **Senior** și **Manager**.
 
-The properties **name** and **age** are set through the constructor, while the **salary** and a manager's **dividend** are initially set to zero and can be changed later.
+Proprietățile **nume** și **vârstă** sunt setate prin intermediul constructorului, în timp ce **salariul** și **dividendul unui manager** sunt inițial setate la zero și pot fi modificate ulterior.
 
-The list of tasks is filled by each position. The resulting objects also expose the functions `work()` and `collectSalary()`. 
+Lista sarcinilor este completată de fiecare post. Obiectele rezultate expun, de asemenea, funcțiile `work()` și `collectSalary()`.
 
-When `work()` is called, one of the following lines is printed to the console depending on the current task in the list:
+Când se apelează `work()`, una dintre următoarele linii este tipărită pe consolă în funcție de sarcina curentă din listă:
 
 - "\{**employee name**\} **is working on a simple task.**"
 - "\{**employee name**\} **is working on a complicated task.**"
@@ -733,27 +719,25 @@ When `work()` is called, one of the following lines is printed to the console de
 - "\{**employee name**\} **scheduled a meeting.**"
 - "\{**employee name**\} **is preparing a quarterly report.**"
 
-When `collectSalary()` is called, print the following:
+Când se numește `collectSalary()`, tipăriți următoarele:
 
-- "\{**employee name**\} **received** \{**salary + bonuses**\} **this month.**"
+- "\{**numele angajatului**\} **a primit** \{**salariu + bonusuri**\} **luna aceasta.**"
 
-## Input and Output
+## Intrare și ieșire
 
-Any input will be passed as valid arguments where applicable. 
+Orice intrare va fi transmisă ca argumente valide acolo unde este cazul.
 
-Print any output that is required to the console as a **string**.
+Imprimați orice ieșire necesară consolei ca **șir**.
 
-## Submission
+Trimiteți codul dvs. ca un modul revelator, care conține cele **trei clase**.
 
-Submit your code as a revealing module, containing the **three classes**. 
+Toate definițiile trebuie denumite așa cum este descris mai sus.
 
-All definitions need to be named as described above.
+## Sugestii
 
-## Hints
+Ar trebui să începem prin crearea unei clase părinte care să dețină toate proprietățile partajate între diferitele poziții.
 
-We should begin by creating a parent class that will hold all properties shared among the different positions. 
-
-Looking at the problem description, we see the following structure for our parent object:
+Privind descrierea problemei, vedem următoarea structură pentru obiectul nostru părinte:
 
 ```js
 {
@@ -766,14 +750,14 @@ Looking at the problem description, we see the following structure for our paren
 }
 ```
 
-Data variables will be part of the object attached to its local context with **this** inside the **constructor**. 
+Variabilele de date vor face parte din obiectul atașat la contextul său local cu **aceasta** din **constructor**.
 
-Any properties that need to be initialized at instantiation time are defined as function parameters. 
+Orice proprietăți care trebuie inițializate la momentul instanțierii sunt definite ca parametri de funcție.
 
-Functions are defined inside the class body.
+Funcțiile sunt definite în interiorul corpului clasei.
 
 ```js
-class Employee {
+  class Employee {
     constructor(name, age) {
         this.name = name;
         this.age = age;
@@ -791,17 +775,16 @@ class Employee {
 }
 ```
 
-The problem description requires that the **parent** class is **abstract**. 
+Descrierea problemei necesită ca clasa **părinte** să fie **abstractă**.
 
-To achieve this, we have to add a condition in the constructor which prevents its direct instantiation. 
+Pentru a realiza acest lucru, trebuie să adăugăm o condiție în constructor care împiedică instanțierea sa directă.
 
-Using the **new.target** keyword, we can check whether the object is created from the abstract constructor or through a child class.
+Folosind cuvântul cheie **new.target**, putem verifica dacă obiectul este creat din constructorul abstract sau printr-o clasă copil.
 
 ```js
 constructor(name, age) {
     if (new.target === Employee) {
-        throw new Error(
-            "Cannot instantiate directly.")
+        throw new Error("Cannot instantiate directly.")
     }
     this.name = name;
     this.age = age;
@@ -810,24 +793,23 @@ constructor(name, age) {
 }
 ```
 
-The `work()` function has to cycle through the list of tasks and print the current one. 
+Funcția `work ()` trebuie să parcurgă lista sarcinilor și să o tipărească pe cea curentă.
 
-The easiest way to do this is to shift the first element from the array and push it to the end.
+Cel mai simplu mod de a face acest lucru este să deplasați primul element din matrice și să îl împingeți până la capăt.
 
 ```js
 work() {
     let currentTask = this.tasks.shift();
     console.log(this.name + currentTask);
-    this.tasks.push(currentTask);
+    this.tasks.push(currentTask)
 }  
 ```
 
-Printing the salary is pretty straightforward. However, since the manager has a bonus to his salary, it is best to get the whole sum with an internal function, that the manager can **override**.
+Imprimarea salariului este destul de simplă. Cu toate acestea, deoarece managerul are un bonus la salariu, cel mai bine este să obțineți întreaga sumă cu o funcție internă, pe care managerul să o poată **suprascrie**.
 
 ```js
 collectSalary() {
-    console.log(`${this.name} received
-        ${this.getSalary()} this month`);
+    console.log(`${this.name} received ${this.getSalary()} this month`);
 }
 
 getSalary() {
@@ -835,21 +817,21 @@ getSalary() {
 }
 ```
 
-Now any objects that inherit from **Employee** will have all of their properties as well as anything new that is defined in their declaration. 
+Acum, orice obiecte care moștenesc de la **Angajat** vor avea toate proprietățile lor, precum și orice noutate care este definit în declarația lor.
 
-To inherit (extend) a class, a new class is defined with the **extends** keyword after its name.
+Pentru a moșteni (extinde) o clasă, o nouă clasă este definită cu cuvântul cheie **extinde** după numele său.
 
-They also have to call the parent constructor from their constructor, so the prototype chain is established. 
+De asemenea, trebuie să apeleze constructorul părinte din constructorul lor, astfel încât lanțul prototip este stabilit.
 
-For **Junior** and **Senior**, the only difference from the parent **Employee** is the elements inside the tasks array, since they can use the functions directly from the base class. 
+Pentru **Junior** și **Senior**, singura diferență față de părintele **Angajat** este elementele din matricea de sarcini, deoarece acestea pot utiliza funcțiile direct din clasa de bază.
 
-Child classes will call the parent with any parameters that are needed and push their tasks directly to the array.
+Clasele de copii vor apela părintele cu parametrii necesari și își vor împinge sarcinile direct în matrice.
 
 ```js
 class Junior extends Employee {
     constructor(name, age) {
         super(name, age);
-        this.tasks.push(' is working on simple task.');
+        this.tasks.push(' is working on simple task.')
     }
 }
 ```
@@ -858,18 +840,16 @@ class Junior extends Employee {
 class Senior extends Employee {
     constructor(name, age) {
         super(name, age);
-        this.tasks.push(
-            ' is working on a complicated task.');
+        this.tasks.push(' is working on a complicated task.');
         this.tasks.push(' is taking time off work.');
-        this.tasks.push(
-            ' is supervising junior workers.');
+        this.tasks.push(' is supervising junior workers.');
     }
 }
 ```
 
-The **Manager** is not much different, with the exception that his constructor has to attach a **dividend** property that is initially set to zero. 
+**Managerul** nu este mult diferit, cu excepția faptului că constructorul său trebuie să atașeze o proprietate **dividend** care este setată inițial la zero.
 
-His definition also needs to override the `getSalary()` function we added to the base class earlier, which includes the bonus.
+Definiția sa trebuie, de asemenea, să înlocuiască funcția `getSalary()` pe care am adăugat-o anterior la clasa de bază, care include bonusul.
 
 ```js
 class Manager extends Employee {
@@ -877,8 +857,7 @@ class Manager extends Employee {
         super(name, age);
         this.dividend = 0;
         this.tasks.push(' scheduled a meeting.');
-        this.tasks.push(
-            ' is preparing a quarterly report.');
+        this.tasks.push(' is preparing a quarterly report.');
     }
     getSalary() {
         return this.salary + this.dividend;
@@ -886,7 +865,7 @@ class Manager extends Employee {
 }
 ```
 
-After we are done with the definitions of all object constructors, we need to wrap them in a revealing module for use by other parts of our program without polluting the global namespace:
+După ce am terminat cu definițiile tuturor constructorilor de obiecte, trebuie să le înfășurăm într-un modul revelator pentru a fi utilizate de alte părți ale programului nostru, fără a polua spațiul de nume global:
 
 ```js
 class Manager extends Employee {
@@ -894,8 +873,7 @@ class Manager extends Employee {
         super(name, age);
         this.dividend = 0;
         this.tasks.push(' scheduled a meeting.');
-        this.tasks.push(
-            ' is preparing a quarterly report.');
+        this.tasks.push(' is preparing a quarterly report.');
     }
     getSalary() {
         return this.salary + this.dividend;
@@ -978,7 +956,7 @@ yes
 [input]
 result = result();
 
-// Stub the console
+// Îndepărtați consola
 var oldConsole = console.log;
 var log = \[\];
 console.log = function (string) \{
@@ -990,7 +968,7 @@ guy1.salary = 1200;
 guy1.collectSalary();
 expect(log\[0\]).to.equal('Peter received 1200 this month.', "Junior's salary was not logged.");
 
-// Restore the console
+// Restabiliți consola
 console.log = oldConsole;
 [/input]
 [output]
@@ -1073,7 +1051,7 @@ expect(guy1parent === guy2parent).to.equal(true, "Junior and Senior aren't relat
 expect(guy2parent === guy3parent).to.equal(true, "Senior and Manager aren't related (parent class not the same).");
 expect(guy1parent === guy3parent).to.equal(true, "Junior and Manager aren't related (parent class not the same).");
 
-// Stub the console
+// Îndepărtați consola
 var oldConsole = console.log;
 var log = \[\];
 console.log = function (string) \{
@@ -1139,7 +1117,7 @@ var expectedGuy3Output = \[
 
 compareArrays(expectedGuy3Output, log, "Manager's work wasn't logged.");
 
-// Restore the console
+// Restabiliți consola
 console.log = oldConsole;
 
 function compareArrays(array1, array2, message) \{
@@ -1172,7 +1150,7 @@ expect(guy1parent === guy2parent).to.equal(true, "Junior and Senior aren't relat
 expect(guy2parent === guy3parent).to.equal(true, "Senior and Manager aren't related (parent class not the same).");
 expect(guy1parent === guy3parent).to.equal(true, "Junior and Manager aren't related (parent class not the same).");
 
-// Stub the console
+// Îndepărtați consola
 var oldConsole = console.log;
 var log = \[\];
 console.log = function (string) \{
@@ -1194,7 +1172,7 @@ guy3.dividend = 500;
 guy3.collectSalary();
 expect(log\[3\]).to.equal('Jake received 3500 this month.', "Manager's dividend was not logged.");
 
-// Restore the console
+// Restabiliți consola
 console.log = oldConsole;
 [/input]
 [output]
@@ -1209,102 +1187,93 @@ yes
 
 [slide hideTitle]
 
-# Problem: Posts
+# Problemă: Posts
 
 [code-task title="Posts" taskId="js-advanced-prototypes-and-inheritance-posts" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
    function posts() {
-      // Write your code here
+      // Scrieți codul aici
    }
 ```
 
 [/code-editor]
 [task-description]
 
-# Description
+## Descriere
 
-You need to create several classes for **Posts**.
+Trebuie să creați mai multe clase pentru **Postări**.
 
-Implement the following classes:
+Implementați următoarele clase:
 
-- **Post**, which is initialized with **title** (String) and **content** (String).
+- **Post**, care este inițializat cu **title** (Șir) și **conținut** (Șir).
 
-   - The **2** arguments should be **public members**
-   - The **Post** class should also have a `toString()` function which returns the following result:
-      - "**Post:** \{**postTitle**\}"
-      - "**Content:** \{**postContent**\}"
+   - Argumentele **2** ar trebui să fie **membri publici**
+   - Clasa **Post** ar trebui să aibă, de asemenea, o funcție `toString()` care returnează următorul rezultat:
+      - „**Postare:** \{**postTitle**\}”
+      - „**Conținut:** \{**postContent**\}”
 
-- **SocialMediaPost**, which inherits the **Post** class and should be initialized with **2 additional arguments** - **likes** (Number) and **dislikes** (Number). The class should hold:
+- **SocialMediaPost**, care moștenește clasa **Post** și ar trebui inițializată cu **2 argumente suplimentare** - **aprecieri** (număr) și **antipatie** (număr). Clasa ar trebui să dețină:
 
-   - **comments**(Strings) - an array of strings
+   - **comentarii** (Șiruri) - o serie de șiruri
 
-   - **addComment**(comment)- a function which **adds** comments to that array
+   - **addComment** (comentariu) - o funcție care **adaugă** comentarii la acea matrice
 
-   - The class should extend the `toString()` function of the **Post** class, and should return the following result
+   - Clasa ar trebui să extindă funcția `toString()` a clasei **Post** și ar trebui să returneze următorul rezultat
 
     ```
-      Post: {postTitle}
-      Content: {postContent}
-      Rating: {postLikes - postDislikes}
-      Comments:
-       * {comment1}
-       * {comment2}
+      Postare: {postTitle}
+      Conținut: {postContent}
+      Evaluare: {postLikes - postDislikes}
+      Comentarii:
+       * {comentariu1}
+       * {comentariu2}
     ```
 
-In case **there are no comments**, return information only about the **title**, **content**, and the **rating** of the **post**.
+În cazul în care **nu există comentarii**, trimiteți informații numai despre **titlul**, **conținutul** și **evaluarea** din **postarea**.
 
-- **BlogPost**, which inherits the **Post** class
+- **BlogPost**, care moștenește clasa **Post**
 
-   - the **BlogPost** class should be initialized with **1 additional argument** - **views**(Number)
+   - clasa **BlogPost** ar trebui inițializată cu **1 argument suplimentar** - **vizualizări** (Număr)
 
-   - the **BlogPost** class should hold a `view()` method which **increments** the **views** of the object by **1**, every time it is called. The function should **return the object**, so that **chaining is supported**
+   - clasa **BlogPost** ar trebui să dețină o metodă `view ()` care **mărește** **vizualizările** obiectului cu **1**, de fiecare dată când este apelat. Funcția ar trebui să **returneze obiectul**, astfel încât să fie acceptată **înlănțuirea**
 
-   - the **BlogPost** class should extend the `toString()` function of the **Post** class, and should return the following result
+   - clasa **BlogPost** ar trebui să extindă funcția `toString ()` a clasei **Post** și ar trebui să returneze următorul rezultat
 
    ```
-   Post: {postTitle}
-   Content: {postContent}
-   Views: {postViews}
+   Postare: {postTitle}
+   Conținut: {postContent}
+   Vizualizări: {postViews}
    ```
 
-# Example
-
-## Input
+## Exemplu
 
 ```js
    let post = new Post("Post", "Content");
 
    console.log(post.toString());
 
-   let scm = new SocialMediaPost(
-       "TestTitle", "TestContent", 25, 30);
+   // Post: Post
+   // Content: Content
+
+   let scm = new SocialMediaPost("TestTitle", "TestContent", 25, 30);
 
    scm.addComment("Good post");
    scm.addComment("Very good post");
    scm.addComment("Wow!");
 
    console.log(scm.toString());
+
+// Postare: TestTitle
+   // Conținut: TestContent
+   // Evaluare: -5
+   // Comentarii:
+   //  * Good post
+   //  * Very good post
+   //  * Wow!
 ```
 
-## Output
-
-```
-Post: Post
-Content: Content
-----------------------------
-Post: TestTitle
-Content: TestContent
-Rating: -5
-Comments:
- * Good post
- * Very good post
- * Wow!
-```
-
-## Submission
-
-Submit a **function (NOT IIFE)**, which holds all classes, and returns them as an object.
+Trimiteți o funcție **(NOT IIFE)**, care conține toate clasele și le returnează ca obiect.
 
 [/task-description]
 [code-io /]
@@ -1474,13 +1443,13 @@ yes
 
 [slide hideTitle]
 
-# Problem: Computer
+# Problemă: Computer
 
 [code-task title="Computer" taskId="js-advanced-prototypes-and-inheritance-computer" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
 function computer() {
-    // Write your code here
+    // Scrieți codul aici
 
     return {
         Battery,
@@ -1496,62 +1465,61 @@ function computer() {
 [/code-editor]
 [task-description]
 
-# Description
+# Descriere
 
-Implement the class hierarchy for a computer business.
+Implementați ierarhia de clase pentru o afacere cu calculatoare.
 
-Implement the following classes:
+Implementați următoarele clase:
 
-- A **Keyboard** class that contains:
+- O clasă **Keyboard** care conține:
 
-   - **manufacturer** - a string property for the name of the manufacturer
-   - **responseTime** - a number property for the response time of the keyboard
+   - **manufacturer** - o proprietate șir pentru numele producătorului
+   - **responseTime** - o proprietate numerică pentru timpul de răspuns al tastaturii
 
-- A **Monitor** class that contains:
+- O clasă **Monitor** care conține:
 
-   - **manufacturer** - a string property for the name of the manufacturer
-   - **width** - a number property for the width of the screen
-   - **height** - a number property for the height of the screen
+   - **manufacturer** - o proprietate șir pentru numele producătorului
+   - **width** - o proprietate numerică pentru lățimea ecranului
+   - **height** - o proprietate numerică pentru înălțimea ecranului
 
-- A **Battery** class that contains:
+- O clasă **Battery** care conține:
 
-   - **manufacturer** - a string property for the name of the manufacturer
-   - **expectedLife** - a number property for the expected years battery life
+   - **manufacturer** - o proprietate șir pentru numele producătorului
+   - **expectedLife** - o proprietate numerică pentru durata de viață a bateriei așteptată
 
-- **Computer** - an **abstract** class that contains:
+- **Computer** - o clasă **abstract** care conține:
 
-   - **manufacturer** - a string property for the name of the manufacturer
-   - **processorSpeed** - a number property containing the speed of the processor in GHz
-   - **ram** - a number property containing the RAM of the computer in Gigabytes
-   - **hardDiskSpace** - a number property containing the hard disk space in Terabytes
+   - **manufacturer** - o proprietate șir pentru numele producătorului
+   - **processorSpeed** - o proprietate numerică care conține viteza procesorului în GHz
+   - **ram** - o proprietate numerică care conține memoria RAM a computerului în Gigabytes
+   - **hardDiskSpace** - o proprietate de număr care conține spațiul pe hard disk în Terabytes
 
-- A **Laptop** class **extending** the **Computer** class that contains:
+- O clasă **Laptop** **extinzând** clasa **Computer** care conține:
 
-   - **weight** - a number property containing the weight of the laptop in Kilograms
-   - **color** - a string property containing the color of the laptop
-   - **battery** - an instance of the **Battery** class containing the laptop's battery
+   - **weight** - o proprietate numerică care conține greutatea laptopului în kilograme
+   - **color** - o proprietate șir care conține culoarea laptopului
+   - **battery** - o instanță din clasa **Battery** care conține bateria laptopului
    
-There should be a **getter** and a **setter** for the property and validation to ensure the argument that is passed in is an instance of the Battery class.
+Ar trebui să existe un **getter** și un **setter** pentru proprietate și validare pentru a se asigura că argumentul transmis este o instanță din clasa Battery.
 
-- **Desktop** - a concrete class **extending** the **Computer** class that contains:
+- **Desktop** - o clasă concretă **extinzând** clasa **Computer** care conține:
 
-   - **keyboard** - an instance of the **Keyboard** class containing the Desktop PC's Keyboard
+   - **keyboard** - o instanță din clasa **Keyboard** care conține tastatura computerului desktop
 
-There should be a **getter** and a **setter** for the property and validation ensuring the argument that is passed in is an instance of the **Keyboard** class.
+Ar trebui să existe un **getter** și un **setter** pentru proprietate și validare care să asigure că argumentul transmis este o instanță din clasa **Keyboard**.
 
-   - **monitor** - an instance of the **Monitor** class containing the Desktop PC's Monitor
+   - **monitor** - o instanță din clasa **Monitor** care conține monitorul computerului desktop
    
-There should be a **getter** and a **setter** for the property and validation ensuring the argument that is passed in is an instance of the **Monitor** class.
+Ar trebui să existe un **getter** și un **setter** pentru proprietate și validare care să asigure că argumentul transmis este o instanță din clasa **Monitor**.
 
-- Attempting to instantiate an abstract class should throw an **Error**
-- Attempting to pass an object that is not of the expected instance (ex. object that is not an instance of Battery to the laptop as a battery) should throw a **TypeError**
+- Încercarea de a crea o clasă abstractă ar trebui să dea o **Eroare**
+- Încercarea de a trece un obiect care nu este de instanța așteptată (de exemplu, un obiect care nu este o instanță a bateriei către laptop ca baterie) ar trebui să dea un **TypeError**
 
-## Example
+## Exemple
 
 ```js
 function createComputerHierarchy() {
-    // TODO: Implement all the classes, 
-    // with their properties
+    //TODO: implementați toate clasele, cu proprietățile lor
 
     return {
         Battery,
@@ -1564,15 +1532,13 @@ function createComputerHierarchy() {
 }
 ```
 
-## Submission
-
-You are asked to submit **ONLY the function** that returns an object containing the classes mentioned above.
+Vi se cere să trimiteți **DOAR funcția** care returnează un obiect care conține clasele menționate mai sus.
 
 ## Bonus
 
-To achieve code reusability, it is a good idea to have an abstract class containing common information. 
+Pentru a realiza reutilizarea codului, este o idee bună să aveți o clasă abstractă care să conțină informații comune.
 
-Check the classes for common characteristics, that can be grouped in a base class.
+Verificați clasele, pentru caracteristicile comune care pot fi grupate într-o clasă de bază?
 
 [/task-description]
 [code-io /]
