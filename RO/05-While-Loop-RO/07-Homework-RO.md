@@ -346,7 +346,7 @@ Scrieți un program care:
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Special Bonus
+# Problemă cu Soluție: Special Bonus
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/RO/Java-While-Loops-Problem-and-Solution-Special-Bonus-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -617,12 +617,12 @@ Ajutați-o pe Andreea scriind un program în care Andreea să introducă titlul 
 
 **Până ce** Andreea găsește cartea sa preferată **sau** nu verifică toate cărțile din bibliotecă, programul trebuie să citească de fiecare dată titlul următoarei cărți pe o linie separată.
 
-## Input
+## Intrare
 - Prima linie de intrare este titlul cărții pe care o caută Andreea - un șir
 - A doua linie este capacitatea bibliotecii - un număr întreg
 - Pe fiecare dintre liniile următoare - titlul unei cărți din bibliotecă - un șir
 
-## Output
+## Ieșire
 - Dacă Andreea **nu** găsește cartea, imprimă **două** linii:
   - "**The book you search is not here!**"
   - "**You checked** \{**count**\} **books.**"
@@ -881,9 +881,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program prin care Martin rezolvă probleme pentru examen până când primește din partea profesorului său, mesajul: "**Enough**". 
+Scrieți un program prin care Martin rezolvă probleme pentru examen până când primește din partea profesorului său mesajul: "**Enough**". 
 
-De fiecare dată când rezolvă o problemă, primește o notă. **Programul trebuie să se oprească când** Martin primește comanda "Enough" sau **primește numărul de note slabe**. 
+De fiecare dată când rezolvă o problemă, primește o notă. **Programul trebuie să se oprească când** Martin primește comanda "Enough" sau **primește un număr de note slabe**. 
 
 O notă slabă este mai mică sau egală cu 4.00.
 
@@ -1254,9 +1254,9 @@ Gaby vrea să înceapă o viață sănătoasă și își propune să meargă **1
 Scrieți un program **care citește de pe consolă câți pași** Gaby merge de fiecare dată când iese și **când atinge obiectivul stabilit**, printează mesajul: 
 - "**Goal reached! Good job!**"
 
-În cazul în care vrea să ajungă acasă **înainte de** atingerea scopului, va introduce comanda "**Going home**" și numărul de **pași** pe care i-a **făcut** în timp ce **gmerge acasă**. 
+În cazul în care vrea să ajungă acasă **înainte de** atingerea scopului, va introduce comanda "**Going home**" și numărul de **pași** pe care i-a **făcut** în timp ce **merge acasă**. 
 
-După aceea, dacă nu reușește să atingă obiectivul, va trebui să imprime mesajul următor pe consolă: 
+După aceea, dacă nu reușește să atingă obiectivul, va trebui să imprimați mesajul următor pe consolă: 
 - "\{**difference in steps**\} **more steps to reach goal.**"
 
 ## Exemple
@@ -1497,17 +1497,16 @@ Sarcina voastră este să scrieți un program care să calculeze **dacă** o can
 
 Știm că fiecare sticlă conține **750 ml.** de detergent. 
 
-Pentru o  **farfurie** sunt necesari 5 ml, iar pentru 1 **cană** 15 ml. 
+Pentru o  **farfurie** sunt necesari 5 ml., iar pentru o **cană** 15 ml. 
 
 La fiecare **a treia** umplere cu vase, mașina de spălat vase este plină doar cu căni, iar în celelalte cazuri cu farfurii. 
 
-Până la primirea comenzii **"END"** veți continua să primiți numărul de vase care este necesar să fie spălate.
+Până la primirea comenzii **"END"** veți continua să primiți numărul de vase care trebuie să fie spălate.
 
 ## Intrare
 Citiți din consolă: 
 - **Numărul de sticle de detergent** care vor fi utilizate pentru spălarea vaselor - un număr întreg în intervalul \[1...10\] 
-
-Pe fiecare linie **următoare**, până la comanda **"End"** sau până ce **cantitatea de detergent este epuizată**, **numărul de vase** care trebuie să fie spălate - un număr întreg în intervalul \[1...100\]
+- Pe fiecare linie **următoare**, până la comanda **"End"** sau până ce **cantitatea de detergent este epuizată**, **numărul de vase** care trebuie să fie spălate - un număr întreg în intervalul \[1...100\]
 
 ## Ieșire
 - În cazul în care cantitatea de detergent **a fost suficientă** pentru spălarea vaselor, printați trei linii de ieșire: 
@@ -1536,8 +1535,8 @@ Cantitatea de detergent = 2 \* 750 = 1500 ml.
 [/hint]
 [hint]
 Primim comanda "End". Putem concluziona că detergentul a fost suficient, deci mesajele corespunzătoare trebuie imprimate: 
-- number of plates = 53 \+ 65 = 118
-- number of pots = 55
+- numărul de farfurii spălate = 53 \+ 65 = 118
+- numărul de căni spălate = 55
 [/hint]
 [/hints]
 
@@ -1735,20 +1734,20 @@ public class Main {
 ## Descriere
 La un eveniment caritabil, plata pentru produsele cumpărate se poate face astfel: **plată în numerar și plată cu cardul**. Metoda de plată alternează astfel:
 
- - Prima plată se face în numerar
- - A doua plată se face cu cardul
- - A treia plată trebuie să fie în numerar, și asa mai departe
+ - Prima plată se face **în numerar**
+ - A doua plată se face **cu cardul**
+ - A treia plată trebuie să fie **în numerar**, și asa mai departe
 
 Următoarele reguli de plată au fost stabilite:
-- Dacă produsul **depășește 100 de dolari**, atunci **atunci nu poate fi achitat în numerar**
-- Dacă produsul are prețul **sub 10 dolari**, acesta **acesta nu poate fi achitat cu cardul**
+- Dacă prețul produsului **depășește 100 de dolari**, **atunci acesta nu poate fi achitat în numerar**
+- Dacă produsul are prețul **sub 10 dolari**, **acesta nu poate fi achitat cu cardul**
 
 Programul se încheie după ce primim comanda **"End"**, sau după ce **fondurile necesare au fost adunate**.
 
 ## Intrare
 Citiți din consolă:
 - Suma **care trebuie adunată** din vânzări - un număr întreg în intervalul \[1...10000\] 
-- Pe fiecare linie următoare  până la comanda **"End"** sau până la **adunarea fondurilor necesare**: 
+- Pe fiecare linie următoare până când programul se încheie:
     - **Prețurile produselor** cumpărate - un număr întreg în intervalul \[1...500\]
 
 ## Ieșire
@@ -1759,7 +1758,7 @@ Imprimați pe consolă:
     - **"Average CS: \{average payment in cash per person\}"**
     - **"Average CC: \{average payment by card per person\}"**
 Plățile trebuie **formatate la a două cifră după punctul zecimal**.
-- Când este primită comanda **"End"** , se tipărește **o linie**:
+- Când este primită comanda **"End"**, trebuie tipărită **linia** următoare:
     - **"Failed to collect required money for charity."**
 
 ## Exemplu
@@ -1996,7 +1995,7 @@ public class Main {
 Scrieți un program care să calculeze **nota medie** a unui student pentru întreaga sa perioadă de educație.
 
 ## Intrare
-- Pe prima linie, veți primi **numele studentului**
+- Pe prima linie, vom primi **numele studentului**
 - Pe fiecare linie următoare sunt notele pe ani
 - Studentul promovează anul dacă **nota anuală este 4.00 sau mai mare** 
 - Dacă nota sa este mai mică decât 4.00, el trebuie să **repete** clasa
@@ -2205,7 +2204,7 @@ Dacă am găsit **toate cele trei litere din comandă**, trebuie să imprimăm c
 - Vom primi o secvență de linii cu un singur simbol pe linie, până când primim comanda "**End**"
 
 ## Ieșire
-- Imprimați pe consolă cuvântul , urmat de **un spațiu**
+- Imprimați pe consolă cuvântul, urmat de **un spațiu**
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
