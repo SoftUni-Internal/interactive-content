@@ -13,7 +13,7 @@ class Bank {
 ```
 [/code-editor]
 [task-description]
-# Cerința voastră
+# Cerința Voastră
 
 Scrieți o clasă **Bank** care implementează următoarea funcționalitate:
 
