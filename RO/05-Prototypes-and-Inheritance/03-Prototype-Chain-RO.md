@@ -274,8 +274,6 @@ Aici avem un exemplu de **prototype.set**:
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/RO/interactive-javascript-advanced-prototypes-and-inheritance-27-prototype-chain-simple-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/RO/interactive-javascript-advanced-prototypes-and-inheritance-17-the-prototype-chain-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
 ```js live
 function MakeSentence(greet) {
     this.greet = greet;
