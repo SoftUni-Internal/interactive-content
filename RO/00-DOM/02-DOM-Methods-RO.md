@@ -17,9 +17,9 @@ Proprietățile DOM sunt **informații care pot fi primite și modificate**.
 
 [slide hideTitle]
 
-# Exemple de metode DOM
+# Exemple de Metode DOM
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-8-9-example-dom-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/RO/JS-Advanced-DOM-8-9-example-dom-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 După ce rulați acest exemplu în browser-ul:
 
@@ -41,7 +41,7 @@ După ce rulați acest exemplu în browser-ul:
 Acesta este modul de a obține titlul `h1`, folosind JavaScript:
 
 ```js
-let h1Element = document.getElementsByTagName("h1")[0];
+let h1Element = document.getElementsByTagName('h1')[0];
 // getElementsByTagName returns an array of all HTML elements with a given tag
 // [0] specifies the first h1 element of that array
 
@@ -76,7 +76,7 @@ JavaScript poate fi, de asemenea, **direct** inserat în documentul HTML:
 
 [slide hideTitle]
 
-# Un alt exemple a metodelor DOM 
+# Un alt Exemple a Metodelor DOM 
 
 Proprietățile DOM HTML sunt valori pe care le puteți "**obține**" sau "**seta**":
 

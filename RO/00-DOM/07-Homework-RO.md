@@ -338,7 +338,7 @@ Acțiunea linkului ar trebui să fie **toggleable** (ar trebui să puteți apasa
 
 - Pentru a **schimba** conținutul textului al unui buton, puteți utiliza **getElementsByClassName**
 
-Cu toate acestea, aceasta returnează o **colecție** și avem nevoie doar de **un** element din aceasta, așa că modul corect este să folosiți `getElementsByClassName("button")[0]` deoarece va returna elementul necesar `span`.
+Cu toate acestea, aceasta returnează o **colecție** și avem nevoie doar de **un** element din aceasta, așa că modul corect este să folosiți `getElementsByClassName('button')[0]` deoarece va returna elementul necesar `span`.
 
 - După aceea, ar trebui să schimbăm **stilul de afișare** al `div` cu un id de "**extra**"
 
@@ -1342,7 +1342,7 @@ Dacă câmpul **current Expression** (`#expresisonOutput`) conține întreaga ex
 
 [image assetsSrc="JS-Advanced-DOM-Homework-16.png" /]
 
-Când se apasă **equal sign** `=`, rezultatul acelei expresii **ar trebui să apară în câmpul **Result** (`#resultOutput`).
+Când se apasă **equal sign** `=`, rezultatul acelei expresii **ar trebui să apară în câmpul Result** (`#resultOutput`).
 
 [image assetsSrc="JS-Advanced-DOM-Homework-17.png" /]
 

@@ -20,7 +20,7 @@
 
 **4. Elementele Parents și Children**
 
-- Când un element HTML este parent și când -  child
+- Când un element HTML este parent și când - child
 
 **5. Proprietățile DOM și HTML atribute**
 

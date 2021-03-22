@@ -2,9 +2,9 @@
 
 [slide hideTitle]
 
-# Selectarea elementelor
+# Selectarea Elementelor
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-11-selection-of-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/RO/JS-Advanced-DOM-11-selection-of-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **DOM** permite modificarea **elementelor HTML.**
 
@@ -12,10 +12,10 @@
 
 Iată cele patru moduri prin care se poate selecta un element:
 
-- getElementById() - Returnează **un singur** element cu ID-ul dorit.
-- getElementsByTagName() - Returnează o **serie** de elemente cu această etichetă.
-- getElementsByClassName() - Returnează o **serie** de elemente cu această clasă.
-- querySelector() - Returnează **primul** element care se potrivește cu selectorul, sau **nul** dacă nu există.
+- `getElementById()` - Returnează **un singur** element cu ID-ul dorit
+- `getElementsByTagName()` - Returnează o **serie** de elemente cu această etichetă
+- `getElementsByClassName()` - Returnează o **serie** de elemente cu această clasă
+- `querySelector()` - Returnează **primul** element care se potrivește cu selectorul, sau **nul** dacă nu există
 
 [/slide]
 
@@ -23,17 +23,17 @@ Iată cele patru moduri prin care se poate selecta un element:
 
 # CSS Selectors
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-12-css-selectors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/RO/JS-Advanced-DOM-12-css-selectors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Selectoarele CSS** sunt un mod rapid și eficient de a selecta unul sau mai multe elemente HTML imbricate.
 
 Iată câteva modalități de a le utiliza:
 
-- `p` - Selectează elementul în funcție de **tip** (În acest caz: <p>).
-- `.container` – Selectează **toate** elementele din **clasa**"container".
-- `#idNumber` - Selectează **un singur** element cu **id-ul**"idNumber".
-- `input[type="text"]` - Selectează **toate** câmpurile de intrare care sunt de tipul "text".
-- `#idNumber, .container` - Selectează elementul cu id-ul "idNumber" **și** toate elementele din clasa „container".
+- `p` - Selectează elementul în funcție de **tip** (În acest caz: `<p>`)
+- `.container` - Selectează **toate** elementele din **clasa** "container"
+- `#idNumber` - Selectează **un singur** element cu **id-ul** "idNumber"
+- `input[type="text"]` - Selectează **toate** câmpurile de intrare care sunt de tipul "text"
+- `#idNumber, .container` - Selectează elementul cu id-ul "idNumber" **și** toate elementele din clasa "container"
 
 [/slide]
 
@@ -41,30 +41,33 @@ Iată câteva modalități de a le utiliza:
 
 # Manipulări DOM
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-10-dom-manipulations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/RO/JS-Advanced-DOM-10-dom-manipulations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Elementele DOM pot fi **citite** și **prelucrate** folosind Javascript.
 
 Iată câteva dintre **metodele** și **proprietățile** care sunt utilizate în proces:
 
-- `.innerHTML` - O proprietate pentru **accesarea** și **schimbarea** unui element al codului HTML.
-- `.attributes` - O proprietate care returnează toate atributele unui element dintr-o colecție.
+- `.innerHTML` - O proprietate pentru **accesarea** și **schimbarea** unui element al codului HTML
+- `.attributes` - O proprietate care returnează toate atributele unui element dintr-o colecție
 
 Fiecare articol din acea colecție are **două** caracteristici - **atribut** și **valoare**.
 
-- `.setAttribute()` - O metodă, utilizată pentru a **adăuga** un atribut unui element sau pentru a-l **actualiza** , dacă elementul are deja atributul dat.
-- `.style` - O proprietate, utilizată pentru a actualiza **direct**** CSS-ul** unui element.
+- `.setAttribute()` - O metodă, utilizată pentru a **adăuga** un atribut unui element sau pentru a-l **actualiza**, dacă elementul are deja atributul dat
+- `.style` - O proprietate, utilizată pentru a actualiza **direct**** CSS-ul** unui element
 
+```js
 <h1 id="title">This is the title of a website</h1>
+```
 
-let h1 = document.getElementById("title");
-h1.style.color = "blue"; // .color selectează proprietatea CSS care urmează să fie modificată și „blue" îi specifică valoarea.
+```js
+let h1 = document.getElementById('title');
+h1.style.color = 'blue'; // .color selectează proprietatea CSS care urmează să fie modificată și "blue" îi specifică valoarea.
+```
 
-- `.removeChild()` - O metodă, care **elimină** și **returnează** un copil dintr-un element HTML.
-- `.appendChild()` - O metodă care **adaugă** un copil în **spatele** unui element.
-- `.replaceChild()` - O metodă, care înlocuiește un element HTML cu altul. Este nevoie de doi parametri - elementul care trebuie înlocuit și elementul cu care să se facă înlocuirea.
-
-- `.document.write()` - O metodă, utilizată pentru a scrie text **direct** în documentul HTML.
+- `.removeChild()` - O metodă, care **elimină** și **returnează** un copil dintr-un element HTML
+- `.appendChild()` - O metodă care **adaugă** un copil în **spatele** unui element
+- `.replaceChild()` - O metodă, care înlocuiește un element HTML cu altul. Este nevoie de doi parametri - elementul care trebuie înlocuit și elementul cu care să se facă înlocuirea
+- `.document.write()` - O metodă, utilizată pentru a scrie text **direct** în documentul HTML
 
 [/slide]
 
@@ -72,18 +75,18 @@ h1.style.color = "blue"; // .color selectează proprietatea CSS care urmează s�
 
 # Crearea Elementelor DOM
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-15-17-creating-dom-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/RO/JS-Advanced-DOM-15-17-creating-dom-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Există **două** moduri de a crea elemente HTML noi.
 
-Primul mod este să creezi **direct** un element folosind comanda .createElement.
+Primul mod este să creezi **direct** un element folosind comanda `.createElement`.
 ```js
-let h1 = document.createElement("h1");
-let div = document.createElement("div");
+let h1 = document.createElement('h1');
+let div = document.createElement('div');
 ```
 Iar celălalt mod este prin copierea elementelor deja **existente**.
 ```js
-let h1 = document.getElementById("page-title");
+let h1 = document.getElementById('page-title');
 let newH1 = h1.cloneNode(true); //returnează un duplicat al etichetei h1 de mai sus
 ```
 Este important să știm că, deși aceste elemente sunt create, ele **nu există** în documentul HTML.
@@ -96,11 +99,11 @@ Ele sunt doar **variabile Javascript**.
 
 # Eliminarea Elementelor DOM
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-16-deleting-dom-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/RO/JS-Advanced-DOM-16-deleting-dom-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Ca întotdeauna, pentru a efectua orice fel de operație asupra unui element, trebuie ca mai întâisă fie **accesat**.
 
-Iată un exemplu de cum **se**** obține **și** se ****elimină** un element DOM.
+Iată un exemplu de cum **se** obține **și** se **elimină** un element DOM.
 ``` js
 <article id="post">
  <h1 id="title">Greeting post</h1>
@@ -109,9 +112,9 @@ Iată un exemplu de cum **se**** obține **și** se ****elimină** un element DO
 ```
 
 ```js
-let parent = document.getElementById("post"); // returnează elementul articol
-let title = document.getElementById("title"); // returnează elementul h1
-let content = document.getElementById("content"); // returnează elementul p
+let parent = document.getElementById('post'); // returnează elementul articol
+let title = document.getElementById('title'); // returnează elementul h1
+let content = document.getElementById('content'); // returnează elementul p
 
 title.remove(); // elimină direct elementul DOM
 
@@ -123,6 +126,9 @@ parent.removeChild(content); //elimină elementul accesând părintele său
 [slide hideTitle]
 
 # Problem with Solution: Article List
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/RO/JS-Advanced-DOM-18-solution-one-article-list-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 [code-task title="Articles List" taskId="js-advanced-DOM-Articles-List" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 ```
@@ -139,15 +145,19 @@ function createArticle(){
 
 În această problemă, ar trebui să creați funcționalitatea JS care creează articole și le adaugă într-o secțiune de articole.
 
-Programele din acest limbaj se numesc **scripturi**. Acestea pot fi scrise direct în fișierul HTML și **executate automat** pe măsură ce pagina se încarcă.
+Programele din acest limbaj se numesc **scripturi**. 
 
-Scripturile sunt furnizate și executate ca un **text simplu**. Nu au nevoie de pregătire specială sau de compilare pentru a rula.
+Acestea pot fi scrise direct în fișierul HTML și **executate automat** pe măsură ce pagina se încarcă.
+
+Scripturile sunt furnizate și executate ca un **text simplu**. 
+
+Nu au nevoie de pregătire specială sau de compilare pentru a rula.
 
 Din acest punct de vedere, JavaScript este foarte **diferit** de multe alte limbaje, care necesită compilare și pași suplimentari înainte de a rula, cum ar fi Java.
 
 [image assetsSrc="JS-Advanced-DOM-Lab-1.jpg" /]
 
-# Constrângeri:
+## Constrângeri:
 
 - **Valoarea titlului** din **introducerea titlului** ar trebui să fie un **element de tip heading 3** `<h3>`
 
@@ -456,7 +466,7 @@ yes
 
 # Proprietăți vs. atribute
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-20-21-dom-properties-and-html-attributes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/RO/JS-Advanced-DOM-20-21-dom-properties-and-html-attributes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Atributele pot **defini** informații **suplimentare** despre elementul HTML.
 
@@ -474,106 +484,125 @@ Există proprietăți DOM care **nu corespund** unui element HTML și invers.
 
 # Proprietăți DOM
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-22-dom-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/RO/JS-Advanced-DOM-22-dom-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Conform informațiilor parcurse, elementele DOM **pot fi modificate** prin intermediul proprietăților lor.
 
 Să presupunem că există următorul cod HTML:
 
+```js
 <div id="container">
  <p id="my-name"> My name is </p>
 </div>
 <form>
  <input id="name-input">
 </form>
+```
 
 Iată câteva exemple de proprietăți DOM și ce fac acestea:
 
-- textContent - Folosit pentru a **citi** și **scrie** text
-
+- `textContent` - Folosit pentru a **citi** și **scrie** text
+```js
 let p = document.getElementById("my-name");
 p.textContent += "Ellie";
+```
+- `innerHTML` - Used to **get** and **change** the HTML of an element. Folosit pentru a **obține** și pentru a **modifica** codul HTML al unui element
 
-- innerHTML - Used to **get** and **change** the HTML of an element. Folosit pentru a **obține** și pentru a **modifica** codul HTML al unui element.
-
+```js
 let div = document.getElementById("container");
 div.innerHTML += "<p>What's your name</p>";
+```
 
-- value - Folosit pentru a **obține** și **seta** valoarea unui element.
+- `value` - Folosit pentru a **obține** și **seta** valoarea unui element
 
+```js
 let input = document.getElementById("name-input");
 console.log(input.value); //înregistrează valoarea câmpului de intrare
-
+```
 [/slide]
 
 [slide hideTitle]
 
 # Atribute și Metode HTML
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-23-28-html-attributes-and-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/RO/JS-Advanced-DOM-23-28-html-attributes-and-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Acesta este un exemplu de cod HTML pe care să lucrați:
 
+```js
 <a id="link" href="www.google.com">Link</a>
 <input id="first-input" type="text">
+```
 
 Iar aici sunt câteva dintre metodele comune:
 
 - getAttribute() - Returnează valoarea atributului elementului.
 
 Acceptă **un** parametru - **numele atributului**.
+```js
+let a = document.getElementById('link');
+a.getAttribute('href'); // www.google.com
+```
 
-let a = document.getElementById("link");
-a.getAttribute("href"); // www.google.com
-
-- setAttribute() - **Setează** valoarea elementului atributului sau îl **actualizează** dacă acesta există deja.
+- `setAttribute()` - **Setează** valoarea elementului atributului sau îl **actualizează** dacă acesta există deja
 
 Acceptă doi parametri - **numele atributului și valoarea**.
+```js
+let input = document.getElementById('first-input');
+input.setAttribute('name', 'username'); // Setează valoarea numelui atributului la „username"
+```
 
-let input = document.getElementById("first-input");
-input.setAttribute("name", "username"); // Setează valoarea numelui atributului la „username"
-
-- removeAttribute() - **Elimină** din elementul HTML dat.
+- `removeAttribute()` - **Elimină** din elementul HTML dat
 
 Acceptă un parametru - **numele atributului.**
-
-let input = document.getElementById("first-input");
-input.removeAttribute("name"); // Elimină atributul de nume al intrării
-
-- hasAttribute() - **Returnează un boolean** dacă atributul specificat este prezent sau nu.
+```js
+let input = document.getElementById('first-input');
+input.removeAttribute('name'); // Elimină atributul de nume al intrării
+```
+- `hasAttribute()` - **Returnează un boolean** dacă atributul specificat este prezent sau nu
 
 Ia un parametru - **numele atributului**.
-
-let input = document.getElementById("first-input");
-input.hasAttribute("type"); // adevărat
-input.hasAttribute("name"); // fals
-
+```js
+let input = document.getElementById('first-input');
+input.hasAttribute('type'); // adevărat
+input.hasAttribute('name'); // fals
+```
 Deoarece un element HTML poate avea **mai multe nume de clase** , există o proprietate care returnează o **serie** cu toate acestea.
-
+```js
 <h1 id="title" class="title red left">
  Heading 1
 </h1>
+```
 
-const h1 = document.getElementById("title").classList;
+```js
+const h1 = document.getElementById('title').classList;
 
 // ["title", "red", "left", value: "title red left"]
 
-classListare două metode, care **creează** sau **șterg** o clasă CSS :
+```
+classListare două metode, care **creează** sau **șterg** o clasă CSS:
 
-- add() - Acceptă numele clasei ca parametru și îl adaugă la element.
-- remove() - Acceptă numele clasei ca parametru și îl șterge din element.
+- `add()` - Acceptă numele clasei ca parametru și îl adaugă la element
+- `remove()` - Acceptă numele clasei ca parametru și îl șterge din element
 
-let h1 = document.getElementById("title");
+```js
+let h1 = document.getElementById('title');
 
-h1.classList.add("first"); // adaugă „prima" clasă
+h1.classList.add('first'); // adaugă "prima" clasă
 
-h1.classList.remove("first"); // elimină „prima" clasă
-
+h1.classList.remove('first'); // elimină "prima" clasă
+```
 [/slide]
 
 [slide hideTitle]
 
 # Problem with Solution: Growing Word
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/RO/JS-Advanced-DOM-29-problem-and-explanation-two-growing-word-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/RO/JS-Advanced-DOM-29-solution-two-growing-word-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/RO/JS-Advanced-DOM-29-solution-two-growing-word_1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Growing Word" taskId="js-advanced-DOM-Growing-Word" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
@@ -592,7 +621,7 @@ function growingWord(){
 În această problemă, ar trebui **să creați o funcționalitate JS** care **schimbă dimensiunea și culoarea** unui **paragraf** dat **la fiecare clic.**
 
 [image assetsSrc="JS-Advanced-DOM-Lab-6.jpg" /]
-
+```js
 <div id="exercise">
  <div id="colors">
  <div id="blueDiv">Blue</div>
@@ -604,44 +633,46 @@ function growingWord(){
  </div>
  <p>Growing Word</p>
 </div>
+```
+De fiecare dată când facem **clic** pe butonul `[CHANGE]`, **culoarea** și **dimensiunea**** paragrafului **care conține** "**Growing Word**" ar trebui să se schimbe!
 
-De fiecare dată când facem **clic** pe butonul [CHANGE], **culoarea** și **dimensiunea**** paragrafului **care conține** „Growing Word" ar trebui să se schimbe**!
+**După fiecare clic** , **dimensiunea fontului** de paragraf curent ar trebui **modificată** la **dimensiunea curentă a fontului înmulțită cu 2**. 
 
-**După fiecare clic** , **dimensiunea fontului** de paragraf curent ar trebui **modificată** la **dimensiunea curentă a fontului înmulțită cu 2**. De asemenea, **culoarea** acelui paragraf ar trebui să se schimbe, în funcție de **culoarea anterioară**.
+De asemenea, **culoarea** acelui paragraf ar trebui să se schimbe, în funcție de **culoarea anterioară**.
 
 # Exemplu:
 
-- Dacă facem clic **o dată** , culoarea ar trebui schimbată în **albastru** și dimensiunea fontului trebuie să fie **2** (prima dimensiune inițială)
-- Dacă facem clic **de două ori** , culoarea ar trebui schimbată în **verde** și dimensiunea fontului ar trebui să fie **4** (2 * 2)
-- Dacă facem clic **de trei ori** , culoarea curentă a acelui paragraf ar trebui schimbată în **roșu** , iar dimensiunea fontului ar trebui să fie **8** (4 * 2)
-- Dacă paragraful nostru are deja culoarea **roșu** , la următorul clic, culoarea ar trebui să se transforme în **albastru**.
+- Dacă facem clic **o dată**, culoarea ar trebui schimbată în **albastru** și dimensiunea fontului trebuie să fie **2** (prima dimensiune inițială)
+- Dacă facem clic **de două ori**, culoarea ar trebui schimbată în **verde** și dimensiunea fontului ar trebui să fie **4** (2 * 2)
+- Dacă facem clic **de trei ori**, culoarea curentă a acelui paragraf ar trebui schimbată în **roșu** , iar dimensiunea fontului ar trebui să fie **8** (4 * 2)
+- Dacă paragraful nostru are deja culoarea **roșu**, la următorul clic, culoarea ar trebui să se transforme în **albastru**.
 
 Treceți prin aceste trei culori (albastru, verde, roșu) din nou și din nou și din nou ... în timp ce faceți clic pe butonul respectiv.
 
 [image assetsSrc="JS-Advanced-DOM-Lab-8.jpg" /]
-
+```js
 <div id="exercise">
  <div id="colors">...</div>
  <div>... </div>
  <p style="color: blue; font-size: 2px;"> Growing Word</p>
 </div>
-
+```
 [image assetsSrc="JS-Advanced-DOM-Lab-10.jpg" /]
-
+```js
 <div id="exercise">
  <div id="colors">...</div>
  <div>... </div>
  <p style="color: green; font-size: 4px;">Growing Word</p>
 </div>
-
+```
 [image assetsSrc="JS-Advanced-DOM-Lab-12.jpg" /]
-
+```js
 <div id="exercise">
  <div id="colors">... </div>
  <div>...</div>
  <p style="color: red; font-size: 8px;"> Growing Word</p>
 </div>
-
+```
 [/task-description]
 [code-io /]
 [tests]
@@ -905,7 +936,7 @@ yes
 
 # Elementele Părinte și Copil
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-31-36-parents-and-child-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/RO/JS-Advanced-DOM-31-36-parents-and-child-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Elementele HTML pot avea **mai multe** alte elemente în interiorul lor.
 
@@ -923,7 +954,7 @@ Toate celelalte din interiorul elementului părinte sunt numite **elemente copil
 Proprietatea read-only `.children` poate fi utilizată pentru a obține toți copiii ai unui element părinte.
 
 ```js
-let article = document.getElementById("first-post");
+let article = document.getElementById('first-post');
 let articleElements = article.children; // o colecție a tuturor elementelor din eticheta articolului
 
 ```
@@ -933,7 +964,7 @@ Există alte două metode pentru a obține **primul** sau **ultimul** copil:
 - `.lastElementChild`
 
 ``` js
-let article = document.getElementById("first-post");
+let article = document.getElementById('first-post');
 
 let h1 = article.firstElementChild; // returnează eticheta <h1> a articolului
 let p = article.lastElementChild; // returnează eticheta <p> a articolului
@@ -959,7 +990,7 @@ Alte proprietăți pentru navigarea între elementele **următoare** și cele **
 ```
 
 ```js
-let list = document.getElementById("names");
+let list = document.getElementById('names');
 
 let firstLi = article.firstElementChild;
 let lastLi = article.lastElementChild;
@@ -985,14 +1016,14 @@ Ultimele două metode de menționat sunt folosite pentru a adăuga un copil în 
 ```
 
 ``` js
-let list = document.getElementById("years");
+let list = document.getElementById('years');
 
-let firstLi = document.createElement("li");
-let lastLi = document.createElement("li");
+let firstLi = document.createElement('li');
+let lastLi = document.createElement('li');
 
-list.appendChild(lastLi); // adaugă elementul „lastLi" în spatele listei
+list.appendChild(lastLi); // adaugă elementul "lastLi" în spatele listei
 
-list.prependChild(firstLi); // adaugă elementul „firstLi" în partea din față a listei
+list.prependChild(firstLi); // adaugă elementul "firstLi" în partea din față a listei
 ```
 
 [/slide]
@@ -1001,7 +1032,7 @@ list.prependChild(firstLi); // adaugă elementul „firstLi" în partea din faț
 
 # NodeList vs. HTMLCollection
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-37-nodelist-vs-htmlcollection-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/RO/JS-Advanced-DOM-37-nodelist-vs-htmlcollection-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Atât **NodeList** , cât și **HTMLCollection** sunt colecții indexate de **noduri DOM**.
 

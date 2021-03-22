@@ -4,7 +4,7 @@
 
 # BOM
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-40-41-browser-object-model-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/RO/JS-Advanced-DOM-40-41-browser-object-model-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Modelul de obiect navigator** acționează ca o conexiune la fel ca și **Modelul de obiect document**.
 
@@ -51,14 +51,14 @@ window.printYear();
 
 # Exercitii cu BOM
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-42-playing-with-bom-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/RO/JS-Advanced-DOM-42-playing-with-bom-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Iatâ câteva proprietățile interesante și educative ale BOM:
 
 ```js
 console.log(navigator.deviceMemory); //displays the RAM memory of the current machine
 
-document.location = "https://softuni.org"; //redirects to given location
+document.location = 'https://softuni.org'; //redirects to given location
 
 history.back(); //goes back one time
 
