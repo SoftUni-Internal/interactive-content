@@ -4,7 +4,7 @@
 
 # Organizator de Evenimente
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/EN/JS-Advanced-DOM-Manipulations-19-20-event-handler-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/RO/JS-Advanced-DOM-Manipulations-19-20-event-handler-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Înregistrarea unui eveniment este făcută printr-o funcție callback. 
 
@@ -22,7 +22,7 @@ Există 3 moduri de a înregistra un eveniment:
 
 # Ascultător de Evenimente
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/EN/JS-Advanced-DOM-Manipulations-21-event-listener-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/RO/JS-Advanced-DOM-Manipulations-21-event-listener-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a putea folosi funcția noastră **event handler** funcție, trebuie să aplicăm metoda`.addEventListener()`.
 
@@ -60,9 +60,9 @@ addBtn.removeEventListener("click", handler);
 
 # Atașarea Click Event
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/EN/JS-Advanced-DOM-Manipulations-22-attaching-click-event-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/RO/JS-Advanced-DOM-Manipulations-22-attaching-click-event-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Aici avem un exemplu de folosire a tipului "**click**" și a funcției "**clickMe**", ca organizator de
+Aici avem un exemplu de folosire a tipului "**click**" și a funcției "**clickMe**", ca organizator de evenimente.
 
 La fiecare click pe buton, "**number**" va fi incrementat cu unu.
 
@@ -83,9 +83,11 @@ function clickMe(e) {
 
 # Atașarea unui Eveniment Hover
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/EN/JS-Advanced-DOM-Manipulations-23-24-attaching-hover-event-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/RO/JS-Advanced-DOM-Manipulations-23-24-attaching-hover-event-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Aici avem un exemplu de folosire a  tipului "**mouseOver**" și a declarării unei funcții. 
+## Atașarea unui Eveniment Hover
+
+Aici avem un exemplu de folosire a tipului "**mouseOver**" și a declarării unei funcții. 
 
 Codul va returna if dacă folosim **mouse hover** pe buton.
 
@@ -130,7 +132,7 @@ inputField.addEventListener('input', function () {
 
 # Ștergerea Evenimentelor
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/EN/JS-Advanced-DOM-Manipulations-25-remove-events-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/RO/JS-Advanced-DOM-Manipulations-25-remove-events-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Aici avem o implementare mai profundă a `.addEventListener()` și a metodelor `.removeEventListener()`.
 
@@ -164,7 +166,7 @@ button.addEventListener('click', () => {
 
 # Evenimente Multiple
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/EN/JS-Advanced-DOM-Manipulations-26-multiple-events-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/RO/JS-Advanced-DOM-Manipulations-26-multiple-events-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Putem adăuga mai multe evenimente aceluiași element, fără să rescriem evenimentele existente. 
 
@@ -179,9 +181,9 @@ element.addEventListener("mouseout", myThirdFunction);
 
 [slide hideTitle]
 
-# Fixarea Intervalului() şi Ștergerea Intervalului()
+# SetInterval() şi ClearInterval()
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/EN/JS-Advanced-DOM-Manipulations-27-setinterval-clearinterval-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/RO/JS-Advanced-DOM-Manipulations-27-setinterval-clearinterval-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În JavaScript, putem **start** sau **stop** cronometrul.
 
@@ -211,16 +213,19 @@ clearInterval(intervalID);
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Add Delete
+# Problemă cu Soluție: Add Delete
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/RO/JS-Advanced-DOM-Manipulations-28-29-solution-two-add-delete-items-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Add Delete" taskId="Js-Advanced-Dom-Manipulations-Add-Delete" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 ```
-function addDelete(){
+function addItem(){
   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
 [task-description]
-# Enunț
+# Descriere
 
 ***Aici este un link către** [resurse](https://videos.softuni.org/resources/javascript/javascript-advanced/JS-Advanced-DOM-Manipulations-Lab-02.Add-Delete.zip) **pentru această sarcină.**
 
@@ -234,36 +239,71 @@ Dând click, vom șterge elementul, fără să primim vreo confirmare.
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+document.body.innerHTML = \`
+\<h1\>List of Items\</h1\>
+\<ul id="items"\>
+\</ul\>
+\<input type="text" id="newText" /\>
+\<input type="button" value="Add"  onclick="addItem()"\>
+\`;
+
+document.getElementById('newText').value = 'First';
+result();
+
+document.getElementById('newText').value = 'Second';
+result();
+
+let items = \$('\#items li');
+
+// Verify items where added with delete links
+expect(items.get(0).innerHTML).to.contains('First', "Element wasn't added.");
+expect(items.get(0).innerHTML).to.contains('\<a href="\#"\>\[Delete\]\</a\>', "Delete link wasn't added.");
+expect(items.get(1).innerHTML).to.contains('Second', "Element wasn't added.");
+expect(items.get(1).innerHTML).to.contains('\<a href="\#"\>\[Delete\]\</a\>', "Delete link wasn't added.");
+
+// Setup event
+var clickEvent = document.createEvent('MouseEvents');
+clickEvent.initEvent('click', true, true);
+items.eq(1).find('a').get(0).dispatchEvent(clickEvent);
+
+expect(\$('\#items li').length).to.equal(1, "Correct element wasn't deleted.");
+[/input]
+[output]
+yes
+[/output]
+[/test]
 [test]
 [input]
-document\.body\.innerHTML \= \`
+document.body.innerHTML = \`
 \<h1\>List of Items\</h1\>
-\<ul id\=\"items\"\>
+\<ul id="items"\>
 \</ul\>
-\<input type\=\"text\" id\=\"newText\" /\>
-\<input type\=\"button\" value\=\"Add\"  onclick\=\"addItem\(\)\"\>
-\`\;
+\<input type="text" id="newText" /\>
+\<input type="button" value="Add"  onclick="addItem()"\>
+\`;
 
-document\.getElementById\(\'newText\'\)\.value \= \'First\'\;
-result\(\)\;
+document.getElementById('newText').value = 'First';
+result();
 
-document\.getElementById\(\'newText\'\)\.value \= \'Second\'\;
-result\(\)\;
+document.getElementById('newText').value = 'Second';
+result();
 
-let items \= \\$(\'\#items li\'\)\;
+let items = \$('\#items li');
 
-\/\/ Verify items where added with delete links
-expect\(items\.get\(0\)\.innerHTML\)\.to\.contains(\'First\'\, \"Element wasn\'t added\.\"\)\;
-expect\(items\.get\(0\)\.innerHTML\)\.to\.contains\(\'\<a href\=\"\#\"\>\[Delete\]\</a\>\'\, \"Delete link wasn\'t added\.\"\)\;
-expect\(items\.get\(1\)\.innerHTML\)\.to\.contains\(\'Second\'\, \"Element wasn\'t added\.\"\)\;
-expect\(items\.get\(1\)\.innerHTML\)\.to\.contains\(\'\<a href\=\"\#\"\>\[Delete\]\</a\>\'\, \"Delete link wasn\'t added\.\"\)\;
+// Verify items where added with delete links
+expect(items.get(0).innerHTML).to.contains('First', "Element wasn't added.");
+expect(items.get(0).innerHTML).to.contains('\<a href="\#"\>\[Delete\]\</a\>', "Delete link wasn't added.");
+expect(items.get(1).innerHTML).to.contains('Second', "Element wasn't added.");
+expect(items.get(1).innerHTML).to.contains('\<a href="\#"\>\[Delete\]\</a\>', "Delete link wasn't added.");
 
-\/\/ Setup event
-var clickEvent \= document\.createEvent\(\'MouseEvents\'\)\;
-clickEvent\.initEvent\(\'click\'\, true\, true\)\;
-items\.eq\(1\)\.find\(\'a\'\)\.get\(0\)\.dispatchEvent\(clickEvent\)\;
+// Setup event
+var clickEvent = document.createEvent('MouseEvents');
+clickEvent.initEvent('click', true, true);
+items.eq(1).find('a').get(0).dispatchEvent(clickEvent);
 
-expect\(\\$\(\'\#items li\'\)\.length\)\.to\.equal\(1\, \"Correct element wasn\'t deleted\.\"\)\;
+expect(\$('\#items li').length).to.equal(1, "Correct element wasn't deleted.");
 [/input]
 [output]
 yes
@@ -271,14 +311,13 @@ yes
 [/test]
 [/tests]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
 
 # Delegarea Evenimentelor 
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/EN/JS-Advanced-DOM-Manipulations-32-33-event-delegation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/RO/JS-Advanced-DOM-Manipulations-32-33-event-delegation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Capturarea și bubbling-ul ne permit să implementăm un eveniment folosind patternul numit **event delegation**.
 
@@ -291,7 +330,7 @@ Dacă avem o mulțime de elemente care sunt tratate în același fel, atunci, î
 Apoi, în declarația 'if', adăugăm o condiție, astfel încât dacă dăm click pe elementul `<li>`, metoda `console.log()` să afișeze un mesaj care să ne spună exact pe ce element am dat click.
 
 
-```js
+```
 <ul id="parent-list">
     <li id="post-1">Item 1</li>
     <li id="post-2">Item 2</li>
