@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Iterația peste caractere
+# Iterația Peste Caractere
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/RO/interactive-programming-basics-with-java-for-loops-25-26-27-the-ASCII-table-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## ASCII Table
@@ -27,7 +27,7 @@ Coloanele pe care le-ați folosi cel mai probabil în scopul acestui curs sunt c
 
 De exemplu, valoarea zecimală a caracterului **'a'** este **97** și cea corespunzătoare **'@'** este **64**.
 
-## Iterația peste caractere
+## Iterația Peste Caractere
 Este bine de știut că **buclele for** nu funcționează doar cu numere.
 
 De asemenea, putem folosi **buclele for** pentru a itera peste **caractere**.
@@ -43,7 +43,7 @@ for (char ch = 'a'; ch <= 'd'; ch++) {
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Latin Letters
+# Problemă cu Soluție: Latin Letters
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/RO/interactive-programming-basics-with-java-for-loops-28-problem-and-solution-latin-letters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -53,7 +53,7 @@ for (char ch = 'a'; ch <= 'd'; ch++) {
 import java.util.Scanner;
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul dvs. aici
     }
 }
 ```

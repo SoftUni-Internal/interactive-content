@@ -1,6 +1,9 @@
-# Teme pentru acasă
+# Teme Pentru Acasă
 [slide hideTitle]
 # O problemă cu soluție: Print Hello Java
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-36-37-Problem-and-solution-Print-Hello-Java-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Print Hello Java" taskId="pb-java-introduction-print-hello-java" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
@@ -8,7 +11,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -49,7 +52,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -84,6 +87,9 @@ Scrieți un program în limbajul Java care să execute următoarele:
 
 [slide hideTitle]
 # O problemă cu Soluție: Name and Expression
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-41-name-and-expression-solution-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Name and Expression" taskId="pb-java-introduction-Name-and-Expression" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
@@ -91,7 +97,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 
@@ -126,6 +132,9 @@ Catlyn
 
 [slide hideTitle]
 # O problemă cu Soluție: Calculations
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-43-calculations-slution-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Calculations" taskId="pb-java-introduction-Calculations" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
@@ -133,7 +142,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -173,6 +182,9 @@ Scrieți un program care să calculeze și să imprime valoarea următoarelor ex
 
 [slide hideTitle]
 # O problemă cu Soluție: Square of 7 * 7 Stars
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-45-square-of-7-by-7-stars-solution-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Square of 7 * 7 Stars" taskId="pb-java-introduction-Square-of-7x7" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
@@ -180,7 +192,8 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-      // Scrieți codul dvs. aici
+
+      // Write your code here
     }
 }
 ```
@@ -242,7 +255,7 @@ Imprimă un pătrat format din 7 * 7 steluțe, ca în imaginea de mai jos:
 ```
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 ```
@@ -254,8 +267,10 @@ Scrieți un program care să execute următoarele:
 * Calculează suprafața dreptunghiului
 * Laturile dreptunghiului au valorile 5 și 10
 
-## Rezultat
-* Tipărește suprafața calculată
+
+## Ieșire
+* Printează suprafața calculată
+
 [/task-description]
 [code-io /]
 [tests]
@@ -285,7 +300,7 @@ Scrieți un program care să execute următoarele:
 ```
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul dvs. aici
+        // Write your code here
     }
 }
 
@@ -348,7 +363,9 @@ Fiecare număr ar trebui să fie pe o linie nouă.
 ```
 public class Main {
   public static void main(String[] args) {
-      // Scrieți codul dvs. aici
+
+      // Write your code here
+
     }
 }
 ```

@@ -38,7 +38,7 @@ for (int i = 10; i >= 1; i--) {
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Numbers Ending with 7 
+# Problemă cu Soluție: Numbers Ending with 7 
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/RO/interactive-programming-basics-with-java-for-loops-21-problem-and-solution-numbers-ending-with-seven-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -58,8 +58,8 @@ public class Program {
 ## Descriere
 Scrieți un program care:
 
-*Citește un număr **n**
-*Imprimă toate numerele de la **7 până la n**, **care se termină cu 7**
+* Citește un număr **n**
+* Imprimă toate numerele de la **7 până la n**, **care se termină cu 7**
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -99,7 +99,7 @@ Scrieți un program care:
 
 
 [slide hideTitle]
-# Problemă cu soluție: Exam Countdown
+# Problemă cu Soluție: Exam Countdown
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/RO/interactive-programming-basics-with-java-for-loops-23-problem-and-solution-exam-countdown-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

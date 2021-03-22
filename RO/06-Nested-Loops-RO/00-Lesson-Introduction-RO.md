@@ -1,7 +1,7 @@
 # Introducere
 [slide]
 
-# Conținutul lecției
+# Conținutul Lecției
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/RO/interactive-programming-basics-with-java-nested-loops-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

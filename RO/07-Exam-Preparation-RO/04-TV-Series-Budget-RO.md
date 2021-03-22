@@ -49,15 +49,15 @@ Rezultatul trebuie formatat la două cifre după punctul zecimal.
 
 ## Exemplu
 |**Intrare**|**Ieșire**|
-| --- | --- | 
-| 10 | You bought all the series and left with 0.50$ | 
-| 3 | 
-| Thrones | 
-| 5 | 
-| Riverdale | 
-| 5 | 
-| Gotham | 
-| 2 | 
+| --- | --- |
+| 10 | You bought all the series and left with 0.50$ |
+| 3 | |
+| Thrones | |
+| 5 | |
+| Riverdale | |
+| 5 | |
+| Gotham | |
+| 2 | |
 [hints]
 
 [hint]

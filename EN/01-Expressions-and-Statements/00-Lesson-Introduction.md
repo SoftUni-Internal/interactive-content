@@ -9,11 +9,11 @@
 
 **1. Variables**
 
-- How to declare, Read or Modify variable
+- How to declare, read and modify variables
 
 **2. Data Types**
 
-- How to process an Integer, Real numbers or Text
+- How to process integers, real numbers and text
 
 **3. Statements (Commands)**
 
@@ -23,7 +23,7 @@
 
 **5. Simple Operators**
 
-- How to use a simple math operators ( +, -, *, / )
+- How to use the simple math operators ( +, -, *, / ) 
 
 **6. Expressions** 
 

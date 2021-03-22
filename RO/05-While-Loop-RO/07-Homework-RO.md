@@ -29,9 +29,18 @@ Scrieți un program care:
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | 5634 | 18 |
+
 [/task-description]
 [tests]
 [test open]
+[input]
+5634
+[/input]
+[output]
+18
+[/output]
+[/test]
+[test]
 [input]
 123456
 [/input]
@@ -94,7 +103,9 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
+
       // Write your code here
+
     }
 }
 ```
@@ -425,7 +436,9 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
+
       // Write your code here
+
     }
 }
 ```
@@ -548,8 +561,11 @@ public class Program {
 Scrieți un program care: 
 
 * Primește **o sumă de bani** pentru fiecare tranzacție până la **"END"**
+
 * **Adaugă** banii în  **sold** și **tipărește: "**Increase:**\{**money**\}", formatați `banii` la **a două cifră** după punctul zecimal 
 * După **"END"** calculează și **imprimă** suma totală din cont: "**Total:** \{**balance**\}", formatați `balance` până la **a doua cifră** după punctul zecimal
+
+
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -898,7 +914,7 @@ O notă slabă este mai mică sau egală cu 4.00.
   - "**Average score:** \{**average grade**\}"
   - "**Number of problems:** \{**number of ALL problems**\}"
   - "**Last problem:** \{**last problem\'s name**\}"
-- **Dacă obține numărul specificat de note slabe **:
+- **Dacă obține numărul specificat de note slabe**:
    - "**You need a break**, \{**number poor grades**\} **poor grades.**"
 
 **Nota medie trebuie să fie formatată la a doua zecimală.**
@@ -1201,7 +1217,7 @@ New House
 6
 Old Library
 6
-Fishing Boat 
+Fishing Boat
 6
 Enough
 [/input]
@@ -1484,7 +1500,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1739,6 +1755,7 @@ La un eveniment caritabil, plata pentru produsele cumpărate se poate face astfe
  - A treia plată trebuie să fie **în numerar**, și asa mai departe
 
 Următoarele reguli de plată au fost stabilite:
+
 - Dacă prețul produsului **depășește 100 de dolari**, **atunci acesta nu poate fi achitat în numerar**
 - Dacă produsul are prețul **sub 10 dolari**, **acesta nu poate fi achitat cu cardul**
 
@@ -1757,6 +1774,7 @@ Imprimați pe consolă:
 - Dacă suma tuturor produselor cumpărate **depășește sau atinge suma așteptată**, programul a fost finalizat și **două linii** sunt imprimate pe consolă: 
     - **"Average CS: \{average payment in cash per person\}"**
     - **"Average CC: \{average payment by card per person\}"**
+
 Plățile trebuie **formatate la a două cifră după punctul zecimal**.
 - Când este primită comanda **"End"**, trebuie tipărită **linia** următoare:
     - **"Failed to collect required money for charity."**
@@ -2000,8 +2018,10 @@ Scrieți un program care să calculeze **nota medie** a unui student pentru înt
 - Studentul promovează anul dacă **nota anuală este 4.00 sau mai mare** 
 - Dacă nota sa este mai mică decât 4.00, el trebuie să **repete** clasa
 
+
 ## Ieșire
 - Dacă studentul promovează clasa trebuie să imprimați:
+
     - "\{**student name**\}**graduated. Average grade:** \{**average grade from his entire education**\}"
 
 **Nota trebuie să fie formatată la a două cifră după punctul zecimal.**
@@ -2295,7 +2315,7 @@ e
 End
 [/input]
 [output]
-Hello there 
+Hello there
 [/output]
 [/test]
 [test open]
@@ -2320,7 +2340,7 @@ D
 End
 [/input]
 [output]
-BooM 
+BooM
 [/output]
 [/test]
 [test]
@@ -2344,7 +2364,7 @@ n
 End
 [/input]
 [output]
-Solve me 
+Solve me
 [/output]
 [/test]
 [test]
@@ -2358,7 +2378,7 @@ n
 End
 [/input]
 [output]
-co 
+co
 [/output]
 [/test]
 [test]
@@ -2425,7 +2445,7 @@ n
 End
 [/input]
 [output]
-Here we go with the signs 
+Here we go with the signs
 [/output]
 [/test]
 [test]
@@ -2445,7 +2465,7 @@ n
 End
 [/input]
 [output]
-C O N 
+C O N
 [/output]
 [/test]
 [test]
@@ -2497,7 +2517,7 @@ k
 End
 [/input]
 [output]
-In the end 
+In the end
 [/output]
 [/test]
 [test]
@@ -2569,7 +2589,7 @@ k
 End
 [/input]
 [output]
-There Is A Hidden Message Not Printed 
+There Is A Hidden Message Not Printed
 [/output]
 [/test]
 [test]
@@ -2673,6 +2693,3 @@ I Like Naruto
 [code-io /]
 [/code-task]
 [/slide]
-
-
-

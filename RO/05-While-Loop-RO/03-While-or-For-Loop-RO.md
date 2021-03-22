@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Bucla While sau bucla For?
+# Bucla While sau Bucla For?
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/RO/Java-While-Loops-12-13-While-or-for-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -41,12 +41,12 @@ while (command != "End") {
     command = scanner.nextLine();
 }
 
-System.out.println(number);
+System.out.println(number);S
 ```
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Odd number
+# Problemă cu Soluție: Odd number
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/RO/Java-While-Loops-14-15-Problem-and-Solution-Odd-Number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -109,9 +109,8 @@ Scrieți un program care:
 [/slide]
 
 
-
 [slide hideTitle]
-# Problemă cu soluție: Number Processor
+# Problemă cu Soluție: Number Processor
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/RO/Java-While-Loops-16-17-Problem-and-Solution-Number-Processor-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

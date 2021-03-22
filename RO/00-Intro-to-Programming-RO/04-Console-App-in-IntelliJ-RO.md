@@ -1,6 +1,8 @@
 [slide hideTitle]
 # Aplicații Pentru Consolă în IntelliJ IDEA
 
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-26-27-28-Console-app-in-IntelliJ-IDEA-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Deja am instalat IntelliJ IDEA și putem începe să îl utilizăm.
 
 Creați o nouă Console Application în IntelliJ IDEA: `[New Project]` \-\> `[Java]` \-\> `[Template Command Line App]` \-\> `[Finish]`
@@ -23,6 +25,9 @@ Dați clic pe `[New]` și localizați fișierul de instalare pentru JDK:
 
 [slide hideTitle]
 # Scrierea codului de program
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-29-writing-programming-code-in-intelliJ-IDEA-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Comenzile programului sunt scrise în `main(String[] args)`, între paranteze crețate `{ }`(deschideți paranteza, scrieți comanda, închideți paranteza).
 
 Aceasta este principala metodă (acțiune) care se execută la începerea unui program Java. 
@@ -53,6 +58,9 @@ Ca să furnizăm o explicație și mai tehnică, `out` este un membru static al 
 
 [slide hideTitle]
 # Începerea programului
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-30-Starting-the-program-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Pentru a începe programul, apăsați `[Ctrl + Shift + F10]`. 
 
 Dacă nu sunt erori, programul va fi rulat. 

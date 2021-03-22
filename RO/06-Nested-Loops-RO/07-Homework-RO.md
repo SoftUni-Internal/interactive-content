@@ -730,7 +730,9 @@ Scrieți un program care:
 
 [hints]
 [hint]
+
 Un număr prim este un **număr întreg** care se poate divide doar prin `sine însuși` și prin numărul `1` **fără rest**.
+
 [/hint]
 [/hints]
 
@@ -1079,10 +1081,12 @@ Intrarea constă în **2** linii:
 - Prima linie - ore - număr întreg în intervalul \[0 ... 23 \]
 - A doua linie - minute - număr întreg în intervalul \[0 ... 59 \]
 
+
 ## Ieșire
 - Orele trebuie să fie tipărite pe consolă în formatul "\{hour\} : \{minutes\}"
 
 Adăugați zerouri la valoarea orei și a minutelor dacă valorile lor sunt constituite de o singură cifră.
+
 
 ## Exemplu
 
@@ -1271,10 +1275,12 @@ Intrarea este introdusă din consolă ca **3** linii:
 - A doua linie - **minute** - un număr întreg în intervalul \[0 ... 59 \]
 - A treia linie - **secunde** - un număr întreg în intervalul \[0 ... 59 \]
 
+
 ## Ieșire
 - Rezultatul trebuie să fie tipărit în următorul format "\{hour\} : \{minutes\} : \{seconds\}"
 
 Adăugați zerouri dacă ieșirea pentru oricare dintre elementele de ieșire este constituită de o singură cifră.
+
 
 ## Exemplu
 
@@ -1562,6 +1568,7 @@ Valoarea fiecărui element poate să includă 0 și trebuie să fie un număr î
 
 [hints]
 [hint]
+
 Generați toate combinațiile de 5 cifre, prima fiind: 
 0\+0\+0\+0\+0=0, dar deoarece rezultatul nu este egal cu 25,
 se continuă cu 0\+0\+0\+0\+1=1 - din nou, nu este egal cu 25, etc.
@@ -1572,6 +1579,7 @@ la 1, a doua combinație validă fiind:
 A treia: 0\+0\+0\+2\+23=25  etc.
 După generarea tuturor combinațiilor valide,
 numărul de combinații valide este 23751.
+
 [/hint]
 [/hints]
 
@@ -1698,8 +1706,10 @@ Scrieți un program care **calculează valoarea ASCII a câtorva cuvinte introdu
 
 Valoarea unui cuvânt este calculată atunci când însumăm valorile **ASCII ale tuturor literelor din care este format**.
 
+
 Programul trebuie să accepte cuvinte de la consolă și să le calculeze valoarea până la introducerea: **”STOP”**, apoi tipărește:
 - "Winner is \{winner word\} - \{value of the word\}!"
+
 
 
 ## Exemplu
@@ -2101,7 +2111,7 @@ Ajutați juriul scriind un program care să calculeze **scorul mediu** al **fiec
 
 ## Ieșire
 - După calcularea **scorului mediu** pentru o anumită prezentare, tipăriți pe consolă:
-   "\{name of the presentation\} \- \{average score\}."
+   "\{**name of the presentation**\} \- \{**average score**\}."
 - După ce ați primit comanda **"Finish"** pe consolă, tipăriți:
       "Student\'s final assessment is \{average presentations of all presentations\}." 
 
@@ -2544,4 +2554,3 @@ Student's final assessment is 4.54.
 [code-io /]
 [/code-task]
 [/slide]
-

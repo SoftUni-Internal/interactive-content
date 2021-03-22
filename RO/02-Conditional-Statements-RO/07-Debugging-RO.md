@@ -20,7 +20,7 @@ Putem urmări **linie cu linie** ce se întâmplă în programul nostru, ce cale
 [slide hideTitle]
 
 # Depanare in IntelliJ IDEA 
-[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-32-34-debugging-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-32-34-debugging-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Apăsând butonul `[Shift + F9]`, rulăm programul în **modul de depanare**. 
 

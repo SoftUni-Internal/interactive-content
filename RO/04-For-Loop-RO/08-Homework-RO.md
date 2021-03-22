@@ -12,10 +12,13 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
+
       // Write your code here
+
     }
 }
 ```
+
 [/code-editor]
 [task-description]
 ## Descriere
@@ -82,7 +85,9 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
+
       // Write your code here
+
     }
 }
 ```
@@ -172,7 +177,9 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
+
       // Write your code here
+
     }
 }
 ```
@@ -225,7 +232,9 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
+
       // Write your code here
+
     }
 }
 ```
@@ -379,7 +388,9 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
+
       // Write your code here
+
     }
 }
 ```
@@ -450,7 +461,9 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
+
       // Write your code here
+
     }
 }
 ```
@@ -513,7 +526,9 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
+
       // Write your code here
+
     }
 }
 ```
@@ -612,7 +627,9 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
+
       // Write your code here
+
     }
 }
 ```
@@ -725,7 +742,9 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
+
       // Write your code here
+
     }
 }
 ```
@@ -801,7 +820,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -811,6 +830,7 @@ public class Main {
 Josh are 18 ani și primește o moștenire care constă în suma de bani X (citită de la consolă) și o mașină a timpului.
 
 A decis să se întoarcă până în 1800, dar nu știa dacă banii ar fi suficienți pentru a trăi fără să muncească.
+
 
 Scrieți un program care să calculeze dacă Josh va avea suficienți bani pentru a nu fi nevoit să lucreze, începând de la 1800 până la un anumit an, specificat de la consolă.
 - În fiecare an par (1800, 1802 etc.) el va cheltui 12 000 de dolari.
@@ -822,6 +842,7 @@ Intrarea este citită de pe consolă și conține exact 2 linii:
 - An până la  care trebuie calculate costurile - un număr întreg în intervalul \[1801 ... 1900\]
 
 
+
 ## Ieșire
 Imprimați pe consolă o singură linie. Suma trebuie formatată cu două cifre zecimale:
 - Dacă banii sunt suficienți:
@@ -830,7 +851,7 @@ Imprimați pe consolă o singură linie. Suma trebuie formatată cu două cifre 
      - "**He will need** \{**М**\} **dollars to survive.**" - unde M sunt banii de care are nevoie
 
 ## Exemplu
-| Intrare | Ieșire |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 50000 | Yes! He will live a carefree life and will have 13050.00 dollars left. |
 | 1802 | |
@@ -948,7 +969,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -961,9 +982,11 @@ Scrieți un program pentru a calcula costul mediu pe lună pentru o familie pe o
 Pentru fiecare lună, costurile sunt următoarele:
 
 - Pentru electricitate - în fiecare lună factura este diferită și va fi citită de pe consolă
+
 - Pentru apă - 20 $
 - Pentru internet - 15 $
 - Pentru altele - însumați facturile pentru electricitate, apă și internet și adăugați 20%
+
 
 Pentru fiecare factură, trebuie să calculați suma totală plătită pentru toate lunile.
 
@@ -971,8 +994,10 @@ Pentru fiecare factură, trebuie să calculați suma totală plătită pentru to
 
 Intrarea este citită de pe consolă:
 
-- Numărul de luni - număr întreg în intervalul \[1 ... 100 \]
+
+- Numărul de luni - număr întreg în intervalul \[1 ... 100\]
 - Pentru fiecare lună - factura pentru electricitate - un număr real în intervalul \[1.00... 1000.00\]
+
 
 # Ieșire
 Imprimați pe consolă 5 rânduri:
@@ -1223,7 +1248,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1397,7 +1422,7 @@ Untreated patients: 29978.
 ```
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1445,7 +1470,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1454,7 +1479,7 @@ public class Main {
 ## Descriere
 Scrieți un program care citește un număr întreg care reprezintă totalul de numere introduse de utilizator și calculează care sunt numerele minime și maxime de pe poziții impare și pare (numărând de la 1). 
 
-Dacă nu există element minim / maxim tipăriți "No".
+Dacă nu există element minim / maxim tipăriți "**No**".
 
 ## Intrare
 - Pe prima linie de intrare citiți totalul de numerele care trebuie citite - N - număr întreg \[0 ... 100\]
@@ -1692,7 +1717,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1703,12 +1728,14 @@ Scrieți un program pentru a calcula statisticile notelor unui examen.
 
 Programul primește numărul de elevi care au participat la examen și nota obținută de fiecare elev.
 
+
 Programul trebuie să imprime procentul de elevi cu nota cuprinsă între 
  - 2,00 și 2,99 
  - 3,00 și 3,99
  - 4,00 și 4,99
  - 5,00 sau mai mult.
  - nota medie a tuturor participanților la examen
+
 
 ## Intrare
 - Prima linie - numărul de elevi care au participat la examen - un număr întreg în intervalul \[1 ... 1000\]

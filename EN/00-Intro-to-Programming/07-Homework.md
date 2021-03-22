@@ -4,7 +4,6 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-36-37-Problem-and-solution-Print-Hello-Java-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-36-37-Problem-Solving-Print-Hello-Java-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Print Hello Java" taskId="pb-java-introduction-print-hello-java" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
@@ -23,9 +22,9 @@ public class Main {
 [task-description]
 ## Description
 
-Write a Java program, which:
+Create a Java program, that:
 
-Prints "**Hello Java**" on the console.
+Prints "**Hello Java**" to the console.
 
 [/task-description]
 [code-io /]
@@ -65,10 +64,10 @@ public class Main {
 [task-description]
 ## Description
 
-Write a Java program, which:
+Create a Java program, that:
 
 * Calculates the value of 5 \* 5
-* Prints the result
+* Prints out the result
 [/task-description]
 [code-io /]
 [tests]
@@ -111,7 +110,7 @@ public class Main {
 [task-description]
 ## Description
 
-Write a program to print "**Catlyn**" on the first line and calculate and print the result of the expression 5 + 3 on the second line
+Create a program to print out "**Catlyn**" on the first line of output and then calculate and print out the result of the expression 5 + 3 on the second line
 [/task-description]
 [tests]
 [test open]
@@ -138,7 +137,7 @@ Catlyn
 [slide hideTitle]
 # Problem with Solution: Calculations
 
-[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-43-problem-and-solution-calculations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-43-problem-and-solution-calculations-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Calculations" taskId="pb-java-introduction-Calculations" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
@@ -156,7 +155,7 @@ public class Main {
 [task-description]
 ## Description
 
-Write a program, which calculates and prints the value of the following expressions:
+Create a program that calculates and prints the value of the following expressions:
 
 * 5 + 3 \* 2
 * 4 \* (2 + 3)
@@ -206,9 +205,9 @@ public class Main {
 [task-description]
 ## Description
 
-Write a program, which:
+Create a program, that:
 
-Prints a square of 7 * 7 stars like this:
+Prints a square of 7 * 7 stars like this one:
 ```
 * * * * * * *
 * * * * * * *
@@ -267,12 +266,10 @@ public class Main {
 [task-description]
 ## Description
 
-Write a program, which:
-* Calculates the area of the rectangle
-* Sides of the rectangle are 5 and 10
+Create a program that calculates the area of а rectangle with sides 5 and 10.
 
 ## Output
-* Print the the calculated area
+* Print the result
 [/task-description]
 [code-io /]
 [tests]
@@ -311,7 +308,7 @@ public class Main {
 [task-description]
 ## Description
 
-Write a program to print numbers from 1 to 10 (inclsuive).
+Create a program which prints out the numbers from 1 to 10 (inclsuive).
 
 ## Output
 
@@ -370,9 +367,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which **prints a triangle** of stars. 
+Create a program, which **prints a triangle** of stars. 
 
-You print one asteriks symbol \(\*\) for the first row, two asteriks symbols for the second row and so on for five rows. 
+Print one asterik symbol \(\*\) for the first row, two asterik symbols for the second row and so on.
 
 ## Output
 ```

@@ -51,7 +51,7 @@ while (num <= n) {
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Descreșterea Numerelor
+# Problemă cu Soluție: Descreșterea Numerelor
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/RO/Java-While-Loops-8-Problem-and-solution-Decreasing-Numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -116,7 +116,7 @@ Scrieți un program care:
 
 
 [slide hideTitle]
-# Problemă cu soluție: Number in Range
+# Problemă cu Soluție: Number in Range
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/RO/Java-While-Loops-10-11-Problem-and-solution-Number-in-range-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
