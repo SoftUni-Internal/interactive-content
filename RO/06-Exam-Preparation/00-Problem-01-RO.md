@@ -1,21 +1,21 @@
-# Problema 1: manager de cerință
+# Problema 1: Task Manager
 [slide hideTitle]
-# Manager de cerință
+# Task Manager
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/07.JS-Advanced-Exam-Preparation/RO/Problem-1-Task-Manager-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Task Manager" taskId="js-advanced-exam-preparation-task-manager" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
-function taskManager(){
+function solve(){
   // Write your code here
 }
 ```
 [/code-editor]
 [task-description]
-# Description
+# Descriere
 
-**Aici aveți un link către** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/JS-Advanced-Exam-Preparation-First-Task-Resources.zip) **pentru această cerință.**
+**Aici aveți un link către** [resurse](https://videos.softuni.org/resources/javascript/javascript-advanced/JS-Advanced-Exam-Preparation-First-Task-Resources.zip) **pentru această cerință.**
 
 Folosiți fișierele "**index.html**" și "**app.js**" pentru a rezolva această problemă.
 
@@ -23,7 +23,7 @@ Folosiți fișierele "**index.html**" și "**app.js**" pentru a rezolva această
 
 [image assetsSrc="exam-prep-picture1.jpg" /]
 
-## Cerința voastră
+## Cerința Voastră
 
 Scrieți **codul JavaScript lipsă** pentru a face Funcționalitatea Managerului de activități să funcționeze astfel:
 
@@ -31,7 +31,7 @@ Când butonul "**Add**" este apăsat, primul lucru pe care trebuie să-l facă e
 
 Dacă vreuyn câmp de date de intrare este gol, **funcția nu ar trebui să facă nimic**.
 
-După validarea câmpurilor datelor de intrare, **trebuie să adaugi o nouă cerință (articol)** secțiunii "**Open**".
+După validarea câmpurilor datelor de intrare, **trebuie să adaugi o nouă cerință (article)** secțiunii "**Open**".
 
 Structura HTML arată astfel:
 
@@ -87,7 +87,7 @@ Când butonul "**Delete**" este apăsat, cerința (întregul articol) **ar trebu
 
 După apăsarea butonului "**Finish**", **cerința va fi completă**, și ar trebui să mutați articolul în secțiunea "**Complete**".
 
-Butoanele, incluzând elementul lor părinte `div`,trebuie eliminate.
+Butoanele, incluzând elementul lor părinte `div`, trebuie eliminate.
 
 [image assetsSrc="exam-prep-pic4.png" /]
 
