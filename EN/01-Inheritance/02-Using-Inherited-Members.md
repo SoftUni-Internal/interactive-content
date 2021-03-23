@@ -136,8 +136,6 @@ Instead, if you need one class to be from two or more families, you can implemen
 
 **Interfaces** will be covered further in our lessons.
 
-[image assetsSrc="inheritance-example(8).png" /]
-
 [/slide]
 
 [slide hideTitle]
