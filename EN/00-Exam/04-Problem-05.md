@@ -67,15 +67,18 @@ The percentage must be formatted to the second decimal place.
 | W |  |
 | W |  |
 
-## Comments
-- The name of our team is Liverpool
-- They have played 10 games during the season:
-- 5 won * 3 points = 15 points
-- 4 even * 1 points = 4 points
-- 1 lost -> no points added
-- Total points finishing the season: 19 points
-- 5 wins of 10 games played = 50% win rate
-- After formatting the result -> 50.00%
+[hints]
+[hint]
+Determine the total points for the team. Each win is 3 points, draw is 1 and there aren't any points for loses.
+[/hint]
+[hint]
+Keep track of each won, draw and lost game.
+Calculate the win rate in percentage and don't forget to format it.
+[/hint]
+[hint]
+Print the correct output.
+[/hint]
+[/hints]
 
 [/task-description]
 [code-io /]
