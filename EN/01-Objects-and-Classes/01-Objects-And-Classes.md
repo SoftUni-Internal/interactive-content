@@ -25,7 +25,7 @@ In real life, dogs have a **breed** state and a **barking** behavior.
 
 An object holds a set of **named values**.
 
-A birthday object will have values like `day`, `month`, `year` etc.
+An object called **birthday** will have values like `day`, `month`, `year` etc.
 
 ```java live
 import java.time.LocalDate;
@@ -46,9 +46,11 @@ public class Main {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-5-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Classes and objects are the **two main aspects** of object-orientated programming. 
+Classes and objects are the **two main aspects** of object-oriented programming. 
 
-Classes provide the **structure for describing and creating objects**. 
+A class can be defined as a template that describes the behavior that the object of its type support.
+
+Classes provide **structure the objects**. 
 
 Classes define: 
 
@@ -72,11 +74,13 @@ This is how **objects** can be derived from a **class**:
 
 All entities with similar characteristics can be arranged in categories.
 
-For example, all animals are grouped in a single **class** and each animal is an **object** of that class.
+For example, all animals are grouped in a single **class**, and each animal is an **object** of that class.
 
 [image assetsSrc="ObjectsAndClasses_RealLifeExample.png" /]
 
-Each animal has а type, age, colour, preferred food, etc. and behaviour like eat, drink water, move, make sound, etc. 
+Each animal has similar characteristics, so the **animal** class should have the following fields: type, age, color, preferred food, etc.
+
+Also, each animal can eat, drink water, move, make a sound, etc, so methods for each of these actions should be declared within the **animal** class.
 
 A class is like an object constructor that contains all of their similar characteristics. 
 
@@ -92,9 +96,9 @@ It is a "blueprint" for creating objects.
 
 Creating an object based on a predefined class is called **instantiation**.
 
-An **instance** is the object itself, which is created at runtime.
+An **instance** of a class is an object created at runtime.
 
-All instances have common **behaviors**. 
+All instances have common **behavior**. 
 
 To create an object: 
 
