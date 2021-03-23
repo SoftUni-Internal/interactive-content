@@ -27,13 +27,13 @@ Because a condition cannot be simultaneously "**true**" and "**false**" only one
 
 After executing the body of the `if` or `else`- statements, control is transferred to the next statement in our code if there are any.
 
-In an `if` mechanics that does not include an else-statement, if the condition is true its body will be executed, if not the program will continue execution ignoring the code placed in its body.
+In an `if` construction that does not include an else-statement, if the condition is true its body will be executed, if not the program will simply exit it and contunue.
 
 Both the bodies of if - and else-statements can consist of a single or multiple lines of code that are enclosed in braces `{ }`. 
 
-If the body of an if-statement holds just one line of code, the braces are optional but recommended.
+If the body of an if-statement holds just one line of code, the braces are optional (but recommended).
 
-The statement or statements in the if-statement and the else-statement can be of any kind, including other if-statements nested inside the original if-statement.
+The statement (or statements) in the if-statement and the else-statement can be of any kind, including other if-statements - nested inside the original if-statement.
 [/slide]
 
 [slide hideTitle]
@@ -62,7 +62,7 @@ if (weather.equals("rainy")) {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-19-20-block-of-code-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-When we have **only one command** in the body of the **if construction**, we can **skip the curly brackets**
+When we have **only one command** in the body of the **if mechanics**, we can **skip the curly brackets**
 
 When we want to execute a **block of code** (a group of commands), the curly brackets are **required**. 
 
@@ -174,7 +174,7 @@ public class Program {
 [/code-editor]
 [task-description]
 # Description
-Create a program, which finds the greater of two numbers:
+Create a program, that finds the greater of two numbers:
 
   * Read two **integers**
   * Find the greater number
