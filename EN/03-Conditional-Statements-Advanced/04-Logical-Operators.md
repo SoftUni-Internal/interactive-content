@@ -91,7 +91,7 @@ The program will run in the **following** way:
 - That is why the evaluation of `d` is being **skipped** and the whole expression is calculated as `false`
 
 ## Example: Point in a Rectangle
-Checks whether `point {x, y}` is placed inside the rectangle `{x1, y1} – {x2, y2}`. 
+Checks whether `point {x, y}` is placed inside the rectangle `{x1, y1} - {x2, y2}`. 
 
 [image assetsSrc="03.Point-in-rectangle-01.png" /]
 

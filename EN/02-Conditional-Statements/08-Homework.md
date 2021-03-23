@@ -204,7 +204,7 @@ Fast
 [/test]
 [test]
 [input]
-43
+speedInfo(43)
 [/input]
 [output]
 Fast

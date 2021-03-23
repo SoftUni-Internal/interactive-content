@@ -260,7 +260,11 @@ Create a program, which determines if a letter is a **vowel** or a **consonant**
 
 [hints]
 [hint]
-You can use an "if" statement and check if the letter is a vowel. If it is print the correct output. However, if it isn't, enter the "else" statement and print the appropriate output.
+You can use an "if" statement and check if the letter is a vowel. 
+
+If it is print the correct output. 
+
+However, if it isn't, enter the "else" statement and print the appropriate output.
 [/hint]
 [/hints]
 
