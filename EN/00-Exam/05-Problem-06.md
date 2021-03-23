@@ -77,40 +77,14 @@ The output consists of one line:
 | win | |
 | **Finish** | |
 
-
-## Comments:
-
-The tournament is 2 days long.
-
-**The first day:**
-
-We play volleyball and win -> we have won 20 euros.
-
-We play football and lose -> 0 Euro.
-
-We play basketball and win -> we have won 20 more euros.
-
-We receive the Finish command and the day is over. 
-
-Earned money for the day 20 + 0 + 20 = 40 euros. We have won more games than we have lost, therefore we increase the final earnings of the day by 10% -> 44 euro.
-
-**The second day:**
-
-We play golf and win -> 20 euro.
-
-We play tennis and win -> 20 euro.
-
-We play badminton and win -> 20 euro.
-
-We receive the **Finish** command and the day is over. 
-
-Earned: 20 + 20 + 20 = 60 euros. We have won all games, respectively we increase the amount raised by 10% -> 66 euro.
-
-The amount of money earned from both days: 44 + 66 = 110 euro.
-
-Since we have more wins than losses, we win the tournament and increase the total amount by 20% -> 132 euro.
-
-
+[hints]
+[hint]
+Calculate how much money you have won for each day of the tournament. If you have more wins than loses in a day increase the earnings by 10%.
+[/hint]
+[hint]
+Upon reaching the "Finish" command, add the total amount of money earned and if you have won on most days, you win the tournament and increase your total amount money raised by 20%. Then print the correct output.
+[/hint]
+[/hints]
 
 [/task-description]
 [code-io /]
