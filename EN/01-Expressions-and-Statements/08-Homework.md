@@ -45,13 +45,21 @@ The formula for calculating the area of a square is - a * a.
 [tests]
 [test]
 [input]
+calculateArea(12)
+[/input]
+[output]
+144
+[/output]
+[/test]
+[test]
+[input]
 calculateArea(2)
 [/input]
 [output]
 4
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 calculateArea(5)
 [/input]
@@ -120,6 +128,22 @@ Create a program, which converts USD to EUR:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+currencyConverter(17)
+[/input]
+[output]
+14.96
+[/output]
+[/test]
+[test open]
+[input]
+currencyConverter(87)
+[/input]
+[output]
+76.56
+[/output]
+[/test]
 [test]
 [input]
 currencyConverter(10.0)
@@ -205,7 +229,7 @@ areaOfTriangle(0.5236)
 30
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 areaOfTriangle(0.7854)
 [/input]
@@ -213,7 +237,7 @@ areaOfTriangle(0.7854)
 45
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 areaOfTriangle(6.2832)
 [/input]
@@ -221,7 +245,7 @@ areaOfTriangle(6.2832)
 360
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 areaOfTriangle(3.1416)
 [/input]
@@ -276,6 +300,22 @@ Create a program, which converts days to minutes:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+daysToMinutes(2)
+[/input]
+[output]
+2880
+[/output]
+[/test]
+[test open]
+[input]
+daysToMinutes(5)
+[/input]
+[output]
+7200
+[/output]
+[/test]
 [test]
 [input]
 daysToMinutes(6)
@@ -346,6 +386,10 @@ Create a program, which calculates a **circle's** area and perimeter:
 | --- | --- |
 | circleArea(7) | Area = 153.94 |
 |  | Perimeter = 43.98 |
+
+
+| **Input** | **Output** |
+| --- | --- |
 | circleArea(8) | Area = 201.06 |
 |  | Perimeter = 50.27 |
 
@@ -361,6 +405,24 @@ The formula for calculating a circle's area is: A = π * R * R.
 
 [/task-description]
 [tests]
+[test open]
+[input]
+circleArea(7)
+[/input]
+[output]
+Area = 153.94
+Perimeter = 43.98
+[/output]
+[/test]
+[test open]
+[input]
+circleArea(8)
+[/input]
+[output]
+Area = 201.06
+Perimeter = 50.27
+[/output]
+[/test]
 [test]
 [input]
 circleArea(12.0)
@@ -431,20 +493,24 @@ As Peter's yard is quite **large**, the contractor company offers an **18 percen
 
 ## Input
 The function receives one argument:
-- Square meters, which will be landscaped - a floating-point number in the interval \[0.00… 10000.00\]
+- Square meters, which will be landscaped - a floating-point number in the interval \[0.00 ... 10000.00\]
 
 ## Output
  Two lines are printed to the console:
 
-- The final price is: \{**final price of the service**\} dollars.
+- "**The final price is:** \{**final price of the service**\} **dollars.**"
 
-- The discount is: \{**discount**\} dollars.
+- "**The discount is:** \{**discount**\} **dollars.**"
 
 ## Example
 | **Input** | **Output** |
 | --- | --- |
 | landscape(150) | The final price is: 936.03 dollars. |
 |  | The discount is: 205.47 dollars. |
+
+
+| **Input** | **Output** |
+| --- | --- |
 | landscape(550) | The final price is: 3432.11 dollars. |
 |  | The discount is: 753.39 dollars. |
 
@@ -469,15 +535,24 @@ Subtract the discount from the total price.
 [hint]
 
 Print the result on the console:
-console.log(The final price is: ${total} dollars.);
-console.log(The discount is: ${discount} dollars.);
+console.log('The final price is: $\{total\} dollars.');
+console.log('The discount is: $\{discount\} dollars.');
 
 [/hint]
 [/hints]
 
 [/task-description]
 [tests]
-[test]
+[test open]
+[input]
+landscape(150)
+[/input]
+[output]
+The final price is: 936.03 dollars.
+The discount is: 205.47 dollars.
+[/output]
+[/test]
+[test open]
 [input]
 landscape(550)
 [/input]
