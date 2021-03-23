@@ -11,7 +11,7 @@ Un **mediu de dezvoltare integrat** (sau IDE) este o combinație de instrumente 
 
 În mediul de dezvoltare putem **scrie cod**, **compila** și **executa programe**.
 
-Mediile de dezvoltare integrează de obicei un **editor de text**, un **limbaj de programare**, un **compilator** sau un **interpret** și un mediu de rulare pentru **executarea programelor**.
+Mediile de dezvoltare integrează de obicei un **editor de text**, un **limbaj de programare**, un **compilator** sau un **interpretor** și un mediu de rulare pentru **executarea programelor**.
 
 De asemenea, pot conține un **depanator** pentru urmărirea programului și căutarea erorilor, și instrumente pentru **proiectarea interfeței cu utilizatorul** sau alte utilități și programe suplimentare.
 
@@ -35,7 +35,7 @@ Unele dintre cele **populare** alternative la Visual Studio Code sunt:
 
 În acest curs, vom folosi **Visual Studio Code.**
 
-Acesta este un exemplu al modului în care arată acest IDE (codul Visual Studio IDE pentru JavaScript):
+Acesta este un exemplu al modului în care arată acest IDE (Visual Studio Code IDE pentru JavaScript):
 
 [image assetsSrc = "intro-to-programming-6.png" /]
 
@@ -111,7 +111,7 @@ Asta e tot. Sunteți gata să lucrați cu Visual Studio Code.
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-23-Development-Environments-Desktop-And-Online-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Instalați codul Microsoft Visual Studio
+Instalați Microsoft Visual Studio Code
 
 * [Visual Studio Code](https://code.visualstudio.com/download)
 
