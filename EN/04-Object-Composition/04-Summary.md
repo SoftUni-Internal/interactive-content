@@ -24,26 +24,36 @@ let student = {
 
 ```js live
 let data = [{
-    id: 'a',
-    score: 12
+  id: 'a',
+  score: 12
 }, {
-    id: 'b',
-    score: 84
+  id: 'b',
+  score: 84
 }, {
-    id: 'c',
-    score: 59
+  id: 'c',
+  score: 59
+}, {
+  id: 'b',
+  score: 79
+}, {
+  id: 'c',
+  score: 26
 }];
 
 let result = data.reduce((acc, curr, index, array) => {
-    let same = acc.find(e => e.id === curr.id);
-    if (!same) {
-        acc.push(curr);
-    } else {
-        same.score += curr.score;
-    }
+  let same = acc.find(e => e.id === curr.id);
+  if (!same) {
+      acc.push(curr);
+  } else {
+      same.score += curr.score;
+  }
 
-    return acc;
+  return acc;
 }, []);
+
+for (const data of result) {
+  console.log(`id: ${data.id}, score: ${data.score}`);
+}
 ```
 
 - **Concatenation** - adding new properties
@@ -70,27 +80,32 @@ const concatenate = (acc, curr) => ({
 });
 
 const result = obj.reduce(concatenate, {});
+
+console.log(result);
 ```
 - **Delegation** - imitates class inheritance
 
 ```js live
 const obj = [{
-        name: 'Mark',
-        age: 65
-    },
-    {
-        age: 32
-    },
-    {
-        name: 'Lynda'
-    },
-    {
-        height: 150
-    }
+  name: 'Mark',
+  age: 65
+},
+{
+  age: 32
+},
+{
+  name: 'Lynda'
+},
+{
+  height: 150
+}
 ];
 
 const delegate = (acc, curr) => Object.assign(Object.create(acc), curr);
 const result = obj.reduceRight(delegate, {});
+
+console.log(result);
+console.log(result.height);
 ```
 
 
