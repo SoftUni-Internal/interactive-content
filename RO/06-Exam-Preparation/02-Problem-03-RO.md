@@ -13,59 +13,73 @@ class Bank {
 ```
 [/code-editor]
 [task-description]
-# Cerința voastră
+# Cerința Voastră
 
 Scrieți o clasă **Bank** care implementează următoarea funcționalitate:
 
 ## Funcționalitate
 
-- `constructor (bankName)` - primește **1 parametru** la inițializarea clasei (**bankName**).
+## `constructor (bankName)` 
+
+Primește **1 parametru** la inițializarea clasei (**bankName**).
 
 Clasa **Bank** ar trebui să aibă aceste **2 proprietăți:**
 
 - bankName \- o proprietate **privată** de tip șir
 - allCustomers \- inițial o matrice goală
 
-- `newCustomer (customer)`": **clientul** este de tip obiect "\{**firstName, lastName, personalId**\}".
+## `newCustomer (customer)` 
 
-Verificați dacă sunt deja un client al băncii. Dacă sunt deja generați această eroare:
+**Clientul** este de tip obiect "\{**firstName, lastName, personalId**\}".
+
+
+- Verificați dacă sunt deja un client al băncii. Dacă sunt deja generați această eroare:
 "\{**firstName**\} \{**lastName**\} **is already our customer!**"
 
-Dacă nu această funcție ar trebui să adauge un nou client cu următoarele funcționalități.
+- Dacă nu această funcție ar trebui să adauge un **nou client** cu următoarele funcționalități
 
-- `depositMoney (personalId, amount)`: **personalId** și **amount** ar trebui să fie numere
+## `depositMoney (personalId, amount)`
 
-Verificați dacă **personalId** dat corespunde unui client din **mulțimea de clienți**, dacă nu generați această eroare:
+
+**personalId** și **amount** ar trebui să fie numere.
+
+
+- Verificați dacă **personalId** dat corespunde unui client din **mulțimea de clienți**, dacă nu generați această eroare:
 
 "**We have no customer with this ID!**"
 
-Altfel, adăugați cantitatea corespunzătoare într-o proprietate numită **totalMoney** și păstrați **the transaction information** (Vedeți exemplul pentru a înțelege mai bine). După asta, **returnați suma totală de bani** a clientului corespunzător și un semn de dolar:
+- Altfel, adăugați cantitatea corespunzătoare într-o proprietate numită **totalMoney** și păstrați **the transaction information** (Vedeți exemplul pentru a înțelege mai bine). După asta, **returnați suma totală de bani** a clientului corespunzător și un semn de dolar:
 
 "\{**totalMoney**\}\$"
 
-- `withdrawMoney (personalId, amount)`:  **personalId** și **amount** ar trebui să fie numere.
 
-Verificați dacă **personalId** cdat corespunde unui client din **mulțimea de clienți**, dacă nu **generați o nouă eroare:**
+## `withdrawMoney (personalId, amount)`
 
-"**We have no customer with this ID!**`"
 
-Dacă există un client cu acel **personalId**, verificați dacă clientul **are destui bani** pentru a extrage suma dată din cont. 
+**personalId** și **amount** ar trebui să fie numere.
 
-Dacă banii nu sunt destui **generați o nouă eroare:**
+- Verificați dacă **personalId** cdat corespunde unui client din **mulțimea de clienți**, dacă nu **generați o nouă eroare:**
+
+"**We have no customer with this ID!**"
+
+- Dacă există un client cu acel **personalId**, verificați dacă clientul **are destui bani** pentru a extrage suma dată din cont
+    * dacă banii nu sunt destui **generați o nouă eroare:**
 
 "\{**firstName**\} \{**lastName**\} **does not have enough money to withdraw that amount!**"
 
-Altfel, sustrageți **suma** din "**totalMoney**" al clientului și păstrați **informația de tranzacție**, apoi **returnați suma totală** a clientului corespunzător și un semn de dolar:
+- Altfel, sustrageți **suma** din "**totalMoney**" al clientului și păstrați **informația de tranzacție**, apoi **returnați suma totală** a clientului corespunzător și un semn de dolar:
 
 "\{**totalMoney**\}\$"
 
-"**customerInfo (personalId)**": **personalId** este de **tip număr**
+## `customerInfo (personalId)` 
 
-Verificați dacă **personalId** dat corespunde unui client din mulțimea de clienți, dacă nu generați o nouă eroare:
+**personalId** este de **tip număr**.
+
+- Verificați dacă **personalId** dat corespunde unui client din mulțimea de clienți, dacă nu generați o nouă eroare:
 
 "**We have no customer with this ID!**"
 
-Altfel, returnați toate informațiile clientului în următorul format:
+- Altfel, **returnați toate informațiile clientului** în următorul format:
 
 ```
 Bank name: {bankName}
@@ -93,7 +107,7 @@ n. {firstName} {lastName} made deposit of {amount}$!
 # Exemple
 Acesta este un exemplu de cum se **intenționează folosirea codului**:
 
-**Exemplu de folosire a codului** 
+**Exemplu de folosire a codului:** 
 
 ```js
 let bank = new Bank("SoftUni Bank");
@@ -113,7 +127,7 @@ console.log(bank.customerInfo(6233267));
  
 ```
 
-**Corresponding output**
+**Corresponding output:**
 
 ```
 { firstName: "John", lastName: "Miller", 
