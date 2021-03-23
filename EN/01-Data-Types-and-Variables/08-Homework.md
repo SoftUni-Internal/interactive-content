@@ -40,7 +40,7 @@ The song **duration in seconds** is calculate by the given formula:
 
 As output you should print the following message:
 
-"**The plate was rotated {rotations} times.**"
+"**The plate was rotated** \{**rotations**\} **times.**"
 
 Rotations should be **rounded up.**
 

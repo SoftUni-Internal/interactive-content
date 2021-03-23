@@ -39,7 +39,7 @@ Durata melodiei **în secunde** se calculează după formula dată:
 
 Ca rezultat, ar trebui să imprimați următorul mesaj:
 
-"**The plate was rotated {rotations} times.**"
+"**The plate was rotated** \{**rotations**\} **times.**"
 
 Rotațiile ar trebui să fie **rotunjite în sus.**
 
