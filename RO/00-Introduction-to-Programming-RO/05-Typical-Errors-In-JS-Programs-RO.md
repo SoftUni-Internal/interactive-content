@@ -27,6 +27,6 @@ Operatorul `+` are două funcționalități.
 
 - Confuzia operatorilor **assignment (atribuire)** (`=`) și **equality (egalitate)** (`==`, `===`)
 
-În JavaScript semnele dublu egal și triplu egal sunt numiți operatori de comparație.
+În JavaScript semnele dublu egal și triplu egal sunt numite operatori de comparație.
 
 [/slide]
