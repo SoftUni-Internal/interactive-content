@@ -7,7 +7,7 @@
 [code-task title="Press House" taskId="js-advanced-exam-preparation-press-house" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
 function pressHouse() {
-  // Write your code here
+  // Scrieți codul dvs. aici
 
   return {
     Article,
@@ -58,7 +58,9 @@ Clasa "**ShortReports**" moștenește de la clasa "**Article**".
 
 - **comments** \- an array of strings
 
-Scopul este de a crea rapoarte scurte. Ar trebui să limitați lungimea caracterelor păstrate în proprietatea **conținut**.
+Scopul este de a crea rapoarte scurte. 
+
+Ar trebui să limitați lungimea caracterelor păstrate în proprietatea **conținut**.
 
 Ar trebui să accepte un raport de **mai puțin de 150 de simboluri**. 
 
@@ -72,11 +74,13 @@ Dacă nu atunci generați o excepție cu următorul mesaj:
 
 "**The original research should have author and title.**"
 
-- `addComment(comment)`. Această funcție ar trebui să primească un singur comentariu sub formă de șir, să-l adauge în **mulțimea de comentarii** și să returneze acest mesaj: 
+- `addComment(comment)` - Această funcție ar trebui să primească un singur comentariu sub formă de șir, să-l adauge în **mulțimea de comentarii** și să returneze acest mesaj: 
 
 "**The comment is added.**"
 
-- `toString()` - această funcție ar trebui să extindă metoda `toString()` clasei  **Article** adăugând niște linii adiționale:
+
+- `toString()` - Această funcție ar trebui să extindă metoda `toString()` clasei **Article** adăugând niște linii adiționale:
+
 
 "**Original Research:** \{ **title** \} **by** \{ **author** \}"
 
@@ -100,9 +104,11 @@ Clasa "**BookReview"** moștenește de la clasa "**Article**".
     - **book** \- un obiect cu proprietățile **nume** și **autor**
     - **customers** \- o mulțime de obiecte **personalizate**.Fiecare obiect **personalizat** ar trebui să aibă următoarea structură "\{**customerName, orderDescription**\}"
 
+
 - "**addCustomer(customerName,  orderDescription)**": 
 
-Această **funcție** ar trebui să primească "**customerName**" și "**orderDescription**" ca șiruri.  
+
+Această **funcție** ar trebui să primească "**customerName**" și "**orderDescription**" ca șiruri. 
 
 Aici ar trebui să verificați dacă **mulțimea clienților** și aceeqași comandă au fost plasate de același client, generăm o eroare cu următorul mesaj: 
 
@@ -110,13 +116,15 @@ Aici ar trebui să verificați dacă **mulțimea clienților** și aceeqași com
 
 Altfel adăugați obiectul **client** în **mulțimea de clienți** și returnează următorul mesaj:
 
+
 "\{ **customerName** \} **has ordered a review for** \{ **book name** \}"
+
 
 - `toString()`: 
 
 Această **funcție** ar trebui să extindă metodă `toString()` clasei "**Article**" prin adăugarea unor linii:
 
-"**Book:** \{ **book name** \}"
+"**Book:** \{**book name**\}"
 
 Adițional dacă sunt și alte **comenzi** ar trebui să afișați pe fiecare pe o linie nouă:
 
@@ -147,8 +155,10 @@ function pressHouse() {
 
 ```
 
+
 # Exemple
 Acesta este un exemplu de cum ar trebui folosit codul.
+
 
 **Exemple de utilizare a codului:**
 

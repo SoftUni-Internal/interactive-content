@@ -39,7 +39,7 @@ console.log(descriptor);
 
 Setarea **configurable: false** face ca proprietatea să nu poată fi ștearsă. 
 
-Numai proprietățile care sunt **configurable**  pot fi șterse.
+Numai proprietățile care sunt **configurable** pot fi șterse.
 
 - **Writable** - proprietăți marcate ca **writable:true** pot fi modificate și valorile lor pot fi actualizate prin simpla atribuire a unei noi valori acestora
 
@@ -304,7 +304,7 @@ class Person{
 [/code-editor]
 [task-description]
 # Description
-Scrieți o clasă care ia **first (prenume)** și **last (nume de familie)** ca **parameterii** și returnează un obiect cu **firstName**, **lastName** și **fullName**: "\{**firstName**\} \{**lastName**\}`. 
+Scrieți o clasă care ia **first (prenume)** și **last (nume de familie)** ca **parameterii** și returnează un obiect cu **firstName**, **lastName** și **fullName**: "\{**firstName**\} \{**lastName**\}". 
 
 Toate proprietățile trebuie să fie **accesibile**. 
 

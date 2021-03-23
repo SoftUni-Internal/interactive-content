@@ -1,4 +1,4 @@
-# Temă
+# Teme Pentru Acasă
 
 [slide hideTitle]
 
@@ -29,7 +29,7 @@ Adăugați un **click event listener** fiecărui **div** care afișează paragra
 
 În final, puteți **adăuga** toate divs la elementul cu un **id** **conţinut**.
 
-# Exemplu
+## Exemplu
 
 [image assetsSrc="Dom-Manipulation(5).gif" /]
 
@@ -141,7 +141,7 @@ După 2 secunde, **ascunde** acest div.
 
 In exemplul de mai jos, să apară o notificare, atunci când dăm click pe buton.
 
-# Exemplu
+## Exemplu
 
 [image assetsSrc="Dom-Manipulation(7).gif" /]
 
