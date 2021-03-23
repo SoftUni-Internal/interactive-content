@@ -22,11 +22,11 @@ They comprise of **two main ideas**:
 
 # Singleton Pattern
 
-The singleton pattern is one of the most used creational design patterns
+The singleton pattern is one of the most used creational design patterns.
 
 Its main concept is the singleton class - a class that has only one object at a time.
 
-The difference between a normal class and a singleton class is that we use a constructor to initialize the normal class, whereas, for a singleton class, we use the method `getInstance()`
+The difference between a normal class and a singleton class is that we use a constructor to initialize the normal class, whereas, for a singleton class, we use the `getInstance()` method.
 
 ## Example
 
@@ -89,11 +89,11 @@ This way, our Singleton class provides a method to get its **static** instance t
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-16-prototype-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The prototype pattern allows us to copy the class instance and create a new object from it.
+The **prototype pattern** allows us to copy the class instance and create a new object from it.
 
 This method of creating the object allows us to hide the complexity of making new instances from the client.
 
-The copied object acts as a prototype and contains all the information of the **actual object**.
+The copied object acts as a **prototype** and contains all the information of the **actual object**.
 
 Instead of using the `new` keyword, we can use the `clone()` method.
 
@@ -101,7 +101,7 @@ We can add or remove objects at runtime using the prototype pattern.
 
 [image assetsSrc="Design-Patterns.png" /]
 
-Let us take a look at this example:
+Let us take a look at this **example**:
 
 ``` java
 public abstract class Prototype {
@@ -149,13 +149,13 @@ We can use the **prototype design pattern** when:
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-19-builder-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The builder design pattern is used to assemble a complex structure step by step.
+The **builder design pattern** is used to assemble a complex structure step by step.
 
 In the end, it will return the whole object. 
 
 We can create an object with a lot of possible configuration options.
 
-Usage of the builder pattern:
+**Usage** of the builder pattern:
 
 - When our construction process must allow different representations for the constructed object (highly customizable)
 
@@ -165,7 +165,7 @@ Imagine that we want to create a character for our MMORPG game.
 
 We can make our constructor **create the character** for us.
 
-Take a look at this code example:
+Take a look at this code **example**:
 
 ``` java
 // This is our Hero class

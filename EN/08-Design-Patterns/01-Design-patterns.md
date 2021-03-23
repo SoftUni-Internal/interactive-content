@@ -12,7 +12,7 @@ It is important to understand that design patterns by themselves **are not** fin
 
 Instead, they are **general descriptions** of problem-solving **templates** that can be applied in many situations.
 
-## Why Do We Use **Design Patterns**
+## Why Do We Use Design Patterns
 
 By applying design patterns, we can solve structural problems and speed up the development process by implementing **well-proven development paradigms**.
 
