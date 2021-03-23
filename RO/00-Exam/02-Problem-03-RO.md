@@ -1,4 +1,4 @@
-﻿# Problem: Coffee Machine
+﻿# Problemă: Coffee Machine
 [slide hideTitle]
 # Coffee Machine
 [code-task title="Coffee Machine" taskId="pb-java-exam-coffee-machine" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -24,9 +24,9 @@ Scrieți un program care calculează prețul pe care un client, care a cumpărat
 | Tea | 0.50$ | 0.60$ | 0.70$ |
 
 Rețineți următoarele reduceri:
-- La o băutură selectată fără zahăr, există o reducere de 35%
-- Cu o băutură selectată "Espresso" și ați cumpărat cel puțin 5 băuturi, există o reducere de 25%
-- Cu o sumă care depășește 15$, există o reducere de 20% din prețul final
+- Pentru o băutură selectată fără zahăr, există o reducere de 35%
+- Pentru 5 băuturi "Espresso", există o reducere de 25%
+- Pentru o sumă care depășește 15$, există o reducere de 20% din prețul final
 
 Reducerile se aplică în ordinea descrierii lor.
 
@@ -34,7 +34,7 @@ Reducerile se aplică în ordinea descrierii lor.
 Veți primi 3 linii de pe consolă:
 - Prima linie - băutură - șir: "**Espresso**", "**Cappuccino**" sau "**Tea**" 
 - A doua linie - zahăr - șir: "**Without**", "**Normal**" sau "**Extra**"
-- A treia linie - numărați băuturile - numărul întreg în intervalul [1 ... 50]
+- A treia linie - numărul băuturilor - număr întreg în intervalul [1 ... 50]
 
 ## Ieșire
 Imprimați o linie pe consolă:
@@ -50,14 +50,14 @@ Imprimați o linie pe consolă:
 
 [hints]
 [hint]
-Calculate the total price for the drinks. Then check if there's a discount.
+Calculați prețul total pentru băuturi. Apoi verificați dacă există o reducere.
 [/hint]
 [hint]
-If there is a discount for the drink, determine how much is it and subtract it from the total price for the drinks.
+Dacă există o reducere pentru băutură, determinați cât este aceasta și scădeți-o din prețul total al băuturilor.
 [/hint]
 [hint]
-Check if there's any additional discount. 
-Finally, determine the final price and print the correct output. Note that the price must be formatted up to the second decimal place.
+Verificați dacă există reduceri suplimentare.
+La final, determinați prețul final și tipăriți ieșirea corectă. Țineți cont că prețul trebuie formatat la a doua cifră după punctul zecimal.
 [/hint]
 [/hints]
 
