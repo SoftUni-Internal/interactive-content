@@ -173,7 +173,7 @@ console.log(replacedStr);
 [code-task title="Substring" taskId="js-fundamentals-pt2-text-processing-lab-Substring" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function substring(input){
+function substring(str, firstNumber, secondNumber){
   // Scrieți codul dvs. aici
 }
 ```
@@ -287,7 +287,9 @@ Pentru a găsi o anumită parte a unui șir, folosim metoda `include()`.
 Această metodă are doi parametri:
 
 - Șirul pe care îl căutăm
-- Poziția în care să începeți căutarea. Acesta este opțional
+- Poziția în care să începeți căutarea
+
+.Acesta este opțional
 
 Preia  **șirul** și îl caută în cel principal.
 

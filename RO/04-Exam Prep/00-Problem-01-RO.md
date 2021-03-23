@@ -26,7 +26,7 @@ function adapter(input, code) {
 # Descriere
 Scrieți un program de resetare a parolei care efectuează o serie de comenzi pe un șir.
 
-Mai întâi, veți primi șirul, pe care trebuie să îl modificați, iar apoi, până când se primește comanda `Done`, vi se vor da comenzi sub formă de text (un șir), împărțit printr-un singur spațiu.
+Mai întâi, veți primi șirul, pe care trebuie să îl modificați, iar apoi, până când se primește comanda "**Done**", vi se vor da comenzi sub formă de text (un șir), împărțit printr-un singur spațiu.
 
 Comenzile vor fi următoarele:
 

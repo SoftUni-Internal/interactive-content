@@ -186,7 +186,7 @@ Un nume complet valid are următoarele caracteristici:
 - Cele două cuvinte sunt separate de un singur spațiu
 
 Pentru a vă ajuta, am prezentat mai mulți pași:
-1. Utilizați un tester de regex online, cum ar fi: [Regex101] (https://regex101.com)
+1. Utilizați un tester de regex online, cum ar fi: [Regex101](https://regex101.com)
 2. Verificați modul de utilizare a seturilor de caractere \ (notate cu paranteze drepte \- \"\[\]\"\)
 3. Specificați că doriți două cuvinte cu un spațiu între ele \ (caracterul spațial \ '\' și nu orice simbol al spațiului alb \)
 4. Pentru fiecare cuvânt, specificați că ar trebui să înceapă cu o literă mare, utilizând un set de caractere. Caracterele dorite se află într-un interval \: de la A la Z
@@ -355,7 +355,7 @@ După aceea, este urmat de numărul în sine:
 
 Puteți utiliza următoarele proprietăți RegEx pentru a ajuta la potrivirea:
 - Folosiți cuantificatoare pentru a potrivi un anumit număr de cifre
-- Utilizați un grup de capturare pentru a vă asigura că delimitatorul este doar unul dintre caracterele permise (spațiu sau cratimă) și nu o combinație a ambelor \(de ex. \+359 2 \-111 111 are delimitatoare mixte, este nevalid \).
+- Utilizați un grup de capturare pentru a vă asigura că delimitatorul este doar unul dintre caracterele permise (spațiu sau cratimă) și nu o combinație a ambelor \(de ex. \+359 2 \-111 111 are delimitatoare mixte, este nevalid \)
 
 Folosiți o referință de grup pentru a realiza acest lucru.
 - Adăugați o limită de cuvânt la sfârșitul potrivirii pentru a evita potriviri parțiale (ultimul exemplu din partea dreaptă)

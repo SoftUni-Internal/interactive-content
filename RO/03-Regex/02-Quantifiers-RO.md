@@ -7,7 +7,7 @@
 
 **Cuantificatorii** indică numărul de caractere sau de expresii care se potrivesc.
 
-Pentru exemplele de mai jos, avem nevoie de un **șir**, un **șablon* și metoda `.match()`.
+Pentru exemplele de mai jos, avem nevoie de un **șir**, un **șablon** și metoda `.match()`.
 
 Șablonul arată în felul următor: `/regularExpression/g`
 
@@ -79,7 +79,7 @@ console.log(result);
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-11-Grouping-Expressions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-O parte din șablon poate fi pusă în paranteze (...). 
+O parte din șablon poate fi pusă în paranteze (...).
 
 Acest concept poartă denumirea de **grup de capturare**.
 
@@ -157,9 +157,9 @@ console.log(result[1]);
 # Backreferences
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-14-15-Backreferences-Match-Previous-Groups-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Un grup poate fi referențiat în șablon utilizând \N, unde N este numărul grupului.
+Un grup poate fi referențiat în șablon utilizând `\N`, unde N este numărul grupului.
 
-Pentru a clarifica motivul pentru care acest concept este folositor, să considerăm o cerință pentru a extrage o propoziție înconjurată de #.
+Pentru a clarifica motivul pentru care acest concept este folositor, să considerăm o cerință pentru a extrage o propoziție înconjurată de \#.
 
 Primul grup din șablon este `(\#)` și se va potrivi pentru primul `#`. 
 

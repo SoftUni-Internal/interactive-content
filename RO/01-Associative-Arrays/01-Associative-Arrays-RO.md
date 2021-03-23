@@ -87,7 +87,7 @@ for (let key in assocArr) {
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Phone Book
+# Problemă cu Soluție: Phone Book
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/RO/02.JS-Fundamentals-Associative-Arrays-7-solution-phone-book-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -533,7 +533,7 @@ console.log(result);
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție:  AddressBook
+# Problemă cu Soluție:  AddressBook
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/RO/02.JS-Fundamentals-Associative-Arrays-15-solution-adress-book-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

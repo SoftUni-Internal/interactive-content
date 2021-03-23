@@ -42,7 +42,7 @@ Fiecare dată valabilă are următoarele caracteristici:
 Folosiți o referință de grup pentru a verifica acest lucru.
 
 
-## Exemplul unu
+## Exemplul Unu
 
 |**Intrare**|**Ieșire** |
 | --- | --- |
@@ -50,7 +50,7 @@ Folosiți o referință de grup pentru a verifica acest lucru.
 | | Day\: 10\, Month\: Nov\, Year\: 1934 |
 | | Day\: 25\, Month\: Dec\, Year\: 1937 |
 
-## Exemplul doi
+## Exemplul Doi
 |**Intrare**|**Ieșire** |
 | --- | --- |
 | matchDate('28-Mar-2000') | Day\: 28\, Month\: Mar\, Year\: 2000 |

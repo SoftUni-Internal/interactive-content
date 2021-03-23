@@ -23,7 +23,7 @@ function adapter(input, code) {
 # Descriere
 Scrieți o funcție, care primește doi parametri.
 
-Primul parametru va fi un **șir care conține câteva cuvinte** separate prin **,** ".
+Primul parametru va fi un **șir care conține câteva cuvinte** separate prin "**,**".
 
 **Al doilea parametru va fi un șir** care conține șabloane care conțin "\*".
 
