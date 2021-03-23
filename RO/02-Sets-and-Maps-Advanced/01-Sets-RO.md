@@ -1,3 +1,4 @@
+# Sets
 
 [slide hideTitle]
 
@@ -26,7 +27,7 @@ Java **Cadru de Colectare** conține numeroase interfețe, dintre care una este 
 - pentru a stoca **numere în ordine aleatorie** etc.
 
 
-\* Interfețele formează un contract între clasă și lumea exterioară. Puteți afla mai multe despre interfețe [here](https://docs.oracle.com/javase/tutorial/java/concepts/interface.html#:~:text=Interfaces%20form%20a%20contract%20between,the%20class%20will%20successfully%20compile.).
+Interfețele formează un contract între clasă și lumea exterioară. Puteți afla mai multe despre interfețe [here](https://docs.oracle.com/javase/tutorial/java/concepts/interface.html#:~:text=Interfaces%20form%20a%20contract%20between,the%20class%20will%20successfully%20compile.).
 
 
 [/slide]

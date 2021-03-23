@@ -3660,7 +3660,7 @@ linen: 1420
 
 [slide hideTitle]
 # Problem: Dragon Army
-[code-task title="Problem: Dragon Army" taskId="edc53bdc-36c2-48f3-b89e-065386a43101" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Dragon Army" taskId="java-advanced-sets-and-maps-advanced-Dragon-Army" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
