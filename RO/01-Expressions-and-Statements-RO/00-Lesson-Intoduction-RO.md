@@ -9,7 +9,7 @@
 
 ## În cadrul acestei lecții veți învăța despre:
 
-**1. Variabilele: Cum le declarăm, cum le citim și cum le modificăm**
+**1. Variabile: Cum le declarăm, cum le citim și cum le modificăm**
 
 - Crearea și utilizarea variabilelor
 
@@ -25,11 +25,11 @@
 
 - Cum să imprimați rezultatul în consolă
 
-**2. Operatorii artimetici: +, -, * și /**
+**2. Operatorii aritmetici: +, -, * și /**
 
 - Cum să manipulați variabilele
 
-**6. Expresiile**
+**6. Expresii**
 
 - Cum să combinați valorile și operatorii
 
