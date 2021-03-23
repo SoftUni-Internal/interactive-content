@@ -54,7 +54,7 @@ function calculate() {
 
 Creați un program JavaScript, care:
 
-* Calculează valoarea de "5 \* 5"
+* Calculează valoarea "5 \* 5"
 * Imprimă rezultatul
 [/task-description]
 [code-io /]
@@ -146,7 +146,7 @@ function squareOfStars() {
 [task-description]
 Creați un program care:
 
-Imprimă  un pătrat de stele "7 \* 7" astfel:
+Imprimă un pătrat de stele "7 \* 7" astfel:
 
 ```
 * * * * * * *
