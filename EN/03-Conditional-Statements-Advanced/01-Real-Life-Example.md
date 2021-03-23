@@ -15,7 +15,7 @@ A market offers different prices for their products based on the day of the week
 |Apple|1.30|1.60|
 |Kiwi|2.20|3.00|
 
-We want to calculate the price for a certain product and day.
+We need to crete a program to help us determine the price of each product according to the day.
 
 ## Pseudocode
 
