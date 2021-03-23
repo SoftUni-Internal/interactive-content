@@ -39,13 +39,26 @@ The output should consist of one line:
 The result must be formatted up to **the second decimal place**. 
 
 ## Example
-| **Input** | **Output** | **Comments** |
+| **Input** | **Output** |
 | --- | --- | --- |
-| 21 | 254.10 euro | 21 people \* 5.50 = 115.50 euro |
-| 5.50 | | 75% of 21 people are 16 -> 16 * 4.40 = 70.40 euro |
-| 4.40 | | 50% of 21 people are 11 -> 11 * 6.20 = 68.20 euro |
-| 6.20 | | The final: 115.50 + 70.40 + 68.20 = 254.10 |
-
+| 21 | 254.10 euro | 
+| 5.50 | | 
+| 4.40 | | 
+| 6.20 | | 
+[hints]
+[hint]
+Calculate the initial entrance fee for all the people.
+[/hint]
+[hint]
+Determine how many of them will want a sunbed and calculate the price for all the sunbeds.
+[/hint]
+[hint]
+Note that 1 umbrella can be used by 2 people. Don't forget that when calculating the number of umbrellas and sunbeds, their number should be rounded up to the next integer.
+[/hint]
+[hint]
+Determine the final price after adding the umbrellas and sunbeds fees to the entrance fee.
+[/hint]
+[/hints]
 [/task-description]
 [code-io /]
 [tests]
