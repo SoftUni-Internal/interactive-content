@@ -113,8 +113,8 @@ public static void main(String[] args) throws IOException {
 
     Collections.sort(
         people, (firstPerson, secondPerson) ->  {
-        int sComp = firstPerson.getFirstName().compareTo
-        (secondPerson.getFirstName());
+        int sComp = firstPerson.getFirstName()
+            .compareTo(secondPerson.getFirstName());
 
         if (sComp != 0) {
             return sComp;

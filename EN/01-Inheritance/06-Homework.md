@@ -695,7 +695,7 @@ Every class should have:
 
 ## Submit
 
-Zip your package and upload it.
+**Zip** your package and upload it.
 
 ## Note: 
 You need a public class Main.
@@ -1293,7 +1293,7 @@ The default fuel consumption for **Vehicle** is **1.25**. Some of the classes ha
 
 ## Submit 
 
-Zip your package and upload it.
+**Zip** your package and upload it.
 
 ## Hint	
 In the child classes' constructors use `super.setFuelConsumption()` to set **fuelConsumption**
@@ -1898,7 +1898,7 @@ You need a public class **Main**. Create a **restaurant** package.
 
 ## Submit
 
-Zip your package and upload it.
+**Zip** your package and upload it.
 
 [/task-description]
 [tests]
