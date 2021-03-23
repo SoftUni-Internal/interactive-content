@@ -209,7 +209,7 @@ Primul șir va fi un cuvânt cu un **caracter lipsă** înlocuit cu underscore (
 
 Trebuie să **înlocuiți** spațiul lipsă semnalat de underscore din primul șir cu caracterul dat și să **comparați** rezultatul cu cel de-al doilea șir dat. 
 
-Dacă sunt egale, ar trebui să tipăriți "**Matched**" ("**Potrivire**"), altfel veți tipări "**Not Matched**" ("**Nepotrivire**").
+Dacă sunt egale, ar trebui să tipăriți "**Matched**", altfel veți tipări "**Not Matched**".
 
 
 ## Exemplu

@@ -1,4 +1,4 @@
-# Teme pentru acasă
+# Teme Pentru Acasă
 
 [slide hideTitle]
 # Problemă: Gramophone
@@ -533,6 +533,8 @@ specialNumbers(8)
 # Problemă: Triples of Latin Letters
 [code-task title="Triples of Latin Letters" taskId="js-fundamentals-1-basic-syntax-Triples-of-latin-letters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
+
+
 ```
 function triplesLatinLetters(number){
   // Scrieți codul dvs. aici
@@ -548,7 +550,7 @@ function adapter(input, code) {
 }
 ```
 [/code-adapter]
-[task-description
+[task-description]
 # Descriere
 Creați un program care primește un **număr** **n** și tipărește toate triplele primelor **n** litere latine mici, ordonate alfabetic.
 
@@ -1331,11 +1333,11 @@ function adapter(input, code) {
 [task-description]
 Creați un program care primește **trei parametri de tip șir:**
 
-- **număr**
+- **Număr**
 
-- **operator**: \+, \-, \*, \\, \%
+- **Operator**: \+, \-, \*, \\, \%
 
-- **un alt număr**
+- **Un alt număr**
 
 Sarcina voastră este să **efectuați o calculare** folosind **operatorul** dat și să **imprimați** rezultatul calculului formatat la **a doua zecimală.**
 

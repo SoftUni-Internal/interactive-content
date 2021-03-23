@@ -39,7 +39,7 @@
       let car = {type:'Tesla', model:'S', color:'white'};
     ```
 
-   - boolean
+    - boolean
    
 ```js
 let bool = true;

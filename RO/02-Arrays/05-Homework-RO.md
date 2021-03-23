@@ -1,5 +1,4 @@
-# Teme pentru acasă
-
+# Teme Pentru Acasă
 [slide hideTitle]
 # Problemă: Sum Even Numbers
 [code-task title="Sum Even Numbers" taskId="js-fundamentals-1-Arrays-Sum-Even-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
