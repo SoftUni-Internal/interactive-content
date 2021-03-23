@@ -64,7 +64,7 @@ console.log(positiveNums);
 [/slide]
 
 [slide hideTitle]
-# Problemă  cu Soluție: Process Odd Numbers
+# Problemă cu Soluție: Process Odd Numbers
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-problem-05-solution-process-odd-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

@@ -175,7 +175,7 @@ numbers([5, 11, 12, 13, 14, 15, 16, 17, 18])
 [code-editor language=javascript]
 ```
 function numbers(n, k){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]

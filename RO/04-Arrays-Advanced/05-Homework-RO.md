@@ -220,7 +220,7 @@ train(['0', '10', 'Add 10', '10', '0', '0', 'Add 10', 'Add 5', 'Add 5'])
 [code-editor language=javascript]
 ```
 function distinctArray(arr){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -326,7 +326,7 @@ distinctArray([0, 8, 5, 12, 0, 15, 5, 4, 8, 4])
 [code-editor language=javascript]
 ```
 function houseParty(arr){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -347,21 +347,22 @@ Scrieți o funcție care ține evidența **oaspeților** care merg la o petrecer
 Vi se va oferi o **matrice de șiruri.**
 
 Fiecare șir va fi unul dintre următoarele:
--	"\{**name**\} **is going!**"
 
--	"\{**name**\} **is not going!**"
+- "\{**name**\} **is going!**"
+
+- "\{**name**\} **is not going!**"
 
 Dacă primiți primul tip de intrare, trebuie să **adăugați** persoana dacă nu se află în listă.
 
 Dacă el / ea se află în lista, tipăriți:
 
-"\{**nume** \} **este deja în listă!**"
+"\{**name**\} **is already in the list!**"
 
 Dacă primiți al doilea tip de intrare, trebuie să **eliminați** persoana dacă se află în listă.
 
 Dacă nu, tipăriți:
 
-"\{**nume** \} **nu este în listă!**"
+"\{**name**\} **is not in the list!**"
 
 La final, tipăriți toți invitații, fiecare pe o linie separată.
 
@@ -471,7 +472,7 @@ T
 [code-editor language=javascript]
 ```
 function sorting(arr){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -494,7 +495,7 @@ Imprimați elementele pe o singură linie, separate printr-un singur spațiu.
 
 # Exemplu
 |**Intrare**|**Ieșire**| 
-| :---:       |    :----:   |   
+| :---:       |    :----:   | 
 |sorting([1, 21, 3, 52, 69, 63, 31, 2, 18, 94])| 94 1 69 2 63 3 52 18 31 21|
 
 [/task-description]
@@ -558,7 +559,7 @@ sorting([2, 9, 3, 13, 18])
 [code-editor language=javascript]
 ```
 function sort(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -709,7 +710,7 @@ kcld
 [code-editor language=javascript]
 ```
 function arrayManipulations(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -749,7 +750,7 @@ Ieșirea este matricea manipulată, pe care ar trebui s-o imprimăm pe consolă 
 
 
 # Exemplu
-|**Intrare**|**eșire** |
+|**Intrare**|**Ieșire** |
 | --- | --- |
 |arrayManipulations(['4 19 2 53 6 43', 'Add 3', 'Remove 2', 'RemoveAt 1', 'Insert 8 3'])|4 53 6 8 43 3|
 
