@@ -40,7 +40,7 @@ Rezultatul trebuie formatat la a doua cifră după punctul zecimal:
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
-| --- | --- | --- |
+| --- | --- |
 | 21 | 254.10 euro | 
 | 5.50 | | 
 | 4.40 | | 
