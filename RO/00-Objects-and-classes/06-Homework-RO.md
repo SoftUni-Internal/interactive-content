@@ -1,4 +1,4 @@
-# Teme pentru Acasa
+# Teme Pentru Acasă
 
 [slide hideTitle]
 # Problemă: Employees

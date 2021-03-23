@@ -1,4 +1,4 @@
-# Teme de acasă
+# Teme Pentru Acasă
 
 [slide hideTitle]
 
@@ -243,7 +243,7 @@ Scrieți o funcție care:
 
 Tipariți rezultatul cu toate numerele de mașină care se află în parcare **sortate în ordine crescătoare după numărul lor de înmatriculare**.
 
-## Exemplul unu
+## Exemplul Unu
 | **Intrare** | **Ieșire**  |
 | --- | --- |
 | picolo(['IN, CA2844AA', 'IN, CA1234TA', 'OUT, CA2844AA', 'IN, CA9999TT', 'IN, CA2866HI', 'OUT, CA1234TA', 'IN, CA2844AA', 'OUT, CA2866HI', 'IN, CA9876HH', 'IN, CA2822UU']) | CA2822UU |
@@ -251,7 +251,7 @@ Tipariți rezultatul cu toate numerele de mașină care se află în parcare **s
 | | CA9876HH |
 | | CA9999TT |
 
-## Exemplul doi
+## Exemplul Doi
 
 | **Intrare** | **Ieșire**  |
 | --- | ---|
@@ -374,7 +374,9 @@ function adapter(input, code) {
 
 # Descriere
 
-Există o petrecere la SoftUni. Sunt mai mulți invitați și sunt **două tipuri de invitați**: VIP și obișnuiți.
+Există o petrecere la SoftUni. 
+
+Sunt mai mulți invitați și sunt **două tipuri de invitați**: VIP și obișnuiți.
 
 Când oaspeții vin la petrecere, verificați dacă el/ea **există** în oricare dintre **cele două liste de rezervare**.
 
@@ -384,7 +386,7 @@ Vi se va da lista cu invitații pe care trebuie să o procesați până la urmă
 
 Toate **numerele VIP încep cu o cifră**.
 
-Când primiți comanda: "**PARTY**"., oaspeții încep să vină.
+Când primiți comanda: "**PARTY**", oaspeții încep să vină.
 
 Scoateți toți invitații care nu au venit la petrecere (**VIP-urile trebuie să fie primii**).
 
@@ -662,7 +664,9 @@ Scrieți o funcție care stochează informații despre companii și angajații a
 
 Veți primi o serie de șiruri care conțin un nume de companie și un ID de angajat.
 
-Adăugați fiecare angajat la compania specificată. Rețineți că o companie nu poate avea doi angajați cu același id.
+Adăugați fiecare angajat la compania specificată. 
+
+Rețineți că o companie nu poate avea doi angajați cu același id.
 
 Când terminați de citit datele, ordonați companiile după nume în ordine crescătoare.
 
@@ -877,7 +881,7 @@ Sarcina dvs. este să colectați resursele și să le tiparitiți pe o nouă lin
 Cantitățile introduse vor fi în interval de "\[**1...2 000 000 000**\]"
 
 
-## Exemplul unu
+## Exemplul Unu
 
 | **Intrare** | **Ieșire**  |
 | --- | --- |
@@ -885,7 +889,7 @@ Cantitățile introduse vor fi în interval de "\[**1...2 000 000 000**\]"
 |                                                   | Silver \-\> 10 |
 |                                                   | Copper \-\> 17 |
 
-## Exemplul doi
+## Exemplul Doi
 
 | **Intrare** | **Ieșire**  |
 | --- | --- |

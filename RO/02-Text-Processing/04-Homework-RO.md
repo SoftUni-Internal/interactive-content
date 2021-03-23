@@ -1,4 +1,4 @@
-# Teme de acasa
+# Teme Pentru Acasă
 
 [slide hideTitle]
 # Problemă: Reveal Words

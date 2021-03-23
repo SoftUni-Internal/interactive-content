@@ -1,4 +1,4 @@
-# Tema de acasă
+# Teme Pentru Acasă
 
 [slide hideTitle]
 

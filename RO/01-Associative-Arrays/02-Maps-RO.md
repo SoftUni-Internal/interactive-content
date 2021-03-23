@@ -181,7 +181,7 @@ for (let values of map.values()) {
 
 [slide hideTitle]
 
-# Problemă cu soluție: Storage
+# Problemă cu Soluție: Storage
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/RO/02.JS-Fundamentals-Associative-Arrays-28-solution-storage-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -222,6 +222,7 @@ Folosiți o methodă `Map()`.
 ## Exemplu
 
 |**Intrare**|**Ieșire**|
+|---|---|
 | storage(['tomatoes 10', 'coffee 5', 'olives 100', 'coffee 40']) | tomatoes \-\> 10 |
 |                                                          | coffee \-\> 45   |
 |                                                          | olives \-\> 100  |
@@ -369,9 +370,9 @@ Rezultatul vine ca o **matrice de șiruri**.
 
 |**Intrare**|**Ieșire**|
 | --- | --- |
-| grades(['Lilly 4 6 6 5', 'Tim 5 6', 'Tammy 2 4 3', 'Tim 6 6']) | Tammy\: 2\,4\,3    |
-|                                                          | Lilly\: 4\,6\,6\,5 |
-|                                                          | Tim\: 5\,6\,6\,6   |
+| grades(['Lilly 4 6 6 5', 'Tim 5 6', 'Tammy 2 4 3', 'Tim 6 6']) | Tammy\: 2\, 4\, 3    |
+|                                                          | Lilly\: 4\, 6\, 6\, 5 |
+|                                                          | Tim\: 5\, 6\, 6\, 6   |
 
 [/task-description]
 [tests]
