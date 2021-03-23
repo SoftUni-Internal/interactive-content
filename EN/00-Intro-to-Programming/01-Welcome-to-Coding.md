@@ -32,7 +32,9 @@ System.out.println("I am coding");
 
 Computer programs contain **sequences of commands** applicable in the context of a certain **programming language**. Some popular examples of programming languages are: C#, Java, JavaScript, Python, C++, PHP, C, Ruby, Swift, Go to name a few.
 
-Here is a simple program which uses the Java syntax:
+Here is a simple program which uses the Java syntax.
+It calculates the area of a square and prints out the result:
+
 ```java live no-template
 public class Main {
   public static void main(String[] args) {
@@ -45,7 +47,7 @@ public class Main {
 
 The above program defines a **class** `Main`, which holds a **method** `main()`. Iside it, there is a sequence of **3 commands**:
 - The first command declares and initiates a **variable**: `int size = 5;`
-- The second one **calculates and prints out** an **expression**: `System.out.println("Size = " + size);`
+- The second one **prints out** an **expression**: `System.out.println("Size = " + size);`
 - The thrd one **calculates and prints out** another **expression**: `System.out.println("Area = " + size * size);`
 
 The result (output) from the above program is as follows:
