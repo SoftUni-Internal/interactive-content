@@ -1,345 +1,278 @@
 [slide hideTitle]
-# Problem: Re-Volt
+# Legendary Farming
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/09-Exam-Preparation/EN/interactive-java-advanced-exam-preparation-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/09-Exam-Preparation/EN/interactive-java-advanced-exam-preparation-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Re-Volt" taskId="Java-Advanced-Exam-Preparation-Re-Volt" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
+[code-task title="Legendary Farming" taskId="Java-Advanced-Exam-Preparation-Legendary-Farming" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java-code]
 ```
 import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Vi se va da un număr întreg N pentru dimensiunea matricei pătrate și apoi un număr întreg pentru numărul de comenzi.
 
-Pe următoarele **n** linii, veți primi rândurile matricei.
+Sarcina voastră este să obțineți un item legendar, ceea ce necesită să colectați materiale.
 
-Jucătorul începe într-o poziție aleatorie (jucătorul este marcat cu **"f"**) și **toate sloturile goale** vor fi umplute cu **"+"** (plus).
+**Variantele posibile**  sunt:
 
-Scopul este de a atinge punctul de sosire care va fi marcat cu **”F”**.
+- **Shadowmourne** - necesită 250 **Shards**
 
-Pe teren pot exista și bonusuri și capcane.
+- **Valanyr** - necesită 250 **Fragments**
 
-Bonusurile sunt marcate cu **”B”**, iar capcanele sunt marcate cu **”T”**.
+- **Dragonwrath** - necesită 250 **Motes**
 
-La fiecare tura vi se vor da comenzi pentru **mișcarea jucătorului**.
+**Shards, Fragments și Motes** sunt **materiale-cheie**, orice alt material este gunoi.
 
-Dacă jucătorul **iese** din matrice, el intră din **cealaltă parte**.
+Țineți socoteala materialelor-cheie,  **primul** care **ajunge la 250**  câștigă cursa. 
 
-De exemplu, dacă jucătorul este la 0, 0 și următoarea comandă este lăsată, el merge la ultimul loc din primul rând.
+În această etapă, **imprimați** **articolele legenedare corespunzătoare** obținute. 
 
-Dacă jucătorul pășește un **bonus**, el ar trebui să avanseze un alt pas înainte în direcția în care merge.
+Apoi, **imprimați** celelalte ** shards, fragments, motes**, **ordonate după cantitate în ordine descendentă**, apoi după **nume în ordine ascendentă**,  **fiecare** pe o **nouă linie**. 
 
-Dacă jucătorul calcă pe o **capcană**, el ar trebui să facă un pas înapoi.
-
-Când jucătorul atinge **punctul de finalizare** sau **numărul de comenzi este atins**, jocul se termină.
-
-## Intrare
-
-- Pe prima linie, vi se dă numărul întreg N - dimensiunea matricei pătrate.
-- În a doua vi se dă numărul de comenzi.
-- Următoarele N linii dețin valorile pentru fiecare rând.
-- Pe fiecare dintre următoarele linii, veți primi comenzi pentru direcțiile de mișcare.
-
-## Ieșire
-
-- Dacă jucătorul atinge nota de finalizare, tipăriți:
-  - `Player won!`
-- Dacă jucătorul atinge numărul de comenzi și nu a atins punctul de imprimare:
-  - `Player lost!`
-
-- La final imprimați matricea.
-
-## Constrângeri
-
-- Dimensiunea matricei va fi între [2 ... 20].
-- Jucătorii vor fi întotdeauna indicați cu **"f"**.
-- Dacă jucătorul pășește marca de sosire **în același timp** cu ultima sa comandă, el **câștigă** jocul.
-- Comenzile vor fi în format de **sus**, **jos**, **stânga** sau **dreapta**.
-- Nu va exista un caz în care să ocoliți finalizarea în timp ce vă aflați într-o capcană sau un bonus.
-- O capcană nu te va plasa niciodată într-un bonus sau într-o altă capcană, iar un bonus nu te va plasa niciodată într-o capcană sau într-un alt bonus.
-
-## Examples
-| **Input** | **Output** | **Comments** |
-| --- | --- | --- |
-| 5 | Player won! | Prima comandă este în jos, astfel încât f se deplasează în jos  |
-| 5 | +++++ | La rândul 1, jucătorul calcă un bonus și face un pas suplimentar. |
-| +++++ | +++++ | La rândul 2, jucătorul pășește pe o capcană și face un pas înapoi. După fiecare întoarcere a câmpului este: |
-| +f+++ | +B+++ |   1      2      3    |
-| +B+++ | \++T\++ | +++++  +++++  +++++ |
-| \++T\++ | +f+++ | +++++  +++++  +++++ |
-| +F+++ |  | +B+++  +B+++  +B+++ |
-| down |  | +fT++  +fT++  \++T\++ |
-| right |  | +F+++  +F+++  +f+++ |
-| down |  | La rândul, 3 f ajunge la punctul 'F' și câștigă jocul. |
+În final, **imprimați** dacă ați colectat **junk items**, in ordine **alfabetică**.
 
 
-| **Input** | **Output** | **Comments** |
-| --- | --- | --- |
-| 4 | Player lost! | Prima comandă este sus, astfel încât f se deplasează în sus și noua poziție a jucătorului este (0,1). |
-| 3 | ++++ | Următoarea comandă este din nou activată, astfel încât jucătorul iese din matrice și revine din cealaltă parte la (3,1). |
-| ++++ | +++ B | Apoi comanda este lăsată, deci poziția finală este (3,0), care nu este marca finală, astfel încât jucătorul a pierdut. |
-| +f+B | ++T+ |  |
-| ++T+ | f++F |  |
-| +++F |  |  |
-| up |  |  |
-| up |  |  |
-| left |  |  |
+### Intrare
+Fiecare linie de input este in format "\{**quantity**\} \{**material**\} \{**quantity**\} \{**material**\} … \{**quantity**\} \{**material**\}"
+
+### Ieșire
+
+- Pe **prima linie**, imprimați articolele obținute  în format "\{**Legendary item**\} **obtained!**"
+
+- Pe următoarele **trei linii**, imprimați **remaining key materials** în ordine **descendentă**, după **cantitate**
+
+    - dacă **două matreiale-cheie** au **aceeași cantitate**, imprimați-le in ordine **alfabetică**
+
+- Pe **linnile finale**, imprimați **articolele junck** în ordine
+
+    - toate materialele sunt imprimate in format: "\{**material**\}: \{**quantity**\}"
+
+    - toate datele de ieșire trebuie să fie **cu minuscule**, cu excepția  **primei** litere ale legendary
+
+
+### Exemple
+| **Intrare* | **Ieșire** |
+| --- | --- |
+| 3 Motes 5 stones 5 Shards | Valanyr obtained! | 
+| 6 leathers 255 fragments 7 Shards | fragments: 5 |
+| | shards: 5 |
+| | motes: 3 | 
+| | leathers: 6 |
+| | stones: 5 |
+
+### Exemple
+| **Intrare* | **Ieșire** |
+| --- | --- |
+| 123 silver 6 shards 8 shards 5 motes | Dragonwrath obtained! | 
+| 9 fangs 75 motes 103 MOTES 8 Shards | shards: 22 |
+| 86 Motes 7 stones 19 silver | motes: 19 |
+| | fragments: 0 | 
+| | fangs: 9 |
+| | silver: 123 |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-5
-5
-+++++
-+f+++
-+B+++
-\++T\++
-+F+++
-down
-right
-down
+3 Motes 5 stones 5 Shards
+6 leathers 255 fragments 7 Shards
 [/input]
 [output]
-Player won!
-+++++
-+++++
-+B+++
-\++T\++
-+f+++
+Valanyr obtained!
+fragments: 5
+shards: 5
+motes: 3
+leathers: 6
+stones: 5
 [/output]
 [/test]
 [test open]
 [input]
-4
-3
-++++
-+f+B
-++T+
-+++F
-up
-up
-left
+123 silver 6 shards 8 shards 5 motes
+9 fangs 75 motes 103 MOTES 8 Shards
+86 Motes 7 stones 19 silver
 [/input]
 [output]
-Player lost!
-++++
-+++B
-\++T+
-f\++F
-[/output]
-[/test]
-[test open]
-[input]
-5
-5
-+++++
-Bf+++
-+++++
-+++++
-++++F
-left
-up
-up
-[/input]
-[output]
-Player won!
-+++++
-B++++
-+++++
-+++++
-++++f
+Dragonwrath obtained!
+shards: 22
+motes: 19
+fragments: 0
+fangs: 9
+silver: 123
 [/output]
 [/test]
 [test]
 [input]
-3
-1
-+++
-+f+
-++F
-up
+5 shards 5 motes 255 fragments
 [/input]
 [output]
-Player lost!
-+f+
-+++
-++F
+Valanyr obtained!
+fragments: 5
+motes: 5
+shards: 5
 [/output]
 [/test]
 [test]
 [input]
-3
-1
-+++
-+f+
-++F
-down
+16 leathers 22 leather 82 leathers 17 LEATHER 88 LEATHERS
+28 shards 78 motes 66 motes 215 shards 7 shards 3 fragments
 [/input]
 [output]
-Player lost!
-+++
-+++
-+fF
+Shadowmourne obtained!
+motes: 144
+fragments: 0
+shards: 0
+leather: 39
+leathers: 186
 [/output]
 [/test]
 [test]
 [input]
-3
-1
-+++
-+f+
-++F
-left
+8 iron
+3 gold
+7 silver 15 shards
+15 onions 236 shards
+8 freshwater
+9 souls
 [/input]
 [output]
-Player lost!
-+++
-f++
-++F
+Shadowmourne obtained!
+shards: 1
+fragments: 0
+motes: 0
+gold: 3
+iron: 8
+onions: 15
+silver: 7
 [/output]
 [/test]
 [test]
 [input]
-3
-1
-+++
-+f+
-++F
-right
+249 shards 249 fragments 249 motes 8 linen 5 silver 123 silk 22 embersilk
+13 alpha-gems 0 shards 0 fragments 1 motes
 [/input]
 [output]
-Player lost!
-+++
-++f
-++F
+Dragonwrath obtained!
+fragments: 249
+shards: 249
+motes: 0
+alpha-gems: 13
+embersilk: 22
+linen: 8
+silk: 123
+silver: 5
 [/output]
 [/test]
 [test]
 [input]
-3
-2
-+++
-+f+
-++F
-up
-up
+98 spirit-shards 17 SPIRiT-SHARDS 123 SPIRIT-SHARDS 12 sPI_ritShards 92 gems 1 gem
+6 fragments 9 Fragments 129 Fragments 1 Shards 0 Shards 123 Shards 9 Motes
+123 Motes 123 Fragments 1098 MotES
 [/input]
 [output]
-Player lost!
-+++
-+++
-+fF
+Valanyr obtained!
+motes: 132
+shards: 124
+fragments: 17
+gem: 1
+gems: 92
+spi_ritshards: 12
+spirit-shards: 238
 [/output]
 [/test]
 [test]
 [input]
-3
-2
-+++
-+f+
-++F
-down
-down
+0 shards
+1 shards
+2 shards
+3 shards
+4 shards
+0 SHARDS 126 SHARDS
+122 SHARDS
+1 motes
+1 fragments
 [/input]
 [output]
-Player lost!
-+f+
-+++
-++F
+Shadowmourne obtained!
+shards: 8
+fragments: 0
+motes: 0
 [/output]
 [/test]
 [test]
 [input]
-3
-2
-+++
-+f+
-++F
-right
-right
+77 heavy-leather 123 light-leather
+789 fragments 8889 fragments 88123 motes
 [/input]
 [output]
-Player lost!
-+++
-f++
-++F
+Valanyr obtained!
+fragments: 539
+motes: 0
+shards: 0
+heavy-leather: 77
+light-leather: 123
 [/output]
 [/test]
 [test]
 [input]
-3
-2
-+++
-+f+
-++F
-left
-left
+988 HEAVY-STONES
+1230812 HEAVY-STONes
+120398 Fragments
 [/input]
 [output]
-Player lost!
-+++
-++f
-++F
+Valanyr obtained!
+fragments: 120148
+motes: 0
+shards: 0
+heavy-stones: 1231800
 [/output]
 [/test]
 [test]
 [input]
-3
-2
-+++
-Bf+
-++F
-left
-down
+123 leathers
+12 leather
+12 leathe
+12 motes
+12 shards
+262 fragments
 [/input]
 [output]
-Player won!
-+++
-B++
-++f
+Valanyr obtained!
+fragments: 12
+motes: 12
+shards: 12
+leathe: 12
+leather: 12
+leathers: 123
 [/output]
 [/test]
 [test]
 [input]
-3
-2
-+++
-Tf+
-+F+
-left
-down
+71 linen 71 linen 71 linen 71 linen 71 linen 71 linen 71 linen 71 linen 71 linen 71 linen 71 linen 71 linen 71 linen 71 linen
+71 linen 71 linen 71 linen 71 linen 71 linen 71 linen
+15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes
+15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes
+15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes
+15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes
+15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes
+15 shards 15 fragments 15 motes
+15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes
+15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes 15 shards 15 fragments 15 motes
 [/input]
 [output]
-Player won!
-+++
-T++
-+f+
-[/output]
-[/test]
-[test]
-[input]
-3
-2
-+++
-BfF
-+++
-left
-[/input]
-[output]
-Player won!
-+++
-B+f
-+++
+Shadowmourne obtained!
+fragments: 240
+motes: 240
+shards: 5
+linen: 1420
 [/output]
 [/test]
 [/tests]
