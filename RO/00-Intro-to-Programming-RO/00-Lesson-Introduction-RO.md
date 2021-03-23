@@ -18,7 +18,7 @@
 
 **3. Medii de dezvoltare (IDEs) pentru Java**
 
-- Cum să configurăm mediul nostru integrat de dezvotlate IDE pentru lucru
+- Cum să configurăm mediul nostru integrat de dezvoltare IDE pentru lucru
 
 **4. Crearea și rularea aplicațiilor consolei**
 

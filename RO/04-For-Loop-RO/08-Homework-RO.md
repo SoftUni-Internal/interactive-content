@@ -12,18 +12,21 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Scrieți codul dvs. aici
+
+      // Write your code here
+
     }
 }
 ```
+
 [/code-editor]
 [task-description]
 ## Descriere
 Scrieți un program care:
 
-* Citește **n** - număr care reprezintă cantitatea de numere de intrare
+* Citește **n** - totalul de numere întregi care vor fi procesate de program
 * Citește **n numere întregi**
-* Găsește și imprimă **cel mai mare număr**
+* Găsește și imprimă **cel mai mare număr întreg**
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -82,7 +85,9 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Scrieți codul dvs. aici
+
+      // Write your code here
+
     }
 }
 ```
@@ -91,8 +96,8 @@ public class Program {
 ## Descriere
 Scrieți un program care:
 
-* Citește **n** reprezentând numărul de numere de citit în continuare
-* Găsește numerele **max** și **min**
+* Citește **n**, reprezentând numărul de numere întregi de citit în continuare
+* Găsește numerele întregi **max** și **min**
 * Le imprimă pe consolă în următorul format:
    - "**Max number:** \{**max number**\}"
    - "**Min number:** \{**min number**\}"
@@ -172,7 +177,9 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Scrieți codul dvs. aici
+
+      // Write your code here
+
     }
 }
 ```
@@ -182,7 +189,7 @@ public class Program {
 Scrieți un program care:
 
 * Citește **p - puterea** și **n - numărul**
-* Tipărește rezultatul lui n alimentat de p
+* Tipărește rezultatul lui n la puterea p
 * Nu utilizați `Math.pow()`
 
 ## Exemplu
@@ -225,7 +232,9 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Scrieți codul dvs. aici
+
+      // Write your code here
+
     }
 }
 ```
@@ -234,10 +243,10 @@ public class Program {
 ## Descriere
 Scrieți un program care:
 
-* Citește numărul **n** și **n perechi** de numere
+* Citește numărul **n** și **n perechi** de numere (faceți suma numerelor din fiecare pereche și apoi comparați sumele perechilor între ele)
 * Tipărește "**Yes, value=**\{**sum**\}", dacă **suma tuturor** perechilor este **aceeași**
 * **În caz contrar**, imprimă "**No, maxdiff=**\{**diff**\}"
-* diff este **diferența maximă** în suma dintre două perechi
+* diff este **diferența maximă** dintre sumele a două perechi
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -379,7 +388,9 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Scrieți codul dvs. aici
+
+      // Write your code here
+
     }
 }
 ```
@@ -388,7 +399,7 @@ public class Program {
 ## Descriere
 Scrieți un program care:
 
-* Citește **n** - număr care reprezintă cantitatea de numere de intrare
+* Citește **n** - număr care reprezintă totalul de numere care urmează să fie introduse
 * Citește **n numere întregi**
     * pentru fiecare linie **pară**  **se adaugă** numărul la rezultat
     * pentru fiecare linie  **impară**  **se scade** numărul din rezultat
@@ -450,7 +461,9 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Scrieți codul dvs. aici
+
+      // Write your code here
+
     }
 }
 ```
@@ -459,8 +472,8 @@ public class Program {
 ## Descriere
 Scrieți un program care:
 
-* Citește **n** și **n numere**
-* Găsește în **procente** câte dintre acetea pot fi **împărțite fără rest** la **2**, **3** și **4**
+* Citește **n** și apoi **n numere**
+* Găsește în **procente** câte dintre acestea pot fi **împărțite fără rest** la **2**, **3** și **4**
 * Imprimă procentele p1, p2 and p3, **formatate** până la a două zecimală
 
 ## Exemplu
@@ -513,7 +526,9 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Scrieți codul dvs. aici
+
+      // Write your code here
+
     }
 }
 ```
@@ -522,7 +537,7 @@ public class Program {
 ## Descriere
 Scrieți un program care:
 
-* Citește **n**- numărul de caractere:
+* Citește **n**- numărul de caractere care vor urma în intrare
 * Dacă caracterul este o **vocală** își adaugă valoarea rezultatului
 
 |caracter|a|e|i|o|u|
@@ -612,18 +627,20 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Scrieți codul dvs. aici
+
+      // Write your code here
+
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care:
-
-* Citește **locuri** rollercoaster, **vârsta minimă**, **numărul de persoane** la coadă și **vârsta** pentru fiecare persoană
-* Dacă toate locurile sunt luate, tipăriți - **"The rollercoaster departures"**
-* Într-un alt caz, tipărește **"Waiting..."**
+Scrieți un program care determină dacă sunt destui pasageri ca să ocupe toate locurile într-un rollercoaster.
+ * Citește **locurile disponibile**, **vârsta minimă**, **numărul de persoane** de la coadă 
+Vârsta fiecărui pasager va fi specificată ca un număr separat.
+* Dacă toate locurile sunt luate, tipăriți: **"The rollercoaster departures"**
+* Într-un alt caz, tipăriți **"Waiting..."**
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -725,7 +742,9 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Scrieți codul dvs. aici
+
+      // Write your code here
+
     }
 }
 ```
@@ -734,9 +753,9 @@ public class Program {
 ## Descriere
 Scrieți un program care:
 
-* Citește **n**
-* Tipărește **multiplii n** în formatul "\{n\} x \{i\} = \{result\}"
-* Unde sunt `i` sunt numerele de la **1 până la 10**(**inclusiv**)
+* Citește un număr **n**
+* Tipărește acel număr înmulțit cu `i` "\{n\} x \{i\} = \{result\}"
+* Unde `i` este reprezentat de numerele de la **1 până la 10**(**inclusiv**)
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -808,18 +827,20 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Josh are 18 ani și primește o moștenire care constă din suma de bani X și mașina timpului.
+Josh are 18 ani și primește o moștenire care constă în suma de bani X (citită de la consolă) și o mașină a timpului.
 
 A decis să se întoarcă până în 1800, dar nu știa dacă banii ar fi suficienți pentru a trăi fără să muncească.
 
-Scrieți un program care să calculeze dacă Josh va avea suficienți bani pentru a nu fi nevoit să lucreze până la un anumit an.
-- Presupunând că pentru fiecare an (1800, 1802 etc.) se vor cheltui 12 000 de dolari
-- Pentru fiecare an impar (1801, 1803 etc.) se vor cheltui 12 000 + 50 \* \[vârsta de abni într-un anumit an\]
+
+Scrieți un program care să calculeze dacă Josh va avea suficienți bani pentru a nu fi nevoit să lucreze, începând de la 1800 până la un anumit an, specificat de la consolă.
+- În fiecare an par (1800, 1802 etc.) el va cheltui 12 000 de dolari.
+- În fiecare an impar (1801, 1803 etc.) el va cheltui 12 000 + 50 \* \[vârsta sa în acel an\].
 
 ## Intrare
 Intrarea este citită de pe consolă și conține exact 2 linii:
-- Banii vechi - număr real în intervalul \[1.00 ... 1 000 000.00\]
-- An de trăit (inclusiv) - un număr întreg în intervalul \[1801 ... 1900\]
+- Banii moșteniți - număr real în intervalul \[1,00 ... 1,000,000,00\]
+- An până la  care trebuie calculate costurile - un număr întreg în intervalul \[1801 ... 1900\]
+
 
 
 ## Ieșire
@@ -827,7 +848,7 @@ Imprimați pe consolă o singură linie. Suma trebuie formatată cu două cifre 
 - Dacă banii sunt suficienți:
      - "**Yes! He will live a carefree life and will have** \{**N**\} **dollars left.**" - unde N sunt banii care vor rămâne
 - Dacă banii NU sunt suficienți:
-     - "**He will need** \{**М**\} **dollars to survive.**" - unde M sunt bani de care are nevoie
+     - "**He will need** \{**М**\} **dollars to survive.**" - unde M sunt banii de care are nevoie
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -837,8 +858,8 @@ Imprimați pe consolă o singură linie. Suma trebuie formatată cu două cifre 
 
 [hints]
 [hint]
-Stabiliți câți bani va cheltui Josh în fiecare an și apoi scădeți totalul de bani necesari din banii săi vechi.
-Apoi, tipăriți rezultatul corect
+Stabiliți câți bani va cheltui Josh în fiecare an și apoi scădeți totalul de bani necesari din banii săi moșteniți.
+Apoi, tipăriți rezultatul corect.
 [/hint]
 [/hints]
 
@@ -961,9 +982,11 @@ Scrieți un program pentru a calcula costul mediu pe lună pentru o familie pe o
 Pentru fiecare lună, costurile sunt următoarele:
 
 - Pentru electricitate - în fiecare lună factura este diferită și va fi citită de pe consolă
-- Pentru apă - 20$
-- Pentru internet - 15$
-- Pentru altele - suma facturilor pentru electricitate, apă și Internet și adăugați 20%
+
+- Pentru apă - 20 $
+- Pentru internet - 15 $
+- Pentru altele - însumați facturile pentru electricitate, apă și internet și adăugați 20%
+
 
 Pentru fiecare factură, trebuie să calculați suma totală plătită pentru toate lunile.
 
@@ -971,8 +994,10 @@ Pentru fiecare factură, trebuie să calculați suma totală plătită pentru to
 
 Intrarea este citită de pe consolă:
 
-- Lunile pentru care se caută costul mediu - număr întreg în intervalul \[1 ... 100 \]
-- Pentru fiecare lună - factura pentru electricitate - un număr real în intervalul \[1.00 ... 1000.00\]
+
+- Numărul de luni - număr întreg în intervalul \[1 ... 100\]
+- Pentru fiecare lună - factura pentru electricitate - un număr real în intervalul \[1.00... 1000.00\]
+
 
 # Ieșire
 Imprimați pe consolă 5 rânduri:
@@ -982,7 +1007,7 @@ Imprimați pe consolă 5 rânduri:
 - "**Other:** \{**total cost for the entire period**\} **$**" 
 - "**Average:** \{**total cost for the entire period**\} **$**"
 
-Toate facturile ar trebui să fie formatate la a doua cifră după punctul zecimal.
+Toate facturile trebuie să fie formatate la a doua cifră după punctul zecimal.
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -1000,7 +1025,7 @@ Pentru 5 luni:
 - Electricitate -> 68.63 \+ 89.25 \+ 132.53 \+ 93.53 \+ 63.22 = 447.16$
 - Apă -> 5 luni \* 20$ = 100$
 - Internet -> 5 luni \* 15$ = 75$
-- Alții:
+- Altele:
     - 68.63+20+15) + 20% = 124.356  
     - (89.25+20+15) + 20% = 149.1
     - (132.53+20+15) + 20% = 201.036
@@ -1230,23 +1255,22 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Pentru o perioadă de timp, pacienții ajung în fiecare zi la spital pentru examinare.
 
-ASpitalul are inițial 7 medici.
+Un spital are 7 medici.
 
 Fiecare medic poate examina doar un pacient pe zi, dar uneori există un deficit de medici, astfel încât alți pacienți sunt trimiși la alte spitale.
 
-La fiecare trei zile, spitalul face calcule și dacă numărul pacienților neevaluați este mai mare decât numărul de revizuit, este numit încă un medic.
+La fiecare trei zile, spitalul face calcule și dacă numărul pacienților neevaluați este mai mare decât numărul celor acceptați, este numit încă un medic.
 
-Deoarece numirea medicului are loc înainte de administrarea pacienților pentru o zi.
+Numirea medicului are loc înainte de preluarea pacienților pentru o zi.
 
 Scrieți un program care să calculeze numărul de pacienți examinați și neexaminați pentru perioada dată.
 
 ## Intrare
 Intrarea este citită de pe consolă și conține:
 
-- Perioada pentru care trebuie să efectuați calcule - număr întreg în intervalul \[1... 1000\] 
--În rândurile următoare (egal cu numărul de zile) - numărul de pacienți care sosesc pentru examinare pentru ziua curentă - un număr întreg în intervalul \[0... 10 000\]
+- Perioada pentru care trebuie să efectuăm calcule - număr întreg în intervalul \[1... 1000\] 
+- Pe rândurile următoare (egal cu numărul de zile) - numărul de pacienți care sosesc pentru examinare pentru ziua curentă - un număr întreg în intervalul \[0... 10 000\]
 
 Imprimați pe consolă 2 linii:
 - "**Treated patients:** \{**Number of received patients**\}." 
@@ -1405,8 +1429,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-
-Scrieți un program care tipărește numerele din intervalul \[1...1000\], care se termină cu 7.
+Scrieți un program care tipărește numerele din intervalul \[1...1000\] care se termină cu 7.
 
 Imprimați numerele pe o singură linie, separate printr-un singur spațiu.
 
@@ -1454,16 +1477,16 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care citește n - numărul din numerele introduse de utilizator și calculează suma numărului minim și maxim de poziții impar si par (numărând de la 1). 
+Scrieți un program care citește un număr întreg care reprezintă totalul de numere introduse de utilizator și calculează care sunt numerele minime și maxime de pe poziții impare și pare (numărând de la 1). 
 
 Dacă nu există element minim / maxim tipăriți "**No**".
 
 ## Intrare
-- Pe prima linie de intrare citiți numărul din numerele - N - întreg \[0 ... 100\]
-- La fiecare rând următor, citiți un număr - număr cu floating-point \[-100...100\]
+- Pe prima linie de intrare citiți totalul de numerele care trebuie citite - N - număr întreg \[0 ... 100\]
+- Pe fiecare rând următor - număr în virgulă mobilă \[-100...100\]
 
 ## Ieșire
-Rezultatul trebuie formatat în următoarea formă:
+Ieșirea trebuie să aibă următoarea  structură:
 
 - "OddSum=" + \{sum of the numbers on odd positions\},
 - "OddMin=" + \{minimum value of the numbers of odd positions\} / \{"No"\},
@@ -1701,18 +1724,22 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program pentru a calcula statisticile notelor examenului.
+Scrieți un program pentru a calcula statisticile notelor unui examen.
 
-La început, programul primește numărul de elevi care au participat la examen și nota obținută de fiecare elev.
+Programul primește numărul de elevi care au participat la examen și nota obținută de fiecare elev.
 
-În cele din urmă, programul ar trebui să imprime procentul de elevi cu nota cuprinsă între 2.00 și 2.99, între 3.00 și 3.99, 4.00 și 4.99 și între 5.00 sau mai mult.
 
-De asemenea, nota medie a examenului.
+Programul trebuie să imprime procentul de elevi cu nota cuprinsă între 
+ - 2,00 și 2,99 
+ - 3,00 și 3,99
+ - 4,00 și 4,99
+ - 5,00 sau mai mult.
+ - nota medie a tuturor participanților la examen
+
 
 ## Intrare
-Citiți de pe consolă o serie de numere, fiecare pe o linie separată:
 - Prima linie - numărul de elevi care au participat la examen - un număr întreg în intervalul \[1 ... 1000\]
-- Pentru fiecare elev pe o linie separată - nota examenului - număr real în intervalul \[2.00 ... 6.00\]
+- Pentru fiecare elev, pe o linie separată - nota examenului - număr real în intervalul \[2.00 ... 6.00\]
 
 ## Ieșire
 Imprimați pe consolă 5 linii care conțin următoarele informații:
@@ -1741,17 +1768,14 @@ Toate numerele trebuie formatate la a doua zecimală.
 
 [hints]
 [hint]
-Obțineți cantitatea totală de studenți, apoi folosiți o buclă for, determinați câți elevi au note între:
-5 și mai mult
- 
-4 și 4.99
-
-3 și 3.99
-
-Mai puțin decât 3
+Obțineți numărul total de elevi, apoi folosiți o buclă for, determinați câți elevi au note între:
+ - 5 și mai mult
+ - 4 și 4.99
+ - 3 și 3.99
+ - mai mică decât 3
 [/hint]
 [hint]
-Finally, calculate the average grade and print the correct output.
+La final, calculați nota medie și tipăriși ieșirea corectă.
 [/hint]
 [/hints]
 
