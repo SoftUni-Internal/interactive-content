@@ -1,6 +1,6 @@
 // sectionId: "Javascript::Programming-Basics::Expressions-And-Statements::Homework"
 
-# Teme pentru acasă
+# Teme Pentru Acasă
 
 [slide hideTitle]
 # Problemă: Calculate a square area
@@ -33,6 +33,7 @@ Veți primi valoarea laterală ca argument al funcției
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | calculateArea(5) | 25 |
+| calculateArea(12) | 144 |
 
 [hints]
 [hint]
@@ -43,7 +44,7 @@ Formula pentru calcularea ariei unui pătrat este - a * a.
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 calculateArea(12)
 [/input]

@@ -1,6 +1,6 @@
 // sectionId: "Javascript::Programming-Basics::While-Loop::Homework"
 
-# Teme pentru acasă
+# Teme Pentru Acasă
 
 [slide hideTitle]
 # Problemă și Soluție: Sum Digits

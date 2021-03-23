@@ -1,6 +1,6 @@
 // sectionId: "Javascript::Programming-Basics::Introduction-to-Programming::Homework"
 
-# Teme pentru acasă
+# Teme Pentru Acasă
 
 [slide hideTitle]
 

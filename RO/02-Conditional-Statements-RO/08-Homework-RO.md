@@ -1,6 +1,6 @@
 // sectionId: "Javascript::Programming-Basics::Conditional-Statements::Homework"
 
-# Teme pentru acasă
+# Teme Pentru Acasă
 [slide hideTitle]
 
 # Problemă cu soluție: Guess the Password
@@ -265,9 +265,9 @@ Veți primi un număr întreg care reprezintă **numărul** inițial de puncte.
 
 Creați un program care calculează 
 
-- punctele bonus **primite** din număr 
+- Punctele bonus **primite** din număr 
 
-- care este valoarea inițială **a numărului total de puncte** 
+- Care este valoarea inițială **a numărului total de puncte** 
 
 Dacă numărul este sub valoarea **100 inclusiv**, atunci punctele bonus sunt **5**.
 Dacă numărul este **mai mare decât 100**, punctele bonus sunt **20 la sută din număr**.
@@ -277,7 +277,7 @@ Punctele adiționale din bonus, sunt obținute separat din cele anterioare:
 
 - Pentru un număr impar, adăugați 1 punct
 
--Pentru un număr care se termină cu 5, adăugați 2 puncte 
+- Pentru un număr care se termină cu 5, adăugați 2 puncte 
 
 # Exemplu
 

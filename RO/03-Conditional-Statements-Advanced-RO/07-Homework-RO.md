@@ -1,6 +1,6 @@
 // sectionId: "Javascript::Programming-Basics::Conditional-Statements-Advanced::Homework"
 
-# Teme pentru acasă
+# Teme Pentru Acasă
 [slide hideTitle]
 # Problemă: Fruit or Vegetable
 [code-task title="Fruit or Vegetable" taskId="pb-js-Conditions-Advanced-Fruit-or-Vegetable" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]

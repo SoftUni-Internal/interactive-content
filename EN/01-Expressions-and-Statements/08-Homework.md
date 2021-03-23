@@ -43,7 +43,7 @@ The formula for calculating the area of a square is - a * a.
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 calculateArea(12)
 [/input]
