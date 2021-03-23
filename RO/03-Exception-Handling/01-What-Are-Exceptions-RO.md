@@ -55,6 +55,8 @@ Mai jos de **Throwable** sunt:
 
 [slide hideTitle]
 
+# Exceptions
+
 **Excepțiile** sunt două tipuri:
 
 - **Checked** - o excepție care este verificată (notificată) de către compilator la momentul compilării
