@@ -3,19 +3,19 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-3-7-variables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In programming, each **variable** stores a certain value of a particular data type. 
+In programming, each **variable** stores a certain value. Each value has a particular data type. 
 
-Data types can be: number, letter, text (string), date, color, image, list and others. 
+Data types varry according to the information they hold: number, letter, text (string), date, color, image, list and others. 
 
 Here are some examples of data types:
-* Integer: 1, 2, 3, 4, -5, 20, …
-* Float: 0.5, 3.14, -1.5, …
-* Character (symbol): 'a', 'b', 'c', '@', 'X', …
-* Text (string): "Hello", "Hi", "How are you?", …
-* Day of week: Monday, Tuesday, …, Sunday
+* Integer - used to store whole numbers: 1, 2, 3, 4, -5, 20, …
+* Float - used to store decimal numbers: 0.5, 3.14, -1.5, …
+* Character - holds letters and other charachters: 'a', 'b', 'c', '@', 'X', …
+* String - used to store text: "Hello", "Hi", "How are you?", …
+* There could be variables storing days (DayOfWeek): Monday, Tuesday, …, Sunday
 * Date and time: 14-June-1980 6:30:00, 25-Dec-2017 23:17:22
 
-**Variables** can ve viewed as containers for data or named areas in computer memory. The data that they store can be read and changed at any time. 
+**Variables** can ve viewed as containers for data (or named areas in computer memory). The data that they store can be read and changed at any time. 
 
 **Variables** provide means for:
   * **Storing** data
@@ -24,13 +24,13 @@ Here are some examples of data types:
   
   
   Each variable has:
-  * Name (identifier)
-  * Type (of the information preserved)
-  * Value (stored information)
+  * A Name (identifier)
+  * A Data Type (of the information preserved)
+  * A Value (stored information)
 
 
 
-Here is how we would declare a variable and assign it a value at the same time:
+We can declare a variable and assign a value to it simultaneously:
 ```java
 String name = "Bob";
 boolean employed = true;
@@ -40,8 +40,8 @@ If you think of variables as boxes that hold information, this is how they would
 [image assetsSrc="expressions-and-statements-boxes.png" /]
 
 Variables can be stored in the program's:
-  * Operational memory - in the execution **stack**
-  * Dynamic memory - in the **heap**
+  * Operational memory - the execution **stack**
+  * Dynamic memory - also refered to as **heap**
 [/slide]
 
 [slide hideTitle]
