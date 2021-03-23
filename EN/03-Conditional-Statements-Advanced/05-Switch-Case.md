@@ -135,7 +135,7 @@ We can solve the task with "**switch-case**" conditions with multiple labels in 
 let animal = 'snake';
 switch (animal) {
     case 'dog':
-    case 'cat":
+    case 'cat':
       console.log('mammal');
       break;
     case 'crocodile':
