@@ -21,7 +21,7 @@
 
 **4. Blocks and Variable Scope**
 
-- What is a variable scope
+- What is the variable scope
 
 **5. What is Debugging**
 
