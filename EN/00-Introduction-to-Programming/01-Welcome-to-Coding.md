@@ -111,7 +111,7 @@ Let us look at a simple program that takes **an amount of money in U.S. Dollars 
 
 This is a program of 3 consecutive commands: 
 
-```js
+```js live
 function convertUsdToEur(input) {
   let dollars = Number.parseFloat(input);
   let euro = dollars * 0.883795087;
