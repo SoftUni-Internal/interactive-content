@@ -205,7 +205,7 @@ Min number: -2
 
 [slide hideTitle]
 
-# Problemă cu soluție: Power Of Numbers
+# Problemă cu Soluție: Power Of Numbers
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/04-For-Loop/JS-basics-for-37-solution-power-of-number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

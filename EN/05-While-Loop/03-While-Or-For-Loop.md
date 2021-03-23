@@ -79,14 +79,14 @@ Create a program, which prints the **first** odd number in a given sequence:
 # Example
   | **Input** | **Output** |
 | --- | --- |
-| oddNumber(['2', '4', '8', '3']) | 3 |
-| oddNumber(['7', '32', '6', '12'])| 7 |
+| oddNumber([2, 4, 8, 3]) | 3 |
+| oddNumber([7, 32, 6, 12])| 7 |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-oddNumber(['2', '4', '8', '3'])
+oddNumber([2, 4, 8, 3])
 [/input]
 [output]
 3
@@ -94,7 +94,7 @@ oddNumber(['2', '4', '8', '3'])
 [/test]
 [test open]
 [input]
-oddNumber(['7', '32', '6', '12'])
+oddNumber([7, 32, 6, 12])
 [/input]
 [output]
 7
@@ -102,7 +102,7 @@ oddNumber(['7', '32', '6', '12'])
 [/test]
 [test]
 [input]
-oddNumber(['2', '4', '8', '5'])
+oddNumber([2, 4, 8, 5])
 [/input]
 [output]
 5
