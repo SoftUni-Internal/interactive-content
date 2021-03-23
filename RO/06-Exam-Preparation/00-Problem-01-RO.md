@@ -1,4 +1,5 @@
 # Problema 1: Task Manager
+
 [slide hideTitle]
 # Task Manager
 
@@ -7,8 +8,8 @@
 [code-task title="Task Manager" taskId="js-advanced-exam-preparation-task-manager" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
-function solve(){
-  // Write your code here
+function taskManager(){
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]

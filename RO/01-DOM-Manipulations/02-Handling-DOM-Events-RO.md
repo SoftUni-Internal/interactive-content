@@ -6,7 +6,7 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/RO/JS-Advanced-DOM-Manipulations-11-12-dom-events-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Propagarea evenimentelor este un mod de a descrie o "stack" de evenimente care sunt declanșate în browser.  
+Propagarea evenimentelor este un mod de a descrie o "**stack**" de evenimente care sunt declanșate în browser.  
 
 În browser vom avea 3 faze ale propagării evenimentului: 
 
@@ -16,7 +16,6 @@ Propagarea evenimentelor este un mod de a descrie o "stack" de evenimente care s
 
 - **Bubbling** phase: evenimentul se ridică la suprafață dinspre element 
 
-[image assetsSrc="Dom-Manipulation(2).gif" /]
 
 Atunci când dăm click pe elementul `<A>`, evenimentul merge mai întâi pe lanț, în jos, către element, aceasta fiind numită **capturing phase**, apoi ajunge la țintă și declanșează **target phase**, iar apoi merge în sus, ceea ce se numește **bubbling phase**, apelând organizatorii în drumul său. 
 
@@ -41,7 +40,7 @@ In acest exemplu, organizatorul este asignat elementului `<div>` element, dar po
 </div>
 ```
 
-Un eveniment bubbling a urcă spre obiectul "document", iar unele evenimente chiar ating "window", apelând toți organizatorii de pe traseu. 
+Un eveniment bubbling a urcă spre obiectul "**document**", iar unele evenimente chiar ating "**window**", apelând toți organizatorii de pe traseu. 
 
 Putem opri faza **bubbling** folosind o metodă numită `event.stopPropagation()`.
 
@@ -100,7 +99,7 @@ Unele dintre proprietăți sunt:
 - **ClientX / ClientY**
 
 ```js
-addBtn.addEventListener("click", function(e){
+addBtn.addEventListener('click', function(e){
     console.log(e.target);
 })
 ```
@@ -155,7 +154,7 @@ function addItem(){
 
 Creați o funcție care **citește** un text din interiorul unui câmp de intrare și **adaugă** textul specificat unei liste din interiorul unei pagini HTML.
 
-# Exemplu
+## Exemplu
 [image assetsSrc="Dom-Manipulation(3).png" /]
 
 [/task-description]

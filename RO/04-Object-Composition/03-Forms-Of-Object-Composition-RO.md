@@ -175,7 +175,7 @@ console.log(c);
 
 Delegarea este atunci când un obiect transmite sau delegează altui obiect.
 
-Delegarea este frecvent utilizată pentru a imita  moștenirea clasei în JavaScript.
+Delegarea este frecvent utilizată pentru a imita moștenirea clasei în JavaScript.
 
 Tipurile încorporate JavaScript folosesc delegarea pentru a redirecționa metoda încorporată către metoda calls up the prototype chain.
 

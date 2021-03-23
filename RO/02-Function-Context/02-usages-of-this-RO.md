@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# "this" într-o metodă
+# "this" Într-o Metodă
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-8-9-this-in-a-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -54,7 +54,7 @@ Dacă există o variabilă cu același nume deja definită și dacă este în do
 
 [slide hideTitle]
 
-# "this" se referă la obiectul Parent
+# "this" se Referă la Obiectul Parent
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-10-this-refers-to-the-parent-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -103,7 +103,7 @@ Returnează **true**, deoarece acum `this` este apelat de funcția **globalFunct
 
 `this` este într-adevăr egal cu **global**.
 
-- `user.printAnotherContext();` va returna **false** deoarece `printAnotherContext()` este o metodă a obiectului **user** și `this` va returna obiectul  în sine așa cum a făcut-o cu metoda **printContext**.
+- `user.printAnotherContext();` va returna **false** deoarece `printAnotherContext()` este o metodă a obiectului **user** și `this` va returna obiectul în sine așa cum a făcut-o cu metoda **printContext**.
 
 **Să rezumăm:**
 
@@ -135,7 +135,7 @@ function solve() {
 
 Când se face referire la `this` din cadrul unui eveniment, acesta returnează elementul de la care a fost chemat evenimentul.
 
-În cazul nostru, button va fi elementul care a apelat  funcția `solve()`.
+În cazul nostru, button va fi elementul care a apelat funcția `solve()`.
 
 Îl puteți testa singur creând un fișier HTML cu următorul exemplu de cod
 

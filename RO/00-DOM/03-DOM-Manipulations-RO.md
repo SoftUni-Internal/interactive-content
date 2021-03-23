@@ -502,21 +502,25 @@ Să presupunem că există următorul cod HTML:
 Iată câteva exemple de proprietăți DOM și ce fac acestea:
 
 - `textContent` - Folosit pentru a **citi** și **scrie** text
-```js
-let p = document.getElementById("my-name");
-p.textContent += "Ellie";
-```
-- `innerHTML` - Used to **get** and **change** the HTML of an element. Folosit pentru a **obține** și pentru a **modifica** codul HTML al unui element
 
 ```js
-let div = document.getElementById("container");
+let p = document.getElementById('my-name');
+p.textContent += 'Ellie';
+```
+
+- `innerHTML` - Used to **get** and **change** the HTML of an element. 
+
+Folosit pentru a **obține** și pentru a **modifica** codul HTML al unui element
+
+```js
+let div = document.getElementById('container');
 div.innerHTML += "<p>What's your name</p>";
 ```
 
 - `value` - Folosit pentru a **obține** și **seta** valoarea unui element
 
 ```js
-let input = document.getElementById("name-input");
+let input = document.getElementById('name-input');
 console.log(input.value); //înregistrează valoarea câmpului de intrare
 ```
 [/slide]
@@ -559,15 +563,18 @@ Acceptă un parametru - **numele atributului.**
 let input = document.getElementById('first-input');
 input.removeAttribute('name'); // Elimină atributul de nume al intrării
 ```
+
 - `hasAttribute()` - **Returnează un boolean** dacă atributul specificat este prezent sau nu
 
 Ia un parametru - **numele atributului**.
+
 ```js
 let input = document.getElementById('first-input');
 input.hasAttribute('type'); // adevărat
 input.hasAttribute('name'); // fals
 ```
-Deoarece un element HTML poate avea **mai multe nume de clase** , există o proprietate care returnează o **serie** cu toate acestea.
+Deoarece un element HTML poate avea **mai multe nume de clase**, există o proprietate care returnează o **serie** cu toate acestea.
+
 ```js
 <h1 id="title" class="title red left">
  Heading 1
@@ -632,9 +639,9 @@ function growingWord(){
  <p>Growing Word</p>
 </div>
 ```
-De fiecare dată când facem **clic** pe butonul `[CHANGE]`, **culoarea** și **dimensiunea**** paragrafului **care conține** "**Growing Word**" ar trebui să se schimbe!
+De fiecare dată când facem **clic** pe butonul `[CHANGE]`, **culoarea** și **dimensiunea** paragrafului **care conține** "**Growing Word**" ar trebui să se schimbe!
 
-**După fiecare clic** , **dimensiunea fontului** de paragraf curent ar trebui **modificată** la **dimensiunea curentă a fontului înmulțită cu 2**. 
+**După fiecare clic**, **dimensiunea fontului** de paragraf curent ar trebui **modificată** la **dimensiunea curentă a fontului înmulțită cu 2**. 
 
 De asemenea, **culoarea** acelui paragraf ar trebui să se schimbe, în funcție de **culoarea anterioară**.
 
@@ -642,12 +649,13 @@ De asemenea, **culoarea** acelui paragraf ar trebui să se schimbe, în funcție
 
 - Dacă facem clic **o dată**, culoarea ar trebui schimbată în **albastru** și dimensiunea fontului trebuie să fie **2** (prima dimensiune inițială)
 - Dacă facem clic **de două ori**, culoarea ar trebui schimbată în **verde** și dimensiunea fontului ar trebui să fie **4** (2 * 2)
-- Dacă facem clic **de trei ori**, culoarea curentă a acelui paragraf ar trebui schimbată în **roșu** , iar dimensiunea fontului ar trebui să fie **8** (4 * 2)
-- Dacă paragraful nostru are deja culoarea **roșu**, la următorul clic, culoarea ar trebui să se transforme în **albastru**.
+- Dacă facem clic **de trei ori**, culoarea curentă a acelui paragraf ar trebui schimbată în **roșu**, iar dimensiunea fontului ar trebui să fie **8** (4 * 2)
+- Dacă paragraful nostru are deja culoarea **roșu**, la următorul clic, culoarea ar trebui să se transforme în **albastru**
 
 Treceți prin aceste trei culori (albastru, verde, roșu) din nou și din nou și din nou ... în timp ce faceți clic pe butonul respectiv.
 
 [image assetsSrc="JS-Advanced-DOM-Lab-8.jpg" /]
+
 ```js
 <div id="exercise">
  <div id="colors">...</div>
@@ -655,7 +663,9 @@ Treceți prin aceste trei culori (albastru, verde, roșu) din nou și din nou ș
  <p style="color: blue; font-size: 2px;"> Growing Word</p>
 </div>
 ```
+
 [image assetsSrc="JS-Advanced-DOM-Lab-10.jpg" /]
+
 ```js
 <div id="exercise">
  <div id="colors">...</div>
@@ -663,14 +673,18 @@ Treceți prin aceste trei culori (albastru, verde, roșu) din nou și din nou ș
  <p style="color: green; font-size: 4px;">Growing Word</p>
 </div>
 ```
+
 [image assetsSrc="JS-Advanced-DOM-Lab-12.jpg" /]
+
 ```js
+
 <div id="exercise">
  <div id="colors">... </div>
  <div>...</div>
  <p style="color: red; font-size: 8px;"> Growing Word</p>
 </div>
 ```
+
 [/task-description]
 [code-io /]
 [tests]
@@ -1032,9 +1046,9 @@ list.prependChild(firstLi); // adaugă elementul "firstLi" în partea din față
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/RO/JS-Advanced-DOM-37-nodelist-vs-htmlcollection-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Atât **NodeList** , cât și **HTMLCollection** sunt colecții indexate de **noduri DOM**.
+Atât **NodeList**, cât și **HTMLCollection** sunt colecții indexate de **noduri DOM**.
 
-Cu toate acestea, **HTMLCollection** este limitată doar la **nodurile Element** , în timp ce **NodeList** ar putea deține noduri **de orice tip**.
+Cu toate acestea, **HTMLCollection** este limitată doar la **nodurile Element**, în timp ce **NodeList** ar putea deține noduri **de orice tip**.
 
 Cele două colecții au aceleași metode, cu excepția metodei namedItem pentru **NodeList**.
 

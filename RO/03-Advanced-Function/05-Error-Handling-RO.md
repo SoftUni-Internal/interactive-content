@@ -202,7 +202,7 @@ Obiectul `Error` are mai multe proprietăți:
 
 - `Error.prototype.name` - **name** numele erorii
 
-- `Error.prototype.message` -  un **message** al erorii
+- `Error.prototype.message` - un **message** al erorii
 
 - `Error.prototype.stack` - un [stack trace](https://en.wikipedia.org/wiki/Stack_trace) al excepției exception
   

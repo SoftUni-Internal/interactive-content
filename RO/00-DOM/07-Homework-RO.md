@@ -1,4 +1,5 @@
-# Teme pentru acasă
+# Teme Pentru Acasă
+
 
 [slide hideTitle]
 
@@ -326,7 +327,7 @@ Sarcina dvs. este de a afișa **mai multe/mai puține** informații apăsând bu
 
 Când este apasat butonul `[More]`, acesta **dezvăluie** conținutul unui **ascuns** `div`, iar textul butonului este **schimbat** în `[Less]`.
 
-Când același link este apasat **din nou**(acum citind **Less**), **ascundeți*  `div` și **schimbați** textul linkului în **More**.
+Când același link este apasat **din nou**(acum citind **Less**), **ascundeți**  `div` și **schimbați** textul linkului în **More**.
 
 Acțiunea linkului ar trebui să fie **toggleable** (ar trebui să puteți apasa butonul **click** de **infinit** de ori).
 

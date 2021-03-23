@@ -30,7 +30,7 @@ console.dir(document);
 Toate variabilele globale sunt **proprietățile** sale și toate funcțiile globale sunt **metodele** sale.
 
 ```js
-var name = "Steven";
+var name = 'Steven';
 //name is now stored as a property of the window object
 
 function printYear() {

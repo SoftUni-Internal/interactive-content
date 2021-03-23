@@ -1,4 +1,4 @@
-# Temă
+# Teme Pentru Acasă
 
 [slide hideTitle]
 # Problemă: Order Rectangles
@@ -1302,7 +1302,7 @@ Dacă nu există spațiu nicăieri în șir, returnați n \- 3 caractere și o e
 
 Dacă n este mai mic de 4, returnați **n** suma perioadelor
 
-- `format(string, …params)` - metodă statică pentru a înlocui substituenții cu parametri.
+- `format(string, …params)` - metodă statică pentru a înlocui substituenții cu parametri
 
 Un substituent este un număr înconjurat de bucle(curly braces). 
 
@@ -1485,9 +1485,9 @@ Acesta trebuie să accepte următoarele funcționalități:
 
 Ordinea corectă a elementului trebuie păstrată în orice moment, indiferent de operația care este apelată.
 
-Elementele de **emoving** și **retrieving**  nu ar trebui să funcționeze dacă indicele furnizat este în afara **lungimii** colecției \(fie arată o eroare, fie nu execute nimic\) 
+Elementele de **emoving** și **retrieving** nu ar trebui să funcționeze dacă indicele furnizat este în afara **lungimii** colecției \(fie arată o eroare, fie nu execute nimic\) 
 
-Rețineți că **dimensiunea** colecției **NU** este  o funcție.
+Rețineți că **dimensiunea** colecției **NU** este o funcție.
 
 Scrieți codul astfel încât **prima funcție din soluția dvs.** să returneze o instanță din lista dvs. sortată.
 
