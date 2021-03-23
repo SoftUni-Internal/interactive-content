@@ -172,7 +172,7 @@ console.log(replacedStr);
 [code-task title="Substring" taskId="js-fundamentals-pt2-text-processing-lab-Substring" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function substring(input){
+function substring(str, firstNumber, secondNumber){
   // Write your code here
 }
 ```
