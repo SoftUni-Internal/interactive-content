@@ -5,7 +5,7 @@
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-6-7-declaring-a-function-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-O funcție este definită, utilizând cuvântul cheie `funcție` urmat de **numele funcției** și un set de **paranteze** pentru a păstra parametrii sau valorile care trebuie primite de funcție.
+O funcție este definită, utilizând cuvântul cheie `function` urmat de **numele funcției** și un set de **paranteze** pentru a păstra parametrii sau valorile care trebuie primite de funcție.
 
 Funcțiile pot fi declarate în două moduri:
 
@@ -159,7 +159,7 @@ Dacă dați mai multe argumente, atunci **argumentele suplimentare vor fi ignora
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Grades
+# Problemă cu Soluție: Grades
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-14-solution-grades-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -187,11 +187,11 @@ Scrieți o funcție care primește o notă între "**2.00**" și "**6.00**" și 
 
 |**Grad**|**Rezultat**|
 | --- | --- |
-| "**2.00 - 2.99**" | "**Fail**" |
-| "**3.00 - 3.49**" | "**Poor**" |
-| "**3.50 - 4.49**" | "**Good**" |
-| "**4.50 - 5.49**" | "**Very good**" |
-| "**5.50 - 6.00**" | "**Excellent**" |
+| "2.00 - 2.99" | "Fail" |
+| "3.00 - 3.49" | "Poor" |
+| "3.50 - 4.49" | "Good" |
+| "4.50 - 5.49" | "Very good" |
+| "5.50 - 6.00" | "Excellent" |
 
 
 ## Exemple
@@ -274,7 +274,7 @@ Fail
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Math Power
+# Problemă cu Soluție: Math Power
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-16-solution-math-power-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

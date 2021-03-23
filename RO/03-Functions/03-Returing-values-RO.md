@@ -73,7 +73,7 @@ console.log(isValid(3, [1, 2, 3, 4, 5]));
 
 Când lucrați cu matricii, este adesea folosit pentru a verifica dacă **indexul este valid.**
 
-Rezultatul acestei funcții este **boolean**, va returna "true" dacă indexul se află în interiorul limitei matricei și va returna "**false**" dacă nu se află acolo.
+Rezultatul acestei funcții este **boolean**, va returna "**true**" dacă indexul se află în interiorul limitei matricei și va returna "**false**" dacă nu se află acolo.
 
 - Elevul promovează examenul:
 
