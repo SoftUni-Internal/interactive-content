@@ -207,7 +207,7 @@ Here is how the program would work if we had a square with a side length equal t
 [code-task title="Greeting" taskId="pb-js-expression-and-statements-Greeting"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function sayHello (input) {
+function sayHello (name) {
    // Write your code here
 }
 ```

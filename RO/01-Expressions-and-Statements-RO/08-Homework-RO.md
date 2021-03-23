@@ -45,13 +45,21 @@ Formula pentru calcularea ariei unui pătrat este - a * a.
 [tests]
 [test]
 [input]
+calculateArea(12)
+[/input]
+[output]
+144
+[/output]
+[/test]
+[test]
+[input]
 calculateArea(2)
 [/input]
 [output]
 4
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 calculateArea(5)
 [/input]
@@ -123,6 +131,22 @@ Creați un program pentru a converti de la USD la EUR:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+currencyConverter(17)
+[/input]
+[output]
+14.96
+[/output]
+[/test]
+[test open]
+[input]
+currencyConverter(87)
+[/input]
+[output]
+76.56
+[/output]
+[/test]
 [test]
 [input]
 currencyConverter(10.0)
@@ -210,7 +234,7 @@ areaOfTriangle(0.5236)
 30
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 areaOfTriangle(0.7854)
 [/input]
@@ -218,7 +242,7 @@ areaOfTriangle(0.7854)
 45
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 areaOfTriangle(6.2832)
 [/input]
@@ -226,7 +250,7 @@ areaOfTriangle(6.2832)
 360
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 areaOfTriangle(3.1416)
 [/input]
@@ -282,6 +306,22 @@ Creați un program care covertează zilele în minute:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+daysToMinutes(2)
+[/input]
+[output]
+2880
+[/output]
+[/test]
+[test open]
+[input]
+daysToMinutes(5)
+[/input]
+[output]
+7200
+[/output]
+[/test]
 [test]
 [input]
 daysToMinutes(6)
@@ -343,15 +383,21 @@ function adapter(input, code) {
 # Descriere
 Creați un program pentru a calcula aria și perimetrul unui **cerc**:
 
-* Veți primi un număr cu virgulă mobilă: ** raza ** unui cerc
-   * Calculați ** aria ** și ** perimetrul ** cercului
-   * Imprimați zona și perimetrul, ** formatat ** la 2 cifre după punctul zecimal
+* Veți primi un număr cu virgulă mobilă: **raza** unui cerc
+   * calculați **aria** și **perimetrul** cercului
+   * imprimați zona și perimetrul, **formatat** la 2 cifre după punctul zecimal
 
   ## Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | circleArea(7) | Area = 153.94 |
 |  | Perimeter = 43.98 |
+
+
+| **Intrare** | **Ieșire** |
+| --- | --- |
+| circleArea(8) | Area = 201.06 |
+|  | Perimeter = 50.27 |
 
 [hints]
 [hint]
@@ -366,6 +412,24 @@ Formula pentru calcularea aria unui cerc este: A = π * R * R.
 
 [/task-description]
 [tests]
+[test open]
+[input]
+circleArea(7)
+[/input]
+[output]
+Area = 153.94
+Perimeter = 43.98
+[/output]
+[/test]
+[test open]
+[input]
+circleArea(8)
+[/input]
+[output]
+Area = 201.06
+Perimeter = 50.27
+[/output]
+[/test]
 [test]
 [input]
 circleArea(12.0)
@@ -433,13 +497,13 @@ Peter dorește să amenajeze teritoriul curții sale și de accea el a  yard, a�
 
 Creați un program care **calculează** fondurile necesare pe care Peter va trebui să le **plătească** pentru acest serviciu.
 
-Prețul pe metru pătrat este de **7,61 dolari** cu TVA.
+Prețul pe metru pătrat este de **7.61 dolari** cu TVA.
 
 Deoarece curtea lui Peter este destul de **mare**, firma contractantă oferă o reducere de **18%** la prețul final.
 
 ## Intrare
 Funcția primește un argument:
-- Metri pătrați, care vor fi amenajați - un număr real în intervalul \[0.00… 10000.00\]
+- Metri pătrați, care vor fi amenajați - un număr real în intervalul \[0.00 ... 10000.00\]
 
 ## Ieșire
  Două linii sunt imprimate pe consolă:
@@ -451,13 +515,14 @@ Funcția primește un argument:
 ## Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
-| landscape(550) | The final price is: 3432.11 dollars. |
-|  | The discount is: 753.39 dollars. |
+| landscape(150) | The final price is: 936.03 dollars. |
+|  | The discount is: 205.47 dollars. |
+
 
 | **Intrare** | **Ieșire** |
 | --- | --- |
-| landscape(150) | The final price is: 936.03 dollars. |
-|  | The discount is: 205.47 dollars. |
+| landscape(550) | The final price is: 3432.11 dollars. |
+|  | The discount is: 753.39 dollars. |
 
 
 [hints]
@@ -481,15 +546,24 @@ Scadeți reducerea din prețul total.
 [hint]
 
 Imprimați rezultatul pe consolă:
-console.log(The final price is: ${total} dollars.);
-console.log(The discount is: ${discount} dollars.);
+console.log('The final price is: $\{total\} dollars.');
+console.log('The discount is: $\{discount\} dollars.');
 
 [/hint]
 [/hints]
 
 [/task-description]
 [tests]
-[test]
+[test open]
+[input]
+landscape(150)
+[/input]
+[output]
+The final price is: 936.03 dollars.
+The discount is: 205.47 dollars.
+[/output]
+[/test]
+[test open]
 [input]
 landscape(550)
 [/input]
