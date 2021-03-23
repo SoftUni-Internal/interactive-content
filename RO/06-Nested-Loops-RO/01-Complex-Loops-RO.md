@@ -166,9 +166,9 @@ function adapter(input, code) {
 # Descriere
 Creați un program pentru a imprima numerele de la 1 la **n** cu pasul 3:
 
-*Primiți un număr **n** ca intrare
+* Primiți un număr **n** ca intrare
 
-*Tipăriți numerele de la 1 la **n** cu pasul 3
+* Tipăriți numerele de la 1 la **n** cu pasul 3
 
 # Exemplu
 | **Intrare** | **Ieșire** |
