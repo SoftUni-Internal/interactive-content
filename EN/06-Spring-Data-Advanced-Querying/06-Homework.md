@@ -2,6 +2,8 @@
 
 # Homework
 
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/06-Spring-Advanced-Querying-Homework.zip) **for this task.**
+
 For the following tasks use the bookshop_system database from the previous exercise. 
 
 Make sure it has proper connections between the tables and it is populated with any sample data.

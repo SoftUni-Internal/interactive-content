@@ -6,7 +6,7 @@
 
 ## Workshop – MiniORM
 
-_**Here is a link to the**_ [resources](https://mega.nz/file/DY4D0KwL#oPOosYAR2P1UhQf0kN4Zv2karxcHljNFdeIYT4U5HW8) _**for this task.**_
+_**Here is a link to the**_ [resources](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/Java-ORM-Fundamentals-Homework.zip) _**for this task.**_
 
 By following the guides of this document you will be able to create your custom ORM with basic functionality (insert, update and retrieve single or set of objects).
 
@@ -138,9 +138,15 @@ One thing that can help us is **Annotations**.
 
 Create 3 annotations **Entity**, **Column**, and **Id**.
 
+**Entity Annotation**:
+
 [image assetsSrc="Java-ORM-Fundamentals-Homework-8.jpg" /]
 
+**Id Annotation**:
+
 [image assetsSrc="Java-ORM-Fundamentals-Homework-9.jpg" /]
+
+**Column Annotation**
 
 [image assetsSrc="Java-ORM-Fundamentals-Homework-10.jpg" /]
 

@@ -4,9 +4,9 @@
 
 # Airline Company
 
-Download the resources from here - [Mega.nz](https://mega.nz/file/qF4BzS6T#CKi7S5vgMsE9CbgkRYPM1E89Hr7EiZOh6_lr6GzFm1s)
-
 ## Description
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/12-Spring-ORM-Final-Exam.zip) **for this exam.**
 
 A new airline company is need of a fresh developer to work on their new project and you’re the right person for the job. 
 

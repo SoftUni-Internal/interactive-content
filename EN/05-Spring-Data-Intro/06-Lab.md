@@ -4,7 +4,7 @@
 
 Your task is to create a simple account system that has users with accounts and manages money transfer or withdrawal.
 
-Build the system using code-first and Sprin Data.
+Build the system using code-first and Spring Data.
 
 The goal is to implement services and repositories
 

@@ -4,7 +4,7 @@
 
 # Football Information
 
-Download the resources from here - [Mega.nz](https://mega.nz/file/iF4B1KzL#aGQcAQuqnKBJ9TuynjcDC0_0SEEpB_F5rzPsd-sEpi4)
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/10-Spring-ORM-Exam-Preparation.zip) **for the exam preparation.**
 
 You have been employed by the Next Level Technologies Ltd. to finish the database layer, which supports basic functionality like importing data and exporting some results.
 
