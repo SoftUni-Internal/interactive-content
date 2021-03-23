@@ -6,11 +6,11 @@
 
 The `switch` statement works as a sequence of **if-else** blocks. 
 
-Instead of making consecutive conditions with `if-else` blocks, we can use the conditional `switch` statement in cases where our code logic depends on a single variable. 
+Instead of defining consecutive conditions with `if-else` blocks, we can use a `switch` statement in case our code logic depends on a single variable. 
 
 The switch statement provides us with a simpler syntax for constructions with more than one code block to choose from.
 
-The statement compares a given value with the value of each case and acts accordingly executing the corresponding block.
+This statement compares a given value with the value of each case and acts accordingly - executing the corresponding block.
 
 ## Switch-statement:
 
@@ -25,7 +25,7 @@ switch (selector) {
 }
 ```
 
-- We put **the variable** that we want to **compare** inside the **brackets after the** `switch` operator
+- We place **the variable** that we want to **compare** inside the **brackets after the** `switch` operator
 
 This variable is called **"selector"**.
 
@@ -39,7 +39,7 @@ In some programming languages (like `C` and `C++`) the `break` operator can be s
 
 In Java, the presence of `break` is **mandatory** for each `case` that contains program logic. 
 
-When **no matches** are **found**, the `default` construction is being executed, **if** such **exists**.
+When **no matches** are **found**, the `default` construction is executed, **if** such **exists**.
 
 
 
@@ -98,7 +98,7 @@ switch (choice) {
 
 In **Java**, we have the possibility to use **multiple** `case` labels in the `switch-case` construction, when they have to execute **the same code**. 
 
-This way, when our **program** finds a **match** it will execute the following code block until it reaches a `break operator`:
+This way, when our **program** finds a **match** it will execute each following code block until it reaches a `break operator`:
 
 ```java
 switch (selector) {
@@ -129,11 +129,11 @@ The input may hold the following values:
 
 - mammals: dog
 - reptiles: crocodile, tortoise, snake
-- anything else that may come as input should produce unknown as output
+- anything else that may come as input should produce "unknown" as output
 
 
 
-This time, we shoul solve the task using `switch-case` conditions with multiple labels in the following way:
+This time, we should solve the task using `switch-case` conditions with multiple labels in the following way:
 ```java
 Scanner scanner = new Scanner(System.in);
 String animal = scanner.nextLine();
