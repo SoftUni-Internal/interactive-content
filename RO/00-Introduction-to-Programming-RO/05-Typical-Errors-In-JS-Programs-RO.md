@@ -5,9 +5,9 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-38-39-40-Typical-Errors-In-JS-Programs-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Virtual Studio Code are o modalitate de a ne arăta majoritatea erorilor de bază pe care le putem face.
+Visual Studio Code are o modalitate de a ne arăta majoritatea erorilor de bază pe care le putem face.
 
-**Subliniază** codul greșit care nu poate fi compilat.
+**Acesta subliniază** codul greșit care nu poate fi compilat.
 
 Unele dintre greșelile obișnuite de bază cu care ne putem confrunta:
 
@@ -17,7 +17,7 @@ Unele dintre greșelile obișnuite de bază cu care ne putem confrunta:
 
 - Lipsă citatelor  `"` sau parantezelor `(` sau `)`
 
-- Confuzia sensului **Addition** și **Concatenation**
+- Confuzia sensului **Addition (adăugare)** și **Concatenation (concatenare)**
 
 Operatorul `+` are două funcționalități.
 
@@ -25,8 +25,8 @@ Operatorul `+` are două funcționalități.
 
 **Concatenarea** este pentru șiruri de caractere.
 
-- Confuzia operatorilor **assignment** (`=`) și **equality** (`==`, `===`)
+- Confuzia operatorilor **assignment (atribuire)** (`=`) și **equality (egalitate)** (`==`, `===`)
 
-În JavaScript semnurile dublu egal și triplu egal sunt numiți operatori de comparație.
+În JavaScript semnele dublu egal și triplu egal sunt numiți operatori de comparație.
 
 [/slide]
