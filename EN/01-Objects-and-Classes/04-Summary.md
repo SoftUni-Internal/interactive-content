@@ -5,7 +5,7 @@
 
 ## In this lesson you learned:
 
-- Classes define the following templates for objects
+- Classes define templates for creating objects
     - fields
     - constructors
     - properties
@@ -19,7 +19,7 @@ LocalDate.of(2018, 5, 5);
 System.out.println(birthday);
 ```
 
-- Instance of a class
+- What an instance of a class is
 
 ``` java
 class Dice {
