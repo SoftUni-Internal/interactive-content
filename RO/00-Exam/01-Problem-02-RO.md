@@ -1,4 +1,4 @@
-﻿# Problem: Family Trip
+﻿# Problemă: Family Trip
 [slide hideTitle]
 # Family Trip
 [code-task title="Family Trip" taskId="pb-java-exam-family-trip" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -14,16 +14,14 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Description
-
-Familie Smith își planifică vacanța impreuna.
+## Descriere
+Familia Smith își planifică vacanța împreuna.
 
 Sarcina dvs. este să scrieți un program care să calculeze dacă bugetul lor va fi suficient, știind câte nopți au planificat, care este prețul pe noapte și ce procent din buget a fost asigurat pentru costuri suplimentare.
 
 Rețineți că, dacă numărul de nopți este mai mare de 7, prețul pe noapte se reduce cu 5%.
 
 ## Intrare 
-
 Veți primi 4 linii de pe consolă:
 - Bugetul care este disponibil - număr real în intervalul [1.00 ... 10000.00]
 - Numărul de nopți - număr întreg în intervalul [0 ... 1000]
@@ -31,15 +29,15 @@ Veți primi 4 linii de pe consolă:
 - Procent de costuri suplimentare - număr întreg în intervalul [0 ... 100]
 
 ## Ieșire
-Imprimarea pe consolă depinde de rezultatul:
-- Dacă bugetul este suficient:
+Imprimarea pe consolă depinde de rezultat:
+- Dacă bugetul **este suficient**:
 	-  "**The Smiths will be left with** \{**money left after the trip**\} **dollars after the vacation.**"
-- Dacă bugetul NU este suficient:
+- Dacă bugetul **nu este suficient**:
 	- "\{**money needed**\} **dollars needed.**"
 
 Suma trebuie formatată la a doua cifră după punctul zecimal.
 
-## Exemple
+## Exemplu
 |**Intrare**|**Ieșire** |
 | --- | --- |
 | 800.50 | The Smiths will be left with 24.49 dollars after the vacation. |
@@ -49,14 +47,14 @@ Suma trebuie formatată la a doua cifră după punctul zecimal.
 
 [hints]
 [hint]
-Determine if there will be a discount if the Smiths are staying more than 7 days.
-If there's a discount, calculate how much is it and subtract it from the price per 1 night.
+Determinați dacă familia Smith va primi o reducere dacă aceștia stau mai mult de 7 zile.
+Dacă există o reducere, calculați cât este aceasta și scădeți-o din prețul pe noapte.
 [/hint]
 [hint]
-Calculate the price for the all the nights and add the additional costs.
+Calculați prețul pentru toate nopțile și adăugați costurile suplimentare.
 [/hint]
 [hint]
-Check if their budget is sufficient and print the correct output.
+Verificați dacă bugetul lor este suficient și tipăriți ieșirea corectă.
 [/hint]
 [/hints]
 
