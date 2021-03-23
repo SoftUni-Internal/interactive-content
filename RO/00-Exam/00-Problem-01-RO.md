@@ -1,4 +1,4 @@
-# Problem: Pool Day
+# Problemă: Pool Day
 [slide hideTitle]
 # Pool Day
 [code-task title="Pool Day" taskId="pb-java-exam-Pool-day" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -22,9 +22,9 @@ Sarcina dvs. este să scrieți un program care să calculeze suma care ar trebui
 
 Taxa de intrare trebuie plătită pentru fiecare persoană.
 
-Trebuie să aveți cont de faptul că o umbrelă este suficientă pentru două persoane. Se știe că doar 75% din echipă își dorește șezlonguri.
+Trebuie să țineți cont de faptul că o umbrelă este suficientă pentru două persoane. Se știe că doar 75% din echipă își dorește șezlonguri.
 
-În calculul numărului de umbrele și șezlonguri, numărul acestora trebuie rotunjit la cel mai apropiat număr întreg.
+În calculul numărului de umbrele și șezlonguri, numărul acestora trebuie rotunjit în sus la cel mai apropiat număr întreg.
 
 ## Intrare
 Din consolă se citesc 4 rânduri:
@@ -40,23 +40,23 @@ Rezultatul trebuie formatat la a doua cifră după punctul zecimal:
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
-| --- | --- | 
+| --- | --- |
 | 21 | 254.10 euro | 
 | 5.50 | | 
 | 4.40 | | 
 | 6.20 | | 
 [hints]
 [hint]
-Calculate the initial entrance fee for all the people.
+Calculați taxa inițială de intrare pentru toate persoanele.
 [/hint]
 [hint]
-Determine how many of them will want a sunbed and calculate the price for all the sunbeds.
+Determinați câte persoane vor dori un șezlong și calculați prețul pentru toate șezlongurile.
 [/hint]
 [hint]
-Note that 1 umbrella can be used by 2 people. Don't forget that when calculating the number of umbrellas and sunbeds, their number should be rounded up to the next integer.
+Țineți cont că o umbrelă poate fi folosită de 2 persoane. Atunci când calculați prețul umbrelelor și al șezlongurilor, nu uitați că numărul acestora trebuie rotunjit în sus la cel mai apropiat număr întreg.
 [/hint]
 [hint]
-Determine the final price after adding the umbrellas and sunbeds fees to the entrance fee.
+Determinați prețul final după adăugarea taxelor pentru umbrele și șezlonguri la taxa de intrare.
 [/hint]
 [/hints]
 
