@@ -32,6 +32,7 @@ Clasa **Bank** ar trebui să aibă aceste **2 proprietăți:**
 
 **Clientul** este de tip obiect "\{**firstName, lastName, personalId**\}".
 
+
 - Verificați dacă sunt deja un client al băncii. Dacă sunt deja generați această eroare:
 "\{**firstName**\} \{**lastName**\} **is already our customer!**"
 
@@ -39,7 +40,9 @@ Clasa **Bank** ar trebui să aibă aceste **2 proprietăți:**
 
 ## `depositMoney (personalId, amount)`
 
+
 **personalId** și **amount** ar trebui să fie numere.
+
 
 - Verificați dacă **personalId** dat corespunde unui client din **mulțimea de clienți**, dacă nu generați această eroare:
 
@@ -49,7 +52,9 @@ Clasa **Bank** ar trebui să aibă aceste **2 proprietăți:**
 
 "\{**totalMoney**\}\$"
 
+
 ## `withdrawMoney (personalId, amount)`
+
 
 **personalId** și **amount** ar trebui să fie numere.
 

@@ -1,4 +1,4 @@
-# Temă
+# Teme Pentru Acasă
 [slide hideTitle]
 
 # Problem: Company
@@ -62,13 +62,13 @@ Acesta este un exemplu de cum **se intenționează să fie folosit** codul:
 
 ```js
 let c = new Company();
-c.addEmployee("Steven", 2000, "engineer", "Construction");
-c.addEmployee("Peter", 1500, "electrical engineer", "Construction");
-c.addEmployee("Sam", 500, "dyer", "Construction");
-c.addEmployee("Stan", 2000, "architect", "Construction");
-c.addEmployee("Steven", 1200, "digital marketing manager", "Marketing");
-c.addEmployee("Peter", 1000, "graphical designer", "Marketing");
-c.addEmployee("George", 1350, "HR", "Human resources");
+c.addEmployee('Steven', 2000, 'engineer', 'Construction');
+c.addEmployee('Peter', 1500, 'electrical engineer', 'Construction');
+c.addEmployee('Sam', 500, 'dyer', 'Construction');
+c.addEmployee('Stan', 2000, 'architect', 'Construction');
+c.addEmployee('Steven', 1200, 'digital marketing manager', 'Marketing');
+c.addEmployee('Peter', 1000, 'graphical designer', 'Marketing');
+c.addEmployee('George', 1350, 'HR', 'Human resources');
 console.log(c.bestDepartment());
 ```
 

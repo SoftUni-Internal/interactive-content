@@ -1,8 +1,8 @@
-# Cuvântul cheie "this"
+# Cuvântul Cheie "this"
 
 [slide hideTitle]
 
-# Contextul funcției
+# Contextul Funcției
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-3-4-what-is-this-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -23,7 +23,7 @@ Funcțiile pot fi apelate în mai multe moduri diferite:
 
 [slide hideTitle]
 
-# Ce este "this" 
+# Ce Este "this" 
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-5-this-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -40,7 +40,7 @@ Obiectul la care se face referire prin `this` **se modifică** când se schimbă
 
 [slide hideTitle]
 
-# "this" prin referire la obiectul global 
+# "this" Prin Referire la Obiectul Global 
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-6-this-refers-to-the-global-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

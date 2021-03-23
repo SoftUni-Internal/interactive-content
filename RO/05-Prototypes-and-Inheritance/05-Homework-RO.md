@@ -1,4 +1,4 @@
-# Teme pentru acasă
+# Teme Pentru Acasă
 
 [slide hideTitle]
 
@@ -28,7 +28,9 @@ Scrieți o clasă **Person** și o clasă **Profesor** care extinde **Persoană*
 
 ## Intrare și ieșire
 
-Va exista o intrare **NU**. Funcția dvs. ar trebui să returneze un obiect care conține clasele **Person** și **Profesor**.
+Va exista o intrare **NU**. 
+
+Funcția dvs. ar trebui să returneze un obiect care conține clasele **Person** și **Profesor**.
 
 [/task-description]
 [code-io /]
@@ -108,9 +110,9 @@ Extindeți clasele **Persoană** și **Profesor** din sarcina anterioară și ad
 
 Adăugați funcția `toString ()` la toate clasele, formatul ar trebui să fie după cum urmează:
 
-- **Person** - returnează „**Persoană (nume:** \{**nume**\}**, e-mail:** \{**e-mail**\}**)**”
-- **Student** - returnează „**Student (nume:** \{**nume**\}**, e-mail:** \{**e-mail**\}**, curs:** \{**curs**\}**)**"
-- **Profesor** - returnează „**Profesor (nume:** \{**nume** \}**, e-mail:** \{**e-mail**\}**, subiect:** \{**subiect**\}**)**"
+- **Person** - returnează "**Persoană (nume:** \{**nume**\}**, e-mail:** \{**e-mail**\}**)**"
+- **Student** - returnează "**Student (nume:** \{**nume**\}**, e-mail:** \{**e-mail**\}**, curs:** \{**curs**\}**)**"
+- **Profesor** - returnează "**Profesor (nume:** \{**nume** \}**, e-mail:** \{**e-mail**\}**, subiect:** \{**subiect**\}**)**"
 
 Încercați să refolosiți codul folosind funcția `toString ()` din clasa de bază.
 
@@ -230,7 +232,7 @@ Array.prototype.last = function() {
 };
 ```
 
-Cu o astfel de declarație, avem acces la contextul instanței apelante prin intermediul cuvântului cheie „**this**”.
+Cu o astfel de declarație, avem acces la contextul instanței apelante prin intermediul cuvântului cheie "**this**".
 
 Putem apoi accesa cu ușurință indexuri și alte proprietăți existente.
 
@@ -282,7 +284,7 @@ Array.prototype.average = () => {
 };
 ```
 
-Pentru a putea trimite soluția, trebuie să ne înfășurăm programul într-un „**IIFE**”.
+Pentru a putea trimite soluția, trebuie să ne înfășurăm programul într-un "**IIFE**".
 
 Nu există **nici o valoare de returnare**, deoarece executarea codului are ca rezultat adăugarea funcționalității la un obiect existent.
 
@@ -439,7 +441,7 @@ function solve() {
 
 Acum că avem clasa noastră de bază, putem crea prima clasă pentru copii - **PartyBalloon**, care extinde clasa de bază **Balloon**.
 
-După moștenirea clasei **Balloon**, constructorul clasei **PartyBalloon** va necesita utilizarea metodei „super ()“ pentru a inițializa constructorul de bază **Balloon**.
+După moștenirea clasei **Balloon**, constructorul clasei **PartyBalloon** va necesita utilizarea metodei "super()" pentru a inițializa constructorul de bază **Balloon**.
 
 De asemenea, trebuie să adăugăm proprietatea obiectului **ribbon** în constructorul clasei **PartyBalloon**.
 
@@ -784,7 +786,7 @@ Folosind cuvântul cheie **new.target**, putem verifica dacă obiectul este crea
 ```js
 constructor(name, age) {
     if (new.target === Employee) {
-        throw new Error("Cannot instantiate directly.")
+        throw new Error('Cannot instantiate directly.')
     }
     this.name = name;
     this.age = age;
@@ -1210,14 +1212,16 @@ Implementați următoarele clase:
 
    - Argumentele **2** ar trebui să fie **membri publici**
    - Clasa **Post** ar trebui să aibă, de asemenea, o funcție `toString()` care returnează următorul rezultat:
-      - „**Postare:** \{**postTitle**\}”
-      - „**Conținut:** \{**postContent**\}”
+      - "**Postare:** \{**postTitle**\}"
+      - "**Conținut:** \{**postContent**\}"
 
-- **SocialMediaPost**, care moștenește clasa **Post** și ar trebui inițializată cu **2 argumente suplimentare** - **aprecieri** (număr) și **antipatie** (număr). Clasa ar trebui să dețină:
+- **SocialMediaPost**, care moștenește clasa **Post** și ar trebui inițializată cu **2 argumente suplimentare** - **aprecieri** (număr) și **antipatie** (număr). 
 
-   - **comentarii** (Șiruri) - o serie de șiruri
+Clasa ar trebui să dețină:
 
-   - **addComment** (comentariu) - o funcție care **adaugă** comentarii la acea matrice
+   - **Comentarii** (Șiruri) - o serie de șiruri
+
+   - **AddComment** (comentariu) - o funcție care **adaugă** comentarii la acea matrice
 
    - Clasa ar trebui să extindă funcția `toString()` a clasei **Post** și ar trebui să returneze următorul rezultat
 
@@ -1249,18 +1253,18 @@ Implementați următoarele clase:
 ## Exemplu
 
 ```js
-   let post = new Post("Post", "Content");
+   let post = new Post('Post', 'Content');
 
    console.log(post.toString());
 
    // Post: Post
    // Content: Content
 
-   let scm = new SocialMediaPost("TestTitle", "TestContent", 25, 30);
+   let scm = new SocialMediaPost('TestTitle', 'TestContent', 25, 30);
 
-   scm.addComment("Good post");
-   scm.addComment("Very good post");
-   scm.addComment("Wow!");
+   scm.addComment('Good post');
+   scm.addComment('Very good post');
+   scm.addComment('Wow!');
 
    console.log(scm.toString());
 
