@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # GSON
 
@@ -28,7 +28,7 @@ dependencies {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # GSON Initialization
 
@@ -57,7 +57,7 @@ Gson gson = new GsonBuilder()
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Export a Single Object as JSON
 
@@ -112,7 +112,7 @@ String converted = this.gson.toJson(personalData);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Export Multiple Objects as JSON
 
@@ -168,7 +168,7 @@ String content = this.gson.toJson(listForConversion);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Import a Single Object as JSON
 
@@ -208,7 +208,7 @@ The file path **should be replaced** with an accurate one.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Import Multiple Objects as JSON
 
