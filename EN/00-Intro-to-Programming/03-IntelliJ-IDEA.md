@@ -113,7 +113,7 @@ In the classes, there are methods, which are blocks of code, using to logically 
 
 It sounds complicated, but in bigger projects, a structure like this one is very convenient and allows for a better organization of all necessary files.
 
-ASo, an **IntelliJ IDEA Project** is a container, in which **a few modules are logically bound**. 
+Also, an **IntelliJ IDEA Project** is a container, in which **a few modules are logically bound**. 
 
 In IntelliJ IDEA, a module is an essential part of any project. 
 
