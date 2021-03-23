@@ -1,4 +1,4 @@
-﻿# Problem: Club
+﻿# Problemă: Club
 [slide hideTitle]
 # Club
 [code-task title="Club" taskId="pb-java-exam-Club" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -16,14 +16,11 @@ public class Program {
 [task-description]
 
 ## Descriere
-
 Vremea se încălzește, iar cluburile lansează oferte promițătoare.
 
-Scrieți un program care să calculeze profitul unui disco club  și dacă este atins profitul dorit, ținând cont de următoarele:
+Scrieți un program care să calculeze profitul unui club pentru o seară și să determine dacă este atins profitul dorit, ținând cont de faptul că prețul unui cocktail este egal cu lungimea numelui său.
 
-Prețul unui cocktail este lungimea numelui său.
-
-Dacă prețul unei comenzi este un număr impar, există o reducere de 25% de la prețul comenzii.
+Dacă prețul unei comenzi este un număr impar, există o reducere de 25% din prețul comenzii.
 
 # Intrare
 Veți primi:
@@ -31,7 +28,7 @@ Veți primi:
 
 O serie de două rânduri până la comanda **"Party!"** sau până la atingerea profitului dorit:
 - Numele cocktailului - șir
-- Numărul de cocktailuri pentru comandă - număr întreg în intervalul [1 ... 50]
+- Numărul de cocktailuri din comandă - număr întreg în intervalul [1 ... 50]
 
 ## Ieșire
 Mai întâi, imprimați o linie pe consolă:
@@ -44,7 +41,7 @@ Mai întâi, imprimați o linie pe consolă:
 Apoi imprimați:
 - "**Club income -** \{**club's profit**\} **dollars.**"
 
-Banii trebuie formatați la a doua cifră după punctul zecimal.
+Suma trebuie formatată la a doua cifră după punctul zecimal.
 
 
 ## Exemplu
@@ -59,12 +56,12 @@ Banii trebuie formatați la a doua cifră după punctul zecimal.
 
 [hints]
 [hint]
-Note that the individual price of each cocktail is the length of its name. If the price for an order is an odd number, apply the discount. 
-Calculate the price for each order and add them to the total.
+Țineți cont că prețul individual pentru fiecare cocktail este lungimea numelui său. Dacă prețul unei comenzi este un număr impar, aplicați reducerea.
+Calculați prețul pentru fiecare comandă și adăugați-l la suma totală.
 [/hint]
 [hint]
-If you reach the desired profit before receiving the "Party!" command, print the correct output.
-If you receive the command "Party!" and you haven't reached the desired profit, determine how much money is needed and print the correct output.
+Dacă atingeți profitul dorit înaintea de primiriea comenzii "Party!", tipăriți ieșirea corectă.
+Dacă primiți comanda "Party!" și nu ați atins profitul dorit, determinați de ce sumă mai este nevoie și tipăriți ieșirea corectă.
 [/hint]
 [/hints]
 
