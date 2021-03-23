@@ -1,4 +1,4 @@
-﻿# Problem: Football Tournament
+﻿# Problemă: Football Tournament
 [slide hideTitle]
 # Football Tournament
 [code-task title="Football Tournament" taskId="pb-java-exam-football-tournament" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -16,23 +16,21 @@ public class Program {
 [task-description]
 
 ## Descriere
-Sarcina dvs. este să scrieți un program care să ia numele echipei și să facă statistici despre aceasta.
+Sarcina dvs. este să scrieți un program care să ia numele unei echipe de fotbal și să facă statistici despre aceasta, în funcție de meciurile jucate în acest sezon.
 
-Pe parcursul unui sezon fiecare echipă joacă un anumit număr de meciuri de fotbal și pentru fiecare echipă se acordă puncte de întâlnire în funcție de rezultatul meciului.
-
-Există trei rezultate posibile dintr-o singură întâlnire:
-- W - Echipa este un câștigător și obține 3 puncte
-- D - Întâlnirea s-a încheiat fără câștigător și echipa primește 1 punct
-- L - Echipa a pierdut meciul și nu primește puncte
-
-Scrieți un program care să ia numele unei echipe de fotbal și să afișeze statisticile sale, pe baza meciurilor jucate în acest sezon.
-
-Statisticile sale ar trebui să includă numărul total de puncte câștigate în sezonul curent, statistici detaliate privind rezultatul jocurilor jucate și o rată de bătăi în sezon.
+Statisticile sale ar trebui să includă numărul total de puncte câștigate în sezonul curent, statistici detaliate privind rezultatul jocurilor jucate și rata victoriilor în sezon.
 
 Dacă din anumite motive echipa nu a jucat niciun meci în sezonul curent, se afișează un mesaj special.
 
+Pe parcursul unui sezon fiecare echipă joacă un anumit număr de meciuri de fotbal și pentru fiecare echipă se acordă puncte în funcție de rezultatul meciului.
+
+Există trei rezultate posibile pentru un meci:
+- W - Echipa este câștigătoare și obține 3 puncte
+- D - Meciul s-a încheiat la egalitate și echipa primește 1 punct
+- L - Echipa a pierdut meciul și nu primește puncte
+
 ## Intrare
-veți primi două linii de pe consolă:
+Veți primi două linii de pe consolă:
 - Numele echipei de fotbal despre care facem statistici - șir
 - Numărul de jocuri jucate în sezonul curent - număr întreg în intervalul [0 ... 100]
 
@@ -41,7 +39,7 @@ Pentru fiecare joc jucat, se citește o linie separată:
 
 ## Ieșire
 În funcție de faptul dacă echipa a jucat jocuri în sezonul curent, sunt afișate două tipuri de rezultate.
-- Dacă echipa nu a jucat un singur meci în sezonul curent, o linie este afișată în următorul format:
+- Dacă echipa nu a jucat niciun meci în sezonul curent, o linie este afișată în următorul format:
 	- "\{**team name**\} **hasn't played any games during this season.**"
 - Dacă echipa a jucat un meci sau mai multe, șase linii sunt afișate în următorul format:
 	- "\{**team name**\} **has won** \{**count points**\} **points during this season.**"
@@ -71,14 +69,14 @@ Procentul trebuie formatat la a doua cifră după punctul zecimal.
 
 [hints]
 [hint]
-Determine the total points for the team. Each win is 3 points, draw is 1 and there aren't any points for loses.
+Determinați totalul de puncte al echipei. Fiecare victorie valorează 3 puncte, egalitatea valorează 1 punct, iar pentru înfrângeri nu se acordă puncte.
 [/hint]
 [hint]
-Keep track of each won, draw and lost game.
-Calculate the win rate in percentage and don't forget to format it.
+Monitorizați fiecare victorie, egalitate și înfrângere.
+Calculați rata victoriilor în procente și nu uitați să o formatați.
 [/hint]
 [hint]
-Print the correct output.
+Tipăriți ieșirea corectă.
 [/hint]
 [/hints]
 
