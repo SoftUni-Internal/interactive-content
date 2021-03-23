@@ -214,7 +214,7 @@ console.log(result.height);
 
 In the example, we use the `.reduceRight()` method. 
 
-First, write called "**delegate**", which will take two parameters. 
+First, write a function called "**delegate**", which will take two parameters. 
 
 The "**acc**" array will be our result after the execution of the `.reduceRight()` method. 
 
