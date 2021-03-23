@@ -77,40 +77,14 @@ Ieșirea constă dintr-o singură linie:
 | win | |
 | **Finish** | |
 
-
-## Comentarii:
-
-Turneul durează 2 zile.
-
-**Prima zi:**
-
-Jucăm volei și câștigăm -> am câștigat 20 de euro.
-
-Jucăm fotbal și pierdem -> 0 Euro.
-
-Jucăm baschet și câștigăm -> am câștigat încă 20 de euro.
-
-Primim comanda Finish și jocurile pentru ziua respectivă s-au încheiat.
-
-Câștigat pentru ziua 20 + 0 + 20 = 40 euro. 
-
-Am câștigat mai multe jocuri decât am pierdut, prin urmare sporim banii zilei cu 10% -> 44 euro.
-
-**A doua zi:**
-
-Jucăm golf și câștigăm -> 20 euro.
-
-Jucăm tenis și câștigăm -> 20 euro.
-
-Jucăm badminton și câștigăm -> 20 euro.
-
-Primim comanda "**Finish**" și jocurile pentru ziua respectivă s-au încheiat.
-
-Câștigat 20 + 20 + 20 = 60 euro. Am câștigat doar jocuri, respectiv mărim banii zilei cu 10% -> 66 euro.
-
-Banii câștigați din cele două zile: 44 + 66 = 110 euro.
-
-Deoarece avem mai multe victorii decât pierderi, câștigăm turneul și creștem banii cu 20% -> 132 euro.
+[hints]
+[hint]
+Calculate how much money you have won for each day of the tournament. If you have more wins than loses in a day increase the earnings by 10%.
+[/hint]
+[hint]
+Upon reaching the "Finish" command, add the total amount of money earned and if you have won on most days, you win the tournament and increase your total amount money raised by 20%. Then print the correct output.
+[/hint]
+[/hints]
 
 
 
