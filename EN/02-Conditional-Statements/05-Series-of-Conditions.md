@@ -29,7 +29,7 @@ else {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-25-27-series-of-conditions-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Print out the actual word for one of the digits from 1 to 9 (a digit is read from the console).
+Print out the word representing one of the digits from 1 to 9 (a digit is read from the console).
 
 After receiving the digit, we can run it through a **sequence of conditions** and print out the relevant English word:
 ```java live
@@ -58,7 +58,7 @@ if (num == 1) {
 }
 ```
 
-The program logic **sequentially compares** the input number with the digits from 1 to 9,**each following comparison is being performed only in case the previous comparison was not true**. 
+The program **sequentially compares** the input number with the digits from 1 to 9,**each following comparison is being performed only in case the previous comparison was not true**. 
 
-Eventually, if none of the `if` statements are true, the last `else` **clause** is performed.
+Eventually, if none of the `if` statements are true, the `else` **clause** is performed.
 [/slide]
