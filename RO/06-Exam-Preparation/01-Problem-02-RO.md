@@ -23,8 +23,7 @@ function pressHouse() {
 
 Trebuie să creați mai multe clase pentru **Casa de presă**.
 
-**Implementăm** următoarele clase:
-"**Article**", "**ShortReports**", "**BookReview**".
+**Implementăm** următoarele clase: "**Article**", "**ShortReports**", și "**BookReview**".
 
 ## Article
 
@@ -44,8 +43,8 @@ Title: {title}
 Content: {content}
 ```
 
-## Rapoarte scurte
-Clasa "**Rapoarte scurte**" moștenește de la clasa "**Articol**".
+## ShortReports
+Clasa "**ShortReports**" moștenește de la clasa "**Article**".
 
 - `constructor(title, content, originalResearch)`
 
@@ -79,7 +78,9 @@ Dacă nu atunci generați o excepție cu următorul mesaj:
 
 "**The comment is added.**"
 
+
 - `toString()` - Această funcție ar trebui să extindă metoda `toString()` clasei **Article** adăugând niște linii adiționale:
+
 
 "**Original Research:** \{ **title** \} **by** \{ **author** \}"
 
@@ -93,20 +94,19 @@ Comment content goes here
 
 **Notă: Pentru mai multe explicații uitați-vă la exemplele de mai jos!**
 
-## Recenzie de carte
+## BookReview
 
 Clasa "**BookReview"** moștenește de la clasa "**Article**".
 
-- `constructor(title, content, book)`
+- `constructor(title, content, book)` - **BookReview** ar trebui să aibă **4 proprietăți:**
+    - **title** \- string
+    - **content** \- string
+    - **book** \- un obiect cu proprietățile **nume** și **autor**
+    - **customers** \- o mulțime de obiecte **personalizate**.Fiecare obiect **personalizat** ar trebui să aibă următoarea structură "\{**customerName, orderDescription**\}"
 
-**Recenzia de carte** ar trebui să aibă **4 proprietăți:**
 
-- **title** \- string
-- **content** \- string
-- **book** \- un obiect cu proprietățile **nume** și **autor**
-- **customers** \- o mulțime de obiecte **personalizate**.Fiecare obiect **personalizat** ar trebui să aibă următoarea structură "\{**customerName, orderDescription**\}"
+- "**addCustomer(customerName,  orderDescription)**": 
 
-"**addCustomer(customerName, orderDescription)**": 
 
 Această **funcție** ar trebui să primească "**customerName**" și "**orderDescription**" ca șiruri. 
 
@@ -116,9 +116,11 @@ Aici ar trebui să verificați dacă **mulțimea clienților** și aceeqași com
 
 Altfel adăugați obiectul **client** în **mulțimea de clienți** și returnează următorul mesaj:
 
-"\{**customerName**\} **has ordered a review for** \{**book name**\}`
 
-`toString()`: 
+"\{ **customerName** \} **has ordered a review for** \{ **book name** \}"
+
+
+- `toString()`: 
 
 Această **funcție** ar trebui să extindă metodă `toString()` clasei "**Article**" prin adăugarea unor linii:
 
@@ -153,45 +155,83 @@ function pressHouse() {
 
 ```
 
-## Exemple
-Acesta este un exemplu de cum ar trebui folosit codul:
 
-**Exemple de utilizare a codului**
+# Exemple
+Acesta este un exemplu de cum ar trebui folosit codul.
+
+
+**Exemple de utilizare a codului:**
 
 ```js
 let classes = solveClasses();
-let lorem = new classes.Article("Lorem", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non tortor finibus, facilisis mauris vel…");
+
+let lorem = new classes.Article("Lorem", 
+`Lorem ipsum dolor sit amet, consectetur adipiscing
+ elit. Fusce non tortor finibus, facilisis mauris vel…`);
+
 console.log(lorem.toString()); 
 ------------------------------
-let short = new classes.ShortReports("SpaceX and Javascript", "Yes, it is true that in its recent launch, the SpaceX Dragon 2 Flight used technology based on Chromium and JavaScript. What are your views on this?", { title: "Dragon 2", author: "wikipedia.org" });
-console.log(short.addComment("Thank God they didn't use Java."))
-short.addComment("In the end the JavaScript features are executed in C++ - the underlying language.")
+let short = new classes.ShortReports("SpaceX and Javascript",
+`Yes, it is true that in its recent launch, the SpaceX Dragon
+ 2 Flight used technology based on Chromium and JavaScript. 
+ What are your views on this?`,
+{ title: "Dragon 2", author: "wikipedia.org" });
+
+console.log(short.addComment("Thank God they didn't use Java."));
+
+short.addComment(`In the end the JavaScript features are
+ executed in C++ - the underlying language.`);
+
 console.log(short.toString()); 
 ------------------------------
-let book = new classes.BookReview("The Great Gatsby is so much more than a love story", "The Great Gatsby is in many ways similar to Romeo and Juliet, yet I believe that it is so much more than just a love story. It is also a reflection on the hollowness of a life of leisure. ...", { name: "The Great Gatsby", author: "F. Scott Fitzgerald" });
+let book = new classes.BookReview(`The Great Gatsby is so much
+ more than a love story`, `The Great Gatsby is in many ways
+ similar to Romeo and Juliet, yet I believe that it is so
+ much more than just a love story. It is also a reflection
+ on the hollowness of a life of leisure. ...`,
+{ name: "The Great Gatsby", author: "F. Scott Fitzgerald" });
+
 console.log(book.addCustomer("The Guardian", "100 symbols"));
+
 console.log(book.addCustomer("Goodreads", "30 symbols"));
+
 console.log(book.toString()); 
 ```
 
-**Datele de ieșire corespunzătoare**
+**Datele de ieșire corespunzătoare:**
+
 
 ```
 Title: Lorem
-Content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non tortor finibus, facilisis mauris vel, ultricies est. Phasellus id pellentesque risus. Morbi aliquet at lectus ac malesuada. Morbi eu erat orci. Donec id turpis elit. Donec iaculis sapien odio, sit amet cursus lacus rutrum sit amet. Cras ac urna sapien. Pellentesque porta mauris ac dolor commodo, congue condimentum orci varius. Ut ultrices pretium commodo. Aenean facilisis mattis facilisis.
+Content: Lorem ipsum dolor sit amet, consectetur 
+adipiscing elit. Fusce non tortor finibus, facilisis
+mauris vel, ultricies est. Phasellus id pellentesque 
+risus. Morbi aliquet at lectus ac malesuada. 
+Morbi eu erat orci. Donec id turpis elit. Donec
+iaculis sapien odio, sit amet cursus lacus rutrum
+sit amet. Cras ac urna sapien. Pellentesque porta 
+mauris ac dolor commodo, congue condimentum orci 
+varius. Ut ultrices pretium commodo. Aenean facilisis
+mattis facilisis.
 ----------------------
 The comment is added.
 Title: SpaceX and Javascript
-Content: Yes, it is true that in its recent launch, the SpaceX Dragon 2 Flight used technology based on Chromium and JavaScript. What are your views on this?
+Content: Yes, it is true that in its recent launch, 
+ the SpaceX Dragon 2 Flight used technology based on 
+ Chromium and JavaScript. What are your views on this?
 Original Research: Dragon 2 by wikipedia.org
 Comments:
 Thank god they didn't use Java.
-In the end the JavaScript features are executed in C++ - the underlying language.
+In the end the JavaScript features are executed in 
+C++ - the underlying language.
 ----------------------
 The Guardian has ordered a review for The Great Gatsby
 Goodreads has ordered a review for The Great Gatsby
 Title: The Great Gatsby is so much more than a love story
-Content: The Great Gatsby is in many ways similar to Romeo and Juliet, yet I believe that it is so much more than just a love story. It is also a reflection on the hollowness of a life of leisure. ...
+Content: The Great Gatsby is in many ways similar to Romeo 
+and Juliet, yet I believe that it is so much more 
+than just a love story. It is also a reflection on the 
+hollowness of a life of leisure. ...
 Book: The Great Gatsby
 Orders:
 The Guardian - 100 symbols
