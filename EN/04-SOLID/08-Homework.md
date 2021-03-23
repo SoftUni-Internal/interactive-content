@@ -36,8 +36,8 @@ Logger **logs** data and time (**String**) and a message (**String**).
 
 The library should have the following components:
 
-- **Layouts** - define the format in which messages should be appended (e.g. **SimpleLayout** displays logs in the format **"\{date-time\} - \{report level\} - \{message\}"** )
-- **Appenders -** responsible for appending the messages somewhere (e.g. **Console** , **File** , etc.)
+- **Layouts** - define the format in which messages should be appended (e.g. **SimpleLayout** displays logs in the format "\{**date-time**\} - \{**report level**\} - \{**message**\}")
+- **Appenders** - responsible for appending the messages somewhere (e.g. **Console** , **File** , etc.)
 - **Loggers** - hold methods for various kinds of logging ( **warnings** , **errors** , **info** , etc.)
 
 Whenever a logger is told to **log** something, it calls all of its appenders and tells them to append the message. 
@@ -62,7 +62,7 @@ Name everything accordingly.
 
 The library should provide the following ready classes for the client:
 
-- **SimpleLayout** - defines the format "\{date-time\} - \{report level\} - \{message\}"
+- **SimpleLayout** - defines the format "\{**date-time**\} - \{**report level**\} - \{**message**\}"
 
 - **ConsoleAppender** - appends a log to the console using the provided layout
 
@@ -193,7 +193,7 @@ If no report level is provided, the appender should be set to record all message
 
 If there is no report level, value is **INFO**.
 
-Next, until you get the **END** command, you will receive messages containing report level, time, and message separated by pipe `|`:
+Next, until you get the **END** command, you will receive messages containing report level, time, and message separated by a pipe `|`:
 
 - `<REPORT LEVEL>|<time>|<message>`
 
@@ -223,26 +223,34 @@ Appender type: `<appender type>`, Layout type: `<layout type>`, Report level: `<
 
 ## Input
 
-
+```
 2
 ConsoleAppender SimpleLayout CRITICAL
 FileAppender XmlLayout
 INFO\|3/26/2015 2:08:11 PM\|Everything seems fine
-WARNING\|3/26/2015 2:22:13 PM\|Warning: ping is too high - disconnect imminent
+WARNING\|3/26/2015 2:22:13 PM\|Warning: ping is 
+too high - disconnect imminent
 ERROR\|3/26/2015 2:32:44 PM\|Error parsing request
-CRITICAL\|3/26/2015 2:38:01 PM\|No connection string found in App.config
-FATAL\|3/26/2015 2:39:19 PM\|mscorlib.dll does not respond
+CRITICAL\|3/26/2015 2:38:01 PM\|No connection string
+found in App.config
+FATAL\|3/26/2015 2:39:19 PM\|mscorlib.dll 
+does not respond
 END
-
+```
 
 ## Output
 
-3/26/2015 2:38:01 PM - CRITICAL - No connection string found in App.config
-3/26/2015 2:39:19 PM - FATAL - mscorlib.dll does not respond
+```
+3/26/2015 2:38:01 PM - CRITICAL - No connection string 
+found in App.config
+3/26/2015 2:39:19 PM - FATAL - mscorlib.dll does 
+not respond
 Logger info
-Appender type: ConsoleAppender, Layout type: SimpleLayout, Report level: CRITICAL, Messages appended: 2
-Appender type: FileAppender, Layout type: XmlLayout, Report level: INFO, Messages appended: 5, File size: 37526
-
+Appender type: ConsoleAppender, Layout type: SimpleLayout,
+Report level: CRITICAL, Messages appended: 2
+Appender type: FileAppender, Layout type: XmlLayout, 
+Report level: INFO, Messages appended: 5, File size: 37526
+```
 [/task-description]
 [tests]
 [test open]
