@@ -1,7 +1,7 @@
 # Strings
 
 [slide hideTitle]
-# What is a String?
+# What a String is?
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-3-4-what-is-a-string-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -9,9 +9,9 @@ A **String** is an **object** that represents a **sequence of characters** - `ch
 
 [image assetsSrc="String-example(1).png" /]
 
-Just like an array of chars, **Strings are immutable**.
+Since arrays are immutable, **Strings are immutable** as well.
 
-Whenever a **change** to a String is made, an entirely **new String object is created**. 
+Whenever a **change** to a String is made, an entirely **new object of type String is created**. 
 
 ```java live
 String name = "SoftUni!";
@@ -22,7 +22,7 @@ name = "Peter!";
 System.out.println(name.hashCode());
 ```
 
-After assigning a new value to the **name** variable in the previous example, it appears as a new address in memory - a **newString object is created**.
+After assigning a new value to the **name** variable in the previous example, it appears as a new address in the memory, because a **new object** of type String is created.
 
 **Strings use Unicode** (can use most alphabets, e.g. Arabic) 
 
@@ -36,7 +36,7 @@ The main **features** of **Strings** are:
 
 - Strings are used to **store text**
 
-- Java String class has a lot of **methods** for **text processing**
+- Java String class provides a lot of **methods** for **text processing**
 
 - Strings are immutable(**read-only**)
 
@@ -57,19 +57,19 @@ The main **features** of **Strings** are:
 
 There are several ways to initialize a `String`:
 
-- Initializing using **String literal**
+- Initializing using a **String literal**
 
 ```java
 String greeting = "Hello, SoftUni";
 ```
 
-- Initializing using the `new` - keyword
+- Initializing using the `new` keyword
 
 ```java 
 String greeting = new String ("Hello, SoftUni");
 ```
 
-- Initializing using `char []`
+- Initializing using an array of characters (`char []`)
 
 ```java live
 char [] charArr = new char[]{'H','e','l','l','o'};
