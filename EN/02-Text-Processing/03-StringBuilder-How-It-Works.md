@@ -7,7 +7,7 @@
 
 Just like the `String`, the `StringBuilder` is a **sequence of characters**. 
 
-The main difference between them is that the `StringBuilder` is **mutable(can be modified).**
+The main difference between them is that the `StringBuilder` is **mutable(it can be modified).**
 
 Unlike strings, every `StringBuilder` keeps a buffer space, allocated in advance.
 
@@ -26,7 +26,7 @@ System.out.println(sb.length());   // 10
 System.out.println(sb.capacity()); // 16   
 ```
 
-The `capacity()` is always **greater than or equal** to the `length()` of the string and automatically expands whenever necessary to add more text or symbols.
+The **capacity** is always **greater than or equal** to the **length** of the string and it automatically expands whenever it is necessary to add more text or symbols.
 
 [image assetsSrc="StringBuilder-example(1).png" /]
 
@@ -47,7 +47,7 @@ StringBuilder sb = new StringBuilder();
 System.out.println(sb.capacity()); // 16   
 ```
 
-- `StringBuilder(String str)` - Creates a **StringBuilder** with the **specified string**
+- `StringBuilder(String str)` - Creates a **StringBuilder** initialized to the content of the **specified string**
 
 ```java live
 StringBuilder sb = new StringBuilder("Hello, JAVA");
@@ -56,7 +56,7 @@ System.out.println(sb);
 
 ```
 
-- `StringBuilder(int capacity)` - Creates an **empty** **StringBuilder** with the **specified capacity**
+- `StringBuilder(int capacity)` - Creates an **empty** **StringBuilder** with the **specified capacity** as length
 
 ```java live
 StringBuilder sb = new StringBuilder(25);
@@ -72,6 +72,10 @@ System.out.println(sb.capacity()); // 25
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-27-28-concatenation-vs-stringbuilder-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Concatenating** strings is a **slow** operation because each iteration creates a **new String**
+
+String concatenation forms a **new string** that is the combination of multiple strings. 
+
+Because of the fact that a new string is formed each time we concatenate two strings, concatenation is considered to be a **slow operation**. 
 
 Copy the following code and run it locally:
 
@@ -89,9 +93,9 @@ for (int i = 0; i < 1000000; i++){
 System.out.println(new Date());
 ```
 
-It is clear that the time of program execution is about 1 minute, which is slow.
+It is clear that the time of the program execution is about 1 minute, which is slow.
 
-The same operation can be performed with `StringBuilder`:
+The same operation can be performed by using a `StringBuilder`:
 
 ```java
 System.out.println(new Date());
@@ -105,7 +109,7 @@ for (int i = 0; i < 1000000; i++){
 System.out.println(new Date());
 ```
 
-The time of program execution is about 1 second, a lot faster than the concatenation.
+The time of the program execution is about 1 second, which is a lot faster than the concatenation.
 
 [/slide]
 
@@ -115,9 +119,9 @@ The time of program execution is about 1 second, a lot faster than the concatena
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-29-20-31-stringbuilder-methods-1-2-3-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Here are some of **StringBuilder**'s methods and what they do:
+Here are some of **StringBuilder** class methods:
 
-- `append()` - **Appends** a string value **to the end** of the current sequence of characters"
+- `append()` - **Appends** a string value **to the end** of the current sequence of characters
 
 ```java live
 StringBuilder sb = new StringBuilder();
@@ -129,7 +133,7 @@ sb.append("I sent you an email.");
 System.out.println(sb.toString());
 ```
 
-- `insert(int index, String str)` - **Inserts** a string at the **specified** character **position**
+- `insert(int index, String str)` - **Inserts** the given string at the **specified position**
 
 ```java live
 StringBuilder sb = new StringBuilder("Hello Peter, how are you?");
@@ -139,7 +143,7 @@ sb.insert(11, " Smith");
 System.out.println(sb.toString());
 ```
 
-- `length()` - Returns the **length** of the **string** in the buffer
+- `length()` - Returns the **length** of the **string**
 
 ```java live
 StringBuilder sb = new StringBuilder("Hello Peter, how are you?");
@@ -147,7 +151,7 @@ StringBuilder sb = new StringBuilder("Hello Peter, how are you?");
 System.out.println(sb.length()); // 25
 ```
 
-- `setLength(int newLength)` - Sets the **length of the string** and **truncates** the **last characters** if `newLength` is smaller than `length()` 
+- `setLength(int newLength)` - Sets the **length of the string** to be equal to the **newLength** that is passed as an argument. If the **newLength** is less than the old length, the characters at the end of the string are truncated.
 
 ```java live
 StringBuilder sb = new StringBuilder("Hello Peter, how are you?");
@@ -157,7 +161,7 @@ sb.setLength(12);
 System.out.println(sb.toString()); // Hello Peter,
 ```
 
-If **newLength** is **greater** than **length()**, **null** characters are **added** at the end of the string.
+If the **newLength** is greater than or equal to the old length, **null** characters are appended at the end of the string.
 
 ```java live
 StringBuilder sb = new StringBuilder("Hello Peter, how are you?");
@@ -169,7 +173,7 @@ System.out.println(sb.toString()); // Hello Peter, how are you?
 System.out.println(sb.length()); // 28
 ```
 
-- `charAt(int index)` - Gets the `char` at the specified `index`.
+- `charAt(int index)` - Returns the character at the **specified index**
 
 ```java live
 StringBuilder sb = new StringBuilder();
@@ -179,7 +183,7 @@ sb.append("Hello Peter, how are you?");
 System.out.println(sb.charAt(1)); // e
 ```
 
-- `replace(int startIndex, int endIndex, String str)` - Replaces the characters in a substring.
+- `replace(int startIndex, int endIndex, String str)` - Replaces the substring from **startIndex** to **endIndex-1** with the specified string 
 
 ```java live
 StringBuilder sb = new StringBuilder("Hello Peter, how are you?");
@@ -189,7 +193,7 @@ sb.replace(6, 11, "George");
 System.out.println(sb.toString()); // Hello George, how are you?
 ```
 
-- `toString()` - **Converts** the value of the current instance **to a String**
+- `toString()` - **Converts** the value of the current instance **into a String**
 
 ```java live
 StringBuilder sb = new StringBuilder("Hello Peter, how are you?");
