@@ -3,13 +3,13 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/EN/interactive-programming-basics-with-java-for-loops-19-20-for-loop-with-step-and-demo -,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In this section, we will look into a particular and very important part of the **for-loop**, namely the **loop-step**.
+In this section, we will look into a particular and very important part of the **for-loop**, namely its **loop-step**.
 
-**The loop-step** is that **part** of the **for-loop** construction that specifies **how** to **increase** or **decrease** the value of the **llop variable**. 
+**The loop-step** is that **part** of the **for-loop** construction that specifies **how** to **increase** or **decrease** the value of the **loop variable**. 
 
-It is declared last in the **declarative structure** of the for-loop.
+It the last element of the **declarative structure** of the for-loop.
 
-Most often, we have **a size of** `1`, and in this case, instead of writing `i += 1` or `i -= 1` we can use a shorter syntax: `i++` or `i--`.
+Most often, we have **a step size of** `1`, and in this case, instead of writing `i += 1` or `i -= 1` we can use a shorter syntax: `i++` or `i--`.
 
 ```java live
 for (int i = 0; i < 10; i++) {
@@ -26,7 +26,7 @@ for (int i = 0; i < 10; i += 2) {
 }
 ```
 
-We might want to have a **decreasing step** - `i -=` and a step size. 
+We might want to have a **decreasing step** - `i -=` . 
 
 In this case, we should pay attention to the end condition to **avoid** creating an **infinite loop**.
 
