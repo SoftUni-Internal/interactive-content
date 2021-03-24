@@ -53,7 +53,7 @@ Iată câteva dintre **metodele** și **proprietățile** care sunt utilizate î
 Fiecare articol din acea colecție are **două** caracteristici - **atribut** și **valoare**.
 
 - `.setAttribute()` - O metodă, utilizată pentru a **adăuga** un atribut unui element sau pentru a-l **actualiza**, dacă elementul are deja atributul dat
-- `.style` - O proprietate, utilizată pentru a actualiza **direct**** CSS-ul** unui element
+- `.style` - O proprietate, utilizată pentru a actualiza **direct CSS-ul** unui element
 
 ```js
 <h1 id="title">This is the title of a website</h1>
@@ -91,7 +91,7 @@ let newH1 = h1.cloneNode(true); //returnează un duplicat al etichetei h1 de mai
 ```
 Este important să știm că, deși aceste elemente sunt create, ele **nu există** în documentul HTML.
 
-Ele sunt doar **variabile Javascript**. 
+Ele sunt doar **variabile JavaScript**. 
 
 [/slide]
 
@@ -492,10 +492,10 @@ Să presupunem că există următorul cod HTML:
 
 ```js
 <div id="container">
- <p id="my-name"> My name is </p>
+   <p id="my-name"> My name is </p>
 </div>
 <form>
- <input id="name-input">
+   <input id="name-input">
 </form>
 ```
 
@@ -577,7 +577,7 @@ Deoarece un element HTML poate avea **mai multe nume de clase**, există o propr
 
 ```js
 <h1 id="title" class="title red left">
- Heading 1
+   Heading 1
 </h1>
 ```
 
@@ -628,15 +628,15 @@ function growingWord(){
 
 ```js
 <div id="exercise">
- <div id="colors">
- <div id="blueDiv">Blue</div>
- <div id="greenDiv">Green</div>
- <div id="redDiv">Red</div>
- </div>
- <div>
- <button type="button" onclick="growingWord()">CHANGE</button>
- </div>
- <p>Growing Word</p>
+   <div id="colors">
+      <div id="blueDiv">Blue</div>
+      <div id="greenDiv">Green</div>
+      <div id="redDiv">Red</div>
+   </div>
+   <div>
+      <button type="button" onclick="growingWord()">CHANGE</button>
+   </div>
+   <p>Growing Word</p>
 </div>
 ```
 De fiecare dată când facem **clic** pe butonul `[CHANGE]`, **culoarea** și **dimensiunea** paragrafului **care conține** "**Growing Word**" ar trebui să se schimbe!
@@ -645,7 +645,7 @@ De fiecare dată când facem **clic** pe butonul `[CHANGE]`, **culoarea** și **
 
 De asemenea, **culoarea** acelui paragraf ar trebui să se schimbe, în funcție de **culoarea anterioară**.
 
-# Exemplu:
+## Exemplu:
 
 - Dacă facem clic **o dată**, culoarea ar trebui schimbată în **albastru** și dimensiunea fontului trebuie să fie **2** (prima dimensiune inițială)
 - Dacă facem clic **de două ori**, culoarea ar trebui schimbată în **verde** și dimensiunea fontului ar trebui să fie **4** (2 * 2)
@@ -658,9 +658,9 @@ Treceți prin aceste trei culori (albastru, verde, roșu) din nou și din nou ș
 
 ```js
 <div id="exercise">
- <div id="colors">...</div>
- <div>... </div>
- <p style="color: blue; font-size: 2px;"> Growing Word</p>
+   <div id="colors">...</div>
+   <div>... </div>
+   <p style="color: blue; font-size: 2px;"> Growing Word</p>
 </div>
 ```
 
@@ -668,20 +668,19 @@ Treceți prin aceste trei culori (albastru, verde, roșu) din nou și din nou ș
 
 ```js
 <div id="exercise">
- <div id="colors">...</div>
- <div>... </div>
- <p style="color: green; font-size: 4px;">Growing Word</p>
+   <div id="colors">...</div>
+   <div>... </div>
+   <p style="color: green; font-size: 4px;">Growing Word</p>
 </div>
 ```
 
 [image assetsSrc="JS-Advanced-DOM-Lab-12.jpg" /]
 
 ```js
-
 <div id="exercise">
- <div id="colors">... </div>
- <div>...</div>
- <p style="color: red; font-size: 8px;"> Growing Word</p>
+   <div id="colors">... </div>
+   <div>...</div>
+   <p style="color: red; font-size: 8px;"> Growing Word</p>
 </div>
 ```
 
@@ -958,11 +957,11 @@ Toate celelalte din interiorul elementului părinte sunt numite **elemente copil
 
 ```js
 <article id="first-post">
- <h1>Today's news</h1>
- <p>Hundreds of people gather to listen to singing kid on the street.</p>
+   <h1>Today's news</h1>
+   <p>Hundreds of people gather to listen to singing kid on the street.</p>
 </article>
-
 ```
+
 Proprietatea read-only `.children` poate fi utilizată pentru a obține toți copiii ai unui element părinte.
 
 ```js
@@ -991,14 +990,12 @@ Alte proprietăți pentru navigarea între elementele **următoare** și cele **
 - `.previousElementSibling`
 
 ```js
-
 <ul id="names">
- <li>Thomas</li>
- <li>Kate</li>
- <li>Anne</li>
- <li>David</lid>
+   <li>Thomas</li>
+   <li>Kate</li>
+   <li>Anne</li>
+   <li>David</lid>
 </ul>
-
 ```
 
 ```js

@@ -42,9 +42,9 @@ Vedem că **textboxes** și **div**s au **id** attribuite pe ele.
 ```js
 <div id="wrapper">
    <input type="text" id="firstNumber" 
-        value="13.33" disabled>
+      value="13.33" disabled>
    <input type="text" id="secondNumber" 
-        value="22.18" disabled>
+      value="22.18" disabled>
    <div id="result"></div>
 </div>
 
@@ -59,11 +59,9 @@ Obținem valorile celor două **textboxes**, valoarea unui textbox, așa cum ne-
 Pentru a obține un **number**, trebuie să folosim o funcție pentru a le **analiza**.
 
 ```js
-let firstNumber = document
-    .getElementById('firstNumber').value;
+let firstNumber = document.getElementById('firstNumber').value;
 
-let secondNumber = document
-    .getElementById('secondNumber').value;
+let secondNumber = document.getElementById('secondNumber').value;
 ```
 
 Tot ce a mai rămas acum este să adăugați rezultatul la **div**.
@@ -72,13 +70,10 @@ Folosim aceeași funcție pentru a obține elementul **result** după id și pen
 
 ```js
 function subtract() {
-    let firstNumber = Number(document
-        .getElementById('firstNumber').value);
-    let secondNumber = Number(document
-        .getElementById('secondNumber').value);
+    let firstNumber = Number(document.getElementById('firstNumber').value);
+    let secondNumber = Number(document.getElementById('secondNumber').value);
 
-    document.getElementById('result')
-        .textcontent = firstNumber - secondNumber;
+    document.getElementById('result').textcontent = firstNumber - secondNumber;
 }
 
 ```
