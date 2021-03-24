@@ -7,9 +7,9 @@ Now that we know about the **for-loop** and its structure,
 
 we will see what an **infinite loop** is and when it occurs.
 
-An **infinite loop** is a loop that **repeats infinitely**. 
+An **infinite loop** is a loop that **repeats indefinitely**. 
 
-An infinite **for-loop** occurs when there is **no condition to end the loop**.
+An infinite **for-loop** occurs when **it is set up so that it never meets its exit condition**.
 
 Here is what a **for-loop** with no exit condition might look like:
 ```java live
@@ -20,7 +20,7 @@ for ( ; ; ) {
 
 Usually, it is the result of a programming error - for example, when the exit conditions are incorrectly placed. 
 
-An infinite loop is usually not dangerous but be annoying when it occurs.
+An infinite loop is usually not dangerous but can be troublesome when it occurs.
 
 So we have to be careful not to cause one by accident.
 [/slide]
