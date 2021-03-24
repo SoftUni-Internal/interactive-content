@@ -6,7 +6,7 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/02-Conditions/02-conditional-statements-js-24-25-Sequence-of-if-else-conditions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Uneori trebuie să facem o succesiune de condiții înainte de a decide ce acțiuni vor executa programul nostru.
+Uneori trebuie să facem o succesiune de condiții înainte de a decide ce acțiuni va executa programul nostru.
 
 În astfel de cazuri, putem aplica construcția `if-else if ... -else` **în serie**.
 
