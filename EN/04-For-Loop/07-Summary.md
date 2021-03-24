@@ -7,9 +7,9 @@
 
 - For-loops
   
-  * how to define for-loops
+  * Defineing for-loops
 
-  * for-loops repeat a certain block of code
+  * For-loops repeat a certain block of code
 
 ```java live
 for (int i = 1; i <= 10; i++) {
