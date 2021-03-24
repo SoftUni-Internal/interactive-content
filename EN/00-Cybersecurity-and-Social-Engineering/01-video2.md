@@ -1,3 +1,0 @@
-[slide hideTitle]
-# Video
-[/slide]
