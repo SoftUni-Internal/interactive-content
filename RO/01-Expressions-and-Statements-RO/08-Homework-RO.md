@@ -724,7 +724,7 @@ Scrieți un program de consolă care citește un număr **întreg** `a` și calc
 ## Intrare
 
 Citiți de pe consolă:
-- dimensiunea pătratului - un număr **întreg** în intervalul [1 ... 1000]
+- Dimensiunea pătratului - un număr **întreg** în intervalul [1 ... 1000]
 
 ## Ieșire
 
@@ -1294,7 +1294,9 @@ Intrarea va fi formată din două linii de pe consolă:
 - Numărul celorlalte animale - un număr întreg în intervalul \[0 ... 100 \]
 
 ## Ieșire
-Imprimați pe consolă: "\{**total sum**\} **dollars**". Rezultatul trebuie să fie formatat la al doilea punct zecimal.
+Imprimați pe consolă: "\{**total sum**\} **dollars**". 
+
+Rezultatul trebuie să fie formatat la al doilea punct zecimal.
 
 ## Exemple
 
