@@ -5,7 +5,7 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-30-29-Expressions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Expresiile** sunt secvențe de operatori, litere și variabile care sunt evaluate ca o valoare. 
+**Expresiile** sunt secvențe de operatori, literali și variabile care sunt evaluate ca o valoare. 
 
 * Constă din cel puțin un **operand**
 
@@ -18,13 +18,13 @@ let y = x + 5;
 let name = "John Doe";
 ```
 
-In majoritatea contextelor în care sunt folosite expresiile, ca de exemplu, în instrucțiuni, acestea trebuie să returneze o valoare. 
+În majoritatea contextelor în care sunt folosite expresiile, ca de exemplu, în instrucțiuni, acestea trebuie să returneze o valoare. 
 
 * Dacă `x` și `y` sunt numere, expresia `x + y` este evaluată ca o valoare numerică
 
 ## Expresiile numerice 
 
-In programare, putem calcula expresii numerice, de exemplu:
+În programare, putem calcula expresii numerice, de exemplu:
 
 ```js
 let r = (150-20) / 2 + 5;
