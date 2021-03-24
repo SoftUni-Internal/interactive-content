@@ -1575,11 +1575,15 @@ The value of each element can include 0 and must be an Integer.
 Generate all combinations of 5 digits, the first is: 
 0\+0\+0\+0\+0=0, but because it is not equal to 25,
 continuing 0\+0\+0\+0\+1=1 - again, it\'s not 25, etc.
+[/hint]
+[hint]
 We come to the first valid combination:
 0\+0\+0\+0\+25=25, expanding the number of valid
 combinations of 1, the second valid combination is:
 0\+0\+0\+1\+24=25
 The third: 0\+0\+0\+2\+23=25  etc.
+[/hint]
+[hint]
 After generating all possible combinations,
 the number of valid combinations is 23751.
 [/hint]
