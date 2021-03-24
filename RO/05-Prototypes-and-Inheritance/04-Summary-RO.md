@@ -8,7 +8,7 @@
 
 - Ce este moștenirea?:
 
-    - **Moștenirea** este abilitatea unei clase de a copia funcțiile de la altă clasă
+    - **moștenirea** este abilitatea unei clase de a copia funcțiile de la altă clasă
 
     - clasa care moștenește se numește **Copil** și cea moștenită se numește **Părinte**
 

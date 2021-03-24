@@ -1273,16 +1273,16 @@ In case **there are no comments**, return information only about the **title**, 
 ## Input
 
 ```js
-   let post = new Post("Post", "Content");
+   let post = new Post('Post', 'Content');
 
    console.log(post.toString());
 
    let scm = new SocialMediaPost(
-       "TestTitle", "TestContent", 25, 30);
+       'TestTitle', 'TestContent', 25, 30);
 
-   scm.addComment("Good post");
-   scm.addComment("Very good post");
-   scm.addComment("Wow!");
+   scm.addComment('Good post');
+   scm.addComment('Very good post');
+   scm.addComment('Wow!');
 
    console.log(scm.toString());
 ```

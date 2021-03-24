@@ -795,7 +795,7 @@ constructor(name, age) {
 }
 ```
 
-Funcția `work ()` trebuie să parcurgă lista sarcinilor și să o tipărească pe cea curentă.
+Funcția `work()` trebuie să parcurgă lista sarcinilor și să o tipărească pe cea curentă.
 
 Cel mai simplu mod de a face acest lucru este să deplasați primul element din matrice și să îl împingeți până la capăt.
 
@@ -1189,13 +1189,13 @@ yes
 
 [slide hideTitle]
 
-# Problemă: Posts
+# Problem: Posts
 
 [code-task title="Posts" taskId="js-advanced-prototypes-and-inheritance-posts" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
    function posts() {
-      // Scrieți codul aici
+      // Scrieți codul dvs. aici
    }
 ```
 
@@ -1212,8 +1212,8 @@ Implementați următoarele clase:
 
    - Argumentele **2** ar trebui să fie **membri publici**
    - Clasa **Post** ar trebui să aibă, de asemenea, o funcție `toString()` care returnează următorul rezultat:
-      - "**Postare:** \{**postTitle**\}"
-      - "**Conținut:** \{**postContent**\}"
+      - "**Post:** \{**postTitle**\}"
+      - "**Content:** \{**postContent**\}"
 
 - **SocialMediaPost**, care moștenește clasa **Post** și ar trebui inițializată cu **2 argumente suplimentare** - **aprecieri** (număr) și **antipatie** (număr). 
 
@@ -1225,14 +1225,14 @@ Clasa ar trebui să dețină:
 
    - Clasa ar trebui să extindă funcția `toString()` a clasei **Post** și ar trebui să returneze următorul rezultat
 
-    ```
-      Postare: {postTitle}
-      Conținut: {postContent}
-      Evaluare: {postLikes - postDislikes}
-      Comentarii:
-       * {comentariu1}
-       * {comentariu2}
-    ```
+```
+Postare: {postTitle}
+Conținut: {postContent}
+Evaluare: {postLikes - postDislikes}
+Comentarii:
+ * {comentariu1}
+ * {comentariu2}
+```
 
 În cazul în care **nu există comentarii**, trimiteți informații numai despre **titlul**, **conținutul** și **evaluarea** din **postarea**.
 
@@ -1240,15 +1240,15 @@ Clasa ar trebui să dețină:
 
    - clasa **BlogPost** ar trebui inițializată cu **1 argument suplimentar** - **vizualizări** (Număr)
 
-   - clasa **BlogPost** ar trebui să dețină o metodă `view ()` care **mărește** **vizualizările** obiectului cu **1**, de fiecare dată când este apelat. Funcția ar trebui să **returneze obiectul**, astfel încât să fie acceptată **înlănțuirea**
+   - clasa **BlogPost** ar trebui să dețină o metodă `view()` care **mărește** **vizualizările** obiectului cu **1**, de fiecare dată când este apelat. Funcția ar trebui să **returneze obiectul**, astfel încât să fie acceptată **înlănțuirea**
 
-   - clasa **BlogPost** ar trebui să extindă funcția `toString ()` a clasei **Post** și ar trebui să returneze următorul rezultat
+   - clasa **BlogPost** ar trebui să extindă funcția `toString()` a clasei **Post** și ar trebui să returneze următorul rezultat
 
-   ```
-   Postare: {postTitle}
-   Conținut: {postContent}
-   Vizualizări: {postViews}
-   ```
+```
+Postare: {postTitle}
+Conținut: {postContent}
+Vizualizări: {postViews}
+```
 
 ## Exemplu
 
@@ -1257,26 +1257,30 @@ Clasa ar trebui să dețină:
 
    console.log(post.toString());
 
-   // Post: Post
-   // Content: Content
-
-   let scm = new SocialMediaPost('TestTitle', 'TestContent', 25, 30);
+      let scm = new SocialMediaPost('TestTitle', 'TestContent', 25, 30);
 
    scm.addComment('Good post');
    scm.addComment('Very good post');
    scm.addComment('Wow!');
 
    console.log(scm.toString());
-
-// Postare: TestTitle
-   // Conținut: TestContent
-   // Evaluare: -5
-   // Comentarii:
-   //  * Good post
-   //  * Very good post
-   //  * Wow!
 ```
 
+## Output
+
+```
+Post: Post
+Content: Content
+----------------------------
+Post: TestTitle
+Content: TestContent
+Rating: -5
+Comments:
+ * Good post
+ * Very good post
+ * Wow!
+```
+## Submission
 Trimiteți o funcție **(NOT IIFE)**, care conține toate clasele și le returnează ca obiect.
 
 [/task-description]

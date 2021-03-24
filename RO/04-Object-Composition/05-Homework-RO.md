@@ -503,10 +503,8 @@ Vi se oferă următorul cod HTML în scopul testării:
       <input type="text" id="num2" />
       <input type="text" id="result" readonly />
       <br>
-      <button id="sumButton">
-      Sum</button>
-      <button id="subtractButton">
-      Subtract</button>
+      <button id="sumButton">Sum</button>
+      <button id="subtractButton">Subtract</button>
    </body>
 </html>
 ```
@@ -875,7 +873,9 @@ Ambele valori sunt numere. Când selectați un motor, alegeți cel mai mic posib
 
 O trăsură are tip și culoarea.
 
-Ambele valori sunt șiruri. Aveți la dispoziție două tipuri de trăsuri și le puteți vopsi în orice culoare.
+Ambele valori sunt șiruri. 
+
+Aveți la dispoziție două tipuri de trăsuri și le puteți vopsi în orice culoare.
 
 `Hatchback: { type: 'hatchback', color: <as required> }`
 
@@ -883,7 +883,9 @@ Ambele valori sunt șiruri. Aveți la dispoziție două tipuri de trăsuri și l
 
 Roțile vor fi reprezentate printr-o serie de 4 numere, fiecare număr reprezentă diametrul roții în inci.
 
-Mărimea poate fi doar un număr impar. Rotunjiți în jos pe toate cerințele pe care le primiți la cel mai apropiat număr impar.
+Mărimea poate fi doar un număr impar. 
+
+Rotunjiți în jos pe toate cerințele pe care le primiți la cel mai apropiat număr impar.
 
 Veți primi un obiect ca argument pentru funcția dvs.
 
