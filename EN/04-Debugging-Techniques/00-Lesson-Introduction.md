@@ -13,14 +13,14 @@
 - Debugging vs Testing
 
 **2. IntelliJ Debugger**
-- How to debug a project
-- Debug tools
+- Debugging a project
+- Debugging tools
 
 **3. Breakpoints**
 
 **4. Data Inspection**
-- Variables and Watches tab
-- Evaluate expression Window
+- Variables and watches tab
+- Evaluate expression window
 
 **5. Finding a defect**
 - Tips for finding a defect
