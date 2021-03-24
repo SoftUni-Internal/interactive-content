@@ -7,7 +7,7 @@
 
 There are **two** ways to concatenate a `String`:
 
-- Using the `+` or `+=` operators
+- Using the `+` or the `+=` operators
 
 ```java live
 String text = "Hello" + ", " + "SoftUni";
@@ -58,9 +58,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that reads an **array of strings**.
+Create a program that reads an **array of strings**.
 
-Each string is repeated **n** times, where **n** is the **length of the string**.
+Each string should be repeated **n** times, where **n** is the **length of the string**.
+
+Print out the result.
 
 ## Examples
 | **Input** | **Output** |
@@ -146,9 +148,9 @@ linearlinearlinearlinearlinearlinear
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-13-substring-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-As the name suggests, `substring` extracts only a **part** of a `String`.
+As the name suggests, `substring` extracts only a **part** of a given `String`.
 
-- `substring(int startIndex)` - Returns a **new String** containing the substring of the given string from specified **startIndex** (**inclusive**)
+- `substring(int startIndex)` - Returns a **new String** containing the substring of the given string, starting from the specified **startIndex** (**inclusive**) to the end of the string
 
 ```java live
 String text = "My name is John";
@@ -158,7 +160,7 @@ String extractWord = text.substring(11);
 System.out.println(extractWord); // John
 ```
 
-- `substring(int startIndex, int endIndex)` - Returns a **new String** starting from the specified **startIndex** (inclusive) to the **endIndex** (exclusive)
+- `substring(int startIndex, int endIndex)` - Returns a **new String** containing the substring of the given string, starting from the specified **startIndex** (inclusive) to the **endIndex** (exclusive)
 
 ```java live
 String fullName = "John Doe";
@@ -176,9 +178,9 @@ System.out.println(firstName); // John
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-14-15-searching-1-2-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-It is possible to search for the first or last occurences of a pattern in a string:
+It is possible to search for the first or the last occurrence of a pattern in a string:
 
-- `indexOf()` - Returns the **first match index**, if there is **no match** returns **-1**
+- `indexOf()` - Returns **the position of the first occurrence** of the specified character(s), or **-1** if the character(s) does not occur
 
 ```java live 
 String fruits = "banana, apple, kiwi, banana, apple";
@@ -188,7 +190,7 @@ System.out.println(fruits.indexOf("banana"));    // 0
 System.out.println(fruits.indexOf("orange"));    // -1
 ```
 
-- `lastIndexOf()` - Finds the last occurrence
+- `lastIndexOf()` - Returns **the position of the last occurrence** of the specified character(s), or **-1** if the character(s) does not occur
 
 ```java live
 String fruits = "banana, apple, kiwi, banana, apple";
@@ -219,13 +221,13 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-On the **first line** you will receive a **string**.
+On the **first line**, you will receive a **string**.
 
-On the **second line** you will receive a **second string**.
+On the **second line**, you will receive another **string**.
 
-Write a program that **removes all of the occurrences** of **the first string** in **the second** until there is no match.
+Create a program that **removes all of the occurrences** of the first string in the second one, until there are no more matches.
 
-At the end **print the remaining string**.
+Print out the remaining string.
 
 ## Examples
 | **Input** | **Output** |
@@ -234,12 +236,12 @@ At the end **print the remaining string**.
 | kicegiciceeb |  |
 
 # Hints
-- **Read the input.**
-- Find the **first index** where the key appears.
-	- use the built-in method `indexOf()` 
-- **Remove the match**
-	- use the built-in method `replace(String oldValue, String newValue)`
-- **Repeat** it until the text **doesn't contain the key anymore**
+- Read the input
+- Find the **first index** where the key (the first string) appears
+	- use the built-in method: `indexOf()` 
+- **Remove the matching substring**
+	- use the built-in method: `replace(String oldValue, String newValue)`
+- **Repeat** that operation until the text **does not contain the specified key anymore**
 
 [/task-description]
 [code-io /]
@@ -308,9 +310,9 @@ stration
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-18-splitting-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-A `String` could be split by **one** or **multiple** criteria, using the `split()` method.
+A `String` could be split by **one** or by **multiple** criteria, using the `split()` method.
  
-- Splitting a string by a given **pattern**
+- Splitting a string by a given **regular expression**
 
 ```java live
 String text
@@ -322,7 +324,7 @@ System.out.println(words[1]);
 System.out.println(words[2]);
 ```
 
-- Splitting by **multiple separators**
+- Splitting a string by **multiple delimiters**
 
 ```java live
 
@@ -342,9 +344,9 @@ System.out.println(String.join(", ",words));
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-19-replacing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Java also makes it possible to make **replacements** in a String.
+In Java, it is possible to make **replacements** in a String.
 
-- `replace(match, replacement)` - **Replaces all occurrences** and returns a **new String** (Strings are immutable)
+- `replace(match, replacement)` - **Replaces all occurrences** of the given character(s) and returns a **new String**
 
 ```java live
 String text = "I have three bananas, three oranges, three apples.";
@@ -375,9 +377,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that takes a **text** and a **string of banned words**.
+Create a program that receives a **text** and a **string of banned words**.
 
-**All words included** in the **ban list** should be **replaced** with **asterisks** \"__\*__\", equal to the **word's length.**
+**All words included in the ban list** should be replaced with **asterisk symbols** \"__\*__\". 
+
+The count of the asterisk symbols should be equal to the **length of the word**.
 
 The entries in the ban list will be separated by a **comma** and **space** ", ".
 
@@ -389,9 +393,9 @@ The entries in the ban list will be separated by a **comma** and **space** ", ".
 
 
 # Hints  
-- **Read the input**
-- **Replace all ban words** in the text **with** **asterisk** \(__\*__\)
-	- use the **built-in method** `replace(banWord, replacement)`
+- Read the input
+- **Replace all banned words** in the text with **asterisk symbols**
+	- use the built-in method: `replace(banWord, replacement)`
 
 [/task-description]
 [code-io /]
