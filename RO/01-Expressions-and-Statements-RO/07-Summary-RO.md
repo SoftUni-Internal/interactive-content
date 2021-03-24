@@ -5,16 +5,17 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-50-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In această lecție ați învățat: 
+## În această lecție ați învățat: 
 
 - Tipurile de date definesc gama de date
+
 ```js
 let name = 'Bob';
 let employed = true;
 let age = 35;
 ```
 
-- Instrucțiunile definesc comenzile
+- Instrucțiunile definesc comenzi
 
 
 ```js
@@ -51,13 +52,13 @@ console.log(`I am from ${homeTown}!`);
 let r = (150-20) / 2 + 5;
 ```
 
-## In următoarea lecție veți învăța:
+## În următoarea lecție veți învăța:
 
 - Cum să comparați valorile folosind operatorii de comparație
 
 - Ce sunt instrucțiunile condiționale
 
-- Cum să faceți depanarea în Virtual Studio Code
+- Cum să faceți depanarea în Visual Studio Code
 
 
 [/slide]
