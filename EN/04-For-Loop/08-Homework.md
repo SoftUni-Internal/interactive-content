@@ -19,11 +19,11 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Create a program, which:
+Create a program, that:
 
-* Reads **n** - count of integers to be processed by the program
+* Reads **n** - number of integers to be processed by the program
 * Reads **an n number of integers**
-* Finds and prints out the **greatest integer**
+* Finds and prints out the **greatest integer from the input**
 
 ## Example
 | **Input** | **Output** 
@@ -89,9 +89,9 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Create a program, which:
+Create a program, that:
 
-* Reads **n** representing the number of integers to read next
+* Reads **n** representing the number of integers that the following input lines will contain
 * Finds the **max** and the **min integers**
 * Prints them to the console in the following format:
    - "**Max number:** \{**max number**\}"
@@ -179,11 +179,11 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Create a program, which:
+Create a program, that raises a given number to the power of another number:
 
-* Reads **p - the exponent** and **n - the base**
+* Reads **p - the exponent** and **n - the base number**
 * Prints the result of n to the power of p
-* Do not use `Math.pow()` method
+* Do not use the `Math.pow()` method
 
 ## Example
 | **Input** | **Output** 
@@ -232,9 +232,9 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Create a program, which:
+Create a program, that:
 
-* Reads number **n** and **n pairs** of numbers (Sum up each number pair and compare all air-sums with each other)
+* Reads number **n** and **n pairs** of numbers (Sum up each pair and compare all sums with each other)
 * Prints "**Yes, value=**\{**sum**\}", if the **sum of all** pairs is **equal**
 * **Otherwise**, prints "**No, maxdiff=**\{**diff**\}"
 * diff is the **max difference** in the sum between two pairs
@@ -391,7 +391,7 @@ Create a program, which:
 * Reads **n** - number representing the amount of following input numbers
 * Reads **n integers** 
    * if the number is on an **even** input line, it **adds** the number to the final result
-   * for every entry on an**odd** input line, it **subtracts** the number from the final result
+   * for every entry on an **odd** input line, it **subtracts** the number from the final result
    * the counting starts from 1.
 * **Prints out** the result
 
@@ -461,7 +461,7 @@ Create a program, which:
 
 * Reads **n** and afterward **n numbers**
 * Finds a **percentage** of how many of them can be **divided without a remainder** using **2**, **3** and **4** as divisors
-* Prints out the percentages for p1, p2 and p3, **formatted** to the second digit
+* Prints out the percentages for each divisor, **formatted** to the second digit
 
 ## Example
 | **Input** | **Output** 
@@ -520,10 +520,10 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Create a program, which:
+Create a program, that:
 
-* Reads **n** - representing the number of characters which will follow in the input:
-* If the character is **vowel** it adds its value to the result
+* Reads a number **n** - representing the number of characters which will follow in the input:
+* If the character is a **vowel** it adds its value to the final result, use the table:
 
 |character|a|e|i|o|u|
 |---------|-|-|-|-|-|
@@ -818,7 +818,7 @@ He inherits an X amount of money (read from the console) and a time machine.
 
 He decides to return to the year 1800 and rely only on the money he inherited, without having to work for a living.
 
-Create a program that calculates whether Josh will be able to do that, starting from the year 1800 and continuing up to a year that will be specified in the console input.
+Create a program that calculates whether Josh will be able to do that, starting from year 1800 and continuing up to a year that will be specified in the console input.
 
 - Each even year (1800, 1802, etc.) he will spend 12 000 dollars
 
@@ -966,16 +966,14 @@ public class Main {
 [task-description]
 ## Description
 
-Create a program to calculate the average living cost for a family over some time. 
+Create a program to calculate the living cost for a family over a period of time. 
 
 Their monthly expenses are as follows:
 
 - Electricity - every month the bill is different and will be read from the console
 - Water - 20$
 - Internet - 15$
-- Other expenses - a sum the bills for electricity, water and internet and add 20%
-
-For each bill, you need to calculate how much total is paid for all months.
+- Other expenses - calculated by summing the bills for electricity, water and internet and adding 20% to the final result
 
 # Input
 
@@ -1242,7 +1240,7 @@ public class Main {
 [task-description]
 ## Description
 
-A hospital has 7 doctors. 
+A hospital has 7 doctors available. 
 
 Each doctor can only see a single patient per day, but sometimes there is a shortage of doctors, so waiting patients are sent to other hospitals. 
 
@@ -1463,9 +1461,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that reads an integer representing the number of numbers that will be contained in the following input and calculates which the minimum and maximum values of the numbers found at odd and even positions (counting from 1) is. 
+Create a program that reads an integer representing the amount of numbers that will be contained in the following input and calculates which the minimum and maximum values of the numbers found at odd and even positions (counting from 1) is. 
 
-If no minimum/maximum element can be identified print out "No".
+If no minimal/maximal element can be identified print out "No".
 
 ## Input
 - N numbers to be read - an integer \[0...100\]
@@ -1709,20 +1707,20 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program to calculate statistics for some exam grades. 
+Create a program to calculate statistics according to exam grades. 
 
 The program receives the number of students that attended the exam and the grade of each one. 
 
-The program should print out the percentage of students holding a grade between 
+The program should print out the percentage of students holding a grade between:
 - 2.00 and 2.99
 - 3.00 and 3.99
 - 4.00 and 4.99
 - 5.00 or greater
-- Average grade for all participants
+- The average grade for all participants
 
 ## Input
-- The first input line - number of students - an integer in the range \[1 ... 1000\]
-- On each next line - the student's grade - a real number in the range \[2.00 ... 6.00\]
+- The first input line contains the number of students - an integer in range \[1 ... 1000\]
+- On each next line - each student's grade - a real number in range \[2.00 ... 6.00\]
 
 ## Output
 Print 5 lines of output with the following information:
