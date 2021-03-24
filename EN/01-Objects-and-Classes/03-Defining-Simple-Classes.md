@@ -166,7 +166,7 @@ public class Car {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-20-22-creating-an-object-constructors-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Each time an object is **created**, some **memory** is **dedicated** for it.
+Each time an object is **created**, some **memory** is **allocated** for it.
 
 This is why **local variables** are created as **references** to that part of the memory.
 
@@ -196,11 +196,11 @@ The **constructor** method is a **method** that is executed **during the creatio
 
 The name of the method is the **same as the name of the class**.
 
-The constructor **can take parameters**, which is used to **initialize fields**.
+The constructor **can take parameters**, which are used to **initialize fields**.
 
 Classes can have **multiple constructors**.
 
-This helps to instantiate objects in various ways with a different number of arguments.
+This helps to instantiate objects in various ways, with a different number of arguments.
 
 ```java
 public class Animal {
@@ -230,7 +230,7 @@ public class Animal {
 [task-description]
 ## Description
 
-Define a class **Student**, which holds the following information about students: 
+Define a class called **Student**, which will hold the following information about some students: 
  - first name
  - last name
  - age
@@ -238,13 +238,13 @@ Define a class **Student**, which holds the following information about students
 
 ### Input / Constraints
 
-Read a list of students until you receive the **"end"** command.
+Read information about some students until you receive the **"end"** command.
 
 After that, you will receive a **city name**.
 
 ### Output
 
-Print the students, which are from the given city, in the following format: 
+Print the students which are from the given city in the following format: 
 "\{firstName\} \{lastName\} is \{age\} years old.".
 
 ## Example
@@ -383,7 +383,8 @@ Port Lee is 14 years old
 ## Description
 Use the class from the previous problem.
 
-If you receive a student, who already exists (**first name** and **last name** should be **unique**) overwrite the information.
+If you receive a student who already exists, save the information about them. 
+(The full name that is a combination of the **first name** and the **last name** should be **unique**)
 
 ## Examples
 
@@ -476,7 +477,7 @@ J P is 61 years old
 [task-description]
 ## Description
 
-Define a class **Song**, which holds the following information about songs:
+Define a class called **Song** that will hold the following information about some songs:
 
 - **Type List**
 
@@ -486,16 +487,18 @@ Define a class **Song**, which holds the following information about songs:
 
 ### Input / Constraints
 
-- On the first line you will receive the **number of songs - N**.
+- On the first line, you will receive the **number of songs - N**.
 
-- On the next N-lines, you will be receiving data in the following format: 
-"\{typeList\}\_\{name\}\_\{time\}".
+- On the next **N** lines, you will be receiving data in the following format: 
+"\{typeList\}\_\{name\}\_\{time\}"
 
 - On the last line, you will receive **Type List** or **"all"**.
 
 ### Output
 
-Print only the **Names of the songs**, which are from that **Type List** or **All songs**.
+If you receive a **Type List** as an input on the last line, print out **only the names of the songs** which are from that **Type List**.
+
+If you receive the command **"all"**, print out the names of **all songs**.
 
 ## Examples
 
