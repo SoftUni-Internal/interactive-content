@@ -19,7 +19,7 @@ Scrieți o clasă **Bank** care implementează următoarea funcționalitate:
 
 ## Funcționalitate
 
-## `constructor (bankName)` 
+- `constructor (bankName)` 
 
 Primește **1 parametru** la inițializarea clasei (**bankName**).
 
@@ -28,7 +28,7 @@ Clasa **Bank** ar trebui să aibă aceste **2 proprietăți:**
 - bankName \- o proprietate **privată** de tip șir
 - allCustomers \- inițial o matrice goală
 
-## `newCustomer (customer)` 
+- `newCustomer (customer)` 
 
 **Clientul** este de tip obiect "\{**firstName, lastName, personalId**\}".
 
@@ -38,7 +38,7 @@ Clasa **Bank** ar trebui să aibă aceste **2 proprietăți:**
 
 - Dacă nu această funcție ar trebui să adauge un **nou client** cu următoarele funcționalități
 
-## `depositMoney (personalId, amount)`
+- `depositMoney (personalId, amount)`
 
 
 **personalId** și **amount** ar trebui să fie numere.
@@ -53,7 +53,7 @@ Clasa **Bank** ar trebui să aibă aceste **2 proprietăți:**
 "\{**totalMoney**\}\$"
 
 
-## `withdrawMoney (personalId, amount)`
+- `withdrawMoney (personalId, amount)`
 
 
 **personalId** și **amount** ar trebui să fie numere.
@@ -71,7 +71,7 @@ Clasa **Bank** ar trebui să aibă aceste **2 proprietăți:**
 
 "\{**totalMoney**\}\$"
 
-## `customerInfo (personalId)` 
+- `customerInfo (personalId)` 
 
 **personalId** este de **tip număr**.
 
@@ -93,7 +93,7 @@ n. {firstName} {lastName} made deposit of {amount}$!
 1. {firstName} {lastName} made deposit of {amount}$!
 ```
 
- **Informația de tranzacție** conține informații despre:
+**Informația de tranzacție** conține informații despre:
 
 - numărul de tranzacții în ordine descrescătoare
 
@@ -104,7 +104,7 @@ n. {firstName} {lastName} made deposit of {amount}$!
 - **suma** tranzacției
 
 
-# Exemple
+## Exemple
 Acesta este un exemplu de cum se **intenționează folosirea codului**:
 
 **Exemplu de folosire a codului:** 
