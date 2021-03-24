@@ -7,11 +7,11 @@
 
 The next type of loops that we will get familiar with is the so-called **while-loops**. 
 
-The **while-loops** execute a block of code as long as a specified condition is **true**.
+**While-loops** execute a block of code as long as a specified condition is **true**.
 
-As a structure, they differ from the **for-loops**. Their syntax is even simpler.
+As structure, they differ from the **for-loops** and their syntax is even simpler.
 
-Before we jump to the lesson, let us see an example from real life.
+Let us see a real life example.
 [image assetsSrc="05-bucket-example.png" /]
 
 [/slide]
