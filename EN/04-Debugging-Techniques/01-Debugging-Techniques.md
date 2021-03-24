@@ -6,17 +6,17 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-3-4-what-is-debugging-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The process of locating an **error** (**bug**) and after that fixing it, we call **Debugging**.
+The process of locating an **error** (**bug**) and after that fixing it is called **Debugging**.
 
 There are a few steps that we have to follow when we are **debugging** a program:
 
-- We have to identify the **problem**
+- Identifying the **problem**
 
-- Next, we can isolate the **source** of the problem
+- Isolating the **source** of the problem
 
-- Next we have found and isolate it, the next step is to  **fix** the problem
+- **Fixing** the problem
 
-Luckily, there are **Debugging tools** that help us to locate the bugs.
+There are **Debugging tools** that help us to locate the bugs.
 
 The **Debugging tools** are also called **debuggers**.
 
@@ -32,17 +32,17 @@ There is a difference between **Testing** and **Debugging**.
 
 **Testing** is the process of confirming if the software has bugs.
 
-We test the application to make sure that it works as it is supposed to work.
+We **test** the application to **make sure that it works** as it is supposed to work.
 
-We debug the application after it has failed. 
+We **debug** the application **after it has failed**.
 
 **Debugging** is done to fix the error found during the testing.
 
-The **debugging** cannot be **automated**, unlike the **testing** which can be **automated** or **manual**.
+**Debugging** cannot be **automated**, unlike the **testing**, which can be **automated** or **manual**.
 
-The **debugging** can only be **manual**.
+**Debugging** can only be **manual**.
 
-The **testing** is done by a tester, while the **debugging** can be done by a programmer.
+**Testing** is done by a tester, while the **debugging** can be done by a programmer.
 
 [/slide]
 
@@ -56,13 +56,13 @@ The **testing** is done by a tester, while the **debugging** can be done by a pr
 
 Because there are factors that are not predictable or we cannot control.
 
-In other words, there is no such thing as perfect code.
+In other words, there is **no such thing as "perfect code"**.
 
-There are many legacy projects written before many years.
+There are many legacy projects written many years ago.
 
 In scenarios like this one, we have to orientate quickly.
 
-The debugging will help to understand the project in depth.
+Debugging will help to understand the project in depth.
 
 **Interesting fact** is that, bugs cause about $60 Billion per year in economic losses.
 
@@ -76,17 +76,17 @@ An example is the [Cluster Spacecraft Failure](https://en.wikipedia.org/wiki/Clu
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-7-debugging-philosophy-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We can imagine that the **debugging** is a tree.
+We can imagine that **debugging** is a tree.
 
 The different branches represent independent **theories**.
 
-Every one of these branches is a potential error.
+Every branch is a **potential error**.
 
 The leaves on the branches are the potential causes of the bug.
 
 When we traverse the tree, we process the information that it stores.
 
-Every action consumes time, but there is a way to reduce the time consumed, for example:
+Every action consumes time but there is a way to reduce the time consumed. For example:
 
 - Visualization
 
