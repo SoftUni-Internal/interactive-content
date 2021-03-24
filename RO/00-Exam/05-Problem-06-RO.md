@@ -1,4 +1,4 @@
-# Problem: Tournament for Christmas
+# Problemă: Tournament for Christmas
 [slide hideTitle]
 # Tournament for Christmas
 [code-task title="Tournament for Christmas" taskId="pb-java-exam-tournament-for-christmas" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Program {
   public static void main(String[] args) {
-    // Scrieți codul aici
+    // Scrieți codul dvs. aici
   }
 }
 ```
@@ -16,17 +16,17 @@ public class Program {
 [task-description]
 ## Descriere
 
-Scrie un program care urmărește performanța echipei tale la un turneu de caritate de Crăciun.
+Scrieți un program care urmărește performanța echipei voastre la un turneu de caritate de Crăciun.
 
-Pentru fiecare zi a turneului veți primi **diferite tipuri de nume de joc**, până când se primește comanda "**Finish**".
+Pentru fiecare zi a turneului veți primi **diferite nume de jocuri**, până când se primește comanda "**Finish**".
 
-**Câștigând** fiecare joc, câștigi **20 euro** pentru caritate.
+**Câștigând** fiecare joc, câștigați **20 euro** pentru caritate.
 
 Trebuie să **calculați câți bani** ați câștigat la sfârșitul fiecărei zile.
 
 **Dacă ați câștigat mai multe jocuri decât ați pierdut** - sunteți câștigătorul zilei și premiul dvs. primește **o creștere de 10%**.
 
-La sfârșitul turneului, dacă ați câștigat în majoritatea zilelor, câștigați turneul și **creșteți totalul banilor cu 20%**.
+La sfârșitul turneului, dacă ați câștigat în majoritatea zilelor, câștigați turneul și **suma câștigată este majorată cu 20%**.
 
 **Nu va exista un caz în care numărul de jocuri câștigate și pierdute să fie egal**.
 
@@ -36,26 +36,26 @@ La sfârșitul turneului, dacă ați câștigat în majoritatea zilelor, câști
 
 Până când primiți comanda "**Finish**", citiți:
 
-  - sport - **un șir**
+  - Numele jocului - **un șir**
 
-Pentru fiecare sport citiți:
+Pentru fiecare joc citiți:
 
-  * rezultat - **un șir cu opțiuni: "win" sau "lose"**
+  - Rezultat - **un șir cu opțiuni: "win" sau "lose"**
 
 
 ## Ieșire
 
 Ieșirea constă dintr-o singură linie:
 
-- Dacă **câștigi** turneul:
+- Dacă **câștigați** turneul:
 
      "**You won the tournament! Total money raised:** \{**earned money**\}"
 
-- Dacă **pierzi** turneul:
+- Dacă **pierdeți** turneul:
 
      "**You lost the tournament! Total money raised:** \{**earned money**\}"
 
-**Banii ar trebui formatați la a doua cifră după punctul zecimal.**
+**Suma trebuie formatată la a doua cifră după punctul zecimal.**
 
 ## Exemplu:
 
@@ -79,10 +79,11 @@ Ieșirea constă dintr-o singură linie:
 
 [hints]
 [hint]
-Calculate how much money you have won for each day of the tournament. If you have more wins than loses in a day increase the earnings by 10%.
+Calculați câți bani ați câștigat în fiecare zi a turneului. Dacă în ziua respectivă ați câstigat mai multe jocuri decât ați pierdut, majorați câștigurile cu 10%.
 [/hint]
 [hint]
-Upon reaching the "Finish" command, add the total amount of money earned and if you have won on most days, you win the tournament and increase your total amount money raised by 20%. Then print the correct output.
+La întâlnirea comenzii "Finish", adăugați suma de bani câștigată și dacă ați câștigat în majoritatea zilelor, câștigați turneul și trebuie să majorați suma câștigată cu 20%.  
+Tipăriți ieșirea corectă.
 [/hint]
 [/hints]
 
