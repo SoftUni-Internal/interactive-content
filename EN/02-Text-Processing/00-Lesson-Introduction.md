@@ -12,7 +12,7 @@
 
 - What a String is
 
-- Collection of Key and Value pairs
+- Collection of Key-Value pairs
 
 **2. String Manipulation**
 
