@@ -1,36 +1,38 @@
-# Exception Handling
+# Manevrarea Excepțiilor
 
 [slide hideTitle]
 
-# The "try-catch" Statement
+# Construcție "try-catch"
 
-In Java, we handle exceptions by using the **try-catch** statement.
+În Java, excepțiile pot fi gestionate prin construcția **încearcă-să-prinzi**.
 
 ```java 
 try {
-// Specify a piece of code logic that could raise an exception 
+    // Specify a piece of code logic that could raise an exception
 } catch (SomeException) {
-// Handle the caught exception
+    // Handle the caught exception
 }
 ```
-Use the **Catch** blocks multiple times to process different exception types.
+
+- **Captura** blocurile pot fi utilizate de mai multe ori pentru a procesa diferite tipuri de excepții
 
 **Example:**
 
 ```java 
 String s = sc.nextLine();
 try {
-   Integer.parseInt(s);
-   System.out.printf("You entered a valid integer number %s.", s);
+    Integer.parseInt(s);
+    System.out.printf("You entered a valid integer number %s.", s);
 
 } catch (NumberFormatException ex) {
-   System.out.println("Invalid integer number!");
+    System.out.println("Invalid integer number!");
 } catch (NullPointerException ex) {
-   System.out.println("The input is null!");
+    System.out.println("The input is null!");
 } 
 ```
 
 [/slide]
+
 
 [slide hideTitle]
 
@@ -38,22 +40,23 @@ try {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-9-10-handling-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Catching an exception of a particular class automatically catches the child classes of that particular exception (if any).**
-
-See the following example:
+**Atunci când prindeți o excepție dintr-o anumită clasă, toți moștenitorii săi (excepțiile copilului) sunt prinși și ei.**
+Vezi următorul exemplu:
 
 ```java 
 try {
-  // Specify a piece of code logic that could raise an exception 
+    // Specify a piece of code logic that could raise an exception 
 } catch (IndexOutOfBoundsException ae) {
-  // Handle the caught arithmetic exception
+    // Handle the caught arithmetic exception
 }
 ```
-The code in the example above handles the **IndexOutOfBoundsException** and its descendants: 
+
+- Codul din exemplu tratează **IndexOutOfBoundsException** și descendenții săi: 
 - **ArrayIndexOutOfBoundsException**
 - **StringIndexOutOfBoundsException**
 
-Try to find the mistake in the example below:
+
+Încercați să găsiți greșeala în exemplul de mai jos:
 
 ```java live
 String str = "Peter";
@@ -75,7 +78,7 @@ If you remove that part of the code, it should run just fine.
 
 [slide hideTitle]
 
-# Handling all Exceptions
+# Handling All Exceptions
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-14-handling-all-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -87,9 +90,9 @@ Specify a piece of code logic that could raise an exception
 
 ```java
 try {
-  // Specify a piece of code logic that could raise an exception 
+    // Specify a piece of code logic that could raise an exception 
 } catch (Exception ex) {
-  // Handle the caught exception
+    // Handle the caught exception
 }
 ``` 
 
@@ -103,14 +106,13 @@ Hint: Trace the exceptions hierarchy. Be cautious which exception is the parent 
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-15-the-try-finally-statement-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The **"try-finally"** statement ensures the **execution** of a given block regardless potential exceptions that could be thrown in the code preceding the finally code block.
-
+Instrucțiunea **try-finalmente** asigură **execuția** unui bloc dat, indiferent de potențialele excepții care ar putea fi aruncate în codul anterior blocului de cod în cele din urmă.
 
 ```java 
 try {
-   // Specify a piece of code logic that could raise an exception 
+    // Specify a piece of code logic that could raise an exception 
 } finally {
-   // This block will always execute
+    // This block will always execute
 }
 ```
 
@@ -118,18 +120,18 @@ try {
 
 ```java 
 static void testTryFinally() {
-  System.out.println("Code executed before try-finally.");
-  try {
-     String str = sc.nextLine();
-     Integer.parseInt(str);
-     System.out.println("Parsing was successful.");
-     return; // Exit from the current method
-  } catch (NumberFormatException ex) {
-     System.out.println("Parsing failed!");
-  } finally {
-     System.out.println("This cleanup code is always executed.");
-  }
-  System.out.println("This code is after the try-finally block.");
+    System.out.println("Code executed before try-finally.");
+    try {
+        String str = sc.nextLine();
+        Integer.parseInt(str);
+        System.out.println("Parsing was successful.");
+        return; // Exit from the current method
+    } catch (NumberFormatException ex) {
+        System.out.println("Parsing failed!");
+    } finally {
+        System.out.println("This cleanup code is always executed.");
+    }
+    System.out.println("This code is after the try-finally block.");
 }
 ```
 
@@ -141,12 +143,15 @@ static void testTryFinally() {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-17-how-do-exceptions-work-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In the **try block**, we run the code we want to check.
+În **blocul try**, rulăm codul pe care dorim să îl verificăm.
 
-The **catch block** is used for handling the **checked exceptions** thrown by the **try block**, as well as any possible **unchecked exceptions**.
+**Blocul catch** e utilizat pentru gestionarea **excepțiilor verificate** generate de **blocul try**, precum și pentru gestionarea oricăror posibile **excepții neverificate**.
 
-The **finally block** gives us a chance to run the code which we want to execute every time.
+**Blocul finally** ne oferă șansa de a rula codul pe care vrem să îl executăm de fiecare dată.  
 
 [image assetsSrc="exception-handling-example(2).png" /]
 
 [/slide]
+
+
+
