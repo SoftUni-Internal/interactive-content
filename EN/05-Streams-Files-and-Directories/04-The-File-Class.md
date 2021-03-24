@@ -57,9 +57,6 @@ Create a program that lists the names and file sizes (**in bytes**) of all files
 
 Submit only the **output** of your program, **not the code**.
 
-
-## Examples
-
 ## Input:
 [image assetsSrc="streams-files-directories-example-input.png" /]
 
