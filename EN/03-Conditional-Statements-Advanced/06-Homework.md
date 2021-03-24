@@ -177,7 +177,7 @@ public class Main {
 Create a program to check whether a letter is a vowel or a consonant:
 
 * Reads a **letter** from the English alphabet
-* Prints either **"Vowel"** or **"Consonant"**
+* Prints out **"Vowel"** or **"Consonant"**
 
 ## Example
 | **Input** | **Output** |
@@ -252,7 +252,7 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Calculate the end sign **positive**, **negative** or **zero** of the product of 3 numbers:
+Calculate the final sign **positive**, **negative** or **zero** of the product of 3 numbers:
 
 * Read **3 floating-point** numbers
 * Print the **sign** of the product of the 3 numbers: **positive**, **negative** or **zero**
@@ -439,7 +439,7 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Create a program that calculates vacation expenses according to the following:
+Create a program that calculates vacation expenses according to the following instructions:
 
 * Reads: a **season**, the **accommodation type** and the **numer of days**
 * Prints the total expenses, based on the price table bellow, formatted to the 2nd digit after the decimal point
@@ -900,7 +900,7 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Create a program to simulate an ATM:
+Create a program that simulates an ATM:
 
 * Reads: **balance**, **withdraw amount** and **limit**
 * Print **"The withdraw was successful."** if the balance is sufficient
@@ -1434,7 +1434,7 @@ public class Main {
 [task-description]
 # Description
 
-A company pays the following commissions to its employees according to the city they work in and the amount of sales:
+A real-estate company pays the following commissions to its employees according to the city they work in and the amount of sales:
 
 | **Sales / City** | **London** | **New York** | **Sydney**|
 | --- | --- | --- | --- | 
@@ -1443,7 +1443,7 @@ A company pays the following commissions to its employees according to the city 
 | \[1001-10000\] | 8% | 10% | 12% |
 | > 10000| 12% | 13% | 14.5% |
 
-Create a console program that reads as input the **name of the city** and the **amount of sales** and calculates the value of the **commission**. 
+Create a console program that reads the **name of a city**  as input and the **amount of sales** and calculates the value of the **commission**. 
 
 ## Input
 Read two lines:
@@ -1955,9 +1955,9 @@ public class Main {
 [task-description]
 # Description
 
-Create a program to help your frend choose what clothes to wear **according to the part of day and the temperature (in degrees; Celsius)**. 
+Create a program to help your friend choose what clothes to wear **according to the part of day and the temperature (in degrees; Celsius)**. 
 
-Your friend has different outfits according to the time of the day and the temperature – check the **table** below.
+Your friend has different outfits according to the time of day and the temperature – check the **table** below.
 
 | **Part of Day / Degrees** | **Morning** | **Afternoon** | **Evening** |
 | --- | --- | --- | --- |
@@ -2408,7 +2408,7 @@ The market offers the following **discounts**:
 - If you buy **10 or more roses during the winter** - you get a discount of **10% of the price of the whole bouquet**
 - If you buy **more than 20 flowers in total during any season** -you get a discount of **20% of the price of the whole bouquet**
 
-**The discounts are applied in the specified order, there can be cases where we have to apply multiple discounts!**
+**The discounts are applied in the specified order, there may be cases where we have to apply multiple discounts!**
 
 **All of the discounts should be applied after the holiday price increase!**
 
