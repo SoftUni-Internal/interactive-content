@@ -8,7 +8,9 @@
 
 An exception is an event that can happen at any time during the execution of a program. 
 
-When an Exception occurs the normal flow of the program is disrupted which typically results in the program terminating. To prevent that, these occurrences should be "handled". 
+When an exception occurs, the normal flow of the program is disrupted, which typically results in the program terminating.
+
+To prevent this, the occurrences should be "handled". 
 
 In Java, exceptions are objects that contain detailed information about the error.
 
@@ -38,8 +40,6 @@ It can also contain a message that gives more information about the error.
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-6-types-of-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Below Throwable in the Java hierarchy we have:
-
 - **Exceptions**
     - used for exceptional conditions that user programs should catch
     - user-defined exceptions
@@ -47,6 +47,8 @@ Below Throwable in the Java hierarchy we have:
 - **Errors**
     - not expected to be present under normal circumstances
     - example - "StackOverflowError"
+
+Both **Exceptions** and **Errors** classes are subclasses of the **Throwable** class.
 
 [/slide]
 
@@ -56,7 +58,7 @@ Below Throwable in the Java hierarchy we have:
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-7-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-There are two types of **Exception**:
+There are two types of **Exceptions**:
 
 - **Checked** - an exception that is checked (notified) by the compiler at compilation-time
     - also called **Compile Time exceptions**
