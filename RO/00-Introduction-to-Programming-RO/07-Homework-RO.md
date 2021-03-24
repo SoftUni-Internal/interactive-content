@@ -58,21 +58,23 @@ function calculate() {
 
 Creați un program JavaScript, care:
 
-- Calculează valoarea de `5 * 5`
-- Imprimă rezultatul
-  [/task-description]
-  [code-io /]
-  [tests]
-  [test]
-  [input]
-  [/input]
-  [output]
-  25
-  [/output]
-  [/test]
-  [/tests]
-  [/code-task]
-  [/slide]
+
+* Calculează valoarea "5 \* 5"
+* Imprimă rezultatul
+[/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+[/input]
+[output]
+25
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
 
 [slide hideTitle]
 
@@ -159,7 +161,9 @@ function squareOfStars() {
 [task-description]
 Creați un program care:
 
-Imprimă un pătrat de stele 7 \* 7 astfel:
+
+Imprimă un pătrat de stele "7 \* 7" astfel:
+
 
 ```
 * * * * * * *

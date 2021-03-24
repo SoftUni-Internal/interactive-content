@@ -11,15 +11,15 @@ Un **mediu de dezvoltare integrat** (sau IDE) este o combinație de instrumente 
 
 În mediul de dezvoltare putem **scrie cod**, **compila** și **executa programe**.
 
-Mediile de dezvoltare integrează de obicei un **editor de text**,un **limbaj de programare**, un **compilator** sau un **interpret** și un mediu de rulare pentru **executarea programelor**.
+Mediile de dezvoltare integrează de obicei un **editor de text**, un **limbaj de programare**, un **compilator** sau un **interpretor** și un mediu de rulare pentru **executarea programelor**.
 
-De asemenea, pot conține un **depanator** pentru urmărirea programului și căutarea erorilor și  instrumente pentru **proiectarea interfeței cu utilizatorul** sau alte utilitare și programe de completare.
+De asemenea, pot conține un **depanator** pentru urmărirea programului și căutarea erorilor, și instrumente pentru **proiectarea interfeței cu utilizatorul** sau alte utilități și programe suplimentare.
 
 Mediile de dezvoltare sunt convenabile, deoarece integrează **tot ce este necesar pentru dezvoltarea** unui program, în unele cazuri chiar și fără a fi nevoie de instrumente externe.
 
-Dacă nu folosim un IDE, ar trebui să scriem codul într-un **editor de text**,să-l compilăm cu o comandă de pe consolă, să-l rulăm cu o altă comandă de consolă și, eventual, să includem comenzi suplimentare ori de câte ori este nevoie, ceea ce este un consum foarte mare de timp.
+Dacă nu folosim un IDE, ar trebui să scriem codul într-un **editor de text**, să-l compilăm cu o comandă de pe consolă, să-l rulăm cu o altă comandă de consolă și, eventual, să includem comenzi suplimentare ori de câte ori este nevoie, ceea ce este un consum foarte mare de timp.
 
-Pentru programarea cu **JavaScript**, IDE-ul cel mai frecvent utilizat este [Visual Studio Code](https://code.visualstudio.com),care este dezvoltat și distribuit în mod liber de Microsoft.
+Pentru programarea cu **JavaScript**, IDE-ul cel mai frecvent utilizat este [Visual Studio Code](https://code.visualstudio.com), care este dezvoltat și distribuit în mod liber de Microsoft.
 
 Unele dintre cele **populare** alternative la Visual Studio Code sunt:
 
@@ -35,13 +35,13 @@ Unele dintre cele **populare** alternative la Visual Studio Code sunt:
 
 În acest curs, vom folosi **Visual Studio Code.**
 
-Acesta este un exemplu al modului în care arată acest IDE (codul Visual Studio IDE pentru JavaScript):
+Acesta este un exemplu al modului în care arată acest IDE (Visual Studio Code IDE pentru JavaScript):
 
 [image assetsSrc = "intro-to-programming-6.png" /]
 
 [/slide]
 [slide hideTitle]
-# Instalare Node.js and Visual Studio Code
+# Instalarea Node.js și Visual Studio Code
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-20-21-22-Installing-NodeJS-and-Visual-Studio-Code-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -111,11 +111,11 @@ Asta e tot. Sunteți gata să lucrați cu Visual Studio Code.
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-23-Development-Environments-Desktop-And-Online-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Instalați codul Microsoft Visual Studio
+Instalați Microsoft Visual Studio Code
 
 * [Visual Studio Code](https://code.visualstudio.com/download)
 
-* Puteți utiliza o versiune mai veche, dar nu este recomandată
+* Puteți utiliza o versiune mai veche, dar nu este recomandat
 
 IDE alternativ (online)
 
@@ -132,13 +132,13 @@ IDE alternativ (online)
 [/slide]
 
 [slide hideTitle]
-# Ce Este Dodul Visual Studio
+# Ce Este Visual Studio Code
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-25-What-is-Visual-Studio-Code-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Visual Studio Code este un editor de cod sursă deschis.
 
-Poate fi folosit cu limbaje de programare precum:**Java**, **JavaScript**, **Go**, **Node.js** și multe altele.
+Poate fi folosit cu limbaje de programare precum: **Java**, **JavaScript**, **Go**, **Node.js** și multe altele.
 
 Visual Studio Code permite utilizatorilor să deschidă unul sau mai multe directoare.
 
@@ -155,7 +155,7 @@ Acest lucru îi permite să funcționeze ca un editor **cross-language** pentru 
 
 Visual Studio Code are multe extensii care ne pot face fluxul de lucru mai plăcut.
 
-- **Beautify**: Beautify formate de fișiere precum HTML. Codul neformatat din aceste fișiere este convertit în cod formatat
+- **Beautify**: Beautify formatează fișiere precum HTML. Codul neformatat din aceste fișiere este convertit în cod formatat
 
 Trebuie să activăm această setare în tab-ul preferințe cod VS și va formata automat tot codul.
 
@@ -165,7 +165,7 @@ Trebuie să activăm această setare în tab-ul preferințe cod VS și va format
 
 Ajută la detectarea potențialelor erori în codul JavaScript.
 
-Noi folosim diferite extensii în funcție de tipul de proiect la care lucrăm.
+Folosim diferite extensii în funcție de tipul de proiect la care lucrăm.
 
 [/slide]
 
@@ -180,7 +180,7 @@ Videoclipul de mai sus arată cum putem configura un proiect de bază.
 
 Apoi, să tragem folderul în Visual Studio Code.
 
-VSC ne va crea un proiect gol.
+VSC va crea un proiect gol pentru noi.
 
 Apoi, trebuie să creăm un fișier nou și să-l denumim.
 
