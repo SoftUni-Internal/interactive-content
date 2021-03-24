@@ -16,10 +16,10 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Create a program to check a password:
+Create a program to check whether we have entered the right password or not:
 
-  * Read a string: the password
-  * Print **"Welcome"** if the password guess is **"s3cr3t!"**
+  * Read the input
+  * Print **"Welcome"** if the input password is **"s3cr3t!"**
   * Print **"Wrong password!"** in all other cases 
 
 ## Examples
@@ -93,7 +93,7 @@ Create a program, which checks whether the water in a pot is boiling:
 
   * Read a floating-point number: the water **temperature** (in °C)
   * Print out **"The water is boiling"** if the number **> 100**
-  * Prints out **"The water is not hot enough"** in all other cases
+  * Print out **"The water is not hot enough"** in all other cases
 
   
 ## Examples
@@ -159,11 +159,11 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Create a piece pf code that checks wheter an object is moving fast or slow according to its speed:
+Create a piece of code that checks wheter an object is moving fast or slow according to its speed:
 
   * Read the **speed** (a floating-point number)
   * Print **"Slow"** if the speed is **<= 30**
-  * Print **"Fast"** if the speedis **> 30**
+  * Print **"Fast"** if the speed is **> 30**
 
 
 ## Examples
@@ -233,10 +233,10 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Create a program to calculate the area of different figures:
+Create a program to calculate the area of some different figures:
   * Reads a string: the figure **type**
   * Checks if the figure is a **square**, a **rectangle** or a **circle**
-  * Accepts one number for a square or a circle or two numbers for the rectangle
+  * Accepts one number for a square or a circle or two numbers for a rectangle
     * numbers will be floating-point
   * Prints out the calculated area **formatted** to the second digit after the decimal point
   * For unknown figures print out **"Unknown figure"**
@@ -365,7 +365,7 @@ Create a program to **calculate** the price of a ticket based on the following:
     * the price should be **formatted** to the 2nd digit after the decimal point
   * Student ticket price: **1.00**
   * Regular ticket price: **1.60**
-  * In any other input print out: **"Invalid ticket type!"**
+  * For any other input print out: **"Invalid ticket type!"**
   
 ## Example
 | **Input** | **Output** |
@@ -554,7 +554,7 @@ public class Program {
 Create a program to check if a triangle could exist judging by the input:
 
   * Read 3 integers: the **sides of a triangle**
-  * Check if each side is less than the sum of the others 2
+  * Check if each side is less than the sum of the other 2
     * prints **"Valid Triangle"** if the above condition is met
     * prints **"Invalid Triangle"** otherwise
 
@@ -1226,7 +1226,7 @@ public class Main {
 ## Description
 Your friend has 3 pets. 
 
-She would like to go on a trip and needs you to help her calculate whether she currently has enough food to leave to her pets so that they do not starve during her time away.
+She would like to go on a trip and needs you to help her calculate whether she currently has enough food to leave to her pets so that they will stay fed during her time away.
 
 ## Input
 Read **five** lines from the console:
@@ -1241,11 +1241,11 @@ Print out a **single** line:
 - If the food **IS enough**:
   - "\{**kilograms remain**\} **kilos of food left.**" 
   
-The result should be **rounded to the nearest lower integer**.
+The result should be **rounded down to the nearest integer**.
 - If the left food **IS NOT enough**:
   - "\{**kilograms needed**\} **more kilos of food are needed.**"
   
-The result should be **rounded to the nearest higher integer**.
+The result should be **rounded up to the nearest integer**.
 
 ## Examples
 | **Input**  | **Output** |
@@ -1436,7 +1436,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-A pool with a **volume V** is filled by **two pipes**.
+A pool with a **volume of V** is filled by **two pipes**.
 
 Each pipe has a maximal transfer volume per hour
 
@@ -1452,7 +1452,7 @@ Create a program that calculates the water level in the pool **at the moment the
 - **H** - **hours the worker is away** - float-pointing number in range \[1.0 ... 24.00\]
 
 ## Output
-Print to the console **one of the following outcomes**:
+Print out **one of the following outcomes**:
 - How full the pool is and the percentage of water each pipe transferred to the pool in the process
   - "**The pool is** \**{percentage of volume**\}% **full.** **Pipe 1:** \{**transferred percentage**\}**%.** **Pipe 2:** \{**transferred percentage**\}**%.**"
   - 
