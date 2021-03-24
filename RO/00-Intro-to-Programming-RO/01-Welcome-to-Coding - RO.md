@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Ce reprezintă Codificarea
+# Ce Reprezintă Codificarea
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-3-4-What-is-coding-and-demo-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
