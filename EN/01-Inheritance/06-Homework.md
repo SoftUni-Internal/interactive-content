@@ -695,7 +695,7 @@ Every class should have:
 
 ## Submit
 
-Zip your package and upload it.
+**Zip** your package and upload it.
 
 ## Note: 
 You need a public class Main.
@@ -1293,7 +1293,7 @@ The default fuel consumption for **Vehicle** is **1.25**. Some of the classes ha
 
 ## Submit 
 
-Zip your package and upload it.
+**Zip** your package and upload it.
 
 ## Hint	
 In the child classes' constructors use `super.setFuelConsumption()` to set **fuelConsumption**
@@ -1873,10 +1873,10 @@ The **Food** class must have the following members:
 **HotBeverage** and **ColdBeverage** are **beverages** and they accept the following parameters upon initialization: **String name, BigDecimal price, double milliliters**
 
 **Coffee** and **Tea** are **hot beverage**s. The **Coffee** class must have the following additional members:
-- **double COFFEE_MILLILITERS = 50**
-- **BigDecimal COFFEE_PRICE = 3.50**
+- `double COFFEE_MILLILITERS = 50`
+- `BigDecimal COFFEE_PRICE = 3.50`
 - **caffeine – double**
-- **Getter for caffeine**
+- Getter for **caffeine**
 
 **MainDish**, **Dessert** and **Starter** are **food**.
  They all accept the following parameters upon initialization: **String name, BigDecimal price, double grams**. 
@@ -1887,18 +1887,18 @@ The **Food** class must have the following members:
 Make **Salmon**, **Soup** and **Cake** inherit the proper classes.
 
 A **Cake** must have the following members upon initialization:
-- **double CAKE_GRAMS = 250**
-- **double CAKE_CALORIES = 1000**
-- **BigDecimal CAKE_PRICE = 5**
+- `double CAKE_GRAMS = 250`
+- `double CAKE_CALORIES = 1000`
+- `BigDecimal CAKE_PRICE = 5`
 A **Salmon** must have the following members upon initialization:
-- **double SALMON_GRAMS = 22**
+- `double SALMON_GRAMS = 22`
 
 ## Note
 You need a public class **Main**. Create a **restaurant** package.
 
 ## Submit
 
-Zip your package and upload it.
+**Zip** your package and upload it.
 
 [/task-description]
 [tests]

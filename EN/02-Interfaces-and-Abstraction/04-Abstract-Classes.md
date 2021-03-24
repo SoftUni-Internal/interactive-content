@@ -65,11 +65,11 @@ It is important to remember that if our class **contains** an abstract method, w
 Otherwise, it will generate an error.
 
 ``` java
+// class should be abstract
 class Device {
-
   // abstract method
   abstract void call();
-} // Class should be abstract.
+}
 ```
 
 As we already know, **abstract** classes **cannot be** instantiated, but we can create `subclasses` from them.
@@ -100,7 +100,7 @@ class Main extends Device {
 }
 ```
 
-**Output** will be:
+The **output** will be:
 
 ```
 Calling...
@@ -134,7 +134,7 @@ Your soldiers check the **Ids** of everyone who enters and leaves.
 
 You will receive an **unknown** amount of lines from the console.
 
-Until the command "**End**" is received, on each line there will be the information for either **a citizen** or **a robot** who tries to enter your city in the format:
+Until the command "**End**" is received, on each line there will be the information for either **a citizen** or **a robot** who tries to enter your city, in the format:
 
 - "\{**name**\} \{**age**\} \{**id**\}" for citizens 
 - "\{**model**\} \{**id**\}" for robots

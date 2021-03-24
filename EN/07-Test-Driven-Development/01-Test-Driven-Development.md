@@ -15,13 +15,13 @@ Two of these development approaches are:
 
 Both of these approaches are good, but they are suitable for different use cases.
 
-So far, we have always used the **Code-Driven Approach** - we always wrote the code first, and then we wrote our tests.
+So far, we have always used the **code-driven approach** - we always wrote the code first, and then we wrote our tests.
 
 What fails us, in this case, is ourselves.
 
 When we write tests for a code that we wrote, we may unconsciously write them so they pass, ignoring some edge cases which may break our code. 
 
-That is where the **Test-Driven Approach** comes in place.
+That is where the **test-driven approach** comes in place.
 
 [/slide]
 

@@ -26,8 +26,8 @@
 
 ## In the next lesson, you will learn:
 - Reflection
-    - what Java reflection is
-    - when and where to use it
+    * what Java reflection is
+    * when and where to use it
 - Reflection API
 
 [/slide]

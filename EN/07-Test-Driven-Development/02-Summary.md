@@ -22,6 +22,6 @@
 - Design pattern **types**
     * creational
     * structural
-    * behavioural
+    * behavioral
 
 [/slide]

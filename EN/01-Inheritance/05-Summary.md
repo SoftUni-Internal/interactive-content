@@ -38,18 +38,18 @@ public class Student extends Person {
 }
 ```
 
-- Look for classes with the **same role**
+- Looking for classes with the **same role**
 
-- Look for **IS-A** and **IS-A-SUBSTITUTE** for relationship
+- Looking for an **IS-A** and **IS-A-SUBSTITUTE** relationship
 
-- Consider **Composition** and **Delegation** instead
+- **Composition** and **Delegation**
 
 
 ## In the next lesson, you will learn:
 
 
 - Inheritance and Interfaces
-  * definition
+  * definition
   * use cases 
   
 - Abstraction as an OOP Principle

@@ -16,9 +16,9 @@ Once again, let us see the main differences between `Interfaces` and `Abstract` 
 |Able to extend only another interface.|Can extend another Java class that implements multiple interfaces.|
 
 
-From this chart, we can assume that we can use `interfaces` when we need to achieve **multiple inheritance**, **full abstraction** by implementing all methods declared in the interface by a class that implements the interface.
+From this chart, we can assume that we can use **interfaces** when we need to achieve **multiple inheritance**, **full abstraction** by implementing all methods declared in the interface by a class that implements the interface.
 
-We use `abstraction` when some classes need to share few lines of code. 
+We use **abstraction** when some classes need to share few lines of code. 
 
 We can put these lines of code in an abstract class and extend them to all other related classes.
 

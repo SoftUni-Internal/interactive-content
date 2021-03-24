@@ -6,24 +6,36 @@
 ## In this lesson, you learned:
 
 - Reflection
-- Reflection API
+    * the ability of a programming language to be its own metalanguage
 
-``` java
+- Reflection API
+    * reflecting classes, constructors, methods, fields
+
+```java
 // Get class by its name
-Class test = Class.forName("Dog");
+Class test = Class.forName("Cat");
 
 // Get names of a given class
-String nameClass = myDogClass.getName();
-String nameClass = myDogClass.getSimpleName();
-
+String nameClass = myCatClass.getName();
+String nameClass = myCatClass.getSimpleName();
 ```
 
-
-- Reflecting Classes, Constructors, Methods, Fields
 - Access Modifiers
+  
+```java
+int modifiers = Cat.class.getModifiers();
+Field field = Cat.class.getDeclaredField("name");
+System.out.println(Modifier.isPrivate(field.getModifiers()));
+```
+
 - Annotations
 
-
+```java
+@Deprecated 
+public void deprecatedMethod() {
+  System.out.println("This method is deprecated!");
+}
+```
 
 ## In the next lesson, you will learn:
 

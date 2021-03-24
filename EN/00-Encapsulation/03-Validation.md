@@ -57,7 +57,7 @@ Expand **Person** with proper validation for every field:
 - **Age** must not be zero or negative
 - **Salary** cannot be less than 460.0 
 
-Print a proper **message** to the end-user (look at the example for the messages). 
+Print a proper **message** to the end-user (look at the **example** for the messages). 
 
 Do not use `System.out.println()` in the **Person** class.
 
