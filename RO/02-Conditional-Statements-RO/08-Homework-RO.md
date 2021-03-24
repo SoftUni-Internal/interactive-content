@@ -1,11 +1,11 @@
 // sectionId: "Javascript::Programming-Basics::Conditional-Statements::Homework"
 
-# Teme pentru acasă
+# Teme Pentru Acasă
 [slide hideTitle]
 
 # Problemă cu soluție: Guess the Password
 
-[video src="https://videos.softuni.org/hls/javascript-basics/RO/02-Conditions/problem1-Guess-the-Password-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/02-Conditions/problem1-Guess-the-Password-solution-TRIM-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
  
 [code-task title="Guess the Password" taskId="pb-js-Conditions-Guess-The-Password" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -75,7 +75,7 @@ Wrong password!
 [slide hideTitle]
 # Problemă: Boiling Water
 
-[video src="https://videos.softuni.org/hls/javascript-basics/RO/02-Conditions/problem2-Boiling-Water-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/02-Conditions/problem2-Boiling-Water-solution-TRIM-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Boiling Water" taskId="pb-js-Conditions-Boiling-Water" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -208,7 +208,7 @@ Fast
 [/test]
 [test]
 [input]
-43
+speedInfo(43)
 [/input]
 [output]
 Fast
@@ -265,9 +265,9 @@ Veți primi un număr întreg care reprezintă **numărul** inițial de puncte.
 
 Creați un program care calculează 
 
-- punctele bonus **primite** din număr 
+- Punctele bonus **primite** din număr 
 
-- care este valoarea inițială **a numărului total de puncte** 
+- Care este valoarea inițială **a numărului total de puncte** 
 
 Dacă numărul este sub valoarea **100 inclusiv**, atunci punctele bonus sunt **5**.
 Dacă numărul este **mai mare decât 100**, punctele bonus sunt **20 la sută din număr**.
@@ -277,7 +277,7 @@ Punctele adiționale din bonus, sunt obținute separat din cele anterioare:
 
 - Pentru un număr impar, adăugați 1 punct
 
--Pentru un număr care se termină cu 5, adăugați 2 puncte 
+- Pentru un număr care se termină cu 5, adăugați 2 puncte 
 
 # Exemplu
 

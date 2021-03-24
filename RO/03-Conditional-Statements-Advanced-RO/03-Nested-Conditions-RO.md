@@ -81,7 +81,7 @@ Imbricarea a **mai mult de trei instrucțiuni condiționale** în interiorul alt
 
 # Problemă cu Soluția: Marketplace
 
-[video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-15-16-Problem-and-Solution-Marketplace-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-15-16-Problem-and-Solution-Marketplace-solution-TRIM-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Marketplace" taskId="pb-js-conditional-statements-advanced-Marketplace" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -183,7 +183,7 @@ marketPlace(['Banana', 'Weekend'])
 [slide hideTitle]
 # Problemă cu Soluție: Biggest Number of Three
 
-[video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-17-18-Problem-and-Solution-Biggest-number-of-three-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-17-18-Problem-and-Solution-Biggest-number-of-three-solution-TRIM-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Biggest Number of Three" taskId="pb-js-conditional-statements-advanced-Biggest-Number-of-Three" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

@@ -1,12 +1,12 @@
 // sectionId: "Javascript::Programming-Basics::While-Loop::Homework"
 
-# Teme pentru acasă
+# Teme Pentru Acasă
 
 [slide hideTitle]
 # Problemă și Soluție: Sum Digits
 
 
-[video src="https://videos.softuni.org/hls/javascript-basics/RO/05-While-Loop/05.PB-JavaScript-While-Loop-27-28-Problem&Solution-Sum-Digits-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/05-While-Loop/05.PB-JavaScript-While-Loop-27-28-Sum-Digits-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 
@@ -114,7 +114,7 @@ sumDigits(8)
 [/slide]
 
 [slide hideTitle]
-# Problemă și soluție: Favorite Book
+# Problemă și Soluție: Favorite Book
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/05-While-Loop/05.PB-JavaScript-While-Loop-30-Solution-Favourite-Book-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -274,8 +274,8 @@ function adapter(input, code) {
 # Descriere
 Creați un program care găsește **cel mai mare** și **cel mai mic** număr dintr-o secvență: 
 
-* Primiți numere întregi până când ajungeți la comanda* **END**
-* imprimați **cel mai mare** și cel mai **mic** număr întreg
+* Primiți numere întregi până când ajungeți la comanda **END**
+* Imprimați **cel mai mare** și cel mai **mic** număr întreg
 
 # Exemplu
   | **Intrare** | **Ieșire** |
@@ -510,15 +510,15 @@ Creați un program care calculează punctele de bonus, pe baza următoarelor reg
 # Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
-| specialBonus(25, ['20', '30', '25']) | 60 |
-| specialBonus(5, ['3', '4', '7', '8', '5']) | 16 |
+| specialBonus(25, [20, 30, 25]) | 60 |
+| specialBonus(5, [3, 4, 7, 8, 5]) | 16 |
 
 
 [/task-description]
 [tests]
 [test open]
 [input]
-specialBonus(25, ['20', '30', '25'])
+specialBonus(25, [20, 30, 25])
 [/input]
 [output]
 60
@@ -526,7 +526,7 @@ specialBonus(25, ['20', '30', '25'])
 [/test]
 [test open]
 [input]
-specialBonus(5, ['3', '4', '7', '8', '5'])
+specialBonus(5, [3, 4, 7, 8, 5])
 [/input]
 [output]
 16
@@ -534,7 +534,7 @@ specialBonus(5, ['3', '4', '7', '8', '5'])
 [/test]
 [test]
 [input]
-specialBonus(20, ['5', '5', '20'])
+specialBonus(20, [5, 5, 20])
 [/input]
 [output]
 10
@@ -542,7 +542,7 @@ specialBonus(20, ['5', '5', '20'])
 [/test]
 [test]
 [input]
-specialBonus(20, ['20'])
+specialBonus(20, [20])
 [/input]
 [output]
 40
@@ -550,7 +550,7 @@ specialBonus(20, ['20'])
 [/test]
 [test]
 [input]
-specialBonus(45, ['34', '23', '45456', '45', '23'])
+specialBonus(45, [34, 23, 45456, 45, 23])
 [/input]
 [output]
 90912
@@ -558,7 +558,7 @@ specialBonus(45, ['34', '23', '45456', '45', '23'])
 [/test]
 [test]
 [input]
-specialBonus(20, ['5675', '5467', '45646', '20', '65756', '2567563'])
+specialBonus(20, [5675, 5467, 45646, 20, 65756, 2567563])
 [/input]
 [output]
 91292
@@ -566,7 +566,7 @@ specialBonus(20, ['5675', '5467', '45646', '20', '65756', '2567563'])
 [/test]
 [test]
 [input]
-specialBonus(1234, ['20', '576', '5675', '25673', '5675', '1234'])
+specialBonus(1234, [20, 576, 5675, 25673, 5675, 1234])
 [/input]
 [output]
 11350
@@ -574,7 +574,7 @@ specialBonus(1234, ['20', '576', '5675', '25673', '5675', '1234'])
 [/test]
 [test]
 [input]
-specialBonus(456, ['20', '45', '2353', '345', '56', '456', '23'])
+specialBonus(456, [20, 45, 2353, 345, 56, 456, 23])
 [/input]
 [output]
 112
@@ -582,7 +582,7 @@ specialBonus(456, ['20', '45', '2353', '345', '56', '456', '23'])
 [/test]
 [test]
 [input]
-specialBonus(11, ['345', '546546756', '11', '456', '456'])
+specialBonus(11, [345, 546546756, 11, 456, 456])
 [/input]
 [output]
 1093093512
@@ -758,8 +758,8 @@ function adapter(input, code) {
 Creați un program care gestionează soldul unui cont: 
 
 * Veți primi **suma de bani** pentru fiecare tranzacție până când ajungeți la comanda **END**
-* **Adunați** banii la **sold** și **tipăriți**: "**Increase:** \{**money**\}", formatați `money` până la a **doua zecimală** după virgulă
-* După **END** calculați și **imprimați** soldul total: "**Total:** \{**balance**\}", formatați `balance` până la a **doua zecimală** după virgulă
+* **Adunați** banii la **sold** și **tipăriți**: "**Increase:** \{**money**\}", formatați **money** până la a **doua zecimală** după virgulă
+* După **END** calculați și **imprimați** soldul total: "**Total:** \{**balance**\}", formatați **balance** până la a **doua zecimală** după virgulă
 
 # Exemplu
   | **Intrare** | **Ieșire** |

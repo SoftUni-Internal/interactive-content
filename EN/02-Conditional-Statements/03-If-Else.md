@@ -146,7 +146,7 @@ odd
 [/test]
 [test]
 [input]
-0
+evenOrOdd(0)
 [/input]
 [output]
 even

@@ -199,13 +199,13 @@ Aici, vedem cum funcționează programul dacă avem un pătrat cu latura egală 
 [slide hideTitle]
 # Problemă cu Soluție: Greeting
 
-[video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-23-Problem-Greeting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-23-Problem-Greeting-solution-TRIM-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Greeting" taskId="pb-js-expression-and-statements-Greeting" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function sayHello (input) {
-   // Write your code here
+function sayHello (name) {
+   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]

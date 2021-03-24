@@ -232,14 +232,14 @@ Creați un program care imprimă **cel mai mare** număr dintr-o matrice:
 
 | **Intrare**                             | **Ieșire** |
 | ------------------------------------- | ---------- |
-| greatestNumber(3, ['40', '90', '50']) | 90         |
-| greatestNumber(4, ['5', '3', '14', '35']) | 35 |
+| greatestNumber(3, [40, 90, 50]) | 90         |
+| greatestNumber(4, [5, 3, 14, 35]) | 35 |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-greatestNumber(3, ['40', '90', '50'])
+greatestNumber(3, [40, 90, 50])
 [/input]
 [output]
 90
@@ -247,7 +247,7 @@ greatestNumber(3, ['40', '90', '50'])
 [/test]
 [test open]
 [input]
-greatestNumber(4, ['5', '3', '14', '35'])
+greatestNumber(4, [5, 3, 14, 35])
 [/input]
 [output]
 35
@@ -255,7 +255,7 @@ greatestNumber(4, ['5', '3', '14', '35'])
 [/test]
 [test]
 [input]
-greatestNumber(3, ['30', '80', '40'])
+greatestNumber(3, [30, 80, 40])
 [/input]
 [output]
 80
@@ -263,7 +263,7 @@ greatestNumber(3, ['30', '80', '40'])
 [/test]
 [test]
 [input]
-greatestNumber(3, ['30', '80', '40'])
+greatestNumber(3, [30, 80, 40])
 [/input]
 [output]
 80
@@ -271,7 +271,7 @@ greatestNumber(3, ['30', '80', '40'])
 [/test]
 [test]
 [input]
-greatestNumber(3, ['15', '110', '40'])
+greatestNumber(3, [15, 110, 40])
 [/input]
 [output]
 110
@@ -279,7 +279,7 @@ greatestNumber(3, ['15', '110', '40'])
 [/test]
 [test]
 [input]
-greatestNumber(3, ['30', '90', '40'])
+greatestNumber(3, [30, 90, 40])
 [/input]
 [output]
 90

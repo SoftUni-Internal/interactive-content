@@ -130,7 +130,7 @@ Putem rezolva sarcina cu condiții de "**switch-case**" cu mai multe etichete î
 let animal = 'snake';
 switch (animal) {
     case 'dog':
-    case 'cat":
+    case 'cat':
       console.log('mammal');
       break;
     case 'crocodile':

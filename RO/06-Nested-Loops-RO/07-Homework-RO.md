@@ -1,9 +1,9 @@
 // sectionId: "Javascript::Programming-Basics::Nested-Loops::Homework"
 
-# Teme pentru acasă
+# Teme Pentru Acasă
 
 [slide hideTitle]
-# Problemă cu soluție: Building
+# Problemă cu Soluție: Building
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-33-solution-building-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -185,7 +185,7 @@ A10 A11 A12
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Passwords
+# Problemă cu Soluție: Passwords
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-36-solution-password-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -768,7 +768,7 @@ Veți primi **3 cifre** - n1, n2 și n3
   * **a doua** cifră nu trebuie să fie mai mare decât n2
   * **a treia** cifră  nu trebuie să fie mai mare decât n3
   * prima cifra și cea a treia cifră trebuie să fie impare
-  * cea a doua cifră trebuie să fie **primul număr** din interval \[2…7\]
+  * cea a doua cifră trebuie să fie **primul număr** din interval \[2 ... 7\]
 
 # Exemplu
 | **Intrare** | **Ieșire** |
@@ -981,7 +981,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care imprimă **combinații de litere** și **numărul* combinațiilor generate:
+Creați un program care imprimă **combinații de litere** și **numărul** combinațiilor generate:
 
 * Primele două litere pe care le veți primi reprezintă intervalul cu care va trebui să lucrați
 
@@ -1085,7 +1085,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Decriere
-Creați un program care generează toate **numerele cu 4 cifre** cu cifre mai mici decât un număr n  dat: 
+Creați un program care generează toate **numerele cu 4 cifre** cu cifre mai mici decât un număr n dat: 
 
 - Veți primi un număr **n** ca intrare:
 

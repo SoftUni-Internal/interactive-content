@@ -1,6 +1,6 @@
 // sectionId: "Javascript::Programming-Basics::For-Loop::Homework"
 
-# Teme pentru acasă
+# Teme Pentru Acasă
 
 [slide hideTitle]
 
@@ -42,14 +42,14 @@ Creați un program care calculează și imprimă salariul total
 
 | **Intrare**                             | **Ieșire** |
 | --------------------------------------- | ---------- |
-| calculateMonthSalary(2, ['100', '200']) | 300        |
-| calculateMonthSalary(3, ['200', '240', '130']) | 570 |
+| calculateMonthSalary(2, [100, 200]) | 300        |
+| calculateMonthSalary(3, [200, 240, 130]) | 570 |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-calculateMonthSalary(2, ['100', '200'])
+calculateMonthSalary(2, [100, 200])
 [/input]
 [output]
 300
@@ -57,7 +57,7 @@ calculateMonthSalary(2, ['100', '200'])
 [/test]
 [test open]
 [input]
-calculateMonthSalary(3, ['200', '240', '130'])
+calculateMonthSalary(3, [200, 240, 130])
 [/input]
 [output]
 570
@@ -65,7 +65,7 @@ calculateMonthSalary(3, ['200', '240', '130'])
 [/test]
 [test]
 [input]
-calculateMonthSalary(2, ['100', '300'])
+calculateMonthSalary(2, [100, 300])
 [/input]
 [output]
 400
@@ -73,7 +73,7 @@ calculateMonthSalary(2, ['100', '300'])
 [/test]
 [test]
 [input]
-calculateMonthSalary(3, ['100', '300', '50'])
+calculateMonthSalary(3, [100, 300, 50])
 [/input]
 [output]
 450
@@ -81,7 +81,7 @@ calculateMonthSalary(3, ['100', '300', '50'])
 [/test]
 [test]
 [input]
-calculateMonthSalary(5, ['100', '100', '100', '100', '100'])
+calculateMonthSalary(5, [100, 100, 100, 100, 100])
 [/input]
 [output]
 500
@@ -89,7 +89,7 @@ calculateMonthSalary(5, ['100', '100', '100', '100', '100'])
 [/test]
 [test]
 [input]
-calculateMonthSalary(3, ['10', '20', '30'])
+calculateMonthSalary(3, [10, 20, 30])
 [/input]
 [output]
 60
@@ -140,21 +140,21 @@ Creați un program care găsește **cel mai mare** și **cel mai mic** număr di
 
 | **Intrare**| **Ieșire** |
 | ---| --- |
-| numberSequence(5, ['10', '304', '0', '0', '50']) | Max number: 304 |
-|                                                  | Min number: 0   |
+| numberSequence(5, [10, 304, 0, 0, 50]) | Max number: 304 |
+|                                        | Min number: 0   |
 
 
 
 | **Intrare** | **Ieșire**     |
 | --- | --- |
-| numberSequence(4, ['15', '155', '34', '71']) | Max number: 155 |
-|                                                  | Min number: 15  |
+| numberSequence(4, [15, 155, 34, 71]) | Max number: 155 |
+|                                      | Min number: 15  |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-numberSequence(5, ['10', '304', '0', '0', '50'])
+numberSequence(5, [10, 304, 0, 0, 50])
 [/input]
 [output]
 Max number: 304
@@ -163,7 +163,7 @@ Min number: 0
 [/test]
 [test open]
 [input]
-numberSequence(4, ['15', '155', '34', '71']) 
+numberSequence(4, [15, 155, 34, 71]) 
 [/input]
 [output]
 Max number: 155
@@ -172,7 +172,7 @@ Min number: 15
 [/test]
 [test]
 [input]
-numberSequence(4, ['100', '200', '0', '300'])
+numberSequence(4, [100, 200, 0, 300])
 [/input]
 [output]
 Max number: 300
@@ -181,7 +181,7 @@ Min number: 0
 [/test]
 [test]
 [input]
-numberSequence(1, ['100'])
+numberSequence(1, [100])
 [/input]
 [output]
 Max number: 100
@@ -190,7 +190,7 @@ Min number: 100
 [/test]
 [test]
 [input]
-numberSequence(3, ['-1', '-2', '0'])
+numberSequence(3, [-1, -2, 0])
 [/input]
 [output]
 Max number: 0
@@ -205,7 +205,7 @@ Min number: -2
 
 [slide hideTitle]
 
-# Problemă cu soluție: Power Of Numbers
+# Problemă cu Soluție: Power Of Numbers
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/04-For-Loop/JS-basics-for-37-solution-power-of-number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -360,14 +360,14 @@ Creați un program care verifică dacă suma perechilor din secvență este acee
 
 | **Intrare**                           | **Ieșire**     |
 | ------------------------------------- | -------------- |
-| equalPairs(2, ['-1', '0', '0', '-1']) | Yes, value=\-1 |
+| equalPairs(2, [-1, 0, 0, -1]) | Yes, value=\-1 |
 | equalPairs(2, [1, 2, 0, 1])           | No, maxdiff=2  |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-equalPairs(2, ['-1', '0', '0', '-1'])
+equalPairs(2, [-1, 0, 0, -1])
 [/input]
 [output]
 Yes, value=\-1
@@ -391,7 +391,7 @@ No, maxdiff=2
 [/test]
 [test]
 [input]
-equalPairs(3, ['1', '2', '0', '3', '4', '-1'])
+equalPairs(3, [1, 2, 0, 3, 4, -1])
 [/input]
 [output]
 Yes, value=3
@@ -399,7 +399,7 @@ Yes, value=3
 [/test]
 [test]
 [input]
-equalPairs(2, ['1', '2', '2', '2'])
+equalPairs(2, [1, 2, 2, 2])
 [/input]
 [output]
 No, maxdiff=1
@@ -407,7 +407,7 @@ No, maxdiff=1
 [/test]
 [test]
 [input]
-equalPairs(4, ['1', '1', '3', '1', '2', '2', '0', '0'])
+equalPairs(4, [1, 1, 3, 1, 2, 2, 0, 0])
 [/input]
 [output]
 No, maxdiff=4
@@ -415,7 +415,7 @@ No, maxdiff=4
 [/test]
 [test]
 [input]
-equalPairs(1, ['5', '5'])
+equalPairs(1, [5, 5])
 [/input]
 [output]
 Yes, value=10
@@ -423,7 +423,7 @@ Yes, value=10
 [/test]
 [test]
 [input]
-equalPairs(2, ['-1', '0', '0', '-1'])
+equalPairs(2, [-1, 0, 0, -1])
 [/input]
 [output]
 Yes, value=-1
@@ -431,7 +431,7 @@ Yes, value=-1
 [/test]
 [test]
 [input]
-equalPairs(2, ['-1', '2', '0', '-1'])
+equalPairs(2, [-1, 2, 0, -1])
 [/input]
 [output]
 No, maxdiff=2
@@ -439,7 +439,7 @@ No, maxdiff=2
 [/test]
 [test]
 [input]
-equalPairs(8, ['5', '5', '70', '-60', '3', '7', '2', '8', '20', '-10', '15', '-5', '0', '10', '10', '0'])
+equalPairs(8, [5, 5, 70, -60, 3, 7, 2, 8, 20, -10, 15, -5, 0, 10, 10, 0])
 [/input]
 [output]
 Yes, value=10
@@ -492,14 +492,14 @@ Creați un program care calculează și imprima suma secvenței în zigzag:
 
 | **Intrare**                | **Ieșire** |
 | -------------------------- | ---------- |
-| zigZagSum(2, ['10', '20']) | 10         |
-| zigZagSum(3, ['5', '5'])   | 0          |
+| zigZagSum(2, [10, 20]) | 10         |
+| zigZagSum(3, [5, 5])   | 0          |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-zigZagSum(2, ['10', '20'])
+zigZagSum(2, [10, 20])
 [/input]
 [output]
 10
@@ -507,7 +507,7 @@ zigZagSum(2, ['10', '20'])
 [/test]
 [test open]
 [input]
-zigZagSum(3, ['5', '5'])
+zigZagSum(3, [5, 5])
 [/input]
 [output]
 0
@@ -515,7 +515,7 @@ zigZagSum(3, ['5', '5'])
 [/test]
 [test]
 [input]
-zigZagSum(4, ['20', '20', '20', '20'])
+zigZagSum(4, [20, 20, 20, 20])
 [/input]
 [output]
 0
@@ -523,7 +523,7 @@ zigZagSum(4, ['20', '20', '20', '20'])
 [/test]
 [test]
 [input]
-zigZagSum(2, ['10', '20'])
+zigZagSum(2, [10, 20])
 [/input]
 [output]
 10
@@ -531,7 +531,7 @@ zigZagSum(2, ['10', '20'])
 [/test]
 [test]
 [input]
-zigZagSum(5, ['213', '645', '234', '547', '3'])
+zigZagSum(5, [213, 645, 234, 547, 3])
 [/input]
 [output]
 742
@@ -539,7 +539,7 @@ zigZagSum(5, ['213', '645', '234', '547', '3'])
 [/test]
 [test]
 [input]
-zigZagSum(7, ['3', '4', '3', '2', '5', '345', '657'])
+zigZagSum(7, [3, 4, 3, 2, 5, 345, 657])
 [/input]
 [output]
 317
@@ -547,7 +547,7 @@ zigZagSum(7, ['3', '4', '3', '2', '5', '345', '657'])
 [/test]
 [test]
 [input]
-zigZagSum(8, ['45', '5', '654', '4', '5', '345', '123', '2'])
+zigZagSum(8, [45, 5, 654, 4, 5, 345, 123, 2])
 [/input]
 [output]
 471
@@ -555,7 +555,7 @@ zigZagSum(8, ['45', '5', '654', '4', '5', '345', '123', '2'])
 [/test]
 [test]
 [input]
-zigZagSum(3, ['3453', '456456', '547546'])
+zigZagSum(3, [3453, 456456, 547546])
 [/input]
 [output]
 94543
@@ -563,7 +563,7 @@ zigZagSum(3, ['3453', '456456', '547546'])
 [/test]
 [test]
 [input]
-zigZagSum(5, ['4564', '345', '456', '4563', '234'])
+zigZagSum(5, [4564, 345, 456, 4563, 234])
 [/input]
 [output]
 346
@@ -615,13 +615,13 @@ Creați un program, care găsește câte numere dintr-o secvență sunt divizibi
 
 | **Intrare**                                | **Ieșire** |
 |   ---      |    --- |
-| divideWithoutRemainder(3, ['3', '6', '9']) | 33.33\%    |
+| divideWithoutRemainder(3, [3, 6, 9]) | 33.33\%    |
 |                                            | 100.00\%   |
 |                                            | 0.00\%     |
 
 | **Intrare**  | **Ieșire** |
 |   ---      |    --- |
-| divideWithoutRemainder(2, ['8', '6', '4']) | 100.00\%   |
+| divideWithoutRemainder(2, [8, 6, 4]) | 100.00\%   |
 |                                            | 0.00\%     | 
 |                                            | 66.66\%    |
 
@@ -629,7 +629,7 @@ Creați un program, care găsește câte numere dintr-o secvență sunt divizibi
 [tests]
 [test open]
 [input]
-divideWithoutRemainder(3, ['3', '6', '9'])
+divideWithoutRemainder(3, [3, 6, 9])
 [/input]
 [output]
 33.33\%
@@ -639,7 +639,7 @@ divideWithoutRemainder(3, ['3', '6', '9'])
 [/test]
 [test open]
 [input]
-divideWithoutRemainder(2, ['8', '6', '4'])
+divideWithoutRemainder(2, [8, 6, 4])
 [/input]
 [output]
 100.00\%
@@ -649,7 +649,7 @@ divideWithoutRemainder(2, ['8', '6', '4'])
 [/test]
 [test]
 [input]
-divideWithoutRemainder(3, ['12', '27', '6'])
+divideWithoutRemainder(3, [12, 27, 6])
 [/input]
 [output]
 66.67\%
@@ -659,7 +659,7 @@ divideWithoutRemainder(3, ['12', '27', '6'])
 [/test]
 [test]
 [input]
-divideWithoutRemainder(5, ['34', '45', '654', '76', '56'])
+divideWithoutRemainder(5, [34, 45, 654, 76, 56])
 [/input]
 [output]
 80.00\%
@@ -669,7 +669,7 @@ divideWithoutRemainder(5, ['34', '45', '654', '76', '56'])
 [/test]
 [test]
 [input]
-divideWithoutRemainder(6, ['34', '453', '45', '654', '76', '56'])
+divideWithoutRemainder(6, [34, 453, 45, 654, 76, 56])
 [/input]
 [output]
 66.67\%
@@ -679,7 +679,7 @@ divideWithoutRemainder(6, ['34', '453', '45', '654', '76', '56'])
 [/test]
 [test]
 [input]
-divideWithoutRemainder(7, ['34', '453', '45', '654', '76', '2', '56'])
+divideWithoutRemainder(7, [34, 453, 45, 654, 76, 2, 56])
 [/input]
 [output]
 71.43\%
@@ -689,7 +689,7 @@ divideWithoutRemainder(7, ['34', '453', '45', '654', '76', '2', '56'])
 [/test]
 [test]
 [input]
-divideWithoutRemainder(8, ['34', '0', '453', '45', '654', '76', '2', '56'])
+divideWithoutRemainder(8, [34, 0, 453, 45, 654, 76, 2, 56])
 [/input]
 [output]
 75.00\%
@@ -699,7 +699,7 @@ divideWithoutRemainder(8, ['34', '0', '453', '45', '654', '76', '2', '56'])
 [/test]
 [test]
 [input]
-divideWithoutRemainder(9, ['34', '0', '453', '45', '2342', '654', '76', '2', '56'])
+divideWithoutRemainder(9, [34, 0, 453, 45, 2342, 654, 76, 2, 56])
 [/input]
 [output]
 77.78\%
@@ -709,7 +709,7 @@ divideWithoutRemainder(9, ['34', '0', '453', '45', '2342', '654', '76', '2', '56
 [/test]
 [test]
 [input]
-divideWithoutRemainder(10, ['34', '12', '0', '453', '45', '2342', '654', '76', '2', '56'])
+divideWithoutRemainder(10, [34, 12, 0, 453, 45, 2342, 654, 76, 2, 56])
 [/input]
 [output]
 80.00\%
@@ -899,14 +899,14 @@ Primele trei numere din intrare sunt următoarele:
 
 | **Intrare**                                 | **Ieșire**                   |
 | ------------------------------------------- | ---------------------------- |
-| rollercoaster(['2', '10', '2', '15', '24']) | The rollercoaster departs |
-| rollercoaster(['3', '15', '1', '23'])       | Waiting...                   |
+| rollercoaster([2, 10, 2, 15, 24]) | The rollercoaster departs |
+| rollercoaster([3, 15, 1, 23])       | Waiting...                   |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-rollercoaster(['2', '10', '2', '15', '24'])
+rollercoaster([2, 10, 2, 15, 24])
 [/input]
 [output]
 The rollercoaster departs
@@ -914,7 +914,7 @@ The rollercoaster departs
 [/test]
 [test open]
 [input]
-rollercoaster(['3', '15', '1', '23'])
+rollercoaster([3, 15, 1, 23])
 [/input]
 [output]
 Waiting...  
@@ -922,7 +922,7 @@ Waiting...
 [/test]
 [test]
 [input]
-rollercoaster(['2', '25', '5', '10', '15', '18', '5', '30'])
+rollercoaster([2, 25, 5, 10, 15, 18, 5, 30])
 [/input]
 [output]
 Waiting...
@@ -930,7 +930,7 @@ Waiting...
 [/test]
 [test]
 [input]
-rollercoaster(['4', '18', '10', '15', '57', '14', '35', '68', '45', '23', '14', '24', '26'])
+rollercoaster([4, 18, 10, 15, 57, 14, 35, 68, 45, 23, 14, 24, 26])
 [/input]
 [output]
 The rollercoaster departs
@@ -938,7 +938,7 @@ The rollercoaster departs
 [/test]
 [test]
 [input]
-rollercoaster(['3', '21', '5', '25', '45', '34', '12', '24'])
+rollercoaster([3, 21, 5, 25, 45, 34, 12, 24])
 [/input]
 [output]
 The rollercoaster departs
@@ -946,7 +946,7 @@ The rollercoaster departs
 [/test]
 [test]
 [input]
-rollercoaster(['3', '10', '5', '10', '15', '18', '5', '30'])
+rollercoaster([3, 10, 5, 10, 15, 18, 5, 30])
 [/input]
 [output]
 The rollercoaster departs
@@ -954,7 +954,7 @@ The rollercoaster departs
 [/test]
 [test]
 [input]
-rollercoaster(['10', '10', '5', '12', '9', '8', '1', '23'])
+rollercoaster([10, 10, 5, 12, 9, 8, 1, 23])
 [/input]
 [output]
 Waiting...

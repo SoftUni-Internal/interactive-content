@@ -508,15 +508,15 @@ Create a program, which calculates bonus points based on the following rules:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-| specialBonus(25, ['20', '30', '25']) | 60 |
-| specialBonus(5, ['3', '4', '7', '8', '5']) | 16 |
+| specialBonus(25, [20, 30, 25]) | 60 |
+| specialBonus(5, [3, 4, 7, 8, 5]) | 16 |
 
 
 [/task-description]
 [tests]
 [test open]
 [input]
-specialBonus(25, ['20', '30', '25'])
+specialBonus(25, [20, 30, 25])
 [/input]
 [output]
 60
@@ -524,7 +524,7 @@ specialBonus(25, ['20', '30', '25'])
 [/test]
 [test open]
 [input]
-specialBonus(5, ['3', '4', '7', '8', '5'])
+specialBonus(5, [3, 4, 7, 8, 5])
 [/input]
 [output]
 16
@@ -532,7 +532,7 @@ specialBonus(5, ['3', '4', '7', '8', '5'])
 [/test]
 [test]
 [input]
-specialBonus(20, ['5', '5', '20'])
+specialBonus(20, [5, 5, 20])
 [/input]
 [output]
 10
@@ -540,7 +540,7 @@ specialBonus(20, ['5', '5', '20'])
 [/test]
 [test]
 [input]
-specialBonus(20, ['20'])
+specialBonus(20, [20])
 [/input]
 [output]
 40
@@ -548,7 +548,7 @@ specialBonus(20, ['20'])
 [/test]
 [test]
 [input]
-specialBonus(45, ['34', '23', '45456', '45', '23'])
+specialBonus(45, [34, 23, 45456, 45, 23])
 [/input]
 [output]
 90912
@@ -556,7 +556,7 @@ specialBonus(45, ['34', '23', '45456', '45', '23'])
 [/test]
 [test]
 [input]
-specialBonus(20, ['5675', '5467', '45646', '20', '65756', '2567563'])
+specialBonus(20, [5675, 5467, 45646, 20, 65756, 2567563])
 [/input]
 [output]
 91292
@@ -564,7 +564,7 @@ specialBonus(20, ['5675', '5467', '45646', '20', '65756', '2567563'])
 [/test]
 [test]
 [input]
-specialBonus(1234, ['20', '576', '5675', '25673', '5675', '1234'])
+specialBonus(1234, [20, 576, 5675, 25673, 5675, 1234])
 [/input]
 [output]
 11350
@@ -572,7 +572,7 @@ specialBonus(1234, ['20', '576', '5675', '25673', '5675', '1234'])
 [/test]
 [test]
 [input]
-specialBonus(456, ['20', '45', '2353', '345', '56', '456', '23'])
+specialBonus(456, [20, 45, 2353, 345, 56, 456, 23])
 [/input]
 [output]
 112
@@ -580,7 +580,7 @@ specialBonus(456, ['20', '45', '2353', '345', '56', '456', '23'])
 [/test]
 [test]
 [input]
-specialBonus(11, ['345', '546546756', '11', '456', '456'])
+specialBonus(11, [345, 546546756, 11, 456, 456])
 [/input]
 [output]
 1093093512

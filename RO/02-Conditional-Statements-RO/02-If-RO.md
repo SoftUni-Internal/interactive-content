@@ -6,7 +6,6 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/02-Conditions/02-conditional-statements-js-8-9-Real-Life-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[image assetsSrc="02-coditional-statements-1.png" /]
 
 În fiecare zi ne confruntăm cu decizii de luat, pe care le luăm pe baza unor condiții care depind sau nu de noi.
 
