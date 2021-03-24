@@ -7,7 +7,7 @@
 
 - Strings are immutable sequences of Unicode characters
 
-- String processing methods:
+- Methods to perform operations on strings:
     - `concat()`, `indexOf()`, `contains()`, `substring()`, `split()`, `replace()`, etc.
 
 ```java
@@ -30,7 +30,9 @@ String result = greet.concat(name);
 System.out.println(result); // "Hello, SoftUni!"
 ```
 
-- StringBuilder efficiently builds and modifies strings
+- What a StringBuilder is
+
+- Useful methods provided by the StringBuilder class 
 
 ## In the next lesson, you will learn:
 
