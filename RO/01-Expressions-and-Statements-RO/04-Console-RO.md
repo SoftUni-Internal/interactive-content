@@ -11,9 +11,9 @@ Arată, de obicei, ca o fereastră colorată în negru ca aceasta.
 
 In majoritatea cazurilor,  **consola** este o aplicație independentă în care putem scrie comenzi.
 
-Este denumită **Command Prompt** in Windows și **Terminal** în Linux și Mac. 
+Este denumită **Command Prompt** în Windows și **Terminal** în Linux și Mac. 
 
-Consola rulează aplicații pentru consolă.Ele citesc text din liniile de comandă și imprimă textul pe consolă.
+Consola rulează aplicații pentru consolă. Ele citesc text din liniile de comandă și imprimă textul pe consolă.
 
 Vom învăța să programăm, creând **aplicații de consolă**.
 
@@ -41,17 +41,17 @@ console.log(firstNum + secondNum);
 [/slide]
 
 [slide hideTitle]
-# Citirea Fatelor de la Utilizator
+# Citirea Datelor de la Utilizator
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-18-Reading-user-input-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In sistemele software, informațiile de la utilizatori vin din multe surse, ca de exemplu, User Interface(UI).
+În sistemele software, informațiile de la utilizatori vin din multe surse, ca de exemplu, User Interface (UI).
 
 Veți avea o fereastră text care vă va spune `please type your username and type your password`, iar apoi veți putea da click pe un buton de login.
 
-Este unul dintre modurile de a primi informații de la utilizatori.
+Acesta este unul dintre modurile de a primi informații de la utilizatori.
 
-Programele pot, de asemenea, să preia informațiile de la utilizatori(input) prin intermediul rest API sau ca parametri ai unei funcții.
+Programele pot, de asemenea, să preia informațiile de la utilizatori (input) prin intermediul REST API sau ca parametri ai unei funcții.
 [/slide]
 
 [slide hideTitle]
@@ -87,14 +87,14 @@ function town(homeTown) {
 town("București");
 ```
 
-În acest caz expresia `{homeTown}`  este înlocuită cu valoarea de intrare `homeTown`.
+În acest caz expresia `{homeTown}`  este înlocuită cu valoarea intrării `homeTown`.
 
 Dacă introducem **București**, ieșirea va fi astfel: `I am from București!` 
 
 [/slide]
 
 [slide hideTitle]
-# Transmiterea Paranetrilor Multipli 
+# Transmiterea Parametrilor Multipli 
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-20-Passing-Multiple-Parameters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -113,7 +113,7 @@ function printSum(firstNum, secondNum) {
 printSum(5, 10);
 ```
 
-Dacă încercăm să accesăm firstNum în afara corpului funcției, vom obține o eroare.
+Dacă încercăm să accesăm `firstNum` în afara corpului funcției, vom obține o eroare.
 
 ``` js live
 function printSum(firstNum, secondNum) {
@@ -130,9 +130,9 @@ console.log(firstNum);
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-21-21-demo-Formatting-Outputs-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-JavaScript ne permite să formatăm numerele ca virgule mobile. 
+JavaScript ne permite să formatăm numerele în virgulă mobilă. 
 
-In exemplu următor vom formata numărul la două cifre după virgula de zecimale, folosind metoda `toFixed(2)` :
+În exemplul următor vom formata numărul la două cifre după virgula de zecimale, folosind metoda `toFixed(2)` :
 
 ```js
 function calculateSquareArea(input) {
@@ -142,13 +142,12 @@ function calculateSquareArea(input) {
 }
 ```
 
-## Folosirea Interpolării Sirului Dollar String
-Folosirea interpolării șirului Dollar String
-Putem formata text în JS folosind, de asemenea, următoarea sintaxa $ syntax. Aceasta ne oferă  o metodă simplificată de formatare a textului.
+## Folosirea Interpolării Dollar String
+Putem formata text în JS folosind, de asemenea, următoarea sintaxă $. Aceasta ne oferă o metodă simplificată de formatare a textului.
 
 Încadrată de simbolurile back-tick (**\` \`**), în loc să fie scris între virgule sau ghilimele. 
 
-Putem folosi simbolul dollarului și acolade (`${expression}`):
+Putem folosi simbolul dolarului și acolade (`${expression}`):
 ```js
 let name = 'John'; 
 console.log(`Hi, ${name}`);
@@ -162,7 +161,7 @@ Prefixul `$` înaintea unui șir în JS ne ajută să facem așa-numita **
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-22-Parsing-Numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Pentru a putea citi un **număr** de pe consolă, trebuie să **declarăm o variabilă** și să folosim comanda standard **de citire a unei linii de text** de pe consola de sistem și după aceea,**să convertim accea linie de text într-un număr**, folosind `Number(text)`:
+Pentru a putea citi un **număr** de pe consolă, trebuie să **declarăm o variabilă** și să folosim comanda standard **de citire a unei linii de text** de pe consola de sistem și după aceea,**să convertim acea linie de text într-un număr**, folosind `Number(text)`:
 
 ```js live
 function example(input){
@@ -173,7 +172,7 @@ function example(input){
 
 example('25');
 ```
-Linia de sus in JS code care  **citește un număr**, este prima linie de pe consolă.
+Linia de sus a codului JS **citește un număr** de pe prima linie de pe consolă.
 
 Dacă vrem să alocăm o valoare non-numerică acestei variabile, de exemplu `Hello`, vom primi rezultatul `NaN` care este acronimul de la **Not a number**. 
 
@@ -223,7 +222,7 @@ function adapter(input, code) {
 Creați un program care să citească datele de intrare din consolă: numele și apoi imprimați  "**Hello,** \{**name**\}", unde \{**name**\} este introdus de utilizator.  
 
 ## Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | sayHello('Peter') | Hello, Peter |
 | sayHello('John') | Hello, John |
