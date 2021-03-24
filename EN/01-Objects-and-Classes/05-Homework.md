@@ -7,30 +7,30 @@
 [task-description]
 ## Description
 
-Create an article class with the following properties:
+Create a class called **Article** that has the following properties:
 - title – a string
 - content – a string
 - author – a string
 
 The class should have a constructor and the following methods:
-- **edit** (new content) – change the old content with the new one
-- **changeAuthor** (new author) – change the author
-- **rename** (new title) – change the title of the article
-- **override ToString** – print the article in the following format: 
-
+- **edit** (new content) – changes the old content with the new one
+- **changeAuthor** (new author) – changes the author
+- **rename** (new title) – changse the title of the article
+- **override ToString** – prints the the information about the article in the following format: 
 "\{title\} - \{content\}:\{author\}"
 
-Create a program that reads an article in the following **format** "\{title\}, \{content\}, \{author\}". 
+Create a program that reads information about an article in the following **format**: "\{title\}, \{content\}, \{author\}". 
 
-On the next line, you will receive a **number n**. 
+On the next line, you will receive a **number - n**. 
 
-On the **next n lines**, you will get one of the following **commands**: 
+On the next **n** lines, you will be receiving one of the following **commands**: 
 
 - "Edit: \{new content\}" 
 - "ChangeAuthor: \{new author\}" 
 - "Rename: \{new title\}". 
 
-At the end, **print the final article**.
+
+Print out the **final information about the article**.
 
 ### Example
 
@@ -135,9 +135,19 @@ The haunting of hill house - better content2:  Shirley Jackson
 [code-task title="Opinion Poll" taskId="java-fund-2-Objects-and-Classes-Opinion-Poll" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [task-description]
 ## Description
-Using the **Person class**, create a program that reads **N lines of personal information** and then **prints all of the people** who are **older than 30 years old** in the following **format**:
+Create a class called **Person** that will have the following properties:
 
-\{name\} - \{age\}
+- name
+- age
+
+
+On the first line, you will receive a number **N**, which will represent the number of all people.
+
+On the next **N** lines, you will be receiving information about these people.
+
+
+Print out the information about all people who are **older than 30 years of age** in the following format: \{name\} - \{age\}
+
 
 ### Example
 | **Input** | **Output** |
@@ -340,17 +350,21 @@ Anntoanette - 39
 [code-task title="Articles 2.0" taskId="java-fund-2-Objects-and-Classes-Articles-2.0" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [task-description]
 ## Description
-Update the class "Articles", so you can store a **list of articles**.
+Update the class called **"Articles"**, so you can store a **list of articles**.
 
-You will not need the methods any more (**except** for the toString method).
+You will need only the **toString** method.
 
-On the **first line**, you will get a **number n**.
+On the **first line**, you will receive a number - **n**.
 
-On the next **n lines**, you will get some **articles in the same format as the previous task** ("\{title\}, \{content\}, \{author\}").
+On the next **n** lines, you will receive information about some articles **in the same format**: ("\{title\}, \{content\}, \{author\}").
 
-Finally, you will get one of the **three criteria**: "title", "content", "author".
+Finally, you will receive one of the following **three criteria**: "title", "content", "author".
 
-You need to order the articles **alphabetically** based on the command and print them sorted by the given **criteria**.
+
+Order the articles **alphabetically** by their title, their content, or their author, depending on the given **criteria**.
+
+Print out the information about the sorted articles.
+
 
 ### Example
 | **Input** | **Output** |
@@ -481,19 +495,18 @@ Most Valuable Playboy - content4: Lauren Blakely
 
 [task-description]
 ## Description
+Create a program that sorts some students by their grade in descending order.
 
-Create a program that receives **n count of students** and **orders them by grade (in descending)**. 
-
-Each student should have a **first name** (String), a **last name** (String) **and a grade** (floating-point number). 
+Each student should have a **first name** (String), a **last name** (String), **and a grade** (floating-point number). 
 
 ### Input
 
-- First line will be a number **n**
-- Next **n** lines you will get a student info in the format "\{first name\} \{second name\} \{grade\}"
+- On the first line, you will receive a number **n**, which will represent the **count of all students**
+- On the next **n** lines, you will be receiving information about these students in the following format: "\{first name\} \{second name\} \{grade\}"
 
 
 ### Output
-- Print each student in the following format "\{first name\} \{second name\}: \{grade\}"
+- Print out the information about each student in the following format: "\{first name\} \{second name\}: \{grade\}"
 
 ### Example
 | **Input** | **Output** |
@@ -614,11 +627,13 @@ Amias Mathews: 2.30
 
 [task-description]
 ## Description
-Until you receive the **command** "`End`", you will receive lines of input in the format:
+Until you receive the **"End"** command , you will be receiving lines of input in the following format:
 
 - \{typeOfVehicle\} \{model\} \{color\} \{horsepower\}
 
-After the "End" command, you will start receiving **models of vehicles**. **For every received vehicle**, print its data in the **format**:
+When you receive the **"End"** command, you will start receiving information about some **vehicles**. 
+
+**For every received vehicle**, print out the information about it in the following **format**:
 
 Type: \{typeOfVehicle\}
 
@@ -628,13 +643,13 @@ Color: \{colorOfVehicle\}
 
 Horsepower: \{horsepowerOfVehicle\}
 
-When you receive the command "Close the Catalogue", **print the average horsepower** for the cars and for the trucks in the **format**:
+When you receive the **"Close the Catalogue"** command, print out the **average horsepower** of the cars and the **average horsepower** of the trucks in the **format**:
 
 "\{typeOfVehicles\} have average horsepower of \{averageHorsepower\}."
 
-The average horsepower is **calculated** by **dividing the sum of horsepower for all vehicles of the type by the total count of vehicles from the same type**.
+The average horsepower is calculated by **dividing the sum of the horsepower of all vehicles of the given type by the total count of all vehicles from that type**.
 
-Format the answer to the **second decimal point**.
+Format the answer to the **second digit after the decimal point**.
 
 ### Example
 | **Input** | **Output** |
