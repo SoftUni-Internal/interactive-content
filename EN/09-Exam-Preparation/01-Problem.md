@@ -24,7 +24,7 @@
 
 You are given interfaces, and you have to implement their functionality in the **correct classes**.
 
-There are **4** types of entities in the application: **Dwarf, Present, Workshop, Instrument**. 
+There are **four** types of entities in the application: **Dwarf, Present, Workshop, Instrument**. 
 
 There should also be a **DwarfRepository**, as well as a **PresentRepository**.
 
@@ -35,13 +35,13 @@ There should also be a **DwarfRepository**, as well as a **PresentRepository**.
 ## Data:
 
 - **name - String**
-  * if the name **is null or whitespace**, throw a **NullPointerException** with the message: 
+  * if the name **is null or whitespace**, throw a `NullPointerException` with the message: 
   "**Dwarf name cannot be null or empty.**"
   * all names will be **unique**
 
 - **energy -  int**
   * the energy of a dwarf
-  * if the **initial** energy is below 0, throw an **IllegalArgumentException** with the message:
+  * if the **initial** energy is below 0, throw an `IllegalArgumentException` with the message:
   "**Cannot create a Dwarf with negative energy!**"
 
 - **instruments - Collection**\<**Instrument**\>
@@ -61,7 +61,7 @@ A **BaseDwarf** should take the following values upon initialization:
   * a dwarf's energy should **not** drop **below 0** (if the power becomes less than 0, set it to 0)
 
 - `void addInstrument(Instrument instrument)` 
-  * this method **adds** an **instrument** to the dwarf's **collection** of instruments. 
+  * this method **adds** an **instrument** to the dwarf's **collection** of instruments
 
 - `boolean canWork()`
   * returns **true**, if the current energy of the dwarf is **greater** than **0**
@@ -101,7 +101,7 @@ The **InstrumentImpl** is a class that represents the tool, which a **Dwarf** us
 - **power - int**
 
   * the power of an instrument
-  * if the **initial** power is below **0**, throw an **IllegalArgumentException** with the message:
+  * if the **initial** power is below **0**, throw an `IllegalArgumentException` with the message:
   "**Cannot create an Instrument with negative power!**"
 
 ## Constructor
@@ -118,7 +118,7 @@ An **InstrumentImpl** should take the following values upon initialization:
   * if the power becomes less than 0, set it to 0
 
 - `boolean isBroken()` 
-  * this method returns true when its power becomes equal to 0
+  * this method returns **true** when its **power** becomes equal to **0**
 
 # PresentImpl
 
@@ -134,7 +134,7 @@ This is the class that holds information about the **Present** that a **Dwarf** 
 
 - **energyRequired - int**
   * the energy a present requires in order to be crafted
-  * if the **initial** energy is below **0**, throw an **IllegalArgumentException** with the message:
+  * if the **initial** energy is below **0**, throw an `IllegalArgumentException` with the message:
   "**Cannot create a Present requiring negative energy!**"
 
 ## Constructor 
@@ -175,7 +175,7 @@ Here is how the **craft** method works:
 
 ## Data
 
-- **dwarfs - a collection of dwarfs**
+- **dwarfs** - a **collection** of **dwarfs**
 
 ## Behavior
 
@@ -199,7 +199,7 @@ The present repository is a repository for presents that await to be crafted.
 
 ## Data
 
-- **presents - a collection of presents**
+- **presents** - a **collection** of **presents**
 
 ## Behavior
 
