@@ -6,7 +6,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-10-how-to-debug-a-process-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**IntelliJ IDEA** has a built-in debugging tool.
+**IntelliJ IDEA** has a **built-in** debugging tool.
 
 It is helpful because it allows us to:
 
@@ -14,10 +14,11 @@ It is helpful because it allows us to:
     - we add **breakpoints** when we want to stop the program on a specific line of code
 
 - Visualize the **flow of the program**
-    - this means to see, for example, how many times the **for-loop** will iterate
+    - for example, how many times the **for-loop** will iterate
 
 - Control the **execution flow**
-    - this allows us to **control** step by step the **flow** of the **program execution**
+    - allows us to **control** the **flow** of the **program execution** step by step
+
 - Track the **values** stored in the **variables**
 
 [/slide]
@@ -27,16 +28,15 @@ It is helpful because it allows us to:
 
 # Starting a Process of Debugging
 
+In **IntelliJ IDEA**, we can use the **keyboard combination** (**Ctrl + Alt + F5**) to execute the code **in debug mode**.
 
-To run the debugger in **InteliJ IDEA** we have to press **Ctrl + Alt + F5**.
-
-After that, a pop-up list will appear, from which we have to select the process we want.
+A pop-up list will appear, from which we have to select the process we want.
 
 Finally, we can debug our program.
 
-We can run the debugger on a program which is not running.
+We can run the debugger on a program, which is not running.
 
-Also, we can attach to a program, which is **not** directly available in **IntelliJ IDEA**.
+Also, we can attach it to a program, which is **not** directly available in **IntelliJ IDEA**.
 
 [image assetsSrc="debugging-techniques-example(1).png" /]
 
@@ -60,17 +60,17 @@ The **debug mode** gives us control over the execution flow.
 Also, it allows us to observe the values of the variables.
 
 
-## Debug Windows
+## Debug Window
 
 The **Debug Window** shows us the debugging session.
 
 In the window, there is tab for the **console** and tab for the **debugger**.
 
-In the console we can put the needed input.
+In the console tab, we can put the needed input.
  
-The **Debugger** tab is shows the steps the program goes through.
+The **Debugger** tab shows the steps the program goes through.
 
-There are different categories in the window that we can observe:
+There are different categories we can observe:
 
 - Frames / Threads
 
@@ -86,7 +86,7 @@ We can do that from the toolbar or by shortcuts.
 
 From the toolbar we can **skip**, **step over**, **step into**, etc.
 
-Here are the shortcuts for the most used actions:
+Here are the default shortcuts for the most used actions:
 
 - **Step over** - "**F8**"
 - **Step Out** - "**Shift + F8**"
