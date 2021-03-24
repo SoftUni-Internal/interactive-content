@@ -1654,7 +1654,9 @@ Create a function that searches in a table by a given input.
 
 When the `Search` button is clicked, go through all cells in the table, except for the first row, which is the header of the table: Student name, Student email, and Student course.
 
-Check if the given input has a match. Check for both full words and single letters.
+Check if the given input has a match. 
+
+Check for both full words and single letters.
 
 If any of the rows contain the submitted string, add a **select class** to that row.
 

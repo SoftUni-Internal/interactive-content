@@ -9,8 +9,8 @@
 ## În această lecție ați învățat:
 
 - **First-class functions**:
-  - Pot fi pasate ca un **argument**
-  - Poti fi **returned**
+  - pot fi pasate ca un **argument**
+  - poti fi **returned**
 
 ```js
 function sayHello() {
@@ -23,7 +23,7 @@ function greet(sayHello, name) {
 ```
 
 - **Higher-Order Functions**:
-  - Ia alte **functions** ca argument sau **return** o funcție ca rezultat
+  - ia alte **functions** ca argument sau **return** o funcție ca rezultat
 
 ```js
 const sayHello = function () {
@@ -38,7 +38,7 @@ greet(); // Output: "Hello"
 
 
 - **IIFE** este prescurtarea pentru Immediately-Invoked Function Expression:
-  - Aceasta **encapsulates code and data** \(state\)
+  - aceasta **encapsulates code and data** \(state\)
 
 ```js
 (function () {

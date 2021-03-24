@@ -369,6 +369,7 @@ Ieșirea trebuie să fie **sorted array**.
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
+|---|---|
 |[14, 7, 17, 6, 8], 'asc'|[6, 7, 8, 14, 17]|
 |[14, 7, 17, 6, 8], 'asc'|[6, 7, 8, 14, 17]|
 

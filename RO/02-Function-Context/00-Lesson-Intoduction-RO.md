@@ -23,6 +23,6 @@
 
 **5. Proprietăți interne ale obiectelor**
 - Utilizarea proprietăților interne pentru a schimba comportamentul proprietății
-    * Ce funcție au `freeze()` și `seal()`
+    * ce funcție au `freeze()` și `seal()`
 
 [/slide]

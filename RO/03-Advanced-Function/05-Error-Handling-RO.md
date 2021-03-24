@@ -56,16 +56,16 @@ Cele trei tipuri comune de **errors** sunt :
 
 - **Syntax Errors**
   
-  - Fiecare limbaj de programare are un set de **grammar rules** care, dacă sunt greșite, produc probleme
+  - fiecare limbaj de programare are un set de **grammar rules** care, dacă sunt greșite, produc probleme
   
-  - Cele mai multe dintre [IDEs](https://en.wikipedia.org/wiki/Integrated_development_environment) au capacitatea de a atenționa în legătură cu **Syntax Errors** până în momentul scrierii codului
+  - cele mai multe dintre [IDEs](https://en.wikipedia.org/wiki/Integrated_development_environment) au capacitatea de a atenționa în legătură cu **Syntax Errors** până în momentul scrierii codului
   
 
 - **Runtime Errors**
   
-  - Erorile de timp de rulare apar după compilare, în modul **user is executing your application**
+  - erorile de timp de rulare apar după compilare, în modul **user is executing your application**
   
-  - Folosirea [software frameworks](https://en.wikipedia.org/wiki/Software_framework) poate scădea semnificativ șansele ca astfel de erori să apară 
+  - folosirea [software frameworks](https://en.wikipedia.org/wiki/Software_framework) poate scădea semnificativ șansele ca astfel de erori să apară 
 
 - **Logical errors**
   
@@ -178,9 +178,9 @@ Dacă este lansat `TypeError`, restul codului **will not** fi executat.
 
 Constructorul **try-catch** cuprinde două blocuri principale: 
 
-- **try**, care conține codul 
+- **Try**, care conține codul 
 
-- **catch**, care conține logica de **error handling**
+- **Catch**, care conține logica de **error handling**
 
 ```js
 try {
