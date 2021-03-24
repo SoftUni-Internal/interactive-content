@@ -1,4 +1,4 @@
-# Matrice Multidimensională
+# Matrice Multidimensională
 
 [slide hideTitle]
 
