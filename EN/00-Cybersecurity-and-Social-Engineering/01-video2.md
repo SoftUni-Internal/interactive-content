@@ -1,2 +1,3 @@
 [slide hideTitle]
+# Video
 [/slide]
