@@ -22,7 +22,7 @@
 
 **3. Raising (Throwing) Exceptions**
 
-- Using the `Throw` Keyword
+- Using the `throw` Keyword
 
 - Re-throwing exceptions
 
