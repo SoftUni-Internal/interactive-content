@@ -36,7 +36,7 @@ In acest exemplu, organizatorul este asignat elementului `<div>` element, dar po
 
 ```js
 <div onclick="alert('The handler!')">
-  <em>Click on <code>ME</code>, or click on the main <code>DIV</code> runs.</em>
+   <em>Click on <code>ME</code>, or click on the main <code>DIV</code> runs.</em>
 </div>
 ```
 
@@ -48,7 +48,7 @@ Putem opri faza **bubbling** folosind o metodă numită `event.stopPropagation()
 
 ```js
 <body onclick="alert(`the bubbling doesn't reach here`)">
-  <button onclick="event.stopPropagation()">Click me</button>
+   <button onclick="event.stopPropagation()">Click me</button>
 </body>
 ```
 

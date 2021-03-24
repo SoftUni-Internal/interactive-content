@@ -12,13 +12,13 @@
 
 Funcțiile **bind (leagă)**, **apply (aplică)** și **call (apelează)** pot fi folosite pentru a seta în mod explicit valoarea **acesteia**.
 
- - `call()` - schimbă contextul funcției la obiectul dat.
+ - `call()` - schimbă contextul funcției la obiectul dat
 
 ```js
 functionName.call(objectToBind, additionalArguments);
 ```
 
-- `apply()`- aceeași funcție ca și **call()** dar acceptă o listă de argumente, în timp ce **apply()** acceptă o matrice.
+- `apply()`- aceeași funcție ca și **call()** dar acceptă o listă de argumente, în timp ce **apply()** acceptă o matrice
 
 ```js
 console.log(praise.apply(dog,
@@ -26,7 +26,9 @@ console.log(praise.apply(dog,
 ));
 ```
 
-- `bind()` - creează o **funcție nouă**. Permite obiectelor să împrumute metode de la alte obiecte fără ca noi să facem manual copii ale acelei metode.
+- `bind()` - creează o **funcție nouă** 
+
+Permite obiectelor să împrumute metode de la alte obiecte fără ca noi să facem manual copii ale acelei metode.
 
 Proprietățile **interne** ale obiectelor care vă permit să modificați modul în care se vor comporta proprietățile obiectului:
 - **enumerable (enumerabil)**, **configurable (configurabil)** și **writable (modificabil)**

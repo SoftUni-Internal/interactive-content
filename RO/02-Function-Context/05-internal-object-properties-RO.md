@@ -33,7 +33,7 @@ console.log(descriptor);
 }
 ```
 
-- **Enumerable**: Putem enumera proprietățile obiectelor care sunt setate la **enumerable:true** cu bucla `for..in` sau le putem enumera folosind metoda ``Object.keys()``.
+- **Enumerable**: Putem enumera proprietățile obiectelor care sunt setate la **enumerable:true** cu bucla `for..in` sau le putem enumera folosind metoda `Object.keys()`
 
 - **Configurable** - folosit pentru a modifica comportamentul proprietății.
 
