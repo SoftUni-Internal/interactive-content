@@ -110,7 +110,7 @@ Să vedem un program simplu care ia **o sumă de bani în dolari (USD)** - un nu
 
 Acesta este un program de 3 comenzi consecutive:
 
-```js
+```js live
 function convertUsdToEur(input) {
   let dollars = Number.parseFloat(input);
   let euro = dollars * 0.883795087;
