@@ -10,7 +10,7 @@ A method is a collection of statements that perform some specific task and retur
 
 In some cases, they can do so without returning anything.
 
-Methods are time savers and help us to reuse the code without retyping the code.
+Methods are time savers and help us to reuse the code without retyping it.
 
 In Java, every method must be a part of a class.
 
