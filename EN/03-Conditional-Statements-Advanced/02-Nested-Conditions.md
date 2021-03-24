@@ -4,9 +4,9 @@
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/java-basics-conditional-statements-advanced-9-10-nested-conditional-statements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Often, program logic requires the use of `if` or `if-else` statements, which are contained one inside another.  
-These are called **nested** `if` or `if-else` statements. 
+These are called **nested** statements. 
 
-As implied by the title **"nested"**, these are `if` or `if-else` statements that are placed inside other `if` or `else` statements.
+As implied by the word **"nested"**, these are `if` or `if-else` statements that are placed inside other `if` or `else` statements.
 
 ```java
 if (condition1) {
@@ -32,7 +32,7 @@ We should notice that the **output** of the program **depends on a few condition
 
 We are going to use **a few** `if-else` blocks. 
 
-These blocks will be **nested**, so that by **the result** of the outer one, we are going to **define** which one of the **nested ones** to execute.
+These blocks will be **nested**, so that by **the result** of the outer one, we are going to **define** which one of the **inner ones** to execute.
 
 After reading the input data from the console, the following program logic should be executed:
 ```java
@@ -84,8 +84,8 @@ public class Main
 [task-description]
 # Description
 Create a program that:
-  * Reads a **product** and whether it is a **weekday** or a **weekend** 
-  * Prints out the **price**, formatted up to 2nd decimal place, based on the price table below
+  * Reads a **product** and whether it is currently a **weekday** or a **weekend** 
+  * Prints out the product **price**, formatted up to 2nd decimal place, based on the price table below
 
 |**Product**|**Weekday**|**Weekend**| 
 |---|---|---|
@@ -150,7 +150,7 @@ public class Main {
 Create a program, that:
 
   * Reads **3 numbers** from the console
-  * Prints out **the greatest** number
+  * Prints out **the greatest** number of the 3
 
 ## Example
 
