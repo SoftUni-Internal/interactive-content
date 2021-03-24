@@ -137,7 +137,7 @@ import java.util.Scanner;
 public class Program {
   public static void main(String[] args) {
       Scanner scanner = new Scanner(System.in);
-      // write code here
+      // Scrieți codul dvs. aici
   }
 }
 ```

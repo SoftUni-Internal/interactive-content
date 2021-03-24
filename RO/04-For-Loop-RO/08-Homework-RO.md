@@ -815,12 +815,12 @@ A decis să se întoarcă până în 1800, dar nu știa dacă banii ar fi sufici
 
 
 Scrieți un program care să calculeze dacă Josh va avea suficienți bani pentru a nu fi nevoit să lucreze, începând de la 1800 până la un anumit an, specificat de la consolă.
-- În fiecare an par (1800, 1802 etc.) el va cheltui 12 000 de dolari.
-- În fiecare an impar (1801, 1803 etc.) el va cheltui 12 000 + 50 \* \[vârsta sa în acel an\].
+- În fiecare an par (1800, 1802 etc.) el va cheltui 12 000 de dolari
+- În fiecare an impar (1801, 1803 etc.) el va cheltui 12 000 + 50 \* \[vârsta sa în acel an\]
 
 ## Intrare
 Intrarea este citită de pe consolă și conține exact 2 linii:
-- Banii moșteniți - număr real în intervalul \[1,00 ... 1,000,000,00\]
+- Banii moșteniți - număr real în intervalul \[1.00 ... 1.00.000.00\]
 - An până la  care trebuie calculate costurile - un număr întreg în intervalul \[1801 ... 1900\]
 
 
