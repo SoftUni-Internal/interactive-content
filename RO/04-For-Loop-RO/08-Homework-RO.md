@@ -12,9 +12,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-
-      // Write your code here
-
+       // Scrieți codul dvs. aici
     }
 }
 ```
@@ -85,9 +83,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-
-      // Write your code here
-
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -177,9 +173,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-
-      // Write your code here
-
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -232,9 +226,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-
-      // Write your code here
-
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -388,9 +380,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-
-      // Write your code here
-
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -461,9 +451,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-
-      // Write your code here
-
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -526,9 +514,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-
-      // Write your code here
-
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -627,9 +613,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-
-      // Write your code here
-
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -742,9 +726,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-
-      // Write your code here
-
+      // Scrieți codul dvs. aici
     }
 }
 ```

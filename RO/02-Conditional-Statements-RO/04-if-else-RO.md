@@ -179,7 +179,7 @@ Scrieți un program, care găsește cel mai mare dintre două numere:
 
    * Citiți două **numere întregi**
    * Găsiți numărul mai mare
-   * Imprimați `Greater number: ` + numărul **mai mare**
+   * Imprimați "**Greater number:** " + numărul **mai mare**
 ## Exemplu
 
 |**Intrare**|**Ieșire** |

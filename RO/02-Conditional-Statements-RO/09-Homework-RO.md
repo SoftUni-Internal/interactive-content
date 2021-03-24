@@ -81,7 +81,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write your code here
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -151,7 +151,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write your code here
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -224,7 +224,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-   // Write your code here
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -353,7 +353,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write your code here
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -444,7 +444,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write your code here
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -547,7 +547,7 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write your code here
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -626,7 +626,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -832,14 +832,14 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care citește de pe consolă două numere întregi ce reprezintă ora fixă în formatul: **"\{hours\}:\{minutes\}"** și tipărește ce oră va fi dupa 15 minute.
+Scrieți un program care citește de pe consolă două numere întregi ce reprezintă ora fixă în formatul: "\{**hours**\}:\{**minutes**\}" și tipărește ce oră va fi dupa 15 minute.
 
 ## Intrare
 
@@ -848,7 +848,7 @@ Intrarea constă în **două** linii:
 - Minute - număr întreg în intervalul \[0...59\]
 
 ## Ieșire
-Imprimați rezultatul în următorul format:"\{hours\}:\{minutes\}".
+Imprimați rezultatul în următorul format:"\{**hours**\}:\{**minutes**\}".
 - Ora trebuie să fie formatată **fără zero**
 - Minutele trebuie să fie formatate **cu zero**
 
@@ -1000,7 +1000,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+       // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1115,7 +1115,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1123,7 +1123,9 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program care imprimă **tipul** unui animal. Există trei variante posibile de ieșire: **mammal**, **reptile** și **unknown**
+Scrieți un program care imprimă **tipul** unui animal. 
+
+Există trei variante posibile de ieșire: **mammal**, **reptile** și **unknown**.
 
 ## Intrare / Ieșire
 Intrarea poate să aibă următoarele valori:
@@ -1215,7 +1217,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1230,9 +1232,9 @@ Aceasta își dorește să plece într-o excursie și vă cere să o ajutați s�
 Citiți **cinci** rânduri de pe consolă:
 - **Numărul de zile** - un număr întreg în intervalul \[1 ... 5000 \]
 - **Mâncare rămasă în kilograme** - un număr întreg în intervalul \[0 ... 100000 \]
-- **Mâncare pentru câine pe zi în kilograme** -  double în intervalul \[0.00…100.00\]
-- **Mâncare pentru pisică pe zi în kilograme** - double în intervalul \[0.00…100.00\]
-- **Mâncare pentru broască țestoasă pe zi în grame** - double în intervalul \[0.00…10000.00\]
+- **Mâncare pentru câine pe zi în kilograme** -  double în intervalul \[0.00 ... 100.00\]
+- **Mâncare pentru pisică pe zi în kilograme** - double în intervalul \[0.00 ... 100.00\]
+- **Mâncare pentru broască țestoasă pe zi în grame** - double în intervalul \[0.00 ... 10000.00\]
 
 ## Ieșire
 Imprimă pe consolă o linie **unică**:
@@ -1426,7 +1428,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```

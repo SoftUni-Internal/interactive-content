@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -52,7 +52,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -97,7 +97,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 
@@ -142,7 +142,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -192,8 +192,7 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-
-      // Write your code here
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -255,7 +254,7 @@ Imprimă un pătrat format din 7 * 7 steluțe, ca în imaginea de mai jos:
 ```
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -300,7 +299,7 @@ Scrieți un program care să execute următoarele:
 ```
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 
@@ -363,9 +362,7 @@ Fiecare număr ar trebui să fie pe o linie nouă.
 ```
 public class Main {
   public static void main(String[] args) {
-
-      // Write your code here
-
+       // Scrieți codul dvs. aici
     }
 }
 ```
