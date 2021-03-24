@@ -8,9 +8,9 @@ Each variable has a range in which it exists, called **variable scope**.
 
 This range specifies where a variable can be used and how long its **lifetime** is. 
 
-In Java, the scope in which a variable exists, starts from the line where we **defined it** and ends with the first closing curly bracket `}` (of the method, the **if statement**, etc.).
+In Java, the scope in which a variable exists, starts from the line where we **define it** and ends with the first closing curly bracket `}` (of the method, the **if statement**, etc.).
 
-Therefore, it is important to know that **any variable defined inside the body of an** `if` **statement will not be available outside of it** unless we have defined beforehand in the code.
+Therefore, it is important to know that **any variable defined inside the body of an** `if` **statement will not be available outside of it** unless we have defined it beforehand in the code.
 [/slide]
 
 [slide hideTitle]
@@ -19,7 +19,7 @@ Therefore, it is important to know that **any variable defined inside the body o
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-30-31-variable-scope-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In the example below, on the last line we are trying to print out the `salary` variable that is defined inside the `if` statement, we will get an **error** because we do not have access to it.
+In the example below, on the last line we are trying to print out the `salary` variable that is defined inside the `if` statement, this will result in an **error** because we do not have access to it.
 
 ```java
 int myMoney = 500;
