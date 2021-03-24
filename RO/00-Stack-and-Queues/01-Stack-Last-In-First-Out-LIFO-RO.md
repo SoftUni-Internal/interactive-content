@@ -1,40 +1,29 @@
-# Stacks: Last In First Out (LIFO)
+# Stivă - Ultima în Prima Ieșire - LIFO
 
 [slide hideTitle]
-# Stack Functionality
+# Funcționalitatea Stivei
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-10-11-Stack-Functionality-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+O stivă este o structură de date în care adăugați elemente în**partea de sus**a stivei și eliminați din nou elementele din**partea de sus**.
+Aceasta este denumită și principiul ”Ultimul în primul loc” -**LIFO**.
 
-**Stacks** are data structures similar to **lists**.
+- Stivele oferă următoarele funcționalități:
+     - Împingerea unui element în partea de sus a stivei
+     - Element care apare din partea de sus a stivei
+     - Obținerea (**Arunca o Privire**) a elementului cel mai de sus fără eliminarea acestuia
 
-The elements in a stack are ordered based on the **LIFO** principle - **Last In First Out**.
-
-When you add an element, it is always placed **on top** of the stack.
-
-Removing an element also removes it **from the top** of the stack.
-
-Stacks provide the following functionality:
-- **pushing** an element to the top of the stack
-- **popping** an element from the top of the stack
-- getting (**peeking at**) the top element without removing it
-
-[image assetsSrc="Java-Advanced-Stack-and-Queues-3.png" /]
+[image assetsSrc="stacksAndQueues-example(1).png" /]
 
 [/slide]
 
 [slide hideTitle]
-# Implementing Stack with ArrayDeque
+# Implementarea Stivei și Metodele Încorporate
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-12-ArrayDeque-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
- 
-- Stack implementation using the `ArrayDeque<E>` class:
-
+- Stack Implementation using `ArrayDeque<E>`
 ```java
 ArrayDeque<Integer> stack = new ArrayDeque<>();
 ```
 
-- `push(element)` - adds an element to the top of the stack:
-
+- `push(element)` - adding elements at the top of the stack
 ```java live
 ArrayDeque<Integer> stack = new ArrayDeque<>();
 stack.push(2);
@@ -44,8 +33,7 @@ stack.push(10);
 stack.forEach(System.out::println);
 ```
 
-- `pop()` - removes the top element from the stack:
-
+- `pop()` - removing the topmost element
 ```java live
 ArrayDeque<Integer> stack = new ArrayDeque<>();
 stack.push(2);
@@ -58,8 +46,7 @@ stack.pop();
 stack.forEach(System.out::println);
 ```
 
-- `peek()`: returns the value of the top element from the stack:
-
+- `peek()` - getting the value of the topmost element
 ```java live
 ArrayDeque<Integer> stack = new ArrayDeque<>();
 stack.push(2);
@@ -73,14 +60,11 @@ System.out.println(element);
 ```
 [/slide]
 
-
-
 [slide hideTitle]
-# Utility Methods
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-13-Stack-Utility-Methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+# Metode de Utilitate
 
-- `size()` - returns the number of elements in the stack:
+- `size()` -  returnează numărul de elemente în deque
 
 ```java live
 ArrayDeque<String> stackOfCars = new ArrayDeque<>();
@@ -91,7 +75,7 @@ stackOfCars.push("Lucid Air");
 System.out.println("The size is: " + stackOfCars.size());
 ```
 
-- `isEmpty()` - checks whether the stack is empty or not:
+- `isEmpty()` - verifică dacă deque-ul este gol sau nu
 
 ```java live
 ArrayDeque<String> stackOfCars = new ArrayDeque<>();
@@ -102,7 +86,7 @@ stackOfCars.push("Lucid Air");
 System.out.println("Is the Stack empty? " + stackOfCars.isEmpty());
 ```
 
-- `contains(element)` - checks whether a stack contains a specific element. Returns **true** if it does, otherwise it returns **false**:
+- `contains(element)` - verifică dacă un deque conține elementul sau nu.
 
 ```java live
 ArrayDeque<String> stackOfCars = new ArrayDeque<>();
@@ -120,7 +104,10 @@ System.out.println(stackOfCars.contains("BMW M3"));
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-14-Stack-Overview-of-all-operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
+The animation below illustrates all the stack operations that we can use for solving the upcoming programming problems.
+
 [image assetsSrc="Java-Advanced-Stack-and-Queues-10.gif" /]
+
 
 [/slide]
 
@@ -142,18 +129,18 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-Create a program that takes two types of **browser** commands:
+## Descriere
+Scrieți un program care necesită 2 tipuri de instrucțiuni pentru browser:
 
-- Normal navigation: a **URL**, provided as a **string**
+- Normal navigation: a **URL**, provided in **string format**
 
-- a **back** - command that sets the current URL to the previous URL
+- Șirul ”**back**” care setează adresa URL curentă la ultima adresă URL setată
 
-After executing each command, the program should **print the current URL**. 
+După fiecare instrucțiune, programul trebuie să **tipărească adresa URL curentă**.
 
-If the **back** command can not be executed, print: `no previous URLs`.
+Dacă instrucțiunea **back** nu poate fi executată, tipăriți `no previous URLs`.
 
-The program **stops** after receiving the `Home` command.
+Introducerea **se termină** cu comanda `Home`, apoi pur și simplu trebuie să **opriți programul**.
 
 
 ## Examples
@@ -169,11 +156,11 @@ The program **stops** after receiving the `Home` command.
 | `https//softuni.org/trainings/live/details` | `https//softuni.org/trainings/live/details` |
 | `Home` |  |
 
-## Hints
-- Use an `ArrayDeque<>`
-- Use a variable of type `String` to store the current URL
-- Use the `push()` method when moving to the next URL
-- Use the `pop()` method when going back to the previous URL
+## Sugestii
+- Folosiţi `ArrayDeque<>`
+- Folosiţi `String` pentru a păstra pagina curentă
+- Folosiţi `push()`, la trecerea la pagina următoare
+- Folosiţi `pop()`, când merg înapoi
 
 
 
@@ -323,6 +310,7 @@ Go
 [/code-task]
 [/slide]
 
+
 [slide hideTitle]
 # Problem with Solution: Simple Calculator 
 
@@ -341,12 +329,12 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-**Create a calculator** to **evaluate simple expressions**. It should work with only two operations - addition (+) and subtraction (-).
+## Descriere
+**Creați un calculator simplu** care poate **evalua expresii simple** care nu vor reține niciun operator diferit de adunare și scădere.
 
-There will be no operations placed in brackets and implementing operator precedence **is not** required.
+Nu vor exista paranteze sau prioritate operator.
 
-Solve the problem **using a Stack**.
+Rezolvați problema **using a Stack**.
 
 ## Examples
 | **Input** | **Output** |
@@ -357,12 +345,12 @@ Solve the problem **using a Stack**.
 | --- | --- |
 | 2 - 2 + 5 | 5 |
 
-## Hints
-- Use an `ArrayDeque<>`
-- Consider using the `add()` method
-- You can either:
-    - add the elements and then pop them out 
-    - push them and reverse the stack
+## Sugestii
+- Folosiți un `ArrayDeque<>`
+- Luați în considerare utilizarea metodei `add()` 
+- Mai Puteți
+     - adăugați elementele și apoi scoateți-le afară
+     - sau împingeți-le și inversați stiva
 
 
 [/task-description]
@@ -428,6 +416,7 @@ Solve the problem **using a Stack**.
 [/code-task]
 [/slide]
 
+
 [slide hideTitle]
 # Problem with Solution: Decimal to Binary Converter
 
@@ -446,12 +435,14 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-Create a simple program that **can convert a decimal number to its binary representation**.
 
-Implement an elegant solution **using a Stack**.
+## Descriere
+Creează un program simplu care **poate converti un număr zecimal în reprezentarea sa binară**
 
-**Print the binary representation** to the console.
+Implementați o soluție elegantă **folosind un Stack**.
+
+**Printați reprezentarea binară** pe consolă.
+
 
 ## Examples
 | **Input** | **Output** |
@@ -463,9 +454,10 @@ Implement an elegant solution **using a Stack**.
 | --- | --- |
 | 1024 | 10000000000 |
 
-## Hints
-- If the given number is 0, print 0
-- Else, while the number is greater than zero, divide it by 2 and push the remainder into the stack
+## Indicii
+- Dacă numărul dat este 0, printați 0
+- Altfel, cât timp numărul este mai mare decât zero, împărțiți-l la 2 și adăugați restul pe stivă
+
 
 ```java
 while (decimal != 0) {
@@ -474,7 +466,7 @@ while (decimal != 0) {
 }
 ```
 
-- When you are done dividing, pop all remainders from the stack. This is the binary representation.
+- Când ați terminat de împărțit, scoateți toate resturile de pe stivă. Aceasta este reprezentarea binară
 
 
 [/task-description]
@@ -540,10 +532,12 @@ while (decimal != 0) {
 [/code-task]
 [/slide]
 
+
 [slide hideTitle]
 # Problem with Solution: Matching Brackets
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-21-Problem-and-solution-Decimal-To-Binary-Converter-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+TODO: Add video.
+
 
 [code-task title="Matching Brackets" taskId="java-advanced-lab-stack-and-queue-Matching-Brackets" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -558,10 +552,10 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-You are given an arithmetical **expression** with **brackets**.
+## Descriere
+Vi se oferă o expresie **aritmetică** cu **paranteze**.
 
-Scan through the string and **extract** each **sub-expression**.
+Scanați prin șir și **extrageți** fiecare **sub-expresie**.
 
 ## Examples
 | **Input** | **Output** |
@@ -576,12 +570,13 @@ Scan through the string and **extract** each **sub-expression**.
 | `(2 + 3) - (2 + 3)` | `(2 + 3)` |
 |  | `(2 + 3)` |
 
-## Hints 
-- Use a stack, implemented with an `ArrayDeque()` 
-- Scan through the expression searching for brackets 
-   - if you find an opening bracket, push the index into the stack 
-   - if you find a closing bracket, pop the top element from the stack. This is the index of the opening bracket 
-   - use the current and the popped index to extract the sub-expression 
+ ## Sugestii
+ - Folosiți o stivă, și anume un `ArrayDeque()`
+ - Scanați prin expresie căutând paranteze
+    - Dacă găsiți un suport de deschidere, împingeți indexul în stivă
+    - Dacă găsiți un suport de închidere, scoateți elementul cel mai de sus din stivă. Acesta este indicele parantezei de deschidere.
+    - Utilizați indicele curent și popped pentru a extrage sub-expresia
+
 [/task-description]
 [code-io /]
 [tests]
@@ -657,3 +652,4 @@ Scan through the string and **extract** each **sub-expression**.
 [/tests]
 [/code-task]
 [/slide]
+

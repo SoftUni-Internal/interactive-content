@@ -1,7 +1,7 @@
-# Homework
+# Temă
 
 [slide hideTitle]
-# Problem: Reverse Number with a Stack
+# Problemă: Reverse Number with a Stack
 [code-task title="Reverse Number with a Stack" taskId="java-advanced-stack-and-queue-Reverse-Number-with-a-Stack" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -15,20 +15,20 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program that receives an input of **N integers** from the console and **reverses their order using a stack**.
+## Cerință
+Scrieți un program care citește **N numere întregi** din consolă și **le inversează prin intermediul unei stive**.
 
-Use the `ArrayDeque<Integer>` class.
+Utilizați clasa `ArrayDeque <Integer>`.
 
-Add the input numbers to a stack and **pop** them.
+Doar introduceți datele de intrate în stivă și apoi le scoateți pe rând.
 
-## Examples
-| **Input** | **Output** |
+## Exemple
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | 1 2 3 4 5 | 5 4 3 2 1 |
 
 
-| **Input** | **Output** |
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | 1 | 1 |
 
@@ -103,32 +103,32 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-You will be given an integer **N** representing the **number of elements to push onto the stack**, an integer **S** representing the **number of elements to pop from the stack**, and finally an integer **X**. Check if the **X** element is present in the stack or not.
+## Cerință
+Vi se va da un număr întreg **N**, care reprezintă **numărul de elemente de adăugat în stivă**, un întreg **S**, reprezentând **numărul de elemente de scos mai apoi din stivă** și, în final, un număr întreg **X** , un element **despre care va trebui să verificați dacă se află sau nu în stivă**.
 
-If it is, print **true** to the console.
+Dacă e, printăm **true** în consolă.
 
-If it is not, print the smallest element currently present in the stack.
+Dacă nu, printăm cel mai mic element prezent la momentul respectiv în stivă.
 
-## Input
+## Date de intrare
 
-- On the first line, you will be given **N**, **S** and **X** separated by a single space
-- On the next line, you will be given a line of numbers **separated by one or more white spaces**
+- Pe prima linie, vi se vor da **N** , **S** și **X**, separate prin spațiu.
+- Pe următoarea linie, vi se va da o linie cu numere **separate prin cel puțin un spațiu**.
 
-## Output
+## Date de ieșire
 
-- Print **true** if **X** is present in the stack, otherwise **print the smallest** element in the stack
-- If the stack is empty print 0
+- Pe o singură linie se printează **true** dacă **X** e prezent în stivă sau, în caz contrar, **se printează cel mai mic** element din stivă.
+- Dacă stiva e goală, printăm 0.
 
-## Examples
-| **Input** | **Output** | **Comments** |
-| :---: | :---: | :---: |
-| 5 2 13 | true | We have to **push 5** elements. Then we **pop 2** of them. Finally, we have to check whether 13 is present in the stack. Since it is, we print **true**. |
+## Exemple
+| **Date de intrare** | **Date de ieșire** | **Comentarii** |
+| --- | --- | --- |
+| 5 2 13 | true | Trebuie să **adăugăm 5** elemente. Apoi scoatem **2** dintre ele. În final, trebuie să verificăm dacă 13 se găsește în stivă. Din moment ce se află în stivă, printăm **true**. |
 | 1 13 45 32 4 |  |  |
 
-| **Input** | **Output** | **Comments** |
-| :---: | :---: | :---: |
-| 4 1 666 | 13 | Pop one element (666) and then check if 666 is present in the stack. It is not, so print the smallest element (13) |
+| **Date de intrare** | **Date de ieșire** | **Comentarii** |
+| --- | --- | --- |
+| 4 1 666 | 13 | Scoatem un element (666) și apoi verificăm dacă 666 e prezent în stivă. Dacă nu e, printăm cel mai mic element (13) |
 | 420 69 13 666 |  |  |
 
 [/task-description]
@@ -226,39 +226,39 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-You have an empty sequence, and you will be given **N** commands.
+## Cerință
+Aveți o secvență nulă și vi se vor da **N** comenzi.
 
-Each command is one of the following types:
+Fiecare comandă e de unul dintre tipurile următoare:
 
-- `1 X` - **Push** the element **X** into the stack
-- `2` - **Delete** the element present at the top of the stack
-- `3` - **Print** the biggest element in the stack to the console
+- `1 X` - **Adăugăm** elementul **X** pe stivă.
+- `2` - **Ștergem** elementul ce se găsește în vârful stivei.
+- `3` - **Printăm** elementul din stivă.
 
-## Input
+## Date de intrare
 
-- The first line of input contains an integer **N**, where `1 ≤ N ≤ 10 ^ 5`
-- The next  **N** lines contain commands. All commands will be valid and in the described format
-- The element **X** will be in the range `1 ≤ X ≤ 10 ^ 9`
-- The **type of the command** will be in the range `1 ≤ Type ≤ 3`
+- Prima linie a datelor de intrare conține un număr întreg **N** , unde `1 ≤ N ≤ 10 ^ 5`
+- Următoarele **N** linii conțin comenzile. Toate comenzile vor fi valide și vor fi după formatul descris
+- Elementul **X** va fi în intervalul `1 ≤ X ≤ 10 ^ 9`
+- **Tipul comenzii** va fi în intervalul `1 ≤ Type ≤ 3`
 
-## Output
+## Date de ieșire
 
-- For each command of type `3`, **print the biggest element** in the stack on a new line
+- Pentru fiecare comandă de `3` , **printăm elementul maxim** din stivă, pe o linie nouă.
 
-## Examples
-| **Input** | **Output** | **Comments** |
-| :---: | :---: | :---: |
-| 9 |  | 9 commands |
-| 1 97 |  | Push 97 |
-| 2 |  | Pop an element |
-| 1 20 |  | Push 20 |
-| 2 |  | Pop an element |
-| 1 26 |  | Push 26 |
-| 1 20 |  | Push 20 |
-| 3 | 26 | Print the biggest element (26) |
-| 1 91 |  | Push 91 |
-| 3 |91 | Print the biggest element (91) |
+## Exemple
+| **Date de intrare** | **Date de ieșire** | **Comentarii** |
+| --- | --- | --- |
+| 9 | 26 | 9 comenzi |
+| 1 97 | 91 | Adaugă 97 |
+| 2 |  | Scoate un element |
+| 1 20 |  | Adaugă 20 |
+| 2 |  | Scoate un element |
+| 1 26 |  | Adaugă 26 |
+| 1 20 |  | Adaugă 20 |
+| 3 |  | Printează elementul maxim (26) |
+| 1 91 |  | Adaugă 91 |
+| 3 |  | Printează elementul maxim (91) |
 
 [/task-description]
 [code-io /]
@@ -467,26 +467,26 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-You will be given an integer **N** representing the **number of elements to enqueue** (add), an integer **S** representing the **number of elements to dequeue** (remove/poll) from the queue and finally an integer **X**. **Check whether X is present in the queue**.
+## Cerință
+Se dă un număr întreg **N**, reprezentând **numărul de elemente de adăugat în coadă**, un întreg **S** ce reprezintă **numărul de elemente de șters** din coadă și, în final, un număr întreg **X**, un element despre care trebuie să **verificați dacă se găsește în coadă**.
 
-If it is, print **true** to the console, if it is not **print the smallest element currently present in the queue**.
+Dacă e, se printează **true** în consolă, iar dacă nu e, **se printează cel mai mic element prezent în coadă la momentul respectiv**.
 
-## Examples
-| **Input** | **Output** | **Comments** |
-| :---: | :---: | :---: |
-| 5 2 32 | true | We have to **push 5** elements.  |
-| 1 13 45 32 4 |  | Then we **pop 2** of them.  |
-|  |  | Finally, we have to check whether 13 is present in the stack. Since it is, we print **true**.  |
+## Exemple
+| **Date de intrare** | **Date de ieșire** | **Comentarii** |
+| --- | --- | --- |
+| 5 2 32 | true | Trebuie să adăugăm **5** elemente.  |
+| 1 13 45 32 4 |  | Apoi **scoatem 2** din ele.  |
+|  |  | În final, trebuie să verificăm dacă 13 se găsește în coadă. Din moment ce se găsește, printăm **true**.  |
 
 
-| **Input** | **Output** |
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | 4 1 666 | 13 |
 | 666 69 13 420 |  |
 
 
-| **Input** | **Output** |
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | 3 3 90 | 0 |
 | 90 90 90 |  |
@@ -577,29 +577,31 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-Somewhere in the future, a factory is created where the assembly line workers are all robots.
+## Cerință
+Undeva în viitor, există o fabrică de robotică.
 
-Each robot has **processing time**, which is the time it needs to process a product. 
+Proiectul curent e linia de asamblare a roboților.
 
-When a **robot is free** it should **take a product for processing**, log the robot's name, product, and processing start time.
+Fiecare robot are un **timp de procesare**, timpul de care are nevoie pentru a procesa un produs. 
 
-Each robot **processes a product coming from the assembly line**. 
+Când un **robot e liber**, trebuie să **preia un produs pentru procesare** și să logheze numele său, produsul și timpul de începere al procesării.
 
-A **product is coming** from the line **each second** (so the first product should appear at \[start time + 1 second\]). 
+Fiecare robot **procesează un produs venit din linia de asamblare**. 
 
-If a product passes through the assembly line and **no robot is currently free** to take it, it should be **queued at the end of the line again**.
+Câte un **produs vine** din linie **o dată la fiecare secundă** (deci primul produs trebuie să apară la `[start time + 1 second]`). 
 
-The robots are **standing at the assembly line in the order of their appearance in the input**.
+Dacă un produs trece de linie și **nu există un robot liber** pentru a-l prelua, ar trebui să fie **pus din nou la coada de la linie**.
 
-## Input
+Roboții **stau în linie în ordinea apariției lor**.
 
-- On the first line, you will receive the names of the robots and their processing times in the format `robotName-processTime;robotName-processTime;robotName-processTime`
-- On the second line, you will receive the starting time in the format `hh:mm:ss`
-- Next, until the `End` command is received, you will get a product on each line
+## Date de intrare
 
-## Examples
-| **Input** | **Output** |
+- Pe prima linie, veți primi numele roboților și timpul lor de procesarer în formatul `numeRobot-timpDeProcesare;numeRobot-timpDeProcesare;numeRobot-timpDeProcesare`
+- Pe a doua linie, veți primi timpul de start, după formatul `hh:mm:ss`
+- Apoi, până la întâlnirea comenzii `End`, veți primi câte un produs pe linie.
+
+## Exemple
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | ROB-15;SS2-10;NX8000-3 | ROB - detail \[08:00:01\] |
 | 8:00:00 | SS2 - glass \[08:00:02\] |
@@ -609,7 +611,7 @@ The robots are **standing at the assembly line in the order of their appearance 
 | apple |  |
 | End |  |
 
-| **Input** | **Output** |
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | ROB-60 | ROB - detail \[08:00:00\] |
 | 7:59:59 | ROB - sock \[08:01:00\] |
@@ -1305,45 +1307,45 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+## Cerință
+**Se dă o secvență ce constă în paranteze**. Determinați dacă **expresia e echilibrată**.
 
-**Given a sequence of parentheses**, determine **whether the expression is balanced**.
+O secvență de paranteze **e echilibrată dacă** fiecare paranteză deschisă poate fi asociată în mod unic cu o paranteză de închidere care apare după cealaltă.
 
-A sequence of parentheses **is balanced if** every open parenthesis can be paired uniquely with a closing parenthesis that occurs after the opening parenthesis.
+De asemenea, **intervalul dintre ele trebuie să fie și el echilibrat**.
 
-Also, **the interval between them must be balanced**.
+Vi se vor da 3 tipuri de paranteze:  `(`,  `{`, și `[`.
 
-You will be given three types of parentheses: `(`,  `{`, and `[`.
+`{[()]}` - Acestea sunt paranteze echilibrate.
 
-`{[()]}` - these are balanced parentheses.
+`{[(])}` - Acestea nu sunt paranteze echilibrate.
 
-`{[(])}` - these are not balanced parentheses.
+## Date de intrare
 
-## Input
+- Fiecare dată de intrare constă într-o singură linie, secvența de paranteze.
+- `1 ≤ Lungimea secvenței ≤ 1000`
+- Fiecare caracter al secvenței va fi unul dintre următoarele:  `{`, `}`, `(`, `)`, `[`, `]`.
 
-- Each input consists of a single line, the sequence of parentheses
-- `1 ≤ Length of sequence ≤ 1000`
-- Each character of the sequence will be one of the following:  `{`, `}`, `(`, `)`, `[`, `]`
+## Date de ieșire
 
-## Output
-
-- For each test case, print `YES` on a new line if the parentheses are balanced. Otherwise, print `NO`
+- Pentru fiecare test pe cazuri, printați pe o linie nouă **"YES"** dacă parantezele sunt echilibrate. Altfel, printați **"NO"**.
 
 
-## Examples
-| **Input** | **Output** |
+
+## Exemple
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | `{[()]}` | YES |
 
 
-| **Input** | **Output** |
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | `{[(])}` | NO |
 
 
-| **Input** | **Output** |
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
-| `{{[[(())]]}}` | YES |
+| `{{[[(())]]}}`| YES |
 
 [/task-description]
 [code-io /]
@@ -1440,51 +1442,48 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-Each element of the **Fibonacci sequence** is calculated from the **sum of the two previous elements**.
+## Cerință
+Fiecare membru al **șirului lui Fibonacci** e calculat din **suma a doi membri precedenți**.
 
-The first two elements are 1, 1.
+Primele 2 elemente sunt 1, 1.
 
-Therefore the sequence goes like 1, 1, 2, 3, 5, 8, 13, 21, 34...
+Astfel, secvența va fi 1, 1, 2, 3, 5, 8, 13, 21, 34…
 
-The following sequence can be generated with an array, but that is easy, so **your task is to implement it recursively**.
+Următoarea secvența poate fi generată cu un vector, dar asta e ușor, deci **cerința voastră e să implementați asta în mod recursiv**.
 
-If the function `getFibonacci(n)` returns the nth Fibonacci number, we can express it using:
+Dacă funcția `getFibonacci(n)` returnează al n-lea număr din șirul lui Fibonacci, putem exprima asta utilizând
+`getFibonacci(n) = getFibonacci(n-1) + getFibonacci(n-2)`.
 
-`getFibonacci(n) = getFibonacci(n-1) + getFibonacci(n-2)`
+Totuși, asta nu se va termina în câteva secunde, ci se va genera o excepție de supraîncărcare a stivei. 
 
-However, this function's recursion would never stop, resulting in a Stack Overflow Exception.
+Ca să se oprească recursivitatea, trebuie să aibă un caz de oprire.
 
-In order to stop the recursion, it has to have a "bottom". 
+Cazul de oprire al recursivității este `getFibonacci(1)` și trebuie să returneze 1. Se întâmplă la fel pentru getFibonacci(0).
 
-The bottom of the recursion is `getFibonacci(1)`, and should return 1. 
+## Date de intrare
 
-The same goes for getFibonacci(0)`.
+- Pe o singură linie, utilizatorul trebuie să introducă numărul dorit din șirul lui Fibonacci, N, unde `1 <= N <= 49` 
 
-## Input
+## Date de ieșire
 
-- You will receive the required Fibonacci number **N** on a single line.  It will always be in the range `1 <= N <= 49` 
+- Datele de ieșire trebuie să fie al n-lea număr din șirul lui Fibonacci, începând de la 0.
 
-## Output
+## Indiciu
 
-- The output should be the n-th Fibonacci number counting from 0
+Pentru al n-lea număr din șirul lui Fibonacci, calculăm al `N - 1st` și al `N - 2nd` număr, dar pentru calculul elementului al `N - 1st`, calculăm al `N - 1 - 1st(N - 2nd)` și `N - 1 - 2nd`, deci ave multe calcule repetate.
 
-## Hint
+Dacă doriți să vă dați seama cum puteți trece peste toate aceste calcule care nu sunt necesare, puteți căuta o tehnică numită [memoization](https://en.wikipedia.org/wiki/Memoization).
 
-For the n-th Fibonacci number, we calculate the `N - 1st` and the `N - 2nd` number, but for the calculation of `N - 1st` number we calculate the `N - 1 - 1st(N - 2nd)` and the `N - 1 - 2nd` number, so we have a lot of repeated calculations
-
-If you want to figure out how to skip those unnecessary calculations, you can learn about a technique called [memoization](https://en.wikipedia.org/wiki/Memoization).
-
-## Examples
-| **Input** | **Output** |
+## Exemple
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | 5 | 8 |
 
-| **Input** | **Output** |
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | 10 | 89 |
 
-| **Input** | **Output** |
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | 21 | 17711 |
 
@@ -1591,40 +1590,40 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-You are given a task to create a simple text text editor.
+## Cerință
+Vi se dă text gol.
 
-Your task is to implement **4 types of commands** for text manipulation:
+Cerința voastră e să implementați **4 tipuri de comenzi** legate de manipularea textului:
 
-- 1 \[string\] - **appends** a given string to the end of the text
-- 2 \[count\] - **erases** the last **count** elements from the text
-- 3 \[index\] - **returns** the element at position **index** from the text
-- 4 - **undoes** the last command of type 1 or 2 and returns the text to the state before that operation
+- 1 \[string\] - **lipește** \[string\] la finalul textului
+- 2 \[count\] - **șterge** ultimele \[count\] elemente din text
+- 3 \[index\] - **returnează** elementul de la poziția \[index\] din text
+- 4 - **anulează** ultima comandă neanulată de tip 1 sau 2 și returnează textul la starea dinaintea acelei operații
 
-### Input
+### Date de intrare
 
-- The first line contains **N**, the number of operations, where `1 ≤ N ≤ 105`
-- Each of the following **N** lines contains the name of the operation, followed by the command argument, if any, separated by space in the following format `command argument`
-- **The length of the text** will not exceed **1000000** characters
-- All input characters will be **English letters**
-- It is **guaranteed** that the sequence of **input operations is possible to perform**
+- Prima linie conține **N** , numărul de operații, unde `1 ≤ N ≤ 105`
+- Fiecare din următoarele **N** linii conține numele operației, urmat de argumentul comenzii, dacă acesta există, separate de un spațiu, după formatul următor: `comandă argument`.
+- **Lungimea textului** nu va depăși **1000000**
+- Toate caracterele date drept date de intrare sunt **caractere engleze**
+- E **garantat** că avem secvența de **operații de intrare posibile de realizat**
 
-### Output
+### Date de ieșire
 
-- For each operation of type `3` print a **single line with the character returned by this operation**
+- Pentru fiecare operație de tip `3`, printați o **singură linie cu caracterul returnat din acea operație**.
 
-## Examples
-| **Input** | **Output** | **Comments** |
-| :---: | :---: | :---: |
-| 8 |  | There are 8 operations. Initially, there is no text.  |
-| 1 abc |  | Append "abc" |
-| 3 3 | c | Print the third character |
-| 2 3 |  | Erase 3 characters |
-| 1 xy |  | Append "xy" |
-| 3 2 | y | Print the second character |
-| 4 |  | Undo the last command - the text is now "" |
-| 4 |  | Undo the last command - the text is now "abc" |
-| 3 1 | a | Print the first character |
+## Exemple
+| **Date de intrare** | **Date de ieșire** | **Comentarii** |
+| --- | --- | --- |
+| 8 | c | Există 8 operații. Inițial, textul e gol.  |
+| 1 abc | y | Lipim "abc" |
+| 3 3 | a | Printăm al treilea caracter |
+| 2 3 |  | Ștergem 3 caractere |
+| 1 xy |  | Lipim "xy" |
+| 3 2 |  | Printăm al doilea caracter |
+| 4 |  | Anulăm ultima comandă - textul devine acum "" |
+| 4 |  | Anulăm ultima comandă - textul devine "abc" |
+| 3 1 |  | Printăm primul caracter |
 
 [/task-description]
 [code-io /]
@@ -1867,46 +1866,44 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-**Infix** notation is a way of writing mathematical expressions such as `5 / ( 3 + 2 )`.
+## Cerință
+Expresiile matematice sunt **scrise în notația infix** , de exemplu `5 / ( 3 + 2 )`.
 
-However, this kind of notation is **not efficient for computer processing**, as you first need to evaluate the expression inside the brackets, so there is a lot of back and forth movement.
+Totuși, acest tip de notație **nu e eficientă pentru procesarea computerelor** , deoarece mai întâi trebuie să evaluăm expresia din interiorul parantezelor, deci nu există multe mișcări în față sau în spate.
 
-A more suitable approach is to **convert it to postfix notation** (also called [Reverse Polish Notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation)), where the **expression is evaluated from left to right**. For example, `3 2 + 5 /`.
+O metodă mai potrivită e **convertirea în așa-numita notație postfix** (numită și [Reverse Polish Notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation)), în care **expresia e evaluată de la stânga la dreapta** , de exemplu `3 2 + 5 /`.
 
-Implement an **algorithm that converts** a mathematical expression **from infix to postfix notation**. 
+Implementați un **algoritm care convertește** expresia matematică **din notația infix în notația postfix**. Utilizați faimosul [algoritm Shunting-yard](https://en.wikipedia.org/wiki/Shunting-yard_algorithm).
 
-Use the famous [Shunting-yard algorithm](https://en.wikipedia.org/wiki/Shunting-yard_algorithm).
+## Date de intrare
 
-## Input
+- Veți **primi o expresie pe o singură linie, constând în delimitatoare**
+- Delimitatoarele pot fi numere de la 0 la 9, variabile de la a la z, operatorii `+, -, *, /,` și parantezele ( sau )
+- Fiecare delimitator e **separat prin exact un spațiu**
 
-- You will **receive an expression on a single line, consisting of tokens**
-- Tokens could be numbers 0-9, variables a-z, operators `+, -, *, /,` and brackets **(** or **)**
-- Each token is **separated by exactly one space**
+## Date de ieșire
 
-## Output
+- **Datele de ieșire trebuie să fie pe o singură linie**, constând în **delimitatoare**, **separate prin exact un spațiu**.
 
-- The **output should be on a single line**, consisting of **tokens**, **separated by exactly one space**
-
-## Examples
-| **Input** | **Output** |
+## Exemple
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
-| `5 / ( 3 + 2 )` | `5 3 2 + /` |
+| 5 / ( 3 + 2 ) | 5 3 2 + / |
 
 
-| **Input** | **Output** |
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
-| `1 + 2 + 3` | `1 2 + 3 +` |
+| 1 + 2 + 3 | 1 2 + 3 + |
 
 
-| **Input** | **Output** |
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
-| `7 + 13 / ( 12 - 4 )` | `7 13 12 4 - / +` |
+| 7 + 13 / ( 12 - 4 ) | 7 13 12 4 - / + |
 
 
-| **Input** | **Output** |
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
-| `( 3 + x ) - y` | `3 x + y -` |
+| ( 3 + x ) - y | 3 x + y - |
 
 [/task-description]
 [code-io /]
@@ -2003,39 +2000,40 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-You are given **N** number of plants in a garden.
+## Cerință
+Vi se dau **N**  plante dintr-o grădină.
 
-Some amount of pesticide has been added to each of these plants.
+Fiecare din aceste plante au un anumit nivelde pesticid.
 
-After each day, if any plant has **more pesticide** than the plant on **its left**, it is considered weaker than the left one, so **it dies**.
+După fiecare zi, dacă o plantă are **mai mult pesticid** decât planta din **stânga ei**, fiind mai slabă (mai mult GMO) decât în cea din stânga, **deci moare**.
 
-You are given the initial values of the pesticide and the position of each plant.
+Vi se dau valorile inițiale de pesticid și poziția fiecărei plante.
 
-Print the number of days **after** which no plant dies. This is the number of days after which there are no plants with more pesticide content than the plant to their left.
+Printați numărul de zile **după** care nu moare nicio plantă, i.e. timpul după care nu mai sunt plante cu mai mult pesticid decât planta din stânga lor.
 
-### Input
+### Date de intrare
 
-- The input consists of an integer **N** representing the number of plants
-- The next **single line** consists of  **N** integers, where every integer represents the position and amount of pesticides of each plant. `1 ≤ N ≤ 100000`
-- Pesticides amount on a plant is between 0 and 1000000000
+- Datele de intrare constau într-un număr întreg  **N**, care reprezintă numărul de plante.
+- Următoarea **linie unică** constă în **N** numere întregi, unde fiecare întreg reprezintă poziția și cantitatea de pesticid al fiecărei plante. `1 ≤ N ≤ 100000`
+- Cantitatea de pesticid dintr-o plantă e între 0 și 1000000000
 
-### Output
+### Date de ieșire
 
-- Output a single value equal to the number of days after which no plants die
+- Datele de ieșire constau într-o valoarea unică egală cu numărul de zile după care nu mai moare nicio plantă.
 
-## Examples
-| **Input** | **Output** | **Comments** |
-| :---: | :---: | :---: |
-| 7 | 2 | Initially all plants are alive.  |
+
+## Exemple
+| **Date de intrare** | **Date de ieșire** | **Comentarii** |
+| --- | --- | --- |
+| 7 | 2 | Inițial, toate plantele sunt vii.  |
 | 6 5 8 4 7 10 9 |  | `Plants = {(6, 1), (5, 2), (8, 3), (4, 4), (7, 5), (10, 6), (9, 7)}`  |
-|  |  | `Plants[k] = (i, j)` \=\> jth plant has pesticide amount \= i.  |
-|  |  | After the 1st day, 4 plants remain as plants 3, 5, and 6 die.  |
-|  |  | `Plants = {(6, 1), (5, 2), (4, 4), (9, 7)}`  |
-|  |  | After the 2nd day, 3 plants survive as plant 7 dies. `Plants = {(6, 1), (5, 2), (4, 4)}` |
-|  |  | After the 3rd day, 3 plants survive and no more plants die.  |
-|  |  | `Plants = {(6, 1), (5, 2), (4, 4)}`  |
-|  |  | After the 2nd day the plants stop dying.  |
+|  |  | `Plantă[k] = (i, j)` \=\> a j-a plantă are cantitatea de pesticid \= i.  |
+|  |  | După prima zi, 4 plante rămân ca plante. 3, 5, și 6 mor.  |
+|  |  | `Plantele = {(6, 1), (5, 2), (4, 4), (9, 7)}`  |
+|  |  | După a doua zi, 3 plante supraviețuiesc, în timp ce planta 7 moare. `Plantele = {(6, 1), (5, 2), (4, 4)}`  |
+|  |  | După a treia zi, 3 plante supraviețuiesc și nu mai moare nicio plantă.  |
+|  |  | `Plantele = {(6, 1), (5, 2), (4, 4)}`  |
+|  |  | După a doua zi, plantele se opresc din murit.  |
 
 [/task-description]
 [code-io /]

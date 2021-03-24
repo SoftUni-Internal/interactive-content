@@ -1,13 +1,13 @@
 [slide hideTitle]
-# Summary
+# Rezumat
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-42-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In this lesson you learned:
+## În această lecție ai învățat:
 
-- **Stacks** - Last In First Out (LIFO)
+- Complexitate algoritmică
+- **Stacks** - Ultima în prima ieșire -**LIFO**
 
-    - `push()`
+   - `push()`
 
     ```java
     ArrayDeque<Integer> stack = new ArrayDeque<>();
@@ -29,7 +29,9 @@
     Integer element = stack.peek();
     ```
 
-- **Queues** - First In First Out (FIFO)
+
+- **Queues** - Primul intrat primul iesit -**FIFO**
+
     - `add()`
 
     ```java
@@ -55,18 +57,22 @@
 
     queue.peek();
     ```
-
-- **Priority Queue** - a special kind of queue where the elements are retrieved in their natural order unless a custom comparator is specified
+- **Coadă Prioritară**
 
 ```java 
 PriorityQueue<Integer> numbers = new PriorityQueue<>();
 ```
 
-## In the next lesson, you will learn:
 
-- Arrays
-- Multidimensional arrays - declaring, creating, and initializing
-- Accessing array elements
-- Reading and printing a matrix
+## În lecția următoare, veți învăța:
+
+- Matrice în Java
+- Ce este matricea multidimensională?
+- Declararea și crearea de tablouri multidimensionale
+- Inițializarea tablourilor multidimensionale
+- Accesarea elementelor
+- Citirea și tipărirea unei matrice
+
+
 
 [/slide]
