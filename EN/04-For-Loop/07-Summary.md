@@ -7,7 +7,7 @@
 
 - For-loops
   
-  * how to define for-loops
+  * Defining for-loops
 
   * for-loops repeat a certain block of code
 
