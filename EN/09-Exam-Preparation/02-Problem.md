@@ -43,7 +43,7 @@ They are listed below.
 
 Creates a dwarf with the given name of the given type. 
 
-If the dwarf type is invalid, throw an **IllegalArgumentException** with the message:
+If the dwarf type is invalid, throw an `IllegalArgumentException` with the message:
 
 **"Dwarf type doesn't exist!"**
 
@@ -63,7 +63,7 @@ The method should **return** the following message:
 
 Creates an instrument with the given power and adds it to the collection of the dwarf. 
 
-If the dwarf does not exist, throw an **IllegalArgumentException** with the message:
+If the dwarf does not exist, throw an `IllegalArgumentException` with the message:
 
 "**The dwarf you want to add an instrument to doesn't exist!**"
 
@@ -76,8 +76,8 @@ The method should **return** the following message:
 
 **Parameters:**
 
-- **presentName - String**
-- **energyRequired - int** 
+- **presentName** - String
+- **energyRequired** - int
 
 **Functionality:**
 
@@ -91,7 +91,7 @@ The method should **return** the following message:
 
 **Parameters:**
 
-- **presentName - String**
+- **presentName** - String
 
 **Functionality:**
 
@@ -103,7 +103,7 @@ You should start crafting the given present, by assigning the dwarfs which are t
 
 - The suitable ones start working on the given present
 
-- If **no dwarfs are ready**, throw **IllegalArgumentException** with the following message:
+- If **no dwarfs are ready**, throw `IllegalArgumentException` with the following message:
 "**There is no dwarf ready to start crafting!**"
 
 - After the work is done, you must return the following message, reporting whether the present is done and how many instruments have been broken in the process:
@@ -126,7 +126,7 @@ Returns information about **crafted presents** and **dwarfs**:
 
 "**Energy:** \{**dwarfEnergy1**\}"
 
-"**Instruments** \{**countInstruments**\} **not broken left**"
+"**Instruments:** \{**countInstruments**\} **not broken left**"
 
 …
 
@@ -134,7 +134,7 @@ Returns information about **crafted presents** and **dwarfs**:
 
 "**Energy:** \{**dwarfEnergyN**\}"
 
-"**Instruments** \{**countInstruments**\} **not broken left**"
+"**Instruments:** \{**countInstruments**\} **not broken left**"
 
 # Input/Output
 
