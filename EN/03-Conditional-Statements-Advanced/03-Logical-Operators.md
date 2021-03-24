@@ -37,7 +37,7 @@ Let us explain the logical **AND** (`&&`), the logical **OR** (`||`), and the lo
 
 As we saw, in some tasks we have to perform **more than one check at once**. 
 
-The logical **AND** operator (`&&`) helps us check more than one condition **simultaneously**. 
+The logical **AND** operator (`&&`) helps us check several conditions **simultaneously**. 
 
 We can use the logical **AND** to simplify our code and avoid unnecessary constructions such as nesting too many conditional statements.
 
@@ -52,7 +52,7 @@ The following table visualizes the outcome of all possible combinations when usi
 
 ## How Does the `&&` Operator Work?
 
-The `&&` operator accepts **two Boolean** (conditional) statements, which have a `true` or a `false` value, and returns a boolean value.
+The `&&` operator accepts **two Boolean** (conditional) statements and returns a boolean value.
 
 Using it instead of a couple of nested `if` blocks, makes the code **more legible**, **ordered** and **easy** to maintain. 
 
@@ -219,11 +219,11 @@ We have already learned what the logical **OR** does. Let us explain how it work
 
 Just like with the logical **AND**, the program **checks the arguments** starting from the left. 
 
-To obtain `true` from the expression, **just one** argument must have a `true` value. 
+To obtain `true` from the expression, **just one** argument needs to have a `true` value. 
 
 A statement made up of logical **OR** checks will stop executing once it reaches an operand holding a `true` value or until it reaches the end of the expression.
 
-Here is a **example** of the `||` operator in action:
+Here is an **example** of the `||` operator in action:
 
 
 ```java live
@@ -331,7 +331,7 @@ The logical **negation** operator (**!**) reverses the meaning of its operand.
 The `!` operator accepts a bool variable and **returns** its value reversed.
 
 ## Example: Invalid Number
-A given **number is valid** if it is between \[100 … 200\] or if it is **0**. We should check whether it answers these conditions and exercise our use of the `!` operator in the process.
+A given **number is valid** if it is between \[100 … 200\] or if it is **0**. We should check whether it answers to these conditions and exercise our use of the `!` operator in the process.
 
 For example, `75` and `220` are **invalid**, but `150` is **valid**.
 
