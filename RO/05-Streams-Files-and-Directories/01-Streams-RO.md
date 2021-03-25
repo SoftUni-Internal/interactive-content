@@ -151,17 +151,8 @@ try (InputStream in = new FileInputStream(path)) {
 [slide hideTitle]
 # Problemă cu soluție: citiți fișierul
 
-[code-task title="Read File" taskId="java-advanced-streams-files-lab-read-file" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Read File" taskId="java-advanced-streams-files-lab-read-file" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
-```java
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Descriere
@@ -239,17 +230,8 @@ try (FileInputStream fileStream = new FileInputStream(path)) {
 [slide hideTitle]
 # Problemă cu soluție: scrieți în fișier
 
-[code-task title="Write to File" taskId="java-advanced-streams-files-lab-write-to-file" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Write to File" taskId="java-advanced-streams-files-lab-write-to-file" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
-```java
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Descriere
