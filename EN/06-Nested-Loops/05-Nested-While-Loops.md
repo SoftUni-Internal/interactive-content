@@ -3,7 +3,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-28-30-nested-while-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The use of nested `while-loops` is very similar to the one of `for-loops`, however, while-loops are used when we do not know the exact number of necessary repetitions.
+The use of nested `while-loops` is very similar to `for-loops`, however, while-loops are used when we do not know the exact number of necessary repetitions.
 
 Here is the syntax in Java:
 ```java
