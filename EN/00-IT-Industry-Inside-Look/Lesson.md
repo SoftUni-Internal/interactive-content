@@ -1,1 +1,0 @@
-# The IT Industry: An Inside Look
