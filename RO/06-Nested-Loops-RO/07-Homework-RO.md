@@ -1568,18 +1568,20 @@ Valoarea fiecărui element poate să includă 0 și trebuie să fie un număr î
 
 [hints]
 [hint]
-
 Generați toate combinațiile de 5 cifre, prima fiind: 
 0\+0\+0\+0\+0=0, dar deoarece rezultatul nu este egal cu 25,
 se continuă cu 0\+0\+0\+0\+1=1 - din nou, nu este egal cu 25, etc.
+[/hint]
+[hint]
 Ajungem la prima combinație validă:
 0\+0\+0\+0\+25=25, mărim numărul de combinații valide 
 la 1, a doua combinație validă fiind:
 0\+0\+0\+1\+24=25
 A treia: 0\+0\+0\+2\+23=25  etc.
+[/hint]
+[hint]
 După generarea tuturor combinațiilor valide,
 numărul de combinații valide este 23751.
-
 [/hint]
 [/hints]
 
