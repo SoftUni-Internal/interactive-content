@@ -191,7 +191,7 @@ The next method that is mandatory to implement is the `next()` method.
 
 This method return the **current** name from our `names` array.
 
-Lastly, we have to returns `new NamesIterator()` in the `iterator()` method.
+Lastly, we have to return `new NamesIterator()` in the `iterator()` method.
 
 ```java
 public class NamesList implements Iterable<String> {
