@@ -25,7 +25,7 @@ int days = 730484;
 long hours = 17531616; 
 
 System.out.printf("%d centuries = %d years = %d days = %d hours.", 
-                                    centuries, years, days, hours)
+                                    centuries, years, days, hours);
 //20 centuries = 2000 years = 730484 days = 17531616 hours.
 ```
 
