@@ -29,9 +29,9 @@ There are several commands, which control the business logic of the application.
 
 They are listed below. 
 
-**NOTE:** For each command, except for "**addComputer**" and "**buyBest**", you should check if a computer with that ID exists in the **computers** collection. 
+**Note:** For each command, except for "**addComputer**" and "**buyBest**", you should check if a computer with that ID exists in the **computers** collection. 
 
-If it does not, throw an **IllegalArgumentException** with the message "**Computer with this id does not exist.**".
+If it does not, throw an `IllegalArgumentException` with the message "**Computer with this id does not exist.**".
 
 ### AddComputer Command:
 
@@ -39,11 +39,11 @@ The method must be called **addComputer**.
 
 **Parameters:**
 
-- **computerType - String**
-- **id - int**
-- **manufacturer - String**
-- **model - String**
-- **price - double**
+- **computerType** - String
+- **id** - int
+- **manufacturer** - String
+- **model** - String
+- **price** - double
 
 **Functionality:**
 
@@ -78,7 +78,7 @@ If a component, with the **same ID**, already exists in **the components collect
 
 If the component type is invalid, throws an **IllegalArgumentException** with the message "**Component type is invalid.**"
 
-If it's successful, returns "**Component** \{**component type**\} **with id** \{**component ID**\} **added successfully in computer with id** \{**computer ID**\}.".
+If it is successful, returns "**Component** \{**component type**\} **with id** \{**component ID**\} **added successfully in computer with id** \{**computer ID**\}.".
 
 ### RemoveComponent Command:
 
@@ -86,8 +86,8 @@ The method must be called **removeComponent**.
 
 **Parameters:**
 
-- **componentType - String**
-- **computerId - int**
+- **componentType** - String
+- **computerId** - int
 
 **Functionality:**
 
@@ -101,22 +101,22 @@ The method must be called **addPeripheral**.
 
 **Parameters:**
 
-- **computerId - int**
-- **id - int**
-- **peripheralType - String**
-- **manufacturer - String**
-- **model - String**
-- **price - double**
-- **overallPerformance - double**
-- **connectionType - String** 
+- **computerId** - int
+- **id** - int
+- **peripheralType** - String
+- **manufacturer** - String
+- **model** - String
+- **price** - double
+- **overallPerformance** - double
+- **connectionType** - String
 
 **Functionality:**
 
 Creates a peripheral with the correct type, and **adds it to the computer with that id, then adds it to the collection of peripherals in the controller**.
 
-If a peripheral with the **same id** already exists in **the peripherals collection**, it throws an **IllegalArgumentException** with the message "**Peripheral with this id already exists.**"
+If a peripheral with the **same id** already exists in **the peripherals collection**, it throws an `IllegalArgumentException` with the message "**Peripheral with this id already exists.**"
 
-If the peripheral type is invalid, throws an **IllegalArgumentException** with the message "**Peripheral type is invalid.**"
+If the peripheral type is invalid, throws an `IllegalArgumentException` with the message "**Peripheral type is invalid.**"
 
 If it is successful, it returns "**Peripheral** \{**peripheral type**\} **with id** \{**peripheral id**\} **added successfully in computer with id** \{**computer id**\}."
 
@@ -126,8 +126,8 @@ The method must be called **removePeripheral**.
 
 **Parameters:**
 
-- **peripheralType - String**
-- **computerId - int**
+- **peripheralType** - String
+- **computerId** - int
 
 **Functionality:**
 
@@ -141,7 +141,7 @@ The method must be called **buyComputer**.
 
 **Parameters:**
 
-- **id - int**
+- **id** - int
 
 **Functionality:**
 
@@ -155,7 +155,7 @@ The method must be called **BuyBestComputer**.
 
 **Parameters:**
 
-- **budget - double**
+- **budget** - double
 
 **Functionality:**
 
@@ -163,7 +163,7 @@ The method must be called **BuyBestComputer**.
 - the **highest overall performance**
 - a **price, less or equal to the budget** 
 
-If there are not any computers in the collection or the budget is insufficient for any computer, it throws an **IllegalArgumentException** with the message **"Can't buy a computer with a budget of** \$\{**budget**\}."
+If there are not any computers in the collection or the budget is insufficient for any computer, it throws an `IllegalArgumentException` with the message **"Can't buy a computer with a budget of** \$\{**budget**\}."
 
 If it is successful, it returns the **toString method on the removed computer**.
 
