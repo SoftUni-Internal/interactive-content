@@ -108,17 +108,8 @@ Files.write(outPath, lines);
 [slide hideTitle]
 # Problemă cu soluție: sortarea liniilor
 
-[code-task title="Sort Lines" taskId="java-advanced-streams-files-lab-sort-lines" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sort Lines" taskId="java-advanced-streams-files-lab-sort-lines" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
-```java
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 
