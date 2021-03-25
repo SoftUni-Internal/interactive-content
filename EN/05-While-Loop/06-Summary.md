@@ -5,7 +5,7 @@
 
 ## In this lesson you learned: 
 
-- What **while-loops** are and how we can use them
+- What **while-loops** are and how to apply them
 
 ```java
 while (condition) {
@@ -13,7 +13,7 @@ while (condition) {
 }
 ```
 
-- Difference between **while-loop** and **for-loop**
+- Difference between a **while-loop** and a **for-loop**
 
 
 
@@ -37,9 +37,9 @@ while (true) {
 
 - Complex **for-loops** with a special step
 
-- What nested loops are and how we can use them
+- What nested loops are and how to use them
 
-  * a loop inside another loop
+  * a loop functioning inside another loop
 
 - Combining nested **for** and **while** loops
 - Different combinations of nesting **for-loops** and **while-loops**
