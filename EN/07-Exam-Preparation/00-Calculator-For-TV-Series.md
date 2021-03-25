@@ -28,13 +28,13 @@ Create a program that calculates how long it will take you to watch all episodes
 
 You will receive the **number of seasons**, **the number of episodes per season**, and **the duration of each episode**.
 
-In every episode, there are **advertisements**, whose duration is 20% of the episode's duration.
+In every episode, there are **advertisements**, which increase each episode's final duration by 20%.
 
 Every season ends with a special episode, which lasts **10 minutes longer than usual**.
 
 ## Input
 
-You will receive 4 lines from the console:
+You will receive 4 lines of input:
 
 - Title of the series - **string**
 - Number of seasons - **integer** in range [1 ... 10]
@@ -43,7 +43,7 @@ You will receive 4 lines from the console:
 
 ## Output
 
-You have to print on the console that time needed to watch all of the episodes, rounded down to the nearest whole number in the following format:
+Print out the time needed to watch all of the episodes, rounded down to the nearest integerS in the following format:
 
 - "**Total time needed to watch the** \{**name of the series**\} **series is** \{**time**\} **minutes.**"
 
