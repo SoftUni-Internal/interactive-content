@@ -163,7 +163,7 @@ System.out.println(tree.remove("Ana"));
 System.out.println(tree);
 ```
 
-- `contains()` - returns `true` if the element exists in the `TreeSet`, otherwise, it returns `false`
+- `contains()` - returnează `true` dacă elementele există în `TreeSet`, altfel, returnează `false`
 
 ```java live
 Set<String> tree = new TreeSet<>();
