@@ -20,7 +20,7 @@ Create a program that tracks your team's performance at a Christmas charity tour
 
 For each day of the tournament you will receive **different game names** which are played at the event, until the "**Finish**" command is received.
 
-By **winning** each game, you win **20 euro** for charity. 
+By **winning** a game, you earn **20 euro** for charity. 
 
 You need to **calculate how much money** you earned at the end of each day. 
 
@@ -32,7 +32,7 @@ At the end of the tournament, if you have won on most days, you win the tourname
 
 ## Input
 
-**The number of days the tournamemnt will be runnung for - an integer in range [1 ... 20]**
+**The number of days the tournamemnt will be runnung for is an integer in range [1 ... 20]**
 
 Until you receive the "**Finish**" command, read:
 
@@ -82,7 +82,7 @@ The output consists of one line:
 Calculate how much money you have won for each day of the tournament. If you have more wins than loses in a day increase the earnings by 10%.
 [/hint]
 [hint]
-Upon reaching the "Finish" command, add the total amount of money earned and if you have won on most days, you win the tournament and increase your total amount money raised by 20%. Then print the correct output.
+Upon reaching the "Finish" command, add the total amount of money earned and if you have won on most days, increase the total amount of money raised by 20%. Then print the correct output.
 [/hint]
 [/hints]
 
