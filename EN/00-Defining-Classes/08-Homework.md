@@ -2586,7 +2586,7 @@ For example, in the first input, Stan is before Jenny because his birthdate appe
 | End |  |
 
 [/task-description]
-[code-upload allowedMemory="30" /]
+[code-io /]
 [tests]
 [test open]
 [input]
