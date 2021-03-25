@@ -14,4 +14,12 @@ As structure, they differ from the **for-loops** and their syntax is even simple
 Let us see a real life example.
 [image assetsSrc="05-bucket-example.png" /]
 
+You need to fill a bucket with water using a mug.
+
+You do not know how many mugs of water you will suffice.
+
+You will stop when the bucket is full.
+
+In this example, you work until reaching a certain condition.
+
 [/slide]
