@@ -39,10 +39,10 @@ Apoi, **imprimați** celelalte ** shards, fragments, motes**, **ordonate după c
 În final, **imprimați** dacă ați colectat **junk items**, in ordine **alfabetică**.
 
 
-### Intrare
+## Intrare
 Fiecare linie de input este in format "\{**quantity**\} \{**material**\} \{**quantity**\} \{**material**\} … \{**quantity**\} \{**material**\}"
 
-### Ieșire
+## Ieșire
 
 - Pe **prima linie**, imprimați articolele obținute  în format "\{**Legendary item**\} **obtained!**"
 
@@ -57,7 +57,7 @@ Fiecare linie de input este in format "\{**quantity**\} \{**material**\} \{**qua
     - toate datele de ieșire trebuie să fie **cu minuscule**, cu excepția  **primei** litere ale legendary
 
 
-### Exemple
+## Exemple
 | **Intrare* | **Ieșire** |
 | --- | --- |
 | 3 Motes 5 stones 5 Shards | Valanyr obtained! | 
@@ -67,7 +67,7 @@ Fiecare linie de input este in format "\{**quantity**\} \{**material**\} \{**qua
 | | leathers: 6 |
 | | stones: 5 |
 
-### Exemple
+## Exemple
 | **Intrare* | **Ieșire** |
 | --- | --- |
 | 123 silver 6 shards 8 shards 5 motes | Dragonwrath obtained! | 
