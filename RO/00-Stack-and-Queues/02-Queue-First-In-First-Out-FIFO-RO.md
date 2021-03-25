@@ -18,7 +18,7 @@ Această structură de date este modelată după cozile din viața reală, unde 
 
 [slide hideTitle]
 
-# Coadă:tip de dată abstract
+# Coadă: tip de dată abstract
 
 
 - Adăugând un element la finalul unei cozi
@@ -115,13 +115,13 @@ Nu contează dacă folosim **remove** sau **poll** aici. Ambele vor face acelaș
 
 Lucrurile sunt diferite când lucrăm cu o coadă goală:
 
-``java live
+```java live
 ArrayDeque<Integer> queue = new ArrayDeque<>();
 System.out.println("The removed element is: " + queue.poll());
 ```
 
 Rezultatele de mai sus sunt **nule**, dar dacă folosiți `remove()` veți avea o eroare:
-``java live
+```java live
 ArrayDeque<Integer> queue = new ArrayDeque<>();
 System.out.println(queue.remove());
 ```

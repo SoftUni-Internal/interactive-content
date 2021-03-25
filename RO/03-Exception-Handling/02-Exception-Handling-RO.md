@@ -68,9 +68,9 @@ try {
     System.out.println("Invalid integer number!");
 }
 ```
-Did you get it? You cannot have multiple catch statements here because by handling the **Exception** class we are already catching all the exceptions that inherit from it, including the NumberFormatException. 
+Ați înțeles? Nu puteți avea multiple instrucțiuni catch aici deoarece prin tratarea clasei **Exception** deja prindem toate excepțiile care o moștenesc, inclusiv NumberFormatException.
 
-If you remove that part of the code, it should run just fine.
+Dacă eliminați acea parte din cod, ar trebui să ruleze fără probleme.
 
 [/slide]
 
@@ -80,11 +80,11 @@ If you remove that part of the code, it should run just fine.
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-14-handling-all-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Unmanaged code can throw **other exceptions**.
+Codul negestionat poate să arunce **alte excepții**.
 
-To **handle all exceptions** (even unmanaged) use the **try-catch** statement
+Pentru a **trata toate excepțiile** (chiar dacă sunt negestionate) folosiți instrucțiunea **try-catch**.
 
-Specify a piece of code logic that could raise an exception 
+Specificați un fragment de logică a codului care ar putea ridica o excepție. 
 
 ```java
 try {
@@ -94,7 +94,7 @@ try {
 }
 ``` 
 
-Hint: Trace the exceptions hierarchy. Be cautious which exception is the parent and which is the child.
+Sugestie: Urmăriți ierarhia excepțiilor. Fiți atent care excepție este părintele și care este copilul.
 
 [/slide]
 

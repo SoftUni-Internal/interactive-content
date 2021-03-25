@@ -11,7 +11,7 @@ Aceasta este denumită și principiul ”Ultimul în primul loc” -**LIFO**.
      - Element care apare din partea de sus a stivei
      - Obținerea (**Arunca o Privire**) a elementului cel mai de sus fără eliminarea acestuia
 
-[image assetsSrc="Java-Advanced-Stack-and-Queues-3.png" /]
+[image assetsSrc="stacksAndQueues-example(1).png" /]
 
 [/slide]
 
