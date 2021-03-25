@@ -4,6 +4,8 @@
 
 # Utilizarea Blocului de Captură (Catch)
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/RO/Java-Advanced-Exceptions-and-Error-Handling-23-24-best-practices-using-catch-block-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Blocurile **Catch** ar trebui:
 
 - Începeți cu excepțiile cele mai mici din ierarhie
@@ -22,6 +24,8 @@ Fiecare bloc **catch** ar trebui să gestioneze numai aceste excepții pe care l
 
 # Alegerea Tipului de Excepție
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/RO/Java-Advanced-Exceptions-and-Error-Handling-25-26-choosing-the-exception-type-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 - Când o aplicație încearcă să utilizeze **null** într-un caz în care este necesar un obiect:
 
 | **Tipului de Excepție** | **Când se folosește** |
@@ -37,6 +41,8 @@ Fiecare bloc **catch** ar trebui să gestioneze numai aceste excepții pe care l
 [slide hideTitle]
 
 # Cele Mai Bune Practici
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/RO/Java-Advanced-Exceptions-and-Error-Handling-27-28-exceptions-best-practices-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Când ridicați o excepție, transmiteți întotdeauna constructorului un **mesaj de explicație bună.**
 

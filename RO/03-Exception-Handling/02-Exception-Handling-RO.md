@@ -38,7 +38,7 @@ try {
 
 # Handling Exceptions
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-9-10-handling-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/RO/Java-Advanced-Exceptions-and-Error-Handling-9-10-handling-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Atunci când prindeți o excepție dintr-o anumită clasă, toți moștenitorii săi (excepțiile copilului) sunt prinși și ei.**
 Vezi următorul exemplu:
@@ -78,7 +78,7 @@ Dacă eliminați acea parte din cod, ar trebui să ruleze fără probleme.
 
 # Handling All Exceptions
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-14-handling-all-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/RO/Java-Advanced-Exceptions-and-Error-Handling-14-handling-all-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Codul negestionat poate să arunce **alte excepții**.
 
@@ -102,7 +102,7 @@ Sugestie: Urmăriți ierarhia excepțiilor. Fiți atent care excepție este păr
 
 # "Try-finally" Statement
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-15-the-try-finally-statement-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/RO/Java-Advanced-Exceptions-and-Error-Handling-15-the-try-finally-statement-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Instrucțiunea **try-finalmente** asigură **execuția** unui bloc dat, indiferent de potențialele excepții care ar putea fi aruncate în codul anterior blocului de cod în cele din urmă.
 
@@ -139,7 +139,7 @@ static void testTryFinally() {
 
 # How Do Exceptions Work?
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-17-how-do-exceptions-work-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/RO/Java-Advanced-Exceptions-and-Error-Handling-17-how-do-exceptions-work-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În **blocul try**, rulăm codul pe care dorim să îl verificăm.
 
