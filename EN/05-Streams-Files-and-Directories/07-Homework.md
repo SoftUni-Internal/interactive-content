@@ -3,24 +3,15 @@
 
 [slide hideTitle]
 # Problem: Sum Lines
-[code-task title="Sum Lines" taskId="java-advanced-streams-files-exercise-sum-lines" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sum Lines" taskId="java-advanced-streams-files-exercise-sum-lines" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
 
-Write a program that reads the **input.txt** from the resources folder you downloaded, and prints the **sum** of the ASCII symbols of each of its lines to the console.
+Create a program that reads the **input.txt** from the resources folder you downloaded and prints the **sum** of the ASCII symbols of each of its lines to the console.
 
-Use **BufferedReader** in combination with **FileReader**.
+Use a **BufferedReader** in combination with **FileReader**.
 
 ## Guidelines
 
@@ -28,7 +19,7 @@ The zip file contains all the files you will need for the rest of the tasks as w
 
 **Download the resources** [here](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Files-and-Streams-Exercise-Resources.zip). 
 
-For each exercise submit only the **output** of your program, **not the code**.
+Submit only the **output** of your program, **not the code**.
 
 ## Examples
 | **Input** | **Output** |
@@ -71,21 +62,14 @@ For each exercise submit only the **output** of your program, **not the code**.
 
 [slide hideTitle]
 # Problem: Sum Bytes
-[code-task title="Sum Bytes" taskId="java-advanced-streams-files-exercise-sum-bytes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Sum Bytes" taskId="java-advanced-streams-files-exercise-sum-bytes" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
+[code-editor language=java]
 [/code-editor]
+
 [task-description]
 ## Description
-Write a program that reads the **input.txt** from the resources folder you downloaded, and prints the **sum** of the ASCII symbols of all characters inside of the file to the console.
+Create a program that reads the **input.txt** from the resources folder you downloaded, and prints the **sum** of the ASCII symbols of all characters inside of the file to the console.
 
 Use **BufferedReader** in combination with **FileReader**.
 
@@ -98,7 +82,7 @@ Use **BufferedReader** in combination with **FileReader**.
 
 Use the previously provided resources.
 
-For each exercise submit only the **output** of your program, **not the code**.
+Submit only the **output** of your program, **not the code**.
 
 ## Examples
 | **Input** | **Output** |
@@ -129,30 +113,21 @@ For each exercise submit only the **output** of your program, **not the code**.
 
 [slide hideTitle]
 # Problem: CAPITAL LETTERS
-[code-task title="CAPITAL LETTERS" taskId="java-advanced-streams-files-exercise-capital-letters" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="CAPITAL LETTERS" taskId="java-advanced-streams-files-exercise-capital-letters" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
-Write a program that reads the **input.txt** from the resources folder you downloaded, and changes all letters to **uppercase**.
+Create a program that reads the **input.txt** file from the resources folder you downloaded, and changes all letters to their **uppercase** counterpart.
 
 Write the output to another file (**output.txt**).
 
-Use **BufferedReader** and **PrintWriter**.
+Use а **BufferedReader** and а **PrintWriter**.
 
 ## Guidelines
 Use the previously provided resources.
 
-For each exercise submit only the **output** of your program, **not the code**.
+Submit only the **output** of your program, **not the code**.
 
 ## Examples
 | **Input** | **Output** |
@@ -195,21 +170,12 @@ A YOUTH OF NOBLE ROMAN FAMILY,
 
 [slide hideTitle]
 # Problem: Count Character Types
-[code-task title="Count Character Types" taskId="java-advanced-streams-files-exercise-count-character-types" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Count Character Types" taskId="java-advanced-streams-files-exercise-count-character-types" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
-Write a program that reads the **input.txt** from the resources folder you downloaded, and finds the count of **vowels**, **consonants**, and **punctuation** marks.
+Create a program that reads the **input.txt** file from the resources folder you downloaded and finds the count of **vowels**, **consonants**, and **punctuation** marks.
 
 Assume that:
 
@@ -220,13 +186,13 @@ Assume that:
 
 Write the results to another file – **output.txt**.
 
-Use **BufferedReader** and **PrintWriter**.
+Use a **BufferedReader** and a **PrintWriter**.
 
 ## Guidelines
+
 Use the previously provided resources.
 
-
-For each exercise submit only the **output** of your program, **not the code**.
+Submit only the **output** of your program, **not the code**.
 
 ## Examples
 | **Input** | **Output** |
@@ -258,21 +224,12 @@ Punctuation: 6
 
 [slide hideTitle]
 # Problem: Line Numbers
-[code-task title="Line Numbers" taskId="java-advanced-streams-files-exercise-line-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Line Numbers" taskId="java-advanced-streams-files-exercise-line-numbers" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
-Write a program that reads the **input.txt** from the resources folder you downloaded, and **inserts** a line number in the beginning of each line.
+Create a program that reads the **input.txt** file from the resources folder and **inserts** a line number in the beginning of each line.
 
 The result should be written to **another** text file – **output.txt**.
 
@@ -325,21 +282,12 @@ For each exercise submit only the **output** of your program, **not the code**.
 
 [slide hideTitle]
 # Problem: Word Count
-[code-task title="Word Count" taskId="java-advanced-streams-files-exercise-word-count" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Word Count" taskId="java-advanced-streams-files-exercise-word-count" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
-Write a program that reads a list of words from the **words.txt** file and finds how many times each of the words is **contained** in another file **text.txt**. Both files are in the resources folder you previously downloaded.
+Create a program that reads a list of words from the **words.txt** file and finds how many times each of the words is **contained** in another file **text.txt**. Both files are in the resources folder you previously downloaded.
 
 Matching the words should be **case-insensitive**.
 
@@ -348,9 +296,10 @@ Write the results in a file called **results.txt**.
 Sort the words by the number of times they appear in the **text.txt** file in **descending order**.
 
 ## Guidelines
+
 Use the previously provided resources.
 
-For each exercise submit only the **output** of your program, **not the code**.
+Submit only the **output** of your program, **not the code**.
 
 ## Examples
 | **Input** | **Output** |
@@ -381,26 +330,17 @@ The - 1
 
 [slide hideTitle]
 # Problem: Merge Two Files
-[code-task title="Merge Two Files" taskId="java-advanced-streams-files-exercise-merge-two-files" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Merge Two Files" taskId="java-advanced-streams-files-exercise-merge-two-files" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
-Write a program that reads the contents of **two** text files (**inputOne.txt** , **inputTwo.txt**) and **merges** them together into a new file.
+Create a program that reads the contents of **two** text files (**inputOne.txt** , **inputTwo.txt**) and **merges** them together into a new file.
 
 ## Guidelines
 Use the previously provided resources.
 
-For each exercise submit only the **output** of your program, **not the code**.
+Submit only the **output** of your program, **not the code**.
 
 ## Examples
 | **File 1** | **File 2** | **Output** |
@@ -440,30 +380,21 @@ For each exercise submit only the **output** of your program, **not the code**.
 
 [slide hideTitle]
 # Problem: Get Folder Size
-[code-task title="Get Folder Size" taskId="java-advanced-streams-files-exercise-get-folder-size" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Get Folder Size" taskId="java-advanced-streams-files-exercise-get-folder-size" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
-Write a program that **traverses** a folder and **calculates** its size in bytes.
+
+Create a program that **traverses** a folder and **calculates** its size in bytes.
 
 Use the **Exercises Resources** folder in the resources.
 
 ## Guidelines
+
 Use the previously provided resources.
 
-
-For each exercise submit only the **output** of your program, **not the code**.
-
+Submit only the **output** of your program, **not the code**.
 
 ## Examples
 | **Input** | **Output** |
@@ -492,7 +423,7 @@ Folder size: 2878
 [slide hideTitle]
 # Problem: Copy a Picture
 
-Write a program that makes a copy of a **.jpg** file using **FileInputStream**, **FileOutputStream**, and **byte[] buffer**. 
+Create a program that makes a copy of a **.jpg** file using **FileInputStream**, **FileOutputStream**, and **byte[] buffer**. 
 
 Set the name of the new file as **picture-copy.jpg**.
 
@@ -501,7 +432,7 @@ Set the name of the new file as **picture-copy.jpg**.
 [slide hideTitle]
 # Problem: Serialize Array List
 
-Write a program that saves and loads an **ArrayList** of doubles to a file using **ObjectInputStream** and **ObjectOutputStream**. 
+Create a program that saves and loads an **ArrayList** of doubles to a file using **ObjectInputStream** and **ObjectOutputStream**. 
 
 Set the name of the file as **list.ser**.
 
@@ -510,7 +441,7 @@ Set the name of the file as **list.ser**.
 [slide hideTitle]
 # Problem: Serialize Custom Object
 
-Write a program that saves and loads information about a custom object using **ObjectInputStream** and **ObjectOutputStream**.
+Create a program that saves and loads information about a custom object using **ObjectInputStream** and **ObjectOutputStream**.
 
 Create a **simple class** called "Course" that has a **String field** containing its **name** and an **integer field** containing the **number of students** attending the course. 
 
@@ -521,7 +452,7 @@ Set the name of the saved file as **course.ser**.
 [slide hideTitle]
 # Problem: Create Zip Archive
 
-Write a program that reads three **.txt** files and creates a zip archive named **files.zip**. 
+Create a program that reads three **.txt** files and creates a zip archive named **files.zip**. 
 
 Use **FileOutputStream**, **ZipOutputStream**, and **FileInputStream**.
 
