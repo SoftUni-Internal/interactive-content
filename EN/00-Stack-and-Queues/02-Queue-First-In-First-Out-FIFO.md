@@ -208,10 +208,6 @@ System.out.println(queueOfWords.contains("BMW 7"));
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-35-Queue-Overview-of-all-operations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The animation illustrates all the queue operations that we can use for solving the upcoming programming problems.
-
-[image assetsSrc="Java-Advanced-Stack-and-Queues-11.gif" /]
-
 [/slide]
 
 [slide hideTitle]
