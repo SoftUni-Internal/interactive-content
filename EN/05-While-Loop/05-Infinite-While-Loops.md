@@ -5,7 +5,7 @@
 
 An `infinite` loop is an instruction sequence that loops endlessly when a terminating condition has not been set or cannot occur. 
 
-The infinite loop happens when the condition in the **while-loop** always evaluates to `true`.
+This happens when the condition in the **while-loop** always evaluates to `true`.
 
 ## Example:
 ```java
