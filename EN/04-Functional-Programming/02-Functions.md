@@ -4,8 +4,6 @@
 
 # Functional Programming
 
-TODO: Add a video or remove slide
-
 Let us continue with another **important paradigm** in modern programming: **functional programming**
 
 **Functional programming** (FP) is a paradigm based on composing **pure functions**, while avoiding shared state, mutable data, and side-effects.
@@ -46,8 +44,6 @@ Both functions have **no side effects**:
 [slide hideTitle]
 
 # Functional Programming Languages
-
-TODO: Add a video or remove slide
 
 There are many **functional programming** languages and languages that incorporate **functional paradigms** into modern software development.
 
