@@ -22,10 +22,10 @@ On each iteration of the outer loop, the inner loop is executed.
 This happens the following way:
 * **The outer loop starts** 
   * the controlling **variable** is initialized and its body is executed (if the exit conditions are not met)
-* After that **the inner loop is executed**
-  * the loop variable is initialized, its body is executed (if the exit conditions are not met)
+* **The inner loop is executed**
+  * the inner loop variable is initialized, its body is executed (if the exit conditions are not met)
 * When reaching the specified **end value**, the program goes back a step up and continues executing the outer loop
-  * the outer loop variable goes one step forward; if the outer loop exit condition is not met -the inner loop contained in its body is executed
+  * the outer loop variable goes one step forward; if the outer loop's exit condition is not met - the inner loop contained in its body is executed
 * This is repeated until the outer loop reaches its exit condition
 [/slide]
 
@@ -55,7 +55,7 @@ After initializing **the outer loop**, its **body**, which contains **the nested
 
 This prints out one row, containing an `n` number of stars. 
 
-After **the inner** loop **finishes** running at the first iteration of the outer one, **control is transferred back to the outer loop**, i.e. it will print an empty row on the console. 
+After **the inner** loop **finishes** running at the first iteration of the outer one, **control is transferred back to the outer loop**, i.e. it will print an empty row to the console. 
 
 **After that**, the variable of **the outer** loop will be **updated** and the **second** loop will be executed again. 
 
