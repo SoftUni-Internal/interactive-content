@@ -30,39 +30,39 @@ The project will consist of **model classes** and a **controller class**, which 
 
 You are given interfaces and you have to implement their functionality in the **correct classes**.
 
-There are **4** types of entities in the application: **Product, Component, Peripheral, and Computer**.
+There are **four** types of entities in the application: **Product**, **Component**, **Peripheral**, and **Computer**.
 
 # Product 
 
-The **BaseProduct** is a **base class** for **components, peripherals** and **computers** and it **should not be able to be instantiated**.
+The **BaseProduct** is a **base class** for **components, peripherals** and **computers**, and it **should not be able to be instantiated**.
 
 ## Data
 
-- **id - int**
+- **id** - int
   * cannot be **less than or equal to 0**
-  * in that case, throw an **IllegalArgumentException** with the message "**Id can not be less or equal than 0.**"
+  * in that case, throw an `IllegalArgumentException` with the message "**Id can not be less or equal than 0.**"
 
-- **manufacturer - String** 
+- **manufacturer** - String
   * cannot be **null or whitespace**
-  * in that case, throw an **IllegalArgumentException** with the message "**Manufacturer can not be empty.**"
+  * in that case, throw an `IllegalArgumentException` with the message "**Manufacturer can not be empty.**"
 
-- **model - String**
+- **model** - String
   * cannot be **null or whitespace**
-  * in that case, throw an **IllegalArgumentException** with the message "**Model can not be empty.**"
+  * in that case, throw an `IllegalArgumentException` with the message "**Model can not be empty.**"
 
-- **price - double**
+- **price** - double
   * cannot be **less than or equal to 0**
-  * in that case, throw an **IllegalArgumentException** with the message "**Price can not be less or equal than 0.**"
+  * in that case, throw an `IllegalArgumentException` with the message "**Price can not be less or equal than 0.**"
 
-- **overallPerformance - double**
+- **overallPerformance** - double
   * cannot be **less than or equal to 0**
-  * in that case, throw an **IllegalArgumentException** with the message "**Overall Performance can not be less or equal than 0.**"
+  * in that case, throw an `IllegalArgumentException` with the message "**Overall Performance can not be less or equal than 0.**"
 
 ## Constructor
 
 A **product** should take the following values upon initialization:
 
-**(int id, String manufacturer, String model, double price, double overallPerformance)**
+- (int **id**, String **manufacturer**, String **model**, double **price**, double **overallPerformance**)
 
 Override the **toString()** method with the format:
 
@@ -72,9 +72,9 @@ Override the **toString()** method with the format:
 
 There are several concrete types of **products**:
 
-- Component
-- Peripheral
-- Computer
+- **Component**
+- **Peripheral**
+- **Computer**
 
 # Component
 
@@ -82,13 +82,13 @@ The **BaseComponent** is a derived class from **BaseProduct** and a **base class
 
 ## Data
 
-- **generation - int**
+- **generation** - int
 
 ## Constructor
 
 A **product** should take the following values upon initialization:
 
-**(int id, String manufacturer, String model, double price, double overallPerformance, int generation)**
+- (int **id**, String **manufacturer**, String **model**, double **price**, double **overallPerformance**, int **generation**)
 
 Override the **toString()** method with the format:
 
@@ -113,13 +113,13 @@ The **BasePeripheral** is a derived class from **BaseProduct** and a **base clas
 
 ## Data
 
-- **connectionType - String**
+- **connectionType** - String
 
 ## Constructor
 
 A **product** should take the following values upon initialization:
 
-**(int id, String manufacturer, String model, double price, double overallPerformance, String connectionType)**
+- (int **id**, String **manufacturer**, String **model**, double **price**, double **overallPerformance**, String **connectionType**)
 
 Override the **toString()** method with the format:
 
@@ -140,14 +140,14 @@ The **BaseComputer** is a derived class from **BaseProduct** and a **base class*
 
 ## Data
 
-- **components - List**
-- **peripherals - List**
+- **components** - List
+- **peripherals** - List
 
 ## Constructor
 
 A **product** should take the following values upon initialization:
 
-**(int id, String manufacturer, String model, double price, double overallPerformance)**
+- (int **id**, String **manufacturer**, String **model**, double **price**, double **overallPerformance**)
 
 Override the **toString()** method with the format:
 
