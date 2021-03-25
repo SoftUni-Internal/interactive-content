@@ -126,8 +126,8 @@ They can be represented in a few different ways, which are not as intuitive:
 int hexadecimal = 0xA8F1; // 43249
 long number = 1L; // 1
 
-System.out.println("hexadecimal: ", hexadecimal);
-System.out.println("long: ", number);
+System.out.println("hexadecimal: " + hexadecimal);
+System.out.println("long: " + number);
 ```
 
 [/slide]

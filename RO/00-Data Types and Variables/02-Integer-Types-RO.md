@@ -122,8 +122,8 @@ Ele pot fi reprezentate în câteva moduri diferite, care nu sunt la fel de intu
 int hexadecimal = 0xA8F1; // 43249
 long number = 1L; // 1
 
-System.out.println("hexadecimal: ", hexadecimal);
-System.out.println("long: ", number);
+System.out.println("hexadecimal: " + hexadecimal);
+System.out.println("long: " + number);
 ```
 [/slide]
 
@@ -140,7 +140,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
