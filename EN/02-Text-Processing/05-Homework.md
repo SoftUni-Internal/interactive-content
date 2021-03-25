@@ -17,12 +17,12 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that reads user names on a single line (joined by ", ") and **prints all valid usernames**.
+Create a program that receives few usernames on a single line, separated by a comma and a white space (", "), and **prints all valid usernames**.
 
-A **valid username** is:
-- Has **length between 3 and 16 characters**
+A **valid username**:
+- Has a **length between 3 and 16 characters**
 - Contains **only letters, numbers, hyphens and underscores**
-- Has **no redundant symbols** before, after or in between.
+- Has **no redundant symbols** before, after, or in-between.
 
 ### Example
 | **Input** | **Output** |
@@ -129,11 +129,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a **method that takes two strings** as arguments and **returns the sum of their character codes multiplied** (multiply str1\[0\] with str2\[0\] and add to the total sum).
+Create a **method that takes two strings** as arguments and **returns the sum of the ASCII values of their characters multiplied** (multiply str1\[0\] with str2\[0\] and add the result to the total sum).
 
-Then **continue with the next two characters**.
+Then continue with the **next two characters**.
 
-**If one of the strings is longer than the other**, **add the remaining character codes** to the total sum without multiplication.
+If one of the strings is **longer than the other**, add the ASCII values of the remaining characters to the total sum **without** multiplication.
 
 ### Example
 | **Input** | **Output** |
@@ -230,7 +230,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that **reads the path to a file** and **subtracts the file name and its extension**.
+Create a program that receives a **path to a file** and **prints the name of the file and its extension**, each on a new line, as shown in the example.
 
 ### Example
 | **Input** | **Output** |
