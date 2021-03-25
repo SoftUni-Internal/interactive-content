@@ -4,7 +4,7 @@
 
 # Definiție
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/interactive-java-advanced-multidimensional-arrays-7-What-Is-Multidimensional-Array-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/RO/interactive-java-advanced-multidimensional-arrays-7-What-Is-Multidimensional-Array-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Tablourile pe care le-ați folosit până acum au conținut o singură coloană de date.
 
@@ -26,7 +26,7 @@ Ar putea arăta astfel:
 
 # Declararea și Crearea Matricelor Multidimensionale
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/interactive-java-advanced-multidimensional-arrays-8-Declaring-And-Creating-Array-And-Demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/RO/interactive-java-advanced-multidimensional-arrays-8-Declaring-And-Creating-Array-And-Demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Două dintre cele mai utilizate **matrice multidimensionale sunt** matrice bidimensionale și tridimensionale, cunoscute sub numele de matrice `2D`  și `3D` , orice mai sus este rar.
 
@@ -59,7 +59,7 @@ Aici, creăm o matrice tridimensională de șiruri.
 
 # Crearea și Inițializarea Matricelor Multidimensionale
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/interactive-java-advanced-multidimensional-arrays-9-Initializing-Multi-Array-And-Demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/RO/interactive-java-advanced-multidimensional-arrays-9-Initializing-Multi-Array-And-Demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Crearea și **initializarea** matricii bidimensionale cu sintaxă de comenzi rapide:
 
@@ -91,7 +91,7 @@ for (int i = 0; i < 2; i++) {
 
 # Accesarea Elementelor
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/interactive-java-advanced-multidimensional-arrays-10-Accessing-Elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/RO/interactive-java-advanced-multidimensional-arrays-10-Accessing-Elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Elementele din **matrice bidimensionale** sunt denumite în mod obișnuit prin `x[i][j]` unde `i` este **numărul rândului** și` j` este **numărul coloanei**.
 

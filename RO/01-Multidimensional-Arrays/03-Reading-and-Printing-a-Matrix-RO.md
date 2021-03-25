@@ -4,7 +4,7 @@
 
 # Citirea și Tipărirea unei Matrice Multidimensională
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/interactive-java-advanced-multidimensional-arrays-11-Reading-A-Matrix-Example-And-Demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/RO/interactive-java-advanced-multidimensional-arrays-11-Reading-A-Matrix-Example-And-Demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ```java
 // Enter the length 
@@ -59,7 +59,7 @@ Accesăm fiecare element al matricei unul câte unul, și le tipărim, separate 
 [slide hideTitle]
 # Problemă cu Soluția: Compare Matrices
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/interactive-java-advanced-multidimensional-arrays-12-Problem-And-Solution-Compare-Matrices-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/RO/interactive-java-advanced-multidimensional-arrays-12-Problem-And-Solution-Compare-Matrices-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Compare Matrices" taskId="java-advanced-lab-multidimensional-arrays-Compare-Matrices" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -255,7 +255,7 @@ not equal
 [slide hideTitle]
 # Problemă cu Soluția: Positions Of
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/interactive-java-advanced-multidimensional-arrays-16-Problem-And-Solution-Position-Of-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/RO/interactive-java-advanced-multidimensional-arrays-16-Problem-And-Solution-Position-Of-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Positions of" taskId="java-advanced-lab-multidimensional-arrays-Positions-Of" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -431,7 +431,7 @@ not found
 [slide hideTitle]
 # Problemă cu Soluția: Sum of All Elements of a Matrix
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/interactive-java-advanced-multidimensional-arrays-18-Problem-And-Solution-Sum-Of-All-Elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/RO/interactive-java-advanced-multidimensional-arrays-18-Problem-And-Solution-Sum-Of-All-Elements-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sum of All Elements of Matrix" taskId="java-advanced-lab-multidimensional-arrays-Sum-of-All-Elements-of-Matrix" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -570,7 +570,7 @@ Pe **următoarele linii**,  o să aveți elementele pentru fiecare rând **separ
 [slide hideTitle]
 # Problemă cu Soluția: Maximum Sum of 2X2 Submatrix
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/interactive-java-advanced-multidimensional-arrays-20-Problem-And-Solution-Maximum-Sum-Of-2x2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/RO/interactive-java-advanced-multidimensional-arrays-20-Problem-And-Solution-Maximum-Sum-Of-2x2-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Maximum Sum of 2X2 Submatrix" taskId="java-advanced-lab-multidimensional-arrays-Maximum-Sum-of-2X2-Submatrix" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
