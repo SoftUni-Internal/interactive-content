@@ -110,11 +110,6 @@ System.out.println(stackOfCars.contains("BMW M3"));
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-14-Stack-Overview-of-all-operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The animation below illustrates all the stack operations that we can use for solving the upcoming programming problems.
-
-[image assetsSrc="Java-Advanced-Stack-and-Queues-10.gif" /]
-
-
 [/slide]
 
 [slide hideTitle]
