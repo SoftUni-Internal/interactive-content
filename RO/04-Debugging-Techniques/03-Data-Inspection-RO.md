@@ -4,6 +4,8 @@
 
 # Inspecția datelor IntelliJ
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-22-intellij-data-inspection-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Cea mai importantă parte a depanării este **inspecția datelor**.
 
 Este grav deoarece putem vedea **variabilele** și ceea ce păstrează în **memorie**.
@@ -17,6 +19,8 @@ Pentru a avea un timp de rezoluție rapid, trebuie să avem o inspecție mai bun
 [slide hideTitle]
 
 # Inspecția datelor
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-20-21-data-inspections-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Depanatorul încorporat din **IntelliJ IDEA** ne oferă instrumente pentru verificarea fără efort a **inspecției datelor.**
 
@@ -44,6 +48,8 @@ Unii dintre ei sunt:
 
 # Variabile și ferestre Watches
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-23-variables-and-watches-tabs-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Tab-urile Variabile și Watches ne oferă libertatea de a inspecta stările aplicației.
 
 Dacă dorim să urmărim ceva care nu este afișat în tab-ul **Variabil**, putem configura un **Watch**.
@@ -64,6 +70,8 @@ De asemenea, putem crea **Watches** personalizate, care pot conține doar variab
 
 # Evaluați fereastra de expresie
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-24-evaluate-expression-window-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Depanatorul ne permite să evaluăm expresiile din timpul sesiunii de depanare.
 
 Aceasta ne oferă informații suplimentare despre program.
@@ -80,6 +88,8 @@ Există o comandă rapidă pentru a accesa **fereastra de evaluare** - "**Alt + 
 [slide hideTitle]
 
 # Găsirea unui defect
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-25-26-finding-a-defect-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Când am găsit o eroare, trebuie să facem câțiva pași pentru a remedia problema.
 
@@ -98,6 +108,8 @@ Dacă totul funcționează conform așteptărilor, putem continua căutarea alto
 [slide hideTitle]
 # Sfaturi pentru găsirea defectelor
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-27-28-tips-for-finding-defects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Iată câteva sfaturi pentru găsirea erorilor:
 
 - Pentru fiecare bucată de cod, scrieți un test unitar
@@ -115,6 +127,8 @@ Iată câteva sfaturi pentru găsirea erorilor:
 
 # Remedierea unui defect
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-29-fixing-a-defect-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Când se găsește eroarea, trebuie să o remediem.
  
 Dar înainte de asta, trebuie să înțelegem de ce programul se comportă așa.
@@ -131,6 +145,8 @@ Dacă testul rulează fără probleme, putem continua cu remedierea altor bug-ur
 
 [slide hideTitle]
 # Considerații psihologice
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-30-psychological-considerations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Cu cât scriem mai multe coduri, cu atât avem mai multă încredere.
 
