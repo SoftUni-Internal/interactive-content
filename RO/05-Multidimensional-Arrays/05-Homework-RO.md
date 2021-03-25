@@ -1288,35 +1288,35 @@ END
 [/input]
 [output]
 fafsgfaaa
-gf afabb 
-fg fsdcc 
+gf afabb
+fg fsdcc
 fg sjjd  
 gf fkke  
 da sgjf  
-fg ffe   
-gf gjr   
-dg fjj   
-ff fgg   
-sa ffh   
-g  gjj   
-f  dgh   
-g   ff   
-d   jg   
-s   gf   
-g   fs   
-f   s    
-s   j    
-s   h    
-f   g    
-d   j    
-    f    
-    h    
-    s    
-    j    
-    h    
-    k    
-    f    
-    s    
+fg ffe
+gf gjr
+dg fjj
+ff fgg
+sa ffh
+g  gjj
+f  dgh
+g   ff
+d   jg
+s   gf
+g   fs
+f   s
+s   j
+s   h
+f   g
+d   j
+    f
+    h
+    s
+    j
+    h
+    k
+    f
+    s
     d
 [/output]
 [/test]
