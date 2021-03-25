@@ -1397,28 +1397,31 @@ function encodeAndDecodeMessages(){
 
 **Aici este un link către** [resurse](https://videos.softuni.org/resources/javascript/javascript-advanced/05-Encode-and-Decode-Messages.zip) **pentru această sarcină.**
 
-Create a JavaScript functionality that encodes and decodes some messages which travel to the network.
+Creați o funcționalitate JavaScript care codifică și decodifică niște mesaje care circulă spre rețea.
 
-The program should contain two functionalities.
+Programul trebuie să conțină două funcționalități.
 
-The first one is to encode the given message and send it to the receiver.
+Prima este de a codifica mesajul dat și de a-l trimite la destinatar.
 
-The second one is to decode the received message and display it.
+A doua este de a decodifica mesajul primit și de a-l afișa.
 
-When the `Encode and send it` button is clicked, you should get the given message from the first textarea.
+Când butonul `Encode and send it` este apăsat , ar trebui să primiți mesajul dat din prima zonă de text.
 
-When you get the current message, you should encode it as follows:
+Când primiți mesajul curent, trebuie să îl codificați în felul următor:
 
-- Change the ASCII CODE on every single character in that message by adding 1 to the current ASCII NUMBER that represent the current character in that message
+- Schimbați CODUL ASCII al fiecărui caracter din acel mesaj prin adăugarea lui 1 la NUMĂRUL ASCII curent care reprezintă acel caracter în mesaj.
 
-- Clear the sender textarea and append the encoded message to the receiver textarea
+- Eliberați zona de text a expeditorului și adăugați mesajul codificat în zona de text a destinatarului.
 
-After that, when the `Decode and read it` button is clicked, you need to get the encoded message from the receiver textarea and do the opposite logic:
+După aceea, când butonul `Decode and read it` este apăsat, trebuie să luați mesajul codificat din zona de text și să aplicați logica inversă:
 
-- Subtract 1 from the current ASCII NUMBER that represents the current character in that message
+- Scădeți 1 din valoarea curentă a NUMĂRULUI ASCII care reprezintă caracterul curent în acel mesaj
 
-- Replace the encoded message with your decoded message in the receiver textarea to make it readable
+- Înlocuiți mesajul codificat din zona de text a destinatarului cu mesajul decodificat pentru a putea fi citit 
 
+
+
+ 
 # Exemplu
 
 ## Intrare
@@ -2214,19 +2217,19 @@ function furniture(){
 
 **Aici este un link către** [resurse](https://videos.softuni.org/resources/javascript/javascript-advanced/07-Furniture.zip) **pentru această sarcină.**
 
-You will be given furniture as an array of objects.
+O să primiți piese de mobilier ca o matrice de obiecte:
 
-Each object will have a name, a price, and a decoration factor.
+Fiecare obiect va avea un nume, un preț și un factor de decorare.
 
-When the `Generate` button is **clicked**, add a new row to the table for each piece of furniture with its **image**, **name**, **price**, and **decoration factor**.
+Când butonul `Generate` este **apăsat**, adăugați un nou rând la tabel pentru fiecare piesă de mobilier cu **imaginea** sa, **numele**, **prețul** și **factorul de decorare**.
 
-When the `Buy` button is clicked, get all checkboxes that are marked, and show in the result textbox the names of the furniture that were **checked**, separated by a comma and a single space, in the following format: 
+Când butonul `Buy` este apăsat, luați toate casetele care sunt marcate, și arătați în cutia de text a rezultatului numele pieselor de mobilier care au fost **marcate**, separate print-o virgulă și un singur spațiu, în formatul:
 
 "**Bought furniture:** \{**furniture1**\} \{**furniture2**\}**...**"
 
-On the next line, print the total price in format: "**Total price:** \{**totalPrice**\}", formatted two digits after the decimal point.
+Pe linia următoare, tipăriți prețul total în formatul: "**Total price:** \{**totalPrice**\}", formatat la a doua cifră după punctul zecimal.
 
-Finally, print the average decoration factor in the format: "**Average decoration factor:** \{**decFactor**\}".
+La final, tipăriți factorul de decorare mediu în formatul: "**Average decoration factor:** \{**decFactor**\}". 
 
 # Exemplu
 
@@ -2716,25 +2719,25 @@ function cards(){
 
 # Descriere
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/08-Cards.zip) **for this task.**
+**Aici este un link către** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/08-Cards.zip) **pentru această sarcină.**
 
-Create a function that checks cards, shows which one is greater, and keeps history of all hands.
+Creați o funcție care verifică cărți, arată care dintre ele este mai mare,  și păstrează un istoric al toate mâinilor de cărți.
 
-First, **add click events to all cards**.
+Prima dată, **adăugați evenimente de alegere pentru toate cărțile**.
 
-When one of the cards is clicked, the current background card must be changed with the `whiteCard.jpg` picture given in the skeleton.
+Când una dintre cărți este aleasă, fundalul curent al cărții trebuie schimbat cu imaginea `whiteCard.jpg` dată în schelet.
 
-The card name should be appended to one of the **span** elements in the div with `id="result"`.
+Numele cărții trebuie adăugat la unul dintre elementele **span** în div cu `id="result"`.
 
-If a card from **the top side** is **clicked**, append the card name to the **left span**, first empty the span, otherwise append the card name to the right span, which will be second or last span.
+Dacă o carte **din partea de sus** este **aleasă**, adăugați numele cărții la **span-ul stâng**, prima dată goliți span-ul, altfel adăugați numele cărții la span-ul drept, care va fi al doilea sau ultimul span.
 
-When cards from **both sides are selected**, check which one is **greater**.
+Când cărți din **ambele părți sunt selectate**, verificați care dintre ele este **mai mare**.
 
-The card that is greater should have a border `2px solid green`, and the other card should have a border `2px solid red`.
+Cartea care este mai mare trebuie să aibă un chenar `2px solid green`, și celaltă carte trebuie să aibă un chenar `2px solid red`.
 
-You should clear the span elements that hold the current cards' names, when both are selected, and the winner is selected.
+Trebuie să eliminați elementele span care au valoarea cărților curente, când ambele sunt selectate, și câștigătorul este selectat.
 
-After every hand, push the current cards' names in the **history div** in the following format:
+După fiecare mână, adăugați numele cărților curente în **history div** în formatul următor:
 `[{top side card name} vs {bottom side card name}]`
 
 # Exemplu
