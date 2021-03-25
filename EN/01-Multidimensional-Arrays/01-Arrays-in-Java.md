@@ -36,11 +36,13 @@ for (int i = 0; i < numbers.length; i++) {
     System.out.println(numbers[i]);
 }
 ```
+
 In the example above, we initialize an empty array of integers with a length of 5:
 
 - `int[]`: to initialize an array, we need to provide a data type
 - `numbers`: is the name of the variable
 - `new int[5]`: creates a new instance of an array, which will hold five integers
+
 When we iterate through the array, it will be printing zeros because the default value of an integer is zero
 
 

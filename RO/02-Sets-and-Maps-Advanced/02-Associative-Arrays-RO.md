@@ -1,31 +1,32 @@
-# Associative Arrays
+# Matrice Asociative
 
 [slide hideTitle]
-# Associative Arrays: Maps
+# Matrice Asociative: Maps
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-16-17-Associative-Arrays-Maps-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-You have learned that Arrays store items as an ordered collection and you have to access them with an index number - **int type**.
+Ați aflat că Matricea stochează articole ca o colecție comandată și trebuie să le accesați cu un număr de index - **tip int**.
 
-An Associative Array, however, stores items in **key**-**value** pairs, and you can access them by an index of another type (e.g. a "String").
+Cu toate acestea, o matrice asociativă stochează articole în perechi **cheie**-**valoare** și le puteți accesa printr-un index de alt tip (de ex. un șir)
 
-One object is used as a key (index) to another object (value). 
+Un obiect este folosit ca și cheie (index) către un alt obiect (valoare).
 
-The type of the keys and values can not primitive like `int`, `double`, `boolean`, etc. 
+Nu pot fi tipuri primitive precum `int`, `double`, `boolean` etc.
 
-They must be specified with the equivalent wrapper class: `Integer`, `Double`, `Boolean`, etc.
+Acestea trebuie specificate cu clasa de împachetare echivalentă: `Integer`, `Double`, `Boolean` etc.
 
-The type of **key** and the **value** can be the same or different, depending on the case.
+Tipul de **cheie** și **valoare** poate fi identic sau diferit, depinde de caz.
 
-In Java, associative arrays are also called **Maps**. 
+În Java, matricele asociative se numesc **Maps**. 
 
-A Map **can not contain duplicate keys**. Each **Key** can map to at most one value.
+Map **nu poate conține chei duplicate**, fiecare **cheie** poate asocia cel mult o valoare.
 
-But **the values can be duplicated**. 
+Dar **valorile pot fi duplicate**. 
 
-For one **Key** only one **Value** can be stored in the same Map instance.
+Pentru o **cheie**, o singură **valoare** poate fi stocată în aceeași instanță Map.
 
-**For example:**
+
+**De exemplu:**
 
 | **Products** | **Prices** |
 | --- | --- |
@@ -35,7 +36,8 @@ For one **Key** only one **Value** can be stored in the same Map instance.
 | Apples| 6.50 |
 | Cucumbers | 7.50 |
 
-**The Java platform contains three general-purpose Map implementations:**
+
+**Platforma Java conține trei implementări de hărți generale:**
 
 - `HashMap<K, V>`
 
@@ -43,39 +45,40 @@ For one **Key** only one **Value** can be stored in the same Map instance.
 
 - `LinkedHashMap<K, V>`
 
-**The main features of "Maps" are:**
-- Hold a set of \<key, value\> pairs 
-- Contain unique keys
-- Each key is mapped to a single value
-- It can contain duplicate values
+**Principalele caracteristici ale Hărților sunt:**
+- Țineți un set de perechi \<key, value\>
+- Conține chei unice
+- Fiecare tastă poate mapa la cel mult o valoare
+- Valorile pot fi duplicate
 
-**Based on the features of the Maps, here are some examples:**
-- A map of error codes and their descriptions
-- A map of zip codes and cities
-- A map of managers and their employees. Each manager (**key**), is associated with a list of employees (**value**)
-- A map of classes and students. Each class (**key**), is associated with a list of students (**value**)
+**Pe baza caracteristicilor Hărților, iată câteva exemple:**
+- O hartă a codurilor de eroare și descrierile acestora
+- O hartă a codurilor poștale și a orașelor
+- O hartă a managerilor și angajaților. Fiecare manager (**cheie**) este asociat cu o listă de angajați (**valoare**) pe care o gestionează
+- O hartă a claselor și a studenților. Fiecare clasă (**cheie**) este asociată cu o listă de studenți (**valoare**)
 
- 
+
 [/slide]
+
 
 [slide hideTitle]
 # HashMap
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-19-20-HashmapPut-HashMap-Remove-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The `HashMap<Key, Value>` is implemented as a **Hash Table** and there is **no ordering on the key-value pairs**.
+`HashMap<Cheie, Valoare>` este implementat ca **Hash Tablă** și nu există **nicio comandă pentru chei sau valori**.
 
-It implements all of the **Map** operations and **allows null values** and **one null key**. 
+Implementează toate operațiunile **Maps** și **permite valori nule** și **o cheie nulă**.
 
-Consider using a **HashMap** when **order does not matter and nulls are acceptable**.
+Luați în considerare utilizarea unui **HashMap** atunci când **comanda nu contează și nulitățile sunt acceptabile**.
 
-- Initialization:
-
+- Inițializarea:
 ```java
 Map<String, Integer> hashMap = new HashMap<>();
 ```
 
-- Adding elements:
+- Adăugarea de elemente:
+
 ```java live
 Map<String, String> hashMap = new HashMap<>();
 
@@ -86,8 +89,7 @@ hashMap.put("Dacia", "Duster");
 hashMap.forEach((k, v) -> System.out.println(k + " - " + v));
 ```
 
-
-- Removing elements:
+- Eliminarea elementelor:
 
 ```java live
 Map<String, String> hashMap = new HashMap<>();
@@ -101,25 +103,24 @@ hashMap.forEach((k, v) -> System.out.println(k + " - " + v));
 ```
 [/slide]
 
-
-
-
 [slide hideTitle]
-# TreeMap 
+# TreeMap
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-24-TreeMap-Put-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The `TreeMap <Key, Value>` is **sorted** according to the **natural ordering of its keys**.
+`TreeMap <Cheie, Valoare>` este **sortat** în funcție de **ordinea naturală a cheilor sale**.
 
-**TreeMaps** in Java **do not allow null keys**.
+**TreeMap** în Java **nu permite cheile nule**.
 
-It is better to use a **TreeMap** when you want a **Map, sorted by its keys** (e.g. **alphabetic** order or **numeric** order). 
+Este mai bine să utilizați un **TreeMap** când doriți **O Hartă își sortează perechile cheie-valoare după ordinea naturală a tastelor** (de exemplu, **ordine alfabetică** sau **ordine numerică**).
 
-- Initialization:
+- Inițializarea:
+
 ```java
 Map<String, Integer> treeMap = new TreeMap<>();
 ```
-- Adding Elements 
+- Adăugarea de elemente:
+
 ```java live
 Map<String, Integer> treeMap = new TreeMap<>();
 
@@ -133,21 +134,23 @@ treeMap.forEach((k, v) -> System.out.println(k + " - " + v));
 [/slide]
 
 [slide hideTitle]
-# LinkedHashMap 
+# LinkedHashMap
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-27-HashMap-LinkedHashMap-TreeMap-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `LinkedHashMap <Key, Value>` inherits the HashMap class but **maintains insertion order**. 
 
-**It keeps the Keys in order of addition.** 
+**Păstrează cheile în ordinea adăugării.**
 
-It is better to use a **LinkedHashMap** when you want **a Map with its key-value pairs are sorted by their insertion order.**
+Este mai bine să utilizați un **LinkedHashMap** când doriți **O Hartă cu perechile cheie-valoare sunt sortate după ordinea lor de inserare.**
 
-- Initialization:
+- Inițializarea:
+
 ```java
 Map<String, Integer> linkedHashMap = new LinkedHashMap<>();
 ```
-- Adding elements:
+
+- Adăugarea de elemente:
 ```java live
 Map<String, Integer> linkedHashMap = new LinkedHashMap<>();
 
@@ -159,21 +162,20 @@ linkedHashMap.put("Dacia", 10);
 linkedHashMap.forEach((k, v) -> System.out.println(k + " - " + v));
 ```
 
-
 [/slide]
 
 [slide hideTitle]
-# Built-in Methods
+# Metode Încorporate
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-18-Methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- `put(K key, V value)`: **adds the given items** in the map
+- `put(cheie K, valoare V)` - **adăugați elementele** (introduceți o intrare) în map.
 
-Only a **single "Key - Value" pair** for each Key can exist in the Map **at the same time**. 
+Doar o **pereche Cheie + Valoare** pentru fiecare cheie poate exista pe map **în același timp**.
 
-If `put()` is called more than once using the same Key, **the latest Value** passed to `put()` for that Key will **override** what is already stored in the Map for that Key. 
+Dacă `put()` este apelat de mai multe ori cu aceeași Cheie, **cea mai recentă Valoare** trecută la `put()` pentru cheia respectivă va **suprascrie** ceea ce este deja stocat în Hartă pentru cheia respectivă.
 
-**The latest Value replaces the existing Value** for the given Key.
+**Cea mai recentă valoare înlocuiește valoarea existentă** pentru cheia dată.
 
 ```java
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -181,7 +183,7 @@ airplanes.put("Boeing 737", 130);
 airplanes.put("Airbus A320", 150);
 ```
 
-- `putIfAbsent(K key, V value)` - inserts the given Value with the given Key if it is **not already inserted**
+- `putIfAbsent(K key, V value)` - introduceți Valoarea specificată cu Cheia specificată în Hartă numai dacă **nu există deja**
 
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -190,7 +192,8 @@ airplanes.putIfAbsent("Boeing 737", 100);
 System.out.println(airplanes.get("Boeing 737"));
 ```
 
-- `get(K key)` - **accesses a Value** using its Key and **returns the Value** object
+- `get(K key)` - **accesați o Valoare** pe Hartă folosind Cheia sa și **schimbați obiectul valoare**
+- 
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
 airplanes.put("Boeing 737", 130);
@@ -198,7 +201,7 @@ int peopleCount = airplanes.get("Boeing 737");
 System.out.println(peopleCount);
 ```
 
-- `remove(K key)` - **deletes** an item (entry) **using its Key**
+- `remove(K key)` - **ștergeți** un articol (intrare) **folosind Cheia acestuia**
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
 airplanes.put("Boeing 737", 130);
@@ -206,7 +209,7 @@ airplanes.remove("Boeing 737");
 System.out.println(airplanes.get("Boeing 737"));
 ```
 
-- `clear()` - **removes** all items (entries) in the map.
+- `clear()` - eliminați toate articolele (intrările) din hartă, resetați Marta
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
 airplanes.put("Boeing 737", 130);
@@ -216,7 +219,7 @@ System.out.println(airplanes.get("Boeing 737"));
 System.out.println(airplanes.get("Airbus A320"));
 ```
 
-- `size()` - returns the **number of items (entries)** in the Map
+- `size()` - returnează **numărul de articole (intrări)** în hartă
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
 airplanes.put("Boeing 737", 130);
@@ -224,7 +227,7 @@ airplanes.put("Airbus A320", 150);
 System.out.println(airplanes.size());
 ```
 
-- `containsKey(K key)` - check **if there is such Key object** in the Map and if there is returns `true`, else returns `false`
+- `containsKey(K key)` - verifică **dacă există un astfel de obiect Cheie** în Hartă și dacă există schimbare in `adevarat`, altfel se schimbă in `fals`
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
 airplanes.put("Airbus A320", 150);
@@ -233,7 +236,7 @@ if (airplanes.containsKey("Airbus A320")) {
 }
 ```
 
-- `containsValue(V value)` - checks **if there is such Value object** in the Map and if there is returns `true`, else returns `false`
+- `containsValue(V value)` - verifică **dacă există un astfel de obiect Valoare** pe Hartă și dacă există schimbare in `adevarat`, altfel se schimbă in` fals`
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
 airplanes.put("Airbus A320", 150);
@@ -241,7 +244,7 @@ System.out.println(airplanes.containsValue(150));
 System.out.println(airplanes.containsValue(100));
 ```
 
-- `isEmpty()` - returns `true` if the Map is **empty** and `false` if it contains **at least one Key**
+- `isEmpty()` - se schimbă in `adevarat` dacă Harta este **goală** și`fals` dacă conține **cel puțin o Cheie**
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
 System.out.println(airplanes.isEmpty());
@@ -257,20 +260,19 @@ System.out.println(airplanes.isEmpty());
 
 
 [slide hideTitle]
-# Iterating Over a Map
+# Iterare prin Maps
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-21-Looping-Through-Maps-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Iterating through objects of type `Map.Entry <K, V>`. 
+Iterarea prin obiecte de tip `Map.Entry <K, V>`. 
 
-**Cannot modify** the collection(read-only).
+**Nu se poate modifica** colecția (numai în citire).
 
-There are several ways to iterate over a Map.
+Există mai multe moduri de a itera Cheile stocate pe o Hartă.
 
-- Iterating through the items of a map using a **for-each** loop
+- Iterarea prin elementele unei hărți folosind o buclă **pentru-fiecare**
 
-- `keySet()` - returns the keys as an **array**
-
+- `keySet()` - returnează cheile ca o **matrice**
 
 ```java live
 Map<String, Integer> cars = new LinkedHashMap<>();
@@ -285,7 +287,7 @@ for (String car : cars.keySet()) {
 }
 ```
 
-- `values()` - returns the values as an **array**
+- `values()` - returnează valoare ca o **matrice**
 
 ```java live
 Map<String, Integer> cars = new LinkedHashMap<>();
@@ -300,9 +302,9 @@ for (Integer number : cars.values()) {
 }
 ```
 
-- Iterating through the items of a map using the built-in method `entrySet()`
-  - `entry.getKey()` - returns the key from the Entry
-  - `entry.getValue()` - returns the value from the Entry
+- Iterarea prin elementele unei hărți utilizând metoda încorporată `entrySet()`
+  - `entry.getKey()` - returnează cheia din Entry
+  - `entry.getValue()` - returnează cheia din Entry
 
 ```java live
 Map<String, Integer> cars = new LinkedHashMap<>();
@@ -316,7 +318,7 @@ for (Map.Entry<String, Integer> entry : cars.entrySet()) {
     System.out.printf("%s -> %d%n", entry.getKey(), entry.getValue());
 }
 ```
-- Iterating through the Map using the built-in method `forEach()`
+- Iterarea prin Martă utilizând metoda încorporată `forEach()`
 
 ```java live
 Map<String, Integer> cars = new TreeMap<>();
@@ -333,9 +335,9 @@ cars.forEach((key, value) -> System.out.println(key + " - " + value));
 
 [slide hideTitle]
 
-# Sorting a Map
+# Sortarea Maps
 
-- Sorting according to Keys in ascending order
+- Sortarea în funcție de Chei în ordine crescătoare
 
 ```java live
 import java.util.*;
@@ -392,7 +394,7 @@ cars.entrySet()
 
 ```
 
-- Sorting Map according to Values in ascending order if there are equal Values then sorting by the Keys
+- Sortarea Hărții în funcție de Valori în ordine crescătoare, dacă există Valori egale, apoi sortarea după Chei
 
 ```java live
 Map<String, Integer> cars = new HashMap<>();
@@ -421,12 +423,10 @@ cars.entrySet()
 
 ```
 
-
-
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Count Real Numbers
+# Problemă cu Soluția: Count Real Numbers
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-22-23-Problem-and-solution-Count-Numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -443,17 +443,17 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-Create a program that **counts** the occurrences of **real numbers**.
+## Descriere
+Scrieți un program care **contează pe** apariția **numerelor reale**.
 
-The input is a **single line with real numbers, separated by spaces**.
+Intrarea este o **linie simplă cu numere reale separate prin spații**.
 
-Print the numbers **in the order of appearance**.
+Imprimați numerele **în ordinea apariției**.
 
-All numbers must be formatted to the **first digit after the decimal point**. 
+Toate numerele trebuie să fie formatate la **o cifră după punctul zecimal**.
 
-## Examples
-| **Input** | **Output** |
+## Exemple
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | \-2.5 4 3 \-2.5 \-5.5 4 3 3 \-2.5 3 | \-2.5 \-\> 3 |
 |  | 4.0 \-\> 2 |
@@ -461,7 +461,7 @@ All numbers must be formatted to the **first digit after the decimal point**.
 |  | \-5.5 \-\> 1 |
 |  |  |
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 2.3 4.5 4.5 5.5 5.5 2.3 3.0 3.0 4.5 4.5 3.0 3.0 4.0 3.0 5.5 3.0 2.3 5.5 4.5 3.0 | 2.3 \-\> 3 |
 |  | 4.5 \-\> 5 |
@@ -557,9 +557,8 @@ All numbers must be formatted to the **first digit after the decimal point**.
 [/slide]
 
 
-
 [slide hideTitle]
-# Problem with Solution: Academy Graduation
+# Problemă cu Soluția: Academy Graduation
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-25-26-Problem-and-solution-Academy-Graduation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -576,16 +575,16 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-Create a program that:
-- Reads from console **number of students**
-- Reads a **pair of rows**
-      - the first line is the **name of the student**
-      - the second-line represents the grades for the courses they attended
-- Print to the console: `{name} graduated with {averageScore}`
+## Descriere
+Scrieți un program care:
+- Citește de pe consolă **numărul de studenți** pentru o pistă
+- Citește pe **pereche de rânduri**:
+       - Prima linie este **numele studentului**
+       - A doua linie este **scorul său** pentru un număr diferit de cursuri
+- Imprimarea pe consolă `{name} graduated with {averageScore}`
 
-## Examples
-| **Input** | **Output** |
+## Exemple
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 3 | George graduated with 4.375 |
 | George | Maria graduated with 5.125 |
@@ -595,7 +594,7 @@ Create a program that:
 | Peter |  |
 | 6 4.5 |  |
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 5 | Alice graduated with 4.145 |
 | George | George graduated with 4.351249999999999 |
@@ -610,12 +609,10 @@ Create a program that:
 | 4.75 4.92 3.78 4.79 4.82 4.75 2.81 2.13 |  |
 
 
-## Hints
-- Think about the **proper types** of the map
-- The **values** can be an **array**
-- A **nested loop** and **another variable** might be needed for **the average score**
-
- 
+## Sugestii
+- Gândiți-vă la **tipul corect** de hartă
+- **Valoarea** poate fi **matrice**
+- **Bucla imbricată** și încă o **variabilă** vor fi necesare pentru scor mediu
 
 [/task-description]
 [code-io /]

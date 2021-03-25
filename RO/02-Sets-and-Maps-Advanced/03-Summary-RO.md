@@ -1,15 +1,15 @@
 [slide hideTitle]
-# Summary
+# Rezumat
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-28-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In this lesson you learned:
+# În această lecție ați învățat:
 
-- What Sets in Java are
-    - unordered collection of objects
-    - duplicate elements are not allowed
-    - offers very fast performance
-- Types of Sets
+- Ce sunt Seturile în Java?
+     - colecție neordonată de obiecte
+     - nu sunt permise elemente duplicate
+     - oferă performanțe foarte rapide
+- Tipuri de Sets
     - `HashSet<E>`
     ```java
     Set<String> hash = new HashSet<String>();
@@ -22,11 +22,12 @@
     ```java
     Set<String> linkedHashSet = new LinkedHashSet<>();
     ```
-- Associative Arrays - Maps
-    - hold a set of pairs `<key, value>`
-    - contains unique keys
-  
-- Types of Maps
+
+- Matricele Asociative - Maps
+     - țineți un set de perechi `<cheie, valoare>`
+     - conține chei unice
+
+- Tipuri de Maps
     - `HashMap<K, V>`
     ```java
     Map<String, Integer> hashMap = new HashMap<>();
@@ -39,8 +40,8 @@
     ```java
     Map<String, Integer> linkedHashMap = new LinkedHashMap<>();
     ```
-
-## In the next lesson, you will learn:
+    
+# În lecția următoare, veți învăța:
 
 - What Exceptions are
     - the `Exception` Class

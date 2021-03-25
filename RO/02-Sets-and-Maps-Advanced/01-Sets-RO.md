@@ -1,11 +1,11 @@
 # Sets
 
 [slide hideTitle]
-# What are Sets in Java?
+# Ce sunt Sets în Java?
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-3-4-Sets-In-Java-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The Java **Collection Framework** contains numerous **interfaces**, one of which is the **Set** interface.
+Java **Cadru de Colectare** conține numeroase interfețe, dintre care una este **Set** Interfață.
 
 It is modeled after the mathematical set abstraction.
 
@@ -17,26 +17,26 @@ The interface's job is to **specify the existence of certain methods**, with a p
 
 **Interfaces** are not in the **scope of this course**, we will learn more about them in the Java OOP course.
 
-**There are three different types of Sets:**
+**Există trei tipuri diferite de seturi:**
 - `HashSet<E>`
 - `TreeSet<E>`
 - `LinkedHashSet<E>`
 
-**The main features of the Sets are:**
-- Duplicate elements are not allowed
-- Elements are not stored in order
-- Offers very fast performance
-- Can contain only one single null value at most
-- Unlike Lists and Arrays, Sets do **NOT** support indexing or positioning of their elements
+**Principalele caracteristici ale seturilor sunt:**
+- Nu sunt permise elemente duplicate.
+- Elementele nu sunt stocate în ordine.
+- Oferă performanțe foarte rapide.
+- Setul poate avea **cel mult o singură valoare nulă**.
+- Spre deosebire de Listă și matrici, Setul **NU** acceptă indexuri sau poziții ale elementelor sale.
 
-**Based on the above specifics of the Sets, it is better to use them when:**
-- You want to store unique elements with no duplicates
-- You want faster performance and do not care about the exact order in which the elements are stored
+**Pe baza caracteristicilor seturilor, este mai bine să le utilizați atunci când:**
+- Doriți să stocați elemente distinct fără duplicare sau elemente unice.
+- Vrei performanță rapidă și nu îți pasă de ordinea elementelor.
 
-**For example**, you can use a Set to store:
-- **Unique integer numbers**
-- **Unique Cards in a card game**
-- **Numbers in random order**, etc
+**De exemplu**, puteți utiliza un set:
+- pentru a stoca **numere întregi unice**
+- pentru a stoca **cărți la întâmplare într-un joc de cărți**
+- pentru a stoca **numere în ordine aleatorie** etc
 
 [/slide]
 
@@ -46,20 +46,20 @@ The interface's job is to **specify the existence of certain methods**, with a p
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-7-Hashset-Add-Remove-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The **HashSet** class implements the **Set** interface, backed by a **Hash Table**.
+Clasa **HashSet** implementează interfața **Set**, susținută de un **Hash Table**.
 
-It makes **no guarantees** about **the sequence of the elements** when you iterate over them.
+**Nu oferă garanții** despre **succesiunea elementelor** atunci când le iterați.
 
-The **HashSet** class offers **constant** time performance for the basic operations - `add()`, `remove()`, `contains()` and `size()`.
+Clasa **HashSet** oferă **performanță** constantă în timp pentru operațiunile de bază - `add()`, `remove()`, `contains()` și `size()`.
 
-- Initialization:
+- Inițializarea:
 ```java
 Set<String> hash = new HashSet<String>();
 ```
 
-- `add()` - adds an element into the `HashSet`, Returns `true` if the element is successfully added
+- `add()` - adaugă un element în `HashSet`, returnează `true` dacă elementul a fost adăugat cu succes
 
-If the set already contains the element, it remains unchanged and returns `false`.
+Dacă setul conține deja elementul, acesta rămâne neschimbat și se returnează `false`.
 
 ```java live
 Set<String> hash = new HashSet<>();
@@ -73,7 +73,7 @@ System.out.println(hash);
 System.out.println(hash.add("Alice"));
 ```
 
-- `remove()` - searches for the specified element and returns `true` if the specified element exists in the `HashSet`. Otherwise, it returns `false`
+- `remove()` - caută elemental specificat și returnează `true` dacă elementul specificat există în  `HashSet`. Altfel, returnează `false`
 
 ```java live
 Set<String> hash = new HashSet<>();
@@ -90,7 +90,7 @@ System.out.println(hash.remove("Ana"));
 ```
 
 
-- `contains()` - returns `true` if the element exists in the `HashSet`, otherwise, it returns `false`
+- `contains()` - returnează `true` dacă elementul există în `HashSet`, iar în caz contrar, returnează `false` 
 
 ```java live
 Set<String> hash = new HashSet<>();
@@ -103,7 +103,7 @@ System.out.println(hash.contains("Alice"));
 System.out.println(hash.contains("Ana"));
 ```
 
-- `size()` - returns the number of elements contained in the `HashSet`:
+- `size()` - returnează număril de elemente care sunt stocate în `HashSet`:
 
 ```java live
 Set<String> hash = new HashSet<>();
@@ -116,7 +116,6 @@ System.out.println(hash.size());
 
 ```
 
-
 [/slide]
 
 [slide hideTitle]
@@ -124,20 +123,20 @@ System.out.println(hash.size());
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-9-TreeSet-Add-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The elements are ordered using their **natural ordering**.
+Elementele sunt ordonate folosind **ordonarea lor naturală**.
 
-The `TreeSet` guarantees **log(n)** time cost for the basic operations - `add()`, `remove()` and `contains()`.
+TreeSet oferă costuri de timp **log(n)** garantate pentru operațiunile de bază - `add()`, `remove()` și `contains()`.
 
-**Null values** are **not accepted** by the `TreeSet`.
+**Valorile nule** nu sunt **acceptate** de `TreeSet`.
 
-- Initialization:
+- Inițializarea:
 ```java
 Set<String> tree = new TreeSet<>();
 ```
 
-- `add()` - adds the element to the `TreeSet` and returns `true` if the element is successfully added
+- `add()` - adaugă un element în `TreeSet`, returnează `true` dacă elementul a fost adăugat cu succes
 
-If the set already contains the element, the `TreeSet` remains unchanged and returns `false`.
+Dacă setul conține deja elementul, acesta rămâne neschimbat și se returnează `false`.
 
 ```java live
 Set<String> tree = new TreeSet<>();
@@ -149,8 +148,7 @@ tree.add("George");
 System.out.println(tree);
 ```
 
-
-- `remove()` - searches for the specified element and returns `true` if it exists in the `TreeSet`. Otherwise, it returns `false`
+- `remove()` - caută elemental specificat și returnează `true` dacă elementul specificat există în `TreeSet`. Altfel, returnează `false`
 
 ```java live
 Set<String> tree = new TreeSet<>();
@@ -184,19 +182,18 @@ System.out.println(tree.contains("Ana"));
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-10-LinkedHashSet-Add-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-A **LinkedHashSet** is an **ordered version of the HashSet** that maintains a doubly-linked List across all of its elements.
+Un **LinkedHashSet** este o **versiune ordonată a HashSet-lui** care menține o listă dublă legată între toate elementele.
 
-A **LinkedHashSet** provides a **constant** time performance for the basic operations - `add()`, `contains()`, and `remove()`.
+Un **LinkedHashSet** oferă **performanță** constantă de timp pentru operațiunile de bază - `add()`, `contains()` și `remove()`.
 
-A LinkedHashSet allows a maximum of **only one null element**.
+Un LinkedHashSet permite maxim **un element null**.
 
-- Initialization:
-
+- Inițializarea:
 ```java
 Set<String> linkedHashSet = new LinkedHashSet<>();
 ```
 
-- `add()` - adds the element to into the `LinkedHashSet`, and returns `true` if the element is successfully added
+- `add()` - adaugă un element în `LinkedHashSet`, returnează `true` dacă elementul a fost adăugat cu succes
 
 If the set already contains the element, the set remains unchanged and returns `false`.
 
@@ -214,7 +211,7 @@ System.out.println(linkedHashSet.add("Alice"));
 ```
 
 
-- `remove()` - searches for the specified element and returns `true` if the specified element exists in the `LinkedHashSet`, otherwise returns `false`
+-  `remove()` - caută elemental specificat și returnează `true` dacă elementul specificat există în  `LinkedHashSet`. Altfel, returnează `false`
 
 ```java live
 Set<String> linkedHashSet = new LinkedHashSet<>();
@@ -230,7 +227,7 @@ System.out.println(linkedHashSet);
 
 ```
 
-- `contains()` - returns `true` if the element exists in the `LinkedHashSet`, otherwise, it returns `false`
+-  `contains()` - returnează `true` dacă elementul există în `LinkedHashSet`, iar în caz contrar, returnează `false` 
 
 ```java live
 Set<String> linkedHashSet = new LinkedHashSet<>();
@@ -245,9 +242,8 @@ System.out.println(linkedHashSet.contains("Ana"));
 
 [/slide]
 
-
 [slide hideTitle]
-# Problem with Solution: Parking Lot
+# Problemă cu Soluția: Parking Lot
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-11-Problem-and-solution-Parking-Lot-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -264,23 +260,23 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-Create a program that:
- - Records a car number for every car that enters the parking lot
- - Removes the specific car number when the car goes out
+## Descriere
+Scrieți un program care:
+  - Înregistrează numărul mașinii pentru fiecare mașină care intră în parcare
+  - Elimină numărul mașinii când mașina se stinge
 
-## Input
-The input will be a string in the format [**direction, carNumber**].
+## Intrare
+Intrarea va fi șir în format [**direcție**, **numărNumărul de mașină**].
 
-The input lines end with the string `END`.
+Intrarea se termină cu șirul `END`.
 
-## Output
-Print the output with all of the car numbers which are in the parking lot.
+## Ieșire
+Imprimați rezultatul cu toate numerele de mașină care se află în parcare.
 
-If the parking lot is empty, print: `Parking Lot is Empty`.
+Dacă parcarea este goală, tipăriți: `Parking Lot is Empty`.
 
-# Examples
-| **Input** | **Output** |
+# Exemple
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | IN, CA2844AA | CA9999TT |
 | IN, CA1234TA | CA2844AA |
@@ -294,7 +290,7 @@ If the parking lot is empty, print: `Parking Lot is Empty`.
 | IN, CA2822UU |  |
 | END |  |
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | IN, CA2844AA | Parking Lot is Empty |
 | IN, CA1234TA |  |
@@ -447,7 +443,7 @@ CA2822UU
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: SoftUni Party
+# Problemă cu Soluția: SoftUni Party
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-12-13-Problem-and-Solution-Softuni-Party-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -464,29 +460,27 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-There is a party. Many guests are invited, and they are two types: **VIP** and **Regular**.
+## Descriere
+Există o petrecere în SoftUni. Sunt invitați mulți oaspeți și sunt de două tipuri: **VIP** și **Regular** (obișnuit).
 
-When a guest comes, you have to check **if he/she exists** in any of the **two reservation lists**.
+Când vine musafirul, trebuie să verificați **dacă acesta există** în oricare dintre cele **două liste de rezervare**.
 
-All **reservation numbers** consist of **8 characters**.
+Toate **numerele de rezervare** vor fi cu **8 caractere**.
 
-All VIP **reservation numbers** start with a **digit**.
+Toate **numerele** VIP încep cu **cifră**.
 
-## Input
+## Intrare
+- Până la comanda `PARTY`, veți primi invitații pentru oaspeți
+- Până la comanda `END`, veți primi o a doua listă cu invitați care vin de fapt la petrecere
+  
+## Ieșire
+- Pe prima linie tipăriți numărul invitaților care nu au venit la petrecere
+- Pe rândurile următoare imprimați toți invitații care nu au venit la petrecere (**VIP trebuie să fie primul**)
 
-- You will be getting guest invitations until the `PARTY` command is received
 
-- You will be getting input consisting of guest that actually came to the party until the `END` command is received
 
-## Output 
-
-- On the first line, print the number of guests who did not come to the party
-
-- On the next lines, print all of the reservation numbers of guests, who did not come to the party (**VIPs must be printed be first**)
-
-## Examples
-| **Input** | **Output** |
+## Exemple
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 7IK9Yo0h | 2 |
 | 9NoBUajQ | 7IK9Yo0h |
@@ -499,7 +493,7 @@ All VIP **reservation numbers** start with a **digit**.
 | SVQXQCbc |  |
 | END |  |
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | m8rfQBvl | 2 |
 | fc1oZCE0 | MDzcM9ZK |
@@ -743,9 +737,8 @@ xys2FYzn
 [/slide]
 
 
-
 [slide hideTitle]
-# Problem with Solution: Card Game
+# Problemă cu Soluția: Card Game
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-15-Solution-Card-Game-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -762,23 +755,23 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-Create a program that:
-  - Reads 20 numbers for both of the players, separated by a **single space**
-  - Every player **can only hold unique numbers**
-Each round, both players draw the top number from their decks.
+## Descriere
+Scrieți un program care:
+   - Citește 20 de numere pentru ambii jucători, separați cu **spațiu unic**
+   - Fiecare jucător poate **să dețină numai numere unice**
+La fiecare rundă, ambii jucători primesc numărul cel mai mare din propriul pachet.
 
-The player, with the bigger number, gets both numbers and adds them to the bottom of their own deck.
+Jucătorul cu numărul mai mare primește ambele numere și îl adaugă în partea de jos a propriei sale secvențe.
 
-The game ends after 50 rounds or if any player loses all of their numbers.
+Jocul se termină după 50 de runde sau dacă vreun jucător își pierde toate numerele.
 
-## Examples
-| **Input** | **Output** |
+## Exemple
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 26 58 16 92 44 65 65 77 57 23 71 57 7 52 85 44 32 70 38 23 | Second player wins! |
 | 43 95 33 51 62 93 57 55 0 31 32 95 68 34 30 51 37 32 11 97 |  |
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 74 78 82 42 19 39 29 69 20 42 31 77 57 36 76 26 4 9 83 42 | First player wins! |
 | 15 43 80 71 22 88 78 35 28 30 46 41 76 51 76 18 14 52 47 38 |  |
@@ -852,4 +845,3 @@ Second player wins!
 [/tests]
 [/code-task]
 [/slide]
-

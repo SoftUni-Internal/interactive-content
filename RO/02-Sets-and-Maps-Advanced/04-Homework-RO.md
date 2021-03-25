@@ -1,7 +1,7 @@
-# Homework
+# Temă
 
 [slide hideTitle]
-# Problem: Unique Usernames
+# Problema: Unique Usernames
 [code-task title="Unique Usernames" taskId="java-advanced-sets-and-maps-advanced-Unique-Usernames" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -15,13 +15,13 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-Create a program that reads a sequence of usernames and keeps a collection with only the unique ones.
+## Descriere
+Scrieți un program simplu care citește din consolă o secvență de nume de utilizatori și păstrează o colecție cu numele unice.
 
-Print the unique usernames on the console in order of insertion. 
+Printați colecția în consolă, în ordinea inserării.
 
-## Examples
-| **Input** | **Output** |
+## Exemple
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | 6 | Hello |
 | Hello | World |
@@ -31,7 +31,7 @@ Print the unique usernames on the console in order of insertion.
 | Hello |  |
 | Greetings |  |
 
-| **Input** | **Output** |
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | 10 | Peter |
 | Peter | Maria |
@@ -399,7 +399,7 @@ c&&c&che
 
 
 [slide hideTitle]
-# Problem: Sets of Elements
+# Problema: Sets of Elements
 [code-task title="Sets of Elements" taskId="java-advanced-sets-and-maps-advanced-Sets-of-Elements" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -413,21 +413,21 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-On the first line, you will be given **the length of two sets n and m**.
+## Descriere
+Pe prima linie, se dă **dimensiunea celor 2 seturi, n și m**.
 
-On the **next n + m** lines, there are **n numbers that are in the first set** and **m numbers that are in the second**.
+Pe **următoarele n + m** linii, există **n numere care se află în primul set** și **m numere aflate în cel de-al doilea**.
 
-Find all **non-repeating elements** that appear in **both** of them, and print them in **the same order** to the console:
+Găsiți toate **elementele care nu se repetă** și care apar în **ambele seturi** și printați-le în **aceeași ordine** în consolă:
 
-Set with length `n = 4:{1, 3, 5, 7}`
+Setul de dimensiune `n = 4:{1, 3, 5, 7}`
 
-Set with length `m = 3:{3, 4, 5}`
+Setul de dimensiune `m = 3:{3, 4, 5}`
 
-Set that contains all repeating elements \-\> `{3, 5}`
+Setul care conține toate elementele care se repetă \-\> `{3, 5}`
 
-## Examples
-| **Input** | **Output** |
+## Exemple
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | 4 3 | 3 5 |
 | 1 |  |
@@ -438,7 +438,7 @@ Set that contains all repeating elements \-\> `{3, 5}`
 | 4 |  |
 | 5 |  |
 
-| **Input** | **Output** |
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | 2 2 | 1 |
 | 1 |  |
@@ -626,7 +626,7 @@ Set that contains all repeating elements \-\> `{3, 5}`
 
 
 [slide hideTitle]
-# Problem: Periodic Table
+# Problema: Periodic Table
 [code-task title="Periodic Table" taskId="java-advanced-sets-and-maps-advanced-Periodic-Table" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -640,13 +640,13 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-You are given an **n** number of **chemical compounds**.
+## Descriere
+Se dau **n** simboluri de **compuși chimici**.
 
-You need to **keep track of all the chemical elements** used in the compounds. In the end, print all of the **unique ones in ascending order**.
+Trebuie să **luați în vedere toate elementele chimice** utilizate în compuși și, la final, să printați toate cele care sunt **unice, în ordine crescătoare**.
 
-## Examples
-| **Input** | **Output** |
+## Exemple
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | 4 | Ce Ee Mo O |
 | Ce O |  |
@@ -654,7 +654,7 @@ You need to **keep track of all the chemical elements** used in the compounds. I
 | Ee |  |
 | Mo |  |
 
-| **Input** | **Output** |
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | 3 | Ch Ge Mo Nb Ne O Tc |
 | Ge Ch O Ne |  |
@@ -754,7 +754,7 @@ As Ba Co Cs Kr Ni Sn W Y Zn
 
 
 [slide hideTitle]
-# Problem: Count Symbols
+# Problema: Count Symbols
 [code-task title="Count Symbols" taskId="java-advanced-sets-and-maps-advanced-Count-Symbols" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -768,13 +768,13 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-Create a program that reads some **text** and **counts the occurrences of each character** in it.
+## Descriere
+Scrieți un program care citește un **text** din consolă și **numără aparițiile fiecărui caracter** al său.
 
-Print the results in **alphabetical** (lexicographical) order, using the syntax: `{symbol}: {count} time/s`.
+Printați rezultatul în **ordine alfabetică** (ordine lexicografică), utilizând sintaxa: `{simbol}: {număr} time/s`.
 
-## Examples
-| **Input** | **Output** |
+## Exemple
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | SoftUni rocks |  : 1 time/s |
 |  | S: 1 time/s |
@@ -789,7 +789,7 @@ Print the results in **alphabetical** (lexicographical) order, using the syntax:
 |  | s: 1 time/s |
 |  | t: 1 time/s |
 
-| **Input** | **Output** |
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | Did you know Math.Round rounds to the nearest even integer? |  : 9 time/s |
 |  | .: 1 time/s |
@@ -965,7 +965,7 @@ y: 3 time/s
 
 
 [slide hideTitle]
-# Problem: Phonebook
+# Problema: Phonebook
 [code-task title="Phonebook" taskId="java-advanced-sets-and-maps-advanced-Phonebook" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -979,21 +979,21 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-Create a program that receives some info from the console about **people** and their **phone numbers**.
+## Descriere
+Scrieți un program care primește informații cu privire la **persoane** și **numerele lor de telefon** din consolă.
 
-You are free to choose how the data is entered. Each **entry** should have **one name** and **one number** (both of them strings). 
+Rămâne la latitudinea voastră să alegeți modul în care sunt introduse datele. Fiecare **înregistrare** trebuie să aibă doar **un nume** și **un număr de telefon** (ambele informații vor fi de tip string). 
 
-If you receive a name that **already exists** in the phonebook, update its number.
+Dacă se introduce un nume care **există deja** în cartea de telefon, doar actualizați numărul de telefon.
 
-After filling the phonebook, upon receiving the **command** "**search**", your program should be able to perform a search in the contact by name and print the details in the format `{name} -> {number}`. 
+După ce ați completat cartea de telefon, la primirea **comenzii** "**search**", programul vostru trebuie să realizeze o căutare de contacte pe baza numelui și să printeze detaliile în formatul `{nume} -> {număr}`. 
 
-In case the contact isn't found, print "**Contact** \{**name**\} **does not exist.**"
+În cazul în care contactul nu e găsit, printați "**Contact** \{**name**\} **does not exist.**"
 
-The program should end when receiving the "**stop**" command.
+Programul trebuie să se termine odată cu primirea **comenzii** "**stop**".
 
-## Examples
-| **Input** | **Output** |
+## Exemple
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | John-00359888080808 | Contact Maria does not exist. |
 | search | John \-\> 00359888080808 |
@@ -1001,7 +1001,7 @@ The program should end when receiving the "**stop**" command.
 | John |  |
 | stop |  |
 
-| **Input** | **Output** |
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | John-00359888001122 | Samuel \-\> 0047123123123 |
 | Peter-0040333111000 | Contact samuel does not exist. |
@@ -1146,8 +1146,9 @@ Oliver -\> 004455667788
 [/slide]
 
 
+
 [slide hideTitle]
-# Problem: A Miner Task
+# Problema: A Miner Task
 [code-task title="A Miner Task" taskId="java-advanced-sets-and-maps-advanced-A-Miner-Task" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1161,22 +1162,21 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-You are given a sequence of strings, each on a **new line**.
+## Descriere
+Se dă o secvență de stringuri, fiecare pe o **linie nouă**.
 
-Every **odd** line represents a **resource** (e.g.
-**Gold**, **Silver**, **Copper**, and so on), and every **even - a quantity**.
+Fiecare linie **impară** din consolă reprezintă o **resursă** (e.g. **Gold** (Aur), **Silver** (Argint), **Copper** (Bronz) și așa mai departe) și fiecare rând **par - cantitatea**.
 
-Your task is to **collect** the resources and to print them each on a **new line**.
+Cerința voastră este să **colectați** resursele și să le printați fiecare pe o **linie nouă**.
 
-**Print the resources and their quantities in the format:**
+**Printați resursele și cantitățile acestora după formatul:**
 
-`{resource} –> {quantity}`
+`{resursă} –> {cantitate}`
 
-The quantity inputs will be in **range** \[1 ... 2 000 000 000\]
+Cantitățile date sunt numere din **intervalul** \[1 ... 2 000 000 000\]
 
-## Examples
-| **Input** | **Output** |
+## Exemple
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | Gold | Gold \-\> 155 |
 | 155 | Silver \-\> 10 |
@@ -1411,7 +1411,7 @@ Cooper -\> 2000000000
 
 
 [slide hideTitle]
-# Problem: Fix Emails
+# Problema: Fix Emails
 [code-task title="Fix Emails" taskId="java-advanced-sets-and-maps-advanced-Fix-Emails" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1425,19 +1425,19 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-You are given a sequence of strings, each on a new line, until you receive the "**stop**" command.
+## Descriere
+Se dă o secvență de stringuri, fiecare pe linie nouă, până la primirea comenzii "**stop**".
 
-The first string is a **name** of a person.
+Primul string este **numele** unei persoane.
 
-On the second line, you receive his **email**.
+Pe a doua linie, se dă **email-ul** persoanei respective.
 
-Your task is to **collect** their names and emails and **remove** emails whose domain ends with "US", "UK" or "com" (case insensitive).
+Cerința voastră este să **colectați** numele și emailurile persoanelor și **să ștergeți** emailurile ale căror domenii se termină cu "us", "uk" sau "com" (fără a se ține cont de litere mari sau mici).
 
-Print in the following format: `{name} -> {email}`
+Printați după următorul format: `{nume} –> {email}`
 
-## Examples
-| **Input** | **Output** |
+## Exemple
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | John | John \-\> johnDoe@softuni.org |
 | johnDoe@softuni.org | Peter Smith \-\> smith.peter@softuni.org |
@@ -1447,7 +1447,7 @@ Print in the following format: `{name} -> {email}`
 | baker@gmail.com |  |
 | stop |  |
 
-| **Input** | **Output** |
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | Peter Adamas | Duke Jenkins \-\> jenkins.duke@softuni.org |
 | peter_adams@gmail.com |  |
@@ -1568,7 +1568,7 @@ Cindy -\> cindy@gmail.de
 
 
 [slide hideTitle]
-# Problem: Hands Of Cards
+# Problema: Hands Of Cards
 [code-task title="Hands Of Cards" taskId="java-advanced-sets-and-maps-advanced-Hands-Of-Cards" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1582,39 +1582,35 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-You are given a sequence of people.
+## Descriere
+Se dă o secvență de nume de persoane, iar pentru fiecare persoană se specifică ce **cărți** se scot din pachet.
 
-Each person draws cards from their deck.
+Datele de intrare vor apărea pe linii **separate** după următorul **format**:
 
-The input will be in **separate** lines in the **format**:
+"\{**numePersoană**\}: \{**PT, PT, PT,… PT**\}"
 
-"\{**personName**\}: \{**PT, PT, PT,… PT**\}"
+Unde P (2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A) este puterea cărții, iar T (S, H, D, C) este tipul. Datele de intrare se termină odată cu tragerea unui **"JOKER"** din pachet. 
 
-Where P (2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A) is the power of the card, and T (S, H, D, C) is the type. The input ends when a "**JOKER**" is drawn. 
+Numele poate conține orice simbol ASCII, cu excepția "**:**" 
 
-The name can contain any ASCII symbol except for: "**:**"
+Datele de intrare vor fi mereu valide și vor respecta mereu formatul descris, deci nu trebuie să mai verificați asta.
 
-The input will always be valid and in the format described.
+O persoană **nu poate avea mai mult de o carte** de aceeași putere și același tip, dacă aceasta trage o astfel de carte, aceasta se **anulează**. 
 
-A single person **can not have more than one** card with the same power and type. 
+Persoanele joacă cu **multiple pachete de cărți**. 
 
-If he draws such a card, he **discards** it. 
+Fiecare carte are o valoare care e **calculată** prin puterea multiplicată cu tipul. 
 
-The people are playing with **multiple decks**. 
+Puterile cărților **de la 2 la 10** au aceeași valoare și **cele de la J la A** valorează **de la 11 la 14**. 
 
-Each card has a value that is **calculated** by the power multiplied by the type. 
+Tipurile sunt mapate multiplicatorilor în felul următor (`S -> 4`, `H-> 3`, `D -> 2`, `C -> 1`).
 
-Powers from **2 to 10** have the same value and **J to A** are **11 to 14**. 
+În final, printați **valoarea totală a cărților pe care le are în mână pentru fiecare jucător**, după formatul:
 
-Types are mapped to multipliers in the the following format (`S -> 4`, `H-> 3`, `D -> 2`, `C -> 1`).
+`{numePersoană}: {valoare}`
 
-In the end, print the **total value each player** has in his hand in the format:
-
-`{personName}: {value}`
-
-## Examples
-| **Input** | **Output** |
+## Exemple
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | Peter: 2C, 4H, 9H, AS, QS | Peter: 167 |
 | Jenny: 3H, 10S, JC, KD, 5S, 10S | Jenny: 175 |
@@ -1685,7 +1681,7 @@ JOKER
 
 
 [slide hideTitle]
-# Problem: User Logs
+# Problema: User Logs
 [code-task title="User Logs" taskId="java-advanced-sets-and-maps-advanced-User-Logs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1699,66 +1695,66 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+## Descriere
 
-You are given input in the format:
+Datele de intrare se dau după formatul următor:
 
-`IP=(IP.Address) message=(A&sample&message) user=(username)`
+`IP=(IP.Adresa) mesaj=(Un&exemplu&mesaj) utilizator=(numeUtilizator)`
 
-Your task is to **parse** the **IP** and the **username** from the input and for **every user**, you have to display **every IP** from which the corresponding user has sent a message and the **count of the messages** sent with the corresponding IP. 
+Cerința voastră este să **parsați** adresa **IP** și **numele de utilizator** date drept date de intrare pentru **fiecare utilizator**, trebuie să afișați **fiecare IP** din care utilizatorul a trimis un anumit mesaj, precum și **numărul de mesaje** trimise cu IP-ul respectiv. 
 
-In the output, the usernames must be **sorted alphabetically** while their IP addresses should be displayed in the **order of their first appearance.** 
+Ca date de ieșire, numele de utilizator trebuie să fie **sortate în ordine alfabetică** în timp ce adresele lor IP se afișează în **ordinea primei lor apariții.** 
 
-The output should be in the following format:
+Datele de ieșire trebuie să fie după formatul următor:
 
 ```
-username:
-IP => count, IP => count
+numeUtilizator:
+IP => număr, IP => număr
 ```
 
-For example, the following input - 
+De exemplu, pentru următoarele date de intrare - 
 `IP=192.23.30.40 message='Hello&derps.' user=destroyer`
-You have to get the username **destroyer** and the IP **192.23.30.40** and display it in the following format:
+trebuie să obțineți numele de utilizator **destroyer** și IP-ul **192.23.30.40** și să le afișați în următorul mod:
 
 ```
 destroyer:
 192.23.30.40 => 1.
 ```
 
-The username destroyer has sent a message from IP 192.23.30.40 once.
+Utilizatorul cu numele destroyer a trimis un mesaj de la adresa IP 192.23.30.40 o singură dată.
 
-Check the **examples** below. 
+Verificați **exemplele** de mai jos. 
 
-They will further clarify the assignment.
+Acestea vor clarifica și mai mult ceea ce vi se cere.
 
-## Input
+## Date de intrare
 
-The input comes from the console as a **varying number** of lines. 
+Datele de intrare provin din consolă ca **număr variat** de linii. 
 
-You have to parse every command until the `end` command. 
+Trebuie să parsați fiecare comandă până la întâlnirea comenzii `end`. 
 
-The input will be in the format displayed above, there is no need to check it explicitly.
+Datele de intrare vor fi după formatul de mai sus, nu trebuie să le mai validați în mod explicit.
 
-## Output
+## Date de ieșire
 
-For every user found, you have to display each log in the format:
+Pentru fiecare utilizator găsit, trebuie să afișați fiecare logare după următorul format:
 
 ```
-username:
-IP => count, IP => count
+numeUtilizator:
+IP => număr, IP => număr
 ```
 
-The IP addresses must be split with a comma, and each line of IP addresses must end with a dot.
+Adresele IP trebuie să fie separate prin virgulă, iar fiecare linie a adreselor IP trebuie să se termine cu punct.
 
-## Constraints
+## Constrângeri
 
-- The number of commands will be in range \[1 ... 50\]
-- The IP addresses will be in the format of either **IPv4** or **IPv6**
-- The messages will be in the format: **This&is&a&message**
-- The username will be a string with length in range \[3 ... 50\]
+- Numărul de comenzi se află în intervalul \[1 ... 50\]
+- Adresele IP vor fi în formatul **IPv4** sau **IPv6**
+- Mesajele vor respecta următorul format: **Acesta&este&un&mesaj**
+- Numele de utilizator este un string cu lungimea aflată în intervalul \[3 ... 50\]
 
-## Examples
-| **Input** | **Output** |
+## Exemple
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | `IP=192.23.30.40 message='Hello&derps.' user=destroyer` | destroyer:  |
 | `IP=192.23.30.41 message='Hello&yall.' user=destroyer` | 192.23.30.40 \=\> 2, 192.23.30.41 \=\> 1, 192.23.30.42 \=\> 1. |
@@ -1766,7 +1762,7 @@ The IP addresses must be split with a comma, and each line of IP addresses must 
 | `IP=192.23.30.42 message='Hello&People.' user=destroyer` |  |
 | end |  |
 
-| **Input** | **Output** |
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | `IP=FE80:0000:0000:0000:0202:B3FF:FE1E:8329 message='Hey&son' user=mother` | child0:  |
 | `IP=192.23.33.40 message='Hi&mom!' user=child0 | 192.23.33.40 => 1.` |
@@ -2156,7 +2152,7 @@ zzzzzzzzzzz:
 
 
 [slide hideTitle]
-# Problem: Population Counter
+# Problema: Population Counter
 [code-task title="Population Counter" taskId="java-advanced-sets-and-maps-advanced-Population-Counter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -2170,44 +2166,48 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-On each input line, you will be given the data in the format: "**city**\|**country**\|**population**". 
+## Descriere
+Pe fiecare linie, se dau date ce respectă următorul format: "**city**\|**country**\|**population**". 
 
-There will be **no redundant whitespaces anywhere** in the input. 
+**Nu vor exista spații nefolositoare** nicăieri în cadrul datelor de intrare. 
 
-Aggregate the data **by country and by city** and print it to the console. 
+Agregați datele **pe baza țării și a orașului** și printați-le în consolă. 
 
-**For each country**, print its **total population** and on separate lines the data for each of its cities. 
+**Pentru fiecare țară**, printați **populația totală**, iar pe linii separate se dau datele pentru fiecare din orașele țării respective. 
 
-**Countries** should be ordered by **their total population in descending order** and within each country, the **cities** should be ordered by **the same criterion**. 
+**Țările** trebuie să fie ordonate pe baza **populației lor totale, în ordine descrescătoare**, iar în fiecare țară **orașele** trebuie ordonate pe baza **aceluiași criteriu**. 
 
-If two countries/cities have the same population, keep them in the **order** in which they were **entered**. 
+Dacă 2 țări/orașe au aceeași populație, mențineți-le în **ordinea** în care acestea **au fost introduse de la tastatură**. 
 
+Verificați exemplele! 
 
-## Input
+Urmați cu strictețe **formatul datelor de ieșire**!
 
-- The data consist of a variable number of lines and ends when the "**report**" command is received
-- The input data will always be valid and in the format described. There is no need to check it explicitly
+## Date de intrare
 
-## Output
+- Datele de intrare trebuie să fie citite din consolă
+- Ele constau într-un număr variabil de linii și se termină cu comanda "**report**", la primirea acesteia
+- Datele de intrare vor fi mereu valide și vor respecta mereu formatul descris. Nu trebuie să le verificați în mod explicit
 
-- The output should be printed to the console
-- Print the aggregated data for each country and city in the format shown below
+## Date de ieșire
 
-## Constraints
+- Datele de ieșire trebuie să fie printate în consolă
+- Printați datele procesate pentru fiecare țară și oraș după formatul de mai jos
 
-- The name of the city, country, and the population count will be separated from each other by **a pipe** `|`
-- The **number of input lines** will be in range \[2 ... 50\]
-- A city-country pair will not be repeated
-- The **population count** of each city will be an integer in range \[0 ... 2 000 000 000\]
+## Constrângeri
 
-## Examples
-| **Input** | **Output** |
+- Numele orașului, al țării și populația vor fi separate una de cealaltă prin **simbolul** `|`
+- **Numărul de linii ce conțin date de intrare** se află în intervalul \[2 ... 50\]
+- Nu se va repeta nicio pereche oraș-țară
+- **Numărul populației** fiecărui oraș va fi un număr întreg din intervalul \[0 ... 2 000 000 000\]
+
+## Exemple
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | Bucharest\|Romania\|2000000 | Romania (total population: 2000000) |
 | report | \=\>Bucharest: 2000000 |
 
-| **Input** | **Output** |
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | Sofia\|Bulgaria\|1 | UK (total population: 4) |
 | Veliko Tarnovo\|Bulgaria\|2 | =>London: 4 |
@@ -2875,7 +2875,7 @@ United States (total population: 466762961)
 
 
 [slide hideTitle]
-# Problem: Logs Aggregator
+# Problema: Logs Aggregator
 [code-task title="Logs Aggregator" taskId="java-advanced-sets-and-maps-advanced-Logs-Aggregator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -2889,12 +2889,12 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-Create a program that aggregates the logs of data and print for each user the **total duration** of his sessions and a **list of unique IP addresses** in format 
+## Descriere
+Se dă o secvență de logări de acces, după următorul format: 
 
-`< IP > < user > < duration >`.
+`< IP > < utilizator > < durată >`.
 
-**For example:**
+**De exemplu:**
 
 - 168.0.11 peter 33
 - 10.17.33 alex 12
@@ -2904,51 +2904,53 @@ Create a program that aggregates the logs of data and print for each user th
 - 50.118.81 alex 46
 - 50.118.81 alex 4
 
-Write a program to aggregate the logs data and print **for each user** the **total duration** of his sessions and a **list of unique IP addresses** in format 
+Scrieți un program care procesează datele cu privire la logări și printează **pentru fiecare utilizator durata totală** a sesiunilor acestuia, precum și o **listă de adrese IP unice**, după formatul 
 
-`< user > < duration > [ < IP1 >, < IP2 >, ...]`. 
+`< utilizator > < durată > [ < IP1 >, < IP2 >, ...]`. 
 
-Order the **users alphabetically**. 
+Ordonați **utilizatorii alfabetic**. 
 
-Order the **IPs alphabetically**. 
+Ordonați **adresele IP alfabetic**. 
 
-The output should be printed like this:
+Datele de ieșire trebuie printate în următorul mod:
 
 - alex: 62 [10.10.17.33, 212.50.118.81]
 - peter: 303 [10.10.17.34, 10.10.17.35, 192.168.0.11]
 
-## Input
+## Date de intrare
 
-On the first line is a number **n** - the count of the following lines. 
+Datele de intrare sunt date în consolă. 
 
-The next n lines hold the logged information in the format. 
+Pe prima linie se află un număr **n** - numărul de linii ce urmează. 
 
-`< IP > < user > < duration >`. 
+Pe fiecare din următoarele n linii se află informații cu privire la logări, după următorul format: 
 
-The input data will always be **valid** and in the described format. 
+`< IP > < utilizator > < durată >`. 
 
-There is no need to check it explicitly.
+Datele de intrare vor fi mereu **valide** și vor respecta mereu formatul dat. 
 
-## Output
+Nu trebuie să le validați în mod explicit.
 
-Print **single line for each user** (order users alphabetically). 
+## Date de ieșire
 
-For each user print the sum of durations and all of his session IPs ordered alphabetically in format.
+Printați **câte o singură linie pentru fiecare utilizator** (ordeonați utilizatorii alfabetic). 
 
-`< user >: < duration > [< IP1 >, < IP2 >, ...]`. 
+Pentru fiecare utilizator, printați suma duratelor și toate sesiunile adreselor IP, ordonate alfabetic după formatul: 
 
-Remove any duplicated values in the IP addresses.
+`< utilizator >: < durată > [< IP1 >, < IP2 >, ...]`. 
 
-## Constraints
+Eliminați orice valori duplicate ale adreselor IP.
 
-- The **count** of the lines **n** is in range \[1 ... 1000\]
-- The `< IP >` is a standard IP address in format **a.b.c.d** where **a**, **b**, **c** and **d** are integers in range \[0 ... 255\]
-- The `< user >` consists only of **Latin characters**, with length of \[1 .... 20\]
-- The `< duration >` is an integer number in the range \[1 ... 1000\]
+## Constrângeri
 
-## Examples
+- **Numărul** liniilor, **n**, se află în intervalul \[1 ... 1000\]
+- `< IP >` este o adresă IP standard ce respectă formatul **a.b.c.d** unde **a**, **b**, **c** și **d** sunt numere întregi din intervalul \[0 ... 255\]
+- `< user >` constă doar în **caractere din alfabetul Latin**, de lungime \[1 .... 20\]
+- `< duration >` e un număr întreg din intervalul \[1 ... 1000\]
 
-| **Input** | **Output** |
+## Exemple
+
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | 7 | alex: 62 \[10.10.17.33, 212.50.118.81\] |
 | 192.168.0.11 peter 33 | peter: 303 \[10.10.17.34, 10.10.17.35, 192.168.0.11\] |
@@ -2959,7 +2961,7 @@ Remove any duplicated values in the IP addresses.
 | 212.50.118.81 alex 46 |  |
 | 212.50.118.81 alex 4 |  |
 
-| **Input** | **Output** |
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | 2 | john: 60 \[84.238.140.178\] |
 | 84.238.140.178 john 25 |  |
@@ -3355,7 +3357,7 @@ test: 698 \[10.10.10.1, 10.10.10.10, 10.10.10.103, 10.140.10.10, 105.10.10.10\]
 
 
 [slide hideTitle]
-# Problem: Legendary Farming
+# Problema: Legendary Farming
 [code-task title="Legendary Farming" taskId="java-advanced-sets-and-maps-advanced-Legendary-Farming" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -3369,57 +3371,57 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-You have beaten all of the content and the last thing left to accomplish is to own a legendary item.
+## Descriere
+Ați învins toate cerințele, iar ultimul lucru rămas este să dețineți un obiect legendar.
 
-However, it is a tedious process and it requires quite a bit of farming.
+Totuși, acesta este un proces anost și necesită o activitate agricolă vastă.
 
-Anyway, you are not too pretentious - any legendary will do.
+Totuși, nu sunteți foarte pretențioși - orice lucru legendar este binevenit.
 
-The possible items are:
-- **Shadowmourne** - requires **250 Shards**;
-- **Valanyr** - requires **250 Fragments**;
-- **Dragonwrath** - requires **250 Motes**;
+Obiectele posibile sunt:
+- **Shadowmourne** – necesită **250 Shards** (cioburi)
+- **Valanyr** – necesită **250 Fragments** (fragmentele)
+- **Dragonwrath** – necesită **250 Motes** (fire)
 
-**Shards, Fragments**, and **Motes** are the **key materials**, everything else is **junk**. 
+**Ciourile, fragmentele**, și **firele** sunt **materialele-cheie**, celelalte sunt **gunoaie**. 
 
-You will be given lines of input, such as **2 motes 3 ores 15 stones**. 
+Vi se dau linii cu date de intrare, precum **2 fire 3 minereuri 15 pietre**. 
 
-Keep track of the **key materials** - the **first** that reaches **250 mark wins the race**. 
+Țineți cont de **materialele-cheie** - **primul** care ajunge la **250 de puncte câștigă cursa**. 
 
-At that point, print the corresponding legendary obtained. 
+În acel punct, printați obiectul legendar obținut.
 
-Then, print the **remaining** shards, fragments, motes, ordered by their **quantity** in **descending** order, each on a new line. 
+Apoi, printați bucățile **rămase**, fragmentele, firele, ordonate după **cantitate** în **ordine descrescătoare**, fiecare pe linie nouă. 
 
-Finally, print the collected **junk** items, in **alphabetic** order.
-
-
-## Input
-
-- Each line of input is in a specific format: 
-
-`{quantity} {material} {quantity} {material} ... {quantity} {material}`
+În final, printați **gunoaiele** obținute, în **ordine alfabetică**.
 
 
-## Output
+## Date de intrare
 
-- On the first line, print the obtained item in the following format: 
+- Fiecare linie ce conține date de intrare respectă formatul:
+
+`{cantitate} {material} {cantitate} {material} ... {cantitate} {material}`
+
+
+## Date de ieșire
+
+- Pe prima linie, printați obiectul obținut, în formatul: 
 `{Legendary item} obtained!`
-- On the next three lines, print the remaining key materials in descending order by quantity
-  - if two or more key materials have the same quantity, print them in alphabetical order
-- On the final several lines, print the junk items in alphabetical order
-  - all materials should be printed in the format  
-  `{material}: {quantity}`
-  - all outputs should be in **lower case**, except the first letter of the legendary
+- Pe următoarele 3 linii, printați materialele-cheie rămase, ordonate descrescător după cantitate
+  - Dacă 2 materiale-cheie au aceeași cantitate, printați-le în ordine alfabetică
+- Pe ultimele linii, printați obiectele ce reprezintă gunoiul, în ordine alfabetică:
+  - Toate materialele sunt printate după următorul format: 
+  `{material}: {cantitate}`
+  - Toate datele de ieșire trebuie scrise **cu litere mici** , exceptând prima literă a obiectului legendar.
 
-## Constraints
+## Constrângeri
 
-- The quantity-material pairs are between 1 and 25 per line
-- The number of lines is in range \[1 ... 10\]
-- All materials are case-insensitive
+- Perechile cantitate-material sunt între 1 și 25 per linie
+- Numărul de linii se află în intervalul \[1 ... 10\]
+- Toate materialele sunt scrise cu litere mari sau mici
 
-## Examples
-| **Input** | **Output** |
+## Exemple
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | 3 Motes 5 stones 5 Shards | Valanyr obtained! |
 | 6 leathers 255 fragments 7 Shards | fragments: 5 |
@@ -3428,7 +3430,7 @@ Finally, print the collected **junk** items, in **alphabetic** order.
 |  | leathers: 6 |
 |  | stones: 5 |
 
-| **Input** | **Output** |
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | 123 silver 6 shards 8 shards 5 motes | Dragonwrath obtained! |
 | 9 fangs 75 motes 103 MOTES 8 Shards | shards: 22 |
@@ -3641,7 +3643,7 @@ linen: 1420
 
 
 [slide hideTitle]
-# Problem: Dragon Army
+# Problema: Dragon Army
 [code-task title="Dragon Army" taskId="java-advanced-sets-and-maps-advanced-Dragon-Army" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -3655,76 +3657,76 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-Heroes III is the best game ever.
+## Descriere
+Eroii III e cel mai super joc existent.
 
-Everyone loves it and everyone plays it all the time.
+Toată lumea îl iubește și toată lumea îl joacă.
 
-John is no exclusion to this rule.
+John nu e o excepție de la regulă.
 
-His favorite units in the game are all **types** of dragons - black, red, gold, azure, etc... 
+Unitățile sale preferate din joc sunt toate **tipurile** de dragoni – negri, roșii, aurii, azurii, etc... 
 
-He likes them so much that he gives them **names** and keeps logs of their **stats** : **damage, health**, and **armor**.
+Îi îndrăgește atât de mult încât le dă **nume** și continuă să logheze **statisticile lor** : **daunele, sănătatea* și **armura**.
 
-The process of aggregating all of the data is quite tedious, so he would like to have a program doing it.
+Procesarea tuturor datelor e un proces destul de detaliat, deci ne-ar trebui un program care să se ocupe de asta.
 
-Since he is no programmer, it is your task to help him.
+Din moment ce John nu e programator, este sarcina voastră să îl ajutați.
 
-You need to categorize dragons by their **type**. 
+Trebuie să clarificați dragonii pe baza **tipului** lor. 
 
-For each dragon, identified by **name**, keep information about his **stats**. 
+Pentru fiecare dragon, identificat prin **numele** său, rețineți informații despre **statistica acestuia**. 
 
-Type is **preserved** in the order of the input but the dragons are **sorted** alphabetically by name. 
+Tipul **rămâne** în ordinea în care a fost introdus de la tastatură, dar dragonii sunt **sortați** alfabetic după nume. 
 
-For each type, you should also print the average **damage**, **health**, and **armor** of the dragons. 
+Pentru fiecare tip, trebuie să printați și media **daunelor**, a **sănătății** și a **armurii** dragonilor. 
 
-For each dragon, print its own stats.
+Pentru fiecare dragon, printați statistica.
 
-There **may** be **missing** stats in the input, though. 
+**Ar putea exista statistici lipsă** din datele de intrare, totuși. 
 
-If a stat is missing you should assign its default values. 
+Dacă o statistică lipsește, trebuie să îi asignați valorile standard. 
 
-Default values are as follows: health **250** , damage **45** , and armor **10**. 
+Valorile standard sunt următoarele: sănătate (health) **250** , daune (damage) **45** și armură (armor) **10**. 
 
-Missing stat will be marked by **null**.
+Statisticile lipsă vor fi marcate cu **null**.
 
-The input is in the following format 
+Datele de intrare respectă următorul format: 
 
-`{type} {name} {damage} {health} {armor}`
+`{tip} {nume} {daune} {sănătate} {armură}`
 
-Any of the integers may be assigned **null** value. 
+Fiecărui întreg i se poate asigna o valoare **nulă**. 
 
-See the examples below for a better understanding of the task.
+Vedeți exemplele de mai jos pentru o înțelegere mai bună a cerinței.
 
-If the same dragon is added a second time, the new stats should **overwrite** the previous ones. 
+Dacă același dragon este introdus de la tastatură pentru a doua oară, noile statistici trebuie să le **suprascrie** pe cele vechi. 
 
-Two dragons are considered **equal** if they match by **both** in name and in type.
+Doi dragoni sunt considerați **echivalenți** dacă au **același** nume și tip.
 
-## Input
+## Date de intrare
 
-- On the first line, you are given **number N** - the number of dragons
-- On the **next N lines**, you will be receiving inputs in the **above described** format. There will be a single space separating each element. 
+- Pe prima linie, se dă **numărul N** - numărul de dragoni
+- Pe **următoarele N linii** se dau **datele de intrare** după formatul **descris mai sus**. Vom avea un spațiu care separă elementele.
 
-### Output
+### Date de ieșire
 
-- Print the aggregated data on the console
-- For each type, print the average stats of its dragons in format 
+- Printați datele procesate în consolă
+- Pentru fiecare tip, printați statistica medie a dragonilor, după formatul corespunzător dragonilor săi, după formatul: 
 
-`{Type}::({damage}/{health}/{armor})`
+`{Tip}::({daune}/{sănătate}/{armură})`
 
-- Damage, health, and armor should be rounded to the 2nd digit after the decimal separator
-- For each dragon, print its stats in the following format 
+- Nivelele pentru daune, sănătate și armură trebuie rotunjite la 2 zecimale.
+- Pentru fiecare dragon, printați statistica după formatul: 
 
-`-{Name} -> damage: {damage}, health: {health}, armor: {armor}`
+`-{Nume} -> damage: {daune}, health: {sănătate}, armor: {armură}`
 
-### Constraints
+### Constrângeri
 
-- N is in range \[1 ... 100\]
-- The dragon type and name are one word only, starting with a capital letter
-- Damage health and armor are integers in range \[0 ... 100000\] or **null**
+- N se află în intervalul \[1 ... 100\]
+- Tipul de dragon și numele constau într-un singur cuvânt, care începe cu majusculă.
+- Nivelul de daune, sănătate și armură sunt numere întregi din intervalul \[0 ... 100000\] sau **null**
 
-## Examples
-| **Input** | **Output** |
+## Exemple
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | 5 | Red::(160.00/2350.00/30.00) |
 | Red Bazgargal 100 2500 25 | \-Bazgargal \-\> damage: 100, health: 2500, armor: 25 |
@@ -3736,7 +3738,7 @@ Two dragons are considered **equal** if they match by **both** in name and in ty
 |  | -Kerizsa \-\> damage: 60, health: 2100, armor: 20 |
 
 
-| **Input** | **Output** |
+| **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 | 4 | Gold::(223.75/826.25/17.50) |
 | Gold Zzazx null 1000 10 | \-Ardrax \-\> damage: 100, health: 1055, armor: 50 |
@@ -4178,5 +4180,3 @@ Green::(100.00/1000.00/10.00)
 [/tests]
 [/code-task]
 [/slide]
-
-
