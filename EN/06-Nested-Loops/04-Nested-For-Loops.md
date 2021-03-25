@@ -3,12 +3,12 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-23-25-nested-for-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Let us take a look at the statements that consist of several **for-loops** located each **inside each other**
+Let us take a look at the statements that consist of several nested **for-loops** 
 
 **Nested for-loops** are used:
 
 * To **repeat code logic** an **exact number** of times
-* To make more **complex** calculations and variations
+* To complete more **complex** calculations and variations
 
 The syntax for a **nested for-loop in Java** is as follows:
 ```java
@@ -21,7 +21,7 @@ for (variable initialization; condition; increment) {
   }
 }
 ```
-Here is an example of a mechanics containing 3 levels of nested for-loops.
+Here is an example of code logic containing a three level structure of nested for-loops.
 ```java live
 int n = 5;
 for (int i = 1; i <= n; i += 3) {
