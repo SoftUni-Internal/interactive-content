@@ -22,22 +22,22 @@ You have been hired by a cinema to create a program that calculates whether ther
 
 On the first line, you are going to receive the number of seats in the hall.
 
-On the following lines, until the command **"Movie time!"** is received, you will receive how many people want to enter the hall.
+On the following lines, until the command **"Movie time!"** is received, you will receive numbers, representing how many people want to enter the hall.
 
 The price for a ticket is **5$**. 
 
-If the current number of people that enter the hall can be divided by **3** without remainder, there is a **5$** discount on the total price.
+If the current number of people that enter the hall can be divided by **3** without a remainder, there is a **5$** discount on the total price.
 
 If there are no more free seats for the people that want to enter, the program should end.
 
-If more people than the available seats count try to enter the hall, it is considered full and the program should stop.
+If more people than the available seats number try to enter the hall, it should be considered full and the program should stop.
 
 ## Input
 Read from the console:
-- Hall capacity - **integer** number in the range [50 ... 150]
+- Hall capacity - **integer** number in range [50 ... 150]
 
 - On the following lines, until the command **"Movie time!"** is received:
- Number of people entering the cinema - **integer** in the range [1 ... 15]
+ Number of people entering the cinema - **integer** in range [1 ... 15]
 
 ## Output
 The output should consist of a single line in the following format:
