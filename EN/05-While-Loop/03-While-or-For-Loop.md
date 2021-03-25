@@ -3,9 +3,9 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/EN/Java-While-Loops-12-13-While-or-for-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Both `while-loop` and `for-loop` **repeat** a block of **code**.
+Both the `while-loop` and the `for-loop` **repeat** a block of **code**.
 
-There are different situations when we have to choose the right loop to achieve our goals. 
+Choosing which one to use depends on the situation and our end goal. 
 
 When we know **exactly how many times** we want to loop through a block of code, we use а `for-loop`. 
 ```java live
@@ -14,11 +14,12 @@ for (int i = 0; i <= 5; i++) {
 }
 ```
 
-A **for-loop** is more structured than а **while-loop**. The keyword `for` is used, followed by three statements:
+A **for-loop** is defined in a more detailed way compared to a **while-loop**. 
+Let us review the for-loop structuire:
 
 - Statement 1 sets a variable before the loop starts (int `i` = 0)
 
-- Statement 2 defines the condition for the loop to run (`i` must be less than 5). If the condition is **true**, the loop will start over again. If it is **false**, the loop will end
+- Statement 2 defines the condition for the loop to run up to (`i` must be less than 5). If the condition is **true**, the loop will execute its body. If it is **false** - the loop will end.
 
 - Statement 3 increases a value (`i`++) each time the code block in the loop has been executed
 
@@ -70,7 +71,7 @@ public class Program {
 Create a program that:
 
 * Reads numbers from the console, until an **odd number** is entered
-* Prints the **odd** number
+* Prints out the **odd** number
 
 ## Example
 
@@ -137,7 +138,7 @@ Create a program that:
 * Reads the following commands and executes the specified actions:
 * **Add** - Аdds **1** to the number
 * **Subtract** - Subtracts **1** from the number
-* **END** -  Prints the number and ends the program
+* **END** -  Prints out the number and ends the program
 
 ## Example
 
