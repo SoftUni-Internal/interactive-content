@@ -4,6 +4,8 @@
 
 # Fișiere și rute
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-28-Files-and-Paths-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 In Java **Path** reprezintă **o cale în sistemul de fișiere**.
 
 O cale poate indica fie un **fișier**, fie un **director**.
@@ -70,6 +72,8 @@ Apoi trecem aceasta **Lista** și variabila **outputPath** variable catre Files 
 
 # Files
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-30-31-Files-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Clasa Files furnizează metode pentru gestionarea fișierelor.
 
 Această clasă este folosită pentru crearea fișierelor și a directoarelor, pentru căutarea fișierelor, ștergerea fișierelor, etc.
@@ -107,6 +111,8 @@ Files.write(outPath, lines);
 
 [slide hideTitle]
 # Problemă cu soluție: sortarea liniilor
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-32-Sort-Lines-Problem-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sort Lines" taskId="java-advanced-streams-files-lab-sort-lines" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
