@@ -14,11 +14,11 @@ The minutes will gradually increase by **1** until they reach **59**.
 
 Once they get to 60, the hours will be incremented by **1** and the minutes will be reset back to **00**. 
 
-We can represent this process using **for-loops**, and more importantly. Let us see why we need more than one for-loop to simulate how a clock works.
+We can represent this process using **for-loops**. More importantly, let us see why we need more than one for-loop to simulate how a clock works.
 
-As you can see in pseudocode example contains two for-loops: **inner** and **outer**.
+As you can see this pseudocode example contains two for-loops: an **inner** and an **outer** one.
 
-The calculates hours, while the inner one is responsible for the minutes.
+The outer calculates hours, while the inner one is responsible for the minutes.
 
 ## Pseudocode
 
