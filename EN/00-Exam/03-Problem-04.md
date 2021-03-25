@@ -16,7 +16,7 @@ public class Program {
 [task-description]
 
 # Description
-The weather is getting warmer and all clubs are launching promising offers. 
+The weather is getting warmer and all clubs are launching promotional offers. 
 
 Create a program that calculates the profit of a club for the evening and checks whether it reaches a certain goal or not.
 Keep in mind that **the price for a cocktail is its name's length**. 
@@ -27,9 +27,9 @@ If the price of an order is an odd number - there is **a 25% discount** on it.
 You will receive:
 - On the first line - the desired profit of the club - **a real number** in range [1.00 ... 15000.00]
 
-On the next lines, you will be receiving two rows until you receive the command: **"Party!"** or until the desired profit is reached: 
+On the next lines, you will be receiving two rows untilthe command: **"Party!"** or until the desired profit is reached: 
 - The name of a cocktail - **a string** 
-- The number of times this is contained in the order - **an integer** in range [1 ... 50] 
+- The number of times it is contained in the order - **an integer** in range [1 ... 50] 
 
 ## Output
 First, print one of the following lines to the console:
@@ -58,7 +58,7 @@ The amount of money must be formatted up **to the second decimal place**.
 [hints]
 [hint]
 Note that the individual price of each cocktail is the length of its name. If the price for an order is an odd number, apply the discount. 
-Calculate the price for each order and add them to the total.
+Calculate the price for each order and add it to the total.
 [/hint]
 [hint]
 If you reach the desired profit before receiving the "Party!" command, print the correct output.
