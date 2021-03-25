@@ -12,7 +12,7 @@ Dar uneori, s-ar putea să dorim  **să reutilizăm** un obiect între mai multe
 
 **Deserializarea** ne permite să inversăm procesul, ceea ce înseamnă **reconvertirea a fluxului/stream-ului de octeți serializați într-un obiect**.
 
-În cuvinte mai simple,  **serializarea obiectului ** este procesul de **salvare a stării unui obiect** într-o **secvență de octeți** și **deserializarea** este procesul de **reconstituire a unui obiect din acești octeți**.
+În cuvinte mai simple,  **serializarea obiectului** este procesul de **salvare a stării unui obiect** într-o **secvență de octeți** și **deserializarea** este procesul de **reconstituire a unui obiect din acești octeți**.
 
 În general, procesul complet se numește **Serializarea**.
 
