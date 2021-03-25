@@ -206,10 +206,6 @@ System.out.println(queueOfCars.contains("BMW 7"));
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-35-Queue-Overview-of-all-operations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Animația de mai jos prezintă toate operațiile cozilor și cum le putem folosi pentru a rezolva următoarele probleme.
-
-[image assetsSrc="Java-Advanced-Stack-and-Queues-11.gif" /]
-
 [/slide]
 
 [slide hideTitle]
