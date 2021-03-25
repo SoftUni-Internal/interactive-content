@@ -9,19 +9,19 @@
 
 **1. While-Loop**
 
-- What a **While-loop** is and how we can use it
+- What is a **While-loop** and how to use it
 
-**2. While-loop and For-loop**
+**2. The While-loop and The For-loop**
 
-- The difference between **While-loop** and **For-loop**
+- The difference between **While** and **For-loops**
 
 **3. The Break operator**
 
-- What a **Break** operator is and when we can use it
+- What a **Break** operator is and when to use it
 
-**5. Infinity While Loops**
+**5. Infinite While Loops**
 
-- What **Infinity Loops** are and how we can use them
+- What **Infinite Loops** are and how to use them
 
 **6. Practical Exercises**
 
