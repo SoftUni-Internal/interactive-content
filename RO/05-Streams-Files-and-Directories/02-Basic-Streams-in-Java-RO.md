@@ -1,4 +1,4 @@
-# Fluxuri de bază în Java
+Changed Strategy TypeChanged Strategy Type# Fluxuri de bază în Java
 
 
 [slide hideTitle]
@@ -29,17 +29,7 @@ Chiar daca există multe clase legate de fluxurile de octețit insa cele mai fre
 [slide hideTitle]
 # Problemă cu soluție: Copierea octeților
 
-[code-task title="Copy Bytes" taskId="java-advanced-streams-files-lab-copy-bytes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
+[code-task title="Copy Bytes" taskId="java-advanced-streams-files-lab-copy-bytes" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [/code-editor]
 [task-description]
 ## Descriere
@@ -177,17 +167,8 @@ Aici ste folosit pentru a acoperi `FileInputStream` și, până acum, ați făcu
 [slide hideTitle]
 # Problemă cu soluție: extragerea numerelor întregi
 
-[code-task title="Extract Integers" taskId="java-advanced-streams-files-lab-exact-integers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Extract Integers" taskId="java-advanced-streams-files-lab-exact-integers" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
-```java
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Descriere
@@ -267,17 +248,8 @@ Acest lucru va crește semnificativ **performanța** aplicațiilor noastre.
 [slide hideTitle]
 # Problemă cu soluție: scrieți fiecare al treilea rând
 
-[code-task title="Write Every Third Line" taskId="java-advanced-streams-files-lab-write-every-third-line" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Write Every Third Line" taskId="java-advanced-streams-files-lab-write-every-third-line" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
-```java
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Descriere
