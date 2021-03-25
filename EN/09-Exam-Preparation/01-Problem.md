@@ -16,7 +16,7 @@
 - **Do not modify the interfaces or their packages**
 - Use **strong cohesion** and **loose coupling**
 - **Use inheritance and the provided interfaces wherever possible**
-- **This includes constructors, method parameters, and return types**
+  * this includes **constructors, method parameters** and **return types**
 - **Do not** violate your **interface implementations** by adding **more public methods** in the concrete class than the ones already defined in the interface
 - Make sure you have **no public fields** anywhere in your code
 
