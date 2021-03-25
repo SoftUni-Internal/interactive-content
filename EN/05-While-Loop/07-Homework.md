@@ -19,11 +19,11 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which:
+Create a program that:
 
 * Reads a number from the console
-* **Sums** the **digits** of a number
-* Prints the sum
+* **Sums** all the **digits** of the given number
+* Prints the sum of all digits
 
 ## Example
 | **Input** | **Output** |
@@ -101,11 +101,11 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which: 
+Create a program that:
 
-* Reads a **book's name** from the console
-* Receives names until it gets **book with the same name as the first one**
-* Prints "**Book found! Attempts:** \{**attemptsCount**\}" and stops afterwards
+* Reads a **string** representing the name of a particular book
+* Reads another string values until it receives the name of the first book again.
+* Prints "Book found! Attempts: \{attemptsCount\}" and stops
 
 ## Example
 | **Input** | **Output** |
@@ -172,10 +172,11 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which: 
+Create a program that:
 
-* Receives integers until **"END"**
-* Prints the **biggest** and the **smallest** integer in the following format:
+* Reads integers until the **"END"** command is received
+
+* Prints the **greatest** and the **smallest** integers in the following format:
    * "**Max number:** \{**max number**\}"
    * "**Min number:** \{**min number**\}"
 
@@ -284,10 +285,10 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-The special number is a number **divisible by all of its digits** without remainder. 
+A **special** number is a number **divisible by all of its digits** without a remainder. 
 
-Write a program, which: 
-* Receives integer
+Create a program that:
+* Receives an integer value
 * **Prints** "\{**num**\} **is special**", if the number is special
 * Otherwise, prints "\{**num**\} **is not special**"
 
@@ -365,11 +366,12 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which: 
+Create a program that: 
 
-* Reads an **integer** number from the console
-* Keeps reading integers until it finds the **same one as the first one**
-* When it finds it, it increases the value of the **previous** number **before it** with 100% and prints it
+* Reads an **integer** number
+* Keeps reading integers until it receives the **same number**
+* When such a number is received, the value of the **previous** number should be increased by **100%**
+* The **increased number** should be printed to the console
 
 ## Example
 | **Input** | **Output** |
@@ -433,11 +435,11 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which: 
+Create a program that:
 
-* Reads a number **n** from the console
-* Prints a **sequence** of numbers, which are **<= n** and satisfy the following condition:
-* Each number is equal to the previous one multiplied by **2** plus **1**
+* Reads an integer number - `n` 
+* Prints a **sequence** of numbers that are **<= `n`** and satisfy the following condition:
+* Each number is equal to the previous one multiplied by **2** plus **1** 
 
 ## Example
 | **Input** | **Output** |
@@ -546,11 +548,11 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which: 
+Create a program that:
 
-* Receives the **amount of money** for each transaction untill **"END"**
-* **Adds** the money to the **balance** and **prints**: "**Increase:**\{**money**\}", format `money` to the **2nd digit** after the decimal point
-* After **"END"** calculates and **prints** the total balance: "**Total:** \{**balance**\}", format `balance` to the **2nd digit** after the decimal point
+* Receives a number representin the **amount of money** for each transaction, untill the **END** command is received
+* **Adds** the money to the **balance** and **prints**: "Increase: \{money\}".  The `money` should be formatted to the **2nd digit** after the decimal point
+* After the **END** command is received, calculates and **prints** the **total balance**: "Total: \{balance\}". The `balance` should be formatted to the **2nd digit** after the decimal point
 
 ## Example
 | **Input** | **Output** |
@@ -612,16 +614,16 @@ public class Main {
 ## Description
 Andreea goes to her hometown after being a long time abroad. 
 
-When she comes home, she sees her grandmother\'s library and remembers her favorite book. 
+When she comes home, she sees her grandmother\'s library and remembers her favorite book.
 
-Help Andreea writing a program in which Andreea enters the name of the **book** she\'s searching for (**String**) and the **capacity** of the library (**integer**). 
+Help Andreea by writing a program, in which Andreea enters the name of the **book** she\'s searching for (**string**), and the **capacity** of the library (**integer**).  
 
-**Until** Andreea finds her favorite book **or** doesn\'t check all books in the library, the program has to reads every time the name of the next book on a separate line.
+**Until** Andreea finds her favorite book **or** there are more books to be checked, the program has to read a new name of the book, each on a separate line.
 
 ## Input
-- First line of input is the name of the book Andreea's searching for - string
-- Second line is the capacity of the library - integer
-- On every next line - the name of the book from the library - string
+- The name of the book Andreea is searching for - string
+- The capacity of the library - integer
+- A new name of a book - string
 
 ## Output
 - If Andreea **does not** find the book, print **two** lines:
@@ -644,7 +646,7 @@ Help Andreea writing a program in which Andreea enters the name of the **book** 
 Andreea is searching for a book with the name "Troy", and the library\'s capacity is 8 books.
 [/hint]
 [hint]
-The first book is "Stronger", the second one is "Life Style", the third one is desired - "Troy" and the program ends.
+The first book is called "Stronger", the second one is called "Life Style", the third one is the desired one- "Troy", so the program ends
 [/hint]
 [/hints]
 
@@ -664,7 +666,7 @@ Andreea is searching for a book with the name "The Spot". The library contains 4
 The first book is "Hunger Games", the second - "Harry Potter", the third - "Torronto", the fourth - "Spotify".
 [/hint]
 [hint]
-Since there aren\'t other books in the library, reading names is stopped. Andreea didn\'t find the book.
+Since there are no more books in the library, the program should end.
 [/hint]
 [/hints]
 
@@ -883,29 +885,29 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description 
-Write a program in which Martin solves problems for exams until he receives a message from his trainer: "**Enough**". 
+Your friend should solve problems to prapare for his exams until he receives a message **Enough** from his trainer.
 
-Every time he solves a problem, he gets a grade. 
+Every time he solves a problem, he get a grade.
 
-**The program should end either** Martin receives "Enough" command, **or obtain the number of poor grades**. 
+**The program should end** when Martin receives a message **Enough**, or when he reaches the limit of poor grades.
 
-A poor grade is a grade less or equal to 4.00.
+A poor grade is a grade less than or equal to **4.00**.
 
 ## Input
-- On the first line – **number of poor grades** – integer in range \[1...5\]
-- **After that repeatedly two lines**:
-  - **name of a problem - text**
-  - **grade** - integer in range \[2...6\]
+- **limit of poor grades** – integer in range \[1…5\]
+-  Until the program ends, we will receive the following 2 lines: 
+  - **Name of a problem** - a string value
+  - **Grade** - an integer in range \[2…6\]
 
 ## Output
-- If Martin reaches "**Enough**" command, print **3** lines:
+- If Martin receives the **Enough** command, print the following **3** lines:
   - "**Average score:** \{**average grade**\}"
   - "**Number of problems:** \{**number of ALL problems**\}"
   - "**Last problem:** \{**last problem\'s name**\}"
-- **If he gets the specified number of poor grades**:
+- If he reaches the **specified limit of poor grades**:
   - "**You need a break**, \{**number poor grades**\} **poor grades.**"
 
-**The average grade should be formatted to the second decimal point.**
+The **average grade** should be formatted to the second decimal point.
 
 ## Example
 | **Input** | **Output** |
@@ -926,11 +928,11 @@ A poor grade is a grade less or equal to 4.00.
 The number of allowed poor grades is 3.
 [/hint]
 [hint]
-First problem\'s name is Money, Martin\'s grade is 6.
-Second problem - Story, grade - 4.
-Third problem - Spring Time, grade - 5.
-Fourth problem - Bus, grade - 6.
-The next command is Enough, the program ends.
+The first problem is called called **Money**. Martin has a grade equal to **6**.
+The second problem is called **Story**. Martin has a grade equal to **4**.
+The third problem is called **Spring Time**. Martin has a grade equal to **5**.
+The fourth problem is called **Bus**. Martin has a grade equal to **6**.
+Then, we receive **Enough**, which is the end of the program.
 [/hint]
 [hint]
 Average grade: 21 / 4 = 5.25
@@ -955,10 +957,10 @@ Last problem: Bus
 The number of allowed poor grades is 2.
 [/hint]
 [hint]
-The first problem\'s name is Income, Martin\' grade is 3.
-Second problem - Game Info, grade - 6.
-Third problem - Best Player, grade - 4.
-Martin reaches the number of allowed poor grades, it is time for a break.
+The first problem is called called **Income**. Martin has a grade equal to **3**.
+The second problem is called **Game Info**. Martin has a grade equal to **6**.
+The third problem is called **Best Player**. Martin has a grade equal to **4**.
+Martin reaches the limit of allowed poor grades, so it is time for him to take a break.
 [/hint]
 [/hints]
 [/task-description]
@@ -1253,14 +1255,14 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Gaby wants to start healthy life and she sets a goal to walk **10000 steps** a **day**.
+Gaby wants to start a healthy lifestyle so that she sets a goal to walk **10000 steps** a **day**.
 
-Write a program **that reads from the console how many steps** Gaby walks every time she is out and **when she reaches the set goal**, print a message: 
-- "**Goal reached! Good job!**"
+Create a program that reads from the console **how many steps** Gaby walks every time she goes out, and **when she reaches the set goal**, prints the following message: 
+- **Goal reached! Good job!**.
 
-In case she wants to go home **before** reaching the goal, she will enter the "**Going home**" command and the **steps** she had **walked** while she was **going home**. 
+In case she wants to go home **before** reaching the goal, she will enter the command **Going home** and the **steps she had walked while she was going back home**.  
 
-After that, if she didn\'t manages to reach her goal, you have to print the following message on the console: 
+If she did not manage to reach her goal, you have to print out the following massage:
 - "\{**difference in steps**\} **more steps to reach goal.**"
 
 ## Examples
@@ -1511,7 +1513,7 @@ Until we get the command **END**, we will be receiving numbers of vessels that n
 Read from the console: 
 - **Number of bottles of detergent** that will be used - integer in range \[1...10\] 
 
-- On each subsequent line, until the command **End**, or until **we run out of detergent**, we will receive the **number of vessels** that need to be washed - integer in the range \[1...100\]
+- On each subsequent line, until the command **End**, or until **we run out of detergent**, we will receive the **number of vessels** that need to be washed - integer in range \[1...100\]
 
 # Output
 - If the amount of the detergent **is sufficient** for washing all the vessels, print the following three lines: 
@@ -1758,7 +1760,7 @@ Read from the console:
     - **The prices of items** to be purchased - integer in range \[1...500\]
 
 ## Output
-Print to the console:
+Print out:
 - In case of successful transaction: **"Product sold!"** 
 - In case of unsuccessful transaction: **"Error in transaction!"** 
 - In case we reach the expected amount of money, the following two lines should be printed out:
@@ -1784,19 +1786,21 @@ Print to the console:
 
 [hints]
 [hint]
-The condition is rotated first in **cash payment**, then through **credit card**
-120 > 100 transaction is rejected 
-8 < 10 transaction is rejected 
-63 <= 100 => the transaction was successful
-256 >= 10 => the transaction was successful 
-78 <= 100 => the transaction was successful 
-317 >= 10 => the transaction was successful 
-Total amount collected: 63 + 256 + 78 + 317 = 714 
+The first type of payment should be **in cash**
+120 > 100 => the transaction is rejected 
+8 < 10 => the transaction is rejected 
+63 <= 100 => the transaction is successful
+256 >= 10 => the transaction is successful 
+78 <= 100 => the transaction is successful 
+317 >= 10 => the transaction is successful 
+Total amount of money collected: 63 + 256 + 78 + 317 = 714  
 714 >= 500
 [/hint]
 [hint]
-Total cash: 63 + 78 = 141;  Average cash: 141/2 = 70.50 
-Total credit cards: 256 \+ 317 = 573; Average credit cards: 573/2 = 286.50
+- Total amount of money in cash: 63 + 78 = 141 
+  - Average amount of money in cash: 141/2 = 70.50 
+- Total amount of money received by credit card: 256 \+ 317 = 573 
+  - Average amount of money received by credit card: 573/2 = 286.50
 [/hint]
 [/hints]
 
@@ -2212,7 +2216,7 @@ When we receive one of those letters ( **c**, **o**, or **n**) for the first tim
 If we receive all three letters, we have to add а **white space** to the end of our word and print it out. We should reset the count of the appearance of each letter to **0**.
 
 ## Input
-- We will receive symbols, each on a new line until we receive the "**End**" command
+- We will receive symbols, each on a new line, until we receive the "**End**" command
 
 ## Output
 - Print out the word, followed by а **white space**
@@ -2232,12 +2236,12 @@ If we receive all three letters, we have to add а **white space** to the end of
 
 [hints]
 [hint]
-"**H**", "**n**", "**e**", "**l**", "**l**", "**o**", "**o**", "**c**" are all read letters.
-First, we read "**H**" and we add it to the word. The next symbol is "**n**". It\'s part of the command and we **do not add it to the word as we meet it for the first time**.
-The next symbols are "**e**", "**l**", "**l**" and we add them to the word. We read "**o**" and we mark it as visited, but again we do **not** add it to the word. The next letter is "**o**" again and it\'s added. The next is "**c**" and all three symbols for the secret command are available.
+ "**H**", "**n**", "**e**", "**l**", "**l**", "**o**", "**o**", "**c**" are all letters that we receive.
+First, we receive "**H**" and we add it to the word. The next symbol is "**n**". We receive this letter for a first time, so we **do not** add it to our word.
+The next symbols are: "**e**", "**l**", "**l**" and we add them to the word. We receive "**o**" for a first time, so we **do not** add it to the word. The next letter is "**o**", but this time, we add it to the word. The next letter is "**c**", so all the three symbols (**c**, **o**  and **n**) are met.
 [/hint]
 [hint]
-We print "**Hello** " and we receive the "End" command and the program ends. The result is "Hello ".
+We print "**Hello** ". Then we recieve the **"End"** command and the program ends. The result is **"Hello "**.
 [/hint]
 [/hints]
 
