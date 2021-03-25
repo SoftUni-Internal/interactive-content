@@ -4,6 +4,8 @@
 
 # How to throw an Exception
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/RO/Java-Advanced-Exceptions-and-Error-Handling-18-throwing-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Excepțiile sunt aruncate (ridicate) de cuvântul cheie **throw**.
 
 Acestea sunt folosite pentru a notifica codul de apel în caz de eroare sau situație neobișnuită.
