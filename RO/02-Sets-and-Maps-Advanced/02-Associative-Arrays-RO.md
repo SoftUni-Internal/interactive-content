@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Matrice Asociative: Maps
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-16-17-Associative-Arrays-Maps-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/RO/interactive-java-advanced-sets-and-maps-16-17-Associative-Arrays-Maps-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Ați aflat că Matricea stochează articole ca o colecție comandată și trebuie să le accesați cu un număr de index - **tip int**.
 
@@ -64,7 +64,7 @@ Pentru o **cheie**, o singură **valoare** poate fi stocată în aceeași instan
 [slide hideTitle]
 # HashMap
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-19-20-HashmapPut-HashMap-Remove-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/RO/interactive-java-advanced-sets-and-maps-19-20-Hashmap-Put-HashMap-Remove-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 `HashMap<Cheie, Valoare>` este implementat ca **Hash Tablă** și nu există **nicio comandă pentru chei sau valori**.
 
@@ -106,7 +106,7 @@ hashMap.forEach((k, v) -> System.out.println(k + " - " + v));
 [slide hideTitle]
 # TreeMap
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-24-TreeMap-Put-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/RO/interactive-java-advanced-sets-and-maps-24-TreeMap-Put-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 `TreeMap <Cheie, Valoare>` este **sortat** în funcție de **ordinea naturală a cheilor sale**.
 
@@ -136,7 +136,7 @@ treeMap.forEach((k, v) -> System.out.println(k + " - " + v));
 [slide hideTitle]
 # LinkedHashMap
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-27-HashMap-LinkedHashMap-TreeMap-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/RO/interactive-java-advanced-sets-and-maps-27-HashMap-LinkedHashMap-TreeMap-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `LinkedHashMap <Key, Value>` inherits the HashMap class but **maintains insertion order**. 
 
@@ -167,7 +167,7 @@ linkedHashMap.forEach((k, v) -> System.out.println(k + " - " + v));
 [slide hideTitle]
 # Metode Încorporate
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-18-Methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/RO/interactive-java-advanced-sets-and-maps-18-Methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - `put(cheie K, valoare V)` - **adăugați elementele** (introduceți o intrare) în map.
 
@@ -262,7 +262,7 @@ System.out.println(airplanes.isEmpty());
 [slide hideTitle]
 # Iterare prin Maps
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-21-Looping-Through-Maps-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/RO/interactive-java-advanced-sets-and-maps-21-Looping-Through-Maps-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Iterarea prin obiecte de tip `Map.Entry <K, V>`. 
 
@@ -428,7 +428,7 @@ cars.entrySet()
 [slide hideTitle]
 # Problemă cu Soluția: Count Real Numbers
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-22-23-Problem-and-solution-Count-Numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/RO/interactive-java-advanced-sets-and-maps-22-23-Problem-and-solution-Count-Numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Count Real Numbers" taskId="java-advanced-sets-and-maps-advanced-lab-Count-Real-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -560,7 +560,7 @@ Toate numerele trebuie să fie formatate la **o cifră după punctul zecimal**.
 [slide hideTitle]
 # Problemă cu Soluția: Academy Graduation
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-25-26-Problem-and-solution-Academy-Graduation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/RO/interactive-java-advanced-sets-and-maps-25-26-Problem-and-solution-Academy-Graduation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Academy Graduation" taskId="java-advanced-sets-and-maps-advanced-lab-Academy-Graduation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
