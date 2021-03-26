@@ -20,6 +20,8 @@ function hello() {
 [/code-editor]
 [task-description]
 
+# Description
+
 Create a JavaScript program, which:
 
 Prints "**Hello JavaScript**" to the console.
@@ -56,6 +58,8 @@ function calculate() {
 [/code-editor]
 [task-description]
 
+# Description
+
 Create a JavaScript program, which:
 
 - Calculates the value of `5 * 5`
@@ -90,7 +94,11 @@ function nameAndExpression() {
 
 [/code-editor]
 [task-description]
+
+# Description
+
 Create a program to print "**Catlyn**" on the first line and calculate and print the result of the expression `5 + 3` on the second line
+
 [/task-description]
 [code-io /]
 [tests]
@@ -121,6 +129,9 @@ function calculations() {
 
 [/code-editor]
 [task-description]
+
+# Description
+
 Create a program, which calculates and prints the value of the following expressions:
 
 - 5 \+ 3 \* 2
@@ -134,9 +145,9 @@ Create a program, which calculates and prints the value of the following expres
 [input]
 [/input]
 [output]
-  11
-  20
-  6
+11
+20
+6
 [/output]
 [/test]
 [/tests]
@@ -158,6 +169,9 @@ function squareOfStars() {
 
 [/code-editor]
 [task-description]
+
+# Description
+
 Create a program, which:
 
 Prints a square of 7 \* 7 stars like this:
@@ -178,7 +192,8 @@ Prints a square of 7 \* 7 stars like this:
 [test]
 [input]
 [/input]
-[output] \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \*
+[output] 
+\* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \*
 [/output]
 [/test]
 [/tests]
