@@ -18,7 +18,7 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Until the command "**STOP**" is received, you will be receiving movie titles.
+Until the command "**STOP**" is entered, you will be receiving movie titles.
 
 The best movie for you will be the one that has the most points.
 
