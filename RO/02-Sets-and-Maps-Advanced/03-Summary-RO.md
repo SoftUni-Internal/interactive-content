@@ -43,11 +43,11 @@
     
 # În lecția următoare, veți învăța:
 
-- What Exceptions are
-    - the `Exception` Class
-    - types of Exceptions and Their Hierarchy
-- Handling Exceptions
-- Raising (Throwing) Exceptions
-- Best Practices
+- Ce sunt Excepțiile
+    * clasa `Exception` 
+    * tipurile de excepții și ierarhia lor
+- Tratarea Excepțiilor
+- Ridicarea (Aruncarea) Excepțiilor
+- Cele mai bune practici
 
 [/slide]
