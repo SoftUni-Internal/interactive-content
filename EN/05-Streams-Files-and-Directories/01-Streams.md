@@ -173,7 +173,7 @@ try (InputStream in = new FileInputStream(path)) {
 [task-description]
 ## Description
 
-**Download the resources from** [here](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Files-and-Streams-Lab-Resources.zip ). The zip file contains the resources for all the tasks in this lesson.
+**Download the resources from** [here](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Streams-Files-and-Directories-Resources.zip). The zip file contains the resources for all the tasks in this lesson.
 
 You are given a file named "**input.txt**" (from the Resources - Folder).
 

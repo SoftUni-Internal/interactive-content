@@ -167,7 +167,7 @@ try (InputStream in = new FileInputStream(path)) {
 [task-description]
 ## Descriere
 
-Descărcați **resources folder** [here](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Files-and-Streams-Lab-Resources.zip ). Fișierul zip conține resursele pentru toate cerințele din această lecție.
+Descărcați **resources folder** [here](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Streams-Files-and-Directories-Resources.zip). Fișierul zip conține resursele pentru toate cerințele din această lecție.
 
 Aveți un fișier numit "**input.txt**" (din the Resources - Folder).
 
