@@ -154,7 +154,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that **reads a collection of names** as strings, **appends "Sir"** in front of every name and prints it to the console.
+Write a program that **reads a collection of names** as strings, **appends "Sir"** in front of every name, and prints it to the console.
 
 Use a `Consumer<T>`.
 
