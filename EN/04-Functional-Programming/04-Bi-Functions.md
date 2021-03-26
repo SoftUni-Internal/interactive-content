@@ -6,13 +6,13 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/EN/interactive-java-advanced-functional-programming-24-25-BiFunctions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The `BiFunction <T,U,R>` interface is a part of **java.util.function** package.
+The `BiFunction <T,U,R>` interface is a part of the **java.util.function** package.
 
 ## Type parameters:
 
-**T** - The type of the first argument to the function
+**T** - The type of the first argument of the function
 
-**U** - The type of the second argument to the function
+**U** - The type of the second argument of the function
 
 **R** - The type of the result of the function
 
@@ -50,14 +50,14 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that reads **one line of Integers** separated by a comma and a space`, `. 
+Write a program that reads **a line of Integers** separated by a comma and a space ", ". 
 
 Print the **count of the numbers** and **their sum**. 
 
 This time use a **BiFunction**.
 
 ## Hints
-Use `BiFunction<Integer, String, Integer>` for parsing integers after you split them to a String array.
+Use `BiFunction<Integer, String, Integer>` for parsing integers after you split them into a String array.
 
 # Examples
 
@@ -200,11 +200,12 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that reads an integer **N** on the first line. 
 
-On the next **N** lines read pairs of "**name, age**". 
+Write a program that reads an integer **N** from the first line of input.
 
-Then, read **three more lines** with:
+On the next **N** lines you will receive pairs of "**name, age**" combinations. 
+
+After that you will receive **three more lines** that will contain:
 
 - Condition - **"younger"** or **"older"**
 
