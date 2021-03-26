@@ -110,7 +110,7 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -121,9 +121,9 @@ Scrieți un program care citește un rând de **numere întregi** separate pri c
 Print only the **even numbers**.
 Then, **Sort** the even numbers in **ascending order** and print them **again**.
 
-# Exemple
+# Example
 
-| **Input** | **Output** |
+| **Intrare**|**Ieșire**|
 | --- | --- |
 | 4, 2, 1, 3, 5, 7, 1, 4, 2, 12 | 4, 2, 4, 2, 12
 |  | 2, 2, 4, 4, 12 |

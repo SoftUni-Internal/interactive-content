@@ -247,7 +247,7 @@ Ordinea prețurilor trebuie să rămână aceeași.
 
 
 
-## Exemple
+# Exemple
 
 ## Example 1
 | **Intrare**|**Ieșire**|

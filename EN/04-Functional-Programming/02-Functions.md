@@ -46,8 +46,6 @@ Both functions have **no side effects**:
 
 # Functional Programming Languages
 
-TODO: Add a video or remove slide
-
 There are many **functional programming** languages and languages that incorporate **functional paradigms** into modern software development.
 
 **Purely functional languages** are **unpractical** and rarely used, because it is more complicated to program without maintaining a state.
