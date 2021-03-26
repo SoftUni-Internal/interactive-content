@@ -255,17 +255,18 @@ Creați o clasă **Library** din diagrama UML care urmează :
 
 [image assetsSrc="java-oop-basics-uml-book-iterable.png" /]
 
-| `<<Iterable<Book>>>` |
+| "\<\<**Iterable**\<**Book**\>\>\>" |
 | --- |
 | **Library** |
-|- books: `Book[]`|
-|+ iterator(): `Iterator<Book>`|
+|- books: Book\[\]|
+|+ iterator(): Iterator\<Book\>|
 
 Creați o clasă imbricată **LibIterator** din diagrama UML de mai jos:
 
 [image assetsSrc="java-oop-basics-uml-book-iterable2.png" /]
 
-| `<Iterator<Book>>` |
+
+| "\<\<**Iterator**\<**Book**\>\>" |
 | --- |
 | **LibIterator** |
 |- counter: int |

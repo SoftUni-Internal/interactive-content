@@ -257,18 +257,18 @@ Create a class **Library** from the UML diagram below:
 [image assetsSrc="java-oop-basics-uml-book-iterable.png" /]
 
 
-| `<<Iterable<Book>>>` |
+| "\<\<**Iterable**\<**Book**\>\>\>" |
 | --- |
 | **Library** |
-|- books: `Book[]`|
-|+ iterator(): `Iterator<Book>`|
+|- books: Book\[\]|
+|+ iterator(): Iterator\<Book\>|
 
 Then, create a nested class **LibIterator** from UML diagram below:
 
 [image assetsSrc="java-oop-basics-uml-book-iterable2.png" /]
 
 
-| `<<Iterator<Book>>` |
+| "\<\<**Iterator**\<**Book**\>\>" |
 | --- |
 | **LibIterator** |
 |- counter: int |

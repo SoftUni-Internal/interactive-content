@@ -33,9 +33,9 @@ public class Main {
 
 In examplul de mai sus, metoda numită `display()` acceptă varargs (de tip String).
 
-Aceste `values` variabile sunt declarate implicit ca array-uri de tip String.
+Aceste "**values**" variabile sunt declarate implicit ca array-uri de tip String.
 
-Cu toate acestea, in interiorul metodei, `values` variabile sunt accesate folosindu-se sintaxa array-ului. 
+Cu toate acestea, in interiorul metodei, "**values**" variabile sunt accesate folosindu-se sintaxa array-ului. 
 
 După cum puteți vedea, invocăm aceasta metodă de mai multe ori,trecând prin mai multe **different number of arguments** de fiecare dată când o invocăm.
 [/slide]
@@ -87,19 +87,19 @@ void method(String a, int... b){
 
 [task-description]
 ## Descriere
-Creați o clasă Book din diagrama UML de mai jos: 
+Creați o clasă "**Book**" din diagrama UML de mai jos: 
 
 | Book |
 | ---- |
 |- title: String |
 |- year: int |
-|- authors: List\<String> | 
+|- authors: List\<String\> | 
 |- setTitle(String) |
 |- setYear(String) |
 |- setAuthors(String…) |
 |+ getTitle(): String |
 |+ getYear(): int |
-|+ getAuthors(): List\<String> |
+|+ getAuthors(): List\<String\> |
 
 
 

@@ -6,17 +6,17 @@
  
 [task-description]
 ## Descriere
-Creați o `class ListyIterator`.
+Creați o class "**ListyIterator**".
 
 Aceasta trebuie să primească colecția de **Strings** pe care o va itera, prin intermediul constructorului său. 
 Trebuie să listați elementele într-o **List**.
 
 Clasa trebuie să aibă trei funcții principale :
 
-- `Move` - trebuie să mute o poziție **index** la următorul index din lista, metoda trebuie să returneze **true** dacă este mutată suficient și **false** dacă nu mai există un index următor
+- "**Move**" - trebuie să mute o poziție **index** la următorul index din lista, metoda trebuie să returneze **true** dacă este mutată suficient și **false** dacă nu mai există un index următor
 
-- `HasNext` - trebuie să returneze **true** dacă există un index următor și **false** dacă indexul este deja la elementul **last** din listă
-- `Print` - trebuie să **print** elementul la indexul curent, solicitând Print colecției fără elemente care trebuie să **throw** o **exception** corespunzătoare cu mesajul "**Invalid Operation!**"
+- "**HasNext**" - trebuie să returneze **true** dacă există un index următor și **false** dacă indexul este deja la elementul **last** din listă
+- "**Print**" - trebuie să **print** elementul la indexul curent, solicitând Print colecției fără elemente care trebuie să **throw** o **exception** corespunzătoare cu mesajul "**Invalid Operation!**"
 
 Automat, indexul intern trebuie să ducă spre **the zero index** din listă. Programul trebuie să primească următoarele comenzi: 
 
@@ -34,21 +34,21 @@ Datele de intrare vor veni din consolă sub formă de **lines** de comenzi.
 
 Prima linie va fi **always** și va **Create** comanda în datele de intrare. 
 
-Ultima comandă primită ca fi **always** aceea de `END`.
+Ultima comandă primită ca fi **always** aceea de "**END**".
 
 ## Date de Ieșire
 
-Pentru orice comandă din input (cu excepția **END** și **Create** ) imprimați rezultatul acelei comenzi în consolă, pentru fiecare **new line**. 
+Pentru orice comandă din input (cu excepția **END** și **Create** ) imprimați rezultatul acelei comenzi în consolă, pentru fiecare **new line**.
 
 In cazul comenzilor **Move** sau **HasNext** imprimați **returned value** a metodei, în cazul unei comenzi **Print** nu este nevoie să faceți nimic în plus, metoda se va printa pe consolă. 
 
-Programul trebuie să prindă **any exceptions thrown** pentru validare (apelează Print pentru o colecție goală) și imprimă mesajele acestora în loc. 
+Programul trebuie să prindă **any exceptions thrown** pentru validare (apelează Print pentru o colecție goală) și imprimă mesajele acestora în loc.
 
 ## Constrângeri
 
 - Va exista întotdeauna doar o comandă **one Create** și va fi mereu prima comandă transmisă
 - Numărul de comenzi primite va fi **between** [1 ... 100]
-- Ultima comandă va fi întotdeauna comanda `END`
+- Ultima comandă va fi întotdeauna comanda "**END**".
 
 
 ## Exemple
@@ -237,27 +237,29 @@ END
 
 [task-description]
 ## Descriere
-Folosind `ListyIterator` din ultima problemă, extindeți prin implenetarea unei interfețe `Iterable`.
+Folosind "**ListyIterator**" din ultima problemă, extindeți prin implenetarea unei interfețe "**Iterable**".
 
 Implementați **all** metode dorite prin interfață, manual.
 
-Adăugați o nouă metodă clasei `PrintAll()`, metoda trebuie să folosească `foreach` al colecției și să imprime toate elementele pe o **single line** separate printr-un spațiu.
+Adăugați o nouă metodă clasei `PrintAll()`, metoda trebuie să folosească "**foreach**" al colecției și să imprime toate elementele pe o **single line** separate printr-un spațiu.
 
 ## Datele de intrare
 Inputul va veni din consolă ca **lines** de comenzi. Prima linie va fi întotdeauna comanda`Create`. 
 
-Ultima comandă **last** primită va fi întotdeauna comanda `END`.
+Ultima comandă **last** primită va fi întotdeauna comanda "**END**".
 
 ## Date de ieșire
-Pentru fiecare comandă din input (cu excepția comenzilor `END` și `Create`) imprimați rezultatul comenzii în consolă, fiecare pe o **new line**. 
+Pentru fiecare comandă din input (cu excepția comenzilor "**END**" și "**Create**") imprimați rezultatul comenzii în consolă, fiecare pe o **new line**. 
 
-In cazul comenzilor `Move` sau `HasNext` printați valoarea returnată a metodei, în cazul unei comenzi `Print`, nu este nevoie să faceți nimic în plus, comanda se va imprima prin consolă. 
+In cazul comenzilor "**Move**" sau "**HasNext**" printați valoarea returnată a metodei, în cazul unei comenzi "**Print**", nu este nevoie să faceți nimic în plus, comanda se va imprima prin consolă. 
 
-In cazul unei comenzi `PrintAll`, trebuie să imprimați toate elementele pe o singură linie **separated by spaces**. Programul vostru trebuie să prindă **any exceptions** apărută, din cauza validărilor și să imprime mesajele lor, în loc. 
+In cazul unei comenzi "**PrintAll**", trebuie să imprimați toate elementele pe o singură linie **separated by spaces**. 
+
+Programul vostru trebuie să prindă **any exceptions** apărută, din cauza validărilor și să imprime mesajele lor, în loc. 
 
 ## Constrângeri
 - **Do not use the built-in iterators!**
-- Va fi întotdeauna numai **one** `Create` **command** și va fi  **always** prima comandă transmisă
+- Va fi întotdeauna numai **one** "**Create**" **command** și va fi  **always** prima comandă transmisă
 - Numărul de comenzi primite va fi **between** [1 ... 100]
 - Ultima comandă **last** command va fi întotdeauna  comanda `END`
 
@@ -456,15 +458,15 @@ Cunoașteși deja structura Stivei.
 
 Elementele sunt stocate într-o colecție. 
 
-Aceasta are două funcții ( nu din programarea funcțională)  - `push` și `pop` un element.
+Aceasta are două funcții ( nu din programarea funcțională)  - "**push**" și "**pop**" un element.
 
 Primul element **popped** se află pe **last position** in colecție.
 
-Metoda `push` adaugă un element în capătul **top** al colecției și metoda `pop` returnează elementul din **top** și îl elimină **removes**.
+Metoda "**push**" adaugă un element în capătul **top** al colecției și metoda "**pop**" returnează elementul din **top** și îl elimină **removes**.
 
-Scrieți modul de implementare al `Stack<Integer>` și implementați **iterator** dorit. 
+Scrieți modul de implementare al "**Stack**\<**Integer**\>" și implementați **iterator** dorit. 
 
-Clasa Stivă trebuie să implementeze o interfață `Iterable<Integer>` și  **Iterator Class** trebuie să implementeze interfața `Iterator<Integer>`. 
+Clasa Stivă trebuie să implementeze o interfață **Iterable**\<**Integer**\>" și  **Iterator Class** trebuie să implementeze interfața "**Iterator**\<**Integer**\>". 
 
 Interatorul dorit trebuie să urmeze regulile **Abstract Data Type - Stack**. 
 
@@ -473,24 +475,24 @@ Primul element este elementul din capăt și așa mai departe.
 Iteratorii sunt folosiți doar pentru iterarea în cadrul colecției, ei  **should not** elimine sau să mute elementele. 
 
 ## Input
-Datele de intrare pot fi de doar două tipuri `Push` și `Pop`, urmate de integerii pentru comanda `Push` și **no other** dată pentru comanda `Pop`. 
+Datele de intrare pot fi de doar două tipuri "**push**" și "**pop**", urmate de integerii pentru comanda "**push**" și **no other** dată pentru comanda "**pop**". 
 
 Fiecare comandă va veni pe o linie separată. 
 
 Format:
-- `Push {element, secondElement…}`
-- `Pop`
+- "**Push** \{**element, secondElement...**\}"
+- "**Pop**"
 
 ## Output
-Programul se va opri când vom primi comanda `END`. 
+Programul se va opri când vom primi comanda "**END**". 
 
 Pentru fiecare stivă  **twice** imprimăm toate elementele. Fiecare element trebuie să fie pe o **new line**.
 
 ## Constrângeri
-- Elementele din comanda `Push` vor fi **valid** integeri **between** [2 ^ -32 ... 2 ^ 32 - 1]
-- Comanda va fi întotdeauna **valid** (întotdeauna va fi fie `Push`, `Pop`, sau `END`)
-- Nu vor putea fi mai mult de **16** elemente în comanda `Push`
-- Dacă comanda `Pop` **could not** să fie executată așa cum ne așteptăm( e.g. nu există elemente în stivă), imprimăm în consolă: `No elements`
+- Elementele din comanda "**Push**" vor fi **valid** integeri **between** [2 ^ -32 ... 2 ^ 32 - 1]
+- Comanda va fi întotdeauna **valid** (întotdeauna va fi fie "**Push**", "**Pop**", sau "**END**")
+- Nu vor putea fi mai mult de **16** elemente în comanda "**Push**"
+- Dacă comanda "**Pop**" **could not** să fie executată așa cum ne așteptăm( e.g. nu există elemente în stivă), imprimăm în consolă: "**No elements**"
 
 ## Exemple
 | **Intrare**|**Ieșire**|
@@ -499,6 +501,7 @@ Pentru fiecare stivă  **twice** imprimăm toate elementele. Fiecare element tre
 | Pop | 1 |
 | Pop | 2 |
 | END | 1 |
+
 
 | **Intrare**|**Ieșire**|
 | --- | --- |
@@ -510,6 +513,7 @@ Pentru fiecare stivă  **twice** imprimăm toate elementele. Fiecare element tre
 |  | 3 |
 |  | 2 |
 |  | 1 |
+
 
 | **Intrare**|**Ieșire**|
 | --- | --- |
@@ -664,7 +668,7 @@ Avem o mică, fragilă **Frog**, și un **Lake** cu numere.
 
 Imaginați-vă că **Frog** aparține **Lake**.
 
- **Frog jumps** numai când primim comanda`END`
+ **Frog jumps** numai când primim comanda "**END**"
 
 Când **Frog** începe să sară, imprimăm în consolă **each number** prin care **Frog** a sărit. 
 
@@ -676,19 +680,19 @@ Folosing paternul - mai întâi toate indexurile pare, în ordine **ascending** 
 
 Considerăm indexul **zero** ca fiind **even**.
 
-Povestea pe scurt: Creați o Clasă `Lake`, care trebuie să implementeze interfața - `Iterable`. 
+Povestea pe scurt: Creați o Clasă "**Lake**", care trebuie să implementeze interfața - "**Iterable**" . 
 
-Inăuntrul  `Lake`, creați o clasă - `Frog`și implementați interfața `Iterator`. 
+Inăuntrul  "**Lake**", creați o clasă - "**Frog**" și implementați interfața "**Iterator**". 
 
 Veți primi **only integers**.
 
 ## Input
 Datele de intrare vor consta din două linii. Prima linie-numerele **initial** din lake, **separated** prin virgulă și un singur spațiu.
 
-A doua linie de comandă este `END`.
+A doua linie de comandă este "**END**".
 
 ## Output
-Când primiți `END`, datele de intrare s-au terminat. 
+Când primiți "**END**", datele de intrare s-au terminat. 
 
 **Foreach** colecție de numere, **Frog** a sărit peste și a printat **each** element.
 
@@ -696,17 +700,19 @@ Ieșirea va fi imprimată pe o **single** linie.
 
 Format:
 
-`{number}, {second number}, {third number} ...`
+"\{**number**\}, \{**second number**\}, \{**third number**\} ..."
 
 ## Constrângeri
 - Numerele **Lake's**  vor fi integeri **valid** în gama **range** [2 ^ -32 ... 2 ^ 32 - 1]
-- Comanda va fi întotdeauna **valid** - `END`
+
+- Comanda va fi întotdeauna **valid** - "**END**"
 
 ## Exemple
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 1, 2, 3, 4, 5, 6, 7, 8 | 1, 3, 5, 7, 2, 4, 6, 8 |
 | END |  |
+
 
 | **Intrare**|**Ieșire**|
 | --- | --- |
@@ -803,11 +809,11 @@ Este o interfață comparabilă pe care deja, probabil, o știți.
 
 Sarcina este simplă.
 
-Creați o **Class Person**.
+Creați o **Class** "**Person**".
 
 Fiecare persoană trebuie să aibă **name**, **age** și **town**.
 
-Trebuie să implementați interfața - `Comparable` și să încercați să scrieți peste metoda  `compareTo`.
+Trebuie să implementați interfața - "**Comparable**" și să încercați să scrieți peste metoda "**compareTo**".
 
 Când comparați două persoane, în primul rând trebuie să le comparați  **names**, apoi, **age** și în final, dar nu în ultimul rând, **town**.
 
@@ -815,9 +821,9 @@ Când comparați două persoane, în primul rând trebuie să le comparați  **n
 ## Input
 Pe o singură linie, veți primi oamenii în formatul :
 
-`{name} {age} {town}`
+"\{**name**\} \{**age**\} \{**town**\}"
 
-Colectați datele până veți primi `END`
+Colectați datele până veți primi "**END**"
 
 După aceea, veți primi un integer **N** - persoana cu numărul **Nth** din colecția voastră.
 
@@ -826,12 +832,12 @@ Pe o singură linie de ieșire, veți aduce statisticile, câți oameni sunt **e
 
 Format:
 
-`{number of equal people} {number of not equal people} {total number of people}`
+"\{**number of equal people**\} \{**number of not equal people**\} \{**total number of people**\}"
 
 ## Constrângeri
 - Numele, vârstele și adresele vor fi **valid**
 - Numărul de intrare va fi întotdeauna un integer **valid** în **range** [2 ... 100]
-- Dacă nu avem persoane egale, imprimăm: `No matches`
+- Dacă nu avem persoane egale, imprimăm: "**No matches**"
 
 ## Exemple
 | **Intrare**|**Ieșire**|
@@ -840,6 +846,7 @@ Format:
 | George 14 San Francisco |  |
 | END |  |
 | 2 |  |
+
 
 | **Intrare**|**Ieșire**|
 | --- | --- |
@@ -949,9 +956,9 @@ Dacă aveți mai multe moduri de a rezolva o problemă (să spunem să sortați 
 
 O implementare celebră a patternului în Java este metoda `Collections.sort()` care necesită **Comparator**.
 
-Creați o clasă `Person` care cuprinde **name** și **age**. 
+Creați o clasă "**Person**" care cuprinde **name** și **age**. 
 
-Creați 2 Comparatori pentru Person (clase care implementează `Comparator<Person>` **interface**). 
+Creați 2 Comparatori pentru Person (clase care implementează "**Comparator**\<**Person**\>" **interface**). 
 
 Primul comparator trebuie să compare oamenii, în funcție de **length of their name** ca prim parametru. 
 
@@ -964,7 +971,7 @@ Creați 2 **TreeSets** pentru tipurile de persoane, prima va implementa comparat
 ## Input
 Pe prima linie, veți primi un număr  **N**. 
 
-Pe fiecare dintre următoarele **N** linii, veți primi informații despre oameni, în formatul `{name} {age}`. 
+Pe fiecare dintre următoarele **N** linii, veți primi informații despre oameni, în formatul "\{**name**\} \{**age**\}". 
 
 Adăugați oamenii din datele de intrare în **both** seturi.
 
@@ -974,8 +981,11 @@ Adăugați oamenii din datele de intrare în **both** seturi.
 Începeți cu un set care implementează comparatorul de nume. 
 
 ## Constrângeri
-- Numele unei persoane va fi un șir care va conține **only** caractere alphanumerice cu lungimea **between** simblourile[1 ... 50]
+
+- Numele unei persoane va fi un șir care va conține **only** caractere alphanumerice cu lungimea **between** simblourile [1 ... 50]
+
 - Vârsta unei persoane va fi un integer **positive** **between** [1 ... 100]
+
 - Numărul de oameni **N** va fi un integer **positive**  **between** [0 ... 100]
 
 ## Exemple
@@ -1132,19 +1142,19 @@ aria 33
 
 [task-description]
 ## Descriere
-Creați o **class** `Person` după **name** și **age**.
+Creați o **class** "**Person**" după **name** și **age**.
 
 O persoană cu  **same** nume și vârstă trebuie să fie considerată una singură, să scrie peste orice altă metodă pentru a întări această logică.
 
 Clasa voastră trebuie să funcționeze cu **both** standarde și colecții. 
 
-Creați o `TreeSet` și o `HashSet` cu tipuri de Persoane.
+Creați o "**TreeSet**" și o "**HashSet**" cu tipuri de Persoane.
 
 ## Input
 
 Pe prima linie, veți primi un număr **N**. 
 
-Pe fiecare dintre următoarele **N** linii, veți primi informații despre oameni, în formatul `{name} {age}`. 
+Pe fiecare dintre următoarele **N** linii, veți primi informații despre oameni, în formatul "\{**name**\} \{**age**\}". 
 
 Adăugați oamenii din datele de intrare în **both** seturi (ambele trebuie să cuprindă toți oamenii din datele de intrare). 
 
@@ -1152,13 +1162,15 @@ Adăugați oamenii din datele de intrare în **both** seturi (ambele trebuie să
 
 Datele de ieșire trebuie să constea din **exactly** 2 linii. 
 
-Pe prima, vom imprima **size** a `TreeSet` și pe cea de-a doua- **size** pentru `HashSet`.
+Pe prima, vom imprima **size** a "**TreeSet**" și pe cea de-a doua- **size** pentru "**HashSet**".
 
 ## Constrângeri
 
-- Numele unei persoane va fi un șir care conține **only** caractere alphanumerice cu lungimi **between** [1 ... 50].
-- Vârsta unei persoane va fi un integer **positive** **between** [1 ... 100].
-- Numărul de persoane **N** va fi un integer pozitiv **between** [0 ... 100].
+- Numele unei persoane va fi un șir care conține **only** caractere alphanumerice cu lungimi **between** [1 ... 50]
+
+- Vârsta unei persoane va fi un integer **positive** **between** [1 ... 100]
+
+- Numărul de persoane **N** va fi un integer pozitiv **between** [0 ... 100]
 
 ## Hint
 
@@ -1176,6 +1188,7 @@ Puteți căuta online pentru implementarea hashCode - nu este nevoie să fie per
 | Penelope 1 | Penelope 1 |
 |  | Peter 20 |
 |  | John 100 |
+
 
 | **Intrare**|**Ieșire**|
 | --- | --- |
@@ -1322,7 +1335,7 @@ Cereți angajaților să creeze un program care să stocheze toate informațiile
 Fiecare animal trebuie să aibă **name**, **age** și **kind**.
 
 
-Aplicația voastră trebuie să poată face câteva operații de bază, ca **creating** un animal, **creating** o clinică, **adding** un animal clinicii,  **releasing** un animal din clinică, **printing** informații despre o cabinet **specific** din clinică sau să printeze informația despre  **all** camerele din clinică. 
+Aplicația voastră trebuie să poată face câteva operații de bază, ca **creating** un animal, **creating** o clinică, **adding** un animal clinicii, **releasing** un animal din clinică, **printing** informații despre o cabinet **specific** din clinică sau să printeze informația despre  **all** camerele din clinică. 
 
 Clinicile trebuie să aibă un număr **odd** de camere, să încerce să creeze o clinică cu un număr **even** și să poată să **fail** și **throw** o **exception**.
 
@@ -1352,50 +1365,50 @@ Procesul de eliberare a animalelor nu este atăt de simplu când apelăm metoda 
 
 Dacă am ajuns la ultima cameră, vom începe de la **first** (1) și vom merge din nou spre dreapta până ajungem la **center** (3). 
 
-Dacă găsim deja un animal, il **remove** din colecție, oprim căutarea și **return** `true`, dacă un animal este  **NOT** found, operația **returns** `false`.
+Dacă găsim deja un animal, il **remove** din colecție, oprim căutarea și **return** "**true**", dacă un animal este  **NOT** found, operația **returns** "**false**".
 
-Când o comandă `Print` este apelată pentru o cameră, dacă aceasta conține deja un animal vom imprima pe o singură linie animalul, în formatul `{pet name} {pet age} {pet kind}`. 
+Când o comandă "**Print**" este apelată pentru o cameră, dacă aceasta conține deja un animal vom imprima pe o singură linie animalul, în formatul "\{**pet name**\} \{**pet age**\} \{**pet kind**\}". 
 
 Alternativ, dacă acea cameră este goală, imprimăm **"Room empty"** în loc. 
 
-Când comanda `Print` pentru clinică este apelată trebuie să imprimăm **all** camerele din clinică, în **order** numerelor lor. 
+Când comanda "**Print**" pentru clinică este apelată trebuie să imprimăm **all** camerele din clinică, în **order** numerelor lor. 
 
 ### Comenzi
 
 | **Command** | **Return Type** | **Description** |
 | --- | --- | --- |
-| `Create Pet {name} {age} {kind}` | void | Creates a pet with the specified name and age (true if the operation is successful and false if it is not) |
-| `Create Clinic {name} {rooms}` | void | Creates a Clinic with the specified name and number of rooms (if the rooms are not odd, throws an exception) |
-| `Add {pet's name} {clinic's name}` | boolean | This command should add the given pet in the specified clinic (true if the operation is successful and false if it is not) |
-| `Release {clinic's name}` | boolean | This command should release an animal from the specified clinic (true if the operation is successful and false if it is not) |
-| `HasEmptyRooms {clinic's name}` | boolean | Returns whether the clinic has any empty rooms (true if it has and false if it does not) |
-| `Print {clinic's name}` | void | This command should print each room in the specified clinic, ordered by room number |
-| `Print {clinic's name} {room}` | void | Prints the pets that are currently being treated in the specified room on a single line |
+| Create Pet \{name\} \{age\} \{kind\} | void | Creates a pet with the specified name and age (true if the operation is successful and false if it is not) |
+| Create Clinic \{name\} \{rooms\} | void | Creates a Clinic with the specified name and number of rooms (if the rooms are not odd, throws an exception) |
+| Add \{pet's name\} \{clinic's name\} | boolean | This command should add the given pet in the specified clinic (true if the operation is successful and false if it is not) |
+| Release \{clinic's name\} | boolean | This command should release an animal from the specified clinic (true if the operation is successful and false if it is not) |
+| HasEmptyRooms \{clinic's name\} | boolean | Returns whether the clinic has any empty rooms (true if it has and false if it does not) |
+| Print \{clinic's name\} | void | This command should print each room in the specified clinic, ordered by room number |
+| Print \{clinic's name\} \{room\} | void | Prints the pets that are currently being treated in the specified room on a single line |
 
 ## Input
 
 On the first line, you will be given an integer **N** - the number of commands you will receive. On each of the next **N** lines, you will receive a command. 
 
-Commands and parameters will always be **correct** ( `Add`, `Release`, `HasEmptyRooms` and `Print` commands will always be passed to **existing** clinics/pets), except for the number of rooms in the **Create Clinic** command which can be any **valid** integer **between 1 and 101**.
+Commands and parameters will always be **correct** ( "**Add**", "**Release**", "**HasEmptyRooms**" and "**Print**"  commands will always be passed to **existing** clinics/pets), except for the number of rooms in the **Create Clinic** command which can be any **valid** integer **between 1 and 101**.
 
 ## Output
 
 Pentru fiecare comandă cu un **return** boolean primit prin date de intrare, trebuie să imprimăm valoarea returnată pe o linie **separate**. 
 
-In cazul că metoda **throwing** o **exception** (ca atunci când încercăm să creăm o clinică cu număr impar de numere sau vrem să adăugăm un animal care nu există) trebuie să **catch** excepțiile și în loc să imprimăm `Invalid Operation!`. 
+In cazul că metoda **throwing** o **exception** (ca atunci când încercăm să creăm o clinică cu număr impar de numere sau vrem să adăugăm un animal care nu există) trebuie să **catch** excepțiile și în loc să imprimăm "**Invalid Operation!**".  
 
-Comanda `Print` cu o clinică și o cameră, trebuie să imprime informația despre acea cameră în formatul **specified** mai sus.
+Comanda "**Print**"  cu o clinică și o cameră, trebuie să imprime informația despre acea cameră în formatul **specified** mai sus.
 
-Comanda `Print` cu doar o singură clinică trebuie să imprime informația **for each** cameră din clinică, în **order** numerelor lor. 
+Comanda "**Print**"  cu doar o singură clinică trebuie să imprime informația **for each** cameră din clinică, în **order** numerelor lor. 
 
 ## Constrângeri
 
-- Numărul de comenzi **N** - va fi un integer valid **between** [1 ... 1000], nu este nevoie să verificăm explicit.
-- **Pet names** , **Clinic names** , și **kind** vor fi șiruri care vor consta din caractere alfabetice cu lungimea **between** [1 ... 50].
-- **Pet age** va fi un integer pozitiv **between** [1 ... 100].
-- **Clinic rooms** vor fi integeri pozitivi **between** [1 ... 101].
-- **Room number** in comanda **Print** va fi întotdeauna **between 1** și **number of rooms** în acea clinică.
-- Inputul va consta **only** din **correct commands** și vor avea **always** tipul corect de parametri.
+- Numărul de comenzi **N** - va fi un integer valid **between** [1 ... 1000], nu este nevoie să verificăm explicit
+- **Pet names** , **Clinic names** , și **kind** vor fi șiruri care vor consta din caractere alfabetice cu lungimea **between** [1 ... 50]
+- **Pet age** va fi un integer pozitiv **between** [1 ... 100]
+- **Clinic rooms** vor fi integeri pozitivi **between** [1 ... 101]
+- **Room number** in comanda **Print** va fi întotdeauna **between 1** și **number of rooms** în acea clinică
+- Inputul va consta **only** din **correct commands** și vor avea **always** tipul corect de parametri
 
 ## Exemple
 | **Intrare**|**Ieșire**|
@@ -1621,13 +1634,13 @@ Elephant 4 Elephant
 ## Descriere
 Trebuie să scrieți o metodă simplificată de implementare a unei liste generice Linked List care are un Iterator. 
 
-Lista trebuie să suporte operațiile `Add` și `Remove` care trebuie să arate numărul de elemente pe care le are cu o funcție`getSize` și trebuie să aibă un iterator implementat (poate fi **foreachable**).
+Lista trebuie să suporte operațiile "**Add**" și "**Remove**" care trebuie să arate numărul de elemente pe care le are cu o funcție "**getSize**" și trebuie să aibă un iterator implementat (poate fi **foreachable**).
 
-Metoda `add` poate adăuga un element nou la finalul colecției. 
+Metoda "**add**" poate adăuga un element nou la finalul colecției. 
 
-Metoda `remove` trebuie să elimine prima apariție a unui obiect de la începutul colecției, dacă elementul este eliminat cu succes, metoda **returns true**, altfel, dacă elementul nu este în colecție, metoda trebuie să **return false**.
+Metoda "**remove**" trebuie să elimine prima apariție a unui obiect de la începutul colecției, dacă elementul este eliminat cu succes, metoda **returns true**, altfel, dacă elementul nu este în colecție, metoda trebuie să **return false**.
 
-Metoda `getSize` trebuie să **return** numărul de elemente care se află în lista curentă. 
+Metoda "**getSize**" trebuie să **return** numărul de elemente care se află în lista curentă. 
 
  **iterator** trebuie să itereze peste colecție, începând de la primul element introdus. 
 
@@ -1638,21 +1651,21 @@ Pe prima linie de intrare, vom primi un număr **N**.
 
 Pe fiecare dintre următoarele **N** linii, vom primi o comandă într-unul dintre următoarele formate :
 
-- `Add {number}` - adaugă un număr listei
-- `Remove {number}` - elimină prima apariție a numărului din linked list. Dacă nu există un astfel de element, această comandă lasă colecția **unchanged**
+- "**Add** \{**number**\}" - adaugă un număr listei
+- "**Remove** \{**number**\}" - elimină prima apariție a numărului din linked list. Dacă nu există un astfel de element, această comandă lasă colecția **unchanged**
 
 ## Output
 
 Datele de ieșire vor consta din exact 2 linii.
 
-Pe prima linie de cod, vom printa rezultatele apelării funcției `getSize` pe lista Linked list. 
+Pe prima linie de cod, vom printa rezultatele apelării funcției "**getSize**" pe lista Linked list. 
 
 Pe următoarele două linii, vom imprima **all elements** din colecție, apelând **for each** din colecție.
 
 ## Constrângeri
 
 - Toate numerele din intrare vor fi integeri **valid** cuprinși **between** [2 ^ -32 ... 2 ^ 32 - 1]
-- Toate comenzile primite la intrare vor fi **valid** (numai `Add` sau `Remove`)
+- Toate comenzile primite la intrare vor fi **valid** (numai "**Add**" sau "**Remove**")
 - Numărul **N** va fi un integer pozitiv **between** [1 ... 500]
 
 ## Hint
@@ -1668,6 +1681,7 @@ Puteți folosi o listă Linked List din **Workshop**.
 | Remove 3 |  |
 | Remove 7 |  |
 | Add 20 |  |
+
 
 | **Intrare**|**Ieșire**|
 | --- | --- |

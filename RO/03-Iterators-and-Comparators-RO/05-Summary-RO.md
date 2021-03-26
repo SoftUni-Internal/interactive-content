@@ -27,7 +27,7 @@ class OuterClass
 ```
 
 - Ce reprezintă `Iterable<T>`?
-   - Funcția `Iterator<T>`
+   - funcția `Iterator<T>`
 
 ```java
 public class Persons implements Iterable {
@@ -40,7 +40,7 @@ public class Persons implements Iterable {
 ```
 
 - Ce reprezintă `Comparable<T>` 
-    - Funcția `Comparator<T>`
+    - funcția `Comparator<T>`
 
 ```java
 import java.time.LocalDate;

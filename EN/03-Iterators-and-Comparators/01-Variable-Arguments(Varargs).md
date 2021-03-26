@@ -35,9 +35,9 @@ public class Main {
 
 In the example above, the method named `display()` accepts varargs of type String.
 
-The `values` variable is implicitly declared as an array of type String.
+The "**values**" variable is implicitly declared as an array of type String.
 
-Therefore, inside the method, the `values` variable is accessed using the array syntax.
+Therefore, inside the method, the "**values**" variable is accessed using the array syntax.
 
 As you can see, we are invoking this method multiple times by passing a **different number of arguments** each time we invoke it.
 
@@ -94,7 +94,7 @@ void method(String a, int... b){
 
 [task-description]
 # Description
-Create a `Book` class based on the UML diagram:
+Create a "**Book**" class based on the UML diagram:
 
 [image assetsSrc="java-oop-basics-uml-book.png" /]
 
@@ -103,13 +103,13 @@ Create a `Book` class based on the UML diagram:
 | ---- |
 |- title: String |
 |- year: int |
-|- authors: List\<String> | 
+|- authors: List\<String\> | 
 |- setTitle(String) |
 |- setYear(String) |
 |- setAuthors(String…) |
 |+ getTitle(): String |
 |+ getYear(): int |
-|+ getAuthors(): List\<String> |
+|+ getAuthors(): List\<String\> |
 
 
 You can use only **one constructor**. 

@@ -85,7 +85,7 @@ In următorul exemplu, vom compara **two Student objects** în funcție de vârs
 
 Comparatorul nostru de Vârstă va implementa **Comparator** de tip **Student**.
 
-Metoda `compare()` ia două obiecte de tip studenți `(Student st1, Student st2)` ca argumente.
+Metoda `compare()` ia două obiecte de tip studenți "(**Student st1, Student st2**)" ca argumente.
 
 Implementarea este simplă, returnează :
 
@@ -120,7 +120,7 @@ public class AgeComparator implements Comparator<Student> {
 
 [task-description]
 ## Descriere
-Extindem Book prin implementarea `Comparable<Book>`.
+Extindem Book prin implementarea "**Comparable**\<**Book**\>".
 
 Book trebuie să fie **compared by title**. 
 
@@ -130,7 +130,7 @@ Extindem **Book** din diagrama UML de mai jos:
 
 [image assetsSrc="java-oop-basics-uml-book-comparable1.png" /]
 
-| `<<Comparable<Book>>>` |
+| "\<\<**Comparable**\<**Book**\>\>\>" |
 | --- |
 | **Book** |
 |- title: String |
@@ -336,7 +336,7 @@ Test Passed!
 ## Descriere
 Creați o clasă BookComparator din diagrama UML diagram de mai jos: 
 
-| `<<Comparator<Book>>>` |
+| "\<\<**Comparator**\<**Book**\>\>\>" |
 | --- |
 | **BookComparator** |
 |+ compare(Book, Book): int |
@@ -370,7 +370,6 @@ public static void main(String[] args) {
 	    System.out.println(book.getTitle() + book.getYear());
     }
 }
-
 ```
 
 [/task-description]

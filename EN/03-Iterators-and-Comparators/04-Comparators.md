@@ -94,7 +94,7 @@ In the following example, we will compare **two Student objects** by their age v
 
 Our AgeComparator class implements **Comparator** of type **Student**.
 
-The `compare()` method takes two Student `(Student st1, Student st2)` objects as arguments.
+The `compare()` method takes two Student "(**Student st1, Student st2**)" objects as arguments.
 
 The implementation is simple, we return:
 
@@ -129,7 +129,7 @@ public class AgeComparator implements Comparator<Student> {
 
 [task-description]
 # Description
-Expand Book by implementing `Comparable<Book>`.
+Expand Book by implementing "**Comparable**\<**Book**\>".
 
 Books have to be **compared by title**. 
 
@@ -140,7 +140,7 @@ Expand the **Book** class based on the UML diagram below:
 
 [image assetsSrc="java-oop-basics-uml-book-comparable1.png" /]
 
-| `<<Comparable<Book>>>` |
+| "\<\<**Comparable**\<**Book**\>\>\>" |
 | --- |
 | **Book** |
 |- title: String |
@@ -350,7 +350,7 @@ Create a class **BookComparator** from the UML diagram below:
 [image assetsSrc="java-oop-basics-uml-book-comparable1.png" /]
 
 
-| `<<Comparator<Book>>>` |
+| "\<\<**Comparator**\<**Book**\>\>\>" |
 | --- |
 | **BookComparator** |
 |+ compare(Book, Book): int |
@@ -384,7 +384,6 @@ public static void main(String[] args) {
 	    System.out.println(book.getTitle() + book.getYear());
     }
 }
-
 ```
 
 
