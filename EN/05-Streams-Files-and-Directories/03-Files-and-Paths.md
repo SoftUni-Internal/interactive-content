@@ -396,7 +396,8 @@ years and all his experience of life. And if we are right in assigning
 ```
 [/input]
 [output]
-```(_J. A. Symonds_.)
+```
+(_J. A. Symonds_.)
           Is lone as some volcanic isle;
         For I must ne'er love him whom thou dost hate."
         For thee, against myself I'll vow debate,
