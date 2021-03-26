@@ -48,7 +48,7 @@ The sum must be formatted to the second digit after the decimal point.
 [hints]
 [hint]
 Determine if there will be a discount if the Smiths are staying more than 7 days.
-If there's a discount, calculate how much is it and subtract it from the price per 1 night.
+If there's a discount, calculate how much is it and subtract it from the price per night.
 [/hint]
 [hint]
 Calculate the price for the all the nights and add the additional costs.
