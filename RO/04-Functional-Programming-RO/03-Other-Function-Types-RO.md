@@ -104,16 +104,17 @@ Utilizați un `Predicate<String>` ca **if-condition**.
 
 
 
-# Exemple
+## Exemple
 
-## Example 1
+
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | The following example shows how to use Predicate | 2
 |  | The |  
 |  | Predicate |
 
-## Example 2
+
+
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | Write a program that reads one line of text from console. 
@@ -247,9 +248,9 @@ Ordinea prețurilor trebuie să rămână aceeași.
 
 
 
-# Exemple
+## Exemples
 
-## Example 1
+
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 1.38, 2.56, 4.4 | Prices with VAT:
@@ -257,7 +258,7 @@ Ordinea prețurilor trebuie să rămână aceeași.
 |  | 3.07 |
 |  | 5.28 |
 
-## Example 2
+
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 1, 3, 5, 7 | Prices with VAT: |

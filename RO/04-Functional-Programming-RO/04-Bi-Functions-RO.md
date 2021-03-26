@@ -1,4 +1,4 @@
-# Bi Functions
+# BiFunctions
 
 [slide hideTitle]
 
@@ -50,20 +50,20 @@ Write a program that reads **one line of Integers** separated by a comma and a s
 
 Print the **count of the numbers** and **their sum**. 
 
-This time use a `BiFunction`.
+This time use a **BiFunction**.
 
 ## Hints
 Use `BiFunction<Integer, String, Integer>` for parsing integers after you split them to a String array.
 
 # Examples
 
-## Example 1
+
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 4, 2, 1, 3, 5, 7, 1, 4, 2, 12 | Count = 10 |
 |  | Sum = 41 |
 
-## Example 2
+
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 2, 4, 6  | Count = 3 |
@@ -210,11 +210,9 @@ Apoi citiți încă **trei rânduri** cu:
 **Scrieți propriile metode.**
 
 
-## Exemple
+## Exemples
 
- 
-## Example 1
-| **Intrare**|**Ieșire**|
+ | **Intrare**|**Ieșire**|
 | --- | --- |
 | 5 | Peter - 20 |
 | Peter - 20 | Maria - 29 |  
@@ -226,7 +224,7 @@ Apoi citiți încă **trei rânduri** cu:
 | 20 | |
 | name age | |
 
-## Example 2
+
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 5 | Peter |

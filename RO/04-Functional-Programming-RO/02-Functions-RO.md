@@ -154,13 +154,13 @@ Imprimați **cantintatea** numerelor și **suma** lor.
 
 # Exemple
 
-## Example 1
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 4, 2, 1, 3, 5, 7, 1, 4, 2, 12 | Count = 10
 |  | Sum = 41 |
 
-## Example 2
+
+
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 2, 4, 6 | Count = 3 |

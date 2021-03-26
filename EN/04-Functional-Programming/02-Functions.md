@@ -28,7 +28,7 @@ What is a **pure function**?
 
 Examples of **pure functions** are:
 
-## ``f(x) = √x`` 
+## `f(x) = √x`
 - The square root function: **"square root of x"**, which takes a number as input and returns another number as output.
 
 - The function **"list sort"**, which takes a list as input and returns a new list as output
@@ -49,7 +49,7 @@ There are many **functional programming** languages and languages that incorpora
 
 **Purely functional languages** are **unpractical** and rarely used, because it is more complicated to program without maintaining a state.
 
-Functional software developers need to **switch their thinking style** from the traditional **algorithmic thinking** to **functional thinking**. 
+Functional software developers need to **switch their thinking style** from the traditional **algorithmic thinking** to **functional thinking**.
 
 - The program in functional languages is a **pure function** (which calls other pure functions) without side effects
 
@@ -117,7 +117,7 @@ int increment (int number) {
 }
 ```
 
-We can use the function with **`.apply()`**
+We can use the function with `.apply()`
 
 
 ``` java
@@ -158,17 +158,17 @@ Write a program that reads one line of **Integers** separated by **", "**.
 
 Print the **count** of the numbers and their **sum**.
 
-- Use ```Function<String, Integer>``` for **parsing** integers after you split them to a **String** array
+- Use `Function<String, Integer>` for **parsing** integers after you split them to a **String** array
 
 # Examples
 
-## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | 4, 2, 1, 3, 5, 7, 1, 4, 2, 12 | Count = 10
 |  | Sum = 41 |
 
-## Example 2
+
+
 | **Input** | **Output** |
 | --- | --- |
 | 2, 4, 6 | Count = 3 |

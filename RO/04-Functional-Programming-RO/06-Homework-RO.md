@@ -22,23 +22,23 @@ Fiecare șir ar trebui să fie tipărit pe o nouă linie.
 
 Folosiți un `Consumer<T>`.
 
-# Exеmple
+# Exеmples
 
-## Example 1
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | Peter George Adam | Peter |
 |  | George |
 |  | Adam |
 
-## Example 2
+
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | Nelson Grand Hubert | Nelson |
 |  | Grand |
 |  | Hubert |
 
-## Example 3
+
+
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | Alan Nick Connor | Alan |
@@ -160,9 +160,7 @@ Scrieți un program care **citește o colecție de nume** ca șiruri de pe conso
 
 Folosiți un  `Consumer<T>`.
 
-# Examples
-
-## Example 1
+## Examples
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | Henry Alex Anthony Stanley | Sir Henry |
@@ -170,14 +168,14 @@ Folosiți un  `Consumer<T>`.
 |  | Sir Anthony |
 |  | Sir Stanley |
 
-## Example 2
+
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | Derryl Isaac David | Sir Derryl |
 |  | Sir Isaac |
 |  | Sir David |
 
-## Example 3
+
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | Patrick Christopher | Sir Patrick |
@@ -294,16 +292,10 @@ public class Main {
 ## Descriere
 Scrieți un program simplu care **citește** un **set de numere** de pe consolă și găsește **cel mai mic** dintre **numerele** folosind un simplu `Function<Integer[], Integer>`.
 
-## Exemple
-
-## Example 1
+## Exemples
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 1 4 3 2 1 7 13 | 1 |
-
-## Example 2
-| **Intrare**|**Ieșire**|
-| --- | --- |
 | 4 5 -2 3 -5 8 | -5 |
 
 [/task-description]
@@ -388,13 +380,12 @@ public class Main {
 
 Pe prima linie, aveți o **listă de numere**.
 
-Pe rândurile următoare vi se transmit diferite **comenzi** pe care trebuie să le aplicați tuturor numerelor din listă: `add` \-\> adds 1; `multiply` \-\> multiplies by 2; `subtract` \-\> subtracts 1; `print` \-\> imprimă toate numerele pe **o nouă linie**.
+Pe rândurile următoare vi se transmit diferite **comenzi** pe care trebuie să le aplicați tuturor numerelor din listă: "**add**" \-\> adds 1; "**multiply**" \-\> multiplies by 2; "**subtract**" \-\> subtracts 1; "**print**" \-\> imprimă toate numerele pe **o nouă linie**.
 
-Intrarea se va încheia cu o comandă `end`, după care trebuie să imprimați rezultatul.
+Intrarea se va încheia cu o comandă "**end**", după care trebuie să imprimați rezultatul.
 
-# Exemple
+# Exemples
 
-## Example 1
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 1 2 3 4 5 | 3 4 5 6 7 |
@@ -403,7 +394,7 @@ Intrarea se va încheia cu o comandă `end`, după care trebuie să imprimați r
 | print |  |
 | end |  |
 
-## Example 2
+
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 5 10 | 9 19 |
@@ -527,15 +518,14 @@ public class Main {
 
 Scrieți un program care **inversează** o colecție și **elimină** elemente care sunt **divizibile** cu un număr întreg **n** dat.
 
-# Exemple
-
-## Example 1
+## Exemples
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 1 2 3 4 5 6 | 5 3 1 |
 | 2 |  |
 
-## Example 2
+
+
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 20 10 40 30 60 50 | 50 40 10 20 |
@@ -638,15 +628,13 @@ Pe a doua linie, veți primi o matrice **șir** cu câteva nume.
 
 Imprimați numele, trecând **condiția** în predicat.
 
-# Exemple
-
-## Example 1
+## Exemple
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 4 | Adam |
 | Kenneth Adam Kevin Yasmin |  |
 
-## Example 2
+
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 4 | Gaby |
@@ -746,18 +734,13 @@ Sarcina dvs. este să **colectați** numerele întregi de pe consolă, să găsi
 Dacă există **mai mult** decât un astfel de element, imprimați indexul celui **din dreapta**.
 
 ## Sugestii
+
 - Folosiți `Function<List<Integer>, Integer>` sau ceva similar
 
-# Exemple
-
-## Example 1
+# Exemples
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 1 2 3 0 4 5 6 | 3 |
-
-## Example 2
-| **Intrare**|**Ieșire**|
-| --- | --- |
 | 123 10 11 3 | 3 |
 
 [/task-description]
@@ -836,16 +819,10 @@ Scrieți un **comparator** personalizat care **sortează** toate numerele pare �
 
 Treceți-l la o funcție `Arrays.sort()` și imprimați rezultatul.
 
-# Exemple
-
-## Example 1
+## Exemples
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 1 2 3 4 5 6 | 2 4 6 1 3 5 |
-
-## Example 2
-| **Intrare**|**Ieșire**|
-| --- | --- |
 | -3 2 | 2 -3 |
 
 [/task-description]
@@ -931,15 +908,13 @@ Găsiți toate **numerele** din intervalul **1 ... N** care sunt **divizibile** 
 
 Folosiți **predicate**.
 
-# Exemple
-
-## Example 1
+## Exemples
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 10 | 2 4 6 8 10 |
 | 1 1 1 2 |  |
 
-## Example 2
+
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 100 | 20 40 60 80 100 |

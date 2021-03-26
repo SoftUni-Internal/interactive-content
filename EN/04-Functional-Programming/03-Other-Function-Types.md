@@ -111,16 +111,16 @@ Use a `Predicate<String>`like an **if-condition**.
 
 
 
-# Example
+## Examples
 
-## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | The following example shows how to use Predicate | 2
 |  | The |  
 |  | Predicate |
 
-## Example 2
+
+
 | **Input** | **Output** |
 | --- | --- |
 | Write a program that reads one line of text from console. 
@@ -256,7 +256,7 @@ The order of the prices must remain the same.
 
 # Examples
 
-## Example 1
+
 | **Input** | **Output** |
 | --- | --- |
 | 1.38, 2.56, 4.4 | Prices with VAT:
@@ -264,7 +264,7 @@ The order of the prices must remain the same.
 |  | 3.07 |
 |  | 5.28 |
 
-## Example 2
+
 | **Input** | **Output** |
 | --- | --- |
 | 1, 3, 5, 7 | Prices with VAT: |

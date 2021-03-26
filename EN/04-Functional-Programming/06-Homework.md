@@ -24,21 +24,20 @@ Use a `Consumer<T>`.
 
 # Examples
 
-## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | Peter George Adam | Peter |
 |  | George |
 |  | Adam |
 
-## Example 2
+
 | **Input** | **Output** |
 | --- | --- |
 | Nelson Grand Hubert | Nelson |
 |  | Grand |
 |  | Hubert |
 
-## Example 3
+
 | **Input** | **Output** |
 | --- | --- |
 | Alan Nick Connor | Alan |
@@ -160,9 +159,8 @@ Write a program that **reads a collection of names** as strings from the console
 Use a `Consumer<T>`.
 
 
-# Examples
+## Examples
 
-## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | Henry Alex Anthony Stanley | Sir Henry |
@@ -170,14 +168,16 @@ Use a `Consumer<T>`.
 |  | Sir Anthony |
 |  | Sir Stanley |
 
-## Example 2
+
+
 | **Input** | **Output** |
 | --- | --- |
 | Derryl Isaac David | Sir Derryl |
 |  | Sir Isaac |
 |  | Sir David |
 
-## Example 3
+
+
 | **Input** | **Output** |
 | --- | --- |
 | Patrick Christopher | Sir Patrick |
@@ -297,15 +297,11 @@ Write a simple program that **reads** a **set of numbers** from the console and 
 
 # Examples
 
-## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | 1 4 3 2 1 7 13 | 1 |
-
-## Example 2
-| **Input** | **Output** |
-| --- | --- |
 | 4 5 -2 3 -5 8 | -5 |
+
 
 [/task-description]
 [code-io /]
@@ -388,14 +384,12 @@ public class Main {
 ## Description
 On the first line, you receive a **list of numbers**.
 
-On the next lines you are passed different **commands** that you need to apply to all numbers in the list: `add` -> adds 1; `multiply` -> multiplies by 2; `subtract` -> subtracts 1; `print` -> prints all numbers on **a new line**.
+On the next lines you are passed different **commands** that you need to apply to all numbers in the list: "**add**" \-\> adds 1; "**multiply**" \-\> multiplies by 2; "**subtract**" \-\> subtracts 1; "**print**" \-\> prints all numbers on **a new line**.
 
-The input will end with a command `end`, after which you need to print the result.
+The input will end with a command "**end**", after which you need to print the result.
 
 
 # Examples
-
-## Example 1
 | **Input** | **Output** |
 | --- | --- |
 | 1 2 3 4 5 | 3 4 5 6 7 |
@@ -404,7 +398,7 @@ The input will end with a command `end`, after which you need to print the resul
 | print |  |
 | end |  |
 
-## Example 2
+
 | **Input** | **Output** |
 | --- | --- |
 | 5 10 | 9 19 |
@@ -527,15 +521,13 @@ public class Main {
 Write a program that **reverses** a collection and **removes** elements that are **divisible** by a given integer **n**.
 
 
-# Examples
-
-## Example 1
+## Examples
 | **Input** | **Output** |
 | --- | --- |
 | 1 2 3 4 5 6 | 5 3 1 |
 | 2 |  |
 
-## Example 2
+
 | **Input** | **Output** |
 | --- | --- |
 | 20 10 40 30 60 50 | 50 40 10 20 |
@@ -638,15 +630,13 @@ On the second line, you will receive a **string** array with some names.
 Print the names, passing the **condition** in the predicate.
 
 
-# Examples
-
-## Example 1
+## Examples
 | **Input** | **Output** |
 | --- | --- |
 | 4 | Adam |
 | Kenneth Adam Kevin Yasmin |  |
 
-## Example 2
+
 | **Input** | **Output** |
 | --- | --- |
 | 4 | Gaby |
@@ -744,20 +734,16 @@ Your task is to **collect** the integers from the console, find the **smallest o
 If **more** than one such element exists, print the index of the **rightmost** one.
 
 ## Hints
-- Use a `Function<List<Integer>, Integer>` or something similar.
+
+- Use a `Function<List<Integer>, Integer>` or something similar
 
 
-# Examples
-
-## Example 1
+## Examples
 | **Input** | **Output** |
 | --- | --- |
 | 1 2 3 0 4 5 6 | 3 |
-
-## Example 2
-| **Input** | **Output** |
-| --- | --- |
 | 123 10 11 3 | 3 |
+
 
 [/task-description]
 [code-io /]
@@ -835,17 +821,12 @@ Write a custom **comparator** that **sorts** all even numbers before all **odd**
 Pass it to an `Arrays.sort()` function and print the result.
 
 
-# Examples
-
-## Example 1
+## Examples
 | **Input** | **Output** |
 | --- | --- |
 | 1 2 3 4 5 6 | 2 4 6 1 3 5 |
-
-## Example 2
-| **Input** | **Output** |
-| --- | --- |
 | -3 2 | 2 -3 |
+
 
 [/task-description]
 [code-io /]
@@ -931,15 +912,13 @@ Find all **numbers** in the range **1 ... N** that are **divisible** by the numb
 Use **predicates**.
 
 
-# Examples
-
-## Example 1
+## Examples
 | **Input** | **Output** |
 | --- | --- |
 | 10 | 2 4 6 8 10 |
 | 1 1 1 2 |  |
 
-## Example 2
+
 | **Input** | **Output** |
 | --- | --- |
 | 100 | 20 40 60 80 100 |
