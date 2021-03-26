@@ -37,6 +37,7 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 [tests]
 [test]
 [input]
+```
 1452
 1397
 2606
@@ -44,8 +45,10 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 1573
 2028
 2762
+```
 [/input]
 [output]
+```
 1452
 1397
 2606
@@ -53,6 +56,7 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 1573
 2028
 2762
+```
 [/output]
 [/test]
 [/tests]
@@ -98,10 +102,14 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 [tests]
 [test]
 [input]
+```
 12488
+```
 [/input]
 [output]
+```
 12488
+```
 [/output]
 [/test]
 [/tests]
@@ -143,6 +151,7 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 [tests]
 [test]
 [input]
+```
 ON JANUARY 1 , 1533 , 
 MICHAEL ANGELO, 
 THEN FIFTY-SEVEN YEARS OLD, 
@@ -150,8 +159,10 @@ WRITES
 FROM FLORENCE TO 
 TOMMASO DE' CAVALIERI, 
 A YOUTH OF NOBLE ROMAN FAMILY,
+```
 [/input]
 [output]
+```
 ON JANUARY 1 , 1533 , 
 MICHAEL ANGELO, 
 THEN FIFTY-SEVEN YEARS OLD, 
@@ -159,6 +170,7 @@ WRITES
 FROM FLORENCE TO 
 TOMMASO DE' CAVALIERI, 
 A YOUTH OF NOBLE ROMAN FAMILY,
+```
 [/output]
 [/test]
 [/tests]
@@ -205,14 +217,20 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 [tests]
 [test]
 [input]
+```
 Vowels: 41
 Consonants: 72
 Punctuation: 6
+
+```
 [/input]
 [output]
+```
 Vowels: 41
 Consonants: 72
 Punctuation: 6
+
+```
 [/output]
 [/test]
 [/tests]
@@ -253,6 +271,7 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 [tests]
 [test]
 [input]
+```
 1. Two households, both alike in dignity,
 2. In fair Verona, where we lay our scene,
 3. From ancient grudge break to new,
@@ -261,8 +280,11 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 6. A pair of star-cross'd lovers take their life;
 7. Whose misadventured piteous overthrows
 8. Do with their death bury their parents' strife.
+
+```
 [/input]
 [output]
+```
 1. Two households, both alike in dignity,
 2. In fair Verona, where we lay our scene,
 3. From ancient grudge break to new,
@@ -271,6 +293,8 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 6. A pair of star-cross'd lovers take their life;
 7. Whose misadventured piteous overthrows
 8. Do with their death bury their parents' strife.
+
+```
 [/output]
 [/test]
 [/tests]
@@ -310,14 +334,20 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 [tests]
 [test]
 [input]
+```
 of - 6
 which - 2
 The - 1
+
+```
 [/input]
 [output]
+```
 of - 6
 which - 2
 The - 1
+
+```
 [/output]
 [/test]
 [/tests]
@@ -354,20 +384,24 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 [tests]
 [test]
 [input]
+```
 1
 2
 3
 4
 5
 6
+```
 [/input]
 [output]
+```
 1
 2
 3
 4
 5
 6
+```
 [/output]
 [/test]
 [/tests]
@@ -405,10 +439,14 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 [tests]
 [test]
 [input]
+```
 Folder size: 2878
+```
 [/input]
 [output]
+```
 Folder size: 2878
+```
 [/output]
 [/test]
 [/tests]
