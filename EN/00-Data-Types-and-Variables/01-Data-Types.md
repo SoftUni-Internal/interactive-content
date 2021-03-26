@@ -6,7 +6,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-3-4-How-computers-work-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-A computer is an **electronic machine** that processes information or, in other words, an **information processor**. It takes the raw information (or data) from one end, stores it until it is ready to process, then returns the results at the other end.
+A computer is an **electronic machine** that processes information or, in other words, an **information processor**. It takes the raw information (or data) from one end, stores it until it is ready to process, when processed it returns the results on the other end.
 
 The processing stages **can be defined as follows**: 
 
@@ -38,6 +38,8 @@ int count = 5;
 // 5 – variable value
 ```
 
+A variable is defined bi its:
+
 * **Data type**: The type of data that can be stored in this variable
 * **Variable name**: The name given to the variable
 * **Variable value**: The initial value stored in the variable
@@ -51,7 +53,7 @@ count = 5;
 
 In the example above we declare an `int` variable named `count`, when we need that variable we can assign a value to it.
 
-Here we gave that variable the value of `5`.
+The `count` variable holds the value of `5` after getting initialized.
 
 ## Real Life Example
 You can think of variables as kitchen jars. 
@@ -60,9 +62,9 @@ Imagine that in each jar you can only store one of the following: salt, sugar, o
 
 [image assetsSrc="Variables-real-life-example.png" /]
 
-In programming, it is almost the same. 
+In programming, 
 
-We use variables that act as containers for different data types like: numbers, text, symbols, and so on. 
+we use variables that act as containers for different data types like: numbers, text, symbols, and so on. 
 
 For example, if we have a variable meant to hold integers we will not be able to store text in it.
 
@@ -92,7 +94,7 @@ There are **two general data types** in Java:
 
 -	They are also called "reference types" since they hold an address in computer memory (RAM) where the data is stored
 
--	Some examples are `String`, `Arrays`, and `Classes`
+-	Some examples are `Strings`, `Arrays`, and `Classes`
 
 [/slide]
 
@@ -126,13 +128,13 @@ Non-primitive data types hold references to the location of a value in memory.
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-8-naming-our-variables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In programming a naming convention is a set of **rules** to be followed when choosing names for variables and other code elements.
+In programming, a naming convention is a set of **rules** to be observed when choosing names for variables and other code elements.
 
 Naming conventions make programs more understandable and easier to read. 
 
-In Java the naminc convention called "**camelCase**" is observed.
+In Java the naming convention called "**camelCase**" is applied.
 
-"**camelCase**" is characterized by:
+"**camelCase**" follows these rules:
 
 - Each word or abreviation (excluding the starting one) begins with a capital letter
 
@@ -150,7 +152,7 @@ String last_name = Smith; //incorrect
 int PersonAge = 41;       //incorrect
 int foo = 2;              //incorrect
 ```
-The variable's name should explain its purpose.
+The variable name should explain its purpose.
 
 When naming a variable, it should answer the question: **What does this variable contain?**
 [/slide]
@@ -160,9 +162,9 @@ When naming a variable, it should answer the question: **What does this variable
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-9-variable-scope-and-lifetime-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The **scope** of a variable has to do with which areas or sections of a program can the variable accessed.
+The **scope** of a variable is defined by the areas or sections of a program in which the variable can be accessed.
 
-The **lifetime** of a variable refers to how long the variable is kept in the memory.
+The **lifetime** of a variable refers to how long the variable is kept in memory.
 
 Generally, the scope of a variable is limited to the code block, in which it is created.
 
@@ -192,9 +194,9 @@ public static void main(String[] args) {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-10-variable-span-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Variable **span** is how long before a variable is called after its declaration.
+Variable **span** is a term representing how long before a variable is called after its declaration.
 
-It is a good practice to create a variable as **late as possible** (shorter span), right before it is needed.
+It is a good practice to create a variable as **late as possible** (shorter span), before it is needed.
 
 ```java
 static void main(String[] args) {
@@ -222,7 +224,7 @@ As a rule of thumb, try to keep the variable span as short as possible.
 
 A shorter variable span simplifies computer code and improves its **readability** and **maintainability**.
 
-We can reduce the **outer** variable span using the previous example:
+We can reduce the **outer** variable's span using the previous example:
 
 ```java
 static void main(String[] args) {
