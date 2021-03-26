@@ -6,11 +6,11 @@
 
 Let us continue with another **important paradigm** in modern programming: **functional programming**
 
-**Functional programming** (FP) is a paradigm based on composing **pure functions**, while avoiding shared state, mutable data, and side-effects.
+**Functional programming** (FP) is a paradigm based on composing **pure functions** while avoiding shared state, mutable data, and side-effects.
 
 Functional programs are **sequences of transformations** of data through functions.
 
-This is called **declarative** programing approach (not **imperative**),
+This is a **declarative** programming approach (not **imperative**),
 which means that instead of describing an algorithm, developers describe the result by **functions and compositions of functions**.
 
 ## Pure Functions
@@ -47,9 +47,9 @@ Both functions have **no side effects**:
 
 There are many **functional programming** languages and languages that incorporate **functional paradigms** into modern software development.
 
-**Purely functional languages** are **inpractical** and rarely used, because it is more complicated to program without maintaining a state.
+**Purely functional languages** are **impractical** and rarely used because it is more complicated to program without maintaining a state.
 
-Functional software developers need to **switch their thinking style** from the traditional **algorithmic thinking** to **functional thinking**.
+Functional software developers need to **switch their thinking style** from traditional **algorithmic thinking** to **functional thinking**.
 
 - The program in functional languages is a **pure function** (which calls other pure functions) without side effects
 
@@ -65,7 +65,7 @@ Functional software developers need to **switch their thinking style** from the 
 
 - Most of today's widely used general-purpose programming languages are **multi-paradigm**
 
-- They combine multiple programing paradigms: 
+- They combine multiple programming paradigms: 
 
 - **Functional**, **declarative**, **imperative**, **object-oriented**, **component-based**, **event-driven**, **asynchronous** programming, and many others.
 
@@ -156,7 +156,7 @@ Write a program that reads one line of **Integers** separated by **", "**.
 
 Print the **count** of the numbers and their **sum**.
 
-- Use `Function<String, Integer>` for **parsing** integers after you split them to a **String** array
+- Use `Function<String, Integer>` for **parsing** integers after you split them into a **String** array
 
 # Examples
 
