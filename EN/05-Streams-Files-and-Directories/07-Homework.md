@@ -421,7 +421,7 @@ Folder size: 2878
 
 
 [slide hideTitle]
-# Problem with Solution: Copy a Picture
+# Problem: Copy a Picture
 
 Create a program that makes a copy of a **.jpg** file using **FileInputStream**, **FileOutputStream**, and `byte[]` buffer. 
 
