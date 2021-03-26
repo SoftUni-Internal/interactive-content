@@ -245,7 +245,7 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Write a program that reads a line of prices, parsing them as numbers of type **Double**, separated by **a comma and a space** ", ". 
+Write a program that reads a line of prices, parsing them as numbers of type **Double**, separated by **a comma and space** ", ". 
 
 Add 20% VAT tax to each and print each price on a separate line.
 
