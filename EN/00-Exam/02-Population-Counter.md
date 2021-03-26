@@ -15,23 +15,21 @@ public class Main {
 [task-description]
 # Description
 
-So many people! It’s hard to count them all. But that’s your job as a statistician. 
+So many people! It is hard to count them all. But that is your job as a statistician. 
 
-You get raw data for a given city and you need to aggregate it.  
+You will receive the raw data for a given city and you need to aggregate it.  
 
-On each input line you’ll be given data in format: "city\|country\|population". 
+On each input line you will be given data in the following format: "city\|country\|population". 
 
 There will be **no redundant whitespaces anywhere** in the input. 
 
-Aggregate the data **by country and by city** and print it on the console. 
+Aggregate the data **by country and by city** and print it to the console. 
 
 **For each** country, print its **total population** and on separate lines the data for each of its cities. 
 
-**Countries** should be ordered by **their total population in descending order** and within each country, the **cities** should be ordered by **the same criterion.**
+**Countries** should be ordered by **their total population in descending order** and, within each country, the **cities** should be ordered by **the same criterion.**
 
-If two countries/cities have the same population, keep them in the **order** in which they were **entered**. 
-
-Check out the examples. Follow the output format strictly!  
+If two countries/cities have the same population, keep them in the **order**, in which they were **entered**. 
 
 ## Input
 
@@ -43,7 +41,7 @@ Check out the examples. Follow the output format strictly!
 
 ## Output
 
-- The output should be printed on the console. 
+- The output should be printed to the console. 
 
 - Print the aggregated data for each country and city in the format shown below. 
 
@@ -51,11 +49,11 @@ Check out the examples. Follow the output format strictly!
 
 - The name of the city, country and the population count will be separated from each other by a pipe ('\|'). 
 
-- The **number of input lines** will be in the range [2 … 50]. 
+- The **number of input lines** will be in range [2 … 50]. 
 
 - A city-country pair will not be repeated. 
 
-- The **population count** of each city will be an integer in the range [0 … 2 000 000 000]. 
+- The **population count** of each city will be an integer in range [0 … 2 000 000 000]. 
 
 
 ## Examples
