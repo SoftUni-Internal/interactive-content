@@ -3,7 +3,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-12-13-Integer-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Integer types** store whole numbers, positive or negative (such as 123 or -456), without decimals.
+**Integer types** store whole numbers, positive or negative (such as 123 or -456).
 
 **Byte**, **short**, **int**, and **long** are all different integer data types. 
 
@@ -99,7 +99,7 @@ for (int i = 0; i < 130; i++) {
 //-127
 ```
 
-The `counter` starts from 0 and is incremented on each step of the for loop. 
+The `counter` starts from 0 and is incremented on each step of the for-loop. 
 
 Eventually when it reaches the maximum value of a byte (127), it assumes its minimum value (-128). 
 
@@ -153,7 +153,7 @@ public class Main {
 [task-description]
 ## Description.
 
-The program input will contain an integer representing an integer value in meters.
+The program input needs to preocess an integer representing a value in meters.
 
 Create a program that converts meters to kilometers - formatted to the second decimal point.
 
