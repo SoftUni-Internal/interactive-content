@@ -16,7 +16,7 @@ The `BiFunction <T,U,R>` interface is a part of the **java.util.function** packa
 
 **R** - The type of the result of the function
 
-It represents a **function** which takes in two arguments and produces a **result**.
+It represents a **function** that accepts two arguments and outputs a **result**.
 
 ``` java
 BiFunction <Integer, Integer, String> sum = (x, y) -> "Sum is" + (x + y);
@@ -50,7 +50,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that reads **a line of Integers** separated by a comma and a space ", ". 
+Write a program that reads **a line of Integers** separated by a comma and space ", ". 
 
 Print the **count of the numbers** and **their sum**. 
 
@@ -203,7 +203,7 @@ public class Main {
 
 Write a program that reads an integer **N** from the first line of input.
 
-On the next **N** lines you will receive pairs of "**name, age**" combinations. 
+On the next **N** lines, you will receive pairs of "**name, age**" combinations. 
 
 After that you will receive **three more lines** that will contain:
 
