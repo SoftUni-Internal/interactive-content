@@ -14,7 +14,7 @@
 
 Each **catch** block should handle only these exceptions that can be thrown by the code in the **try** block:
 
-- If a method is not intended to handle an exception, it should leave it unhandled
+- If a method is not intended to handle an exception, it should be left unhandled
 
 - Handling all exceptions without paying attention to their type is a bad practice
 
@@ -30,10 +30,10 @@ When an application attempts to use **null** in a case where an object is requir
 
 | **Exception Type** | **When to use** |
 | --- | --- |
-| **NullPointerException** | An array has been accessed with an illegal index. |
-| **StringIndexOutOfBoundsException** | An index is either negative or greater than the size of the string. |
+| **NullPointerException** | Accessing an invalid index in a collection. |
+| **StringIndexOutOfBoundsException** | Accessing an invalid index in a string. |
 | **NumberFormatException** | The code attempts to convert a string that is not a number to one of the numeric types. |
-| **ArithmeticException** | Thrown when an exceptional arithmetic condition has occurred |
+| **ArithmeticException** | Thrown when an exceptional arithmetic condition has occurred. |
 | **ClassCastException** | A method has received an illegal/invalid argument.|
 
 [/slide]
@@ -50,7 +50,7 @@ When throwing an exception try to give a good description of the problem.
 
 The exception message should explain what causes the problem and how to solve it.
 
-- **Good**: "Size should be an integer in the range \[1…15\]"
+- **Good**: "Size should be an integer in range \[1…15\]"
 - **Good**: "Invalid state. First call Initialize()"
 - **Bad**: "Unexpected error"
 - **Bad**: "Invalid argument"

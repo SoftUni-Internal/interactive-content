@@ -3,17 +3,8 @@
 
 [slide hideTitle]
 # Problemă: Adunarea Liniilor
-[code-task title="Sum Lines" taskId="java-advanced-streams-files-exercise-sum-lines" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sum Lines" taskId="java-advanced-streams-files-exercise-sum-lines" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Descriere
@@ -71,17 +62,8 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 
 [slide hideTitle]
 # Problemă: Suma octeților
-[code-task title="Sum Bytes" taskId="java-advanced-streams-files-exercise-sum-bytes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sum Bytes" taskId="java-advanced-streams-files-exercise-sum-bytes" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Descriere
@@ -129,17 +111,8 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 
 [slide hideTitle]
 # Problemă: LITERE MAJUSCULE
-[code-task title="CAPITAL LETTERS" taskId="java-advanced-streams-files-exercise-capital-letters" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="CAPITAL LETTERS" taskId="java-advanced-streams-files-exercise-capital-letters" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Descriere
@@ -195,17 +168,8 @@ A YOUTH OF NOBLE ROMAN FAMILY,
 
 [slide hideTitle]
 # Problemă: calcularea tipurilor de caractere
-[code-task title="Count Character Types" taskId="java-advanced-streams-files-exercise-count-character-types" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Count Character Types" taskId="java-advanced-streams-files-exercise-count-character-types" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Descriere
@@ -258,17 +222,8 @@ Punctuation: 6
 
 [slide hideTitle]
 # Problemă: Numere de linie
-[code-task title="Line Numbers" taskId="java-advanced-streams-files-exercise-line-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Line Numbers" taskId="java-advanced-streams-files-exercise-line-numbers" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Descriere
@@ -325,17 +280,8 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 
 [slide hideTitle]
 # Problemă: Calcularea cuvintelor
-[code-task title="Word Count" taskId="java-advanced-streams-files-exercise-word-count" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Word Count" taskId="java-advanced-streams-files-exercise-word-count" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Descriere
@@ -381,17 +327,8 @@ The - 1
 
 [slide hideTitle]
 # Problemă: combinarea de două fișiere
-[code-task title="Merge Two Files" taskId="java-advanced-streams-files-exercise-merge-two-files" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Merge Two Files" taskId="java-advanced-streams-files-exercise-merge-two-files" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Descriere
@@ -440,17 +377,8 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 
 [slide hideTitle]
 # Problemă: obținerea dimensiunii fișierului
-[code-task title="Get Folder Size" taskId="java-advanced-streams-files-exercise-get-folder-size" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Get Folder Size" taskId="java-advanced-streams-files-exercise-get-folder-size" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Descriere

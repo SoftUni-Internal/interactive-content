@@ -3,7 +3,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-28-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-# În această lecție ați învățat:
+## În această lecție ați învățat:
 
 - Ce sunt Seturile în Java?
      - colecție neordonată de obiecte
@@ -41,7 +41,7 @@
     Map<String, Integer> linkedHashMap = new LinkedHashMap<>();
     ```
     
-# În lecția următoare, veți învăța:
+## În lecția următoare, veți învăța:
 
 - Ce sunt Excepțiile
     * clasa `Exception` 
