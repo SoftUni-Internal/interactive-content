@@ -7,15 +7,15 @@
 
 Java **Cadru de Colectare** conține numeroase interfețe, dintre care una este **Set** Interfață.
 
-It is modeled after the mathematical set abstraction.
+Este modelat după abstracția setului matematic.
 
-The **Set** interface extends the **Collection** interface.
+Interfața **Set** extinde interfața **Collection**.
 
-**Interfaces** in Java represent a **behavior**, without specifying any sort of **implementations**.
+**Interfețele** în Java reprezintă un **comportament**, fără să specifice vreo formă de **implementare**.
 
-The interface's job is to **specify the existence of certain methods**, with a particular behavior, and any class can implement them.
+Scopul interfeței este să **specifice existența unor metode**, cu un comportament particular, și pot fi implementate de orice clasă.
 
-**Interfaces** are not in the **scope of this course**, we will learn more about them in the Java OOP course.
+**Interfețele** nu sunt **subiectul acestui curs**, vom învăța mai multe despre ele în cursul despre Java OOP.
 
 **Există trei tipuri diferite de seturi:**
 - `HashSet<E>`
@@ -163,7 +163,7 @@ System.out.println(tree.remove("Ana"));
 System.out.println(tree);
 ```
 
-- `contains()` - returns `true` if the element exists in the `TreeSet`, otherwise, it returns `false`
+- `contains()` - returnează `true` dacă elementele există în `TreeSet`, altfel, returnează `false`
 
 ```java live
 Set<String> tree = new TreeSet<>();
