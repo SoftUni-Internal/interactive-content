@@ -18,7 +18,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You are hired by a TV company to create a program that calculates whether it is possible for customers to purchase access to some TV series that they would like to watch. 
+You are hired by a TV company to create a program that calculates whether it is possible for customers to purchase access to TV series that they would like to watch. 
 
 You receive a budget and the number of series that the user will want to purchase.
 
@@ -32,7 +32,7 @@ There are discounts for some of the titles:
 - Area - 10%
 
 ## Input
-You will receive from the console:
+You will receive the following input from the console:
 
 - Budget - **real** number in range [10.0 ... 100.0]
 
