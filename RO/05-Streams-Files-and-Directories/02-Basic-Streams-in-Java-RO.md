@@ -5,6 +5,8 @@
 
 # Fluxuri de octeți
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-15-16-Byte-Stream-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Fluxurile de octeți în Java sunt utilizate pentru a efectua intrarea și ieșirea de octeți pe 8 biți.
 
 Fluxurile de octeți sunt fluxuri de cel mai scăzut nivel.
@@ -28,6 +30,8 @@ Chiar daca există multe clase legate de fluxurile de octețit insa cele mai fre
 
 [slide hideTitle]
 # Problemă cu soluție: Copierea octeților
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-17-Copy-Bytes-Problem-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Copy Bytes" taskId="java-advanced-streams-files-lab-copy-bytes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -118,6 +122,8 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 
 # Fluxuri de caractere 
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-19-Character-Streams-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Fluxurile de caractere Java** sunt utilizate pentru a efectua intrări și ieșiri pentru **unicode pe 16 biți**.
 
 Chiar dacă există multe clase legate de fluxurile de caractere, dar cele mai frecvent utilizate clase sunt **FileReader** și **FileWriter**. 
@@ -157,6 +163,8 @@ try (FileReader inputStream = new FileReader(input);
 [slide hideTitle]
 # Combinarea fluxurilor
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-20-Combining-Streams-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Caractere de fluxuri sunt deseori "**ambalaje**" pentru fluxurile de octeți:
     - FileReader folosește FileInputStream
     - FileWriter folosește FileOutputStream
@@ -176,6 +184,8 @@ Aici ste folosit pentru a acoperi `FileInputStream` și, până acum, ați făcu
 
 [slide hideTitle]
 # Problemă cu soluție: extragerea numerelor întregi
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-21-Extract-integers-Problem-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Extract Integers" taskId="java-advanced-streams-files-lab-exact-integers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -231,6 +241,8 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 
 # Fluxurile de bufere
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-23-Buffered-Streams-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Următorul strat de abstractizare peste fluxul de octeți sunt fluxurile tamponate. 
 
 Fluxurile pe care le-am văzut până acum nu sunt tamponate I/O.
@@ -266,6 +278,8 @@ Acest lucru va crește semnificativ **performanța** aplicațiilor noastre.
 
 [slide hideTitle]
 # Problemă cu soluție: scrieți fiecare al treilea rând
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-24-Write-Every-3rd-Line-Problem-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Write Every Third Line" taskId="java-advanced-streams-files-lab-write-every-third-line" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -329,6 +343,8 @@ too old. There is nothing more left for me to say. Read my heart and
 
 [slide hideTitle]
 # Comanda I/O Streams 
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-26-27-Command-Line-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Java oferă suport pentru I/O standard, unde programul utilizatorului poate prelua intrarea de la o tastatură și apoi produce o ieșire pe ecranul calculatorului.
 

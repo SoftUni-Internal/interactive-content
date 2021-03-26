@@ -4,6 +4,8 @@
 
 # Fluxuri de bază
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-4-5-What-Is-Stream-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Fiecare dintre noi s-a uitat la videolcipuri online pe youtube sau pe un alt website.
 
 Când începeți să vizionați un videoclip, o mică parte din fișierul este încărcată mai întâi în calculatorul dvs. și începe redarea.
@@ -22,6 +24,8 @@ Se numește flux sau stream, deoarece este ca un curent de apă care continuă s
 
 # Types of Streams
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-6-Stream-Basics-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Există **două tipuri fundamentale** de fluxuri:
 
 - **InputStream** − folosit pentru a citi date dintr-o **sursă**
@@ -37,6 +41,8 @@ Există **două tipuri fundamentale** de fluxuri:
 
 [slide hideTitle]
 # Deschiderea unui flux de fișiere
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-7-Opening-A-File-Stream-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Să aruncăm o privire la următoarele exemple:
 
@@ -79,6 +85,8 @@ Printarea valorii variabilei oneByte în consolă nu e necesară, dar, în acest
 
 [slide hideTitle]
 # Închiderea unui flux de fișiere
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-8-9-Closing-A-File-Stream-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a evita scurgeri de memorie și eșecuri ale aplicației, trebuie să închidem orice fluxuri pe care le deschidem atunci când nu mai este nevoie de ele.
 
@@ -150,6 +158,8 @@ try (InputStream in = new FileInputStream(path)) {
 
 [slide hideTitle]
 # Problemă cu soluție: citiți fișierul
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-10-read-file-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Read File" taskId="java-advanced-streams-files-lab-read-file" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
@@ -230,7 +240,11 @@ try (FileInputStream fileStream = new FileInputStream(path)) {
 [slide hideTitle]
 # Problemă cu soluție: scrieți în fișier
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-12-Write-To-File-Problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+
 [code-task title="Write to File" taskId="java-advanced-streams-files-lab-write-to-file" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
+
 [code-editor language=java]
 [/code-editor]
 [task-description]

@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Funcționalitatea Stivei
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-10-11-Stack-Functionality-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 O stivă este o structură de date în care adăugați elemente în**partea de sus**a stivei și eliminați din nou elementele din**partea de sus**.
 Aceasta este denumită și principiul ”Ultimul în primul loc” -**LIFO**.
 
@@ -11,12 +13,14 @@ Aceasta este denumită și principiul ”Ultimul în primul loc” -**LIFO**.
      - Element care apare din partea de sus a stivei
      - Obținerea (**Arunca o Privire**) a elementului cel mai de sus fără eliminarea acestuia
 
-[image assetsSrc="stacksAndQueues-example(1).png" /]
+[image assetsSrc="Java-Advanced-Stack-and-Queues-3.png" /]
 
 [/slide]
 
 [slide hideTitle]
 # Implementarea Stivei și Metodele Încorporate
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-12-ArrayDeque-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Stack Implementation using `ArrayDeque<E>`
 ```java
@@ -64,6 +68,8 @@ System.out.println(element);
 
 # Metode de Utilitate
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-13-Stack-Utility-Methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 - `size()` -  returnează numărul de elemente în deque
 
 ```java live
@@ -102,19 +108,14 @@ System.out.println(stackOfCars.contains("BMW M3"));
 [slide hideTitle]
 # Overview of All Operations
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-14-Stack-Overview-of-all-operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-The animation below illustrates all the stack operations that we can use for solving the upcoming programming problems.
-
-[image assetsSrc="Java-Advanced-Stack-and-Queues-10.gif" /]
-
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-14-Stack-Overview-of-all-operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
 
 [slide hideTitle]
 # Problem with Solution: Browser History
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-15-Problem-and-solution-Browser-History-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-15-solution-Browser-History-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Browser History" taskId="java-advanced-lab-stack-and-queue-Browser-History" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -314,7 +315,7 @@ Go
 [slide hideTitle]
 # Problem with Solution: Simple Calculator 
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-18-Problem-and-Solution-Simple-Calculator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-18-Solution-Simple-Calculator-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Simple Calculator" taskId="java-advanced-lab-stack-and-queue-Simple-Calculator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -420,7 +421,7 @@ Rezolvați problema **using a Stack**.
 [slide hideTitle]
 # Problem with Solution: Decimal to Binary Converter
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/java-advanced-stacks-and-queue-21-Problem-and-solution-Decimal-To-Binary-Converter-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-21-SOLUTION-Decimal-To-Binary-Converter-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Decimal to Binary Converter" taskId="java-advanced-lab-stack-and-queue-Decimal-to-Binary-Converter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -536,7 +537,7 @@ while (decimal != 0) {
 [slide hideTitle]
 # Problem with Solution: Matching Brackets
 
-TODO: Add video.
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-23-problem-matching-brackets-solution-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 [code-task title="Matching Brackets" taskId="java-advanced-lab-stack-and-queue-Matching-Brackets" executionType="tests-execution" executionStrategy="java-code" requiresInput]

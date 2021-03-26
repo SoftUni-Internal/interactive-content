@@ -18,12 +18,12 @@
 - Combining Streams / Wrapping
 - Buffered Streams for reading information in chunks
 
-**3. Files and Directories**
+**3. Files and Paths**
 - Opening and reading files
 - Directory paths and how to work with them
 - Writing information to a file
 
-**4. Serialization**
+**4. Serialization and Deserialization**
 - Definition of serialization and how it works
 - Serializing objects to save objects to a file
 - Deserializing objects to load objects from a file

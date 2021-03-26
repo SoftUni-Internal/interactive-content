@@ -4,6 +4,8 @@
 
 # Ce este Depanarea?
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-3-4-what-is-debugging-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Procesul de localizare a unei **erori** (**erori**) și, după aceea, remedierea acesteia, apelăm **Depanare**.
 
 Există câțiva pași pe care trebuie să-i urmăm atunci când **depanăm** un program:
@@ -23,6 +25,8 @@ Din fericire, există **instrumente de depanare** care ne ajută să localizăm 
 [slide hideTitle]
 
 # Depanare vs. testare
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-5-debugging-vs-testing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Există o diferență între **Testare** și **Depanare**.
 
@@ -46,6 +50,8 @@ Depanăm aplicația după ce a eșuat.
 
 # Importanța depanării
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-6-Importance-of-debugging-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Depanarea** este unul dintre cei mai importanți pași în dezvoltarea unei aplicații.
 
 Pentru că există factori care nu sunt previzibili sau pe care nu îi putem controla.
@@ -67,6 +73,8 @@ Un exemplu este [Cluster Spacecraft Failure](https://en.wikipedia.org/wiki/Clust
 [slide hideTitle]
 
 # Filosofia depanării
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-7-debugging-philosophy-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Ne putem imagina că **depanarea** este un copac.
 

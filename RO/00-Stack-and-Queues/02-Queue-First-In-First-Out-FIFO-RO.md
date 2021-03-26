@@ -4,6 +4,8 @@
 
 # Cozi
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-26-27-Queue-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Cozile** sunt structuri de date similare cu **stivele**. 
 
 Își păstreză elementele în ordine. Elementele cozii sunt ordonate pe baza principiului **FIFO** - **primul intrat iese primul**. 
@@ -19,6 +21,8 @@ Această structură de date este modelată după cozile din viața reală, unde 
 [slide hideTitle]
 
 # Coadă: tip de dată abstract
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-28-Queue-Abstract-Data-Type-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 - Adăugând un element la finalul unei cozi
@@ -40,6 +44,7 @@ Această structură de date este modelată după cozile din viața reală, unde 
 
 # Implementarea cozii cu ArrayDeque
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-29-30-34-ArrayDeque-Java-Implementation-1-2-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Implementarea cozii folosind `ArrayDeque<E>`
 
@@ -68,6 +73,8 @@ ArrayDeque<Integer> queue = new ArrayDeque<>();
 [slide hideTitle]
 
 # Operațiile cozii
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-31-33-Add-Remove-Peak-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Add() / Offer()
 
@@ -197,14 +204,14 @@ System.out.println(queueOfCars.contains("BMW 7"));
 [slide hideTitle]
 # Privire în ansamblu asupra tuturor operațiilor
 
-Animația de mai jos prezintă toate operațiile cozilor și cum le putem folosi pentru a rezolva următoarele probleme.
-
-[image assetsSrc="Java-Advanced-Stack-and-Queues-11.gif" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-35-Queue-Overview-of-all-operations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
 
 [slide hideTitle]
 # Problem with Solution: Hot Potato
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-36-problem-hot-potato-solution-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Hot Potato" taskId="java-advanced-lab-stack-and-queue-Hot-Potato" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -387,6 +394,8 @@ Last is 2
 
 [slide hideTitle]
 # Problem with Solution: Math Potato
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-39-math-potato-problem-and-solution-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Math Potato" taskId="java-advanced-lab-stack-and-queue-Math-Potato" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
