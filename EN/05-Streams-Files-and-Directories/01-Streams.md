@@ -317,7 +317,7 @@ unable to recall the past in order to serve you so much the longer
 instead of having only the future which cannot be long since I am all
 too old There is nothing more left for me to say Read my heart and
 not my letter for my pen cannot approach the expression of my good
-will" 3 
+will"\[ 3 \]
 ```
 [/input]
 [output]
@@ -341,10 +341,11 @@ unable to recall the past in order to serve you so much the longer
 instead of having only the future which cannot be long since I am all
 too old There is nothing more left for me to say Read my heart and
 not my letter for my pen cannot approach the expression of my good
-will" 3 
+will"\[ 3 \]
 ```
 [/output]
 [/test]
 [/tests]
 [/code-task]
 [/slide]
+
