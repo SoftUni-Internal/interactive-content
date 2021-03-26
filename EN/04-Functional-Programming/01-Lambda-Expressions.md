@@ -126,7 +126,7 @@ public class Main {
 [task-description]
 ## Description
 
-Create a program that reads a line of **integers** separated by a comma and a space **", "**.
+Create a program that reads a line of **integers** separated by a comma and space **", "**.
 Print only the **even numbers**.
 Then, **sort** the even numbers in **ascending order** and print them **again**.
 
