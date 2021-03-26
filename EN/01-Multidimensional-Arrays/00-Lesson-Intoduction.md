@@ -15,9 +15,9 @@
 **2. Multidimensional Arrays**
  
   * What multidimensional arrays are
-  * Declaring and creating Multidimensional Arrays
-  * Initializing Multidimenisonal Arrays
-  * Accessing their elements
+  * Declaring and creating multidimensional arrays
+  * Initializing multidimensional arrays
+  * Accessing elements
 
 **3. Reading and Printing a Multidimensional Array**
 
