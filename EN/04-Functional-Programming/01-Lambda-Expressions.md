@@ -52,7 +52,7 @@ public class MyClass {
     numbers.forEach( (n) -> { System.out.println(n); } );
   }
 }
-```
+ ```
 
 The lambda operator `->` reads as `goes to`.
 

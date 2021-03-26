@@ -222,7 +222,7 @@ Depending on the **condition**, print the **pairs** in the right **format**.
 # Examples
 
 ## Example 1
-| **Input** | **Output** |
+| **Input** | **Output** |                                 
 | --- | --- |
 | 5 | Peter - 20 |
 | Peter - 20 | Maria - 29 |  

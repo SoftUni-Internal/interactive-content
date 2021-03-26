@@ -4,6 +4,7 @@
 
 # Functional Programming
 
+TODO: Add a video or remove slide
 
 Let us continue with another **important paradigm** in modern programming: **functional programming**
 
@@ -29,7 +30,7 @@ What is a **pure function**?
 
 Examples of **pure functions** are:
 
-## `f(x) = √x` 
+## ``f(x) = √x`` 
 - The square root function: **"square root of x"**, which takes a number as input and returns another number as output.
 
 - The function **"list sort"**, which takes a list as input and returns a new list as output
@@ -45,6 +46,8 @@ Both functions have **no side effects**:
 [slide hideTitle]
 
 # Functional Programming Languages
+
+TODO: Add a video or remove slide
 
 There are many **functional programming** languages and languages that incorporate **functional paradigms** into modern software development.
 

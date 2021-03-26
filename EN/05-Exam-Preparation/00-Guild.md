@@ -47,9 +47,6 @@ All entities inside the repository have the **same fields**.
 
 Also, the **Guild** class should have those **fields**:
 
-- **name**: String
-- **capacity**: int
-
 The class **constructor** should receive a **name** and a **capacity**, it should initialize the **roster** with a new instance of the collection. 
 
 Implement the following methods:
