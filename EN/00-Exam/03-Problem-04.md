@@ -27,7 +27,7 @@ If the price of an order is an odd number - there is **a 25% discount** on it.
 You will receive:
 - On the first line - the desired profit of the club - **a real number** in range [1.00 ... 15000.00]
 
-On the next lines, you will be receiving two rows untilthe command: **"Party!"** or until the desired profit is reached: 
+On the next lines, you will be receiving two rows until the command: **"Party!"** or until the desired profit is reached: 
 - The name of a cocktail - **a string** 
 - The number of times it is contained in the order - **an integer** in range [1 ... 50] 
 
