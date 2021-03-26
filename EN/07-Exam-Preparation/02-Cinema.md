@@ -18,7 +18,7 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-For the upcoming premiere of three popular productions, a local cinema has hired you to write software that calculates the price, which the clients should pay, depending on the movie and the offer they have chosen.
+For the upcoming premiere of three popular productions, a local cinema has hired you to write software that calculates the price, which the clients should pay, depending on the movie and the offer they choose.
 
 | -  | **John Wick** | **Star Wars**| **Jumanji** |
 |---|---|---|---|
@@ -31,7 +31,7 @@ Create a program that calculates the **total price** of the tickets.
 Discounts should be applied in the following cases:
 
 - If the chosen movie is **"Star Wars"** and at least four tickets are bought, there is a **30%** family discount
-- If the chosen movie is **"Jumanji"** and the tickets bought are **exactly two**, there is a **15%** discount
+- If the chosen movie is **"Jumanji"** and the tickets bought are **exactly two**, there is a **15%** couple discount
 
 ## Input
 You will receive 3 lines:
@@ -40,7 +40,7 @@ You will receive 3 lines:
 
 - Type of the offer - string: **"Drink"**, **"Popcorn"** or **"Menu"**
 
-- Number of the tickets – integer number in the range [1 ... 30]
+- Number of the tickets – integer number in range [1 ... 30]
 
 ## Output
 Print out on a single line: **"Your bill is** \{**total price**\}**$"**
@@ -57,7 +57,7 @@ The price must be formatted to the second digit after the decimal point.
 [hints]
 
 [hint]
-Depending on the movie and the offer that you have chosen, determine the ticket price.
+Depending on the movie and the offer, determine the ticket price.
 [/hint]
 
 [hint]
