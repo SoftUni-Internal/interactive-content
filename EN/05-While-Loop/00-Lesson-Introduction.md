@@ -12,7 +12,7 @@
 **1. While-Loop**
 - **while-loop** overview
 
-**2. While vs For Loop**
+**2. While vs For Loop**асдгасдгасдг
 - Difference between **while** and **for** loop
 
 **3. The Break Operator**
