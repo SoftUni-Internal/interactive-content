@@ -461,7 +461,7 @@ try {
     FileOutputStream outputImage = new FileOutputStream("picture-copy.jpg");
 
     int oneByte;
-    byte[] buffer = new byte[8192]; // 
+    byte[] buffer = new byte[8192]; // The size should be >= to that of your image. 🏞
     while ((oneByte = inputImage.read(buffer)) != -1) {
         outputImage.write(buffer, 0, count);
     }
