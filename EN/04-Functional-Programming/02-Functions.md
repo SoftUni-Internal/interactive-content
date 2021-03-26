@@ -152,7 +152,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that reads one line of **Integers** separated by **", "**. 
+Write a program that reads a line of **Integers** separated by **", "**. 
 
 Print the **count** of the numbers and their **sum**.
 
