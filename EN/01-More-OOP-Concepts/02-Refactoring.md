@@ -67,10 +67,10 @@ Split the code **logically** into **smaller functional units** – **methods** a
 
 The program supports the following commands:
 
-- “**Create** `studentName` `studentAge` `studentGrade`” – creates a new student and adds them to the repository
-- “**Show** `studentName`” – prints information about a student in the format:
-`{studentName} is {studentAge} years old. {commentary}`, where the **commentary** is based on the student’s grade.
-- “**Exit**” – closes the program
+- "**Create** **studentName studentAge studentGrade**" - creates a new student and adds them to the repository
+- "**Show** **studentName**" - prints information about a student in the format:
+"\{**studentName**\} **is** \{**studentAge**\} **years old.** \{**commentary**\}", where the **commentary** is based on the student's grade.
+- "**Exit**" – closes the program
 
 **Do not** add any **extra validation** or **functionality**!
 

@@ -4,7 +4,7 @@
 
 # Cuvânt Cheie Static
 
-Folosim cuvânt cheie **static**, în principal pentru gestionarea memoriei
+Folosim cuvânt cheie "**static**", în principal pentru gestionarea memoriei
 
 Se poate aplica la:
 - Clasa imbricată
@@ -89,7 +89,7 @@ public static void main(String[] args) {
 - Poate fi **invocat** fără a fi nevoie să creați o instanță a unei clase
 - Poate **accesa** membrul din date statice și poate **schimba** valoarea acestuia
 - **Nu se poate utiliza** un membru de date nestatic **sau nu se poate apela** direct metoda nestatică
-- `this` și `super` nu pot fi utilizate în context static
+- "**this**" și "**super**" nu pot fi utilizate în context static
 
 **Exemplu**: Calculați volumul unui cub
 

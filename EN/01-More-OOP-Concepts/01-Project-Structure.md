@@ -372,7 +372,7 @@ Points **on the side** of a Square are considered **inside**.
 
 - On the first line, read the coordinates of the bottom left and top right corner of the Rectangle in the format:
 
-`<bottomLeftX>` `<bottomLeftY>` `<topRightX>` `<topRightY>`
+"\<**bottomLeftX**\>" "\<**bottomLeftY**\>" "\<**topRightX**\>" "\<**topRightY**\>"
      
 - On the second line, read an integer **n** and on the next **n** lines, read the coordinates of points
 
@@ -381,9 +381,8 @@ Points **on the side** of a Square are considered **inside**.
 - For each point, print out the result of the `Contains()` method
 
 
-# Examples
+## Examples
 
-## Example 1
 
 | **Input** | **Output** |
 | --- | --- |
@@ -395,7 +394,7 @@ Points **on the side** of a Square are considered **inside**.
 | 5 3 |  |
 | 1 2 |  |
 
-## Example 2
+
 
 | **Input** | **Output** |
 | --- | --- |
@@ -406,7 +405,7 @@ Points **on the side** of a Square are considered **inside**.
 | 1 1 |  |
 | 2 4 |  |
 
-## Example 3
+
 
 | **Input** | **Output** |
 | --- | --- |

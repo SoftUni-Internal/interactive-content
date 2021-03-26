@@ -65,7 +65,7 @@ System.out.println(CoffeeSize.Small.getValue()); // 100
 
 [task-description]
 # Description
-Create a class `PriceCalculator` that calculates the total price of a holiday, given the **price per day**, **number of days**, the **season** and a **discount type**.
+Create a class "**PriceCalculator**" that calculates the total price of a holiday, given the **price per day**, **number of days**, the **season** and a **discount type**.
 
 The **discount type** and **season** should be **enums.**
 
@@ -85,10 +85,10 @@ The discount is applied to the total price and is one of the following:
 ## Input
 You will receive all the **information** about the **reservation** on a **single line** in the following format:
 
-“`<pricePerDay>` `<numberOfDays>` `<season>` `<discountType>`”, where:
+"\<**pricePerDay**\> \<**numberOfDays**\> \<**season**\> \<**discountType**\>", where:
 
-- The price per day will be a valid decimal in the range `[0.01…1000.00]`
-- The number of days will be a valid integer in the range `[1…1000]`
+- The price per day will be a valid decimal in the range [0.01 ... 1000.00]
+- The number of days will be a valid integer in the range [1 ... 1000]
 - The season will be one of: **Spring, Summer, Autumn, Winter**
 - The discount will be one of: **VIP, SecondVisit, None**
 
@@ -97,26 +97,16 @@ You will receive all the **information** about the **reservation** on a **single
 On a **single line**, print the **total price** of the **holiday**, rounded to 2 **digits** after the decimal separator.
 
 
-# Example
+## Example
 
-## Example 1
 
 | **Input** | **Output** |
 | --- | --- |
 | 50.25 5 Summer VIP | 804.00 |
-
-## Example 2
-
-| **Input** | **Output** |
-| --- | --- |
 | 40 10 Autumn SecondVisit | 360.00 |
-
-
-## Example 3
-
-| **Input** | **Output** |
-| --- | --- |
 | 120.20 2 Winter None | 721.20 |
+
+
 
 [/task-description]
 [code-upload allowedMemory="30" /]

@@ -55,9 +55,9 @@ class OutputFormatter { public static void print() { … } }
 Aveți **un proiect de lucru**  pentru un mic **Sistem al Student**, dar codul este foarte prost organizat. Împărțiți codul **logic** în **unități funcționale mai mici - metode** și **clas** și nu întrerupeți funcționalitatea.
 
 Programul acceptă următoarele comenzi::
-- "**Create** `studentName` `studentAge` `studentGrade`" - creează un student nou și îi adaugă în depozit
-- "**Show** `studentName`" - imprimă pe consolă informații despre un student în formatul:
-    - "`studentName` **is** `studentAge` **years old**. `commentary`", unde **comentariul** se bazează pe nota studentului
+- "**Create studentName studentAge studentGrade**" - creează un student nou și îi adaugă în depozit
+- "**Show studentName**" - imprimă pe consolă informații despre un student în formatul:
+    - "\{**studentName**\} **is** \{**studentAge**\} **years old.** \{**commentary**\}", unde **comentariul** se bazează pe nota studentului
 - "**Exit**" - închide programul
 
 **Nu** adăugați nicio **validare suplimentară** sau **funcționalitate** aplicației!

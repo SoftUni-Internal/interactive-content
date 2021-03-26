@@ -8,7 +8,7 @@
 
 Le putem folosi pentru a transmite **argumente** către **metode** fără a provoca confuz codului
 
-- De exemplu:: 
+- De exemplu:
 
   `enum Day {Mon, Tue, Wed, Thu, Fri, Sat, Sun}`
 
@@ -60,15 +60,15 @@ System.out.println(CoffeeSize.Small.getValue()); // 100
 [task-description]
 ## Descriere
 
-Creați o clasă `PriceCalculator` care calculează prețul total al unei vacanțe, având în vedere **prețul pe zi**, **numărul de zile**, **sezonul** și un **tip de reducere**. **Tipul de reducere** și **sezonul** ar trebui să fiу **enums**
+Creați o clasă "**PriceCalculator**" care calculează prețul total al unei vacanțe, având în vedere **prețul pe zi**, **numărul de zile**, **sezonul** și un **tip de reducere**. **Tipul de reducere** și **sezonul** ar trebui să fiу **enums**
 
 Utilizați clasa din metoda dvs `main()` pentru a citi intrarea și a **imprima** pe consolă **prețul** întregii **vacanțe**.
 
 Prețul pe zi va fi multiplicat în funcție de sezonul cu:
-- 1 în timpul toamnei
-- 2 în timpul primăverii
-- 3 în timpul iernii
-- 4 în timpul verii
+- **1** în timpul toamnei
+- **2** în timpul primăverii
+- **3** în timpul iernii
+- **4** în timpul verii
 
 Reducerea se aplică prețului total și este una dintre următoarele:
 - 20% pentru clienții VIP - VIP
@@ -78,10 +78,10 @@ Reducerea se aplică prețului total și este una dintre următoarele:
 ## Input
 Pe o **singură linie** veți primi toate **informațiile** despre **rezervarea** în formatul:
 
-“`<pricePerDay>` `<numberOfDays>` `<season>` `<discountType>`”, unde:
+"\<**pricePerDay**\> \<**numberOfDays**\> \<**season**\> \<**discountType**\>", unde:
 
-- Prețul pe zi va fi o zecimală valabilă în intervalul `[0.01…1000.00]`
-- Numărul de zile va fi un număr întreg valid în intervalul `[1…1000]`
+- Prețul pe zi va fi o zecimală valabilă în intervalul [0.01 ... 1000.00]
+- Numărul de zile va fi un număr întreg valid în intervalul [1 ... 1000]
 - Sezonul va fi unul dintre: **Spring, Summer, Autumn, Winter**
 - Reducerea va fi una dintre: **VIP, SecondVisit, None**
 

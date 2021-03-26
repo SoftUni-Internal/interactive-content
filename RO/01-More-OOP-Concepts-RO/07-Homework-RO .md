@@ -13,7 +13,7 @@ Repetați valorile tipului de enumerare și imprimați toate **valorile ordinale
 
 ## Trimitere
 
-Submit .zip
+Submit `.zip`
 
 ## Exemple
 | **Intrare**|**Ieșire**|
@@ -67,7 +67,7 @@ Creați un **tip de enumerare** care să aibă ca constante **cele paisprezece r
 Repetați valorile tipului de enumerare și imprimați toate valorile ordinale și numele.
 
 ## Trimitere
-Submit .zip
+Submit `.zip`
 
 ## Exemple
 | **Intrare**|**Ieșire**|
@@ -158,10 +158,10 @@ Imprimați rezultatul în format: **"Card name: ACE of SPADES; Card power: 53".*
 
 ## Notă
 
-Încercați să utilizați tipurile de enumerare pe care le-ați creat în problemele anterioare, dar extindeți-le cu constructori și metode. Încercați să utilizați`Enum.valueOf()`.
+Încercați să utilizați tipurile de enumerare pe care le-ați creat în problemele anterioare, dar extindeți-le cu constructori și metode. Încercați să utilizați `Enum.valueOf()`.
 
 ## Trimitere
-Submit .zip
+Submit `.zip`
 
 
 ## Exemple
@@ -269,7 +269,7 @@ Rezultatul dvs. trebuie să fie format din **n** - numărul de linii, care inclu
 Pentru a înțelege mai bine problema, vedeți exemplul de mai jos.
 
 ## Trimitere
-Sumbit .zip
+Sumbit `.zip`
 
 ## Exemple
 | **Input** | **Output** |

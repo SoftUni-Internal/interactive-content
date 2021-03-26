@@ -6,7 +6,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02.Java-OOP-Basics-More-OOP Concepts-28-29-Static-Keyword-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We mainly use the `static` keyword for memory arrangement.
+We mainly use the "**static**" keyword for memory arrangement.
 
 It can be applied to:
 - Nested classes
@@ -98,7 +98,7 @@ public static void main(String[] args) {
 - Can be **invoked** without the need for creating an instance of a class
 - Can **access** static data member and can **change** the value of it
 - **Cannot use a non-static** data member or call a **non-static method** directly
-- `this` and `super` cannot be used in static context
+- "**this**" and "**super**" cannot be used in static context
 
 **Example:** Calculating the volume of a cube
 

@@ -168,7 +168,7 @@ Try using the `Enum.valueOf()` method.
 You must submit your solution in the form of a `.zip` archive.
 
 
-# Examples
+## Examples
 | **Input** | **Output** |
 | --- | --- |
 | TWO | Card name: TWO of CLUBS; Card power: 2 |
