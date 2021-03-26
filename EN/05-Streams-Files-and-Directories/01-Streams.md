@@ -250,7 +250,7 @@ try (FileInputStream fileStream = new FileInputStream(path)) {
 
 [code-task title="Write to File" taskId="java-advanced-streams-files-lab-write-to-file" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 
-[code-editor language=java]
+
 [/code-editor]
 
 [task-description]
