@@ -248,15 +248,14 @@ try (FileInputStream fileStream = new FileInputStream(path)) {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-12-Write-To-File-Problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
+
 [code-task title="Write to File" taskId="java-advanced-streams-files-lab-write-to-file" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 
-[code-editor language=""]
+[code-editor language=java]
 [/code-editor]
 
 [task-description]
 ## Description
-
-test 123
 
 Read the file named "input.txt" that is provided for this exercise and write all its content to a file while skipping any punctuation. 
 
