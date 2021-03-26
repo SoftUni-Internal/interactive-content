@@ -244,7 +244,7 @@ Implementați **all** metode dorite prin interfață, manual.
 Adăugați o nouă metodă clasei `PrintAll()`, metoda trebuie să folosească "**foreach**" al colecției și să imprime toate elementele pe o **single line** separate printr-un spațiu.
 
 ## Datele de intrare
-Inputul va veni din consolă ca **lines** de comenzi. Prima linie va fi întotdeauna comanda`Create`. 
+Inputul va veni din consolă ca **lines** de comenzi. Prima linie va fi întotdeauna comanda "**Create**". 
 
 Ultima comandă **last** primită va fi întotdeauna comanda "**END**".
 
@@ -261,7 +261,7 @@ Programul vostru trebuie să prindă **any exceptions** apărută, din cauza val
 - **Do not use the built-in iterators!**
 - Va fi întotdeauna numai **one** "**Create**" **command** și va fi  **always** prima comandă transmisă
 - Numărul de comenzi primite va fi **between** [1 ... 100]
-- Ultima comandă **last** command va fi întotdeauna  comanda `END`
+- Ultima comandă **last** command va fi întotdeauna  comanda "**END**"
 
 ## Exemple
 | **Intrare**|**Ieșire**|

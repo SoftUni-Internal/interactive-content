@@ -332,7 +332,7 @@ Test Passed!
 [code-task title="Book Comparator" timeLimit=5000 taskId="oop-basics-java-iterators-and-comparators-lab-Book-Comparator" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
-[task-description]]
+[task-description]
 ## Descriere
 Creați o clasă BookComparator din diagrama UML diagram de mai jos: 
 

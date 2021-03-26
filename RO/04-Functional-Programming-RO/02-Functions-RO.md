@@ -53,9 +53,9 @@ Dezvoltatorii pur funcționali trebuie să **își schimbe stilul de gândire** 
 
 **Limbajele funcționale impure** sunt utilizate mai des deoarece permit excepții de la conceptul de "funcții pure" și simplifică activitatea dezvoltatorilor.
 
-- -Aceste limbaje subliniază **stilul funcțional**, dar uneori **permit efecte secundare**
+- Aceste limbaje subliniază **stilul funcțional**, dar uneori **permit efecte secundare**
 
--  Un exemplu de limbaj funcțional impur este **Clojure**
+- Un exemplu de limbaj funcțional impur este **Clojure**
 
 - Nu este foarte popular în dezvoltarea practică de software
 
