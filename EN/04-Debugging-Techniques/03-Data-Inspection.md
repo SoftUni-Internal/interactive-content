@@ -8,9 +8,9 @@
 
 The most important part of debugging is the **data inspection**.
 
-It is serious because we can see the **variables** and what they keep in the **memory**. 
+It is important because we can see the **variables** and what they keep in the **memory**. 
 
-Also, we follow the **code execution flow**.
+We follow the **code execution flow**.
 
 To have a fast resolution time, we need to have better data inspection.
 
@@ -22,7 +22,7 @@ To have a fast resolution time, we need to have better data inspection.
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-22-intellij-data-inspection-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The build-in debugger from **IntelliJ IDEA** gives us tools for effortless check of the **data inspection.**
+The build-in debugger from **IntelliJ IDEA** gives us the tools to effortlessly **inspect** the **data**.
 
 Some of them are:
 
@@ -32,13 +32,13 @@ Some of them are:
 
 - **Watches**
 
-    - track variables or expressions at the same time
+    - tracks variables or expressions at the same time
 
     - the value will update on every step that the program takes
 
 - **Memory**
  
-    - let us monitor the lifetime of the objects that are on the heap
+    - lets us monitor the lifetime of the objects that are on the heap
 
 [image assetsSrc="debugging-techniques-example(3).png" /]
 
@@ -50,13 +50,13 @@ Some of them are:
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-23-variables-and-watches-tabs-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The Variables and the Watches tabs give us the freedom to inspect the states of the application.
+The **Variables** and the **Watches** tabs give us the freedom to inspect the states of the application.
 
 If we want to track something that is not displayed in the **Variables tab**, we can set up a **watch**.
 
 There are several different kinds of "**predefined**" watch windows.
 
-We can **add**, **edit** or **remove** watches.
+We can **add**, **edit** and **remove** watches.
 
 Also, we can create custom **watches**, which can contain only variables that we choose to add:
 
@@ -75,7 +75,7 @@ Also, we can create custom **watches**, which can contain only variables that we
 
 The debugger allows us to evaluate expressions during the debugging session.
 
-That provides us additional information about the program.
+This provides us additional information about the program.
 
 From the **evaluate window** we can evaluate **anonymous classes**, **expressions** and etc.
 
@@ -92,7 +92,7 @@ There is a shortcut to access the **evaluation window** - "**Alt + F**".
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-25-26-finding-a-defect-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-When we found an error, we need to take a few steps to fix it.
+When we have found an error, we need to take a few steps to fix it.
 
 The first one is to make the error **predictable**.
 
