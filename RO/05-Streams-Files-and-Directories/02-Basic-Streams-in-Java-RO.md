@@ -1,4 +1,4 @@
-# Fluxuri de bază în Java
+Changed Strategy TypeChanged Strategy Type# Fluxuri de bază în Java
 
 
 [slide hideTitle]
@@ -33,17 +33,8 @@ Chiar daca există multe clase legate de fluxurile de octețit insa cele mai fre
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-17-Copy-Bytes-Problem-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Copy Bytes" taskId="java-advanced-streams-files-lab-copy-bytes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.*;
+[code-task title="Copy Bytes" taskId="java-advanced-streams-files-lab-copy-bytes" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Descriere
@@ -187,17 +178,9 @@ Aici ste folosit pentru a acoperi `FileInputStream` și, până acum, ați făcu
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-21-Extract-integers-Problem-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Extract Integers" taskId="java-advanced-streams-files-lab-exact-integers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.*;
+[code-task title="Extract Integers" taskId="java-advanced-streams-files-lab-exact-integers" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
+[code-editor language=java]
 [/code-editor]
 [task-description]
 ## Descriere
@@ -281,17 +264,9 @@ Acest lucru va crește semnificativ **performanța** aplicațiilor noastre.
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-24-Write-Every-3rd-Line-Problem-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Write Every Third Line" taskId="java-advanced-streams-files-lab-write-every-third-line" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.*;
+[code-task title="Write Every Third Line" taskId="java-advanced-streams-files-lab-write-every-third-line" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
+[code-editor language=java]
 [/code-editor]
 [task-description]
 ## Descriere
