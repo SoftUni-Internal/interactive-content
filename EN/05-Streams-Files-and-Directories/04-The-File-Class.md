@@ -71,12 +71,18 @@ output.txt: [size in bytes]
 [tests]
 [test]
 [input]
-input.txt: \[14321\]
-output.txt: \[14328\]
+```
+input.txt: [14321]
+output.txt: [14328]
+
+```
 [/input]
 [output]
-input.txt: \[14321\]
-output.txt: \[14328\]
+```
+input.txt: [14321]
+output.txt: [14328]
+
+```
 [/output]
 [/test]
 [/tests]
