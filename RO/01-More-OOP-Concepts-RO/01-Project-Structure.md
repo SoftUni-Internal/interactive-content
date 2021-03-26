@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Splitting Code into Methods
+# Splitting Code Into Methods
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02.Java-OOP-Basics-More-OOP Concepts-3-4-5-6-Projects-structure-Methods-1-2-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -60,7 +60,7 @@ Although this change is done in one place, it will affect the code globally ever
 
 [slide hideTitle]
 
-# Problem with Solution: Rhombus of Stars
+# Problemă cu Soluție: Rhombus of Stars
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/interactive-java-oop-basics-more-oop-concepts-7-rhombus-of-stars-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -71,7 +71,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -297,7 +297,7 @@ Create a `printRow()` method to easily reuse code.
 
 [slide hideTitle]
 
-# Splitting Code into Classes
+# Splitting Code Into Classes
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02-Java-OOP-Basics-More-OOP-Concepts-10-11-12-Splitting-code-into-classes-1 - Copy-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -350,7 +350,7 @@ printer.printToConsole(numbers);
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Point in Rectangle
+# Problemă cu Soluție: Point in Rectangle
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/interactive-java-oop-basics-more-oop-concepts-13-point-in-rectangle-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

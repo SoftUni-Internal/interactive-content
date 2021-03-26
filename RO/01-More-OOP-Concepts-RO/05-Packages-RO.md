@@ -1,10 +1,8 @@
-# Packages
+# Pachete
 
 [slide hideTitle]
 
-# Packages in Java
-
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02.Java-OOP-Basics-More-OOP Concepts-38-39-Packages-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+# Pachete in Java
 
 **Packages** are used to **group related classes.**
 
@@ -18,9 +16,7 @@ Packages are divided into **two** main categories:
 [/slide]
 
 [slide hideTitle]
-# Built-in Packages
-
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02.Java-OOP-Basics-More-OOP Concepts-40-Build-in-Packages-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+# Pachete încorporate
 
 The Java **library** is divided into **packages** and **classes**.
 
