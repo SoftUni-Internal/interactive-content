@@ -15,7 +15,7 @@ public class Program {
 [/code-editor]
 [task-description]
 # Description
-Create a program that calculates the cost of drinks, that a customer has bought from a coffee machine:
+Create a program that calculates the cost for drinks, that a customer has bought from a coffee machine:
 
 |   | **Without sugar** | **Normal** | **Extra sugar** |
 |---|---|---|---|
@@ -25,8 +25,8 @@ Create a program that calculates the cost of drinks, that a customer has bought 
 
 Keep in mind the following discounts:
 - There is a 35% discount if the selected drink should **not** contain **sugar**
-- There is a 25% discount if 5 cups of Espresso have been purchased
-- There is a 20% discount from the total bill, if it exceeds 15$
+- There is a 25% discount if 5 or more cups of Espresso have been purchased
+- There is a 20% discount on the total bill, if it exceeds 15$
 
 The discounts are applied in the order of their description.
 
@@ -53,7 +53,7 @@ The price must be formatted up to **the second decimal place**.
 Calculate the total price for the drinks. Then check if there's a discount.
 [/hint]
 [hint]
-If there is a discount for the drink, determine how much is it and subtract it from the total price for the drinks.
+If there is a discount for the drink, determine how much it is and subtract it from the total price for the drinks.
 [/hint]
 [hint]
 Check if there's any additional discount. 
