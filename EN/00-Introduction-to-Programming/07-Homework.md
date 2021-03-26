@@ -4,7 +4,7 @@
 
 [slide hideTitle]
 
-# Problem with Solution: Print "Hello JavaScript"
+# Problem with Solution: Print Hello JavaScript
 
 [video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/problem1-print-hello-javascript-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -42,7 +42,7 @@ Hello JavaScript
 
 [slide hideTitle]
 
-# Problem with Solution: Calculate and Print 5 \* 5
+# Problem with Solution: Calculate and Print 5 * 5
 
 [video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/problem2-calculate-and-print-5times5-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -156,7 +156,7 @@ Create a program, which calculates and prints the value of the following expres
 
 [slide hideTitle]
 
-# Problem: Square of 7 \* 7 Stars
+# Problem: Square of 7 * 7 Stars
 
 [code-task title="Square of 7 * 7 Stars" taskId="pb-js-introduction-SquareOf7x7" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
