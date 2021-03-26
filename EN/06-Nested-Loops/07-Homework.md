@@ -354,7 +354,7 @@ Create a program, that:
 
 
 * Rceives a tourist **destination**
-* After that, the **budget** required in order to visit it is specified
+* After that, the **budget** required in order to visit it
 * We will receive the **next destination** from the console each time we reach the sufficient budget for the current one.
 * Each next input line will contain amounts of money, until we have **enough** to make the trip
 * The program should end imidiately on receiving the command: **"End"**
@@ -921,10 +921,10 @@ public class Main {
 # Description
 Create a program, that:
 
-* Prints out **3 letter combinations** and the final **number** of generated combinations
-* You will receive the begin and end **range of letters** on the first and second lines of input
+* Prints out **3 letter combinations** and the total **number** of generated combinations
+* You will receive the start and end **letters** on the first and second lines of input
 * On the third line, you will receive a **letter**, which you must **ignore** - do not print combinations with it
-* Generate an print out all 3 letter combinations, using the letters in the given range, ignoring the one letter specified in the input.
+* Generate and print out all 3 letter combinations, using the letters in the given range, ignoring the one letter specified in the input.
 
 ## Example
 | **Input** | **Output** |
@@ -1088,7 +1088,7 @@ The input consists of **2** lines:
 - Second line - minutes - integer in range \[0...59\]
 
 ## Output
-- Hours must be printed to the console in the following: "\{hour\} : \{minutes\}" format
+- The time must be printed to the console in the following: "\{hour\} : \{minutes\}" format
 
 Add filler zeroes to the hour and minute output if their values consist of a single digit.
 
@@ -1267,11 +1267,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Crete a program that prints out **the time** this time there will be another number, representing the seconds.
+Crete a program that prints out **the time**. This time there will be another number, representing the seconds.
 
 The program should start at the given time and run until reaching 23:59:59. 
 
-Increment the second, minute and hour values accordingly.
+Increment the seconds, minutes and hour values accordingly.
 
 ## Input
 The input comes in the form of **3** lines:
@@ -1842,7 +1842,7 @@ Crate a program that reads **an integer `N`** from the console.
 
 There should be as many lines of output as the number of the **digits** N holds. If the number is made up of **3 digits** we should have **3 lines** of output, for example.
 
-For the output value of each line wi should separate the digits of `N` starting form **right** to **left**, so that we will start form its last digit and go forward to the next one to the left.
+For the output value of each line we should separate the digits of `N` starting form **right** to **left**, so that we will start form its last digit and go forward to the next one to the left.
 
 Each output line should be filled by a single symbol:
 
