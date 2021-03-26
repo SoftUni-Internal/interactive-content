@@ -19,7 +19,7 @@ What is a **pure function**?
 
 - It is a function, which returns a value **only determined by its input**, without **side effects**
 
-- Printing something at the console or storing something in a database are examples of **side effects**
+- Printing something to the console or storing something in a database are examples of **side effects**
 
 - Therefore, using **pure functional programming** is often **impractical**
 
@@ -29,7 +29,7 @@ What is a **pure function**?
 Examples of **pure functions** are:
 
 ## `f(x) = √x`
-- The square root function: **"square root of x"**, which takes a number as input and returns another number as output.
+- The square root function: **"square root of x"**, which takes a number as input and returns another number as output
 
 - The function **"list sort"**, which takes a list as input and returns a new list as output
 
@@ -47,7 +47,7 @@ Both functions have **no side effects**:
 
 There are many **functional programming** languages and languages that incorporate **functional paradigms** into modern software development.
 
-**Purely functional languages** are **unpractical** and rarely used, because it is more complicated to program without maintaining a state.
+**Purely functional languages** are **inpractical** and rarely used, because it is more complicated to program without maintaining a state.
 
 Functional software developers need to **switch their thinking style** from the traditional **algorithmic thinking** to **functional thinking**.
 
@@ -67,7 +67,7 @@ Functional software developers need to **switch their thinking style** from the 
 
 - They combine multiple programing paradigms: 
 
-- **Functional** , **declarative** , **imperative** , **object-oriented** , **component-based** , **event-driven** , **asynchronous** programming, and many others.
+- **Functional**, **declarative**, **imperative**, **object-oriented**, **component-based**, **event-driven**, **asynchronous** programming, and many others.
 
 
 
@@ -76,8 +76,6 @@ Functional software developers need to **switch their thinking style** from the 
 - JavaScript, C#, Python, Java, PHP, C++, Go, Swift and TypeScript.
 
 All these languages combine multiple concepts and paradigms for structuring the program to simplify the work of developers and improve their **efficiency** and **performance**.
-
-
 
 [/slide]
 
@@ -95,7 +93,7 @@ In Java, we can create functions in a similar fashion to writing mathematical fu
 Function<Integer, Integer> func = x -> x * x;
 ``` 
 
-In this example, we have all needed **components** for a Java Function:
+In this example, we have all the necessary **components** for a Java Function:
 - Function **type**
 - **Parameters**
 - **Name** of the function 
