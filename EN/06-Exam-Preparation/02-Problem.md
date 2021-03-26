@@ -18,9 +18,9 @@ public class Main {
 [task-description]
 ## Description
 
-You’ve beaten all the content and the last thing left to accomplish is own a legendary item. 
+You have finished all of the content from your favorite game but the last thing left to accomplish is own a legendary item. 
 
-However, it’s a tedious process and requires quite a bit of farming. 
+However, it is a tedious process and requires quite a bit of farming. 
 
 Anyway, you are not too pretentious – any legendary will do. 
 
@@ -49,12 +49,13 @@ Finally, print the collected **junk** items, in **alphabetical** order.
 
 ## Output
 
-- On the first line, print the obtained item in format \{Legendary item\} obtained |!
-- On the next three lines, print the remaining key materials in descending order by quantity
-  * If two key materials have the same quantity, print them in alphabetical order
+- On the first line, print the obtained item in the following format "\{Legendary item\} obtained!"
+- On the next three lines, print the remaining key materials in **descending order by quantity**
+  * If two key materials have the same amount of materials, print them in **alphabetical order**
+ 
 - On the final several lines, print the junk items in alphabetical order
-  * All materials are printed in format \{material\}: \{quantity\}
-  * All output should be **lowercase**, except the first letter of the legendary
+  * All materials are printed in the following format "\{material\}: \{quantity\}"
+  * All of the characters in the names should be in **lowercase**, except for the first letter of the legendary
 
 
 ## Constraints
@@ -62,8 +63,6 @@ Finally, print the collected **junk** items, in **alphabetical** order.
 - The quantity-material pairs are between 1 and 25 per line.
 - The number of lines is in range \[1..10\]
 - All materials are case-insensitive.
-- Allowed working time: 0.25s
-- Allowed memory: 16 MB
 
 
 ## Examples
