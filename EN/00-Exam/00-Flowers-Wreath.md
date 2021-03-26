@@ -15,7 +15,7 @@ public class Main {
 [task-description]
 # Description
 
-You want to go on a flowers wreath competition but to participate you have to make at least 5 flower wreaths.
+To participate in a flowers wreath competition you have to make at least 5 flower wreaths.
 
 You will be given **two sequences of integers**, **representing roses and lilies**. 
 
@@ -27,13 +27,13 @@ You will start crafting from the **last lilies** and the **first roses**.
 
 If the sum of their values is **equal** to **15** – **create one wreath** and **remove** them.
 
-If the sum is **bigger than 15**, just **decrease** the value of the **lilies by 2**. 
+If the sum is **bigger than 15**, **decrease** the value of the **lilies by 2**. 
  
-If the sum is **less than 15 you have to store them for later and remove them**. 
+If the sum is **less than 15**, you have to store them for later and remove them. 
  
 You need to **stop** combining when you have **no more roses or lilies**. 
 
-In the end, if you have **any stored flowers you should make as many wreaths as you can with them**.
+In the end, if you have **any stored flowers**, you should make as many wreaths as you can with them.
 
 ## Input
 
@@ -49,9 +49,9 @@ In the end, if you have **any stored flowers you should make as many wreaths as 
 
 ## Constraints
 
-- All of the given numbers will be valid integers in the range \[0, 120\]. 
+- All of the given numbers will be valid integers in range \[0 ... 120\]. 
 
-- Don't have situation with negative number.
+- There will not be a case where a lily or a rose will be a negative number.
 
 ## Examples
 
@@ -62,11 +62,11 @@ In the end, if you have **any stored flowers you should make as many wreaths as 
 
 ## Comment
 
-- We start with the last lilies (13) and the first roses (2) -> 13 + 2 = 15 -> 15 = 15 So we create one wreath and remove them bouth.
+- We start with the last lilies (13) and the first roses (2) -> 13 + 2 = 15 -> 15 = 15 ; So we create one wreath and remove both values.
 
 - Next we have 9 + 10 = 19 -> 19 > 15 so we decrease the lilies by 2 -> 7 + 10 = 17 and we decrease the liles by 2 -> 5 + 10 = 15 and we create one more wreath and remove them.
 
-- Next, we have 7 + 8 = 15. We create one more wreaht and remove them.
+- Next, we have 7 + 8 = 15. We create one more wreath and remove both values.
 
 - Next, we have  2 + 12 = 14 -> 14 < 15 so we have to store theire sum for later and remove theme.
 
@@ -89,13 +89,13 @@ In the end, if you have **any stored flowers you should make as many wreaths as 
 
 - Next, we have 3 + 8 = 11 -> 11 < 15 -> we store their sum for later and remove them.
 
-- Next, we have 5 +7 = 12 -> we store their sum for later and remove them.
+- Next, we have 5 + 7 = 12 -> we store their sum for later and remove them.
 
 - Next, we have 10 + 6 = 16 -> 16 > 15 we decrease the lilies by 2 -> 8 + 6 = 14 and we store their sum for later and remove them.
 
 - And last we have 10 + 5 = 15, we create one more wreath and stop mixing because we don’t have any flowers left.
 
-- We stop crafting because we don’t have any flowers left and we have 1 wreath and 50 stored flowers. We create 3 more wreaths because 3 * 15 = 45 -> 50 – 45 = 5 -> 5 < 15.
+- We stop crafting because we do not have any flowers left and we have 1 wreath and 50 stored flowers. We create 3 more wreaths because 3 * 15 = 45 -> 50 – 45 = 5 -> 5 < 15.
 
 [/task-description]
 [code-io /]
