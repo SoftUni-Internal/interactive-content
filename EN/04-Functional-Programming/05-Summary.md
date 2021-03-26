@@ -8,11 +8,11 @@
 
 - Functions are pieces of code used to perform tasks
     - we can create functions in Java that are similar to the mathematical concept of functions
-    - they can be passed like **variables** to methods
+    - they can be passed as **variables** to methods
 
 - Lambda expressions are anonymous methods
     - they use the `(parameters) -> {body}` syntax
-    - they can be used with zero, one or more parameters
+    - they can be used with zero, one, or more parameters
 
 ```java
 (name) -> { System.out.println("Hello!" + name); }
