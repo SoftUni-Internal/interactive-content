@@ -138,7 +138,7 @@ treeMap.forEach((k, v) -> System.out.println(k + " - " + v));
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/EN/interactive-java-advanced-sets-and-maps-27-HashMap-LinkedHashMap-TreeMap-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The `LinkedHashMap <Key, Value>` inherits the HashMap class but **maintains insertion order**. 
+`LinkedHashMap <Cheie, Valoare>` moștenește clasa HashMap dar **menține ordinea de inserare**.
 
 **Păstrează cheile în ordinea adăugării.**
 
