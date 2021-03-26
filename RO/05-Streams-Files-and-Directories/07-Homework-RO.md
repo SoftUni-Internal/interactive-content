@@ -420,9 +420,57 @@ Folder size: 2878
 [slide hideTitle]
 # Problemă: copierea unei imagini
 
-Scrieți un program care face o copie a unui fișier **.jpg** folosind **FileInputStream**, **FileOutputStream**, și **byte[] buffer**. 
+Scrieți un program care face o copie a unui fișier **.jpg** folosind **FileInputStream**, **FileOutputStream**, și `byte[]` buffer. 
 
 Denumiți noul fișier ca **picture-copy.jpg**.
+
+To start, pick a random image.
+
+Then, create a new project and open the **Main** class.
+
+Inside the `main` method, create a `try-catch` block:
+
+```java
+try {
+    // Here, we will initialize the the I/O streams and clone the image. 🧑‍💻
+    
+} catch (IOException e) {
+    // Exception handling logic goes here. 😵
+    
+}
+```
+
+Then, inside the `try` block, create an input stream for the original image.
+
+Initialize a new **input stream** using `new File("the-absolute-path-to-your\\image")`.
+
+You can get the absolute path to your image by right-clicking on it, and choosing "**Properties**".
+
+After that, create an **output stream** with the "**picture-copy.jpg**" string as a parameter.
+
+Create a `byte[]` buffer with a size **bigger than or equal to** your image size, in bytes.
+
+Use a while loop to **write the data** to the output stream, as shown below.
+
+```java
+try {
+    FileInputStream inputImage = new FileInputStream(new File("C:\\Folder1\\picture.jpg"));
+    FileOutputStream outputImage = new FileOutputStream("picture-copy.jpg");
+
+    int oneByte;
+    byte[] buffer = new byte[8192]; // The size should be >= to that of your image. 🏞
+    while ((oneByte = inputImage.read(buffer)) != -1) {
+        outputImage.write(buffer, 0, count);
+    }
+
+    System.out.println("The image was copied successfully! 😎");
+    
+} catch (IOException e) {
+    System.out.println("The file is either corrupted or missing. 😿");
+}
+```
+
+The cloned image is now **saved** in your project folder.
 
 [/slide]
 
