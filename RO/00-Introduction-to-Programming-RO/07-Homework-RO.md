@@ -55,7 +55,7 @@ function calculate() {
 
 [/code-editor]
 [task-description]
-# Description
+## Description
 Creați un program JavaScript, care:
 
 
@@ -92,7 +92,7 @@ function nameAndExpression() {
 [/code-editor]
 [task-description]
 
-# Description
+## Description
 
 Creați un program pentru a imprima "**Catlyn**" pe prima linie și calculați și imprimați rezultatul expresiei `5 + 3` pe a doua linie
 [/task-description]
@@ -125,7 +125,7 @@ function calculations() {
 
 [/code-editor]
 [task-description]
-# Description
+## Description
 Creați un program care calculează și imprimă valoarea următoarelor expresii:
 
 - 5 \+ 3 \* 2
@@ -163,7 +163,7 @@ function squareOfStars() {
 
 [/code-editor]
 [task-description]
-# Description
+## Description
 Creați un program care:
 
 

@@ -20,7 +20,7 @@ function hello() {
 [/code-editor]
 [task-description]
 
-# Description
+## Description
 
 Create a JavaScript program, which:
 
@@ -58,7 +58,7 @@ function calculate() {
 [/code-editor]
 [task-description]
 
-# Description
+## Description
 
 Create a JavaScript program, which:
 
@@ -95,7 +95,7 @@ function nameAndExpression() {
 [/code-editor]
 [task-description]
 
-# Description
+## Description
 
 Create a program to print "**Catlyn**" on the first line and calculate and print the result of the expression `5 + 3` on the second line
 
@@ -130,7 +130,7 @@ function calculations() {
 [/code-editor]
 [task-description]
 
-# Description
+## Description
 
 Create a program, which calculates and prints the value of the following expressions:
 
@@ -170,7 +170,7 @@ function squareOfStars() {
 [/code-editor]
 [task-description]
 
-# Description
+## Description
 
 Create a program, which:
 
