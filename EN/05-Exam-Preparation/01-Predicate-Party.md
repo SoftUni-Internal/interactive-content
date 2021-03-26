@@ -69,7 +69,7 @@ Double Length 5
 Party!
 [/input]
 [output]
-Michael, Michael, Stefanos are going to the party!
+Michael, Stefanos are going to the party!
 [/output]
 [/test]
 [test open]
