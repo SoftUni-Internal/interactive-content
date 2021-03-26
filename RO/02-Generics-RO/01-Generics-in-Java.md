@@ -48,7 +48,7 @@ The cast can cause type-related **runtime errors** if a programmer makes a mista
 
 The core idea behind generics is that programmers can express their intention of using **specific types** and **the compiler can ensure the correctness of such type.**
 
-The following example illustrates Generics using `ArrayList` but you can use any collection class such as `LinkedList`, `HashSet`, `TreeSet`, `HashMap`, `Comparator` etc:
+The following example illustrates Generics using "**ArrayList**" but you can use any collection class such as "**LinkedList**", "**HashSet**", "**TreeSet**", "**HashMap**", "**Comparator**" etc:
 
 ```java
 List<String> strings = new ArrayList<String>();
@@ -72,6 +72,6 @@ The main features of Generics are:
 - **Type casting is not required** - there is no need to typecast the object
 - **Compile-Time Checking** - the type is checked at compile-time
 
-It is always better for a problem to be discovered during compile-time , rather than at runtime. 
+It is always better for a problem to be discovered during compile-time, rather than at runtime. 
 
 [/slide]

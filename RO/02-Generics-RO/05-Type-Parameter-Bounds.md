@@ -18,15 +18,15 @@ public class PowerOfThree<T>  {
     }
 }
 ```
-The code above will produce a compile-time error - `The method intValue() is undefined for the type T`.
+The code above will produce a compile-time error - "**The method intValue() is undefined for the type T**".
 
-The error occurs as there is no way for the compiler to know type `T` will always be used for numeric classes.
+The error occurs as there is no way for the compiler to know type "**T**" will always be used for numeric classes.
 
 We need a bounded type to restrict the types that can be used for a parameterized type.
 
-To declare a bounded type parameter, list the type parameter's name, followed by the `extends` keyword, followed by its **upper bound**.
+To declare a bounded type parameter, list the type parameter's name, followed by the "**extends**" keyword, followed by its **upper bound**.
 
-In our case, that will be a `Number` class.
+In our case, that will be a "**Number**" class.
 
 ```java
 T extends Number
@@ -44,9 +44,9 @@ public class PowerOfThree<T extends Number>  {
 ```
 Let us explain what the code does.
 
-The type parameter `T` extends Number to restrict the type of objects that can be used in the parameterized type.
+The type parameter "**T**" extends Number to restrict the type of objects that can be used in the parameterized type.
 
-The `Number` is a superclass of all numeric classes, such as `Integer`, `Float` and `Double`.
+The "**Number**" is a superclass of all numeric classes, such as "**Integer**", "**Float**" and "**Double**".
 
 If we try to use another class that is **not a subclass of Number**, the compiler will throw a compile-time error.
 

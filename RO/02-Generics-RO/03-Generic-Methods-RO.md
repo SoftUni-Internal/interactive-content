@@ -35,7 +35,7 @@ Pentru a declara o metodă generică trebuie să definim un parametru de tip - `
 
 În exemplul de mai sus, avem un `genericPrinter(element T)` care are un parametru de tip generic în semnătura sa - `<T>`.
 
-`GenericPrinter(element T)` poate fi apelat cu argumente de diferite tipuri, `Integer`, `String`, `Double` etc.
+`GenericPrinter(element T)` poate fi apelat cu argumente de diferite tipuri, "**Integer**", "**String**", "**Double**" etc.
 
 Nu este nevoie să specificăm în mod explicit tipul în timp ce apelăm metoda, **compilatorul Java** este suficient de inteligent pentru a determina tipul de variabilă care trebuie utilizată, această facilitate se numește **inferență de tip**.
 

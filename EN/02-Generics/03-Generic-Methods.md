@@ -34,9 +34,9 @@ public class Main {
 ```
 To declare a generic method we have to define a type parameter - `<T>` in the method signature.
 
-In the example above, we have a `genericPrinter(T element)` which has a generic type parameter in its signature - `<T>`.   
+In the example above, we have a `genericPrinter(T element)` which has a generic type parameter in its signature - `<T>`.
 
-The `genericPrinter(T element)` can be called with arguments of different types, `Integer`, `String`, `Double`, etc.
+The `genericPrinter(T element)` can be called with arguments of different types, "**Integer**", "**String**", "**Double**", etc.
 
 We do not need to **explicitly specify** a type while calling the method, the **Java compiler** will determine the type of variable to be used, this feature is called **type inference**. 
 

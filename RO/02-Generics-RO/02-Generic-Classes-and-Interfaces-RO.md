@@ -16,7 +16,7 @@ Secțiunea parametrilor de tip din clasa generică poate include unul sau mai mu
 
 Aceste clase sunt, de asemenea, cunoscute sub numele de clase parametrizate.
 
-În exemplul următor, avem o clasă generică Container care acceptă un parametru de tip:
+În exemplul următor, avem o clasă generică "**Container**" care acceptă un parametru de tip:
 
 ```java
 public class Container<T> {
@@ -86,7 +86,7 @@ It is also used to describe the **return value** of `remove()`.
 
 [task-description]
 ## Descriere
-Create a class `Jar` that can store anything.
+Create a class "**Jar**" that can store anything.
 
 It should have two public methods:
 
@@ -108,7 +108,7 @@ Pickle pickle = jarOfPickles.remove();
 Use the syntax `Jar<T>` to create a generic class.
 
 ## Submit
-To submit your solution, create a **zip** file with your whole package containing the `Jar` and `Main` classes:
+To submit your solution, create a **zip** file with your whole package containing the "**Jar**" and "**Main**" classes:
 
 [image assetsSrc="generics-example(2).png" /]
 
@@ -318,9 +318,9 @@ public interface Mathematics<T extends Number> {
 
 Parametrul de tip `T` extinde Numărul pentru a restricționa tipul de obiecte care pot fi utilizate în tipul parametrizat.
 
-`Number` este o superclasă a tuturor claselor numerice, cum ar fi `Integer`, `Float` și `Double`.
+"**Number**" este o superclasă a tuturor claselor numerice, cum ar fi :**Integer**:, "**Float**" și "**Double**".
 
-Deci, dacă încercăm să folosim o altă clasă care nu este **o subclasă de Număr**, compilatorul va arunca `compile-time-error`.
+Deci, dacă încercăm să folosim o altă clasă care nu este **o subclasă de Număr**, compilatorul va arunca "**compile-time-error**".
 
 [/slide]
 
@@ -333,7 +333,7 @@ Deci, dacă încercăm să folosim o altă clasă care nu este **o subclasă de 
 
 [task-description]
 ## Description
-Create a class `ArrayCreator` with a method and a single overload to it:
+Create a class "**ArrayCreator**" with a method and a single overload to it:
 
 - `static T[] create(int length, T item)`
 - `static T[] create(Class<T> class, int length, T item)`

@@ -10,9 +10,9 @@ Creați o **Generic Class Box** care poate depozita orice.
 
 **Override** o metodă `toString()` pentru a imprima tipul și valoarea datelor stocate în formatul: 
 
-`{class full name}: {value}`
+"\{**class full name**\}: \{**value**\}"
 
-Folosiți clasa pe care ați creat-o și testați-o cu clasa `java.lang.String`. 
+Folosiți clasa pe care ați creat-o și testați-o cu clasa "**java.lang.String**". 
 
 Pe prima linie, veți primi numărul  **n** - numărul de șiruri pe care le veți citi în consolă. 
 
@@ -140,9 +140,9 @@ Creați o **generic class Box** care poate stica orice tip de date.
 
 **Override** metoda `toString()` pentru a imprima tipul și valoarea datelor stocate în formatul : 
 
-`{class full name}: {value}`
+"\{**class full name**\}: \{**value**\}"
 
-Folosiți clasa pe care ați creat-o și testați-o cu clasa  `java.lang.Integer`. 
+Folosiți clasa pe care ați creat-o și testați-o cu clasa  "**java.lang.String**". 
 
 Pe prima linie de cod, veși primi numărul **n** - numprul de Integeri pe care îi veți citi în consolă.
 
@@ -691,25 +691,25 @@ Creați o structură de date generică ce poate stoca **any type** care pot fi *
 
 Implementați funcțiile:
 
-- `void add(T element)`
-- `T remove(int index)`
-- `boolean contains(T element)`
-- `void swap(int index, int index)`
-- `int countGreaterThan(T element)`
-- `T getMax()`
-- `T getMin()`
+- void add(T element)
+- T remove(int index)
+- boolean contains(T element)
+- void swap(int index, int index)
+- int countGreaterThan(T element)
+- T getMax()
+- T getMin()
 
 Creați un cititor de comenzi care să citească aceste comenzi și să modifice lista specifică pe care ați creat-o. Implementați comenzile :
 
-- `Add <element>` - Adaugă elementul dat la finalul listei 
-- `Remove <index>` - Elimină elementul de la indexul dat 
-- `Contains <element>` - Imprimă dacă lista conține elementul dat **(true or false)**
-- `Swap <index> <index>` - Schimbă elementele de la indexurile date 
-- `Greater <element>` - Numără elementele care sunt mai mari decât un element dat și imprimă numărul acestora
-- `Max` - Imprimă elementul maximum din listă 
-- `Min` - Imprimă elementul minim din listă 
-- `Print` - Imprimă toate elementele din listă, fiecare pe o linie separată 
-- `END` - oprește citirea comenzilor
+- "**Add** \<**element**\>" - Adaugă elementul dat la finalul listei 
+- "**Remove** \<**index**\>" - Elimină elementul de la indexul dat 
+- "**Contains** \<**element**\>" - Imprimă dacă lista conține elementul dat **(true or false)**
+- "**Swap** \<**index**\> \<**index**\>" - Schimbă elementele de la indexurile date 
+- "**Greater** \<**element**\>" - Numără elementele care sunt mai mari decât un element dat și imprimă numărul acestora
+- "**Max**" - Imprimă elementul maximum din listă 
+- "**Min**" - Imprimă elementul minim din listă 
+- "**Print**" - Imprimă toate elementele din listă, fiecare pe o linie separată 
+- "**END**" - oprește citirea comenzilor
 
 **Note** : Pentru **tests**, folosiți **String** ca **T**.
 
@@ -890,7 +890,7 @@ It should have a single static method `sort()` which can sort objects of type **
 
 **Extend the command list** to support one additional command:
 
-- `Sort` - Sort the elements in the list in ascending order.
+- "**Sort**" - Sort the elements in the list in ascending order.
 
 
 ## Examples
@@ -1264,21 +1264,21 @@ Datele de intrare vor consta din trei linii :
 
 - Prima linie cuprinde un **person's name** și **city of residence**. Cele două sunt **separated by space(s)**. Trebuie să le colectați în Tuple și să le imprimați în consolă. Aceste date vor veni în formatul: 
 
-`{{first name} {last name}} {city}`
+"\{\{**first name**\} \{**last name**\}\} \{**city**\}"
 
 - A doua linie cuprinde un **name** de persoană și **amount of hobbies** pe care aceasta le are și apare în următorul format :
 
-`{name} {hobbies}`
+"\{**name**\} \{**hobbies**\}"
 
 - Ultima linie va cuprinde un **Integer** și un **Double** în următorul format:
 
-`{Integer} {Double}`
+"\{**Integer**\} \{**Double**\}"
 
 ## Output
 
 - Printați itemii Tuple items in următorul format: 
 
-`{item1} -> {item2}`
+"\{**item1**\} **->** \{**item2**\}"
 
 ## Constrângeri
 
@@ -1378,21 +1378,21 @@ Datele de intrare constau din trei linii :
 
 - Prima linie conține un nume de persoană, orașul și țara de reședință, în următorul format: 
 
-`{{first name} {last name}} {city} {country}`
+"\{\{**first name**\} \{**last name**\}\} \{**city**\} \{**country**\}"
 
 - A doua linie conține un nume, număr de hobbie-uri și o variabilă **Boolean variable** - mulțumit sau nu, în următorul format :
 
-`{name} {hobbies} {happy or not}`
+"\{**name**\} \{**hobbies**\} \{**happy or not**\}"
 
 - Ultima linie va conține un nume, o balanță bancară (dublu) și un nume de bancă. Format: 
 
-`{name} {account balance} {bank name}`
+"\{**name**\} \{**account balance**\} \{**bank name**\}"
 
 ## Output
 
 - Printați obiectele Triple în următorul format: 
 
-`{firstElement} -> {secondElement} -> {thirdElement}`
+"\{**firstElement**\} **->** \{**secondElement**\} **->** \{**thirdElement**\}"
 
 
 ## Exemple

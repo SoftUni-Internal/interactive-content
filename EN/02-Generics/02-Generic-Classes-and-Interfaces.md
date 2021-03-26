@@ -18,7 +18,7 @@ The type parameter section of the generic class can include one or more type par
 
 These classes are also known as parameterized classes.
 
-In the following example, we have a generic class `Container` that accepts one type parameter:
+In the following example, we have a generic class "**Container**" that accepts one type parameter:
 
 ```java
 public class Container<T> {
@@ -92,7 +92,7 @@ It is also used to describe the **return value** of `remove()`.
 [task-description]
 ## Description
 
-Create a class `Jar` that can store anything.
+Create a class "**Jar**" that can store anything.
 
 It should have two public methods:
 
@@ -114,7 +114,7 @@ Pickle pickle = jarOfPickles.remove();
 Use the syntax `Jar<T>` to create a generic class.
 
 ## Submit
-To submit your solution, create a **zip** file with your whole package containing the `Jar` and `Main` classes:
+To submit your solution, create a **zip** file with your whole package containing the "**Jar**" and "**Main**" classes:
 
 [image assetsSrc="generics-example(2).png" /]
 
@@ -327,9 +327,9 @@ In the example above, we declare the Mathematics interface which declares the me
 
 The type parameter `T` extends Number to restrict the type of objects that can be used in the parameterized type.
 
-The `Number` is a superclass of all numeric classes, such as `Integer`, `Float`, and `Double`.
+The "**Number**" is a superclass of all numeric classes, such as "**Integer**", "**Float**", and "**Double**".
 
-So, if we try to use another class that is **not a subclass of Number**, the compiler will throw `compile-time-error`.
+So, if we try to use another class that is **not a subclass of Number**, the compiler will throw "**compile-time-error**".
 
 [/slide]
 
@@ -345,7 +345,7 @@ So, if we try to use another class that is **not a subclass of Number**, the com
 [task-description]
 ## Description
 
-Create a class `ArrayCreator` with a method and a single overload to it:
+Create a class "**ArrayCreator**" with a method and a single overload to it:
 
 - `static T[] create(int length, T item)`
 - `static T[] create(Class<T> class, int length, T item)`

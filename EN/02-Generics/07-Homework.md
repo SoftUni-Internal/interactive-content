@@ -6,13 +6,13 @@
 
 [task-description]
 # Description
-Create a **generic class** `Box` that can store any type.
+Create a **generic class** "**Box**" that can store any type.
 
 **Override** the `toString()` method to print the type and the value of the stored data in the format:
 
-`{class full name}: {value}`
+"\{**class full name**\}: \{**value**\}"
 
-Use the class that you have created and test it with the class `java.lang.String`. 
+Use the class that you have created and test it with the class "**java.lang.String**". 
 
 ## Input
 
@@ -22,7 +22,7 @@ On the next **n** lines, you will get the actual strings.
 
 ## Output
 
-For each string, create a `Box` class and call its `toString()` method to print the data to the console.
+For each string, create a "**Box**" class and call its `toString()` method to print the data to the console.
 
 # Example
 | **Input** | **Output** |
@@ -144,9 +144,9 @@ Create a **generic class Box** that can store any type.
 
 **Override** the `toString()` method to print the type and the value of the stored data in the format 
 
-`{class full name}: {value}`
+"\{**class full name**\}: \{**value**\}"
 
-Use the class that you have created and test it with the class `java.lang.Integer`. 
+Use the class that you have created and test it with the class "**java.lang.String**". 
 
 On the first line, you will get the number **n** - the number of Integers to read from the console. 
 
@@ -695,25 +695,25 @@ Create a generic data structure that can store **any type** that can be **compar
 
 Implement functions:
 
-- `void add(T element)`
-- `T remove(int index)`
-- `boolean contains(T element)`
-- `void swap(int index, int index)`
-- `int countGreaterThan(T element)`
-- `T getMax()`
-- `T getMin()`
+- void add(T element)
+- T remove(int index)
+- boolean contains(T element)
+- void swap(int index, int index)
+- int countGreaterThan(T element)
+- T getMax()
+- T getMin()
 
 Create a command interpreter that reads commands and modifies the custom list that you have created. Implement the commands:
 
-- `Add <element>` - Adds the given element to the end of the list
-- `Remove <index>` - Removes the element at the given index
-- `Contains <element>` - Checks if the list contains the given element and prints **true or false**
-- `Swap <index> <index>` - Swaps the elements at the given indexes
-- `Greater <element>` - Counts the elements that are greater than the given element and prints their count
-- `Max` - Prints the maximum element in the list
-- `Min` - Prints the minimum element in the list
-- `Print` - Prints all elements in the list, each on a separate line
-- `END` - stops accepting commands
+- "**Add** \<**element**\>" - Adds the given element to the end of the list
+- "**Remove** \<**index**\>" - Removes the element at the given index
+- "**Contains** \<**element**\>" - Checks if the list contains the given element and prints **true or false**
+- "**Swap** \<**index**\> \<**index**\>" - Swaps the elements at the given indexes
+- "**Greater** \<**element**\>" - Counts the elements that are greater than the given element and prints their count
+- "**Max**" - Prints the maximum element in the list
+- "**Min**" - Prints the minimum element in the list
+- "**Print**" - Prints all elements in the list, each on a separate line
+- "**END**" - stops accepting commands
 
 **Note**: For the **tests**, use **String** as **T**.
 
@@ -893,7 +893,7 @@ It should have a single static method `sort()` which can sort objects of type **
 
 **Extend the command list** to support one additional command:
 
-- `Sort` - Sort the elements in the list in ascending order
+- "**Sort**" - Sort the elements in the list in ascending order
 
 
 # Example
@@ -1255,7 +1255,7 @@ Your task is to try to implement it in Java, just for practicing generics.
 
 Create a class **"Tuple"**, which holds two objects. 
 
-The first one will be `item1` and the second one - `item2`.
+The first one will be **"item1"** and the second one - **"item2"**.
 
 The class has to hold **Generics**. 
 
@@ -1271,21 +1271,21 @@ The input consists of three lines:
 
 This input comes in the following format:
 
-`{{first name} {last name}} {city}`
+"\{\{**first name**\} \{**last name**\}\} \{**city**\}"
 
 - The second line holds a **name** of a person and the **amount of hobbies** he has and comes in the following format:
 
-`{name} {hobbies}`
+"\{**name**\} \{**hobbies**\}"
 
 - The last line will hold an **Integer** and a **Double** in the following format:
 
-`{Integer} {Double}`
+"\{**Integer**\} \{**Double**\}"
 
 ## Output
 
 - Print the Tuple items in the following format: 
 
-`{item1} -> {item2}`
+"\{**item1**\} **->** \{**item2**\}"
 
 ## Constraints
 
@@ -1390,26 +1390,25 @@ The input consists of three lines.
 
 - The first contains a person's name, city, and country of residence in the following format:
 
-`{{first name} {last name}} {city} {country}`
+"\{\{**first name**\} \{**last name**\}\} \{**city**\} \{**country**\}"
 
 - The second line holds a name, amount of hobbies, and a **Boolean variable** - happy (true) or not (false), in the following format:
 
-`{name} {hobbies} {happy or not}`
+"\{**name**\} \{**hobbies**\} \{**happy or not**\}"
 
 - The last line will contain a name, a bank balance (double) and a bank name, formatted as follows:
 
-`{name} {account balance} {bank name}`
+"\{**name**\} \{**account balance**\} \{**bank name**\}"
 
 ## Output
 
 - Print the Threeuples objects in the following format: 
 
-`{firstElement} -> {secondElement} -> {thirdElement}`
+"\{**firstElement**\} **->** \{**secondElement**\} **->** \{**thirdElement**\}"
 
 
-# Examples
+## Examples
 
-## Example 1
 
 | **Input** | **Output** |
 | --- | --- |
@@ -1417,7 +1416,6 @@ The input consists of three lines.
 | John 2 happy | John -> 2 -> false |
 | Peter 0.10 Expressbank | Peter -> 0.1 -> Expressbank |
 
-## Example 2
 
 | **Input** | **Output** |
 | --- | --- |
