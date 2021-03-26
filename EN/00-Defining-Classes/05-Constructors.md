@@ -143,9 +143,9 @@ class Car {
 }
 ```
 
-The first constructor takes two arguments `brand` and `horsePower`.
+The first constructor takes two arguments "**brand**" and "**horsePower**".
 
-The second takes only one argument - `brand`.
+The second takes only one argument - "**brand**".
 
 Inside the body of the second constructor, we find the following Java statement:
 
@@ -153,17 +153,17 @@ Inside the body of the second constructor, we find the following Java statement:
 this(brand, -1);
 ```
 
-The `this` keyword, followed by parentheses and parameters means that another constructor in the same Java class is being called.
+The "**this**" keyword, followed by parentheses and parameters means that another constructor in the same Java class is being called.
 
-Java will determine which constructor the `this` keyword refers to by the number of parameters and their type (the constructor's signature).
+Java will determine which constructor the "**this**" keyword refers to by the number of parameters and their type (the constructor's signature).
 
-In this example, we are calling the first constructor with two parameters, and we are setting the value of `horsePower` to **-1**.
+In this example, we are calling the first constructor with two parameters, and we are setting the value of "**horsePower**" to **-1**.
 
 [/slide]
 
 
 [slide hideTitle]
-# Problem with Solution: Constructors
+# Problem with Solution: Car Constructors
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-31-problem-and-solution-constructors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -194,7 +194,7 @@ If you miss information about the field of type **String**, set the value to "**
 
 The `carInfo()` method should return the info about any car object in the following format:
 
-"The car is: \{brand\} \{model\} – \{horsePower\} HP."
+"**The car is:** \{**brand**\} \{**model**\} - \{**horsePower**\} **HP.**"
 
 ## Hints
 
@@ -222,7 +222,7 @@ Create a `carInfo()` method.
 
 This method should return the information about any car object in the following format:
 
-"The car is: \{brand\} \{model\} – \{horsePower\} HP."
+"**The car is:** \{**brand**\} \{**model**\} - \{**horsePower**\} **HP.**"
 
 Read information about a car the same way as in the previous task.
 
@@ -244,9 +244,8 @@ System.out.println(secondCar.carInfo());
 ```
 
 
-# Examples
+## Examples
 
-## Example 1
 
 | **Input** | **Output** |
 | --- | --- |
@@ -254,7 +253,7 @@ System.out.println(secondCar.carInfo());
 | Chevrolet | The car is: TESLA MODEL-S - 503 HP. |
 | TESLA MODEL-S 503 | |
 
-## Example 2
+
 
 | **Input** | **Output** |
 | --- | --- |

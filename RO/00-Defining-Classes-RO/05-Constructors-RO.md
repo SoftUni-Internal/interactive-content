@@ -142,20 +142,20 @@ class Car {
   }
 }
 ```
-Primul constructor ia două argumente "brand" și "horsePower".
+Primul constructor ia două argumente "**brand**" și "**horsePower**".
 
-Al doilea ia un singur argument - "brand".
+Al doilea ia un singur argument - "**brand**".
 
 În corpul celui de-al doilea constructor, găsim următoarea declarație Java:
 
 ```java
   this(brand, -1);
 ```
-The `this` keyword, followed by parentheses and parameters means that another constructor in the same Java class is being called.
+The "**this**" keyword, followed by parentheses and parameters means that another constructor in the same Java class is being called.
 
-Java will determine which constructor the `this` keyword refers to by the number of parameters and their type (the constructor's signature).
+Java will determine which constructor the "**this**" keyword refers to by the number of parameters and their type (the constructor's signature).
 
-In this example, we are calling the first constructor with two parameters, and we are setting the value of `horsePower` to **-1**.
+In this example, we are calling the first constructor with two parameters, and we are setting the value of "**horsePower**" to **-1**.
 
 [/slide]
 
@@ -188,9 +188,9 @@ Realizați constructori corespunzători pentru clasa Auto, astfel încât să pu
 
 Dacă pierdeți informații despre câmpul de tip **Șir** setați valoarea la "**unknown**", iar pentru **întreg** setare de câmp **- 1**.
 
-Metoda `carInfo ()` trebuie să returneze informațiile despre orice obiect de mașină în următorul format:
+Metoda `carInfo()` trebuie să returneze informațiile despre orice obiect de mașină în următorul format:
 
-"The car is: \{brand\} \{model\} - \{horsePower\} HP."
+"**The car is:** \{**brand**\} \{**model**\} - \{**horsePower**\} **HP.**"
 
 ## Sugestii
 
@@ -217,13 +217,13 @@ Creați o metodă `carInfo()`.
 
 Această metodă ar trebui să returneze informațiile despre orice obiect de mașină în următorul format:
 
-"The car is: \{brand\} \{model\} - \{horsePower\} HP."
+"**The car is:** \{**brand**\} \{**model**\} - \{**horsePower**\} **HP.**"
 
 Citiți informațiile despre mașină la fel ca sarcina anterioară, însă de această dată folosiți constructori pentru a crea obiecte, nu creați obiect cu constructorul implicit.
 
 Ar trebui să puteți gestiona diferite tipuri de intrare, formatul va fi același cu sarcina anterioară, dar de data aceasta este posibil să lipsească unele date.
 
-Pentru un exemplu, puteți obține doar marca auto - ceea ce înseamnă că trebuie să setați modelul mașinii la ”necunoscut” și valoarea Caiputere la -1.
+Pentru un exemplu, puteți obține doar marca auto - ceea ce înseamnă că trebuie să setați modelul mașinii la **horsepower** și valoarea Caiputere la -1.
 
 Metoda principală ar trebui să fie așa:
 

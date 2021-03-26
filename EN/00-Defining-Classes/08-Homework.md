@@ -6,15 +6,13 @@
 
 [task-description]
 ## Description
-Create a `Person` class with two fields `String name` and `int age`.
+Create a "**Person**" class with two fields "**String name**" and "**int age**".
 
 Write a program that reads **N** lines of personal information from the console, and then prints all people whose **age** is **more than 30** years old, **sorted in alphabetical order**.
 
 **Note:** you can use `stream()` to filter the people.
 
-# Examples
-
-## Example 1
+## Examples
 
 | **Input** | **Output** |
 | --- | --- |
@@ -23,7 +21,6 @@ Write a program that reads **N** lines of personal information from the console,
 | Steven 31 |  |
 | John 48 |  |
 
-## Example 2
 
 | **Input** | **Output** |
 | --- | --- |
@@ -215,17 +212,16 @@ Your task is to write a program that takes **N** lines of information about empl
 
 Prints information for each employee in that department with their **name, salary, email, and age** - **sorted by salary in descending order**. 
 
-If an employee **does not have** an **email** – in place of that field you should print **"n/a"** instead.
+If an employee **does not have** an **email** - in place of that field you should print **"n/a"** instead.
 
-If they do not have an **age** – print **"-1"** instead. 
+If they do not have an **age** - print **"-1"** instead. 
 
 The **salary** should be rounded to **two decimal places** after the separator.
 
 **Hint**: you can define a **Department** class that holds a list of employees.
 
-# Examples
+## Examples
 
-## Example 1
 
 | **Input** | **Output** |
 | --- | --- |
@@ -235,7 +231,6 @@ The **salary** should be rounded to **two decimal places** after the separator.
 | John 4400.20 ProjectLeader Development john@john.com |  |
 | Philip 0.20 Freelancer Nowhere 18 |  |
 
-## Example 2
 
 | **Input** | **Output** |
 | --- | --- |
@@ -399,13 +394,13 @@ On the first line of the input, you will receive a number **N** - the number of 
 
 On **each** of the next **N** lines you will receive information for a car in the following format: 
 
-`<model> <fuelAmount> <fuelCostFor1km>`
+"\<**model**\> \<**fuelAmount**\> \<**fuelCostFor1km**\>"
 
 All **cars start at 0 kilometers traveled**.
 
-After the initial **N** lines, and until the `End` command is received, you will receive commands in the following format: 
+After the initial **N** lines, and until the "**End**" command is received, you will receive commands in the following format: 
 
-`Drive <carModel> <amountOfKm>`
+"**Drive** \<**carModel**\> \<**amountOfKm**\>"
 
 Implement a method in the **Car** class to calculate whether a car **can** move that distance or **not**. 
 
@@ -413,17 +408,16 @@ If it can move, reduce the **fuel amount** of the car by the amount of fuel need
 
 If the car cannot move its fuel amount and traveled distance stay the same, and you should print this to the console:
 
-`Insufficient fuel for the drive` 
+"**Insufficient fuel for the drive**"
 
-After the `End` command is received, print each car in order of appearing in the input and its current fuel amount and traveled distance in the format:
+After the "**End**" command is received, print each car in order of appearing in the input and its current fuel amount and traveled distance in the format:
 
-`<model> <fuelAmount> <distanceTraveled>`
+"\<**model**\> \<**fuelAmount**\> \<**distanceTraveled**\>"
 
 The fuel amount should be rounded to the **second decimal place**.
 
-# Examples
+## Examples
 
-## Example 1
 
 | **Input** | **Output** |
 | --- | --- |
@@ -435,7 +429,6 @@ The fuel amount should be rounded to the **second decimal place**.
 | Drive AudiA4 13 |  |
 | End |  |
 
-## Example 2
 
 | **Input** | **Output** |
 | --- | --- |
@@ -627,21 +620,19 @@ On the first line of the input, you will receive a number **N** - the number of 
 
 On each of the next **N** lines, you will receive information about a car in the format: 
 
-`<model> <engineSpeed> <enginePower> <cargoWeight> <cargoType> <tire1Pressure> <tire1Age> <tire2Pressure> <tire2Age> <tire3Pressure> <tire3Age> <tire4Pressure> <tire4Age>`
+"\<**model**\> \<**engineSpeed**\> \<**enginePower**\> \<**cargoWeight**\> \<**cargoType**\> \<**tire1Pressure**\> \<**tire1Age**\> \<**tire2Pressure**\> \<**tire2Age**\> \<**tire3Pressure**\> \<**tire3Age**\> \<**tire4Pressure**\> \<**tire4Age**\>"
 
 Where the speed, power, weight and tire age are **integers**, tire pressure is a **double**.
 
-After the **N** lines you will receive a single line with one of 2 commands `fragile` or `flammable`.
+After the **N** lines you will receive a single line with one of 2 commands "**fragile**" or "**flammable**".
 
-If the command is `fragile` print all cars whose **cargoType is** `fragile` with a **tire** whose **pressure is < 1**.
+If the command is "**fragile**" print all cars whose **cargoType is** "**fragile**" with a **tire** whose **pressure is < 1**.
 
-If the command is `flammable` print all cars whose **cargoType is** `flammable` and have **enginePower > 250**. 
+If the command is "**flammable**" print all cars whose **cargoType is** "**flammable**" and have **enginePower > 250**. 
 
 The cars should be printed in the order of appearing in the input, each on a separate line.
 
-# Examples
-
-## Example 1
+## Examples
 
 | **Input** | **Output** |
 | --- | --- |
@@ -650,7 +641,6 @@ The cars should be printed in the order of appearing in the input, each on a sep
 | Citroen2CV 190 165 1200 fragile 0.9 3 0.85 2 0.95 2 1.1 1 |  |
 | fragile |  |
 
-## Example 2
 
 | **Input** | **Output** |
 | --- | --- |
@@ -782,13 +772,13 @@ On the first line, you will read a number **N** which will specify how many line
 
 On each of the next **N** lines, you will receive information about an **Engine** in the following format:
 
-`<model> <power> <displacement> <efficiency>`
+"\<**model**\> \<**power**\> \<**displacement**\> \<**efficiency**\>"
 
 After the lines with engines, on the next line you will receive a number **M**, specifying the number of Cars that will follow.
 
 On each of the next **M** lines the information about a **Car** will follow in the following format:
 
-`<model> <engine> <weight> <color>`
+"\<**model**\> \<**engine**\> \<**weight**\> \<**color**\>"
 
 The engine in the above input will be the **model of an existing Engine**. 
 
@@ -812,9 +802,8 @@ Color: <carColor>
 
 Override the classes `toString()` methods to have a reusable way of displaying the objects.
 
-# Examples
+## Examples
 
-## Example 1
 
 | **Input** | **Output** |
 | --- | --- |
@@ -1013,7 +1002,7 @@ V8-101 220 50
 V4-33 140 28
 V6-33 230 28
 V7-44 330 35
-V12-45 450 60 
+V12-45 450 60
 7
 FordFocus V4-33 1300 Silver
 Opelche V7-44 1550 Gold
@@ -1903,17 +1892,17 @@ The **Pokemon** class has a **name**, an **element** and **health**, all values 
 
 Every Trainer **starts with 0 badges**.
 
-You will receive an unknown number of lines from the console until you receive the `Tournament` command. 
+You will receive an unknown number of lines from the console until you receive the "**Tournament**" command. 
 
 Each line will carry information about a pokemon and the trainer who caught it in the format:
 
-`<trainerName> <pokemonName> <pokemonElement> <pokemonHealth>` 
+"\<**trainerName**\> \<**pokemonName**\> \<**pokemonElement**\> \<**pokemonHealth**\>"
 
 Where **trainerName** is the name of the Trainer who caught the pokemon. 
 
 Names are **unique**, there cannot be 2 trainers with the same name. 
 
-After receiving the `Tournament`command an unknown number of lines containing one of three elements **"Fire"**, **"Water"**, **"Electricity"** will follow until the command `End` is received. 
+After receiving the "**Tournament**" command an unknown number of lines containing one of three elements **"Fire"**, **"Water"**, **"Electricity"** will follow until the command "**End**" is received. 
 
 For every command, you must check if a trainer has **at least 1** pokemon with the given element. 
 
@@ -1921,17 +1910,16 @@ If he does, he receives 1 badge, otherwise, all his pokemon **lose 10 health**.
 
 If a **pokemon's health falls to 0 or less** it is defeated and must be deleted from the trainer's collection. 
 
-After the `End` command is received, you should print all trainers **sorted by the number of badges they have in descending order**. 
+After the "**End**" command is received, you should print all trainers **sorted by the number of badges they have in descending order**. 
 
 If two trainers have the same amount of badges, they should be sorted by order of appearance in the input. 
 
 Print in the format:
 
-`<trainerName> <badges> <numberOfPokemon>`
+"\<**trainerName**\> \<**badges**\> \<**numberOfPokemon**\>"
 
-# Examples
+## Examples
 
-## Example 1
 
 | **Input** | **Output** |
 | --- | --- |
@@ -1943,7 +1931,7 @@ Print in the format:
 | Electricity |  |
 | End |  |
 
-## Example 2
+
 
 | **Input** | **Output** |
 | --- | --- |
@@ -2246,19 +2234,19 @@ You and your friends decide to create a class that holds all the information abo
 
 Since you are good at writing code, they asked you to design that class.
 
-You will receive lines of input from the console until you get the `End` command.
+You will receive lines of input from the console until you get the "**End**" command.
 
 Each of those lines contains information about a person in one of the following formats:
 
-- `{personName} company {companyName} {department} {salary}`
+- "\{**personName**\} **company** \{**companyName**\} \{**department**\} \{**salary**\}"
 
-- `{personName} pokemon {pokemonName} {pokemonType}`
+- "\{**personName**\} **pokemon** \{**pokemonName**\} \{**pokemonType**\}"
 
-- `{personName} parents {parentName} {parentBirthday}`
+- "\{**personName**\} **parents** \{**parentName**\} \{**parentBirthday**\}"
 
-- `{personName} children {childName} {childBirthday}`
+- "\{**personName**\} **children** \{**childName**\} \{**childBirthday**\}"
 
-- `{personName} car {carModel} {carSpeed}`
+- "\{**personName**\} **car** \{**carModel**\} \{**carSpeed**\}"
 
 You should structure all information about a person in a class with nested subclasses. 
 
@@ -2266,7 +2254,7 @@ Person names are **unique** - there will not be two people with the same name.
 
 A person can have **only one company** and **one car**, but can have **multiple parents, children** and **pokemon**. 
 
-After the `End` command, you will receive a **single** name on the next line.
+After the "**End**" command, you will receive a **single** name on the next line.
 
 You should **print** all information about that person. 
 
@@ -2278,23 +2266,21 @@ The salary must be formatted to **the second decimal place**.
 
 Print the information in the following format:
 
-```java
-{personName}
-Company:
-{companyName} {companyDepartment} {salary}
-Car:
-{carModel} {carSpeed}
-Pokemon:
-{pokemonName} {pokemonType}
-Parents:
-{parentName} {parentBirthday}
-Children:
-{childName} {childBirthday}
-```
 
-# Examples
+"\{**personName**\}
+**Company:**
+\{**companyName**\} \{**companyDepartment**\} \{**salary**\}
+**Car:**
+\{**carModel**\} \{**carSpeed**\}
+**Pokemon:**
+\{**pokemonName**\} \{**pokemonType**\}
+**Parents:**
+\{**parentName**\} \{**parentBirthday**\}
+**Children:**
+\{**childName**\} \{**childBirthday**\}"
 
-## Example 1
+
+## Examples
 
 | **Input** | **Output** |
 | --- | --- |
@@ -2308,7 +2294,6 @@ Children:
 |  | Children: |
 
 
-## Example 2
 
 | **Input** | **Output** |
 | --- | --- |
@@ -2509,6 +2494,7 @@ LR 01/01/1000
 
 [slide hideTitle]
 # Problem: Family Tree
+
 [code-task title="Family Tree" taskId="oop-basics-java-defining-classes-Familiy-Tree" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
@@ -2519,19 +2505,19 @@ LR 01/01/1000
 
 On the first line of the input, you will receive either a name or a date of birth in the format:
 
-`<FirstName> <LastName>` or `day/month/year`
+"\<**FirstName**\> \<**LastName**\>" or "**day/month/year**"
 
 Your task is to find information about the person in the family tree. 
 
-On the next lines, until the `End` command is received, you will get information about your predecessors that is needed for the family tree.
+On the next lines, until the "**End**" command is received, you will get information about your predecessors that is needed for the family tree.
 
 The information will be in one of the following formats:
 
-- `firstName lastName - firstName lastName`
-- `firstName lastName - day/month/year`
-- `day/month/year - firstName lastName`
-- `day/month/year - day/month/year`
-- `firstName lastName day/month/year`
+- firstName lastName - firstName lastName
+- firstName lastName - day/month/year
+- day/month/year - firstName lastName
+- day/month/year - day/month/year
+- firstName lastName day/month/year
 
 The first 4 formats reveal a family tie: 
 
@@ -2541,13 +2527,13 @@ Some inputs might not includes names at all.
 
 For example, the 4th type of format means the person **born on the specified date on the left** is the **parent of the person born on the date that is on the right side**.
 
-The last format ties **different** information together – i.e. **the person with that name was born on that date**. 
+The last format ties **different** information together - i.e. **the person with that name was born on that date**. 
 
-**Names** and **birthdates** are **unique** – there will not be two people with the same name or birthdate. 
+**Names** and **birthdates** are **unique** - there will not be two people with the same name or birthdate. 
 
 There will **always** be enough entries to construct the family tree (all people names and birthdates are known and they have **at least one** connection to another person in the tree).
 
-After the `End` command is received, you should print all information about the person whose name or birthdate you received on the very first line – his **name, birthday, parents, and children** (check the examples for the format). 
+After the "**End**" command is received, you should print all information about the person whose name or birthdate you received on the very first line - his **name, birthday, parents, and children** (check the examples for the format). 
 
 The people in the parents and children lists should be **ordered** by their **first appearance** in the input.
 
@@ -2555,9 +2541,7 @@ Regardless if they appeared as a birthdate or a name.
 
 For example, in the first input, Stan is before Jenny because his birthdate appeared first in the second line, while she appeared in the third line.
 
-# Examples
-
-## Example 1
+## Examples
 
 | **Input** | **Output** |
 | --- | --- |
@@ -2571,7 +2555,7 @@ For example, in the first input, Stan is before Jenny because his birthdate appe
 | John Baker 23/05/1980 |  |
 | End |  |
 
-## Example 2
+
 
 | **Input** | **Output** |
 | --- | --- |

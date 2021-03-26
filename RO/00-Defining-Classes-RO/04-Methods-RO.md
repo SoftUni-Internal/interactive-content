@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# What Are Methods
+# What are Methods
 
 O metodă este o colecție de declarații care efectuează anumite sarcini specifice și returnează rezultatul apelantului.
 
@@ -89,7 +89,7 @@ class Car {
 
 În exemplul de mai sus `setHorsePowerNotWorking()`, nu funcționează, deoarece parametrul metodei `horsePower` umbrește câmpul "horsePower".
 
-Pentru a depăși această problemă, trebuie să folosim cuvântul cheie `this`:
+Pentru a depăși această problemă, trebuie să folosim cuvântul cheie "**this**":
 
 ```java
  public void setHorsePower(int horsePower) {
@@ -97,12 +97,12 @@ Pentru a depăși această problemă, trebuie să folosim cuvântul cheie `this`
     }
 ```
 
-Cea mai obișnuită utilizare a cuvântului cheie `this` este de a elimina confuzia dintre atributele clasei și parametrii cu același nume.
+Cea mai obișnuită utilizare a cuvântului cheie "**this**" este de a elimina confuzia dintre atributele clasei și parametrii cu același nume.
 
 [/slide]
 
 [slide hideTitle]
-# Metoda ToString()
+# Metoda "ToString()"
 
 
 Utilizând metoda `toString()`, puteți reprezenta orice obiect ca un șir.
@@ -139,7 +139,7 @@ public class Car {
 [/slide]
 
 [slide hideTitle]
-# Metoda Equals()
+# Metoda "equals()"
 
 În java metoda `equals()` este utilizată pentru a compara egalitatea a două obiecte. 
 
@@ -156,7 +156,7 @@ Keep in mind that for the `equals()` method does not work correctly for object c
 [/slide]
 
 [slide hideTitle]
-# Metoda HashCode()
+# Metoda "hashCode()"
 
 Metoda `hashCode()` returnează valoarea de cod hash a **întregului** al obiectului.
 
@@ -185,19 +185,19 @@ Typically both of them need to be overridden to get correct results.
 Definiți clasa de mașină.
 
 Clasa ar trebui să aibă următoarele câmpuri private:
-- `brand: String`
-- `model: String`
-- `horsePower: String`
+- **Brand**: String
+- **Model**: String
+- **Horsepower**: String
 
 Clasa ar trebui să aibă următoarele metode publice:
 
-- `getBrand(): String`
-- `setBrand(String brand): void`
-- `getModel(): String`
-- `setModel(String model): void`
-- `getHorsePower(): String`
-- `setHorsePower(int horsePower): void`
-- `carInfo(): String`
+- `getBrand()`: String
+- `setBrand(String brand)`: Void
+- `getModel()`: String
+- `setModel(String model)`: Void
+- `getHorsePower()`: String
+- `setHorsePower(int horsePower)`: Void
+- `carInfo()`: String
 
 ## Sugestii
 
@@ -240,7 +240,7 @@ Creați o metodă `carInfo()`.
 
 Această metodă ar trebui să returneze informațiile despre orice obiect de mașină în următorul format:
 
-"The car is: \{brand\} \{model\} - \{horsePower\} HP."
+"**The car is:** \{**brand**\} \{**model**\} - \{**horsePower**\} **HP.**"
 
 Trebuie să vă dați seama cum să creați o metodă și să o utilizați în codul exterior așa cum se arată mai jos:
 

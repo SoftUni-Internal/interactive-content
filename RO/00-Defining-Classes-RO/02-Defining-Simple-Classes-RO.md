@@ -121,7 +121,6 @@ Car thirdCar = new Car();
 [slide hideTitle]
 # Referință Obiect
 
-
 Operatorul `new` instanțiază o clasă prin alocarea memoriei pentru un obiect nou și returnarea unei **referințe** la memoria respectivă.
 
 O **referință** este o **adresă** care indică unde sunt stocate variabilele și metodele unui obiect.
@@ -145,9 +144,9 @@ class Car {
 Car sportsCar = new Car()
 ```
 
-- We saved `sportsCar(4860c54d)` in the `Stack` memory, which points to an address in the `Heap` memory
+- We saved `sportsCar(4860c54d)` in the "**Stack**" memory, which points to an address in the "**Heap**" memory
 
-- In the `Heap` memory, we saved:
+- In the "**Heap**" memory, we saved:
 
 ```java
 // for objecs sportsCar(4860c54d):
@@ -161,12 +160,12 @@ int horsePower=0;
 # Clase vs. Obiecte
 
 
-| Cursuri | Obiecte |
+| **Cursuri** | **Obiecte** |
 | --- | --- |
 | Clasa este un plan sau șablon din care sunt create obiectele. | Obiectul este o instanță a unei clase. |
 | Clasa este un grup de obiecte similare. | Obiectul este o entitate din lumea reală, cum ar fi stilou, laptop, mobil, pat, tastatură, mouse, scaun etc. |
 | Clasa este o entitate logică. | Obiectul este o entitate fizică. |
-| Clasa este declarată folosind cuvântul cheie `class`, de ex. class Car{} | Obiectul este creat prin cuvântul cheie `new` în principal, de ex. Car firstCar = new Car(); |
+| Clasa este declarată folosind cuvântul cheie `class`, de ex. class `Car{}` | Obiectul este creat prin cuvântul cheie `new` în principal, de ex. `Car firstCar = new Car();` |
 | Clasa este declarată **o dată**. | Obiectul este creat **de multe ori** conform cerințelor. |
 | Clasa **nu alocă memorie** când este creată. | Obiectul **alocă memoria** când este creat. |
 | Există o singură modalitate de a defini clasa în java folosind cuvântul cheie `class`. | Există mai multe moduri de a crea un obiect în java, cum ar fi cuvântul cheie `nou`, metoda `newInstance()`, metoda `clone()` metoda `factory` și deserializarea. |

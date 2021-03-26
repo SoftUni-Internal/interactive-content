@@ -46,7 +46,7 @@ Object-oriented programming enables programmers to think in terms of real-life e
 
 - Anyone involved in software development should be familiar with **OOP** and **object-oriented modeling**
 - All modern languages are either object-oriented or support classes and objects
-    - Modern frameworks, libraries, and APIs are object-oriented
+    - modern frameworks, libraries, and APIs are object-oriented
 - Understanding of OOP is a minimum requirement for starting a job as a developer
 
 [/slide]
@@ -56,11 +56,11 @@ Object-oriented programming enables programmers to think in terms of real-life e
 # Search the Internet
 
 - The course assignments require you to **search the Internet**
-    - This is a major part of the learning process
-    - Some exercises intentionally have no hints
+    - this is a major part of the learning process
+    - some exercises intentionally have no hints
 
 - Learn to find solutions
-    - Software development includes **researching and learning** new things each day
-    - No excuses, simply learn how to study
-    - Developers are constantly learning new technologies, tools to stay competitive in the market
+    - software development includes **researching and learning** new things each day
+    - no excuses, simply learn how to study
+    - developers are constantly learning new technologies, tools to stay competitive in the market
 [/slide]

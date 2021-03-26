@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# What Are Methods
+# What are Methods
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-15-16-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -89,7 +89,7 @@ class Car {
 
 In the example above, `setHorsePowerNotWorking()` would not work because the method parameter `horsePower` shadows the `horsePower` field. 
 
-To overcome this problem, we have to use the `this` keyword:
+To overcome this problem, we have to use the "**this**" keyword:
 
 ```java
  public void setHorsePower(int horsePower) {
@@ -97,12 +97,12 @@ To overcome this problem, we have to use the `this` keyword:
     }
 ```
 
-The most common use of the `this` keyword is to eliminate the confusion between class attributes and parameters with the same name.
+The most common use of the "**this**" keyword is to eliminate the confusion between class attributes and parameters with the same name.
 
 [/slide]
 
 [slide hideTitle]
-# ToString() Method
+# Method "toString()"
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-19-20-to-string-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -140,7 +140,7 @@ public class Car {
 [/slide]
 
 [slide hideTitle]
-# Equals() Method
+# Method "equals()" 
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-21-equals-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -159,7 +159,7 @@ Keep in mind that for the `equals()` method does not work correctly for object c
 [/slide]
 
 [slide hideTitle]
-# Hashcode() Method
+# Method "hashcode()"
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-22-hash-code-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -194,19 +194,19 @@ Typically both of them need to be overridden to get correct results.
 Your task is to define a `Car` class.
 
 The class must have the following private fields:
-- `brand: String`
-- `model: String`
-- `horsePower: String`
+- **Brand**: String
+- **Model**: String
+- **Horsepower**: String
 
 It should also include the following public methods:
 
-- `getBrand(): String`
-- `setBrand(String brand): void`
-- `getModel(): String`
-- `setModel(String model): void`
-- `getHorsePower(): String`
-- `setHorsePower(int horsePower): void`
-- `carInfo(): String`
+- `getBrand()`: String
+- `setBrand(String brand)`: Void
+- `getModel()`: String
+- `setModel(String model)`: Void
+- `getHorsePower()`: String
+- `setHorsePower(int horsePower)`: Void
+- `carInfo()`: String
 
 ## Hints
 
@@ -249,7 +249,7 @@ Create a `carInfo()` method.
 
 This method should return the info about any car object in the following format:
 
-"The car is: \{brand\} \{model\} – \{horsePower\} HP."
+"**The car is:** \{**brand**\} \{**model**\} - \{**horsePower**\} **HP.**"
 
 You have to figure out how to create a method and to use it in the outside code as shown below:
 

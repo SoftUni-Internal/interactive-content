@@ -153,7 +153,7 @@ class Car {
 Car sportsCar = new Car()
 ```
 
-- We saved `sportsCar(4860c54d)` in the `Stack` memory, which points to an address in the `Heap` memory
+- We saved `sportsCar(4860c54d)` in the "**Stack**" memory, which points to an address in the "**Heap**" memory
 
 - In the `Heap` memory, we saved:
 
@@ -175,7 +175,7 @@ int horsePower = 0;
 | A blueprint or template from which objects are created. | An instance of a class. |
 | A group of similar objects. | A real-world entity such as a pen, laptop, mobile, bed, keyboard, mouse, chair, etc. |
 | A logical entity. | A physical entity. |
-| Declared using `class` keyword e.g. class Car{} | Created mainly through the `new` keyword -  e.g. `Car firstCar = new Car();` |
+| Declared using `class` keyword e.g. class `Car{}` | Created mainly through the `new` keyword -  e.g. `Car firstCar = new Car();` |
 | Declared **once**. | Created as **many times** as required. | 
 | **Does not allocate memory** when it is created. | **Allocates memory** when it is created. |
 | Only one way to define in Java - using the `class` keyword. | Many ways to create in Java - `new` keyword, `newInstance()` method, `clone()` method `factory` method and deserialization. |

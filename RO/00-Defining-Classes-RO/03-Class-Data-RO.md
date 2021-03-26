@@ -8,9 +8,9 @@ Un câmp Java este o variabilă din interiorul unei clase.
 
 De exemplu, într-o clasă care reprezintă o mașină, clasa Mașină poate conține următoarele câmpuri:
 
-- **brand**
-- **model**
-- **horsePower**
+- **Brand**
+- **Model**
+- **Horse power**
 
 Clasa Java corespunzătoare ar putea fi definită astfel:
 
@@ -90,10 +90,10 @@ Modificatorii de acces determină dacă alte clase pot folosi un anumit câmp.
 
 Există patru tipuri de modificatori de acces în Java:
 
-- private
-- package-private
-- protected
-- public 
+- Private
+- Package-private
+- Protected
+- Public
 
 Using a **private** access modifier means that only code inside the class body can access this Java field.
 

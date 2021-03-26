@@ -6,11 +6,11 @@
 
 [task-description]
 ## Description
-Creați clasa Person cu două câmpuri `String name` și `int age`, scrieți un program care să citească din consolă **N** linii de informații personale și apoi imprimați toate persoanele a căror **age** este **more than 30** ani, **sorted in alphabetical order**.
+Creați clasa "**Person**" cu două câmpuri "**String name**" și "**int age**", scrieți un program care să citească din consolă **N** linii de informații personale și apoi imprimați toate persoanele a căror **age** este **more than 30** ani, **sorted in alphabetical order**.
 
 **Note:** puteți folosi `stream()` pentru a filtra persoanele. 
 
-## Exemple
+## Exemples
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 3 | John - 48 |
@@ -208,13 +208,13 @@ Informațiile **name, salary, position** și **department** sunt **mandatory** �
 
 Sarcina voastră este să scrieți un program care să ia **N** linii de informații despre angajați din consolă și să calculeze departamentul cu cel mai mare salariu mediu și să imprime pentru fiecare angajat din acel departament **name, salary, email and age** - **sorted by salary in descending order**. 
 
-Dacă un angajat **does not have** un **email** - in loc de acest câmp puteți imprima **"n/a"** , dacă nu are informația **age** – imprimați **"-1"** . 
+Dacă un angajat **does not have** un **email** - in loc de acest câmp puteți imprima **"n/a"** , dacă nu are informația **age** - imprimați **"-1"** . 
 
 Suma **salary** trebuie să fie imprimată **two decimal places** după separator.
 
 **Hint**: puteți defini clasa **Department** care cuprinde o listă de angajați. 
 
-## Exemple
+## Exemples
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 4 | Highest Average Salary: Development |
@@ -385,27 +385,27 @@ Pe prima linie din datele de intrare veți primi un număr **N** - numărul de m
 
 Pe **each** din următoarele **N** linii, veți primi informații despre o mașină în următorul format: 
 
-`<model> <fuelAmount> <fuelCostFor1km>`
+"\<**model**\> \<**fuelAmount**\> \<**fuelCostFor1km**\>"
 
 Toate **cars start at 0 kilometers traveled**.
 
-După **N** linii, până la primirea comenzii `End` , veți primi comenzi în următorul format: 
+După **N** linii, până la primirea comenzii "**End**", veți primi comenzi în următorul format: 
 
-`Drive <carModel> <amountOfKm>`
+"**Drive** \<**carModel**\> \<**amountOfKm**\>"
 
 Implementați o metodă în clasa **Car** pentru a calcula dacă o mașină **can** să meargă pe această distanță sau **not**. 
 
 Dacă poate,  **fuel amount** pentru mașina respectivă trebuie să fie **reduced** cu cantitatea de combustibil folosit și **distance traveled** va trebui să fie mărită cu numărul de kilometri parcurs, altfel mașina nu se va mai mișca (cantitatea de combustibil și distanța parcursa trebuie să rămână la fel) și trebuie să imprimați în consolă
 
-`Insufficient fuel for the drive` 
+"**Insufficient fuel for the drive**"
 
-După primirea comenzii `End` imprimați fiecare mașină în ordinea apariției în input și cantitatea curentă de combustibil și distanța parcursă în formatul :
+După primirea comenzii "**End**" imprimați fiecare mașină în ordinea apariției în input și cantitatea curentă de combustibil și distanța parcursă în formatul :
 
 `<model> <fuelAmount> <distanceTraveled>`
 
 Când cantitatea de combustibil trebuie să fie rotunjită până la **second decimal place**.
 
-## Exemple
+## Examples
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 2 | AudiA4 17.60 18 |
@@ -605,15 +605,15 @@ Pe prima linie de intrare veți primi un număr **N** - numărul de mașini pe c
 
 Pe fiecare dintre următoarele **N** linii, veți primi informații despre mașină în formatul : 
 
-`<model> <engineSpeed> <enginePower> <cargoWeight> <cargoType> <tire1Pressure> <tire1Age> <tire2Pressure> <tire2Age> <tire3Pressure> <tire3Age> <tire4Pressure> <tire4Age>`
+"\<**model**\> \<**engineSpeed**\> \<**enginePower**\> \<**cargoWeight**\> \<**cargoType**\> \<**tire1Pressure**\> \<**tire1Age**\> \<**tire2Pressure**\> \<**tire2Age**\> \<**tire3Pressure**\> \<**tire3Age**\> \<**tire4Pressure**\> \<**tire4Age**\>"
 
 În timp ce puterea, greutatea și vârsta cauciucurilor sunt **integers**, presiunea din cauciucuri este un **double**.
 
-După primele **N** linii veți primi o singură linie cu 2 comenzi `fragile` sau `flamable`.
+După primele **N** linii veți primi o singură linie cu 2 comenzi "**fragile**" sau "**flamable**".
 
-Dacă primiți comanda `fragile` imprimați toate mașinile al căror **cargoType is** `fragile` cu un **tire** a cărui **pressure is < 1**.
+Dacă primiți comanda "**fragile**" imprimați toate mașinile al căror **cargoType is** "**fragile**" cu un **tire** a cărui **pressure is < 1**.
 
-Dacă primiți comanda `flamable` imprimați toate mașinile al căror **cargoType is** `flamable` și care au **enginePower > 250**. 
+Dacă primiți comanda "**flamable**" imprimați toate mașinile al căror **cargoType is** "**flamable**" și care au **enginePower > 250**. 
 
 Mașinile în intrare, pe linii separate. 
 
@@ -756,13 +756,13 @@ Pe prima linie veți citi un număr **N** care va specifica numărul de linii de
 
 Pe fiecare dintre următoarele **N** linii veți primi informații despre **Engine** in următorul format:
 
-`<model> <power> <displacement> <efficiency>`
+"\<**model**\> \<**power**\> \<**displacement**\> \<**efficiency**\>"
 
 După liniile cu motoare, pe următoarea linie veți primi un număr  **M** – specificând numărul de Mașini care vor urma. 
 
 Pe fiecare dintre următoarele **M** linii, informația despre o **Car** va urma în următorul format:
 
-`<model> <engine> <weight> <color>`
+"\<**model**\> \<**engine**\> \<**weight**\> \<**color**\>"
 
 Când motorul în format va fi **model of an existing Engine**. 
 
@@ -784,9 +784,34 @@ Color: <carColor>
 
 ## Opțional
 
-Suprascrieți metoda claselor **toString()** pentru a avea un mod reutilizabil de a arăta obiectele.
+Suprascrieți metoda claselor `toString()` pentru a avea un mod reutilizabil de a arăta obiectele.
 
-## Exemple
+## Exemples
+| **Intrare**|**Ieșire**|
+| --- | --- |
+| 2 | FordFocus: |
+| V8-101 220 50 | V4-33: |
+| V4-33 140 28 B | Power: 140 |
+| 3 | Displacement: 28 |
+| FordFocus V4-33 1300 Silver | Efficiency: B |
+| FordMustang V8-101 | Weight: 1300 |
+| VolkswagenGolf V4-33 Orange | Color: Silver |
+|  | FordMustang: |
+|  | V8-101: |
+|  | Power: 220 |
+|  | Displacement: 50 |
+|  | Efficiency: n/a |
+|  | Weight: n/a |
+|  | Color: n/a |
+|  | VolkswagenGolf: |
+|  | V4-33: |
+|  | Power: 140 |
+|  | Displacement: 28 |
+|  | Efficiency: B |
+|  | Weight: n/a |
+|  | Color: Orange |
+
+
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 4 | FordMondeo: |
@@ -958,7 +983,7 @@ V8-101 220 50
 V4-33 140 28
 V6-33 230 28
 V7-44 330 35
-V12-45 450 60 
+V12-45 450 60
 7
 FordFocus V4-33 1300 Silver
 Opelche V7-44 1550 Gold
@@ -1848,17 +1873,17 @@ Pokemon are un **name**, un **element** și **health**, toate valorile fiind **m
 
 Fiecare anternor **starts with 0 badges**.
 
-Veți primi din consolă un număr necunoscut de linii, până veți primi comanda `Tournament`. 
+Veți primi din consolă un număr necunoscut de linii, până veți primi comanda "**Tournament**". 
 
-Fiecare linie va conține informații despre pokemon și antrenor, în formatul :
+Fiecare linie va conține informații despre pokemon și antrenor, în formatul:
 
-`<trainerName> <pokemonName> <pokemonElement> <pokemonHealth>` 
+"\<**trainerName**\> \<**pokemonName**\> \<**pokemonElement**\> \<**pokemonHealth**\>" 
 
 Unde **trainerName** este numele Antrenorului care a prins pokemonul.
 
 Numele sunt **unique**, nu pot exista 2 antenori cu același nume. 
 
-După primirea comenzii `Tournament` un număr necunoscut de linii care conțin unul dintre cele trei elemente **"Fire"**, **"Water"**, **"Electricity"** vor urma, până când primiți comanda `End`. 
+După primirea comenzii "**Tournament**" un număr necunoscut de linii care conțin unul dintre cele trei elemente **"Fire"**, **"Water"**, **"Electricity"** vor urma, până când primiți comanda "**End**". 
 
 Pentru fiecare comandă, trebuie să verificați dacă un antrenor are **at least 1** pokemon cu elementul dat. 
 
@@ -1866,13 +1891,13 @@ Dacă da, el primește 1 badge, altfel, pokemonul **lose 10 health**.
 
 Dacă un pokemon ajunge  **to 0 or less health he dies** și trebuie să fie șters din colecția antrenorului. 
 
-După ce comanda `End` este primită, trebuie să imprimați toți antrenorii **sorted by the number of badges they have in descending order**. 
+După ce comanda "**End**" este primită, trebuie să imprimați toți antrenorii **sorted by the number of badges they have in descending order**. 
 
 Dacă doi traineri au același număr de badge-uri, trebuie să fie sortați după ordinea apariției în datele de intrare. 
 
 Imprimați în format:
 
-`<trainerName> <badges> <numberOfPokemon>`
+"\<**trainerName**\> \<**badges**\> \<**numberOfPokemon**\>"
 
 ## Exemple
 | **Intrare**|**Ieșire**|
@@ -2189,15 +2214,15 @@ Din consolă, veți primi linii, până la comanda `End`.
 
 Fiecare dintre linii va conține informații despre o persoană, într-unul dintre formatele următoare: 
 
-- `{personName} company {companyName} {department} {salary}`
+- "\{**personName**\} **company** \{**companyName**\} \{**department**\} \{**salary**\}"
 
-- `{personName} pokemon {pokemonName} {pokemonType}`
+- "\{**personName**\} **pokemon** \{**pokemonName**\} \{**pokemonType**\}"
 
-- `{personName} parents {parentName} {parentBirthday}`
+- "\{**personName**\} **parents** \{**parentName**\} \{**parentBirthday**\}"
 
-- `{personName} children {childName} {childBirthday}`
+- "\{**personName**\} **children** \{**childName**\} \{**childBirthday**\}"
 
-- `{personName} car {carModel} {carSpeed}`
+- "\{**personName**\} **car** \{**carModel**\} \{**carSpeed**\}"
 
 Trebuie să structurați informația despre o persoană într-o clasă cu subclase imbricate. 
 
@@ -2205,7 +2230,7 @@ Numele persoanelor sunt **unique** - nu pot fi 2 persoane cu același nume.
 
 O persoană poate avea **only one company** și **one car**, dar poate avea **multiple parents, children** și **pokemon**. 
 
-După comanda `End` veți primi un **single** nume pe următoarea linie.
+După comanda "**End**" veți primi un **single** nume pe următoarea linie.
 
 Trebuie să **print** toate informațiile despre acea persoană.
 
@@ -2217,19 +2242,18 @@ Salariul trebuie să fie formatat la **the second decimal place**.
 
 Imprimați informația în următorul format:
 
-```java
-{personName}
-Company:
-{companyName} {companyDepartment} {salary}
-Car:
-{carModel} {carSpeed}
-Pokemon:
-{pokemonName} {pokemonType}
-Parents:
-{parentName} {parentBirthday}
-Children:
-{childName} {childBirthday}
-```
+"\{**personName**\}
+**Company:**
+\{**companyName**\} \{**companyDepartment**\} \{**salary**\}
+**Car:**
+\{**carModel**\} \{**carSpeed**\}
+**Pokemon:**
+\{**pokemonName**\} \{**pokemonType**\}
+**Parents:**
+\{**parentName**\} \{**parentBirthday**\}
+**Children:**
+\{**childName**\} \{**childBirthday**\}"
+
 
 ## Exemple
 | **Intrare**|**Ieșire**|
@@ -2442,27 +2466,30 @@ LR 01/01/1000
 
 [slide hideTitle]
 # Problemă: Family Tree
+
 [code-task title="Family Tree" taskId="oop-basics-java-defining-classes-Familiy-Tree" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
 ## Description
-*You want to build your family tree, so you went to ask your grandmother. Sadly your grandmother keeps remembering information about your predecessors in pieces, so it falls to you to group the information and build the family tree.*
+*You want to build your family tree, so you went to ask your grandmother.*
+
+*Sadly your grandmother keeps remembering information about your predecessors in pieces, so it falls to you to group the information and build the family tree.*
 
 Pe prima linie de intrare, veți primi fie un nume, fie o dată de naștere, în următorul format: 
 
-`<FirstName> <LastName>` or `day/month/year`
+"\<**FirstName**\> \<**LastName**\>" or "**day/month/year**"
 
 Sarcina voastră este să găsiți informații despre persoană în arborele genealogic. 
 
-Pe următoarele linii, până la comanda `End`, veți primi informații despre predecesori, de care aveți nevoie pentru arborele familiei. 
+Pe următoarele linii, până la comanda "**End**", veți primi informații despre predecesori, de care aveți nevoie pentru arborele familiei. 
 
 Informația va fi în următoarele formate : 
 
-- `firstName lastName - firstName lastName`
-- `firstName lastName - day/month/year`
-- `day/month/year - firstName lastName`
-- `day/month/year - day/month/year`
-- `firstName lastName day/month/year`
+- firstName lastName - firstName lastName
+- firstName lastName - day/month/year
+- day/month/year - firstName lastName
+- day/month/year - day/month/year
+- firstName lastName day/month/year
 
 Primele 4 formate dezvăluie o legătură de rudenie:
 
@@ -2472,13 +2499,13 @@ Formatul poate fi **without names**.
 
 De exemplu, al 4-lea format înseamnă că persoana **born on the left date** este **parent to the person born on the right** dată. 
 
-Ultimele date de legătură sunt informații **different**  – i.e. **the person with that name was born on that date**. 
+Ultimele date de legătură sunt informații **different**  - i.e. **the person with that name was born on that date**. 
 
-**Names** și **birthdates** are **unique** – nu vor exista două persoane cu aceeași dată de naștere. 
+**Names** și **birthdates** are **unique** - nu vor exista două persoane cu aceeași dată de naștere. 
 
 Vor exista întotdeauna **always** destule intrări pentru a construi un arbore de familie (toate numele de persoane și datele de naștere sunt cunoscute și au **at least one** o conexiune cu o altă persoană din arbore).
 
-După primirea comenzii `End` trebuie să imprimați toate informațiile despre persoanele al căror nume sau dată de naștere au fost primite pe prima linie -  **name, birthday, parents, and children** (verificați exemplele pentru format).
+După primirea comenzii "**End**" trebuie să imprimați toate informațiile despre persoanele al căror nume sau dată de naștere au fost primite pe prima linie -  **name, birthday, parents, and children** (verificați exemplele pentru format).
 
 Persoanele din lista de părinți și copii trebuie să fie  **ordered** după **first appearance** din liniile de intrare. 
 

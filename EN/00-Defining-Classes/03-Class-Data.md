@@ -10,9 +10,9 @@ A Java field is a variable inside a class.
 
 For instance, in a class representing a car, the Car class might contain the following fields:
 
-- **brand**
-- **model**
-- **horsePower**
+- **Brand**
+- **Model**
+- **Horsepower**
 
 The corresponding Java class is defined as follows:
 
@@ -96,10 +96,10 @@ public class Car {
 
 There are four types of access modifiers in Java:
 
-- private
-- package-private
-- protected
-- public
+- Private
+- Package-private
+- Protected
+- Public
 
 Using a **private** access modifier means that only code inside the class body can access this Java field.
 
