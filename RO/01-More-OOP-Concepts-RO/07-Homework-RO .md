@@ -1,22 +1,22 @@
-# Homework
+# Teme Pentru Acasă
 
 [slide hideTitle]
 # Problem: Card Suit
 [code-task title="Card Suit" taskId="oop-basics-java-more-oop-concepts-Card-Suit" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-# Description
-Create an **enumeration type** that contains the **four suits** of a deck of playing cards (Clubs, Diamonds, Hearts, and Spades). 
+## Descriere
 
-Iterate over the values of the enumeration type and print all **ordinal values** and **names**. 
+Creați un **tip de enumerare** care să aibă ca constante **cele patru costume** ale unui pachet de cărți de joc (CLUBURI, DIAMANTE, INIMI, SPADE).
 
-## Submit
+Repetați valorile tipului de enumerare și imprimați toate **valorile ordinale** și **numele**.
 
-You must submit your solution in the form of a `.zip` archive.
+## Trimitere
 
-# Example
+Submit .zip
 
-| **Input** | **Output** |
+## Exemple
+| **Intrare**|**Ieșire**|
 | --- | --- |
 | Card Suits | Card Suits: |
 |  | Ordinal value: 0; Name value: CLUBS |
@@ -60,18 +60,17 @@ Ordinal value: 3; Name value: SPADES
 [code-task title="Card Rank" taskId="oop-basics-java-more-oop-concepts-Card-Rank" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-# Description
-Create an **enumeration type** that has contains the **fourteen ranks** of a deck of playing cards (ACE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING). 
+## Descriere
 
-Iterate over the values of the enumeration type and print all ordinal values and names.
+Creați un **tip de enumerare** care să aibă ca constante **cele paisprezece rânduri** ale unui pachet de cărți de joc  (ACE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING).
 
-## Submit
+Repetați valorile tipului de enumerare și imprimați toate valorile ordinale și numele.
 
-You must submit your solution in the form of a `.zip` archive.
+## Trimitere
+Submit .zip
 
-# Example
-
-| **Input** | **Output** |
+## Exemple
+| **Intrare**|**Ieșire**|
 | --- | --- |
 | Card Ranks | Card Ranks: |
 |  | Ordinal value: 0; Name value: ACE |
@@ -143,38 +142,36 @@ Ordinal value: 12; Name value: KING
 [code-task title="Cards with Power" taskId="oop-basics-java-more-oop-concepts-Cards-with-Power" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-# Description
-Create a program that generates a **deck of cards** **(class Card)** each card has a **power rating**. 
+## Descriere
 
-The power rating of a card is calculated by **adding** the power of its rank to the power of its suit.
+Creați un program care generează un **pachet de cărți** **(class Card)** care au putere. Puterea unei cărți este calculată prin **adăugarea** puterii rangului său la puterea costumului său.
 
-**Rank powers** are as follows: (ACE - 14, TWO - 2, THREE - 3, FOUR - 4, FIVE - 5, SIX - 6, SEVEN - 7, EIGHT - 8, NINE - 9, TEN - 10, JACK - 11, QUEEN - 12, KING - 13).
+**Puterile de rang** sunt după cum urmează: (ACE - 14, TWO - 2, THREE - 3, FOUR - 4, FIVE - 5, SIX - 6, SEVEN - 7, EIGHT - 8, NINE - 9, TEN - 10, JACK - 11, QUEEN - 12, KING - 13).
 
-**Suit powers** are as follows: (CLUBS - 0, DIAMONDS - 13, HEARTS - 26, SPADES - 39).
+**Puterile costumului** sunt după cum urmează:: (CLUBS - 0, DIAMONDS - 13, HEARTS - 26, SPADES - 39).
 
 ## Input
-You will get a command consisting of **two** lines. On the **first** line, you will receive the rank of the card and on the **second** line, you will get the suit of the card.
+Veți primi o comandă formată din **două** linii. Pe **prima** linie veți primi Rangul cărții și pe **a doua** linie veți obține costumul cărții.
 
 ## Output
-Print the output in the format **"Card name: ACE of SPADES; Card power: 53".**
+Imprimați rezultatul în format: **"Card name: ACE of SPADES; Card power: 53".**
 
-## Note
-Try using the enumeration types you have created in the previous problems by extending them with constructors and methods.
+## Notă
 
-Try using the `Enum.valueOf()` method.
+Încercați să utilizați tipurile de enumerare pe care le-ați creat în problemele anterioare, dar extindeți-le cu constructori și metode. Încercați să utilizați`Enum.valueOf()`.
 
-## Submit
-
-You must submit your solution in the form of a `.zip` archive.
+## Trimitere
+Submit .zip
 
 
-# Examples
-| **Input** | **Output** |
+## Exemple
+| **Intrare**|**Ieșire**|
 | --- | --- |
 | TWO | Card name: TWO of CLUBS; Card power: 2 |
 | CLUBS |  |
 
-| **Input** | **Output** |
+
+| **Intrare**|**Ieșire**|
 | --- | --- |
 | ACE | Card name: ACE of SPADES; Card power: 53 |
 | SPADES |  |
@@ -245,34 +242,36 @@ Card name: TWO of DIAMONDS; Card power: 15
 [code-task title="Traffic Lights" taskId="oop-basics-java-more-oop-concepts-Traffic-Lights" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-# Description
-Implement a simple state machine in the form of a traffic light. 
+## Descriere
 
-Every traffic light has **three** possible signals - **red**, **green** and **yellow**. 
+Implementați o mașină de stare simplă sub forma unui semafor.
 
-Each traffic light can be **updated**, which changes the color of its signal (e.g. if it is currently red, it changes to green, if it is green it changes to yellow). 
+Fiecare semafor are **trei** semnale posibile - **roșu**, **verde** și **galben**.
 
-The order of signals is **red -> green -> yellow -> red** and so on.
+Fiecare semafor poate fi **actualizat**, ceea ce schimbă culoarea semnalului său (de exemplu, dacă este roșu în prezent, se schimbă în verde, dacă este verde se schimbă în galben).
+
+Ordinea semnalelor este: **red -> green -> yellow -> red** și așa mai departe.
 
 ## Input
-On the first line, you will be given multiple traffic light signals in the **format "RED GREEN YELLOW"**. 
 
-They may be 3, **more** or **less** than 3. 
+Pe prima linie vi se vor da mai multe semnale de semafoare **în formatul "RED GREEN YELLOW"**. 
 
-You need to create as many traffic lights as there are signals in the input.
+Acestea pot fi de 3, **mai mult** sau **mai puțin** decât 3.
 
-On the second line, you will receive the **n** - the number of times you need to change each traffic light's signal.
+Trebuie să faceți cât mai multe semafoare pe cât sunt semnale în intrare.
+
+Pe a doua linie, veți primi **n** - de câte ori trebuie să modificați semnalul fiecărui semafor.
 
 ## Output
-Your output should consist of **n** number of lines, including **each** updated traffic light's signal. 
 
-To better understand the problem, see the example below.
+Rezultatul dvs. trebuie să fie format din **n** - numărul de linii, care includ **fiecare** semnal actualizat al semaforului.
 
-## Submit
+Pentru a înțelege mai bine problema, vedeți exemplul de mai jos.
 
-You must submit your solution in the form of a `.zip` archive.
+## Trimitere
+Sumbit .zip
 
-# Example
+## Exemple
 | **Input** | **Output** |
 | --- | --- |
 | GREEN RED YELLOW | YELLOW GREEN RED |

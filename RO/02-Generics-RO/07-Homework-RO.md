@@ -895,6 +895,7 @@ It should have a single static method `sort()` which can sort objects of type **
 
 ## Examples
 | **Intrare**|**Ieșire**|
+|---|---|
 | Add cc | aa |
 | Add bb | bb |
 | Add aa | cc |

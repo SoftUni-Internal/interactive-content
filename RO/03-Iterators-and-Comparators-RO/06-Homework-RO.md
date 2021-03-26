@@ -4,7 +4,7 @@
 # Problemă: Listy Iterator
 [code-task title="Listy Iterator" taskId="oop-basics-java-iterators-and-comparators-Listy-Iterator" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
  
-[task-description]]
+[task-description]
 ## Descriere
 Creați o `class ListyIterator`.
 
@@ -1356,7 +1356,7 @@ Dacă găsim deja un animal, il **remove** din colecție, oprim căutarea și **
 
 Când o comandă `Print` este apelată pentru o cameră, dacă aceasta conține deja un animal vom imprima pe o singură linie animalul, în formatul `{pet name} {pet age} {pet kind}`. 
 
-Alternativ, dacă acea cameră este goală, imprimăm**"Room empty"** în loc. 
+Alternativ, dacă acea cameră este goală, imprimăm **"Room empty"** în loc. 
 
 Când comanda `Print` pentru clinică este apelată trebuie să imprimăm **all** camerele din clinică, în **order** numerelor lor. 
 
