@@ -54,9 +54,9 @@ Folosim metoda `iterator.next()` - pentru a găsi următorul element din colecț
 
 ```java live
 List<String> names = new ArrayList<>();
-list.add("Peter");
-list.add("Maria");
-list.add("Alex");
+names.add("Peter");
+names.add("Maria");
+names.add("Alex");
 
 Iterator<String> iterator = names.iterator();
 

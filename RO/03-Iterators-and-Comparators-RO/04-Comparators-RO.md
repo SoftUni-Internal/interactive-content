@@ -343,8 +343,8 @@ Creați o clasă BookComparator din diagrama UML diagram de mai jos:
 
 
 - **BookComparator** have to **compare** two books by:
-	- Book **title**
-	- **Year** of publishing a book
+	- book **title**
+	- **year** of publishing a book
 
 
 ## Exemple
