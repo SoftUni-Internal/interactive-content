@@ -1,1 +1,0 @@
-# How to Become a Programmer
