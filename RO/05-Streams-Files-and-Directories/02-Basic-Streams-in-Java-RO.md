@@ -1,4 +1,4 @@
-Changed Strategy TypeChanged Strategy Type# Fluxuri de bază în Java
+# Fluxuri de bază în Java
 
 
 [slide hideTitle]
