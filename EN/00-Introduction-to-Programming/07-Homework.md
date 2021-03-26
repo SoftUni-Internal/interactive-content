@@ -20,10 +20,7 @@ function hello() {
 [/code-editor]
 [task-description]
 
-Create a JavaScript program, which:
-
-Prints "**Hello JavaScript**" to the console.
-
+Create a program that prints "**Hello JavaScript**" to the console.
 [/task-description]
 [code-io /]
 [tests]
@@ -56,24 +53,24 @@ function calculate() {
 [/code-editor]
 [task-description]
 
-Create a JavaScript program, which:
+Create a program that:
 
-- Calculates the value of `5 * 5`
-- Prints the result
+- Calculates the product of the following multiplication: `5 * 5`
+- Prints out the result
 
-[/task-description]
-[code-io /]
-[tests]
-[test]
-[input]
-[/input]
-[output]
-25
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
+  [/task-description]
+  [code-io /]
+  [tests]
+  [test]
+  [input]
+  [/input]
+  [output]
+  25
+  [/output]
+  [/test]
+  [/tests]
+  [/code-task]
+  [/slide]
 
 [slide hideTitle]
 
@@ -90,7 +87,7 @@ function nameAndExpression() {
 
 [/code-editor]
 [task-description]
-Create a program to print "**Catlyn**" on the first line and calculate and print the result of the expression `5 + 3` on the second line
+Create a program that prints out "**Catlyn**" on the first line, and calculates and prints the result of the expression `5 + 3` on the second line.
 [/task-description]
 [code-io /]
 [tests]
@@ -121,27 +118,26 @@ function calculations() {
 
 [/code-editor]
 [task-description]
-Create a program, which calculates and prints the value of the following expressions:
+Create a program that calculates and prints out the results of the following expressions:
 
 - 5 \+ 3 \* 2
 - 4 \* (2 \+ 3)
 - (2 \+ 5)  \*  (8 \- 2) \/ 7
-
-[/task-description]
-[code-io /]
-[tests]
-[test]
-[input]
-[/input]
-[output]
+  [/task-description]
+  [code-io /]
+  [tests]
+  [test]
+  [input]
+  [/input]
+  [output]
   11
   20
   6
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
+  [/output]
+  [/test]
+  [/tests]
+  [/code-task]
+  [/slide]
 
 [slide hideTitle]
 
@@ -158,9 +154,7 @@ function squareOfStars() {
 
 [/code-editor]
 [task-description]
-Create a program, which:
-
-Prints a square of 7 \* 7 stars like this:
+Create a program that prints out a square of 7 \* 7 stars like in the following example:
 
 ```
 * * * * * * *
