@@ -18,7 +18,7 @@ Unfortunately, his organizational skills are next to non-existent so you are giv
 
 On the first line, you get a **list** with all the **people** that are coming. 
 
-On the next lines, until you get the "**Party**!" command, you may be asked to **double** or **remove** all of the people that apply to **given criteria**. 
+On the next lines, until you get the "**Party!**" command, you may be asked to **double** or **remove** all of the people that apply to **given criteria**. 
 
 There are three different options: 
 
@@ -32,9 +32,7 @@ If nobody is going, print "**Nobody is going to the party!**".
 
 See the examples below.
 
-# Examples
-
-## Example 1
+## Examples
 | **Input** | **Output** |
 | --- | --- |
 | Peter Michael Stefanos | Michael, Stefanos are going to the party! |
@@ -42,7 +40,8 @@ See the examples below.
 | Double Length 5 | | 
 | Party! | |
 
-## Example 2
+
+
 | **Input** | **Output** |
 | --- | --- |
 | Peter | Peter, Peter, Peter, Peter are going to the party! |
@@ -50,7 +49,7 @@ See the examples below.
 | Double EndsWith eter | |
 | Party! | | 
 
-## Example 3
+
 | **Input** | **Output** |
 | --- | --- |
 | Peter | Nobody is going to the party! |

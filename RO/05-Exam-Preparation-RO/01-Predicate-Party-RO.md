@@ -31,9 +31,7 @@ If nobody is going, print "**Nobody is going to the party!**".
 
 See the examples below.
 
-# Examples
-
-## Example 1
+## Examples
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | Peter Michael Stefanos | Michael, Stefanos are going to the party! |
@@ -41,15 +39,17 @@ See the examples below.
 | Double Length 5 | | 
 | Party! | |
 
-## Example 2
+
+
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | Peter | Peter, Peter, Peter, Peter are going to the party! |
-| Double StartsWith Pete | | 
+| Double StartsWith Pete | |
 | Double EndsWith eter | |
-| Party! | | 
+| Party! | |
 
-## Example 3
+
+
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | Peter | Nobody is going to the party! |

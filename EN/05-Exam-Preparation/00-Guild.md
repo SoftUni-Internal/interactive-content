@@ -21,23 +21,23 @@ Your task is to create a **repository** which stores **players** by creating the
 ## Player
 
 First, create a Java class **Player** with the following fields:
-- `name`: String
-- `clazz`: String
-  - must be named `clazz` to prevent interference with the default Java keyword
-- `rank`: String – "Trial" by default
-- `description`: String – "n/a" by default
+- "**name**": String
+- "**clazz**": String
+  - must be named "**clazz**" to prevent interference with the default Java keyword
+- "**rank**": String – "Trial" by default
+- "**description**": String – "n/a" by default
 
 The class **constructor** should receive a **name and a clazz**. 
 
 You need to create the appropriate **getters and setters**. 
 
-Override the **toString()** method with the following format:
+Override the `toString()` method with the following format:
 
-"Player \{name\}: \{clazz\}
+"**Player** \{**name**\}**:** \{**clazz**\}
 
-Rank: \{rank\}
+**Rank:** \{**rank**\}
 
-Description: \{description\}"
+**Description:** \{**description**\}"
 
 ## Guild
 
@@ -51,26 +51,23 @@ The class **constructor** should receive a **name** and a **capacity**, it shoul
 
 Implement the following methods:
 
-- Method `addPlayer(Player player)` - **adds** a **player** to the roster **if there is room** for him
-- Method `removePlayer(String name)` - removes a player by their **given name**, if such **exists**.
+- Method "**addPlayer(Player player)**" - **adds** a **player** to the roster **if there is room** for him
+- Method "**removePlayer(String name)**" - removes a player by their **given name**, if such **exists**.
     - **returns boolean**
-- Method `promotePlayer(String name)` - **promotes (sets his rank to "Member")** the **first player** with the **given name** 
+- Method "**promotePlayer(String name)**" - **promotes (sets his rank to "Member")** the **first player** with the **given name** 
     - if the player is **already** a "Member", **do nothing**
-- Method `demotePlayer(String name)` - **demotes** (sets his rank to "Trial") the first player with the **given** name
+- Method "**demotePlayer(String name)**" - **demotes** (sets his rank to "Trial") the first player with the **given** name
     - if the player is **already** a "Trial", **do nothing**
-- Method `kickPlayersByClass(String clazz)` - removes all of the players by the given class and returns **all of the removed players** from that **class as an array**
-- Method `count()` - returns the **number of players**
-- Method `report()` - **returns a String** in the following **format**:
+- Method "**kickPlayersByClass(String clazz)**" - removes all of the players by the given class and returns **all of the removed players** from that **class as an array**
+- Method "**count()**" - returns the **number of players**
+- Method "**report()**" - **returns a String** in the following **format**:
 
-```
- "Players in the guild: {guildName}:
 
-{Player1}
+"**Players in the guild:** \{**guildName**\}**:**
+\{**Player1**\}
+\{**Player2**\}
+**(...)**"
 
-{Player2}
-
-(…)"
-```
 
 ## Constraints
 
@@ -137,7 +134,6 @@ public class Main {
         //Description: n/a
     }
 }
-
 ```
 
 [/task-description]

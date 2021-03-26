@@ -20,23 +20,23 @@ Sarcina dvs. este de a crea un **depozit** care stochează **jucătorii** prin c
 ## Jucător
 
 Mai întâi, scrieți o clasă Java **Player** în următoarele câmpuri:
-- `name`: String
-- `clazz`: String
-  - must be named `clazz` to prevent interference with the default Java keyword
-- `rank`: String – "Trial" by default
-- `description`: String – "n/a" by default
+- "**name**": String
+- "**clazz**": String
+  - must be named "**clazz**" to prevent interference with the default Java keyword
+- "**rank**": String – "Trial" by default
+- "**description**": String – "n/a" by default
 
 **Constructorul** de clasă  ar trebui să primească **nume și clazz**.
 
 Trebuie să creați **getters și seters** adecvate.
 
-Înlocuiți metoda **toString()** în următorul format:
+Înlocuiți metoda `toString()` în următorul format:
 
-"Player \{name\}: \{clazz\}
+"**Player** \{**name**\}**:** \{**clazz**\}
 
-Rank: \{rank\}
+**Rank:** \{**rank**\}
 
-Description: \{description\}"
+**Description:** \{**description**\}"
 
 ## Guild
 
@@ -53,25 +53,20 @@ De asemenea, clasa **Guild** ar trebui să aibă aceste **câmpuri**:
 
 Implementați următoarele caracteristici:
 
-- Metoda `addPlayer(Player player)` - **adaugă** o **entitate** în listă **dacă există spațiu** pentru aceasta
-- Metoda `removePlayer(String name)` - elimină un jucător cu **numele dat**, dacă acesta **există** și **se intoarce în boolean**
-- Metoda `promotePlayer(String name)` - **promovare** (**setați rangul la "Member" (Membru)**) **primului jucător** cu **numele dat** D
+- Metoda "**addPlayer(Player player)**" - **adaugă** o **entitate** în listă **dacă există spațiu** pentru aceasta
+- Metoda "**removePlayer(String name)**" - elimină un jucător cu **numele dat**, dacă acesta **există** și **se intoarce în boolean**
+- Metoda "**promotePlayer(String name)**" - **promovare** (**setați rangul la "Member" (Membru)**) **primului jucător** cu **numele dat** D
     - dacă jucătorul este **deja** un "Member" (Membru), **nu faceți nimic**
-- Metoda `demotePlayer(String name)` - **retrogradare** (setați rangul la "Trial" (Probă)) primului jucător cu numele **dat**
+- Metoda "**demotePlayer(String name)**" - **retrogradare** (setați rangul la "Trial" (Probă)) primului jucător cu numele **dat**
     - dacă jucătorul este **deja** o "Trial", **nu faceți nimic**
-- Metoda `kickPlayersByClass(String clazz)` - elimină toți jucătorii de clasa dată și returnează **toți jucătorii eliminați** din acea **clasă ca matrice**
-- Metoda `count()` - **returnează** **numărul** de jucători
-- Metoda `report()` - **returnează** un **Șir** în următorul **format**:
+- Metoda "**kickPlayersByClass(String clazz)**" - elimină toți jucătorii de clasa dată și returnează **toți jucătorii eliminați** din acea **clasă ca matrice**
+- Metoda "**count()**" - **returnează** **numărul** de jucători
+- Metoda "**report()**" - **returnează** un **Șir** în următorul **format**:
   
-```
- "Players in the guild: {guildName}:
-
-{Player1}
-
-{Player2}
-
-(…)"
-```
+"**Players in the guild:** \{**guildName**\}**:**
+\{**Player1**\}
+\{**Player2**\}
+**(...)**"
 
 ## Constrângeri
 
