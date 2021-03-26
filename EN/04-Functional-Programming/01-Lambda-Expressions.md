@@ -35,7 +35,7 @@ Here is an example of a **mathematical function:**
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/EN/interactive-java-advanced-functional-programming-6-7-8-Lambda-expressions-1-2-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-A lambda expression is a nameless function - it only has parameters and a body.
+A lambda expression is a nameless function which only has parameters and a body.
 
  `(parameters) -> {body}`
 
@@ -78,7 +78,7 @@ String msg -> System.out.println(msg);
 
 ## Parameters
  
-We can have a different number of **parameters** in a lambda expression.
+We can have zero or more **parameters** in a lambda expression.
 
 - **Zero** parameters:
 
@@ -128,7 +128,7 @@ public class Main {
 
 Create a program that reads a line of **integers** separated by a comma and a space **", "**.
 Print only the **even numbers**.
-Then, **Sort** the even numbers in **ascending order** and print them **again**.
+Then, **sort** the even numbers in **ascending order** and print them **again**.
 
 # Example
 
