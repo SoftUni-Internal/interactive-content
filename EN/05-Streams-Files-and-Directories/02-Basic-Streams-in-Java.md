@@ -1,4 +1,4 @@
-#781273-1# Basic Streams in Java
+# Basic Streams in Java
 
 
 [slide hideTitle]
