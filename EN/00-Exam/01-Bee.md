@@ -15,13 +15,13 @@ public class Main {
 [task-description]
 # Description
 
-You will be given an integer **n** for the **size** of the bee territory with **square** shape. 
+You will be given an integer **n** for the **size** of the bee territory. The territory has a **squared** shape. 
 
 On the next **n** lines, you will receive the **rows** of the territory. 
 
 The bee will be placed on a **random position**, marked with the letter **'B'**. 
 
-On random positions there will be flowers, marked with **'f'**. 
+On random positions there will be flowers, marked with the letter **'f'**. 
 
 There may also be а **bonus** on the territory. 
 
@@ -31,11 +31,11 @@ It will be **marked** with the **letter** - **'O'**.
 
 **All of the empty positions** will be marked with '.'. 
 
-Each turn, you will be given **command** for the **bee’s movement**. 
+Each turn, you will be given a **command** for the **movement of the bee**. 
 
 The commands will be: **"up"**, **"down"**, **"left"**, **"right"**, **"End"**. 
 
-If the bee **moves** to a **flower**, it pollinates the flower and increase pollinated flowers with one. 
+If the bee **moves** to a **flower**, it pollinates the flower and increases the pollinated flowers with one. 
 
 If it goes to a **bonus**, the bee gets a bonus one move forward and then the bonus **disappears**. 
 
@@ -100,7 +100,6 @@ The bee needs **at least 5 pollinated flowers**.
 |.....|.....|.....|.....|
 |fffff|fffff|fffff|fffff|
 
-...
 
 - pollinate a flower: 'f' (0, 1) 
 
