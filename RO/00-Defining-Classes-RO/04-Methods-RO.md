@@ -102,7 +102,7 @@ Cea mai obișnuită utilizare a cuvântului cheie "**this**" este de a elimina c
 [/slide]
 
 [slide hideTitle]
-# Metoda "ToString()"
+# Metoda "toString()"
 
 
 Utilizând metoda `toString()`, puteți reprezenta orice obiect ca un șir.
