@@ -1,4 +1,4 @@
-# "throwing" Exceptions
+# "Тhrowing" Exceptions
 
 [slide hideTitle]
 
@@ -8,11 +8,14 @@
 
 Exceptions are thrown using the **throw** keyword. 
 
-Exceptions are used to notify the person running the code in case an error occurs or if the program produces unexpected results. 
+Exceptions are used to notify the person running the code in case of an error occurring or the program producing unexpected results. 
 
 **When an exception is "thrown"**: 
+
 - The program execution stops
+
 - The exception travels over the stack until a matching catch block is reached to handle it 
+   
    
 Unhandled exceptions display an error message and the program execution ends.
 
@@ -66,6 +69,7 @@ public static double sqrt(double value) {
 			"Sqrt for negative numbers is undefined!");
   return Math.sqrt(value);
 }
+
 public static void main(String[] args) {
   try {
      sqrt(-1);
@@ -126,15 +130,15 @@ Add **getters and setters** for each of the fields.
 
 Perform validations in their **setters** to keep the state of the **Person** objects correct.
 
-The **first** and **last name** cannot be **null** or **empty** strings. 
+The **first** and **last name** cannot be **null** nor **empty** strings. 
 
-To check this, use the `string.IsNullOrEmpty()` method.
+Use the `string.IsNullOrEmpty()` method.
 
-The **age** must be in the range [0 … 120].
+The **age** must be in range [0 … 120].
 
-If data is **invalid**, **throw the** appropriate exceptions with descriptive **messages**
+If the provided data is **invalid**, **throw** the appropriate exceptions with descriptive **messages**.
 
-For example, if the **name** is an **empty string**, an appropriate exception may be **IllegalArgumentException**.
+For example, if the **name** is an **empty string**, an appropriate exception is an **IllegalArgumentException**.
 
 Example for validating the **first name**:
 
@@ -151,32 +155,32 @@ Example for validating the **age**:
 
 ```java
 private void setAge (int age) {
-   if (age <0 || age > 120) {
-      throw new IllegalArgumentException ("Age should be in the range [O...120]");
+   if (age < 0 || age > 120) {
+      throw new IllegalArgumentException("Age should be in the range [O...120]");
    }
 
    this.age = age;
 }
 ```
 
-The constructor should use of setters instead of modifying the private fields directly:
+The constructor should use the **setters** instead of modifying the private fields directly:
 
 ```java
 public Person (String firstName, String lastName, int age) {
-   this. setFirstName (firstName);
-   this.setLastName (lastName);
-   this.setAge (age);
+   this.setFirstName(firstName);
+   this.setLastName(lastName);
+   this.setAge(age);
 }
 ```
 
 - **Step 3: Test the Person Class**
 
-In the main program, test whether the class behaves correctly. 
+In the **Main** class, test whether the class behaves correctly. 
 
-Create several objects of type Person – one with **valid data**, one with an **empty string for a first name**, 
-one with **null as a last name**, one with **negative age**, and one with **age > 120**. 
+Create several objects of type **Person** – one with **valid data**, one with an **empty string for the first name**, 
+one with **null for the last name**, one with a **negative age** and one with an **age higher than 120**. 
 
-Check whether executing the code results in errors in case the entered data is invalid. 
+Check whether executing the code results in errors in cases where the entered data is invalid. 
 
 Test the invalid cases one by one.
 
@@ -207,6 +211,7 @@ Example:
 ```java
 try {
       Person noName = new Person ( firstName: " ", lastName: "Aimee", age: 19);
+      
 } catch (IllegalArgumentException ex) {
       System.out.println("Exception thrown: " + ex.getMessage());
 }

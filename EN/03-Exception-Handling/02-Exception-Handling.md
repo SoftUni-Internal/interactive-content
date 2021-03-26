@@ -13,7 +13,7 @@ try {
 // Handle the caught exception
 }
 ```
-Use the **Catch** blocks multiple times to process different exception types.
+The **catch** blocks can be used multiple times to process **different exception types**.
 
 **Example:**
 
@@ -49,7 +49,7 @@ try {
   // Handle the caught arithmetic exception
 }
 ```
-The code in the example above handles the **IndexOutOfBoundsException** and its descendants: 
+The code in the example above handles the **IndexOutOfBoundsException** class and its descendants: 
 - **ArrayIndexOutOfBoundsException**
 - **StringIndexOutOfBoundsException**
 
@@ -60,16 +60,19 @@ String str = "Peter";
 
 try {
     Integer.parseInt(str);
+    
 } catch (Exception ex) {
     System.out.println("Cannot parse the number!");
+    
 } catch (NumberFormatException ex) {
     System.out.println("Invalid integer number!");
+    
 }
 ```
 
-Did you get it? You cannot have multiple catch statements here because by handling the **Exception** class we are already catching all the exceptions that inherit from it, including the NumberFormatException. 
+Did you get it? You cannot have multiple catch statements here because by handling the **Exception** class we are already catching all the exceptions that inherit from it, including the **NumberFormatException** class. 
 
-If you remove that part of the code, it should run just fine.
+To fix the mistake, remove that part of the code.
 
 [/slide]
 

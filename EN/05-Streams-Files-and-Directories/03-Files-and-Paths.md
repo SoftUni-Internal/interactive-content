@@ -19,11 +19,12 @@ String input = "D:\\input.txt";
 
 Path path = Paths.get(input);
 ```
+
 The static method `get()` takes a **String representation of the file location** as input.
 
 The **instance of Path** is created by calling the `Paths.get()` method.
 
-The Path instance gives us an easy way to create a Buffered Stream by using the BufferedReader and the **Files** class.
+The **Path** instance gives us an easy way to create a **Buffered Stream** by using the BufferedReader and the **Files** class.
 
 
 ```java
@@ -40,6 +41,7 @@ try (BufferedReader inputStream = Files.newBufferedReader(path)) {
     e.printStackTrace();
 }
 ```
+
 By calling the `newBufferedReader()` method of the Files class and passing the path as an argument, the BufferedReader instance is created (**Buffered Stream**).
 
 The following example illustrates copying the content of one file to another:
@@ -90,12 +92,12 @@ try (BufferedReader reader = Files.newBufferedReader(path)) {
 }
 ```
 
-Here are a few useful **methods** of provided by the **Files** and **Paths** classes:
+Here are a few useful **methods** provided by the **Files** and **Paths** classes:
 
 | **Method** | **Description** |
 | --- | --- |
 | **Files.exists()**| Tests whether the file or directory denoted by this abstract pathname exists. Returns true if and only if the file or directory denoted by this abstract pathname exists; false otherwise. |
-| **Paths.get()** | Gets the path of the resource from a single string of from a sequence a string that can be joined together to form the complete path.|
+| **Paths.get()** | Converts a path of the resource from a single string that can be joined together with another string to form the complete path. |
 | **Files.readAllLines()** | Read all lines from a file. |
 | **Files.write(outputPath, content)** | Writes the content to a file. |
 
@@ -114,18 +116,11 @@ Files.write(outPath, lines);
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-32-Sort-Lines-Problem-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Sort Lines" taskId="java-advanced-streams-files-lab-sort-lines" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.*;
+[code-task title="Sort Lines" taskId="java-advanced-streams-files-lab-sort-lines" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
+[code-editor language=java]
 [/code-editor]
+
 [task-description]
 ## Description
 
