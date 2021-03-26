@@ -8,7 +8,7 @@
 
 An array is a **sequence of elements** that holds a **fixed number of values of a single type**.
 
-The **length** of an array **is established when it is created**.
+The **length** of an array **is established when it is created**. 
 
 Each **item** in an array is called an **element**, and **each element is accessed** by its **numerical index**.
 
