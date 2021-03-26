@@ -290,6 +290,7 @@ if (!punctuation.contains((char) oneByte)){
 [tests]
 [test]
 [input]
+```
 On January 1  1533  Michael Angelo then fifty-seven years old writes
 from Florence to Tommaso de' Cavalieri a youth of noble Roman family
 who afterwards became his favourite pupil: "If I do not possess the
@@ -310,8 +311,10 @@ instead of having only the future which cannot be long since I am all
 too old There is nothing more left for me to say Read my heart and
 not my letter for my pen cannot approach the expression of my good
 will" 3 
+```
 [/input]
 [output]
+```
 On January 1  1533  Michael Angelo then fifty-seven years old writes
 from Florence to Tommaso de' Cavalieri a youth of noble Roman family
 who afterwards became his favourite pupil: "If I do not possess the
@@ -332,6 +335,7 @@ instead of having only the future which cannot be long since I am all
 too old There is nothing more left for me to say Read my heart and
 not my letter for my pen cannot approach the expression of my good
 will" 3 
+```
 [/output]
 [/test]
 [/tests]
