@@ -298,26 +298,26 @@ if (!punctuation.contains((char) oneByte)) {
 [tests]
 [test]
 [input]
-On January 1  1533  Michael Angelo then fifty-seven years old writes
-from Florence to Tommaso de' Cavalieri a youth of noble Roman family
+On January 1 , 1533 , Michael Angelo, then fifty-seven years old, writes
+from Florence to Tommaso de' Cavalieri, a youth of noble Roman family,
 who afterwards became his favourite pupil: "If I do not possess the
-art of navigating the sea of your potent genius that genius will
-nevertheless excuse me and neither despise my inequality nor demand
+art of navigating the sea of your potent genius, that genius will
+nevertheless excuse me, and neither despise my inequality, nor demand
 of me that which I have it not in me to give; since that which stands
-alone in everything can in nothing find its counterpart Wherefore your
-lordship _the only light in our age vouchsafed to this worlds_ having
-no equal or peer cannot find satisfaction in the work of any other
-hand If therefore this or that in the works which I hope and promise
-to execute should happen to please you I should call that work not
-good but fortunate And if I should ever feel assured that--as has
+alone in everything can in nothing find its counterpart. Wherefore your
+lordship, _the only light in our age vouchsafed to this worlds_ having
+no equal or peer, cannot find satisfaction in the work of any other
+hand. If, therefore, this or that in the works which I hope and promise
+to execute should happen to please you, I should call that work, not
+good, but fortunate. And if I should ever feel assured that--as has
 been reported to me--I have given your lordship satisfaction in one
-thing or another I will make a gift to you of my present and of all
+thing or another, I will make a gift to you of my present and of all
 that the future may bring me; and it will be a great pain to me to be
-unable to recall the past in order to serve you so much the longer
-instead of having only the future which cannot be long since I am all
-too old There is nothing more left for me to say Read my heart and
-not my letter for my pen cannot approach the expression of my good
-will"\[ 3 \]
+unable to recall the past, in order to serve you so much the longer,
+instead of having only the future, which cannot be long, since I am all
+too old. There is nothing more left for me to say. Read my heart and
+not my letter, for my pen cannot approach the expression of my good
+will." 3 
 [/input]
 [output]
 On January 1  1533  Michael Angelo then fifty-seven years old writes
@@ -339,7 +339,7 @@ unable to recall the past in order to serve you so much the longer
 instead of having only the future which cannot be long since I am all
 too old There is nothing more left for me to say Read my heart and
 not my letter for my pen cannot approach the expression of my good
-will"\[ 3 \]
+will" 3 
 [/output]
 [/test]
 [/tests]
