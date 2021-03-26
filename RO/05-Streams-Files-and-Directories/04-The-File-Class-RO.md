@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Clasa de fișiere în Java
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-34-35-File-Class-In-Java-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Clasa de fișiere în Java reprezintă fișierele și numele de cale ale directorului într-un mod abstract.
 
 Această clasă este utilizată pentru crearea fișierelor și directoarelor, căutarea fișierelor, ștergerea fișierelor etc.
@@ -29,6 +31,8 @@ Unele dintre metodele **utile** din clasa **Fișier** sunt:
 
 [slide hideTitle]
 # Problemă cu soluție: Listarea fișierelor
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-36-list-files-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="List Files" taskId="java-advanced-streams-files-lab-list-files" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -87,6 +91,9 @@ output.txt: \[14328\]
 
 [slide hideTitle]
 # Problemă cu soluție: fișiere imbricate
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-38-Nested-Folders-Problem-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Nested Folders" taskId="java-advanced-streams-files-lab-nested-folders" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java

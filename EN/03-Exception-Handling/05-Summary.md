@@ -5,10 +5,12 @@
 
 ## In this lesson you learned:
 
-- What Java exceptions are
-    - exception Hierarchy
-- How to Handle Exception
-    - try-catch Constructor
+- What exceptions are
+    - exception hierarchy
+   
+- Handling exceptions
+    - **try-catch** statement
+    
     ```java 
     try {
     // Do some work that can raise an exception
@@ -17,7 +19,7 @@
     }
     ```
 
-    - try-finally Statement
+    - **try-finally** statement
     ```java 
     try {
     // Do some work that can raise an exception
@@ -26,8 +28,9 @@
     }
     ```
 
-- How to Raise (Throw) Exceptions
-    - Using Throw Keyword
+- Throwing exceptions
+    - Using the **throw** keyword
+    
     ```java
     try {
     …
@@ -36,6 +39,7 @@
     }
     ```
     - Re-Throwing Exceptions
+    
     ```java
     try {
     Integer.parseInt(str);
@@ -45,8 +49,8 @@
     }
     ```
 - Best Practices
-    - using a Catch Block
-    - choosing the right Exception Type 
+    - using **catch** blocks
+    - choosing the correct **exception type** 
 
 ## In the next lesson, you will learn:
 

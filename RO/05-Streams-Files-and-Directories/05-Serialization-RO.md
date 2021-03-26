@@ -12,7 +12,7 @@ Dar uneori, s-ar putea să dorim  **să reutilizăm** un obiect între mai multe
 
 **Deserializarea** ne permite să inversăm procesul, ceea ce înseamnă **reconvertirea a fluxului/stream-ului de octeți serializați într-un obiect**.
 
-În cuvinte mai simple,  **serializarea obiectului ** este procesul de **salvare a stării unui obiect** într-o **secvență de octeți** și **deserializarea** este procesul de **reconstituire a unui obiect din acești octeți**.
+În cuvinte mai simple,  **serializarea obiectului** este procesul de **salvare a stării unui obiect** într-o **secvență de octeți** și **deserializarea** este procesul de **reconstituire a unui obiect din acești octeți**.
 
 În general, procesul complet se numește **Serializarea**.
 
@@ -21,6 +21,8 @@ Dar uneori, s-ar putea să dorim  **să reutilizăm** un obiect între mai multe
 [slide hideTitle]
 
 # Serializarea
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-41-Serialization-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Procesul de **Serializarea** este pe **platforma independenta**, un obiect serializat pe o platformă poate fi deserializat pe o altă platformă.
 
@@ -48,6 +50,8 @@ Prin metoda `writeObject()` -  structura datelor de nume este scrisă în fișie
 
 [slide hideTitle]
 # Deserializare
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-43-Deserialization-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ```java
 String input = "D:\\names.ser";
@@ -83,6 +87,8 @@ class Cube implements Serializable {
 [slide hideTitle]
 
 # Problemă cu soluție: Serializarea obiectului personalizat
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-45-Serialize-custom-object-Problem-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Creați o clasă numită "**Cube**". Ar trebui să aibă următoarele **proprietăți** pentru **culoare**, **lățime**, **înălțime** și **adâncime**.
 Creați o instanță a clasei cu următoarele valori:

@@ -16,7 +16,9 @@ The following illustration explains an **integer array with 5 elements**:
 
 [image assetsSrc="Java-Advanced-Multidimensional-Arrays-2.png" /]
 
-As shown in the illustration above, **the numbering of elements starts with 0**, therefore the **first element** can be accessed at **index 0** and the **last at index 4**.
+As shown in the illustration above, **the numbering of elements starts from 0**.
+
+The **first element** can be accessed at **index 0** and the **last at index 4**.
 
 [/slide]
 

@@ -50,6 +50,7 @@ public class Main {
 Read the file named "**input.txt**" and write every character's **ASCII** representation to another file.
 
 Write every space or newline as is - do not convert them to their ASCII representation.
+
 ## Guidelines
 
 You should already have all the required resources downloaded from a previous task.
@@ -126,14 +127,13 @@ Submit only the **output** of your program, **not the code**.
 
 **Java Character streams** are used for performing input and output operations for **16-bit Unicode** data.
 
-The most frequently used classes are, **FileReader** and **FileWriter**. 
+The most frequently used classes are **FileReader** and **FileWriter**. 
 
-Although **FileReader uses FileInputStream** internally, and **FileWriter uses FileOutputStream** the difference is that FileReader **reads two bytes at a time** and FileWriter **writes two bytes at a time**.
+Although **FileReader uses FileInputStream** internally, and **FileWriter uses FileOutputStream**, the difference is that FileReader **reads two bytes at a time** and FileWriter **writes two bytes at a time**.
 
 In short, character streams can read and write from an input **character by character**.
 
-
-Input and output streams are created by using the FileReader and FileWriter classes in a **try-with-resources** block.
+Input and output streams are created by using the **FileReader** and **FileWriter** classes in a **try-with-resources** block.
 
 After declaring and assigning the character variable, by using the `inputStream.read()` method, the while loop runs until the last character has been read from the input file.
 
@@ -175,7 +175,7 @@ String path = "D:\\input.txt";
 Scanner reader = new Scanner(new FileInputStream(path));
 ```
 
-An example above is given with the `Scanner` class, which we have used for quite some time now.
+The example above is given with the `Scanner` class, which we have used for quite some time now.
 
 It is used here to wrap a `FileInputStream`.
 
@@ -189,18 +189,11 @@ We have done that by wrapping `System.in` which is nothing more but a constant h
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-21-Extract-integers-Problem-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Extract Integers" taskId="java-advanced-streams-files-lab-exact-integers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.*;
+[code-task title="Extract Integers" taskId="java-advanced-streams-files-lab-exact-integers" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
+[code-editor language=java]
 [/code-editor]
+
 [task-description]
 ## Description
 Read the "**input.txt**" file from the resources that you downloaded previously.
@@ -249,13 +242,13 @@ Submit only the **output** of your program, **not the code**.
 
 Buffered Streams are another layer of abstraction over the byte stream. 
 
-The Streams we have seen so far use unbuffered I/O. 
+The streams we have seen so far use **unbuffered I/O**. 
 
-This means each read or write request is handled directly by the underlying Operating System.
+This means each read or write request is **handled directly** by the underlying **Operating System**.
 
-This can make a program much less efficient since each such request often uses disk space, network activity, or some other operation that is relatively expensive.
+This can make a program much less efficient since each such request often uses disk space, network activity or some other operation that is relatively expensive.
 
-To overcome this kind of overhead, the Java platform implements Buffered I/O Streams.
+To overcome this kind of overhead, the Java platform implements **Buffered I/O Streams**.
 
 Buffered input streams read data from a memory area known as a buffer.
 
@@ -272,7 +265,7 @@ Let's see the following example:
 
 [image assetsSrc="streams-files-directories-example(5).png" /]
 
-Instead of reading the content "**Files and**", byte by byte or a character by character, we can use a buffer to get bigger chunks of that text at a time. 
+Instead of reading the content byte by byte or character by character we can use a buffer to get bigger chunks of that text at a time. 
 
 In this case, the buffer will hold two characters at the same time. 
 
@@ -285,23 +278,16 @@ This significantly will **boost the performance** of our applications.
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-24-Write-Every-3rd-Line-Problem-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Write Every Third Line" taskId="java-advanced-streams-files-lab-write-every-third-line" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.*;
+[code-task title="Write Every Third Line" taskId="java-advanced-streams-files-lab-write-every-third-line" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
+[code-editor language=java]
 [/code-editor]
+
 [task-description]
 ## Description
 Read the "**input.txt**" file from the resources that you downloaded previously. 
 
-Write all lines which number is **divisible by 3** to another file.
+Write **every 3rd line** to another file.
 
 Line numbers **start from one**.
 

@@ -6,36 +6,37 @@
 
 ## In this lesson you learned:
 
-- What is **Debugging** in Java
+- What **debugging** is
 
-- Importance of **Debugging**
+- The importance of **debugging**
 
-- How to Debug with **IntelliJ IDEA** Debugger
+- How to debug using **IntelliJ IDEA**'s debugger
 
-    - what **Breakpoints** are and How to Use Them
+    - what **breakpoints** are and how to use them
 
     - how to **control** the **execution flow**
 
-    - how to **Debug** a **Project** 
+    - how to **debug** a **project** 
 
-- The Steps to **Inspect** our **Data**
+- The steps to **ispect** our **data**
 
-    - **variables** and **Watches** tab
+    - **variables** and **watches** tab
 
-    - **evaluate Window**
+    - **evaluate window**
 
-- How to Find and Fix a Defect in our code
+- How to find and fix a defect in our code
 
     - tips for finding and fixing errors
 
     - psychological barriers
    
 ## In the next lesson, you will learn:
+- Streams definition
 
-- Streams Basics and Types of Streams
+- Types of streams
 
 - Files and Paths in Java
 
-- Serializing and Deserializing Objects
+- Serializing and deserializing objects
 
 [/slide]

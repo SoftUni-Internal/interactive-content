@@ -4,6 +4,8 @@
 
 # Excepții: Definiție
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/RO/Java-Advanced-Exceptions-and-Error-Handling-3-4-what-are-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Excepții în Java sunt **obiecte**.
 
 Obiectele de excepție au informații detaliate despre eroare.
@@ -24,7 +26,7 @@ Conține informații pentru cauza erorii.
 
 # The Throwable Class
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-5-the-throwable-class-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/RO/Java-Advanced-Exceptions-and-Error-Handling-5-the-throwable-class-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Superclasa tuturor erorilor și excepțiilor din Java este **clasa Throwable**.
 
@@ -43,6 +45,8 @@ De asemenea, poate conține un mesaj care oferă mai multe informații cu privir
 
 # Types of Exceptions
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/RO/Java-Advanced-Exceptions-and-Error-Handling-6-types-of-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Mai jos de **Throwable** sunt:
 
 - **Exceptions**
@@ -58,6 +62,8 @@ Mai jos de **Throwable** sunt:
 [slide hideTitle]
 
 # Exceptions
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/RO/Java-Advanced-Exceptions-and-Error-Handling-7-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Excepțiile** sunt două tipuri:
 
@@ -88,6 +94,8 @@ Mai jos de **Throwable** sunt:
 [slide hideTitle]
 
 # Ierarhie de Excepție 
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/RO/Java-Advanced-Exceptions-and-Error-Handling-8-exception-hierarchy-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [image assetsSrc="exception-handling-example(1).png" /]
 

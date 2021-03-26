@@ -8,9 +8,11 @@
 
 All of us have watched online videos on YouTube or another website.
 
-When you hit the play button on a video, a small portion of the file gets loaded into your device's memory before the video can play. 
+When you hit the play button on a video, a small portion of the file gets loaded into your device's memory before the video plays. 
 
-There is no need to download the complete video before you start playing it, and this is called **streaming**.
+There is no need to download the complete video before you start playing it.
+
+This is called **streaming**.
 
 A stream can be defined as a **sequence of data**. 
 
@@ -26,7 +28,7 @@ It's called a stream because it is like a stream of water that continues to flow
 
 There are **two fundamental types** of Streams:
 
-- **InputStreams** − used to read data from a **source**
+- **InputStreams** − used for reading data from a **source**
 
 [image assetsSrc="streams-files-directories-example(1).png" /]
 
@@ -42,7 +44,7 @@ There are **two fundamental types** of Streams:
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-7-Opening-A-File-Stream-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Let us look at the following example that illustrates how to open a file stream.
+Let us take a look at the following example that illustrates how to open a file stream.
 
 ```java
 String path = "C:\\input.txt";
@@ -56,16 +58,16 @@ while (oneByte >= 0) {
 }
 ```
 
-First, we declare a **path** variable that holds the path to the resource that we will work with.
+First, we declare a variable called **path** that holds the path to the resource that we will work with.
 
 
-Instantiating an input stream by using the **FileInputStream** class:
+Instantiating an input stream is done using the **FileInputStream** class:
 
 ```java
 FileInputStream fileStream = new FileInputStream(path);
 ```
 
-As you can see the file path is added as a parameter in the FileInputStream's constructor.
+As you can see the file path is added as a parameter to the **FileInputStream's constructor**.
 
 Next, we are starting the stream reading process by storing the first byte of the file into a variable of type **int**:
 
@@ -73,7 +75,7 @@ Next, we are starting the stream reading process by storing the first byte of th
 int oneByte = fileStream.read();
 ```
 
-After this, we use a while loop to read the file until the ``read()`` method returns **-1**. 
+After this, we use a **while-loop** to read the file until the `read()` method returns **-1**. 
 
 If the **oneByte** variable returns -1 at any point, this would mean there is nothing more to read.
 
@@ -87,9 +89,9 @@ Printing oneByte to the console is not necessary, but in this example, it helps 
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-8-9-Closing-A-File-Stream-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-To avoid memory leaks and application crashes, we should close any streams that we open when they are no longer needed.
+To avoid memory leaks and application crashes, we should close any streams that we have previously opened when they are no longer needed.
 
-One way to close File Streams is by using `try-catch-finally` to handle possible exceptions:
+One way to close a file stream is by using `try-catch-finally` to handle possible exceptions:
 
 ```java
 
@@ -135,9 +137,9 @@ After all of this is done the Input Stream will close and the resources used by 
 
 There is a **shorter way** of implementing the same behavior from the previous example - `try-with-resources`.
 
-We can create a Stream inside the try block.
+We can create a stream inside the **try** block.
 
-The **main benefit** is that the Stream will be **automatically closed** after we finish our job in the try block.
+The **main benefit** is that the stream will be **automatically closed** after we finish our job in the **try** block.
 
 ```java
 // source 
@@ -163,22 +165,15 @@ try (InputStream in = new FileInputStream(path)) {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-10-read-file-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Read File" taskId="java-advanced-streams-files-lab-read-file" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.*;
+[code-task title="Read File" taskId="java-advanced-streams-files-lab-read-file" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
+[code-editor language=java]
 [/code-editor]
+
 [task-description]
 ## Description
 
-**Download the resources** [here](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Files-and-Streams-Lab-Resources.zip ). The zip file contains the resources for all the tasks in this lesson.
+**Download the resources from** [here](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Files-and-Streams-Lab-Resources.zip ). The zip file contains the resources for all the tasks in this lesson.
 
 You are given a file named "**input.txt**" (from the Resources - Folder).
 
@@ -186,9 +181,9 @@ You are given a file named "**input.txt**" (from the Resources - Folder).
 
 ## Guidelines
 
-There is a zipped folder with resources for all exercises, that you need to use. 
+There is a zipped folder with resources for all exercises that you need to use. 
 
-For each exercise submit only the **output** of your program, **not the code**.
+Submit only the **output** of your program, **not the code**.
 
 
 ## Examples
@@ -253,18 +248,11 @@ try (FileInputStream fileStream = new FileInputStream(path)) {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/EN/interactive-java-advanced-streams-files-and-directories-12-Write-To-File-Problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Write to File" taskId="java-advanced-streams-files-lab-write-to-file" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.*;
+[code-task title="Write to File" taskId="java-advanced-streams-files-lab-write-to-file" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
+[code-editor language=java]
 [/code-editor]
+
 [task-description]
 ## Description
 
@@ -276,7 +264,7 @@ Skip the following symbols: `,`, `.`, `!`, `?`.
 
 You should already have all the required resources downloaded from the previous task.
 
-For each exercise submit only the **output** of your program, **not the code**.
+Submit only the **output** of your program, **not the code**.
 
 ## Examples
 | **Input** | **Output** |
@@ -295,13 +283,13 @@ For each exercise submit only the **output** of your program, **not the code**.
 - Create a FileOutputStream to write to a file
 - Create a list, containing all characters that you need to skip and check if the current char is contained in it
 
+
 ```java
 if (!punctuation.contains((char) oneByte)) {
     out.write(oneByte);
 }
 
 ```
-
 
 [/task-description]
 [code-io /]

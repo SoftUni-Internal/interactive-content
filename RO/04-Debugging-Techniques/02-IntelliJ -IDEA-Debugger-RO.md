@@ -4,6 +4,8 @@
 
 # Cum se depanează un proces
 
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-10-how-to-debug-a-process-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **IntelliJ IDEA** are un instrument de depanare încorporat.
 
 Este util, deoarece ne permite:
@@ -42,6 +44,8 @@ De asemenea, ne putem atașa la un program, care nu este **disponibil direct în
 
 [slide hideTitle]
 # Depanarea unui proiect
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-11-debugging-a-project-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a rula programul în **modul de depanare**, trebuie să facem clic dreapta și să alegem „**Depanare** \{**numele clasei**\} **.Main()**”
 
@@ -125,6 +129,8 @@ Din opțiunea **Structura proiectului** din meniul **Fișier** sau printr-o coma
 [slide hideTitle]
 
 # Puncte de întrerupere
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-16-17-breakpoints-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Punctele de întrerupere** ne oferă posibilitatea de a opri programul pentru o anumită acțiune.
 
