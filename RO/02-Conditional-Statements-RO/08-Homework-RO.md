@@ -98,11 +98,11 @@ function adapter(input, code) {
 # Descriere
 Creați un program care verifică dacă apa fierbe: 
 
-* Veți primi un număr în virgulă mobilă: temperatura  **temperature** (în °C)
+* Veți primi un număr în virgulă mobilă: temperatura apei (în °C)
 
 * Imprimați "**The water is boiling**" dacă numărul este \> 100
 
-* Imprimați "**The water is not hot**" în oricare altă situație
+* Imprimați "**The water is not hot enough**" în oricare altă situație
 
   # Exemplu
 
@@ -269,7 +269,7 @@ Creați un program care calculează:
 
 - Care este numărul de puncte final 
 
-Dacă numărul este sub valoarea **100 inclusiv**, atunci punctele bonus sunt **5**.
+Dacă numărul este mai mic decât **100 inclusiv**, atunci punctele bonus sunt **5**.
 Dacă numărul este **mai mare decât 100**, punctele bonus sunt **20 % din număr**.
 Dacă numărul este **mai mare decât 1000**, punctele bonus sunt **10 % din număr**.
 
