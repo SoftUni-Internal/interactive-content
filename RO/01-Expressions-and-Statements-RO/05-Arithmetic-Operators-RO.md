@@ -5,13 +5,13 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-25-26-Arithmetic-operators-Plus-Minus-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Haideți să examinăm **operațiile aritmetice** de bază în pragramare. 
+Haideți să examinăm **operațiile aritmetice** de bază în programare. 
 
-Putem aduna,scădea, înmulți și împărți, folosind operatorii `+`, `-`, `*` și `/`.
+Putem aduna, scădea, înmulți și împărți, folosind operatorii `+`, `-`, `*` și `/`.
 
 ## Adunarea numerelor
 
-Putem **aduna** numere, utilizând operatorul  `+`:
+Putem **aduna** numere, utilizând operatorul `+`:
 
 ```js live
 let a = 5;
@@ -37,7 +37,7 @@ console.log(a - b);
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-27-Arithmetic-Operators-Multiplication-Divison-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Pentru **înmulțirea** nuemrelor folosim operatorul `*`:
+Pentru **înmulțirea** numerelor folosim operatorul `*`:
 
 ```js live
 let a = 5;
@@ -45,12 +45,11 @@ let b = 7;
 console.log(a * b);
 ```
 
-## Împărțirea numerleor
+## Împărțirea numerelor
 
 **Împărțirea** numerelor se efectuează prin utilizarea operatorului `/`.
 
-
-Tipul numerelor reprezintă **atât** numerele întregi  (integer), cât și cele în virgulă mobilă (floating point number). Nu este  **împărțire întreagă implicită**.
+Tipul numerelor reprezintă **atât** numerele întregi (integer), cât și cele în virgulă mobilă (floating-point number). Nu există  **împărțire întreagă implicită**.
 
 * Dacă faceți acest lucru
 
@@ -81,7 +80,9 @@ console.log(result);
 
 * Răspunsul așteptat este -1, dar veți obține -2, în schimb
 
-* Rotunjirea în jos funcționează în sensul opus pentru numerele negative. O instrucțiune if poate poate repara aceasta problemă
+* Rotunjirea în jos funcționează în sensul opus pentru numerele negative. 
+
+O `instrucțiune if` poate repara această problemă:
 
 ```js live
 let result = -5/4;
@@ -105,7 +106,8 @@ let result = 1/0;
 console.log(result);
 ```
 
-Iata și câteva exemple cu operatorul de împărțire:
+Aici aveți câteva exemple cu operatorul de împărțire:
+
 ```js live
 let a = -5;
 let i = a / 0;
@@ -129,7 +131,7 @@ console.log(3.5 % 1);
 ```
 Acesta este folositor în cazul în care dorim să verificăm dacă un număr e  **par** sau **impar**.
 
-Dacă restul la împrțirea la 2 e egal cu 0, atunci numărul este par, altfel numărul e impar. 
+Dacă restul la împărțirea la 2 e egal cu 0, atunci numărul este par, altfel numărul e impar. 
 
 Să vedem următorul exemplu: 
 ```js live
