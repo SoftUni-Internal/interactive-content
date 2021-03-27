@@ -5,7 +5,7 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/02-Conditions/02-conditional-statements-js-17-if-else-conditions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Construcția `if` poate conține, de asemenea, o clauză `else` pentru a da o acțiune specifică în cazul în care expresia booleană (care este setată la început `if(expresia bool)`) se schimbă in rezultat negativ(`false`).
+Construcția `if` poate conține, de asemenea, o clauză `else` pentru a da o acțiune specifică în cazul în care expresia booleană (care este setată la început `if(expresia bool)`) returnează un rezultat negativ(`false`).
 
 Construită astfel, **instrucțiunea condițională** se numește `if-else` și comportamentul său este după cum urmează:
 
@@ -25,21 +25,19 @@ if (condition) {
 ```
 Dacă condiția este `false`, se va executa instrucțiunea else.
 
-Deoarece o condiție nu poate fi simultană `adevărată` și `falsă`, instrucțiunea then și instrucțiunea else a unei instrucțiuni `if-else` nu pot **niciodată să ruleze impreună**.
+Deoarece o condiție nu poate fi simultan `true` și `false`, instrucțiunea `if` și instrucțiunea `else` ale unei instrucțiuni `if-else` nu pot **niciodată să ruleze împreună**.
 
-După ce instrucțiunea 'then' sau instrucțiunea `else` rulează, controlul este transferat la următoarea instrucțiune după instrucțiunea `if`.
+Dacă condiția din instrucțiunea `if` returnează `true`, intrăm în corpul condiției instrucțiunii `if`.
 
-Într-o instrucțiune `if` care nu include o instrucțiune else, dacă condiția este `true`, instrucțiunea then rulează.
+Dacă condiția din instrucțiunea `if` returnează `false`, intrăm în corpul condiției instrucțiunii `else`, iar codul care este înăuntrul acesteia va fi executat.
 
-Dacă condiția este `false`, controlul este transferat la următoarea instrucțiune după instrucțiunea if.
-
-Atât ce instrucțiunea "then" cât și instrucțiunea `else` pot consta dintr-o singură instrucțiune sau mai multe instrucțiuni care sunt încadrate între paranteze `{}`.
+Atât instrucțiunea `if` cât și instrucțiunea `else` pot consta dintr-o singură instrucțiune sau mai multe instrucțiuni care sunt încadrate între paranteze `{}`.
 
 Pentru o singură instrucțiune, parantezele sunt opționale, dar recomandate.
 
-Isntrucțiunea sau instrucțiunile din ce instrucțiunea "then" sau instrucțiunea `else` pot fi de orice fel, inclusiv o altă instrucțiune if imbircată  în interiorul instrucțiunii originale if.
+Instrucțiunea sau instrucțiunile din instrucțiunea `if` sau instrucțiunea `else` pot fi de orice fel, inclusiv o altă instrucțiune `if` imbricată în interiorul instrucțiunii originale if.
 
-## Exemplu: Vremea
+## Exemplu: Weather
 Aceasta este o versiune extinsă a exemplului din diapozitivul anterior.
 
 După cum puteți vedea acum, avem un alt caz, care va fi executat atunci când condiția din `if` se dovedește a fi **falsă.**
@@ -56,17 +54,17 @@ function example(input) {
 [/slide]
 
 [slide hideTitle]
-# Block of Code
+# Bloc de Cod
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/02-Conditions/02-conditional-statements-js-18-19-Blocks-of-code-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Când avem **o singură comandă** în corpul construcției **if**, putem **sări peste parantezele crețate**, indicând corpul operatorului condiționat.
+Când avem **o singură comandă** în corpul construcției **if**, putem **sări peste acolade**, indicând corpul operatorului condițional.
 
-Când vrem să executăm un  **bloc de cod** (un grup de comenzi), parantezele crețate sunt **necesare**.
+Când vrem să executăm un  **bloc de cod** (un grup de comenzi), acoladele sunt **necesare**.
 
 În cazul în care le eliminăm, **numai prima linie** după **clauza if** va fi executată. 
 
-Iată un exemplu în care **omiterea** parantezelor crețate duce la o **confuzie:**
+Iată un exemplu în care **omiterea** acoladelor duce la o **confuzie:**
 
 ```js live
 let color = 'red';
@@ -101,7 +99,7 @@ if (color == 'red') {
 [code-editor language=javascript]
 ```
 function evenOrOdd(input) {
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 [/code-editor]
