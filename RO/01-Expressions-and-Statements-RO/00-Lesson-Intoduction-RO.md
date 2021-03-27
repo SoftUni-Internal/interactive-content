@@ -27,11 +27,11 @@
 
 **2. Operatorii aritmetici: +, -, * și /**
 
-- Cum să manipulați variabilele
+- Cum să manipulați variabile
 
 **6. Expresii**
 
-- Cum să combinați valorile și operatorii
+- Cum să combinați valori și operatori
 
 **7. Exerciții practice**
 
