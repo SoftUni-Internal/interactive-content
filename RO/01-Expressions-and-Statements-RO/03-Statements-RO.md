@@ -8,7 +8,7 @@
 
 Acțiunile pe care le aplică un program sunt exprimate ca **instrucțiuni**.
 
-JavaScript suportă **diferite** tipuri de declarații, iar mai jos enunțăm câteva dintre acestea:
+JavaScript suportă **diferite** tipuri de instrucțiuni, iar mai jos enunțăm câteva dintre acestea:
 
 * **Declaration** statements: declară variabile locale și constantele
 
