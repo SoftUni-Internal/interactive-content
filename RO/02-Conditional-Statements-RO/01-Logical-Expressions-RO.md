@@ -29,7 +29,7 @@ console.log(a == b) // true
 console.log(a === b) // false
 ```
 
-Atunci când este comparat, rezultatul este o valoare booleană `true` sau `false`, în funcție de faptul dacă rezultatul comparației este `true` sau `false`.
+Atunci când este comparat, rezultatul este o valoare booleană `true` sau `false`, în funcție de rezultatul comparației.
 
 [/slide]
 [slide hideTitle]
@@ -59,11 +59,11 @@ x / 45 * (y +17) >= Math.sqrt(z) / (p - (x * 16))
 
 Expresia complexă precedentă include **literali**, **variabile** și **apeluri de funcții.**
 
-Expresiile de pe ambele părți ale operatorului de comparație sunt **evaluate**. 
+Expresiile din ambele părți ale operatorului de comparație sunt **evaluate**. 
 
 Apoi, valorile date sunt **comparate** utilizând operatorul de comparație `>=`.
 
-Dacă valoarea expresiei din partea stângă este mai mare sau egală cu valoarea expresiei din dreapta, întreaga expresie se evaluează la `true`, în caz contrar, se evaluează la `false`.
+Dacă valoarea expresiei din partea stângă este mai mare sau egală cu valoarea expresiei din dreapta, întreaga expresie se evaluează ca fiind `true`, în caz contrar, se evaluează ca fiind `false`.
 
 ## Compararea de Șiruri
 
