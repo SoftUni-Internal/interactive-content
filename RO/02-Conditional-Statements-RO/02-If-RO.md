@@ -2,7 +2,7 @@
 
 # Condiții Simple "if"
 [slide hideTitle]
-# Exemplu din Viață Reală: Udarea Plantelor 
+# Exemplu din Viață Reală: Watering Plants 
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/02-Conditions/02-conditional-statements-js-8-9-Real-Life-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -55,7 +55,7 @@ if (condition) {
   // condition body;
 }
 ```
-## Exemplu: vreme
+## Exemplu: Weather
 
 Aici, dacă condiția vremii ploioase se evaluează la **adevărat**, atunci corpul instrucțiunii este executat.
 ```js
