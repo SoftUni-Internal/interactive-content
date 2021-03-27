@@ -10,7 +10,7 @@ Acțiunile pe care le aplică un program sunt exprimate ca **instrucțiuni**.
 
 JavaScript suportă **diferite** tipuri de declarații, iar mai jos enunțăm câteva dintre acestea:
 
-* **Declaration** statements: declară variabile locale și constante
+* **Declaration** statements: declară variabile locale și constantele
 
 * **Expression** statements: evaluează expresii
 
@@ -40,7 +40,7 @@ Alocarea unei valori unei variabile înseamnă că stocăm în ea o valoare.
 counter = 1;
 ```
 
-- Declararea inițializării \+
+- Declararea \+ inițializarea
 
 ```js
 let counter = 1;
