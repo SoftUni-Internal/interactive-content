@@ -5,7 +5,7 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/02-Conditions/02-conditional-statements-js-31-32-Debugging-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Până acum, am scris o mulțime de coduri și au aparut câteva greșeli în el, corect? Acum vom arăta un instrument care ne poate ajuta să găsim greșelile mai ușor: **depanatorul**.
+Până acum, am scris o mulțime de coduri și au aparut câteva greșeli în el, corect? Acum vom prezenta un instrument care ne poate ajuta să găsim greșelile mai ușor: **depanatorul**.
 
 ## Ce este "Depanarea"?
 
