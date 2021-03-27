@@ -20,7 +20,7 @@ let name = "John Doe";
 
 În majoritatea contextelor în care sunt folosite expresiile, ca de exemplu, în instrucțiuni, acestea trebuie să returneze o valoare. 
 
-* Dacă `x` și `y` sunt numere, expresia `x + y` este evaluată ca o valoare numerică
+* Dacă `x` și `y` sunt numere, expresia `x + y` este evaluată ca o valoare numerică.
 
 ## Expresiile numerice 
 
@@ -32,6 +32,6 @@ let r = (150-20) / 2 + 5;
 
 Regula standard privind **prioritatea** în ceea ce privește operațiile aritmetice se aplică și aici: înmulțirea și împărțirea sunt făcute întotdeauna înaintea adunării și scăderii. 
 
-Dacă expresia este scrisă între **paranteze**, aceasta va fi calculată **mai întâi**, la fel ca la matematică.
+Dacă expresia este scrisă între **paranteze**, aceasta va fi calculată **mai întâi**, la fel ca în matematică.
 
 [/slide]
