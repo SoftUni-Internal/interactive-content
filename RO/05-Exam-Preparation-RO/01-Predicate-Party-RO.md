@@ -4,8 +4,14 @@
 
 [code-task title="Predicate Party" taskId="Java-OOP-Basics-Exam-Preparation-Predicate-Party" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java-code]
-```
+```java
+import java.util.Scanner;
 
+public class Main {
+  public static void main(String[] args) {
+    // Write code here
+  }
+}
 ```
 [/code-editor]
 [task-description]
