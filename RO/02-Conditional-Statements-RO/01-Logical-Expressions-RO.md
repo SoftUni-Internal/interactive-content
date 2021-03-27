@@ -12,14 +12,14 @@
 |---|---|
 | Egal cu (valoare) |   **==** |
 | Nu este egal cu (valoare) |   **!=** |
-| Egal cu  (valaore&tip) |   **===** |
-| Nu este egal cu (valaore&tip) |   **!==** |
+| Egal cu  (valoare&tip) |   **===** |
+| Nu este egal cu (valoare&tip) |   **!==** |
 | Mai mare decât |   **>** |
-| Mai mare decât sau egal cu |   **>=** |
+| Mai mare sau egal cu |   **>=** |
 | Mai mic decât |   **<** |
-| Mai mic decât sau egal cu |   **<=** |
+| Mai mic sau egal cu |   **<=** |
 
-Rețineți diferența dintre `===` și`==`.
+Rețineți diferența dintre `===` și `==`.
 Vedeți exemplul:
 
 ```js live
@@ -29,7 +29,7 @@ console.log(a == b) // true
 console.log(a === b) // false
 ```
 
-Atunci când este comparat, rezultatul este o valoare booleană `adevărat` sau `fals`, în funcție de faptul dacă rezultatul comparației este `true` sau `false`.
+Atunci când este comparat, rezultatul este o valoare booleană `true` sau `false`, în funcție de faptul dacă rezultatul comparației este `true` sau `false`.
 
 [/slide]
 [slide hideTitle]
@@ -57,7 +57,7 @@ Expresiile pe care le comparați pot fi expresii complexe, ca în exemplul urmă
 x / 45 * (y +17) >= Math.sqrt(z) / (p - (x * 16))
 ```
 
-Expresia complexă precedentă include **literale**, **variabile** și **apeluri de funcții.**
+Expresia complexă precedentă include **literali**, **variabile** și **apeluri de funcții.**
 
 Expresiile de pe ambele părți ale operatorului de comparație sunt **evaluate**. 
 
@@ -65,11 +65,11 @@ Apoi, valorile date sunt **comparate** utilizând operatorul de comparație `>=`
 
 Dacă valoarea expresiei din partea stângă este mai mare sau egală cu valoarea expresiei din dreapta, întreaga expresie se evaluează la `true`, în caz contrar, se evaluează la `false`.
 
-## Compararea de șiruri
+## Compararea de Șiruri
 
 Compararea textelor utilizând operatorul de egalitate (`==`).
 
-Doi operanzi de șir sunt egali atunci când ambii sunt `null` sau ambii au aceeași lungime și au caractere identice în fiecare poziție de caracter:
+Doi operanzi de șir sunt egali atunci când ambii sunt `null` sau ambii au aceeași lungime și au caractere identice pe fiecare poziție de caracter:
 
 ```js live
 let a = 'Examplе';
