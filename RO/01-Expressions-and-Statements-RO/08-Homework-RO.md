@@ -8,7 +8,7 @@
 [code-editor language="javascript"]
 ```
 function calculateArea(input) {
-   // Scrieți codul dvs. aici
+   // Write your code here
 }
 ```
 [/code-editor]
@@ -25,7 +25,7 @@ function adapter(input, code) {
 # Descriere
 Creați un program care obține un număr întreg și calculează aria unui pătrat cu latura **a**.
 
-Veți primi valoarea laterală ca argument al funcției
+- Veți primi valoarea laturii ca argument al funcției
 - Folosiți formula pentru a calcula aria
 - Imprimați rezultatul pe consolă
 
@@ -91,7 +91,7 @@ calculateArea(1)
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Currency Converter
+# Problemă cu Soluție: Currency Converter
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/problem2-currency-converter-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -99,7 +99,7 @@ calculateArea(1)
 [code-editor language="javascript"]
 ```
 function currencyConverter (input) {
-   // Scrieți codul dvs. aici
+   // Write your code here
 }
 ```
 [/code-editor]
@@ -115,11 +115,11 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Creați un program pentru a converti de la USD la EUR:
+Creați un program pentru a converti USD în EUR:
 
-* Veți primi un **număr cu virgulă mobilă**: **dolari** care urmează să fie convertiți
+* Veți primi un **număr în virgulă mobilă**: **dolari** care urmează să fie convertiți
 
-* Convertiți dolari în euro (utilizați rata fixă ​​de dolari în euro: **0,88**)
+* Convertiți dolarii în euro (utilizați rata fixă ​​de dolari în euro: **0,88**)
 
 * Imprimați valoarea convertită în **euro**
 
@@ -192,7 +192,7 @@ currencyConverter(12.0)
 [code-editor language="javascript"]
 ```
 function areaOfTriangle (input) {
-   // Scrieți codul dvs. aici
+   // Write your code here
 }
 ```
 [/code-editor]
@@ -206,12 +206,12 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Description
-Creați un program care obține un **unghi** în [radiane](https://en.wikipedia.org/wiki/Radian) and converts it to [degrees](https://en.wikipedia.org/wiki/Degree_(angle)). 
+# Descriere
+Creați un program care obține un **unghi** în [radiani](https://en.wikipedia.org/wiki/Radian) și îl convertește în [grade](https://en.wikipedia.org/wiki/Degree_(angle)). 
 
 Utilizați formula: 
 
-- **grade = radiane * 180 / π**
+- **grade = radiani * 180 / π**
 
 Numărul **π** în programele JavaScript poate fi accesat prun **Math.PI**. 
 Rotunjiți rezultatul la cel mai apropiat număr întreg, folosind **toFixed(0)**.
@@ -274,7 +274,7 @@ areaOfTriangle(3.1416)
 [code-editor language="javascript"]
 ```
 function daysToMinutes (input) {
-   // Scrieți codul dvs. aici
+   // Write your code here
 }
 ```
 [/code-editor]
@@ -290,9 +290,9 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Creați un program care covertează zilele în minute:
+Creați un program care covertește zilele în minute:
 
-* Veți primi un singur număr **întreg**: **zilele** de convertit
+* Veți primi un singur număr **întreg**: **zilele** care trebuie convertite
 
 * Convertiți zilele în minute
 
@@ -367,7 +367,7 @@ daysToMinutes(9)
 [code-editor language="javascript"]
 ```
 function circleArea (input) {
-   // Scrieți codul dvs. aici
+   // Write your code here
 }
 ```
 [/code-editor]
@@ -384,9 +384,9 @@ function adapter(input, code) {
 # Descriere
 Creați un program pentru a calcula aria și perimetrul unui **cerc**:
 
-* Veți primi un număr cu virgulă mobilă: **raza** unui cerc
+* Veți primi un număr în virgulă mobilă: **raza** unui cerc
    * calculați **aria** și **perimetrul** cercului
-   * imprimați zona și perimetrul, **formatat** la 2 cifre după punctul zecimal
+   * imprimați zona și perimetrul, **formatate** la 2 cifre după punctul zecimal
 
   ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -402,11 +402,11 @@ Creați un program pentru a calcula aria și perimetrul unui **cerc**:
 
 [hints]
 [hint]
-The formula for calculating a circle's perimeter is: P = 2 * π * R.
-"R" is the radius.
+Formula pentru a calcula perimetrul unui cerc este: P = 2 * π * R.
+"R" este raza.
 [/hint]
 [hint]
-Formula pentru calcularea aria unui cerc este: A = π * R * R.
+Formula pentru calcularea ariei unui cerc este: A = π * R * R.
 [/hint]
 [/hints]
 
@@ -479,7 +479,7 @@ Perimeter = 59.06
 [code-editor language="javascript"]
 ```
 function landscape(input){
-    // Scrieți codul dvs. aici
+    // Write your code here
 }
 ```
 [/code-editor]
@@ -494,13 +494,13 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Peter dorește să amenajeze teritoriul curții sale și de accea el a  yard, așa că a angajat o **companie** care să o facă pentru el.
+Peter dorește să amenajeze teritoriul curții sale, așa că a angajat o **companie** care să o facă pentru el.
 
 Creați un program care **calculează** fondurile necesare pe care Peter va trebui să le **plătească** pentru acest serviciu.
 
 Prețul pe metru pătrat este de **7.61 dolari** cu TVA.
 
-Deoarece curtea lui Peter este destul de **mare**, firma contractantă oferă o reducere de **18%** la prețul final.
+Deoarece curtea lui Peter este destul de **mare**, firma contractantă oferă o reducere de **18%** din prețul final.
 
 ## Intrare
 Funcția primește un argument:
@@ -541,7 +541,7 @@ Calculați reducerea și stocați rezultatul într-o variabilă.
 
 [hint]
 
-Scadeți reducerea din prețul total.
+Scădeți reducerea din prețul total.
 
 [/hint]
 [hint]
