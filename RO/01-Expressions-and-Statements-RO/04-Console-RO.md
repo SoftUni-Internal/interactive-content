@@ -5,7 +5,7 @@
 
 În general, **system console** reprezintă un terminal de text, ceea ce înseamnă că acceptă și vizualizează doar **text**, fără elemente grafice ca butoane, meniuri, etc. 
 
-Arată, de obicei, ca o fereastră colorată în negru ca aceasta.
+Arată, de obicei, ca o fereastră colorată în negru, ca aceasta:
 
 [image assetsSrc="00.Console-example.png" /]
 
@@ -13,7 +13,7 @@ In majoritatea cazurilor,  **consola** este o aplicație independentă în care 
 
 Este denumită **Command Prompt** în Windows și **Terminal** în Linux și Mac. 
 
-Consola rulează aplicații pentru consolă. Ele citesc text din liniile de comandă și imprimă textul pe consolă.
+Consola rulează aplicații pentru consolă. Ele citesc text din linia de comandă și imprimă textul pe consolă.
 
 Vom învăța să programăm, creând **aplicații de consolă**.
 
@@ -71,12 +71,12 @@ printNum(5);
 printNum(10);
 ```
 
-Din setările inițiale,  **input** este **text** – o linie de text, citită de consolă.
+Din setările inițiale,  **intrarea** este **text** – o linie de text, citită de consolă.
 - După ce citiți un text de pe consolă, puteți **parsa textul** la un număr prin `Number()`.
 
 - Dacă parsarea la un număr nu s-a putut realiza, **fiecare număr** va apărea ca **text**, și **nu vom putea** efectua operații aritmetice cu acesta.
 
-## Exemplu: Orașul Natal
+## Exemplu: Home Town
 Haideți să scriem un program care îi solicită utilizatorului să introducă numele orașului natal și imprimă textul `I am from {homeTown}!`.
 
 ```js live
@@ -132,7 +132,7 @@ console.log(firstNum);
 
 JavaScript ne permite să formatăm numerele în virgulă mobilă. 
 
-În exemplul următor vom formata numărul la două cifre după virgula de zecimale, folosind metoda `toFixed(2)` :
+În exemplul următor vom formata numărul la două cifre după punctul zecimal, folosind metoda `toFixed(2)` :
 
 ```js
 function calculateSquareArea(input) {
@@ -145,7 +145,7 @@ function calculateSquareArea(input) {
 ## Folosirea Interpolării Dollar String
 Putem formata text în JS folosind, de asemenea, următoarea sintaxă $. Aceasta ne oferă o metodă simplificată de formatare a textului.
 
-Încadrată de simbolurile back-tick (**\` \`**), în loc să fie scris între virgule sau ghilimele. 
+Este încadrat de simbolurile back-tick (**\` \`**), în loc să fie scris între virgule sau ghilimele. 
 
 Putem folosi simbolul dolarului și acolade (`${expression}`):
 ```js
@@ -176,7 +176,7 @@ Linia de sus a codului JS **citește un număr** de pe prima linie de pe consol�
 
 Dacă vrem să alocăm o valoare non-numerică acestei variabile, de exemplu `Hello`, vom primi rezultatul `NaN` care este acronimul de la **Not a number**. 
 
-## Exemplu: Calcularea Ariei Unui Pătrat
+## Exemplu: Calculating a Square Area
 Acest cod ne arată cum putem calcula aria unui pătrat în funcție de lungimea laturii acestuia: 
 
 ```js live
@@ -204,7 +204,7 @@ Aici, vedem cum funcționează programul dacă avem un pătrat cu latura egală 
 [code-editor language=javascript]
 ```
 function sayHello (name) {
-   // Scrieți codul dvs. aici
+   // Write your code here
 }
 ```
 [/code-editor]
@@ -219,7 +219,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care să citească datele de intrare din consolă: numele și apoi imprimați  "**Hello,** \{**name**\}", unde \{**name**\} este introdus de utilizator.  
+Creați un program care să citească numele utilizatorului din consolă și apoi imprimă  "**Hello,** \{**name**\}", unde \{**name**\} este introdus de utilizator.  
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
