@@ -10,7 +10,7 @@ Acțiunile pe care le aplică un program sunt exprimate ca **instrucțiuni**.
 
 JavaScript suportă **diferite** tipuri de instrucțiuni, iar mai jos enunțăm câteva dintre acestea:
 
-* **Declaration** statements: declară variabile locale și constantele
+* **Declaration** statements: declară constante și variabile locale
 
 * **Expression** statements: evaluează expresii
 
