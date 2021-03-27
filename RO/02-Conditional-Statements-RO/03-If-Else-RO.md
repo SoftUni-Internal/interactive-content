@@ -114,7 +114,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care verifică dacă un număr este **par sau impar**
+Creați un program care verifică dacă un număr este **par sau impar**.
 
 * Dacă este par, tipăriți "**even**"
 * Dacă este impar, tipăriți "**odd**"
