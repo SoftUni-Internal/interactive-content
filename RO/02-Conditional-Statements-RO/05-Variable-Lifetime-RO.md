@@ -15,7 +15,7 @@ Astfel, este important să știm că **orice variabilă definită în interiorul
 
 ## Domeniul Variabilei - Exemplu 
 
-În exemplul de mai jos, pe ultima linie încercăm să imprimăm variabila `salariu` care este definită în instrucțiunea `if` și vom primi o **eroare** deoarece nu avem acces la ea.
+În exemplul de mai jos, pe ultima linie încercăm să imprimăm variabila `salary` care este definită în instrucțiunea `if` și vom primi o **eroare** deoarece nu avem acces la ea.
 
 ```js
 let myMoney = 500;
