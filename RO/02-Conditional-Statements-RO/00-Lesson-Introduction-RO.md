@@ -12,7 +12,7 @@
 
 **1. Operatorii de Comparație**
 
-- Comparați valorile folosind operatorii de comparație.
+- Comparați valori folosind operatorii de comparație
 
 **2. Ce Reprezintă Instrucțiunile Condiționale:**
 
