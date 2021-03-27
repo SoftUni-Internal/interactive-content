@@ -11,18 +11,18 @@
 ## În această lecție veți învăța despre:
 
 **1. Instrucțiuni imbricate if-else**
-- `if-else` în interiorul altui` if-else` 
+- `if-else` în interiorul altui `if-else` 
 
 
-**2. Ce este o matrice?**
+**2. Matrice**
 - Citirea unei matrice
 
 
-**3. Operatorii Logici**
+**3. Operatori Logici**
 - Primii pași în limbajul JavaScript
 
 **4. Instrucțiunea Condițională switch-case**
-- Utilizarea mai multor etichete de caz în **switch-case**
+- Utilizarea mai multor etichete în **switch-case**
 
 **5. Exerciții Practice de Codificare**
 
