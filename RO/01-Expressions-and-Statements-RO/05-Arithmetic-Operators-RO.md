@@ -51,7 +51,7 @@ console.log(a * b);
 
 Tipul numerelor reprezintă **atât** numerele întregi (integer), cât și cele în virgulă mobilă (floating-point number). Nu există  **împărțire întreagă implicită**.
 
-* Dacă faceți acest lucru
+* Dacă faceți acest lucru:
 
 ```js live
 let result = 5/4;
@@ -78,9 +78,9 @@ console.log(result);
 
 În acest caz rezultatul este negativ. 
 
-* Răspunsul așteptat este -1, dar veți obține -2, în schimb
+* Răspunsul așteptat este -1, dar veți obține -2 în schimb
 
-* Rotunjirea în jos funcționează în sensul opus pentru numerele negative. 
+* Rotunjirea în jos funcționează în sensul opus pentru numerele negative
 
 O `instrucțiune if` poate repara această problemă:
 
@@ -122,7 +122,7 @@ console.log(f);
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-29-Arithmetic-operators-Modular-Division-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Operatorul pentru restul împărțirii `%` calculează restul de împărțire a operandului din stânga cu operandul din dreapta.
+Operatorul pentru restul împărțirii `%` calculează restul împărțirii operandului din stânga la operandul din dreapta.
 ```js live
 let a = 7;
 let b = 2;
