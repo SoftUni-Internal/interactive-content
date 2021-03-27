@@ -53,8 +53,7 @@ Implement the following features:
 **- getCapacity()** 
 **- count()** method– **returns** the **number** of presents 
 **- add(Present present)** method – **adds** an **entity** to the data if **there is room** for it 
-**- remove(String name)** method – removes an present by **given name**, if such **exists**,  
-- and **returns boolean** 
+**- remove(String name)** method – removes an present by **given name**, if such **exists**, and **returns boolean** 
 **- heaviestPresent()** method – returns the **heaviest** present 
 **- getPresent(String name)** method – returns the present with the **given name** 
 **- report()** method – **returns a string** in the following **format** (print the presents in order of appearance): 
