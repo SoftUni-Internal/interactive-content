@@ -3,13 +3,13 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-3-4-associative-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Associative arrays are collections that hold parameters in **Key** and **Value** pairs and are indexed by **Keys**. 
+Associative arrays are collections that hold parameters in **Key/Value** pairs and are indexed by **Keys**. 
 
 **The Key** represents **the index** of the map. The **Keys** and **Values** are **objects** and each pair is known as **an entry**.
 
 One object is used as a **Key** (index) to another object (**Value**). 
 
-They **can not** be **primitive types** like **int**, **double**, **boolean**, etc. 
+They **cannot** be **primitive types** like **int**, **double**, **boolean**, etc. 
 
 They **must be specified** with the equivalent **wrapper class**: **Integer**, **Double**, **Boolean**, etc. 
 
@@ -17,7 +17,7 @@ They **must be specified** with the equivalent **wrapper class**: **Integer**, *
 
 In Java, the associative arrays are called **Maps**. 
 
-A Map **cannot contain duplicate Keys**. Each **Key** can be associated to only one **Value**. 
+A Map **cannot contain duplicate Keys**. Each **Key** can be associated with only one **Value**. 
 
 **The Values of different Keys can be duplicated**. 
 
@@ -50,7 +50,7 @@ The Java Collections API contains several Map **implementations**, which allow a
 
 The most used **Map implementations** are **HashMap**, **LinkedHashMap** and **TreeMap**. 
 
-The **order** of a Map depends on the **chosen collection implementation**. 
+The **order** of entries of a Map depends on the **chosen collection implementation**. 
 
 Some **Map** implementations, like the **TreeMap** class, **guarantee a specific order**.
 
@@ -117,7 +117,7 @@ Map <Key, Value> shoppingList = new LinkedHashMap<>();
 Map <Key, Value> phoneBook = new TreeMap<>();
 ```
 
-It is important to know that once the types for the **Key** and the **Value** are set, they can not be changed.
+It is important to know that once the types for the **Key** and the **Value** are set, they cannot be changed.
 
 [/slide]
 
@@ -131,8 +131,6 @@ The **HashMap** class contains several built-in methods:
 
 - `put(K key, V value)` - Used for **adding items** (inserting an entry) in the Map 
 
-If the `put()` method is called more than once with the same Key, **the latest Value replaces the existing Value** for the given Key.
-
 ```java
 HashMap<String, Integer> airplanes = new HashMap<>();
 airplanes.put("Boeing 737", 130);
@@ -141,6 +139,8 @@ airplanes.put("Airbus A320", 150);
 airplanes.put("Boeing 737", 180);
 System.out.println(airplanes.get("Boeing 737"));
 ```
+
+In the example above, we modified the value associated with the same key twice, but you can see that only the last value that we added is stored.
 
 - `putIfAbsent(K key, V value)` - Used for **adding items** (inserting an entry) in the map if the specified **Key** is **not in the collection**
 
@@ -169,7 +169,7 @@ airplanes.remove("Boeing 737");
 System.out.println(airplanes.get("Boeing 737"));
 ```
 
-- `clear()` - Used to remove **all items (entries)** in the Map
+- `clear()` - Used to remove **all items (entries)** from the Map
 
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -208,7 +208,7 @@ System.out.println(airplanes.containsValue(150));
 System.out.println(airplanes.containsValue(100));
 ```
 
-- `isEmpty()` - Return `true` if the Map is **empty**, and `false` if it contains **at least one pair**
+- `isEmpty()` - Return `true` if the Map is **empty**, and `false` if it contains **at least one key/value pair**
 
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -237,11 +237,11 @@ System.out.println(airplanes.isEmpty());
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-11-iterating-through-map-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-When iterating through objects of type `Map.Entry <K, V>`, it is **impossible** to modify the collection(it is read-only).
+When iterating through objects of type `Map.Entry <K, V>`, it is **impossible** to modify the collection (it is read-only).
 
 There are several ways to iterate through the data that is stored in a **Map**.
 
-- Iterating through the items of a map, using a **for-each** loop
+- Iterating through the items of a map, using a **for-each** loop:
 
   - `keySet()` - obtains only the keys
 
@@ -435,7 +435,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that keeps few words and their synonyms.
+Create a program that stores words and their synonyms.
 
 For that purpose, create a Map.
 
@@ -447,7 +447,7 @@ The **value** will be a **list of all the synonyms of that word**.
 
 You will be given an integer number - `n`.
 
-On the next **2 * n** lines, you will be given a **word** and a **synonym** `n` times, each on a separate line:
+On the next **2 * n** lines, you will be given a **word** and **n** number of synonyms, each on a separate line:
 
 - \{**word**\}
 
@@ -654,7 +654,7 @@ public class Main {
 [task-description]
 ## Description
 
-You will be given a **string** that will contain few words, separated by a **single space**.
+You will be given a **string** that will contain a few words, separated by a **single space**.
 
 Create a program that finds all words that are **repeated an odd number of times** in the string. (case insensitive)
 
