@@ -34,7 +34,7 @@ while (command !== 'End') {
 
 În exemplul de mai sus, condiția este mereu adevărată (`true`), pentru că nu se schimbă niciodată.
 
-## Exemplu: Bucla finită (Depanarea erorii)
+## Exemplu: Bucla Finită (Depanarea Erorii)
 ```js
 let command = 'Add';
 while (command != 'End') {
@@ -44,5 +44,5 @@ while (command != 'End') {
 }
 ```
 
-În acest caz, valoarea variabilei "command" s-a modificat cu fiecare iterație, iar apariția **buclei infinite** a fost evitată. 
+În acest caz, valoarea variabilei "command" este modificată la fiecare iterație, iar apariția **buclei infinite** a fost evitată. 
 [/slide]
