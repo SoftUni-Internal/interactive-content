@@ -210,9 +210,7 @@ for (String word : words) {
 }
 ```
 
-Takes an input that is in the form of a String array. 
-
-Using the `map()` method, it appends "yyy" to every element of the array. 
+In the above example, we are using the `map()` method to gothrough the elements in the **words** array.
 
 `w -> w + "yyy"` means that this lambda function takes in one parameter, which can be named "w", "x", "e", "element" or any way you like and performs an operation on each element (in this case, concatenating a string to each).
 
