@@ -158,9 +158,11 @@ function adapter(input, code) {
 # Descriere
 Creați un program care procesează o secvență de numere și imprimă suma cifrelor acestora:
 
-*Veți primi ca intrare o matrice de numere
-*Imprimați suma cifrelor pentru fiecare număr:"**Sum of digits =** \{**sum**\}"
-*Atunci când ajungeți la comanda **END**, imprimați  **Goodbye**
+* Veți primi ca intrare o matrice de numere 
+
+* Imprimați suma cifrelor pentru fiecare număr: "**Sum of digits =** \{**sum**\}"
+
+* Atunci când ajungeți la comanda **END**, tipăriți: "**Goodbye**"
 
 
 # Exemplu
