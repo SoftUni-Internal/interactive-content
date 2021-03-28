@@ -18,7 +18,7 @@ Dacă folosiți bucle imbricate, această instrucțiune va opri executarea bucle
 [slide hideTitle]
 
 
-# Exemplu de Funcționare a Lui Break
+# Exemplu de Funcționare a Operatorului Break
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/05-While-Loop/05.PB-JavaScript-While-Loop-23-Example-with-break-operator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
