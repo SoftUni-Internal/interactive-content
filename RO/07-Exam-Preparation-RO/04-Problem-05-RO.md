@@ -10,7 +10,7 @@
 [code-editor language=javascript]
 ```
 function budget(input) {
-	// Scrieți codul dvs. aici
+	// Write your code here
 }
 ```
 [/code-editor]
@@ -25,6 +25,8 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
+Ați fost angajat de o companie TV să creați un program care să determine dacă este posibil pentru clienți să cumpere câteva dintre serialele TV ale acesteia.
+
 Unele seriale au aplicate reduceri:
 
 - **Thrones**: 50\%
@@ -36,15 +38,15 @@ Unele seriale au aplicate reduceri:
 ## Intrare
 Primiți de pe consolă:
 
-- Buget: un număr întreg în intervalul \[10.0… 100.0\]
+- Buget: un număr în virgulă mobilă în intervalul \[10.0… 100.0\]
 
-- Numărul de seriale: "**n**" – un număr întreg în intervalul \[1… 10\]
+- Numărul "**n**" de seriale: un număr întreg în intervalul \[1… 10\]
 
-Pentru fiecare serie primiți două elemente:
+Pentru fiecare serial primiți două elemente:
 
 - Numele serialului: un șir
 
-- Prețul serialului: un număr real în intervalul \[1.0… 15.0\]
+- Prețul serialului: un număr în virgulă mobilă în intervalul \[1.0… 15.0\]
 
 ## Ieșire
 Imprimați o linie pe consolă:
@@ -59,7 +61,7 @@ Imprimați o linie pe consolă:
 
 Rezultatul trebuie să fie formatat la două cifre după punctul zecimal. 
 
-## Example
+## Exemplu
 
 | **Intrare** | **Ieșire** |
 | --- | --- |
@@ -69,11 +71,11 @@ Rezultatul trebuie să fie formatat la două cifre după punctul zecimal.
 [hints]
 
 [hint]
-După primirea bugetului și a numărului de serii, determinați dacă seriile din intrare au o reducere.
-Apoi, calculați prețul pentru fiecare serie.
+După primirea bugetului și a numărului de seriale, determinați dacă serialele din intrare au o reducere.
+Apoi, calculați prețul pentru fiecare serial.
 [/hint]
 [hint]
-Calculați prețul pentru toate seriile și verificați dacă le puteți cumpăra.
+Calculați prețul pentru toate serialele și verificați dacă le puteți cumpăra.
 [/hint]
 
 [/hints]
