@@ -8,9 +8,9 @@
 
 Este bine de știut că **buclele for** nu funcționează doar cu numere.
 
-De asemenea, putem folosi **buclele for** pentru a itera peste**caractere**.
+De asemenea, putem folosi **buclele for** pentru a itera peste **caractere**.
 
-Iată un exemplu despre cum o buclă poate trece secvențial prin unele **litere** din alfabetul englez:
+Iată un exemplu despre cum o buclă poate trece secvențial prin **literele** alfabetului limbii engleze:
 
 ```js live
 function latinLetters(startChar, endChar) {
@@ -26,11 +26,11 @@ function latinLetters(startChar, endChar) {
 latinLetters('a', 'k') 
 ```
 
-## ASCII Table
+## Tabelul ASCII 
 
 **ASCII** înseamnă American Standard Code for Information Interchange.
 
-Calculatoarele pot înțelege numai numerele, deci un cod **ASCII** este reprezentarea numerică a unui caracter precum `a` sau `@` sau o acțiune de un fel.
+Calculatoarele pot înțelege numai numere, deci un cod **ASCII** este reprezentarea numerică a unui caracter precum `a` sau `@` sau o acțiune de un fel.
 
 Acesta este un exemplu de parte a tabelului:
 
@@ -48,13 +48,13 @@ Acesta este un exemplu de parte a tabelului:
 |   73    |   49    |    I     |   105   |   69    |    i     |
 |   74    |   4A    |    J     |   106   |   6A    |    j     |
 
-Și aici puteți verifica întregul [Tabel ASCII](http://www.asciitable.com)
+Aici puteți verifica întregul [Tabel ASCII](http://www.asciitable.com)
 
-Coloanele pe care le-ați folosi cel mai probabil în scopul acestui curs sunt cele **zecimale** și **charactere**.
+Coloanele pe care le-ați folosi cel mai probabil în scopul acestui curs sunt cele **zecimale** și cele pentru **caractere**.
 
 De exemplu, valoarea zecimală a caracterului "**a**" este **97** și cea corespunzătoare lui `@` este `64`.
 
-## Conversii de caractere
+## Conversii de Caractere
 
 Convertiți un număr ASCII / Unicode într-un caracter:
 
@@ -84,7 +84,7 @@ console.log(asciiValue);
 
 ```
 function latinLetters(startChar, endChar) {
-    // Scrieți codul dvs. aici
+    // Write your code here
 }
 
 ```
@@ -102,12 +102,15 @@ function adapter(input, code) {
 
 [/code-adapter]
 [task-description]
+
+# Descriere
+
 Creați un program care imprimă toate literele dintr-un interval dat:
 
-- Primiți 2 litere
-- Imprimați toate literele din intervalul dat inclusiv
+- Veți primi 2 litere care semnifică începutul și sfârșitul intervalului
+- Imprimați toate literele din intervalul dat, inclusiv cele 2 litere primite
 
-# Example
+# Exemplu
 
 | **Intrare**              | **Ieșire** |
 | ---------------------- | ---------- |
