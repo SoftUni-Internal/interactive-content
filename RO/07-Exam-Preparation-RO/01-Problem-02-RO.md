@@ -10,7 +10,7 @@
 [code-editor language=javascript]
 ```
 function timeForLunch(input) {
-	// Scrieți codul dvs. aici
+	// Write your code here
 }
 ```
 [/code-editor]
@@ -27,9 +27,9 @@ function adapter(input, code) {
 # Descriere
 În timpul pauzei de prânz vreți să vedeți un episod din serialul TV preferat. 
 
-Ceea ce trebuie să faceți, este să scrieți un program care să vă ajute să aflați dacă aveți timp suficient să vedeți un întreg episod. 
+Ceea ce trebuie să faceți este să scrieți un program care să vă ajute să aflați dacă aveți timp suficient să vedeți un episod complet. 
 
-În pauza de masă trebuie să aveți timp să mâncați și să vă odihniți. 
+În pauza de masă trebuie să aveți timp **să mâncați** și **să vă odihniți**. 
 
 Știți că timpul de care aveți nevoie pentru a vă mânca prânzul este exact 1\/8 (**o optime**) din timpul de pauză și că timpul de care aveți nevoie pentru vă odihni este exact 1\/4 (**un sfert**) din întreaga pauză de masă.
 
@@ -41,9 +41,9 @@ Ca intrare veți primi 3 elemente de pe consolă:
 - Durata pauzei: un număr întreg în intervalul \[10… 120\]
 
 ## Ieșire
-Rezultatul ar trebui să fie format dintr-o singură linie:
+Rezultatul trebuie să fie format dintr-o singură linie:
 
-- În cazul în care este timp suficient pentru a viziona un întreg episod: 
+- În cazul în care este timp suficient pentru a viziona un episod complet: 
 
 "**You have enough time to watch** \{**name of the series**\} **and would be left with** \{**time left**\} **minutes of free time.**"
 
@@ -51,9 +51,9 @@ Rezultatul ar trebui să fie format dintr-o singură linie:
 
 "**You don't have enough time to watch** \{**name of the series**\}**, you need** \{**time needed**\} **more minutes.**"
 
-Round the time up to the nearest whole number.
+Rotunjiți timpul în sus la cel mai apropiat număr întreg.
 
-## Example
+## Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
 |timeForLunch(['Game of Thrones', 60, 96])| You have enough time to watch Game of Thrones and would be left with 0 minutes of free time.|
@@ -62,7 +62,7 @@ Round the time up to the nearest whole number.
 [hints]
 
 [hint]
-Strabiliți timpul necesar pentru prânz.
+Stabiliți timpul necesar pentru prânz.
 [/hint]
 
 [hint]
