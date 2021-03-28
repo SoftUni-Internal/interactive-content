@@ -9,7 +9,7 @@
 [code-editor language=javascript]
 ```
 function tvSeries(input) {
-   // Scrieți codul dvs. aici
+   // Write your  code here
 }
 ```
 [/code-editor]
@@ -26,9 +26,9 @@ function adapter(input, code) {
 # Descriere
 Scrieți un program care calculează cât timp vă va lua să vedeți toate episoadele unui serial TV, în minute.
 
-Ca date de intrare, veți primi un număr de episoade, numărul de episoade din fiecare sezon și durata fiecărui episod. 
+Ca date de intrare, veți primi un număr de sezoane, numărul de episoade din fiecare sezon și durata fiecărui episod. 
 
-In fiecare episod este inclusă o reclamă, ceea ce mărește durata episodului cu 20\%.
+În fiecare episod este inclusă o reclamă, ceea ce mărește durata episodului cu 20\%.
 
 Trebuie să rețineți și faptul că fiecare sezon se încheie cu un episod special care este mai lung cu 10 minute decât celelalte.
 
@@ -42,15 +42,15 @@ Ca intrare veți primi 4 elemente de consolă:
 
 - Numărul episoadelor: un număr întreg în intervalul \[10... 80\]
 
-- Durata unui episod standard fără reclame: dublă în intervalul \[40.0...65.0 \]
+- Durata unui episod standard fără reclame: număr în virgulă mobilă în intervalul \[40.0...65.0 \]
 
 ## Ieșire
 
-Imprimați pe consolă timpul necesar pentru a viziona toate episoadele, rotunjite la cel mai apropiat număr întreg în următorul format:
+Imprimați pe consolă timpul necesar pentru a viziona toate episoadele, rotunjit în jos la cel mai apropiat număr întreg în următorul format:
 
 "**Total time needed to watch the** \{**name of the series**\} **series is** \{**time**\} **minutes.**"
 
-# Example
+# Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
 |tvSeries(['Lucifer', 3, 18, 55])| Total time needed to watch the Lucifer series is 3594 minutes.|
@@ -59,7 +59,7 @@ Imprimați pe consolă timpul necesar pentru a viziona toate episoadele, rotunji
 [hints]
 
 [hint]
-Calculați durata reclamelor pe un episod.
+Calculați durata reclamelor dintr-un episod.
 [/hint]
 [hint]
 
