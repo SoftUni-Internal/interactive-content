@@ -15,7 +15,7 @@ The **left** side of the operator specifies the **input** parameters.
 
 The **right** side holds the method body of the lambda function - **expression** or **statement**.
 
-Instead of creating a method that accepts an integer parameter `int a`, and then returns whether `a` is larger than **5** or not, it is possible to create a labda expression that will look like this:  
+Instead of creating a method that accepts an integer parameter `int a`, and then returns whether `a` is larger than **5** or not, it is possible to create a lambda expression that will look like this:  
 
 ```java
 (a -> a > 5)
@@ -47,7 +47,7 @@ static int function() {
 }
 ```
 
-If the lambda function requires more than one input parameter, the parameters are placed between parantheses `()`.
+If the lambda function requires more than one input parameter, the parameters are placed between parentheses `()`.
 
 If it does not require any input parameters, we add an empty pair of parentheses `()`.
 
