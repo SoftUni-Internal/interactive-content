@@ -8,7 +8,7 @@
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-17-18-nested-for-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-Buclele imbricate sunt instrucțiuni care constă în mai multe bucle for situate una în cealaltă
+Buclele imbricate sunt instrucțiuni care constă în mai multe bucle for situate una în cealaltă.
 
 Buclele for sunt folosite:
 
@@ -28,7 +28,7 @@ for (variable initialization; condition; increment) {
 }
 ```
 
-Iată un exemplu de 3 bucle  `for` imbricate una în alta: 
+Iată un exemplu de 3 bucle `for` imbricate una în alta: 
 
 
 ```js live
@@ -73,7 +73,7 @@ for (let r = 0; r <= rows; r++) {
 [code-editor language=javascript]
 ```
 function triangleOfStars(input) {
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -91,8 +91,8 @@ function adapter(input, code) {
 # Descriere
 Creați un program care care imprimă un triunghi de stele cu o anumită dimensiune:
 
-* Primiți **înălțimea** unui triunghi de pe consolă
-* Tipărește un **triunghi de stele**
+* Veți primi **înălțimea** unui triunghi de pe consolă
+* Tipăriți un **triunghi de stele**
 
 # Exemplu
 | **Intrare** | **Ieșire**| 
