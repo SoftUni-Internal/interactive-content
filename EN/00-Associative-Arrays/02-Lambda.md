@@ -5,7 +5,7 @@
 
 A lambda expression is an **anonymous function** that contains **expressions and statements**. 
 
-It is similar to a method, but it **does not need a name** and it can be implemented right in the body of a method, which can save us a lot of time and improve the code readability.
+It is similar to a method, but it **does not need a name** and it can be implemented directly in the body of a method, which can save us a lot of time and improve code readability.
 
 A lambda function is a **short block of code** that takes in parameters and returns a value.
 
@@ -47,8 +47,8 @@ static int function() {
 }
 ```
 
-If the lambda function requires more than one input parameter, we need to type them in parentheses `()`.
+If the lambda function requires more than one input parameter, the parameters are placed between parantheses `()`.
 
-If it does not require any input parameters, we need to type only parentheses `()`.
+If it does not require any input parameters, we add an empty pair of parentheses `()`.
 
 [/slide]
