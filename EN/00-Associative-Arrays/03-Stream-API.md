@@ -262,7 +262,7 @@ int[] numbers = Arrays.stream(scanner.nextLine()
             .toArray();
 ```
 
-In the above example we are accepts input from the console, spliting it by space, parsing each element to Integer, then filtering and storings only elements that are greater than 0.
+In the above example we are spliting the scanner input by space, parsing each element to Integer, then filtering and storings only elements that are greater than 0.
 
 [/slide]
 
