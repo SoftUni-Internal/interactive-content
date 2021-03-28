@@ -1,5 +1,5 @@
 // sectionId: "Javascript::Programming-Basics::Exam-Preparation::Problem-03"
-# Problem 3: Cinema
+# Problema 3: Cinema
 [slide hideTitle]
 # Cinema
 
@@ -11,7 +11,7 @@
 [code-editor language=javascript]
 ```
 function cinema(input) {
-	// Scrieți codul dvs. aici
+	// Write your code here
 }
 ```
 [/code-editor]
@@ -26,7 +26,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Pentru viitoarele premiere ale 3 din celor mai așteptate producții de cinema locale ați fost angajat să creați un program care calculează prețul pe care clienții lor trebuie să-l plătească, în funcție de film și de oferta pe care au ales-o.
+Pentru viitoarele premiere ale trei producții așteptate, un cinematograf local v-a angajat să creați un program care calculează prețul pe care clienții lor trebuie să-l plătească, în funcție de film și de oferta pe care au ales-o.
 
 | \- | **John Wick**      | **Star Wars** | **Jumanji**   |
 |:---:    | :---:       |    :----:   |   :---:     |
@@ -36,21 +36,21 @@ Pentru viitoarele premiere ale 3 din celor mai așteptate producții de cinema l
 
 Scrieți un program care calculează care este prețul total pe care trebuie să-l plătească un client. 
 
-Sunt, de asemenea, reduceri promoționale disponibile pentru două dintre filme:
+Există, de asemenea, reduceri promoționale disponibile pentru două dintre filme:
 
-- Dacă filmul ales este "**Star Wars**" și sunt cumpărate cel puțin patru bilete, este aplicată o reducere de 30\% pe familie.
+- Dacă filmul ales este "**Star Wars**" și sunt cumpărate cel puțin 4 bilete, este aplicată o reducere de familie de 30\%.
 
-- Dacă filmul ales este "**Jumanji**" și sunt cumpărate exact 2 bilete, se aplică o reducere de 15\% pe cuplu.
+- Dacă filmul ales este "**Jumanji**" și sunt cumpărate exact 2 bilete, se aplică o reducere de cuplu de 15\%.
 
 ## Intrare
 
 Ca intrare veți primi 3 elemente de consolă:
 
-- Linia 1: film - șir: "**John Wick**", "**Star Wars**" or "**Jumanji**"
+- Un șir, reprezentând numele filmului: "**John Wick**", "**Star Wars**" sau "**Jumanji**"
 
-- Linia 2: ofertă - șir: "**Drink**", "**Popcorn**" or "**Menu**"
+- Un șir, reprezentând consumabilele: "**Drink**", "**Popcorn**" sau "**Menu**"
 
-- Linia 3: număr de bilete  – un număr întreg în intevalul \[1… 30\]
+- Un număr, reprezentând numărul de bilete  – un număr întreg în intevalul \[1… 30\]
 
 ## Ieșire
 
@@ -58,9 +58,9 @@ Imprimați o linie pe consolă:
 
 "**Your bill is** \{**total price**\}$"
 
-* Prețul ar trebui fomratat la două cifre după punctul zecimal
+* Prețul trebuie formatat la a doua cifră după punctul zecimal
 
-## Example
+## Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
 |cinema(['John Wick', 'Drink', 6])| Your bill is 72.00$|
