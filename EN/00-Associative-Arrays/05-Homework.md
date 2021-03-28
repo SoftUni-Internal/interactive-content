@@ -431,7 +431,7 @@ public class Main {
 ## Description
 Create a program, which keeps information about **products and their prices**.
 
-Each product has **a name, a price and its quantity**.
+Each product has **a name, a price, and quantity**.
 
 If the **product doesn't exist** yet, **add it with its starting quantity**.
 
@@ -441,13 +441,13 @@ If the **price is different, replace the price as well**.
 
 You will receive **the names, the prices and the quantities of products on new lines**. 
 
-Until you receive the **command** "**buy**", keep adding items.
+Until you receive the "**buy**" **command**, keep adding items.
 
-When you do receive the command "**buy**", **print** the **items** with their **names** and **total price** of all the products with that name. 
+When you receive the "**buy**" command, **print** the **items** with their **names** and **total price** of all the products with the same name. 
 
 ### Input
 
-- Until you receive "**buy**", the products come in the following **format**: "\{**name**\} \{**price**\} \{**quantity**\}"
+- Until you receive "**buy**", you will receive products in the following **format**: "\{**name**\} \{**price**\} \{**quantity**\}"
 - The information about a product is always separated by a single space
 
 ### Output
@@ -693,8 +693,8 @@ After executing all of the commands, print out the **names of all currently regi
 - "\{**username**\} \=\> \{**licensePlateNumber**\}"
 
 ### Input
-- On the first line, you will receive an integer **n** – number of commands
-- On the next **n** lines: commands in one of the two possible formats:
+- On the first line, you will receive an integer **n** – the number of commands
+- On the next **n** lines - commands in one of the two possible formats:
     - Register: "**register** \{**username**\} \{**licensePlateNumber**\}"
     - Unregister: "**unregister** \{**username**\}"
 
@@ -928,9 +928,9 @@ Create a program that keeps information about some **courses**.
 
 Each course has a **name** and **registered students**.
 
-You will be receiving **a course name and a student name**, until you receive the "**end**" command. 
+You will be receiving **a course name and a student name** until you receive the "**end**" command. 
 
-**Check** if such **course already exists**, and if **not**, **add the course**. 
+**Check** if such **a course already exists**, and if **not**, **add the course**. 
 
 **Register** the **user** into the **course**. 
 
@@ -1199,7 +1199,7 @@ Then, you will receive **2 * n** rows of input.
 
 First, you will receive the **student's name**. Аfter that, you will receive their **grade**. 
 
-If the **student does not exists**, **add** them. 
+If the **student does not exist**, **add** them. 
 
 Keep track of **all of the grades of each student**.
 
@@ -1843,9 +1843,9 @@ The program ends when you receive the "**End**" command.
 
 ### Output
 
-- Print out the **names of all force sides** ordered by the count of their force users in descending order, and then by their names in ascending order
+- Print out the **names of sides of the force** ordered by the count of their force users in descending order, and then by their names in ascending order
 
-- For each side, print out **the names of all force users** that participate in it, ordered by their names
+- For each side, print out **the names of all force users** that are part of it, ordered by their names
 
 - The output format is:
 
@@ -1854,7 +1854,7 @@ The program ends when you receive the "**End**" command.
 ! \{**forceUser**\}
 ! \{**forceUser**\}"
 
-- In case **there are not force users** who participate in the specified side, you should not print the information about this side.
+- In case **there are not force users** who are in the specified side, you should not print the information about this side of the force at all.
 
 ### Examples
 | **Input** | **Output** |
@@ -1865,7 +1865,7 @@ The program ends when you receive the "**End**" command.
 | | ! George |
 
 ### Comments
-We register George in the Light side, and Peter in the Dark side.
+We register George on the Light side, and Peter on the Dark side.
 
 After receiving "**End**", we print both sides, ordered by the count of their users, and then ordered by their names.
 
@@ -1884,7 +1884,7 @@ Although John does not have a profile, we register him and we add him to the Lig
 
 We remove Dean from the Darker side, and we add him to Lighter side.
 
-We print only the information about the Lighter side, because th Darker side has no members.
+We print only the information about the Lighter side, because the Darker side has no members.
 
 [/task-description]
 [code-io /]
@@ -2096,7 +2096,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that keeps information about all submissions made by few participants, and prints the final results and statistics about each language that the participants submitted their solutions in.
+Create a program that keeps information about exam submissions, and prints the final results and statistics about each language that the participants submitted their solutions in.
 
 You will be receiving lines of input in the following format: "\{**username**\}-\{**language**\}-\{**points**\}", until you receive "**exam finished**". 
 
@@ -2132,7 +2132,7 @@ The points of the participant will always be a valid integer in the range \[0-10
 \{**username**\} \| \{**points**\}
 ..."
 
-- After that, print **all language used in the exam**, ordered by their total **submissions count** in descending order, and then by their **names** in the following format:
+- After that, print **all programming languages used in the exam**, ordered by total **submissions count** in descending order, and then by their **names** in the following format:
 
 "**Submissions:**
 \{**language**\} - \{**submissionsCount**\}
@@ -2151,7 +2151,7 @@ The points of the participant will always be a valid integer in the range \[0-10
 ### Comments
 Mike is banned, so he is removed from the contest, but his submissions are still preserved in the submissions count. 
 
-Therefore, there are only 2 participants in the results, and there are 4 submissions in total.
+We are only printing the names of two participants (who did not cheat), and there are 4 submissions in total.
 
 [/task-description]
 [code-io /]
