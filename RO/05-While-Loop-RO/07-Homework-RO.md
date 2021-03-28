@@ -3,7 +3,7 @@
 # Teme Pentru Acasă
 
 [slide hideTitle]
-# Problemă și Soluție: Sum Digits
+# Problemă cu Soluție: Sum Digits
 
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/05-While-Loop/05.PB-JavaScript-While-Loop-27-28-Sum-Digits-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
@@ -14,7 +14,7 @@
 [code-editor language=javascript]
 ```
 function sumDigits(input) {
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -114,7 +114,7 @@ sumDigits(8)
 [/slide]
 
 [slide hideTitle]
-# Problemă și Soluție: Favorite Book
+# Problemă cu Soluție: Favorite Book
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/05-While-Loop/05.PB-JavaScript-While-Loop-30-Solution-Favourite-Book-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -124,7 +124,7 @@ sumDigits(8)
 [code-editor language=javascript]
 ```
 function favoriteBook(favoditeBook, books) {
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -145,7 +145,7 @@ Creați un program care găsește o anumită **carte preferată** dintr-o matric
 * Apoi, veți primi titluri de cărți până ce ajungeți la cartea preferată
 * Tipăriți "**Invalid book:** \{**book title**\}" pentru toate cărțile nevalide
 * Imprimați "**Book found!**" când întâlniți titlul cărții preferate
-* Rupeți bucla după ce ajungeți la cartea preferată
+* Întrerupeți bucla după ce ajungeți la cartea preferată
 
 # Exemplu
   | **Intrare** | **Ieșire** |
@@ -257,7 +257,7 @@ Book found!
 [code-editor language=javascript]
 ```
 function minAndMax(input) {
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -274,7 +274,7 @@ function adapter(input, code) {
 # Descriere
 Creați un program care găsește **cel mai mare** și **cel mai mic** număr dintr-o secvență: 
 
-* Primiți numere întregi până când ajungeți la comanda **END**
+* Veți primi numere întregi până când ajungeți la comanda **END**
 * Imprimați **cel mai mare** și cel mai **mic** număr întreg
 
 # Exemplu
@@ -376,7 +376,7 @@ Min number: -5
 [code-editor language=javascript]
 ```
 function specialNumber(input) {
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -391,15 +391,15 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care verifică dacă un număr este special
+Creați un program care verifică dacă un număr este special:
 
-* Primiți un șir
+* Veți primi un număr sub formă de șir
 
 * **Tipăriți** "\{**num**\} **is special**", dacă numărul este special
 
 * Altfel, imprimați "\{**num**\} **is not special**" 
 
-Numărul special este numărul **divizibil la toate cifrele sale componente** fără rest. 
+Numărul special este numărul **divizibil cu toate cifrele sale componente** fără rest. 
 
 # Exemplu
 | **Intrare** | **Ieșire** |
@@ -485,7 +485,7 @@ specialNumber('88')
 [code-editor language=javascript]
 ```
 function specialBonus(n, numbers) {
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 
 ```
@@ -501,10 +501,10 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care calculează punctele de bonus, pe baza următoarelor reguli: 
+Creați un program care calculează punctele bonus, pe baza următoarelor reguli: 
 
 * Veți primi un număr **întreg** **x** și o **matrice** de pe consolă
-* Continuați să procesați numerele întregi din matrice până când găsiți **același cu x**
+* Continuați să procesați numerele întregi din matrice până când găsiți **un număr egal cu x**
 * Când îl găsiți, înmulțiți valoarea numărului **dinaintea acestuia** cu 2 și imprimați-l
 
 # Exemplu
@@ -600,7 +600,7 @@ specialBonus(11, [345, 546546756, 11, 456, 456])
 [code-editor language=javascript]
 ```
 function sequence(input) {
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 
 ```
@@ -616,11 +616,11 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care imprimă o secvență de numere până la intrarea dată, pe baza următoarelor reguli: 
+Creați un program care imprimă o secvență de numere până la valoarea intrării date, pe baza următoarelor reguli: 
 
 * Veți primi un număr **n** de pe consolă
 * Imprimați o **secvență** de numere, care sunt **mai mici sau egale cu n** (**<= n**) și satisfac următoarea condiție:
-  * fiecare număr este egal cu numărul anterior înmulțit cu doi (**2**) la care se adaugă o unitate (**1**)
+  * fiecare număr este egal cu numărul anterior înmulțit cu **2**, la care se adaugă **1**
 
 # Exemplu
   | **Intrare** | **Ieșire** |
@@ -739,7 +739,7 @@ sequence(10000)
 [code-editor language=javascript]
 ```
 function accountBalance(input) {
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 
 ```
@@ -758,8 +758,8 @@ function adapter(input, code) {
 Creați un program care gestionează soldul unui cont: 
 
 * Veți primi **suma de bani** pentru fiecare tranzacție până când ajungeți la comanda **END**
-* **Adunați** banii la **sold** și **tipăriți**: "**Increase:** \{**money**\}", formatați **money** până la a **doua zecimală** după virgulă
-* După **END** calculați și **imprimați** soldul total: "**Total:** \{**balance**\}", formatați **balance** până la a **doua zecimală** după virgulă
+* **Adunați** banii la **sold** și **tipăriți**: "**Increase:** \{**money**\}", formatați **money** până la a **doua cifră** după punctul zecimal
+* După **END** calculați și **imprimați** soldul total: "**Total:** \{**balance**\}", formatați **balance** până la a **doua cifră** după punctul zecimal
 
 # Exemplu
   | **Intrare** | **Ieșire** |
