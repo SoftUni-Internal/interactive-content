@@ -1,13 +1,13 @@
 // sectionId: "Javascript::Programming-Basics::Nested-Loops::Nested-While-Loops"
 
 [slide hideTitle]
-# Bucle Imbricate
+# Bucle Imbricate While
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-22-23-nested-wihle-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Folosirea buclelor imbricate "**while**" este foarte asemănătiare cu folosirea lui "**for**".
+Folosirea **buclelor imbricate while** este foarte asemănătoare cu folosirea lui **for**.
 
-Iată cum arată sintaxa in JS:
+Iată cum arată sintaxa în JS:
 
 ```js
 while (condition) {
@@ -42,7 +42,7 @@ while (row <= 2) {
 [/slide]
 
 [slide hideTitle]
-# Problemă cu Soluție: Triangle with Stars Stelelor with While
+# Problemă cu Soluție: Triangle of Stars with While
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-25-26-solution-triangle-of-stars-with-while-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -50,7 +50,7 @@ while (row <= 2) {
 [code-editor language=javascript]
 ```
 function triangleOfStars(input) {
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -65,9 +65,9 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care imprimă un triunghi de stele cu o anumită dimensiune
+Creați un program care imprimă un triunghi de stele cu o anumită dimensiune:
 
-* Primiți **înălțimea** unui triunghi de pe consolă 
+* Veți primi **înălțimea** unui triunghi de pe consolă 
 * Imprimați un **un triunghi de stele** pe consolă
 
 # Exemplu
@@ -133,7 +133,7 @@ triangleOfStars(8)
 
 
 [slide hideTitle]
-# Problemă cu soluție: Sum of Digits Calculator
+# Problemă cu Soluție: Sum of Digits Calculator
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-29-solution-sum-of-digits-calculator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -141,7 +141,7 @@ triangleOfStars(8)
 [code-editor language=javascript]
 ```
 function sumOfDigits(inputLines) {
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -156,10 +156,9 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care procesează o secvență de numere și imprimă suma cifrelor acestoa 
-Citiți continuu numerele, până când este introdus **End**:
+Creați un program care procesează o secvență de numere și imprimă suma cifrelor acestora:
 
-*Primiți ca intrare o matrice de numere
+*Veți primi ca intrare o matrice de numere
 *Imprimați suma cifrelor pentru fiecare număr:"**Sum of digits =** \{**sum**\}"
 *Atunci când ajungeți la comanda **END**, imprimați  **Goodbye**
 
