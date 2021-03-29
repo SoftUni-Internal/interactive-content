@@ -1207,7 +1207,7 @@ Creați un program care imprimă toate numerele dintr-un interval care sunt divi
 
 | **Intrare**   | **Ieșire**   |
 | ----------- | ----------- |
-| solve(10, 20)   | The sum: 165                                |
+| solve(10, 20)   | The sum: 18                                 |
 |                 | 18                                          |
 
 [/task-description]
@@ -1226,7 +1226,7 @@ The sum: 1683
 solve(10, 20)
 [/input]
 [output]
-The sum: 165
+The sum: 18
 18
 [/output]
 [/test]
