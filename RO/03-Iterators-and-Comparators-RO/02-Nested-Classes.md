@@ -10,7 +10,7 @@ Scopul claselor imbricate este să **group classes that belong together**, care 
 - Exemple de Clase Imbricate:
 
 ```java live no-template
-class OuterClass {
+public class OuterClass {
     int x = 10;
 
     class InnerClass {
