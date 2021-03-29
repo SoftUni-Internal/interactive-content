@@ -20,11 +20,8 @@ function hello() {
 [/code-editor]
 [task-description]
 
-## Description
 
-Create a JavaScript program, which:
-
-Prints "**Hello JavaScript**" to the console.
+Create a program that prints "**Hello JavaScript**" to the console.
 
 [/task-description]
 [code-io /]
@@ -58,12 +55,11 @@ function calculate() {
 [/code-editor]
 [task-description]
 
-## Description
 
-Create a JavaScript program, which:
+Create a program that:
 
-- Calculates the value of `5 * 5`
-- Prints the result
+- Calculates the product of the following multiplication: `5 * 5`
+- Prints out the result
 
 [/task-description]
 [code-io /]
@@ -78,6 +74,7 @@ Create a JavaScript program, which:
 [/tests]
 [/code-task]
 [/slide]
+
 
 [slide hideTitle]
 
@@ -95,9 +92,7 @@ function nameAndExpression() {
 [/code-editor]
 [task-description]
 
-## Description
-
-Create a program to print "**Catlyn**" on the first line and calculate and print the result of the expression `5 + 3` on the second line
+Create a program that prints out "**Catlyn**" on the first line, and calculates and prints the result of the expression `5 + 3` on the second line.
 
 [/task-description]
 [code-io /]
@@ -130,13 +125,13 @@ function calculations() {
 [/code-editor]
 [task-description]
 
-## Description
+Create a program that calculates and prints out the results of the following expressions:
 
-Create a program, which calculates and prints the value of the following expressions:
 
 - 5 \+ 3 \* 2
 - 4 \* (2 \+ 3)
 - (2 \+ 5)  \*  (8 \- 2) \/ 7
+
 
 [/task-description]
 [code-io /]
@@ -154,6 +149,7 @@ Create a program, which calculates and prints the value of the following expres
 [/code-task]
 [/slide]
 
+
 [slide hideTitle]
 
 # Problem: Square of 7 * 7 Stars
@@ -170,11 +166,8 @@ function squareOfStars() {
 [/code-editor]
 [task-description]
 
-## Description
+Create a program that prints out a square of 7 \* 7 stars like in the following example:
 
-Create a program, which:
-
-Prints a square of 7 \* 7 stars like this:
 
 ```
 * * * * * * *
