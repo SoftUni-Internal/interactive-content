@@ -40,7 +40,7 @@ int genRandomInt() {
 
 ```
 
-Metoda funcțională a a unei interfețe  `Supplier<T>` este `.get()` method.
+Metoda funcțională a a unei interfețe `Supplier<T>` este `.get()` method.
 
 
 ``` java
@@ -104,7 +104,7 @@ Utilizați un `Predicate<String>` ca **if-condition**.
 
 
 
-## Exemple
+## Exemplu
 
 
 | **Intrare**|**Ieșire**|
@@ -248,7 +248,7 @@ Ordinea prețurilor trebuie să rămână aceeași.
 
 
 
-## Exemples
+## Exemplu
 
 
 | **Intrare**|**Ieșire**|

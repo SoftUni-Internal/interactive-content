@@ -17,20 +17,20 @@ ceea ce înseamnă că în loc să fie descris un algoritm dezvoltatorii funcți
 
 Ce este o **funcție pură**?
 
-- Este o funcție, care returnează o valoare **determinată numai de intrarea sa**, fără **efecte secundare**.
+- Este o funcție, care returnează o valoare **determinată numai de intrarea sa**, fără **efecte secundare**
 
 - Imprimarea codului la consola sau stocarea datelor într-o bază de date sunt exemple de efecte secundare
 
-- Prin urmare, utilizarea **programării funcționale pure** este adesea **nepractică**.
+- Prin urmare, utilizarea **programării funcționale pure** este adesea **nepractică**
 
-- Limbile moderne folosesc **elemente de programare de stil funcțional** și nu sunt pur funcționale.
+- Limbile moderne folosesc **elemente de programare de stil funcțional** și nu sunt pur funcționale
 
 Exemple de **funcții pure** sunt:
 
 ## `f(x) = √x` 
-- Funcția rădăcină pătrată: **"sqrt of x"**, care ia un număr la intrare și returnează un alt număr la ieșire.
+- Funcția rădăcină pătrată: **"sqrt of x"**, care ia un număr la intrare și returnează un alt număr la ieșire
 
-- Funcția **"sortare listă"**, care ia o listă la intrare și returnează o listă nouă la ieșire.
+- Funcția **"sortare listă"**, care ia o listă la intrare și returnează o listă nouă la ieșire
 
 Ambele funcții nu au **efecte secundare**:
 - Nu schimbă nimic
@@ -65,7 +65,7 @@ Dezvoltatorii pur funcționali trebuie să **își schimbe stilul de gândire** 
 
 - Combină mai multe paradigme de programare:
 
-- **Funcțională**,  **declarativă**,  **imperativă**, **pe bază de componente**, **pe baza de obiecte**, **determinată de un eveniment**, **programare asincronă**, și multe altele.
+- **Funcțională**,  **declarativă**,  **imperativă**, **pe bază de componente**, **pe baza de obiecte**, **determinată de un eveniment**, **programare asincronă**, și multe altele
 
 
 
@@ -152,7 +152,7 @@ Imprimați **cantintatea** numerelor și **suma** lor.
 
 - Utilizați `Function<String, Integer>` pentru **analizarea** numerelor întregi după ce le împărțit într-o matrice **String**
 
-# Exemple
+## Exemplu
 
 | **Intrare**|**Ieșire**|
 | --- | --- |
