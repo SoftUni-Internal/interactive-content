@@ -3,7 +3,7 @@
 [slide hideTitle]
 # What Are Static Members
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-33-34-35-static-members-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/RO/interactive-java-advanced-defining-classes-33-34-35-static-members-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In Java, static members are those members of a class that can be used without initializing the class.
 
@@ -71,7 +71,7 @@ public class Car {
 [slide hideTitle]
 # Problemă cu Soluție: Bank Account
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-36-problem-and-solution-bank-account-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/RO/interactive-java-advanced-defining-classes-36-problem-and-solution-bank-account-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Bank Account" taskId="oop-basics-java-defining-classes-lab-Bank-Account" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
@@ -98,7 +98,7 @@ Create a test client supporting the following commands:
 - "**GetInterest** \{**Id**\} \{**Years**\}"
 - "**End**"
 
-## Examples
+## Exemplu
 
 
 | **Input** | **Output** |

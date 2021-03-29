@@ -4,6 +4,8 @@
 
 # Fields
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/RO/interactive-java-advanced-defining-classes-10-11-class-data-fields-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Un câmp Java este o variabilă din interiorul unei clase.
 
 De exemplu, într-o clasă care reprezintă o mașină, clasa Mașină poate conține următoarele câmpuri:
@@ -29,6 +31,8 @@ public class Car {
 [slide hideTitle]
 
 # Problemă cu Soluție: Define Car Class
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/RO/interactive-java-advanced-defining-classes-12-13-problem-and-solution-define-car-class-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Creați o clasă numită **Car**.
 
@@ -85,6 +89,8 @@ public class Car {
 [slide hideTitle]
 
 # Access Modifiers
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/RO/interactive-java-advanced-defining-classes-14-access-modifiers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Modificatorii de acces determină dacă alte clase pot folosi un anumit câmp.
 

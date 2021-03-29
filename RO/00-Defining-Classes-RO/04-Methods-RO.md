@@ -4,6 +4,8 @@
 
 # What are Methods
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/RO/interactive-java-advanced-defining-classes-15-16-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 O metodă este o colecție de declarații care efectuează anumite sarcini specifice și returnează rezultatul apelantului.
 
 O metodă poate efectua anumite sarcini specifice fără a returna nimic.
@@ -31,6 +33,8 @@ class Car {
 
 [slide hideTitle]
 # Getters și Setters
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/RO/interactive-java-advanced-defining-classes-17-18-getters-and-setters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În Java **getter** și **setter** sunt două metode convenționale care sunt folosite pentru recuperarea și actualizarea valorii unei variabile.
 
@@ -104,6 +108,7 @@ Cea mai obișnuită utilizare a cuvântului cheie "**this**" este de a elimina c
 [slide hideTitle]
 # Metoda "toString()"
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/RO/interactive-java-advanced-defining-classes-19-20-to-string-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Utilizând metoda `toString()`, puteți reprezenta orice obiect ca un șir.
 
@@ -141,6 +146,8 @@ public class Car {
 [slide hideTitle]
 # Metoda "equals()"
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/RO/interactive-java-advanced-defining-classes-21-equals-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 În java metoda `equals()` este utilizată pentru a compara egalitatea a două obiecte. 
 
 ```java
@@ -157,6 +164,8 @@ Keep in mind that for the `equals()` method does not work correctly for object c
 
 [slide hideTitle]
 # Metoda "hashCode()"
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/RO/interactive-java-advanced-defining-classes-22-hash-code-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Metoda `hashCode()` returnează valoarea de cod hash a **întregului** al obiectului.
 
@@ -176,6 +185,8 @@ Typically both of them need to be overridden to get correct results.
 
 [slide hideTitle]
 # Problemă cu Soluție: Car Info
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/RO/interactive-java-advanced-defining-classes-23-problem-and-solution-car-info-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Car Info" taskId="oop-basics-java-defining-classes-lab-Car-Info" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 

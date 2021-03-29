@@ -3,6 +3,9 @@
 [slide hideTitle]
 # Defining Simple Classes
 
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/RO/interactive-java-advanced-defining-classes-3-4-defining-classes-defining-simple-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 O clasă este **elementul de bază al unui limbaj obiect-orientat**, cum ar fi Java.
 
 Totul în Java este asociat cu **clase** și **obiecte**, împreună cu atributele și **metodele sale**.
@@ -36,6 +39,7 @@ Datele (**atribute**) asociate cu o clasă sau obiect sunt stocate în **variabi
 [slide hideTitle]
 # Denumirea Claselor
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/RO/interactive-java-advanced-defining-classes-5-Naming-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Mai jos sunt regulile de denumire a claselor limbajului de programare Java.
 
@@ -64,6 +68,7 @@ Folosește un cuvânt întreg. Evitați acronimele și abrevierile (cu excepția
 [slide hideTitle]
 # Componente ale Clasei
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/RO/interactive-java-advanced-defining-classes-6-class-members-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 La definirea clasei, conține doar acele componente ale unei declarații de clasă care sunt necesare.
 
@@ -96,6 +101,7 @@ class Car {
 [slide hideTitle]
 # Crearea Unui Obiect
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/RO/interactive-java-advanced-defining-classes-7-Creating-an-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Crearea unui obiect dintr-o clasă definită se numește **instanțiere**.
 
@@ -120,6 +126,8 @@ Car thirdCar = new Car();
 
 [slide hideTitle]
 # Referință Obiect
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/RO/interactive-java-advanced-defining-classes-8-Object-reference-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Operatorul `new` instanțiază o clasă prin alocarea memoriei pentru un obiect nou și returnarea unei **referințe** la memoria respectivă.
 
@@ -159,6 +167,7 @@ int horsePower=0;
 [slide hideTitle]
 # Clase vs. Obiecte
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/RO/interactive-java-advanced-defining-classes-9-classes-vs-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 | **Cursuri** | **Obiecte** |
 | --- | --- |

@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Constructors
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/RO/interactive-java-advanced-defining-classes-25-26-27-28-constructors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 În Java, un constructor este un bloc de coduri similar cu metoda.
 
 Se numește atunci când se creează o instanță a clasei.
@@ -76,6 +78,7 @@ Primul ia un singur parametru, iar al doilea ia doi parametrii.
 [slide hideTitle]
 # Starea Inițială a Obiectului
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/RO/interactive-java-advanced-defining-classes-29-object-initial-state-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Constructorii stabilesc starea inițială a obiectului.
 
@@ -120,6 +123,7 @@ In the body of the constructor, we set the value of the field **brand** to the g
 [slide hideTitle]
 # Înlănțuirea Constructorului
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/RO/interactive-java-advanced-defining-classes-30-constructor-chaining-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În Java, este posibil să apelați un constructor din interiorul altui constructor.
 
@@ -163,6 +167,7 @@ In this example, we are calling the first constructor with two parameters, and w
 [slide hideTitle]
 # Problemă cu Soluție: Car Constructors
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/RO/interactive-java-advanced-defining-classes-31-problem-and-solution-constructors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Constructors" timeLimit=5000 taskId="oop-basics-java-defining-classes-Constructors" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [code-upload allowedMemory="30" /]
@@ -237,7 +242,7 @@ System.out.println(secondCar.carInfo());
 ```
 
 
-## Examples
+## Exemplu
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 2 | The car is: Chevrolet unknown - -1 HP. |
