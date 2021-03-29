@@ -756,7 +756,7 @@ Create a `FileInputStream` to read **course.ser**.
 
 Then, create an `ObjectInputStream` instance.
 
-Use the `readObject()` method to **deserialize** the object.
+The `readObject()` method is used to read an object from the `ObjectInputStream`.
 
 After **closing** the input streams, use the `courseDsl.toString()` method to **print** information:
 
