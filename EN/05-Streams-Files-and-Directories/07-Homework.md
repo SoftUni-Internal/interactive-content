@@ -564,7 +564,7 @@ numbers.add(32.5);
 numbers.add(11.7);
 ```
 
-To catch possible **errors** with the I/O operations, create a `try-catch` block.
+To catch possible **errors** with the Input/Output operations, create a `try-catch` block.
 
 ```java
 try {
@@ -642,6 +642,8 @@ Create a **simple class** called "**Course**" that has the following values upon
     * contains the **number of students** attending the course
 
 The class **must implement** the `Serializable` interface.
+
+To start create a new `Course.java` file.
 
 ```java
 import java.io.Serializable;
