@@ -8,11 +8,11 @@
 
 ## Consumer\<T\> 
 
-In Java `Consumer<T>` is a **functional interface** which accepts a single argument and returns nothing.
+In Java, `Consumer<T>` is a **functional interface** that accepts a single argument and returns nothing.
 
 The functional method of **Consumer** is `accept(T t)`.
 
-We can use **Consumer** function with the `.accept()` method.
+We can use the **Consumer** function with the `.accept()` method.
 
 ``` java
 import java.util.function.Consumer;
@@ -32,7 +32,7 @@ public class ConsumerAccept {
 
 `Supplier<T>` is an in-built **functional interface** that represents the supplier of results.
 
-Supplier interface does not take any parameters.
+The Supplier interface does not take any parameters.
 
 ``` java
 int genRandomInt() {
@@ -53,7 +53,7 @@ int rnd = genRandomInt.get();
 
 ## Predicate\<T\>
 
-In Java `Predicate<T>` is a **functional interface** which represents a predicate (boolean-valued function) of one argument.
+In Java, `Predicate<T>` is a **functional interface** which represents a predicate (boolean-valued function) of one argument.
 
 It is used to **evaluate** a condition.
 
@@ -99,15 +99,15 @@ public class Main {
 [task-description]
 ## Description
 
-Write a program that reads one line of **text** from the console. 
+Write a program that reads a line of **text** from the console. 
 
 Print the **count** of words that start with an **uppercase** letter.
 
-After that print all these **words** in the **same order**, like you found them in the text.
+After that, print all the found **words** in the **same order** that they appeared in the original text input, each on a new line.
 
 ## Hints
 
-Use a `Predicate<String>`like an **if-condition**.
+Use a `Predicate<String>` such as an **if-condition**.
 
 
 
@@ -245,14 +245,13 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Write a program that reads one line of **Double** prices separated by **a comma and a space** `, `. 
+Write a program that reads a line of prices, parsing them as numbers of type **Double**, separated by **a comma and space** ", ". 
 
-Print the prices with added VATs for all of them. 
+Add 20% VAT tax to each and print each price on a separate line.
 
 Format them to the **second** digit after the decimal point. 
 
 The order of the prices must remain the same.
-
 
 # Examples
 

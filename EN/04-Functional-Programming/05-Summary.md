@@ -7,11 +7,12 @@
 ## In this lesson you learned:
 
 - Functions are pieces of code used to perform tasks
-    - in Java we can create functions analogical to mathematical functions
-    - they can be passed like **variables** to methods
+    - we can create functions in Java that are similar to the mathematical concept of functions
+    - they can be passed as **variables** to methods
 
 - Lambda expressions are anonymous methods
     - they use the `(parameters) -> {body}` syntax
+    - they can be used with zero, one, or more parameters
 
 ```java
 (name) -> { System.out.println("Hello!" + name); }
@@ -36,7 +37,7 @@ public class Main {
 
 - `Consumer<T>` is a void function
 
-- `Supplier<T>` gets no parameters
+- `Supplier<T>` does not accept any parameters
 
 - `Predicate<T>` evaluates a condition
 

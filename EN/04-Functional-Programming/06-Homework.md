@@ -16,7 +16,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that **reads** a collection of **strings**, separated by one or **more** whitespaces, from the console, and then prints them onto the console.
+Write a program that **reads** a collection of **strings**, separated by one or **more** whitespaces, and prints them to the console.
 
 Each string should be printed on a new line.
 
@@ -154,7 +154,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that **reads a collection of names** as strings from the console and then **appends "Sir"** in front of every name and prints it back onto the console.
+Write a program that **reads a collection of names** as strings, **appends "Sir"** in front of every name, and prints it to the console.
 
 Use a `Consumer<T>`.
 
@@ -292,7 +292,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a simple program that **reads** a **set of numbers** from the console and finds the **smallest** of the **numbers** using a simple `Function<Integer[], Integer>`.
+Write a program that **reads** a **set of numbers** from the console and finds the **smallest** **number** using a `Function<Integer[], Integer>`.
 
 
 # Examples
@@ -382,12 +382,15 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-On the first line, you receive a **list of numbers**.
+On the first line of input, you will receive numbers, separated by spaces.
 
-On the next lines you are passed different **commands** that you need to apply to all numbers in the list: "**add**" \-\> adds 1; "**multiply**" \-\> multiplies by 2; "**subtract**" \-\> subtracts 1; "**print**" \-\> prints all numbers on **a new line**.
+On the next lines, you will receive several **commands** that you need to apply to all numbers in the input that you received: 
 
-The input will end with a command "**end**", after which you need to print the result.
-
+- "**add**" \-\> adds 1
+- "**multiply**" \-\> multiplies by 2
+- "**subtract**" \-\> subtracts 1
+- "**print**" \-\> prints a new line with the sequence of numbers, separated by spaces
+Program execution stops after receiving the "**end**" command.
 
 # Examples
 | **Input** | **Output** |
@@ -621,9 +624,9 @@ public class Main {
 ## Description
 Write a **predicate**.
 
-It has to **check** a name for its length and return **true** if the length of the names is **less or equal** the passed **integer**.
+It has to **check** a name for its length and return **true** if the length of the names is **less than or equal to** the passed **integer**.
 
-You will receive an **integer** that represents the length you have to use.
+You will receive an **integer** that represents the length you have to check for.
 
 On the second line, you will receive a **string** array with some names.
 
@@ -725,11 +728,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that is using a custom **function** (written by you) to find the **smallest** integer in a **sequence** of **integers**.
+Write a program that uses a custom **function** (written by you) to find the **smallest** integer in a **sequence** of **integers**.
 
 The input could have more than one space.
 
-Your task is to **collect** the integers from the console, find the **smallest one**, and print its **index**. 
+Your task is to **read** the integers from the console, find the **smallest one**, and print its **index**. 
 
 If **more** than one such element exists, print the index of the **rightmost** one.
 
