@@ -465,7 +465,7 @@ Create a program that makes a copy of a **.jpg** file using **FileInputStream**,
 
 Set the name of the new file as **picture-copy.jpg**.
 
-To start, pick a random image.
+To start, pick a random image, or download one [here](https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?cs=srgb&dl=pexels-evg-culture-1170986.jpg&fm=jpg).
 
 Then, create a new project and open the **Main** class.
 
