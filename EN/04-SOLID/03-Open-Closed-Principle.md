@@ -173,7 +173,7 @@ As well as applying it **reduces the risk of introducing new bugs** to existing 
 **Not following the open-closed principle will lead to problems:**
 
 - **Cascading changes through modules**
-  If we change the code in our class, everybody that uses this class will change their behavior implicitly.
+  If we change the code in our class, everyone that use this class will change their behavior implicitly.
   
  It does not matter if the clients are inheriting or declaring the class's object, changes to the existing code will lead to cascading changes down the line.
 
