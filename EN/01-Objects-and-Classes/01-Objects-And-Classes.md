@@ -11,21 +11,21 @@ An object is a **basic unit** and an **instance of a class**.
 
 Classes define templates for **fields**, **constructors**, and **methods**.
 
-Objects represent **real-life subjects**. 
+Objects in programming are modelled after **real-world objects**.
 
-An object has:
+If we take dogs, for example: they have a **breed** (state) and a specific behavior (barking, wagging their tail, eating).
 
-- **state** - Represented by **fields**
+Each object in Java has:
 
-- **behavior** - Represented by **methods**, which are used for object interaction 
+- a **state** - Represented by **fields**
 
-- **identity** - Gives a **unique name** to an object
+- a **behavior** - Represented by **methods**, which are used for object interaction 
 
-In real life, dogs have a **breed** state and a **barking** behavior.
+- an **identity** - A **unique name** assigned to the object
 
 An object holds a set of **named values**.
 
-An object called **birthday** will have values like `day`, `month`, `year` etc.
+For example, a **birthday** object will have values like `day`, `month`, `year` etc.
 
 ```java live
 import java.time.LocalDate;
@@ -54,7 +54,7 @@ Classes provide **structure the objects**.
 
 Classes define: 
 
-- **Fields** (private variables) - Represent the state of an object
+- **Fields** - Represent the state of an object
 
 - **Getters/Setters** - Return or update fields
 
@@ -78,7 +78,7 @@ For example, all animals are grouped in a single **class**, and each animal is a
 
 [image assetsSrc="ObjectsAndClasses_RealLifeExample.png" /]
 
-Each animal has similar characteristics, so the **animal** class should have the following fields: type, age, color, preferred food, etc.
+Each animal has similar characteristics, so the **animals** represented with a programming class could have the following fields: type, age, color, preferred food, etc.
 
 Also, each animal can eat, drink water, move, make a sound, etc, so methods for each of these actions should be declared within the **animal** class.
 
