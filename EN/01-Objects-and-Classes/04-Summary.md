@@ -3,7 +3,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-28-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In this lesson you learned:
+## In this lesson, you learned:
 
 - Classes define templates for creating objects
     - fields
@@ -19,12 +19,24 @@ LocalDate.of(2018, 5, 5);
 System.out.println(birthday);
 ```
 
-- What an instance of a class is
+- Creating a class
 
 ``` java
-class Dice {
-  …
+class Car {
+  public int fuel;
+
+  public int drive(distance) {
+    int fuelBurned = distance * 0.1;
+    this.fuel -= fuelBurned;
+    return fuelBurned;
+  }
 }
+```
+
+- Initializing an Instance of a Class
+
+```java
+Car bmw = new Car();
 ```
 
 ## In the next lesson, you will learn:
