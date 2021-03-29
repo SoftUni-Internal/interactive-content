@@ -469,6 +469,16 @@ To start, pick a random image.
 
 Then, create a new project and open the **Main** class.
 
+In the `Main.java` file, add the necessary **imports**, if your IDE does not already:
+
+```java
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+```
+
+Or just `import java.io.*;`.
+
 Inside the `main` method, create a `try-catch` block:
 
 ```java
@@ -507,7 +517,8 @@ try {
     System.out.println("The image was copied successfully! 😎");
     
 } catch (IOException e) {
-    System.out.println("The file is either corrupted or missing. 😿");
+    System.out.println("There was a problem with the file. 😿");
+    e.printStackTrace();
 }
 ```
 
@@ -520,7 +531,89 @@ The cloned image is now **saved** in your project folder.
 
 Create a program that saves and loads an **ArrayList** of doubles to a file using **ObjectInputStream** and **ObjectOutputStream**. 
 
-Set the name of the file as **list.ser**.
+Your IDE must add the following **imports** in the process:
+
+```java
+import java.io.*;
+import java.util.ArrayList;
+```
+
+To start, let us create an ArrayList of **doubles** in the body of `main()`.
+
+```java
+ArrayList<Double> numbers = new ArrayList<>();
+```
+
+Next, **add** the following floating-point **numbers**:
+
+```java
+numbers.add(46.2);
+numbers.add(32.5);
+numbers.add(11.7);
+```
+
+To catch possible **errors** with the I/O operations, create a `try-catch` block.
+
+```java
+try {
+    FileOutputStream writeData = new FileOutputStream("list.ser");
+    ObjectOutputStream writeStream = new ObjectOutputStream(writeData);
+
+    writeStream.writeObject(numbers);
+    writeStream.flush();
+    writeStream.close();
+    
+    System.out.println("The ArrayList was serialized successfully! 😎");
+
+} catch (IOException e) {
+    System.out.println("An error occurred. 😿");
+    e.printStackTrace();
+}
+```
+
+Create a `FileOutputStream` called **WriteData** and set the name of the file as **list.ser**.
+
+By providing only the **name**, without a path, the file will be saved in the project's main directory.
+
+`ObjectOutputStream` will handle writing the object into the file that `FileOutputStream` created.
+
+Calling thе `writeObject(numbers)` method tells the program to start writing into **list.ser**.
+
+A good practice is to use `.flush()` - it flushes the output stream and forces any buffered output bytes to be written out.
+
+Opening the **list.ser** file, you will see the following **output**:
+
+```
+���sr�java.util.ArrayListx����a��I�sizexp���w���sr�java.lang.Double���J)k��D�valuexr�java.lang.Number��������xp@G�����sq�~�@@@�����sq�~�@'ffffffx
+```
+
+Do not worry if it does not make sense to you, Java can read it just fine.
+
+Using this file, you can **deserialize** the ArrayList.
+
+Clear out the `main()` method, and write:
+
+```
+try {
+    FileInputStream readData = new FileInputStream("list.ser");
+    ObjectInputStream readStream = new ObjectInputStream(readData);
+
+    ArrayList<Double> peopleDsl = (ArrayList<Double>) readStream.readObject();
+    readStream.close();
+    
+    System.out.println(peopleDsl.toString());
+    
+} catch (Exception e) {
+    System.out.println("An error occurred. 😿");
+    e.printStackTrace();
+}
+```
+
+You can now see the ArrayList's data, printed on the **console**:
+
+```
+[46.2, 32.5, 11.7]
+```
 
 [/slide]
 
@@ -529,9 +622,89 @@ Set the name of the file as **list.ser**.
 
 Create a program that saves and loads information about a custom object using **ObjectInputStream** and **ObjectOutputStream**.
 
-Create a **simple class** called "Course" that has a **String field** containing its **name** and an **integer field** containing the **number of students** attending the course. 
+Create a **simple class** called "**Course**" that has the following values upon initialization:
 
-Set the name of the saved file as **course.ser**.
+- **name** - String
+    * the name of the course
+- **studentsCount** - int
+    * contains the **number of students** attending the course
+
+The class **must implement** the `Serializable` interface.
+
+```java
+import java.io.Serializable;
+
+public class Course implements Serializable {
+    private String name;
+    private int studentsCount;
+
+    public Course(String name, int studentsCount) {
+        this.name = name;
+        this.studentsCount = studentsCount;
+    }
+
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
+    public int getStudentsCount() {
+        return this.studentsCount;
+    }
+
+    public void setStudentsCount(int studentsCount) {
+        this.studentsCount = studentsCount;
+    }
+
+
+    @Override
+    public String toString() {
+        return new StringBuffer("Course name: ")
+                .append(this.name)
+                .append(", Students enrolled: ")
+                .append(this.studentsCount)
+                .toString();
+    }
+
+}
+```
+
+Once you are done creating the class, initialize it inside `main()`:
+
+```java
+Course course = new Course("Programming with Python",  32);
+```
+
+Create a `try-catch` block:
+
+```java
+try {
+    FileOutputStream fileOut = new FileOutputStream("course.ser");
+    ObjectOutputStream objectOut = new ObjectOutputStream(fileOut);
+    objectOut.writeObject(course);
+    objectOut.close();
+
+    System.out.println("The object was succesfully written to a file! ☑️");
+
+} catch (Exception e) {
+    System.out.println("An error occurred. 😵");
+    e.printStackTrace();
+}
+```
+
+Inside of `try`, set the name of the saved file as **course.ser**.
+
+Then, create an `ObjectOutputStream` instance in order to write the `course` object to the file.
+
+**Close** the output stream and create a `catch` block for **error handling**. 
+
+Inside of it, print the **stack trace**.
+
 
 [/slide]
 
