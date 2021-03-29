@@ -121,7 +121,7 @@ Scrieți un program care citește un rând de **numere întregi** separate pri c
 Print only the **even numbers**.
 Then, **Sort** the even numbers in **ascending order** and print them **again**.
 
-# Example
+## Exemplu
 
 | **Intrare**|**Ieșire**|
 | --- | --- |

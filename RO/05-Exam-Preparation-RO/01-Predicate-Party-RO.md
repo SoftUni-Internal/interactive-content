@@ -37,7 +37,7 @@ If nobody is going, print "**Nobody is going to the party!**".
 
 See the examples below.
 
-## Examples
+## Exemplu
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | Peter Michael Stefanos | Michael, Stefanos are going to the party! |

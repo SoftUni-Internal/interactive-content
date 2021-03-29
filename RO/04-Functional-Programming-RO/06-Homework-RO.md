@@ -22,7 +22,7 @@ Fiecare șir ar trebui să fie tipărit pe o nouă linie.
 
 Folosiți un `Consumer<T>`.
 
-# Exеmples
+# Exemplu
 
 | **Intrare**|**Ieșire**|
 | --- | --- |
@@ -160,7 +160,7 @@ Scrieți un program care **citește o colecție de nume** ca șiruri de pe conso
 
 Folosiți un  `Consumer<T>`.
 
-## Examples
+## Exemplu
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | Henry Alex Anthony Stanley | Sir Henry |
@@ -292,7 +292,7 @@ public class Main {
 ## Descriere
 Scrieți un program simplu care **citește** un **set de numere** de pe consolă și găsește **cel mai mic** dintre **numerele** folosind un simplu `Function<Integer[], Integer>`.
 
-## Exemples
+## Exemplu
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 1 4 3 2 1 7 13 | 1 |
@@ -384,7 +384,7 @@ Pe rândurile următoare vi se transmit diferite **comenzi** pe care trebuie să
 
 Intrarea se va încheia cu o comandă "**end**", după care trebuie să imprimați rezultatul.
 
-# Exemples
+# Exemplu
 
 | **Intrare**|**Ieșire**|
 | --- | --- |
@@ -518,7 +518,7 @@ public class Main {
 
 Scrieți un program care **inversează** o colecție și **elimină** elemente care sunt **divizibile** cu un număr întreg **n** dat.
 
-## Exemples
+## Exemplu
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 1 2 3 4 5 6 | 5 3 1 |
@@ -628,7 +628,7 @@ Pe a doua linie, veți primi o matrice **șir** cu câteva nume.
 
 Imprimați numele, trecând **condiția** în predicat.
 
-## Exemple
+## Exemplu
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 4 | Adam |
@@ -737,7 +737,7 @@ Dacă există **mai mult** decât un astfel de element, imprimați indexul celui
 
 - Folosiți `Function<List<Integer>, Integer>` sau ceva similar
 
-# Exemples
+# Exemplu
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 1 2 3 0 4 5 6 | 3 |
@@ -819,7 +819,7 @@ Scrieți un **comparator** personalizat care **sortează** toate numerele pare �
 
 Treceți-l la o funcție `Arrays.sort()` și imprimați rezultatul.
 
-## Exemples
+## Exemplu
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 1 2 3 4 5 6 | 2 4 6 1 3 5 |
@@ -908,7 +908,7 @@ Găsiți toate **numerele** din intervalul **1 ... N** care sunt **divizibile** 
 
 Folosiți **predicate**.
 
-## Exemples
+## Exemplu
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 10 | 2 4 6 8 10 |

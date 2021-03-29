@@ -55,7 +55,7 @@ This time use a **BiFunction**.
 ## Hints
 Use `BiFunction<Integer, String, Integer>` for parsing integers after you split them to a String array.
 
-# Examples
+# Exemplu
 
 
 | **Intrare**|**Ieșire**|
@@ -210,7 +210,7 @@ Apoi citiți încă **trei rânduri** cu:
 **Scrieți propriile metode.**
 
 
-## Exemples
+## Exemplu
 
  | **Intrare**|**Ieșire**|
 | --- | --- |
@@ -237,7 +237,7 @@ Apoi citiți încă **trei rânduri** cu:
 | 20 | |
 | name | |
 
-## Example 3
+
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 5 | 20
