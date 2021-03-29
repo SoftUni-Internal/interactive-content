@@ -469,6 +469,14 @@ To start, pick a random image.
 
 Then, create a new project and open the **Main** class.
 
+In the `Main.java` file, add the necessary **imports**, if your IDE does not already:
+
+```java
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+```
+
 Inside the `main` method, create a `try-catch` block:
 
 ```java
@@ -520,7 +528,65 @@ The cloned image is now **saved** in your project folder.
 
 Create a program that saves and loads an **ArrayList** of doubles to a file using **ObjectInputStream** and **ObjectOutputStream**. 
 
-Set the name of the file as **list.ser**.
+Your IDE must add the following **imports** in the process:
+
+```java
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.util.ArrayList;
+```
+
+To start, let us create an ArrayList of **doubles** in the body of `main()`.
+
+```java
+ArrayList<Double> numbers = new ArrayList<>();
+```
+
+Next, **add** the following floating-point **numbers**:
+
+```java
+numbers.add(46.2);
+numbers.add(32.5);
+numbers.add(11.7);
+```
+
+To catch possible **errors** with the I/O operations, create a `try-catch` block.
+
+```java
+try {
+    FileOutputStream writeData = new FileOutputStream("list.ser");
+    ObjectOutputStream writeStream = new ObjectOutputStream(writeData);
+
+    writeStream.writeObject(numbers);
+    writeStream.flush();
+    writeStream.close();
+    
+    System.out.println("The ArrayList was serialized successfully! 😎");
+
+} catch (IOException e) {
+    System.out.println("An error occurred. 😿");
+    e.printStackTrace();
+}
+```
+
+Create a `FileOutputStream` called **WriteData** and set the name of the file as **list.ser**.
+
+By providing only the **name**, without a path, the file will be saved in the project's main directory.
+
+`ObjectOutputStream` will handle writing the object into the file that `FileOutputStream` created.
+
+Calling thе `writeObject` method tells the program to start writing into **list.ser**.
+
+Opening the **list.ser** file, you will see the **output**.
+
+```
+�� sr java.util.ArrayListx����a� I sizexp   w   sr java.lang.Double���J)k� D valuexr java.lang.Number������  xp@G�����sq ~ @@@     sq ~ @'ffffffx
+```
+
+Do not worry if it does not make sense to you, Java can read it just fine.
+
+**Note:** Using this file, you can try **deserializing** the ArrayList.
 
 [/slide]
 
