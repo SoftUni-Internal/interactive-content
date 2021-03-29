@@ -750,7 +750,7 @@ try {
 }
 ```
 
-Declare a new object of type `Course`, named **CourseDsl**.
+Declare a new object of type `Course`, named **courseDsl**.
 
 Create a `FileInputStream` to read **course.ser**.
 
