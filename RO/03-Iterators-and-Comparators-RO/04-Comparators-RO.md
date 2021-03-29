@@ -85,15 +85,15 @@ In următorul exemplu, vom compara **two Student objects** în funcție de vârs
 
 Comparatorul nostru de Vârstă va implementa **Comparator** de tip **Student**.
 
-Metoda `compare()` ia două obiecte de tip studenți "(**Student st1, Student st2**)" ca argumente.
+Metoda `compare()` ia două obiecte de tip studenți "**Student st1, Student st2**" ca argumente.
 
-Implementarea este simplă, returnează :
+Implementarea este simplă, returnează:
 
-- un număr **positive** dacă primul student este mai în vârstă .
+- un număr **positive** dacă primul student este mai în vârstă.
 
-- **negative** în celălalt caz **.
+- **negative** în celălalt caz
 
-- **0 when they are the same**.
+- **0 when they are the same**
 
 Folosind Comparator, **we could create as many comparators as we need** și să-i folosim în acord cu situația. 
 
@@ -145,7 +145,7 @@ Extindem **Book** din diagrama UML de mai jos:
 |+ compareTo(Book): int |
 
 
-## Examples
+## Exemplu
 
 Folosiți codul de mai jos pentru a testa clasa **Book** .
 

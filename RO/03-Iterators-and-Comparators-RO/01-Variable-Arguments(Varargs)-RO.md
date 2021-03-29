@@ -89,7 +89,7 @@ void method(String a, int... b){
 ## Descriere
 Creați o clasă "**Book**" din diagrama UML de mai jos: 
 
-| Book |
+| **Book** |
 | ---- |
 |- title: String |
 |- year: int |
@@ -107,7 +107,7 @@ Puteți folosi doar un singur constructor.
 
 Aici pot exista **no authors**, **one author** sau **many authors**. 
 
-## Exemple
+## Exemplu
 
 Folosiți codul de mai jos pentru a testa clasa **Book** .
 ```java

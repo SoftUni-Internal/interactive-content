@@ -277,7 +277,7 @@ Creați o clasă imbricată **LibIterator** din diagrama UML de mai jos:
 Folosiți clasa **Book** class din problema anterioară. 
 
 
-## Exemple
+## Exemplu
 Folosiți codul de mai jos pentru a vă testa clasa **Library**.
 
 ```java

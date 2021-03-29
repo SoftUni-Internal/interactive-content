@@ -1416,7 +1416,7 @@ Format:
 | John 2 happy | John -> 2 -> false |
 | Peter 0.10 Expressbank | Peter -> 0.1 -> Expressbank |
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Kevin Johnson Sofia Bulgaria | Kevin Johnson -> Sofia -> Bulgaria |
 | Mat 18 not | Mat -> 18 -> false |
