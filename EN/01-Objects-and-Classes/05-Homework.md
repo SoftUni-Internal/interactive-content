@@ -497,7 +497,7 @@ Most Valuable Playboy - content4: Lauren Blakely
 ## Description
 Create a program that sorts some students by their grade in descending order.
 
-Each student should have a **first name** (String), a **last name** (String), **and a grade** (floating-point number). 
+Each student should have a **first name** (String), a **last name** (String), **and a grade** (a floating-point number). 
 
 ### Input
 
@@ -645,7 +645,7 @@ Horsepower: \{horsepowerOfVehicle\}
 
 When you receive the **"Close the Catalogue"** command, print out the **average horsepower** of the cars and the **average horsepower** of the trucks in the **format**:
 
-"\{typeOfVehicles\} have average horsepower of \{averageHorsepower\}."
+"\{typeOfVehicles\} have an average horsepower of \{averageHorsepower\}."
 
 The average horsepower is calculated by **dividing the sum of the horsepower of all vehicles of the given type by the total count of all vehicles from that type**.
 
@@ -666,8 +666,8 @@ Format the answer to the **second digit after the decimal point**.
 | Close the Catalogue | Model: Man |
 | | Color: red |
 | | Horsepower: 200 |
-| | Cars have average horsepower of: 413.33. |
-| | Trucks have average horsepower of: 250.00. |
+| | Cars have an average horsepower of: 413.33. |
+| | Trucks have an average horsepower of: 250.00. |
 
 [/task-description]
 [code-upload allowedMemory="30" /]
@@ -698,8 +698,8 @@ Type: Truck
 Model: Man
 Color: red
 Horsepower: 200
-Cars have average horsepower of: 413.33.
-Trucks have average horsepower of: 250.00.
+Cars have an average horsepower of: 413.33.
+Trucks have an average horsepower of: 250.00.
 [/output]
 [/test]
 [test]
@@ -709,8 +709,8 @@ End
 Close the Catalogue
 [/input]
 [output]
-Cars have average horsepower of: 736.00.
-Trucks have average horsepower of: 0.00.
+Cars have an average horsepower of: 736.00.
+Trucks have an average horsepower of: 0.00.
 [/output]
 [/test]
 [test]
@@ -720,8 +720,8 @@ End
 Close the Catalogue
 [/input]
 [output]
-Cars have average horsepower of: 0.00.
-Trucks have average horsepower of: 248.00.
+Cars have an average horsepower of: 0.00.
+Trucks have an average horsepower of: 248.00.
 [/output]
 [/test]
 [test]
@@ -736,8 +736,8 @@ Type: Car
 Model: Lamborghini
 Color: orange
 Horsepower: 570
-Cars have average horsepower of: 570.00.
-Trucks have average horsepower of: 0.00.
+Cars have an average horsepower of: 570.00.
+Trucks have an average horsepower of: 0.00.
 [/output]
 [/test]
 [test]
@@ -752,8 +752,8 @@ Type: Truck
 Model: Man
 Color: red
 Horsepower: 200
-Cars have average horsepower of: 0.00.
-Trucks have average horsepower of: 200.00.
+Cars have an average horsepower of: 0.00.
+Trucks have an average horsepower of: 200.00.
 [/output]
 [/test]
 [test]
@@ -767,8 +767,8 @@ End
 Close the Catalogue
 [/input]
 [output]
-Cars have average horsepower of: 507.67.
-Trucks have average horsepower of: 550.00.
+Cars have an average horsepower of: 507.67.
+Trucks have an average horsepower of: 550.00.
 [/output]
 [/test]
 [test]
@@ -798,8 +798,8 @@ Type: Truck
 Model: Volkswagen
 Color: black
 Horsepower: 423
-Cars have average horsepower of: 342.00.
-Trucks have average horsepower of: 365.67.
+Cars have an average horsepower of: 342.00.
+Trucks have an average horsepower of: 365.67.
 [/output]
 [/test]
 [/tests]
