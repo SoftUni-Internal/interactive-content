@@ -1,6 +1,8 @@
 [slide hideTitle]
 # Guild
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/06-Java-OOP-Basics-Exam-Preparation/RO/01-Guild-Skeleton-Problem-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Guild" timeLimit=5000 taskId="Java-OOP-Basics-Exam-Prep-Guild" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
