@@ -10,7 +10,7 @@ Pay attention to name the package (**christmas**), all the classes, their fields
 
 It is also important to keep the project structure as described above. 
 
-Download the resources from [Here](https://videos.softuni.org/resources/java/java-oop-basics/Java-Basics-OOP-Exam-Christmas_Skeleton.zip)
+Download the resources from [here](https://videos.softuni.org/resources/java/java-oop-basics/Java-Basics-OOP-Exam-Christmas_Skeleton.zip)
 
 ## Problem Description
 
@@ -28,10 +28,12 @@ The class constructor should receive (**name, weight and gender**).
 
 The class should contain the methods: 
 
-**- getName()**
-**- getWeight()**
-**- getGender()**
-- Override the **toString()** method in the following format: "Present \{name\} (\{weight\}) for a \{gender\}" 
+- **getName()**
+- **getWeight()**
+- **getGender()**
+- Override the **toString()** method in the following format: 
+
+"**Present** \{**name**\} (\{**weight**\}) **for a** \{**gender**\}" 
 
 **Note: Format the weight to the second digit after the decimal point!** 
 
@@ -39,34 +41,37 @@ The class should contain the methods:
 
 **Next**, write a **Java** class **Bag** that has **data** (a collection which stores the entity **Present**). 
 
-All entities inside the repository have the **same fields**. Also, the **Bag** class should have those fields: 
+All entities inside the repository have the **same fields**. 
+
+Also, the **Bag** class should have those fields: 
 
 - **color: String** 
 - **capacity: int** 
-- **data: List<Present>** - holds all added presents in the bag 
+- **data:** **List**\<**Present**\> - holds all added presents in the bag 
 
 The class **constructor** should receive (**color, capacity**), also it should initialize the **data** with a new instance of the collection. 
 
 Implement the following features:
 
-**- getColor()** 
-**- getCapacity()** 
-**- count()** method– **returns** the **number** of presents 
-**- add(Present present)** method – **adds** an **entity** to the data if **there is room** for it 
-**- remove(String name)** method – removes an present by **given name**, if such **exists**, and **returns boolean** 
-**- heaviestPresent()** method – returns the **heaviest** present 
-**- getPresent(String name)** method – returns the present with the **given name** 
-**- report()** method – **returns a string** in the following **format** (print the presents in order of appearance): 
-"\{color of Bag\} bag contains:
-\{Present1\} 
-\{Present2\}
-(…)"
+- **getColor()** 
+- **getCapacity()** 
+- **count()** method - **returns** the **number** of presents 
+- **add(Present present)** method - **adds** an **entity** to the data if **there is room** for it 
+- **remove(String name)** method - removes an present by **given name**, if such **exists**, and **returns boolean** 
+- **heaviestPresent()** method - returns the **heaviest** present 
+- **getPresent(String name)** method - returns the present with the **given name** 
+- **report()** method - **returns a string** in the following **format** (print the presents in order of appearance): 
+
+"\{**color of Bag**\} **bag contains:**
+\{**Present1**\} 
+\{**Present2**\}
+**(…)**"
 
 ### Constraints
 
-- The **names** of the presents will be **always unique**. 
-- The **weights** of the presents will always be with **positive values**. 
-- You will always have a present added before receiving methods. 
+- The **names** of the presents will be **always unique**
+- The **weights** of the presents will always be with **positive values**
+- You will always have a present added before receiving methods
 
 
 ## Example
@@ -74,6 +79,7 @@ Implement the following features:
 This is an example how the **Bag** class is **intended to be used**.
 
 **Sample code usage**
+
 ```java
 // Initialize the repository 
 Bag bag = new Bag("black", 10); 
@@ -121,7 +127,6 @@ Submit **single .zip file**, containing **christmas package, with the classes in
 [tests]
 [test open]
 [input]
-```
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -147,12 +152,9 @@ public class T00_1ValidateTypesExist {
         return clazz;
     }
 }
-```
 [/input]
 [output]
-```
 Test Passed!
-```
 [/output]
 [/test]
 [test open]
@@ -183,7 +185,7 @@ public class T00_2ValidateFieldsExists \{
                 new ExpField("data"),
         \};
 
-        for (ExpField field \: fieldsFirstType) \{
+        for (ExpField field : fieldsFirstType) \{
             validateField(clazzFirstType, field);
         \}
 
@@ -195,7 +197,7 @@ public class T00_2ValidateFieldsExists \{
                 new ExpField("gender"),
         \};
 
-        for (ExpField field \: fieldsSecondType) \{
+        for (ExpField field : fieldsSecondType) \{
             validateField(clazzSecondType, field);
         \}
     \}
@@ -244,7 +246,7 @@ import java.lang.reflect.Method;
 import java.util.Arrays;
 
 public class T00_3ValidateMethodsExists \{
-    private static final String METHOD_NOT_PRESENT_ERROR_MESSAGE = "The method '%s.%s' does not exist(actual methods parameter types\: '%s' ;expected - '%s')!";
+    private static final String METHOD_NOT_PRESENT_ERROR_MESSAGE = "The method '%s.%s' does not exist(actual methods parameter types: '%s' ;expected - '%s')!";
 
     private class ExpMethod \{
         String name;
@@ -266,7 +268,7 @@ public class T00_3ValidateMethodsExists \{
 //                new ExpMethod("methodName", String.class, int.class, getType("")),
         \};
 
-        for (ExpMethod method \: presentMethods) \{
+        for (ExpMethod method : presentMethods) \{
             validateMethod(presentClazz, method);
         \}
         Class BagClazz = getType("Bag");
@@ -283,7 +285,7 @@ public class T00_3ValidateMethodsExists \{
 //                new ExpMethod("methodName", String.class, int.class, getType("")),
         \};
 
-        for (ExpMethod method \: bagMethods) \{
+        for (ExpMethod method : bagMethods) \{
             validateMethod(BagClazz, method);
         \}
     \}
@@ -306,7 +308,7 @@ public class T00_3ValidateMethodsExists \{
     \}
 
     private String arrayToString(Class\[\] array) \{
-        String\[\] stringArray = Arrays.stream(array).map(Class\:\:getSimpleName).toArray(String\[\]\:\:new);
+        String\[\] stringArray = Arrays.stream(array).map(Class::getSimpleName).toArray(String\[\]::new);
         String arrayStr = String.join(", ", stringArray);
 
         return arrayStr;
@@ -315,11 +317,11 @@ public class T00_3ValidateMethodsExists \{
     private String findMethodFromMethods(Class clazz, String methodName) \{
         Method\[\] methods = clazz.getMethods();
 
-        Method\[\] methodsWithGivenName = Arrays.stream(methods).filter(m -\> m.getName().equals(methodName)).toArray(Method\[\]\:\:new);
+        Method\[\] methodsWithGivenName = Arrays.stream(methods).filter(m -\> m.getName().equals(methodName)).toArray(Method\[\]::new);
 
         StringBuilder sb = new StringBuilder();
 
-        for (Method method \: methodsWithGivenName) \{
+        for (Method method : methodsWithGivenName) \{
             String parameterTypes = arrayToString(method.getParameterTypes());
             sb.append("\{ " + parameterTypes + " \} ");
         \}
@@ -385,7 +387,7 @@ public class T01ValidatePresentFields \{
                 new ExpField(MODIFIER_PRIVATE, String.class, "gender"),
         \};
 
-        for (ExpField field \: fields) \{
+        for (ExpField field : fields) \{
             validateField(clazz, field);
         \}
     \}
@@ -547,7 +549,7 @@ import java.lang.reflect.Method;
 import java.util.Arrays;
 
 public class T03ValidatePresentMethods \{
-    private static final String METHOD_NOT_PRESENT_ERROR_MESSAGE = "The method '%s.%s' does not exist(actual methods parameter types\: '%s' ;expected - '%s')!";
+    private static final String METHOD_NOT_PRESENT_ERROR_MESSAGE = "The method '%s.%s' does not exist(actual methods parameter types: '%s' ;expected - '%s')!";
     private static final String METHOD_HAS_WRONG_RETURN_TYPE = "The method '%s.%s()' has the wrong return type(actual - '%s'; expected - '%s')!";
     private static final String METHOD_HAS_PARAMETER_TYPES = "The method '%s.%s()' has incorrect parameter types(actual - '%s'; expected - '%s')!";
 
@@ -573,7 +575,7 @@ public class T03ValidatePresentMethods \{
                 new ExpMethod(String.class, "toString"),
         \};
 
-        for (ExpMethod method \: methods) \{
+        for (ExpMethod method : methods) \{
             validateMethod(clazz, method);
         \}
     \}
@@ -602,7 +604,7 @@ public class T03ValidatePresentMethods \{
     \}
 
     private String arrayToString(Class\[\] array) \{
-        String\[\] stringArray = Arrays.stream(array).map(Class\:\:getSimpleName).toArray(String\[\]\:\:new);
+        String\[\] stringArray = Arrays.stream(array).map(Class::getSimpleName).toArray(String\[\]::new);
         String arrayStr = String.join(", ", stringArray);
 
         return arrayStr;
@@ -611,11 +613,11 @@ public class T03ValidatePresentMethods \{
     private String findMethodFromMethods(Class clazz, String methodName) \{
         Method\[\] methods = clazz.getMethods();
 
-        Method\[\] methodsWithGivenName = Arrays.stream(methods).filter(m -\> m.getName().equals(methodName)).toArray(Method\[\]\:\:new);
+        Method\[\] methodsWithGivenName = Arrays.stream(methods).filter(m -\> m.getName().equals(methodName)).toArray(Method\[\]::new);
 
         StringBuilder sb = new StringBuilder();
 
-        for (Method method \: methodsWithGivenName) \{
+        for (Method method : methodsWithGivenName) \{
             String parameterTypes = arrayToString(method.getParameterTypes());
             sb.append("\{ " + parameterTypes + " \} ");
         \}
@@ -654,7 +656,7 @@ import java.lang.reflect.Method;
 import java.util.Arrays;
 
 public class T04ValidateBagMethods \{
-    private static final String METHOD_NOT_PRESENT_ERROR_MESSAGE = "The method '%s.%s' does not exist(actual methods parameter types\: '%s' ;expected - '%s')!";
+    private static final String METHOD_NOT_PRESENT_ERROR_MESSAGE = "The method '%s.%s' does not exist(actual methods parameter types: '%s' ;expected - '%s')!";
     private static final String METHOD_HAS_WRONG_RETURN_TYPE = "The method '%s.%s()' has the wrong return type(actual - '%s'; expected - '%s')!";
     private static final String METHOD_HAS_PARAMETER_TYPES = "The method '%s.%s()' has incorrect parameter types(actual - '%s'; expected - '%s')!";
 
@@ -679,7 +681,7 @@ public class T04ValidateBagMethods \{
                 new ExpMethod(int.class, "getCapacity"),
         \};
 
-        for (ExpMethod method \: methods) \{
+        for (ExpMethod method : methods) \{
             validateMethod(clazz, method);
         \}
     \}
@@ -708,7 +710,7 @@ public class T04ValidateBagMethods \{
     \}
 
     private String arrayToString(Class\[\] array) \{
-        String\[\] stringArray = Arrays.stream(array).map(Class\:\:getSimpleName).toArray(String\[\]\:\:new);
+        String\[\] stringArray = Arrays.stream(array).map(Class::getSimpleName).toArray(String\[\]::new);
         String arrayStr = String.join(", ", stringArray);
 
         return arrayStr;
@@ -717,11 +719,11 @@ public class T04ValidateBagMethods \{
     private String findMethodFromMethods(Class clazz, String methodName) \{
         Method\[\] methods = clazz.getMethods();
 
-        Method\[\] methodsWithGivenName = Arrays.stream(methods).filter(m -\> m.getName().equals(methodName)).toArray(Method\[\]\:\:new);
+        Method\[\] methodsWithGivenName = Arrays.stream(methods).filter(m -\> m.getName().equals(methodName)).toArray(Method\[\]::new);
 
         StringBuilder sb = new StringBuilder();
 
-        for (Method method \: methodsWithGivenName) \{
+        for (Method method : methodsWithGivenName) \{
             String parameterTypes = arrayToString(method.getParameterTypes());
             sb.append("\{ " + parameterTypes + " \} ");
         \}
@@ -762,7 +764,7 @@ import java.lang.reflect.Method;
 import java.util.Arrays;
 
 public class T05ValidatePresentInstance \{
-    private static final String METHOD_INCORRECT_RETURN_VALUE = "The method '%s.%s' returns invalid data (actual result\: '%s'; expected - '%s')!";
+    private static final String METHOD_INCORRECT_RETURN_VALUE = "The method '%s.%s' returns invalid data (actual result: '%s'; expected - '%s')!";
 
     @Test
     public void validatePresentInstance() \{
@@ -802,7 +804,7 @@ public class T05ValidatePresentInstance \{
     \}
 
     private Object createObjectInstance(Class clazz, Object\[\] arguments) \{
-        Class\[\] argumentTypes = Arrays.stream(arguments).map(Object\:\:getClass).toArray(Class\[\]\:\:new);
+        Class\[\] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class\[\]::new);
 
         Constructor ctor = null;
         try \{
@@ -879,7 +881,7 @@ import java.util.Arrays;
 
 public class T06ValidateBagAddMethod \{
 
-    private static final String METHOD_INCORRECT_RETURN_VALUE = "The method '%s.%s' returns invalid data (actual result\: '%s'; expected - '%s')!";
+    private static final String METHOD_INCORRECT_RETURN_VALUE = "The method '%s.%s' returns invalid data (actual result: '%s'; expected - '%s')!";
 
     @Test
     public void validateBagAddMethod()\{
@@ -924,7 +926,7 @@ public class T06ValidateBagAddMethod \{
     \}
 
     private Object createObjectInstance(Class clazz, Object\[\] arguments) \{
-        Class\[\] argumentTypes = Arrays.stream(arguments).map(Object\:\:getClass).toArray(Class\[\]\:\:new);
+        Class\[\] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class\[\]::new);
 
         Constructor ctor = null;
         try \{
@@ -1002,7 +1004,7 @@ import java.util.Arrays;
 
 public class T07ValidateBagAddMethodWithFilledCapacity \{
 
-    private static final String METHOD_INCORRECT_RETURN_VALUE = "The method '%s.%s' returns invalid data (actual result\: '%s'; expected - '%s')!";
+    private static final String METHOD_INCORRECT_RETURN_VALUE = "The method '%s.%s' returns invalid data (actual result: '%s'; expected - '%s')!";
 
     @Test
     public void validateBagAddMethod()\{
@@ -1052,7 +1054,7 @@ public class T07ValidateBagAddMethodWithFilledCapacity \{
     \}
 
     private Object createObjectInstance(Class clazz, Object\[\] arguments) \{
-        Class\[\] argumentTypes = Arrays.stream(arguments).map(Object\:\:getClass).toArray(Class\[\]\:\:new);
+        Class\[\] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class\[\]::new);
 
         Constructor ctor = null;
         try \{
@@ -1129,7 +1131,7 @@ import java.lang.reflect.Method;
 import java.util.Arrays;
 
 public class T08ValidateBagRemoveMethod \{
-    private static final String METHOD_INCORRECT_RETURN_VALUE = "The method '%s.%s' returns invalid data (actual result\: '%s'; expected - '%s')!";
+    private static final String METHOD_INCORRECT_RETURN_VALUE = "The method '%s.%s' returns invalid data (actual result: '%s'; expected - '%s')!";
 
     @Test
     public void validateBagRemoveMethod() \{
@@ -1188,7 +1190,7 @@ public class T08ValidateBagRemoveMethod \{
     \}
 
     private Object createObjectInstance(Class clazz, Object\[\] arguments) \{
-        Class\[\] argumentTypes = Arrays.stream(arguments).map(Object\:\:getClass).toArray(Class\[\]\:\:new);
+        Class\[\] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class\[\]::new);
 
         Constructor ctor = null;
         try \{
@@ -1265,7 +1267,7 @@ import java.lang.reflect.Method;
 import java.util.Arrays;
 
 public class T09ValidatePresentToStringMethod \{
-    private static final String METHOD_INCORRECT_RETURN_VALUE = "The method '%s.%s' returns invalid data (actual result\: '%s'; expected - '%s')!";
+    private static final String METHOD_INCORRECT_RETURN_VALUE = "The method '%s.%s' returns invalid data (actual result: '%s'; expected - '%s')!";
 
     @Test
     public void validatePresentToStringMethod() \{
@@ -1308,7 +1310,7 @@ public class T09ValidatePresentToStringMethod \{
     \}
 
     private Object createObjectInstance(Class clazz, Object\[\] arguments) \{
-        Class\[\] argumentTypes = Arrays.stream(arguments).map(Object\:\:getClass).toArray(Class\[\]\:\:new);
+        Class\[\] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class\[\]::new);
 
         Constructor ctor = null;
         try \{
@@ -1387,7 +1389,7 @@ import java.lang.reflect.Method;
 import java.util.Arrays;
 
 public class T10ValidateHeaviestPresentMethod \{
-    private static final String METHOD_INCORRECT_RETURN_VALUE = "The method '%s.%s' returns invalid data (actual result\: '%s'; expected - '%s')!";
+    private static final String METHOD_INCORRECT_RETURN_VALUE = "The method '%s.%s' returns invalid data (actual result: '%s'; expected - '%s')!";
 
     @Test
     public void validateHeaviestPresentMethod() \{
@@ -1450,7 +1452,7 @@ public class T10ValidateHeaviestPresentMethod \{
     private Object createObjectInstance(Class clazz, Object\[\] arguments) \{
         Constructor ctor = null;
 
-        Class\[\] argumentTypes = Arrays.stream(arguments).map(Object\:\:getClass).toArray(Class\[\]\:\:new);
+        Class\[\] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class\[\]::new);
 
         try \{
             ctor = clazz.getConstructor(argumentTypes);
@@ -1526,7 +1528,7 @@ import java.lang.reflect.Method;
 import java.util.Arrays;
 
 public class T11ValidateBagReportMethod \{
-    private static final String METHOD_INCORRECT_RETURN_VALUE = "The method '%s.%s' returns invalid data (actual result\: '%s'; expected - '%s')!";
+    private static final String METHOD_INCORRECT_RETURN_VALUE = "The method '%s.%s' returns invalid data (actual result: '%s'; expected - '%s')!";
 
     @Test
     public void validateBagReportMethod() \{
@@ -1550,7 +1552,7 @@ public class T11ValidateBagReportMethod \{
         Object presentThreeObject = createObjectInstance(presentClazz, presentThreeArguments);
 
         Object expectedReport = String.format(
-                "black bag contains\:%n" +
+                "black bag contains:%n" +
                         "Present Doll (0.40) for a girl%n" +
                         "Present Train (2.00) for a boy%n" +
                         "Present Car (3.00) for a boy");
@@ -1593,7 +1595,7 @@ public class T11ValidateBagReportMethod \{
     private Object createObjectInstance(Class clazz, Object\[\] arguments) \{
         Constructor ctor = null;
 
-        Class\[\] argumentTypes = Arrays.stream(arguments).map(Object\:\:getClass).toArray(Class\[\]\:\:new);
+        Class\[\] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class\[\]::new);
 
         try \{
             ctor = clazz.getConstructor(argumentTypes);

@@ -23,7 +23,7 @@ First, to the party reservation Filter Module (**TPRF** Module for short) is pas
 
 Next the **TPRF** receives a sequence of commands that specify if you need to add or remove a given filter.  
 
-**TPRF** Commands are in the given format \{command;filter type;filter parameter\}
+**TPRF** Commands are in the given format "\{**command;filter type;filter parameter**\}"
 
 You can receive the following **TPRF** commands: "**Add filter**", "**Remove filter**" or "**Print**". 
 
@@ -31,16 +31,22 @@ The possible **TPRF** filter types are: "**Starts with**", "**Ends with**", "**L
 
 All **TPRF** filter parameters will be a string (or an integer for the length filter). 
 
-The input will end with a "**Print**" command. See the examples below: 
+The input will end with a "**Print**" command. 
+
+See the examples below: 
 
 ## Examples
 
-| Input | Output |
+| **Input** | **Output** |
 | --- | --- |
 | Peter Michael Slav | Slav |
 | Add filter;Starts with;P | |
 | Add filter;Starts with;M | | 
 | Print | |
+
+
+
+| **Input** | **Output** |
 | --- | --- |
 | Peter Michael Bob  | Michael |
 | Add filter;Starts with;P  | Bob | 

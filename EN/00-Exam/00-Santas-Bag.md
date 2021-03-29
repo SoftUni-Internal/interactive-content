@@ -10,7 +10,7 @@ Pay attention to name the package (**christmas**), all the classes, their fields
 
 It is also important to keep the project structure as described above. 
 
-Download the resources from [Here](https://videos.softuni.org/resources/java/java-oop-basics/Java-Basics-OOP-Exam-Christmas_Skeleton.zip)
+Download the resources from [here](https://videos.softuni.org/resources/java/java-oop-basics/Java-Basics-OOP-Exam-Christmas_Skeleton.zip)
 
 ## Problem Description
 
@@ -28,10 +28,12 @@ The class constructor should receive (**name, weight and gender**).
 
 The class should contain the methods: 
 
-**- getName()**
-**- getWeight()**
-**- getGender()**
-- Override the **toString()** method in the following format: "Present \{name\} (\{weight\}) for a \{gender\}" 
+- **getName()**
+- **getWeight()**
+- **getGender()**
+- Override the **toString()** method in the following format: 
+
+"**Present** \{**name**\} (\{**weight**\}) **for a** \{**gender**\}" 
 
 **Note: Format the weight to the second digit after the decimal point!** 
 
@@ -39,34 +41,37 @@ The class should contain the methods:
 
 **Next**, write a **Java** class **Bag** that has **data** (a collection which stores the entity **Present**). 
 
-All entities inside the repository have the **same fields**. Also, the **Bag** class should have those fields: 
+All entities inside the repository have the **same fields**. 
+
+Also, the **Bag** class should have those fields: 
 
 - **color: String** 
 - **capacity: int** 
-- **data: List<Present>** - holds all added presents in the bag 
+- **data:** **List**\<**Present**\> - holds all added presents in the bag 
 
 The class **constructor** should receive (**color, capacity**), also it should initialize the **data** with a new instance of the collection. 
 
 Implement the following features:
 
-**- getColor()** 
-**- getCapacity()** 
-**- count()** method– **returns** the **number** of presents 
-**- add(Present present)** method – **adds** an **entity** to the data if **there is room** for it 
-**- remove(String name)** method – removes an present by **given name**, if such **exists**, and **returns boolean** 
-**- heaviestPresent()** method – returns the **heaviest** present 
-**- getPresent(String name)** method – returns the present with the **given name** 
-**- report()** method – **returns a string** in the following **format** (print the presents in order of appearance): 
-"\{color of Bag\} bag contains:
-\{Present1\} 
-\{Present2\}
-(…)"
+- **getColor()** 
+- **getCapacity()** 
+- **count()** method - **returns** the **number** of presents 
+- **add(Present present)** method - **adds** an **entity** to the data if **there is room** for it 
+- **remove(String name)** method - removes an present by **given name**, if such **exists**, and **returns boolean** 
+- **heaviestPresent()** method - returns the **heaviest** present 
+- **getPresent(String name)** method - returns the present with the **given name** 
+- **report()** method - **returns a string** in the following **format** (print the presents in order of appearance): 
+
+"\{**color of Bag**\} **bag contains:**
+\{**Present1**\} 
+\{**Present2**\}
+**(…)**"
 
 ### Constraints
 
-- The **names** of the presents will be **always unique**. 
-- The **weights** of the presents will always be with **positive values**. 
-- You will always have a present added before receiving methods. 
+- The **names** of the presents will be **always unique**
+- The **weights** of the presents will always be with **positive values**
+- You will always have a present added before receiving methods
 
 
 ## Example
@@ -74,6 +79,7 @@ Implement the following features:
 This is an example how the **Bag** class is **intended to be used**.
 
 **Sample code usage**
+
 ```java
 // Initialize the repository 
 Bag bag = new Bag("black", 10); 
