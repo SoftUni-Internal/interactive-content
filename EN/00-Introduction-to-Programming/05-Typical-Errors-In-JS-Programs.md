@@ -5,29 +5,31 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-38-39-40-Typical-Errors-In-JS-Programs-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Visual Studio Code has a way to show us most of the basics errors we can make.
+Visual Studio Code has a way to show us most of the basic errors we could make.
 
 It **underlines** the wrong code that cannot be compiled.
 
-Some of the basic common mistakes we can face:
+Some of the common mistakes we can face are:
 
-- Mixing of **lowercase** and **uppercase** letters in syntax
+- Mixing of **lowercase** and **uppercase** letters in the syntax
 
 - Wrong Syntax
 
-- Missing quotes `"` or a bracket `(` or `)`
+- Missing quotes - `"` 
+- 
+- A missing bracket - `(` or `)`
 
-- Confusing **Addition** and **Concatenation**
+- Confusing the **Addition** and the **Concatenation** operations
 
 The `+` operator has two functionalities.
 
-**Addition** is for numbers.
+**Addition** - for numbers.
 
-**Concatenation** is for strings.
+**Concatenation** - for strings.
 
-- Confusing the **assignment** (`=`) and **equality** (`==`, `===`) operators.
+- Confusing the **assignment** (`=`) and the **equality** (`==`, `===`) operators
 
-In JavaScript, double equal and triple equal signs are called comparison operators.
+In JavaScript, the equality operators (`==`, `===`) are also called **comparison** operators.
 
 [/slide]
 
