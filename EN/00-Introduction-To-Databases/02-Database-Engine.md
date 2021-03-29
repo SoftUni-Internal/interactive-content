@@ -6,7 +6,7 @@
 
 The server in a client-server model is simply the **DBMS**, whereas the client is the database application serviced by the **DBMS**.
 
-We have distributed client-server when the client is on one computer and the server and database are on another. It is simply referred to as the client-server model.
+We have distributed client-servers when the client is on one computer and the server and database are on another. It is simply referred to as the client-server model.
 
 The connection between the client and the server is done over **TCP/IP** - Transmission Control Protocol/Internet Protocol.
 
@@ -14,11 +14,9 @@ TCP is responsible for transferring data in small packages and the IP is respons
 
 Here are some of the default ports used by databases:
 
-- MySQL 3306
-- Microsoft SQL SErver 1433
-- Oracle 1521
-
-Microsoft SQL Server uses SQL Server Menagament Studio - **SSMS**.
+- MySQL - 3306
+- Microsoft SQL Server - 1433
+- Oracle - 1521
 
 MySQL has many clients: HeidiSQL, MySQL Workbench, etc.
 
