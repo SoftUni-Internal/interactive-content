@@ -8,20 +8,20 @@
 
 ## In this lesson, you will learn:
 
-**1. Defining Simple Classes**
-- Classes as a template for creating objects
+**1. Defining Classes**
+- Classes as a object templates
 
 **2. Fields**
-- Storing data that is accessible to use by constructors and methods
+- How to store data that is accessible by constructors and methods
 
 **3. Methods**
-- Performing specific tasks
+- How to place different class functions in designated code blocks
 
 **4. Constructors**
-- Constructing an object by predetermined rules
+- Constructing objects with a predetermined set of variables
 
 **5. Static Members**
-- Working with static fields and methods
+- Use of the Static keyword
 
 [/slide]
 
