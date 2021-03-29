@@ -691,7 +691,7 @@ public class Course implements Serializable {
 Once you are done creating the class, make a new instance of it, inside `main()`:
 
 ```java
-Course course = new Course("Programming with Python",  32);
+Course courseOne = new Course("Programming with Python",  32);
 ```
 
 Create a `try-catch` block:
@@ -700,7 +700,7 @@ Create a `try-catch` block:
 try {
     FileOutputStream fileOut = new FileOutputStream("course.ser");
     ObjectOutputStream objectOut = new ObjectOutputStream(fileOut);
-    objectOut.writeObject(course);
+    objectOut.writeObject(courseOne);
     objectOut.close();
 
     System.out.println("The object was succesfully written to a file! ☑️");
