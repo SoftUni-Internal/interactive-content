@@ -67,13 +67,13 @@ Functional software developers need to **switch their thinking style** from trad
 
 - They combine multiple programming paradigms: 
 
-- **Functional**, **declarative**, **imperative**, **object-oriented**, **component-based**, **event-driven**, **asynchronous** programming, and many others.
+- **Functional**, **declarative**, **imperative**, **object-oriented**, **component-based**, **event-driven**, **asynchronous** programming, and many others
 
 
 
 **Examples** of popular general-purpose multi-paradigm programming languages are:
 
-- JavaScript, C#, Python, Java, PHP, C++, Go, Swift and TypeScript.
+- JavaScript, C#, Python, Java, PHP, C++, Go, Swift and TypeScript
 
 All these languages combine multiple concepts and paradigms for structuring the program to simplify the work of developers and improve their **efficiency** and **performance**.
 

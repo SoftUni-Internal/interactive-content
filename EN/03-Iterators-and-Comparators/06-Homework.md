@@ -671,7 +671,7 @@ No elements
 
 [task-description]
 # Description
-Let's play a game.
+Let us play a game.
 
 You have a tiny little **Frog** and a **Lake** with numbers.
 
