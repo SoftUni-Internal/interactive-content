@@ -5,6 +5,8 @@
 
 # Collections Hierarchy
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/RO/interactive-java-advanced-iterators-and-comparators-12-13-Iterable-and-Iterator-Collections-Hierarchy--,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Interfața Colecției extinde Iterabil și de aici, toate clasele pui ale Colecției, vor implementa, de asemenea, Iterabil 
 
 [image assetsSrc="iterators-example(1).png" /]
@@ -14,6 +16,8 @@ Interfața Colecției extinde Iterabil și de aici, toate clasele pui ale Colec�
 
 [slide hideTitle]
 # Iterable
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/RO/interactive-java-advanced-iterators-and-comparators-14-15-Iterable-T-and-Methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 `Iterable<T>` este interfața rădăcină a claselor colecției Java. 
 
@@ -114,6 +118,8 @@ names.forEachRemaining((name) -> System.out.println(name));
 [slide hideTitle]
 
 # Implementarea Custom Iterator
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/RO/interactive-java-advanced-iterators-and-comparators-16-Iterator-T-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `iterator()` method returns a `new Iterator` which implements `Iterator<String>` and passes them to the `iterator()` method.
 
@@ -246,6 +252,9 @@ public class NamesList implements Iterable<String> {
 
 [slide hideTitle]
 # Problemă cu Soluție: Library
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/RO/interactive-java-advanced-iterators-and-comparators-17-Problem-and-Solution-Library-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Library" timeLimit=5000 taskId="oop-basics-java-iterators-and-comparators-lab-Library" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
 

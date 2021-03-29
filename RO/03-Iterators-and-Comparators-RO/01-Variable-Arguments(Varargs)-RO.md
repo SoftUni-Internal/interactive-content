@@ -4,6 +4,8 @@
 
 # Argumentele Variabile (Varargs)
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/RO/interactive-java-advanced-iterators-and-comparators-3-4-Variable-Arguments-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Să presupunem că trebuie să creați o metodă Java.
 
 Nu știți, însă, sigur, **how many arguments** va accepta metoda voastră. 
@@ -46,6 +48,8 @@ După cum puteți vedea, invocăm aceasta metodă de mai multe ori,trecând prin
 
 # Regulile Argumentelor Variabile 
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/RO/interactive-java-advanced-iterators-and-comparators-5-Vaiable-Arguments-Rules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Varargs sunt bune de folosit. 
 
 Dar există câteva reguli pe care trebuie să le rețineți :
@@ -81,6 +85,8 @@ void method(String a, int... b){
 
 [slide]
 # Problemă cu Soluție: Book
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/RO/interactive-java-advanced-iterators-and-comparators-6-Problem-and-Solution-book-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Book" timeLimit=5000 taskId="oop-basics-java-iterators-and-comparators-lab-Book" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]

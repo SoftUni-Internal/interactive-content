@@ -3,6 +3,8 @@
 
 # Comparator
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/RO/interactive-java-advanced-iterators-and-comparators-20-21-Comparator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Interfața Comparator ne ajută să aducem o **custom comparison logic for types that we have no control over**.
 
 Este pur și simplu o  **external class** care expune o metodă `compare()` care **accepts two objects**. 
@@ -18,6 +20,8 @@ Rețineți că un Comparator este o clasă externă ceea ce înseamnă că **wil
 [slide hideTitle]
 
 # Comparabil
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/RO/interactive-java-advanced-iterators-and-comparators-22-23-Comparable-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Comparable ne permite să specificăm cum obiectele pe care le implementăm **compare to objects of the same type**. 
 
@@ -81,6 +85,8 @@ Aceasta ne permite să implementăm metoda `compareTo()` prin **accepting a Stud
 
 # Comparator - Example
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/RO/interactive-java-advanced-iterators-and-comparators-24-Comparator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 In următorul exemplu, vom compara **two Student objects** în funcție de vârsta lor. 
 
 Comparatorul nostru de Vârstă va implementa **Comparator** de tip **Student**.
@@ -115,6 +121,9 @@ public class AgeComparator implements Comparator<Student> {
 
 [slide hideTitle]
 # Problemă cu Soluție: Comparable Book
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/RO/interactive-java-advanced-iterators-and-comparators-26-Problem-and-Solution-Comprabale-Book-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Comparable Book" timeLimit=5000 taskId="oop-basics-java-iterators-and-comparators-lab-Comparable-Book" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
 
@@ -329,6 +338,9 @@ Test Passed!
 
 [slide hideTitle]
 # Problemă cu Soluție: Book Comparator
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/RO/interactive-java-advanced-iterators-and-comparators-27-Problem-and-Solution-Book-Comparator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Book Comparator" timeLimit=5000 taskId="oop-basics-java-iterators-and-comparators-lab-Book-Comparator" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
