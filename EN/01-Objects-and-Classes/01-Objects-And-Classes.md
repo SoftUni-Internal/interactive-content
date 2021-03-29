@@ -11,9 +11,9 @@ An object is a **basic unit** and an **instance of a class**.
 
 Classes define templates for **fields**, **constructors**, and **methods**.
 
-Objects in programming are modelled after **real-world objects**.
+Objects in programming are modeled after **real-world objects**.
 
-If we take dogs, for example: they have a **breed** (state) and a specific behavior (barking, wagging their tail, eating).
+If we take dogs, for example, they have a **breed** (state) and a specific behavior (barking, wagging their tail, eating).
 
 Each object in Java has:
 
@@ -50,7 +50,7 @@ Classes and objects are the **two main aspects** of object-oriented programming.
 
 A class can be defined as a template that describes the behavior that the object of its type support.
 
-Classes provide **structure the objects**. 
+Classes provide a way to structure objects.
 
 Classes define: 
 
