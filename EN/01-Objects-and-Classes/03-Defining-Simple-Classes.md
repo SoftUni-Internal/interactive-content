@@ -5,7 +5,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-14-15-defining-simple-classes-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
- When defining classes in Java there are some components that are required and some that are optional.
+When defining classes in Java some components are required and some are optional.
 
 The **obligatory** components are:
 
@@ -27,7 +27,7 @@ Each **class**, **field**, **constructor**, or **method** can have an **access m
 
 The default access modifier is applied when we do not specify any keyword.
 
-By default every class is available to any other class in the same package.
+By default, every class is available to any other class in the same package.
 
 There is a possibility to **automatically** generate **constructors**, **getters**, **setters**, and other commonly used methods via **IntelliJ IDEA**. 
 
