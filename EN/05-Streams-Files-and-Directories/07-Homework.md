@@ -583,7 +583,7 @@ try {
 }
 ```
 
-Create a `FileOutputStream` called **WriteData** and set the name of the file as **list.ser**.
+Create a `FileOutputStream` called **writeData** and set the name of the file as **list.ser**.
 
 By providing only the **name**, without a path, the file will be saved in the project's main directory.
 
