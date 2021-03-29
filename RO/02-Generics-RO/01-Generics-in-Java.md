@@ -4,7 +4,7 @@
 
 # The Problem Before Java 5.0
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/EN/interactive-java-advanced-generics-4-5-Generics-The-Problem-before-Java-5-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/RO/interactive-java-advanced-generics-4-5-Generics-The-Problem-before-Java-5-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Java Generics were introduced in Java 5.0 to provide compile-time type checking and removing the risk of `ClassCastException` that was common while working with collection classes.
 
@@ -44,7 +44,7 @@ The cast can cause type-related **runtime errors** if a programmer makes a mista
 
 # Generics - Type Safety
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/EN/interactive-java-advanced-generics-6-Type-Safety-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/RO/interactive-java-advanced-generics-6-Type-Safety-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The core idea behind generics is that programmers can express their intention of using **specific types** and **the compiler can ensure the correctness of such type.**
 
