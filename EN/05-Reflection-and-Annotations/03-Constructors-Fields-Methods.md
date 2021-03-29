@@ -51,7 +51,7 @@ Like in the code above - It was a constructor taking `String`, so we supplied on
 
 Analogically to the way we get constructors, we can obtain **class members**.
 
-Let us see how we can recieve all **public** fields:
+Let us see how we can receive all **public** fields:
 
 ``` java
 Field field = aClass.getField("fieldname");
