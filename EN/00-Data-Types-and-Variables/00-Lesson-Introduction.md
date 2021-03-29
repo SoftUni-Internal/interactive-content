@@ -14,21 +14,21 @@
 
 - What is a variable 
 
-**2. The integer and double Data Types**
+**2. The Integer and the Double Data Types**
 
-- The difference between The Integer and Double types
+- The difference between The Integer and Double data types
 
 **3. Type Conversion (Casting)**
 
 - Implicit vs explicit conversion
 
-**4. Boolean Type**
+**4. The Boolean Data Type**
 
 - What is a boolean value
 
 - An overview of the Boolean data type 
 
-**5. Character and String Type**
+**5. The Character and The String Data Types**
 
 - An overview of the Character data type
 
