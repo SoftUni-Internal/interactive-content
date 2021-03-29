@@ -5,12 +5,12 @@
 [code-task title="Opinion Poll" taskId="oop-basics-java-defining-classes-Opinion-Poll" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-## Description
+## Descriere
 Creați clasa "**Person**" cu două câmpuri "**String name**" și "**int age**", scrieți un program care să citească din consolă **N** linii de informații personale și apoi imprimați toate persoanele a căror **age** este **more than 30** ani, **sorted in alphabetical order**.
 
 **Note:** puteți folosi `stream()` pentru a filtra persoanele. 
 
-## Exemples
+## Exemplu
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 3 | John - 48 |
@@ -201,7 +201,7 @@ Anntoanette - 39
 [code-task title="Company Roster" taskId="oop-basics-java-defining-classes-Company-Roster" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-## Description
+## Descriere
 Definiți o clasă **Employee** care conține următoarele informații : **name, salary, position, department, email** și **age**.
 
 Informațiile **name, salary, position** și **department** sunt **mandatory** în timp ce celelalte sunt **optional**.
@@ -214,7 +214,7 @@ Suma **salary** trebuie să fie imprimată **two decimal places** după separato
 
 **Hint**: puteți defini clasa **Department** care cuprinde o listă de angajați. 
 
-## Exemples
+## Exemplu
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 4 | Highest Average Salary: Development |
@@ -374,7 +374,7 @@ Victor 0.03 sales@uni.eu 23
 [code-task title="Speed Racing" taskId="oop-basics-java-defining-classes-Speed-Racing" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-## Description
+## Descriere
 Sarcina voastră este să implementați un program care să țină cont de traseul mașinilor și de combustibil și să suporte metode pentru mișcarea mașinilor. 
 
 Definiți clasa **Car** care să țină cont de informațiile despre mașini, astfel: **Model, fuel amount, fuel cost for 1 kilometer**, și **distance traveled**.
@@ -399,13 +399,13 @@ Dacă poate,  **fuel amount** pentru mașina respectivă trebuie să fie **reduc
 
 "**Insufficient fuel for the drive**"
 
-După primirea comenzii "**End**" imprimați fiecare mașină în ordinea apariției în input și cantitatea curentă de combustibil și distanța parcursă în formatul :
+După primirea comenzii "**End**" imprimați fiecare mașină în ordinea apariției în input și cantitatea curentă de combustibil și distanța parcursă în formatul:
 
-`<model> <fuelAmount> <distanceTraveled>`
+"\<**model**\> \<**fuelAmount**\> \<**distanceTraveled**\>"
 
 Când cantitatea de combustibil trebuie să fie rotunjită până la **second decimal place**.
 
-## Examples
+## Exemplu
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 2 | AudiA4 17.60 18 |
@@ -594,7 +594,7 @@ K 0.00 4
 [code-task title="Raw Data" taskId="oop-basics-java-defining-classes-Raw-Data" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-## Description
+## Descriere
 Sunteți proprietarul unei companii de curierat și vreți să creați un sistem de urmărire a mașinilor și a mărfurilor. 
 
 Definiți o clasă **Car** care conține informații despre  **model, engine, cargo**, și o **collection of exactly 4 tires**.
@@ -617,7 +617,7 @@ Dacă primiți comanda "**flamable**" imprimați toate mașinile al căror **car
 
 Mașinile în intrare, pe linii separate. 
 
-## Exemple
+## Exemplu
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 2 | Citroen2CV |
@@ -743,7 +743,7 @@ T
 [code-task title="Car Salesman" taskId="oop-basics-java-defining-classes-Car-Salesman" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-## Description
+## Descriere
 Definiți două clasee **Car** și **Engine**.
 
 O **Car** are un **model, engine, weight** și **color**.
@@ -786,7 +786,7 @@ Color: <carColor>
 
 Suprascrieți metoda claselor `toString()` pentru a avea un mod reutilizabil de a arăta obiectele.
 
-## Exemples
+## Exemplu
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 2 | FordFocus: |
@@ -1862,7 +1862,7 @@ Color: Gray
 [code-task title="Pokemon Trainer" taskId="oop-basics-java-defining-classes-Pokemon-Trainer" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-## Description
+## Descriere
 Vă doriți să fiți cel mai bun antrenor de pokemon, mai bun decât oricare altul, deci trebuie să prindeți pokemon. 
 
 Definiți o clasă **Trainer** și o clasă **Pokemon**.
@@ -1899,7 +1899,7 @@ Imprimați în format:
 
 "\<**trainerName**\> \<**badges**\> \<**numberOfPokemon**\>"
 
-## Exemple
+## Exemplu
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | Peter Charizard Fire 100 | Peter 2 2 |
@@ -2207,10 +2207,10 @@ G 0 0
 [code-task title="Personal Information" taskId="oop-basics-java-defining-classes-Personal-Information" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-## Description
+## Descriere
 *You and your friends decide to create a Class that holds all the information about all of you, even your pokemon collection. Since you are good at writing code, they asked you to design that Class.*
 
-Din consolă, veți primi linii, până la comanda `End`.
+Din consolă, veți primi linii, până la comanda "**End**".
 
 Fiecare dintre linii va conține informații despre o persoană, într-unul dintre formatele următoare: 
 
@@ -2255,7 +2255,7 @@ Imprimați informația în următorul format:
 \{**childName**\} \{**childBirthday**\}"
 
 
-## Exemple
+## Exemplu
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | Peter company PeshInc Management 1000.00 | Tom |
@@ -2470,14 +2470,14 @@ LR 01/01/1000
 [code-task title="Family Tree" taskId="oop-basics-java-defining-classes-Familiy-Tree" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-## Description
+## Descriere
 *You want to build your family tree, so you went to ask your grandmother.*
 
 *Sadly your grandmother keeps remembering information about your predecessors in pieces, so it falls to you to group the information and build the family tree.*
 
 Pe prima linie de intrare, veți primi fie un nume, fie o dată de naștere, în următorul format: 
 
-"\<**FirstName**\> \<**LastName**\>" or "**day/month/year**"
+"\<**FirstName**\> \<**LastName**\>" și "**day/month/year**"
 
 Sarcina voastră este să găsiți informații despre persoană în arborele genealogic. 
 
@@ -2513,7 +2513,7 @@ Indiferent dacă au apărut ca date de naștere sau nume.
 
 De exemplu, în prima linie Stan este înaintea lui Jenny, fiindcă data sa de naștere apare prima din a doua lonie, în timp ce ea a apărut în a treia linie.
 
-## Exemple
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | John Baker | John Baker 23/05/1980 |
@@ -2773,7 +2773,7 @@ Abc7 Abcde 26/9/1974
 [code-task title="Cat Catalog" taskId="oop-basics-java-defining-classes-Cat-Catalog" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-## Description
+## Descriere
 *The people from a pet shelter need to have a catalog of their cats with the breed and special characteristics.*
 
 Sunt trei rase de pisici **"Siamese"**, **"Cymric"** și **"DomesticShorthair"**. 
@@ -2784,19 +2784,24 @@ De exemplu, caracteristica specială a pisicii **Siamese** cats este **ear size*
 
 Toate informațiile despre pisci, rasele lor și caracteristicile, trebuie colectate. 
 
-Veți primi din consolă linii de informații despre o pisică, până la comanda `End`.
+Veți primi din consolă linii de informații despre o pisică, până la comanda "**End**".
 
-Informația va veni in **one of** formatele următoare :
+Informația va veni in **one of** formatele următoare:
 
-- `Siamese <name> <earSize>`
-- `Cymric <name> <furLength>`
-- `DomesticShorthair  <name> <meowingVolume>`
+- "**Siamese** \<**name**\> \<**earSize**\>"
+- "**Cymric** \<**name**\> \<**furLength**\>"
+- "**DomesticShorthair** \<**name**\> \<**meowingVolume**\>"
 
-Pe prima linie, după comanda  `End` veți primi un **name** al pisicii. 
+Pe prima linie, după comanda "**End**" veți primi un **name** al pisicii. 
+
+
+Ar trebui să tipăriți informațiile pisicii în formatul:
+
+"\<**breed**\> \<**name**\> \<**numeric value of their special characteristic**\>"
 
 Trebuie să imprimați acea pisică și să rotunjiți numărul la **two digits** după separatorul de zecimale. 
 
-## Exemple
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | DomesticShorthair Kitty 85 | Cymric Tom 28.00 |

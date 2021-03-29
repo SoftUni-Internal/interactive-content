@@ -829,7 +829,7 @@ Override the classes `toString()` methods to have a reusable way of displaying t
 |  | Weight: n/a |
 |  | Color: Orange |
 
-## Example 2
+
 
 | **Input** | **Output** |
 | --- | --- |
@@ -2819,20 +2819,19 @@ You will receive lines of information about a cat until you get the `End` comman
 
 The information will come in **one of** the following formats:
 
-- `Siamese <name> <earSize>`
-- `Cymric <name> <furLength>`
-- `DomesticShorthair  <name> <meowingVolume>`
+- "**Siamese** \<**name**\> \<**earSize**\>"
+- "**Cymric** \<**name**\> \<**furLength**\>"
+- "**DomesticShorthair** \<**name**\> \<**meowingVolume**\>"
 
-On the last line after the `End` command, you will receive a cat's name. 
+On the last line after the "**End**" command, you will receive a cat's name. 
 
 You should print the cat's information in the format: 
-`<breed> <name> <numeric value of their special characteristic>`
+
+"\<**breed**\> \<**name**\> \<**numeric value of their special characteristic**\>"
 
 **Round** the numeric value of their ear size, fur length or meowing volume **to the second digit after the decimal place**.
 
 # Examples
-
-## Example 1
 
 | **Input** | **Output** |
 | --- | --- |
@@ -2842,7 +2841,6 @@ You should print the cat's information in the format:
 | End |  |
 | Tom |  |
 
-## Example 2
 
 | **Input** | **Output** |
 | --- | --- |
