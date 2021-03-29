@@ -477,6 +477,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 ```
 
+Or just `import java.io.*;`.
+
 Inside the `main` method, create a `try-catch` block:
 
 ```java
@@ -515,7 +517,8 @@ try {
     System.out.println("The image was copied successfully! 😎");
     
 } catch (IOException e) {
-    System.out.println("The file is either corrupted or missing. 😿");
+    System.out.println("There was a problem with the file. 😿");
+    e.printStackTrace();
 }
 ```
 
@@ -531,9 +534,7 @@ Create a program that saves and loads an **ArrayList** of doubles to a file usin
 Your IDE must add the following **imports** in the process:
 
 ```java
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
+import java.io.*;
 import java.util.ArrayList;
 ```
 
@@ -576,17 +577,39 @@ By providing only the **name**, without a path, the file will be saved in the pr
 
 `ObjectOutputStream` will handle writing the object into the file that `FileOutputStream` created.
 
-Calling thе `writeObject` method tells the program to start writing into **list.ser**.
+Calling thе `writeObject(numbers)` method tells the program to start writing into **list.ser**.
+
+A good practice is to use `.flush()` - it flushes the output stream and forces any buffered output bytes to be written out.
 
 Opening the **list.ser** file, you will see the **output**.
 
 ```
-�� sr java.util.ArrayListx����a� I sizexp   w   sr java.lang.Double���J)k� D valuexr java.lang.Number������  xp@G�����sq ~ @@@     sq ~ @'ffffffx
+���sr�java.util.ArrayListx����a��I�sizexp���w���sr�java.lang.Double���J)k��D�valuexr�java.lang.Number��������xp@G�����sq�~�@@@�����sq�~�@'ffffffx
 ```
 
 Do not worry if it does not make sense to you, Java can read it just fine.
 
-**Note:** Using this file, you can try **deserializing** the ArrayList.
+Using this file, you can **deserialize** the ArrayList.
+
+In the `main()` method, write:
+
+```
+try {
+    FileInputStream readData = new FileInputStream("list.ser");
+    ObjectInputStream readStream = new ObjectInputStream(readData);
+
+    ArrayList<Double> peopleDsl = (ArrayList<Double>) readStream.readObject();
+    readStream.close();
+    
+    System.out.println(peopleDsl.toString());
+    
+} catch (Exception e) {
+    System.out.println("An error occurred. 😿");
+    e.printStackTrace();
+}
+```
+
+You can now see the ArrayList's data, printed on the **console**.
 
 [/slide]
 
