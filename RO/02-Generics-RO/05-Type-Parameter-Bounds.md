@@ -4,7 +4,7 @@
 
 # Type Parameter Bounds
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/EN/interactive-java-advanced-generics-18-19-Type-Parameter-Bounds-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/RO/interactive-java-advanced-generics-18-19-Type-Parameter-Bounds-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In case you want to **restrict** the types that can be used as type arguments in a parameterized type, you have to use **bounded type parameters**.
 
@@ -35,7 +35,7 @@ T extends Number
 The code should look like this:
 
 ```java
-public class PowerOfThree<T extends Number>  {
+public class PowerOfThree<T extends Number> {
 
     public int powerOf(T number) {
         return number.intValue() * number.intValue() * number.intValue();
@@ -57,7 +57,7 @@ If we try to use another class that is **not a subclass of Number**, the compile
 
 # Problemă cu Soluție: Generic Scale
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/EN/interactive-java-advanced-generics-20-Problem-and-Solution-Generic-Scale-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/RO/interactive-java-advanced-generics-20-Problem-and-Solution-Generic-Scale-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Generic Scale" timeLimit=5000 taskId="oop-basics-java-generics-lab-Generic-Scale" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
@@ -276,7 +276,7 @@ Test Passed!
 
 # Problem with Solution: List Utilities
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/EN/interactive-java-advanced-generics-23-Problem-and-Solution-List-Utilities-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/RO/interactive-java-advanced-generics-23-Problem-and-Solution-List-Utilities-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="List Utilities" timeLimit=5000 taskId="oop-basics-java-generics-lab-List-Utilities" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
@@ -473,7 +473,7 @@ Test Passed!
 
 # Type Parameters Relationships
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/EN/interactive-java-advanced-generics-25-26-Type-Parameters-Relationship-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/RO/interactive-java-advanced-generics-25-26-Type-Parameters-Relationships-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Generics** are **invariant** - subtypes and supertypes are **not replaceable**.
 
