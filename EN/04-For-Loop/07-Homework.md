@@ -1190,11 +1190,11 @@ function adapter(input, code) {
 
 # Description
 
-Create a program, which prints the sum of a given range of numbers and all the numbers, divisible by 9 without a remainder:
+Create a program, which prints all the numbers, divisible by 9 without a remainder in a given range and their sum:
 
 - You will receive **two numbers**: the range to process
 
-- On the first line, print the sum of the numbers
+- On the first line, print the sum of the numbers, divisible by 9 without remainder
 
 - On the second line, print the numbers, divisible by 9 without remainder
 
@@ -1208,7 +1208,7 @@ Create a program, which prints the sum of a given range of numbers and all the n
 
 | **Input**   | **Output**  |
 | ----------- | ----------- |
-| solve(10, 20)   | The sum: 165                                |
+| solve(10, 20)   | The sum: 18                                 |
 |                 | 18                                          |
 
 [/task-description]
@@ -1227,7 +1227,7 @@ The sum: 1683
 solve(10, 20)
 [/input]
 [output]
-The sum: 165
+The sum: 18
 18
 [/output]
 [/test]
