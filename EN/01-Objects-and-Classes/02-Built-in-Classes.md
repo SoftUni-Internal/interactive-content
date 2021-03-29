@@ -239,7 +239,7 @@ To generate a random number in the specified range, use `rnd.nextInt(words.lengt
 [slide hideTitle]
 # BigInteger
 
-The `BigInteger` class helps dealing with very **big integer** calculations that are outside the limit of all available primitive data types.
+The `BigInteger` class is used for **big integer** calculations that are outside the limit of all available primitive data types.
 
 Its methods are **non-static**.
 
