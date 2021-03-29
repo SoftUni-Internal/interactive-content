@@ -713,7 +713,7 @@ try {
 
 Inside of `try`, set the name of the saved file as **course.ser**.
 
-Then, create an `ObjectOutputStream` instance in order to write the `course` object to the file.
+Then, create an `ObjectOutputStream` instance in order to write the `courseOne` object to the file.
 
 **Close** the output stream and create a `catch` block for **error handling**. 
 
