@@ -4,6 +4,8 @@
 
 # Refactoring
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/RO/02.Java-OOP-Basics-More-OOP-Concepts-16-17-Refactoring-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Refactorizare înseamnă restructurarea codului fără a-i schimba comportamentul**.
 
 - **Îmbunătățește** lizibilitatea codului
@@ -29,6 +31,8 @@ class OutputFormatter { public static void print() { … } }
 [slide hideTitle]
 # Tehnici de refactorizare
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/RO/02.Java-OOP-Basics-More-OOP-Concepts-18-Refactoring-Techniques-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 - **Breaking code** în unități reutilizabile
 - **Extragerea părților din metode** și **clase** în cele **noi**.
 
@@ -46,6 +50,8 @@ class OutputFormatter { public static void print() { … } }
 
 [slide hideTitle]
 # Problemă cu Soluție: Student System
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/RO/02.Java-OOP-Basics-More-OOP-Concepts-19-student-system-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Student System" taskId="oop-basics-java-more-oop-concepts-lab-Student-System" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 

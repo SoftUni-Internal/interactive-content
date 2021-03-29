@@ -1,6 +1,8 @@
 [slide hideTitle]
 # Rezumat
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/RO/02.Java-OOP-Basics-More-OOP-Concepts-41-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## În această lecție ați învățat:
 
 - Cu un cod bine organizat este mai ușor de lucrat

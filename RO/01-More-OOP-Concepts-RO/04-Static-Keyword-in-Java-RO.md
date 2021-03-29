@@ -4,6 +4,8 @@
 
 # Cuvânt Cheie Static
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/RO/02.Java-OOP-Basics-More-OOP-Concepts-28-29-Static-Keyword-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Folosim cuvânt cheie "**static**", în principal pentru gestionarea memoriei
 
 Se poate aplica la:
@@ -25,6 +27,8 @@ static void increaseCount() {
 [slide hideTitle]
 # Clasa statică
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/RO/02.Java-OOP-Basics-More-OOP-Concepts-30-Static-class-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 - O clasă de nivel superior este o clasă care nu este o clasă imbricată
 - O clasă imbricată este orice clasă a cărei declarație are loc în corpul altei clase sau interfețe
 - Numai clasele imbricate pot fi statice
@@ -41,6 +45,8 @@ class TopClass {
 [slide hideTitle]
 
 # Variabilă Statică
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/RO/02.Java-OOP-Basics-More-OOP-Concepts-31-32-33-Static-variable-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Variabila statică** poate fi utilizată pentru a se referi la variabila comună a tuturor obiectelor
 
@@ -84,6 +90,8 @@ public static void main(String[] args) {
 
 # Metoda Statică
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/RO/02.Java-OOP-Basics-More-OOP-Concepts-34-35-Static-Method-and-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Metoda statică aparține mai degrabă clasei decât obiectului unei clase**
 
 - Poate fi **invocat** fără a fi nevoie să creați o instanță a unei clase
@@ -110,6 +118,8 @@ class Calculate {
 [slide hideTitle]
 
 # Bloc Static
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/RO/02.Java-OOP-Basics-More-OOP-Concepts-36-37-Statick-block-and-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
  A **static block** represents a set of statements, which will be executed by the JVM before the execution of the main method.
 
