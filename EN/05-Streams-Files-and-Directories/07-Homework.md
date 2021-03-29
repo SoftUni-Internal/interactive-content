@@ -688,7 +688,9 @@ public class Course implements Serializable {
 }
 ```
 
-Once you are done creating the class, make a new instance of it, inside `main()`:
+Once you are done creating the class, open **Main.java**.
+
+Then, make a new instance of it, inside `main()`:
 
 ```java
 Course courseOne = new Course("Programming with Python",  32);
