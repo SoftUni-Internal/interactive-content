@@ -4,7 +4,10 @@
 
 # Funcții Speciale
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/RO/interactive-java-advanced-functional-programming-16-17-18-19-other-function-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## Consumator \<T\>
+
 
 În Java `Consumer<T>` este **interfață funcțională** care acceptă un singur argument și nu returnează nimic.
 
@@ -73,6 +76,8 @@ System.out.println(isEven.test(6)); // true
 
 [slide hideTitle]
 # Problemă cu Soluție: Count Uppercase Words
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/RO/interactive-java-advanced-functional-programming-20-Count-Uppercase-Words-Problem-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Count Uppercase Words" taskId="oop-basics-java-functional-programming-lab-Count-Uppercase-Words" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -216,6 +221,8 @@ Ipsum
 
 [slide hideTitle]
 # Problemă cu Soluție: Add VAT
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/RO/interactive-java-advanced-functional-programming-22-Add-VAT-Problem-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Add VAT" taskId="oop-basics-java-functional-programming-lab-Add-VAT" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
