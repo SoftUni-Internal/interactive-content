@@ -593,7 +593,7 @@ Using this file, you can **deserialize** the ArrayList.
 
 Clear out the `main()` method, and write:
 
-```
+```java
 try {
     FileInputStream readData = new FileInputStream("list.ser");
     ObjectInputStream readStream = new ObjectInputStream(readData);
@@ -674,7 +674,7 @@ public class Course implements Serializable {
 }
 ```
 
-Once you are done creating the class, initialize it inside `main()`:
+Once you are done creating the class, make a new instance of it, inside `main()`:
 
 ```java
 Course course = new Course("Programming with Python",  32);
@@ -705,14 +705,69 @@ Then, create an `ObjectOutputStream` instance in order to write the `course` obj
 
 Inside of it, print the **stack trace**.
 
+Assuming no errors occurred, the file is now saved in your project's directory:
+
+```
+���sr�com.company.Course�`��/�u�I�
+studentsCountL�namet�Ljava/lang/String;xp��� t�Programming with Python
+```
+
+To **deserialize** the object, use the following code:
+
+```java
+Course courseDsl;
+
+try {
+    FileInputStream fileIn = new FileInputStream("course.ser");
+    ObjectInputStream in = new ObjectInputStream(fileIn);
+
+    courseDsl = (Course) in.readObject();
+
+    in.close();
+    fileIn.close();
+
+    System.out.println(courseDsl.toString());
+
+} catch (Exception e) {
+    System.out.println("An exception occurred. 😾");
+    e.printStackTrace();
+}
+```
+
+Declare a new object of type `Course`, named **CourseDsl**.
+
+Create a `FileInputStream` to read **course.ser**.
+
+Then, create an `ObjectInputStream` instance.
+
+Use the `readObject()` method to **deserialize** the object.
+
+After **closing** the input streams, use the `courseDsl.toString()` method to **print** information:
+
+```
+Course name: Programming with Python, Students enrolled: 32
+```
 
 [/slide]
 
 [slide hideTitle]
 # Problem: Create Zip Archive
 
-Create a program that reads three **.txt** files and creates a zip archive named **files.zip**. 
+Create a program that reads three **.txt** files and creates a `zip` archive named **files.zip**. 
 
 Use **FileOutputStream**, **ZipOutputStream**, and **FileInputStream**.
+
+To start, create three **.txt** files in a new folder.
+
+
+You will need the following imports:
+
+```java
+import java.io.*;
+import java.util.*;
+import java.util.zip.*;
+```
+
+
 
 [/slide]
