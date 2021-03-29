@@ -35,8 +35,11 @@ Chiar daca există multe clase legate de fluxurile de octețit insa cele mai fre
 
 [code-task title="Copy Bytes" taskId="java-advanced-streams-files-lab-copy-bytes" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 
+[code-editor language=java]
+
 [/code-editor]
 [task-description]
+
 ## Descriere
 Citiți fișierul numit "**input.txt**" și scrieți într-un alt fișier fiecare caracter al **ASCII**.
 
