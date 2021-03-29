@@ -3,7 +3,7 @@
 
 The Java **Stream API** provides a **functional approach to process collections of objects/elements**. 
 
-It allows us to **reduce the code**, to create **more readable programs**, and to **improve productivity**. 
+It allows us to **reduce the code**, create **code that is easier to read**, and **improve productivity**. 
 
 It also provides **easier coding of parallel operations**. 
 
@@ -11,7 +11,7 @@ A Java Stream is a component that is capable of **internal iteration of its elem
 
 A stream is a **sequence of objects** that supports **various methods**. 
 
-The stream does **not change the original data structure**, it only provides result. 
+The stream does **not change the original data structure**, it only provides a result. 
 
 Stream pipeline is a **chain of stream source**, **intermediate operations**, and a **terminal operation**. 
 
@@ -27,11 +27,11 @@ The API has many **terminal operations** that aggregate a stream and return **on
 
 These operations work according to the predefined implementation. 
 
-It is called **terminal operation** because, in order to get the minimum value, we have to **traverse the values inside the stream** and get the result. 
+It is called **terminal operation** because, to get the minimum value, we have to **traverse the values inside the stream** and get the result. 
 
-After getting the min value, it is **not possible to convert that back into the stream**. 
+After getting the min value, it is **not possible to convert that back into a stream**. 
 
-Most of the methods use **lambda expressions**.
+Most methods use **lambda expressions**.
 
 [/slide]
 
@@ -189,7 +189,7 @@ System.out.println(average);
 
 Collections can be **modified** by using the `map()` method.
 
-Take a look at the following example:
+Take a look at the following examples:
 
 ```java
 int[] numbers = Arrays.stream(scanner.nextLine()
@@ -197,6 +197,8 @@ int[] numbers = Arrays.stream(scanner.nextLine()
             .mapToInt(e -> Integer.parseInt(e))
             .toArray();
 ```
+
+The code above splits the scanner input by space, then goes through each element with `maptoInt()`, parsing it to Integer.
 
 ```java live
 String[] words = {"abc", "def", "geh", "yyy"};
@@ -207,6 +209,10 @@ for (String word : words) {
     System.out.println(word);
 }
 ```
+
+In the above example, we are using the `map()` method to gothrough the elements in the **words** array.
+
+`w -> w + "yyy"` means that this lambda function takes in one parameter, which can be named "w", "x", "e", "element" or any way you like and performs an operation on each element (in this case, concatenating a string to each).
 
 [/slide]
 
@@ -253,6 +259,8 @@ int[] numbers = Arrays.stream(scanner.nextLine()
             .filter(n -> n > 0)
             .toArray();
 ```
+
+In the above example we are spliting the scanner input by space, parsing each element to Integer, then filtering and storings only elements that are greater than 0.
 
 [/slide]
 
@@ -571,7 +579,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Read a **list of integers** and **print the largest 3 of them**.
+Read a **list of integers** and **print the biggest 3 of them**.
 
 If there are **less** than 3 numbers, print **all** of them.
 
@@ -583,7 +591,7 @@ Read a list of integers.
 
 ## Output 
 
-Print the largest 3 numbers.
+Print the 3 biggest numbers.
 
 ## Examples
 | **Input** | **Output** |

@@ -5,7 +5,7 @@
 
 A lambda expression is an **anonymous function** that contains **expressions and statements**. 
 
-It is similar to a method, but it **does not need a name** and it can be implemented right in the body of a method, which can save us a lot of time and improve the code readability.
+It is similar to a method, but it **does not need a name** and it can be implemented directly in the body of a method, which can save us a lot of time and improve code readability.
 
 A lambda function is a **short block of code** that takes in parameters and returns a value.
 
@@ -15,7 +15,7 @@ The **left** side of the operator specifies the **input** parameters.
 
 The **right** side holds the method body of the lambda function - **expression** or **statement**.
 
-Instead of creating a method that accepts an integer parameter `int a`, and then returns whether `a` is larger than **5** or not, it is possible to create a labda expression that will look like this:  
+Instead of creating a method that accepts an integer parameter `int a`, and then returns whether `a` is larger than **5** or not, it is possible to create a lambda expression that will look like this:  
 
 ```java
 (a -> a > 5)
@@ -47,8 +47,8 @@ static int function() {
 }
 ```
 
-If the lambda function requires more than one input parameter, we need to type them in parentheses `()`.
+If the lambda function requires more than one input parameter, the parameters are placed between parentheses `()`.
 
-If it does not require any input parameters, we need to type only parentheses `()`.
+If it does not require any input parameters, we add an empty pair of parentheses `()`.
 
 [/slide]
