@@ -4,6 +4,8 @@
 
 # Ce este o Funcție?
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/RO/interactive-java-advanced-functional-programming-4-5-What-is-a-function-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 O **funcție** este o parte a unui program care are propriul său nume.
 
 This name can be used in the program as a **command** (this command is called a **function call**).
@@ -30,6 +32,8 @@ Here is an example of a **funcția matematică:**
 [slide hideTitle]
 
 # Expresii Lambda
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/RO/interactive-java-advanced-functional-programming-6-7-8-Lambda-expressions-1-2-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A lambda expression is a nameless function - it only has parameters and a body.
 
@@ -99,6 +103,9 @@ Putem avea un număr diferit de **parametri** in a lambda expression.
 
 [slide hideTitle]
 # Problemă cu Soluție: Sort Even Numbers
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/RO/interactive-java-advanced-functional-programming-9-Sort-Even-Numbers-Problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Sort Even Numbers" taskId="oop-basics-java-functional-programming-lab-Sort-Even-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
