@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Exemplu din Viața Reală: Găleată cu Apă
+# Exemplu din Viața Reală: Box of Books
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/05-While-Loop/05.PB-JavaScript-While-Loop-6-7-Introduction-Real-life-examle-box-of-books-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Următorul tip de bucle cu care ne vom familiariza este bucla `while`.

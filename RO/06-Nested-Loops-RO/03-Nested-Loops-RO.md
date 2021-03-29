@@ -6,11 +6,11 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-15-16-nested-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-O buclă imbricată este o construcție cu care o buclă este plasată în interiorul \(interior\) corpului celeilalte \(exterior\).
+O buclă imbricată este o construcție prin care o buclă este plasată în interiorul \(interior\) corpului celeilalte \(exterior\).
 
-Pot exista atât bucle imbricate "**for**", cât și bucle imbircate "**while**".
+Pot exista atât bucle imbricate "**for**", cât și bucle imbricate "**while**".
 
-Nu numai că puteți imbrica "**for**" în "**for**" și "**while**" în "**while**", ci și 'for' în "**while**" și vice versa: 
+Puteți imbrica **bucle for** în **bucle for**, **bucle while** în **bucle while**, dar și **bucle for** în **bucle while** și vice versa: 
 
 ```js
 // Outer Loop
@@ -24,17 +24,17 @@ while (condition) {
 
 Acest lucru se întâmplă în felul următor:
 
-* Atunci când buclele imbricate încep să se execute, bucla exterioară începe mai întâi
+* Atunci când buclele imbricate încep să fie executate, bucla exterioară începe mai întâi:
 
-     * variabila de control este inițializată și după verificarea stării buclei, codul din corpul său este executat
+     * variabila de control este inițializată și după verificarea condiției buclei, codul din corpul său este executat
 
-* După aceea, bucla interioară este executată
+* După aceea, bucla interioară este executată:
 
-     * se inițializează poziția de pornire a variabilelor de control, se verifică starea buclei, se execută codul din corpul său
+     * se inițializează poziția de pornire a variabilelor de control, se verifică condiția buclei, se execută codul din corpul său
 
-* Când valoarea specificată pentru **încheierea buclei este atinsă**, programul revine cu un pas în sus și continuă să execute bucla anterioară (exterioară)
+* Când valoarea specificată pentru **încheierea buclei este atinsă**, programul revine cu un pas înapoi și continuă să execute bucla anterioară (exterioară):
 
-     * variabila de control a buclei externe se schimbă cu un pas, se efectuează o verificare pentru a vedea dacă este îndeplinită condiția finală, dacă nu- se repetă bucla (interioară)
+     * variabila de control a buclei externe se schimbă cu un pas, se efectuează o verificare pentru a vedea dacă este îndeplinită condiția finală; dacă nu - se repetă bucla (interioară)
 
 * Aceasta se repetă până când variabila buclei exterioare îndeplinește condiția, încheind bucla
 
@@ -49,7 +49,7 @@ Acest lucru se întâmplă în felul următor:
 
 Iată un **exemplu** care ilustrează buclele imbricate.
 
-Scopul este din nou de a imprima un dreptunghi format din stele `n * n`, în care pentru fiecare linie o buclă iterează de la **1** la `n`, iar pentru fiecare coloană se execută o buclă imbricată din **1** până la `* n`:
+Scopul este din nou de a imprima un dreptunghi format din `n * n` stele, în care pentru fiecare linie o buclă iterează de la **1** la `n`, iar pentru fiecare coloană se execută o buclă imbricată de la **1** până la `* n`:
 
 ```js live
 let n = 3;
@@ -71,8 +71,8 @@ Tipărește un număr de stele pe o linie.
 
 După ce **bucla interioară** se termină la prima iterație a celei exterioare, bucla exterioară va continua, adică va fi tipărită o linie goală.
 
-După aceea, variabila de **prima** buclă va fi incrementată și **a doua** buclă va fi executată din nou.
+După aceea, variabila **primei** bucle va fi incrementată și **a doua** buclă va fi executată din nou.
 
-Bucla interioară va fi repetată de câte ori execută corpul buclei externe, în acest caz de n ori.
+Bucla interioară va fi repetată de câte ori este executat corpul buclei externe, în acest caz de n ori.
 
 [/slide]

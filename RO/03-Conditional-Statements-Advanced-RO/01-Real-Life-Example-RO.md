@@ -2,15 +2,15 @@
 
 [slide hideTitle]
 
-# Exemplu de Viață Reală: Piață
+# Exemplu din Viață Reală: Marketplace
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-6-7-8-Real-Life-Example-Marketplace-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [image assetsSrc="03-conditional-statements-advanced-example.png" /]
 
-o piață oferă prețuri diferite pentru anumite produse în funcție de ziua săptămânii.
+O piață oferă prețuri diferite pentru anumite produse în funcție de ziua săptămânii.
 
 
-| **Produs**      | **Ziua lucrătoare** | **Weekend**   |
+| **Produs**      | **Zi lucrătoare** | **Weekend**   |
 | :---:       |    :----:   |   :---:     |
 | Banane        |2.50       | 2.70 |
 | Mere          | 1.30        | 1.60    |
@@ -18,7 +18,7 @@ o piață oferă prețuri diferite pentru anumite produse în funcție de ziua s
 
 Dorim să calculăm prețul pentru un anumit produs, în funcție de ziua săptămânii:
 
-## Pseudo cod
+## Pseudocod
 
 ```
 Citiți intrarea

@@ -6,7 +6,7 @@
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-3-4-complex-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-## Buclele  for pot avea pași diferiți
+## Buclele for pot avea pași diferiți
 
 * Bucla for inversată
 
@@ -17,7 +17,7 @@ for (let i = 5; i >= 0; i--){
 }
 ```
 
-* Bucla for cu un pas cu 2
+* Bucla for cu un pas de 2
 
 
 ``` js live
@@ -45,7 +45,7 @@ for (let d = 40; d > 0; d /= 2) {
 [/slide]
 
 [slide hideTitle]
-# Problemă cu Soluție: Numbers Drom N Down to 1
+# Problemă cu Soluție: Numbers from N down to 1
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-5-6-solution-numbers-from-n-down-to-one-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -53,7 +53,7 @@ for (let d = 40; d > 0; d /= 2) {
 [code-editor language=javascript]
 ```
 function numbersFromNto1(input) {
- // Scrieți codul dvs. aici
+ // Write your code here
 }
 
 ```
@@ -70,10 +70,10 @@ function adapter(input, code) {
 [task-description]
 
 # Descriere
-Creați un program pentru a imprima numerele de la N până la 1.
+Creați un program care imprimă numerele de la **n** până la 1:
 
-- Primiți un număr **n** 
-- Imprimați  numerele de la **n** până la 1 în **ordine descrescătoare** 
+- Veți primi un număr **n** 
+- Imprimați numerele de la **n** până la 1 în **ordine descrescătoare** 
 
 # Exemplu
 
@@ -148,7 +148,7 @@ numbersFromNto1(1)
 [code-editor language=javascript]
 ```
 function numbersFrom1ton(n) {
-  // Scrieți codul dvs. aici;
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -164,9 +164,9 @@ function adapter(input, code) {
 [task-description]
 
 # Descriere
-Creați un program pentru a imprima numerele de la 1 la **n** cu pasul 3:
+Creați un program care imprimă numerele de la 1 la **n** cu pasul 3:
 
-* Primiți un număr **n** ca intrare
+* Veți primi un număr **n** ca intrare
 
 * Tipăriți numerele de la 1 la **n** cu pasul 3
 
@@ -241,7 +241,7 @@ numbersFrom1ton(30)
 [code-editor language=javascript]
 ```
 function evenPowersOfTwo(n) {
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -257,9 +257,7 @@ function adapter(input, code) {
 [task-description]
 
 # Descriere
-Creați un program pentru a imprima puterile pare cu 2:
-
-Creați un program, care imprimă toate puterile uniforme de 2 până la o intrare dată:
+Creați un program, care imprimă toate puterile pare de 2 până la o intrare dată:
 
 * Veți primi un număr **n** ca intrare
 

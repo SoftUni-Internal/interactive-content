@@ -6,13 +6,13 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/04-For-Loop/JS-basics-for-18-19-loops-with-a-step-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-În această secține vom oferi mai multe detalii cu privre la o parte specială și foarte importantă a buclei "**for**", **și anume pasul.**
+În această secțiune vom oferi mai multe detalii cu privire la o parte specială și foarte importantă a buclei "**for**", **și anume pasul.**
 
 **Pasul** este acea **parte** a construcției buclei care indică cum să fie incrementată sau decrementată valoarea variabilei principale.
 
 Aceasta este declarată ultimă în corpul buclei for.
 
-Foarte des, pasul are dimensiunea 1 și în acest caz, în loc sî scriem `i += 1` sau `i -= 1`, putem folosi operatorii `i++` sau `i--`.
+Foarte des, pasul are dimensiunea 1 și în acest caz, în loc să scriem `i += 1` sau `i -= 1`, putem folosi operatorii `i++` sau `i--`.
 
 ```js live
 for (let i = 0; i < 10; i++) {
@@ -32,7 +32,7 @@ for (let i = 0; i < 10; i += 2) {
 
 S-ar putea să dorim să avem un **pas descrescător** - `i - =` + dimensiunea pasului.
 
-În acest caz, ar trebui să fim atenți la condiția finală pentru a evita **o buclă infinită**.
+În acest caz, trebuie să fim atenți la condiția finală pentru a evita **o buclă infinită**.
 
 ```js live
 for (let i = 10; i >= 1; i--) {
@@ -53,7 +53,7 @@ for (let i = 10; i >= 1; i--) {
 
 ```
 function numbersEndingWith7(n) {
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 
@@ -69,13 +69,13 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 
-# Description
+# Descriere
 
-Creați un program care imprimă toate numerele care se termină cu 7, până la numărul n 
-- Primiți un număr **n**
-- Imprimați toate numerele de la **7 până la n**, **care se termină cu 7**
+Creați un program care imprimă toate numerele care se termină cu 7, până la un număr dat **n**: 
+- Veți primi un număr **n**
+- Imprimați toate numerele solicitate, de la **7 până la n**
 
-# Example
+# Exemplu
 
 | **Intrare**              | **Ieșire** |
 | ---------------------- | ---------- |
@@ -168,7 +168,7 @@ numbersEndingWith7(130)
 
 ```
 function examCountdown(days) {
-   // Scrieți codul dvs. aici
+   // Write your code here
 }
 ```
 
@@ -188,13 +188,13 @@ function adapter(input, code) {
 
 # Descriere
 
-Creați un program care numără zilele rămase până la un examen
+Creați un program care numără zilele rămase până la un examen:
 
 - Primiți un număr întreg - numărul de **zile înainte de examen**
-- După fiecare zi trecută, imprimă: "\{**numberOfDaysLeft**\} **days before the exam**"
-- La final imprimă: "**The exam has come.**"
+- După fiecare zi trecută, imprimați: "\{**numberOfDaysLeft**\} **days before the exam**"
+- La final imprimați: "**The exam has come.**"
 
-# Example
+# Exemplu
 
 | **Intrare**        | **Ieșire**             |
 | ---------------- | ---------------------- |

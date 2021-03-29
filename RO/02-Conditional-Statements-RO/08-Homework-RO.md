@@ -3,7 +3,7 @@
 # Teme Pentru Acasă
 [slide hideTitle]
 
-# Problemă cu soluție: Guess the Password
+# Problemă cu Soluție: Guess the Password
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/02-Conditions/problem1-Guess-the-Password-solution-TRIM-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
  
@@ -12,7 +12,7 @@
 
 ```
 function guessThePassword(input) {
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -29,9 +29,9 @@ function adapter(input, code) {
 # Descriere
 Creați un program pentru a verifica o parolă:
 
-* Veți primi un șir: parola **guess**
-  * imprimați "**Welcome**" dacă parola este "**s3cr3t!**"
-  * imprimați "**Wrong password!**" în orice altă situație
+  * Veți primi un șir: parola **guess**
+  * Imprimați "**Welcome**" dacă parola este "**s3cr3t!**"
+  * Imprimați "**Wrong password!**" în oricare altă situație
 
 # Exemplu
 
@@ -81,7 +81,7 @@ Wrong password!
 [code-editor language=javascript]
 ```
 function boilingWater(input) {
-    // Scrieți codul dvs. aici
+    // Write your code here
 }
 ```
 [/code-editor]
@@ -98,11 +98,11 @@ function adapter(input, code) {
 # Descriere
 Creați un program care verifică dacă apa fierbe: 
 
-* Veți primi un număr în virgulă mobilă: temperatura  **temperature** (in °C)
+* Veți primi un număr în virgulă mobilă: temperatura apei (în °C)
 
 * Imprimați "**The water is boiling**" dacă numărul este \> 100
 
-* Imprimați "**The water is not hot**" în orice altă situație
+* Imprimați "**The water is not hot enough**" în oricare altă situație
 
   # Exemplu
 
@@ -158,7 +158,7 @@ The water is not hot enough
 [code-editor language=javascript]
 ```
 function speedInfo(input) {
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -173,12 +173,10 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program pentru a verifica viteza mare/mică: 
-
 Creați un program, care determină dacă vă deplasați **rapid** sau **lent** cu o viteză dată:
 
-* Veți primi **viteza**: (un număr cu virgulă mobilă)
-* Tipăriți "**Slow**" dacă viteza este **mai mică de** sau **egală cu** 30
+* Veți primi **viteza**: un număr în virgulă mobilă
+* Tipăriți "**Slow**" dacă viteza este **mai mică** sau **egală cu** 30
 * Tipăriți "**Fast**" dacă viteza este **mai mare** decât 30
 
   # Exemplu
@@ -243,7 +241,7 @@ Slow
 [code-editor language=javascript]
 ```
 function bonusScore(input) {
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -263,17 +261,19 @@ Veți primi un număr întreg care reprezintă **numărul** inițial de puncte.
 
 **Punctele bonus** sunt oferite, în funcție de regulile descrise mai jos. 
 
-Creați un program care calculează 
+Creați un program care calculează:
 
-- Punctele bonus **primite** din număr 
+- Punctele bonus **primite** în funcție de număr 
 
-- Care este valoarea inițială **a numărului total de puncte** 
+- Care este valoarea inițială a **numărului total de puncte** 
 
-Dacă numărul este sub valoarea **100 inclusiv**, atunci punctele bonus sunt **5**.
-Dacă numărul este **mai mare decât 100**, punctele bonus sunt **20 la sută din număr**.
-Dacă numărul este **mai mare decât 1000**, punctele bonus sunt **10 la sută din număr**.
+- Care este numărul de puncte final 
 
-Punctele adiționale din bonus, sunt obținute separat din cele anterioare:
+Dacă numărul este mai mic decât **100 inclusiv**, atunci punctele bonus sunt **5**.
+Dacă numărul este **mai mare decât 100**, punctele bonus sunt **20 % din număr**.
+Dacă numărul este **mai mare decât 1000**, punctele bonus sunt **10 % din număr**.
+
+Punctele bonus adiționale, obținute separat de cele anterioare:
 
 - Pentru un număr impar, adăugați 1 punct
 
@@ -382,7 +382,7 @@ bonusScore(0)
 [code-editor language=javascript]
 ```
 function tickets(input) {
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -408,15 +408,15 @@ function adapter(input, code) {
 # Descriere
 Creați un program care să calculeze prețul unui bilet:
 
-* Veți primi tipul de bilet: fie **student** fie **regular**
+* Veți primi tipul de bilet: fie **student**, fie **regular**
 
-* Imprimați **price** în formatul următor "**$**\{**price**\}":
+* Imprimați **prețul** în formatul următor "**$**\{**price**\}":
 
-    * prețul trebuie să fie **formatat** cu 2 cifre după punctul de zecimal 
+    * prețul trebuie să fie **formatat** la 2 cifre după punctul zecimal 
 
-* Prețul unui bilet de student: **1.00**
+* Prețul unui bilet de tip student: **1.00**
 
-* Prețul unui bilet obișnuit: **1.60**
+* Prețul unui bilet de tip regular: **1.60**
 
 * Pentru un bilet nevalid, imprimați "**Invalid ticket type!**"
 

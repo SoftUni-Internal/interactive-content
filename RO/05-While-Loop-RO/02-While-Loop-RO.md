@@ -7,13 +7,14 @@
 
 
 
-În programare, **bucla** `while` este utilizată atunci când dorim să **repetăm** execuția unei anumite logici cât timp se îndeplinește o anumită condiție. 
+În programare, **bucla while** este utilizată atunci când dorim să **repetăm** execuția unei anumite logici cât timp se îndeplinește o anumită condiție. 
 
 Prin **"condiție"**, înțelegem orice **expresie** care returnează `true` sau `false`. 
 
 Când **condiția** nu e **îndeplinită**, bucla while este **întreruptă**, programul **continuă** să execute codul de după buclă.
  
 [image assetsSrc="05-use-case-while.png" /]
+
 Bucla while arată în felul următor:
 ```js
 while (condition) {
@@ -36,7 +37,7 @@ Toată această parte se repetă din nou **până într-un anumit punct în care
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Decreasing Numbers
+# Problemă cu Soluție: Decreasing Numbers
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/05-While-Loop/05.PB-JavaScript-While-Loop-12-Solution-Decreasing-Numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -45,7 +46,7 @@ Toată această parte se repetă din nou **până într-un anumit punct în care
 [code-editor language=javascript]
 ```
 function decreasingNumbers (input) {
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -62,7 +63,7 @@ function adapter(input, code) {
 # Descriere
 Creați un program care imprimă toate numerele din intrarea dată în ordine descrescătoare:
 
-* Primiți un număr de pe consolă
+* Veți primi un număr de pe consolă
 * Imprimați numerele începând de la numărul respectiv și până la 1 (**inclusiv**)
 
 # Exemplu
@@ -132,7 +133,7 @@ decreasingNumbers(3)
 [code-editor language=javascript]
 ```
 function sequence (input) {
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -150,7 +151,7 @@ function adapter(input, code) {
 
 Creați un program, care imprimă toate numerele **mai mici decât** și **egale cu** un număr dat **n**:
 
-- primiți un număr **n**
+- Veți primi un număr **n**
 
 - Respectați următoarele reguli la imprimare: **1, 3, 7, 15, 31,…, n** presupunând că fiecare număr următor este egal cu **numărul anterior * 2 + 1**.
 

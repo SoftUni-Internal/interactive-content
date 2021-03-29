@@ -11,7 +11,7 @@
 
 ```
 function calculateMonthSalary (days, salaryPerDay) {
-   // Scrieți codul dvs. aici
+   // Write your code here
 }
 
 ```
@@ -32,9 +32,9 @@ function adapter(input, code) {
 
 # Descriere
 
-Creați un program care calculează și imprimă salariul total
+Creați un program care calculează și imprimă salariul total:
 
-- Primiți numărul de zile lucrătoare pentru luna curentă și salariul pe zi - numere întregi
+- Primiți numărul de zile lucrătoare pentru luna curentă și salariul pe zi (într-o matrice)- numere întregi
 - Calculați salariul lunar al unui angajat
 - Imprimați rezultatul pe consolă
 
@@ -110,7 +110,7 @@ calculateMonthSalary(3, [10, 20, 30])
 
 ```
 function numberSequence (n, numbers) {
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 
@@ -132,7 +132,7 @@ function adapter(input, code) {
 
 Creați un program care găsește **cel mai mare** și **cel mai mic** număr dintr-o anumită secvență:
 
-- Veți primi **n** reprezentând numărul de numere de procesat
+- Veți primi **n** reprezentând numărul de numere care trebuie procesate
 - Găsiți numerele **max** și **min**
 - Imprimați-le pe consolă
 
@@ -214,7 +214,7 @@ Min number: -2
 
 ```
 function powerOfNumbers(p, n) {
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 
@@ -238,7 +238,7 @@ Creați un program care calculează și imprimă un anumit număr la o putere da
 
 - Primiți **p** - puterea și **n** - numărul
 
-- Tipăriți rezultatul lui **n** la puterea lui **p**
+- Tipăriți rezultatul lui **n** la puterea **p**
 
 - Nu utilizați **Math.Pow()** - nu reprezintă obiectivul exercițiului nostru
 
@@ -329,7 +329,7 @@ powerOfNumbers(5, 3)
 
 ```
 function equalPairs(n, numbers) {
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 
@@ -354,7 +354,7 @@ Creați un program care verifică dacă suma perechilor din secvență este acee
 - Primiți numărul **n** și **n perechi** de numere
 - Tipăriți "**Yes, value=**\{**sum**\}", dacă **suma tuturor** perechilor este **aceeași**
 - **În caz contrar**, imprimați "**No, maxdiff=**\{**diff**\}"
-- Diff este **diferența maximă** în suma dintre două perechi
+- **Maxdiff** este **diferența maximă** dintre suma a două perechi
 
 # Exemplu
 
@@ -460,7 +460,7 @@ Yes, value=10
 
 ```
 function zigZagSum(n, numbers) {
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 
@@ -480,9 +480,9 @@ function adapter(input, code) {
 
 # Descriere
 
-Creați un program care calculează și imprima suma secvenței în zigzag:
+Creați un program care calculează și imprimă suma unei secvențe în zigzag:
 
-- Primiți **n** - număr reprezentând cantitatea de numere de intrare
+- Primiți **n** - numărul de numere din intrare
 - Procesați **n numere**
 - Pentru fiecare linie **pară** **se adaugă** numărul la rezultat
 - Pentru fiecare linie **impară** linie **se scade** numărul din rezultat
@@ -584,7 +584,7 @@ zigZagSum(5, [4564, 345, 456, 4563, 234])
 
 ```
 function divideWithoutRemainder(n, numbers)) {
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 
@@ -603,13 +603,13 @@ function adapter(input, code) {
 [task-description]
 
 # Descriere
-Creați un program, care găsește câte numere dintr-o secvență sunt divizibile fără rest:
+Creați un program care găsește câte numere dintr-o secvență sunt divizibile fără rest:
 
-- Primiți un număr `n` și o **cantitate n** de numere după acesta
+- Primiți un număr `n` și **n** numere după acesta
 
-- Calculați **procentul** numerelor pot fi împărțite **fără rest folosind 2, 3 și 4 ca divizori**
+- Calculați **procentul** numerelor care pot fi împărțite **fără rest folosind 2, 3 și 4 ca divizori**
 
-- Imprimați procentele pentru cei trei divizori, **formatate** la a doua cifră după virgulă
+- Imprimați procentele pentru cei trei divizori, **formatate** la a doua cifră după punctul zecimal
 
 # Exemplu
 
@@ -732,7 +732,7 @@ divideWithoutRemainder(10, [34, 12, 0, 453, 45, 2342, 654, 76, 2, 56])
 
 ```
 function vowelSum(n, chars) {
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 
@@ -860,7 +860,7 @@ vowelSum(7, ['a', 'e', 'c', 'q', 'i', 'u', 'o'])
 
 ```
 function rollercoaster(input) {
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 
@@ -887,9 +887,9 @@ Primele trei numere din intrare sunt următoarele:
 
   - **vârsta minimă a pasagerilor**
 
-  - **numărul de persoane** pe coadă 
+  - **numărul de persoane** care stau la coadă 
 
-- Toate celelalte numere reprezintă **vârsta** fiecărei persoane de pe coadă
+- Toate celelalte numere reprezintă **vârsta** fiecărei persoane care stă la coadă
 
 - Dacă toate locurile pot fi ocupate, programul tipărește: "**The rollercoaster departs**"
 
@@ -977,7 +977,7 @@ Waiting...
 
 ```
 function multiply(input) {
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 
@@ -1170,7 +1170,7 @@ multiply(8)
 
 ```
 function solve(firstNumber, secondNumber) {
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 
@@ -1188,13 +1188,13 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 
-# Description
+# Descriere
 
-Creați un program care imprimă suma numerelor dintr-un interval dat și toate numerele din interval care sunt divizibile cu 9 fără rest.
+Creați un program care imprimă toate numerele dintr-un interval care sunt divizibile cu 9 fără rest și suma acestor numere:
 
-- Veți primi **două numere**: intervalul de procesat 
+- Veți primi **două numere**: intervalul care trebuie procesat 
 - Pe primă linie, imprimați suma numerelor 
-- Pe a doua linie, imprimați numerelor divizibile cu 9 fără rest 
+- Pe a doua linie, imprimați numerele divizibile cu 9 fără rest 
 
 
 # Exemplu

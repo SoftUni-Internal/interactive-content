@@ -9,7 +9,7 @@
 [code-editor language=javascript]
 ```
 function cinemaIncome(input) {
-	// Scrieți codul dvs. aici
+	// Write your code here
 }
 ```
 [/code-editor]
@@ -25,27 +25,27 @@ function adapter(input, code) {
 [task-description]
 ## Descriere
 
-Ați fost angajat de un cinematograf să scrieți un program care să calculeze profitul obținut în cazul în care sala este plină. 
+Ați fost angajat de un cinematograf să scrieți un program care să determine dacă sala de cinema este ocupată complet și care este profitul.
 
-Trebuie să primiți numărul de locuri din sală și pe următoarele linii din consolă, până ce este introdusă comanda "**Movie time!**", veți primi un număr de spectatori noi.
+Veți primi numărul de locuri din sală și pe următoarele linii din consolă, până ce este introdusă comanda "**Movie time!**", veți primi un număr de spectatori noi.
 
 Prețul biletului este de 5 USD.
 
-Dacă numărul de oameni care intră în sală poate fi împărțit la trei fără să avem un rest, atunci se va aplica o reducere de $5 la prețul total.
+Dacă numărul de oameni care intră în sală poate fi împărțit la 3 fără rest, atunci se va aplica o reducere de $5 la prețul total.
 
 Dacă nu mai rămân locuri libere în sală, programul trebuie să oprească citirea datelor de intrare de pe consolă. 
 
-Dacă numărul de spectatori care intră, depășește numărul de locuri rămase în sală, sala  trebuie să fie considerată ca fiind plină și programul trebuie să se oprească. 
+Dacă numărul de spectatori care intră depășește numărul de locuri rămase în sală, sala trebuie să fie considerată ca fiind plină și programul trebuie să se oprească. 
 
 
 ## Intrare
 Veți primi următoarele elemente de pe consolă:
 
-- Primul element: capacitatea sălii: un număr întreg în intervalul  \[50... 150\]
+- Primul element: capacitatea sălii - un număr întreg în intervalul  \[50... 150\]
 
-- Pe fiecare dintre elementele următoare, până când comanda este "**Movie time!**":
+- Pe fiecare dintre liniile următoare, până când comanda este "**Movie time!**":
 
-- Numărul de oameni care intră în cinematograf: un număr întreg în intervalul  \[1… 15\]
+  - Numărul de oameni care intră în cinematograf - un număr întreg în intervalul  \[1… 15\]
 
 ## Ieșire
 Mai întâi, tipăriți următoarele linii:

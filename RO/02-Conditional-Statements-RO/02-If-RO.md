@@ -2,7 +2,7 @@
 
 # Condiții Simple "if"
 [slide hideTitle]
-# Exemplu din Viață Reală: Udarea Plantelor 
+# Exemplu din Viață Reală: Watering Plants 
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/02-Conditions/02-conditional-statements-js-8-9-Real-Life-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -11,7 +11,7 @@
 
 Să ne imaginăm următoarea situație zilnică:
 
-Aveți câteva plante în grădină care au nevoie de apa.
+Aveți câteva plante în grădină care au nevoie de apă.
 
 În funcție de vremea de afară, ați putea decide să le udați sau nu.
 
@@ -25,12 +25,12 @@ Aveți câteva plante în grădină care au nevoie de apa.
 
 Această situație concretă are doar două opțiuni din care să alegeți, dar în viața reală, precum și în programare, ați putea avea mai multe.
 
-Iată un pseudocod cu ajutorul căruia puteți înțelege conceptul instrucțiilor condiționale, atunci când vine vorba de scrierea codului:
+Aici aveți un pseudocod cu ajutorul căruia puteți înțelege conceptul instrucțiunilor condiționale, atunci când vine vorba de scrierea codului:
 
 ```
 dacă umiditatea este mai mare de 90%
    Nu udați plantele
- altceva
+altfel
    Udați plantele
 ```
 
@@ -55,7 +55,7 @@ if (condition) {
   // condition body;
 }
 ```
-## Exemplu: vreme
+## Exemplu: Weather
 
 Aici, dacă condiția vremii ploioase se evaluează la **adevărat**, atunci corpul instrucțiunii este executat.
 ```js
@@ -74,7 +74,7 @@ function example(input) {
 [code-editor language=javascript]
 ```
 function freezingWeather(input) {
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -92,8 +92,8 @@ function adapter(input, code) {
 # Descriere
 Creați un program pentru a verifica dacă vremea e friguroasă:
 
-* Citiți o temperatură în Celsius (a floating-point number)
-* Tipăriți "**Freezing weather!**", Dacă temperatura este **egală cu** sau **mai mică decât 0**
+* Citiți o temperatură în grade Celsius (număr în virgulă mobilă)
+* Tipăriți "**Freezing weather!**", dacă temperatura este **egală cu** sau **mai mică decât 0**
 
 # Exemplu
 

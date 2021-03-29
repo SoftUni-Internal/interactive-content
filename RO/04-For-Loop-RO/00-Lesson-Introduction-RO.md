@@ -10,7 +10,7 @@
 
 
 
-## În această lecție veții invața despre:
+## În această lecție veți invăța despre:
 
 **1. Operatorii de incrementare și decrementare**
 - Cum să schimbați valoarea unei funcții cu operatori speciali

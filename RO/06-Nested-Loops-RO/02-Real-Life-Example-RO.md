@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Exemplu Din Viața Reală: Ceas
+# Exemplu din Viața Reală: Clock
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-11-12-real-life-example-clock-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -16,15 +16,15 @@ După ce ajung la 60, orele vor fi incrementate cu 1, iar minutele vor fi reseta
 
 [image assetsSrc="06-nested-loops-clock-1200.png" /]
 
-Putem reprezenta acest proces folosind **buclele for.**
+Putem reprezenta acest proces folosind **buclele for**.
 
-Mai important, acesta este un bun exemplu pentru care am avea nevoie chiar de mai multe bucle "for" pentru a finaliza orice sarcină.
+Mai important, acesta este un bun exemplu pentru care am avea nevoie de mai mult de o **buclă for** pentru a finaliza orice sarcină.
 
-După cum puteți vedea în exemplul de pseudocod, există două Bucle for: una interioarî și una exterioară.
+După cum puteți vedea în exemplul de pseudocod, există două bucle: una interioară și una exterioară.
 
-Cea exterioară reprezintă orele, în timp ce cea interoară- minutele.
+Cea exterioară reprezintă orele, în timp ce cea interioară reprezintă minutele.
 
-## Pseudocode
+## Pseudocod
 
 ```
 for h which is in range from 0 to 23

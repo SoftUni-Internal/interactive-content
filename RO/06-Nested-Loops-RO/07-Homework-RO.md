@@ -11,7 +11,7 @@
 [code-editor language=javascript]
 ```
 function building(floors, rooms) {
-    // Scrieți codul dvs. aici
+    // Write your code here
 }
 ```
 [/code-editor]
@@ -28,13 +28,12 @@ function adapter(input, code) {
 # Descriere
 Creați un program care imprimă următoarele informații despre o clădire:
 
-Imprimă informațiile despre o clădire: 
-* Veți primi două numere: numărul de etaje și câte camere are fiecare etaj
-* Clădirea poate găzdui: **apartamente (etaje cu număr impar)**, **birouri (etaje cu număr par)** și **(la ultimul etaj) Apartamente mari**
+* Veți primi două numere: numărul de etaje și câte încăperi are fiecare etaj
+* Clădirea poate găzdui: **apartamente (etaje cu număr impar)**, **birouri (etaje cu număr par)** și **(la ultimul etaj) apartamente mari**
 * Apartamentele sunt indexate cu:  "**A**\{**buildingNum**\}\{**apartmentNum**\}"
 * Birourile sunt indexate cu: "**O**\{**floorNum**\}\{**officeNum**\}"
 * Apartamentele mari sunt indexate cu: "**L**\{**buildingNum**\}\{**apartmentNum**\}"
-* Numerele încep întotdeauna de la 0
+* Numărarea începe întotdeauna de la 0
 
 # Exemplu
 | **Intrare** | **Ieșire** |
@@ -193,7 +192,7 @@ A10 A11 A12
 [code-editor language=javascript]
 ```
 function passwords(input) {
-    // Scrieți codul dvs. aici
+    // Write your code here
 }
 ```
 [/code-editor]
@@ -208,13 +207,13 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care generează parole customizate:
+Creați un program care generează parole personalizate:
 
-* Primiți un număr întreg - **n** ca intrare
-* Generați parole specifice, care îndeplinesc următoarele condiții:
-* **Prima** parte este un număr **par** care nu trebuie să fie mai mare decât **n**
-* **Cea a două** parte este un număr **impar** și nu trebuie să fie mai mare decât **n**
-* **Ultima** parte  este un **produs** al primelor două
+* Veți primi un număr **n** ca intrare
+* Generați toate parolele specifice, care îndeplinesc următoarele condiții:
+  * **Prima** parte este un număr **par** care nu trebuie să fie mai mare decât **n**
+  * **A doua** parte este un număr **impar** care nu trebuie să fie mai mare decât **n**
+  * **Ultima** parte este un **produs** al primelor două
 
 # Exemplu
 | **Intrare** | **Ieșire** |
@@ -300,7 +299,7 @@ passwords(15)
 [code-editor language=javascript]
 ```
 function magicNumber(input) {
-    // Scrieți codul dvs. aici
+    // Write your code here
 }
 ```
 [/code-editor]
@@ -316,8 +315,8 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 Creați un program care găsește toate numerele magice conform următoarelor condiții:
-* Primiți un **număr - n** de pe consolă
-* Identificați toate **numerele cu 3 cifre** pentru care este valabil ca produsul inmulțirii cifrelor care formează numărul să fie egal cu **n**
+* Veți primi un număr **n** de pe consolă
+* Identificați toate **numerele de 3 cifre** pentru care produsul înmulțirii cifrelor care formează numărul să fie egal cu **n**
 
 # Exemplu
 | **Intrare** | **Ieșire** |
@@ -460,7 +459,7 @@ magicNumber(14)
 [code-editor language=javascript]
 ```
 function travelling(input) {
-    // Scrieți codul dvs. aici
+    // Write your code here
 }
 ```
 [/code-editor]
@@ -477,8 +476,8 @@ function adapter(input, code) {
 # Descriere
 Creați un program care economisește banii necesari pentru a vizita o destinație dată:
 
-* Veți primi o **destinație** și un **buget necesar** pentru o vizită 
-* Continuați să procesați numere-sume de bani, până când este **suficient** pentru a face călătoria
+* Veți primi o **destinație** și un **buget necesar** pentru a o vizită 
+* Continuați să procesați numere - sume de bani, până când bugetul este **suficient** pentru a face călătoria
 * Dacă primiți comanda **End** programul se termină
 
 # Exemplu
@@ -626,7 +625,7 @@ Going to Albania!
 [code-editor language=javascript]
 ```
 function primeNumbers(firstNumber, secondNumber) {
-    // Scrieți codul dvs. aici
+    // Write your code here
 }
 ```
 [/code-editor]
@@ -641,9 +640,9 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care imprimă toate numerele prime dintr-un interval dat
+Creați un program care imprimă toate numerele prime dintr-un interval dat:
 
-* Citește **două numere** de pe  consolă: **începutul** și **sfârșitul** intervalului
+* Veți primi **două numere** de pe consolă: **începutul** și **sfârșitul** intervalului
 * Imprimați pe consolă numerele **prime** din acest **interval**
 
 # Exemplu
@@ -744,7 +743,7 @@ primeNumbers(1, 9)
 [code-editor language=javascript]
 ```
 function uniquePinCodes(firstNumber, secondNumber, thirdNumber) {
-    // Scrieți codul dvs. aici
+    // Write your code here
 }
 ```
 [/code-editor]
@@ -761,14 +760,13 @@ function adapter(input, code) {
 # Descriere
 Creați un program care generază coduri PIN unice:
 
-Veți primi **3 cifre** - n1, n2 și n3
-
-* Generați **Coduri PIN unice cu 3 cifre** care îndeplinesc următoarele **condiții**:
+* Veți primi **3 cifre** - n1, n2 și n3
+* Generați **Coduri PIN unice de 3 cifre** care îndeplinesc următoarele **condiții**:
   * **prima** cifră  nu trebuie să fie mai mare decât n1
   * **a doua** cifră nu trebuie să fie mai mare decât n2
   * **a treia** cifră  nu trebuie să fie mai mare decât n3
-  * prima cifra și cea a treia cifră trebuie să fie impare
-  * cea a doua cifră trebuie să fie **primul număr** din interval \[2 ... 7\]
+  * prima cifră și cea de-a treia cifră trebuie să fie pare
+  * cea de-a doua cifră trebuie să fie **un număr prim** din intervalul \[2 ... 7\]
 
 # Exemplu
 | **Intrare** | **Ieșire** |
@@ -966,7 +964,7 @@ uniquePinCodes(2, 3, 5)
 [code-editor language=javascript]
 ```
 function letterCombinations(firstLetter, lastLetter,  missedLetter) {
-    // Scrieți codul dvs. aici
+    // Write your code here
 }
 ```
 [/code-editor]
@@ -981,7 +979,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care imprimă **combinații de litere** și **numărul** combinațiilor generate:
+Creați un program care imprimă **combinații de litere** și **numărul** de combinații generate:
 
 * Primele două litere pe care le veți primi reprezintă intervalul cu care va trebui să lucrați
 
@@ -1070,7 +1068,7 @@ bbb bbc bbd bbe bcb bcc bcd bce bdb bdc bdd bde beb bec bed bee cbb cbc cbd cbe 
 [code-editor language=javascript]
 ```
 function happyNumbers(input) {
-   // Scrieți codul dvs. aici
+   // Write your code here
 }
 ```
 [/code-editor]
@@ -1084,14 +1082,14 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Decriere
-Creați un program care generează toate **numerele cu 4 cifre** cu cifre mai mici decât un număr n dat: 
+# Descriere
+Creați un program care generează toate **numerele de 4 cifre** cu cifre mai mici decât un număr n dat: 
 
-- Veți primi un număr **n** ca intrare:
+- Veți primi un număr **n** ca intrare
 
 - Imprimați combinațiile care îndeplinesc următoarele cerințe:
-   - când împărțiți numărul în două perechi și adăugați prima cifră la a doua din fiecare pereche - rezultatul este egal cu **n**
-   - când adăugați primele două, rezultatul ar trebui să fie divizibil cu **n** fără rest
+   - când împărțiți numărul în două perechi și adunați prima cifră la a doua din fiecare pereche - rezultatul este egal cu **n**
+   - când adunați primele două, rezultatul trebuie să fie divizibil cu **n** fără rest
 
 # Exemplu
 | **Intrare** | **Ieșire** |

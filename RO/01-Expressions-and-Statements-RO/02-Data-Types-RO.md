@@ -27,7 +27,7 @@ const number = null; // tipul de date null reprezintă valorile goale
 
 ```js
 let firstName;
-console.log(firstName); // returnează valoarea nedefinită, intrucât este posibil ca datele să nu fie alocate
+console.log(firstName); // returnează valoarea nedefinită, întrucât este posibil ca datele să nu fie alocate
 ```
 
 ```js
@@ -56,7 +56,7 @@ Veți aprofunda tipurile de **obiecte** mai târziu în cadrul cursului.
 [/slide]
 
 [slide hideTitle]
-# Tipurile de Fate sunt Dinamice
+# Tipurile de Date sunt Dinamice
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-13-13-demo-Data-types-are-dynamic-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -68,7 +68,7 @@ O variabilă individuală poate fi folosită pentru a conține diferite tipuri d
 
 let x = 5;   // x este un număr
 x = "John";  // x este un text sau un șir 
-x = true;  // x este o data de tip boolean
+x = true;  // x este o dată de tip boolean
 ```
 
 Tipurile de date își pot stabili intervale de valori cu caracteristici similare.
@@ -85,15 +85,15 @@ Ele se pot caracteriza prin:
 [slide hideTitle]
 # Convenții Referitoare la Denumire
 
-În programarea computerizată, convențiile privind nume sunt reprezentate de un set de **reguli** pentru alegerea numelor variabilelor.
+În programarea computerizată, convențiile privind numele sunt reprezentate de un set de **reguli** pentru alegerea numelor variabilelor.
 
-În limbajul JavaScript, convenția pentru alocarea unui nume unei variabile este reprezentat de **camelCase**. 
+În limbajul JavaScript, convenția pentru alocarea unui nume unei variabile este reprezentată de **camelCase**. 
 
-Mai există și alte convenții privind denumirea variabilelor care sunt utilizate în alte limbaje de programare, precum `Pascalcase` și  `Snake case`. 
+Mai există și alte convenții privind denumirea variabilelor care sunt utilizate în alte limbaje de programare, precum **Pascalcase** și  **Snake case**. 
 
 **camelCase** combină cuvinte după cum urmează:
 
-* Indicând separarea cuvintelor cu o simpla literă mare la începutul fiecărui cuvânt următor
+* Indicând separarea cuvintelor cu o simplă literă mare la începutul fiecărui cuvânt următor
 
 * Eliminând toate spațiile:
 

@@ -8,7 +8,7 @@
 
 Buclele "**while**" și "**for**" **repetă** un bloc de **cod**.
 
-Dar există situații diferite în procesul scrierii de cod în care ni se recomandă să folosim primul tip sau cel al doilea.
+Dar există situații diferite în procesul scrierii de cod în care este recomandat să folosim primul tip sau cel de-al doilea.
 
 Când știți **exact de câte ori** doriți să repetați un bloc de cod, utilizați bucla "**for**".
 ```js live
@@ -17,11 +17,11 @@ for (let i = 0; i <= 5; i++) {
 }
 ```
 
-Este de obicei potrivit să folosiți bucle for în cazurile în care inițializarea și incrementarea sunt instrucțiuni unice  și sunt legate în mod logic.
+Este de obicei potrivit să folosiți bucle for în cazurile în care inițializarea și incrementarea sunt instrucțiuni unice și sunt legate în mod logic.
 
 Este o buclă mai compactă în comparație cu bucla "**while**" și menține instrucțiunile de control ale buclei în același loc.
 
-Dar ar putea exista mai multe probleme **complexe** în care numărul de iterații depinde de anumite **situații** și nu pot fi anticipate. 
+Dar pot să existe mai multe probleme **complexe** în care numărul de iterații depinde de anumite **situații** și nu pot fi anticipate. 
 
 Ceea ce înseamnă că nu știm exact dinainte **de câte ori** trebuie să repetăm o buclă.
 
@@ -55,7 +55,7 @@ console.log(number);
 [code-editor language=javascript]
 ```
 function oddNumber(numbers) {
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -72,8 +72,8 @@ function adapter(input, code) {
 # Descriere
 Creați un program care imprimă **primul** număr impar dintr-o secvență dată:
 
-* Primiți numere de pe consolă 
-* Imprimați primul  **numărul impar** pe care îl găsiți
+* Veți primi numere de pe consolă 
+* Imprimați primul **numărul impar** pe care îl găsiți
 
 # Exemplu
   | **Intrare** | **Ieșire** |

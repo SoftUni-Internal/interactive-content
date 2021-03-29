@@ -4,7 +4,7 @@
 
 [slide hideTitle]
 
-# Exemplu Din Viața Reală: Mutatul Vaselor
+# Exemplu din Viața Reală: Moving Dishes
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/04-For-Loop/JS-basics-for-9-10-Real-life-example-Moving-dishes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -30,7 +30,7 @@ Când îndepliniți acea condiție, bucla se oprește.
 
 Pentru a face asta, sunt folosite așa-zisele bucle for.
 
-Să vedem un exemplu de buclă care trece separat prin numerele de la 1 la 10 si le afișează.
+Să vedem un exemplu de buclă care trece secvențial prin numerele de la 1 la 10 si le afișează.
 
 ```js live
 for (let i = 1; i <= 10; i += 1) {
@@ -42,14 +42,15 @@ Acest bloc de cod poate fi explicat cu ajutorul acestei diagrame:
 
 [image assetsSrc="for-loop-use-case.png" /]
 
-Bucla începe cu operatorul "**for**" și trece prin toate valorile cu ajutorul unei variabile, de exemplu numerele de la 1 la 10 (inclusiv), iar pentru fiecare valoare se fac anumite comenzi.
+Bucla începe cu operatorul "**for**" și trece prin toate valorile pentru o variabilă particulară într-un interval dat, de exemplu numerele de la 1 la 10 (inclusiv), iar pentru fiecare valoare se fac anumite comenzi.
 
-## Sintaxa: Bucla For
+## Sintaxă: Bucla For
 
 După ce se declară bucla, se poate specifica o **valoare inițială** și o **valoare finală.**
 
-Cuprinsul buclei este cuprins între acolade `{ }` și reprezintă un bloc de una sau mai multe comenzi.
-Blocul de cod de mai jos ne arată structura buclei "**for**":
+Corpul buclei este cuprins între acolade `{ }` și reprezintă un bloc de una sau mai multe comenzi.
+
+Blocul de cod de mai jos ne arată structura unei bucle "**for**":
 
 ```js
 for (initialization; condition; update) {
@@ -61,7 +62,7 @@ Acesta constă în:
 
 - O **parte de inițialzare** pentru numărător (după modelul `let i = 0`)
 
-- Un condiție **booleană** (`i < 10`)
+- O condiție **booleană** (`i < 10`)
 
 - O expresie pentru **a actualiza** numărătorul (`i += 1`)
 
@@ -71,7 +72,7 @@ Acesta constă în:
 
 Scopul buclei este să treacă secvențial prin numerele 1, 2, 3, …, n și pentru fiecare să se facă o acțiune.
 
-În primul exemplu, variabila `i` acceptă valori de la 1 la 10 și valoarea **curentă** este prelucrată în interiorul buclei.
+În primul exemplu, variabila `i` acceptă valori de la 1 la 10 și valoarea **curentă** este tipărită în interiorul buclei.
 
 Bucla se repetă de 10 ori și fiecate repetare se numește **iterație**.
 
@@ -88,7 +89,7 @@ Bucla se repetă de 10 ori și fiecate repetare se numește **iterație**.
 
 ```
 function printSum (input) {
-    // Scrieți codul dvs. aici
+    // Write your code here
 }
 ```
 
@@ -109,9 +110,9 @@ function adapter(input, code) {
 
 Creați un program care imprimă toate numerele dintr-un interval dat și suma acestora:
 
-- Veți primi numarul n pe consolă
-- **Imprimați toate numerele de la 1 la n**
-- **Adunăți** toate numerele de la **1** la **n**
+- Veți primi un număr **n** din consolă
+- **Imprimați** toate numerele de la **1** la **n**
+- **Calculați** suma tuturor numerelor de la **1** la **n**
 - **Imprimați** suma pe consolă la sfârșit
 
 # Exemplu
@@ -202,7 +203,7 @@ printSum(6)
 
 ```
 function greatestNumber(n, numbers) {
- // Scrieți codul dvs. aici
+ // Write your code here
 }
 ```
 
@@ -223,10 +224,11 @@ function adapter(input, code) {
 
 Creați un program care imprimă **cel mai mare** număr dintr-o matrice:
 
-- Primește **n**: dimensiunea matricei
-- Procesează n numere
+- Veți primi **n**: dimensiunea matricei
 
-- Găsește și imprimă cel mai mare număr
+- Procesați **n** numere
+
+- Găsiți și imprimați cel mai mare număr
 
 # Exemplu
 

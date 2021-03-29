@@ -2,15 +2,15 @@
 
 [slide hideTitle]
 
-# Infinite Loops
+# Bucle Infinite
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/04-For-Loop/JS-basics-for-30-32-infinite-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Buclele infinite pot **repeta un bloc de cod de un număr nelimitat.**
+Buclele infinite pot **repeta un bloc de cod de un număr nelimitat de ori.**
 
 Utilizare în programare:
 
-- Sunt utilizate pe scară largă în dezvoltarea jocului pentru a desena mediul jocului
+- Sunt utilizate pe scară largă în dezvoltarea jocurilor pentru a desena mediul jocului
 
 - Pentru desenarea animațiilor
 
@@ -20,7 +20,7 @@ Utilizare în programare:
 for (;;) {
   console.log('Hello World');
 }
-// Puteți sări peste inițializare, condiție și increment
+// Puteți sări peste inițializare, condiție și incrementare
 ```
 
 [/slide]
@@ -36,7 +36,7 @@ for (;;) {
 
 ```
 function sumNumbers(nums) {
-   // Scrieți codul dvs. aici
+   // Write your code here
 }
 ```
 
@@ -54,11 +54,11 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 
-# Description
+# Descriere
 
-Creați un program, care rezumă și tipărește numere într-o matrice până la numărul **0**.
+Creați un program care însumează și tipărește numere într-o matrice până la întâlnirea numărului **0**:
 
-- Veți primi o serie de numere
+- Veți primi o matrice cu numere
 
 - Parcurgeți matricea și imprimați suma pentru fiecare iterație
 
