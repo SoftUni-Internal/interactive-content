@@ -610,10 +610,10 @@ try {
     FileInputStream readData = new FileInputStream("list.ser");
     ObjectInputStream readStream = new ObjectInputStream(readData);
 
-    ArrayList<Double> peopleDsl = (ArrayList<Double>) readStream.readObject();
+    ArrayList<Double> numbersDsl = (ArrayList<Double>) readStream.readObject();
     readStream.close();
     
-    System.out.println(peopleDsl.toString());
+    System.out.println(numbersDsl.toString());
     
 } catch (Exception e) {
     System.out.println("An error occurred. 😿");
