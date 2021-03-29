@@ -11,9 +11,9 @@ Floating-point types also:
 
 - Have a specific range and precision (number of decimal places) depending on the amount of memory they occupy
 - May behave abnormally in calculations
-- May hold both very small and great values like **0.00000000000001** and **100000000000000000000000000.0**
+- May hold both very small and great values such as **0.00000000000001** or **100000000000000000000000000.0**
 
-These can be either **float** or **double**:
+They can be either **float** or **double**:
 
 | Type   | Size   | Precision       |
 | --- | --- | --- |
@@ -193,7 +193,7 @@ System.out.println(exampleVariableThree);
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-24-floating-point-division-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-There are two types of dividing numbers, depending on their type: integral-division and floating-point division
+There are two types of numeric division: integral and floating-point division
 
 See the examples below:
 
@@ -213,7 +213,7 @@ System.out.println(8 % 2.5);
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-25-floating-point-calculations-abnormalities-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Keep in mind that sometimes floating-point numbers migth exhibit unexpected behavior.
+Keep in mind that sometimes floating-point numbers may exhibit unexpected behavior.
 
 We encourage you to read more about the `IEEE 754` standard online.
 
@@ -243,7 +243,7 @@ System.out.println(num);
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-26-big-decimal-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Keep in mind that sometimes floating-point might also behave abnormally in calculations
+Sometimes, floating-point numbers might also behave abnormally in calculations
 
 You can read more about **IEEE 754** by looking it up in any search engine.
 
