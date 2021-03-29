@@ -58,19 +58,19 @@ Create a program that:
 - Calculates the product of the following multiplication: `5 * 5`
 - Prints out the result
 
-  [/task-description]
-  [code-io /]
-  [tests]
-  [test]
-  [input]
-  [/input]
-  [output]
-  25
-  [/output]
-  [/test]
-  [/tests]
-  [/code-task]
-  [/slide]
+ [/task-description]
+ [code-io /]
+ [tests]
+ [test]
+ [input]
+ [/input]
+ [output]
+ 25
+ [/output]
+ [/test]
+ [/tests]
+ [/code-task]
+ [/slide]
 
 [slide hideTitle]
 
@@ -123,21 +123,21 @@ Create a program that calculates and prints out the results of the following ex
 - 5 \+ 3 \* 2
 - 4 \* (2 \+ 3)
 - (2 \+ 5)  \*  (8 \- 2) \/ 7
-  [/task-description]
-  [code-io /]
-  [tests]
-  [test]
-  [input]
-  [/input]
-  [output]
-  11
-  20
-  6
-  [/output]
-  [/test]
-  [/tests]
-  [/code-task]
-  [/slide]
+ [/task-description]
+ [code-io /]
+ [tests]
+ [test]
+ [input]
+ [/input]
+ [output]
+ 11
+ 20
+ 6
+ [/output]
+ [/test]
+ [/tests]
+ [/code-task]
+ [/slide]
 
 [slide hideTitle]
 
