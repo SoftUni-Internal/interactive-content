@@ -8,7 +8,7 @@
 
 Metaprogramming is a **programming technique** that allows us to write software that modifies itself or other software using **metadata**.
 
-The software can be design to read, generate, transform or analyze our data.
+The software can be designed to read, generate, transform or analyze our data.
 
 Based on that we can tell that **Java reflection** is a process of examining or modifying internal properties or behavior of a class at **runtime**.
 
