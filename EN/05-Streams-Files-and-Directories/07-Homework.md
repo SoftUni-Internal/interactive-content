@@ -581,7 +581,7 @@ Calling thе `writeObject(numbers)` method tells the program to start writing in
 
 A good practice is to use `.flush()` - it flushes the output stream and forces any buffered output bytes to be written out.
 
-Opening the **list.ser** file, you will see the **output**.
+Opening the **list.ser** file, you will see the following **output**:
 
 ```
 ���sr�java.util.ArrayListx����a��I�sizexp���w���sr�java.lang.Double���J)k��D�valuexr�java.lang.Number��������xp@G�����sq�~�@@@�����sq�~�@'ffffffx
@@ -591,7 +591,7 @@ Do not worry if it does not make sense to you, Java can read it just fine.
 
 Using this file, you can **deserialize** the ArrayList.
 
-In the `main()` method, write:
+Clear out the `main()` method, and write:
 
 ```
 try {
@@ -609,7 +609,11 @@ try {
 }
 ```
 
-You can now see the ArrayList's data, printed on the **console**.
+You can now see the ArrayList's data, printed on the **console**:
+
+```
+[46.2, 32.5, 11.7]
+```
 
 [/slide]
 
@@ -618,9 +622,89 @@ You can now see the ArrayList's data, printed on the **console**.
 
 Create a program that saves and loads information about a custom object using **ObjectInputStream** and **ObjectOutputStream**.
 
-Create a **simple class** called "Course" that has a **String field** containing its **name** and an **integer field** containing the **number of students** attending the course. 
+Create a **simple class** called "**Course**" that has the following values upon initialization:
 
-Set the name of the saved file as **course.ser**.
+- **name** - String
+    * the name of the course
+- **studentsCount** - int
+    * contains the **number of students** attending the course
+
+The class **must implement** the `Serializable` interface.
+
+```java
+import java.io.Serializable;
+
+public class Course implements Serializable {
+    private String name;
+    private int studentsCount;
+
+    public Course(String name, int studentsCount) {
+        this.name = name;
+        this.studentsCount = studentsCount;
+    }
+
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
+    public int getStudentsCount() {
+        return this.studentsCount;
+    }
+
+    public void setStudentsCount(int studentsCount) {
+        this.studentsCount = studentsCount;
+    }
+
+
+    @Override
+    public String toString() {
+        return new StringBuffer("Course name: ")
+                .append(this.name)
+                .append(", Students enrolled: ")
+                .append(this.studentsCount)
+                .toString();
+    }
+
+}
+```
+
+Once you are done creating the class, initialize it inside `main()`:
+
+```java
+Course course = new Course("Programming with Python",  32);
+```
+
+Create a `try-catch` block:
+
+```java
+try {
+    FileOutputStream fileOut = new FileOutputStream("course.ser");
+    ObjectOutputStream objectOut = new ObjectOutputStream(fileOut);
+    objectOut.writeObject(course);
+    objectOut.close();
+
+    System.out.println("The object was succesfully written to a file! ☑️");
+
+} catch (Exception e) {
+    System.out.println("An error occurred. 😵");
+    e.printStackTrace();
+}
+```
+
+Inside of `try`, set the name of the saved file as **course.ser**.
+
+Then, create an `ObjectOutputStream` instance in order to write the `course` object to the file.
+
+**Close** the output stream and create a `catch` block for **error handling**. 
+
+Inside of it, print the **stack trace**.
+
 
 [/slide]
 
