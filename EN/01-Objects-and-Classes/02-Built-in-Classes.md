@@ -301,7 +301,7 @@ number = number.divide(BigInteger.TEN);
 System.out.println(number);
 ```
 
-- `pow(value)` - Assigns a **new value** to the current BigInteger and performs an **exoponentation** (current ^ value)
+- `pow(value)` - Assigns a **new value** to the current BigInteger and performs an **exponentiation** (current ^ value)
 
 ```java live
 BigInteger number = BigInteger.valueOf(123);
