@@ -75,7 +75,7 @@ Reducerea se aplică prețului total și este una dintre următoarele:
 - 10% pentru clienți, care îl vizita pentru a doua oară - SecondVisit
 - 0% dacă nu există reducere - Niciuna
 
-## Input
+## Intrare
 Pe o **singură linie** veți primi toate **informațiile** despre **rezervarea** în formatul:
 
 "\<**pricePerDay**\> \<**numberOfDays**\> \<**season**\> \<**discountType**\>", unde:
@@ -85,7 +85,7 @@ Pe o **singură linie** veți primi toate **informațiile** despre **rezervarea*
 - Sezonul va fi unul dintre: **Spring, Summer, Autumn, Winter**
 - Reducerea va fi una dintre: **VIP, SecondVisit, None**
 
-## Output
+## Ieșire
 
 Pe o **singură linie**, imprimați **prețul total** al **vacanței**, rotunjit la 2 **cifre** după separatorul zecimal.
 

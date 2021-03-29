@@ -77,7 +77,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Descriere
 Create a program that reads a **positive integer n** as input and prints a **rhombus** with size **n** to the console.
 
 [image assetsSrc="more-oop-concepts-example(1).png" /]
@@ -86,23 +86,22 @@ Create a program that reads a **positive integer n** as input and prints a **rho
 
 Create a `printRow()` method to easily reuse code.
 
-# Examples
 
-## Example 1
+## Exemplu 1
 
 [image assetsSrc="java-oop-basics-rhombus1.png" /]
 
 
-## Example 2
+## Exemplu 2
 
 [image assetsSrc="java-oop-basics-rhombus2.png" /]
 
-## Example 3
+## Exemplu 3
 
 [image assetsSrc="java-oop-basics-rhombus3.png" /]
 
 
-## Example 4
+## Exemplu 4
 
 [image assetsSrc="java-oop-basics-rhombus4.png" /]
 

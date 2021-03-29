@@ -20,8 +20,8 @@ Pe următoarele **n** linii, veți primi șirurile curente.
 
 Pentru fiecare dintre ele creași o cutie și apelați metoda ei `toString()` pentru a imprima datele sale în consolă. 
 
-## Exemple
-| **Input** | **Output** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 2 | java.lang.String: life in a box |
 | life in a box | java.lang.String: box in a life |
@@ -150,8 +150,8 @@ Pe următoarele **n** linii, veți primi Integerii curenți.
 
 Pentru fiecare dintre ei, creați o cutie și apelați metoda ei `toString()` pentru a-i imprima datele în consolă. 
 
-## Exemple
-| **Input** | **Output** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 3 | java.lang.Integer: 7 |
 | 7 | java.lang.Integer: 123 |
@@ -249,7 +249,7 @@ Pe următoarea linie, veți primi o comandă swap care va consta din **two index
 
 Folosiți metoda creată pentru a schimba elementele care corespund indexurilor date și **print each** element în listă.
 
-## Exemple
+## Exemplu
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 3 | java.lang.String: Swap me with John |
@@ -365,7 +365,7 @@ Pe următoarea linie, veți primi o comandă swap care va consta din **two index
 
 Folosiți metoda pe care ați creat-o pentru a schimba elementele corespunzătoare celor indexurilor date și **print each** element în această listă. 
 
-## Exemple
+## Exemplu
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 3 | java.lang.Integer: 42 |
@@ -475,7 +475,7 @@ Pe următoarele **n** linii, veți primi elementele curente.
 
 Pe **last line**, veți primi valoarea elementului cu care trebuie să comparați fiecare element din listă. 
 
-## Exemple
+## Exemplu
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 3 | 2 |
@@ -591,7 +591,7 @@ Pe următoarele **n** linii, veți primi elementele curente.
 
 Pe **last line**, veți primi valoarea elementului cu care trebuie să comparați fiecare element din listă.
 
-## Exemple
+## Exemplu
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 3 | 2 |
@@ -713,7 +713,7 @@ Creați un cititor de comenzi care să citească aceste comenzi și să modifice
 
 **Note** : Pentru **tests**, folosiți **String** ca **T**.
 
-## Exemple
+## Exemplu
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | Add aa | cc |
@@ -893,7 +893,7 @@ It should have a single static method `sort()` which can sort objects of type **
 - "**Sort**" - Sort the elements in the list in ascending order.
 
 
-## Examples
+## Exemplu
 | **Intrare**|**Ieșire**|
 |---|---|
 | Add cc | aa |
@@ -1065,11 +1065,11 @@ f
 ## Descriere
 Extindeți problema anterioară făcând clasa listei specifice să implementeze **Iterable**.
 
-Pentru a imprima comanda, ați folosit, probabil, o buclă **for** .
+Pentru a imprima comanda, ați folosit, probabil, o buclă **for**.
 
-Aceasta trebuia să vă permită să iterați lista voastră în declarația **foreach** .
+Aceasta trebuia să vă permită să iterați lista voastră în declarația **foreach**.
 
-## Exemple
+## Exemplu
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | Add aa | cc |
@@ -1258,11 +1258,17 @@ Clasa trebuie să conțină **Generics**.
 
 Când creați un nou obiect al clasei -  **"Tuple"**, trebuie să specificați tipurile de itemi, separat. 
 
-## Input
+## Intrare
 
-Datele de intrare vor consta din trei linii :
+Datele de intrare vor consta din trei linii:
 
-- Prima linie cuprinde un **person's name** și **city of residence**. Cele două sunt **separated by space(s)**. Trebuie să le colectați în Tuple și să le imprimați în consolă. Aceste date vor veni în formatul: 
+- Prima linie cuprinde un **person's name** și **city of residence**. 
+
+Cele două sunt **separated by space(s)**. 
+
+Trebuie să le colectați în Tuple și să le imprimați în consolă. 
+
+Aceste date vor veni în formatul: 
 
 "\{\{**first name**\} \{**last name**\}\} \{**city**\}"
 
@@ -1284,11 +1290,11 @@ Datele de intrare vor consta din trei linii :
 
 Folosiți bunele practici pe care le-ați învățat. 
 
-Creați clasa astfel încât să aibă getteri și setteri pentru variabilele clasei. 
+Creați clasa astfel încât să aibă getteri și setteri pentru variabilele clasei.
 
-Datele de intrare vor fi valide, nu este necesar să le verificați explicit !
+Datele de intrare vor fi valide, nu este necesar să le verificați explicit!
 
-## Exemple
+## Exemplu
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | Sofia Tucker London | Sofia Tucker -> London |
@@ -1371,32 +1377,40 @@ Shamsky -\> 2999999
 ## Descriere
 Următoarea sarcină este să creați un alt Tuple.
 
-Creați o clasă **Threeuple**. Numele său arată că **Threeuple** trebuie să **hold three objects**.  Trebuie, de asemenea, să aibă getteri și setteri. Puteți extinde clasa anterioară-Tuple.
+Creați o clasă **Threeuple**. 
 
-## Input
-Datele de intrare constau din trei linii :
+Numele său arată că **Threeuple** trebuie să **hold three objects**.  
+
+Trebuie, de asemenea, să aibă getteri și setteri. 
+
+Puteți extinde clasa anterioară-Tuple.
+
+## Intrare
+Datele de intrare constau din trei linii:
 
 - Prima linie conține un nume de persoană, orașul și țara de reședință, în următorul format: 
 
 "\{\{**first name**\} \{**last name**\}\} \{**city**\} \{**country**\}"
 
-- A doua linie conține un nume, număr de hobbie-uri și o variabilă **Boolean variable** - mulțumit sau nu, în următorul format :
+- A doua linie conține un nume, număr de hobbie-uri și o variabilă **Boolean variable** - mulțumit sau nu, în următorul format:
 
 "\{**name**\} \{**hobbies**\} \{**happy or not**\}"
 
-- Ultima linie va conține un nume, o balanță bancară (dublu) și un nume de bancă. Format: 
+- Ultima linie va conține un nume, o balanță bancară (dublu) și un nume de bancă
+
+Format: 
 
 "\{**name**\} \{**account balance**\} \{**bank name**\}"
 
-## Output
+## Ieșire
 
 - Printați obiectele Triple în următorul format: 
 
 "\{**firstElement**\} **->** \{**secondElement**\} **->** \{**thirdElement**\}"
 
 
-## Exemple
-| **Input** | **Output** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Sofia Tucker London UK | Sofia Tucker -> London -> UK |
 | John 2 happy | John -> 2 -> false |

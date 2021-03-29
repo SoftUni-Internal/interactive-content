@@ -65,7 +65,7 @@ If we try to use another class that is **not a subclass of Number**, the compile
 
 ```
 [task-description]
-## Description
+## Descriere
 Create a class `Scale<T>` that holds two elements - **left** and **right**. 
 
 The scale should receive the elements through its single constructor:
@@ -80,7 +80,7 @@ The **greater of the two elements is heavier**.
 
 The method should return `null` if the elements are **equal**.
 
-# Example
+# Exemplu
 
 ```java
 Scale<String> stringScale = new Scale<>("a", "c");
