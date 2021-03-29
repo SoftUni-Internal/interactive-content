@@ -4,7 +4,7 @@
 
 [slide hideTitle]
 
-# Problemă cu soluție: Print Hello "JavaScript"
+# Problemă cu soluție: Print Hello JavaScript
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/problem1-print-hello-javascript_1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -19,7 +19,7 @@ function hello() {
 
 [/code-editor]
 [task-description]
-
+## Description
 Creați un program JavaScript, care:
 
 Imprimă "**Hello JavaScript**" pe consolă.
@@ -40,7 +40,7 @@ Hello JavaScript
 
 [slide hideTitle]
 
-# Problemă cu soluție: Calculate and Print 5 \* 5
+# Problemă cu soluție: Calculate and Print 5 * 5
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/problem2-calculate-and-print-5times5-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -55,7 +55,7 @@ function calculate() {
 
 [/code-editor]
 [task-description]
-
+## Description
 Creați un program JavaScript, care:
 
 
@@ -91,6 +91,9 @@ function nameAndExpression() {
 
 [/code-editor]
 [task-description]
+
+## Description
+
 Creați un program pentru a imprima "**Catlyn**" pe prima linie și calculați și imprimați rezultatul expresiei `5 + 3` pe a doua linie
 [/task-description]
 [code-io /]
@@ -122,31 +125,32 @@ function calculations() {
 
 [/code-editor]
 [task-description]
-
+## Description
 Creați un program care calculează și imprimă valoarea următoarelor expresii:
 
 - 5 \+ 3 \* 2
 - 4 \* (2 \+ 3)
 - (2 \+ 5)  \*  (8 \- 2) \/ 7
-  [/task-description]
-  [code-io /]
-  [tests]
-  [test]
-  [input]
-  [/input]
-  [output]
-  11
-  20
-  6
-  [/output]
-  [/test]
-  [/tests]
-  [/code-task]
-  [/slide]
+
+[/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+[/input]
+[output]
+11
+20
+6
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
 
 [slide hideTitle]
 
-# Problemă: Square of 7 \* 7 Stars
+# Problemă: Square of 7 * 7 Stars
 
 [code-task title="Square of 7 * 7 Stars" taskId="pb-js-introduction-SquareOf7x7" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
@@ -159,6 +163,7 @@ function squareOfStars() {
 
 [/code-editor]
 [task-description]
+## Description
 Creați un program care:
 
 
@@ -181,7 +186,8 @@ Imprimă un pătrat de stele "7 \* 7" astfel:
 [test]
 [input]
 [/input]
-[output] \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \*
+[output] 
+\* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \*
 [/output]
 [/test]
 [/tests]

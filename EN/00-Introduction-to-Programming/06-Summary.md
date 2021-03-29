@@ -11,9 +11,9 @@
 
 - A program consists of **sequences of commands**
 
-- JavaScript is a **dynamic language**, which is executed by an **interpreter** 
+- JavaScript is a **dynamic language** that is executed by an **interpreter** 
 
-- How to **install** run **VSCode** and **Node.js** 
+- How to install and run **VSCode** and **Node.js** 
 
 - How to create a project, files, and console applications in VSCode.
 
@@ -21,7 +21,7 @@
 
 - Data Types
 
-- What are Statements
+- What Statements are
 
 - How to read and print the user's input
 
