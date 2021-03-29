@@ -6,7 +6,7 @@
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-20-21-reusing-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Derived classes **can access all public** and **protected** members
-- Derived classes can access **default** members **if in the same package**
+- Derived classes can access **default** members **if they are in the same package**
 - **Private** fields cannot be accessed from the **Subclasses** but they are instantiated, as the **Parent** needs them for its internal logic
 
 ```java
