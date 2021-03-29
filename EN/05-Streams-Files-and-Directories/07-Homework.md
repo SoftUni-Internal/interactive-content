@@ -827,7 +827,7 @@ try {
     }
     
     // Closing the ZipOutputStream
-    zos.close();
+    zipOut.close();
 
     System.out.println("The zip file was created successfully. 👏");
     
