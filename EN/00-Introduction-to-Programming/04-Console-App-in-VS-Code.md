@@ -5,15 +5,15 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-30-31-Creating-a-console-application-in-VSC-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We already have Visual Studio Code and we can start it. 
+We already have Visual Studio Code installed, so we can open it. 
 
-Create a folder for your project and open it from VS Code:
+We create a folder for our project and we open it from VS Code:
 
 `[File] -> [Open Folder]`
 
 [image assetsSrc="intro-to-programming-4.png" /]
 
-Create a file **hello.js** to hold your program's source code:
+We create a file called **hello.js** that will hold our program's source code:
 
 [image assetsSrc="intro-to-programming-5.png" /]
 
@@ -40,13 +40,9 @@ Here is how our program should look like in Visual Studio Code:
 
 [image assetsSrc="intro-to-programming-9.png" /]
 
-The command `console.log('Hello JS')` in JavaScript means to print something out `log(…)` on the console `console` in our case to print the text message **Hello JS**, which we should surround by quotation marks.
- 
-To clarify that this is a text. 
+The command `console.log('Hello JS')` in JavaScript means to print something out `log(…)` to the console `console`. In our case, it means to print the text message **Hello JS**, which we should surround by quotation marks to clarify that this is a text.
 
-At the end of each command in the JavaScript language the symbol `;` is being put and it says that the current command ends (it does not continue on the next line). 
-
-This command is very typical in programming: we say a given **object** should be found (in this case the console) and some **action** should be executed in it (in this case it is printing the text in the brackets).
+At the end of each command in the JavaScript language, the symbol `;` is being put, which means the current command ends (it does not continue on the next line).
 
 [/slide]
 
@@ -60,13 +56,13 @@ To start the program, press `[Ctrl + F5]`
 The result will appear in the `[Debug Console]` tab
 [image assetsSrc="intro-to-programming-6.png" /]
 
-As you can see the output of the program is the following text message:
+As we can see, the output of the program is the following text message:
 ```
 Hello, JavaScript!
 ```
-In VS Code `[F5]`/`[Ctrl+F5]` keys runs your earliest created `.js` file
+In VS Code, by pressing `[F5]` or `[Ctrl+F5]`, we will run our earliest created `.js` file.
 
-If you have multiple .js files in VS Code, you may want to start the current file with `[F5]`/`[Ctrl + F5]` \-\> edit the launch configuration
+If we have multiple `.js` files in VS Code and if we want to run the current file with `[F5]` or `[Ctrl + F5]`, we need to edit the launch configuration.
 
 [image assetsSrc="intro-to-programming-7.png" /]
 
