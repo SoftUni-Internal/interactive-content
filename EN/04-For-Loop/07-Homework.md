@@ -1227,7 +1227,7 @@ The sum: 1683
 solve(10, 20)
 [/input]
 [output]
-The sum: 165
+The sum: 18
 18
 [/output]
 [/test]
