@@ -4,6 +4,8 @@
 
 # Clase Generice
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/RO/interactive-java-advanced-generics-7-Generic-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Ne putem defini propriile clase cu tipuri generice.
 
 Un tip generic este o clasă sau o interfață care este parametrizată pe tipuri.
@@ -55,7 +57,7 @@ public class Container<K,V> {
 
 # Type Parameter Scope
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/EN/interactive-java-advanced-generics-8-Type-Parameter-Scope-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/RO/interactive-java-advanced-generics-8-Type-Parameter-Scope-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The type parameter can be used **anywhere inside the declaring class**.
 
@@ -81,6 +83,9 @@ It is also used to describe the **return value** of `remove()`.
 
 [slide hideTitle]
 # Problemă cu Soluție: Jar of T
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/RO/interactive-java-advanced-generics-9-Problem-and-Solution-Jar-of-T-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Jar of T" timeLimit=5000 taskId="oop-basics-java-generics-lab-Jar-of-T" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
 [code-upload allowedMemory="30" /]
 
@@ -281,7 +286,7 @@ Test Passed!
 [slide hideTitle]
 # Subclassing Generic Classes
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/EN/interactive-java-advanced-generics-11-Subclassing-Generic-Classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/RO/interactive-java-advanced-generics-11-Subclassing-Generic-Classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Generic classes can be **extended** to concrete classes.
 
@@ -301,6 +306,8 @@ jar.add(new Vegetable()); // Error
 
 [slide hideTitle]
 # Interfețe Generice
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/RO/interactive-java-advanced-generics-12-Generic-Interfaces-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 O interfață Java generică este o interfață care poate fi tastată - ceea ce înseamnă că poate fi specializată pentru a lucra cu un anumit tip (de exemplu, interfață sau clasă) atunci când este utilizată.
 
@@ -324,9 +331,11 @@ Deci, dacă încercăm să folosim o altă clasă care nu este **o subclasă de 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problemă cu Soluție: Generic Array Creator
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/RO/interactive-java-advanced-generics-13-Problem-and-Solution-Generic-Array-Creator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Generic Array Creator" timeLimit=5000 taskId="oop-basics-java-generics-lab-Generic-Array-Creator" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput] 
 [code-upload allowedMemory="30" /]
