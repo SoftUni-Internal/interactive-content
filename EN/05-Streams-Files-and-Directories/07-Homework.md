@@ -493,23 +493,35 @@ try {
 
 Then, inside the `try` block, create an input stream for the original image.
 
-Initialize a new **input stream** using `new File("the-absolute-path-to-your\\image")`.
+Initialize a new **input stream** using `new File("the-absolute-path-to-your\image")`.
 
 You can get the absolute path to your image by right-clicking on it, and choosing "**Properties**".
 
+A window will appear, and the path will be located next to "**Location:**".
+
+Select the path and paste it as follows:
+
+```java
+FileInputStream inputImage = new FileInputStream(new File("C:\folder-name\...\picture-name.jpg"));
+```
+
 After that, create an **output stream** with the "**picture-copy.jpg**" string as a parameter.
 
-Create a `byte[]` buffer with a size **bigger than or equal to** your image size, in bytes.
+```java
+FileOutputStream outputImage = new FileOutputStream("picture-copy.jpg");
+```
+
+Create a `byte[]` buffer.
 
 Use a while loop to **write the data** to the output stream, as shown below.
 
 ```java
 try {
-    FileInputStream inputImage = new FileInputStream(new File("C:\\Folder1\\picture.jpg"));
+    FileInputStream inputImage = new FileInputStream(new File("C:\FolderOne\picture.jpg"));
     FileOutputStream outputImage = new FileOutputStream("picture-copy.jpg");
 
     int oneByte;
-    byte[] buffer = new byte[8192]; // The size should be >= to that of your image. 🏞
+    byte[] buffer = new byte[8192]; // Or more, if you want 🏞
     while ((oneByte = inputImage.read(buffer)) != -1) {
         outputImage.write(buffer, 0, count);
     }
@@ -589,7 +601,7 @@ Opening the **list.ser** file, you will see the following **output**:
 
 Do not worry if it does not make sense to you, Java can read it just fine.
 
-Using this file, you can **deserialize** the ArrayList.
+Using this file, you can **deserialize** the ArrayList with the help of `ObjectInputStream`.
 
 Clear out the `main()` method, and write:
 
@@ -757,10 +769,9 @@ Create a program that reads three **.txt** files and creates a `zip` archive nam
 
 Use **FileOutputStream**, **ZipOutputStream**, and **FileInputStream**.
 
-To start, create three **.txt** files in a new folder.
+To start, create three **.txt** files in a directory of your choice.
 
-
-You will need the following imports:
+You will need the following **imports** in `Main.java`:
 
 ```java
 import java.io.*;
@@ -768,6 +779,72 @@ import java.util.*;
 import java.util.zip.*;
 ```
 
+Inside `main()`, declare the desired path for the new `.zip` file:
 
+```java
+String zipFile = "C:/archive.zip";
+```
+
+Then, create an array of all the paths to the three `.txt` files:
+
+```java
+String[] sourceFiles = { "C:/fileOne.txt", "C:/fileTwo.txt", "C:/fileThree.txt"};
+```
+
+Create a try-catch block and a `byte[]` buffer.
+ 
+```java
+try {
+
+    // Create a byte buffer
+    byte[] buffer = new byte[1024];
+
+    FileOutputStream fileOut = new FileOutputStream(zipFile);
+
+    ZipOutputStream zipOut = new ZipOutputStream(fileOut);
+
+    for (int i=0; i < sourceFiles.length; i++) {
+
+        File sourceFile = new File(sourceFiles[i]);
+
+        FileInputStream fileIn = new FileInputStream(sourceFile);
+
+        // Start writing a new ZIP entry
+        // Positioning the stream to the start of the entry data
+        zipOut.putNextEntry(new ZipEntry(sourceFile.getName()));
+
+        int length;
+
+        while ((length = fileIn.read(buffer)) > 0) {
+            zipOut.write(buffer, 0, length);
+        }
+
+        zipOut.closeEntry();
+
+        // Closing the InputStream
+        fileIn.close();
+
+    }
+    
+    // Closing the ZipOutputStream
+    zos.close();
+
+    System.out.println("The zip file was created successfully. 👏");
+    
+
+}
+catch (IOException e) {
+    System.out.println("There was an error creating the file. 😨");
+}
+
+```
+
+Using a **for-loop**, we iterate through the `sourceFiles` array. 
+
+We write each file to the `zipOut` stream using a `byte[]` buffer.
+
+As you can see above, we also use the `ZipEntry` class, used to represent a ZIP file entry.
+
+Your `.zip` file is now saved in the directory, declared in the `zipFile` string.
 
 [/slide]
