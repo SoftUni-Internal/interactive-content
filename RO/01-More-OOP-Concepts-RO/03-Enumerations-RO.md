@@ -90,7 +90,7 @@ Pe o **singură linie** veți primi toate **informațiile** despre **rezervarea*
 Pe o **singură linie**, imprimați **prețul total** al **vacanței**, rotunjit la 2 **cifre** după separatorul zecimal.
 
 
-## Exemple
+## Exemplu
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 50.25 5 Summer VIP | 804.00 |

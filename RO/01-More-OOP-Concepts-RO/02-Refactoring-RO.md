@@ -67,7 +67,7 @@ Descărcați fișierul cu resurse [here](https://mega.nz/file/7JgGDZzD#L37q5RDXa
 ## Trimitere
 Submit .zip
 
-## Exemple
+## Exemplu
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | Create Bob 20 5.50 | Bob is 20 years old. Excellent student. |

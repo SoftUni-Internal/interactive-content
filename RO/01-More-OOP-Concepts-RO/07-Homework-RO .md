@@ -15,7 +15,7 @@ Repetați valorile tipului de enumerare și imprimați toate **valorile ordinale
 
 Submit `.zip`
 
-## Exemple
+## Exemplu
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | Card Suits | Card Suits: |
@@ -69,7 +69,7 @@ Repetați valorile tipului de enumerare și imprimați toate valorile ordinale �
 ## Trimitere
 Submit `.zip`
 
-## Exemple
+## Exemplu
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | Card Ranks | Card Ranks: |
@@ -148,12 +148,14 @@ Creați un program care generează un **pachet de cărți** **(class Card)** car
 
 **Puterile de rang** sunt după cum urmează: (ACE - 14, TWO - 2, THREE - 3, FOUR - 4, FIVE - 5, SIX - 6, SEVEN - 7, EIGHT - 8, NINE - 9, TEN - 10, JACK - 11, QUEEN - 12, KING - 13).
 
-**Puterile costumului** sunt după cum urmează:: (CLUBS - 0, DIAMONDS - 13, HEARTS - 26, SPADES - 39).
+**Puterile costumului** sunt după cum urmează: (CLUBS - 0, DIAMONDS - 13, HEARTS - 26, SPADES - 39).
 
-## Input
-Veți primi o comandă formată din **două** linii. Pe **prima** linie veți primi Rangul cărții și pe **a doua** linie veți obține costumul cărții.
+## Intrare
+Veți primi o comandă formată din **două** linii. 
 
-## Output
+Pe **prima** linie veți primi Rangul cărții și pe **a doua** linie veți obține costumul cărții.
+
+## Ieșire
 Imprimați rezultatul în format: **"Card name: ACE of SPADES; Card power: 53".**
 
 ## Notă
@@ -164,7 +166,7 @@ Imprimați rezultatul în format: **"Card name: ACE of SPADES; Card power: 53".*
 Submit `.zip`
 
 
-## Exemple
+## Exemplu
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | TWO | Card name: TWO of CLUBS; Card power: 2 |
@@ -252,7 +254,7 @@ Fiecare semafor poate fi **actualizat**, ceea ce schimbă culoarea semnalului s�
 
 Ordinea semnalelor este: **red -> green -> yellow -> red** și așa mai departe.
 
-## Input
+## Intrare
 
 Pe prima linie vi se vor da mai multe semnale de semafoare **în formatul "RED GREEN YELLOW"**. 
 
@@ -262,7 +264,7 @@ Trebuie să faceți cât mai multe semafoare pe cât sunt semnale în intrare.
 
 Pe a doua linie, veți primi **n** - de câte ori trebuie să modificați semnalul fiecărui semafor.
 
-## Output
+## Ieșire
 
 Rezultatul dvs. trebuie să fie format din **n** - numărul de linii, care includ **fiecare** semnal actualizat al semaforului.
 
@@ -271,8 +273,8 @@ Pentru a înțelege mai bine problema, vedeți exemplul de mai jos.
 ## Trimitere
 Sumbit `.zip`
 
-## Exemple
-| **Input** | **Output** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | GREEN RED YELLOW | YELLOW GREEN RED |
 | 4 | RED YELLOW GREEN |
