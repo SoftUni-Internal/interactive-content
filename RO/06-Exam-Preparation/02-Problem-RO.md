@@ -1,7 +1,7 @@
 [slide hideTitle]
 # Legendary Farming
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/09-Exam-Preparation/EN/interactive-java-advanced-exam-preparation-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/09-Exam-Preparation/RO/interactive-java-advanced-exam-preparation-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Legendary Farming" taskId="Java-Advanced-Exam-Preparation-Legendary-Farming" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java-code]
