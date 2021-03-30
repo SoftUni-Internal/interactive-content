@@ -53,7 +53,7 @@ Programarea orientată pe obiecte permite programatorilor să gândească în te
 
 [slide hideTitle]
 
-# Caută pe internet
+# Caută pe Internet
 
 - Cursurile necesită **căutarea pe Internet**
     - aceasta este o parte majoră a procesului de învățare

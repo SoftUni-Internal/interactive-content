@@ -374,7 +374,7 @@ Punctele **de pe partea** unui pătrat sunt considerate **în interior**.
      
 - Pe a doua linie, citiți un număr întreg **n** și pe următoarele **n** linii, citiți coordonatele punctelor
 
-## Output
+## Ieșire
 
 - Pentru fiecare punct, imprimați rezultatul metodei `Contains()`
 

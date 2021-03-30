@@ -61,7 +61,7 @@ public class Container<K,V> {
 
 Parametrul de tip poate fi folosit **oriunde în cadrul clasei declarate**.
 
-**Example:**
+**Exemplu:**
 
 ```java
 class List<T> {
@@ -325,7 +325,7 @@ public interface Mathematics<T extends Number> {
 
 Parametrul de tip `T` extinde Numărul pentru a restricționa tipul de obiecte care pot fi utilizate în tipul parametrizat.
 
-"**Number**" este o superclasă a tuturor claselor numerice, cum ar fi :**Integer**:, "**Float**" și "**Double**".
+"**Number**" este o superclasă a tuturor claselor numerice, cum ar fi: "**Integer**", "**Float**" și "**Double**".
 
 Deci, dacă încercăm să folosim o altă clasă care nu este **o subclasă de Număr**, compilatorul va arunca "**compile-time-error**".
 

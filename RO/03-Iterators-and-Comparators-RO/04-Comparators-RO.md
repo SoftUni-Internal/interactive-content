@@ -359,9 +359,9 @@ Creați o clasă BookComparator din diagrama UML diagram de mai jos:
 	- **year** of publishing a book
 
 
-## Exemple
+## Exemplu
 
-Testați  **BookComparator** folosind codul de mai jos:
+Testați **BookComparator** folosind codul de mai jos:
 
 
 ```java

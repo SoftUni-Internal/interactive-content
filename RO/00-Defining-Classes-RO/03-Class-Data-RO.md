@@ -96,10 +96,10 @@ Modificatorii de acces determină dacă alte clase pot folosi un anumit câmp.
 
 Există patru tipuri de modificatori de acces în Java:
 
-- Private
-- Package-private
-- Protected
-- Public
+- "Private"
+- "Package-private"
+- "Protected"
+- "Public"
 
 Utilizarea unui modificator de acces **privat** înseamnă că doar cod din cadrul corpului clasei poate accesa acest câmp Java.
 

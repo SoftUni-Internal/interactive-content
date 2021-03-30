@@ -1240,7 +1240,7 @@ f
 ## Descriere
 Aceasta este o secvență de elemente numităi **"Tuple"**.
 
-Este o clasă care conține două obiecte : primul este **"item1"**; al doilea este **"item2"**.
+Este o clasă care conține două obiecte : primul este **"item1"** al doilea este **"item2"**.
 
 Este la fel ca **Map.Entry** dar **only has items**, care sunt **neither key nor value**.
 
@@ -1256,7 +1256,7 @@ Primul obiect va fi **"item1"** și al doilea  - **"item2"**.
 
 Clasa trebuie să conțină **Generics**. 
 
-Când creați un nou obiect al clasei -  **"Tuple"**, trebuie să specificați tipurile de itemi, separat. 
+Când creați un nou obiect al clasei - **"Tuple"**, trebuie să specificați tipurile de itemi, separat. 
 
 ## Intrare
 
@@ -1280,7 +1280,7 @@ Aceste date vor veni în formatul:
 
 "\{**Integer**\} \{**Double**\}"
 
-## Output
+## Ieșire
 
 - Printați itemii Tuple items in următorul format: 
 

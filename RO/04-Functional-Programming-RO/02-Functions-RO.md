@@ -69,7 +69,7 @@ Dezvoltatorii pur funcționali trebuie să **își schimbe stilul de gândire** 
 
 
 
-**Exemple** de limbaje populare de programare multi-paradigme de uz general sunt:
+**Exemplu** de limbaje populare de programare multi-paradigme de uz general sunt:
 
 - JavaScript, C#, Python, Java, PHP, C++, Go, Swift și TypeScript
 

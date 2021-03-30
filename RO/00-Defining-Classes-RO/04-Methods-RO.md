@@ -260,7 +260,8 @@ System.out.println(car.carInfo());
 ```
 
 
-## Examples
+## Exemplu
+
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 3 | The car is: Chevrolet Impala - 390 HP. |
