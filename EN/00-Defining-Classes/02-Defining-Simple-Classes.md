@@ -23,15 +23,15 @@ public class Car {
 }
 ```
 
-The car has **attributes**, such as **weight** and **color**, and **methods**, such as **drive** and **brake**.
+The car has **attributes**, such as **weight** and **color**, and what could be described as **methods** in coding terms - such as **speed up** and **brake**.
 
-A **class** is a **template** that describes the **data** and **behavior** associated with instances of that class.
+A **class** is a **template** that describes the **data** and **behavior** associated with instances that can be created from that class.
 
-When you instantiate a class you create an object that looks and feels like other instances of the same class. 
+When you instantiate a class you create an object that holds the same attributes and behavior as all other instances of this same class. 
 
-The data (**attributes**) associated with a class or object is stored in **variables**. 
+The data (**attributes**) associated with a class or an object is stored in **variables**. 
 
-The **behavior** associated with a class or object is implemented with **methods**. 
+The **behavior** associated with a class or object is implemented using **methods**. 
 
 [/slide]
 
@@ -40,9 +40,9 @@ The **behavior** associated with a class or object is implemented with **methods
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-5-Naming-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-There are some naming conventions that should be followed while developing software.
+There are naming conventions that should be followed when developing software.
 
-This makes for easier code maintenance and improves readability.
+This is done for easier code maintenance and improves readability.
 
 Class names should be nouns, in **MixedCase** with the first letter of each word capitalized. 
 
@@ -60,7 +60,7 @@ class Carhp { ... }
 
 Try to keep your class names simple and descriptive. 
 
-Use the full form of words. 
+Use whole words. 
 
 Avoid acronyms and abbreviations (unless the abbreviation is much more widely used than the full form, such as URL or HTML).
 
@@ -71,22 +71,22 @@ Avoid acronyms and abbreviations (unless the abbreviation is much more widely us
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-6-class-members-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-When a class is defined, it contains only those members of a class declaration that are required.
+When a class is defined, it contains only the members of a class that are required for its declaration.
 
 The required members are:
 
 - Keyword - `class`
 - Class name
-- Class body - between `{}`
+- Class body - placed in: `{}`
 
-The optional but frequently used members are:
+Some optional but nvertheless - frequently used members are:
 
 - Class fields
 - Constructor
 - Getters and Setters
 - Class methods
 
-Here is an example of a class Car that has two fields (**brand, model**) and one void method - `start()`.
+Here is an example of a class called "Car" that has two fields (**brand, model**) and one void method - `start()`.
 
 ```java
 class Car {
@@ -104,11 +104,11 @@ class Car {
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-7-Creating-an-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Creating an object of a defined class is called **instantiation**.
+Creating an object of a class is called **instantiation**.
 
 The instance is the object itself, which is created at runtime.
 
-To create an object, specify the **class name**, followed by the **object name**, and use the `new` keyword:
+To create an object, we specify the **class name**, followed by the **object name**, and the `new` keyword:
 
 ```java
 Car firstCar = new Car();
@@ -130,7 +130,7 @@ Car thirdCar = new Car();
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-8-Object-reference-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The `new` operator instantiates a class by allocating memory for a new object and returning a **reference** to that memory. 
+The `new` operator instantiates a class by allocating memory for a new object and returns a **reference** to that memory. 
 
 A **reference** is an **address** that indicates where an object's variables and methods are stored.
 
@@ -175,10 +175,10 @@ int horsePower = 0;
 | A blueprint or template from which objects are created. | An instance of a class. |
 | A group of similar objects. | A real-world entity such as a pen, laptop, mobile, bed, keyboard, mouse, chair, etc. |
 | A logical entity. | A physical entity. |
-| Declared using `class` keyword e.g. class `Car{}` | Created mainly through the `new` keyword -  e.g. `Car firstCar = new Car();` |
-| Declared **once**. | Created as **many times** as required. | 
+| Declared using the `class` keyword e.g. class `Car{}` | Created mainly through the `new` keyword -  e.g. `Car firstCar = new Car();` |
+| Declared **once**. | Produced as **many times** as required. | 
 | **Does not allocate memory** when it is created. | **Allocates memory** when it is created. |
-| Only one way to define in Java - using the `class` keyword. | Many ways to create in Java - `new` keyword, `newInstance()` method, `clone()` method `factory` method and deserialization. |
+| Only one way to define in Java - using the `class` keyword. | Can be instantiated using: the `new` keyword, the `newInstance()` method, the `clone()` method, a `factory` method and deserialization. |
 [/slide]
 
 
