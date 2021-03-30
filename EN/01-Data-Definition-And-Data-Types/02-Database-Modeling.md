@@ -4,10 +4,10 @@
 
 # Working with IDEs
 
-We will manage databases with MySQL Workbench, which will allow us to:
+Мanage МъСЯЛ databases with **MySQL Workbench**, which will allow us to:
 
-- create a new database
-- create objects in the database(tables, stored procedures, relationships, and others)
+- create new databases
+- create objects in the database (tables, stored procedures, relationships, and others)
 - change properties of an object
 - enter records into tables
 
@@ -15,9 +15,9 @@ We will manage databases with MySQL Workbench, which will allow us to:
 
 [slide hideTitle]
 
-# Creating a new Database
+# Creating new Databases
 
-Select "**Create**" new schema from the command menu.
+Select "**Create New Schema**" from the command menu.
 
 [image assetsSrc="Data-Definition-And-Data-Types(4).png" /]
 
