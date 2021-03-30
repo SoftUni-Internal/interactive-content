@@ -1,68 +1,66 @@
-# Object-Oriented Programming
+# Programare Orientată pe Obiecte
 
 [slide hideTitle]
 
-# What is OOP
+# Ce este OOP
 
+**OOP** vine de la **Object-oriented programming**.
 
+Este o paradigmă de programare bazată pe conceptul de **obiecte**.
 
-**OOP** stands for **Object-oriented programming**.
+Programarea orientată pe obiecte permite programatorilor să gândească în termeni de entități sau obiecte din viața reală.
 
-It is a programming paradigm based on the concept of **objects**.
+## OOP vs. Programare procedurală
 
-Object-oriented programming enables programmers to think in terms of real-life entities or objects. 
-
-## OOP vs. Procedural Programming
-
-- **Procedural programming** is about writing procedures or methods that perform operations on the data
+- **Programarea procedurală** se referă la scrierea procedurilor sau metodelor care efectuează operațiuni pe date
 
 [image assetsSrc="what-is-oop-example(1).png" /]
 
-- **Object-oriented programming** is about creating **objects** that contain both data and methods
+- **Programarea orientată pe obiecte** este despre crearea de **obiecte** care conțin atât date cât și metode
 
 [image assetsSrc="what-is-oop-example(2).png" /]
 
-## Advantages of OOP
+## Avantajele OOP
 
-**OOP has the following advantages:**
+**OOP are următoarele avantaje:**
 
-- **Faster** and **easier** to execute
-- Provides a **clear structure** for writing programs
-- Helps to keep the Java code **DRY** *"Do not Repeat Yourself"*, and makes the code **easier** to **maintain, modify and debug**
-- Makes it **possible** to create completely **reusable** applications with **less code** and **shorter development time**
-
-[/slide]
-
-[slide hideTitle]
-
-# When and Why Should We Use OOP
-
-## When?
-
-- There is a lot of code that could be shared and reused
-- The project is expected to change often and be expanded over time
-- We have multiple programmers who do not need to understand each component 
-- Different sections can benefit from different resources like **DataSource** or **Hardware**
-
-## Why?
-
-- Anyone involved in software development should be familiar with **OOP** and **object-oriented modeling**
-- All modern languages are either object-oriented or support classes and objects
-    - modern frameworks, libraries, and APIs are object-oriented
-- Understanding of OOP is a minimum requirement for starting a job as a developer
+- **Mai rapid** și **mai ușor** de executat
+- Oferă o **structură clară** pentru scrierea programelor
+- Ajută la păstrarea codului Java **DRY** *„Do not Repeat Yourself”* și face codul **mai ușor** de **întreținut, modificat și depanat**
+- Face **posibil** crearea de aplicații complet **reutilizabile** cu **cod mai puțin** și **timp de dezvoltare mai redus**
 
 [/slide]
 
 [slide hideTitle]
 
-# Search the Internet
+# Când și de ce ar Trebui să Folosim OOP
 
-- The course assignments require you to **search the Internet**
-    - this is a major part of the learning process
-    - some exercises intentionally have no hints
+## Când?
 
-- Learn to find solutions
-    - software development includes **researching and learning** new things each day
-    - no excuses, simply learn how to study
-    - developers are constantly learning new technologies, tools to stay competitive in the market
+- Există o mulțime de coduri care ar putea fi partajate și reutilizate
+- Se așteaptă ca proiectul să se schimbe des și să se extindă în timp
+- Avem mai mulți programatori care nu trebuie să înțeleagă fiecare componentă
+- Diferite secțiuni pot beneficia de resurse diferite, cum ar fi **DataSource** sau **Hardware**
+
+## De ce?
+
+- Oricine este implicat în dezvoltarea de software ar trebui să fie familiarizat cu **OOP** și **modelarea orientată obiecte**
+- Toate limbajele moderne sunt fie orientate spre obiecte, fie clase și obiecte de suport
+    - cadrele moderne, bibliotecile și API-urile sunt orientate pe obiecte
+- Înțelegerea OOP este o cerință minimă pentru a începe un job ca dezvoltator
+
+[/slide]
+
+[slide hideTitle]
+
+# Caută pe internet
+
+- Cursurile necesită **căutarea pe Internet**
+    - aceasta este o parte majoră a procesului de învățare
+    - unele exerciții nu au indici intenționat 
+
+- Învață să găsești soluții
+    - dezvoltarea de software include **cercetarea și învățarea** de lucruri noi în fiecare zi
+    - fără scuze, învață pur și simplu cum să studiezi
+    - dezvoltatorii învață în mod constant noi tehnologii, instrumente pentru a rămâne competitivi pe piață
 [/slide]

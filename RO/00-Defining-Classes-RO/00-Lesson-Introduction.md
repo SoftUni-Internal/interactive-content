@@ -1,27 +1,27 @@
-# Lesson Introduction
+# Lecție Introductivă
 
 [slide hideTitle]
 
-# Lesson Content
+# Conținutul Lecției
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/RO/interactive-java-advanced-defining-classes-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In this lesson, you will learn:
+## În această lecție, veți învăța:
 
-**1. Defining Simple Classes**
-- Classes as a template for creating objects
+**1. Definirea claselor simple**
+- Clase ca șablon pentru crearea obiectelor
 
-**2. Fields**
-- Storing data that is accessible to use by constructors and methods
+**2. Câmpuri**
+- Stocarea datelor care sunt accesibile pentru constructori și metode
 
-**3. Methods**
-- Performing specific tasks
+**3. Metode**
+- Efectuarea de sarcini specifice
 
-**4. Constructors**
-- Constructing an object by predetermined rules
+**4. Constructori**
+- Construirea unui obiect după reguli prestabilite
 
-**5. Static Members**
-- Working with static fields and methods
+**5. Membri statici**
+- Lucrul cu câmpuri și metode statice
 
 [/slide]
 

@@ -1,19 +1,19 @@
-# Static Members
+# Membrii Statici
 
 [slide hideTitle]
-# What Are Static Members
+# Ce Sunt Membrii Statici
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/RO/interactive-java-advanced-defining-classes-33-34-35-static-members-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In Java, static members are those members of a class that can be used without initializing the class.
+În Java, membrii statici sunt acei membri ai unei clase care pot fi folosiți fără inițializarea clasei.
 
-The static keyword can be used with methods, fields, classes (inner/nested), blocks.
+Cuvântul cheie static poate fi folosit cu metode, câmpuri, clase (interioare / imbricate), blocuri.
 
-## Static Methods
+## Metode statice
 
-Static methods can access only static fields and methods.
+Metodele statice pot accesa numai câmpuri și metode statice.
 
-There is no need to instantiate the class to access its static members.
+Nu este nevoie să instanțiați clasa pentru a accesa membrii săi statici.
 
 ```java live no-template
 public class Car {
@@ -42,19 +42,20 @@ public class Car {
     }
 ```
 
-In the last example, we see that all the methods we are using in the main method are accessible, even though we never actually initialized a Car class.
+În ultimul exemplu, vedem că toate metodele pe care le folosim în metoda principală sunt accesibile, chiar dacă nu am inițializat niciodată clasa Mașină.
 
-This works because all the fields and methods in the Car class are static members of the class.
+Acest lucru funcționează deoarece toate câmpurile și metodele din clasa Mașină sunt membri statici ai clasei.
 
-## Static Fields
+## Câmpuri statice
 
-You can create a static field by using the keyword static. 
+Puteți crea un câmp static utilizând cuvântul cheie static.
 
-The static fields have the same value in all the instances of the class. 
+Câmpurile statice au aceeași valoare în toate instanțele clasei.
 
-These are created and initialized when the class is loaded for the first time. 
+Acestea sunt create și inițializate atunci când clasa este încărcată pentru prima dată.
 
-Just like static methods you can access static fields using the class name:
+La fel ca metodele statice, puteți accesa câmpurile statice folosind numele clasei:
+
 
 ```java live no-template
 public class Car {
@@ -76,22 +77,22 @@ public class Car {
 [code-task title="Bank Account" taskId="oop-basics-java-defining-classes-lab-Bank-Account" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-## Description
-Create a `BankAccount` class.
+## Descriere
+Creați o clasă `BankAccount`.
 
-The class should have private fields for:
-- "**id**": int (starts from 1 and increases by one for every new account)
+Clasa ar trebui să aibă câmpuri private pentru:
+- "**id**": int (începe de la 1 și crește cu unu pentru fiecare cont nou)
 - "**balance**": double
-- "**interestRate**": double 
-    - shared for all accounts
-    - default value: 0.02
+- "**interestRate**": double
+    - partajat pentru toate conturile
+    - valoare implicită: 0,02
 
-The class should also have public methods for:
-- `setInterestRate(double interest)`: void (static)
-- `getInterest(int years)`: double
-- `deposit(double amount)`: void
+Clasa ar trebui să aibă, de asemenea, metode publice pentru:
+- `setInterestRate (double interest)`: void (static)
+- `getInterest (int years)`: double
+- `deposit (double amount)`: void
 
-Create a test client supporting the following commands:
+Creați un test pentru client care să susțină următoarele comenzi:
 - "**Create**"
 - "**Deposit** \{**Id**\} \{**Amount**\}"
 - "**SetInterest** \{**Interest**\}"
@@ -101,7 +102,7 @@ Create a test client supporting the following commands:
 ## Exemplu
 
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Create | Account ID1 created |
 | Deposit 1 20 | Deposited 20 to ID1 |
@@ -110,7 +111,7 @@ Create a test client supporting the following commands:
 
 
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Create | Account ID1 created |
 | Create | Account ID2 created |
