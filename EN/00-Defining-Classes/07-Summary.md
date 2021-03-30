@@ -3,7 +3,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-40-conclusion-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In this lesson, you learned:
+## In this lesson you learned:
 
 - Classes are templates from which objects are created
     - class instances are called objects
@@ -15,7 +15,7 @@ class Animal {
 Animal animal = new Animal();
 ```
 
-- The variables inside a class are called fields
+- Class variables are called fields
 
 ```java
 class Animal { 
@@ -55,7 +55,7 @@ class Animal {
 Animal animal = new Animal("Rex", 5);
 ```
 
-## In the next lesson, you will learn:
+## In the next lesson you will learn:
 
 - Generics in Java 
     - syntax
