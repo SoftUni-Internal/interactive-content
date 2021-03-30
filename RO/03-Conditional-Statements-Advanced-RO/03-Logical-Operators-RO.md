@@ -233,9 +233,9 @@ Ajungând la 'b', înțelege că are o valoare `adevărată` și întreaga **exp
 [/slide]
 
 [slide hideTitle]
-# Problemă: Food or Drink
+# Problemă cu Soluție: Food or Drink
 
-[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-21-logical-or-problem-and-solution-food-or-drink-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-21-logical-or-problem-and-solution-food-or-drink-solution-only-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Food or Drink" taskId="java-basics-logical-opators-food-ot-drink" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
