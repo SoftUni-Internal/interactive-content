@@ -6,9 +6,9 @@
 
 [task-description]
 ## Description
-Create a "**Person**" class with two fields "**String name**" and "**int age**".
+Create a "**Person**" class holding two fields **String "name"** and **int "age"**.
 
-Write a program that reads **N** lines of personal information from the console, and then prints all people whose **age** is **more than 30** years old, **sorted in alphabetical order**.
+Create a program that reads **N** lines of personal information from the console, and then prints out the names and age of all people whose **age** is **greater than 30** years old, **sorted in alphabetical order**.
 
 **Note:** you can use `stream()` to filter the people.
 
@@ -208,13 +208,13 @@ Define a class **Employee** that holds the following information: **name, salary
 
 The **name, salary, position**, and **department** are **mandatory** while the rest are **optional**.
 
-Your task is to write a program that takes **N** lines of information about employees from the console and calculates the department with the highest average salary. 
+Your task is to create a program that takes **N** lines holding employee information from the console and determines the department with the highest average salary. 
 
-Prints information for each employee in that department with their **name, salary, email, and age** - **sorted by salary in descending order**. 
+Then prints information about each employee in that department with their **name, salary, email, and age** - **sorted by salary in descending order**. 
 
-If an employee **does not have** an **email** - in place of that field you should print **"n/a"** instead.
+If an employee **does not have** an **email** - it should print **"n/a"** instead.
 
-If they do not have an **age** - print **"-1"** instead. 
+If they do not have an **age** value - print **"-1"** instead. 
 
 The **salary** should be rounded to **two decimal places** after the separator.
 
@@ -384,15 +384,15 @@ Victor 0.03 sales@uni.eu 23
 
 [task-description]
 ## Description
-Your task is to implement a program that keeps track of cars and their fuel. It should also support methods for moving the cars.
+Create a program that keeps track of cars and their fuel. It should also support methods to move the cars.
 
-Define a class **Car** that keeps track of a car information **Model, fuel amount, fuel cost for 1 kilometer**, and **traveled distance**.
+Define a **Car**class that keeps track of each car's details: **Model, fuel amount, fuel cost for 1 kilometer**, and **traveled distance**.
 
 A Car Model is **unique** - there will never be 2 cars with the same model.
 
-On the first line of the input, you will receive a number **N** - the number of cars you need to track. 
+On the first line of input, you will receive a number **N** - the number of cars you need to track. 
 
-On **each** of the next **N** lines you will receive information for a car in the following format: 
+On **each** of the next **N** lines you will receive information about each car in the following format: 
 
 "\<**model**\> \<**fuelAmount**\> \<**fuelCostFor1km**\>"
 
@@ -402,15 +402,15 @@ After the initial **N** lines, and until the "**End**" command is received, you 
 
 "**Drive** \<**carModel**\> \<**amountOfKm**\>"
 
-Implement a method in the **Car** class to calculate whether a car **can** move that distance or **not**. 
+Implement a method in the **Car** class to calculate whether a car **could** move that distance or **not**. 
 
-If it can move, reduce the **fuel amount** of the car by the amount of fuel needed for the drive. Increase the **traveled distance** by the number of kilometers traveled.
+If there is enough fuel, reduce the **fuel storage** of the car by the amount of fuel needed for the drive. Increase the **traveled distance** by the number of kilometers traveled.
 
-If the car cannot move its fuel amount and traveled distance stay the same, and you should print this to the console:
+If the car cannot move its fuel and traveled distance stay the same, and the following message should appear:
 
 "**Insufficient fuel for the drive**"
 
-After the "**End**" command is received, print each car in order of appearing in the input and its current fuel amount and traveled distance in the format:
+After the "**End**" command is received, print information about each car in order of appearing:
 
 "\<**model**\> \<**fuelAmount**\> \<**distanceTraveled**\>"
 
@@ -608,27 +608,27 @@ K 0.00 4
 
 [task-description]
 ## Description
-You are the owner of a courier company and you want to make a system for tracking your cars and their cargo.
+You are the owner of a courier company and you want to make a system to track your cars and their cargo.
 
-Define a class **Car** that holds information about the **model, engine, cargo**, and a **collection of exactly 4 tires**.
+Define a **Car** class that holds information about the **model, engine, cargo**, and a **set of 4 tires**.
 
 The Engine, Cargo, and Tire **should be separate classes**.
 
 Create a constructor that receives all information about the car, and creates and initializes its inner components (engine, cargo, and tires).
 
-On the first line of the input, you will receive a number **N** - the number of cars you have. 
+On the first line of input, you will receive a number **N** - the number of cars you have. 
 
 On each of the next **N** lines, you will receive information about a car in the format: 
 
 "\<**model**\> \<**engineSpeed**\> \<**enginePower**\> \<**cargoWeight**\> \<**cargoType**\> \<**tire1Pressure**\> \<**tire1Age**\> \<**tire2Pressure**\> \<**tire2Age**\> \<**tire3Pressure**\> \<**tire3Age**\> \<**tire4Pressure**\> \<**tire4Age**\>"
 
-Where the speed, power, weight and tire age are **integers**, tire pressure is a **double**.
+Speed, power, weight and tire age are **integers**, tire pressure is a **double**.
 
-After the **N** lines you will receive a single line with one of 2 commands "**fragile**" or "**flammable**".
+After the **N** lines you will receive a single line with one of the 2 commands: "**fragile**" or "**flammable**".
 
-If the command is "**fragile**" print all cars whose **cargoType is** "**fragile**" with a **tire** whose **pressure is < 1**.
+If the command is "**fragile**" print information about all cars whose **cargoType is** "**fragile**" if they have a **tire** whose **pressure is < 1**.
 
-If the command is "**flammable**" print all cars whose **cargoType is** "**flammable**" and have **enginePower > 250**. 
+If the command is "**flammable**" print information about all cars whose **cargoType is** "**flammable**" and have **enginePower > 250**. 
 
 The cars should be printed in the order of appearing in the input, each on a separate line.
 
@@ -768,15 +768,15 @@ An Engine has **model, power, displacement** and **efficiency**.
 
 A Car's **weight** and **color** and its Engine's **displacements** and **efficiency** are **optional**.
 
-On the first line, you will read a number **N** which will specify how many lines of engines you will receive. 
+On the first input line, a number **N** will be given, which will specify how many lines of engine information you will receive. 
 
 On each of the next **N** lines, you will receive information about an **Engine** in the following format:
 
 "\<**model**\> \<**power**\> \<**displacement**\> \<**efficiency**\>"
 
-After the lines with engines, on the next line you will receive a number **M**, specifying the number of Cars that will follow.
+After the lines with information about the different engines, you will receive a number **M**, specifying the number of Cars that will follow.
 
-On each of the next **M** lines the information about a **Car** will follow in the following format:
+On each of the next **M** lines the information about a **Car** will be presented in the following format:
 
 "\<**model**\> \<**engine**\> \<**weight**\> \<**color**\>"
 
@@ -786,7 +786,7 @@ When creating the object for a **Car**, you should keep a **reference to the rea
 
 Your task is to print each car (in the **order** you **received** them) and its information in the format defined below. 
 
-If any of the optional fields have not been given print **"n/a"** in its place instead of:
+If any of the optional fields have not been specified print **"n/a"** in their place instead:
 
 ```java
 <carModel>
@@ -1882,9 +1882,9 @@ Color: Gray
 
 [task-description]
 ## Description
-You wanna be the very best pokemon trainer, so you set out to catch pokemon.
+Everybody wants to be the very best Pokemon trainer, we will create a program to keep track of each trainer's collection.
 
-Define a class **Trainer** and a class **Pokemon**.
+Define a **Trainer** class and a **Pokemon** class.
 
 The **Trainer** class has **name**, **number of badges** and a **collection of pokemon**.
 
@@ -1900,17 +1900,17 @@ Each line will carry information about a pokemon and the trainer who caught it i
 
 Where **trainerName** is the name of the Trainer who caught the pokemon. 
 
-Names are **unique**, there cannot be 2 trainers with the same name. 
+Names are **unique**, there cannot be two trainers with the same name. 
 
 After receiving the "**Tournament**" command an unknown number of lines containing one of three elements **"Fire"**, **"Water"**, **"Electricity"** will follow until the command "**End**" is received. 
 
 For every command, you must check if a trainer has **at least 1** pokemon with the given element. 
 
-If he does, he receives 1 badge, otherwise, all his pokemon **lose 10 health**. 
+If they do, they receive a badge, otherwise, all their pokemon **lose 10 health**. 
 
-If a **pokemon's health falls to 0 or less** it is defeated and must be deleted from the trainer's collection. 
+If a **pokemon's health bcomes 0 or less** it is defeated and must be deleted from the trainer's collection. 
 
-After the "**End**" command is received, you should print all trainers **sorted by the number of badges they have in descending order**. 
+After the "**End**" command is received, we should print all trainers **sorted by the number of badges they have in descending order**. 
 
 If two trainers have the same amount of badges, they should be sorted by order of appearance in the input. 
 
@@ -2250,17 +2250,17 @@ Each of those lines contains information about a person in one of the following 
 
 You should structure all information about a person in a class with nested subclasses. 
 
-Person names are **unique** - there will not be two people with the same name.
+Names are **unique** - there will not be two people with the same name.
 
-A person can have **only one company** and **one car**, but can have **multiple parents, children** and **pokemon**. 
+A person can have **only one companyentry** and **one car**, but can have **multiple parents, children** and **pokemon**. 
 
-After the "**End**" command, you will receive a **single** name on the next line.
+After the "**End**" command, you will receive a **single** line of input containing a name.
 
 You should **print** all information about that person. 
 
 **Note** that the information can change **during** the **input**.
 
-For example, if you receive multiple lines which specify a person's company, only the **last one** should be stored. 
+For example, if you receive multiple lines which specify a person's company, only the **last one** should be kept. 
 
 The salary must be formatted to **the second decimal place**.
 
@@ -2499,17 +2499,18 @@ LR 01/01/1000
 
 [task-description]
 ## Description
-*You want to build your family tree, so you went to ask your grandmother.*
 
-*Sadly your grandmother keeps remembering information about your predecessors in pieces, so it falls on you to group the information and build the family tree.*
+*You are trying to crate a family tree of your kin, so you go to ask your grandmother about the previous generations in your family*
+
+*Sadly, she keeps remembering information about your predecessors in pieces, so it falls on you to piece the information together and build the family tree.*
 
 On the first line of the input, you will receive either a name or a date of birth in the format:
 
 "\<**FirstName**\> \<**LastName**\>" or "**day/month/year**"
 
-Your task is to find information about the person in the family tree. 
+Your task is to find information about each person in the family tree. 
 
-On the next lines, until the "**End**" command is received, you will get information about your predecessors that is needed for the family tree.
+On the next lines, until the "**End**" command is received, you will get information about your predecessors.
 
 The information will be in one of the following formats:
 
@@ -2523,7 +2524,7 @@ The first 4 formats reveal a family tie:
 
 The person **on the left** is the **parent** to the person **on the right**.
 
-Some inputs might not includes names at all.
+Some inputs might not include names at all.
 
 For example, the 4th type of format means the person **born on the specified date on the left** is the **parent of the person born on the date that is on the right side**.
 
@@ -2531,15 +2532,15 @@ The last format ties **different** information together - i.e. **the person with
 
 **Names** and **birthdates** are **unique** - there will not be two people with the same name or birthdate. 
 
-There will **always** be enough entries to construct the family tree (all people names and birthdates are known and they have **at least one** connection to another person in the tree).
+There will **always** be enough entries to construct an entire family tree (all names and birthdates are known and they have **at least one** connection to another person in the tree).
 
-After the "**End**" command is received, you should print all information about the person whose name or birthdate you received on the very first line - his **name, birthday, parents, and children** (check the examples for the format). 
+After the "**End**" command is received, you should print all information about the person whose name or birthdate you received on the first line - their **name, birthday, parents, and children** (check the examples for the format). 
 
-The people in the parents and children lists should be **ordered** by their **first appearance** in the input.
+The people in the parent and children lists should be **ordered** by their **first appearance** in the input.
 
 Regardless if they appeared as a birthdate or a name. 
 
-For example, in the first input, Stan is before Jenny because his birthdate appeared first in the second line, while she appeared in the third line.
+For example, in the first input, Stan is before Jenny because his birthdate appeared first, while she appeared on the third line.
 
 ## Examples
 
@@ -2805,17 +2806,17 @@ Abc7 Abcde 26/9/1974
 
 [task-description]
 ## Description
-*The people from a pet shelter need to have a catalog of their cats with the breed and special characteristics.*
+*The workers in a pet shelter need to have a catalog of their cats holding thir breed and special characteristics.*
 
-There are 3 special breeds of cats **"Siamese"**, **"Cymric"** and **"DomesticShorthair"**. 
+They have 3 breeds of cats **"Siamese"**, **"Cymric"** and **"DomesticShorthair"**. 
 
 **Each breed** has a special **characteristic**. 
 
-For example, the special characteristic of the **Siamese** cats is their **ear size**, of **Cymric** cats - the **length of their fur** in millimeters and of the DomesticShorthair the **volume of their meowing**.
+For example, the special characteristic of a **Siamese** cat is its **ear size**, of **Cymric** cats - the **length of their fur** in millimeters and of the **DomesticShorthair** the **volume of their meowing**.
 
 All the information about the cats, their breed and characteristics should be collected.
 
-You will receive lines of information about a cat until you get the `End` command.
+You will receive lines of information about a cat until you reach the `End` command.
 
 The information will come in **one of** the following formats:
 
