@@ -6,7 +6,7 @@
 ## In this lesson, you learned:
 
 - Well organized code is easier to work with
-    - we can reduce complexity by using **methods**, **classes** and **projects**
+    - we can reduce code complexity by using **methods**, **classes** and **projects**
 
 
 ```java
