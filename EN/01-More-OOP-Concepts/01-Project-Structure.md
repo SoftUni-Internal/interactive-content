@@ -31,7 +31,7 @@ for (char move : moves) {
  }
 ```
 
-Methods let us easily **reuse code** without having to retype it in different places.
+Methods let us easily **reuse code** without having to retype it.
 
 **Changing the method** once will change the behavior of the method anywhere it is called.
 
@@ -52,7 +52,7 @@ System.out.println(bankAcc.toString());
 
 We can override the `toString()` method in the **BankAccount** class to return the account details in String format. 
 
-Although this change is done in one place, it will affect the code globally every time we call the method on any object of type **BankAccount**.
+Although this change is done only in the class, it will affect the code globally anywhere we use this method with any object of type **BankAccount**.
 
 
 
@@ -314,15 +314,15 @@ master.printToConsole(master.getDate());
 master.printToConsole(numbers);
 ```
 
-The above is an example of a class that does too much.
+The above is an example of a class that has too many functions.
 
-We should break our code up logically into classes which:
+We should break our code logically into smaller classes, as this:
 
 - **Hides implementations**
 - Allows us to **change the output destination**
 - Helps us to **avoid repeating code**
 
-**Example:** Same block of code before and after using classes.
+**Example:** The same block of code before and after using classes.
 
 **Before:**
 
@@ -360,13 +360,13 @@ printer.printToConsole(numbers);
 # Description
 Create a class **Point** and a class **Rectangle**.
 
-The **Point** class should hold **coordinates X** and **Y**.
+The **Point** class should hold the **coordinates X** and **Y**.
 
 The **Rectangle** class should hold 2 **Points** – its **bottom left** and **top right** corners.
 
 In the **Rectangle** class, you should implement a `contains(Point point)` method that returns **true** or **false**, based on **whether** the **Point** argument passed to the method is **inside** or **outside** of the **Rectangle** object.
 
-Points **on the side** of a Square are considered **inside**.
+Points **on the side** of a Square are considered **inside** it.
 
 ## Input
 
