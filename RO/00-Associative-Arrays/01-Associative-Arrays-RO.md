@@ -126,6 +126,7 @@ Este important să știți că odată setate, tipurile  aferente  **cheii** și 
 [slide hideTitle]
 # Metode incorporate
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/RO/interactive-java-fundamentals-associative-arrays-6-7-8-9-built-in-methods-demo-hashmap-put-and-remove-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Clasa `HashMap` conține câteva metode incorporate: 
 
