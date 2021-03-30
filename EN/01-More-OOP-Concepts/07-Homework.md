@@ -12,7 +12,7 @@ Iterate over the values of the enumeration type and print all **ordinal values**
 
 ## Submit
 
-You must submit your solution in the form of a `.zip` archive.
+You should submit your solution in the form of a `.zip` archive.
 
 # Example
 
@@ -67,7 +67,7 @@ Iterate over the values of the enumeration type and print all ordinal values and
 
 ## Submit
 
-You must submit your solution in the form of a `.zip` archive.
+You should submit your solution in the form of a `.zip` archive.
 
 # Example
 
@@ -150,7 +150,7 @@ The power rating of a card is calculated by **adding** the power of its rank to 
 
 **Rank powers** are as follows: (ACE - 14, TWO - 2, THREE - 3, FOUR - 4, FIVE - 5, SIX - 6, SEVEN - 7, EIGHT - 8, NINE - 9, TEN - 10, JACK - 11, QUEEN - 12, KING - 13).
 
-**Suit powers** are as follows: (CLUBS - 0, DIAMONDS - 13, HEARTS - 26, SPADES - 39).
+**Suit powers** are: (CLUBS - 0, DIAMONDS - 13, HEARTS - 26, SPADES - 39).
 
 ## Input
 You will get a command consisting of **two** lines. On the **first** line, you will receive the rank of the card and on the **second** line, you will get the suit of the card.
@@ -165,7 +165,7 @@ Try using the `Enum.valueOf()` method.
 
 ## Submit
 
-You must submit your solution in the form of a `.zip` archive.
+You should submit your solution in the form of a `.zip` archive.
 
 
 ## Examples
@@ -255,13 +255,12 @@ Each traffic light can be **updated**, which changes the color of its signal (e.
 The order of signals is **red -> green -> yellow -> red** and so on.
 
 ## Input
-On the first line, you will be given multiple traffic light signals in the **format "RED GREEN YELLOW"**. 
+On the first line, you will be given the current state of multiple traffic lights in the **format "RED GREEN YELLOW"**. 
 
-They may be 3, **more** or **less** than 3. 
 
 You need to create as many traffic lights as there are signals in the input.
 
-On the second line, you will receive the **n** - the number of times you need to change each traffic light's signal.
+On the second line, you will receive **n** - the number of times you need to change each traffic light's signal.
 
 ## Output
 Your output should consist of **n** number of lines, including **each** updated traffic light's signal. 
@@ -270,7 +269,7 @@ To better understand the problem, see the example below.
 
 ## Submit
 
-You must submit your solution in the form of a `.zip` archive.
+You should submit your solution in the form of a `.zip` archive.
 
 # Example
 | **Input** | **Output** |
