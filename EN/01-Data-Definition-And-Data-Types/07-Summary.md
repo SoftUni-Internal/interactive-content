@@ -2,16 +2,16 @@
 
 # Summary
 
-## In this lesson you learnt:
+## In this lesson you learned:
 
-- What is Numeric Data Type
+- What Data Types are and how to use them
     
     ```Java
     INT[(12)];
     DOUBLE[(12, 3)] 
     ```
 
-- How we model Databases
+- How we model databases
 
 - SQL Queries
     
@@ -42,9 +42,9 @@
 
 - The query basics 
 
-- How to retrieve data from the database
+- Retrieving data from the database
 
-- How to persist data
+- Persisting data
 
 - Modyfing existing records
 
