@@ -18,25 +18,25 @@ public class Main {
 [task-description]
 ## Description
 
-George's parents are on a vacation for the holidays and he is planning an epic party at home. 
+Părinții lui George sunt în vacanță pentru sărbători și el planifică o petrecere epică acasă.
 
-Unfortunately, his organizational skills are next to non-existent so you are given the task to help him with the reservations.
+Din păcate, abilitățile sale organizatorice sunt aproape inexistente, așa că vi se oferă sarcina de a-l ajuta cu rezervările.
 
-On the first line, you get a **list** with all the **people** that are coming. 
+Pe prima linie, veți obține o **listă** cu toți **oamenii** care vin.
 
-On the next lines, until you get the "**Party**!" command, you may be asked to **double** or **remove** all of the people that apply to **given criteria**. 
+În rândurile următoare, până când veți obține "**Party**!" comanda, vi se poate cere să **dublați** sau **să eliminați** toate persoanele care se aplică **criteriilor date**.
 
-There are three different options: 
+Există trei opțiuni diferite:
 
-- Everyone that has a name **starting** with a given string
-- Everyone that has a name **ending** with a given string
-- Everyone that has a name with a given **length**
+- Toți cei care au un nume **începând** cu un șir dat
+- Toți cei care au un nume **care se termină** cu un șir dat
+- Toți cei care au un nume cu o anumită **lungime**
 
-When you print the guests that are coming to the party, you have to print them in **ascending** order.
+Când tipăriți invitații care vin la petrecere, trebuie să le imprimați în ordine **crescătoare**.
 
-If nobody is going, print "**Nobody is going to the party!**".
+Dacă nu merge nimeni, tipăriți "**Nobody is going to the party!**".
 
-See the examples below.
+Vezi exemplele de mai jos.
 
 ## Exemplu
 | **Intrare**|**Ieșire**|

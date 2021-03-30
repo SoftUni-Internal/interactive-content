@@ -1,24 +1,25 @@
-# Lesson Introduction
+# Lecție Introductivă
 
 [slide hideTitle]
-# Lesson Content
+# Conținutul Lecției
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/RO/interactive-java-advanced-functional-programming-1-2-Introduction-Table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In this lesson, you will learn:
+## În această lecție, veți învăța:
 
-**1. Lambda Expressions**
-- Implementing a codeblock inside of a method
+**1. Expresii Lambda**
+- Implementarea unui bloc de cod în interiorul unei metode
 
-**2. What a Function Is**
-- How to use `Function<T, R>`
+**2. Ce este o funcție**
+- Cum se folosește `Funcția <T, R>`
 
-**3. Other Function Types**
-- `Consumer<T>`
-- `Supplier<T>`
-- `Predicate<T>`
+**3. Alte tipuri de funcții**
+- `Consumer <T>`
+- `Supplier <T>`
+- `Predicate <T>`
 
-**4. BiFunction<T, U, R>**
-- How to pass functions to methods
+**4. BiFunction <T, U, R>**
+- Cum să treceți funcțiile la metode
 
 [/slide]
+

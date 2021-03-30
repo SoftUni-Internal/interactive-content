@@ -1,22 +1,22 @@
-# Lesson Introduction
+# Lecție Introductivă
 
 [slide hideTitle]
-# Lesson Content
+# Conținutul Lecției
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/RO/interactive-java-advanced-iterators-and-comparators-1-2-Introduction-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In this lesson, you will learn:
+## În această lecție, veți învăța:
 
-**1. Variable Arguments**
-- How methods accept parameters
+**1. Argumente variabile**
+- Cum metodele acceptă parametrii
 
-**2. Nested Classes**
-- Placing classes inside other classes
+**2. Clase imbricate**
+- Plasarea claselor în alte clase
 
-**3. Iterators**
-- What `Iterator` and `ListIterator` are
+**3. Iteratori**
+- Ce sunt `Iterator` și `ListIterator`
 
-**4. Comparators**
-- Specifying how objects get compared
+**4. Comparatoare**
+- Specificarea modului în care obiectele se compară
 
 [/slide]
