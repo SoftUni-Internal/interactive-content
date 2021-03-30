@@ -15,7 +15,7 @@ class Animal {
 Animal animal = new Animal();
 ```
 
-- The variables inside a class are called fields
+- Class variables are called fields
 
 ```java
 class Animal { 
