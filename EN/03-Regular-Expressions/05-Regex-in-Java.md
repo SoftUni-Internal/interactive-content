@@ -8,7 +8,7 @@
 
 The `java.util.regex.Pattern` and the `java.util.regex.Matcher` classes are used for advanced regular expressions.
 
-```java live
+```java live no-template
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -81,7 +81,7 @@ There are **two** methods that we can use to replace a part of a string with ano
 
 - `replaceAll()` - Replaces all the substrings that fits the given regular expression with the replacement string and returns the result
 
-```java live
+```java live no-template
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
