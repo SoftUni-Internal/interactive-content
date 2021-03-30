@@ -2,7 +2,7 @@
 
 
 [slide hideTitle]
-# Problemă: Adunarea Liniilor
+# Problemă: Sum Lines
 [code-task title="Sum Lines" taskId="java-advanced-streams-files-exercise-sum-lines" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
 [/code-editor]
@@ -17,7 +17,7 @@ Utilizați **BufferedReader** în combinație cu **FileReader**.
 
 Există un fișier zip cu resurse pentru toate exercițiile, pe care trebuie să îl utilizați.
 
-Descărcați **folderul de resurse** [here](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Files-and-Streams-Exercise-Resources.zip).
+Descărcați **folderul de resurse** [here](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Files-and-Streams-Exercise-Resources-New.zip).
 
 Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**.
 
@@ -65,7 +65,7 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 
 
 [slide hideTitle]
-# Problemă: Suma octeților
+# Problemă: Sum Bytes
 [code-task title="Sum Bytes" taskId="java-advanced-streams-files-exercise-sum-bytes" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
 [/code-editor]
@@ -118,7 +118,7 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 
 
 [slide hideTitle]
-# Problemă: LITERE MAJUSCULE
+# Problemă: CAPITAL LETTERS
 [code-task title="CAPITAL LETTERS" taskId="java-advanced-streams-files-exercise-capital-letters" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
 [/code-editor]
@@ -179,7 +179,7 @@ A YOUTH OF NOBLE ROMAN FAMILY,
 
 
 [slide hideTitle]
-# Problemă: calcularea tipurilor de caractere
+# Problemă: Count Character Types
 [code-task title="Count Character Types" taskId="java-advanced-streams-files-exercise-count-character-types" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
 [/code-editor]
@@ -239,7 +239,7 @@ Punctuation: 6
 
 
 [slide hideTitle]
-# Problemă: Numere de linie
+# Problemă: Line Numbers
 [code-task title="Line Numbers" taskId="java-advanced-streams-files-exercise-line-numbers" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
 [/code-editor]
@@ -303,7 +303,7 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 
 
 [slide hideTitle]
-# Problemă: Calcularea cuvintelor
+# Problemă: Word Count
 [code-task title="Word Count" taskId="java-advanced-streams-files-exercise-word-count" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
 [/code-editor]
@@ -356,7 +356,7 @@ The - 1
 
 
 [slide hideTitle]
-# Problemă: combinarea de două fișiere
+# Problemă: Merge Two Files
 [code-task title="Merge Two Files" taskId="java-advanced-streams-files-exercise-merge-two-files" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
 [/code-editor]
@@ -410,7 +410,7 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 
 
 [slide hideTitle]
-# Problemă: obținerea dimensiunii fișierului
+# Problemă: Get Folder Size
 [code-task title="Get Folder Size" taskId="java-advanced-streams-files-exercise-get-folder-size" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
 [/code-editor]
@@ -456,17 +456,27 @@ Folder size: 2878
 
 
 [slide hideTitle]
-# Problemă: copierea unei imagini
+# Problemă: Copy a Picture
 
-Scrieți un program care face o copie a unui fișier **.jpg** folosind **FileInputStream**, **FileOutputStream**, și `byte[]` buffer. 
+Scrieți un program care face o copie a unui fișier **cat.jpg** folosind **FileInputStream**, **FileOutputStream**, și `byte[]` buffer. 
 
-Denumiți noul fișier ca **picture-copy.jpg**.
+Folosiți resursele primite anterior.
 
-To start, pick a random image.
+Denumiți noul fișier ca **cat-copy.jpg**.
 
-Then, create a new project and open the **Main** class.
+Pentru început, creați un proiect nou și deschideți clasa **Main**.
 
-Inside the `main` method, create a `try-catch` block:
+În fișierul `Main.java`, adăugați **importurile** necesare, dacă IDE-ul vostru nu a facut-o deja:
+
+```java
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+```
+
+Sau doar `import java.io.*;`.
+
+În interiorul metodei `main`, creați un bloc `try-catch`:
 
 ```java
 try {
@@ -478,25 +488,37 @@ try {
 }
 ```
 
-Then, inside the `try` block, create an input stream for the original image.
+Apoi, în interiorul blocului `try`, creați un flux de intrare pentru imaginea originală.
 
-Initialize a new **input stream** using `new File("the-absolute-path-to-your\\image")`.
+Inițializați un nou **flux de intrare** folosind `new File("Calea-absolută-către\imaginea-voastră.jpg")`.
 
-You can get the absolute path to your image by right-clicking on it, and choosing "**Properties**".
+Puteți obține calea absolută către imaginea voastră apăsând click-dreapta pe ea, și selectând "**Properties**" (Proprietăți).
 
-After that, create an **output stream** with the "**picture-copy.jpg**" string as a parameter.
+Va apărea o fereastră, iar calea va fi localizată lângă "**Location:**" (Locație). 
 
-Create a `byte[]` buffer with a size **bigger than or equal to** your image size, in bytes.
+Selectați calea și inserați-o în următorul mod:
 
-Use a while loop to **write the data** to the output stream, as shown below.
+```java
+FileInputStream inputImage = new FileInputStream(new File("C:\Folder-With-Resources\...\cat.jpg"));
+```
+
+După aceea, creați un flux de ieșire cu șirul "**cat-copy.jpg**" drept parametru.
+
+```java
+FileOutputStream outputImage = new FileOutputStream("cat-copy.jpg");
+```
+
+Creați un `byte[]` **buffer**.
+
+Utilizați o buclă while pentru **a scrie datele** în fluxul de ieșire, ca mai jos.
 
 ```java
 try {
-    FileInputStream inputImage = new FileInputStream(new File("C:\\Folder1\\picture.jpg"));
-    FileOutputStream outputImage = new FileOutputStream("picture-copy.jpg");
+    FileInputStream inputImage = new FileInputStream(new File("C:\Folder-With-Resources\cat.jpg"));
+    FileOutputStream outputImage = new FileOutputStream("cat-copy.jpg");
 
     int oneByte;
-    byte[] buffer = new byte[8192]; // The size should be >= to that of your image. 🏞
+    byte[] buffer = new byte[8192]; // Or more, if you want 🏞
     while ((oneByte = inputImage.read(buffer)) != -1) {
         outputImage.write(buffer, 0, count);
     }
@@ -504,39 +526,333 @@ try {
     System.out.println("The image was copied successfully! 😎");
     
 } catch (IOException e) {
-    System.out.println("The file is either corrupted or missing. 😿");
+    System.out.println("There was a problem with the file. 😿");
+    e.printStackTrace();
 }
 ```
 
-The cloned image is now **saved** in your project folder.
+Imaginea clonată este acum **salvată** în fișierul proiectului vostru. 
 
 [/slide]
 
 [slide hideTitle]
-# Problemă: Serializarea listei de matrice
+# Problemă: Serialize Array List
 
-Scrieți un program care salvează și încarcă un **List de matrice** de duble într-un fișier folosind **ObjectInputStream** și **ObjectOutputStream**. 
+Scrieți un program care salvează și încarcă un **ArrayList** de doubles într-un fișier folosind **ObjectInputStream** și **ObjectOutputStream**. 
 
-Denumiți noul fișier ca **list.ser**.
+Denumiți noul fișier ca **list.ser**
+
+IDE-ul vostru trebuie să adauge următoarele **importuri** în proces:
+
+```java
+import java.io.*;
+import java.util.ArrayList;
+```
+
+Pentru a începe, creați un ArrayList de **doubles** în corpul metodei `main()`.
+
+```java
+ArrayList<Double> numbers = new ArrayList<>();
+```
+
+În continuare, **adăugați** următoarele **numere** în virgulă mobilă:
+
+```java
+numbers.add(46.2);
+numbers.add(32.5);
+numbers.add(11.7);
+```
+
+Pentru a identifica posibilele **erori** care apar în operațiile de Intrare/Ieșire, creați un bloc `try-catch`.
+
+```java
+try {
+    FileOutputStream writeData = new FileOutputStream("list.ser");
+    ObjectOutputStream writeStream = new ObjectOutputStream(writeData);
+
+    writeStream.writeObject(numbers);
+    writeStream.flush();
+    writeStream.close();
+    
+    System.out.println("The ArrayList was serialized successfully! 😎");
+
+} catch (IOException e) {
+    System.out.println("An error occurred. 😿");
+    e.printStackTrace();
+}
+```
+
+Creați un `FileOutputStream` numit **writeData** și setați numele fișierului la **list.ser**.
+
+Prin furnizarea doar a **numelui**, fără o cale, fișierul va fi salvat în directorul principal al proiectului.
+
+`ObjectOutputStream` va fi responsabil de scrierea obiectului în fișierul pe care `FileOutputStream` l-a creat.
+
+Apelarea metodei `writeObject(numbers)` îi transmite programului să înceapă scrierea în **list.ser**
+
+O practică bună este utilizarea lui `.flush()` - golește fluxul de ieșire și forțează orice bytes tampon de ieșire să fie eliminați.
+
+Când deschideți fișierul **list.ser**, veți vedea următoarea **ieșire**:
+
+```
+���sr�java.util.ArrayListx����a��I�sizexp���w���sr�java.lang.Double���J)k��D�valuexr�java.lang.Number��������xp@G�����sq�~�@@@�����sq�~�@'ffffffx
+```
+
+Nu vă îngrijorați dacă nu înțelegeți exact ce se întâmplă, Java poate să îl citească fără nicio problemă.
+
+Folosind acest fișier, puteți **deserializa** Arraylist cu ajutorul `ObjectInputStream`.
+
+Eliberați metoda `main()`, și scrieți:
+
+```java
+try {
+    FileInputStream readData = new FileInputStream("list.ser");
+    ObjectInputStream readStream = new ObjectInputStream(readData);
+
+    ArrayList<Double> numbersDsl = (ArrayList<Double>) readStream.readObject();
+    readStream.close();
+    
+    System.out.println(numbersDsl.toString());
+    
+} catch (Exception e) {
+    System.out.println("An error occurred. 😿");
+    e.printStackTrace();
+}
+```
+
+Acum puteți să vedeți datele din ArrayList, tipărite pe **consolă**:
+
+```
+[46.2, 32.5, 11.7]
+```
 
 [/slide]
 
 [slide hideTitle]
-# Problemă: Serializarea obiectului personalizat
+# Problemă: Serialize Custom Object
 
 Scrieți un program care salvează și încarcă informațiile despre un obiect personalizat folosind **ObjectInputStream** și **ObjectOutputStream**.
 
-Creați o **clasă simplă** numită "Course" care are un **câmp șir** care conține **numele său** și un **câmp întreg** care conține **numărul de studenți** care participă la curs.
-
 Denumiți noul fișier ca **course.ser**.
+
+Creați o **clasă simplă** numită "**Course**" care are următoarele valori la inițializare:
+
+- **name** - șir
+    * numele cursului
+- **studentsCount** - număr întreg
+    * conține **numărul de studenți** care participă la curs
+
+Clasa **trebuie să implementeze** interfața `Serializable`.
+
+Pentru început, creați un fișier nou `Course.java`.
+
+```java
+import java.io.Serializable;
+
+public class Course implements Serializable {
+    private String name;
+    private int studentsCount;
+
+    public Course(String name, int studentsCount) {
+        this.name = name;
+        this.studentsCount = studentsCount;
+    }
+
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
+    public int getStudentsCount() {
+        return this.studentsCount;
+    }
+
+    public void setStudentsCount(int studentsCount) {
+        this.studentsCount = studentsCount;
+    }
+
+
+    @Override
+    public String toString() {
+        return new StringBuffer("Course name: ")
+                .append(this.name)
+                .append(", Students enrolled: ")
+                .append(this.studentsCount)
+                .toString();
+    }
+
+}
+```
+
+Odată ce ați terminat de creat clasa, deschideți **Main.java**.
+
+Apoi, realizați o nouă instanță, în interiorul lui `main()`:
+
+```java
+Course courseOne = new Course("Programming with Python",  32);
+```
+
+Creați un bloc `try-catch`:
+
+```java
+try {
+    FileOutputStream fileOut = new FileOutputStream("course.ser");
+    ObjectOutputStream objectOut = new ObjectOutputStream(fileOut);
+    objectOut.writeObject(courseOne);
+    objectOut.close();
+
+    System.out.println("The object was succesfully written to a file! ☑️");
+
+} catch (Exception e) {
+    System.out.println("An error occurred. 😵");
+    e.printStackTrace();
+}
+```
+
+În interiorul lui `try`, setați numele fișierului salvat la **course.ser**.
+
+Apoi, creați o instanță `ObjectOutputStream` pentru a scrie obiectul `courseOne` în fișier.
+
+**Închideți** fluxul de ieșire și creați un bloc `catch` pentru **a gestiona erorile**.
+
+În interior, tipăriți **stiva de apeluri**.
+
+Presupunând că nu a apărut nicio eroare, fișierul este acum salvat în directorul proiectului vostru:
+
+```
+���sr�com.company.Course�`��/�u�I�
+studentsCountL�namet�Ljava/lang/String;xp��� t�Programming with Python
+```
+
+Pentru a **deserializa** obiectul, folosiți următorul cod:
+
+```java
+Course courseDsl;
+
+try {
+    FileInputStream fileIn = new FileInputStream("course.ser");
+    ObjectInputStream in = new ObjectInputStream(fileIn);
+
+    courseDsl = (Course) in.readObject();
+
+    in.close();
+    fileIn.close();
+
+    System.out.println(courseDsl.toString());
+
+} catch (Exception e) {
+    System.out.println("An exception occurred. 😾");
+    e.printStackTrace();
+}
+```
+
+Declarați un nou obiect de tip `Course`, numit **courseDsl**.
+
+Creați `FileInputStream` pentru a citi **course.ser**. 
+
+Apoi, creați o instanță `ObjectInputStream`.
+
+Metoda `readObject()` este folosită pentru a citi un obiect din `ObjectInputStream`.
+
+După **închiderea** fluxurilor de intrare, folosiți metoda `courseDsl.toString()` pentru a tipări informația: 
+
+```
+Course name: Programming with Python, Students enrolled: 32
+```
 
 [/slide]
 
 [slide hideTitle]
-# Problemă: crearea  arhivei Zip
+# Problemă: Create Zip Archive
 
 Scrieți un program care citește trei fișiere **.txt** și creează o arhivă zip denumită **files.zip**.
 
+Folosiți resursele primite anterior:
+- **fileOne.txt**
+- **fileTwo.txt**
+- **fileThree.txt**
+
 Utilizați **FileOutputStream**, **ZipOutputStream**, și **FileInputStream**.
+
+Veți avea nevoie de următoarele **importuri** în `Main.java`:
+
+```java
+import java.io.*;
+import java.util.*;
+import java.util.zip.*;
+```
+
+În interiorul lui `main()`, declarați calea dorită pentru noul fișier `files.zip`:
+
+```java
+String zipFile = "C:/files.zip";
+```
+
+Apoi, creați o matrice cu toate căile pentru cele trei fișiere `.txt`:
+
+```java
+String[] sourceFiles = { "C:/fileOne.txt", "C:/fileTwo.txt", "C:/fileThree.txt"};
+```
+
+Creați un bloc try-catch și un `byte[]` **buffer** (tampon).
+ 
+```java
+try {
+
+    // Create a byte[] buffer
+    byte[] buffer = new byte[1024];
+
+    FileOutputStream fileOut = new FileOutputStream(zipFile);
+
+    ZipOutputStream zipOut = new ZipOutputStream(fileOut);
+
+    for (int i=0; i < sourceFiles.length; i++) {
+
+        File sourceFile = new File(sourceFiles[i]);
+
+        FileInputStream fileIn = new FileInputStream(sourceFile);
+
+        // Start writing a new ZIP entry
+        // Positioning the stream to the start of the entry data
+        zipOut.putNextEntry(new ZipEntry(sourceFile.getName()));
+
+        int length;
+
+        while ((length = fileIn.read(buffer)) > 0) {
+            zipOut.write(buffer, 0, length);
+        }
+
+        zipOut.closeEntry();
+
+        // Closing the InputStream
+        fileIn.close();
+
+    }
+    
+    // Closing the ZipOutputStream
+    zipOut.close();
+
+    System.out.println("The zip file was created successfully. 👏");
+    
+
+}
+catch (IOException e) {
+    System.out.println("There was an error creating the file. 😨");
+}
+
+```
+
+Folosind o **buclă for**, iterăm prin matricea `sourceFiles`.
+
+Scriem fiecare fișier în fluxul `zipOut` folosind un tampon `byte[]`.
+
+După cum vedeți mai sus, putem folosi clasa `ZipEntry`, folosită pentru a reprezenta o înregistrare a unui fișier ZIP.
+
+Fișierul vostru `.zip` este acum salvat în director, fiind declarat în șirul `zipFile`.
 
 [/slide]
