@@ -988,7 +988,7 @@ Adăugați oamenii din datele de intrare în **both** seturi.
 
 - Numărul de oameni **N** va fi un integer **positive**  **between** [0 ... 100]
 
-## Exemple
+## Exemplu
 | **Intrare**|**Ieșire**|
 | --- | --- |
 | 3 | John 100 |

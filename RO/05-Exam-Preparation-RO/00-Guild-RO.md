@@ -75,7 +75,7 @@ Implementați următoarele caracteristici:
 - **Numele** jucătorilor vor fi **întotdeauna unice**
 - Veți avea întotdeauna un jucător adăugat înainte de a primi metode de manipulare a jucătorilor breslei
 
-## Exemple
+## Exemplu
 
 Acesta este un exemplu al modului în care **se intenționează utilizarea**  clasei **Guild**.
 

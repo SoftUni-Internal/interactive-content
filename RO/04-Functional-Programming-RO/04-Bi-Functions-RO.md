@@ -50,7 +50,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Scrieți un program care citește **o linie de numere întregi** separate printr-o virgulă și un spațiu `, `. 
+Scrieți un program care citește **o linie de numere întregi** separate printr-o virgulă și un spațiu ", ". 
 
 Tipăriți **numărul total de numere** și **suma lor**.
 

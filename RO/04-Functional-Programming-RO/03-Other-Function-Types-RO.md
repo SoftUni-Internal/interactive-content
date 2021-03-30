@@ -245,7 +245,7 @@ public class Main {
 [/code-editor]
 [task-description]
 # Descriere
-Scrieți un program care citește un rând de prețuri **Dublu** separate prin **a comma and a space** `, `. 
+Scrieți un program care citește un rând de prețuri **Dublu** separate prin **a comma and a space** ", ". 
 
 Imprimați prețurile adăugand TVA pentru toate acestea.
 
