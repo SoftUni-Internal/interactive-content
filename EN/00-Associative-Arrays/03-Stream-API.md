@@ -45,7 +45,7 @@ We can process **arrays** using **one-line operations**, instead of writing loop
 
 - `min()` - Finds and returns the **smallest** element in a collection
 
-```java live no-template
+```java live
 int [] numbers = new int[]{15, 25, 35};
 int min = Arrays.stream(numbers)
             .min()
