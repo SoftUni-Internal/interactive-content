@@ -6,15 +6,15 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/RO/02.Java-OOP-Basics-More-OOP-Concepts-38-39-Packages-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Packages** are used to **group related classes.**
+**Pachetele** sunt folosite pentru **a grupa clase asociate**.
 
-You can think of them as **folders** in a file directory.
+Puteți să vă gândiți la ele ca fiind **foldere** într-un director de fișiere.
 
-Use **packages** to **avoid** name **conflicts** and to write **better, maintainable code.**
+Folosiți **pachete** pentru **a evita** **conflicte** de nume și pentru a scrie **coduri mai bune și mai ușor de întreținut**.
 
-Packages are divided into **two** main categories:
-- **Built-in** packages (packages from the **Java API**)
-- **User-defined** packages (custom packages created by the **developer**)
+Pachetele sunt împărțite în **două** categorii principale:
+- Pachete **built-in** (pachete din **Java API**)
+- Pachete **user-defined** (pachete personalizate create de **dezvoltator**)
 [/slide]
 
 [slide hideTitle]
@@ -22,11 +22,11 @@ Packages are divided into **two** main categories:
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/RO/02.Java-OOP-Basics-More-OOP-Concepts-40-Build-in-Packages-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The Java **library** is divided into **packages** and **classes**.
+**Librăria** Java este împărțită în **packages** și **classes**.
 
-You can import a single class or a whole package that contains all the classes.
+Puteți importa o singură clasă sau un pachet complet care conține toate clasele. 
 
-- To use a class or a package, use the `import` keyword
+- Pentru a utiliza o clasă sau un pachet, folosiți cuvântul cheie `import`
 
 ```java
 import package.name.Class; // Import a single class 

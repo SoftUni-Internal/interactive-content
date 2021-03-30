@@ -2471,9 +2471,9 @@ LR 01/01/1000
 
 [task-description]
 ## Descriere
-*You want to build your family tree, so you went to ask your grandmother.*
+*Doriți să construiți arborele genealogic al familiei voastre, motiv pentru care ați mers la bunica voastră pentru a-i pune câteva întrebări.*
 
-*Sadly your grandmother keeps remembering information about your predecessors in pieces, so it falls to you to group the information and build the family tree.*
+*Din păcate, bunica voastră își amintește informații despre predecesorii voștri doar în secvențe, iar sarcina voastră este de a grupa informația și a construi arborele genealogic.* 
 
 Pe prima linie de intrare, veți primi fie un nume, fie o dată de naștere, în următorul format: 
 

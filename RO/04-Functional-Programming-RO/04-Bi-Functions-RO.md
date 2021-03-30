@@ -50,14 +50,14 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that reads **one line of Integers** separated by a comma and a space`, `. 
+Scrieți un program care citește **o linie de numere întregi** separate printr-o virgulă și un spațiu `, `. 
 
-Print the **count of the numbers** and **their sum**. 
+Tipăriți **numărul total de numere** și **suma lor**.
 
-This time use a **BiFunction**.
+De data asta utilizați `BiFunction`.
 
-## Hints
-Use `BiFunction<Integer, String, Integer>` for parsing integers after you split them to a String array.
+## Sugestii
+Utilizați `BiFunction<Integer, String, Integer>` pentru a parsa numerele întregi după ce le separați într-o matrice de tip șir. 
 
 # Exemplu
 

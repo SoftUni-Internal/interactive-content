@@ -59,7 +59,7 @@ public class Container<K,V> {
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/RO/interactive-java-advanced-generics-8-Type-Parameter-Scope-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The type parameter can be used **anywhere inside the declaring class**.
+Parametrul de tip poate fi folosit **oriunde în cadrul clasei declarate**.
 
 **Example:**
 
@@ -75,9 +75,9 @@ class List<T> {
 }
 ```
 
-Here, the type parameter is used in the signature of the `add()` method.
+Aici, parametrul de tip este utilizat în semnătura metodei `add()`.
 
-It is also used to describe the **return value** of `remove()`.
+Este de asemenea utilizat pentru a descrie **valoarea returnată** a lui `remove()`.
 
 [/slide]
 
@@ -91,14 +91,14 @@ It is also used to describe the **return value** of `remove()`.
 
 [task-description]
 ## Descriere
-Create a class "**Jar**" that can store anything.
+Creați o clasă `Jar` care poate stoca orice. 
 
-It should have two public methods:
+Trebuie să aibă două metode publice:
 
-- `void add(element)` - adds the element on top of any other elements
-- `element remove()` - gets the topmost element and removes it
+- `void add(element)` - adaugă elementul deasupra oricăror altor elemente
+- `element remove()`  - selectează cel mai de sus element și îl elimină
 
-# Example
+# Exemplu
 
 ```java
 Jar<Pickle> jarOfPickles = new Jar<>();
@@ -109,15 +109,15 @@ jarOfPickles.add(new Pickle());
 Pickle pickle = jarOfPickles.remove();
 ```
 
-## Hints
-Use the syntax `Jar<T>` to create a generic class.
+## Sugestii 
+Folosiți sintaxa `Jar<T>` pentru a crea o clasă generică.
 
 ## Submit
-To submit your solution, create a **zip** file with your whole package containing the "**Jar**" and "**Main**" classes:
+Pentru a trimite soluția, creați un fișier **zip** cu tot pachetul vostru care conține clasele `Jar` și `Main`:
 
 [image assetsSrc="generics-example(2).png" /]
 
-If you did not create a **package**, just select your classes and **zip** them.
+Dacă nu ați creat un **pachet**, selectați doar clasele și stocați-le într-un fișier **zip**.
 
 [/task-description]
 [tests]
@@ -288,9 +288,9 @@ Test Passed!
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/RO/interactive-java-advanced-generics-11-Subclassing-Generic-Classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Generic classes can be **extended** to concrete classes.
+Clasele generice pot să fie **extinse** la clase concrete. 
 
-**Example:**
+**Exemplu:**
 
 ```java
 class JarOfOlives extends Jar<Olive> {

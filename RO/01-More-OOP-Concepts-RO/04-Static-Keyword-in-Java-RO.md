@@ -121,11 +121,11 @@ class Calculate {
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/RO/02.Java-OOP-Basics-More-OOP-Concepts-36-37-Statick-block-and-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
- A **static block** represents a set of statements, which will be executed by the JVM before the execution of the main method.
+Un **static block** reprezintă un set de instrucțiuni care vor fi executate de către JVM înainte de execuția metodei main.
 
-- Static blocks are executed at the time of class loading
-- A class can take any number of static blocks
-   - they will be executed from top to bottom
+- Blocurile statice sunt executate în momentul încărcării clasei
+- O clasă poate să aibă orice număr de blocuri statice  
+   - acestea vor fi executate de sus în jos 
 
 ```java
 class Main {
@@ -144,5 +144,5 @@ class Main {
 //From main
 //10
 ```
-Static blocks are also known as **static clauses**.
+Blocurile statice sunt cunoscute drept **static clauses**.
 [/slide]

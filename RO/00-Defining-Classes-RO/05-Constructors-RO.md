@@ -29,13 +29,13 @@ public class Car {
 
 ## Constructor Implicit
 
-In Java, a constructor is referred to as a **default** one when it does not accept any parameters and does not change the value of anything at initialization.
+În Java, un constructor este numit ca fiind **implicit**  atunci când nu acceptă parametri și nu modifică nicio valoare la inițializare.
 
-If you do not have a constructor in your class, the Java compiler will insert a default constructor for you.
+Dacă nu aveți un constructor în clasa voastră, compilatorul Java va insera un constructor implicit pentru voi.
 
-You would not find it in your source code (the Java file), as it would be inserted into the code during compilation and is being stored in the `.class` file.
+Nu veți putea să îl găsiți în codul vostru sursă (fișierul Java), deoarece este inserat în cod în timpul compilării și este stocat în fișierul `.class`.
 
-The default constructor does not have any parameters and looks like this:
+Constructorul implicit nu are niciun parametru și arată în felul următor:
 
 ```java
 public Car() {
@@ -113,9 +113,9 @@ public class Car {
 }
 ```
 
-In the example above, we have a constructor with one parameter - `brand`.
+În exemplul de mai sus, avem un constructor cu un parametru - `brand`.
 
-In the body of the constructor, we set the value of the field **brand** to the given parameter and initialize the **parts** field.
+În corpul constructorului, setăm valoarea câmpului **brand** la parametrul dat și inițializăm câmpul **parts**.
 
 
 [/slide]
@@ -155,11 +155,11 @@ Al doilea ia un singur argument - "**brand**".
 ```java
   this(brand, -1);
 ```
-The "**this**" keyword, followed by parentheses and parameters means that another constructor in the same Java class is being called.
+Cuvântul cheie "**this**", urmat de paranteze și paramteri înseamnă că un alt constructor în aceeași clasă Java este apelat.
 
-Java will determine which constructor the "**this**" keyword refers to by the number of parameters and their type (the constructor's signature).
+Java va determina la care constructor se referă cuvântul cheie `this` în funcție de numărul de parametri și tipul acestora (semnătura constructorului).
 
-In this example, we are calling the first constructor with two parameters, and we are setting the value of "**horsePower**" to **-1**.
+În acest exemplu, apelăm constructorul cu doi parametri, și setăm valoarea lui `horsePower` la **-1**. 
 
 [/slide]
 

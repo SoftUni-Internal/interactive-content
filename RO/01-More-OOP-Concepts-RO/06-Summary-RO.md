@@ -50,9 +50,9 @@ import java.io.File;
 ## În următoarea lecție, veți învăța:
 
 - Generics
-    - classes
-    - interfaces
-    - methods
-- Runtime information
+    - clase
+    - interfețe
+    - metode
+- Informații despre timpul rulării
 
 [/slide]

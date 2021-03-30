@@ -121,15 +121,15 @@ names.forEachRemaining((name) -> System.out.println(name));
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/RO/interactive-java-advanced-iterators-and-comparators-16-Iterator-T-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The `iterator()` method returns a `new Iterator` which implements `Iterator<String>` and passes them to the `iterator()` method.
+Metoda `iterator()` returnează un `new Iterator` care implementează `Iterator<String>` și le trimite metodei `iterator()`.
 
-This example shows how to implement the `Iterator<T>` interface in a custom iterator.
+Acest exemplu arată cum poate fi implementată interfața `Iterator<T>` într-un iterator personalizat.
 
-Let us suppose, we want a custom list with names.
+Să presupunem că dorim o listă personalizată cu nume.
 
-We want our NamesList to iterate only over the names that start with "A".
+Vrem ca NamesList să itereze doar prin numele care încep cu "A".
 
-For that reason, our NamesList class has to implement the Iterable interface.
+Din acest motiv, clasa noastră NamesList trebuie să implementeze interfața Iterable.
 
 ```java
 public class NamesList implements Iterable<String> {

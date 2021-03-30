@@ -61,11 +61,11 @@ class Car {
 }
 ```
 
-First, we have a `Car` class with a private field `horsePower`.
+În primul rând, avem o clasă `Car` cu un câmp privat `horsePower`.
 
-Because the field has private access, we **cannot** get or modify it.
+Deoarece câmpul are acces privat, nu putem să îl apelăm sau să îl modificăm.
 
-To overcome this problem we have to use "**get**" and "**set**" methods.
+Pentru a depăși această problemă, trebuie să folosim metodele "**get**" și "**set**".
 
 Metoda `getHorsePower()` **returnează** valoarea câmpului "**horsePower**".
 
@@ -159,7 +159,7 @@ boolean isCarsEquals = firstCar.equals(secondCar);
 System.out.println(isCarsEquals);
 ```
 
-Keep in mind that for the `equals()` method does not work correctly for object comparison unless it is overridden and used together with the `hashcode()` method.
+Țineți minte că metoda `equals()` nu funcționează corect pentru compararea obiectelor, doar dacă nu este suprascrisă și utilizată împreună cu metoda `hashcode()`.
 [/slide]
 
 [slide hideTitle]
@@ -178,9 +178,9 @@ int hash = car.hashCode();
 
 System.out.println(hash); 
 ```
-In order to enable correct object comparison you need to use the `equals()` and `hashcode()` methods together.
+Pentru a putea permite o comparare corectă a obiectelor trebuie să folosiți metodele `equals()` și `hashcode()` împreună.
 
-Typically both of them need to be overridden to get correct results.
+În mod normal ambele trebuie suprascrise pentru a obține rezultate corecte.
 [/slide]
 
 [slide hideTitle]

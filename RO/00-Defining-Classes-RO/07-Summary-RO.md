@@ -54,11 +54,11 @@ Animal animal = new Animal("Rex", 5);
 
 ## În următoarea lecție, veți învăța:
 
-- Generics in Java 
-    - syntax
-    - classes and interfaces
-    - generic methods
-- Type erasure
-- Type parameter bounds
+- Generics în Java
+    - sintaxă
+    - clase și interfețe
+    - metode generice
+- Ștergerea tipului
+- Limitele parametrului de tip
 
 [/slide]

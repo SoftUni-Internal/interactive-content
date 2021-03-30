@@ -101,23 +101,23 @@ Există patru tipuri de modificatori de acces în Java:
 - Protected
 - Public
 
-Using a **private** access modifier means that only code inside the class body can access this Java field.
+Utilizarea unui modificator de acces **privat** înseamnă că doar cod din cadrul corpului clasei poate accesa acest câmp Java.
 
-If you do not use any modifier, it is treated as **package-private** by **default**.
+Dacă nu folosiți niciun modificator, este tratat ca **package-private** în mod **default**.
 
-The **package-private** access modifier means that only code inside the class or other classes in the same package can access the field.
+Modificatorul de acces **package-private** înseamnă că doar cod din cadrul clasei sau a altor clase din același pachet pot accesa câmpul.
 
-It provides more accessibility than the **private** modifier.
+Acesta furnizează mai multă accesibilitate decât modificatorul **private*.
 
-The **Package-private** access modifier is **more restrictive** than **protected** and **public**.
+Modificatorul de acces **package-private** este **mai restrictiv** decât **protected** și **public**.
 
-The **protected** access modifier is accessible within and outside the package but only through **inheritance**.
+Modificatorul de acces **protected** este accesibil înăuntrul și în afara pachetului, dar doar prin **inheritance**.
 
-**Inheritance** is a mechanism where one object **acquires** all the **properties** and **behaviors** of a **parent** object.
+**Inheritance** este un mecanism prin care un obiect **dobândește** toate **proprietățile** și **comportamentele** unui obiect **părinte**.
 
-You can find out more about **inheritance** [here](https://docs.oracle.com/javase/tutorial/java/concepts/inheritance.html).
+Puteți afla mai multe despre **inheritance** [aici](https://docs.oracle.com/javase/tutorial/java/concepts/inheritance.html).
 
-The **public** access modifier is accessible **everywhere**.
+Modificatorul de acces **public** este accesibil **peste tot**.
 
 
 [/slide]

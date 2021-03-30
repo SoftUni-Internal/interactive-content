@@ -158,8 +158,8 @@ Car sportsCar = new Car()
 
 ```java
 // for objecs sportsCar(4860c54d):
-type=Car;
-int horsePower=0;
+type = Car;
+int horsePower = 0;
 ``` 
 
 [/slide]
