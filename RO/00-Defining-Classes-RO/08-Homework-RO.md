@@ -2483,7 +2483,7 @@ Sarcina voastră este să găsiți informații despre persoană în arborele gen
 
 Pe următoarele linii, până la comanda "**End**", veți primi informații despre predecesori, de care aveți nevoie pentru arborele familiei. 
 
-Informația va fi în următoarele formate : 
+Informația va fi în următoarele formate: 
 
 - firstName lastName - firstName lastName
 - firstName lastName - day/month/year
