@@ -6,13 +6,13 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-15-16-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-A method is a collection of statements that perform some specific task and return the result to the caller. 
+A method is a collection of statements that perform a specific task and may return а result. 
 
-In some cases, they can do so without returning anything.
+Some methods may serve functions, which do not require them to produce direct results.
 
-Methods are time savers and help us to reuse the code without retyping it.
+Methods are "time-savers" and help us to re-use code without re-typing it.
 
-In Java, every method must be a part of a class.
+In Java, can only be a part of a class.
 
 The following example defines a method called `increaseHP` inside a class named Car.
 
@@ -34,7 +34,7 @@ class Car {
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-17-18-getters-and-setters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In Java **getters** and **setters** are two conventional methods that are used for retrieving and updating the value of a variable.
+**Getters** and **setters** are two types of commonly used methods that are used to retrieve and update the value of a variable.
 
 For each instance variable, a getter method returns its value while a setter method sets or updates its value.
 
@@ -57,11 +57,11 @@ class Car {
 }
 ```
 
-First, we have a `Car` class with a private field `horsePower`.
+We have a `Car` class with a private field `horsePower`.
 
-Because the field has private access, we **cannot** get or modify it.
+The field has private access, we **cannot** get or modify it.
 
-To overcome this problem we have to use "**get**" and "**set**" methods.
+To gain access we can use "**get**" and "**set**" methods.
 
 The `getHorsePower()` method **returns** the value of the `horsePower` field.
 
@@ -69,9 +69,9 @@ The `setHorsePower()` method **sets** the value of the `horsePower` field.
 
 ## The "this" Keyword
 
-In Java, the keyword `this` is a reference to the current object - the object whose method or constructor is called. 
+In Java, the keyword `this` is a reference to a speciffic object instace - the **object** whose method or constructor is called, not the class from which it was created. 
 
-It is like a pointer (reference), used to access the elements (fields, methods, constructors) of our class:
+It is like a pointer (reference), used to access the elements (fields, methods, constructors) of our object:
 
 ```java
 class Car {
@@ -89,7 +89,7 @@ class Car {
 
 In the example above, `setHorsePowerNotWorking()` would not work because the method parameter `horsePower` shadows the `horsePower` field. 
 
-To overcome this problem, we have to use the "**this**" keyword:
+To resolve this, we have to use the "**this**" keyword:
 
 ```java
  public void setHorsePower(int horsePower) {
@@ -108,9 +108,9 @@ The most common use of the "**this**" keyword is to eliminate the confusion betw
 
 By using the `toString()` method, you can represent any object as a string.
 
-In general, the `toString()` method returns a string that "textually represents" the object. 
+The `toString()` method returns a string that "textually represents" the object. 
 
-The result should be a concise but informative representation that is easy for a person to read. 
+The result should be a concise but informative representation that is easy to read. 
 
 It is recommended that all subclasses override this method.
 
@@ -154,7 +154,7 @@ boolean checkCarsEqual = firstCar.equals(secondCar);
 // false
 System.out.println(checkCarsEqual);
 ```
-Keep in mind that for the `equals()` method does not work correctly for object comparison unless it is overridden and used together with the `hashcode()` method.
+Keep in mind that the `equals()` method does not work correctly for object comparison unless it is overridden and used together with the `hashcode()` method.
 
 [/slide]
 
@@ -165,7 +165,7 @@ Keep in mind that for the `equals()` method does not work correctly for object c
 
 The `hashCode()` method returns the **integer** hash code value of the object. 
 
-The hash code is always the same if the object did not change.
+The hash code is always the same if the object has not change.
 
 ```java
 Car car = new Car();
@@ -175,9 +175,9 @@ int hash = car.hashCode();
 System.out.println(hash); 
 ```
 
-In order to enable correct object comparison you need to use the `equals()` and `hashcode()` methods together.
+In order to enable correct object comparison you need to use the `equals()` and `hashcode()` methods combined.
 
-Typically both of them need to be overridden to get correct results.
+Both of them need to be overridden to get correct results.
 
 [/slide]
 
@@ -191,9 +191,9 @@ Typically both of them need to be overridden to get correct results.
 [task-description]
 ## Description
 
-Your task is to define a `Car` class.
+Define a `Car` class.
 
-The class must have the following private fields:
+The class should contain the following private fields:
 - **Brand**: String
 - **Model**: String
 - **Horsepower**: String
@@ -214,7 +214,7 @@ Use the `Car` class from the previous problem.
 
 Because all fields in the **Car** class are **private**, if you try to access the fields directly through the class you will get a **compilation error**.
 
-To overcome this problem you have to use getters and setters methods.
+To solve this problem you have to use getters and setters.
 
 In the **Car class**, create **getters** and **setters** for each class field.
 
@@ -247,11 +247,11 @@ car.setHorsePower(503);
 
 Create a `carInfo()` method.
 
-This method should return the info about any car object in the following format:
+This method should return the available information about a car object in the following format:
 
 "**The car is:** \{**brand**\} \{**model**\} - \{**horsePower**\} **HP.**"
 
-You have to figure out how to create a method and to use it in the outside code as shown below:
+Try to create a method and to use it as shown below:
 
 ```java
 System.out.println(car.carInfo());
