@@ -184,6 +184,10 @@ int d = operation(b, number -> number % 2); // b = 0;
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/RO/interactive-java-advanced-functional-programming-29-Filter-by-Age-Problem-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/RO/interactive-java-advanced-functional-programming-29-Filter-by-Age-Problem-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/RO/interactive-java-advanced-functional-programming-29-Filter-by-Age-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 [code-task title="Filter by Age" taskId="oop-basics-java-functional-programming-lab-Filter-by-Age" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
