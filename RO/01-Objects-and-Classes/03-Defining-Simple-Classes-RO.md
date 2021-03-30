@@ -67,6 +67,8 @@ public class MyClass {
 
 # Membri Clasei
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/interactive-java-fundamentals-objects-and-classes-17-class-members-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Câmpurile** și **metodele** definesc **starea** și **comportamentul** unei clase.
 
 **Câmpurile** furnizează starea unei clase și a obiectelor sale:
@@ -96,6 +98,8 @@ class Car {
 [slide hideTitle]
 # Metode
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/interactive-java-fundamentals-objects-and-classes-18-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 S-a stabilit anterior că metodele descriu **comportamentul** unui obiect.
 
 Pot face asta prin stocarea **codului executabil** care manipulează **starea** atunci când este invocat.
@@ -121,6 +125,8 @@ class Car {
 
 [slide hideTitle]
 # Getters și Setters
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/interactive-java-fundamentals-objects-and-classes-19-getters-and-setters-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Un getter și un setter pot fi declarați pentru fiecare câmp.
 
@@ -167,6 +173,8 @@ public class Car {
 
 # Crearea unui Obiect
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/interactive-java-fundamentals-objects-and-classes-20-creating-an-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 De fiecare dată când un obiect este **creat**, acestuia îi este **dedicată** niște **memorie**.
 
 Din acest motiv **variabilele locale** sunt create ca **referințe** pentru acea parte din memorie.
@@ -192,6 +200,8 @@ class Program {
 
 [slide hideTitle]
 # Constructor
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/interactive-java-fundamentals-objects-and-classes-21-22-constructors-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 O metodă specială, executată în timpul creării unui obiect, care **setează starea inițială a obiectului**.
 
