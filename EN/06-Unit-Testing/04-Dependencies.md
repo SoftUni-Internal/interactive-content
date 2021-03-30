@@ -290,7 +290,7 @@ Paste the following code into the `pom.xml` file:
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-48-49-50-problem-and-solution-mocking-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-# Description
+## Description
 
 Include **Mockito** in the project dependencies, then:
 - Mock fakes from the previous problem
