@@ -6,9 +6,9 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02.Java-OOP-Basics-More-OOP Concepts-20-21-22-23-Enumerations -,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Enumerations** represent **numeric values** from a fixed set as **text**.
+**Enumerations** represent **numeric values** of a predetermined set as **text**.
 
-We can use them to pass **arguments** to **methods** without making code confusing.
+We can use them to pass in **arguments** to **methods** without making the code more confusing.
 
 **For example:**
 
@@ -65,13 +65,13 @@ System.out.println(CoffeeSize.Small.getValue()); // 100
 
 [task-description]
 # Description
-Create a class "**PriceCalculator**" that calculates the total price of a holiday, given the **price per day**, **number of days**, the **season** and a **discount type**.
+Create a class "**PriceCalculator**" that calculates the total cost of a holiday, given the **price per day**, **number of days**, the **season** and a **discount type**.
 
-The **discount type** and **season** should be **enums.**
+The **discount type** and **season** should be represented as **enums.**
 
-Use the class in your `main()` method to read input and **print** the **price** of the **whole holiday** to the console.
+Use the class in your `main()` method to read input and **print** the **cost** of the **entire holiday** to the console.
 
-The price per day will be multiplied depending on the season by:
+The price per day will be multiplied depending on the season:
 - **1** during Autumn
 - **2** during Spring
 - **3** during Winter
@@ -87,14 +87,14 @@ You will receive all the **information** about the **reservation** on a **single
 
 "\<**pricePerDay**\> \<**numberOfDays**\> \<**season**\> \<**discountType**\>", where:
 
-- The price per day will be a valid decimal in the range [0.01 ... 1000.00]
+- The price per day will be a valid decimal number in the range [0.01 ... 1000.00]
 - The number of days will be a valid integer in the range [1 ... 1000]
 - The season will be one of: **Spring, Summer, Autumn, Winter**
 - The discount will be one of: **VIP, SecondVisit, None**
 
 ## Output
 
-On a **single line**, print the **total price** of the **holiday**, rounded to 2 **digits** after the decimal separator.
+On a **single line**, print the **total cost** of the **holiday**, rounded to 2 **digits** after the decimal separator.
 
 
 ## Example
