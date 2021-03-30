@@ -94,6 +94,8 @@ Listele oferă funcționalități care vă permit să **adăugați*, **eliminaț
 [slide hideTitle]
 # Adăugarea și Eliminarea de Elemente
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/RO/interactive-java-fundamntals-lists-7-9-add-remove-add-index-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## Adăugarea de Elemente
 
 Metoda `add()` este folosită pentru inserarea de elemente noi într-o listă. 
