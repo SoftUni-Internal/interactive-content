@@ -1,25 +1,26 @@
-# Lesson Introduction
+# Lecție Introductivă
 
 [slide hideTitle]
-# Lesson Content
+
+# Conținutul Lecției
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/RO/interactive-java-advanced-generics-1-2-Introduction-Table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In this lesson, you will learn:
+## În această lecție, veți învăța:
 
-**1. The Problem before Java 5.0**
-- How **type safety** makes our code less prone to bugs
+**1. Problema dinainte de Java 5.0**
+- Cum **tipul de siguranță** face codul nostru mai puțin predispus la erori
 
-**2. Generics Syntax**
-- How to use generics
+**2. Sintaxă generică**
+- Cum se utilizează generice
 
-**3. Generic Classes and Interfaces**
-- Declaration and syntax
+**3. Clase și interfețe generice**
+- Declarație și sintaxă
 
-**4. Generic Methods**
-- Using generic methods
+**4. Metode generice**
+- Folosirea metodelor generice
 
-**5. Type Erasure, Type Parameter Bounds**
-- How Generics are implemented in Java
+**5. Tastarea, ștergerea, tastarea limitelor parametrilor**
+- Cum sunt implementate Generics în Java
 
 [/slide]

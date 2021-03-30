@@ -1,14 +1,14 @@
-# Type Parameter Bounds
+# Tipul de Parametri Bounds
 
 [slide hideTitle]
 
-# Type Parameter Bounds
+# Tipul de Parametri Bounds
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/RO/interactive-java-advanced-generics-18-19-Type-Parameter-Bounds-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In case you want to **restrict** the types that can be used as type arguments in a parameterized type, you have to use **bounded type parameters**.
+În cazul în care doriți să **restricționați** tipurile care pot fi utilizate ca argumente de tip într-un tip parametrizat, trebuie să utilizați **parametri de tip limitator**.
 
-Let us explain the need for type parameters bounds with the following example:
+Să explicăm necesitatea parametrilor de tip limitator cu următorul exemplu:
 
 ```java
 public class PowerOfThree<T>  {
@@ -18,21 +18,21 @@ public class PowerOfThree<T>  {
     }
 }
 ```
-The code above will produce a compile-time error - "**The method intValue() is undefined for the type T**".
+Codul de mai sus va da o eroare în timpul compilării - "**Metoda intValue() este nedefinită pentru tipul T**".
 
-The error occurs as there is no way for the compiler to know type "**T**" will always be used for numeric classes.
+Eroarea apare deoarece nu există nicio modalitate pentru compilator să știe că tipul "**T**" va fi întotdeauna folosit pentru clasele numerice.
 
-We need a bounded type to restrict the types that can be used for a parameterized type.
+Avem nevoie de un tip limitator pentru a restricționa tipurile care pot fi utilizate pentru un tip parametrizat.
 
-To declare a bounded type parameter, list the type parameter's name, followed by the "**extends**" keyword, followed by its **upper bound**.
+Pentru a declara un parametru de tip limitator, enumerați numele tipului parametrului, urmat de cuvântul cheie "**extinde**", urmat de **limita superioară** a acestuia.
 
-In our case, that will be a "**Number**" class.
+În cazul nostru, aceasta va fi o clasă "**Număr**".
 
 ```java
 T extends Number
 ```
 
-The code should look like this:
+Codul ar trebui să arate astfel:
 
 ```java
 public class PowerOfThree<T extends Number> {
@@ -42,13 +42,13 @@ public class PowerOfThree<T extends Number> {
     }
 }
 ```
-Let us explain what the code does.
+Să explicăm ce face codul.
 
-The type parameter "**T**" extends Number to restrict the type of objects that can be used in the parameterized type.
+Parametrul de tip "**T**" extinde Număr pentru a restricționa tipul de obiecte care pot fi utilizate în tipul parametrizat.
 
-The "**Number**" is a superclass of all numeric classes, such as "**Integer**", "**Float**" and "**Double**".
+"**Număr**" este o superclasă a tuturor claselor numerice, cum ar fi "**Număr întreg**", "**Float**" și "**Dublu**".
 
-If we try to use another class that is **not a subclass of Number**, the compiler will throw a compile-time error.
+Dacă încercăm să folosim o altă clasă care nu este **o subclasă de Număr**, compilatorul va returna o eroare în timpul compilării.
 
 
 [/slide]
@@ -66,19 +66,19 @@ If we try to use another class that is **not a subclass of Number**, the compile
 ```
 [task-description]
 ## Descriere
-Create a class `Scale<T>` that holds two elements - **left** and **right**. 
+Creați o clasă `Scară <T>` care conține două elemente - **stânga** și **dreapta**.
 
-The scale should receive the elements through its single constructor:
+Scara ar trebui să primească elementele prin intermediul constructorului său unic:
 
 - `Scale(T left, T right)`
 
-The scale should have a single method: 
+Scara ar trebui să aibă o singură metodă:
 
 - `T getHeavier()`
 
-The **greater of the two elements is heavier**. 
+**Cel mai mare dintre cele două elemente este mai greu**.
 
-The method should return `null` if the elements are **equal**.
+Metoda ar trebui să returneze `null` dacă elementele sunt **egale**.
 
 # Exemplu
 
@@ -274,7 +274,7 @@ Test Passed!
 
 [slide hideTitle]
 
-# Problem with Solution: List Utilities
+# Problemă cu Soluție: List Utilities
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/RO/interactive-java-advanced-generics-23-Problem-and-Solution-List-Utilities-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -285,17 +285,17 @@ Test Passed!
 ```
 [task-description]
 ## Description
-Create a class `ListUtils` that you will use through several other exercises.
+Creați o clasă `ListUtils` pe care o veți folosi prin alte câteva exerciții.
 
-The class should have **two static methods**:
+Clasa ar trebui să aibă **două metode statice**:
 
 - `T getMin(List<T> list)`
 
 - `T getMax(List<T> list)`
 
-The methods should throw `IllegalArgumentException` if an empty list is passed.
+Metodele ar trebui să arate `IllegalArgumentException` dacă este trecută o listă goală.
 
-# Example
+# Exemplu
 
 ```java
 List<Integer> integers = new ArrayList<>();
@@ -475,9 +475,9 @@ Test Passed!
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/RO/interactive-java-advanced-generics-25-26-Type-Parameters-Relationships-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Generics** are **invariant** - subtypes and supertypes are **not replaceable**.
+**Genericele** sunt **invariante** - subtipurile și supertipurile **nu sunt înlocuibile**.
 
-**Example:**
+**Exemplu:**
 
 ```java
 List<Object> objects = new ArrayList<>();
@@ -485,6 +485,6 @@ List<Animal> animals = new ArrayList<>();
 objects = animals; 
 ```
 
-Assigning the `animals` data structure to `objects` will result in a compile-time error.
+Atribuirea structurii de date `animals` la `objects` va duce la o eroare în timpul compilării.
 
 [/slide]

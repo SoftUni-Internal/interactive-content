@@ -1,20 +1,20 @@
-# Generics in Java
+# Generice în Java
 
 [slide hideTitle]
 
-# The Problem Before Java 5.0
+# Problema Înainte de Java 5.0
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/RO/interactive-java-advanced-generics-4-5-Generics-The-Problem-before-Java-5-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Java Generics were introduced in Java 5.0 to provide compile-time type checking and removing the risk of `ClassCastException` that was common while working with collection classes.
+Java Generics au fost introduse în Java 5.0 pentru a oferi verificarea tipului de compilare și eliminarea riscului de `ClassCastException` care era obișnuit în timpul lucrului cu clasele de colectare.
 
-It makes the code stable by detecting type errors at compile-time.
+Face codul stabil prin detectarea erorilor de tip în timpul compilării.
 
-Before the introduction of generics, we could store any type of object in a collection, i.e., non-generic. 
+Înainte de introducerea genericelor, am putea stoca orice tip de obiect într-o colecție, adică non-generic.
 
-Generics force the Java programmer to specify the type of object that will be stored in any collection.
+Genericele forțează programatorul Java să specifice tipul de obiect care va fi stocat în orice colecție.
 
-Let us see the following example:
+Să vedem următorul exemplu:
 
 ```java live
 List strings = new ArrayList();
@@ -22,56 +22,56 @@ strings.add("SoftUni");
 strings.add(5);
 
 System.out.println((String)strings.get(0));
-// ClassCastException at runtime
+// ClassCastException la rulare
 System.out.println((String) strings.get(1));
 ```
 
-The code above compiles fine but throws `ClassCastException` at **run time** because we are trying to cast Object in the list to String whereas one of the elements is of type Integer.
+Codul de mai sus se compilează bine, dar aruncă `ClassCastException` la **timpul de execuție**, deoarece încercăm să aruncăm obiectul în listă la String, în timp ce unul dintre elemente este de tip Integer.
 
-No contract could guarantee that the **return type** of the list is a **String**. 
+Niciun contract nu poate garanta că **tipul de returnare** al listei este un **șir**.
 
-The defined list could **hold any object**. 
+Lista definită ar putea **să conțină orice obiect**.
 
-We only know that we are retrieving a list by inspecting the context. 
+Știm doar că recuperăm o listă inspectând contextul.
 
-When looking at types, it can only guarantee that it is an Object, and we need an explicit cast to ensure that the type is safe.
+Când ne uităm la tipuri, poate garanta doar că este un obiect și avem nevoie de o distribuție explicită pentru a ne asigura că tipul este sigur.
 
-The cast can cause type-related **runtime errors** if a programmer makes a mistake with the explicit casting.
+Distribuția poate provoca **erori de runtime** legate de tip dacă un programator face o greșeală cu distribuirea explicită.
 
 [/slide]
 
 [slide hideTitle]
 
-# Generics - Type Safety
+# Generice - Tipuri de Siguranță 
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/RO/interactive-java-advanced-generics-6-Type-Safety-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The core idea behind generics is that programmers can express their intention of using **specific types** and **the compiler can ensure the correctness of such type.**
+Ideea de bază din spatele genericelor este că programatorii își pot exprima intenția de a utiliza **tipuri specifice** și **compilatorul poate asigura corectitudinea unui astfel de tip.**
 
-The following example illustrates Generics using "**ArrayList**" but you can use any collection class such as "**LinkedList**", "**HashSet**", "**TreeSet**", "**HashMap**", "**Comparator**" etc:
+Următorul exemplu ilustrează Generics folosind „**ArrayList**”, dar puteți utiliza orice colecție de clasă , cum ar fi „**LinkedList**”, „**HashSet**”, „**TreeSet**”, „**HashMap** "," **Comparator** "etc:
 
 ```java
 List<String> strings = new ArrayList<String>();
 strings.add("SoftUni");
 
-// Compile-time error
+// Eroare în timpul compilării
 strings.add(3); 
 ```
 
-Let us explain what the code above does:
+Să explicăm ce face codul de mai sus:
 
-By adding the diamond operator `<>` containing the type, we narrow the specialization of this list only to String type i.e. we specify the type that will be held inside the list. 
+Prin adăugarea operatorului de diamant `<>` care conține tipul, restrângem specializarea acestei liste doar la tipul String, adică specificăm tipul care va fi păstrat în listă.
 
-The compiler can enforce the type at compile-time.
+Compilatorul poate aplica tipul în timpul compilării.
 
-In small programs, this might seem like a trivial addition, however, in larger programs, this can add significant robustness and makes the program easier to read.
+În programele mici, acest lucru ar putea părea o adăugare banală, cu toate acestea, în programele mai mari, acest lucru poate adăuga o rezistență semnificativă și face programul mai ușor de citit.
 
-The main features of Generics are:
+Principalele caracteristici ale Generics sunt:
 
-- **Type safety** - we can hold only a single type of objects in generics
-- **Type casting is not required** - there is no need to typecast the object
-- **Compile-Time Checking** - the type is checked at compile-time
+- **Type safety** - putem păstra doar un singur tip de obiecte în generice
+- **Type casting is not required** - nu este necesar să fie tipografiat obiectul
+- **Compile-Time Checking** - tipul este verificat la timp de compilare
 
-It is always better for a problem to be discovered during compile-time, rather than at runtime. 
+Este întotdeauna mai bine ca o problemă să fie descoperită în timpul compilării, mai degrabă decât în ​​timpul rulării.
 
 [/slide]
