@@ -57,8 +57,6 @@ To make things easier, we need a **structured** approach that:
   - end-to-end testing of our system
 
 
-[image assetsSrc="Unit-Testing-Example(1).png" /]
-
 [/slide]
 
 [slide hideTitle]
