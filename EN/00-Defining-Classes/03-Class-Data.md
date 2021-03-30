@@ -8,13 +8,13 @@
 
 A Java field is a variable inside a class. 
 
-For instance, in a class representing a car, the Car class might contain the following fields:
+For example, in a class representing a car, the Car class might contain the following fields:
 
 - **Brand**
 - **Model**
 - **Horsepower**
 
-The corresponding Java class is defined as follows:
+This Java class would have the following form:
 
 ```java
 public class Car {
@@ -34,14 +34,14 @@ public class Car {
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-12-13-problem-and-solution-define-car-class-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Create a class named **Car**.
+Create a class called **Car**.
 
 The class should have **public** fields for:
 - **Brand**: String
 - **Model**: String
 - **Horsepower**: Integer
 
-Create a **new class** and ensure you name it according to the rules for naming classes. 
+Create a **new class**, each class should be named accordingly. 
 
 You should now be able to use your class:
 
@@ -92,7 +92,7 @@ public class Car {
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-14-access-modifiers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Access modifiers** determine whether other classes can use a particular field.
+**Access modifiers** determine whether outer classes can use a particular field.
 
 There are four types of access modifiers in Java:
 
@@ -105,7 +105,7 @@ Using a **private** access modifier means that only code inside the class body c
 
 If you do not use any modifier, it is treated as **package-private** by **default**.
 
-The **package-private** access modifier means that only code inside the class or other classes in the same package can access the field.
+The **package-private** access modifier specifies that only code inside the class or other classes in the same package can access the field.
 
 It provides more accessibility than the **private** modifier.
 
