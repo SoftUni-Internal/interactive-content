@@ -3,7 +3,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-38-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In this lesson, you learned:
+## In this lesson you learned:
 
 - Inheritance is a powerful tool for **code reuse**
 
@@ -45,7 +45,7 @@ public class Student extends Person {
 - **Composition** and **Delegation**
 
 
-## In the next lesson, you will learn:
+## In the next lesson you will learn:
 
 
 - Inheritance and Interfaces
