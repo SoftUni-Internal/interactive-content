@@ -4,9 +4,9 @@
 
 # Deleting from Database
 
-Deleting structures from the database is called `dropping`
+Deleting structures from the database is called `DROP-ping`
 
-You can drop `keys`, `constraints`, `tables` and entire `database`
+You can drop `keys`, `constraints`, `tables` and entire `databases`
 
 Deleting all data in a table is called `truncating`
 
@@ -30,7 +30,7 @@ To drop a table - delete data and structure:
 DROP TABLE employees; // Table name
 ```
 
-To drop entire database:
+To drop entire databases:
 
 ```Java
 DROP DATABASE soft_uni; // Database name
@@ -48,7 +48,7 @@ ALTER TABLE employees // Table name
 DROP CONSTRAINT pk_id; // Constraint name
 ```
 
-To remove DEFAULT value, if not specified, revert to NULL:
+To remove the **DEFAULT** value, if not specified, revert to **NULL**:
 
 ```Java
 ALTER TABLE employees // Table name
