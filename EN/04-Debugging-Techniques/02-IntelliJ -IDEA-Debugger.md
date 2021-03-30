@@ -21,12 +21,8 @@ It is helpful because it allows us to:
 
 - Track the **values** stored in the **variables**
 
-[/slide]
 
-[slide hideTitle]
-
-
-# Starting a Process of Debugging
+## Starting a Process of Debugging
 
 In **IntelliJ IDEA**, we can use the **keyboard combination** (**Ctrl + Alt + F5**) to execute the code **in debug mode**.
 
@@ -39,6 +35,14 @@ We can run the debugger on a program, which is not running.
 Also, we can attach it to a program, which is **not** directly available in **IntelliJ IDEA**.
 
 [image assetsSrc="debugging-techniques-example(1).png" /]
+
+
+[/slide]
+
+[slide hideTitle]
+# Live Demo: PhoneBook
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-live-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 [/slide]
@@ -92,7 +96,7 @@ Here are the default shortcuts for the most used actions:
 - **Step Out** - "**Shift + F8**"
 - **Step into** - "**F7**"
 - **Resume** - ⏯
-- **Pause**: [image assetsSrc="debugging-techniques-example(5).png" /]
+- **Pause** - ⏸
 
 ## Controlling Execution
 
