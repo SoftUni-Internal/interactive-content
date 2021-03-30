@@ -17,7 +17,7 @@ Use a **BufferedReader** in combination with **FileReader**.
 
 The zip file contains all the files you will need for the rest of the tasks as well.
 
-**Download the resources** [here](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Files-and-Streams-Exercise-Resources.zip). 
+**Download the resources** [here](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Files-and-Streams-Exercise-Resources-New.zip). 
 
 Submit only the **output** of your program, **not the code**.
 
@@ -461,13 +461,13 @@ Folder size: 2878
 [slide hideTitle]
 # Problem: Copy a Picture
 
-Create a program that makes a copy of a **.jpg** file using **FileInputStream**, **FileOutputStream**, and `byte[]` buffer. 
+Create a program that makes a copy of a **cat.jpg** file using **FileInputStream**, **FileOutputStream**, and `byte[]` buffer. 
 
-Set the name of the new file as **picture-copy.jpg**.
+Use the previously provided resources.
 
-To start, pick a random image, or download one [here](https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?cs=srgb&dl=pexels-evg-culture-1170986.jpg&fm=jpg).
+Set the name of the new file as **cat-copy.jpg**.
 
-Then, create a new project and open the **Main** class.
+To start, create a new project and open the **Main** class.
 
 In the `Main.java` file, add the necessary **imports**, if your IDE does not already:
 
@@ -493,7 +493,7 @@ try {
 
 Then, inside the `try` block, create an input stream for the original image.
 
-Initialize a new **input stream** using `new File("the-absolute-path-to-your\image")`.
+Initialize a new **input stream** using `new File("The-Absolute-Path-To-Your\image.jpg")`.
 
 You can get the absolute path to your image by right-clicking on it, and choosing "**Properties**".
 
@@ -502,13 +502,13 @@ A window will appear, and the path will be located next to "**Location:**".
 Select the path and paste it as follows:
 
 ```java
-FileInputStream inputImage = new FileInputStream(new File("C:\folder-name\...\picture-name.jpg"));
+FileInputStream inputImage = new FileInputStream(new File("C:\...\Folder-With-Resources\cat.jpg"));
 ```
 
-After that, create an **output stream** with the "**picture-copy.jpg**" string as a parameter.
+After that, create an **output stream** with the "**cat-copy.jpg**" string as a parameter.
 
 ```java
-FileOutputStream outputImage = new FileOutputStream("picture-copy.jpg");
+FileOutputStream outputImage = new FileOutputStream("cat-copy.jpg");
 ```
 
 Create a `byte[]` buffer.
@@ -517,8 +517,8 @@ Use a while loop to **write the data** to the output stream, as shown below.
 
 ```java
 try {
-    FileInputStream inputImage = new FileInputStream(new File("C:\FolderOne\picture.jpg"));
-    FileOutputStream outputImage = new FileOutputStream("picture-copy.jpg");
+    FileInputStream inputImage = new FileInputStream(new File("C:\Folder-With-Resources\cat.jpg"));
+    FileOutputStream outputImage = new FileOutputStream("cat-copy.jpg");
 
     int oneByte;
     byte[] buffer = new byte[8192]; // Or more, if you want 🏞
@@ -542,6 +542,8 @@ The cloned image is now **saved** in your project folder.
 # Problem: Serialize Array List
 
 Create a program that saves and loads an **ArrayList** of doubles to a file using **ObjectInputStream** and **ObjectOutputStream**. 
+
+Set the name of the file as **list.ser**
 
 Your IDE must add the following **imports** in the process:
 
@@ -632,18 +634,20 @@ You can now see the ArrayList's data, printed on the **console**:
 [slide hideTitle]
 # Problem: Serialize Custom Object
 
-Create a program that saves and loads information about a custom object using **ObjectInputStream** and **ObjectOutputStream**.
+Create a program that saves and loads information about a custom object to a file, using **ObjectInputStream** and **ObjectOutputStream**.
+
+Set the name of the file as **course.ser**
 
 Create a **simple class** called "**Course**" that has the following values upon initialization:
 
 - **name** - String
-    * the name of the course
+    * the **name** of the **course**
 - **studentsCount** - int
     * contains the **number of students** attending the course
 
 The class **must implement** the `Serializable` interface.
 
-To start create a new `Course.java` file.
+To start, create a new `Course.java` file.
 
 ```java
 import java.io.Serializable;
@@ -773,7 +777,10 @@ Create a program that reads three **.txt** files and creates a `zip` archive nam
 
 Use **FileOutputStream**, **ZipOutputStream**, and **FileInputStream**.
 
-To start, create three **.txt** files in a directory of your choice.
+Use the previously provided resources:
+- **fileOne.txt**
+- **fileTwo.txt**
+- **fileThree.txt**
 
 You will need the following **imports** in `Main.java`:
 
@@ -783,10 +790,10 @@ import java.util.*;
 import java.util.zip.*;
 ```
 
-Inside `main()`, declare the desired path for the new `.zip` file:
+Inside `main()`, declare the desired path for the new `files.zip` file:
 
 ```java
-String zipFile = "C:/archive.zip";
+String zipFile = "C:/files.zip";
 ```
 
 Then, create an array of all the paths to the three `.txt` files:
@@ -800,7 +807,7 @@ Create a try-catch block and a `byte[]` buffer.
 ```java
 try {
 
-    // Create a byte buffer
+    // Create a byte[] buffer
     byte[] buffer = new byte[1024];
 
     FileOutputStream fileOut = new FileOutputStream(zipFile);
