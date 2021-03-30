@@ -49,7 +49,7 @@ The `find()` method tries to find the occurrence of a regex pattern within a giv
 
 Check the following example:
 
-```java live 
+```java live no-template
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
