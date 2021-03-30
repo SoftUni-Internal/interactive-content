@@ -53,7 +53,7 @@ class TopClass {
 
 **Example:**
 
-- When we have many employees in the same company, an Employee class could have a static field for storing the company name as it is the same for all employees
+- When we have many employees in the same company, an Employee class could have a static field to store the company name as it is the same for all employees.
 
 **Memory** for static variables is allocated **only once** - in the class area, at the time of class **loading** (during runtime).
 
@@ -95,8 +95,8 @@ public static void main(String[] args) {
 
 **Static methods** belong to the **class** rather than the **object of a class**.
 
-- Can be **invoked** without the need for creating an instance of a class
-- Can **access** static data member and can **change** the value of it
+- Can be **invoked** without the need to create an instance of a class
+- Can **access** static data members and can **change** their values
 - **Cannot use a non-static** data member or call a **non-static method** directly
 - "**this**" and "**super**" cannot be used in static context
 
