@@ -787,7 +787,7 @@ import java.util.*;
 import java.util.zip.*;
 ```
 
-În interiorul lui `main()`, declarați calea dorită pentru noul fișier `.zip`:
+În interiorul lui `main()`, declarați calea dorită pentru noul fișier `files.zip`:
 
 ```java
 String zipFile = "C:/files.zip";
