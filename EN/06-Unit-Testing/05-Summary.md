@@ -4,7 +4,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-51-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In this lesson, you learned:
+## In this lesson you learned:
 
 - Unit testing helps us build solid code
 - We use the AAA pattern to structure our unit tests
@@ -45,7 +45,7 @@ transferSubtractsFromSourceAddsToDestAccount() {}
 - Dependency injection looses coupling and improves design 
 - The difference between fake implementation and mocking objects
 
-## In the next lesson, you will learn:
+## In the next lesson you will learn:
 
 - The concept of test-driven development
 

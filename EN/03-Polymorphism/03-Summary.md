@@ -3,7 +3,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/EN/interactive-java-oop-advanced-polymorphism-22-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In this lesson, you learned:
+## In this lesson you learned:
 
 - Polymorphism - Definition and Types
 
@@ -115,7 +115,7 @@ public class Cat extends Animal{
 
 ```
 
-## In the next lesson, you will learn:
+## In the next lesson you will learn:
 
 - S.O.L.I.D Principles
 
