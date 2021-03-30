@@ -8,14 +8,14 @@
 ## Description
 
 Create a class called **Article** that has the following properties:
-- title – a string
-- content – a string
-- author – a string
+- title – a String
+- content – a String
+- author – a String
 
 The class should have a constructor and the following methods:
 - **edit** (new content) – changes the old content with the new one
 - **changeAuthor** (new author) – changes the author
-- **rename** (new title) – changse the title of the article
+- **rename** (new title) – changes the title of the article
 - **override ToString** – prints the the information about the article in the following format: 
 "\{title\} - \{content\}:\{author\}"
 
@@ -141,12 +141,12 @@ Create a class called **Person** that will have the following properties:
 - age
 
 
-On the first line, you will receive a number **N**, which will represent the number of all people.
+On the first line, you will receive a number **N**, representing the count of people.
 
-On the next **N** lines, you will be receiving information about these people.
+On the next **N** lines, you will be receiving information about those people.
 
 
-Print out the information about all people who are **older than 30 years of age** in the following format: \{name\} - \{age\}
+Print out the information about all the people who are **older than 30 years of age** in the following format: \{name\} - \{age\}
 
 
 ### Example
@@ -350,13 +350,13 @@ Anntoanette - 39
 [code-task title="Articles 2.0" taskId="java-fund-2-Objects-and-Classes-Articles-2.0" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [task-description]
 ## Description
-Update the class called **"Articles"**, so you can store a **list of articles**.
+Update the class called **"Articles"** that you created before so it can store a **list of articles**.
 
 You will need only the **toString** method.
 
 On the **first line**, you will receive a number - **n**.
 
-On the next **n** lines, you will receive information about some articles **in the same format**: ("\{title\}, \{content\}, \{author\}").
+On the next **n** lines, you will receive information about some articles **in the format**: ("\{title\}, \{content\}, \{author\}").
 
 Finally, you will receive one of the following **three criteria**: "title", "content", "author".
 
@@ -497,11 +497,11 @@ Most Valuable Playboy - content4: Lauren Blakely
 ## Description
 Create a program that sorts some students by their grade in descending order.
 
-Each student should have a **first name** (String), a **last name** (String), **and a grade** (floating-point number). 
+Each student should have a **first name** (String), a **last name** (String), **and a grade** (a floating-point number). 
 
 ### Input
 
-- On the first line, you will receive a number **n**, which will represent the **count of all students**
+- On the first line, you will receive a number **n** - the **count of all students**
 - On the next **n** lines, you will be receiving information about these students in the following format: "\{first name\} \{second name\} \{grade\}"
 
 
@@ -627,13 +627,13 @@ Amias Mathews: 2.30
 
 [task-description]
 ## Description
-Until you receive the **"End"** command , you will be receiving lines of input in the following format:
+Until you receive the **"End"** command, you will be receiving lines of input in the following format:
 
 - \{typeOfVehicle\} \{model\} \{color\} \{horsepower\}
 
 When you receive the **"End"** command, you will start receiving information about some **vehicles**. 
 
-**For every received vehicle**, print out the information about it in the following **format**:
+**For every vehicle**, print out the information about it in the following **format**:
 
 Type: \{typeOfVehicle\}
 
@@ -645,7 +645,7 @@ Horsepower: \{horsepowerOfVehicle\}
 
 When you receive the **"Close the Catalogue"** command, print out the **average horsepower** of the cars and the **average horsepower** of the trucks in the **format**:
 
-"\{typeOfVehicles\} have average horsepower of \{averageHorsepower\}."
+"\{typeOfVehicles\} have an average horsepower of \{averageHorsepower\}."
 
 The average horsepower is calculated by **dividing the sum of the horsepower of all vehicles of the given type by the total count of all vehicles from that type**.
 
@@ -666,8 +666,8 @@ Format the answer to the **second digit after the decimal point**.
 | Close the Catalogue | Model: Man |
 | | Color: red |
 | | Horsepower: 200 |
-| | Cars have average horsepower of: 413.33. |
-| | Trucks have average horsepower of: 250.00. |
+| | Cars have an average horsepower of: 413.33. |
+| | Trucks have an average horsepower of: 250.00. |
 
 [/task-description]
 [code-upload allowedMemory="30" /]
@@ -698,8 +698,8 @@ Type: Truck
 Model: Man
 Color: red
 Horsepower: 200
-Cars have average horsepower of: 413.33.
-Trucks have average horsepower of: 250.00.
+Cars have an average horsepower of: 413.33.
+Trucks have an average horsepower of: 250.00.
 [/output]
 [/test]
 [test]
@@ -709,8 +709,8 @@ End
 Close the Catalogue
 [/input]
 [output]
-Cars have average horsepower of: 736.00.
-Trucks have average horsepower of: 0.00.
+Cars have an average horsepower of: 736.00.
+Trucks have an average horsepower of: 0.00.
 [/output]
 [/test]
 [test]
@@ -720,8 +720,8 @@ End
 Close the Catalogue
 [/input]
 [output]
-Cars have average horsepower of: 0.00.
-Trucks have average horsepower of: 248.00.
+Cars have an average horsepower of: 0.00.
+Trucks have an average horsepower of: 248.00.
 [/output]
 [/test]
 [test]
@@ -736,8 +736,8 @@ Type: Car
 Model: Lamborghini
 Color: orange
 Horsepower: 570
-Cars have average horsepower of: 570.00.
-Trucks have average horsepower of: 0.00.
+Cars have an average horsepower of: 570.00.
+Trucks have an average horsepower of: 0.00.
 [/output]
 [/test]
 [test]
@@ -752,8 +752,8 @@ Type: Truck
 Model: Man
 Color: red
 Horsepower: 200
-Cars have average horsepower of: 0.00.
-Trucks have average horsepower of: 200.00.
+Cars have an average horsepower of: 0.00.
+Trucks have an average horsepower of: 200.00.
 [/output]
 [/test]
 [test]
@@ -767,8 +767,8 @@ End
 Close the Catalogue
 [/input]
 [output]
-Cars have average horsepower of: 507.67.
-Trucks have average horsepower of: 550.00.
+Cars have an average horsepower of: 507.67.
+Trucks have an average horsepower of: 550.00.
 [/output]
 [/test]
 [test]
@@ -798,8 +798,8 @@ Type: Truck
 Model: Volkswagen
 Color: black
 Horsepower: 423
-Cars have average horsepower of: 342.00.
-Trucks have average horsepower of: 365.67.
+Cars have an average horsepower of: 342.00.
+Trucks have an average horsepower of: 365.67.
 [/output]
 [/test]
 [/tests]
@@ -830,15 +830,15 @@ You will receive **an unknown number of lines**.
 
 On each line, you will receive an **array with 3 elements**.
 
-The **first** element will be of type **string** and represents the **name of the person**. 
+The **first** element will be of type **String** and represents the **name of the person**. 
 
-The **second** element will be of type **string** and represents the **ID of the person**. 
+The **second** element will be of type **String** and represents the **ID of the person**. 
 
 The last element will be of type **integer** and represents the **age of the person**.
 
-If you get a person whose **ID you have already received**, **update** the name and age for that ID with that **of the new person**.
+If you get a person whose **ID you have already received before**, **update** the name and age for that ID with that **of the new person**.
 
-When you receive the **command** "`End`", **print all of the people**.
+When you receive the **End** command, **print the information on all the people**.
 
 ### Example
 | **Input** | **Output** |

@@ -19,14 +19,14 @@ Some of these methods are:
 
 - `java.math.BigInteger`
 
-Using **static** methods require calling the name of the class and the needed method:
+Using **static** methods requires calling the name of the class and the needed method:
 
 ```java
 LocalDateTime today = LocalDateTime.now();
 double cosine = Math.cos(Math.PI);
 ```
 
-Using **non-static** methods require creating a new instance of an object of the current class:
+Using **non-static** methods requires creating a new instance of an object of the current class:
 
 ```java
 Random rnd = new Random();
@@ -142,9 +142,9 @@ System.out.println(radians);
 [slide hideTitle]
 # Random
 
-The `java.util.Random` class is used to generate generate different random data types such as **integer**, **float**, **double**, **long**. 
+The `java.util.Random` class is used for generating random data types such as **integer**, **float**, **double**, **long**. 
 
-The methods provided from the `Random` class are **not-static**.
+The methods provided by the `Random` class are **not-static**.
 
 The following code is an example of how to create a `Random` **instance**:
 
@@ -239,9 +239,7 @@ To generate a random number in the specified range, use `rnd.nextInt(words.lengt
 [slide hideTitle]
 # BigInteger
 
-The `java.math.BigInteger` class provides **operations analogues** to all of Java's **primitive integer operations** and for **all relevant methods** from the `java.lang.Math;` class.
-
-The `BigInteger` class helps dealing with very **big integer** calculations that are outside the limit of all available primitive data types.
+The `BigInteger` class is used for **big integer** calculations that are outside the limit of all available primitive data types.
 
 Its methods are **non-static**.
 
@@ -251,7 +249,7 @@ This is how to declare a `BigInteger`:
   - the number **1234567890** is a **long** variable (64 bits)
 
 - `BigInteger num = new BigInteger("12345688901234567890");`
-  - the number **12345688901234567890** is too large, so it cannot fit in 64bits. That is why the parameter is a **numeric String**
+  - the number **12345688901234567890** is too big, so it cannot fit in 64bits. That is why the parameter is a **numeric String**
 
 The `BigInteger` **fields** are:
 
@@ -303,7 +301,7 @@ number = number.divide(BigInteger.TEN);
 System.out.println(number);
 ```
 
-- `pow(value)` - Assigns a **new value** to the current BigInteger and performs a **power raise** (current ^ value)
+- `pow(exponent)` - **raises** a numeric value to the power of a given number (currentValue ^ exponent)
 
 ```java live
 BigInteger number = BigInteger.valueOf(123);
@@ -339,7 +337,8 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You will receive two numbers in range \[0 - 10 ^ 50\]. 
+You will receive two numbers in the range \[0 - 10 ^ 50\]. 
+
 Print out their sum.
 
 ## Examples
@@ -455,7 +454,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You will receive a number `N` in range \[0 - 1000\].
+You will receive a number `N` in the range \[0 - 1000\].
 
 Calculate the **Factorial of N** and print out the result.
 

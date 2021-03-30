@@ -5,7 +5,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-14-15-defining-simple-classes-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-There are some required components to define a class in Java.
+When defining classes in Java some components are required and some are optional.
 
 The **obligatory** components are:
 
@@ -15,21 +15,25 @@ The **obligatory** components are:
 
 - The **body** of the class
 
-Not obligatory, but **credential** components are: 
+Not obligatory, but **good to have** components are: 
 
 - Fields
 
 - Мethods (constructors, getters, setters, etc.)
 
-Each **class**, **field**, **constructor**, or **method** can have an **access modifier**, which specifies their **accessibility**.
+Each **class**, **field**, **constructor**, or **method** can have an **access modifier** (such as public, private, protected), which specifies their **accessibility**.
 
 Тhe default **access level** can be **changed** by declaring the class/field/method/etc with the desired modifier.
+
+The default access modifier is applied when we do not specify any keyword.
+
+By default, every class is available to any other class in the same package.
 
 There is a possibility to **automatically** generate **constructors**, **getters**, **setters**, and other commonly used methods via **IntelliJ IDEA**. 
 
 To do so, use `Right-click + Generate`. 
 
-The short command depends on the operation system of the computer: 
+The short command depends on your OS (Windows/Mac):
 
 - On Windows and Linux, it is `Alt + Insert` 
 
@@ -45,9 +49,9 @@ The short command depends on the operation system of the computer:
 
 The class naming convention is **PascalCase**. 
 
-The class name should be descriptive and easy to understand.
+Class names should be descriptive and easy to understand.
 
-Abbreviations are required to be avoided (except widely known, e.g. URL, HTTP, etc.).
+Abbreviations should be avoided (except well-known abbreviations such as URL, HTTP).
 
 ```java
 public class CompanyEmployee {
@@ -63,7 +67,9 @@ public class CompanyEmployee {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-17-Class-Members-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Fields** and **methods** define the **state** and the **behavior** of a class.
+**Fields** and **methods** define the **state** and the **behavior** of a class. 
+
+They are members of the class.
 
 **Fields** provide the state of the class and its objects:
 
@@ -174,7 +180,7 @@ This is why **local variables** are created as **references** to that part of th
 
 The **Java Virtual Machine** is responsible for **tracking** the object references.
 
-If there are **no references** to an object, it becomes **garbage** and is **deleted**.
+If there are **no references** to an object, it gets **deleted** by the garbage collector.
 
 It is possible to create **many objects** out of one class by using the `new` keyword.
 
@@ -498,9 +504,9 @@ Define a class called **Song** that will hold the following information about so
 
 ### Output
 
-If you receive a **Type List** as an input on the last line, print out **only the names of the songs** which are from that **Type List**.
+If you receive **Type List** as an input on the last line, print out **only the names of the songs** which are from that **Type List**.
 
-If you receive the command **"all"**, print out the names of **all songs**.
+If you receive the **"all"** command, print out the names of **all the songs**.
 
 ## Examples
 
