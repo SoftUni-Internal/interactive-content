@@ -14,7 +14,7 @@ There are two types of indexes: **Clustered** and **Non-Clustered**.
 
 **Clustered** indexes are bound to the **primary key** and are used to physically sort data.
 
-**Non-Clustered** indexes can be bound to any field, and they are used to reference the primary index.
+**Non-Clustered** indexes can be bound to any field and they are used to **reference** the primary index.
 
 [image assetsSrc="Introduction-To-Databases(12).png" /]
 
@@ -26,13 +26,13 @@ There are two types of indexes: **Clustered** and **Non-Clustered**.
 
 Views are prepared queries for displaying sections of our data. 
 
-Use the `CREATE VIEW` statement to create a new view.
+The `CREATE VIEW` statement is used to create a new view.
 
 Once we execute the `CREATE VIEW` statement, MySQL creates the view and stores it in the database so we can use it later if we need it.
 
 Example of create view statement:
 
-```Java
+```java
 CREATE VIEW v_employee_names AS
 	SELECT employee_id,
         first_name,
@@ -47,15 +47,17 @@ SELECT * FROM v_employee_names
 
 # Procedures, FunctionsAnd Triggers
 
-A database can be customized, with reusable code, and for this, we can use **Procedures**, **Functions**, and **Triggers**.
+A database can also store reusable code such as **Procedures**, **Functions**, and **Triggers**.
 
-A procedure is like a subprogram in a regular scripting language, stored in a database. A MySQL procedure has a **name**, a **parameter list**, and **SQL statement(s)**.
+**Procedures** are similar to subprograms in a scripting language that are stored in a database.
 
-In MySQL, a function is a stored program that you can pass parameters into and then return a value.
+A MySQL procedure has a **name**, a **parameter list**, and **SQL statement(s)**.
 
-A trigger in MySQL is a set of SQL statements that reside in a system catalog. 
+**Functions** are **stored programs** that we can pass parameters into and then **return a value**.
 
-It is a special type of stored procedure that is invoked automatically in response to an event. 
+**Triggers** are a set of SQL statements that **reside in a system catalog**. 
+
+They are a special type of stored procedure that are invoked automatically in response to an event. 
 
 Each trigger is associated with a table, which is activated on any DML statement such as **INSERT**, **UPDATE**, or **DELETE**.
 
