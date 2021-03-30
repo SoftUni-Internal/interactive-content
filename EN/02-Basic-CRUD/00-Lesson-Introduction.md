@@ -6,7 +6,7 @@
 
 ## In this lesson you will learn:
 
-**1. The Query basics**
+**1. The Query Basics**
 - What the acronym **CRUD** stands for
 
 **2. Retrieving Data**
