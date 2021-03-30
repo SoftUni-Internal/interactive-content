@@ -417,12 +417,8 @@ There are **two** ways to sort collections:
 
 - Sorting in **ascending** (**Natural**) order:
 
-```java live no-template
-import java.util.*;
-import java.util.stream.Collectors;
+```java live
 
-public class Main {
-    public static void main(String[] args) {
         List<Integer> numbers = new ArrayList<>() {{
             add(4);
             add(1);
@@ -435,8 +431,7 @@ public class Main {
         for (Integer number : numbers) {
             System.out.println(number);
         }
-    }
-}
+
 ```
 
 - Sorting in **descending** order:
