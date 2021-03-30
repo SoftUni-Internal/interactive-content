@@ -1,18 +1,18 @@
-# Project Structure
+# Structura Proiectului
 
 [slide hideTitle]
 
-# Splitting Code Into Methods
+# Împărțirea Codului în Metode
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/RO/02.Java-OOP-Basics-More-OOP-Concepts-3-4-5-6-Projects-structure-Methods-1-2-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We use **methods** to split code into functional blocks.
+Folosim **metode** pentru a împărți codul în blocuri funcționale.
 
-This improves code **readability** and allows for easier **debugging**.
+Acest lucru îmbunătățește **lizibilitatea codului** și permite **depanarea mai ușoară**.
 
-Let us take a look at this **example**.
+Să aruncăm o privire la acest **exemplu**.
 
-We can convert these nested loops:
+Putem converti aceste bucle imbricate:
 ```java
 for (char move : moves){
   for (int r = 0; r < room.length; r++)
@@ -22,7 +22,7 @@ for (char move : moves){
 }
 ```
 
-Into a more readable combination of **methods**:
+Într-o combinație mai lizibilă de **metode**:
 ```java
 for (char move : moves) {
     moveEnemies();
@@ -31,11 +31,11 @@ for (char move : moves) {
  }
 ```
 
-Methods let us easily **reuse code** without having to retype it in different places.
+Metodele ne permit **să reutilizăm cu ușurință codul** fără a fi nevoie să-l retipăm în diferite locuri.
 
-**Changing the method** once will change the behavior of the method anywhere it is called.
+**Schimbarea metodei** o dată va schimba comportamentul metodei oriunde este numită.
 
-**Example:**
+**Exemplu:**
 
 ```java
 BankAccount bankAcc = new BankAccount();
@@ -49,10 +49,9 @@ System.out.println(bankAcc.toString());
 //Override .toString() to set a global printing format
 
 ```
+Putem înlocui metoda `toString ()` din clasa **BankAccount** pentru a returna detaliile contului în format String.
 
-We can override the `toString()` method in the **BankAccount** class to return the account details in String format. 
-
-Although this change is done in one place, it will affect the code globally every time we call the method on any object of type **BankAccount**.
+Deși această modificare se face într-un singur loc, aceasta va afecta codul la nivel global de fiecare dată când apelăm metoda pe orice obiect de tip **BankAccount**.
 
 
 
@@ -78,13 +77,13 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Create a program that reads a **positive integer n** as input and prints a **rhombus** with size **n** to the console.
+Creați un program care citește un **întreg pozitiv n** ca intrare și imprimă un **romb** cu dimensiunea **n** în consolă.
 
 [image assetsSrc="more-oop-concepts-example(1).png" /]
 
-## Hint
+## Indiciu
 
-Create a `printRow()` method to easily reuse code.
+Creați o metodă `printRow ()` pentru a reutiliza cu ușurință codul.
 
 
 ## Exemplu 1
@@ -296,13 +295,13 @@ Create a `printRow()` method to easily reuse code.
 
 [slide hideTitle]
 
-# Splitting Code Into Classes
+# Împărțirea Codului în Clase
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/RO/02.Java-OOP-Basics-More-OOP-Concepts-10-11-12-Splitting-code-into-classes-1-2-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Just like methods, **classes should not "know" or do too much**.
+La fel ca metodele, clasele **nu ar trebui să „știe” sau să facă prea multe**.
 
-**Example:**
+**Exemplu:**
 
 ```java
 GodMode master = new GodMode();
@@ -313,17 +312,17 @@ master.printToConsole(master.getDate());
 master.printToConsole(numbers);
 ```
 
-The above is an example of a class that does too much.
+Cele de mai sus sunt un exemplu de clasă care face prea mult.
 
-We should break our code up logically into classes which:
+Ar trebui să împărțim codul nostru logic în clase care:
 
-- **Hides implementations**
-- Allows us to **change the output destination**
-- Helps us to **avoid repeating code**
+- **Ascund implementările**
+- Ne permite să **schimbăm destinația de ieșire**
+- Ne ajută să evităm **repetarea codului**
 
-**Example:** Same block of code before and after using classes.
+**Exemplu:** Același bloc de cod înainte și după utilizarea claselor.
 
-**Before:**
+**Inainte de:**
 
 ```java
 List<Integer> input = Arrays.stream(
@@ -337,7 +336,7 @@ String result = input.stream()
 System.out.println(result);
 ```
 
-**After:**
+**După:**
 
 ```java
 ArrayParser parser = new ArrayParser();
@@ -356,34 +355,34 @@ printer.printToConsole(numbers);
 [code-task title="Point in Rectangle" taskId="oop-basics-java-more-oop-concepts-lab-Point-in-Rectangle" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-# Description
-Create a class **Point** and a class **Rectangle**.
+# Descriere
+Creați o clasă **Punct** și o clasă **Dreptunghi**.
 
-The **Point** class should hold **coordinates X** and **Y**.
+Clasa **Punct** trebuie să conțină **coordonatele X** și **Y**.
 
-The **Rectangle** class should hold 2 **Points** – its **bottom left** and **top right** corners.
+Clasa **Dreptunghi** ar trebui să conțină 2 **Puncte** - colțurile sale **din stânga jos** și **din dreapta sus**.
 
-In the **Rectangle** class, you should implement a `contains(Point point)` method that returns **true** or **false**, based on **whether** the **Point** argument passed to the method is **inside** or **outside** of the **Rectangle** object.
+În clasa **Dreptunghi**, ar trebui să implementați o metodă `conține(punct punct)` care returnează **adevărat** sau **fals**, bazat pe **dacă** argumentul **Punct** a trecut la metoda este **în interiorul** sau **în afara** obiectului **Dreptunghi**.
 
-Points **on the side** of a Square are considered **inside**.
+Punctele **de pe partea** unui pătrat sunt considerate **în interior**.
 
-## Input
+## Intrare
 
-- On the first line, read the coordinates of the bottom left and top right corner of the Rectangle in the format:
+- Pe prima linie, citiți coordonatele din colțul din stânga jos și din dreapta sus al dreptunghiului în format:
 
 "\<**bottomLeftX**\>" "\<**bottomLeftY**\>" "\<**topRightX**\>" "\<**topRightY**\>"
      
-- On the second line, read an integer **n** and on the next **n** lines, read the coordinates of points
+- Pe a doua linie, citiți un număr întreg **n** și pe următoarele **n** linii, citiți coordonatele punctelor
 
 ## Output
 
-- For each point, print out the result of the `Contains()` method
+- Pentru fiecare punct, imprimați rezultatul metodei `Contains()`
 
 
-## Examples
+## Exemplu
 
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 0 0 3 3 | true |
 | 5 | true |
@@ -394,7 +393,7 @@ Points **on the side** of a Square are considered **inside**.
 | 1 2 |  |
 
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 2 -3 12 3 | true |
 | 4 | true |
@@ -404,7 +403,7 @@ Points **on the side** of a Square are considered **inside**.
 | 2 4 |  |
 
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 5 8 12 15 | false |
 | 6 | true |
