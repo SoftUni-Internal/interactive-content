@@ -55,7 +55,7 @@ System.out.println(min);
 
 It is possible to set an alternative **return value**, using the `orElse()` method.
 
-```java live no-template
+```java live
 int [] numbers = new int[]{15, 25, 35};
 int min = Arrays.stream(numbers)
             .min()
@@ -65,7 +65,7 @@ System.out.println(min);
 
 The value set in the `orElse()` operation is returned if the array is empty.
 
-```java live no-template
+```java live
 int [] numbers = new int[]{};
 int min = Arrays.stream(numbers)
             .min()
@@ -75,7 +75,7 @@ System.out.println(min);
 
 - `max()` - Finds and returns the **largest** element in a collection
 
-```java live no-template
+```java live
 int [] numbers = new int[]{15, 25, 35};
 int max = Arrays.stream(numbers)
             .max()
@@ -93,7 +93,7 @@ System.out.println(sum);
 
 - `average()` - Finds and returns **the average value** of all elements
 
-```java live no-template
+```java live
 int [] numbers = new int[]{15, 25, 35};
 double average = Arrays.stream(numbers)
             .average()
@@ -112,7 +112,7 @@ We can use one-line operations on collections like **Lists** and **Maps**, inste
 
 - `min()` - Finds and returns the **smallest** element in a collection:
 
-```java live no-template
+```java live
 List<Integer> numbers = new ArrayList<>() {{
     add(15); add(25); add(35);
 }};
@@ -123,7 +123,7 @@ int min = numbers.stream()
 System.out.println(min);
 ```
 
-```java live no-template
+```java live
 List<Integer> numbers = new ArrayList<>() {{
     add(15); add(25); add(35);
 }};
@@ -135,7 +135,7 @@ System.out.println(min);
 
 - `max()` - Finds and returns the **largest** element in a collection
 
-```java live no-template
+```java live
 List<Integer> numbers = new ArrayList<>() {{
     add(15); add(25); add(35);
 }};
@@ -146,7 +146,7 @@ int max = numbers.stream()
 System.out.println(max);
 ```
 
-```java live no-template
+```java live
 List<Integer> numbers = new ArrayList<>() {{
     add(15); add(25); add(35);
 }};
@@ -158,7 +158,7 @@ System.out.println(max);
 
 - `sum()` - Finds and returns **the sum** of all elements in a collection
 
-```java live no-template
+```java live
 List<Integer> numbers = new ArrayList<>() {{
     add(15); add(25); add(35);
 }};
@@ -170,7 +170,7 @@ System.out.println(sum);
 
 - `average()` - Finds and returns **the average value** of all elements
 
-```java live no-template
+```java live
 List<Integer> numbers = new ArrayList<>() {{
     add(15); add(25); add(35);
 }};
@@ -200,7 +200,7 @@ int[] numbers = Arrays.stream(scanner.nextLine()
 
 The code above splits the scanner input by space, then goes through each element with `maptoInt()`, parsing it to Integer.
 
-```java live no-template
+```java live
 String[] words = {"abc", "def", "geh", "yyy"};
 words = Arrays.stream(words)
             .map(w -> w + "yyy")
