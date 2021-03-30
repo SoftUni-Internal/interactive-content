@@ -640,7 +640,7 @@ Horsepower: \{horsepowerOfVehicle\}
 
 Când primiți comanda "Close the Catalogue", **imprimați puterea medie** pentru mașini și camioane în **format**:
 
-"\{typeOfVehicles\} have average horsepower of \{averageHorsepower\}."
+"\{typeOfVehicles\} have an average horsepower of \{averageHorsepower\}."
 
 Puterea medie este **calculată** prin **împărțirea sumei de cai putere pentru toate vehiculele de acel tip la numărul total de vehicule de același tip**.
 
@@ -661,8 +661,8 @@ Formatați răspunsul la **a doua zecimală**.
 | Close the Catalogue | Model: Man |
 | | Color: red |
 | | Horsepower: 200 |
-| | Cars have average horsepower of: 413.33. |
-| | Trucks have average horsepower of: 250.00. |
+| | Cars have an average horsepower of: 413.33. |
+| | Trucks have an average horsepower of: 250.00. |
 
 [/task-description]
 [code-io /]
@@ -693,8 +693,8 @@ Type: Truck
 Model: Man
 Color: red
 Horsepower: 200
-Cars have average horsepower of: 413.33.
-Trucks have average horsepower of: 250.00.
+Cars have an average horsepower of: 413.33.
+Trucks have an average horsepower of: 250.00.
 [/output]
 [/test]
 [test]
@@ -704,8 +704,8 @@ End
 Close the Catalogue
 [/input]
 [output]
-Cars have average horsepower of: 736.00.
-Trucks have average horsepower of: 0.00.
+Cars have an average horsepower of: 736.00.
+Trucks have an average horsepower of: 0.00.
 [/output]
 [/test]
 [test]
@@ -715,8 +715,8 @@ End
 Close the Catalogue
 [/input]
 [output]
-Cars have average horsepower of: 0.00.
-Trucks have average horsepower of: 248.00.
+Cars have an average horsepower of: 0.00.
+Trucks have an average horsepower of: 248.00.
 [/output]
 [/test]
 [test]
@@ -731,8 +731,8 @@ Type: Car
 Model: Lamborghini
 Color: orange
 Horsepower: 570
-Cars have average horsepower of: 570.00.
-Trucks have average horsepower of: 0.00.
+Cars have an average horsepower of: 570.00.
+Trucks have an average horsepower of: 0.00.
 [/output]
 [/test]
 [test]
@@ -747,8 +747,8 @@ Type: Truck
 Model: Man
 Color: red
 Horsepower: 200
-Cars have average horsepower of: 0.00.
-Trucks have average horsepower of: 200.00.
+Cars have an average horsepower of: 0.00.
+Trucks have an average horsepower of: 200.00.
 [/output]
 [/test]
 [test]
@@ -762,8 +762,8 @@ End
 Close the Catalogue
 [/input]
 [output]
-Cars have average horsepower of: 507.67.
-Trucks have average horsepower of: 550.00.
+Cars have an average horsepower of: 507.67.
+Trucks have an average horsepower of: 550.00.
 [/output]
 [/test]
 [test]
@@ -793,8 +793,8 @@ Type: Truck
 Model: Volkswagen
 Color: black
 Horsepower: 423
-Cars have average horsepower of: 342.00.
-Trucks have average horsepower of: 365.67.
+Cars have an average horsepower of: 342.00.
+Trucks have an average horsepower of: 365.67.
 [/output]
 [/test]
 [/tests]
