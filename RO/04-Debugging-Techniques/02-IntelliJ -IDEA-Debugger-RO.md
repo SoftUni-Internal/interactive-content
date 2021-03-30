@@ -20,11 +20,8 @@ Este util, deoarece ne permite:
     - acest lucru ne permite să **controlăm** pas cu pas **fluxul** al **execuției programului**
 - Urmăriți **valorile** stocate în **variabile**
 
-[/slide]
 
-[slide hideTitle]
-
-# Lansarea unui proces de depanare
+## Lansarea unui proces de depanare
 
 Pentru a rula depanatorul în **InteliJ IDEA** trebuie să apăsăm **Ctrl + Alt + F5**.
 
@@ -37,6 +34,14 @@ Putem rula depanatorul pe un program care nu rulează.
 De asemenea, ne putem atașa la un program, care nu este **disponibil direct în** **IntelliJ IDEA**.
 
 [image assetsSrc="debugging-techniques-example(1).png" /]
+
+
+[/slide]
+
+[slide hideTitle]
+# Live Demo: PhoneBook
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-live-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 [/slide]
@@ -90,7 +95,7 @@ Iată comenzile rapide pentru cele mai utilizate acțiuni:
 - **Ieșiți ** - „** Shift + F8**”
 - **Intră în** - „**F7**”
 - **Reluați** - ⏯
-- **Pauză**: [image assetsSrc="debugging-techniques-example(5).png" /]
+- **Pauză** - ⏸
 
 ## Controlul executării
 
