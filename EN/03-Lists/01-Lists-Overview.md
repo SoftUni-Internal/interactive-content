@@ -179,7 +179,7 @@ digimons.add("Burbomon");
 digimons.remove(1); // removes element at index 1
 
 for (String digimon : digimons){
-  System.out.println(name);
+  System.out.println(digimon);
 }
 ```
 Attempting to remove an element from an index that is outside the bounds of the list will result in an **IndexOutOfBoundsException**.
