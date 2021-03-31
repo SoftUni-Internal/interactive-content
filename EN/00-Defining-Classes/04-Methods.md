@@ -233,7 +233,7 @@ public void setBrand(String brand) {
     this.brand = brand;
 }
 ```
-Do the same for all the fields.
+Do the same for all fields.
 
 You should be able to **set** and **get** the field values by using **getter** and **setter** methods.
 
