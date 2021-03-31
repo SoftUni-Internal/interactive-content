@@ -1,4 +1,4 @@
-# Coadă:primul intrat iese primul (FIFO)
+# Coadă:primul Intrat Iese Primul (FIFO)
 
 [slide hideTitle]
 
@@ -20,7 +20,7 @@ Această structură de date este modelată după cozile din viața reală, unde 
 
 [slide hideTitle]
 
-# Coadă: tip de dată abstract
+# Coadă: Tip de Dată Abstract
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-28-Queue-Abstract-Data-Type-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -42,7 +42,7 @@ Această structură de date este modelată după cozile din viața reală, unde 
 
 [slide hideTitle]
 
-# Implementarea cozii cu ArrayDeque
+# Implementarea Cozii cu ArrayDeque
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-29-30-34-ArrayDeque-Java-Implementation-1-2-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -72,7 +72,7 @@ ArrayDeque<Integer> queue = new ArrayDeque<>();
 
 [slide hideTitle]
 
-# Operațiile cozii
+# Operațiile Cozii
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-31-33-Add-Remove-Peak-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -93,7 +93,7 @@ Sunt folosite în scenarii diferite:
 
 - Dacă coada nu are limită de spațiu (coadă cu capacitate nelimitată) - atunci puteți folosi oricare funcție
 
-- dacă coada are restrcție de capacitate, este mai bine să folosiți `offer()` deoarece dacă funcția eșuează, va returna  **false**. Dacă folosiți `add()` cu o coadă cu restricție de capacitate și eșuează, asta va rezulta într-un **IllegalStateException** care trebuie procesat.
+- Dacă coada are restrcție de capacitate, este mai bine să folosiți `offer()` deoarece dacă funcția eșuează, va returna  **false**. Dacă folosiți `add()` cu o coadă cu restricție de capacitate și eșuează, asta va rezulta într-un **IllegalStateException** care trebuie procesat
 
 [image assetsSrc="Java-Advanced-Stack-and-Queues-7.gif" /]
 
@@ -160,43 +160,43 @@ queue.forEach(element -> System.out.print(element + " "));
 
 
 [slide hideTitle]
-# Metode de utilizare
+# Metode de Utilizare
 
 - `size()` - returnează numărul de elemente dintr-o coadă
 
 ```java live
-ArrayDeque<String> queueOfCars = new ArrayDeque<>();
-queueOfCars.add("Of Mice and Men");
-queueOfCars.add("The Great Escape");
-queueOfCars.add("A Guide in Lucid Dreaming");
+ArrayDeque<String> queueOfBooks = new ArrayDeque<>();
+queueOfBooks.add("Of Mice and Men");
+queueOfBooks.add("The Great Escape");
+queueOfBooks.add("A Guide in Lucid Dreaming");
 
-System.out.println("The size of this queue is: " + queueOfCars.size());
+System.out.println("The size of this queue is: " + queueOfBooks.size());
 ```
 
 - `toArray()` - transformă coada într-o mulțime
 
 ```java live
-ArrayDeque<String> queueOfCars = new ArrayDeque<>();
-queueOfCars.add("Rocket");
-queueOfCars.add("Paper");
-queueOfCars.add("Tank");
+ArrayDeque<String> queueOfWords = new ArrayDeque<>();
+queueOfWords.add("Rocket");
+queueOfWords.add("Paper");
+queueOfWords.add("Tank");
 
-Integer[] arr = queueOfCars.toArray();
+Object[] arr = queueOfWords.toArray();
 
- for (String element: arr) {
-        System.out.println(element);
-    }
+for (int j = 0; j < arr.length; j++) {
+    System.out.println(arr[j]); 
+}
 ```
 
 - `contains(element)` - verifică dacă coada conține elementul. Returnează **adevărat** dacă elementul este găsit și **fals** dacă nu este găsit.
 
 ```java live
-ArrayDeque<String> queueOfCars = new ArrayDeque<>();
-queueOfCars.push("Plush Bear");
-queueOfCars.push("Ridiculous Rabbit");
-queueOfCars.push("Boiler");
+ArrayDeque<String> queueOfWords = new ArrayDeque<>();
+queueOfWords.push("Plush Bear");
+queueOfWords.push("Ridiculous Rabbit");
+queueOfWords.push("Boiler");
 
-System.out.println(queueOfCars.contains("BMW 7"));
+System.out.println(queueOfWords.contains("BMW 7"));
 ```
 
 [/slide]

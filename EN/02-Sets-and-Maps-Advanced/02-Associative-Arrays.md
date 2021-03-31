@@ -337,7 +337,7 @@ cars.forEach((key, value) -> System.out.println(key + " - " + value));
 
 - Sorting according to Keys in ascending order
 
-```java live
+```java live no-template
 import java.util.*;
 import java.util.stream.Collectors;
 

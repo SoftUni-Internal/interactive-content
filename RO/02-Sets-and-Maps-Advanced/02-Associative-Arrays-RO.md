@@ -339,7 +339,7 @@ cars.forEach((key, value) -> System.out.println(key + " - " + value));
 
 - Sortarea în funcție de Chei în ordine crescătoare
 
-```java live
+```java live no-template
 import java.util.*;
 import java.util.stream.Collectors;
 
