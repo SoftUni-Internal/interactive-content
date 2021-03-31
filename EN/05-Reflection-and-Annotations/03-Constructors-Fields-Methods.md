@@ -184,7 +184,7 @@ Object returnValue = method.invoke(null, "arg1");
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-21-22-problem-and-solution-getters-and-setters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Getters and Setters" taskId="Java-OOP-Advanced-Reflection-lab-Getters-And-Setters" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
+[code-task title="Getters and Setters" taskId="Java-OOP-Advanced-Reflection-Getters-And-Setters" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
 # Description

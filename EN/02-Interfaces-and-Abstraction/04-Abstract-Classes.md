@@ -121,7 +121,7 @@ We called the method of the abstract class using our object `obj`.
 [slide hideTitle]
 # Problem: Border Control
 
-[code-task title="Border Control" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-lab-Border-Control" executionType="tests-execution" executionStrategy="java-project-tests"] 
+[code-task title="Border Control" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-Border-Control" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
 
 [task-description]

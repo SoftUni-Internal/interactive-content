@@ -250,7 +250,7 @@ class Calculation {
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/EN/interactive-java-oop-advanced-polymorphism-10-problem-and-solution-MathOperation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Math Operation" timeLimit=5000 taskId="Java-OOP-Advanced-Polymorphism-lab-Math-Operation" executionType="tests-execution" executionStrategy="java-project-tests"] 
+[code-task title="Math Operation" timeLimit=5000 taskId="Java-OOP-Advanced-Polymorphism-Math-Operation" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
 
 [task-description]
