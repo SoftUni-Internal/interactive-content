@@ -39,7 +39,7 @@ To call or invoke a method in Java, we type the method's name followed by a pair
 
 In the following example, `printHello()` is used to print out `Hello World!` when it is called:
 
-```java live 
+```java live no-template
 public class MyClass {
     public static void main(String[] args) {
         printHello();
@@ -53,7 +53,7 @@ public class MyClass {
 
 A method can be called as many times we need to:
 
-```java live 
+```java live no-template
 public class MyClass {
     public static void main(String[] args) {
         printHello();
