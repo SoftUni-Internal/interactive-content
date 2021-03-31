@@ -111,6 +111,7 @@ We open them using a **forward slash**, followed by and an **asterisk**:
 let name = "Harry";
 
 console.log(`Hello, ${name}! 🙋`);
+
 /*This comment 
   takes up multiple 
   lines*/
