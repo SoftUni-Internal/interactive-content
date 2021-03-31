@@ -55,7 +55,7 @@ The most common ones are:
 
 ## Comments
 
-**Comments** are special **statements** that will **not** be executed during runtime.
+**Comments** are special **statements** that are **not** executed during runtime.
 
 They are a way for programmers to write **notes** to themselves or other programmers.
 
