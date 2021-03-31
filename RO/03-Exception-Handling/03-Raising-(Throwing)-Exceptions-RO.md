@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# How to throw an Exception
+# How to "throw" an Exception
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/RO/Java-Advanced-Exceptions-and-Error-Handling-18-throwing-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -20,7 +20,7 @@ Excepțiile nesoluționate afișează un mesaj de eroare.
 
 [slide hideTitle]
 
-# Utilizarea cuvântului cheie "throw"
+# Utilizarea Cuvântului Cheie "throw"
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/RO/Java-Advanced-Exceptions-and-Error-Handling-20-using-throw-keyword-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

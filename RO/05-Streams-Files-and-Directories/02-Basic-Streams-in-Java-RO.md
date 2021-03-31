@@ -773,7 +773,7 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 
 [slide hideTitle]
 
-# Fluxurile de bufere
+# Fluxurile de Bufere
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-23-Buffered-Streams-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -811,7 +811,7 @@ Acest lucru va crește semnificativ **performanța** aplicațiilor noastre.
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Write Every Third Line
+# Problemă cu Soluție: Write Every Third Line
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-24-Write-Every-3rd-Line-Problem-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

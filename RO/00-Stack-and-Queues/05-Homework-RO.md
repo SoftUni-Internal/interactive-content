@@ -85,7 +85,7 @@ Doar introduceți datele de intrate în stivă și apoi le scoateți pe rând.
 
 
 [slide hideTitle]
-# Problem: Basic Stack Operations
+# Problemă: Basic Stack Operations
 [code-task title="Basic Stack Operations" taskId="java-advanced-stack-and-queue-Basic-Stack-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -208,7 +208,7 @@ true
 
 
 [slide hideTitle]
-# Problem: Maximum Element
+# Problemă: Maximum Element
 [code-task title="Maximum Element" taskId="java-advanced-stack-and-queue-Maximum-Element" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -449,7 +449,7 @@ Fiecare comandă e de unul dintre tipurile următoare:
 
 
 [slide hideTitle]
-# Problem: Basic Queue Operations
+# Problemă: Basic Queue Operations
 [code-task title="Basic Queue Operations" taskId="java-advanced-stack-and-queue-Basic-Queue-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -559,7 +559,7 @@ true
 
 
 [slide hideTitle]
-# Problem: Robotics
+# Problemă: Robotics
 [code-task title="Robotics" taskId="java-advanced-stack-and-queue-Robotics" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1289,7 +1289,7 @@ SARS - sock \[22:09:02\]
 
 
 [slide hideTitle]
-# Problem: Balanced Parentheses
+# Problemă: Balanced Parentheses
 [code-task title="Balanced Parentheses" taskId="java-advanced-stack-and-queue-Balanced-Parentheses" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1416,7 +1416,7 @@ YES
 
 
 [slide hideTitle]
-# Problem: Recursive Fibonacci
+# Problemă: Recursive Fibonacci
 [code-task title="Recursive Fibonacci" taskId="java-advanced-stack-and-queue-Recursive-Fibonacci" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1558,7 +1558,7 @@ Dacă doriți să vă dați seama cum puteți trece peste toate aceste calcule c
 
 
 [slide hideTitle]
-# Problem: Simple Text Editor
+# Problemă: Simple Text Editor
 [code-task title="Simple Text Editor" taskId="java-advanced-stack-and-queue-Simple-Text-Editor" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1834,7 +1834,7 @@ a
 
 
 [slide hideTitle]
-# Problem: Infix to Postfix
+# Problemă: Infix to Postfix
 [code-task title="Infix to Postfix" taskId="java-advanced-stack-and-queue-Infix-to-Postfix" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1956,7 +1956,7 @@ Implementați un **algoritm care convertește** expresia matematică **din nota�
 
 
 [slide hideTitle]
-# Problem: Poisonous Plants
+# Problemă: Poisonous Plants
 [code-task title="Poisonous Plants" taskId="java-advanced-stack-and-queue-Poisonous-Plants" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

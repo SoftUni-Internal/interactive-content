@@ -1,7 +1,7 @@
-# Introducerea lecției
+# Introducerea Lecției
 
 [slide hideTitle]
-# Conținutul lecției
+# Conținutul Lecției
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-1-2-Introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

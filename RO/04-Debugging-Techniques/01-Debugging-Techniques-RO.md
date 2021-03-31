@@ -1,8 +1,8 @@
-# Introducere în depanare
+# Introducere în Depanare
 
 [slide hideTitle]
 
-# Ce este Depanarea?
+# Ce Este Depanarea?
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-3-4-what-is-debugging-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -24,7 +24,7 @@ Din fericire, există **instrumente de depanare** care ne ajută să localizăm 
 
 [slide hideTitle]
 
-# Depanare vs. testare
+# Depanare vs. Testare
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-5-debugging-vs-testing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -48,7 +48,7 @@ Depanăm aplicația după ce a eșuat.
 
 [slide hideTitle]
 
-# Importanța depanării
+# Importanța Depanării
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-6-Importance-of-debugging-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -72,7 +72,7 @@ Un exemplu este [Cluster Spacecraft Failure](https://en.wikipedia.org/wiki/Clust
 
 [slide hideTitle]
 
-# Filosofia depanării
+# Filosofia Ddepanării
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-7-debugging-philosophy-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

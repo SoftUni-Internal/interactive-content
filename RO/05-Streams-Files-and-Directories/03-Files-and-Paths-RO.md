@@ -135,8 +135,8 @@ Ar trebui să aveți deja toate resursele necesare descărcate de la cerința pr
 Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**.
 
 
-## Exemple
-| **Input** | **Output** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | C | A |
 | A | B |

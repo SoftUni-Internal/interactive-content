@@ -1,7 +1,7 @@
 # Teme Pentru Acasă
 
 [slide hideTitle]
-# Problema: Unique Usernames
+# Problemă: Unique Usernames
 [code-task title="Unique Usernames" taskId="java-advanced-sets-and-maps-advanced-Unique-Usernames" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -399,7 +399,7 @@ c&&c&che
 
 
 [slide hideTitle]
-# Problema: Sets of Elements
+# Problemă: Sets of Elements
 [code-task title="Sets of Elements" taskId="java-advanced-sets-and-maps-advanced-Sets-of-Elements" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -626,7 +626,7 @@ Setul care conține toate elementele care se repetă \-\> `{3, 5}`
 
 
 [slide hideTitle]
-# Problema: Periodic Table
+# Problemă: Periodic Table
 [code-task title="Periodic Table" taskId="java-advanced-sets-and-maps-advanced-Periodic-Table" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -754,7 +754,7 @@ As Ba Co Cs Kr Ni Sn W Y Zn
 
 
 [slide hideTitle]
-# Problema: Count Symbols
+# Problemă: Count Symbols
 [code-task title="Count Symbols" taskId="java-advanced-sets-and-maps-advanced-Count-Symbols" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -965,7 +965,7 @@ y: 3 time/s
 
 
 [slide hideTitle]
-# Problema: Phonebook
+# Problemă: Phonebook
 [code-task title="Phonebook" taskId="java-advanced-sets-and-maps-advanced-Phonebook" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1148,7 +1148,7 @@ Oliver -\> 004455667788
 
 
 [slide hideTitle]
-# Problema: A Miner Task
+# Problemă: A Miner Task
 [code-task title="A Miner Task" taskId="java-advanced-sets-and-maps-advanced-A-Miner-Task" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1411,7 +1411,7 @@ Cooper -\> 2000000000
 
 
 [slide hideTitle]
-# Problema: Fix Emails
+# Problemă: Fix Emails
 [code-task title="Fix Emails" taskId="java-advanced-sets-and-maps-advanced-Fix-Emails" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1568,7 +1568,7 @@ Cindy -\> cindy@gmail.de
 
 
 [slide hideTitle]
-# Problema: Hands Of Cards
+# Problemă: Hands Of Cards
 [code-task title="Hands Of Cards" taskId="java-advanced-sets-and-maps-advanced-Hands-Of-Cards" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1681,7 +1681,7 @@ JOKER
 
 
 [slide hideTitle]
-# Problema: User Logs
+# Problemă: User Logs
 [code-task title="User Logs" taskId="java-advanced-sets-and-maps-advanced-User-Logs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -2152,7 +2152,7 @@ zzzzzzzzzzz:
 
 
 [slide hideTitle]
-# Problema: Population Counter
+# Problemă: Population Counter
 [code-task title="Population Counter" taskId="java-advanced-sets-and-maps-advanced-Population-Counter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -2875,7 +2875,7 @@ United States (total population: 466762961)
 
 
 [slide hideTitle]
-# Problema: Logs Aggregator
+# Problemă: Logs Aggregator
 [code-task title="Logs Aggregator" taskId="java-advanced-sets-and-maps-advanced-Logs-Aggregator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -3356,7 +3356,7 @@ test: 698 \[10.10.10.1, 10.10.10.10, 10.10.10.103, 10.140.10.10, 105.10.10.10\]
 
 
 [slide hideTitle]
-# Problema: Legendary Farming
+# Problemă: Legendary Farming
 [code-task title="Legendary Farming" taskId="java-advanced-sets-and-maps-advanced-Legendary-Farming" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -3642,7 +3642,7 @@ linen: 1420
 
 
 [slide hideTitle]
-# Problema: Dragon Army
+# Problemă: Dragon Army
 [code-task title="Dragon Army" taskId="java-advanced-sets-and-maps-advanced-Dragon-Army" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

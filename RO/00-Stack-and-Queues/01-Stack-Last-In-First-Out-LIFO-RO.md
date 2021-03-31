@@ -113,7 +113,7 @@ System.out.println(stackOfCars.contains("BMW M3"));
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Browser History
+# Problemă cu soluție: Browser History
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-15-solution-Browser-History-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -313,7 +313,7 @@ Go
 
 
 [slide hideTitle]
-# Problem with Solution: Simple Calculator 
+# Problemă cu soluție: Simple Calculator 
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-18-Solution-Simple-Calculator-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -417,7 +417,7 @@ Rezolvați problema **using a Stack**.
 
 
 [slide hideTitle]
-# Problem with Solution: Decimal to Binary Converter
+# Problemă cu soluție: Decimal to Binary Converter
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-21-SOLUTION-Decimal-To-Binary-Converter-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -531,7 +531,7 @@ while (decimal != 0) {
 
 
 [slide hideTitle]
-# Problem with Solution: Matching Brackets
+# Problemă cu soluție: Matching Brackets
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-23-problem-matching-brackets-solution-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

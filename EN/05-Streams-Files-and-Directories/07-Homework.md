@@ -120,8 +120,8 @@ Submit only the **output** of your program, **not the code**.
 
 
 [slide hideTitle]
-# Problem: CAPITAL LETTERS
-[code-task title="CAPITAL LETTERS" taskId="java-advanced-streams-files-exercise-capital-letters" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
+# Problem: Capital Letters
+[code-task title="Capital Letters" taskId="java-advanced-streams-files-exercise-capital-letters" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
 [/code-editor]
 [task-description]

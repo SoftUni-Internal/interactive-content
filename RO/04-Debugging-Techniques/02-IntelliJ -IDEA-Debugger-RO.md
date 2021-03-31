@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Cum se depanează un proces
+# Cum se Depanează un Proces
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-10-how-to-debug-a-process-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -21,7 +21,7 @@ Este util, deoarece ne permite:
 - Urmăriți **valorile** stocate în **variabile**
 
 
-## Lansarea unui proces de depanare
+## Lansarea Unui Proces de Depanare
 
 Pentru a rula depanatorul în **InteliJ IDEA** trebuie să apăsăm **Ctrl + Alt + F5**.
 
@@ -48,7 +48,7 @@ De asemenea, ne putem atașa la un program, care nu este **disponibil direct în
 
 
 [slide hideTitle]
-# Depanarea unui proiect
+# Depanarea Unui Proiect
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-11-debugging-a-project-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -81,7 +81,7 @@ Există diferite categorii în fereastră pe care le putem observa:
 
 - Watches
 
-## Bara de instrumente de depanare
+## Bara de Instrumente de Depanare
 
 **Modul de depanare** al **InteliJ IDEA** ne permite să controlăm pas cu pas execuția programului.
 
@@ -97,7 +97,7 @@ Iată comenzile rapide pentru cele mai utilizate acțiuni:
 - **Reluați** - ⏯
 - **Pauză** - ⏸
 
-## Controlul executării
+## Controlul Executării
 
 În mod implicit, o aplicație va rula neîntreruptă când este în **modul de depanare**.
 
@@ -111,7 +111,7 @@ Când examinăm starea programului, controlăm **fluxul de execuție** al progra
 
 Asta înseamnă că folosim **bara de instrumente de depanare**.
 
-## Opțiuni și setări
+## Opțiuni și Setări
 
 Pentru a utiliza depanatorul, trebuie să setăm câteva lucruri.
 
@@ -133,7 +133,7 @@ Din opțiunea **Structura proiectului** din meniul **Fișier** sau printr-o coma
 
 [slide hideTitle]
 
-# Puncte de întrerupere
+# Puncte de Întrerupere
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-16-17-breakpoints-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -153,7 +153,7 @@ Pentru a seta aceste opțiuni, trebuie să accesăm **Fereastra punctului de în
 
 Putem face acest lucru făcând clic dreapta pe **punctul de întrerupere** sau printr-o **comandă rapidă pe linia** unde se află punctul de întrerupere.
 
-Comanda rapidă este: „**Ctrl + Shift + F8**”.
+Comanda rapidă este: "**Ctrl + Shift + F8**".
 
 În fereastra punctului de întrerupere, nu numai că putem **elimina** sau **dezactiva** punctele de întrerupere, dar le putem **muta**.
 

@@ -1,8 +1,8 @@
-# Inspecția datelor
+# Inspecția Datelor
 
 [slide hideTitle]
 
-# Inspecția datelor IntelliJ
+# Inspecția Datelor IntelliJ
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-22-intellij-data-inspection-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -18,7 +18,7 @@ Pentru a avea un timp de rezoluție rapid, trebuie să avem o inspecție mai bun
 
 [slide hideTitle]
 
-# Inspecția datelor
+# Inspecția Datelor
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-20-21-data-inspections-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -46,7 +46,7 @@ Unii dintre ei sunt:
 
 [slide hideTitle]
 
-# Variabile și ferestre Watches
+# Variabile și Ferestre Watches
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-23-variables-and-watches-tabs-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -54,13 +54,13 @@ Tab-urile Variabile și Watches ne oferă libertatea de a inspecta stările apli
 
 Dacă dorim să urmărim ceva care nu este afișat în tab-ul **Variabil**, putem configura un **Watch**.
 
-Există mai multe tipuri diferite de ferestre Watches „**predefinite**”.
+Există mai multe tipuri diferite de ferestre Watches "**predefinite**".
 
 Putem **adăuga**, **edita** sau **elimina** Watches.
 
 De asemenea, putem crea **Watches** personalizate, care pot conține doar variabile pe care alegem să le adăugăm:
 
-- Faceți clic dreapta pe variabilă și selectați „**Adăugați**”
+- Faceți clic dreapta pe variabilă și selectați "**Adăugați**"
 
 - Scrieți numele variabilei în fereastra Watches
 
@@ -68,7 +68,7 @@ De asemenea, putem crea **Watches** personalizate, care pot conține doar variab
 
 [slide hideTitle]
 
-# Evaluați fereastra de expresie
+# Evaluați Fereastra de Expresie
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-24-evaluate-expression-window-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -87,7 +87,7 @@ Există o comandă rapidă pentru a accesa **fereastra de evaluare** - "**Alt + 
 
 [slide hideTitle]
 
-# Găsirea unui defect
+# Găsirea Unui Defect
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-25-26-finding-a-defect-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -106,7 +106,7 @@ Dacă totul funcționează conform așteptărilor, putem continua căutarea alto
 [/slide]
 
 [slide hideTitle]
-# Sfaturi pentru găsirea defectelor
+# Sfaturi Pentru Găsirea Defectelor
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-27-28-tips-for-finding-defects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -125,7 +125,7 @@ Iată câteva sfaturi pentru găsirea erorilor:
 
 [slide hideTitle]
 
-# Remedierea unui defect
+# Remedierea Unui Defect
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-29-fixing-a-defect-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -144,7 +144,7 @@ Dacă testul rulează fără probleme, putem continua cu remedierea altor bug-ur
 [/slide]
 
 [slide hideTitle]
-# Considerații psihologice
+# Considerații Psihologice
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-30-psychological-considerations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

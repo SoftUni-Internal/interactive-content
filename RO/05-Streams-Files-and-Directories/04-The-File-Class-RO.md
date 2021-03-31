@@ -87,7 +87,7 @@ output.txt: [14328]
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: fișiere imbricate
+# Problemă cu Soluție: Nested Folders
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-38-Nested-Folders-Problem-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -102,10 +102,10 @@ Creați un program care care listează numele tuturor directoarelor din acesta (
 
 Pe ultima linie, imprimați numărul tuturor fișierelor, inclusiv fișierul rădăcină.
 
-## Input:
+## Intrare
 [image assetsSrc="streams-files-directories-example-input.png" /]
 
-## Output:
+## Ieșire:
 Streams-and-Files 
 Files-and-Streams 
 Streams-and-Files 

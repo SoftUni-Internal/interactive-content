@@ -209,7 +209,7 @@ System.out.println(queueOfWords.contains("BMW 7"));
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Hot Potato
+# Problemă cu soluție: Hot Potato
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-36-problem-hot-potato-solution-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -393,7 +393,7 @@ Last is 2
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Math Potato
+# Problemă cu soluție: Math Potato
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-39-math-potato-problem-and-solution-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
