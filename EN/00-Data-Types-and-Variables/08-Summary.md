@@ -46,7 +46,7 @@
 
   - Booleans can hold only one of two possible values - **true** or **false**
 
-## In the next lesson, you will learn:
+## In the next lesson you will learn:
 - Arrays
 - Reading Arrays from the console
     - using a `For-Loop` in the process and the `String.split()` method
