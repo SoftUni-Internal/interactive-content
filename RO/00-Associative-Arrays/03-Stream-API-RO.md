@@ -95,42 +95,6 @@ double average = Arrays.stream(numbers)
             .getAsDouble();
 System.out.println(average);
 ```
-
-- `toArray()` - convertește colecția într-o matrice
-```java
-int[] numbers = Arrays.stream(scanner.nextLine()
-            .split(" "))
-            .mapToInt(e -> Integer.parseInt(e))
-            .toArray();
-```
-
-- `map()` - manipulează elementele dintr-o colecție
-```java
-int[] numbers = Arrays.stream(scanner.nextLine()
-            .split(" "))
-            .mapToInt(e -> Integer.parseInt(e))
-            .toArray();
-```
-
-```java live
-String[] words = {"abc", "def", "geh", "yyy"};
-words = Arrays.stream(words)
-            .map(w -> w + "yyy")
-            .toArray(String[]::new);
-for (String word : words) {
-    System.out.println(word);
-}
-```
-
-`filter()` - selectează elementele după o anumită condiție dată
-```java
-int[] numbers = Arrays.stream(scanner.nextLine()
-            .split(" "))
-            .mapToInt(e -> Integer.parseInt(e))
-            .filter(n -> n > 0)
-            .toArray();
-```
-
 [/slide]
 
 
