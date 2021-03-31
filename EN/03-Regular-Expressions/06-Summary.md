@@ -11,7 +11,7 @@
 - How to define special characters and operators, and how to build more complex patterns
 - How to utilize character classes, groups, quantifiers, and more
 
-```java live
+```java live no-template
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
