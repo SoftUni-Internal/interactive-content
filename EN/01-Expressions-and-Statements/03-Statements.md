@@ -108,7 +108,9 @@ This can be useful when a comment is **too long** for a single line and would re
 We open them using a **forward slash**, followed by and an **asterisk**:
 
 ```js live
-console.log("Hello World! 🙋");
+let name = "Harry";
+
+console.log(`Hello, ${name}! 🙋`);
 /*This comment 
   takes up multiple 
   lines*/
