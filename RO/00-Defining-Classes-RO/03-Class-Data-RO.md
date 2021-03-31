@@ -45,7 +45,7 @@ Creați o **nouă clasă** și asigurați-vă de **denumirea corectă**
 
 Acum ar trebui să vă puteți folosi clasa:
 
-```java live
+```java
 import java.util.*;
 public class Main {
     public static void main (String[] args) {
@@ -62,7 +62,6 @@ public class Main {
         ));
     }
 }
-// Define your Car class here
 ```
 
 ## Soluție
