@@ -9,7 +9,7 @@
 - Cum să definiți caracterele speciale și operatorii și cum să construiți un șablon complex
 - Cum să utilizați caracterele de clase, grupuri, cuantificatori și multe altele
 
-```java live
+```java live no-template
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
