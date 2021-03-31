@@ -16,15 +16,15 @@ Când metoda este apelată, trecem paramterul  **firstName**, care este folosit 
 
 ```java live no-template
 public class MyClass {
-    static void printName(String firstName) {
-        System.out.println(firstName + " Refsnes");
-    }
+  static void printName(String firstName) {
+    System.out.println(firstName + " Refsnes");
+  }
 
-    public static void main(String[] args) {
-        printName("Liam");
-        printName("Jenny");
-        printName("Anja");
-    }
+  public static void main(String[] args) {
+    printName("Liam");
+    printName("Jenny");
+    printName("Anja");
+  }
 }
 ```
 
