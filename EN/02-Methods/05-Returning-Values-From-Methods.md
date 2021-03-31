@@ -8,7 +8,7 @@
 The `return` keyword returns a value and ends the method execution.
 
 
-```java live
+```java live no-template
 public class MyClass {
     static int myMethod(int x) {
         return 5 + x;
