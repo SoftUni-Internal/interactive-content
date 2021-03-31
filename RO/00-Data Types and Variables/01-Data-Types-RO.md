@@ -160,7 +160,7 @@ Convenția generală pentru domeniul de aplicare al unei variabile este că, est
 Un bloc **începe** cu o acoladă stângă `{` și **se termină** cu o acoladă dreaptă `}`.
 
 ## Exemplu
-```java
+```java live no-template
 public static void main(String[] args) {
   String outer = "I'm inside the Main()";
 
