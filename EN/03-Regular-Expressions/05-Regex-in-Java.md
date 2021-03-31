@@ -8,25 +8,19 @@
 
 The `java.util.regex.Pattern` and the `java.util.regex.Matcher` classes are used for advanced regular expressions.
 
-```java live no-template
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+```java live
 
-public class Main {
-    public static void main(String[] args) {
+Pattern pattern = Pattern.compile("[a-z]+");
 
-        Pattern pattern = Pattern.compile("[a-z]+");
+String text = "the quick brown fox jumps over the lazy dog";
 
-        String text = "the quick brown fox jumps over the lazy dog";
+Matcher matcher = pattern.matcher(text);
 
-        Matcher matcher = pattern.matcher(text);
-
-        // check all occurrences
-        while (matcher.find()) {
-            System.out.println(matcher.group());
-        }
-    }
+// check all occurrences
+while (matcher.find()) {
+    System.out.println(matcher.group());
 }
+
 ```
 
 The previous example works as follows: 
