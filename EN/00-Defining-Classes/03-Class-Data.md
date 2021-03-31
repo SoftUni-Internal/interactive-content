@@ -45,7 +45,7 @@ Create a **new class**, each class should be named accordingly.
 
 You should now be able to use your class:
 
-```java live
+```java live no-template
 import java.util.*;
 public class Main {
     public static void main (String[] args) {
