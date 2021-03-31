@@ -52,4 +52,90 @@ The most common ones are:
   ```java
   sum = a + b;
   ```
+
+## Comments
+
+**Comments** are special **statements** that will **not** be executed during runtime.
+
+They are a way for programmers to write **notes** to themselves or other programmers.
+
+We can use comments to give **better clarity** about what we are trying to **achieve** with our code.
+
+There are **multiple ways** do declare them.
+
+## Single-line Comments
+
+**Single-line comments** are by far the simplest.
+
+To declare one, we use **two forward slashes** `//`, followed by the comment:
+
+```java
+// This is a single line comment 💬
+```
+
+We can use them to **explain** our code:
+
+```java live
+System.out.println("Java is awesome! 😎"); // This line prints a string to the console
+```
+
+Or to **prevent** a line of code from **running**:
+
+```java live
+System.out.println("The weather outside is sunny. 🌞"); 
+// System.out.println("It is raining outside. 🌧");
+```
+
+Anything on a commented line will be **ignored by the compiler**.
+
+## Multi-line Comments
+
+As the name suggests, **multi-line comments** can take up **multiple** lines.
+
+This can be useful when a comment is **too long** for a single line and would require horisontal scrolling.
+
+We open them using a **forward slash**, followed by and an **asterisk**:
+
+```java live no-template
+class Main
+{
+    public static void main(String args[])
+    { 
+        System.out.println("Hello World! 🙋");
+        /*This comment 
+          takes up multiple 
+          lines*/
+    }
+}
+```
+
+And close them using a **an asterisk and a forward slash**.
+
+We can also write single-line comments using this syntax:
+
+```java
+/*This is a single-line comment 👨🏼‍💻*/
+```
+
+## Documentation Comments
+
+**Documentation comments** are used when writing code for a software package.
+
+They can generate a **documentation page** for reference.
+
+Any great project must have a great documentation as well.
+
+```java
+/**This type of comment is used in documentations
+*
+*tags are used to specify parameters
+*@author James
+*this author tag specifies a name 
+*@version 1.0
+*we can specify a version number
+*there are many other tags*/
+```
+
+You can learn more about them [here](https://www.oracle.com/java/technologies/javase/codeconventions-comments.html).
+
 [/slide]
