@@ -1,6 +1,6 @@
 [slide hideTitle]
 
-# Having Clause
+# The Having Clause
 
 We can use **HAVING** clause to summarize group records, whereas **WHERE** applies to individual records.
 
