@@ -476,23 +476,29 @@ It is also possible to sort collections by multiple criteria.
 Consider the following example:
 
 ```java live no-template
-Map<String, Integer> products = new HashMap<>();
-products.put("bananas", 6);
-products.put("peaches", 4);
-products.put("apples", 4);
-products.put("strawberries", 15);
-products.put("watermelon", 1);
-products.put("pineapple", 1);
-products.entrySet()
-        .stream()
-        .sorted((e1, e2) -> {
-            int result = e2.getValue().compareTo(e1.getValue());
-            if (result == 0) {
-                result = e1.getKey().compareTo(e2.getKey());
-            }
-            return result;
-        })
-        .forEach(e -> System.out.println(e.getKey() + " " + e.getValue()));
+import java.util.*;
+import java.util.stream.Collectors;
+public class Main {
+    public static void main(String[] args) {
+        Map<String, Integer> products = new HashMap<>();
+        products.put("bananas", 6);
+        products.put("peaches", 4);
+        products.put("apples", 4);
+        products.put("strawberries", 15);
+        products.put("watermelon", 1);
+        products.put("pineapple", 1);
+        products.entrySet()
+                .stream()
+                .sorted((e1, e2) -> {
+                    int result = e2.getValue().compareTo(e1.getValue());
+                    if (result == 0) {
+                        result = e1.getKey().compareTo(e2.getKey());
+                    }
+                    return result;
+                })
+                .forEach(e -> System.out.println(e.getKey() + " " + e.getValue()));
+    }
+}
 ```
 
 [/slide]
