@@ -23,15 +23,15 @@ Scopul interfeței este să **specifice existența unor metode**, cu un comporta
 - `LinkedHashSet<E>`
 
 **Principalele caracteristici ale seturilor sunt:**
-- Nu sunt permise elemente duplicate.
-- Elementele nu sunt stocate în ordine.
-- Oferă performanțe foarte rapide.
-- Setul poate avea **cel mult o singură valoare nulă**.
-- Spre deosebire de Listă și matrici, Setul **NU** acceptă indexuri sau poziții ale elementelor sale.
+- Nu sunt permise elemente duplicate
+- Elementele nu sunt stocate în ordine
+- Oferă performanțe foarte rapide
+- Setul poate avea **cel mult o singură valoare nulă**
+- Spre deosebire de Listă și matrici, Setul **NU** acceptă indexuri sau poziții ale elementelor sale
 
 **Pe baza caracteristicilor seturilor, este mai bine să le utilizați atunci când:**
-- Doriți să stocați elemente distinct fără duplicare sau elemente unice.
-- Vrei performanță rapidă și nu îți pasă de ordinea elementelor.
+- Doriți să stocați elemente distinct fără duplicare sau elemente unice
+- Vrei performanță rapidă și nu îți pasă de ordinea elementelor
 
 **De exemplu**, puteți utiliza un set:
 - pentru a stoca **numere întregi unice**
@@ -254,7 +254,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -275,7 +275,7 @@ Imprimați rezultatul cu toate numerele de mașină care se află în parcare.
 
 Dacă parcarea este goală, tipăriți: `Parking Lot is Empty`.
 
-# Exemple
+# Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | IN, CA2844AA | CA9999TT |
@@ -454,7 +454,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -479,7 +479,7 @@ Toate **numerele** VIP încep cu **cifră**.
 
 
 
-## Exemple
+## Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | 7IK9Yo0h | 2 |
@@ -749,7 +749,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -765,7 +765,7 @@ Jucătorul cu numărul mai mare primește ambele numere și îl adaugă în part
 
 Jocul se termină după 50 de runde sau dacă vreun jucător își pierde toate numerele.
 
-## Exemple
+## Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | 26 58 16 92 44 65 65 77 57 23 71 57 7 52 85 44 32 70 38 23 | Second player wins! |

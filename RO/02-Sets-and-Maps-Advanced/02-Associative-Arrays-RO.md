@@ -260,7 +260,7 @@ System.out.println(airplanes.isEmpty());
 
 
 [slide hideTitle]
-# Iterare prin Maps
+# Iterare Prin Maps
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/04-Sets-and-Maps-Advanced/RO/interactive-java-advanced-sets-and-maps-21-Looping-Through-Maps-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -437,7 +437,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -452,7 +452,7 @@ Imprimați numerele **în ordinea apariției**.
 
 Toate numerele trebuie să fie formatate la **o cifră după punctul zecimal**.
 
-## Exemple
+## Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | \-2.5 4 3 \-2.5 \-5.5 4 3 3 \-2.5 3 | \-2.5 \-\> 3 |
@@ -569,7 +569,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -579,11 +579,11 @@ public class Main {
 Scrieți un program care:
 - Citește de pe consolă **numărul de studenți** pentru o pistă
 - Citește pe **pereche de rânduri**:
-       - Prima linie este **numele studentului**
-       - A doua linie este **scorul său** pentru un număr diferit de cursuri
+       - prima linie este **numele studentului**
+       - a doua linie este **scorul său** pentru un număr diferit de cursuri
 - Imprimarea pe consolă `{name} graduated with {averageScore}`
 
-## Exemple
+## Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | 3 | George graduated with 4.375 |

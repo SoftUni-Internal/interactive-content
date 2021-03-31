@@ -1,4 +1,4 @@
-# Temă
+# Teme Pentru Acasă
 
 [slide hideTitle]
 # Problema: Unique Usernames
@@ -9,7 +9,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -20,8 +20,8 @@ Scrieți un program simplu care citește din consolă o secvență de nume de ut
 
 Printați colecția în consolă, în ordinea inserării.
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 6 | Hello |
 | Hello | World |
@@ -31,7 +31,7 @@ Printați colecția în consolă, în ordinea inserării.
 | Hello |  |
 | Greetings |  |
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 10 | Peter |
 | Peter | Maria |
@@ -407,7 +407,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -426,8 +426,8 @@ Setul de dimensiune `m = 3:{3, 4, 5}`
 
 Setul care conține toate elementele care se repetă \-\> `{3, 5}`
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 4 3 | 3 5 |
 | 1 |  |
@@ -438,7 +438,7 @@ Setul care conține toate elementele care se repetă \-\> `{3, 5}`
 | 4 |  |
 | 5 |  |
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 2 2 | 1 |
 | 1 |  |
@@ -634,7 +634,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -645,8 +645,8 @@ Se dau **n** simboluri de **compuși chimici**.
 
 Trebuie să **luați în vedere toate elementele chimice** utilizate în compuși și, la final, să printați toate cele care sunt **unice, în ordine crescătoare**.
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 4 | Ce Ee Mo O |
 | Ce O |  |
@@ -654,7 +654,7 @@ Trebuie să **luați în vedere toate elementele chimice** utilizate în compuș
 | Ee |  |
 | Mo |  |
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 3 | Ch Ge Mo Nb Ne O Tc |
 | Ge Ch O Ne |  |
@@ -762,7 +762,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -773,8 +773,8 @@ Scrieți un program care citește un **text** din consolă și **numără apari�
 
 Printați rezultatul în **ordine alfabetică** (ordine lexicografică), utilizând sintaxa: `{simbol}: {număr} time/s`.
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | SoftUni rocks |  : 1 time/s |
 |  | S: 1 time/s |
@@ -789,7 +789,7 @@ Printați rezultatul în **ordine alfabetică** (ordine lexicografică), utiliz�
 |  | s: 1 time/s |
 |  | t: 1 time/s |
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Did you know Math.Round rounds to the nearest even integer? |  : 9 time/s |
 |  | .: 1 time/s |
@@ -973,7 +973,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -992,8 +992,8 @@ După ce ați completat cartea de telefon, la primirea **comenzii** "**search**"
 
 Programul trebuie să se termine odată cu primirea **comenzii** "**stop**".
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | John-00359888080808 | Contact Maria does not exist. |
 | search | John \-\> 00359888080808 |
@@ -1001,7 +1001,7 @@ Programul trebuie să se termine odată cu primirea **comenzii** "**stop**".
 | John |  |
 | stop |  |
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | John-00359888001122 | Samuel \-\> 0047123123123 |
 | Peter-0040333111000 | Contact samuel does not exist. |
@@ -1156,7 +1156,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1175,8 +1175,8 @@ Cerința voastră este să **colectați** resursele și să le printați fiecare
 
 Cantitățile date sunt numere din **intervalul** \[1 ... 2 000 000 000\]
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Gold | Gold \-\> 155 |
 | 155 | Silver \-\> 10 |
@@ -1419,7 +1419,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1434,10 +1434,10 @@ Pe a doua linie, se dă **email-ul** persoanei respective.
 
 Cerința voastră este să **colectați** numele și emailurile persoanelor și **să ștergeți** emailurile ale căror domenii se termină cu "us", "uk" sau "com" (fără a se ține cont de litere mari sau mici).
 
-Printați după următorul format: `{nume} –> {email}`
+Printați după următorul format: `{nume} -> {email}`
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | John | John \-\> johnDoe@softuni.org |
 | johnDoe@softuni.org | Peter Smith \-\> smith.peter@softuni.org |
@@ -1447,7 +1447,7 @@ Printați după următorul format: `{nume} –> {email}`
 | baker@gmail.com |  |
 | stop |  |
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Peter Adamas | Duke Jenkins \-\> jenkins.duke@softuni.org |
 | peter_adams@gmail.com |  |
@@ -1576,7 +1576,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1609,8 +1609,8 @@ Tipurile sunt mapate multiplicatorilor în felul următor (`S -> 4`, `H-> 3`, `D
 
 `{numePersoană}: {valoare}`
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Peter: 2C, 4H, 9H, AS, QS | Peter: 167 |
 | Jenny: 3H, 10S, JC, KD, 5S, 10S | Jenny: 175 |
@@ -1689,7 +1689,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1727,7 +1727,7 @@ Verificați **exemplele** de mai jos.
 
 Acestea vor clarifica și mai mult ceea ce vi se cere.
 
-## Date de intrare
+## Intrare
 
 Datele de intrare provin din consolă ca **număr variat** de linii. 
 
@@ -1735,7 +1735,7 @@ Trebuie să parsați fiecare comandă până la întâlnirea comenzii `end`.
 
 Datele de intrare vor fi după formatul de mai sus, nu trebuie să le mai validați în mod explicit.
 
-## Date de ieșire
+## Ieșire
 
 Pentru fiecare utilizator găsit, trebuie să afișați fiecare logare după următorul format:
 
@@ -1753,8 +1753,8 @@ Adresele IP trebuie să fie separate prin virgulă, iar fiecare linie a adreselo
 - Mesajele vor respecta următorul format: **Acesta&este&un&mesaj**
 - Numele de utilizator este un string cu lungimea aflată în intervalul \[3 ... 50\]
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | `IP=192.23.30.40 message='Hello&derps.' user=destroyer` | destroyer:  |
 | `IP=192.23.30.41 message='Hello&yall.' user=destroyer` | 192.23.30.40 \=\> 2, 192.23.30.41 \=\> 1, 192.23.30.42 \=\> 1. |
@@ -1762,7 +1762,7 @@ Adresele IP trebuie să fie separate prin virgulă, iar fiecare linie a adreselo
 | `IP=192.23.30.42 message='Hello&People.' user=destroyer` |  |
 | end |  |
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | `IP=FE80:0000:0000:0000:0202:B3FF:FE1E:8329 message='Hey&son' user=mother` | child0:  |
 | `IP=192.23.33.40 message='Hi&mom!' user=child0 | 192.23.33.40 => 1.` |
@@ -2160,7 +2160,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -2183,13 +2183,13 @@ Verificați exemplele!
 
 Urmați cu strictețe **formatul datelor de ieșire**!
 
-## Date de intrare
+## Intrare
 
 - Datele de intrare trebuie să fie citite din consolă
 - Ele constau într-un număr variabil de linii și se termină cu comanda "**report**", la primirea acesteia
 - Datele de intrare vor fi mereu valide și vor respecta mereu formatul descris. Nu trebuie să le verificați în mod explicit
 
-## Date de ieșire
+## Ieșire
 
 - Datele de ieșire trebuie să fie printate în consolă
 - Printați datele procesate pentru fiecare țară și oraș după formatul de mai jos
@@ -2201,13 +2201,13 @@ Urmați cu strictețe **formatul datelor de ieșire**!
 - Nu se va repeta nicio pereche oraș-țară
 - **Numărul populației** fiecărui oraș va fi un număr întreg din intervalul \[0 ... 2 000 000 000\]
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Bucharest\|Romania\|2000000 | Romania (total population: 2000000) |
 | report | \=\>Bucharest: 2000000 |
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Sofia\|Bulgaria\|1 | UK (total population: 4) |
 | Veliko Tarnovo\|Bulgaria\|2 | =>London: 4 |
@@ -2883,7 +2883,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -2917,7 +2917,7 @@ Datele de ieșire trebuie printate în următorul mod:
 - alex: 62 [10.10.17.33, 212.50.118.81]
 - peter: 303 [10.10.17.34, 10.10.17.35, 192.168.0.11]
 
-## Date de intrare
+## Intrare
 
 Datele de intrare sunt date în consolă. 
 
@@ -2931,7 +2931,7 @@ Datele de intrare vor fi mereu **valide** și vor respecta mereu formatul dat.
 
 Nu trebuie să le validați în mod explicit.
 
-## Date de ieșire
+## Ieșire
 
 Printați **câte o singură linie pentru fiecare utilizator** (ordeonați utilizatorii alfabetic). 
 
@@ -2948,9 +2948,8 @@ Eliminați orice valori duplicate ale adreselor IP.
 - `< user >` constă doar în **caractere din alfabetul Latin**, de lungime \[1 .... 20\]
 - `< duration >` e un număr întreg din intervalul \[1 ... 1000\]
 
-## Exemple
-
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 7 | alex: 62 \[10.10.17.33, 212.50.118.81\] |
 | 192.168.0.11 peter 33 | peter: 303 \[10.10.17.34, 10.10.17.35, 192.168.0.11\] |
@@ -2961,7 +2960,7 @@ Eliminați orice valori duplicate ale adreselor IP.
 | 212.50.118.81 alex 46 |  |
 | 212.50.118.81 alex 4 |  |
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 2 | john: 60 \[84.238.140.178\] |
 | 84.238.140.178 john 25 |  |
@@ -3365,7 +3364,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -3396,14 +3395,14 @@ Apoi, printați bucățile **rămase**, fragmentele, firele, ordonate după **ca
 În final, printați **gunoaiele** obținute, în **ordine alfabetică**.
 
 
-## Date de intrare
+## Intrare
 
 - Fiecare linie ce conține date de intrare respectă formatul:
 
 `{cantitate} {material} {cantitate} {material} ... {cantitate} {material}`
 
 
-## Date de ieșire
+## Ieșire
 
 - Pe prima linie, printați obiectul obținut, în formatul: 
 `{Legendary item} obtained!`
@@ -3420,8 +3419,8 @@ Apoi, printați bucățile **rămase**, fragmentele, firele, ordonate după **ca
 - Numărul de linii se află în intervalul \[1 ... 10\]
 - Toate materialele sunt scrise cu litere mari sau mici
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 3 Motes 5 stones 5 Shards | Valanyr obtained! |
 | 6 leathers 255 fragments 7 Shards | fragments: 5 |
@@ -3430,7 +3429,7 @@ Apoi, printați bucățile **rămase**, fragmentele, firele, ordonate după **ca
 |  | leathers: 6 |
 |  | stones: 5 |
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 123 silver 6 shards 8 shards 5 motes | Dragonwrath obtained! |
 | 9 fangs 75 motes 103 MOTES 8 Shards | shards: 22 |
@@ -3651,7 +3650,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -3725,8 +3724,8 @@ Doi dragoni sunt considerați **echivalenți** dacă au **același** nume și ti
 - Tipul de dragon și numele constau într-un singur cuvânt, care începe cu majusculă.
 - Nivelul de daune, sănătate și armură sunt numere întregi din intervalul \[0 ... 100000\] sau **null**
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 5 | Red::(160.00/2350.00/30.00) |
 | Red Bazgargal 100 2500 25 | \-Bazgargal \-\> damage: 100, health: 2500, armor: 25 |
@@ -3738,7 +3737,7 @@ Doi dragoni sunt considerați **echivalenți** dacă au **același** nume și ti
 |  | -Kerizsa \-\> damage: 60, health: 2100, armor: 20 |
 
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 4 | Gold::(223.75/826.25/17.50) |
 | Gold Zzazx null 1000 10 | \-Ardrax \-\> damage: 100, health: 1055, armor: 50 |

@@ -1,4 +1,4 @@
-# Introducere
+# Introducerea Lecției
 
 [slide hideTitle]
 # Conținutul Lecției
