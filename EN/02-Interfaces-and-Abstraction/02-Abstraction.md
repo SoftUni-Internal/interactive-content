@@ -33,31 +33,31 @@ Let us see how we can use that abstract classes.
 
 ``` java
 // Abstract parent class "Animal"
-abstract class Animal{
-   // Abstract method "sound"
-   public abstract void sound();
+abstract class Animal {
+  // Abstract method "sound"
+  public abstract void sound();
 }
 ```
 
 ``` java
 // Dog class extends Animal class
-public class Dog extends Animal{
+public class Dog extends Animal {
 
-    //It must declare and implement the abstract method
-   public void sound(){
-	System.out.println("Woof, Woof");
-   }
+//It must declare and implement the abstract method
+  public void sound(){
+	  System.out.println("Woof, Woof");
+  }
 }
 ```
 
 ``` java
 public class Main {
-    public static void main(String[] args) {
-        Animal dog = new Dog(); 
-        //Like with the inheritance we can contain the object in an interface that it implements.
-        dog.sound();
-        //We can use only the methods the interface declares.
-    }
+  public static void main(String[] args) {
+    Animal dog = new Dog(); 
+    //Like with the inheritance we can contain the object in an interface that it implements.
+    dog.sound();
+    //We can use only the methods the interface declares.
+  }
 }
 ```
 
