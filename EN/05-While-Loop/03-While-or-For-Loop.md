@@ -28,7 +28,7 @@ There could be many **complex** problems where the number of iterations depends 
 
 In other words, if the number of iteration is not fixed, it is recommended to use a `while-loop`.
 
-```java live
+```java
 Scanner scanner = new Scanner(System.in);
 String command = scanner.nextLine();
 int number = Integer.parseInt(scanner.nextLine());

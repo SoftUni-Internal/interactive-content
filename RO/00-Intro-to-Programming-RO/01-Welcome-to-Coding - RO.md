@@ -36,7 +36,7 @@ Programele de calculator reprezintă **o secvență de comenzi** care sunt scris
 
 Exemple de **programe de calculator** în Java:
 
-```java live
+```java live no-template
 public class Main {
   public static void main(String[] args) {
     int size = 5;

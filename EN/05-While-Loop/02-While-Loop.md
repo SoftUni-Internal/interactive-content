@@ -48,7 +48,7 @@ Here is how we can solve this problem:
 - In **the body of the loop**, we print the value of the **current number**, and we increase it by using the formula provided in the problem's description
 
 Here is a sample implementation of this algorithm:
-```java live
+```java
 Scanner scanner = new Scanner(System.in);
 int n = Integer.parseInt(scanner.nextLine());
 int num = 1;
