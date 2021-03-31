@@ -1,11 +1,10 @@
 [slide hideTitle]
 
-# Math Functions
+# The Math Functions
 
 Execution of mathematical functions usually is based on input values that are provided as arguments.
 
-It return a value as the result of the operation.
-
+It returns a value as the result of the operation.
 
 Here is the table of **supported arithmetic operators:**
 
@@ -19,17 +18,17 @@ Here is the table of **supported arithmetic operators:**
 | * | Multiplication operator | 
 | - (arg) | Change sign of argument |
 
-Let's take a look at some **Math** functions:
+Let us take a look at some **Math** functions:
 
-- `PI()` - This SQL function returns the PI value. It has 15 digit precision.
+- `PI()` - Returns the PI value. It has a 15 digit precision.
 
-- `ABS()` - It returns the absolute value of an number.
+- `ABS()` - Returns the absolute value of an number.
 
 ``` java
 SELECT ABS(-243.5);
 ```
 
-**Output:**
+**Output**:
 ```
 243.5
 ```
@@ -52,7 +51,7 @@ SELECT SQRT(1024);
 SELECT POW(5, 2);
 ```
 
-**Output:**
+**Output**:
 
 ```
 25
@@ -62,46 +61,46 @@ SELECT POW(5, 2);
 
 
 ``` java
-SELECT CONV(15, 10, 2); // First argument is "value", second is "from_base", third "to_base"
+SELECT CONV(15, 10, 2);  # The first argument is "value", second is "from_base", third "to_base"
 ```
 
-**Output:**
+**Output**:
 
 ```
 12
 ```
 
-- `ROUND()` - Round the number to precision passed as an argument.
+- `ROUND()` - Rounds the number to precision passed as an argument.
 
 ``` java
 SELECT ROUND(10.5021401, 2); 
 ```
 
-**Output:**
+**Output**:
 
 ```
 10.50
 ```
 
-- `FLOOR()` - Return the value as integer that is smaller or equal to the number passed as argument.
+- `FLOOR()` - Returns the value as integer that is smaller or equal to the number passed as argument.
 
 ``` java
 SELECT FLOOR(11.85);
 ```
 
-**Output:**
+**Output**:
 
 ```
 11
 ```
 
-- `CEILING()` - Return integer number that is greater than or equal to the number passed as argument.
+- `CEILING()` - Returns integer number that is greater than or equal to the number passed as argument.
 
 ``` java
 SELECT CEILING(6.55);
 ```
 
-**Output:**
+**Output**:
 
 ```
 7
@@ -109,19 +108,19 @@ SELECT CEILING(6.55);
 
 - `SIGN()` - This function returns the sign of a number depending on value passed as an argument.
 
-**For example:**
+**Example**:
 
-If we have number **higher than 0**, it will return **1**.
+If we have a number **higher than 0**, it will return **1**.
 
-If our number is **equals to 0**, it will return **0**.
+If we have a number **equal to 0**, it will return **0**.
 
-If the number is **lower than 0**, it will return **-1**.
+If we have a number **lower than 0**, it will return **-1**.
 
 ``` java
 SELECT SIGN(-5);
 ```
 
-**Output:**
+**Output**:
 ```
 -1
 ```
@@ -133,7 +132,7 @@ If **Seed** is not specified, it will return a completely random number.
 If we use **seed**, it will return a sequence of random numbers.
 
 ``` java
-SELECT RAND(); // It will return a completely random number
+SELECT RAND();  # It will return a completely random number
 ```
 
 **Output:**
