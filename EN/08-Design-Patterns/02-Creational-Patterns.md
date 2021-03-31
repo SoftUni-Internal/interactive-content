@@ -59,7 +59,7 @@ Let us see what is going on in our `Main` class:
 public class Main {
     public static void main(String[] args) {
 
-    // Trying to create a singleton object via the constructor results in an error:
+    	// Trying to create a singleton object via the constructor results in an error:
 	// Compile Time Error: The constructor SingleObject() is not visible
 	// Singleton object = new Singleton();
 
@@ -78,7 +78,7 @@ The **output** will be:
 Hello, I am a singleton class!
 ```
 
-This way, our Singleton class provides a method to get its **static** instance to **outside world**.
+This way, our Singleton class provides a method to get its **static** instance to the **outside world**.
 
 
 [/slide]
