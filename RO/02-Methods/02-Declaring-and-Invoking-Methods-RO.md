@@ -38,31 +38,31 @@ Pentru a apela sau a invoca o metodă în Java, scriem numele metodei, urmat de 
 
 În următorul exemplu, `printHello()` este folosit pentru a afișa textul `Hello World!`, atunci când este apelat:
 
-```java live 
+```java live no-template
 public class MyClass {
-    public static void main(String[] args) {
-        printHello();
-    }
+  public static void main(String[] args) {
+    printHello();
+  }
 
-    public static void printHello() {
-        System.out.println("Hello World!");
-    }
+  public static void printHello() {
+    System.out.println("Hello World!");
+  }
 }
 ```
 
 O metodă poate fi apelată de mai multe ori:
 
-```java live 
+```java live no-template
 public class MyClass {
-    public static void main(String[] args) {
-        printHello();
-        printHello();
-        printHello();
-    }
+  public static void main(String[] args) {
+    printHello();
+    printHello();
+    printHello();
+  }
 
-    public static void printHello() {
-        System.out.println("Hello World!");
-    }
+  public static void printHello() {
+    System.out.println("Hello World!");
+  }
 }
 ```
 [/slide]
