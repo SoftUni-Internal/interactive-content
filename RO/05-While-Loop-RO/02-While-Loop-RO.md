@@ -39,7 +39,7 @@ Iată cum rezolvăm problema:
 - În **corpul buclei**: imprimăm valoarea unui număr curent și creștem numărul curent folosind formula din enunțul problemei
 
 Aici este o probă de implementare a acestei idei:
-```java live
+```java
 Scanner scanner = new Scanner(System.in);
 int n = Integer.parseInt(scanner.nextLine());
 int num = 1;

@@ -24,7 +24,7 @@ Aceasta înseamnă că nu putem ști în avans **de câte ori** trebuie să repe
 
 In această situație este mai bine să folosim bucla `while`.
 
-```java live
+```java
 Scanner scanner = new Scanner(System.in);
 String command = scanner.nextLine();
 int number = Integer.parseInt(scanner.nextLine());
