@@ -65,9 +65,9 @@ List<Integer> nums = Arrays.asList(numbers);
 If you try to convert an array that holds a primitive data type like `int[]` to a list, this will result in a **compile error** because **lists** accept only **reference data types** (**objects**). 
 
 ```java live
- int[] numbers = new int[] {10, 20, 30, 40, 50};
+int[] numbers = new int[] {10, 20, 30, 40, 50};
 
- List<Integer> nums = Arrays.asList(numbers);
+List<Integer> nums = Arrays.asList(numbers);
 ```
 [/slide]
 
