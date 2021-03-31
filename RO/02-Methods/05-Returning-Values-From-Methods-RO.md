@@ -7,15 +7,15 @@
 
 Cuvântul-cheie `return` termină execuția unei metode, și poate fi folosit pentru a returna o valoare de la o metodă.
 
-```java live
+```java live no-template
 public class MyClass {
-    static int myMethod(int x) {
-        return 5 + x;
-    }
+  static int myMethod(int x) {
+    return 5 + x;
+  }
 
-    public static void main(String[] args) {
-        System.out.println(myMethod(3));
-    }
+  public static void main(String[] args) {
+    System.out.println(myMethod(3));
+  }
 }
 ```
 [/slide]
