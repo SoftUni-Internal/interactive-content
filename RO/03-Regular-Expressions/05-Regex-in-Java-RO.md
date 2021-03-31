@@ -6,7 +6,7 @@
 
 Pentru expresii regulate avansate sunt utilizate clasele `java.util.regex.Pattern` și `java.util.regex.Matcher`.
 
-```java live
+```java live no-template
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
