@@ -124,7 +124,7 @@ Any great project must have a great documentation as well.
 /**This type of comment is used in documentations
 *
 *tags are used to specify parameters
-*@author James
+*@author James Williams
 *this author tag specifies a name 
 *@version 1.0
 *we can specify a version number
