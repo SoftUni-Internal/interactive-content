@@ -12,7 +12,7 @@ The purpose of nested classes is to **group classes that belong together**, whic
 
 - **Example** of a nested class:
 
-```java live
+```java live no-template
 public class OuterClass {
     int x = 10;
 
