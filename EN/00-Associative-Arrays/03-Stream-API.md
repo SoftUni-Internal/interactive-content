@@ -417,39 +417,49 @@ There are **two** ways to sort collections:
 
 - Sorting in **ascending** (**Natural**) order:
 
-```java live
-List < Integer > numbers = new ArrayList < > () {
-  {
-    add(4);
-    add(1);
-    add(3);
-    add(2);
-  }
-};
-numbers = numbers.stream()
-  .sorted((n1, n2) -> n1.compareTo(n2))
-  .collect(Collectors.toList());
-for (Integer number: numbers) {
-  System.out.println(number);
+```java live no-template
+import java.util.*;
+import java.util.stream.Collectors;
+
+public class Main {
+    public static void main(String[] args) {
+        List < Integer > numbers = new ArrayList < > () {{
+            add(4);
+            add(1);
+            add(3);
+            add(2);
+        }};
+        numbers = numbers.stream()
+                .sorted((n1, n2) -> n1.compareTo(n2))
+                .collect(Collectors.toList());
+        for (Integer number: numbers) {
+            System.out.println(number);
+        }
+    }
 }
+       
 ```
 
 - Sorting in **descending** order:
 
-```java live
-List < Integer > numbers = new ArrayList < > () {
-  {
-    add(4);
-    add(1);
-    add(3);
-    add(2);
-  }
-};
-numbers = numbers.stream()
-  .sorted((n1, n2) -> n2.compareTo(n1))
-  .collect(Collectors.toList());
-for (Integer number: numbers) {
-  System.out.println(number);
+```java live no-template
+import java.util.*;
+import java.util.stream.Collectors;
+public class Main {
+    public static void main(String[] args) {
+        List<Integer> numbers = new ArrayList<>() {{
+            add(4);
+            add(1);
+            add(3);
+            add(2);
+        }};
+        numbers = numbers.stream()
+                .sorted((n1, n2) -> n2.compareTo(n1))
+                .collect(Collectors.toList());
+        for (Integer number : numbers) {
+            System.out.println(number);
+        }
+    }
 }
 ```
 
