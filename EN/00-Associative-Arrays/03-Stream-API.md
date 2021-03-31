@@ -85,7 +85,7 @@ System.out.println(max);
 
 - `sum()` - Finds and returns **the sum** of all elements in a collection
 
-```java live no-template
+```java live
 int [] numbers = new int[]{15, 25, 35};
 int sum = Arrays.stream(numbers).sum();
 System.out.println(sum);
