@@ -29,7 +29,7 @@ There are several things you must know before creating your first relation.
 
 For the referenced table it's a constraint that the referenced column is unique, otherwise the database won't know with which record it should connect the references. 
 
-
+ 
 The constrains for the referencing table are that the type of foreign_key matches the referenced type as well as that the foreign key must be of an already existing property.
 
 [image assetsSrc="Table-Relations.png" /]
