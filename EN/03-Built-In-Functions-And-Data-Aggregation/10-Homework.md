@@ -4,7 +4,7 @@
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/04.Built-In-Functions-And-Data-Aggregation-Exercise.zip) **for this homework.**
 
-*You will need the databases from "built-in-functions-data-aggregation" for the first 16 problems, and the "built-in-functions-data-aggregation" resources for the rest of the problems.*
+*You will need the databases from "built-in-functions-data-aggregation" for the first 16 problems and the "built-in-functions-data-aggregation" resources for the rest of the problems.*
 
 # Part 1 - Queries from SoftUni Database
 
@@ -13,22 +13,13 @@
 [slide hideTitle]
 
 # Problem: Find Names of All Employees by First Name
-[code-task title="Problem: Find Names of All Employees by First Name" taskId="d08df54f-f0cd-4502-a7d0-0129773cea76" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Find Names of All Employees by First Name" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-find-names-of-all-employees-by-first-name" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 # Description
 
-Write a SQL query to find **first** and **last** names of all employees whose first name **starts with "Sa" (case insensitively).**
+Create an SQL query that finds **first** and **last** names of all employees whose first name **starts with "Sa" (case insensitively).**
 
 **Order the information by id.**
 
@@ -128,22 +119,14 @@ D'Hers
 
 [slide hideTitle]
 # Problem: Find Names of All Employees by Last Name
-[code-task title="Problem: Find Names of All Employees by Last Name" taskId="b8c44917-9454-4a86-9322-9fe351bd0dbc" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Find Names of All Employees by Last Name" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-find-names-of-all-employees-by-last-name" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
 
-Write a SQL query to find **first** and **last** names of all employees whose **last name contains "ei" (case insensitively).**
+Create an SQL query that finds **first** and **last** names of all employees whose **last name contains "ei" (case insensitively).**
 
 **Order the information by id.**
 
@@ -265,22 +248,13 @@ BANADEI
 [slide hideTitle]
 
 # Problem: Find First Names of All Employees
-[code-task title="Problem: Find First Names of All Employees" taskId="3360a3c2-0150-4f70-92d0-0661a019e0f2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Find First Names of All Employees" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-find-first-name-of-all-employees" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 # Description
 
-Write a SQL query to find the **first names** of all employees in the departments with ID **3** or **10** and whose **hire year** is **between 1995 and 2005 inclusively.**
+Create an SQL query that finds the **first names** of all employees in the departments with ID **3** or **10** and whose **hire year** is **between 1995 and 2005 inclusively.**
 
 **Order the information by id.**
 
@@ -374,27 +348,17 @@ Steven
 [slide hideTitle]
 
 # Problem: Find All Employees Except Engineers
-[code-task title="Problem: Find All Employees Except Engineers" taskId="9b6d6391-92a9-4743-a94d-6bccc0ee7562" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Find All Employees Except Engineers" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-find-all-employees-except-engineers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
 
-Write a SQL query to find the **first** and **last names** of all employees whose **job titles does not contain "engineer".**
+Create an SQL query that finds the **first** and **last names** of all employees whose **job titles does not contain "engineer".**
 
 **Order the information by id.**
 
 **Run your query statements & submit the output from the queries as plain text.**
-
 
 ## Example:
 
@@ -1561,26 +1525,16 @@ Denchev
 
 [slide hideTitle]
 # Problem: Find Towns with Name Length
-[code-task title="Problem: Find Towns with Name Length" taskId="1bf3d24b-5245-4ed9-a8df-3fa74aae4178" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Find Towns with Name Length" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-find-book-titles" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
 
-Write a SQL query to find **town names** that are **5** or **6** symbols long and **order them alphabetically by town name.** 
+Create an SQL query that finds **town names** that are **5** or **6** symbols long and **order them alphabetically by town name.** 
 
 **Run your query statements & submit the output from the queries as plain text.**
-
-
 
 ## Example:
 
@@ -1627,22 +1581,13 @@ Sofia
 
 [slide hideTitle]
 # Problem: Find Towns Starting With
-[code-task title="Problem: Find Towns Starting With" taskId="21ad63db-656c-4546-a81d-9221b55a90dd" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Find Towns Starting With" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-find-towns-starting-with" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
 
-Write a SQL query to find all towns that **start with** letters **M**, **K**, **B** or **E** **(case insensitively).**
+Create an SQL query that finds all towns that **start with** letters **M**, **K**, **B** or **E** **(case insensitively).**
 
 **Order them alphabetically by town name.**
 
@@ -1692,22 +1637,13 @@ Sofia
 [slide hideTitle]
 
 # Problem: Find Towns Not Starting With
-[code-task title="Problem: Find Towns Not Starting With" taskId="1bb92d30-90fe-40b3-915d-b42440ada2f9" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Find Towns Not Starting With" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-find-towns-not-starting-with" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
 
-Write a SQL query to find all towns that **do not start** with letters **R**, **B** or **D** **(case insensitively).**
+Create an SQL query that finds all towns that **do not start** with letters **R**, **B** or **D** **(case insensitively).**
 
 **Order them alphabetically by name.**
 
@@ -1831,25 +1767,15 @@ Sofia
 
 [slide hideTitle]
 # Problem: Create View Employees Hired After 2000 Year
-[code-task title="Problem: Create View Employees Hired After 2000 Year" taskId="f3fc5234-5958-4363-83ab-2137c60378ef" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Create View Employees Hired After 2000 Year" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-create-view-employees-hired-after-2000-year" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
 
-Write a SQL query to create view **v_employees_hired_after_2000** with **the first and the last name** of all employees **hired after 2000 year.**
+Create an SQL query that creates a view named **v_employees_hired_after_2000** with **the first and the last name** of all employees **hired after 2000 year.**
 
 **Run your query statements & submit the output from the queries as plain text.**
-
 
 ## Example:
 
@@ -2971,25 +2897,15 @@ Denchev
 
 [slide hideTitle]
 # Problem: Length of Last Name
-[code-task title="Problem: Length of Last Name" taskId="b66a4a9a-2ba5-44c1-a27a-6c41a734f7c2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Length of Last Name" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-length-of-last-name" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
 
-Write a SQL query to find the names of all employees whose last name is **exactly 5 characters long.**
+Create an SQL query that finds the names of all employees whose last name is **exactly 5 characters long.**
 
 **Run your query statements & submit the output from the queries as plain text.**
-
 
 ## Example:
 
@@ -3247,22 +3163,14 @@ Kulov
 
 [slide hideTitle]
 # Problem: Countries Holding 'A' 3 or More Times
-[code-task title="Problem: Countries Holding 'A' 3 or More Times" taskId="86a01d00-87b7-48d0-9f82-c5ced9654609" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Countries Holding 'A' 3 or More Times" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-countries-holding-a-3-or-more-times" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
 
-Find all countries that hold the **letter 'A' in their name at least 3 times (case insensitively), sorted by ISO code.**
+Find all countries that hold the **letter 'A' in their name at least 3 times (case insensitively) sorted by the ISO code.**
 
 **Display** the **country name** and the **ISO code.**
 
@@ -3440,17 +3348,8 @@ WLF
 
 [slide hideTitle]
 # Problem: Mix of Peak and River Names
-[code-task title="Problem: Mix of Peak and River Names" taskId="e897d6af-59fd-4952-b32c-ae87d6564568" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Mix of Peak and River Names" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-mix-of-peak-and-river-names" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
@@ -3977,17 +3876,8 @@ vihrenile
 [slide hideTitle]
 
 # Problem: Games from 2011 and 2012 Year
-[code-task title="Problem: Games from 2011 and 2012 Year" taskId="a0194ae0-e8cf-4e41-ad8a-d665c92c2616" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Games from 2011 and 2012 Year" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-games-from-2011-and-2012-year" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 # Description
@@ -4228,28 +4118,18 @@ Machu Picchu
 
 [slide hideTitle]
 # Problem: User Email Providers
-[code-task title="Problem: User Email Providers" taskId="7c32b83e-06eb-4077-a7dd-1632f2cb637a" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="User Email Providers" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-user-email-providers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
 
 Find information about the email providers of all users. 
 
-Display the **user_name** and the **email provider.** Sort the results by **email provider alphabetically**, then by **username**. 
+Display the **user_name** and the **email provider.**
+Sort the results by **email provider alphabetically**, then by **username**. 
 
 **Run your query statements & submit the output from the queries as plain text.**
-
-
 
 ## Example:
 
@@ -4560,17 +4440,8 @@ yahoo.com.sg
 
 [slide hideTitle]
 # Problem: Get Users with IP Address Like Pattern
-[code-task title="Problem: Get Users with IP Address Like Pattern" taskId="95b2a4c8-4de2-431f-bbc6-fa29a41df0e2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Get Users with IP Address Like Pattern" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-get-users-with-ip-address-like-pattern" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
@@ -4654,8 +4525,13 @@ sweethorseman
 [slide hideTitle]
 
 # Problem: Show All Games with Duration and Part of the Day
+[code-task title="Show All Games with Duration and Part of the Day" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-show-all-games-with-duration-and-part-of-the-day" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+[/code-editor]
+[task-description]
+## Description
 
-// ToDo: The test's do not cover the output in the example. To investigate this in the future.
+// ToDo: The tests do not cover the output in the example. To investigate this in the future.
 
 [/slide]
 
@@ -4669,15 +4545,6 @@ sweethorseman
 # Problem: Orders Table
 [code-task title="Problem: Orders Table" taskId="bcff865f-d6be-42df-9707-86042bde4549" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
@@ -4849,10 +4716,10 @@ Tomat65434foe23gfhgsPep
 
 [slide hideTitle]
 
-# Part 5 - Use "gringotts" database.
+# Part 5 - Use the "gringotts" database.
 
 Mr. Bodrog is a greedy small goblin. His most precious possession is a small database of the deposits in 
-the wizard's world. 
+the wizard world. 
 
 Mr. Bodrog wants you to send him some reports.
 
@@ -4860,17 +4727,8 @@ Mr. Bodrog wants you to send him some reports.
 
 [slide hideTitle]
 # Problem: Records' Count
-[code-task title="Problem: Records' Count" taskId="7e289fb3-32e0-4b8f-8be6-7302236db670" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Records' Count" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-records-count" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
@@ -4898,17 +4756,9 @@ Make sure nothing got lost.
 
 [slide hideTitle]
 # Problem: Longest Magic Wand
-[code-task title="Problem: Longest Magic Wand" taskId="d6ec3d44-95d5-44fd-a1d9-aa012f6e48a1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Longest Magic Wand" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-longest-magic-wand" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
@@ -4916,7 +4766,6 @@ public class Main {
 Select the size of the **longest magic wand.** Rename the new column appropriately.
 
 **Run your query statements & submit the output from the queries as plain text.**
-
 
 [/task-description]
 [code-io /]
@@ -4935,17 +4784,9 @@ Select the size of the **longest magic wand.** Rename the new column appropriate
 
 [slide hideTitle]
 # Problem: Longest Magic Wand Per Deposit Groups
-[code-task title="Problem: Longest Magic Wand Per Deposit Groups" taskId="1063fe4b-e375-4115-bae9-3fde8918fd19" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Longest Magic Wand Per Deposit Groups" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-longest-magic-wand-per-deposit-groups" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
@@ -4997,24 +4838,14 @@ Venomous Tongue
 
 [slide hideTitle]
 # Problem: Smallest Deposit Group Per Magic Wand Size *
-[code-task title="Problem: Smallest Deposit Group Per Magic Wand Size" taskId="85bb7753-4a33-4ca2-baf9-479e0710ba19" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Smallest Deposit Group Per Magic Wand Size" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-longest-magic-wand" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
 Select the deposit group with the **lowest** average wand size.
 
 **Run your query statements & submit the output from the queries as plain text.**
-
 
 
 [/task-description]
@@ -5034,17 +4865,8 @@ Troll Chest
 
 [slide hideTitle]
 # Problem: Deposits Sum
-[code-task title="Problem: Deposits Sum" taskId="99a09706-5c5c-47a8-bc8f-ae310cfc5d48" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Deposits Sum" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-deposit-sum" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
@@ -5090,17 +4912,9 @@ Venomous Tongue
 
 [slide hideTitle]
 # Problem: Deposits Sum for Ollivander Family
-[code-task title="Problem: Deposits Sum for Ollivander Family" taskId="f4308167-f60b-4a89-8861-b0f7fb8c738b" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Deposits Sum for Ollivander Family" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-deposits-sum-for-ollivander-family" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
@@ -5110,7 +4924,6 @@ Select all deposit groups and its total deposit sum but **only for the wizards w
 Sort result by **deposit_group alphabetically.**
 
 **Run your query statements & submit the output from the queries as plain text.**
-
 
 ## Example:
 
@@ -5153,17 +4966,8 @@ Venomous Tongue
 
 [slide hideTitle]
 # Problem: Deposits Filter
-[code-task title="Problem: Deposits Filter" taskId="34c1a441-85ee-48ba-a6d2-df4a41fe0e1d" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Deposits Filter" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-deposits-filter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
@@ -5171,10 +4975,7 @@ Select all deposit groups and its total deposit sum but **only for the wizards w
 
 After this, **filter** total deposit sums **lower than 150000.** Order by total deposit sum in **descending order.**
 
-
 **Run your query statements & submit the output from the queries as plain text.**
-
-
 
 ## Example:
 
@@ -5182,8 +4983,6 @@ After this, **filter** total deposit sums **lower than 150000.** Order by total 
 | --- | --- |
 | Troll Chest | 126585.18 |
 | ..... | ..... |
-
-
 
 
 [/task-description]
@@ -5209,17 +5008,8 @@ Blue Phoenix
 
 [slide hideTitle]
 # Problem: Deposit Charge
-[code-task title="Problem: Deposit Charge" taskId="34eb0b18-bdc6-43ac-b7f7-9e713bb0e57d" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Deposit Charge" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-deposit-charge" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
@@ -5402,21 +5192,12 @@ Ollivander family
 
 [slide hideTitle]
 # Problem: Age Groups
-[code-task title="Problem: Age Groups" taskId="9786a2bf-d53f-4ad0-9e5b-e5269368c36c" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Age Groups" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-age-groups" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
-Write down a query that creates 7 different groups **based on their age.**
+Create a query that creates 7 different groups **based on their age.**
 
 Age groups should be as follows:
 
@@ -5435,7 +5216,6 @@ The query should return:
 - **Count of wizards in it**
 
 Sort result by **increasing size** of age groups.
-
 
 **Run your query statements & submit the output from the queries as plain text.**
 
@@ -5486,21 +5266,12 @@ Sort result by **increasing size** of age groups.
 
 [slide hideTitle]
 # Problem: First Letter
-[code-task title="Problem: First Letter" taskId="133fd22e-d835-4145-a239-f2202423ebbe" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="First Letter" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-first-letter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
-Write a query that returns all **unique** wizard **first letters of their first names only if they have deposit of type Troll Chest.** 
+Create a query that returns all **unique** wizard **first letters of their first names only if they have deposit of type Troll Chest.** 
 
 Order them **alphabetically**. Use **GROUP BY** for uniqueness.
 
@@ -5564,17 +5335,8 @@ Y
 
 [slide hideTitle]
 # Problem: Average Interest
-[code-task title="Problem: Average Interest" taskId="e942a851-7a76-40c3-a780-5b042a1023a9" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Average Interest" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-average-interest" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
@@ -5583,7 +5345,7 @@ Mr. Bodrog is highly interested in profitability.
 
 He wants to know the average interest of all deposits groups split by whether the deposit **has expired** or **not.** 
 
-But that's not all. He wants you to select deposits with **start date after 01/01/1985.** 
+But that is not all. He wants you to select deposits with **start date after 01/01/1985.** 
 
 Order the data **descending** by Deposit Group and **ascending** by Expiration Flag.
 
@@ -5659,29 +5421,18 @@ Blue Phoenix
 [/slide]
 
 [slide hideTitle]
-# Problem: Employees Minimum Salaries
-[code-task title="Problem: Employees Minimum Salaries" taskId="54c38ca0-1075-42e1-bf37-fea1cf35087c" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+# Employees Minimum Salaries
+[code-task title="Employees Minimum Salaries" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-employees-minimum-salaries" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
 
 **Use soft_uni database.**
 
-That's it! You no longer work for Mr. Bodrog. 
+You have decided to find a proper job as an analyst in **SoftUni**.
 
-You have decided to find a proper job as an analyst in **SoftUni.**
-
-It's not a surprise that you will use the **soft_uni database.**
+It is not a surprise that you will use the **soft_uni database.**
 
 Select the minimum salary from the employees for departments with **ID (2,5,7)** but only for those who are **hired after 01/01/2000.** 
 
@@ -5728,17 +5479,8 @@ Your query should return:
 
 [slide hideTitle]
 # Problem: Employees Average Salaries
-[code-task title="Problem: Employees Average Salaries" taskId="be55c6d7-27be-4bc8-ad9d-c8b8aefffd5e" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Employees Average Salaries" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-employees-average-salaries" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
@@ -5810,17 +5552,8 @@ Sort result by **department_id in increasing order.**
 
 [slide hideTitle]
 # Problem: Employees Maximum Salaries
-[code-task title="Problem: Employees Maximum Salaries" taskId="3591d89c-872f-4b04-b75b-e90fda3b376e" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Employees Maximum Salaries" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-employees-maximum-salaries" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
@@ -5896,21 +5629,13 @@ Sort result by department_id in increasing order.
 
 [slide hideTitle]
 # Problem: Employees Count Salaries
-[code-task title="Problem: Employees Count Salaries" taskId="fb69e954-68ee-49b2-a07e-071ee5d447ff" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Employees Count Salaries" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-employees-count-salaries" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
-Count the salaries of all employees who **don't have a manager.**
+Count the salaries of all employees who **do not have a manager.**
 
 **Run your query statements & submit the output from the queries as plain text.**
 
@@ -5931,18 +5656,9 @@ Count the salaries of all employees who **don't have a manager.**
 [/slide]
 
 [slide hideTitle]
-# Problem: 3rd Highest Salary *
-[code-task title="Problem: 3rd Highest Salary *" taskId="5fba5b46-c227-464c-886f-74cf2c4f66a8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: 3rd Highest Salary
+[code-task title="Problem: 3rd Highest Salary" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-3rd-highest-salary" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
@@ -6031,21 +5747,12 @@ Sort result by **department_id** in **increasing order.**
 
 [slide hideTitle]
 # Problem: Departments Total Salaries
-[code-task title="Problem: Departments Total Salaries" taskId="2cab45d6-9515-4fdd-8c6d-694143343dc9" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Departments Total Salaries" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-departments-total-salaries" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
-Create a query which shows the **total sum of salaries** for each department.
+Create a query ,which shows the **total sum of salaries** for each department.
 
 **Order by department_id.**
 
