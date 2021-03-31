@@ -29,7 +29,7 @@ Un obiect deține un set de **valori numite**.
 
 Exemplu: obiectul zilei de naștere va avea valori precum **ziua**, **luna** și **anul** etc.
 
-```java live
+```java live no-template
 import java.time.LocalDate;
 
 public class Main {
