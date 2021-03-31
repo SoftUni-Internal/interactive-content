@@ -82,10 +82,7 @@ Pentru a imprima toate elementele a unei matrice, utilizăm o **bucla for**.
 Vedeți exemplul de mai jos:
 
 ```Java live
-String[] arr = {
-    "one",
-    "two"
-};
+String[] arr = { "one", "two" };
 
 // Process all array elements
 for (int i = 0; i < arr.length; i++) {
