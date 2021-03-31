@@ -27,9 +27,15 @@ An object holds a set of **named values**.
 
 For example, a **birthday** object will have values like `day`, `month`, `year` etc.
 
-```java live
-LocalDate birthday = LocalDate.of(2018,5,5);
-System.out.println(birthday);
+```java live no-template
+import java.time.LocalDate;
+
+public class Main {
+    public static void main(String[] args) {
+        LocalDate birthday = LocalDate.of(2018,5,5);
+        System.out.println(birthday);
+    }
+}
 ```
 
 [/slide]
