@@ -1,4 +1,4 @@
-# Temă
+# Teme Pentru Acasă
 
 [slide hideTitle]
 # Problemă: Fill the Matrix
@@ -9,13 +9,13 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Cerință
+## Descriere
 Scrieți două **metode** care **completează** o **matrice** de dimensiune **N x N** în **două** moduri **diferite.** 
 
 Ambele moduri sunt descrise mai jos:
@@ -27,14 +27,14 @@ Ambele moduri sunt descrise mai jos:
 - Întocmiți o metodă diferită pentru fiecare model
 - Întocmiți o metodă pentru printarea matricei
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 3, A | 1 4 7  |
 |  | 2 5 8  |
 |  | 3 6 9 |
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 3, B | 1 6 7  |
 |  | 2 5 8  |
@@ -185,13 +185,13 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+       // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Cerință
+## Descriere
 Scrieți un program pentru a genera următoarea **matrice de palindroame**. 
 
 Trebuie să existe un palindrom de **3 litere** pe fiecare poziție. 
@@ -209,14 +209,14 @@ De exemplu:
 - Pe `rândul 0 coloana 0`, litera din mijloc este **"a"**, pe `rândul 0 coloana 1` - **"b"**, pe `rândul 0 coloana 2` - **"c"** ...
 - Pe `rândul 1 coloana 0`, litera din mijloc este **"b"**, pe `rândul 1 coloana 1` - **"c"**, pe `rândul 1 coloana 2` - **"d"** ... 
 
-## Date de intrare
+## Intrare
 
 - Numerele **r** și **c** se află pe prima linia a datelor de intrare
 - **r** și **c** sunt numere întregi din intervalul `[1 ... 26]`
 - `r + c <= 27`
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 4 6 | aaa aba aca ada aea afa |
 |  | bbb bcb bdb beb bfb bgb |
@@ -224,7 +224,7 @@ De exemplu:
 |  | ddd ded dfd dgd dhd did |
 |  |  |
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 3 2 | aaa aba |
 |  | bbb bcb |
@@ -360,7 +360,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -371,7 +371,7 @@ Scrieți un program care găsește **diferența dintre sumele de pe diagonalele 
 
 [image assetsSrc="Java-Advanced-Multidimensional-Arrays-3.png" /]
 
-## Date de intrare
+## Intrare
 
 - **Prima linie** conține un număr **n** – dimensiunea matricei
 - Următoarele **n**  **linii** conțin **valorile pentru fiecare rând** – **n** numere separate prin spațiu
@@ -384,8 +384,8 @@ Scrieți un program care găsește **diferența dintre sumele de pe diagonalele 
 - **Diagonala secundară** conține toate celulele `{rând,coloană}` unde `rând == i` și `coloană == n - 1 - i`
 
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** | **Comentarii** |
+## Exemplu
+| **Intrare** | **Ieșire** | **Comentarii** |
 | --- | --- | --- |
 | 3 | 15 | **Diagonala principală:** `sum = 11 + 5 + (-12) = 4`  |
 | 11 2 4 |  | **Diagonala secundară:** `sum = 4 + 5 + 10 = 19`  |
@@ -516,7 +516,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -532,8 +532,8 @@ Scrieți un program care citește o matrice dreptunghiulară de numere întregi 
 
 Printați **elementele** pătratului de 3 x 3 sub forma unei matrice, împreună cu **suma acestora**. Vedeți formatul datelor de ieșire mai jos:
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 4 5 | Sum = 75 |
 | 1 5 5 2 4 | 1 4 14 |
@@ -733,7 +733,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -758,8 +758,8 @@ Programul ar trebui să se termine odată cu introducerea stringului `END`.
 
 Gândiți-vă la rezolvarea de excepții
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 2 3 | 5 2 3 |
 | 1 2 3 | 4 1 6 |
@@ -1088,7 +1088,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1107,7 +1107,7 @@ Printați rezultatul în consolă, sub forma unei secvențe de stringuri, odată
 
 [image assetsSrc="Java-Advanced-Multidimensional-Arrays-5.png" /]
 
-## Date de intrare
+## Intrare
 
 Datele de intrare sunt citite din consolă:
 
@@ -1119,7 +1119,7 @@ Datele de intrare vor fi mereu valide și vor respecta formatul descris.
 
 Nu trebuie să le validați în mod explicit.
 
-## Date de ieșire
+## Ieșire
 
 Printați în consolă **matricea rotită** sub forma unei secvențe de linii de text.
 
@@ -1130,8 +1130,8 @@ Printați în consolă **matricea rotită** sub forma unei secvențe de linii de
 - Liniile matricei sunt **stringuri** de lungime `[1 ... 1 000]`
 
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Rotate(90) | esh |
 | hello | xoe |
@@ -1141,7 +1141,7 @@ Printați în consolă **matricea rotită** sub forma unei secvențe de linii de
 |  |  n  |
 |  |  i  |
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Rotate(180) |    maxe |
 | hello | inutfos |
@@ -1149,7 +1149,7 @@ Printați în consolă **matricea rotită** sub forma unei secvențe de linii de
 | exam |  |
 | END |  |
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Rotate(270) |  i  |
 | hello |  n  |
@@ -1159,14 +1159,14 @@ Printați în consolă **matricea rotită** sub forma unei secvențe de linii de
 |  | eox |
 |  | hse |
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Rotate(720) | js |
 | js | exam |
 | exam |  |
 | END |  |
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Rotate(810) | ej |
 | js | xs |
@@ -1174,7 +1174,7 @@ Printați în consolă **matricea rotită** sub forma unei secvențe de linii de
 | END | m |
 |  |  |
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Rotate(0) | js |
 | js | exam |
@@ -1541,7 +1541,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -1572,7 +1572,7 @@ Observați exemplele de mai jos pentru mai multe informații.
 
 Când se întâmplă asta, trebuie să printați ceea ce a rămas din matricea inițială.
 
-## Date de intrare
+## Intrare
 
 - Pe prima linie, veți primi dimensiunile matricei. Apoi trebuie să completați matricea cu elemente, conform acelor dimensiuni
 - Pe următoarele linii, veți începe să primiți **3 numere întregi** separate de un singur **spațiu**, care reprezintă rândul, coloana și raza
@@ -1581,7 +1581,7 @@ Apoi trebuie să distrugeți celulele, în funcție de coordonatele respective.
 
 - Când primiți comanda `Nuke it from orbit`, datele de intrare se sfârșesc
 
-## Date de ieșire
+## Ieșire
 
 - Datele de ieșire sunt simple. Trebuie să printați ce rămâne din matrice
 - Fiecare rând trebuie să fie printat pe linie nouă și fiecare coloană a unui rând - separată prin spațiu
@@ -1593,8 +1593,8 @@ Apoi trebuie să distrugeți celulele, în funcție de coordonatele respective.
 - Raza va fi un număr din intervalul `[0, 2 ^ 31 - 1]`
 
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** | 
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- | 
 | 5 5 | 1 2 3 4 5 |
 | 3 3 2 | 6 7 8 10 |
@@ -1607,7 +1607,7 @@ Apoi trebuie să distrugeți celulele, în funcție de coordonatele respective.
 [image assetsSrc="Java-Advanced-Multidimensional-Arrays-6.png" /]
 
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 5 5 | 1 2 3 4 |
 | 4 4 4 | 6 7 8 9 |
@@ -2060,13 +2060,13 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Cerință
+## Descriere
 Scrieți un program pentru un sistem de parcare automat.
 
 Parcarea e reprezentată de o **matrice dreptunghiulară** în care **prima** coloană e **întotdeauna** goală, iar toate celelalte celule reprezintă locuri de parcare. 
@@ -2087,7 +2087,7 @@ Exemplu: O mașină intră în parcare la rândul 1. Aceasta intenționează să
 
 [image assetsSrc="Java-Advanced-Multidimensional-Arrays-7.png" /]
 
-## Date de intrare
+## Intrare
 
 - Pe prima linie a datelor de intrare, vi se dau numerele întregi **R** și **C**, numere ce definesc dimensiunile parcării
 - Pe următoarele linii, vi se dau întregii **Z, X, Y**, unde **Z** este rândul pe care se intră și **X, Y** sunt coordonatele locului de parcare dorit
@@ -2095,7 +2095,7 @@ Exemplu: O mașină intră în parcare la rândul 1. Aceasta intenționează să
 
 Toate numerele întregi sunt separate printr-un **singur** spațiu.
 
-## Date de ieșire
+## Ieșire
 
 - Pentru fiecare mașină, printați distanța parcursă pentru locul de parcare dorit, sau pentru primul loc valabil, liber
 - Dacă o mașină nu poate parca pe locul intenționat, printați mesajul `Row {row number} full`
@@ -2106,8 +2106,8 @@ Toate numerele întregi sunt separate printr-un **singur** spațiu.
 - Z, X, Y se află în interiorul dimensiunilor matricei. Y nu poate fi niciodată de pe prima coloană
 - Nu există mai mult de 1000 de linii de date de intrare
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 4 4 | 4 |
 | 1 2 2 | 2 |
@@ -2557,13 +2557,13 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Cerință
+## Descriere
 
 Mai întâi, veți primi o linie care conține numerele întregi **N** și **M** , care reprezintă rândurile și coloanele corespunzătoare vizuinei. 
 
@@ -2595,7 +2595,7 @@ Pe ultima linie, printați `dead: {rând} {coloană}` ori `won: {rând} {coloan�
 
 "rând" și "coloana" reprezintă coordonatele celulei în care jucătorul a murit sau ultima celulă în care acesta s-a aflat înainte de a scăpa din vizuină.
 
-## Date de intrare 
+## Intrare 
 
 - Pe prima linie cu date de intrare, se dau numerele **N** și **M** – numărul de **rânduri** și de **coloane** al vizuinei
 - Pe următoarele N linii, fiecare rând e primit sub formă de string. Stringul va conține doar `.`, `B` , `P`
@@ -2606,7 +2606,7 @@ Va exista doar un `P` pentru toate datele de intrare.
 
 - Pe ultima linie, direcțiile sunt primite sub formă de string, care conține `R`, `L`, `U`, `D`
   
-## Date de ieșire
+## Ieșire
 
 - Pe primele N linii, printați starea finală a vizuinii iepurilor
 - Pe ultima linie, printați rezultatul final – `won:` sau `dead:` + `{rând} {coloană}`
@@ -2616,8 +2616,8 @@ Va exista doar un `P` pentru toate datele de intrare.
 - Dimensiunile vizuinii se află în intervalul `[3 ... 20]`
 - Dimensiunile stringurilor ce indică direcțiile se află în intervalul `[1 ... 20]`
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 5 8 | BBBBBBBB |
 | .......B | BBBBBBBB |
@@ -2627,7 +2627,7 @@ Va exista doar un `P` pentru toate datele de intrare.
 | ..P..... | won: 3 0 |
 | ULLL |  |
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 4 5 | .B... |
 | ..... | BBB.. |
@@ -2917,20 +2917,20 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Cerință
+## Descriere
 Se dă o matrice (un vector bidimensional) de numere întregi.
 
 Trebuie să printați diagonalele matricei, dar în ordine inversă.
 
 Printați fiecare diagonală pe linie nouă.
 
-## Date de intrare
+## Intrare
 
 Pe prima linie, se găsește un  singur număr întreg, **R**, care reprezintă numărul de rânduri ale matricei. 
 
@@ -2938,7 +2938,7 @@ Pe fiecare din următoarele **R** linii, se găsesc **C** numere separate prin s
 
 Țineți cont de faptul că **R** și **C** ar putea avea valori diferite.
 
-## Date de ieșire
+## Ieșire
 
 Datele de ieșire constau în R linii, fiecare constând în exact C caractere, separate prin spațiu, reprezintând diagonalele inversate ale matricei.
 
@@ -2946,8 +2946,8 @@ Datele de ieșire constau în R linii, fiecare constând în exact C caractere, 
 
 Toate numerele întregi se află în intervalul `[1 ... 1000]`
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 3 4 | 10 |
 | 21 20 18 15 | 11 12 |
@@ -2956,13 +2956,13 @@ Toate numerele întregi se află în intervalul `[1 ... 1000]`
 |  | 19 20 |
 |  | 21 |
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 1 3 | 1 |
 | 3 2 1 | 2 |
 |  | 3 |
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 3 3 | 10 |
 | 18 17 15 | 11 12 |
@@ -3294,13 +3294,13 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Cerință
+## Descriere
 Se dă o matrice (un tablou bidimensional) cu caractere alfanumerice de tip literă mică ( `a-z` , `0-9` ), o poziție de start – definită de un rând de start `startRow` și o coloană de start `startCol` – precum și un simbol de umplere `fillChar`.
 
 Să presupunem că inițial simbolul `startChar` se află la rândul `startRow` și coloana `startCol`.
@@ -3314,7 +3314,7 @@ Scrieți un program care, începând de la simbolul aflat la rândul `startRow` 
 
 Odată ce găsiți toate acele poziții, puteți să le schimbați în simbolul `fillChar`.
 
-## Date de intrare
+## Intrare
 
 Pe prima linie, se vor introduce 2 numere întregi - numărul de rânduri **R** și numărul de coloane **C**.
 
@@ -3324,7 +3324,7 @@ Pe următoarea linie, se va introduce un singur caracter – simbolul `fillChar`
 
 Pe ultima linie, se vor introduce 2 numere întregi – `startRow` și `startCol` – separate prin spațiu.
 
-## Date de ieșire
+## Ieșire
 
 Datele de ieșire constau în **R** linii, fiecare constând în exact **C** caractere, **nefiind separate** prin spații, reprezentând matricea după finalizarea operației de umplere.
 
@@ -3341,8 +3341,8 @@ Toate simbolurile din matricea cu date de intrare vor fi caractere alfanumerice 
 
 Pentru unele teste, puteți rezolva problema utilizând o metodă simplă, însă soluția completă poate fi obținută utilizând **Stiva**, **Coada**, **DFS**, sau **BFS**.
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 5 3 | xxx |
 | a a a | xxx |
@@ -3353,7 +3353,7 @@ Pentru unele teste, puteți rezolva problema utilizând o metodă simplă, îns�
 | x |  |
 | 0 0 |  |
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 5 3 | aaa |
 | a a a | aaa |
@@ -3364,7 +3364,7 @@ Pentru unele teste, puteți rezolva problema utilizând o metodă simplă, îns�
 | x |  |
 | 2 1 |  |
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 5 6 | oo11oo |
 | o o 1 1 o o | o1331o |
@@ -3375,7 +3375,7 @@ Pentru unele teste, puteți rezolva problema utilizând o metodă simplă, îns�
 | 3 |  |
 | 2 1 |  |
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 5 6 | oooooo |
 | o o o o o o | ooo1oo |

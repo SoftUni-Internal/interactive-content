@@ -18,13 +18,13 @@ int[][] matrix = new int[rows][cols];
 for (int row = 0; row < rows; row++) {
 
     // Read a new line with elements separated by space    
-     String[] inputTokens = scanner.nextLine().split(" ");
+    String[] inputTokens = scanner.nextLine().split(" ");
 
     // For-loop through the columns
     for (int column = 0; column < cols; column++) {
 
-    // Getting an element of the current row and column and assigning a value  
-    matrix[row][column] = Integer.parseInt(inputTokens[column]);
+        // Getting an element of the current row and column and assigning a value  
+        matrix[row][column] = Integer.parseInt(inputTokens[column]);
     }
 }
 ```
@@ -68,25 +68,25 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Cerință
+## Descriere
 Creați un program care citește două matrici cu elemente numere întregi, "vectori 2D", din consolă și le compară element cu element.
 
 Pentru o mai bună reutilizare a codului, puteți realiza compararea într-o metodă, care returnează **true** dacă sunt egale și **false**, în caz contrar.
 
-Fiecare definiție de matrice din consolă va conține o linie cu un număr întreg pozitiv `R` – numărul de rânduri ale matricei, și `C` – numărul de coloane – urmat de `R` linii ce conțin câte `C` numere, separate prin spații - **fiecare linie va avea un număr egal de elemente**.
+Fiecare definiție de matrice din consolă va conține o linie cu un număr întreg pozitiv `R` - numărul de rânduri ale matricei, și `C` - numărul de coloane - urmat de `R` linii ce conțin câte `C` numere, separate prin spații - **fiecare linie va avea un număr egal de elemente**.
 
 Matricele vor avea cel mult **10** rânduri și **10** coloane.  
 
 Printați "**equal**" dacă matricele sunt la fel, respectiv "**not equal**" dacă acestea sunt diferite.
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 2 3 | equal |
 | 1 2 3 |  |
@@ -95,7 +95,7 @@ Printați "**equal**" dacă matricele sunt la fel, respectiv "**not equal**" dac
 | 1 2 3 |  |
 | 2 1 3 |  |
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 2 3 | not equal |
 | 1 2 3 |  |
@@ -264,13 +264,13 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Cerință
+## Descriere
 Creați un program care citește o **matrice de numere de tip întreg din consolă**, apoi un număr și tipărește toate pozițiile pe care apare acel număr în matrice.
 
 Definirea matricei pe consolă va conține o linie cu două **numere întregi pozitive** `R` și `C` - numărul de rânduri și coloane din matrice, urmată de `R` linii, fiecare conținând `C` numere (**separate prin spații**), reprezentând fiecare linie a matricei.
@@ -282,14 +282,14 @@ Ar trebui să tipăriți fiecare poziție pe o singură linie. Prima dată, tip�
 Dacă numărul nu apare în matrice, tipăriți `not found`.
 
 ## Exemple
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 2 3 | 0 1 |
 | 1 2 3 | 1 1 |
 | 4 2 2 | 1 2 |
 | 2 |  |
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 2 3 | not found |
 | 1 -2 -3 |  |
@@ -440,13 +440,13 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Cerință
+## Descriere
 Creați un program care **citește o matrice din consolă și tipărește**:
   - Numărul rândurilor
   - Numărul coloanelor
@@ -456,8 +456,8 @@ Pe **prima linie**, o să aveți **dimensiunile** matricei, rânduri și coloane
 
 Pe **următoarele linii**,  o să aveți elementele pentru fiecare rând **separate printr-o virgulă și un spațiu**.
  
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 3, 6 | 3 |
 | 7, 1, 3, 3, 2, 1 | 6 |
@@ -579,26 +579,26 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Cerință
+## Descriere
 Creați un program care **citește o matrice din consolă**.
 
 Găsiți cea mai mare sumă a unei **submatrici 2x2**.
 
 **Tipăriți sbmatricea și suma acesteia.**
 
-Pe **prima linie**, o să aveți **dimensiunile** matricei, `rows` și `columns`,  **separate printr-o virgulă și un spațiu: ", "**.
+Pe **prima linie**, o să aveți **dimensiunile** matricei, `rows` și `columns`, **separate printr-o virgulă și un spațiu: ", "**.
 
 Pe **următoarele linii**,  o să aveți elementele pentru fiecare rând **separate printr-o virgulă și un spațiu: ", "**.
 
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 3, 6 | 9 8 |
 | 7, 1, 3, 3, 2, 1 | 7 9 |
