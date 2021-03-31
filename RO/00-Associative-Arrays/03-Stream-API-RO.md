@@ -402,7 +402,7 @@ There are **two** ways to sort collections:
 
 - Sortarea în ordine **ascendentă** (**Naturală**)
 
-```java live
+```java live no-template
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -426,7 +426,7 @@ public class Main {
 
 - Sortarea  în ordine **descendentă**:
 
-```java live
+```java live no-template
 import java.util.*;
 import java.util.stream.Collectors;
 
