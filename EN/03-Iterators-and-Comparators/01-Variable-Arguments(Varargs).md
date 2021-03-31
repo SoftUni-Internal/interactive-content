@@ -18,7 +18,7 @@ The varargs allow the method to accept **zero** or **multiple** arguments.
 
 Let us see the following example:
 
-```java live
+```java live no-template
 public class Main {
     static void display(String... values) {
         int numberOfArgs = values.length;
