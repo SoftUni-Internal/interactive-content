@@ -146,7 +146,7 @@ public class Car {
 
 The `equals()` method is used to determine if two objects are equal. 
 
-```java
+```java live
 Car firstCar = new Car("TESLA", "MODEL S");
 Car secondCar = new Car("BMW", "5 Series");
 
@@ -167,7 +167,7 @@ The `hashCode()` method returns the **integer** hash code value of the object.
 
 The hash code is always the same if the object has not change.
 
-```java
+```java live
 Car car = new Car();
 
 int hash = car.hashCode(); 
