@@ -48,7 +48,7 @@ După aceea, fiecare apel ulterior către metoda `find ()` va merge la următoar
 
 Uitați-vă la urmpătorul exemplu:
 
-```java live
+```java live no-template
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
@@ -80,7 +80,7 @@ Există **două** moduri de a înlocui un șablon cu **Regex**:
 
 - `replaceAll()` - Înlocuiește toate șirurile care se potrivesc expresiei regulate date cu șirul de înlocuire și returnează rezultatul
 
-```java live
+```java live no-template
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -99,7 +99,7 @@ public class Main {
 
 - `replaceFirst()` - înlocuiește primele subsecvențe potrivite din intrare cu valoarea șirului dat și returnează rezultatul
 
-```java live
+```java live no-template
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
