@@ -2208,7 +2208,7 @@ G 0 0
 
 [task-description]
 ## Descriere
-*You and your friends decide to create a Class that holds all the information about all of you, even your pokemon collection. Since you are good at writing code, they asked you to design that Class.*
+*Împreună cu prietenii voștri decideți să creați o Clasă care conține toate informațiile despre voi toți, chiar și colecția voastră pokemon. Deoarece sunteți priceput la a scrie cod, prietenii v-au rugat să vă ocupați de design-ul Clasei.*
 
 Din consolă, veți primi linii, până la comanda "**End**".
 
@@ -2774,7 +2774,7 @@ Abc7 Abcde 26/9/1974
 
 [task-description]
 ## Descriere
-*The people from a pet shelter need to have a catalog of their cats with the breed and special characteristics.*
+*Persoanele care se ocupă de un adăpost de animale doresc să aibă un catalog cu pisicile lor, care să specifice rasa și caracteristicile speciale ale acestora.*
 
 Sunt trei rase de pisici **"Siamese"**, **"Cymric"** și **"DomesticShorthair"**. 
 
