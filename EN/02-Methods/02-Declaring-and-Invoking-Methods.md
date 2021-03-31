@@ -41,13 +41,13 @@ In the following example, `printHello()` is used to print out `Hello World!` whe
 
 ```java live no-template
 public class MyClass {
-    public static void main(String[] args) {
-        printHello();
-    }
+  public static void main(String[] args) {
+    printHello();
+  }
 
-    public static void printHello() {
-        System.out.println("Hello World!");
-    }
+  public static void printHello() {
+    System.out.println("Hello World!");
+  }
 }
 ```
 
@@ -55,15 +55,15 @@ A method can be called as many times we need to:
 
 ```java live no-template
 public class MyClass {
-    public static void main(String[] args) {
-        printHello();
-        printHello();
-        printHello();
-    }
+  public static void main(String[] args) {
+    printHello();
+    printHello();
+    printHello();
+  }
 
-    public static void printHello() {
-        System.out.println("Hello World!");
-    }
+  public static void printHello() {
+    System.out.println("Hello World!");
+  }
 }
 ```
 [/slide]
