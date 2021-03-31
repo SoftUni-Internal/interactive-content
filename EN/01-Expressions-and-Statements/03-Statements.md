@@ -96,17 +96,11 @@ This can be useful when a comment is **too long** for a single line and would re
 
 We open them using a **forward slash**, followed by and an **asterisk**:
 
-```java live no-template
-class Main
-{
-    public static void main(String args[])
-    { 
-        System.out.println("Hello World! 🙋");
-        /*This comment 
-          takes up multiple 
-          lines*/
-    }
-}
+```java live
+System.out.println("Hello World! 🙋");
+/*This comment 
+  takes up multiple 
+  lines*/
 ```
 
 And close them using a **an asterisk and a forward slash**.
