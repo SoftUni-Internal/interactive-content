@@ -40,12 +40,12 @@ abstract class Animal {
 ```
 
 ``` java
-// Dog class extends Animal class
+// The Dog class extends the Animal class.
 public class Dog extends Animal {
 
-//It must declare and implement the abstract method
+// It must declare and implement the abstract method.
   public void sound(){
-	  System.out.println("Woof, Woof");
+    System.out.println("Woof, Woof");
   }
 }
 ```
@@ -53,15 +53,17 @@ public class Dog extends Animal {
 ``` java
 public class Main {
   public static void main(String[] args) {
+  
     Animal dog = new Dog(); 
-    //Like with the inheritance we can contain the object in an interface that it implements.
+    // Just like with inheritance, we can contain the object in an interface that it implements.
+    
     dog.sound();
-    //We can use only the methods the interface declares.
+    // We can use only the methods the interface declares.
   }
 }
 ```
 
-Using the `abstract` classes, the **output** will be:
+Using these `abstract` classes, the **output** will be:
 
 ``` 
 Woof, Woof
@@ -78,24 +80,24 @@ Here is a simple example:
 
 ``` java
 interface Pet {
-    public void walk();
+  public void walk();
 }
 ```
 
 ``` java
 class Dog implements Pet {
-    public void walk() {
-        System.out.println("Walking....");
-    }
+  public void walk() {
+    System.out.println("Walking....");
+  }
 }
 ```
 
 ``` java
-    public class Main {
-    public static void main(String args[]) {
-        Pet pet = new Dog();
-        pet.walk();
-    }
+public class Main {
+  public static void main(String args[]) {
+    Pet pet = new Dog();
+    pet.walk();
+  }
 }
 ```
 
