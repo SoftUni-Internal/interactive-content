@@ -63,7 +63,7 @@ We can use comments to give **better clarity** about what we are trying to **ach
 
 There are **multiple ways** do declare them.
 
-## Single-line Comments
+- Single-line comments
 
 **Single-line comments** are by far the simplest.
 
@@ -88,7 +88,7 @@ System.out.println("The weather outside is sunny. 🌞");
 
 Anything on a commented line will be **ignored by the compiler**.
 
-## Multi-line Comments
+- Multi-line comments
 
 As the name suggests, **multi-line comments** can take up **multiple** lines.
 
@@ -117,7 +117,7 @@ We can also write single-line comments using this syntax:
 /*This is a single-line comment 👨🏼‍💻*/
 ```
 
-## Documentation Comments
+- Documentation comments
 
 **Documentation comments** are used when writing code for a software package.
 
