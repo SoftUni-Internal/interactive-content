@@ -172,13 +172,13 @@ for (String name : names){
 ```java live
 List<String> digimons = new ArrayList<>();
 
-names.add("Agumon");
-names.add("Ziramon");
-names.add("Burbomon");
+digimons.add("Agumon");
+digimons.add("Ziramon");
+digimons.add("Burbomon");
 
-names.remove(1); // removes element at index 1
+digimons.remove(1); // removes element at index 1
 
-for (String name : names){
+for (String digimon : digimons){
   System.out.println(name);
 }
 ```
