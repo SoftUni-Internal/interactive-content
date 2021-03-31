@@ -271,7 +271,7 @@ System.out.println(bigDecimal1);
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Exact Sum of Real Numbers
+# Problemă cu Soluție: Exact Sum of Real Numbers
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-27-problem-and-solution-exact-sum-of-real-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
