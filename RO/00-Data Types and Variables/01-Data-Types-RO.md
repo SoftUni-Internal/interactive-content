@@ -161,19 +161,23 @@ Un bloc **începe** cu o acoladă stângă `{` și **se termină** cu o acoladă
 
 ## Exemplu
 ```java live no-template
-public static void main(String[] args) {
-  String outer = "I'm inside the Main()";
+public class Main {
 
-  //Begining of inner block
-  for (int i = 0; i < 10; i++) {
-      String inner = "I'm inside the loop";
-      System.out.println(inner); //print the result
-  }
-  //End of inner block
+    public static void main(String[] args) {
+        String outer = "I'm inside the Main()";
 
-  System.out.println(outer);
+        //Begining of inner block
+        for (int i = 0; i < 10; i++) {
+            String inner = "I'm inside the loop";
+            System.out.println(inner); //print the result
+        }
+        //End of inner block
 
-  // System.out.println(inner); Error
+        System.out.println(outer);
+
+        // System.out.println(inner); Error
+    }
+}
 ```
 
 [/slide]
