@@ -28,13 +28,8 @@ for (var item : collection) {
 Putem **imprima** o matrice cu **for-each**:
 
 ```Java live
-int[] numbers = {
-    1,
-    2,
-    3,
-    4,
-    5
-};
+int[] numbers = { 1, 2, 3, 4, 5 };
+
 for (int number: numbers) {
     System.out.println(number + " ");
 }
