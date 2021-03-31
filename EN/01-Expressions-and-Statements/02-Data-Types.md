@@ -60,6 +60,6 @@ int UserLoginCount;
 * The first letter could be either upper or lowercase
 ```java
 int users_count;
-string first_name;
+String first_name;
 ```
 [/slide]
