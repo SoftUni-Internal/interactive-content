@@ -1,22 +1,17 @@
 [slide hideTitle]
 
-# Aggregate Functions
+# The Aggregate Functions
 
-In this chapter, we will examine the **aggregate** functions.
 
-An aggregate function is used to performs a calculations on multiple values, then returning a single value.
+An **aggregate** function is used to performs calculations on multiple values then returning a single value.
 
 We have 5 main functions:
 
-- COUNT
-
-- SUM
-
-- MAX
-
-- MIN
-
-- AVG
+- COUNT()
+- SUM()
+- MAX()
+- MIN()
+- AVG()
 
 This type of functions allows us to build **summarized** data information from our database.
 
@@ -24,7 +19,7 @@ This type of functions allows us to build **summarized** data information from o
 
 Usually **aggregate** functions ignore **NULL** values.
 
-Let's take a look at the following example:
+**Example**:
 
 ``` java
 SELECT e.`department_id`, 
@@ -45,14 +40,14 @@ This SQL query will produce the following result:
 | 6 | 40900,0000 |
 | 7 | 9500,0000 |
 
-After knowing this, let's take a look at the functions and their syntax:
+After knowing this, let us take a look at the functions and their syntax:
 
 
 [/slide]
 
 [slide hideTitle]
 
-# COUNT Function
+## The COUNT() Function
 
 We use `COUNT()` function when we need to count values (**not nulls**) in one or more columns based on grouping criteria.
 
@@ -69,7 +64,7 @@ FROM `employees` AS e
 GROUP BY e.`department_id`;
 ```
 
-**Output:** from executing this query:
+**Output**:
 
 | department_id | name | manager_id |
 | --- | --- | --- |
@@ -95,9 +90,9 @@ GROUP BY e.`department_id`;
 
 [slide hideTitle]
 
-# SUM Function
+## The SUM() Function
 
-`SUM()` function sums all the values in a column.
+The `SUM()` function sums all the values in a column.
 
 [image assetsSrc="Built-in-Functions-Data-Aggregations(1).png" /]
 
@@ -109,7 +104,7 @@ FROM `employees` AS e
 GROUP BY e.`department_id`;
 ```
 
-**Output:** from the following query will be:
+**Output**:
 
 | department_id | TotalSalary |
 | --- | --- |
@@ -126,9 +121,9 @@ GROUP BY e.`department_id`;
 
 [slide hideTitle]
 
-# MAX Function
+# The MAX() Function
 
-`MAX()` function will take the maximum value from a column.
+The `MAX()` function will take the maximum value from a column.
 
 [image assetsSrc="Built-in-Functions-Data-Aggregations(2).png" /]
 
@@ -138,7 +133,7 @@ FROM `employees` AS e
  GROUP BY e.`department_id`;           
 ```
 
-**Output:**
+**Output**:
 
 | department_id | Max_salary |
 | --- | --- |
@@ -157,9 +152,9 @@ FROM `employees` AS e
 
 [slide hideTitle]
 
-# MIN Function
+# The MIN() Function
 
-`MIN()` function will take the minimum value from a column.
+The `MIN()` function will take the minimum value from a column.
 
 [image assetsSrc="Built-in-Functions-Data-Aggregations(3).png" /]
 
@@ -169,7 +164,7 @@ FROM `employees` AS e
 GROUP BY e.`department_id`;
 ```
 
-**Output:**
+**Output**:
 
 | department_id | Min_salary |
 | --- | --- |
@@ -187,9 +182,9 @@ GROUP BY e.`department_id`;
 
 [slide hideTitle]
 
-# AVG Function
+# The AVG() Function
 
-`AVG()` function will calculate the average value in a column.
+The `AVG()` function will calculate the average value in a column.
 
 [image assetsSrc="Built-in-Functions-Data-Aggregations(4).png" /]
 
