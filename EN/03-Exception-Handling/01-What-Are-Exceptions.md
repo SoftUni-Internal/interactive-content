@@ -65,9 +65,9 @@ There are two types of **Exceptions**:
 
 ```java 
   public static void main(String args[]) {
-    File file = new File("E://file.txt");
-    FileReader fr = new FileReader(file);
-  } //File not found Exception
+     File file = new File("E://file.txt");
+     FileReader fr = new FileReader(file);
+ } //File not found Exception //File not found Exception
 ```
 
 - **Unchecked** - an exception that occurs at the time of execution
@@ -75,11 +75,11 @@ There are two types of **Exceptions**:
 
 ```java 
   public static void main(String args[]) {
-    int num1=10;
-    int num2=0;
-    int res=num1/num2; //Throws ArithmeticException (dividing by 0)
-  System.out.println(res);
-  } //ArithmeticException
+     int num1 = 10;
+     int num2 = 0;
+     int res = num1 / num2; //Throws ArithmeticException (dividing by 0)
+     System.out.println(res);
+ } //ArithmeticException
 ```
 [/slide]
 

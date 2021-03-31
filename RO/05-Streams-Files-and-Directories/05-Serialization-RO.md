@@ -86,7 +86,7 @@ class Cube implements Serializable {
 
 [slide hideTitle]
 
-# Problemă cu soluție: Serializarea obiectului personalizat
+# Problemă cu Soluție: Serialize Custom Object
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-45-Serialize-custom-object-Problem-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

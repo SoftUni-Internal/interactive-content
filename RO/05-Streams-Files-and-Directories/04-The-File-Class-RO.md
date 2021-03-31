@@ -1,7 +1,7 @@
-# Clasa de fișiere
+# Clasa de Fișiere
 
 [slide hideTitle]
-# Clasa de fișiere în Java
+# Clasa de Fișiere în Java
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-34-35-File-Class-In-Java-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -30,7 +30,7 @@ Unele dintre metodele **utile** din clasa **Fișier** sunt:
 
 
 [slide hideTitle]
-# Problemă cu soluție: Listarea fișierelor
+# Problemă cu Soluție: List Files
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-36-list-files-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -49,12 +49,12 @@ Creați un program care listează numele și dimensiunile fișierelor (**în oct
 Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**.
 
 
-## Exemple
+## Exemplu
 
-## Input:
+## Intrare
 [image assetsSrc="streams-files-directories-example-input.png" /]
 
-## Output:
+## Ieșire
 input.txt: [size in bytes] 
 output.txt: [size in bytes]
 

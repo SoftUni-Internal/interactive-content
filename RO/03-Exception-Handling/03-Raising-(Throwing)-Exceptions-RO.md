@@ -53,10 +53,10 @@ try {
 
 ```java
 try {
-   Integer.parseInt(str);
+    Integer.parseInt(str);
 } catch (NumberFormatException ex) {
-   System.out.println("Parse failed!");
-   throw ex; // Re-throw the caught exception
+    System.out.println("Parse failed!");
+    throw ex; // Re-throw the caught exception
 }
 ```
 
@@ -64,18 +64,18 @@ try {
 
 ```java
 public static double sqrt(double value) {
-  if (value < 0)
-    throw new IllegalArgumentException(
-			"Sqrt for negative numbers is undefined!");
-  return Math.sqrt(value);
+    if (value < 0)
+        throw new IllegalArgumentException(
+            "Sqrt for negative numbers is undefined!");
+    return Math.sqrt(value);
 }
 public static void main(String[] args) {
-  try {
-     sqrt(-1);
-  } catch (IllegalArgumentException ex) {
-     System.err.println("Error: " + ex.getMessage());
-     ex.printStackTrace();
-  }
+    try {
+        sqrt(-1);
+    } catch (IllegalArgumentException ex) {
+        System.err.println("Error: " + ex.getMessage());
+        ex.printStackTrace();
+    }
 }
 ```
 [/slide]
@@ -111,15 +111,15 @@ De exemplu:
 
 ```java
 public class Person {
-   private String firstName;
-   private String lastName;
-   private int age;
+    private String firstName;
+    private String lastName;
+    private int age;
 
-   public Person (String firstName, String lastName, int age) {
-       // TODO: add setters and validate data
-   }
+    public Person(String firstName, String lastName, int age) {
+        // TODO: add setters and validate data
+    }
 
-   //TODO: add getters and setters
+    //TODO: add getters and setters
 }
 ```
 
@@ -142,33 +142,33 @@ De exemplu, dacă este introdus un nume gol, o excepție adecvată poate fi **Il
 Exemplu de validare a **prenumelui** (numele de familie este analog):
 
 ```java
-private void setFirstName (String firstName) {
-   if (firstName.isBlank ()) {
-      throw new IllegalArgumentException ("The first name cannot be null or empty");
-   }
+private void setFirstName(String firstName) {
+    if (firstName.isBlank()) {
+        throw new IllegalArgumentException("The first name cannot be null or empty");
+    }
 
-   this.firstName = firstName;
+    this.firstName = firstName;
 }
 ```
 Example for validating the **age**:
 
 ```java
-private void setAge (int age) {
-   if (age <0 || age > 120) {
-      throw new IllegalArgumentException ("Age should be in the range [O...120]");
-   }
+private void setAge(int age) {
+    if (age < 0 || age > 120) {
+        throw new IllegalArgumentException("Age should be in the range [O...120]");
+    }
 
-   this.age = age;
+    this.age = age;
 }
 ```
 
 Acum constructorul ar trebui să facă uz de setters în loc să modifice direct câmpurile private:
 
 ```java
-public Person (String firstName, String lastName, int age) {
-   this. setFirstName (firstName);
-   this.setLastName (lastName);
-   this.setAge (age);
+public Person(String firstName, String lastName, int age) {
+    this.setFirstName(firstName);
+    this.setLastName(lastName);
+    this.setAge(age);
 }
 ```
 
@@ -184,12 +184,12 @@ Testați unul câte unul cazurile nevalide comentând celelalte linii de cod nev
 
 ```java
 public static void main(String[] args) {
-   Person peter = new Person ( firstName: "Franco", lastName : "Aimee", age: 19);
+    Person peter = new Person(firstName: "Franco", lastName: "Aimee", age: 19);
 
-   Person noName = new Person ( firstName: " " lastName: "Aimee", age: 19);
-   Person noLastName = new Person ( firstName: "Franco", lastName: null, age: 19);
-   Person negativeAge new Person ( firstName: "Franco", lastName: "Aimee", age: -1);
-   Person toooldForThisProgram = new Person ( firstName: "Franco", lastName: "Aimee", age: 121);
+    Person noName = new Person(firstName: " ", lastName: "Aimee", age: 19);
+    Person noLastName = new Person(firstName: "Franco", lastName: null, age: 19);
+    Person negativeAge new Person(firstName: "Franco", lastName: "Aimee", age: -1);
+    Person validPerson = new Person(firstName: "Franco", lastName: "Aimee", age: 121);
 }
 ```
 
@@ -205,9 +205,9 @@ Exemplu:
 
 ```java
 try {
-      Person noName = new Person ( firstName: " ", lastName: "Aimee", age: 19);
+    Person noName = new Person(firstName: " ", lastName: "Aimee", age: 19);
 } catch (IllegalArgumentException ex) {
-      System.out.println("Exception thrown: " + ex.getMessage());
+    System.out.println("Exception thrown: " + ex.getMessage());
 }
 
 // Result in console:

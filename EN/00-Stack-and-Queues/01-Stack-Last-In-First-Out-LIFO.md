@@ -350,10 +350,8 @@ Solve the problem **using a Stack**.
 | **Input** | **Output** |
 | --- | --- |
 | 2 + 5 + 10 - 2 - 1 | 14 |
-
-| **Input** | **Output** |
-| --- | --- |
 | 2 - 2 + 5 | 5 |
+
 
 ## Hints
 - Use an `ArrayDeque<>`
@@ -455,11 +453,8 @@ Implement an elegant solution **using a Stack**.
 | **Input** | **Output** |
 | --- | --- |
 | 10 | 1010 |
-
-
-| **Input** | **Output** |
-| --- | --- |
 | 1024 | 10000000000 |
+
 
 ## Hints
 - If the given number is 0, print 0

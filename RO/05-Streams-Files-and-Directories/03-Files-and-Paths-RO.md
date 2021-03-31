@@ -1,8 +1,8 @@
-# Fișiere și directoare
+# Fișiere și Directoare
 
 [slide hideTitle]
 
-# Fișiere și rute
+# Fișiere și Rute
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-28-Files-and-Paths-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -110,7 +110,7 @@ Files.write(outPath, lines);
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: sortarea liniilor
+# Problemă cu Soluție: Sort Lines
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-32-Sort-Lines-Problem-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

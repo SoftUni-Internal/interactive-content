@@ -124,7 +124,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -135,7 +135,7 @@ Scrieți un program care necesită 2 tipuri de instrucțiuni pentru browser:
 
 - Normal navigation: a **URL**, provided in **string format**
 
-- Șirul ”**back**” care setează adresa URL curentă la ultima adresă URL setată
+- Șirul "**back**" care setează adresa URL curentă la ultima adresă URL setată
 
 După fiecare instrucțiune, programul trebuie să **tipărească adresa URL curentă**.
 
@@ -144,8 +144,8 @@ Dacă instrucțiunea **back** nu poate fi executată, tipăriți `no previous UR
 Introducerea **se termină** cu comanda `Home`, apoi pur și simplu trebuie să **opriți programul**.
 
 
-## Examples
-| **Input** | **Output** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | `https//softuni.org/` | `https//softuni.org/` |
 | `back` | `no previous URLs` |
@@ -324,7 +324,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -337,14 +337,12 @@ Nu vor exista paranteze sau prioritate operator.
 
 Rezolvați problema **using a Stack**.
 
-## Examples
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | 2 + 5 + 10 - 2 - 1 | 14 |
-
-| **Input** | **Output** |
-| --- | --- |
 | 2 - 2 + 5 | 5 |
+
 
 ## Sugestii
 - Folosiți un `ArrayDeque<>`
@@ -430,7 +428,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -445,15 +443,13 @@ Implementați o soluție elegantă **folosind un Stack**.
 **Printați reprezentarea binară** pe consolă.
 
 
-## Examples
-| **Input** | **Output** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 10 | 1010 |
-
-
-| **Input** | **Output** |
-| --- | --- |
 | 1024 | 10000000000 |
+
+
 
 ## Indicii
 - Dacă numărul dat este 0, printați 0
@@ -547,7 +543,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -558,15 +554,15 @@ Vi se oferă o expresie **aritmetică** cu **paranteze**.
 
 Scanați prin șir și **extrageți** fiecare **sub-expresie**.
 
-## Examples
-| **Input** | **Output** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | `1 + (2 - (2 + 3) * 4 / (3 + 1)) * 5` | `(2 + 3)` |
 |  | `(3 + 1)` |
 |  | `(2 - (2 + 3) * 4 / (3 + 1))` |
 
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | `(2 + 3) - (2 + 3)` | `(2 + 3)` |
 |  | `(2 + 3)` |

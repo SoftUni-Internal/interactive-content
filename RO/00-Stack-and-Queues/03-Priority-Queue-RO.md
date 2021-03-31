@@ -17,7 +17,8 @@ Este important să rețineți că elementele unei cozi de prioritate **pot să n
 
 Cu toate acestea, elementele sunt **întotdeauna recuperate în ordine sortată**
 
-Let's see the following example:
+Să vedem următorul exemplu:
+
 ```java live
 PriorityQueue<Integer> numbers = new PriorityQueue<>();
         

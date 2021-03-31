@@ -52,9 +52,9 @@ FileInputStream fileStream = new FileInputStream(path);
 int oneByte = fileStream.read();
 
 while (oneByte >= 0) {
-  System.out.println(oneByte);
-  
-  oneByte = fileStream.read();
+    System.out.println(oneByte);
+
+    oneByte = fileStream.read();
 }
 ```
 
@@ -110,14 +110,13 @@ try {
         oneByte = inputStream.read();
     }
 } // specifying the exact type of exception
-  catch (IOException ex) {
+catch (IOException ex) {
     // handling the exception
     System.out.println("File not found!");
 
-}
-  finally {
+} finally {
     if (inputStream != null) {
-      // closing the stream
+        // closing the stream
         inputStream.close();
     }
 }
@@ -147,13 +146,13 @@ String path = "C:\\input.txt";
 
 // opening a stream inside of the braces of the try block
 try (InputStream in = new FileInputStream(path)) {
-    int oneByte = in.read();
+    int oneByte = in .read();
     while (oneByte >= 0) {
         System.out.print(oneByte);
-        oneByte = in.read();
-      }
-  } catch (IOException e) {
-        System.out.println("File not found!");
+        oneByte = in .read();
+    }
+} catch (IOException e) {
+    System.out.println("File not found!");
 }
 
 ```

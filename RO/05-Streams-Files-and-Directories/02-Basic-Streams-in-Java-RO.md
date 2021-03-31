@@ -1,9 +1,9 @@
-# Fluxuri de bază în Java
+# Fluxuri de Bază în Java
 
 
 [slide hideTitle]
 
-# Fluxuri de octeți
+# Fluxuri de Octeți
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-15-16-Byte-Stream-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -29,7 +29,7 @@ Chiar daca există multe clase legate de fluxurile de octețit insa cele mai fre
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Copierea octeților
+# Problemă cu Soluție: Copy Bytes
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-17-Copy-Bytes-Problem-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -50,8 +50,8 @@ Ar trebui să aveți deja toate resursele necesare descărcate de la cerința pr
 
 Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**.
 
-## Exemple
-| **Input** | **Output** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | On January 1 , 1533 , Michael Angelo, then fifty-seven years old, writes | 79110 749711011797114121 49 44 49535151 44 771059910497101108 6511010310110811144 116104101110 10210510211612145115101118101110 12110197114115 11110810044 119114105116101115 |
 
@@ -642,7 +642,7 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 
 [slide hideTitle]
 
-# Fluxuri de caractere 
+# Fluxuri de Caractere 
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-19-Character-Streams-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -683,7 +683,7 @@ try (FileReader inputStream = new FileReader(input);
 [/slide]
 
 [slide hideTitle]
-# Combinarea fluxurilor
+# Combinarea Fluxurilor
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-20-Combining-Streams-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -705,7 +705,7 @@ Aici ste folosit pentru a acoperi `FileInputStream` și, până acum, ați făcu
 
 
 [slide hideTitle]
-# Problemă cu soluție: extragerea numerelor întregi
+# Problemă cu Soluție: Extract Integers
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-21-Extract-integers-Problem-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -725,8 +725,8 @@ Ar trebui să aveți deja toate resursele necesare descărcate de la cerința pr
 
 Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**.
 
-## Exemple
-| **Input** | **Output** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | On January 1 , 1533 , Michael Angelo, then fifty-seven years old, writes | 1 |
 | … | 1533 |
@@ -796,7 +796,7 @@ Fluxul de bufere poate acoperi un flux de caractere și ne poate oferi acces la 
 Există patru clase de fluxuri de bufere utilizate pentru a acoperi fluxuri nebuferate:
 
  - **BufferedInputStream** și **BufferedOutputStream** creez  bufere de **fluxuri de octeți**
- - **BufferedReader** și **BufferedWriter** creez  bufere de **fluxuri de caractere**.
+ - **BufferedReader** și **BufferedWriter** creez  bufere de **fluxuri de caractere**
 
 Să ne uitam la următorul exemplu:
 
@@ -811,7 +811,7 @@ Acest lucru va crește semnificativ **performanța** aplicațiilor noastre.
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: scrieți fiecare al treilea rând
+# Problemă cu soluție: Write Every Third Line
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-24-Write-Every-3rd-Line-Problem-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -821,7 +821,7 @@ Acest lucru va crește semnificativ **performanța** aplicațiilor noastre.
 [/code-editor]
 [task-description]
 ## Descriere
-Citiți fișierul dat, numit "**input.txt**" și scrieți într-un alt fișier toate liniile la care numărul este **divizibil cu 3 ]**.
+Citiți fișierul dat, numit "**input.txt**" și scrieți într-un alt fișier toate liniile la care numărul este **divizibil cu 3**.
 
 Numerele de linie **încep de la unu**.
 
@@ -831,8 +831,8 @@ Ar trebui să aveți deja toate resursele necesare descărcate de la cerința pr
 
 Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**
 
-## Exemple
-| **Input** | **Output** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | On January 1 , 1533 ,  | then fifty-seven years old,  |
 | Michael Angelo,  | Tommaso de' Cavalieri,  |
@@ -1058,11 +1058,11 @@ Java oferă suport pentru I/O standard, unde programul utilizatorului poate prel
 
 Platforma Java acceptă trei fluxuri standard, atașate la consolă.
 
-**Standard Input** − `System.in` este un **InputStream** care este de obicei este conectat la intrarea de la tastatură a programelor de consolă.
+**Standard Input** - `System.in` este un **InputStream** care este de obicei este conectat la intrarea de la tastatură a programelor de consolă.
 
-**Standard Output** − `System.out` este adesea folosit din programe numai pentru consolă ca o modalitate de a afișa rezultatul execuției lor către utilizator.
+**Standard Output** - `System.out` este adesea folosit din programe numai pentru consolă ca o modalitate de a afișa rezultatul execuției lor către utilizator.
 
-**Standard Error** − `System.err` este utilizat pentru a afișa datele de eroare produse de programul utilizatorului.
+**Standard Error** - `System.err` este utilizat pentru a afișa datele de eroare produse de programul utilizatorului.
 
 Este posibil să aveți așteptari ca fluxurile standard să fiu fluxuri de caractere, dar, din motive istorice, acestea sunt **fluxuri de octeți**.
 

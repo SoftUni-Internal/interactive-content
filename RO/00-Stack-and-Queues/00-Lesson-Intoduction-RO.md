@@ -1,8 +1,8 @@
-# Introducerea lecției
+# Introducerea Lecției
 
 [slide hideTitle]
 
-# Conținutul lecției
+# Conținutul Lecției
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-1-2-Introduction-Table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

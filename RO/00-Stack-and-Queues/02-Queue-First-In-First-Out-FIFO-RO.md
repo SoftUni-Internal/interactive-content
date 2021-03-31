@@ -1,4 +1,4 @@
-# Coadă:primul Intrat Iese Primul (FIFO)
+# Coadă: Primul Intrat Iese Primul (FIFO)
 
 [slide hideTitle]
 
@@ -202,7 +202,7 @@ System.out.println(queueOfWords.contains("BMW 7"));
 [/slide]
 
 [slide hideTitle]
-# Privire în ansamblu asupra tuturor operațiilor
+# Privire în Ansamblu Asupra Tuturor Operațiilor
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-35-Queue-Overview-of-all-operations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -220,7 +220,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -243,15 +243,15 @@ Creați un program care simulează jocul Cartoful Fierbinte.
 
 La final, **tipăriți numele ultimului copil**.
 
-## Examples
-| **Input** | **Output** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Maria Peter Johny | Removed Peter |
 | 2 | Removed Maria |
 |  | Last is Johny |
 
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | George Peter Michael Steven Christian | Removed Christian |
 | 10 | Removed Peter |
@@ -260,7 +260,7 @@ La final, **tipăriți numele ultimului copil**.
 |  | Last is Steven |
 
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | George Peter Michael Steven Christian | Removed George |
 | 1 | Removed Peter |
@@ -404,7 +404,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -417,8 +417,8 @@ Dacă un **ciclu este prim**, doar **tipăriți numele copilului**.
 
 Ca înainte, tipăriți numele ultimului copil rămas. 
  
-## Examples
-| **Input** | **Output** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Maria Peter Tom | Removed Peter |
 | 2 | Prime Maria |
@@ -427,7 +427,7 @@ Ca înainte, tipăriți numele ultimului copil rămas.
 |  | Last is Tom |
 
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | George Peter Michael Steven Christian | Removed Christian |
 | 10 | Prime Peter |

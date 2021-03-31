@@ -1,4 +1,4 @@
-# Teme pentru acasă
+# Teme Pentru Acasă
 
 
 [slide hideTitle]
@@ -21,8 +21,8 @@ Descărcați **folderul de resurse** [here](https://videos.softuni.org/resources
 
 Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**.
 
-## Exemple
-| **Input** | **Output** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | On January 1 , 1533 ,  | 1452 |
 | Michael Angelo,  | 1397 |
@@ -86,8 +86,8 @@ Folosiți resursele primite anterior.
 
 Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**.
 
-## Exemple
-| **Input** | **Output** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | On January 1 , 1533 ,  | 12488 |
 | Michael Angelo,  |  |
@@ -118,8 +118,8 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 
 
 [slide hideTitle]
-# Problemă: CAPITAL LETTERS
-[code-task title="CAPITAL LETTERS" taskId="java-advanced-streams-files-exercise-capital-letters" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
+# Problemă: Capital Letters
+[code-task title="Capital Letters" taskId="java-advanced-streams-files-exercise-capital-letters" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
 [/code-editor]
 [task-description]
@@ -135,8 +135,8 @@ Folosiți resursele primite anterior.
 
 Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**.
 
-## Exemple
-| **Input** | **Output** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | On January 1 , 1533 ,  | ON JANUARY 1 , 1533 ,  |
 | Michael Angelo,  | MICHAEL ANGELO,  |
@@ -203,9 +203,9 @@ Folosiți resursele primite anterior.
 
 Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**.
 
-## Exemple
+## Exemplu
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | On January 1 , 1533 , Michael Angelo, then fifty-seven years old, writes | Vowels: 41 |
 | from Florence to Tommaso de' Cavalieri, a youth of noble Roman family, | Consonants: 72 |
@@ -254,8 +254,8 @@ Folosiți resursele primite anterior.
 
 Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**.
 
-## Exemple
-| **Input** | **Output** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Two households, both alike in dignity, | 1. Two households, both alike in dignity, |
 | In fair Verona, where we lay our scene, | 2. In fair Verona, where we lay our scene, |
@@ -322,8 +322,8 @@ Folosiți resursele primite anterior.
 
 Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**.
 
-## Exemple
-| **Input** | **Output** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | of which The | of - 6 |
 |  | which - 2 |
@@ -369,7 +369,7 @@ Use the previously provided resources.
 
 Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**.
 
-## Exemple
+## Exemplu
 | **File 1** | **File 2** | **Output** |
 | --- | --- |
 | 1 | 4 | 1 |
@@ -427,8 +427,8 @@ Folosiți resursele primite anterior.
 Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**.
 
 
-## Examples
-| **Input** | **Output** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |  | Folder size: 2878 |
 

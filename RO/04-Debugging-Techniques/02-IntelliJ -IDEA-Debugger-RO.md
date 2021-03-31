@@ -91,9 +91,9 @@ Din bara de instrumente putem **sări peste**, **să trecem peste**, **să intr�
 
 Iată comenzile rapide pentru cele mai utilizate acțiuni:
 
-- **Sari peste** - „**F8**”
-- **Ieșiți ** - „** Shift + F8**”
-- **Intră în** - „**F7**”
+- **Sari peste** - "**F8**"
+- **Ieșiți** - "**Shift + F8**"
+- **Intră în** - "**F7**"
 - **Reluați** - ⏯
 - **Pauză** - ⏸
 

@@ -1,8 +1,8 @@
-# Fluxuri de bază
+# Fluxuri de Bază
 
 [slide hideTitle]
 
-# Fluxuri de bază
+# Fluxuri de Bază
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-4-5-What-Is-Stream-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -40,7 +40,7 @@ Există **două tipuri fundamentale** de fluxuri:
 [/slide]
 
 [slide hideTitle]
-# Deschiderea unui flux de fișiere
+# Deschiderea Unui Flux de Fișiere
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-7-Opening-A-File-Stream-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -52,9 +52,9 @@ FileInputStream fileStream = new FileInputStream(path);
 int oneByte = fileStream.read();
 
 while (oneByte >= 0) {
-  System.out.print(oneByte);
-  
-  oneByte = fileStream.read();
+    System.out.println(oneByte);
+
+    oneByte = fileStream.read();
 }
 ```
 
@@ -84,7 +84,7 @@ Printarea valorii variabilei oneByte în consolă nu e necesară, dar, în acest
 [/slide]
 
 [slide hideTitle]
-# Închiderea unui flux de fișiere
+# Închiderea Unui Flux de Fișiere
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-8-9-Closing-A-File-Stream-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -100,19 +100,22 @@ String path = "C:\\input.txt";
 InputStream inputStream = null;
 
 try {
+    // opening a stream might cause an exception if the file is missing or corrupted
+    // or some other circumstances might trip us in our efforts of reading it
     inputStream = new FileInputStream(path);
     int oneByte = inputStream.read();
     while (oneByte >= 0) {
         System.out.print(oneByte);
         oneByte = inputStream.read();
     }
-} 
-  catch (IOException ex) {  
+} // specifying the exact type of exception
+catch (IOException ex) {
+    // handling the exception
     System.out.println("File not found!");
 
-}
-  finally {
-    if (inputStream != null) {      
+} finally {
+    if (inputStream != null) {
+        // closing the stream
         inputStream.close();
     }
 }
@@ -143,13 +146,13 @@ String path = "C:\\input.txt";
 
 // opening a stream inside of the braces of the try block
 try (InputStream in = new FileInputStream(path)) {
-    int oneByte = in.read();
+    int oneByte = in .read();
     while (oneByte >= 0) {
         System.out.print(oneByte);
-        oneByte = in.read();
-      }
-  } catch (IOException e) {
-        System.out.println("File not found!");
+        oneByte = in .read();
+    }
+} catch (IOException e) {
+    System.out.println("File not found!");
 }
 
 ```
@@ -157,7 +160,7 @@ try (InputStream in = new FileInputStream(path)) {
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: citiți fișierul
+# Problemă cu Soluție: Read File
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-10-read-file-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -173,19 +176,19 @@ Aveți un fișier numit "**input.txt**" (din the Resources - Folder).
 
 **Citiți** și **imprimați** tot conținutul său ca o secvență de octeți (reprezentarea binară a codului ASCII pentru fiecare caracter) separate printr-o singură virgulă.
 
-## ## Instrucțiuni
+## Instrucțiuni
 
 Există un fișier zip cu resurse pentru toate exercițiile, pe care trebuie să îl utilizați.
 
 Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**.
 
 
-## Exemple
-| **Input** | **Output** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | On January 1 , 1533 , Michael Angelo, then fifty-seven years old, writes… | 11101111 10111011 10111111 1001111 1101110 100000 1001010 1100001 1101110 1110101… |
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Two households, both alike in dignity, | 1010100 1110111 1101111 100000 1101000 1101111 1110101 1110011 1100101 1101000… |
 
@@ -240,7 +243,7 @@ try (FileInputStream fileStream = new FileInputStream(path)) {
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: scrieți în fișier
+# Problemă cu Soluție: Write to File
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-12-Write-To-File-Problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -262,13 +265,13 @@ Ar trebui să aveți deja toate resursele necesare descărcate de la cerința pr
 
 Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**.
 
-## Examples
-| **Input** | **Output** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | On January 1 , 1533 , Michael Angelo, then fifty-seven years old, writes | On January 1  1533  Michael Angelo then fifty-seven years old writes |
 
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Two households, both alike in dignity. | Two households both alike in dignity |
 | In fair Verona, where we lay our scene. | In fair Verona where we lay our scene |

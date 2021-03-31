@@ -26,10 +26,6 @@ Add the input numbers to a stack and **pop** them.
 | **Input** | **Output** |
 | --- | --- |
 | 1 2 3 4 5 | 5 4 3 2 1 |
-
-
-| **Input** | **Output** |
-| --- | --- |
 | 1 | 1 |
 
 [/task-description]
@@ -1334,16 +1330,9 @@ You will be given three types of parentheses: `(`,  `{`, and `[`.
 | **Input** | **Output** |
 | --- | --- |
 | `{[()]}` | YES |
-
-
-| **Input** | **Output** |
-| --- | --- |
 | `{[(])}` | NO |
-
-
-| **Input** | **Output** |
-| --- | --- |
 | `{{[[(())]]}}` | YES |
+
 
 [/task-description]
 [code-io /]
@@ -1479,13 +1468,7 @@ If you want to figure out how to skip those unnecessary calculations, you can le
 | **Input** | **Output** |
 | --- | --- |
 | 5 | 8 |
-
-| **Input** | **Output** |
-| --- | --- |
 | 10 | 89 |
-
-| **Input** | **Output** |
-| --- | --- |
 | 21 | 17711 |
 
 [/task-description]
@@ -1892,20 +1875,8 @@ Use the famous [Shunting-yard algorithm](https://en.wikipedia.org/wiki/Shunting-
 | **Input** | **Output** |
 | --- | --- |
 | `5 / ( 3 + 2 )` | `5 3 2 + /` |
-
-
-| **Input** | **Output** |
-| --- | --- |
 | `1 + 2 + 3` | `1 2 + 3 +` |
-
-
-| **Input** | **Output** |
-| --- | --- |
 | `7 + 13 / ( 12 - 4 )` | `7 13 12 4 - / +` |
-
-
-| **Input** | **Output** |
-| --- | --- |
 | `( 3 + x ) - y` | `3 x + y -` |
 
 [/task-description]

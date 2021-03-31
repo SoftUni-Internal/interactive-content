@@ -1,5 +1,4 @@
-# Temă
-
+# Teme Pentru Acasă
 [slide hideTitle]
 # Problemă: Reverse Number with a Stack
 [code-task title="Reverse Number with a Stack" taskId="java-advanced-stack-and-queue-Reverse-Number-with-a-Stack" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -9,28 +8,25 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Cerință
+## Descriere
 Scrieți un program care citește **N numere întregi** din consolă și **le inversează prin intermediul unei stive**.
 
 Utilizați clasa `ArrayDeque <Integer>`.
 
 Doar introduceți datele de intrate în stivă și apoi le scoateți pe rând.
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 1 2 3 4 5 | 5 4 3 2 1 |
-
-
-| **Date de intrare** | **Date de ieșire** |
-| --- | --- |
 | 1 | 1 |
+
 
 [/task-description]
 [code-io /]
@@ -103,7 +99,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
+## Descriere
 Vi se va da un număr întreg **N**, care reprezintă **numărul de elemente de adăugat în stivă**, un întreg **S**, reprezentând **numărul de elemente de scos mai apoi din stivă** și, în final, un număr întreg **X** , un element **despre care va trebui să verificați dacă se află sau nu în stivă**.
 
 Dacă e, printăm **true** în consolă.
@@ -120,13 +116,13 @@ Dacă nu, printăm cel mai mic element prezent la momentul respectiv în stivă.
 - Pe o singură linie se printează **true** dacă **X** e prezent în stivă sau, în caz contrar, **se printează cel mai mic** element din stivă.
 - Dacă stiva e goală, printăm 0.
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** | **Comentarii** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- | --- |
 | 5 2 13 | true | Trebuie să **adăugăm 5** elemente. Apoi scoatem **2** dintre ele. În final, trebuie să verificăm dacă 13 se găsește în stivă. Din moment ce se află în stivă, printăm **true**. |
 | 1 13 45 32 4 |  |  |
 
-| **Date de intrare** | **Date de ieșire** | **Comentarii** |
+| **Intrare** | **Ieșire** |
 | --- | --- | --- |
 | 4 1 666 | 13 | Scoatem un element (666) și apoi verificăm dacă 666 e prezent în stivă. Dacă nu e, printăm cel mai mic element (13) |
 | 420 69 13 666 |  |  |
@@ -220,7 +216,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -231,9 +227,9 @@ Aveți o secvență nulă și vi se vor da **N** comenzi.
 
 Fiecare comandă e de unul dintre tipurile următoare:
 
-- `1 X` - **Adăugăm** elementul **X** pe stivă.
-- `2` - **Ștergem** elementul ce se găsește în vârful stivei.
-- `3` - **Printăm** elementul din stivă.
+- `1 X` - **Adăugăm** elementul **X** pe stivă
+- `2` - **Ștergem** elementul ce se găsește în vârful stivei
+- `3` - **Printăm** elementul din stivă
 
 ## Date de intrare
 
@@ -244,10 +240,10 @@ Fiecare comandă e de unul dintre tipurile următoare:
 
 ## Date de ieșire
 
-- Pentru fiecare comandă de `3` , **printăm elementul maxim** din stivă, pe o linie nouă.
+- Pentru fiecare comandă de `3`, **printăm elementul maxim** din stivă, pe o linie nouă.
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** | **Comentarii** |
+## Exemplu
+| **Intrare** | **Ieșire** | **Comentarii** |
 | --- | --- | --- |
 | 9 | 26 | 9 comenzi |
 | 1 97 | 91 | Adaugă 97 |
@@ -461,32 +457,32 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Cerință
+## Descriere
 Se dă un număr întreg **N**, reprezentând **numărul de elemente de adăugat în coadă**, un întreg **S** ce reprezintă **numărul de elemente de șters** din coadă și, în final, un număr întreg **X**, un element despre care trebuie să **verificați dacă se găsește în coadă**.
 
 Dacă e, se printează **true** în consolă, iar dacă nu e, **se printează cel mai mic element prezent în coadă la momentul respectiv**.
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** | **Comentarii** |
+## Exemplu
+| **Intrare** | **Ieșire** | **Comentarii** |
 | --- | --- | --- |
 | 5 2 32 | true | Trebuie să adăugăm **5** elemente.  |
 | 1 13 45 32 4 |  | Apoi **scoatem 2** din ele.  |
 |  |  | În final, trebuie să verificăm dacă 13 se găsește în coadă. Din moment ce se găsește, printăm **true**.  |
 
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 4 1 666 | 13 |
 | 666 69 13 420 |  |
 
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 3 3 90 | 0 |
 | 90 90 90 |  |
@@ -571,13 +567,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Cerință
+## Descriere
 Undeva în viitor, există o fabrică de robotică.
 
 Proiectul curent e linia de asamblare a roboților.
@@ -594,14 +590,14 @@ Dacă un produs trece de linie și **nu există un robot liber** pentru a-l prel
 
 Roboții **stau în linie în ordinea apariției lor**.
 
-## Date de intrare
+## Intrare
 
 - Pe prima linie, veți primi numele roboților și timpul lor de procesarer în formatul `numeRobot-timpDeProcesare;numeRobot-timpDeProcesare;numeRobot-timpDeProcesare`
 - Pe a doua linie, veți primi timpul de start, după formatul `hh:mm:ss`
 - Apoi, până la întâlnirea comenzii `End`, veți primi câte un produs pe linie.
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | ROB-15;SS2-10;NX8000-3 | ROB - detail \[08:00:01\] |
 | 8:00:00 | SS2 - glass \[08:00:02\] |
@@ -611,7 +607,7 @@ Roboții **stau în linie în ordinea apariției lor**.
 | apple |  |
 | End |  |
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | ROB-60 | ROB - detail \[08:00:00\] |
 | 7:59:59 | ROB - sock \[08:01:00\] |
@@ -1301,13 +1297,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Cerință
+## Descriere
 **Se dă o secvență ce constă în paranteze**. Determinați dacă **expresia e echilibrată**.
 
 O secvență de paranteze **e echilibrată dacă** fiecare paranteză deschisă poate fi asociată în mod unic cu o paranteză de închidere care apare după cealaltă.
@@ -1320,31 +1316,23 @@ Vi se vor da 3 tipuri de paranteze:  `(`,  `{`, și `[`.
 
 `{[(])}` - Acestea nu sunt paranteze echilibrate.
 
-## Date de intrare
+## Intrare
 
 - Fiecare dată de intrare constă într-o singură linie, secvența de paranteze.
 - `1 ≤ Lungimea secvenței ≤ 1000`
 - Fiecare caracter al secvenței va fi unul dintre următoarele:  `{`, `}`, `(`, `)`, `[`, `]`.
 
-## Date de ieșire
+## Ieșire
 
 - Pentru fiecare test pe cazuri, printați pe o linie nouă **"YES"** dacă parantezele sunt echilibrate. Altfel, printați **"NO"**.
 
 
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | `{[()]}` | YES |
-
-
-| **Date de intrare** | **Date de ieșire** |
-| --- | --- |
 | `{[(])}` | NO |
-
-
-| **Date de intrare** | **Date de ieșire** |
-| --- | --- |
 | `{{[[(())]]}}`| YES |
 
 [/task-description]
@@ -1436,13 +1424,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Cerință
+## Descriere
 Fiecare membru al **șirului lui Fibonacci** e calculat din **suma a doi membri precedenți**.
 
 Primele 2 elemente sunt 1, 1.
@@ -1460,13 +1448,13 @@ Ca să se oprească recursivitatea, trebuie să aibă un caz de oprire.
 
 Cazul de oprire al recursivității este `getFibonacci(1)` și trebuie să returneze 1. Se întâmplă la fel pentru getFibonacci(0).
 
-## Date de intrare
+## Intrare
 
 - Pe o singură linie, utilizatorul trebuie să introducă numărul dorit din șirul lui Fibonacci, N, unde `1 <= N <= 49` 
 
-## Date de ieșire
+## Ieșire
 
-- Datele de ieșire trebuie să fie al n-lea număr din șirul lui Fibonacci, începând de la 0.
+- Datele de ieșire trebuie să fie al n-lea număr din șirul lui Fibonacci, începând de la 0
 
 ## Indiciu
 
@@ -1474,17 +1462,11 @@ Pentru al n-lea număr din șirul lui Fibonacci, calculăm al `N - 1st` și al `
 
 Dacă doriți să vă dați seama cum puteți trece peste toate aceste calcule care nu sunt necesare, puteți căuta o tehnică numită [memoization](https://en.wikipedia.org/wiki/Memoization).
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 5 | 8 |
-
-| **Date de intrare** | **Date de ieșire** |
-| --- | --- |
 | 10 | 89 |
-
-| **Date de intrare** | **Date de ieșire** |
-| --- | --- |
 | 21 | 17711 |
 
 [/task-description]
@@ -1584,13 +1566,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Cerință
+## Descriere
 Vi se dă text gol.
 
 Cerința voastră e să implementați **4 tipuri de comenzi** legate de manipularea textului:
@@ -1600,7 +1582,7 @@ Cerința voastră e să implementați **4 tipuri de comenzi** legate de manipula
 - 3 \[index\] - **returnează** elementul de la poziția \[index\] din text
 - 4 - **anulează** ultima comandă neanulată de tip 1 sau 2 și returnează textul la starea dinaintea acelei operații
 
-### Date de intrare
+### Intrare
 
 - Prima linie conține **N** , numărul de operații, unde `1 ≤ N ≤ 105`
 - Fiecare din următoarele **N** linii conține numele operației, urmat de argumentul comenzii, dacă acesta există, separate de un spațiu, după formatul următor: `comandă argument`.
@@ -1608,12 +1590,12 @@ Cerința voastră e să implementați **4 tipuri de comenzi** legate de manipula
 - Toate caracterele date drept date de intrare sunt **caractere engleze**
 - E **garantat** că avem secvența de **operații de intrare posibile de realizat**
 
-### Date de ieșire
+### Ieșire
 
 - Pentru fiecare operație de tip `3`, printați o **singură linie cu caracterul returnat din acea operație**.
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** | **Comentarii** |
+## Exemplu
+| **Intrare** | **Ieșire** | **Comentarii** |
 | --- | --- | --- |
 | 8 | c | Există 8 operații. Inițial, textul e gol.  |
 | 1 abc | y | Lipim "abc" |
@@ -1860,13 +1842,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Cerință
+## Descriere
 Expresiile matematice sunt **scrise în notația infix** , de exemplu `5 / ( 3 + 2 )`.
 
 Totuși, acest tip de notație **nu e eficientă pentru procesarea computerelor** , deoarece mai întâi trebuie să evaluăm expresia din interiorul parantezelor, deci nu există multe mișcări în față sau în spate.
@@ -1875,35 +1857,23 @@ O metodă mai potrivită e **convertirea în așa-numita notație postfix** (num
 
 Implementați un **algoritm care convertește** expresia matematică **din notația infix în notația postfix**. Utilizați faimosul [algoritm Shunting-yard](https://en.wikipedia.org/wiki/Shunting-yard_algorithm).
 
-## Date de intrare
+## Intrare
 
 - Veți **primi o expresie pe o singură linie, constând în delimitatoare**
 - Delimitatoarele pot fi numere de la 0 la 9, variabile de la a la z, operatorii `+, -, *, /,` și parantezele ( sau )
 - Fiecare delimitator e **separat prin exact un spațiu**
 
-## Date de ieșire
+## Ieșire
 
 - **Datele de ieșire trebuie să fie pe o singură linie**, constând în **delimitatoare**, **separate prin exact un spațiu**.
 
 ## Exemple
-| **Date de intrare** | **Date de ieșire** |
+| **Iintrare** | **Ieșire** |
 | --- | --- |
-| 5 / ( 3 + 2 ) | 5 3 2 + / |
-
-
-| **Date de intrare** | **Date de ieșire** |
-| --- | --- |
-| 1 + 2 + 3 | 1 2 + 3 + |
-
-
-| **Date de intrare** | **Date de ieșire** |
-| --- | --- |
-| 7 + 13 / ( 12 - 4 ) | 7 13 12 4 - / + |
-
-
-| **Date de intrare** | **Date de ieșire** |
-| --- | --- |
-| ( 3 + x ) - y | 3 x + y - |
+| `5 / ( 3 + 2 )` | `5 3 2 + /` |
+| `1 + 2 + 3` | `1 2 + 3 +` |
+| `7 + 13 / ( 12 - 4 )` | `7 13 12 4 - / +` |
+| `( 3 + x ) - y` | `3 x + y -` |
 
 [/task-description]
 [code-io /]
@@ -1994,13 +1964,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Cerință
+## Descriere
 Vi se dau **N**  plante dintr-o grădină.
 
 Fiecare din aceste plante au un anumit nivelde pesticid.
@@ -2011,19 +1981,19 @@ Vi se dau valorile inițiale de pesticid și poziția fiecărei plante.
 
 Printați numărul de zile **după** care nu moare nicio plantă, i.e. timpul după care nu mai sunt plante cu mai mult pesticid decât planta din stânga lor.
 
-### Date de intrare
+### Intrare
 
 - Datele de intrare constau într-un număr întreg  **N**, care reprezintă numărul de plante.
 - Următoarea **linie unică** constă în **N** numere întregi, unde fiecare întreg reprezintă poziția și cantitatea de pesticid al fiecărei plante. `1 ≤ N ≤ 100000`
 - Cantitatea de pesticid dintr-o plantă e între 0 și 1000000000
 
-### Date de ieșire
+### Ieșire
 
 - Datele de ieșire constau într-o valoarea unică egală cu numărul de zile după care nu mai moare nicio plantă.
 
 
-## Exemple
-| **Date de intrare** | **Date de ieșire** | **Comentarii** |
+## Exemplu
+| **Intrare** | **Ieșire** | **Comentarii** |
 | --- | --- | --- |
 | 7 | 2 | Inițial, toate plantele sunt vii.  |
 | 6 5 8 4 7 10 9 |  | `Plants = {(6, 1), (5, 2), (8, 3), (4, 4), (7, 5), (10, 6), (9, 7)}`  |

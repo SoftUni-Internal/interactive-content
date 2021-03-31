@@ -8,9 +8,9 @@
 
 ```java 
 try {
-// Specify a piece of code logic that could raise an exception
+    // Specify a piece of code logic that could raise an exception 
 } catch (SomeException) {
-// Handle the caught exception
+    // Handle the caught exception
 }
 ```
 
@@ -21,13 +21,13 @@ try {
 ```java 
 String s = sc.nextLine();
 try {
-   Integer.parseInt(s);
-   System.out.printf("You entered a valid integer number %s.", s);
+    Integer.parseInt(s);
+    System.out.printf("You entered a valid integer number %s.", s);
 
 } catch (NumberFormatException ex) {
-   System.out.println("Invalid integer number!");
+    System.out.println("Invalid integer number!");
 } catch (NullPointerException ex) {
-   System.out.println("The input is null!");
+    System.out.println("The input is null!");
 } 
 ```
 
@@ -45,9 +45,9 @@ Vezi următorul exemplu:
 
 ```java 
 try {
-  // Specify a piece of code logic that could raise an exception 
+    // Specify a piece of code logic that could raise an exception 
 } catch (IndexOutOfBoundsException ae) {
-  // Handle the caught arithmetic exception
+    // Handle the caught arithmetic exception
 }
 ```
 - Codul din exemplu tratează **IndexOutOfBoundsException** și descendenții săi: 
@@ -62,13 +62,17 @@ String str = "Peter";
 
 try {
     Integer.parseInt(str);
+
 } catch (Exception ex) {
     System.out.println("Cannot parse the number!");
+
 } catch (NumberFormatException ex) {
     System.out.println("Invalid integer number!");
 }
 ```
-Ați înțeles? Nu puteți avea multiple instrucțiuni catch aici deoarece prin tratarea clasei **Exception** deja prindem toate excepțiile care o moștenesc, inclusiv NumberFormatException.
+Ați înțeles? 
+
+Nu puteți avea multiple instrucțiuni catch aici deoarece prin tratarea clasei **Exception** deja prindem toate excepțiile care o moștenesc, inclusiv NumberFormatException.
 
 Dacă eliminați acea parte din cod, ar trebui să ruleze fără probleme.
 
@@ -88,9 +92,9 @@ Specificați un fragment de logică a codului care ar putea ridica o excepție.
 
 ```java
 try {
-  // Specify a piece of code logic that could raise an exception 
+    // Specify a piece of code logic that could raise an exception 
 } catch (Exception ex) {
-  // Handle the caught exception
+    // Handle the caught exception
 }
 ``` 
 
@@ -118,18 +122,18 @@ try {
 
 ```java 
 static void testTryFinally() {
-  System.out.println("Code executed before try-finally.");
-  try {
-     String str = sc.nextLine();
-     Integer.parseInt(str);
-     System.out.println("Parsing was successful.");
-     return; // Exit from the current method
-  } catch (NumberFormatException ex) {
-     System.out.println("Parsing failed!");
-  } finally {
-     System.out.println("This cleanup code is always executed.");
-  }
-  System.out.println("This code is after the try-finally block.");
+    System.out.println("Code executed before try-finally.");
+    try {
+        String str = sc.nextLine();
+        Integer.parseInt(str);
+        System.out.println("Parsing was successful.");
+        return; // Exit from the current method
+    } catch (NumberFormatException ex) {
+        System.out.println("Parsing failed!");
+    } finally {
+        System.out.println("This cleanup code is always executed.");
+    }
+    System.out.println("This code is after the try-finally block.");
 }
 ```
 
