@@ -160,24 +160,20 @@ Convenția generală pentru domeniul de aplicare al unei variabile este că, est
 Un bloc **începe** cu o acoladă stângă `{` și **se termină** cu o acoladă dreaptă `}`.
 
 ## Exemplu
-```java live no-template
-public class Main {
+```java
+public static void main(String[] args) {
+  String outer = "I'm inside the Main()";
 
-    public static void main(String[] args) {
-        String outer = "I'm inside the Main()";
+  //Begining of inner block
+  for (int i = 0; i < 10; i++) {
+      String inner = "I'm inside the loop";
+      System.out.println(inner); //print the result
+  }
+  //End of inner block
 
-        //Begining of inner block
-        for (int i = 0; i < 10; i++) {
-            String inner = "I'm inside the loop";
-            System.out.println(inner); //print the result
-        }
-        //End of inner block
+  System.out.println(outer);
 
-        System.out.println(outer);
-
-        // System.out.println(inner); Error
-    }
-}
+  // System.out.println(inner); Error
 ```
 
 [/slide]
