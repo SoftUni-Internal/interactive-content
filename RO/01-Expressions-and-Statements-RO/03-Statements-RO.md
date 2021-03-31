@@ -56,9 +56,9 @@ sum = a + b;
 
 **Comentariile** sunt **instrucțiuni** speciale care **nu** sunt executate în timpul rulării.
 
-They are a way for programmers to write **notes** to themselves or other programmers.
+Acestea sunt un mod pentru programatori de a scrie **notițe** pentru ei înșiși sau pentru alți programatori.
 
-We can use comments to give **better clarity** about what we are trying to **achieve** with our code.
+Putem folosi comentariile pentru **a clarifica** care este scopul pe care vrem să îl atingem cu codul nostru.
 
 Există **mai multe moduri** de a le declara.
 
