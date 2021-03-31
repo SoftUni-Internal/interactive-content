@@ -150,7 +150,7 @@ public class Car {
 
 În java metoda `equals()` este utilizată pentru a compara egalitatea a două obiecte. 
 
-```java live
+```java
 Car firstCar = new Car("TESLA", "MODEL S");
 Car secondCar = new Car("BMW", "5 Series");
 
@@ -171,7 +171,7 @@ Metoda `hashCode()` returnează valoarea de cod hash a **întregului** al obiect
 
 Codul hash este întotdeauna același dacă obiectul nu se schimbă.
 
-```java live
+```java
 Car car = new Car();
 
 int hash = car.hashCode(); 
