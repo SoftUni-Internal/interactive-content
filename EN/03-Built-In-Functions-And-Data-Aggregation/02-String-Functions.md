@@ -80,7 +80,7 @@ ouftun
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/04.Built-In-Functions-And-Data-Aggregation-Lab.zip) **for this task.**
 
-Create a SQL query to find **books, which titles start with "The".** 
+Create an SQL query to find **books, which titles start with "The".** 
 
 **Order the result by id.** 
 
