@@ -38,7 +38,7 @@ static void printNumbers(int start, int end) {
 
 - The **call stack** - stores information about the active methods and the point where execution should return to after a method finishes running
 
-## In the next lesson, you will learn:
+## In the next lesson you will learn:
 
 - What **lists** are
 - **List** operations
