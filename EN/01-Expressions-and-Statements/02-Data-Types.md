@@ -37,27 +37,26 @@ In computer programming, a **naming convention** is a set of **rules** which we 
 
 The naming convention used in Java is called ***"camelCase"***.
 
-Diffferent naming conventions are used in different languages some are: pascal case, snake case. 
+Diffferent naming conventions are used in different languages. Some are: PascalCase, snake_case. 
 
 **camelCase** combines words by:
 * Capitalizing all words following the first one
-* There can be no speces in a name
+* Leaving no spaces between the words
 ```java
 int userLoginCount;
 ```
 
 **PascalCase** combines words by:
 * Capitalizing each word along with the first one
-* No speces can be contained in the name
+* Leaving no spaces between the words
 ```java
 int UserLoginCount;
 ```
 
-**sake_case** is another naming convention, which separates words by:
-* An underscore (_)
-* A name may hold no spaces
-* Each element's initial letter usually lowercased within the compound
-* The first letter could be either upper or lowercase
+**snake_case** is another naming convention, according to which:
+* Words are separated by an underscore (_)
+* No space should be left between the words
+* Each element's initial letter is usually lowercase
 ```java
 int users_count;
 String first_name;
