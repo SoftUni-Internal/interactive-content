@@ -17,15 +17,15 @@ When the method is called, we pass the parameter **firstName** to it, which is u
 
 ```java live no-template
 public class MyClass {
-    static void printName(String firstName) {
-        System.out.println(firstName + " Refsnes");
-    }
+  static void printName(String firstName) {
+    System.out.println(firstName + " Refsnes");
+  }
 
-    public static void main(String[] args) {
-        printName("Liam");
-        printName("Jenny");
-        printName("Anja");
-    }
+  public static void main(String[] args) {
+    printName("Liam");
+    printName("Jenny");
+    printName("Anja");
+  }
 }
 ```
 
@@ -37,8 +37,8 @@ Each parameter should be given a type followed by a name.
 
 ```Java
 public static void printStudent(String name, int age, double grade) {
-    System.out.printf("Student: %s; Age: %d, Grade: %.2f\n",
-        name, age, grade);
+  System.out.printf("Student: %s; Age: %d, Grade: %.2f\n",
+    name, age, grade);
 }
 ```
 
