@@ -1,6 +1,8 @@
 [slide hideTitle]
 # Consolă (Terminal)
 
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-13-14-reading-user-input-and-formatting-output-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 În general, **consola sistemului** reprezintă un terminal de text, ceea ce înseamnă că acceptă și vizibilizează doar **textul** fără elemente grafice, cum ar fi butoane, meniuri,
 
 De obicei, arată ca o fereastră de culoare neagră ca aceasta:
