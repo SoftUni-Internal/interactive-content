@@ -65,7 +65,7 @@ There are **multiple ways** do declare them.
 
 - Single-line comments
 
-**Single-line comments** are by far the simplest.
+**Single-line comments** have the simplest syntax.
 
 To declare one, we use **two forward slashes** `//`, followed by the comment:
 
