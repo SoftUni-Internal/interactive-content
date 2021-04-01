@@ -8,15 +8,15 @@
 
 ## In this lesson you will learn:
 
-**1. What Encapsulation is** 
+**1. What is Encapsulation** 
 
-- Benefits from using encapsulation
+- The benefits of using encapsulation
 
 **2. Access Modifiers**
 
-- What access modifiers are
+- Definition
 
-- Their types and usage
+- Types and usage
 
 **3. Validation**
 
@@ -24,12 +24,12 @@
 
 **4. Mutable and Immutable Objects**
 
-- What the difference between mutable and immutable objects is 
+- What is the difference between mutable and immutable objects 
 
-- Which objects are mutable and which - immutable
+- Distinguishing between the two
 
-**5. Keyword `final`**
+**5. The `final` keyword**
 
-- When to use the `final` keyword 
+- Uses of the `final` keyword 
     
 [/slide]
