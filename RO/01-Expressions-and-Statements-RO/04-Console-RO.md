@@ -134,12 +134,14 @@ JavaScript ne permite să formatăm numerele în virgulă mobilă.
 
 În exemplul următor vom formata numărul la două cifre după punctul zecimal, folosind metoda `toFixed(2)` :
 
-```js
+```js live
 function calculateSquareArea(input) {
   let a = Number(input);
   let area = a * a;
   console.log(area.toFixed(2));
 }
+
+calculateSquareArea(5);
 ```
 
 ## Folosirea Interpolării Dollar String
@@ -148,7 +150,7 @@ Putem formata text în JS folosind, de asemenea, următoarea sintaxă $. Aceasta
 Este încadrat de simbolurile back-tick (**\` \`**), în loc să fie scris între virgule sau ghilimele. 
 
 Putem folosi simbolul dolarului și acolade (`${expression}`):
-```js
+```js live
 let name = 'John'; 
 console.log(`Hi, ${name}`);
 ```
