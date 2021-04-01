@@ -1,6 +1,6 @@
 [slide hideTitle]
 
-# Mutable vs. Immutable Objects
+# Mutable and Immutable Objects
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-24-25-mutable-and-immutable-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -41,11 +41,11 @@ class Team {
 } 
 ```
 
-When we work with **reference types**, getters are quite **tricky**. 
+When we work with **reference types**, getters can get quite **confusing**. 
 
-When we **return our object**, we give a **reference** to its memory.
+When we **return an object**, it is actually a **reference** to its memory.
 
-That is why with this reference, we can change the **original memory** of the object, therefore changing the object itself.
+That is why with this reference, we could change the **original memory** containing the object, changing the object itself.
 
 ## Example
 
@@ -60,11 +60,11 @@ System.out.println(team.getPlayers().size());  // 0
 
 In this case, our field is **not safely encapsulated** and it can still be **changed**.
 
-The reason behind it is that the `List<>` is a reference type.
+The `List<>` structure is a reference type.
 
-That is why when we pass it with the `getter` we give the reference to the List's memory.
+When we pass it in the `getter` we give the reference to the List's memory.
 
-What happens is that although we **do not have a setter**, the list is still **mutable**.
+Although we **do not have a setter**, the list is still **mutable**.
 
 [/slide]
 
@@ -74,7 +74,7 @@ What happens is that although we **do not have a setter**, the list is still **m
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-28-imutable-fields-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- To secure our collection, we can return `Collections.unmodifiableList()`
+- To secure our collection, we can return: `Collections.unmodifiableList()`
   * This encloses our reference type and does not permit changes
 
 ```java
@@ -107,11 +107,11 @@ class Team {
 # Description
 Create a **Team** class. 
 
-Add to this team all the people you receive. 
+Add to this team all the player data that you receive from the input. 
 
-All people **younger** than 40 years old go in **the first team**, others go in **the reserve team**.
+All players **younger** than 40 years old go in **the first team**, all others go to **the reserve team**.
 
-At the end print first and reserve team sizes.
+At the end print both list sizes.
 
 The class should have **private fields** for:
 - **name: String**
@@ -127,7 +127,7 @@ The class should also have private method for setName and public methods for:
 - **getFirstTeam(): List(Person) (Collections.unmodifiableList)**
 - **getReserveTeam(): List(Person) (Collections.unmodifiableList)**
 
-## You should be able to use the class like this:
+## This class should be applicable in the following context:
 ```java
 Team team = new Team ( name: "Black Eagles");
 for (Person player : players) {
@@ -140,7 +140,7 @@ team.getFirstTeam().size() + "players");
 System.out.println("Reserve team have" + 
 team.getReserveTeam ().size() + "players");
 ```
-## You should NOT be able to use the class like this:
+## It should not function the following way:
 ```java
 Team team = new Team ( name: "Black Eagles");
 
@@ -156,8 +156,8 @@ for (Person player : players) {
 # Example
 | **Input** | **Output** |
 | --- | --- |
-| 5 | First team have 4 players |
-| George Air 20 2200 | Reserve team have 1 players |
+| 5 | The number of players on the main team is: 4.  |
+| George Air 20 2200 | The number of players on the reserve team is: 1.  |
 | Anderson Paak 57 3333 |  |
 | Lee Parker 27 600 |  |
 | Grigor Dimitrov 25 666.66 |  |
