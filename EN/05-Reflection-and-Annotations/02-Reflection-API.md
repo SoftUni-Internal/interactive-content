@@ -35,14 +35,6 @@ The `forName()` method takes the name of the class and returns the Class object.
 Class test = Class.forName("Dog");
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-# Class Name
-
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-10-class-name-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
 Now, let us obtain the `Class` name:
 
 
