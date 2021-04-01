@@ -11,7 +11,7 @@
 
 ```
 function calculateMonthSalary (days, salaryPerDay) {
-   // Write your code here
+   // Scrieți codul dvs. aici
 }
 
 ```
@@ -110,7 +110,7 @@ calculateMonthSalary(3, [10, 20, 30])
 
 ```
 function numberSequence (n, numbers) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 
@@ -214,7 +214,7 @@ Min number: -2
 
 ```
 function powerOfNumbers(p, n) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 
@@ -329,7 +329,7 @@ powerOfNumbers(5, 3)
 
 ```
 function equalPairs(n, numbers) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 
@@ -460,7 +460,7 @@ Yes, value=10
 
 ```
 function zigZagSum(n, numbers) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 
@@ -583,8 +583,8 @@ zigZagSum(5, [4564, 345, 456, 4563, 234])
 [code-editor language=javascript]
 
 ```
-function divideWithoutRemainder(n, numbers)) {
-  // Write your code here
+function divideWithoutRemainder(n, numbers) {
+  // Scrieți codul dvs. aici
 }
 ```
 
@@ -732,7 +732,7 @@ divideWithoutRemainder(10, [34, 12, 0, 453, 45, 2342, 654, 76, 2, 56])
 
 ```
 function vowelSum(n, chars) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 
@@ -860,7 +860,7 @@ vowelSum(7, ['a', 'e', 'c', 'q', 'i', 'u', 'o'])
 
 ```
 function rollercoaster(input) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 
@@ -977,7 +977,7 @@ Waiting...
 
 ```
 function multiply(input) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 
@@ -1170,7 +1170,7 @@ multiply(8)
 
 ```
 function solve(firstNumber, secondNumber) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 

@@ -8,7 +8,7 @@
 [code-editor language="javascript"]
 ```
 function calculateArea(input) {
-   // Write your code here
+   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -99,7 +99,7 @@ calculateArea(1)
 [code-editor language="javascript"]
 ```
 function currencyConverter (input) {
-   // Write your code here
+   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -192,7 +192,7 @@ currencyConverter(12.0)
 [code-editor language="javascript"]
 ```
 function areaOfTriangle (input) {
-   // Write your code here
+   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -274,7 +274,7 @@ areaOfTriangle(3.1416)
 [code-editor language="javascript"]
 ```
 function daysToMinutes (input) {
-   // Write your code here
+   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -367,7 +367,7 @@ daysToMinutes(9)
 [code-editor language="javascript"]
 ```
 function circleArea (input) {
-   // Write your code here
+   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -479,7 +479,7 @@ Perimeter = 59.06
 [code-editor language="javascript"]
 ```
 function landscape(input){
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]

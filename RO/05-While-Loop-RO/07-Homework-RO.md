@@ -14,7 +14,7 @@
 [code-editor language=javascript]
 ```
 function sumDigits(input) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -124,7 +124,7 @@ sumDigits(8)
 [code-editor language=javascript]
 ```
 function favoriteBook(favoditeBook, books) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -257,7 +257,7 @@ Book found!
 [code-editor language=javascript]
 ```
 function minAndMax(input) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -376,7 +376,7 @@ Min number: -5
 [code-editor language=javascript]
 ```
 function specialNumber(input) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -485,7 +485,7 @@ specialNumber('88')
 [code-editor language=javascript]
 ```
 function specialBonus(n, numbers) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 
 ```
@@ -600,7 +600,7 @@ specialBonus(11, [345, 546546756, 11, 456, 456])
 [code-editor language=javascript]
 ```
 function sequence(input) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 
 ```
@@ -739,7 +739,7 @@ sequence(10000)
 [code-editor language=javascript]
 ```
 function accountBalance(input) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 
 ```

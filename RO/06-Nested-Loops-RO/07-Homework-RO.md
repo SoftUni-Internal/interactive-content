@@ -11,7 +11,7 @@
 [code-editor language=javascript]
 ```
 function building(floors, rooms) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -192,7 +192,7 @@ A10 A11 A12
 [code-editor language=javascript]
 ```
 function passwords(input) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -299,7 +299,7 @@ passwords(15)
 [code-editor language=javascript]
 ```
 function magicNumber(input) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -459,7 +459,7 @@ magicNumber(14)
 [code-editor language=javascript]
 ```
 function travelling(input) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -625,7 +625,7 @@ Going to Albania!
 [code-editor language=javascript]
 ```
 function primeNumbers(firstNumber, secondNumber) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -743,7 +743,7 @@ primeNumbers(1, 9)
 [code-editor language=javascript]
 ```
 function uniquePinCodes(firstNumber, secondNumber, thirdNumber) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -964,7 +964,7 @@ uniquePinCodes(2, 3, 5)
 [code-editor language=javascript]
 ```
 function letterCombinations(firstLetter, lastLetter,  missedLetter) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -1068,7 +1068,7 @@ bbb bbc bbd bbe bcb bcc bcd bce bdb bdc bdd bde beb bec bed bee cbb cbc cbd cbe 
 [code-editor language=javascript]
 ```
 function happyNumbers(input) {
-   // Write your code here
+   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]

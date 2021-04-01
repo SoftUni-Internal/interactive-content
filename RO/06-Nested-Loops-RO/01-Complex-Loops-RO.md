@@ -53,7 +53,7 @@ for (let d = 40; d > 0; d /= 2) {
 [code-editor language=javascript]
 ```
 function numbersFromNto1(input) {
- // Write your code here
+   // Scrieți codul dvs. aici
 }
 
 ```
@@ -148,7 +148,7 @@ numbersFromNto1(1)
 [code-editor language=javascript]
 ```
 function numbersFrom1ton(n) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -241,7 +241,7 @@ numbersFrom1ton(30)
 [code-editor language=javascript]
 ```
 function evenPowersOfTwo(n) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]

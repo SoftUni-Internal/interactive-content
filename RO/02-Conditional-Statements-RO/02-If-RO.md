@@ -74,7 +74,7 @@ function example(input) {
 [code-editor language=javascript]
 ```
 function freezingWeather(input) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]

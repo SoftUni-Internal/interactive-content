@@ -99,7 +99,7 @@ if (color == 'red') {
 [code-editor language=javascript]
 ```
 function evenOrOdd(input) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]

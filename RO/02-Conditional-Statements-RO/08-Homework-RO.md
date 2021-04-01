@@ -12,7 +12,7 @@
 
 ```
 function guessThePassword(input) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -81,7 +81,7 @@ Wrong password!
 [code-editor language=javascript]
 ```
 function boilingWater(input) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -158,7 +158,7 @@ The water is not hot enough
 [code-editor language=javascript]
 ```
 function speedInfo(input) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -241,7 +241,7 @@ Slow
 [code-editor language=javascript]
 ```
 function bonusScore(input) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -382,7 +382,7 @@ bonusScore(0)
 [code-editor language=javascript]
 ```
 function tickets(input) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]

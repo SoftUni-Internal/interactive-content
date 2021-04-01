@@ -46,7 +46,7 @@ Toată această parte se repetă din nou **până într-un anumit punct în care
 [code-editor language=javascript]
 ```
 function decreasingNumbers (input) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -124,7 +124,7 @@ decreasingNumbers(3)
 
 
 [slide hideTitle]
-# Problemă: Sequence 2k + 1
+# Problemă cu Soluție: Sequence 2k + 1
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/05-While-Loop/05.PB-JavaScript-While-Loop-14-Solution-Sequence-2k+1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -133,7 +133,7 @@ decreasingNumbers(3)
 [code-editor language=javascript]
 ```
 function sequence (input) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]

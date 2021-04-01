@@ -53,7 +53,7 @@ for (let i = 10; i >= 1; i--) {
 
 ```
 function numbersEndingWith7(n) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 
@@ -168,7 +168,7 @@ numbersEndingWith7(130)
 
 ```
 function examCountdown(days) {
-   // Write your code here
+   // Scrieți codul dvs. aici
 }
 ```
 

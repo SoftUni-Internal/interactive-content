@@ -206,7 +206,7 @@ Aici, vedem cum funcționează programul dacă avem un pătrat cu latura egală 
 [code-editor language=javascript]
 ```
 function sayHello (name) {
-   // Write your code here
+   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]

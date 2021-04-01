@@ -10,7 +10,7 @@
 [code-editor language=javascript]
 ```
 function timeForLunch(input) {
-	// Write your code here
+	// Scrieți codul dvs. aici
 }
 ```
 [/code-editor]

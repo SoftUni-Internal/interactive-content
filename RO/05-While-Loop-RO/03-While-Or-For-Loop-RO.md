@@ -55,7 +55,7 @@ console.log(number);
 [code-editor language=javascript]
 ```
 function oddNumber(numbers) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]

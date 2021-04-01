@@ -11,7 +11,7 @@
 [code-editor language=javascript]
 ```
 function cinema(input) {
-	// Write your code here
+	// Scrieți codul dvs. aici
 }
 ```
 [/code-editor]

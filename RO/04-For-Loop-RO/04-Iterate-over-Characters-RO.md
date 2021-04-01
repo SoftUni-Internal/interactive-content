@@ -84,7 +84,7 @@ console.log(asciiValue);
 
 ```
 function latinLetters(startChar, endChar) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 
 ```

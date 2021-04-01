@@ -262,7 +262,7 @@ Ajungând la `b`, înțelege că are o valoare `adevărată` și întreaga **exp
 [code-editor language=javascript]
 ```
 function foodOrDrink(input) {
-    // Write your code here
+    /// Scrieți codul dvs. aici
 }
 ```
 [/code-editor]

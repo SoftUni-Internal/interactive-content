@@ -36,7 +36,7 @@ for (;;) {
 
 ```
 function sumNumbers(nums) {
-   // Write your code here
+   // Scrieți codul dvs. aici
 }
 ```
 

@@ -9,7 +9,7 @@
 [code-editor language=javascript]
 ```
 function tvSeries(input) {
-   // Write your  code here
+   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]

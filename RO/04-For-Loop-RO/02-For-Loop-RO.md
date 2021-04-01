@@ -89,7 +89,7 @@ Bucla se repetă de 10 ori și fiecate repetare se numește **iterație**.
 
 ```
 function printSum (input) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 
@@ -203,7 +203,7 @@ printSum(6)
 
 ```
 function greatestNumber(n, numbers) {
- // Write your code here
+   // Scrieți codul dvs. aici
 }
 ```
 

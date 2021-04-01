@@ -50,7 +50,7 @@ while (row <= 2) {
 [code-editor language=javascript]
 ```
 function triangleOfStars(input) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -141,7 +141,7 @@ triangleOfStars(8)
 [code-editor language=javascript]
 ```
 function sumOfDigits(inputLines) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
