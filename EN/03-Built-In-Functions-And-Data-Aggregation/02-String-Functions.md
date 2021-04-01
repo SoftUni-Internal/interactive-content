@@ -1,4 +1,3 @@
-
 [slide hideTitle]
 
 # String Functions
@@ -163,9 +162,11 @@ The Adventures of Tom Bombadil
 
 ## The REPLACE() Function
 
+
 Now, let us take a look at the `REPLACE()` function in MySQL:
 
 The `REPLACE()` function allows us to replace all occurrences of a substring with a string.
+
 
 It is important to know that this method performs on a **case-sensitive** match.
 
@@ -346,7 +347,9 @@ The `LENGTH()` will return the **same result** from the input above:
 
 It is important to know that a **multi-byte character will counts as a single character**.
 
+
 If our string **contains five two-bite characters**, our `CHAR_LENGTH()` function will return **5**, but our `LENGTH()` will return **10**.
+
 
 **Example**:
 
