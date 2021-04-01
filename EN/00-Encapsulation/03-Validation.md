@@ -6,7 +6,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-19-20-21-validation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Data validation happens in setters.**
+**Data validation is performed in "setter" methods.**
 
 ```java
 private void setSalary(double salary) {
@@ -18,7 +18,7 @@ private void setSalary(double salary) {
   this.salary = salary;
 }
 ```
-- It is better to throw **exceptions**, rather than printing to the console
+- It is better to throw **exceptions**, rather than printing messages to the console
 - Printing with `System.out` **couples** your class
 - **Clients** can **handle** class exceptions
 
@@ -34,9 +34,9 @@ public Person(String firstName, String lastName,
 }
 ```
 
-**Validation happens inside the setter:**
-- Guarantees valid state of an object in its creation
-- Guarantees valid state for public setters
+**Validation is done inside the setter:**
+- This guarantees the valid state of an object on its creation
+- It also guarantees a valid state for public setters
 
 [/slide]
 
@@ -51,13 +51,13 @@ public Person(String firstName, String lastName,
 
 [task-description]
 # Description
-Expand **Person** with proper validation for every field:
+Expand the **Person** class with the proper validation for every field:
 
-- **Names** must be at least 3 symbols
-- **Age** must not be zero or negative
-- **Salary** cannot be less than 460.0 
+- The **Names** must be at least 3 symbols
+- The**Age** must not be zero or negative
+- The**Salary** cannot be less than 460.0 
 
-Print a proper **message** to the end-user (look at the **example** for the messages). 
+Print the corresponding **message** to the end-user (see the **example** for the messages). 
 
 Do not use `System.out.println()` in the **Person** class.
 
