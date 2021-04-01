@@ -86,7 +86,7 @@ void method(String a, int... b){
 [slide]
 # Problemă cu Soluție: Book
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/RO/interactive-java-advanced-iterators-and-comparators-6-Problem-and-Solution-book-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/RO/interactive-java-advanced-iterators-and-comparators-6-Problem-and-Solution-book-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Book" timeLimit=5000 taskId="oop-basics-java-iterators-and-comparators-lab-Book" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]

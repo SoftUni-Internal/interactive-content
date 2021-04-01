@@ -122,7 +122,7 @@ public class AgeComparator implements Comparator<Student> {
 [slide hideTitle]
 # Problemă cu Soluție: Comparable Book
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/RO/interactive-java-advanced-iterators-and-comparators-26-Problem-and-Solution-Comprabale-Book-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/RO/interactive-java-advanced-iterators-and-comparators-26-Problem-and-Solution-Comprabale-Book-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Comparable Book" timeLimit=5000 taskId="oop-basics-java-iterators-and-comparators-lab-Comparable-Book" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
@@ -339,7 +339,7 @@ Test Passed!
 [slide hideTitle]
 # Problemă cu Soluție: Book Comparator
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/RO/interactive-java-advanced-iterators-and-comparators-27-Problem-and-Solution-Book-Comparator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/RO/interactive-java-advanced-iterators-and-comparators-27-Problem-and-Solution-Book-Comparator-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Book Comparator" timeLimit=5000 taskId="oop-basics-java-iterators-and-comparators-lab-Book-Comparator" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
