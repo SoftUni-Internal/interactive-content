@@ -6,11 +6,11 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-9-10-11-12-13-access-modifiers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## Private Access Modifier
+## The "Private" Access Modifier
 
 With the **private access** modifier an object can hide its data from the rest of the objects in our program.
 
-We choose to make a **field or method** private when we want to preserve the internal logic of our object, so nobody can mess it up:
+We make a **field or method** private when we must preserve the internal logic of our object in its initial state:
 
 ```java
 class Person {
@@ -24,9 +24,9 @@ class Person {
 - Classes and interfaces **cannot** be private
 - Data can be **accessed only within the declared class** itself
 
-## Protected Access Modifier
+## The "Protected" Access Modifier
 
-When we declare a unit with the access modifier **protected** we say that only members of the **class hierarchy** (the current class and its children) can see and access the given unit.
+When we declare a unit using the **protected** access modifier we say that only members of the **class hierarchy** (the current class and its children) can see and access the given unit.
 
 ```java
 class Team {
@@ -36,11 +36,11 @@ class Team {
 ```
 
 - **Protected** modifiers cannot be applied to classes and interfaces
-- Prevents a **nonrelated** class from trying to use it
+- This prevents a **non-related** class from trying to use it
 
-## Default Access Modifier
+## The Default Access Modifier
 
-When we do not specifically declare a modifier, a default access modifier gets in use:
+When we do not specifically declare a modifier, a default access modifier is used:
 
 ```java
 class Team {
@@ -64,7 +64,7 @@ The **output** will be:
 Real Madrid
 ```
 
-## Public Access Modifier
+## The "Public" Access Modifier
 
 The **public** access modifier states that the given unit is visible and accessible for anyone, anywhere in the program:
 
@@ -74,7 +74,7 @@ public class Team {
   public void setName(String name) {…}
 }
 ```
-- Import a package if you need to use a class
+- We can import packages if we need to use a class contained in them
 - The `main()` method of an application must be **public**
 
 [/slide]
@@ -90,13 +90,13 @@ public class Team {
 
 [task-description]
 # Description
-Create a class **Person**, which should have **private** fields for:
+Create a class called **Person**, which should have **private** fields for:
 - firstName: String
 - lastName: String
 - age: int
 - toString() - override
 
-## You should be able to use the class like this:
+## The class should fit in the following context:
 ```java
 public static void main(String[] args) throws IOException {
     BufferedReader reader = 
@@ -334,21 +334,21 @@ Test Passed!
 
 [task-description]
 # Description
-Read a person with their **names**, **age** and **salary**. 
+Create code that reads information about a person with their: **names**, **age** and **salary**. 
 
-Read **percent bonus** to every person salary. 
+Reads a **bonus percentage** to be apllied to each person's salary. 
 
-People younger **than 30** get half bonus. 
+People younger **than 30** get a half bonus. 
 
-Expand **Person** from previous task. 
+Expand the **Person** class from previous task. 
 
-Add **salary field** and **getter** and **setter** with proper **access**.
+Add a **salary field**, a **getter** and a **setter** with proper **access** modifiers.
 
-New **fields** and **methods**
+New **fields** and **methods**:
 - **salary: double**
 - **increaseSalary(double bonus)**
 
-## You should be able to use the class like this:
+## The class should work in the following context:
 ```java
 public static void main(String[] args) throws IOException {
     BufferedReader reader = 
