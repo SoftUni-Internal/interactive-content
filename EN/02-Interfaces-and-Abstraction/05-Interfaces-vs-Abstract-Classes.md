@@ -26,6 +26,9 @@ We can put these lines of code in an abstract class and extend them to all other
 
 [slide hideTitle]
 # Problem: Ferrari
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/interactive-java-oop-advanced-interfaces-and-abstraction-problem-ferrari-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Ferrari" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-Ferrari" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
 
