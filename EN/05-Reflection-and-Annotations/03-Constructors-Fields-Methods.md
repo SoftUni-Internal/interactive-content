@@ -4,7 +4,7 @@
 
 # Constructors
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-14-16-constructors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-14-16-constructors-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Let us see how we can obtain constructor objects.
 
@@ -47,7 +47,7 @@ Like in the code above - It was a constructor taking `String`, so we supplied on
 
 # Fields Name and Type
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-17-fields-name-and-type-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-17-18-fields-name-and-type-fields-set-and-get-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Analogically to the way we get constructors, we can obtain **class members**.
 
@@ -71,14 +71,6 @@ String fieldName = field.getName();
 Object fieldType = field.getType();
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-# Fields Set and Get
-
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-18-fields-set-and-get-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
 Let us discuss how we can set the value for a field via reflection.
 
 ``` java
@@ -95,7 +87,7 @@ field.set(object, value); // The object parameter passed to the get and set meth
 
 # Methods
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-19-20-methods-methods-invoke-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-19-20-methods-methods-invoke-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Let us asume we have `class` Dog with methods inside:
 
