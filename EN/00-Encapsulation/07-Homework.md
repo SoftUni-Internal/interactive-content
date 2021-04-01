@@ -7,25 +7,25 @@
 
 [task-description]
 # Description
-You are given a geometric figure - **box** with fields **length, width, and height**. 
+You are given a geometric figure - a **box** with fields **length, width, and height**. 
 
-Model a class **Box** that can be instantiated by the same three parameters. 
+Model a class representing the **Box** that can be instantiated using the same three parameters. 
 
-Expose to the outside only methods for its surface area, lateral surface area, and volume.
+Only the methods returning its surface, lateral surface and volume should be accessible from outside.
 
 You can find the necessary formulas [here](http://www.mathwords.com/r/rectangular_parallelepiped.htm).
 
 ## Input
-On the first three lines, you will get the length, width, and height. 
+On the first three lines, you will get the figure's length, width, and height. 
 
 On the next three lines, print:
 - the **surface** area
 - **lateral surface** area
 - the **volume** of the box
 
-A box’s side should not be zero or a negative number. 
-
 Add data validation for each parameter given to the constructor. 
+
+A box’s side should not be zero or a negative number. 
 
 Make a private setter that performs data validation internally.
 
@@ -989,13 +989,11 @@ Test Passed!
 [task-description]
 # Description
 
-You should be familiar with encapsulation already. 
-
 For this problem, you will need to create a class called **Chicken**. 
 
-The Chicken class should contain several **fields**, a **constructor**, and several **methods**. 
+The Chicken class should contain several **fields**, a **constructor** and several **methods**. 
 
-Your task is to encapsulate or hide anything that must not be viewed or modified from outside the class.
+Your task is to encapsulate or hide anything that should not be viewed or modified from outside the class.
 
 | **Chicken** |
 | --- |
@@ -1009,14 +1007,14 @@ Your task is to encapsulate or hide anything that must not be viewed or modified
 | +toString(): Override |
 | -calculateProductPerDay() : double |
 
-Chicken lives for **15 years**. 
+A chicken lives for **15 years**. 
 
-Chicken has a  **name** that must be at least **1 symbol** long. 
+Each chicken has a  **name** that must be at least **1 symbol** long. 
 
-Chicken produces eggs as follows:
-- The first 6 years, it produces 2 eggs per day [0 - 5]
-- The next 6 years, it produces 1 egg per day [6 - 11]
-- After that, it produces 0.75 eggs per day
+Chickens lay eggs at the following rate:
+- The first 6 years of their life, they lay 2 eggs per day [0 - 5]
+- The next 6 years - 1 egg per day [6 - 11]
+- After that, they produce 0.75 eggs per day
 
 ## Step 1. Encapsulate Fields
 Fields should be **private**. 
@@ -1025,25 +1023,25 @@ Leaving fields open for modification from outside the class can potentially be d
 
 Make all fields in the Chicken class **private**.
 
-In case the value inside a field is needed elsewhere, use **getters** to reveal it.
+In case the value in a field is needed elsewhere, use **getters** to access it.
 
 ## Step 2. Ensure Classes Have a Correct State
 Having **getters and setters** is pointless if you do not use them. 
 
-The Chicken constructor modifies the fields directly, which is wrong when there are suitable setters available.
+The Chicken constructor modifies the fields directly, which is unwanted when there are suitable setters available.
 
 Modify the constructor to fix this issue.
 
 ## Step 3. Validate Data Properly
 Validate the chicken’s **name** (it cannot be **null**, **empty**, or **whitespace**). 
 
-In case of an **invalid name**, print the exception message "**Name cannot be empty.**"
+In case an **invalid name** is entered, print out the exception message "**Name cannot be empty.**"
 
-Validate the **age** properly - minimum and maximum age are provided, make use of them. 
+Validate the **age** value - the minimum and maximum age are provided.
 
-In case of **invalid age**, print an exception message "**Age should be between 0 and 15.**"
+In an **invalid age** value is entered, print the exception message: "**Age should be between 0 and 15.**"
 
-## Step 4. Hide Internal Logic
+## Step 4. Hide the Internal Logic
 If a method is intended to be used only by descendant classes or to perform some action internally, there is no use in keeping them **public**.
 
 The **calculateProductPerDay()** method is used by the **productPerDay()** public method. 
@@ -1826,15 +1824,15 @@ Test Passed!
 
 [task-description]
 # Description
-Create two classes: class **Person** and class **Product**. 
+Create two classes: **Person** and **Product**. 
 
-Each person should have a **name**, **money**, and a **bag of products**. 
+Each person should have a **name** field, **money** field, and a **bag of products** field. 
 
-Each product should have a **name** and **cost**. 
+Each product should have a **name** field and **cost** field. 
 
 The name cannot be an **empty** string. 
 
-Be careful about **whitespaces** in the name. 
+Remove any empty spaces contained in the name. 
 
 Money and cost cannot be a **negative** number.
 
@@ -1854,20 +1852,20 @@ Create a program in which each command corresponds to a person buying a product.
 
 If the person can afford a product, add it to their bag. 
 
-If a person does not have enough money, print an appropriate message:
+If a person does not have enough money, print the message:
 "\{**Person name**\} **can't afford** \{**Product name**\}"
 
 ## Input
-On the first two lines, you will receive all people and all products. 
+On the first two lines, you will receive the information about all people and all products. 
 
 ## Output
-After all purchases, **print every person** in the order of appearance and **all products that they have bought**, also in order of appearance. 
+After all purchases, **print the information about every person** in the order of appearance and **all products that they have bought**, also in order of appearance. 
 
-If the person has **not** bought anything, print their name, followed by "Nothing bought".
+If the person has **not** bought anything, print out their name, followed by "Nothing bought".
 
-Read commands until you find the line with an "**END**" command. 
+Read commands until you reach the line containing: "**END**". 
 
-In case of **invalid input**, break the program with an appropriate exception:
+In case of **invalid input**, exit the program with the corresponding message:
 
 - If the **balance** is **negative**:
 "Money cannot be negative"
@@ -2849,9 +2847,9 @@ Test Passed!
 
 [task-description]
 # Description
-A pizza consists of **dough** and different **toppings**. 
+Pizza is made of **dough** and different **toppings**. 
 
-You should create a **Pizza** class with a **name**, **dough**, and **toppings** as fields. 
+You should create a **Pizza** class holding: **name**, **dough**, and **toppings** as fields. 
 
 Every type of ingredient should have its own class.
 
@@ -2871,15 +2869,15 @@ Every type of ingredient should have its own class.
 
 Every ingredient has **different fields**: 
 
-The dough can be **white** or **wholegrain**, and in addition it can be **crispy**, **chewy**, or **homemade**. 
+The dough can be **white** or **wholegrain**, in addition it can be **crispy**, **chewy**, or **homemade**. 
 
 The toppings can be of type **meat**, **veggies**, **cheese** or **sauce**. 
 
-Every ingredient should have a **weight** in grams and a method for calculating its calories according to its type. 
+Every ingredient should have a **weight** in grams field and a method to calculate its calories according to its type. 
 
 Calories per gram are calculated through modifiers. 
 
-Every ingredient has **2 calories per gram as a base** and a **modifier** that gives the exact calories.
+Every ingredient has **2 calories per gram as a base** and a **modifier** that determines its exact calories.
 
 | **Dough** | **Topping** |
 | --- | --- |
@@ -2915,17 +2913,17 @@ For every pizza, provide a public method that **calculates its calories accordin
 
 **Data validation must be in the order of the input data.**
 
-- If an invalid flour type or an invalid baking technique is given, throw an exception with the message "**Invalid type of dough**"
+- If an invalid flour type or an invalid baking technique is given, throw an exception message: "**Invalid type of dough**"
   
-- If dough weight is outside of the range (1..200), throw an exception with the message "**Dough weight should be in the range (1..200)**"
+- If dough weight is outside of the range (1..200), throw an exception: "**Dough weight should be in the range (1..200)**"
   
-- If topping is not one of the provided types, throw an exception with the message "**Cannot place**  \{**name of invalid argument**\} **on top of your pizza**"
+- If the topping is not one of the provided types, throw an exception with the message "**Cannot place**  \{**name of invalid argument**\} **on top of your pizza**"
   
 - If topping weight is outside of the range (1..50), throw an exception with the message "\{**Topping type name**\} **weight should be in the range (1..50)**"
 
-- If the name of the pizza is empty, only whitespace or longer than 15 symbols, throw an exception with the message "**Pizza name should be between 1 and 15 symbols.**"
+- If the name of the pizza is empty, only whitespace, or longer than 15 symbols, throw an exception with the message: "**Pizza name should be between 1 and 15 symbols.**"
 
-- If the number of toppings is outside of the range (0..10), throw an exception with the message "**Number of toppings should be in range (0..10)**"
+- If the number of toppings is out of range (0..10), throw an exception: "**Number of toppings should be in range (0..10)**"
 
 ## Input
 
@@ -2939,7 +2937,7 @@ For every pizza, provide a public method that **calculates its calories accordin
     - topping \{**toppingType**\} \{**weightInGrams**\}
 
 ## Output
-If the creation of the pizza was **successful**, print on a single line the name of the pizza and the **total calories** it has, rounded to the second digit after the decimal point.
+If we have suceessfully made a pizza, print on a single line: the name of the pizza and its **total calories**, rounded to the second digit after the decimal point.
 
 
 # Examples
