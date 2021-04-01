@@ -4,7 +4,7 @@
 
 # MySQL
 
-MySQL is free and open-source software under the terms of the **GNU General Public License**, and is also available under a variety of proprietary licenses. 
+MySQL is free and open-source software under the terms of the **GNU General Public License** and is also available under a variety of proprietary licenses. 
 
 It was owned and sponsored by the Swedish company **MySQL AB**, which was bought by **Sun Microsystems** now called **Oracle Corporation**.
 
@@ -27,13 +27,13 @@ Here are some links for downloading MySQL Server:
 
 The MySQL server architecture isolates the application programmer and DBA from all of the low-level implementation details at the storage level, providing a consistent and easy application model and API. 
 
-Thus, although there are different capabilities across different storage engines, the application is shielded from these differences. 
+Аlthough there are different capabilities across different storage engines, the application is shielded from these differences. 
 
 The MySQL storage engine architecture enables us to select a specialized storage engine for a particular application need while being completely shielded from the need to manage any specific application coding requirements. 
 
-In the logical storage, we have our instances, each one consisting of a database with its tables.
+In the logical storage, we have instances, each consisting of a database with its tables.
 
-In the physical storage, we have our data files and logs.
+In the physical storage, we have data files and logs.
 
 [image assetsSrc="Introduction-To-Databases(5).png" /]
 
