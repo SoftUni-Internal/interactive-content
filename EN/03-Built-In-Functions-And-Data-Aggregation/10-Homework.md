@@ -4838,7 +4838,7 @@ Venomous Tongue
 
 [slide hideTitle]
 # Problem: Smallest Deposit Group Per Magic Wand Size *
-[code-task title="Smallest Deposit Group Per Magic Wand Size" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-longest-magic-wand" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Smallest Deposit Group Per Magic Wand Size" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-smallest-deposit-group-per-magic-wand-size" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 [/code-editor]
 [task-description]
