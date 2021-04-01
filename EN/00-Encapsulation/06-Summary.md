@@ -7,9 +7,9 @@
 ## In this lesson you learned:
 
 - **Encapsulation**
-    - hides implementation
-    - reduces complexity
-    - ensures that structural changes remain local
+    - is used to hide the implementation
+    - it reduces complexity
+    - it ensures that structural changes remain local
 
 ```java
   public String getName() {…}
@@ -18,7 +18,7 @@
 ```
 
 - **Mutable** and **Immutable** objects
-    - mutable objects can be altered
+    - mutable objects can be modified
     - immutable objects cannot be modified
 
 ```java
@@ -31,7 +31,7 @@ String fullName = firstName.concat(" ").concat(lastName);
 ```
 
 - Keyword `final`
-    - prevents entities from being extended and overridden
+    - it prevents entities from being extended and overridden
 
 ```java
 public final class Mammal extends Animal {}
@@ -40,7 +40,7 @@ public final class Mammal extends Animal {}
 
 ## In the next lesson you will learn:
 
-- What inheritance is
+- What is inheritance 
 
 - Class hierarchies
 
