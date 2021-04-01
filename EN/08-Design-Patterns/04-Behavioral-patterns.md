@@ -18,6 +18,8 @@ In short, they represent the relationship between objects.
 
 # Command Pattern
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-35-command-pattern-demo-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The **command pattern** lets us **parametrize** clients with different requests. 
 
 This pattern provides us a single method for executing commands. 
@@ -149,7 +151,7 @@ Text is Closed.
 
 # Template Pattern
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-40-template-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-40-template-pattern-demo-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **template pattern** gives us an abstract idea of an algorithm and an abstract method, called a **template method**.
 
