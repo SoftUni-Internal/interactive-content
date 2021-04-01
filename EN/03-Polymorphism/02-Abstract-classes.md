@@ -264,7 +264,10 @@ Test Passed!
 
 
 [slide hideTitle]
-# Problem: Animals
+# Problem with Solution: Animals
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/EN/interactive-java-oop-advanced-polymorphism-problem-animals-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Animals" timeLimit=5000 taskId="Java-OOP-Advanced-Polymorphism-Animals" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
