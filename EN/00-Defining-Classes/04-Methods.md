@@ -102,7 +102,7 @@ The most common use of the "**this**" keyword is to eliminate the confusion betw
 [/slide]
 
 [slide hideTitle]
-# Method "toString()"
+# The "toString()" Method 
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-19-20-to-string-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -140,7 +140,7 @@ public class Car {
 [/slide]
 
 [slide hideTitle]
-# Method "equals()" 
+# The "equals()" Method 
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-21-equals-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
