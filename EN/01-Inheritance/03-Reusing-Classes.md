@@ -117,7 +117,7 @@ public class Student extends Person {
 
 # Final Methods and Classes
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-25-final-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-25-26-final-methods-and-final-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - `final` – defines a method that **cannot be overridden**
   - we should use this tool when we want to preserve our method implementation down the class hierarchy
