@@ -65,7 +65,7 @@ for (int index = 0; index < months.size(); index++) {
    System.out.print(months.get(index) + " ");
 }
 ```
-- **Printing a list using a **foreach-loop**:
+- Printing a list using a **foreach-loop**:
 
 ```java live
 List<String> numbers = new ArrayList<>(
@@ -75,7 +75,7 @@ for (String number : numbers) {
    System.out.print(number + " ");
 }
 ```
-- **Printing a list using a "String.join(…)"**:
+- Printing a list using a "String.join(…)"**:
 
 ```java live
 List<String> list = new ArrayList<>(
