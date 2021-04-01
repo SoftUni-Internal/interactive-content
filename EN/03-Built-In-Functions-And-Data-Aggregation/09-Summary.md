@@ -35,15 +35,15 @@
 
   * Wildcards
     ```java
-    WHERE ContactName LIKE 'a%o';  # It will find values that starts with "a" and ends with "o".
-    WHERE CustomerName LIKE '_r%'; # It will find values that have "r" in second position.
-    WHERE CustomerName LIKE 'a%';  # It will find any values that starts with "a" (Customer name in our case).
+    WHERE ContactName LIKE 'a%o';  // It will find values that starts with "a" and ends with "o".
+    WHERE CustomerName LIKE '_r%'; // It will find values that have "r" in second position.
+    WHERE CustomerName LIKE 'a%';  // It will find any values that starts with "a" (Customer name in our case).
     ```
 
   * Grouping
     ``` java
-    SELECT e.`job_title`, count(employee_id) # This query would return a list of position 
-    FROM `employees` AS e                    # titles and the number of employees assigned to each one of them.
+    SELECT e.`job_title`, count(employee_id) // This query would return a list of position 
+    FROM `employees` AS e                    // titles and the number of employees assigned to each one of them.
     GROUP BY e.`job_title`;
     ```
 
