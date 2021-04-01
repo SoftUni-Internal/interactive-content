@@ -92,3 +92,11 @@ public Person (String name, Integer age) {
 }
 ```
 [/slide]
+
+[slide hideTitle]
+
+# Implementation hiding - Example
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/interactive-java-oop-advanced-encapsulation-hiding-implementation-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[/slide]
