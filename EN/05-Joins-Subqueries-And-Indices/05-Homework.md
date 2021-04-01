@@ -10,25 +10,15 @@
 
 # Problem: Employee Address
 
-[code-task title="Problem: Employee Address" taskId="071513b8-8dee-4e02-8edd-b02d268979c1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Employee Address" taskId="java-db-and-mysql-joins-subqueries-and-indices-employee-address" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 
 [/code-editor]
 [task-description]
 
 ## Description
 
-Write a query that selects:
+Create a query that selects:
 
 - **employee_id**
 - **job_title**
@@ -102,25 +92,15 @@ Production Technician
 
 # Problem: Addresses with Towns
 
-[code-task title="Problem: Addresses with Towns" taskId="999e1848-e1c3-4648-989c-55dbb63651bb" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Addresses with Towns" taskId="java-db-and-mysql-joins-subqueries-and-indices-addresses-with-towns" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 
 [/code-editor]
 [task-description]
 
 ## Description
 
-Write a query that selects:
+Create a query that selects:
 
 - **first_name**
 - **last_name**
@@ -196,25 +176,15 @@ Snohomish
 
 # Problem: Sales Employee
 
-[code-task title="Problem: Sales Employee" taskId="d1a131c9-6f9f-45c9-8326-7e5c3896daba" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sales Employee" taskId="java-db-and-mysql-joins-subqueries-and-indices-sales-employee" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 
 [/code-editor]
 [task-description]
 
 ## Description
 
-Write a query that selects:
+Create a query that selects:
 
 - **employee_id**
 - **first_name**
@@ -392,25 +362,15 @@ Sales
 
 # Problem: Employee Departments
 
-[code-task title="Problem: Employee Departments" taskId="cfdf1e48-f9b9-4e22-9222-cd0bfe26ac85" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Employee Departments" taskId="java-db-and-mysql-joins-subqueries-and-indices-employee-departments" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 
 [/code-editor]
 [task-description]
 
 ## Description
 
-Write a query that selects:
+Create a query that selects:
 
 - **employee_id**
 - **first_name**
@@ -484,25 +444,15 @@ Facilities and Maintenance
 
 # Problem: Employees Without Project
 
-[code-task title="Problem: Employees Without Project" taskId="803fa41a-cec2-474a-9de8-4196dcc37349" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Employees Without Project" taskId="java-db-and-mysql-joins-subqueries-and-indices-employees-without-project" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 
 [/code-editor]
 [task-description]
 
 ## Description
 
-Write a query that selects:
+Create a query that selects:
 
 - **employee_id**
 - **first_name**
@@ -538,32 +488,24 @@ Svetlin
 
 # Problem: Employees Hired After
 
-[code-task title="Problem: Employees Hired After" taskId="f22d5d59-ac53-4814-a393-aa4e512211b6" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Employees Hired After" taskId="java-db-and-mysql-joins-subqueries-and-indices-employees-hired-after" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 
 [/code-editor]
 [task-description]
 
 ## Description
 
-Write a query that selects:
+Create a query that selects:
 
 - **first_name**
 - **last_name**
 - **hire_date**
 - **dept_name**
 
-Filter only employees hired after 1/1/1999 and from either the "**Sales**" or the "**Finance**" **departments**. Sort the result by **hire_date (ascending)**.
+Filter only employees hired after 1/1/1999 and from either the "**Sales**" or the "**Finance**" **departments**.
+
+Sort the result by **hire_date (ascending)**.
 
 ## Examples
 
@@ -814,31 +756,21 @@ Sales
 
 # Problem: Employees with Project
 
-[code-task title="Problem: Employees with Project" taskId="a6db00d1-cfd9-4b04-b665-c2d84dda8f56" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Employees with Project" taskId="java-db-and-mysql-joins-subqueries-and-indices-employees-with-project" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 
 [/code-editor]
 [task-description]
 
 ## Description
 
-Write a query that selects:
+Create a query that selects:
 
 - **employee_id**
 - **first_name**
 - **project_name**
 
-Filter only **employees** with a project, which has started after **13.08.2002** and it is still **ongoing** (no end date).
+Filter only the **employees** with a project, which has started after **13.08.2002** and it is still **ongoing** (no end date).
 
 Return the first 5 rows sorted by **first_name** **then by** **project_name both in ascending order**.
 
@@ -897,31 +829,21 @@ HL Touring Handlebars
 
 # Problem: Employee 24
 
-[code-task title="Problem: Employee 24" taskId="b942b66d-5e6e-417d-a5c6-07dc98585b49" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Employee 24" taskId="java-db-and-mysql-joins-subqueries-and-indices-employee-24" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 
 [/code-editor]
 [task-description]
 
 ## Description
 
-Write a query that selects:
+Create a query that selects:
 
 - **employee_id**
 - **first_name**
 - **project_name**
 
-Filter all the **projects** of employees with **id 24**.
+Filter all of the **projects** of employees with an **id of 24**.
 
 If the project has started after **2005 inclusively** the return value should be **NULL**.
 
@@ -968,25 +890,15 @@ Road-650
 
 # Problem: Employee Manager
 
-[code-task title="Problem: Employee Manager" taskId="634491b6-5756-411c-af6b-be665199c800" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Employee Manager" taskId="java-db-and-mysql-joins-subqueries-and-indices-employee-manager" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 
 [/code-editor]
 [task-description]
 
 ## Description
 
-Write a query that selects:
+Create a query that selects:
 
 - **employee_id**
 - **first_name**
@@ -995,7 +907,7 @@ Write a query that selects:
 
 Filter all **employees** with a manager who has **id equal to 3 or 7**.
 
-Return all rows sorted by **employee first_name in ascending order**.
+Return all rows sorted by **the first_name the employees in ascending order**.
 
 ## Examples
 
@@ -1124,27 +1036,18 @@ JoLynn
 
 [slide hideTitle]
 
-# Problem: Employee Summary
+# Employee Summary
 
-[code-task title="Problem: Employee Summary" taskId="c51662b6-f70a-49a9-a95b-65890bd12bce" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Employee Summary" taskId="java-db-and-mysql-joins-subqueries-and-indices-employee-summary" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 
 [/code-editor]
 [task-description]
 
 ## Description
 
-Write a query that selects:
+Create a query that selects:
 
 - **employee_id**
 - **employee_name**
@@ -1220,25 +1123,15 @@ Tool Design
 
 # Problem: Min Average Salary
 
-[code-task title="Problem: Min Average Salary" taskId="951e69cf-334a-4c06-8261-eaf1418065ef" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Min Average Salary" taskId="java-db-and-mysql-joins-subqueries-and-indices-min-average-salary" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 
 [/code-editor]
 [task-description]
 
 ## Description
 
-Write a query that returns the value of the lowest average **salary** of all **departments**.
+Create a query that returns the value of the lowest average **salary** of all **departments**.
 
 [/task-description]
 [code-io /]
@@ -1259,25 +1152,16 @@ Write a query that returns the value of the lowest average **salary** of all **d
 
 # Problem: Highest Peaks in Bulgaria
 
-[code-task title="Problem: Highest Peaks in Bulgaria" taskId="6962d106-9bf4-48ea-a807-495ae9f3bab9" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Highest Peaks in Bulgaria" taskId="java-db-and-mysql-joins-subqueries-and-indices-highest-peaks-in-bulgaria" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 
 [/code-editor]
 [task-description]
 
 ## Description
 
-Write a query that selects:
+Create a query that selects:
 
 - **country_code**
 - **mountain_range**
@@ -1361,25 +1245,15 @@ Golyam Polezhan
 
 # Problem: Count Mountain Ranges
 
-[code-task title="Problem: Count Mountain Ranges" taskId="22fdb65e-9027-4be7-b449-8122df267059" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Count Mountain Ranges" taskId="java-db-and-mysql-joins-subqueries-and-indices-count-mountain-ranges" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 
 [/code-editor]
 [task-description]
 
 ## Description
 
-Write a query that selects:
+Create a query that selects:
 
 - **country_code**
 - **mountain_range**
@@ -1417,25 +1291,14 @@ US
 
 # Problem: Countries with Rivers
 
-[code-task title="Problem: Countries with Rivers" taskId="7d7faf70-a8fc-4de9-84a1-53a54217a7ad" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Countries with Rivers" taskId="java-db-and-mysql-joins-subqueries-and-indices-countries-with-rivesr" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-
 [/code-editor]
 [task-description]
 
 ## Description
 
-Write a query that selects:
+Create a query that selects:
 
 - **country_name**
 - **river_name**
@@ -1481,25 +1344,15 @@ Niger
 
 # Problem: Continents and Currencies
 
-[code-task title="Problem: Continents and Currencies" taskId="288b18a9-e2b7-4bc7-b91e-c4412fe19b13" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Continents and Currencies" taskId="java-db-and-mysql-joins-subqueries-and-indices-continents-and-currencies" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 
 [/code-editor]
 [task-description]
 
 ## Description
 
-Write a query that selects:
+Create a query that selects:
 
 - **continent_code**
 - **currency_code**
@@ -1573,18 +1426,8 @@ USD
 
 # Problem: Countries Without Any Mountains
 
-[code-task title="Problem: Countries Without Any Mountains" taskId="4ba6ed71-c078-4ff0-b0b8-b92ab5cac596" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Countries Without Any Mountains" taskId="java-db-and-mysql-joins-subqueries-and-indices-countries-without-any-mountains" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 
 [/code-editor]
 [task-description]
@@ -1612,18 +1455,9 @@ Find the count of all **countries** which don't have a **mountain**.
 
 # Problem: Highest Peak and Longest River by Country
 
-[code-task title="Problem: Highest Peak and Longest River by Country" taskId="4e17dd8d-9ef4-4fcc-8534-0efa6f1733c2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Highest Peak and Longest River by Country" taskId="java-db-and-mysql-joins-subqueries-and-indices-highest-peak-and-longest-river-by-country" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 
 [/code-editor]
 [task-description]

@@ -4,8 +4,6 @@
 
 # Resources 
 
-In this lesson we will have a look at **Joins**, **Subqueries** and **Indices**.
-
 _Download the resources needed for this lesson from here:_ [Mega.nz](https://mega.nz/file/3IZTXSDR#FHeTo3uqIs6yEfIMQ1AXZh02WgkbUGaDsecPveCrSho)
 
 [/slide]
@@ -14,13 +12,13 @@ _Download the resources needed for this lesson from here:_ [Mega.nz](https://meg
 
 # Gathering data from multiple tables
 
-As you may know, a relational database consists of multiple related tables.
+А relational database consists of multiple related tables.
 
-Sometimes you need to combine data from several tables into a new table.
+Sometimes we will need to combine data from several tables into a new table.
 
-A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
+A **JOIN** clause is used to combine rows from two or more tables, based on a related column between them.
 
-The related column is a column, which exists as a primary key in the first table and as a secondary key in the second table.
+The related column is a column, which exists as a **primary key** in the first table and as a **foreign key** in the second table.
 
 [/slide]
 
@@ -28,19 +26,20 @@ The related column is a column, which exists as a primary key in the first table
 
 # Cartesian Product
 
-The following example will produce Cartesian product:
+The following example will produce a **cartesian** product:
 
 ```Java
 SELECT last_name, name, AS department_name
 FROM employees, departments;
 ```
 
-- Each row in the first table is paired with all the rows in the second table.
-  - When there is no relationship defined between the two tables.
-- Formed when:
-  - A join condition is omitted.
-  - A join condition is invalid.
-- To avoid, always include a valid **JOIN condition**.
+When there is no relationship defined between the two tables, each row in the first table is paired with all of the rows in the second table.
+
+This is formed when:
+  - A join condition is omitted
+  - A join condition is invalid
+
+To avoid this, always include a valid **JOIN condition**.
 
 The result:
 
@@ -63,7 +62,7 @@ The result:
   - INNER JOIN
   - LEFT JOIN
   - RIGHT JOIN
-  - OUTER(UNION) JOIN
+  - OUTER (UNION) JOIN
   - CROSS JOIN
 
 [/slide]
@@ -74,7 +73,7 @@ The result:
 
 Have a look at the example below.
 
-Notice that the "course_id" column in the "Students" table refers to the "id" column in the "Courses" table.
+Notice that the `course_id` column in the `students` table refers to the `id` column in the `Courses` table.
 
 The relationship between the two tables is the courses "id" column.
 
@@ -107,11 +106,11 @@ Table courses:
 ```Java
 SELECT students.name, courses.name
 FROM students
-INNER JOIN courses  // Or just JOIN
+INNER JOIN courses  # Or just JOIN
 ON students.course_id = courses.id
 ```
 
-The inner JOIN is used to return rows from both tables that satisfy a given condition.
+The **INNER JOIN** is used to return rows from both tables that satisfy a given condition.
 
 In this case the condition is **students.course_id = courses.id**.
 
@@ -134,9 +133,9 @@ Produces a set of records which **match in both tables**!
 
 [slide hideTitle]
 
-# Left join
+# LEFT JOIN
 
-The LEFT JOIN returns all the rows from the table on the left even if no matching rows have been found in the table on the right.
+The **LEFT JOIN** returns all the rows from the table on the left even if no matching rows have been found in the table on the right.
 
 Where no matches have been found in the table on the right, **NULL** is returned.
 
@@ -144,7 +143,7 @@ Where no matches have been found in the table on the right, **NULL** is returned
 SELECT students.name, courses.name
 FROM students
 LEFT JOIN courses
-ON students.course_id = courses.id  // Matching condition
+ON students.course_id = courses.id  # Matching condition
 ```
 
 And this is the resulting table:
@@ -167,11 +166,11 @@ There was no match found for Emma, so we have **NULL** in the courses_name colum
 
 [slide hideTitle]
 
-# Right join
+# RIGHT JOIN
 
-RIGHT JOIN is the opposite of LEFT JOIN.
+The **RIGHT JOIN** is the opposite of the **LEFT JOIN**.
 
-The RIGHT JOIN returns all the columns from the table on the right even if no matching rows have been found in the table on the left.
+It returns all the columns from the table on the right even if no matching rows have been found in the table on the left.
 
 If no matches have been found in the table on the left, **NULL** is returned.
 
@@ -203,12 +202,12 @@ As a result, we have **NULL** for **JavaScript** and **PHP**.
 
 [slide hideTitle]
 
-# Outer join - Full join
+# OUTER JOIN - FULL JOIN
 
 Returns all records in both tables regardless of **any** match.
 
-- Less useful than **INNER**, **LEFT** or **RIGHT JOINs** and it's **not implemented in MySQL**.
-- We can use **UNION** of a **LEFT** and **RIGHT JOIN**.
+- Less useful than **INNER**, **LEFT** or **RIGHT JOINs** and it is **not implemented in MySQL**
+- We can use **UNION** of a **LEFT** and **RIGHT JOIN**
 
 [image assetsSrc="Joins-Subqueries-And-Indices(4).png" /]
 
@@ -216,7 +215,7 @@ Returns all records in both tables regardless of **any** match.
 
 [slide hideTitle]
 
-# Union of Left and Right Join
+# Union of LEFT and RIGHT JOINs
 
 ```Java
 SELECT students.name, courses.name
@@ -248,9 +247,9 @@ And this is the resulting table:
 
 [slide hideTitle]
 
-# Cross join
+# CROSS JOIN
 
-In MySQL, the CROSS JOIN produced a result set which is the product of rows of two associated tables when no **WHERE** clause is used with a CROSS JOIN.
+The **CROSS JOIN** produces a result set, which is the product of rows of two associated tables when no **WHERE** clause is used with a CROSS JOIN.
 
 - Produces a set of associated rows of two tables.
   - Multiplication of each row in the first table with each in second.
@@ -258,12 +257,12 @@ In MySQL, the CROSS JOIN produced a result set which is the product of rows of t
 
 ```Java
 SELECT * FROM courses AS c
-CROSS JOIN students AS s;  // No Join Condition
+CROSS JOIN students AS s;  # No Join Condition
 ```
 
 Cross JOIN is the simplest form of JOIN, which matches each row from one database table to all rows of another.
 
-In MySQL, the CROSS JOIN behaves like JOIN and INNER JOIN without using any condition.
+In MySQL, the **CROSS JOIN** behaves like a **JOIN** and an **INNER JOIN** without using any condition.
 
 Have a look at the following example below:
 
@@ -271,79 +270,20 @@ Have a look at the following example below:
 
 [/slide]
 
-[slide hideTitle]
-
-# Join overview
-
-To be able to implement joins, we need a relation between tables.
-
-The relationships between tables are done by primary keys and secondary keys.
-
-In this case **department_id** is a secondary key in **employees** table, it is also a primary key in **departments** table.
-
-[image assetsSrc="Joins-Subqueries-And-Indices(6).png" /]
-
-[/slide]
 
 [slide hideTitle]
 
-# Join overv iew: Inner join
+# Problem with Solution: Managers
 
-The INNER JOIN keyword selects all rows from both tables as long as there is a match between the columns.
-
-If there are records in the "employees" table that do not have matches in the "departments" table, these will not be shown!
-
-[image assetsSrc="Joins-Subqueries-And-Indices(7).png" /]
-
-[/slide]
-
-[slide hideTitle]
-
-# Join overview: Left join
-
-The LEFT JOIN keyword returns all records from the left table and the matched records from the right table.
-
-The result is **NULL** in the right table if there is no match.
-
-[image assetsSrc="Joins-Subqueries-And-Indices(8).png" /]
-
-[/slide]
-
-[slide hideTitle]
-
-# Join overview: Right join
-
-The RIGHT JOIN keyword returns all records from the right table and the matched records from the left table.
-
-The result is **NULL** in the left table if there is no match.
-
-[image assetsSrc="Joins-Subqueries-And-Indices(9).png" /]
-
-[/slide]
-
-[slide hideTitle]
-
-# Problem: Managers
-
-[code-task title="Problem: Managers" taskId="6348adff-105f-4b37-b315-8fd114592db1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Managers" taskId="java-db-and-mysql-joins-subqueries-and-indices-managers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 
 [/code-editor]
 [task-description]
 
 ## Description
 
-Write a query to retrieve information about the managers – **id**, **full_name**, **deparment_id** and **department_name**.
+Create a query that retrieves information about the managers – **id**, **full_name**, **deparment_id** and **department_name**.
 
 Select the **first 5** departments ordered by **employee_id**.
 
@@ -412,120 +352,21 @@ Production Control
 
 [slide hideTitle]
 
-# Solution: Managers
+# Problem with Solution: Towns Addresses
 
-[code-task title="Problem: Managers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Towns Addresses" taskId="java-db-and-mysql-joins-subqueries-and-indices-town-addresses" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 
 [/code-editor]
 [task-description]
 
 ## Description
 
-Write a query to retrieve information about the managers – **id**, **full_name**, **deparment_id** and **department_name**.
-
-Select the **first 5** departments ordered by **employee_id**.
-
-**Run your query statements & submit the output from the queries as plain text**.
-
-## Examples
-
-| **employee_id** | **full_name**      | **department_id** | **department_name** |
-| --------------- | ------------------ | ----------------- | ------------------- |
-| 3               | Roberto Tamburello | 10                | Finance             |
-| 4               | Rob Walters        | 2                 | Tool Design         |
-| ...             | ...                | ...               | ...                 |
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-3
-Roberto Tamburello
-10
-Finance
-4
-Rob Walters
-2
-Tool Design
-6
-David Bradley
-5
-Purchasing
-12
-Terri Duffy
-1
-Engineering
-21
-Peter Krebs
-8
-Production Control
-[/input]
-[output]
-3
-Roberto Tamburello
-10
-Finance
-4
-Rob Walters
-2
-Tool Design
-6
-David Bradley
-5
-Purchasing
-12
-Terri Duffy
-1
-Engineering
-21
-Peter Krebs
-8
-Production Control
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-[slide hideTitle]
-
-# Problem: Towns Addresses
-
-[code-task title="Problem: Towns Addresses" taskId="afa0ba53-d9d5-4714-a011-3677f53cf5eb" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-
-[/code-editor]
-[task-description]
-
-## Description
-
-Write a query to get information about the **addresses** in the database that are in **San Francisco**, **Sofia**, or **Carnation**.
+Create a query that retrieves information about the **addresses** in the database that are in **San Francisco**, **Sofia**, or **Carnation**.
 
 Retrieve **town_id**, **town_name**, **address_text**.
 
-Order the result by **town_id**, then by **address_id**.
+Order the result by **town_id** then by **address_id**.
 
 **Run your query statements & submit the output from the queries as plain text**.
 
@@ -601,206 +442,17 @@ Sofia
 
 [slide hideTitle]
 
-# Solution: Towns Addresses
+# Problem with Solution: Employees Without Managers
 
-[code-task title="Problem: Towns Addresses" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Employees Without Managers" taskId="java-db-and-mysql-joins-subqueries-and-indices-employees-without-managers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 
 [/code-editor]
 [task-description]
 
 ## Description
 
-Write a query to get information about the **addresses** in the database that are in **San Francisco**, **Sofia**, or **Carnation**.
-
-Retrieve **town_id**, **town_name**, **address_text**.
-
-Order the result by **town_id**, then by **address_id**.
-
-**Run your query statements & submit the output from the queries as plain text**.
-
-## Examples
-
-| **town_id** | **town_name** | **address_text** |
-| ----------- | ------------- | ---------------- |
-| 9           | San Fransisco | 1234 Seaside Way |
-| 9           | San Fransisco | 5725 Glaze Drive |
-| 15          | Carnation     | 1411 Ranch Drive |
-| ...         | ...           | ...              |
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-9
-San Francisco
-1234 Seaside Way
-9
-San Francisco
-5725 Glaze Drive
-15
-Carnation
-1411 Ranch Drive
-15
-Carnation
-3074 Arbor Drive
-15
-Carnation
-390 Ridgewood Ct.
-15
-Carnation
-9666 Northridge Ct.
-15
-Carnation
-9752 Jeanne Circle
-32
-Sofia
-163 Nishava Str, ent A, apt. 1
-[/input]
-[output]
-9
-San Francisco
-1234 Seaside Way
-9
-San Francisco
-5725 Glaze Drive
-15
-Carnation
-1411 Ranch Drive
-15
-Carnation
-3074 Arbor Drive
-15
-Carnation
-390 Ridgewood Ct.
-15
-Carnation
-9666 Northridge Ct.
-15
-Carnation
-9752 Jeanne Circle
-32
-Sofia
-163 Nishava Str, ent A, apt. 1
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-[slide hideTitle]
-
-# Problem: Employees Without Managers
-
-[code-task title="Problem: Employees Without Managers" taskId="49bb3e9a-cfd0-4b4e-804e-f43ac7182c82" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-
-[/code-editor]
-[task-description]
-
-## Description
-
-Write a query to get information about **employee_id**, **first_name**, **last_name**, **department_id** and **salary** for all employees who **don't have** a manager.
-
-**Run your query statements & submit the output from the queries as plain text**.
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-109
-Ken
-Sanchez
-16
-125500.0000
-291
-Svetlin
-Nakov
-6
-48000.0000
-292
-Martin
-Kulov
-6
-48000.0000
-293
-George
-Denchev
-6
-48000.0000
-[/input]
-[output]
-109
-Ken
-Sanchez
-16
-125500.0000
-291
-Svetlin
-Nakov
-6
-48000.0000
-292
-Martin
-Kulov
-6
-48000.0000
-293
-George
-Denchev
-6
-48000.0000
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-[slide hideTitle]
-
-# Solution: Employees Without Managers
-
-[code-task title="Problem: Employees Without Managers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-
-[/code-editor]
-[task-description]
-
-## Description
-
-Write a query to get information about **employee_id**, **first_name**, **last_name**, **department_id** and **salary** for all employees who **don't have** a manager.
+Create a query that retrieves information about **employee_id**, **first_name**, **last_name**, **department_id** and **salary** for all employees who **do not have** a manager.
 
 **Run your query statements & submit the output from the queries as plain text**.
 

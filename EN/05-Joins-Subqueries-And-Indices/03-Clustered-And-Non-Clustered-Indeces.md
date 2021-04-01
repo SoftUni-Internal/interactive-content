@@ -1,20 +1,22 @@
-# Clustered and Non-Clustered Indices
+# Clustered and Non-Clustered Indexes
 
 [slide hideTitle]
 
-# Indices
+# Indexes
 
-Before we start learning about anything on indexing, you must understand how data is organized physically inside of files.
+Understand how data is organized physically inside of files is a key component for indexing.
 
 The organizations can be divided into two types:
 
-Ordered organization: All the records in a file are ordered in some search key value.
+  - Ordered
+    - All the records in a file are ordered in some search key value
 
-Unordered organization: In this type, records are inserted in the file wherever the place is available, usually to the very end of the file.
+  - Unordered
+    - Records are inserted in the file wherever the place is available, usually to the very end of the file
 
-Indexes are used to find rows with specific column values quickly.
+Indexes are used to find rows with a specific column values quickly.
 
-Without an index, MySQL must begin with the first row and then read through the entire table to find the relevant rows.
+Without an index, MySQL must begin from the first row and then read through the entire table to find the relevant rows.
 
 The larger the table, the more this costs. 
 
@@ -22,22 +24,22 @@ If the table has an index for the columns in question, MySQL can quickly determi
 
 This is much faster than reading every row sequentially.
 
-Indices are:
+Indexes are:
 
-- Structures associated with a table or view that speeds up retrieval of rows.
-  - usually implemented as **B-trees**.
-- Indices can be built-in the table (clustered) or stored externally (non-clustered).
+- Structures associated with a table or а view that speeds up retrieval of rows
+  - usually implemented as **B-trees**
+- Indexes can be built-in to the table (clustered) or stored externally (non-clustered)
 
-- Adding and deleting records in indexed table is slower!
-  - Indeces should be used for big tables only (e.g. 50000 rows).
+- Adding and deleting records in indexed table is slower
+  - Indexes should be used for big tables only (e.g. 50000 rows)
 
 [/slide]
 
 [slide hideTitle]
 
-# Clustered Indeces
+# Clustered Indexes
 
-When you define a PRIMARY KEY on your table, the database uses it as a clustered index.
+When you define a **PRIMARY KEY** on your table, the database uses it as a clustered index.
 
 Define a primary key for each table that you create!
 
@@ -52,9 +54,9 @@ Define a primary key for each table that you create!
 
 [slide hideTitle]
 
-# Non-Clustered Indices
+# Non-Clustered Indexes
 
-A non-clustered index doesn’t sort the physical data inside the table.
+A non-clustered index does not sort the physical data inside the table.
 
 A non-clustered index is stored at one place and table data is stored in another place.
 
@@ -62,27 +64,16 @@ This is similar to a textbook where the book content is located in one place and
 
 This allows for more than one non-clustered index per table.
 
-- Useful for fast retrieving a **single record** or a **range** of records.
-  - Each **key value entry** has a pointer to the data row that contains the key value.
-- Maintained in a separate.
-- Structure in the DB.
+- Useful for fast retrieving a **single record** or a **range** of records
+  - Each **key value entry** has a pointer to the data row that contains the key value
+- Maintained in a separate
+- Structure in the DB
 
 [image assetsSrc="Joins-Subqueries-And-Indices(11).png" /]
 
-**Conclusion**
-
-From the discussion we find following differences between clustered and non-clustered indexes.
-
-1. There can be only one clustered index per table. However, you can create multiple non-clustered indexes on a single table.
-2. Clustered indexes only sort tables. Therefore, they do not consume extra storage.
-3. Non-clustered indexes are stored in a separate place from the actual table claiming more storage space.
-4. Clustered indexes are faster than non-clustered indexes since they don’t involve any extra lookup step.
-
-[/slide]
-
 [slide hideTitle]
 
-# Indices Syntax
+# Indexes Syntax
 
 ```Java
 CREATE INDEX
