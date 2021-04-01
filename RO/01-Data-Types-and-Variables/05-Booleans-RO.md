@@ -107,7 +107,7 @@ console.log(5 === '5');
 ``` js live
 if (5 == true) {
   console.log('same');
-}else{
+} else {
   console.log('not');
 }
 
@@ -118,7 +118,7 @@ Rezultatul acestei expresii:
 ``` js live
 if (1 == true) {
   console.log('same');
-}else{
+} else {
   console.log('not');
 }
 ```
@@ -129,7 +129,7 @@ Valorile **0** și **1** devin valoarea booleană **0 false**, **1 true**.
 
 Celelalte valori numerice devin valori booleene și sunt "**false**".
 
-În javascript avem opt valori despre care se presupune că sunt "**falsey**":
+În JavaScript avem opt valori despre care se presupune că sunt "**falsey**":
 
 | **Valoare** | **Descriere** | 
 | :---:       |    :----:   |   

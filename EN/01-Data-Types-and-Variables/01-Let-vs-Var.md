@@ -149,7 +149,7 @@ To be valid, the variable must start with either a **letter** or an **underscore
 
 `firstName, report, config, fontSize, maxSpeed`
 
-There are keywords in javascript that we **cannot use** for our variable names:
+There are keywords in JavaScript that we **cannot use** for our variable names:
 
 `break, const, interface, typeof, true` etc.
 
