@@ -1525,7 +1525,7 @@ Denchev
 
 [slide hideTitle]
 # Problem: Find Towns with Name Length
-[code-task title="Find Towns with Name Length" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-find-book-titles" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Find Towns with Name Length" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-Towns-with-Name-Length" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 [/code-editor]

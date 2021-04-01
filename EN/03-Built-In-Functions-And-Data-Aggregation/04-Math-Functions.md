@@ -61,7 +61,7 @@ SELECT POW(5, 2);
 
 
 ``` java
-SELECT CONV(15, 10, 2);  # The first argument is "value", second is "from_base", third "to_base"
+SELECT CONV(15, 10, 2);  // The first argument is "value", second is "from_base", third "to_base"
 ```
 
 **Output**:
