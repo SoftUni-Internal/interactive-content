@@ -56,7 +56,7 @@ Here is an example of constructor chaining.
 class Person{
     private String name;
     
-    // If we do not have parameterized constructor in the parent class, we can skip calling it in the Subclass.
+    // If we do not have a parameterized constructor in the parent class, we can skip calling it in the Subclass.
     public Person(String name){
         this.name = name;
     }
