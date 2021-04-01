@@ -10,7 +10,7 @@
 
 **1. What is Encapsulation** 
 
-- The benefits of using encapsulation
+- Definition
 
 **2. Access Modifiers**
 
@@ -20,16 +20,16 @@
 
 **3. Validation**
 
-- How to validate our object data
+- How to validate object data
 
 **4. Mutable and Immutable Objects**
 
 - What is the difference between mutable and immutable objects 
 
-- Distinguishing between the two
+- Distinguishing between them
 
 **5. The `final` keyword**
 
-- Uses of the `final` keyword 
+- Definition and use cases
     
 [/slide]
