@@ -3,27 +3,26 @@
 
 # String Functions
 
-We use String Functions to manipulate our character string effectively.
+We use **string** functions to manipulate our character string effectively.
 
-Take a look at this simple example of String Function:
+Example of **string functions**:
 
-## SUBSTRING()
+## The SUBSTRING() Function
 
-The `SUBSTRING()` function allows us to extract part of a string.
+The `SUBSTRING()` function allows us to extract parts of a string.
 
-We can use it this way:
 
 ``` java
-SUBSTRING(String, Position) // Here we select our String and position from which we will take the substring
+SUBSTRING(String, Position) # Here we select our String and position from which we will take the substring
 ```
 
 **Example:**
 
 ``` java
-SELECT SUBSTRING('softuni.org',2);
+SELECT SUBSTRING('softuni.org', 2);
 ```
 
-**Output will be:**
+**Output**:
 
 ```
 oftuni.org
@@ -32,27 +31,26 @@ oftuni.org
 The second way of using our `SUBSTRING()` is:
 
 ``` java
-SUBSTRING(String, Position, Length) // We take the index from where our result will start to index from where it will finish
+SUBSTRING(String, Position, Length)  # We take the index from where our result will start to index from where it will finish
 ```
 
 **Example**:
 
 ``` java
-SELECT SUBSTRING('softuni.org',1,3);
+SELECT SUBSTRING('softuni.org', 1, 3);
 ```
 
-**Output will be:**
+**Output**:
 
 ```
 sof
 ```
 
-
 We can use the `SUBSTRING()` method this way too:
 
 ``` java
-SUBSTRING(String FROM Position FOR Length) // This way, we can choose from which position we want to 
-                                           //  start taking the substring and for what length.
+SUBSTRING(String FROM Position FOR Length)  # This way, we can choose from which position we want to 
+                                            # start taking the substring and for what length.
 ```
 
 **Example:**
@@ -61,44 +59,30 @@ SUBSTRING(String FROM Position FOR Length) // This way, we can choose from which
 SELECT SUBSTRING('softuni.org' FROM 2 FOR 5);
 ```
 
-**Output will be:**
+**The output will be:**
 
 ```
 ouftun
 ```
-
-Now, let's try to solve a simple problem knowing this:
-
-
 
 [/slide]
 
 
 [slide hideTitle]
 
-# Problem: Find Book Titles
-[code-task title="Problem: Find Book Titles" taskId="a68acaa8-d49e-4ed1-974f-00974e5d2ce2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem with Solution: Find Book Titles
+[code-task title="Find Book Titles" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-find-book-titles" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 # Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/04.Built-In-Functions-And-Data-Aggregation-Lab.zip) **for this task.**
 
-Write a SQL query to find **books which titles start with "The".** 
+Create an SQL query to find **books, which titles start with "The".** 
 
 **Order the result by id.** 
-
-**Run your query statement and submit the following output as plain text.**
 
 ## Example:
 
@@ -110,108 +94,6 @@ Write a SQL query to find **books which titles start with "The".**
 | The Mystery of the Blue Train |
 | The Ring |
 | ..... |
-
-
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-The Mysterious Affair at Styles
-The Big Four
-The Murder at the Vicarage
-The Mystery of the Blue Train
-The Ring
-The Alchemist
-The Fifth Mountain
-The Zahir
-The Dead Zone
-The Hobbit
-The Adventures of Tom Bombadil
-[/input]
-[output]
-The Mysterious Affair at Styles
-The Big Four
-The Murder at the Vicarage
-The Mystery of the Blue Train
-The Ring
-The Alchemist
-The Fifth Mountain
-The Zahir
-The Dead Zone
-The Hobbit
-The Adventures of Tom Bombadil
-[/output]
-[/test]
-[test]
-[input]
-The Mysterious Affair at Styles
-The Big Four
-The Murder at the Vicarage
-The Mystery of the Blue Train
-The Ring
-The Alchemist
-The Fifth Mountain
-The Zahir
-The Dead Zone
-The Hobbit
-The Adventures of Tom Bombadil
-[/input]
-[output]
-The Mysterious Affair at Styles
-The Big Four
-The Murder at the Vicarage
-The Mystery of the Blue Train
-The Ring
-The Alchemist
-The Fifth Mountain
-The Zahir
-The Dead Zone
-The Hobbit
-The Adventures of Tom Bombadil
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-
-[slide hideTitle]
-
-# Solution: Find Book Titles
-[code-task title="Problem: Find Book Titles"  executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-# Description
-
-Write a SQL query to find **books which titles start with "The".** 
-
-**Order the result by id.** 
-
-**Run your query statement and submit the following output as plain text.**
-
-## Example:
-
-| Title |
-| --- |
-| The Mysterious Affair at Styles |
-| The Big Four |
-| The Murder at the Vicarage |
-| The Mystery of the Blue Train |
-| The Ring |
-| ..... |
-
 
 
 [/task-description]
@@ -279,73 +161,66 @@ The Adventures of Tom Bombadil
 
 [slide hideTitle]
 
-# REPLACE Function
+## The REPLACE() Function
 
-Now, let's take a look at the `REPLACE()` function in MySQL:
+Now, let us take a look at the `REPLACE()` function in MySQL:
 
-`REPLACE()` Function allows us to replace all occurrences of a substring with a string.
+The `REPLACE()` function allows us to replace all occurrences of a substring with a string.
 
-It's important to know that this method performs a **case-sensitive** match.
-
-The **Syntax** here we can use is:
+It is important to know that this method performs on a **case-sensitive** match.
 
 ``` java
-REPLACE(String, Pattern, Replacement) // Where String is our field from the table.
-                                      // Pattern is the String which we need to replace
-                                      // Replacement is our replacement pattern                               
+REPLACE(String, Pattern, Replacement)  # Where "String" is our field from the table.
+                                       # "Pattern" is the string, which we need to replace
+                                       # "Replacement" is our replacement string                               
 ```
 
-Take a look at this simple code:
+**Example:**
 
 ``` java
-SELECT REPLACE('aaa.softuni.org','a','w'); // This example will replace all "a" with "w"
+SELECT REPLACE('aaa.softuni.org','a','w');  # In this example, "a" will be replaced with "w"
 ```
 
-**Output after executing will be:**
+**Output**:
 
 ```
 www.softuni.org
 ```
 
-Using this method we can **replace whole words**:
+Using this method, we can **replace entire words**
+
+**Example**:
 
 ``` java
 SELECT REPLACE('We can replace the word blood with a different symbol or words', 'blood', '*****') 
-// Where we first have our text, second we write the word we need to replace, and the last we write the replacement symbol or character.
+# First have our text
+# Second we write the word we need to replace
+# And we write the replacement symbol or character
 ```
 
-**Output will be:**
+**Output**:
 
 ```
 We can replace the word ***** with different symbol or words
 ```
 
-
 [/slide]
 
 [slide hideTitle]
 
-# Problem: Replace Titles
-[code-task title="Problem: Replace Titles" taskId="6196a363-d4e6-4b50-9b64-b5bfab38d8ce" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem with Solution: Replace Titles
+[code-task title="Replace Titles" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-replace-titles" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
+
 ## Description
 
-Write a SQL query to find books which titles **start with "The" and replace the substring with 3 asterisks.**
+Create an SQL query to find books, which titles **start with the word "The" and replace the word with 3 asterisks.**
 
-Retrieve data about the updated titles. **Order the result by id**. Submit your query statements as **Prepare DB & run queries**. 
+Extract data about the updated titles.
 
-## Examples
+**Order the result by the id column**.
 
 
 [/task-description]
@@ -413,98 +288,9 @@ Retrieve data about the updated titles. **Order the result by id**. Submit your 
 
 [slide hideTitle]
 
-# Problem: Replace Titles
-[code-task title="Problem: Replace Titles"  executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+## The LTRIM() & RTRIM() Functions
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Description
-
-Write a SQL query to find books which titles **start with "The" and replace the substring with 3 asterisks.**
-
-Retrieve data about the updated titles. **Order the result by id**. Submit your query statements as **Prepare DB & run queries**. 
-
-## Examples
-
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-\*\*\* Mysterious Affair at Styles
-\*\*\* Big Four
-\*\*\* Murder at the Vicarage
-\*\*\* Mystery of the Blue Train
-\*\*\* Ring
-\*\*\* Alchemist
-\*\*\* Fifth Mountain
-\*\*\* Zahir
-\*\*\* Dead Zone
-\*\*\* Hobbit
-\*\*\* Adventures of Tom Bombadil
-[/input]
-[output]
-\*\*\* Mysterious Affair at Styles
-\*\*\* Big Four
-\*\*\* Murder at the Vicarage
-\*\*\* Mystery of the Blue Train
-\*\*\* Ring
-\*\*\* Alchemist
-\*\*\* Fifth Mountain
-\*\*\* Zahir
-\*\*\* Dead Zone
-\*\*\* Hobbit
-\*\*\* Adventures of Tom Bombadil
-[/output]
-[/test]
-[test]
-[input]
-\*\*\* Mysterious Affair at Styles
-\*\*\* Big Four
-\*\*\* Murder at the Vicarage
-\*\*\* Mystery of the Blue Train
-\*\*\* Ring
-\*\*\* Alchemist
-\*\*\* Fifth Mountain
-\*\*\* Zahir
-\*\*\* Dead Zone
-\*\*\* Hobbit
-\*\*\* Adventures of Tom Bombadil
-[/input]
-[output]
-\*\*\* Mysterious Affair at Styles
-\*\*\* Big Four
-\*\*\* Murder at the Vicarage
-\*\*\* Mystery of the Blue Train
-\*\*\* Ring
-\*\*\* Alchemist
-\*\*\* Fifth Mountain
-\*\*\* Zahir
-\*\*\* Dead Zone
-\*\*\* Hobbit
-\*\*\* Adventures of Tom Bombadil
-[/output]
-[/test]
-[/tests]
-[/code-task]
-
-[/slide]
-
-[slide hideTitle]
-
-# LTRIM & RTRIM Functions
-
-**LTRIM** and **RTRIM** functions remove the space characters of a string passed as an argument.
+The **LTRIM()** and **RTRIM()** functions remove the space character from a string passed as an argument.
 
 We can use the function like this:
 
@@ -513,19 +299,19 @@ LTRIM(String)
 RTRIM(String)
 ```
 
-Let's take a look at this simple example:
+Let us take a look at this simple example:
 
 ``` java
 SELECT LTRIM('    Softuni rocks!')
 ```
 
-The Left Trim will trim the spaces left from "Softuni rocks!" and the **output** will be:
+The `LTRIM()` function will trim the spaces at the beginning of the string, before "Softuni rocks!", and the **output** will be:
 
 ``` 
 Softuni rocks!
 ```
 
-The same principle is valid for the `RTRIM()`, but this time it will remove the trailing spaces right after the text.
+The same principle is valid for the `RTRIM()` function but this time it will remove the trailing spaces at the end after the text.
 
 ``` java
 SELECT RTRIM('Softuni rocks!'     )
@@ -541,18 +327,16 @@ Softuni rocks!
 
 [slide hideTitle]
 
-# CHAR_LENGTH & LENGTH Functions
+## The CHAR_LENGTH() & LENGTH() Functions
 
-`CHAR_LENGTH()` will return the length of our string. 
-
-We will understand this better with the following examples:
+The `CHAR_LENGTH()` function will return the length of the provided string. 
 
 ``` java
 SELECT CHAR_LENGTH('Let us count the characters in this sentence');
-// This will count the whitespaces too
+# This will count the whitespaces too
 ```
 
-**Output:**
+**Output**:
 
 ```
 44
@@ -560,58 +344,55 @@ SELECT CHAR_LENGTH('Let us count the characters in this sentence');
 
 The `LENGTH()` will return the **same result** from the input above:
 
-So, what is the difference between them?
+It is important to know that a **multi-byte character will counts as a single character**.
 
-It's important to know that a **multi-byte character will counts as a single character**.
+If our string **contains five two-bite characters**, our `CHAR_LENGTH()` function will return **5**, but our `LENGTH()` will return **10**.
 
-If our string c**ontains five two-bite characters**, our `CHAR_LENGTH()` function will return **5**, but our `LENGTH()` will return **10**.
-
-We will picture this better with a very simple example:
+**Example**:
 
 ``` java
-SELECT LENGTH('§'); vs SELECT CHAR_LENGTH('§');
+SELECT LENGTH('§'); # Returns 2
+SELECT CHAR_LENGTH('§'); # Returns 1
 ```
 
-| **LENGTH('§')** | **CHAR_LENGTH('§')** | 
-| --- | --- |
-| 2 | 1 |
-
-As we see here, the `LENGTH()` function will return the result of **2**, and the `CHAR_LENGTH()` will return **1**.
+As we see here, the `LENGTH()` function will return a result of **2** and the `CHAR_LENGTH()` a return of **1**.
 
 [/slide]
 
 [slide hideTitle]
 
-# LEFT & RIGHT Functions
+# The LEFT() & RIGHT() Functions
 
-`LEFT()` and `RIGHT()` Functions get characters from **beginning** or **end** of a string.
+The `LEFT()` and `RIGHT()` functions return characters from the **beginning** or from the **end** of a string.
 
-Let see the Syntax first:
+**Syntax**:
 
 ``` java
 LEFT(String, Count)
 RIGHT(String, Count)
 ```
 
-**Examples:**
+**Example**:
 
 ``` java
-SELECT LEFT('Testing Left Function', 5); // This syntax will return the first five characters from the left in our string.
+SELECT LEFT('Testing Left Function', 5);  # This syntax will return the first five characters from the left in our string.
 ```
 
-**Output:**
+**Output**:
 
 ```
 Testi
 ```
 
-Similarly, our `RIGHT()` function will return the first five characters from the right in our String:
+Similarly, the `RIGHT()` function will return the first characters from the right in the provided string:
+
+**Example**:
 
 ``` java
 SELECT RIGHT('Testing Left Function', 5);
 ```
 
-**Output:**
+**Output**:
 
 ```
 ction
@@ -622,23 +403,23 @@ ction
 
 [slide hideTitle]
 
-# LOWER & UPPER Functions
+## The LOWER() & UPPER() Functions
 
-In MySQL we use `LOWER()` function to converts all characters in our string to **lowercase** letters.
+The `LOWER()` function to converts all characters in the provided string to **lowercase** letters.
 
-Let's see the following example:
+**Example**:
 
 ``` java
-SELECT LOWER('SOFTUNI DB COURSE'); // This will convert all upper characters to lower.
+SELECT LOWER('SOFTUNI DB COURSE');
 ```
 
-**Output** will be:
+**Output**:
 
 ```
 softuni db course
 ```
 
-Similarly to this, we can use `UPPER()` to convert all lower case letters to upper case.
+Similarly, the `UPPER()` function to convert all characters to **uppercase** letters.
 
 **Example:**
 
@@ -656,33 +437,31 @@ I AM UPPER CASE
 
 [slide hideTitle]
 
-# REVERSE & REPEAT Functions
+## The REVERSE() & REPEAT() Functions
 
-Next, we will take a look at `REVERSE()` and `REPEAT()` functions:
+The `REVERSE()` function allows us to reverse the order of all characters in the provided string.
 
-`REVERSE()` function allows us to reverse the order of all characters in the string.
-
-For example:
+**Example**:
 
 ``` java
-SELECT REVERSE('softuni'); // This will reverse the characters in the "softuni" string
+SELECT REVERSE('softuni');  # This will reverse the characters in the "softuni" string
 ```
 
-**Output** will be:
+**Output**:
 
 ```
 inutfos
 ```
 
-`REPEAT()` function allows us to repeat a string a specified number of times.
+The `REPEAT()` function allows us to repeat a string a specified number of times.
 
-The syntax here is also pretty easy:
+**Example**:
 
 ``` java
-SELECT REPEAT('softuni ',3); // This will repeat softuni with the whitespace after exactly 3 times
+SELECT REPEAT('softuni ', 3);  # This will repeat softuni with the whitespace after exactly 3 times
 ```
 
-**Output:**
+**Output**:
 
 ```
 softuni softuni softuni 
@@ -691,20 +470,20 @@ softuni softuni softuni
 
 [slide hideTitle]
 
-# LOCATE & INSERT Functions
+## The LOCATE() & INSERT() Functions
 
 `LOCATE()` function in MySQL lets us locate a specific pattern (substring) in our string.
 
 The function performs a **case-insensitive** search.
 
-We can see the syntax here:
+**Syntax**:
 
 ``` java
-LOCATE(Pattern, String,[Position]) // Where the [Position] argument is optional. If omitted, it defaults to 1. 
-                                  // The first position in our string is 1.
+LOCATE(Pattern, String, [Position])  # Where the [Position] argument is optional. If omitted, it defaults to 1. 
+                                     # The first position in our string is 1.
 ```
 
-Let's illustrate this with a simple code example:
+**Example**:
 
 ``` java
 SELECT LOCATE('st','teststring');
@@ -716,17 +495,15 @@ The following **output** will be:
 3
 ```
 
-The last **String** function we will look at is `INSERT()` function.
+The `INSERT()` function allows us to insert substring at a specific position.
 
-It allows us to insert substring at a specific position.
-
-**Syntax:**
+**Syntax**:
 
 ``` java
-INSERT(String, Position, Length, Substring) // Our Length parameter indicates the count characters will be deleted.
+INSERT(String, Position, Length, Substring)  # The Length parameter indicates the count of characters that will be deleted from the start of the given Position.
 ```
 
-**Example:**
+**Example**:
 
 ``` java
 SELECT INSERT('SoftuniTestString', 2, 4, ' insert ');
@@ -737,6 +514,4 @@ SELECT INSERT('SoftuniTestString', 2, 4, ' insert ');
 ```
 'S insert niTestString'
 ```
-
-
 [/slide]

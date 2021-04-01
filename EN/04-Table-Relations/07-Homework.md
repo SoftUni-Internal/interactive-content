@@ -6,28 +6,20 @@
 
 [slide hideTitle]
 # Problem: One-To-One Relationship
-[code-task title="Problem: One-To-One Relationship" taskId="27c5e29b-5fb1-475e-bb58-f84ee19f60ed" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="One-To-One Relationship" taskId="java-db-and-mysql-one-to-one-relationship" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/05.Table-Relations-Geography-Db-Exercise.zip) **for this task.**
 
-Create two tables as follows. Use appropriate data types.
+Create two tables as follows. Use the appropriate data types.
 
 **Insert the data from the example below.**
 
-•	Alter table **people** and make **person_id** a **primary key**. 
+•	Alter the **people** table and make **person_id** a **primary key**. 
 
 •	Create a **foreign key** between **people** and **passports** by using the **passport_id** column. 
 
@@ -138,30 +130,20 @@ N34FG21B
 
 [slide hideTitle]
 # Problem: One-To-Many Relationship
-[code-task title="Problem: One-To-Many Relationship" taskId="a7d399f9-16ab-4018-9b73-4f5076075285" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="One-To-Many Relationship" taskId="java-db-and-mysql-one-to-many-relationship" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/05.Table-Relations-Geography-Db-Exercise.zip) **for this task.**
 
-Create two tables as follows. Use appropriate data types.
+Create two tables as follows. Use the appropriate data types.
 
 Insert the data from the example below. 
 
-•	Add primary and foreign keys.
-
-Submit your queries by using "**MySQL run queries & check DB**" strategy.
+Add primary and foreign keys.
 
 
 ## Examples
@@ -292,32 +274,22 @@ Nova
 
 [slide hideTitle]
 # Problem: Many-To-Many Relationship
-[code-task title="Problem: Many-To-Many Relationship" taskId="8fdeb158-948f-43dd-bd93-7c481485049e" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Many-To-Many Relationship" taskId="java-db-and-mysql-many-to-many-relationship" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/05.Table-Relations-Geography-Db-Exercise.zip) **for this task.**
 
-Create three tables as follows. Use appropriate data types.
+Create three tables as follows. Use the appropriate data types.
 
 **Insert the data from the example above**.
 
-•	Add primary and foreign keys.
+Add primary and foreign keys.
 
-•	Have in mind that the table **student_exams** should have a composite primary key.
-
-Submit your queries by using "**MySQL run queries & check DB**" strategy.
+Hint: the table **student_exams** should have a composite primary key.
 .
 
 ## Examples
@@ -477,17 +449,9 @@ Oracle 11g
 
 [slide hideTitle]
 # Problem: Self-Referencing
-[code-task title="Problem: Self-Referencing" taskId="8c60b62a-5656-4d77-a686-10ef21c87e57" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Self-Referencing" taskId="java-db-and-mysql-self-referencing" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
@@ -498,11 +462,9 @@ Create a single table as follows. Use appropriate data types.
 
 **Insert the data from the example above**.
 
-•	Add primary and foreign keys. 
+Add primary and foreign keys. 
 
-•	The foreign key should be between **manager_id** and **teacher_id**.
-
-Submit your queries by using "**MySQL run queries & check DB" strategy**.
+The foreign key should be between **manager_id** and **teacher_id**.
 
 ## Examples
 
@@ -587,17 +549,9 @@ Greta
 
 [slide hideTitle]
 # Problem: Online Store Database
-[code-task title="Problem: Online Store Database" taskId="5311ac44-15d7-4e0b-a4dd-26852366f9a3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Online Store Database" taskId="java-db-and-mysql-online-store-database" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
@@ -605,8 +559,6 @@ public class Main {
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/05.Table-Relations-Geography-Db-Exercise.zip) **for this task.**
 
 Create a new database and design the following structure:
-
-Submit your queries by using "**MySQL run queries & check DB" strategy**".
 
 [image assetsSrc="Table-Relations-Homework.png" /]
 
@@ -752,34 +704,24 @@ customer_id
 
 [slide hideTitle]
 # Problem: Peaks in Rila
-[code-task title="Problem: Peaks in Rila" taskId="67b6ba43-c2c6-4d77-ae2e-9a594b867a9c" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Peaks in Rila" taskId="java-db-and-mysql-peaks-in-rila" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/05.Table-Relations-Geography-Db-Exercise.zip) **for this task.**
 
-Display all peaks for "**Rila**" **mountain_range**. Include:
+Display all peaks for "**Rila**".
 
-•	**mountain_range**
+Include the following columns:
+    - **mountain_range**
+    - **peak_name**
+    - **peak_elevation**
 
-•	**peak_name**
+Peaks should be sorted by the **peak_elevation** column in descending order.
 
-•	**peak_elevation**
-
-Peaks should be sorted by **peak_elevation** descending.
-
-Submit your queries by using "**MySQL prepare DB & run queries**" strategy.
 
 ## Examples
 | **mountain_range** | **peak_name** | **peak_elevation** |
