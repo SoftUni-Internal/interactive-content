@@ -17,11 +17,11 @@ They can be used with **LIKE** operator in a **WHERE** clause. It is pretty simi
 **Example**:
 
 ``` java
-WHERE CustomerName LIKE 'a%';  # It will find any values that starts with "a" (Customer name in our case)
+WHERE CustomerName LIKE 'a%';  // It will find any values that starts with "a" (Customer name in our case)
 ```
 
 ``` java
-WHERE CustomerName LIKE '_r%';  # It will find values that have "r" in second position
+WHERE CustomerName LIKE '_r%';  // It will find values that have "r" in second position
 ```
 
 ``` java

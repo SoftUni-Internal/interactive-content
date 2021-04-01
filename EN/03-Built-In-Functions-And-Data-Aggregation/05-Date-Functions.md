@@ -19,7 +19,7 @@ SELECT EXTRACT(YEAR FROM "1995-11-24"); // It will extract only the year.
 - `TIMESTAMPDIFF()` - Extracts the difference between two dates.
 
 ``` java
-TIMESTAMPDIFF(Part, FirstDate, SecondDate)  # Part can be any part and format of date or time
+TIMESTAMPDIFF(Part, FirstDate, SecondDate)  // Part can be any part and format of date or time
 ```
 
 Let's see a simple query example using our **soft_uni** database:

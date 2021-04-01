@@ -11,8 +11,8 @@ Using **GROUP BY** we can get each **separate** group and use an **aggregate** f
 Let us take a look at this simple example using **soft_uni** database:
 
 ``` java
-SELECT e.`job_title`, count(employee_id)  # This query would return a list of position 
-  FROM `employees` AS e                   # titles and the number of employees assigned to each one of them.
+SELECT e.`job_title`, count(employee_id)  // This query would return a list of position 
+  FROM `employees` AS e                   // titles and the number of employees assigned to each one of them.
 GROUP BY e.`job_title`;
 ```
 
