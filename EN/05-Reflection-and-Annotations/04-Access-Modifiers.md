@@ -2,7 +2,7 @@
 
 # Access Modifiers
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-24-25-access-modifiers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-24-25-access-modifiers-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To obtain the class modifiers, we use the `getModifiers()` method.
 
@@ -50,7 +50,7 @@ Also, we are able to **check** if the modifiers are **protected, public or stati
 
 # Arrays
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-26-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-26-arrays-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Let us see how we can create **Arrays** via Reflection:
 
