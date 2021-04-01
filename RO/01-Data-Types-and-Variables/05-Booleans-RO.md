@@ -43,7 +43,13 @@ Exemple de operatori de comparație:
 | `>=` | mai mare sau egal cu (fără tip) | `if (6 >= 6)` |
 | `<=` | mai mic sau egal cu (fără tip) | `if(6 <= 6)` |
 
-## Exemple Booleene:
+
+[/slide]
+
+[slide hideTitle]
+# True and False
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-24-25-boolean-comparisons-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Totul cu o "valoare" este "**true**":
 
@@ -65,14 +71,7 @@ if (number) {
 } else {
   console.log('false');
 }
-
 ```
-[/slide]
-
-[slide hideTitle]
-# True and False
-
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-24-25-boolean-comparisons-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În plus față de "**true**" și "**false**", JavaScript are "**truthy**" și "**false**" (uneori scris "**falsey**").
 

@@ -45,7 +45,13 @@ Examples of comparison operators:
 | `>=` | greater than or equal to(no type) | `if (6 >= 6)` |
 | `<=` | less than or equal to(no type) | `if(6 <= 6)` |
 
-## Boolean examples
+[/slide]
+
+[slide hideTitle]
+# True and False
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-24-25-boolean-comparisons-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 Everything **with a value** is "**true**":
 
@@ -67,15 +73,7 @@ if (number) {
 } else {
   console.log('false');
 }
-
 ```
-[/slide]
-
-[slide hideTitle]
-# True and False
-
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-24-25-boolean-comparisons-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
 
 In addition to "**true**" and "**false**", JavaScript has "**truthy**" and "**falsy**". 
 
