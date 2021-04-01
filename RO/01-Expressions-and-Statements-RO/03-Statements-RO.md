@@ -62,5 +62,66 @@ counter++;
 ```js
 sum = a + b;
 ```
+
+## Comentarii
+
+**Comentariile** sunt **instrucțiuni** speciale care **nu** sunt executate.
+
+Acestea sunt un mod pentru programatori de a scrie **notițe** pentru ei înșiși sau pentru alți programatori.
+
+Putem folosi comentariile pentru **a clarifica** care este scopul pe care vrem să îl atingem cu codul nostru.
+
+Există **două tipuri** de comentarii în Javascript. 
+
+- Comentarii pe un singur rând
+
+**Comentariile pe un singur rând** au cea mai simplă sintaxă.
+
+Pentru a declara unul, folosim **două bare oblice** `//`, urmate de comentariu:
+
+```js
+// Acesta este un comentariu pe un singur rând 💬
+```
+
+Putem să le utilizăm pentru **a explica** codul nostru:
+
+```js live
+console.log("JavaScript e super! 😎"); // Această linie tipărește un șir pe consolă
+```
+
+Sau pentru **opri** o linie de cod din **a rula**:
+
+```js live
+console.log("Vremea afară este însorită. 🌞"); 
+// console.log("Afară plouă. 🌧");
+```
+
+Orice se află pe o linie de comentariu **va fi ignorat de compilator**.
+
+- Comentarii pe linii multiple
+
+După cum sugerează numele, **comentariile pe linii multiple** pot ocupa **mai multe** linii.
+
+Acest lucru poate fi util atunci când un comentariu este **prea lung** pentru o singură linie și ar necesita derulare orizontală.
+
+Le deschidem folosind o **bară oblică**, urmată de un **asterisc**:
+
+```js live
+let name = "Harry";
+
+console.log(`Hello, ${name}! 🙋`);
+
+/*Acest comentariu
+  ocupă mai multe 
+  linii*/
+```
+
+Și să le închidem folosind **un asterisc și o bară oblică**.
+
+Putem să scriem comentarii pe o singură linie folosind sintaxa:
+
+```js
+/*Acesta este un comentariu pe un singur rând 👨🏼‍💻*/
+```
   
 [/slide]
