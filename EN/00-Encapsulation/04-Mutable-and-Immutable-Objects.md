@@ -129,9 +129,9 @@ The class should also have private method for setName and public methods for:
 
 ## This class should be applicable in the following context:
 ```java
-Team team = new Team ( name: "Black Eagles");
+Team team = new Team (name: "Black Eagles");
 for (Person player : players) {
-    team.addPlayer (player);
+    team.addPlayer(player);
 }
 
 System.out.println("First team have" +
@@ -142,13 +142,13 @@ team.getReserveTeam ().size() + "players");
 ```
 ## It should not function the following way:
 ```java
-Team team = new Team ( name: "Black Eagles");
+Team team = new Team (name: "Black Eagles");
 
 for (Person player : players) {
     if (player.getAge() < 40) {
-        team.getFirstTeam () .add (player);
+        team.getFirstTeam().add(player);
     } else {
-        team.getReserveTeam () .add (player);
+        team.getReserveTeam().add(player);
     }
 }
 ```
@@ -156,8 +156,8 @@ for (Person player : players) {
 # Example
 | **Input** | **Output** |
 | --- | --- |
-| 5 | The number of players on the main team is: 4.  |
-| George Air 20 2200 | The number of players on the reserve team is: 1.  |
+| 5 | First team have 4 players  |
+| George Air 20 2200 | Reserve team have 1 players  |
 | Anderson Paak 57 3333 |  |
 | Lee Parker 27 600 |  |
 | Grigor Dimitrov 25 666.66 |  |
