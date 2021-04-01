@@ -109,9 +109,9 @@ Create a **Team** class.
 
 Add to this team all the player data that you receive from the input. 
 
-All players **younger** than 40 years old go in **the first team**, all others go to **the reserve team**.
+All players **younger** than 40 years old go to **the first team**, all others go to **the reserve team**.
 
-At the end print both list sizes.
+After that, print both list sizes.
 
 The class should have **private fields** for:
 - **name: String**
