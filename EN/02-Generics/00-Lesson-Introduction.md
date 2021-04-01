@@ -7,10 +7,10 @@
 
 ## In this lesson you will learn:
 
-**1. The Problem before Java 5.0**
+**1. The implementation of type safety in versions following Java 5.0**
 - How **type safety** makes our code less prone to bugs
 
-**2. Generics Syntax**
+**2. Generics - Syntax**
 - How to use generics
 
 **3. Generic Classes and Interfaces**
