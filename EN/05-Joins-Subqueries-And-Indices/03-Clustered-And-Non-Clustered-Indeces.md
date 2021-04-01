@@ -71,6 +71,8 @@ This allows for more than one non-clustered index per table.
 
 [image assetsSrc="Joins-Subqueries-And-Indices(11).png" /]
 
+[/slide]
+
 [slide hideTitle]
 
 # Indexes Syntax
