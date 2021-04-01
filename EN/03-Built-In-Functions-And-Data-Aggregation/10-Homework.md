@@ -13,7 +13,7 @@
 [slide hideTitle]
 
 # Problem: Find Names of All Employees by First Name
-[code-task title="Problem: Find Names of All Employees by First Name" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-find-names-of-all-employees-by-first-name" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Find Names of All Employees by First Name" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-find-names-of-all-employees-by-first-name" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 [/code-editor]
 [task-description]
@@ -119,7 +119,7 @@ D'Hers
 
 [slide hideTitle]
 # Problem: Find Names of All Employees by Last Name
-[code-task title="Problem: Find Names of All Employees by Last Name" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-find-names-of-all-employees-by-last-name" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Find Names of All Employees by Last Name" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-find-names-of-all-employees-by-last-name" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 [/code-editor]
@@ -248,7 +248,7 @@ BANADEI
 [slide hideTitle]
 
 # Problem: Find First Names of All Employees
-[code-task title="Problem: Find First Names of All Employees" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-find-first-name-of-all-employees" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Find First Names of All Employees" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-find-first-name-of-all-employees" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 [/code-editor]
 [task-description]
@@ -348,7 +348,7 @@ Steven
 [slide hideTitle]
 
 # Problem: Find All Employees Except Engineers
-[code-task title="Problem: Find All Employees Except Engineers" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-find-all-employees-except-engineers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Find All Employees Except Engineers" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-find-all-employees-except-engineers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 [/code-editor]
 [task-description]
