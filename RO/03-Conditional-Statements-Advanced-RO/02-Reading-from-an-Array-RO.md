@@ -43,7 +43,7 @@ Primul element din matrice se află pe poziția `0`, și ultimul se află pe poz
 
 # Citirea Dintr-o Matrice
 
-[video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-11-Reading-from-Arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-11-Reading-from-Arrays-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Fiecare element dintr-o matrice are un **index** (**poziție**) după care poate fi **accesat**.
 
