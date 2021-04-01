@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Why Split related Data?
+# Splitting Related Data
 
 We split data into separate tables to avoid repeating empty records or redundant information.
 
@@ -10,7 +10,7 @@ We split data into separate tables to avoid repeating empty records or redundant
 
 If we have duplicate data, any change in one place will produce a change in every other place. 
 
-It would be more logical and efficient if we create the name and the information of a customer only once.
+It would be more logical and efficient if we create the name and the information of a customer once.
 
 [image assetsSrc="Introduction-To-Databases(8).png" /]
 
@@ -20,19 +20,21 @@ It would be more logical and efficient if we create the name and the information
 
 # Related Tables
 
-We split the data and introduce relationships between the tables to avoid repeating information. 
+We split the data and introduce **relationships** between the tables to **avoid repeating** the information. 
 
-This is the idea behind the relational database concept. 
+This is the idea behind the **relational database** concept. 
 
-We have separate, carefully designed, unique lists of data, and we relate them to each other by using their unique identifiers - **primary keys**.
+We have separate, carefully designed, unique lists of data and we relate them to each other by using their unique identifiers, known as **primary keys**.
 
-In the example below in the first table, we have **user_id** as a **primary key**, first name, last name of the customer, and the date of registration.
+In the first table from the example, we have the **user_id** column set as a **primary key**.
+
+We also have columns for the first name and the last name of the customer, as well as the date of registration.
 
 [image assetsSrc="Introduction-To-Databases(9).png" /]
 
-For the emails, we have a separate table where we use **user_id** from the customer table as a **foreign key**.
+For the emails, we have a separate table where we use the **user_id** value from the customer table as a **foreign key**.
 
-The Connection is done via a **foreign key** in one table pointing to a **primary key** in another table.
+The connection is done via a **foreign key** as one table pointing to a **primary key** in another table.
 
 [image assetsSrc="Introduction-To-Databases(10).png" /]
 
