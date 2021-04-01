@@ -109,9 +109,9 @@ Create a **Team** class.
 
 Add to this team all the player data that you receive from the input. 
 
-All players **younger** than 40 years old go in **the first team**, all others go to **the reserve team**.
+All players **younger** than 40 years old go to **the first team**, all others go to **the reserve team**.
 
-At the end print both list sizes.
+After that, print both list sizes.
 
 The class should have **private fields** for:
 - **name: String**
@@ -156,8 +156,8 @@ for (Person player : players) {
 # Example
 | **Input** | **Output** |
 | --- | --- |
-| 5 | First team have 4 players  |
-| George Air 20 2200 | Reserve team have 1 players  |
+| 5 | Number of players on the main team: 4  |
+| George Air 20 2200 | Number of players on the reserve team: 1  |
 | Anderson Paak 57 3333 |  |
 | Lee Parker 27 600 |  |
 | Grigor Dimitrov 25 666.66 |  |
