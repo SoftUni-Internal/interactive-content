@@ -49,3 +49,11 @@ public void doSomething(Person person) {
 }
 ```
 [/slide]
+
+[slide hideTitle]
+
+# The Final Keyword - Example
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/interactive-java-oop-advanced-encapsulation-final-keyword-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[/slide]
