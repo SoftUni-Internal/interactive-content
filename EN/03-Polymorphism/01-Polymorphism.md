@@ -105,9 +105,9 @@ System.out.println("Map is instance of Object: " + result);
 ```
 
 ```java live
-  Map<Object, Object> map = new HashMap();
-  boolean result = map instanceof Object;
-  System.out.println("Map is instance of Object: " + result);
+Map<Object, Object> map = new HashMap();
+boolean result = map instanceof Object;
+System.out.println("Map is instance of Object: " + result);
 ```
 
 Since `HashMap` is a subclass of `Object` the expression `map instanceOf Object` evaluates to `true`.
@@ -116,19 +116,19 @@ Similarly, we can extend our previous task and check if our pet objects  are `in
 
 ``` java
 class Main {
-    public static void main(String[] args) {
-        Mammal animal = new Mammal();
-        Mammal myCat = new Cat();
-        Mammal myDog = new Dog();
+  public static void main(String[] args) {
+    Mammal animal = new Mammal();
+    Mammal myCat = new Cat();
+    Mammal myDog = new Dog();
         
-        boolean result = myDog instanceof Mammal;
-        boolean result2 = myDog instanceof Cat;
-        boolean result3 = myDog instanceof Dog;
+    boolean result = myDog instanceof Mammal;
+    boolean result2 = myDog instanceof Cat;
+    boolean result3 = myDog instanceof Dog;
 
-        System.out.println(result);
-        System.out.println(result2);
-        System.out.println(result3);
-    }
+    System.out.println(result);
+    System.out.println(result2);
+    System.out.println(result3);
+  }
 }
 ```
 
@@ -250,7 +250,7 @@ class Calculation {
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/EN/interactive-java-oop-advanced-polymorphism-10-problem-and-solution-MathOperation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Math Operation" timeLimit=5000 taskId="Java-OOP-Advanced-Polymorphism-lab-Math-Operation" executionType="tests-execution" executionStrategy="java-project-tests"] 
+[code-task title="Math Operation" timeLimit=5000 taskId="Java-OOP-Advanced-Polymorphism-Math-Operation" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
 
 [task-description]

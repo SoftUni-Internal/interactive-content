@@ -193,7 +193,7 @@ Annotation[] methodAnnotation = method.getDeclaredAnnotations();
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-39-problem-and-solution-create-annotation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Create Annotation" timeLimit=5000 taskId="Java-OOP-Advanced-Reflection-lab-Create-Annotation" executionType="tests-execution" executionStrategy="java-project-tests"]
+[code-task title="Create Annotation" timeLimit=5000 taskId="Java-OOP-Advanced-Reflection-Create-Annotation" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 [task-description]
@@ -353,7 +353,7 @@ Test Passed!
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-44-problem-and-solution-coding-tracker-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Coding Tracker" timeLimit=5000 taskId="Java-OOP-Advanced-Reflection-lab-Coding-Tracker" executionType="tests-execution" executionStrategy="java-project-tests"]
+[code-task title="Coding Tracker" timeLimit=5000 taskId="Java-OOP-Advanced-Reflection-Coding-Tracker" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 [task-description]

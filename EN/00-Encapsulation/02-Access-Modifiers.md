@@ -15,6 +15,7 @@ We make a **field or method** private when we must preserve the internal logic o
 ```java
 class Person {
   private String name;
+
   Person (String name) {
     this.name = name;
   }
@@ -55,7 +56,6 @@ Each element with this access modifier is **available** to any other class in th
 Team real = new Team("Real");
 real.setName("Real Madrid");
 System.out.println(real.getName()); 
-
 ```
 
 The **output** will be:

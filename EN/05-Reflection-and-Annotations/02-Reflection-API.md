@@ -125,7 +125,7 @@ Class[] interfaces = aClass.getInterfaces();
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-12-problem-and-solution-reflection-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Reflection" taskId="Java-OOP-Advanced-Reflection-lab-Reflection" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
+[code-task title="Reflection" taskId="Java-OOP-Advanced-Reflection-Reflection" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [code-upload allowedMemory="30" /] 
 [task-description]
 # Description
