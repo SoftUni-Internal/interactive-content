@@ -6,7 +6,7 @@
 
 We communicate with the database engine using SQL by writing queries that provide greater control and flexibility.
 
-To create a database using SQL, type in the following command:
+To create a database, type in the following command:
 
 ```Java
 CREATE DATABASE employees;  // 'employees' is the name of our newly created database.
@@ -29,7 +29,7 @@ last_name VARCHAR(50)
 );
 ```
 
-In this example `people` is the name of the table.
+In this example, `people` is the name of the table.
 
 `id`, `email`, `first_name` and `last_name` are the names of the columns.
 
