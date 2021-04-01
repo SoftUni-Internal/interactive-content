@@ -132,7 +132,7 @@ If **Seed** is not specified, it will return a completely random number.
 If we use **seed**, it will return a sequence of random numbers.
 
 ``` java
-SELECT RAND();  # It will return a completely random number
+SELECT RAND();  // It will return a completely random number
 ```
 
 **Output:**
