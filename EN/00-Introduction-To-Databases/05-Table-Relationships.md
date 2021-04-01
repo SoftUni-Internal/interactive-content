@@ -34,7 +34,7 @@ We also have columns for the first name and the last name of the customer, as we
 
 For the emails, we have a separate table where we use the **user_id** value from the customer table as a **foreign key**.
 
-The connection is done via a **foreign key** asTower of God Yama one table pointing to a **primary key** in another table.
+The connection is done via a **foreign key** as one table pointing to a **primary key** in another table.
 
 [image assetsSrc="Introduction-To-Databases(10).png" /]
 
