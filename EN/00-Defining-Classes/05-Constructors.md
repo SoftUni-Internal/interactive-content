@@ -161,7 +161,7 @@ In this example, we call the first constructor with two parameters, and set the 
 [slide hideTitle]
 # Problem with Solution: Car Constructors
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-advanced-defining-classes-31-problem-and-solution-constructors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/EN/interactive-java-oop-basics-defining-classes-31-constructors-solution-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Constructors" timeLimit=5000 taskId="oop-basics-java-defining-classes-Constructors" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [code-upload allowedMemory="30" /]
