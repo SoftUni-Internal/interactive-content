@@ -6,29 +6,27 @@
 
 This document consists of guidelines for installing MySQL server. The installation file for Windows can be downloaded from here: https://dev.mysql.com/downloads/installer/
 
-**Step 1. Download MySQL Community Server**
+**Step 1. Download the MySQL Installer**
 
-Go to the MySQL website, and download MySQL Community Server. 
+Go to the MySQL website and download the MySQL Installer. 
 
-The link given above should redirect you to the official MySQL webpage, where you can find a link to downloading the MySQL Community Server Installer.
-
-Click the "Download" button corresponding to your OS.
+The link given above should redirect you to the official MySQL webpage where you can find a link to downloading the MySQL Installer.
 
 [image assetsSrc="Introduction-To-Databases(13).png" /]
 
-**Step 2. Install the MySQL Community Server**
+**Step 2. Navigating in the MySQL Installer**
 
 Open the installation file and choose the **Setup type** to be **Custom**. Then click **Next**.
 
 [image assetsSrc="Introduction-To-Databases(14).png" /]
 
-All the features we need are **MySQL Server**, **MySQL Workbench**, **Connector/J**, **Connector/NET** and **MySQL Workbench**. 
+The features we need are **MySQL Server**, **MySQL Workbench**, **Connector/J** and **MySQL Workbench**. 
 
-All other features are optional and will not be needed for that course. 
+All other features are optional. 
 
 [image assetsSrc="Introduction-To-Databases(15).png" /]
 
-Just click **Execute**, and the setup will install these features.
+Click **Execute**, and the setup will install these features.
 
 [image assetsSrc="Introduction-To-Databases(16).png" /]
 
@@ -44,7 +42,7 @@ Set password to the Root account.
 
 [image assetsSrc="Introduction-To-Databases(19).png" /]
 
-Here you can set the **MySQL Server** to run as **Windows Service** and to start automatically at Windows startup. 
+Here you can set the **MySQL Server** to run as а **Windows Service** and to start automatically at Windows startup. 
 
 This is the recommended way. Otherwise, you must start up MySQL every time before working with the database.
 

@@ -1,10 +1,10 @@
-# Data Types in MySQL Server
+# Data Types in MySQL
 
 [slide hideTitle]
 
 # Data Types
 
-In this lesson, you will learn about MySQL data types and how to use them effectively in designing databases in MySQL.
+In this lesson, you will learn about the data types in MySQL and how to use them effectively in designing databases.
 
 There are several data types in MySQL:
 
@@ -16,19 +16,19 @@ There are several data types in MySQL:
 
 [slide hideTitle]
 
-# Numeric data types
+# Numeric Data Types
 
-The important thing, you should know about **Numeric** data types is that they have a **range**!
+The **Numeric** data types have a specific **range**
 
-Depending on the range, they can be **Signed** and **Unsigned** except for the **BIT** type:
+Depending on the range, they can be **Signed** and **Unsigned** except for the **BIT** data type.
 
-Here is an example for Signed and Unsigned **INT**:
+An example for Signed and Unsigned **INT**:
 
-`Signed`: Represents numbers both in the positive and negative range.
+`Signed`: Represents numbers both in the positive and negative range
 
 (min value: **-2147483648**, max value: **2147483647**)
 
-`Unsigned`: Represents numbers only in the positive range.
+`Unsigned`: Represents numbers only in the positive range
 
 (min value: **0**, max value: **4294967295**)
 
@@ -61,7 +61,7 @@ DOUBLE[(M, D)][UNSIGNED];  //  "M" is the count of digits stored for the value
 
 # String data types
 
-The following table shows the summary of string types in MySQL:
+The following table shows the summary of **String** data types in MySQL:
 
 | **String Types** | **Description**                              | **Spec**                |
 | ---------------- | -------------------------------------------- | ----------------------- |
@@ -87,15 +87,15 @@ String column definitions include attributes that specify the **CHARACTER SET** 
 
 A character set is a set of symbols and encodings. A collation is a set of rules for comparing characters in a character set.
 
-For example, a subset of a character set could consist of the letters, A  B, and C. 
+For example, a subset of a character set could consist of the letters: A, B and C. 
 
 A default collation could define these as appearing in ascending order of A, B, C.
 
-CHARACTER SET(Encoding) - "Where Encoding coud be for example 'utf8', 'ucs2' etc."
+**CHARACTER SET (Encoding)** - "utf8", "ucs2", etc.
 
-CHARACTER COLLATION - "latin1_general_cs, Traditional_Spanish_ci_ai etc."
+**CHARACTER COLLATION** - "latin1_general_cs", "Traditional_Spanish_ci_ai", etc.
 
-Character Set and collation can be defined in the database, table, or column level.
+Character sets and collations can be defined in the database, table, or column level.
 
 `CHAR` vs `VARCHAR`
 
@@ -112,7 +112,7 @@ Character Set and collation can be defined in the database, table, or column lev
 
 # Date data types
 
-Finally **Date** data type:
+The following table shows the summary of **Date** data types in MySQL:
 
 | **Data Type** | **Description**                                     |
 | ------------- | --------------------------------------------------- |
@@ -122,7 +122,7 @@ Finally **Date** data type:
 | TIMESTAMP     | A timestamp value in YYYY-MM-DD hh:mm:ss format     |
 | YEAR          | A year value in YYYY or YY format                   |
 
-MySQL retrievs values for a given date type in a **standard output format**
+MySQL retrievs values for a given date type in a **standard output format**.
 
 Example: 'YYYY-MM-DD' or 'YY-MM-DD'
 

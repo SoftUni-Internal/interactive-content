@@ -9,31 +9,31 @@
 
 **1. Database Design**
 
-- How to design our first database
+- Design databases
 
-- How to read specification and find the database units
+- Reading specifications and finding the database units
 
 **2. Table Relations**
 
-- All the types of table relations
+- The types of table relations
 
-- How to create different relations between tables
+- Creating different relations between tables
 
 **3. JOINs**
 
-- How to use Foreign Keys to Join tables
+- Using foreign keys to join tables
 
 
 **4. Cascade Operations**
 
 - What happens if we want to do an operation on an entity connected to other tables
 
-- How to to cascade operations
+- Cascading operations
 
 **5. Relationship Schema**
 
 - What is **Relationship Schema**
 
-- How to create it for our database
+- Creating a relationship schema for the database
 
 [/slide]

@@ -1,11 +1,12 @@
 [slide hideTitle]
 # Summary
 
-# In this lesson we learned:
+# In this lesson you learned:
 
-- What is the acronym **CRUD**.
-- Capabilities of SQL **SELECT**
-- How to retrieve data from the database with **queries**.
+- The acronym **CRUD**
+- The capabilities of SQL **SELECT**
+
+- Retrieving data from the database with **queries**
 
     ```Java
     SELECT
@@ -15,14 +16,14 @@
     FROM students;
     ```
 
-- How to visualize data.
+- Visualizing data
 
     ```java
         SELECT concat_ws(' ', `first_name`, `last_name`) AS `full_name`
         FROM `students`
     ```
 
-- How to filter our data.
+- Filtering data
 
     ```java
     SELECT `first_name` AS 'First Name'
@@ -31,7 +32,7 @@
     FROM `students
     WHERE course_id = 10
     ```
-- What is **View** and how to make one.
+- The definition of **Views** and how to make one
 
     ```java
     CREATE VIEW `Combination of columns` 
@@ -41,7 +42,7 @@
             `study_hours` 
     FROM RandomColumns
     ```
-- How to persist data in our database.
+- Persisting data
 
     ```java
     INSERT INTO students(`first_name`, `last_name`, `age`, `course_name`) 
@@ -49,23 +50,23 @@
            ('Jane', 'Doe', '12', 'JavaScript Basics'),
            ('John', 'Doe', '16', 'Java Advanced'), ...
     ```
-- How to modify data with **UPDATE** and **DELETE** statements.
+- Modifying data with **UPDATE** and **DELETE** statements
 
-    - Update records like:
+    - Updating:
     ```java
     DELETE FROM `employees`      //Here we delete from table employees
     WHERE `employee_id` = 1;     //where the condition is true.
     ```
 
-    - Delete like:
+    - Deleting:
     ```java
     TRUNCATE TABLE `users`;
     ```
 
 
-# In the next lesson, we will learn:
+# In the next lesson you will learn:
 
-- Different build-in **functions** in MYSQL.
+- Different build-in **functions** in MySQL
 - Wildcards
 - Regular expressions
 - Grouping

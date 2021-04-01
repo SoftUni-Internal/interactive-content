@@ -2,56 +2,40 @@
 
 # JOIN Statements
 
-Now as we know the different ways to connect tables and the rules and guidance connected to this practice it's time to see the real power of **Relational Databases**.
-
-The **JOIN** statements are a great tool introduced in SQL, it gives us the chance to **connect** two tables by theirs'
-
- **foreign keys** and take all the information we need **simultaneously**, with only one query statement.
+The **JOIN** statements are a great tool introduced in SQL, it gives us the chance to **connect** two tables by their **foreign keys** and take all the information we need **simultaneously** with only one query statement.
 
 To achieve **JOIN** we need two tables and a **JOIN CONDITION**.
 
 Let's have an example: 
 
 ```java
-SELECT *                                                                //Here we select everything from the two tables.
-FROM `table_a`                                                          //We name the first table that we want to join.
-JOIN `table_b` ON table_b.common_column = table_a.common_column         //And than we create a "Join condition" using "FOREIGN KEYS".
+SELECT *                                                                    // Here we select everything from the two tables.
+FROM `table_a`                                                              // We name the first table that we want to join.
+JOIN `table_b` ON `table_b`.common_column = `table_a`.common_column         // And than we create a "Join condition" using "FOREIGN KEYS".
 ```
-
-We will have a closer look at **JOINS** in the next lesson.
 [/slide]
 
 [slide hideTitle]
-# Problem: Trip Organization
-[code-task title="Problem: Trip Organization" taskId="257097cf-6f3f-49ad-8b1e-c0cdd3e04ee1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem with Solution: Trip Organization
+[code-task title="Trip Organization" taskId="java-db-and-mysql-joins-trop-organization" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/05.Table-Relations-Camp-Db-Lab.zip) **for this task.**
+**A link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/05.Table-Relations-Camp-Db-Lab.zip) **for this task.**
 
-Write a query to retrieve information about SoftUni camp's transportation organization. 
+Create a query that retrieves information about the transportation organization of the SoftUni camp . 
 
 Get information about the drivers (**name and id**) and their **vehicle type**. 
-
-Submit your queries using the "**MySQL prepare DB and Run Queries**" strategy.
 
 ## Examples
 | **driver_id** | **vehicle_type** | **driver_name** |
 | --- | --- | --- | --- |
-| 1 | bus | Simo Sheytanov |
-| 2 | van | Roli Dimitrova |
-| 1 | van | Simo Sheytanov |
+| 1 | bus | James Smith   |
+| 2 | van | Mary Williams |
+| 1 | van | James Smith   |
 | … | … | … |
 |  |  |  |
 
@@ -90,75 +74,76 @@ CREATE TABLE routes(
     route_time TIME NOT NULL,   
     CONSTRAINT fk_leader_id FOREIGN KEY(leader_id) REFERENCES campers(id)
 );
+insert into rooms(id, occupation, beds_count)
+values (101, "occupied", 3),
+       (102, "free", 3),
+       (103, "free", 3),
+       (104, "free", 2),
+       (105, "free", 2),
+       (201, "free", 3),
+       (202, "free", 3),
+       (203, "free", 2),
+       (204, "free", 3),
+       (205, "free", 3),
+       (301, "free", 2),
+       (302, "free", 2),
+       (303, "free", 2),
+       (304, "free", 3),
+       (305, "free", 3);
 
-insert into rooms(id,occupation,beds_count) values(101,"occupied",3),
-(102,"free",3),
-(103,"free",3),
-(104,"free",2),
-(105,"free",2),
-(201,"free",3),
-(202,"free",3),
-(203,"free",2),
-(204,"free",3),
-(205,"free",3),
-(301,"free",2),
-(302,"free",2),
-(303,"free",2),
-(304,"free",3),
-(305,"free",3);
+insert into campers(first_name, last_name, age, room)
+values ("James", "Smith", 20, 101),
+       ("Mary", "Williams", 27, 102),
+       ("William", "Davidson", 25, 301),
+       ("David", "Wilson", 28, 301),
+       ("Lisa", "Lopez", 25, 102),
+       ("Michelle", "Anderson", 26, 102),
+       ("Thomas", "Wilson", 21, 301),
+       ("Taylor", "Moore", 28, 302),
+       ("Harry", "Thompson", 28, 302),
+       ("Lewis", "Clark", 28, 302);
 
-insert into campers(first_name, last_name, age,room) values("Simo", "Sheytanov", 20,101),
-("Roli", "Dimitrova", 27,102),
-("RoYaL", "Yonkov", 25,301),
-("Ivan", "Ivanov", 28,301),
-("Alisa", "Terzieva", 25,102),
-("Asya", "Ivanova", 26,102),
-("Dimitar", "Verbov", 21,301),
-("Iskren", "Ivanov", 28,302),
-("Bojo", "Gevechanov", 28,302),
-("Valentin", "Dimitrov", 28,302);
+insert into vehicles(driver_id, vehicle_type, passengers)
+values (1, "bus", 20),
+       (2, "van", 10),
+       (1, "van", 10),
+       (4, "car", 5),
+       (5, "car", 5),
+       (6, "car", 4),
+       (7, "car", 3),
+       (8, "bus", 3);
 
-insert into vehicles(driver_id,vehicle_type,passengers) values
-(1,"bus",20),
-(2,"van",10),
-(1,"van",10),
-(4,"car",5),
-(5,"car",5),
-(6,"car",4),
-(7,"car",3),
-(8,"bus",3);
-
-insert into routes(starting_point,end_point,leader_id,route_time) values
-("Hotel Malyovitsa", "Malyovitsa Peak", 3, '02:00:00'),
-("Hotel Malyovitsa", "Malyovitsa Hut", 3, '00:40:00'),
-("Ribni Ezera Hut", "Rila Monastery", 3, '06:00:00'),
-("Borovets", "Musala Peak", 4, '03:30:00');
+insert into routes(starting_point, end_point, leader_id, route_time)
+values ("Hotel Highland", "Highland Peak", 3, '02:00:00'),
+       ("Hotel Highland", "Highland Hut", 3, '00:40:00'),
+       ("Obzen Hut", "Monastery", 3, '06:00:00'),
+       ("Devils Paw", "Begich Peak", 4, '03:30:00');
 [/input]
 [output]
 1
 bus
-Simo Sheytanov
+James Smith
 2
 van
-Roli Dimitrova
+Mary Williams
 1
 van
-Simo Sheytanov
+James Smith
 4
 car
-Ivan Ivanov
+David Wilson
 5
 car
-Alisa Terzieva
+Lisa Lopez
 6
 car
-Asya Ivanova
+Michelle Anderson
 7
 car
-Dimitar Verbov
+Thomas Wilson
 8
 bus
-Iskren Ivanov
+Taylor Moore
 [/output]
 [/test]
 [test]
@@ -193,49 +178,50 @@ CREATE TABLE routes(
     route_time TIME NOT NULL,   
     CONSTRAINT fk_leader_id FOREIGN KEY(leader_id) REFERENCES campers(id)
 );
+insert into rooms(id, occupation, beds_count)
+values (101, "occupied", 3),
+       (102, "free", 3),
+       (103, "free", 3),
+       (104, "free", 2),
+       (105, "free", 2),
+       (201, "free", 3),
+       (202, "free", 3),
+       (203, "free", 2),
+       (204, "free", 3),
+       (205, "free", 3),
+       (301, "free", 2),
+       (302, "free", 2),
+       (303, "free", 2),
+       (304, "free", 3),
+       (305, "free", 3);
 
-insert into rooms(id,occupation,beds_count) values(101,"occupied",3),
-(102,"free",3),
-(103,"free",3),
-(104,"free",2),
-(105,"free",2),
-(201,"free",3),
-(202,"free",3),
-(203,"free",2),
-(204,"free",3),
-(205,"free",3),
-(301,"free",2),
-(302,"free",2),
-(303,"free",2),
-(304,"free",3),
-(305,"free",3);
+insert into campers(first_name, last_name, age, room)
+values ("James", "Smith", 20, 101),
+       ("Mary", "Williams", 27, 102),
+       ("William", "Davidson", 25, 301),
+       ("David", "Wilson", 28, 301),
+       ("Lisa", "Lopez", 25, 102),
+       ("Michelle", "Anderson", 26, 102),
+       ("Thomas", "Wilson", 21, 301),
+       ("Taylor", "Moore", 28, 302),
+       ("Harry", "Thompson", 28, 302),
+       ("Lewis", "Clark", 28, 302);
 
-insert into campers(first_name, last_name, age,room) values("Simo", "Sheytanov", 20,101),
-("Roli", "Dimitrova", 27,102),
-("RoYaL", "Yonkov", 25,301),
-("Ivan", "Ivanov", 28,301),
-("Alisa", "Terzieva", 25,102),
-("Asya", "Ivanova", 26,102),
-("Dimitar", "Verbov", 21,301),
-("Iskren", "Ivanov", 28,302),
-("Bojo", "Gevechanov", 28,302),
-("Valentin", "Dimitrov", 28,302);
+insert into vehicles(driver_id, vehicle_type, passengers)
+values (1, "bus", 20),
+       (2, "van", 10),
+       (1, "van", 10),
+       (4, "car", 5),
+       (5, "car", 5),
+       (6, "car", 4),
+       (7, "car", 3),
+       (8, "bus", 3);
 
-insert into vehicles(driver_id,vehicle_type,passengers) values
-(1,"bus",20),
-(2,"van",10),
-(1,"van",10),
-(4,"car",5),
-(5,"car",5),
-(6,"car",4),
-(7,"car",3),
-(8,"bus",3);
-
-insert into routes(starting_point,end_point,leader_id,route_time) values
-("Hotel Malyovitsa", "Malyovitsa Peak", 3, '02:00:00'),
-("Hotel Malyovitsa", "Malyovitsa Hut", 3, '00:40:00'),
-("Ribni Ezera Hut", "Rila Monastery", 3, '06:00:00'),
-("Borovets", "Musala Peak", 4, '03:30:00');
+insert into routes(starting_point, end_point, leader_id, route_time)
+values ("Hotel Highland", "Highland Peak", 3, '02:00:00'),
+       ("Hotel Highland", "Highland Hut", 3, '00:40:00'),
+       ("Obzen Hut", "Monastery", 3, '06:00:00'),
+       ("Devils Paw", "Begich Peak", 4, '03:30:00');
 [/input]
 [output]
 1
@@ -266,10 +252,4 @@ Iskren Ivanov
 [/test]
 [/tests]
 [/code-task]
-[/slide]
-
-[slide hideTitle]
-
-# Solution: Trip Organization
-
 [/slide]

@@ -2,7 +2,7 @@
 
 # Updating data
 
-Persisting our records in the database is the first step, but we also want to keep this data up to date, to always receive the results we expect and need.
+Persisting our records in the database is the first step but we also want to keep the data up to date to always receive the results we expect and need.
 
 In help comes the second part of our acronym CR**UD**.
 
@@ -11,12 +11,12 @@ Updating data is an important part of our work if we want to keep our data relev
 This can be done with the keyword **UPDATE**. 
 
 ```java
-UPDATE `students`                                                //On the first line we declare the operation 'UPDATE' and the chosen table
-SET `age` = 14                                                   //with the keyword SET we choose the column/columns we want to change
-WHERE `first_name` = 'Mary' AND `last_name` = 'Johnson';         //we should not forget to add 'WHERE' clause, otherwise we may change our whole table.
+UPDATE `students`                                                // On the first line we declare the operation 'UPDATE' and the chosen table
+SET `age` = 14                                                   // with the keyword SET we choose the column/columns we want to change
+WHERE `first_name` = 'Mary' AND `last_name` = 'Johnson';         // we should not forget to add 'WHERE' clause, otherwise we may change our whole table.
 ```
 
-Make sure you don't forget to filter the records you want to change otherwise the **UPDATE** operation will change your whole table, without you aiming for that.
+Make sure you do not forget to filter the records you want to change otherwise the **UPDATE** operation will change the whole table.
 
 [/slide]
 

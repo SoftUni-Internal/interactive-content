@@ -2,9 +2,9 @@
 
 [slide hideTitle]
 
-# Altering tables using SQL(1)
+# Altering tables using SQL (1)
 
-A table can be changed using the keyword `ALTER TABLE`.
+A table can be changed using the keyword `ALTER`.
 
 ```Java
 ALTER TABLE employees;
@@ -21,7 +21,7 @@ ADD salary DECIMAL; // `salary` is the name of the column and `DECIMAL` specifie
 
 [slide hideTitle]
 
-# Altering Tables Using SQL(2)
+# Altering Tables Using SQL (2)
 
 Delete existing column:
 
@@ -41,9 +41,9 @@ MODIFY COLUMN email VARCHAR(100); // `VARCHAR(100)` is the new data type
 
 [slide hideTitle]
 
-# Altering Tables Using SQL(3)
+# Altering Tables Using SQL (3)
 
-Add primary key to existing column:
+Add primary key to an existing column:
 
 ```Java
 ALTER TABLE people
@@ -63,7 +63,7 @@ UNIQUE (email) // Columns
 
 [slide hideTitle]
 
-# Altering Tables Using SQL(4)
+# Altering Tables Using SQL (4)
 
 Set default value:
 
