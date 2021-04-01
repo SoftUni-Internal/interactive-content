@@ -278,7 +278,7 @@ Test Passed!
 
 # Problem with Solution: List Utilities
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/EN/interactive-java-advanced-generics-23-Problem-and-Solution-List-Utilities-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/EN/interactive-java-advanced-generics-23-Problem-and-Solution-List-Utilities-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="List Utilities" timeLimit=5000 taskId="oop-basics-java-generics-lab-List-Utilities" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]

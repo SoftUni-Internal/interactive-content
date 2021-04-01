@@ -105,7 +105,7 @@ We can have zero or more **parameters** in a lambda expression.
 [slide hideTitle]
 # Problem with Solution: Sort Even Numbers 
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/EN/interactive-java-advanced-functional-programming-9-Sort-Even-Numbers-Problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/EN/interactive-java-advanced-functional-programming-9-Sort-Even-Numbers-Problem-and-solution-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sort Even Numbers" taskId="oop-basics-java-functional-programming-lab-Sort-Even-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

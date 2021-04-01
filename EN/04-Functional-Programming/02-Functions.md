@@ -4,6 +4,9 @@
 
 # Functional Programming
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/EN/interactive-java-advanced-functional-programming-11-Functional-Programming-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+
 Let us continue with another **important paradigm** in modern programming: **functional programming**
 
 **Functional programming** (FP) is a paradigm based on composing **pure functions** while avoiding shared state, mutable data, and side-effects.
@@ -44,6 +47,8 @@ Both functions have **no side effects**:
 [slide hideTitle]
 
 # Functional Programming Languages
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/EN/interactive-java-advanced-functional-programming-12-Functional-programming-languages-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 There are many **functional programming** languages and languages that incorporate **functional paradigms** into modern software development.
 
@@ -98,6 +103,15 @@ In this example, we have all the necessary **components** for a Java Function:
 - **Parameters**
 - **Name** of the function 
 - **Return expression**
+
+[/slide]
+
+[slide hideTitle]
+
+# Pure Functions: Demo
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/EN/interactive-java-advanced-functional-programming-11-12-Pure-functions-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 [/slide]
 
