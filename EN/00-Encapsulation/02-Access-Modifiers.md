@@ -81,6 +81,14 @@ public class Team {
 
 [slide hideTitle]
 
+# Access Modifiers - Example
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/interactive-java-oop-advanced-encapsulation-access-modifiers-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[/slide
+
+[slide hideTitle]
+
 # Problem with Solution: Sort by Name and Age
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-14-problem-and-solutiom-sort-by-name-and-age-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
