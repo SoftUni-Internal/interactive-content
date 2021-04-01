@@ -8,7 +8,7 @@
 
 **Hypertext Transfer Protocol** (HTTP) is an application-layer protocol for transmitting hypermedia documents, such as HTML.
 
-**HTTP** ensures that the communication between the web browser and the server.
+**HTTP** ensures the communication between the web browser and the server.
 
 HTTP follows a classical **client-server model** where only the client, which most often is a **web browser**, can send a request and when the server receives the request it is mandatory to send back a **response**.
 
