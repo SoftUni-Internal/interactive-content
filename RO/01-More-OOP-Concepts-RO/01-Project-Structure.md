@@ -49,7 +49,7 @@ System.out.println(bankAcc.toString());
 //Override .toString() to set a global printing format
 
 ```
-Putem înlocui metoda `toString ()` din clasa **BankAccount** pentru a returna detaliile contului în format String.
+Putem înlocui metoda `toString()` din clasa **BankAccount** pentru a returna detaliile contului în format String.
 
 Deși această modificare se face într-un singur loc, aceasta va afecta codul la nivel global de fiecare dată când apelăm metoda pe orice obiect de tip **BankAccount**.
 
@@ -299,7 +299,7 @@ Creați o metodă `printRow ()` pentru a reutiliza cu ușurință codul.
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/RO/02.Java-OOP-Basics-More-OOP-Concepts-10-11-12-Splitting-code-into-classes-1-2-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-La fel ca metodele, clasele **nu ar trebui să „știe” sau să facă prea multe**.
+La fel ca metodele, clasele nu ar trebui să "știe" **sau să facă prea multe**.
 
 **Exemplu:**
 

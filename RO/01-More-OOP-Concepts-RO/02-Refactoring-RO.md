@@ -29,7 +29,7 @@ class OutputFormatter { public static void print() { … } }
 [/slide]
 
 [slide hideTitle]
-# Tehnici de refactorizare
+# Tehnici de Refactorizare
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/RO/02.Java-OOP-Basics-More-OOP-Concepts-18-Refactoring-Techniques-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
