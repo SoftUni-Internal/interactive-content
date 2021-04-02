@@ -79,8 +79,8 @@ This is an example of a **well-structured function:**
 
 ```js
 function sum() {
-    // some code…
-    // some more code…
+    let name = "Jacob";
+    console.log(name);
 }
 ```
 
@@ -89,8 +89,8 @@ function sum() {
 ```js
 function sum()​
       {​
-          // some code…​
-// some more code…}
+          let name = "Jacob";
+console.log(name);}
 }
 ```
 

@@ -65,7 +65,7 @@ function printReceipt(){
 
 ## Structura Codului și Formatarea Codului
 
-Asigurați-vă că utilizați indentarea corectă
+Asigurați-vă că utilizați indentarea corectă.
 
 - Lăsați o linie goală între funcții și după blocuri
 
@@ -77,8 +77,8 @@ Asigurați-vă că utilizați indentarea corectă
 
 ```js
 function sum() {
-    // some code…
-    // some more code…
+    let name = "Jacob";
+    console.log(name);
 }
 ```
 
@@ -87,8 +87,8 @@ function sum() {
 ```js
 function sum()​
       {​
-          // some code…​
-// some more code…}
+          let name = "Jacob";
+console.log(name);}
 }
 ```
 
