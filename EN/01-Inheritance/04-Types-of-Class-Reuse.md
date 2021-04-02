@@ -7,7 +7,7 @@
 
 The extension of class is called an **IS-A** relationship.
 
-**Student IS-A Person:**
+**A Student IS-A Person:**
 ```java
 public Student extends Person{}
 ```
@@ -17,7 +17,7 @@ public Student extends Person{}
 
 - **Reuse classes** through **extension** and add custom logic to them
 
-- When a class is not from our library and we do not know its implementation, we can only extend the given class to add custom logic to it
+- When a class is not in our library and we cannot see its implementation, we can only extend the given class to add custom logic to it
 
 [image assetsSrc="inheritance-example(15).png" /]
 
@@ -28,9 +28,9 @@ public Student extends Person{}
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-33-composition-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Composition** is a different type of relationship, in which we contain the given object in our class.
+**Composition** is a different type of relationship, by which we contain the given object in our class.
 
-Th;is relationship is called **HAS-A**:
+This relationship is called **HAS-A**:
 
 - **The Laptop HAS-A Monitior**
 - **The Laptop HAS-A Touchpad**
@@ -57,7 +57,7 @@ class Laptop {
 
 **Delegation is the process of passing attributes between objects.**
 
-This way we can give a common interface for the client to work with as it does not really care of the implementation underneath.
+We can give a common interface for the client to work with, as it can use any working implementation underneath.
 
 [image assetsSrc="inheritance-example(17).png" /]
 
@@ -75,11 +75,11 @@ class Laptop {
 }
 ```
 
-In our **Laptop** class, we provide a method for increasing the brightness.
+In our **Laptop** class, we provide a method to increase its brightness.
 
-Undearneath, we are calling the monitor's method.
+Undearneath, we are calling the monitor method.
 
-We provide an **interface to our class**, without specifying the code that does the work.
+We provide an **interface to our class**, without revealing the concrete code that peforms the action.
 
 By doing so, we can **combine** complex logic in just **one method**.                      
 
@@ -239,14 +239,14 @@ Test Passed!
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-37-when-to-use-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We can use inheritance when we meet one of the following:
+We can use inheritance when we need one of the following:
 
-- Classes share **IS-A** relationship
+- Classes that share **IS-A** relationship
 
 - The derived class **IS-A-SUBSTITUTE** for the base class
 
-- They hare the **same role**
+- They share the **same role**
 
-- The derived class is the **same as the base class** but adds a **little bit more functionality**
+- The derived class is the **same as the base class** but adds **additional functionality**
 
 [/slide]
