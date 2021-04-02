@@ -6,6 +6,8 @@
 [slide hideTitle]
 # Comenzile în Programele de Calculator
 
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-14-15-Statements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Acțiunile pe care le aplică un program sunt exprimate ca **instrucțiuni**.
 
 JavaScript suportă **diferite** tipuri de instrucțiuni, iar mai jos enunțăm câteva dintre acestea:
