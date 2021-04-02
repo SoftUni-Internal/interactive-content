@@ -77,17 +77,18 @@ Asigurați-vă că utilizați indentarea corectă
 
 ```js
 function sum() {
-  // some code…
-  // some more code…
+    // some code…
+    // some more code…
 }
 ```
 
 - Exemplu de o **funcție prost structurată:**
 
 ```js
-function sum() {
-  // some code…
-  // some more code…
+function sum()​
+      {​
+          // some code…​
+// some more code…}
 }
 ```
 
@@ -101,7 +102,7 @@ function sum() {
 [code-task title="Simple Calculator" taskId="fundamentals-js-functions-lab-Simple-Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function simpleCalculator(input){
+function calculator(input){
   // Scrieți codul dvs. aici
 }
 ```
@@ -120,20 +121,21 @@ function adapter(input, code) {
 
 Scrieți o funcție săgeată care primește **o matrice cu trei elemente** (două numere și un șir)și calculează rezultatul, în funcție de operatorul specificat. 
 
-Operatorul poate fi unul dintre următoarele: "**înumlțire**", "**împărțire**", "**adăugare**", "**scădere**".
+Operatorul poate fi unul dintre următoarele: 
+"**multiply**" (înumlțire), "**divide**" (împărțire), "**add**" (adăugare), and "**subtract**" (scădere).
 
 ## Exemple
 |**Intrare**|**Ieșire**|
 | --- | --- |
-| simpleCalculator([5, 5, 'multiply']) | 25 |
-| simpleCalculator([40, 8, 'divide']) | 5 |
-| simpleCalculator([12, 19, 'add']) | 31 |
+| calculator(5, 5, 'multiply') | 25 |
+| calculator(40, 8, 'divide') | 5 |
+| calculator(12, 19, 'add') | 31 |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-simpleCalculator([5, 5, 'multiply'])
+calculator(5, 5, 'multiply')
 [/input]
 [output]
 25
@@ -141,7 +143,7 @@ simpleCalculator([5, 5, 'multiply'])
 [/test]
 [test open]
 [input]
-simpleCalculator([40, 8, 'divide'])
+calculator(40, 8, 'divide')
 [/input]
 [output]
 5
@@ -149,7 +151,7 @@ simpleCalculator([40, 8, 'divide'])
 [/test]
 [test open]
 [input]
-simpleCalculator([12, 19, 'add'])
+calculator(12, 19, 'add')
 [/input]
 [output]
 31
@@ -157,7 +159,7 @@ simpleCalculator([12, 19, 'add'])
 [/test]
 [test]
 [input]
-simpleCalculator([1, 15, 'multiply'])
+calculator(1, 15, 'multiply')
 [/input]
 [output]
 15
@@ -165,7 +167,7 @@ simpleCalculator([1, 15, 'multiply'])
 [/test]
 [test]
 [input]
-simpleCalculator([61, 2, 'divide'])
+calculator(61, 2, 'divide')
 [/input]
 [output]
 30.5
@@ -173,7 +175,7 @@ simpleCalculator([61, 2, 'divide'])
 [/test]
 [test]
 [input]
-simpleCalculator([2, 18, 'add'])
+calculator(2, 18, 'add')
 [/input]
 [output]
 20
@@ -181,7 +183,7 @@ simpleCalculator([2, 18, 'add'])
 [/test]
 [test]
 [input]
-simpleCalculator([186, 121, 'subtract'])
+calculator(186, 121, 'subtract')
 [/input]
 [output]
 65
@@ -189,7 +191,7 @@ simpleCalculator([186, 121, 'subtract'])
 [/test]
 [test]
 [input]
-simpleCalculator([2, 35, 'multiply'])
+calculator(2, 35, 'multiply')
 [/input]
 [output]
 70
@@ -197,7 +199,7 @@ simpleCalculator([2, 35, 'multiply'])
 [/test]
 [test]
 [input]
-simpleCalculator([12, 2, 'divide'])
+calculator(12, 2, 'divide')
 [/input]
 [output]
 6
@@ -205,7 +207,7 @@ simpleCalculator([12, 2, 'divide'])
 [/test]
 [test]
 [input]
-simpleCalculator([115, 338, 'add'])
+calculator(115, 338, 'add')
 [/input]
 [output]
 453
@@ -213,7 +215,7 @@ simpleCalculator([115, 338, 'add'])
 [/test]
 [test]
 [input]
-simpleCalculator([46, 521, 'subtract'])
+calculator(46, 521, 'subtract')
 [/input]
 [output]
 \-475

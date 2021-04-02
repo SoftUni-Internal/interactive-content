@@ -87,9 +87,10 @@ function sum() {
 - Example of a **badly structured function:**
 
 ```js
-function sum() {
-    // some code…
-    // some more code…
+function sum()​
+      {​
+          // some code…​
+// some more code…}
 }
 ```
 
@@ -103,7 +104,7 @@ function sum() {
 [code-task title="Simple Calculator" taskId="fundamentals-js-functions-lab-Simple-Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function simpleCalculator(input){
+function calculator(input){
   // Write your code here
 }
 ```
@@ -124,20 +125,18 @@ Write an arrow function that receives an **array containing three elements** (tw
 
 The operator could only be one of the following: "**multiply**", "**divide**", "**add**", and "**subtract**".
 
-&nbsp;
-
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-| simpleCalculator([5, 5, 'multiply']) | 25 |
-| simpleCalculator([40, 8, 'divide']) | 5 |
-| simpleCalculator([12, 19, 'add']) | 31 |
+| calculator(5, 5, 'multiply') | 25 |
+| calculator(40, 8, 'divide') | 5 |
+| calculator(12, 19, 'add') | 31 |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-simpleCalculator([5, 5, 'multiply'])
+calculator(5, 5, 'multiply')
 [/input]
 [output]
 25
@@ -145,7 +144,7 @@ simpleCalculator([5, 5, 'multiply'])
 [/test]
 [test open]
 [input]
-simpleCalculator([40, 8, 'divide'])
+calculator(40, 8, 'divide')
 [/input]
 [output]
 5
@@ -153,7 +152,7 @@ simpleCalculator([40, 8, 'divide'])
 [/test]
 [test open]
 [input]
-simpleCalculator([12, 19, 'add'])
+calculator(12, 19, 'add')
 [/input]
 [output]
 31
@@ -161,7 +160,7 @@ simpleCalculator([12, 19, 'add'])
 [/test]
 [test]
 [input]
-simpleCalculator([1, 15, 'multiply'])
+calculator(1, 15, 'multiply')
 [/input]
 [output]
 15
@@ -169,7 +168,7 @@ simpleCalculator([1, 15, 'multiply'])
 [/test]
 [test]
 [input]
-simpleCalculator([61, 2, 'divide'])
+calculator(61, 2, 'divide')
 [/input]
 [output]
 30.5
@@ -177,7 +176,7 @@ simpleCalculator([61, 2, 'divide'])
 [/test]
 [test]
 [input]
-simpleCalculator([2, 18, 'add'])
+calculator(2, 18, 'add')
 [/input]
 [output]
 20
@@ -185,7 +184,7 @@ simpleCalculator([2, 18, 'add'])
 [/test]
 [test]
 [input]
-simpleCalculator([186, 121, 'subtract'])
+calculator(186, 121, 'subtract')
 [/input]
 [output]
 65
@@ -193,7 +192,7 @@ simpleCalculator([186, 121, 'subtract'])
 [/test]
 [test]
 [input]
-simpleCalculator([2, 35, 'multiply'])
+calculator(2, 35, 'multiply')
 [/input]
 [output]
 70
@@ -201,7 +200,7 @@ simpleCalculator([2, 35, 'multiply'])
 [/test]
 [test]
 [input]
-simpleCalculator([12, 2, 'divide'])
+calculator(12, 2, 'divide')
 [/input]
 [output]
 6
@@ -209,7 +208,7 @@ simpleCalculator([12, 2, 'divide'])
 [/test]
 [test]
 [input]
-simpleCalculator([115, 338, 'add'])
+calculator(115, 338, 'add')
 [/input]
 [output]
 453
@@ -217,7 +216,7 @@ simpleCalculator([115, 338, 'add'])
 [/test]
 [test]
 [input]
-simpleCalculator([46, 521, 'subtract'])
+calculator(46, 521, 'subtract')
 [/input]
 [output]
 \-475
