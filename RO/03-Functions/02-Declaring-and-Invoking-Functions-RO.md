@@ -104,13 +104,15 @@ Dacă **nu există o astfel de condiție**, funcția se va numi **la nesfârșit
 [/slide]
 
 [slide hideTitle]
-# Funcții Fără Parametri
+# Funcții cu și Fără Parametri 
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-11-12-functions-with-and-without-parameters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Putem avea o funcție **cu sau fără** parametri.
 
 **Parametrii** funcției se comportă ca variabile locale din **corpul funcției.**
+
+## Funcții Fără Parametri 
 
 Dacă o funcție nu primește argumente, atunci când este invocată, rezultatul **este întotdeauna același**(cu excepția cazului în care citește date din exterior): 
 
@@ -122,22 +124,18 @@ function printHeader() {
 }
 printHeader();
 ```
-[/slide]
 
-[slide hideTitle]
-
-# Funcții cu Parametri
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-functions-with-parameters-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+## Funcții cu Parametri
 
 O funcție poate primi **orice număr și tip de argumente** atunci când este invocată:
 
 În acest exemplu trecem **doi parametri** ca argument:
 
 ```js live
-function multiply(a, b) {
-    console.log(a * b);
+function add(a, b) {
+    console.log(a + b);
 }
-multiply(5, 7);
+add(2, 5);
 ```
 
 În acest exemplu trecem **o matrice** ca argument:
@@ -150,7 +148,28 @@ function printName(nameArr) {
 printName(['John', 'Smith']); 
 ```
 
+[/slide]
+
+[slide hideTitle]
+
+# Funcții cu Parametri: Exemplu
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-functions-with-parameters-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+```js live
+function multiply(a, b) {
+    console.log(a * b);
+}
+multiply(5, 7);
+```
+
 Putem transmite **mai puține sau mai multe** argumente în timp ce invocăm o funcție.
+
+```js live
+function multiply(a, b) {
+    console.log(a * b);
+}
+multiply(5); // NaN
+```
 
 Dacă trecem mai puține argumente, restul parametrilor vor fi **nedefiniți.**
 

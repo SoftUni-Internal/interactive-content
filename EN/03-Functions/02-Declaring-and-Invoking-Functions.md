@@ -110,13 +110,15 @@ If **no such condition exists**, the function will call itself **endlessly**.
 [/slide]
 
 [slide hideTitle]
-# Functions Without Parameters
+# Functions With and Without Parameters
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-11-12-functions-with-and-without-parameters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can have a function **with or without** parameters.
 
 Function **parameters** behave like local variables inside the **function body.**
+
+## Functions Without Parameters
 
 If a function does not receive arguments when invoked then **it will always produce the same result** (unless it takes data from outside itself):
 
@@ -128,22 +130,18 @@ function printHeader() {
 }
 printHeader();
 ```
-[/slide]
 
-[slide hideTitle]
-# Functions With Parameters
-
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-functions-with-parameters-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+## Functions With Parameters
 
 A function can receive **any number and type of arguments** when invoked.
 
 In this example we pass **two parameters** as an argument:
 
 ```js live
-function multiply(a, b) {
-    console.log(a * b);
+function add(a, b) {
+    console.log(a + b);
 }
-multiply(5, 7);
+add(2, 5);
 ```
 
 In this example we pass **an array** as an argument:
@@ -156,7 +154,28 @@ function printName(nameArr) {
 printName(['John', 'Smith']); 
 ```
 
+[/slide]
+
+[slide hideTitle]
+# Functions With Parameters: Example
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-functions-with-parameters-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+```js live
+function multiply(a, b) {
+    console.log(a * b);
+}
+multiply(5, 7);
+```
+
 We can pass **more or less arguments** than expected while invoking a function. 
+
+```js live
+function multiply(a, b) {
+    console.log(a * b);
+}
+multiply(5); // NaN
+```
 
 If we pass less arguments, then rest of the parameters will be passed to the function as undefined. 
 
