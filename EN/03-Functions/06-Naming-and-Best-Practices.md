@@ -104,7 +104,7 @@ function sum()​
 [code-task title="Simple Calculator" taskId="fundamentals-js-functions-lab-Simple-Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function calculator(input){
+function calculator(num1, num2, operator){
   // Write your code here
 }
 ```
