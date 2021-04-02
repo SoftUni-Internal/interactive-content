@@ -246,7 +246,7 @@ Card name: TWO of DIAMONDS; Card power: 15
 
 [task-description]
 # Description
-Implement a simple state machine in the form of a traffic light. 
+Implement a simple state machine in the form of code that immitates a traffic light. 
 
 Every traffic light has **three** possible signals - **red**, **green** and **yellow**. 
 
