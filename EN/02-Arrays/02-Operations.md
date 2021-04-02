@@ -26,17 +26,6 @@ let nums = [10, 20, 30];
 console.log(nums.length);
 ```
 
-Other examples of methods:
-
-- `push()` - appending an element at the end of the array:
-
-``` js live
-let arr = [10, 20, 30];
-arr.push(40, 50);
-
-console.log(arr);
-```
-
 [/slide]
 
 [slide hideTitle]
@@ -48,16 +37,9 @@ console.log(arr);
 
 ``` js live
 let arr = [10, 20, 30];
+
 console.log(arr.includes(20));
 console.log(arr.includes(0));
-```
-
-- `toString()` - Converts all elements to strings via `String()`, concatenates them and returns the result:
-
-``` js live
-let arr = [10, 20, 30];
-
-console.log(arr.toString());
 ```
 
 - `join()` - Creates a string by **concatenating string representations of all elements**, using the specified in the brackets string as a separator:
@@ -66,6 +48,23 @@ console.log(arr.toString());
 let arr = [10, 20, 30];
 
 console.log(arr.join('@@'));
+```
+
+- `push()` - appending an element at the end of the array:
+
+``` js live
+let arr = [10, 20, 30];
+arr.push(40, 50);
+
+console.log(arr);
+```
+
+- `toString()` - Converts all elements to strings via `String()`, concatenates them and returns the result:
+
+``` js live
+let arr = [10, 20, 30];
+
+console.log(arr.toString());
 ```
 
 More methods will be examined in the Arrays Advanced course. 

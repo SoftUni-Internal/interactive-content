@@ -25,16 +25,6 @@ Metodele sunt apelate prin plasarea unui punct după numele variabilei:
 let nums = [10, 20, 30];
 console.log(nums.length);
 ```
-Alte exemple de metode:
-
-- `push()`: adăugarea unui element la sfârșitul matricei 
-
-``` js live
-let arr = [10, 20, 30];
-arr.push(40, 50);
-
-console.log(arr);
-```
 
 [/slide]
 
@@ -47,16 +37,9 @@ console.log(arr);
 
 ``` js live
 let arr = [10, 20, 30];
+
 console.log(arr.includes(20));
 console.log(arr.includes(0));
-```
-
-- `toString()`: Convertește toate elementele în șiruri prin intermediul `String()`, le concatenează și returnează rezultatul
-
-``` js live
-let arr = [10, 20, 30];
-
-console.log(arr.toString());
 ```
 
 - `join()`: Creează un șir prin **concatenarea reprezentărilor șirului tuturor elementelor**, folosind ca separator specificat în șirul parantezelor
@@ -66,6 +49,23 @@ console.log(arr.toString());
 let arr = [10, 20, 30];
 
 console.log(arr.join('@@'));
+```
+
+- `push()`: adăugarea unui element la sfârșitul matricei 
+
+``` js live
+let arr = [10, 20, 30];
+arr.push(40, 50);
+
+console.log(arr);
+```
+
+- `toString()`: Convertește toate elementele în șiruri prin intermediul `String()`, le concatenează și returnează rezultatul
+
+``` js live
+let arr = [10, 20, 30];
+
+console.log(arr.toString());
 ```
 
 Mai multe metode vor fi examinate în cursul Matrice avansate. 
