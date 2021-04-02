@@ -90,11 +90,11 @@ function adapter(input, code) {
 # Descriere
 Creați un program care primește trei parametri:
 
-- **First name** - un șir
+- **firstName** - un șir
 
-- **Last name** - un șir
+- **lastName** - un șir
 
-- **Delimiter** - un șir
+- **delimiter** - un șir
 
 Sarcina voastră este de a imprima prenumele și numele, legate prin delimitator.
 

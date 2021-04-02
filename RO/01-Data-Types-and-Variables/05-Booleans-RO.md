@@ -61,7 +61,7 @@ if (number) {
 }
 ```
 
-- Totul fără o "valoare" este "**false**"
+Totul fără o "valoare" este "**false**"
 
 ``` js live
 let number;

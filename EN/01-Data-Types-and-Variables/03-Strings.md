@@ -95,11 +95,11 @@ function adapter(input, code) {
 
 Create a program, which receives three parameters:
 
-- **First name** - a string
+- **firstName** - a string
 
-- **Last name** - a string
+- **lastName** - a string
 
-- **Delimiter** - a string
+- **delimiter** - a string
 
 Your task is to print the first name and the last name, joined by the delimiter.
 

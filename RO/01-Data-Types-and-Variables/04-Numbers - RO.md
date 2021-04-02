@@ -12,7 +12,7 @@ Cel mai mare număr care poate fi stocat este `2^54 +-1`
 
 Avem, de asemenea, valori speciale, precum:
 
-- `+Infinit` și `-Infinit` pe care le obținem când împărțim numerele la 0
+- `+Infinity` și `-Infinity` pe care le obținem când împărțim numerele la 0
 
 ``` js live
 console.log(5 / 0);
