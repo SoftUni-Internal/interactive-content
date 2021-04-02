@@ -51,7 +51,7 @@ Also, we can attach it to a program, which is **not** directly available in **In
 [slide hideTitle]
 # Debugging a Project 
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-11-debugging-a-project-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-11-15-debugging-a-project-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To run the program in **debug mode**, we need to right click and choose the "**Debug** \{**the name of the class**\}**.main()**"
 
@@ -136,7 +136,7 @@ From the **Project Structure** option in the **File** menu, or by a shortcut - "
 
 # Breakpoints
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-16-17-breakpoints-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/EN/Java-Advanced-Debugging-Techniques-16-19-breakpoints-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **breakpoints** gives us the ability to stop the program on a specific action.
 
