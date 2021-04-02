@@ -106,7 +106,7 @@ Dacă nu folosiți niciun modificator, este tratat ca **package-private** în mo
 
 Modificatorul de acces **package-private** înseamnă că doar cod din cadrul clasei sau a altor clase din același pachet pot accesa câmpul.
 
-Acesta furnizează mai multă accesibilitate decât modificatorul **private*.
+Acesta furnizează mai multă accesibilitate decât modificatorul **private**.
 
 Modificatorul de acces **package-private** este **mai restrictiv** decât **protected** și **public**.
 
