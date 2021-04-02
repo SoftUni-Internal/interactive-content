@@ -239,7 +239,7 @@ The last element, Sunday, is at index 6 of the array.
 [code-task title="Days of Week" taskId="fundamentals-js-arrays-lab-Days-of-Week" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function days(number){
+function dayOfWeek(day){
   // Write your code here
 }
 ```
@@ -263,14 +263,14 @@ If the number is NOT a valid weekday, print "**Invalid day!**".
 ## Example
 | **Input** | **Output** |
 | --- | --- |
-| days(3) | Wednesday |
-| days(11) | Invalid day! |
+| dayOfWeek(3) | Wednesday |
+| dayOfWeek(11) | Invalid day! |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-days(3)
+dayOfWeek(3)
 [/input]
 [output]
 Wednesday
@@ -278,7 +278,7 @@ Wednesday
 [/test]
 [test open]
 [input]
-days(11)
+dayOfWeek(11)
 [/input]
 [output]
 Invalid day!
@@ -286,7 +286,7 @@ Invalid day!
 [/test]
 [test]
 [input]
-days(1)
+dayOfWeek(1)
 [/input]
 [output]
 Monday
@@ -294,7 +294,7 @@ Monday
 [/test]
 [test]
 [input]
-days(2)
+dayOfWeek(2)
 [/input]
 [output]
 Tuesday
@@ -302,7 +302,7 @@ Tuesday
 [/test]
 [test]
 [input]
-days(4)
+dayOfWeek(4)
 [/input]
 [output]
 Thursday
@@ -310,7 +310,7 @@ Thursday
 [/test]
 [test]
 [input]
-days(5)
+dayOfWeek(5)
 [/input]
 [output]
 Friday
@@ -318,7 +318,7 @@ Friday
 [/test]
 [test]
 [input]
-days(6)
+dayOfWeek(6)
 [/input]
 [output]
 Saturday
@@ -326,7 +326,7 @@ Saturday
 [/test]
 [test]
 [input]
-days(7)
+dayOfWeek(7)
 [/input]
 [output]
 Sunday
@@ -334,7 +334,7 @@ Sunday
 [/test]
 [test]
 [input]
-days(8)
+dayOfWeek(8)
 [/input]
 [output]
 Invalid day!
@@ -342,7 +342,7 @@ Invalid day!
 [/test]
 [test]
 [input]
-days(9)
+dayOfWeek(9)
 [/input]
 [output]
 Invalid day!
