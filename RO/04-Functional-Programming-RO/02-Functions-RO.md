@@ -39,14 +39,7 @@ Ambele funcții nu au **efecte secundare**:
 
 [/slide]
 
-[slide hideTitle]
 
-# Funcții Pure: Demo
-
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/EN/interactive-java-advanced-functional-programming-11-12-Pure-functions-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-
-[/slide]
 
 [slide hideTitle]
 
@@ -107,6 +100,15 @@ In this example, we have all needed **components** for a Java Function:
 - **Parameters**
 - **Name** of the function 
 - **Return expression**
+
+[/slide]
+
+[slide hideTitle]
+
+# Funcții Pure: Demo
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/EN/interactive-java-advanced-functional-programming-11-12-Pure-functions-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 [/slide]
 
