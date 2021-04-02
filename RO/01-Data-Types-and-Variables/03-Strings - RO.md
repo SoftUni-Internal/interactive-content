@@ -72,7 +72,7 @@ console.log(`Hello, my name is ${name}, I am ${age} years old.`);
 [code-task title="Concantenate Names" taskId="fund-js-data-types-and-variables-lab-concatenate-names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function concatNames(firstName, lastName, delimeter){
+function interpolation(firstName, lastName, delimeter){
   // Scrieți codul dvs. aici
 }
 ```
