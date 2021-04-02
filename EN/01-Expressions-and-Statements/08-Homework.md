@@ -795,11 +795,9 @@ Print out the calculated area.
 [/output]
 [/test]
 [/tests]
-[code-io /]
+[code-io/]
 [/code-task]
 [/slide]
-
-
 
 
 [slide hideTitle]
