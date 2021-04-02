@@ -7,37 +7,37 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
+## Descriere
 
-You are a young and talented **developer**. 
+Sunteți un tânăr și talentat **dezvoltator**.
 
-The first task you need to do is to implement **a filtering module** to a party reservation software. 
+Prima sarcină pe care trebuie să o faceți este să implementați **un modul de filtrare** într-un software de rezervare de petreceri.
 
-First, to the party reservation Filter Module (**TPRF** Module for short) is passed a **list** with invitations. 
+În primul rând, modulului de rezervare a petrecerii (**Modulul TPRF** pe scurt) este trecut o **listă** cu invitații.
 
-Next the **TPRF** receives a sequence of commands that specify if you need to add or remove a given filter.  
+Apoi **TPRF** primește o secvență de comenzi care specifică dacă trebuie să adăugați sau să eliminați un anumit filtru. 
 
-**TPRF** Commands are in the given format "\{**command;filter type;filter parameter**\}"
+Comenzile **TPRF** sunt în formatul dat "\{**command;filter type;filter parameter**\}"
 
-You can receive the following **TPRF** commands: "**Add filter**", "**Remove filter**" or "**Print**". 
+Puteți primi următoarele comenzi **TPRF**: "**Add filter**", "**Remove filter**" sau "**Print**". 
 
-The possible **TPRF** filter types are: "**Starts with**", "**Ends with**", "**Length**" and "**Contains**". 
+Posibilele tipuri de filtre **TPRF** sunt: "**Starts with**", "**Ends with**", "**Length**" și "**Contains**". 
 
-All **TPRF** filter parameters will be a string (or an integer for the length filter). 
+Toți parametrii de filtrare **TPRF** vor fi un șir (sau un număr întreg pentru filtrul de lungime).
 
-The input will end with a "**Print**" command. 
+Introducerea se va încheia cu o comandă "**Print**". 
 
-See the examples below: 
+Vezi exemplele de mai jos:
 
-## Examples
+## Exemplu
 
-| **Input** | **Output** |
+|**Intrare**|**Ieșire**|
 | --- | --- |
 | Peter Michael Slav | Slav |
 | Add filter;Starts with;P | |
@@ -46,7 +46,7 @@ See the examples below:
 
 
 
-| **Input** | **Output** |
+|**Intrare**|**Ieșire**|
 | --- | --- |
 | Peter Michael Bob  | Michael |
 | Add filter;Starts with;P  | Bob | 

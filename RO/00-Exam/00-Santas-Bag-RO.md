@@ -5,123 +5,121 @@
 
 [task-description]
 
-## Preparation
-Pay attention to name the package (**christmas**), all the classes, their fields and methods exactly the same way they are presented in the following resources. 
+## Pregătire
+Acordați atenție numirii pachetului (**Crăciun**), a tuturor claselor, a câmpurilor și a metodelor lor exact în același mod în care sunt prezentate în următoarele resurse.
 
-It is also important to keep the project structure as described above. 
+De asemenea, este important să păstrați structura proiectului așa cum este descris mai sus. 
 
-Download the resources from [here](https://videos.softuni.org/resources/java/java-oop-basics/Java-Basics-OOP-Exam-Christmas_Skeleton.zip)
+Descărcați resursele de la [here](https://videos.softuni.org/resources/java/java-oop-basics/Java-Basics-OOP-Exam-Christmas_Skeleton.zip)
 
-## Problem Description
+## Descrierea problemei
 
-Create the classes that are described below.
+Creați clasele descrise mai jos.
 
-### Present
+### Cadou
 
-First, write a Java class **Present** with the following fields: 
+Mai întâi, scrieți o clasă Java **Cadou** cu următoarele câmpuri:
 
-- **name: String**
-- **weight double**
-- **gender: String**
+- **nume: șir**
+- **greutate: double**
+- **sex: șir**
 
-The class constructor should receive (**name, weight and gender**). 
+Constructorul clasei ar trebui să primească (**nume, greutate și sex**).
 
-The class should contain the methods: 
+Clasa ar trebui să conțină metodele:
 
 - **getName()**
 - **getWeight()**
 - **getGender()**
-- Override the **toString()** method in the following format: 
+- Înlocuiți metoda "**toString()**" în următorul format: 
 
 "**Present** \{**name**\} (\{**weight**\}) **for a** \{**gender**\}" 
 
-**Note: Format the weight to the second digit after the decimal point!** 
+**Notă: Formatați greutatea la a doua cifră după punctul zecimal!**
 
-### Bag
+### Geanta
 
-**Next**, write a **Java** class **Bag** that has **data** (a collection which stores the entity **Present**). 
+**În continuare**, scrieți o clasă **Java** **Geantă** care are **date** (o colecție care stochează entitatea **Cadou**).
 
-All entities inside the repository have the **same fields**. 
+Toate entitățile din depozit au aceleași **câmpuri**. De asemenea, clasa **Geantă** ar trebui să aibă aceste câmpuri:
 
-Also, the **Bag** class should have those fields: 
+- **culoare: șir**
+- **capacitate: int** 
+- **date:** **List**\<**Present**\> - conține toate cadourile adăugate în geantă
 
-- **color: String** 
-- **capacity: int** 
-- **data:** **List**\<**Present**\> - holds all added presents in the bag 
+**Constructorul de clasă** ar trebui să primească (**culoare, capacitate**), de asemenea, ar trebui să inițializeze **datele** cu o nouă instanță a colecției.
 
-The class **constructor** should receive (**color, capacity**), also it should initialize the **data** with a new instance of the collection. 
-
-Implement the following features:
+Implementați următoarele caracteristici:
 
 - **getColor()** 
 - **getCapacity()** 
-- **count()** method - **returns** the **number** of presents 
-- **add(Present present)** method - **adds** an **entity** to the data if **there is room** for it 
-- **remove(String name)** method - removes an present by **given name**, if such **exists**, and **returns boolean** 
-- **heaviestPresent()** method - returns the **heaviest** present 
-- **getPresent(String name)** method - returns the present with the **given name** 
-- **report()** method - **returns a string** in the following **format** (print the presents in order of appearance): 
+- **count()** metoda - **returnează** **numărul** de cadouri
+- **add(Present present)** metoda - **adaugă** o **entitate** la date dacă **există spațiu** pentru aceasta
+- **remove(String name)** metoda - elimină un cadou cu **prenume**, dacă un astfel de cadou **există** și **returnează boolean**
+- **heaviestPresent()** metoda - returnează cel mai greu **cadou**
+- **getPresent(String name)** metoda - returnează prezentul cu **numele dat** 
+- **report()** metoda - **returnează un șir** în următorul **format** (tipăriți cadourile în ordinea apariției): 
 
 "\{**color of Bag**\} **bag contains:**
 \{**Present1**\} 
 \{**Present2**\}
 **(…)**"
 
-### Constraints
+### Constrângeri
 
-- The **names** of the presents will be **always unique**
-- The **weights** of the presents will always be with **positive values**
-- You will always have a present added before receiving methods
+- **Numele** cadourilor vor fi **întotdeauna unice**.
+- **Greutățile** cadourilor vor fi întotdeauna cu **valori pozitive**.
+- Veți avea întotdeauna un cadou adăugat înainte de a primi metode.
 
 
-## Example
+## Exemplu
 
-This is an example how the **Bag** class is **intended to be used**.
+Acesta este un exemplu al modului în care se intenționează să se utilizeze clasa **Geantă**.
 
-**Sample code usage**
+**Exemplu de utilizare a codului**
 
 ```java
-// Initialize the repository 
+// Inițializați depozitul
 Bag bag = new Bag("black", 10); 
 
-// Initialize entity 
+// Inițializați entitatea
 Present present = new Present("Doll", 0.4, "girl"); 
 
-// Print Present 
+// Tipărire cadou
 System.out.println(present); // Present Doll (0.40) for a girl 
 
-// Add Present 
+// Adăugare cadou
 bag.add(present); 
 
-// Remove Present 
+// Eliminare cadou
 bag.remove("Toy"); // false 
 
 Present secondPresent = new Present("Train", 2, "boy"); 
-// Add Present 
+// Adăugare cadou
 bag.add(secondPresent); 
 
 Present heaviestPresent = bag.heaviestPresent(); 
 
 System.out.println(heaviestPresent); 
 
-// Present Train (2.00) for a boy 
+// Cadou tren (2.00) pentru un baiat
  
 Present p = bag.getPresent("Doll"); 
 
 System.out.println(p); 
 
-// Present Doll (0.40) for a girl 
+// Cadou păpuşă (0.40) pentru o fată
 
 System.out.println(bag.count()); // 2 
 System.out.println(bag.report()); 
 
-// black bag contains: 
-// Present Doll (0.40) for a girl 
-// Present Train (2.00) for a boy 
+// geanta neagră conține:
+// Cadou păpuşă (0.40) pentru o fată
+// Cadou tren (2.00) pentru un baiat
 ```
 
-## Submission
-Submit **single .zip file**, containing **christmas package, with the classes inside (Present, Bag and the Main class)**, there is no specific content required inside the Main class e. g. you can do any kind of local testing of you program there. However there should be **main** method inside. 
+## Trimiterea
+Trimiteți **un singur fișier .zip**, care conține **pachet de Crăciun, cu clasele din interior (Cadou, Geantă și clasa Principală)**, nu este necesar un conținut specific în cadrul clasei Main e. g. puteți face orice fel de testare locală a programului dvs. acolo. Cu toate acestea, ar trebui să existe metoda **principală** în interior.
 
 [/task-description]
 [tests]
