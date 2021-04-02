@@ -106,7 +106,7 @@ Sugestie: Urmăriți ierarhia excepțiilor. Fiți atent care excepție este păr
 
 # "Try-finally" Statement
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/RO/Java-Advanced-Exceptions-and-Error-Handling-15-the-try-finally-statement-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/RO/Java-Advanced-Exceptions-and-Error-Handling-15-16-the-try-finally-statement-and-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Instrucțiunea **try-finalmente** asigură **execuția** unui bloc dat, indiferent de potențialele excepții care ar putea fi aruncate în codul anterior blocului de cod în cele din urmă.
 

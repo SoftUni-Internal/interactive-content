@@ -50,7 +50,7 @@ De asemenea, ne putem atașa la un program, care nu este **disponibil direct în
 [slide hideTitle]
 # Depanarea Unui Proiect
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-11-debugging-a-project-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-11-15-debugging-a-project-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a rula programul în **modul de depanare**, trebuie să facem clic dreapta și să alegem „**Depanare** \{**numele clasei**\} **.Main()**”
 
@@ -135,7 +135,7 @@ Din opțiunea **Structura proiectului** din meniul **Fișier** sau printr-o coma
 
 # Puncte de Întrerupere
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-16-17-breakpoints-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/06-Debugging-Techniques/RO/Java-Advanced-Debugging-Techniques-16-19-breakpoints-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Punctele de întrerupere** ne oferă posibilitatea de a opri programul pentru o anumită acțiune.
 

@@ -4,7 +4,7 @@
 
 # How to "throw" an Exception
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/RO/Java-Advanced-Exceptions-and-Error-Handling-18-throwing-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/RO/Java-Advanced-Exceptions-and-Error-Handling-18-22-throwing-exceptions-and-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Excepțiile sunt aruncate (ridicate) de cuvântul cheie **throw**.
 
@@ -84,6 +84,8 @@ public static void main(String[] args) {
 [slide hideTitle]
 
 # Problemă cu Soluție: Valid Person
+
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/RO/interactive-java-advanced-exceptions-and-error-handling-problem-valid-person-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Definiți o clasă simplă **Person**, care are următoarele câmpuri:
 
