@@ -7,24 +7,24 @@
 
 [task-description]
 # Description
-You are asked to model an application for storing data about people. 
+Мodel an application that stores data about different people. 
 
-You should be able to have a **Person** and a **Child**. 
+It should allow for a **Person** or a **Child** to be entered. 
 
-The child derives from the person. 
+The child class derives from the person class. 
 
-Every person has a **name**, and an **age**. 
+Each person has a **name**, and an **age**. 
 
-Your task is to model the application.
-
-The **Person** class also have **getters** for the fields.
+The **Person** class should also have **getters** for its fields.
 
 Create a **Child** class that inherits **Person** and has the same public constructor definition. 
 
-However, do not copy the code from the **Person** class - **reuse the Person class's constructor**.
+Attention: **Reuse the Person class's constructor**.
 
 ## Note
-You need a public class **Main**. Create a package **person**.
+You need a public class **Main**. 
+
+Create a package called **person**.
 
 ## Sample Main()
 
@@ -680,17 +680,17 @@ Test Passed!
 
 [task-description]
 # Description
-Create a package zoo. It needs to contain the following classes: 
+Create a package called "zoo". It should contain the following classes: 
 
 [image assetsSrc="inheritance-example(19).png" /]
 
-Follow the diagram and create all of the classes. 
+Follow the diagram and create the described structure. 
 
-**Each** of them, except the **Animal** class, should **inherit** from **another class**. 
+**Each** one, except the **Animal** class, should **extend** **another class**. 
 
-The Animal class should have field **name – String** and **Getter** for **name**.
+The Animal class must contain the fields: **name – String** and a **Getter** for its **name**.
 
-Every class should have:
+Every class must have:
 - A public constructor, which accepts one parameter: **name**
 
 ## Submit
@@ -698,7 +698,7 @@ Every class should have:
 **Zip** your package and upload it.
 
 ## Note: 
-You need a public class Main.
+A public class Main is necessary to run the code.
 
 [/task-description]
 [tests]
@@ -868,17 +868,17 @@ Your task is to create the following game hierarchy:
 
 [image assetsSrc="inheritance-example(20).png" /]
 
-Create a class Hero. It should contain the following members:
+Create a "Hero" class. It should contain the following members:
 - A public constructor, which accepts:
     - **username – String**
     - **level – int**
 - The following fields:
     - **username - String**
     - **level – int**
-- Getters for username and level
+- Getters for the username and the level
 - `toString()` method
 
-## Hint: Override `toString()` of the base class in the following way:
+## Hint: Override the `toString()` method of the base class in the following way:
 ```java
 @Override
 public String toString() {
@@ -889,7 +889,7 @@ public String toString() {
 ```
 
 ## Note
-You need a public class **Main**. Create a package **hero**.
+You need a public **Main** class. Create a package called **hero**.
 
 [/task-description]
 [tests]
@@ -1275,18 +1275,18 @@ Create the following **hierarchy** with the following **classes**:
 
 [image assetsSrc="inheritance-example(21).png" /]
 
-Create a base class Vehicle. It should contain the following members:
+Create a base class called "Vehicle". It should possess the following members:
 - **DEFAULT_FUEL_CONSUMPTION** – **final static double (constant)**
 - **fuelConsumption –double**
 - **fuel – double**
 - **horsePower – int**
-- **Getters and Setters for the fields**
-- A public constructor which accepts (**fuel, horsePower**) and set the **default fuel consumption** on the  field **fuelConsumption**
+- **Getters and Setters for all fields**
+- A public constructor which accepts (**fuel, horsePower**) and sets the **default fuel consumption** of the field called **fuelConsumption**
 - **void drive(double kilometers)**
-    - The **drive** method should have a functionality to reduce the **fuel** based on the travelled kilometers and fuel consumption. 
-    Keep in mind that you can drive the vehicle only if you have enough fuel to finish the driving.
+    - The **drive** method should have contain code logic to reduce the **fuel** based on the travelled kilometers and fuel consumption. 
+    Keep in mind that you can drive the vehicle only if you have enough fuel to finish the drive.
 
-The default fuel consumption for **Vehicle** is **1.25**. Some of the classes have different default fuel consumption:
+The default fuel consumption for a **Vehicle** is **1.25**. Some of the classes have different default fuel consumptions:
 - **SportCar – DEFAULT_FUEL_CONSUMPTION = 10**
 - **RaceMotorcycle – DEFAULT_FUEL_CONSUMPTION = 8**
 - **Car – DEFAULT_FUEL_CONSUMPTION = 3**
@@ -1299,7 +1299,7 @@ The default fuel consumption for **Vehicle** is **1.25**. Some of the classes ha
 In the child classes' constructors use `super.setFuelConsumption()` to set **fuelConsumption**
 
 ## Note
-You need a public class **Main**. 
+a public class **Main** should be present. 
 
 [/task-description]
 [tests]
@@ -1845,30 +1845,30 @@ Test Passed!
 # Description
 Create a **restaurant** package with the following classes and hierarchy:
 
-There are Food and Beverages in the restaurant and they are all products.
+There is Food and Beverages in the restaurant and they are all "products".
 
 The **Product** class must have the following members:
 
 - A public constructor with the following parameters: **String name, BigDecimal price**
 - **name – String**
 - **price – BigDecimal**
-- **Getters for the fields**
+- **Getters for all fields**
 
-**Beverage** and **Food** classes are products. 
+The **Beverage** and the **Food** classes are "products". 
 
 The **Beverage** class must have the following members:
 - A public constructor with the following parameters: **String name, BigDecimal price, double milliliters**
 - **name – String**
 - **price – BigDecimal**
 - **milliliters – double**
-- **Getter for milliliters**
+- **A Getter for "milliliters"**
 
 The **Food** class must have the following members:
 - A constructor with the following parameters: **String name, BigDecimal price, double grams**
 - **name – String**
 - **price – double**
 - **grams – double**
-- **Getter for grams**
+- **A Getter for "grams"**
 
 **HotBeverage** and **ColdBeverage** are **beverages** and they accept the following parameters upon initialization: **String name, BigDecimal price, double milliliters**
 
@@ -1876,25 +1876,27 @@ The **Food** class must have the following members:
 - `double COFFEE_MILLILITERS = 50`
 - `BigDecimal COFFEE_PRICE = 3.50`
 - **caffeine – double**
-- Getter for **caffeine**
+- A Getter for **caffeine**
 
-**MainDish**, **Dessert** and **Starter** are **food**.
+**MainDish**, **Dessert** and **Starter** are all **food**.
  They all accept the following parameters upon initialization: **String name, BigDecimal price, double grams**. 
- **Dessert** must accept one more parameter in its constructor: **double calories**.
+ The **Dessert** class should accept one more parameter in its constructor: **double calories**.
 - **calories – double**
-- **Getter for calories**
+- A **Getter for "calories"**
 
-Make **Salmon**, **Soup** and **Cake** inherit the proper classes.
+**Salmon**, **Soup** and **Cake** inherit the appropriate class.
 
-A **Cake** must have the following members upon initialization:
+The **Cake** class should have the following members upon initialization:
 - `double CAKE_GRAMS = 250`
 - `double CAKE_CALORIES = 1000`
 - `BigDecimal CAKE_PRICE = 5`
-A **Salmon** must have the following members upon initialization:
+The **Salmon** class should have the following members upon initialization:
 - `double SALMON_GRAMS = 22`
 
 ## Note
-You need a public class **Main**. Create a **restaurant** package.
+There should be a public **Main** class. 
+
+Create a **restaurant** package.
 
 ## Submit
 
