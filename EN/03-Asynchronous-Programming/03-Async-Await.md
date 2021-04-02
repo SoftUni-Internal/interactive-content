@@ -57,7 +57,7 @@ Always use `await` **to get a single value** and `Promise.then()` **to run many 
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-20-Async-Await-vs-Promise.then()-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Async functions a **much more concise** than promises.
+Async functions are **much more concise** than promises.
 
 Here is a comparison between the code blocks of the two:
 
