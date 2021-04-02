@@ -87,13 +87,13 @@ Pentru a declara unul, folosim **două bare oblice** `//`, urmate de comentariu:
 
 Putem să le utilizăm pentru **a explica** codul nostru:
 
-```js live
+```js
 console.log("JavaScript e super! 😎"); // Această linie tipărește un șir pe consolă
 ```
 
 Sau pentru **opri** o linie de cod din **a rula**:
 
-```js live
+```js
 console.log("Vremea afară este însorită. 🌞"); 
 // console.log("Afară plouă. 🌧");
 ```
@@ -108,7 +108,7 @@ Acest lucru poate fi util atunci când un comentariu este **prea lung** pentru o
 
 Le deschidem folosind o **bară oblică**, urmată de un **asterisc**:
 
-```js live
+```js
 let name = "Harry";
 
 console.log(`Hello, ${name}! 🙋`);
