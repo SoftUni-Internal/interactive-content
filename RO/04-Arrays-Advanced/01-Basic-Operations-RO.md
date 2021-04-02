@@ -197,19 +197,42 @@ solve(['5', '10'])
 [/slide]
 
 [slide hideTitle]
-# Metoda Push în Matrice
+# Metoda Push și Pop în Matrice
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-10-pushing-an-array-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Metoda `array.push()` adaugă unul sau mai multe elemente la sfârșitul unui tablou și returnează noua lungime:
 
 ``` js live
-let fruits = ['apple', 'banana', 'kiwi'];
+let fruits = ['apple','banana','kiwi'];
 
-fruits.push('pineapple', 'orange');
+let newLength = fruits.push('pineapple', 'orange');
 
 console.log(fruits);
+console.log(newLength);
 ```
+
+The `array.pop()` method removes the **last** element from an array and **returns** its value:
+
+``` js live
+let animals = ['monkey', 'cat', 'dog'];
+
+let popped = animals.pop();
+
+console.log(animals);
+console.log(popped);
+```
+
+Calling `pop()` on an **empty array** will return `undefined`:
+
+``` js live
+let emptyArr = [];
+
+let popped = emptyArr.pop();
+
+console.log(popped);
+```
+
 [/slide]
 
 [slide hideTitle]
