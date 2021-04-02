@@ -11,7 +11,7 @@ Pentru a imprima toate elementele matricei, poate fi utilizată o buclă for
 let capitals = ['Bucharest', 'Washington', 'London'];
 
 for (let i = 0; i < capitals.length; i++) {
-    console.log(capitals[i]);
+  console.log(capitals[i]);
 }
 ```
 

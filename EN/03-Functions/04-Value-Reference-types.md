@@ -45,8 +45,8 @@ Reference data types are: **object**, **array** and **function**.
 ```js
 let cars = ['Nio', 'XPang', 'Tesla'];
 let obj = {
-    firstName: 'Maria',
-    lastName: 'Agarici'
+  firstName: 'Maria',
+  lastName: 'Agarici'
 };
 ```
 

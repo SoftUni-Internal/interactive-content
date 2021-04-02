@@ -316,8 +316,9 @@ We can use `typeof` in an `if` construction:
 
 ``` js live
 let n = 5;
+
 if (typeof(n) === 'number') {
-    console.log(n);
+  console.log(n);
 }
 ```
 

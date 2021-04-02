@@ -14,7 +14,7 @@ The **return** operator can be placed anywhere in the function.
 
 ``` js live
 function readFullName(firstName, lastName) {
-    return firstName + ' ' + lastName;
+  return firstName + ' ' + lastName;
 }
 
 const fullName = readFullName('John', 'Smith');
@@ -65,11 +65,11 @@ multiply(getMax(5,10), 20);
 
 ``` js live
 function isValid(index, arr) {
-    if (index < 0 || index >= arr.length) {
-        return false;
-    } else {
-        return true;
-    }
+  if (index < 0 || index >= arr.length) {
+    return false;
+  } else {
+    return true;
+  }
 }
 
 console.log(isValid(3, [1, 2, 3, 4, 5]));
@@ -83,7 +83,7 @@ The result of this function is **boolean**, it will return true if the index is 
 
 ```js live
 function pass(grade) {
-   return grade >= 3;
+  return grade >= 3;
 }
 
 console.log(pass(5.32))
@@ -116,16 +116,16 @@ However, **the outer function does not have access to the inner function's varia
 
 ```js live
 function swapElements(arr) {
-    for (let i = 0; i < arr.length / 2; i++) {
-        swap(arr, i, arr.length - 1 - i);
-    }
-    console.log(arr.join(' '));
+  for (let i = 0; i < arr.length / 2; i++) {
+    swap(arr, i, arr.length - 1 - i);
+  }
+  console.log(arr.join(' '));  
 
-    function swap(elements, i, j) {
-        let temp = elements[i];
-        elements[i] = elements[j];
-        elements[j] = temp;
-    }
+  function swap(elements, i, j) {
+    let temp = elements[i];
+    elements[i] = elements[j];
+    elements[j] = temp;
+  }
 }
 
 swapElements([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);

@@ -90,7 +90,8 @@ These are usually our functions.
 
 ```js
 var carName = 'Volvo';
-  // Code here can use carName
+// Code here can use carName
+
 function myFunction() {
   // Code here can also use carName
  }

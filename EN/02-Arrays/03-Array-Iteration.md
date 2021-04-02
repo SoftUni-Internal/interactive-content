@@ -11,7 +11,7 @@ To print all array elements, a for-loop can be used:
 let capitals = ['Bucharest', 'Washington', 'London'];
 
 for (let i = 0; i < capitals.length; i++) {
-    console.log(capitals[i]);
+  console.log(capitals[i]);
 }
 ```
 

@@ -89,7 +89,8 @@ Avem **patru tipuri de domenii**, și le vom analiza pe fiecare mai în detaliu 
 
 ``` js
 var carName = 'Volvo';
-  // Code here can use carName
+// Code here can use carName
+
 function myFunction() {
   // Code here can also use carName
  }

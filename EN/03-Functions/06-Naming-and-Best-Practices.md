@@ -55,13 +55,13 @@ p, p1, p2, populate, LastName, lastName
 
 - **Avoid long functions**, **split** them into **several shorter ones**
 
- ```js
- function printReceipt(){
-    printHeader();
-    printBody();
-    printFooter();
+```js
+function printReceipt(){
+  printHeader();
+  printBody();
+  printFooter();
 }
- ```
+```
 
 Following the practices, the function defined in the example above is **self-documenting** and **easy to test**.
 

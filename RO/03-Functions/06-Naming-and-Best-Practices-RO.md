@@ -53,13 +53,13 @@ p, p1, p2, populate, LastName, lastName
 - **Evitați funcțiile lungi**, **împărțiți-le** în **câteva mai scurte**
 
 
- ```js
- function printReceipt(){
-    printHeader();
-    printBody();
-    printFooter();
+```js
+function printReceipt(){
+  printHeader();
+  printBody();
+  printFooter();
 }
- ```
+```
 
  În urma practicilor, funcția definită în exemplul de mai sus este **autodocumentată** și **ușoară de testat**.
 
@@ -77,8 +77,8 @@ Asigurați-vă că utilizați indentarea corectă
 
 ```js
 function sum() {
-    // some code…
-    // some more code…
+  // some code…
+  // some more code…
 }
 ```
 
@@ -86,8 +86,8 @@ function sum() {
 
 ```js
 function sum() {
-    // some code…
-    // some more code…
+  // some code…
+  // some more code…
 }
 ```
 

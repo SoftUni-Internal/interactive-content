@@ -87,10 +87,11 @@ De asemenea, putem invoca o **funcție** **în propriul său corp (recursivitate
 
 ``` js
 function countDown(x) {
-    console.log(x);
-    if (x > 0) {
-        countDown(x - 1);
-    }
+  console.log(x);
+
+  if (x > 0) {
+    countDown(x - 1);
+  }
 }
 ```
 **Recursivitatea** este procesul în care o funcție **se invocă pe sine**.
@@ -133,7 +134,7 @@ O funcție poate primi **orice număr și tip de argumente** atunci când este i
 
 ```js live
 function add(a, b) {
-    console.log(a + b);
+  console.log(a + b);
 }
 add(2, 5);
 ```
@@ -157,7 +158,7 @@ printName(['John', 'Smith']);
 
 ```js live
 function multiply(a, b) {
-    console.log(a * b);
+  console.log(a * b);
 }
 multiply(5, 7);
 ```
@@ -166,7 +167,7 @@ Putem transmite **mai puține sau mai multe** argumente în timp ce invocăm o f
 
 ```js live
 function multiply(a, b) {
-    console.log(a * b);
+  console.log(a * b);
 }
 multiply(5); // NaN
 ```
@@ -202,7 +203,7 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Scrieți o funcție care primește o notă între "**2.00**" și "**6.00**" și imprimă nota corespunzătoare în cuvinte
+Scrieți o funcție care primește o notă între "**2.00**" și "**6.00**" și imprimă nota corespunzătoare în cuvinte.
 
 |**Grad**|**Rezultat**|
 | --- | --- |

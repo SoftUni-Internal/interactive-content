@@ -32,13 +32,13 @@ Tipurile de date de **referință** sunt: `objects` și `arrays`.
 
 Exemple:
 ``` js
-let number = 10; 					     // Number
-let name = 'George';				     // String
-let array = [1, 2, 3];				     // Array
-let isTrue = true;					     // Boolean
-let person = {name: 'George', age: 25};	 // Object
-let empty = null;					     // Null
-let unknown = undefined;				 // Undefined
+let number = 10; 			   // Number
+let name = 'George';	   // String
+let array = [1, 2, 3];   // Array
+let isTrue = true;		   // Boolean
+let person = {name: 'George', age: 25}; // Object
+let empty = null;			   // Null
+let unknown = undefined; // Undefined
 ```
 [/slide]
 

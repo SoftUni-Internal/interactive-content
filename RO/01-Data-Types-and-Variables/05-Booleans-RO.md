@@ -317,8 +317,9 @@ Putem folosi typeof în construcția `if`:
 
 ``` js live
 let n = 5;
+
 if (typeof(n) === 'number') {
-    console.log(n);
+  console.log(n);
 }
 ```
 
