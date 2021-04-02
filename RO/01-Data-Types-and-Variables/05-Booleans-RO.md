@@ -159,7 +159,7 @@ Este întotdeauna mai bine să fii **explicit** pentru a nu fi ambiguu.
 [code-editor language=javascript]
 
 ```
-function amazingNumbers(input){
+function amazingNumber(num){
   // Scrieți codul dvs. aici
 }
 ```
@@ -194,15 +194,15 @@ Exemple pentru numere uimitoare sunt:
 ## Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
-| amazingNumbers(1233) | 1233 Amazing? True |
-| amazingNumbers(999) | 999 Amazing? False|
+| amazingNumber(1233) | 1233 Amazing? True |
+| amazingNumber(999) | 999 Amazing? False|
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-amazingNumbers(1233)
+amazingNumber(1233)
 [/input]
 [output]
 1233 Amazing? True
@@ -210,7 +210,7 @@ amazingNumbers(1233)
 [/test]
 [test open]
 [input]
-amazingNumbers(999)
+amazingNumber(999)
 [/input]
 [output]
 999 Amazing? False
@@ -218,7 +218,7 @@ amazingNumbers(999)
 [/test]
 [test]
 [input]
-amazingNumbers(144)
+amazingNumber(144)
 [/input]
 [output]
 144 Amazing? True
@@ -226,7 +226,7 @@ amazingNumbers(144)
 [/test]
 [test]
 [input]
-amazingNumbers(55555554)
+amazingNumber(55555554)
 [/input]
 [output]
 55555554 Amazing? True
@@ -234,7 +234,7 @@ amazingNumbers(55555554)
 [/test]
 [test]
 [input]
-amazingNumbers(5554)
+amazingNumber(5554)
 [/input]
 [output]
 5554 Amazing? True
@@ -242,7 +242,7 @@ amazingNumbers(5554)
 [/test]
 [test]
 [input]
-amazingNumbers(45645)
+amazingNumber(45645)
 [/input]
 [output]
 45645 Amazing? False
@@ -250,7 +250,7 @@ amazingNumbers(45645)
 [/test]
 [test]
 [input]
-amazingNumbers(3671)
+amazingNumber(3671)
 [/input]
 [output]
 3671 Amazing? False
@@ -258,7 +258,7 @@ amazingNumbers(3671)
 [/test]
 [test]
 [input]
-amazingNumbers(1231)
+amazingNumber(1231)
 [/input]
 [output]
 1231 Amazing? False
@@ -266,7 +266,7 @@ amazingNumbers(1231)
 [/test]
 [test]
 [input]
-amazingNumbers(6123)
+amazingNumber(6123)
 [/input]
 [output]
 6123 Amazing? False
@@ -274,7 +274,7 @@ amazingNumbers(6123)
 [/test]
 [test]
 [input]
-amazingNumbers(65451)
+amazingNumber(65451)
 [/input]
 [output]
 65451 Amazing? False

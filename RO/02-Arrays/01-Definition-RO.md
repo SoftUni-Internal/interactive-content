@@ -103,7 +103,7 @@ console.log(numbers);
 [code-task title="Sum First and Last Array Elements" taskId="fundamentals-js-arrays-lab-Sum-First-and-Last-Array-Elements" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function sum(input){
+function sumFirstAndLastNum(numArray){
   // Scrieți codul dvs. aici
 }
 ```
@@ -126,14 +126,14 @@ Imprimați suma **primului** și **ultimului** element al matricei
 ## Exemplus
 |**Intrare**|**Ieșire**|
 | --- | --- |
-| sum([20, 30, 40]) | 60 |
-| sum([10, 17, 22, 33]) | 43 |
+| sumFirstAndLastNum([20, 30, 40]) | 60 |
+| sumFirstAndLastNum([10, 17, 22, 33]) | 43 |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-sum([20, 30, 40])
+sumFirstAndLastNum([20, 30, 40])
 [/input]
 [output]
 60
@@ -141,7 +141,7 @@ sum([20, 30, 40])
 [/test]
 [test open]
 [input]
-sum([10, 17, 22, 33])
+sumFirstAndLastNum([10, 17, 22, 33])
 [/input]
 [output]
 43
@@ -149,7 +149,7 @@ sum([10, 17, 22, 33])
 [/test]
 [test]
 [input]
-sum([191, 67, 22, 33, 9])
+sumFirstAndLastNum([191, 67, 22, 33, 9])
 [/input]
 [output]
 200
@@ -157,7 +157,7 @@ sum([191, 67, 22, 33, 9])
 [/test]
 [test]
 [input]
-sum([10, 69])
+sumFirstAndLastNum([10, 69])
 [/input]
 [output]
 79
@@ -165,7 +165,7 @@ sum([10, 69])
 [/test]
 [test]
 [input]
-sum([56, 44, 19])
+sumFirstAndLastNum([56, 44, 19])
 [/input]
 [output]
 75
@@ -173,7 +173,7 @@ sum([56, 44, 19])
 [/test]
 [test]
 [input]
-sum([118, 574, 19])
+sumFirstAndLastNum([118, 574, 19])
 [/input]
 [output]
 137
@@ -181,7 +181,7 @@ sum([118, 574, 19])
 [/test]
 [test]
 [input]
-sum([11, 58, 69])
+sumFirstAndLastNum([11, 58, 69])
 [/input]
 [output]
 80
@@ -189,7 +189,7 @@ sum([11, 58, 69])
 [/test]
 [test]
 [input]
-sum([91, 18, 19])
+sumFirstAndLastNum([91, 18, 19])
 [/input]
 [output]
 110

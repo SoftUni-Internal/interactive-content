@@ -76,7 +76,7 @@ console.log(myVar + 10);
 [code-task title="Integer or Float" taskId="fund-js-data-types-and-variables-lab-integer-or-float" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function integerOrFloat(firstNumber, secondNumber, thirdNumber){
+function integerOrFloat(num1, num2, num3){
   // Write your code here
 }
 ```
