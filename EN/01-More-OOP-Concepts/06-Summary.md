@@ -5,8 +5,7 @@
 
 ## In this lesson you learned:
 
-- Well organized code is easier to work with
-    - we can reduce code complexity by using **methods**, **classes** and **projects**
+ - We can reduce code complexity by using **methods**, **classes** and **projects**
 
 
 ```java
@@ -33,7 +32,7 @@ for (char move : moves) {
 ```
 
 - **Enumerations** define a fixed **set of constants**
-    - represent **numeric values**
+    - they represent **numeric values**
     - we can easily **cast enums** to **numeric types**
 
 
