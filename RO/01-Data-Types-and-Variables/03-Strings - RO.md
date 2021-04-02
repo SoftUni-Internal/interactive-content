@@ -101,15 +101,15 @@ Sarcina voastră este de a imprima prenumele și numele, legate prin delimitator
 ## Exemple
   | **Intrare** | **Ieșire** |
 | --- | --- |
-| concatNames('John', 'Smith', '\-\>') | John\-\>Smith |
-| concatNames('Jan', 'White', '\<\-\>') | Jan\<\-\>White |
+| interpolation('John', 'Smith', '\-\>') | John\-\>Smith |
+| interpolation('Jan', 'White', '\<\-\>') | Jan\<\-\>White |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-concatNames('John', 'Smith', '\-\>')
+interpolation('John', 'Smith', '\-\>')
 [/input]
 [output]
 John\-\>Smith
@@ -117,7 +117,7 @@ John\-\>Smith
 [/test]
 [test open]
 [input]
-concatNames('Jan', 'White', '\<\-\>')
+interpolation('Jan', 'White', '\<\-\>')
 [/input]
 [output]
 Jan\<\-\>White
@@ -125,7 +125,7 @@ Jan\<\-\>White
 [/test]
 [test]
 [input]
-concatNames('John', 'Smith', 'm')
+interpolation('John', 'Smith', 'm')
 [/input]
 [output]
 JohnmSmith
@@ -133,7 +133,7 @@ JohnmSmith
 [/test]
 [test]
 [input]
-concatNames('Jan', 'White', 'k')
+interpolation('Jan', 'White', 'k')
 [/input]
 [output]
 JankWhite
@@ -141,7 +141,7 @@ JankWhite
 [/test]
 [test]
 [input]
-concatNames('Jan', 'White', '\-')
+interpolation('Jan', 'White', '\-')
 [/input]
 [output]
 Jan\-White
@@ -149,7 +149,7 @@ Jan\-White
 [/test]
 [test]
 [input]
-concatNames('Jan', 'White', '\=')
+interpolation('Jan', 'White', '\=')
 [/input]
 [output]
 Jan\=White
@@ -157,7 +157,7 @@ Jan\=White
 [/test]
 [test]
 [input]
-concatNames('Jan', 'White', '\,')
+interpolation('Jan', 'White', '\,')
 [/input]
 [output]
 Jan\,White
@@ -165,7 +165,7 @@ Jan\,White
 [/test]
 [test]
 [input]
-concatNames('Jan', 'White', 'p')
+interpolation('Jan', 'White', 'p')
 [/input]
 [output]
 JanpWhite
