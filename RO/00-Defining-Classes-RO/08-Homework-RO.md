@@ -2539,7 +2539,7 @@ De exemplu, în prima linie Stan este înaintea lui Jenny, fiindcă data sa de n
 | End |  |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
