@@ -151,21 +151,12 @@ public class Car {
 În java metoda `equals()` este utilizată pentru a compara egalitatea a două obiecte. 
 
 ```java
-public class Car {
+Car firstCar = new Car("TESLA", "MODEL S");
+Car secondCar = new Car("BMW", "5 Series");
 
-    private String brand;
-    private String model;
-
-}
-public static void main(String[] args) {
-    Car firstCar = new Car("TESLA", "MODEL S");
-    Car secondCar = new Car("BMW", "5 Series");
-
-    boolean isCarsEquals = firstCar.equals(secondCar);
-    // false
-    System.out.println(isCarsEquals);
-}
-
+boolean isCarsEquals = firstCar.equals(secondCar);
+// false
+System.out.println(isCarsEquals);
 ```
 
 Țineți minte că metoda `equals()` nu funcționează corect pentru compararea obiectelor, doar dacă nu este suprascrisă și utilizată împreună cu metoda `hashcode()`.
