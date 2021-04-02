@@ -16,9 +16,9 @@ A constructor has the same name as the class and looks like this:
 public class Car {
 
    // Constructor
-   public Car() {
-      // ...
-   }
+   public Car(){
+       this.brand = "BMW";
+    }
 }
 ```
 

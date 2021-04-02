@@ -22,7 +22,7 @@ public class Car {
 
    // Constructor
    public Car(){
-
+       this.brand = "BMW";
     }
 }
 ```
