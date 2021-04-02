@@ -105,7 +105,7 @@ Hint: Trace the exceptions hierarchy. Be cautious which exception is the parent 
 
 # "Try-finally" Statement
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-15-the-try-finally-statement-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/EN/Java-Advanced-Exceptions-and-Error-Handling-15-16-the-try-finally-statement-and-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **"try-finally"** statement ensures the **execution** of a given block regardless potential exceptions that could be thrown in the code preceding the finally code block.
 
