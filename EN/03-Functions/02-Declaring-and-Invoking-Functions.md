@@ -172,7 +172,7 @@ If we pass more arguments, then additional arguments **will be ignored.**
 [code-task title="Grades" taskId="fundamentals-js-functions-lab-Grades" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function grades(input){
+function grade(gradeAsNum){
   // Write your code here
 }
 ```
@@ -203,16 +203,16 @@ Write a function that receives a grade between "**2.00**" and "**6.00**" and pri
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-| grades(3.33) | Poor |
-| grades(4.50) | Very good |
-| grades(2.99) | Fail |
+| grade(3.33) | Poor |
+| grade(4.50) | Very good |
+| grade(2.99) | Fail |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-grades(3.33)
+grade(3.33)
 [/input]
 [output]
 Poor
@@ -220,7 +220,7 @@ Poor
 [/test]
 [test open]
 [input]
-grades(4.50)
+grade(4.50)
 [/input]
 [output]
 Very good
@@ -228,7 +228,7 @@ Very good
 [/test]
 [test open]
 [input]
-grades(2.99)
+grade(2.99)
 [/input]
 [output]
 Fail
@@ -236,7 +236,7 @@ Fail
 [/test]
 [test]
 [input]
-grades(4.49)
+grade(4.49)
 [/input]
 [output]
 Good
@@ -244,7 +244,7 @@ Good
 [/test]
 [test]
 [input]
-grades(5.50)
+grade(5.50)
 [/input]
 [output]
 Excellent
@@ -252,7 +252,7 @@ Excellent
 [/test]
 [test]
 [input]
-grades(4.60)
+grade(4.60)
 [/input]
 [output]
 Very good
@@ -260,7 +260,7 @@ Very good
 [/test]
 [test]
 [input]
-grades(3.20)
+grade(3.20)
 [/input]
 [output]
 Poor
@@ -268,7 +268,7 @@ Poor
 [/test]
 [test]
 [input]
-grades(2.00)
+grade(2.00)
 [/input]
 [output]
 Fail
@@ -287,7 +287,7 @@ Fail
 [code-task title="Math Power" taskId="fundamentals-js-functions-lab-Math-Power"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function mathPower(input){
+function power(num, pow){
   // Write your code here
 }
 ```
@@ -311,15 +311,15 @@ Write a function that **calculates** and returns the value of a number **raised 
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-| mathPower(2, 8) | 256 |
-| mathPower(3, 4) | 81 |
+| power(2, 8) | 256 |
+| power(3, 4) | 81 |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-mathPower(2, 8)
+power(2, 8)
 [/input]
 [output]
 256
@@ -327,7 +327,7 @@ mathPower(2, 8)
 [/test]
 [test open]
 [input]
-mathPower(3, 4)
+power(3, 4)
 [/input]
 [output]
 81
@@ -335,7 +335,7 @@ mathPower(3, 4)
 [/test]
 [test]
 [input]
-mathPower(7, 2)
+power(7, 2)
 [/input]
 [output]
 49
@@ -343,7 +343,7 @@ mathPower(7, 2)
 [/test]
 [test]
 [input]
-mathPower(123, 3)
+power(123, 3)
 [/input]
 [output]
 1860867
@@ -351,7 +351,7 @@ mathPower(123, 3)
 [/test]
 [test]
 [input]
-mathPower(5.5, 3)
+power(5.5, 3)
 [/input]
 [output]
 166.375
@@ -359,7 +359,7 @@ mathPower(5.5, 3)
 [/test]
 [test]
 [input]
-mathPower(21, 10)
+power(21, 10)
 [/input]
 [output]
 16679880978201
@@ -367,7 +367,7 @@ mathPower(21, 10)
 [/test]
 [test]
 [input]
-mathPower(10, 7)
+power(10, 7)
 [/input]
 [output]
 10000000
@@ -375,7 +375,7 @@ mathPower(10, 7)
 [/test]
 [test]
 [input]
-mathPower(12, 3)
+power(12, 3)
 [/input]
 [output]
 1728
@@ -383,7 +383,7 @@ mathPower(12, 3)
 [/test]
 [test]
 [input]
-mathPower(2, 3)
+power(2, 3)
 [/input]
 [output]
 8
@@ -391,7 +391,7 @@ mathPower(2, 3)
 [/test]
 [test]
 [input]
-mathPower(3, 2)
+power(3, 2)
 [/input]
 [output]
 9
@@ -399,7 +399,7 @@ mathPower(3, 2)
 [/test]
 [test]
 [input]
-mathPower(4, 4)
+power(4, 4)
 [/input]
 [output]
 256
@@ -407,7 +407,7 @@ mathPower(4, 4)
 [/test]
 [test]
 [input]
-mathPower(4, 4)
+power(4, 4)
 [/input]
 [output]
 256

@@ -67,6 +67,6 @@ let arr = [10, 20, 30];
 console.log(arr.toString());
 ```
 
-More methods will be examined in the Arrays Advanced course. 
+More methods will be examined in the Arrays Advanced lesson. 
 
 [/slide]

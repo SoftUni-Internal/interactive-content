@@ -196,7 +196,7 @@ reverse(5, [664, 43, 715, 8899, 747, 44, 78])
 [code-task title="Reverse an Array of Strings" taskId="fundamentals-js-arrays-lab-Reverse-an-Array-of-Strings" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function reverse(input){
+function reverse(arr){
   // Write your code here
 }
 ```

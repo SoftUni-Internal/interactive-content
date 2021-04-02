@@ -68,6 +68,6 @@ let arr = [10, 20, 30];
 console.log(arr.toString());
 ```
 
-Mai multe metode vor fi examinate în cursul Matrice avansate. 
+Mai multe metode vor fi examinate în lecția Matrice Avansate. 
 
 [/slide]
