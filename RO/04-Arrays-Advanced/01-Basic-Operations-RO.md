@@ -104,7 +104,7 @@ console.log(number);
 [code-editor language=javascript]
 
 ```
-function sumFirstLast(input){
+function solve(input){
  // Scrieți codul dvs. aici
 }
 
@@ -130,15 +130,15 @@ Scrieți o funcție care calculează și imprimă suma primelor și ultimelor el
 ## Exemplus
 |**Intrare**|**Ieșire** |
 | --- | --- |
-|sumFirstLast(['20', '30', '40']) | 60 |
-|sumFirstLast(['5', '10']) | 15 |
+|solve(['20', '30', '40']) | 60 |
+|solve(['5', '10']) | 15 |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-sumFirstLast(['20', '30', '40'])
+solve(['20', '30', '40'])
 [/input]
 [output]
 60
@@ -146,7 +146,7 @@ sumFirstLast(['20', '30', '40'])
 [/test]
 [test open]
 [input]
-sumFirstLast(['5', '10'])
+solve(['5', '10'])
 [/input]
 [output]
 15
@@ -154,7 +154,7 @@ sumFirstLast(['5', '10'])
 [/test]
 [test]
 [input]
-sumFirstLast(['2', '3', '2', '14', '3'])
+solve(['2', '3', '2', '14', '3'])
 [/input]
 [output]
 5
@@ -162,7 +162,7 @@ sumFirstLast(['2', '3', '2', '14', '3'])
 [/test]
 [test]
 [input]
-sumFirstLast(['2.5', '3.6', '1.1', '3.33'])
+solve(['2.5', '3.6', '1.1', '3.33'])
 [/input]
 [output]
 5.83
@@ -170,7 +170,7 @@ sumFirstLast(['2.5', '3.6', '1.1', '3.33'])
 [/test]
 [test]
 [input]
-sumFirstLast(['1000', '2000', '3000', '4000'])
+solve(['1000', '2000', '3000', '4000'])
 [/input]
 [output]
 5000
@@ -178,7 +178,7 @@ sumFirstLast(['1000', '2000', '3000', '4000'])
 [/test]
 [test]
 [input]
-sumFirstLast(['20', '30', '40'])
+solve(['20', '30', '40'])
 [/input]
 [output]
 60
@@ -186,7 +186,7 @@ sumFirstLast(['20', '30', '40'])
 [/test]
 [test]
 [input]
-sumFirstLast(['5', '10'])
+solve(['5', '10'])
 [/input]
 [output]
 15

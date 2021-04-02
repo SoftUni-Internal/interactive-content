@@ -11,17 +11,17 @@ We can use arrow functions in some of the advanced methods.
 
 Advanced functionality of an array consists of the following functions:
 
-- **push(element)** - adds one or more elements to the end of an array and returns the new length of the array
+- `push(element)` - adds one or more elements to the end of an array and returns the new length of the array
 
-- **pop()** - removes the **last** element from an array and returns that element
+- `pop()` - removes the **last** element from an array and returns that element
 
-- **shift()** - removes the **first** element from an array and returns that element
+- `shift()` - removes the **first** element from an array and returns that element
 
-- **unshift(element)** - **adds new items to the beginning** of an array, and returns the new **length**
+- `unshift(element)` - **adds new items to the beginning** of an array, and returns the new **length**
 
-- **includes(element)** - determines whether an **array includes a certain element**, returnes "**true**" or "**false**"
+- `includes(element)` - determines whether an **array includes a certain element**, returnes "**true**" or "**false**"
 
-- **indexOf(element)** - returns the index of an element, or returns -1, if it cannot find the element
+- `indexOf(element)` - returns the index of an element, or returns -1, if it cannot find the element
 
 These methods modify the array and we do not need to write a whole bunch of code, which saves lots of time. 
 
@@ -103,7 +103,7 @@ console.log(number);
 [code-editor language=javascript]
 
 ```
-function sumFirstLast(input){
+function solve(input){
   // Write your code here
 }
 
@@ -130,15 +130,15 @@ The **output** should be the **value, which is returned from the function**.
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-|sumFirstLast(['20', '30', '40']) | 60 |
-|sumFirstLast(['5', '10']) | 15 |
+|solve(['20', '30', '40']) | 60 |
+|solve(['5', '10']) | 15 |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-sumFirstLast(['20', '30', '40'])
+solve(['20', '30', '40'])
 [/input]
 [output]
 60
@@ -146,7 +146,7 @@ sumFirstLast(['20', '30', '40'])
 [/test]
 [test open]
 [input]
-sumFirstLast(['5', '10'])
+solve(['5', '10'])
 [/input]
 [output]
 15
@@ -154,7 +154,7 @@ sumFirstLast(['5', '10'])
 [/test]
 [test]
 [input]
-sumFirstLast(['2', '3', '2', '14', '3'])
+solve(['2', '3', '2', '14', '3'])
 [/input]
 [output]
 5
@@ -162,7 +162,7 @@ sumFirstLast(['2', '3', '2', '14', '3'])
 [/test]
 [test]
 [input]
-sumFirstLast(['2.5', '3.6', '1.1', '3.33'])
+solve(['2.5', '3.6', '1.1', '3.33'])
 [/input]
 [output]
 5.83
@@ -170,7 +170,7 @@ sumFirstLast(['2.5', '3.6', '1.1', '3.33'])
 [/test]
 [test]
 [input]
-sumFirstLast(['1000', '2000', '3000', '4000'])
+solve(['1000', '2000', '3000', '4000'])
 [/input]
 [output]
 5000
@@ -178,7 +178,7 @@ sumFirstLast(['1000', '2000', '3000', '4000'])
 [/test]
 [test]
 [input]
-sumFirstLast(['20', '30', '40'])
+solve(['20', '30', '40'])
 [/input]
 [output]
 60
@@ -186,7 +186,7 @@ sumFirstLast(['20', '30', '40'])
 [/test]
 [test]
 [input]
-sumFirstLast(['5', '10'])
+solve(['5', '10'])
 [/input]
 [output]
 15
