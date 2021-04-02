@@ -86,13 +86,13 @@ To declare one, we use **two forward slashes** `//`, followed by the comment:
 
 We can use them to **explain** our code:
 
-```js live
+```js
 console.log("JavaScript is awesome! 😎"); // This line prints a string to the console
 ```
 
 Or to **prevent** a line of code from **running**:
 
-```js live
+```js
 console.log("The weather outside is sunny. 🌞"); 
 // console.log("It is raining outside. 🌧");
 ```
@@ -107,7 +107,7 @@ This can be useful when a comment is **too long** for a single line and would re
 
 We open them using a **forward slash**, followed by and an **asterisk**:
 
-```js live
+```js
 let name = "Harry";
 
 console.log(`Hello, ${name}! 🙋`);
