@@ -5,7 +5,7 @@
 
 ## In this lesson you learned:
 
-- Inheritance is a powerful tool for **code reuse**
+- Inheritance is a powerful tool simplifying **code reuse**
 
 ```java
 class Person { … }
@@ -14,7 +14,7 @@ class Student extends Person { … }
 class Employee extends Person { … }
 ```
 
-- **Subclass inherits** members from **Superclass**
+- A **Subclass inherits** members from a **Superclass**
 
 ```java
 class Person { … } // Base Class/Parent Class
@@ -23,7 +23,7 @@ class Student extends Person { … }  // Subclass/Child
 class Employee extends Person { … } // Subclass/Child
 ```
 
-- Subclass can **override** methods
+- A Subclass can **override** methods
 
 ```java
 public class Person {  
@@ -37,10 +37,11 @@ public class Student extends Person {
 	System.out.println("Student sleeping"); }
 }
 ```
+Types of code reuse:
 
-- Looking for classes with the **same role**
+- classes with the **same role**
 
-- Looking for an **IS-A** and **IS-A-SUBSTITUTE** relationship
+- classes with **IS-A** or **IS-A-SUBSTITUTE** relationships
 
 - **Composition** and **Delegation**
 
