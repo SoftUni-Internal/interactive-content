@@ -49,7 +49,7 @@ JavaScript este unul dintre cele mai **potrivite** limbaje de programare pentru 
 
 Este, de asemenea, **ușor de învățat** JavaScript prin setul excelent de tutoriale video și exerciții de la SoftUni.
 
-Suportă programarea **imperativă**, **funcțională** și **orientată pe obiecte**, cu o sintaxă clară și concisă.
+Permite programarea **imperativă**, **funcțională** și **orientată pe obiecte**, cu o sintaxă clară și concisă.
 
 [/slide]
 [slide hideTitle]
@@ -58,13 +58,13 @@ Suportă programarea **imperativă**, **funcțională** și **orientată pe obie
 
 După cum am menționat deja, un program este o **secvență de comenzi**.
 
-Altfel spus, conține o succesiune de **calcule**, **evaluări**, **iterații** și tot felul de operațiuni similare, care **au ca scop obținerea unui anumit rezultat**.
+Altfel spus, conține o succesiune de **calcule**, **evaluări**, **iterații** și tot felul de operații similare, care **au ca scop obținerea unui anumit rezultat**.
 
 Un program JavaScript este scris sub **formă de text**, iar textul programului se numește **cod sursă**.
 
 **Interpretorul** execută codul **direct linie cu linie**.
 
-Scripturile și limbajele interpretate, cum ar fi JavaScript, Python și PHP, își primesc numele prin prisma faptului că sursa lor de cod este **executată pas cu pas de un interpretor.**
+Scripturile și limbajele interpretate, cum ar fi JavaScript, Python și PHP, își primesc numele prin prisma faptului că codurile lor sursă sunt **executate pas cu pas de un interpretor.**
 
 Procesul de compilare a codului înainte de executarea acestuia este utilizat doar în limbajele compilate precum C#, Java și C++.
 
