@@ -15,18 +15,18 @@ Unele dintre greșelile obișnuite de bază cu care ne putem confrunta:
 
 - Sintaxă greșită
 
-- Lipsă citatelor  `"` sau parantezelor `(` sau `)`
+- Lipsa citatelor  `"` sau parantezelor `(` sau `)`
 
-- Confuzia sensului **Addition (adăugare)** și **Concatenation (concatenare)**
+- Confuzia sensului **Addition (adunare)** și **Concatenation (concatenare)**
 
 Operatorul `+` are două funcționalități.
 
-**Adăugarea** este pentru numere.
+**Adunarea** este pentru numere.
 
 **Concatenarea** este pentru șiruri de caractere.
 
 - Confuzia operatorilor **assignment (atribuire)** (`=`) și **equality (egalitate)** (`==`, `===`)
 
-În JavaScript semnele dublu egal și triplu egal sunt numite operatori de comparație.
+În JavaScript, operatorii de egalitate (`==`, `===`) sunt numiți și operatori de **comparație**.
 
 [/slide]
