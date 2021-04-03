@@ -52,7 +52,7 @@ Acest lucru se face prin condiția `if`, care are următoarea structură:
 
 ```js
 if (condition) {
-  // condition body;
+  // corpul condiției;
 }
 ```
 ## Exemplu: Weather
