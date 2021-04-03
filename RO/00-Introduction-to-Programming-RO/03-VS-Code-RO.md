@@ -109,7 +109,7 @@ Suntem pregătiți să lucrăm cu Visual Studio Code.
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-23-Development-Environments-Desktop-And-Online-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Dacă nu avem Visual Studio Code instalat, putem utiliza un IDE alternativ (online)
+Dacă nu avem Visual Studio Code instalat, putem utiliza un IDE alternativ (online).
 
 * JavaScript: utilizați direct consola browserului (apăsați tasta `[F12]`)
 
