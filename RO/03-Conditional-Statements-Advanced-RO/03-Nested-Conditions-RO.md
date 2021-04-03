@@ -5,11 +5,11 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-13-14-Nested-Conditional-Statements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Destul de des, logica programului necesită utilizarea declarațiilor `if` sau `if-else`, care sunt cuprinse una în alta.
+Destul de des, logica programului necesită utilizarea instrucțiunilor `if` sau `if-else`, care sunt cuprinse una în alta.
 
-Aceste declarații sunt numite declarații **imbricate** `if` sau declarații  `if-else`.
+Aceste instrucțiuni sunt numite instrucțiuni **imbricate** `if` sau instrucțiuni  `if-else`.
 
-După cum sugerează denumirea **„imbricat”**, acestea sunt declarații `if` sau `if-else` care sunt plasate în interiorul altor declarații `if` sau `else`.
+După cum sugerează denumirea **"imbricat"**, acestea sunt instrucțiuni `if` sau `if-else` care sunt plasate în interiorul altor instrucțiuni `if` sau `else`.
 
 ```js
 if (condition1) {
@@ -21,9 +21,9 @@ if (condition1) {
 }
 ```
 
-## Exemplu: Titluri de persoană
+## Exemplu: Personal Titles
 
-În funcție de vârstă (număr zecimal) și sexul (**m** / **f**) al unei persoane, tipăriți un titlu:
+În funcție de vârstă (număr zecimal) și sexul (**m** / **f**) unei persoane, tipăriți un titlu:
 
 - `Mr.`: un bărbat (sex **m**) - 16 ani sau mai mult
 
@@ -33,21 +33,21 @@ if (condition1) {
 
 - `Miss`: o fată (sex **f**) - sub 16 ani
 
-## Soluție: Titluri de persoană
+## Soluție: Personal Titles
 
-Ar trebui să observăm că **ieșire**  programului **depinde de câteva lucruri**.
+Ar trebui să observăm că **ieșirea**  programului **depinde de câteva lucruri**.
 
-**în primul rând**, trebuie să verificăm care este **genul** specificat și apoi **să verificăm vârsta.**
+**În primul rând**, trebuie să verificăm care este **sexul** specificat și apoi **să verificăm vârsta.**
 
 Respectiv, vom folosi **câteva** blocuri `if-else`.
 
-Aceste blocuri vor fi **imbricate**, adică din **rezultatul** primului, vom **defini** care dintre **celelalte** să executăm.
+Aceste blocuri vor fi **imbricate**, adică din **rezultatul** primului, vom **defini** pe care dintre **celelalte** să îl executăm.
 
 Diagrama de mai jos ilustrează procesul în detaliu:
 
 [image assetsSrc="01.Personal-titles-01.jpg" /]
 
-După citirea datelor de intrare de pe consolă, ar trebui executată următoarea logică a programului:
+După citirea datelor de intrare de pe consolă, trebuie executată următoarea logică a programului:
 
 ```js live
 let input = [14, 'm'];
@@ -73,13 +73,13 @@ if (age < 16) {
 
 Imbricarea a **mai mult de trei instrucțiuni condiționale** în interiorul altor instrucțiuni nu este considerată o bună practică.
 
-**Trebuie sa fie evitată**, mai ales prin optimizarea structurii algoritmului codului și sau prin utilizarea unui alt tip de instrucțiune condițională.
+**Aceasta trebuie sa fie evitată**, mai ales prin optimizarea structurii algoritmului codului și/sau prin utilizarea unui alt tip de instrucțiune condițională.
 
 [/slide]
 
 [slide hideTitle]
 
-# Problemă cu Soluția: Marketplace
+# Problemă cu Soluție: Marketplace
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-15-16-Problem-and-Solution-Marketplace-solution-TRIM-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -87,7 +87,7 @@ Imbricarea a **mai mult de trei instrucțiuni condiționale** în interiorul alt
 [code-editor language=javascript]
 ```
 function marketPlace(input) {
-  // Scrieți codul aici
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -107,12 +107,12 @@ Creați un program care:
 
 - Primește un **tip de produs** și o zi de pe consolă
 
-- Imprimă **prețul**, formatat cu două zecimale după virgulă, pe baza tabelului de mai jos
+- Imprimă **prețul**, formatat cu două zecimale după punctul zecimal, pe baza tabelului de mai jos:
 
- | **Produs**      | **Ziua lucratoare**| **Weekend**   |
+ | **Product**      | **Weekday**| **Weekend**   |
 | :---:       |    :----:   |   :---:     |
 | Banana      | 2.50        | 2.70 |
-| Mere        | 1.30        | 1.60    |
+| Apple       | 1.30        | 1.60    |
 | Kiwi        | 2.20        | 3.00    |
 
 
@@ -210,7 +210,7 @@ Creați un program care:
   * Primește **3 numere** de pe consolă
   * Tipărește cel mai mare număr
 
-# Exepmlu
+# Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
 |biggestNumberOfThree(['1', '2', '3'])| 3 |
