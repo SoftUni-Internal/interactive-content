@@ -21,7 +21,7 @@ Dacă nu folosim un IDE, ar trebui să scriem codul într-un **editor de text**,
 
 Pentru programarea cu **JavaScript**, IDE-ul cel mai frecvent utilizat este [Visual Studio Code](https://code.visualstudio.com), care este dezvoltat și distribuit în mod liber de Microsoft.
 
-Unele dintre cele **populare** alternative la Visual Studio Code sunt:
+Unele dintre alternativele **populare** pentru Visual Studio Code sunt:
 
 - [WebStorm](https://www.jetbrains.com/webstorm/download)
 
@@ -35,7 +35,7 @@ Unele dintre cele **populare** alternative la Visual Studio Code sunt:
 
 În acest curs, vom folosi **Visual Studio Code.**
 
-Acesta este un exemplu al modului în care arată acest IDE (Visual Studio Code IDE pentru JavaScript):
+Acesta este un exemplu al modului în care arată Visual Studio Code:
 
 [image assetsSrc = "intro-to-programming-6.png" /]
 
@@ -47,7 +47,7 @@ Acesta este un exemplu al modului în care arată acest IDE (Visual Studio Code 
 
 Avem nevoie de **Node.js**, astfel încât să putem executa cod JavaScript în afara unui browser.
 
-*Runtime JS pe partea de server.
+* Rularea JS pe partea de server.
 
 [image assetsSrc="intro-to-programming-3.png" /]
 
@@ -65,29 +65,27 @@ Instalarea versiunilor ulterioare ale Visual Studio Code ar trebui să fie foart
 
 [Visual Studio Code](https://code.visualstudio.com/download) (VS Code) este distribuit gratuit de Microsoft.
 
-Instalarea este tipică pentru Windows cu `[Next]`, `[Next]` și `[Finish]`.
-
 Următoarele linii descriu în detaliu pașii pentru instalarea Visual Studio Code.
 
-După ce descărcăm fișierul de instalare și îl pornim, apare următorul ecran:
+După ce descărcăm fișierul de instalare și îl pornim, va apărea următorul ecran:
 
 [image assetsSrc="intro-to-programming-install-vscode-1.png" /]
 
-Apăsați butonul `[Next]` și veți vedea ecranul de mai jos:
+Apăsăm butonul `[Next]` și vom vedea ecranul de mai jos:
 
 [image assetsSrc="intro-to-programming-install-vscode-2.png" /]
 
-Puteți alege o locație de destinație sau să o lăsați pe cea implicită. Apoi apăsați din nou butonul `[Next]`.
+Putem alege o locație de destinație sau să o lăsăm pe cea implicită. Apoi apăsăm din nou butonul `[Next]`.
 
 [image assetsSrc="intro-to-programming-install-vscode-3.png" /]
 
 Acum trebuie să specificăm un nume pentru folderul programului care va fi creat în meniul Start.
 
-Următorul pas este să puneți bife în următoarele sarcini:
+Următorul pas este să punem bife pentru următoarele sarcini:
 
 [image assetsSrc="intro-to-programming-install-vscode-4.png" /]
 
-VS este acum gata pentru instalare. Apăsați butonul `[Instalare]`. Practic asta este totul.
+VS este acum gata pentru instalare. Apăsăm butonul `[Install]`. Practic asta este totul.
 
 [image assetsSrc="intro-to-programming-install-vscode-5.png" /]
 
@@ -95,15 +93,15 @@ Instalarea Visual Studio începe și va apărea un ecran ca cel de mai jos:
 
 [image assetsSrc="intro-to-programming-install-vscode-6.png" /]
 
-După instalarea Visual Studio, va apărea un ecran informativ. Apăsați butonul `[Lansare]` pentru a-l porni.
+După instalarea Visual Studio, va apărea un ecran informativ. Apăsați butonul `[Launch]` pentru a-l porni.
 
 [image assetsSrc="intro-to-programming-install-vscode-7.png" /]
 
-La **pornirea VS Code** se afișează vizualizarea principală a Visual Studio Code.
+La **pornirea Visual Studio Code** se afișează vizualizarea principală.
 
 [image assetsSrc="intro-to-programming-install-vscode-8.png" /]
 
-Asta e tot. Sunteți gata să lucrați cu Visual Studio Code.
+Suntem pregătiți să lucrăm cu Visual Studio Code.
 [/slide]
 
 [slide hideTitle]
@@ -111,13 +109,7 @@ Asta e tot. Sunteți gata să lucrați cu Visual Studio Code.
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-23-Development-Environments-Desktop-And-Online-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Instalați Microsoft Visual Studio Code
-
-* [Visual Studio Code](https://code.visualstudio.com/download)
-
-* Puteți utiliza o versiune mai veche, dar nu este recomandat
-
-IDE alternativ (online)
+Dacă nu avem Visual Studio Code instalat, putem utiliza un IDE alternativ (online).
 
 * JavaScript: utilizați direct consola browserului (apăsați tasta `[F12]`)
 
@@ -136,7 +128,7 @@ IDE alternativ (online)
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-25-What-is-Visual-Studio-Code-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Visual Studio Code este un editor de cod sursă deschis.
+Visual Studio Code este un editor de cod cu sursă deschisă.
 
 Poate fi folosit cu limbaje de programare precum: **Java**, **JavaScript**, **Go**, **Node.js** și multe altele.
 
@@ -144,7 +136,7 @@ Visual Studio Code permite utilizatorilor să deschidă unul sau mai multe direc
 
 Acest lucru îi permite să funcționeze ca un editor **cross-language** pentru orice limbaj de programare.
 
-Îl putem **extinde** prin intermediul extensiilor, care sunt disponibile printr-un depozit central.
+Putem căuta și instala **extensii** în cadrul Visual Studio Code.
 
 [/slide]
 
@@ -157,7 +149,7 @@ Visual Studio Code are multe extensii care ne pot face fluxul de lucru mai plăc
 
 - **Beautify**: Beautify formatează fișiere precum HTML. Codul neformatat din aceste fișiere este convertit în cod formatat
 
-Trebuie să activăm această setare în tab-ul preferințe cod VS și va formata automat tot codul.
+Trebuie să activăm această setare în tab-ul de preferințe VS Code și va formata automat tot codul.
 
 - **ESLint**: ESLint analizează codul nostru JavaScript și ne ajută să remediem erorile
 
@@ -176,9 +168,7 @@ Folosim diferite extensii în funcție de tipul de proiect la care lucrăm.
 
 Videoclipul de mai sus arată cum putem configura un proiect de bază.
 
-În primul rând, avem nevoie de un folder gol. 
-
-Apoi, să tragem folderul în Visual Studio Code.
+În primul rând, avem nevoie de un folder gol. Apoi, tragem folderul în Visual Studio Code.
 
 VSC va crea un proiect gol pentru noi.
 
