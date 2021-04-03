@@ -4,7 +4,7 @@
 
 [slide hideTitle]
 
-# Problemă cu soluție: Print Hello "JavaScript"
+# Problemă cu Soluție: Print Hello "JavaScript"
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/problem1-print-hello-javascript_1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -13,16 +13,14 @@
 
 ```
 function hello() {
-   // Scrieți codul dvs. aici
+   // Write your code here
 }
 ```
 
 [/code-editor]
 [task-description]
 
-Creați un program JavaScript, care:
-
-Imprimă "**Hello JavaScript**" pe consolă.
+Creați un program JavaScript care imprimă "**Hello JavaScript**" pe consolă.
 
 [/task-description]
 [code-io /]
@@ -40,7 +38,7 @@ Hello JavaScript
 
 [slide hideTitle]
 
-# Problemă cu soluție: Calculate and Print 5 \* 5
+# Problemă cu Soluție: Calculate and Print 5 \* 5
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/problem2-calculate-and-print-5times5-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -49,15 +47,14 @@ Hello JavaScript
 
 ```
 function calculate() {
-   // Scrieți codul dvs. aici
+   // Write your code here
 }
 ```
 
 [/code-editor]
 [task-description]
 
-Creați un program JavaScript, care:
-
+Creați un program JavaScript care:
 
 * Calculează valoarea "5 \* 5"
 * Imprimă rezultatul
@@ -85,13 +82,13 @@ Creați un program JavaScript, care:
 
 ```
 function nameAndExpression() {
-    // Scrieți codul dvs. aici
+    // Write your code here
 }
 ```
 
 [/code-editor]
 [task-description]
-Creați un program pentru a imprima "**Catlyn**" pe prima linie și calculați și imprimați rezultatul expresiei `5 + 3` pe a doua linie
+Creați un program care imprimă "**Catlyn**" pe prima linie și calculează și imprimă rezultatul expresiei `5 + 3` pe a doua linie.
 [/task-description]
 [code-io /]
 [tests]
@@ -116,7 +113,7 @@ Catlyn
 
 ```
 function calculations() {
-    // Scrieți codul dvs. aici
+    // Write your code here
 }
 ```
 
@@ -153,16 +150,13 @@ Creați un program care calculează și imprimă valoarea următoarelor expresii
 
 ```
 function squareOfStars() {
-    // Scrieți codul dvs. aici
+    // Write your code here
 }
 ```
 
 [/code-editor]
 [task-description]
-Creați un program care:
-
-
-Imprimă un pătrat de stele "7 \* 7" astfel:
+Creați un program care imprimă un pătrat de stele "7 \* 7" astfel:
 
 
 ```
