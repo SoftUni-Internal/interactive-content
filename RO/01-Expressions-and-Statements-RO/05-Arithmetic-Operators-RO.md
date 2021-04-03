@@ -33,7 +33,7 @@ console.log(a - b);
 [/slide]
 
 [slide hideTitle]
-# Înmulțirea Numerelor
+## Înmulțirea Numerelor
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-27-Arithmetic-Operators-Multiplication-Divison-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
