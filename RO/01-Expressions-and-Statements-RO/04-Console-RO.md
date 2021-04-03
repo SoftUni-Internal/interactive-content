@@ -163,7 +163,7 @@ Prefixul `$` înaintea unui șir în JS ne ajută să facem așa-numita **
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-22-Parsing-Numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Pentru a putea citi un **număr** de pe consolă, trebuie să **declarăm o variabilă** și să folosim comanda standard **de citire a unei linii de text** de pe consola de sistem și după aceea,**să convertim acea linie de text într-un număr**, folosind `Number(text)`:
+Pentru a putea citi un **număr** de pe consolă, trebuie să **declarăm o variabilă** și să folosim comanda standard **de citire a unei linii de text** de pe consola de sistem și după aceea, **să convertim acea linie de text într-un număr**, folosind `Number(text)`:
 
 ```js live
 function example(input){
