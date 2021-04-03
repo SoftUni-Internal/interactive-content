@@ -64,7 +64,7 @@ Un program JavaScript este scris sub **formă de text**, iar textul programului 
 
 **Interpretorul** execută codul **direct linie cu linie**.
 
-Scripturile și limbajele interpretate, cum ar fi JavaScript, Python și PHP, își primesc numele datorită faptului că codulurile lor sursă sunt **executate pas cu pas de un interpretor.**
+Scripturile și limbajele interpretate, cum ar fi JavaScript, Python și PHP, își primesc numele datorită faptului că codurile lor sursă sunt **executate pas cu pas de un interpretor.**
 
 Procesul de compilare a codului înainte de executarea acestuia este utilizat doar în limbajele compilate precum C#, Java și C++.
 
