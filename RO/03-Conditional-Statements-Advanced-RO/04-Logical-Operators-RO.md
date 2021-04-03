@@ -6,7 +6,8 @@
 # Condiții mai Complexe
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-19-20-21-Logical Operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Să aruncăm o privire la modul în care putem crea mai multe**condiții logice complexe**în programare.
+Să aruncăm o privire la modul în care putem crea mai multe **condiții logice complexe** în programare.
+
 Putem folosi:
 * Operatorul logic **"ȘI"** (`&&`)
 * Operatorul logic **"SAU"** (`||`)
@@ -36,10 +37,11 @@ Vom explica operatorii logici **"ȘI"** (`&&`), **"SAU"** (`||`) și **"NU"** (`
 # Operatorul Logic "ȘI" 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-22-Logical-and-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-După cum am văzut,în unele probleme trebuie să facem **multe verificări simultan**.
+După cum am văzut, în unele probleme trebuie să facem **multe verificări simultan**.
 
-Ce se întâmplă când trebuie îndeplinite toate condițiile simultan și nu vrem să facem negare (else) pentru fiecare dintre ele?
-Opțiunea cu `if` **imbricate** este validă, dar codul ar părea foarte neordonat și **greu de citit și întreținut**.
+Ce se întâmplă când trebuie îndeplinite toate condițiile simultan și nu vrem să aplicăm o negare (else) pentru fiecare dintre ele?
+
+Opțiunea cu `if` **imbricat** este validă, dar codul ar părea foarte dezordonat și **greu de citit și întreținut**.
 
 Logica **"ȘI"** (operator `&&`) înseamnă că trebuie îndeplinite simultan câteva condiții.
 
@@ -48,18 +50,18 @@ Se aplică următorul tabel al veridicității:
  | **Operandul unu** | **Operandul doi** | **ȘI**   |
 | :---:       |    :----:   |   :---:   |
 | adevărat | adevărat | adevărat |
-| adevărat | false | false |
-| false | adevărat | false |
-| false | false | false |
+| adevărat | fals | fals |
+| fals | adevărat | fals |
+| fals | fals | fals |
 
 ## Cum funcționează operatorul `&&`?
-Operatorul logic `&&` acceptă câteva instrucțiuni booleene (condiționale), care au o valoare adevărata sau falsa și returnează o declarație 'booleană' ca rezultat.
+Operatorul logic `&&` acceptă câteva instrucțiuni booleene (condiționale), care au o valoare adevărata sau falsă și returnează o instrucțiune 'bool' ca rezultat.
 
 Folosindu-l în loc de câteva blocuri imbricate `if`, facem codul **mai lizibil**, **mai ordonat** și **ușor** de întreținut.
 
 Dar cum funcționează atunci când punem câteva condiții una după cealaltă?
 
-Așa cum am văzut mai sus, logica **"ȘI"** returnează true, numai atunci când acceptă ca argumente instrucțiunile cu valori care sunt `adevărate`. 
+Așa cum am văzut mai sus, logica **"ȘI"** returnează true, numai atunci când acceptă ca argumente instrucțiunile cu valori care sunt `true`. 
 
 Respectiv, atunci când avem o **secvență** de argumente, **logica "ȘI"** verifică fie până când nu mai există argumente, fie până când întâlnește un argument cu o valoare `false`.
 
@@ -77,15 +79,15 @@ Programul va rula în modul **următor**:
 
 - Începe verificarea de la `a`, îl citeste și acceptă că are o valoare reală. După aceea verifică `b`
 
-- După ce **a acceptat** că `a` și `b` se schimba in `true`, **el verifică următorul** argument
+- După ce **a acceptat** că `a` și `b` returnează `true`, **el verifică următorul** argument
 
 - Se ajunge la `c` și vede că variabila are o valoare `false`
 
-- După ce programul acceptă că argumentul `c` are o valoare `false`, acesta calculează expresia **înainte de** `c`, **independent** de ce este valoarea lui `d`
+- După ce programul acceptă că argumentul `c` are o valoare `false`, acesta calculează expresia **înainte de** `c`, **independent** de valoarea lui `d`
 
 - De aceea evaluarea lui `d` este **sărita** și întreaga expresie este calculată ca `false`.
 
-## Exemplu: Punct într-un dreptunghi
+## Exemplu: Point in a Rectangle
 
 Verifică dacă `punctul {x, y}` este plasat în interiorul dreptunghiului `{x1, y1} - {x2, y2}`.
 
@@ -93,11 +95,11 @@ Verifică dacă `punctul {x, y}` este plasat în interiorul dreptunghiului `{x1,
 
 Datele de intrare sunt citite de pe consolă și constă din 6 linii:
 
-- Numerele zecimale `x1`, `y1`, `x2`, `y2`, `x` și `y` (deoarece se garantează că `x1 <x2` și `y1 <y2`).
+- Numerele zecimale `x1`, `y1`, `x2`, `y2`, `x` și `y` (deoarece se garantează că `x1 < x2` și `y1 < y2`).
 
 ## Eșantion de intrare și ieșire
 
-  |**Intrare**|**Iesire**|
+  |**Intrare**|**Ieșire**|
 | --- | --- |
 |2|Inside|
 |-3||
@@ -108,13 +110,13 @@ Datele de intrare sunt citite de pe consolă și constă din 6 linii:
 
 ## Soluție
 
-- Punctul este plasat în dreapta din partea stângă a dreptunghiului
+- Punctul este plasat la dreapta față de partea stângă a dreptunghiului
 
-- Punctul este plasat în stânga din partea dreaptă a dreptunghiului
+- Punctul este plasat la stânga față de partea dreaptă a dreptunghiului
 
-- Punctul este plasat în jos din partea superioară a dreptunghiului
+- Punctul este plasat mai jos de partea superioară a dreptunghiului
 
-- Punctul este plasat în sus din partea de jos a dreptunghiului
+- Punctul este plasat mai sus de partea de jos a dreptunghiului
 
 
 ```js live
@@ -143,7 +145,7 @@ if (x >= x1 && x <= x2 && y >= y1 && y <= y2) {
 [code-editor language=javascript]
 ```
 function bonusPoints(input) {
-    // Scrieți codul aici
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -158,7 +160,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care aplică un bonus punctelor date
+Creați un program care aplică un bonus punctelor date:
 
 * Dacă punctele sunt între **0** și **3**, se adaugă **5**
 
@@ -211,9 +213,9 @@ bonusPoints(1)
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-24-25-Logical-or-and-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Logica **OR** (operator `||`) înseamnă că **cel puțin una** dintre câteva condiții este îndeplinită.
+Logica **SAU** (operator `||`) înseamnă că **cel puțin una** dintre câteva condiții este îndeplinită.
 
-Similar cu operatorul `&&`, **OR** logic acceptă câteva argumente de tip **boolean** (condițional) și se schimbă în `true` sau `false`.
+Similar cu operatorul `&&`, operatorul logic **SAU** acceptă câteva argumente de tip **boolean** (condițional) și returnează `true` sau `false`.
 
 Putem afla cu ușurință că **obținem** o valoare `true` de fiecare dată când cel puțin unul dintre argumente are o valoare `true`.
 
@@ -224,18 +226,18 @@ Putem afla cu ușurință că **obținem** o valoare `true` de fiecare dată câ
 | fals | adevărat | adevărat |
 | fals | fals | fals |
 
-La școală, profesorul spune: "Ioan sau Petru ar trebui să curățe tabla". 
+La școală, profesorul spune: "Ioan sau Petru trebuie să curețe tabla". 
 
-Pentru a îndeplini această condiție (pentru a curăța tabla), este posibil fie doar ca Ioan s-o curățe, fie doar ca Petru s-o curățe, sau ambii s-o facă.
+Pentru a îndeplini această condiție (pentru a curăța tabla), este posibil fie doar ca Ioan să o curețe, fie doar ca Petru să o curețe, sau ambii să o facă.
 
 ## Cum funcționează operatorul `||`?
 Am învățat deja ce reprezintă logica **SAU**. Dar cum se realizează de fapt?
 
 La fel ca și în cazul logicii **"ȘI"**, programul verifică de la stânga la dreapta argumentele date.
 
-Pentru a obține `adevărat` din expresie, este necesar să aveți cel puțin un argument cu o valoare `true`.
+Pentru a obține `true` din expresie, este necesar să aveți cel puțin un argument cu o valoare `true`.
 
-Respectiv, verificarea **continuă** până când se îndeplinește un **argument** cu **o astfel de** valoare sau până când argumentele **se termină**.
+Respectiv, verificarea **continuă** până când se întâlnește un **argument** cu **o astfel de** valoare sau până când argumentele **se termină**.
 
 Iată un **exemplu** al operatorului `||` în acțiune:
 
@@ -250,9 +252,9 @@ let result = a || b || c || d;
 console.log(result);
 ```
 
-Programul **verifică** `a`, acceptă că are o valoare`false` și continuă.
+Programul **verifică** `a`, acceptă că are o valoare `false` și continuă.
 
-Ajungând la `b`, înțelege că are o valoare `adevărată` și întreaga **expresie** este calculată ca `adevărată`, fără a fi nevoie de bifat`c` sau `d`, deoarece valorile lor **nu ar fi modificat** rezultatul expresiei.
+Ajungând la `b`, înțelege că are o valoare `true` și întreaga **expresie** este calculată ca `true`, fără a fi nevoie de verificarea lui `c` sau `d`, deoarece valorile lor **nu ar fi modificat** rezultatul expresiei.
 [/slide]
 
 [slide hideTitle]
@@ -277,11 +279,11 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care determină dacă **intrarea** este **mâncare** sau **băutură**:
+Creați un program care determină dacă **intrarea** este **food** sau **drink**:
 
-* Imprimă "**food**" pentru următoarele: **curry**, **noodles**, **sushi** and **spaghetti**
+* Imprimă "**food**" pentru următoarele: **curry**, **noodles**, **sushi** sau **spaghetti**
 
-* Imprimă "**drink**" pentru următoarele: **tea**, **water** and **coffee**
+* Imprimă "**drink**" pentru următoarele: **tea**, **water** sau **coffee**
 
 * Imprimă "**unknown**" pentru orice altceva
 
@@ -345,7 +347,7 @@ Negarea logică (operator `!`) înseamnă că o condiție dată nu este **îndep
 
 Operatorul `!` Acceptă ca **argument** o variabilă booleană și **returnează** valoarea acesteia.
 
-## Exemplu: număr nevalid
+## Exemplu: Invalid Number
 Un număr dat este valid dacă este în intervalul `[100 ... 200]` sau este `0`. 
 
 Faceți o validare pentru un număr nevalid.
@@ -363,7 +365,7 @@ if (!inRange) {
 [/slide]
 
 [slide hideTitle]
-# Operatorul de Paranteză
+# Operatorul Paranteză
 La fel ca și restul operatorilor din programare, operatorii `&&` și `||` au prioritate, ca în acest caz: `&&` are prioritate mai mare decât `||`.
 
 Operatorul `()` servește pentru **modificarea priorității operatorilor** și este calculat mai întâi, la fel ca și în matematică.
