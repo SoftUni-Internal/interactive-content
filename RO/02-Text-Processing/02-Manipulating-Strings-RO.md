@@ -36,6 +36,32 @@ System.out.println(result); // "Hello, SoftUni!"
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/RO/interactive-java-fundamentals-text-processing-9-joining-strings-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
+Metoda Java `String.join(delimiter, elementsToJoin)` este un utilă pentru concatenarea șirurilor, mai ales atunci când aveți mai multe elemente care trebuie separate printr-un delimitator precum un spațiu, o virgulă sau orice alt caracter.
+
+Metoda necesită un delimitator pentru a separa șirurile, dar dacă doriți să le concatenați fără a separa elementele în vreun fel, puteți folosi **""** ca delimitator.
+
+Aici sunt două exemple care ilustrează utilizarea `String.join()` în diferite situații.
+
+Unirea câtorva șiruri, separate print-o virgulă.
+
+```java live
+String sentence = String.join(",", "testing", "one", "two");
+
+System.out.println(sentence);
+
+```
+
+Concatenarea tuturor elementelor dintr-o matrice prin specificarea unui delimitator (separator). Delimitatorul în acest exemplu este un spațiu **" "**:
+
+```java live
+String[] arr = {"This", "is", "a", "String", "array!"};
+
+System.out.println(String.join(" ", arr));
+```
+
+Puteți utiliza `String.join()` cu orice colecție Iterable, precum List, Array, Set, Queue, Stack.
+
+
 [/slide]
 
 [slide hideTitle]
@@ -148,7 +174,7 @@ linearlinearlinearlinearlinearlinear
 
 După cum sugerează numele, `substring` reprezintă doar o **parte** dintr-un `String`.
 
-- `substring (int startIndex)` - Returnează un **șir nou** care conține subșirul din șirul dat, de la **startIndex** specificat (**inclusiv**)
+`substring (int startIndex)` - returnează un **șir nou** care conține subșirul din șirul dat, de la **startIndex** specificat (**inclusiv**)
 
 ```java live
 String text = "My name is John";
@@ -158,7 +184,7 @@ String extractWord = text.substring(11);
 System.out.println(extractWord); // John
 ```
 
-- `substring(int startIndex, int endIndex)` - Returnează un **șir nou** începând de la **startIndex** specificat (inclusiv) până la **endIndex** (exclusiv)
+`substring(int startIndex, int endIndex)` - returnează un **șir nou** începând de la **startIndex** specificat (inclusiv) până la **endIndex** (exclusiv)
 
 ```java live
 String fullName = "John Doe";
@@ -179,7 +205,7 @@ System.out.println(firstName); // John
 
 Este posibilă căutarea primelor sau ultimelor apariții ale unor tipare într-un șir:
 
-- `indexOf()` - Returnează **primul indice potrivit**, dacă nu există **o potrivire** se returnează **-1** 
+`indexOf()` - returnează **primul indice potrivit**, dacă nu există **o potrivire** se returnează **-1** 
 
 ```java live 
 String fruits = "banana, apple, kiwi, banana, apple";
@@ -190,7 +216,7 @@ System.out.println(fruits.indexOf("orange"));    // -1
 
 ```
 
-- `lastIndexOf()` - Găsește ultima apariție
+`lastIndexOf()` - găsește ultima apariție
 
 ```java live
 String fruits = "banana, apple, kiwi, banana, apple";
