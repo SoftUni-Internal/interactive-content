@@ -1,4 +1,4 @@
-# Manipularea Sirurilor
+# Manipularea Șirurilor
 
 [slide hideTitle]
 # Concatenare
@@ -7,9 +7,9 @@
 
 **Concatenarea** în JS se face cu operatorii: `+` și `+ =` sau prin metoda `concat()`.
 
-**Concat** poate fi folosit și pentru **fuzionarea**a două matrice.
+**Concat** poate fi folosit și pentru **fuzionarea** a două matrice.
 
-Ceea ce este specific, este că **nu schimbă șirul original** sau matricea, în schimb returnează unul nou.
+Ceea ce este specific este că **nu schimbă șirul original** sau matricea, în schimb returnează unul nou.
 
 Iată un exemplu despre cum funcționează operatorii `+` și `+=`:
 
@@ -22,7 +22,7 @@ sentence += world
 console.log(sentence)
 ```
 
-Let us see how `concat()` works: 
+Să vedem cum funcționează `concat()`:
 
 ```js live
 let greet = 'Hello, ';
@@ -35,7 +35,7 @@ console.log(concatenated);
 
 În cele din urmă, vedem că ambele moduri vor returna un **șir identic**.
 
-Acest lucru se datorează faptului că `+` și `+=` și metoda `concat()` fac la fel, dar în moduri diferite.
+Acest lucru se datorează faptului că `+`, `+=` și metoda `concat()` fac același lucru, dar în moduri diferite.
 
 [/slide]
 
@@ -46,14 +46,14 @@ Acest lucru se datorează faptului că `+` și `+=` și metoda `concat()` fac la
 
 Pentru a **găsi** un subșir, putem folosi `indexOf()` sau `lastIndexOf()`.
 
-Aceste două metode sunt **sensibile la majuscule**, aceasta înseamnă că, dacă căutăm un cuvânt care include o **literă majusculă și șirul conține versiunea sa cu litere mici**, acestea nu se vor potrivi deloc cu cuvântul și vor da ca rezultat `-1`. 
+Aceste două metode sunt **sensibile la majuscule**, ceea ce înseamnă că dacă căutăm un cuvânt care include o **majusculă și șirul conține versiunea sa cu litere mici**, acestea nu se vor potrivi deloc cu cuvântul și vor da ca rezultat `-1`. 
 
-Ambii pot **lua până la doi parametri:**
+Ambele pot **lua până la doi parametri:**
 
 - Primul este cuvântul pe care îl caută
 - Al doilea este indicele de pornire
 
-Iată un exemplu de utilizare a `indexOf ()`
+Iată un exemplu de utilizare a `indexOf ()`:
 
 ```js live
 let str = 'I love JS a lot';
@@ -61,9 +61,9 @@ let str = 'I love JS a lot';
 console.log(str.indexOf('JS'));
 ```
 
-Aici `indexOf` returnează **7** deoarece acesta este primul index care apare in `JS`.
+Aici `indexOf` returnează **7** deoarece acesta este primul indice la care apare `JS`.
 
-Acum să încercăm cu `js` nu `JS`:
+Acum să încercăm cu `js` în loc de `JS`:
 
 ```js live
 let str = 'I love JS a lot';
@@ -71,11 +71,11 @@ let str = 'I love JS a lot';
 console.log(str.indexOf('js'));
 ```
 
-Acum returnează `-1` deoarece **indexOf** este sensibil la majuscule și minuscule și nu detectează **js** ca **JS**
+Acum returnează `-1` deoarece **indexOf** este sensibil la majuscule și minuscule și nu detectează **js** ca **JS**.
 
 Să verificăm `lastIndexOf()`.
 
-Este aproape la fel ca **indexOf**, dar cu diferența că **lastIndexOf**caută ultima apariție.
+Este aproape la fel ca **indexOf**, dar cu diferența că **lastIndexOf** caută ultima apariție.
 
 Și să vedem cum funcționează:
 
@@ -86,7 +86,7 @@ console.log(str.lastIndexOf('e'));
 console.log(str.lastIndexOf('a'));
 ```
 
-Primul `console.log` returnează **10**, deoarece acesta este indexul în care apare ultima dată **e**.
+Primul `console.log` returnează **10**, deoarece acesta este indicele la care apare ultima dată **e**.
 
 Iar al doilea returnează `-1` pentru că nu găsește nimic.
 
@@ -104,15 +104,15 @@ Această metodă are doi parametri:
 - Primul este indicele de start
 - Al doilea este indicele final
 
-Și va returna partea de la **indexul de început** până la **indexul final**.
+Și va returna partea de la **indicele de început** până la **indicele final**.
 
-Dar dacă nu dăm **al doilea parametru**, acesta va returna partea dintre **indexul de început** și **sfârșitul**.
+Dar dacă nu dăm **al doilea parametru**, acesta va returna partea dintre **indicele de început** și **sfârșitul** șirului.
 
 **Subșirul** nu va modifica șirul original, acesta va returna unul nou.
 
-Aceasta înseamnă că trebuie să o atribuim unei variabile pentru a funcționa.
+Acest lucru înseamnă că trebuie să îl atribuim unei variabile pentru a funcționa.
 
-Aici sunt cateva exemple:
+Aici sunt câteva exemple:
 
 ```js live
 let str = 'Intro to programming';
@@ -124,35 +124,35 @@ console.log(subStrOne);
 console.log(subStrTwo);
 ```
 
-Aici **subStrOne** va reveni **la**, deoarece aceasta este partea care se află în intervalul indexului de început și sfârșit.
+Aici **subStrOne** va returna **to**, deoarece aceasta este partea care se află în intervalul indicelui de început și indicelui de sfârșit.
 
-Dar **subStrTwo** returnează totul de la **la** până la sfârșit.
+Dar **subStrTwo** returnează totul de la **to** până la sfârșit.
 
-Asta pentru că nu i-am dat al doilea parametru, care este indicele **sfârșit**.
+Acest lucru se întâmplă pentru că nu i-am dat al doilea parametru, care este indicele de **sfârșit**.
 
 [/slide]
 
 [slide hideTitle]
-# Operațiuni cu Şiruri
+# Operații cu Şiruri
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/RO/interactive-js-fundamentals-text-processing-11-string-operations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Dacă dorim să schimbăm direct o parte a unui șir, vom folosi `replace()`.
 
-La fel ca `substring()`, `replace()` nu **va modifica** șirul original, va **întoarce unul nou**.
+La fel ca `substring()`, `replace()` nu **va modifica** șirul original, va **returna unul nou**.
 
-Asta înseamnă că trebuie s-o atribuim unei variabile.
+Asta înseamnă că trebuie să îl atribuim unei variabile.
 
-**Înlocuire** este o metodă care necesită doi parametri:
+**Replace** este o metodă care necesită doi parametri:
 
 -  `pattern`
 -  `replacement`
 
-Pentru partea **pattern** putem folosi **Regex** sau **șir**.
+Pentru partea **pattern** putem folosi **o expresie obișnuită** sau un **șir**.
 
 Și pentru **replacement** putem folosi `function()` sau un **șir**.
 
-După ce se potrivește cu acest pettern, își va schimba doar prima apariție.
+După ce se potrivește cu acest tipar, își va schimba doar prima apariție.
 
 Iată un exemplu:
 
@@ -190,9 +190,10 @@ function adapter(input, code) {
 [task-description]
 
 # Descriere
+
 Scrieți o funcție care primește **un șir și două numere.**
 
-Numerele vor fi un indice de pornire și un număr de elemente pentru subșir.
+Numerele vor fi un **indice de pornire** și un **număr de elemente** pentru subșir.
 
 Imprimați rezultatul.
 
@@ -263,15 +264,15 @@ JAko88/(()
 
 Când vrem să separăm cuvintele într-un șir, folosim metoda `split()`.
 
-Împarte un **șir** într-o listă ordonată folosind un model \(separator\), care este primul parametru și returnează o **matrice**.
+Aceasta împarte un **șir** într-o listă ordonată folosind un model \(separator\), care este primul parametru, și returnează o **matrice**.
 
 Avem opțiunea de a adăuga un al doilea parametru, care este **limita**.
 
-Setează **limita** a **indecșilor** în **matricea finală**.
+Acesta setează **limita** **indicilor** în **matricea finală**.
 
-Iată un exemplu despre utilizarea `split()`
+Iată un exemplu pentru utilizarea `split()`:
 
-- separatorul va fi **spațiu**
+- separatorul va fi un **spațiu**
 
 ```js live
 let str = 'I love JS';
@@ -282,18 +283,16 @@ console.log(divided);
 
 ## Găsirea într-un Șir
 
-Pentru a găsi o anumită parte a unui șir, folosim metoda `include()`.
+Pentru a găsi o anumită parte a unui șir, folosim metoda `includes()`.
 
 Această metodă are doi parametri:
 
 - Șirul pe care îl căutăm
-- Poziția în care să începeți căutarea
+- Poziția pe care să începeți căutarea, fiind opțională
 
-.Acesta este opțional
+Aceasta preia **șirul** și îl caută în cel principal.
 
-Preia  **șirul** și îl caută în cel principal.
-
-Este similar cu `indexOf()`, dar dacă îl găsește, această metodă returnează `true` și `false` în cazul invers.
+Este similară cu `indexOf()`, dar dacă îl găsește, această metodă returnează `true` sau `false` în cazul opus.
 
 `includes()` este sensibil la majuscule și minuscule.
 
@@ -308,20 +307,20 @@ console.log(text.includes('js'));
 [/slide]
 
 [slide hideTitle]
-# Repetarea Într-un Șir
+# Repetarea într-un Șir
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/RO/interactive-js-fundamentals-text-processing-15-repeating-strings-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Când vrem să **repetăm** un **șir** în JS, folosim `repeat()`. 
 
-Aceasta ne permite să facem un anumit număr de **copii** ale aceluiși **șir**.
+Acest lucru ne permite să facem un anumit număr de **copii** ale aceluiași **șir**.
 
 Primește doi parametri:
 
 - `string`
 - `count`
 
-După ce este apelat la un anumit **șir**, **repetați** va lua **șirul** pe care l-am dat și îl va **înmulți** cu **numărul** pe care îl trecem la aceasta.
+După ce este apelat pentru un anumit **șir**, **repeat** va lua **șirul** pe care l-am dat și îl va **înmulți** cu **numărul** pe care îl transmitem.
 
 După aceea, va **returna** un **șir concatenat** din toate copiile.
 
@@ -361,7 +360,7 @@ function adapter(input, code) {
 [task-description]
 
 # Descriere
-Scrieți o funcție care primește un text ca prim parametru și un singur cuvânt ca al doilea.
+Scrieți o funcție care primește o propoziție ca prim parametru și un singur cuvânt ca al doilea.
 
 Găsiți toate aparițiile acestui cuvânt în text și **înlocuiți-le** cu numărul corespunzător de "\*".
 
@@ -428,17 +427,17 @@ aaa \*\*\*\*\* a \*\*\*\*\* abv hey abc
 [/slide]
 
 [slide hideTitle]
-# Metoda trim
+# Metoda Trim
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/RO/interactive-js-fundamentals-text-processing-18-trimming-strings-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a **elimina spațiile albe** folosim metoda `trim()`.
 
-**Tăierea** va elimina toate **spațiile albe** dintr-un șir, de la ambele capete.
+**Trim** va elimina toate **spațiile albe** dintr-un șir, de la ambele capete.
 
 De aceea avem `trimStart()` și `trimEnd()`.
 
-Dacă dorim să eliminăm spațiile albe numai la **început** sau **la sfârșit**, putem folosi unul dintre acestea.
+Dacă dorim să eliminăm spațiile albe numai la **început** sau **la sfârșit**, putem folosi una dintre acestea.
 
 Toate aceste trei metode nu afectează valoarea șirului original.
 
@@ -471,29 +470,28 @@ console.log(str.trimEnd());
 [/slide]
 
 [slide hideTitle]
-# Starts With or Ends With
+# Starts With sau Ends With
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/RO/interactive-js-fundamentals-text-processing-19-starts-with-end-with-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-Cu `startsWith()`, putem verifica dacă un șir începe cu un cuvânt specific, că vom trece la metodă ca parametru.
+Cu `startsWith()`, putem verifica dacă un șir începe cu un cuvânt specific, pe care îl vom transmite metodei ca parametru.
 
 **EndsWith** este aproape la fel.
 
 Diferența dintre ele este că `endsWith()` verifică dacă acel șir se termină cu un anumit cuvânt.
 
-Dacă găsesc șirul, vor reveni adevărat și dacă nu - fals.
+Dacă găsesc subșirul, vor returna true sau false în cazul opus.
 
 **StartsWith** poate primi doi parametri:
 
-- Cuvântul căutat în șir
-- Și **poziția** de la care să înceapă indexul. Acest parametru este opțional
+- **Cuvântul** căutat în șir
+- **Poziția** de la care să înceapă indicele
+      - acest parametru este opțional
 
-**EndsWith** poate primi, de asemenea, doi parametri.
+**EndsWith** poate primi de asemenea doi parametri, dar al doilea este **lungimea** și este opțional.
 
-Dar a doua este **lungimea** și este opțională.
-
-Dacă este dat **al doilea parametru**, acesta va spune din ce index să căutați.
+Dacă este dat **al doilea parametru**, acesta va fi utilizat ca indicele de pornire al căutării.
 
 Iată câteva exemple despre modul în care funcționează:
 
@@ -513,7 +511,7 @@ console.log(sentence.endsWith('John'));
 console.log(sentence.endsWith('John', 10));
 ```
 
-În ambele exemple, **console.logs**, va reveni la "**true**", dar în al doilea, va întoarce "**false**", deoarece șirul nu va fi în partea de căutare. 
+În ambele exemple, primul **console.logs** va returna "**true**", dar al doilea va returna "**false**", deoarece șirul nu va fi în partea de căutare. 
 
 [/slide]
 
@@ -523,9 +521,9 @@ console.log(sentence.endsWith('John', 10));
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/RO/interactive-js-fundamentals-text-processing-20-padding-at-the-start-and-end-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-Dacă vrem să **adăugăm** un șir **de un anumit număr de timp** la **începutul** sau **la** sfârșitul al unui alt șir, putem folosi `padStart()` sau `padEnd()` metode.
+Dacă vrem să **adăugăm** un șir **de un anumit număr de ori** la **începutul** sau **la** sfârșitul unui alt șir, putem folosi metodele `padStart()` sau `padEnd()`.
 
-Vor **concatena subșirul**, care este unul dintre cei doi parametrii pe care îi transmitem până când ajung la lungime, care este celălalt parametru pe care i l-am dat.
+Acestea vor **concatena subșirul**, care este unul dintre cei doi parametri pe care îi transmitem, până când ajung la lungime, care este celălalt parametru pe care l-am transmis.
 
 De asemenea, trebuie să le atribuim unei variabile, deoarece **nu vor modifica șirul original.**
 
@@ -538,7 +536,7 @@ let padded = sentence.padStart(2, 'Hi!');
 console.log(padded);
 ```
 
-Aici este un exemplu de `padEnd()`
+Aici este un exemplu de `padEnd()`:
 
 ```js live
 let sentence = 'My name is John';
@@ -550,7 +548,7 @@ console.log(padded);
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Count String Occurrences
+# Problemă cu Soluție: Count String Occurrences
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/RO/interactive-js-fundamentals-text-processing-21-solution-count-string-occurences-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -574,9 +572,9 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Scrieți o funcție care primește o bucată de text și un șir pe care trebuie să le căutați în ea.
+Scrieți o funcție care primește un fragment de text și un șir pe care trebuie să îl căutați în el.
 
-Imprimați toate aparițiile acelui cuvânt în șir.
+Imprimați numărul de apariții ale acelui cuvânt în șir.
 
 ## Exemplu
 |**Intrare**|**Ieșire**|
