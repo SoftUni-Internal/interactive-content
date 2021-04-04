@@ -5,17 +5,17 @@
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/RO/01.JS-Fundamentals-Object-and-Classes-24-25-What-are-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-O **clasă** este ca un **plan** (sau șablon) pentru crearea de **obiecte**.
+O **clasă** este ca un **plan** (sau șablon) pentru crearea **obiectelor**.
 
-Clasele oferă mijloace de **grupare de date și funcționalitate** împreună.
+Clasele oferă mijloace pentru **gruparea de date și funcționalitate** împreună.
 
 Fiecare instanță de clasă poate avea atașate **atribute**.
 
-Instanțele de clasă pot avea, de asemenea, **metode** pentru **modificarea stării sale**, acestea sunt **comportamentul său**.
+O instanță a unei clase poate avea, de asemenea, **metode** pentru **modificarea stării sale**, acestea fiind **comportamentul său**.
 [/slide]
 
 [slide hideTitle]
-# Declarație de clasă
+# Declararea Clasei
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/RO/01.JS-Fundamentals-Object-and-Classes-26-Class-declaration-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -66,7 +66,7 @@ let student = new Student('Peter', 5.50);
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/RO/01.JS-Fundamentals-Object-and-Classes-28-Functions-in-a-class-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Capacitatea de a modifica datele este realizată de funcții speciale care fac parte din clasă și se numesc metode.
+Capacitatea de a modifica date este realizată de funcții speciale care fac parte din clasă și se numesc metode.
 
 Clasele JavaScript acceptă atât metodele **de instanță**, cât și cele **statice**.
 
@@ -74,7 +74,7 @@ Metodele de instanță pot **accesa și modifica** datele instanței.
 
 Metodele de instanță pot apela alte metode de instanță, precum și orice metodă statică.
 
-Metodele statice **se referă la clasa**, mai degrabă decât la o instanță a acesteia.
+Metodele statice **se referă la clasă**, mai degrabă decât la o instanță a acesteia.
 
 Prin urmare, nu au **acces** la datele instanței.
 
@@ -119,15 +119,15 @@ function adapter(input, code) {
 
 # Descriere
 
-Scrieți o funcție care primește o matrice de șiruri în următorul format "\{**cat name**\} \{**age**\}".
+Scrieți o funcție care primește o matrice de șiruri în următorul format: "\{**cat name**\} \{**age**\}".
 
 Creați o clasă Cat care primește în constructor numele și vârsta analizate din intrare.
 
 De asemenea, ar trebui să aibă o funcție numită **meow** care va tipări "\{**cat name**\}**, age** \{**age**\} **says Meow**" pe consolă.
 
-Pentru fiecare dintre șirurile furnizate trebuie să creați un obiect de pisică.
+Pentru fiecare dintre șirurile furnizate trebuie să creați un obiect pisică.
 
-# Exemplul unu
+# Exemplul Unu
   |**Intrare**|**Ieșire** |
 | --- | --- |
 |cats(['Mellow 2', 'Tom 5'])| Mellow, age 2 says Meow|
