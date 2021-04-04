@@ -119,7 +119,7 @@ Timpul de execuție al programului este de aproximativ 1 secundă, mult mai rapi
 
 Mai jos aveți câteva dintre metodele **StringBuilder** și utilitatea cestora:
 
-- `append()` - **Adaugă** o valoare de tip șir **la sfârșitul** secvenței curente de caractere
+`append()` - **Adaugă** o valoare de tip șir **la sfârșitul** secvenței curente de caractere
 
 ```java live
 StringBuilder sb = new StringBuilder();
@@ -131,7 +131,7 @@ sb.append("I sent you an email.");
 System.out.println(sb.toString());
 ```
 
-- `insert(int index, String str)` - **Inserează** un șir la **poziția specificată** a caracterului
+`insert(int index, String str)` - **Inserează** un șir la **poziția specificată** a caracterului
 
 ```java live
 StringBuilder sb = new StringBuilder("Hello Peter, how are you?");
@@ -141,7 +141,7 @@ sb.insert(11, " Smith");
 System.out.println(sb.toString());
 ```
 
-- `length()` - Returnează **lungimea șirului** din tampon
+`length()` - Returnează **lungimea șirului** din tampon
 
 ```java live
 StringBuilder sb = new StringBuilder("Hello Peter, how are you?");
@@ -149,7 +149,7 @@ StringBuilder sb = new StringBuilder("Hello Peter, how are you?");
 System.out.println(sb.length()); // 25
 ```
 
-- `setLength(int newLength)` - Setează **lungimea șirului**. Dacă **newLength** este **mai mică** decât **length()**, **ultimele caractere** din șir sunt **eliminate**
+`setLength(int newLength)` - Setează **lungimea șirului**. Dacă **newLength** este **mai mică** decât **length()**, **ultimele caractere** din șir sunt **eliminate**
 
 ```java live
 StringBuilder sb = new StringBuilder("Hello Peter, how are you?");
@@ -171,7 +171,7 @@ System.out.println(sb.toString()); // Hello Peter, how are you?
 System.out.println(sb.length()); // 28
 ```
 
-- `charAt(int index)` - returnează caracterul de pe indicele curent
+`charAt(int index)` - returnează caracterul de pe indicele curent
 
 ```java live
 StringBuilder sb = new StringBuilder();
@@ -181,7 +181,7 @@ sb.append("Hello Peter, how are you?");
 System.out.println(sb.charAt(1)); // e
 ```
 
-- `replace(int startIndex, int endIndex, String str)` - Înlocuiește caracterele dintr-un subșir
+`replace(int startIndex, int endIndex, String str)` - Înlocuiește caracterele dintr-un subșir
 
 ```java live
 StringBuilder sb = new StringBuilder("Hello Peter, how are you?");
@@ -191,7 +191,7 @@ sb.replace(6, 11, "George");
 System.out.println(sb.toString()); // Hello George, how are you?
 ```
 
-- `toString()` - **convertește** valoarea instanței curente **într-un șir**
+`toString()` - **convertește** valoarea instanței curente **într-un șir**
 
 ```java live
 StringBuilder sb = new StringBuilder("Hello Peter, how are you?");
