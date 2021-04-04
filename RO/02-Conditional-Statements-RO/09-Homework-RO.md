@@ -588,7 +588,7 @@ Valid Triangle
 6
 [/input]
 [output]
-Invalid  Triangle
+Invalid Triangle
 [/output]
 [/test]
 [test]
