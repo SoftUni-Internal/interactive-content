@@ -9,16 +9,16 @@ Obiectul Map conține perechi cheie-valoare și păstrează **ordinea originală
 
 Atât obiectele, cât și valorile primitive pot fi utilizate fie ca cheie, fie ca valoare.
 
-O buclă for-of returnează o matrice de `[key, value]` pentru fiecare iterație, atunci când este utilizată pe un map.
+O buclă for-of returnează o matrice de `[key, value]` pentru fiecare iterație, atunci când este utilizată pe un Map.
 
-Obiectele JavaScript pure sunt ca niște Hărți, deoarece ambele vă permit să:
+Obiectele JavaScript pure sunt ca niște Maps, deoarece ambele vă permit să:
 1. Alocați valori cheilor
 2. Detectați dacă ceva este stocat într-o cheie
 3. Ștergeți cheile
 [/slide]
 
 [slide hideTitle]
-# Adăugarea, Accesarea Elementelor
+# Adăugarea/Accesarea Elementelor
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/RO/02.JS-Fundamentals-Associative-Arrays-22-adding-and-accessing-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -26,7 +26,9 @@ Pentru a adăuga o pereche cheie-valoare, folosiți metoda `.set()`.
 
 În exemplul de mai jos creăm un obiect map, utilizând cuvântul cheie `new Map()`.
 
-Apoi, folosind metoda `.set()` adăugăm o cheie și o valoare al obiectului map. Primul parametru este cheia și al doilea parametru este valoarea.
+Apoi, folosind metoda `.set()` adăugăm o cheie și o valoare obiectului map. 
+
+Primul parametru este cheia și al doilea parametru este valoarea:
 
 ```js live
 let map = new Map();
@@ -35,7 +37,7 @@ map.set(2, 'two');
 console.log(map);
 ```
 
-Pentru a obține valoarea unei chei date utilizați metoda `.get()`.
+Pentru a obține valoarea unei chei date utilizați metoda `.get()`:
 
 ```js live
 let map = new Map();
@@ -44,7 +46,7 @@ map.set(2, 'two');
 console.log(map.get(2));
 ```
 
-Proprietatea accesorului `.size` returnează numărul de elemente dintr-un obiect map.
+Proprietatea accesorului `.size` returnează numărul de elemente dintr-un obiect Map.
 
 
 ```js live
@@ -64,7 +66,7 @@ Pentru a afla dacă un obiect map are o cheie dată, utilizați metoda `.has ()`
 
 Rezultatul trebuie să fie **true** sau **false**, deoarece metoda `.has()` returnează un **boolean**.
 
-În acest caz este **true**
+În acest caz este **true**:
 
 ```js live
 let map = new Map();
@@ -105,7 +107,7 @@ Prin utilizarea iteratorilor, putem returna o matrice care conține perechi `[ke
 
 Pentru a returna o matrice de perechi `[key-value]` utilizați metoda `.entries()` pe un obiect map.
 
-Rezultatul va fi o matrice de matrice `[ [ 1, 'one' ], [ 2, 'two' ] ]`
+Rezultatul va fi o matrice de matrice `[ [ 1, 'one' ], [ 2, 'two' ] ]`.
 
 ```js live
 let map = new Map();
@@ -115,9 +117,9 @@ let entries = Array.from(map.entries());
 console.log(entries);
 ```
 
-Pentru a returna o matrice de matrice utilizați: `.keys()`.
+Pentru a returna o matrice de chei, utilizați: `.keys()`.
 
-Rezultatul va fi după cum urmează `[1, 2]`.
+Rezultatul va fi `[1, 2]`.
 
 ```js live
 let map = new Map();
@@ -145,7 +147,7 @@ console.log(entries);
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/RO/02.JS-Fundamentals-Associative-Arrays-25-iterating-a-map-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Pentru a tipări un obiect map, pur și simplu utilizați o buclă **for-of**
+Pentru a tipări un obiect map, pur și simplu utilizați o buclă **for-of**.
 
 ```js live
 let map = new Map();
@@ -211,13 +213,13 @@ function adapter(input, code) {
 
 Scrieți o funcție care necesită un anumit număr de **articole** și **cantitatea lor**.
 
-Dacă același element apare **de mai multe ori**, **adăugați noua sumă** la **existentă**.
+Dacă același articol apare **de mai multe ori**, **adăugați noua cantitate** la cea **existentă**.
 
 La final tipăriți toate articolele și suma acestora fără a le sorta.
 
 Intrarea vine ca o **matrice de șiruri**.
 
-Folosiți o methodă `Map()`.
+Folosiți o metodă `Map()`.
 
 ## Exemplu
 
@@ -296,7 +298,7 @@ coknfee \-\> 350
 [/slide]
 
 [slide hideTitle]
-# Sortare Map
+# Sortarea Map
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/RO/02.JS-Fundamentals-Associative-Arrays-28-map-sorting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -304,7 +306,9 @@ Pentru a **sorta** un obiect Map, transformați-l mai întâi într-o **matrice*
 
 Aici avem o funcție de comparare care definește ordinea de sortare.
 
-Primul element este `a[1]` și al doilea element este `b[1]`. Apoi, elementele sunt comparate.
+Primul element este `a[1]` și al doilea element este `b[1]`.
+
+Apoi, elementele sunt comparate.
 
 Dacă folosim `a[1] - b[1]` vom sorta în ordine crescătoare.
 
@@ -358,13 +362,13 @@ function adapter(input, code) {
 
 # Descriere
 
-Scrieți o funcție care stochează elevii cu toate notele.
+Scrieți o funcție care stochează elevii cu toate notele acestora.
 
 Dacă un elev apare de mai multe ori, adăugați noile note.
 
 La final, tipăriți elevii sortați după nota medie.
 
-Rezultatul vine ca o **matrice de șiruri**.
+Rezultatul este reprezentat de o **matrice de șiruri**.
 
 ## Exemplu
 
