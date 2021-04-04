@@ -30,7 +30,7 @@ let person = {
 person.sayHello();
 ```
 
-- Iterarea obiectelor
+- Iterațiile obiectelor
 
 ``` js live
 let person = {
@@ -44,7 +44,7 @@ for (let key in person) {
 }
 
 ```
-- Diferența dintre tiurile de valori și tipurile de referință
+- Diferența dintre tipurile de valori și tipurile de referință
 
 - Prezentare generală a fișierelor JSON 
 ``` js
@@ -59,8 +59,8 @@ for (let key in person) {
 }
 ```
 
--  `parse` și `stringify` sunt metode JavaScript incorporate
-  - sunt folosite pentru convertirea JSON într-un obiect și invers
+- `parse` și `stringify` sunt metode JavaScript încorporate
+    - sunt folosite pentru convertirea JSON într-un obiect și invers
   
 ```js live
 let car = '{"Car":"Nio","Model": "EP9","Colour":"Blue"}';  
@@ -80,11 +80,11 @@ class Student {
 }
 ```
 
-## În lecția următoare, veți învăța:
+## În lecția următoare veți învăța:
 
-- Map-uri
+- Maps
 
-- Metode de mapare
+- Metode Map
 
 - Expresii Lambda
  
