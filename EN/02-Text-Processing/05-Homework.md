@@ -21,7 +21,7 @@ Create a program that receives few usernames on a single line, separated by a co
 
 A **valid username**:
 - Has a **length between 3 and 16 characters**
-- Contains **only letters, numbers, hyphens and underscores**
+- Contains **only letters, numbers, hyphens, and underscores**
 - Has **no redundant symbols** before, after, or in-between.
 
 ### Example
@@ -426,9 +426,9 @@ public class Main {
 ## Description
 You will receive **two** lines of input. 
 
-- On the first line, you can receive a really big number in range \[0-1050\]
+- On the first line, you can receive a really big number in the range \[0-1050\]
 
-- On the second line, you will receive a single digit in range \[0-9\]
+- On the second line, you will receive a single digit in the range \[0-9\]
 
 Your task is to calculate the product of these numbers and to print it out.
 
@@ -644,7 +644,7 @@ When all characters are processed, **print out the remaining string** (without t
 You **should not delete the "\>" characters**, but you **should delete the integers that represent the powers of the explosions**
 
 ### Input
-You will receive a single line of input that will contain a **string** .
+You will receive a single line of input that will contain a **String**.
 
 ### Output
 Print out the resulting **string** after all explosions.
@@ -673,7 +673,7 @@ At this point, the string looks like this: abv\>\>\>\>2asdasd.
 
 The fourth explosion has a power of 2. 
 
-We have a power of 1 left from the previous explosion and we add the power of the current explosion, so that we have a total power of 3. 
+We have a power of 1 left from the previous explosion and we add the power of the current explosion so that we have a total power of 3. 
 
 We delete the next three characters.
 
@@ -774,7 +774,7 @@ Then you **move to the letter after the number**.
 
 - If it is **lowercase**, you should add the position of the letter in the alphabet to the resulting number
 
-The game became too easy for John really quick. 
+The game became too easy for John. 
 
 He decided to complicate it a bit by doing the same, but with multiple strings, keeping track **only of the total sum of all results**. 
 
@@ -802,7 +802,7 @@ We do the same for the **second string**.
 
 Then we move to the letter after the number. 
 
-**G** is uppercase and its position in the alphabet is **7**. We substract **7** from the resulting number (323 – 7 = 316).
+**G** is uppercase and its position in the alphabet is **7**. We subtract **7** from the resulting number (323 – 7 = 316).
 
 Finally, we **sum the results** (14 + 316 = 330).
 
