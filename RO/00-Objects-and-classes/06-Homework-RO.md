@@ -127,9 +127,9 @@ function adapter(input, code) {
 
 Vi se cere să creați și să imprimați obiecte dintr-un tabel text.
 
-Veți primi intrarea ca o matrice de șiruri, în care fiecare șir reprezintă un rând de tabel, cu valori pe rând separate de bare verticale " \| " și spații.
+Veți primi intrarea ca o matrice de șiruri, în care fiecare șir reprezintă un rând de tabel, cu valorile de pe rând separate de bare verticale " \| " și spații.
 
-Tabelul va consta din exact 3 coloane "**Town**", "**Latitude**" și "**Longitude**". 
+Tabelul va consta din exact 3 coloane: "**Town**", "**Latitude**" și "**Longitude**". 
 
 Coloanele de latitudine și longitudine vor conține întotdeauna numere valide.
 
@@ -137,7 +137,7 @@ Consultați exemplele pentru a înțelege mai bine sarcina dvs.
 
 Ieșirea trebuie să fie obiectele.
 
-Latitudinea și longitudinea trebuie analizate la numere și formatate la a doua zecimală!
+Latitudinea și longitudinea trebuie parsate la numere și formatate la a doua zecimală.
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -239,8 +239,7 @@ Scrieți o funcție care stochează informații despre filme într-o matrice.
 
 Informațiile despre obiectul filmelor trebuie să fie numele, regizorul și data. Puteți primi mai multe tipuri de intrări:
 
-* "**addMovie** \{**movie name**\}": adaugă filmul
-
+* "**addMovie** \{**movie name**\}": adăugați filmul
 * "\{**movie name**\} **directedBy** \{**director**\}": verificați dacă filmul există și apoi adăugați regizorul
 * "\{**movie name**\} **onDate** \{**date**\}": verificați dacă filmul există și apoi adăugați data
 
@@ -340,7 +339,7 @@ function adapter(input, code) {
 
 # Descriere
 
-Creați o funcție care creează un registru pentru eroi, cu numele, nivelul și obiectele lor (dacă au astfel).
+Creați o funcție care creează un registru pentru eroi, cu numele, nivelul și articolele lor (dacă acestea există).
 
 Intrarea vine ca o serie de șiruri. Fiecare element conține date pentru un erou, în următorul format:
 
@@ -350,7 +349,7 @@ Trebuie să stocați datele despre fiecare erou.
 
 Numele este un șir, nivelul este un număr, iar articolele sunt toate șiruri.
 
-Ieșirea este toate datele pentru toți eroii pe care i-ați stocat sortați crescător după nivel, elementele sunt sortate alfabetic.
+Ieșirea este reprezentată de toate datele pentru toți eroii pe care i-ați stocat, sortați crescător după nivel, articolele fiind sortate alfabetic.
 
 Datele trebuie să fie în următorul format pentru fiecare erou:
 
@@ -508,9 +507,9 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Veți primi o matrice care conține șiruri sub formă de JSON
+Veți primi o matrice care conține șiruri în format JSON.
 
-Trebuie să analizați aceste șiruri și **să le combinați într-un singur obiect.**
+Trebuie să parsați aceste șiruri și **să le combinați într-un singur obiect.**
 
 Fiecare șir din matrice va conține termenii descrierilor lor.
 
@@ -520,7 +519,7 @@ Imprimați fiecare **termen și definiție** din dicționar pe o nouă linie în
 
 "**Term:** $\{**term**\} \=\> **Definition:** $\{**definition**\}"
 
-Nu uitați să sortați conținutul **alfabetic** după termenii ca în dicționarele reale.
+Nu uitați să sortați conținutul **alfabetic** după termeni ca în dicționarele reale.
 
 # Exemplu
 
@@ -627,7 +626,7 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Definiți o clasă Song, care conține următoarele informații despre melodii: tip Listă, nume și durată.
+Definiți o clasă Song, care conține următoarele informații despre melodii: typeList, nume și durată.
 
 Veți primi intrarea sub formă de matrice.
 
@@ -635,7 +634,7 @@ Primul element "**n**" va fi numărul de melodii.
 
 Următoarele "**n**" elemente vor fi datele melodiilor în următorul format: 
 
-"\{**typeList**\}\_\{**name**\}\_\{**time**\}", iar ultimul element va fi Listă de tipuri \/ "**all**".
+"\{**typeList**\}\_\{**name**\}\_\{**time**\}", iar ultimul element va fi Lista de tipuri\/ "**all**".
 
 Imprimați doar numele melodiilor care apar din acea Listă de tipuri \/ Toate melodiile.
 
