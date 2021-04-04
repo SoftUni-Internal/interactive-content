@@ -47,7 +47,7 @@ Acesta este un exemplu al modului în care arată Visual Studio Code:
 
 Avem nevoie de **Node.js**, astfel încât să putem executa cod JavaScript în afara unui browser.
 
-* Rularea JS pe partea de server
+* Runtime JS pe partea de server
 
 [image assetsSrc="intro-to-programming-3.png" /]
 
