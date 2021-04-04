@@ -33,15 +33,15 @@ console.log(`Variable b = ${d}`);
 
 Există **trei tipuri comune de date de referință** - **Obiecte**, **Matrice** și **Funcții**.
 
-**Obiectele** și**matricele** sunt "colecții" - o modalitate de a grupa mai multe puncte de date într-un singur pachet pe care îl putem transmite folosind accesul.
+**Obiectele** și **matricele** sunt "colecții" - o modalitate de a grupa mai multe puncte de date într-un singur pachet pe care îl putem transmite pentru a asigura un acces mai simplu.
 
-**Funcțiile** sunt, de asemenea, obiecte, un tip special de obiecte numite: **obiecte funcționale.**
+**Funcțiile** sunt un tip special de obiecte numite **obiecte funcționale.**
 
 Ele pot fi **invocate de câte ori avem nevoie.**
 
-Toate acestea sunt **Obiecte tehnice**, deci ne vom referi la ele în viitor în mod colectiv ca Obiecte.
+Toate acestea sunt **tehnic Obiecte**, deci ne vom referi la ele în acest mod în viitor.
 
-Variabilelor cărora li se atribuie o valoare neprimitivă li se oferă o referință pentru acea valoare.
+Variabilelor cărora li se atribuie o valoare neprimitivă li se oferă o **referință** pentru acea valoare:
 
 ``` js live
 let array = ['a', 'b', 'c', 'd'];
@@ -58,14 +58,14 @@ console.log(`Second array value: ${array2}`);
 
 În acest exemplu creăm o matrice, numită `arrayOne` căreia îi atribuim valori.
 
-Această valoare este stocată în memoria și atașarea doar a referinței,însa este atașată si variabilei.
+Această valoare este stocată în memorie și doar referința îi este atribuită variabilei.
 
 Când atribuim `arrayOne` celei de-a doua variabile `arrayTwo`, creăm o copie a referinței care indică memoria.
 
 Din acest motiv, atunci când înregistrăm amândouă, obținem același rezultat `['a', 'b', 'c', 'd']`. 
  
-Când adăugăm șirul `e` la matrice apelând `array.push('e')` modificăm valoarea stocată în memorie.
+Când adăugăm șirul `e` la matrice apelând `array.push('e')` modificăm **valoarea** stocată în memorie.
  
-Deoarece `arrayTwo` este doar o copie a punctului de referință la aceeași valoare, obținem același rezultat atunci când `console.log` ambele variabile. 
+Deoarece `arrayTwo` este doar o copie a punctului de **referință** către aceeași valoare, obținem același rezultat atunci când folosim `console.log` pentru ambele variabile. 
 
 [/slide]
