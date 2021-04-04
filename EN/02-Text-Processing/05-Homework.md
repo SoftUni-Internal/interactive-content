@@ -17,7 +17,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that receives few usernames on a single line, separated by a comma and a white space (", "), and **prints all valid usernames**.
+Create a program that receives usernames on a single line, separated by a comma and a white space (", "), and **prints all valid usernames**.
 
 A **valid username**:
 - Has a **length between 3 and 16 characters**
@@ -430,9 +430,7 @@ You will receive **two** lines of input.
 
 - On the second line, you will receive a single digit in the range \[0-9\]
 
-Your task is to calculate the product of these numbers and to print it out.
-
-**Note**: **do not** use the BigInteger class.
+Your task is to calculate the product of these numbers and to print it to the console **without using the BigInteger class**.
 
 ### Example
 | **Input** | **Output** |
@@ -443,7 +441,7 @@ Your task is to calculate the product of these numbers and to print it out.
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 923847238931983192462832102 | 3695388955727932769851328408 | 
+| 214748364711 | 858993458844 | 
 | 4 | |
 
 [/task-description]
@@ -460,11 +458,11 @@ Your task is to calculate the product of these numbers and to print it out.
 [/test]
 [test open]
 [input]
-923847238931983192462832102
+214748364711
 4
 [/input]
 [output]
-3695388955727932769851328408
+858993458844
 [/output]
 [/test]
 [test]
@@ -541,7 +539,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that receives a **string** as input and replaces any sequence of the same letters with a **single corresponding letter**.
+Create a program that receives a **String** as input and replaces any sequence of the same letters with a **single corresponding letter**.
 
 
 ### Example
