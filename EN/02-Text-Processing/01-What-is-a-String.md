@@ -68,7 +68,7 @@ Strings are reference data types and as such the **movieTitle** variable will co
 
 When you initialize a new String variable and assign some value to it, Java will create a String object and store it in a memory location, and only the reference to that location will be stored in your variable.
 
-When you assign a new value to the same String variable, a new String object will be created and its location assigned as a value to your variable.
+When you assign a new value to the same String variable, a new String object will be created and its memory location will be assigned as a value to your variable.
 
 To summarize:
 - The String object that is created is immutable (read-only)
