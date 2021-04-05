@@ -6,11 +6,11 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-28-29-abstract-class-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Abstract classes in Java are similar to **interfaces**, except they can contain default method implementation.
+Abstract classes in Java are similar to **interfaces**, except they may contain default a method implementation.
 
-They cannot be **instantiated** because we **cannot create** objects of abstract classes.
+They cannot be **instantiated**, because we **cannot create** objects of abstract classes.
 
-Our abstract class can have both **abstract** and **regular** methods.
+An abstract class can have both **abstract** and **regular** methods.
 
 ``` java
 abstract class Animal {
@@ -21,13 +21,13 @@ abstract class Animal {
 }
 ```
 
-From this example, we see that it is impossible to create an object from the Animal class.
+We cannot create an object from the Animal class in this example:
 
 ``` java
 Animal obj = new Animal(); // This will generate an error
 ```
 
-To access the abstract class, we must create another one and inherit it from there.
+To access the abstract class, it must be inherited by another one.
 
 ``` java
 // This is a subclass (inherited from Animal)
@@ -56,13 +56,11 @@ class Main {
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-30-abstract-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Let us continue with **abstract methods**.
-
-**Abstract** methods in their nature are methods that do not have a body.
+**Abstract** methods are methods that do not have a body.
 
 It is important to remember that if our class **contains** an abstract method, we must declare it as an **abstract** class.
 
-Otherwise, it will generate an error.
+Otherwise, we will get an error.
 
 ``` java
 // class should be abstract
@@ -74,7 +72,7 @@ class Device {
 
 As we already know, **abstract** classes **cannot be** instantiated, but we can create `subclasses` from them.
 
-After that, we can **access** members of our abstract class using the subclass's object.
+After that, we can **access** members of our abstract class using a subclass object.
 
 ``` java
 abstract class Device {
@@ -100,21 +98,21 @@ class Main extends Device {
 }
 ```
 
-The **output** will be:
+The **output** here will be:
 
 ```
 Calling...
 ```
 
-In the above example, we have created an abstract class named `Device`. 
+In the example above, we create an abstract class called `Device`. 
 
-Our class contains a regular method `call`.
+This class contains a regular method called `call`.
 
-Then, we have created the `Main` class, which inherits the **abstract class**.
+Then, we place a `Main` class, which inherits the **abstract class**.
 
-`obj` is the object of the child class `Main`. 
+we instantiate `obj` which is an object of the child class called `Main`. 
 
-We called the method of the abstract class using our object `obj`.
+We call a method of the abstract class, using our object (`obj`).
 
 [/slide]
 
@@ -128,7 +126,7 @@ We called the method of the abstract class using our object `obj`.
 
 [task-description]
 # Description
-It is the future - you are the ruler of a totalitarian dystopian society inhabited by **citizens** and **robots**.
+In the future - you are the ruler of a totalitarian dystopian society inhabited by **citizens** and **robots**.
 
 Since you are afraid of rebellions, you decide to implement strict control of who enters your city. 
 
@@ -136,18 +134,18 @@ Your soldiers check the **Ids** of everyone who enters and leaves.
 
 You will receive an **unknown** amount of lines from the console.
 
-Until the command "**End**" is received, on each line there will be the information for either **a citizen** or **a robot** who tries to enter your city, in the format:
+Until the command "**End**" is received, on each line there will be information on either **a citizen** or **a robot** who wants to enter your city, the information comes in the following format:
 
 - "\{**name**\} \{**age**\} \{**id**\}" for citizens 
 - "\{**model**\} \{**id**\}" for robots
 
-After the "**End**" command, on the next line you will receive a single number representing **the last digits of fake ids**.
+After the "**End**" command is met, on the next line you will receive a single number representing **the last digits of all fake ids**.
 
-Аll citizens or robots whose **Id** ends with the specified digits must be detained.
+Аll citizens or robots whose **Id** ends in the specified digits must be detained.
 
 The output should consist of all detained **Ids**, each on a separate line.
 
-The order of printing does not matter.
+The output oder is not taken into consideration.
 
 [image assetsSrc="interfaces-and-abstraction-example(9).png" /]
 
