@@ -4744,13 +4744,13 @@ The **MyListImpl** collection should have:
 - A **remove()** method which removes the **first** element in the collection
 - A **used** field which displays the size of elements currently in the collection
 
-Create interfaces which define the collections functionality, think how to model the relations between interfaces to reuse code. 
+Create interfaces which define the collections functionality, try to model the relations between interfaces to reuse code. 
 
-Add an extra bit of functionality to the methods in the custom collections, **add** methods should return the index in which the item was added, **remove** methods should return the item that was removed.
+Add an extra bit of functionality to the methods in the custom collections, **add** methods should return the index to which the item was added, **remove** methods should return the item that was removed.
 
-Your task is to create a single copy of your collections, after which on the first input line you will receive a random amount of strings in a single line separated by spaces - the elements you have to add to each of your collections. 
+Your task is to create a single copy of your collections, after which on the first input line you will receive a random amount of strings on a single line separated by spaces - the elements you have to add to each of your collections. 
 
-For each of your collections, write a single line in the output that holds the results of all **add operations** separated by spaces (check the examples to better understand the format). 
+For each of your collections, write a single line of output that holds the results of all **add operations** separated by spaces (check the examples to better understand the format). 
 
 On the second input line you will receive a single number - the amount of **remove operations** you have to call on each collection. 
 
@@ -4759,7 +4759,7 @@ In the same manner as with the add operations for each collection (except the Ad
 [image assetsSrc="interfaces-and-abstraction-example(16).png" /]
 
 ## Input
-The input comes from the console. It will hold two lines:
+The input comes on two lines:
 - The first line will contain a random amount of strings separated by spaces - the elements you have to **add** to each of your collections
 - The second line will contain a single number \- the amount of **remove** operations
 
@@ -5196,7 +5196,73 @@ public class T14TestMyListRemoveMethod \{
             Assert.assertTrue(WRONG_RESULT,
                     assertMethodWorksCorrect(method, cl));
         \}
+2818
+
+        assertConstructors(classNames);
+
+2819
+
     \}
+
+2820
+
+​
+
+2821
+
+    private void assertConstructors(String\[\] classNames) throws NoSuchMethodException \{
+
+2822
+
+        for (String className : classNames) \{
+
+2823
+
+            assertConstructorExists(className);
+
+2824
+
+        \}
+
+2825
+
+    \}
+
+2826
+
+​
+
+2827
+
+    private void assertConstructorExists(String className) throws NoSuchMethodException \{
+
+2828
+
+        Class cl = Classes.allClasses.get(className);
+
+2829
+
+​
+
+2830
+
+        Constructor constructor = null;
+
+2831
+
+​
+
+2832
+
+        try \{
+
+2833
+
+            constructor = cl.getDeclaredConstructor(constructorParameters.get(className));
+
+2834
+
+        \} catch (Exception e) \{    \}
 
     private boolean assertMethodWorksCorrect(Method method, Class cl) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, NoSuchFieldException \{
         return correctBehaviour(method, cl);
