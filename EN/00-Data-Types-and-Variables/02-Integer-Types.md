@@ -21,6 +21,8 @@ Choosing which one to use depends on the numeric value it will need to store.
 [slide hideTitle]
 # Example: Centuries
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-14-examples-centuries-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 We should choose different integer types according to their value.
 
 ```java live
@@ -36,7 +38,7 @@ System.out.printf("%d centuries = %d years = %d days = %d hours.",
 
 We can use different integer types depending on what we want to store in them. 
 
-- The *byte** data type can be used to store whole numbers from -128 to 127
+- The **byte** data type can be used to store whole numbers from -128 to 127
 
 **Byte** is used to save memory when you are certain that its value will not exceed these limits: -128 to 127:
 
