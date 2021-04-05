@@ -93,7 +93,7 @@ calculateArea(1)
 [slide hideTitle]
 # Problemă cu Soluție: Currency Converter
 
-[video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/problem2-currency-converter-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/problem2-currency-converter-solution-TRIM-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Currency Converter" taskId="pb-js-expressions-Currency-Converted" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language="javascript"]
@@ -268,7 +268,7 @@ areaOfTriangle(3.1416)
 [slide hideTitle]
 # Problemă cu Soluție: Days to Minutes
 
-[video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/problem1-days-to-minutes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/problem1-days-to-minutes-solution-TRIM-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Days to Minutes" taskId="pb-js-expressions-Days-to-Minutes" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language="javascript"]
