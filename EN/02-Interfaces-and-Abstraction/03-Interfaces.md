@@ -1604,7 +1604,7 @@ public interface Car {
 }
 ```
 
-If we want to calculate the numebr of **horsepowers** of our car's engine, we just call our `getHorsePower()` method.
+If we want to calculate the **horsepower** of our car's engine, we just call our `getHorsePower()` method.
 
 ``` java
 Vehicle.getHorsePower(480, 2500));
