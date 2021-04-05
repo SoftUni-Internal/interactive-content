@@ -53,11 +53,11 @@ An object is considered to be **immutable** if its state cannot be altered after
 This is also true for Strings in Java which are **immutable** but this does not mean that we cannot assign new values to String variables:
 
 ```java live
-String movieTitle = "101 Dalmatians"
+String movieTitle = "101 Dalmatians";
 
 System.out.println(movieTitle);
 
-movieTitle = "The Last Samurai"
+movieTitle = "The Last Samurai";
 
 System.out.println(movieTitle);
 ```
