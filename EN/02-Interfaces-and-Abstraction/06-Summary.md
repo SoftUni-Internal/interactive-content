@@ -7,7 +7,7 @@
 
 - Inheritance and interfaces
 
-- How to achieve abstraction
+- How to use abstraction
 
 - What interfaces are
 
@@ -69,8 +69,8 @@ class Main extends Device {
 ## In the next lesson you will learn:
 
 - Polymorphism
-    * the concept behind it
-    * how to achieve polymorphism
+    * the concept of polymorphism
+    * how to use polymorphism
 
 
 
