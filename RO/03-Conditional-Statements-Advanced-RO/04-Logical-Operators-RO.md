@@ -209,7 +209,7 @@ bonusPoints(1)
 [slide hideTitle]
 # Operator Logic "SAU" 
 
-[video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-24-25-Logical-or-and-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-24-25-Logical-or-and-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Logica **OR** (operator `||`) înseamnă că **cel puțin una** dintre câteva condiții este îndeplinită.
 
