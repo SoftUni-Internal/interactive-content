@@ -22,9 +22,9 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program pentru a verifica dacă **intrarea** reprezintă fructe sau legumele:
+Creați un program pentru a verifica dacă **intrarea** este **fruit** sau **vegetable**:
 
-* Veți primi o singură linie de intrare: un articol din legume
+* Veți primi o singură linie de intrare: un articol de la aprozar
 * Imprimă "**fruit**" pentru următoarele: **banana**, **apple**, **kiwi**, **cherry**, **lemon**, **grapes**
 * Imprimă "**vegetable**" pentru următoarele: **cucumber**, **pepper**, **carrot**, **onion**
 * Imprimă "**unknown**" pentru orice altceva
@@ -248,10 +248,10 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program pentru a verifica dacă o  anumită literă  este o vocală sau o consoană:
+Creați un program pentru a verifica dacă o anumită literă este o vocală sau o consoană:
 
-* Veți primi **literă** din alfabetul englez
-* Imprimați  "**Vowel**" sau "**Consonant**"
+* Veți primi o **literă** din alfabetul englez
+* Imprimați "**Vowel**" sau "**Consonant**"
 
 
 # Exemplu
@@ -262,7 +262,7 @@ Creați un program pentru a verifica dacă o  anumită literă  este o vocală s
 
 [hints]
 [hint]
-Puteți folosi o instrucțiune "if" pentru a verifca dacă litera respectivă este o vocală. În cazul în care este, imprimați ieșirea corectă.Dacă nu este, introduceți instrucțiunea "else" și imprimați rezultatul corespunzător.
+Puteți folosi o instrucțiune "if" pentru a verifca dacă litera respectivă este o vocală. În cazul în care este, imprimați ieșirea corectă. Dacă nu este, introduceți instrucțiunea "else" și imprimați rezultatul corespunzător.
 [/hint]
 [/hints]
 
@@ -323,7 +323,7 @@ Vowel
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Product of 3 Numbers
+# Problemă cu Soluție: Product of 3 Numbers
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/problem1-product-of-3-numbers-solution-TRIM-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Product of 3 Numbers" taskId="pb-js-Conditions-Advanced-Product-of-3-numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -345,12 +345,12 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care determina semnul produsului de 3 numere:
+Creați un program care determină semnul produsului a 3 numere:
 
 * Veți primi **3 numere în virgulă mobilă** ca matrice
 * Imprimați **semnul** produsului celor 3 numere introduse: "**positive**", "**negative**" sau "**zero**"
 
-Încercați să faceți acest lucru **fără a înmulți** cele 3 numere
+Încercați să faceți acest lucru **fără a înmulți** cele 3 numere.
 
 # Exemplu
   | **Intrare** | **Ieșire** |
@@ -423,7 +423,7 @@ zero
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Sorted Numbers
+# Problemă cu Soluție: Sorted Numbers
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/problem2-sorted-numbers-solution-TRIM-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sorted Numbers" taskId="pb-js-Conditions-Advanced-Sorted-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -445,11 +445,11 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program, care verifică dacă  **anumite numere** sunt sortate:
+Creați un program care verifică dacă **anumite numere** sunt sortate:
 
 * Veți primi 3 numere în virgulă mobilă
-* Tipăriți "**Ascending**", dacă numerele sunt în ordine crescătoare
-* Tipăriți "**Descending**", dacă numerele sunt în ordine descrescătoare
+* Tipăriți "**Ascending**" dacă numerele sunt în ordine crescătoare
+* Tipăriți "**Descending**" dacă numerele sunt în ordine descrescătoare
 * Imprimați "**Not sorted**" în orice alt caz
 
 
@@ -552,10 +552,10 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program, care calculează cheltuielile de vacanță:
+Creați un program care calculează cheltuielile de vacanță:
 
-* Veți primi sezonul, tipul de cazare și  numărul de zile
-* Imprimați **cheltuielile** totale pe baza tabelului de prețuri de mai jos, formatat la **a doua cifră** după punctul zecimal
+* Veți primi sezonul, tipul de cazare și numărul de zile
+* Imprimați **cheltuielile** totale pe baza tabelului de prețuri de mai jos, formatând rezultatul la **a doua cifră** după punctul zecimal
 
 
  | Season   | Hotel | Camping   | Discount|
@@ -654,11 +654,11 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Description
-Creați un program care imprimă **prețul** pentru toate biletele pentru un film cinematografic:
+# Descriere
+Creați un program care imprimă **prețul** tuturor biletelor pentru un film cinematografic:
 
 * Veți primi **tipul filmului**, **rândurile** și **locurile pe rând** din cinematograf
-* Imprimați **prețul total** pentru toate locurile **formatate** la a doua cifră după punctul zecimal
+* Imprimați **prețul total** pentru toate locurile, **formatat** la a doua cifră după punctul zecimal
 
 
   | **Type** | **Price** |
@@ -863,10 +863,10 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program pentru a aplica un operator pentru două numere date:
+Creați un program care aplică un operator pentru două numere date:
 
-* Veți primi doi numere întregi și operatorul artimetic de pe consolă
-* Operatorul aritmetic ar putea fi: \+, \-, \/, \% și \*
+* Veți primi două numere întregi și operatorul aritmetic de pe consolă
+* Operatorul aritmetic poate fi: \+, \-, \/, \% și \*
 * Rezultatul trebuie să fie în următorul **format**: `{N1} {operator} {N2} = {result}`
 
 # Exemplu
@@ -959,7 +959,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program pentru a simula o retragere de numerar de la bancomat
+Creați un program pentru a simula o retragere de numerar de la bancomat:
 
 * Veți primi următoarele: **balance**, **withdraw** și **limit**
 * Imprimați "**The withdraw was successful.**" dacă soldul este suficient
@@ -1049,7 +1049,7 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Creați un program pentru a găsi cel mai mare dintre 5 numere
+Creați un program pentru a găsi cel mai mare număr dintre 5 numere:
 
 * Veți primi **5 numere întregi**
 

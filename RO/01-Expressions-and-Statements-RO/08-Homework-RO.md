@@ -386,7 +386,7 @@ Creați un program pentru a calcula aria și perimetrul unui **cerc**:
 
 * Veți primi un număr în virgulă mobilă: **raza** unui cerc
    * calculați **aria** și **perimetrul** cercului
-   * imprimați zona și perimetrul, **formatate** la 2 cifre după punctul zecimal
+   * imprimați aria și perimetrul, **formatate** la 2 cifre după punctul zecimal
 
   ## Exemplu
 | **Intrare** | **Ieșire** |

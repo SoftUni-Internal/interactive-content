@@ -69,7 +69,7 @@ Dacă valoarea expresiei din partea stângă este mai mare sau egală cu valoare
 
 Compararea textelor utilizând operatorul de egalitate (`==`).
 
-Doi operanzi de șir sunt egali atunci când ambii sunt `null` sau ambii au aceeași lungime și au caractere identice pe fiecare poziție de caracter:
+Doi operanzi de tip șir sunt egali atunci când ambii sunt `null` sau ambii au aceeași lungime și au caractere identice pe fiecare poziție de caracter:
 
 ```js live
 let a = 'Examplе';

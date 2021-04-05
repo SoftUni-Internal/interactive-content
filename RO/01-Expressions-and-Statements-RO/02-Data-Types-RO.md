@@ -12,9 +12,9 @@ Există șase tipuri primitive de date:
 * Datele de tip boolean: true or false (adevărat sau fals)
 * Datele de tip Null
 * Datele de tip nedefinit (Undefined)
-* Datele numerice (numere întregi): `1, 2, 4.5, -2`
-* Datele de tip text (string): `Hello, World!`
-* Datele de tip simbol (simboluri) (o noutate a ECMAScript 6)
+* Datele numerice: `1, 2, 4.5, -2`
+* Datele de tip string (șir): `Hello, World!`
+* Datele de tip simbol (o noutate a ECMAScript 6)
 * Datele de tip BigInt
 
 ```js
@@ -36,18 +36,18 @@ const number2 = 3.433; // număr zecimal
 ```
 
 ```js
-const name = "George" // Tipurile de date letrice sau string reprezintă texte
+const name = "George" // tipul de date string (șir) reprezintă texte
 ```
 
 ```js
 let name = Symbol("Peter");
 let name2 = Symbol("Peter");
-// nume == nume2 -> fals     
-// Simbolurile sunt în mod garantat unice. Fiecare simbol trebuie să aibă o valoare diferită.
+// name == name2 -> false     
+// simbolurile sunt în mod garantat unice; fiecare simbol trebuie să aibă o valoare diferită
 ```
 
 ```js
-const value1 = 900723149151234998n; // Vom folosi BigInt dacă vrem să reprezentăm valori mai mari decât cele numerice
+const value1 = 900723149151234998n; // vom folosi BigInt dacă vrem să reprezentăm valori mai mari decât cele numerice
 ```
 
 Toate celelalte sunt tipuri de **obiecte**.
@@ -67,7 +67,7 @@ O variabilă individuală poate fi folosită pentru a conține diferite tipuri d
 ```js
 
 let x = 5;   // x este un număr
-x = "John";  // x este un text sau un șir 
+x = "John";  // x este un string (șir)
 x = true;  // x este o dată de tip boolean
 ```
 
@@ -77,9 +77,9 @@ Ele se pot caracteriza prin:
 
 * **Nume**
 
-* **Mărime** (capacitatea de memorie utilizată): Exemplu: 4 biți
+* **Mărime** (capacitatea de memorie utilizată) - Exemplu: 4 bytes
 
-* **Valoare inițială sau default**: Exemplu: 0
+* **Valoare inițială sau default** - Exemplu: 0
 [/slide]
 
 [slide hideTitle]
@@ -89,7 +89,7 @@ Ele se pot caracteriza prin:
 
 În limbajul JavaScript, convenția pentru alocarea unui nume unei variabile este reprezentată de **camelCase**. 
 
-Mai există și alte convenții privind denumirea variabilelor care sunt utilizate în alte limbaje de programare, precum **Pascalcase** și  **Snake case**. 
+Mai există și alte convenții privind denumirea variabilelor care sunt utilizate în alte limbaje de programare, precum **Pascalcase** și **Snake case**. 
 
 **camelCase** combină cuvinte după cum urmează:
 

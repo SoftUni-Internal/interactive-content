@@ -9,9 +9,9 @@
 
 În programare, **bucla while** este utilizată atunci când dorim să **repetăm** execuția unei anumite logici cât timp se îndeplinește o anumită condiție. 
 
-Prin **"condiție"**, înțelegem orice **expresie** care returnează `true` sau `false`. 
+Prin **"condiție"** înțelegem orice **expresie** care returnează `true` sau `false`. 
 
-Când **condiția** nu e **îndeplinită**, bucla while este **întreruptă**, programul **continuă** să execute codul de după buclă.
+Când **condiția** nu e **îndeplinită**, bucla while este **întreruptă** și programul **continuă** să execute codul de după buclă.
  
 [image assetsSrc="05-use-case-while.png" /]
 
@@ -149,7 +149,7 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Creați un program, care imprimă toate numerele **mai mici decât** și **egale cu** un număr dat **n**:
+Creați un program, care imprimă toate numerele **mai mici** sau **egale cu** un număr dat **n**:
 
 - Veți primi un număr **n**
 

@@ -20,7 +20,7 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
-Dacă dorim ca pasul nostru să fie **diferit de 1**, atunci când **incrementăm**, folosim `i +=` + operaorul pentru dimensiunea pasului.
+Dacă dorim ca pasul nostru să fie **diferit de 1**, atunci când **incrementăm**, folosim `i +=` + operatorul pentru dimensiunea pasului.
 
 Cu un pas de 2, bucla ar arăta astfel:
 

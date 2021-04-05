@@ -4,7 +4,7 @@
 
 [slide hideTitle]
 
-# Problemă cu soluție: Print Hello JavaScript
+# Problemă cu Soluție: Print Hello JavaScript
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/problem1-print-hello-javascript-solution-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -19,10 +19,8 @@ function hello() {
 
 [/code-editor]
 [task-description]
-## Description
-Creați un program JavaScript, care:
-
-Imprimă "**Hello JavaScript**" pe consolă.
+## Descriere
+Creați un program JavaScript care imprimă "**Hello JavaScript**" pe consolă.
 
 [/task-description]
 [code-io /]
@@ -40,7 +38,7 @@ Hello JavaScript
 
 [slide hideTitle]
 
-# Problemă cu soluție: Calculate and Print 5 * 5
+# Problemă cu Soluție: Calculate and Print 5 * 5
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/problem2-calculate-and-print-5times5-solution-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -55,11 +53,10 @@ function calculate() {
 
 [/code-editor]
 [task-description]
-## Description
-Creați un program JavaScript, care:
+## Descriere
+Creați un program JavaScript care:
 
-
-* Calculează valoarea "5 \* 5"
+* Calculează valoarea înmulțirii "5 \* 5"
 * Imprimă rezultatul
 [/task-description]
 [code-io /]
@@ -92,9 +89,9 @@ function nameAndExpression() {
 [/code-editor]
 [task-description]
 
-## Description
+## Descriere
 
-Creați un program pentru a imprima "**Catlyn**" pe prima linie și calculați și imprimați rezultatul expresiei `5 + 3` pe a doua linie
+Creați un program care imprimă "**Catlyn**" pe prima linie și calculează și imprimă rezultatul expresiei `5 + 3` pe a doua linie.
 [/task-description]
 [code-io /]
 [tests]
@@ -125,7 +122,7 @@ function calculations() {
 
 [/code-editor]
 [task-description]
-## Description
+## Descriere
 Creați un program care calculează și imprimă valoarea următoarelor expresii:
 
 - 5 \+ 3 \* 2
@@ -163,11 +160,8 @@ function squareOfStars() {
 
 [/code-editor]
 [task-description]
-## Description
-Creați un program care:
-
-
-Imprimă un pătrat de stele "7 \* 7" astfel:
+## Descriere
+Creați un program care imprimă un pătrat de stele "7 \* 7" astfel:
 
 
 ```

@@ -13,14 +13,14 @@ Aceasta este utilizată pentru **alegerea între o listă de posibilități**.
 
 Instrucțiunea compară o valoare dată cu constantele definite și, în funcție de rezultat, ia o măsură.
 
-- Punem **variabila** pe care vrem să o **comparăm**, în **parantezele după operatorul** "**switch**" și acesta se numește **"selector"**
+- Punem **variabila** pe care vrem să o **comparăm** în **parantezele după operatorul** "**switch**" și acesta se numește **"selector"**
 - **Tipul trebuie să fie comparabil** (numere, șiruri etc.)
-- **Consecutiv**, programul începe să compare fiecare valoare care se găsește după etichetele 'case'
+- **Consecutiv**, programul începe să compare fiecare valoare care se găsește după etichetele de caz
 - În caz de potrivire, executarea codului din locul respectiv începe și continuă până când ajunge la operatorul `break`
 
-În unele limbaje de programare (cum ar fi C și C ++) `break` ar putea fi sarit, pentru a executa un cod din altă construcție 'caz' până când ajunge la un alt operator.
+`break` poate fi sărit pentru a executa un cod din altă construcție `case`, până când ajunge la un alt operator.
 
-Când **nu sunt găsite** potriviri, se execută construcția `implicită`, **dacă** aceasta **există**.
+Când **nu sunt găsite** potriviri, se execută construcția `default`, **dacă** aceasta **există**.
 
 ```js
 switch (selector) {
@@ -38,11 +38,11 @@ switch (selector) {
 # Cazul Implicit
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-29-switch-case-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Cazul implicit specifică secțiunea "**switch**" de executat **dacă expresia de potrivire nu se potrivește cu nici o altă etichetă de caz**.
+Cazul implicit specifică secțiunea "**switch**" de executat **dacă expresia de potrivire nu se potrivește cu nicio altă etichetă de caz**.
 
-Dacă un caz implicit nu este prezent și expresia de potrivire nu se potrivește cu nici o altă etichetă de caz, fluxul de program **cade** prin instrucțiunea de comutare.
+Dacă un caz implicit nu este prezent și expresia de potrivire nu se potrivește cu nicio altă etichetă de caz, fluxul de program **cade** prin instrucțiunea de comutare.
 
-Cazul implicit poate apărea în orice ordine în instrucțiunea switch, dar indiferent de ordinea acestuia în codul sursă este întotdeauna evaluată **ultima**, după ce au fost evaluate toate etichetele de caz.
+Cazul implicit poate apărea în orice ordine în instrucțiunea switch, dar indiferent de ordinea acestuia în codul sursă este întotdeauna evaluat **ultimul**, după ce au fost evaluate toate etichetele de caz.
 
 ```js
 switch (selector) {
@@ -58,7 +58,7 @@ switch (selector) {
 }
 ```
 
-## Exemplu: Ziua Săptămânii
+## Exemplu: Day of the Week
 Să scriem un program care tipărește **ziua săptămânii** (în limba engleză) în funcție de **numărul dat** (1 ... 7) sau **"Error!"** dacă este dată o intrare nevalidă.
 ```js
 let day = Number(input);
@@ -117,7 +117,7 @@ switch (selector) {
 [/slide]
 
 [slide hideTitle]
-# Exemplu: Tipul de Animal
+# Exemplu: Animal Type
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-32-Multiple-Labels-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Scrieți un program care tipărește tipul animalului în funcție de numele acestuia:
@@ -125,7 +125,7 @@ Scrieți un program care tipărește tipul animalului în funcție de numele ace
 - Crocodile, tortoise, snake \-\> **reptile**
 - Others \-\> **unknown**
 
-Putem rezolva sarcina cu condiții de "**switch-case**" cu mai multe etichete în felul următor:
+Putem rezolva sarcina cu condiții "**switch-case**" cu mai multe etichete în felul următor:
 ```js live
 let animal = 'snake';
 switch (animal) {

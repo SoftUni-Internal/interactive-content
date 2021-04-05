@@ -5,7 +5,7 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/02-Conditions/02-conditional-statements-js-17-if-else-conditions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Construcția `if` poate conține, de asemenea, o clauză `else` pentru a da o acțiune specifică în cazul în care expresia booleană (care este setată la început `if(expresia bool)`) returnează un rezultat negativ(`false`).
+Construcția `if` poate conține, de asemenea, o clauză `else` pentru a da o acțiune specifică în cazul în care expresia booleană (care este setată la început `if(expresia bool)`) returnează un rezultat negativ (`false`).
 
 Construită astfel, **instrucțiunea condițională** se numește `if-else` și comportamentul său este după cum urmează:
 
@@ -23,7 +23,7 @@ if (condition) {
   // else construction body;
 }
 ```
-Dacă condiția este `false`, se va executa instrucțiunea else.
+Condiția reprezintă o expresie care este considerată a fi `true` sau `false`.
 
 Deoarece o condiție nu poate fi simultan `true` și `false`, instrucțiunea `if` și instrucțiunea `else` ale unei instrucțiuni `if-else` nu pot **niciodată să ruleze împreună**.
 
@@ -60,7 +60,7 @@ function example(input) {
 
 Când avem **o singură comandă** în corpul construcției **if**, putem **sări peste acolade**, indicând corpul operatorului condițional.
 
-Când vrem să executăm un  **bloc de cod** (un grup de comenzi), acoladele sunt **necesare**.
+Când vrem să executăm un **bloc de cod** (un grup de comenzi), acoladele sunt **necesare**.
 
 În cazul în care le eliminăm, **numai prima linie** după **clauza if** va fi executată. 
 
