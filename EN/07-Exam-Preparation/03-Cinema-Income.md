@@ -80,6 +80,7 @@ Check if there will be a discount and calculate the total price.
 3
 20
 15
+Movie time!
 [/input]
 [output]
 There are 6 seats left in the cinema.

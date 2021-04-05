@@ -949,12 +949,42 @@ aaa aac aca acc caa cac cca ccc 8
 [/test]
 [test]
 [input]
-a
-c
-b
+d
+f
+g
 [/input]
 [output]
-aaa aac aca acc caa cac cca ccc 8
+ddd dde ddf ded dee def dfd dfe dff edd ede edf eed eee eef efd efe eff fdd fde fdf fed fee fef ffd ffe fff 27
+[/output]
+[/test]
+[test]
+[input]
+h
+i
+g
+[/input]
+[output]
+hhh hhi hih hii ihh ihi iih iii 8
+[/output]
+[/test]
+[test]
+[input]
+k
+l
+m
+[/input]
+[output]
+kkk kkl klk kll lkk lkl llk lll 8
+[/output]
+[/test]
+[test]
+[input]
+a
+c
+f
+[/input]
+[output]
+aaa aab aac aba abb abc aca acb acc baa bab bac bba bbb bbc bca bcb bcc caa cab cac cba cbb cbc cca ccb ccc 27
 [/output]
 [/test]
 [/tests]

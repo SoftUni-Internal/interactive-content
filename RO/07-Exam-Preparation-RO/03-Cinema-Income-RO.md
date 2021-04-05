@@ -80,6 +80,7 @@ Verificați dacă este o reducere și calculați prețul total
 3
 20
 15
+Movie time!
 [/input]
 [output]
 There are 6 seats left in the cinema.
