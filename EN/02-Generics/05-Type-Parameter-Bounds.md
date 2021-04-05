@@ -57,7 +57,7 @@ If we try to use another class that is **not a subclass of Number**, the compile
 
 # Problem with Solution: Generic Scale
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/EN/interactive-java-advanced-generics-20-Problem-and-Solution-Generic-Scale-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/EN/interactive-java-advanced-generics-20-Solution-Generic-Scale-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Generic Scale" timeLimit=5000 taskId="oop-basics-java-generics-lab-Generic-Scale" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
