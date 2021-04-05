@@ -77,7 +77,7 @@ System.out.println(isEven.test(6)); // true
 [slide hideTitle]
 # Problemă cu Soluție: Count Uppercase Words
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/RO/interactive-java-advanced-functional-programming-20-Count-Uppercase-Words-Problem-and-Solution-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/RO/interactive-java-advanced-functional-programming-20-Count-Uppercase-Words-Solution-TRIM-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Count Uppercase Words" taskId="oop-basics-java-functional-programming-lab-Count-Uppercase-Words" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
