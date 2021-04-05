@@ -56,11 +56,11 @@ Un obiect este considerat **imuabil (immutable)** dacă starea acestuia nu poate
 Acest lucru este valabil și pentru Șiruri în Java, care sunt **imuabile**, dar asta nu înseamnă că nu putem să atribuim valori noi variabilelor String:
 
 ```java live
-String movieTitle = "101 Dalmatians"
+String movieTitle = "101 Dalmatians";
 
 System.out.println(movieTitle);
 
-movieTitle = "The Last Samurai"
+movieTitle = "The Last Samurai";
 
 System.out.println(movieTitle);
 ```
