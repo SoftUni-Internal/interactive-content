@@ -1019,7 +1019,7 @@ Scrieți un program care citește de pe consolă un număr întreg în intervalu
 
 [/task-description]
 [tests]
-[test open]
+[test]
 [input]
 1
 [/input]
@@ -1043,7 +1043,7 @@ Error
 Monday
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 2
 [/input]
@@ -1138,7 +1138,6 @@ Intrarea poate să aibă următoarele valori:
 |**Intrare**|**Ieșire** |
 | --- | --- |
 | dog | mammal |
-| snake | reptile |
 | cat | unknown |
 
 [/task-description]
@@ -1193,7 +1192,7 @@ reptile
 [/test]
 [test]
 [input]
-cat
+bee
 [/input]
 [output]
 unknown
@@ -1506,7 +1505,7 @@ The pool is 66.00% full. Pipe 1: 45.45%. Pipe 2: 54.55%.
 [test open]
 [input]
 100
-100S
+100
 100
 2.5
 [/input]

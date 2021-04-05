@@ -759,7 +759,7 @@ Print out the calculated area.
 6
 [/input]
 [output]
-30
+36
 [/output]
 [/test]
 [test]

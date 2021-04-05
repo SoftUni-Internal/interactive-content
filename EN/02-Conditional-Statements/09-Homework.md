@@ -1015,7 +1015,7 @@ Create a program that reads an integer \[1...7\] from the console and prints out
 
 [/task-description]
 [tests]
-[test open]
+[test]
 [input]
 1
 [/input]
@@ -1039,7 +1039,7 @@ Error
 Monday
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 2
 [/input]
@@ -1138,7 +1138,6 @@ The input may hold the following values:
 | **Input** | **Output** |
 | --- | --- |
 | dog | mammal |
-| snake | reptile |
 | cat | unknown |
 
 [/task-description]
@@ -1193,7 +1192,7 @@ reptile
 [/test]
 [test]
 [input]
-cat
+bee
 [/input]
 [output]
 unknown
