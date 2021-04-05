@@ -60,7 +60,7 @@ String[] arr = {"This", "is", "a", "String", "array!"};
 System.out.println(String.join(" ", arr));
 ```
 
-You can `String.join()` with any Iterable collection such as List, Array, Set, Queue, Stack.
+You can use `String.join()` with any Iterable collection such as List, Array, Set, Queue, Stack.
 
 
 [/slide]
