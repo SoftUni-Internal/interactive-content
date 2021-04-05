@@ -64,7 +64,7 @@ Textul verde evidențiat este un grup care nu este capturat.
 # Problemă cu soluție: Match All Words
 
 Creați o **expresie regulată** care **extrage toate cuvintele dintr-un text dat** , folosind următorul site web: 
-[www.regex101.com](www.regex101.com)
+[https://regex101.com](regex101.com)
 
 [image assetsSrc="regex-example(25).png" /]
 
