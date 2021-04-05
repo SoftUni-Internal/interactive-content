@@ -6,18 +6,18 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-5-6-what-is-abstraction-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Abstraction is the process of **hiding** the implementation details and providing only pure functionality to the user.
+Abstraction is the process of **hiding** implementation details and providing only pure functionality to the user.
 
-In Java, abstraction is achieved by using the **abstract** keyword for classes and interfaces.
+In Java, abstraction is achieved by using the **"abstract"** keyword for classes and interfaces.
 
-Abstraction describes selecting data from a larger pool to show only **relevant** details of the object to the user.
+Abstraction consists of selecting data from a larger pool to show only **relevant** details of the object to the user.
 
 It reduces programming complexity and efforts. 
 
 It is one of the most important concepts of OOP.
 
 
-There are **two** ways we can achieve **abstraction** in Java:
+There are **two** ways we can use **abstraction** in Java:
 
 - Using **abstract** classes
 
@@ -29,7 +29,7 @@ There are **two** ways we can achieve **abstraction** in Java:
 [slide hideTitle]
 # Example: Java Abstract Class
 
-Let us see how we can use that abstract classes.
+Let us see how to abstract classes.
 
 ``` java
 // Abstract parent class "Animal"
@@ -63,7 +63,7 @@ public class Main {
 }
 ```
 
-Using these `abstract` classes, the **output** will be:
+When this code is run, the **output** will be:
 
 ``` 
 Woof, Woof
@@ -120,7 +120,7 @@ Walking...
 |**Abstraction**|**Encapsulation**|
 |---|---|
 |Solves the problem at the design level.|Solves the problem at the implementation level.|
-|Lets you focus on what the object does instead of how it does it.|Means holding the internal details or mechanics of how an object does something.|
-|Used for hiding unwanted data and providing relevant data.|Holds the code and data into a single unit to protect the data from the outside world.|
+|Lets you focus on "what" the object does instead of "how".|Means holding the internal details or mechanics of "how" an object does something.|
+|Used to hide unwanted data and provide relevant data.|Holds the code and data into a single unit to protect the data from the outside world.|
 |The outer layout, used in terms of design. Example: Outer look of a mobile phone - it has a display screen and keypad buttons to dial a number.|The inner layout, used in terms of implementation. Example: Inner implementation detail of a mobile phone - how the keypad button and display screen are connected using circuits.|
 [/slide]
