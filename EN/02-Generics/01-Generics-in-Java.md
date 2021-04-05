@@ -26,7 +26,7 @@ System.out.println((String)strings.get(0));
 System.out.println((String) strings.get(1));
 ```
 
-The code above compiles fine but throws `ClassCastException` at **run time** because we are trying to cast Object in the list to String whereas one of the elements is of type Integer.
+The code above compiles fine but throws `ClassCastException` at **run time** because we are trying to cast each Object in the list to String, but one of the elements is of type Integer.
 
 No contract could guarantee that the **return type** of the list is a **String**. 
 
@@ -34,7 +34,7 @@ The defined list could **hold any object**.
 
 We only know that we are retrieving a list by inspecting the context. 
 
-When looking at types, it can only guarantee that it is an Object, and we need an explicit cast to ensure that the type is safe.
+When looking at types, it can only guarantee that it is an Object. We need an explicit cast to ensure that the type is safe.
 
 The cast can cause type-related **runtime errors** if a programmer makes a mistake with the explicit casting.
 
@@ -48,7 +48,7 @@ The cast can cause type-related **runtime errors** if a programmer makes a mista
 
 The core idea behind generics is that programmers can express their intention of using **specific types** and **the compiler can ensure the correctness of such type.**
 
-The following example illustrates Generics using "**ArrayList**" but you can use any collection class such as "**LinkedList**", "**HashSet**", "**TreeSet**", "**HashMap**", "**Comparator**" etc:
+The following example illustrates Generics using "**ArrayList**", but we can use any collection class, such as: "**LinkedList**", "**HashSet**", "**TreeSet**", "**HashMap**", "**Comparator**" etc:
 
 ```java
 List<String> strings = new ArrayList<String>();
@@ -60,11 +60,11 @@ strings.add(3);
 
 Let us explain what the code above does:
 
-By adding the diamond operator `<>` containing the type, we narrow the specialization of this list only to String type i.e. we specify the type that will be held inside the list. 
+By adding the diamond operator `<>` containing the type, we narrow the specialization of this list only to String type, in other words, we specify the type that will be held inside the list. 
 
 The compiler can enforce the type at compile-time.
 
-In small programs, this might seem like a trivial addition, however, in larger programs, this can add significant robustness and makes the program easier to read.
+In small programs, this might seem like a trivial addition, however, in larger programs, this can add significant robustness and make the program easier to read.
 
 The main features of Generics are:
 
