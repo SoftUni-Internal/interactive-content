@@ -6,13 +6,13 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-3-4-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Inheritance** is a mechanism that enables inheriting properties and methods from a **parent** object to a **child** object.
+**Inheritance** is a mechanism that enables extending properties and methods from a **parent** object to a **child** object.
 
-- The class **passing its members** to its child class is called **Superclass** (Base Class, Parent class)
+- The class **passing its members** to a child class is called **Superclass** (Base Class, Parent class)
 
 - The class **receiving members** from its base class is called **Subclass** (Child class, Derived Class)
 
-The idea behind using **inheritance** is that you can build classes upon already existing classes, therefore reusing code, one of the golden rules in programming.
+ **Inheritance**  allows us to build classes using already existing ones, reusing their code.
 
 ```java
 public class Mammal {...}
@@ -33,17 +33,17 @@ public class Cow extends Mammal {...}
 
 When we use inheritance, we can have more than one **Subclass**.
 
-In this example we create a base class `Person`, this class has properties that every person class must have, like `String Name` and `String Address`.
+In the example we create a base class `Person`, this class has properties that every person class will have, such as a `Name` and an `Address`.
 
-When we create another object of type `Employee` our employee also needs to know its **name and address**.
+When we create an object of type `Employee` our employee also needs to have its **name and address**.
 
-That is one of the reasons **inheritance** exists, instead of creating the same properties for our `Employee` we can `extend` the class `Person` and we will inherit and re-use its properties.
+That is one of the reasons **inheritance** exists, instead of retyping the same properties for our `Employee` class we can `extend` the `Person` class, inherit and re-use its properties.
 
-Therefore, it is called a **derived** class.
+The subcalss is called called **derived** class.
 
-We also extend the functionality by adding a `String Company` parameter.
+We also extend the functionality by adding a `Company` parameter.
 
-Respectively we do the same for the `Student`, but with its own internal logic which it has to add.
+Respectively, we do the same for the `Student` class, but with its own internal logic.
 
 
 [image assetsSrc="inheritance-example(1).png" /]
@@ -56,9 +56,9 @@ Respectively we do the same for the `Student`, but with its own internal logic w
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-6-class-hierarchies-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Inheritance leads to hierarchies of classes and/or interfaces in an application:**
+**Inheritance creates hierarchies of classes and/or interfaces in an application:**
 
-A real-life analog of **class hierarchies** is a  **family tree**, we have one class starting the family and down the leaves, we have its children, which also have their own, etc.
+A real-life analog of **class hierarchies** is a  **family tree**, we have one class starting the family and down the branches, we have its children, which also have their own, etc.
 
 [image assetsSrc="inheritance-example(2).png" /]
 
@@ -70,9 +70,9 @@ A real-life analog of **class hierarchies** is a  **family tree**, we have one c
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-7-class-hierarchies-java-collection-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-`Object` is a universal **Superclass** that is defined to be the root of the entire class hierarchy in Java.
+The `Object` class is a universal **Superclass** that is defined to be the root of the entire class hierarchy in Java by default.
 
-This means that every class that we create is implicitly a child of the class `Object`, without us specifying it.
+This means that every class that we create is implicitly a derivative of the `Object` class, without explicitly it.
 
 [image assetsSrc="inheritance-example(3).png" /]
 
@@ -83,13 +83,13 @@ This means that every class that we create is implicitly a child of the class `O
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-9-inheritance-in-java-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We **inherit** a given class through the keyword **extends**, placed right after the name of the given **Subclass**.
+We **inherit** a given class using the **extends** keyword, placed right after the name of the given **Subclass**.
 
-We have to use **inheritance** when we need to reuse some logic.
+We use **inheritance** when we need to reuse code logic.
 
 But in Java there is a rule, we can inherit **only one** parent per class.
 
-That is why we say that in Java, we have **single inheritance**.
+That is why in Java, we have **single inheritance**.
 
 ```java
 class Person { … }
@@ -112,7 +112,7 @@ A **derived class** takes all of its members from the **base class**.
 
 **Derived** classes can inherit and call all the **non-private** members of the **parent** class.
 
-If a unit is declared as private, the memory for it is declared when the class is initialized, but we can use it throughout our **derived** class.
+If a unit is declared as private, it is placed in memory when the class is initialized, but we can use it throughout the **derived** class.
 
 [image assetsSrc="inheritance-example(5).png" /]
 
@@ -128,18 +128,18 @@ If a unit is declared as private, the memory for it is declared when the class i
 
 [task-description]
 # Description
-Create two classes named **Animal** and **Dog**.
+Create two classes: **Animal** and **Dog**.
 
-**Animal** has a single public method `.eat()` that prints: **"eating…"**
+The **Animal** class should have single public method `.eat()` that prints: **"eating…"**
 
-**Dog** also has a single public method - `.bark()` that prints: **"barking…"**
+The **Dog** class should also have a single public method - `.bark()` that prints: **"barking…"**
 
-**Dog** should inherit from **Animal**.
+The **Dog** class should extend **Animal**.
 
 [image assetsSrc="inheritance-example(9).png" /]
 
 ## Hints
-Use the `extends` keyword to build a hierarchy.
+Use the `extends` keyword to create the hierarchy.
 
 [/task-description]
 [tests]
