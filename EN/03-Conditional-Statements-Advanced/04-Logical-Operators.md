@@ -269,7 +269,7 @@ Reaching `b`, it understands that it has a `true` value and the whole **expressi
 # Problem with Solution: Food or Drink
 
 
-[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-24-25-Logical-or-and-Problem and Solution-Food-Or-Drink-TRIM-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-24-25-Logical-or-and-Problem and Solution-Food-Or-Drink-TRIM-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Food or Drink" taskId="pb-js-conditional-statements-advanced-Food-or-Drink" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
