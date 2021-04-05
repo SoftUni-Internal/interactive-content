@@ -147,7 +147,7 @@ int b = increment.apply(a);
 [slide hideTitle]
 # Problemă cu Soluție: Sum Numbers
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/RO/interactive-java-advanced-functional-programming-14-Sum-Numbers-Problem-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/RO/interactive-java-advanced-functional-programming-14-Sum-Numbers-Solution-TRIM-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sum Numbers" taskId="oop-basics-java-functional-programming-lab-Sum-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
