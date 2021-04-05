@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Transormarea Elementelor
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-23-transform-elements-with-map-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05. JS-Fundamentals-Arrays-Advanced-22-23-processing-arrays-and-map-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Începând de la ES5, tipul JavaScript `Array` oferă metoda `map()` care ne permite să transformăm elementele unei matrice într-un mod mai curat.
 

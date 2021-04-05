@@ -199,7 +199,7 @@ solve(['5', '10'])
 [slide hideTitle]
 # Metoda Push și Pop în Matrice
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-10-pushing-an-array-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05. JS-Fundamentals-Arrays-Advanced-10-7-pushing-an-array-and-pop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Metoda `array.push()` adaugă unul sau mai multe elemente la **sfârșitul** unui tablou și returnează noua **lungime**:
 
