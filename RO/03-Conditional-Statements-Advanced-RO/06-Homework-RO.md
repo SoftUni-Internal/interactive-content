@@ -129,15 +129,15 @@ Error
 [/test]
 [test]
 [input]
-1
+2
 [/input]
 [output]
-Monday
+Tuesday
 [/output]
 [/test]
 [test]
 [input]
-8
+10
 [/input]
 [output]
 Error
@@ -149,6 +149,22 @@ Error
 [/input]
 [output]
 Sunday
+[/output]
+[/test]
+[test]
+[input]
+3
+[/input]
+[output]
+Wednesday
+[/output]
+[/test]
+[test]
+[input]
+5
+[/input]
+[output]
+Friday
 [/output]
 [/test]
 [/tests]
@@ -224,10 +240,26 @@ Vowel
 [/test]
 [test]
 [input]
-b
+A
 [/input]
 [output]
-Consonant
+Vowel
+[/output]
+[/test]
+[test]
+[input]
+e
+[/input]
+[output]
+Vowel
+[/output]
+[/test]
+[test]
+[input]
+O
+[/input]
+[output]
+Vowel
 [/output]
 [/test]
 [/tests]
@@ -1204,24 +1236,6 @@ Mr.
 [/test]
 [test]
 [input]
-25
-f
-[/input]
-[output]
-Ms.
-[/output]
-[/test]
-[test]
-[input]
-13.5
-m
-[/input]
-[output]
-Master
-[/output]
-[/test]
-[test]
-[input]
 11
 f
 [/input]
@@ -1530,15 +1544,6 @@ New York
 [/test]
 [test]
 [input]
-Moscow
--50
-[/input]
-[output]
-error
-[/output]
-[/test]
-[test]
-[input]
 London
 0.6
 [/input]
@@ -1675,7 +1680,7 @@ public class Main {
 [/code-editor]
 [task-description]
 # Descriere
-Scrieți un program pentru a verifica dacă un **`punct {x, y}`** este **pe** una dintre laturile unui dreptunghi **`{x1, y1} - {x2, y2}`**.
+Scrieți un program pentru a verifica dacă un `punct {x, y}` este **pe** una dintre laturile unui dreptunghi `{x1, y1} - {x2, y2}`.
 
 ## Intrare
 Intrarea provine de pe consolă și constă în **6 linii, introduse de utilizator: numere reale x1, y1, x2, y2, x și y** (va fi întotdeauna adevărat că **x1 < x2** și **y1 < y2**).
