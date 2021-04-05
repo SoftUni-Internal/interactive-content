@@ -15,7 +15,7 @@ Whenever a **change** to a String is made, an entirely **new object of type Stri
 
 ```java live
 String name = "SoftUni!";
-// hashCode() - return the address of the object in memory
+return the memory address of the object
 System.out.println(name.hashCode());
 
 name = "Peter!";
@@ -34,11 +34,11 @@ The main **features** of **Strings** are:
 
 - Strings represent a **sequence of characters**
 
-- Strings are used to **store text**
+- Strings are used for **storing text**
 
-- Java String class provides a lot of **methods** for **text processing**
+- The String class provides a lot of **methods** for **text processing**
 
-- Strings are immutable(**read-only**)
+- Strings are immutable
 
 [/slide]
 
@@ -47,6 +47,32 @@ The main **features** of **Strings** are:
 # Strings are Immutable
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-5-strings-are-immutable-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+An object is considered to be **immutable** if its state cannot be altered after it is created.
+
+This is also true for Strings in Java which are **immutable** but this does not mean that we cannot assign new values to String variables:
+
+```java live
+String movieTitle = "101 Dalmatians"
+
+System.out.println(movieTitle);
+
+movieTitle = "The Last Samurai"
+
+System.out.println(movieTitle);
+```
+
+We were able to change the movie title in the example above so why do we say that Strings are immutable?
+
+Strings are reference data types and as such the **movieTitle** variable will contain a reference to a memory location, it will not hold the actual data.
+
+When you initialize a new String variable and assign some value to it, Java will create a String object and store it in a memory location, and only the reference to that location will be stored in your variable.
+
+When you assign a new value to the same String variable, a new String object will be created and its memory location will be assigned as a value to your variable.
+
+To summarize:
+- The String object that is created is immutable (read-only)
+- The String variable will hold only a reference to the current String object assigned to it
 
 [/slide]
 

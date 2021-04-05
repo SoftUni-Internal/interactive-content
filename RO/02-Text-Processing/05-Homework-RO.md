@@ -429,7 +429,7 @@ Cel de-al doilea **va fi o singură cifră** (de la 0 la 9).
 
 Trebuie să afișați produsul acestor numere.
 
-**Notă**: nu utilizați clasa BigInteger.
+**Notă**: Nu utilizați clasa BigInteger.
 
 ### Exemplu
 |**Intrare**|**Ieșire** |
@@ -440,7 +440,7 @@ Trebuie să afișați produsul acestor numere.
 ### Exemplu
 |**Intrare**|**Ieșire** |
 | --- | --- |
-| 923847238931983192462832102 | 3695388955727932769851328408 | 
+| 214748364711 | 858993458844 | 
 | 4 | |
 
 [/task-description]
@@ -457,11 +457,11 @@ Trebuie să afișați produsul acestor numere.
 [/test]
 [test open]
 [input]
-923847238931983192462832102
+214748364711
 4
 [/input]
 [output]
-3695388955727932769851328408
+858993458844
 [/output]
 [/test]
 [test]

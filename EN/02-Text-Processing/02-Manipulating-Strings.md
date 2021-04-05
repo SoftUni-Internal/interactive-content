@@ -37,7 +37,34 @@ System.out.println(result); // "Hello, SoftUni!"
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-9-joining-strings-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
+The Java `String.join(delimiter, elementsToJoin)` method is one of the many ways to concatenate Strings. 
+
+The method requires a delimiter to separate the strings by but if you want to concatenate without separating the elements in any way, you can use **""** as a delimiter.
+
+Here are two examples of `String.join()` used in different situations.
+
+Joining several strings together, separated by a comma.
+
+```java live
+String sentence = String.join(",", "testing", "one", "two");
+
+System.out.println(sentence);
+
+```
+
+Concatenating all the elements in an array by specifying a delimiter (separator). The delimiter in this example is a space **" "**:
+
+```java live
+String[] arr = {"This", "is", "a", "String", "array!"};
+
+System.out.println(String.join(" ", arr));
+```
+
+You can `String.join()` with any Iterable collection such as List, Array, Set, Queue, Stack.
+
+
 [/slide]
+
 
 [slide hideTitle]
 # Problem with Solution: Repeat strings
@@ -150,7 +177,7 @@ linearlinearlinearlinearlinearlinear
 
 As the name suggests, `substring` extracts only a **part** of a given `String`.
 
-- `substring(int startIndex)` - Returns a **new String** containing the substring of the given string, starting from the specified **startIndex** (**inclusive**) to the end of the string
+`substring(int startIndex)` - returns a **new String** containing the substring of the given string, starting from the specified **startIndex** (**inclusive**) to the end of the string
 
 ```java live
 String text = "My name is John";
@@ -160,7 +187,7 @@ String extractWord = text.substring(11);
 System.out.println(extractWord); // John
 ```
 
-- `substring(int startIndex, int endIndex)` - Returns a **new String** containing the substring of the given string, starting from the specified **startIndex** (inclusive) to the **endIndex** (exclusive)
+`substring(int startIndex, int endIndex)` - returns a **new String** containing the substring of the given string, starting from the specified **startIndex** (inclusive) to the **endIndex** (exclusive)
 
 ```java live
 String fullName = "John Doe";
@@ -180,7 +207,7 @@ System.out.println(firstName); // John
 
 It is possible to search for the first or the last occurrence of a pattern in a string:
 
-- `indexOf()` - Returns **the position of the first occurrence** of the specified character(s), or **-1** if the character(s) does not occur
+`indexOf()` - returns **the position of the first occurrence** of the specified character(s), or **-1** if the character(s) does not occur
 
 ```java live 
 String fruits = "banana, apple, kiwi, banana, apple";
@@ -190,7 +217,7 @@ System.out.println(fruits.indexOf("banana"));    // 0
 System.out.println(fruits.indexOf("orange"));    // -1
 ```
 
-- `lastIndexOf()` - Returns **the position of the last occurrence** of the specified character(s), or **-1** if the character(s) does not occur
+`lastIndexOf()` - returns **the position of the last occurrence** of the specified character(s), or **-1** if the character(s) does not occur
 
 ```java live
 String fruits = "banana, apple, kiwi, banana, apple";

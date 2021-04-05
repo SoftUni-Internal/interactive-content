@@ -17,11 +17,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that receives few usernames on a single line, separated by a comma and a white space (", "), and **prints all valid usernames**.
+Create a program that receives usernames on a single line, separated by a comma and a white space (", "), and **prints all valid usernames**.
 
 A **valid username**:
 - Has a **length between 3 and 16 characters**
-- Contains **only letters, numbers, hyphens and underscores**
+- Contains **only letters, numbers, hyphens, and underscores**
 - Has **no redundant symbols** before, after, or in-between.
 
 ### Example
@@ -430,9 +430,7 @@ You will receive **two** lines of input.
 
 - On the second line, you will receive a single digit in range \[0-9\]
 
-Your task is to calculate the product of these numbers and to print it out.
-
-**Note**: **do not** use the BigInteger class.
+Your task is to calculate the product of these numbers and to print it to the console **without using the BigInteger class**.
 
 ### Example
 | **Input** | **Output** |
@@ -443,7 +441,7 @@ Your task is to calculate the product of these numbers and to print it out.
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 923847238931983192462832102 | 3695388955727932769851328408 | 
+| 214748364711 | 858993458844 | 
 | 4 | |
 
 [/task-description]
@@ -460,11 +458,11 @@ Your task is to calculate the product of these numbers and to print it out.
 [/test]
 [test open]
 [input]
-923847238931983192462832102
+214748364711
 4
 [/input]
 [output]
-3695388955727932769851328408
+858993458844
 [/output]
 [/test]
 [test]
@@ -541,7 +539,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that receives a **string** as input and replaces any sequence of the same letters with a **single corresponding letter**.
+Create a program that receives a **String** as input and replaces any sequence of the same letters with a **single corresponding letter**.
 
 
 ### Example
@@ -644,7 +642,7 @@ When all characters are processed, **print out the remaining string** (without t
 You **should not delete the "\>" characters**, but you **should delete the integers that represent the powers of the explosions**
 
 ### Input
-You will receive a single line of input that will contain a **string** .
+You will receive a single line of input that will contain a **String**.
 
 ### Output
 Print out the resulting **string** after all explosions.
@@ -673,7 +671,7 @@ At this point, the string looks like this: abv\>\>\>\>2asdasd.
 
 The fourth explosion has a power of 2. 
 
-We have a power of 1 left from the previous explosion and we add the power of the current explosion, so that we have a total power of 3. 
+We have a power of 1 left from the previous explosion and we add the power of the current explosion so that we have a total power of 3. 
 
 We delete the next three characters.
 
@@ -774,7 +772,7 @@ Then you **move to the letter after the number**.
 
 - If it is **lowercase**, you should add the position of the letter in the alphabet to the resulting number
 
-The game became too easy for John really quick. 
+The game became too easy for John. 
 
 He decided to complicate it a bit by doing the same, but with multiple strings, keeping track **only of the total sum of all results**. 
 
@@ -802,7 +800,7 @@ We do the same for the **second string**.
 
 Then we move to the letter after the number. 
 
-**G** is uppercase and its position in the alphabet is **7**. We substract **7** from the resulting number (323 – 7 = 316).
+**G** is uppercase and its position in the alphabet is **7**. We subtract **7** from the resulting number (323 – 7 = 316).
 
 Finally, we **sum the results** (14 + 316 = 330).
 
