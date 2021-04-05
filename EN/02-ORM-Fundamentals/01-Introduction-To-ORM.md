@@ -30,8 +30,7 @@ Developers save a lot of work hours because of the ability of an **ORM** to crea
 
 [/slide]
 
-[slide]
-
+[slide hideTitle]
 # JDBC and ORM
 
 **ORMs** and **JDBC** are two different solutions to a problem
@@ -157,8 +156,8 @@ List results = query.list();
 
 [/slide]
 
-[slide]
 
+[slide hideTitle]
 # Code First Approach
 
 The **code-first** approach is used for **domain-driven** applications.
@@ -173,8 +172,8 @@ The following picture illustrates how the **code-first** approach works:
 
 [/slide]
 
-[slide]
 
+[slide hideTitle]
 # POJO + XML
 
 One way to use the **code-first** approach is to combine **POJO** (**Plain Old Java Objects**) with **XML**.
@@ -206,8 +205,8 @@ The following code is an example of a **POJO + XML** combination:
 
 [/slide]
 
-[slide]
 
+[slide hideTitle]
 # POJO Mapped to DB Tables
 
 There is an easier way to implement the **code-first** method than combining **POJO** and **XML**.
