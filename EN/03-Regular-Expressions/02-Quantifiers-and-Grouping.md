@@ -68,6 +68,12 @@ Create a **regular expression** that will **extract all words from a given text*
 
 [image assetsSrc="regex-example(25).png" /]
 
+You can use the following text to test your regular expression:
+
+```
+_|The|great|outdoors|holds|~many|secrets
+```
+
 [/slide]
 
 [slide hideTitle]
@@ -81,6 +87,13 @@ Create a **regular expression** that will **extract all valid dates from a given
 - Examples: `12-Jun-1999`, `3-Nov-1999`
 
 [image assetsSrc="regex-example(26).png" /]
+
+You can use the following text to test your regular expression:
+
+```
+1-Jan-1989 is considered the official birthday of the Internet.
+I was not aware that my socks have been missing since 23-Sep-2005.
+```
 
 [/slide]
 
@@ -100,5 +113,12 @@ Create a **regular expression** that will **extract all valid dates from a given
 - The **Domain names** may contain only **English letters**
 
 [image assetsSrc="regex-example(27).png" /]
+
+You can use the following text to test your regular expression:
+
+```
+johndoe@gmail.com
+my*name*is*@who.com
+```
 
 [/slide]
