@@ -7,15 +7,15 @@
 
 [task-description]
 # Description
-Define an interface **Person** with methods **getName** and **getAge**. 
+Define an interface called **Person** containing the methods: **getName** and **getAge**. 
 
-Define a class **Citizen** which implements **Person** and has a constructor which takes a **String name** and an integer **age**.
+Define a class called **Citizen** which implements the **Person** interface and has a constructor which takes a **String: name** and an integer: **age**.
 
 Add the following code to your main method and submit your solution.
 
 [image assetsSrc="interfaces-and-abstraction-example(11).png" /]
 
-**Your hierarchy has to be used with this code:**
+**Your implementation needs to unction with this code:**
 
 ```java
 public static void main(String[] args) {
@@ -567,7 +567,7 @@ Test Passed!
 
 [task-description]
 # Description
-Using the code from the previous task, define an interface **Identifiable** with a **String** method **getId**, and an interface **Birthable** with a **String** method **getBirthDate**
+Using the code from the previous task, define an interface called **Identifiable** with a **String** method called **"getId"**, and an interface **Birthable** with a **String** method **getBirthDate**
 
 Implement them in the **Citizen** class. 
 
@@ -1366,15 +1366,15 @@ Test Passed!
 
 [task-description]
 # Description
-It is a well known fact that people celebrate birthdays, it is also known that some people also celebrate their pets birthdays. 
+It is a well known fact that people celebrate birthdays, we also know that some people also celebrate their pets birthdays. 
 
-Extend the program from your last task to add **birthdates** to citizens and include a class **Pet**, pets have a **name** and a **birthdate**. 
+Extend the program from your last task to add **birthdates** to citizens and include a class called **Pet**, pets have a **name** and a **birthdate**. 
 
-Also create class **Robot** which has an **id** and **model**. 
+Also create a class called **Robot** which has an **id** and a **model**. 
 
 Encompass repeated functionality into interfaces and implement them in your classes.
 
-You will receive from the console an unknown amount of lines until the command "**End**" is received,  each line will contain information in one of the following formats:
+You will receive an unknown amount of lines until the command "**End**" is received,  each line will contain information in one of the following formats:
 
 - "**Citizen** \{**name**\} \{**age**\} \{**id**\} \{**birthdate**\}" for citizens 
 
@@ -1382,9 +1382,9 @@ You will receive from the console an unknown amount of lines until the command "
 
 - "**Pet** \{**name**\} \{**birthdate**\}" for pets
  
-After the end command on the next line you will receive a single number representing a **specific year**.
+The input line following "end" will contain a single number representing a **specific year**.
 
-Your task is to print all birthdates (of both citizens and pets) in that year in the format **day/month/year** (the order of printing does not matter).
+Your task is to print out all birthdates (of both citizens and pets) in that year in the format **day/month/year** (the order of printing does not matter).
 
 [image assetsSrc="interfaces-and-abstraction-example(13).png" /]
 
@@ -2647,13 +2647,13 @@ Your totalitarian dystopian society suffers a shortage of food, so many rebels a
 
 Extend the code from your previous (Problem 2.**Multiple Implementation**) task with new functionality to solve this task.
 
-Define a class **Rebel** which has a **name**, **age** and **group** (String), names are **unique** - there will never be 2 Rebels/Citizens or a Rebel and Citizen with the same name. 
+Define a class **Rebel** which has a **name**, **age** and **group** (String), names are **unique** - there will never be 2 Rebels/Citizens or a Rebel and a Citizen with the same name. 
 
-Define an interface **Buyer** which defines a methods **buyFood()** and a **getFood()**. 
+Define an interface **Buyer** which defines the methods **buyFood()** and a **getFood()**. 
 
 Implement the **Buyer** interface in the **Citizen** and **Rebel** class, both Rebels and Citizens **start with 0 food**, when a Rebel buys food his **food** increases by **5**, when a Citizen buys food his **food** increases by **10**.
 
-On the first line of the input you will receive an integer **N** - the number of people, on each of the next **N** lines you will receive information in one of the following formats
+On the first line of input you will receive an integer **N** - the number of people, on each of the next **N** lines you will receive information in one of the following formats
 
 - "\{**name**\} \{**age**\} \{**id**\} \{**birthdate**\}" for a Citizen 
 
@@ -2661,9 +2661,9 @@ On the first line of the input you will receive an integer **N** - the number of
 
 After the **N** lines until the command "**End**" is received, you will receive names of people who bought food, each on a new line. 
 
-Note that not all names may be valid, in case of an incorrect name - nothing should happen.
+Note that not all names will be valid, in case an inexistent name is given - nothing should happen.
 
-On the only line of output, you should print the total amount of food purchased.
+On the only line of output, you should print out the total amount of food purchased.
 
 [image assetsSrc="interfaces-and-abstraction-example(14).png" /]
 
@@ -4104,43 +4104,43 @@ Test Passed!
 
 [task-description]
 # Description
-You have a business - **manufacturing cell phones**. 
+You own a business - **manufacturing cell phones**. 
 
-But you have no software developers, so you call your friends and ask them to help you create a cell phone software. 
+But you have no software developers, so you call your friends and ask them to help you create cell phone software. 
 
-They agree and you start working on the project. 
+They agree and start working on the project. 
 
 The project consists of one main **model - a Smartphone**. 
 
-Each of your smartphones should have functionalities of **calling other phones** and **browsing in the world wide web**.
+Each of your smartphones should have functionalities to **make calls** and **browse the world wide web**.
 
 Your friends are very busy, so you decide to write the code on your own. 
 
-Here is the mandatory assignment:
+Here is the assignment:
 
-You should have a **model - Smartphone** and two separate functionalities which your smartphone has - to **call other phones** and to **browse in the world wide web**. 
+You should have a **model - Smartphone** and two separate functionalities which your smartphone offers - **making calls** and to **browsing the world wide web**. 
 
-You should end up with **one class** and two **interfaces**.
+This totals **one class** and two **interfaces**.
 
 [image assetsSrc="interfaces-and-abstraction-example(15).png" /]
 
 ## Input
-The input comes from the console. 
+The input comes in text form. 
 
 It will hold two lines:
 - **First line: phone numbers** to call (String), separated by spaces
 - **Second line: sites** to visit (String), separated by spaces
 
 ## Output
-- First **call all numbers** in the order of input then **browse all sites** in order of input
-- The functionality of calling phones is printing on the console the number which are being called in the format: "**Calling...** \{**number**\}"
-- The functionality of the browser should print on the console the site in format:
+- First **call all numbers** in input order then **browse all sites** in input order
+- Successfully invoking the call function should produce the following outpur: "**Calling...** \{**number**\}"
+- Successfully brownsing the web should produce the following output:
 "**Browsing**\: \{**site**\}**!**" (pay attention to the exclamation mark when printing URLs)
-- If there is a number in the input of the URLs, print: "**Invalid URL!**" and continue printing the rest of the URLs
-- If there is a character different from a digit in a number, print: "**Invalid number!**" and continue to the next number
+- If there is a number an URL, print: "**Invalid URL!**" and continue processing the rest of the URLs
+- If there is a character different which is not a digit in a phone number: "**Invalid number!**" then continue to the next one
 
 ## Constraints
-- Each site's URL should consist only of letters and symbols (**No digits are allowed** in the URL address)
+- Each site's URL should consist only of letters and symbols (**No digits are allowed** in an URL address)
 
 
 # Examples
