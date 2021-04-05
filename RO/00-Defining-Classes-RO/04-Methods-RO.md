@@ -186,7 +186,7 @@ Pentru a putea permite o comparare corectă a obiectelor trebuie să folosiți m
 [slide hideTitle]
 # Problemă cu Soluție: Car Info
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/RO/interactive-java-advanced-defining-classes-23-car-info-solution-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/01-Defining-Classes/RO/interactive-java-advanced-defining-classes-23-car-info-solution-NEW2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Car Info" taskId="oop-basics-java-defining-classes-lab-Car-Info" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
