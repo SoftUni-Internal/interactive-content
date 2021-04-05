@@ -39,9 +39,9 @@ public class Student extends Person {
 ```
 Types of code reuse:
 
-- classes with the **same role**
+- Classes with the **same role**
 
-- classes with **IS-A** or **IS-A-SUBSTITUTE** relationships
+- Classes with **IS-A** or **IS-A-SUBSTITUTE** relationships
 
 - **Composition** and **Delegation**
 
