@@ -4,6 +4,8 @@
 
 # Programare Funcțională
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/RO/interactive-java-advanced-functional-programming-11-Functional-Programming-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Să continuăm cu o altă **paradigmă importantă** în programarea modernă: **programare funcțională**
 
 **Programarea funcțională** (FP) este programarea bazată pe compunerea **funcțiilor pure**, evitând în același timp starea partajată, datele modificabile și efectele secundare.
@@ -44,6 +46,8 @@ Ambele funcții nu au **efecte secundare**:
 [slide hideTitle]
 
 # Limbaje Funcționale de Programare
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/RO/interactive-java-advanced-functional-programming-12-Functional-programming-languages-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Există multe limbaje **de programare funcțională** și limbaje care integrează **paradigme funcționale** în dezvoltarea software-ului modern.
 
@@ -107,7 +111,7 @@ In this example, we have all needed **components** for a Java Function:
 
 # Funcții Pure: Demo
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/EN/interactive-java-advanced-functional-programming-11-12-Pure-functions-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/RO/interactive-java-advanced-functional-programming-11-12-Pure-functions-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 [/slide]
