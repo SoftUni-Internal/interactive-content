@@ -7,17 +7,17 @@
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-10-11-interfaces-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-A Java **interface** can have all the methods and variables that a class does, but the **methods** in the interface are **abstract** by default.
+A Java **interface** can have methods and variables as a class does, but all **methods** in an interface are **abstract** by default.
 
 **Interfaces** in Java specify a behavior that **classes** must **implement**.
 
-We use **interfaces** when we want to achieve **security**.
+We use **interfaces** when we need higher **security**.
 
 As we know, Java does not support "**multiple inheritance**". 
 
-However, we can achieve this using **interfaces** because the class can **implement** multiple interfaces.
+However, we can achieve this using **interfaces** because a class can **implement** multiple interfaces.
 
-In this **example** we can see how the **implementation** of `print()` is provided in the `Document` class:
+Here is an example of implementing an interface into a class:
 
 ``` java
 public interface Printable {        
@@ -36,7 +36,7 @@ class Document implements Printable {
   }
 
   public static void main(String args[]) {
-    Printable doc = new Document();    // We achieve polymorphism
+    Printable doc = new Document();    // Using polymorphism
     doc.print();  // Output: "Hello"
   }
 }
@@ -48,13 +48,13 @@ class Document implements Printable {
 
 # Static Methods in Interfaces
 
-**Static methods** in interfaces are those defined with the `static` keyword.
+**Static methods** in interfaces are those defined by the `static` keyword.
 
-The difference between the rest of the methods and the static methods is that we have to declare a complete definition of the **static method**.
+The difference between all other methods and static methods is that we must declare a complete definition of the **static method**.
 
 Further, when a given class implements our interface, it can not change the implementation of the given **static method**.
 
-Now, let us see an **example**:
+**Example**:
 
 ```java
 // Implementation class 
@@ -100,7 +100,7 @@ Hello, Override Method Here
 
 [slide hideTitle]
 
-# Extend Interface
+# Extending Interfaces
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-17-18-extend-interface-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -123,11 +123,11 @@ A class that **implements an interface** must **provide an implementation** for 
 [/slide]
 
 [slide hideTitle]
-# Difference Between Implement and Extends
+# Differences Between "Implements" and "Extends"
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-12-implements-vs-extends-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## Relationship Between Classes and Interfaces
+## The Relations Between Classes and Interfaces
 
 [image assetsSrc="Interfaces-and-Abstraction-example(0).png" /]
 
@@ -147,11 +147,11 @@ A class that **implements an interface** must **provide an implementation** for 
 
 [task-description]
 # Description
-Build a hierarchy from **classes** and **interfaces** for this UML diagram.
+Build a **classes** and **interfaces** heirarchy using this UML diagram.
 
 [image assetsSrc="interfaces-and-abstraction-example(5).png" /]
 
-**Your hierarchy has to be used with this code:**
+**Your implementation should work with this code:**
 
 ```java
 public static void main(String[] args) {
@@ -766,7 +766,7 @@ Extend the previous problem:
 
 [image assetsSrc="interfaces-and-abstraction-example(6).png" /]
 
-**Your hierarchy has to be used with this code:**
+**Your implementation should be able to work in the following context:**
 
 ```java
 public static void main(String[] args) {
@@ -1550,11 +1550,11 @@ Test Passed!
 
 [slide hideTitle]
 
-# Default Method
+# The Default Method
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-22-23-default-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Java 8 introduces the "Default method" feature.
+Java 8 introduced the "Default method" feature.
 
 This allows us to **add** different methods to the **existing interfaces** without breaking their current implementation.
 
@@ -1566,7 +1566,7 @@ public interface Drawable {
   }
 }
 ```
-We do not need implementation for **default methods**.
+We do not need an implementation for **default methods**.
 
 ``` java
 class TestInterfaceDefault {  
@@ -1588,11 +1588,11 @@ class TestInterfaceDefault {
 
 Another thing we can do since Java 8 is to **define** and **implement** `static` methods in interfaces.
 
-We can define static methods in interfaces identical to defining one in class. 
+We can define static methods inside interfaces the same way we would define one in a class. 
 
-They can be also invoked within other methods.
+These can also be invoked from within other methods.
 
-To understand better let's take a look at this example:
+To understand this better let us take a look at this example:
 
 ``` java
 public interface Car {
@@ -1604,7 +1604,7 @@ public interface Car {
 }
 ```
 
-Now if we want to calculate the **horsepower** of our car's engine, we just call our `getHorsePower()` method.
+If we want to calculate the numebr of **horsepowers** of our car's engine, we just call our `getHorsePower()` method.
 
 ``` java
 Vehicle.getHorsePower(480, 2500));
@@ -1623,11 +1623,11 @@ Vehicle.getHorsePower(480, 2500));
 [task-description]
 # Description
 
-**Build a hierarchy from classes and interfaces for this UML diagram.**
+**Using this UML diagram create the according class hierarchy.**
 
 [image assetsSrc="interfaces-and-abstraction-example(7).png" /]
 
-**Your hierarchy has to be used with this code:**
+**Your implementation should work with this code:**
 
 ```java
 public static void main(String[] args) {
@@ -2054,11 +2054,11 @@ Test Passed!
 [task-description]
 # Description
 
-**Build a hierarchy from classes and interfaces for this UML diagram.**
+**Create a code structure to follow the diagram.**
 
 [image assetsSrc="interfaces-and-abstraction-example(8).png" /]
 
-**Your hierarchy has to be used with this code:**
+**Your code should function in the following context:**
 
 ```java
 public static void main(String[] args) {
