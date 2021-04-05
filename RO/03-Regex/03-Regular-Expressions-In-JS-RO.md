@@ -1,4 +1,4 @@
-# Expresii regulate în JavaScript
+# Expresii Regulate în JavaScript
 
 [slide hideTitle]
 # Expresii Regulate în JavaScript
@@ -6,16 +6,16 @@
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-16-17-Regex-in-JS-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-În JavaScript, putem construi o expresie regulată în două moduri:
+În JavaScript, putem construi o expresie regulată în două moduri.
 
-Primul se numește **Expresie regulată literală** și oferă o compilație atunci când scriptul este încărcat.
+Primul se numește **expresie regulată literală** și oferă o compilație atunci când scriptul este încărcat.
 
-Expresia regex este între oblice.
+Expresia regex este între bare oblice.
 
 ```js
 let pattern = /[A-Za-z]+/g;
 ```
-Cea de-a doua se numește **Funcția constructor** `RegExp` și oferă o compilație runtime.
+Cel de-al doilea se numește **funcția constructor** `RegExp` și oferă o compilație runtime.
 
 Se folosește atunci când modelul provine dintr-o altă sursă.
 
@@ -29,9 +29,9 @@ let regExp = new RegExp('[A-Za-z]+', 'g');
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-18-Validating-string-by-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Prima metodă pe care o vom analiza este `.test ()`. Pur și simplu determină dacă există o potrivire.
+Prima metodă pe care o vom analiza este `.test()`. Aceasta determină dacă există o potrivire.
 
-În exemplul de mai jos testăm dacă avem o dată validă. Dacă facem acest lucru, rezultatul va fi **true**, altfel va fi **false**.
+În exemplul de mai jos testăm dacă avem o dată validă. Dacă avem, rezultatul va fi **true**, altfel va fi **false**.
 
 ```js live
 let text = 'Today is 2015-05-11';
@@ -46,11 +46,11 @@ console.log(containsValidDate);
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-19-Checking-for-matches-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Utilizați metoda `.match ()` pentru a verifica dacă există potriviri. 
+Utilizați metoda `.match()` pentru a verifica dacă există potriviri. 
 
-Returnează o matrice, care poate fi iterată cu ușurință după aceea.
+Aceasta returnează o matrice, care poate fi iterată cu ușurință după aceea.
 
-În exemplu, avem doar două potriviri.
+În acest exemplu, avem doar două potriviri:
 
 ```js live
 let text = 'Peter: 123 Mark: 456';
@@ -67,13 +67,13 @@ console.log(matches[1]);
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-20-Using-the-exce()-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Dacă potrivirea reușește, metoda `.exec()` returnează o matrice cu proprietăți suplimentare \: "index" și "input".
+Dacă potrivirea reușește, metoda `.exec()` returnează o matrice cu proprietăți suplimentare \: `index` și `input`.
 
-Actualizează proprietatea „lastIndex” a obiectului expresie regulată.
+Aceasta actualizează proprietatea `lastIndex` a obiectului de expresie regulată.
 
-Matricea returnată are textul potrivit ca primul element, apoi un articol pentru fiecare grup de captare parantetic al textului potrivit.
+Matricea returnată are textul potrivit ca prim element, apoi un element pentru fiecare grup de captare parantetic al textului potrivit.
 
-Dacă potrivirea eșuează, metoda `.exec()` returnează **null** și setează "lastIndex" la 0.
+Dacă potrivirea eșuează, metoda `.exec()` returnează `null` și setează `lastIndex` la 0.
 
 Este important să utilizați steagul global `g`.
 
@@ -90,13 +90,13 @@ while (result !== null) {
 
 
 [slide hideTitle]
-# Încloruirea cu Regex
+# Înlocuirea cu Regex
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-21-Replacing-with-regex-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Putem folosi metoda `.replace (regex, stringReplacement)` cu expresii regulate.
+Putem folosi metoda `.replace(regex, stringReplacement)` cu expresii regulate.
 
-Înlocuiește toate șirurile care se potrivesc cu șablonul și su modelul de înlocuire furnizată.
+Înlocuiește toate șirurile care se potrivesc cu șablonul cu modelul de înlocuire furnizat.
 
 ```js live
 let text = 'Peter: 123 Mark: 456';
@@ -114,7 +114,7 @@ console.log(result);
 
 Metoda `.matchAll()` returnează un iterator al tuturor rezultatelor care se potrivesc unui șir cu o expresie regulată, inclusiv grupuri de capturare.
 
-Funcționează similar cu metoda `.exec()`. Singura diferență este că obținem toate potrivirile simultan într-o formă de matrice.
+Funcționează similar cu metoda `.exec()`. Singura diferență este că obținem toate potrivirile simultan sub formă de matrice.
 
 Rezultatul este o matrice de matrice, de aceea în acest exemplu folosim operatorul spread.
 
@@ -134,7 +134,7 @@ console.log(array[1][0]);
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-23-Splitting-with-regex-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Metoda `.split()` împarte textul după șablon și returnează o serie de șiruri.
+Metoda `.split()` împarte textul după un tipar și returnează o matrice de șiruri.
 
 ```js live
 let text = '1   2 3      4';
@@ -174,25 +174,25 @@ function adapter(input, code) {
 
 # Descriere
 
-Scrieți o funcție JavaScript pentru a se potrivi cu numele complete dintr-o listă de nume și imprimați-o pe consolă.
+Scrieți o funcție JavaScript pentru a se potrivi cu numele complete dintr-o listă de nume și imprimați-le pe consolă.
 
 Mai întâi, scrieți o expresie regulată pentru a se potrivi cu un nume complet valid, în conformitate cu aceste condiții:
 
 Un nume complet valid are următoarele caracteristici:
 - Este format din două cuvinte
 - Fiecare cuvânt începe cu o literă mare
-- După prima literă, aceasta conține doar litere mici după aceea
+- După prima literă, acesta conține doar litere mici
 - Fiecare dintre cele două cuvinte trebuie să aibă cel puțin două litere
 - Cele două cuvinte sunt separate de un singur spațiu
 
 Pentru a vă ajuta, am prezentat mai mulți pași:
-1. Utilizați un tester de regex online, cum ar fi: [Regex101](https://regex101.com)
+1. Utilizați un tester de expresii regulate online, cum ar fi: [Regex101](https://regex101.com)
 2. Verificați modul de utilizare a seturilor de caractere \ (notate cu paranteze drepte \- \"\[\]\"\)
-3. Specificați că doriți două cuvinte cu un spațiu între ele \ (caracterul spațial \ '\' și nu orice simbol al spațiului alb \)
-4. Pentru fiecare cuvânt, specificați că ar trebui să înceapă cu o literă mare, utilizând un set de caractere. Caracterele dorite se află într-un interval \: de la A la Z
+3. Specificați că doriți două cuvinte cu un spațiu între ele \ (caracterul pentru spațiu \ '\' și nu orice simbol pentru spațiu alb \)
+4. Pentru fiecare cuvânt, specificați că trebuie să înceapă cu o literă mare, utilizând un set de caractere. Caracterele dorite se află într-un interval \: de la A la Z
 5. Pentru fiecare cuvânt, specificați că prima literă este urmată doar de litere mici, una sau mai multe \- utilizați un alt set de caractere și cuantificatorul corect
-6. Pentru a preveni capturarea literelor pe linii noi, puneți \\**b** la începutul și la sfârșitul regexului
-Acest lucru va asigura că ceea ce precede și ceea ce urmează potrivirea este o limită de cuvânt ca o nouă linie
+6. Pentru a preveni capturarea literelor pe linii noi, puneți \\**b** la începutul și la sfârșitul expresiei regulate
+Acest lucru va asigura că ceea ce precede și ceea ce urmează după potrivire este o limită de cuvânt precum o nouă linie
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -341,23 +341,22 @@ function adapter(input, code) {
 
 # Descriere
 
-Scrieți o expresie regulată pentru a se potrivi cu un număr de telefon valid de la Sofia.
+Scrieți o expresie regulată pentru a se potrivi cu un număr de telefon valid din Sofia.
 
 După ce găsiți toate numerele de telefon valide, imprimați-le pe consolă, separate printr-o virgulă și un spațiu `,`.
 
 Un număr valid are următoarele caracteristici:
 - Începe cu **+359**
-- Apoi, este urmat de codul de zonă `(întotdeauna 2)`
+- Apoi, este urmat de codul de zonă **(întotdeauna 2)**
 
 După aceea, este urmat de numărul în sine:
 - Numărul este format din 7 cifre (separate în două grupuri de 3 și respectiv 4 cifre)
 - Diferitele părți sunt separate fie de un spațiu, fie de o cratimă "\-"
 
 Puteți utiliza următoarele proprietăți RegEx pentru a ajuta la potrivirea:
-- Folosiți cuantificatoare pentru a potrivi un anumit număr de cifre
+- Folosiți cuantificatori pentru a potrivi un anumit număr de cifre
 - Utilizați un grup de capturare pentru a vă asigura că delimitatorul este doar unul dintre caracterele permise (spațiu sau cratimă) și nu o combinație a ambelor \(de ex. \+359 2 \-111 111 are delimitatoare mixte, este nevalid \)
-
-Folosiți o referință de grup pentru a realiza acest lucru.
+      - folosiți o referință de grup pentru a realiza acest lucru.
 - Adăugați o limită de cuvânt la sfârșitul potrivirii pentru a evita potriviri parțiale (ultimul exemplu din partea dreaptă)
 - Asigurați-vă că înainte de semnul **+** există fie un spațiu, fie este începutul șirului
 
