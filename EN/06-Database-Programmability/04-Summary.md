@@ -1,9 +1,9 @@
 [slide hideTitle]
 # Summary
 
-# In this lesson we learned:
+# In this lesson you learned:
 
-- What is User-Defined-Function.
+- What a User-Defined-Function is
     ```java
     CREATE FUNCTION CalculateAmount(userid INT) RETURNS float(10,2)
     BEGIN
@@ -13,9 +13,9 @@
     END  
     ```
 
-- That we can optimize with UDF.
+- We can optimize with UDF
 
-- Triggers, how to create them and that we can use them before and after a certain event.
+- Triggers: how to create them and how to use them before and after a certain event.
     ```java
     CREATE TABLE account (
     acct_number INT PRIMARY KEY,
@@ -42,12 +42,10 @@
     CALL usp_select_employees_by_seniority(15);
     ```
 
-# In the next lesson, we will learn:
+# In the next lesson, you will learn:
 
-- What are transactions.
-
-- How transactions work.
-
-- How they improve the security and consistency.
+- Transations
+    - Definition
+- Improving the security and consistency
 
 [/slide]
