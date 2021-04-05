@@ -126,4 +126,3 @@ In the example above, the class `[abc]` matches any character that is either `a`
 The example above matches the **entire string** that has a length between **6** and **12** characters.
 
 [/slide]
-
