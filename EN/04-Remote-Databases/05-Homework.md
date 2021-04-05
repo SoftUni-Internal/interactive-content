@@ -6,7 +6,6 @@
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Remote-Databases-Homework-BOOKS.zip) **for this task.**
 
-[image assetsSrc="Remote-Databases(20).png" /]
 
 The following REST services will be created automatically to access your data:
 
