@@ -35,7 +35,7 @@ public class Container<T> {
 }
 ```
 
-Тhis example illustrates a class with multiple parameters:
+Тhe following example illustrates a class that accepts multiple parameters:
 
 ```java
 public class Container<K, V> {
@@ -77,7 +77,7 @@ class List<T> {
 
 Here, the type parameter is used in the signature of the `add()` method.
 
-It is also used to describe the **return value** of `remove()`.
+It is also used to describe the **return value** of the `remove()` method.
 
 [/slide]
 
@@ -92,7 +92,7 @@ It is also used to describe the **return value** of `remove()`.
 [task-description]
 ## Description
 
-Create a class "**Jar**" that can store anything.
+Create a class called "**Jar**" that can store anything.
 
 It should have two public methods:
 
@@ -118,7 +118,7 @@ To submit your solution, create a **zip** file with your whole package containin
 
 [image assetsSrc="generics-example(2).png" /]
 
-If you did not create a **package**, just select your classes and **zip** them.
+If you did not create a **package**, select your classes and **zip** them.
 
 [/task-description]
 [tests]
@@ -323,13 +323,13 @@ public interface Mathematics<T extends Number> {
     int powerOf(T number);
 }
 ```
-In the example above, we declare the Mathematics interface which declares the method `powerOf()`.
+In the example above, we declare the **Mathematics** interface, which declares the method `powerOf()`.
 
-The type parameter `T` extends Number to restrict the type of objects that can be used in the parameterized type.
+The type parameter `T` extends **Number** to restrict the type of objects that can be used in the parameterized type.
 
 The "**Number**" is a superclass of all numeric classes, such as "**Integer**", "**Float**", and "**Double**".
 
-So, if we try to use another class that is **not a subclass of Number**, the compiler will throw "**compile-time-error**".
+So, if we try to use another class that is **not a subclass of Number**, the compiler will throw а "**compile-time error**".
 
 [/slide]
 
@@ -345,12 +345,14 @@ So, if we try to use another class that is **not a subclass of Number**, the com
 [task-description]
 ## Description
 
-Create a class "**ArrayCreator**" with a method and a single overload to it:
+Create a class called "**ArrayCreator**" that will contain a method and a single overload to it:
 
 - `static T[] create(int length, T item)`
 - `static T[] create(Class<T> class, int length, T item)`
 
-The method should return an **array with the given length** and every element should be set to the given **default** item.
+The method should return an **array with the given length**. 
+
+Each element should be set to the given **default** item.
 
 
 # Example
