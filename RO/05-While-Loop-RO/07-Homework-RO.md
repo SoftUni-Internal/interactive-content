@@ -1595,34 +1595,6 @@ Not enough detergent, 100 ml. more necessary!
 [test]
 [input]
 2
-53
-65
-55
-End
-[/input]
-[output]
-Detergent was enough!
-118 dishes and 55 pots were washed.
-Leftover detergent 85 ml.
-[/output]
-[/test]
-[test]
-[input]
-1
-10
-15
-10
-12
-13
-30
-[/input]
-[output]
-Not enough detergent, 100 ml. more necessary!
-[/output]
-[/test]
-[test]
-[input]
-2
 25
 50
 75
