@@ -5,9 +5,9 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-20-21-reusing-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- Derived classes **can access all public** and **protected** members
+- Derived classes **can access all public** and **protected** members of the base class
 - Derived classes can access **default** members **if they are in the same package**
-- **Private** fields cannot be accessed from the **Subclasses** but they are instantiated, as the **Parent** needs them for its internal logic
+- **Private** fields cannot be accessed from the **Subclasses** but they are instantiated, as the **Parent** class needs them for its internal logic
 
 ```java
 class Person {
@@ -26,11 +26,11 @@ class Person {
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-22-shadowing-variables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- Derived classes **can hide/shadow** Superclass variables by implementing a unit with the same name for itself
+- Derived classes **can hide/shadow** Superclass variables by implementing a unit with the same name
 
 
 - When you are using **shadowing**, you can rebase an entire method
-  * this means changing its parameters and logic inside, but not its return type
+  * this means changing its parameters and logic, but not its return type
 
 ```java
 class Person { 
@@ -56,7 +56,7 @@ class Patient extends Person {
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-23-shadowing-variables-access-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- Use **super** and **this** to specify member access
+- We use **super** and **this** to specify member access
 
 ```java
 class Person { protected int weight; }
@@ -78,17 +78,17 @@ class Patient extends Person {
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-24-overriding-derived-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Overriding** is a mechanism in which we can give a custom implementation of a given class method down the hierarchy.
+**Overriding** is a mechanism in which we can set a custom implementation of a given class method down the hierarchy.
 
 It is done by using the `@Override` keyword.
 
-It is an important tool as it is connected to another pillar of the OOP **polymorphism**.
+It is an important tool as it is connected to another foundational pillar of OOP - **polymorphism**.
 
-The difference between **shadowing** and **overriding** is that when you override, you cannot change the parameters.
+The difference between **shadowing** and **overriding** is that when you override, you cannot change method parameters.
 
-Other than that, when we have a **variable of a base class type** and we hold a **Subclass object** if we have an overridden class member and we call it, it will use **the logic declared by the Subclass overriding it**.
+When we override a method from the base class in a subclass and call it, the logic of the overridden method will be executed, not the basse one.
 
-By contrast, if you use **shadowing**, it will always call the **base class implementation**.
+If we use **shadowing**, this will always invoke the **base class implementation**.
 
 
 ```java
@@ -121,7 +121,7 @@ public class Student extends Person {
 
 - `final` – defines a method that **cannot be overridden**
   - we should use this tool when we want to preserve our method implementation down the class hierarchy
-  - `final` can be declared in any derived class and it gets in power for the classes children down the hierarchy
+  - `final` can be declared in any derived class and it remains for all deriving classes down the hierarchy
 
 ```java
 public class Animal {
@@ -155,11 +155,11 @@ public class MyMath extends Math { }     // Error…
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-27-inheritance-benefits-abstraction-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- With inheritance, we can provide an abstraction to the classes we use
+- Using inheritance, we provide an abstraction to the classes we use
 - We can reuse code, less code means fewer bugs
 - We can achieve **polymorphism**
 - Inheritance provides a clear model structure, which is easy to understand
-- With inheritance, if we have a bug in the parent class, we can fix it for all child classes as well
+- With inheritance, if we identify a bug in a parent class, we can fix it for all child classes as well
 
 [image assetsSrc="inheritance-example(13).png" /]
 
@@ -184,7 +184,7 @@ people.add(student);
 
 - We can extend a class that we can not otherwise change, implementing the custom logic we need
 
-If we take notice of the picture, we see an extension of the `Lists<>` logic, when we derive, although we can not see the original implementation, we can write more methods or parameters to our custom class, therefore expanding the original class's logic.
+On the diagram, we can notice that our CustomArrayList extends the ArrayList class. Keep in mind that we are not allowed to change the original implementation. However, we can add more methods or parameters to our class. That way we can expand the behavior of the parent class.
 
 [image assetsSrc="inheritance-example(14).png" /]
 
@@ -207,9 +207,9 @@ public class MyArrayList<E> extends ArrayList<E>{
 [task-description]
 # Description
 
-Create a **RandomArrayList** class that has all the functionality of an **ArrayList**.
+Create a **RandomArrayList** class that has all standard functionality of an **ArrayList**.
 
-Add additional function that **returns** and **removes** a random element from the list.
+Add an additional function that **returns** and **removes** a random element from the list.
 
 - Public method: **getRandomElement(): Object**
 
