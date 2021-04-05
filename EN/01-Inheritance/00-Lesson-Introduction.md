@@ -10,9 +10,9 @@
 
 **1. Inheritance**
 
-- What is **inheritance** and how it is done
+- Definition
 
-- What benefits does it bring
+- Why does using Inheritance improve program code 
 
 **2. Class Hierarchies**
 
@@ -32,6 +32,6 @@
 
 **5. When to Use Inheritance**
 
-- The most common use cases for inheritance
+- Common use cases
     
 [/slide]
