@@ -34,7 +34,7 @@ function adapter(input, code) {
 
 Creați un program care calculează și imprimă salariul total:
 
-- Primiți numărul de zile lucrătoare pentru luna curentă și salariul pe zi (într-o matrice)- numere întregi
+- Veți primi numărul de zile lucrătoare pentru luna curentă și salariul pe zi (într-o matrice) - numere întregi
 - Calculați salariul lunar al unui angajat
 - Imprimați rezultatul pe consolă
 
@@ -883,7 +883,7 @@ function adapter(input, code) {
 Creați un program care verifică dacă un rollercoaster poate porni:
 
 Primele trei numere din intrare sunt următoarele: 
-   - numărul de **locuri** 
+  - numărul de **locuri** 
 
   - **vârsta minimă a pasagerilor**
 

@@ -12,9 +12,9 @@ Câteva exemple de bază sunt:
 - A lista ceva de pe ecran
 - A multiplica două numere
 
-Când avem o succesiune de comenzi, urmându-se unа pe cealaltă- aceasta ar putea fi numită un **program de computer**.
+Un program de computer este o secvență de instrucțiuni pe care un computer le poate interpreta și executa.
 
-Textul, care este folosit pentru realizarea unui program de computer, se numește **cod de program** sau **cod sursă**, sau adesea doar **cod**.
+Textul care este folosit pentru realizarea unui program de computer se numește **cod de program** sau **cod sursă**, sau adesea doar **cod**.
 
 Exemplu de comandă a unui computer:
 
@@ -39,7 +39,7 @@ let size = 5;
 console.log("Size = " + size);
 console.log("Area = " + size * size);
 ```
-Programul de mai sus definește o funcție care deține o secvență de **3 comenzi** și o numește după aceea:
+Programul de mai sus definește o funcție care deține o secvență de **3 comenzi** și o apelează după aceea:
 
 - Declară și atribuie o **variabilă**: `let size = 5`
 
@@ -54,11 +54,11 @@ Size = 5
 Area = 25
 ```
 
-**Vom explica în detaliu cum să scriem programe în JavaScript**, de ce trebuie să definim o **funcție** și apoi cum să aplicăm funcția - puțin mai târziu.
+**Vom explica în detaliu cum să scriem programe în JavaScript**, de ce trebuie să definim o **funcție** și apoi cum să apelăm funcția - puțin mai târziu.
 
 Deocamdată, să spunem doar că **limbajul de programare JavaScript** necesită tot codul de mai sus pentru a executa o secvență de comenzi.
 
-Pentru a **forma corect comenzile**, ar trebui să cunoaștem **sintaxa** și **semantica** limbii cu care lucrăm, în cazul nostru - JavaScript.
+Pentru a **forma corect comenzile**, trebuie să cunoaștem **sintaxa** și **semantica** limbajului cu care lucrăm, în cazul nostru - JavaScript.
 
 De aceea, vom învăța **principiile** de a scrie la computer **cod pas cu pas**, cu sintaxa și logica utilizate în JavaScript.
 
@@ -83,15 +83,14 @@ De exemplu, dacă vrem să fierbem un ou, vom urma **câțiva pași** (un algori
 
 - Așteptați să fiarbă apa și scoateți ouăle după 5 minute
 
-În mod similar, în programare **programul de calculator execută algoritmi**: o succesiune de comenzi, necesare pentru finalizarea unei anumite sarcini.
-
 De exemplu, pentru a aranja o secvență de numere într-o **ordine crescătoare**, este necesar un algoritm pentru a găsi **cel mai mic număr** și a-l plasa la **începutul secvenței**.
 
-Apoi găsiți **cel mai mic număr** din numerele rămase și puneți-l în **locul doi** și **repetați acești pași** până când algoritmul trece prin el și aranjeaza toate numerele.
+Apoi, pentru a găsi **cel mai mic număr** din numerele rămase, puneți-l pe **locul doi** și **repetați acești pași** până când algoritmul parcurge tot și aranjează toate numerele.
 
 Un instrument foarte convenabil pentru scrierea **codului de programare**, utilizat pentru executarea programelor și a multor operații legate de programare, este un **mediu de dezvoltare integrat**.
 
 Acesta este un exemplu foarte simplu de algoritm care găsește cel mai mic număr dintr-o matrice.
+
 Vom discuta despre matrice mai târziu.
 
 ``` js live
@@ -108,7 +107,7 @@ console.log(min)
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-10-Console-Based-JavaScript-Program-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Să vedem un program simplu care ia **o sumă de bani în dolari (USD)** - un număr întreg, îl convertește în **Euro (EUR)** înmulțindu-l cu cursul de schimb și imprimă rezultatul obținut.
+Să vedem un program simplu care ia **o sumă de bani în dolari (USD)** , o convertește în **Euro (EUR)** înmulțindu-o cu cursul de schimb și imprimă rezultatul obținut.
 
 Acesta este un program de 3 comenzi consecutive:
 
@@ -126,7 +125,7 @@ convertUsdToEur("5");
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-11-12-Console-Based-JavaScript-Program-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-În acest exemplu, putem importa și utiliza o funcție în pagina noastră de web.
+În acest exemplu, putem importa și utiliza o funcție în pagina noastră web.
 
 Folosind blocul de cod din exemplu, creăm o casetă de text ca în diapozitiv.
 
@@ -140,8 +139,6 @@ Folosind blocul de cod din exemplu, creăm o casetă de text ca în diapozitiv.
 ```
 
 Este important să introduceti funcția `convertUsdToEur()` în scriptul nostru de html.
-
-De asemenea, avem două casete de text - **Dollars:** and **Euro:**.
 
 [/slide]
 

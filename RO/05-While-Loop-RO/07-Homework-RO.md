@@ -505,7 +505,7 @@ Creați un program care calculează punctele bonus, pe baza următoarelor reguli
 
 * Veți primi un număr **întreg** **x** și o **matrice** de pe consolă
 * Continuați să procesați numerele întregi din matrice până când găsiți **un număr egal cu x**
-* Când îl găsiți, înmulțiți valoarea numărului **dinaintea acestuia** cu 2 și imprimați-l
+* Când îl găsiți, înmulțiți valoarea numărului **dinaintea acestuia** cu 2 și imprimați rezultatul
 
 # Exemplu
 | **Intrare** | **Ieșire** |
@@ -628,7 +628,6 @@ Creați un program care imprimă o secvență de numere până la valoarea intr�
 | sequence(8) | 1 |
 ||3|
 || 7|
-|| |
 
  | **Intrare** | **Ieșire** |
 | --- | --- |

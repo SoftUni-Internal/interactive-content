@@ -30,7 +30,7 @@ Când îndepliniți acea condiție, bucla se oprește.
 
 Pentru a face asta, sunt folosite așa-zisele bucle for.
 
-Să vedem un exemplu de buclă care trece secvențial prin numerele de la 1 la 10 si le afișează.
+Să vedem un exemplu de buclă care trece secvențial prin numerele de la 1 la 10 și le afișează.
 
 ```js live
 for (let i = 1; i <= 10; i += 1) {

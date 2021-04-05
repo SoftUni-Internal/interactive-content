@@ -6,7 +6,7 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/06-Nested-Loops/JS-basics-nested-loops-15-16-nested-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-O buclă imbricată este o construcție prin care o buclă este plasată în interiorul \(interior\) corpului celeilalte \(exterior\).
+O buclă imbricată este o construcție prin care o buclă este plasată în interiorul \(interioară\) corpului celeilalte \(exterioară\).
 
 Pot exista atât bucle imbricate "**for**", cât și bucle imbricate "**while**".
 

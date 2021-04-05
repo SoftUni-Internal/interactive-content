@@ -9,13 +9,15 @@
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-9-10-What-is-an-Array-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-Știm deja cum să memoram o singură valoare într-o variabilă. Matricele ne permit să memorăm mai multe valori într-o singură variabilă. 
+Știm deja cum să memorăm o singură valoare într-o variabilă. 
+
+Matricele ne permit să memorăm mai multe valori într-o singură variabilă. 
 
 Matricea este o **colecție** care este **ordonată** și **poate fi schimbată**.
 
 Matricea este folositoare pentru a **păstra** o secvență de **date**.
 
-Sunt scrise între **paranteze pătrate** și valorile din interior sunt **separate prin virgulă**.
+Acestea sunt scrise între **paranteze drepte** și valorile din interior sunt **separate prin virgulă**.
 
 ```js
 let fruit = ['apple', 'pear', 'cherry'];
@@ -25,33 +27,33 @@ Valorile unei matrice se numesc elemente.
 
 Imaginați-vă un tren, care are vagoane și fiecare vagon are pasageri. 
 
-Acum imaginați-vi-l  o matrice cu numere întregi, în care elementele reprezintă vagoanele și valorile lor reprezintă pasagerii.
+Acum imaginați-vi-l ca o matrice cu numere întregi, în care elementele reprezintă vagoanele și valorile lor reprezintă pasagerii.
 
 Uitați-vă la această imagine:
 
 [image assetsSrc="list-example.png" /]
 
-Sunt **7 vagoane** (**elemente**). Fiecare are **pasageri** (**o valoare**). `[3, 4, 10, 7, 5, 0, 6]`
+Există **7 vagoane** (**elemente**). Fiecare are **pasageri** (**o valoare**). `[3, 4, 10, 7, 5, 0, 6]`
 
 Primul element din matrice se află pe poziția `0`, și ultimul se află pe poziția `length-1`. 
 
-În acest curs **nu vom** inițializa o matrice, doar vom accepta vectorul ca un parametru al funcției.
+În acest curs **nu vom** inițializa o matrice, doar vom accepta matrice ca un parametru al unei funcții.
 
 [/slide]
 
 [slide hideTitle]
 
-# Citirea Dintr-o Matrice
+# Citirea dintr-o Matrice
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/03-Conditions-Advanced/02-conditional-statements-advanced-js-11-Reading-from-Arrays-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Fiecare element dintr-o matrice are un **index** (**poziție**) după care poate fi **accesat**.
+Fiecare element dintr-o matrice are un **indice** (**poziție**) după care poate fi **accesat**.
 
-**Indecșii** dintr-o matrice **încep mereu de la 0** și **ultimul index** este **egal** cu **numărul de elemente minus 1**.
+**Indicii** dintr-o matrice **încep mereu de la 0** și **ultimul indice** este **egal** cu **numărul de elemente minus 1**.
 
-Pentru a accesa un element al matricei, folosim **parantezele pătrate și indexul acestuia.**
+Pentru a accesa un element al matricei, folosim **parantezele drepte și indicele acestuia.**
 
-În acest exemplu fiecare simbol se află pe un index diferit: 
+În acest exemplu fiecare simbol se află pe un indice diferit: 
 
 ```js live
 let train = [3, 4, 10, 7, 5, 0, 6];

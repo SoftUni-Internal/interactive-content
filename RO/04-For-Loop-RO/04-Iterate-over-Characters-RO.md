@@ -54,7 +54,7 @@ Coloanele pe care le-ați folosi cel mai probabil în scopul acestui curs sunt c
 
 De exemplu, valoarea zecimală a caracterului "**a**" este **97** și cea corespunzătoare lui `@` este `64`.
 
-## Conversii de Caractere
+## Conversiuni de Caractere
 
 Convertiți un număr ASCII / Unicode într-un caracter:
 

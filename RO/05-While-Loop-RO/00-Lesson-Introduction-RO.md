@@ -20,7 +20,7 @@
 **3. Operatorul Break**
 - Când utilizăm operatorul **break** 
 
-**4. Bucla infinită**
+**4. Bucla Infinită While**
 
 
 [/slide]

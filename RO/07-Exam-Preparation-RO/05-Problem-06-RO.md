@@ -39,7 +39,7 @@ Nu va exista situația în care două filme să aibă un număr egal de puncte.
 
 Rețineți următoarele:
 
-- Pentru fiecare literă mică din titlu, veți extrage din sumă, lungimea titlului înmulțită cu 2
+- Pentru fiecare literă mică din titlu, veți extrage din sumă lungimea titlului înmulțită cu 2
 
 - Pentru fiecare literă majusculă din titlu, lungimea titlului filmului trebuie scăzută din sumă
 
@@ -70,16 +70,10 @@ Imprimați pe consolă:
 
 [hints]
 [hint]
-
-Mai întâi vom primi **Matrix**, prima literă este M cu valoarea de 77f, este o literă majusculă, așa că vom scădea din aceasta lungimea titlului 77 \- 6 \= 71.
+Atunci când primim primul film, trebuie să calculăm punctele acestuia. Vom proceda în mod similar cu fiecare film până la primirea comenzii "**STOP**".
 [/hint]
 [hint]
-A doua literă are valoarea 97 și scădem lungimea titlului \* 2 din suma 97 \- 12 = 85.
-
-În mod similar, procedăm cu fiecare literă care urmează, până ajungem la rezultatul final de 563.
-[/hint]
-[hint]
-După ce am primit comanda "**STOP**" , imprimăm titlul cu cea mai mare valoare, care este **Breaking** cu suma de 878.
+După ce am primit comanda "**STOP**" , tipărim titlul cu cea mai mare valoare.
 [/hint]
 
 [/hints]

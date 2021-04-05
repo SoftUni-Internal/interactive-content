@@ -44,7 +44,7 @@ switch (selector) {
 }
 ```
 
-## În cadrul lecței următoare veți afla:
+## În lecția următoare veți afla:
 
 - Ce este bucla for
 

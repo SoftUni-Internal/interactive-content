@@ -259,7 +259,7 @@ function adapter(input, code) {
 
 Veți primi un număr întreg care reprezintă **numărul** inițial de puncte.
 
-**Punctele bonus** sunt oferite, în funcție de regulile descrise mai jos. 
+**Punctele bonus** sunt oferite în funcție de regulile descrise mai jos. 
 
 Creați un program care calculează:
 

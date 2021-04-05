@@ -476,7 +476,7 @@ function adapter(input, code) {
 # Descriere
 Creați un program care economisește banii necesari pentru a vizita o destinație dată:
 
-* Veți primi o **destinație** și un **buget necesar** pentru a o vizită 
+* Veți primi o **destinație** și un **buget necesar** pentru a o vizita 
 * Continuați să procesați numere - sume de bani, până când bugetul este **suficient** pentru a face călătoria
 * Dacă primiți comanda **End** programul se termină
 
@@ -764,7 +764,7 @@ Creați un program care generază coduri PIN unice:
 * Generați **Coduri PIN unice de 3 cifre** care îndeplinesc următoarele **condiții**:
   * **prima** cifră  nu trebuie să fie mai mare decât n1
   * **a doua** cifră nu trebuie să fie mai mare decât n2
-  * **a treia** cifră  nu trebuie să fie mai mare decât n3
+  * **a treia** cifră nu trebuie să fie mai mare decât n3
   * prima cifră și cea de-a treia cifră trebuie să fie pare
   * cea de-a doua cifră trebuie să fie **un număr prim** din intervalul \[2 ... 7\]
 
