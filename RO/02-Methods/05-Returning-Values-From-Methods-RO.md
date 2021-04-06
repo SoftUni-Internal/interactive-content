@@ -271,9 +271,6 @@ public class Main {
 ## Descriere
 Creați o metodă care calculează și returnează valoarea unui număr ridicat la o anumită putere.
 
-## Sfat
-Folosiți **BigDecimal**.
-
 ## Exemplu
 |**Intrare**|**Ieșire** |
 | --- | --- |
@@ -284,6 +281,12 @@ Folosiți **BigDecimal**.
 | --- | --- |
 | 5.5 | 166.375 |
 | 3 |  |
+
+[hints] 
+[hint] 
+Folosiți **BigDecimal**.
+[/hint] 
+[/hints]
 
 [/task-description]
 [code-io /]
