@@ -143,7 +143,7 @@ Folosind **clasa Person**, scrieți un program care citește de pe consolă **N 
 ### Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
-| 3 | John - 31 | 
+| 3 | John - 31 |
 | Peter 12 | Steven - 48 |
 | John 31 | |
 | Steven 48 | |
@@ -151,7 +151,7 @@ Folosind **clasa Person**, scrieți un program care citește de pe consolă **N 
 ### Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
-| 5 |  Leo - 44  | 
+| 5 |  Leo - 44  |
 | Nick 33 | Nick - 33 |
 | John 88 | John - 88|
 | George 22 | |
@@ -185,6 +185,36 @@ Peter 11
 Leo - 44
 Nick - 33
 John - 88
+[/output]
+[/test]
+[test]
+[input]
+11
+A 40
+B 43
+C 54
+Dencho 31
+Encho 99
+Mincho 32
+Noncho 123
+Oncho 100
+Pesho 321534
+Suzi 3213
+Zuzi 32131
+[/input]
+[output]
+A - 40
+B - 43
+C - 54
+Dencho - 31
+Encho - 99
+Mincho - 32
+Noncho - 123
+Oncho - 100
+Pesho - 321534
+Suzi - 3213
+Zuzi - 32131
+
 [/output]
 [/test]
 [test]
