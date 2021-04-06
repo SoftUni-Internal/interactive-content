@@ -5,7 +5,7 @@
 
 ## In this lesson you learned:
 
-- Generics add type safety
+- Generics ensure type safety
 
 ```java
 List<String> strings = new ArrayList<String>();
