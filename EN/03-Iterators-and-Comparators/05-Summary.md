@@ -13,7 +13,7 @@ void method(int... b){
 }
 ```
 
-- Classes can be nested to group them logically
+- Classes can be nested in order to group them logically
 
 ```java
 class OuterClass
@@ -65,7 +65,7 @@ public class Employee implements Comparable<Employee> {
 ## In the next lesson you will learn:
 
 - Functional programming
-- Lambda
+- Lambda expressions
 - Stream API
 
 [/slide]
