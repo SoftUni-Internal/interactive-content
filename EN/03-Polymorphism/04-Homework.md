@@ -6,17 +6,17 @@
 
 [task-description]
 # Description
-Write a program that models two vehicles (**Car** and **Truck**) and will be able to simulate **driving** and **refueling** them in the summer. 
+Create a program that holds the classes to represent two vehicle types (**Car** and **Truck**). It should simulate **driving** and **refueling** the vehicles.
 
-**Car** and **Truck** both have **fuel quantity**, **fuel consumption in liters per kilometer** and can be **driven given distance** and **refueled with given liters**. 
+The **Car** and **Truck** should both have: **fuel quantity**, **fuel consumption in liters per kilometer** and can be **driven a given distance** and **refueled with a given number of liters of gas**. 
 
-But in the **summer** both vehicles use an air conditioner and their **fuel consumption** per kilometer is **increased by 0.9** liters for the **car** and with **1.6** liters **for the truck**. 
+Druring the **summer** both vehicles are air conditioned so their **fuel consumption** per kilometer gets **increased by 0.9** liters for the **car** and with **1.6** liters **for the truck**. 
 
-Also the **truck** has a tiny hole in his tank and when it gets **refueled** it gets only **95%** of given **fuel**. 
+Also the **truck** has a hole in its tank and when it gets **refueled** it retains only **95%** of the total **re-filled amount**. 
 
-The **car** has no problems when refueling and adds **all given fuel to its tank**. 
+The **car** has no such problems and can be **refilled without loosing any of the gas**. 
 
-If the vehicle **cannot** travel the given distance, its fuel does not change.
+If the vehicle **cannot** travel the specified distance, its fuel level remains unchanged.
 
 ## Input
 - On the **first line** - information about the car in format "**Car** \{**fuel quantity**\} \{**liters per km**\}"
@@ -28,15 +28,15 @@ If the vehicle **cannot** travel the given distance, its fuel does not change.
     - "**Refuel Car** \{**liters**\}"
     - "**Refuel Truck** \{**liters**\}"
 ## Output
-After each **Drive** command, print whether the Car/Truck was able to travel the given distance in this format if it is successful. 
+After each **Drive** command, print whether the Car/Truck was able to travel the given distance in this format:
 
-**Print the distance with two digits after the decimal separator except trailing zeros**. 
+**Print the distance formatted to two digits after the decimal separator except trailing zeros**. 
 
 Use the **DecimalFormat** class: "**Car/Truck travelled** \{**distance**\} **km**"
 
-Or if it is not: "**Car/Truck needs refueling**"
+If there isnt enogh fuel: "**Car/Truck needs refueling**"
 
-Finally, print the **remaining fuel** for both car and truck rounded **2 digits after the decimal separator** in the format:
+Finally, print the **remaining fuel** for both the car and the truck rounded **to the second decimal place** in the format:
 
 "**Car:** \{**liters**\}
 
@@ -349,30 +349,31 @@ Truck: 176.18
 
 [task-description]
 # Description
-Use your solution of the previous task as a starting point and add more functionality. 
+Use your solution to the previous task as a starting point and add the necessary functionality. 
 
-Add a new vehicle – **Bus**. 
+Add a new vehicle class – **Bus**. 
 
-Now every vehicle has **tank capacity** and fuel quantity **cannot fall (set) below 0** (If fuel quantity becomes less than 0, **print** to the console "**Fuel must be a positive number**").
+Every vehicle has **tank capacity** and fuel quantity **cannot fall below 0** (If the fuel reserve becomes less than 0, **print** "**Fuel must be a positive number**" to the console).
 
-The **vehicles cannot be filled** with fuel **more than their tank capacity**. 
+A vehicle's tank capacity cannot be exceeded. 
 
-If you **try to put more fuel** in the tank than the **available space**, print on the console "**Cannot fit fuel in tank**" and **do not add any fuel** in the vehicle's tank.
+If we **try to put more fuel** in the tank than the **available space**, print out "**Cannot fit fuel in tank**" and **do not add any fuel** in the vehicle's tank.
 
-Add a **new command** for the bus. 
+Add a **new function** in the bus class:
 
 The **bus** can **drive with or without people**. 
 
-If the bus is driving **with people**, the **air-conditioner is turned on** and its **fuel consumption** per kilometer **is increased by 1.4 liters**. 
+If the bus **has passengers on it** - its **air-conditioner is turned on** and its **fuel consumption** per kilometer **is increased by 1.4 liters**. 
 
-If there are **no people in the bus** when driving the air-conditioner is **turned off** and **does not increase** the fuel consumption.
+If there are **no people on the bus** when driving the air-conditioner is **turned off** and its fuel consumption is unaltered.
+
 ## Input
 - On the **first three lines** you will receive information about the vehicles in this format:
 
 "**Vehicle** \{**initial fuel quantity**\} \{**liters per km**\} \{**tank capacity**\}"
 
 - On fourth line - **number of commands N** that will be given on the next **N** lines
-- On the next **N** lines – commands in format
+- On the next **N** lines – commands in format:
     - **Drive Car** \{**distance**\}
     - **Drive Truck** \{**distance**\}
     - **Drive Bus** \{**distance**\}
@@ -381,18 +382,19 @@ If there are **no people in the bus** when driving the air-conditioner is **turn
     - **Refuel Truck** \{**liters**\}
     - **Refuel Bus** \{**liters**\}
 ## Output
-- After each **Drive command** print whether the Car/Truck/Bus was able to travel the given distance in the following format if it is successful:
+- After each **Drive command** print whether the Car/Truck/Bus was able to travel the given distance in the following format:
+- If successful:
 
 "**Car/Truck/Bus travelled** \{**distance**\} **km**"
 
-- Or if it is not:
+- If not:
 
 "**Car/Truck/Bus needs refueling**"
 
-- If given fuel is **smaller than or equal to 0**, print "**Fuel must be a positive number**"
-- If given fuel cannot fit in car or bus tank, print "**Cannot fit fuel in tank**"
+- If an attempt to specify a fuel number **less than or equal to 0** is made, print out "**Fuel must be a positive number**"
+- If the refill amount exceeds a vehicle's fuel capacity, print "**Cannot fit fuel in tank**"
  
-- Finally, print the **remaining fuel** for car, truck, and bus rounded to **2 digits after the decimal separator** as follows:
+- Finally, print the **remaining fuel** for the car, the truck, and the bus rounded to **the second decimal place** as follows:
 
 "**Car:** \{**liters**\}
 
@@ -499,25 +501,25 @@ Bus: 23.00
 
 [task-description]
 # Description
-Your task is to create a class **hierarchy** like the picture below. 
+Create code to represent the diagram. 
 
 All the classes should be **abstract**, **except** for **Vegetable**, **Meat**, **Mouse**, **Tiger**, **Cat**, and **Zebra**.
 
 [image assetsSrc="interfaces-and-abstraction-example(17).png" /]
 
-Input should be read from the console. 
+Additional input will be be received from the console. 
 
-Every **even** line will contain information about the **Animal** in the following format:
+Every **even** line will contain information about an **Animal** in the following format:
 
 \{**AnimalType**\} \{**AnimalName**\} \{**AnimalWeight**\} \{**AnimalLivingRegion**\} \[\{**CatBreed**\} = Only if it is a cat\]
 
-On the **odd** lines you will receive information about the **food** that you should give to the **Animal**. 
+On **odd** lines you will receive information about the **food** that you should give to the **Animal**. 
 
-The line will consist of **FoodType** and **quantity**, separated by whitespace.
+The line will consist of the **FoodType** and **quantity**, separated by whitespaces.
 
 You should build the logic to determine if the animal is going to eat the provided food. 
 
-The **Mouse** and **Zebra** should check if the food is a **Vegetable**. 
+The **Mouse** and **Zebra** classes should check if the provided food is a **Vegetable**. 
 
 If it **is**, they will **eat** it. 
 
@@ -525,21 +527,21 @@ If it **is**, they will **eat** it.
 
 \{**AnimalType**\} are not eating that type of food!**
 
-**Cats** eat **any** kind of food, but **Tigers** accept **only Meat**. 
+**Cats** eat **any** kind of food, but **Tigers** eat **only Meat**. 
 
-If **Vegetable** is provided to a **tiger**, a message like the one above should be printed on the console.
+If a **Vegetable** is offered to a **tiger**, the same message secified previously should be produced.
 
-After you read information about the **Animal** and **Food**, invoke the **makeSound()** method of the current animal and **feed** it. 
+After you read information about an **Animal** and its **Food**, invoke the **makeSound()** method of the current animal and **feed** it. 
 
-At the end print the whole object and proceed reading information about the next animal/food. 
+Finally print all information on the entire object and proceed reading information about the next animal/food. 
 
-The input will continue until you receive "**End**". 
+The input will continue until you receive the following command: "**End**". 
 
-After that, **print** the information of **all received animals** in the format:
+After that, **print** all received information on **all animals** in the format:
 
 \{**AnimalType**\} \[\{**AnimalName**\}, \{**CatBreed**\}, \{**AnimalWeight**\}, \{**AnimalLivingRegion**\}, \{**FoodEaten**\}\]
 
-Print all **AnimalWeight** with no trailing zeroes after the decimal separator. 
+**AnimalWeight** should be printed out with no trailing zeroes after the decimal separator. 
 
 Use the **DecimalFormat** class.
 
@@ -735,26 +737,26 @@ Cat\[MyCat, Persian/British, 1.12, @Home, 17\]
 
 You are given the skeleton of a word-processing program (like MS Word, OpenOffice Writer, etc.). 
 
-The program reads a line of text from the console, then starts reading commands for editing (text-transform) and executing them on the text. 
+The program reads a line of text from the console, then starts accepting and applying text-editing commands. 
 
-Each command changes the text, the following command works on the changed text. 
+Each command changes the text.
 
-When the command **exit** is entered, the program prints out the modified text and exits. 
+When the command **exit** is entered, the program prints out the last form of the text. 
 
 **All** commands are in the **form**:
 
 "\{**commandName**\} \{**startIndex**\} \{**endIndex**\}"
 
-In these commands:
+Where:
 
 - **commandName** is a string describing which command should be used 
-- **startIndex** is an integer that describes from which index in the text the command should be applied
+- **startIndex** is an integer that describes from which index the command should be applied
 - **endIndex** is an integer that describes to which index (exclusive) the command should be applied
-    - i.e. the command is applied on indices starting from **startIndex** and ending in **endIndex - 1** inclusively
+    - i.e. the command is applied on indices starting from **startIndex** and ending at **endIndex - 1** inclusively
 
 The skeleton you are provided with contains the following files:
-- **Main.java** – contains the `main(String[] args)` method, reads input, and prints output on the console
-- **TextTransform.java** – contains a base class for any text-transform added to the program
+- **Main.java** – contains the `main(String[] args)` method, reads input, and prints output to the console
+- **TextTransform.java** – contains a base class for any text-transformation added to the program
 - **Command.java** – contains a class that represents commands
 - **CommandInterface.java** – defines an interface class that handles commands represented as strings (coming from the console, read from `main(String[] args)`) 
 - **CommandImpl.java** – class which holds the implementation of the **CommandInterface**
@@ -767,27 +769,27 @@ The files you are given support all the necessary logic to implement the followi
 
 **For example:**
 If the current text is **dom3. text** 
-and we are given the command **uppercase 1 7**
-the current text will change to **dOM3. Text**
+and we are given the command: **uppercase 1 7**
+the text will change to **dOM3. Text**
 
 **Note**: if **startIndex == endIndex**, the command has no effect.
 
-Your task is to add the following commands:
-- **cut** – cuts (removes) characters in the text in the range \[**startIndex**, **endIndex**\), and remembers the last thing that was removed 
+Your task is to implement the following commands:
+- **cut** – cuts (removes) characters from the text in range \[**startIndex**, **endIndex**\) and saves the last piece that was removed 
 
 **For example:**
 If the current text is **dom3. text**
 and we execute the command **cut 1 7** 
-the current text will change to **dext**
+the text will change to **dext**
 
 **Note**: if **startIndex == endIndex**, the command has no effect on the text, but “**clears**” the last remembered cut
 
-- **paste** – replaces the characters in the text in the range \[**startIndex**, **endIndex**\) with the characters which were removed by the last cut
+- **paste** – replaces the characters in the text in range \[**startIndex**, **endIndex**\) with the characters which were removed by the last cut
 
 **For example:**
 If we have the text **dom3. Text** 
-and the commands **cut 1 7** (text changed to **dext**) **paste 3 4** 
-the current text will change to **dexom3. t** (we paste the last cut – "**om3. t**" – over the **'t'** at the end of the text)
+and the commands **cut 1 7** (text changes to **dext**) **paste 3 4** 
+the text will change to **dexom3. t** (we paste the last cut piece– "**om3. t**" – over the specified indexes)
 
 **Note**: if **startIndex == endIndex**, **paste** will insert the text at position **startIndex**, meaning that any text at **startIndex** will be pushed to the right by the inserted text. 
 
@@ -805,25 +807,25 @@ A line of text, followed by a sequence of lines containing commands of the forma
 ending with the command **exit**.
 
 ## Output
-The program defined in `Main.java` writes the following output:
+The program defined in `Main.java` prodices the following output:
 
 **The modified line of text.**
 
 ## Restrictions
-The input text will be no more than **30** characters long and there will be no more than **10** commands in the input (this task is not about algorithm optimization).
+The input text will be no more than **30** characters long and there will be no more than **10** commands in the input.
 
-For **currentTextLength** equal to the current number of characters in the text, for any command:
+Every command will answer to:
 
 **0 <= startIndex <= endIndex < currentTextLength**
-(in other words, the input will always be valid)
+(the input will always be applicable)
 
 There will always be at least 1 **cut** command before any **paste** command. 
 
-Consecutive **paste** commands (without **cut** between them) will paste the same text (just like in any text editor – you can cut something and paste it several times). 
+Consecutive **paste** commands (without **cut** between them) will paste the same text.
 
 The total running time of your program should be no more than **0.1s**.
 
-The total memory allowed for use by your program is **16MB**.
+The total memory used should not exceed **16MB**.
 
 # Examples
 ## Example 1
@@ -959,34 +961,34 @@ test CALLINg ALL
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/Java-OOP-Advanced-Polymorphism-Calculator.zip) **for this task.**
 
-You are given the skeleton of a calculator program (like the **Calculator** app in Windows, or the calculator on your smartphone, etc.).
+This is the code skeleton of a calculator program (like the **Calculator** app in Windows, or the calculator on your smartphone, etc.).
 
-The program reads numbers and operations from the console and executes those operations on the numbers.
+The program accepts numbers and operation commands from the console and executes them with the numbers.
 
-The numbers are positive integers, while the operations can be single symbols (e.g. the star symbol '*' means multiplication), or strings of characters (e.g. the operation "**end**" stops the program and prints out the result).
+The numbers are positive integers, while the operations can be single symbols (e.g. the asterisk symbol '*' means multiplication), or strings of characters (e.g. the operation "**end**" stops the program and prints out the result).
 
-Operations are executed immediately after they receive all their needed operands. 
+Operations are executed immediately after they receive all ncessary operands. 
 
-**For example**, the expression **3 * 4 / 2** will first store **3**, then see the multiplication and wait for a number to multiply – when it receives **4** it will calculate **3 * 4 = 12**, then see the division and wait for a number to divide by – when it receives **2**, it will divide **12** by **2**.
+**For example**, the expression **3 * 4 / 2** will accept **3**, then the multiplication sign and afterward, will await a number to multiply – when it receives **4** it will calculate that **3 * 4 = 12**, then the division sign is entered and it will wait for a number to divide the result by – when it receives **2**, it will divide **12** by **2**.
 
-Any number input overwrites the current result of the calculator, just like in normal calculators. 
+Any number input overwrites the current result of the calculator.
 
-For example, if the expression **3 1 * 4 16 / 2** is input, we would first have **3**, overwrite it with **1**, multiply by **4** and get **4**, but then we overwrite with **16** and divide that by **2** – the result will be **8**.
+For example, if the expression **3 1 * 4 16 / 2** is received, we would first receive **3**, overwrite it with **1**, multiply this by **4** and get **4** as a result, then we overwrite this with **16** and divide that by **2** – the final result will be **8**.
 
 The skeleton you are provided with contains the following files:
-- **Main.java**– contains the `main(String[] args)` method, reads input, and prints output on the console
+- **Main.java**– contains the `main(String[] args)` method, reads input, and prints output to the console
 - **Operation.java** – contains a base class for any operation done by the calculator
 - **MultiplicationOperation.java** – defines a class that inherits the base **Operation** class and implements the multiplication operation (*)
 - **CalculationEngine.java** – defines the calculator’s central logic of handling number and operations input
 - **InputInterpreter.java** – defines a class that can interpret a string into either a number or an operation and invoke the engine accordingly
 
-The files you are given support all the logic necessary to implement the **multiplication** operation, as well as console input and output (note that input items do not need to be on the same line – you can write **one operation** or number per line and the code will still work) but are missing the logic to instantiate an **InputInterpreter**, which should be defined in the missing **Extensions.java** file.
+The files you are given support all the logic necessary to implement the **multiplication** operation, as well as console input and output (note that input items do not need to be on the same line – you can have **one operation** or number per line and the code will still work) there is missing logic to instantiate an **InputInterpreter**, which should be defined in the missing **Extensions.java** file.
 
 Your task is to study the provided code and add the following operations:
-- **/** – **division**, divides the current result of the calculator by the next number the calculator receives and pushes the result to the calculator (i.e. same as multiplication, but divides)
+- **/** – **division**, divides the current value of the calculator by the next number the calculator receives and pushes the result to the calculator (i.e. same as multiplication, but divides)
 - **ms** – saves the current result of the calculator to "**memory**". The result of this operation is the current result of the calculator. For example, the expression **3 * 4 ms * 5** and the expression **3 * 4 * 5** are equivalent in their result
 - **mr** – **memory recall**, removes the last item from memory, and sends it to the calculator
-    - note that this operation can be used in combination with other operations, for example, the expression **3 ms * 4 ms * 5 * mr * mr** will save **3** to memory, calculate to **12**, save to memory, calculate **60**, multiply that by **12** from memory, resulting in **720**, then multiply that by **3** from memory, resulting in **2160**
+    - note that this operation can be used in combination with other operations, for example, the expression **3 ms * 4 ms * 5 * mr * mr** will save **3** to memory, perform a calculation producing **12** as a result, save that to memory, calculate the next expression: **60** is received, multiply that by **12** (stored in memory), **720** is received as a product and stored, then multiply that by **3**, the final result will be: **2160**
     - it can also be used without operations –  **3 ms 4 mr** is the same as **3 4 3**
 
 ## Input
@@ -995,7 +997,7 @@ The program defined in **Main.java** reads the following input:
 Strings, representing numbers or operations, separated by spaces (or new lines, or any "blank" space), ending with the string "**end**".
 
 ## Output
-The program defined in **Main.java** writes the following output:
+The program defined in **Main.java** produces the following output:
 
 The calculated result of all the numbers and operations from the input.
 
@@ -1012,7 +1014,7 @@ The first **40%** of the tests will NOT contain **ms** or **mr** operations.
 
 The total running time of your program should be no more than **0.1s**. 
 
-The total memory allowed for use by your program is **16MB**.
+The total memory used should not exceed **16MB**.
 
 # Examples
 ## Example 1
