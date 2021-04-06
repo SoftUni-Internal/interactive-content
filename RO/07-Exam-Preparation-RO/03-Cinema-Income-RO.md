@@ -85,6 +85,7 @@ Movie time!
 [output]
 There are 6 seats left in the cinema.
 Cinema income - 255$
+[/output]
 [/test]
 [test]
 [input]
