@@ -267,6 +267,7 @@ Imprimați ieșirea pe o singură linie \(separate prin spațiu\).
 [hints] 
 [hint] 
 Citiți matricea de șiruri, **Schimbați**  **primul** element \(at index **0**\) cu **ultimul** element \(at index **n-1**\).
+[/hint] 
 [hint] 
 Apoi, **schimbați** **al doilea** element \(at index **1**\) cu **penultimul** element\(at index **n-2**\).
 [/hint] 
