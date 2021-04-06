@@ -167,7 +167,11 @@ public class Main {
 ## Description
 Create a program to read **an array of integers** and condense them by **summing** all adjacent couples of elements until a **single integer** remains.
 
-For example, if we have 3 elements \{2, 10, 3\}. We sum the first two and the second two elements and get \{2+10, 10+3\} = \{12, 13\}, then we sum all adjacent elements again and this results in \{12+13\} = \{25\}.
+For **example**, let us say we have **3** elements - \{2, 10, 3\}. 
+
+We sum the first two and the second two elements and get \{2+10, 10+3\} = \{12, 13\}, then we sum all adjacent elements again
+
+This results in \{12+13\} = \{25\}.
 
 ## Examples
 |**Input**|**Output**| **Comments** |
@@ -177,14 +181,16 @@ For example, if we have 3 elements \{2, 10, 3\}. We sum the first two and the se
 | 1 | 1 | 1 is already condensed to number |
 
 
-### Hints
+[hints] 
+[hint] 
 While we have more than one element in the array `nums[]`, repeat the following:
-
 - Allocate a new array `condensed[]` of size `nums.length`
 - Sum the numbers from `nums[]` to `condensed[]`
 
     - `condensed[i]` = `nums[i]` + `nums[i+1]`
     - `nums[] = condensed[]`
+[/hint] 
+[/hints]
 
 [/task-description]
 [code-io /]
