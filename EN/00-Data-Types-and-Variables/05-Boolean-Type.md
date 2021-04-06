@@ -67,9 +67,13 @@ For all numbers in range **1…n**, print the number. If it is special or not - 
 |  | 14 -> True |
 |  | 15 -> False |
  
-### Hints
 
-To calculate the sum of digits of a given number **num**, you might repeat the following: sum the last digit **(num % 10)** and remove it **(sum = sum / 10)** until **num** reaches **0**.
+[hints] 
+[hint] 
+To calculate the sum of digits of a given number **num**, you might repeat the following:
+Sum the last digit **(num % 10)** and remove it **(sum = sum / 10)** until **num** reaches **0**.
+[/hint] 
+[/hints]
 
 [/task-description]
 [code-io /]
