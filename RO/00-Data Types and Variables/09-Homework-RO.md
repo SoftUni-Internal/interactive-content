@@ -1111,19 +1111,20 @@ Imprimați **două rânduri separate** câte **zile a funcționat mina** și **c
 | 111 | 2 |
 | | 134 |
 
-**Comentarii**
-
-- In prima zi extragem 111 de condimente și la sfârșitul turei, muncitorii consumă 26, lăsând 85
-
-Randamentul scade cu 10 până la 101
-
-- In a-2-a zi extragem 101 de condimente, muncitorii consumă 26, lăsând 75
-
-Totalul este 160 și randamentul a scăzut la 91
-
-- Deoarece randamentul așteptat este mai mic de 100, abandonăm sursa
-
-Muncitorii iau încă 26, lăsând 134. Mina a funcționat 2 zile.
+[hints] 
+[hint] 
+In **prima zi** extragem 111 de condimente și la sfârșitul turei, muncitorii consumă 26, lăsând 85.
+Randamentul scade cu 10 până la 101.
+[/hint] 
+[hint] 
+In **a-2-a zi** extragem 101 de condimente, muncitorii consumă 26, lăsând 75.
+Totalul este 160 și randamentul a scăzut la 91.
+[/hint] 
+[hint] 
+Deoarece randamentul așteptat este mai mic de 100, **abandonăm** sursa.
+Muncitorii iau încă 26, lăsând 134. Mina a **funcționat** 2 zile.
+[/hint] 
+[/hints]
 
 [/task-description]
 [code-io /]
@@ -1244,14 +1245,24 @@ Notă: 505 NU este EXACT 50% din 1000, ci 50.5%.
 | 2 | 2 |
 | 3 | |
 
-**Comentarii**
-- N = 5, M = 2, Y = 3
-- Începem să scădem M de la N
-- N - M = 3. 1 țintă împinsă
-- N - M = 1. 2 ținte împinsă
-- N < M
-- Tipărim ceea ce a rămas din N, care este 1
-- Printăm numărul de ținte, care este 2
+[hints] 
+[hint] 
+This Poke Mon has **poke power** of 5. (N = 5)
+The **distance** between the **poke targets** is 2. (M = 2)
+The **exhaustionFactor** is equal to 3. (Y = 3)
+[/hint] 
+[hint] 
+Începem să scădem M de la N.
+La inceput, N = 5 and M = 2.
+N - M = 3. 1 țintă împinsă
+N - M = 1. 2 ținte împinsă
+N is now smaller than M.
+[/hint] 
+[hint] 
+Tipărim ceea ce a rămas din N, care este 1.
+Printăm numărul de ținte, care este 2.
+[/hint] 
+[/hints]
 
 [/task-description]
 [code-io /]
