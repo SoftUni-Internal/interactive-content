@@ -264,16 +264,16 @@ Imprimați ieșirea pe o singură linie \(separate prin spațiu\).
 | a b c d e | e d c b a |
 |-1 hi ho w | w ho hi -1 |
 
-
-## Sfaturi
-
-* Citiți matricea de șiruri
-
-* **Schimbați**  **primul** element \(at index 0\) cu **ultimul** element \(at index n-1\)
-
-* **Schimbați**  **al doilea** element \(at index 1\) cu **penultimul** element\(at index n-2\)
-
-* Continuați în același mod până când ajungeți la mijlocul matricei
+[hints] 
+[hint] 
+Citiți matricea de șiruri, **Schimbați**  **primul** element \(at index **0**\) cu **ultimul** element \(at index **n-1**\).
+[hint] 
+Apoi, **schimbați** **al doilea** element \(at index **1**\) cu **penultimul** element\(at index **n-2**\).
+[/hint] 
+[hint] 
+Continuați în același mod până când ajungeți la **mijlocul** matricei.
+[/hint] 
+[/hints]
 
 [/task-description]
 [code-io /]
