@@ -129,12 +129,15 @@ Use an **array of strings**.
 | 7 | Sunday |
 | 0 | Invalid day! |
 
-## Hints
-
-* Use an array of strings holding the day names: `{Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday}`
-
-* Print the element at index \(day-1\) when it is in range or "**Invalid Day!**" if there is no such index
-
+[hints] 
+[hint] 
+Use an array of strings holding the day names: 
+`{Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday}`
+[/hint] 
+[hint] 
+Print the element at index \(day-1\) when it is in range \[1…7\], or "**Invalid Day!**" if there is no such index.
+[/hint] 
+[/hints]
 
 [/task-description]
 [code-io /]
