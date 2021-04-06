@@ -193,36 +193,6 @@ John - 88
 A 40
 B 43
 C 54
-Dencho 31
-Encho 99
-Mincho 32
-Noncho 123
-Oncho 100
-Pesho 321534
-Suzi 3213
-Zuzi 32131
-[/input]
-[output]
-A - 40
-B - 43
-C - 54
-Dencho - 31
-Encho - 99
-Mincho - 32
-Noncho - 123
-Oncho - 100
-Pesho - 321534
-Suzi - 3213
-Zuzi - 32131
-
-[/output]
-[/test]
-[test]
-[input]
-11
-A 40
-B 43
-C 54
 Dencho 1
 Encho 99
 Mincho 32
