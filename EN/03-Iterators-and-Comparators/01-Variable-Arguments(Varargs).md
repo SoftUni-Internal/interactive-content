@@ -6,9 +6,9 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/EN/interactive-java-advanced-iterators-and-comparators-3-4-Variable-Arguments-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Let us suppose you are creating a Java method. 
+Let us suppose we are creating a Java method. 
 
-However, you are not sure **how many arguments** your method is going to accept. 
+However, we are not sure **how many arguments** our method is going to accept. 
 
 To overcome this problem, **Java 5 introduced varargs**.
 
@@ -39,7 +39,7 @@ The "**values**" variable is implicitly declared as an array of type String.
 
 Therefore, inside the method, the "**values**" variable is accessed using the array syntax.
 
-As you can see, we are invoking this method multiple times by passing a **different number of arguments** each time we invoke it.
+As we can see, we are invoking this method multiple times by passing a **different number of arguments** each time we invoke it.
 
 [/slide]
 
@@ -53,7 +53,7 @@ As you can see, we are invoking this method multiple times by passing a **differ
 
 Varargs are straightforward to use. 
 
-But there are a few rules we have to keep in mind:
+There are a few rules we have to keep in mind:
 
 - There can be only one **varargs** argument in the method
 
@@ -114,7 +114,7 @@ Create a "**Book**" class based on the UML diagram:
 
 You can use only **one constructor**. 
 
-There can be **no authors**, **one author** or **many authors**. 
+There can be **no authors**, **one author**, or **many authors**. 
 
 # Example
 
