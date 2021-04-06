@@ -266,15 +266,17 @@ Print the output on a single line \(space separated\).
 | a b c d e | e d c b a |
 |-1 hi ho w | w ho hi -1 |
 
-
-## Hints
-* Afer reading the array of strings
-
-* **Swap** the **first** element \(at index 0\) with the **last** element \(at index n-1\)
-
-* **Swap** the **second** element \(at index 1\) with the element **before the last** \(at index n-2\)
-
-* Continue using this patten until the middle of the array is reached
+[hints] 
+[hint] 
+After reading the array of strings, **swap** the **first** element \(at index **0**\) with the **last** element \(at index **n-1**\).
+[/hint] 
+[hint] 
+Then, **swap** the **second** element \(at index **1**\) with the element **before the last** \(at index **n-2**\).
+[/hint] 
+[hint] 
+Continue using this pattern until the **middle** of the array is reached.
+[/hint] 
+[/hints]
 
 [/task-description]
 [code-io /]
