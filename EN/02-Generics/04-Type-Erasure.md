@@ -10,7 +10,7 @@ Another important term in Java generics is **type erasure**.
 
 To implement generic behavior, the Java compiler applies type erasure. 
 
-**Type erasure** is a process in which the compiler **replaces** a generic parameter with an actual class or a bridge method.
+**Type erasure** is a process, in which the compiler **replaces** a generic parameter with an actual class or a bridge method.
 
 With type erasure, the compiler ensures that no extra classes are created and there is no runtime overhead.
 
@@ -38,7 +38,7 @@ System.out.println(strings instanceof List<String>);
 
 After compilation, the compiler deletes all angle bracket syntax.
 
-Because of that, the Compile Time Error occurs when we attempt to check whether the **strings** is an instanceOf `List<Strings>`.
+Because of that, the Compile Time Error occurs when we attempt to check whether the `strings` is an instanceOf `List<Strings>`.
 
 The compiler adds type casts for us (in byte-code).
 
