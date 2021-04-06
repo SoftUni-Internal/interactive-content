@@ -1,26 +1,22 @@
-[slide hideTitle]
-
 # JSON
 
-JSON or **JavaScript Object Notation** is a format for **data transferring**.
+[slide hideTitle]
+
+# JavaScript Object Notation Definition
+
+**JSON** or **JavaScript Object Notation** is a format for **data transferring**.
 
 It passes data as readable **attribute-value pairs** and **arrays**.
 
 JSON is **based on the JavaScript language** but is **fully independent** and can be used with other languages as well.
 
 These are the data types supported by JSON:
-
-- `Number`
-
-- `String`
-
-- `Boolean`
-
-- `Array`
-
-- `Object`
-
-- `Null`
+  - `Number`
+  - `String`
+  - `Boolean`
+  - `Array`
+  - `Object`
+  - `Null`
 
 [/slide]
 
@@ -66,13 +62,13 @@ JSON works as an **intermediary** between the **client** and the **server**.
 
 Data during client-server communication passes through a few steps:
 
-- **Parsing to JSON** in the client (browser) with **JavaScript**
+- **Parsing to JSON** in the client (browser) using **JavaScript**
 
 - Sending the **JSON** file as a request to the server
 
-- **Parsing back to object** on the server with **Java, Python, C# etc.**
+- **Parsing back to an object** on the server using **Java, PHP, C#, etc.**
 
-- Performing some **operations** with the **object** and sending it back as a **JSON response**
+- Performing **operations** with the **object** and sending it back as a **JSON response**
 
 The following illustration shows how the **client** and the **server** exchange data:
 
@@ -86,7 +82,7 @@ The following illustration shows how the **client** and the **server** exchange 
 
 A JSON object consists of one or many **names** within **double quotation marks** and their **respective values**.
 
-All the keys and values are enclosed within **curly braces**.
+All of the keys and values are enclosed within **curly brackets**.
 
 **Square brackets** are used for **arrays**.
 
@@ -110,11 +106,11 @@ All the keys and values are enclosed within **curly braces**.
 }
 ```
 
-In the code from above there are a few distinct parts:
+There are a few distinct parts that we can see from the JSON information above:
 
 - `firstName`, `lastName`, `address`, `studentIdNumbers` - attributes
 
-- `"Kate"`, `"Johnson"` - simple values
+- `"Kate"`, `"Johnson"` - values for the attributes
 
 - The value of `address` (object)
 
