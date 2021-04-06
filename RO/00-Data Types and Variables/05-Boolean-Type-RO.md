@@ -67,9 +67,12 @@ Imprimați numărul pentru toate numerele din intervalul **1 ... n** și dacă e
 |  | 14 -> True |
 |  | 15 -> False |
  
-### Sfaturi
-
-Pentru a calcula suma cifrelor unui număr dat **num**, puteți repeta următoarele: însumați ultima cifra **(num % 10)** și și o scoateți **(sum = sum / 10)** până ce **num** ajunge la **0**.
+[hints] 
+[hint] 
+Pentru a calcula suma cifrelor unui număr dat **num**, puteți repeta următoarele:
+Însumați ultima cifra **(num % 10)** și și o scoateți **(sum = sum / 10)** până ce **num** ajunge la **0**.
+[/hint] 
+[/hints]
 
 [/task-description]
 [code-io /]
