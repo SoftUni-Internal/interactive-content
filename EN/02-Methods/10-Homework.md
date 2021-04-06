@@ -341,8 +341,11 @@ If it is **not valid**, for any unfulfilled rule **print the corresponding messa
 - "Password must consist only of letters and digits"
 - "Password must contain at least 2 digits"
 
-### Hint
+[hints] 
+[hint] 
 Create a method for each rule.
+[/hint] 
+[/hints]
 
 ### Example
 | **Input** | **Output** |
@@ -1278,7 +1281,7 @@ A **top number** is an integer that holds the following properties:
 - Holds at least one odd digit, e.g. 232, 707, 87578
 
 Create a program to print all top numbers in range \[1…n\].
-You will receice a single integer from the console, representing the end value.
+You will receive a single integer from the console, representing the end value.
 
 ### Example
 | **Input** | **Output** |
