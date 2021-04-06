@@ -14,7 +14,7 @@ Inside of the method body, we have only the implementation of the comparison log
 
 This approach allows us to implement **multiple sorting sequences**. 
 
-Keep in mind that the Comparator is an external class, which means that it **will not affect the original class**.
+Keep in mind that the **Comparator** is an external class, which means that it **will not affect the original class**.
 
 [/slide]
 
@@ -24,11 +24,11 @@ Keep in mind that the Comparator is an external class, which means that it **wil
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/EN/interactive-java-advanced-iterators-and-comparators-22-23-Comparable-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Comparable allows us to specify how objects we are implementing **compare to objects of the same type**. 
+Comparable allows us to specify how objects that we are implementing **compare to objects of the same type**. 
 
-A class implementing this interface, will inherit the `compareTo()` method.
+A class implementing this interface will inherit the `compareTo()` method.
 
-Unlike **Comparator**, the logic of the Comparable interface will be **inside of the object** we are trying to compare.
+Unlike **Comparator**, the logic of the **Comparable** interface will be **inside of the object** we are trying to compare.
 
 It will **affect the original class**.
 
@@ -55,29 +55,29 @@ class Student implements Comparable<Student> {
 }
 ```
 
-The example above shows a class **Student** that implements **Comparable of Students**.
+The example above shows a class called **Student** that implements **Comparable of Students**.
 
 The only two fields we will need for the example are **name** and **age**.
 
-Let us say that we want the Student objects to be **compared by age only**.
+Let us say that we want the **Student** objects to be **compared by age only**.
 
 Therefore, we will have **three cases**.
 
 The **first one** would be when **the age is equal**.
 
-Then we would **return 0** which would mean that **the objects are the same**.
+Then, we would **return 0**, which would mean that **the objects are the same**.
 
-In case the **age of the current student is bigger** than the age of the one which we get as an argument, we will **return 1**.
+In case the **age of the current student is greater** than the age of the one which we get as an argument, we will **return 1**.
 
-By doing this, we indicate that in the sorting logic, **the current student is "bigger"**.
+By doing this, we indicate that in the sorting logic that **the current student is the older one**.
 
-That leaves us with the last case, where we **return -1** because **the current student object is "smaller" than the one from the arguments**.
+That leaves us with the last case, where we **return -1**, because **the current student object is "younger" than the one from the arguments**.
 
-By implementing the Comparable interface we placed a **Student generic parameter**.
+By implementing the **Comparable** interface, we placed a **Student generic parameter**.
 
 That allows us to later implement the `compareTo()` method by **accepting a Student as an argument**. 
 
-**Avoiding the generics** will force us to implement the method, **by accepting an Object**. 
+**Avoiding the generics** will force us to implement the method **by accepting an Object**. 
 
 **That would make the implementation a bit difficult to read** as we **would not be able** to directly access the members of the **Student class**.
 
@@ -90,21 +90,21 @@ That allows us to later implement the `compareTo()` method by **accepting a Stud
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/EN/interactive-java-advanced-iterators-and-comparators-24-Comparator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In the following example, we will compare **two Student objects** by their age variable.
+In the following example, we will compare **two Student objects** by their **age** variable.
 
-Our AgeComparator class implements **Comparator** of type **Student**.
+Our **AgeComparator** class implements **Comparator** of type **Student**.
 
-The `compare()` method takes two Student "(**Student st1, Student st2**)" objects as arguments.
+The `compare()` method takes two **Student** objects (**Student st1, Student st2**) as arguments.
 
 The implementation is simple, we return:
 
-- A **positive** number if the first student is "bigger"
+- A **positive** number if the first student is "older"
 
-- **Negative** in the other case
+- **Negative** number if the first student is "younger"
 
 - **Zero** when they are the same
 
-By using the Comparator, **we could create as many comparators as we need** and apply them in accordance to our use case.
+By using the Comparator, **we could create as many comparators as we need**, and apply them in accordance with our use case.
 
 ```java
 public class AgeComparator implements Comparator<Student> {
@@ -129,11 +129,11 @@ public class AgeComparator implements Comparator<Student> {
 
 [task-description]
 # Description
-Expand Book by implementing "**Comparable**\<**Book**\>".
+Expand the **Book** class from the previous problem by implementing "**Comparable**\<**Book**\>".
 
-Books have to be **compared by title**. 
+The books have to be **compared by their titles**. 
 
-When the title is equal, **compare them by year**.
+When the titles are equal, **compare them by the years they were published**.
 
 Expand the **Book** class based on the UML diagram below:
 
@@ -345,7 +345,7 @@ Test Passed!
 
 [task-description]
 # Description
-Create a class **BookComparator** from the UML diagram below: 
+Create a class called **BookComparator** based on the UML diagram below: 
 
 [image assetsSrc="java-oop-basics-uml-book-comparable1.png" /]
 
@@ -358,12 +358,12 @@ Create a class **BookComparator** from the UML diagram below:
 
 - **BookComparator** has to **compare** two books by:
     - Book **title**
-    - **Year** of publishing a book
+    - **Year** of publication
 
 
 ## Example
 
-Test your **BookComparator** by using the code below:
+Test your **BookComparator** class by using the code below:
 
 
 ```java
