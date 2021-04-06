@@ -52,7 +52,7 @@ byte[] bytes = { 1, 2, 3 };
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-36-Memory-Stack-And-heap-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[image assetsSrc="java-fund-methods-01.gif" /]
+[image assetsSrc="Value-vs-Reference-Types(1).gif" /]
 
 Acum vom demonstra vizual modul în care sunt stocate tipurile de valori, în comparație cu tipurile de referință.
 
