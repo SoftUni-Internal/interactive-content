@@ -340,8 +340,11 @@ Dacă nu **este validă**, pentru fiecare regulă încălcată **imprimați unul
 - "**Password must consist only of letters and digits**"
 - "**Password must have at least 2 digits**"
 
-### Sfat
-Creați  o metodă pentru fiecare regulă.
+[hints] 
+[hint] 
+Creați o metodă pentru fiecare regulă.
+[/hint] 
+[/hints]
 
 ### Exemplu
 |**Intrare**|**Ieșire** |
