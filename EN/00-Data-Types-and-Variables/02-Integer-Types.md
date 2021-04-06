@@ -153,7 +153,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description.
+## Description
 
 The program input needs to process an integer representing a value in meters.
 
