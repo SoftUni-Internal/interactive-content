@@ -1067,7 +1067,7 @@ Indecșii dați pot fi sau nu în interiorul domeniului câmpului
 [hints] 
 [hint] 
 First, we receive the field size - **3**.
-Then, we recеive the indexes with ladybugs - **0** and **1**.
+Then, we receive the indexes with ladybugs - **0** and **1**.
 
 Initially, the field looks like this: `1 1 0`
 [/hint] 
