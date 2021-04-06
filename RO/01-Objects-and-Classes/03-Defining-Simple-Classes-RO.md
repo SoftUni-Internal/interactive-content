@@ -275,7 +275,7 @@ Imprimați numai studenții care sunt din orașul dat, în următorul format:
 
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test]
 [input]
@@ -415,7 +415,7 @@ Dacă primiți un student, care există deja (**first name** și **last name** a
 
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -540,7 +540,7 @@ Imprimați numai **Numele melodiilor** care aparțin de **Type list** sau **All 
 | all | |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
