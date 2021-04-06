@@ -804,14 +804,6 @@ If **several equal sequences are present in the array**, print out the **leftmos
 [/test]
 [test]
 [input]
-1 1 1 2 3 1 3 3
-[/input]
-[output]
-1 1 1
-[/output]
-[/test]
-[test]
-[input]
 9 9 9 9 9 9 9 9 9
 [/input]
 [output]
