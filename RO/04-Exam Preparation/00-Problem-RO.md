@@ -128,13 +128,13 @@ Time needed: 5h.
 [/test]
 [test]
 [input]
-1
+4
 2
-3
-45
+1
+33
 [/input]
 [output]
-Time needed: 10h.
+Time needed: 6h.
 [/output]
 [/test]
 [test]
@@ -161,13 +161,13 @@ Time needed: 11h.
 [/test]
 [test]
 [input]
-3
-2
-5
-40
+32
+21
+6
+1234
 [/input]
 [output]
-Time needed: 5h.
+Time needed: 27h.
 [/output]
 [/test]
 [test]
