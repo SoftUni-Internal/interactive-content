@@ -155,7 +155,7 @@ public class Main {
 [task-description]
 ## Description.
 
-The program input needs to preocess an integer representing a value in meters.
+The program input needs to process an integer representing a value in meters.
 
 Create a program that converts meters to kilometers - formatted to the second decimal point.
 
