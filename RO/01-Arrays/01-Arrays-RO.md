@@ -130,11 +130,15 @@ Utilizați o **matrice de șiruri**.
 | 7 | Sunday |
 | 0 | Invalid day! |
 
-## Sfaturi
-* Utilizați o matrice de șiruri care conține numele zilelor: `{Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday}`
-
-* Imprimați elementul la indexul \(day-1\), atunci când este în intervalul \[1…7\] sau "**Invalid Day!**" in caz contrar
-
+[hints] 
+[hint] 
+Utilizați o matrice de șiruri care conține numele zilelor:
+`{Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday}`
+[/hint] 
+[hint] 
+Imprimați elementul la indexul \(day-1\), atunci când este în intervalul \[1…7\] sau "**Invalid Day!**" in caz contrar.
+[/hint] 
+[/hints]
 
 [/task-description]
 [code-io /]
