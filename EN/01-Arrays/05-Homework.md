@@ -596,12 +596,19 @@ If there are **no elements to the left or right**, their **sum is considered to 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 1 2 3 3 | 2 |
+| 1 2 **3** 3 | 2 |
 
-### Comments
-At a\[2\] -> left sum = 3, right sum = 3
+[hints] 
+[hint] 
+In this example, the element at index 2 (arr\[2\]) satisfies the condition.
+[/hint] 
+[hint] 
+The sum of the elements on the **left** side (1, 2) is equal to 3.
+The sum of the elements on the **right** side (3) is also equal to 3.
 
-a\[0\] + a\[1\] = a\[3\]
+arr\[0\] + arr\[1\] = arr\[3\]
+[/hint] 
+[/hints]
 
 [/task-description]
 [code-io /]
@@ -1003,7 +1010,7 @@ You are given a **field size** and the **indexes where ladybugs** can be found o
 
 On every new line, until the "**end**" command is given, a ladybug **changes its position** either to its **left** or to its **right** by a given **fly length**.
 
-A movement description**command** looks like this: "0 right 1".
+A movement description **command** looks like this: "0 right 1".
 
 This means that the little insect **placed on index 0 should fly one index to its right**.
 
@@ -1049,10 +1056,31 @@ The given indexes may or may not be inside the field range
 | 2 right 1 | |
 | end | |
 
-### Comments
-- 1 1 0 - Initial field
-- 0 1 1 - field after "0 right 1"
-- 0 1 0 - field after "2 right 1"
+[hints] 
+[hint] 
+First, we receive the field size - **3**.
+Then, we recеive the indexes with ladybugs - **0** and **1**.
+
+Initially, the field looks like this: `1 1 0`
+[/hint] 
+The first command is "**0 right 1**":
+- **0** - the **index** of the ladybug
+- right - the **direction** to fly to
+- 1 - the **fly length**
+
+After this command, the field looks like this: `0 0 1`
+[hint] 
+
+[/hint] 
+[hint] 
+The second command is "**2 right 1**".
+
+Since this fly length is outside of the array, the ladybug **flies away**.
+
+After this command, the field looks like this: `0 1 0`
+[/hint] 
+[/hints]
+
 
 [/task-description]
 [code-io /]
