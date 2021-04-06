@@ -270,9 +270,6 @@ public class Main {
 ## Description
 Create a method that calculates and returns the value of a number raised to a given power.
 
-## Hint
-Use **BigDecimal**.
-
 ## Examples
 |**Input**|**Output**|
 | --- | --- |
@@ -283,6 +280,12 @@ Use **BigDecimal**.
 | --- | --- |
 | 5.5 | 166.375 |
 | 3 |  |
+
+[hints] 
+[hint] 
+Use **BigDecimal**.
+[/hint] 
+[/hints]
 
 [/task-description]
 [code-io /]
