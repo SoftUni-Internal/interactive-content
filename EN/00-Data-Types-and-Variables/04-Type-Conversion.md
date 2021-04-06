@@ -75,7 +75,7 @@ public class Main {
 
 ## Description
 
-Create a program that accepts an **int** number of **centuries** and converts it to the respective ammount of **years**, **days**, **hours**, and **minutes**. 
+Create a program that accepts an **int** number of **centuries** and converts it to the respective amount of **years**, **days**, **hours**, and **minutes**. 
 
 The input will be of type **int**.
 
@@ -178,7 +178,7 @@ Create a program that reads 3 lines of input.
 
 You will get a single character on each line.
 
-Combine all the characters into a sigle string and print it to the console.
+Combine all the characters into a single string and print it to the console.
 
 ## Examples
 
