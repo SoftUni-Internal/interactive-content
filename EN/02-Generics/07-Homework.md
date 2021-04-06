@@ -1413,7 +1413,7 @@ The input consists of three lines.
 | **Input** | **Output** |
 | --- | --- |
 | Sofia Tucker London UK | Sofia Tucker -> London -> UK |
-| John 2 happy | John -> 2 -> false |
+| John 2 happy | John -> 2 -> true |
 | Peter 0.10 Expressbank | Peter -> 0.1 -> Expressbank |
 
 
@@ -1434,7 +1434,7 @@ Peter 0.10 Expressbank
 [/input]
 [output]
 Sofia Tucker -\> London -\> UK
-John -\> 2 -\> false
+John -\> 2 -\> true
 Peter -\> 0.1 -\> Expressbank
 [/output]
 [/test]
@@ -1458,7 +1458,7 @@ John 11.11 AmericanExpress
 [/input]
 [output]
 John Johnson -\> Muiami -\> USA
-John -\> 3 -\> false
+John -\> 3 -\> true
 John -\> 11.11 -\> AmericanExpress
 [/output]
 [/test]

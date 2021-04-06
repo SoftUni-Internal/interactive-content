@@ -1409,14 +1409,14 @@ Format:
 "\{**firstElement**\} **->** \{**secondElement**\} **->** \{**thirdElement**\}"
 
 
-## Exemplu
-| **Intrare** | **Ieșire** |
+| **Input** | **Output** |
 | --- | --- |
 | Sofia Tucker London UK | Sofia Tucker -> London -> UK |
-| John 2 happy | John -> 2 -> false |
+| John 2 happy | John -> 2 -> true |
 | Peter 0.10 Expressbank | Peter -> 0.1 -> Expressbank |
 
-| **Intrare** | **Ieșire** |
+
+| **Input** | **Output** |
 | --- | --- |
 | Kevin Johnson Sofia Bulgaria | Kevin Johnson -> Sofia -> Bulgaria |
 | Mat 18 not | Mat -> 18 -> false |
@@ -1433,7 +1433,7 @@ Peter 0.10 Expressbank
 [/input]
 [output]
 Sofia Tucker -\> London -\> UK
-John -\> 2 -\> false
+John -\> 2 -\> true
 Peter -\> 0.1 -\> Expressbank
 [/output]
 [/test]
@@ -1457,7 +1457,7 @@ John 11.11 AmericanExpress
 [/input]
 [output]
 John Johnson -\> Muiami -\> USA
-John -\> 3 -\> false
+John -\> 3 -\> true
 John -\> 11.11 -\> AmericanExpress
 [/output]
 [/test]
@@ -1500,3 +1500,4 @@ F -\> 0.1 -\> G
 [/tests]
 [/code-task]
 [/slide]
+
