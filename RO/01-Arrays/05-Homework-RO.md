@@ -598,12 +598,19 @@ Dacă nu există **elemente în stânga/dreapta**, suma lor **este considerată 
 ### Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
-| 1 2 3 3 | 2 |
+| 1 2 **3** 3 | 2 |
 
-### Comentarii
-At a\[2\] -> left sum = 3, right sum = 3
+[hints] 
+[hint] 
+In this example, the element at index 2 (arr\[2\]) satisfies the condition.
+[/hint] 
+[hint] 
+The sum of the elements on the **left** side (1, 2) is equal to 3.
+The sum of the elements on the **right** side (3) is also equal to 3.
 
-a\[0\] + a\[1\] = a\[3\]
+arr\[0\] + arr\[1\] = arr\[3\]
+[/hint] 
+[/hints]
 
 [/task-description]
 [code-io /]
@@ -1006,7 +1013,7 @@ Aveți o **dimensinue a câmpului** și **indicii de buburuze** în interiorul c
 
 După aceea, pe fiecare nouă linie, până când este dată comanda "**end**", o buburuză **își schimbă poziția** fie la **stânga**, fie la **dreapta** cu o anumită lungime de zbor.
 
-O **comandă** pentru o buburuză arată in acest mod:"0 right 1".
+O **comandă** pentru o buburuză arată in acest mod: "0 right 1".
 
 Aceasta înseamnă că insectă mică **plasată pe index-ul 0 ar trebui să zboare un index spre dreapta sa**.
 
@@ -1057,10 +1064,30 @@ Indecșii dați pot fi sau nu în interiorul domeniului câmpului
 | 2 right 1 | |
 | end | |
 
-### Comentarii
-- 1 1 0 - Câmpul inițial
-- 0 1 1 - câmpul după "0 right 1"
-- 0 1 0 - câmpul după "2 right 1"
+[hints] 
+[hint] 
+First, we receive the field size - **3**.
+Then, we recеive the indexes with ladybugs - **0** and **1**.
+
+Initially, the field looks like this: `1 1 0`
+[/hint] 
+The first command is "**0 right 1**":
+- **0** - the **index** of the ladybug
+- right - the **direction** to fly to
+- 1 - the **fly length**
+
+After this command, the field looks like this: `0 0 1`
+[hint] 
+
+[/hint] 
+[hint] 
+The second command is "**2 right 1**".
+
+Since this fly length is outside of the array, the ladybug **flies away**.
+
+After this command, the field looks like this: `0 1 0`
+[/hint] 
+[/hints]
 
 [/task-description]
 [code-io /]
