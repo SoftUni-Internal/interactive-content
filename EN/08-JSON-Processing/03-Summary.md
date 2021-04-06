@@ -4,11 +4,9 @@
 
 # In this lesson you learned:
 
-**JSON**
-
-- An **easy-to-read** format for data transferring
-
-- Based on **JavaScript** but **language-independent**
+- **JSON**
+  - An **easy-to-read** format for data transferring
+  - Based on **JavaScript** but **language-independent**
 
 ```java
 {
@@ -19,18 +17,14 @@
 }
 ```
 
-**GSON**
+- **GSON**
+  - A **Java library** used to convert objects to JSON and vice versa
+  - Using the `toJson` and `fromJson` methods
 
-- A **Java library** used to convert objects to JSON and vice versa
-
-- Using the `toJson` and `fromJson` methods
-
-## The topic of the next lesson is:
+## In the next lesson you will learn:
 
 **XML Processing**
-
-- What XML is and where it is used
-
-- How to work with JAXB
+  - Definition and Usage
+  - JAXB
 
 [/slide]
