@@ -1,22 +1,16 @@
+# GSON
+
 [slide hideTitle]
 
 # GSON
 
 **GSON** is a **Java library**, developed by **Google**.
 
-It offers **two methods** for simple conversion of **Java objects** to **JSON** and vice versa.
+It offers **two methods**, which we will use for converting **Java objects** into **JSONs** and vice versa.
 
 There are two ways to install **GSON**:
 
-- With **Gradle**
-
-```java
-dependencies {
-  implementation 'com.google.code.gson:gson:2.8.6'
-}
-```
-
-- With **Maven**
+- Using **Maven**
 
 ```java
 <dependency>
@@ -24,6 +18,14 @@ dependencies {
   <artifactId>gson</artifactId>
   <version>2.8.6</version>
 </dependency>
+```
+
+- Using **Gradle**
+
+```java
+dependencies {
+  implementation 'com.google.code.gson:gson:2.8.6'
+}
 ```
 
 [/slide]
@@ -74,15 +76,15 @@ public class PersonalData implements Serializable {
     @Expose
     private boolean hasGraduatedUniversity;
 
-    public void setName(String name){
+    public void setName(String name) {
         this.name = name;
     }
 
-    public void setAge(int age){
+    public void setAge(int age) {
         this.age = age;
     }
 
-    public void setHasGraduatedUniversity(boolean hasGraduated){
+    public void setHasGraduatedUniversity(boolean hasGraduated) {
         this.hasGraduatedUniversity = hasGraduated;
     }
 }
@@ -97,10 +99,10 @@ personalData.setName("Derek");
 personalData.setAge(35);
 personalData.setHasGraduatedUniversity(true);
 
-String converted = this.gson.toJson(personalData);
+String converted = gson.toJson(personalData);
 ```
 
-- **Accessing** and **using** the converted **JSON** object
+- The **output** from the variable `converted` when we **print it** to the console:
 
 ```java
 {
@@ -120,33 +122,6 @@ Converting multiple **Java objects** to **JSON** happens by passing a **List** a
 
 The following code shows how to do so:
 
-- The class code:
-
-```java
-public class PersonalData implements Serializable {
-    @Expose
-    private String name;
-    @Expose
-    private int age;
-    @Expose
-    private boolean hasGraduatedUniversity;
-
-    public void setName(String name){
-        this.name = name;
-    }
-
-    public void setAge(int age){
-        this.age = age;
-    }
-
-    public void setHasGraduatedUniversity(boolean hasGraduated){
-        this.hasGraduatedUniversity = hasGraduated;
-    }
-}
-```
-
-- The main functionality
-
 ```java
 PersonalData personalData1 = new PersonalData();
 PersonalData personalData2 = new PersonalData();
@@ -163,7 +138,7 @@ List<PersonalData> listForConversion = new ArrayList<>();
 listForConversion.add(personalData1);
 listForConversion.add(personalData2);
 
-String content = this.gson.toJson(listForConversion);
+String content = gson.toJson(listForConversion);
 ```
 
 [/slide]
@@ -201,10 +176,11 @@ public class ChildInfo implements Serializable {
 Here is how to convert the **JSON object** to a **Java object**:
 
 ```java
-ChildInfo childInfo = this.gson.fromJson(ChildInfo.class, "/files/input/json/info.json");
+ChildInfo childInfo = gson
+                .fromJson(
+                        String.join("", Files.readAllLines(Path.of("/path/to/file.json")))
+                        , ChildInfo.class);
 ```
-
-The file path **should be replaced** with an accurate one.
 
 [/slide]
 
@@ -246,9 +222,10 @@ public class ChildInfo implements Serializable {
 Convert **multiple objects** like this:
 
 ```java
-ChildInfo[] multipleObjects = this.gson.fromJson(ChildInfo[].class, "/files/input/json/info.json");
+ChildInfo[] multipleObjects = gson
+                .fromJson(
+                        String.join("", Files.readAllLines(Path.of("/path/to/file.json")))
+                        , ChildInfo[].class);
 ```
-
-The file path again should be changed to an accurate one.
 
 [/slide]
