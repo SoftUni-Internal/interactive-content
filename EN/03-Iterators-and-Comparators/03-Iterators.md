@@ -246,7 +246,7 @@ public class NamesList implements Iterable<String> {
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/EN/interactive-java-advanced-iterators-and-comparators-17-Problem-and-Solution-Library-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Library" timeLimit=100000 taskId="oop-basics-java-iterators-and-comparators-lab-Library" executionType="tests-execution" executionStrategy="java-project-tests"] 
+[code-task title="Library" timeLimit=5000 taskId="oop-basics-java-iterators-and-comparators-lab-Library" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
 
 [task-description]
