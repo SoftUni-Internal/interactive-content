@@ -5,13 +5,11 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/EN/interactive-java-oop-advanced-polymorphism-3-4-What-is-polymorphism-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Polymorphism is one of the four OOP pillars in **object-oriented** languages.
+Polymorphism is one of the four OOP base pillars in **object-oriented** languages.
 
-It allows us to perform a single action in many different ways.
+It allows us to perform a single action in many different ways, giving us the chance to change the behavior of the class at runtime.
 
-Giving us the chance to change the behavior of the class' runtime.
-
-It lays on the concept that objects of different types can be accessed through the same interface or abstract class.
+It rests on the concept that objects of different types can be accessed through the same interface or abstract class.
 
 Each type will provide its own implementation of the behavior.
 
@@ -21,9 +19,9 @@ Each type will provide its own implementation of the behavior.
 
 # Superclass
 
-For example, let us say we have **superclass** called `Mammal` that has a method called `makeSound()`. 
+For example, let us say we have a **superclass** called `Mammal` that has a method called `makeSound()`. 
 
-**Subclasses** of our class Mammal could be **Cats**, **Dogs**, **Pigs**, **Horses** - And they also have their individual implementation for making a sound.
+**Subclasses** of our class Mammal could be **Cats**, **Dogs**, **Pigs**, **Horses** - And they also have their individual implementation to make a sound.
 
 Let us see that in code: 
 
@@ -51,7 +49,7 @@ class Dog extends Mammal {
 }
 ```
 
-Now we can go in our `Main` class and create our cat and dog objects and call the `makeSound()` method on both of them.
+Now we can go to our `Main` class and create "cat" and "dog" objects and call the `makeSound()` method on both of them.
 
 
 ``` java
@@ -82,17 +80,17 @@ Meow Meow...
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/EN/interactive-java-oop-advanced-polymorphism-7-Keyword-Instanceof-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We can use the `instanceOf` operator in Java to check if an **object** is an instance of a **class** or not.
+We can use the `instanceOf` operator in Java to check if an **object** is an instance of a particular **class** or not.
 
 Let us take a look now at the different examples:
 
-- First, let us declare our Map
+- First, let us declare a Map
 
 ```java
  Map<Object, Object> map = new HashMap();
 ```
 
-- Then, let us create a `boolean` type to evaluate our result
+- Then, let us create a `boolean` to evaluate our result
 
 ```java
 boolean result = map instanceof Object;
@@ -110,9 +108,9 @@ boolean result = map instanceof Object;
 System.out.println("Map is instance of Object: " + result);
 ```
 
-Since `HashMap` is a subclass of `Object` the expression `map instanceOf Object` evaluates to `true`.
+Since a `HashMap` is a subclass of `Object` the expression `map instanceOf Object` evaluates to `true`.
 
-Similarly, we can extend our previous task and check if our pet objects  are `instanceOf` our classes:
+Similarly, we can extend our previous task and check if our "pet" objects  are `instanceOf` our classes:
 
 ``` java
 class Main {
@@ -132,7 +130,7 @@ class Main {
 }
 ```
 
-And the **output** from our code will be:
+The **output** will be:
 
 ``` 
 true
@@ -140,7 +138,7 @@ false
 true
 ```
 
-That output shows the `instanceOf` operator works of the **is-a relationship** concept that is based on a class **inheritance** or **interface implementation**.
+The `instanceOf` operator determines whether there is an **is-a relationship** between the classes (Based on **inheritance** or **interface implementation**).
 
 [/slide]
 
@@ -151,7 +149,7 @@ That output shows the `instanceOf` operator works of the **is-a relationship** c
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/EN/interactive-java-oop-advanced-polymorphism-8-9-Types-of-polymorphism-compile-time-polymorphism-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-There are **two** types **polymorphism** in Java:
+There are **two** types of **polymorphism** in Java:
 
 - **Dynamic** polymorphism
 
@@ -164,15 +162,15 @@ There are **two** types **polymorphism** in Java:
 
 Therefore, the **behavior** of the **method** is decided at **runtime**.
 
-**Dynamic polymorphism** can be achieved using **method overriding**.
+**Dynamic polymorphism** is utilized using **method overriding**.
 
-We can declare a method in our **subclass** while the method is already present in the **parent class**. 
+We can declare a method in our **subclass** even if the same method is already present in the **parent class**. 
 
-That is called **method overriding**.
+This is called **method overriding**.
 
-This way, a **child class** can give its own **implementation/property** to a method that is already provided by the **parent class**.
+This way, a **child class** can hold its own, different **implementation/property** of a method that is already defined by the **parent class**.
 
-To understand that better, let us take a look at this **example**:
+**Example**:
 
 ``` java
 class Animal {
@@ -202,7 +200,7 @@ public class Main {
 }
 ```
 
-And the **output** will be: 
+The **output** will be: 
 
 ```
 Animals can eat.
@@ -212,17 +210,17 @@ Dogs can eat meat.
 
 One of the ways Java supports **static polymorphism** (also referred to as **compile-time polymorphism**) is by **method overloading**.
 
-**Method overloading** allows us to have two or more **methods** with the same name, but different **signature**.
+**Method overloading** allows us to have two or more **methods** with the same name, but a different **signature**.
 
-The method signature contains:
-- **Method name**
-- **Parameters**
+The method signature is siginfied by:
+- **The Method name**
+- **Its Parameters**
 
-We can overload a method by changing the parameter types, the count of parameters, or the order of the parameters.
+We can overload a method by changing the parameter types, the number of parameters, or their order.
 
 We can not have two methods with the same name and the same parameters, **the name of parameters does not matter**.
 
-Let us see this simple **example**:
+**Example**:
 
 ``` java
 class Calculation {  
@@ -255,11 +253,11 @@ class Calculation {
 
 [task-description]
 # Description
-Create a class **MathOperation**, which should have an `add()` method. 
+Create a class **MathOperation**, which possesses an `add()` method. 
 
-The `add()` method has to be invoked with **two**, **three** or **four integers**.
+The `add()` could be invoked using **two**, **three** or **four integers**.
 
-**You should be able to use the class like this:**
+**Your code should work in the following context:**
 
 ```java
 public static void main(String[] args) throws IOException {
@@ -399,32 +397,32 @@ Test Passed!
 
 [slide hideTitle]
 
-# Rules For Overriding And Overloading Methods
+# Principles When Overriding And Overloading Methods
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/EN/interactive-java-oop-advanced-polymorphism-12-Rules-for-overloading-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## Rules For Overriding Methods
+## Overriding Methods
 
-- We can override the methods in a **Subclass**
+- Performed inside **Subclasses**
 
-- Parameters must be the same as parameters in the **parent method**
+- All parameters must be the same as the parameters in the **parent method**
 
-- The overriding method must have the **same return type**
+- An overridden method must have the **same return type**
 
 - We cannot override **private**, **static** or **final** methods
 
 - Overriding methods cannot throw a **checked exception** which is higher in the hierarchy than one thrown by the overridden method
 
-## Rules For Overloading Methods
+## Overloading Methods
 
-- We can **overload** methods that take place in the **same class** or in its **Subclass**
+- We can **overload** methods both in the **same class** or in its **Subclass**
 
-- We can **overload constructors** in Java
+- We can **overload constructors** 
 
-- Overloaded methods can have the **same or different return types**
+- Overloaded methods can have the **different return types**
 
 - Overloaded methods must have a **different argument list**
 
-- Overloaded methods should always be the part of the same class, with **same name** but **different parameters**
+- Overloaded methods should be a part of the same class, with **same name** but **different parameters**
 
 [/slide]
