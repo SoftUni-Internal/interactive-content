@@ -1063,14 +1063,13 @@ Then, we recеive the indexes with ladybugs - **0** and **1**.
 
 Initially, the field looks like this: `1 1 0`
 [/hint] 
+[hint] 
 The first command is "**0 right 1**":
 - **0** - the **index** of the ladybug
 - right - the **direction** to fly to
 - 1 - the **fly length**
 
 After this command, the field looks like this: `0 0 1`
-[hint] 
-
 [/hint] 
 [hint] 
 The second command is "**2 right 1**".
