@@ -43,7 +43,7 @@ La final, **tipăriți articolul final**.
 | Rename: better title | |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -159,7 +159,7 @@ Folosind **clasa Person**, scrieți un program care citește de pe consolă **N 
 | Peter 11 | |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -375,7 +375,7 @@ Trebuie să ordonați articolele **alfabetic** pe baza comenzii și să le impri
 | content | |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -665,7 +665,7 @@ Formatați răspunsul la **a doua zecimală**.
 | | Trucks have an average horsepower of: 250.00. |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
@@ -844,7 +844,7 @@ Când primiți **comanda** "End", **imprimați toate persoanele**.
 | End | |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
