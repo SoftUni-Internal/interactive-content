@@ -119,11 +119,8 @@ Your task is to find the **sum of its digits**.
 | **Input** | **Output** |
 | --- | --- |
 | 245678 | 32 |
-
-### Example
-| **Input** | **Output** |
-| --- | --- |
 | 543 | 12 |
+
 
 [/task-description]
 [code-io /]
@@ -389,7 +386,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Find more information about ASCII www.ascii-code.com (American Standard Code for Information Interchange) online and create a program that **prints part of the ASCII table** of characters to the console.  
+Find more information about [ASCII](www.ascii-code.com) (American Standard Code for Information Interchange) online and create a program that **prints part of the ASCII table** of characters to the console.  
 
 On the first line of input you will receive the **char index** that you should **start** with. 
 On the second line - the index of the **last** character you should print.

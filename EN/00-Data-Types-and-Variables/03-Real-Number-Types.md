@@ -308,7 +308,6 @@ Create a program that accepts numbers, calculates and prints their **exact sum**
 | 0.00000000003 |  |
 | 333333333333.3 |  |
 
-
 [/task-description]
 [code-io /]
 [tests]
@@ -354,16 +353,6 @@ Create a program that accepts numbers, calculates and prints their **exact sum**
 [/input]
 [output]
 1000000000000000005
-[/output]
-[/test]
-[test]
-[input]
-2
-0.00000000003
-333333333333.3
-[/input]
-[output]
-333333333333.30000000003
 [/output]
 [/test]
 [test]

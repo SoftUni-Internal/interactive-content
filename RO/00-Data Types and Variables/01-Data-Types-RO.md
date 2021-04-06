@@ -116,7 +116,7 @@ După cum vedeți în exemplul de mai sus, **tipurile de date** au:
 [/slide]
 
 [slide hideTitle]
-# Variabile de denumire
+# Variabile de Denumire
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-8-naming-our-variables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În programarea computerului, o convenție de denumire este un set de **reguli** pentru alegerea numelui care trebuie utilizat pentru variabile.
@@ -205,7 +205,7 @@ static void main(String[] args) {
 [/slide]
 
 [slide hideTitle]
-# Menținerea intervalului variabilei scurt
+# Menținerea Intervalului Variabilei Scurt
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-11-keep-variable-span-short-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Ca regulă generală bună, încercați să mențineți intervalul variabil mai scurt.

@@ -191,9 +191,9 @@ Combine all the characters into a sigle string and print it to the console.
 
 | **Input** | **Output** |
 | --- | --- |
-| % | %2o |
+| % | %20 |
 | 2 |     |
-| o |     |
+| 0 |     |
 
 [/task-description]
 [code-io /]
@@ -218,7 +218,7 @@ abc
 %20
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 1
 5

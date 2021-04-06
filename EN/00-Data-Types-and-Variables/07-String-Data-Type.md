@@ -114,12 +114,11 @@ White
 Jan\<-\>White
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 Linda
 Terry
 =\>
-
 [/input]
 [output]
 Linda=\>Terry

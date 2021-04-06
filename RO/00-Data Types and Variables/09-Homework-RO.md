@@ -118,11 +118,9 @@ Sarcina dvs. este de a găsi **suma cifrelor sale**.
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | 245678 | 32 |
-
-### Exemplu
-|**Intrare**|**Ieșire**|
-| --- | --- |
 | 543 | 12 |
+
+
 
 [/task-description]
 [code-io /]
@@ -193,8 +191,8 @@ Calculați câte cursuri vor fi necesare unui lift pentru a **ridica n persoane*
 ### Exemplu
 |**Intrare**|**Ieșire**|**Comentarii**
 | --- | --- | --- |
-| 17 | 6 | 5 cursuri *3 persoane |
-| 3 | | + 1 curs * 2 persoane |
+| 17 | 6 | 5 courses * 3 people |
+| 3 | | + 1 course * 2 people |
 
 [/task-description]
 [code-io /]
@@ -393,7 +391,7 @@ public class Main {
 [task-description]
 
 ## Descriere
-Găsiți online mai multe informații despre ASCII www.ascii-code.com (American Standard Code for Information Interchange) și creați un program care **tipărește o parte din tabelul ASCII** de caractere pe consolă.
+Găsiți online mai multe informații despre [ASCII](www.ascii-code.com) (American Standard Code for Information Interchange) și creați un program care **tipărește o parte din tabelul ASCII** de caractere pe consolă.
 
 Pe prima linie de intrare veți primi **indicele char** cu care ar trebui să **începeți** 
 Pe a doua linie - indexul **ultimului** caracter pe care ar trebui să-l imprimați.

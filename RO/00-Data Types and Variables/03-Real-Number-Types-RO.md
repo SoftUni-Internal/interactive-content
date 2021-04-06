@@ -356,16 +356,6 @@ Creați un program care acceptă un număr n de numere,  calculează și imprim�
 [/test]
 [test]
 [input]
-2
-0.00000000003
-333333333333.3
-[/input]
-[output]
-333333333333.30000000003
-[/output]
-[/test]
-[test]
-[input]
 4
 100000000000
 0.00001

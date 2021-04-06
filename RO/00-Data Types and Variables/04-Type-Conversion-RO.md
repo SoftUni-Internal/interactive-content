@@ -180,9 +180,9 @@ Combinați toate caracterele într-un singur șir și imprimați-le pe consolă.
 
 |**Intrare**|**Ieșire**|
 | --- | --- |
-| % | %2o |
+| % | %20 |
 | 2 |     |
-| o |     |
+| 0 |     |
 
 [/task-description]
 [code-io /]
@@ -207,7 +207,7 @@ abc
 %20
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 1
 5
