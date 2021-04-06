@@ -10,16 +10,16 @@
 
 **1. Polymorphism**
 
-- What polymorphism is
+- Definition
 
-- What types of polymorphism there are
+- Types of polymorphism
 
-- How to override methods
+- Overriding methods
 
-- How to overload methods
+- Overloading methods
 
 **2. Abstract Classes**
 
-- What abstract methods are 
+- What are abstract methods
     
 [/slide]
