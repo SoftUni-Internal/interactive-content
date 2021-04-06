@@ -185,15 +185,15 @@ Steven - 48
 [input]
 5
 Nick 33
-John 88
-George 22
+Yoan 88
+Tom 22
 Leo 44
-Peter 11
+Sophie 11
 [/input]
 [output]
 Leo - 44
 Nick - 33
-John - 88
+Yoan - 88
 [/output]
 [/test]
 [test]
