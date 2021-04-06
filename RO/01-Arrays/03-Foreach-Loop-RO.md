@@ -170,7 +170,11 @@ public class Main {
 ## Descriere
 Creați un program care citește o **matrice de numere întregi** și le condensează prin **adunarea** cuplurilor adiacente de elemente până când se obține un **singur număr întreg**
 
-De exemplu, dacă avem 3 elemente \{2, 10, 3\}, adunăm primele două și ultimele două elemente și obținem \{2+10, 10+3\} = \{12, 13\}, după ce adunăm toate elementele adiacente și obținem \{12+13\} = \{25\}.
+De exemplu, să spunem că avem **3** elemente - \{2, 10, 3\}
+
+Adunăm primele două și ultimele două elemente și obținem \{2+10, 10+3\} = \{12, 13\}, după ce adunăm toate elementele adiacente.
+
+Acest lucru are ca rezultat \{12+13\} = \{25\}.
 
 ## Exemple
 |**Intrare**|**Ieșire**| **Comentarii** |
@@ -180,14 +184,16 @@ De exemplu, dacă avem 3 elemente \{2, 10, 3\}, adunăm primele două și ultime
 | 1 | 1 | 1 is already condensed to number |
 
 
-### Sfaturi
-
+[hints] 
+[hint] 
 În timp ce avem mai multe elemente în matricea `nums []`, repetați următoarele:
 
 * Alocați o nouă matrice `condensed[]` de dimensiune `nums.length`
 * Adunați numerele de la  `nums[]` la `condensed[]`:
-	- `condensed[i]` = `nums[i]` + `nums[i+1]`
+    - `condensed[i]` = `nums[i]` + `nums[i+1]`
     - `nums[] = condensed[]`
+[/hint] 
+[/hints]
 
 [/task-description]
 [code-io /]
