@@ -1243,8 +1243,8 @@ The **exhaustionFactor** is equal to 3. (Y = 3)
 [hint] 
 We start subtracting M from N.
 At the beginning, N = 5 and M = 2.
-N - M = 3. 1 target poked
-N - M = 1. 2 targets poked
+N - M = 3 -> 1 target poked
+N - M = 1 -> 2 targets poked
 N is now smaller than M.
 [/hint] 
 [hint] 
@@ -1327,7 +1327,7 @@ They have decided to involve you in their fray by making you create a program, w
 
 You will receive **N** - an integer, the **number of snowballs being made** by Tony and Andy.
 
-For each snowball ,you will receive 3 input lines:
+For each snowball, you will receive 3 input lines:
 
 - On the first line, you will get the **snowballSnow** - an integer
 
