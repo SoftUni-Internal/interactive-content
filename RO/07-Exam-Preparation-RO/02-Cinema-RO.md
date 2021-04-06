@@ -52,7 +52,7 @@ Prețul trebuie formatat la două cifre după punctul zecimal.
 |**Intrare**|**Ieșire**|
 | --- | --- | --- |
 | John Wick | Your bill is 72.00$ | 
-| Bea | 
+| Drink | 
 | 6 | 
 
 [hints]
