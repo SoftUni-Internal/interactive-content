@@ -6,7 +6,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/03-Generics/EN/interactive-java-advanced-generics-18-19-Type-Parameter-Bounds-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In case you want to **restrict** the types that can be used as type arguments in a parameterized type, you have to use **bounded type parameters**.
+In case we want to **restrict** the types that can be used as type arguments in a parameterized type, we have to use **bounded type parameters**.
 
 Let us explain the need for type parameters bounds with the following example:
 
@@ -20,7 +20,7 @@ public class PowerOfThree<T>  {
 ```
 The code above will produce a compile-time error - "**The method intValue() is undefined for the type T**".
 
-The error occurs as there is no way for the compiler to know type "**T**" will always be used for numeric classes.
+The error occurs as there is no way for the compiler to know that type "**T**" will always be used for numeric classes.
 
 We need a bounded type to restrict the types that can be used for a parameterized type.
 
@@ -44,7 +44,7 @@ public class PowerOfThree<T extends Number>  {
 ```
 Let us explain what the code does.
 
-The type parameter `T` extends Number to restrict the type of objects that can be used in the parameterized type.
+The type parameter `T` extends "**Number**" to restrict the type of objects that can be used in the parameterized type.
 
 The "**Number**" is a superclass of all numeric classes, such as "**Integer**", "**Float**" and "**Double**".
 
@@ -76,7 +76,7 @@ The scale should have a single method:
 
 - `T getHeavier()`
 
-The **greater of the two elements is heavier**. 
+The **greater of the two elements is the heavier one**. 
 
 The method should return `null` if the elements are **equal**.
 
@@ -487,6 +487,6 @@ List<Animal> animals = new ArrayList<>();
 objects = animals; 
 ```
 
-Assigning the `animals` data structure to `objects` will result in a compile-time error.
+Assigning the `animals` data structure to the `objects` will result in a compile-time error.
 
 [/slide]
