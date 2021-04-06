@@ -24,17 +24,7 @@ You receive a budget and the number of series that the user will want to purchas
 
 Each item has a **title** and a **price**.
 
-[hints]
 
-[hint]
-After receiving the budget and the series count, determine whether some of the received series have a discount.
-Then, calculate the price for each series.
-[/hint]
-[hint]
-Calculate the price for all of the series and check if you can buy them.
-[/hint]
-
-[/hints]
 
 There are discounts for some of the titles:
 - Thrones - 50%
@@ -74,6 +64,18 @@ The result must be formatted to the second digit after the decimal point.
 | 5 | 
 | Gotham | 
 | 2 | 
+
+[hints]
+
+[hint]
+After receiving the budget and the series count, determine whether some of the received series have a discount.
+Then, calculate the price for each series.
+[/hint]
+[hint]
+Calculate the price for all of the series and check if you can buy them.
+[/hint]
+
+[/hints]
 
 
 [/task-description]
