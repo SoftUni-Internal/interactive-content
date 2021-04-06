@@ -1105,19 +1105,20 @@ Print **two separate lines** that represent how many **days the mine has operate
 | 111 | 2 |
 | | 134 |
 
-**Comments** 
-
-- On the first day we extract 111 spice and at the end of the shift, the workers consume 26, leaving 85. 
-
-The yield drops by 10 to 101
-
-- On the second day we extract 101 spice, the workers consume 26, leaving 75. 
-
-The total is 160 and the yield has dropped to 91
-
-- Since the expected yield is less than 100, we abandon the source. The workers take another 26, leaving 134. 
-
-The mine has operated 2 days
+[hints] 
+[hint] 
+On the **first day**, we extract 111 spice and at the end of the shift, the workers consume 26, leaving 85. 
+The yield drops by 10 to 101.
+[/hint] 
+[hint] 
+On the **second day** we extract 101 spice, the workers consume 26, leaving 75. 
+The total is 160 and the yield has dropped to 91.
+[/hint] 
+[hint] 
+Since the expected yield is less than 100, we **abandon** the source. 
+The workers take another 26, leaving 134. The mine has **operated** 2 days.
+[/hint] 
+[/hints]
 
 [/task-description]
 [code-io /]
@@ -1182,7 +1183,7 @@ A Poke Mon is a special type of pokemon, which likes to poke others.
 
 But at the end of the day, the Poke Mon wants to keep **statistics** about how many pokes it has managed to do.
 
-The Poke Mon pokes his targe, and then proceeds to poke another target. 
+The Poke Mon pokes his target, and then proceeds to poke another target. 
 
 The **distance between his targets reduces his poke power**.
 
@@ -1232,14 +1233,25 @@ Note: 505 is not exactly 50% of 1000, it is 50.5%.
 | 2 | 2 |
 | 3 | |
 
-**Comments**
-- N = 5, M = 2, Y = 3
-- We start subtracting M from N
-- N - M = 3. 1 target poked
-- N - M = 1. 2 targets poked
-- N < M
-- We print what has remained of N, which is 1
-- We print the count of targets, which is 2
+
+[hints] 
+[hint] 
+This Poke Mon has **poke power** of 5. (N = 5)
+The **distance** between the **poke targets** is 2. (M = 2)
+The **exhaustionFactor** is equal to 3. (Y = 3)
+[/hint] 
+[hint] 
+We start subtracting M from N.
+At the beginning, N = 5 and M = 2.
+N - M = 3. 1 target poked
+N - M = 1. 2 targets poked
+N is now smaller than M.
+[/hint] 
+[hint] 
+We print what has **remained** of **N**, which is 1.
+We print the **count of targets**, which is 2.
+[/hint] 
+[/hints]
 
 [/task-description]
 [code-io /]
