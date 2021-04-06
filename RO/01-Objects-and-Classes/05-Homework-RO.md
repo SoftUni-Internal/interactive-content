@@ -151,9 +151,9 @@ Folosind **clasa Person**, scrieți un program care citește de pe consolă **N 
 ### Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
-| 5 | Nick - 33 | 
-| Nick 33 | John - 88 |
-| John 88 | Leo - 44 |
+| 5 |  Leo - 44  | 
+| Nick 33 | Nick - 33 |
+| John 88 | John - 88|
 | George 22 | |
 | Leo 44 | |
 | Peter 11 | |
@@ -163,8 +163,7 @@ Folosind **clasa Person**, scrieți un program care citește de pe consolă **N 
 [tests]
 [test open]
 [input]
-3
-Peter 12
+2
 John 31
 Steven 48
 [/input]
@@ -173,21 +172,19 @@ John - 31
 Steven - 48
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 5
-Nikolai 33
-Yordan 88
-Tosho 22
-Lyubo 44
-Stanislav 11
-
+Nick 33
+John 88
+George 22
+Leo 44
+Peter 11
 [/input]
 [output]
-Nikolai - 33
-Yordan - 88
-Lyubo - 44
-
+Leo - 44
+Nick - 33
+John - 88
 [/output]
 [/test]
 [test]
@@ -277,18 +274,18 @@ F 88
 [/input]
 [output]
 A - 31
-W - 45
 B - 76
 C - 87
 D - 453
 E - 645
-Z - 55
-K - 53
+F - 88
+H - 76
 I - 43
 J - 543
+K - 53
 P - 67
-H - 76
-F - 88
+W - 45
+Z - 55
 [/output]
 [/test]
 [test]
@@ -309,8 +306,8 @@ Pencho 67
 Zoro 55
 [/input]
 [output]
-Astor - 45
 Asto - 31
+Astor - 45
 Borko - 76
 Ceco - 87
 Dido - 453
@@ -329,10 +326,10 @@ An 33
 Annie 31
 [/input]
 [output]
-Ann - 31
-Anntoanette - 39
 An - 33
+Ann - 31
 Annie - 31
+Anntoanette - 39
 [/output]
 [/test]
 [/tests]

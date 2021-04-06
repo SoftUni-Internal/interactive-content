@@ -160,9 +160,9 @@ Print out the information about all the people who are **older than 30 years of 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 5 | Nick - 33 | 
-| Nick 33 | John - 88 |
-| John 88 | Leo - 44 |
+| 5 |  Leo - 44  | 
+| Nick 33 | Nick - 33 |
+| John 88 | John - 88|
 | George 22 | |
 | Leo 44 | |
 | Peter 11 | |
@@ -191,9 +191,9 @@ Leo 44
 Peter 11
 [/input]
 [output]
+Leo - 44
 Nick - 33
 John - 88
-Leo - 44
 [/output]
 [/test]
 [test]
