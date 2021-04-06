@@ -1254,8 +1254,8 @@ The **exhaustionFactor** is equal to 3. (Y = 3)
 [hint] 
 Începem să scădem M de la N.
 La inceput, N = 5 and M = 2.
-N - M = 3. 1 țintă împinsă
-N - M = 1. 2 ținte împinsă
+N - M = 3 -> 1 țintă împinsă
+N - M = 1 -> 2 ținte împinsă
 N is now smaller than M.
 [/hint] 
 [hint] 
