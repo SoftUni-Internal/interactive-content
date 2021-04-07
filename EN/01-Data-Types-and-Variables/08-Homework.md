@@ -319,10 +319,10 @@ hello(1, 2)
 [/test]
 [test]
 [input]
-hello(1, 3)
+hello(1, 2)
 [/input]
 [output]
-4
+3
 [/output]
 [/test]
 [test]
