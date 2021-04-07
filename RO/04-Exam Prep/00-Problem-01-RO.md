@@ -26,24 +26,25 @@ function adapter(input, code) {
 # Descriere
 Scrieți un program de resetare a parolei care efectuează o serie de comenzi pe un șir.
 
-Mai întâi, veți primi șirul, pe care trebuie să îl modificați, iar apoi, până când se primește comanda "**Done**", vi se vor da comenzi sub formă de text (un șir), împărțit printr-un singur spațiu.
+Mai întâi, veți primi șirul pe care trebuie să îl modificați, iar apoi, până când se primește comanda "**Done**", vi se vor da comenzi sub formă de text (un șir), împărțite printr-un singur spațiu.
 
 Comenzile vor fi următoarele:
 
-* Comandă "**TakeOdd**": 
+* Comanda "**TakeOdd**": 
 
-Prinde doar caracterele la indici impari și le concatenează împreună pentru a obține noua parolă primară și apoi o imprimă.
+Ia în considerare doar caracterele de pe indici impari și le concatenează împreună pentru a obține noua parolă primară și apoi o imprimă.
 
-* Comandă "**Cut** \{**index**\} \{**length**\}": 
+* Comanda "**Cut** \{**index**\} \{**length**\}": 
 
-Taie un subșir cu lungimea dată de cea originală, începând de la indexul specificat și îl imprimă pe consolă.
+Taie un subșir cu lungimea dată din șirul original, începând de la indicele specificat, și îl imprimă pe consolă.
 
 Apoi tipărește noua parolă primară pe o nouă linie.
 
-Indicele și lungimea specificate vor fi întotdeauna valabile.
+Indicele și lungimea specificate vor fi întotdeauna valide.
 
 * Comanda "**Substitute** \{**substring**\} \{**substitute**\}": 
-Dacă 'parola primară' conține subșirul dat, înlocuiește toate aparițiile sale cu textul substitut dat și imprimă rezultatul.
+
+Dacă **parola primară** conține subșirul dat, înlocuiește toate aparițiile sale cu textul substitut dat și imprimă rezultatul.
 
 Dacă nu, imprimați "**Nothing to replace!**".
 
@@ -51,7 +52,7 @@ Dacă nu, imprimați "**Nothing to replace!**".
 
 * Veți primi șiruri până când se primește comanda "**Done**".
 
-* Indecșii comenzii "**Cut** \{**index**\} \{**length**\}" vor fi întotdeauna valabili.
+* Indicii comenzii "**Cut** \{**index**\} \{**length**\}" vor fi întotdeauna valizi.
 
 ## Ieșire
 
@@ -80,15 +81,13 @@ Your password is: icecream\-hot\-mer
 
 Șirul inițial este: "Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr"
 
-Luăm caracterele la indici impari 1, 3, 5 etc., iar rezultatul este:
+Luăm caracterele de pe indici impari 1, 3, 5 etc., iar rezultatul este: "icecream::hot::summer"
 
-"icecream::hot::summer"
-
-* A doua comandă este "**Cut 15  3**":
+* A doua comandă este "**Cut 15 3**":
 
 Șirul este: "icecream::hot::summer"
 
-Tăiem șubșirul care începe de la indexul 15 cu lungimea 3, care este "**sum**", îl eliminăm din parola primară și îl imprimăm.
+Tăiem șubșirul care începe de la indicele 15 cu lungimea 3, care este "**sum**", îl eliminăm din parola primară și îl imprimăm.
 
 Apoi, pe o nouă linie imprimăm noua parolă primară care rezultă: "icecream::hot::mer"
 
@@ -96,7 +95,7 @@ Apoi, pe o nouă linie imprimăm noua parolă primară care rezultă: "icecream:
 
 Șirul inițial este: "icecream::hot::summer"
 
-înlocuim "::" cu "-", iar rezultatul este: "icecream-hot-summer"
+Înlocuim "::" cu "-", iar rezultatul este: "icecream-hot-summer"
 
 * A patra comandă este "**Substitute** \| \^":
 
