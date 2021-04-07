@@ -1231,7 +1231,6 @@ reversChars('\!','\@','\#')
 [test]
 [input]
 reversChars('l','K','\#')
-[/input]
 [output]
 \# K l
 [/output]
