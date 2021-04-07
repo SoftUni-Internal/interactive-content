@@ -48,7 +48,7 @@ hello(1, 2)
 3
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 hello(2, 2)
 [/input]
