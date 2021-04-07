@@ -1,12 +1,12 @@
 # Homework
 
 [slide hideTitle]
-# Problem: Sum Even Numbers
+# Problem: Calculate a Square Area
 [code-task title="Sum Even Numbers" taskId="js-fundamentals-1-Arrays-Sum-Even-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-editor language="javascript"]
 ```
-function sumEvenNumbers(input){
-  // Write your code here
+function calculateArea(input) {
+   // Write your code here
 }
 ```
 [/code-editor]
@@ -21,87 +21,64 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program that receives an **array of strings**, parses them to **numbers**, and sums only the even numbers.
+Create a program, which receives an integer and calculates the area of a square with a side **a**.
 
-## Examples
+- You will receive the side value as an argument of the function 
+- Use the formula to calculate the area 
+- Print the result to the console
+
+## Example
 | **Input** | **Output** |
 | --- | --- |
-| sumEvenNumbers(['1', '2', '3', '4', '5', '6']) | 12 |
-| sumEvenNumbers(['3', '5', '7', '9']) | 0 |
-| sumEvenNumbers(['2', '4', '6', '8', '10']) | 30 |
+| calculateArea(5) | 25 |
+| calculateArea(12) | 144 |
+
+[hints]
+[hint]
+The formula for calculating the area of a square is - a * a.
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
 [test open]
 [input]
-sumEvenNumbers(['1', '2', '3', '4', '5', '6'])
+calculateArea(12)
 [/input]
 [output]
-12
+144
+[/output]
+[/test]
+[test]
+[input]
+calculateArea(2)
+[/input]
+[output]
+4
 [/output]
 [/test]
 [test open]
 [input]
-sumEvenNumbers(['3', '5', '7', '9'])
+calculateArea(5)
 [/input]
 [output]
-0
-[/output]
-[/test]
-[test open]
-[input]
-sumEvenNumbers(['2', '4', '6', '8', '10'])
-[/input]
-[output]
-30
+25
 [/output]
 [/test]
 [test]
 [input]
-sumEvenNumbers(['1', '1', '34', '64', '86'])
+calculateArea(100)
 [/input]
 [output]
-184
+10000
 [/output]
 [/test]
 [test]
 [input]
-sumEvenNumbers(['1', '2', '3', '4', '5', '6', '10'])
+calculateArea(1)
 [/input]
 [output]
-22
-[/output]
-[/test]
-[test]
-[input]
-sumEvenNumbers(['13', '55', '37', '19'])
-[/input]
-[output]
-0
-[/output]
-[/test]
-[test]
-[input]
-sumEvenNumbers(['13', '55', '37', '19'])
-[/input]
-[output]
-0
-[/output]
-[/test]
-[test]
-[input]
-sumEvenNumbers(['1', '156', '7', '18'])
-[/input]
-[output]
-174
-[/output]
-[/test]
-[test]
-[input]
-sumEvenNumbers(['3', '14', '0', '8', '18'])
-[/input]
-[output]
-40
+1
 [/output]
 [/test]
 [/tests]
@@ -109,6 +86,7 @@ sumEvenNumbers(['3', '14', '0', '8', '18'])
 [/code-task]
 
 [/slide]
+
 
 [slide hideTitle]
 # Problem: Even and Odd Subtraction
