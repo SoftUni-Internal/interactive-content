@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Lookahead și Lookbehind
 
-There are **two** ways to use `Lookahead` with RegEx:
+Mai sunt **două** de a folosi **Lookahead**:
 
 - **Lookahead Pozitiv**
 
@@ -18,7 +18,7 @@ There are **two** ways to use `Lookahead` with RegEx:
 În exemplul de mai sus expresia regulată  se potrivește doar cu "ab", deoarece acestea **nu sunt** urmate de una sau mai multe cifre.
 
 ## Lookbehind
-Mai sunt **două** de a folosi `Lookbehind`:**Positive Lookbehind** și **Negative Lookbehind**
+Mai sunt **două** de a folosi **Lookbehind**: **Positive Lookbehind** și **Negative Lookbehind**
 
 - **Lookbehind Pozitiv**
 
