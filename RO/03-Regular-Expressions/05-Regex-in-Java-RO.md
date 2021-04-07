@@ -135,6 +135,10 @@ String[] tokens = text.split(pattern);
 
 System.out.println(String.join(", ",tokens));
 ```
+
+"Expresia `\s+` potrivește unul sau mai multe spații albe.
+
+Folosim apoi metoda `split()` care returnează o matrice de tip șir ale cărei elemente sunt apoi tipărite pe consolă, separate printr-o virgulă și un spațiu."
 [/slide]
 
 
