@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# What is a Function?
+# What a Function is
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/EN/interactive-java-advanced-functional-programming-4-5-What-is-a-function-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -12,7 +12,7 @@ This name can be used in the program as a **command** (this command is called a 
 
 When a function is called, the commands of which it consists are **executed**. 
  
-A function call can return a value (similar to an operation) and therefore can be used in an expression along with operations.
+A function call can return a value (similar to an operation). Therefore, it can be used in an expression along with operations.
  
 **Each** input in the **Function** has a **single** output.
 
@@ -54,7 +54,7 @@ public class MyClass {
 }
  ```
 
-The lambda operator `->` reads as `goes to`.
+The lambda operator `->` is read as `goes to`.
 
 ## Types of Lambda Expressions
 
@@ -126,7 +126,7 @@ public class Main {
 [task-description]
 ## Description
 
-Create a program that reads a line of **integers** separated by a comma and space **", "**.
+Create a program that reads a line consisting of **integers** separated by a comma and a space **", "**.
 Print only the **even numbers**.
 Then, **sort** the even numbers in **ascending order** and print them **again**.
 
