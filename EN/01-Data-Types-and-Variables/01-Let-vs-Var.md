@@ -14,7 +14,7 @@ Pic 1:
 
 [image assetsSrc="js-fundamentals-1-adv-functions-1.png" /]
 
-Pik 2:
+Pic 2:
 [image assetsSrc="array-example.png" /]
 
 
