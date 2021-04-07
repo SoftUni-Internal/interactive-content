@@ -63,7 +63,6 @@ calculateArea(2)
 [/input]
 [output]
 4
-[/output]
 [/test]
 [test]
 [input]
