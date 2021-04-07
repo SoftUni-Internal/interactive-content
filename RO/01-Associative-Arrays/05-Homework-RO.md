@@ -29,7 +29,7 @@ function adapter(input, code) {
 
 Scrieți o funcție care primește o **matrice de cuvinte** și găsește **apariții ale fiecărui cuvânt specificat** într-un șir.
 
-Rezultatul va veni ca o **matrice de șiruri**.
+Rezultatul va fi sub forma unei **matrice de șiruri**.
 
 **Primul șir** va conține **cuvintele** pe care le veți căuta, separate printr-un **spațiu**.
 
@@ -37,7 +37,7 @@ Toate **șirurile de după** vor conține propoziții pe care trebuie să le ver
 
 Tipariți **de câte** ori a apărut fiecare dintre cuvintele specificate.
 
-Cuvintele ar trebui să fie **sortate după numărul de timp în care au fost prezente în ordine descrescătoare**
+Cuvintele trebuie să fie **sortate după numărul de ori în care au fost prezente în ordine descrescătoare**
 
 ## Exemplu
 
@@ -140,7 +140,7 @@ function adapter(input, code) {
 
 # Descriere
 
-Scrieți o funcție care extrage toate elementele unei propoziții, care sunt prezente într-un șir de un număr impar (**majuscula ar trebui ignorată**).
+Scrieți o funcție care extrage toate elementele unei propoziții, care sunt prezente într-un șir de un număr impar d eori (**majusculele trebuie ignorate**).
 
 Intrarea este un **singur șir**. 
 
@@ -237,11 +237,11 @@ function adapter(input, code) {
 
 Scrieți o funcție care:
 
-- Înregistrează o plăcuță de înmatriculare a mașinii pentru fiecare mașină care intră în parcare
-- Îndepărtează mașina când se stinge motorul
-- Rezultatul va fi o matrice de șiruri în formatul următor "\['**direction**, **carNumber**'\]"
+- Înregistrează o plăcuță de înmatriculare pentru fiecare mașină care intră în parcare
+- Elimină mașina când aceasta iese din parcare
+- Rezultatul va fi o matrice de șiruri în formatul următor: "\['**direction**, **carNumber**'\]"
 
-Tipariți rezultatul cu toate numerele de mașină care se află în parcare **sortate în ordine crescătoare după numărul lor de înmatriculare**.
+Tipariți rezultatul cu toate numerele mașinilor care se află în parcare, **sortate în ordine crescătoare după numărul lor de înmatriculare**.
 
 ## Exemplul Unu
 | **Intrare** | **Ieșire**  |
@@ -374,21 +374,19 @@ function adapter(input, code) {
 
 # Descriere
 
-Există o petrecere la SoftUni. 
-
-Sunt mai mulți invitați și sunt **două tipuri de invitați**: VIP și obișnuiți.
+Există o petrecere la SoftUni. Mai mulți oaspeți sunt invitați și există **două tipuri de invitați**: VIP și obișnuiți.
 
 Când oaspeții vin la petrecere, verificați dacă el/ea **există** în oricare dintre **cele două liste de rezervare**.
 
-Rezultatul va fi **omatrice de șiruri**. 
+Rezultatul va fi **o matrice de șiruri**. 
 
-Vi se va da lista cu invitații pe care trebuie să o procesați până la următoarea comandă: "**PARTY**".
+Vi se va da lista cu invitații pe care trebuie să îi procesați până la următoarea comandă: "**PARTY**".
 
 Toate **numerele VIP încep cu o cifră**.
 
 Când primiți comanda: "**PARTY**", oaspeții încep să vină.
 
-Scoateți toți invitații care nu au venit la petrecere (**VIP-urile trebuie să fie primii**).
+Afișați toți invitații care nu au venit la petrecere (**VIP-urile trebuie să fie primii**).
 
 ## Exemplul Unu
 
@@ -523,25 +521,25 @@ function adapter(input, code) {
 
 Vi se oferă o secvență de oameni și ce cărți de joc extrage fiecare din pachet.
 
-Rezultatul va fi o **matrice de șiruri**. Fiecare șir va avea acest format:
+Intrarea va fi o **matrice de șiruri**. Fiecare șir va avea acest format:
 
 "\{**personName**\}: \{**PT, PT, PT,... PT**\}"
 
-Unde P "(**2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A**)" este puterea cardului și T "(**S, H, D, C**)" este tipul.
+Unde P "(**2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A**)" este puterea cărții și T "(**S, H, D, C**)" este tipul.
 
 Numele persoanei poate conține orice simbol ASCII, cu excepția: "**:**".
 
-Rezultatul va fi întotdeauna în formatul descris, nu este necesar s-o verificați.
+Intrarea va fi întotdeauna în formatul descris, nu este necesar să o verificați.
 
-O singură persoană nu poate avea mai multe cărți de joc de aceeași putere și tip, dacă extrage o astfel de carte, o aruncă.
+O singură persoană nu poate avea mai multe cărți de joc de aceeași putere și **tip**, dacă extrage o astfel de carte, o aruncă.
 
 Jocul este jucat folosind mai multe punți. Fiecare carte are o valoare. Valoarea cărții este calculată prin înmulțirea puterii sale cu tipul său.
 
-Puterile de la 2 la 10 au aceeași valoare ca numărul lor și J, Q, K, A sunt 11, 12, 13, 14.
+Puterile de la 2 la 10 au aceeași valoare ca numărul lor și "J, Q, K, A" sunt "11, 12, 13, 14".
 
-Tipurile sunt mapate la multiplicatori în felul următor "(**S -> 4, H-> 3, D -> 2, C -> 1**)".
+Tipurile sunt asociate cu multiplicatori în felul următor: "(**S -> 4, H-> 3, D -> 2, C -> 1**)".
 
-Imprimați valoarea totală a cărții pe care fiecare jucător o are în mână în format:
+Imprimați valoarea totală a cărții pe care fiecare jucător o are în mână în formatul:
 
 "\{**personName**\}: \{**value**\}"
 
@@ -662,11 +660,11 @@ function adapter(input, code) {
 
 Scrieți o funcție care stochează informații despre companii și angajații acestora.
 
-Veți primi o serie de șiruri care conțin un nume de companie și un ID de angajat.
+Veți primi o matrice de șiruri care conțin un nume de companie și un ID de angajat.
 
 Adăugați fiecare angajat la compania specificată. 
 
-Rețineți că o companie nu poate avea doi angajați cu același id.
+Rețineți că o companie nu poate avea doi angajați cu același ID.
 
 Când terminați de citit datele, ordonați companiile după nume în ordine crescătoare.
 
@@ -870,15 +868,15 @@ function adapter(input, code) {
 
 Vi se oferă o **matrice de șiruri**.
 
-Fiecare **șir impar** reprezintă o **resursă** (de exemplu, aur, argint, cupru și așa mai departe) și **fiecare par - o cantitate**.
+Fiecare **șir impar** reprezintă o **resursă** (de exemplu, aur, argint, cupru și așa mai departe) și **fiecare șir par - o cantitate**.
 
-Sarcina dvs. este să colectați resursele și să le tiparitiți pe o nouă linie.
+Sarcina dvs. este să colectați resursele și să le tipăriți pe o nouă linie.
 
-**Tipariți resursele și cantitățile acestora în acest format**:
+**Tipăriți resursele și cantitățile acestora în acest format**:
 
 "\{**resource**\} \-\> \{**quantity**\}"
 
-Cantitățile introduse vor fi în interval de "\[**1...2 000 000 000**\]"
+Cantitățile introduse vor fi în intervalul "\[**1...2 000 000 000**\]"
 
 
 ## Exemplul Unu
