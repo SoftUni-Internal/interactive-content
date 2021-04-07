@@ -11,7 +11,7 @@ Pentru exemplele de mai jos, avem nevoie de un **șir**, un **șablon** și meto
 
 Șablonul arată în felul următor: `/regularExpression/g`
 
-Modificatorul g este utilizat pentru a realiza o potrivire globală (pentru a găsi toate potrivirile, ca să nu se oprească după prima potrivire).
+Modificatorul `g` este utilizat pentru a realiza o potrivire globală (găsește toate potrivirile, fără să se oprească după prima potrivire).
 
 Uneori vom avea nevoie de un semnal global, însă uneori nu.
 
@@ -45,7 +45,7 @@ var result = str.match(pattern);
 console.log(result);
 ```
 
-`?` corespunde elementului precedent de 0 sau mai multe ori.
+`?` corespunde elementului precedent de 0 ori sau o dată.
 
 Exemplu: `1, 100 sau 1000`
 
@@ -99,7 +99,7 @@ var result = str.match(pattern);
 console.log(result);
 ```
 
-Putem utiliza cuantificatori după paranteze!
+Putem utiliza cuantificatori după paranteze.
 
 ```js live
 const str = 'Here we gogo now';
@@ -109,7 +109,7 @@ var result = str.match(pattern);
 console.log(result);
 ```
 
-Utilizați această expresie pentru **grup denumit de capturare** `(?<nume>subexpression)`.
+Utilizați această expresie pentru **grup de capturare denumit**: `(?<nume>subexpression)`.
 
 Metoda `.exec()` testează potriviri într-un șir.
 
@@ -123,7 +123,7 @@ var match = pattern.exec(str);
 console.log(match.groups.number);
 ```
 
-Dacă există potriviri multiple, putem executa iterații printre acestea.
+Dacă există potriviri multiple, putem executa iterații prin acestea.
 
 ```js live
 const str = 'My telephone number is 0884608975 and yours is 0887468956';
@@ -138,11 +138,11 @@ while (match != null) {
 
 Utilizați această expresie pentru **grup ce nu capturează potriviri** `(?:subexpression)`.
 
-Putem utiliza `(?:subexpresie)` pentru a nu captura grupuri și pentru a le elimina din rezultat.
+Putem utiliza `(?:subexpression)` pentru a nu captura grupuri și pentru a le elimina din rezultat.
 
-Când lucrăm cu expresii regulate complexe, ne pot fi foarte folositoare.
+Când lucrăm cu expresii regulate complexe, acest lucru poate fi foarte folositor.
 
-Simbolul `|` din exemplu semnifică  logica "or".
+Simbolul `|` din exemplu semnifică logica "or".
 
 ```js live
 const regex = /(?:Jane|John|Alison)\s(.*?)\s(?:Smith|Smuth)/;
@@ -157,9 +157,9 @@ console.log(result[1]);
 # Backreferences
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-14-15-Backreferences-Match-Previous-Groups-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Un grup poate fi referențiat în șablon utilizând `\N`, unde N este numărul grupului.
+În șablon se pot utiliza referințe pentru un grup utilizând `\N`, unde N este numărul grupului.
 
-Pentru a clarifica motivul pentru care acest concept este folositor, să considerăm o cerință pentru a extrage o propoziție înconjurată de \#.
+Pentru a clarifica motivul pentru care acest concept este folositor, să considerăm o cerință pentru a extrage o propoziție înconjurată de `\#`.
 
 Primul grup din șablon este `(\#)` și se va potrivi pentru primul `#`. 
 
@@ -184,12 +184,13 @@ console.log(result[0]);
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-12S-Solution-Match-Dates-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-Scrieți o expresie regulată care extrage date dintr-un text
+Scrieți o expresie regulată care extrage date dintr-un text.
+
 Un format de dată validă: `dd-MMM-yyyy`
+
 Exemple: `12-Jun-1999, 3-Nov-1999`
 
-
-MI am born on **30-Dec-1994**.
+I am born on **30-Dec-1994**.
 
 My father is born on the **30-Dec-1994**.
 
@@ -210,11 +211,11 @@ My father is born on the **30-Dec-1994**.
 
 Scrieți o expresie regulată care realizează o simplă **validare de email.**
 
-Un email constă în: nume de utilizator, `@`, numele domeniului.
+Un email constă în: nume de utilizator `@` numele domeniului.
 
 - **Numele de utilizator** este **alfanumeric**
 
-- **Numele domeniului** constă în **2 șiruri**, separate de o virgulă \(`.`\)
+- **Numele domeniului** constă în **2 șiruri**, separate de o punct \(`.`\)
 
 - **Numele domeniului** poate conține doar **litere din alfabetul englez**
 
