@@ -1218,6 +1218,7 @@ reversChars('z','z','z')
 [/input]
 [output]
 z z z
+[/output]
 [/test]
 [test]
 [input]
