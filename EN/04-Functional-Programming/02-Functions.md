@@ -9,30 +9,29 @@
 
 Let us continue with another **important paradigm** in modern programming: **functional programming**
 
-**Functional programming** (FP) is a paradigm based on composing **pure functions** while avoiding shared state, mutable data, and side-effects.
+**Functional programming** (FP) is a paradigm based on composing **pure functions** while avoiding shared states, mutable data, and side effects.
 
 Functional programs are **sequences of transformations** of data through functions.
 
-This is a **declarative** programming approach (not **imperative**),
-which means that instead of describing an algorithm, developers describe the result by **functions and compositions of functions**.
+This is a **declarative** programming approach (not **imperative**), which means that instead of describing an algorithm, developers describe the result by **functions and compositions of functions**.
 
 ## Pure Functions
 
 What is a **pure function**?
 
-- It is a function, which returns a value **only determined by its input**, without **side effects**
+- It is a function that returns a value **only determined by its input**, without any **side effects**
 
 - Printing something to the console or storing something in a database are examples of **side effects**
 
 - Therefore, using **pure functional programming** is often **impractical**
 
-- Modern languages use **elements of functional-style programming** and are not purely functional
+- Modern languages use **elements of functional-style programming**, so that they are not purely functional
 
 
 Examples of **pure functions** are:
 
 ## `f(x) = √x`
-- The square root function: **"square root of x"**, which takes a number as input and returns another number as output
+- The square root function: **"square root of x"**, which takes a number as input, and returns another number as output
 
 - The function **"list sort"**, which takes a list as input and returns a new list as output
 
@@ -52,21 +51,21 @@ Both functions have **no side effects**:
 
 There are many **functional programming** languages and languages that incorporate **functional paradigms** into modern software development.
 
-**Purely functional languages** are **impractical** and rarely used because it is more complicated to program without maintaining a state.
+**Purely functional languages** are **impractical** and rarely used, because it is more complicated to program without maintaining a state.
 
 Functional software developers need to **switch their thinking style** from traditional **algorithmic thinking** to **functional thinking**.
 
 - The program in functional languages is a **pure function** (which calls other pure functions) without side effects
 
-**Impure functional languages** are used more often because they **allow exceptions** from the concept of "pure functions" and simplify the work of developers.
+**Impure functional languages** are used more often, because they **allow exceptions** from the concept of "pure functions" and simplify the work of developers.
 
-- These languages emphasize the **functional style** but sometimes **allow side effects**
+- These languages emphasize the **functional style**, but sometimes **allow side effects**
 
 - An example of impure functional language is **Clojure**
 
 - It is not very popular in practical software development
 
-**Multi-paradigm languages** combine the strengths of both the **functional** and the **algorithmic** (or **imperative**) world
+**Multi-paradigm languages** combine the strengths of both the **functional** and the **algorithmic** (or **imperative**) world.
 
 - Most of today's widely used general-purpose programming languages are **multi-paradigm**
 
@@ -78,7 +77,7 @@ Functional software developers need to **switch their thinking style** from trad
 
 **Examples** of popular general-purpose multi-paradigm programming languages are:
 
-- JavaScript, C#, Python, Java, PHP, C++, Go, Swift and TypeScript
+- JavaScript, C#, Python, Java, PHP, C++, Go, Swift, and TypeScript
 
 All these languages combine multiple concepts and paradigms for structuring the program to simplify the work of developers and improve their **efficiency** and **performance**.
 
@@ -90,7 +89,7 @@ All these languages combine multiple concepts and paradigms for structuring the 
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/05-Functional-Programming/EN/interactive-java-advanced-functional-programming-11-12-Java-Functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In Java, we can create functions in a similar fashion to writing mathematical functions.
+Computer functions are defined in a similar way to mathematical ones.
 
 ## `ƒ(x) = x²`
 
@@ -166,11 +165,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that reads a line of **Integers** separated by **", "**. 
+Create a program that reads a line of **Integers**, separated by **", "**. 
 
 Print the **count** of the numbers and their **sum**.
 
-- Use `Function<String, Integer>` for **parsing** integers after you split them into a **String** array
+- Use `Function<String, Integer>` to **parse** the integers after you split them into a **String** array
 
 # Examples
 
