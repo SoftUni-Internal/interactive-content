@@ -518,7 +518,6 @@ Print the output in the following format:
 | centuriesToMinutes(1) | 1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes |
 | centuriesToMinutes(5) | 5 centuries = 500 years = 182621 days = 4382904 hours = 262974240 minutes |
 
-[/task-description]
 [tests]
 [test open]
 [input]
@@ -1462,7 +1461,7 @@ Create a program that receives **three parameters** (characters) and prints them
 | --- | --- |
 | reversChars('A', 'B','C') | C B A |
 | reversChars('1','L','\&') | \& L 1 |
-
+[/task-description]
 [code-io /]
 [tests]
 [test open]
