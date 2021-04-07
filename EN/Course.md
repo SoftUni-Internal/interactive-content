@@ -1,7 +1,7 @@
-# Java Advanced
+# Programming Fundamentals with JavaScitpt
 
 ## Description
-This course teaches the **basics of coding**, such as:
+This course teaches the **fundamentals of coding**, such as:
  - Using variables and expressions
  - Reading and printing at the console
  - Writing conditional logic (if-else)
