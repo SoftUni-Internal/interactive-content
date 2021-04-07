@@ -7,6 +7,13 @@
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-3-4-let-vs-var-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
+
+
+[image assetsSrc="js-fundamentals-1-adv-functions-1.png" /]
+
+[image assetsSrc="array-example.png" /]
+
+
 Different data types have different **sizes** in the computer's memory.
 
 Everything in computers is **ones and zeros**, for example `int` is 32-bit, which means that in order to write `int` in the computer's memory, **thirty-two ones and zeros are needed.**
