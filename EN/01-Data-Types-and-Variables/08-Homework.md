@@ -5,7 +5,7 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/problem1-print-hello-javascript-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Print Hello Javascript" taskId="pb-js-introduction-Print-Hello-Javascript" executionType="tests-execution" executionStrategy="javascript-code"]
+[code-task title="Gramophone" taskId="js-fundamentals-1-basic-syntax-Gramophone" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
