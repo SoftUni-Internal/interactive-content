@@ -13,8 +13,6 @@ In the example above, the first group `[a-z]+` matches one or more small letters
 
 The second group `[0-9]+` matches one or more digits.
 
-After that, `\1` is reapplying the same "matched substring" that will be captured by group 1 (\[**a-z**\]) during runtime.
-
-Backreferences match the same text as previously matched by a capturing group and so `\1` will match the same text that was captured by group 1 (\[**a-z**\]).
+Backreference match the same text as previously matched by a capturing group and so `\1` will match the same text that was captured by group 1 (\[**a-z**\]).
 
 [/slide]
