@@ -9,12 +9,21 @@
 [code-editor language=javascript]
 
 ```
-function hello() {
+function hello(a, b) {
    // Write your code here
 }
 ```
 
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 
@@ -25,9 +34,26 @@ Create a program that prints "**Hello JavaScript**" to the console.
 [tests]
 [test open]
 [input]
+hello(1, 2)
 [/input]
 [output]
-Hello JavaScript
+3
+[/output]
+[/test]
+[test]
+[input]
+hello(1, 2)
+[/input]
+[output]
+3
+[/output]
+[/test]
+[test open]
+[input]
+hello(2, 2)
+[/input]
+[output]
+4
 [/output]
 [/test]
 [/tests]
