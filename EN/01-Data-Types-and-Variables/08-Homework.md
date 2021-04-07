@@ -42,10 +42,10 @@ hello(1, 2)
 [/test]
 [test]
 [input]
-hello(1, 2)
+hello(1, 3)
 [/input]
 [output]
-3
+4
 [/output]
 [/test]
 [test]
