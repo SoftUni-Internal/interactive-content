@@ -27,17 +27,17 @@ function adapter(input, code) {
 
 # Descriere
 
-Scrieți un program care se potrivește cu o dată în formatul "**dd**\{**separator**\}**MMM**\{**separator**\}**yyyy**".
+Scrieți un program care potrivește o dată în formatul "**dd**\{**separator**\}**MMM**\{**separator**\}**yyyy**".
 
-Compuneți expresia regulată
+Compuneți expresia regulată.
 
 Fiecare dată valabilă are următoarele caracteristici:
 
 - Începe întotdeauna cu două cifre, urmate de un separator
-- După aceea, are o literă mare și două litere mici (de exemplu, ian, mar)
-- După aceea, are un separator și exact 4 cifre (pentru anul)
-- Separatorul ar putea fi\: o perioadă "**.**", o cratimă "**-**", sau o bară oblică spre dreapta `/`
-- Separatorul trebuie să fie același pentru întreaga dată **(de ex. 13.03.2016 este valabil, 13.03.2016 NU este)**
+- După aceea, are o literă mare și două litere mici (ex. Jan, Mar)
+- După aceea, are un separator și exact 4 cifre (pentru an)
+- Separatorul poate fi\: un punct "**.**", o cratimă "**-**", sau o bară oblică spre dreapta `/`
+- Separatorul trebuie să fie același pentru întreaga dată **(de ex. 13.03.2016 este valabil, 13.03/2016 NU este)**
 
 Folosiți o referință de grup pentru a verifica acest lucru.
 
@@ -246,9 +246,9 @@ La final, tipăriți fiecare mobilier cumpărat pe o linie separată în format:
 …
 "
 
-Și pe ultima linie tipăriți următoarele:
+Pe ultima linie tipăriți următoarele:
 
-"**Total money spent:** \{**spent money**\}" formatată la a doua zecimală.
+"**Total money spent:** \{**spent money**\}", formatând rezultatul la a doua zecimală.
 
 ## Exemplul Unu
 
@@ -385,11 +385,11 @@ function adapter(input, code) {
 
 Scrieți o funcție care procesează informații despre o competiție.
 
-Pe prima linie, vi se va oferi o listă de participanți, separați cu **", "**.
+Pe prima linie, vi se va oferi o listă de participanți, separați prin **", "**.
 
-În următoarele câteva rânduri, până când primiți o linie **sfârșitul competiției**, vi se vor oferi câteva informații, care vor fi câteva caractere alfanumerice.
+Pe următoarele câteva rânduri, până când primiți o comandă **end of race**, vi se vor oferi câteva informații, care vor fi câteva caractere alfanumerice.
 
-Între ele, ați putea avea câteva caractere suplimentare, pe care ar trebui să le ignorați.
+Între ele, puteți avea câteva caractere suplimentare, pe care trebuie să le ignorați.
 
 De exemplu: "**G!32e%o7r#32g$235@!2e**". 
 
@@ -401,7 +401,7 @@ Stocați informațiile despre persoană numai dacă lista de curse conține nume
 
 Dacă primiți aceeași persoană de mai multe ori, adăugați distanța la cea veche.
 
-La final, tipăriți primii 3 participanți, ordonați după distanța lor în ordinea **descrescătoare** în format:
+La final, tipăriți primii 3 participanți, ordonați după distanța lor în ordine **descrescătoare** în format:
 
 "**1st place:** \{**first racer**\}
 **2nd place:** \{**second racer**\}
@@ -521,15 +521,15 @@ Până când primiți o linie cu un text "**end of shift**", vi se vor da linii 
 
 Fiecare comandă validă trebuie să aibă un client, un produs, un număr și un preț:
 
-- Numele clientului valid ar trebui să fie înconjurat de "**%**" și trebuie să înceapă cu o literă mare, urmată de litere mici
+- Numele clientului valid ar trebui să fie încadrat de "**%**" și trebuie să înceapă cu o literă mare, urmată de litere mici
 
-- Produsul valid conține orice caracter de cuvânt și trebuie să fie înconjurat de "**<**" și "**>**"
+- Produsul valid conține orice caracter de cuvânt și trebuie să fie încadrat de "**<**" și "**>**"
 
-- Numărul valid este un număr întreg, înconjurat de "\|"
+- Numărul valid este un număr întreg, încadrat de "\|"
 
 - Prețul valabil este orice număr real urmat de "**$**"
 
-Părțile unei comenzi valide ar trebui să apară în comanda dată: un client, un produs, un număr și un preț.
+Părțile unei comenzi valide trebuie să apară în comanda dată: un client, un produs, un număr și un preț.
 
 Între fiecare parte pot exista și alte simboluri, cu excepția (\|, \$, \% \.).
 
