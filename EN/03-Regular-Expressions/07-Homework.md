@@ -580,11 +580,12 @@ We will receive several messages, which are encrypted using the legendary **star
 
 
 Decrypt the messages, following these rules:
-- Count the number of times any of these letters is contained on each separate line of input [s, t, a, r] - **case insensitive**. The final number is the encryption key.
-- Remove this number from the ASCII value of each symbol in the encrypted message.
+- Count the number of times any of these letters is contained on each separate line of input [s, t, a, r] - **case insensitive**. The final number is the encryption key
+
+- Remove this number from the ASCII value of each symbol in the encrypted message
 
 **After decryption**:
-- Each message should contain a **planet name**, **population**, **attack status**** ('A' stands for attacked; 'D' stands for destroyed), and a **soldier count**.
+- Each message should contain a **planet name**, **population**, **attack status**** ('A' stands for attacked; 'D' stands for destroyed), and a **soldier count**
 - The **planet name** is marked by '@' followed only by letters from the English alphabet
 - The **planet population** starts after a ':' sign and will be an **integer**
 - The **planet might be "A"(attacked) or "D"(destroyed)**, and this value will be surrounded by "!" (exclamation marks)
@@ -632,7 +633,7 @@ We receive two messages, to decrypt them we calculate the key:
 | --- | --- |
 | 3 | Attacked planets: 0 |
 | tt(''DGsvywgerx>6444444444%H%1B9444 | Destroyed planets: 2 |
-| GQhrr|A977777(H(TTTT | -> Cantonica |
+| GQhrr\|A977777(H(TTTT | -> Cantonica |
 | EHfsytsnhf?8555&I&2C9555SR | -> Coruscant |
 
 ### Comments

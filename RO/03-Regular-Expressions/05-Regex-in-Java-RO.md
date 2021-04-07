@@ -161,7 +161,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Creați un program care ** se potrivește cu toate numele complete valide ** dintr-o listă dată de nume și ** le imprimă **.
+Creați un program care **se potrivește cu toate numele complete valide** dintr-o listă dată de nume și **le imprimă**.
 Intrarea va consta dintr-o singură linie și va conține câteva nume complete.
 Sarcina dvs. este să creați o expresie regulată pentru a verifica care sunt numele valabile.
 
@@ -175,7 +175,7 @@ Sarcina dvs. este să creați o expresie regulată pentru a verifica care sunt n
 [tests]
 [test open]
 [input]
-John Smith, John smith, john Smith, JOhn Smith, Alice White, John	Smith
+John Smith, John smith, john Smith, JOhn Smith, Alice White, John	Smith
 [/input]
 [output]
 John Smith Alice White

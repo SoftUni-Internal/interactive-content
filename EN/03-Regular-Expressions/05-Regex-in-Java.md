@@ -175,7 +175,7 @@ Your task is to create a regular expression to check which the valid names are.
 [tests]
 [test open]
 [input]
-John Smith, John smith, john Smith, JOhn Smith, Alice White, John	Smith
+John Smith, John smith, john Smith, JOhn Smith, Alice White, John	Smith
 [/input]
 [output]
 John Smith Alice White
