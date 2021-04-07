@@ -1186,7 +1186,6 @@ Create a program that receives **three parameters** (characters) and prints them
 | reversChars('A', 'B','C') | C B A |
 | reversChars('1','L','\&') | \& L 1 |
 
-[/task-description]
 [code-io /]
 [tests]
 [test open]
@@ -1208,6 +1207,7 @@ reversChars('1','L','\&')
 [test]
 [input]
 reversChars('a','b','c')
+[/input]
 [output]
 c b a
 [/output]
