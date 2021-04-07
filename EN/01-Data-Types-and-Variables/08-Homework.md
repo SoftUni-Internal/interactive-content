@@ -1182,7 +1182,6 @@ reversChars('1','L','\&')
 [test]
 [input]
 reversChars('a','b','c')
-[/input]
 [output]
 c b a
 [/output]
