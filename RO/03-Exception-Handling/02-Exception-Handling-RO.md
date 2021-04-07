@@ -38,7 +38,7 @@ try {
 
 # Handling Exceptions
 
-[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/RO/Java-Advanced-Exceptions-and-Error-Handling-9-10-handling-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/RO/Java-Advanced-Exceptions-and-Error-Handling-9-10-11-12-13-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Atunci când prindeți o excepție dintr-o anumită clasă, toți moștenitorii săi (excepțiile copilului) sunt prinși și ei.**
 Vezi următorul exemplu:
