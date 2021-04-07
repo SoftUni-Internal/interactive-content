@@ -81,7 +81,6 @@ calculateArea(1)
 1
 [/output]
 [/test]
-[/tests]
 [code-io /]
 [/code-task]
 
