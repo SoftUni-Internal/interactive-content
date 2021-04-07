@@ -1,11 +1,11 @@
 # Lookahead and Lookbehind
 [slide hideTitle]
-# Lookahead 
+# Lookahead and Lookbehind
 
 `Lookahead` and `Lookbehind` are zero-length assertions that match characters, but then give up the match, returning only the result: **match or no match**.
 
 
-There are two kind of `Lookahead` assertions: **Positive Lookahead** and **Negative Lookahead**
+There are two kinds of `Lookahead` assertions: **Positive Lookahead** and **Negative Lookahead**
 
 - **Positive Lookahead**
 
@@ -22,7 +22,7 @@ In the example above, the regular expression matches only `ab` because these let
 
 ## Lookbehind
 
-There are also two kind of `Lookbehind` assertions: **Positive Lookbehind** and **Negative Lookbehind**
+There are also two kinds of `Lookbehind` assertions: **Positive Lookbehind** and **Negative Lookbehind**
 
 - **Positive Lookbehind**
 
