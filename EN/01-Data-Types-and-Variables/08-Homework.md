@@ -35,7 +35,6 @@ Prints "**Hello Java**" to the console.
 [/input]
 [output]
 Hello Java
-[/output]
 [/test]
 [test]
 [input]
