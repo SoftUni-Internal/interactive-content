@@ -134,7 +134,6 @@ concatNames('John', 'Smith', 'm')
 [/input]
 [output]
 JohnmSmith
-[/output]
 [/test]
 [test]
 [input]
