@@ -1,6 +1,54 @@
 # Homework
 
 [slide hideTitle]
+# Problem with Solution: Print "Hello Java"
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-36-37-Problem-and-solution-Print-Hello-Java-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+
+[code-task title="Print Hello Java" taskId="pb-java-introduction-print-hello-java" executionType="tests-execution" executionStrategy="java-code"]
+[code-editor language=java]
+```
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+
+
+[/code-editor]
+[task-description]
+## Description
+
+Create a Java program, that:
+
+Prints "**Hello Java**" to the console.
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+[/input]
+[output]
+Hello Java
+[/output]
+[/test]
+[test]
+[input]
+[/input]
+[output]
+Hello Java
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+[slide hideTitle]
 # Problem with Solution: Print Hello JavaScript
 
 [video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/problem1-print-hello-javascript-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
