@@ -1,7 +1,7 @@
 # Lookahead și Lookbehind
 
 [slide hideTitle]
-# Lookahead 
+# Lookahead și Lookbehind
 
 There are **two** ways to use `Lookahead` with RegEx:
 
