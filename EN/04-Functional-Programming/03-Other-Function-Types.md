@@ -12,7 +12,7 @@ In Java, `Consumer<T>` is a **functional interface** that accepts a single argum
 
 The functional method of **Consumer** is `accept(T t)`.
 
-We can use the **Consumer** function with the `.accept()` method.
+We can use the `Consumer` function with the `.accept()` method.
 
 ``` java
 import java.util.function.Consumer;
@@ -42,7 +42,7 @@ int genRandomInt() {
 
 ```
 
-The functional method of a `Supplier<T>` interface is the `.get()` method.
+The functional method of the `Supplier<T>` interface is the `.get()` method.
 
 
 ``` java
@@ -53,7 +53,7 @@ int rnd = genRandomInt.get();
 
 ## Predicate\<T\>
 
-In Java, `Predicate<T>` is a **functional interface** which represents a predicate (boolean-valued function) of one argument.
+In Java, `Predicate<T>` is a **functional interface** that represents a predicate (boolean-valued function) of one argument.
 
 It is used to **evaluate** a condition.
 
@@ -64,7 +64,7 @@ boolean isEven(int number) {
 }
 ```
 
-We use the `Predicate` with the `.test()` method.
+We use the `Predicate` function with the `.test()` method.
 
 ```java
 Predicate<Integer> isEven = number -> number % 2 == 0;
@@ -99,15 +99,15 @@ public class Main {
 [task-description]
 ## Description
 
-Write a program that reads a line of **text** from the console. 
+Create a program that reads a line of **text** from the console. 
 
-Print the **count** of words that start with an **uppercase** letter.
+Print out the **count** of all words that start with an **uppercase** letter.
 
-After that, print all the found **words** in the **same order** that they appeared in the original text input, each on a new line.
+After that, print out the **words** that fulfill the condition in the **same order** they appeared in the input, each on a new line.
 
 ## Hints
 
-Use a `Predicate<String>` such as an **if-condition**.
+Use a `Predicate<String>` instead of an **if-condition**.
 
 
 
@@ -123,8 +123,8 @@ Use a `Predicate<String>` such as an **if-condition**.
 
 | **Input** | **Output** |
 | --- | --- |
-| Write a program that reads one line of text from console. 
-Print count of words that start with Uppercase, after that print all those words in the same order like you find them in text. | 3 |
+| Write a program that reads one line of text from the console. 
+Print out the count of all words that start with an Uppercase letter, after that print out the words that fulfill the condition in the same order they appeared in the input. | 3 |
 |  | Write |
 |  | Print |
 |  | Uppercase |
@@ -245,13 +245,17 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Write a program that reads a line of prices, parsing them as numbers of type **Double**, separated by **a comma and space** ", ". 
+Create a program that reads a line consisting of few numbers that represent prices, separated by **a comma and а single space** ", ". 
 
-Add 20% VAT tax to each and print each price on a separate line.
+Parse them as numbers of type **Double**.
 
-Format them to the **second** digit after the decimal point. 
+Add 20% VAT tax to each one of them.
 
-The order of the prices must remain the same.
+First, print out: "Prices with VAT:".
+
+Then, print out the updated prices, each on a new line, formated to the **second** digit after the decimal point. 
+
+The order of the prices have to remain the same.
 
 # Examples
 
