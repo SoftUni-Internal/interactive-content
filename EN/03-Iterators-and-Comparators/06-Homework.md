@@ -14,7 +14,7 @@ You should store the elements in a **List**.
 
 The class should have three main functions:
 
-- "**Move**" - moves an internal **index** position to the next index in the list, the method should return **true** if it successfully moved and **false** if there is no next index
+- "**Move**" - moves an internal **index** position to the next index in the list, the method should return **true** if the operation is successful, and **false** if there is no next index
 
 - "**HasNext**" - should return **true** if there is a next index and **false** if the index is already at the **last** element of the list
 
@@ -27,7 +27,7 @@ Your program should support the following commands:
 
 | **Command** | **Return Type** | **Description** |
 | --- | --- | --- |
-| Create \{e1 e2 …\} | void | Creates a ListyIterator from the specified collection. In case you receive a Create command without any elements, you should create a ListyIterator with an empty collection. |
+| Create \{e1 e2 …\} | void | Creates a ListyIterator from the specified collection. In case you receive a "Create" command without any elements, you should create a ListyIterator with an empty collection. |
 | Move | boolean | This command should move the internal index to the next index. |
 | Print | void | This command should print the element at the current internal index. |
 | HasNext | boolean | Returns whether the collection has the next element. |
@@ -42,17 +42,17 @@ The last command received will **always** be "**END**".
 
 ## Output
 
-For every command (except for the **END** and **Create** commands) print the result of that command to the console, each on a **new line**. 
+For every command (except for the **END** and the **Create** commands), print the result of that command to the console, each on a **new line**. 
 
 If you receive the **Move** or the **HasNext** commands, print the **return value** of the method.
 
-Your program should catch **any exceptions thrown** from validations (calling Print on an empty collection) and print the error messages.
+Your program should catch **any exceptions thrown** from validations (calling "Print" on an empty collection) and print the error messages.
 
 ## Constraints
 
 - There will always be only **one Create** command and it will always be the first command passed
 - The number of commands received will be **between** [1 ... 100]
-- The last command will always be the "**END**". command
+- The last command will always be the "**END**" command
 
 
 ## Examples
@@ -248,21 +248,21 @@ Using the "**ListyIterator**" from the last problem, extend it by implementing t
 
 Implement **all** methods required by the interface manually.
 
-Add a new method to the `PrintAll()`class, the method should use "**foreach**" on the collection and print all elements on a **single line** separated by a space.
+Add a new method to the `PrintAll()`class. The method should use "**foreach**" on the collection and print all elements on a **single line**, separated by a space.
 
 ## Input
 The input will come from the console as **lines** of commands. 
 
 The first line will always be the "**Create**" command. 
 
-The **last** command received will always be the "**END**". command.
+The **last** command received will always be the "**END**" command.
 
 ## Output
-For every command from the input (except for the "**END**". and the "**Create**" commands) print the result of that command to the console, each on a **new line**. 
+For every command from the input (except for the "**END**" and the "**Create**" commands), print the result of that command to the console, each on a **new line**. 
 
 In case you receive the "**Move**" or the "**HasNext**" commands, print the return value of the method.
 
-If you get the "**PrintAll**" command, you should print all elements on a single line **separated by spaces**. 
+If you get the "**PrintAll**" command, you should print all elements on a single line, **separated by spaces**. 
 
 Your program should catch **any exceptions** thrown due to validations and print their messages.
 
@@ -462,9 +462,9 @@ Steven John Kevin
 
 [task-description]
 # Description
-You have a task to create your custom Stack.
+You have a task to create a custom **Stack**.
 
-You already know the structure of a Stack.
+You already know the structure of a **Stack**.
 
 The elements are stored in a collection.
 
@@ -472,18 +472,20 @@ It has two functions - "**push**" and "**pop**" an element.
 
 The first **popped** element is in the **last position** in the collection.
 
-The "**push**" method adds an element to the **top** of the collection and the "**pop**" method returns the **top** element and **removes** it.
+The "**push**" method adds an element to the **top** of the collection. 
+
+The "**pop**" method returns the **top** element and **removes** it.
 
 Write your custom implementation of "**Stack**\<**Integer**\>" and implement your custom **iterator**. 
 
-Your Stack class should implement the "**Iterable**\<**Integer**\>" interface and your **Iterator Class** should implement the "**Iterator**\<**Integer**\>" interface. 
+Your **Stack** class should implement the "**Iterable**\<**Integer**\>" interface, and your **Iterator Class** should implement the "**Iterator**\<**Integer**\>" interface. 
 
 Your Custom Iterator should follow the rules of the **Abstract Data Type - Stack**. (First In First Out) 
 
-Iterators are used only for iterating through the collection, they **should not** remove or mutate the elements.
+Iterators are used only for iterating through the collection, so they **should not** remove or alter the elements.
 
 ## Input
-The input can be only two types "**push**" and "**pop**", followed by integers for the "**push**" command and **no other** input for the "**pop**" command. 
+The input can be only two types - "**push**" and "**pop**", followed by integers for the "**push**" command, and **no other** input for the "**pop**" command. 
 
 Each command will come on a separate line.
 
@@ -497,10 +499,10 @@ The program should stop when you receive the "**END**" command.
 **Foreach** the stack **twice** and print all elements. Each element should be on a **new line**.
 
 ## Constraints
-- The elements in the "**Push**" command will be **valid** integers **between** [2 ^ -32 ... 2 ^ 32 - 1]
+- The elements in the "**Push**" command will be represented by **valid** integers **between** [2 ^ -32 ... 2 ^ 32 - 1]
 - The commands will always be **valid** (either "**Push**", "**Pop**", or "**END**")
 - There will be no more than **16** elements in the "**Push**" command
-- If the "**Pop**" command **could not** be executed as expected (e.g. no elements in the stack), print to the console: "**No elements**"
+- If the "**Pop**" command **could not** be executed as expected (e.g. there are no elements in the stack), print out: "**No elements**"
 
 
 ## Examples
@@ -673,49 +675,49 @@ No elements
 # Description
 Let us play a game.
 
-You have a tiny little **Frog** and a **Lake** with numbers.
+There is a little **Frog** and a **Lake** with numbers.
 
-The **Lake** and its numbers, you will get by an input from the console.
+You will receive the numbers that form the **Lake** as an input from the console.
 
-Imagine, your **Frog** belongs to the **Lake**.
+The **Frog** lives in the **Lake**.
 
-The **Frog jumps** only when the "**END**" command is received.
+The **Frog starts jumping when the "**END**" command is received.
 
 When the **Frog** starts jumping, print to the console **each number** the **Frog** has stepped over.
 
-To calculate the jumps, use the guidelines:
+Follow the guidelines:
 
-The jumps start from the **zero index**. 
+The frog starts jumping from the **zero index**. 
 
-They follow the pattern - first all even indexes in **ascending** order(0 -> 2 -> 4 -> 6 and so on) and then all odd indexes in **ascending** order (1 -> 3 -> 5 -> 7 and so on). 
+Next, the frog jumps on all even indexes in **ascending** order(0 -> 2 -> 4 -> 6 and so on), and then on all odd indexes in **ascending** order (1 -> 3 -> 5 -> 7 and so on). 
 
 Consider the **zero** index as **even**.
 
-Long story short: Create a "**Lake**" class, it should implement the - "**Iterable**" interface. 
+Long story short: Create a class called "**Lake**" that should implement the "**Iterable**" interface. 
 
-Inside the **Lake**, create a "**Frog**" class and implement the "**Iterator**" interface. 
+Inside the **Lake** class, create a class called "**Frog**" and implement the "**Iterator**" interface. 
 
 You will receive **only integers**.
 
 ## Input
 The input will consist of two lines. 
 
-First-line - the **initial** numbers of the lake, **separated** by a comma and a single space. 
+On the first line, you will receive the **initial** numbers that form the lake, **separated** by a comma and a single space. 
 
-The second line will be the "**END**" command.
+On the second line, you will receive the "**END**" command.
 
 ## Output
 
-**Foreach** the collection of numbers, the **Frog** has jumped over, and print **each** element.
+**Foreach** the collection of numbers the **Frog** has jumped over and print **each** element.
 
-The output should be print on a **single** line.
+The output should be printed on a **single** line.
 
 **Format:**
 
 "\{**number**\}, \{**second number**\}, \{**third number**\} ..."
 
 ## Constraints
-- The **Lake's** numbers will be **valid** integers in the **range** [2 ^ -32 ... 2 ^ 32 - 1]
+- The numbers that form the lake will be **valid** integers in the **range** [2 ^ -32 ... 2 ^ 32 - 1]
 - The command will always be **valid**
 
 ## Examples
@@ -819,17 +821,17 @@ END
 # Description
 Create a **class** "**Person**".
 
-Each person object should have **name**, **age**, and **town**.
+Each person object should have a **name**, **age**, and **town**.
 
 As you may know, there is a built-in Comparable interface.
 
-You should implement the "**Comparable**" interface, and try to override the "**compareTo**" method.
+You should implement the "**Comparable**" interface and try to override the "**compareTo**" method.
 
-When you compare two people, first you should compare their **names**, after that - their **age** and finally, compare their **town**.
+When you compare two people, first you should compare their **names**, after that, their **age**, and finally, their **town** name.
 
 
 ## Input
-The input consists of lines of information about people in the following format:
+The input consists of few lines of information about people in the following format:
 
 "\{**name**\} \{**age**\} \{**town**\}"
 
@@ -842,16 +844,16 @@ This integer refers to the **N**\-th person in your collection.
 ## Output
 
 Print the following information on a single line:
-- Number people objects that are **equal** to the **Nth person**\
-- Number of people objects **not equal** to this person
-- Total number of people in your collection
+- Number of people that are the **same** as the **N-th person**
+- Number of people that are **different** than this person
+- Total number of people in the collection
 
 **Format:**
 
-"\{**number of equal people**\} \{**number of not equal people**\} \{**total number of people**\}"
+"\{**Number of people that are the same as the N-th person**\} \{**number of people that are different than this person**\} \{**total number of people in the collection**\}"
 
 ## Constraints
-- Names, ages, and addresses will be **valid**
+- All names, ages, and town names will be **valid**
 - **N** will be always a **valid** integer in the **range** [2 ... 100]
 - If there are no equal objects, print: "**No matches**"
 
@@ -967,13 +969,13 @@ No matches
 
 [task-description]
 # Description
-An interesting pattern you may have heard of is the Strategy Design Pattern.
+An interesting pattern you may have heard of is the **Strategy Design Pattern**.
 
-If we have multiple ways to do a task, it allows the client to choose the way that most fits their needs.
+If there are multiple ways to do a given task, it allows the client to choose the way that most fits their needs.
 
 A popular implementation of the pattern used for sorting objects in Java is the `Collections.sort()` method that takes a **Comparator**.
 
-Create a class "**Person**" that holds **name** and **age**. 
+Create a class "**Person**". Each person should have a **name** and **age**. 
 
 Create 2 Comparators for Person (classes that implement the "**Comparator**\<**Person**\>" **interface**). 
 
@@ -983,12 +985,12 @@ If two people have a name with the **same** length, perform a **case-insensitive
 
 The second comparator should compare them based on their **age**. 
 
-Create 2 **TreeSets** of type Person, the first should implement the name comparator, the second should implement the age comparator.
+Create 2 **TreeSets** of type **Person**. The first one should implement the name comparator, the second one should implement the age comparator.
 
 ## Input
 On the first line, you will receive a number **N**. 
 
-On each of the next **N** lines, you will receive information about people in the format "\{**name**\} \{**age**\}". 
+On each of the next **N** lines, you will receive information about people in the following format: "\{**name**\} \{**age**\}". 
 
 Add the people from the input into **both** sets.
 
@@ -1001,9 +1003,9 @@ Start with the set that implements the name comparator.
 
 - A person's name will be a string that contains **only** alphanumerical characters with a length **between** [1 ... 50] symbols
 
-- A person's age will be a **positive** integer **between** [1 ... 100]
+- A person's age will be a **positive** integer in the **range** [1 ... 100]
 
-- The number of people **N** will be a **positive** integer **between** [0 ... 100]
+- The number of people **N** will be a **positive** integer in the **range** [0 ... 100]
 
 ## Examples
 
@@ -1164,11 +1166,11 @@ aria 33
 [task-description]
 # Description
 
-Create a **class** "**Person**" that has **name** and **age**.
+Create a class "**Person**". Each person should have a **name** and **age**. 
 
-A person with the **same** name and age should be considered the same.
+If there are two or more people with **same** name and age, they should be considered the same.
 
-Override any methods needed to enforce this logic.
+Override any methods needed to apply this logic.
 
 Your class should work with **both** standard and hashed collections.
 
@@ -1176,9 +1178,9 @@ Create a "**TreeSet**" and a "**HashSet**" of type Person.
 
 ## Input
 
-On the first line, you will receive a number **N**. 
+On the first line, you will receive an integer **N**. 
 
-On each of the next **N** lines, you will receive information about people in the format "\{**name**\} \{**age**\}".  
+On each of the next **N** lines, you will receive information about people in the following format: "\{**name**\} \{**age**\}".  
 
 Add the people from the input into **both** sets (both sets should hold all the people passed in from the input).
 
@@ -1186,21 +1188,21 @@ Add the people from the input into **both** sets (both sets should hold all the 
 
 The output should consist of **exactly** 2 lines. 
 
-On the first, you should print the **size** of the "**TreeSet**", and on the second - the **size** of the "**HashSet**".
+On the first line, you should print the **size** of the "**TreeSet**", and on the second - the **size** of the "**HashSet**".
 
 ## Constraints
 
 - A person's name will be a string that contains **only** alphanumerical characters with a length **between** [1 ... 50] symbols
 
-- A person's age will be a **positive** integer **between** [1 ... 100]
+- A person's age will be a **positive** integer in the **range** [1 ... 100]
 
-- The number of people **N** will be a positive integer **between** [0 ... 100]
+- The number of people **N** will be a positive integer in the **range** [0 ... 100]
 
 ## Hint
 
 You should override **both** the **equals()** and the **hashCode()** methods. 
 
-You can check online for an implementation of hashCode - it does not have to be perfect, but it should be good enough to produce the same hash code for objects with the **same** name and age, and different enough hash codes for objects with **different** name and/or age.
+You can check online for implementation of hashCode - it does not have to be perfect, but it should be good enough to produce the same hash code for objects with the **same** name and age, and different hash codes for objects with **different** name and/or age.
 
 
 ## Examples
@@ -1356,9 +1358,9 @@ I 3
 # Description
 ***You are a young and ambitious owner of a Pet Clinics Holding.***
 
-You ask your employees to create a program that will store all information about the pets in the database.
+You ask your employees to create a program that will store the whole information about the pets in the database.
 
-Each pet should have **name**, **age**, and **kind**.
+Each pet should have a **name**, **age**, and **type**.
 
 
 Your application should support a few basic operations, such as: 
@@ -1367,9 +1369,9 @@ Your application should support a few basic operations, such as:
 - **Creating** a clinic
 - **Adding** a pet to a clinic
 - **Releasing** a pet from a clinic
-- **Printing** information about a **specific** room in a clinic or printing information about **all** rooms in a clinic
+- **Printing** information about a **specific** room in a clinic, or printing information about **all** rooms in a clinic
 
-Clinics should have an **odd** number of rooms, attempting to create a clinic with an **even** number, or should **fail** and **throw** an appropriate **exception**.
+Clinics should have an **odd** number of rooms. Attempting to create a clinic with an **even** number of rooms should **fail** and **throw** an appropriate **exception**.
 
 ## Accommodation Order
 
@@ -1377,46 +1379,48 @@ For example, let us take a look at a clinic with 5 rooms.
 
 The **first** room where a pet will be treated is the **central** one (room 3). 
 
-So the order in which an animal is entering is: the first animal is going to the **center** (3) room and after that, the next pets are entering first to the **left** (2) and then to the **right** (4) room. 
+So, the order in which animals are entering is as follows: the first animal is going to the **center** (room 3). The next pet enters the room to the **left** of the previously occupied one (second room). The next pet enters the room to the **right** of the same occupied room (room 4).
 
-The last rooms in which pets can enter are room 1 and room 5. 
+The last free rooms in which pets can enter are **room 1** and **room 5**. 
 
-In case a room is already occupied, we skip it and go to the next room in the above order. Your task is to model the application and make it support some commands.
+In case a room is already occupied, we go to the next room in the above order. Your task is to model the application and make it support some commands.
 
 The first pet enters room 3. -> 1 2 **3** 4 5
 
-After that, the next pet enters room 2. -> 1 **2** 3 4 5
+The second pet enters room 2. -> 1 **2** 3 4 5
 
 The third pet would enter room 4. -> 1 2 3 **4** 5
 
-And the last two pets would be going to rooms - 1 and 5. -> **1** 2 3 4 **5**
+The fourth pet would enter room 1. -> **1** 2 3 4 5 
 
-Now when we have covered adding the pets, it is time to find a way to release them. 
+The fifth pet would enter room 5. -> 1 2 3 4 **5** 
+
+When we have added all the pets, it is time to find a way to release them. 
 
 The process of releasing them is not so simple. 
 
-When the release method is called, we start from the **center** room (3) and continue **right** (4, 5… and so on) until we find a pet or reach the **last** room. 
+When the **Release** method is called, we start from the **central** room (room 3), and continue with the rooms to the **right** (room 4, room 5, and so on), until we find a pet or reach the **last** room (room 5). 
 
-If we reach the last room, we start from the **first** (1) and again move right until we reach the **center** room (3). 
+If we reach the last room, we start from the **first** room (room 1), and again, we move right until we reach the **central** room (room 3). 
 
-If a pet is found, we **remove** it from the collection, stop searching for a room, and **return** "**true**". If a pet is **NOT** found, the operation **returns** "**false**".
+If a pet is found, we **remove** it from the collection and **return** "**true**". If a pet is **NOT** found, we return "**false**".
 
-When a "**Print**" command for a room is called, if the room contains a pet we print the pet on a single line in the format "\{**pet name**\} \{**pet age**\} \{**pet kind**\}". 
+When the "**Print**" command for a certain room is called, if the room contains a pet, we print the information about the pet on a single line in the following format: "\{**pet name**\} \{**pet age**\} \{**pet type**\}". 
 
-Alternatively, if the room is empty print **"Room empty"** instead. 
+Alternatively, if the room is empty, we print **"Room empty"**. 
 
-When a "**Print**" command for a clinic is called it should print **all** rooms in the clinic in ordered by room number.
+When a "**Print**" command for a certain clinic is called, we should print **all** rooms in the clinic, ordered by their room numbers.
 
 ### Commands
 
 | **Command** | **Return Type** | **Description** |
 | --- | --- | --- |
-| Create Pet \{name\} \{age\} \{kind\} | void | Creates a pet with the specified name and age (true if the operation is successful and false if it is not) |
-| Create Clinic \{name\} \{rooms\} | void | Creates a Clinic with the specified name and number of rooms (if the rooms are not odd, throws an exception) |
-| Add \{pet's name\} \{clinic's name\} | boolean | This command should add the given pet in the specified clinic (true if the operation is successful and false if it is not) |
-| Release \{clinic's name\} | boolean | This command should release an animal from the specified clinic (true if the operation is successful and false if it is not) |
-| HasEmptyRooms \{clinic's name\} | boolean | Returns whether the clinic has any empty rooms (true if it has and false if it does not) |
-| Print \{clinic's name\} | void | This command should print each room in the specified clinic, ordered by room number |
+| Create Pet \{name\} \{age\} \{type\} | void | Creates a pet with the specified name and age (returns true if the operation is successful, and false if it is not) |
+| Create Clinic \{name\} \{rooms\} | void | Creates a clinic with the specified name and number of rooms (if the number of the rooms is not odd, throws an exception) |
+| Add \{pet's name\} \{clinic's name\} | boolean | This command should add the given pet in the specified clinic (returns true if the operation is successful, and false if it is not) |
+| Release \{clinic's name\} | boolean | This command should release an animal from the specified clinic (returns true if the operation is successful, and false if it is not) |
+| HasEmptyRooms \{clinic's name\} | boolean | Returns whether the clinic has any empty rooms (returns true if it has, and false if it does not) |
+| Print \{clinic's name\} | void | This command should print each room in the specified clinic, ordered by their room numbers |
 | Print \{clinic's name\} \{room\} | void | Prints the pets that are currently being treated in the specified room on a single line |
 
 ## Input
@@ -1425,26 +1429,26 @@ On the first line, you will be given an integer **N** - the number of commands y
 
 On each of the next **N** lines, you will receive a command. 
 
-Commands and parameters will always be **correct** ( "**Add**", "**Release**", "**HasEmptyRooms**" and "**Print**"  commands will always be passed to **existing** clinics/pets), except for the number of rooms in the **Create Clinic** command which can be any **valid** integer **between 1 and 101**.
+Commands and parameters will always be **correct** ( "**Add**", "**Release**", "**HasEmptyRooms**" and "**Print**" commands will always be passed to **existing** clinics/pets), except for the number of rooms in the **Create Clinic** command, which can be any **valid** integer **between 1 and 101**.
 
 ## Output
 
 For each command with a boolean **return** type received through the input, you should print its return value on a **separate** line. 
 
-In a method **throws** an **exception** (such as trying to create a clinic with an even number of rooms or trying to add a pet that does not exist) you should **catch** the exceptions and print "**Invalid Operation!**". 
+If a method **throws** an **exception** (such as trying to create a clinic with an even number of rooms, or trying to add a pet that does not exist), you should **catch** the exceptions and print "**Invalid Operation!**". 
 
-The "**Print**"  command with a clinic and a room should print information for that room in the format **specified** above. 
+The **Print \{clinic's name\} \{room\}** command should print information about that room in the format **specified** above. 
 
-The "**Print**"  command with only a clinic should print information **for each** room in the clinic in ordered by room numbers.
+The **Print \{clinic's name\}** command should print information about all rooms in the clinic, ordered by their room numbers.
 
 ## Constraints
 
-- The number of commands **N** - will be a valid integer **between** [1 ... 1000], no need to check it explicitly
-- **Pet names**, **Clinic names**, and **kind** will be strings consisting only of alphabetical characters with length **between** [1 ... 50] characters
-- **Pet age** will be a positive integer **between** [1 ... 100]
-- **Clinic rooms** will be a positive integer **between** [1 ... 101]
-- **Room number** in a **Print** command will always be **between 1** and the **number of rooms** in that Clinic
-- Input will consist **only** of **correct commands** and they will **always** have the correct type of parameters
+- The number of commands **N** will be a valid integer in the **range** [1 ... 1000], there is no need to check it explicitly
+- All **pet names**, **clinic names**, and **types** will be strings consisting only of alphabetical characters. Their length will be **between** [1 ... 50] characters
+- **The age of a pet** will be an integer in the **range** [1 ... 100]
+- **The number of all rooms in a clinic** will be an integer in the **range** [1 ... 101]
+- **The room number** in a **Print** command will always be **between 1** and the **number of all rooms** in that clinic
+- Input will consist **only** of **correct commands**, and they will **always** have the correct type of parameters
 
 ## Examples
 
@@ -1669,28 +1673,28 @@ Elephant 4 Elephant
 
 [task-description]
 # Description
-You need to write a simplified implementation of a generic Linked List that has an Iterator.
+You need to write a simplified implementation of a **generic Linked List that has an Iterator**.
 
-The list should support the "**Add**" and "**Remove**" operations, should reveal the number of elements it has with a "**getSize**" function and should have an implemented iterator (should be **foreach**-able).
+The list should support the "**Add**" and the "**Remove**" operations. It should reveal the number of elements that it has by calling a "**getSize**" function, and it should have an implemented iterator (should be **foreach**-able).
 
-The "**add**" method should add the new element at the end of the collection.
+The "**add**" method should add a new element at the end of the collection.
 
-The "**remove**" method should remove the first occurrence of the item starting at the beginning of the collection, if the element is successfully removed the method **returns true**, alternatively, if the element passed is not in the collection the method should **return false**.
+The "**remove**" method should remove the first occurrence of the item, starting from the beginning of the collection. If the element is successfully removed, the method should **return true**, and alternatively, if the element passed is not in the collection, the method should **return false**.
 
-The "**getSize**" method should **return** the number of elements currently in the list.
+The "**getSize**" method should return the **number of all elements** that are currently in the list.
 
-The **iterator** should iterate over the collection starting from the first entered element.
+The **iterator** should iterate over the collection, starting from the first entered element.
 
 
 ## Input
 
-On the first line of input, you will receive a number **N**. 
+On the first line, you will receive a number **N**. 
 
-On each of the next **N** lines you will receive a command in one of the following formats:
+On each of the next **N** lines, you will receive a command in one of the following formats:
 
 - "**Add** \{**number**\}" - adds a number to your linked list
 - "**Remove** \{**number**\}" - removes the first occurrence of the number from the linked list
-    - if there is no such element the collection remains **unchanged**
+    - if there is no such element, the collection remains **unchanged**
 
 ## Output
 
@@ -1698,13 +1702,13 @@ The output should consist of exactly 2 lines.
 
 On the first, you should print the result of calling the "**getSize**" function on the Linked list. 
 
-On the next line, you should print **all the elements** of the collection by iterating over the collection with **foreach**.
+On the next line, you should print **all elements** in the collection by iterating over the collection with a **foreach** loop.
 
 ## Constraints
 
-- All numbers in the input will be **valid** integers **between** [2 ^ -32 ... 2 ^ 32 - 1]
+- All numbers received through the input will be **valid** integers in the **range** [2 ^ -32 ... 2 ^ 32 - 1]
 - All commands received through the input will be **valid** ("**Add**" or "**Remove**")
-- The number **N** will be a positive integer **between** [1 ... 500]
+- The number **N** will be an integer in the **range** [1 ... 500]
 
 ## Examples
 
