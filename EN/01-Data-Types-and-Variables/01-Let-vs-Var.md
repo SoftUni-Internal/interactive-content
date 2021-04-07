@@ -11,9 +11,9 @@
 
 [image assetsSrc="Angular-Modules-And-Routing-Workshop(6).png" /]
 
-[image assetsSrc=Angular-Modules-And-Routing-Workshop(7).png" /]
+[image assetsSrc="Angular-Modules-And-Routing-Workshop(7).png" /]
 
-[image assetsSrc=Angular-Modules-And-Routing-Workshop(8).png" /]
+[image assetsSrc="Angular-Modules-And-Routing-Workshop(8).png" /]
 
 
 Different data types have different **sizes** in the computer's memory.
