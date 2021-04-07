@@ -10,7 +10,7 @@
 
 [image assetsSrc="regex-example(24).png" /]
 
-În exemplul de mai sus, primul grup `[a-z] +` se potrivește cu una sau mai multe litere mici de câte ori.
+În exemplul de mai sus, primul grup `[a-z]+` se potrivește cu una sau mai multe litere mici de câte ori.
 
 Al doilea grup `[0-9]+` se potrivește cu una sau mai multe cifre.
 
