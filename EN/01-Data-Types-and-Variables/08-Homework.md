@@ -73,7 +73,6 @@ Gotham
 [/input]
 [output]
 You bought all the series and left with 0.50$
-[/output]
 [/test]
 [test]
 [input]
