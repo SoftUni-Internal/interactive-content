@@ -518,6 +518,7 @@ Print the output in the following format:
 | centuriesToMinutes(1) | 1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes |
 | centuriesToMinutes(5) | 5 centuries = 500 years = 182621 days = 4382904 hours = 262974240 minutes |
 
+[/task-description]
 [tests]
 [test open]
 [input]
@@ -526,7 +527,6 @@ centuriesToMinutes(1)
 [output]
 1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes
 [/output]
-[/test]
 [test open]
 [input]
 centuriesToMinutes(5)
