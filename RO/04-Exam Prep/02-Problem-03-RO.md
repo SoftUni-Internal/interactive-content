@@ -25,13 +25,13 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Până la data comenzii "**Sail**" veți primi:
+Până la comanda "**Sail**" veți primi:
 
-* Orașele pe care tu și echipajul tău le-ai vizat și populația și aurul fiecărui oraș, separate prin "\|\|" (semne verticale)
+* Orașele pe care tu și echipajul tău le-ai țintit, populația și aurul fiecărui oraș, separate prin "\|\|" (bare verticale)
 
-* Dacă primiți un oraș care a fost deja **vizat**, trebuie să creșteți populația și aurul cu valorile date.
+* Dacă primiți un oraș care a fost deja **țintit**, trebuie să creșteți populația și aurul cu valorile date.
 
-După ce atingeți comanda "**Sail**", veți începe să primiți linii de text care reprezintă evenimente până când este dată comanda "**End**".
+După comanda "**Sail**", veți începe să primiți linii de text care reprezintă evenimente, până când este dată comanda "**End**".
 
 Evenimentele vor avea următorul format:
 
@@ -43,27 +43,27 @@ Imprimați acest mesaj pentru fiecare oraș pe care îl atacați: "\{**town**\} 
 
 Dacă oricare dintre aceste două valori (populație sau aur) ajunge la zero, orașul este distrus.
 
-Trebuie să îl eliminați din colecția dvs. de orașe vizate și să imprimați următorul mesaj: un "\{**town**\} **has been wiped off the map!**".
+Trebuie să îl eliminați din colecția dvs. de orașe țintite și să imprimați următorul mesaj: "\{**town**\} **has been wiped off the map!**".
 
 Nu va exista niciun caz care să depășească numărul de persoane sau cantitatea de aur, care a fost deja specificată pentru fiecare oraș.
 
-* Commanda: "****Prosper**\=\>\{**town**\}\=\>\{**gold**\}"
+* Commandă: "****Prosper**\=\>\{**town**\}\=\>\{**gold**\}"
 
 Indică creșterea economică în orașul dat, mărind trezoreria acestuia cu cantitatea specificată de aur.
 
 Cantitatea de aur în acest caz ar putea fi un **număr negativ**, așa că aveți grijă.
 
-Dacă o **cantitate negativă de aur** este dată în comanda print:
+Dacă o **cantitate negativă de aur** este dată în comandă, tipăriți:
 
 "**Gold added cannot be a negative number!**"
 
-După ce ați primit comanda Sfârșit, dacă există așezări existente pe lista dvs. de ținte, trebuie să le tipăriți pe toate, sortate după aurul aflat în posesia lor în ordinea descrescătoare, apoi după numele lor în ordinea crescătoare, în următorul format:
+După ce ați primit comanda End, dacă există așezări existente pe lista dvs. de ținte, trebuie să le tipăriți pe toate, sortate după aurul aflat în posesia lor, în ordine descrescătoare, apoi după numele lor în ordine crescătoare, în următorul format:
 
 "\{**gold added**\} **gold added to the city treasury.** \{**town**\} **now has** \{**total gold**\} **gold.**"
 
 ## Ieșire
 
-După ce ați primit comanda "**End**" dacă există așezări existente pe lista dvs. de ținte, trebuie să le tipăriți pe toate, sortate după aurul lor în ordinea descrescătoare, apoi după numele lor în ordinea crescătoare, în următorul format:
+După ce ați primit comanda "**End**", dacă există așezări existente pe lista dvs. de ținte, trebuie să le tipăriți pe toate, sortate după aurul lor în ordinea descrescătoare, apoi după numele lor în ordine crescătoare, în următorul format:
 
 "**Ahoy, Captain! There are** \{**count**\} **wealthy settlements to go to:**
 \{**town1**\} \-\> **Population:** \{**people**\} **citizens, Gold:** \{**gold**\} **kg**
@@ -78,9 +78,9 @@ Dacă nu mai sunt așezări de jefuit, tipăriți:
 
 ## Constrângeri
 
-* Populația inițială și aurul așezărilor vor fi valabile, întregi pe 32 de biți, care nu vor fi niciodată negative sau vor depăși limitele respective
+* Populația inițială și aurul așezărilor vor fi valide, numere întregi de 32 de biți, care nu vor fi niciodată negative și nu vor depăși limitele respective
 
-* Numele orașelor date în cadrul evenimentelor vor fi întotdeauna orașe valabile care ar trebui să fie pe listă.
+* Numele orașelor date în cadrul evenimentelor vor fi întotdeauna orașe valide care trebuie să fie pe listă.
 
 ## Exemplul Unu
 
