@@ -8,7 +8,7 @@
 
 This is the first **SOLID** principle - **Single Responsibility**.
 
-As stated by it, one class should serve **only one purpose**.
+As stated by it, each class should serve **only one purpose**.
 
 This does not imply that each class should have only one method, but they should all **relate directly** to the **responsibility of the class**.
 
@@ -38,15 +38,15 @@ public class HeroSettings {
   }
 }
 ```
-From the name of the class, we can find out what exactly it is responsible for, in this case - the settings of the hero. 
+The name of the class states what it is responsible for, in this case - the settings of the hero. 
 
 Therefore, in this class, we should not look for something that is not related to the settings of the character.
 
-But in the code above, we have two responsibilities: **manipulating** and **printing**.
+But this one has two responsibilities: **manipulating** and **printing**.
 
 Having a method that prints out the hero features in this class **violates the single responsibility principle**. 
 
-For this purpose, we should create another class, **which will only handle printing the hero features**:
+For this purpose, we should create another class, **which will only handle printing the features**:
 
 ```java
 public class PrintHeroFeatures {
@@ -65,12 +65,12 @@ The **single responsibility principle** does not mean that we should only have a
 
 It also does not require creating a separate class for every small functionality.
 
-The key is that the code that is inside the class must be **directly related to the main purpose** of the class and the job it does. 
+The key is that the code that is inside the class must be **directly related to the main purpose** of the class. 
 
-It is a good practice to **write methods** that are **accurate**, **concise**, and as **straight-forward** as possible, although in some situations we cannot keep to this principle.
+It is a good practice to **create methods** that are **accurate**, **concise**, and as **straight-forward** as possible, although in some situations we cannot keep to this principle.
 
 Thanks to the **single responsibility principle**, we can easily detect and eliminate bugs in the software.​
 
-When all the methods in one class are aimed to serve one goal only then we say that this class has **strong cohesion**.
+When all methods in a class are aimed to serve a single goal we say that this class has **strong cohesion**.
 
 [/slide]
