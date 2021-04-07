@@ -8,13 +8,13 @@
 
 "**Depend on abstractions, not on concretions.**"
 
-The **Dependency Inversion principle** defines the concept that **high-level** modules should not depend on **low-level** modules. 
+The **Dependency Inversion principle** defines the concept that **high-level** modules should not depend on **low-level** ones. 
 
-They both **should depend on abstractions**. 
+They **should be based on abstractions**. 
 
 It is better to **use interfaces** in the transmission of information **than specific classes**. 
 
-In this way, we will **rely more on abstraction than on concretion**.
+This way, we will **rely more on abstraction than on concretion**.
 
 Abstractions should **not rely on any implementation details**.​
 
@@ -34,7 +34,7 @@ In the following example, we have two classes: **Button** and **Lamp**.
 
 The **Button** class receives a `poll()` message that determines whether a user has pressed it or not. 
  
-And a **Lamp** class, which receives a **turnOn()** message and a **turnOff()** message:
+And a **Lamp** class, which receives a **turnOn()** command and a **turnOff()** command:
 
 ```java
 public class Button() {
@@ -56,7 +56,7 @@ public class Button() {
 ```
 The **Button** class **depends directly on the Lamp** class.
 
-If the Lamp class changes, then Button will have to be changed too.
+If the Lamp class changes, then Button will need to be changed too.
 
 Furthermore, the **Button class is not reusable**: you cannot use it to switch on a coffee machine, for example.
 
@@ -70,7 +70,7 @@ The above code is a violation of the **Dependency Inversion principle**.
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-31-dependency-inversion-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-To solve the design issue behind the previous code, we need to create a **middle-layer** where we can define an **abstract interface associated with `Button`** and implement it by any classes like `Lamp`:
+To solve the design issue behind the previous code, we need to create a **middle-layer** where we can define an **abstract interface associated with the `Button` functionality** and implement it by any classes like `Lamp`:
 
 ```java
 public interface SwitchableDevice {
@@ -122,7 +122,7 @@ public class Lamp implements SwitchableDevice {
 
 The `Button` class can accept **any implementation of the SwitchableDevice interface**.
 
-In our case, this a `Lamp`, but it could be **any other device** which implements the `SwitchableDevice` interface:
+In our case, this is a `Lamp`, but it could be **any other device** which implements the `SwitchableDevice` interface:
 ```java
 public class Main {
     public static void main(String[] args) {
@@ -132,7 +132,7 @@ public class Main {
 }
 ```
 
-The design above allows a `Button` to control any device that is willing to implement the **SwitchableDevice** interface. 
+This design allows a `Button` to control any device that can implement the **SwitchableDevice** interface. 
 
 It also means that `Button` will be **able to control objects** that have **not been yet initialized**, and this makes the application **more flexible**.
 
@@ -144,7 +144,7 @@ It also means that `Button` will be **able to control objects** that have **not 
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-32-dependency-examples-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Understanding what **Dependency Inversion** is may take time, but let us have a look at few dependency examples and try to better understand what we are trying to achieve with this principle. 
+Understanding what **Dependency Inversion** is may take time, but let us have a look at few examples and try to better understand what we are trying to achieve when applying this principle. 
 
 **A dependency is any external component/system:**
 
@@ -173,13 +173,13 @@ We want to decouple our code from specific classes, for it to be flexible and at
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-33-35-37-how-to-dip-1-2-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We can achieve the dependency inversion principle by applying the **dependency injection** design pattern. 
+To follow the dependency inversion principle we can apply the **dependency injection** design pattern. 
 
-Dependency injection allows us to use  **Inversion of Control Container (IOC)**.
+Dependency injection allows us to use an **Inversion of Control Container (IOC)**.
 
-It is a tool in which we register all dependencies as \{**Interface**\} = \{**Class to generate**\}, then every time we need a dependency it passes it to us without us specifying it. 
+This is a tool in which we register all dependencies such as \{**Interface**\} = \{**Class to generate**\}, then every time we need a dependency it calls it without the need to specify it. 
 
-There are 3 types of Dependency Injection and every developer needs to know them.
+There are 3 types of Dependency Injection.
 
 [/slide]
 
@@ -192,13 +192,13 @@ There are 3 types of Dependency Injection and every developer needs to know them
 Through this type of DI, the **dependencies are passed through the constructor** of the given class.
 
 **Pros**
-- Classes self-documenting requirements
+- Such classes possess self-documenting requirements
 - Works well without a container
-- Always valid state
+- Guarantees a valid state
 
 **Cons**
-- Many parameters
-- Some methods may not need everything
+- Holds many parameters
+- Some methods may not need the entire code base
 
 ## Example
 
@@ -225,7 +225,7 @@ public class Copy {​
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-36-setter-injection-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-With **Setter Injection** as the name suggests the dependencies are passed to the setters.
+**Setter Injection** - as the name suggests the dependencies are passed to the setters.
 
 **Pros**
 - Can be changed anytime
@@ -257,11 +257,11 @@ public class Copy {​
 This type of injection suggests injecting the dependencies through method parameters.
 
 **Pros**
-- No change in the rest of the class
+- Does not require changes in the rest of the class
 - Very flexible
 
 **Cons**
-- Many parameters
+- Holds many parameters
 - Breaks the method signature
 
 ## Example
