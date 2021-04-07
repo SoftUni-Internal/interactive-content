@@ -1,114 +1,36 @@
 # Homework
 
 [slide hideTitle]
-# Problem: Gramophone
-[code-task title="Gramophone" taskId="js-fundamentals-1-basic-syntax-Gramophone" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+# Problem with Solution: Print Hello JavaScript
+
+[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/problem1-print-hello-javascript-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[code-task title="Print Hello Javascript" taskId="pb-js-introduction-Print-Hello-Javascript" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
+
 ```
-function gramophone(bandName, album, songName){
-  // Write your code here
+function hello() {
+   // Write your code here
 }
 ```
+
 [/code-editor]
-[code-adapter]
-```
-function adapter(input, code) {
-    let inputParams = /\((.+)\)$/.exec(input)[1];
-    inputParams = eval(`[${inputParams}]`);
-    return code(...inputParams);
-}
-```
-[/code-adapter]
 [task-description]
-# Description
 
-Create a program that **receives three parameters** (strings) as an input:
 
-- The First string is the **name of the band**
-
-- The Second string is the **name of the album**
-
-- The third is the **song name from the album**
-
-You have to find out how many **times** the plate will rotate the given song from the album.
-
-**The plate makes a full rotation every 2.5 seconds.**
-
-The song **duration in seconds** is calculate by the given formula: 
-
-(albumName.length \* bandName.length) \* song name.length \/ 2
-
-As output you should print the following message:
-
-"**The plate was rotated** \{**rotations**\} **times.**"
-
-Rotations should be **rounded up.**
-
-## Example
-  | **Input** | **Output** |
-| --- | --- |
-| gramophone('Black Sabbath', 'Paranoid', 'War Pigs') | The plate was rotated 167 times. |
+Create a program that prints "**Hello JavaScript**" to the console.
 
 [/task-description]
+[code-io /]
 [tests]
 [test open]
 [input]
-gramophone('Black Sabbath', 'Paranoid', 'War Pigs')
 [/input]
 [output]
-The plate was rotated 167 times.
-[/output]
-[/test]
-[test]
-[input]
-gramophone('Bhjkhbath', 'Pudfgdgioid', 'Wois')
-[/input]
-[output]
-The plate was rotated 80 times.
-[/output]
-[/test]
-[test]
-[input]
-gramophone('gjhg', 'jklcrj', 'gyuguyguy')
-[/input]
-[output]
-The plate was rotated 44 times.
-[/output]
-[/test]
-[test]
-[input]
-gramophone('bhjbhjbj', 'cghcgh', 'uiou')
-[/input]
-[output]
-The plate was rotated 39 times.
-[/output]
-[/test]
-[test]
-[input]
-gramophone('Bvyuvh', 'ji', 'Wauios')
-[/input]
-[output]
-The plate was rotated 15 times.
-[/output]
-[/test]
-[test]
-[input]
-gramophone('gyuuath', 'Pgyd', 'Wabygs')
-[/input]
-[output]
-The plate was rotated 34 times.
-[/output]
-[/test]
-[test]
-[input]
-gramophone('tyuath', 'Pargyu', 'tuus')
-[/input]
-[output]
-The plate was rotated 29 times.
+Hello JavaScript
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
 
 [/slide]
