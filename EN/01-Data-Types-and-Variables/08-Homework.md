@@ -1194,7 +1194,6 @@ reversChars('A', 'B','C')
 [/input]
 [output]
 C B A
-[/output]
 [/test]
 [test open]
 [input]
