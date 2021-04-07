@@ -43,6 +43,14 @@ The formula for calculating the area of a square is - a * a.
 [tests]
 [test open]
 [input]
+calculateArea(5)
+[/input]
+[output]
+25
+[/output]
+[/test]
+[test open]
+[input]
 calculateArea(12)
 [/input]
 [output]
@@ -55,14 +63,6 @@ calculateArea(2)
 [/input]
 [output]
 4
-[/output]
-[/test]
-[test open]
-[input]
-calculateArea(5)
-[/input]
-[output]
-25
 [/output]
 [/test]
 [test]
