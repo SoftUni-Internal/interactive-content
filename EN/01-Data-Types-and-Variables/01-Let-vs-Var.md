@@ -8,12 +8,12 @@
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-3-4-let-vs-var-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
+Pic 1:
 
-[image assetsSrc="Angular-Modules-And-Routing-Workshop(6).png" /]
+[image assetsSrc="js-fundamentals-1-adv-functions-1.png" /]
 
-[image assetsSrc="Angular-Modules-And-Routing-Workshop(7).png" /]
-
-[image assetsSrc="Angular-Modules-And-Routing-Workshop(8).png" /]
+Pick 2:
+[image assetsSrc="array-example.png" /]
 
 
 Different data types have different **sizes** in the computer's memory.
