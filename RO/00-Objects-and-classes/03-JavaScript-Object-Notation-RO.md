@@ -7,7 +7,7 @@
 
 JSON înseamnă **JavaScript Object Notation** și este un **format de informații bazat pe text** care urmează sintaxa obiectului JavaScript.
 
-JSON este **independent de limbăj** și poate fi utilizat fără a depinde de JavaScript, chiar dacă este un **asemănător al sintaxei literale a obiectului JavaScript.**
+JSON este **independent de limbaj** și poate fi utilizat fără a depinde de JavaScript, chiar dacă este **asemănător sintaxei literale a obiectului JavaScript.**
 
 JSON este o metodă de stocare a datelor și informațiilor într-o abordare organizată și ușor de accesat. 
 
@@ -20,11 +20,11 @@ JSON este o metodă de stocare a datelor și informațiilor într-o abordare org
 
 Cu JSON putem **schimba date între un browser și un server.**
 
-JSON permite o mai bună reprezentare a **obiectelor ierarhice**într-un flux decât XML. 
+JSON permite o mai bună reprezentare ierarhică a **obiectelor**, în mod similar cu XML. 
 
 JavaScript a încorporat funcții pentru a analiza JSON, astfel încât este ușor de utilizat.
 
-JSON folosește **text citibil de către om pentru a transmite date.**
+JSON folosește **text care poate fi citit de către om pentru a transmite date.**
 [/slide]
 
 [slide hideTitle]
@@ -48,11 +48,11 @@ JSON folosește **text citibil de către om pentru a transmite date.**
 
 * Parantezele `{}` definesc un JSON
 
-* Cheile sunt între ghilimele duble: "name", "age", "grades", "Math", "Chemistry"
+* Cheile sunt încadrate de ghilimele duble: "name", "age", "grades", "Math", "Chemistry"
 
-* Valori separate prin: "George", 25, \[2.50, 3.50\], \[4.50\]
+* Valorile sunt separate de chei prin două puncte: "George", 25, \[2.50, 3.50\], \[4.50\]
 
-* Este posibil să aveți obiecte imbricate
+* Este posibil să aveți obiecte imbricate - precum cele imbricate în cadrul "grades"
 
 [/slide]
 
@@ -61,7 +61,7 @@ JSON folosește **text citibil de către om pentru a transmite date.**
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/RO/01.JS-Fundamentals-Object-and-Classes-18-JSON-Methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Avem două metode JSON:
+Avem două metode JSON încorporate:
 
 * `JSON.parse()`: Această metodă ia un șir JSON și îl transformă într-un obiect JavaScript.
 
@@ -116,7 +116,7 @@ function adapter(input, code) {
 # Descriere
 Scrieți o funcție care primește un șir în format JSON și îl convertește în obiect.
 
-Iterați toate cheile și imprimați-le cu valorile lor în format:
+Iterați prin toate cheile și imprimați-le cu valorile lor în format:
 
 \{**key**\}**:** \{**value**\}
 
@@ -218,13 +218,13 @@ function adapter(input, code) {
 [task-description]
 
 # Descriere
-Scrieți o funcție care primește trei șiruri și le transformă înrt-un **object**.
+Scrieți o funcție care primește trei șiruri și le transformă într-un **obiect**.
 
 Șirurile sunt **name**, **lastName** și **hairColor**.
 
-Convertiți obiectul într-un șir JSON și îl imprimați.
+Convertiți obiectul într-un șir JSON și imprimați-l.
 
-Intrarea constă în  3 șiruri, în ordinea descrisă mai sus.
+Intrarea constă în 3 șiruri, în ordinea descrisă mai sus.
 
 ## Exemple
 |**Intrare**|**Ieșire** |
