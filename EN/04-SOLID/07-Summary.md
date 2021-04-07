@@ -13,13 +13,13 @@
 
     - **maintainable**
 
-- **Single Responsibility** - one unit must do only one job
+- **Single Responsibility** - each code unit should be responsible for a single piece of functionality
  
-- **Open-Closed** - code should be open to extensions but closed to changes
+- **Open-Closed** - our code should be open to extensions but closed to changes
 
-- **Liskov Substitution** - functions that reference base classes must be able to use objects of derived (child) classes without knowing it
+- **Liskov Substitution** - functions that reference base classes must be able to fully use objects of derived (child) classes
 
-- **Interface Segregation** - a client should not be forced to implement an interface that is not used
+- **Interface Segregation** - a client should not be forced to implement an interface that is does not require
 
 - **Dependency Inversion** - depend on abstractions, not on concretions
 
