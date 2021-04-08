@@ -119,7 +119,7 @@ public class Cat extends Animal{
 
 - S.O.L.I.D Principles
 
-- How to preopery structure a Project
+- How to properly structure a Project
 
 
 
