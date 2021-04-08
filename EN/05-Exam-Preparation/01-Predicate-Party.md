@@ -20,21 +20,23 @@ public class Main {
 
 George's parents are on a vacation for the holidays and he is planning an epic party at home. 
 
-Unfortunately, his organizational skills are next to non-existent so you are given the task to help him with the reservations.
+Unfortunately, his organizational skills are not so great, so you are given the task to help him with the reservations.
 
-On the first line, you get a **list** with all the **people** that are coming. 
+On the first line, you receive a **list** that will contain all the **people** that are coming. 
 
-On the next lines, until you get the "**Party!**" command, you may be asked to **double** or **remove** all of the people that apply to **given criteria**. 
+On the next lines, until you receive the "**Party!**" command, you may be asked to "**double**"(to add another person with the same name) or to **remove** all of the people that fulfill the **given criteria**. 
 
-There are three different options: 
+There are three different commands: 
 
-- Everyone that has a name **starting** with a given string
-- Everyone that has a name **ending** with a given string
-- Everyone that has a name with a given **length**
+- "Double StartsWith \{name\}" - everyone that has a name **starting** with the given string
+- "Double EndsWith \{name\}" - everyone that has a name **ending** with a given string
+- "Double Length \{integer number\}" - everyone that has a name with the given **length**
 
-When you print the guests that are coming to the party, you have to print them in **ascending** order.
+You have to print the guests that are coming to the party in **ascending** order.
 
-If nobody is going, print "**Nobody is going to the party!**".
+Finally, print all the guests who are going to the party separated by ", ", and then add the ending "are going to the party!". 
+
+If nobody is going to the party, print "**Nobody is going to the party!**".
 
 See the examples below.
 
