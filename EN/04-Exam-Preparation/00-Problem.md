@@ -22,7 +22,7 @@ public class Main {
 [task-description]
 # Description
 
-There are **3 employees working** on the reception ат SoftUni full time.
+There are **3 employees working** on the reception at SoftUni full time.
 
 Each of them can process a **different number of customer help requests and questions per hour**.
 
