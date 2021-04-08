@@ -40,13 +40,13 @@ On the next line, you will receive **the total amount of people** as a single in
 
 ## Input / Constraints
 
-- On the first 3 lines -  each employee's **efficiency** - **integers**
+- On the **first 3** lines -  each employee's **efficiency** - **integers**
 
-- On the 4th line - the amount of people - an **integer**
+- On the **4th** line - the amount of people - an **integer**
 
 ## Output
 
-- Print a **single line**: 
+- Print, on a **single line**: 
 
 "**Time needed:** \{**time**\}**h.**"
 
@@ -58,11 +58,17 @@ On the next line, you will receive **the total amount of people** as a single in
 | 4 | |
 | 20 | |
 
-## Comment
-
-- All of the employees can answer the questions of 15 people per hour
-- After the first hour, the questions of 5 people remain unanswered
-- Everyone's questions will be answered within the second hour
+[hints]
+[hint]
+All of the employees can answer the questions of 15 people per hour.
+[/hint] 
+[hint]
+After the first hour, the questions of 5 people remain unanswered.
+[/hint] 
+[hint]
+Everyone's questions will be answered within the second hour.
+[/hint] 
+[/hints] 
 
 ## Example Two
 | **Input** | **Output** |
@@ -72,14 +78,23 @@ On the next line, you will receive **the total amount of people** as a single in
 | 3 | |
 |45 | |
 
-## Comment
+[hints]
+[hint]
+All front desk workers combined can answer the questions of 6 people per hour.
+[/hint] 
+[hint]
+In the first 3 hours, they have answered the questions of 18 people (6 \* 3).
+Then they take an hour break.
+[/hint] 
+[hint]
+In the next 3 hours, they have serviced 36 people (18 + 6 \* 3).
+After their one-hour break, only 9 unanswered questions remain.
+[/hint] 
+[hint]
+Everyone's questions will be answered on the 10th hour.
+[/hint] 
+[/hints] 
 
-- All front desk workers combined can answer the questions of 6 people per hour
-- In the first 3 hours, they have answered the questions of 18 people (6 \* 3)
-- Then they take an hour break
-- In the next 3 hours, they have serviced 36 people (18 + 6 \* 3)
-- After their one-hour break, only 9 unanswered questions remain
-- Everyone's questions will be answered on the 10th hour
 
 ## Example Three
 | **Input** | **Output** |
