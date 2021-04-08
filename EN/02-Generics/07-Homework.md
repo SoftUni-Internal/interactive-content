@@ -5,7 +5,7 @@
 [code-task title="Generic Box" taskId="oop-basics-java-generics-Generic-Box" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-## Description
+# Description
 Create a **generic class** "**Box**" that can store any type.
 
 **Override** the `toString()` method to print the type and the value of the stored data in the following format:
@@ -14,17 +14,17 @@ Create a **generic class** "**Box**" that can store any type.
 
 Use the class that you have created and test it with the class "**java.lang.String**". 
 
-# Input
+## Input
 
 On the first line, you will receive an integer **n** - the number of Strings that you have to read from the console. 
 
 On the next **n** lines, you will receive the actual strings. 
 
-# Output
+## Output
 
 For each string, create a "**Box**" class and call its `toString()` method to print the data to the console.
 
-## Example
+# Example
 | **Input** | **Output** |
 | --- | --- |
 | 2 | java.lang.String: life in a box |
