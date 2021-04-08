@@ -1627,33 +1627,17 @@ We receive the initial schedule.
 
 Next, we add the **Databases** lesson, because it does not exist:
 
-```java
-if (!schedule.contains(lessonTitle)) {
-    schedule.add(lessonTitle);
-}
-```
 [/hint] 
 [hint]
 We insert the **Arrays** lesson at the given index because it is not present in the schedule:
 
-```java
-if (!schedule.contains(lessonTitle)) {
-    if (index >= 0 && index < schedule.size()) {
-        schedule.add(index, lessonTitle);
-    }
-}
-```
 [/hint] 
 [hint]
 After receiving the last command and removing the Lists lesson, we print the whole schedule.
 
 `schedule.remove(lessonTitle);`
 
-```java
-for (int i = 1; i <= schedule.size(); i++) {
-    System.out.println(i + "." + schedule.get(i - 1));
-}
-```
+
 [/hint] 
 [/hints] 
 
@@ -1671,21 +1655,13 @@ for (int i = 1; i <= schedule.size(); i++) {
 [hint]
 We swap the given lessons because both exist:
 
-```java
-swapping(schedule, lessonTitle, swapLessonWith);
-```
 
 You can implement a custom `swapping` method.
 [/hint] 
 [hint]
 After receiving the **Exercise** command, we see that such a lesson does not exist, so we add the lesson to the end, followed by the exercise:
 
-```java
-if (!schedule.contains(lessonTitle + "-Exercise")) {
-    schedule.add(lessonTitle);
-    schedule.add(lessonTitle + "-Exercise");
-}
-```
+
 [/hint] 
 [hint]
 We swap the Lists and the **Databases** lessons, the **Databases-Exercise** is also moved after the Databases lesson:

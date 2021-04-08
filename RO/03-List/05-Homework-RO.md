@@ -1612,33 +1612,19 @@ Primim planificarea inițială.
 
 Apoi, adăugăm lecția **Databases**, deoarece acesta nu există:
 
-```java
-if (!schedule.contains(lessonTitle)) {
-    schedule.add(lessonTitle);
-}
-```
+
 [/hint] 
 [hint]
 Inserăm la indexul dat lecția **Arrays**, fiindcă nu este prezent în program:
 
-```java
-if (!schedule.contains(lessonTitle)) {
-    if (index >= 0 && index < schedule.size()) {
-        schedule.add(index, lessonTitle);
-    }
-}
-```
+
 [/hint] 
 [hint]
 După ce am primit ultima comanda și am eliminat lecția **Lists**, imprimăm întreaga planificare.
 
 `schedule.remove(lessonTitle);`
 
-```java
-for (int i = 1; i <= schedule.size(); i++) {
-    System.out.println(i + "." + schedule.get(i - 1));
-}
-```
+
 [/hint] 
 [/hints] 
 
@@ -1656,21 +1642,13 @@ for (int i = 1; i <= schedule.size(); i++) {
 [hint]
 Schimbăm lecțiile date, pentru că ambele există:
 
-```java
-swapping(schedule, lessonTitle, swapLessonWith);
-```
 
 Puteți implementa o metodă `swapping` personalizată.
 [/hint] 
 [hint]
 După primirea comenzii **Exercise**, vedem că o astfel de lecție nu există, așa că adăugăm lecția la final, urmată de exercițiu:
 
-```java
-if (!schedule.contains(lessonTitle + "-Exercise")) {
-    schedule.add(lessonTitle);
-    schedule.add(lessonTitle + "-Exercise");
-}
-```
+
 [/hint] 
 [hint]
 Schimbăm lecțiile **Lists** și **Databases**
