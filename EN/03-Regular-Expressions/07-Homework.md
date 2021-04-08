@@ -33,16 +33,13 @@ You should store the **names of the furniture** and the **total price**.
 
 In the end, you should print out the **names of all bought furniture**, each on a new line in the following format:
 
-"Bought furniture:
+Bought furniture:
+\{furniture name 1\}
+\{furniture name 2\}
+…
 
-\{1st name\}
-
-\{2nd name\}
-
-…"
-
-**On the last line** print out the following message: 
-- "Total money spend: \{spend money\}" 
+**On the last line**, print out the following message: 
+- "Total money spent: \{amount\}" 
 
 Note that all numbers should be **formatted** to the second digit after the decimal point.
 
@@ -53,7 +50,7 @@ Note that all numbers should be **formatted** to the second digit after the deci
 | >>Sofa<<312.23!3 | Bought furniture: |
 | >>TV<<300!5 | Sofa |
 | >Invalid<<!5 | TV |
-| Purchase | Total money spend: 2436.69 |
+| Purchase | Total money spent: 2436.69 |
 
 ### Comments
 - Only the **Sofa** and the **TV** are valid items 
@@ -74,7 +71,7 @@ Purchase
 Bought furniture:
 Sofa
 TV
-Total money spend: 2436.69
+Total money spent: 2436.69
 [/output]
 [/test]
 [test]
@@ -91,7 +88,7 @@ Bought furniture:
 Televizor
 Monitor
 Sink
-Total money spend: 4636.69
+Total money spent: 4636.69
 [/output]
 [/test]
 [test]
@@ -103,7 +100,7 @@ Purchase
 [/input]
 [output]
 Bought furniture:
-Total money spend: 0.00
+Total money spent: 0.00
 [/output]
 [/test]
 [test]
@@ -119,7 +116,7 @@ Bought furniture:
 Sofa
 Couch
 Table
-Total money spend: 3905.20
+Total money spent: 3905.20
 [/output]
 [/test]
 [test]
@@ -138,7 +135,7 @@ Sofa
 Sofa
 Sofa
 Sofa
-Total money spend: 4683.45
+Total money spent: 4683.45
 [/output]
 [/test]
 [test]
@@ -158,7 +155,7 @@ Laptop
 TV
 TV
 TV
-Total money spend: 8593.09
+Total money spent: 8593.09
 [/output]
 [/test]
 [/tests]
@@ -184,7 +181,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that processes information about a race.
+Create a program that processes information about a running race.
 
 On the first line, you will be given a **list of participants**, separated by a comma and a single white space (", ").
 
@@ -206,11 +203,9 @@ If you receive the **same person more than once**, just add the new distance to 
 
 In the end, print out the **top 3** racers ordered by the distance they have run in **descending order** in the following format:
 
-"1st place: \{first racer\}
-
+1st place: \{first racer\}
 2nd place: \{second racer\}
-
-3rd place: \{third racer\}"
+3rd place: \{third racer\}
 
 ### Example
 | **Input** | **Output** |
@@ -226,10 +221,10 @@ In the end, print out the **top 3** racers ordered by the distance they have run
 
 ### Comments
 - On the third line, we have **Ray**
-- He is not in the list of participants, so we ignore him
+- He is not in the list of participants so we ignore him
 - The other people are in the list of participants
 - **George** has run a total of **55** km, **Peter** has run a total of **25**, and **Tom** has run a total of **19**
-- We print the winners (the people at the top 3 places)
+- We print the winners (the people in the top 3)
 
 [/task-description]
 [code-io /]
@@ -372,13 +367,13 @@ A **valid**:
 - The **Count** should be an integer, surrounded by '\|'
 - The **Price** is a real number, followed by '$'
 
-The parts of a **valid order should appear in the order given**: **customer, product, count and a price**.
+The parts of a **valid order should appear in the order given**: **customer, product, count, and a price**.
 A line of input is considered to be valid if its parts appear in the following order:  a **customer**, a **product**, a **count**, and a **price**. 
 
 Between each **part there can be other symbols**, **except** ('\|', '$', '%' and '.')
 There could be other symbols between the parts of the input lines, **except**: ('\|', '$', '%' and '.')
 
-For each valid, line print out the following message: "\{customerName\}: \{product\} - \{totalPrice\}"
+For each valid line, print out the following message: "\{customerName\}: \{product\} - \{totalPrice\}"
 
 When you receive the **end of shift** command, print out the total amount of money earned that day, rounded to the second digit after the decimal point in the following format: 
 - "Total income: \{income\}".
@@ -392,8 +387,8 @@ When you receive the **end of shift** command, print out the total amount of mon
 | end of shift | Total income: 24.30 |
 
 ### Comments
-- Each line is valid, so we print the expected message for each input line, calculating the price of the order
-- It the end, we print out the total income for the day
+- Each line is valid so we print the expected message for each input line, calculating the price of the order
+- In the end, we print out the total income for the day
 
 ### Example
 | **Input** | **Output** |
@@ -405,10 +400,10 @@ When you receive the **end of shift** command, print out the total amount of mon
 | end of shift | |
 
 ### Comments
-- On the first line, the name of the customer is not valid, so we skip that line
-- On the second line, the count of the products to be sold is missing, so it is not valid
+- On the first line, the name of the customer is not valid so we skip that line
+- On the second line, the count of the products to be sold is missing so it is not valid
 - On the third line, the price is not valid
-- The forth line is valid, so we calculate the total income fot the day
+- The fourth line is valid so we calculate the total income for the day
 
 [/task-description]
 [code-io /]
@@ -587,8 +582,8 @@ Decrypt the messages, following these rules:
 - Each message should contain a **planet name**, **population**, **attack status**** ('A' stands for attacked; 'D' stands for destroyed), and a **soldier count**.
 - The **planet name** is marked by '@' followed only by letters from the English alphabet
 - The **planet population** starts after a ':' sign and will be an **integer**
-- The **planet might be "A"(attacked) or "D"(destroyed)**, and this value will be surrounded by "!" (exclamation marks)
-- The **soldier count** is placed afer this sign: "->", and will be an **integer**
+- The **planet might be "A" (attacked) or "D" (destroyed)**, and this value will be surrounded by "!" (exclamation marks)
+- The **soldier count** is placed after this sign: "->", and will be an **integer**
 
 The order of a **valid** message is: 
 **planet name -> planet population -> attack type -> soldier count**
@@ -618,14 +613,14 @@ The planets should be ordered by name **alphabetically**.
 
 ### Comments
 We receive two messages, to decrypt them we calculate the key:
-- The first message has a decryption key of: 3 (as it contains **one** occurance of the letter "S", **one** occurance of the letter "T" and **one** occurance of the letter "A")
+- The first message has a decryption key of: 3 (as it contains **one** occurrence of the letter "S", **one** occurrence of the letter "T" and **one** occurrence of the letter "A")
     - So, we subtract 3 from the ASCII value of each character.
     - The deciphered message is: PQ@Alderaa1:30000!A!->20000
 - The second message's key is: 5
     - The deciphered message is: @Cantonica:3000!D!->4000NM
     - 
 - Both messages are valid and they contain a planet, population, whether they are attacked or destroyed, and their soldier count
-- After decrypting all messages, we print out the contained information
+- After decrypting all messages, we print out the information contained in them
 
 ### Example
 | **Input** | **Output** |
@@ -835,13 +830,13 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-А мighty battle is coming. 
+А mighty battle is coming. 
 
 In the stormy Nether Realms, demons are fighting against each other for supremacy in a duel. In the end, only one will survive. 
 
 However, your job is not so exciting. 
 
-You are assigned to **sign in all the participants** in the Nether Realm's mighty battle's demon book, which of course is **sorted alphabetically**. 
+You are assigned to **record all the participants** in the Nether Realm's mighty battle's demon book, which of course is **sorted alphabetically**. 
 
 Based on the demon's name, you could find out the **demon's health** and the **demon's damage**. 
 
@@ -856,6 +851,7 @@ However, there are **some symbols** ('\*' and '/') that **can further alter the 
 So, **multiplication** and **division** should be applied after the sum of all numbers is calculated. You should perform them in the order they appear in the name. 
 
 The demons should be sorted in **alphabetical order**. 
+
 For each demon, you should print out their **name** along with their **health** and their **damage**. 
 
 ### Input
@@ -871,7 +867,7 @@ For each demon, you should print out their **name** along with their **health** 
 - A demon's name will contain at least one character
 - A demon's name cannot contain blank spaces ' ' or commas ','
 - A floating-point number will always have digits before and after its decimal separator
-- A number in a demon's name is considered to be everything that is a valid integer or a valid floating point number (with a dot '.' used as separator) 
+- A number in a demon's name is considered to be everything that is a valid integer or a valid floating-point number (with a dot '.' used as a separator) 
     - for example, all these are valid numbers: '4', '+4', '-4', '3.5', '+3.5', '-3.5' 
 
 ### Example
@@ -1043,10 +1039,10 @@ You will receive only one line of input.
 
 Emails are considered to be in the following **format**: \{user\}\@\{host\} 
 
-- \{user\} is a sequence of **letters and digits**, where '.', '-' and '_' can appear somewhere in the text, except in the beginning
+- \{user\} is a sequence of **letters and digits**, where '.', '-' and '_' can appear somewhere in the text, except at the beginning
     - examples of **valid users**: "stephan", "mike03", "s.johnson", "st_steward", "12345"
     - examples of **invalid users**: ''--123", ".....", "_steve", ".info"
-- \{host\} is a **sequence of at least two words, separated by dots** (' . '). Each word is **sequence of letters and can have hyphens** ('-') between the letters
+- \{host\} is a **sequence of at least two words, separated by dots** (' . '). Each word is a **sequence of letters and can have hyphens** ('-') between the letters
     - examples of **valid hosts**: "softuni.org", "software-university.com", "intoprogramming.info", "mail.softuni.org"
     - examples of **invalid hosts**: "helloworld", ".unknown.soft.", "invalid-host-", "invalid-"
 - Examples of **valid emails**: info\@softuni.org, kiki\@hotmail.co.uk, no-reply\@github.com, s.peterson\@mail.uu.net, info-bg\@software-university.software.academy
