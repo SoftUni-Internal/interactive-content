@@ -15,13 +15,13 @@ Animal cat = new Animal(); // Compile time error
 Animal cat = new Cat(); // Polymorphism
 ```
 
-An abstract class **may** or **may not** have **abstract methods** inside.
+An abstract class **may** or **may not** have **abstract methods** inside itself.
 
-If we need to use the abstract class we must inherit it.
+If we need to use an abstract class we must inherit it.
 
-An **abstract class** has an "**IS-A**" type relationship with our subclasses. 
+An **abstract class** shares an "**IS-A**" type relationship with its subclasses. 
 
-So for instance, we could have an **abstract** class `Animal` which has stuff any animal has (like a **eat** or **walk** function), and then a class `Cat`. 
+So we could have an **abstract** class called `Animal` which holds functions as any animal would possess (like a **eat** or **sleep** function), and then a class called `Cat` which inherits it. 
 
 **Every cat is an animal, but not all animals are cats.**
 
@@ -39,19 +39,19 @@ The main goal of an abstract class is to provide a shared implementation of comm
 
 [task-description]
 # Description
-Create a **class hierarchy**, starting with an abstract class **Shape**:
+Create a **class structure**, starting with an abstract class **Shape**:
 
 - **Fields**:
     - perimeter : Double
     - area : Double
 
-- **Encapsulation for these fields**
+- **Encapsulate these fields**
 
 - **Abstract methods**:
     - `calculatePerimeter()`
     - `calculateArea()`
 
-**Extend** the **Shape** class with **two children**:
+**Extend** the **Shape** class with **two children classes**:
 
 - **Rectangle**
 - **Circle**
@@ -65,11 +65,11 @@ Each of them needs to have:
 - **Fields \- for Circle**:
     - radius : Double
 
-- **Encapsulation for these fields**
+- **Encapsulate these fields**
 
-- **Public constructor**
+- **A Public constructor**
 
-- **Concrete methods for calculations (perimeter and area)**
+- **Concrete methods to calculate a figure's perimeter and area**
 
 [/task-description]
 [tests]
@@ -273,19 +273,19 @@ Test Passed!
 
 [task-description]
 # Description
-Create a class **Animal**, which holds two fields:
+Create a class called **Animal**, which holds two fields:
 - **name: String**
 - **favouriteFood: String**
 
-Animal has one abstract method **explainSelf(): String**.
+The Animal class should have one abstract method **explainSelf(): String**.
 
-You should add two new classes - **Cat** and **Dog**. 
+create two additional classes - **Cat** and **Dog**. 
 
-**Override** the **explainSelf()** method by adding concrete animal sound on a new line. 
+**Override** the **explainSelf()** method by defining different animal sounds on a new line. 
 
 To get a better idea, look at the example below.
 
-You should be able to use the class like this:
+Your code should function in this context:
 
 ```java
 public static void main(String[] args) {
