@@ -9,7 +9,7 @@
 
 Annotations are a type of **metadata** that you can insert into your Java code.
 
-They are Java types, preceded by an "**@**" symbol and are used to **describe** parts of your code.
+They are signified by an "**@**" symbol and used to **describe** parts of your code.
 
 Annotations can be applied to **classes**, **fields**, **methods**, etc.
 
@@ -21,7 +21,7 @@ Annotations can be applied to **classes**, **fields**, **methods**, etc.
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-31-annotation-usage-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Let us see simple example of annotations:
+Let us see an example:
 
 ``` java
 @Deprecated // That shows our method is Deprecated
@@ -29,10 +29,9 @@ public void deprecatedMethod() {
   System.out.println("Deprecated!");
 }
 ```
+These annotations can be used to generate suppress warnings.
 
-These annotations are used to generate or suppress warnings and errors.
-
-It is a good practice to apply them since it can prevent future programmer errors.
+It is a good practice to apply them since it can prevent future errors.
 
 [/slide]
 
@@ -43,15 +42,15 @@ It is a good practice to apply them since it can prevent future programmer error
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-32-34-built-in-annotations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Here is an example of some **built-in** annotations:
+Here are some **built-in** annotations:
 
 - `@Override` - indicates that a method overrides or replaces the behavior of an inherited method
 
-- `@Deprecated` - shows us an API that is not intended for use anymore
+- `@Deprecated` - marks an API that is not intended for use anymore
 
-- `@SupressWarning` - used to turn off compiler warnings
+- `@SupressWarning` - used to diseable some compiler warnings
 
-Let us see how we can use it:
+Let us see how we can use this:
 
 ```java
 @SuppressWarnings(value = "unchecked")
@@ -69,7 +68,7 @@ public <T> void warning(int size) {
 
 We can create Custom Annotations using the **@interface** keyword.
 
-Here are some other things to remember while creating custom annotations:
+Here are is some additional information to keep in mind when creating custom annotations:
 
 - Methods can have default values
 
@@ -88,9 +87,9 @@ This is an **example** of a custom annotation:
 }
 ``` 
 
-We can notice here that every element is defined similarly to a method definition in an interface.
+We can notice that every element is defined similarly to one definition in an interface.
 
-To use our custom created annotation we can use code like this:
+To use our custom created annotation we can do the following:
 
 ``` java
 @MyAnnotation(
@@ -116,7 +115,7 @@ Another thing we can do is to specify where the annotation is applicable.
 
 ## Target
 
-We can achieve this using `@Target`:
+We can achieve this using: `@Target`:
 
 ``` java
 @Target(ElementType.FIELD) // it is used to annotate fields only
@@ -358,7 +357,7 @@ Test Passed!
 
 [task-description]
 # Description
-Create annotation **Author** with a **String** element called **name**, that:
+Createa an annotation: **Author** with a **String** element called **name**, that:
 - Should be available at runtime
 - Can be placed only on methods
 
