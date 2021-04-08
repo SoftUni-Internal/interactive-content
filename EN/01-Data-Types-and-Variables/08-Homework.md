@@ -25,19 +25,19 @@ There are discounts for some of the titles:
 - Protector - 30%
 - TotalDrama - 20%
 - Area - 10%
-## Input
+### Input
 You will receive the following input from the console:
 - Budget - **real** number in range [10.0 ... 100.0]
 - Number of series - **integer** number in range [1 ... 10]
 For each series, you receive two lines:
 - Title of the series - **string**
 - Price of the series - **real** number in range [1.0 ... 15.0]
-## Output
+### Output
 The output should consist of a single line in the following format:
 - If the budget is greater than or equal to the price of the series: **"You bought all the series and left with** \{**money left**\}**$"**
 - If the budget is less than the price of the series: **"You need** \{**money needed**\}**$ more to buy the series!"**
 The result must be formatted to the second digit after the decimal point.
-## Example
+### Example
 | **Input** | **Output** | 
 | --- | --- |
 | 10 | You bought all the series and left with 0.50$ | 
