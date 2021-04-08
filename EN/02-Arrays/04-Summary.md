@@ -52,6 +52,7 @@ for (const number of numbers) {
 - Naming and best practices
 
 This text is a paragraph.
+<br><br>
 This won't be another paragraph, it will join the line above it.
 
 This will be another paragraph, as it has a blank line above it.
