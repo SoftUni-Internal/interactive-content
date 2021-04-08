@@ -6,8 +6,8 @@
 
 ## In this lesson you learned:
 
-- Functions are pieces of code used to perform tasks
-    - we can create functions in Java that are similar to the mathematical concept of functions
+- Functions are pieces of code used to perform certain tasks
+    - creating Java functions is similar to writing mathematical ones
     - they can be passed as **variables** to methods
 
 - Lambda expressions are anonymous methods
@@ -19,7 +19,7 @@
 () -> { System.out.println("How are you?"); }
 ```
 
-- `Function<T,R>` is a function that returns R type
+- `Function<T,R>` is a function that returns a result of type `R`
 
 ```java
 public class Main { 
@@ -41,7 +41,7 @@ public class Main {
 
 - `Predicate<T>` evaluates a condition
 
-- `BiFunction<T, U, R>` accepts two parameters
+- `BiFunction<T, U, R>` accepts two parameters and returns a result of type `R`
 
 
 [/slide]
