@@ -67,7 +67,7 @@ It also does not require creating a separate class for every small functionality
 
 The key is that the code that is inside the class must be **directly related to the main purpose** of the class. 
 
-It is a good practice to **create methods** that are **accurate**, **concise**, and as **straight-forward** as possible, although in some situations we cannot keep to this principle.
+It is a good practice to **write methods** that are **accurate**, **concise**, and as **straight-forward** as possible, although in some situations we cannot keep to this principle.
 
 Thanks to the **single responsibility principle**, we can easily detect and eliminate bugs in the software.​
 
