@@ -411,7 +411,7 @@ Test Passed!
 
 - We cannot override **private**, **static** or **final** methods
 
-- Overriding methods cannot throw a **checked exception** which is higher in the hierarchy than one thrown by the overridden method
+- The method in the child class **cannot** throw an exception if it is **lower** in the exception hierarchy than the exception thrown in the **parent class**
 
 ## Overloading Methods
 
