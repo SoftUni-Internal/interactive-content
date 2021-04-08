@@ -6,22 +6,22 @@
 
 Numerele în JavaScript nu au tipuri separate pentru **numerele întregi** și pentru **numerele zecimale.**
 
-Avem un singur tip care se numește **numere.**
+Avem un singur tip care se numește **number.**
 
-Cel mai mare număr care poate fi stocat este `2^54 +-1`
+Cel mai mare număr care poate fi stocat este `2^54 +-1`.
 
 Avem, de asemenea, valori speciale, precum:
 
-- `+Infinity` și `-Infinity` pe care le obținem când împărțim numerele la 0
+- `+Infinity` și `-Infinity` pe care le obținem când împărțim numerele la 0:
 
 ``` js live
 console.log(5 / 0);
 console.log(-5 / 0);
 ```
 
-Vom obține infinit pentru a nu obține ca rezultat **eroare de timp de compilare.**
+Vom obține infinit pentru a nu obține ca rezultat **eroare a timpului de compilare.**
 
-- `NaN` (sau așa numitul non-număr):  Putem obține NaN când încercăm să parsăm un șir care nu poate fi parsat sau când vrem să împărțim la 0:
+- `NaN` (non-număr):  Putem obține NaN când încercăm să parsăm un șir care nu poate fi parsat sau când vrem să împărțim la 0:
 
 ``` js live
 let nanVar = Number('not a number');
@@ -94,7 +94,7 @@ function adapter(input, code) {
 
 Veți primi **trei numere**. 
 
-Sarcina voastră este să aflați **suma** acestora și s-o tipăriți pe consolă, folosind adunarea:
+Sarcina voastră este să aflați **suma** acestora și să o tipăriți pe consolă, folosind adunarea:
 
 "\{**number**\} - **Integer or Float**"
 
