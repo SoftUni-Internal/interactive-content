@@ -1437,9 +1437,9 @@ For each command with a boolean **return** type received through the input, you 
 
 If a method **throws** an **exception** (such as trying to create a clinic with an even number of rooms, or trying to add a pet that does not exist), you should **catch** the exceptions and print "**Invalid Operation!**". 
 
-The **Print** \{clinic's name\} \{room\} command should print information about that room in the format **specified** above. 
+The **Print** \{**clinic's name**\} \{**room**\} command should print information about that room in the format **specified** above. 
 
-The **Print** \{clinic's name\} command should print information about all rooms in the clinic, ordered by their room numbers.
+The **Print** \{**clinic's name**\} command should print information about all rooms in the clinic, ordered by their room numbers.
 
 ## Constraints
 
