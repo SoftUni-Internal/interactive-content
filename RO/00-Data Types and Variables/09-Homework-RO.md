@@ -1245,7 +1245,24 @@ Notă: 505 NU este EXACT 50% din 1000, ci 50.5%.
 | 2 | 2 |
 | 3 | |
 
-
+[hints] 
+[hint] 
+Acest Poke Mon are o **putere poke** de 5. (N = 5)
+Distanța dintre **țintele poke** este 2. (M = 2)
+**exhaustionFactor** este egal cu 3. (Y = 3)
+[/hint] 
+[hint] 
+Începem să scădem M de la N.
+La inceput, N = 5 and M = 2.
+N - M = 3 -\> 1 țintă împinsă
+N - M = 1 -\> 2 ținte împinsă
+N este acum mai mic decât M.
+[/hint] 
+[hint] 
+Tipărim ceea ce a **rămas** din **N**, care este 1.
+Printăm **numărul de ținte**, care este 2.
+[/hint] 
+[/hints]
 
 [/task-description]
 [code-io /]
