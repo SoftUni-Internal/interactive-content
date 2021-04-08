@@ -8,7 +8,7 @@
 # Description
 Create a **generic class** "**Box**" that can store any type.
 
-**Override** the `toString()` method to print the type and the value of the stored data in the format:
+**Override** the `toString()` method to print the type and the value of the stored data in the following format:
 
 "\{**class full name**\}: \{**value**\}"
 
@@ -16,9 +16,9 @@ Use the class that you have created and test it with the class "**java.lang.Stri
 
 ## Input
 
-On the first line, you will get an integer **n** - the number of Strings to read from the console. 
+On the first line, you will receive an integer **n** - the number of Strings that you have to read from the console. 
 
-On the next **n** lines, you will get the actual strings. 
+On the next **n** lines, you will receive the actual strings. 
 
 ## Output
 
@@ -142,17 +142,17 @@ java.lang.String: I am an Integer
 # Description
 Create a **generic class Box** that can store any type.
 
-**Override** the `toString()` method to print the type and the value of the stored data in the format 
+**Override** the `toString()` method to print the type and the value of the stored data in the following format: 
 
 "\{**class full name**\}: \{**value**\}"
 
-Use the class that you have created and test it with the class "**java.lang.String**". 
+Use the class that you have created and test it with the class "**java.lang.Integer**". 
 
-On the first line, you will get the number **n** - the number of Integers to read from the console. 
+On the first line, you will get the number **n** - the number of **Integers** to read from the console. 
 
 On the next **n** lines, you will get the actual Integers. 
 
-For each of them create a box and call its `toString()` method to print its data to the console.
+For each of them, create a "**Box**" class and call its `toString()` method to print the data to the console.
 
 # Example
 | **Input** | **Output** |
@@ -247,7 +247,7 @@ java.lang.Integer: 2147483647
 # Description
 Create a generic method that receives a list containing **any type of data** and swaps the elements at two given indexes.
 
-As in the previous problems, read **n** number of boxes of type **String** and add them to the list. 
+As in the previous problems, first read an integer **n**, then read **n** number of boxes of type **String**, and add them to the list. 
 
 On the next line, you will receive a swap command consisting of **two indexes**. 
 
@@ -363,7 +363,7 @@ java.lang.String: ghi
 # Description
 Create a generic method that receives a list containing **any type of data** and swaps the elements at two given indexes.
 
-As in the previous problems, read **n** number of boxes of type **Integer** and add them to the list. 
+As in the previous problems, first read an integer **n**, then read **n** number of boxes of type **String**, and add them to the list. 
 
 On the next line, you will receive a swap command consisting of **two indexes**. 
 
@@ -473,11 +473,11 @@ The method should **return the count of elements that are greater than the value
 
 **Modify your Box class** to support **value comparison** of the stored data.
 
-On the **first line**, you will receive **n** - the number of elements to add to the list. 
+On the **first line**, you will receive an integer **n** - the number of elements to add to the list. 
 
 On the next **n** lines, you will receive the actual elements. 
 
-On the **last line**, you will get the value of the element to which you need to compare every element in the list.
+On the **last line**, you will get the value of the element to which you need to compare each element in the list.
 
 # Example
 | **Input** | **Output** |
@@ -588,7 +588,7 @@ The method should **return the count of elements that are greater than the value
 
 **Modify your Box class** to support **value comparison** of the stored data.
 
-On the **first line**, you will receive **n** - the number of elements to add to the list. 
+On the **first line**, you will receive an integer **n** - the number of elements to add to the list. 
 
 On the next **n** lines, you will receive the actual elements. 
 
@@ -693,7 +693,7 @@ On the **last line**, you will get the value of the element to which you need to
 
 Create a generic data structure that can store **any type** that can be **compared**.
 
-Implement functions:
+Implement the following functions:
 
 - void add(T element)
 - T remove(int index)
@@ -889,7 +889,7 @@ f
 # Description
 Extend the previous problem by creating an additional **Sorter class**. 
 
-It should have a single static method `sort()` which can sort objects of type **CustomList** containing any type that can be compared.
+It should have a single static method `sort()` that can sort objects of type **CustomList** containing any type that can be compared.
 
 **Extend the command list** to support one additional command:
 
@@ -1068,9 +1068,9 @@ f
 # Description
 Extend the code from the previous task by implementing **Iterable** in your custom list class.
 
-You probably used a **for-loop** for the print command.
+You probably used a **for-loop** for the **print** command.
 
-This should allow you to iterate your list in a **foreach** statement.
+This should allow you to iterate over your list using a **foreach** statement.
 
 # Example
 | **Input** | **Output** |
@@ -1241,49 +1241,49 @@ f
 
 [task-description]
 # Description
-There is a sequence of elements, called **"Tuple"**.
+There is a sequence of elements called **"Tuple"**.
 
-It is a class, that contains two objects: the first one is **"item1"**; the second one is **"item2"**.
+It is a class that contains two objects: the first one is **"item1"**, the second one is **"item2"**.
 
-It is similar to **Map.Entry** but it **only has items**, which are **neither key nor value**.
+It is similar to **Map.Entry**, but it **only has items**, which are **neither key nor value**.
 
 It is unknown what these objects are holding.
 
 The class name does not provide enough information.
 
-Your task is to try to implement it in Java, just for practicing generics.
+Your task is to implement it in Java.
 
-Create a class **"Tuple"**, which holds two objects. 
+Create a class called **"Tuple"** that holds two objects. 
 
-The first one will be **"item1"** and the second one - **"item2"**.
+The first one will be **"item1"**, and the second one - **"item2"**.
 
 The class has to hold **Generics**. 
 
-When you create a new object of class -  **"Tuple"**, you should specify the item types separately.
+When you create a new object of class **"Tuple"**, you should specify the item types separately.
 
 ## Input
 
 The input consists of three lines:
 
-- The first one consists of a **person's name** and **city of residence**
+- The first one consists of a **person's name** and a **city of residence**
     - both are **separated by space(s)**
-    - you have to collect them in the Tuple and print them to the console
+    - you have to collect them in the **Tuple** and print them to the console
 
-This input comes in the following format:
+The input comes in the following format:
 
 "\{\{**first name**\} \{**last name**\}\} \{**city**\}"
 
-- The second line holds a **name** of a person and the **amount of hobbies** he has and comes in the following format:
+- The second line holds a **name** of a person and the **number of hobbies** they have. The line comes in the following format:
 
 "\{**name**\} \{**hobbies**\}"
 
-- The last line will hold an **Integer** and a **Double** in the following format:
+- The last line will hold an **Integer** and a **Double**. The input comes in the following format:
 
 "\{**Integer**\} \{**Double**\}"
 
 ## Output
 
-- Print the Tuple items in the following format: 
+- Print the **Tuple** items in the following format: 
 
 "\{**item1**\} **->** \{**item2**\}"
 
@@ -1291,7 +1291,7 @@ This input comes in the following format:
 
 Use all the good practices we learned so far.
 
-Create the class and with getters and setters for its class variables. 
+Create the class with getters and setters for its class variables. 
 
 The input will always be valid, there is no need to check it explicitly!
 
@@ -1377,26 +1377,26 @@ Shamsky -\> 2999999
 # Description
 The next task is to create another Tuple.
 
-Create a Class **Threeuple**. 
+Create a class called **Threeuple**. 
 
-Its name shows that the **Threeuple** should **hold three objects**.
+The name shows that the **Threeuple** will **hold three objects**.
 
 It should also have getters and setters. 
 
-You can extend the previous Tuple class.
+You can extend the previous **Tuple** class.
 
 ## Input
 The input consists of three lines.
 
-- The first contains a person's name, city, and country of residence in the following format:
+- The first line contains a person's full name, a city name, and a country of residence in the following format:
 
 "\{\{**first name**\} \{**last name**\}\} \{**city**\} \{**country**\}"
 
-- The second line holds a name, amount of hobbies, and a **Boolean variable** - happy (true) or not (false), in the following format:
+- The second line holds a name, number of hobbies, and a **Boolean variable** - happy (true) or not (false), in the following format:
 
 "\{**name**\} \{**hobbies**\} \{**happy or not**\}"
 
-- The last line will contain a name, a bank balance (double) and a bank name, formatted as follows:
+- The last line will contain a name, a bank balance (double), and a bank name, formatted as follows:
 
 "\{**name**\} \{**account balance**\} \{**bank name**\}"
 
