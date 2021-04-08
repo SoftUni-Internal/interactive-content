@@ -20,9 +20,8 @@ Patterns can be defined by using a special syntax:
  
 You can **practice** creating custom regular expressions at:
 
-- [https://regexr.com](regexr.com)
-
-- [https://regex101.com](regex101.com)
+- [regexr.com](https://regexr.com)
+- [regex101.com](https://regex101.com)
 
 [/slide]
 
