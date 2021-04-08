@@ -9,29 +9,31 @@
 [task-description]
 ## Preparation 
 
-**Pay attention to the name of the package "guild", all of the classes, their fields and methods the same way they are presented in the following description.**
+**Pay attention to name the package "guild", and to name all of the classes, their fields and methods the same way they are presented in the following description.**
 
 **It is also important to keep the project structure as described.**
 
 Download the needed resources from [here](https://videos.softuni.org/resources/java/java-oop-basics/Java-OOP-Basics-Exam-Prep-01.Guild_Skeleton.zip).
 
 ## Description
-Your task is to create a **repository** which stores **players** by creating the classes described below.
+Your task is to create a **repository** that stores **players**.
+
+Create the classes described below.
 
 ## Player
 
-First, create a Java class **Player** with the following fields:
+First, create a class **Player** that has the following fields:
 - "**name**": String
 - "**clazz**": String
   - must be named "**clazz**" to prevent interference with the default Java keyword
-- "**rank**": String – "Trial" by default
-- "**description**": String – "n/a" by default
+- "**rank**": String – "**Trial**" by default
+- "**description**": String – "**n/a**" by default
 
 The class **constructor** should receive a **name and a clazz**. 
 
 You need to create the appropriate **getters and setters**. 
 
-Override the `toString()` method with the following format:
+Override the `toString()` method in order to return some information in the following format:
 
 "**Player** \{**name**\}**:** \{**clazz**\}
 
@@ -41,25 +43,27 @@ Override the `toString()` method with the following format:
 
 ## Guild
 
-**Next**, create a Java class named **Guild** that has a **roster** (a collection which stores **Player** entities). 
+**Next**, create a class named **Guild** that has a **roster** (a collection that stores **Player** entities). 
 
 All entities inside the repository have the **same fields**. 
 
 Also, the **Guild** class should have those **fields**:
+- **name**: String
+- **capacity**: int
 
 The class **constructor** should receive a **name** and a **capacity**, it should initialize the **roster** with a new instance of the collection. 
 
 Implement the following methods:
 
 - Method "**addPlayer(Player player)**" - **adds** a **player** to the roster **if there is room** for him
-- Method "**removePlayer(String name)**" - removes a player by their **given name**, if such **exists**.
+- Method "**removePlayer(String name)**" - removes a player by a **given name**, if such **exists**.
     - **returns boolean**
 - Method "**promotePlayer(String name)**" - **promotes (sets his rank to "Member")** the **first player** with the **given name** 
-    - if the player is **already** a "Member", **do nothing**
+    - if the player's rank is **already** set to "Member", you should **do nothing**
 - Method "**demotePlayer(String name)**" - **demotes** (sets his rank to "Trial") the first player with the **given** name
-    - if the player is **already** a "Trial", **do nothing**
-- Method "**kickPlayersByClass(String clazz)**" - removes all of the players by the given class and returns **all of the removed players** from that **class as an array**
-- Method "**count()**" - returns the **number of players**
+    - if the player's rank is **already** set to "Trial", you should **do nothing**
+- Method "**kickPlayersByClass(String clazz)**" - removes all of the players by a given class and returns **all of the removed players** from that **class as an array**
+- Method "**count()**" - returns the **number of the players**
 - Method "**report()**" - **returns a String** in the following **format**:
 
 
@@ -71,8 +75,8 @@ Implement the following methods:
 
 ## Constraints
 
-- The **names** of the players will be **always unique**
-- You will always have a player added before receiving methods that manipulate the Guild's players
+- The **names** of the players will always be **unique**
+- You will always have a player added before receiving command representing methods that manipulate the Guild's players
 
 ## Examples
 
