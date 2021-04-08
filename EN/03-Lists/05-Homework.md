@@ -946,14 +946,7 @@ Finally, **print the sum of the remaining elements** in the sequence.
 | 1 2 2 4 2 2 2 9  | 12 |
 | 4 2 | |
 
-[hints]
-[hint]
-The special number is 4 with a power of 2.
-[/hint] 
-[hint]
-After detonation, this sequence remains: \[1, 2, 9\] with a sum of 12.
-[/hint] 
-[/hints] 
+
 
 ### Example
 | **Input** | **Output** |
@@ -961,17 +954,7 @@ After detonation, this sequence remains: \[1, 2, 9\] with a sum of 12.
 | 1 4 4 2 8 9 1 | 5 |
 | 9 3 | |
 
-[hints]
-[hint]
-The special number is 9 with a power of 3.
-[/hint] 
-[hint]
-After detonation, the remaining sequence is: \[1, 4\] with a sum of 5.
-[/hint] 
-[hint]
-Since the number 9 has only 1 neighbor to the right of it, we only remove the number 9 (we remove one number instead of three numbers).
-[/hint] 
-[/hints] 
+
 
 [/task-description]
 [code-io /]
@@ -1296,32 +1279,6 @@ When the program ends, you must print the summed up value of all **REMOVED** ele
 | 1 | |
 | 0 | |
 
-[hints]
-[hint]
-The array consists of \{4, 5, 3\}.
-
-The index is 1.
-We remove 5, and we increase all index numbers that are smaller than 5 and decrease all index numbers bigger than it.
-In this case, there are elements less than 5.
-
-The result is \{9, 8\}.
-[/hint] 
-[hint]
-The next index is 1. 
-So we remove 8 and decrease all elements greater than it.
-
-The result is \{1\}.
-[/hint] 
-[hint]
-The last index is 0. 
-
-So we remove 1.
-There are no elements left, so we print the sum of all removed elements:
-**5 + 8 + 1 = 14**
-
-`System.out.println(sum); // Output: 14`
-[/hint] 
-[/hints] 
 
 ### Example
 | **Input** | **Output** |
@@ -1334,36 +1291,6 @@ There are no elements left, so we print the sum of all removed elements:
 | 0 | |
 | 0 | |
 
-[hints]
-[hint]
-The array consists of \{5, 10, 6, 3, 5\}.
-
-Step 1: \{11, 4, 9, 11\}.
-[/hint] 
-[hint]
-Step 2: \{22, 15, 20, 22\}.
-[/hint] 
-[hint]
-Step 3: \{7, 5, 7\}
-[/hint] 
-[hint]
-Step 4: \{2, 2\}
-[/hint] 
-[hint]
-Step 5: \{4, 4\}
-[/hint] 
-[hint]
-Step 6: \{8\}
-[/hint] 
-[hint]
-Step 7: \{\} (empty)
-
-There are no elements left, so we print the sum of all removed elements:
-**6 + 11 + 15 + 5 + 2 + 4 + 8 = 51**
-
-`System.out.println(sum); // Output: 51`
-[/hint] 
-[/hints] 
 
 [/task-description]
 [code-io /]
@@ -1621,25 +1548,7 @@ Each time you **Swap or Remove a lesson,** you should **do the same with the exe
 | Remove:Lists | 4.Databases |
 | course start | |
 
-[hints]
-[hint]
-We receive the initial schedule.
 
-Next, we add the **Databases** lesson, because it does not exist:
-
-[/hint] 
-[hint]
-We insert the **Arrays** lesson at the given index because it is not present in the schedule:
-
-[/hint] 
-[hint]
-After receiving the last command and removing the Lists lesson, we print the whole schedule.
-
-`schedule.remove(lessonTitle);`
-
-
-[/hint] 
-[/hints] 
 
 ### Example
 | **Input** | **Output** |
@@ -1651,27 +1560,7 @@ After receiving the last command and removing the Lists lesson, we print the who
 | Insert:Arrays:0 | 5.Lists |
 | course start | |
 
-[hints]
-[hint]
-We swap the given lessons because both exist:
 
-
-You can implement a custom `swapping` method.
-[/hint] 
-[hint]
-After receiving the **Exercise** command, we see that such a lesson does not exist, so we add the lesson to the end, followed by the exercise:
-
-
-[/hint] 
-[hint]
-We swap the Lists and the **Databases** lessons, the **Databases-Exercise** is also moved after the Databases lesson:
-
-`swapping(schedule, lessonTitle, swapLessonWith);`
-[/hint] 
-[hint]
-We skip the next command because we already have such a lesson on our schedule.
-[/hint] 
-[/hints] 
 
 [/task-description]
 [code-io /]
