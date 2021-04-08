@@ -21,27 +21,27 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care ca intrare va primi **3 parametri** (șiruri):
+Creați un program care va primi **3 parametri** (șiruri) ca intrare:
 
-- Primul șir este numele trupei
+- Primul șir este **numele trupei**
 
-- Al doilea șir este numele albumului
+- Al doilea șir este **numele albumului**
 
-- Al treilea ține numele melodiei de pe album
+- Al treilea este **numele melodiei de pe album**
 
 Trebuie să aflați de câte **ori** placa va roti melodia dată din album.
 
-**Placa face o rotație completă la fiecare 2,5 secunde.**
+**Placa face o rotație completă la fiecare 2.5 secunde.**
 
 Durata melodiei **în secunde** se calculează după formula dată:
 
 (albumName.length \* bandName.length) \* song name.length \/ 2
 
-Ca rezultat, ar trebui să imprimați următorul mesaj:
+Ca ieșire, trebuie să imprimați următorul mesaj:
 
 "**The plate was rotated** \{**rotations**\} **times.**"
 
-Rotațiile ar trebui să fie **rotunjite în sus.**
+Rotațiile trebuie să fie **rotunjite în sus.**
 
 ## Exemplu
    |**Intrare** |**Ieșire**|
@@ -113,7 +113,7 @@ The plate was rotated 29 times.
 [/slide]
 
 [slide hideTitle]
-# Problem: Fuel Money
+# Problemă: Fuel Money
 [code-task title="Fuel Money" taskId="js-fundamentals-1-basic-syntax-Fuel-Money" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -133,22 +133,22 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
  # Descriere
-Creați un program care calculează cât de mulți **bani** pentru combustibil, care va fi necesar pentru a conduce un autobuz dintr-un loc în altul.
+Creați un program care calculează cât de mulți **bani** pentru combustibil vor fi necesari pentru a conduce un autobuz dintr-un loc în altul.
 
 Luați în considerare următoarele:
 
-- Calculați **combustibilul** știind că **un autobuz gol** poate trece 100 km cu motorină 7L
+- Calculați **combustibilul** știind că **un autobuz gol** poate atinge 100 km cu 7L de motorină
 
 - **O persoană** în autobuzul respectiv, cu excepția șoferului, mărește consumul de combustibil cu **100 mililitri**
 
-- **Banii** sunt calculați prin **înmulțirea** a **prețului combustibilului** cu combustibilul necesar pentru călătorie
+- **Banii** sunt calculați prin **înmulțirea** prețului combustibilului cu combustibilul necesar pentru călătorie
 
 Ca **intrare** veți primi **3 parametri**:
 - **Distanța** pe care trebuie să o parcurgă autobuzul
-- **Pasagerii** în el
+- **Pasagerii** din autobuz
 - **Prețul** pentru **1 litru de motorină**
 
-Ca rezultat, ar trebui să imprimați acest mesaj:
+Ca ieșire, trebuie să imprimați acest mesaj:
 "**Needed money for that trip is** \{**neededMoney**\} **dollars.**
 
 ## Exemplu
@@ -274,9 +274,9 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care primește mai multe secole și îl convertește în ani, zile, ore și minute.
+Creați un program care primește un număr reprezentând secole și îl convertește în **ani**, **zile**, **ore** și **minute**.
 
-Imprimați rezultatul în următorul format: 
+Imprimați ieșirea în următorul format: 
 "\{**number**\} **centuries =** \{**number**\} **years =** \{**number**\} **days =** \{**number**\} **hours =** \{**number**\} **minutes**"
 
 ## Exemplu
@@ -374,7 +374,7 @@ Creați un program care primește un număr **n**.
 
 Pentru toate numerele din intervalul **1...n**, tipăriți numărul și dacă este special sau nu.
 
-Un număr este special atunci când suma cifrelor sale este **5, 7, or 11.**
+Un număr este special atunci când suma cifrelor sale este **5, 7, sau 11.**
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -552,7 +552,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care primește un **număr** **n** și tipărește toate triplele primelor **n** litere latine mici, ordonate alfabetic.
+Creați un program care primește un **număr** **n** și tipărește toate tripletele primelor **n** litere latine mici, ordonate alfabetic.
 
 ## Exemplu
 |**Intrare**|**Ieșire**|
@@ -1222,7 +1222,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care primește **3 parametri** (caractere) și să le imprimă în **ordine inversă** cu un spațiu între ele.
+Creați un program care primește **3 parametri** (caractere) și le imprimă în **ordine inversă** cu un spațiu între ele.
 
 ## Exemplu
 |**Intrare**|**Ieșire**|
@@ -1339,7 +1339,7 @@ Creați un program care primește **trei parametri de tip șir:**
 
 - **Un alt număr**
 
-Sarcina voastră este să **efectuați o calculare** folosind **operatorul** dat și să **imprimați** rezultatul calculului formatat la **a doua zecimală.**
+Sarcina voastră este să **efectuați un calcul** folosind **operatorul** dat și să **imprimați** rezultatul calculului, formatat la **a doua zecimală.**
 
 ## Exemplu
 |**Intrare**|**Ieșire**|
