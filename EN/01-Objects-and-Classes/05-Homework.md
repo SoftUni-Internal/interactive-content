@@ -160,12 +160,12 @@ Print out the information about all the people who are **older than 30 years of 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 5 | Nick - 33 | 
-| Nick 33 | John - 88 |
-| John 88 | Leo - 44 |
-| George 22 | |
+| 5 |  Leo - 44  | 
+| Nick 33 | Nick - 33 |
+| Yoan 88 | Yoan - 88|
+| Tom 22 | |
 | Leo 44 | |
-| Peter 11 | |
+| Sophie 11 | |
 
 [/task-description]
 [code-upload allowedMemory="30" /]
@@ -185,15 +185,15 @@ Steven - 48
 [input]
 5
 Nick 33
-John 88
-George 22
+Yoan 88
+Tom 22
 Leo 44
-Peter 11
+Sophie 11
 [/input]
 [output]
-Nick - 33
-John - 88
 Leo - 44
+Nick - 33
+Yoan - 88
 [/output]
 [/test]
 [test]

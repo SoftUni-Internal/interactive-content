@@ -21,7 +21,7 @@ public class Main {
 ## Descriere
 Creați  un program pentru a **calcula costul total** al diferitelor tipuri de mobilier cumpărat .
 
-Veți primi câteva linii de intrare **până când veți primi comanda ** "Purchase".
+Veți primi câteva linii de intrare **până când veți primi comanda** "Purchase".
 
 Pentru ca linia **să fie valabilă** ar trebui să fie în următorul **format**:
 
@@ -39,7 +39,9 @@ Bought furniture:
 …
 
 Și pe **ultima linie imprimați** următoarele:
-- "Total money spent: \{amount\}" **formatate** la a doua zecimală.
+
+- "Total money spend: \{spend money\}" **formatate** la a doua zecimală
+
 
 ### Exemplu
 |**Intrare**|**Ieșire** |
@@ -361,7 +363,7 @@ Fiecare comandă validă trebuie să aibă un **client, produs, total și prețu
 **Valid**: 
 - **Numele clientului** trebuie să fie înconjurat de '%' și trebuie să înceapă cu o literă mare, urmată de litere mici
 - **Produsul** conține orice caracter de cuvânt și trebuie să fie înconjurat de '\<' și '\>' 
-- **Total** este un număr întreg, înconjurat de'\|'
+- **Total** este un număr întreg, înconjurat de '\|'
 - **Prețul** este orice număr real urmat de '$'
 
 Părțile unei **comenzi valide ar trebui să apară în comanda dată : client, produs, total și un prețul**.
@@ -618,7 +620,7 @@ Primim două mesaje, pentru a le decripta calculăm cheia:
 | --- | --- |
 | 3 | Attacked planets: 0 |
 | tt(''DGsvywgerx>6444444444%H%1B9444 | Destroyed planets: 2 |
-| GQhrr|A977777(H(TTTT | -> Cantonica |
+| GQhrr\|A977777(H(TTTT | -> Cantonica |
 | EHfsytsnhf?8555&I&2C9555SR | -> Coruscant |
 
 ### Comentarii
