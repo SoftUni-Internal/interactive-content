@@ -11,17 +11,17 @@
 **1. S.O.L.I.D. Principles**
 - The five principles of software design
 
-**2. Single Responsibility Principle**
+**2. The Single Responsibility Principle**
 - The benefits of class encapsulation
 
-**3. Open/Closed Principle**
+**3. The Open/Closed Principle**
 - How to extend our classes without changing existing code
 
 **4. Liskov Substitution**
 - What behavioral subtyping is
 
 **5. Interface Segragation**
-- Rules for method dependencies
+- Rules regarding method dependencies
 
 **6. Dependency Inversion**
 - Why loose coupling is important in OOP
