@@ -8,7 +8,7 @@
 ## In this lesson you will learn:
 
 **1. Lambda Expressions**
-- Implementing a codeblock inside of a method
+- Implementing a code block inside of a method
 
 **2. What a Function Is**
 - How to use `Function<T, R>`
