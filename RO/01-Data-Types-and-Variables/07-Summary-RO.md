@@ -41,11 +41,11 @@
 
     - boolean
    
-```js
-let bool = true;
-```
+    ```js
+    let bool = true;
+    ```
 
-  - `let` are domeniu de obiect, `var` domeniu funcțional
+- `let` are domeniu de obiect, `var` are domeniu funcțional
 
 - Prin  `typeof` putem obține tipul variabilei
 
@@ -55,14 +55,14 @@ let cars = ['Nio', 'Tesla', 'Xpeng'];
 console.log(typeof(cars));
 ```
 
-- `Null` este 'nimic', nedefinit există, dar este gol
+- `Null` este "nimic", în timp ce `undefined` există, dar este gol
 
-## În lecția următoare, veți învăța despre:
+## În lecția următoare veți învăța despre:
 
 - Matrice
   - definiție și sintaxă
 - Iterarea matricelor
-  - cum iterăm peste o matrice
+  - cum iterăm printr-o matrice
   - moduri alternative de iterație, folosind bucla  "**for-of**" 
 - Operații cu matrice
 
