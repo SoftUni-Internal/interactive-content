@@ -218,7 +218,7 @@ Depending on the **condition**, print the **pairs** in the specified **format**.
 
 **Do not use any built-in functionalities.**
 
-**Create your own methods.**
+**Write your own methods.**
 
 
 ## Examples
