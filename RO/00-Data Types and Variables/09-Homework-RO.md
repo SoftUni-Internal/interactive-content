@@ -1254,8 +1254,8 @@ Distanța dintre **țintele poke** este 2. (M = 2)
 [hint] 
 Începem să scădem M de la N.
 La inceput, N = 5 and M = 2.
-N - M = 3 -> 1 țintă împinsă
-N - M = 1 -> 2 ținte împinsă
+N - M = 3 -\> 1 țintă împinsă
+N - M = 1 -\> 2 ținte împinsă
 N este acum mai mic decât M.
 [/hint] 
 [hint] 
