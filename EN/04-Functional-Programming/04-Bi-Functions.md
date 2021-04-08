@@ -16,14 +16,14 @@ The `BiFunction <T,U,R>` interface is a part of the **java.util.function** packa
 
 **R** - The type of the result of the function
 
-It represents a **function** that accepts two arguments and outputs a **result**.
+It represents a **function** that accepts two arguments and returns a **result**.
 
 ``` java
 BiFunction <Integer, Integer, String> sum = (x, y) -> "Sum is" + (x + y);
 // We have two input parameters
 ```
 
-Analogically we can use:
+Analogically, we can use:
 
 - `BiConsumer <T, U>`
 
@@ -50,14 +50,14 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that reads **a line of Integers** separated by a comma and space ", ". 
+Create a program that reads **a line of Integers** separated by a comma and a single space ", ". 
 
 Print the **count of the numbers** and **their sum**. 
 
 This time use a **BiFunction**.
 
 ## Hints
-Use `BiFunction<Integer, String, Integer>` for parsing integers after you split them into a String array.
+Use `BiFunction<Integer, String, Integer>` to parse the integers after you split them into a String array.
 
 # Examples
 
@@ -201,11 +201,11 @@ public class Main {
 [task-description]
 ## Description
 
-Write a program that reads an integer **N** from the first line of input.
+Create a program that reads an integer **N** from the console.
 
-On the next **N** lines, you will receive pairs of "**name, age**" combinations. 
+On the next **N** lines, you will receive pairs of **name** and **age** combinations. 
 
-After that you will receive **three more lines** that will contain:
+After that, you will receive **three more lines** that will contain:
 
 - Condition - **"younger"** or **"older"**
 
@@ -213,12 +213,12 @@ After that you will receive **three more lines** that will contain:
 
 - Format - **"name"**, **"age"**, or **"name age"**
 
-Depending on the **condition**, print the **pairs** in the right **format**.
+Depending on the **condition**, print the **pairs** in the specified **format**.
 
 
-**Do not use any built-in functionality.**
+**Do not use any built-in functionalities.**
 
-**Write your own methods.**
+**Create your own methods.**
 
 
 ## Examples
