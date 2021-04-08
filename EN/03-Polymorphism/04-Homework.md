@@ -10,7 +10,7 @@ Create a program that holds the classes to represent two vehicle types (**Car** 
 
 The **Car** and **Truck** should both have: **fuel quantity**, **fuel consumption in liters per kilometer** and can be **driven a given distance** and **refueled with a given number of liters of gas**. 
 
-Druring the **summer** both vehicles are air conditioned so their **fuel consumption** per kilometer gets **increased by 0.9** liters for the **car** and with **1.6** liters **for the truck**. 
+During the **summer** both vehicles are air conditioned so their **fuel consumption** per kilometer gets **increased by 0.9** liters for the **car** and with **1.6** liters **for the truck**. 
 
 Also the **truck** has a hole in its tank and when it gets **refueled** it retains only **95%** of the total **re-filled amount**. 
 
