@@ -10,9 +10,9 @@
 
 **1. Reflection**
 
-- What reflection is
-- Why it is used
-- When to use it
+- Definition
+- Uses
+- Use cases
 
 **2. Reflection API**
 - Reflecting classes
