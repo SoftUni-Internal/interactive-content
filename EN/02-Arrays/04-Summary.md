@@ -53,8 +53,8 @@ for (const number of numbers) {
 
 ## obichate li da qdete BOB
 
-- \[ \] Da
-- \[x\] Ne
+[ ] Da
+[x] Ne
 [x] Earth (Orbit/Moon)
 [x] Mars
 [ ] Jupiter
