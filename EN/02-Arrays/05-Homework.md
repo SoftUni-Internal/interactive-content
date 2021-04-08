@@ -40,6 +40,7 @@ The formula for calculating the area of a square is - a * a.
 [/hints]
 
 [/task-description]
+[code-io /]
 [tests]
 [test open]
 [input]
@@ -81,7 +82,7 @@ calculateArea(1)
 1
 [/output]
 [/test]
-[code-io /]
+[/tests]
 [/code-task]
 
 [/slide]
