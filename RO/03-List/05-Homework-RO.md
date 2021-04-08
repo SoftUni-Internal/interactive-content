@@ -933,12 +933,14 @@ Detonările se efectuează **de la stânga la dreapta** și toate numerele deton
 | 1 2 2 4 2 2 2 9  | 12 |
 | 4 2 | |
 
-**Comentarii:**
-
-- Numărul special este 4 cu puterea 2
-
-- După detonare rămâne următoarea secvență \[1, 2, 9\] cu suma de  12
-
+[hints]
+[hint]
+Numărul special este 4 cu puterea 2.
+[/hint] 
+[hint]
+După detonare rămâne următoarea secvență \[1, 2, 9\] cu suma de 12.
+[/hint] 
+[/hints] 
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -946,12 +948,17 @@ Detonările se efectuează **de la stânga la dreapta** și toate numerele deton
 | 1 4 4 2 8 9 1 | 5 |
 | 9 3 | |
 
-**Comentarii:**
-- Numărul special este 9 cu puterea 3
-
-- După detonare rămâne următoarea secvență \[1, 4\], cu suma de 5
-
-- Deoarece 9 are doar 1 vecin din dreapta, eliminăm doar numărul 9 (eliminăm doar un număr, în loc de 3)
+[hints]
+[hint]
+Numărul special este 9 cu puterea 3.
+[/hint] 
+[hint]
+După detonare rămâne următoarea secvență \[1, 4\], cu suma de 5.
+[/hint] 
+[hint]
+Deoarece 9 are doar 1 vecin din dreapta, eliminăm doar numărul 9 (eliminăm doar un număr, în loc de 3).
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]
@@ -1279,24 +1286,32 @@ Când programul se termină, trebuie să imprimați pe consolă, valoarea însum
 | 1 | |
 | 0 | |
 
-**Comentarii:**
+[hints]
+[hint]
+Matricea este \{4, 5, 3\}.
 
-- Matricea este \{4, 5, 3\} Indexul este 1
+Indexul este 1.
+Eliminăm 5 și creștem toți indexșii care sunt mai mici decât 5 și reducem toți indecșii mai mari.
+În acest caz, cu toții sunt mai mici decât 5.
 
-- Eliminăm 5 și creștem toți indexșii care sunt mai mici decât 5 și reducem toți indecșii mai mari
+Rezultatul este \{9, 8\}.
+[/hint] 
+[hint]
+Indexul este 1. 
+Deci eliminăm 8 și scădem toți indecșii mai mari decât acesta.
 
-- În acest caz,  cu toții sunt mai mici decât 5
+Rezultatul este \{1\}.
+[/hint] 
+[hint]
+Indexul este 0. 
 
-- Rezultatul este \{9, 8\}
+Deci eliminăm 1.
+Nu mai există elemente, așa că imprimăm suma tuturor elementelor eliminate:
+**5 + 8 + 1 = 14**
 
-- Indexul este 1. Deci eliminăm 8 și scădem toți indecșii mai mari decât acesta
-
-- Rezultatul este \{1\}
-
-- Indexul este 0. Deci eliminăm 1
-
-- Nu mai există elemente, așa că imprimăm suma tuturor elementelor eliminate
-- 5 + 8 + 1 = 14
+`System.out.println(sum); // Output: 14`
+[/hint] 
+[/hints] 
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -1309,15 +1324,36 @@ Când programul se termină, trebuie să imprimați pe consolă, valoarea însum
 | 0 | |
 | 0 | |
 
-**Comentarii:**
-- Pasul 1: \{11, 4, 9, 11\}
-- Pasul 2: \{22, 15, 20, 22\}
-- Pasul 3: \{7, 5, 7\}
-- Pasul 4: \{2, 2\}
-- Pasul 5: \{4, 4\}
-- Pasul 6: \{8\}
-- Pasul 7: \{\} (empty)
-- Rezultat = 6 + 11 + 15 + 5 + 2 + 4 + 8 = 51
+[hints]
+[hint]
+Matricea este \{5, 10, 6, 3, 5\}.
+
+Pasul 1: \{11, 4, 9, 11\}.
+[/hint] 
+[hint]
+Pasul 2: \{22, 15, 20, 22\}.
+[/hint] 
+[hint]
+Pasul 3: \{7, 5, 7\}
+[/hint] 
+[hint]
+Pasul 4: \{2, 2\}
+[/hint] 
+[hint]
+Pasul 5: \{4, 4\}
+[/hint] 
+[hint]
+Pasul 6: \{8\}
+[/hint] 
+[hint]
+Pasul 7: \{\} (empty)
+
+Nu mai există elemente, așa că imprimăm suma tuturor elementelor eliminate:
+**6 + 11 + 15 + 5 + 2 + 4 + 8 = 51**
+
+`System.out.println(sum); // Output: 51`
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]
@@ -1570,11 +1606,41 @@ De fiecare dată când **schimbați sau eliminați o lecție,** ar trebui **să 
 | Remove:Lists | 4.Databases |
 | course start | |
 
-**Comentarii:**
-- Primim planificarea inițială
-- Apoi, adăugăm lecția **Databases**, deoarece acesta nu există
-- Inserăm la indexul dat lecția **Arrays**, fiindcă nu este prezent în program
-- După ce am primit ultima comanda și am eliminat lecția **Lists**, imprimăm întreaga planificare
+[hints]
+[hint]
+Primim planificarea inițială.
+
+Apoi, adăugăm lecția **Databases**, deoarece acesta nu există:
+
+```java
+if (!schedule.contains(lessonTitle)) {
+    schedule.add(lessonTitle);
+}
+```
+[/hint] 
+[hint]
+Inserăm la indexul dat lecția **Arrays**, fiindcă nu este prezent în program:
+
+```java
+if (!schedule.contains(lessonTitle)) {
+    if (index >= 0 && index < schedule.size()) {
+        schedule.add(index, lessonTitle);
+    }
+}
+```
+[/hint] 
+[hint]
+După ce am primit ultima comanda și am eliminat lecția **Lists**, imprimăm întreaga planificare.
+
+`schedule.remove(lessonTitle);`
+
+```java
+for (int i = 1; i <= schedule.size(); i++) {
+    System.out.println(i + "." + schedule.get(i - 1));
+}
+```
+[/hint] 
+[/hints] 
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -1586,12 +1652,36 @@ De fiecare dată când **schimbați sau eliminați o lecție,** ar trebui **să 
 | Insert:Arrays:0 | 5.Lists |
 | course start | |
 
-**Comentarii:**
-- Schimbăm lecțiile date, pentru că ambele există
-- După primirea comenzii Exercițiu, vedem că o astfel de lecție nu există, așa că adăugăm lecția la final, urmată de exercițiu
-- Schimbăm lecțiile **Lists** și **Databases**
-- **Databases** - Exercițiul este, de asemenea, mutat după lecția **Databases**
-- Omitem următoarea comandă, deoarece avem deja o astfel de lecție în programul nostru
+[hints]
+[hint]
+Schimbăm lecțiile date, pentru că ambele există:
+
+```java
+swapping(schedule, lessonTitle, swapLessonWith);
+```
+
+Puteți implementa o metodă `swapping` personalizată.
+[/hint] 
+[hint]
+După primirea comenzii **Exercise**, vedem că o astfel de lecție nu există, așa că adăugăm lecția la final, urmată de exercițiu:
+
+```java
+if (!schedule.contains(lessonTitle + "-Exercise")) {
+    schedule.add(lessonTitle);
+    schedule.add(lessonTitle + "-Exercise");
+}
+```
+[/hint] 
+[hint]
+Schimbăm lecțiile **Lists** și **Databases**
+**Databases-Exercise** este, de asemenea, mutat după lecția **Databases**:
+
+`swapping(schedule, lessonTitle, swapLessonWith);`
+[/hint] 
+[hint]
+Omitem următoarea comandă, deoarece avem deja o astfel de lecție în programul nostru.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]
