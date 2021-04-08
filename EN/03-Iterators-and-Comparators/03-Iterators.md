@@ -7,7 +7,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/EN/interactive-java-advanced-iterators-and-comparators-12-13-Iterable-and-Iterator-Collections-Hierarchy -,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The Collection interface extends Iterable and all child classes of Collection implement Iterable.
+The **Collection** interface extends **Iterable** and all child classes of **Collection** implement **Iterable**.
 
 [image assetsSrc="iterators-example(1).png" /]
 
@@ -21,7 +21,7 @@ The Collection interface extends Iterable and all child classes of Collection im
 
 `Iterable<T>` is the root interface of the Java collection classes.
 
-An Iterable represents a collection that can be traversed.
+An **Iterable** represents a collection that can be traversed.
 
 A class that implements the `Iterable<T>` can be used with the new for-loop.
 
@@ -31,9 +31,9 @@ It does that by internally calling the `iterator()` method on the object.
 
 - Iterable `iterator()` method
 
-The Iterable `iterator()` method returns an iterator over elements of type T.
+The Iterable `iterator()` method returns an iterator over elements of type **T**.
 
-The `iterator()` method of this List returns an Iterator of type String.
+The `iterator()` method of this List returns an **Iterator of type String**.
 
 We can use all the Iterator methods to iterate over a collection.
 
@@ -46,11 +46,11 @@ names.add("Oliver");
 Iterator<String> iterator = names.iterator();
 ```
 
-- `hasnext()` method
+- `hasНext()` method
 
-The `hasNext()` - method returns true if the iterator has more elements, and false if not.
+The `hasNext()` method returns true if the iterator has more elements, and false if not.
 
-So, we pass the `iterator.hasNext()` into the while loop and in this way we begin to iterate over the collection.
+So, in the following example, we pass the `iterator.hasNext()` into the while-loop. That way, we begin to iterate over the collection.
 
 We use the `iterator.next()` method to get the next element from the collection.
 
@@ -70,9 +70,9 @@ while(iterator.hasNext()) {
 
 - `forEach(Consumer<? super T> action)`
 
-Another way to iterate over the elements of a Java Iterable is via its forEach() method. 
+Another way to iterate over the elements of a Java Iterable is via its `forEach()` method. 
 
-The forEach() method takes a Java Lambda Expression as a parameter. 
+The `forEach()` method takes a Java Lambda Expression as a parameter. 
 
 This lambda expression is called once for each element in the Iterable collection. 
 
@@ -91,7 +91,7 @@ names.forEach((name) -> {
 
 - `spliterator()`
 
-The iterable `spliterator()` method of this List returns Spliterator of type String.
+The iterable `spliterator()` method of this List returns **Spliterator of type String**.
 
 It provides **better performance**.
 
@@ -116,22 +116,22 @@ names.forEachRemaining((name) -> System.out.println(name));
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/04-Iterators-and-Comparators/EN/interactive-java-advanced-iterators-and-comparators-16-Iterator-T-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The `iterator()` method returns a `new Iterator` which implements `Iterator<String>` and passes them to the `iterator()` method.
+The `iterator()` method returns a `new Iterator` object which implements the `Iterator<String>` class and passes them to the `iterator()` method.
 
 This example shows how to implement the `Iterator<T>` interface in a custom iterator.
 
-Let us suppose, we want a custom list with names.
+Let us suppose that we want a custom list containing several names.
 
-We want our NamesList to iterate only over the names that start with "A".
+We want our **NamesList** to iterate only over the names that start with "A".
 
-For that reason, our NamesList class has to implement the Iterable interface.
+For that reason, our **NamesList** class has to implement the **Iterable** interface.
 
 ```java
 public class NamesList implements Iterable<String> {
     // ...
 }
 ```
-Let us create a field `String[] names` where we are going to save our names.
+Let us create a field `String[] names`, where we are going to save our names.
 
 ```java
 public class NamesList implements Iterable<String> {
@@ -143,7 +143,7 @@ public class NamesList implements Iterable<String> {
 
 The next step is to create a constructor.
 
-Our constructor accepts varargs (of type String) so we can create **multiple instances of the object** with a different number of arguments each time we create it.
+Our constructor accepts varargs (of type String), so we can create **multiple instances of the object** with a different number of arguments each time.
 
 ```java
 public class NamesList implements Iterable<String> {
@@ -179,11 +179,11 @@ public class NamesList implements Iterable<String> {
 
 We have to create an **inner** `NamesIterator` class that implements `Iterator<String>`. 
 
-In this class, we have a field `int counter;`.
+In this class, we have a field `int counter`.
 
 In the constructor, we set the initial value of the `counter` field to 0.
 
-Next, we implement the `hasNext()` method which is mandatory when implementing the Iterator interface.
+Next, we implement the `hasNext()` method, which is mandatory when implementing the Iterator interface.
 
 The boolean `hasNext()` method returns `true` every time the name starts with `A`.
 
@@ -251,7 +251,7 @@ public class NamesList implements Iterable<String> {
 
 [task-description]
 # Description
-Create a class **Library** from the UML diagram below:
+Create a class **Library** based on the UML diagram below:
 
 
 [image assetsSrc="java-oop-basics-uml-book-iterable.png" /]
@@ -263,7 +263,7 @@ Create a class **Library** from the UML diagram below:
 |- books: Book\[\]|
 |+ iterator(): Iterator\<Book\>|
 
-Then, create a nested class **LibIterator** from UML diagram below:
+Then, create a nested class **LibIterator** based on the UML diagram below:
 
 [image assetsSrc="java-oop-basics-uml-book-iterable2.png" /]
 
