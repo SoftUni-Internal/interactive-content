@@ -44,52 +44,63 @@ Numărul de elemente nu va depăși 10000.
 | --- | --- |
 | 10 20 30 40 50  | 50 40  |
 
+[hints]
+[hint]
+Valoarea medie este egală cu 30.
+Numerele mai mari de 30 sunt: `{40, 50}`
 
-## Cometariu
-- Valoare medie = 30
+Sortate în ordine descrescătoare: `{50, 40}`
+Deoarece există doar două numere care îndeplinesc criteriile, toate acestea ar trebui incluse în rezultatul final.
+[/hint] 
+[/hints] 
 
-- Numerele mai mari de 30 sunt: ​​\{40, 50\}
-
-- Sortate în ordine descrescătoare: \{50, 40\}
-
-- Deoarece există doar două numere care îndeplinesc criteriile, toate acestea ar trebui incluse în rezultatul final
 
 ## Al Eoilea Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | 5 2 3 4 -10 30 40 50 20 50 60 60 51  | 60 60 51 50 50  |
 
-## Cometariu
+[hints]
+[hint]
+Valoarea medie este egală cu 28,08.
 
-- Valoare medie = 28,08
+Numerele mai mari decât 28.08 sunt: `{30, 40, 50, 50, 60, 60, 51}`
 
-- Numerele mai mari decât 28.08 sunt: ​​\[Text Wrapping Break \] \{30, 40, 50, 50, 60, 60, 51\}
+Cele mai mari 5 numere în ordine descrescătoare sunt: `{60, 60, 51, 50, 50}`
+[/hint] 
+[/hints] 
 
-- Cele mai mari 5 numere în ordine descrescătoare sunt: ​​\{60, 60, 51, 50, 50\}
+
 
 ## Al Treilea Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | 1  | No  |
 
-## Cometariu
+[hints]
+[hint]
+Valoarea medie este egală cu 1.
 
-- Valoare medie = 1
+Nu există numere mai mari de 1.
+[/hint] 
+[/hints] 
 
-- Nu există numere mai mari de 1
 
 ## Al Patrulea Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | -1 -2 -3 -4 -5 -6  | -1 -2 -3   |
 
-## Cometariu
+[hints]
+[hint]
+Valoarea medie este egală cu -3.5.
 
-- Valoare medie = -3.5
+Numerele mai mari de -3.5 sunt: `{-1, -2, -3}`
 
-- Numerele mai mari de -3.5 sunt: ​​\{-1, -2, -3\}
+Primele 5 numere dintre ele, în ordine descrescătoare sunt `{-1, -2, -3}`
+[/hint] 
+[/hints] 
 
-- Primele 5 numere dintre ele, în ordine descrescătoare sunt: ​​\{-1, -2, -3\}
 
 [/task-description]
 [code-io /]
