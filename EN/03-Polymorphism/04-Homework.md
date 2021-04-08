@@ -761,7 +761,7 @@ The skeleton you are provided with contains the following files:
 - **CommandInterface.java** – defines an interface class that handles commands represented as strings (coming from the console, read from `main(String[] args)`) 
 - **CommandImpl.java** – class which holds the implementation of the **CommandInterface**
 
-The code uses an **Initialization.java** file, which is missing but should define a way to generate a **CommandInterface**.
+Create an **Initialization.java** file that holds the functionality to create instances of the CommandImpl class
 
 The files you are given support all the necessary logic to implement the following command:
 
