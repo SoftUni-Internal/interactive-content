@@ -44,52 +44,58 @@ The number of elements will not exceed 10000.
 | --- | --- |
 | 10 20 30 40 50  | 50 40  |
 
+[hints]
+[hint]
+The average value is equal to 30.
+The numbers which are greater than 30 are: `{40, 50}`
 
-## Comment
-- Average value = 30
-
-- The numbers which are greater than 30 are: \{40, 50\}
-
-- Sorted in descending order: \{50, 40\} 
-
-- Since there are only two numbers that meet the citeria all of them should be included in the final result
+Sorted in descending order: `{50, 40}`
+Since there are only two numbers that meet the citeria, all of them should be included in the final result.
+[/hint] 
+[/hints] 
 
 ## Example Two
 | **Input** | **Output** |
 | --- | --- |
 | 5 2 3 4 -10 30 40 50 20 50 60 60 51  | 60 60 51 50 50  |
 
-## Comment
+[hints]
+[hint]
+The average value is equal to 28.08.
 
-- Average value = 28.08
+Numbers greater than 28.08 are: `{30, 40, 50, 50, 60, 60, 51}`
+The greatest 5 numbers in descending order are: `{60, 60, 51, 50, 50}`
+[/hint] 
+[/hints] 
 
-- Numbers greater than 28.08 are: \[Text Wrapping Break\] \{30, 40, 50, 50, 60, 60, 51\}
-
-- The greatest 5 numbers in descending order are: \{60, 60, 51, 50, 50\}
 
 ## Example Three
 | **Input** | **Output** |
 | --- | --- |
 | 1  | No  |
 
-## Comment
+[hints]
+[hint]
+The average value is equal to 1
 
-- Average value = 1
-
-- There are no numbers, greater than 1
+There are no numbers, greater than 1.
+[/hint] 
+[/hints] 
 
 ## Example Four
 | **Input** | **Output** |
 | --- | --- |
 | -1 -2 -3 -4 -5 -6  | -1 -2 -3   |
 
-## Comment
+[hints]
+[hint]
+The average value is equal to -3.5.
 
-- Average value = -3.5 
+Numbers greater than -3.5 are: `{-1, -2, -3}`
+The top 5 numbers among them, in descending order are `{-1, -2, -3}`
+[/hint] 
+[/hints] 
 
-- Numbers greater than -3.5 are: \{-1, -2, -3\}
-
-- The top 5 numbers among them, in descending order are: \{-1, -2, -3\}
 
 [/task-description]
 [code-io /]
