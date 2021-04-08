@@ -16,7 +16,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that **reads** a collection of **strings**, separated by one or **more** whitespaces, and prints them to the console.
+Create a program that **reads** a collection of **strings**, separated by one or **more** whitespaces, and prints them to the console.
 
 Each string should be printed on a new line.
 
@@ -154,7 +154,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that **reads a collection of names** as strings, **appends "Sir"** in front of every name, and prints it to the console.
+Create a program that **reads a collection of names** as strings, separated by one or more white spaces, appends **"Sir"** in front of each name, and prints it out.
 
 Use a `Consumer<T>`.
 
@@ -292,7 +292,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that **reads** a **set of numbers** from the console and finds the **smallest** **number** using a `Function<Integer[], Integer>`.
+Create a program that **reads** a **set of numbers** from the console and finds the **smallest** **number**, using a `Function<Integer[], Integer>`.
 
 
 # Examples
@@ -382,15 +382,15 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-On the first line of input, you will receive numbers, separated by spaces.
+On the first line, you will receive numbers, separated by spaces.
 
-On the next lines, you will receive several **commands** that you need to apply to all numbers in the input that you received: 
+On the next lines, you will receive several **commands** that you need to apply to all numbers that you received: 
 
 - "**add**" \-\> adds 1
 - "**multiply**" \-\> multiplies by 2
 - "**subtract**" \-\> subtracts 1
-- "**print**" \-\> prints a new line with the sequence of numbers, separated by spaces
-Program execution stops after receiving the "**end**" command.
+- "**print**" \-\> prints a new line containing all the updated numbers, separated by spaces
+- "**end**" \-\> stops the program
 
 # Examples
 | **Input** | **Output** |
@@ -521,8 +521,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that **reverses** a collection and **removes** elements that are **divisible** by a given integer **n**.
+Create a program that receives a **set of numbers**. 
 
+On the next line, you will receive an integer **N**.
+
+Your task is to **reverse** the order of the elements in the specified collection and to **remove** all elements that are **divisible** by **N**.
 
 ## Examples
 | **Input** | **Output** |
@@ -622,15 +625,17 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a **predicate**.
+You will receive an **integer** that you should compare to the length of all names.
 
-It has to **check** a name for its length and return **true** if the length of the names is **less than or equal to** the passed **integer**.
+On the second line, you will receive a **string** array containing few names.
 
-You will receive an **integer** that represents the length you have to check for.
+Create a **predicate**.
 
-On the second line, you will receive a **string** array with some names.
+It has to **check** the length of a given name. It should return **true** if the length of the names is **less than or equal to** the passed **integer**.
 
-Print the names, passing the **condition** in the predicate.
+Print all names that fulfill the specified condition. 
+
+Pass the **condition** in the predicate.
 
 
 ## Examples
@@ -728,17 +733,17 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that uses a custom **function** (written by you) to find the **smallest** integer in a **sequence** of **integers**.
+Create a program that uses a custom **function** (written by you) to find the **smallest integer** in a **sequence** of **integers**.
 
-The input could have more than one space.
+You will receive the numbers on a single line, separated by one or more white spaces.
 
-Your task is to **read** the integers from the console, find the **smallest one**, and print its **index**. 
+Your task is to **read** the integers, to find the **smallest one**, and to print its **index**. 
 
 If **more** than one such element exists, print the index of the **rightmost** one.
 
 ## Hints
 
-- Use a `Function<List<Integer>, Integer>` or something similar
+- Use a `Function<List<Integer>, Integer>`
 
 
 ## Examples
@@ -819,9 +824,15 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a custom **comparator** that **sorts** all even numbers before all **odd** ones in **ascending order**.
+You will receive a **set of numbers** on a single line, separated by one or more white spaces.
 
-Pass it to an `Arrays.sort()` function and print the result.
+Create a custom **comparator** that **sorts** all numbers, arranging them as follows:
+
+- first, all **even** numbers in **ascending order**
+
+- next, all **odd** numbers in **ascending order**
+
+Pass the comparator to an `Arrays.sort()` function and print the result.
 
 
 ## Examples
@@ -910,7 +921,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Find all **numbers** in the range **1 ... N** that are **divisible** by the numbers of a given sequence.
+First, you will receive an integer **N**.
+
+Next, you will receive a **set of numbers**, separated by one or more white spaces.
+
+Find all **numbers** in the range [1 ... N] that are **divisible** by all numbers in the passed set of numbers. 
 
 Use **predicates**.
 
