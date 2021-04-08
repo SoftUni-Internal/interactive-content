@@ -602,11 +602,11 @@ Dacă nu există **elemente în stânga/dreapta**, suma lor **este considerată 
 
 [hints] 
 [hint] 
-In this example, the element at index 2 (arr\[2\]) satisfies the condition.
+În acest exemplu, elementul corespunzător indicelui 2 (arr\[2\]) satisface această condiție. 
 [/hint] 
 [hint] 
-The sum of the elements on the **left** side (1, 2) is equal to 3.
-The sum of the elements on the **right** side (3) is also equal to 3.
+Suma elementelor din partea stângă (1, 2) este egală cu 3.
+Suma elementelor din partea dreaptă (3) este egală cu 3.
 
 arr\[0\] + arr\[1\] = arr\[3\]
 [/hint] 
@@ -1066,25 +1066,25 @@ Indecșii dați pot fi sau nu în interiorul domeniului câmpului
 
 [hints] 
 [hint] 
-First, we receive the field size - **3**.
-Then, we receive the indexes with ladybugs - **0** and **1**.
+Prima dată, primim dimensiunea câmpului - **3**.
+Apoi, primim indicii cu buburuze - **0** și **1**.
 
-Initially, the field looks like this: `1 1 0`
+Inițial, câmpul arată în felul următor: `1 1 0`
 [/hint] 
 [hint] 
-The first command is "**0 right 1**":
-- **0** - the **index** of the ladybug
-- right - the **direction** to fly to
-- 1 - the **fly length**
+Prima comandă este "**0 right 1**":
+- **0** - **indicele** buburuzei
+- right - **direcția** zborului
+- 1 - **lungimea zborului**
 
-After this command, the field looks like this: `0 0 1`
+După această comandă, câmpul arată așa: `0 0 1`
 [/hint] 
 [hint] 
-The second command is "**2 right 1**".
+A doua comandă este "**2 right 1**".
 
-Since this fly length is outside of the array, the ladybug **flies away**.
+Din moment ce lungimea zborului se află în afara matricei, buburuza **își ia zborul**.
 
-After this command, the field looks like this: `0 1 0`
+După această comandă, câmpul arată în felul următor: `0 1 0`
 [/hint] 
 [/hints]
 

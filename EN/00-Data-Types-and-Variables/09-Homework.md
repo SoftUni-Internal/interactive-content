@@ -1236,7 +1236,7 @@ Note: 505 is not exactly 50% of 1000, it is 50.5%.
 
 [hints] 
 [hint] 
-This Poke Mon has **poke power** of 5. (N = 5)
+This Poke Mon has a **poke power** of 5. (N = 5)
 The **distance** between the **poke targets** is 2. (M = 2)
 The **exhaustionFactor** is equal to 3. (Y = 3)
 [/hint] 
