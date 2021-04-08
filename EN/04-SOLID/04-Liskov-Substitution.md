@@ -4,11 +4,11 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-15-17-liskov-substitution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The **Liskov substitution principle** was written by **Barbara Liskov** in 1988.
+The **Liskov substitution principle** was created by **Barbara Liskov** in 1988.
 
-It states that functions that reference base classes must be able to use objects of derived (child) classes without knowing it.
+It states that functions that reference base classes must be able to use any objects of derived (child) classes.
 
-In other words, the principle defines that objects of a **Superclass** should be **replaceable** with objects of its **Subclasses** without breaking the application.
+In other words, the principle defines that objects of a **Superclass** should be **replaceable** with objects of its **Subclasses** without breaking an application.
 
 This requires the objects of your Subclasses to **behave in the same way** as the objects of your Superclass.
 
@@ -24,7 +24,7 @@ The Liskov substitution principle is just an **extension** of the **open-closed*
 
 That means that we are able to implement the **open-closed** principle through **additional objects**, **inheritance**, and **polymorphism**.​
 
-We must ensure that new derived classes are extending the base classes **without changing their behavior**. 
+We must ensure that derived classes are extending the base class **without changing its behavior**. 
 
 [/slide]
 
@@ -36,13 +36,13 @@ We must ensure that new derived classes are extending the base classes **without
 
 The **LSP** is applicable in the presence of a **Supertype-Subtype inheritance** relationship by either **extending** a class or **implementing** an interface. 
 
-We can think of the methods defined in the supertype as **defining a contract**.
+We can think of the methods defined in the supertype as **defining an obligatory blueprint**.
 
-Every subtype is expected to **stick** to **this contract**. 
+Every subtype is expected to follow it. 
 
-If a Subclass does not adhere to the contract of the Superclass, it is **violating the LSP**.
+If a Subclass does not adhere to the blueprint of the Superclass, it does **not observe the LSP**.
 
-This code snippet shows what violates LSP and how we can fix it:
+This is an example of this and how we can fix it:
 
 ```java
 public interface Vehicle {
@@ -51,7 +51,7 @@ public interface Vehicle {
     void accelerate();
 }
 ```
-Above, we define a simple **Vehicle** Interface with a couple of methods that all vehicles should be able to fulfill – turning on the engine, and accelerating forward.
+We define a simple **Vehicle** Interface with a couple of methods that all vehicles should be able to fulfill – turning on the engine, and accelerating.
 
 The `MotorCar` class implements the `Vehicle` Interface and its methods `startEngine()` and `accelerate()`.
 
@@ -72,14 +72,14 @@ public class MotorCar implements Vehicle {
 }
 ```
 
-As the above code describes, we have an **engine** that we can **turn on**, and we can **increase the power**.
+The above code defines an **engine** that we can **turn on**, and we can **accelerate**.
 
 But, what happens if we want to add an **electric car**:
 
 ```java
 public class ElectricCar implements Vehicle {
  
-    public void startEngine() {
+    public void startCombustionEngine() {
         throw new Error("The electric cars have no engine!");
     }
  
@@ -88,11 +88,11 @@ public class ElectricCar implements Vehicle {
     }
 }
 ```
-The electric car is a vehicle, however, it does not have an engine and hence, the method `startEngine()` cannot be implemented.
+An electric car is a vehicle, however, it does not have a fuel-based engine and hence, the method `startCombustionEngine()` cannot be implemented.
 
-These are the kinds of problems that **violations** of the Liskov Substitution Principle leads to, and they can most often be recognized by a **method that does nothing**, or cannot even be **implemented.**
+The Liskov Substitution Principle aims to avoid such cases, they can be identified when a **method that does nothing**, or cannot be **implemented.**
 
-The **solution** to these problems is a correct **inheritance hierarchy**, and in our case, we would solve the problem by differentiating the interfaces of vehicles with and without engines.
+The **solution** to these problems is a correct **inheritance hierarchy**, and in our case, we would solve the problem by differentiating the interfaces of vehicles with different types of engine.
 
 
 From the Vehicle Interface we remove the `startEngine()` method:
@@ -103,20 +103,20 @@ public interface Vehicle {
 }
 ```
 
-Then, we create the **ElectricVehicle** interface, which **extends the Vehicle interface**, and has its own method `batteryLife()`:
+Then, we create the **ElectricVehicle** interface, which **extends the Vehicle interface**, and has its own method `startElectricEngine()`:
 
 ```java
 public interface ElectricVehicle extends Vehicle {
 
-    int batteryLife();
+    int startElectricEngine();
 }
 ```
 
-We create an interface **Car** which extends Vehicle, in which it is more appropriate to add the `startEngine()` method:
+We create an interface **Car** which extends Vehicle, in which we add the `startCombustionEngine()` method:
 
 ```java
 public interface Car extends Vehicle {
-    void startEngine();
+    void startCombustionEngine();
 }
 ```
 
@@ -127,8 +127,8 @@ public class MotorCar implements Car {
  
     private Engine engine;
  
-    public void startEngine() {
-        // Start the engine
+    public void startCombustionEngine() {
+        // Starts the car engine
         engine.on();
     }
  
@@ -145,8 +145,8 @@ And the **ElectricCar** class implements the **ElectricVehicle** interface:
 public class ElectricCar implements ElectricVehicle {
 
     @Override
-    public int batteryLife() {
-        // Battery life
+    public int startElectricEngine() {
+        // Starts the car engine
     }
 
     @Override
@@ -156,6 +156,6 @@ public class ElectricCar implements ElectricVehicle {
 }
 ```
 
-As a result, our `MotorCar` and `ElectricCar` classes have become **more specialized**, while **adhering to the Liskov substitution principle.**
+As a result, both the `MotorCar` and `ElectricCar` classes have become **more concrete**, while **adhering to the Liskov substitution principle.**
 
 [/slide]
