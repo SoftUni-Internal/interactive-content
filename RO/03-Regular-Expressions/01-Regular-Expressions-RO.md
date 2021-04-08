@@ -19,8 +19,8 @@ O **expresie regulată** definește un  **șablon de căutare** pentru **șiruri
  
 Puteți **practica** cu **regex live** la:
 
-- [https://regexr.com](regexr.com)
-- [https://regex101.com](regex101.com)
+- [regexr.com](https://regexr.com)
+- [regex101.com](https://regex101.com)
 
 [/slide]
 
