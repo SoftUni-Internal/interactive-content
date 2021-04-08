@@ -5,24 +5,23 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-3-4-What-are-regular-expressions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The **abbreviation** for **regular expression** is **regex**.
+**Regex** stands for **regular expression**.
 
-A **regular expression** defines a **search pattern** for **strings**.
+We use **regular expressions** to define **search patterns** for **strings**.
  
-The search pattern can be anything from a **simple character**, a **fixed string**, or a complex expression containing special characters describing the pattern.
+The search pattern can be anything: a **simple character**, a **fixed string**, or a complex expression containing special characters describing the pattern.
 
 Patterns can be defined by using a special syntax:
 
-- `[0-9]+` - Matches non-empty sequence of digits
+- `[0-9]+` - Matches a non-empty sequence of digits
 
-- `[A-Z][a-z]*` - Matches a capital letter and none or several small letters
+- `[A-Z][a-z]*` - Matches a capital letter and zero or more small letters
 
  
 You can **practice** creating custom regular expressions at:
 
-- [regexr.com](regexr.com)
-
-- [regex101.com](regex101.com)
+- [regexr.com](https://regexr.com)
+- [regex101.com](https://regex101.com)
 
 [/slide]
 
@@ -126,4 +125,3 @@ In the example above, the class `[abc]` matches any character that is either `a`
 The example above matches the **entire string** that has a length between **6** and **12** characters.
 
 [/slide]
-

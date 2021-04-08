@@ -33,9 +33,9 @@ The previous example works as follows:
 
 - First, a **Pattern object** that **defines the regular expression** is created
 
-- This Pattern object allows **creating a Matcher object** for a given string
+- This Pattern object lets us create a **Matcher object** for a given string
 
-- Then, the Matcher object allows performing **regex operations on a String**
+- By using the matcher object, we can perform **regex operations on a String**
 
 [/slide]
 
@@ -45,7 +45,7 @@ The previous example works as follows:
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-19-Checking-For-A-Single-Match-and-Demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The `find()` method tries to find the occurrence of a regex pattern within a given string. **If multiple occurrences are found** in the string, then **the first call** to `find()` will jump to the **first occurrence**. Thereafter, each subsequent call to the `find()` method will go to the next matching occurrence, one by one.
+The `find()` method tries to find the occurrence of a regex pattern within a given string. **If multiple occurrences are found** in the string, then **the first time** `find()` is called, it will jump to the **first occurrence**. Thereafter, each subsequent call to the `find()` method will go to the next matching occurrence, one by one.
 
 Check the following example:
 
@@ -79,7 +79,7 @@ public class Main {
 
 There are **two** methods that we can use to replace a part of a string with another string, using a **regular expression**.
 
-- `replaceAll()` - Replaces all the substrings that fits the given regular expression with the replacement string and returns the result
+- `replaceAll()` - Replaces all the substrings that fit the given regular expression with the replacement string and returns the result
 
 ```java live no-template
 import java.util.regex.Matcher;
@@ -93,7 +93,7 @@ public class Main {
 
         String result = matcher.replaceAll("hi");
 
-        System.out.println(result);   // hi hi
+        System.out.println(result);
     }
 }
 ```
@@ -111,12 +111,13 @@ public class Main {
         Pattern pattern = Pattern.compile("[A-Za-z]+");
         Matcher matcher = pattern.matcher("Hello Java");
 
-        String result = matcher.replaceFirst("hi"); // hi Java
+        String result = matcher.replaceFirst("hi");
 
         System.out.println(result);
     }
 }
 ```
+
 
 [/slide]
 
@@ -130,12 +131,16 @@ The `split(String pattern)` method splits the text by the specified pattern and 
 
 ```java live
 String text = "1   2 3      4";
-String pattern = "\\s+"; // one or more whitespaces
+String pattern = "\\s+"; 
 
 String[] tokens = text.split(pattern);
 
 System.out.println(String.join(", ",tokens));
 ```
+
+The `\s+` expression matches one or more whitespaces. 
+
+We then use the `split()` method that returns a string array the elements of which are then printed on the console, separated by a comma and space.
 
 [/slide]
 
@@ -162,8 +167,10 @@ public class Main {
 [task-description]
 ## Description
 Create a program that **matches all valid full names** from a given list of names, and **prints** them out.
+
 The input will consist of one line and it will contain a few full names.
-Your task is to create a regular expression to check which the valid names are.
+
+Your task is to create a regular expression to check names are valid.
 
 ## Examples
 | **Input** | **Output** |

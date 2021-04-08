@@ -8,16 +8,16 @@
 
 ## În această lecție veți afla despre:
 
-1. **Expresiile regulate**
+**1. Expresiile regulate**
 
 - Definiția
 - Clase  
 
-2. **Cuantificatori**
+**2. Cuantificatori**
 
 - Grupare
 
-3. **Backreferences**
+**3. Backreferences**
 
 - Grupuri de capturare numerotate
 

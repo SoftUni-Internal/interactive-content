@@ -33,16 +33,15 @@ Stocați **denumirea mobilierukui și prețul total**.
 
 La final **imprimați fiecare mobilierul cumpărat pe o linie separată** în formatul următor:
 
-"Bought furniture:
-
-\{1st name\}
-
-\{2nd name\}
-
-…"
+Bought furniture:
+\{furniture name 1\}
+\{furniture name 2\}
+…
 
 Și pe **ultima linie imprimați** următoarele:
+
 - "Total money spend: \{spend money\}" **formatate** la a doua zecimală
+
 
 ### Exemplu
 |**Intrare**|**Ieșire** |
@@ -50,7 +49,7 @@ La final **imprimați fiecare mobilierul cumpărat pe o linie separată** în fo
 | >>Sofa<<312.23!3 | Bought furniture: |
 | >>TV<<300!5 | Sofa |
 | >Invalid<<!5 | TV |
-| Purchase | Total money spend: 2436.69 |
+| Purchase | Total money spent: 2436.69 |
 
 ### Comentarii
 - Numai canapeaua și televizorul sunt valabile
@@ -71,7 +70,7 @@ Purchase
 Bought furniture:
 Sofa
 TV
-Total money spend: 2436.69
+Total money spent: 2436.69
 [/output]
 [/test]
 [test]
@@ -88,7 +87,7 @@ Bought furniture:
 Televizor
 Monitor
 Sink
-Total money spend: 4636.69
+Total money spent: 4636.69
 [/output]
 [/test]
 [test]
@@ -100,7 +99,7 @@ Purchase
 [/input]
 [output]
 Bought furniture:
-Total money spend: 0.00
+Total money spent: 0.00
 [/output]
 [/test]
 [test]
@@ -116,7 +115,7 @@ Bought furniture:
 Sofa
 Couch
 Table
-Total money spend: 3905.20
+Total money spent: 3905.20
 [/output]
 [/test]
 [test]
@@ -135,7 +134,7 @@ Sofa
 Sofa
 Sofa
 Sofa
-Total money spend: 4683.45
+Total money spent: 4683.45
 [/output]
 [/test]
 [test]
@@ -155,7 +154,7 @@ Laptop
 TV
 TV
 TV
-Total money spend: 8593.09
+Total money spent: 8593.09
 [/output]
 [/test]
 [/tests]
@@ -202,11 +201,9 @@ Dacă primiți **aceeași persoană de mai multe ori** numai **adăugați distan
 
 La final **imprimați primii 3 alergători ordonați în funcție de distanța descrescătoare** în formatul:
 
-"1st place: \{first racer\}
-
+1st place: \{first racer\}
 2nd place: \{second racer\}
-
-3rd place: \{third racer\}"
+3rd place: \{third racer\}
 
 ### Exemplu
 |**Intrare**|**Ieșire** |

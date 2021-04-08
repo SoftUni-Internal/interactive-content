@@ -9,10 +9,12 @@ A **backreference** is a way to repeat a capturing group. A backreference is use
 
 [image assetsSrc="regex-example(24).png" /]
 
-In the example above, the first group `[a-z]+` matches one or more small letters times. 
+In the example above, the first group `[a-z]+` matches one or more small letters. 
 
 The second group `[0-9]+` matches one or more digits.
 
-After that, `\1` is reapplying the same "matched substring" that will be captured by group 1 ([a-z]+) during runtime.
+
+Backreference match the same text as previously matched by a capturing group and so `\1` will match the same text that was captured by group 1 (\[**a-z**\]).
+
 
 [/slide]

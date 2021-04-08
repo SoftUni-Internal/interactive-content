@@ -44,7 +44,7 @@ Acest obiect de potrivire vă permite apoi să executați **operații regex pe u
 
 Metoda `find()` încearcă să găsească apariția șablonului regex înăuntrul unui șir dat.
  **În cazul în care sunt găsite mai multe potriviri** în șir, atunci **primul apel** către `find()` va sări la **prima apariție**.
-După aceea, fiecare apel ulterior către metoda `find ()` va merge la următoarea apariție potrivită, unul câte unul.
+După aceea, fiecare apel ulterior către metoda `find()` va merge la următoarea apariție potrivită, unul câte unul.
 
 Uitați-vă la urmpătorul exemplu:
 
@@ -92,7 +92,7 @@ public class Main {
 
         String result = matcher.replaceAll("hi");
 
-        System.out.println(result);   // hi hi
+        System.out.println(result);
     }
 }
 ```
@@ -135,6 +135,10 @@ String[] tokens = text.split(pattern);
 
 System.out.println(String.join(", ",tokens));
 ```
+
+"Expresia `\s+` potrivește unul sau mai multe spații albe.
+
+Folosim apoi metoda `split()` care returnează o matrice de tip șir ale cărei elemente sunt apoi tipărite pe consolă, separate printr-o virgulă și un spațiu."
 [/slide]
 
 

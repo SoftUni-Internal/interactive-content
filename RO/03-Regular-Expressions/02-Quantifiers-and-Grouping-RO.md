@@ -64,10 +64,16 @@ Textul verde evidențiat este un grup care nu este capturat.
 # Problemă cu soluție: Match All Words
 
 Creați o **expresie regulată** care **extrage toate cuvintele dintr-un text dat** , folosind următorul site web: 
-[www.regex101.com](www.regex101.com)
+[regex101.com](https://regex101.com)
 
 [image assetsSrc="regex-example(25).png" /]
 
+Puteți folosi textul următor pentru a testa expresia voastră regulată:
+
+
+```
+_|The|great|outdoors|holds|~many|secrets
+```
 
 [/slide]
 
@@ -82,6 +88,13 @@ Creați o **expresie regulată** care **extrage toate  datele valide  dintr-un t
 - Exemple: `12-Jun-1999`, `3-Nov-1999`
 
 [image assetsSrc="regex-example(26).png" /]
+
+Puteți folosi textul următor pentru a testa expresia voastră regulată:
+
+```
+1-Jan-1989 is considered the official birthday of the Internet.
+I was not aware that my socks have been missing since 23-Sep-2005.
+```
 
 [/slide]
 
@@ -103,4 +116,10 @@ Creați o expresie regulată care efectuează **validare simplă a e-mailului**
 
 [image assetsSrc="regex-example(27).png" /]
 
+Puteți folosi textul următor pentru a testa expresia voastră regulată:
+
+```
+johndoe@gmail.com
+my*name*is*@who.com
+```
 [/slide]
