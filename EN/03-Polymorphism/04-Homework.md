@@ -34,7 +34,7 @@ After each **Drive** command, print whether the Car/Truck was able to travel the
 
 Use the **DecimalFormat** class: "**Car/Truck travelled** \{**distance**\} **km**"
 
-If there isnt enogh fuel: "**Car/Truck needs refueling**"
+If there isnt enough fuel: "**Car/Truck needs refueling**"
 
 Finally, print the **remaining fuel** for both the car and the truck rounded **to the second decimal place** in the format:
 
