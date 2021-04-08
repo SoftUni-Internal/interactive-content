@@ -1233,7 +1233,24 @@ Note: 505 is not exactly 50% of 1000, it is 50.5%.
 | 2 | 2 |
 | 3 | |
 
-
+[hints] 
+[hint] 
+This Poke Mon has a **poke power** of 5. (N = 5)
+The **distance** between the **poke targets** is 2. (M = 2)
+The **exhaustionFactor** is equal to 3. (Y = 3)
+[/hint] 
+[hint] 
+We start subtracting M from N.
+At the beginning, N = 5 and M = 2.
+N - M = 3 -\> 1 target poked
+N - M = 1 -\> 2 targets poked
+N is now smaller than M.
+[/hint] 
+[hint] 
+We print what has **remained** of **N**, which is 1.
+We print the **count of targets**, which is 2.
+[/hint] 
+[/hints]
 
 
 [/task-description]
