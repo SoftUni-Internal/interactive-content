@@ -4,19 +4,19 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-9-12-open-closed-principle-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-"The code should be **open for extension**, but **closed for modification**".
+"Computer code should be **open for extension**, but **closed for modification**".
 
-Software entities (**classes, modules, methods, etc.**) should be extendable without changing the contents of the class you are extending. 
+Software entities (**classes, modules, methods, etc.**) should be extendable without having to change the content of the class you are extending. 
 
 By following this principle, we can modify the behavior of our code at a later time, **without making changes** to **the original code**.
 
-Adding new functionalities to our classes would happen only through adding new code, not fixing the old one.
+Adding new functionalities to our classes should happen only through adding new code, not fixing the old one.
 
 This principle does not apply when fixing bugs - in that case we can directly modify the existing code.
 
 ## Example
 
-In the following example, we have the **CalculateArea** class that calculates the area of various shapes.
+In the following example, we have the **CalculateArea** class responsible for calculating the area of various shapes.
 
 **CalculateArea** class:
 ```java
@@ -65,19 +65,19 @@ public class Rectangle {
 }
 ``` 
 
-If we want to add **square** for example, we have to **modify** the `calculate()` method in the **CalculateArea** class.
+If we want to define a **square** for example, we have to **modify** the `calculate()` method in the **CalculateArea** class.
 
-**Thus, we will break the open-closed principle**.
+**This would break the open-closed principle**.
 
-According to this principle, **we can not modify the existing code**, but **we can extend by adding more code**.
+According to the principle, **we can not modify existing code**, but **we can extend it by adding more code**.
 
 To overcome this problem, we have to **add abstraction** to the `calculate()` method.
 
-We have to **delegate** the responsibility of providing the calculation of the area inside the shape itself.
+We can **place** the new functionality inside the shape itself.
 
-Each **shape** must have its **own logic** to calculate its area.
+Each **shape** will have its **own logic** to calculate its area.
 
-See the solution of the problem in the following code: 
+The priciple can get applied as in the following code: 
 
 - We add **abstraction** by creating the **Shape** Interface
 
@@ -89,7 +89,7 @@ public interface Shape {
 }
 ```
 
-- By implementing the **Shape** Interface, all shapes classes are obligatory to implement the `calculateArea()` method
+- By implementing the **Shape** Interface, all shape classes are obligated to implement the `calculateArea()` method
 
 **Circle** class:
 
@@ -141,7 +141,7 @@ public class Square implements Shape {
 
 ```
 
-In the end, our **CalculateArea** class should look like this:
+Our **CalculateArea** class should look like this:
 
 ```java
 public class CalculateArea {
@@ -152,13 +152,13 @@ public class CalculateArea {
 }
 ```
 
-By using the **open-closed principle**, we can add a square's area **without modifying** the CalculateArea class, so we can be certain that our existing application will not be affected.
+By using the **open-closed principle**, we can calculate a square's area **without modifying** the CalculateArea class, so we can be certain that our existing application will not be affected.
 
 Applying the **open-closed principle** to our projects limits the need to change source code once it has been written, tested, and debugged.
 
-This principle is important to follow because if we change the already existing logic of our classes we can break our client's code.
+This principle is important to follow because if we change the existing logic of our classes we can damage working functions.
 
-As well as applying it **reduces the risk of introducing new bugs** to existing code, leading to a more robust software.
+Applying this principle also **reduces the risk of introducing new bugs** to existing code, this creates a more robust software.
 
 
 [/slide]
@@ -170,20 +170,20 @@ As well as applying it **reduces the risk of introducing new bugs** to existing 
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-13-ocp-violations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Not following the open-closed principle will lead to problems:**
+**Not following the open-closed principle can lead to additional problems:**
 
 - **Cascading changes through modules**
-  If we change the code in our class, everyone that use this class will change their behavior implicitly.
+  If we change the code in a class, anything that uses this class will change its behavior implicitly.
   
  It does not matter if the clients are inheriting or declaring the class's object, changes to the existing code will lead to cascading changes down the line.
 
 - **Re-testing**
-  Our code needs testing to validate its correctness, this is an inevitable part of the development process.
+  Our code needs testing validating its correctness, this is an inevitable part of the development process.
 
-  Imagine if every time we want to add a new feature and do it through changing our old code, we have to go through all the tests we have written for it and refactor them to make them valid again.
+  Anytime we alter existing code we must conduct all testing from the beginning and refactor it accordingly.
 
 - **Logic depends on conditional statements**
-  Some parts of our code depend on conditional statements logic, changing our old code may break the conditional statements, changing the behavior of our program, which may lead to bugs that will be hard to find.
+  Some parts of our code depend on conditional statements,changing our old code may break the conditional statements, changing the behavior of our program, these can be hard to find.
 
 [/slide]
 
@@ -195,19 +195,19 @@ As well as applying it **reduces the risk of introducing new bugs** to existing 
 
 - **Inheritance / Abstraction**
 
-As we did in the example, we can level up an abstraction, giving a solution to our current problem, this way we are enforcing the **OCP**.
+We can elevate abstraction to higher levels when we need to enforce the **OCP**.
     
 - **Design Patterns**
 
-When we need to solve any design problems, we can check the common design patterns for a tested solution.
+When we need to solve any design problem, we can check the common design patterns for a ready solution.
 
-They have tested solutions, which will give us an abstract way to solve a given problem.
+There are solutions, which aim to give us an abstract way to solve a given problem.
 
 A few that can help us keep the **open-closed principle** are:
    - Template Method Pattern
    - Strategy Pattern
    - Decorator Pattern
 
-Later in the course, we will learn about the different design patterns.
+Later in the course, we will learn about the different kinds of design patterns.
 
 [/slide]
