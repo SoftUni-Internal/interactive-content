@@ -51,10 +51,10 @@ for (const number of numbers) {
 
 - Naming and best practices
 
-## Solar System Exploration, 1950s – 1960s
+## obichate li da qdete BOB
 
-[ ] Mercury
-[x] Venus
+- \[ \] Da
+- \[x\] Ne
 [x] Earth (Orbit/Moon)
 [x] Mars
 [ ] Jupiter
