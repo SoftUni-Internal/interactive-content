@@ -1248,7 +1248,7 @@ Notă: 505 NU este EXACT 50% din 1000, ci 50.5%.
 [hints] 
 [hint] 
 Acest Poke Mon are o **putere poke** de 5. (N = 5)
-Distanța dintre **țintele poke** este 2. (M = 2)
+**Distanța** dintre **țintele poke** este 2. (M = 2)
 **exhaustionFactor** este egal cu 3. (Y = 3)
 [/hint] 
 [hint] 
