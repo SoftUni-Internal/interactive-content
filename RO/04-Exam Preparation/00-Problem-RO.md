@@ -38,15 +38,15 @@ Pe linia următoare **veți primi numărul total de persoane** numărate ca un s
 "**Time needed:** \{**time**\}**h.**"
 
 ## Intrare / Limitări 
-Pe primele 3 linii - **eficiența** fiecărui angajat -  **numere întregi**
-- Pe a 4-a linie - numărul de persoane- un **număr întreg**
+- Pe **primele 3** linii - **eficiența** fiecărui angajat -  **numere întregi**
+- Pe a **4-a** linie - numărul de persoane- un **număr întreg**
 
 ## Ieșire
 - Imprimați o **singură linie**:
 
 "**Time needed:** \{**time**\}**h.**"
 
-## Exemplu
+## Exemplu 1
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | 5 | Time needed: 2h. |
@@ -54,14 +54,19 @@ Pe primele 3 linii - **eficiența** fiecărui angajat -  **numere întregi**
 | 4 | |
 | 20 | |
 
-## Cometariu
-- Toți angajații pot răspunde la 15 persoane pe oră
+[hints]
+[hint]
+Toți angajații pot răspunde la 15 persoane pe oră.
+[/hint] 
+[hint]
+După prima oră au mai rămas 5 persoane pentru a primi un răspuns.
+[/hint] 
+[hint]
+Toți oamenii vor primi răspuns în a doua oră.
+[/hint] 
+[/hints] 
 
-- După prima oră au mai rămas 5 persoane pentru a primi un răspuns
-
-- Toți oamenii vor primi răspuns în a doua oră
-
-## Exemplu
+## Exemplu 2
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | 1 | Time needed: 10h. |
@@ -69,20 +74,25 @@ Pe primele 3 linii - **eficiența** fiecărui angajat -  **numere întregi**
 | 3 | |
 |45 | |
 
-## Cometariu
-- Toți angajații pot răspunde la 6 persoane pe oră
+[hints]
+[hint]
+Toți angajații pot răspunde la 6 persoane pe oră.
+[/hint] 
+[hint]
+În primele 3 ore au răspuns 6 \* 3 = 18 persoane.
+Atunci au o pauză de o oră.
+[/hint] 
+[hint]
+După următoarele 3 ore sunt (18 + 6 \* 3 = 36) de persoane cu răspuns.
+După pauză timp de o oră, există doar 9 persoane care așteaptă un răspuns.
+[/hint] 
+[hint]
+Ora 10 - toate întrebările oamenilor au primit un răspuns.
+[/hint] 
+[/hints] 
 
-- În primele 3 ore au răspuns 6 \* 3 = 18 persoane
 
-- Atunci au o pauză de o oră
-
-- După următoarele 3 ore sunt 18 + 6 \* 3 = 36 de persoane cu răspuns
-
-- După pauză timp de o oră, există doar 9 persoane care așteaptă un răspuns 
-
-- Ora 10 - toate întrebările oamenilor au primit un răspuns
-
-## Exemplu
+## Exemplu 3
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | 3 | Time needed: 5h. |
