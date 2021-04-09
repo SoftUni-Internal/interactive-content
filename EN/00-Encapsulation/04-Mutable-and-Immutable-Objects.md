@@ -70,7 +70,7 @@ Although we **do not have a setter**, the list is still **mutable**.
 
 [slide hideTitle]
 
-# Imutable Fields
+# Immutable Fields
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-28-imutable-fields-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
