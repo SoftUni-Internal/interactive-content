@@ -54,8 +54,8 @@ public Person(String firstName, String lastName,
 Expand the **Person** class with the proper validation for every field:
 
 - The **Names** must be at least 3 symbols
-- The**Age** must not be zero or negative
-- The**Salary** cannot be less than 460.0 
+- The **Age** must not be less than or equal to zero
+- The **Salary** cannot be less than 460.0 
 
 Print the corresponding **message** to the end-user (see the **example** for the messages). 
 
@@ -65,11 +65,11 @@ Do not use `System.out.println()` in the **Person** class.
 # Example
 | **Input** | **Output** |
 | --- | --- |
-| 5 | Age cannot be zero or negative integer |
-| George Air -6 2200 | First name cannot be less than 3 symbols |
-| Peter Pan 57 3333 | Last name cannot be less than 3 symbols |
-| Lee Parker 27 600 | Salary cannot be less than 460 euro |
-| Jr Johnson 44 666.66 | Lee Parker gets 660.0 euro |
+| 5 | A person's age cannot be zero or negative integer |
+| George Air -6 2200 | A person's first name cannot be less than 3 symbols |
+| Jr Johnson 44 666.66 | A person's last name cannot be less than 3 symbols |
+| Lee Parker 27 600 | A person's salary cannot be less than 460 euro |
+| Peter P 57 3333 | Lee Parker received 660.0 euro |
 | Bob Manner 35 300 |  |
 | 20 |  |
 
