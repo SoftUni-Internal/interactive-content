@@ -104,13 +104,19 @@ Scrieți o funcție care tipărește toate elementele în poziții, dublate și 
 |oddNumbers([10, 15, 20, 25]) | 50 30 |
 |oddNumbers([3, 0, 10, 4, 7, 3]) | 6 8 0 |
 
-# Sfaturi
-
-- Numărarea în matrice începe de la '0'
-- De exemplu: primim 10, 15, 20, 25
-- Elementele aflate în poziții impare sunt 15 (index 1) și 25 (index 3)
-- Trebuie să luăm aceste două elemente și să le înmulțim \* 2
-- În cele din urmă, le imprimăm pe consolă în **ordine inversă**
+[hints]
+[hint]
+Numărarea în matrice începe de la **0**.
+De exemplu: primim `10, 15, 20, 25`
+Elementele aflate în poziții impare sunt **15** (index **1**) și **25** (index **3**).
+[/hint] 
+[hint]
+Trebuie să luăm aceste două elemente și să le **înmulțim** \* **2**.
+[/hint] 
+[hint]
+În cele din urmă, le imprimăm pe consolă în **ordine inversă**.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [tests]
@@ -292,9 +298,9 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Scrieți o funcție care sortează o matrice în ordine crescătoare și imprimă primele două numere.
+Scrieți o funcție care **sortează** o **matrice** în ordine crescătoare și **imprimă** primele **două** numere.
 
-Intrările este o matrice de numere.
+**Intrările** este o **matrice** de **numere**.
 
 ## Exemple
 |**Intrare**|**Ieșire** |
@@ -303,18 +309,24 @@ Intrările este o matrice de numere.
 |smallestTwoNumbers([3, 0, 10, 4, 7, 3]) | 0 3 |
 
 
-## Sfaturi
-- Putem folosi următoarea funcție pentru a sorta elementele matricei: 
+[hints]
+[hint]
+Putem folosi următoarea funcție pentru a sorta elementele matricei: 
 
- ```js
+```js
 let sortedInAscending = arr.sort((a, b) => {
   return a - b
 });
 ```
+[/hint] 
+[hint]
+Ulterior, primele două elemente din matrice sunt **cele mai mici**.
+[/hint] 
+[hint]
+Putem folosi metoda `slice()` pentru a lua primele două elemente.
+[/hint] 
+[/hints] 
 
-- Ulterior, primele două elemente din matrice sunt cele mai mici
-
-- Putem folosi metoda `slice()` pentru a lua primele două elemente
 
 [/task-description]
 [tests]

@@ -101,13 +101,19 @@ The **output** is **printed to the console** on a **single line**, **separated b
 |oddNumbers([10, 15, 20, 25]) | 50 30 |
 |oddNumbers([3, 0, 10, 4, 7, 3]) | 6 8 0 |
 
-# Hints
-
-- Counting in arrays starts from 0
-- For example, we receive: 10, 15, 20, 25
-- The elements at odd positions are: 15 (index 1) and 25 (index 3)
-- We need to take these two elements and multiply them \* 2
-- Finally, we print them on the console in **reversed order**
+[hints]
+[hint]
+Counting in arrays starts from **0**.
+For example, we receive: `10, 15, 20, 25`
+The elements at odd positions are: **15** (index **1**) and **25** (index **3**).
+[/hint] 
+[hint]
+We need to take these two elements and **multiply** them \* **2**.
+[/hint] 
+[hint]
+Finally, we print them on the console in **reversed order**.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [tests]
@@ -298,19 +304,23 @@ The **input** comes as an **array** of **numbers**.
 |smallestTwoNumbers([3, 0, 10, 4, 7, 3]) | 0 3 |
 
 
-# Hints
+[hints]
+[hint]
+We can use the following function to sort the elements of the array: 
 
-- We can use the following function to sort the elements of the array: 
-
- ```js
-  let sortedInAscending = arr.sort((a, b) =>{
+```js
+let sortedInAscending = arr.sort((a, b) =>{
     return a - b
-  });
- ```
-
-- Afterwards, the first two elements in the array are the smallest ones
-
-- We can use the `slice()` method to take the first two elements
+});
+```
+[/hint] 
+[hint]
+Afterwards, the first two elements in the array are the **smallest** ones.
+[/hint] 
+[hint]
+We can use the `slice()` method to take the first two elements.
+[/hint] 
+[/hints] 
 
 
 [/task-description]
