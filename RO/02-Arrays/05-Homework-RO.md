@@ -279,16 +279,46 @@ De exemplu, dacă avem 3 elemente \[**2, 10, 3**\], însumăm pe primul și al d
 | condense([5, 0, 4, 1, 2]) | 35 ||
 | condense(\[1\]) | 1 ||
 
-## Sfaturi
+[hints]
+[hint]
+Creați o buclă **while**:
 
+```js
+while (nums.length > 1) {
+  // ...
+}
+```
+[/hint] 
+[hint]
 În timp ce aveți mai multe elemente în matricea **nums**\[\], repetați următoarele:
 
-- Alocați o nouă matrice `condensed[]` de dimensiunea **nums**\.**Length**\-**1**
+- Alocați o nouă matrice `condensed[]` de dimensiunea **nums**\.**length**\-**1**
 
-- Însumați numerele din **nums**\[\] to **condensed**\[\]:
+```js
+while (nums.length > 1) {
+  let condensed = Array(nums.length - 1);
+  // ...
+}
+```
+[/hint] 
+[hint]
+Însumați numerele din **nums**\[\] to **condensed**\[\]::
   - **condensed**\[i\] = **nums**\[i\] \+ **nums**\[i\+1\]
+  - **nums**\[\] = **condensed**\[\]
 
-- **nums**\[\] = **condensed**\[\]
+```js
+while (nums.length > 1) {
+  let condensed = Array(nums.length - 1);
+  for (let i = 0; i < nums.length - 1; i++) {
+    condensed[i] = Number(nums[i]) + Number(nums[i + 1]);
+  }
+  nums = condensed;
+}
+
+console.log(nums[0]);
+```
+[/hint] 
+[/hints] 
 
 [/task-description]
 [tests]
