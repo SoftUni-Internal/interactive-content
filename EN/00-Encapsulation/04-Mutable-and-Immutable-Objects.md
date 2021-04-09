@@ -70,7 +70,7 @@ Although we **do not have a setter**, the list is still **mutable**.
 
 [slide hideTitle]
 
-# Imutable Fields
+# Immutable Fields
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-28-imutable-fields-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -134,13 +134,13 @@ for (Person player : players) {
     team.addPlayer(player);
 }
 
-System.out.println("First team have" +
-team.getFirstTeam().size() + "players");
+System.out.println("The number of players on the main team is:" + team.getFirstTeam().size());
 
-System.out.println("Reserve team have" + 
-team.getReserveTeam ().size() + "players");
+System.out.println("The number of players on the reserve team is:" + team.getReserveTeam ().size());
 ```
+
 ## It should not function the following way:
+
 ```java
 Team team = new Team (name: "Black Eagles");
 
@@ -156,8 +156,8 @@ for (Person player : players) {
 # Example
 | **Input** | **Output** |
 | --- | --- |
-| 5 | First team have 4 players  |
-| George Air 20 2200 | Reserve team have 1 players  |
+| 5 | The number of players on the main team is: 4  |
+| George Air 20 2200 | The number of players on the reserve team is: 1  |
 | Anderson Paak 57 3333 |  |
 | Lee Parker 27 600 |  |
 | Grigor Dimitrov 25 666.66 |  |
