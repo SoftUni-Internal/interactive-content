@@ -14,7 +14,7 @@ Methods are "time-savers" and help us to re-use code without re-typing it.
 
 In Java, can only be a part of a class.
 
-The following example defines a method called `increaseHP` inside a class named Car.
+The following example defines a method called `increaseHP` inside a class named **Car**.
 
 When called, this method increases the internal `horsePower` variable with a given value.
 
@@ -59,9 +59,9 @@ class Car {
 
 We have a `Car` class with a private field `horsePower`.
 
-The field has private access, we **cannot** get or modify it.
+The field has private access, so we **cannot** get or modify it.
 
-To gain access we can use "**get**" and "**set**" methods.
+To gain access, we can use "**get**" and "**set**" methods.
 
 The `getHorsePower()` method **returns** the value of the `horsePower` field.
 
@@ -69,7 +69,7 @@ The `setHorsePower()` method **sets** the value of the `horsePower` field.
 
 ## The "this" Keyword
 
-In Java, the keyword `this` is a reference to a speciffic object instace - the **object** whose method or constructor is called, not the class from which it was created. 
+In Java, the keyword `this` is a reference to a specific object instance - the **object** whose method or constructor is called, not the class from which it was created. 
 
 It is like a pointer (reference), used to access the elements (fields, methods, constructors) of our object:
 
@@ -114,7 +114,7 @@ The result should be a concise but informative representation that is easy to re
 
 It is recommended that all subclasses override this method.
 
-If you define a custom `toString()` method in your class then your method will be called, overriding the built-in one:
+If you define a custom `toString()` method in your class, then your method will be called, overriding the built-in one:
 
 ```java live no-template
 public class Car {
@@ -165,7 +165,7 @@ Keep in mind that the `equals()` method does not work correctly for object compa
 
 The `hashCode()` method returns the **integer** hash code value of the object. 
 
-The hash code is always the same if the object has not change.
+The hash code is always the same if the object has not changed.
 
 ```java
 Car car = new Car();
@@ -175,7 +175,7 @@ int hash = car.hashCode();
 System.out.println(hash); 
 ```
 
-In order to enable correct object comparison you need to use the `equals()` and `hashcode()` methods combined.
+In order to enable correct object comparison, you need to use the `equals()` and the `hashcode()` methods combined.
 
 Both of them need to be overridden to get correct results.
 
@@ -212,9 +212,9 @@ It should also include the following public methods:
 
 Use the `Car` class from the previous problem.
 
-Because all fields in the **Car** class are **private**, if you try to access the fields directly through the class you will get a **compilation error**.
+Because all fields in the **Car** class are **private**, if you try to access the fields directly through the class, you will get a **compilation error**.
 
-To solve this problem you have to use getters and setters.
+To solve this problem, you have to use getters and setters.
 
 In the **Car class**, create **getters** and **setters** for each class field.
 
