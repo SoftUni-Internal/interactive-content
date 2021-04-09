@@ -7,14 +7,14 @@
 ## In this lesson you learned:
 
 - What the **Code-First Approach** is
-  - write code, then test it
+  - testing code after it was created
 
 - **Test-Driven-Development**
   - write tests first, and implement the functionality later
 
 - **Reasons to Use Test-Driven Development**
-  - prevent some application design flaws
-  - manage complexity more easily
+  - prevents some application design flaws
+  - complexity is managed more easily
 
 ## In the next lesson you will learn:
 
