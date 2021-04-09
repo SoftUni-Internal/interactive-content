@@ -36,7 +36,7 @@ class Animal {
 }
 ```
 
-- Constructors are special methods, used to initialize objects
+- Constructors are special methods used to initialize objects
     - constructors are invoked when creating new class instances
     - they set the object's initial state
     
