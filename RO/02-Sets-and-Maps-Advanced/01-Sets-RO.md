@@ -34,9 +34,9 @@ Scopul interfeței este să **specifice existența unor metode**, cu un comporta
 - Vrei performanță rapidă și nu îți pasă de ordinea elementelor
 
 **De exemplu**, puteți utiliza un set:
-- pentru a stoca **numere întregi unice**
-- pentru a stoca **cărți la întâmplare într-un joc de cărți**
-- pentru a stoca **numere în ordine aleatorie** etc
+- Pentru a stoca **numere întregi unice**
+- Pentru a stoca **cărți la întâmplare într-un joc de cărți**
+- Pentru a stoca **numere în ordine aleatorie** etc
 
 [/slide]
 

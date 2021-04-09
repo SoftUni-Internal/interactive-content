@@ -23,12 +23,11 @@ String s = sc.nextLine();
 try {
     Integer.parseInt(s);
     System.out.printf("You entered a valid integer number %s.", s);
-
 } catch (NumberFormatException ex) {
     System.out.println("Invalid integer number!");
 } catch (NullPointerException ex) {
     System.out.println("The input is null!");
-} 
+}
 ```
 
 [/slide]
@@ -62,7 +61,6 @@ String str = "Peter";
 
 try {
     Integer.parseInt(str);
-
 } catch (Exception ex) {
     System.out.println("Cannot parse the number!");
 
