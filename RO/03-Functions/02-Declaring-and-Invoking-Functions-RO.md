@@ -5,11 +5,11 @@
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-6-7-declaring-a-function-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-O funcție este definită, utilizând cuvântul cheie `function` urmat de **numele funcției** și un set de **paranteze** pentru a păstra parametrii sau valorile care trebuie primite de funcție.
+O funcție este definită utilizând cuvântul cheie `function` urmat de **numele funcției** și un set de **paranteze** care conțin parametrii sau valorile care trebuie primite de funcție.
 
 Funcțiile pot fi declarate în două moduri:
 
-- **Declarație de funcție** (mod recomandat)
+- **Declararea funcției** (mod recomandat)
 
 ``` js
 function printText(text){
@@ -31,9 +31,9 @@ let printText = function(text){
 
 Argumentele pot fi trimise ca o listă de **argumente** separate prin virgule, în timpul apelării funcției.
 
-Argumentele primite ca **parametri** de către funcția primitoare sunt stocate în variabile locale.
+Argumentele sunt primite ca **parametri** de către funcție și sunt stocate în variabile locale.
 
-De îndată ce funcția se termină, variabila dispare
+De îndată ce funcția se termină, variabila dispare.
 ```js
 function printText(text){
   console.log(text);
@@ -49,9 +49,9 @@ function printText(text){
 
 O funcție nu este executată înainte de a fi invocată.
 
-O funcție poate fi invocată de **oriunde în domeniul**, unde este definită.
+O funcție poate fi invocată **oriunde în cadrul domeniului** în care este definită.
 
-Puteți declara o funcție astfel:
+Putem declara o funcție, iar apoi putem invoca (apela) funcția cu ajutorul numelui său:
 
 ```js live
 function hLine() {
@@ -98,24 +98,24 @@ function countDown(x) {
 
 Astfel de funcții se numesc **recursive**.
 
-Funcțiile recursive adecvate **se opresc** invocându-se atunci când se obține un **rezultat** dorit.
+Funcțiile recursive adecvate **opresc** propria invocare atunci când se obține **rezultatul** dorit.
 
-Dacă **nu există o astfel de condiție**, funcția se va numi **la nesfârșit**.
+Dacă **nu există o astfel de condiție**, funcția va fi apelată **la nesfârșit**.
 
 [/slide]
 
 [slide hideTitle]
-# Funcții cu și Fără Parametri 
+# Funcții Cu și Fără Parametri 
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-11-12-functions-with-and-without-parameters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Putem avea o funcție **cu sau fără** parametri.
 
-**Parametrii** funcției se comportă ca variabile locale din **corpul funcției.**
+**Parametrii** funcției se comportă ca variabile locale în **corpul funcției.**
 
 ## Funcții Fără Parametri 
 
-Dacă o funcție nu primește argumente, atunci când este invocată, rezultatul **este întotdeauna același**(cu excepția cazului în care citește date din exterior): 
+Dacă o funcție nu primește argumente, atunci când este invocată, rezultatul **este întotdeauna același** (cu excepția cazului în care citește date din exterior): 
 
 ``` js live
 function printHeader() {
@@ -128,9 +128,9 @@ printHeader();
 
 ## Funcții cu Parametri
 
-O funcție poate primi **orice număr și tip de argumente** atunci când este invocată:
+O funcție poate primi **orice număr și tip de argumente** atunci când este invocată.
 
-În acest exemplu trecem **doi parametri** ca argument:
+În acest exemplu transmitem **doi parametri** ca argument:
 
 ```js live
 function add(a, b) {
@@ -139,7 +139,7 @@ function add(a, b) {
 add(2, 5);
 ```
 
-În acest exemplu trecem **o matrice** ca argument:
+În acest exemplu transmitem **o matrice** ca argument:
 
 ``` js live
 function printName(nameArr) {
@@ -163,7 +163,7 @@ function multiply(a, b) {
 multiply(5, 7);
 ```
 
-Putem transmite **mai puține sau mai multe** argumente în timp ce invocăm o funcție.
+Putem transmite **mai multe sau mai puține** argumente decât este așteptat atunci când invocăm o funcție.
 
 ```js live
 function multiply(a, b) {
@@ -172,9 +172,9 @@ function multiply(a, b) {
 multiply(5); // NaN
 ```
 
-Dacă trecem mai puține argumente, restul parametrilor vor fi **nedefiniți.**
+Dacă transmitem mai puține argumente, restul parametrilor vor fi transmiși funcției ca fiind **nedefiniți.**
 
-Dacă dați mai multe argumente, atunci **argumentele suplimentare vor fi ignorate.**
+Dacă transmitem mai multe argumente, atunci **argumentele suplimentare vor fi ignorate.**
 
 [/slide]
 
@@ -205,7 +205,7 @@ function adapter(input, code) {
 
 Scrieți o funcție care primește o notă între "**2.00**" și "**6.00**" și imprimă nota corespunzătoare în cuvinte.
 
-|**Grad**|**Rezultat**|
+|**Notă**|**Rezultat**|
 | --- | --- |
 | "2.00 - 2.99" | "Fail" |
 | "3.00 - 3.49" | "Poor" |
@@ -318,7 +318,7 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Scrieți o funcție care **calculează** și returnează valoarea unui număr **ridicat la o putere dată:**
+Scrieți o funcție care **calculează** și returnează valoarea unui număr **ridicat la o putere dată.**
 
 ## Exemple
 |**Intrare**|**Ieșire** |
