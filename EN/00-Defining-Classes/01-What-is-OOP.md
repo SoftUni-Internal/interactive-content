@@ -26,7 +26,7 @@ Object-oriented programming enables programmers to think in terms of real-life e
 
 - **Faster** and **easier** to execute
 - Provides a **clear program structure**
-- Helps observe the **DRY** rule:*"Do not Repeat Yourself"*, and makes the code **easier** to **maintain, modify and debug**
+- Helps observe the "**DRY**" rule: *"Do not Repeat Yourself"*, and makes the code **easier** to **maintain, modify and debug**
 - Makes it **possible** to create completely **reusable** applications with **less code** and **shorter development time**
 
 [/slide]
@@ -61,6 +61,6 @@ Object-oriented programming enables programmers to think in terms of real-life e
 
 - Learn to find solutions
     - software development includes **researching and learning** new things each day
-    - by doing so you will simply learn how to study coding and find answers by yourself
+    - by doing so, you will simply learn how to study coding and find answers by yourself
     - developers are constantly learning new technologies - tools to stay competitive in the market
 [/slide]
