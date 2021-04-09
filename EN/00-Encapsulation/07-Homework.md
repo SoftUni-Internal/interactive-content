@@ -1002,9 +1002,9 @@ Your task is to encapsulate or hide anything that should not be viewed or modifi
 |  |
 | +Chicken(String, int) |
 | -setName(String) : void |
-| -setAge (int): void |
-| +productPerDay (): double |
-| +toString(): Override |
+| -setAge(int) : void |
+| +productPerDay() : double |
+| +toString() : Override |
 | -calculateProductPerDay() : double |
 
 A chicken lives for **15 years**. 
@@ -1014,7 +1014,7 @@ Each chicken has a  **name** that must be at least **1 symbol** long.
 Chickens lay eggs at the following rate:
 - The first 6 years of their life, they lay 2 eggs per day [0 - 5]
 - The next 6 years - 1 egg per day [6 - 11]
-- After that, they produce 0.75 eggs per day
+- After that, they lay 0.75 eggs per day
 
 ## Step 1. Encapsulate Fields
 Fields should be **private**. 
@@ -1033,13 +1033,13 @@ The Chicken constructor modifies the fields directly, which is unwanted when the
 Modify the constructor to fix this issue.
 
 ## Step 3. Validate Data Properly
-Validate the chicken’s **name** (it cannot be **null**, **empty**, or **whitespace**). 
+Validate the chicken's **name** (it cannot be **null**, **empty**, or **whitespace**). 
 
-In case an **invalid name** is entered, print out the exception message "**Name cannot be empty.**"
+In case an **invalid name** is entered, print out the exception message "**A chicken's name cannot be empty.**"
 
 Validate the **age** value - the minimum and maximum age are provided.
 
-In an **invalid age** value is entered, print the exception message: "**Age should be between 0 and 15.**"
+In an **invalid age** value is entered, print the exception message: "**A chicken's age can only be a number between 0 and 15. **"
 
 ## Step 4. Hide the Internal Logic
 If a method is intended to be used only by descendant classes or to perform some action internally, there is no use in keeping them **public**.
@@ -1059,19 +1059,19 @@ Make sure you have a `public Main` class with a `public static void main` method
 ## Example 1
 | **Input** | **Output** |
 | --- | --- |
-| Lee | Chicken Lee (age 10) can produce 1.00 eggs per day. |
+| Sasha | Sasha (10) can lay 1.00 eggs per day. |
 | 10 |  |
 
 ## Example 2
 | **Input** | **Output** |
 | --- | --- |
-| Lee | Age should be between 0 and 15. |
+| Sasha | A chicken's age can only be a number between 0 and 15. |
 | 17 |  |
 
 ## Example 3
 | **Input** | **Output** |
 | --- | --- |
-| George | Chicken George (age 6) can produce 1.00 eggs per day. |
+| Maya | Maya (6) can lay 1.00 eggs per day. |
 | 6 |  |
 
 [/task-description]
