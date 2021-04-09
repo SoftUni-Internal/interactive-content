@@ -101,12 +101,12 @@ The state of the array after the fourth command: `87 7383 321 -123 42 290 -2`
 [hint]
 * "**multiply 2(321) 1(7383) = 2369943**":
 
-The state of the after the fifth command: `87 7383 2369943 -123 42 90 -2`
+The state of the array after the fifth command: `87 7383 2369943 -123 42 90 -2`
 [/hint] 
 [hint]
 * "**decrease**":
 
-The state of the after the sixth command: `86 7383 2369942 -124 41 89 -3`
+The state of the array after the sixth command: `86 7383 2369942 -124 41 89 -3`
 [/hint] 
 [/hints] 
 
