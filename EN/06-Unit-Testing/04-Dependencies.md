@@ -27,7 +27,7 @@ In this class, our `Bank` depends on `AccountManager`.
 
 If the dependency introduces **bugs** in our test from the outside, they will be harder to detect.
 
-Therefore, it is a good practice to use the **Dependency Inversion Principle** in our tests.
+This is why it is a good practice to use the **Dependency Inversion Principle** in our tests.
 
 [/slide]
 
@@ -39,7 +39,7 @@ Therefore, it is a good practice to use the **Dependency Inversion Principle** i
 
 When we use **abstraction** and **dependency injection**,  testing our code becomes less complicated.
 
-The following graphic and code help illustrate this concept. 
+The following examples illustrate this concept:
 
 [image assetsSrc="Unit-Testing-Example(9).png" /]
 
@@ -59,7 +59,7 @@ public class Bank {​
 
 As our class is no longer dependent on the `AccountManager` concrete class, but on an interface, we can create a mock object.
 
-That will ensure that we will not bring bugs from the outside.
+That will ensure that we do not import bugs from the outside.
 
 ```java
 @Test​
@@ -105,7 +105,7 @@ They are **not the same** as the production ones.
 
 A great example of this is working with an implementation of a **repository**.
 
-Our repository will use a collection to **store data**, but it will not engage any **database**.
+Our repository will use a collection to **store data**, but it will not engage a **database**.
 
 That will allow us to test easier, without starting up a database and performing time-consuming requests.
 
@@ -137,13 +137,13 @@ public class FakeRepository implements AccountRepository {
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-39-40-41-42-43-problem-and-solution-fake-axe-and-dummy-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 # Description
-Test if hero gains XP when a target dies.
+Test if the hero gains XP when a target dies.
 
 To do this, you need to:
 - Make the `Hero` class testable (use dependency injection)
 - Introduce interfaces for `Axe` and `Dummy`:
-  - Interface Weapon 
-  - Interface Target 
+  - Interface: Weapon 
+  - Interface: Target 
 
 Create а fake `Weapon` and а fake `Dummy` for the test.
 
@@ -203,7 +203,7 @@ public Hero(String name, Weapon weapon){
 }
 ```
 
-Create a `HeroTests` class and test gaining XP functionality by faking the `Weapon` and `Target` classes.
+Create a `HeroTests` class and test gaining XP by faking the `Weapon` and `Target` classes.
 
 ```java
 @Test
@@ -235,13 +235,13 @@ public void attackGainsExperienceIfTargetIsDead(){
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-45-mocking-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Mocking objects** simulate the behavior of real objects.
+**Mocking objects** simulates the behavior of real objects.
 
 An **example** could be a function that calls an e-mail sending service.
 
 It is pointless and ineffective to send an e-mail every time we run a test.
 
-The easiest thing we can do is to verify that our **sending** service was called.
+The easiest thing is to verify that our **sending** service was called.
 
 A similar case is presented in the following example:
 
@@ -294,11 +294,11 @@ Paste the following code into the `pom.xml` file:
 
 Include **Mockito** in the project dependencies, then:
 - Mock fakes from the previous problem
-- Implement **Hero Inventory**, holding unequipped weapons
-  - method - `Iterable<Weapon> getInventory()`
-- Implement Target giving a random weapon upon death
-  - field - `private List<Weapon> possibleLoot`
-- Test Hero killing a target getting loot in his inventory
+- Implement a **Hero Inventory**, holding unequipped weapons
+  - a method - `Iterable<Weapon> getInventory()`
+- Implement a Target propping a random weapon upon death
+  - a field - `private List<Weapon> possibleLoot`
+- Test the Hero killing a target and getting loot in his inventory
 
 ## Hints
 Locate `pom.xml`:
@@ -316,7 +316,7 @@ Add the **Mockito** dependency:
 </dependency>
 ```
 
-Go to `HeroTests` and refactor the code, making use of **Mockito**:
+Go to `HeroTests` and refactor the code, using **Mockito**:
 
 ```java
 @Test
@@ -334,7 +334,7 @@ public void attackGainsExperienceIfTargetIsDead(){
 }
 ```
 
-- Implement a hero inventory and `Target` dropping loot functionalities
+- Implement a hero inventory and a `Target` dropping loot
 
-- Test `Hero` getting loot upon killing a `Target`
+- Test whether the `Hero` gets loot upon killing a `Target`
 [/slide]
