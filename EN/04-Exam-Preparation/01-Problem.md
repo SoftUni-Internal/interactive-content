@@ -104,7 +104,7 @@ The state of the array after the fourth command: `87 7383 321 -123 42 290 -2`
 The state of the after the fifth command: `87 7383 2369943 -123 42 90 -2`
 [/hint] 
 [hint]
-* "**decrease - all - 1**":
+* "**decrease**":
 
 The state of the after the sixth command: `86 7383 2369942 -124 41 89 -3`
 [/hint] 
