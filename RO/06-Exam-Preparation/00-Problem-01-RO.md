@@ -102,7 +102,7 @@ Starea matricei după a patra comandă: `87 7383 321 -123 42 290 -2`
 Starea comenzii după a cincea: `87 7383 2369943 -123 42 90 -2`
 [/hint] 
 [hint]
-* "**decrease - all - 1**":
+* "**decrease**":
 
 Starea comenzii după a șasea: `86 7383 2369942 -124 41 89 -3`
 [/hint] 
