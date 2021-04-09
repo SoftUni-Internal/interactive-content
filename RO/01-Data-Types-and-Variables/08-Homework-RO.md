@@ -569,15 +569,34 @@ Creați un program care primește un **număr** **n** și tipărește toate trip
 ||bba|
 ||bbb|
 
-## Sfaturi
+[hints]
+[hint]
+Efectuați 3 bucle imbricate de la 0 la n. 
 
-Efectuați 3 bucle imbricate de la 0 la n.
- 
+```js
+for (let num1 = 0; num1 < n; num1++) {
+  for (let num2 = 0; num2 < n; num2++) {
+    for (let num3 = 0; num3 < n; num3++) {
+      // ...
+    }
+  }
+}
+```
+[/hint] 
+[hint]
 Pentru fiecare număr "**num**", tipăriți litera latină corespunzătoare după cum urmează:
 
-`let letter = String.FromCharCode(97 + num)`
-
-Funcția `String.fromCharCode ()` obține valoarea **în zecimal** și o transformă într-un **caracter** din **tabelul ASCII.**
+```js
+console.log(
+  String.fromCharCode(97 + num1) +
+  String.fromCharCode(97 + num2) +
+  String.fromCharCode(97 + num3));
+```
+[/hint] 
+[hint]
+Funcția `String.fromCharCode()` obține valoarea **în zecimal** și o transformă într-un **caracter** din **tabelul ASCII.**
+[/hint] 
+[/hints]
 
 [/task-description]
 [tests]
