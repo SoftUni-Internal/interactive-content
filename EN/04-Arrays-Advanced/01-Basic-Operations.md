@@ -304,15 +304,16 @@ The **output** has to be **printed to the console**, each element on a **new
 ## Example One
 | **Input** | **Output** |
 | --- | --- |
-|negativePositive(['7', '-2', '8', '9']) | \-2 |
+|negativePositive([7, -2, 8, 9]) | \-2 |
 | | 7 |
 | | 8 |
 | | 9 |
 
+
 ## Example Two
 | **Input** | **Output** |
 | --- | --- |
-|negativePositive(['3', '-2', '0', '-1'])  | \-1 |
+|negativePositive([3, -2, 0, -1])  | \-1 |
 | | \-2 |
 | | 3 |
 | | 0 |
@@ -330,7 +331,7 @@ Use `push()` to add an element at the **last** position.
 [tests]
 [test open]
 [input]
-negativePositive(['\-2', '8', '7', '99', '100', '11'])
+negativePositive([\-2, 8, 7, 99, 100, 11])
 [/input]
 [output]
 \-2
@@ -343,7 +344,7 @@ negativePositive(['\-2', '8', '7', '99', '100', '11'])
 [/test]
 [test open]
 [input]
-negativePositive(['3', '\-2', '0', '\-1'])
+negativePositive([3, \-2, 0, \-1])
 [/input]
 [output]
 \-1
@@ -354,7 +355,7 @@ negativePositive(['3', '\-2', '0', '\-1'])
 [/test]
 [test]
 [input]
-negativePositive(['\-2', '\-11', '7', '8', '100', '\-11', '\-11', '11', '\-2'])
+negativePositive([\-2, \-11, 7, 8, 100, \-11, \-11, 11, \-2])
 [/input]
 [output]
 \-2
@@ -370,7 +371,7 @@ negativePositive(['\-2', '\-11', '7', '8', '100', '\-11', '\-11', '11', '\-2'])
 [/test]
 [test]
 [input]
-negativePositive(['\-2', '\-11', '7', '8', '0', '\-13', '0', '\-25', '0'])
+negativePositive([\-2, \-11, 7, 8, 0, \-13, 0, \-25, 0])
 [/input]
 [output]
 \-25
@@ -386,7 +387,7 @@ negativePositive(['\-2', '\-11', '7', '8', '0', '\-13', '0', '\-25', '0'])
 [/test]
 [test]
 [input]
-negativePositive(['2', '3', '4', '5', '6', '\-7', '\-8'])
+negativePositive([2, 3, 4, 5, 6, \-7, \-8])
 [/input]
 [output]
 \-8
@@ -400,7 +401,7 @@ negativePositive(['2', '3', '4', '5', '6', '\-7', '\-8'])
 [/test]
 [test]
 [input]
-negativePositive(['\-2', '3', '0', '5', '\-6', '0', '8'])
+negativePositive([\-2, 3, 0, 5, \-6, 0, 8])
 [/input]
 [output]
 \-6
