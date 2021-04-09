@@ -14,7 +14,7 @@
 - Privire de ansamblu al tuturor operațiilor stivelor
 
 **2. Queues - primul intrat iese primul (FIFO)**
-- funcționalitatea cozii
+- Funcționalitatea cozii
 - Implementarea cozilor folosind ArrayDeque
 - Privire de ansamblu al tuturor operațiilor cozilor
 

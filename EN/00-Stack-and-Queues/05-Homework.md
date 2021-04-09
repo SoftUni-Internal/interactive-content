@@ -47,7 +47,7 @@ Add the input numbers to a stack and **pop** them.
 21 13 8 5 3 1 1
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 1
 [/input]
@@ -148,7 +148,7 @@ true
 13
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 3 3 90
 90 90 90
@@ -1476,18 +1476,26 @@ If you want to figure out how to skip those unnecessary calculations, you can le
 [tests]
 [test open]
 [input]
-1
+5
 [/input]
 [output]
-1
+8
 [/output]
 [/test]
-[test]
+[test open]
 [input]
-2
+10
 [/input]
 [output]
-2
+89
+[/output]
+[/test]
+[test open]
+[input]
+21
+[/input]
+[output]
+17711
 [/output]
 [/test]
 [test]

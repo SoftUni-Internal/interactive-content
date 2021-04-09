@@ -5,13 +5,13 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-10-11-Stack-Functionality-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-O stivă este o structură de date în care adăugați elemente în**partea de sus**a stivei și eliminați din nou elementele din**partea de sus**.
-Aceasta este denumită și principiul ”Ultimul în primul loc” -**LIFO**.
+O stivă este o structură de date în care adăugați elemente în **partea de sus** a stivei și eliminați din nou elementele din**partea de sus**.
+Aceasta este denumită și principiul ”Ultimul în primul loc” - **LIFO**.
 
 - Stivele oferă următoarele funcționalități:
-     - Împingerea unui element în partea de sus a stivei
-     - Element care apare din partea de sus a stivei
-     - Obținerea (**Arunca o Privire**) a elementului cel mai de sus fără eliminarea acestuia
+     - împingerea unui element în partea de sus a stivei
+     - element care apare din partea de sus a stivei
+     - obținerea (**Arunca o Privire**) a elementului cel mai de sus fără eliminarea acestuia
 
 [image assetsSrc="Java-Advanced-Stack-and-Queues-3.png" /]
 
@@ -113,7 +113,7 @@ System.out.println(stackOfCars.contains("BMW M3"));
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Browser History
+# Problemă cu Soluție: Browser History
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-15-solution-Browser-History-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
