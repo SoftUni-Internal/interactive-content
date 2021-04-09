@@ -12,7 +12,7 @@
 - Writing tests for every functionality of our project
 
 **2. Test-Driven Development**
-- What test-driven development is
+- What is test-driven development
 
 **3. Reasons to Use Test-Driven Development**
 - The benefits of developing tests before writing code
