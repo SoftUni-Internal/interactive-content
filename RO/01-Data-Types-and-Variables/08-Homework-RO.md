@@ -149,7 +149,7 @@ Ca **intrare** veți primi **3 parametri**:
 - **Prețul** pentru **1 litru de motorină**
 
 Ca rezultat, ar trebui să imprimați acest mesaj:
-"**Needed money for that trip is** \{**neededMoney**\} **dollars.**
+"**Needed money for that trip is** \{**neededMoney**\} **dollars.**"
 
 ## Exemplu
    |**Intrare**|**Ieșire**|
@@ -1321,10 +1321,10 @@ C B A
 [/test]
 [test]
 [input]
-reversChars('1','L','\&')
+reversChars('10','D','\&')
 [/input]
 [output]
-\& L 1
+\& D 10
 [/output]
 [/test]
 [/tests]

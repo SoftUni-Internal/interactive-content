@@ -1329,10 +1329,10 @@ C B A
 [/test]
 [test]
 [input]
-reversChars('1','L','\&')
+reversChars('10','D','\&')
 [/input]
 [output]
-\& L 1
+\& D 10
 [/output]
 [/test]
 [/tests]
