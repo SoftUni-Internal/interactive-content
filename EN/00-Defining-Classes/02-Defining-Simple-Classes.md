@@ -25,9 +25,9 @@ public class Car {
 
 The car has **attributes**, such as **weight** and **color**, and what could be described as **methods** in coding terms - such as **speed up** and **brake**.
 
-A **class** is a **template** that describes the **data** and **behavior** associated with instances that can be created from that class.
+A **class** is a **template** that describes the **data** and the **behavior** associated with instances that can be created from that class.
 
-When you instantiate a class you create an object that holds the same attributes and behavior as all other instances of this same class. 
+When you instantiate a class, you create an object that holds the same attributes and behavior as all other instances of this same class. 
 
 The data (**attributes**) associated with a class or an object is stored in **variables**. 
 
@@ -79,7 +79,7 @@ The required members are:
 - Class name
 - Class body - placed in: `{}`
 
-Some optional but nvertheless - frequently used members are:
+Some optional but nevertheless - frequently used members are:
 
 - Class fields
 - Constructor
@@ -173,7 +173,7 @@ int horsePower = 0;
 | Class | Object |
 | --- | --- |
 | A blueprint or template from which objects are created. | An instance of a class. |
-| A group of similar objects. | A real-world entity such as a pen, laptop, mobile, bed, keyboard, mouse, chair, etc. |
+| A group of similar objects. | A real-world entity such as a pen, laptop, mobile phone, bed, keyboard, mouse, chair, etc. |
 | A logical entity. | A physical entity. |
 | Declared using the `class` keyword e.g. class `Car{}` | Created mainly through the `new` keyword -  e.g. `Car firstCar = new Car();` |
 | Declared **once**. | Produced as **many times** as required. | 
