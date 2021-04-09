@@ -55,10 +55,29 @@ Dacă obiectul există deja, puteți să-i schimbați poziția și să îl pune�
 ## Ieșire
 După ce primiți "**Craft!**", Imprimați toate articolele din inventarul dvs., separate prin,o virgulă și un spațiu.
 
-## Exemplu
+## Exemplul Unu
 |**Intrare**|**Ieșire** |
 | --- | --- |
 |inventory(['Iron, Wood, Sword', 'Collect - Gold', 'Drop - Wood', 'Craft!'])| Iron, Sword, Gold |
+
+[hints]
+[hint]
+Split the commands and items for each command by the hyphen, surrounded by spaces: **" - "**
+[/hint] 
+[hint]
+Create a condition that checks if the items' string contains a colon (**":"**), and splits it.
+[/hint] 
+[hint]
+Loop through each command/item and modify the inventory accordingly.
+[/hint] 
+[hint]
+At the end, print the inventory to the console using the `.join(separator)` method.
+[/hint] 
+[/hints] 
+
+## Exemplul Doi
+|**Intrare**|**Ieșire** |
+| --- | --- |
 |inventory(['Iron, Sword', 'Drop - Bronze', 'Combine Items - Sword:Bow', 'Renew - Iron', 'Craft!'])| Sword, Bow, Iron|
 
 [/task-description]
