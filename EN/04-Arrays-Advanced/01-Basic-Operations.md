@@ -317,12 +317,14 @@ The **output** has to be **printed to the console**, each element on a **new
 | | 3 |
 | | 0 |
 
-## Hints
-
-- Use `unshift()` to add an element at the **first** position
-
-- Use `push()` to add an element at the **last** position
-
+[hints]
+[hint]
+Use `unshift()` to add an element at the **first** position.
+[/hint] 
+[hint]
+Use `push()` to add an element at the **last** position.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [tests]

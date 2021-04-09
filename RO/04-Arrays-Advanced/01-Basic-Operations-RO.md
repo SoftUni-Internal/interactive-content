@@ -311,12 +311,14 @@ Adăugați fiecare element negativ la început și fiecare element pozitiv (sau 
 | | 3 |
 | | 0 |
 
-## Sfaturi
-
-- Utilizați `unshift()` pentru a adăuga un element pe prima poziție
-
-- Folosiți `push()` pentru a adăuga un element pe ultima poziție
-
+[hints]
+[hint]
+Utilizați `unshift()` pentru a adăuga un element pe prima poziție.
+[/hint] 
+[hint]
+Folosiți `push()` pentru a adăuga un element pe ultima poziție.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [tests]
