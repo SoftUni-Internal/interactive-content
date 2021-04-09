@@ -16,7 +16,7 @@ Only the methods returning its surface, lateral surface and volume should be acc
 You can find the necessary formulas [here](http://www.mathwords.com/r/rectangular_parallelepiped.htm).
 
 ## Input
-On the first three lines, you will get the figure's length, width, and height. 
+On the first three lines, you will get the length, width and height of the figure. 
 
 On the next three lines, print:
 - the **surface** area
@@ -36,13 +36,13 @@ Make a private setter that performs data validation internally.
 | -width: double |
 | -height: double |
 |  |
-| +Box (double length, double width, double height) |
-| -setLength(double): void |
-| -setWidth(double): void |
-| -setHeight(double): void |
-| +calculateSurfaceArea (): double |
-| +calculateLateralSurfaceArea (): double |
-| +calculateVolume (): double |
+| +Box(double length, double width, double height) |
+| -setLength(double) : void |
+| -setWidth(double) : void |
+| -setHeight(double) : void |
+| +calculateSurface() : double |
+| +calculateLateralSurface() : double |
+| +calculateVolume() : double |
 
 
 # Examples
@@ -57,15 +57,15 @@ Make a private setter that performs data validation internally.
 ## Example 2
 | **Input** | **Output** |
 | --- | --- |
-| 2 | Surface Area - 52.00 |
-| 3 | Lateral Surface Area - 40.00 |
+| 2 | Surface - 52.00 |
+| 3 | Lateral Surface - 40.00 |
 | 4 | Volume – 24.00 |
 
 ## Example 3
 | **Input** | **Output** |
 | --- | --- |
-| 1.3 | Surface Area - 30.20 |
-| 1 | Lateral Surface Area - 27.60 |
+| 1.3 | Surface - 30.20 |
+| 1 | Lateral Surface - 27.60 |
 | 6 | Volume - 7.80 |
 
 [/task-description]
@@ -284,8 +284,8 @@ public class T05TestAllMethodsExists {
     private static final Map<String, String[]> methodsInClass =
             new HashMap<String, String[]>() {{
                 put("Box", new String[]{
-                        "calculateSurfaceArea",
-                        "calculateLateralSurfaceArea",
+                        "calculateSurface",
+                        "calculateLateralSurface",
                         "calculateVolume",
                         "setLength",
                         "setWidth",
@@ -294,8 +294,8 @@ public class T05TestAllMethodsExists {
             }};
 
     private static final HashMap<String, Class> methodReturnTypes = new HashMap<String, Class>() {{
-        put("calculateSurfaceArea", double.class);
-        put("calculateLateralSurfaceArea", double.class);
+        put("calculateSurface", double.class);
+        put("calculateLateralSurface", double.class);
         put("calculateVolume", double.class);
         put("setLength", void.class);
         put("setWidth", void.class);
@@ -303,8 +303,8 @@ public class T05TestAllMethodsExists {
     }};
 
     private static final HashMap<String, Class[]> methodParameters = new HashMap<String, Class[]>() {{
-        put("calculateSurfaceArea", new Class[]{});
-        put("calculateLateralSurfaceArea", new Class[]{});
+        put("calculateSurface", new Class[]{});
+        put("calculateLateralSurface", new Class[]{});
         put("calculateVolume", new Class[]{});
         put("setLength", new Class[]{double.class});
         put("setWidth", new Class[]{double.class});
@@ -362,7 +362,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 
-public class T06TestCalculateSurfaceArea {
+public class T06TestCalculateSurface {
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
     private static final String METHOD_RETURN_TYPE_ERROR = "Method '%s' in class '%s' should have return type '%s'";
     private static final String WRONG_RESULT = "Wrong result from method %s";
@@ -374,15 +374,15 @@ public class T06TestCalculateSurfaceArea {
 
 
     private static final String[] methodNames = new String[]{
-            "calculateSurfaceArea"
+            "calculateSurface"
     };
 
     private static final HashMap<String, Class> methodReturnTypes = new HashMap<String, Class>() {{
-        put("calculateSurfaceArea", double.class);
+        put("calculateSurface", double.class);
     }};
 
     private static final HashMap<String, Class[]> methodParameters = new HashMap<String, Class[]>() {{
-        put("calculateSurfaceArea", new Class[]{});
+        put("calculateSurface", new Class[]{});
     }};
 
 
@@ -417,7 +417,7 @@ public class T06TestCalculateSurfaceArea {
     }
 
 
-    private boolean correctCalculateSurface(Method calculateSurfaceArea, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
+    private boolean correctCalculateSurface(Method calculateSurface, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
 
         Constructor constructor = cl.getDeclaredConstructor(
                 double.class, double.class, double.class);
@@ -425,7 +425,7 @@ public class T06TestCalculateSurfaceArea {
         Object box = constructor
                 .newInstance(BOX_LENGTH, BOX_WIDTH, BOX_HEIGHT);
 
-        double result = (double) calculateSurfaceArea.invoke(box);
+        double result = (double) calculateSurface.invoke(box);
 
         double expectedResult = (2 * BOX_LENGTH * BOX_WIDTH) +
                 (2 * BOX_LENGTH * BOX_HEIGHT) + (2 * BOX_WIDTH * BOX_HEIGHT);
@@ -455,7 +455,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 
-public class T07CalculateLateralSurfaceArea {
+public class T07CalculateLateralSurface {
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
     private static final String METHOD_RETURN_TYPE_ERROR = "Method '%s' in class '%s' should have return type '%s'";
     private static final String WRONG_RESULT = "Wrong result from method %s";
@@ -467,15 +467,15 @@ public class T07CalculateLateralSurfaceArea {
 
 
     private static final String[] methodNames = new String[]{
-            "calculateLateralSurfaceArea"
+            "calculateLateralSurface"
     };
 
     private static final HashMap<String, Class> methodReturnTypes = new HashMap<String, Class>() {{
-        put("calculateLateralSurfaceArea", double.class);
+        put("calculateLateralSurface", double.class);
     }};
 
     private static final HashMap<String, Class[]> methodParameters = new HashMap<String, Class[]>() {{
-        put("calculateLateralSurfaceArea", new Class[]{});
+        put("calculateLateralSurface", new Class[]{});
     }};
 
 
@@ -510,7 +510,7 @@ public class T07CalculateLateralSurfaceArea {
     }
 
 
-    private boolean correctCalculateSurface(Method calculateSurfaceArea, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
+    private boolean correctCalculateSurface(Method calculateSurface, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
 
         Constructor constructor = cl.getDeclaredConstructor(
                 double.class, double.class, double.class);
@@ -518,7 +518,7 @@ public class T07CalculateLateralSurfaceArea {
         Object box = constructor
                 .newInstance(BOX_LENGTH, BOX_WIDTH, BOX_HEIGHT);
 
-        double result = (double) calculateSurfaceArea.invoke(box);
+        double result = (double) calculateSurface.invoke(box);
 
         double expectedResult = (2 * BOX_LENGTH * BOX_HEIGHT) +
                 (2 * BOX_WIDTH * BOX_HEIGHT);
@@ -603,7 +603,7 @@ public class T08TestCalculateVolume {
     }
 
 
-    private boolean correctCalculateSurface(Method calculateSurfaceArea, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
+    private boolean correctCalculateSurface(Method calculateSurface, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
 
         Constructor constructor = cl.getDeclaredConstructor(
                 double.class, double.class, double.class);
@@ -611,7 +611,7 @@ public class T08TestCalculateVolume {
         Object box = constructor
                 .newInstance(BOX_LENGTH, BOX_WIDTH, BOX_HEIGHT);
 
-        double result = (double) calculateSurfaceArea.invoke(box);
+        double result = (double) calculateSurface.invoke(box);
 
         double expectedResult = BOX_LENGTH * BOX_WIDTH * BOX_HEIGHT;
 
@@ -4218,20 +4218,20 @@ Everything else should be **hidden**.
 | **Player** | 
 | --- |
 | -name: String |
-| -endurance:  int |
-| -sprint:  int |
+| -endurance: int |
+| -sprint: int |
 | -dribble: int   |
 | -passing: int |
 | -shooting: int  |
 |  |
-| +Player (String, int, int, int, int, int) |
+| +Player(String, int, int, int, int, int) |
 | -setName(String) : void |
 | +getName(): String |
-| -setEndurance (int) : void |
-| -setSprint (int) : void |
-| -setDribble (int) : void |
-| -setPassing (int) : void |
-| -setShooting (int) : void |
+| -setEndurance(int) : void |
+| -setSprint(int) : void |
+| -setDribble(int) : void |
+| -setPassing(int) : void |
+| -setShooting(int) : void |
 | +overallSkillLevel() : double |
 
 A **team** should expose a **name**, a **rating** (calculated by the average skill level of all players in the team), and **methods** for **adding** and **removing** players.
