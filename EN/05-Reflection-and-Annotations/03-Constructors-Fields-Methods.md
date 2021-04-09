@@ -186,11 +186,11 @@ Then prepare an algorithm that will recognize, which methods are **getters** and
 
 Sort each collection **alphabetically** by methods names. 
 
-Print to console each **getter** on a new line in the format:
-- "\{**name**\} **will return class** \{**Return Type**\}"
+Print to the console each **getter** on a new line in the format:
+- "\{**name**\} **will return the class** \{**Return Type**\}"
 
 Then print all setters in the format:
-- "\{**name**\} **and will set field of class** \{**Parameter Type**\}"
+- "\{**name**\} **will set a field of the class** \{**Parameter Type**\}"
 
 **Do this without changing anything in "Reflection.java".**
 
@@ -205,14 +205,14 @@ Blank Test
 [/input]
 [output]
 ```
-getEmail will return class java.lang.String
-getName will return class java.lang.String
-getWebAddress will return class java.lang.String
-getZip will return class int
-setEmail and will set field of class java.lang.String
-setName and will set field of class java.lang.String
-setWebAddress and will set field of class java.lang.String
-setZip and will set field of class int
+getEmail will return the class java.lang.String
+getName will return the class java.lang.String
+getWebAddress will return the class java.lang.String
+getZip will return the class int
+setEmail will set a field of the class java.lang.String
+setName will set a field of the class java.lang.String
+setWebAddress will set a field of the class java.lang.String
+setZip will set a field of the class int
 ```
 [/output]
 [/test]
