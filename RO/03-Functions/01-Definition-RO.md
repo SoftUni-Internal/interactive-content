@@ -20,9 +20,9 @@ printStars(4)
 
 O funcție este un **bloc de cod care este** executat numai atunci când este apelat.
 
-Datele pot fi **transmise** funcțiilor ca **parametrii**.
+Datele pot fi **transmise** funcțiilor ca **parametri**.
 
-Funcțiile pot **returna și date**, ca **rezultatul lor**.
+Funcțiile pot **returna și date** ca **rezultat**.
 [/slide]
 
 [slide hideTitle]
@@ -30,10 +30,10 @@ Funcțiile pot **returna și date**, ca **rezultatul lor**.
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-5-why-use-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Motivele pentru care trebuie folosite funcțiile sunt:
-- Împart problemele mari **în bucăți mici**
+- Împart problemele mari **în fragmente mici**
 - **O mai bună organizare** a codului programului
-- Îmbunătățește  **lizibilitatea** codului
-- Îmbunătățește  **înțelegerea** codului
-- Îmbunătățește codul **mentenabilitatea** codului
+- Îmbunătățesc **lizibilitatea** codului
+- Îmbunătățesc **înțelegerea** codului
+- Îmbunătățesc **mentenabilitatea** codului
 - Codul poate fi **reutilizat**, folosind funcțiile existente de mai multe ori
 [/slide]
