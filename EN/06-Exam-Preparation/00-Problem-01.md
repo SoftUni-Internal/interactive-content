@@ -71,33 +71,40 @@ The final form of the array should be printed out to the console, with each of i
 | --- | --- |
 |arrayModifier(['23 -2 321 87 42 90 -123', 'swap 1 3','swap 3 6','swap 1 0','multiply 1 2','multiply 2 1','decrease','end'])| 86, 7382, 2369942, -124, 41, 89, -3|
 
-**Comments**
+[hints]
+[hint]
+The initial state of the array is: `23 -2 321 87 42 90 -123`
 
-The initial state of the array is: "23 -2 321 87 42 90 -123"
+* "**swap 1(-2)" and "3(87)**":
 
-* "**swap 1(-2)" and "3(87)**"
+The state of the array after the first command: `23 87 321 -2 42 90 -123`
+[/hint] 
+[hint]
+* "**swap 3(-2)" and "6(-123)**":
 
-The state of the array after the first command: "23 87 321 -2 42 90 -123"
+The state of the array after the second command: `23 87 321 -123 42 90 -2`
+[/hint] 
+[hint]
+* "**swap 1(87)" and "0(23)**":
 
-* "**swap 3(-2)" and "6(-123)**"
+The state of the array after the third command: `87 23 321 -123 42 90 -2`
+[/hint] 
+[hint]
+* "**multiply 1(23) 2(321) = 7383**":
 
-The state of the array after the second command: "23 87 321 -123 42 90 -2"
+The state of the array after the fourth command: `87 7383 321 -123 42 290 -2`
+[/hint] 
+[hint]
+* "**multiply 2(321) 1(7383) = 2369943**":
 
-* "**swap 1(87)" and "0(23)**"
+The state of the after the fifth command: `87 7383 2369943 -123 42 90 -2`
+[/hint] 
+[hint]
+* "**decrease - all - 1**":
 
-The state of the array after the third command: "87 23 321 -123 42 90 -2"
-
-* "**multiply 1(23) 2(321) = 7383**"
-
-The state of the array after the fourth command: "87 7383 321 -123 42 290 -2"
-
-* "**multiply 2(321) 1(7383) = 2369943**"
-
-The state of the after the fifth command: "87 7383 2369943 -123 42 90 -2"
-
-* "**decrease - all - 1**"
-
-The state of the after the sixth command: "86 7383 2369942 -124 41 89 -3"
+The state of the after the sixth command: `86 7383 2369942 -124 41 89 -3`
+[/hint] 
+[/hints] 
 
 ## Example Two
 

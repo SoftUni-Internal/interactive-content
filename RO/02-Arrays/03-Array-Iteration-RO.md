@@ -219,8 +219,12 @@ Sarcina dvs. este să o inversați și să le imprimați elementele.
 | reverse(['abc', 'def', 'hig', 'klm', 'nop']) | nop klm hig def abc |
 | reverse(['33', '123', '0', 'dd']) | dd 0 123 33 |
 
-## Comentarii
+[hints]
+[hint]
 Primul element ar trebui să fie ultimul și ultimul ar trebui să devină primul.
+[/hint] 
+[/hints] 
+
 
 [/task-description]
 [tests]

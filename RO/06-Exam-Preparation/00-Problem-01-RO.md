@@ -72,33 +72,41 @@ Forma finală a matricei trebuie tipărită pe consolă, fiecare dintre elemente
 | --- | --- |
 |arrayModifier(['23 -2 321 87 42 90 -123', 'swap 1 3', 'swap 3 6', 'swap 1 0', 'multiply 1 2', 'multiply 2 1', 'decrease', 'end'])| 86, 7382, 2369942, -124, 41, 89, -3|
 
-## Comentarii
 
-Starea inițială a matricei: "23 -2 321 87 42 90 -123"
+[hints]
+[hint]
+Starea inițială a matricei este: `23 -2 321 87 42 90 -123`
 
-* "**swap 1(-2)" and "3(87)**"
+* "**swap 1(-2)" and "3(87)**":
 
-Starea matricei după prima comandă: "23 87 321 -2 42 90 -123"
+Starea matricei după prima comandă: `23 87 321 -2 42 90 -123`
+[/hint] 
+[hint]
+* "**swap 3(-2)" and "6(-123)**":
 
-* "**swap 3(-2)" and "6(-123)**"
+Starea matricei după a doua comandă: `23 87 321 -123 42 90 -2`
+[/hint] 
+[hint]
+* "**swap 1(87)" and "0(23)**":
 
-Starea matricei după a doua comandă: "23 87 321 -123 42 90 -2"
+Starea tabloului după a treia comandă: `87 23 321 -123 42 90 -2`
+[/hint] 
+[hint]
+* "**multiply 1(23) 2(321) = 7383**":
 
-* "**swap 1(87)" and "0(23)**"
+Starea matricei după a patra comandă: `87 7383 321 -123 42 290 -2`
+[/hint] 
+[hint]
+* "**multiply 2(321) 1(7383) = 2369943**":
 
-Starea matricei după a treia comandă: "87 23 321 -123 42 90 -2"
+Starea comenzii după a cincea: `87 7383 2369943 -123 42 90 -2`
+[/hint] 
+[hint]
+* "**decrease - all - 1**":
 
-* "**multiply 1(23) 2(321) = 7383**"
-
-Starea matricei după a patra comandă: "87 7383 321 -123 42 290 -2"
-
-* "**multiply 2(321) 1(7383) = 2369943**"
-
-Starea după a cincea comandă: "87 7383 2369943 -123 42 90 -2"
-
-* "**decrease - all - 1**"
-
-Starea celei de-a șasea comenzi: "86 7383 2369942 -124 41 89 -3"
+Starea comenzii după a șasea: `86 7383 2369942 -124 41 89 -3`
+[/hint] 
+[/hints] 
 
 ## Exemplul Doi
 **Intrare**|**Ieșire** |
