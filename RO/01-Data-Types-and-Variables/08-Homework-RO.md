@@ -385,13 +385,16 @@ Un număr este special atunci când suma cifrelor sale este **5, 7, or 11.**
 ||4 -> False|
 ||5 -> True|
 
-## Sfaturi
-
+[hints]
+[hint]
 Pentru a calcula suma cifrelor unui număr dat, puteți repeta următoarele:
 
-- Însumați ultima cifră `num% 10` și eliminați-o `sum = sum / 10` până când num ajunge la `0`
-
+- Însumați ultima cifră `num% 10` și eliminați-o `sum = sum / 10` până când `num` ajunge la `0`
+[/hint] 
+[hint]
 Utilizați `parseInt()` în timp ce împărțiți pentru a obține numai numere întregi.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [tests]

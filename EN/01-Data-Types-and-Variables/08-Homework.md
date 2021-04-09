@@ -393,13 +393,16 @@ A number is special when the **sum of its digits** is equals to **5, 7, or 11.**
 ||4 -> False|
 ||5 -> True|
 
-## Hints
-
+[hints]
+[hint]
 To calculate the sum of digits of a given number, you might repeat the following:
 
-- sum the last digit `num % 10` and remove it `sum = sum / 10` until num reaches **0**
-
+- sum the last digit `num % 10` and remove it `sum = sum / 10` until `num` reaches **0**
+[/hint] 
+[hint]
 Use `parseInt()` while dividing to get only integer numbers.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [tests]
