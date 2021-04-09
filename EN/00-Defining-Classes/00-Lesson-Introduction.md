@@ -9,7 +9,7 @@
 ## In this lesson you will learn:
 
 **1. Defining Classes**
-- Classes as a object templates
+- Classes as object templates
 
 **2. Fields**
 - How to store data that is accessible by constructors and methods
