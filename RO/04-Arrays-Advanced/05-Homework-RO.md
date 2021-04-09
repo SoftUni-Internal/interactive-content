@@ -599,14 +599,25 @@ Ieșirea este matricea sortată de șiruri.
  ||Theodor|
 ||Harrison|
 
-## Sfaturi
+[hints]
+[hint]
+O matrice poate fi sortată trecând o funcție de comparare la funcția `Array.sort()`.
+[/hint] 
+[hint]
+Crearea unei **funcții de comparare** cu două criterii poate fi realizată comparând mai întâi după criteriile principale și dacă cele două elemente sunt diferite \(rezultatul comparației nu este 0\) - returnează rezultatul **funcției de comparare**.
 
-- O matrice poate fi sortată trecând o funcție de comparare la funcția `Array.sort()`
-
-- Crearea unei **funcții de comparare** cu două criterii poate fi realizată comparând mai întâi după criteriile principale și dacă cele două elemente sunt diferite \(rezultatul comparației nu este 0\) - returnează rezultatul **funcției de comparare**
-
+```js
+let sorted = array.sort((a, b) =>
+  a.length - b.length || 
+  a.localeCompare(b)).join('\n');
+```
+[/hint] 
+[hint]
 Dacă cele două elemente sunt identice cu criteriile principale \(rezultatul comparării este 0\), trebuie să le comparăm după al doilea criteriu, iar rezultatul acestei comparații va fi rezultatul **funcției de comparare.** 
 
+`return sorted;`
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]
