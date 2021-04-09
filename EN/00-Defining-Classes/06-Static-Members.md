@@ -7,7 +7,7 @@
 
 In Java, static members can be used without initializing the class.
 
-The `static` keyword can be used with methods, fields, classes (inner/nested) and blocks.
+The `static` keyword can be used with methods, fields, classes (inner/nested), and blocks.
 
 ## Static Methods
 
@@ -42,9 +42,9 @@ public class Car {
     }
 ```
 
-From this example, we cna see that all methods we are using in the `main` one are accessible, even though we never actually initialized a Car class.
+From this example, we can see that all methods we are using in the `main` one are accessible, even though we never actually initialized a **Car** class.
 
-This works because all the fields and methods in the Car class are static.
+This works because all the fields and methods in the **Car** class are static.
 
 ## Static Fields
 
@@ -54,7 +54,7 @@ The static fields have the same value in all instances of the class.
 
 These are created and initialized when the class is loaded for the first time. 
 
-Just like static methods you can access static fields using the class name:
+Just like static methods, you can access static fields using the class name:
 
 ```java live no-template
 public class Car {
