@@ -135,7 +135,7 @@ Coloanele de latitudine și longitudine vor conține întotdeauna numere valide.
 
 Consultați exemplele pentru a înțelege mai bine sarcina dvs.
 
-Ieșirea trebuie să fie obiectele.
+Ieșirea trebuie să fie sub formă de obiecte.
 
 Latitudinea și longitudinea trebuie parsate la numere și formatate la a doua zecimală.
 
@@ -237,7 +237,7 @@ function adapter(input, code) {
 # Descriere
 Scrieți o funcție care stochează informații despre filme într-o matrice.
 
-Informațiile despre obiectul filmelor trebuie să fie numele, regizorul și data. Puteți primi mai multe tipuri de intrări:
+Informațiile despre obiectul filmelor trebuie să fie **name**, **director** și **date**. Puteți primi mai multe tipuri de intrări:
 
 * "**addMovie** \{**movie name**\}": adăugați filmul
 * "\{**movie name**\} **directedBy** \{**director**\}": verificați dacă filmul există și apoi adăugați regizorul
@@ -341,7 +341,7 @@ function adapter(input, code) {
 
 Creați o funcție care creează un registru pentru eroi, cu numele, nivelul și articolele lor (dacă acestea există).
 
-Intrarea vine ca o serie de șiruri. Fiecare element conține date pentru un erou, în următorul format:
+Intrarea este dată ca o matrice de șiruri. Fiecare element conține date pentru un erou, în următorul format:
 
 "\{**heroName**\} \/ \{**heroLevel**\} \/ \{**item1**\}, \{**item2**\}, \{**item3**\}..."
 
@@ -626,7 +626,7 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Definiți o clasă Song, care conține următoarele informații despre melodii: typeList, nume și durată.
+Definiți o clasă Song, care conține următoarele informații despre melodii: typeList, name și duration.
 
 Veți primi intrarea sub formă de matrice.
 
@@ -634,9 +634,9 @@ Primul element "**n**" va fi numărul de melodii.
 
 Următoarele "**n**" elemente vor fi datele melodiilor în următorul format: 
 
-"\{**typeList**\}\_\{**name**\}\_\{**time**\}", iar ultimul element va fi Lista de tipuri\/ "**all**".
+"\{**typeList**\}\_\{**name**\}\_\{**time**\}", iar ultimul element va fi typeList\/ "**all**".
 
-Imprimați doar numele melodiilor care apar din acea Listă de tipuri \/ Toate melodiile.
+Imprimați doar numele melodiilor care aparțin de typeList \/ toate melodiile.
 
 # Exemplul Unu
 
