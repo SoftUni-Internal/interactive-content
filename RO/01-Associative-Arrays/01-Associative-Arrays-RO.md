@@ -7,9 +7,9 @@
 
 Limbajul JavaScript este construit pe o structură centrală de date - matricea asociativă.
 
-Matricele asociative din JavaScript sunt obiecte în care indexurile sunt înlocuite de chei definite de utilizator.
+Matricele asociative din JavaScript sunt obiecte în care indicii sunt înlocuiți de chei definite de utilizator.
 
-Nu au proprietatea **lungime** ca matricea normală și nu pot fi iterate folosind o buclă for obișnuită.
+Nu au proprietatea **lungime (length)** ca matricea normală și nu pot fi iterate folosind o buclă for obișnuită.
 
 Matricele sunt indexate cu **chei de tip șir**. Acestea constau dintr-o **cheie** și o **valoare**.
 
@@ -117,9 +117,9 @@ function adapter(input, code) {
 
 Scrieți o funcție care stochează informații despre **numele unei persoane** și **numărul de telefon al acesteia**.
 
-Intrarea vine sub forma unei **matrice de șiruri**.
+Intrarea este dată sub forma unei **matrice de șiruri**.
 
-Fiecare șir conține un nume și un număr.
+Fiecare șir conține un **nume** și **un număr**.
 
 Dacă primiți același nume de două ori, înlocuiți numărul.
 
@@ -212,7 +212,7 @@ tyuhjk \-\> 0844565344
 
 Putem folosi următoarea expresie pentru a verifica dacă o **cheie** este **prezentă**.
 
-Utilizați metoda `.hasOwnProperty("key")`.
+Utilizați metoda `.hasOwnProperty('key')`.
 
 Să declarăm un obiect gol și să-i atribuim o cheie. Utilizați o instrucțiune `if` și expresia de mai sus pentru a vedea dacă cheia există.
 
@@ -243,7 +243,7 @@ console.log(assocArr);
 
 Dacă încercați să accesați o cheie care nu există, atunci veți obține rezultatul **undefined**.
 
-Încercați `console.log()` `assocArr.name` după ștergerea proprietății `name`.
+Încercați `console.log()` pentru `assocArr.name` după ștergerea proprietății `name`.
 
 Vedeți exemplul de mai jos:
 
@@ -258,7 +258,7 @@ Puteți utiliza, de asemenea, ceva numit destructurare.
 
 Sintaxa de alocare a destructurării este o expresie JavaScript care face posibilă despachetarea valorilor din matrice sau a proprietăților din obiecte, în valori separate.
 
-Metoda `Object.entries()` returnează o serie de matrice ale propriilor perechi `[ key, value ]` ale unui anumit obiect.
+Metoda `Object.entries()` returnează o matrice de matrice ale propriilor perechi `[ key, value ]` ale unui anumit obiect.
 
 În bucla for-of din exemplul de mai jos declarăm variabilele noastre **cheie** și **valoare**.
 
@@ -456,7 +456,7 @@ Tuesday \-\> Ted
 
 Obiectele **nu pot fi sortate**. Pentru a face acest lucru, trebuie să le transformăm în matrice.
 
-Apoi le putem **sorta**, **filtra** și **mapa**.
+Apoi le putem **sorta**, **filtra** și **asocia**.
 
 Folosind metoda `Object.entries()` obținem o matrice de matrice.
 
@@ -533,7 +533,7 @@ console.log(result);
 [/slide]
 
 [slide hideTitle]
-# Problemă cu Soluție:  AddressBook
+# Problemă cu Soluție: AddressBook
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/RO/02.JS-Fundamentals-Associative-Arrays-15-solution-adress-book-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
