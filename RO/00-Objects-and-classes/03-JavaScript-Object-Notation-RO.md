@@ -7,7 +7,7 @@
 
 JSON înseamnă **JavaScript Object Notation** și este un **format de informații bazat pe text** care urmează sintaxa obiectului JavaScript.
 
-JSON este **independent de limbaj** și poate fi utilizat fără a depinde de JavaScript, chiar dacă este **asemănător sintaxei literale a obiectului JavaScript.**
+JSON este **independent de limbaj**, ceea ce înseamnă că poate fi utilizat cu orice limbaj, chiar dacă este **asemănător sintaxei literalului obiectului JavaScript.**
 
 JSON este o metodă de stocare a datelor și informațiilor într-o abordare organizată și ușor de accesat. 
 
@@ -52,7 +52,7 @@ JSON folosește **text care poate fi citit de către om pentru a transmite date.
 
 * Valorile sunt separate de chei prin două puncte: "George", 25, \[2.50, 3.50\], \[4.50\]
 
-* Este posibil să aveți obiecte imbricate - precum cele imbricate în cadrul "grades"
+* Este posibil să aveți obiecte imbricate - precum cel imbricat în cadrul "grades"
 
 [/slide]
 
@@ -73,7 +73,7 @@ var data = JSON.parse(car);
 console.log(data);
 ```
 
-* `JSON.stringify()`: Această metodă convertește o valoare JavaScript într-o reprezentare șir JSON.
+* `JSON.stringify()`: Această metodă convertește o valoare JavaScript într-o reprezentare de tip șir JSON.
 
 ``` js live
 let car = {
@@ -116,7 +116,7 @@ function adapter(input, code) {
 # Descriere
 Scrieți o funcție care primește un șir în format JSON și îl convertește în obiect.
 
-Iterați prin toate cheile și imprimați-le cu valorile lor în format:
+Iterați prin toate cheile și imprimați-le împreună cu valorile lor în format:
 
 \{**key**\}**:** \{**value**\}
 
