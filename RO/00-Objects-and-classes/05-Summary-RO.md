@@ -6,7 +6,7 @@
 
 ## În această lecție ați învățat:
 
- Obiecte - Definție, proprietăți și metode
+ - Obiecte - definție, proprietăți și metode
 ```js
 let person = {
     name: 'Peter',
@@ -30,7 +30,7 @@ let person = {
 person.sayHello();
 ```
 
-- Iterațiile obiectelor
+- Iterarea obiectelor
 
 ``` js live
 let person = {
@@ -44,7 +44,7 @@ for (let key in person) {
 }
 
 ```
-- Diferența dintre tipurile de valori și tipurile de referință
+- Diferența dintre tipurile de valoare și tipurile de referință
 
 - Prezentare generală a fișierelor JSON 
 ``` js
@@ -59,7 +59,7 @@ for (let key in person) {
 }
 ```
 
-- `parse` și `stringify` sunt metode JavaScript încorporate
+- `Parse` și `stringify` sunt metode JavaScript încorporate
     - sunt folosite pentru convertirea JSON într-un obiect și invers
   
 ```js live
@@ -70,7 +70,7 @@ var data = JSON.parse(car);
 console.log(data);
 ```
 
-- Clasele în JavaScript
+- Clase în JavaScript
 
 ``` js
 class Student {
