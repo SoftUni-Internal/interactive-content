@@ -7,7 +7,7 @@
 
 O **clasă** este ca un **plan** (sau șablon) pentru crearea **obiectelor**.
 
-Clasele oferă mijloace pentru **gruparea de date și funcționalitate** împreună.
+Clasele oferă mijloace pentru **gruparea datelor și funcționalității** împreună.
 
 Fiecare instanță de clasă poate avea atașate **atribute**.
 
@@ -28,7 +28,7 @@ class Student {
     }
 }
 ```
-Pentru a declara o clasă, folosim cuvântul cheie `class` cu numele clasei, în acest caz `Student`.
+Pentru a declara o clasă, folosim cuvântul cheie `class`, urmat de numele clasei, în acest caz `Student`.
 
 `Constructor` este o metodă specială pentru crearea și inițializarea unui obiect.
 [/slide]
@@ -74,7 +74,7 @@ Metodele de instanță pot **accesa și modifica** datele instanței.
 
 Metodele de instanță pot apela alte metode de instanță, precum și orice metodă statică.
 
-Metodele statice **se referă la clasă**, mai degrabă decât la o instanță a acesteia.
+Metodele statice **se referă la clasă** în loc de o instanță a acesteia.
 
 Prin urmare, nu au **acces** la datele instanței.
 
@@ -121,11 +121,11 @@ function adapter(input, code) {
 
 Scrieți o funcție care primește o matrice de șiruri în următorul format: "\{**cat name**\} \{**age**\}".
 
-Creați o clasă Cat care primește în constructor numele și vârsta analizate din intrare.
+Creați o clasă Cat care primește în constructor numele și vârsta parsate din intrare.
 
-De asemenea, ar trebui să aibă o funcție numită **meow** care va tipări "\{**cat name**\}**, age** \{**age**\} **says Meow**" pe consolă.
+De asemenea, trebuie să aibă o funcție numită **meow** care va tipări "\{**cat name**\}**, age** \{**age**\} **says Meow**" pe consolă.
 
-Pentru fiecare dintre șirurile furnizate trebuie să creați un obiect pisică.
+Pentru fiecare dintre șirurile furnizate trebuie să creați un obiect Cat.
 
 # Exemplul Unu
   |**Intrare**|**Ieșire** |
@@ -146,7 +146,7 @@ Pentru fiecare dintre șirurile furnizate trebuie să creați un obiect pisică.
 
 * Parsați datele de intrare
 
-* Creați toate obiectele folosind constructorul clasei și datele de intrare analizate, stocați-le într-o matrice
+* Creați toate obiectele folosind constructorul clasei și datele de intrare parsate, stocați-le într-o matrice
 
 * Parcurgeți matricea utilizând ciclul `for…of` și invocați metoda `.meow()`
 
