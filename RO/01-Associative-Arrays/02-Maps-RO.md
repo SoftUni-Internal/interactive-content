@@ -9,9 +9,9 @@ Obiectul Map conține perechi cheie-valoare și păstrează **ordinea originală
 
 Atât obiectele, cât și valorile primitive pot fi utilizate fie ca cheie, fie ca valoare.
 
-O buclă for-of returnează o matrice de `[key, value]` pentru fiecare iterație, atunci când este utilizată pe un Map.
+O buclă for-of returnează o matrice `[key, value]` pentru fiecare iterație, atunci când este utilizată pe un Map.
 
-Obiectele JavaScript pure sunt ca niște Maps, deoarece ambele vă permit să:
+Obiectele JavaScript pure sunt ca Maps, deoarece ambele vă permit să:
 1. Alocați valori cheilor
 2. Detectați dacă ceva este stocat într-o cheie
 3. Ștergeți cheile
@@ -46,7 +46,7 @@ map.set(2, 'two');
 console.log(map.get(2));
 ```
 
-Proprietatea accesorului `.size` returnează numărul de elemente dintr-un obiect Map.
+Proprietatea accesorului `.size` returnează numărul de elemente dintr-un obiect Map:
 
 
 ```js live
