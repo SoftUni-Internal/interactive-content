@@ -5,7 +5,7 @@
 
 ## În această lecție ați învățat că:
 
-- **Șirurile** sunt serii imuabile de **caractere**
+- **Șirurile** sunt serii imuabile (nu pot fi schimbate) de **caractere**
 
 - Acestea au metode încorporate pe care le folosim pentru a le procesa, câteva dintre acestea fiind:
 
