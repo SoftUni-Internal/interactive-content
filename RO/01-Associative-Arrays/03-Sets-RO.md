@@ -7,7 +7,7 @@
 
 Obiectul `Set` vă permite să stocați valori **unice** de orice tip, indiferent dacă sunt valori primitive sau referințe la obiect.
 
-Obiectele `set` sunt colecții de valori. 
+Obiectele `Set` sunt colecții de valori. 
 
 Puteți itera prin elementele unui set în ordinea lor de inserare.
 
@@ -21,14 +21,14 @@ Acum, haideți să folosim `console.log` pentru ieșire, pentru a vedea rezultat
 
 Toate intrările repetate au fost eliminate, deci rămân doar valorile unice.
 
-Rezultatul este `Set { 1, 2, 3, 4, 5 }`
+Rezultatul este `Set { 1, 2, 3, 4, 5 }`.
 
 ```js live
 let set = new Set([1, 2, 2, 3, 4, 5]);
 console.log(set);
 ```
 
-Utilizați metoda `.add()` pentru a adăuga valori. Rezultatul va fi `Set { 1, 2, 3, 4, 5, 10 }`
+Utilizați metoda `.add()` pentru a adăuga valori. Rezultatul va fi `Set { 1, 2, 3, 4, 5, 10 }`.
 
 ```js live
 let set = new Set([1, 2, 2, 3, 4, 5]);
