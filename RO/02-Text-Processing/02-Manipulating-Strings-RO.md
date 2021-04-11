@@ -101,14 +101,14 @@ Pentru a **extrage** un subșir, putem folosi `substring()`.
 
 Această metodă are doi parametri:
 
-- Primul este indicele de start
-- Al doilea este indicele final
+- Primul este indicele **de start**
+- Al doilea este indicele **final**
 
 Și va returna partea de la **indicele de început** până la **indicele final**.
 
 Dar dacă nu dăm **al doilea parametru**, acesta va returna partea dintre **indicele de început** și **sfârșitul** șirului.
 
-**Subșirul** nu va modifica șirul original, acesta va returna unul nou.
+`Substring()` nu va modifica șirul original, aceasta va returna unul nou.
 
 Acest lucru înseamnă că trebuie să îl atribuim unei variabile pentru a funcționa.
 
@@ -148,11 +148,11 @@ Asta înseamnă că trebuie să îl atribuim unei variabile.
 -  `pattern`
 -  `replacement`
 
-Pentru partea **pattern** putem folosi **o expresie obișnuită** sau un **șir**.
+Pentru partea **pattern** putem folosi **o expresie regulată** sau un **șir**.
 
-Și pentru **replacement** putem folosi `function()` sau un **șir**.
+Iar pentru **replacement** putem folosi `function()` sau un **șir**.
 
-După ce se potrivește cu acest tipar, își va schimba doar prima apariție.
+După ce se potrivește cu acel pattern, își va schimba doar prima apariție.
 
 Iată un exemplu:
 
@@ -193,7 +193,7 @@ function adapter(input, code) {
 
 Scrieți o funcție care primește **un șir și două numere.**
 
-Numerele vor fi un **indice de pornire** și un **număr de elemente** pentru subșir.
+Numerele vor fi un **indice de pornire** și un **număr de elemente** care trebuie adăugate în subșir.
 
 Imprimați rezultatul.
 
@@ -258,7 +258,7 @@ JAko88/(()
 [/slide]
 
 [slide hideTitle]
-# Împărțirea Unui Şir
+# Împărțirea unui Şir
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/RO/interactive-js-fundamentals-text-processing-14-splitting-and-finding-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -281,20 +281,20 @@ let divided = str.split(' ');
 console.log(divided);
 ```
 
-## Găsirea într-un Șir
+# Găsirea într-un Șir
 
 Pentru a găsi o anumită parte a unui șir, folosim metoda `includes()`.
 
 Această metodă are doi parametri:
 
 - Șirul pe care îl căutăm
-- Poziția pe care să începeți căutarea, fiind opțională
+- Poziția pe care să începem căutarea, fiind opțională
 
 Aceasta preia **șirul** și îl caută în cel principal.
 
-Este similară cu `indexOf()`, dar dacă îl găsește, această metodă returnează `true` sau `false` în cazul opus.
+Este similară cu `indexOf()`, dar dacă îl găsește, această metodă returnează `true` sau `false`, în cazul opus.
 
-`includes()` este sensibil la majuscule și minuscule.
+`includes()` este sensibilă la majuscule și minuscule.
 
 De exemplu:
 
@@ -320,7 +320,7 @@ Primește doi parametri:
 - `string`
 - `count`
 
-După ce este apelat pentru un anumit **șir**, **repeat** va lua **șirul** pe care l-am dat și îl va **înmulți** cu **numărul** pe care îl transmitem.
+După ce este apelată pentru un anumit **șir**, **repeat** va lua **șirul** pe care l-am dat și îl va **înmulți** cu **numărul** pe care îl transmitem.
 
 După aceea, va **returna** un **șir concatenat** din toate copiile.
 
@@ -437,9 +437,9 @@ Pentru a **elimina spațiile albe** folosim metoda `trim()`.
 
 De aceea avem `trimStart()` și `trimEnd()`.
 
-Dacă dorim să eliminăm spațiile albe numai la **început** sau **la sfârșit**, putem folosi una dintre acestea.
+Dacă dorim să eliminăm spațiile albe numai la **început** sau **la sfârșit**, putem folosi una dintre aceste metode.
 
-Toate aceste trei metode nu afectează valoarea șirului original.
+Niciuna dintre aceste trei metode nu afectează valoarea șirului original.
 
 Deci va trebui să le atribuim unei variabile.
 
@@ -477,16 +477,16 @@ console.log(str.trimEnd());
 
 Cu `startsWith()`, putem verifica dacă un șir începe cu un cuvânt specific, pe care îl vom transmite metodei ca parametru.
 
-**EndsWith** este aproape la fel.
+`endsWith()` este aproape la fel.
 
 Diferența dintre ele este că `endsWith()` verifică dacă acel șir se termină cu un anumit cuvânt.
 
-Dacă găsesc subșirul, vor returna true sau false în cazul opus.
+Dacă găsesc subșirul, vor returna true, sau false în cazul opus.
 
 **StartsWith** poate primi doi parametri:
 
 - **Cuvântul** căutat în șir
-- **Poziția** de la care să înceapă indicele
+- Indicele **poziției** de la care să înceapă căutarea 
       - acest parametru este opțional
 
 **EndsWith** poate primi de asemenea doi parametri, dar al doilea este **lungimea** și este opțional.
@@ -511,7 +511,7 @@ console.log(sentence.endsWith('John'));
 console.log(sentence.endsWith('John', 10));
 ```
 
-În ambele exemple, primul **console.logs** va returna "**true**", dar al doilea va returna "**false**", deoarece șirul nu va fi în partea de căutare. 
+În ambele exemple, primul **console.log** va returna `true`, dar al doilea va returna `false`, deoarece subșirul nu va fi lozalizat în partea în care are loc căutarea. 
 
 [/slide]
 
@@ -525,7 +525,7 @@ Dacă vrem să **adăugăm** un șir **de un anumit număr de ori** la **începu
 
 Acestea vor **concatena subșirul**, care este unul dintre cei doi parametri pe care îi transmitem, până când ajung la lungime, care este celălalt parametru pe care l-am transmis.
 
-De asemenea, trebuie să le atribuim unei variabile, deoarece **nu vor modifica șirul original.**
+De asemenea, trebuie să le atribuim unei variabile, deoarece aceste metode **nu vor modifica șirul original.**
 
 Mai întâi să vedem cum funcționează `padStart()`:
 
@@ -572,7 +572,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Scrieți o funcție care primește un fragment de text și un șir pe care trebuie să îl căutați în el.
+Scrieți o funcție care primește un **fragment de text** și un **șir pe care trebuie să îl căutați** în el.
 
 Imprimați numărul de apariții ale acelui cuvânt în șir.
 
