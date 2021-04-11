@@ -11,7 +11,7 @@ Sunt folosite pentru stocarea textului.
 
 **Una dintre cele mai utilizate proprietăți este** lungimea lor, care poate fi obținută folosind `.length()` pe orice șir.
 
-Textul ar trebui să fie încadrat în ghilimele, existând trei tipuri care pot fi utilizate:
+Textul trebuie să fie încadrat între ghilimele, existând trei tipuri care pot fi utilizate:
 
 - **Ghilimele duble**
 
