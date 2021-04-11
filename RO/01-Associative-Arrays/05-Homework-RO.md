@@ -29,15 +29,15 @@ function adapter(input, code) {
 
 Scrieți o funcție care primește o **matrice de cuvinte** și găsește **apariții ale fiecărui cuvânt specificat** într-un șir.
 
-Rezultatul va fi sub forma unei **matrice de șiruri**.
+Intrarea va fi sub forma unei **matrice de șiruri**.
 
 **Primul șir** va conține **cuvintele** pe care le veți căuta, separate printr-un **spațiu**.
 
 Toate **șirurile de după** vor conține propoziții pe care trebuie să le verificați și să numărați de câte ori a fost prezent fiecare dintre cuvintele specificate.
 
-Tipariți **de câte** ori a apărut fiecare dintre cuvintele specificate.
+Tipăriți **de câte** ori a apărut fiecare dintre cuvintele specificate.
 
-Cuvintele trebuie să fie **sortate după numărul de ori în care au fost prezente în ordine descrescătoare**
+Cuvintele trebuie să fie **sortate după numărul de ori în care au fost prezente, în ordine descrescătoare**
 
 ## Exemplu
 
@@ -140,7 +140,7 @@ function adapter(input, code) {
 
 # Descriere
 
-Scrieți o funcție care extrage toate elementele unei propoziții, care sunt prezente într-un șir de un număr impar d eori (**majusculele trebuie ignorate**).
+Scrieți o funcție care extrage toate elementele unei propoziții, care sunt prezente într-un șir de un număr impar de ori (**majusculele trebuie ignorate**).
 
 Intrarea este un **singur șir**. 
 
@@ -239,9 +239,9 @@ Scrieți o funcție care:
 
 - Înregistrează o plăcuță de înmatriculare pentru fiecare mașină care intră în parcare
 - Elimină mașina când aceasta iese din parcare
-- Rezultatul va fi o matrice de șiruri în formatul următor: "\['**direction**, **carNumber**'\]"
+- Intrarea va fi o matrice de șiruri în formatul următor: "\['**direction**, **carNumber**'\]"
 
-Tipariți rezultatul cu toate numerele mașinilor care se află în parcare, **sortate în ordine crescătoare după numărul lor de înmatriculare**.
+Tipariți ieșirea cu toate numerele mașinilor care se află în parcare, **sortate în ordine crescătoare după numărul lor de înmatriculare**.
 
 ## Exemplul Unu
 | **Intrare** | **Ieșire**  |
@@ -378,15 +378,13 @@ Există o petrecere la SoftUni. Mai mulți oaspeți sunt invitați și există *
 
 Când oaspeții vin la petrecere, verificați dacă el/ea **există** în oricare dintre **cele două liste de rezervare**.
 
-Rezultatul va fi **o matrice de șiruri**. 
-
-Vi se va da lista cu invitații pe care trebuie să îi procesați până la următoarea comandă: "**PARTY**".
+Intrarea va fi **o matrice de șiruri**. Vi se va da lista cu invitații pe care trebuie să îi procesați până se întâlnește următoarea comandă: "**PARTY**".
 
 Toate **numerele VIP încep cu o cifră**.
 
-Când primiți comanda: "**PARTY**", oaspeții încep să vină.
+Când primiți comanda "**PARTY**", oaspeții încep să vină.
 
-Afișați toți invitații care nu au venit la petrecere (**VIP-urile trebuie să fie primii**).
+Afișați toți invitații care nu au venit la petrecere (**invitații VIP trebuie să fie primii**).
 
 ## Exemplul Unu
 
@@ -531,9 +529,9 @@ Numele persoanei poate conține orice simbol ASCII, cu excepția: "**:**".
 
 Intrarea va fi întotdeauna în formatul descris, nu este necesar să o verificați.
 
-O singură persoană nu poate avea mai multe cărți de joc de aceeași putere și **tip**, dacă extrage o astfel de carte, o aruncă.
+O singură persoană nu poate avea mai multe cărți de joc de aceeași **putere** și **tip**, dacă extrage o astfel de carte, o aruncă.
 
-Jocul este jucat folosind mai multe punți. Fiecare carte are o valoare. Valoarea cărții este calculată prin înmulțirea puterii sale cu tipul său.
+Jocul este jucat folosind mai multe pachete. Fiecare carte are o valoare. Valoarea cărții este calculată prin înmulțirea **puterii** sale cu **tipul** său.
 
 Puterile de la 2 la 10 au aceeași valoare ca numărul lor și "J, Q, K, A" sunt "11, 12, 13, 14".
 
@@ -660,13 +658,13 @@ function adapter(input, code) {
 
 Scrieți o funcție care stochează informații despre companii și angajații acestora.
 
-Veți primi o matrice de șiruri care conțin un nume de companie și un ID de angajat.
+Veți primi o matrice de șiruri care conțin un **nume de companie** și un **ID de angajat**.
 
 Adăugați fiecare angajat la compania specificată. 
 
 Rețineți că o companie nu poate avea doi angajați cu același ID.
 
-Când terminați de citit datele, ordonați companiile după nume în ordine crescătoare.
+Când terminați de citit datele, ordonați companiile după **nume** în **ordine crescătoare**.
 
 Imprimați numele companiei și ID-ul fiecărui angajat în următorul format:
 
@@ -676,7 +674,7 @@ Imprimați numele companiei și ID-ul fiecărui angajat în următorul format:
 \-\- \{**idN**\}"
 
 - Intrarea este o **matrice de șiruri**, fiecare în format: "\{**companyName**\} \-\> \{**employeeId**\}"
-- Intrarea va fi întotdeauna valabilă
+- Intrarea va fi întotdeauna validă
 
 ## Exemplul Unu
 
@@ -870,13 +868,13 @@ Vi se oferă o **matrice de șiruri**.
 
 Fiecare **șir impar** reprezintă o **resursă** (de exemplu, aur, argint, cupru și așa mai departe) și **fiecare șir par - o cantitate**.
 
-Sarcina dvs. este să colectați resursele și să le tipăriți pe o nouă linie.
+Sarcina dvs. este să colectați resursele și să le tipăriți pe fiecare dintre ele pe o nouă linie.
 
 **Tipăriți resursele și cantitățile acestora în acest format**:
 
 "\{**resource**\} \-\> \{**quantity**\}"
 
-Cantitățile introduse vor fi în intervalul "\[**1...2 000 000 000**\]"
+Cantitățile introduse vor fi în intervalul "\[**1...2 000 000 000**\]".
 
 
 ## Exemplul Unu
