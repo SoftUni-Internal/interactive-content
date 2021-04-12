@@ -1864,7 +1864,7 @@ In cazul în care nu avem **utilizatori de forță** de o parte, atunci **nu ar 
 ### Comentarii
 L-am înregistrat pe George de partea Luminii și pe Peter, de partea Întunericului. 
 
-După ce am primit "End", printăm ambele părți, ordonate de numărul de membri și apoi, de numele lor. 
+După ce am primit "**End**", printăm ambele părți, ordonate de numărul de membri și apoi, de numele lor. 
 ### Exemple
 | **Intrare* | **Ieșire** |
 | --- | --- |
