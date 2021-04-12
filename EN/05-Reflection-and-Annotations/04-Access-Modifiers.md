@@ -104,11 +104,9 @@ The array elements are: 2 9 3 0 7
 # Description
 You are already an expert in writing **high-quality code**, so you know what kind of **access modifiers** must be set to the members of a class. 
 
-Time for **revenge** has come. 
+You have to check the code in the Reflection class. 
 
-You have to check the code produced by your "**Beautiful and Smart**" trainers in class Reflection. 
-
-Check all **fields and methods access modifiers**. 
+Check all **fields and access modifiers for the methods**. 
 
 Sort each category of members **alphabetically**. 
 
