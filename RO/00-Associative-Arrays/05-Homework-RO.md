@@ -2189,10 +2189,81 @@ Submisii:
 | Mike-banned | C# - 2 |
 | exam finished | Java - 2 |
 
-### Comentarii
-Mike este interzis, deci va fi scos din concurs, dar aplicația sa va fi păstrată în numărătoarea aplicațiilor. 
+[hints]
+[hint]
+Create two `HashMap`s - one for the results, and one for the submissions:
+
+```java
+Map<String, Integer> peopleRes = new HashMap<>();
+Map<String, Integer> submissions = new HashMap<>();
+```
+[/hint] 
+[hint]
+
+Create a while loop with the following condition:
+
+```java
+String input = "";
+
+while (!"exam finished".equals(input = scanner.nextLine())) {
+  // ...
+}
+```
+
+[/hint] 
+[hint]
+Inside the loop, create multiple if-statements to modify the hash tables:
+
+```java
+String[] line = input.split("-");
+
+if (line.length == 3) {
+  String name = line[0];
+  String language = line[1];
+  int points = Integer.parseInt(line[2]);
+
+  if (!peopleRes.containsKey(name)) {
+    peopleRes.put(name, points);
+  } else if (peopleRes.get(name) < points) {
+    peopleRes.put(name, points);
+  }
+
+  if (!submissions.containsKey(language)) {
+    submissions.put(language, 1);
+  } else {
+    submissions.put(language, 
+      submissions.get(language) + 1);
+  }
+} else {
+  peopleRes.remove(line[0]);
+}
+```
+
+De exemplu, Mike este interzis, deci va fi scos din concurs, dar aplicația sa va fi păstrată în numărătoarea aplicațiilor. 
+[/hint]
+[hint]
+Print out the participants's results as follows:
+
+```java
+System.out.println("Results:");
+peopleRes.entrySet().stream()
+  .sorted(Map.Entry.<String, Integer> comparingByValue()
+    .reversed()
+    .thenComparing(Map.Entry.comparingByKey()))
+  .forEach(entry -> {
+    System.out.println(String.format("%s | %d",
+      entry.getKey(), entry.getValue()));
+  });
+```
+
+Do the same thing for the submissions.
 
 Deși sunt doar 2 participanți în rezultate, sunt 4 aplicații în total. 
+[/hint] 
+[/hints] 
+
+
+
 
 [/task-description]
 [code-io /]
