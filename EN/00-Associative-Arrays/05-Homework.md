@@ -30,6 +30,46 @@ Create a program that **counts all characters** in a string, except the white-sp
 | | e \-\> 1 |
 | | x \-\> 1 |
 
+[hints]
+[hint]
+
+Create a `char[]` array from the input:
+
+```java
+Scanner scanner = new Scanner(System.in);
+String input = scanner.nextLine();
+
+char[] chars = input.toCharArray();
+```
+[/hint] 
+[hint]
+Use a `LinkedHashMap` to store each character's count:
+
+```java
+Map<Character, Integer> count = new LinkedHashMap<>();
+
+for (char ch : chars) {
+  count.putIfAbsent(ch, 0);
+  count.put(ch, count.get(ch) + 1);
+}
+```
+[/hint] 
+[hint]
+
+[/hint] 
+[hint]
+Finally, **print** the information for each key-value pair to the console:
+
+```java
+for (Map.Entry<Character, Integer> c : count.entrySet()) {
+  if (!c.getKey().equals(' ')) {
+    System.out.println(c.getKey() + " -> " + c.getValue());
+  }
+}
+```
+[/hint] 
+[/hints] 
+
 ### Example
 | **Input** | **Output** |
 | --- | --- |
