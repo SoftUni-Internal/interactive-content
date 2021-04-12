@@ -1690,7 +1690,9 @@ if (!schedule.contains(lessonTitle + "-Exercise")) {
 [hint]
 We swap the Lists and the **Databases** lessons, the **Databases-Exercise** is also moved after the Databases lesson:
 
-`swapping(schedule, lessonTitle, swapLessonWith);`
+```java
+swapping(schedule, lessonTitle, swapLessonWith);
+```
 [/hint] 
 [hint]
 We skip the next command because we already have such a lesson on our schedule.

@@ -1677,7 +1677,9 @@ if (!schedule.contains(lessonTitle + "-Exercise")) {
 Schimbăm lecțiile **Lists** și **Databases**
 **Databases-Exercise** este, de asemenea, mutat după lecția **Databases**:
 
-`swapping(schedule, lessonTitle, swapLessonWith);`
+```java
+swapping(schedule, lessonTitle, swapLessonWith);
+```
 [/hint] 
 [hint]
 Omitem următoarea comandă, deoarece avem deja o astfel de lecție în programul nostru.
