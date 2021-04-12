@@ -134,9 +134,11 @@ for (Person player : players) {
     team.addPlayer(player);
 }
 
-System.out.println("The number of players on the main team is:" + team.getFirstTeam().size());
+System.out.println("The number of players on the main team is:"
+ + team.getFirstTeam().size());
 
-System.out.println("The number of players on the reserve team is:" + team.getReserveTeam ().size());
+System.out.println("The number of players on the reserve team is:"
+ + team.getReserveTeam ().size());
 ```
 
 ## It should not function the following way:
