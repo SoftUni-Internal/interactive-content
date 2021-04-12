@@ -37,7 +37,7 @@ class OutputFormatter { public static void print() { … } }
 - **Breaking code** into reusable units
 - **Extracting parts of methods** and **classes** into **new** ones
 
-`depositOrWithdraw()` => `deposit()`; `withdraw()`
+`depositOrWithdraw()` => `deposit()` and `withdraw()`
 
 - **Improving names** of variables, methods, classes, etc.
 
@@ -61,7 +61,7 @@ class OutputFormatter { public static void print() { … } }
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-basics/01-Java-OOP-basics-More-OOP-Concepts-Lab-Resources.zip) **for this task.**
 
-This is a **working project** for a simple **Student data base**. The code is very poorly organized. 
+This is a **working project** for a simple **Student database**. The code is very poorly organized. 
 
 Split the code **logically** into **smaller functional units** – **methods** and **classes**, without damaging the program.
 
