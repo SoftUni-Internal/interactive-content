@@ -2205,8 +2205,9 @@ Create a while loop with the following condition:
 ```java
 String input = "";
 
-while (!"exam finished".equals(input = scanner.nextLine())) {
-  // ...
+while (!"exam finished"
+  .equals(input = scanner.nextLine())) {
+    // ...
 }
 ```
 
@@ -2215,24 +2216,17 @@ while (!"exam finished".equals(input = scanner.nextLine())) {
 Inside the loop, create multiple if-statements to modify the hash tables:
 
 ```java
-String[] line = input.split("-");
+if (!peopleRes.containsKey(name)) {
+  peopleRes.put(name, points);
+} else if (peopleRes.get(name) < points) {
+  peopleRes.put(name, points);
+}
 
-if (line.length == 3) {
-  String name = line[0];
-  String language = line[1];
-  int points = Integer.parseInt(line[2]);
-
-  if (!peopleRes.containsKey(name)) {
-    peopleRes.put(name, points);
-  } else if (peopleRes.get(name) < points) {
-    peopleRes.put(name, points);
-  }
-
-  if (!submissions.containsKey(language)) {
-    submissions.put(language, 1);
-  } else {
-    submissions.put(language, 
-      submissions.get(language) + 1);
+if (!submissions.containsKey(language)) {
+  submissions.put(language, 1);
+} else {
+  submissions.put(language, 
+    submissions.get(language) + 1);
   }
 } else {
   peopleRes.remove(line[0]);
@@ -2247,7 +2241,9 @@ Print out the participants's results as follows:
 ```java
 System.out.println("Results:");
 peopleRes.entrySet().stream()
-  .sorted(Map.Entry.<String, Integer> comparingByValue()
+  .sorted(Map
+    .Entry
+    .<String, Integer> comparingByValue()
     .reversed()
     .thenComparing(Map.Entry.comparingByKey()))
   .forEach(entry -> {
