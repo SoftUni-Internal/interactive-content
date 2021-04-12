@@ -1096,11 +1096,38 @@ Aceasta este suma divizorilor sale pozitivi, excluzând numărul în sine (cunos
 | perfectNumber(28) | We have a perfect number!|1 + 2 + 4 + 7 + 14|
 | perfectNumber(1236498) |It's not so perfect.||
 
-## Sfat
+[hints]
+[hint]
+În mod echivalent, un număr perfect este un număr care este **o jumătate din suma** tuturor divizorilor săi pozitivi `(incluzând numărul respectiv) => 6` este un număr perfect, deoarece este suma lui `1 + 2 + 3` (toate fiind împărțite fără rest).
+[/hint] 
+[hint]
+Citiți despre [perfect](https://en.wikipedia.org/wiki/Perfect_number) number.
+[/hint] 
+[hint]
+Puteți crea o buclă for de la **0** la **num / 2**:
 
-În mod echivalent, un număr perfect este un număr care este **o jumătate din suma** tuturor divizorilor săi pozitivi `(incluzând numărul respectiv) => 6` este un număr perfect, deoarece este suma lui `1 + 2 + 3` (toate fiind împărțite fără rest)
+```js
+tempNum = 0;
 
-- Citiți despre [perfect](https://en.wikipedia.org/wiki/Perfect_number) number
+for (let i = 0; i <= num / 2; i++) {
+  if (num % i === 0) {
+    tempNum += i;
+  }
+}
+```
+[/hint] 
+[hint]
+Apoi, creați un bloc **if-else** și imprimați rezultatul corect: 
+
+```js
+if (tempNum === num && tempNum !== 0) {
+        console.log("We have a perfect number!");
+    } else {
+        console.log("It's not so perfect.");
+    }
+```
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]

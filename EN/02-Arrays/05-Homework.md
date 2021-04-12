@@ -280,16 +280,47 @@ For example, if we have 3 elements \[**2, 10, 3**\], we sum the first two and th
 | condense(\[1\]) | 1 ||
 
 
-## Hints
+[hints]
+[hint]
+Create a **while** loop:
 
+```js
+while (nums.length > 1) {
+  // ...
+}
+```
+[/hint] 
+[hint]
 While we have more than one element in the array **nums**\[\], repeat the following:
 
-- Allocate a new array **condensed**\[\] of size **nums**\.**Length**\-**1**
+- Allocate a new array `condensed[]` of size **nums**\.**length**\-**1**
 
-- Sum the numbers from **nums**\[\] to **condensed**\[\]:
+```js
+while (nums.length > 1) {
+  let condensed = Array(nums.length - 1);
+  // ...
+}
+```
+[/hint] 
+[hint]
+Sum the numbers from **nums**\[\] to **condensed**\[\]:
   - **condensed**\[i\] = **nums**\[i\] \+ **nums**\[i\+1\]
+  - **nums**\[\] = **condensed**\[\]
 
-- **nums**\[\] = **condensed**\[\]
+```js
+while (nums.length > 1) {
+  let condensed = Array(nums.length - 1);
+  for (let i = 0; i < nums.length - 1; i++) {
+    condensed[i] = 
+      Number(nums[i]) + Number(nums[i + 1]);
+  }
+  nums = condensed;
+}
+
+console.log(nums[0]);
+```
+[/hint] 
+[/hints] 
 
 [/task-description]
 [tests]

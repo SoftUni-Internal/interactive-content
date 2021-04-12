@@ -149,10 +149,10 @@ Ca **intrare** veți primi **3 parametri**:
 - **Prețul** pentru **1 litru de motorină**
 
 Ca ieșire, trebuie să imprimați acest mesaj:
-"**Needed money for that trip is** \{**neededMoney**\} **dollars.**
+"**Needed money for that trip is** \{**neededMoney**\} **dollars.**"
 
 ## Exemplu
-   |**Intrare**|**Ieșire**|
+|**Intrare**|**Ieșire**|
 | --- | --- |
 | fuelMoney(260, 9, 2.49) | Needed money for that trip is 47.559 dollars. |
 | fuelMoney(90, 14, 2.88) | Needed money for that trip is 22.176 dollars. |
@@ -385,13 +385,16 @@ Un număr este special atunci când suma cifrelor sale este **5, 7, sau 11.**
 ||4 -> False|
 ||5 -> True|
 
-## Sfaturi
-
+[hints]
+[hint]
 Pentru a calcula suma cifrelor unui număr dat, puteți repeta următoarele:
 
-- Însumați ultima cifră `num% 10` și eliminați-o `sum = sum / 10` până când num ajunge la `0`
-
+- Însumați ultima cifră `num% 10` și eliminați-o `sum = sum / 10` până când `num` ajunge la `0`
+[/hint] 
+[hint]
 Utilizați `parseInt()` în timp ce împărțiți pentru a obține numai numere întregi.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [tests]
@@ -566,15 +569,34 @@ Creați un program care primește un **număr** **n** și tipărește toate trip
 ||bba|
 ||bbb|
 
-## Sfaturi
+[hints]
+[hint]
+Efectuați 3 bucle imbricate de la 0 la n. 
 
-Efectuați 3 bucle imbricate de la 0 la n.
- 
+```js
+for (let num1 = 0; num1 < n; num1++) {
+  for (let num2 = 0; num2 < n; num2++) {
+    for (let num3 = 0; num3 < n; num3++) {
+      // ...
+    }
+  }
+}
+```
+[/hint] 
+[hint]
 Pentru fiecare număr "**num**", tipăriți litera latină corespunzătoare după cum urmează:
 
-`let letter = String.FromCharCode(97 + num)`
-
-Funcția `String.fromCharCode ()` obține valoarea **în zecimal** și o transformă într-un **caracter** din **tabelul ASCII.**
+```js
+console.log(
+  String.fromCharCode(97 + num1) +
+  String.fromCharCode(97 + num2) +
+  String.fromCharCode(97 + num3));
+```
+[/hint] 
+[hint]
+Funcția `String.fromCharCode()` obține valoarea **în zecimal** și o transformă într-un **caracter** din **tabelul ASCII.**
+[/hint] 
+[/hints]
 
 [/task-description]
 [tests]
@@ -1299,10 +1321,10 @@ C B A
 [/test]
 [test]
 [input]
-reversChars('1','L','\&')
+reversChars('10','D','\&')
 [/input]
 [output]
-\& L 1
+\& D 10
 [/output]
 [/test]
 [/tests]

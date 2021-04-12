@@ -91,9 +91,11 @@ Pe **a doua linie**, tipăriți **ultimele elemente k** , separate printr-un **s
 |numbers([3, 6, 7, 8, 9]) | 6 7 8 |
 | | 7 8 9 |
 
-## Sfaturi
-
-- Utilizați `slice ()` pentru a **împărți** matricea în **două părți**
+[hints]
+[hint]
+Utilizați `slice ()` pentru a **împărți** matricea în **două părți**.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [tests]
@@ -210,15 +212,22 @@ Ieșirea este **imprimată** pe consolă pe **o singură linie**, separată de *
 |numbers(6, 3)| 1 1 2 4 7 13 |
 |numbers(8, 2) | 1 1 2 3 5 8 13 21 |
 
-## Sfaturi
+[hints]
+[hint]
+`numbers(6, 3)` -\> "**1 1 2 4 7 13**"
 
-**Al doilea element (1)** este egal cu suma celor 3 elemente din fața sa, dar există un singur element, deci luăm acest lucru.
-
-Al treilea element este egal cu suma primelor două elemente (1 și 1).
-
-Al patrulea element este egal cu suma de 1, 1 și 2.
-
-Al cincilea element este egal cu suma celui de-al 2-lea, al 3-lea și al 4-lea (1, 2 și 4) și așa mai departe
+**Al doilea element (1)** este **egal cu suma** celor **3 elemente din fața sa**, dar există un **singur** element, deci luăm acest lucru.
+[/hint] 
+[hint]
+Al **treilea element** este egal cu suma **primelor două elemente (1 și 1)**.
+[/hint] 
+[hint]
+Al **patrulea element** este egal cu suma de **1**, **1** și **2**.
+[/hint] 
+[hint]
+Al **cincilea element** este egal cu suma celui de-al **2-lea, al 3-lea și al 4-lea (1, 2 și 4)** și așa mai departe.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [tests]

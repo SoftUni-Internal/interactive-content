@@ -64,13 +64,17 @@ Urmat de:
 |lift([15, '0 0 0 0'])| There is room for more passengers! |
 ||4 4 4 3 |
 
-## Cometariu
-
-* Prima stare: 4 0 0 0 \-\> 11 persoane au plecat
-
-* A doua stare: 4 4 0 0 \-\> 7 persoane au plecat
-
-* A treia stare:  4 4 4 0 \-\> 3 persoane au plecat
+[hints]
+[hint]
+Prima stare: 4 0 0 0 \-\> 11 persoane au plecat
+[/hint] 
+[hint]
+A doua stare: 4 4 0 0 \-\> 7 persoane au plecat
+[/hint] 
+[hint]
+A treia stare:  4 4 4 0 \-\> 3 persoane au plecat
+[/hint] 
+[/hints] 
 
 ## Exemplul Doi
 
@@ -79,14 +83,17 @@ Urmat de:
 |lift([20, '0 2 0'])|The lift is full. 10 people currently in line.|
 ||4 4 4|
 
-## Cometariu
-
-* Prima stare: - 4 2 0  \-\> 16 persoane au plecat
-
-* A doua stare: - 4 4 0  \-\> 14 persoane au plecat
-
-* A treia stare: - 4 4 4 \-\> 10 oameni au plecat, dar nu mai există vagoane
-
+[hints]
+[hint]
+Prima stare: - 4 2 0  \-\> 16 persoane au plecat
+[/hint] 
+[hint]
+A doua stare: - 4 4 0  \-\> 14 persoane au plecat
+[/hint] 
+[hint]
+A treia stare: - 4 4 4 \-\> 10 oameni au plecat, dar nu mai există vagoane
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]

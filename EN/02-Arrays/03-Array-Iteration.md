@@ -225,8 +225,12 @@ Your task is to **reverse** it and **print** its elements.
 | reverse(['abc', 'def', 'hig', 'klm', 'nop']) | nop klm hig def abc |
 | reverse(['33', '123', '0', 'dd']) | dd 0 123 33 |
 
-## Comments
+[hints]
+[hint]
 The first element should be last, and the last element should be first.
+[/hint] 
+[/hints] 
+
 
 [/task-description]
 [tests]

@@ -393,13 +393,16 @@ A number is special when the **sum of its digits** is equals to **5, 7, or 11.**
 ||4 -> False|
 ||5 -> True|
 
-## Hints
-
+[hints]
+[hint]
 To calculate the sum of digits of a given number, you might repeat the following:
 
-- sum the last digit `num % 10` and remove it `sum = sum / 10` until num reaches **0**
-
+- sum the last digit `num % 10` and remove it `sum = sum / 10` until `num` reaches `0`
+[/hint] 
+[hint]
 Use `parseInt()` while dividing to get only integer numbers.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [tests]
@@ -573,15 +576,34 @@ Create a program that receives a **number n** and prints all triples of the firs
 ||bba|
 ||bbb|
 
-## Hints
-
+[hints]
+[hint]
 Perform 3 nested loops from 0 to n. 
- 
+
+```js
+for (let num1 = 0; num1 < n; num1++) {
+  for (let num2 = 0; num2 < n; num2++) {
+    for (let num3 = 0; num3 < n; num3++) {
+      // ...
+    }
+  }
+}
+```
+[/hint] 
+[hint]
 For each number "**num**", print its corresponding Latin letter as follows:
 
-`let letter = String.FromCharCode(97 + num)`
-
+```js
+console.log(
+  String.fromCharCode(97 + num1) +
+  String.fromCharCode(97 + num2) +
+  String.fromCharCode(97 + num3));
+```
+[/hint] 
+[hint]
 The function `String.fromCharCode()` gets the **value in decimal** and transforms it to a **character** from the **ASCII table.**
+[/hint] 
+[/hints]
 
 [/task-description]
 [tests]
@@ -1307,10 +1329,10 @@ C B A
 [/test]
 [test]
 [input]
-reversChars('1','L','\&')
+reversChars('10','D','\&')
 [/input]
 [output]
-\& L 1
+\& D 10
 [/output]
 [/test]
 [/tests]

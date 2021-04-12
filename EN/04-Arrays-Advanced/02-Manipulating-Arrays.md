@@ -92,10 +92,11 @@ On the **second line**, print the **last k** elements, separated by **space*
 |numbers([3, 6, 7, 8, 9]) | 6 7 8 |
 | | 7 8 9 |
 
-# Hints
-
-- Use `slice()` to **split** the array into **two parts**
-
+[hints]
+[hint]
+Use `slice()` to **split** the array into **two parts**.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [tests]
@@ -217,15 +218,22 @@ The output is **printed** to the console on a **single line**, separated by **sp
 |numbers(8, 2) | 1 1 2 3 5 8 13 21 |
 
 
-## Hints
+[hints]
+[hint]
+`numbers(6, 3)` -\> "**1 1 2 4 7 13**"
 
 The **second element (1)** is **equal to the sum** of the **3 elements before it**, but there is only **one** element, so we take that. 
-
+[/hint] 
+[hint]
 The **third element** is equal to the sum of the **first two elements (1 and 1)**. 
-
+[/hint] 
+[hint]
 The **fourth element** is equal to the sum of **1**, **1** and **2**. 
-
+[/hint]
+[hint]
 The **fifth element** is equal to the sum of the **second, third and fourth (1, 2, and 4)** and so on.
+[/hint]  
+[/hints] 
 
 [/task-description]
 [tests]

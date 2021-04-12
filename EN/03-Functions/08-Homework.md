@@ -1098,13 +1098,40 @@ The sum of a number's positive divisors excluding the number itself is also know
 | perfectNumber(28) | We have a perfect number!|1 + 2 + 4 + 7 + 14|
 | perfectNumber(1236498) |It's not so perfect.||
 
-## Hint
-
-Equivalently, a perfect number is a number that is **half the sum** of all of its positive divisors, excluding itself
+[hints]
+[hint]
+Equivalently, a perfect number is a number that is **half the sum** of all of its positive divisors, excluding itself.
 
 **Six** is a perfect number because it is the sum of "**1 + 2 + 3**" (all of which are divided without residue).
-
+[/hint] 
+[hint]
 Learn more about perfect numbers [here](https://en.wikipedia.org/wiki/Perfect_number).
+[/hint] 
+[hint]
+You can create a **for-loop** from **0** to **num / 2**:
+
+```js
+tempNum = 0;
+
+for (let i = 0; i <= num / 2; i++) {
+  if (num % i === 0) {
+    tempNum += i;
+  }
+}
+```
+[/hint] 
+[hint]
+Then, create an **if-else** block, and print the correct output:: 
+
+```js
+if (tempNum === num && tempNum !== 0) {
+        console.log("We have a perfect number!");
+    } else {
+        console.log("It's not so perfect.");
+    }
+```
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]

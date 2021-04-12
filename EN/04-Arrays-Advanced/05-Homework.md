@@ -597,14 +597,25 @@ The output is the sorted array of strings.
  ||Theodor|
 ||Harrison|
 
-## Hints
+[hints]
+[hint]
+An array can be sorted by passing a compare function to the `Array.sort()` function.
+[/hint] 
+[hint]
+Creating a **compare function** by two criteria can be achieved by first comparing by the main criteria, and if the two items are different \(the result of the comparison is not 0\) - return the result of the **compare function**.
 
-- An array can be sorted by passing a compare function to the `Array.sort()` function
-
-- Creating a **compare function** by two criteria can be achieved by first comparing by the main criteria, and if the two items are different \(the result of the comparison is not 0\) - return the result of the **compare function** 
-
+```js
+let sorted = array.sort((a, b) =>
+  a.length - b.length || 
+  a.localeCompare(b)).join('\n');
+```
+[/hint] 
+[hint]
 If the two items are the same by the main criteria \(the result of the comparison is 0\), we need to compare them by the second criteria, and the result of that comparison will be the result of the **compare function.** 
 
+`return sorted;`
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]

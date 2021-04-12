@@ -67,13 +67,17 @@ Followed by:
 |lift([15, '0 0 0 0'])| There is room for more passengers! |
 ||4 4 4 3 |
 
-**Comment**
-
-* First state: 4 0 0 0 \-\> 11 people left
-
-* Second state: 4 4 0 0 \-\> 7 people left
-
-* Third state: 4 4 4 0 \-\> 3 people left
+[hints]
+[hint]
+First state: 4 0 0 0 \-\> 11 people left
+[/hint] 
+[hint]
+Second state: 4 4 0 0 \-\> 7 people left
+[/hint] 
+[hint]
+Third state: 4 4 4 0 \-\> 3 people left
+[/hint] 
+[/hints] 
 
 ## Example Two
 
@@ -82,14 +86,17 @@ Followed by:
 |lift([20, '0 2 0'])|The lift is full. 10 people currently in line.|
 ||4 4 4|
 
-**Comment**
-
-* First state - 4 2 0 \-\> 16 people left
-
-* Second state - 4 4 0 \-\> 14 people left
-
-* Third state - 4 4 4 \-\> 10 people left, but there are no more empty seats
-
+[hints]
+[hint]
+First state - 4 2 0 \-\> 16 people left
+[/hint] 
+[hint]
+Second state - 4 4 0 \-\> 14 people left
+[/hint] 
+[hint]
+Third state - 4 4 4 \-\> 10 people left, but there are no more empty seats
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]

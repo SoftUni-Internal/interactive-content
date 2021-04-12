@@ -201,7 +201,7 @@ solve(['5', '10'])
 [slide hideTitle]
 # Pushing and Popping Into an Array
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-10-pushing-an-array-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-10-7-pushing-an-array-and-pop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `array.push()` method **adds** one or more elements **to the end of an array** and **returns the new length**:
 
@@ -269,7 +269,7 @@ It also returns the **new length** of the array.
 [slide hideTitle]
 # Problem with Solution: Negative or Positive Numbers
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05.JS-Fundamentals-Arrays-Advanced-12-problem-and-solution-negative-posivite-numbers-v2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-12-problem-and-solution-negative-posivite-numbers-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Negative or Positive Numbers" taskId="fundamentals-js-arrays-advanced-lab-Negative-or-Positive-Numbers"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -304,31 +304,34 @@ The **output** has to be **printed to the console**, each element on a **new
 ## Example One
 | **Input** | **Output** |
 | --- | --- |
-|negativePositive(['7', '-2', '8', '9']) | \-2 |
+|negativePositive([7, -2, 8, 9]) | \-2 |
 | | 7 |
 | | 8 |
 | | 9 |
 
+
 ## Example Two
 | **Input** | **Output** |
 | --- | --- |
-|negativePositive(['3', '-2', '0', '-1'])  | \-1 |
+|negativePositive([3, -2, 0, -1])  | \-1 |
 | | \-2 |
 | | 3 |
 | | 0 |
 
-## Hints
-
-- Use `unshift()` to add an element at the **first** position
-
-- Use `push()` to add an element at the **last** position
-
+[hints]
+[hint]
+Use `unshift()` to add an element at the **first** position.
+[/hint] 
+[hint]
+Use `push()` to add an element at the **last** position.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [tests]
 [test open]
 [input]
-negativePositive(['\-2', '8', '7', '99', '100', '11'])
+negativePositive([\-2, 8, 7, 99, 100, 11])
 [/input]
 [output]
 \-2
@@ -341,7 +344,7 @@ negativePositive(['\-2', '8', '7', '99', '100', '11'])
 [/test]
 [test open]
 [input]
-negativePositive(['3', '\-2', '0', '\-1'])
+negativePositive([3, \-2, 0, \-1])
 [/input]
 [output]
 \-1
@@ -352,7 +355,7 @@ negativePositive(['3', '\-2', '0', '\-1'])
 [/test]
 [test]
 [input]
-negativePositive(['\-2', '\-11', '7', '8', '100', '\-11', '\-11', '11', '\-2'])
+negativePositive([\-2, \-11, 7, 8, 100, \-11, \-11, 11, \-2])
 [/input]
 [output]
 \-2
@@ -368,7 +371,7 @@ negativePositive(['\-2', '\-11', '7', '8', '100', '\-11', '\-11', '11', '\-2'])
 [/test]
 [test]
 [input]
-negativePositive(['\-2', '\-11', '7', '8', '0', '\-13', '0', '\-25', '0'])
+negativePositive([\-2, \-11, 7, 8, 0, \-13, 0, \-25, 0])
 [/input]
 [output]
 \-25
@@ -384,7 +387,7 @@ negativePositive(['\-2', '\-11', '7', '8', '0', '\-13', '0', '\-25', '0'])
 [/test]
 [test]
 [input]
-negativePositive(['2', '3', '4', '5', '6', '\-7', '\-8'])
+negativePositive([2, 3, 4, 5, 6, \-7, \-8])
 [/input]
 [output]
 \-8
@@ -398,7 +401,7 @@ negativePositive(['2', '3', '4', '5', '6', '\-7', '\-8'])
 [/test]
 [test]
 [input]
-negativePositive(['\-2', '3', '0', '5', '\-6', '0', '8'])
+negativePositive([\-2, 3, 0, 5, \-6, 0, 8])
 [/input]
 [output]
 \-6

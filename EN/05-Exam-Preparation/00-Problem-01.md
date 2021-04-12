@@ -110,6 +110,21 @@ A **string**, with commands separated by vertical lines ("\|").
 ||You died! Killed by boss.|
 ||Highest level reached: 6|
 
+[hints]
+[hint]
+Initialize the health points (**100**) and bitcoins (**0**), as well as the number of rooms reached (**0** at the beginning).
+[/hint] 
+[hint]
+Split the commands and go through each one using a for-of loop.
+[/hint] 
+[hint]
+Inside the for-of loop, create if-else statements for each command type or monster.
+[/hint] 
+[hint]
+For every condition, modify the data and/or print the corresponding output.
+[/hint] 
+[/hints] 
+
 ## Example Two
 
 | **Input** | **Output** |
