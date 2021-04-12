@@ -147,7 +147,7 @@ We can use the **prototype design pattern** when:
 
 [slide hideTitle]
 
-# Builder Pattern
+# The Builder Pattern
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-19-builder-pattern-demo-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
