@@ -100,7 +100,7 @@ class Team {
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-29-problem-and-solution-first-and-reserve-team-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="First and Reserve Team" timeLimit=5000 taskId="Java-OOP-Advanced-Encapsulation-First-and-Reserve-Team" executionType="tests-execution" executionStrategy="java-project-tests"]
+[code-task title="First and Reserve Team" timeLimit=100000 taskId="Java-OOP-Advanced-Encapsulation-First-and-Reserve-Team" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 [task-description]
