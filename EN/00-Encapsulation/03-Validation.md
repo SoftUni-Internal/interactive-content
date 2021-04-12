@@ -13,7 +13,7 @@ private void setSalary(double salary) {
   if (salary < 460) {   
     // Validation happens here
     throw new IllegalArgumentException("Message");
-  }
+  }\
   
   this.salary = salary;
 }
@@ -464,7 +464,7 @@ public class T07TestIncreaseSalary \{
         fieldSalary.setAccessible(true);
         double salary = (double) fieldSalary.get(person);
 
-        return salary == PERSON_SALARY + PERSON_SALARY \* PERSON_BONUS / 100.0;
+        return salary == PERSON_SALARY + PERSON_SALARY * PERSON_BONUS / 100.0;
     \}
 
     private boolean correctIncreaseSalaryOfYoungPerson(Method method, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
@@ -481,7 +481,7 @@ public class T07TestIncreaseSalary \{
         fieldSalary.setAccessible(true);
         double salary = (double) fieldSalary.get(person);
 
-        return salary == PERSON_SALARY + PERSON_SALARY \* PERSON_BONUS / 200.0;
+        return salary == PERSON_SALARY + PERSON_SALARY * PERSON_BONUS / 200.0;
     \}
 
     private Class getClass(String className) \{
