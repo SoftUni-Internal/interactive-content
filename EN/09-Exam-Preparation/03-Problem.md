@@ -8,15 +8,15 @@
 [task-description]
 # Description
 
-**Use the resources you downloaded in the first task.**
+**Use the resources from the first task.**
 
-You will receive a skeleton with **Present** and **PresentBag** classes inside. 
+There will be a sceleton holding **Present** and **PresentBag** classes. 
 
 The class will have some methods, fields, and one constructor, all of which must be properly working. 
 
-You are **not allowed** to change any class. 
+**Please do not** change any of the class content. 
 
-Cover the whole class with **unit tests** to make sure it is working as intended.
+Cover each class with **unit tests** to make sure it iworks as intended.
 
 You are provided with a **unit test project** in the **project skeleton**.
 
@@ -26,7 +26,7 @@ You are provided with a **unit test project** in the **project skeleton**.
 
 The **PresentBag** you need to test is in the **Christmas** package.
 
-Therefore, you should put the package in a **zip** file.
+You should place the package in a **zip** file.
 
 
 [/task-description]
