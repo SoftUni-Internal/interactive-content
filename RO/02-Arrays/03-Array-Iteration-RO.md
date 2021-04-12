@@ -1,11 +1,11 @@
-# Iterarea Matricei
+# Iterația Matricei
 
 [slide hideTitle]
-# Imprimarea Matricilor pe Consolă
+# Imprimarea Matricelor pe Consolă
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/02.JS-Fundamentals-Arrays/02.JS-Fundamentals-Arrays-16-17-Array-iteration-and-printing-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Pentru a imprima toate elementele matricei, poate fi utilizată o buclă for
+Pentru a imprima toate elementele matricei, poate fi utilizată o buclă for:
 
 ``` js live
 let capitals = ['Bucharest', 'Washington', 'London'];
@@ -15,7 +15,7 @@ for (let i = 0; i < capitals.length; i++) {
 }
 ```
 
-O altă modalitate de a imprima toate elementele matrice este folosirea `toString()`
+O altă modalitate de a imprima toate elementele matricei este utilizarea `toString()`:
 
 ``` js live
 let capitals = ['Bucharest', 'Washington', 'London'];
@@ -28,7 +28,7 @@ console.log(capitals.toString())
 # Bucla "for-of"
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/02.JS-Fundamentals-Arrays/02.JS-Fundamentals-Arrays-23-24-for-of-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Bucla `for..of` este utilizată pentru a itera peste orice obiect iterabil, dar nu poate fi utilizată pentru a accesa indecșii lor. 
+Bucla `for..of` este utilizată pentru a itera prin orice obiect iterabil, dar nu poate fi utilizată pentru a accesa indicii acestuia. 
 
 ``` js live
 const cars = ['Nio', 'Tesla', 'Xpeng'];
@@ -206,11 +206,11 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 
-Creați un program care primește o serie de șiruri (valori separate de spațiu).
+Creați un program care primește o **matrice de șiruri** (valori separate de spațiu).
 
-Sarcina dvs. este să o inversați și să le imprimați elementele.
+Sarcina dvs. este **să o inversați** și **să imprimați** elementele sale.
 
-**Elemente de schimb.**
+**Inversați** elementele.
 
 ## Exemplu
 |**Imput**|**Output** |
@@ -221,10 +221,9 @@ Sarcina dvs. este să o inversați și să le imprimați elementele.
 
 [hints]
 [hint]
-Primul element ar trebui să fie ultimul și ultimul ar trebui să devină primul.
+Primul element trebuie să fie ultimul și ultimul trebuie să devină primul.
 [/hint] 
 [/hints] 
-
 
 [/task-description]
 [tests]

@@ -12,13 +12,13 @@
 
 - Ce este o matrice
 
-**2. Operațiuni**
+**2. Operații**
 
-- Utilizarea funcționalității matricei încorporate
+- Utilizarea funcționalității încorporate a matricei
 
-**3. Iterarea matricei**
+**3. Iterația matricei**
 
-- Iterează printr-o matrice folosind o buclă for
+- Iterația printr-o matrice folosind o buclă for
 
 **4. Buclele for-of**
 

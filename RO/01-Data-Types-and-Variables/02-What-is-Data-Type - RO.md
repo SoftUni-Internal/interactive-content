@@ -4,7 +4,7 @@
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-8-9-10-what-is-a-data-type-examples-of-data-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Tipurile de date informează calculatorul ce cantitate de infromații trebuie să citească **din memorie**, dintr-o perspectivă pur tehnică.
+Tipurile de date informează calculatorul despre cantitatea de informații care trebuie citită **din memorie**, dintr-o perspectivă pur tehnică.
 
 În Javascipt putem **modifica** conținutul variabilelor. 
 
@@ -20,13 +20,13 @@ console.log(`I love ${myVar}!`);
 
 Cu toate că putem schimba valoarea variabilei, aceasta nu este o practică bună.
 
-Variabilele în Javascript **nu au** un tip, în ele putem **stoca** orice tipuri de date dorim, deci datele au tipuri.
+Variabilele în Javascript **nu au** un tip, putem **stoca** în ele orice tipuri de date dorim, dar datele au tipuri.
 
 În JavaScript, avem **șapte tipuri de date primitive** și un tip compozit, denumit de asemenea, tip referință. 
 
 Tipurile de date **primitive** sunt: `Boolean`, `Null`, `Undefined`, `Number`, `String`, `Symbol`, `BigInt`.
 
-Tipurile de date de **referință** sunt: `objects` și `arrays`.
+Tipurile de date **referință** sunt: `objects` și `arrays`.
 
 [image assetsSrc="data-types-in-js.png" /]
 
@@ -51,7 +51,7 @@ let unknown = undefined; // Undefined
 
 Variabilele în JavaScript nu sunt strict asociate cu un **tip de valoare** specific.
 
-Astfel, putem re-aloca variabile de toate tipurile:
+Astfel, putem realoca variabile de toate tipurile:
 
 ``` js live
 let variable = 15; 

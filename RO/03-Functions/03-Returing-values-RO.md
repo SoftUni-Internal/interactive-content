@@ -1,15 +1,15 @@
-# Valori Returnate
+# Returnarea Valorilor
 
 [slide hideTitle]
 # Instrucțiunea Return
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-17-18-the-return-statement-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Operatorul `return` este folosit pentru a returna o valoare din interiorul unei funcții.
+Operatorul **return** este folosit pentru a returna o valoare din interiorul unei funcții.
 
-Odată ce un operator `return` este executat, **orice după el în interiorul unei funcții nu rulează.**
+Odată ce operatorul **return** este executat, **orice se află după el în interiorul unei funcții nu va rula.**
 
-Operatorul `return` poate fi în orice loc al funcției.
+Operatorul **return** poate fi plasat oriunde în cadrul funcției.
 
 ``` js live
 function readFullName(firstName, lastName) {
@@ -20,7 +20,7 @@ const fullName = readFullName('John', 'Smith');
 console.log(fullName)
 ```
 
-Puteți utiliza operatorul `return` numai în **interiorul unei funcții.**
+Puteți utiliza operatorul **return** numai în **interiorul unei funcții.**
 
 Dacă încercați să-l utilizați în afara unei funcții, **va genera o eroare.**
 
@@ -53,11 +53,11 @@ multiply(getMax(5,10), 20);
 [/slide]
 
 [slide hideTitle]
-# Valori Returnate: Exemple
+# Returnarea Valorilor: Exemple
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-20-returning-values-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- Verificați dacă **indexul matricei** este valid:
+- Verificați dacă **indicele matricei** este valid:
 
 ``` js live
 function isValid(index, arr) {
@@ -71,11 +71,11 @@ function isValid(index, arr) {
 console.log(isValid(3, [1, 2, 3, 4, 5]));
 ```
 
-Când lucrați cu matricii, este adesea folosit pentru a verifica dacă **indexul este valid.**
+Când lucrați cu matrice, o asemenea funcție este adesea folosită pentru a verifica dacă **indicele este valid.**
 
-Rezultatul acestei funcții este **boolean**, va returna "**true**" dacă indexul se află în interiorul limitei matricei și va returna "**false**" dacă nu se află acolo.
+Rezultatul acestei funcții este **boolean**, va returna "**true**" dacă indicele se află în cadrul limitei matricei și va returna "**false**" dacă nu se află acolo.
 
-- Elevul promovează examenul:
+- În acest exemplu, elevul promovează examenul dacă primește o notă mai mare decât 3:
 
 ```js live
 function pass(grade) {
@@ -104,7 +104,7 @@ Funcția imbricată funcționează în domeniul funcției externe.
 
 Funcția interioară **poate accesa** variabilele și argumentele funcției externe.
 
-**DAR funcția exterioară nu are acces la variabilele funcției interioare** și nici aplicația apelantă nu are acces la funcția interioară.
+În schimb, **funcția exterioară nu are acces la variabilele funcției interioare** și nici aplicația apelantă nu are acces la funcția interioară.
 
 [image assetsSrc="js-fundamentals-1-adv-functions-1.png" /]
 
@@ -129,8 +129,8 @@ swapElements([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 
 În acest exemplu, creăm o funcție `swapElements()`, care primește un argument.
 
-În corpul funcției, facem o buclă prin matrice și invocăm o altă funcție `swap()`, căreia îi trecem trei argumente.
+În corpul funcției, facem o buclă prin matrice și invocăm o altă funcție `swap()`, căreia îi transmitem trei argumente.
 
-Această funcție face schimbul real al elementelor matricei. 
+Această funcție face **schimbul propriu-zis** al elementelor matricei. 
 
 [/slide]

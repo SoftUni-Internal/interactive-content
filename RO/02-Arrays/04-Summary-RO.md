@@ -3,11 +3,11 @@
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/02.JS-Fundamentals-Arrays/02.JS-Fundamentals-Arrays-27-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## Ce ați învățat în această lecție: 
+## În această lecție ați învățat: 
 
-- Matricile sunt secvențe de elemente 
+- Matricele sunt secvențe de elemente 
 
-    - elementele lor sunt numărate de la  0 până la `length-1`
+    - elementele lor sunt numerotate de la  0 până la `length-1`
 
 ``` js live
 let numbers = [1, 2, 3, 4, 5];
@@ -20,12 +20,12 @@ console.log(numbers[numbers.length-1])
 ``` js 
 let numbers = [1, 2, 3, 4, 5];
 ```
-- Putem accesa elementele matricei prin indecșii acestora:
+- Putem accesa elementele matricei prin indicii acestora:
 
 ``` js 
 let numbers = [1, 2, 3, 4, 5];
 ```
-- Elementele pot fi iterate printr-o buclă standard loop o buclă "**for-of**" 
+- Elementele pot fi iterate printr-o buclă standard sau o buclă "**for-of**" 
 ``` js live
 let numbers = [1, 2, 3, 4, 5];
 
@@ -34,9 +34,9 @@ for (const number of numbers) {
 }
 ```
 
-## În lecția umrătoare, veți învăța:
+## În lecția umrătoare veți învăța:
 
-- Cde reprezintă o funcție?
+- Ce reprezintă o funcție?
 
 - Declararea și invocarea funcțiilor
 

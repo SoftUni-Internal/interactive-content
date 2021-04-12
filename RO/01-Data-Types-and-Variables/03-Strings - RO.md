@@ -1,6 +1,6 @@
 [slide hideTitle]
 
-# Ce Sunt Șirurile?
+# Ce sunt Șirurile?
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-12-13-what-is-a-string-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -8,7 +8,7 @@ Un șir este un tip de date care se folosește pentru a prezenta un **text** și
 
 Fiecare simbol are o **poziție** în șir și atunci când le conectăm, **se obține un text.**
 
-Putem scoate **simboluri** individuale dintr-un șir.
+Putem lua **simboluri** individuale dintr-un șir.
 
 Aici, de exemplu, luăm primul element din șir și lungimea acestuia.
 
@@ -24,13 +24,13 @@ console.log(myString.length);
 [slide hideTitle]
 
 
-# Șirurile Sunt Neschimbătoare
+# Șirurile sunt Imuabile 
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-14-strings-are-immutable-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Țineți minte că putem să scoatem doar elemente individuale ale șirului, dar nu putem să modificăm elementele care se află înlăuntrul șirului.
+Țineți minte că putem să scoatem doar elemente individuale ale șirului, dar nu putem să modificăm elementele care se află înăuntrul șirului.
 
-Șirurile sunt neschimbătoare. 
+Șirurile sunt imuabile (nu pot fi schimbate). 
 
 În acest exemplu, încercăm să modificăm al patrulea simbol, care este `o`:
 
@@ -52,9 +52,9 @@ console.log(myString);
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-15-sting-interpolation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Înlocuirea **substituenților** cu valori înlăuntrul unui șir literal se numește **interpolarea** șirului. 
+Înlocuirea **substituenților** cu valori înăuntrul unui șir literal se numește **interpolarea** șirului. 
 
-În JavaScript, literalele template-ului (acele șiruri aflate între apostroafe) și expresia `${expression}` ca substituent realizează interpolarea șirurilor.
+În JavaScript, literalii șablonului (șiruri încadrate de apostrof) și expresia `${expression}` ca substituent realizează interpolarea șirurilor.
 
 ``` js live
 let name = 'Rick';
@@ -209,7 +209,7 @@ Primul șir va fi un cuvânt cu un **caracter lipsă** înlocuit cu underscore (
 
 Trebuie să **înlocuiți** spațiul lipsă semnalat de underscore din primul șir cu caracterul dat și să **comparați** rezultatul cu cel de-al doilea șir dat. 
 
-Dacă sunt egale, ar trebui să tipăriți "**Matched**", altfel veți tipări "**Not Matched**".
+Dacă sunt egale, trebuie să tipăriți "**Matched**", altfel veți tipări "**Not Matched**".
 
 
 ## Exemplu

@@ -11,28 +11,27 @@
 
 O matrice este o **colecție ordonată** și datele din interiorul acesteia pot fi modificate.
 
-Poate fi folosit pentru **păstrarea secvențelor de date și iterația** peste ele.
+Poate fi folosit pentru **păstrarea secvențelor de date și pentru a itera** prin ele.
 
-Pentru a declara o matrice, plasăm valorile pe care ar trebui să le dețină între paranteze pătrate, fiecare element al matricei trebuie să fie separat printr-o virgulă.
+Pentru a declara o matrice, plasăm valorile pe care trebuie să le dețină între paranteze drepte, fiecare element al matricei trebuie să fie separat printr-o virgulă.
 
-Crearea unui set de șiruri:
+Crearea unei matrice de șiruri:
 
 ```js
 let fruit = ['apple', 'pear', 'cherry'];
 ```
-Matricile pot conține variabile de **diferite tipuri de date**, numere întregi, șiruri, booleene etc. 
+Matricele pot conține variabile cu **diferite tipuri de date** - numere întregi, șiruri, booleene etc. 
 
-De asemenea, **valorile** duplicate **pot** fi stocate în ea 
+De asemenea, **pot** fi stocate în ea valori **duplicate**: 
 
 ```js
 let myArray = ['string', 2, 3.33, 2, true];
 ```
 
 Valorile dintr-o matrice se numesc **elemente.**
+Puteți să vă gândiți la o matrice ca la un **tren**, al cărui vagon **poate conține un tip și un număr diferit de obiecte**: pasageri, mărfuri, materii prime, vagonul ar putea fi chiar gol.
 
-Ai putea să te gândești la el ca la un **tren**, fiecare vagon din care **poate conține un tip și un număr diferit de obiecte**: pasageri, mărfuri, materii prime,vagonul ar putea fi chiar gol.
-
-Acum să ne imaginăm **o serie de numere întregi**, fiecare element reprezentând un vagon și fiecare valoare este numărul de pasageri.
+Acum să ne imaginăm **o matrice de numere întregi**, fiecare element reprezentând un vagon și fiecare valoare este numărul de pasageri.
 
 Ca și în această reprezentare grafică:
 
@@ -40,7 +39,7 @@ Ca și în această reprezentare grafică:
 
 Acesta are **7 vagoane** (**elemente**).
 
-Fiecare are **pasageri** (o valoare)
+Fiecare are **pasageri** (o valoare).
 
 - [3, 4, 10, 7, 5, 0, 6]
 
@@ -58,21 +57,21 @@ Folosind metoda `Array.length` putem obține o variabilă, care conține lungime
 
 Există două moduri de a crea o matrice:
 
-Inițializați-o folosind **paranteze pătrate** `[]`, dacă nu sunt declarate elemente, matricea va fi goală
+- Inițializarea folosind **paranteze drepte** `[]`; dacă nu sunt declarate elemente, matricea va fi goală:
 
 ```js
 let names = [];
 ```
 
-Inițializați o matrice care conține valori întregi:
+- Inițializarea unei matrice care conține valori întregi:
 
 ```js
 let numbers = [1, 2, 3, 4, 5];
 ```
 
-Când avem o matrice, putem accesa fiecare element după indexul său.
+Când avem o matrice, putem accesa fiecare element după indicele său.
 
-Operatorul `[]` este utilizat pentru a accesa elementele matricei prin **indexul lor.**
+Operatorul `[]` este utilizat pentru a accesa elementele matricei prin **inddicele lor.**
 
 ```js live
 let numbers = [1, 2, 3, 4, 5];
@@ -81,9 +80,9 @@ console.log(`First number is ${numbers[0]}`);
 console.log(`Last number is ${numbers[numbers.length-1]}`);
 ```
 
-**Putem atribui valori** elementelor matricei la un anumit index
+**Putem atribui valori** elementelor matricei corespunzătoare unui anumit indice.
 
-**Metoda de lungime** poate fi utilizată pentru a returna numărul de elemente dintr-un șir:
+**Metoda length** poate fi utilizată pentru a returna numărul de elemente dintr-o matrice:
 
 ``` js live
 let numbers = [1, 2, 3, 4, 5];
@@ -222,9 +221,9 @@ let days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 
 
 Acesta este un exemplu de matrice care conține șiruri pentru diferitele zile ale săptămânii.
 
-Primul element, Monday, este la indexul 0 al matricei.
+Primul element, Monday, corespunde indicelui 0 al matricei.
 
-Primul element, Sunday, se află la indexul 6 al matricei.
+Ultimul element, Sunday, corespunde indicelui 6 al matricei.
 
 [/slide]
 
@@ -361,12 +360,12 @@ Matrice care conține numere:
 let numbers = [10, 20, 30, 40, 50];
 ```
 
-Matrice care conține șiruri
+Matrice care conține șiruri:
 ``` js
 let weekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 ```
 
-Matrice care conține date mixte
+Matrice care conține date mixte:
 ```js
 let mixedArr = [20, new Date(), 'hello', {x:5, y:8}];
 ```
@@ -385,7 +384,7 @@ arr[arr.length] = 40;
 console.log(arr); 
 ```
 
-Sau putem folosi metoda push încorporată
+Sau putem folosi metoda push încorporată:
 
 ``` js live
 let arr = [10, 20, 30];
@@ -396,12 +395,12 @@ console.log(arr);
 [/slide]
 
 [slide hideTitle]
-# Mmatricele JavaScript și Pozițiile Nevalide
+# Matricele JavaScript și Pozițiile Nevalide
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/02.JS-Fundamentals-Arrays/02.JS-Fundamentals-Arrays-12-JS-Arrays-and-invalid-positions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-Dacă încercăm să atribuim o valoare unui index inexistent, JavaScript va umple elementele lipsă cu valori 'nedefinite' și îi va mări dimensiunea:
+Dacă încercăm să atribuim o valoare unui indice inexistent, JavaScript va umple elementele lipsă cu valori "nedefinite" și îi va mări dimensiunea:
 
 ``` js live
 let nums = [10, 20, 30];
@@ -415,7 +414,7 @@ console.log(nums[3]);
 
 Erori tipice cu care ne putem confrunta atunci când lucrăm cu o matrice:
 
-Putem accesa de fapt indecși care nu există în matrice. 
+- Putem accesa de fapt indici care nu există în matrice
 
 ``` js live
 let nums = [10, 20, 30];

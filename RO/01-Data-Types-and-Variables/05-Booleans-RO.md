@@ -10,16 +10,16 @@ Valorile booleene poartă numele lui [George Boole](https://en.wikipedia.org/wik
 
 Valorile booleene reprezintă unele **valori logice**.
 
-Ele pot avea doar două valori "**true**" sau "**false**".
+Ele pot avea doar două valori: "**true**" sau "**false**".
 
-Putem da această valoare ca **literala** sau o putem obține din rezultatul unei **expresii date**.
+Putem da această valoare ca **literal** sau o putem obține din rezultatul unei **expresii date**.
 
 ``` js live
 let myBool = 10 > 9;
 console.log(myBool);
 ```
 
-Comparațiile booleene sunt cel mai adesea plasate în construcția "**if**", si putem returna și o valoare booleană ca **rezultat dintr-o funcție.**
+Comparațiile booleene sunt cel mai adesea plasate în construcția "**if**", dar putem returna și o valoare booleană ca **rezultat dintr-o funcție.**
 
 **Extrem de rar** scriem "**true**" sau "**false**" în mod explicit.
 
@@ -37,9 +37,9 @@ Exemple de operatori de comparație:
 | `==` | egal cu (fără tip) | `if (day == 'Monday')` |
 | `===` | egal cu (cu tip) | `if (5 === 5)` |
 | `!=`| nu este egal (fără tip) | `if (5 != 5)` |
-| `!==` | nu este egal (cu tipul) | `if (5 !== '5')` |
+| `!==` | nu este egal (cu tip) | `if (5 !== '5')` |
 | `>` | mai mare decât | `if (salary > 9000)` |
-| `<` | mai puțin de | `if (age < 18)` |
+| `<` | mai mic decât | `if (age < 18)` |
 | `>=` | mai mare sau egal cu (fără tip) | `if (6 >= 6)` |
 | `<=` | mai mic sau egal cu (fără tip) | `if(6 <= 6)` |
 
@@ -47,7 +47,7 @@ Exemple de operatori de comparație:
 [/slide]
 
 [slide hideTitle]
-# True and False
+# True și False
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-24-25-boolean-comparisons-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -73,13 +73,13 @@ if (number) {
 }
 ```
 
-În plus față de "**true**" și "**false**", JavaScript are "**truthy**" și "**false**" (uneori scris "**falsey**").
+În plus față de "**true**" și "**false**", JavaScript are "**truthy**" și "**falsy**".
 
-Acestea sunt valori care nu sunt**'adevărate' sau 'false', dar când le transformăm într-o valoare booleană ele dau "**true**" sau "**false**".
+Acestea sunt valori care **nu sunt** **true** sau **false**, dar când le transformăm într-o valoare booleană ele dau "**true**" sau "**false**".
 
-În JavaScript este **limbaj slab tastat** și nu avem tipuri de variabile.
+În JavaScript este **slab tastat**, deci nu avem tipuri de variabile.
 
-Acest lucru nu împiedică o expresie if care încearcă să compare variabile care stochează valori cu diferite tipuri.
+Acest lucru nu împiedică o expresie "**if**" care încearcă să compare variabile care stochează valori cu diferite tipuri.
 
 În acest exemplu: 
 
@@ -87,21 +87,21 @@ Acest lucru nu împiedică o expresie if care încearcă să compare variabile c
 console.log(5 == '5');
 ```
 
-trecem valori de diferite tipuri, folosind operatorul `==` or`!=`.
+trecem valori de diferite tipuri, folosind operatorul `==` sau `!=`.
 
-În acest caz, interpretul va face așa-numitul **casting implicit**.
+În acest caz, interpretor va face așa-numitul **casting implicit**.
 
-Aceasta înseamnă că interpretul implicit va **converti** o valoare în **altă**, ceea ce în majoritatea cazurilor înseamnă **convertirea într-un șir.**
+Acest lucru înseamnă că interpretorul implicit va **converti** o valoare în **alta**, ceea ce în majoritatea cazurilor înseamnă **convertirea într-un șir.**
 
 Dând un**șir**și un**număr**, de exemplu, **numărul devine un șir** și interpretul compară șirurile.
 
-Dacă folosim `===` interpretul **nu convertește numărul într-un șir**, deci **numărul cinci nu este același cu șirul cinci** și această expresie returnează in `false`.
+Dacă folosim `===`, interpretorul **nu convertește numărul într-un șir**, deci **numărul cinci nu este același cu șirul cinci** și această expresie returnează `false`.
 
 ``` js live
 console.log(5 === '5');
 ```
 
-În ceea ce privește valorile "**truthy**" și "**falsey**", de exemplu în construcția "**if**" putem compara cu diferite tipuri de date.
+În ceea ce privește valorile "**truthy**" și "**falsy**", le putem folosi de exemplu într-o construcție "**if**" pentru a compara diferite tipuri de date:
 
 ``` js live
 if (5 == true) {
@@ -111,7 +111,7 @@ if (5 == true) {
 }
 
 ```
-Rezultatul acestei expresii va fi `not`, iar acesta este un comportament așteptat.
+Rezultatul acestei expresii va fi `not`, iar acesta este comportamentul așteptat.
 
 Rezultatul acestei expresii:
 ``` js live
@@ -122,13 +122,13 @@ if (1 == true) {
 }
 ```
 
-Este "**same**", deoarece interpretul le vede ca `1 == true` și transformă acest lucru într-o **valoare booleană.**
+este "**same**", deoarece interpretorul vede `1 == true` și transformă acest lucru într-o **valoare booleană.**
 
-Valorile **0** și **1** devin valoarea booleană **0 false**, **1 true**.
+Valorile **0** și **1** devin valorile booleană **0 false** și **1 true**.
 
 Celelalte valori numerice devin valori booleene și sunt "**false**".
 
-În JavaScript avem opt valori despre care se presupune că sunt "**falsey**":
+În JavaScript avem opt valori care sunt admise ca fiind "**falsy**":
 
 | **Valoare** | **Descriere** | 
 | :---:       |    :----:   |   
@@ -139,7 +139,7 @@ Celelalte valori numerice devin valori booleene și sunt "**false**".
 | `''` |  Valoarea șirului gol | 
 | `null` |  `null` - absența oricărei valori | 
 | `undefined` | `undefined` - valoarea primitivă | 
-| `NaN` |  `NaN` - nu un număr | 
+| `NaN` |  `NaN` - non-număr | 
 
 Toate celelalte valori sunt "**true**", de exemplu o matrice goală `[]` și un obiect gol `{}` sunt adevărate.
 
@@ -176,16 +176,14 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Creați un program care ca intrare va primi un **număr** ca intrare și imprimă dacă numărul este uimitor sau nu.
+Creați un program care va primi un **număr** ca intrare și care determină dacă numărul este **amazing** sau **nu** și imprimă rezultatul.
  
-Un număr uimitor este unul care include **cifra 9** în suma cifrelor sale.
-Imprimați rezultatul în irmătorul format: 
+Un număr **amazing** este unul care include **cifra 9** în suma cifrelor sale.
+Imprimați rezultatul în următorul format: 
 
 "\{**number**\} **Amazing?** \{**result**\}"
 
-
-
-Exemple pentru numere uimitoare sunt:
+Exemple pentru numere amazing sunt:
 
 - 1233 (1 + 2 + 3 + 3 = 9)
 
@@ -292,15 +290,15 @@ amazingNumber(65451)
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-28-29-Definition-of-the-typeof-operator-and-examples-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-JavaScript în sine oferă un operator numit `typeof` pentru tot ceea ce funcționează într-un mod simplu.
+JavaScript în sine oferă un operator numit `typeof` pentru tot ceea ce funcționează într-un mod direct.
 
-`typeof` **returnează un șir** din ceea ce este un tip de date de valori, deci pentru un obiect, `object` care se returnează  și pentru un șir `string`.
+`Typeof` **returnează un șir** cu tipul de date al unei valori, deci pentru un obiect, se returnează `object` și pentru un șir, `string`.
 
 Cu toate acestea, tipurile de date JavaScript și operatorul `typeof` nu sunt tocmai perfecte.
 
 De exemplu, pentru matrice și `null`, este returnat un `obiect`. 
 
-Pentru `NaN` și `Infinity` - un număr.
+Pentru `NaN` și `Infinity` - `number`.
 
 Exemple:
 

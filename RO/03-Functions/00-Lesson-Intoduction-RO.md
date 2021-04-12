@@ -20,7 +20,7 @@
 
 - Conceptul de plasare a funcțiilor în interiorul altor funcții 
 
-**4. Valoare și tipuri de referință**
+**4. Tipurile valoare și referință**
 
 - Diferențele și similaritățile dintre cele două
 

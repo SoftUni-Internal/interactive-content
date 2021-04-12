@@ -20,7 +20,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care primește o **matrice de șiruri**, le parsează la **numere** și însumă doar numerele pare.
+Creați un program care primește o **matrice de șiruri**, le parsează la **numere** și însumează doar numerele pare.
 
 ## Exemplu
 |**Intrare**|**Ieșire**|
@@ -267,11 +267,11 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Creați un program care primește **o matrice de numere** și le condenzează prin **însumarea** cuplurilor adiacente de elemente până se obține un **număr unic**.
+Creați un program care primește **o matrice de numere** și le condensează prin **însumarea** cuplurilor adiacente de elemente până se obține un **număr unic**.
 
 ## Exemple
 
-De exemplu, dacă avem 3 elemente \[**2, 10, 3**\], însumăm pe primul și al doilea element și apoi pe al doilea și al treilea  și obținem \{**2+10, 10+3**\} = \{**12, 13**\}, atunci însumăm din nou toate elementele adiacente și obțineți \{**12+13**\} = \{**25**\}.
+De exemplu, dacă avem 3 elemente \[**2, 10, 3**\], însumăm primul și al doilea element și apoi pe al doilea și al treilea și obținem \{**2+10, 10+3**\} = \{**12, 13**\}, apoi însumăm din nou toate elementele adiacente și obținem \{**12+13**\} = \{**25**\}.
 
 | **Intrare** | **Ieșire** |**Comentarii** |
 | :--- | :---: | :---:|
@@ -302,7 +302,7 @@ while (nums.length > 1) {
 ```
 [/hint] 
 [hint]
-Însumați numerele din **nums**\[\] to **condensed**\[\]::
+Însumați numerele din **nums**\[\] în **condensed**\[\]:
   - **condensed**\[i\] = **nums**\[i\] \+ **nums**\[i\+1\]
   - **nums**\[\] = **condensed**\[\]
 
@@ -423,11 +423,11 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Creați un program, care modifică **valoarea** numerelor impare si pare într-o matrice de numere.
+Creați un program care modifică **valoarea** numerelor impare și pare într-o matrice de numere.
 
-- Dacă numărul este **par**-**adăugați** la valoarea sa poziția indexului
+- Dacă numărul este **par** - **adăugați** la valoarea sa poziția indicelui său
 
-- Dacă numărul este **impar**-**scadeți** de la valoarea sa poziția indexului
+- Dacă numărul este **impar** - **scădeți** din valoarea sa poziția indicelui său
 
 
 ## Ieșire
@@ -561,11 +561,12 @@ function adapter(input, code) {
 
 Creați un program care primește o **matrice** și numărul de rotații pe care trebuie să le efectuați (primul element merge la sfârșit).
 
-Primul element al matricei de intrare este numărul de rotații pe care trebuie să le efectuați, deci matricea cu care trebuie să efectuați acțiunile începe pe al doilea element al matricei inițiale.
+- Primul **element** al intrării este **matricea de numere** în care trebuie să efectuați rotațiile
+- **Al doilea element** al intrării este **numărul de rotații** pe care trebuie să le efectuați 
 
 ## Ieșire
 
-Imprimați elementele matrice rezultate, separați printr-un singur spațiu.
+Imprimați elementele matricei rezultate, separațe printr-un singur spațiu.
 
 ## Exemple
 |**Intrare**|**Ieșire**|
@@ -683,7 +684,7 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Creați un program care imprimă toate perechile **unice** care sunt într-o **matrice de numere întregi** a căror **suma** este **egală** cu un număr dat. 
+Creați un program care imprimă toate perechile **unice** care sunt într-o **matrice de numere întregi**, a căror **sumă** este **egală** cu un număr dat. 
 
 ## Exemplul Unu
 |**Intrare**|**Ieșire**|

@@ -1,4 +1,4 @@
-# Introdicere
+# Introducere
 [slide hideTitle]
 
 # Conținutul Lecției
@@ -20,9 +20,9 @@
 
 - Cum se citesc șirurile și cum se lucrează cu șiruri
 
-**4. Numerotări**
+**4. Numbers**
 
-- Cum să lucrați cu **Numerotări**
+- Cum să lucrați cu **Numbers**
 
 **5. Booleeni**
 
