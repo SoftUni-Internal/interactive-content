@@ -24,11 +24,11 @@ public class Car {
 
 ## Default Constructor
 
-In Java, a constructor is referred to as a **default** when it does not accept any parameters and does not change tany value on initialization.
+In Java, a constructor is referred to as a **default** when it does not accept any parameters and does not change any value on initialization.
 
 If you do not have a constructor in your class, the Java compiler will insert a default constructor for you.
 
-In this case it will not be present in the Java file, as it is inserted into the code during compilation. It is stored in the `.class` file.
+In this case, it will not be present in the Java file, as it is inserted into the code during compilation. It is stored in the `.class` file.
 
 The default constructor does not have any parameters and looks like this:
 
@@ -37,7 +37,7 @@ public Car() {
 }
 ```
 
-If you **implement a constructor** it ovverides the default constructor in the Java compiler.
+If you **implement a constructor**, it overrides the default constructor in the Java compiler.
 
 ## Multiple Constructors
 
@@ -89,7 +89,7 @@ public class Car {
 ```
 In the example above, a constructor is absent, so the compiler uses the default constructor.
 
-In this case the default values for each data type will be assumed: **null** for the **brand** variable and **0** for the **horsePower** variable.
+In this case, the default values for each data type will be assumed: **null** for the **brand** variable and **0** for the **horsePower** variable.
 
 If we need values different from the default ones, we can set them in the constructor:
 
@@ -139,21 +139,21 @@ class Car {
 }
 ```
 
-The first constructor takes two arguments "**brand**" and "**horsePower**".
+The first constructor takes two arguments - "**brand**" and "**horsePower**".
 
 The second one takes only one argument - "**brand**".
 
-We find the following Java statement inside the body of the second constructor
+We find the following Java statement inside the body of the second constructor:
 
 ```java
 this(brand, -1);
 ```
 
-The "**this**" keyword, followed by parentheses means that another constructor in the same Java class is being called.
+The "**this**" keyword, followed by parentheses, means that another constructor in the same Java class is being called.
 
 Java will determine which constructor the "**this**" keyword refers to by the number of parameters and their type (the constructor's signature).
 
-In this example, we call the first constructor with two parameters, and set the value of "**horsePower**" to **-1**.
+In this example, we call the first constructor with two parameters and set the value of "**horsePower**" to **-1**.
 
 [/slide]
 
@@ -184,7 +184,7 @@ Create a Car class with the following properties:
   - `carInfo()`: String
 
 
-Make constructors for the Car class so you can create car objects with different types of input information.
+Make constructors for the Car class, so you can create objects of type Car with different types of input information.
 
 If you miss information about the field of type **String**, set the value to "**unknown**", and for the **integer** field to **-1**.
 
@@ -194,7 +194,7 @@ The `carInfo()` method should return info about a car object in the following fo
 
 ## Hints
 
-First, declare a constructor which takes only **the car brand** as a parameter:
+First, declare a constructor that takes only **the car brand** as a parameter:
 
 ```java
 public Car(String brand) {
@@ -204,7 +204,7 @@ public Car(String brand) {
 }
 ```
 
-Create a constructor which sets **all the fields**:
+Create a constructor that sets **all the fields**:
 
 ```java
 public Car(String brand, String model, int horsePower) {
@@ -226,7 +226,7 @@ Define **constructors to create objects** rather than creating them with the def
 
 You should be able to handle different types of input, the format will be the same as in the previous task, but this time some of the data may be missing. 
 
-For example, you might receive only the car brand – which means you have to set the car **model** to "unknown" and the **horsepower** value to -1.
+For example, you might receive only the car brand, which means you have to set the car **model** to "unknown" and the **horsepower** value to -1.
 
 The main method should look like this:
 
