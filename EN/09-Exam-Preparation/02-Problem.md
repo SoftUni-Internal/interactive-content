@@ -14,13 +14,13 @@
 
 The business logic of the program should be concentrated around several **commands**. 
 
-You are given interfaces, which you have to implement in the correct classes.
+The task contains interfaces, which we have to implement in the correct classes.
 
 **Note:** The ControllerImpl class **should not** handle exceptions! 
 
 **The tests are designed to expect exceptions, not messages!**
 
-The first interface is **Controller**. You must create a **ControllerImpl** class, which implements the interface and implements all its methods. 
+The first interface is **Controller**. You must create a **ControllerImpl** class, which implements the interface and all its methods. 
 
 The constructor of **ControllerImpl** does not take any arguments. 
 
@@ -63,7 +63,7 @@ The method should **return** the following message:
 
 Creates an instrument with the given power and adds it to the collection of the dwarf. 
 
-If the dwarf does not exist, throw an `IllegalArgumentException` with the message:
+If such dwarf does is not present, throw an `IllegalArgumentException` with the message:
 
 "**The dwarf you want to add an instrument to doesn't exist!**"
 
@@ -95,9 +95,9 @@ The method should **return** the following message:
 
 **Functionality:**
 
-When the craft command is called, the action happens. 
+When the "craft" command is given, the action performed. 
 
-You should start crafting the given present, by assigning the dwarfs which are the readiest:
+You should start crafting the present, by assigning the dwarfs which are ready:
 
 - The dwarfs that you should select are the ones with energy **above** 50 units
 
@@ -106,11 +106,11 @@ You should start crafting the given present, by assigning the dwarfs which are t
 - If **no dwarfs are ready**, throw `IllegalArgumentException` with the following message:
 "**There is no dwarf ready to start crafting!**"
 
-- After the work is done, you must return the following message, reporting whether the present is done and how many instruments have been broken in the process:
+- After the work is done return the following message, reporting whether the present is done and how many instruments have been broken in the process:
 
 "**Present** \{**presentName**\} **is** \{**done/not done**\}**.** \{**countBrokenInstruments**\} **instrument/s have been broken while working on it!**"
 
-**Note**: The **name** of the **present** you receive will always be a **valid** one.
+**Note**: The **name** of the **present** you receive will always be **applicable**.
 
 ### Report Command
 
@@ -138,9 +138,9 @@ Returns information about **crafted presents** and **dwarfs**:
 
 # Input/Output
 
-You are provided with one interface, which will assist the correct execution process of your program. 
+An interface will be provided, which will assist the correct execution process of your program. 
 
-The interface is **Engine**, and the class implementing this interface should read the input.
+The interface is called **Engine**, and the class implementing this interface should read the input.
 
 When the program finishes, this class should print the output.
 
@@ -162,7 +162,7 @@ Below, you can see the **format** in which **each command** will be given in the
 
 ## Output
 
-Print the output from each command when issued. 
+Print the output of each command when issued. 
 
 If an exception is thrown during any of the commands' execution, print the exception message.
 
