@@ -6,13 +6,12 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02.Java-OOP-Basics-More-OOP Concepts-3-4-5-6-Projects-structure-Methods-1-2-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We use **methods** to split code into functional blocks.
+We use **methods** to split our code into functional blocks.
 
 This improves code **readability** and allows for easier **debugging**.
 
 Let us take a look at this **example**.
 
-We can convert these nested loops:
 ```java
 for (char move : moves){
   for (int r = 0; r < room.length; r++)
@@ -22,7 +21,7 @@ for (char move : moves){
 }
 ```
 
-Into a more readable combination of **methods**:
+We can convert these nested loops into a more readable combination of **methods**:
 ```java
 for (char move : moves) {
     moveEnemies();
@@ -78,7 +77,7 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Create a program that reads a **positive integer n** as input and prints a **rhombus** with size **n** to the console.
+Create a program that reads a **positive integer** "**n**" as input and prints a **rhombus** with a size equal to "**n**" to the console.
 
 [image assetsSrc="more-oop-concepts-example(1).png" /]
 
@@ -316,7 +315,7 @@ master.printToConsole(numbers);
 
 The above is an example of a class that has too many functions.
 
-We should break our code logically into smaller classes, as this:
+We should break our code logically into smaller classes, like this:
 
 - **Hides implementations**
 - Allows us to **change the output destination**
@@ -366,15 +365,16 @@ The **Rectangle** class should hold 2 **Points** – its **bottom left** and **t
 
 In the **Rectangle** class, you should implement a `contains(Point point)` method that returns **true** or **false**, based on **whether** the **Point** argument passed to the method is **inside** or **outside** of the **Rectangle** object.
 
-Points **on the side** of a Square are considered **inside** it.
+Points **on the side** of a Rectangle are considered **inside** it.
 
 ## Input
 
-- On the first line, read the coordinates of the bottom left and top right corner of the Rectangle in the format:
+- On the first line, read the coordinates of the bottom left and the top right corner of the Rectangle in the following format:
 
 "\<**bottomLeftX**\>" "\<**bottomLeftY**\>" "\<**topRightX**\>" "\<**topRightY**\>"
      
-- On the second line, read an integer **n** and on the next **n** lines, read the coordinates of points
+- On the second line, read an integer **n** 
+- On the next **n** lines, read the coordinates of few points
 
 ## Output
 
