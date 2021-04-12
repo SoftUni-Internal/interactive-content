@@ -65,9 +65,9 @@ System.out.println(CoffeeSize.Small.getValue()); // 100
 
 [task-description]
 # Description
-Create a class "**PriceCalculator**" that calculates the total cost of a holiday, given the **price per day**, **number of days**, the **season** and a **discount type**.
+Create a class "**PriceCalculator**" that calculates the total cost of a holiday, given the **price per day**, the **number of days**, the **season**, and a **discount type**.
 
-The **discount type** and **season** should be represented as **enums.**
+The **discount type** and the **season** should be represented as **enums.**
 
 Use the class in your `main()` method to read input and **print** the **cost** of the **entire holiday** to the console.
 
@@ -79,7 +79,7 @@ The price per day will be multiplied depending on the season:
 
 The discount is applied to the total price and is one of the following:
 - 20% for VIP clients - **VIP**
-- 10% for clients, visiting for a second time - **SecondVisit**
+- 10% for clients visiting for a second time - **SecondVisit**
 - 0% if there is no discount - **None**
 
 ## Input
