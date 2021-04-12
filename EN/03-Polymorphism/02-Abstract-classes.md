@@ -277,11 +277,11 @@ Create a class called **Animal**, which holds two fields:
 - **name: String**
 - **favouriteFood: String**
 
-The Animal class should have one abstract method **explainSelf(): String**.
+The **Animal** class should have one abstract method **getAnimalInfo() : String**.
 
 create two additional classes - **Cat** and **Dog**. 
 
-**Override** the **explainSelf()** method by defining different animal sounds on a new line. 
+**Override** the **getAnimalInfo()** method by defining different animal sounds on a new line. 
 
 To get a better idea, look at the example below.
 
@@ -291,18 +291,18 @@ Your code should function in this context:
 public static void main(String[] args) {
     Animal cat = new Cat("Oscar", "Whiskas");
     Animal dog = new Dog("Rocky", "Meat");
-    System.out.println(cat.explainSelf());
-    System.out.println(dog.explainSelf());
+    System.out.println(cat.getAnimalInfo());
+    System.out.println(dog.getAnimalInfo());
 }
 ```
 
 # Example
 | **Output** |
 | --- |
-| I am Oscar and my favourite food is Whiskas |
-| MEEOW |
-| I am Rocky and my favourite food is Meat |
-| DJAAF |
+| I am Oscar and my favourite food is Whiskas. |
+| MEOW |
+| I am Rocky and my favourite food is Meat. |
+| BARK |
 
 [/task-description]
 [tests]
@@ -378,7 +378,7 @@ public class T02TestAllFieldsExists {
         List<Method> methods = Arrays.asList(animalClass.getDeclaredMethods());
         boolean contains = false;
         for (Method method : methods) {
-            if (method.getName().equals("explainSelf")){
+            if (method.getName().equals("getAnimalInfo")){
                 contains=true;
             }
         }
@@ -549,7 +549,7 @@ public class T06TestAllMethods {
     private static final String CLASS_NAME = "Animal";
     private static final String CLASS_NAME_2 = "Cat";
     private static final String CLASS_NAME_3 = "Dog";
-    private static final String SEARCHED_METHOD_1 = "explainSelf";
+    private static final String SEARCHED_METHOD_1 = "getAnimalInfo";
 
     private static final String[] classNames = new String[]{
             CLASS_NAME,

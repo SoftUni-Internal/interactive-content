@@ -155,10 +155,10 @@ Build a **classes** and **interfaces** heirarchy using this UML diagram.
 
 ```java
 public static void main(String[] args) {
-    Car seat = new Seat("Leon", "gray", 110, "Spain");
+    Car seat = new Seat("Leon", "Gray", 110, "Spain");
 
     System.out.println(String.format(
-            "%s is %s color and have %s horse power",
+            "The car %s is %s and has a %s horsepower engine.",
             seat.getModel(),
             seat.getColor(),
             seat.getHorsePower()));
@@ -172,8 +172,8 @@ Consider using the wrapper classes in the **Seat** constructor.
 # Example
 | **Output** |
 | --- |
-| Leon is gray color and have 110 horse power |
-| This is Leon produced in Spain and have 4 tires |
+| The car Leon is Gray and has a 110 horsepower engine. |
+| This car Leon was produced in Spain and has 4 tires. |
 
 [/task-description]
 [tests]
@@ -780,7 +780,7 @@ public static void main(String[] args) {
 
 private static void printCarInfo(Car car) {
     System.out.println(String.format(
-            "%s is %s color and have %s horse power",
+            "The %s is %s and has a %d horsepower engine.",
             car.getModel(),
             car.getColor(),
             car.getHorsePower()));
@@ -791,12 +791,12 @@ private static void printCarInfo(Car car) {
 # Examples
 | **Output** |
 | --- |
-| Leon is Gray color and have 110 horse power |
-| This is Leon produced in Spain and have 4 tires |
-| Leon sells for 11111,100000 |
-| A4 is Gray color and have 110 horse power |
-| This is A4 produced in Germany and have 4 tires |
-| Minimum rental period of 3 days. Price per day 99,900000 |
+| The Leon is Gray and has a 110 horsepower engine. |
+| The car Leon was produced in Spain and has 4 tires. |
+| The price of this car Leon is: 11111,100000. |
+| The A4 is Gray and has a 110 horsepower engine. |
+| The car A4 was produced in Germany and has 4 tires. |
+| The minimum rental period is: 3 days. Price per day: 99,900000. |
 
 [/task-description]
 [tests]

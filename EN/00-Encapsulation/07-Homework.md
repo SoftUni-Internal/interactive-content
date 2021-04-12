@@ -16,7 +16,7 @@ Only the methods returning its surface, lateral surface and volume should be acc
 You can find the necessary formulas [here](http://www.mathwords.com/r/rectangular_parallelepiped.htm).
 
 ## Input
-On the first three lines, you will get the figure's length, width, and height. 
+On the first three lines, you will get the length, width and height of the figure. 
 
 On the next three lines, print:
 - the **surface** area
@@ -36,13 +36,13 @@ Make a private setter that performs data validation internally.
 | -width: double |
 | -height: double |
 |  |
-| +Box (double length, double width, double height) |
-| -setLength(double): void |
-| -setWidth(double): void |
-| -setHeight(double): void |
-| +calculateSurfaceArea (): double |
-| +calculateLateralSurfaceArea (): double |
-| +calculateVolume (): double |
+| +Box(double length, double width, double height) |
+| -setLength(double) : void |
+| -setWidth(double) : void |
+| -setHeight(double) : void |
+| +calculateSurface() : double |
+| +calculateLateralSurface() : double |
+| +calculateVolume() : double |
 
 
 # Examples
@@ -57,15 +57,15 @@ Make a private setter that performs data validation internally.
 ## Example 2
 | **Input** | **Output** |
 | --- | --- |
-| 2 | Surface Area - 52.00 |
-| 3 | Lateral Surface Area - 40.00 |
+| 2 | Surface - 52.00 |
+| 3 | Lateral Surface - 40.00 |
 | 4 | Volume – 24.00 |
 
 ## Example 3
 | **Input** | **Output** |
 | --- | --- |
-| 1.3 | Surface Area - 30.20 |
-| 1 | Lateral Surface Area - 27.60 |
+| 1.3 | Surface - 30.20 |
+| 1 | Lateral Surface - 27.60 |
 | 6 | Volume - 7.80 |
 
 [/task-description]
@@ -284,8 +284,8 @@ public class T05TestAllMethodsExists {
     private static final Map<String, String[]> methodsInClass =
             new HashMap<String, String[]>() {{
                 put("Box", new String[]{
-                        "calculateSurfaceArea",
-                        "calculateLateralSurfaceArea",
+                        "calculateSurface",
+                        "calculateLateralSurface",
                         "calculateVolume",
                         "setLength",
                         "setWidth",
@@ -294,8 +294,8 @@ public class T05TestAllMethodsExists {
             }};
 
     private static final HashMap<String, Class> methodReturnTypes = new HashMap<String, Class>() {{
-        put("calculateSurfaceArea", double.class);
-        put("calculateLateralSurfaceArea", double.class);
+        put("calculateSurface", double.class);
+        put("calculateLateralSurface", double.class);
         put("calculateVolume", double.class);
         put("setLength", void.class);
         put("setWidth", void.class);
@@ -303,8 +303,8 @@ public class T05TestAllMethodsExists {
     }};
 
     private static final HashMap<String, Class[]> methodParameters = new HashMap<String, Class[]>() {{
-        put("calculateSurfaceArea", new Class[]{});
-        put("calculateLateralSurfaceArea", new Class[]{});
+        put("calculateSurface", new Class[]{});
+        put("calculateLateralSurface", new Class[]{});
         put("calculateVolume", new Class[]{});
         put("setLength", new Class[]{double.class});
         put("setWidth", new Class[]{double.class});
@@ -362,7 +362,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 
-public class T06TestCalculateSurfaceArea {
+public class T06TestCalculateSurface {
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
     private static final String METHOD_RETURN_TYPE_ERROR = "Method '%s' in class '%s' should have return type '%s'";
     private static final String WRONG_RESULT = "Wrong result from method %s";
@@ -374,15 +374,15 @@ public class T06TestCalculateSurfaceArea {
 
 
     private static final String[] methodNames = new String[]{
-            "calculateSurfaceArea"
+            "calculateSurface"
     };
 
     private static final HashMap<String, Class> methodReturnTypes = new HashMap<String, Class>() {{
-        put("calculateSurfaceArea", double.class);
+        put("calculateSurface", double.class);
     }};
 
     private static final HashMap<String, Class[]> methodParameters = new HashMap<String, Class[]>() {{
-        put("calculateSurfaceArea", new Class[]{});
+        put("calculateSurface", new Class[]{});
     }};
 
 
@@ -417,7 +417,7 @@ public class T06TestCalculateSurfaceArea {
     }
 
 
-    private boolean correctCalculateSurface(Method calculateSurfaceArea, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
+    private boolean correctCalculateSurface(Method calculateSurface, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
 
         Constructor constructor = cl.getDeclaredConstructor(
                 double.class, double.class, double.class);
@@ -425,7 +425,7 @@ public class T06TestCalculateSurfaceArea {
         Object box = constructor
                 .newInstance(BOX_LENGTH, BOX_WIDTH, BOX_HEIGHT);
 
-        double result = (double) calculateSurfaceArea.invoke(box);
+        double result = (double) calculateSurface.invoke(box);
 
         double expectedResult = (2 * BOX_LENGTH * BOX_WIDTH) +
                 (2 * BOX_LENGTH * BOX_HEIGHT) + (2 * BOX_WIDTH * BOX_HEIGHT);
@@ -455,7 +455,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 
-public class T07CalculateLateralSurfaceArea {
+public class T07CalculateLateralSurface {
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
     private static final String METHOD_RETURN_TYPE_ERROR = "Method '%s' in class '%s' should have return type '%s'";
     private static final String WRONG_RESULT = "Wrong result from method %s";
@@ -467,15 +467,15 @@ public class T07CalculateLateralSurfaceArea {
 
 
     private static final String[] methodNames = new String[]{
-            "calculateLateralSurfaceArea"
+            "calculateLateralSurface"
     };
 
     private static final HashMap<String, Class> methodReturnTypes = new HashMap<String, Class>() {{
-        put("calculateLateralSurfaceArea", double.class);
+        put("calculateLateralSurface", double.class);
     }};
 
     private static final HashMap<String, Class[]> methodParameters = new HashMap<String, Class[]>() {{
-        put("calculateLateralSurfaceArea", new Class[]{});
+        put("calculateLateralSurface", new Class[]{});
     }};
 
 
@@ -510,7 +510,7 @@ public class T07CalculateLateralSurfaceArea {
     }
 
 
-    private boolean correctCalculateSurface(Method calculateSurfaceArea, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
+    private boolean correctCalculateSurface(Method calculateSurface, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
 
         Constructor constructor = cl.getDeclaredConstructor(
                 double.class, double.class, double.class);
@@ -518,7 +518,7 @@ public class T07CalculateLateralSurfaceArea {
         Object box = constructor
                 .newInstance(BOX_LENGTH, BOX_WIDTH, BOX_HEIGHT);
 
-        double result = (double) calculateSurfaceArea.invoke(box);
+        double result = (double) calculateSurface.invoke(box);
 
         double expectedResult = (2 * BOX_LENGTH * BOX_HEIGHT) +
                 (2 * BOX_WIDTH * BOX_HEIGHT);
@@ -603,7 +603,7 @@ public class T08TestCalculateVolume {
     }
 
 
-    private boolean correctCalculateSurface(Method calculateSurfaceArea, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
+    private boolean correctCalculateSurface(Method calculateSurface, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
 
         Constructor constructor = cl.getDeclaredConstructor(
                 double.class, double.class, double.class);
@@ -611,7 +611,7 @@ public class T08TestCalculateVolume {
         Object box = constructor
                 .newInstance(BOX_LENGTH, BOX_WIDTH, BOX_HEIGHT);
 
-        double result = (double) calculateSurfaceArea.invoke(box);
+        double result = (double) calculateSurface.invoke(box);
 
         double expectedResult = BOX_LENGTH * BOX_WIDTH * BOX_HEIGHT;
 
@@ -1002,9 +1002,9 @@ Your task is to encapsulate or hide anything that should not be viewed or modifi
 |  |
 | +Chicken(String, int) |
 | -setName(String) : void |
-| -setAge (int): void |
-| +productPerDay (): double |
-| +toString(): Override |
+| -setAge(int) : void |
+| +productPerDay() : double |
+| +toString() : Override |
 | -calculateProductPerDay() : double |
 
 A chicken lives for **15 years**. 
@@ -1014,7 +1014,7 @@ Each chicken has a  **name** that must be at least **1 symbol** long.
 Chickens lay eggs at the following rate:
 - The first 6 years of their life, they lay 2 eggs per day [0 - 5]
 - The next 6 years - 1 egg per day [6 - 11]
-- After that, they produce 0.75 eggs per day
+- After that, they lay 0.75 eggs per day
 
 ## Step 1. Encapsulate Fields
 Fields should be **private**. 
@@ -1033,13 +1033,13 @@ The Chicken constructor modifies the fields directly, which is unwanted when the
 Modify the constructor to fix this issue.
 
 ## Step 3. Validate Data Properly
-Validate the chicken’s **name** (it cannot be **null**, **empty**, or **whitespace**). 
+Validate the chicken's **name** (it cannot be **null**, **empty**, or **whitespace**). 
 
-In case an **invalid name** is entered, print out the exception message "**Name cannot be empty.**"
+In case an **invalid name** is entered, print out the exception message "**A chicken's name cannot be empty.**"
 
 Validate the **age** value - the minimum and maximum age are provided.
 
-In an **invalid age** value is entered, print the exception message: "**Age should be between 0 and 15.**"
+In an **invalid age** value is entered, print the exception message: "**A chicken's age can only be a number between 0 and 15. **"
 
 ## Step 4. Hide the Internal Logic
 If a method is intended to be used only by descendant classes or to perform some action internally, there is no use in keeping them **public**.
@@ -1059,19 +1059,19 @@ Make sure you have a `public Main` class with a `public static void main` method
 ## Example 1
 | **Input** | **Output** |
 | --- | --- |
-| Lee | Chicken Lee (age 10) can produce 1.00 eggs per day. |
+| Sasha | Sasha (10) can lay 1.00 eggs per day. |
 | 10 |  |
 
 ## Example 2
 | **Input** | **Output** |
 | --- | --- |
-| Lee | Age should be between 0 and 15. |
+| Sasha | A chicken's age can only be a number between 0 and 15. |
 | 17 |  |
 
 ## Example 3
 | **Input** | **Output** |
 | --- | --- |
-| George | Chicken George (age 6) can produce 1.00 eggs per day. |
+| Maya | Maya (6) can lay 1.00 eggs per day. |
 | 6 |  |
 
 [/task-description]
@@ -4196,9 +4196,9 @@ A **football team** has a variable number of **players**, a **name**, and a **ra
 | -name: String |
 | -players: List(Player) |
 |  |
-| +Team (String) |
+| +Team(String) |
 | -setName(String) : void |
-| +getName(): String |
+| +getName() : String |
 | +addPlayer(Player) : void |
 | +removePlayer(String) : void |
 | +getRating() : double |
@@ -4218,20 +4218,20 @@ Everything else should be **hidden**.
 | **Player** | 
 | --- |
 | -name: String |
-| -endurance:  int |
-| -sprint:  int |
+| -endurance: int |
+| -sprint: int |
 | -dribble: int   |
 | -passing: int |
 | -shooting: int  |
 |  |
-| +Player (String, int, int, int, int, int) |
+| +Player(String, int, int, int, int, int) |
 | -setName(String) : void |
 | +getName(): String |
-| -setEndurance (int) : void |
-| -setSprint (int) : void |
-| -setDribble (int) : void |
-| -setPassing (int) : void |
-| -setShooting (int) : void |
+| -setEndurance(int) : void |
+| -setSprint(int) : void |
+| -setDribble(int) : void |
+| -setPassing(int) : void |
+| -setShooting(int) : void |
 | +overallSkillLevel() : double |
 
 A **team** should expose a **name**, a **rating** (calculated by the average skill level of all players in the team), and **methods** for **adding** and **removing** players.
@@ -4257,16 +4257,15 @@ The command can be one of the following:
 
 - A **name** cannot be null, empty, or whitespace. 
 
-In that case, print "**A name should not be empty.**"
+In that case, print "**Names cannot be blank.**"
 
-- **Stats** should be in the range (0..100). If not, print "\{**Stat name**\} **should be between 0 and 100.**"
+- **Stats** should be in the range (0..100). If not, print "**A player's** \{**Stat name**\} **should be a number between 0 and 100.**"
   
-- If you receive a command to **remove** a missing player, print "**Player** \{**Player name**\} **is not in** \{**Team name**\} **team.**"
+- If you receive a command to **remove** a missing player, print "**Player** \{**Player name**\} **is not in** \{**Team name**\}"
   
-- If you receive a command to **add** a player to a missing team, print "**Team** {**team name**} **does not exist.**"
+- If you receive a command to **add** a player to a missing team, print "\{**team name**\}**: There are no teams registered under this name.**"
   
-- If you receive a command to **show** stats for a missing team, print "**Team** {**team name**} **does not exist.**"
-
+- If you receive a command to **show** stats for a missing team, print "\{**team name**\}**: There are no teams registered under this name.**"
 
 # Examples
 
@@ -4284,7 +4283,7 @@ In that case, print "**A name should not be empty.**"
 | **Input** | **Output** |
 | --- | --- |
 | Team;Arsenal | Endurance should be between 0 and 100. |
-| Add;Arsenal;Kieran_Gibbs;75;85;84;92;67 | Player Aaron_Ramsey is not in Arsenal team. |
+| Add;Arsenal;Kieran_Gibbs;75;85;84;92;67 | Player Aaron_Ramsey is not in Arsenal. |
 | Add;Arsenal;Aaron_Ramsey;195;82;82;89;68 | Arsenal - 81 |
 | Remove;Arsenal;Aaron_Ramsey |  |
 | Rating;Arsenal |  |
@@ -4323,8 +4322,8 @@ Rating;Arsenal
 END
 [/input]
 [output]
-Endurance should be between 0 and 100.
-Player Aaron_Ramsey is not in Arsenal team.
+A player's endurance should be a number between 0 and 100.
+Player Aaron_Ramsey is not in Arsenal.
 Arsenal - 81
 [/output]
 [/test]
@@ -4350,7 +4349,7 @@ Rating;Arsenal
 END
 [/input]
 [output]
-Endurance should be between 0 and 100.
+A player's endurance should be a number between 0 and 100.
 England - 37
 Arsenal - 81
 [/output]
@@ -4368,10 +4367,10 @@ Rating;Angliq
 END
 [/input]
 [output]
-Endurance should be between 0 and 100.
+A player's endurance should be a number between 0 and 100.
 England - 37
 Arsenal - 81
-Team Angliq does not exist.
+Angliq: There are no teams registered under this name.
 [/output]
 [/test]
 [test]
@@ -4385,12 +4384,12 @@ Rating;Angliq
 END
 [/input]
 [output]
-Team Arsenal does not exist.
-Team Arsenal does not exist.
-Team England does not exist.
-Team England does not exist.
-Team Arsenal does not exist.
-Team Angliq does not exist.
+Arsenal: There are no teams registered under this name.
+Arsenal: There are no teams registered under this name.
+England: There are no teams registered under this name.
+England: There are no teams registered under this name.
+Arsenal: There are no teams registered under this name.
+Angliq: There are no teams registered under this name.
 [/output]
 [/test]
 [test]
@@ -4404,9 +4403,9 @@ Rating;Arsenal
 END
 [/input]
 [output]
-Endurance should be between 0 and 100.
-Player Aaron_Ramsey is not in Arsenal team.
-Team Ce does not exist.
+A player's endurance should be a number between 0 and 100.
+Player Aaron_Ramsey is not in Arsenal.
+Ce: There are no teams registered under this name.
 Arsenal - 81
 [/output]
 [/test]
@@ -4426,11 +4425,11 @@ Rating;Angliq
 END
 [/input]
 [output]
-Endurance should be between 0 and 100.
-Player Aaron_Ramsey is not in Arsenal team.
+A player's endurance should be a number between 0 and 100.
+Player Aaron_Ramsey is not in Arsenal.
 England - 0
 Arsenal - 0
-Team Angliq does not exist.
+Angliq: There are no teams registered under this name.
 [/output]
 [/test]
 [test]
@@ -4446,10 +4445,10 @@ Rating;Angliq
 END
 [/input]
 [output]
-Endurance should be between 0 and 100.
+A player's endurance should be a number between 0 and 100.
 England - 37
 Arsenal - 81
-Team Angliq does not exist.
+Angliq: There are no teams registered under this name.
 [/output]
 [/test]
 [/tests]
