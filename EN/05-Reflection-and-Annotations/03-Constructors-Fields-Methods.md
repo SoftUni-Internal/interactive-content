@@ -178,11 +178,12 @@ Object returnValue = method.invoke(null, "arg1");
 
 [task-description]
 # Description
-Use reflection to get all **Reflection** methods. 
 
-Then prepare an algorithm that will recognize, which methods are **getters** and **setters**. 
+Use reflection to get all of the **Reflection** methods. 
 
-Sort each collection **alphabetically** by method names. 
+Then prepare an algorithm that will recognize which methods are **getters** and **setters**. 
+
+Sort each collection **alphabetically** by method names.
 
 Print to the console each **getter** on a new line in the format:
 - "\{**name**\} **will return a field of the class** \{**Return Type**\}"
@@ -190,7 +191,7 @@ Print to the console each **getter** on a new line in the format:
 Then print all setters in the format:
 - "\{**name**\} **will set a field of the class** \{**Parameter Type**\}"
 
-**Do this without changing anything in "Reflection.java".**
+**Do this without changing anything in the "Reflection.java" file.**
 
 [/task-description]
 [code-upload allowedMemory="30" /]
