@@ -124,15 +124,15 @@ Class[] interfaces = aClass.getInterfaces();
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/06.Java-OOP-Advanced-Reflection-and-Annotations-Lab.zip) **for this task.**
 
-Import "**Reflection.java**" to the "**src**" folder in your project. 
+Place the "**Reflection.java**" file into the "**src**" folder in your project. 
 
 Use **reflection** and print some information about this class. 
 
-Print every piece on a separate line:
-- **This class type**
-- **Super class type**
-- **All interfaces** that are implemented by this class
-- **Instantiate an object** using reflection and print it too
+Print everything on a new line:
+- **The type of the class**
+- **The type of the super class**
+- **All interfaces** that are implemented by the class
+- **Instantiate an object** using reflection and print it as well
 
 **The Reflection class should not be altered in the process**
 

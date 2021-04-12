@@ -197,7 +197,7 @@ Annotation[] methodAnnotation = method.getDeclaredAnnotations();
 
 [task-description]
 # Description
-Create a **Subject** annotation with a **String**\[\] element called **categories**, that: 
+Create a **Subject** annotation with a **String**\[\] element called **categories**, which: 
 - Should be available at runtime
 - Can be placed only on types
 
@@ -357,7 +357,7 @@ Test Passed!
 
 [task-description]
 # Description
-Create an **Author** annotation with a **String** element called **name**, that:
+Create an **Author** annotation with a **String** element called **name**, which:
 - Should be available at runtime
 - Can be placed only on methods
 
