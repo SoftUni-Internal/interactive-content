@@ -5,7 +5,7 @@
 
 ## In this lesson you learned:
 
- - We can reduce code complexity by using **methods**, **classes** and **projects**
+ - We can reduce code complexity by using **methods**, **classes**, and **projects**
 
 
 ```java
