@@ -28,13 +28,13 @@ If the vehicle **cannot** travel the specified distance, its fuel level remains 
     - "**Refuel Car** \{**liters**\}"
     - "**Refuel Truck** \{**liters**\}"
 ## Output
-After each **Drive** command, print whether the Car/Truck was able to travel the given distance in this format:
+After each **Drive** command, print whether the car or the truck was able to travel the given distance in this format:
 
 **Print the distance formatted to two digits after the decimal separator except trailing zeros**. 
 
-Use the **DecimalFormat** class: "**Car/Truck travelled** \{**distance**\} **km**"
+Use the **DecimalFormat** class: "**The car/truck travelled** \{**distance**\} **km**"
 
-If there isnt enough fuel: "**Car/Truck needs refueling**"
+If there isnt enough fuel: "**The car/truck needs refueling**"
 
 Finally, print the **remaining fuel** for both the car and the truck rounded **to the second decimal place** in the format:
 
@@ -47,9 +47,9 @@ Finally, print the **remaining fuel** for both the car and the truck rounded **t
 ## Example 1
 | **Input** | **Output** |
 | --- | --- |
-| Car 15 0.3 | Car travelled 9 km |
-| Truck 100 0.9 | Car needs refueling |
-| 4 | Truck travelled 10 km |
+| Car 15 0.3 | The car travelled 9 km |
+| Truck 100 0.9 | The car needs refueling |
+| 4 | The truck travelled 10 km |
 | Drive Car 9 | Car: 54.20 |
 | Drive Car 30 | Truck: 75.00 |
 | Refuel Car 50 |  |
@@ -58,9 +58,9 @@ Finally, print the **remaining fuel** for both the car and the truck rounded **t
 ## Example 2
 | **Input** | **Output** |
 | --- | --- |
-| Car 30.4 0.4 | Car needs refueling |
-| Truck 99.34 0.9 | Car travelled 13.5 km |
-| 5 | Truck needs refueling |
+| Car 30.4 0.4 | The car needs refueling |
+| Truck 99.34 0.9 | The car travelled 13.5 km |
+| 5 | The truck needs refueling |
 | Drive Car 500 | Car: 113.05 |
 | Drive Car 13.5 | Truck: 109.13 |
 | Refuel Truck 10.300 |  |
@@ -81,9 +81,9 @@ Refuel Car 50
 Drive Truck 10
 [/input]
 [output]
-Car travelled 9 km
-Car needs refueling
-Truck travelled 10 km
+The car travelled 9 km
+The car needs refueling
+The truck travelled 10 km
 Car: 54.20
 Truck: 75.00
 [/output]
@@ -100,9 +100,9 @@ Drive Truck 56.2
 Refuel Car 100.2
 [/input]
 [output]
-Car needs refueling
-Car travelled 13.5 km
-Truck needs refueling
+The car needs refueling
+The car travelled 13.5 km
+The truck needs refueling
 Car: 113.05
 Truck: 109.13
 [/output]
@@ -124,16 +124,16 @@ Drive Car 0
 Drive Car 0.0
 [/input]
 [output]
-Car travelled 1 km
-Car travelled 1.2 km
-Car travelled 1.24 km
-Car travelled 123.33 km
-Car travelled 300.32 km
-Car travelled 101.32 km
-Car travelled 0 km
-Car travelled 4000.94 km
-Car travelled 0 km
-Car travelled 0 km
+The car travelled 1 km
+The car travelled 1.2 km
+The car travelled 1.24 km
+The car travelled 123.33 km
+The car travelled 300.32 km
+The car travelled 101.32 km
+The car travelled 0 km
+The car travelled 4000.94 km
+The car travelled 0 km
+The car travelled 0 km
 Car: 4564.76
 Truck: 100.00
 [/output]
@@ -149,10 +149,10 @@ Drive Car 100.2343
 Drive Car 200
 [/input]
 [output]
-Car needs refueling
-Car needs refueling
-Car needs refueling
-Car needs refueling
+The car needs refueling
+The car needs refueling
+The car needs refueling
+The car needs refueling
 Car: 15.00
 Truck: 100.00
 [/output]
@@ -188,14 +188,14 @@ Drive Truck 99.33
 Drive Truck 0.0
 [/input]
 [output]
-Truck travelled 1 km
-Truck travelled 2.4 km
-Truck travelled 3.77 km
-Truck travelled 1239 km
-Truck travelled 999.32 km
-Truck travelled 0 km
-Truck travelled 99.33 km
-Truck travelled 0 km
+The truck travelled 1 km
+The truck travelled 2.4 km
+The truck travelled 3.77 km
+The truck travelled 1239 km
+The truck travelled 999.32 km
+The truck travelled 0 km
+The truck travelled 99.33 km
+The truck travelled 0 km
 Car: 100.00
 Truck: 94227.96
 [/output]
@@ -211,10 +211,10 @@ Drive Truck 300.31345
 Drive Truck 100.10
 [/input]
 [output]
-Truck needs refueling
-Truck needs refueling
-Truck needs refueling
-Truck needs refueling
+The truck needs refueling
+The truck needs refueling
+The truck needs refueling
+The truck needs refueling
 Car: 15.00
 Truck: 10.29
 [/output]
@@ -253,13 +253,13 @@ Refuel Truck 0.01
 Drive Car 1
 [/input]
 [output]
-Car travelled 14 km
-Car needs refueling
-Car needs refueling
-Car travelled 99.1 km
-Car needs refueling
-Car travelled 5.01 km
-Car travelled 1 km
+The car travelled 14 km
+The car needs refueling
+The car needs refueling
+The car travelled 99.1 km
+The car needs refueling
+The car travelled 5.01 km
+The car travelled 1 km
 Car: 6.22
 Truck: 100.01
 [/output]
@@ -281,13 +281,13 @@ Drive Truck 1.009
 Drive Truck 1000000
 [/input]
 [output]
-Truck needs refueling
-Truck needs refueling
-Truck needs refueling
-Truck travelled 40.2 km
-Truck travelled 48.23 km
-Truck travelled 1.01 km
-Truck needs refueling
+The truck needs refueling
+The truck needs refueling
+The truck needs refueling
+The truck travelled 40.2 km
+The truck travelled 48.23 km
+The truck travelled 1.01 km
+The truck needs refueling
 Car: 15.00
 Truck: 101.76
 [/output]
@@ -320,21 +320,21 @@ Drive Truck 0.00
 Drive Car 700.2
 [/input]
 [output]
-Car needs refueling
-Truck needs refueling
-Car travelled 1 km
-Car travelled 2.23 km
-Car needs refueling
-Truck needs refueling
-Car travelled 100 km
-Car travelled 15.2 km
-Truck needs refueling
-Truck travelled 10.99 km
-Car travelled 0 km
-Car travelled 0 km
-Truck travelled 0 km
-Truck travelled 0 km
-Car travelled 700.2 km
+The car needs refueling
+The truck needs refueling
+The car travelled 1 km
+The car travelled 2.23 km
+The car needs refueling
+The truck needs refueling
+The car travelled 100 km
+The car travelled 15.2 km
+The truck needs refueling
+The truck travelled 10.99 km
+The car travelled 0 km
+The car travelled 0 km
+The truck travelled 0 km
+The truck travelled 0 km
+The car travelled 700.2 km
 Car: 67.27
 Truck: 176.18
 [/output]
@@ -353,11 +353,11 @@ Use your solution to the previous task as a starting point and add the necessary
 
 Add a new vehicle class – **Bus**. 
 
-Every vehicle has **tank capacity** and fuel quantity **cannot fall below 0** (If the fuel reserve becomes less than 0, **print** "**Fuel must be a positive number**" to the console).
+Every vehicle has **tank capacity** and fuel quantity **cannot fall below 0** (If the fuel reserve becomes less than 0, **print** "**The fuel amount must be a positive number**" to the console).
 
 A vehicle's tank capacity cannot be exceeded. 
 
-If we **try to put more fuel** in the tank than the **available space**, print out "**Cannot fit fuel in tank**" and **do not add any fuel** in the vehicle's tank.
+If we **try to put more fuel** in the tank than the **available space**, print out "**The fuel amount exceeds this vehicle's capacity**" and **do not add any fuel** in the vehicle's tank.
 
 Add a **new function** in the bus class:
 
@@ -381,18 +381,19 @@ If there are **no people on the bus** when driving the air-conditioner is **turn
     - **Refuel Car** \{**liters**\}
     - **Refuel Truck** \{**liters**\}
     - **Refuel Bus** \{**liters**\}
+
 ## Output
-- After each **Drive command** print whether the Car/Truck/Bus was able to travel the given distance in the following format:
+- After each **Drive command**, print whether the Car/Truck/Bus was able to travel the given distance in the following format:
 - If successful:
 
-"**Car/Truck/Bus travelled** \{**distance**\} **km**"
+"**The car/truck/bus travelled** \{**distance**\} **km**"
 
 - If not:
 
-"**Car/Truck/Bus needs refueling**"
+"**The car/truck/bus needs refueling**"
 
-- If an attempt to specify a fuel number **less than or equal to 0** is made, print out "**Fuel must be a positive number**"
-- If the refill amount exceeds a vehicle's fuel capacity, print "**Cannot fit fuel in tank**"
+- If an attempt to specify a fuel number **less than or equal to 0** is made, print out "**The fuel amount must be a positive number**"
+- If the refill amount exceeds a vehicle's fuel capacity, print "**The fuel amount exceeds this vehicle's capacity**"
  
 - Finally, print the **remaining fuel** for the car, the truck, and the bus rounded to **the second decimal place** as follows:
 
@@ -405,13 +406,13 @@ If there are **no people on the bus** when driving the air-conditioner is **turn
 # Example
 | **Input** | **Output** |
 | --- | --- |
-| Car 30 0.04 70 | Fuel must be a positive number |
-| Truck 100 0.5 300 | Fuel must be a positive number |
-| Bus 40 0.3 150 | Cannot fit fuel in tank |
-| 8 | Bus travelled 10 km |
-| Refuel Car -10 | Cannot fit fuel in tank |
-| Refuel Truck 0 | Bus needs refueling |
-| Refuel Car 10 | Cannot fit fuel in tank |
+| Car 30 0.04 70 | The fuel amount must be a positive number |
+| Truck 100 0.5 300 | The fuel amount must be a positive number |
+| Bus 40 0.3 150 | The fuel amount exceeds this vehicle's capacity |
+| 8 | The bus travelled 10 km |
+| Refuel Car -10 | The fuel amount exceeds this vehicle's capacity |
+| Refuel Truck 0 | The bus needs refueling |
+| Refuel Car 10 | The fuel amount exceeds this vehicle's capacity |
 | Refuel Car 300 | Car: 40.00 |
 | Drive Bus 10 | Truck: 100.00 |
 | Refuel Bus 1000 | Bus: 23.00 |
@@ -437,13 +438,13 @@ DriveEmpty Bus 100
 Refuel Truck 1000
 [/input]
 [output]
-Fuel must be a positive number
-Fuel must be a positive number
-Cannot fit fuel in tank
-Bus travelled 10 km
-Cannot fit fuel in tank
-Bus needs refueling
-Cannot fit fuel in tank
+The fuel amount must be a positive number
+The fuel amount must be a positive number
+The fuel amount exceeds this vehicle's capacity
+The bus travelled 10 km
+The fuel amount exceeds this vehicle's capacity
+The bus needs refueling
+The fuel amount exceeds this vehicle's capacity
 Car: 40.00
 Truck: 100.00
 Bus: 23.00
@@ -473,19 +474,19 @@ DriveEmpty Bus 100
 Refuel Truck 1000
 [/input]
 [output]
-Fuel must be a positive number
-Fuel must be a positive number
-Cannot fit fuel in tank
-Bus travelled 10 km
-Cannot fit fuel in tank
-Bus needs refueling
-Cannot fit fuel in tank
-Cannot fit fuel in tank
-Fuel must be a positive number
-Bus needs refueling
-Cannot fit fuel in tank
-Bus needs refueling
-Cannot fit fuel in tank
+The fuel amount must be a positive number
+The fuel amount must be a positive number
+The fuel amount exceeds this vehicle's capacity
+The bus travelled 10 km
+The fuel amount exceeds this vehicle's capacity
+The bus needs refueling
+The fuel amount exceeds this vehicle's capacity
+The fuel amount exceeds this vehicle's capacity
+The fuel amount must be a positive number
+The bus needs refueling
+The fuel amount exceeds this vehicle's capacity
+The bus needs refueling
+The fuel amount exceeds this vehicle's capacity
 Car: 50.00
 Truck: 109.50
 Bus: 23.00
@@ -525,7 +526,7 @@ If it **is**, they will **eat** it.
 
 **Otherwise**, you should **print** a **message** in the format:
 
-\{**AnimalType**\} are not eating that type of food!**
+**The type of food cannot be consumed by** \{**AnimalType**\}
 
 **Cats** eat **any** kind of food, but **Tigers** eat **only Meat**. 
 
@@ -560,7 +561,7 @@ Consider overriding the default **toString()** method.
 | **Input** | **Output** |
 | --- | --- |
 | Tiger Tom 167.7 Asia | ROAAR!!! |
-| Vegetable 1 | Tigers are not eating that type of food! |
+| Vegetable 1 | The type of food cannot be consumed by Tigers |
 | End | Tiger[Tom, 167.7, Asia, 0] |
 
 ## Example 3
@@ -599,7 +600,7 @@ End
 [/input]
 [output]
 ROAAR!!!
-Tigers are not eating that type of food!
+The type of food cannot be consumed by Tigers
 Tiger\[Tom, 167.7, Asia, 0\]
 [/output]
 [/test]
@@ -653,9 +654,9 @@ End
 [output]
 Meowwww
 SQUEEEAAAK!
-Mice are not eating that type of food!
+The type of food cannot be consumed by Mice
 ROAAR!!!
-Tigers are not eating that type of food!
+The type of food cannot be consumed by Tigers
 Cat\[Spas, Persian_Angorian, 0.75, Home, 143\]
 Mouse\[Mincho, 4.23, Home, 0\]
 Tiger\[Giggs, 4, Asia, 0\]
@@ -673,9 +674,9 @@ End
 [/input]
 [output]
 Zs
-Zebras are not eating that type of food!
+The type of food cannot be consumed by Zebras
 ROAAR!!!
-Tigers are not eating that type of food!
+The type of food cannot be consumed by Tigers
 SQUEEEAAAK!
 Mice are not eating that type of food!
 Zebra\[Zebrin, 345.24, Zoo, 0\]
@@ -715,7 +716,7 @@ End
 [output]
 Meowwww
 ROAAR!!!
-Tigers are not eating that type of food!
+The type of food cannot be consumed by Tigers
 Meowwww
 Cat\[No_Name, Unhealty_Cat, 0.1, Cat_Clinic, 100\]
 Tiger\[No_Name, 100, Cat_Clinic, 0\]
