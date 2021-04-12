@@ -98,7 +98,7 @@ public static void main(String[] args) {
 - Can be **invoked** without the need to create an instance of a class
 - Can **access** static data members and can **change** their values
 - **Cannot use a non-static** data member or call a **non-static method** directly
-- "**this**" and "**super**" cannot be used in static context
+- "**this**" and "**super**" cannot be used in а static context
 
 **Example:** Calculating the volume of a cube
 
