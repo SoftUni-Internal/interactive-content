@@ -9,12 +9,12 @@
 ## In this lesson you will learn:
 
 **1. Seven Testing Principles**
-- Which the seven core principles of testing are 
+- Which are the seven core principles of software testing
 
 **2. What is Unit Testing**
 - Unit testing frameworks
-- Review of the different UTF in Java
-- The 3A Pattern
+- Review of the different Unit Testing Frameworks (UTFs) in Java
+- The "3A" Pattern
 
 **4. Best practices**
 - Rules about assertions and magic numbers
