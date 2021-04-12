@@ -8,7 +8,7 @@
 
 A Java field is a variable inside a class. 
 
-For example, in a class representing a car, the Car class might contain the following fields:
+For example, in a class representing a car, the **Car** class might contain the following fields:
 
 - **Brand**
 - **Model**
@@ -41,7 +41,7 @@ The class should have **public** fields for:
 - **Model**: String
 - **Horsepower**: Integer
 
-Create a **new class**, each class should be named accordingly. 
+Note that each class should be named accordingly. 
 
 You should now be able to use your class:
 
@@ -69,10 +69,10 @@ public class Main {
 Create a new class and **ensure proper naming!**
 [image assetsSrc="defining-classes-example(2).png" /]
 
-Create a **Main** class in the same package to test your Car class:
+Create a **Main** class in the same package to test your **Car** class:
 [image assetsSrc="defining-classes-example(1).png" /]
 
-Set the fields inside the Car class:
+Set the fields inside the **Car** class:
 
 ```java
 public class Car {
@@ -108,9 +108,9 @@ The **package-private** access modifier specifies that only code inside the clas
 
 It provides more accessibility than the **private** modifier.
 
-The **Package-private** access modifier is **more restrictive** than **protected** and **public**.
+The **package-private** access modifier is **more restrictive** than the **protected** and the **public** ones.
 
-The **protected** access modifier is accessible within and outside the package but only through **inheritance**.
+The **protected** access modifier is accessible within and outside the package, but only through **inheritance**.
 
 **Inheritance** is a mechanism where one object **acquires** all the **properties** and **behaviors** of a **parent** object.
 
