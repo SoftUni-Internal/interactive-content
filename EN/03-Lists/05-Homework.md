@@ -1298,24 +1298,24 @@ When the program ends, you must print the summed up value of all **REMOVED** ele
 
 [hints]
 [hint]
-The array consists of \{4, 5, 3\}.
+The array consists of \{**4, 5, 3**\}.
 
-The index is 1.
-We remove 5, and we increase all index numbers that are smaller than 5 and decrease all index numbers bigger than it.
+The index is **1**.
+We remove **5**, and we increase all index numbers that are smaller than 5 and decrease all index numbers bigger than it.
 In this case, there are elements less than 5.
 
-The result is \{9, 8\}.
+The result is \{**9, 8**\}.
 [/hint] 
 [hint]
-The next index is 1. 
-So we remove 8 and decrease all elements greater than it.
+The next index is **1**. 
+So we remove **8** and decrease all elements - greater.
 
-The result is \{1\}.
+The result is \{**1**\}.
 [/hint] 
 [hint]
-The last index is 0. 
+The last index is **0**. 
 
-So we remove 1.
+So we remove **1**.
 There are no elements left, so we print the sum of all removed elements:
 **5 + 8 + 1 = 14**
 
@@ -1336,24 +1336,24 @@ There are no elements left, so we print the sum of all removed elements:
 
 [hints]
 [hint]
-The array consists of \{5, 10, 6, 3, 5\}.
+The array consists of \{**5, 10, 6, 3, 5**\}.
 
-Step 1: \{11, 4, 9, 11\}.
+Step 1: \{**11, 4, 9, 11**\}.
 [/hint] 
 [hint]
-Step 2: \{22, 15, 20, 22\}.
+Step 2: \{**22, 15, 20, 22**\}.
 [/hint] 
 [hint]
-Step 3: \{7, 5, 7\}
+Step 3: \{**7, 5, 7**\}
 [/hint] 
 [hint]
-Step 4: \{2, 2\}
+Step 4: \{**2, 2**\}
 [/hint] 
 [hint]
-Step 5: \{4, 4\}
+Step 5: \{**4, 4**\}
 [/hint] 
 [hint]
-Step 6: \{8\}
+Step 6: \{**8**\}
 [/hint] 
 [hint]
 Step 7: \{\} (empty)

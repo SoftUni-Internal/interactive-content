@@ -1288,24 +1288,24 @@ Când programul se termină, trebuie să imprimați pe consolă, valoarea însum
 
 [hints]
 [hint]
-Matricea este \{4, 5, 3\}.
+Matricea este \{**4, 5, 3**\}.
 
-Indexul este 1.
-Eliminăm 5 și creștem toți indexșii care sunt mai mici decât 5 și reducem toți indecșii mai mari.
+Indexul este **1**.
+Eliminăm **5** și creștem toți indexșii care sunt mai mici decât 5 și reducem toți indecșii mai mari.
 În acest caz, cu toții sunt mai mici decât 5.
 
-Rezultatul este \{9, 8\}.
+Rezultatul este \{**9, 8**\}.
 [/hint] 
 [hint]
-Indexul este 1. 
-Deci eliminăm 8 și scădem toți indecșii mai mari decât acesta.
+Indexul este **1**. 
+Deci eliminăm **8** și scădem toți indecșii mai mari decât acesta.
 
-Rezultatul este \{1\}.
+Rezultatul este \{**1**\}.
 [/hint] 
 [hint]
-Indexul este 0. 
+Indexul este **0**. 
 
-Deci eliminăm 1.
+Deci eliminăm **1**.
 Nu mai există elemente, așa că imprimăm suma tuturor elementelor eliminate:
 **5 + 8 + 1 = 14**
 
@@ -1326,24 +1326,24 @@ Nu mai există elemente, așa că imprimăm suma tuturor elementelor eliminate:
 
 [hints]
 [hint]
-Matricea este \{5, 10, 6, 3, 5\}.
+Matricea este \{**5, 10, 6, 3, 5**\}.
 
-Pasul 1: \{11, 4, 9, 11\}.
+Pasul 1: \{**11, 4, 9, 11**\}.
 [/hint] 
 [hint]
-Pasul 2: \{22, 15, 20, 22\}.
+Pasul 2: \{**22, 15, 20, 22**\}.
 [/hint] 
 [hint]
-Pasul 3: \{7, 5, 7\}
+Pasul 3: \{**7, 5, 7**\}
 [/hint] 
 [hint]
-Pasul 4: \{2, 2\}
+Pasul 4: \{**2, 2**\}
 [/hint] 
 [hint]
-Pasul 5: \{4, 4\}
+Pasul 5: \{**4, 4**\}
 [/hint] 
 [hint]
-Pasul 6: \{8\}
+Pasul 6: \{**8**\}
 [/hint] 
 [hint]
 Pasul 7: \{\} (empty)
