@@ -9,7 +9,7 @@
 
 Ele oferă o sintaxă concisă pentru a realiza cerințe complexe care, în mod normal, ar necesita multe linii de cod.
 
-JavaScript oferă tipul integrat "RegExp" care ne permite să lucrăm cu expresii regulate în mod eficient.
+JavaScript oferă tipul integrat `RegExp` care ne permite să lucrăm cu expresii regulate în mod eficient.
 
 Pentru a testa expresiile noastre regulate, putem utiliza [Regex101](www.regex101.com).
 
@@ -43,21 +43,21 @@ Un exemplu de model care corespunde unui nume:
 
 Utilizați paranteze drepte pentru a potrivi niște caractere specifice:
 
-- `[nvj]+` corespunde oricărui caracter care este **n**, **v** sau **j**.
+- `[nvj]+` - corespunde oricărui caracter care este **n**, **v** sau **j**.
 
 Exemplu:
 
-**n**ode.**j**s **v**0.12.2
+"**n**ode.**j**s **v**0.12.2" potrivește "njv"
 
 - Utilizați simbolul **caret** `^` pentru a exclude ceva din căutare, la fel ca în cazul exemplului de mai jos:
 
-`[^abc]` corespunde oricărui caracter care nu e **a**, **b** sau **c**.
+`[^abc]` - corespunde oricărui caracter care nu e **a**, **b** sau **c**.
 
 **Exemplu:**
 
-**A**b**r**a**h**a**m** face potriviri doar pentru "Arhm".
+**A**b**r**a**h**a**m** potrivește doar "Arhm".
 
-- Intervalul de caractere `[0-9]`: corespunde oricărei cifre de la 0 la 9.
+- Intervalul de caractere `[0-9]` - corespunde oricărei cifre de la 0 la 9.
 
 Exemplu:
 
