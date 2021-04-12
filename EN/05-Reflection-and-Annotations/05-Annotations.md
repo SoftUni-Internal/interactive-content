@@ -64,7 +64,7 @@ public <T> void warning(int size) {
 
 # Creating Annotations
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-35-creating-annotations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-35-36-creating-annotations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can create Custom Annotations using the **@interface** keyword.
 
@@ -158,7 +158,7 @@ Other **retention policies**:
 
 # Obtaining Annotations
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-41-annotations-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-41-42-43-annotations-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can use the `getAnnotations()` method to obtain all class annotations.
 
@@ -197,7 +197,7 @@ Annotation[] methodAnnotation = method.getDeclaredAnnotations();
 
 [task-description]
 # Description
-Create annotation **Subject** with a **String**\[\] element called **categories**, that: 
+Create a **Subject** annotation with a **String**\[\] element called **categories**, that: 
 - Should be available at runtime
 - Can be placed only on types
 
@@ -357,11 +357,11 @@ Test Passed!
 
 [task-description]
 # Description
-Create an annotation: **Author** with a **String** element called **name**, that:
+Create an **Author** annotation with a **String** element called **name**, that:
 - Should be available at runtime
 - Can be placed only on methods
 
-Create a class **Tracker** with a method:
+Create a **Tracker** class with a method:
 - **public static void printMethodsByAuthor()**
 
 

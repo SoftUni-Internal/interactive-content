@@ -10,7 +10,7 @@ To obtain the class modifiers, we use the `getModifiers()` method.
 int modifiers = aClass.getModifiers();
 ```
 
-It is good to remember that the `getModifiers()` method can be called on **constructors**, **fields**, and **methods**.
+The `getModifiers()` method can be called on **constructors**, **fields**, and **methods**.
 
 We can check our modifiers with the following methods:
 
@@ -34,7 +34,7 @@ The **output** will be:
 true
 ```
 
-Also, we are able to **check** if the modifiers are **protected, public or static** with the following **methods**:
+Also, we can **check** if the modifiers are **protected, public or static** with the following **methods**:
 
 - `Modifier.isProtected(modifiers)`
 
@@ -54,9 +54,9 @@ Also, we are able to **check** if the modifiers are **protected, public or stati
 
 Let us see how we can create **Arrays** via Reflection:
 
-We may use `Array.newInstance()` method.
+We can use the `Array.newInstance()` method.
 
-Let us make a quick demo in our main class:
+Let us see a quick demo in our main class:
 
 
 ``` java 
@@ -97,20 +97,20 @@ The array elements are: 2 9 3 0 7
 [slide hideTitle]
 # Problem with Solution: High-Quality Mistakes
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-27-problem-and-solution-high-quality-mistakes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
 [code-task title="High Quality Mistakes" taskId="Java-OOP-Advanced-Reflection-High-Quality-Mistakes" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [code-upload allowedMemory="30" /]
 [task-description]
 # Description
-You are already an expert in writing ** high-quality code**, so you know what kind of **access modifiers** must be set to the members of a class. 
 
-Time for **revenge** has come. 
+You are already an expert in writing **high-quality code**, so you know what kind of **access modifiers** must be set to the members of a class. 
 
-You have to check the code produced by your "**Beautiful and Smart**" trainers in class Reflection. 
 
-Check all **fields and methods access modifiers**. 
+It is time to put your skills into practice
+
+You have to check the code produced by your trainers in class Reflection. 
+
+Check all **fields and methods' access modifiers**. 
 
 Sort each category of members **alphabetically**. 
 
@@ -122,11 +122,11 @@ Print all mistakes to the console in the following **format**:
 
 - Getters:
 
-"\{**methodName**\} **have to be public!**"
+"\{**methodName**\} **must be public!**"
 
 - Setters:
 
-"\{**methodName**\} **have to be private!**"
+"\{**methodName**\} **must be private!**"
 
 
 [/task-description]
@@ -139,9 +139,9 @@ Blank Test
 email must be private!
 name must be private!
 webAddress must be private!
-getWebAddress have to be public!
-getZip have to be public!
-setEmail have to be private!
+getWebAddress must be public!
+getZip must be public!
+setEmail must be private!
 [/output]
 [/test]
 [/tests]
