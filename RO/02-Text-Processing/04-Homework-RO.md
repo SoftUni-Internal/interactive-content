@@ -636,7 +636,7 @@ function adapter(input, code) {
 [task-description]
 
 # Descriere
-Introducerea va fi un **un singur șir.**
+Intrarea va fi un **un singur șir.**
 
 Scrieți o funcție care taie șirul dat **în jumătate** și inversați cele **două jumătăți.**
 
