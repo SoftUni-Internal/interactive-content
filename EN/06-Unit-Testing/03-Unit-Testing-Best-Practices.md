@@ -6,7 +6,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-25-26-assertions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We will take a look at the best practices in Unit Testing.
+We will take at some approaches - considered "best practices" in Unit Testing.
 
 The `assertEquals(expected, actual)` method gives us more details when working with values, compared to `assertTrue()`.
 
@@ -46,7 +46,7 @@ Actual :35
 
 Another good practice is to avoid using "**magic numbers**".
 
-We must use "**constants**" instead.
+We should use "**constants**" instead.
 
 Let us take a look at this simple example:
 
@@ -61,27 +61,27 @@ public void depositShouldAddMoney() {
 }
 ```
 
-As you can see, it is better to declare our `int` variable outside of the test and use it as a constant.
+It is better to declare an `int` variable outside of the test and use it as a constant.
 
-By doing so, if we need to change our `amount` variable, we can change it only **outside** of the test, without worrying about the logic inside.
+By doing so, if we need to change the `amount` variable, we can do so only **outside** of the test, without worrying about the logic inside.
 
 [/slide]
 
 [slide hideTitle]
 
-# Before
+# The "Before" Annotation
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-29-before-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When we write tests, it is common to find that several tests need a similar object to be created before they can run.
 
-We can use `@Before` annotation to create this behavior.
+We can use the `@Before` annotation to utilize this behavior.
 
 A method, designated with `@Before` will be executed each time before running the next test.
 
 This will ensure consistent and clean data for each test, making our tests more reliable.
 
-Let us take a look at this simple example:
+Here is a simple example:
 
 ``` java
  public class Example {
@@ -99,7 +99,7 @@ Let us take a look at this simple example:
     }
 ```
 
-Our initialize method will execute before each test.
+The "initialize" method will run before each test.
 
 [/slide]
 
@@ -111,19 +111,19 @@ Our initialize method will execute before each test.
 
 Test naming is crucial, especially for long-term projects.
 
-There are  multiple **recommendations** regarding test names:
+There are multiple **recommendations** regarding test names:
 
 - Test names should use **business domain terminology**
 
 - Test names should be **descriptive** and **readable**
 
-- Our tests should express a **specific requirement**
+- Our tests should regard a **specific requirement**
 
-- Some of our test names could include the **name** of the tested **method** or **class**
+- Some test names could include the **name** of the tested **method** or **class**
 
-- We must write **clean names**
+- We must use **clear and descriptive test names**
 
-- Do not be afraid to write **long names**, as long as they are necessary to explain the test
+- **Long test names** are good to use, if that helps explain the test purpose
 
 Let us see some examples of **bad** test naming:
 
@@ -134,7 +134,7 @@ testTransfer()
 idontrememberwhatiamtesting {}
 ```
 
-Here are some **proper** test naming examples:
+Here are some **proper** test name examples:
 
 ```
 depositAddsMoneyToBalance() {}
@@ -151,12 +151,12 @@ transferSubtractsFromSourceAddsToDestAccount() {}
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-31-32-33-problem-and-solution-refactor-tests-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Description
-Refactor the tests for **Axe** and **Dummy** classes
+Refactor the tests for the **Axe** and **Dummy** classes
 
 Make sure that:
 - **Names** of test methods are **descriptive**
-- You use **appropriate assertions** ("assert equals" vs. "assert true")
-- You use **assertion messages**
+- Use **appropriate assertions** ("assert equals" vs. "assert true")
+- Use **assertion messages**
 - There are **no magic numbers**
 - There is **no code duplication** ("Do Not Repeat Yourself")
 
@@ -174,7 +174,7 @@ private Axe axe;
 private Dummy dummy;
 ```
 
-Create a method that executes before each test:
+Create a method that runs before each test:
 ```java
 @Before
 public void initializeTestObjects(){
@@ -183,7 +183,7 @@ public void initializeTestObjects(){
 }
 ```
 
-Make use of constants and private fields, as well as assertion messages:
+Use constants and private fields, as well as assertion messages:
 ```java
 @Test
 public void weaponAttackLosesDurability(){
