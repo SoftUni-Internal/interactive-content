@@ -16,7 +16,7 @@ Look at the pictures below to see what must happen.
 
 [image assetsSrc="nlt-workshop-03.png" /]
 
-## Home page after login (route "/home"):
+## page after login (route "/home"):
 
 [image assetsSrc="nlt-workshop-04.png" /]
 
