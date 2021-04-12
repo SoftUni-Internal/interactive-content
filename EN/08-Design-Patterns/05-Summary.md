@@ -7,7 +7,7 @@
 ## In this lesson you learned:
 
 - What **design patterns** are 
-    * typical solutions to common problems in software design
+    * solutions to common problems in software design
 
 - Why we use them
     * they improve the maintainability of our code
@@ -15,14 +15,15 @@
 
 - **Pros and cons** of using design patterns
     * tested solutions save time and other resources
-    * require a good knowledge of the underlying principles
+    * they require a good knowledge of the underlying principles
 
-- Type of design patterns
+- Types of design patterns:
+
     * creational
     * structural
     * behavioral
 
-- How design patterns are structured
+- Structure
     * the parts of a design pattern
 
 [/slide]
