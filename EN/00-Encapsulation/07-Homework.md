@@ -4196,9 +4196,9 @@ A **football team** has a variable number of **players**, a **name**, and a **ra
 | -name: String |
 | -players: List(Player) |
 |  |
-| +Team (String) |
+| +Team(String) |
 | -setName(String) : void |
-| +getName(): String |
+| +getName() : String |
 | +addPlayer(Player) : void |
 | +removePlayer(String) : void |
 | +getRating() : double |
@@ -4257,16 +4257,15 @@ The command can be one of the following:
 
 - A **name** cannot be null, empty, or whitespace. 
 
-In that case, print "**A name should not be empty.**"
+In that case, print "**Names cannot be blank.**"
 
-- **Stats** should be in the range (0..100). If not, print "\{**Stat name**\} **should be between 0 and 100.**"
+- **Stats** should be in the range (0..100). If not, print "**A player's** \{**Stat name**\} **should be a number between 0 and 100.**"
   
-- If you receive a command to **remove** a missing player, print "**Player** \{**Player name**\} **is not in** \{**Team name**\} **team.**"
+- If you receive a command to **remove** a missing player, print "**Player** \{**Player name**\} **is not in** \{**Team name**\}"
   
-- If you receive a command to **add** a player to a missing team, print "**Team** {**team name**} **does not exist.**"
+- If you receive a command to **add** a player to a missing team, print "\{**team name**\}**: There are no teams registered under this name.**"
   
-- If you receive a command to **show** stats for a missing team, print "**Team** {**team name**} **does not exist.**"
-
+- If you receive a command to **show** stats for a missing team, print "\{**team name**\}**: There are no teams registered under this name.**"
 
 # Examples
 
@@ -4284,7 +4283,7 @@ In that case, print "**A name should not be empty.**"
 | **Input** | **Output** |
 | --- | --- |
 | Team;Arsenal | Endurance should be between 0 and 100. |
-| Add;Arsenal;Kieran_Gibbs;75;85;84;92;67 | Player Aaron_Ramsey is not in Arsenal team. |
+| Add;Arsenal;Kieran_Gibbs;75;85;84;92;67 | Player Aaron_Ramsey is not in Arsenal. |
 | Add;Arsenal;Aaron_Ramsey;195;82;82;89;68 | Arsenal - 81 |
 | Remove;Arsenal;Aaron_Ramsey |  |
 | Rating;Arsenal |  |
@@ -4323,8 +4322,8 @@ Rating;Arsenal
 END
 [/input]
 [output]
-Endurance should be between 0 and 100.
-Player Aaron_Ramsey is not in Arsenal team.
+A player's endurance should be a number between 0 and 100.
+Player Aaron_Ramsey is not in Arsenal.
 Arsenal - 81
 [/output]
 [/test]
@@ -4350,7 +4349,7 @@ Rating;Arsenal
 END
 [/input]
 [output]
-Endurance should be between 0 and 100.
+A player's endurance should be a number between 0 and 100.
 England - 37
 Arsenal - 81
 [/output]
@@ -4368,10 +4367,10 @@ Rating;Angliq
 END
 [/input]
 [output]
-Endurance should be between 0 and 100.
+A player's endurance should be a number between 0 and 100.
 England - 37
 Arsenal - 81
-Team Angliq does not exist.
+Angliq: There are no teams registered under this name.
 [/output]
 [/test]
 [test]
@@ -4385,12 +4384,12 @@ Rating;Angliq
 END
 [/input]
 [output]
-Team Arsenal does not exist.
-Team Arsenal does not exist.
-Team England does not exist.
-Team England does not exist.
-Team Arsenal does not exist.
-Team Angliq does not exist.
+Arsenal: There are no teams registered under this name.
+Arsenal: There are no teams registered under this name.
+England: There are no teams registered under this name.
+England: There are no teams registered under this name.
+Arsenal: There are no teams registered under this name.
+Angliq: There are no teams registered under this name.
 [/output]
 [/test]
 [test]
@@ -4404,9 +4403,9 @@ Rating;Arsenal
 END
 [/input]
 [output]
-Endurance should be between 0 and 100.
-Player Aaron_Ramsey is not in Arsenal team.
-Team Ce does not exist.
+A player's endurance should be a number between 0 and 100.
+Player Aaron_Ramsey is not in Arsenal.
+Ce: There are no teams registered under this name.
 Arsenal - 81
 [/output]
 [/test]
@@ -4426,11 +4425,11 @@ Rating;Angliq
 END
 [/input]
 [output]
-Endurance should be between 0 and 100.
-Player Aaron_Ramsey is not in Arsenal team.
+A player's endurance should be a number between 0 and 100.
+Player Aaron_Ramsey is not in Arsenal.
 England - 0
 Arsenal - 0
-Team Angliq does not exist.
+Angliq: There are no teams registered under this name.
 [/output]
 [/test]
 [test]
@@ -4446,10 +4445,10 @@ Rating;Angliq
 END
 [/input]
 [output]
-Endurance should be between 0 and 100.
+A player's endurance should be a number between 0 and 100.
 England - 37
 Arsenal - 81
-Team Angliq does not exist.
+Angliq: There are no teams registered under this name.
 [/output]
 [/test]
 [/tests]
