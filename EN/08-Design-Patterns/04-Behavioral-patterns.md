@@ -8,35 +8,34 @@
 
 **Behavioral patterns** are concerned with the **interaction** between objects.
 
-The idea behind behavioral patterns is to concentrate on the way objects are interconnected.
+They define the way objects are interconnected.
 
-In short, they represent the relationship between objects.
 
 [/slide]
 
 [slide hideTitle]
 
-# Command Pattern
+# The Command Pattern
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-35-command-pattern-demo-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **command pattern** lets us **parametrize** clients with different requests. 
 
-This pattern provides us a single method for executing commands. 
+This pattern provides us a single method to execute commands. 
 
-It is is called a **command interface**.
+This can alsobe called **command interface**.
 
-Then, we have the **concrete command** which is an operation that passes the command to the receiver.
+Then, we have the **concrete command** which is an operation that passes a command to the receiver.
 
 The **Receiver** takes the command and acts.
 
-And the last, we have the **Invoker** class that asks the **command** to carry our request.
+And finally, we have the **Invoker** class that asks the **command** to carry our request.
 
 [image assetsSrc="Design-Patterns(3).png" /]
 
-This simple example shows how the command pattern is working.
+This simple example shows how a command pattern functions.
 
-Imagine we have a very simple text editor.
+We will simulate a simple text editor.
 
 Let us first create our interface which will execute our methods:
 
@@ -46,7 +45,7 @@ public interface Command {
 }
 ```
 
-Then, it is important to create our class that will handle our methods:
+Then, it is important to create a class that will handle the methods:
 
 ``` java
 public class Text
@@ -63,7 +62,7 @@ public class Text
 }
 ```
 
-After that, we should create the classes that implement our **Command** interface that we have created:
+After that, we should create the classes that implement a **Command** interface that we have created:
 
 ``` java
 public class OpenText implements Command
@@ -100,7 +99,7 @@ public class CloseText implements Command {
 
 We will also need an **Options** class for our two commands. 
 
-We will create an `Options()` method with two parameters inside.
+We will create an `Options()` method with holding parameters.
 
 ``` java
 public class Options {
@@ -123,7 +122,7 @@ public class Options {
 }
 ```
 
-Let us test our code using our `main` method:
+Let us test our code using the `main` method:
 
 ``` java
 public class Main {
@@ -138,7 +137,7 @@ public class Main {
 }
 ```
 
-The **output** of our program will be:
+The **output** of this program will be:
 
 ```
 Text is Open.
@@ -149,21 +148,21 @@ Text is Closed.
 
 [slide hideTitle]
 
-# Template Pattern
+# The Template Pattern
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-40-template-pattern-demo-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The **template pattern** gives us an abstract idea of an algorithm and an abstract method, called a **template method**.
+The **template pattern** gives us an abstract idea of an algorithm and an abstract method.
 
 We use template patterns to distribute behavior between classes.
 
 This way, we can **reduce redundancy** in our code.
 
-It also allows the subclasses to **redefine** the implementation of some of the algorithm's **parts**, but not its structure.
+It also allows any subclasses to **redefine** the implementation of some of the algorithm **parts**, but not its structure.
 
 [image assetsSrc="Design-Patterns(4).png" /]
 
-To understand this clearly, let us take a look at this code example:
+Let us take a look at this code example:
 
 ``` java
 public class Salad {
@@ -193,10 +192,9 @@ public class Salad {
 
  }
 ```
+Here we have a main `prepareSalad()` method that calls our four methods. 
 
-As we see from this code above, we have a main `prepareSalad()` method that calls our four methods. 
-
-They contain the "**algorithm**" for making a salad.
+They contain the "**algorithm**" to make a salad.
 
 
 [/slide]
