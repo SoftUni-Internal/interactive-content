@@ -9,9 +9,9 @@
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/Java-OOP-Advanced-Reflection-and-Annotations-harvestingFields.zip) **for this task.**
 
-You will receive a **RichSoilLand** class with lots of fields, which you must harvest. 
+You will receive a **RichSoilLand** class with lots of fields, which you should harvest. 
 
-Harvesting means that you must print each **field** in a given format (see the output).
+Harvesting means that you must print out information on each **field** in a given format (see the output).
 
 ## Input
 You will receive a maximum of 100 lines with one of the following commands:
@@ -463,15 +463,13 @@ private Stream secretStream
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/Java-OOP-Advanced-Reflection-and-Annotations-blackBoxInteger.zip) **for this task.**
 
-You are helping a buddy of yours who is still in the OOP Basics course.
+You want to help a buddy of yours who is still in the OOP Basics course.
 
 He has made a class with all private members. 
 
-Your tasks are to **instantiate** an object from his class (always with start value 0) and then **invoke** the different methods it has. 
+Your tasks are to **instantiate** an object from his class (all with a start value of 0) and then **invoke** the different methods it has. 
 
-Your restriction is to **not** change anything in the class itself (consider it a black box). 
-
-You can look at this class but do not touch anything! 
+Your should **not** change anything in the class itself. 
 
 The class itself is called **BlackBoxInt**. It is a wrapper for the **int** primitive. 
 
@@ -509,15 +507,15 @@ The input will consist of lines in the form:
 
 Example: **add_115**
 
-Input will always be valid and in the format described, so there is no need to check it explicitly. 
+The input will always be applicale and in the described format, so there is no need to check it explicitly. 
 
-You stop receiving input when you encounter the command "**END**".
+You stop receiving input when you encounter the command: "**END**".
 ## Output
 Each command (except the **END** one) should print the current value of **innerValue** of the **BlackBoxInt** object you instantiated. 
 
-**Do not cheat** by overriding **toString** in the class.
+The goal is not to override the **toString** method in the class.
 
-You must get the value from the **private** field.
+You shoudl get each value from the **private** field.
 
 # Example
 | **Input** | **Output** |
@@ -682,50 +680,50 @@ END
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/Java-OOP-Advanced-Reflection-and-Annotations-barracksWars.zip) **for this task.**
 
-You are given a small console-based project called Barracks. 
+You are given a small console-based project called "Barracks". 
 
 The project has two functionalities:
 - adding new units to its repository
 - printing a report with statistics about the units currently in the repository
 
-First, let us go over the original task before the project was created.
+First, let us go over the original task before this project was created.
 
 ## Input
 The input consists of multiple commands, each on a separate line. 
 
-Commands that execute the functionality are:
+The possible commands are:
 - **add** \{**Archer/Swordsman/Pikeman/**\{**…**\}\} - adds a unit to the repository
 - **report** - prints a lexicological ordered statistic about the units in the repository
-- **fight** - ends the input
+- **fight** - ends the input intake
 
 ## Output
-Each command except **fight** should print output on the console.
+Each command except **fight** should produce output.
 - **add** should print: 
 
     "\{**Archer/Swordsman/Pikeman/**\{**…**\}\} **added!**"
 
-- **report** should print all the info in the repository in the format: 
+- **report** should print all the information in the repository in the format: 
 
     "\{**UnitType**\} -\> \{**UnitQuantity**\}", sorted by UnitType
 
 ## Constraints
 - The input will consist of no more than **1000** lines
-- The **report** command will never be given before any valid **add** command is provided
+- The **report** command will never be given before a valid **add** command is provided
 
 ## Your Task
 You have to **study the code of the project and figure out how it works.**
 
-There are parts of it that are not implemented (left with TODOs (**TODO** window will be useful)). 
+There are parts of it that are not implemented (marked with "TODO"). 
 
-You must implement the functionality of the **createUnit** method in the **UnitFactoryImpl** class so that it creates a unit based on the unit type received as a parameter. 
+You must implement the functionality of the **createUnit** method in the **UnitFactoryImpl** class so that it records a unit based on the unit type received as a parameter. 
 
-Implement it in such a way that whenever you add a new unit, it can be created without the need to change anything in the **UnitFactoryImpl** class (psst - use reflection). 
+Implement it in such a way that whenever you add a new unit, it can be created without the need to change anything in the **UnitFactoryImpl** class (hint - use reflection). 
 
-You can use the approach called **Simple Factory**.
+You can use the approach known as: **Simple Factory**.
 
 Add two new unit classes (there will be tests that require them) - **Horseman** with 50 health and 10 attack and **Gunner** with 20 health and 20 attack.
 
-If you do everything correctly for this problem, you should write code only in the **factories** and **units** packages.
+If you do everything correctly, you should add code only to the **factories** and **units** packages.
 
 
 # Examples
@@ -1077,13 +1075,13 @@ Swordsman -\> 2
 
 [task-description]
 # Description
-As you might have noticed, the commands in the project from **Problem 3** are implemented via a switch case with method calls in the **Engine** class. 
+As you might have noticed, the commands in the project from **Problem 3** are implemented in a switch case with method calls in the **Engine** class. 
 
 Although this approach works, it is flawed because you have to add a new case for each command. 
 
 In some projects, you might not have access to the engine, and this would not work. 
 
-Imagine this project will be outsourced - in this case, the outsourcing firm will not have access to the Engine. 
+If this project got outsourced the outsourcing firm might not have access to the Engine. 
 
 Make it so whenever they want to add a new command they will not have to change anything in the **Engine**.
 
@@ -1120,16 +1118,16 @@ public abstract class Command implements Executable {
 ```
 Notice how all commands that extend this one will have both a **Repository** and a **UnitFactory**, although not all of them need these. 
 
-Leave it like this for this problem, because for the reflection to work, we need all constructors to accept the same parameters. 
+We can allow this, because for reflection to work, we need all constructors to accept the same parameters. 
 
 We will see how to go around this issue in **Problem 5.**
 
 Once you have implemented the pattern, add a new command. 
 
-It will have the following syntax:
-- **retire** \{**UnitType**\} - All it has to do is **remove** a unit of the provided type from the repository
+It should have the following syntax:
+- **retire** \{**UnitType**\} - All it does is **remove** a unit of the provided type from the repository
     - if there are no such units currently in the repository, print: "**No such units in repository.**"
-    - if there is such a unit currently in the repository, print: "\{**UnitType**\} **retired!**"
+    - if there is such a unit, print: "\{**UnitType**\} **retired!**"
 
 To implement this command, you will also have to implement a corresponding method in the **UnitRepository.**
 
@@ -1351,7 +1349,7 @@ Swordsman -\> 0
 
 [task-description]
 # Description
-In the final part of this epic problem trilogy, we will resolve the issue where all Commands received all utility classes as parameters in their constructors. 
+In the final part of this epic problem trilogy, we will resolve the issue where all Commands receive all utility classes as parameters in their constructors. 
 
 We can accomplish this by using an approach called **dependency injection container**. 
 
@@ -1361,13 +1359,13 @@ We will do a little twist on that approach.
 
 Remove all fields from the abstract command except the **data**. 
 
-Instead, put whatever fields each command needs in the concrete class. 
+Instead, put any fields each command needs in the concrete class. 
 
 Create an annotation called **Inject** and make it usable only on fields. 
 
 Put the annotation over the fields we need to set through reflection. 
 
-Once you have prepared all of this, write the necessary reflection code in the **Command Interpreter** (which you should have refactored out from the engine in **Problem 4**).
+Once you have prepared this, add the necessary reflection code in the **Command Interpreter** (which you should have refactored out from the engine in **Problem 4**).
 
 Use the tests from Problem 4 to test your solution.
 
