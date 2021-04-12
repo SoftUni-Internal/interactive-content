@@ -3,7 +3,7 @@
 [slide hideTitle]
 # What is Polymorphism
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/EN/interactive-java-oop-advanced-polymorphism-3-4-What-is-polymorphism-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/EN/interactive-java-oop-advanced-polymorphism-3-4-5-What-is-polymorphism-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Polymorphism is one of the four OOP base pillars in **object-oriented** languages.
 
@@ -147,7 +147,7 @@ The `instanceOf` operator determines whether there is an **is-a relationship** b
 
 # Types of Polymorphism
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/EN/interactive-java-oop-advanced-polymorphism-8-9-Types-of-polymorphism-compile-time-polymorphism-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/EN/interactive-java-oop-advanced-polymorphism-8-9-13-14-Types-of-polymorphism-compile-time-polymorphism-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 There are **two** types of **polymorphism** in Java:
 
@@ -399,7 +399,7 @@ Test Passed!
 
 # Principles When Overriding And Overloading Methods
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/EN/interactive-java-oop-advanced-polymorphism-12-Rules-for-overloading-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/EN/interactive-java-oop-advanced-polymorphism-12-15-Rules-for-overloading-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Overriding Methods
 
@@ -411,7 +411,7 @@ Test Passed!
 
 - We cannot override **private**, **static** or **final** methods
 
-- Overriding methods cannot throw a **checked exception** which is higher in the hierarchy than one thrown by the overridden method
+- The method in the child class **cannot** throw an exception if it is **lower** in the exception hierarchy than the exception thrown in the **parent class**
 
 ## Overloading Methods
 

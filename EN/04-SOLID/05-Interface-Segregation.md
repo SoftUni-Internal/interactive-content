@@ -22,11 +22,11 @@ Each separate interface should isolate non-directly relatable to the other inter
 
 [slide hideTitle]
 
-# Fat Interfaces
+# Bloated Interfaces
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-22-fat-interfaces-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Example:
+**Example:**
 
 ```java
 public interface Worker {
@@ -54,7 +54,7 @@ public class Robot implements Worker {
   }
 }
 ```
-The`Worker` interface has two methods – `work()` and `sleep()`.​
+The `Worker` interface has two methods – `work()` and `sleep()`.​
 
 When an `Employee` class implements that interface, there will not be any complications. 
 
@@ -72,11 +72,11 @@ Let us see some peotential solutions to this.
 
 [slide hideTitle]
 
-# Fat Interfaces - Consequences
+# Bloated Interfaces - Consequences
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-23-fat-interfaces-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Having fat interfaces may cause some consequences that we should be aware of.**
+**Having bloated interfaces may cause some consequences that we should be aware of.**
 
 When we see an interface with more than 5-6 members, we should see if it is not fir to be split into two interfaces or more.
 

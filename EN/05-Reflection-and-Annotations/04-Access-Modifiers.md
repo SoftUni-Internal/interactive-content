@@ -97,14 +97,14 @@ The array elements are: 2 9 3 0 7
 [slide hideTitle]
 # Problem with Solution: High-Quality Mistakes
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-27-problem-and-solution-high-quality-mistakes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
 [code-task title="High Quality Mistakes" taskId="Java-OOP-Advanced-Reflection-High-Quality-Mistakes" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [code-upload allowedMemory="30" /]
 [task-description]
 # Description
-Now, that you are an expert in ** high-quality code** and you know very well what kind of **access modifiers** sould be set to the members of a class. 
+
+You are already an expert in writing **high-quality code**, so you know what kind of **access modifiers** must be set to the members of a class. 
+
 
 It is time to put your skills into practice
 
@@ -122,11 +122,11 @@ Print all mistakes to the console in the following **format**:
 
 - Getters:
 
-"\{**methodName**\} **have to be public!**"
+"\{**methodName**\} **must be public!**"
 
 - Setters:
 
-"\{**methodName**\} **have to be private!**"
+"\{**methodName**\} **must be private!**"
 
 
 [/task-description]
@@ -139,9 +139,9 @@ Blank Test
 email must be private!
 name must be private!
 webAddress must be private!
-getWebAddress have to be public!
-getZip have to be public!
-setEmail have to be private!
+getWebAddress must be public!
+getZip must be public!
+setEmail must be private!
 [/output]
 [/test]
 [/tests]
