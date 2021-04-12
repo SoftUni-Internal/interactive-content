@@ -56,9 +56,6 @@ for (char ch : chars) {
 ```
 [/hint] 
 [hint]
-
-[/hint] 
-[hint]
 Finally, **print** the information for each key-value pair to the console:
 
 ```java
@@ -1900,10 +1897,16 @@ In cazul în care nu avem **utilizatori de forță** de o parte, atunci **nu ar 
 | End | Side: Light, Members: 1 |
 | | ! George |
 
-### Comentarii
+[hints]
+[hint]
 L-am înregistrat pe George de partea Luminii și pe Peter, de partea Întunericului. 
-
+[/hint] 
+[hint]
 După ce am primit "**End**", printăm ambele părți, ordonate de numărul de membri și apoi, de numele lor. 
+[/hint] 
+[/hints] 
+
+
 ### Exemple
 | **Intrare* | **Ieșire** |
 | --- | --- |
@@ -1914,12 +1917,17 @@ După ce am primit "**End**", printăm ambele părți, ordonate de numărul de m
 | End | ! John |
 | | ! Ronn |
 
-### Comentarii
+[hints]
+[hint]
 Deși John nu are un profil, îl înregistrăm și îl adăugăm în partea Luminii. 
-
+[/hint] 
+[hint]
 Îl ștergem pe Dean din partea Întunericului și îl adăugăm la partea Luminii.
-
+[/hint] 
+[hint]
 Imprimăm doar partea Luminii, fiindcă partea Întunericului nu are niciun membru. 
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]

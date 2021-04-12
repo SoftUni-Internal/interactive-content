@@ -55,9 +55,6 @@ for (char ch : chars) {
 ```
 [/hint] 
 [hint]
-
-[/hint] 
-[hint]
 Finally, **print** the information for each key-value pair to the console:
 
 ```java
@@ -1904,10 +1901,14 @@ The program ends when you receive the "**End**" command.
 | End | Side: Light, Members: 1 |
 | | ! George |
 
-### Comments
+[hints]
+[hint]
 We register George on the Light side, and Peter on the Dark side.
-
+[/hint] 
+[hint]
 After receiving "**End**", we print both sides, ordered by the count of their users, and then ordered by their names.
+[/hint] 
+[/hints] 
 
 ### Examples
 | **Input** | **Output** |
@@ -1919,12 +1920,17 @@ After receiving "**End**", we print both sides, ordered by the count of their us
 | End | ! John |
 | | ! Ronn |
 
-### Comments
+[hints]
+[hint]
 Although John does not have a profile, we register him and we add him to the Lighter side.
-
+[/hint] 
+[hint]
 We remove Dean from the Darker side, and we add him to Lighter side.
-
+[/hint] 
+[hint]
 We print only the information about the Lighter side, because the Darker side has no members.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]
