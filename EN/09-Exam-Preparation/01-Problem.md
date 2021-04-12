@@ -12,7 +12,7 @@
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/10-Java-OOP-Advanced-Exam-Preparation.zip) **for these tasks.**
 
-- Upload **only the santaWorkshop package** in every task **except Unit Tests**
+- Upload **only the santaWorkshop package** for every task **except Unit Tests**
 - **Do not modify the interfaces or their packages**
 - Use **strong cohesion** and **loose coupling**
 - **Use inheritance and the provided interfaces wherever possible**
@@ -22,9 +22,9 @@
 
 # Description
 
-You are given interfaces, and you have to implement their functionality in the **correct classes**.
+The task contains ready interfaces - implement their functionality in the **correct classes**.
 
-There are **four** types of entities in the application: **Dwarf, Present, Workshop, Instrument**. 
+There are **four** types of entity in the application: **Dwarf, Present, Workshop, Instrument**. 
 
 There should also be a **DwarfRepository**, as well as a **PresentRepository**.
 
@@ -49,7 +49,7 @@ There should also be a **DwarfRepository**, as well as a **PresentRepository**.
 
 ## Constructor:
 
-A **BaseDwarf** should take the following values upon initialization: 
+A **BaseDwarf** should take the following values on initialization: 
 
 - **(String name, int energy)**
 
@@ -57,7 +57,7 @@ A **BaseDwarf** should take the following values upon initialization:
 ## Behavior:
 
 - `void work()`
-  * the **work()** method decreases dwarfs' energy with 10
+  * the **work()** method decreases a dwarfs' energy by 10
   * a dwarf's energy should **not** drop **below 0** (if the power becomes less than 0, set it to 0)
 
 - `void addInstrument(Instrument instrument)` 
@@ -94,7 +94,7 @@ The constructor should take the following values upon initialization:
 
 The **InstrumentImpl** is a class that represents the tool, which a **Dwarf** uses to craft a **Present**.
 
-**It should** be able to be **instantiated**.
+**It should** offer the option to be **instantiated**.
 
 ## Data
 
@@ -167,7 +167,7 @@ Here is how the **craft** method works:
 
 - Keep working **until** the present is **done** and while the dwarf has **energy** left (and **instruments** to use)
 
-- If at some point the **power** of the current instrument **reaches** or **drops below 0**, meaning it gets **broken**, then the dwarf should take the **next instrument** from its collection, if it has **any left**
+- If at some point the **power** of the current instrument **reaches** 0 or **drops below 0**, meaning it gets **broken**, then the dwarf should take the **next instrument** from its collection, if it has **any left**
 
 # DwarfRepository
 
@@ -181,7 +181,7 @@ Here is how the **craft** method works:
 
 - `void add(Dwarf dwarf)`
   - **adds** a dwarf to the collection
-  - every dwarf is **unique** and it is guaranteed that there will be no repeating dwarf names
+  - every dwarf is **unique**. There will be no repeating dwarf names
 
 - `boolean remove(Dwarf dwarf)`
   * **removes** a dwarf from the collection
@@ -205,7 +205,7 @@ The present repository is a repository for presents that await to be crafted.
 
 - `void add(Present present)`
   - **adds** a present to be crafted
-  - every present is **unique** and it is guaranteed that there will not be a present with the same name
+  - every present is **unique** . Тhere will not be a present with the same name
 
 - `boolean remove(Present present)`
   - **removes** a present from the collection
@@ -213,7 +213,7 @@ The present repository is a repository for presents that await to be crafted.
 
 - `Present findByName(String name)`
   - returns a **present** with that **name** if such exists
-  - we are guaranteed that the present **exists** in the collection
+  - Each given name will **be available** in the collection
 
 - `Collection<Present> getModels()`
   - returns the collection of presents (unmodifiable)
