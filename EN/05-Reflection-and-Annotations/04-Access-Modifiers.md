@@ -10,7 +10,7 @@ To obtain the class modifiers, we use the `getModifiers()` method.
 int modifiers = aClass.getModifiers();
 ```
 
-It is good to remember that the `getModifiers()` method can be called on **constructors**, **fields**, and **methods**.
+The `getModifiers()` method can be called on **constructors**, **fields**, and **methods**.
 
 We can check our modifiers with the following methods:
 
@@ -34,7 +34,7 @@ The **output** will be:
 true
 ```
 
-Also, we are able to **check** if the modifiers are **protected, public or static** with the following **methods**:
+Also, we can **check** if the modifiers are **protected, public or static** with the following **methods**:
 
 - `Modifier.isProtected(modifiers)`
 
@@ -54,9 +54,9 @@ Also, we are able to **check** if the modifiers are **protected, public or stati
 
 Let us see how we can create **Arrays** via Reflection:
 
-We may use `Array.newInstance()` method.
+We can use the `Array.newInstance()` method.
 
-Let us make a quick demo in our main class:
+Let us see a quick demo in our main class:
 
 
 ``` java 
@@ -102,11 +102,13 @@ The array elements are: 2 9 3 0 7
 [code-upload allowedMemory="30" /]
 [task-description]
 # Description
+
 You are already an expert in writing **high-quality code**, so you know what kind of **access modifiers** must be set to the members of a class. 
 
 You have to check the code in the Reflection class. 
 
 Check all **fields and access modifiers for the methods**. 
+
 
 Sort each category of members **alphabetically**. 
 

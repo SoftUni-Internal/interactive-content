@@ -6,9 +6,9 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-14-16-constructors-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Let us see how we can obtain constructor objects.
+Let us see how to obtain constructor objects.
 
-We can use the **constructor class** that provides us the following methods for this purpose:
+We can use the **constructor class** which provides the following methods for this purpose:
 
 ```java
 Constructor[] ctors = aClass.getConstructors();
@@ -21,13 +21,13 @@ If we want to obtain all declared constructors, we can use the `getDeclaredConst
 Constructor[] ctors = aClass.getDeclaredConstructors();
 ```
 
-Also, we can obtain the following constructor by its parameters:
+Also, we can obtain the constructor by its parameters:
 
 ```java
 Constructor ctor = aClass.getConstructor(String.class);
 ```
 
-Let us try to instantiate objects using our Constructor Object:
+Let us instantiate objects using the Constructor Object:
 
 ``` java
 Constructor constructor = MyObject.class.getConstructor(String.class);
@@ -39,7 +39,7 @@ The `newInstance()` method takes an optional amount of parameters.
 
 We must supply exactly one parameter per argument in the constructor which we are invoking.
 
-Like in the code above - It was a constructor taking `String`, so we supplied one `String`.
+Like in the code above - It is a constructor acceptiong a `String`, so we should provide a `String`.
 
 [/slide]
 
@@ -49,7 +49,7 @@ Like in the code above - It was a constructor taking `String`, so we supplied on
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-17-18-fields-name-and-type-fields-set-and-get-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Analogically to the way we get constructors, we can obtain **class members**.
+Analogically to the way we "get" constructors, we can obtain **class members**.
 
 Let us see how we can receive all **public** fields:
 
@@ -89,7 +89,7 @@ field.set(object, value); // The object parameter passed to the get and set meth
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-19-20-methods-methods-invoke-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Let us asume we have `class` Dog with methods inside:
+If we have a `class` called Dog with these methods inside:
 
 ```java
 public class Dog extends Mammal {
@@ -106,7 +106,7 @@ public class Dog extends Mammal {
 
 ```
 
-We can **obtain** these methods with following syntax:
+We can **obtain** these methods with the following syntax:
 
 ```java
 public class Main {
@@ -133,9 +133,9 @@ method notify
 method notifyAll
 ```
 
-We can see that besides the **custom methods** we wrote (`walk`, `makeSound`, `eat`) we also have default methods (`wait`, `equals`, `toString`, `hashCode`, etc).
+Besides the **custom methods** we defined (`walk`, `makeSound`, `eat`) we also have default methods (`wait`, `equals`, `toString`, `hashCode`, etc).
 
-We can also obtain methods with parameters and return type and invoke them.
+We can also obtain methods with their parameters and return type and invoke them.
 
 We can obtain all public methods like this:
 
@@ -146,7 +146,7 @@ Method method = aClass.getMethod("doSomething", String.class);
 
 ## Getting Methods Without Parameters
 
-We can obtain methods without parameters:
+We can also obtain methods without parameters:
 ```java 
 Method method = aClass.getMethod("doSomething", null); 
 // `null` is set when we want a method without parameters. 
@@ -179,6 +179,7 @@ Object returnValue = method.invoke(null, "arg1");
 [task-description]
 # Description
 
+
 Use reflection to get all of the **Reflection** methods. 
 
 Then prepare an algorithm that will recognize which methods are **getters** and **setters**. 
@@ -191,7 +192,9 @@ Print to the console each **getter** on a new line in the format:
 Then print all setters in the format:
 - "\{**name**\} **will set a field of the class** \{**Parameter Type**\}"
 
-**Do this without changing anything in the "Reflection.java" file.**
+
+**The "Reflection.java" file should not be altered in the process.**
+
 
 [/task-description]
 [code-upload allowedMemory="30" /]

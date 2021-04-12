@@ -7,7 +7,7 @@
 ## In this lesson you learned:
 
 - Unit testing helps us build solid code
-- We use the AAA pattern to structure our unit tests
+- We use the "AAA" pattern to structure our unit tests
 
 ```java
 public class AxeTests{
@@ -27,7 +27,7 @@ public class AxeTests{
 
 - We need to use descriptive names for our tests
 
-**The following names are bad:**
+**The following names are not good:**
 ```
 increaseDMG {}
 test1() {}
@@ -43,7 +43,7 @@ transferSubtractsFromSourceAddsToDestAccount() {}
 ```
 
 - Dependency injection looses coupling and improves design 
-- The difference between fake implementation and mocking objects
+- Differences between fake implementation and mocking objects
 
 ## In the next lesson you will learn:
 

@@ -16,11 +16,11 @@ Instead, they are **general descriptions** of problem-solving **templates** that
 
 By applying design patterns, we can solve structural problems and speed up the development process by implementing **well-proven development paradigms**.
 
-Also, we can prevent future issues that can cause serious problems.
+Also, we can prevent future issues.
 
 In the process, we also improve code readability.
 
-The most common **problems** that design patterns solve are:
+The most common **problems** that design patterns solve concern:
 
 - Abstraction
 
@@ -36,9 +36,9 @@ The most common **problems** that design patterns solve are:
 
 Design patterns consist of **four** elements:
 
-- Pattern name - concise and descriptive
+- Pattern name 
 
-- Problem - intent, context, and when to apply
+- Problem - its intent, context and when to apply
 
 - Solution - abstract code, or a template of an idea to solve our problems
 
@@ -64,7 +64,7 @@ They also ensure that your code follows programming principles like **coupling**
 
 We learned the basics of **coupling** and **cohesion** in previous lessons.
 
-Today, we will try to expand our knowledge a bit.
+Today, we will expand our knowledge a bit.
 
 We can say that **coupled components interact with each other**. 
 
@@ -76,24 +76,24 @@ We cannot completely dismiss the need for components to interact with each other
 
 Usually, low coupling indicates a **good code structure**.
 
-The coupling has many types, but we will not explore each type.
+There are many types of coupling but we will not explore each one.
 
-Design patterns can make our job easier. 
+Design patterns can make codig easier. 
 
 They can help us analyze the more abstract ideas of our program by **providing well-tested solutions**.
 
-It is important to understand that design patterns teach us to write **faster** and **more clear** code. 
+It is important to understand that design patterns teach us to write **faster** and **clearer** code. 
 
-That provides us with a clearer picture of how we are implementing the software design.
+This provides us with a clear picture of how to implement a software design.
 
 ## Drawbacks
 
 Unfortunately, design patterns **do not lead** to direct code reuse.
 
-Sometimes we tend to **overload** and **overdesign** our patterns.
+Sometimes we tend to **overload** and **redesign** our patterns.
 
 Design patterns should only be followed if the developer has good knowledge about them.
 
-They are often used improperly, with little thought about code flexibility.
+They may often be used improperly and with little thought about code flexibility.
 
 [/slide]

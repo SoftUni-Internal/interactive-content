@@ -6,15 +6,15 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-8-9-10-the-class-object-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Let us continue with some more detailed information about Classes in Java Reflection.
+Let us continue by learning about Classes using Java Reflection.
 
-Java provides us a static class with the name `Class` in `java.lang.package`. 
+Java provides a static class with the name `Class` in the `java.lang.package`. 
 
-Instances that are inside the `Class are responsible for interfaces and classes in a running Java application.
+Instances that are inside the Class - are responsible for interfaces and classes in a running Java application.
 
-We can create an object of `Class` by using one of the following options:
+We can create an object of the `Class` by using one of the following options:
 
-- `.class` extension
+- The `.class` extension
 
 **For example:**
 
@@ -25,7 +25,7 @@ Class test = Dog.class;
 // will have all the needed information about the Dog class.
 ```
 
-- `forName()` method
+- The `forName()` method
 
 The `forName()` method takes the name of the class and returns the Class object.
 
@@ -72,7 +72,7 @@ Dog
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-11-base-class-and-interfaces-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We can also obtain our parent class like this:
+We can also obtain a parent class the following way:
 
 ```java
 public class Dog extends Mammal {
@@ -101,9 +101,9 @@ class com.company.Mammal
 ```
 
 
-Now, let us obtain the methods and interfaces in our classes.
+Now, let us see how to obtain the methods and interfaces in our classes.
 
-Interfaces are also represented by `Class` objects in Java Reflection:
+Interfaces are also represented by `Class` objects when using Java Reflection:
 
 ``` java
 Class[] interfaces = aClass.getInterfaces();
@@ -126,15 +126,15 @@ Class[] interfaces = aClass.getInterfaces();
 
 Place the "**Reflection.java**" file into the "**src**" folder in your project. 
 
-Try to use **reflection** and print some information about this class. 
+Use **reflection** and print some information about this class. 
 
-Print everything on new line:
+Print everything on a new line:
 - **The type of the class**
 - **The type of the super class**
 - **All interfaces** that are implemented by the class
 - **Instantiate an object** using reflection and print it as well
 
-**Do not change anything in the Reflection class!**
+**The Reflection class should not be altered in the process**
 
 [/task-description]
 [tests]

@@ -6,7 +6,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-11-13-manual-testing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Unit Testing is the process of examining smaller **pieces/units** of our application.
+Unit Testing is the process of examining separate **pieces/units** of our application.
 
 Let us review the main differences between manual and automated testing.
 
@@ -48,7 +48,7 @@ To make things easier, we need a **structured** approach that:
 **Automated testing** contains:
 
 - **Unit tests**
-  - used to examine a **piece of a single logical unit** in our code (method, class, etc.)
+  - used to examine a **a single logical unit** in our code (method, class, etc.)
 
 - **Integration tests**
   - tests a module in our application (payment, registration, etc.)
@@ -65,11 +65,9 @@ To make things easier, we need a **structured** approach that:
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-15-16-junit-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-JUnit is one of the first unit testing **frameworks** for Java.
+JUnit is one of the most popular unit testing **frameworks** for Java.
 
-To get started, we need to set up the JUnit repository. 
-
-After **creating a Maven project**, we must copy and paste this code into our `pom.xml` file.
+To get started, we need to set up the JUnit repository, after **creating a Maven project**, we should copy and paste this code into our `pom.xml` file.
 
 ```
 <project …>
@@ -95,9 +93,9 @@ After **creating a Maven project**, we must copy and paste this code into our `p
 
 Let us create a new **package** for our tests.
 
-After that, we must create our first class for test methods (e.g **CalculatorTests**).
+After that, we can create our first class containing test methods (e.g **CalculatorTests**).
 
-We can now create our first **public void** method, annotated with `@Test`.
+We can now create a **public void** method, annotated with `@Test`.
 
 ``` java
 @Test
@@ -111,11 +109,11 @@ public void commandShouldMultiplyNumbers() {
 
 [slide hideTitle]
 
-# 3A Pattern
+# The "3A" Pattern
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-18-3A-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-There is a **must-know** pattern when creating unit tests.
+This is a **must-know** pattern when creating unit tests.
 
 The AAA pattern (**Arrange-Act-Assert**) has become the **standard** testing pattern in the software industry.
 
@@ -137,11 +135,11 @@ Let us take a look at this simple example:
     }
 ```
 
-In the beginning, we must **аrrange** all conditions for the testing system.
+First we should **аrrange** all conditions for the testing system.
 
-After that, we take the actions **аct**, needed to produce a result.
+Then we take the actions **аct**, which aim to produce a certain result.
 
-Finally, we **аssert** that the expected output matches the generated output.
+Finally, we check **аssert** if the expected output matches the generated output.
 
 [/slide]
 
@@ -151,9 +149,9 @@ Finally, we **аssert** that the expected output matches the generated output.
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-19-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In some methods, we may need to **throw an exception** (for example: "invalid input") in our code.
+Some methods, may need to **throw an exception** (for example: "invalid input") in our code.
 
-We can test this behavior as follows:
+We can also test this behavior:
 
 ``` java
 @Test(expected = IllegalArgumentException.class) //Assert
@@ -170,12 +168,12 @@ public void multiplyingWordsShouldThrow() {
 
 [slide hideTitle]
 
-# Problem: Create Maven Project
+# Problem: Create a Maven Project
 
 ## Description
 Maven is a build automation tool that takes care of dependencies for your project. 
 
-Before you can make one, make sure that you enable the plugin in IntelliJ \[**File** \-\> **Settings** \-\> **Plugins** \-\> **Maven Integration**\]
+Make sure that you enabled the plugin in IntelliJ \[**File** \-\> **Settings** \-\> **Plugins** \-\> **Maven Integration**\]
 
 [image assetsSrc="Unit-Testing-Example(2).png" /]
 
@@ -212,18 +210,18 @@ In the `test/java` folder, create a package called `rpg_tests`.
 
 Create an `AxeTests` class.
 
-Write tests for the following cases:
+Create tests for the following cases:
 - Test if the weapon loses durability after each attack
 - Test attacking with a broken weapon
 
 
 ## Solution
 
-Create the new package `rpg_tests` and inside create the class `AxeTests`.
+Create the package `rpg_tests` and inside it place a class called `AxeTests`.
 
 [image assetsSrc="Unit-Testing-Example(7).png" /]
 
-Inside the class, create your first test:
+In the class, create your first test:
 
 ```java
 public class AxeTests{
@@ -294,10 +292,10 @@ Create a class `DummyTests`.
 
 Write tests for the following cases:
 
-- Dummy loses health if attacked
-- Dead Dummy throws an exception if attacked
-- Dead Dummy can give XP
-- Alive Dummy cannot give XP
+- The Dummy loses health if attacked
+- A Dead Dummy throws an exception if attacked
+- A Dead Dummy provides XP
+- A living Dummy does not give us XP
 
 ## Hints
 Follow the logic of the previous problem.
