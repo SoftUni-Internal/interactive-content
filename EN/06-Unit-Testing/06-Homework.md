@@ -10,7 +10,7 @@ You will receive a simple class - **Database**.
 
 It **stores Integers.** Your task is to **test the class.** 
 
-Write **tests** to ensure its methods are working as intended.
+Create **tests** to ensure its methods work as intended.
 
 ## Constraints
 
@@ -18,24 +18,22 @@ Write **tests** to ensure its methods are working as intended.
 
   * if the size of the array is not 16 integers long, throw **OperationNotSupportedException**
 
-- **Add** operation - should **add an element at the next free cell** (similarly to a stack)
+- The **Add** operation - should **add an element at the next free cell** (similarly to a stack)
 
-  * if passed element is null, throw **OperationNotSupportedException**
+  * if the passed in element is null, throw **OperationNotSupportedException**
 
-- **Remove** operation - should support only removing an element **at the last index** (like a stack)
+- The **Remove** operation - should support only removing an element **at the last index** (like a stack)
 
-  * if you try to remove an element from empty Database throw **OperationNotSupportedException**
+  * if you try to remove an element from an empty Database throw **OperationNotSupportedException**
 
-- **Constructors** should take integers only, and store them in an **array**
+- **Constructors** should take in integers only, and store them in an **array**
 
-- **Fetch method** should return the elements as an **array**
+- The **Fetch method** should return the elements as an **array**
 
 
 ## Hint
 
-Do not forget to **test the constructor(s).**
-
-They are methods too!
+Do not forget to **test the constructor(s)** as they are methods too.
 
 
 
@@ -45,25 +43,25 @@ They are methods too!
 
 # Problem: Extended Database
 
-You already have a class - Database. 
+You already have the Database class. 
 
 Your task is to **extend** it.
 
-There are the following provided methods:  adding, removing, and finding People. 
+It should hold the following methods:  adding, removing, and finding People. 
 
-In other words, it should store People. 
+In other words, it should store information on People. 
 
-There should be two types of finding methods:
+There should be two types of search methods:
 - `findById (long id)`
 - `findByUsername (String username)`.
 
-As you may have guessed, each person should have their own unique **id** and unique **username**. 
+Each person should have their own unique **id** and a unique **username**. 
 
 Your task is to test these functions.
 
 ## Constraints
 
-The database should have methods:
+The database should have these methods:
 
 - `add`
 
@@ -83,13 +81,11 @@ The database should have methods:
 
 - `findById`
 
-  * If no user is present by this id, throw **OperationNotSupportedException**
+  * If no user is present with this id, throw **OperationNotSupportedException**
 
 ## Hint
 
 Do not forget to test the constructor(s). 
-
-They are methods too!
 
 
 
@@ -103,27 +99,27 @@ Use the **resources** you downloaded in the first task.
 
 You are given a simple class `ListIterator`.
 
-It should receive a collection of Strings which it will iterate, injected through its constructor. 
+It should receive a collection of Strings which it will iterate through, injected through its constructor. 
 
 You should store the elements in a `List`. 
 
-If there is null passed to the constructor, throw new **OperationNotSupportedException**. 
+If there is null passed to the constructor, throw an **OperationNotSupportedException**. 
 
 The class should have three main functions:
 
 - `Move` - should move an internal index position to the next index in the list
-    * the method should return **true** if it successfully moved and **false** if there is no next index
+    * the method should return **true** if it successful and **false** if there is no next index
 
 - `HasNext` - should return true if there is a next index and false if the index is already at the last element of the list
 
 - `Print` - print the element at the current internal index
-    * calling `Print` on a collection without elements should throw an appropriate exception with the message **"Invalid Operation!"** 
+    * calling `Print` on a collection without elements should throw the appropriate exception with the message **"Invalid Operation!"** 
 
 | **Command** | **Return Type** | **Description** |
 | --- | --- | --- |
 | Move | boolean | This command should move the internal index to the next index. |
 | Print | void | This command should return the element at the current internal index. |
-| HasNext | boolean | Returns whether the collection has a next element. |
+| HasNext | boolean | Checks whether the collection has a next element. |
 
 ## Test 
 
@@ -131,9 +127,9 @@ Create tests to ensure all methods in the class `ListIterator` are working as in
 
 ## Constraints
 
-- There will always be only one **Create** command and it will always be the first command passed
+- There will be only one **Create** command and it will always be the first command passed
 
-- The last command will always be the only **END** command
+- The final command will always be the **END** command
 
 # Examples
 
@@ -180,15 +176,15 @@ You are given a data structure that needs to be tested.
 
 Use the Java file **CustomLinkedList.java** and:
 
-- Create a test class and test methods for **all public members** that need testing
+- Create a test class and test methods for **all public members** that need to be tested
 
 - Create tests that ensure all methods, getters, and setters **work correctly**
 
 - Use the **@Test(expected = ExpectedException.class)** annotation for methods that are expected to throw an exception in case wrong input is entered
 
-    * those tests do not need assert messages
+    * these tests do not need assert messages
 
-- Give **meaningful assertion messages** for failed tests
+- Use **meaningful assertion messages** for failed tests
 
 
 [/slide]
@@ -197,13 +193,13 @@ Use the Java file **CustomLinkedList.java** and:
 
 # Problem: Tire Pressure Monitoring System
 
-Use the **resources** you downloaded in the first task.
+Use the **resources** from the first task.
 
 You are given a small project for a system which monitors the pressure in car tires. 
 
 Your task is to write unit tests for the system. 
 
-You will need to use **mocking** in order to pass dependencies. 
+You will need to use **mocking** in order to pass in dependencies. 
 
 Think about the corner cases of the project.
 
