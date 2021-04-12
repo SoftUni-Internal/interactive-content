@@ -1839,16 +1839,17 @@ In cazul în care nu avem **utilizatori de forță** de o parte, atunci **nu ar 
 
 ### Intrare
 - Datele de intrare vin sub formă de comenzi într-unul din formatele specificate mai sus.
-- Datele de intrare se încheie când primim comanda "End".
+- Datele de intrare se încheie când primim comanda "**End**".
 
 ### Ieșire
 - Ca date de intrare pentru fiecare force side, ordonată descendent în funcție de numprul de force users, apoi după nume, trebuie să imprimăm toți force users, ordonată după nume, alfabetic.
 - Formatul output este:
 
-Side: \{forceSide\}, Members: \{forceUsersCount\}
-! \{forceUser\}
-! \{forceUser\}
-! \{forceUser\}
+"**Side:** \{**forceSide**\}, **Members:** \{**forceUsersCount**\}
+! \{**forceUser**\}
+! \{**forceUser**\}
+! \{**forceUser**\}"
+
 - In cazul în care nu avem niciun force users, nu imprimăm această parte.
 
 
