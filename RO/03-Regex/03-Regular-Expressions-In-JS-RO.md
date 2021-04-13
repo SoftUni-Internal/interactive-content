@@ -8,7 +8,7 @@
 
 În JavaScript, putem construi o expresie regulată în două moduri.
 
-Primul se numește **expresie regulată literală** și oferă o compilație atunci când scriptul este încărcat.
+Primul se numește **literal de expresie regulată** și oferă o compilație atunci când scriptul este încărcat.
 
 Expresia regex este între bare oblice.
 
@@ -17,7 +17,7 @@ let pattern = /[A-Za-z]+/g;
 ```
 Cel de-al doilea se numește **funcția constructor** `RegExp` și oferă o compilație runtime.
 
-Se folosește atunci când modelul provine dintr-o altă sursă.
+Se folosește atunci când șablonul provine dintr-o altă sursă.
 
 ```js
 let regExp = new RegExp('[A-Za-z]+', 'g');
@@ -25,7 +25,7 @@ let regExp = new RegExp('[A-Za-z]+', 'g');
 [/slide]
 
 [slide hideTitle]
-# Validarea Şirului După Şablon
+# Validarea Şirului după Şablon
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-18-Validating-string-by-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -42,7 +42,7 @@ console.log(containsValidDate);
 [/slide]
 
 [slide hideTitle]
-# Verificarea Pentru Potriviri 
+# Verificarea pentru Potriviri 
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-19-Checking-for-matches-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -67,7 +67,7 @@ console.log(matches[1]);
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-20-Using-the-exce()-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Dacă potrivirea reușește, metoda `.exec()` returnează o matrice cu proprietăți suplimentare \: `index` și `input`.
+Dacă potrivirea reușește, metoda `.exec()` returnează o matrice cu proprietăți suplimentare\: `index` și `input`.
 
 Aceasta actualizează proprietatea `lastIndex` a obiectului de expresie regulată.
 
@@ -189,7 +189,7 @@ Pentru a vă ajuta, am prezentat mai mulți pași:
 1. Utilizați un tester de expresii regulate online, cum ar fi: [Regex101](https://regex101.com)
 2. Verificați modul de utilizare a seturilor de caractere \ (notate cu paranteze drepte \- \"\[\]\"\)
 3. Specificați că doriți două cuvinte cu un spațiu între ele \ (caracterul pentru spațiu \ '\' și nu orice simbol pentru spațiu alb \)
-4. Pentru fiecare cuvânt, specificați că trebuie să înceapă cu o literă mare, utilizând un set de caractere. Caracterele dorite se află într-un interval \: de la A la Z
+4. Pentru fiecare cuvânt, specificați că trebuie să înceapă cu o literă mare, utilizând un set de caractere. Caracterele dorite se află în intervalul\: de la A la Z
 5. Pentru fiecare cuvânt, specificați că prima literă este urmată doar de litere mici, una sau mai multe \- utilizați un alt set de caractere și cuantificatorul corect
 6. Pentru a preveni capturarea literelor pe linii noi, puneți \\**b** la începutul și la sfârșitul expresiei regulate
 Acest lucru va asigura că ceea ce precede și ceea ce urmează după potrivire este o limită de cuvânt precum o nouă linie
@@ -343,7 +343,7 @@ function adapter(input, code) {
 
 Scrieți o expresie regulată pentru a se potrivi cu un număr de telefon valid din Sofia.
 
-După ce găsiți toate numerele de telefon valide, imprimați-le pe consolă, separate printr-o virgulă și un spațiu `,`.
+După ce găsiți toate numerele de telefon valide, imprimați-le pe consolă, separate printr-o virgulă și un spațiu ", ".
 
 Un număr valid are următoarele caracteristici:
 - Începe cu **+359**
@@ -353,7 +353,7 @@ După aceea, este urmat de numărul în sine:
 - Numărul este format din 7 cifre (separate în două grupuri de 3 și respectiv 4 cifre)
 - Diferitele părți sunt separate fie de un spațiu, fie de o cratimă "\-"
 
-Puteți utiliza următoarele proprietăți RegEx pentru a ajuta la potrivirea:
+Puteți utiliza următoarele proprietăți RegEx pentru a ajuta la potrivire:
 - Folosiți cuantificatori pentru a potrivi un anumit număr de cifre
 - Utilizați un grup de capturare pentru a vă asigura că delimitatorul este doar unul dintre caracterele permise (spațiu sau cratimă) și nu o combinație a ambelor \(de ex. \+359 2 \-111 111 are delimitatoare mixte, este nevalid \)
       - folosiți o referință de grup pentru a realiza acest lucru.
