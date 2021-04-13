@@ -47,7 +47,7 @@ Trebuie să îl eliminați din colecția dvs. de orașe vizate și să imprimaț
 
 Nu va exista niciun caz care să depășească numărul de persoane sau cantitatea de aur, care a fost deja specificată pentru fiecare oraș.
 
-* Commanda: "****Prosper**\=\>\{**town**\}\=\>\{**gold**\}"
+* Commanda: "**Prosper**\=\>\{**town**\}\=\>\{**gold**\}"
 
 Indică creșterea economică în orașul dat, mărind trezoreria acestuia cu cantitatea specificată de aur.
 

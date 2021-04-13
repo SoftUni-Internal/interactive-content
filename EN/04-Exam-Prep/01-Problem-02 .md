@@ -9,7 +9,7 @@
 [code-task title="Fancy Barcodes" taskId="js-fundamentals-2-examPreparation-problem-2" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function fancyBarcodes(n, barcodes) {
+function fancyBarcodes(input) {
 	// Write your code here
 }
 ```
@@ -78,7 +78,7 @@ For each barcode that you process, you need to print a message.
 
 |**Input**|**Output**|
 |---|---|
-|fancyBarcodes(3, ['\@\#FreshFisH\@\#', '\@\#\#\#Brea0D\@\#\#\#', '\@\#\#Che4s6E\@\#\#'])|Product group\: 00|
+|fancyBarcodes([3, '\@\#FreshFisH\@\#', '\@\#\#\#Brea0D\@\#\#\#', '\@\#\#Che4s6E\@\#\#'])|Product group\: 00|
 ||Product group\: 0|
 ||Product group\: 46|
 
@@ -87,7 +87,7 @@ For each barcode that you process, you need to print a message.
 
 |**Input**|**Output**|
 |---|---|
-|fancyBarcodes(6, ['\@\#\#\#Val1d1teM\@\#\#\#', '\@\#InvalidIteM\@\#', '\#\#InvaliDiteM\#\#', '\@InvalidIteM\@', '\@\#Invalid_IteM\@\#', '\@\#ValiditeM\@\#'])|Product group\: 11|
+|fancyBarcodes([6, '\@\#\#\#Val1d1teM\@\#\#\#', '\@\#InvalidIteM\@\#', '\#\#InvaliDiteM\#\#', '\@InvalidIteM\@', '\@\#Invalid_IteM\@\#', '\@\#ValiditeM\@\#'])|Product group\: 11|
 ||Product group\: 00|
 ||Invalid barcode|
 ||Invalid barcode|
@@ -101,7 +101,7 @@ For each barcode that you process, you need to print a message.
 [tests]
 [test open]
 [input]
-fancyBarcodes(3, ['@\#FreshFisH@\#', '@\#\#\#Brea0D@\#\#\#', '@\#\#Che46sE@\#\#'])
+fancyBarcodes([3, '@\#FreshFisH@\#', '@\#\#\#Brea0D@\#\#\#', '@\#\#Che46sE@\#\#'])
 [/input]
 [output]
 Product group: 00
@@ -111,7 +111,7 @@ Product group: 46
 [/test]
 [test open]
 [input]
-fancyBarcodes(6, ['@\#\#\#Val1d1teM@\#\#\#', '@\#InvalidIteM@\#', '\#\#InvaliDiteM\#\#', '@InvalidIteM@', '@\#Invalid_IteM@\#', '@\#ValiditeM@\#'])
+fancyBarcodes([6, '@\#\#\#Val1d1teM@\#\#\#', '@\#InvalidIteM@\#', '\#\#InvaliDiteM\#\#', '@InvalidIteM@', '@\#Invalid_IteM@\#', '@\#ValiditeM@\#'])
 [/input]
 [output]
 Product group: 11
@@ -124,7 +124,7 @@ Product group: 00
 [/test]
 [test]
 [input]
-fancyBarcodes(1, \['@\#invalid@\#\'\])
+fancyBarcodes([1, '@\#invalid@\#\'])
 [/input]
 [output]
 Invalid barcode
@@ -132,7 +132,7 @@ Invalid barcode
 [/test]
 [test]
 [input]
-fancyBarcodes(1, \['@\#\#Invalid@\#\#'\])
+fancyBarcodes([1, '@\#\#Invalid@\#\#'])
 [/input]
 [output]
 Invalid barcode
@@ -140,7 +140,7 @@ Invalid barcode
 [/test]
 [test]
 [input]
-fancyBarcodes(1, \['@\#invalidBarcodE@\#'\])
+fancyBarcodes([1, '@\#invalidBarcodE@\#'])
 [/input]
 [output]
 Invalid barcode
@@ -148,7 +148,7 @@ Invalid barcode
 [/test]
 [test]
 [input]
-fancyBarcodes(1, \['@\#ValiD@\#'\])
+fancyBarcodes(\[1, '@\#ValiD@\#'\])
 [/input]
 [output]
 Invalid barcode
@@ -156,7 +156,7 @@ Invalid barcode
 [/test]
 [test]
 [input]
-fancyBarcodes(1, \['@\#\#Xa013mlX@\#\#'\])
+fancyBarcodes(\[1, '@\#\#Xa013mlX@\#\#'\])
 [/input]
 [output]
 Product group: 013
@@ -164,7 +164,7 @@ Product group: 013
 [/test]
 [test]
 [input]
-fancyBarcodes(3, ['@\#CucumberS@\#', '@\#\#CarrotS@\#\#', '@\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#PotatoeS@\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#'])
+fancyBarcodes([3, '@\#CucumberS@\#', '@\#\#CarrotS@\#\#', '@\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#PotatoeS@\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#'])
 [/input]
 [output]
 Product group: 00
@@ -174,7 +174,7 @@ Product group: 00
 [/test]
 [test]
 [input]
-fancyBarcodes(3, ['@\#P1n3Appl3S@\#', '@\#\#\#X1x2x3x4x5x6x7x8x9x0X@\#\#\#', '@\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#Zzzz987zzz65zzz43zzz210zzZ@\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#'])
+fancyBarcodes([3, '@\#P1n3Appl3S@\#', '@\#\#\#X1x2x3x4x5x6x7x8x9x0X@\#\#\#', '@\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#Zzzz987zzz65zzz43zzz210zzZ@\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#'])
 [/input]
 [output]
 Product group: 133
@@ -184,7 +184,7 @@ Product group: 9876543210
 [/test]
 [test]
 [input]
-fancyBarcodes(1, \['@\#Test4et0O@\#'\])
+fancyBarcodes(\[1, '@\#Test4et0O@\#'\])
 [/input]
 [output]
 Product group: 40
@@ -192,7 +192,7 @@ Product group: 40
 [/test]
 [test]
 [input]
-fancyBarcodes(11, ['@\#\#Aaa1A1aaA@\#\#', '@\#Bbbbbb@\#', '@\#Ccccc_ccccC@\#', '@\#\#\#D2d3d4D@\#\#\#', '@\#EfgfE@\#', '@\#hhhhhhhH@\#', '@\#IIIIIIIII@\#', '@\#IIII11IIIII@\#', '@\#\#JjjjjJ@\#', '@KkkkkkK@', '@\#\#Lmn83opq19RsTuV@\#\#'])
+fancyBarcodes([11, '@\#\#Aaa1A1aaA@\#\#', '@\#Bbbbbb@\#', '@\#Ccccc_ccccC@\#', '@\#\#\#D2d3d4D@\#\#\#', '@\#EfgfE@\#', '@\#hhhhhhhH@\#', '@\#IIIIIIIII@\#', '@\#IIII11IIIII@\#', '@\#\#JjjjjJ@\#', '@KkkkkkK@', '@\#\#Lmn83opq19RsTuV@\#\#'])
 [/input]
 [output]
 Product group: 11
@@ -210,7 +210,7 @@ Product group: 8319
 [/test]
 [test]
 [input]
-fancyBarcodes(7, ['@\#Th1sIsTh3T0ughestT3sT@\#', '@\#\#\#ItReallyISharD@\#\#\#', '@\#\#ItT3stsTh3Wh0l3Match1nG@\#\#', '@\#I`llThrowSomeInvalidCodeS@\#', '@\#\#\#AndSomeMorE@\#\#', '@\#\#AndFinally@\#\#', '@\#\#Th3R34lM0F0T3sT@\#\#\#'])
+fancyBarcodes([7, '@\#Th1sIsTh3T0ughestT3sT@\#', '@\#\#\#ItReallyISharD@\#\#\#', '@\#\#ItT3stsTh3Wh0l3Match1nG@\#\#', '@\#I`llThrowSomeInvalidCodeS@\#', '@\#\#\#AndSomeMorE@\#\#', '@\#\#AndFinally@\#\#', '@\#\#Th3R34lM0F0T3sT@\#\#\#'])
 [/input]
 [output]
 Product group: 1303

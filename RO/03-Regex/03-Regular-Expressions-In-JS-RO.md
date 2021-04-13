@@ -29,7 +29,9 @@ let regExp = new RegExp('[A-Za-z]+', 'g');
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-18-Validating-string-by-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Prima metodă pe care o vom analiza este `.test ()`. Pur și simplu determină dacă există o potrivire.
+Prima metodă pe care o vom analiza este `.test()`. 
+
+Pur și simplu determină dacă există o potrivire.
 
 În exemplul de mai jos testăm dacă avem o dată validă. Dacă facem acest lucru, rezultatul va fi **true**, altfel va fi **false**.
 
@@ -46,7 +48,7 @@ console.log(containsValidDate);
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-19-Checking-for-matches-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Utilizați metoda `.match ()` pentru a verifica dacă există potriviri. 
+Utilizați metoda `.match()` pentru a verifica dacă există potriviri. 
 
 Returnează o matrice, care poate fi iterată cu ușurință după aceea.
 
@@ -114,7 +116,9 @@ console.log(result);
 
 Metoda `.matchAll()` returnează un iterator al tuturor rezultatelor care se potrivesc unui șir cu o expresie regulată, inclusiv grupuri de capturare.
 
-Funcționează similar cu metoda `.exec()`. Singura diferență este că obținem toate potrivirile simultan într-o formă de matrice.
+Funcționează similar cu metoda `.exec()`. 
+
+Singura diferență este că obținem toate potrivirile simultan într-o formă de matrice.
 
 Rezultatul este o matrice de matrice, de aceea în acest exemplu folosim operatorul spread.
 
