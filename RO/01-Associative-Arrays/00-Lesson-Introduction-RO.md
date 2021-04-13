@@ -11,7 +11,8 @@
 - Definiție
 - Iterare
 - Manipulare
-**Map-uri**
+
+**2. Map-uri**
 - Metode
 - Sortare
 
