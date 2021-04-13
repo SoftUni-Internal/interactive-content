@@ -61,7 +61,7 @@ Ordinal value: 3; Name value: SPADES
 
 [task-description]
 # Description
-Create an **enumeration type** that has contains the **fourteen ranks** of a deck of playing cards (ACE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING). 
+Create an **enumeration type** that contains the **fourteen ranks** of a deck of playing cards (ACE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING). 
 
 Iterate over the values of the enumeration type and print all ordinal values and names.
 
@@ -144,7 +144,7 @@ Ordinal value: 12; Name value: KING
 
 [task-description]
 # Description
-Create a program that generates a **deck of cards** **(class Card)** each card has a **power rating**. 
+Create a program that generates a **deck of cards** **(class Card)**, where each card has a **power rating**. 
 
 The power rating of a card is calculated by **adding** the power of its rank to the power of its suit.
 
@@ -153,10 +153,10 @@ The power rating of a card is calculated by **adding** the power of its rank to 
 **Suit powers** are: (CLUBS - 0, DIAMONDS - 13, HEARTS - 26, SPADES - 39).
 
 ## Input
-You will get a command consisting of **two** lines. On the **first** line, you will receive the rank of the card and on the **second** line, you will get the suit of the card.
+You will get a command consisting of **two** lines. On the **first** line, you will receive the rank of the card, and on the **second** line, you will get the suit of the card.
 
 ## Output
-Print the output in the format **"Card name: ACE of SPADES; Card power: 53".**
+Print the output in the format "**Card name:** \{**card name**\} of \{**suit type**\}; **Card power**: \{**total power**\}".
 
 ## Note
 Try using the enumeration types you have created in the previous problems by extending them with constructors and methods.
@@ -246,24 +246,24 @@ Card name: TWO of DIAMONDS; Card power: 15
 
 [task-description]
 # Description
-Implement a simple state machine in the form of code that immitates a traffic light. 
+Implement a simple state machine in the form of code that imitates a traffic light. 
 
-Every traffic light has **three** possible signals - **red**, **green** and **yellow**. 
+Every traffic light has **three** possible signals - **red**, **green**, and **yellow**. 
 
 Each traffic light can be **updated**, which changes the color of its signal (e.g. if it is currently red, it changes to green, if it is green it changes to yellow). 
 
-The order of signals is **red -> green -> yellow -> red** and so on.
+The order of signals is **red -> green -> yellow -> red -> green** and so on.
 
 ## Input
-On the first line, you will be given the current state of multiple traffic lights in the **format "RED GREEN YELLOW"**. 
+On the first line, you will be given the current state of multiple traffic lights in the following format: "\{**COLOR 1**\} \{**COLOR 2**\} \{**COLOR 3**\}", for example: "RED GREEN YELLOW". 
 
 
 You need to create as many traffic lights as there are signals in the input.
 
-On the second line, you will receive **n** - the number of times you need to change each traffic light's signal.
+On the second line, you will receive "**n**" - the number of times you need to change each traffic light's signal.
 
 ## Output
-Your output should consist of **n** number of lines, including **each** updated traffic light's signal. 
+Your output should consist of "**n**" number of lines, including **each** updated traffic light's signal. 
 
 To better understand the problem, see the example below.
 
