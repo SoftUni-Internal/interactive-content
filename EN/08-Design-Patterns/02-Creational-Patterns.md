@@ -8,9 +8,9 @@
 
 Creational patterns are **object creational design patterns**.
 
-We use these patterns when we must decide on how to create an object of a class.
+We use these patterns when we need to decide in what way to create an object of a class.
 
-They comprise of **two main ideas**:
+They comprise of **two main concepts**:
 
 - **Encapsulating** knowledge about which classes the system uses
 
@@ -20,7 +20,7 @@ They comprise of **two main ideas**:
 
 [slide hideTitle]
 
-# Singleton Pattern
+# The Singleton Pattern
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-14-15-singleton-pattern-example-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -32,7 +32,7 @@ The difference between a normal class and a singleton class is that we use a con
 
 ## Example
 
-First, let us create a singleton class:
+Let us create a singleton class:
 
 ``` java
 public class Singleton {
@@ -55,7 +55,7 @@ public class Singleton {
 }
 ```
 
-Let us see what is going on in our `Main` class:
+The `Main` class of this program:
 
 ``` java
 public class Main {
@@ -87,13 +87,13 @@ This way, our Singleton class provides a method to get its **static** instance t
 
 [slide hideTitle]
 
-# Prototype Pattern
+# The Prototype Pattern
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-16-prototype-pattern-demo-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **prototype pattern** allows us to copy the class instance and create a new object from it.
 
-This method of creating the object allows us to hide the complexity of making new instances from the client.
+This method of creating objects allows us to hide the complexity of making new instances from the client.
 
 The copied object acts as a **prototype** and contains all the information of the **actual object**.
 
@@ -103,7 +103,7 @@ We can add or remove objects at runtime using the prototype pattern.
 
 [image assetsSrc="Design-Patterns.png" /]
 
-Let us take a look at this **example**:
+**Example**:
 
 ``` java
 public abstract class Prototype {
@@ -139,35 +139,37 @@ We can use the **prototype design pattern** when:
 
 - We need to instantiate classes at runtime
 
-- It is complicated or expensive for us to create a class
+- It is complicated or resource-heavy to create new classes
 
-- Our clients do not need to know of the object's creation and representation
+- Our clients do not need to know of the object's creation and representation procedures
 
 [/slide]
 
 [slide hideTitle]
 
-# Builder Pattern
+# The Builder Pattern
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-19-builder-pattern-demo-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **builder design pattern** is used to assemble a complex structure step by step.
 
-In the end, it will return the whole object. 
+In the end, it will return an entire object. 
 
-We can create an object with a lot of possible configuration options.
+We can create an object with many possible configuration options.
 
 **Usage** of the builder pattern:
 
 - When our construction process must allow different representations for the constructed object (highly customizable)
 
-- When we want our algorithm for creating objects to be independent of the parts that make up our object and the process of their construction
+- When we want our object creating algorithm to be independent of the parts that make up our object and the process of their construction
 
-Imagine that we want to create a character for our MMORPG game. 
+Example:
 
-We can make our constructor **create the character** for us.
+We want to create a character in our MMORPG game. 
 
-Take a look at this code **example**:
+We can make the constructor **instantiate a character** for us.
+
+Code representation:
 
 ``` java
 // This is our Hero class
@@ -199,7 +201,7 @@ public final class Hero {
 }
 ```
 
-And that is how our **Builder** class should be looking:
+And that is how a **Builder** class should function:
 
 ``` java
 public class Builder {

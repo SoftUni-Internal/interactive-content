@@ -10,31 +10,29 @@ Structural patterns are concerned with how classes and objects are composed to f
 
 They rely on the concept of interfaces and inheritance, allowing multiple objects or classes to work together.
 
-This pattern builds the design by identifying a simple way to effectuate the **relationship** between different entities.
-
-Knowing this, let us take a look at the first **structural pattern**.
+This patterns help the code design by identifying a simple way to effectuate the **relationship** between different entities.
 
 [/slide]
 
 [slide hideTitle]
 
-# Facade Pattern
+# The Facade Pattern
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-24-facade-pattern-demo-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **facade pattern** is used to hide the complexities of our system by providing a simplified **interface** to the client. 
 
-With this interface, our client can access the system.
+Using this interface, our client can access the system.
 
-We use the facade pattern when we have a very complex or difficult-to-understand architecture.
+We use the facade pattern when we have complex or difficult-to-understand architecture.
 
 This way, the dependencies on a subsystem are minimized.
 
-If we are using an outer, poorly designed, or too complex of a library and we use only a few of its methods, we can follow this pattern to provide a simple interface for it.
+If we are using an outer library, a poorly designed one, or a "too complex tо grasp" one and we use only a few of its methods, we can follow this pattern to provide a simple interface for it.
 
 [image assetsSrc="Design-Patterns(1).png" /]
 
-Let us have a look at this code example:
+Code example:
 
 ``` java
 // We have our computer components
@@ -86,23 +84,23 @@ class Main {
 }
 ```
 
-This example shows us how a client can **interact** with the facade (in our case - **Computer**).
+This example shows us how a client **interacts** with the facade (in our case - **Computer**).
 
 [/slide]
 
 [slide hideTitle]
 
-# Composite Pattern
+# The Composite Pattern
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-28-composite-pattern-demo-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The composite pattern allows us to **combine** different types of objects in **tree structures**
 
-Also, our composite pattern could describe a whole hierarchy of objects.
+А composite pattern could describe a whole hierarchy of objects.
 
-The **composite pattern** is a pretty used solution for most problems that require building a tree structure.
+The **composite pattern** is an often used solution for most problems that require building a tree structure.
 
-The composite pattern consist of 3 main objects:
+It consists of 3 main objects:
 
 - **Base Component**
 
@@ -112,9 +110,9 @@ The composite pattern consist of 3 main objects:
 
 [image assetsSrc="Design-Patterns(2).png" /]
 
-To understand better, let us see this simple code.
+To understand that better, let us see a simple code.
 
-First, we create a simple interface class that will provide us the functionality for showing employees info:
+Here is a simple interface class that provides the functionality to show employee info:
 
 ``` java
 public interface Employee {
@@ -122,7 +120,7 @@ public interface Employee {
 }
 ```
 
-Then, let us create our class that will hold a **worker**'s data and use it as a **leaf**:
+Let us create a class that will hold a **worker**'s data and use it as a **leaf**:
 
 ``` java
 public class Worker implements Employee {
@@ -143,7 +141,7 @@ public class Worker implements Employee {
 }
 ```
 
-After that, in our real-life structure, we will have **Managers**:
+After that we will have **Managers**:
 
 ``` java
 public class Manager implements Employee {
@@ -191,7 +189,7 @@ public class Director implements Employee {
 }
 ```
 
-And finally, let us test our company structure:
+And finally, let us test this structure:
 
 ``` java
 public class Main {
@@ -217,7 +215,7 @@ public class Main {
 }
 ```
 
-Now, if we test our program, the **output** will be:
+The **output** of this code will be:
 
 ```
 1 Michael Peterson
