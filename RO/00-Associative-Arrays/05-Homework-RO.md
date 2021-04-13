@@ -34,7 +34,7 @@ Scrieți un program care **numără toate caracterele** dintr-un șir, cu excep�
 [hints]
 [hint]
 
-Create a `char[]` array from the input:
+Creați o matrice `char[]` din intrare:
 
 ```java
 Scanner scanner = new Scanner(System.in);
@@ -44,10 +44,11 @@ char[] chars = input.toCharArray();
 ```
 [/hint] 
 [hint]
-Use a `LinkedHashMap` to store each character's count:
+Utilizați `LinkedHashMap` pentru a stoca numărătoarea fiecărui caracter:
 
 ```java
-Map<Character, Integer> count = new LinkedHashMap<>();
+Map<Character, Integer> count = 
+  new LinkedHashMap<>();
 
 for (char ch : chars) {
   count.putIfAbsent(ch, 0);
@@ -56,12 +57,13 @@ for (char ch : chars) {
 ```
 [/hint] 
 [hint]
-Finally, **print** the information for each key-value pair to the console:
+La final, **tipăriți** informația pentru fiecare pereche cheie-valoare pe consolă:
 
 ```java
 for (Map.Entry<Character, Integer> c : count.entrySet()) {
   if (!c.getKey().equals(' ')) {
-    System.out.println(c.getKey() + " -> " + c.getValue());
+    System.out.println(c.getKey() 
+      + " -> " + c.getValue());
   }
 }
 ```
@@ -2191,7 +2193,7 @@ Submisii:
 
 [hints]
 [hint]
-Create two `HashMap`s - one for the results, and one for the submissions:
+Creați două `HashMap` - una pentru rezultat, iar cealaltă pentru înregistrări:
 
 ```java
 Map<String, Integer> peopleRes = new HashMap<>();
@@ -2200,7 +2202,7 @@ Map<String, Integer> submissions = new HashMap<>();
 [/hint] 
 [hint]
 
-Create a while loop with the following condition:
+Creați o buclă while cu următoarea condiție:
 
 ```java
 String input = "";
@@ -2213,7 +2215,7 @@ while (!"exam finished"
 
 [/hint] 
 [hint]
-Inside the loop, create multiple if-statements to modify the hash tables:
+Înăuntrul buclei, creați mai multe instrucțiuni if-else pentru a modifica tabelele hash:
 
 ```java
 if (!peopleRes.containsKey(name)) {
@@ -2236,7 +2238,7 @@ if (!submissions.containsKey(language)) {
 De exemplu, Mike este interzis, deci va fi scos din concurs, dar aplicația sa va fi păstrată în numărătoarea aplicațiilor. 
 [/hint]
 [hint]
-Print out the participants's results as follows:
+Tipăriți rezultatele participanților în următorul mod:
 
 ```java
 System.out.println("Results:");
@@ -2252,7 +2254,7 @@ peopleRes.entrySet().stream()
   });
 ```
 
-Do the same thing for the submissions.
+Faceți același lucru și pentru înregistrări.
 
 Deși sunt doar 2 participanți în rezultate, sunt 4 aplicații în total. 
 [/hint] 

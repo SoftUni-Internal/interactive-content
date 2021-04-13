@@ -46,7 +46,8 @@ char[] chars = input.toCharArray();
 Use a `LinkedHashMap` to store each character's count:
 
 ```java
-Map<Character, Integer> count = new LinkedHashMap<>();
+Map<Character, Integer> count = 
+  new LinkedHashMap<>();
 
 for (char ch : chars) {
   count.putIfAbsent(ch, 0);
@@ -60,7 +61,8 @@ Finally, **print** the information for each key-value pair to the console:
 ```java
 for (Map.Entry<Character, Integer> c : count.entrySet()) {
   if (!c.getKey().equals(' ')) {
-    System.out.println(c.getKey() + " -> " + c.getValue());
+    System.out.println(c.getKey() 
+      + " -> " + c.getValue());
   }
 }
 ```
