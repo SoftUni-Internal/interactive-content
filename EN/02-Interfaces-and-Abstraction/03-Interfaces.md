@@ -158,7 +158,7 @@ public static void main(String[] args) {
     Car seat = new Seat("Leon", "Gray", 110, "Spain");
 
     System.out.println(String.format(
-            "The car %s is %s and has a %s horsepower engine.",
+            "The %s is %s and has a %s horsepower engine.",
             seat.getModel(),
             seat.getColor(),
             seat.getHorsePower()));
@@ -172,7 +172,7 @@ Consider using the wrapper classes in the **Seat** constructor.
 # Example
 | **Output** |
 | --- |
-| The car Leon is Gray and has a 110 horsepower engine. |
+| The Leon is Gray and has a 110 horsepower engine. |
 | This car Leon was produced in Spain and has 4 tires. |
 
 [/task-description]
