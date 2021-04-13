@@ -36,7 +36,7 @@ Un **nume de utilizator valid**:
 Create a validator method:
 
 ```java
-private static boolean validateUsername(String username)
+private static boolean validate(String username)
 ```
 [/hint] 
 [hint]
@@ -49,7 +49,7 @@ if (username.length() < 3 || username.length() > 16) {
 ```
 [/hint] 
 [hint]
-Loop through each string character:
+Iterate through the characters with a for-loop:
 
 ```java
 for (int i = 0; i < username.length(); i++)
