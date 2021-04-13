@@ -724,7 +724,7 @@ There are no more explosions left, so we **print** out the result: `abv>>>>dasd`
 [/hint]
 [/hints] 
 
-Here you will find an explanation of the **solving** process.
+In this second hint section, you will find an explanation of the **solving** process.
 
 [hints]
 [hint]
@@ -733,17 +733,19 @@ Create a result `StringBuilder` and initialize the **power**:
 ```java
 Scanner sc = new Scanner(System.in);
 
-StringBuilder result = new StringBuilder(sc.nextLine());
+StringBuilder result = 
+  new StringBuilder(sc.nextLine());
 int power = 0;
 ```
 [/hint] 
 [hint]
-Increase the power by the numeric values of the characters, preceded by `>`:
+**Increase** the **power** by the numeric values of the characters, preceded by `>`:
 
 ```java
 for (int i = 0; i < result.length(); i++) {
   if (result.charAt(i) == '>') {
-    power += Character.getNumericValue(result.charAt(i + 1));
+    power += Character.getNumericValue(result.charAt(i
+     + 1));
   } else if (power > 0 && result.charAt(i) != '>') {
     result.deleteCharAt(i);
     power--;
@@ -752,11 +754,11 @@ for (int i = 0; i < result.length(); i++) {
 }
 ```
 
-Delete the digits after `>` as needed.
+**Delete** the characters as needed. You should not delete `>`
 
 [/hint] 
 [hint]
-Print out the result to the console:
+**Print** out the remaining string to the console:
 
 ```java
 System.out.println(result);
