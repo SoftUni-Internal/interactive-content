@@ -39,7 +39,7 @@ Fiecare dată valabilă are următoarele caracteristici:
 - Separatorul poate fi\: un punct "**.**", o cratimă "**-**", sau o bară oblică spre dreapta `/`
 - Separatorul trebuie să fie același pentru întreaga dată **(de ex. 13.03.2016 este valabil, 13.03/2016 NU este)**
 
-Folosiți o referință de grup pentru a verifica acest lucru.
+Folosiți o **referință de grup** pentru a verifica acest lucru.
 
 
 ## Exemplul Unu
@@ -521,7 +521,7 @@ Până când primiți o linie cu un text "**end of shift**", vi se vor da linii 
 
 Fiecare comandă validă trebuie să aibă un client, un produs, un număr și un preț:
 
-- Numele clientului valid ar trebui să fie încadrat de "**%**" și trebuie să înceapă cu o literă mare, urmată de litere mici
+- Numele unui client valid trebuie să fie încadrat de "**%**" și trebuie să înceapă cu o literă mare, urmată de litere mici
 
 - Produsul valid conține orice caracter de cuvânt și trebuie să fie încadrat de "**<**" și "**>**"
 
@@ -533,9 +533,9 @@ Părțile unei comenzi valide trebuie să apară în comanda dată: un client, u
 
 Între fiecare parte pot exista și alte simboluri, cu excepția (\|, \$, \% \.).
 
-Pentru fiecare linie validă tipărită pe consolă: \{**customerName**\}**:** \{**product**\} **-** \{**totalPrice**\}.
+Pentru fiecare linie validă imprimați pe consolă: \{**customerName**\}**:** \{**product**\} **-** \{**totalPrice**\}.
 
-Când primiți "**end of shift**" imprimați suma totală de bani pentru zi, rotunjită la 2 zecimale în următorul format:
+Când primiți "**end of shift**" imprimați suma totală de bani pentru acea zi, rotunjită la 2 zecimale în următorul format:
 
 "**Total income:** \{**income**\}"
 
