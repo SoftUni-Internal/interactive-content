@@ -524,8 +524,8 @@ We also need to assign them to a variable because **they will not modify the ori
 First let us see how `padStart()` works:
 
 ```js live
-let sentence = 'My name is John';
-let padded = sentence.padStart(2, 'Hi!');
+let sentence = 'Hey';
+let padded = sentence.padStart(15, 'Hi!');
 
 console.log(padded);
 ```
@@ -533,8 +533,8 @@ console.log(padded);
 And here is and example of `padEnd()`
 
 ```js live
-let sentence = 'My name is John';
-let padded = sentence.padEnd(3, '.');
+let sentence = 'Hello';
+let padded = sentence.padEnd(8, 'o');
 
 console.log(padded);
 ```
