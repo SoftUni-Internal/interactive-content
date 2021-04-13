@@ -5,7 +5,7 @@
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-9-10-Quantifiers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-**Cuantificatorii** indică numărul de caractere sau de expresii care se potrivesc.
+**Cuantificatorii** indică numărul de caractere sau de expresii care trebuie potrivite.
 
 Pentru exemplele de mai jos, avem nevoie de un **șir**, un **șablon** și metoda `.match()`.
 
@@ -17,9 +17,9 @@ Uneori vom avea nevoie de un semnal global, însă uneori nu.
 
 Să ne uităm la exemple:
 
-`*` corespunde elementului precedent, de 0 sau mai multe ori.
+`*` potrivește elementul precedent de 0 sau mai multe ori.
 
-Exemplu: `Hellooo World! Hello Again!`
+**Exemplu**: `Hellooo World! Hello Again!`
 
 `lo*` va face potrivirile următoare: "l", "looo", "l", "l", "lo".
 
@@ -31,7 +31,7 @@ var result = str.match(pattern);
 console.log(result);
 ```
 
-`+` corespunde elementului precedent o dată sau de mai multe ori.
+`+` potrivește elementul precedent o dată sau de mai multe ori.
 
 **Exemplu**: `Hellooo World! Hello Again!`
 
@@ -45,7 +45,7 @@ var result = str.match(pattern);
 console.log(result);
 ```
 
-`?` corespunde elementului precedent de 0 ori sau o dată.
+`?` potrivește elementul precedent de 0 ori sau o dată.
 
 Exemplu: `1, 100 sau 1000`
 
@@ -85,7 +85,7 @@ Acest concept poartă denumirea de **grup de capturare**.
 
 Acesta are 2 efecte:
 
-- Permite preluarea unei părți din potrivire ca o informație separată în vectorul de rezultate
+- Permite preluarea unei părți din potrivire ca o informație separată în matricea de rezultate
 
 - Dacă adăugăm un cuantificator după paranteze, acesta se aplică întregii paranteze
 
@@ -99,7 +99,7 @@ var result = str.match(pattern);
 console.log(result);
 ```
 
-Putem utiliza cuantificatori după paranteze.
+De asemenea, putem utiliza cuantificatori după paranteze.
 
 ```js live
 const str = 'Here we gogo now';
@@ -109,7 +109,7 @@ var result = str.match(pattern);
 console.log(result);
 ```
 
-Utilizați această expresie pentru **grup de capturare denumit**: `(?<nume>subexpression)`.
+Utilizați această expresie pentru un **grup de capturare denumit**: `(?<name>subexpression)`.
 
 Metoda `.exec()` testează potriviri într-un șir.
 
@@ -159,11 +159,11 @@ console.log(result[1]);
 
 În șablon se pot utiliza referințe pentru un grup utilizând `\N`, unde N este numărul grupului.
 
-Pentru a clarifica motivul pentru care acest concept este folositor, să considerăm o cerință pentru a extrage o propoziție înconjurată de `\#`.
+Pentru a clarifica motivul pentru care acest concept este folositor, să considerăm o cerință de a extrage o propoziție înconjurată de `\#`.
 
 Primul grup din șablon este `(\#)` și se va potrivi pentru primul `#`. 
 
-După aceea, potrivim majuscule, litere mici și spații cu `[A-Z,a-z\s]+`
+După aceea, potrivim majuscule, litere mici și spații cu `[A-Z,a-z\s]+`.
 
 Pentru a potrivi al doilea `#`, care se află după cuvântul "there", utilizăm \1, unde 1 este numărul grupului.
 
@@ -215,12 +215,12 @@ Un email constă în: nume de utilizator `@` numele domeniului.
 
 - **Numele de utilizator** este **alfanumeric**
 
-- **Numele domeniului** constă în **2 șiruri**, separate de o punct \(`.`\)
+- **Numele domeniului** constă în **2 șiruri**, separate de un punct \(`.`\)
 
 - **Numele domeniului** poate conține doar **litere din alfabetul englez**
 
-- Email valid: `valid123@email.com`
+- **Email valid**: `valid123@email.com`
 
-- Email nevalid: `invalid*name@emai1.com`
+- **Email nevalid**: `invalid*name@emai1.com`
 
 [/slide]
