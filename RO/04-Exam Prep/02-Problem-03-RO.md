@@ -25,9 +25,9 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Până la comanda "**Sail**" veți primi:
+Până când comanda "**Sail**" este dată, veți primi:
 
-* Orașele pe care tu și echipajul tău le-ai țintit, populația și aurul fiecărui oraș, separate prin "\|\|" (bare verticale)
+* Orașele pe care voi și echipajul vostru le-ai țintit, populația și aurul fiecărui oraș, separate prin "\|\|" (bare verticale)
 
 * Dacă primiți un oraș care a fost deja **țintit**, trebuie să creșteți populația și aurul cu valorile date.
 
@@ -41,11 +41,9 @@ Aceasta înseamnă că echipajul a atacat și jefuit cu succes orașul, eliminâ
 
 Imprimați acest mesaj pentru fiecare oraș pe care îl atacați: "\{**town**\} **plundered!** \{**gold**\} **gold stolen,** \{**people**\} **citizens killed.**"
 
-Dacă oricare dintre aceste două valori (populație sau aur) ajunge la zero, orașul este distrus.
+Dacă oricare dintre aceste două valori (populație sau aur) ajunge la zero, orașul este distrus. Trebuie să îl eliminați din colecția dvs. de orașe țintite și să imprimați următorul mesaj: "\{**town**\} **has been wiped off the map!**".
 
-Trebuie să îl eliminați din colecția dvs. de orașe țintite și să imprimați următorul mesaj: "\{**town**\} **has been wiped off the map!**".
-
-Nu va exista niciun caz care să depășească numărul de persoane sau cantitatea de aur, care a fost deja specificată pentru fiecare oraș.
+Nu va exista niciun caz care să depășească numărul de persoane sau cantitatea de aur care a fost deja specificată pentru fiecare oraș.
 
 * Commandă: "****Prosper**\=\>\{**town**\}\=\>\{**gold**\}"
 
@@ -78,9 +76,9 @@ Dacă nu mai sunt așezări de jefuit, tipăriți:
 
 ## Constrângeri
 
-* Populația inițială și aurul așezărilor vor fi valide, numere întregi de 32 de biți, care nu vor fi niciodată negative și nu vor depăși limitele respective
+* Populația inițială și aurul așezărilor vor fi numere valide, întregi de 32 de biți, care nu vor fi niciodată negative și nu vor depăși limitele respective
 
-* Numele orașelor date în cadrul evenimentelor vor fi întotdeauna orașe valide care trebuie să fie pe listă.
+* Numele orașelor date în cadrul evenimentelor vor fi întotdeauna orașe valide care trebuie să fie pe listă
 
 ## Exemplul Unu
 
