@@ -9,25 +9,25 @@
 
 ## The Controller Class
 
-The business logic of the program should be concentrated around several **commands**. 
+The business logic of the program should be defined inside several **commands**. 
 
-You are given interfaces, which you have to implement in the correct classes.
+You will be provided with interfaces which you have to implement in the correct classes.
 
-**Note: The ControllerImpl class SHOULD NOT handle exceptions! The tests are designed to expect exceptions, not messages!**
+**Note: The ControllerImpl class SHOULD NOT handle exceptions! The tests are designed to expect exceptions, not messages.**
 
 The first interface is the **Controller**. 
 
-You must create a **ControllerImpl** class, which implements the interface and all of its methods. 
+Create a **ControllerImpl** class, which implements the interface and all of its methods. 
 
 The constructor, of the **ControllerImpl** class, does not take any arguments. 
 
-The given methods should have the logic, described below.
+Its methods should have the logic, described below.
 
 ## Commands
 
 There are several commands, which control the business logic of the application. 
 
-They are listed below. 
+As listed: 
 
 **Note:** For each command, except for "**addComputer**" and "**buyBest**", you should check if a computer with that ID exists in the **computers** collection. 
 
@@ -82,7 +82,7 @@ If it is successful, returns "**Component** \{**component type**\} **with id** \
 
 ### RemoveComponent Command:
 
-The method must be called **removeComponent**.
+The method should be called **removeComponent**.
 
 **Parameters:**
 
@@ -91,13 +91,13 @@ The method must be called **removeComponent**.
 
 **Functionality:**
 
-Removes a component with the given **type from the computer with that ID** and removes the component from the **collection of components**.
+Removes a component of the given **type from the computer with that ID** and removes the component from the **collection of components**.
 
 If it is successful, it returns "**Successfully removed** \{**component type**\} **with id** \{**component id**\}."
 
 ### AddPeripheral Command:
 
-The method must be called **addPeripheral**.
+The method should be called **addPeripheral**.
 
 **Parameters:**
 
@@ -112,7 +112,7 @@ The method must be called **addPeripheral**.
 
 **Functionality:**
 
-Creates a peripheral with the correct type, and **adds it to the computer with that id, then adds it to the collection of peripherals in the controller**.
+Creates a peripheral of the correct type, and **adds it to the computer with that id, then adds it to the collection of peripherals in the controller**.
 
 If a peripheral with the **same id** already exists in **the peripherals collection**, it throws an `IllegalArgumentException` with the message "**Peripheral with this id already exists.**"
 
@@ -131,13 +131,13 @@ The method must be called **removePeripheral**.
 
 **Functionality:**
 
-Removes a peripheral with the given **type from the computer** with matching **id**, then removes the peripheral from the **collection of peripherals**.
+Removes a peripheral pf the given **type from the computer** with matching **id**, then removes the peripheral from the **collection of peripherals**.
 
 If it is successful, it returns **"Successfully removed** \{**peripheral type**\} **with id** \{**peripheral id**\}.".
 
 ### BuyComputer Command:
 
-The method must be called **buyComputer**.
+The should must be called **buyComputer**.
 
 **Parameters:**
 
@@ -151,7 +151,7 @@ If it is successful, it returns the **toString method of the removed computer**.
 
 ### BuyBestComputer Command:
 
-The method must be called **BuyBestComputer**.
+The method should be called **BuyBestComputer**.
 
 **Parameters:**
 
@@ -159,9 +159,11 @@ The method must be called **BuyBestComputer**.
 
 **Functionality:**
 
-**Removes** from the collection, the computer with:
+**Removes** the computer with: 
+(from the collection)
 - the **highest overall performance**
 - a **price, less or equal to the budget** 
+
 
 If there are not any computers in the collection or the budget is insufficient for any computer, it throws an `IllegalArgumentException` with the message **"Can't buy a computer with a budget of** \$\{**budget**\}."
 
@@ -169,7 +171,7 @@ If it is successful, it returns the **toString method on the removed computer**.
 
 ### GetComputerData Command:
 
-The method must be called **getComputerData**.
+The method should be called **getComputerData**.
 
 **Parameters:**
 
@@ -181,7 +183,7 @@ If it is successful, returns the **toString method on the computer with the give
 
 ### Close Command:
 
-The method must be called **close**.
+The method should be called **close**.
 
 **Functionality:**
 
@@ -189,17 +191,17 @@ Ends the program.
 
 # Input / Output
 
-You are provided with one interface which will help you with the correct execution process of your program. 
+You are provided with one interface which should help you with the correct execution process of the program. 
 
 The interface is called **Engine**, and the class implementing this interface should read the input
 
-When the program finishes, this class should print the output.
+When the program finishes, this class should print out the output.
 
 You are given the **EngineImpl** class with written logic in it. 
 
-In order for the code to be **compiled**, some parts are **commented, do not forget to comment them out**.
+In order for the code to be **compiled**, some parts are **commented out, do not forget to comment them out**.
 
-The **try-catch block** is also **commented** in order for the program to **throw exceptions and for you to see them, comment it out** when you are **ready** with this too.
+The **try-catch block** is also **commented out** in order for the program to **throw exceptions and for you to see them, un-comment it** when you are **ready** with this too.
 
 ## Input
 
@@ -215,9 +217,9 @@ The **try-catch block** is also **commented** in order for the program to **thro
 
 ## Output
 
-Print the output from each command, when issued.
+Print out the output from each command, when issued.
 
-If an exception is thrown during any of the commands' execution, print the exception message.
+If an exception is thrown during any of the commands execution process, print out the respective exception message.
 
 # Examples
 
