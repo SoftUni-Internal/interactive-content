@@ -26,7 +26,7 @@ function adapter(input, code) {
 # Descriere
 Sarcina dvs. este de a determina dacă secvența dată de caractere este sau nu un cod de bare valid.
 
-Fiecare linie nu trebuie să conțină altceva decât un cod de bare valid.
+Nicio linie nu trebuie să conțină altceva decât un cod de bare valid.
 
 Un cod de bare este valid atunci când:
 
@@ -42,9 +42,9 @@ Un cod de bare este valid atunci când:
 
 **Exemple de coduri de bare valide:** "\@\#FreshFisH\@\#", "\@\#\#\#Brea0D\@\#\#\#", "\@\#\#Che46sE\@\#\#"
 
-Exemple de coduri de bare **nevalide**: "\#\#InvaliDiteM\#\#", "\@InvalidIteM\@", "\@\#Invalid_IteM\@\#"
+**Exemple de coduri de bare nevalide**: "\#\#InvaliDiteM\#\#", "\@InvalidIteM\@", "\@\#Invalid_IteM\@\#"
 
-Apoi, va trebui să determinați **"grupa de produse"** a articolului din codul de bare. Acest lucru se face concatenând toate cifrele din codul de bare.
+Mai departe, va trebui să determinați **"grupa de produse"** a articolului din codul de bare. Acest lucru se face concatenând toate cifrele din codul de bare.
 
 Dacă nu există cifre în codul de bare, grupul de produse implicit este "**00**".
 
