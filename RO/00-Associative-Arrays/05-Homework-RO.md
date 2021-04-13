@@ -746,6 +746,16 @@ După ce ați executat toate comenzile, **imprimați** toți **utilizatorii înr
 | | George => JAVA123S | 
 | | Jesica => VR1223EE | 
 
+[hints]
+[hint]
+Utilizați `LinkedHashMap`:
+
+```java
+Map<String, String> parkingUsers = new LinkedHashMap<>();
+```
+[/hint] 
+[/hints] 
+
 ### Exemple
 | **Intrare* | **Ieșire** |
 | --- | --- |

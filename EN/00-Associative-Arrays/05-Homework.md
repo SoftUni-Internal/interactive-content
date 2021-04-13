@@ -749,6 +749,16 @@ After executing all of the commands, print out the **names of all currently regi
 | | George \=\> JAVA123S | 
 | | Jesica \=\> VR1223EE | 
 
+[hints]
+[hint]
+Use a `LinkedHashMap`:
+
+```java
+Map<String, String> parkingUsers = new LinkedHashMap<>();
+```
+[/hint] 
+[/hints] 
+
 ### Examples
 | **Input** | **Output** |
 | --- | --- |
