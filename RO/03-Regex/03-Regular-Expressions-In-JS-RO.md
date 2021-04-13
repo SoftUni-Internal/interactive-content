@@ -1,4 +1,4 @@
-# Expresii regulate în JavaScript
+# Expresii Regulate în JavaScript
 
 [slide hideTitle]
 # Expresii Regulate în JavaScript

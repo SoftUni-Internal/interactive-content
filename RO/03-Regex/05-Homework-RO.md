@@ -279,7 +279,7 @@ furniture(['\>\>Sofa\<\<312.23!3', '\>\>TV\<\<300!5', '\>Invalid\<\<!5', 'Purcha
 Bought furniture:
 Sofa
 TV
-Total money spend: 2436.69
+Total money spent: 2436.69
 [/output]
 [/test]
 [test open]
@@ -301,7 +301,7 @@ Bought furniture:
 Televizor
 Monitor
 Sink
-Total money spend: 4636.69
+Total money spent: 4636.69
 [/output]
 [/test]
 [test]
@@ -310,7 +310,7 @@ furniture(['\>Invalid\<\<!5', '\>Invalid\<\<!5', '\>Invalid\<\<!5', 'Purchase'])
 [/input]
 [output]
 Bought furniture:
-Total money spend: 0.00
+Total money spent: 0.00
 [/output]
 [/test]
 [test]
@@ -322,7 +322,7 @@ Bought furniture:
 Sofa
 Couch
 Table
-Total money spend: 3905.20
+Total money spent: 3905.20
 [/output]
 [/test]
 [test]
@@ -336,7 +336,7 @@ Sofa
 Sofa
 Sofa
 Sofa
-Total money spend: 4683.45
+Total money spent: 4683.45
 [/output]
 [/test]
 [test]
@@ -349,7 +349,7 @@ Laptop
 TV
 TV
 TV
-Total money spend: 8593.09
+Total money spent: 8593.09
 [/output]
 [/test]
 [/tests]
