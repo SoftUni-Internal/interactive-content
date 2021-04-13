@@ -55,7 +55,7 @@ Loop through each string character:
 for (int i = 0; i < username.length(); i++)
 ```
 [/hint] 
-
+[hint]
 Use the built-in `isLetterOrDigit` method to validate each character:
 
 ```java
@@ -66,6 +66,7 @@ if (!Character.isLetterOrDigit(symbol) &&
     return false;
 }
 ```
+[/hint]
 [/hints] 
 
 [/task-description]
