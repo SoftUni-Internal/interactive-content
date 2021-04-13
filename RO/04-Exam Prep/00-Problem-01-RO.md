@@ -26,13 +26,13 @@ function adapter(input, code) {
 # Descriere
 Scrieți un program de resetare a parolei care efectuează o serie de comenzi pe un șir.
 
-Mai întâi, veți primi șirul pe care trebuie să îl modificați, iar apoi, până când se primește comanda "**Done**", vi se vor da comenzi sub formă de text (un șir), împărțite printr-un singur spațiu.
+Mai întâi, veți primi **șirul pe care trebuie să îl modificați**, iar apoi, până când se primește comanda "**Done**", vi se vor da **comenzi** sub formă de text (un șir), împărțite printr-un singur spațiu.
 
 Comenzile vor fi următoarele:
 
 * Comanda "**TakeOdd**": 
 
-Ia în considerare doar caracterele de pe indici impari și le concatenează împreună pentru a obține noua parolă primară și apoi o imprimă.
+Ia în considerare doar caracterele de pe **indici impari** și le concatenează împreună pentru a obține noua parolă primară și apoi o imprimă.
 
 * Comanda "**Cut** \{**index**\} \{**length**\}": 
 
@@ -44,7 +44,7 @@ Indicele și lungimea specificate vor fi întotdeauna valide.
 
 * Comanda "**Substitute** \{**substring**\} \{**substitute**\}": 
 
-Dacă **parola primară** conține subșirul dat, înlocuiește toate aparițiile sale cu textul substitut dat și imprimă rezultatul.
+Dacă **parola primară** conține subșirul dat, înlocuiește toate aparițiile sale cu textul de substituție dat și imprimă rezultatul.
 
 Dacă nu, imprimați "**Nothing to replace!**".
 
@@ -52,7 +52,7 @@ Dacă nu, imprimați "**Nothing to replace!**".
 
 * Veți primi șiruri până când se primește comanda "**Done**".
 
-* Indicii comenzii "**Cut** \{**index**\} \{**length**\}" vor fi întotdeauna valizi.
+* Indicii comenzii "**Cut** \{**index**\} \{**length**\}" vor fi întotdeauna valizi
 
 ## Ieșire
 
@@ -60,10 +60,11 @@ Dacă nu, imprimați "**Nothing to replace!**".
 
 ## Exemplul Unu
 
-**Intrare**
+**Intrare**:
+
 passwordReset('Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr', ['TakeOdd', 'Cut 15 3', 'Substitute :: -', 'Substitute \| \^', 'Done'])
 
-**Ieșire**
+**Ieșire**:
 
 icecream\:\:hot\:\:summer
 
@@ -107,10 +108,12 @@ Tipărim: "**Nothing to replace!**"
 
 ## Exemplul Doi
 
-**Intrare**
+**Intrare**:
+
 passwordReset('up8rgoyg3r1atmlmpiunagt!-irs7!1fgulnnnqy', ['TakeOdd', 'Cut 18 2', 'Substitute ! \*\*\*', 'Substitute ? .!.', 'Done'])
 
-**Ieșire**
+**Ieșire**:
+
 programming!is!funny
 
 programming!is!fun
