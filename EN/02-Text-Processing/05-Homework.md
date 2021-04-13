@@ -31,6 +31,43 @@ A **valid username**:
 | | john45 |
 | | peter-white |
 
+[hints]
+[hint]
+Create a validator method:
+
+```java
+private static boolean validateUsername(String username)
+```
+[/hint] 
+[hint]
+Make sure you check the length first:
+
+```java
+if (username.length() < 3 || username.length() > 16) {
+  return false;
+}
+```
+[/hint] 
+[hint]
+Loop through each string character:
+
+```java
+for (int i = 0; i < username.length(); i++)
+```
+[/hint] 
+
+Use the built-in `isLetterOrDigit` method to validate each character:
+
+```java
+char symbol = username.charAt(i);
+ 
+if (!Character.isLetterOrDigit(symbol) &&
+  symbol != '-' && symbol != '_') {
+    return false;
+}
+```
+[/hints] 
+
 [/task-description]
 [code-io /]
 [tests]
