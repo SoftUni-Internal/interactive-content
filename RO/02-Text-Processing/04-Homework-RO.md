@@ -216,7 +216,7 @@ function adapter(input, code) {
 [task-description]
 
 # Descriere
-Scrieți o funcție care primește un singur șir - calea către un fișier (caracterul "\\" este ignorat)
+Scrieți o funcție care primește un singur șir - calea către un fișier (caracterul "\\" este scăpat)
 
 Sarcina dvs. este de a extrage **numele fișierului** și extensia acestuia. 
 
