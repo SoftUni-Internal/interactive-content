@@ -172,7 +172,7 @@ Consider using the wrapper classes in the **Seat** constructor.
 # Example
 | **Output** |
 | --- |
-| The car Leon is Gray and has a 110 horsepower engine. |
+| The Leon is Gray and has a 110 horsepower engine. |
 | This car Leon was produced in Spain and has 4 tires. |
 
 [/task-description]
