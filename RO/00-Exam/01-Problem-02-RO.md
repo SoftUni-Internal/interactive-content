@@ -32,7 +32,7 @@ Mai întâi, trebuie să **extrageți informațiile despre alimente.**
 
 Va respecta întotdeauna regulile cu **același model**:
 
-* Articolele vor fi separate prin „\|” sau „\#” (doar unul din cele două) în următorul format:
+* Articolele vor fi separate prin "\|" sau "\#" (doar unul din cele două) în următorul format:
 
 "\#\{**itemName**\}\#\{**expirationDate**\}\#\{**calories**\}\#"
 

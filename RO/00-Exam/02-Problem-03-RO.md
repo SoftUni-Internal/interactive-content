@@ -27,11 +27,11 @@ function adapter(input, code) {
 
 Pe prima linie a intrării, veți primi un **integer** "**n**" - reprezentând numărul de piese pe care le veți avea inițial.
 
-Pe următoarele rânduri "**n**", veți primi titlul fiecărei piese, urmat de **compozitorul și cheia**, separate prin „\|” în următorul format:
-**
+Pe următoarele rânduri "**n**", veți primi titlul fiecărei piese, urmat de **compozitorul și cheia**, separate prin "\|" în următorul format:
+
 "\{**piece**}\|\{**composer**\}\|\{**key**\}"
 
-Apoi, veți primi **comenzi diferite**, fiecare pe o nouă linie, separate prin "\|", până când este dată comanda „**Stop**”:
+Apoi, veți primi **comenzi diferite**, fiecare pe o nouă linie, separate prin "\|", până când este dată comanda "**Stop**":
 
 * Comanda "**Add**\|\{**piece**\}\|\{**composer**\}\|\{**key**\}":
 Trebuie să **adăugați piesa și informațiile** despre aceasta la celelalte piese.
@@ -75,7 +75,7 @@ La primirea comenzii "**Stop**", trebuie să imprimați toate piesele din colec�
 
 ## Ieșire
 
-*Toate mesajele de ieșire și formatele corespunzătoare sunt descrise în descrierea problemei
+* Toate mesajele de ieșire și formatele corespunzătoare sunt descrise în descrierea problemei
 
 ## Exemplul Unu
 
