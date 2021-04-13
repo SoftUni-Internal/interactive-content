@@ -4282,7 +4282,7 @@ In that case, print "**Names cannot be blank.**"
 ## Example 2
 | **Input** | **Output** |
 | --- | --- |
-| Team;Arsenal | Endurance should be between 0 and 100. |
+| Team;Arsenal | A player's endurance should be a number between 0 and 100. |
 | Add;Arsenal;Kieran_Gibbs;75;85;84;92;67 | Player Aaron_Ramsey is not in Arsenal. |
 | Add;Arsenal;Aaron_Ramsey;195;82;82;89;68 | Arsenal - 81 |
 | Remove;Arsenal;Aaron_Ramsey |  |
