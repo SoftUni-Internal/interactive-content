@@ -62,16 +62,16 @@ După ce primiți "**Craft!**", Imprimați toate articolele din inventarul dvs.,
 
 [hints]
 [hint]
-Split the commands and items for each command by the hyphen, surrounded by spaces: **" - "**
+Împărțiți comenzile și obiectele pentru fiecare comandă de lângă cratimă, înconjurată de spații: **" - "**
 [/hint] 
 [hint]
-Create a condition that checks if the items' string contains a colon (**":"**), and splits it.
+Creați o condiție care verifică dacă șirul obiectelor conține două puncte (**":"**), iar apoi îl împarte.
 [/hint] 
 [hint]
-Loop through each command/item and modify the inventory accordingly.
+Parcurgeți fiecare comandă/obiecte și modificați inventarul în mod corespunzător.
 [/hint] 
 [hint]
-At the end, print the inventory to the console using the `.join(separator)` method.
+La final, tipăriți inventarul pe consolă folosind metoda `.join(separator)`.
 [/hint] 
 [/hints] 
 

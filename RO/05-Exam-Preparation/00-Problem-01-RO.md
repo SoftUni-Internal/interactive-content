@@ -110,16 +110,16 @@ Imprimați mesajele corespunzătoare, așa cum se arată în descriere.
 
 [hints]
 [hint]
-Initialize the health points (**100**) and bitcoins (**0**), as well as the number of rooms reached (**0** at the beginning).
+Inițializați health points (**100**) și bitcoins (**0**), dar și numărul de camere atinse (**0** la început).
 [/hint] 
 [hint]
-Split the commands from the input, then go through each one using a for-of loop.
+Împărțiți comenzile din intrare, iar apoi parcurgeți-le pe fiecare folosind o buclă for-of.
 [/hint] 
 [hint]
-Inside the for-of loop, create if-else statements for each command type or monster.
+Înăuntrul buclei for-of, creați o instrucțiune if-else pentru fiecare tip de comandă sau monstru.
 [/hint] 
 [hint]
-For every condition, modify the data and/or print the corresponding output.
+Pentru fiecare condiție, modificați datele și/sau tipăriți ieșirea corespunzătoare.
 [/hint] 
 [/hints] 
 
