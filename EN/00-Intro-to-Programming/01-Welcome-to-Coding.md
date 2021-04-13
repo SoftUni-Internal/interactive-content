@@ -45,7 +45,7 @@ public class Main {
 }
 ```
 
-The above program defines a **class** `Main`, which holds a **method** `main()`. Iside it, there is a sequence of **3 commands**:
+The above program defines a **class** `Main`, which holds a **method** `main()`. Inside it, there is a sequence of **3 commands**:
 - The first command declares and initiates a **variable**: `int size = 5;`
 - The second one **prints out** an **expression**: `System.out.println("Size = " + size);`
 - The third one **calculates and prints out** another **expression**: `System.out.println("Area = " + size * size);`
