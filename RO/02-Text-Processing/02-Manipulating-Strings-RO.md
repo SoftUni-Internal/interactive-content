@@ -261,14 +261,21 @@ La sfârșit **tipăriți șirul rămas**.
 | ice | kgb |
 | kicegiciceeb |  |
 
-# Sugestii
-- **Citiți intrarea.**
-- Găsiți **primul indice** unde apare cuvântul cheie.
-    - utilizați metoda încorporată `indexOf()`
-- **Eliminați potrivirea**
-    - utilizați metoda încorporată `replace(String oldValue, String newValue)`
-- **Repetați** până când textul **nu mai conține cuvântul cheie**
+[hints]
+[hint]
+Citiți intrarea.
 
+Găsiți **primul indice** unde apare cuvântul cheie. 
+Utilizați metoda încorporată `indexOf()`
+[/hint] 
+[hint]
+**Eliminați potrivirea.**
+Utilizați metoda încorporată `replace(String oldValue, String newValue)`
+[/hint] 
+[hint]
+**Repetați** până când textul **nu mai conține cuvântul cheie**.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]
@@ -420,10 +427,14 @@ Intrările din lista de interdicții vor fi separate printr-o **virgulă** și *
 | It is not Linux, it is GNU/Linux. Linux is merely the kernel, while GNU adds the functionality. Therefore we owe it to them by calling the OS GNU/Linux! Sincerely, a Windows client |  |
 
 
-# Sugestii
-- **Citiți intrarea**.
-- **Înlocuiți toate cuvintele interzise** din text **cu** **asterisc** \(__\*__\)
-   - utilizați **metoda încorporată** `replace(banWord, replacement)`
+[hints]
+[hint]
+Citiți intrarea.
+
+**Înlocuiți toate cuvintele interzise** din text **cu asterisc**. 
+Utilizați **metoda încorporată** `replace(banWord, replacement)`
+[/hint]  
+[/hints] 
 
 
 [/task-description]

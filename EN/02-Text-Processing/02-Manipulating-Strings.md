@@ -262,13 +262,21 @@ Print out the remaining string.
 | ice | kgb |
 | kicegiciceeb |  |
 
-# Hints
-- Read the input
-- Find the **first index** where the key (the first string) appears
-	- use the built-in method: `indexOf()` 
-- **Remove the matching substring**
-	- use the built-in method: `replace(String oldValue, String newValue)`
-- **Repeat** that operation until the text **does not contain the specified key anymore**
+[hints]
+[hint]
+Read the input.
+
+Find the **first index** where the key (the first string) appears. 
+Use the built-in method `indexOf()`
+[/hint] 
+[hint]
+**Remove the matching substring.**
+Use the built-in method `replace(String oldValue, String newValue)`
+[/hint] 
+[hint]
+**Repeat** that operation until the text **does not contain the specified key anymore**.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]
@@ -419,10 +427,15 @@ The entries in the ban list will be separated by a **comma** and **space** ", ".
 | It is not Linux, it is GNU/Linux. Linux is merely the kernel, while GNU adds the functionality. Therefore we owe it to them by calling the OS GNU/Linux! Sincerely, a Windows client |  |
 
 
-# Hints  
-- Read the input
-- **Replace all banned words** in the text with **asterisk symbols**
-	- use the built-in method: `replace(banWord, replacement)`
+[hints]
+[hint]
+Read the input.
+
+**Replace all banned words** in the text with **asterisk symbols**. 
+Use the built-in method: `replace(banWord, replacement)`
+[/hint]  
+[/hints] 
+
 
 [/task-description]
 [code-io /]
