@@ -2,6 +2,8 @@
 
 # Dependencies
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-35-36-coupling-and-testing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Most components rely on other components to exist.
 
 Instead of creating components that are close-coupled to each other, we can use **dependency injection** to improve the **separation of concerns**. 
