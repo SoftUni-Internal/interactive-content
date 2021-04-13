@@ -841,7 +841,7 @@ Când primiți **comanda** "End", **imprimați toate persoanele**.
 | End | |
 
 [/task-description]
-[code-upload allowedMemory="30" /]
+[code-io /]
 [tests]
 [test open]
 [input]
