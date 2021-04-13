@@ -671,13 +671,13 @@ There are some explosions that are marked with "\>" characters.
 
 Immediately after each "\>" character, there will be an **integer**, which will represent the **power of the explosion**.
 
-You should **remove `x` characters** (where `x` is the power of the explosion), **starting immediately after the "\>" character.
+You should **remove** `x` **characters** (where `x` is the power of the explosion), **starting immediately after the "\>" character.
 
-If you find **another "\>" character** while you are deleting characters, you should **add the power of the new explosion to the power of the previous explosion**.
+If you find **another "**\>**" character** while you are deleting characters, you should **add the power of the new explosion to the power of the previous explosion**.
 
 When all characters are processed, **print out the remaining string** (without the deleted characters). 
 
-You **should not delete the "\>" characters**, but you **should delete the integers that represent the powers of the explosions**
+You **should not delete the "**\>**" characters**, but you **should delete the integers that represent the powers of the explosions**
 
 ### Input
 You will receive a single line of input that will contain a **String**.
@@ -690,32 +690,79 @@ Print out the resulting **string** after all explosions.
 | --- | --- |
 | abv\>1\>1\>2\>2asdasd | abv\>\>\>\>dasd |
 
-### Comments
-The first explosion is at index 3 and it has a power of 1. 
+You can see the **result of each explosion** at this hint section.
 
-We delete only the digit after the "\>" character. 
+[hints]
+[hint]
+The first explosion is at index **3** and it has a power of **1**. 
 
-The string will look like this: abv\>\>1\>2\>2asdasd.
+We **delete** only the digit after the "\>" character. 
 
-The second explosion has a power of 1. 
+The string will look like this: `abv>>1>2>2asdasd`
+[/hint] 
+[hint]
+The second explosion has a power of **1** and the resulting string is: `abv>>>2>2asdasd`
+[/hint] 
+[hint]
+The third explosion has a power of **2**. 
 
-The string will look like this: abv\>\>\>2\>2asdasd
+We **delete** a digit and we find another explosion. 
 
-The third explosion has a power of 2. 
+This is the result: `abv>>>>2asdasd`
+[/hint] 
+[hint]
+The fourth explosion has a power of **2**. 
 
-We delete a digit and we find another explosion. 
+We have a power of **1** left from the previous explosion and we **add** the power of the current explosion so that we have a **total** power of **3**. 
 
-At this point, the string looks like this: abv\>\>\>\>2asdasd. 
+We **delete** the next three characters.
 
-The fourth explosion has a power of 2. 
+At this point, the string looks like this: `abv>>>>dasd`
+[/hint] 
+[hint]
+There are no more explosions left, so we **print** out the result: `abv>>>>dasd`
+[/hint]
+[/hints] 
 
-We have a power of 1 left from the previous explosion and we add the power of the current explosion so that we have a total power of 3. 
+Here you will find an explanation of the **solving** process.
 
-We delete the next three characters.
+[hints]
+[hint]
+Create a result `StringBuilder` and initialize the **power**:
 
-The string will look like this: abv\>\>\>\>dasd.
+```java
+Scanner sc = new Scanner(System.in);
 
-There are no more explosions left, so we print out the result: abv\>\>\>\>dasd.
+StringBuilder result = new StringBuilder(sc.nextLine());
+int power = 0;
+```
+[/hint] 
+[hint]
+Increase the power by the numeric values of the characters, preceded by `>`:
+
+```java
+for (int i = 0; i < result.length(); i++) {
+  if (result.charAt(i) == '>') {
+    power += Character.getNumericValue(result.charAt(i + 1));
+  } else if (power > 0 && result.charAt(i) != '>') {
+    result.deleteCharAt(i);
+    power--;
+    i--;
+  }
+}
+```
+
+Delete the digits after `>` as needed.
+
+[/hint] 
+[hint]
+Print out the result to the console:
+
+```java
+System.out.println(result);
+```
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]

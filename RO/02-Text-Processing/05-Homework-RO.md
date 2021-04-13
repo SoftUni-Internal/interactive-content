@@ -665,17 +665,17 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-**Exploziile sunt marcate** cu '\>'.
+**Exploziile sunt marcate** cu "\>".
 
 Imediat după marcare, va exista un număr întreg, care semnifică **puterea exploziei**.
 
-Trebuie să **eliminați x caractere** (unde x este forța exploziei), **începând după caracterul care marchează explozia** ('\>').
+Trebuie să **eliminați x caractere** (unde x este forța exploziei), **începând după caracterul care marchează explozia** ("\>").
 
-Dacă găsiți **un alt semn de explozie** ('\>') **în timp ce ștergeți caractere**, trebuie să **adăugați forța exploziei anterioare**.
+Dacă găsiți **un alt semn de explozie** ("\>") **în timp ce ștergeți caractere**, trebuie să **adăugați forța exploziei anterioare**.
 
 Când toate caracterele sunt procesate, **tipăriți șirul fără caracterele șterse**.
 
-**Nu trebuie să ștergeți caracterul de explozie** - '\>', dar **trebuie să ștergeți numerele întregi**, care reprezintă puterea.
+**Nu trebuie să ștergeți caracterul de explozie** - "\>", dar **trebuie să ștergeți numerele întregi**, care reprezintă puterea.
 
 ### Intrare
 Veți primi o singură linie cu șirul.
@@ -688,28 +688,79 @@ Imprimați ce a rămas din șir după explozii.
 | --- | --- |
 | abv\>1\>1\>2\>2asdasd | abv\>\>\>\>dasd |
 
-### Comentarii
-Prima explozie este la indicele 3 și are o putere de 1.
+Puteți vedea **rezultatul fiecărei explozii** la această secțiune de sugestii.
 
-Ștergem doar cifra după caracterul care marchează explozia.
+[hints]
+[hint]
+Prima explozie este la indicele **3** și are o putere de **1**.
 
-Șirul va arăta astfel: abv\>\>1\>2\>2asdasd.
+**Ștergem** doar cifra după caracterul care marchează explozia ("\>").
 
-A doua explozie este de putere unu și șirul se transformă în: abv\>\>\>2\>2asdasd
+Șirul va arăta astfel: `abv>>1>2>2asdasd`
+[/hint] 
+[hint]
+A doua explozie este de putere **unu** și șirul se transformă în: `abv>>>2>2asdasd`
+[/hint] 
+[hint]
+A 3-a explozie are acum o putere de **2**.
 
-A 3-a explozie are acum o putere de 2.
+**Ștergem** cifra și găsim o altă explozie.
 
-Ștergem cifra și găsim o altă explozie.
+Acesta este rezultatul: `abv>>>>2asdasd`
+[/hint] 
+[hint]
+A 4-a explozie este cu puterea **2**.
 
-În acest moment șirul arată astfel: abv\>\>\>\>2asdasd.
+Mai avem **1** putere rămasă din explozia anterioară, **adăugăm** puterea exploziei actuale la ceea ce a rămas și asta însumează o putere **totală** de **3**.
 
-A 4-a explozie este cu puterea 2.
+**Ștergem** următoarele trei caractere.
 
-Mai avem 1 putere rămasă din explozia anterioară, adăugăm puterea exploziei actuale la ceea ce a rămas și asta însumează o putere totală de 3.
+În acest moment șirul arată astfel: `abv>>>>dasd`
+[/hint] 
+[hint]
+Nu mai avem explozii și **imprimăm** rezultatul: `abv>>>>dasd`
+[/hint]
+[/hints] 
 
-Ștergem următoarele trei caractere și obținem șirul abv \>\>\>\> dasd.
+Aici veți găsi o explicație a procesului de **rezolvare**.
 
-Nu mai avem explozii și imprimăm rezultatul: abv\>\>\>\>dasd.
+[hints]
+[hint]
+Create a **result** `StringBuilder` and initialize the **power**:
+
+```java
+Scanner sc = new Scanner(System.in);
+
+StringBuilder result = new StringBuilder(sc.nextLine());
+int power = 0;
+```
+[/hint] 
+[hint]
+Increase the power by the numeric values of the characters, preceded by `>`:
+
+```java
+for (int i = 0; i < result.length(); i++) {
+  if (result.charAt(i) == '>') {
+    power += Character.getNumericValue(result.charAt(i + 1));
+  } else if (power > 0 && result.charAt(i) != '>') {
+    result.deleteCharAt(i);
+    power--;
+    i--;
+  }
+}
+```
+
+Delete the characters as needed. You should not delete `>`
+
+[/hint] 
+[hint]
+Print out the remaining string to the console:
+
+```java
+System.out.println(result);
+```
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]
