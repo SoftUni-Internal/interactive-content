@@ -912,7 +912,6 @@ Chip with ID: 74059 is 44 years old.
 Chip with ID: 84450 is 89 years old.
 Margie with ID: 17098 is 46 years old.
 [/output]
-[/test]
 [/tests]
 [/code-task]
 [/slide]
