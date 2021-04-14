@@ -7,13 +7,13 @@
 
 Limbajul JavaScript este construit pe o structură centrală de date - matricea asociativă.
 
-Matricele asociative din JavaScript sunt obiecte în care indecșii sunt înlocuiți de chei definite de utilizator.
+Matricele asociative din JavaScript sunt obiecte în care indicii sunt înlocuiți de chei definite de utilizator.
 
-Nu au o proprietate **lungime** ca matricea normală și nu pot fi iterate folosind o buclă.
+Nu au proprietatea **lungime (length)** ca matricea normală și nu pot fi iterate folosind o buclă for obișnuită.
 
-Matricele sunt indexate cu **chei de șir**. Acestea constau dintr-o **cheie** și o **valoare**.
+Matricele sunt indexate cu **chei de tip șir**. Acestea constau dintr-o **cheie** și o **valoare**.
 
-**cheia** este un **șir**. **Valoarea**poate fi de **orice tip**.
+**Cheia** este un **șir**. **Valoarea** poate fi de **orice tip**.
 
 Exemplu:
 
@@ -31,9 +31,9 @@ Exemplu:
 
 O matrice asociativa în JavaScript este doar un obiect, deci îl putem declara dinamic.
 
-Să declarăm și să inițializăm unul:
+Să declarăm și să inițializăm unul.
 
-În acest exemplu, "one" este **cheia** și numărul 1 este **valoarea** corespunzătoare.
+În acest exemplu, "one" este **cheia** și numărul 1 este **valoarea** corespunzătoare:
 
 ```js
 let assocArr = { one: 1 };
@@ -41,19 +41,19 @@ let assocArr = { one: 1 };
 
 Puteți accesa valorile prin cheile lor.
 
-În acest exemplu, "four" este **cheia** și numărul 4 este **valoarea** corespunzătoare.
+În acest exemplu, "four" este **cheia** și numărul 4 este **valoarea** corespunzătoare:
 
 ```js
 assocArr['four'] = 4;
 ```
 
-Aici, "five" este **cheia** și 5 este **valoarea** corespunzătoare.
+Aici, "five" este **cheia** și 5 este **valoarea** corespunzătoare:
 
 ```js
 assocArr.five = 5;
 ```
 
-Iată cum declarăm și inițializăm **cheia** mai întâi și apoi o folosim pentru a-i atribui o **valoare**.
+Iată cum declarăm și inițializăm **cheia** mai întâi și apoi o folosim pentru a-i atribui o **valoare**:
 
 
 ```js
@@ -63,15 +63,15 @@ assocArr[key] = 6;
 [/slide]
 
 [slide hideTitle]
-# Folosirea Unei Nucle "for-in"
+# Folosirea Unei Bucle "for-in"
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/RO/02.JS-Fundamentals-Associative-Arrays-6-using-for-in-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Putem folosi o buclă **for-in** pentru a itera prin chei.
 
-Declarați un obiect gol. Apoi atribuiți valori la chei și, în cele din urmă, iterați prin chei folosind o buclă **for-in**.
+Declarați un obiect gol. Apoi atribuiți valori cheilor și, în cele din urmă, iterați prin chei folosind o buclă **for-in**.
 
-Așa cum se arată mai jos:
+Așa cum se observă mai jos:
 
 ```js live
 let assocArr = {};
@@ -117,9 +117,9 @@ function adapter(input, code) {
 
 Scrieți o funcție care stochează informații despre **numele unei persoane** și **numărul de telefon al acesteia**.
 
-Intrarea vine sub forma unei **matrice de șiruri**.
+Intrarea este dată sub forma unei **matrice de șiruri**.
 
-Fiecare șir conține un nume și un număr.
+Fiecare șir conține un **nume** și **un număr**.
 
 Dacă primiți același nume de două ori, înlocuiți numărul.
 
@@ -212,9 +212,9 @@ tyuhjk \-\> 0844565344
 
 Putem folosi următoarea expresie pentru a verifica dacă o **cheie** este **prezentă**.
 
-Utilizați metoda `.hasOwnProperty("key")`
+Utilizați metoda `.hasOwnProperty('key')`.
 
-Să declarăm un obiect gol și să-i atribuim o cheie. Utilizați o instrucție if și expresia de mai sus pentru a vedea dacă există cheia.
+Să declarăm un obiect gol și să-i atribuim o cheie. Utilizați o instrucțiune `if` și expresia de mai sus pentru a vedea dacă cheia există.
 
 Rezultatul ar trebui să fie "true".
 
@@ -228,11 +228,11 @@ if (assocArr.hasOwnProperty('name')) {
 }
 ```
 
-Eliminarea entităților se face folosind cuvântul cheie `delete`.
+Eliminarea intrărilor se face folosind cuvântul cheie `delete`.
 
 Pentru a testa acest lucru, vom declara un obiect gol și îi vom atribui o cheie.
 
-Apoi, vom șterge cheia. Ieșirea este un obiect gol, după cum puteți vedea din exemplu.
+Apoi, vom șterge cheia. Ieșirea este un obiect gol, după cum puteți vedea din exemplu:
 
 ```js live
 let assocArr = {};
@@ -243,9 +243,9 @@ console.log(assocArr);
 
 Dacă încercați să accesați o cheie care nu există, atunci veți obține rezultatul **undefined**.
 
-Încercați să `console.log()` `assocArr.name` după ștergerea proprietății `name`.
+Încercați `console.log()` pentru `assocArr.name` după ștergerea proprietății `name`.
 
-Vedeți exemplul de mai jos.
+Vedeți exemplul de mai jos:
 
 ```js live
 let assocArr = {};
@@ -256,9 +256,9 @@ console.log(assocArr.name);
 
 Puteți utiliza, de asemenea, ceva numit destructurare.
 
-Sintaxa de alocare a destructurării este o expresie JavaScript care face posibilă despachetarea valorilor din matrice sau proprietăți din obiecte, în valori separate.
+Sintaxa de alocare a destructurării este o expresie JavaScript care face posibilă despachetarea valorilor din matrice sau a proprietăților din obiecte, în valori separate.
 
-Metoda `Object.entries()` returnează o serie de matrice ale propriilor perechi `[ key, value ]` ale unui anumit obiect.
+Metoda `Object.entries()` returnează o matrice de matrice ale propriilor perechi `[ key, value ]` ale unui anumit obiect.
 
 În bucla for-of din exemplul de mai jos declarăm variabilele noastre **cheie** și **valoare**.
 
@@ -305,13 +305,13 @@ function adapter(input, code) {
 
 # Descriere
 
-Scrieți o funcție care primește **zilele saptamanii** și **nume** ca intrare.
+Scrieți o funcție care primește **zilele săptămânii** și **nume** ca intrare.
 
-Tipariți un mesaj pentru fiecare întâlnire reușită în formatul următor.
+Tipariți un mesaj pentru fiecare întâlnire reușită în formatul următor:
 
 "**Scheduled for** \$\{**day**\}"
 
-Dacă aceeași zi a săptămânii apare a doua oară, tipăriți mesajul **conflict**.
+Dacă aceeași zi a săptămânii apare a doua oară, tipăriți mesajul **conflict**:
 
 "**Conflict on** \$\{**day**\}**!**"
 
@@ -456,11 +456,11 @@ Tuesday \-\> Ted
 
 Obiectele **nu pot fi sortate**. Pentru a face acest lucru, trebuie să le transformăm în matrice.
 
-Apoi le putem **sorta**, **filtra** și **mapa** pe ele.
+Apoi le putem **sorta**, **filtra** și **asocia**.
 
-Folosind metoda `Object.entries()` obținem o serie de matrice.
+Folosind metoda `Object.entries()` obținem o matrice de matrice.
 
-Vedeți exemplul de mai jos.
+Vedeți exemplul de mai jos:
 
 ```js live
 let phonebook = {
@@ -484,9 +484,9 @@ console.log(firstEntry[0]);
 console.log(firstEntry[1]);
 ```
 
-După cum sugerează și numele metodei `sort()`, aceasta sortează elementele unei matrice și returnează  matricea sortata. Ordinea de sortare implicită este **crescătoare**.
+După cum sugerează și numele metodei `sort()`, aceasta sortează elementele unei matrice și returnează matricea sortată. Ordinea de sortare implicită este **crescătoare**.
 
-Matricea **intrări** din exemplul de mai sus poate fi **sortată**, utilizând o funcție **Comparare**.
+Matricea **entries** din exemplul de mai sus poate fi **sortată**, utilizând o funcție de **comparare**.
 
 Utilizați metoda `.localeCompare()` pentru a sorta **șiruri** în JavaScript.
 
@@ -500,7 +500,7 @@ Utilizați metoda `.localeCompare()` pentru a sorta **șiruri** în JavaScript.
 
 Pentru a **sorta după cheie**, utilizați **primul element** al fiecărei intrări.
 
-Aici `a[0]` este primul element și `b[0]`, al doilea element al funcției de sortare.
+Aici `a[0]` este primul element și `b[0]` al doilea element al funcției de sortare.
 
 Expresia `a[0].localeCompare(b[0])` va sorta matricea în ordine crescătoare.
 
@@ -533,7 +533,7 @@ console.log(result);
 [/slide]
 
 [slide hideTitle]
-# Problemă cu Soluție:  AddressBook
+# Problemă cu Soluție: AddressBook
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/RO/02.JS-Fundamentals-Associative-Arrays-15-solution-adress-book-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -664,7 +664,7 @@ Ted \-\> Dayton Ave
 
 Valorile stocate în matricele asociative pot fi obiecte sau matrice.
 
-Odată ce avem o **referință** la valoare, o putem **manipula** ca orice alt obiect.
+Odată ce avem o **referință** la valoare, o putem **manipula** ca pe orice alt obiect.
 
 În exemplul următor declarăm un obiect care are două proprietăți: "Tim" și "Bill".
 
@@ -689,11 +689,11 @@ let billsContact = contacts['Bill'];
 console.log(billsContact.phone);
 ```
 
-## Sortarea structurilor de date imbricate
+## Sortarea Structurilor de Date Imbricate
 
-Putem **sorta** structura datelor după **valorile proprietății** ale fiecărei intrări. 
+Putem **sorta** structuri de date după **valorile proprietății** fiecărei intrări. 
 
-În acest caz, vom folosi destructurarea pentru a sorta cartea de contact **alfabetic** după adresa fiecărei persoane.
+În acest caz, vom folosi destructurarea pentru a sorta cartea de contacte **alfabetic** după adresa fiecărei persoane.
 
 ```js live
 let contacts = {

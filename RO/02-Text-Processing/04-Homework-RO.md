@@ -21,13 +21,13 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Scrieți o funcție, care primește doi parametri.
+Scrieți o funcție care primește doi parametri.
 
 Primul parametru va fi un **șir care conține câteva cuvinte** separate prin "**,**".
 
 **Al doilea parametru va fi un șir** care conține șabloane care conțin "\*".
 
-Găsiți cuvântul **exact cu aceeași lungime ca șablonul** și înlocuiți-l.
+Găsiți cuvântul **cu exact aceeași lungime ca șablonul** și înlocuiți-l.
 
 ## Exemplu
    |**Intrare**|**Ieșire**|
@@ -121,9 +121,9 @@ function adapter(input, code) {
 # Descriere
 Intrarea va fi un **singur șir.**
 
-Găsiți toate cuvintele speciale **începând cu** "**#**".
+Găsiți toate cuvintele speciale **care încep cu** "**#**".
 
-Cuvântul nu este valid dacă are **orice altceva decât** literele.
+Cuvântul nu este valid dacă are **orice altceva decât** litere.
 
 Imprimați cuvintele pe care le-ați găsit fără etichetă, fiecare pe o nouă linie de intrare.
 
@@ -217,9 +217,10 @@ function adapter(input, code) {
 
 # Descriere
 Scrieți o funcție care primește un singur șir - calea către un fișier (caracterul "\\" este scăpat)
-Sarcina dvs. este de a scădea **numele fișierului** și extensia acestuia. 
 
-Feriți-vă de fișiere precum **template.bak.pptx**, deoarece **template.bak** ar trebui să fie numele fișierului, în timp ce pptx este extensia.
+Sarcina dvs. este de a extrage **numele fișierului** și extensia acestuia. 
+
+Aveți grijă la fișiere precum **template.bak.pptx**, deoarece **template.bak** ar trebui să fie numele fișierului, în timp ce pptx este extensia.
 
 ## Exemplul Unu
 |**Intrare**|**Ieșire**|
@@ -331,14 +332,14 @@ Intrarea va fi dată ca **două** șiruri separate.
 
 Scrieți o funcție care verifică dacă textul dat conține un cuvânt anume.
 
-Comparația ar trebui să fie **nesensibilă la majuscule.**
+Comparația nu trebuie să fie **sensibilă la majuscule.**
 
 După ce găsiți rezultatul, imprimați cuvântul și opriți programul.
 
-Dacă nu găsiți cuvântul print: "\{**word**\} **not found!**".
+Dacă nu găsiți cuvântul imprimați: "\{**word**\} **not found!**".
 
 
-## Exemple
+## Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | stringSubstring('javascript', 'JavaScript is the best programming language') | javascript |
@@ -430,9 +431,9 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Scrieți o funcție care primește un singur șir și **înlocuiește** orice secvență din **aceleași litere** cu o singură literă corespunzătoare.
+Scrieți o funcție care primește un singur șir și **înlocuiește** orice secvență formată din **aceleași litere** cu o singură literă corespunzătoare.
 
-## Exemple
+## Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | replaceRepeatingChars('aaaaabbbbbcdddeeeedssaa') | abcdedsa |
@@ -528,11 +529,11 @@ Veți primi un **singur șir.**
 
 Acest șir este scris folosind formatul **PascalCase**.
 
-Sarcina dvs. aici este de a împărți **fiecare cuvânt separat de șir.**
+Sarcina dvs. aici este de a împărți **fiecare cuvânt separat din șir.**
 
 Imprimați-le împreună cu **o virgulă și un spațiu.**
 
-## Exemple
+## Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | splitter('SplitMeIfYouCanHaHaYouCantOrYouCan') | Split, Me, If, You, Can, Ha, Ha, You, Cant, Or, You, Can |
@@ -635,7 +636,7 @@ function adapter(input, code) {
 [task-description]
 
 # Descriere
-Introducerea va fi un **un singur șir.**
+Intrarea va fi un **un singur șir.**
 
 Scrieți o funcție care taie șirul dat **în jumătate** și inversați cele **două jumătăți.**
 

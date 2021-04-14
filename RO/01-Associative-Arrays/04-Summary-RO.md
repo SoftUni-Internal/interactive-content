@@ -6,7 +6,7 @@
 
 ## În această lecție ați învățat că:
 
-- Putem utiliza ambele categorii **Objects** și **Maps** pentru a stoca perechi **key-value**
+- Putem utiliza atât **Obiecte**, cât și **Maps**, pentru a stoca perechi **cheie-valoare**
 ```js
 let myMap = new Map([
     [3, 'three'],
@@ -23,7 +23,7 @@ let car = {
     color: 'Blue'
 };
 ```
-- **Map-urile** au avantaje în unele cazuri:
+- **Maps** au avantaje în unele cazuri:
   - puteți utiliza **orice tip de date** ca **cheie**
   - sunt **iterabile**
   - au **o proprietate de dimensiune**

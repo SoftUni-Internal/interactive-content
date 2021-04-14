@@ -1,7 +1,7 @@
 # Șiruri
 
 [slide hideTitle]
-# Ce Este un Șir
+# Ce Este un Șir?
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/RO/interactive-js-fundamentals-text-processing-3-4-5-what-is-a-string-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -11,7 +11,7 @@ Sunt folosite pentru stocarea textului.
 
 **Una dintre cele mai utilizate proprietăți este** lungimea lor, care poate fi obținută folosind `.length()` pe orice șir.
 
-Textul ar trebui să fie înfășurat în ghilimele, există trei tipuri care pot fi utilizate:
+Textul trebuie să fie încadrat între ghilimele, existând trei tipuri care pot fi utilizate:
 
 - **Ghilimele duble**
 
@@ -44,11 +44,11 @@ console.log(`${concatenated}`);
 
 ## Accesarea șirurilor
 
-**Șirurile** sunt lanțuri de caractere numai în citire, ceea ce înseamnă că nu le putem schimba.
+**Șirurile** sunt înlănțuiri de caractere read-only, ceea ce înseamnă că nu le putem schimba.
 
-**Le accesăm** după indexul lor. 
+**Le accesăm** după indicele lor. 
 
-Există două moduri de a face acest lucru.
+Există două moduri de a face acest lucru:
 
 - Primul este prin utilizarea operatorului de indexare `[]`
 
@@ -58,9 +58,9 @@ let hi = 'Hi, JS';
 console.log(hi[4]);
 ```
 
-Acesta va returna, de asemenea, `J` deoarece cele două modalități de accesare a indexurilor sunt identice.
+Acesta va returna `J`.
 
-- Putem accesa un **șir** și cu metoda `charAt()`.
+- Putem accesa un **șir** și cu metoda `charAt()`
 
 Și va arăta așa:
 
@@ -70,7 +70,7 @@ let hi = 'Hi, JS';
 console.log(hi.charAt(4));
 ```
 
-Aceasta va da ca rezultat de asemenea, `J`, deoarece cele două moduri sunt identice la sfârșit.
+Aceasta va returna de asemenea `J`, deoarece cele două moduri de accesare a indicilor sunt identice.
 
 [/slide]
 
@@ -90,7 +90,7 @@ for (let el of text) {
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Print Characters
+# Problemă cu Soluție: Print Characters
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/03.JS-Fundamentals-Text-Processing/RO/interactive-js-fundamentals-text-processing-6-solution-print-characters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

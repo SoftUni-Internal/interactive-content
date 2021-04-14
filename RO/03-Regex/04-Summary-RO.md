@@ -5,13 +5,13 @@
 
 ## În această lecție ați învățat:
 
-- Expresia regulată este o secvență de caractere care formează un șablon
+- Expresia regulată este o secvență de caractere care formează un șablon de căutare
 
-`[A-Z][a-z]+ [A-Z][a-z]+ // Matches "Ben Williams"`
+`[A-Z][a-z]+ [A-Z][a-z]+ // Se potrivește cu "Ben Williams"`
 
-- Definim caractere speciale, operatori și construcții pentru construirea unor lablone complexe
+- Definim caractere speciale, operatori și construcții pentru construirea unor șabloane complexe
 
-`[abc]+ // Matches any character that is either "a", "b", or "c"`
+`[abc]+ // Se potrivește cu orice caracter care este "a", "b", sau "c"`
 
 - Putem folosi clase de caractere, grupruri, cuantificatori și altele
 

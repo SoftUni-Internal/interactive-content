@@ -9,11 +9,9 @@
 
 Ele oferă o sintaxă concisă pentru a realiza cerințe complexe care, în mod normal, ar necesita multe linii de cod.
 
-JavaScript oferă tipul integrat "RegExp" care ne permite să lucrăm cu expresii regulate în mod eficient.
+JavaScript oferă tipul integrat `RegExp` care ne permite să lucrăm cu expresii regulate în mod eficient.
 
-Pentru a testa expresiile noastre regulate, putem utiliza următorul site:
-
-[Regex101](www.regex101.com)
+Pentru a testa expresiile noastre regulate, putem utiliza [Regex101](www.regex101.com).
 
 [/slide]
 
@@ -22,19 +20,19 @@ Pentru a testa expresiile noastre regulate, putem utiliza următorul site:
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-6-Regular-expressions-pattern-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Când lucrăm cu expresii regulate, utilizăm șabloane pentru a extrage doar datele de care avem nevoie.
+Când lucrăm cu expresii regulate, utilizăm șabloane pentru a extrage doar datele de care avem nevoie:
 
-Acesta este un exemplu de șablon care face potriviri doar pe secvențe nevide de cifre:
+- Un exemplu de șablon care face potriviri doar pe secvențe nevide de cifre:
 
 `[0-9]+`
 
-Un exemplu de șablon care corespunde unei majuscule, urmată de o literă mică:
+- Un exemplu de șablon care corespunde unei majuscule, urmată de litere mică:
 
 `[A-Z][a-z]*`
 
 Un exemplu de model care corespunde unui nume:
 
-`[A-Z][a-z]+ [A-Z][a-z]+` face potrivire pe "John Smith".
+`[A-Z][a-z]+ [A-Z][a-z]+` - face potrivire pentru "John Smith".
 
 [/slide]
 
@@ -45,21 +43,21 @@ Un exemplu de model care corespunde unui nume:
 
 Utilizați paranteze drepte pentru a potrivi niște caractere specifice:
 
-`[nvj]+` corespunde oricărui caracter care este **n**, **v** sau **j**.
+- `[nvj]+` - corespunde oricărui caracter care este **n**, **v** sau **j**.
 
 Exemplu:
 
-**n**ode.**j**s **v**0.12.2
+"**n**ode.**j**s **v**0.12.2" potrivește "njv"
 
-Utilizați simbolul **caret** `^` pentru a exclude ceva din căutare, la fel ca în cazul exemplului de mai jos.
+- Utilizați simbolul **caret** `^` pentru a exclude ceva din căutare, la fel ca în cazul exemplului de mai jos:
 
-`[^abc]` corespunde oricărui caracter care nu e **a**, **b** sau **c**.
+`[^abc]` - corespunde oricărui caracter care nu e **a**, **b** sau **c**.
 
-Exemplu:
+**Exemplu:**
 
-**A**b**r**a**h**a**m** face potriviri doar pentru "Arhm".
+**A**b**r**a**h**a**m** potrivește doar "Arhm".
 
-Intervalul de caractere `[0-9]`: corespunde oricărei cifre de la 0 la 9.
+- Intervalul de caractere `[0-9]` - corespunde oricărei cifre de la 0 la 9.
 
 Exemplu:
 

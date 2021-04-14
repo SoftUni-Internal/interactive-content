@@ -12,10 +12,10 @@
 - Proprietăți și metode
 
 **2. JSON**
-- prezentare generală a fișierrelro JSON 
+- Prezentare generală a fișierelor JSON 
 
 **3. Clase**
 - Ce reprezintă o clasă
-- Prezentarea generală și sintaxa claselor
+- Prezentare generală și sintaxa claselor
 
 [/slide]

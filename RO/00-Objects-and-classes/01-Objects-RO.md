@@ -1,4 +1,4 @@
-# Introducerea Obiectului
+# Introducerea Obiectelor
 
 [slide hideTitle]
 # Ce Reprezintă Obiectele?
@@ -7,11 +7,11 @@
 
 Obiectele din JavaScript, ca și în **multe alte limbaje de programare**, pot fi comparate cu obiectele din viața reală.
 
-Conceptul de obiecte din JavaScript poate fi înțeles cu obiecte tangibile din viața reală.
+Conceptul de obiecte în JavaScript poate fi înțeles prin utilizarea obiectelor din viața reală drept exemplu.
 
-Un obiect constă din mai multe variabile și funcții numite proprietăți și metode.
+Un obiect constă din mai multe **variabile** și **funcții** numite **proprietăți** și **metode**.
 
-În JavaScript, în timpul rulării puteți adăuga și elimina proprietăți din orice obiect.
+În JavaScript, puteți **adăuga** și **elimina proprietăți** din orice obiect **în timpul rulării.**
 
 Exemplu: 
 
@@ -23,11 +23,11 @@ let person = {
 console.log(person.name);
 ```
 
-În exemplul de mai sus, inițializăm un **obiect** cu numele `person`.
+În exemplul de mai sus, **inițializăm** un obiect cu numele `person`.
 
-Acest obiect are **două proprietăți** `name` și `age`.
+Acest obiect are **două proprietăți**: `name` și `age`.
 
-Putem accesa valoarea proprietății cu numele clasei `.` nume de proprietate.
+Putem **accesa** valoarea proprietății cu numele clasei, urmat de un punct `.` și numele proprietății.
 
 [/slide]
 
@@ -36,7 +36,7 @@ Putem accesa valoarea proprietății cu numele clasei `.` nume de proprietate.
  
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/RO/01.JS-Fundamentals-Object-and-Classes-5-Object-definition-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Putem defini un obiect gol și adăuga proprietățile ulterior:
+Acest exemplu ne arată cum se definesc obiectele:
 
 ``` js
 let person = {
@@ -46,7 +46,7 @@ let person = {
 };
 ```
 
-Putem defini obiectul gol și adăuga proprietățile ulterior:
+Putem de asemenea să definim un obiect gol și să adăugăm proprietățile ulterior:
 
 
 ``` js
@@ -64,7 +64,7 @@ person.hairColor = 'black';
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/RO/01.JS-Fundamentals-Object-and-Classes-6-Methods-of-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Funcțiile dintr-un obiect JavaScript se numesc metode.
+Funcțiile din cadrul unui obiect JavaScript se numesc metode.
 
 Putem defini metode folosind mai multe sintaxe.
 
@@ -106,9 +106,9 @@ person.sayHello = () => console.log('Hi, guys');
 
 Cele mai folosite metode încorporate de obiecte sunt următoarele:
 
-* `Object.entries()`: returnează o matrice de tupluri, care deține toate proprietățile și valorile lor
+* `Object.entries()`: returnează o matrice de perechi cheie-valoare, care deține toate proprietățile și valorile lor
  
-* `Object.keys()`: returnează matricea care deține toate proprietățile unui obiect
+* `Object.keys()`: returnează o matrice care deține toate proprietățile unui obiect
 
 * `Object.values()`: returnează o matrice cu toate valorile proprietăților obiectului
 
@@ -134,8 +134,9 @@ console.log(Object.values(cat));
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/RO/01.JS-Fundamentals-Object-and-Classes-8-Iterate-through-keys-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Putem itera prin cheile unui obiect, folosind o buclă `for-in` pentru a itera peste proprietățile obiectului prin cheie:
+Putem itera prin cheile unui obiect folosind o **buclă for-in**.
 
+Acest lucru ne permite să accesăm proprietățile unei chei date:
 ``` js live
 let person = {
     name: 'Peter',
@@ -177,7 +178,7 @@ function adapter(input, code) {
 # Descriere
 Scrieți o funcție care primește **trei elemente**, le setează la un **obiect** și **returnează** obiectul creat.
 
-Intrarea vine ca 3 șiruri **separate** în următoarea ordine: **firstName**, **lastName**, **age**.
+Intrarea este dată ca 3 șiruri **separate** în următoarea ordine: **firstName**, **lastName**, **age**.
 
 ## Exemple
 |**Intrare**|**Ieșire** |
@@ -276,9 +277,9 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Veți primi un **оbiect** care conține informații despre oraș. 
+Veți primi un **оbiect** care conține informații despre un oraș. 
 
-Buclați toate cheile și imprimați-le cu valorile lor în acest format:
+Parcurgeți toate cheile și imprimați-le împreună cu valorile lor în acest format:
 
 \{**key**\} **->** \{**value**\}
 

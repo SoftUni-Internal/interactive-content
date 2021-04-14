@@ -23,6 +23,6 @@
 **4. Expresiile regulate în JavaScript**
 
 - Cum să le utilizați
-- Metode incorporate
+- Metode încorporate
 
 [/slide]
