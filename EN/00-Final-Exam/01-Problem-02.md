@@ -75,18 +75,6 @@ Calculate **the total calories of all food items** from the string, and then
 ||Item: Carrots, Best before: 06\/08\/20, Nutrition: 500|
 
 
-[hints]
-[hint]
-We have three matches in total: 
-[/hint] 
-[hint]
-The sum of their calories is 4700.
-Since you need 2000kcal a day, you divide 4700/2000, which means that this food will last for 2 days.
-[/hint] 
-[hint]
-We print each item. 
-[/hint] 
-[/hints] 
 
 ## Examples Two
 
@@ -99,27 +87,12 @@ We print each item.
 |||
 
 
-[hints]
-[hint]
-We have three matches:
-
-The total calories are 8500 + 9000 + 2000 = 19500, which means you have food for a total of 9 days.
-[/hint] 
-[/hints] 
 
 ## Examples Three
 
 | **Input** | **Output** |
 | --- | --- |
 |foodSupply('Hello\|\#Invalid food\#19/03/20\#450\|\$5\*\(\@')|You have enough food for 0 days\!|
-
-[hints]
-[hint]
-There are no matches, which means you have no food.
-
-[/hint] 
-[/hints] 
-
 
 
 [/task-description]

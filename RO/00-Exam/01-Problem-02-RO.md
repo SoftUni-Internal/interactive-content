@@ -75,18 +75,6 @@ Calculați **caloriile totale ale tuturor produselor alimentare** din șir și a
 ||Item: Carrots, Best before: 06\/08\/20, Nutrition: 500|
 
 
-[hints]
-[hint]
-Avem trei meciuri în total:
-[/hint] 
-[hint]
-Suma caloriilor lor este de 4700.
-Deoarece aveți nevoie de 2000kcal pe zi, împărțiți 4700/2000, ceea ce înseamnă că acest aliment va dura 2 zile.
-[/hint] 
-[hint]
-Tipărim fiecare articol.
-[/hint] 
-[/hints]
 
 
 ## Exemplul Doi
@@ -99,13 +87,6 @@ Tipărim fiecare articol.
 ||Item: Milk, Best before: 05\/09\/20, Nutrition: 2000|
 |||
 
-[hints]
-[hint]
-Avem trei potriviri în total:
-
-Caloriile totale sunt 8500 + 9000 + 2000 = 19500, ceea ce înseamnă că aveți alimente pentru un total de 9 zile.
-[/hint] 
-[/hints]
 
 
 ## Exemplul al Treilea
@@ -114,13 +95,6 @@ Caloriile totale sunt 8500 + 9000 + 2000 = 19500, ceea ce înseamnă că aveți 
 | --- | --- |
 |foodSupply('Hello\|\#Invalid food\#19/03/20\#450\|\$5\*\(\@')|You have enough food for 0 days\!|
 
-[hints]
-[hint]
-Nu există potriviri, ceea ce înseamnă că nu ai mâncare.
-
-
-[/hint] 
-[/hints]
 
 [/task-description]
 [code-io /]

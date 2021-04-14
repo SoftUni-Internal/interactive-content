@@ -92,27 +92,6 @@ Upon receiving the "**Stop**" command, you need to print all pieces in the c
 ||Sonata No.2 \-\> Composer: Chopin, Key: B Minor|
 
 
-[hints]
-[hint]
-After you receive the initial pieces and the information about them, you start receiving commands. 
-[/hint] 
-[hint]
-The first two commands are to add a piece to the collection. Since the pieces are not in the collection, you add them. 
-[/hint] 
-[hint]
-By the third command, which is also "**add**", you **attempt to add a piece** that is already in the collection, so you **print the appropriate message**, but you do not add the piece. 
-[/hint] 
-[hint]
-After that, you receive the "**remove**" **command**. 
-
-The **last** command **requires changing the key of a piece**. 
-
-Since the piece is **present in the collection**, you **modify** its key.
-[/hint] 
-[hint]
-Next, you receive the "**Stop**" command, you **print the information about the pieces**, sorted the way described above, and the program ends. 
-[/hint] 
-[/hints] 
 
 ## Examples Two
 
