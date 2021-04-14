@@ -269,35 +269,35 @@ BigInteger number = BigInteger.valueOf(-123);
 number = number.abs();
 System.out.println(number);
 ```
-- `add(value)` : Atribuie o **valoare nouă** BigInteger-ului curent și efectuează **adunare** (valoare curentă + valoare)
+- `add(value)`: Atribuie o **valoare nouă** BigInteger-ului curent și efectuează **adunare** (valoare curentă + valoare)
 
 ```java live
 BigInteger number = BigInteger.valueOf(123);
 number = number.add(BigInteger.TEN);
 System.out.println(number);
 ```
-- `subtract(value)` : Atribuie o **valoare nouă** BigInteger-ului curent și efectuează **scădere** (valoare curentă - valoare)
+- `subtract(value)`: Atribuie o **valoare nouă** BigInteger-ului curent și efectuează **scădere** (valoare curentă - valoare)
 
 ```java live
 BigInteger number = BigInteger.valueOf(123);
 number = number.subtract(BigInteger.TEN);
 System.out.println(number);
 ```
-- `multiply(value)` : Atribuie o **valoare nouă** BigInteger-ului curent și efectuează **multiplicare** (valoare curentă * valoare)
+- `multiply(value)`: Atribuie o **valoare nouă** BigInteger-ului curent și efectuează **multiplicare** (valoare curentă * valoare)
 
 ```java live
 BigInteger number = BigInteger.valueOf(123);
 number = number.multiply(BigInteger.TEN);
 System.out.println(number);
 ```
-- `divide(value)` : Atribuie o **valoare nouă** BigInteger-ului actual și efectuează **împărțire** (valoare curentă / valoare)
+- `divide(value)`: Atribuie o **valoare nouă** BigInteger-ului actual și efectuează **împărțire** (valoare curentă / valoare)
 
 ```java live
 BigInteger number = BigInteger.valueOf(123);
 number = number.divide(BigInteger.TEN);
 System.out.println(number);
 ```
-- `pow(value)` : Atribuie o **valoare nouă** BigInteger-ului curent și efectuează **ridicarea la putere** (valoarea curentă ^ valoare)
+- `pow(value)`: Atribuie o **valoare nouă** BigInteger-ului curent și efectuează **ridicarea la putere** (valoarea curentă ^ valoare)
 
 ```java live
 BigInteger number = BigInteger.valueOf(123);

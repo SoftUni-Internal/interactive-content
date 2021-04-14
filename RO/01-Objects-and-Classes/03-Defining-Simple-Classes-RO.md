@@ -171,7 +171,7 @@ public class Car {
 
 [slide hideTitle]
 
-# Crearea unui Obiect
+# Crearea Unui Obiect
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/interactive-java-fundamentals-objects-and-classes-20-creating-an-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -205,7 +205,7 @@ class Program {
 
 O metodă specială, executată în timpul creării unui obiect, care **setează starea inițială a obiectului**.
 
-Numele constructor-ului este **același cu numele clasei** .
+Numele constructor-ului este **același cu numele clasei**.
 
 Constructor-ul **poate să aibă parametri**, fapt care se folosește pentru **inițializarea câmpurilor**.
 
@@ -259,7 +259,7 @@ După aceea, veți primi un **nume de oraș**.
 ### Ieșire
 
 Imprimați numai studenții care sunt din orașul dat, în următorul format:
-"\{firstName\} \{lastName\} is \{age\} years old."
+"\{**firstName**\} \{**lastName**\} **is** \{**age**\} **years old.**"
 
 ## Exemple
 
@@ -505,7 +505,7 @@ Definiți o clasă **Song**, care conține următoarele informații despre melod
 - Pe prima linie veți primi **numărul de melodii - N**.
 
 - Pe următoarele linii N veți primi date în următorul format:
-"\{typeList\}\_\{name\}\_\{time\}".
+"\{**typeList**\}\_\{**name**\}\_\{**time**\}".
 
 - Pe ultima linie veți primi **Type List** sau **"all"**.
 

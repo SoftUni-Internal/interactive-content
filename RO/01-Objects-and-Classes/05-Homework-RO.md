@@ -18,17 +18,17 @@ Clasa ar trebui să aibă un constructor și următoarele metode:
 - **rename** (new title) - modificați titlul articolului
 - **override ToString** - tipărește articolul în următorul format: 
 
-"\{title\} - \{content\}:\{author\}"
+"\{**title**\} **-** \{**content**\}**:**\{**author**\}"
 
-Scrieți un program care citește un articol în următorul **format** "\{title\}, \{content\}, \{author\}". 
+Scrieți un program care citește un articol în următorul **format** "\{**title**\}, \{**content**\}, \{**author**\}". 
 
 Pe linia următoare, veți obține un **număr n**.
 
 Pe **următoarele n linii**, veți primi una dintre următoarele **comenzi**:
 
-- "Edit: \{new content\}" 
-- "ChangeAuthor: \{new author\}" 
-- "Rename: \{new title\}". 
+- "**Edit:** \{**new content**\}" 
+- "**ChangeAuthor:** \{**new author**\}" 
+- "**Rename:** \{**new title**\}"
 
 La final, **tipăriți articolul final**.
 
@@ -138,7 +138,7 @@ The haunting of hill house - better content2:  Shirley Jackson
 ## Descriere
 Folosind **clasa Person**, scrieți un program care citește de pe consolă **N linii de informații personale** și apoi **imprimă toate persoanele** a căror **vârstă este mai mare de 30 de ani** în următorul **format**:
 
-"\{name\} - \{age\}"
+"\{**name**\} **-** \{**age**\}"
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -342,15 +342,15 @@ Anntoanette - 39
 [task-description]
 
 ## Descriere
-Schimbați programul "Articles", astfel încât să puteți stoca o **listă de articole**.
+Schimbați programul "**Articles**", astfel încât să puteți stoca o **listă de articole**.
 
 Nu veți mai avea nevoie de metode (**cu excepția** metodei toString).
 
 Pe **prima linie**, veți primi un **număr n**.
 
-Pe următoarele **n linii**, veți primi câteva **articole în același format ca sarcina anterioară** ("\{title\}, \{content\}, \{author\}").
+Pe următoarele **n linii**, veți primi câteva **articole în același format ca sarcina anterioară** ("\{**title**\}, \{**content**\}, \{**author**\}").
 
-În cele din urmă, veți primi unul dintre cele **trei criterii**: "title", "content", "author".
+În cele din urmă, veți primi unul dintre cele **trei criterii**: "**title**", "**content**", "**author**".
 
 Trebuie să ordonați articolele **alfabetic** pe baza comenzii și să le imprimați sortate după **criteriile** date.
 
@@ -494,10 +494,10 @@ Fiecare elev trebuie să aibă **first name** (șir), **Last name** (șir) și *
 ### Intrare
 
 - Prima linie va fi un **număr n**
-- Următoarele **n linii** veți primi informații despre elev în **formatul** "\{first name\} \{second name\} \{grade\}"
+- Următoarele **n linii** veți primi informații despre elev în **formatul** "\{**first name**\} \{**second name**\} \{**grade**\}"
 
 ### Ieșire
--Tipăriți fiecare elev în următorul format "\{first name\} \{second name\}: \{grade\}"
+-Tipăriți fiecare elev în următorul format "\{**first name**\} \{**second name**\}**:** \{**grade**\}"
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -621,23 +621,25 @@ Amias Mathews: 2.30
 
 [task-description]
 ## Descriere
-Până când primiți **comanda** "`End`", veți primi linii de intrare în format:
+Până când primiți **comanda** "**End**", veți primi linii de intrare în format:
 
-- \{typeOfVehicle\} \{model\} \{color\} \{horsepower\}
+- \{**typeOfVehicle**\} \{**model**\} \{**color**\} \{**horsepower**\}
 
-După comanda "End", veți începe să primiți **modele de vehicule**. **Imprimați pentru fiecare vehicul primit** datele sale în **format**:
+După comanda "**End**", veți începe să primiți **modele de vehicule**. 
 
-Type: \{typeOfVehicle\}
+**Imprimați pentru fiecare vehicul primit** datele sale în **format**:
 
-Model: \{modelOfVehicle\}
+"**Type:** \{**typeOfVehicle**\}
 
-Color: \{colorOfVehicle\}
+**Model:** \{**modelOfVehicle**\}
 
-Horsepower: \{horsepowerOfVehicle\}
+**Color:** \{**colorOfVehicle**\}
+
+**Horsepower:** \{**horsepowerOfVehicle**\}"
 
 Când primiți comanda "Close the Catalogue", **imprimați puterea medie** pentru mașini și camioane în **format**:
 
-"\{typeOfVehicles\} have an average horsepower of \{averageHorsepower\}."
+"\{**typeOfVehicles**\} **have an average horsepower of** \{**averageHorsepower**\}."
 
 Puterea medie este **calculată** prin **împărțirea sumei de cai putere pentru toate vehiculele de acel tip la numărul total de vehicule de același tip**.
 
@@ -865,7 +867,7 @@ Ultimul element va fi un de tip **număr întreg** și reprezintă **vârsta per
 
 Dacă primiți o persoană al cărei **ID l-ați primit deja**, atunci **actualizați** numele și vârsta ID-ului respectiv cu cele **ale noii persoane**.
 
-Când primiți **comanda** "End", **imprimați toate persoanele**.
+Când primiți **comanda** "**End**", **imprimați toate persoanele**.
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -942,4 +944,3 @@ Margie with ID: 17098 is 46 years old.
 [/tests]
 [/code-task]
 [/slide]
-

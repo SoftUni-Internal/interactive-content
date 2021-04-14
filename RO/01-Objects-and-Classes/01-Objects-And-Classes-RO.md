@@ -1,4 +1,4 @@
-# Obiecte și clase
+# Obiecte și Clase
 
 
 [slide hideTitle]
@@ -17,11 +17,11 @@ Obiectele reprezintă **subiecți din viața reală**.
 
 Un obiect are:
 
-- **stare**, care este reprezentată de **câmpuri**
+- **Stare**, care este reprezentată de **câmpuri**
 
-- **comportament**, care este reprezentat de **metode** - un obiect interacționează cu un alt obiect prin invocarea metodelor
+- **Comportament**, care este reprezentat de **metode** - un obiect interacționează cu un alt obiect prin invocarea metodelor
 
-- **identitate**, care dă un **nume unic** unui obiect
+- **Identitate**, care dă un **nume unic** unui obiect
 
 Exemplu din viața reală: câinii au stări - culoare, nume, rasă; și comportamente - lătrat, mâncat, dat din coadă.
 
