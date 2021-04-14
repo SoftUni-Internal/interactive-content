@@ -58,7 +58,7 @@ If a **negative amount of gold** is given in the command, print:
 
 "**Gold added cannot be a negative number!**"
 
-After receiving the End command if there are any existing settlements on your list of targets, you need to print all of them, sorted by the gold in their possession in descending order, and then by their name in ascending order, in the following format: 
+If the given gold is a **positive number**, increase the gold reserves of the town by the given amount and print the following message:
 
 "\{**gold added**\} **gold added to the city treasury.** \{**town**\} **now has** \{**total gold**\} **gold.**"
 
