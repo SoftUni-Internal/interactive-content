@@ -102,9 +102,6 @@ We print each item.
 [hints]
 [hint]
 We have three matches:
-"\#Fish\#24/12/20\#8500\#"
-"\#Ice Cream\#03/10/21\#9000\#"
-"\|Milk\|05/09/20\|2000\|"
 
 The total calories are 8500 + 9000 + 2000 = 19500, which means you have food for a total of 9 days.
 [/hint] 
@@ -120,7 +117,6 @@ The total calories are 8500 + 9000 + 2000 = 19500, which means you have food for
 [hint]
 There are no matches, which means you have no food.
 
-This text "\#Invalid food\#19/03/20\#450" is not a match, since it does not have a "\#" at the end.
 [/hint] 
 [/hints] 
 

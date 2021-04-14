@@ -102,9 +102,6 @@ Tipărim fiecare articol.
 [hints]
 [hint]
 Avem trei potriviri în total:
-"\#Fish\#24/12/20\#8500\#"
-"\#Ice Cream\#03/10/21\#9000\#"
-"\|Milk\|05/09/20\|2000\|"
 
 Caloriile totale sunt 8500 + 9000 + 2000 = 19500, ceea ce înseamnă că aveți alimente pentru un total de 9 zile.
 [/hint] 
@@ -121,7 +118,7 @@ Caloriile totale sunt 8500 + 9000 + 2000 = 19500, ceea ce înseamnă că aveți 
 [hint]
 Nu există potriviri, ceea ce înseamnă că nu ai mâncare.
 
-Acest text "\#Invalid food\#19/03/20\#450" nu este o potrivire, deoarece nu are  "\#" la sfârșit.
+
 [/hint] 
 [/hints]
 
