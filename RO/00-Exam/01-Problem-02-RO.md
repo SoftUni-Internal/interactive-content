@@ -76,18 +76,18 @@ Calculați **caloriile totale ale tuturor produselor alimentare** din șir și a
 
 [hints]
 [hint]
-Avem trei meciuri în total:
+Avem **trei** meciuri în total:
 
-"\#Bread\#19/03/21\#4000\#": bread
-"\|Apples\|08/10/20\|200\|": apples
-"\|Carrots\|06/08/20\|500\|": carrots
+- "\#**Bread**\#**19/03/21**\#**4000**\#": bread
+- "\|**Apples**\|**08/10/20**\|**200**\|": apples
+- "\|**Carrots**\|**06/08/20**\|**500**\|": carrots
 [/hint] 
 [hint]
-Suma caloriilor lor este de 4700.
-Deoarece aveți nevoie de 2000kcal pe zi, împărțiți 4700/2000, ceea ce înseamnă că acest aliment va dura 2 zile.
+Suma caloriilor lor este de **4700**.
+Deoarece aveți nevoie de **2000kcal** pe zi, **împărțiți** 4700/2000, ceea ce înseamnă că acest aliment va dura **2 zile**.
 [/hint] 
 [hint]
-Tipărim fiecare articol.
+**Tipărim** fiecare articol.
 [/hint] 
 [/hints]
 
@@ -104,11 +104,13 @@ Tipărim fiecare articol.
 
 [hints]
 [hint]
-Avem trei potriviri în total:
-"\#Fish\#24/12/20\#8500\#"
-"\#Ice Cream\#03/10/21\#9000\#"
-"\|Milk\|05/09/20\|2000\|"
-Caloriile totale sunt 8500 + 9000 + 2000 = 19500, ceea ce înseamnă că aveți alimente pentru un total de 9 zile.
+Avem **trei** potriviri în total:
+
+- "\#**Fish**\#**24/12/20**\#**8500**\#"
+- "\#**Ice Cream**\#**03/10/21**\#**9000**\#"
+- "\|**Milk**\|**05/09/20**\|**2000**\|"
+
+Caloriile **totale** sunt **19500** (8500 + 9000 + 2000), ceea ce înseamnă că aveți alimente pentru un total de **9 zile**.
 [/hint] 
 [/hints]
 
@@ -120,9 +122,9 @@ Caloriile totale sunt 8500 + 9000 + 2000 = 19500, ceea ce înseamnă că aveți 
 
 [hints]
 [hint]
-Nu există potriviri, ceea ce înseamnă că nu ai mâncare.
+**Nu există potriviri**, ceea ce înseamnă că nu ai mâncare.
 
-Acest text "\#Invalid food\#19/03/20\#450" nu este o potrivire, deoarece nu are  "\#" la sfârșit.
+"\#**Invalid food**\#**19/03/20**\#**450**" nu este o potrivire, deoarece **nu are**  "\#" la sfârșit.
 [/hint] 
 [/hints]
 

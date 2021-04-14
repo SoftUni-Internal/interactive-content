@@ -76,19 +76,19 @@ Calculate **the total calories of all food items** from the string, and then
 
 [hints]
 [hint]
-We have three matches in total: 
+We have **three** matches in total: 
 
-"\#Bread\#19/03/21\#4000\#": bread
-"\|Apples\|08/10/20\|200\|": apples
-"\|Carrots\|06/08/20\|500\|": carrots
+- "\#**Bread**\#**19/03/21**\#**4000**\#": bread
+- "\|**Apples**\|**08/10/20**\|**200**\|": apples
+- "\|**Carrots**\|**06/08/20**\|**500**\|": carrots
 [/hint] 
 [hint]
-The sum of their calories is 4700.
+The **sum** of their calories is **4700**.
 
-Since you need 2000kcal a day, you divide 4700/2000, which means that this food will last for 2 days.
+Since you need **2000kcal** a day, you **divide** 4700/2000, which means that this food will last for **2 days**.
 [/hint] 
 [hint]
-We print each item. 
+We **print** each item. 
 [/hint] 
 [/hints] 
 
@@ -105,13 +105,13 @@ We print each item.
 
 [hints]
 [hint]
-We have three matches:
+We have **three** matches:
 
-"\#Fish\#24/12/20\#8500\#"
-"\#Ice Cream\#03/10/21\#9000\#"
-"\|Milk\|05/09/20\|2000\|"
+- "\#**Fish**\#**24/12/20**\#**8500**\#"
+- "\#**Ice Cream**\#**03/10/21**\#**9000**\#"
+- "\|**Milk**\|**05/09/20**\|**2000**\|"
 
-The total calories are 8500 + 9000 + 2000 = 19500, which means you have food for a total of 9 days.
+The **total** calories are **19500** (8500 + 9000 + 2000), which means you have food for a total of **9 days**.
 [/hint] 
 [/hints] 
 
@@ -123,9 +123,9 @@ The total calories are 8500 + 9000 + 2000 = 19500, which means you have food for
 
 [hints]
 [hint]
-There are no matches, which means you have no food.
+There are **no matches**, which means you have no food.
 
-This text "\#Invalid food\#19/03/20\#450" is not a match, since it does not have a "\#" at the end.
+"\#**Invalid food**\#**19/03/20**\#**450**" is not a match, since it does **not** have a "\#" at the end.
 [/hint] 
 [/hints] 
 
