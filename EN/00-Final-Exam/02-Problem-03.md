@@ -28,7 +28,7 @@ function adapter(input, code) {
 On the first line of the input, you will receive an **integer** "**n**" - representing the number of pieces that you will initially have. 
 
 On the next "**n**" lines, you will receive the title of each piece, followed by its **composer and key**, separated by "\|" in the following format: 
-**
+
 "\{**piece**}\|\{**composer**\}\|\{**key**\}"
 
 Then, you will receive **different commands**, each on a new line, separated by "\|", until the "**Stop**" command is given: 
