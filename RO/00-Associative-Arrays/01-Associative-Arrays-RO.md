@@ -10,9 +10,9 @@ Matricile  asociative sunt colecții care conțin parametri **Key** și **Value*
 
 Un obiect este folosit ca **cheie** (index) pentru un alt obiect (**valoare**). 
 
-Acestea **nu pot ** fi ** tipuri primitive** așa cum sunt int, double, boolean, etc. 
+Acestea **nu pot** fi **tipuri primitive** așa cum sunt int, double, boolean, etc. 
 
-Acestea  **ar trebui specificate **  **clasa învelitoare** echivalenta: Integer, Double, Boolean, etc. 
+Acestea  **ar trebui specificate**  **clasa învelitoare** echivalenta: Integer, Double, Boolean, etc. 
 
 **Tipul de cheie și valoare** pot fi **la fel sau diferite**, în funcție de caz.
 
@@ -21,7 +21,7 @@ Un map nu **nu poate conține chei dublicate**. Fiecare **cheie** poate fi asoci
 
 **Valorile diferitelor chei pot fi dublicate**. 
 
-**O cheie** poate stoca doar **o valoare **în aceeași instanță Map**. 
+**O cheie** poate stoca doar **o valoare** în aceeași instanță Map. 
 
 
 
@@ -39,17 +39,17 @@ De exemplu:
 [/slide]
 
 [slide hideTitle]
-# Colecții de perechi Cheie-Valoare
+# Colecții de Perechi Cheie-Valoare
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/RO/interactive-java-fundamentals-associative-arrays-5-collections-of-key-and-value-pairs-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Colecțiile API din Java conțin câteva **implementări** ale Map, care permit conținutului unui Mapsă fie văzut ca:
 
-- un set de chei
+- Un set de chei
 
-- o colecție de valori
+- O colecție de valori
 
-- set de perechi  cheie-valoare
+- Set de perechi cheie-valoare
 
 Cele mai folosite **implementări Map** sunt `HashMap`, `LinkedHashMap` și `TreeMap`. 
 
@@ -98,7 +98,7 @@ public class Main {
 
 Pentru a inițializa un Map:
 
-- Specificați  **tipul generic** de Chei și Valoare între paranteze unghiulare `<>`, separate prin virgulă și un spațiu **, **
+- Specificați  **tipul generic** de Chei și Valoare între paranteze unghiulare `<>`, separate prin virgulă și un spațiu `,`
 
 - Setați **numele** map-ului, care ar trebui să fie suficient de **descriptiv** pentru a ne ajuta să înțelegem ce anume **reprezintă cheia și valoarea**. 
 
@@ -124,7 +124,7 @@ Este important să știți că odată setate, tipurile  aferente  **cheii** și 
 
 
 [slide hideTitle]
-# Metode incorporate
+# Metode Incorporate
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/RO/interactive-java-fundamentals-associative-arrays-6-7-8-9-built-in-methods-demo-hashmap-put-and-remove-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -143,7 +143,7 @@ airplanes.put("Boeing 737", 180);
 System.out.println(airplanes.get("Boeing 737"));
 ```
 
-- `putIfAbsent(K key, V value)` - Se folosește pentru   **adăugarea de elemente** (inserarea de înregistrăi), în cazul **cheia** specificată **nu este în colecție**.
+- `putIfAbsent(K key, V value)` - Se folosește pentru  **adăugarea de elemente** (inserarea de înregistrăi), în cazul **cheia** specificată **nu este în colecție**
 
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -152,7 +152,9 @@ airplanes.putIfAbsent("Boeing 737", 100);
 System.out.println(airplanes.get("Boeing 737"));
 ```
 
-- `get(K key)` -Se  folosește pentru **a accesa o valoare** din Map, utilizănd cheia acesteia. **Returnează** obiectul **Value**.
+- `get(K key)` - Se  folosește pentru **a accesa o valoare** din Map, utilizănd cheia acesteia
+
+**Returnează** obiectul **Value**.
 
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -190,7 +192,7 @@ airplanes.put("Airbus A320", 150);
 System.out.println(airplanes.size());
 ```
 
-- `containsKey(K key)` - Verifică dacp Map-ul **conține boiecul cheie specificat**. Returnează o valoare booleană.
+- `containsKey(K key)` - Verifică dacp Map-ul **conține boiecul cheie specificat**. Returnează o valoare booleană
 
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -200,7 +202,7 @@ if (airplanes.containsKey("Airbus A320")) {
 }
 ```
 
-- `containsValue(V value)` - Checks if the Map **contains the speficied Value object**. Returns a boolean value.
+- `containsValue(V value)` - Checks if the Map **contains the speficied Value object**. Returns a boolean value
 
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -284,7 +286,7 @@ for (Map.Entry<String, Double> entry : fruitsPrice.entrySet()) {
 
 
 [slide hideTitle]
-# Problemă cu soluție: Count Real Numbers
+# Problemă cu Soluție: Count Real Numbers
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/RO/interactive-java-fundamentals-associative-arrays-12-problem-and-solut-count-real-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

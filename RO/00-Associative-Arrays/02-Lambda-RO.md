@@ -19,7 +19,7 @@ Partea din **dreaptă** conține corpul metodei funcției lambda - **expresie** 
 
 Funcțiile Lambda sunt **metode inline** (funcții) care primesc parametri de intrare și returnează valori:
 
-In loc să scriem o funcție care acceptă, de exemplu, un parametru întreg `int a` și care apoi returnează dacă `a` este mai mare decât 5 sau nu. , еste posibil să scriem același lucru, folosind expresia lambda:
+In loc să scriem o funcție care acceptă, de exemplu, un parametru întreg `int a` și care apoi returnează dacă `a` este mai mare decât 5 sau nu., еste posibil să scriem același lucru, folosind expresia lambda:
 
 ```java
 (a -> a > 5)
@@ -42,13 +42,14 @@ static boolean function(int x) {
 }
 ```
 
-- Această funcție lambda `() -> 42` este echivalentă cu metoda care returnează întotdeauna `42` :
+- Această funcție lambda `() -> 42` este echivalentă cu metoda care returnează întotdeauna `42`:
 ```java
 static int function() { 
     return 42; 
 }
 ```
 Dacă funcția lambda cere mai multe de o ieșire, ar trebui să le introducem în paranteze `()`.
+
 Când nu avem niciun parametru, imprimăm doar paranteze goale `()`. Dacă avem mai mulți parametri, îi imprimăm între paranteze `()`, separați prin virgule.
 
 [/slide]

@@ -11,14 +11,14 @@ Java Stream  este o componentă care este capabilă de **iterația internă a el
 
 Un stream este o **secvență de obiecte** care suportă **diverse metode**.
 
-Stream-ul  **nu modifică structura de date originală**, dar oferă rezultate.
+Stream-ul **nu modifică structura de date originală**, dar oferă rezultate.
 
-Stream pipeline reprezintă un **lanț de stream sursă**, ** operațiuni intermediare**, și o **operațiune terminală**.
+Stream pipeline reprezintă un **lanț de stream sursă**, **operațiuni intermediare**, și o **operațiune terminală**.
 
 Un stream API are multe **operațiuni terminale** care agregă un flux într-un **tip** sau o **primitivă**:
 count()`
 
- `max()` 
+`max()` 
 
 `min()`
 
@@ -28,7 +28,7 @@ Aceste operații lucrează conform cu implementările predefinite.
 
 Se numește **operațiune terminală**, fiindcă pentru a obține valoarea minimă, de exemplu, trebuie să **traverseze valorile din interiorul fluxului** și să obținem rezultate.
 
- După ce obținem valoarea minimă, **nu este posibil pentru a-o converti înapoi în flux** pentru că valoarea minimă este doar o valoare.
+După ce obținem valoarea minimă, **nu este posibil pentru a-o converti înapoi în flux** pentru că valoarea minimă este doar o valoare.
 
 Cele mai multe dintre metode folosesc expresii lambda în stream.
 
@@ -36,7 +36,7 @@ Cele mai multe dintre metode folosesc expresii lambda în stream.
 
 
 [slide hideTitle]
-# Procesarea matricelor cu API flux
+# Procesarea Matricelor cu API Flux
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/RO/interactive-java-fundamentals-associative-arrays-19-20-21-processing-arrays-with-stream-api-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -71,7 +71,7 @@ int min = Arrays.stream(numbers)
 System.out.println(min);
 ```
 
-- `max()` - găsește și returnează cel mai **mare** element dintr-o colecție.
+- `max()` - găsește și returnează cel mai **mare** element dintr-o colecție
 ```java live
 int [] numbers = new int[]{15, 25, 35};
 int max = Arrays.stream(numbers)
@@ -178,9 +178,9 @@ System.out.println(average);
 
 [slide hideTitle]
 
-# Manipularea colecțiilor
+# Manipularea Colecțiilor
 
-Colecțiile pot fi **modificate** prin folosirea metodei `map()` .
+Colecțiile pot fi **modificate** prin folosirea metodei `map()`.
 
 Vedeți următorul exemplu:
 
@@ -205,7 +205,7 @@ for (String word : words) {
 
 [slide hideTitle]
 
-# Convertirea colecțiilor
+# Convertirea Colecțiilor
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/RO/interactive-java-fundamentals-associative-arrays-26-converting-collections-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -232,7 +232,7 @@ List<Integer> numbers = Arrays.stream(scanner.nextLine()
 
 [slide hideTitle]
 
-# Filtrarea colecțiilor
+# Filtrarea Colecțiilor
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/RO/interactive-java-fundamentals-associative-arrays-27-filtering-collections-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -489,7 +489,7 @@ products.entrySet()
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/RO/interactive-java-fundamentals-associative-arrays-32-33-using-functional-for-each-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Metoda  `forEach()` pentru a itera prin fiecare perechie dintr-un Map.
+Metoda `forEach()` pentru a itera prin fiecare perechie dintr-un Map.
 
 Aruncați o privire asupra exemplului de mai jos:
 
