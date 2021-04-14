@@ -754,7 +754,7 @@ for (int i = 0; i < result.length(); i++) {
 }
 ```
 
-**Delete** the characters as needed. You should not delete `>`
+**Delete** the characters as needed. You should not delete `>`.
 
 [/hint] 
 [hint]

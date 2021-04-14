@@ -663,7 +663,7 @@ Formatați răspunsul la **a doua zecimală**.
 
 [hints]
 [hint]
-You can define a separate `Vehicle` class with the following properties:
+Puteți defini o clasă `Vehicle` separată cu următoarele proprietăți:
 
 ```java
 public class Vehicle {
@@ -672,26 +672,27 @@ public class Vehicle {
   private String color;
   private int horsePower;
 
-  // Define getters and setters...
+  // Definiți getters și setters...
 
 }
 ```
 [/hint] 
 [hint]
-Override the default `toString` method, like so:
+Suprascrieți metoda `toString` implicită în următorul mod:
 
 ```java
 @Override
 public String toString() {
   return String.format("Type: %s\n" +
-      "Model: %s\n" +
-      "Color: %s\n" +
-      "Horsepower: %d", 
-      getType().toUpperCase().charAt(0) +
-          this.getType().substring(1), 
-      getModel(), 
-      getColor(), 
-      getHorsePower());
+    "Model: %s\n" +
+    "Color: %s\n" +
+    "Horsepower: %d", 
+    getType().toUpperCase().charAt(0) +
+      this.getType().substring(1), 
+    getModel(), 
+    getColor(), 
+    getHorsePower());
+}
 ```
 [/hint]
 [/hints] 

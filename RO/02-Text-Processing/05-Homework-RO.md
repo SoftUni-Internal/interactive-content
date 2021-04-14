@@ -33,14 +33,14 @@ Un **nume de utilizator valid**:
 
 [hints]
 [hint]
-Create a validator method:
+Creați o metodă de validare:
 
 ```java
 private static boolean validate(String username)
 ```
 [/hint] 
 [hint]
-Make sure you check the length first:
+Asigurați-vă că verificați lungimea mai întâi:
 
 ```java
 if (username.length() < 3 || username.length() > 16) {
@@ -49,14 +49,14 @@ if (username.length() < 3 || username.length() > 16) {
 ```
 [/hint] 
 [hint]
-Iterate through the characters with a for-loop:
+Iterați prin caractere cu o buclă for:
 
 ```java
 for (int i = 0; i < username.length(); i++)
 ```
 [/hint] 
 [hint]
-Use the built-in `isLetterOrDigit` method to validate each character:
+Utilizați metoda încorporată `isLetterOrDigit` pentru a valida fiecare caracter:
 
 ```java
 char symbol = username.charAt(i);
@@ -726,7 +726,7 @@ Aici veți găsi o explicație a procesului de **rezolvare**.
 
 [hints]
 [hint]
-Create a result `StringBuilder` and initialize the **power**:
+Creați un result `StringBuilder` și inițializați **power**:
 
 ```java
 Scanner sc = new Scanner(System.in);
@@ -737,7 +737,8 @@ int power = 0;
 ```
 [/hint] 
 [hint]
-**Increase** the **power** by the numeric values of the characters preceded by `>`:
+**Măriți** **puterea** cu valorile numerice ale caracterelor precedate de `>`:
+
 
 ```java
 for (int i = 0; i < result.length(); i++) {
@@ -752,11 +753,12 @@ for (int i = 0; i < result.length(); i++) {
 }
 ```
 
-**Delete** the characters as needed. You should not delete `>`
+**Eliminați** caracterele necesare. Nu trebuie să eliminați `>`.
 
 [/hint] 
 [hint]
-**Print** out the remaining string to the console:
+**Tipăriți** șirul rămas pe consolă:
+:
 
 ```java
 System.out.println(result);
