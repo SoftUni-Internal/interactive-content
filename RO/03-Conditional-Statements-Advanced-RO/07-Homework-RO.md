@@ -429,7 +429,7 @@ zero
 [code-task title="Sorted Numbers" taskId="pb-js-Conditions-Advanced-Sorted-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function sortedNumbers(firstNumber, secondNumber, thirdNumber) {
+function sortedNumbers(input) {
     // Scrieți codul dvs. aici
 }
 ```
