@@ -936,6 +936,7 @@ int secondLetterPosition = getPosition(secondLetter);
 ```
 
 **Add** or **subtract** the resulting numbers from total **sum**.
+[/hint] 
 [/hints] 
 
 ### Example

@@ -19,7 +19,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Creați  un program pentru a **calcula costul total** al diferitelor tipuri de mobilier cumpărat .
+Creați un program pentru a **calcula costul total** al diferitelor tipuri de mobilier cumpărat .
 
 Veți primi câteva linii de intrare **până când veți primi comanda** "Purchase".
 

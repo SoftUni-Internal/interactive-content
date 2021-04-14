@@ -932,6 +932,7 @@ int secondLetterPosition = getPosition(secondLetter);
 ```
 
 **Adăugați** sau **scădeți** numerele rezultate din **suma** totală.
+[/hint] 
 [/hints] 
 
 ### Exemplu
