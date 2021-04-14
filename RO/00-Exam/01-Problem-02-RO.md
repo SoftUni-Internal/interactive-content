@@ -78,9 +78,6 @@ Calculați **caloriile totale ale tuturor produselor alimentare** din șir și a
 [hints]
 [hint]
 Avem trei meciuri în total:
-"\#Bread\#19/03/21\#4000\#": bread
-"\|Apples\|08/10/20\|200\|": apples
-"\|Carrots\|06/08/20\|500\|": carrots
 [/hint] 
 [hint]
 Suma caloriilor lor este de 4700.
