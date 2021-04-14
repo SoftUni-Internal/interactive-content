@@ -47,7 +47,7 @@ Principalele **caracteristici** ale **șirurilor** sunt:
 
 [slide hideTitle]
 
-# Șirurile sunt imuabile
+# Șirurile Sunt imuabile
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/RO/interactive-java-fundamentals-text-processing-5-strings-are-immutable-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -82,7 +82,7 @@ Pentru a recapitula:
 [/slide]
 
 [slide hideTitle]
-# Inițializarea unui Șir
+# Inițializarea Unui Șir
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/RO/interactive-java-fundamentals-text-processing-6-initializing-a-string-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

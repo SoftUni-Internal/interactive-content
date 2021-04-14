@@ -14,7 +14,7 @@
 
 - Colecție de perechi Key și Value
 
-**2. Manipularea Șirurilor **
+**2. Manipularea Șirurilor**
 
 - Concatenarea șirului
 

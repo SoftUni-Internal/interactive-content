@@ -33,7 +33,7 @@ System.out.println(sb.capacity()); // 16
 [/slide]
 
 [slide hideTitle]
-# Utilizarea clasei StringBuilder
+# Utilizarea Clasei StringBuilder
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/RO/interactive-java-fundamentals-text-processing-26-using-stringbuilder-class-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

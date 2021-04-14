@@ -891,7 +891,9 @@ Intrarea provine de pe consolă ca o singură linie, ținând secvența șiruril
 
 Șirurile sunt separate de unul sau mai multe spații albe.
 
-Datele de intrare vor fi întotdeauna valabile și în formatul descris. Nu este nevoie să o verificați în mod explicit.
+Datele de intrare vor fi întotdeauna valabile și în formatul descris. 
+
+Nu este nevoie să o verificați în mod explicit.
 
 ### Ieșire
 Imprimați pe consolă un singur număr: suma totală a tuturor numerelor procesate rotunjită la două cifre după separatorul zecimal.
