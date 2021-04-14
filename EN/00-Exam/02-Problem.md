@@ -8,17 +8,17 @@
 
 # The Controller Class
 
-The business logic should be concentrated around several **commands**. 
+The business logic should consist of several **commands**. 
 
-You are given interfaces, which you have to implement in the correct classes.
+You are provided with interfaces to implement in the correct classes.
 
-**Note: The Controller class SHOULD NOT handle exceptions!**
+**Note: The Controller class SHOULD NOT handle exceptions.**
 
-**The tests are designed to expect exceptions, not messages!**
+**The tests are designed to expect exceptions, not messages.**
 
-The first interface is **Controller**.
+The first interface is called **Controller**.
 
- You must implement a **ControllerImpl** class, which implements the interface and implements all of its methods. 
+ You should include a **ControllerImpl** class, which implements the interface and all of its methods. 
  
  The given methods should have the following logic:
 
@@ -26,7 +26,7 @@ The first interface is **Controller**.
  
 There are several commands, which control the business logic of the application. 
  
-They are stated below.
+As stated:
 
 ## CreateDriver Command
 
@@ -36,7 +36,7 @@ They are stated below.
 
 **Functionality:**
 
-Creates a **Driver** with the given name and adds him it to the appropriate repository.
+Instantiates a **Driver** with the given name and adds them to the appropriate repository.
 
 The method should **return** the following message:
 
@@ -60,7 +60,7 @@ Creates a **Car** with the provided **model** and **horsepower** and addd it to 
 
 There are two types of Car: "**MuscleCar**" and "**SportsCar**".
 
-If the **Car** already exists in the appropriate repository, this should result in an **IllegalArgumentException** with the following message:
+If the **Car** already exists in the corresponding repository, this should result in an **IllegalArgumentException** with the following message:
 
 **"Car** \{**model**\} **is already created."**
 
@@ -77,7 +77,7 @@ If the **Car** is successfully created, the method should **return** the followi
 
 **Functionality:**
 
-Adds the given **Car** to the given **Driver**, if they exist. 
+Adds the given **Car** to the given **Driver**, if they are present in the repository. 
 
 If the **Driver does not exist** in the **DriverRepository**, this should result in an **IllegalArgumentException** with the message:
 
@@ -102,11 +102,11 @@ If the Car and the Driver exist, you should add the **Car** to the **Driver** an
 
 Adds a **Driver** to the **Race**.
 
-If the **Race does not exist** in the **RaceRepository**, this should result in an **IllegalArgumentException** with the message:
+If the **Race is not present** in the **RaceRepository**, this should result in an **IllegalArgumentException** with the message:
 
 - **"Race** \{**name**\} **could not be found."**
 
-If the **Driver does not exist** in the **DriverRepository**, this should result in an **IllegalArgumentException** with the message:
+If the **Driver is not present** in the **DriverRepository**, this should result in an **IllegalArgumentException** with the message:
 
 - **"Driver** \{**name**\} **could not be found."**
 
@@ -125,7 +125,7 @@ You should add the **Driver** to the **Race** and return the following message:
 
 Creates a **Race** with the given **name** and **laps** and adds it to the **RaceRepository**.
 
-If the **Race** with the given **name** already **exists**, throw an **IllegalArgumentException** with message:
+If the **Race** with the given **name** is already **present**, throw an **IllegalArgumentException** with message:
 
 - **"Race** \{**name**\} **is already created."**
 
@@ -147,11 +147,11 @@ To do this, you should sort all of the **Drivers**, in descending order,
 
 In the end, if everything is valid, **remove** this **Race** from the Race repository. 
 
-If the **Race does not exist** in **RaceRepository**, throw an **IllegalArgumentException** with the message:
+If the **Race is not present** in **RaceRepository**, throw an **IllegalArgumentException** with the message:
 
 - **"Race** \{**name**\} **could not be found."**
 
-If the participants are less than **3**, throw an **IllegalArgumentException** with thw message:
+If there are less than **3** participants, throw an **IllegalArgumentException** with the message:
 
 - **"Race** \{**race name**\} **cannot start with less than 3 participants."**
 
@@ -169,9 +169,9 @@ You should return the following message:
 
 # Input / Output
 
-You are provided with one interface, which will help with the correct execution process of your program. 
+You are provided with one interface, which should help with the correct execution process of your program. 
 
-The interface is called **Engine** and the class implementing this interface should read the input and when the program finishes, this class should print the output.
+The interface is called **Engine** and the class implementing this interface should read the input. When the program finishes, this class should print out the output.
 
 ## Input
 
@@ -187,9 +187,9 @@ End
 
 ## Output
 
-Print the output from each command when issued.
+Print out the output of each command when issued.
 
-If an exception is thrown during any of the commands' executions, print the exception message.
+If an exception is thrown during any of the commands, print the specified message.
 
 # Examples One
 

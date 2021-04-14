@@ -10,25 +10,25 @@
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/12-Java-OOP-Advanced-Final-Exam-Business-Logic.zip) **for this task.**
 
-- Upload **only the easterRaces** package in every task **except** in "**Unit Tests**"
+- Upload **only the easterRaces** package for every task **except** for "**Unit Tests**"
 - **Do not modify the interfaces or their packages**
 - Use **strong cohesion** and **loose coupling**
 - **Use inheritance and the provided interfaces wherever possible**
   * this includes **constructors, method parameters** and **return types**
-- **Do not** violate your **interface implementations** by adding **more public methods** in the specific class than the interface has defined
-- Make sure you have **no public fields** anywhere
+- **Do not** violate your **interface implementations** by adding **public methods** in the specific class than the interface has defined
+- Make sure there are **no public fields** 
 
 # Task 1: Structure (50 points)
 
-You are given **8** interfaces and you have to implement their functionalities in the **correct classes.**
+There are **8** interfaces - implement their functionalities in the **correct classes.**
 
-It is not required to implement your structure with **Engine, ConsoleReader, ConsoleWriter** and etc., however It is a good practice.
+It is not required to implement an **Engine, ConsoleReader, ConsoleWriter** etc., however It is a good practice.
 
 There are **3** types of entities and 3 repositories in the application: **Car, Driver, Race and a repository for each of them:**
 
 # Car
 
-**BaseCar is** a **base class** for any **type of Car** and it **should not be able to be instantiated**. 
+**BaseCar is** a **base class** for any **type of Car** and it **should not provide the option to be instantiated**. 
 
 ## Data
 
@@ -38,16 +38,16 @@ There are **3** types of entities and 3 repositories in the application: **Car, 
   * all models are unique
 
 - **horsePower - int**
-  * **every type** of car has a different range of valid horsepower. If the horsepower is not in the valid range, throw an **IllegalArgumentException** with message "**Invalid horse power:** \{**horsepower**\}**.**"
+  * **every type** of car has a different range of valid horsepower. If its horsepower is not in the valid range, throw an **IllegalArgumentException** with the message "**Invalid horse power:** \{**horsepower**\}**.**"
 
 - **cubicCentimeters - double**
-  * **every type of car has different cubic centimeters**
+  * **every type of car has a different value of cubic centimeters**
 
 ## Behavior
 
 `double calculatedRacePoints(int laps)`
 
-The **CalculateRacePoints** method calculates the points, won from the concrete **Race,** using this formula: 
+The **CalculateRacePoints** method calculates the points, won from the a **Race,** using this formula: 
 
 **cubic centimeters / horsepower * laps**
 
@@ -59,20 +59,20 @@ The **BaseCar** class should take the following values upon initialization:
 
 ## Child Classes
 
-There are several different types of **Car classes**: 
+There are several different types of **Car class**: 
 
 ### MuscleCar
 
-For this type of car, the **cubic centimeters are 5000.** 
+For this type of car, its **cubic centimeters should be set to 5000.** 
 
-The minimum **horsepower is 400**, while maximum **horsepower is 600**. 
+Its minimum **horsepower is 400**, its maximum **horsepower is 600**. 
 
 If you receive a horsepower value that is not in the given range, this should result in an IllegalArgumentException with the message: **"Invalid horse power:** \{**horsepower**\}**.**"
 
 ### SportsCar 
-For this type of car, the **cubic centimeters are 3000**. 
+For this type of car, its  **cubic centimeters should be set to 3000**. 
 
-The minimum **horsepower is 200**, while maximum **horsepower is 450**. 
+ITs minimum **horsepower is 200**, its maximum **horsepower is 450**. 
 
 If you receive a horsepower value that is not in the given range, this should result in an **IllegalArgumentException** with the message: **"Invalid horse power:** \{**horsepower**\}**.**"
 
@@ -83,27 +83,27 @@ If you receive a horsepower value that is not in the given range, this should re
 ## Data
 
 - **name - String**
-  * if the name **is null**, **empty** or less than **5 symbols**, throw an **IllegalArgumentException** with message "**Name** \{**name**\} **cannot be less than 5 symbols.**"
-  * the name is unique
+  * if the name **is null**, **empty** or less than **5 symbols**, throw an **IllegalArgumentException** with the message "**Name** \{**name**\} **cannot be less than 5 symbols.**"
+  * each name is unique
 - **car - Car**
 - **numberOfWins - int**
 - **canParticipate - boolean**
-  * the default behaviour is **false**
-  * the **Driver** can participate in race, **ONLY** if he has a **Car** (**Car** is not **null**)
+  * its default behaviour is **false**
+  * the **Driver** can participate in a race, **ONLY** if they have a **Car** (**Car** is not **null**)
 
 ## Behavior
 
 `void addCar(Car car)`
 
-This method adds the given **Car** to the **Driver**. 
+This method adds a given **Car** to a **Driver**. 
 
 If the car is **null**, throw an **IllegalArgumentException** with the message "**Car cannot be null.**"
 
-If the given **Car** is not **null**, set the current **Car** as the given one the **Driver** can participate in race.
+If the given **Car** is not **null**, set the current **Car** as one that the **Driver** can use in a race.
 
 `void winRace()`
 
-When the **Driver** wins a **Race**, the number of wins should be increased.
+When the **Driver** wins a **Race**, their number of wins should be increased.
 
 ## Constructor
 
@@ -119,23 +119,23 @@ A **Driver** should take the following values upon initialization:
 
 - **name - String**
   * if the name is **null**, **empty** or less than **5 symbols**, this should result in an **IllegalArgumentException** with the message "**Name** \{**name**\} **cannot be less than 5 symbols.**"
-  * the name is unique 
+  * each name is unique 
 - **laps - int** 
-  * if the laps are less than **1**, this should result in an **IllegalArgumentException** with the message "**Laps cannot be less than 1.**"
+  * if the reace laps are less than **1**, this should result in an **IllegalArgumentException** with the message "**Laps cannot be less than 1.**"
 - **drivers - a collection of Drivers**
 
 ## Behavior
 
 `void addDriver(Driver driver)`
 
-This method adds a **Driver** to the **Race**. if the **Driver** is valid. 
+This method adds a **Driver** to the **Race**. if the **Driver** is eligible. 
 
-If the Driver is not valid, this should result in an Exception with the appropriate message. 
+If the Driver is not eligible, this should result in an Exception with the appropriate message. 
 
 Exceptions are:
 
-- If the given **Driver** is null, this should result in an **IllegalArgumentException** with message: "**Driver cannot be null.**"
-- If the given **Driver cannot** participate in the **Race** (the **Driver** does not own a **Car**), this should result in an **IllegalArgumentException** with the message:  **"Driver** \{**driver name**\} **could not participate in race."**
+- If the specified **Driver** is null, this should result in an **IllegalArgumentException**, message: "**Driver cannot be null.**"
+- If the given **Driver cannot** participate in a **Race** (the **Driver** does not own a **Car**), this should result in an **IllegalArgumentException** with the message:  **"Driver** \{**driver name**\} **could not participate in race."**
 - If the **Driver** is already taking part in the **Race**, this should result in an **IllegalArgumentException** with the message:
 **"Driver** \{**driver name**\} **is already added in** \{**race name**\} **race."**
 
@@ -146,7 +146,7 @@ A **Racer** should take the following values upon initialization:
 
 # Repository
 
-The repository holds information about the entity.
+The repository holds information about each entity.
 
 ## Data
 
@@ -156,11 +156,11 @@ The repository holds information about the entity.
 
 `void add(T model)`
 
-Adds an entity in the collection.
+Adds an entry to the collection.
 
 `boolean remove(T model)`
 
-Removes an entity from the collection.
+Removes an entry from the collection.
 
 `T getByName(String name)`
 
