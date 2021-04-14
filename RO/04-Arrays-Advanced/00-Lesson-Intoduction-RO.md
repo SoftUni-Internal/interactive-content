@@ -8,18 +8,18 @@
 
 ## În această lecție veți învăța:
 
-**1. Operațiuni de bază**
+**1. Operații de bază**
 
-- Adăugare / eliminare la final - `push()`, `pop()`
-- Adăugare / eliminare la început - `unshift()`, `shift()`
+- Adăugarea/Eliminarea elementelor de la final - `push()`, `pop()`
+- Adăugarea/Eliminarea elementelor de la început - `unshift()`, `shift()`
 
 **2. Manipularea matricelor**
 
-- Folosind `slice()` și `splice()`
+- Utilizarea `slice()` și `splice()` pentru a manipula matrice
 
-**3. Parcurgerea și sortarea matricelor**
+**3. Mapping și sortarea matricelor**
 
-- `map()` și `filter()`
-- Folosind `sort()` pe **numere și șiruri**
+- Crearea de matrice noi prin `map()` și `filter()`
+- Utilizarea `sort()` pe **numere și șiruri**
 
 [/slide]
