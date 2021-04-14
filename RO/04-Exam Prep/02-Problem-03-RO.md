@@ -45,7 +45,7 @@ Dacă oricare dintre aceste două valori (populație sau aur) ajunge la zero, or
 
 Nu va exista niciun caz care să depășească numărul de persoane sau cantitatea de aur care a fost deja specificată pentru fiecare oraș.
 
-* Comandă: "****Prosper**\=\>\{**town**\}\=\>\{**gold**\}"
+* Comandă: "**Prosper**\=\>\{**town**\}\=\>\{**gold**\}"
 
 Indică creșterea economică în orașul dat, mărind trezoreria acestuia cu cantitatea specificată de aur.
 
