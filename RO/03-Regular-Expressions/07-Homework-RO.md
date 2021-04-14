@@ -53,10 +53,9 @@ Bought furniture:
 
 [hints]
 [hint]
-You can use [Regex101](https://regex101.com/) or [RegExr](https://regexr.com) to **test** your pattern in real time.
+Puteți utiliza [Regex101](https://regex101.com/) sau [RegExr](https://regexr.com) pentru a vă testa șablonul în timp real.
 
-
-Numai canapeaua și televizorul sunt valabile.
+În acest exemplu, numai **canapeaua** ("Sofa") și **televizorul** ("TV") sunt valabile.
 [/hint] 
 [hint]
 Pentru fiecare dintre ele **înmulțim** prețul cu cantitatea:
@@ -76,7 +75,7 @@ if (matcher.find()) {
 ```
 [/hint] 
 [hint]
-Imprimați rezultatul:
+**Imprimați** rezultatul:
 
 ```java
 System.out.println("Bought furniture:");
@@ -89,7 +88,7 @@ System.out.println(
     finalPrice));
 ```
 
-Remember to **format** the **final price** to the second digit after the decimal point.
+Nu uitați să **formatați** **prețul final** la a doua cifră după punctul zecimal. 
 [/hint] 
 [/hints] 
 
@@ -218,7 +217,7 @@ public class Main {
 [task-description]
 ## Descriere
 
-Creați  un program care procesează informații despre o cursă.
+Creați un program care procesează informații despre o cursă.
 
 Pe **prima linie** vi  se va oferi o **lista de participanți separați** prin ", ".
 

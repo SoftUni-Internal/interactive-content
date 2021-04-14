@@ -56,7 +56,7 @@ Note that all numbers should be **formatted** to the second digit after the deci
 [hint]
 You can use [Regex101](https://regex101.com/) or [RegExr](https://regexr.com) to **test** your pattern in real time.
 
-Only the **Sofa** and the **TV** are valid items, because they match all conditions.
+In this example, only the **Sofa** and the **TV** are valid items.
 [/hint] 
 [hint]
 For each one of them, we **multiply** the price by the quantity:
@@ -76,7 +76,7 @@ if (matcher.find()) {
 ```
 [/hint] 
 [hint]
-We print out the result:
+We **print** out the result:
 
 ```java
 System.out.println("Bought furniture:");
