@@ -906,8 +906,37 @@ Print out a single number: the total sum of all processed numbers, formatted to 
 | --- | --- |
 | A12b s17G | 330.00 |
 
-### Comments
-12\/1=12, 12+2=14, 17\*19=323, 323–7=316, 14+316=330
+[hints]
+[hint]
+Use a **regular expression** to split the input:
+
+```java
+String[] input = scanner.nextLine().split("\\s+");
+```
+[/hint] 
+[hint]
+Define a separate **method** for getting a character's alphabetic **position**:
+
+```java
+private static int getPosition(char c) {
+  char targetChar = Character.toLowerCase(c);
+  char initialChar = 'a';
+  int position = targetChar - initialChar + 1;
+
+  return (position);
+}
+```
+[/hint] 
+[hint]
+Utilize `getPosition` as follows:
+
+```java
+int firstLetterPosition = getPosition(firstLetter);
+int secondLetterPosition = getPosition(secondLetter);
+```
+
+**Add** or **subtract** the resulting numbers from total **sum**.
+[/hints] 
 
 ### Example
 | **Input** | **Output** |

@@ -901,8 +901,38 @@ Imprimați pe consolă un singur număr: suma totală a tuturor numerelor proces
 | --- | --- |
 | A12b s17G | 330.00 |
 
-### Comentarii
-12\/1=12, 12+2=14, 17\*19=323, 323–7=316, 14+316=330
+
+[hints]
+[hint]
+Utilizați o **expresie regulată** pentru a împărți intrarea:
+
+```java
+String[] input = scanner.nextLine().split("\\s+");
+```
+[/hint] 
+[hint]
+Definiți o **metodă** separată pentru a obține **poziția** alfabetică a unui simbol:
+
+```java
+private static int getPosition(char c) {
+  char targetChar = Character.toLowerCase(c);
+  char initialChar = 'a';
+  int position = targetChar - initialChar + 1;
+
+  return (position);
+}
+```
+[/hint] 
+[hint]
+Utilizați `getPosition` după cum urmează:
+
+```java
+int firstLetterPosition = getPosition(firstLetter);
+int secondLetterPosition = getPosition(secondLetter);
+```
+
+**Adăugați** sau **scădeți** numerele rezultate din **suma** totală.
+[/hints] 
 
 ### Exemplu
 |**Intrare**|**Ieșire** |
