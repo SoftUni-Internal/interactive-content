@@ -61,7 +61,7 @@ They are a way for programmers to write **notes** to themselves or other program
 
 We can use comments to give **better clarity** about what we are trying to **achieve** with our code.
 
-There are **multiple ways** do declare them.
+There are **multiple ways** to declare them.
 
 - Single-line comments
 
