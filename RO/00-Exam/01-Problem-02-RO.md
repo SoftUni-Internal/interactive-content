@@ -85,6 +85,21 @@ Imprimați mesajele corespunzătoare, descrise mai sus.
 |  | Best room: 6 |
 |  |  |
 
+[hints]
+[hint]
+Inițializați health points (**100**) și bitcoins (**0**), dar și numărul de camere atinse (**0** la început).
+[/hint] 
+[hint]
+Împărțiți comenzile din intrare, iar apoi parcurgeți-le pe fiecare folosind o buclă for.
+[/hint] 
+[hint]
+Înăuntrul buclei for, creați o instrucțiune if-else pentru fiecare tip de comandă sau monstru.
+[/hint] 
+[hint]
+Pentru fiecare condiție, modificați datele și/sau tipăriți ieșirea corespunzătoare.
+[/hint] 
+[/hints] 
+
 ## Al Doilea Exemplu
 
 | **Intrare** | **Ieșire** |

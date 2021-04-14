@@ -85,6 +85,21 @@ Print the corresponding messages, described above.
 |  | Best room: 6 |
 |  |  |
 
+[hints]
+[hint]
+Initialize the health points (**100**) and bitcoins (**0**), as well as the number of rooms reached (**0** at the beginning).
+[/hint] 
+[hint]
+Split the commands and go through each one using a for loop.
+[/hint] 
+[hint]
+Inside the for loop, create if-else statements for each command type or monster.
+[/hint] 
+[hint]
+For every condition, modify the data and/or print the corresponding output.
+[/hint] 
+[/hints] 
+
 ## Examples Two
 
 | **Input** | **Output** |

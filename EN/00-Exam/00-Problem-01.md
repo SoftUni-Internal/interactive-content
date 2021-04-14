@@ -67,17 +67,21 @@ In the end, round the bonus points up to **the next whole number**.
 | 16 |  |
 | 20 |  |
 
-### Comments
+[hints]
+[hint]
+First, we receive the **number of students** enrolled in the course - **5**.
 
-First, we receive the **number of students** enrolled in the course - 5.
+The total **count** of the **lectures** is **25** and the initial **bonus** is **30**.
+[/hint] 
+[hint]
+Then we **calculate** the **bonus** of the student with **12** attendances, which is **16.8**.
 
-The total count of the lectures is 25 and the initial bonus is 30.
-
-Then we calculate the bonus of the student with 12 attendances, which is 16.8.
-
-We continue to calculate **each student's bonus points**. 
-
+We **continue** to calculate **each student's bonus points**.
+[/hint] 
+[hint]
 The one **with** 24 **attendances** has the **highest bonus** - 33.6 (34 **rounded**), so we print the corresponding message to the console.
+[/hint] 
+[/hints] 
 
 ## Example Two
 | **Input** | **Output** |

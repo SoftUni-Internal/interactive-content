@@ -70,17 +70,21 @@ La final, rotunjiți punctele bonus până la **următorul număr întreg**.
 | 16 |  |
 | 20 |  |
 
-### Comentarii
+[hints]
+[hint]
+În primul rând, primim **numărul de studenți** înscriși la curs - **5**.
 
-În primul rând, primim **numărul de studenți** înscriși la curs - 5.
+**Numărul** total al **prelegerilor** este de **25**, iar **bonusul** inițial este de **30**.
+[/hint] 
+[hint]
+Apoi **calculăm bonusul** studentului cu **12** prezențe, adică **16,8**.
 
-Numărul total al prelegerilor este de 25, iar bonusul inițial este de 30.
-
-Apoi calculăm bonusul studentului cu 12 prezențe, adică 16,8.
-
-Continuăm să calculăm **punctele bonus ale fiecărui student**.
-
+**Continuăm** să calculăm **punctele bonus ale fiecărui student**.
+[/hint] 
+[hint]
 Cel **cu** 24 **prezențe** are **cel mai mare bonus** - 33,6 (34 **rotunjit**), așa că imprimăm mesajul corespunzător pe consolă.
+[/hint] 
+[/hints] 
 
 ## Al Doilea Exemplu
 | **Intrare** | **Ieșire** |

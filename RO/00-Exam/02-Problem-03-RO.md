@@ -49,6 +49,21 @@ După ce primiți "**Craft!**" tipăriți articolele din inventar, separate prin
 | Drop - Wood |  |
 | Craft! |  |
 
+[hints]
+[hint]
+Împărțiți comenzile și obiectele pentru fiecare comandă de lângă cratimă, înconjurată de spații: **" - "**
+[/hint] 
+[hint]
+Creați o condiție care verifică dacă șirul obiectelor conține două puncte (**":"**), iar apoi îl împarte.
+[/hint] 
+[hint]
+Parcurgeți fiecare comandă/obiecte și modificați inventarul în mod corespunzător.
+[/hint] 
+[hint]
+La final, tipăriți inventarul pe consolă folosind metoda `String.join(delimiter, inventory)`.
+[/hint] 
+[/hints] 
+
 ## Al Doilea Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |

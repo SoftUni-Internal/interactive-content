@@ -47,6 +47,21 @@ After receiving "**Craft!**" print the items in your inventory, separated by ", 
 | Drop - Wood |  |
 | Craft! |  |
 
+[hints]
+[hint]
+Split the commands and items for each command by the hyphen, surrounded by spaces: **" - "**
+[/hint] 
+[hint]
+Create a condition that checks if the items' string contains a colon (**":"**), and splits it.
+[/hint] 
+[hint]
+Loop through each command/item and modify the inventory accordingly.
+[/hint] 
+[hint]
+At the end, print the inventory to the console using the `String.join(delimiter, inventory)` method.
+[/hint] 
+[/hints] 
+
 ## Examples Two
 | **Input** | **Output** |
 | --- | --- |
