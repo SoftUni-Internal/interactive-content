@@ -91,6 +91,31 @@ La primirea comenzii "**Stop**", trebuie să imprimați toate piesele din colec�
 ||Moonlight Sonata \-\> Composer: Beethoven, Key: C\# Major|
 ||Sonata No.2 \-\> Composer: Chopin, Key: B Minor|
 
+[hints]
+[hint]
+După ce primiți **piesele inițiale** și informațiile despre ele, începeți să primiți **comenzi**.
+[/hint] 
+[hint]
+**Primele două** comenzi sunt **adăugarea** unei piese la colecție. 
+
+Deoarece piesele **nu se află** în colecție, le adăugați.
+[/hint] 
+[hint]
+Prin a treia comandă, care este și "**add**", **încercați să adăugați o piesă** care este deja în colecție, astfel încât să **imprimați mesajul corespunzător**, dar nu adăugați bucată.
+[/hint] 
+[hint]
+După aceea, primiți comanda "**remove**" command. 
+
+Ultima comandă **necesită schimbarea cheii unei piese**.
+
+Deoarece piesa este **prezentă în colecție**, îi **modificați** cheia.
+[/hint] 
+[hint]
+Apoi, primiți comanda "**Stop**".
+
+**Imprimați informațiile despre piese**, ați sortat modul descris mai sus și programul se încheie.
+[/hint] 
+[/hints] 
 
 ## Exemplul Doi
 
