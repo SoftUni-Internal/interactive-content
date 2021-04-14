@@ -33,7 +33,7 @@ Here is a screenshot of the IntelliJ IDEA IDE for Java:
 
 Let us begin by installing **IntelliJ IDEA** (Community, version 2019.2.1, latest as of August 2019). 
 
-Installing later versions of IntelliJ IDEA (like IntelliJ IDEA 2020 and IntelliJ IDEA 2021) should be very similar.
+Installing newer versions of IntelliJ IDEA (like IntelliJ IDEA 2020 and IntelliJ IDEA 2021) should be very similar.
 
 The **Community** version of IntelliJ IDEA is distributed freely by Jetbrains and can be downloaded [here](https://www.jetbrains.com/idea/download/).
 
