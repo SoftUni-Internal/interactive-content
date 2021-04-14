@@ -37,7 +37,7 @@ In computer programming, a **naming convention** is a set of **rules** which we 
 
 The naming convention used in Java is called ***"camelCase"***.
 
-Diffferent naming conventions are used in different languages. Some are: PascalCase, snake_case. 
+Different naming conventions are used in different languages. Some are: PascalCase, snake_case. 
 
 **camelCase** combines words by:
 * Capitalizing all words following the first one
