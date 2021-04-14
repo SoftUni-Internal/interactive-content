@@ -51,10 +51,47 @@ Bought furniture:
 | >Invalid<<!5 | TV |
 | Purchase | Total money spent: 2436.69 |
 
-### Comentarii
-- Numai canapeaua și televizorul sunt valabile
-- Pentru fiecare dintre ele înmulțim prețul cu cantitatea
-- Imprimați rezultatul
+[hints]
+[hint]
+You can use [Regex101](https://regex101.com/) or [RegExr](https://regexr.com) to **test** your pattern in real time.
+
+
+Numai canapeaua și televizorul sunt valabile.
+[/hint] 
+[hint]
+Pentru fiecare dintre ele **înmulțim** prețul cu cantitatea:
+
+```java
+if (matcher.find()) {
+  String name = matcher.group("name");
+  double price = 
+    Double.parseDouble(matcher.group("price"));
+  int quantity = 
+    Integer.parseInt(matcher.group("quantity"));
+
+  furniture.add(name);
+
+  finalPrice += price * quantity;
+}
+```
+[/hint] 
+[hint]
+Imprimați rezultatul:
+
+```java
+System.out.println("Bought furniture:");
+
+furniture
+  .forEach(piece -> System.out.println(piece));
+
+System.out.println(
+  String.format("Total money spent: %.2f", 
+    finalPrice));
+```
+
+Remember to **format** the **final price** to the second digit after the decimal point.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]

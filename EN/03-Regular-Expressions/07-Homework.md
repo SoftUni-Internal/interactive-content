@@ -52,10 +52,46 @@ Note that all numbers should be **formatted** to the second digit after the deci
 | >Invalid<<!5 | TV |
 | Purchase | Total money spent: 2436.69 |
 
-### Comments
-- Only the **Sofa** and the **TV** are valid items 
-- For each one of them, we **multiply** the price by the quantity
-- We print out the result
+[hints]
+[hint]
+You can use [Regex101](https://regex101.com/) or [RegExr](https://regexr.com) to **test** your pattern in real time.
+
+Only the **Sofa** and the **TV** are valid items, because they match all conditions.
+[/hint] 
+[hint]
+For each one of them, we **multiply** the price by the quantity:
+
+```java
+if (matcher.find()) {
+  String name = matcher.group("name");
+  double price = 
+    Double.parseDouble(matcher.group("price"));
+  int quantity = 
+    Integer.parseInt(matcher.group("quantity"));
+
+  furniture.add(name);
+
+  finalPrice += price * quantity;
+}
+```
+[/hint] 
+[hint]
+We print out the result:
+
+```java
+System.out.println("Bought furniture:");
+
+furniture
+  .forEach(piece -> System.out.println(piece));
+
+System.out.println(
+  String.format("Total money spent: %.2f", 
+    finalPrice));
+```
+
+Remember to **format** the **final price** to the second digit after the decimal point.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]
