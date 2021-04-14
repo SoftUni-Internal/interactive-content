@@ -8,11 +8,11 @@
 
 **Use the resources from previous task.**
 
-You will receive a skeleton with one class inside. 
+You will receive a skeleton with a single class inside it. 
 
-The class will have some methods, fields and constructors. 
+The class will hold some methods, fields and constructors. 
 
-Cover the whole class with unit tests to make sure that it works as intended.
+Cover the entire class with unit tests to make sure that it works as intended.
 
 [/task-description]
 [code-upload /]

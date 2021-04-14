@@ -6,9 +6,9 @@
 [task-description]
 # Overview
 
-In this exam, you have to build an online shop project, which has **peripherals**, **components**, and **computers**. 
+Тhis cosists of build a text-based online shop project, which defines **peripherals**, **components**, and **computers**. 
 
-The project will consist of **model classes** and a **controller class**, which manages the **interaction** between the **peripherals**, **components**, and **computers**.
+The project will contain **model classes** and a **controller class**, which manages the **interaction** between the **peripherals**, **components**, and **computers**.
 
 
 # Setup
@@ -28,35 +28,35 @@ The project will consist of **model classes** and a **controller class**, which 
 
 **For this task's evaluation, logic in the methods is not included.**
 
-You are given interfaces and you have to implement their functionality in the **correct classes**.
+You are provided with interfaces you need to implement their functionality in the **correct classes**.
 
-There are **four** types of entities in the application: **Product**, **Component**, **Peripheral**, and **Computer**.
+There are the **four** types of entities present in the application: **Product**, **Component**, **Peripheral**, and **Computer**.
 
 # Product 
 
-The **BaseProduct** is a **base class** for **components, peripherals** and **computers**, and it **should not be able to be instantiated**.
+The **BaseProduct** is a **base class** for **components, peripherals** and **computers**, and it **should not provide the option to be instantiated**.
 
 ## Data
 
 - **id** - int
   * cannot be **less than or equal to 0**
-  * in that case, throw an `IllegalArgumentException` with the message "**Id can not be less or equal than 0.**"
+  * if so - throw an `IllegalArgumentException` with the message "**Id can not be less or equal than 0.**"
 
 - **manufacturer** - String
   * cannot be **null or whitespace**
-  * in that case, throw an `IllegalArgumentException` with the message "**Manufacturer can not be empty.**"
+  * if so - throw an `IllegalArgumentException` with the message "**Manufacturer can not be empty.**"
 
 - **model** - String
   * cannot be **null or whitespace**
-  * in that case, throw an `IllegalArgumentException` with the message "**Model can not be empty.**"
+  * if so - throw an `IllegalArgumentException` with the message "**Model can not be empty.**"
 
 - **price** - double
   * cannot be **less than or equal to 0**
-  * in that case, throw an `IllegalArgumentException` with the message "**Price can not be less or equal than 0.**"
+  * if so - throw an `IllegalArgumentException` with the message "**Price can not be less or equal than 0.**"
 
 - **overallPerformance** - double
   * cannot be **less than or equal to 0**
-  * in that case, throw an `IllegalArgumentException` with the message "**Overall Performance can not be less or equal than 0.**"
+  * if so - throw an `IllegalArgumentException` with the message "**Overall Performance can not be less or equal than 0.**"
 
 ## Constructor
 
@@ -64,7 +64,7 @@ A **product** should take the following values upon initialization:
 
 - (int **id**, String **manufacturer**, String **model**, double **price**, double **overallPerformance**)
 
-Override the **toString()** method with the format:
+Override the **toString()** method to the format:
 
 "**Overall Performance:** \{**overall performance**\}. **Price:** \{**price**\} - \{**product type**\}: \{**manufacturer**\} \{**model**\} (**Id:** \{**id**\})"
 
@@ -78,7 +78,7 @@ There are several concrete types of **products**:
 
 # Component
 
-The **BaseComponent** is a derived class from **BaseProduct** and a **base class** for any **components** and it **should not be able to be instantiated**.
+The **BaseComponent** is a derived class from **BaseProduct** and a **base class** for any **components** and it **should not provide the option to be instantiated**.
 
 ## Data
 
@@ -90,7 +90,7 @@ A **product** should take the following values upon initialization:
 
 - (int **id**, String **manufacturer**, String **model**, double **price**, double **overallPerformance**, int **generation**)
 
-Override the **toString()** method with the format:
+Override the **toString()** method to the format:
 
 "**Overall Performance:** \{**overall performance**\}. **Price:** \{**price**\} - \{**product type**\}: \{**manufacturer**\} \{**model**\} (**Id:** \{**id**\}) **Generation:** \{**generation**\}"
 
@@ -98,18 +98,18 @@ Override the **toString()** method with the format:
 
 There are several concrete types of **components** where the **overall performance** has a **different multiplier**:
 
-- **CentralProcessingUnit** - multiplier is **1.25**
-- **Motherboard** - multiplier is **1.25**
-- **PowerSupply** - multiplier is **1.05**
-- **RandomAccessMemory** - multiplier is **1.20**
-- **SolidStateDrive** - multiplier is **1.20**
-- **VideoCard** - multiplier is **1.15**
+- **CentralProcessingUnit** has a multiplier of **1.25**
+- **Motherboard** has a multiplier of **1.25**
+- **PowerSupply** has a multiplier of **1.05**
+- **RandomAccessMemory** has a multiplier of **1.20**
+- **SolidStateDrive** has a multiplier of **1.20**
+- **VideoCard** has a multiplier of **1.15**
 
-**Example**: If we create the **CentralProcessingUnit** with overallPerformance - 50 from the constructor, and multiplier **1.25**, the overallPerformance should be 62.50.
+**Example**: If we create a **CentralProcessingUnit** with overallPerformance - 50 at the constructor and a multiplier of **1.25** its overallPerformance should be 62.50.
 
 # Peripheral
 
-The **BasePeripheral** is a derived class from **BaseProduct** and a **base class** for any **peripherals** and it **should not be able to be instantiated**.
+The **BasePeripheral** is a derived class from **BaseProduct** and a **base class** for any **peripherals** and it **should not offer the option to be instantiated**.
 
 ## Data
 
@@ -121,7 +121,7 @@ A **product** should take the following values upon initialization:
 
 - (int **id**, String **manufacturer**, String **model**, double **price**, double **overallPerformance**, String **connectionType**)
 
-Override the **toString()** method with the format:
+Override the **toString()** method to the format:
 
 "**Overall Performance:** \{**overall performance**\}. **Price:** \{**price**\} - \{**product type**\}: \{**manufacturer**\} \{**model**\} (**Id:** \{**id**\}) **Connection Type:** \{**connection type**\}"
 
@@ -136,7 +136,7 @@ There are several concrete types of **peripherals**:
 
 # Computer
 
-The **BaseComputer** is a derived class from **BaseProduct** and a **base class** for any **computers** and it **should not be able to be instantiated**.
+The **BaseComputer** is a derived class from **BaseProduct** and a **base class** for any **computers** and it **should not provide the option to be instantiated**.
 
 ## Data
 
@@ -149,7 +149,7 @@ A **product** should take the following values upon initialization:
 
 - (int **id**, String **manufacturer**, String **model**, double **price**, double **overallPerformance**)
 
-Override the **toString()** method with the format:
+Override the **toString()** method with to format:
 
 "**Overall Performance:** \{**overall performance**\}. **Price:** \{**price**\} - \{**product type**\}: \{**manufacturer**\} \{**model**\} (**Id:** \{**id**\})"
 
@@ -175,10 +175,10 @@ Override the **toString()** method with the format:
 
 - `double getOverallPerformance()`
      - **override the base functionality** (if the components collection is empty, it should return only the **computer's overall performance**
-     - otherwise, return the sum of the computer's overall performance and the average overall performance from all components)
+     - otherwise, returns the sum of the computer's overall performance and the average overall performance of all components)
 
 - `double getPrice()`
-     - **override the base functionality** (the price is equal to the **total sum** of the **computer price** with the **sum of all component prices** and the **sum of all peripheral prices**)
+     - **override the base functionality** (the price is equal to the **total sum** of **computer price** with the **sum of all component prices** and the **sum of all peripheral prices**)
 
 - `void addComponent(Component component)`
      - if the components collection contains a component with the same component type, throw an **IllegalArgumentException** with the message "**Component** \{**component type**\} **already exists in** \{**computer type**\} **with Id** \{**id**\}."
@@ -200,10 +200,10 @@ Override the **toString()** method with the format:
 
 There are several specific types of **computers**, where the **overall performance** has a **different value**:
 
-- **DesktopComputer** - overall performance is **15**
-- **Laptop** - overall performance is **10**
+- **DesktopComputer** - its overall performance is **15**
+- **Laptop** - its overall performance is **10**
 
-Child classes should **not** receive an overall performance as a parameter from the constructor.
+Child classes should **not** receive overall performance as a parameter from the constructor.
 
 [/task-description]
 [tests]
