@@ -80,19 +80,25 @@ De fiecare dată când Peter a atins o țintă:
 |archeryTournament(['10\|10\|10\|10\|10', 'Shoot Left@0@2', 'Shoot Right@4@5', 'Shoot Right@6@5', 'Reverse', 'Game over'])| 5 \- 5 \- 10 \- 10 \- 10|
 ||Peter finished the archery tournament with 10 points\!|
 
-**Comentarii**
+[hints]
+[hint]
+Mai întâi, Peter primește comanda "**Shoot Left@0@2**", așa că începe să meargă în intervalul de tir cu arcul de la "**index 0**" cu "**lungime 2**" și se oprește la "**index 3**"
 
-* Mai întâi, Peter primește comanda "**Shoot Left@0@2**", așa că începe să meargă în intervalul de tir cu arcul de la "**index 0**" cu "**lungime 2**" și se oprește la "**index 3**"
+El trage, iar tirul cu arcul arată așa: `0 - 10 - 10 - 5 - 10`
 
-El trage, iar tirul cu arcul arată așa: "10 - 10 - 10 - 5 - 10".
+În acest moment el dobândește **5** puncte.
+[/hint] 
+[hint]
+Apoi primește "**Shoot Right@4@5**" \-\> `10 - 10 - 10 - 5 - 5`
+[/hint] 
+[hint]
+Tragerea "**Right@6@5**" \-\> "**Index 6**" este în afara intervalului (nu există în interval), așa că Peter ignoră comanda.
+[/hint] 
+[hint]
+"**Reverse**" \-\> Rezultatul final ar trebui să fie: `5 - 5 - 10 - 10 - 10`
+[/hint] 
+[/hints] 
 
-În acest moment el dobândește 5 puncte.
-
-* Apoi primește "**Shoot Right@4@5**" \-\> „10 - 10 - 10 - 5 - 5”
-
-* Tragerea "**Right@6@5**" \-\> "**Index 6**" este în afara intervalului (nu există în interval), așa că Peter ignoră comanda
-
-* "**Reverse**" \-\> Rezultatul final ar trebui să fie: "5 - 5 - 10 - 10 - 10"
 
 ## Exemplul 2
 
@@ -101,6 +107,19 @@ El trage, iar tirul cu arcul arată așa: "10 - 10 - 10 - 5 - 10".
 |archeryTournament(['20\|30\|40\|50\|60', 'Shoot Left@0@12', 'Shoot Right@4@15', 'Shoot Left@6@5', 'Reverse', 'Game over'])| 55 \- 45 \- 40 \- 30 \- 20|
 ||Peter finished the archery tournament with 10 points\!|
 
+[hints]
+[hint]
+Split the first input string by the delimeter (`|`), and save the result in an array.
+
+Map through the elements in the **field** and convert them to `Number`.
+[/hint] 
+[hint]
+Use the appropriate conditional statements to handle each command type.
+[/hint] 
+[hint]
+Print the end result in the proper format, as shown above.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]

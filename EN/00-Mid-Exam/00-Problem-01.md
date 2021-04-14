@@ -80,19 +80,24 @@ Each time Peter has reached a target:
 |archeryTournament(['10\|10\|10\|10\|10', 'Shoot Left@0@2','Shoot Right@4@5','Shoot Right@6@5','Reverse','Game over'])| 5 \- 5 \- 10 \- 10 \- 10|
 ||Peter finished the archery tournament with 10 points\!|
 
-**Comments**
+[hints]
+[hint]
+First, Peter receives the "**Shoot Left@0@2**" command, so he starts walking in the archery range from "**index 0**" with "**length 2**" and he stops at "**index 3**".
 
-* First, Peter receives the "**Shoot Left@0@2**" command, so he starts walking in the archery range from "**index 0**" with "**length 2**" and he stops at "**index 3**"
+He shoots and the archery filed looks like this: `10 - 10 - 10 - 5 - 10`
 
-He shoots and the archery filed looks like this: "10 - 10 - 10 - 5 - 10".
-
-At this point he aquires 5 points.
-
-* Then he receives "**Shoot Right@4@5**" \-\> "10 - 10 - 10 - 5 - 5"
-
-* Shoot "**Right@6@5**" \-\> "**Index 6**" is out of range (does not exist in the range), so Peter ignores the command
-
-* "**Reverse**" \-\> The end result should be: "5 - 5 - 10 - 10 - 10"
+At this point he aquires **5** points.
+[/hint] 
+[hint]
+Then he receives "**Shoot Right@4@5**" \-\> `10 - 10 - 10 - 5 - 5`
+[/hint] 
+[hint]
+Shoot "**Right@6@5**" \-\> "**Index 6**" is out of range (does not exist in the range), so Peter ignores the command.
+[/hint] 
+[hint]
+"**Reverse**" \-\> The end result should be: `5 - 5 - 10 - 10 - 10`
+[/hint] 
+[/hints] 
 
 ## Example Two
 
@@ -101,6 +106,19 @@ At this point he aquires 5 points.
 |archeryTournament(['20\|30\|40\|50\|60','Shoot Left@0@12','Shoot Right@4@15','Shoot Left@6@5','Reverse','Game over'])| 55 \- 45 \- 40 \- 30 \- 20|
 ||Peter finished the archery tournament with 10 points\!|
 
+[hints]
+[hint]
+Split the first input string by the delimeter (`|`), and save the result in an array.
+
+Map through the elements in the **field** and convert them to `Number`.
+[/hint] 
+[hint]
+Use the appropriate conditional statements to handle each command type.
+[/hint] 
+[hint]
+Print the end result in the proper format, as shown above.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]
