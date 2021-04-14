@@ -485,7 +485,7 @@ items \=\> ca, d, e, q, t, w
 
 [slide hideTitle]
 # Problem: Make a Dictionary
-[code-task title="Make a Dictionarytory"taskId="js-fundamentals-pt2-objects-and-classes-Make-a-Dictionary" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Make a Dictionary" taskId="js-fundamentals-pt2-objects-and-classes-Make-a-Dictionary" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function dictionary(input){

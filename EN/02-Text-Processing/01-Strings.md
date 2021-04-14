@@ -146,7 +146,7 @@ d
 [/test]
 [test]
 [input]
-printCharacters('AWord')
+printCharacters('AWord1')
 [/input]
 [output]
 A
@@ -154,6 +154,7 @@ W
 o
 r
 d
+1
 [/output]
 [/test]
 [test]

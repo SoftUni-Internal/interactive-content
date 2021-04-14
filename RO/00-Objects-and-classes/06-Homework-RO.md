@@ -248,8 +248,8 @@ La final, tipăriți toate filmele care au toate informațiile (dacă filmul nu 
 ## Exemplu
 |**Intrare**|**Ieșire** |
 | --- | --- |
-|movies(['addMovie Fast and Furious','addMovie Godfather','Inception directedBy Christopher Nolan','Godfather directedBy Francis Ford Coppola','Godfather onDate 29.07.2018','Fast and Furious onDate 30.07.2018','Batman onDate 01.08.2018','Fast and Furious directedBy Rob Cohen']) | \{"name":"Fast and Furious","date":"30.07.2018","director":"Rob Cohen"\}|
-| | \{"name":"Godfather","director":"Francis Ford Coppola","date":"29.07.2018"\} |
+|movies(['addMovie Fast and Furious','addMovie Godfather','Inception directedBy Christopher Nolan','Godfather directedBy Francis Ford Coppola','Godfather onDate 29.07.2018','Fast and Furious onDate 30.07.2018','Batman onDate 01.08.2018','Fast and Furious directedBy Rob Cohen']) | \{"name":"Fast and Furious", "date":"30.07.2018","director":"Rob Cohen"\}|
+| | \{"name":"Godfather", "director":"Francis Ford Coppola", "date":"29.07.2018"\} |
 
 
 [/task-description]
@@ -487,7 +487,7 @@ items \=\> ca, d, e, q, t, w
 
 [slide hideTitle]
 # Problemă: Make a Dictionary
-[code-task title="Make a Dictionarytory"taskId="js-fundamentals-pt2-objects-and-classes-Make-a-Dictionary" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Make a Dictionary" taskId="js-fundamentals-pt2-objects-and-classes-Make-a-Dictionary" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function dictionary(input){

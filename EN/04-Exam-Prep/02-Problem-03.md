@@ -48,7 +48,7 @@ You need to remove it from your collection of targeted cities and print the foll
 
 There will be no case exceeding the number people or the amount of gold, which was already specified for each city.
 
-* Command: "****Prosper**\=\>\{**town**\}\=\>\{**gold**\}"
+* Command: "**Prosper**\=\>\{**town**\}\=\>\{**gold**\}"
 
 Indicates economic growth in the given city, increasing its treasury by the specified amount of gold.
 

@@ -8,7 +8,7 @@
 [code-task title="Password Reset" taskId="js-fundamentals-2-examPreparation-problem-1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function passwordReset(input, commands) {
+function passwordReset(input) {
    // Scrieți codul dvs. aici
 }
 ```
@@ -62,7 +62,7 @@ Dacă nu, imprimați "**Nothing to replace!**".
 
 **Intrare**:
 
-passwordReset('Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr', ['TakeOdd', 'Cut 15 3', 'Substitute :: -', 'Substitute \| \^', 'Done'])
+passwordReset(['Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr', 'TakeOdd', 'Cut 15 3', 'Substitute :: -', 'Substitute \| \^', 'Done'])
 
 **Ieșire**:
 
@@ -110,7 +110,7 @@ Tipărim: "**Nothing to replace!**"
 
 **Intrare**:
 
-passwordReset('up8rgoyg3r1atmlmpiunagt!-irs7!1fgulnnnqy', ['TakeOdd', 'Cut 18 2', 'Substitute ! \*\*\*', 'Substitute ? .!.', 'Done'])
+passwordReset(['up8rgoyg3r1atmlmpiunagt!-irs7!1fgulnnnqy', 'TakeOdd', 'Cut 18 2', 'Substitute ! \*\*\*', 'Substitute ? .!.', 'Done'])
 
 **Ieșire**:
 
@@ -129,7 +129,7 @@ Your password is: programming\*\*\*is\*\*\*fun
 [tests]
 [test open]
 [input]
-passwordReset('Siiceercaroetavm!\:\?\:ahsott\.\:i\:nstupmomceqr', ['TakeOdd', 'Cut 15 3', 'Substitute \:\: \-', 'Substitute \| \^', 'Done'])
+passwordReset(['Siiceercaroetavm!\:\?\:ahsott\.\:i\:nstupmomceqr', 'TakeOdd', 'Cut 15 3', 'Substitute \:\: \-', 'Substitute \| \^', 'Done'])
 [/input]
 [output]
 icecream\:\:hot\:\:summer
@@ -141,7 +141,7 @@ Your password is\: icecream\-hot\-mer
 [/test]
 [test open]
 [input]
-passwordReset('up8rgoyg3r1atmlmpiunagt!-irs7!1fgulnnnqy', ['TakeOdd', 'Cut 18 2', 'Substitute ! \*\*\*', 'Substitute ? .!.', 'Done'])
+passwordReset(['up8rgoyg3r1atmlmpiunagt!-irs7!1fgulnnnqy', 'TakeOdd', 'Cut 18 2', 'Substitute ! \*\*\*', 'Substitute ? .!.', 'Done'])
 [/input]
 [output]
 programming!is!funny
@@ -153,7 +153,7 @@ Your password is: programming\*\*\*is\*\*\*fun
 [/test]
 [test]
 [input]
-passwordReset('abcd', ['TakeOdd', 'Done'])
+passwordReset(['abcd', 'TakeOdd', 'Done'])
 [/input]
 [output]
 bd
@@ -162,7 +162,7 @@ Your password is: bd
 [/test]
 [test]
 [input]
-passwordReset('abcdefg', ['TakeOdd'
+passwordReset(['abcdefg', 'TakeOdd'
 'Done'])
 [/input]
 [output]
@@ -172,7 +172,7 @@ Your password is: bdf
 [/test]
 [test]
 [input]
-passwordReset('abcdefg', ['TakeOdd', 'Cut 0 2', 'Done'])
+passwordReset(['abcdefg', 'TakeOdd', 'Cut 0 2', 'Done'])
 [/input]
 [output]
 bdf
@@ -182,7 +182,7 @@ Your password is: f
 [/test]
 [test]
 [input]
-passwordReset('abcdefg', ['TakeOdd', 'Substitute b y', 'Done'])
+passwordReset(['abcdefg', 'TakeOdd', 'Substitute b y', 'Done'])
 [/input]
 [output]
 bdf
@@ -192,7 +192,7 @@ Your password is: ydf
 [/test]
 [test]
 [input]
-passwordReset('abcdefg', ['TakeOdd', 'Substitute z y', 'Done'])
+passwordReset(['abcdefg', 'TakeOdd', 'Substitute z y', 'Done'])
 [/input]
 [output]
 bdf
@@ -202,7 +202,7 @@ Your password is: bdf
 [/test]
 [test]
 [input]
-passwordReset('abcdefg', ['Cut 0 3', 'Done'])
+passwordReset(['abcdefg', 'Cut 0 3', 'Done'])
 [/input]
 [output]
 defg
@@ -211,7 +211,7 @@ Your password is: defg
 [/test]
 [test]
 [input]
-passwordReset('abcdefg', ['Cut 0 6', 'Done'])
+passwordReset(['abcdefg', 'Cut 0 6', 'Done'])
 [/input]
 [output]
 g
@@ -220,7 +220,7 @@ Your password is: g
 [/test]
 [test]
 [input]
-passwordReset('abcdefg', ['Cut 3 1', 'Done'])
+passwordReset(['abcdefg', 'Cut 3 1', 'Done'])
 [/input]
 [output]
 abcefg
@@ -229,7 +229,7 @@ Your password is: abcefg
 [/test]
 [test]
 [input]
-passwordReset('abcdefg', ['Cut 4 2', 'Done'])
+passwordReset(['abcdefg', 'Cut 4 2', 'Done'])
 [/input]
 [output]
 abcdg
@@ -238,7 +238,7 @@ Your password is: abcdg
 [/test]
 [test]
 [input]
-passwordReset('AABBCCDDEEFFGG', ['TakeOdd', 'Cut 2 3', 'Substitute B A', 'Done'])
+passwordReset(['AABBCCDDEEFFGG', 'TakeOdd', 'Cut 2 3', 'Substitute B A', 'Done'])
 [/input]
 [output]
 ABCDEFG
@@ -249,7 +249,7 @@ Your password is: AAFG
 [/test]
 [test]
 [input]
-passwordReset('AAABBBCCCDDDEEEFFFGGG', ['Cut 0 1', 'Cut 0 1', 'Cut 0 1', 'Cut 1 1', 'Cut 3 2', 'Substitute G Y', 'TakeOdd', 'Done'])
+passwordReset(['AAABBBCCCDDDEEEFFFGGG', 'Cut 0 1', 'Cut 0 1', 'Cut 0 1', 'Cut 1 1', 'Cut 3 2', 'Substitute G Y', 'TakeOdd', 'Done'])
 [/input]
 [output]
 AABBBCCCDDDEEEFFFGGG
@@ -264,7 +264,7 @@ Your password is: BDDEFFY
 [/test]
 [test]
 [input]
-passwordReset('AAABBBCCCDDD', ['Cut 2 3', 'Substitute C J', 'Substitute Z M', 'TakeOdd', 'Done'])
+passwordReset(['AAABBBCCCDDD', 'Cut 2 3', 'Substitute C J', 'Substitute Z M', 'TakeOdd', 'Done'])
 [/input]
 [output]
 AABCCCDDD

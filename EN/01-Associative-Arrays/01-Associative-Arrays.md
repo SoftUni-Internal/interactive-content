@@ -670,7 +670,7 @@ Ted \-\> Dayton Ave
 
 # Nested Data Structures
 
-[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-18-nested-data-structures-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-18-19-nested-data-structures-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The values stored in associative arrays can be objects or arrays.
 
