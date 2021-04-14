@@ -78,7 +78,7 @@ Calculate **the total calories of all food items** from the string, and then
 [hints]
 [hint]
 We have three matches in total: 
-"\#Bread#19/03/21\#4000\#": bread
+"\#Bread\#19/03/21\#4000\#": bread
 "\|Apples\|08/10/20\|200\|": apples
 "\|Carrots\|06/08/20\|500\|": carrots
 [/hint] 
