@@ -101,7 +101,7 @@ An IDE helps us easily run and debug code avoiding syntax errors. Integrated Dev
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-9-console-based-java-program-example-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Let us create a simple piece of code that accepts a number form the console (an amount of money (an Integer)) in U.S. Dollars (USD) as user input, converts it to Euro (EUR) by dividing it using the specified exchange rate and prints out the obtained result. 
+Let us create a simple piece of code that accepts a number from the console (an amount of money (an Integer)) in U.S. Dollars (USD) as user input, converts it to Euro (EUR) by multiplying it using the specified exchange rate and prints out the obtained result. 
 
 This will be a program of 3 consecutive commands:
 ```java 
