@@ -270,7 +270,7 @@ Sarcina voastră este să colectați resursele și să le imprimați fiecare pe 
 "\{**resource**\} -> \{**quantity**\}"
 
 ### Exemplu
-| **Intrare* | **Ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Gold | Gold \-\> 155 | 
 | 155 | Silver \-\> 10 |
@@ -281,7 +281,7 @@ Sarcina voastră este să colectați resursele și să le imprimați fiecare pe 
 | stop | |
 
 ### Exemplu
-| **Intrare* | **Ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | gold | Gold \-\> 170 | 
 | 155 | Silver \-\> 10 |

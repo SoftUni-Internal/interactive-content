@@ -40,12 +40,12 @@ for (String word : words) {
 ## In the next lesson, you will learn:
 
 - Classes
-    - Definition of Classes
-    - Methods, Properties, Fields
+    - definition of Classes
+    - methods, Properties, Fields
 
 - Objects
-    - Definition
-    - Values
+    - definition
+    - values
 
 - Built-in Classes
 
