@@ -64,7 +64,7 @@ In the example above, the group's names are: **day**, **month**, and **year**.
 [slide hideTitle]
 # Problem with Solution: Match All Words
 
-Create a **regular expression** that will **extract all words from a given text**, by using the following website: [https://regex101.com](regex101.com)
+Create a **regular expression** that will **extract all words from a given text**, by using the following website: [regex101](regex101.com)
 
 [image assetsSrc="regex-example(25).png" /]
 
