@@ -77,7 +77,7 @@ When using **scripts and interpreted languages**, like JavaScript, Python, and P
 
 JDK should not be confused with the java runtime environment (JRE)
 
-* JRE allows us to **run** Java programs, but does not provide the ncessary functions to **develop programs**
+* JRE allows us to **run** Java programs, but does not provide the necessary functions to **develop programs**
 
 [image assetsSrc="intro-to-programming-java.png" /]
 [/slide]
