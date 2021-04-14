@@ -739,7 +739,6 @@ int power = 0;
 [hint]
 **Măriți** **puterea** cu valorile numerice ale caracterelor precedate de `>`:
 
-
 ```java
 for (int i = 0; i < result.length(); i++) {
   if (result.charAt(i) == '>') {
@@ -758,7 +757,6 @@ for (int i = 0; i < result.length(); i++) {
 [/hint] 
 [hint]
 **Tipăriți** șirul rămas pe consolă:
-:
 
 ```java
 System.out.println(result);
