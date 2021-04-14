@@ -74,7 +74,23 @@ Calculate **the total calories of all food items** from the string, and then
 ||Item: Apples, Best before: 08\/10\/20, Nutrition: 200|
 ||Item: Carrots, Best before: 06\/08\/20, Nutrition: 500|
 
+[hints]
+[hint]
+We have three matches in total: 
 
+"\#Bread\#19/03/21\#4000\#": bread
+"\|Apples\|08/10/20\|200\|": apples
+"\|Carrots\|06/08/20\|500\|": carrots
+[/hint] 
+[hint]
+The sum of their calories is 4700.
+
+Since you need 2000kcal a day, you divide 4700/2000, which means that this food will last for 2 days.
+[/hint] 
+[hint]
+We print each item. 
+[/hint] 
+[/hints] 
 
 ## Examples Two
 
@@ -87,12 +103,31 @@ Calculate **the total calories of all food items** from the string, and then
 |||
 
 
+[hints]
+[hint]
+We have three matches:
+
+"\#Fish\#24/12/20\#8500\#"
+"\#Ice Cream\#03/10/21\#9000\#"
+"\|Milk\|05/09/20\|2000\|"
+
+The total calories are 8500 + 9000 + 2000 = 19500, which means you have food for a total of 9 days.
+[/hint] 
+[/hints] 
 
 ## Examples Three
 
 | **Input** | **Output** |
 | --- | --- |
 |foodSupply('Hello\|\#Invalid food\#19/03/20\#450\|\$5\*\(\@')|You have enough food for 0 days\!|
+
+[hints]
+[hint]
+There are no matches, which means you have no food.
+
+This text "\#Invalid food\#19/03/20\#450" is not a match, since it does not have a "\#" at the end.
+[/hint] 
+[/hints] 
 
 
 [/task-description]
