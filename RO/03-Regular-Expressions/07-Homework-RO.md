@@ -40,7 +40,7 @@ Bought furniture:
 
 Și pe **ultima linie imprimați** următoarele:
 
-- "Total money spend: \{spend money\}" **formatate** la a doua zecimală
+- "Total money spent: \{spend money\}" **formatate** la a doua zecimală
 
 
 ### Exemplu
