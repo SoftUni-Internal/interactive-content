@@ -151,7 +151,7 @@ Folosind **clasa Person**, scrieți un program care citește de pe consolă **N 
 ### Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
-| 5 |  Leo - 44  | 
+| 5 |  Leo - 44  |
 | Nick 33 | Nick - 33 |
 | Yoan 88 | Yoan - 88|
 | Tom 22 | |
@@ -387,7 +387,7 @@ Science - planets: Bill
 
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 3
 title1, C, author1
@@ -847,7 +847,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -879,7 +879,7 @@ Când primiți **comanda** "**End**", **imprimați toate persoanele**.
 | End | |
 
 [/task-description]
-[code-upload allowedMemory="30" /]
+[code-io /]
 [tests]
 [test open]
 [input]

@@ -64,9 +64,7 @@ public class MyClass {
 
 [/slide]
 [slide hideTitle]
-
 # Membri Clasei
-
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/interactive-java-fundamentals-objects-and-classes-17-class-members-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Câmpurile** și **metodele** definesc **starea** și **comportamentul** unei clase.
@@ -248,7 +246,7 @@ Definiți o clasă **Student**, care conține următoarele informații despre el
  - first name
  - last name
  - age
- - hometown
+ - home town
 
 ### Intrare / Constrângeri
 
@@ -262,7 +260,6 @@ Imprimați numai studenții care sunt din orașul dat, în următorul format:
 "\{**firstName**\} \{**lastName**\} **is** \{**age**\} **years old.**"
 
 ## Exemple
-
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | Anthony Taylor 15 Chicago | Anthony Taylor is 15 years old. |
@@ -390,7 +387,6 @@ Port Lee is 14 years old
 
 [slide hideTitle]
 # Problemă cu Soluție: Students 2.0
-
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/interactive-java-fundamentals-objects-and-classes-problem-and-solution-students-2.0-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 

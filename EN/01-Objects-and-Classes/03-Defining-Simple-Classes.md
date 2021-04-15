@@ -230,7 +230,6 @@ public class Animal {
 
 [slide hideTitle]
 # Problem with Solution: Students
-
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-students-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Students" taskId="java-fund-2-Objects-and-Classes-lab-Students" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
@@ -382,7 +381,6 @@ Port Lee is 14 years old
 
 [slide hideTitle]
 # Problem with Solution: Students 2.0
-
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-students-2.0-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Students 2.0" taskId="java-fund-2-Objects-and-Classes-lab-Students-2.0" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
