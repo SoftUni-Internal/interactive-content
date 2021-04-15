@@ -4,7 +4,7 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-35-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In this lesson, you learned:
+## In this lesson you learned:
 
 - **Functional context** - the object from which the code originated is its default context
 
@@ -37,7 +37,7 @@ console.log(praise.apply(dog,
 - **Seal** and **freeze** that deal with the object's **immutability**
 
 
-## In the next lesson, you will learn:
+## In the next lesson you will learn:
 
 - **Advanced Functions**
     * what are first-class and higher-order functions

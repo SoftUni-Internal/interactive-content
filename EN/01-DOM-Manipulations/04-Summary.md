@@ -4,7 +4,7 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/EN/JS-Advanced-DOM-Manipulations-36-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In this lesson, you learned:
+## In this lesson you learned:
 
 - The event loop
 - Event types: `document.addEventListener('click', getEventType);`
@@ -25,7 +25,7 @@
     });
     ```
     
-## In the next lesson, you will learn:
+## In the next lesson you will learn:
 
 - What `this` is
 
