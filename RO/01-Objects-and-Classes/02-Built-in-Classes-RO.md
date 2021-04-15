@@ -1,4 +1,4 @@
-
+# Clase Încorporate în Java
 
 [slide hideTitle]
 # Clase Încorporate în Java
@@ -97,9 +97,13 @@ System.out.println(min);
 
 ```java live
 double roundedDown = Math.round(29.459);
-double roundedUp = Math.round(29.549);
 System.out.println(roundedDown);
+        
+double roundedUp = Math.round(29.549);
 System.out.println(roundedUp);
+        
+double roundedUpAgain = Math.round(29.5);
+System.out.println(roundedUpAgain);
 ```
 
 - `pow(a, b)` - Returnează valoarea primului parametru `a` ridicat la puterea celui de-al doilea parametru `b`
