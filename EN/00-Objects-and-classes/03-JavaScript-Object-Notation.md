@@ -126,6 +126,16 @@ Loop through all the keys and print them with their values in format:
 ||age: 40|
 ||town: Berlin|
 
+[hints]
+[hint]
+Utilize the `JSON.parse()` method:
+
+```js
+let person = JSON.parse(json);
+```
+[/hint] 
+[/hints] 
+
 ## Example Two
 
   | **Input** | **Output** |

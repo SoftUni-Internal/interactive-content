@@ -128,6 +128,16 @@ Iterați prin toate cheile și imprimați-le împreună cu valorile lor în form
 ||age: 40|
 ||town: Berlin|
 
+[hints]
+[hint]
+Utilizați metoda `JSON.parse()`:
+
+```js
+let person = JSON.parse(json);
+```
+[/hint] 
+[/hints] 
+
 ## Exemplul Doi
 
 |**Intrare**|**Ieșire** |
