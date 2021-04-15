@@ -78,6 +78,12 @@ If the index is invalid, ignore the command.
 |schoolLibrary(['Don Quixote&The Great Gatsby&Moby Dick&Hamlet', 'Add Book \| The Odyssey', 'Take Book \| Don Quixote', 'Insert Book \| The Lord of the Rings', 'Check Book \| 3', 'Done' ])| Hamlet|
 ||The Odyssey, The Great Gatsby, Moby Dick, Hamlet, The Lord of the Rings|
 
+[hints]
+[hint]
+Use the appropriate conditional statements and loops to handle each command type.
+[/hint] 
+[/hints] 
+
 ## Example Two
 
 | **Input** | **Output** |
