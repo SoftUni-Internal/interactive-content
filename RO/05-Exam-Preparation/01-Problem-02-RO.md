@@ -1,4 +1,4 @@
-# Problemă cu soluție 2: Inventory
+# Problemă cu Soluție 2: Inventory
 
 [slide hideTitle]
 # Inventory
@@ -25,35 +25,35 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Veți primi un șir care conține obiecte curente separate de o virgulă și de un spațiu \(", "\).
+Veți primi un șir care conține obiectele curente din inventarul vostru. Obiectele vor fi separate printr-o virgulă și de un spațiu \(", "\).
 
-Apoi, până la mesajul "**Craft!**", veți primi diferite comenzi. 
+Apoi, până la primirea mesajului "**Craft!**", veți primi diferite comenzi. 
 
-Comenzile sunt separate de (" \- "):
+Comenzile sunt separate prin (" \- ") și pot să fie următoarele:
 
-* Dați comanda "**Collect -** \{**item**\}":
+* "**Collect -** \{**item**\}":
 
-Prin primirea acestei comenzi, veți putea adăuga obiectul dat inventarului vostru.
+   - Adăugați obiectul dat la inventarul vostru
 
-Dacă obiectul există deja, veți putea sări peste această comandă. 
+   - Dacă obiectul există deja, săriți peste această comandă 
 
-* Dați comanda "**Drop -** \{**item**\}": 
+* "**Drop -** \{**item**\}": 
 
-Astfel, veți șterge obiectul din inventar, dacă îl aveți. 
+   - Ștergeți obiectul din inventar, dacă îl aveți
 
-* Dați comanda "**Combine Items -** \{**oldItem**\}**:**\{**newItem**\}":
+* "**Combine Items -** \{**oldItem**\}**:**\{**newItem**\}":
 
-Veți putea verifica dacă primul obiect există în inventar. Dacă există, atunci adăugați noul obiect după primul.
+   - Verifica dacă primul obiect există în inventar, iar dacă există, atunci adăugați noul obiect după primul
 
-Dacă nu există, ignorați comanda.
+   - Dacă nu există, ignorați comanda.
 
-* Dați comanda "**Renew -** \{**item**\}":
+* "**Renew -** \{**item**\}":
 
-Dacă obiectul există deja, puteți să-i schimbați poziția și să îl puneți pe ultima poziție în inventar.
+   - Dacă obiectul există deja, trebuie să îi schimbați poziția și să îl puneți pe ultima poziție în inventar
 
 
 ## Ieșire
-După ce primiți "**Craft!**", Imprimați toate articolele din inventarul dvs., separate prin,o virgulă și un spațiu.
+După ce primiți comanda "**Craft!**", imprimați toate articole din inventarul vostru, separate printr-o virgulă și un spațiu \(", "\).
 
 ## Exemplul Unu
 |**Intrare**|**Ieșire** |
