@@ -731,8 +731,7 @@ Mesajul **descifrat** este: `PQ@Alderaa1:30000!A!->20000`
 Al **doilea mesaj** are cheia **5**.
 
 Aici, mesajul **descifrat** este: `@Cantonica:3000!D!->4000NM`
-[/hint] 
-[hint]
+
 Ambele mesaje sunt **valabile** și conțin:
 - **planete**
 - **populație**
@@ -752,18 +751,9 @@ attacked
   .sorted()
   .forEach(planet -> 
     System.out.println("-> " + planet));
- 
-
-System.out.println(String.format(
-  "Destroyed planets: %d", 
-  destroyed.size()));
-
-destroyed
-  .stream() 
-  .sorted()
-  .forEach(planet -> 
-    System.out.println("-> " + planet));
 ```
+
+**Repetați** aceeași procedură pentru **planetele distruse** (destroyed). 
 [/hint] 
 [/hints] 
 
@@ -1028,10 +1018,31 @@ Imprimați toți demonii sortate după numele lor în ordine crescătoare, fieca
 | --- | --- |
 | M3ph-0.5s-0.5t0.0** | M3ph-0.5s-0.5t0.0** - 524 health, 8.00 damage |
 
-### Comentarii
-- M3ph-0.5s-0.5t0.0**:
-    - Health = 'M' + 'p' + 'h' + 's' + 't' = 524 health
-    - Damage = (3 + (-0.5) + (-0.5) + 0.0) \* 2 \* 2 = 8 damage
+[hints]
+[hint]
+Puteți **împărți** numele **demonilor** folosind această expresie regulată:
+
+```java
+String[] demons = input.split(",\\s*");
+```
+[/hint] 
+[hint]
+În acest exemplu, avem **un** demon: `M3ph-0.5s-0.5t0.0**`:
+
+**Sănătatea** lor este egală cu **suma** tuturor codurilor **ASCII** ale literelor:
+'**M**' + '**p**' + '**h**' + '**s**' + '**t**' = **524** health.
+
+**Daunele** sunt egale cu **8**.
+
+Observați că există 2 asteriscuri la sfârșit: `**`
+
+Ar trebui să înmulțiți suma tuturor numerelor cu **patru** (`sum * 2 * 2`):
+
+(**3** + (**-0.5**) + (**-0.5**) + **0.0**) \* **2** \* **2** = **8** damage.
+
+**Împărțirea** și **multiplicarea** sunt aplicate întotdeauna la **sfârșitul**.
+[/hint] 
+[/hints] 
 
 ### Exemplu
 |**Intrare**|**Ieșire** |
@@ -1039,12 +1050,19 @@ Imprimați toți demonii sortate după numele lor în ordine crescătoare, fieca
 | M3ph1st0**, Azazel | Azazel - 615 health, 0.00 damage  |
 | | M3ph1st0** - 524 health, 16.00 damage |
 
-### Comments
-- Azazel: 
-    - Health - 'A' + 'z' + 'a' + 'z' + 'e' + 'l' = 615 health. Damage - no digits = 0 damage
-- M3ph1st0**:
-    - Health - 'M' + 'p' + 'h' + 's' + 't' = 524 health
-    - Damage - (3 + 1 + 0) \* 2 \* 2 = 16 damage
+[hints]
+[hint]
+- `Azazel`: 
+    - **health** - 'A' + 'z' + 'a' + 'z' + 'e' + 'l' = **615** health
+    - **damage** - no digits = **0** damage
+[/hint] 
+[hint]
+- `M3ph1st0**`:
+    - **health** - 'M' + 'p' + 'h' + 's' + 't' = **524** health
+    - **damage** - (3 + 1 + 0) \* 2 \* 2 = **16** damage
+[/hint] 
+[/hints] 
+
 
 [/task-description]
 [code-io /]
