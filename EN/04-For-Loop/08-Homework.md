@@ -466,10 +466,10 @@ Create a program, which:
 ## Example
 | **Input** | **Output** 
 | --- | --- |
+| 3 |  |
 | 3 | 33.33% |
-| 3 | 100.00% |
-| 6 | 0.00% |
-| 9 | |
+| 6 | 100.00% |
+| 9 | 0.00% |
 [/task-description]
 [tests]
 [test open]
