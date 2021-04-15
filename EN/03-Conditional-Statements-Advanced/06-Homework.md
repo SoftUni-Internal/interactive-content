@@ -1331,7 +1331,7 @@ The input consists of 2 lines:
 - The fuel in the tank in liters
 
 ## Output
-- If the fuel type is one of the 3 options, print: "**Invalid fuel!**"
+- If the fuel type is not one of the 3 options, print: "**Invalid fuel!**"
 - If the current fuel level is >= 25 liters print:
     - "**You have enough** \{**type of fuel**\}."
     -  the type of fuel should be printed in lower case
@@ -1659,7 +1659,7 @@ public class Main {
 Create a program to check if a **point {x, y}** is **on** one of the sides of a rectangle **{x1, y1} - {x2, y2}**.  
 
 ## Input
-The input consists of **6 lines: real numbers x1, y1, x2, y2, x and y** (conidering that: **x1 < x2** and **y1 < y2**).
+The input consists of **6 lines: real numbers x1, y1, x2, y2, x and y** (considering that: **x1 < x2** and **y1 < y2**).
 
 ## Output
 If the point lies on one of a rectangle's side:
