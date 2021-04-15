@@ -288,6 +288,8 @@ Authorization occurs after your identity is successfully authenticated by the sy
 
 # Problem: All Books
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-Applications-Remote-Database-Firebase-All-Books-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Make sure you have a Gmail account and you are signed in.
 
 Open a browser and type in "**firebase console**".
@@ -374,6 +376,8 @@ URL: `https://databaseURL/books.json`
 
 # Problem: Get a Book
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-Applications-Remote-Database-Firebase-Get-Book-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 To get a book, choose the "**GET**" method in Postman and use the following **URL**.
 
 `https://databaseURL/books/bookId.json`
@@ -383,6 +387,8 @@ To get a book, choose the "**GET**" method in Postman and use the following **UR
 [slide hideTitle]
 
 # Problem: Create Books
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-Applications-Remote-Database-Firebase-Create-Book-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To create a book, we will have to send a "**POST**" request, and the JSON body should be in the following format:
 
@@ -401,6 +407,8 @@ URL: `https://databaseURL/books.json`
 [slide hideTitle]
 
 # Problem: Patch Book
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-Applications-Remote-Database-Firebase-Patch-Book-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The HTTP command "**PATCH**" modifies an existing HTTP resource.
 
@@ -422,6 +430,8 @@ URL: `https://databaseURL/books/bookId.json`
 [slide hideTitle]
 
 # Problem: Change Book Author
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-Applications-Remote-Database-Firebase-Change-Book-Author-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The next task is to execute the "**PUT**" command. 
 
