@@ -29,59 +29,61 @@ function adapter(input, code) {
 
 Personajul vostru începe cu **100 health points** și **0 bitcoins.**
 
-Veți primi un șir**reprezentând diferite evenimente**, pe care trebuie să le procesați.
+Veți primi un șir **reprezentând diferite evenimente**, pe care trebuie să le procesați.
 
 Fiecare comandă este **separată** de o bară verticală ("\|").
 
-Fiecare dintre comenzi va conține un cuvânt și un număr, separate de un spațiu. 
+Fiecare dintre comenzi va conține **un cuvânt** și **un număr**, separate de **un spațiu**. 
 
 Comanda poate fi:
 
 * Comanda "**potion**": 
 
-Reface numărul specificat de puncte de sănătate ale personajului vostru. 
-
-Punctele de sănătate **nu pot depăși 100.**
+Reface numărul specificat de puncte de sănătate ale personajului vostru (punctele de sănătate **nu pot depăși 100.**)
 
 După că ați folosit cu succes poțiunea, imprimați:
 
-"**Healed:** \{**amount**\} **hp.**"
+   - "**Healed:** \{**amount**\} **hp.**"
 
 Apoi, imprimați starea de sănătate actuală: 
 
-"**Current health:** \{**health**\} **hp.**"
+   - "**Current health:** \{**health**\} **hp.**"
 
 * Comanda "**chest**": 
 
-Ați găsit bitcoins și adăugați acest număr la valoarea bitcoins existentă. 
+Ați găsit bitcoins, adăugați acest număr la valoarea bitcoins existentă și imprimați:
 
-Imprimați:
+   - "**You found** \{**amount**\} **bitcoins.**"
 
-"**You found** \{**amount**\} **bitcoins.**"
+**Lupta cu monștri**
 
-*Dacă primiți orice alte date, înseamnă că **v-ați confruntat cu un monstru**. 
+Dacă primiți orice altă comandă, înseamnă că **vă confruntați cu un monstru**. 
 
-Un **cuvânt la începtul comenzii** va fi numele monstrului, iar **numărul** \- va fi **daune pe care monstrul ți le provoacă.**
+**Cuvântul de la începtul comenzii** va fi numele monstrului, iar **numărul** \- **daunele pe care monstrul vi le provoacă.**
 
-Exemplu: "**rat** \{**number**\}, **boss** \{**number**\}", aici pot fi alte tipuri de monștri.
+Exemplu: "**rat** \{**number**\}, **boss** \{**number**\}" (pot exista și alte tipuri de monștri)
 
-Ar trebui să scădeți punctele de sănătate ale campionului cu daunele pe care fiecare monstru le produce.
+Trebuie **să scădeți punctele de sănătate ale personajului** cu **daunele** pe care fiecare monstru le produce.
 
-* Dacă nu ați murit (health <= 0) înseamnă că ați învins monstrul și puteți imprima :
+Dacă **nu ați murit** (health >= 0) înseamnă că ați învins monstrul și puteți imprima :
 
-"**You defeated a** \{**monster**\}."
+   - "**You defeated a** \{**monster**\}."
 
-* Dacă ați murit, atunci datele așteptate de ieșire vor fi :  
+Dacă **ați murit**, atunci datele așteptate de ieșire vor fi :  
 
-"**You died! Killed by** \{**monster**\}."
+   - "**You died! Killed by** \{**monster**\}."
 
-**And your quest is over.**
+**După toate acestea, misiunea voastră s-a încheiat.**
 
-Imprimați numărul ultimei camere pe care ați reușit să o găsiți: 
+Considerați fiecare pereche din intrare ca fiind o cameră separată într-o temniță prin care trece personajul vostru.
+
+Dacă aveți următoarea intrare: "rat 10|bat 20|potion 10|rat 10", asta înseamnă că veți încerca să vă croiți drumul prin 4 camere diferite.
+
+După ce jocul s-a încheiat, imprimați **numărul** ultimei **camere** **pe care ați reușit să o găsiți**: 
 
 "**Highest level reached:** \{**last room**\}."
 
-Dacă ați reușit să parcurgeți toate camerele din temniță, tipăriți pe următoarele trei linii:
+Dacă **ați reușit să parcurgeți toate camerele din temniță**, tipăriți pe următoarele trei linii:
 
 "**You've made it!**"
 
@@ -90,10 +92,10 @@ Dacă ați reușit să parcurgeți toate camerele din temniță, tipăriți pe u
 "**Health:** \{**health**\}"
 
 ## Intrare
-Un șir, cu comenzi separate printr-o bară verticală ("\|")..
+Un **șir** cu comenzi separate printr-o bară verticală ("\|")..
 
 ## Ieșire
-Imprimați mesajele corespunzătoare, așa cum se arată în descriere.
+**Imprimați** mesajele corespunzătoare, așa cum este menționat în descriere.
 
 ## Exemplul Unu
 
