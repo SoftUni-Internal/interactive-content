@@ -255,12 +255,43 @@ In the end, print out the **top 3** racers ordered by the distance they have run
 | T$o553m&6 | |
 | end of race | |
 
-### Comments
-- On the third line, we have **Ray**
-- He is not in the list of participants so we ignore him
-- The other people are in the list of participants
-- **George** has run a total of **55** km, **Peter** has run a total of **25**, and **Tom** has run a total of **19**
-- We print the winners (the people in the top 3)
+[hints]
+[hint]
+On the third line, we have **Ray**.
+He is **not** in the list of participants so we ignore him.
+[/hint] 
+[hint]
+The other people **are** in the list of **participants**.
+
+```java
+if (racers.containsKey(name)) {
+  racers.put(name, racers.get(name) + result);
+}
+```
+
+**George** has run a total of **55** km, **Peter** has run a total of **25**, and **Tom** has run a total of **19**
+[/hint] 
+[hint]
+We **print** the **winners** (the people in the **top 3**):
+
+```java
+List<String> winners = new LinkedList<>();
+
+racers.entrySet().stream()
+.sorted(Map.Entry.<String, Integer>comparingByValue()
+.reversed())
+.limit(3)
+.forEach(p -> winners.add(p.getKey()));
+
+System.out.printf("1st place: %s\n" +
+  "2nd place: %s\n" +
+  "3rd place: %s\n", 
+  winners.get(0), 
+  winners.get(1), 
+  winners.get(2));
+```
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]

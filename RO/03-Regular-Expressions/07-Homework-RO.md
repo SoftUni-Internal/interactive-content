@@ -254,12 +254,43 @@ La final **imprimați primii 3 alergători ordonați în funcție de distanța d
 | end of race | |
 
 
-### Comentarii
-- Pe a treia linie de intrare avem Ray
-- El nu este pe listă, deci nu luăm în calcul rezultatul lui
-- Celelalte sunt valabile
-- George are 55 km în total, Peter 25 și Tom 19
-- Nu îl imprimăm pe Bill pentru că este pe locul patru
+[hints]
+[hint]
+Pe a treia linie de intrare avem **Ray**.
+El **nu este** pe listă, deci nu luăm în calcul rezultatul lui.
+[/hint] 
+[hint]
+**Celelalte** sunt **valabile**:
+
+```java
+if (racers.containsKey(name)) {
+  racers.put(name, racers.get(name) + result);
+}
+```
+
+**George** are **55** km în total, **Peter** - **25** și **Tom** - **19**.
+[/hint] 
+[hint]
+Tipărim câștigătorii (**top 3**):
+
+```java
+List<String> winners = new LinkedList<>();
+
+racers.entrySet().stream()
+.sorted(Map.Entry.<String, Integer>comparingByValue()
+.reversed())
+.limit(3)
+.forEach(p -> winners.add(p.getKey()));
+
+System.out.printf("1st place: %s\n" +
+  "2nd place: %s\n" +
+  "3rd place: %s\n", 
+  winners.get(0), 
+  winners.get(1), 
+  winners.get(2));
+```
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]
