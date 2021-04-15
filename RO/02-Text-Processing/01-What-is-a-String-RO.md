@@ -47,7 +47,7 @@ Principalele **caracteristici** ale **șirurilor** sunt:
 
 [slide hideTitle]
 
-# Șirurile Sunt imuabile
+# Șirurile Sunt Imuabile
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/RO/interactive-java-fundamentals-text-processing-5-strings-are-immutable-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -74,7 +74,9 @@ Când inițializați o nouă variabilă String și îi atribuiți o valoare, Jav
 Atunci când atribuiți o nouă valoare aceleiași variabile String, un nou obiect String va fi creat și locația memoriei sale va fi atribuită ca valoare variabilei voastre.
 
 Pentru a recapitula:
+
 - Obiectul String care este creat este imuabil (read-only)
+
 - Variabila String va deține doar o referință către obiectul String curent atribuit acesteia
 
 
