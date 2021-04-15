@@ -61,7 +61,7 @@ După ce ați primit comanda End, dacă există așezări existente pe lista dvs
 
 ## Ieșire
 
-După ce ați primit comanda "**End**", dacă există așezări existente pe lista dvs. de ținte, trebuie să le tipăriți pe toate, sortate după aurul lor în ordinea descrescătoare, apoi după numele lor în ordine crescătoare, în următorul format:
+Dacă cantitatea dată de aur este un număr pozitiv, măriți rezervele de aur ale orașului cu cantitatea dată și tipăriți următorul mesaj:
 
 "**Ahoy, Captain! There are** \{**count**\} **wealthy settlements to go to:**
 \{**town1**\} \-\> **Population:** \{**people**\} **citizens, Gold:** \{**gold**\} **kg**
