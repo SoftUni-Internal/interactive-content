@@ -206,7 +206,6 @@ System.out.println(isValid);
 [slide hideTitle]
 # Problem with Solution: Randomize Words
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-10-problem-and-solution-randomize-words-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Description
 You will be given a **string** that will contain words separated by a single space.
