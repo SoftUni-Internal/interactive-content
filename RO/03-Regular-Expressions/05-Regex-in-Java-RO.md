@@ -1,4 +1,4 @@
-# Expresiile regulate în Java
+# Expresiile Regulate în Java
 
 [slide hideTitle]
 #  Regex în Java
@@ -38,7 +38,7 @@ Acest obiect de potrivire vă permite apoi să executați **operații regex pe u
 [/slide]
 
 [slide hideTitle]
-# Verificarea pentru o singură potrivire
+# Verificarea Pentru o Singură Potrivire
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/RO/04.Java-Fundamentals-Regular-Expressions-19-Checking-For-A-Single-Match-and-Demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -143,7 +143,7 @@ Folosim apoi metoda `split()` care returnează o matrice de tip șir ale cărei 
 
 
 [slide hideTitle]
-# Problemă cu soluție: Match Full Name
+# Problemă cu Soluție: Match Full Name
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/RO/04.Java-Fundamentals-Regular-Expressions-25-Problem-and-Solution-match-full-name-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -271,7 +271,7 @@ Ivan Ivanov Ivan Ivanov
 
 
 [slide hideTitle]
-# Problemă cu soluție: Match Numbers
+# Problemă cu Soluție: Match Numbers
 
 [code-task title="Match Numbers" taskId="Java-Fundamentals-2-Regex-lab-Match-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
