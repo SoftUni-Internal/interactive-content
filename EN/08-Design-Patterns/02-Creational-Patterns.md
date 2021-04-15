@@ -260,3 +260,11 @@ With the builder pattern, we have control over the steps of the **construction p
 We can create a **different** representation with the **same** construction process.
 
 [/slide]
+
+[slide hideTitle]
+
+# Example: Computer Class
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-20-21-example-computer-class-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[/slide]
