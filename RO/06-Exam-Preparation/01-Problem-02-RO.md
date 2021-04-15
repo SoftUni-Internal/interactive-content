@@ -25,27 +25,28 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Scrieți un program care să verifice dacă există **locuri goale pe un lift.**
+Scrieți un program care să verifice dacă există **locuri goale într-un lift.**
 
 Fiecare dintre cabinele ascensorului nu poate găzdui **mai mult de 4 persoane.**
 
-Dacă o cabină este plină, ar trebui să îndreptați oamenii către următoarea, cu locuri disponibile.
+Dacă o cabină este plină, trebuie să îndreptați oamenii către următoarea cabină cu locuri disponibile.
 
 ## Intrare
 
-* Pe prima linie, veți primi numărul de persoane care așteaptă la coadă pentru a urca pe lift
+* Pe prima linie, veți primi numărul de persoane care așteaptă la coadă pentru a urca în lift
 
-* Pe a doua linie, veți primi starea actuală a liftului - un șir de numere "(0-4)" fiecare număr reprezentând numărul de persoane din fiecare cabină următoare, separate printr-un spațiu gol
+* Pe a doua linie, veți primi starea actuală a liftului - un șir de numere "(0-4)", fiecare număr reprezentând numărul de persoane din fiecare cabină următoare, separate printr-un spațiu gol
 
 ## Ieșire
 
-Când rămâneți fără locuri libere sau dacă nu mai există oameni la coadă, ar trebui să imprimați unul dintre următoarele mesaje:
+Când rămâneți fără locuri libere sau dacă nu mai există oameni la coadă, trebuie să imprimați unul dintre următoarele mesaje:
 
-* Dacă nu mai există oameni la coadă, dar mai sunt câteva locuri pe lift:
+* Dacă nu mai există oameni la coadă, dar mai sunt câteva locuri în lift:
 
 "**There is room for more passengers!**"
 
 Urmat de:
+
 "\{**the state of each cabin, separated by ' '**\}"
 
 * Dacă mai sunt oameni la coadă, dar nu mai sunt locuri disponibile:
@@ -53,9 +54,10 @@ Urmat de:
 "**The lift is full.** \{**people**\} **people currently in line.**"
 
 Urmat de:
+
 "\{**the state of each cabin, separated by ' '**\}"
 
-* Dacă liftul este plin și nu mai sunt oameni care așteaptă să intre, ar trebui să imprimați starea fiecărei cabine separate printr-un singur spațiu
+* Dacă liftul este plin și nu mai sunt oameni care așteaptă să intre, trebuie să imprimați starea fiecărei cabine, separată printr-un singur spațiu
 
 ## Exemplul Unu
 
