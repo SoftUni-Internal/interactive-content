@@ -211,6 +211,7 @@ console.log(person.speak());
 În acest exemplu am scris o funcție **Person**, în care am setat proprietatea **name** și metoda `speak()`.
 
 Metoda `speak()` va returna rezultatul din interpolarea șirului.
+
 Acum că am creat obiectul **Person** vom instanția o nouă variabilă folosind cuvăntul-cheie **new**.
 
 La final vom afișa rezultatul pe care îl returnează metoda `speak()`.

@@ -585,7 +585,9 @@ Când luptătorul luptă, rezistența acestuia scade cu 1 și următorul mesaj e
 
 Magii au "**name**", `health = 100` și `mana = 100`. 
 
-Fiecare mag poate face vrăji. Când se lansează o vrăjeală, mana magului scade cu 1 și următorul mesaj este imprimat pe consolă:
+Fiecare mag poate face vrăji. 
+
+Când se lansează o vrăjeală, mana magului scade cu 1 și următorul mesaj este imprimat pe consolă:
 
 "\{**mage's name**\} **cast** \{**spell**\}"
 

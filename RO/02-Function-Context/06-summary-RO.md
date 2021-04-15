@@ -31,7 +31,9 @@ console.log(praise.apply(dog,
 Permite obiectelor să împrumute metode de la alte obiecte fără ca noi să facem manual copii ale acelei metode.
 
 Proprietățile **interne** ale obiectelor care vă permit să modificați modul în care se vor comporta proprietățile obiectului:
+
 - **enumerable (enumerabil)**, **configurable (configurabil)** și **writable (modificabil)**
+
 - **seal (sigilare)** și **freeze (înghețare)** care tratează **nealterabilitatea** obiectului
 
 

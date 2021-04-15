@@ -327,7 +327,7 @@ Dacă avem o mulțime de elemente care sunt tratate în același fel, atunci, î
 
 În acest exemplu, adăugăm un ascultător părintelui, acesta fiind elementul `<ul>`.
 
-Apoi, în declarația 'if', adăugăm o condiție, astfel încât dacă dăm click pe elementul `<li>`, metoda `console.log()` să afișeze un mesaj care să ne spună exact pe ce element am dat click.
+Apoi, în declarația "if", adăugăm o condiție, astfel încât dacă dăm click pe elementul `<li>`, metoda `console.log()` să afișeze un mesaj care să ne spună exact pe ce element am dat click.
 
 
 ```js

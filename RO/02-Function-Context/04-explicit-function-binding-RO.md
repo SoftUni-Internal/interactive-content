@@ -12,7 +12,9 @@ Legarea ne permite să modificăm contextul unei funcții, schimbând în esenț
 
 Acest lucru ne permite să legăm o funcție de un anumit obiect și să o folosim ca și cum ar fi o metodă a acelui obiect.
 
-Aceasta schimbă în esență contextul `this`. Cu alte cuvinte, legăm funcția de un context la alegerea noastră.
+Aceasta schimbă în esență contextul `this`. 
+
+Cu alte cuvinte, legăm funcția de un context la alegerea noastră.
 
 Să ne uităm la un exemplu folosind `call()`:
 
@@ -94,7 +96,7 @@ De fiecare dată când am folosit `call()` contextul a `this` a fot diferit.
 
 Pentru a ilustra acest lucru cu exemplul anterior:
 
-Folosind ``call()``:
+Folosind `call()`:
 
 ```js
 console.log(praise.call(dog,
@@ -181,7 +183,9 @@ let professor = {
 };
 ```
 
-Acum imaginați-vă că studentul a avansat atât de mult încât acum este capabil să `teach()`. Folosiți `bind()` pentru a împrumuta metoda de la obiectul **professor**.
+Acum imaginați-vă că studentul a avansat atât de mult încât acum este capabil să `teach()`. 
+
+Folosiți `bind()` pentru a împrumuta metoda de la obiectul **professor**.
 
 ```js
 let teach = professor.teach.bind(student, 2);

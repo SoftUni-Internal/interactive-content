@@ -38,7 +38,7 @@ console.log(greet('Johnny'));
 
 Vom **invoke** funcția prin adăugarea unor **parentheses** după numele funcției. 
 
-- **Returned** de la funcții.
+- **Returned** de la funcții
 
 În JavaScript, funcțiile sunt tratate ca **values**.
 
@@ -155,7 +155,7 @@ console.log(olderThanTwenty);
 
 Metoda `reduce()` execută funcția callback la **each member of a given array**, rezultând o **valoare unică**.
 
-Ea acceptă doi parametri :
+Ea acceptă doi parametri:
 
 - Funcția callback **reducer**, care acceptă un `accumulator` și o `currentValue`
 - O `initialValue`, care este opțională

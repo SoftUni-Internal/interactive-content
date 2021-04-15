@@ -103,7 +103,7 @@ Codul dat produce următorul rezultat:
 
 [image assetsSrc="JS-Advanced-Intro-DOM.JPG" /]
 
-Cu acest exemplu, "**- DONE**" se adaugă la sfârșitul "**DOM Properties example**"  "**DOM Properties example - DONE**".
+Cu acest exemplu, "**- DONE**" se adaugă la sfârșitul "**DOM Properties example**" "**DOM Properties example - DONE**".
 
 Acesta este modul în care puteți schimba conținutul unei pagini web **dinamic**.
 

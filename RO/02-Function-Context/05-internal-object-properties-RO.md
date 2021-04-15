@@ -35,7 +35,7 @@ console.log(descriptor);
 
 - **Enumerable**: Putem enumera proprietățile obiectelor care sunt setate la **enumerable:true** cu bucla `for..in` sau le putem enumera folosind metoda `Object.keys()`
 
-- **Configurable** - folosit pentru a modifica comportamentul proprietății.
+- **Configurable** - folosit pentru a modifica comportamentul proprietății
 
 Setarea **configurable: false** face ca proprietatea să nu poată fi ștearsă. 
 
@@ -254,6 +254,7 @@ Puteți utiliza `Object.isFrozen(someObject)`.
 Dacă **someObject** este înghețat, acesta va reveni **true**.
 
 ## Object Seal
+
 `Object.seal()`- nu permite adăugarea de proprietăți noi obiectului și toate proprietățile acestuia devin **non-configurable (neconfigurabile)**. 
 
 Valorile proprietăților pot fi modificate.
@@ -276,7 +277,7 @@ Puteți verifica dacă un obiect este sealed cu `Object.isFrozen(someObject)`.
 
 ## Concluzie
 
-Atât **freeze** cât și **seal** se ocupă de imuabilitatea obiectului. 
+Atât **freeze** cât și **seal** se ocupă de imuabilitatea obiectului.
 
 Când utilizați `Object.freeze()` noile valori nu pot fi atribuite proprietăților.
 

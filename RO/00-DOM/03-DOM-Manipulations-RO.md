@@ -80,15 +80,19 @@ h1.style.color = 'blue'; // .color selectează proprietatea CSS care urmează s�
 Există **două** moduri de a crea elemente HTML noi.
 
 Primul mod este să creezi **direct** un element folosind comanda `.createElement`.
+
 ```js
 let h1 = document.createElement('h1');
 let div = document.createElement('div');
 ```
+
 Iar celălalt mod este prin copierea elementelor deja **existente**.
+
 ```js
 let h1 = document.getElementById('page-title');
 let newH1 = h1.cloneNode(true); //returnează un duplicat al etichetei h1 de mai sus
 ```
+
 Este important să știm că, deși aceste elemente sunt create, ele **nu există** în documentul HTML.
 
 Ele sunt doar **variabile JavaScript**. 
@@ -104,6 +108,7 @@ Ele sunt doar **variabile JavaScript**.
 Ca întotdeauna, pentru a efectua orice fel de operație asupra unui element, trebuie ca mai întâisă fie **accesat**.
 
 Iată un exemplu de cum **se** obține **și** se **elimină** un element DOM.
+
 ``` js
 <article id="post">
  <h1 id="title">Greeting post</h1>
@@ -133,7 +138,7 @@ parent.removeChild(content); //elimină elementul accesând părintele său
 [code-task title="Articles List" taskId="js-advanced-DOM-Articles-List" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 ```
 function createArticle(){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -508,7 +513,7 @@ let p = document.getElementById('my-name');
 p.textContent += 'Ellie';
 ```
 
-- `innerHTML` - Used to **get** and **change** the HTML of an element. 
+- `innerHTML` - Used to **get** and **change** the HTML of an element
 
 Folosit pentru a **obține** și pentru a **modifica** codul HTML al unui element
 
@@ -523,6 +528,7 @@ div.innerHTML += "<p>What's your name</p>";
 let input = document.getElementById('name-input');
 console.log(input.value); //înregistrează valoarea câmpului de intrare
 ```
+
 [/slide]
 
 [slide hideTitle]
@@ -540,7 +546,7 @@ Acesta este un exemplu de cod HTML pe care să lucrați:
 
 Iar aici sunt câteva dintre metodele comune:
 
-- getAttribute() - Returnează valoarea atributului elementului.
+- getAttribute() - Returnează valoarea atributului elementului
 
 Acceptă **un** parametru - **numele atributului**.
 ```js
@@ -551,6 +557,7 @@ a.getAttribute('href'); // www.google.com
 - `setAttribute()` - **Setează** valoarea elementului atributului sau îl **actualizează** dacă acesta există deja
 
 Acceptă doi parametri - **numele atributului și valoarea**.
+
 ```js
 let input = document.getElementById('first-input');
 input.setAttribute('name', 'username'); // Setează valoarea numelui atributului la „username"
@@ -559,6 +566,7 @@ input.setAttribute('name', 'username'); // Setează valoarea numelui atributului
 - `removeAttribute()` - **Elimină** din elementul HTML dat
 
 Acceptă un parametru - **numele atributului.**
+
 ```js
 let input = document.getElementById('first-input');
 input.removeAttribute('name'); // Elimină atributul de nume al intrării
@@ -587,7 +595,8 @@ const h1 = document.getElementById('title').classList;
 // ["title", "red", "left", value: "title red left"]
 
 ```
-classListare două metode, care **creează** sau **șterg** o clasă CSS:
+
+ClassListare două metode, care **creează** sau **șterg** o clasă CSS:
 
 - `add()` - Acceptă numele clasei ca parametru și îl adaugă la element
 - `remove()` - Acceptă numele clasei ca parametru și îl șterge din element

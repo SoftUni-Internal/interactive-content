@@ -355,9 +355,9 @@ Scrieți o funcție care **sorts an array** cu valori **numeric** în ordine **a
 
 Veți primi o **numeric array** și un **string** ca argumente ale primei funcții, în cod.
 
-- Dacă al doilea argument este `asc`, matricea va fi sortată în **ascending order** \(valorile cele mai mici la început\).
+- Dacă al doilea argument este `asc`, matricea va fi sortată în **ascending order** \(valorile cele mai mici la început\)
 
-- Dacă este `desc`, matricea va fi sortată în  **descending order** \(cele mai mari numere, la început\).
+- Dacă este `desc`, matricea va fi sortată în  **descending order** \(cele mai mari numere, la început\)
 
 ## Input
 
@@ -695,7 +695,7 @@ function personalBmi(name, age, weight, heightCm) {
 
 O clinică de wellness v-a trimis o ofertă  - vor să scrieți un program care să creeze **patient charts** să ofere o evaluare preliminară a stării lor. 
 
-Datele vă parvin sub forma unor **several arguments**, care descriu persoanele -  **name**, **age**, **weight** în kilograme și **height** în centimetri.
+Datele vă parvin sub forma unor **several arguments**, care descriu persoanele - **name**, **age**, **weight** în kilograme și **height** în centimetri.
 
 Programul trebuie să structureze informația într-un **object** și să o **return**  pentru procesare suplimentară.
 
@@ -704,8 +704,10 @@ Obiectul fișa pacientului trebuie să cuprindă următoarele proprietăți:
 - **Name**
   
 - **PersonalInfo** care este un obiect care cuprinde vârsta pacientului, greutatea și înălțimea, ca proprietăți
-  
-- **BMI** \- indexul masei corporale. Puteți găsi informații despre cum să calculați [aici](https://en.wikipedia.org/wiki/Body_mass_index)
+
+- **BMI** \- indexul masei corporale
+
+Puteți găsi informații despre cum să calculați [aici](https://en.wikipedia.org/wiki/Body_mass_index).
   
 - **Status**
   
@@ -734,7 +736,7 @@ Funcția trebuie să **return** un **object with the properties** descrise anter
 
 Toate valorile numerice pot fi **rounded** la cel mai apropiat număr întreg.
 
-Toate câmpurile trebuie să fie denumite **exactly as described** \(ordinea lor nu este importantă \).
+Toate câmpurile trebuie să fie denumite **exactly as described** \(ordinea lor nu este importantă\).
 
 Studiați mostra de output pentru mai multe informații.
 

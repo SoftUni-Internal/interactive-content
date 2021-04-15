@@ -16,9 +16,9 @@ O funcție poate să:
 
 Orice alt comportament este **incorrect** și devine o țintă pentru **error handling**.
 
-Când o funcție sau o metodă nu reușește să facă ceea ce indică numele său, **should** :
+Când o funcție sau o metodă nu reușește să facă ceea ce indică numele său, **should**:
 
-- Returneze o valoare specială :
+- Returneze o valoare specială:
 
 ```js live
 const years = [1991, 1968, 2009];
@@ -56,9 +56,9 @@ Cele trei tipuri comune de **errors** sunt :
 
 - **Syntax Errors**
   
-  - fiecare limbaj de programare are un set de **grammar rules** care, dacă sunt greșite, produc probleme
+   - fiecare limbaj de programare are un set de **grammar rules** care, dacă sunt greșite, produc probleme
   
-  - cele mai multe dintre [IDEs](https://en.wikipedia.org/wiki/Integrated_development_environment) au capacitatea de a atenționa în legătură cu **Syntax Errors** până în momentul scrierii codului
+   - cele mai multe dintre [IDEs](https://en.wikipedia.org/wiki/Integrated_development_environment) au capacitatea de a atenționa în legătură cu **Syntax Errors** până în momentul scrierii codului
   
 
 - **Runtime Errors**

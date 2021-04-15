@@ -91,7 +91,7 @@ Crearea unui obiect **user** cu două metode:
 
 - `printContext: printContext` - stochează funcția **printContext** definită la pasul 1 într-o metodă cu același nume
 
-- `printAnotherContext: function() { console.log(this === global); }` - metoda **printAnotherContext** verifică dacă  `this === global` și imprimă rezultatul pe consolă.
+- `printAnotherContext: function() { console.log(this === global); }` - metoda **printAnotherContext** verifică dacă  `this === global` și imprimă rezultatul pe consolă
 
 Apelarea `user.printContext();` invocă metoda care aparține obiectului **user** object. Returnează: **false**, deoarece `this` este utilizat în cadrul metodei unui obiect și returnează obiectul în sine
 
@@ -103,7 +103,7 @@ Returnează **true**, deoarece acum `this` este apelat de funcția **globalFunct
 
 `this` este într-adevăr egal cu **global**.
 
-- `user.printAnotherContext();` va returna **false** deoarece `printAnotherContext()` este o metodă a obiectului **user** și `this` va returna obiectul în sine așa cum a făcut-o cu metoda **printContext**.
+- `user.printAnotherContext();` va returna **false** deoarece `printAnotherContext()` este o metodă a obiectului **user** și `this` va returna obiectul în sine așa cum a făcut-o cu metoda **printContext**
 
 **Să rezumăm:**
 

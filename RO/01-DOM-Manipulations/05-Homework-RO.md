@@ -1409,18 +1409,15 @@ Când butonul `Encode and send it` este apăsat , ar trebui să primiți mesajul
 
 Când primiți mesajul curent, trebuie să îl codificați în felul următor:
 
-- Schimbați CODUL ASCII al fiecărui caracter din acel mesaj prin adăugarea lui 1 la NUMĂRUL ASCII curent care reprezintă acel caracter în mesaj.
+- Schimbați CODUL ASCII al fiecărui caracter din acel mesaj prin adăugarea lui 1 la NUMĂRUL ASCII curent care reprezintă acel caracter în mesaj
 
-- Eliberați zona de text a expeditorului și adăugați mesajul codificat în zona de text a destinatarului.
+- Eliberați zona de text a expeditorului și adăugați mesajul codificat în zona de text a destinatarului
 
 După aceea, când butonul `Decode and read it` este apăsat, trebuie să luați mesajul codificat din zona de text și să aplicați logica inversă:
 
 - Scădeți 1 din valoarea curentă a NUMĂRULUI ASCII care reprezintă caracterul curent în acel mesaj
 
-- Înlocuiți mesajul codificat din zona de text a destinatarului cu mesajul decodificat pentru a putea fi citit 
-
-
-
+- Înlocuiți mesajul codificat din zona de text a destinatarului cu mesajul decodificat pentru a putea fi citit
  
 # Exemplu
 

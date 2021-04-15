@@ -108,13 +108,13 @@ function toStringExtension() {
 
 Extindeți clasele **Persoană** și **Profesor** din sarcina anterioară și adăugați o clasă **Student** care moștenește de la **Persoană**.
 
-Adăugați funcția `toString ()` la toate clasele, formatul ar trebui să fie după cum urmează:
+Adăugați funcția `toString()` la toate clasele, formatul ar trebui să fie după cum urmează:
 
 - **Person** - returnează "**Persoană (nume:** \{**nume**\}**, e-mail:** \{**e-mail**\}**)**"
 - **Student** - returnează "**Student (nume:** \{**nume**\}**, e-mail:** \{**e-mail**\}**, curs:** \{**curs**\}**)**"
 - **Profesor** - returnează "**Profesor (nume:** \{**nume** \}**, e-mail:** \{**e-mail**\}**, subiect:** \{**subiect**\}**)**"
 
-Încercați să refolosiți codul folosind funcția `toString ()` din clasa de bază.
+Încercați să refolosiți codul folosind funcția `toString()` din clasa de bază.
 
 ## Intrare și ieșire
 
@@ -420,7 +420,7 @@ Implementați o altă clasă **PartyBalloon**, care moștenește clasa **Balloon
 
 Clasa **PartyBalloon** ar trebui să aibă o **panglică de proprietate** care este un obiect cu **culoare** și **lungime** - cele date la inițializare. Proprietatea panglică ar trebui să aibă un **getter**.
 
-Implementați o altă clasă **BirthdayBalloon**, care moștenește clasa **PartyBalloon** și este inițializată cu **1 parametru suplimentar** - **text** (Șir). **textul** ar trebui să fie o proprietate și ar trebui să aibă un **getter**
+Implementați o altă clasă **BirthdayBalloon**, care moștenește clasa **PartyBalloon** și este inițializată cu **1 parametru suplimentar** - **text** (Șir). **textul** ar trebui să fie o proprietate și ar trebui să aibă un **getter**.
 
 ## Sugestii
 
@@ -441,7 +441,7 @@ function solve() {
 
 Acum că avem clasa noastră de bază, putem crea prima clasă pentru copii - **PartyBalloon**, care extinde clasa de bază **Balloon**.
 
-După moștenirea clasei **Balloon**, constructorul clasei **PartyBalloon** va necesita utilizarea metodei "super()" pentru a inițializa constructorul de bază **Balloon**.
+După moștenirea clasei **Balloon**, constructorul clasei **PartyBalloon** va necesita utilizarea metodei `super()` pentru a inițializa constructorul de bază **Balloon**.
 
 De asemenea, trebuie să adăugăm proprietatea obiectului **ribbon** în constructorul clasei **PartyBalloon**.
 
@@ -1208,7 +1208,7 @@ Trebuie să creați mai multe clase pentru **Postări**.
 
 Implementați următoarele clase:
 
-- **Post**, care este inițializat cu **title** (Șir) și **conținut** (Șir).
+- **Post**, care este inițializat cu **title** (Șir) și **conținut** (Șir)
 
    - Argumentele **2** ar trebui să fie **membri publici**
    - Clasa **Post** ar trebui să aibă, de asemenea, o funcție `toString()` care returnează următorul rezultat:
