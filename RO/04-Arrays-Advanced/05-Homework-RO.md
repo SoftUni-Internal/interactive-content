@@ -745,19 +745,17 @@ Scrieți o funcție care manipulează o matrice de numere.
 
 -	"**RemoveAt** \{**index**\}": adăugați un număr la sfârșitul matricei
 
-- "**Insert** \{**number**\} \{**index**\}": introduceți un număr la un index dat
+- "**Insert** \{**number**\} \{**index**\}": introduceți un număr la un indice dat
 
-**Notă: toți indicii vor fi valabili!**
+**Notă: toți indicii vor fi valizi!**
 
-Imprimați starea finală a matricei (separat printr-un singur spațiu).
+Imprimați starea finală a matricei (separarea trebuie făcută printr-un singur spațiu).
 
-Intrarea vine ca o matrice de șiruri.
-
-Primul element va fi un șir, care conține matricea de manipulat.
+Primul element va fi un șir care conține matricea care trebuie manipulată.
 
 Fiecare alt element (comandă) pe care îl primim va fi, de asemenea, un șir.
 
-Ieșirea este matricea manipulată, pe care ar trebui s-o imprimăm pe consolă pe o singură linie, separată de un spațiu. 
+Ieșirea este matricea manipulată, pe care trebuie să o imprimăm pe consolă pe o singură linie, separată printr-un spațiu. 
 
 
 # Exemplu
