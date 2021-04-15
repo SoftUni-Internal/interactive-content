@@ -109,15 +109,15 @@ Tragerea "**Right@6@5**" \-\> "**Index 6**" este în afara intervalului (nu exis
 
 [hints]
 [hint]
-Split the first input string by the delimeter (`|`), and save the result in an array.
+Împărțiți primul șir din intrare cu ajutorul delimitatorului (`|`) și salvați rezultatul într-o matrice.
 
-Map through the elements in the **field** and convert them to `Number`.
+Parcurgeți elementele din **câmp** (field) și convertiți-le la `Number`.
 [/hint] 
 [hint]
-Use the appropriate conditional statements to handle each command type.
+Folosiți instrucțiunile condiționale potrivite pentru a gestiona fiecare tip de comandă.
 [/hint] 
 [hint]
-Print the end result in the proper format, as shown above.
+Tipăriți rezultatul final în formatul potrivit, după cum este exemplificat mai sus.
 [/hint] 
 [/hints] 
 
