@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Multi Page Applications
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-3-4-5-Multi-page-applications-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-3-4-Multi-page-applications-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Multi Page Applications** reload the entire page when a user interacts with the app.
 
@@ -18,6 +18,8 @@ We can define an application as a **Multi Page** when the **reloaded**.
 [slide hideTitle]
 
 # Multi Page Pros and Cons
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-5-Multi-page-applications-Pros-and-Cons-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Pros**:
 
@@ -37,7 +39,7 @@ We can define an application as a **Multi Page** when the **reloaded**.
 
 # Single Page Application
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-6-7-8-Single-page-applications-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-6-7-Single-page-applications-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **SPA** is an abbreviation for **Single-Page Application**.
 
@@ -64,6 +66,8 @@ Location-based **SPAs** need a special object called **Router**.
 [slide hideTitle]
 
 # SPA Pros and Cons
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-8-Single-page-applications-Pros-and-Cons-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Pros**:
 
