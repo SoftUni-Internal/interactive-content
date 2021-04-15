@@ -281,7 +281,7 @@ racers.entrySet().stream()
 .sorted(Map.Entry.<String, Integer>comparingByValue()
 .reversed())
 .limit(3)
-.forEach(p -> winners.add(p.getKey()));
+.forEach(racer -> winners.add(racer.getKey()));
 
 System.out.printf("1st place: %s\n" +
   "2nd place: %s\n" +
@@ -453,9 +453,27 @@ When you receive the **end of shift** command, print out the total amount of mon
 | %Maria%\<Cola\>\|1\|2.4\$ | Maria: Cola - 2.40 |
 | end of shift | Total income: 24.30 |
 
-### Comments
-- Each line is valid so we print the expected message for each input line, calculating the price of the order
-- In the end, we print out the total income for the day
+[hints]
+[hint]
+Each line is valid so we **print** the expected **message** for each input line, calculating the **price** of the order:
+
+```java
+double totalPrice = count * price;
+
+System.out.println(String.format(
+  "%s: %s - %.2f", customer, 
+  product, totalPrice));
+```
+[/hint] 
+[hint]
+In the end, we **print** out the total **income** for the **day**:
+
+```java
+System.out.println(String.format(
+  "Total income: %.2f", totalIncome));
+```
+[/hint] 
+[/hints] 
 
 ### Example
 | **Input** | **Output** |
@@ -466,11 +484,20 @@ When you receive the **end of shift** command, print out the total amount of mon
 | %Valid%\<Valid\>valid\|10\|valid20\$ | |
 | end of shift | |
 
-### Comments
-- On the first line, the name of the customer is not valid so we skip that line
-- On the second line, the count of the products to be sold is missing so it is not valid
-- On the third line, the price is not valid
-- The fourth line is valid so we calculate the total income for the day
+[hints]
+[hint]
+On the first line, the name of the customer is not valid so we skip that line.
+[/hint] 
+[hint]
+On the second line, the count of the products to be sold is missing so it is not valid.
+[/hint] 
+[hint]
+On the third line, the price is not valid.
+[/hint] 
+[hint]
+The fourth line is valid so we calculate the total income for the day.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]

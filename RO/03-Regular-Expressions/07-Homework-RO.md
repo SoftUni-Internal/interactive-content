@@ -280,7 +280,7 @@ racers.entrySet().stream()
 .sorted(Map.Entry.<String, Integer>comparingByValue()
 .reversed())
 .limit(3)
-.forEach(p -> winners.add(p.getKey()));
+.forEach(racer -> winners.add(racer.getKey()));
 
 System.out.printf("1st place: %s\n" +
   "2nd place: %s\n" +
@@ -451,9 +451,27 @@ Când primiți "end of shift" **imprimați suma totală** pentru ziua rotunjita 
 | %Maria%\<Cola\>\|1\|2.4\$ | Maria: Cola - 2.40 |
 | end of shift | Total income: 24.30 |
 
-### Comentarii
-- Fiecare linie este valabilă, așa că tipărim fiecare comandă, calculând prețul total al produsulelor cumpărate
-- La final imprimăm venitul total al zilei
+[hints]
+[hint]
+Fiecare linie este valabilă, așa că **tipărim** fiecare comandă, calculând **prețul** total al produsulelor cumpărate:
+
+```java
+double totalPrice = count * price;
+
+System.out.println(String.format(
+  "%s: %s - %.2f", customer, 
+  product, totalPrice));
+```
+[/hint] 
+[hint]
+La final **imprimăm** venitul **total** al **zilei**:
+
+```java
+System.out.println(String.format(
+  "Total income: %.2f", totalIncome));
+```
+[/hint] 
+[/hints] 
 
 ### Exemplu
 |**Intrare**|**Ieșire** |
@@ -464,11 +482,20 @@ Când primiți "end of shift" **imprimați suma totală** pentru ziua rotunjita 
 | %Valid%\<Valid\>valid\|10\|valid20\$ | |
 | end of shift | |
 
-### Comentarii
-- Pe prima linie, numele clientului nu este valid, așa că omitem acest rând
-- A doua linie lipsește numărul de produse
-- Pe a treia linie avem un preț nevalid
-- Și numai a patra linie este validă
+[hints]
+[hint]
+Pe prima linie, numele clientului nu este valid, așa că omitem acest rând.
+[/hint] 
+[hint]
+A doua linie lipsește numărul de produse.
+[/hint] 
+[hint]
+Pe a treia linie avem un preț nevalid.
+[/hint] 
+[hint]
+Și numai a patra linie este validă.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]
