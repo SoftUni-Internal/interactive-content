@@ -97,3 +97,24 @@ Design patterns should only be followed if the developer has good knowledge abou
 They may often be used improperly and with little thought about code flexibility.
 
 [/slide]
+
+[slide hideTitle]
+
+# Types of Design Patterns
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-10-11-types-of-design-patterns-main-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+The rest of the lesson covers the main types of design patterns as well as their practical implementation.
+
+They can be divided into three categories:
+
+- **Creational patterns**
+  - handle **initialization** and the **configuration** of objects and classes
+- **Structural patterns**
+  - responsible for **class composition** and **assembling objects**
+- **Behavioral patterns**
+  - handle **dynamic interaction** between classes and distribute **responsibilities**
+
+Try to implement each of the following design patterns and make sure you understand them before moving on to the next lesson.
+
+[/slide]
