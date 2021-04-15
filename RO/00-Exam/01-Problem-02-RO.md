@@ -80,7 +80,7 @@ Dacă indexul este nevalid, ignorați comanda.
 
 [hints]
 [hint]
-Folosiți instrucțiunileși buclele condiționale potrivite pentru a gestiona fiecare tip de comandă.
+Folosiți instrucțiunile și buclele condiționale potrivite pentru a gestiona fiecare tip de comandă.
 [/hint] 
 [/hints] 
 
