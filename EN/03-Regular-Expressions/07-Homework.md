@@ -706,16 +706,73 @@ The planets should be ordered by name **alphabetically**.
 | EHfsytsnhf?8555&I&2C9555SR | Destroyed planets: 1 |
 | | -> Cantonica |
 
-### Comments
-We receive two messages, to decrypt them we calculate the key:
-- The first message has a decryption key of: 3 (as it contains **one** occurrence of the letter "S", **one** occurrence of the letter "T" and **one** occurrence of the letter "A")
-    - So, we subtract 3 from the ASCII value of each character.
-    - The deciphered message is: PQ@Alderaa1:30000!A!->20000
-- The second message's key is: 5
-    - The deciphered message is: @Cantonica:3000!D!->4000NM
-    - 
-- Both messages are valid and they contain a planet, population, whether they are attacked or destroyed, and their soldier count
-- After decrypting all messages, we print out the information contained in them
+[hints]
+[hint]
+We receive **two** messages, to decrypt them we calculate the **key**.
+
+The **first message** has a decryption key of **3**, as it contains:
+- **one** occurrence of the letter "**S**"
+- **one** occurrence of the letter "**T**"
+- **one** occurrence of the letter "**A**"
+
+So, we subtract **3** from the **ASCII value** of each **character**:
+
+```java
+int occurrences = 0;
+
+for (int i = 0; i < message.length(); i++) {
+  if (star.find()) {
+    occurrences++;
+  }
+}
+
+for (int i = 0; i < message.length(); i++) {
+  char symbol = message.charAt(i);
+  deciphered += (char)(symbol - occurrences);
+}
+```
+
+The **deciphered** message is: `PQ@Alderaa1:30000!A!->20000`
+[/hint] 
+[hint]
+The **second message**'s key is **5**.
+
+Here, the **deciphered** message is: `@Cantonica:3000!D!->4000NM`
+[/hint] 
+[hint]
+Both messages are **valid** and they contain:
+- a **planet**
+- **population**
+- whether they are **attacked** or **destroyed**
+- their **soldier count**
+[/hint] 
+[hint]
+After decrypting **all** messages, we **print** out the **information** contained in them:
+
+```java
+System.out.println(String.format(
+  "Attacked planets: %d",
+  attacked.size()));
+
+attacked
+  .stream()
+  .sorted()
+  .forEach(planet -> 
+    System.out.println("-> " + planet));
+ 
+
+System.out.println(String.format(
+  "Destroyed planets: %d", 
+  destroyed.size()));
+
+destroyed
+  .stream() 
+  .sorted()
+  .forEach(planet -> 
+    System.out.println("-> " + planet));
+```
+[/hint] 
+[/hints] 
 
 ### Example
 | **Input** | **Output** |
@@ -725,15 +782,21 @@ We receive two messages, to decrypt them we calculate the key:
 | GQhrr\|A977777(H(TTTT | -> Cantonica |
 | EHfsytsnhf?8555&I&2C9555SR | -> Coruscant |
 
-### Comments
-We receive three messages.
-- Message one is decrypted using 4 as a key
-    - pp$##@Coruscant:2000000000!D!->5000
-- Message two is decrypted with key: 7
-    - @Jakku:200000!A!MMMM
-    - this is an invalid message as it does not contain a soldier count, so it should be ignored
-- The third message has 5 for a key
-    - @Cantonica:3000!D!->4000NM
+[hints]
+[hint]
+We receive **three** messages.
+
+**Message one** is decrypted using **4** as a key: `pp$##@Coruscant:2000000000!D!->5000`
+[/hint] 
+[hint]
+**Message two** is decrypted with **7** as a key: `@Jakku:200000!A!MMMM`
+
+This is an **invalid** message as it does **not** contain a **soldier count**, so it should be **ignored**.
+[/hint] 
+[hint]
+The **third message** has **5** for a key: `@Cantonica:3000!D!->4000NM`
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]

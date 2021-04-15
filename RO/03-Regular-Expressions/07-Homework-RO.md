@@ -699,15 +699,74 @@ Planetele ar trebui să fie ordonate după nume in mod **alfabetic**.
 | EHfsytsnhf?8555&I&2C9555SR | Destroyed planets: 1 |
 | | -> Cantonica |
 
-### Comentarii
-Primim două mesaje, pentru a le decripta calculăm cheia:
-- Primul mesaj are cheia de decriptare 3
-     - deci scoatem din fiecare caracter codul 3
-    - PQ@Alderaa1:30000!A!->20000
-- Al doilea mesaj are cheia 5
-    - @Cantonica:3000!D!->4000NM
-- Ambele mesaje sunt valabile și conțin planete, populație, tipul de atac și număr de soldați
-- După decriptarea tuturor mesajelor, imprimăm fiecare planetă conform formatului dat
+[hints]
+[hint]
+Primim **două** mesaje, pentru a le decripta calculăm **cheia**:
+
+**Primul mesaj** are cheia de decriptare 3, deoarece conține:
+- **o** apariție a literei "**S**" 
+- **o** apariție a literei "**T**"
+- **o** apariție a literei "**A**"
+
+Deci scoatem **3** din **valoarea ASCII** a fiecărui **caracter**: 
+
+```java
+int occurrences = 0;
+
+for (int i = 0; i < message.length(); i++) {
+  if (star.find()) {
+    occurrences++;
+  }
+}
+
+for (int i = 0; i < message.length(); i++) {
+  char symbol = message.charAt(i);
+  deciphered += (char)(symbol - occurrences);
+}
+```
+
+Mesajul **descifrat** este: `PQ@Alderaa1:30000!A!->20000`
+[/hint] 
+[hint]
+Al **doilea mesaj** are cheia **5**.
+
+Aici, mesajul **descifrat** este: `@Cantonica:3000!D!->4000NM`
+[/hint] 
+[hint]
+Ambele mesaje sunt **valabile** și conțin:
+- **planete**
+- **populație**
+- **tipul** de atac 
+- număr de **soldați**
+[/hint] 
+[hint]
+După **decriptarea** tuturor **mesajelor**, **imprimăm** fiecare planetă conform formatului **dat**:
+
+```java
+System.out.println(String.format(
+  "Attacked planets: %d",
+  attacked.size()));
+
+attacked
+  .stream()
+  .sorted()
+  .forEach(planet -> 
+    System.out.println("-> " + planet));
+ 
+
+System.out.println(String.format(
+  "Destroyed planets: %d", 
+  destroyed.size()));
+
+destroyed
+  .stream() 
+  .sorted()
+  .forEach(planet -> 
+    System.out.println("-> " + planet));
+```
+[/hint] 
+[/hints] 
+
 
 ### Exemplu
 |**Intrare**|**Ieșire** |
@@ -717,15 +776,21 @@ Primim două mesaje, pentru a le decripta calculăm cheia:
 | GQhrr\|A977777(H(TTTT | -> Cantonica |
 | EHfsytsnhf?8555&I&2C9555SR | -> Coruscant |
 
-### Comentarii
-Primim trei mesaje.
-- Primul mesaj este decriptat cu cheia 4:
-    - pp$##@Coruscant:2000000000!D!->5000
-- Al doilea mesaj are cheia 7:
-    - @Jakku:200000!A!MMMM
-    - Acesta este un mesaj nevalid, numărul soldaților lipsește, așa că continuăm
-- Al treilea mesaj are cheia 5
-    - @Cantonica:3000!D!->4000NM
+[hints]
+[hint]
+Primim **trei** mesaje.
+
+**Primul mesaj** este decriptat cu cheia **4**: `pp$##@Coruscant:2000000000!D!->5000`
+[/hint] 
+[hint]
+Al **doilea mesaj** are cheia **7**: `@Jakku:200000!A!MMMM`
+  
+Acesta este un mesaj **nevalid**, numărul **soldaților** lipsește, așa că **continuăm**.
+[/hint] 
+[hint]
+Al **treilea mesaj** are cheia **5**: `@Cantonica:3000!D!->4000NM`
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]
