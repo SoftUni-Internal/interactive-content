@@ -53,7 +53,7 @@ Ambele pot **lua până la doi parametri:**
 - Primul este cuvântul pe care îl caută
 - Al doilea este indicele de pornire
 
-Iată un exemplu de utilizare a `indexOf ()`:
+Iată un exemplu de utilizare a `indexOf()`:
 
 ```js live
 let str = 'I love JS a lot';
@@ -530,8 +530,8 @@ De asemenea, trebuie să le atribuim unei variabile, deoarece aceste metode **nu
 Mai întâi să vedem cum funcționează `padStart()`:
 
 ```js live
-let sentence = 'My name is John';
-let padded = sentence.padStart(2, 'Hi!');
+let sentence = 'Hey';
+let padded = sentence.padStart(15, 'Hi!');
 
 console.log(padded);
 ```
@@ -539,8 +539,8 @@ console.log(padded);
 Aici este un exemplu de `padEnd()`:
 
 ```js live
-let sentence = 'My name is John';
-let padded = sentence.padEnd(3, '.');
+let sentence = 'Hello';
+let padded = sentence.padEnd(8, 'o');
 
 console.log(padded);
 ```
