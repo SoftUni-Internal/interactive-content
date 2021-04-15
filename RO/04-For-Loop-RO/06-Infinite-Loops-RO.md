@@ -12,7 +12,7 @@ Bucla infintă `for` apare atunci când nu există **nicio condiție pentru a te
 
 Iată cum arată o buclă `for` fără o condiție finală:
 
-```java live
+```java 
 for ( ; ; ) {
   System.out.println("Hello World");
 }
