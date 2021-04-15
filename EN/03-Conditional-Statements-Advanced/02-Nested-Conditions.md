@@ -22,7 +22,7 @@ if (condition1) {
 Depending on someones **age** (integer) and their **gender** (**m** / **f**), print their personal title:
 -  "Mr." - a man (gender "m") - 16 or older
 -  "Master" - a boy (gender "m") - under 16 years old
--  "Ms." - a woman (gender "f") – 16 or molder
+-  "Ms." - a woman (gender "f") – 16 or older
 -  "Miss" - a girl (gender "f") - under 16 years old
 
 ## Solution: Personal Titles
