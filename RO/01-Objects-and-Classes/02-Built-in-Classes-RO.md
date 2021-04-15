@@ -1,4 +1,3 @@
-# Clase Încorporate în Java
 
 [slide hideTitle]
 # Clase Încorporate în Java
