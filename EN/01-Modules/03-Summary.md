@@ -3,7 +3,7 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/02.JS-Applications-Modules/EN/JS-Applications-Modules-11-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In this lesson, you learned:
+## In this lesson you learned:
 
 - What Javascript modules are
 
@@ -50,7 +50,7 @@ module.exports = 'Hello world!';
 import * as myModule from './myModule.js'
 ```
 
-## In the next lesson, you will learn:
+## In the next lesson you will learn:
 
 - What is HTTP
 

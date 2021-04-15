@@ -4,7 +4,7 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-28-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In this lesson, you learned:
+## In this lesson you learned:
 
 - **Multi Page Application** reloads the entire page when the user interacts with the app
 
@@ -34,7 +34,7 @@ history.replaceState(stateObj, '', 'newStudent.html');
 
       * it provides methods like `back()`, `forward()`, `go()` and etc
 
-## In the next lesson, you will learn:
+## In the next lesson you will learn:
 
 - Design Patterns
 

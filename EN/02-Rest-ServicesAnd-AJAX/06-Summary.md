@@ -3,7 +3,7 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-39-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In this lesson, you learned:
+## In this lesson you learned:
 
 -  HTTP - a **text-based client-server protocol** used for transferring Web resources
 
@@ -91,7 +91,7 @@
       .catch((err) => {});
    ```
 
-## In the next lesson, you will learn:
+## In the next lesson you will learn:
 
 - Asynchronous Programming and Promises
 

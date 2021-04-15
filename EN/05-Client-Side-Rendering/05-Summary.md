@@ -2,7 +2,7 @@
 
 # Summary
 
-## In this lesson, you learned:
+## In this lesson you learned:
 
 - Client-side rendering is prevalent in the modern web
     * enables instant user interaction
@@ -39,7 +39,7 @@ render(greetingTemplate(), element);
 ```
 
 
-## In the next lesson, you will learn:
+## In the next lesson you will learn:
 
 - Single page application​s
 - Navigation and history​
