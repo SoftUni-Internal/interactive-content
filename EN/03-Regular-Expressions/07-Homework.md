@@ -486,16 +486,16 @@ System.out.println(String.format(
 
 [hints]
 [hint]
-On the first line, the name of the customer is not valid so we skip that line.
+On the **first** line, the name of the customer is **not valid** so we **skip** that line.
 [/hint] 
 [hint]
-On the second line, the count of the products to be sold is missing so it is not valid.
+On the **second** line, the **count** of the products to be sold is **missing** so it is **not valid**.
 [/hint] 
 [hint]
-On the third line, the price is not valid.
+On the **third** line, the **price** is **not valid**.
 [/hint] 
 [hint]
-The fourth line is valid so we calculate the total income for the day.
+The **fourth** line is **valid** so we calculate the total income for the day.
 [/hint] 
 [/hints] 
 

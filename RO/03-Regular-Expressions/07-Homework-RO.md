@@ -484,16 +484,16 @@ System.out.println(String.format(
 
 [hints]
 [hint]
-Pe prima linie, numele clientului nu este valid, așa că omitem acest rând.
+Pe **prima** linie, numele clientului **nu este valid**, așa că **omitem** acest rând.
 [/hint] 
 [hint]
-A doua linie lipsește numărul de produse.
+A **doua** linie lipsește **numărul** de produse.
 [/hint] 
 [hint]
-Pe a treia linie avem un preț nevalid.
+Pe a **treia** linie avem un **preț nevalid**.
 [/hint] 
 [hint]
-Și numai a patra linie este validă.
+Și numai a **patra** linie este **validă**.
 [/hint] 
 [/hints] 
 
