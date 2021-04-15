@@ -103,7 +103,7 @@ public class Program {
 Scrieți un program pentru convertirea din USD în EUR:
   * Citiți **numărul în virgulă mobilă**: suma în dolari care urmează să fie convertită
   * Convertiți **dolari în euro** (utilizați **rata fixă** de dolari în euro: 0.88)
-  * Imprimați valoarea convertită în euro
+  * Tipăriți valoarea convertită în euro, formatată la a doua cifră după punctul zecimal.
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
