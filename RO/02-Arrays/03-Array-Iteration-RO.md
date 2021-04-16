@@ -25,7 +25,7 @@ console.log(capitals.toString())
 [/slide]
 
 [slide hideTitle]
-# Bucla "for-of"
+# Bucla "For-of"
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/02.JS-Fundamentals-Arrays/02.JS-Fundamentals-Arrays-23-24-for-of-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Bucla `for..of` este utilizată pentru a itera prin orice obiect iterabil, dar nu poate fi utilizată pentru a accesa indicii acestuia. 
@@ -40,7 +40,7 @@ for (const car of cars) {
 [/slide]
 
 [slide hideTitle]
-# Imprimarea Unei Matrice cu "for-of"
+# Imprimarea Unei Matrice cu "For-of"
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/02.JS-Fundamentals-Arrays/02.JS-Fundamentals-Arrays-25-Printing-an-array-with-for-of-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ``` js live
@@ -80,7 +80,7 @@ Creați un program care primește un număr **n** și o **matrice de numere**.
 Sarcina voastră este să creați **o nouă matrice** cu **n** numere, **inversate**, și să imprimați elementele sale pe o singură linie, unite printr-un singur spațiu (" ").
 
 
-## Exemplu
+## Exemple
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | reverse(3, [10, 20, 30, 40, 50]) | 30 20 10 |
@@ -205,15 +205,16 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
+# Descriere
 
 Creați un program care primește o **matrice de șiruri** (valori separate de spațiu).
 
-Sarcina dvs. este **să o inversați** și **să imprimați** elementele sale.
+Sarcina voastră este **să o inversați** și **să imprimați** elementele sale.
 
 **Inversați** elementele.
 
-## Exemplu
-|**Imput**|**Output** |
+## Exemple
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | reverse(['a', 'b', 'c', 'd', 'e']) | e d c b a  |
 | reverse(['abc', 'def', 'hig', 'klm', 'nop']) | nop klm hig def abc |
