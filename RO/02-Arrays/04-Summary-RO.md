@@ -34,7 +34,7 @@ for (const number of numbers) {
 }
 ```
 
-## În lecția umrătoare veți învăța:
+## În lecția următoare veți învăța:
 
 - Ce reprezintă o funcție?
 
@@ -42,7 +42,7 @@ for (const number of numbers) {
 
 - Funcțiile imbricate
 
-- Valoarea și tipurile de referință
+- Tipurile referință și valoare
 
 - Funcțiile săgeată
 
