@@ -1,41 +1,41 @@
-# Reflecția API
+# Reflection API
 
 [slide hideTitle]
 
-# Obiectul Clasei
+# The Class Object
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-8-9-10-the-class-object-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Să continuăm învățând despre clase folosind Java Reflection.
+Let us continue by learning about Classes using Java Reflection.
 
-Java oferă o clasă statică cu numele `Class` în `java.lang.package`.
+Java provides a static class with the name `Class` in the `java.lang.package`. 
 
-Instanțele care se află în interiorul clasei - sunt responsabile pentru interfețe și clase într-o aplicație Java care rulează.
+Instances that are inside the Class - are responsible for interfaces and classes in a running Java application.
 
-Putem crea un obiect al `Clasei` utilizând una dintre următoarele opțiuni:
+We can create an object of the `Class` by using one of the following options:
 
-- Extensia `.class` 
+- The `.class` extension
 
-**De exemplu:**
+**For example:**
 
 ``` java
 Class test = Dog.class;
 
-// Putem folosi obiectul test pentru a obține reflexia ca obiect
-// va avea toate informațiile necesare despre clasa Dog.
+// We can use the test object to achieve reflection as this object
+// will have all the needed information about the Dog class.
 ```
 
-- Metoda `forName()`
+- The `forName()` method
 
-Metoda `forName()` preia numele clasei și returnează obiectul clasei.
+The `forName()` method takes the name of the class and returns the Class object.
 
-**De examplu:**
+**For example:**
 
 ``` java
 Class test = Class.forName("Dog");
 ```
 
-Acum, să obținem numele `Class`:
+Now, let us obtain the `Class` name:
 
 
 ``` java
@@ -50,7 +50,7 @@ System.out.println(nameClass);
 com.company.Dog
 ```
 
-Dacă dorim să obținem numele clasei fără numele pachetului, putem folosi metoda `getSimpleName()`:
+If we want to obtain the class name without the package name, we can use the `getSimpleName()` method:
 
 ``` java
 Class myDogClass = Dog.class;
@@ -58,7 +58,7 @@ String nameClass = myDogClass.getSimpleName();
 System.out.println(nameClass);
 ```
 
-**Ieșirea** va fi:
+The **output** will be:
 
 ```
 Dog
@@ -72,7 +72,7 @@ Dog
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-11-base-class-and-interfaces-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-De asemenea, putem obține o clasă părinte în felul următor:
+We can also obtain a parent class the following way:
 
 ```java
 public class Dog extends Mammal {
@@ -94,16 +94,16 @@ public class Main {
 }
 ```
 
-Și **ieșirea** va fi:
+And the **output** will be:
 
 ```
 class com.company.Mammal
 ```
 
 
-Acum, să vedem cum să obținem metodele și interfețele din clasele noastre.
+Now, let us see how to obtain the methods and interfaces in our classes.
 
-Interfețele sunt, de asemenea, reprezentate de obiecte `Class` atunci când se utilizează Reflecția Java:
+Interfaces are also represented by `Class` objects when using Java Reflection:
 
 ``` java
 Class[] interfaces = aClass.getInterfaces();
@@ -113,28 +113,28 @@ Class[] interfaces = aClass.getInterfaces();
 [/slide]
 
 [slide hideTitle]
-# Problemă cu Soluție: Reflection
+# Problem with Solution: Reflection
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-12-problem-and-solution-reflection-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-12-problem-and-solution-reflection-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Reflection" taskId="Java-OOP-Advanced-Reflection-Reflection" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [code-upload allowedMemory="30" /] 
 [task-description]
-# Descriere
+# Description
 
-**Aici este un link către** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/06.Java-OOP-Advanced-Reflection-and-Annotations-Lab.zip) **pentru această problemă.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/06.Java-OOP-Advanced-Reflection-and-Annotations-Lab.zip) **for this task.**
 
-Plasați fișierul "**Reflection.java**" în folderul "**src**" din proiectul dvs.
+Place the "**Reflection.java**" file into the "**src**" folder in your project. 
 
-Folosiți **reflecția** și tipăriți câteva informații despre această clasă.
+Use **reflection** and print some information about this class. 
 
-Imprimați totul pe o nouă linie:
-- **Tipul clasei**
-- **Tipul super clasei**
-- **Toate interfețele** care sunt implementate de clasă
-- **Instantați un obiect** folosind reflecția și imprimați-l și pe acesta
+Print everything on a new line:
+- **The type of the class**
+- **The type of the super class**
+- **All interfaces** that are implemented by the class
+- **Instantiate an object** using reflection and print it as well
 
-**Clasa Reflection nu trebuie modificată în proces**
+**The Reflection class should not be altered in the process**
 
 [/task-description]
 [tests]

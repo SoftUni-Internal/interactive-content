@@ -1,30 +1,28 @@
-# Validare
+# Validation
 
 [slide hideTitle]
 
-# Validare
+# Validation
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-19-20-21-validation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Validarea datelor se realizează în metodele "setter".**
+**Data validation is performed in "setter" methods.**
 
 ```java
 private void setSalary(double salary) {
   if (salary < 460) {   
     // Validation happens here
     throw new IllegalArgumentException("Message");
-  }
+  }\
   
   this.salary = salary;
 }
 ```
-- Este mai bine să aruncați **excepții**, decât să imprimați mesaje pe consolă
+- It is better to throw **exceptions**, rather than printing messages to the console
+- Printing with `System.out` **couples** your class
+- **Clients** can **handle** class exceptions
 
-- Imprimarea cu `System.out` **cuplează** clasa dvs.
-- **Clienții** pot gestiona **excepțiile de clasă**
-
-
-**Constructorii folosesc setters privați cu logică de validare:**
+**Constructors use private setters with validation logic:**
 
 ```java
 public Person(String firstName, String lastName, 
@@ -36,15 +34,15 @@ public Person(String firstName, String lastName,
 }
 ```
 
-**Validarea se realizează în interiorul setterului:**
-- Acest lucru garantează starea validp a unui obiect încă din momentul creării sale 
-- De asemenea, garantează starea validă a setterilor publici.
+**Validation is done inside the setter:**
+- This guarantees the valid state of an object on its creation
+- It also guarantees a valid state for public setters
 
 [/slide]
 
 [slide hideTitle]
 
-# Problemă cu Soluție: Validation Data
+# Problem with Solution: Validation Data
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-22-problem-and-solution-validation-data-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -52,20 +50,20 @@ public Person(String firstName, String lastName,
 [code-upload allowedMemory="30" /]
 
 [task-description]
-# Descriere
-Extindeți clasa **Person** cu o proprie validare pentru fiecare câmp:
+# Description
+Expand the **Person** class with the proper validation for every field:
 
-- **Numele** trebuie să conțină cel puțin 3 simboluri
-- **Vârsta** nu trebuie să fie mai mică sau egală cu zero
-- **Salariul** nu poate fi mai mic decât 460.0 
+- The **Names** must be at least 3 symbols
+- The **Age** must not be less than or equal to zero
+- The **Salary** cannot be less than 460.0 
 
-Imprimați **mesajul** corespunzător pentru utilizatorul final (vedeți **exemplul** pentru mesaje). 
+Print the corresponding **message** to the end-user (see the **example** for the messages). 
 
-Nu folosiți `System.out.println()` în clasa **Person**.
+Do not use `System.out.println()` in the **Person** class.
 
 
-# Exemplu
-| **Intrare** | **ieșire** |
+# Example
+| **Input** | **Output** |
 | --- | --- |
 | 5 | A person's age cannot be zero or negative integer |
 | George Air -6 2200 | A person's first name cannot be less than 3 symbols |

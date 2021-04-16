@@ -1,10 +1,10 @@
 [slide hideTitle]
 
-# Obiecte Mutabile și Imutabile
+# Mutable and Immutable Objects
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-24-25-mutable-and-immutable-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Conținutul obiectelor **mutabile**  **poate fi alterat**:
+The contents of **mutable** objects **can be altered**:
 
 ```java
 Point myPoint = new Point(0, 0); myPoint.setLocation(1.0, 0.0);
@@ -13,7 +13,7 @@ System.out.println(myPoint);
 // java.awt.Point[1.0, 0.0]
 ```
 
-Conținutul obiectelor **immutabile** **nu poate fi alterat**:
+The contents of **immutable** objects **cannot be altered**:
 
 ```java
 String str = new String("old String");
@@ -24,11 +24,11 @@ System.out.println(str);
 [/slide]
 
 [slide hideTitle]
-# Câmpuri Mutabile
+# Mutable Fields
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-26-27-mutable-fields-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Câmpurile private mutabile nu sunt pe deplin încapsulate.**
+**Private mutable fields are not fully encapsulated.**
 
 ```java
 class Team {
@@ -41,13 +41,13 @@ class Team {
 } 
 ```
 
-Când lucrăm cu **tipuri de referință**, getterii pot deveni destul de **confuzi**.
+When we work with **reference types**, getters can get quite **confusing**. 
 
-Când **returnăm un obiect acesta este de fapt o referință** la memoria sa.
+When we **return an object**, it is actually a **reference** to its memory.
 
-De aceea, cu această referință, am putea schimba **memoria originală** care conține obiectul, schimbând obiectul în sine.
+That is why with this reference, we could change the **original memory** containing the object, changing the object itself.
 
-## Exemplu
+## Example
 
 ```java
 Team team = new Team();
@@ -58,24 +58,24 @@ team.getPlayers().clear();
 System.out.println(team.getPlayers().size());  // 0
 ```
 
-În acest caz, câmpul nostru **nu este încapsulat în siguranță** și poate fi în continuare **modificat**.
+In this case, our field is **not safely encapsulated** and it can still be **changed**.
 
-Structrua `List<>` este un tip de referință.
+The `List<>` structure is a reference type.
 
-Atunci când o pasăm în `getter`, noi oferim referința  memoriei Listei.
+When we pass it in the `getter` we give the reference to the List's memory.
 
-Cu toate că **nu avem un setter**, lista este încă **mutablă**.
+Although we **do not have a setter**, the list is still **mutable**.
 
 [/slide]
 
 [slide hideTitle]
 
-# Câmpuri Imutabile
+# Immutable Fields
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-28-imutable-fields-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- Pentru a ne securiza colecția, putem returna: `Collections.unmodifiableList()`
-  * Acesta încapsulează tipul de referință și nu permite modificările.
+- To secure our collection, we can return: `Collections.unmodifiableList()`
+  * This encloses our reference type and does not permit changes
 
 ```java
 class Team {
@@ -96,7 +96,7 @@ class Team {
 [/slide]
 
 [slide hideTitle]
-# Problemă cu Soluție: First and Reserve Team
+# Problem with Solution: First and Reserve Team
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-29-problem-and-solution-first-and-reserve-team-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -104,30 +104,30 @@ class Team {
 [code-upload allowedMemory="30" /]
 
 [task-description]
-# Descriere
-Creați o clasă  **Team**. 
+# Description
+Create a **Team** class. 
 
-Adăugați la această clasă **team** toate datele privind jucători pe care le prmiți de la intrare. 
+Add to this team all the player data that you receive from the input. 
 
-Toți jucăturii cu vârsta **mai mică** decât 40 de ani se duc la  **prima echipă**, iar restul jucătorii se duc la  **echipa de rezervă**.
+All players **younger** than 40 years old go to **the first team**, all others go to **the reserve team**.
 
-Apoi imprimați ambele liste.
+After that, print both list sizes.
 
-Clasa trebuie să conțină **câmpuri private** pentru:
-- **nume: String**
+The class should have **private fields** for:
+- **name: String**
 - **firstTeam: List(Person)**
-- **reserveTeam: List (Person)**
+- **reserveTeam: List(Person)**
 
-Clasa trebuie săp dețină **constructori**:
+The class should have **constructors**:
 - **Team(String name)**
 
-Clasa trebuie să aibă o metodă privată pentru  setName și metode publice pentru:
+The class should also have private method for setName and public methods for:
 - **getName(): String**
 - **addPlayer(Person person): void**
 - **getFirstTeam(): List(Person) (Collections.unmodifiableList)**
 - **getReserveTeam(): List(Person) (Collections.unmodifiableList)**
 
-## Această clasă trebuie să fie aplicabilă în următorul context:
+## This class should be applicable in the following context:
 ```java
 Team team = new Team (name: "Black Eagles");
 for (Person player : players) {
@@ -141,7 +141,7 @@ System.out.println("The number of players on the reserve team is:"
  + team.getReserveTeam ().size());
 ```
 
-## Nu trebuie să funcționeze în modul următor:
+## It should not function the following way:
 
 ```java
 Team team = new Team (name: "Black Eagles");
@@ -155,8 +155,8 @@ for (Person player : players) {
 }
 ```
 
-# Exemplu
-| **Intrare** | **Ieșire** |
+# Example
+| **Input** | **Output** |
 | --- | --- |
 | 5 | The number of players on the main team is: 4  |
 | George Air 20 2200 | The number of players on the reserve team is: 1  |

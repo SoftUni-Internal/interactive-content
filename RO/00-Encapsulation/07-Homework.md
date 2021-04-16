@@ -1,4 +1,4 @@
-# Teme Pentru Acasă
+# Homework
 
 [slide hideTitle]
 # Problem: Class Box
@@ -6,7 +6,7 @@
 [code-upload allowedMemory="30" /]
 
 [task-description]
-# Descriere
+# Description
 You are given a geometric figure - a **box** with fields **length, width, and height**. 
 
 Model a class representing the **Box** that can be instantiated using the same three parameters. 
@@ -15,7 +15,7 @@ Only the methods returning its surface, lateral surface and volume should be acc
 
 You can find the necessary formulas [here](http://www.mathwords.com/r/rectangular_parallelepiped.htm).
 
-## Intrare
+## Input
 On the first three lines, you will get the length, width and height of the figure. 
 
 On the next three lines, print:
@@ -25,7 +25,7 @@ On the next three lines, print:
 
 Add data validation for each parameter given to the constructor. 
 
-A box's side should not be zero or a negative number. 
+A box’s side should not be zero or a negative number. 
 
 Make a private setter that performs data validation internally.
 

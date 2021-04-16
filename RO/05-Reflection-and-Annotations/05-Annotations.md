@@ -1,83 +1,82 @@
-# Adnotări
+# Annotations
 
 [slide hideTitle]
 
-# Ce Reprezintă Adnotările 
+# What are Annotations
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-29-30-annotation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-Adnotările sunt un tip de **metadate** pe care le puteți insera în codul dvs. Java.
+Annotations are a type of **metadata** that you can insert into your Java code.
 
-Acestea sunt semnificate printr-un simbol "**@**" și sunt utilizate pentru a **descrie** părți din codul dvs.
+They are signified by an "**@**" symbol and used to **describe** parts of your code.
 
-Adnotările pot fi aplicate pentru **clase**, **câmpuri**, **metode** etc.
+Annotations can be applied to **classes**, **fields**, **methods**, etc.
 
 [/slide]
 
 [slide hideTitle]
 
-# Utilizarea Adnotărilor
+# Annotation Usage
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-31-annotation-usage-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Să vedem un exemplu:
+Let us see an example:
 
 ``` java
-@Deprecated // Aceasta indică că metoda este depreciată
+@Deprecated // That shows our method is Deprecated
 public void deprecatedMethod() {
   System.out.println("Deprecated!");
 }
 ```
+This annotation can be used to show that the marked element should no longer be used.
 
-Această adnotare poate fi folosită pentru a indica că elementul marcat nu mai trebuie să fie utilizat.
-
-Este o practică bună să folosiți adnotările, deoarece acestea pot preveni erori viitoare.
+It is a good practice to use annotations since they can prevent future errors.
 
 [/slide]
 
 
 [slide hideTitle]
 
-# Adnotări Încorporate
+# Built-in Annotations
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-32-34-built-in-annotations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Iată câteva adnotări **încorporate**:
+Here are some **built-in** annotations:
 
-- `@Override` - indică faptul că o metodă suprascrie sau înlocuiește comportamentul unei metode moștenite
+- `@Override` - indicates that a method overrides or replaces the behavior of an inherited method
 
-- `@Deprecated` - marchează un API care nu mai este destinat utilizării
+- `@Deprecated` - marks an API that is not intended for use anymore
 
-- `@SupressWarning` - folosit pentru a dezactiva unele avertismente ale compilatorului
+- `@SupressWarning` - used to diseable some compiler warnings
 
-Să vedem cum putem folosi acest lucru:
+Let us see how we can use this:
 
 ```java
 @SuppressWarnings(value = "unchecked")
 public <T> void warning(int size) {
-  T[] unchecked = (T[]) new Object[size]; // Unde (T[]) generează o avertizare de compilare
+  T[] unchecked = (T[]) new Object[size]; // Where (T[]) generates compiler warning
 }
 ```
 [/slide]
 
 [slide hideTitle]
 
-# Crearea Adnotărilor
+# Creating Annotations
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-35-36-creating-annotations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Putem crea adnotări personalizate utilizând cuvântul cheie **@interface**.
+We can create Custom Annotations using the **@interface** keyword.
 
-Iată câteva informații suplimentare pe care trebuie să le aveți în vedere atunci când creați adnotări personalizate:
+Here are is some additional information to keep in mind when creating custom annotations:
 
-- Metodele pot avea valori implicite
+- Methods can have default values
 
-- Tipurile de returnare sunt limitate la **primitive**, **Șir**, **Clasă**, **tipru enum**, **adnotări** și **matrice** ale tipurilor precedente
+- Return types are restricted to **primitives**, **String**, **Class**, **enums**, **annotations**, and **arrays** of the preceding types
 
-- Declarațiile metodei noastre nu trebuie să arunce nicio clauză sau să aibă parametri
+- Our method declarations must not throw any clause or have any parameters
 
-Acesta este un **exemplu** de adnotare personalizată:
+This is an **example** of a custom annotation:
 
 ``` java
 @interface MyAnnotation {
@@ -88,9 +87,9 @@ Acesta este un **exemplu** de adnotare personalizată:
 }
 ``` 
 
-Putem observa că fiecare element este definit similar unei definiții dintr-o interfață.
+We can notice that every element is defined similarly to one definition in an interface.
 
-Pentru a folosi adnotarea noastră personalizată, putem face următoarele:
+To use our custom created annotation we can do the following:
 
 ``` java
 @MyAnnotation(
@@ -108,23 +107,23 @@ public class MyClass {
 
 [slide hideTitle]
 
-# Adnotări Meta 
+# Meta Annotations 
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-37-38-meta-annotations-target-and-retention-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Un alt lucru pe care îl putem face este să specificăm unde se aplică adnotarea.
+Another thing we can do is to specify where the annotation is applicable.
 
 ## Target
 
-Putem realiza acest lucru folosind: `@Target`:
+We can achieve this using: `@Target`:
 
 ``` java
-@Target(ElementType.FIELD) // Este folosit doar pentru adnotarea câmpurilor
+@Target(ElementType.FIELD) // it is used to annotate fields only
 public @interface FieldAnnotation {
 }
 ```
 
-"ElementType" disponibile sunt:
+The available `ElementType`s are:
 
 - **CONSTRUCTOR**
 - **FIELD**
@@ -136,16 +135,16 @@ public @interface FieldAnnotation {
 
 ## Retention
 
-Folosim `@Retention` pentru a specifica dacă adnotarea noastră personalizată ar trebui să fie disponibilă în timpul rulării.
+We use `@Retention` to specify if our custom annotation should be available during runtime.
 
 ``` java
-@Retention(RetentionPolicy.RUNTIME) //putem obține informații în timpul rulării
+@Retention(RetentionPolicy.RUNTIME) // we can get info at runtime
 public @interface RuntimeAnnotation {
   // ... logic here
 }
 ```
 
-Alte **retention policies**:
+Other **retention policies**:
 
 - **SOURCE**
 - **CLASS**
@@ -157,25 +156,25 @@ Alte **retention policies**:
 
 [slide hideTitle]
 
-# Obținerea Adnotărilor
+# Obtaining Annotations
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-41-42-43-annotations-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Putem folosi metoda `getAnnotations()` pentru a obține toate adnotările de clasă.
+We can use the `getAnnotations()` method to obtain all class annotations.
 
 ```java
 Annotation[] annotations = aClass.getAnnotations();
 ```
 
-Dacă trebuie să obținem adnotări de parametri, putem folosi următoarea sintaxă:
+If we need to obtain parameter annotations, we can use the following syntax:
 
 ```java
 Annotation[][] parameterAnnotations = method.getParameterAnnotations();
 ```
 
-Această metodă returnează o matrice de adnotări bidimensională, reprezentând adnotările obiectului metodei.
+This method returns a two-dimensional Annotation array, representing the annotations of the method object.
 
-De asemenea, putem obține câmpurile și metodele adnotărilor:
+We can also obtain the fields and methods of the annotations:
 
 ``` java
 Annotation[] fieldAnnotations = field.getDeclaredAnnotations();
@@ -189,23 +188,20 @@ Annotation[] methodAnnotation = method.getDeclaredAnnotations();
 [/slide]
 
 [slide hideTitle]
-# Problemă cu Soluție: Create Annotation
+# Problem with Solution: Create Annotation
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-39-problem-and-solution-create-annotation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-39-problem-and-solution-create-annotation-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Create Annotation" timeLimit=5000 taskId="Java-OOP-Advanced-Reflection-Create-Annotation" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 [task-description]
-# Descriere
+# Description
+Create a **Subject** annotation with a **String**\[\] element called **categories**, which: 
+- Should be available at runtime
+- Can be placed only on types
 
-Creați o adnotare **Subject** cu un element **Șir** \[\] numit **categories**, care:
-
-- Ar trebui să fie disponibil la rulare
-
-- Poate fi plasat numai pe tipuri
-
-# Exemple
+# Example
 
 ```java
 @Subject(categories {"Test", "Annotations"})
@@ -352,24 +348,24 @@ Test Passed!
 
 
 [slide hideTitle]
-# Problemă cu soluție: Coding Tracker
+# Problem with Solution: Coding Tracker
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-44-problem-and-solution-coding-tracker-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-44-problem-and-solution-coding-tracker-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Coding Tracker" timeLimit=5000 taskId="Java-OOP-Advanced-Reflection-Coding-Tracker" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 [task-description]
+# Description
+Create an **Author** annotation with a **String** element called **name**, which:
+- Should be available at runtime
+- Can be placed only on methods
 
-# Descriere
-Creați o adnotare **Autor** cu un element **Șir** numit **name**, care:
-- Ar trebui să fie disponibil la rulare
-- Poate fi plasat numai pe metode
-
-Creați o clasă **Tracker** cu o metodă:
+Create a **Tracker** class with a method:
 - **public static void printMethodsByAuthor()**
 
-# Exemplu
+
+# Example
 
 ```java
 @Author (name = "George")

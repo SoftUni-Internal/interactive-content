@@ -1,43 +1,38 @@
-# Teme Pentru Acasă
+# Homework 
 
 [slide hideTitle]
-# Problemă: Harvesting Fields
+# Problem: Harvesting Fields
 [code-task title="Harvesting Fields" taskId="oop-advanced-java-reflection-and-annotations-Harvesting-Fields" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-# Descriere
+# Description
 
-**Aici este un link către** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/Java-OOP-Advanced-Reflection-and-Annotations-harvestingFields.zip) **pentru această problemă.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/Java-OOP-Advanced-Reflection-and-Annotations-harvestingFields.zip) **for this task.**
 
-Veți primi o clasă **RichSoilLand** cu o mulțime de câmpuri, pe care ar trebui să le recoltați.
+You will receive a **RichSoilLand** class with lots of fields, which you should harvest. 
 
-Recoltarea înseamnă că trebuie să imprimați informații despre fiecare **câmp** într-un format dat (consultați datele de ieșire).
+Harvesting means that you must print out information on each **field** in a given format (see the output).
 
-## Intrare
-Veți primi maximum 100 de linii cu una dintre următoarele comenzi:
+## Input
+You will receive a maximum of 100 lines with one of the following commands:
+- **private** - print all private fields
+- **protected** - print all protected fields
+- **public** - print all public fields
+- **all** - print ALL declared fields
+- **HARVEST** - end the input
 
-- **private** - tipăriți toate câmpurile private
+## Output
+For each command, you must print the **fields** that have the **given access modifier**, as described in the input section. 
 
-- **protected** - tipăriți toate câmpurile protejate
-
-- **public** - tipăriți toate câmpurile publice
-
-- **all** - tipărește TOATE câmpurile declarate
-
-- **HARVEST** - încheie intrarea
-
-## Ieșire
-Pentru fiecare comandă, trebuie să imprimați **câmpurile** care au **modificator de acces**, așa cum este descris în secțiunea de intrare.
-
-Formatul în care ar trebui tipărite câmpurile este:
+The format in which the fields should be printed is:
 
 "\{**access modifier**\} \{**field type**\} \{**field name**\}"
 
 
-# Exemplu
+# Examples
 
-## Exemplu 1
-| **Intrare** | **Ieșire** |
+## Example 1
+| **Input** | **Output** |
 | --- | --- |
 | protected | protected String testString |
 | HARVEST | protected double aDouble |
@@ -52,8 +47,8 @@ Formatul în care ar trebui tipărite câmpurile este:
 |  | protected Stream moarStreamz |
 
 
-## Exemplu 2
-| **Intrare** | **Ieșire** |
+## Example 2
+| **Input** | **Output** |
 | --- | --- |
 | private | private int testInt |
 | public | private long testLong |
@@ -460,25 +455,25 @@ private Stream secretStream
 [/slide]
 
 [slide hideTitle]
-# Problemă: Black Box Integer
+# Problem: Black Box Integer
 [code-task title="Black Box Integer" taskId="oop-advanced-java-reflection-and-annotations-Black-Box-Integer" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-# Descriere
+# Description
 
-**Aici este un link către** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/Java-OOP-Advanced-Reflection-and-Annotations-blackBoxInteger.zip) **pentru această problemă.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/Java-OOP-Advanced-Reflection-and-Annotations-blackBoxInteger.zip) **for this task.**
 
-Vreți să-l ajutați pe un prieten de-al dvs. care este încă la cursul OOP Basics.
+You want to help a buddy of yours who is still in the OOP Basics course.
 
-El a făcut o clasă cu toți membrii privați.
+He has made a class with all private members. 
 
-Sarcinile dvs. sunt să **instanțiați** un obiect din clasa sa (toate cu o valoare inițială 0) și apoi **să invocați** diferitele metode pe care le are.
+Your tasks are to **instantiate** an object from his class (all with a start value of 0) and then **invoke** the different methods it has. 
 
-Nu ar trebui **să** schimbați nimic din clasă.
+Your should **not** change anything in the class itself. 
 
-Clasa în sine se numește **BlackBoxInt**. Este un pachet pentru primitivul **int**.
+The class itself is called **BlackBoxInt**. It is a wrapper for the **int** primitive. 
 
-Metodele pe care le are sunt:
+The methods it has are:
 
 ```java
 private void add (int addend) {
@@ -505,27 +500,25 @@ private void rightShift (int shifter) {
     this.innerValue >>= shifter;
 }
 ```
-## Intrare
-Intrarea va consta din linii în formă:
+## Input
+The input will consist of lines in the form:
 
 "\{**command name**\}_\{**value**\}"
 
-Exemplu: **add_115**
+Example: **add_115**
 
-Intrarea va fi întotdeauna aplicabilă și în formatul descris, deci nu este nevoie să o verificați în mod explicit.
+The input will always be applicale and in the described format, so there is no need to check it explicitly. 
 
-Nu mai primiți intrări când întâlniți comanda: **END**.
+You stop receiving input when you encounter the command: "**END**".
+## Output
+Each command (except the **END** one) should print the current value of **innerValue** of the **BlackBoxInt** object you instantiated. 
 
-## Ieșire
+The goal is not to override the **toString** method in the class.
 
-Fiecare comandă (cu excepția celei **END**) ar trebui să imprime valoarea curentă a **Valorii interioare** a obiectului **BlackBoxInt** pe care l-ați instanțiat.
+You shoudl get each value from the **private** field.
 
-Scopul nu este de a suprascrie metoda **toString** din clasă.
-
-Trebuie să obțineți fiecare valoare din câmpul **private**.
-
-# Exemplu
-| **Intrare** | **Ieșire** |
+# Example
+| **Input** | **Output** |
 | --- | --- |
 | add_999999 | 999999 |
 | subtract_19 | 999980 |
@@ -679,65 +672,64 @@ END
 [/slide]
 
 [slide hideTitle]
-# Problemă: BarracksWars - A New Factory
+# Problem: BarracksWars - A New Factory
 [code-task title="BarracksWars - A New Factory" taskId="oop-advanced-java-reflection-and-annotations-BarracksWars-A-New-Factory" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-# Descriere
+# Description
 
-**Aici este un link către** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/Java-OOP-Advanced-Reflection-and-Annotations-barracksWars.zip) **pentru această ptoblemă.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/Java-OOP-Advanced-Reflection-and-Annotations-barracksWars.zip) **for this task.**
 
-Vi se oferă un mic proiect bazat pe consolă numit "Barracks".
+You are given a small console-based project called "Barracks". 
 
-Proiectul are două funcționalități:
+The project has two functionalities:
+- adding new units to its repository
+- printing a report with statistics about the units currently in the repository
 
-- Adăugarea de noi unități în depozitul său
+First, let us go over the original task before this project was created.
 
-- Tipărirea unui raport cu statistici despre unitățile aflate în prezent în depozit
+## Input
+The input consists of multiple commands, each on a separate line. 
 
-Mai întâi, haideți să trecem peste sarcina inițială înainte de crearea acestui proiect.
+The possible commands are:
+- **add** \{**Archer/Swordsman/Pikeman/**\{**…**\}\} - adds a unit to the repository
+- **report** - prints a lexicological ordered statistic about the units in the repository
+- **fight** - ends the input intake
 
-## Intrare 
-Intrarea constă din mai multe comenzi, fiecare pe o linie separată.
+## Output
+Each command except **fight** should produce output.
+- **add** should print: 
 
-Comenzile posibile sunt:
-- **add** \{**Archer/Swordsman/Pikeman/**\{**…**\}\}  - adaugă o unitate în depozit
-- **report** - tipărește o statistică lexicologică ordonată despre unitățile din depozit
-- **fight** - încheie aportul de intrare
+    "\{**Archer/Swordsman/Pikeman/**\{**…**\}\} **added!**"
 
-## Ieșire 
-Fiecare comandă, cu excepția **fight**, ar trebui să producă rezultate ieșire.
-- **add** ar trebui să imprime:
+- **report** should print all the information in the repository in the format: 
 
-     "\{**Archer/Swordsman/Pikeman/**\{**…**\}\} **added!**"
+    "\{**UnitType**\} -\> \{**UnitQuantity**\}", sorted by UnitType
 
-- **report** ar trebui să tipărească toate informațiile din depozit în format:
+## Constraints
+- The input will consist of no more than **1000** lines
+- The **report** command will never be given before a valid **add** command is provided
 
-    "\{**UnitType**\} -\> \{**UnitQuantity**\}", sortate după UnitType
+## Your Task
+You have to **study the code of the project and figure out how it works.**
 
-## Limitări
-- Introducerea va consta din cel mult **1000** linii
-- Comanda **report** nu va fi dată niciodată înainte să fie furnizată o comandă validă **add**
+There are parts of it that are not implemented (marked with "TODO"). 
 
-## Sarcina dvs.
-Trebuie să **studiați codul proiectului și să aflați cum funcționează.**
+You must implement the functionality of the **createUnit** method in the **UnitFactoryImpl** class so that it records a unit based on the unit type received as a parameter. 
 
-Există părți ale acestuia care nu sunt implementate (marcate cu "TODO").
+Implement it in such a way that whenever you add a new unit, it can be created without the need to change anything in the **UnitFactoryImpl** class (hint - use reflection). 
 
-Trebuie să implementați funcționalitatea metodei **createUnit** din clasa **UnitFactoryImpl** astfel încât să înregistreze o unitate pe baza tipului de unitate primit ca parametru.
+You can use the approach known as: **Simple Factory**.
 
-Implementați-o în așa fel încât oricând adăugați o unitate nouă, aceasta poate fi creată fără a fi nevoie să schimbați nimic din clasa **UnitFactoryImpl** (sugestie - utilizați reflecția).
+Add two new unit classes (there will be tests that require them) - **Horseman** with 50 health and 10 attack and **Gunner** with 20 health and 20 attack.
 
-Puteți utiliza abordarea cunoscută sub numele de: **Simple Factory**.
+If you do everything correctly, you should add code only to the **factories** and **units** packages.
 
-Adăugați două clase de unități noi (vor exista teste care le necesită) - **Horseman** cu 50 de sănătate și 10 atac și **Gunner** cu 20 de sănătate și 20 de atac.
 
-Dacă faceți totul corect, ar trebui să adăugați cod numai la pachetele **factories** și **units**.
+# Examples
 
-# Exemplu
-
-## Exemplu 1
-| **Intrare** | **Ieșire** |
+## Example 1
+| **Input** | **Output** |
 | --- | --- |
 | add Swordsman | Swordsman added! |
 | add Archer | Archer added! |
@@ -753,8 +745,8 @@ Dacă faceți totul corect, ar trebui să adăugați cod numai la pachetele **fa
 |  |  |
 
 
-## Exemplu 2
-| **Intrare** | **Ieșire** |
+## Example 2
+| **Input** | **Output** |
 | --- | --- |
 | add Pikeman | Pikeman added! |
 | add Pikeman | Pikeman added! |
@@ -1078,25 +1070,24 @@ Swordsman -\> 2
 [/slide]
 
 [slide hideTitle]
-# Problemă: BarracksWars - The Commands Strike Back
+# Problem: BarracksWars - The Commands Strike Back
 [code-task title="BarracksWars - The Commands Strike Back" taskId="oop-advanced-java-reflection-and-annotations-BarracksWars-The-Commands-Strike-Back" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-# Descriere
+# Description
+As you might have noticed, the commands in the project from **Problem 3** are implemented in a switch case with method calls in the **Engine** class. 
 
-După cum ați fi observat, comenzile din proiect din **Problema 3** sunt implementate într-un caz de comutare cu apeluri de metodă din clasa **Engine**.
+Although this approach works, it is flawed because you have to add a new case for each command. 
 
-Deși această abordare funcționează, este eronată, deoarece trebuie să adăugați un caz nou pentru fiecare comandă.
+In some projects, you might not have access to the engine, and this would not work. 
 
-În unele proiecte, este posibil să nu aveți acces la engine, iar acest lucru nu ar funcționa.
+If this project got outsourced the outsourcing firm might not have access to the Engine. 
 
-Dacă acest proiect a fost externalizat, firma de externalizare ar putea să nu aibă acces la engine.
+Make it so whenever they want to add a new command they will not have to change anything in the **Engine**.
 
-Faceți-o astfel încât, ori de câte ori vor să adauge o comandă nouă, nu vor trebui să schimbe nimic în **Engine**.
+To do so, employ the [Command Pattern](https://www.baeldung.com/java-command-pattern).
 
-Pentru aceasta, folosiți [Modelul de comandă](https://www.baeldung.com/java-command-pattern).
-
-Iată cum ar trebui să arate comanda de bază (abstractă):
+Here is how the base (abstract) command should look like:
 
 ```java
 public abstract class Command implements Executable {
@@ -1125,26 +1116,25 @@ public abstract class Command implements Executable {
     }
 }
 ```
-Observați cum toate comenzile care îl extind vor avea atât un **Repository** cât și un **UnitFactory**, deși nu toate au nevoie de acestea.
+Notice how all commands that extend this one will have both a **Repository** and a **UnitFactory**, although not all of them need these. 
 
-Putem permite acest lucru, deoarece pentru ca reflecția să funcționeze, avem nevoie ca toți constructorii să accepte aceiași parametri.
+We can allow this, because for reflection to work, we need all constructors to accept the same parameters. 
 
-Vom vedea cum să rezolvăm această problemă în **Problema 5.**
+We will see how to go around this issue in **Problem 5.**
 
-După ce ați implementat modelul, adăugați o nouă comandă.
+Once you have implemented the pattern, add a new command. 
 
-Ar trebui să aibă următoarea sintaxă:
+It should have the following syntax:
+- **retire** \{**UnitType**\} - All it does is **remove** a unit of the provided type from the repository
+    - if there are no such units currently in the repository, print: "**No such units in repository.**"
+    - if there is such a unit, print: "\{**UnitType**\} **retired!**"
 
-- **retire**\{**UnitType**\} - Tot ce face este **eliminați** o unitate din tipul furnizat din depozit
-     - dacă nu există astfel de unități în prezent în depozit, tipăriți: "**No such units in repository.**"
-     - dacă există o astfel de unitate, tipăriți: "\{**UnitType**\} **retired!**"
+To implement this command, you will also have to implement a corresponding method in the **UnitRepository.**
 
-Pentru a implementa această comandă, va trebui, de asemenea, să implementați o metodă corespunzătoare în **UnitRepository.**
+If you do everything correctly for this problem, you should write/refactor code only in the **core** and **data** packages.
 
-Dacă faceți totul corect pentru această problemă, ar trebui să scrieți/refactorizați codul numai în pachetele **core** și **data**.
-
-# Exemplu
-| **Intrare** | **Ieșire** |
+# Example
+| **Input** | **Output** |
 | --- | --- |
 | retire Archer | No such units in repository. |
 | add Pikeman | Pikeman added! |
@@ -1354,31 +1344,30 @@ Swordsman -\> 0
 [/slide]
 
 [slide hideTitle]
-# Problemă: BarracksWars - Return of the Dependencies
+# Problem: BarracksWars - Return of the Dependencies
 [code-task title="BarracksWars - Return of the Dependencies" taskId="oop-advanced-java-reflection-and-annotations-BarracksWars-Return-of-the-Dependencies" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-# Descriere
-În partea finală a acestei trilogii de probleme epice, vom rezolva problema în care toate comenzile primesc toate clasele de utilități ca parametri în constructorii lor.
+# Description
+In the final part of this epic problem trilogy, we will resolve the issue where all Commands receive all utility classes as parameters in their constructors. 
 
-Putem realiza acest lucru folosind o abordare numită **container de injecție de dependență**.
+We can accomplish this by using an approach called **dependency injection container**. 
 
-Această abordare este utilizată în multe cadre, cum ar fi **Spring** - de exemplu.
+This approach is used in many frameworks, like **Spring** - for instance.
 
-Vom face o mică schimbare în această abordare.
+We will do a little twist on that approach. 
 
-Eliminați toate câmpurile din comanda abstractă, cu excepția **datelor**.
+Remove all fields from the abstract command except the **data**. 
 
-În schimb, puneți câmpurile de care are nevoie fiecare comandă în clasa concretă.
+Instead, put any fields each command needs in the concrete class. 
 
-Creați o adnotare numită **Inject** și faceți-o utilizabilă numai pe câmpuri.
+Create an annotation called **Inject** and make it usable only on fields. 
 
-Puneți adnotarea peste câmpurile pe care trebuie să le setăm prin reflecție.
+Put the annotation over the fields we need to set through reflection. 
 
-Odată ce ați pregătit acest lucru, adăugați codul de reflecție necesar în **Interpretul de comandă** (pe care ar fi trebuit să îl refactorați din motor în **Problema 4**).
+Once you have prepared this, add the necessary reflection code in the **Command Interpreter** (which you should have refactored out from the engine in **Problem 4**).
 
-Utilizați testele de la problema 4 pentru a testa soluția.
-
+Use the tests from Problem 4 to test your solution.
 
 [/task-description]
 [code-upload allowedMemory="30" /]

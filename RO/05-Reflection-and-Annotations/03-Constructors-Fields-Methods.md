@@ -1,33 +1,33 @@
-# Constructori, Câmpuri și Metode
+# Constructors, Fields and Methods
 
 [slide hideTitle]
 
-# Constructori
+# Constructors
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-14-16-constructors-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Să vedem cum să obținem obiecte constructoare.
+Let us see how to obtain constructor objects.
 
-Putem folosi **clasa constructor** care oferă următoarele metode în acest scop:
+We can use the **constructor class** which provides the following methods for this purpose:
 
 ```java
 Constructor[] ctors = aClass.getConstructors();
-
-Această metodă ne permite să obținem numai constructori publici, declarați în clasa noastră și superclasa sa.
+// This method allows us to only obtain public constructors, declared in our class and its superclass
 ```
-Dacă dorim să obținem toți constructorii declarați, putem folosi metoda `getDeclaredConstructors():`
+
+If we want to obtain all declared constructors, we can use the `getDeclaredConstructors()` method:
 
 ``` java
-Constructor[] ctor = aClass.getDeclaredConstructors();
+Constructor[] ctors = aClass.getDeclaredConstructors();
 ```
 
-De asemenea, putem obține constructorul după parametrii săi:
+Also, we can obtain the constructor by its parameters:
 
 ```java
 Constructor ctor = aClass.getConstructor(String.class);
 ```
 
-Să instanțiem obiecte folosind Obiectul Constructor:
+Let us instantiate objects using the Constructor Object:
 
 ``` java
 Constructor constructor = MyObject.class.getConstructor(String.class);
@@ -35,61 +35,61 @@ MyObject myObject = (MyObject)
         constructor.newInstance("arg1");
 ```
 
-Metoda "newInstance()" ia o cantitate opțională de parametri.
+The `newInstance()` method takes an optional amount of parameters.
 
-Trebuie să furnizăm exact un parametru pe argument în constructorul pe care îl invocăm.
+We must supply exactly one parameter per argument in the constructor which we are invoking.
 
-Ca și în codul de mai sus - Este un constructor care acceptă un `string`, deci ar trebui să oferim un `string`.
+Like in the code above - It is a constructor acceptiong a `String`, so we should provide a `String`.
 
 [/slide]
 
 [slide hideTitle]
 
-# Numele și Tipul Câmpurilor
+# Fields Name and Type
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-17-18-fields-name-and-type-fields-set-and-get-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-În mod analog modului în care "obținem" constructori, putem obține **membri ai clasei**.
+Analogically to the way we "get" constructors, we can obtain **class members**.
 
-Să vedem cum putem primi toate câmpurile **publice**:
+Let us see how we can receive all **public** fields:
 
 ``` java
 Field field = aClass.getField("fieldname");
 Field[] fields = aClass.getFields();
 ```
 
-Putem folosi `getDeclaredFields()` pentru a obține **toate** câmpurile:
+We can use `getDeclaredFields()` to obtain **all** fields:
 
 ``` java
 Field[] fields = aClass.getDeclaredFields();
 ```
 
-Există, de asemenea, o modalitate de a obține numele și tipurile câmpurilor noastre:
+There is also a way to obtain our field names and types:
 
 ``` java
 String fieldName = field.getName();
 Object fieldType = field.getType();
 ```
 
-Să discutăm cum putem seta valoarea unui câmp prin reflecție.
+Let us discuss how we can set the value for a field via reflection.
 
 ``` java
 Field field = targetClass.getDeclaredField(fieldName);
-field.setAccessible(true); // Trebuie să schimbăm comportamentul AccessibleObject.
+field.setAccessible(true); // We need to change the behavior of the AccessibleObject.
 
-field.set(object, value); // Parametrul obiect trecut la metoda get și set
-                          // ar trebui să fie o instanță a clasei care deține câmpul.
+field.set(object, value); // The object parameter passed to the get and set method 
+                          // should be an instance of the class that owns the field.
 ```
 
 [/slide]
 
 [slide hideTitle]
 
-# Metode
+# Methods
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-19-20-methods-methods-invoke-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Dacă avem o `clasă` numită Dog cu aceste metode înăuntru:
+If we have a `class` called Dog with these methods inside:
 
 ```java
 public class Dog extends Mammal {
@@ -106,7 +106,7 @@ public class Dog extends Mammal {
 
 ```
 
-Putem **obține** aceste metode cu următoarea sintaxă:
+We can **obtain** these methods with the following syntax:
 
 ```java
 public class Main {
@@ -117,8 +117,7 @@ public class Main {
     }
 ```
 
-**Ieșirea** va fi:
-
+The **output** will be:
 ```
 method walk
 method makeSound
@@ -134,68 +133,68 @@ method notify
 method notifyAll
 ```
 
-Pe lângă **metodele personalizate** pe care le-am definit (`walk`, `makeSound`, `eat`) avem și metode implicite (`wait`, `egal`, `toString`, `hashCode` etc.).
+Besides the **custom methods** we defined (`walk`, `makeSound`, `eat`) we also have default methods (`wait`, `equals`, `toString`, `hashCode`, etc).
 
-De asemenea, putem obține metode cu parametrii și tipul de returnare și le putem invoca.
+We can also obtain methods with their parameters and return type and invoke them.
 
-Putem obține toate metodele publice astfel:
+We can obtain all public methods like this:
 
 ```java
 Method[] methods = aClass.getMethods();
 Method method = aClass.getMethod("doSomething", String.class);
 ```
 
-## Obținerea de metode fără parametri
+## Getting Methods Without Parameters
 
-De asemenea, putem obține metode fără parametri:
-
+We can also obtain methods without parameters:
 ```java 
 Method method = aClass.getMethod("doSomething", null); 
-//"nul" este setat atunci când dorim o metodă fără parametri.
+// `null` is set when we want a method without parameters. 
 ```
 
-## Obținerea parametrilor unei metode și tipul de returnare
+## Getting a Method's Parameters And Return Type
 
-După ce obținem o metodă dată, putem obține parametrii și tipul de returnare:
+After we obtain a given method we can get its parameters and return type:
 
 ```java
 Class[] paramTypes = method.getParameterTypes();
 Class returnType = method.getReturnType();
 ```
 
-## Obțineți metode cu parametri
+## Get Methods With Parameters
 
 ```java
 Method method = myObject.class.getMethod("methodName", String.class);
 Object returnValue = method.invoke(null, "arg1"); 
-// Folosim nul pentru metodele statice
+// We use null for static methods
 ```
 
 [/slide]
 
 [slide hideTitle]
-# Problemă cu Soluție: Getters and Setters
+# Problem with Solution: Getters and Setters
 
 [code-task title="Getters and Setters" taskId="Java-OOP-Advanced-Reflection-Getters-And-Setters" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-# Descriere
+# Description
 
 
-Utilizați reflecția pentru a obține toate metodele **Reflection**.
+Use reflection to get all of the **Reflection** methods. 
 
-Apoi pregătiți un algoritm care va recunoaște care sunt metodele **getters** și **seters**.
+Then prepare an algorithm that will recognize which methods are **getters** and **setters**. 
 
-Sortați fiecare colecție **alfabetic** după numele metodelor.
+Sort each collection **alphabetically** by method names.
 
-Imprimați pe consolă fiecare **getter** pe o nouă linie în format:
-- "\{**nume**\} **va returna un câmp al clasei** \{**Tip de returnare**\}"
+Print to the console each **getter** on a new line in the format:
+- "\{**name**\} **will return a field of the class** \{**Return Type**\}"
 
-Apoi tipăriți toate setters în format:
-- „\{**nume**\} **va seta un câmp al clasei** \{**Tip parametru**\}”
+Then print all setters in the format:
+- "\{**name**\} **will set a field of the class** \{**Parameter Type**\}"
 
 
-**Fișierul "Reflection.java" nu trebuie modificat în proces.**
+**The "Reflection.java" file should not be altered in the process.**
+
 
 [/task-description]
 [code-upload allowedMemory="30" /]

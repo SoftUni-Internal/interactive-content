@@ -1,25 +1,26 @@
 [slide hideTitle]
 
-# Modificatori de Acces
+# Access Modifiers
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-24-25-access-modifiers-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Pentru a obține modificatorii de clasă, folosim metoda `getModifiers()`.
+To obtain the class modifiers, we use the `getModifiers()` method.
 
 ```java
 int modifiers = aClass.getModifiers();
 ```
-Metoda `getModifiers()` poate fi apelată la **constructori**, **câmpuri** și **metode**.
 
-Putem verifica modificatorii cu următoarele metode:
+The `getModifiers()` method can be called on **constructors**, **fields**, and **methods**.
 
-Dacă setăm o variabilă `name` în clasa noastră `Dog`:
+We can check our modifiers with the following methods:
+
+If we set a variable `name` in our class `Dog`:
 
 ``` java
 private String name;
 ```
 
-Putem folosi sintaxă
+We can use this syntax:
 
 ```java
 int modifiers = Dog.class.getModifiers();
@@ -27,12 +28,13 @@ Field field = Dog.class.getDeclaredField("name");
 System.out.println(Modifier.isPrivate(field.getModifiers()));
 ```
 
-Datele de **ieșire** vor fi:
+The **output** will be:
 
 ```
 true
 ```
-De asemenea, putem **verifica** dacă modificatorii sunt **protejați, publici sau statici** cu următoarele **metode**:
+
+Also, we can **check** if the modifiers are **protected, public or static** with the following **methods**:
 
 - `Modifier.isProtected(modifiers)`
 
@@ -46,15 +48,15 @@ De asemenea, putem **verifica** dacă modificatorii sunt **protejați, publici s
 
 [slide hideTitle]
 
-# Matrice
+# Arrays
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-26-arrays-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Să vedem cum putem crea **Matrice** prin Reflecție:
+Let us see how we can create **Arrays** via Reflection:
 
-Putem folosi metoda `Array.newInstance()`.
+We can use the `Array.newInstance()` method.
 
-Să vedem o demonstrație rapidă în clasa noastră principală:
+Let us see a quick demo in our main class:
 
 
 ``` java 
@@ -83,37 +85,36 @@ public class Main {
 
 ```
 
-Datele de **ieșire** vor fi:
+The **output** will be:
 
 ```
-Elementele matricei: 2 9 3 0 7
+The array elements are: 2 9 3 0 7
 ```
 
 
 [/slide]
 
 [slide hideTitle]
-# Problemă cu Soluție: High-Quality Mistakes
+# Problem with Solution: High-Quality Mistakes
 
 [code-task title="High Quality Mistakes" taskId="Java-OOP-Advanced-Reflection-High-Quality-Mistakes" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [code-upload allowedMemory="30" /]
 [task-description]
+# Description
 
-# Descriere
+You are already an expert in writing **high-quality code**, so you know what kind of **access modifiers** must be set to the members of a class. 
 
-Sunteți deja un expert în scrierea unui  **cod de înaltă calitate**, deci știți ce fel de **modificatori de acces** trebuie să fie setați membrilor unei clase.
+You have to check the code in the Reflection class. 
 
-Trebuie să verificați codul în clasa Reflection.
-
-Verificați toate **câmpurile și modificatorii de acces pentru metode**.
+Check all **fields and access modifiers for the methods**. 
 
 
-Sortați fiecare categorie de membri **alfabetic**.
+Sort each category of members **alphabetically**. 
 
-Imprimați toate greșelile pe consolă în următorul **format**:
+Print all mistakes to the console in the following **format**:
 
-- Câmpuri:
+- Fields:
 
 "\{**fieldName**\} **must be private!**"
 

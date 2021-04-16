@@ -1,15 +1,15 @@
 [slide hideTitle]
-# Rezumat
+# Summary
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-47-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## În această lecție ați învățat:
+## In this lesson you learned:
 
-- Reflecție
-     * capacitatea unui limbaj de programare de a fi propriul său meta limbaj
+- Reflection
+    * the ability of a programming language to be its own metalanguage
 
-- Reflecția API
-     * reflectând clase, constructori, metode, câmpuri
+- Reflection API
+    * reflecting classes, constructors, methods, fields
 
 ```java
 // Get class by its name
@@ -20,7 +20,7 @@ String nameClass = myCatClass.getName();
 String nameClass = myCatClass.getSimpleName();
 ```
 
-- Modificatori de acces
+- Access Modifiers
   
 ```java
 int modifiers = Cat.class.getModifiers();
@@ -28,7 +28,7 @@ Field field = Cat.class.getDeclaredField("name");
 System.out.println(Modifier.isPrivate(field.getModifiers()));
 ```
 
-- Adnotări
+- Annotations
 
 ```java
 @Deprecated 
@@ -37,10 +37,10 @@ public void deprecatedMethod() {
 }
 ```
 
-## În lecția următoare veți învăța:
+## In the next lesson you will learn:
 
-- Testarea unității
-   - JUnit
+- Unit Testing
+  - JUnit
 
 
 

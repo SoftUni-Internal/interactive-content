@@ -1,16 +1,16 @@
-# Modificatori de Acces
+# Access Modifiers
 
 [slide hideTitle]
 
-# Tipurile de Modificatori de Acces
+# Access Modifier Types
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-9-10-11-12-13-access-modifiers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## Modificatorul de acces "Private" 
+## The "Private" Access Modifier
 
-Prin modificatorul  **private access** un obiect își poate ascunde datele de restul obiectelor din programul nostru.
+With the **private access** modifier an object can hide its data from the rest of the objects in our program.
 
-Facem private **un câmp sau o metodă**, atunci când trebuie să păstrăm logica internă a obiectului nostru în starea sa inițială:
+We make a **field or method** private when we must preserve the internal logic of our object in its initial state:
 
 ```java
 class Person {
@@ -22,12 +22,12 @@ class Person {
 }
 ```
 
-- Clasele și interfețele **nu pot fi** private
-- Datele pot fi **accesate numai în cadrul clasei declarate**
+- Classes and interfaces **cannot** be private
+- Data can be **accessed only within the declared class** itself
 
-## Modificatorul de acces "Protected" 
+## The "Protected" Access Modifier
 
-Atunci când declarăm o unitate folosind modificatorul de acces **protejat**  spunem că numai membrii **ierarhiei de clase** (clasa curentă și copiii săi) pot vedea și accesa unitatea dată.
+When we declare a unit using the **protected** access modifier we say that only members of the **class hierarchy** (the current class and its children) can see and access the given unit.
 
 ```java
 class Team {
@@ -36,13 +36,12 @@ class Team {
 }
 ```
 
-- Modificatorii **protejați** nu pot fi aplicați claselor și interfețelor modifiers cannot be applied to classes and interfaces
-
-- Acest lucru împiedică utilizarea acestora de către o clasă  **fără legătură** 
+- **Protected** modifiers cannot be applied to classes and interfaces
+- This prevents a **non-related** class from trying to use it
 
 ## The Default Access Modifier
 
-Atunci când nu declarăm  modificatorul în mod special, va fi utilizat modificatorul de acces default (implicit):
+When we do not specifically declare a modifier, a default access modifier is used:
 
 ```java
 class Team {
@@ -51,7 +50,7 @@ class Team {
 }
 ```
 
-Fiecare element cu aceste modificator de acces este **disponibil** pentru orice altă clasă din același **pachet**:
+Each element with this access modifier is **available** to any other class in the same **package**:
 
 ```java
 Team real = new Team("Real");
@@ -65,9 +64,9 @@ The **output** will be:
 Real Madrid
 ```
 
-## Modificatorul de acces "Public" 
+## The "Public" Access Modifier
 
-Modificatorul de acces **public** afirmă că unitatea dată este vizibilă și accesibilă pentru oricine, oriunde în program:
+The **public** access modifier states that the given unit is visible and accessible for anyone, anywhere in the program:
 
 ```java
 public class Team {
@@ -75,16 +74,14 @@ public class Team {
   public void setName(String name) {…}
 }
 ```
-
-- Putem importa pachete, în cazul în care avem nevoie să folosim o clasă din cadrul lor 
-
-- Metoda `main()` a aplicației trebuie să fie **publică**
+- We can import packages if we need to use a class contained in them
+- The `main()` method of an application must be **public**
 
 [/slide]
 
 [slide hideTitle]
 
-# Modificatori de Acces - Exemplu
+# Access Modifiers - Example
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/interactive-java-oop-advanced-encapsulation-access-modifiers-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -92,7 +89,7 @@ public class Team {
 
 [slide hideTitle]
 
-# Problemă cu Soluție: Sort by Name and Age
+# Problem with Solution: Sort by Name and Age
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-14-problem-and-solutiom-sort-by-name-and-age-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -100,17 +97,14 @@ public class Team {
 [code-upload allowedMemory="30" /]
 
 [task-description]
-# Descriere
-Creați o clasă denumită **Person**, care trebuie să aibă cîmpuri **private** pentru:
-
+# Description
+Create a class called **Person**, which should have **private** fields for:
 - firstName: String
 - lastName: String
-- age: Integer
+- age: int
 - toString() - override
 
-
-## Clasa trebuie să fie încadrată în următorul context:
-
+## The class should fit in the following context:
 ```java
 public static void main(String[] args) throws IOException {
     BufferedReader reader = 
@@ -144,8 +138,8 @@ public static void main(String[] args) throws IOException {
 }
 ```
 
-# Exemplu
-| **Intrare** | **Ieșire** |
+# Example
+| **Input** | **Output** |
 | --- | --- |
 | 5 | Anderson Paak is 57 years old. |
 | George Air 65 | Bob Manner is 35 years old. |
@@ -339,7 +333,7 @@ Test Passed!
 
 
 [slide hideTitle]
-# Problemă cu Soluție: Salary Increase
+# Problem with Solution: Salary Increase
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-16-problem-and-solution-salary-increase-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -347,22 +341,22 @@ Test Passed!
 [code-upload allowedMemory="30" /]
 
 [task-description]
-# Descriere
-Creați un cod care citește informații despre o persoană: **nume**, **vârsta** și **salariu**. 
+# Description
+Create code that reads information about a person with their: **names**, **age** and **salary**. 
 
-Citește un **procent de bonus** care se aplică salariului fiecărei persoane. 
+Reads a **bonus percentage** to be apllied to each person's salary. 
 
-Persoanele cu vârsta **sub 30 de ani** primes o jumătate din bonus. 
+People younger **than 30** get a half bonus. 
 
-Extindeți clasa **Person** din sarcina anterioară. 
+Expand the **Person** class from previous task. 
 
-Adăugați  **câmpul salary**, un **getter** și un **setter** cu modificatorii de **access** corespunzători.
+Add a **salary field**, a **getter** and a **setter** with proper **access** modifiers.
 
-**Câmpuri** și **metode** noi:
+New **fields** and **methods**:
 - **salary: double**
 - **increaseSalary(double bonus)**
 
-## Clasa trebuie să funcționeze în următorul context:
+## The class should work in the following context:
 ```java
 public static void main(String[] args) throws IOException {
     BufferedReader reader = 
@@ -383,8 +377,8 @@ public static void main(String[] args) throws IOException {
 }
 ```
 
-# Exemplu
-| **Intrare** | **Ieșire** |
+# Example
+| **Input** | **Output** |
 | --- | --- |
 | 5 | George Air gets 2640.0 euro |
 | George Air 65 2200 | Anderson Paak gets 3999.6 euro |

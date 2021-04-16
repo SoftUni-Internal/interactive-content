@@ -1,29 +1,28 @@
-# Ascunderea implementării
+# Implementation Hiding
 
 [slide hideTitle]
 
-# Încapsulare
+# Encapsulation
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-3-4-5-6-encapsulation-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Incapsularea este procesul de împachetare a datelor și codului într-o singură unitate.**
+**Encapsulation is the process of wrapping data and code into a single unit.**
 
-Această practică oferă multe avantaje, cum ar fi:
+This practice brings numerous benefits, such as:
 
-- Creșterea **flexibilității și extensibilității** codului
-- **Complexitate redusă**
-- Modificările structurale rămân la un nivel **local**
-- Permite **validarea și legarea datelor**
+- Increased **flexibility and extensibility** of the code
+- **Reduced complexity**
+- Structural changes remain **local**
+- Allows for **validation and data binding**
 
-**Câmpurile obiectului trebuie să fie private**:
+**Object fields must be private**:
 
 ```java
 class Person {
   private int age;
 } 
 ```
-
-- Ar trebui să folosim  **getters** și **setters** pentru **acces la date**
+- We should use **getters** and **setters** for **data access**
 
 ```java
 class Person {
@@ -32,15 +31,15 @@ class Person {
 }
 ```
 
-## Exemplu
+## Example
 
-Câmpurile trebuie să fie **private** (-):
+Fields should be **private** (-):
 
 `-name: string`
 
 `-age: int`
 
-Accesorii și mutatorii trebuie să fie **public** (+):
+Accessors and mutators should be **public** (+):
 
 `+Person(String name, int age)`
 
@@ -56,13 +55,13 @@ Accesorii și mutatorii trebuie să fie **public** (+):
 
 [slide hideTitle]
 
-# Cuvântul-cheie "This" 
+# The "This" Keyword
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-7-8-keyword-this-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- `.this` este referință la **obiectul curent**
+- `.this` is a reference to the **current object**
 
-Se referă la **instanța clasei curente**:
+It refers to the **current class instance**:
 
 ```java
 public Person(String name) {
@@ -70,7 +69,7 @@ public Person(String name) {
 }
 ```
 
-- Utilizând `.this` putem invoca **metodele** din clasa obiectului
+- Using `.this` we can invoke **methods** from the object's class
 
 ```java
 public String fullName() {
@@ -78,7 +77,7 @@ public String fullName() {
 }
 ```
 
-- Utilizând `.this` putem invoca și  **constructorul** clasei curente
+- Using `.this` we can also invoke the current class **constructor**
 
 ```java
 public Person(String name) {
@@ -92,12 +91,11 @@ public Person (String name, Integer age) {
   this.age = age;
 }
 ```
-
 [/slide]
 
 [slide hideTitle]
 
-# Ascunderea Implementării - Exemplu
+# Implementation hiding - Example
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/interactive-java-oop-advanced-encapsulation-hiding-implementation-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
