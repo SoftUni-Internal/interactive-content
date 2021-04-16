@@ -957,7 +957,8 @@ let articles =[
     "A group of cats is called a clowder.",
     "Cats have over 20 muscles that control their ears.",
     "A cat has been mayor of Talkeetna, Alaska, for 15 years. His name is Stubbs.",
-    "The world's largest cat measured 48.5 inches long."
+    "The world's largest cat measured 48.5 inches long.",
+    "Add text to be different."
 ];
 let showNext = result(articles);
 expect(typeof showNext).to.equal('function', "Your solution did not return a function");
