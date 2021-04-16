@@ -56,7 +56,7 @@ Note that we have added an empty space `(" ")` between the **firstName** and **l
 [slide hideTitle]
 # Problem with Solution: Concat Names
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-49-problem-and-solution-concat-names-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/java-fund-data-types-and-variables-49-problem-and-solution-concat-names-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Concat Names" taskId="java-fund-1-data-types-lab-concat-names" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
