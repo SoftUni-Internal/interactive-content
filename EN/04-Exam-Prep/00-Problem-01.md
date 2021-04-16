@@ -76,35 +76,41 @@ Nothing to replace!
 
 Your password is: icecream\-hot\-mer
 
-**Comments**
+[hints]
+[hint]
+The **first** command is `TakeOdd`:
 
-* The first command is "**TakeOdd**":
+The initial string is: "**Siiceercaroetavm**!:?:**ahsott**.:**i**:**nstupmomceqr**"
 
-The initial string is: "Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr"
+We only take the chars at odd indices 1, 3, 5, etc. and the result is: "**icecream**::**hot**::**summer**"
+[/hint] 
+[hint]
+The **second** command is `Cut 15 3`:
 
-We only take the chars at odd indices 1, 3, 5, etc. and the result is: "icecream::hot::summer"
-
-* The Second command is "**Cut 15  3**":
-
-The string is: "icecream::hot::summer"
+The string is: "**icecream**::**hot**::**summer**"
 
 We cut a substring starting at index 15 with length 3, which is "**sum**", remove it from the raw password and print it.
 
-Then, on a new line we print the resulting new raw password: "icecream::hot::mer"
-
-* The third  command is "**Substitute :: -**"
+Then, on a new line we **print** the resulting new raw password: "**icecream**::**hot**::**mer**"
+[/hint] 
+[hint]
+The **third** command is `Substitute :: -`
 
 The initial string is: "icecream::hot::summer"
 
-we replace "::" with "-", and the result is: "icecream-hot-summer"
-
-* The fourth command is "**Substitute** \| \^":
+we replace "::" with "-", and the result is: "**icecream**-**hot**-**mer**"
+[/hint] 
+[hint]
+The **fourth** command is "**Substitute** \| \^":
 
 "\|" is not found anywhere in the raw password.
 
 We print: "**Nothing to replace!**"
-
+[/hint] 
+[hint]
 Finally, after receiving the "**Done**" command, we print the resulting password in the proper format.
+[/hint] 
+[/hints] 
 
 
 ## Examples Two

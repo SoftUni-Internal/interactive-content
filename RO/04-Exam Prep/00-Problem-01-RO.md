@@ -76,35 +76,49 @@ Nothing to replace!
 
 Your password is: icecream\-hot\-mer
 
-**Comentarii**
+[hints]
+[hint]
+**Prima** comandă este `TakeOdd`:
 
-* Prima comandă este "**TakeOdd**":
+Șirul inițial este: "**Siiceercaroetavm**!:?:**ahsott**.:**i**:**nstupmomceqr**"
 
-Șirul inițial este: "Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr"
+Luăm caracterele de pe indici impari 1, 3, 5 etc., iar rezultatul este: "**icecream**::**hot**::**summer**"
+[/hint] 
+[hint]
+A **doua** comandă este `Cut 15 3`:
 
-Luăm caracterele de pe indici impari 1, 3, 5 etc., iar rezultatul este: "icecream::hot::summer"
-
-* A doua comandă este "**Cut 15 3**":
-
-Șirul este: "icecream::hot::summer"
+Șirul este: "**icecream**::**hot**::**summer**"
 
 Tăiem șubșirul care începe de la indicele 15 cu lungimea 3, care este "**sum**", îl eliminăm din parola primară și îl imprimăm.
 
-Apoi, pe o nouă linie imprimăm noua parolă primară care rezultă: "icecream::hot::mer"
-
-* A treia comandă este "**Substitute :: -**"
+Apoi, pe o nouă linie imprimăm noua parolă primară care rezultă: "**icecream**::**hot**::**mer**"
+[/hint] 
+[hint]
+A **treia** comandă este `Substitute :: -`
 
 Șirul inițial este: "icecream::hot::summer"
 
-Înlocuim "::" cu "-", iar rezultatul este: "icecream-hot-summer"
-
-* A patra comandă este "**Substitute** \| \^":
+Înlocuim "::" cu "-", iar rezultatul este: "**icecream**-**hot**-**mer**"
+[/hint] 
+[hint]
+A **patra** comandă este "**Substitute** \| \^":
 
 "\|" nu este găsit nicăieri în parola primară.
 
 Tipărim: "**Nothing to replace!**"
-
+[/hint] 
+[hint]
 În cele din urmă, după ce primim comanda "**Done**", imprimăm parola care rezultă în formatul corespunzător.
+[/hint] 
+[/hints] 
+
+
+
+
+
+
+
+
 
 ## Exemplul Doi
 
