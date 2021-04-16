@@ -1,6 +1,6 @@
 [slide hideTitle]
 
-# Obiecte mutabile și imutabile
+# Obiecte Mutabile și Imutabile
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-24-25-mutable-and-immutable-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -24,7 +24,7 @@ System.out.println(str);
 [/slide]
 
 [slide hideTitle]
-# Câmpuri mutabile
+# Câmpuri Mutabile
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-26-27-mutable-fields-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -70,7 +70,7 @@ Cu toate că **nu avem un setter**, lista este încă **mutablă**.
 
 [slide hideTitle]
 
-# Câmpuri imutabile
+# Câmpuri Imutabile
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-28-imutable-fields-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -96,7 +96,7 @@ class Team {
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: First and Reserve Team
+# Problemă cu Soluție: First and Reserve Team
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-29-problem-and-solution-first-and-reserve-team-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

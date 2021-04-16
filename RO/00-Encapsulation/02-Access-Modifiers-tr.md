@@ -1,8 +1,8 @@
-# Modificatori de acces
+# Modificatori de Acces
 
 [slide hideTitle]
 
-# Tipurile de modificatori de acces
+# Tipurile de Modificatori de Acces
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-9-10-11-12-13-access-modifiers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -23,7 +23,7 @@ class Person {
 ```
 
 - Clasele și interfețele **nu pot fi** private
-- Datele pot fi ** accesate numai în cadrul clasei declarate **
+- Datele pot fi **accesate numai în cadrul clasei declarate**
 
 ## Modificatorul de acces "Protected" 
 
@@ -37,7 +37,9 @@ class Team {
 ```
 
 - Modificatorii **protejați** nu pot fi aplicați claselor și interfețelor modifiers cannot be applied to classes and interfaces
+
 - Acest lucru împiedică utilizarea acestora de către o clasă  **fără legătură** 
+
 ## The Default Access Modifier
 
 Atunci când nu declarăm  modificatorul în mod special, va fi utilizat modificatorul de acces default (implicit):
@@ -49,7 +51,7 @@ class Team {
 }
 ```
 
-Fiecare element cu aceste modificator de acces este **disponibil** pentru orice altă clasă din același  **pachet**:
+Fiecare element cu aceste modificator de acces este **disponibil** pentru orice altă clasă din același **pachet**:
 
 ```java
 Team real = new Team("Real");
@@ -73,14 +75,16 @@ public class Team {
   public void setName(String name) {…}
 }
 ```
+
 - Putem importa pachete, în cazul în care avem nevoie să folosim o clasă din cadrul lor 
+
 - Metoda `main()` a aplicației trebuie să fie **publică**
 
 [/slide]
 
 [slide hideTitle]
 
-# Modificatori de acces- Exemplu
+# Modificatori de Acces - Exemplu
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/interactive-java-oop-advanced-encapsulation-access-modifiers-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -88,7 +92,7 @@ public class Team {
 
 [slide hideTitle]
 
-# Problemă cu soluție: Sort by Name and Age
+# Problemă cu Soluție: Sort by Name and Age
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-14-problem-and-solutiom-sort-by-name-and-age-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -98,12 +102,17 @@ public class Team {
 [task-description]
 # Descriere
 Creați o clasă denumită **Person**, care trebuie să aibă cîmpuri **private** pentru:
+
 - firstName: șir
+
 - lastName: șir
+
 - age: întreg
+
 - toString() - suprascriere
 
 ## Clasa trebuie să fie încadrată în următorul context:
+
 ```java
 public static void main(String[] args) throws IOException {
     BufferedReader reader = 
@@ -332,7 +341,7 @@ Test Passed!
 
 
 [slide hideTitle]
-# Problemă cu soluție: Salary Increase
+# Problemă cu Soluție: Salary Increase
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-16-problem-and-solution-salary-increase-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -343,13 +352,13 @@ Test Passed!
 # Descriere
 Creați un cod care citește informații despre o persoană: **nume**, **vârsta** și **salariu**. 
 
-Citește un ** procent de bonus ** care se aplică salariului fiecărei persoane. 
+Citește un **procent de bonus** care se aplică salariului fiecărei persoane. 
 
 Persoanele cu vârsta **sub 30 de ani** primes o jumătate din bonus. 
 
 Extindeți clasa **Person** din sarcina anterioară. 
 
-Adăugați  ** câmpul salary**, un **getter** și un **setter** cu modificatorii de **access** corespunzători.
+Adăugați  **câmpul salary**, un **getter** și un **setter** cu modificatorii de **access** corespunzători.
 
 **Câmpuri** și **metode** noi:
 - **salary: double**
