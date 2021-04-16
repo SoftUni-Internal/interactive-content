@@ -1226,6 +1226,12 @@ E-mailurile sunt considerate a fi în **format** \{user\}\@\{host\}, unde:
 | Just send email to s.miller@mit.edu and j.hopking@york.ac.uk for more information. | s.miller@mit.edu  |
 | | j.hopking@york.ac.uk |
 
+[hints]
+[hint]
+Folosiți **lookaround**. Puteți afla mai multe [aici](https://www.regular-expressions.info/lookaround.html).
+[/hint]  
+[/hints] 
+
 [/task-description]
 [code-io /]
 [tests]
