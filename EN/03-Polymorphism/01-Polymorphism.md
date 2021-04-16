@@ -3,7 +3,7 @@
 [slide hideTitle]
 # What is Polymorphism
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/EN/interactive-java-oop-advanced-polymorphism-3-4-5-What-is-polymorphism-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/EN/interactive-java-oop-advanced-polymorphism-3-4-5-6-What-is-polymorphism-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Polymorphism is one of the four OOP base pillars in **object-oriented** languages.
 

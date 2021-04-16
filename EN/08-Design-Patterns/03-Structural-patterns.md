@@ -18,7 +18,7 @@ This patterns help the code design by identifying a simple way to effectuate the
 
 # The Facade Pattern
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-24-facade-pattern-demo-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-24-25-27-facade-pattern-demo-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **facade pattern** is used to hide the complexities of our system by providing a simplified **interface** to the client. 
 
@@ -92,7 +92,7 @@ This example shows us how a client **interacts** with the facade (in our case -Â
 
 # The Composite Pattern
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-28-composite-pattern-demo-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/EN/Java-OOP-Advanced-Design-Patterns-28-29-32-composite-pattern-demo-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The composite pattern allows us to **combine** different types of objects in **tree structures**
 
