@@ -92,7 +92,7 @@ A treia comandă este `Substitute :: -`
 [hint]
 Urmează `Substitute | ^`
 
-"|" **nu este găsit** nicăieri în parola brută, așa că tipărim:
+"\|" **nu este găsit** nicăieri în parola brută, așa că tipărim:
 
 "**Nothing to replace!**" 
 

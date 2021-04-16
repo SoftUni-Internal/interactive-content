@@ -90,7 +90,7 @@ We **replace** "\:\:" with "\-"
 [hint]
 Next comes `Substitute | ^`
 
-"|" is **not found** anywhere in the raw password, so we print:
+"\|" is **not found** anywhere in the raw password, so we print:
 
 "**Nothing to replace!**" 
 
