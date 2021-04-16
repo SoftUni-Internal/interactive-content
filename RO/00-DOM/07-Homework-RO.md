@@ -2,14 +2,13 @@
 
 
 [slide hideTitle]
-
-# Problem: subtraction
+# Problemă: Subtraction
 
 [code-task title="Subtraction" taskId="js-advanced-DOM-Subtraction" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
 function subtraction(){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -150,13 +149,13 @@ yes
 
 [slide hideTitle]
 
-# Problem: Fill Dropdown menu
+# Problemă: Fill Dropdown menu
 
 [code-task title="Fill Dropdown" taskId="js-advanced-DOM-Fill-Dropdown"  executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
 function fillDropdown(){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 
@@ -299,13 +298,13 @@ yes
 
 [slide hideTitle]
 
-# Problem: Accordion
+# Problemă: Accordion
 
 [code-task title="Accordion" taskId="js-advanced-DOM-Accordion" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
 function accordion(){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 
@@ -458,13 +457,13 @@ yes
 
 [slide hideTitle]
 
-# Problem: Order the Names
+# Problemă: Order the Names
 
 [code-task title="Order the names" taskId="js-advanced-DOM-Order-The-Names" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
 function orderTheNames(){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 
@@ -895,13 +894,13 @@ yes
 
 [slide hideTitle]
 
-# Problem: Chat Room
+# Problemă: Chat Room
 
 [code-task title="Chat Room" taskId="js-advanced-DOM-Chat-Room" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
 function chatRoom(){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 
@@ -1307,13 +1306,13 @@ yes
 
 [slide hideTitle]
 
-# Problem: Numpad Calculator
+# Problemă: Numpad Calculator
 
 [code-task title="Numpad Calculator" taskId="js-advanced-DOM-Numpad-Calculator" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
 function numpadCalculator(){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 
@@ -1819,13 +1818,13 @@ yes
 
 [slide hideTitle]
 
-# Problem: Number Convertor
+# Problemă: Number Convertor
 
 [code-task title="Number Convertor" taskId="js-advanced-DOM-Number-Convertor" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
-function repeatString(){
-  // Write your code here
+function numberConvertor(){
+  // Scrieți codul dvs. aici
 }
 ```
 
