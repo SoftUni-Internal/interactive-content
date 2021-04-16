@@ -1,7 +1,7 @@
 # Teme Pentru Acasă
 [slide hideTitle]
 
-# Problem: Company
+# Problemă: Company
 
 [code-task title="Company" taskId="js-advanced-function-context-company" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
@@ -197,7 +197,7 @@ yes
 [/slide]
 
 [slide hideTitle]
-# Problem: Fibonacci
+# Problemă: Fibonacci
 
 [code-task title="Fibonacci" taskId="js-advanced-function-context-fibonacci" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
@@ -319,7 +319,7 @@ yes
 [/slide]
 
 [slide hideTitle]
-# Problem: HEX
+# Problemă: HEX
 
 [code-task title="Problem: HEX" taskId="js-advanced-function-context-hex" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
@@ -482,7 +482,7 @@ yes
 [/slide]
 
 [slide hideTitle]
-# Problem: Table
+# Problemă: Table
 
 [code-task title="Problem: Table" taskId="js-advanced-function-context-table" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
@@ -805,7 +805,7 @@ yes
 [/slide]
 
 [slide hideTitle]
-# Problem: Next Article
+# Problemă: Next Article
 
 [code-task title="Next Article" taskId="js-advanced-function-context-next-article" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 

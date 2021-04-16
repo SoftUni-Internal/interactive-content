@@ -4,7 +4,7 @@
 # Problemă: Add
 [code-task title="Add" taskId="js-advanced-advanced-functions-homework-add" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
-function add() {
+function add(number) {
     // Scrieți codul dvs. aici
 }
 ```
