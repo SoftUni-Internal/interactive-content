@@ -1,3 +1,5 @@
+# Numere
+
 [slide hideTitle]
 
 # Ce Este un Număr?
@@ -21,7 +23,7 @@ console.log(-5 / 0);
 
 Vom obține infinit pentru a nu obține ca rezultat **eroare a timpului de compilare.**
 
-- `NaN` (non-număr):  Putem obține NaN când încercăm să parsăm un șir care nu poate fi parsat sau când vrem să împărțim la 0:
+- `NaN` (not-a-number):  Putem obține NaN când încercăm să parsăm un șir care nu poate fi parsat sau când vrem să împărțim la 0:
 
 ``` js live
 let nanVar = Number('not a number');
@@ -32,7 +34,7 @@ Problema operațiilor cu `NaN` este atunci când o folosim din **perspectivă st
 
 Dacă avem o **logică în programul nostru care dă ca rezultat** `NaN`, și apoi avem orice altă **operație matematică**, rezultatul va fi mereu `NaN`. 
 
-Acest lucru poate să dea logica programului nostru peste cap.
+Acest lucru poate da logica programului nostru peste cap.
 
 ``` js live
 let nanVar = Number('not a number');
@@ -94,7 +96,7 @@ function adapter(input, code) {
 
 Veți primi **trei numere**. 
 
-Sarcina voastră este să aflați **suma** acestora și să o tipăriți pe consolă, folosind adunarea:
+Sarcina voastră este să aflați **suma** acestora și să o tipăriți pe consolă în formatul următor:
 
 "\{**number**\} - **Integer or Float**"
 
