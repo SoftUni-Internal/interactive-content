@@ -65,29 +65,43 @@ După primirea comenzii "**Generate**", tipăriți:
 | Contains\>\>\>deF | Your activation key is: abgHIjkLMNOPQRstuvwxyz |
 | Generate |  |
 
-### Comentarii
+[hints]
+[hint]
+Prima comandă este `Slice>>2>>6`
 
-* "Slice>>2>>6"
+Eliminăm caracterele dintre indexul 2 and 6(neincluse) - **cdef**
 
 ab**cdef**ghijklmnopqrstuvwxyz **devine** "**abghijklmnopqrstuvwxyz**"
+[/hint] 
+[hint]
+Al doilea vine `Flip>>>Upper>>>3>>>14`
 
-* "Flip\>\>\>Upper\>\>\>3\>\>\>14"
+Comutăm caracterele între indexurile 3 și 14(neincluse) cu majuscule - **hijklmnopqr**
 
 abg**hijklmnopqr**stuvwxyz **devine** abg**HIJKLMNOPQR**stuvwxyz
-
-* "Flip\>\>\>Lower\>\>\>5\>\>\>7":
+[/hint] 
+[hint]
+A patra comandă este `Flip>>>Lower>>>5>>>7`
 
 abgHI**JK**LMNOPQRstuvwxyz **devine** abgHI**jk**LMNOPQRstuvwxyz
+[/hint] 
+[hint]
+Următoarea comandă este `Contains>>>def`
 
-* "Contains\>\>\>def":
+"**abgHIjkLMNOPQRstuvwxyz**" **nu** conține "**def**", deci imprimăm:
 
-"**abgHIjkLMNOPQRstuvwxyz**" **nu** conține "**def**"
-
-* "**Conține>>>deF**":
+"**Substring not found!**"
+[/hint] 
+[hint]
+Ultima comandă este `Contains>>>deF`:
 
 "**abgHIjkLMNOPQRstuvwxyz**" **nu** conține "**deF**"
-
+[/hint]
+[hint]
 Cheia de activare finală este "**abgHIjkLMNOPQRstuvwxyz**"
+[/hint] 
+[/hints] 
+
 
 | **Intrare** | **Ieșire** |
 | --- | --- |

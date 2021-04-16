@@ -65,29 +65,44 @@ After the "**Generate**"  command is received, print:
 | Contains\>\>\>deF | Your activation key is: abgHIjkLMNOPQRstuvwxyz |
 | Generate |  |
 
-### Comments
+[hints]
+[hint]
+The first command is `Slice>>2>>6`
 
-* "Slice>>2>>6"
+We remove the characters between index 2 and 6(not included) - **cdef**
 
 ab**cdef**ghijklmnopqrstuvwxyz **becomes** "**abghijklmnopqrstuvwxyz**"
+[/hint] 
+[hint]
+Second comes `Flip>>>Upper>>>3>>>14`
 
-* "Flip\>\>\>Upper\>\>\>3\>\>\>14"
+We toggle the characters between index 3 and 14(not included) to uppercase - **hijklmnopqr**
 
 abg**hijklmnopqr**stuvwxyz **becomes** abg**HIJKLMNOPQR**stuvwxyz
-
-* "Flip\>\>\>Lower\>\>\>5\>\>\>7":
+[/hint] 
+[hint]
+The fourth command is `Flip>>>Lower>>>5>>>7`
 
 abgHI**JK**LMNOPQRstuvwxyz **becomes** abgHI**jk**LMNOPQRstuvwxyz
+[/hint] 
+[hint]
+The next command is `Contains>>>def`
 
-* "Contains\>\>\>def":
+"**abgHIjkLMNOPQRstuvwxyz**" **does not** contain "**def**", so we print:
 
-"**abgHIjkLMNOPQRstuvwxyz**" **does not** contain "**def**"
-
-* "**Contains>>>deF**":
+"**Substring not found!**"
+[/hint] 
+[hint]
+The last command is `Contains>>>deF`:
 
 "**abgHIjkLMNOPQRstuvwxyz**" **does not** contain "**deF**"
-
+[/hint]
+[hint]
 The final activation key is "**abgHIjkLMNOPQRstuvwxyz**"
+[/hint] 
+[/hints] 
+
+
 
 | **Input** | **Output** |
 | --- | --- |
