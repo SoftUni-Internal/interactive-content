@@ -1,10 +1,12 @@
+# Șiruri
+
 [slide hideTitle]
 
 # Ce sunt Șirurile?
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-12-13-what-is-a-string-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Un șir este un tip de date care se folosește pentru a prezenta un **text** și care reprezintă o **secvență** de caractere.
+Un șir este un tip de date care se folosește pentru a prezenta un **text** și reprezintă o **secvență** de caractere.
 
 Fiecare simbol are o **poziție** în șir și atunci când le conectăm, **se obține un text.**
 
@@ -52,7 +54,7 @@ console.log(myString);
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-15-sting-interpolation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Înlocuirea **substituenților** cu valori înăuntrul unui șir literal se numește **interpolarea** șirului. 
+Înlocuirea **substituenților** cu valori înăuntrul unui literal de tip șir se numește **interpolarea** șirului. 
 
 În JavaScript, literalii șablonului (șiruri încadrate de apostrof) și expresia `${expression}` ca substituent realizează interpolarea șirurilor.
 
@@ -65,7 +67,7 @@ console.log(`Hello, my name is ${name}, I am ${age} years old.`);
 
 [slide hideTitle]
 
-# Problemă cu Soluție: Concantenate Names
+# Problemă cu Soluție: Concatenate Names
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/01.JS-Fundamentals-Data-types-and-variables/01.JS-Fundamentals-Data-types-and-variables-16-solution-concatenate-names-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -98,7 +100,7 @@ Creați un program care primește trei parametri:
 
 Sarcina voastră este de a imprima prenumele și numele, legate prin delimitator.
 
-## Exemple
+## Exemplu
   | **Intrare** | **Ieșire** |
 | --- | --- |
 | interpolation('John', 'Smith', '\-\>') | John\-\>Smith |
@@ -209,7 +211,7 @@ Primul șir va fi un cuvânt cu un **caracter lipsă** înlocuit cu underscore (
 
 Trebuie să **înlocuiți** spațiul lipsă semnalat de underscore din primul șir cu caracterul dat și să **comparați** rezultatul cu cel de-al doilea șir dat. 
 
-Dacă sunt egale, trebuie să tipăriți "**Matched**", altfel veți tipări "**Not Matched**".
+Dacă șirurile sunt egale, trebuie să tipăriți "**Matched**", altfel veți tipări "**Not Matched**".
 
 
 ## Exemplu
