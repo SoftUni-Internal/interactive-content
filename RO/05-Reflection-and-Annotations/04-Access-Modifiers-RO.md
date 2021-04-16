@@ -1,6 +1,6 @@
 [slide hideTitle]
 
-# Modificatori de acces
+# Modificatori de Acces
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-24-25-access-modifiers-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -93,7 +93,7 @@ Elementele matricei: 2 9 3 0 7
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: High-Quality Mistakes
+# Problemă cu Soluție: High-Quality Mistakes
 
 [code-task title="High Quality Mistakes" taskId="Java-OOP-Advanced-Reflection-High-Quality-Mistakes" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 

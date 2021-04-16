@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Ce reprezintă adnotările 
+# Ce Reprezintă Adnotările 
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-29-30-annotation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -17,7 +17,7 @@ Adnotările pot fi aplicate pentru **clase**, **câmpuri**, **metode** etc.
 
 [slide hideTitle]
 
-# Utilizarea adnotărilor
+# Utilizarea Adnotărilor
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-31-annotation-usage-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -39,7 +39,7 @@ Este o practică bună să folosiți adnotările, deoarece acestea pot preveni e
 
 [slide hideTitle]
 
-# Adnotări încorporate
+# Adnotări Încorporate
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-32-34-built-in-annotations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -63,7 +63,7 @@ public <T> void warning(int size) {
 
 [slide hideTitle]
 
-# Crearea adnotărilor
+# Crearea Adnotărilor
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-35-36-creating-annotations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -108,7 +108,7 @@ public class MyClass {
 
 [slide hideTitle]
 
-# Adnotări meta 
+# Adnotări Meta 
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-37-38-meta-annotations-target-and-retention-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -126,7 +126,7 @@ public @interface FieldAnnotation {
 
 "ElementType" disponibile sunt:
 
--**CONSTRUCTOR**
+- **CONSTRUCTOR**
 - **FIELD**
 - **LOCAL_VARIABLE**
 - **METHOD**
@@ -157,7 +157,7 @@ Alte **retention policies**:
 
 [slide hideTitle]
 
-# Obținerea adnotărilor
+# Obținerea Adnotărilor
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-41-42-43-annotations-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -189,7 +189,7 @@ Annotation[] methodAnnotation = method.getDeclaredAnnotations();
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Create Annotation
+# Problemă cu Soluție: Create Annotation
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-39-problem-and-solution-create-annotation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -198,8 +198,11 @@ Annotation[] methodAnnotation = method.getDeclaredAnnotations();
 
 [task-description]
 # Descriere
+
 Creați o adnotare **Subject** cu un element **Șir** \[\] numit **categories**, care:
+
 - Ar trebui să fie disponibil la rulare
+
 - Poate fi plasat numai pe tipuri
 
 # Exemple

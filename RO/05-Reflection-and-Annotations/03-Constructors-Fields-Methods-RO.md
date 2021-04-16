@@ -1,4 +1,4 @@
-# Constructori, câmpuri și metode
+# Constructori, Câmpuri și Metode
 
 [slide hideTitle]
 
@@ -45,7 +45,7 @@ Ca și în codul de mai sus - Este un constructor care acceptă un `string`, dec
 
 [slide hideTitle]
 
-# Numele și tipul câmpurilor
+# Numele și Tipul Câmpurilor
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/EN/interactive-java-oop-advanced-reflection-and-annotations-17-18-fields-name-and-type-fields-set-and-get-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -174,7 +174,7 @@ Object returnValue = method.invoke(null, "arg1");
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Getters and Setters
+# Problemă cu Soluție: Getters and Setters
 
 [code-task title="Getters and Setters" taskId="Java-OOP-Advanced-Reflection-Getters-And-Setters" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
@@ -189,13 +189,13 @@ Apoi pregătiți un algoritm care va recunoaște care sunt metodele **getters** 
 Sortați fiecare colecție **alfabetic** după numele metodelor.
 
 Imprimați pe consolă fiecare **getter** pe o nouă linie în format:
-- „\{**nume**\} **va returna un câmp al clasei** \{**Tip de returnare**\}”
+- "\{**nume**\} **va returna un câmp al clasei** \{**Tip de returnare**\}"
 
 Apoi tipăriți toate setters în format:
 - „\{**nume**\} **va seta un câmp al clasei** \{**Tip parametru**\}”
 
 
-**Fișierul „Reflection.java” nu trebuie modificat în proces.**
+**Fișierul "Reflection.java" nu trebuie modificat în proces.**
 
 [/task-description]
 [code-upload allowedMemory="30" /]
