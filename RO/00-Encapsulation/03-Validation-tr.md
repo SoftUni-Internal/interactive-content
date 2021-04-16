@@ -61,7 +61,7 @@ Extindeți clasa **Person** cu o proprie validare pentru fiecare câmp:
 
 Imprimați **mesajul** corespunzător pentru utilizatorul final (vedeți **exemplul** pentru mesaje). 
 
-Nu folosiți  `System.out.println()` în clasa **Person**.
+Nu folosiți `System.out.println()` în clasa **Person**.
 
 
 # Exemplu
