@@ -8,7 +8,7 @@
 
 Valorile booleene poartă numele lui [George Boole](https://en.wikipedia.org/wiki/George_Boole), un matematician englez.
 
-Valorile booleene reprezintă unele **valori logice**.
+Valorile booleene reprezintă niște **valori logice**.
 
 Ele pot avea doar două valori: "**true**" sau "**false**".
 
@@ -77,7 +77,7 @@ if (number) {
 
 Acestea sunt valori care **nu sunt** **true** sau **false**, dar când le transformăm într-o valoare booleană ele dau "**true**" sau "**false**".
 
-În JavaScript este **slab tastat**, deci nu avem tipuri de variabile.
+JavaScript este un limbaj **slab tastat**, deci nu avem tipuri de variabile.
 
 Acest lucru nu împiedică o expresie "**if**" care încearcă să compare variabile care stochează valori cu diferite tipuri.
 
@@ -87,13 +87,13 @@ Acest lucru nu împiedică o expresie "**if**" care încearcă să compare varia
 console.log(5 == '5');
 ```
 
-trecem valori de diferite tipuri, folosind operatorul `==` sau `!=`.
+transmitem valori de diferite tipuri, folosind operatorul `==` sau `!=`.
 
-În acest caz, interpretor va face așa-numitul **casting implicit**.
+În acest caz, interpretorul va face așa-numitul **casting implicit**.
 
 Acest lucru înseamnă că interpretorul implicit va **converti** o valoare în **alta**, ceea ce în majoritatea cazurilor înseamnă **convertirea într-un șir.**
 
-Dând un**șir**și un**număr**, de exemplu, **numărul devine un șir** și interpretul compară șirurile.
+De exemplu, dacă dăm un **șir** și un **număr**, **numărul devine un șir** și interpretorul compară șirurile.
 
 Dacă folosim `===`, interpretorul **nu convertește numărul într-un șir**, deci **numărul cinci nu este același cu șirul cinci** și această expresie returnează `false`.
 
@@ -124,7 +124,7 @@ if (1 == true) {
 
 este "**same**", deoarece interpretorul vede `1 == true` și transformă acest lucru într-o **valoare booleană.**
 
-Valorile **0** și **1** devin valorile booleană **0 false** și **1 true**.
+Valorile **0** și **1** devin valorile booleane **0 false** și **1 true**.
 
 Celelalte valori numerice devin valori booleene și sunt "**false**".
 
@@ -296,7 +296,7 @@ JavaScript în sine oferă un operator numit `typeof` pentru tot ceea ce funcți
 
 Cu toate acestea, tipurile de date JavaScript și operatorul `typeof` nu sunt tocmai perfecte.
 
-De exemplu, pentru matrice și `null`, este returnat un `obiect`. 
+De exemplu, pentru matrice și `null`, este returnat `object`. 
 
 Pentru `NaN` și `Infinity` - `number`.
 
