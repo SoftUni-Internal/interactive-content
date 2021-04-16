@@ -13,7 +13,7 @@ Această practică oferă multe avantaje, cum ar fi:
 - Creșterea **flexibilității și extensibilității** codului
 - **Complexitate redusă**
 - Modificările structurale rămân la un nivel **local**
-- Permite ** validarea și legarea datelor **
+- Permite **validarea și legarea datelor**
 
 **Câmpurile obiectului trebuie să fie private **:
 

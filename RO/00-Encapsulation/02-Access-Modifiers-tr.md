@@ -98,10 +98,10 @@ public class Team {
 [task-description]
 # Descriere
 Creați o clasă denumită **Person**, care trebuie să aibă cîmpuri **private** pentru:
-- firstName: șir
-- lastName: șir
-- age: întreg
-- toString() - suprascriere
+- firstName: String
+- lastName: String
+- age: Integer
+- toString() - override
 
 ## Clasa trebuie să fie încadrată în următorul context:
 ```java

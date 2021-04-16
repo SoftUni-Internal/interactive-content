@@ -2,11 +2,11 @@
 
 [slide hideTitle]
 
-# Cuvântul0cheie  Final 
+# Cuvântul cheie Final 
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-31-32-33-keyword-final-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-** Clasele "Final" nu pot fi extinse.**
+**Clasele "Final" nu pot fi extinse.**
 
 ```java
 public class Animal {}
@@ -16,7 +16,7 @@ public class Cat extends Mammal {}
 // Cannot be done
 ```
 
-** Metodele "Final" nu pot fi suprascrise.**
+**Metodele "Final" nu pot fi suprascrise.**
 
 ```java
 public final void move(Point point) {}

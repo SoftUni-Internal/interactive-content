@@ -13,14 +13,14 @@ private void setSalary(double salary) {
   if (salary < 460) {   
     // Validation happens here
     throw new IllegalArgumentException("Message");
-  }\
+  }
   
   this.salary = salary;
 }
 ```
 - Este mai bine să aruncați **excepții**, decât să imprimați mesaje pe consolă
 - Imprimarea cu `System.out` **cuplează** clasa dvs.
-- ** Clienții **pot** gestiona ** excepțiile de clasă
+- **Clienții** pot gestiona **excepțiile de clasă**
 
 **Constructorii folosesc setters privați cu logică de validare:**
 

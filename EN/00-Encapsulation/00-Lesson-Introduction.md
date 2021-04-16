@@ -28,7 +28,7 @@
 
 - Distinguishing between them
 
-**5. The `final` keyword**
+**5. The final keyword**
 
 - Definition and use cases
     
