@@ -51,7 +51,7 @@ let arr = [10, 20, 30];
 console.log(arr.join('@@'));
 ```
 
-- `push()`: Adăugarea unui element la sfârșitul matricei 
+- `push()`: Adăugă un element la sfârșitul matricei 
 
 ``` js live
 let arr = [10, 20, 30];
