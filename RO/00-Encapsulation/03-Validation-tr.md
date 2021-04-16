@@ -19,8 +19,10 @@ private void setSalary(double salary) {
 }
 ```
 - Este mai bine să aruncați **excepții**, decât să imprimați mesaje pe consolă
+
 - Imprimarea cu `System.out` **cuplează** clasa dvs.
 - **Clienții** pot gestiona **excepțiile de clasă**
+
 
 **Constructorii folosesc setters privați cu logică de validare:**
 
@@ -42,7 +44,7 @@ public Person(String firstName, String lastName,
 
 [slide hideTitle]
 
-# Problemă cu soluție: Validation Data
+# Problemă cu Soluție: Validation Data
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-22-problem-and-solution-validation-data-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

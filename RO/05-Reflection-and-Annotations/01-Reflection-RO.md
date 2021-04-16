@@ -34,9 +34,9 @@ Cu toate acestea, trebuie să știm când să folosim **reflecția** și când a
 
 Să vedem în ce cazuri **nu ar trebui** să folosim reflecția.
 
-- Reflecția este semnificativ **mai lentă** decât metodele de apelare direct pe nume, deoarece trebuie să **inspecteze** metadatele, în loc să folosească doar **adresele precompilate** și **constantele**.
+- Reflecția este semnificativ **mai lentă** decât metodele de apelare direct pe nume, deoarece trebuie să **inspecteze** metadatele, în loc să folosească doar **adresele precompilate** și **constantele**
 
-- Prin utilizarea reflecției putem prelua definiția unui membru „protejat” sau „final”, eliminăm protecția și o putem manipula
+- Prin utilizarea reflecției putem prelua definiția unui membru "protejat" sau "final", eliminăm protecția și o putem manipula
     * acest lucru poate fi foarte periculos pentru securitatea software-ului
 
 [/slide]

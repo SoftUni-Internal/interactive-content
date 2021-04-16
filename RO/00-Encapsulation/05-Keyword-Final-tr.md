@@ -30,7 +30,7 @@ public class Mammal extends Animal {
 
 **Valoarea unei variabile "final" nu poate fi modificată după ce a fost setată.**
 
-Atunci când declarăm un câmp ca fiind `final`, este ca și cum am crea o constantă, dar îi atribuim o valoare în ** constructor **.
+Atunci când declarăm un câmp ca fiind `final`, este ca și cum am crea o constantă, dar îi atribuim o valoare în **constructor**.
 
 ```java
 private final String name;

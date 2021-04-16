@@ -15,13 +15,14 @@ Această practică oferă multe avantaje, cum ar fi:
 - Modificările structurale rămân la un nivel **local**
 - Permite **validarea și legarea datelor**
 
-**Câmpurile obiectului trebuie să fie private **:
+**Câmpurile obiectului trebuie să fie private**:
 
 ```java
 class Person {
   private int age;
 } 
 ```
+
 - Ar trebui să folosim  **getters** și **setters** pentru **acces la date**
 
 ```java
@@ -33,13 +34,13 @@ class Person {
 
 ## Exemplu
 
-Câmpurile trebuie să fie  **private** (-):
+Câmpurile trebuie să fie **private** (-):
 
 `-name: string`
 
 `-age: int`
 
-Accesorii și mutatorii trebuie să fie  **public** (+):
+Accesorii și mutatorii trebuie să fie **public** (+):
 
 `+Person(String name, int age)`
 
@@ -91,11 +92,12 @@ public Person (String name, Integer age) {
   this.age = age;
 }
 ```
+
 [/slide]
 
 [slide hideTitle]
 
-# Ascunderea implementării - Exemplu
+# Ascunderea Implementării - Exemplu
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/interactive-java-oop-advanced-encapsulation-hiding-implementation-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

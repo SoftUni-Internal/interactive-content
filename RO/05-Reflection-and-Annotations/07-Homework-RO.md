@@ -1,4 +1,4 @@
-# Teme pentru acasă
+# Teme Pentru Acasă
 
 [slide hideTitle]
 # Problemă: Harvesting Fields
@@ -15,10 +15,15 @@ Recoltarea înseamnă că trebuie să imprimați informații despre fiecare **c�
 
 ## Intrare
 Veți primi maximum 100 de linii cu una dintre următoarele comenzi:
+
 - **private** - tipăriți toate câmpurile private
+
 - **protected** - tipăriți toate câmpurile protejate
+
 - **public** - tipăriți toate câmpurile publice
+
 - **all** - tipărește TOATE câmpurile declarate
+
 - **HARVEST** - încheie intrarea
 
 ## Ieșire
@@ -29,10 +34,10 @@ Formatul în care ar trebui tipărite câmpurile este:
 "\{**access modifier**\} \{**field type**\} \{**field name**\}"
 
 
-# Exemple
+# Exemplu
 
-## Example 1
-| **Input** | **Output** |
+## Exemplu 1
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | protected | protected String testString |
 | HARVEST | protected double aDouble |
@@ -47,8 +52,8 @@ Formatul în care ar trebui tipărite câmpurile este:
 |  | protected Stream moarStreamz |
 
 
-## Example 2
-| **Input** | **Output** |
+## Exemplu 2
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | private | private int testInt |
 | public | private long testLong |
@@ -520,7 +525,7 @@ Scopul nu este de a suprascrie metoda **toString** din clasă.
 Trebuie să obțineți fiecare valoare din câmpul **private**.
 
 # Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | add_999999 | 999999 |
 | subtract_19 | 999980 |
@@ -685,8 +690,10 @@ END
 Vi se oferă un mic proiect bazat pe consolă numit "Barracks".
 
 Proiectul are două funcționalități:
-- adăugarea de noi unități în depozitul său
-- tipărirea unui raport cu statistici despre unitățile aflate în prezent în depozit
+
+- Adăugarea de noi unități în depozitul său
+
+- Tipărirea unui raport cu statistici despre unitățile aflate în prezent în depozit
 
 Mai întâi, haideți să trecem peste sarcina inițială înainte de crearea acestui proiect.
 
@@ -702,11 +709,11 @@ Comenzile posibile sunt:
 Fiecare comandă, cu excepția **fight**, ar trebui să producă rezultate ieșire.
 - **add** ar trebui să imprime:
 
-     „\{**Archer/Swordsman/Pikeman/**\{**…**\}\} **added!**”
+     "\{**Archer/Swordsman/Pikeman/**\{**…**\}\} **added!**"
 
 - **report** ar trebui să tipărească toate informațiile din depozit în format:
 
-     „\{**UnitType**\} -\> \{**UnitQuantity**\}”, sortate după UnitType
+    "\{**UnitType**\} -\> \{**UnitQuantity**\}", sortate după UnitType
 
 ## Limitări
 - Introducerea va consta din cel mult **1000** linii
@@ -715,7 +722,7 @@ Fiecare comandă, cu excepția **fight**, ar trebui să producă rezultate ieși
 ## Sarcina dvs.
 Trebuie să **studiați codul proiectului și să aflați cum funcționează.**
 
-Există părți ale acestuia care nu sunt implementate (marcate cu „TODO”).
+Există părți ale acestuia care nu sunt implementate (marcate cu "TODO").
 
 Trebuie să implementați funcționalitatea metodei **createUnit** din clasa **UnitFactoryImpl** astfel încât să înregistreze o unitate pe baza tipului de unitate primit ca parametru.
 
@@ -727,10 +734,10 @@ Adăugați două clase de unități noi (vor exista teste care le necesită) - *
 
 Dacă faceți totul corect, ar trebui să adăugați cod numai la pachetele **factories** și **units**.
 
-# Exemple
+# Exemplu
 
-## Example 1
-| **Input** | **Output** |
+## Exemplu 1
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | add Swordsman | Swordsman added! |
 | add Archer | Archer added! |
@@ -746,8 +753,8 @@ Dacă faceți totul corect, ar trebui să adăugați cod numai la pachetele **fa
 |  |  |
 
 
-## Example 2
-| **Input** | **Output** |
+## Exemplu 2
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | add Pikeman | Pikeman added! |
 | add Pikeman | Pikeman added! |
@@ -1129,7 +1136,7 @@ După ce ați implementat modelul, adăugați o nouă comandă.
 Ar trebui să aibă următoarea sintaxă:
 
 - **retire**\{**UnitType**\} - Tot ce face este **eliminați** o unitate din tipul furnizat din depozit
-     - dacă nu există astfel de unități în prezent în depozit, tipăriți: „**No such units in repository.**”
+     - dacă nu există astfel de unități în prezent în depozit, tipăriți: "**No such units in repository.**"
      - dacă există o astfel de unitate, tipăriți: "\{**UnitType**\} **retired!**"
 
 Pentru a implementa această comandă, va trebui, de asemenea, să implementați o metodă corespunzătoare în **UnitRepository.**
@@ -1137,7 +1144,7 @@ Pentru a implementa această comandă, va trebui, de asemenea, să implementați
 Dacă faceți totul corect pentru această problemă, ar trebui să scrieți/refactorizați codul numai în pachetele **core** și **data**.
 
 # Exemplu
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | retire Archer | No such units in repository. |
 | add Pikeman | Pikeman added! |
@@ -1347,7 +1354,7 @@ Swordsman -\> 0
 [/slide]
 
 [slide hideTitle]
-# Problem: BarracksWars - Return of the Dependencies
+# Problemă: BarracksWars - Return of the Dependencies
 [code-task title="BarracksWars - Return of the Dependencies" taskId="oop-advanced-java-reflection-and-annotations-BarracksWars-Return-of-the-Dependencies" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
