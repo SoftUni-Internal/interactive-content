@@ -78,14 +78,14 @@ Your password is: icecream\-hot\-mer
 
 [hints]
 [hint]
-**Prima** comandă este `TakeOdd`:
+**Prima** comandă este `TakeOdd`
 
 Șirul inițial este: "**Siiceercaroetavm**!:?:**ahsott**.:**i**:**nstupmomceqr**"
 
-Luăm caracterele de pe indici impari 1, 3, 5 etc., iar rezultatul este: "**icecream**::**hot**::**summer**"
+Luăm caracterele de pe indici **impari** 1, 3, 5 etc., iar rezultatul este: "**icecream**::**hot**::**summer**"
 [/hint] 
 [hint]
-A **doua** comandă este `Cut 15 3`:
+A **doua** comandă este `Cut 15 3`
 
 Șirul este: "**icecream**::**hot**::**summer**"
 
@@ -96,12 +96,12 @@ Apoi, pe o nouă linie imprimăm noua parolă primară care rezultă: "**icecrea
 [hint]
 A **treia** comandă este `Substitute :: -`
 
-Șirul inițial este: "icecream::hot::summer"
+Șirul inițial este: "**icecream**::**hot**::**summer**"
 
 Înlocuim "::" cu "-", iar rezultatul este: "**icecream**-**hot**-**mer**"
 [/hint] 
 [hint]
-A **patra** comandă este "**Substitute** \| \^":
+A **patra** comandă este `Substitute | ^`
 
 "\|" nu este găsit nicăieri în parola primară.
 
@@ -111,13 +111,6 @@ Tipărim: "**Nothing to replace!**"
 În cele din urmă, după ce primim comanda "**Done**", imprimăm parola care rezultă în formatul corespunzător.
 [/hint] 
 [/hints] 
-
-
-
-
-
-
-
 
 
 ## Exemplul Doi
