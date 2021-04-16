@@ -211,6 +211,7 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
+# Description
 
 Create a program that receives an **array of strings** (space separated values).
 
