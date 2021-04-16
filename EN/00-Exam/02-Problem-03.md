@@ -1,4 +1,4 @@
-# Problema 2: Heroes of Code and Logic VII
+# Problem 3: Heroes of Code and Logic VII
 [slide hideTitle]
 # Heroes of Code and Logic VII
 [code-task title="Heroes of Code and Logic VII" taskId="Java-Fund-Part-Two-Exam-Heroes-Of-Code-And-Logic" executionType="tests-execution" executionStrategy="java-code" requiresInput]
