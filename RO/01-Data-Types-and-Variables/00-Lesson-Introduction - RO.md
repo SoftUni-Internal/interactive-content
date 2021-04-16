@@ -10,7 +10,7 @@
 
 **1. Let vs Var**
 
-- Care este diferența între **Let** și **Var**
+- Care este diferența dintre **Let** și **Var**
 
 **2. Tipurile de date**
 
@@ -20,9 +20,9 @@
 
 - Cum se citesc șirurile și cum se lucrează cu șiruri
 
-**4. Numbers**
+**4. Numere**
 
-- Cum să lucrați cu **Numbers**
+- Cum să lucrați cu **numere**
 
 **5. Booleeni**
 
