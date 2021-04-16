@@ -29,9 +29,9 @@ public void deprecatedMethod() {
   System.out.println("Deprecated!");
 }
 ```
-These annotations can be used to generate suppress warnings.
+This annotation can be used to show that the marked element should no longer be used.
 
-It is a good practice to apply them since it can prevent future errors.
+It is a good practice to use annotations since they can prevent future errors.
 
 [/slide]
 

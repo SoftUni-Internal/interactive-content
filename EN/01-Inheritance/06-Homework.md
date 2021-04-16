@@ -1277,7 +1277,7 @@ Create the following **hierarchy** with the following **classes**:
 
 Create a base class called "Vehicle". It should possess the following members:
 - **DEFAULT_FUEL_CONSUMPTION** – **final static double (constant)**
-- **fuelConsumption –double**
+- **fuelConsumption – double**
 - **fuel – double**
 - **horsePower – int**
 - **Getters and Setters for all fields**
