@@ -82,23 +82,23 @@ The **first** command is `TakeOdd`
 
 The initial string is: "**Siiceercaroetavm**!:?:**ahsott**.:**i**:**nstupmomceqr**"
 
-We only take the chars at **odd** indices 1, 3, 5, etc. and the result is: "**icecream**::**hot**::**summer**"
+We only take the chars at **odd** indices 1, 3, 5, etc. and the result is: "**icecream**\:\:**hot**\:\:**summer**"
 [/hint] 
 [hint]
 The **second** command is `Cut 15 3`
 
-The string is: "**icecream**::**hot**::**summer**"
+The string is: "**icecream**\:\:**hot**\:\:**summer**"
 
 We cut a substring starting at index 15 with length 3, which is "**sum**", remove it from the raw password and print it.
 
-Then, on a new line we **print** the resulting new raw password: "**icecream**::**hot**::**mer**"
+Then, on a new line we **print** the resulting new raw password: "**icecream**\:\:**hot**\:\:**mer**"
 [/hint] 
 [hint]
 The **third** command is `Substitute :: -`
 
-The initial string is: "**icecream**::**hot**::**summer**"
+The initial string is: "**icecream**\:\:**hot**\:\:**summer**"
 
-we replace "::" with "-", and the result is: "**icecream**-**hot**-**mer**"
+We replace "\:\:" with "-", and the result is: "**icecream**-**hot**-**mer**"
 [/hint] 
 [hint]
 The **fourth** command is `Substitute | ^`
