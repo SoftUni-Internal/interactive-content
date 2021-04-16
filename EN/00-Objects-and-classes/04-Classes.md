@@ -143,15 +143,48 @@ For each of the strings provided you must create a cat object.
 |cats(['Millie 3', 'Lola 7'])| Millie, age 3 says Meow|
 ||Lola, age 7 says Meow|
 
-# Hints
+[hints]
+[hint]
+Create a Cat class with properties and methods described above:
 
-* Create a Cat class with properties and methods described above
+```js
+class Cat {
+  constructor(name, age) {
+    // ...
+  }
 
-* Parse the input data
+  meow() {
+    // ...
+  }
+}
+```
+[/hint] 
+[hint]
+Parse the input data:
 
-* Create all objects using class constructor and the parsed input data, store them in an array
+```js
+let [name, age] = line.split(delimiter);
+```
+[/hint] 
+[hint]
+Create all objects using class constructor and the parsed input data, store them in an array:
 
-* Loop through the array using **for…of** cycle and invoke `.meow()` method
+```js
+let cat = new Cat(name, age);
+
+cats.push(cat);
+```
+[/hint] 
+[hint]
+Loop through the array using **for…of** cycle and invoke `.meow()` method:
+
+```js
+for (let cat of cats) {
+  // invoke .meow()...
+}
+```
+[/hint] 
+[/hints] 
 
 
 [/task-description]

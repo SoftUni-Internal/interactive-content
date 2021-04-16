@@ -140,15 +140,48 @@ Pentru fiecare dintre șirurile furnizate trebuie să creați un obiect Cat.
 |cats(['Millie 3', 'Lola 7'])| Millie, age 3 says Meow|
 ||Lola, age 7 says Meow|
 
-## Sfaturi
+[hints]
+[hint]
+Creați o clasa Cat cu proprietățile și metodele descrise mai sus:
 
-* Creați o clasa Cat cu proprietățile și metodele descrise mai sus
+```js
+class Cat {
+  constructor(name, age) {
+    // ...
+  }
 
-* Parsați datele de intrare
+  meow() {
+    // ...
+  }
+}
+```
+[/hint] 
+[hint]
+Parsați datele de intrare:
 
-* Creați toate obiectele folosind constructorul clasei și datele de intrare parsate, stocați-le într-o matrice
+```js
+let [name, age] = line.split(delimiter);
+```
+[/hint] 
+[hint]
+Creați toate obiectele folosind constructorul clasei și datele de intrare parsate, stocați-le într-o matrice:
 
-* Parcurgeți matricea utilizând ciclul `for…of` și invocați metoda `.meow()`
+```js
+let cat = new Cat(name, age);
+
+cats.push(cat);
+```
+[/hint] 
+[hint]
+Parcurgeți matricea utilizând ciclul **for…of** și invocați metoda `.meow()`:
+
+```js
+for (let cat of cats) {
+  // invocați .meow()...
+}
+```
+[/hint] 
+[/hints] 
 
 
 [/task-description]
