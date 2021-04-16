@@ -22,7 +22,7 @@ function adapter(input, code) {
 # Descriere
 Creați un program care primește o **matrice de șiruri**, le parsează la **numere** și însumează doar numerele pare.
 
-## Exemplu
+## Exemple
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | sumEvenNumbers(['1', '2', '3', '4', '5', '6']) | 12 |
@@ -133,7 +133,7 @@ function adapter(input, code) {
 
 Creați un program care calculează **diferența** dintre suma numerelor **pare** și suma numerelor **impare** dintr-o matrice.
 
-## Exemplu
+## Exemple
 | **Intrare** | **Ieșire** |**Comentarii** |
 | :--- | :---: | :---:|
 | evenOdd([1, 2, 3, 4, 5, 6]) | 3 | 2 + 4 + 6 = 12, 1 + 3 + 5 = 9, 12 - 9 = 3|
@@ -290,7 +290,7 @@ while (nums.length > 1) {
 ```
 [/hint] 
 [hint]
-În timp ce aveți mai multe elemente în matricea **nums**\[\], repetați următoarele:
+Cât timp aveți mai multe elemente în matricea **nums**\[\], repetați următoarele:
 
 - Alocați o nouă matrice `condensed[]` de dimensiunea **nums**\.**length**\-**1**
 
@@ -559,9 +559,9 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Creați un program care primește o **matrice** și numărul de rotații pe care trebuie să le efectuați (primul element merge la sfârșit).
+Creați un program care primește o **matrice** și **numărul de rotații** pe care trebuie să le efectuați (primul element merge la sfârșit).
 
-- Primul **element** al intrării este **matricea de numere** în care trebuie să efectuați rotațiile
+- **Primul element** al intrării este **matricea de numere** unde trebuie să efectuați rotațiile
 - **Al doilea element** al intrării este **numărul de rotații** pe care trebuie să le efectuați 
 
 ## Ieșire
