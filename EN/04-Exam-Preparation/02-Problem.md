@@ -66,12 +66,18 @@ Print out the collection in the format described above after receiving the "**St
 | Send->Mike->Another random test mail |  - Hello, do you want to meet up tomorrow? |
 | Statistics |  - Another random test mail |
 
-### Comments
-- First, we receive the users
-- Since they are not already in our collection, we add all of them
-- Then, they start sending emails
-- In the end, we print the expected output
-
+[hints]
+[hint]
+First, we receive the **users**.
+Since they are **not** already in our collection, we **add** all of them.
+[/hint] 
+[hint]
+Then, they start **sending** emails.
+[/hint] 
+[hint]
+In the end, we **print** the expected output.
+[/hint] 
+[/hints] 
 
 ### Example
 | **Input** | **Output** |

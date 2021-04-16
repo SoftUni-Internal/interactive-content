@@ -69,11 +69,18 @@ Imprimați colecția în formatul descris mai sus după ce ați primit comanda "
 | Send->Mike->Another random test mail |  - Hello, do you want to meet up tomorrow? |
 | Statistics |  - Another random test mail |
 
-### Comentarii
-- Mai întâi primim utilizatorii noștri
-- Deoarece nu sunt încă în colecția noastră, îi adăugăm
-- Apoi acesștia încep să trimită e-mailuri și la final imprimăm rezultatul în formatul descris
-
+[hints]
+[hint]
+Mai întâi primim **utilizatorii** noștri.
+Deoarece **nu sunt** încă în colecția noastră, îi **adăugăm**.
+[/hint] 
+[hint]
+Apoi acesștia încep să **trimită** e-mailuri.
+[/hint] 
+[hint]
+la final, **imprimăm** rezultatul în formatul descris.
+[/hint] 
+[/hints] 
 
 ### Exemplu
 | **Intrare** | **Ieșire** |

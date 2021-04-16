@@ -60,32 +60,47 @@ The commands will be the following:
 | Substitute \:\: \- | Nothing to replace! |
 | Substitute \| \^ | Your password is\: icecream\-hot\-mer |
 
-## Comments
+[hints]
+[hint]
+The first command is `TakeOdd`.
 
-TakeOdd
+We only take the characters at **odd** indices - 1, 3, 5 etc.
 
-- " Siiceercaroetavm\!\:\?\:ahsott\.\:i\:nstupmomceqr" \-\> "icecream\:\:hot\:\:summer"
+" Siiceercaroetavm\!\:\?\:ahsott\.\:i\:nstupmomceqr" \-\> "**icecream**\:\:**hot**\:\:**summer**"
+[/hint] 
+[hint]
+Next is the `Cut 15 3` command.
 
+We cut the "**sum**" substring starting at index **15** with a length of **3**, remove it from the raw password and **print** it:
 
-- We only take the chars at odd indices 1, 3, 5 etc.
+"icecream\:\:hot\:\:**sum**mer" \-\> **sum**
 
-"Cut 15  3" \-\> "icecream\:\:hot\:\:summer" \-\> sum
+Then, on a new line we print the resulting **new** raw password: 
 
-- icecream\:\:hot\:\:mer
+**icecream**\:\:**hot**\:\:**mer**
+[/hint] 
+[hint]
+The third command is `Substitute :: -` 
 
-We cut a substring starting at index 15 with a length of 3, remove it from the raw password and print it. 
+We **replace** "\:\:" with "\-"
 
-Then, on a new line we print the resulting new raw password.
+"icecream\:\:hot\:\:mer" \-\> "icecream\-hot\-mer"
 
-"Substitute \:\: \-" \-\> "icecream\:\:hot\:\:summer" \-\> "icream\-hot\-summer"
+[/hint] 
+[hint]
+Next comes `Substitute | ^`
 
-- We replace "\:\:" with "\-"
+"|" is **not found** anywhere in the raw password, so we print:
 
-"Substitute \| \^" \-\> "Nothing to replace!" 
+"**Nothing to replace!**" 
 
-- "|" is not found anywhere in the raw password
+[/hint] 
+[hint]
+Finally, after receiving the "**Done**" command, we print the resulting password in the proper **format**:
 
-- Finally, after receiving the "**Done**" command, we print the resulting password in the proper format
+"**Your password is**: **icecream-hot-mer**"
+[/hint] 
+[/hints] 
 
 | **Input** | **Output** |
 | --- | --- |

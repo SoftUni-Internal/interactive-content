@@ -62,32 +62,48 @@ Comenzile vor fi următoarele:
 | Substitute \:\: \- | Nothing to replace! |
 | Substitute \| \^ | Your password is\: icecream\-hot\-mer |
 
-## Comentarii
+[hints]
+[hint]
+Prima comandă este `TakeOdd`.
 
-TakeOdd
+Luăm caracterele numai la indici **impari** -  1, 3, 5 etc.
 
-- " Siiceercaroetavm\!\:\?\:ahsott\.\:i\:nstupmomceqr" \-\> "icecream\:\:hot\:\:summer"
+" Siiceercaroetavm\!\:\?\:ahsott\.\:i\:nstupmomceqr" \-\> "**icecream**\:\:**hot**\:\:**summer**"
+[/hint] 
+[hint]
+Urmează comanda `Cut 15 3`
 
+Decupăm un șir "**sum**" care începe de la indexul **15** cu o lungime de **3**, îl scoatem din parola brută și îl **imprimăm**:
 
-- Luăm caracterele numai la indici impari 1, 3, 5 etc.
+"icecream\:\:hot\:\:**sum**mer" \-\> **sum**
 
-"Cut 15  3" \-\> "icecream\:\:hot\:\:summer" \-\> sum
+Apoi, pe o nouă linie imprimăm **noua** parolă brută rezultată:
 
-- icecream\:\:hot\:\:mer
+**icecream**\:\:**hot**\:\:**mer**
+[/hint] 
+[hint]
+A treia comandă este `Substitute :: -` 
 
-Decupăm un șir care începe de la indexul 15 cu o lungime de 3, îl scoatem din parola brută și îl imprimăm.
+**Înlocuim** "\:\:" cu "\-"
 
-Apoi, pe o nouă linie imprimăm noua parolă brută rezultată.
+"icecream\:\:hot\:\:mer" \-\> "icecream\-hot\-mer"
 
-"Substitute \:\: \-" \-\> "icecream\:\:hot\:\:summer" \-\> "icream\-hot\-summer"
+[/hint] 
+[hint]
+Urmează `Substitute | ^`
 
-- Înlocuim "\:\:" with "\-"
+"|" **nu este găsit** nicăieri în parola brută, așa că tipărim:
 
-"Substitute \| \^" \-\> "Nothing to replace!" 
+"**Nothing to replace!**" 
 
-- "|" nu este găsit nicăieri în parola brută
+[/hint] 
+[hint]
+În cele din urmă, după ce primim comanda "**Done**", imprimăm parola rezultată în **formatul** corespunzător:
 
-- În cele din urmă, după ce primim comanda "**Done**", imprimăm parola rezultată în formatul corespunzător
+"**Your password is**: **icecream-hot-mer**"
+[/hint] 
+[/hints] 
+
 
 | **Intrare** | **Ieșire** |
 | --- | --- |
