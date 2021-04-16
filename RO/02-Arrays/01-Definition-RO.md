@@ -11,9 +11,9 @@
 
 O matrice este o **colecție ordonată** și datele din interiorul acesteia pot fi modificate.
 
-Poate fi folosit pentru **păstrarea secvențelor de date și pentru a itera** prin ele.
+Poate fi folosită pentru **păstrarea secvențelor de date și pentru a itera** prin ele.
 
-Pentru a declara o matrice, plasăm valorile pe care trebuie să le dețină între paranteze drepte, fiecare element al matricei trebuie să fie separat printr-o virgulă.
+Pentru a declara o matrice, plasăm valorile pe care trebuie să le dețină între paranteze drepte, iar fiecare element al matricei trebuie să fie separat printr-o virgulă.
 
 Crearea unei matrice de șiruri:
 
@@ -29,9 +29,10 @@ let myArray = ['string', 2, 3.33, 2, true];
 ```
 
 Valorile dintr-o matrice se numesc **elemente.**
+
 Puteți să vă gândiți la o matrice ca la un **tren**, al cărui vagon **poate conține un tip și un număr diferit de obiecte**: pasageri, mărfuri, materii prime, vagonul ar putea fi chiar gol.
 
-Acum să ne imaginăm **o matrice de numere întregi**, fiecare element reprezentând un vagon și fiecare valoare este numărul de pasageri.
+Acum să ne **imaginăm o matrice de numere întregi**, fiecare element reprezentând un vagon și fiecare valoare fiind numărul de pasageri.
 
 Ca și în această reprezentare grafică:
 
@@ -39,13 +40,13 @@ Ca și în această reprezentare grafică:
 
 Acesta are **7 vagoane** (**elemente**).
 
-Fiecare are **pasageri** (o valoare).
+Fiecare vagon are **pasageri** (o valoare).
 
 - [3, 4, 10, 7, 5, 0, 6]
 
 Elementele matricei sunt numerotate de la 0 la `length-1`.
 
-Folosind metoda `Array.length` putem obține o variabilă, care conține lungimea unei matrice.
+Folosind metoda `Array.length` putem obține o variabilă care conține lungimea unei matrice.
 
 În acest exemplu avem **7 elemente.**
 
@@ -71,7 +72,7 @@ let numbers = [1, 2, 3, 4, 5];
 
 Când avem o matrice, putem accesa fiecare element după indicele său.
 
-Operatorul `[]` este utilizat pentru a accesa elementele matricei prin **inddicele lor.**
+Operatorul `[]` este utilizat pentru a accesa elementele matricei prin **indicele lor.**
 
 ```js live
 let numbers = [1, 2, 3, 4, 5];
@@ -120,9 +121,10 @@ function adapter(input, code) {
 # Descriere
 
 Creați un program care primește o **matrice de numere** ca intrare.
-Imprimați suma **primului** și **ultimului** element al matricei
 
-## Exemplus
+Imprimați suma **primului** și **ultimului** element al matricei.
+
+## Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | sumFirstAndLastNum([20, 30, 40]) | 60 |
@@ -209,7 +211,7 @@ sumFirstAndLastNum([91, 18, 19])
 let days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 ```
 
-|**Index**|**Value**|
+|**Indice**|**Valoare**|
 |---|---|
 |`days[0]`|Monday|
 |`days[1]`|Tuesday|
@@ -251,7 +253,7 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Creați un program care primește un număr și imprimă numele corespunzător al zilei săptămânii.
+Creați un program care primește un **număr** și imprimă numele corespunzător zilei săptămânii.
 
 Dacă numărul NU este o zi validă, tipăriți "**Invalid day!**".
 
@@ -384,7 +386,7 @@ arr[arr.length] = 40;
 console.log(arr); 
 ```
 
-Sau putem folosi metoda push încorporată:
+Sau putem folosi metoda încorporată push:
 
 ``` js live
 let arr = [10, 20, 30];
@@ -412,9 +414,9 @@ console.log(nums.length);
 console.log(nums[3]);
 ```
 
-Erori tipice cu care ne putem confrunta atunci când lucrăm cu o matrice:
+Erori tipice cu care ne putem confrunta atunci când lucrăm matrice:
 
-- Putem accesa de fapt indici care nu există în matrice
+- Putem accesa indici care nu există în matrice
 
 ``` js live
 let nums = [10, 20, 30];
