@@ -1,4 +1,4 @@
-# Problem 2: Pet House
+# Problemă 2: Pet House
 [slide hideTitle]
 # Pet House
 
@@ -6,7 +6,7 @@
 
 ```
 function solveClasses(){
-  // Write your code here
+  // Scrieți codul dvs. aici
 
    return {
       Pet,

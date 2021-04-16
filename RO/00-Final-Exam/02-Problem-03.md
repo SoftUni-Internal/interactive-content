@@ -1,4 +1,4 @@
-# Problem 3: Veterinary Clinic
+# Problemă 3: Veterinary Clinic
 [slide hideTitle]
 # Veterinary Clinic
 
@@ -7,7 +7,7 @@
 
 ```
 class VeterinaryClinic {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]

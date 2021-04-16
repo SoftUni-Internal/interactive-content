@@ -1,4 +1,4 @@
-# Problem 1: Pet Me!
+# Problemă 1: Pet Me!
 [slide hideTitle]
 
 # Pet Me
@@ -8,7 +8,7 @@
 
 ```
 function petMe(){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
