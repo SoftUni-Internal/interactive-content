@@ -8,7 +8,7 @@
 
 Tipurile diferite de date au **mărimi** diferite în memoria calculatorului.
 
-Totul în calculatoare este reprezentat prin **unități și zerouri**, cum este, de exemplu, `int` care are 32 de biți, ceea ce înseamnă că pentru a scrie `int` în memoria computerului, **este nevoie de treizeci și două de unități și zerouri.**
+Totul în calculatoare este reprezentat prin **unități și zerouri**, cum este de exemplu `int`, care are 32 de biți, ceea ce înseamnă că pentru a scrie `int` în memoria computerului, **este nevoie de treizeci și două de unități și zerouri.**
 
 Astfel, noi îi spunem calculatorului că trebuie să pună deoparte treizeci și doi de biți pentru a citi numărul introdus de noi.
 
