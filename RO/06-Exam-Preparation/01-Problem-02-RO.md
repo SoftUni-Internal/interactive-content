@@ -1,4 +1,4 @@
-# Problema 2: Press House
+# Problemă 2: Press House
 [slide hideTitle]
 # Press House
 

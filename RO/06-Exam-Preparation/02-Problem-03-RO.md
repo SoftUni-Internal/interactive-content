@@ -1,4 +1,4 @@
-# Problema 3: Bank
+# Problemă 3: Bank
 [slide hideTitle]
 
 # Bank
@@ -8,7 +8,7 @@
 [code-task title="Bank" taskId="js-advanced-exam-preparation-bank" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
 class Bank {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]

@@ -1,4 +1,4 @@
-# Problema 1: Task Manager
+# Problemă 1: Task Manager
 
 [slide hideTitle]
 # Task Manager
