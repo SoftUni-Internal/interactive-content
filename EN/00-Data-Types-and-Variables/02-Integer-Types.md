@@ -138,7 +138,7 @@ System.out.println("long: " + number);
 [slide hideTitle]
 # Problem with Solution: Convert Meters to Kilometers
 
-[video src="hhttps://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/java-fund-data-types-and-variables-17-solution-convert-meters-to-kilometers-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/java-fund-data-types-and-variables-17-solution-convert-meters-to-kilometers-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Problem: Convert Meters to Kilometers" taskId="java-fund-1-data-types-lab-convert-meters-to-kilometers-problem" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
