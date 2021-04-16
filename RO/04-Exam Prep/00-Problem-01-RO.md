@@ -82,12 +82,12 @@ Your password is: icecream\-hot\-mer
 
 Șirul inițial este: "**Siiceercaroetavm**!:?:**ahsott**.:**i**:**nstupmomceqr**"
 
-Luăm caracterele de pe indici **impari** 1, 3, 5 etc., iar rezultatul este: "**icecream**::**hot**::**summer**"
+Luăm caracterele de pe indici **impari** 1, 3, 5 etc., iar rezultatul este: "**icecream**\:\:**hot**\:\:**summer**"
 [/hint] 
 [hint]
 A **doua** comandă este `Cut 15 3`
 
-Șirul este: "**icecream**::**hot**::**summer**"
+Șirul este: "**icecream**\:\:**hot**\:\:**summer**"
 
 Tăiem șubșirul care începe de la indicele 15 cu lungimea 3, care este "**sum**", îl eliminăm din parola primară și îl imprimăm.
 
@@ -96,9 +96,9 @@ Apoi, pe o nouă linie imprimăm noua parolă primară care rezultă: "**icecrea
 [hint]
 A **treia** comandă este `Substitute :: -`
 
-Șirul inițial este: "**icecream**::**hot**::**summer**"
+Șirul inițial este: "**icecream**\:\:**hot**\:\:**summer**"
 
-Înlocuim "::" cu "-", iar rezultatul este: "**icecream**-**hot**-**mer**"
+Înlocuim "\:\:" cu "-", iar rezultatul este: "**icecream**-**hot**-**mer**"
 [/hint] 
 [hint]
 A **patra** comandă este `Substitute | ^`
