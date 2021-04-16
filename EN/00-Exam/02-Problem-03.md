@@ -114,19 +114,26 @@ No need to check that explicitly
 | TakeDamage - Ivor - 3 - Mosquito | HP: 90 |
 | End | MP: 200 |
 
-### Comments
-
-"**Heal**" - SirMullich healed for 30 HP due to the HP max limit.
-
-"**Recharge**" - Adela recharged for 50 MP due to the MP max limit.
-
+[hints]
+[hint]
+"**Heal**" - SirMullich healed for **30** HP due to the HP max limit.
+[/hint] 
+[hint]
+"**Recharge**" - Adela recharged for **50** MP due to the MP max limit.
+[/hint] 
+[hint]
 "**CastSpell**" - Tyris does not have enough MP to cast the spell.
-
-"**TakeDamage**" - Tyris's HP is reduced by 99, thus becoming -5, which means that he is dead.
-
-"**TakeDamage**" - Ivor's HP is now -2, so he is dead too.
-
+[/hint] 
+[hint]
+"**TakeDamage**" - Tyris's HP is reduced by **99**, thus becoming **-5**, which means that he is dead.
+[/hint] 
+[hint]
+"**TakeDamage**" - Ivor's HP is now **-2**, so he is dead too.
+[/hint] 
+[hint]
 After the "**End**" command we print the remaining living heroes, sorted by their HP in decending order.
+[/hint] 
+[/hints] 
 
 
 ## Example Two

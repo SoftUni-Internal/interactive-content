@@ -71,19 +71,19 @@ Prima comandă este `Slice>>2>>6`
 
 Eliminăm caracterele dintre indexul 2 and 6(neincluse) - **cdef**
 
-ab**cdef**ghijklmnopqrstuvwxyz **devine** "**abghijklmnopqrstuvwxyz**"
+ab**cdef**ghijklmnopqrstuvwxyz -\> "**abghijklmnopqrstuvwxyz**"
 [/hint] 
 [hint]
 Al doilea vine `Flip>>>Upper>>>3>>>14`
 
 Comutăm caracterele între indexurile 3 și 14(neincluse) cu majuscule - **hijklmnopqr**
 
-abg**hijklmnopqr**stuvwxyz **devine** abg**HIJKLMNOPQR**stuvwxyz
+abg**hijklmnopqr**stuvwxyz -\> abg**HIJKLMNOPQR**stuvwxyz
 [/hint] 
 [hint]
 A patra comandă este `Flip>>>Lower>>>5>>>7`
 
-abgHI**JK**LMNOPQRstuvwxyz **devine** abgHI**jk**LMNOPQRstuvwxyz
+abgHI**JK**LMNOPQRstuvwxyz -\> abgHI**jk**LMNOPQRstuvwxyz
 [/hint] 
 [hint]
 Următoarea comandă este `Contains>>>def`

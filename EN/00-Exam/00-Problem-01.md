@@ -71,19 +71,19 @@ The first command is `Slice>>2>>6`
 
 We remove the characters between index 2 and 6(not included) - **cdef**
 
-ab**cdef**ghijklmnopqrstuvwxyz **becomes** "**abghijklmnopqrstuvwxyz**"
+ab**cdef**ghijklmnopqrstuvwxyz -\> "**abghijklmnopqrstuvwxyz**"
 [/hint] 
 [hint]
 Second comes `Flip>>>Upper>>>3>>>14`
 
 We toggle the characters between index 3 and 14(not included) to uppercase - **hijklmnopqr**
 
-abg**hijklmnopqr**stuvwxyz **becomes** abg**HIJKLMNOPQR**stuvwxyz
+abg**hijklmnopqr**stuvwxyz -\> abg**HIJKLMNOPQR**stuvwxyz
 [/hint] 
 [hint]
 The fourth command is `Flip>>>Lower>>>5>>>7`
 
-abgHI**JK**LMNOPQRstuvwxyz **becomes** abgHI**jk**LMNOPQRstuvwxyz
+abgHI**JK**LMNOPQRstuvwxyz -\> abgHI**jk**LMNOPQRstuvwxyz
 [/hint] 
 [hint]
 The next command is `Contains>>>def`

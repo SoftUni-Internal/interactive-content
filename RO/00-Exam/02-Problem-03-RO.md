@@ -116,19 +116,26 @@ Nu este nevoie să verificați în mod explicit acest lucru
 | TakeDamage - Ivor - 3 - Mosquito | HP: 90 |
 | End | MP: 200 |
 
-### Comentarii
-
-"**Heal**" - SirMullich s-a vindecat cu 30 HP din cauza limitei maxime HP.
-
-"**Recharge**" - Adela reîncărcată pentru 50 MP din cauza limitei maxime de MP.
-
+[hints]
+[hint]
+"**Heal**" - SirMullich s-a vindecat cu **30** HP din cauza limitei maxime HP.
+[/hint] 
+[hint]
+"**Recharge**" - Adela reîncărcată pentru **50** MP din cauza limitei maxime de MP.
+[/hint] 
+[hint]
 "**CastSpell**" - Tyris nu are suficient MP pentru a arunca vraja.
-
-"**TakeDamage**" - HP-ul lui Tyris este redus cu 99, devenind astfel -5, ceea ce înseamnă că este mort.
-
-"**TakeDamage**" - HP-ul lui Ivor este acum -2, deci și el este mort.
-
+[/hint] 
+[hint]
+"**TakeDamage**" - HP-ul lui Tyris este redus cu **99**, devenind astfel **-5**, ceea ce înseamnă că este mort.
+[/hint] 
+[hint]
+"**TakeDamage**" - HP-ul lui Ivor este acum **-2**, deci și el este mort.
+[/hint] 
+[hint]
 După comanda "**End**", tipărim eroii vii rămași, sortați în funcție de HP în ordine descendentă.
+[/hint] 
+[/hints]
 
 
 ## Al Doilea Exemplu
