@@ -242,6 +242,16 @@ Intrarea constă în 3 șiruri, în ordinea descrisă mai sus.
 | convertToJSON('George', 'Jones', 'Brown') | \{"name":"George", "lastName":"Jones", "hairColor":"Brown"\}|
 | convertToJSON('Thomas', 'Muller', 'Blonde') | \{"name":"Thomas", "lastName":"Muller", "hairColor":"Blonde"\}|
 
+[hints]
+[hint]
+Puteți folosi `JSON.stringify()`:
+
+```js
+console.log(JSON.stringify(person));
+```
+[/hint] 
+[/hints] 
+
 [/task-description]
 [tests]
 [test open]
