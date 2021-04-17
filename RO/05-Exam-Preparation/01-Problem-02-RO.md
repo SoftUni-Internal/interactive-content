@@ -25,7 +25,7 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Veți primi un șir care conține obiectele curente din inventarul vostru. Obiectele vor fi separate printr-o virgulă și de un spațiu \(", "\).
+Veți primi un șir care conține obiectele curente din inventarul vostru. Obiectele vor fi separate printr-o virgulă și un spațiu \(", "\).
 
 Apoi, până la primirea mesajului "**Craft!**", veți primi diferite comenzi. 
 
@@ -43,9 +43,9 @@ Comenzile sunt separate prin (" \- ") și pot să fie următoarele:
 
 * "**Combine Items -** \{**oldItem**\}**:**\{**newItem**\}":
 
-   - Verifica dacă primul obiect există în inventar, iar dacă există, atunci adăugați noul obiect după primul
+   - Verificați dacă primul obiect există în inventar, iar dacă există, atunci adăugați noul obiect după primul
 
-   - Dacă nu există, ignorați comanda.
+   - Dacă nu există, ignorați comanda
 
 * "**Renew -** \{**item**\}":
 
@@ -68,7 +68,7 @@ După ce primiți comanda "**Craft!**", imprimați toate articole din inventarul
 Creați o condiție care verifică dacă șirul obiectelor conține două puncte (**":"**), iar apoi îl împarte.
 [/hint] 
 [hint]
-Parcurgeți fiecare comandă/obiecte și modificați inventarul în mod corespunzător.
+Parcurgeți fiecare comandă/obiect și modificați inventarul în mod corespunzător.
 [/hint] 
 [hint]
 La final, tipăriți inventarul pe consolă folosind metoda `.join(separator)`.
