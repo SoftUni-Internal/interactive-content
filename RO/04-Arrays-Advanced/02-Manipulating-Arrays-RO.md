@@ -1,12 +1,12 @@
 # Manipularea Matricelor
 
 [slide hideTitle]
-# Împărțirea Matricei
+# Tăierea Matricelor
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-15-16-slicing-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Metoda `array.slice()` returnează elementele selectate într-o matrice, ca un **nou obiect al matricei**.
+Metoda `array.slice()` returnează **elementele selectate** într-o matrice, ca un **nou obiect nou de tip matrice**.
 
-Aceasta selectează elementele începând de la indicele de început dat și se termină, dar nu include, un indice opțional de sfârșit. 
+Aceasta selectează elementele începând cu indicele de început dat și se termină, dar nu include, un indice opțional de sfârșit. 
 
 ``` js live
 let myArray = ['one', 'two', 'three', 'four', 'five'];
@@ -67,7 +67,7 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Scrieți o funcție care imprimă primele **k** și ultimele **k** elemente și ale unei matrice de numere.
+Scrieți o funcție care imprimă primele **k** și ultimele **k** elemente ale unei matrice de numere.
 
 **Intrarea** este dată ca o **matrice** de numere întregi.
 
@@ -201,11 +201,11 @@ Scrieți o funcție care **generează** și **imprimă** următoarea secvență:
 - Fiecare **element următor** este **egal cu suma** celor **k** elemente anterioare
 - **Lungimea secvenței** este de **n** elemente
 
-**Intrarea** este dată ca o matrice de două **numere**.
+**Intrarea** este dată sub forma a două **numere**.
 
 **Primul element** reprezintă numărul **n**, iar al doilea - numărul **k**.
 
-Ieșirea este **imprimată** pe consolă pe **o singură linie**, separată printr-un **un spațiu**.
+Ieșirea este **imprimată** pe consolă pe **o singură linie**, separată printr-un **spațiu**.
 
 
 ## Exemple
