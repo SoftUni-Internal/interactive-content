@@ -106,7 +106,7 @@ Scrieți o funcție care tipărește toate elementele de pe **poziții impare**,
 [hints]
 [hint]
 Numărarea în matrice începe de la **0**.
-De exemplu, primim: `10, 15, 20, 25`
+De exemplu, primim: `10, 15, 20, 25`.
 Elementele aflate pe poziții impare sunt **15** (indicele **1**) și **25** (indicele **3**).
 [/hint] 
 [hint]
