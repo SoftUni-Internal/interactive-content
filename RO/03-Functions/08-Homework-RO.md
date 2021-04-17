@@ -22,9 +22,9 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Scrieți o funcție care primește **un șir** și un număr de repetare - "**n**". 
+Scrieți o funcție care primește **un șir** și un număr de repetări - "**n**". 
 
-Funcția ar trebui să returneze un șir nou (cel vechi repetat de "**n**" ori).
+Funcția trebuie să returneze un șir nou (cel vechi repetat de "**n**" ori).
 
 ## Exemple
 |**Intrare**|**Ieșire** |
@@ -118,9 +118,9 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Scrieți o funcție care primește trei numere întregi pentru a imprima numărul cel mai mic.
+Scrieți o funcție care primește trei numere întregi și imprimă numărul cel mai mic.
 
-Folosiți un nume adecvat pentru funcție.
+Folosiți un **nume adecvat** pentru funcție.
 
 ## Exemple
 |**Intrare**|**Ieșire** |
@@ -264,7 +264,7 @@ function adapter(input, code) {
 
 Veți primi **trei numere întregi.**
 
-Scrieți o funcție `sum()` pentru a obține suma primelor două numere întregi și funcția `subtract()` care scade al treilea număr întreg din rezultat.
+Scrieți o funcție `sum()` pentru a obține suma primelor două numere întregi și o funcție `subtract()` care scade al treilea număr întreg din rezultat.
 
 ## Exemple
 |**Intrare**|**Ieșire** |
@@ -416,7 +416,7 @@ function adapter(input, code) {
 
 Scrieți o funcție care **primește două caractere** și imprimă pe o singură linie toate caracterele dintre ele conform codului **ASCII**.
 
-Rețineți că **al doilea cod de caractere ar putea fi înaintea primului din tabelul ASCII.**
+Țineți cont că **codul celui de-al 2-lea caracter poate fi înaintea primului în tabelul ASCII.**
 
 ## Exemple
 |**Intrare**|**Ieșire** |
@@ -520,9 +520,9 @@ function adapter(input, code) {
 
 Veți primi un **singur număr**.
 
-Scrieți o funcție care returnează **suma** din **toate cifrele pare** și **toate cifrele impare** din acel număr.
+Scrieți o funcție care returnează **suma** **tuturor cifrelor pare** și suma **tuturor cifrelor impare** din acel număr.
 
-## Exemplus
+## Exemple
 |**Intrare**|**Ieșire** |
 | --- | --- |
 | oddEvenSum(1000435) |  Odd sum = 9, Even sum = 4 |
@@ -613,9 +613,9 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Un palindrom este un număr care citit  **de la stânga la dreapta sau de la dreapta la stânga rămâne neschimbat**, cum ar fi 323 sau 1001.
+Un palindrom este un număr care citit **de la stânga la dreapta sau de la dreapta la stânga rămâne neschimbat**, cum ar fi 323 sau 1001.
 
-Scrieți o funcție care primește o **matrice de numere  întregi pozitive** și verificați dacă fiecare număr întreg este un palindrom sau nu.
+Scrieți o funcție care primește o **matrice de numere întregi pozitive** și verifică dacă fiecare număr întreg este un palindrom sau nu.
 
 ## Exemplul Unu
 |**Intrare**|**Ieșire** |
@@ -756,15 +756,16 @@ function adapter(input, code) {
 # Descriere
 
 Scrieți o funcție care verifică dacă o parolă dată este validă. 
+
 Validările parolelor sunt:
 
 - Lungimea trebuie să fie de 6 - 10 caractere (inclusiv)
-- Ar trebui să fie formată doar din litere și cifre
-- Ar trebui să aibă cel puțin 2 cifre
+- Trebuie să fie formată doar din litere și cifre
+- Trebuie să aibă cel puțin 2 cifre
 
 Dacă o parolă este validă, tipăriți "**Password is valid**".
 
-Dacă este **NU** este validă, pentru fiecare regulă neîmplinită tipăriți un mesaj:
+Dacă **NU** este validă, pentru fiecare regulă neîmplinită tipăriți un mesaj:
 
 - "**Password must be between 6 and 10 characters**"
 
@@ -778,7 +779,7 @@ Dacă este **NU** este validă, pentru fiecare regulă neîmplinită tipăriți 
 | passwordValidator('logIn') | Password must be between 6 and 10 characters |
 || Password must have at least 2 digits |
 
-## Exemplul  Di
+## Exemplul Doi
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | passwordValidator('MyPass123') | Password is valid |
@@ -1083,11 +1084,11 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Scrieți o funcție care primește un număr și stabilește dacă acest număr este **perfect** sau **nu**.
+Scrieți o funcție care primește un număr și stabilește dacă acel număr este **perfect** sau **nu**.
 
-Un număr perfect este un număr întreg **pozitiv** care este egal cu **suma divizorilor pozitivi proprii**.
+Un număr perfect este un număr **întreg pozitiv** care este egal cu **suma divizorilor pozitivi proprii**.
 
-Aceasta este suma divizorilor sale pozitivi, excluzând numărul în sine (cunoscut și ca **suma alicotă**).
+Suma divizorilor pozitivi ai unui număr, excluzând numărul în sine, este cunoscută și ca **suma alicotă**.
 
 ## Exemple
 | **Intrare** | **Ieșire** | **Comentarii** |
@@ -1098,10 +1099,12 @@ Aceasta este suma divizorilor sale pozitivi, excluzând numărul în sine (cunos
 
 [hints]
 [hint]
-În mod echivalent, un număr perfect este un număr care este **o jumătate din suma** tuturor divizorilor săi pozitivi `(incluzând numărul respectiv) => 6` este un număr perfect, deoarece este suma lui `1 + 2 + 3` (toate fiind împărțite fără rest).
+În mod echivalent, un număr perfect este un număr care este egal cu **jumătate din suma** tuturor divizorilor săi pozitivi, incluzând numărul respectiv.
+
+6 este un număr perfect, deoarece este egal cu suma "1 + 2 + 3" (toate fiind împărțite fără rest).
 [/hint] 
 [hint]
-Citiți despre [perfect](https://en.wikipedia.org/wiki/Perfect_number) number.
+Citiți despre numărul [perfect](https://en.wikipedia.org/wiki/Perfect_number).
 [/hint] 
 [hint]
 Puteți crea o buclă for de la **0** la **num / 2**:
