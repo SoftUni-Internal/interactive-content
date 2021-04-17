@@ -5,38 +5,38 @@
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-30-naming-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- Numele funcțiilor ar trebui să **descrie sarcina lor** într-un mod **clar** și **lipsit de ambiguități**
+- Numele funcțiilor trebuie să **descrie sarcina lor** într-un mod **clar** și **lipsit de ambiguități**
 - Numele lor trebuie să fie **semnificative și nu foarte lungi**
-- Ar trebui să răspundă la întrebarea: "**Ce face această funcție?**"
+- Trebuie să răspundă la întrebarea: "**Ce face această funcție?**"
 
-Exemple pentru nume **bune**:
+Exemple de nume **bune**:
 ```js
 findStudent, loadSeport, add
 ```
 
-Exemple pentru nume **rele**:
+Exemple de nume **rele**:
 
 ```js
 Method1, DoSomething, handleStuff, DirtyHack
 ```
 
-Dacă **nu puteți** găsi un **nume bun** pentru o funcție, gândiți-vă la **dacă are o intenție clară**.
+Dacă **nu puteți** găsi un **nume bun** pentru o funcție, gândiți-vă **dacă are o intenție clară**.
 
 
 ## Numirea Parametrilor Funcției
 
-- Formă preferată: `[Substantiv]` sau `[Adjectiv] + [Substantiv]`
-- **Nu** trebuie să conțină **litere majuscule**
-- Ar trebui să fie **semnificativ**
-- Unitatea de măsură ar trebui să fie evidentă
+- Formă preferată: Substantiv sau Adjectiv + Substantiv
+- **Nu** trebuie să conțină **majuscule**
+- Trebuie să fie **semnificativă**
+- Unitatea de măsură trebuie să fie evidentă
 
-Exemple pentru nume de parametri **buni**:
+Exemple de nume **bune** de parametri:
 
 ```js
 firstName, report, speedKmH, usersList, fontSizeInPixels, font
 ```
 
-Exemple pentru nume de parametri **rei**
+Exemple de nume **rele** de parametri:
 
 ```js
 p, p1, p2, populate, LastName, lastName
@@ -50,7 +50,7 @@ p, p1, p2, populate, LastName, lastName
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-29-naming-and-best-practices-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Fiecare funcție trebuie să efectueze o sarcină **unică**, bine definită
-- **Evitați funcțiile lungi**, **împărțiți-le** în **câteva mai scurte**
+- **Evitați funcțiile lungi**, **împărțiți-le** în **câteva funcții mai scurte**
 
 
 ```js
@@ -61,7 +61,7 @@ function printReceipt(){
 }
 ```
 
- În urma practicilor, funcția definită în exemplul de mai sus este **autodocumentată** și **ușoară de testat**.
+Ținând cont de aceste practici, funcția definită în exemplul de mai sus este **autodocumentată** și **ușor de testat**.
 
 ## Structura Codului și Formatarea Codului
 
@@ -69,11 +69,11 @@ Asigurați-vă că utilizați indentarea corectă.
 
 - Lăsați o linie goală între funcții și după blocuri
 
-- Utilizați întotdeauna paranteze cretate pentru corpuri condiționate și bucle
+- Utilizați întotdeauna acolade pentru corpuri condiționate și bucle
 
 - Evitați rândurile lungi și expresiile complexe
 
-- Exemplu de o **funcție bine structurată:**
+- Exemplu de **funcție bine structurată:**
 
 ```js
 function sum() {
@@ -82,7 +82,7 @@ function sum() {
 }
 ```
 
-- Exemplu de o **funcție prost structurată:**
+- Exemplu de **funcție prost structurată:**
 
 ```js
 function sum()​
@@ -119,10 +119,10 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Scrieți o funcție săgeată care primește **o matrice cu trei elemente** (două numere și un șir)și calculează rezultatul, în funcție de operatorul specificat. 
+Scrieți o funcție săgeată care primește **o matrice cu trei elemente** (două numere și un șir) și calculează rezultatul, în funcție de operatorul specificat. 
 
 Operatorul poate fi unul dintre următoarele: 
-"**multiply**" (înumlțire), "**divide**" (împărțire), "**add**" (adăugare), and "**subtract**" (scădere).
+"**multiply**" (înmulțire), "**divide**" (împărțire), "**add**" (adunare) și "**subtract**" (scădere).
 
 ## Exemple
 |**Intrare**|**Ieșire**|
