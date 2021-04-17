@@ -1,4 +1,4 @@
-# Problem cu soluție 1: Mu Online
+# Problemă cu Soluție 1: Mu Online
 
 [slide hideTitle]
 
