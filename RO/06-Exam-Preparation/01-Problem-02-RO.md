@@ -27,15 +27,15 @@ function adapter(input, code) {
 # Descriere
 Scrieți un program care să verifice dacă există **locuri goale într-un lift.**
 
-Fiecare dintre cabinele ascensorului nu poate găzdui **mai mult de 4 persoane.**
+Fiecare dintre cabinele ascensorului găzduiește **cel mult 4 persoane.**
 
 Dacă o cabină este plină, trebuie să îndreptați oamenii către următoarea cabină cu locuri disponibile.
 
 ## Intrare
 
-* Pe prima linie, veți primi numărul de persoane care așteaptă la coadă pentru a urca în lift
+* Pe prima linie veți primi numărul de persoane care așteaptă la coadă pentru a urca în lift
 
-* Pe a doua linie, veți primi starea actuală a liftului - un șir de numere "(0-4)", fiecare număr reprezentând numărul de persoane din fiecare cabină următoare, separate printr-un spațiu gol
+* Pe a doua linie veți primi starea actuală a liftului - un șir de numere "(0-4)", fiecare număr reprezentând numărul de persoane din fiecare cabină următoare, separate printr-un spațiu gol
 
 ## Ieșire
 
