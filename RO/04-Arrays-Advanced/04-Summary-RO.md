@@ -15,7 +15,7 @@ numbers.push(30); // Adaugă 30 în matrice
 console.log(numbers);
 ```
 
-- Putem adăuga, elimina sau să inserăm elemente în timpul rulării
+- Putem adăuga, elimina sau insera elemente în timpul rulării
   
 ```js live
 let people = ['Paul', 'Mary', 'John'];
