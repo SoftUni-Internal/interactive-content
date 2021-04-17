@@ -245,9 +245,9 @@ Imprimați elementele rezultate (cele care au rămas), separate printr-un singur
 ## Exemple
 | **Intrare** | **Ieșire** | **Comentarii** |
 | :---:       |    :----:   |   :---:     |
-|distinctArray([1, 2, 3, 4])| 1 2 3 4| Nu există elemente care se repetă |
-|distinctArray([7, 8, 9, 7, 2, 3, 4, 1, 2])| 7 8 9 2 3 4 1| 7 și 2 sunt deja prezente în matrice \-\> eliminați-le|
-|distinctArray([20, 8, 12, 13, 4, 4, 8, 5])| 20 8 12 13 4 5|4 și 8 sunt deja prezente în matrice \-\> eliminați-le |
+|distinctArray([1, 2, 3, 4])| 1 2 3 4| No repeating elements |
+|distinctArray([7, 8, 9, 7, 2, 3, 4, 1, 2])| 7 8 9 2 3 4 1| 7 and 2 are already present in the array \-\> remove them |
+|distinctArray([20, 8, 12, 13, 4, 4, 8, 5])| 20 8 12 13 4 5| 4 and 8 are already present in the array \-\> remove them |
 
 [/task-description]
 [code-io /]
