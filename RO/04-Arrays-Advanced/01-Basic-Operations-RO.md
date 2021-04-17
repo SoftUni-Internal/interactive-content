@@ -21,7 +21,7 @@ Funcționalitatea avansată a unei matrice constă din următoarele funcții:
 
 - `includes(element)` - determină dacă o **matrice include un anumit element**, returnează "**true**" sau "**false**"
 
-- `indexOf(el)` - returnează indicele unui element sau returnează -1, dacă nu poate găsi elementul
+- `indexOf(element)` - returnează indicele unui element sau returnează -1, dacă nu poate găsi elementul
 
 Practic, aceste metode modifică matricea și nu este nevoie să scriem foarte mult cod, ceea ce economisește mult timp. 
 
@@ -29,7 +29,7 @@ Practic, aceste metode modifică matricea și nu este nevoie să scriem foarte m
 
 [slide hideTitle]
 
-# Adăugați la Sfârșit, Eliminați de la Sfârșit
+# Adăugare la Sfârșit, Eliminare de la Sfârșit
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-5-add-at-the-end-remove-from-the-end-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -37,7 +37,7 @@ JavaScript are **metode încorporate** pentru a adăuga sau a elimina elemente a
 
 - **Adăugarea unui element la sfârșitul matricei**
 
-Metoda `array.push()` este utilizată pentru a adăuga un element nou la sfârșitul matricei.
+Metoda `array.push()` este utilizată pentru a adăuga **un element nou la sfârșitul** matricei.
 
 ``` js live
 let array = [1, 2, 3, 4];
@@ -49,7 +49,7 @@ console.log(array);
 
 - **Eliminarea unui element de la sfârșit**
 
-Metoda `array.pop()` este utilizată pentru a obține și a elimina elementul de la sfârșitul matricei.
+Metoda `array.pop()` este utilizată pentru **a obține și a elimina elementul de la sfârșitul** matricei.
 
 Dacă apelăm `array.pop()` pentru o matrice goală, se returnează **undefined.** 
 
@@ -65,14 +65,14 @@ console.log(number);
 [/slide]
 
 [slide hideTitle]
-# Adăugați la Început, Eliminați de la Început 
+# Adăugare la Început, Eliminare de la Început 
 
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-6-add-at-the-start-remove-from-the-start-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - **Adăugarea unui element la începutul matricei**
 
-Metoda `array.unshift()` este utilizată pentru a adăuga un element nou la începutul unui matrice.
+Metoda `array.unshift()` este utilizată pentru **a adăuga un element nou** la începutul unei matrice.
 
 ``` js live
 let array = [1, 2, 3, 4];
@@ -83,10 +83,10 @@ console.log(array);
 ```
 - **Eliminarea unui element de la început**
 
-Metoda `array.shift()` este utilizată pentru a obține și a elimina un element de la începutul matricei.
+Metoda `array.shift()` este utilizată pentru **a obține și a elimina un element de la începutul** matricei.
 
 ``` js live
-let array = [0,1, 2, 3, 4, 5];
+let array = [0, 1, 2, 3, 4, 5];
 
 let number = array.shift();
 
@@ -125,6 +125,7 @@ function adapter(input, code) {
 Scrieți o funcție care **calculează** și **imprimă** suma primului și ultimului element al unei matrice.
 
 **Intrarea** este dată ca o **matrice** de **șiruri**, care conțin **numere**.
+
 **Ieșirea** trebuie să fie **valoarea returnată de către funcție**.
 
 ## Exemple
@@ -197,7 +198,7 @@ solve(['5', '10'])
 [/slide]
 
 [slide hideTitle]
-# Metodele Push și Pop într-o Matrice
+# Metodele Push și Pop Într-o Matrice
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05. JS-Fundamentals-Arrays-Advanced-10-7-pushing-an-array-and-pop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -237,7 +238,7 @@ console.log(popped);
 [/slide]
 
 [slide hideTitle]
-# Metodele Shift și Unshift într-o Matrice
+# Metodele Shift și Unshift Într-o Matrice
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-11-shifting-and-unshifting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -414,10 +415,10 @@ negativePositive([\-2, 3, 0, 5, \-6, 0, 8])
 [/slide]
 
 [slide hideTitle]
-# Găsiți Valori
+# Găsirea Valorilor
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-14-find-values-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-`array.includes()` returnează **true** dacă **valoarea** dată **face parte din matrice**.
+Metoda `array.includes()` returnează **true** dacă **valoarea** dată **face parte din matrice**.
 
 ``` js live
 let myArray = ['Peter', 'George', 'Mary'];
@@ -429,7 +430,7 @@ console.log(isGeorgeInclude);
 console.log(isJohnInclude);
 ```
 
-`Array.indexOf()` returnează indicele unde este stocată valoarea dată.
+Metoda `array.indexOf()` returnează **indicele unde este stocată valoarea dată**.
 
 Returnează \-1 dacă valoarea **nu este găsită**. 
 
