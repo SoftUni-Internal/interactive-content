@@ -1,6 +1,6 @@
 [slide hideTitle]
 
-# Secvența Condițiilor "if-else" 
+# Secvența Condițiilor "If-Else" 
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-25-27-series-of-conditions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -25,13 +25,13 @@ else {
 [/slide]
 
 [slide hideTitle]
-# Exemplu: Cifre în Engleză
+# Exemplu: Digits in English
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-25-27-series-of-conditions-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Imprimați cifrele în intervalul de la 1 la 9 (cifrele sunt citite de pe consolă) în limba engleză.
 
-Putem citi cifra și apoi, printr-o **secvența de condiții**, imprimăm cuvântul englez relevant:
+Putem citi cifra și apoi, printr-o **secvență de condiții**, imprimăm cuvântul relevant din limba engleză:
 
 ```java live
 int num = 5;
@@ -59,7 +59,7 @@ if (num == 1) {
 }
 ```
 
-Logica programului din exemplul de mai sus **compară secvențial** numărul de intrare de pe consolă cu cifrele de la 1 la 9, când **fiecare comparație următoare se efectuează numai în cazul în care comparația anterioară nu este adevărată**.
+Logica programului din exemplul de mai sus **compară secvențial** numărul din intrarea de pe consolă cu cifrele de la 1 la 9, **fiecare comparație următoare fiind efectuată numai în cazul în care comparația anterioară nu este true**.
 
-În cele din urmă, daca niciuna dintre instrucțiunile `if` nu este true, ultima **clauză** `else` este efectuată.
+În cele din urmă, dacă niciuna dintre instrucțiunile `if` nu este true, ultima **clauză** `else` este efectuată.
 [/slide]
