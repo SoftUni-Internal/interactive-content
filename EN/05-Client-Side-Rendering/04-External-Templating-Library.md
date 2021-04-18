@@ -321,7 +321,7 @@ This template will be **rendered** out like this:
 
 # Directives: styles and styleMap
 
-`styleMap` sets **styles** on an element using an **object** with style properies:
+`styleMap` sets **styles** on an element using an **object** with style properties:
 
 ```js
 import {
