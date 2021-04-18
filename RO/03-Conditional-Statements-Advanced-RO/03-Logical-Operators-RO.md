@@ -3,16 +3,16 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-16-18-logical-operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Să aruncăm o privire la modul în care putem crea mai multe **condiții logice complexe** în programare.
+Să aruncăm o privire la modul în care putem crea **condiții logice mai complexe** în programare.
 
 Putem folosi:
 * Operatorul logic **"ȘI"** (`&&`)
 * Operatorul logic **"SAU"** (`||`)
-* Operatorul  logic **negare** (`!`) 
+* Operatorul logic **negare** (`!`) 
 * **Paranteze** (`()`).
 
 ## Operatorii logici "ȘI", "SAU" și "NU"
-Acesta este un scurt exemplu care demonstrează puterea logicii **"ȘI"**, logică **"SAU"** și logică **"NU"**:
+Acesta este un scurt exemplu care demonstrează puterea logicii **"ȘI"**, logicii **"SAU"** și logicii **"NU"**:
 ```java
 Scanner scanner = new Scanner(System.in);
 String animal = scanner.nextLine();
@@ -27,7 +27,7 @@ if ((animal == "horse" || animal == "donkey") && (speed > 40)) {
 }
 ```
 
-Vom explica logică **ȘI** (`&&`), logica **SAU** (`||`) și logica **NU** (`!`) În următoarele secțiuni, de-a lungul cu exemple și exerciții.
+Vom explica logica **ȘI** (`&&`), logica **SAU** (`||`) și logica **NU** (`!`) în următoarele secțiuni, împreună cu exemple și exerciții.
 
 [/slide]
 
@@ -38,15 +38,13 @@ Vom explica logică **ȘI** (`&&`), logica **SAU** (`||`) și logica **NU** (`!`
 
 După cum am văzut, în unele sarcini trebuie să facem **multe verificări simultan**.
 
-Dar ce se întâmplă atunci când pentru a executa un anumit cod **mai trebuie** executate condiții și **nu vrem** să facem o **negare** (`else`) pentru fiecare dintre ele?
+Operatorul logic **"ȘI"** (`&&`) ne ajută să verificăm mai multe condiții **simultan**.
 
-Opțiunea cu blocuri `if` **imbricate** este validă, dar codul ar părea foarte neordonat și sigur - **greu de citit și întreținut**.
+Putem folosi operatoul logic **"ȘI"** pentru a simplifica codul nostru și pentru a evita construcții inutile precum prea multe instrucțiuni condiționale imbricate.
 
-Logica **"ȘI"** (operator `&&`) înseamnă că trebuie îndeplinite câteva condiții **simultan**.
+Următorul tabel ne ajută să vizualizăm posibilelor combinații:
 
-Se aplică următorul tabel al veridicității:
-
-| **Operand Unu**| **Operand Două** | **ȘI** |
+| **Operand Unu**| **Operand Doi** | **ȘI** |
 |---|---|---|
 | adevărat | adevărat | adevărat |
 | adevărat | fals | fals |
@@ -54,7 +52,8 @@ Se aplică următorul tabel al veridicității:
 | fals | fals | fals |
 
 ## Cum funcționează operatorul `&&`?
-Operatorul `&&` acceptă **câteva instrucțiuni booleene** (condiționate), care au o valoare `adevărată` sau `falsă` și returnează o instrucțiune bool ca rezultat.
+
+Operatorul `&&` acceptă **câteva instrucțiuni booleene** (condiționale), care au o valoare `adevărată` sau `falsă` și returnează o instrucțiune bool ca rezultat.
 
 Folosindu-l în loc de câteva blocuri imbricate `if`, faceți codul **mai lizibil**, **ordonat** și **ușor** de întreținut.
 
