@@ -3,7 +3,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-47-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## În această lecție am învățat: 
+## În această lecție ați învățat: 
 
 - Ce reprezintă variabilele și cum să le utilizăm
 
@@ -24,7 +24,7 @@ float f = 4.2;
 
 - Instrucțiunile (comenzi)
 
-- Cum să citim  **Intrarea** de la utilizator și cum să formatăm **Ieșirea**
+- Cum să citim  **intrarea** de la utilizator și cum să formatăm **ieșirea**
 
 ```java live
 System.out.println("Hello World");
@@ -32,7 +32,7 @@ System.out.println(5);
 System.out.println(3.14159265358979);
 ```
 
-- Cum să lucrăm cu operațiunile aritmetice simple 
+- Cum să lucrăm cu operațiile aritmetice simple 
 ```java live
 int a = 25;
 int i = a / 4;
@@ -46,9 +46,9 @@ System.out.println(f);
 int r = (150-20) / 2 + 5;
 ```
 
-## În lecția următoare, vom învăța despre:
+## În lecția următoare veți învăța:
 
-- Cum să folosim operatorii de comparație
+- Cum să folosiți operatorii de comparație
 
 - Ce reprezintă instrucțiunile condiționale: **if** și **if-else**
 
