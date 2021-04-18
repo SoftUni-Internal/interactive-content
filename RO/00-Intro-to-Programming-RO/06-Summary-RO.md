@@ -23,7 +23,7 @@
 
 - Ce reprezintă instrucțiunile
 
-- Cum să citiți și să imprimați datele intrare de utilizator
+- Cum să citiți și să imprimați datele de intrare ale utilizatorului
 
 - Cum să efectuați operații simple
 
