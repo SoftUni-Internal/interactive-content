@@ -1,7 +1,7 @@
 # Exemplu din Viața Reală
 
 [slide hideTitle]
-# Exemplu de Viață Reală: Piață
+# Exemplu din Viață Reală: Marketplace
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-6-7-8-real-life-example-marketplace-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -9,26 +9,26 @@ O piață oferă prețuri diferite pentru anumite produse în funcție de ziua s
 
 [image assetsSrc="03-conditional-statements-advanced-example.png" /]
 
-| **Produs** | **Ziua săptămânii** | **Weekend** | 
+| **Produs** | **Zi lucrătoare** | **Weekend** | 
 |---|---|---|
 |Banane|2.50|2.70|
 |Măr|1.30|1.60|
 |Kiwi|2.20|3.00|
 
-Vrem să calculăm prețul pentru anumite produse și și o anumită zi.
+Vrem să creăm un program care să ne ajute să determinăm prețul fiecărui produs în funcție de zi.
 
-## Pseudocode
+## Pseudocod
 
 ```
 Citiți intrarea
 Dacă produsul este o banană
-   Dacă este ziua săptămânii, prețul este de 2,50
-   În caz contrar, prețul este de  2,70
+   Dacă este o zi lucrătoare, prețul este de 2,50
+   În caz contrar, prețul este de 2,70
 Dacă produsul este un măr
-   Dacă este o ziua săptămânii, prețul este de 1,30
+   Dacă este o zi lucrătoare, prețul este de 1,30
    În caz contrar, prețul este de 1,60
 Dacă produsul este kiwi
-   Dacă este ziua săptămânii, prețul este de 2,20
+   Dacă este o zi lucrătoare, prețul este de 2,20
    În caz contrar, prețul este de 3,00
 ``` 
 [/slide]
