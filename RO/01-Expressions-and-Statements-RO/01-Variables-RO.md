@@ -17,7 +17,7 @@ Mai jos aveţi câteva exemple de tipuri de date:
 
 Să ne imaginăm, de asemenea, că **variabilele** sunt containere pentru date sau zone în memorie, iar datele pe care le stochează pot fi citite și modificate în orice moment.
 
-Practic, **variabilele** au un rol de:
+Practic, **variabilele** au următoarele roluri:
    * **Stocarea** datelor
    * **Preluarea** datelor stocate
    * **Modificarea** datelor stocate
@@ -29,17 +29,17 @@ Practic, **variabilele** au un rol de:
 
 Fiecare dintre variabilele din Java are un nume, un tip și o valoare.
 
-Mai jos vedeţi cum am declarat o variabilă și o vom atribui cu o valoare în același timp:
+Putem declara o variabilă și să îi atribuim o valoare simultan:
 ```java
 String name = "Bob";
 boolean employed = true;
 int age = 35;
 ```
-Dacă vă imaginați variabilele ca casete care conțin informații, așa ar arăta:
+Dacă vă imaginați variabilele ca casete care conțin informații, ar arăta așa:
 [image assetsSrc="expressions-and-statements-boxes.png" /]
 
-Variabilele pot fi stocate în programеlе:
-   * Memorie operațională - în execuție **stivă**
+Variabilele pot fi stocate în:
+   * Memorie operațională - în **stiva** de execuție
    * Memorie dinamică - în **heap**
 [/slide]
 
