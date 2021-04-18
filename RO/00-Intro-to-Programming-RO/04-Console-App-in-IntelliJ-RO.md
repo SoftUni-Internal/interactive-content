@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Aplicații Pentru Consolă în IntelliJ IDEA
+# Aplicații pentru Consolă în IntelliJ IDEA
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-26-27-28-Console-app-in-IntelliJ-IDEA-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -11,7 +11,7 @@ Vom seta **un nume cu sens** pentru programul nostru, de exemplu `HelloJava`:
 
 [image assetsSrc="intro-to-programming-name-hellojava.png" /]
 
-IntelliJ IDEA va crea pentru noi un **program Java gol**, pe care va trebui să -l scriem.
+IntelliJ IDEA va crea pentru noi un **program Java gol**, pe care va trebui să îl scriem.
 
 ## Configurarea JDK în IntelliJ IDEA
 Dacă încă nu aveți un JDK configurat, ar trebui să faceți acest lucru:
@@ -24,15 +24,15 @@ Dați clic pe `[New]` și localizați fișierul de instalare pentru JDK:
 [/slide]
 
 [slide hideTitle]
-# Scrierea codului de program
+# Scrierea Codului de Program
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-29-writing-programming-code-in-intelliJ-IDEA-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Comenzile programului sunt scrise în `main(String[] args)`, între paranteze crețate `{ }`(deschideți paranteza, scrieți comanda, închideți paranteza).
+Comenzile programului sunt scrise în `main(String[] args)`, între acolade `{ }` (deschideți paranteza, scrieți comanda, închideți paranteza).
 
 Aceasta este principala metodă (acțiune) care se execută la începerea unui program Java. 
 
-Apăsați `[Enter]` după **paranteza crețată de deschidere** `{` și **începeți să scrieți**.
+Apăsați `[Enter]` după **acolada de deschidere** `{` și **începeți să scrieți**.
 
 Codul programului se scrie **în interior**, acest lucru fiind o parte din modelarea textului pentru conveniență în timpul depanării și/sau revizuirii.
 
@@ -47,21 +47,21 @@ Iată cum ar trebui să arate programul nostru în IntelliJ IDEA:
 
 [image assetsSrc="intro-to-programming-code-in-intellij.png" /]
 
-Comanda `System.out.println("Hello Java")` în limbajul Java înseamnă a executa tipărirea (`System.out.println(…)`) pe consolă și a imprima mesajul text `Bună ziua Java`, pe care ar trebui să îl înconjurăm de ghilimele , pentru a clarifica faptul că acesta este un text.
+Comanda `System.out.println("Hello Java")` în limbajul Java înseamnă a executa tipărirea (`System.out.println(…)`) pe consolă și a imprima mesajul text `Hello Java`, pe care trebuie să îl încadrăm între ghilimele, pentru a clarifica faptul că acesta este un text.
 
 La finalul fiecărei comenzi în limbajul Java se pune simbolul `;` care spune că această comandă se finalizează în acel loc (nu mai continuă pe linia următoare).
 
-Această comandă este larg întâlnită în programare: vom spune că un **obiect** dat ar trebui să se găsească (consola, cum este în cazul nostru), iar o oarecare **acțiune** ar trebui să se execute asupra lui (în cazul nostru, este vorba despre imprimarea a ceva ce este scris în interiorul parantezelor). 
+Această comandă este des întâlnită în programare: vom spune că un **obiect** dat trebuie să se găsească (consola, cum este în cazul nostru), iar o oarecare **acțiune** trebuie să fie executată asupra lui (în cazul nostru, este vorba despre imprimarea a ceva ce este scris în interiorul parantezelor). 
 
-Ca să furnizăm o explicație și mai tehnică, `out` este un membru static al clasei `System`, fiind o instanță a PrintStream. Iar println este o metodă normală (supraîncărcată) a clasei PrintStream căreia îi dăm ca parametru un text literal `"Hello Java"`.
+Ca să furnizăm o explicație mai tehnică, `out` este un membru static al clasei `System`, fiind o instanță a PrintStream. Iar **println** este o metodă normală (supraîncărcată) a clasei PrintStream, căreia îi dăm ca parametru un literal de tip text `"Hello Java"`.
 [/slide]
 
 [slide hideTitle]
-# Începerea programului
+# Pornirea Programului
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-30-Starting-the-program-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Pentru a începe programul, apăsați `[Ctrl + Shift + F10]`. 
+Pentru a porni programul, apăsați `[Ctrl + Shift + F10]`. 
 
 Dacă nu sunt erori, programul va fi rulat. 
 
@@ -73,7 +73,7 @@ O altă modalitate de a vă iniția programul este prin clic pe butonul din drea
 
 [image assetsSrc="run-intellij-right-click.png" /]
 
-De fapt, rezultatul din program este următorul mesaj text:
+Rezultatul programului este următorul mesaj text:
 
 ```
 Hello Java
