@@ -3,8 +3,9 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-9-10-11-nested-conditional-statements-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Destul de des, logica programului necesită utilizarea instrucțiunilor  `if` sau `if-else`, care sunt conținute una în alta.
-Se numesc instrucțiuni **imbricate** `if` sau `if-else`.
+Destul de des, logica programului necesită utilizarea unor instrucțiuni `if` sau `if-else` care sunt conținute una în alta.
+
+Acestea se numesc instrucțiuni **imbricate**.
 
 După cum sugerează titlul "**imbricat**", acestea sunt instrucțiuni `if` sau `if-else` care sunt plasate în alte instrucțiuni `if` sau `else`.
 
@@ -18,24 +19,24 @@ if (condition1) {
 }
 ```
 
-# Exemplu: titluri personale
-În funcție de **vârstă**(număr zecimal și **sex**(**m**/**f**), tipăriți un titlu personal:
+# Exemplu: Personal Titles
+
+În funcție de **vârstă** (număr întreg) și **sex** (**m**/**f**), tipăriți un titlu personal:
 - "Mr." - un bărbat (sex "m") - 16 ani sau mai mult
-- "Master" - un băiat (sex "m") sub 16 ani
+- "Master" - un băiat (sex "m") - sub 16 ani
 - "Ms." - o femeie (sex "f") - 16 ani sau mai mult
-- "Miss" - o fată (sex "f") sub 16 ani
+- "Miss" - o fată (sex "f") - sub 16 ani
 
-## Soluție: Titluri de persoană
-Ar trebui să observăm că **rezultatul** programului **depinde de câteva lucruri**.
+## Soluție: Personal titles
+Trebuie să observăm că **ieșirea** programului **depinde de câteva condiții**.
 
-**Mai întâi**, trebuie să verificăm care este **genul** introdus și **apoi** să verificăm **vârsta**.
+**Mai întâi**, trebuie să verificăm care este **sexul** introdus și **apoi** să verificăm **vârsta**.
 
-Respectiv, vom folosi **câteva** blocuri `if-else`.
+Vom folosi **câteva** blocuri `if-else`.
 
-Aceste blocuri vor fi **imbricate**, adică din **rezultatul** primului, urmează să **definim** care dintre **celelalte** să executăm.
+Aceste blocuri vor fi **imbricate**, adică din **rezultatul** primului, urmează să **definim** pe care dintre **celelalte** trebuie să îl executăm.
 
-
-După citirea datelor de intrare de pe consolă, ar trebui executată următoarea logică a programului:
+După citirea datelor de intrare de pe consolă, trebuie executată următoarea logică a programului:
 ```java
 Scanner scanner = new Scanner(System.in);
 int age = Integer.parseInt(scanner.nextLine());
@@ -57,9 +58,9 @@ if (age < 16) {
 ```
 
 ## Imbricare adânca
-Imbricarea a **mai mult de trei instrucțiuni condiționale** în interiorul unei alte intrucțiuni nu este considerată o bună practică.
+Imbricarea a **mai mult de trei instrucțiuni condiționale** nu este considerată o bună practică.
 
-**Trebuie evitată**, mai ales prin optimizarea structurii / algoritmului codului și / sau prin utilizarea unui alt tip de instruțiune condițională.
+Putem optimiza structura codului prin utilizarea unui alt tip de instrucțiune condițională.
 [/slide]
 
 [slide hideTitle]
@@ -75,7 +76,7 @@ import java.util.Scanner;
 public class Main
 {
   public static void main(String[] args) {
-      // Scrieți codul aici
+      // Scrieți codul dvs. aici
     }
 }
 ```
@@ -84,7 +85,7 @@ public class Main
 # Descriere
 Scrieți un program care:
 * Citește un **produs** și **o zi** de pe consolă
-* Tipărește **prețul**, formatat la a doua cifră după virgula zecimală pe baza tabelului de prețuri de mai jos
+* Tipărește **prețul**, formatat la a doua cifră după punctul zecimal pe baza tabelului de prețuri de mai jos
 
 |**Product**|**Weekday**|**Weekend**| 
 |---|---|---|
@@ -128,7 +129,7 @@ Weekend
 
 
 [slide hideTitle]
-#  Problemă cu Soluție: Biggest Number of Three
+# Problemă cu Soluție: Biggest Number of Three
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-14-problem-and-solution-greatest-number-of-three-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -139,7 +140,7 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-      // Scrieți codul aici
+      // Scrieți codul dvs. aici
     }
 }
 ```
