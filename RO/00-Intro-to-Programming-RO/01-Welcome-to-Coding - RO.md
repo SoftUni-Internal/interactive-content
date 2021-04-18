@@ -92,9 +92,11 @@ De exemplu, dacă facem ouă prăjite, vom folosi următoarea rețetă (un algor
 
 În mod similar, în programare, **programele de calculator execută algoritmi**: secvențe de comenzi, necesare pentru finalizarea unei anumite sarcini. 
 
-De exemplu, pentru a aranja o secvență de numere în ordine crescătoare, este nevoie de un algoritm, de ex. să găsești cel mai mic număr și să îl tipărești, apoi să găsești următorul cel mai mic număr din restul numerelor rămase și să îl tipărești, și să repeți acest lucru până când nu mai rămâne nici un număr.
+De exemplu, pentru a aranja o secvență de numere în ordine crescătoare, este nevoie de un algoritm. Cel mai simplu algoritm repetă aceeași acțiune: găsește cel mai mare număr și îl mută la sfârșitul secvenței, apoi găsește următorul cel mai mare număr și îl plasează înaintea celuilalt, funcționând până când algoritmul a procesat toate numerele din secvență.
 
-Pentru conveniență, atunci când creăm programe, când scriem coduri de programare, când executăm programe și în cazul oricăror alte operațiuni conexe programării, avem nevoie de **un mediu de dezvoltare**, cum este, de exemplu, IntelliJ IDEA.
+Atunci când creăm programe apelăm la ajutorul unui IDE, care este o abreviere pentru **Integrated Development Environment**, un exemplu fiind **IntelliJ IDEA**.
+
+Un IDE ne ajută să rulăm și să depanăm cod, evitând erorile de sintaxă. Mediile de dezvoltare integrate pot conține un număr mare de instrumente adiționale în funcție de scopul acestora.
 [/slide]
 
 [slide hideTitle]
@@ -102,7 +104,7 @@ Pentru conveniență, atunci când creăm programe, când scriem coduri de progr
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-9-console-based-java-program-example-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Să ne uităm puțin la un program simplu care citește ca date de intrare ale utilizatorului anumite sume de bani exprimate în dolari (USD) - un număr întreg, apoi îl convertește în Euro (EUR) făcând împărțirea sumei prin cursul de schimb Euro-dolar și tipărește rezultatul obținut.
+Să ne uităm puțin la un program simplu care citește ca date de intrare ale utilizatorului anumite sume de bani exprimate în dolari (USD) - un număr întreg, apoi îl convertește în Euro (EUR) înmulțind suma cu cursul de schimb valutar și tipărește rezultatul obținut.
 
 Acesta este un program cu 3 comenzi consecutive:
 ```java
