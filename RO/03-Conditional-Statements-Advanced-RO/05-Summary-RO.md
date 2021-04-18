@@ -7,7 +7,7 @@
 
 - Ce reprezintă instrucțiunile condiționale imbricate
 
-  * if-else în interiorul unei alte instrucțiiuni if-else
+  * if-else în interiorul unei alte instrucțiuni if-else
 
 ```java
 if (condition1) {
@@ -47,7 +47,7 @@ switch (selector) {
     break;
 }
 ```
- * Etichetele de clauză **switch-case**
+ * Etichetele multiple de caz în **switch-case**
 
 ## În lecția următoare veți învăța:
 
@@ -57,13 +57,13 @@ switch (selector) {
 
   * buclele for
 
-- Buclele for cu un **pas**
+- Buclele for cu un **pas** special
 
-- Iterația peste caractere prin utilizarea buclelor 
+- Iterația prin caractere cu ajutorul buclelor 
 
 - Buclele **infinite** 
 
-  * cum să le evitați
+  * cum să le folosiți corespunzător
 
 
 [/slide]
