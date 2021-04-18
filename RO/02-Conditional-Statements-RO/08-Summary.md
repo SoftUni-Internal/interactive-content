@@ -3,7 +3,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-50-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## În această lecție am învățat: 
+## În această lecție ați învățat: 
 
 - Operatorii de comparație (**==** , **!=** , **<** , **>** , **<=** , **>=** )
 
@@ -25,7 +25,7 @@ if (condition) {
 }
 ```
 
-- Cum să facem serii de verificări: **if-else-if-else-if...**
+- Cum să faceți serii de verificări: **if-else-if-else-if...**
 
 ```java
 if (condition) {
@@ -39,9 +39,9 @@ if (condition) {
 
 - Cum să depanăm codul folosind puncte de întrerupere
 
-## În următoarea lecție vom învăța despre:
+## În următoarea lecție veți învăța:
 
-- **Buclele imbricate if-else** 
+- **Instrucțiunile imbricate if-else** 
 
 - Operatorii logici: `&&`, `||`, `!`
 
