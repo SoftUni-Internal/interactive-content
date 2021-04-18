@@ -59,7 +59,7 @@ switch (selector) {
 
 - Buclele for cu un **pas** special
 
-- Iterația prin caractere cu ajutorul buclelor 
+- Iterația peste caractere cu ajutorul buclelor 
 
 - Buclele **infinite** 
 
