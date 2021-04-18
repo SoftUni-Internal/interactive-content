@@ -184,11 +184,11 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program pentru a calcula aria triunghiului:
+Scrieți un program pentru a calcula aria unui triunghi:
 
-   * Citiți din intrare `latura` și `înălțimea` - **numere în virgulă mobilă**.
-   * Calculați aria triunghiului.
-   * Imprimați aria, formatată la a doua cifră după punctul zecimal.
+   * Citiți din intrare `latura` și `înălțimea` - **numere în virgulă mobilă**
+   * Calculați aria triunghiului
+   * Imprimați aria, formatată la a doua cifră după punctul zecimal
   
 ## Exemplu
 |**Intrare**|**Ieșire** |
