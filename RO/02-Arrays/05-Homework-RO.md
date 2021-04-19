@@ -445,7 +445,7 @@ Pe prima linie tipăriți **matricea recent modificată**, pe a doua linie tipă
 ## Exemplul Doi
 |**Intrare**|**Ieșire**|
 | --- | --- |
-| addOrSubtract([-5, 11, 3, 0, 2]) | [ 5, 14, 21, 59, 31 ] |
+| addOrSubtract([-5, 11, 3, 0, 2]) | [ -5, 10, 1, 3, 6 ] |
 || 11|
 || 15 |
 
