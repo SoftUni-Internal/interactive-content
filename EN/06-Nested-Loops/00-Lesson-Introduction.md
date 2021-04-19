@@ -1,5 +1,5 @@
 # Lesson Introduction
-[slide]
+[slide hideTitle]
 
 # Lesson Content
 
