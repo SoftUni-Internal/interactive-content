@@ -625,8 +625,8 @@ Când primiți "**end of shift**" imprimați suma totală de bani pentru acea zi
 Fiecare argument este valabilă, așa că **tipărim** fiecare comandă, calculând **prețul** total al produsulelor cumpărate:
 
 ```js
-let orderPrice = match.groups["count"] 
-  * match.groups["price"];
+let orderPrice = Number(match.groups["count"]) 
+  * Number(match.groups["price"]);
 
 totalMoney += orderPrice;
 

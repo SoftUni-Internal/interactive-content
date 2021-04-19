@@ -619,8 +619,8 @@ When you receive "**end of shift**" print the total amount of money for the day,
 Each argument is valid so we **print** the expected **message** for each input line, calculating the **price** of the order:
 
 ```js
-let orderPrice = match.groups["count"] 
-  * match.groups["price"];
+let orderPrice = Number(match.groups["count"]) 
+  * Number(match.groups["price"]);
 
 totalMoney += orderPrice;
 
