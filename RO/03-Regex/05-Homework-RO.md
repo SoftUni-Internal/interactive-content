@@ -630,8 +630,8 @@ let orderPrice = Number(match.groups["count"])
 
 totalMoney += orderPrice;
 
-console.log(match.groups["name"] + ": " 
-  + match.groups["work"] + " - "
+console.log(match.groups["customer"] + ": " 
+  + match.groups["product"] + " - "
   + orderPrice.toFixed(2));
 ```
 [/hint] 
