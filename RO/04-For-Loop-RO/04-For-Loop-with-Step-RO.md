@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Bucla For cu Pas
+# Bucla For cu Pas Special
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/RO/interactive-programming-basics-with-java-for-loops-19-20-for-loop-with-step-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -7,9 +7,9 @@
 
 **Pasul** este acea **parte** a construcției buclei `for` care indică **cu cât** trebuie **să crească** sau **să scadă** valoarea **variabilei sale** principale .
 
-Este declarat ultima în **structura** buclei for.
+Este ultimul element al structurii declarative a buclei for.
 
-Cel mai adesea, avem **o dimensiune de** `1` și, în acest caz, în loc să scriem `i += 1` sau `i -= 1`, putem folosi pentru o sintaxă mai scurtă `i++`sau operatorii `i--`.
+Cel mai adesea, avem **o dimensiune de** `1` și, în acest caz, în loc să scriem `i += 1` sau `i -= 1`, putem folosi o sintaxă mai scurtă: `i++` sau `i--`.
 
 ```java live
 for (int i = 0; i < 10; i++) {
@@ -17,9 +17,9 @@ for (int i = 0; i < 10; i++) {
 }
 ```
 
-Dacă dorim ca pasul nostru să fie **diferit de 1**, atunci când **creștem**, vom folosi operatorul `i + =` + step size.
+Dacă dorim ca pasul nostru să fie **diferit de 1**, atunci când efectuăm **mărirea**, vom folosi operatorul `i + =` + dimensiunea pasului.
 
-  Cu pasul 2, bucla ar arăta astfel:
+Cu un pas de 2, bucla ar arăta astfel:
 ```java live
 for (int i = 0; i < 10; i += 2) {
   System.out.println(i);
@@ -28,7 +28,7 @@ for (int i = 0; i < 10; i += 2) {
 
 S-ar putea să dorim să avem un **pas descrescător** - `i-=` + dimensiunea pasului.
 
-În acest caz, ar trebui să fim atenți la condiția finală pentru a evita o **buclă infinită**.
+În acest caz, trebuie să fim atenți la condiția finală pentru a evita o **buclă infinită**.
 
 ```java live
 for (int i = 10; i >= 1; i--) {
