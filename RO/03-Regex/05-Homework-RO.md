@@ -622,7 +622,7 @@ Când primiți "**end of shift**" imprimați suma totală de bani pentru acea zi
 
 [hints]
 [hint]
-Fiecare linie este valabilă, așa că **tipărim** fiecare comandă, calculând **prețul** total al produsulelor cumpărate:
+Fiecare argument este valabilă, așa că **tipărim** fiecare comandă, calculând **prețul** total al produsulelor cumpărate:
 
 ```js
 let orderPrice = match.groups["count"] 
