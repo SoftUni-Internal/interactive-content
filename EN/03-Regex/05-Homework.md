@@ -258,6 +258,45 @@ And on the last line, print the following:
 | | TV |
 | | Total money spent\: 2436\.69 |
 
+[hints]
+[hint]
+You can use [Regex101](https://regex101.com/) or [RegExr](https://regexr.com) to **test** your pattern in real time.
+
+In this example, only the **Sofa** and the **TV** are valid items.
+[/hint] 
+[hint]
+For each one of them, we **multiply** the price by the quantity:
+
+```js
+if (match) {
+  const product = match.groups['name'];
+  const price = match.groups['price'];
+  const quantity = match.groups['quantity'];
+  furniture.push(product);
+
+  total += price * quantity;
+}
+```
+
+You can use a **named capturing group**. Learn more about groups and ranges [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges).
+[/hint] 
+[hint]
+We **print** out the result:
+
+```js
+console.log('Bought furniture:');
+
+if (furniture.length > 0) {
+  console.log(furniture.join('\r\n'));
+  }
+
+console.log(`Total money spent: ${total.toFixed(2)}`);
+```
+
+Remember to **format** the **final price** to the second digit after the decimal point.
+[/hint] 
+[/hints] 
+
 ## Example Two
 
 | **Input** | **Output** |

@@ -259,6 +259,45 @@ Pe ultima linie tipăriți următoarele:
 | | TV |
 | | Total money spent\: 2436\.69 |
 
+[hints]
+[hint]
+Puteți utiliza [Regex101](https://regex101.com/) sau [RegExr](https://regexr.com) pentru a vă testa șablonul în timp real.
+
+În acest exemplu, numai **canapeaua** ("Sofa") și **televizorul** ("TV") sunt valabile.
+[/hint] 
+[hint]
+Pentru fiecare dintre ele **înmulțim** prețul cu cantitatea:
+
+```js
+if (match) {
+  const product = match.groups['name'];
+  const price = match.groups['price'];
+  const quantity = match.groups['quantity'];
+  furniture.push(product);
+
+  total += price * quantity;
+}
+```
+
+Puteți utiliza un grup de capturare numit (**named capturing group**). Aflați mai multe despre grupuri și intervale [aici](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges).
+[/hint] 
+[hint]
+**Imprimați** rezultatul:
+
+```js
+console.log('Bought furniture:');
+
+if (furniture.length > 0) {
+  console.log(furniture.join('\r\n'));
+  }
+
+console.log(`Total money spent: ${total.toFixed(2)}`);
+```
+
+Nu uitați să **formatați** **prețul final** la a doua cifră după punctul zecimal. 
+[/hint] 
+[/hints] 
+
 ## Exemplul Doi
 
 |**Intrare**|**Ieșire** |
