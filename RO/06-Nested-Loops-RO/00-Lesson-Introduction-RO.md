@@ -1,5 +1,5 @@
 # Introducere
-[slide]
+[slide hideTitle]
 
 # Conținutul Lecției
 
