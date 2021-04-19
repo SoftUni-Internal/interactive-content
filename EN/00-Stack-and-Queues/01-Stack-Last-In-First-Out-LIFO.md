@@ -518,7 +518,7 @@ while (decimal != 0) {
 ```
 [/hint] 
 [hint]
-When you are done dividing, pop all remainders from the stack. 
+When you are done dividing, pop all remainders from the stack:
 
 ```java
 while (!stack.isEmpty())) {
@@ -630,12 +630,46 @@ Scan through the string and **extract** each **sub-expression**.
 | `(2 + 3) - (2 + 3)` | `(2 + 3)` |
 |  | `(2 + 3)` |
 
-## Hints 
-- Use a stack, implemented with an `ArrayDeque()` 
-- Scan through the expression searching for brackets 
-   - if you find an opening bracket, push the index into the stack 
-   - if you find a closing bracket, pop the top element from the stack. This is the index of the opening bracket 
-   - use the current and the popped index to extract the sub-expression 
+[hints]
+[hint]
+Use a **stack**, implemented with an `ArrayDeque()`:
+
+```java
+ArrayDeque<Integer> stack = new ArrayDeque<>();
+```
+[/hint] 
+[hint]
+**Scan** through the expression, searching for **brackets**. 
+If you find an opening bracket, push the **index** into the stack:
+
+```java
+if (character == '(') {
+  stack.push(i);
+}
+```
+[/hint] 
+[hint]
+If you find a closing bracket, **pop** the top element from the stack.
+
+```java
+else if (character == ')') {
+  int startIndex = stack.pop();
+
+  // ...
+}
+```
+
+This is the index of the **opening** bracket.
+[/hint] 
+[hint]
+Use the current and the popped index to extract the **sub-expression**: 
+
+```java
+String subexpression = expression.substring(startIndex, endIndex);
+``` 
+[/hint] 
+[/hints] 
+
 [/task-description]
 [code-io /]
 [tests]

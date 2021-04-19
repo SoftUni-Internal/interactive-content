@@ -512,7 +512,7 @@ while (decimal != 0) {
 ```
 [/hint] 
 [hint]
-Când ați terminat de împărțit, scoateți toate resturile de pe stivă. 
+Când ați terminat de împărțit, scoateți toate resturile de pe stivă:
 
 ```java
 while (!stack.isEmpty())) {
@@ -520,7 +520,7 @@ while (!stack.isEmpty())) {
 }
 ```
 
-Aceasta este reprezentarea binară
+Aceasta este reprezentarea binară.
 [/hint] 
 [/hints] 
 
@@ -626,12 +626,46 @@ Scanați prin șir și **extrageți** fiecare **sub-expresie**.
 | `(2 + 3) - (2 + 3)` | `(2 + 3)` |
 |  | `(2 + 3)` |
 
- ## Sugestii
- - Folosiți o stivă, și anume un `ArrayDeque()`
- - Scanați prin expresie căutând paranteze
-    - Dacă găsiți un suport de deschidere, împingeți indexul în stivă
-    - Dacă găsiți un suport de închidere, scoateți elementul cel mai de sus din stivă. Acesta este indicele parantezei de deschidere.
-    - Utilizați indicele curent și popped pentru a extrage sub-expresia
+[hints]
+[hint]
+Folosiți o **stivă**, și anume un `ArrayDeque()`:
+
+```java
+ArrayDeque<Integer> stack = new ArrayDeque<>();
+```
+[/hint] 
+[hint]
+**Scanați** prin expresie căutând **paranteze**.
+Dacă găsiți un suport de deschidere, împingeți **indexul** în stivă:
+
+```java
+if (character == '(') {
+  stack.push(i);
+}
+```
+[/hint] 
+[hint]
+Dacă găsiți un suport de închidere, **scoateți** elementul cel mai de sus din stivă:
+
+```java
+else if (character == ')') {
+  int startIndex = stack.pop();
+
+  // ...
+}
+```
+
+Acesta este indicele parantezei de **deschidere**.
+[/hint] 
+[hint]
+Utilizați indicele curent și popped pentru a extrage **sub-expresia**:
+
+```java
+String subexpression = expression.substring(startIndex, endIndex);
+``` 
+[/hint] 
+[/hints] 
+
 
 [/task-description]
 [code-io /]
