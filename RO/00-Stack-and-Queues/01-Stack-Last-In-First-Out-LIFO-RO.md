@@ -176,14 +176,14 @@ String currentURL = "";
 Folosiţi `push()`, la trecerea la pagina următoare:
 
 ```java
-currentURL = browser.pop();
+browser.push(currentURL);
 ```
 [/hint] 
 [hint]
 Folosiţi `pop()`, când merg înapoi:
 
 ```java
-browser.push(currentURL);
+currentURL = browser.pop();
 ```
 [/hint] 
 [/hints] 
