@@ -21,7 +21,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Creați un program care va primi **3 parametri** (șiruri) ca intrare:
+Creați un program care primește **3 parametri** (șiruri) ca intrare:
 
 - Primul șir este **numele trupei**
 
@@ -137,15 +137,15 @@ Creați un program care calculează cât de mulți **bani** pentru combustibil v
 
 Luați în considerare următoarele:
 
-- Calculați **combustibilul** știind că **un autobuz gol** poate atinge 100 km cu 7L de motorină
+- Calculați **combustibilul** știind că **un autobuz gol** poate parcurge 100 km cu 7L de motorină
 
 - **O persoană** în autobuzul respectiv, cu excepția șoferului, mărește consumul de combustibil cu **100 mililitri**
 
-- **Banii** sunt calculați prin **înmulțirea** prețului combustibilului cu combustibilul necesar pentru călătorie
+- **Banii** sunt calculați prin **înmulțirea** **prețului combustibilului** cu combustibilul necesar pentru călătorie
 
 Ca **intrare** veți primi **3 parametri**:
 - **Distanța** pe care trebuie să o parcurgă autobuzul
-- **Pasagerii** din autobuz
+- Numărul de **pasageri** din autobuz
 - **Prețul** pentru **1 litru de motorină**
 
 Ca ieșire, trebuie să imprimați acest mesaj:
@@ -374,7 +374,7 @@ Creați un program care primește un număr **n**.
 
 Pentru toate numerele din intervalul **1...n**, tipăriți numărul și dacă este special sau nu.
 
-Un număr este special atunci când suma cifrelor sale este **5, 7, sau 11.**
+Un număr este special atunci când **suma cifrelor sale** este **5, 7, sau 11.**
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -594,7 +594,7 @@ console.log(
 ```
 [/hint] 
 [hint]
-Funcția `String.fromCharCode()` obține valoarea **în zecimal** și o transformă într-un **caracter** din **tabelul ASCII.**
+Funcția `String.fromCharCode()` obține valoarea **în sistem zecimal** și o transformă într-un **caracter** din **tabelul ASCII.**
 [/hint] 
 [/hints]
 

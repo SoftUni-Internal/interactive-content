@@ -1,43 +1,43 @@
-# Operațiuni de Bază
+# Operații de Bază
 
 [slide hideTitle]
 # Prezentare Generală
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-3-4-overview-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-JavaScript are **funcții încorporate** pentru tratarea matricelor care **pot simplifica codul, ușurează citirea** și, nu în ultimul rând, facilitează depanarea.
+JavaScript are **funcții încorporate** pentru tratarea matricelor, care **pot simplifica codul, ușurează citirea** și, nu în ultimul rând, facilitează depanarea.
 
 Putem folosi funcțiile săgeată în unele dintre metodele avansate.
 
 Funcționalitatea avansată a unei matrice constă din următoarele funcții:
 
-- `push(el)` - adaugă unul sau mai multe elemente la sfârșitul unei matrice și returnează noua lungime a tabloului
+- `push(element)` - adaugă unul sau mai multe elemente la sfârșitul unei matrice și returnează noua lungime a matricei
 
 - `pop()` - elimină **ultimul** element dintr-o matrice și returnează acel element
 
 - `shift()` - elimină **primul** element dintr-o matrice și returnează acel element
 
-- `unshift(el)` - **adaugă elemente noi la începutul** unei matrice și returnează noua **lungime**
+- `unshift(element)` - **adaugă elemente noi la începutul** unei matrice și returnează noua **lungime**
 
-- `includes(el)` - determină dacă o **matrice include un anumit element**, returnează "**true**" sau "**false**"
+- `includes(element)` - determină dacă o **matrice include un anumit element**, returnează "**true**" sau "**false**"
 
-- `indexOf(el)` - returnează indexul unui element sau returnează -1, dacă nu poate găsi elementul
+- `indexOf(element)` - returnează indicele unui element sau returnează -1, dacă nu poate găsi elementul
 
-Practic, aceste metode modifică matricea și nu este nevoie să scriem o grămadă de cod, ceea ce economisește mult timp. 
+Practic, aceste metode modifică matricea și nu este nevoie să scriem foarte mult cod, ceea ce economisește mult timp. 
 
 [/slide]
 
 [slide hideTitle]
 
-# Adăugați la Sfârșit, Eliminați la Sfârșit
+# Adăugare la Sfârșit, Eliminare de la Sfârșit
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-5-add-at-the-end-remove-from-the-end-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-JavaScript are **metode incorporate** pentru a adăuga sau a elimina elemente din sfârșitul și începutul matricei.
+JavaScript are **metode încorporate** pentru a adăuga sau a elimina elemente atât de la sfârșitul unei matrice, cât și de la început.
 
 - **Adăugarea unui element la sfârșitul matricei**
 
-Metoda `array.push()` este utilizată pentru a adăuga un element nou la sfârșitul matricei.
+Metoda `array.push()` este utilizată pentru a adăuga **un element nou la sfârșitul** matricei.
 
 ``` js live
 let array = [1, 2, 3, 4];
@@ -49,9 +49,9 @@ console.log(array);
 
 - **Eliminarea unui element de la sfârșit**
 
-Metoda `array.pop()` este utilizată pentru a obține și a elimina elementul de la sfârșitul matricei.
+Metoda `array.pop()` este utilizată pentru **a obține și a elimina elementul de la sfârșitul** matricei.
 
-Dacă apelăm `array.pop()` pe o matrice goală, se returnează **nedefinit.** 
+Dacă apelăm `array.pop()` pentru o matrice goală, se returnează **undefined.** 
 
 ``` js live
 let array = [1, 2, 3, 4, 5];
@@ -65,14 +65,14 @@ console.log(number);
 [/slide]
 
 [slide hideTitle]
-# Adăugați la Început, Eliminați de la Început 
+# Adăugare la Început, Eliminare de la Început 
 
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-6-add-at-the-start-remove-from-the-start-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - **Adăugarea unui element la începutul matricei**
 
-Metoda `array.unshift()` este utilizată pentru a adăuga un element nou la începutul unui matrice.
+Metoda `array.unshift()` este utilizată pentru **a adăuga un element nou** la începutul unei matrice.
 
 ``` js live
 let array = [1, 2, 3, 4];
@@ -83,10 +83,10 @@ console.log(array);
 ```
 - **Eliminarea unui element de la început**
 
-Metoda `array.shift()` este utilizată pentru a obține și a elimina un element de la începutul matricei.
+Metoda `array.shift()` este utilizată pentru **a obține și a elimina un element de la începutul** matricei.
 
 ``` js live
-let array = [0,1, 2, 3, 4, 5];
+let array = [0, 1, 2, 3, 4, 5];
 
 let number = array.shift();
 
@@ -122,12 +122,13 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Scrieți o funcție care calculează și imprimă suma primelor și ultimelor elemente ale unei matrice.
+Scrieți o funcție care **calculează** și **imprimă** suma primului și ultimului element al unei matrice.
 
-**Intrările** apar ca o **matrice** de **șiruri**, care conțin **numere**.
-**Ieșirile** ar trebui să fie **valoarea returnată de către funcția**
+**Intrarea** este dată ca o **matrice** de **șiruri**, care conțin **numere**.
 
-## Exemplus
+**Ieșirea** trebuie să fie **valoarea returnată de către funcție**.
+
+## Exemple
 |**Intrare**|**Ieșire** |
 | --- | --- |
 |solve(['20', '30', '40']) | 60 |
@@ -197,11 +198,11 @@ solve(['5', '10'])
 [/slide]
 
 [slide hideTitle]
-# Metoda Push și Pop în Matrice
+# Metodele Push și Pop Într-o Matrice
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05. JS-Fundamentals-Arrays-Advanced-10-7-pushing-an-array-and-pop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Metoda `array.push()` adaugă unul sau mai multe elemente la **sfârșitul** unui tablou și returnează noua **lungime**:
+Metoda `array.push()` adaugă unul sau mai multe elemente la **sfârșitul** unei matrice și returnează noua **lungime**:
 
 ``` js live
 let fruits = ['apple','banana','kiwi'];
@@ -237,7 +238,7 @@ console.log(popped);
 [/slide]
 
 [slide hideTitle]
-# Schimbarea și Neschimbarea Într-o Matrice
+# Metodele Shift și Unshift Într-o Matrice
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-11-shifting-and-unshifting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -291,12 +292,12 @@ Scrieți o funcție care procesează **toate elementele unei matrice unul câte 
 
 Adăugați fiecare element negativ la început și fiecare element pozitiv (sau 0) la sfârșitul noii matrice.
 
-**Intrarea** apare ca **o matrice de șiruri**, care conțin **numere**.
+**Intrarea** este dată ca **o matrice de șiruri**, care conțin **numere**.
 
-**Ieșirea** trebuie imprimată pe consolă, fiecare element pe **o nouă linie**
+**Ieșirea** trebuie imprimată pe consolă, fiecare element pe **o nouă linie**.
 
-## Examplul Unu
-| **Input** | **Output** |
+## Exemplul Unu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |negativePositive([7, -2, 8, 9]) | \-2 |
 | | 7 |
@@ -305,7 +306,7 @@ Adăugați fiecare element negativ la început și fiecare element pozitiv (sau 
 
 
 ## Exemplul Doi
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |negativePositive([3, -2, 0, -1])  | \-1 |
 | | \-2 |
@@ -414,10 +415,10 @@ negativePositive([\-2, 3, 0, 5, \-6, 0, 8])
 [/slide]
 
 [slide hideTitle]
-# Găsiți Valorile
+# Găsirea Valorilor
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-14-find-values-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-`array.includes()` returnează in adevarat dacă valoarea dată face parte din matrice.
+Metoda `array.includes()` returnează **true** dacă **valoarea** dată **face parte din matrice**.
 
 ``` js live
 let myArray = ['Peter', 'George', 'Mary'];
@@ -429,9 +430,9 @@ console.log(isGeorgeInclude);
 console.log(isJohnInclude);
 ```
 
-`Array.indexOf()` returnează indexul, unde este stocată valoarea dată.
+Metoda `array.indexOf()` returnează **indicele unde este stocată valoarea dată**.
 
-Returnează \-1 dacă valoarea nu este găsită. 
+Returnează \-1 dacă valoarea **nu este găsită**. 
 
 ``` js live
 let myArray = ['Peter', 'George', 'Mary'];

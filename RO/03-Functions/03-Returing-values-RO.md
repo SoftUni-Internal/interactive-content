@@ -5,7 +5,7 @@
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-17-18-the-return-statement-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Operatorul **return** este folosit pentru a returna o valoare din interiorul unei funcții.
+Operatorul **return** este folosit pentru a returna o valoare și a încheia executarea unei funcții.
 
 Odată ce operatorul **return** este executat, **orice se află după el în interiorul unei funcții nu va rula.**
 

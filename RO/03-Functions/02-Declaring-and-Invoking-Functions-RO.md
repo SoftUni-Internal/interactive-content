@@ -1,7 +1,7 @@
 # Declararea și Invocarea Funcțiilor
 
 [slide hideTitle]
-# Declararea Unei Funcții
+# Declararea unei Funcții
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-6-7-declaring-a-function-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -29,7 +29,7 @@ let printText = function(text){
 
 **Argumentele** pot fi transmise funcției prin încadrarea valorilor între paranteze după numele funcției.
 
-Argumentele pot fi trimise ca o listă de **argumente** separate prin virgule, în timpul apelării funcției.
+Argumentele pot fi trimise ca o listă de **argumente** separate prin virgulă, în timpul apelării funcției.
 
 Argumentele sunt primite ca **parametri** de către funcție și sunt stocate în variabile locale.
 
@@ -43,7 +43,7 @@ function printText(text){
 [/slide]
 
 [slide hideTitle]
-# Invocarea Unei Funcții
+# Invocarea unei Funcții
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-8-9-invoking-a-function-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -64,7 +64,7 @@ hLine();
 [/slide]
 
 [slide hideTitle]
-# Invocarea Unei Funcții Dintr-o Altă Funcție
+# Invocarea unei Funcții dintr-o Altă Funcție
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-21-22-nested-functions-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -94,7 +94,7 @@ function countDown(x) {
   }
 }
 ```
-**Recursivitatea** este procesul în care o funcție **se invocă pe sine**.
+**Recursivitatea** este procesul prin care o funcție **se invocă pe sine**.
 
 Astfel de funcții se numesc **recursive**.
 
@@ -126,7 +126,7 @@ function printHeader() {
 printHeader();
 ```
 
-## Funcții cu Parametri
+## Funcții Cu Parametri
 
 O funcție poate primi **orice număr și tip de argumente** atunci când este invocată.
 
@@ -153,7 +153,7 @@ printName(['John', 'Smith']);
 
 [slide hideTitle]
 
-# Funcții cu Parametri: Exemplu
+# Funcții Cu Parametri: Exemplu
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-functions-with-parameters-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ```js live
@@ -172,7 +172,7 @@ function multiply(a, b) {
 multiply(5); // NaN
 ```
 
-Dacă transmitem mai puține argumente, restul parametrilor vor fi transmiși funcției ca fiind **nedefiniți.**
+Dacă transmitem mai puține argumente, restul parametrilor vor fi transmiși funcției ca fiind **undefined.**
 
 Dacă transmitem mai multe argumente, atunci **argumentele suplimentare vor fi ignorate.**
 

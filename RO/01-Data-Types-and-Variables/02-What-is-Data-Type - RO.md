@@ -1,3 +1,6 @@
+# Tipuri de Date
+
+
 [slide hideTitle]
 
 # Ce Este un Tip de Date?
@@ -22,7 +25,7 @@ Cu toate că putem schimba valoarea variabilei, aceasta nu este o practică bun�
 
 Variabilele în Javascript **nu au** un tip, putem **stoca** în ele orice tipuri de date dorim, dar datele au tipuri.
 
-În JavaScript, avem **șapte tipuri de date primitive** și un tip compozit, denumit de asemenea, tip referință. 
+În JavaScript, avem **șapte tipuri de date primitive** și un tip compozit, numit tip referință. 
 
 Tipurile de date **primitive** sunt: `Boolean`, `Null`, `Undefined`, `Number`, `String`, `Symbol`, `BigInt`.
 

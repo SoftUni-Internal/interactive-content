@@ -45,7 +45,7 @@
     let bool = true;
     ```
 
-- `let` are domeniu de obiect, `var` are domeniu funcțional
+- `let` are domeniu de bloc, `var` are domeniu funcțional
 
 - Prin  `typeof` putem obține tipul variabilei
 
@@ -63,7 +63,7 @@ console.log(typeof(cars));
   - definiție și sintaxă
 - Iterarea matricelor
   - cum iterăm printr-o matrice
-  - moduri alternative de iterație, folosind bucla  "**for-of**" 
+  - moduri alternative de iterare, folosind bucla  "**for-of**" 
 - Operații cu matrice
 
 [/slide]

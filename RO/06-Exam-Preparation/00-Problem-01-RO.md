@@ -27,24 +27,26 @@ function adapter(input, code) {
 
 # Descriere
 
-Vi se oferă matrice de numere întregi.
+Prima linie din intrare va fi o matrice de numere întregi.
 
-Scrieți un program pentru a modifica matricea, posibilele modificări sunt: "**swap**", "**multiply**" sau "**decrease**".
+Scrieți un program pentru a modifica matricea.
+
+Posibilele modificări sunt: "**swap**", "**multiply**" sau "**decrease**".
 
 * "**swap** \{**index1**\} \{**index2**\}": luați cele două elemente și schimbați-le locurile.
 
-* "**multiply** \{**index1**\} \{**index2**\}": luați numărul din primul index specificat și multiplicați-l cu numărul dat din al doilea.
+* "**multiply** \{**index1**\} \{**index2**\}": luați numărul de la primul indice specificat și multiplicați-l cu numărul de la al doilea indice
 
-Salvați produsul celor două la index, unde era primul număr.
+Salvați produsul celor două numere pe poziția indicelui care a corespuns primului număr.
 
-* "**decrease**": micșorează toate elementele din matrice cu 1.
+* "**decrease**": micșorează toate elementele din matrice cu 1
 
 ## Intrare
 Pe prima linie de intrare vi se vor da valorile matricei inițiale, separate printr-un singur spațiu.
 
-În rândurile următoare veți primi comenzi până când veți primi finalul comenzii.
+Pe rândurile următoare veți primi una dintre comenzi. Programul trebuie să se oprească din a funcționa atunci când este primită comanda "end".
 
-Comenzile ar putea fi
+Comenzile pot fi:
 
 * "**swap** \{**index1**\} \{**index2**\}"
 
@@ -54,17 +56,17 @@ Comenzile ar putea fi
 
 ## Ieșire
 
-Forma finală a matricei trebuie tipărită pe consolă, fiecare dintre elementele sale fiind separate printr-o virgulă și un spațiu `,` (virgulă și spațiu unic).
+Forma finală a matricei trebuie tipărită pe consolă, fiecare dintre elementele sale fiind separate printr-o virgulă și un spațiu (", ").
 
 ## Constrângeri
 
-* Comenzile sunt limitate la: "**swap**", "**multiply**" or "**decrease**" și "**end**"
+* Comenzile sunt limitate la: "**swap**", "**multiply**", "**decrease**" și "**end**"
 
 * Toate elementele matricei vor fi numere întregi în intervalul \[-231...231\]
 
 * Numărul de elemente din matrice va fi în intervalul \[2...100\]
 
-* Indexurile vor fi întotdeauna în raza gamei
+* Indicii vor fi întotdeauna în intervalul matricei
 
 ## Exemplul Unu
 
@@ -89,7 +91,7 @@ Starea matricei după a doua comandă: `23 87 321 -123 42 90 -2`
 [hint]
 * "**swap 1(87)" and "0(23)**":
 
-Starea tabloului după a treia comandă: `87 23 321 -123 42 90 -2`
+Starea matricei după a treia comandă: `87 23 321 -123 42 90 -2`
 [/hint] 
 [hint]
 * "**multiply 1(23) 2(321) = 7383**":
@@ -99,12 +101,12 @@ Starea matricei după a patra comandă: `87 7383 321 -123 42 290 -2`
 [hint]
 * "**multiply 2(321) 1(7383) = 2369943**":
 
-Starea comenzii după a cincea: `87 7383 2369943 -123 42 90 -2`
+Starea matricei după a cincea comandă: `87 7383 2369943 -123 42 90 -2`
 [/hint] 
 [hint]
 * "**decrease**":
 
-Starea comenzii după a șasea: `86 7383 2369942 -124 41 89 -3`
+Starea matricei după a șasea comandă: `86 7383 2369942 -124 41 89 -3`
 [/hint] 
 [/hints] 
 

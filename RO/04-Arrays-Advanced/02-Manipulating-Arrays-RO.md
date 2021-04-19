@@ -1,12 +1,12 @@
 # Manipularea Matricelor
 
 [slide hideTitle]
-# Împărțirea Matricei
+# Tăierea Matricelor
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-15-16-slicing-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Metoda `array.slice()` returnează elementele selectate într-o matrice, ca un nou obiect al matricei.
+Metoda `array.slice()` returnează **elementele selectate** într-o matrice, ca un **nou obiect nou de tip matrice**.
 
-Selectează elementele începând de la argumentul dat și se termină, dar nu include, argumentul dat. 
+Aceasta selectează elementele începând cu indicele de început dat și se termină, dar nu include, un indice opțional de sfârșit. 
 
 ``` js live
 let myArray = ['one', 'two', 'three', 'four', 'five'];
@@ -20,11 +20,11 @@ console.log(myArray.slice(2,4));
 [/slide]
 
 [slide hideTitle]
-# Splice: Tăierea și Înserarea Elementelor de Matrice
+# Splice: Tăierea și Inserarea Elementelor unei Matrice
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-17-cutting-and-inserting-elements-with-splice-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-`array.splice()` adaugă sau elimină elemente în/dintr-o matrice și returnează elementele eliminate.
+Metoda `array.splice()` **adaugă** sau **elimină** elemente în/dintr-o matrice și returnează elementele eliminate.
 
 Această metodă **schimbă matricea originală.**
 
@@ -67,25 +67,25 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Scrieți o funcție care imprimă primele elemente **k** și ultimele **k** ale unui set de numere.
+Scrieți o funcție care imprimă primele **k** și ultimele **k** elemente ale unei matrice de numere.
 
-**Intrare** apare ca o **matrice** de numere întregi.
+**Intrarea** este dată ca o **matrice** de numere întregi.
 
 **Primul element** reprezintă numărul **k**.
 
 Toate **celelalte elemente** formează **matricea care trebuie procesată**.
 
-Pe **prima linie**, tipăriți **primele elemente k** , separate printr-un **spațiu**.
+Pe **prima linie** tipăriți **primele k elemente**, separate printr-un **spațiu**.
 
-Pe **a doua linie**, tipăriți **ultimele elemente k** , separate printr-un **spațiu**. 
+Pe **a doua linie** tipăriți **ultimele k elemente**, separate printr-un **spațiu**. 
 
-## Examplul Unu
+## Exemplul Unu
 |**Intrare**|**Ieșire** |
 | --- | --- |
 |numbers([2, 7, 8, 9]) | 7 8 |
 | | 8 9 |
 
-## Examplul Doi
+## Exemplul Doi
 |**Intrare**|**Ieșire** |
 | --- | --- |
 |numbers([3, 6, 7, 8, 9]) | 6 7 8 |
@@ -169,7 +169,7 @@ numbers([5, 11, 12, 13, 14, 15, 16, 17, 18])
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Last K Numbers Sequence
+# Problemă cu Soluție: Last K Numbers Sequence
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-problem-04-solution-sum-last-k-numbers-sequence-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -191,19 +191,21 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
+# Descriere
+
 Vi se dau două numere întregi: **n** și **k**.
 
-Scrieți o funcție care generează și imprimă următoarea secvență:
+Scrieți o funcție care **generează** și **imprimă** următoarea secvență:
 
 - **Primul element** este 1
-- Fiecare **element următor** este **egal cu suma** elementelor **k** anterioare
-- Lungimea secvenței este un element **n**
+- Fiecare **element următor** este **egal cu suma** celor **k** elemente anterioare
+- **Lungimea secvenței** este de **n** elemente
 
-**Intrarea** vine ca o matrice de două **numere**.
+**Intrarea** este dată sub forma a două **numere**.
 
 **Primul element** reprezintă numărul **n**, iar al doilea - numărul **k**.
 
-Ieșirea este **imprimată** pe consolă pe **o singură linie**, separată de **un spațiu**.
+Ieșirea este **imprimată** pe consolă pe **o singură linie**, separată printr-un **spațiu**.
 
 
 ## Exemple
@@ -216,13 +218,13 @@ Ieșirea este **imprimată** pe consolă pe **o singură linie**, separată de *
 [hint]
 `numbers(6, 3)` -\> "**1 1 2 4 7 13**"
 
-**Al doilea element (1)** este **egal cu suma** celor **3 elemente din fața sa**, dar există un **singur** element, deci luăm acest lucru.
+**Al doilea element (1)** este **egal cu suma** celor **3 elemente din fața sa**, dar există un **singur** element, deci îl luăm pe acesta.
 [/hint] 
 [hint]
 Al **treilea element** este egal cu suma **primelor două elemente (1 și 1)**.
 [/hint] 
 [hint]
-Al **patrulea element** este egal cu suma de **1**, **1** și **2**.
+Al **patrulea element** este egal cu suma elementelor **1**, **1** și **2**.
 [/hint] 
 [hint]
 Al **cincilea element** este egal cu suma celui de-al **2-lea, al 3-lea și al 4-lea (1, 2 și 4)** și așa mai departe.

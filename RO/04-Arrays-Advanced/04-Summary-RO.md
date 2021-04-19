@@ -3,24 +3,24 @@
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-33-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## În această lecție am învățat:
+## În această lecție ați învățat:
 
-- Matricele în JavaScript have a lot of built\-in methods
+- Matricele în JavaScript au multe metode încorporate
 
 ```js live
 let numbers = [3, 8, 15, 22];
 
-numbers.push(30); // Appends 30 to the array
+numbers.push(30); // Adaugă 30 în matrice
 
 console.log(numbers);
 ```
 
-- Putem adăuga, elimina sau să inserăm elemente în timpul rulării
+- Putem adăuga, elimina sau insera elemente în timpul rulării
   
 ```js live
 let people = ['Paul', 'Mary', 'John'];
 
-let firstEl = people.shift(); // Removing the element at index zero
+let firstEl = people.shift(); // Elimină elementul cu indicele 0
 
 console.log(people);
 console.log(firstEl);
@@ -33,7 +33,7 @@ let days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 
 
 console.log(days.join(', '));
 
-let weekend = days.splice(5); // Creates a new array and modifies the original
+let weekend = days.splice(5); // Creează o nouă matrice și o modifică pe cea originală
 
 console.log(days.join(', '));
 console.log(weekend.join(', '));

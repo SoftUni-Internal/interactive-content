@@ -6,7 +6,7 @@
 
 O funcție este un **subprogram** conceput pentru a efectua o anumită sarcină.
 
-Funcțiile sunt executate atunci când sunt apelate, ceea ce este cunoscut sub numele de **invocarea unei funcții.**
+Funcțiile sunt executate atunci când sunt apelate, lucru cunoscut sub numele de **invocare a unei funcții.**
 
 Valorile pot fi transmise în funcții și utilizate în cadrul funcției.
 
@@ -22,7 +22,7 @@ O funcție este un **bloc de cod care este** executat numai atunci când este ap
 
 Datele pot fi **transmise** funcțiilor ca **parametri**.
 
-Funcțiile pot **returna și date** ca **rezultat**.
+**Funcțiile** pot **returna și date** ca rezultat.
 [/slide]
 
 [slide hideTitle]

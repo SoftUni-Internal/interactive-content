@@ -22,9 +22,9 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Veți primi o **gamă de produse.**
+Veți primi o **matrice de produse.**
 
-Imprimați o serie numerotată a tuturor produselor **ordonate după nume.**
+Imprimați o matrice numerotată a tuturor produselor **ordonate după nume.**
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -128,9 +128,9 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Vi se va oferi o serie de șiruri.
+Vi se va oferi o matrice de șiruri.
 
-Primul element va fi un șir, care conține vagoane (numere).
+Primul element va fi un șir care conține vagoane (numere).
 
 Fiecare număr din șir reprezintă numărul de pasageri care se află în prezent într-un vagon.
 
@@ -138,9 +138,9 @@ Al doilea element al matricei va fi capacitatea maximă a fiecărui vagon (numă
 
 Restul elementelor vor fi comenzi în următorul format:
 
-- "**Add** \{**passengers**\}" - adăugați un vagon la capăt, cu numărul dat de pasageri
+- "**Add** \{**passengers**\}" - adăugați un vagon la final, cu numărul dat de pasageri
 
-- "\{**passengers**\}" - găsiți un vagon existent care să se potrivească tuturor pasagerilor (începând cu primul vagon)
+- "\{**passengers**\}" - găsiți un vagon existent care să găzduiască toți pasagerii (începând cu primul vagon)
 
 La final, tipăriți starea finală a trenului (toate vagoanele, separate printr-un spațiu).
 
@@ -236,18 +236,18 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Veți primi o serie de numere întregi pe prima linie a intrării (separate de un spațiu).
+Veți primi o matrice de numere întregi pe prima linie a intrării (separate printr-un spațiu).
 
-Eliminați toate elementele care se repetă din matrice.
+Eliminați din matrice toate elementele care se repetă.
 
-Imprimați elementele rezultate (restul), separate printr-un singur spațiu. 
+Imprimați elementele rezultate (cele care au rămas), separate printr-un singur spațiu. 
 
 ## Exemple
 | **Intrare** | **Ieșire** | **Comentarii** |
 | :---:       |    :----:   |   :---:     |
-|distinctArray([1, 2, 3, 4])| 1 2 3 4|No repeating elements |
-|distinctArray([7, 8, 9, 7, 2, 3, 4, 1, 2])| 7 8 9 2 3 4 1| 7 and 2 are already present in the array \-\> remove them|
-|distinctArray([20, 8, 12, 13, 4, 4, 8, 5])| 20 8 12 13 4 5|4 and 8 are already present in the array \-\> remove them |
+|distinctArray([1, 2, 3, 4])| 1 2 3 4| No repeating elements |
+|distinctArray([7, 8, 9, 7, 2, 3, 4, 1, 2])| 7 8 9 2 3 4 1| 7 and 2 are already present in the array \-\> remove them |
+|distinctArray([20, 8, 12, 13, 4, 4, 8, 5])| 20 8 12 13 4 5| 4 and 8 are already present in the array \-\> remove them |
 
 [/task-description]
 [code-io /]
@@ -321,7 +321,7 @@ distinctArray([0, 8, 5, 12, 0, 15, 5, 4, 8, 4])
 [/slide]
 
 [slide hideTitle]
-# Problem: HouseParty
+# Problemă: HouseParty
 [code-task title="HouseParty" taskId="js-fundamentals-1-Arrays-Advanced-HouseParty" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -342,7 +342,7 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Scrieți o funcție care ține evidența **oaspeților** care merg la o petrecere în casă.
+Scrieți o funcție care ține evidența **invitaților** care merg la o petrecere într-o locuință.
 
 Vi se va oferi o **matrice de șiruri.**
 
@@ -352,9 +352,9 @@ Fiecare șir va fi unul dintre următoarele:
 
 - "\{**name**\} **is not going!**"
 
-Dacă primiți primul tip de intrare, trebuie să **adăugați** persoana dacă nu se află în listă.
+Dacă primiți primul tip de intrare, trebuie să **adăugați** persoana dacă aceasta nu se află în listă.
 
-Dacă el / ea se află în lista, tipăriți:
+Dacă el/ea se află în lista, tipăriți:
 
 "\{**name**\} **is already in the list!**"
 
@@ -488,7 +488,7 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Scrieți o funcție care sortează o serie de numere, astfel încât primul element să fie cel mai mare, al doilea este cel mai mic, al treilea este al doilea cel mai mare, al patrulea este al doilea cel mai mic și așa mai departe.
+Scrieți o funcție care sortează o matrice de numere, astfel încât primul element este cel mai mare, al doilea este cel mai mic, al treilea este al doilea cel mai mare, al patrulea este al doilea cel mai mic și așa mai departe.
 
 Imprimați elementele pe o singură linie, separate printr-un singur spațiu.
 
@@ -575,7 +575,7 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Scrieți o funcție care sortează o matrice de șiruri, după lungimea lor în ordine crescătoare, ca criterii primare și după valoarea alfabetică în ordine crescătoare, ca al doilea criteriu.
+Scrieți o funcție care sortează o matrice de șiruri după lungimea lor în ordine crescătoare, ca criteriu primar, și după valoarea alfabetică în ordine crescătoare, ca criteriu secundar.
 
 Intrarea este o matrice de șiruri.
 
@@ -601,7 +601,7 @@ Ieșirea este matricea sortată de șiruri.
 
 [hints]
 [hint]
-O matrice poate fi sortată trecând o funcție de comparare la funcția `Array.sort()`.
+O matrice poate fi sortată transmițând o funcție de comparare pentru funcția `Array.sort()`.
 [/hint] 
 [hint]
 Crearea unei **funcții de comparare** cu două criterii poate fi realizată comparând mai întâi după criteriile principale și dacă cele două elemente sunt diferite \(rezultatul comparației nu este 0\) - returnează rezultatul **funcției de comparare**.
@@ -613,7 +613,7 @@ let sorted = array.sort((a, b) =>
 ```
 [/hint] 
 [hint]
-Dacă cele două elemente sunt identice cu criteriile principale \(rezultatul comparării este 0\), trebuie să le comparăm după al doilea criteriu, iar rezultatul acestei comparații va fi rezultatul **funcției de comparare.** 
+Dacă cele două elemente sunt identice după criteriile principale \(rezultatul comparației este 0\), trebuie să le comparăm după al doilea criteriu, iar rezultatul acestei comparații va fi rezultatul **funcției de comparare.** 
 
 `return sorted;`
 [/hint] 
@@ -737,7 +737,7 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Scrieți o funcție care manipulează o serie de numere.
+Scrieți o funcție care manipulează o matrice de numere.
 
 - "**Add** \{**number**\}": adăugați un număr la sfârșitul matricei
 
@@ -745,19 +745,17 @@ Scrieți o funcție care manipulează o serie de numere.
 
 -	"**RemoveAt** \{**index**\}": adăugați un număr la sfârșitul matricei
 
-- "**Insert** \{**number**\} \{**index**\}": introduceți un număr la un index dat
+- "**Insert** \{**number**\} \{**index**\}": introduceți un număr la un indice dat
 
-**Notă: toți indicii vor fi valabili!**
+**Notă: toți indicii vor fi valizi!**
 
-Imprimați starea finală a matricei (separat printr-un singur spațiu).
+Imprimați starea finală a matricei (separarea trebuie făcută printr-un singur spațiu).
 
-Intrarea vine ca o matrice de șiruri.
-
-Primul element va fi un șir, care conține matricea de manipulat.
+Primul element va fi un șir care conține matricea care trebuie manipulată.
 
 Fiecare alt element (comandă) pe care îl primim va fi, de asemenea, un șir.
 
-Ieșirea este matricea manipulată, pe care ar trebui s-o imprimăm pe consolă pe o singură linie, separată de un spațiu. 
+Ieșirea este matricea manipulată, pe care trebuie să o imprimăm pe consolă pe o singură linie, separată printr-un spațiu. 
 
 
 # Exemplu

@@ -6,9 +6,9 @@
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/03.JS-Fundamentals-Functions/03.JS-Fundamentals-Functions-27-28-arrow-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-Funcțiile săgeată `=>` au fost introduse cu [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript). 
+Funcțiile săgeată `=>` au fost introduse cu [ECMAScript 6](https://en.wikipedia.org/wiki/ECMAScript) în 2015.
 
-Cu noua sintaxă putem obține adeseori un cod mai concis.
+Cu noua sintaxă putem obține adeseori un cod mai **concis**.
 
 În unele cazuri, se face interpretarea funcțiilor de apel invers cu mai multe linii în funcții de apel invers pe o singură linie, datorită caracteristicilor precum returnarea implicită.
 
@@ -36,7 +36,7 @@ let increment = x => x + 1;
 console.log(increment(5));  
 ```
 
-- Funcția săgeată cu mai mulți parametrii:
+- Funcția săgeată cu mai mulți parametri:
 
 ```js live
 let sum = (a, b) => a + b;
