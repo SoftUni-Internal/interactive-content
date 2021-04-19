@@ -783,7 +783,7 @@ If the current text is **dom3. text**
 and we execute the command **cut 1 7** 
 the text will change to **dext**
 
-**Note**: if **startIndex == endIndex**, the command has no effect on the text, but “**clears**” the last remembered cut
+**Note**: if **startIndex == endIndex**, the command has no effect on the text, but "**clears**" the last remembered cut
 
 - **paste** – replaces the characters in the text in range \[**startIndex**, **endIndex**\) with the characters which were removed by the last cut
 
@@ -990,7 +990,7 @@ Your task is to study the provided code and add the following operations:
 - **ms** – saves the current result of the calculator to "**memory**". The result of this operation is the current result of the calculator. For example, the expression **3 * 4 ms * 5** and the expression **3 * 4 * 5** are equivalent in their result
 - **mr** – **memory recall**, removes the last item from memory, and sends it to the calculator
     - note that this operation can be used in combination with other operations, for example, the expression **3 ms * 4 ms * 5 * mr * mr** will save **3** to memory, perform a calculation producing **12** as a result, save that to memory, calculate the next expression: **60** is received, multiply that by **12** (stored in memory), **720** is received as a product and stored, then multiply that by **3**, the final result will be: **2160**
-    - it can also be used without operations –  **3 ms 4 mr** is the same as **3 4 3**
+    - it can also be used without operations – **3 ms 4 mr** is the same as **3 4 3**
 
 ## Input
 The program defined in **Main.java** reads the following input:

@@ -58,11 +58,11 @@ Create a **class structure**, starting with an abstract class **Shape**:
 
 Each of them needs to have:
 
-- **Fields \- for Rectangle**:
+- **Fields - for Rectangle**:
     - height : Double
     - width : Double 
 
-- **Fields \- for Circle**:
+- **Fields - for Circle**:
     - radius : Double
 
 - **Encapsulate these fields**
