@@ -459,7 +459,7 @@ La final, tipăriți primii 3 participanți, ordonați după distanța lor în o
 
 [hints]
 [hint]
-Pe a treia linie de intrare avem **Ray** - `R1@!3a$y4456@`
+Ca al treilea argument, avem **Ray** - `R1@!3a$y4456@`
 El **nu este** pe listă, deci nu luăm în calcul rezultatul lui.
 [/hint] 
 [hint]
