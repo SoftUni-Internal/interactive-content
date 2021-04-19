@@ -1100,7 +1100,7 @@ The sum of a number's positive divisors excluding the number itself is also know
 
 [hints]
 [hint]
-Equivalently, a perfect number is a number that is **half the sum** of all of its positive divisors, excluding itself.
+Equivalently, a perfect number is a number that is **half the sum** of all of its positive divisors, including itself.
 
 **Six** is a perfect number because it is the sum of "**1 + 2 + 3**" (all of which are divided without residue).
 [/hint] 
