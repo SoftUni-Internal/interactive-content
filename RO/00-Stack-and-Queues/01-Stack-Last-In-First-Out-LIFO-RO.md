@@ -368,12 +368,29 @@ Rezolvați problema **using a Stack**.
 | 2 - 2 + 5 | 5 |
 
 
-## Sugestii
-- Folosiți un `ArrayDeque<>`
-- Luați în considerare utilizarea metodei `add()` 
-- Mai Puteți
-     - adăugați elementele și apoi scoateți-le afară
-     - sau împingeți-le și inversați stiva
+[hints]
+[hint]
+Folosiți un `ArrayDeque<>`:
+
+```java
+ArrayDeque<String> stack = new ArrayDeque<>();
+```
+[/hint] 
+[hint]
+Luați în considerare utilizarea metodei `add()`:
+
+```java
+Collections.addAll(stack, tokens);
+```
+[/hint] 
+[hint]
+Puteți **adăugați** elementele și apoi scoateți-le afară:
+
+```java
+System.out.println(stack.pop());
+```
+[/hint] 
+[/hints] 
 
 
 [/task-description]

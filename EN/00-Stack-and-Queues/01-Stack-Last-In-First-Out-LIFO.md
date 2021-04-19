@@ -377,12 +377,29 @@ Solve the problem **using a Stack**.
 | 2 - 2 + 5 | 5 |
 
 
-## Hints
-- Use an `ArrayDeque<>`
-- Consider using the `add()` method
-- You can either:
-    - add the elements and then pop them out 
-    - push them and reverse the stack
+[hints]
+[hint]
+Use an `ArrayDeque<>`:
+
+```java
+ArrayDeque<String> stack = new ArrayDeque<>();
+```
+[/hint] 
+[hint]
+Consider using the `add()` method:
+
+```java
+Collections.addAll(stack, tokens);
+```
+[/hint] 
+[hint]
+You can **add** the elements and then **pop** them out:
+  
+```java
+System.out.println(stack.pop());
+```
+[/hint] 
+[/hints] 
 
 
 [/task-description]
