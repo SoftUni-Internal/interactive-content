@@ -269,12 +269,13 @@ For each one of them, we **multiply** the price by the quantity:
 
 ```js
 if (match) {
-  const product = match.groups['name'];
-  const price = match.groups['price'];
-  const quantity = match.groups['quantity'];
-  furniture.push(product);
+let name = match.groups['name'];
+let price = Number(match.groups['price']);
+let quantity = Number(match.groups['quantity']);
 
-  total += price * quantity;
+totalPrice += price * quantity;
+
+furniture.push(name);
 }
 ```
 
@@ -286,11 +287,11 @@ We **print** out the result:
 ```js
 console.log('Bought furniture:');
 
-if (furniture.length > 0) {
-  console.log(furniture.join('\r\n'));
-  }
+for (const piece of furniture) {
+  console.log(piece);
+}
 
-console.log(`Total money spent: ${total.toFixed(2)}`);
+console.log(`Total money spent: ${(totalPrice).toFixed(2)}`);
 ```
 
 Remember to **format** the **final price** to the second digit after the decimal point.
@@ -453,6 +454,37 @@ In the end print out the top 3 racers, ordered by their distance in **descending
 | race(['George, Peter, Bill, Tom', 'G4e@55or%6g6!68e!!@', 'R1@!3a$y4456@', 'B5@i@#123ll', 'G@e54o$r6ge#', '7P%et^#e5346r', 'T$o553m&6', 'end of race']) | 1st place\: George |
 | | 2nd place\: Peter |
 | | 3rd place\: Tom |
+
+[hints]
+[hint]
+As a **third** argument, we have **Ray** - `R1@!3a$y4456@`
+He is **not** in the list of participants so we ignore him.
+[/hint] 
+[hint]
+The other people **are** in the list of **participants**.
+
+```js
+if (racers.hasOwnProperty(name)) {
+  racers[name] += distance;
+}
+```
+
+**George** has run a total of **55** km, **Peter** has run a total of **25**, and **Tom** has run a total of **19**
+[/hint] 
+[hint]
+We **print** the **winners** (the people in the **top 3**):
+
+```js
+let winners = Object.keys(racers)
+  .sort((a, b) => racers[b] - racers[a])
+  .slice(0, 3);
+    
+console.log(`1st place: ${winners[0]}`);
+console.log(`2nd place: ${winners[1]}`);
+console.log(`3rd place: ${winners[2]}`);
+```
+[/hint] 
+[/hints] 
 
 [/task-description]
 [tests]

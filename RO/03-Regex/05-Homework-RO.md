@@ -270,12 +270,13 @@ Pentru fiecare dintre ele **înmulțim** prețul cu cantitatea:
 
 ```js
 if (match) {
-  const product = match.groups['name'];
-  const price = match.groups['price'];
-  const quantity = match.groups['quantity'];
-  furniture.push(product);
+let name = match.groups['name'];
+let price = Number(match.groups['price']);
+let quantity = Number(match.groups['quantity']);
 
-  total += price * quantity;
+totalPrice += price * quantity;
+
+furniture.push(name);
 }
 ```
 
@@ -287,11 +288,11 @@ Puteți utiliza un grup de capturare numit (**named capturing group**). Aflați 
 ```js
 console.log('Bought furniture:');
 
-if (furniture.length > 0) {
-  console.log(furniture.join('\r\n'));
-  }
+for (const piece of furniture) {
+  console.log(piece);
+}
 
-console.log(`Total money spent: ${total.toFixed(2)}`);
+console.log(`Total money spent: ${(totalPrice).toFixed(2)}`);
 ```
 
 Nu uitați să **formatați** **prețul final** la a doua cifră după punctul zecimal. 
@@ -454,6 +455,38 @@ La final, tipăriți primii 3 participanți, ordonați după distanța lor în o
 | race(['George, Peter, Bill, Tom', 'G4e@55or%6g6!68e!!@', 'R1@!3a$y4456@', 'B5@i@#123ll', 'G@e54o$r6ge#', '7P%et^#e5346r', 'T$o553m&6', 'end of race']) | 1st place\: George |
 | | 2nd place\: Peter |
 | | 3rd place\: Tom |
+
+[hints]
+[hint]
+Pe a treia linie de intrare avem **Ray** - `R1@!3a$y4456@`
+El **nu este** pe listă, deci nu luăm în calcul rezultatul lui.
+[/hint] 
+[hint]
+**Celelalte** sunt **valabile**:
+
+```js
+if (racers.hasOwnProperty(name)) {
+  racers[name] += distance;
+}
+```
+
+**George** are **55** km în total, **Peter** - **25** și **Tom** - **19**.
+[/hint] 
+[hint]
+Tipărim câștigătorii (**top 3**):
+
+```js
+let winners = Object.keys(racers)
+  .sort((a, b) => racers[b] - racers[a])
+  .slice(0, 3);
+    
+console.log(`1st place: ${winners[0]}`);
+console.log(`2nd place: ${winners[1]}`);
+console.log(`3rd place: ${winners[2]}`);
+```
+[/hint] 
+[/hints] 
+
 
 [/task-description]
 [tests]
