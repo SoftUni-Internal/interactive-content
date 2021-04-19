@@ -614,6 +614,30 @@ When you receive "**end of shift**" print the total amount of money for the day,
 | | Maria\: Cola \- 2\.40 |
 | | Total income\: 24\.30 |
 
+[hints]
+[hint]
+Each argument is valid so we **print** the expected **message** for each input line, calculating the **price** of the order:
+
+```js
+let orderPrice = match.groups["count"] 
+  * match.groups["price"];
+
+totalMoney += orderPrice;
+
+console.log(match.groups["name"] + ": " 
+  + match.groups["work"] + " - "
+  + orderPrice.toFixed(2));
+```
+[/hint] 
+[hint]
+In the end, we **print** out the total **income** for the **day**:
+
+```js
+console.log(`Total income: ${total.toFixed(2)}`);
+```
+[/hint] 
+[/hints] 
+
 ## Example Two
 
 | **Input** | **Output** |

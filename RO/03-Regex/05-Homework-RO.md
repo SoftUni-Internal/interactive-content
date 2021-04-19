@@ -620,6 +620,30 @@ Când primiți "**end of shift**" imprimați suma totală de bani pentru acea zi
 | | Maria\: Cola \- 2\.40 |
 | | Total income\: 24\.30 |
 
+[hints]
+[hint]
+Fiecare linie este valabilă, așa că **tipărim** fiecare comandă, calculând **prețul** total al produsulelor cumpărate:
+
+```js
+let orderPrice = match.groups["count"] 
+  * match.groups["price"];
+
+totalMoney += orderPrice;
+
+console.log(match.groups["name"] + ": " 
+  + match.groups["work"] + " - "
+  + orderPrice.toFixed(2));
+```
+[/hint] 
+[hint]
+La final **imprimăm** venitul **total** al **zilei**:
+
+```js
+console.log(`Total income: ${total.toFixed(2)}`);
+```
+[/hint] 
+[/hints] 
+
 ## Exemplul Doi
 
 |**Intrare**|**Ieșire** |
