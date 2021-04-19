@@ -497,18 +497,38 @@ Implement an elegant solution **using a Stack**.
 | 1024 | 10000000000 |
 
 
-## Hints
-- If the given number is 0, print 0
-- Else, while the number is greater than zero, divide it by 2 and push the remainder into the stack
+[hints]
+[hint]
+If the given number is 0, print 0:
+
+```java
+if (decimal == 0) {
+  // ...
+}
+```
+[/hint] 
+[hint]
+Else, while the number is greater than zero, divide it by 2 and push the remainder into the stack:
 
 ```java
 while (decimal != 0) {
-    stack.push(decimal % 2);
-    decimal /= 2;
+  stack.push(decimal % 2);
+  decimal /= 2;
+}
+```
+[/hint] 
+[hint]
+When you are done dividing, pop all remainders from the stack. 
+
+```java
+while (!stack.isEmpty())) {
+  System.out.println(stack.pop());
 }
 ```
 
-- When you are done dividing, pop all remainders from the stack. This is the binary representation.
+This is the binary representation.
+[/hint] 
+[/hints] 
 
 
 [/task-description]

@@ -491,20 +491,38 @@ Implementați o soluție elegantă **folosind un Stack**.
 | 1024 | 10000000000 |
 
 
+[hints]
+[hint]
+Dacă numărul dat este 0, printați 0:
 
-## Indicii
-- Dacă numărul dat este 0, printați 0
-- Altfel, cât timp numărul este mai mare decât zero, împărțiți-l la 2 și adăugați restul pe stivă
-
+```java
+if (decimal == 0) {
+  // ...
+}
+```
+[/hint] 
+[hint]
+Altfel, cât timp numărul este mai mare decât zero, împărțiți-l la 2 și adăugați restul pe stivă:
 
 ```java
 while (decimal != 0) {
-    stack.push(decimal % 2);
-    decimal /= 2;
+  stack.push(decimal % 2);
+  decimal /= 2;
+}
+```
+[/hint] 
+[hint]
+Când ați terminat de împărțit, scoateți toate resturile de pe stivă. 
+
+```java
+while (!stack.isEmpty())) {
+  System.out.println(stack.pop());
 }
 ```
 
-- Când ați terminat de împărțit, scoateți toate resturile de pe stivă. Aceasta este reprezentarea binară
+Aceasta este reprezentarea binară
+[/hint] 
+[/hints] 
 
 
 [/task-description]
