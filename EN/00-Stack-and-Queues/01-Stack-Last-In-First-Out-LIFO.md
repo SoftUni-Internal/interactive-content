@@ -167,12 +167,36 @@ The program **stops** after receiving the `Home` command.
 | `https//softuni.org/trainings/live/details` | `https//softuni.org/trainings/live/details` |
 | `Home` |  |
 
-## Hints
-- Use an `ArrayDeque<>`
-- Use a variable of type `String` to store the current URL
-- Use the `push()` method when moving to the next URL
-- Use the `pop()` method when going back to the previous URL
+[hints]
+[hint]
+Use an `ArrayDeque<>`:
 
+```java
+ArrayDeque<String> browser = new ArrayDeque<>();
+```
+[/hint] 
+[hint]
+Use a variable of type `String` to store the current URL:
+
+```java
+String currentURL = "";
+```
+[/hint] 
+[hint]
+Use the `push()` method when moving to the next URL:
+
+```java
+currentURL = browser.pop();
+```
+[/hint] 
+[hint]
+Use the `pop()` method when going back to the previous URL:
+
+```java
+browser.push(currentURL);
+```
+[/hint] 
+[/hints] 
 
 
 [/task-description]

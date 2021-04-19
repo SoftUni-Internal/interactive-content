@@ -157,12 +157,36 @@ Introducerea **se termină** cu comanda `Home`, apoi pur și simplu trebuie să 
 | `https//softuni.org/trainings/live/details` | `https//softuni.org/trainings/live/details` |
 | `Home` |  |
 
-## Sugestii
-- Folosiţi `ArrayDeque<>`
-- Folosiţi `String` pentru a păstra pagina curentă
-- Folosiţi `push()`, la trecerea la pagina următoare
-- Folosiţi `pop()`, când merg înapoi
+[hints]
+[hint]
+Folosiţi `ArrayDeque<>`:
 
+```java
+ArrayDeque<String> browser = new ArrayDeque<>();
+```
+[/hint] 
+[hint]
+Folosiţi `String` pentru a păstra pagina curentă:
+
+```java
+String currentURL = "";
+```
+[/hint] 
+[hint]
+Folosiţi `push()`, la trecerea la pagina următoare:
+
+```java
+currentURL = browser.pop();
+```
+[/hint] 
+[hint]
+Folosiţi `pop()`, când merg înapoi:
+
+```java
+browser.push(currentURL);
+```
+[/hint] 
+[/hints] 
 
 
 [/task-description]
