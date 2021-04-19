@@ -70,7 +70,7 @@ System.out.println("Double PI is: " + doublePI);
 
 [slide hideTitle]
 # Problemă cu Soluție: Pounds to Dollars
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-22-problem-and-solution-pounds-to-dollars-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/java-fund-data-types-and-variables-22-problem-and-solution-pounds-to-dollars-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Problem: Pounds to Dollars" taskId="java-fund-1-data-types-lab-pounds-to-dollars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -273,7 +273,7 @@ System.out.println(bigDecimal1);
 [slide hideTitle]
 # Problemă cu Soluție: Exact Sum of Real Numbers
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-27-problem-and-solution-exact-sum-of-real-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/java-fund-data-types-and-variables-27-solution-exact-sum-of-real-numbers-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Problem: Exact Sum of Real Numbers" taskId="java-fund-1-data-types-lab-exact-sum-of-real-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

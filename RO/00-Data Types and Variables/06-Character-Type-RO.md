@@ -68,7 +68,7 @@ Tabelul Unicode este separat în diferite părți și aproape toate limbile vii 
 [slide hideTitle]
 # Problemă cu Soluție: Reversed Chars
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-41-problem-and-solution-reversed-chars-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/java-fund-data-types-and-variables-41-problem-and-solution-reversed-chars-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Reversed Chars" taskId="java-fund-1-data-types-lab-reversed-chars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
