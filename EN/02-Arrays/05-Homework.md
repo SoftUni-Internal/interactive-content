@@ -446,7 +446,7 @@ On the first line print the **newly modified array**, on the second line print t
 ## Example Two
 | **Input** | **Output** |
 | --- | --- |
-| addOrSubtract([-5, 11, 3, 0, 2]) | [ 5, 14, 21, 59, 31 ] |
+| addOrSubtract([-5, 11, 3, 0, 2]) | [ -5, 10, 1, 3, 6 ] |
 || 11|
 || 15 |
 
