@@ -291,7 +291,8 @@ for (const piece of furniture) {
   console.log(piece);
 }
 
-console.log(`Total money spent: ${(totalPrice).toFixed(2)}`);
+console.log("Total money spent: " 
+  + totalPrice.toFixed(2));
 ```
 
 Remember to **format** the **final price** to the second digit after the decimal point.

@@ -292,7 +292,8 @@ for (const piece of furniture) {
   console.log(piece);
 }
 
-console.log(`Total money spent: ${(totalPrice).toFixed(2)}`);
+console.log("Total money spent: " 
+  + totalPrice.toFixed(2));
 ```
 
 Nu uitați să **formatați** **prețul final** la a doua cifră după punctul zecimal. 
