@@ -935,6 +935,7 @@ Chip with ID: 74059 is 44 years old.
 Margie with ID: 17098 is 46 years old.
 Chip with ID: 84450 is 89 years old.
 [/output]
+[/test]
 [test]
 [input]
 Simona 53316 11
@@ -949,6 +950,7 @@ Kaloyan with ID: 13967 is 3 years old.
 Simona with ID: 53316 is 11 years old.
 Gil with ID: 31837 is 72 years old.
 [/output]
+[/test]
 [test]
 [input]
 Deyan 57989 24
@@ -971,6 +973,7 @@ Margie with ID: 17098 is 46 years old.
 Gil with ID: 31837 is 72 years old.
 Chip with ID: 84450 is 89 years old.
 [/output]
+[/test]
 [/tests]
 [/code-task]
 [/slide]
