@@ -2,13 +2,11 @@
 
 [slide hideTitle]
 
-# 1. Products Shop
+# Products Shop Project Overview
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/08-DB-Advanced-JSON-Processing-Exercises-Resources.zip) **for this task.**
 
-A products shop holds **users**, **products**, and **categories for the products**.
-
-Users can **sell** and **buy** products.
+A products shop holds **users**, **products**, and **categories for the products**:
 
 - Users have an **id**, **first name** (optional) and **last name** (at least 3 characters) and **age** (optional)
 
@@ -16,25 +14,27 @@ Users can **sell** and **buy** products.
 
 - Categories have an **id** and **name** (from **3** to **15** characters)
 
-Using Code First approach create a database following the above description.
+Users can **sell** and **buy** products.
+
+Using the **Code First** approach, create a database following the description above.
 
 [image assetsSrc="Java-Spring-Data-JSON-Processing-Homework-1.jpg" /]
 
 Configure the following relations in your models:
 
-- **Users** should have **many products sold** and **many products bought**
+- **Users** should be able to **sell and buy many products**
 
-- **Products** should have **many categories**
+- **Products** should be able to have **many categories**
 
-- **Categories** should have **many products**
+- **Categories** should be able to have **many products**
 
-- **Users** should have **many friends** (i.e. users)
+- **Users** should be able to have **many friends** (i.e. users)
 
 [/slide]
 
 [slide hideTitle]
 
-# 2. Seed the Database
+# 1. Seed the Database
 
 **Import** the data from the provided files (**users.json**, **products.json**, **categories.json**).
 
@@ -48,15 +48,15 @@ Randomly **generate categories** for each product from the existing categories.
 
 [slide hideTitle]
 
-# 3. Query and Export Data
+# 2. Queries and Exported Data
 
-Write the below-described queries and **export** the returned data to the specified **format**.
+Create the below-described queries and **export** the returned data to the specified **format**.
 
 ## Query 1 – Products in Range
 
 Get all products in a specified **price range** (e.g. 500 to 1000), which have **no buyer**.
 
-Order them by price (from lowest to highest).
+Order them by their price (from lowest to highest).
 
 Select only the **product name**, **price**, and the **full name of the seller**.
 
@@ -87,11 +87,11 @@ Export the result to JSON.
 
 Get all users, who have **at least 1 item sold** with a **buyer**.
 
-Order them by **last name**, then by **first name**.
+Order them by their **last name**, then by their **first name**.
 
-Select the person's **first** and **last name**.
+Select the **first** and **last name** of the person.
 
-For each of the **products sold** (products with buyers), select the product's **name**, **price**, and the buyer's **first** and **last name**.
+For each of the **products sold** (products with buyers), select the **name** and the **price** of the product and the **first** and **last name** of the buyer.
 
 ```java
 [
@@ -155,61 +155,56 @@ Export the results to **JSON**. Follow the format below to better understand how
 
 ```json
 {
-"usersCount":35,
-"users":
-[
-	{
-		"firstName":"Carl",
-		"lastName":"Daniels",
-		"age":59,
-		"soldProducts":
-		{
-			"count":10,
-			"products":
-			[
-			{
-				"name":"Finasteride",
-				"price":1374.01
-			},
-			{
-				"name":"Peter Island Continous sunscreen kids",
-				"price":471.30
-			},
-			{
-				"name":"Warfarin Sodium",
-				"price":1379.79
-			},
-			{
-				"name":"Gilotrif",
-				"price":1454.77
-			},
-			{
-				"name":"Cold and Cough",
-				"price":218.14
-			},
-			...
-			]
-		}
-	},
-	{
-		"firstName": null,
-		"lastName": "Harris",
-		"age": 0,
-		"soldProducts":
-		{
-			"count":9,
-			"products":
-			[
-			{
-				"name":"Clarins Paris Skin Illusion – 114 cappuccino",
-				"price":811.42
-			},
-			...
-			]
-		}
-	},
-	...
-]
+  "usersCount": 35,
+  "users": [
+    {
+      "firstName": "Carl",
+      "lastName": "Daniels",
+      "age": 59,
+      "soldProducts": {
+        "count": 10,
+        "products": [
+          {
+            "name": "Finasteride",
+            "price": 1374.01
+          },
+          {
+            "name": "Peter Island Continous sunscreen kids",
+            "price": 471.30
+          },
+          {
+            "name": "Warfarin Sodium",
+            "price": 1379.79
+          },
+          {
+            "name": "Gilotrif",
+            "price": 1454.77
+          },
+          {
+            "name": "Cold and Cough",
+            "price": 218.14
+          },
+          ...
+        ]
+      }
+    },
+    {
+      "firstName": null,
+      "lastName": "Harris",
+      "age": 0,
+      "soldProducts": {
+        "count": 9,
+        "products": [
+          {
+            "name": "Clarins Paris Skin Illusion – 114 cappuccino",
+            "price": 811.42
+          },
+          ...
+        ]
+      }
+    },
+    ...
+  ]
 }
 
 ```
@@ -218,7 +213,7 @@ Export the results to **JSON**. Follow the format below to better understand how
 
 [slide hideTitle]
 
-# 4. Car Dealer
+# Car Dealer Project Overview
 
 A car dealer needs information about cars, their parts, parts suppliers, customers, and sales.
 
@@ -228,13 +223,13 @@ A car dealer needs information about cars, their parts, parts suppliers, custome
 
 - Part **suppliers** have a **name** and info about whether he **uses imported parts**
 
-- **Customer** has a **name**, **date of birth**, and info about whether he/she **is a young driver** (Young driver is a driver that has **less than 2 years of experience**. Those customers get an **additional 5% off** for the sale.)
+- A **customer** has a **name**, a **date of birth** and info about whether they **are a young driver** (Young driver is a driver that has **less than 2 years of experience**). Those customers get an **additional 5% off** for the sale.
 
 - **Sale** has a **car**, a **customer**, and a **discount percentage**
 
-A **price of a car** is formed by the **total price of its parts**.
+The **price for a car** is formed by the **total price of its parts**.
 
-Using Code First approach create a database following the above description.
+Using the Code First approach, create a database following the above description.
 
 [image assetsSrc="Java-Spring-Data-JSON-Processing-Homework-2.jpg" /]
 
@@ -252,7 +247,7 @@ Configure the following relations in your models:
 
 [slide hideTitle]
 
-# 5. Car Dealer Import Data
+# 1. Data Import
 
 Import data from the provided files (**suppliers.json**, **parts.json**, **cars.json**, **customers.json**).
 
@@ -268,15 +263,15 @@ Finally, import the **sales records** by **randomly** selecting a **car**, **cus
 
 [slide hideTitle]
 
-# 6. Car Dealer Query and Export Data
+# 2. Queries and Export Data
 
-Write the below-described queries and **export** the returned data to the specified **format**.
+Create the below-described queries and **export** the returned data to the specified **format**.
 
 ## Query 1 – Ordered Customers
 
 Get all **customers**, ordered by their **birthdate in ascending order**.
 
-If two customers are born on the same date, **first print those, who are not young drivers** (e.g. print experienced drivers first).
+If two customers are born on the same date, **print those, who are experienced drivers first**.
 
 **Export** the list of customers **to JSON** in the format provided below.
 
@@ -309,16 +304,16 @@ Get all **cars** from make **Toyota** and **order them by model alphabetically**
 ```java
 [
   {
-    "Id": 117,
-    "Make": "Toyota",
-    "Model": "Camry Hybrid",
-    "TravelledDistance": 954775807,
+    "id": 117,
+    "make": "Toyota",
+    "model": "Camry Hybrid",
+    "travelledDistance": 954775807,
   },
   {
-    "Id": 112,
-    "Make": "Toyota",
-    "Model": "Camry Hybrid",
-    "TravelledDistance": 92275807,
+    "id": 112,
+    "make": "Toyota",
+    "model": "Camry Hybrid",
+    "travelledDistance": 92275807,
   },
 ...
 ]
@@ -326,22 +321,22 @@ Get all **cars** from make **Toyota** and **order them by model alphabetically**
 
 ## Query 3 – Local Suppliers
 
-Get all **suppliers** that **do not import parts from abroad**.
+Get all of the **suppliers** that **do not import parts from abroad**.
 
-Get their **id**, **name** and the **number of parts** they can offer to supply.
+Get their **ids**, **names** and the **number of parts** they can offer to supply.
 
 Export the list of suppliers to JSON in the format provided below.
 
 ```java
 [
   {
-    "Id": 2,
-    "Name": "Agway Inc.",
+    "id": 2,
+    "name": "Agway Inc.",
     "partsCount": 6
   },
   {
-    "Id": 4,
-    "Name": "Airgas, Inc.",
+    "id": 4,
+    "name": "Airgas, Inc.",
     "partsCount": 5
   },
   ...
@@ -358,43 +353,43 @@ For the **parts** get only the **name** and the **price**.
 
 **Export** the list of **cars and their parts to JSON** in the format provided below.
 
-```json
+```java
 [
   {
     "car": {
-      "Make": "Opel",
-      "Model": "Omega",
-      "TravelledDistance": 2147483647,
+      "make": "Opel",
+      "model": "Omega",
+      "travelledDistance": 2147483647,
     },
     "parts": [
       {
-        "Name": "Front Left Side Outer door handle",
-        "Price": 999.99
+        "name": "Front Left Side Outer door handle",
+        "price": 999.99
       },
       {
-        "Name": "Gudgeon pin",
-        "Price": 44.99
+        "name": "Gudgeon pin",
+        "price": 44.99
       },
       {
-        "Name": "Oil pump",
-        "Price": 100.19
+        "name": "Oil pump",
+        "price": 100.19
       },
       {
-        "Name": "Transmission pan",
-        "Price": 106.99
+        "name": "Transmission pan",
+        "price": 106.99
       }
     ]
   },
   {
     "car": {
-      "Make": "Opel",
-      "Model": "Astra",
-      "TravelledDistance": 9223372036854775807
+      "make": "Opel",
+      "model": "Astra",
+      "travelledDistance": 9223372036854775807
     },
     "parts": [
       {
-        "Name": "Overflow tank",
-        "Price": 1200.99
+        "name": "Overflow tank",
+        "price": 1200.99
       },
       ...
     ]
@@ -443,23 +438,23 @@ Export the list of sales to JSON in the format provided below.
  [
   {
     "car": {
-      "Make": "Peugeot",
-      "Model": "405",
-      "TravelledDistance": 92036854775807
+      "make": "Peugeot",
+      "model": "405",
+      "travelledDistance": 92036854775807
     },
     "customerName": "Donnetta Soliz",
-    "Discount": 0.3,
+    "discount": 0.3,
     "price": 1402.53,
     "priceWithDiscount": 981.771
   },
   {
     "car": {
-      "Make": "Mercedes",
-      "Model": "W124",
-      "TravelledDistance": 2147647
+      "make": "Mercedes",
+      "model": "W124",
+      "travelledDistance": 2147647
     },
     "customerName": "Carri Knapik",
-    "Discount": 0.2,
+    "discount": 0.2,
     "price": 254.96999999999997,
     "priceWithDiscount": 203.97599999999997
   },
