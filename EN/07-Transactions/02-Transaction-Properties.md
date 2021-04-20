@@ -61,3 +61,5 @@ Even if there is a system failure our **recovery-management component** of datab
 Create a **transaction** that **raises** the salary of an employee by the given **id** only **if the employee exists in the database.**
 
 If not, **no changes** should be made.
+
+[/slide]
