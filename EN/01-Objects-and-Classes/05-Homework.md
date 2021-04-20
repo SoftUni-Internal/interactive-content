@@ -893,13 +893,12 @@ When you receive the **End** command, **print the information on all the people*
 George 123456 20
 Peter 78911 15
 Steven 524244 10
-John 78911 30
 End
 [/input]
 [output]
-George with ID: 123456 is 20 years old.
-John with ID: 78911 is 30 years old.
 Steven with ID: 524244 is 10 years old.
+Peter with ID: 78911 is 15 years old.
+George with ID: 123456 is 20 years old.
 [/output]
 [/test]
 [test]
@@ -908,12 +907,10 @@ Cindy 88611 2
 Kaloyan 13967 3
 Simona 53316 11
 Gil 31837 72
-Gil 31837 72
-Stacy 88611 10
 End
 [/input]
 [output]
-Stacy with ID: 88611 is 10 years old.
+Cindy with ID: 88611 is 2 years old.
 Kaloyan with ID: 13967 is 3 years old.
 Simona with ID: 53316 is 11 years old.
 Gil with ID: 31837 is 72 years old.
@@ -945,9 +942,48 @@ End
 [output]
 Deyan with ID: 57989 is 24 years old.
 Chip with ID: 74059 is 44 years old.
-Chip with ID: 84450 is 89 years old.
 Margie with ID: 17098 is 46 years old.
+Chip with ID: 84450 is 89 years old.
 [/output]
+[/test]
+[test]
+[input]
+Simona 53316 11
+Gil 31837 72
+Cindy 88611 2
+Kaloyan 13967 3
+End
+[/input]
+[output]
+Cindy with ID: 88611 is 2 years old.
+Kaloyan with ID: 13967 is 3 years old.
+Simona with ID: 53316 is 11 years old.
+Gil with ID: 31837 is 72 years old.
+[/output]
+[/test]
+[test]
+[input]
+Deyan 57989 24
+Chip 74059 44
+Chip 84450 89
+Margie 17098 46
+Simona 53316 11
+Gil 31837 72
+Cindy 88611 2
+Kaloyan 13967 3
+End
+[/input]
+[output]
+Cindy with ID: 88611 is 2 years old.
+Kaloyan with ID: 13967 is 3 years old.
+Simona with ID: 53316 is 11 years old.
+Deyan with ID: 57989 is 24 years old.
+Chip with ID: 74059 is 44 years old.
+Margie with ID: 17098 is 46 years old.
+Gil with ID: 31837 is 72 years old.
+Chip with ID: 84450 is 89 years old.
+[/output]
+[/test]
 [/tests]
 [/code-task]
 [/slide]
