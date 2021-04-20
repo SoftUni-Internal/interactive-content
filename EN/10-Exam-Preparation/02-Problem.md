@@ -78,7 +78,7 @@ If a component, with the **same ID**, already exists in **the components collect
 
 If the component type is invalid, throws an **IllegalArgumentException** with the message "**Component type is invalid.**"
 
-If it is successful, returns "**Component** \{**component type**\} **with id** \{**component ID**\} **added successfully in computer with id** \{**computer ID**\}.".
+If it is successful, returns "**Component** \{**component type**\} **with id** \{**component ID**\} **added successfully in computer with id** \{**computer ID**\}."
 
 ### RemoveComponent Command:
 
@@ -147,7 +147,7 @@ The should must be called **buyComputer**.
 
 Removes a computer with the given **id** from the **collection of computers**.
 
-If it is successful, it returns the **toString method of the removed computer**.
+If it is successful, it returns the **toString() method of the removed computer**.
 
 ### BuyBestComputer Command:
 
@@ -167,7 +167,7 @@ The method should be called **BuyBestComputer**.
 
 If there are not any computers in the collection or the budget is insufficient for any computer, it throws an `IllegalArgumentException` with the message **"Can't buy a computer with a budget of** \$\{**budget**\}."
 
-If it is successful, it returns the **toString method on the removed computer**.
+If it is successful, it returns the **toString() method on the removed computer**.
 
 ### GetComputerData Command:
 
