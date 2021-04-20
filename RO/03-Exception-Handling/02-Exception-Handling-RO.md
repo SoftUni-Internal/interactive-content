@@ -96,7 +96,7 @@ try {
 }
 ``` 
 
-Sugestie: Urmăriți ierarhia excepțiilor. Fiți atent care excepție este părintele și care este copilul.
+**Sugestie**: Urmăriți ierarhia excepțiilor. Fiți atent care excepție este părintele și care este copilul.
 
 [/slide]
 

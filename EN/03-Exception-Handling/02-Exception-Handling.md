@@ -97,7 +97,7 @@ try {
 }
 ``` 
 
-Hint: Trace the exceptions hierarchy. Be cautious which exception is the parent and which is the child.
+**Hint**: Trace the exceptions hierarchy. Be cautious which exception is the parent and which is the child.
 
 [/slide]
 

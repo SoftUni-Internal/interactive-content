@@ -197,37 +197,51 @@ Submit only the **output** of your program, **not the code**.
 | Two households, both alike in dignity, | 1010100 1110111 1101111 100000 1101000 1101111 1110101 1110011 1100101 1101000… |
 
 
-## Hints
-- Create a string variable holding the path to the file. For example, if the file is located in "D:\\"
+[hints]
+[hint]
+Create a string variable holding the path to the file. 
+For example, if the file is located in "D:\\"
 
 ```java
 String path = "D:\\input.txt";
 ```
-- Use try-with-resources to open the file and to ensure that it will be closed after you are done with it
+[/hint] 
+[hint]
+Use try-with-resources to open the file and to ensure that it will be closed after you are done with it
 
 ```java
-try(FileInputStream fileStream = new FileInputStream(path)) {
-      
-} catch (IOException ex){
-      ex.printStackTrace();
-}
-```
-
-- Use the ``read()`` method to read each byte of the file until it returns -1
-
-```java
-try (FileInputStream fileStream = new FileInputStream(path)) {
-    int oneByte = fileStream.read();
-    while (oneByte >= 0) {
-        System.out.printf("%s ", Integer.toBinaryString(oneByte));
-        oneByte = fileStream.read();
-    }
+try (FileInputStream fileStream = 
+  new FileInputStream(path)) {
+  // ...
 } catch (IOException ex) {
-    ex.printStackTrace();
+  ex.printStackTrace();
 }
 ```
-- Select the output of the program and copy it [Ctrl + C]
-- Submit the output
+[/hint] 
+[hint]
+Use the `read()` method to read each byte of the file until it returns -1
+
+```java
+try (FileInputStream fileStream = 
+  new FileInputStream(path)) {
+  int oneByte = fileStream.read();
+
+  while (oneByte >= 0) {
+    System.out.printf("%s ", 
+      Integer.toBinaryString(oneByte));
+
+    oneByte = fileStream.read();
+  }
+} catch (IOException ex) {
+  ex.printStackTrace();
+}
+```
+[/hint] 
+[hint]
+Select the output of the program and copy it `[Ctrl + C]`.
+Submit the output.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]

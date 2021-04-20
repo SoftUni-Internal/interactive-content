@@ -193,37 +193,52 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 | Two households, both alike in dignity, | 1010100 1110111 1101111 100000 1101000 1101111 1110101 1110011 1100101 1101000… |
 
 
-## Sugestii
-- Creați o variabilă de tip șir care deține calea către fișierul. Dacă, de exemplu, fișierul se află în "D:\\"
+[hints]
+[hint]
+Creați o variabilă de tip șir care deține calea către fișierul. 
+Dacă, de exemplu, fișierul se află în "D:\\"
 
 ```java
 String path = "D:\\input.txt";
 ```
-- Folosiți try-with-resources pentru a deschide fișierul și pentru a vă asigura că acesta va fi închis după ce sunteți gata cu el.
+[/hint] 
+[hint]
+Folosiți try-with-resources pentru a deschide fișierul și pentru a vă asigura că acesta va fi închis după ce sunteți gata cu el:
 
 ```java
-try(FileInputStream fileStream = new FileInputStream(path)){
-      
-}catch (IOException ex){
-      ex.printStackTrace();
-}
-```
-
-- Utilizați metoda ``read()`` pentru a citi fiecare octet al fișierului până când acesta returnează -1
-
-```java
-try (FileInputStream fileStream = new FileInputStream(path)) {
-    int oneByte = fileStream.read();
-    while (oneByte >= 0) {
-        System.out.printf("%s ", Integer.toBinaryString(oneByte));
-        oneByte = fileStream.read();
-    }
+try (FileInputStream fileStream = 
+  new FileInputStream(path)) {
+  // ...
 } catch (IOException ex) {
-    ex.printStackTrace();
+  ex.printStackTrace();
 }
 ```
-- Selectați rezultatul programului și copiați-l [Ctrl + C]
-- Insertați rezultatul pe platformă
+[/hint] 
+[hint]
+Utilizați metoda `read()` pentru a citi fiecare octet al fișierului până când acesta returnează -1:
+
+```java
+try (FileInputStream fileStream = 
+  new FileInputStream(path)) {
+  int oneByte = fileStream.read();
+
+  while (oneByte >= 0) {
+    System.out.printf("%s ", 
+      Integer.toBinaryString(oneByte));
+
+    oneByte = fileStream.read();
+  }
+} catch (IOException ex) {
+  ex.printStackTrace();
+}
+```
+[/hint] 
+[hint]
+Selectați rezultatul programului și copiați-l `[Ctrl + C]`.
+Insertați rezultatul pe platformă.
+[/hint] 
+[/hints] 
+
 
 [/task-description]
 [code-io /]
