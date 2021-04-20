@@ -10,7 +10,7 @@
 **1. Unit Testing**
 
 - What unit testing is and why testing your code is important
-- Unit test structure - Arrange, Act and Assert (AAA) Pattern
+- Unit test structure - Arrange, Act, Assert (AAA) Pattern
 - Popular unit testing frameworks
 - Unit testing approaches and types of unit testing
 
