@@ -1458,11 +1458,14 @@ The same goes for getFibonacci(0)`.
 
 - The output should be the n-th Fibonacci number counting from 0
 
-## Hint
-
-For the n-th Fibonacci number, we calculate the `N - 1st` and the `N - 2nd` number, but for the calculation of `N - 1st` number we calculate the `N - 1 - 1st(N - 2nd)` and the `N - 1 - 2nd` number, so we have a lot of repeated calculations
-
+[hints]
+[hint]
+For the n-th Fibonacci number, we calculate the `N - 1st` and the `N - 2nd` number, but for the calculation of `N - 1st` number we calculate the `N - 1 - 1st(N - 2nd)` and the `N - 1 - 2nd` number, so we have a lot of repeated calculations.
+[/hint] 
+[hint]
 If you want to figure out how to skip those unnecessary calculations, you can learn about a technique called [memoization](https://en.wikipedia.org/wiki/Memoization).
+[/hint] 
+[/hints] 
 
 ## Examples
 | **Input** | **Output** |

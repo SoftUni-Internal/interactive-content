@@ -1456,11 +1456,15 @@ Cazul de oprire al recursivității este `getFibonacci(1)` și trebuie să retur
 
 - Datele de ieșire trebuie să fie al n-lea număr din șirul lui Fibonacci, începând de la 0
 
-## Indiciu
-
+[hints]
+[hint]
 Pentru al n-lea număr din șirul lui Fibonacci, calculăm al `N - 1st` și al `N - 2nd` număr, dar pentru calculul elementului al `N - 1st`, calculăm al `N - 1 - 1st(N - 2nd)` și `N - 1 - 2nd`, deci ave multe calcule repetate.
-
+[/hint] 
+[hint]
 Dacă doriți să vă dați seama cum puteți trece peste toate aceste calcule care nu sunt necesare, puteți căuta o tehnică numită [memoization](https://en.wikipedia.org/wiki/Memoization).
+[/hint] 
+[/hints] 
+
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
