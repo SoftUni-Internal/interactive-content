@@ -402,13 +402,31 @@ Create a program that finds the **difference between the sums of the square matr
 - The **first line** holds a number **n** - the size of the matrix.
 - The next **n**  **lines** hold the **values for every row** - **n** numbers separated by a space.
 
-## Hints
+[hints]
+[hint]
+Use a **single** loop `i = [1 ... n]` to sum the diagonals:
 
-- Use a **single** loop i = [1 ... n] to sum the diagonals.
+```java
+for (int i = 0; i < n; i++) {
+   // ...
+}
+```
+[/hint] 
+[hint]
+The **primary diagonal** holds all cells `{row,col}` where `row == col == i`:
 
-- The **primary diagonal** holds all cells `{row,col}` where `row == col == i`.
-- The **secondary diagonal** holds all cells `{row,col}` where `row == i` and `col == n - 1 - i`.
+```java
+primaryDiagonal += matrix[i][i];
+```
+[/hint] 
+[hint]
+The **secondary diagonal** holds all cells `{row,col}` where `row == i` and `col == n - 1 - i`:
 
+```java
+secondaryDiagonal += matrix[i][matrix[i].length - 1 - i];
+```
+[/hint] 
+[/hints] 
 
 ## Examples
 | **Input** | **Output** | **Comments** |

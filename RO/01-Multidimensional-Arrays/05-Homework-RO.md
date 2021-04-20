@@ -406,12 +406,31 @@ Scrieți un program care găsește **diferența dintre sumele de pe diagonalele 
 - **Prima linie** conține un număr **n** – dimensiunea matricei
 - Următoarele **n**  **linii** conțin **valorile pentru fiecare rând** – **n** numere separate prin spațiu
 
-## Indicii
+[hints]
+[hint]
+Utilizați o **singură buclă** `i = [1 ... n]` pentru a însuma diagonalele:
 
-- Utilizați o **singură buclă** `i = [1 ... n]` pentru a însuma diagonalele
+```java
+for (int i = 0; i < n; i++) {
+   // ...
+}
+```
+[/hint] 
+[hint]
+**Diagonala principală** conține toate celulele `{rând,coloană}` unde `rând == coloană == i`:
 
-- **Diagonala principală** conține toate celulele `{rând,coloană}` unde `rând == coloană == i`
-- **Diagonala secundară** conține toate celulele `{rând,coloană}` unde `rând == i` și `coloană == n - 1 - i`
+```java
+primaryDiagonal += matrix[i][i];
+```
+[/hint] 
+[hint]
+**Diagonala secundară** conține toate celulele `{rând,coloană}` unde `rând == i` și `coloană == n - 1 - i`:
+
+```java
+secondaryDiagonal += matrix[i][matrix[i].length - 1 - i];
+```
+[/hint] 
+[/hints] 
 
 
 ## Exemplu
