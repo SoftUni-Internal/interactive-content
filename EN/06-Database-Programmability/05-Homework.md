@@ -6,30 +6,21 @@
 
 [slide hideTitle]
 # Problem: Employees with Salary Above 35000
-[code-task title="Problem: Employees with Salary Above 35000" taskId="3d980ba8-9edc-49a9-9396-bbb0ce0ff178" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Employees with Salary Above 35000" taskId="java-db-and-mysql-database-programmability-employees0with-salary-above-35000" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
+[code-editor language=java]
 [/code-editor]
 [task-description]
+
 ## Description
 
-**Queries for SoftUni Database**
+**Use the SoftUni Database**
 
 Download resources [here](https://mega.nz/file/SEIm3LQB#_udnGIpK6n2k7R90iEzFEeeSXgHVe10l-npgZC7fzpE)
 
-Create stored procedure **usp_get_employees_salary_above_35000** that returns all employees' first and last names for whose **salary** is above 35000.
+Create a stored procedure named **usp_get_employees_salary_above_35000** that returns all the first and last names of the emlpoyees, which have a **salary** above 35000.
 
-The result should be sorted by **first_name** then by **last_name** alphabetically, and id ascending.
-
-Submit your query statement as Run skeleton, run queries & check DB in Judge
+The result should be sorted by the **first_name** then by the **last_name** and finally by **id** in ascending order.
 
 ## Examples
 | **first_name** | **last_name** |
@@ -146,28 +137,20 @@ Kahn
 [/slide]
 
 [slide hideTitle]
-# Problem: Employees with Salary Above Number
-[code-task title="Problem: Employees with Salary Above Number" taskId="25aceebc-21cd-4583-9a36-7f1f5a137255" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+# Problem: Employees with а Salary Above Specified
+[code-task title="Employees with а Salary Above Specified" taskId="java-db-and-mysql-database-programmability-employees-with-salary-above-35000" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
+[code-editor language=java]
 [/code-editor]
+
 [task-description]
 ## Description
-Create stored procedure **usp_get_employees_salary_above** that accept a **decimal number** (with precision, **4 digits** after the decimal point) as parameter and 
+Create a stored procedure called **usp_get_employees_salary_above** that accept a **decimal number** (with precision of **4 digits** after the decimal point) as a parameter.
 
-return **all employee's first and last names** whose salary is **above or equal** to the given number. The result should be sorted by first_name then by last_name 
+Return **all of the first and last names of employees** whose salaries are **above or equal** to the given number.
 
-**alphabetically and id ascending**.
+The result should be sorted by the first_name then by the last_name and finally by the id in ascending order.
 
-Submit your query statement as Run skeleton, **run queries & check DB in Judge**.
 
 ## Examples
 | **first_name** | **last_name** |
@@ -232,25 +215,15 @@ Duffy
 
 [slide hideTitle]
 # Problem: Town Names Starting With
-[code-task title="Problem: Town Names Starting With" taskId="33d3d168-1b98-4083-b4cf-c10cc153a71c" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Town Names Starting With" taskId="java-db-and-mysql-database-programmability-town-names-starting-with" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
-Write a stored procedure **usp_get_towns_starting_with** that **accept string as parameter** and returns **all town names starting with that string**.
+Create a stored procedure named **usp_get_towns_starting_with** that **accepts a string as a parameter** and returns **all of the town names starting with that string**.
 
 The result should be sorted by **town_name** alphabetically.
-
-Submit your query statement as Run skeleton, **run queries & check DB in Judge**.
 
 ## Examples
 | **town_name** |
@@ -283,27 +256,18 @@ Bothell
 
 [slide hideTitle]
 # Problem: Employees from Town
-[code-task title="Problem: Employees from Town" taskId="af1b67b2-1739-4054-a5ad-eae65de40393" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Employees from Town" taskId="java-db-and-mysql-database-programmability-employees-from-town" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
-Write a stored procedure **usp_get_employees_from_town** that accepts **town_name** as parameter and return the
+Create a stored procedure named **usp_get_employees_from_town** that accepts a **town_name** as a parameter and return the
 
 **employees first and last name that live in the given town**.
 
-The result should be sorted by **first_name** then by **last_name** alphabetically and **id ascending**.
+The result should be sorted by the **first_name** then by the **last_name** and finally by **id** in ascending order.
 
-Submit your query statement as Run skeleton, **run queries & check DB in Judge**.
 
 ## Examples
 | **first_name** | **last_name** |
@@ -339,29 +303,20 @@ Nakov
 
 [slide hideTitle]
 # Problem: Salary Level Function
-[code-task title="Problem: Salary Level Function" taskId="5b4b94cc-4d6b-4f4b-9969-83e7aa0d1a9b" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Salary Level Function" taskId="java-db-and-mysql-database-programmability-salary-level-function" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
-Write a function **ufn_get_salary_level** that receives **salary of an employee** and returns the **level of the salary**.
+Create a function called **ufn_get_salary_level** that receives a **salary of an employee** and returns the **level of the salary**.
 
-- If salary is **< 30000** return "**Low**"
+- If the salary is **below 30000** return "**Low**"
 
-- If salary is **between 30000 and 50000** (**inclusive**) return "**Average**"
+- If the salary is **between 30000 and 50000** (**inclusive**) return "**Average**"
 
-- If salary is **> 50000** return "**High**"
+- If the salary is **above 50000** return "**High**"
 
-Submit your query statement as Run skeleton, **run queries & check DB in Judge**.
 
 
 ## Examples
@@ -406,7 +361,7 @@ High
 
 [slide hideTitle]
 # Problem: Define Function
-[code-task title="Problem: Define Function" taskId="7e538e04-a2db-4ef3-b426-01be74a1a217" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Define Function" taskId="java-db-and-mysql-database-programmability-salary-level-function" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -421,11 +376,10 @@ public class Main {
 [task-description]
 ## Description
 
-Define a function **ufn_is_word_comprised(set_of_letters varchar(50), word varchar(50))**
+Define a function called **ufn_is_word_comprised(set_of_letters varchar(50), word varchar(50))**
 
 that returns **true** or **false** depending on that if the word is a comprised of the given set of letters.
 
-Submit your query statement as Run skeleton, **run queries & check DB in Judge**.
 
 ## Examples
 | **set_of_letters** | **word** | **result** |
@@ -465,17 +419,9 @@ Sofia
 
 [slide hideTitle]
 # Problem: Find Full Name
-[code-task title="Problem: Find Full Name" taskId="cbfdd3f5-50ed-40de-85b7-a88f59618e2d" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Find Full Name" taskId="java-db-and-mysql-database-programmability-find-full-name" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
@@ -484,15 +430,12 @@ public class Main {
 You are given a database schema with tables:
 
 -	**account_holders(id (PK), first_name, last_name, ssn)**
-and 
+-	**accounts(id (PK), account_holder_id (FK), balance)**
 
--	**accounts(id (PK), account_holder_id (FK), balance)**.
+Create a stored procedure called **usp_get_holders_full_name** that selects the full names of all people.
 
-Write a stored procedure **usp_get_holders_full_name** that selects the full names of all people.
+The result should be sorted by the **full_name** and by the id in **ascending** order. 
 
-The result should be sorted by **full_name** alphabetically and **id ascending**. 
-
-Submit your query statement as Run skeleton, **run queries & check DB in Judge**.
 
 ## Examples
 | **full_name** |
@@ -541,27 +484,17 @@ Zlatko Zlatyov
 
 [slide hideTitle]
 # Problem: People with Balance Higher Than
-[code-task title="Problem: People with Balance Higher Than" taskId="417e450f-a5b3-46f0-b182-dd901a6582aa" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="People with Balance Higher Than" taskId="java-db-and-mysql-database-programmability-people-with-balance-higher-than" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
-Your task is to create a stored procedure **usp_get_holders_with_balance_higher_than**
+Your task is to create a stored procedure called **usp_get_holders_with_balance_higher_than**
 
-that accepts a **number as a parameter** and returns all **people who have more money in total of all their accounts** than the **supplied number**. 
+that accepts a **number as a parameter** and returns all of the **people who have more money in total of all their accounts** than the **supplied number**. 
 
-The result should be sorted by **account_holders.id** ascending.
-
-Submit your query statement as Run skeleton, **run queries & check DB in Judge**.
+The result should be sorted by the **id of the account_holders** in ascending order.
 
 
 ## Examples
@@ -614,25 +547,17 @@ Petkov Junior
 
 [slide hideTitle]
 # Problem: Future Value Function
-[code-task title="Problem: Future Value Function" taskId="4f568d16-a0b8-47e6-9cfa-3052c6e20813" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Future Value Function" taskId="java-db-and-mysql-database-programmability-future-value-functions" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
-Your task is to create a function **ufn_calculate_future_value**
+Your task is to create a function called **ufn_calculate_future_value**
 
-that accepts as parameters – sum (with precision, **4 digits** after the decimal point), 
+that accepts as parameters – **sum** (with precision, **4 digits** after the decimal point), 
 
-**yearly interest rate (double)** and **number of years(int).** 
+**yearly interest rate** (double) and **number of years** (int).
 
 It should calculate and return the **future value of the initial sum**. 
 
@@ -647,8 +572,6 @@ Using the following formula:
 •	**R** – Yearly interest rate
 
 •	**T** – Number of years
-
-Submit your query statement as Run skeleton, **run queries & check DB in Judge.**
 
 
 ## Examples
@@ -738,27 +661,19 @@ Submit your query statement as Run skeleton, **run queries & check DB in Judge.*
 
 [slide hideTitle]
 # Problem: Calculating Interest
-[code-task title="Problem: Calculating Interest" taskId="455cfe3b-7706-442b-9f65-65477acb638f" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Calculating Interest" taskId="java-db-and-mysql-database-programmability-calculating-interest" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
-Your task is to create a stored procedure **usp_calculate_future_value_for_account**
+Your task is to create a stored procedure called **usp_calculate_future_value_for_account**
 
 that accepts as parameters – **id** of account and **interest** rate.
 
-The procedure uses the function from the previous problem to give an interest to a person's account **for 5 years**, 
+The procedure uses the function from the previous problem to give an interest to an account of a person **for 5 years**, 
 
-along with information about his/her **account id, first name**, 
+along with the information about their **account id, first name**, 
 
 **last name and current balance** as it is shown in the example below. 
 
@@ -766,18 +681,11 @@ It should take the **account_id** and the **interest_rate** as parameters.
 
 Interest rate should have precision up to 0.0001, same as the calculated balance after 5 years.
 
-**Be extremely careful to achieve the desired precision**!
-
-Submit your query statement as Run skeleton, **run queries & check DB in Judge**.
-
 ## Examples
 | **account_id** | **first_name** | **last_name** | **current_balance** | **balance_in_5_years** |
 | --- | --- | --- | --- | --- |
 | 1 | Susan | Cane | 123.1200 | 198.2860 |
 |  |  |  |  |  |
-
-
-
 
 
 [/task-description]
@@ -805,25 +713,17 @@ Cane
 
 [slide hideTitle]
 # Problem: Deposit Money
-[code-task title="Problem: Deposit Money" taskId="d057e32a-c408-459a-bd08-e7517219b64f" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Deposit Money" taskId="java-db-and-mysql-database-programmability-deposit-money" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
-Write stored procedure **usp_transfer_money(from_account_id, to_account_id, amount)**
+Create a stored procedure **usp_transfer_money(from_account_id, to_account_id, amount)**
 
 **that transfers money from one account to another**. 
 
-Consider cases when one of the **account_ids** is not valid, 
+Consider cases when one of the **account_ids** is not valid and
 
 the amount of **money is negative number**, 
 
@@ -832,8 +732,6 @@ the amount of **money is negative number**,
 Make sure that the whole procedure **passes without errors** and **if error occurs make no change in the database**. 
 
 Make sure to guarantee exact results working with precision up to fourth sign after decimal point.
-
-Submit your query statement as Run skeleton, **run queries & check DB in Judge**.
 
 
 ## Examples
@@ -869,30 +767,22 @@ Here is the result for **from_account_id = 1, to_account_id = 2 and money_amount
 
 [slide hideTitle]
 # Problem: Withdraw Money
-[code-task title="Problem: Withdraw Money" taskId="33db8bb2-409a-4df2-8d8e-1fd70be9b83f" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Withdraw Money" taskId="java-db-and-mysql-database-programmability-withdraw-money" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
-Add stored procedures **usp_withdraw_money(account_id, money_amount)** that operate in transactions. 
+Add a stored procedure named **usp_withdraw_money(account_id, money_amount)** that operate in transactions. 
 
-Make sure to guarantee withdraw is done only when balance is enough and **money_amount** is valid positive number.
+Make sure to guarantee that a withdraw is done only when balance is enough and **money_amount** is valid positive number.
 
-**Work with precision up to fourth sign after decimal point**.
+**Work with precision up to the fourth sign after the decimal point**.
 
 The procedure should produce exact results working with the specified precision.
 
 Submit your query statement as Run skeleton, **run queries & check DB in Judge**.
-.
+
 
 ## Examples
 
@@ -926,25 +816,15 @@ Here is the result for **account_id = 1 and money_amount = 10**.
 
 [slide hideTitle]
 # Problem: Log Accounts Trigger
-[code-task title="Problem: Log Accounts Trigger" taskId="a40ba60b-a469-4558-b769-ebc89bec281d" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Log Accounts Trigger" taskId="java-db-and-mysql-database-programmability-log-accounts-trigger" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
 Create another table – **logs(log_id, account_id, old_sum, new_sum)**.
 
 Add a **trigger** to the **accounts** table that enters a new entry into the **logs** table every time the sum on an account changes.
-
-Submit your query statement as Run skeleton, **run queries & check DB in Judge**.
 
 ## Examples
 | **log_id** | **account_id** | **old_sum** | **new_sum** |
@@ -982,17 +862,9 @@ Submit your query statement as Run skeleton, **run queries & check DB in Judge**
 
 [slide hideTitle]
 # Problem: Emails Trigger
-[code-task title="Problem: Emails Trigger" taskId="59c5af35-e0e5-47b1-a93b-e438798ef35c" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Emails Trigger" taskId="java-db-and-mysql-database-programmability-emails-trigger" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
 [/code-editor]
 [task-description]
 ## Description
@@ -1008,7 +880,6 @@ The following data is required to be filled for each email:
 
 •	**body** - "On **{date (current date)}** your balance was changed from **{old}** to **{new}**.
 
-Submit your query statement as Run skeleton, **run queries & check DB in Judge**.
 
 ## Examples
 | **id** | **recipient** | **subject** | **body** |
@@ -1016,8 +887,6 @@ Submit your query statement as Run skeleton, **run queries & check DB in Judge**
 | 1 | 1 | Balance change for account: 1 | On Sep 15 2016 at 11:44:06 AM your balance was changed from 133 to 143. |
 | ... | ... | ... | ... |
 |  |  |  |  |
-
-
 
 [/task-description]
 [code-io /]
@@ -1194,10 +1063,4 @@ log_id
 [/test]
 [/tests]
 [/code-task]
-[/slide]
-
-[slide hideTitle]
-# Homework Results
-[tasks-results/]
-
 [/slide]
