@@ -610,11 +610,25 @@ Create a program that:
 | 4.75 4.92 3.78 4.79 4.82 4.75 2.81 2.13 |  |
 
 
-## Hints
-- Think about the **proper types** of the map
-- The **values** can be an **array**
-- A **nested loop** and **another variable** might be needed for **the average score**
+[hints]
+[hint]
+Think about the **proper types** of the map:
 
+```java
+Map<String, Double[]> graduationList = new TreeMap<>();
+```
+The **values** can be an **array**.
+[/hint] 
+[hint]
+**Another variable** might be needed for **the average score**:
+
+```java
+double average; // ...
+
+DecimalFormat decimalFormat = new DecimalFormat("0.###");
+```
+[/hint] 
+[/hints] 
  
 
 [/task-description]

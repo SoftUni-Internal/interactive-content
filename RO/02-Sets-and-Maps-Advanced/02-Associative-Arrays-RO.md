@@ -609,10 +609,27 @@ Scrieți un program care:
 | 4.75 4.92 3.78 4.79 4.82 4.75 2.81 2.13 |  |
 
 
-## Sugestii
-- Gândiți-vă la **tipul corect** de hartă
-- **Valoarea** poate fi **matrice**
-- **Bucla imbricată** și încă o **variabilă** vor fi necesare pentru scor mediu
+[hints]
+[hint]
+Gândiți-vă la **tipul corect** de hartă:
+
+```java
+Map<String, Double[]> graduationList = new TreeMap<>();
+```
+
+**Valoarea** poate fi **matrice**.
+[/hint] 
+[hint]
+Încă o **variabilă** vor fi necesare pentru scor mediu:
+
+```java
+double average; // ...
+
+DecimalFormat decimalFormat = new DecimalFormat("0.###");
+```
+[/hint] 
+[/hints] 
+
 
 [/task-description]
 [code-io /]
