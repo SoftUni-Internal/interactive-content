@@ -796,9 +796,24 @@ You should **swap the values** at the given coordinates `cell [row1, col1] with 
 
 If the **command is not valid** (does not contain the keyword `swap`, has fewer or more coordinates entered or the given coordinates do not exist), print `Invalid input!` and move on to the next command. Your program should finish when the string `END` is entered.
 
-## Hints
 
-Think about Exception Handling
+[hints]
+[hint]
+Think about exception handling:
+
+```java
+ try {
+   String temp = matrix[row1][col1];
+   matrix[row1][col1] = matrix[row2][col2];
+   matrix[row2][col2] = temp;
+   print(matrix);
+ } catch (IndexOutOfBoundsException iob) {
+   System.out.println("Invalid input!");
+ }
+```
+[/hint] 
+[/hints] 
+
 
 ## Examples
 | **Input** | **Output** |
@@ -3375,16 +3390,19 @@ The output should consist of **R** lines, each consisting of exactly **C** chara
 
 ## Constraints
 
-`0 < R, C < 20`
-`0 <= startRow < R`
-`0 <= startCol < C`
+- `0 < R, C < 20`
+- `0 <= startRow < R`
+- `0 <= startCol < C`
 
 All symbols in the input matrix will be lowercase alphanumerics ( `a-z` , `0-9` ). The `fillChar` will also be alphanumeric and lowercase.
 
 
-## Hints
-
+[hints]
+[hint]
 For some of the tests, you can solve the problem with a simple approach. The complete solution can be obtained by using **Stack**, **Queue**, **DFS**, or **BFS**.
+[/hint] 
+[/hints] 
+
 
 ## Examples
 | **Input** | **Output** |

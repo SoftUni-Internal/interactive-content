@@ -803,9 +803,24 @@ Dacă **comanda nu este validă** (aceasta nu conține cuvântul-cheie `swap`, a
 
 Programul ar trebui să se termine odată cu introducerea stringului `END`.
 
-## Indicii
 
-Gândiți-vă la rezolvarea de excepții
+[hints]
+[hint]
+Gândiți-vă la rezolvarea de excepții:
+
+```java
+ try {
+   String temp = matrix[row1][col1];
+   matrix[row1][col1] = matrix[row2][col2];
+   matrix[row2][col2] = temp;
+   print(matrix);
+ } catch (IndexOutOfBoundsException iob) {
+   System.out.println("Invalid input!");
+ }
+```
+[/hint] 
+[/hints] 
+
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -3386,9 +3401,13 @@ Datele de ieșire constau în **R** linii, fiecare constând în exact **C** car
 Toate simbolurile din matricea cu date de intrare vor fi caractere alfanumerice de tip literă mică ( `a-z` , `0-9` ). Simbolul `fillChar` va fi tot un caracter alfanumeric de tip literă mică.
 
 
-## Indicii
-
+[hints]
+[hint]
 Pentru unele teste, puteți rezolva problema utilizând o metodă simplă, însă soluția completă poate fi obținută utilizând **Stiva**, **Coada**, **DFS**, sau **BFS**.
+[/hint] 
+[/hints] 
+
+
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
