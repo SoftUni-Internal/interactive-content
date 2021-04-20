@@ -71,6 +71,16 @@ SELECT ufn_count_employees_by_town('Berlin'); -> 3
 SELECT ufn_count_employees_by_town(NULL); -> 0
 ```
 
+
+## Example outputs:
+
+```java
+SELECT ufn_count_employees_by_town('Berlin');  -> 3
+
+SELECT ufn_count_employees_by_town(NULL);  -> 0
+```
+
+
 [/task-description]
 [code-io /]
 [tests]
@@ -86,11 +96,3 @@ SELECT ufn_count_employees_by_town(NULL); -> 0
 [/code-task]
 [/slide]
 
-
-## Example outputs:
-
-```java
-SELECT ufn_count_employees_by_town('Berlin');  -> 3
-
-SELECT ufn_count_employees_by_town(NULL);  -> 0
-```
