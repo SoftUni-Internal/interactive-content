@@ -9,10 +9,14 @@
 
 **1. Unit Testing**
 
-- Definition and usage
+- What unit testing is and why testing your code is important
+- Unit test structure - Arrange, Act and Assert (AAA) Pattern
+- Popular unit testing frameworks
+- Unit testing approaches and types of unit testing
 
 **2. Unit Testing With Mocha And Chai**
 
 - Using software testing frameworks
+- Installing frameworks and libraries globally
 
 [/slide]
