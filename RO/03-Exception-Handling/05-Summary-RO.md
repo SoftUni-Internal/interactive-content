@@ -6,10 +6,10 @@
 ## În această lecție ați învățat:
 
 - Ce sunt excepțiile în Java?
-     - Ierarhie de excepție
+     - ierarhie de excepție
 - Cum să Manuiți Excepția?
-     - try-catch Constructor
-     ```java 
+     - **try-catch** constructor
+    ```java 
     try {
     // Specify a piece of code logic that could raise an exception 
     } catch (SomeException) {
@@ -17,16 +17,17 @@
     }
     ```
 
-     - try-finally Declarația 
-     ```java 
+     - **try-finally** declarația 
+    ```java 
     try {
     // Specify a piece of code logic that could raise an exception 
     } finally {
     // This block will always execute
     }
+    ```
 
 - Cum să ridici (throw) excepții
-     - Utilizarea Cuvântului Cheie "throw"
+     - utilizarea cuvântului cheie **throw**
      ```java
      try {
           …
@@ -35,7 +36,7 @@
      }
      ```
      
-     - Relansarea Excepțiilor
+     - relansarea excepțiilor
      ```java
      try {
           Integer.parseInt(str);
@@ -43,17 +44,18 @@
           System.out.println("Parse failed!");
           throw ex; // Re-throw the caught exception
      }
+     ```
 
 - Cele Mai Bune Practici
-     - utilizarea Blocului de Captură
-     - alegerea Tipului de Excepție
+     - utilizarea blocului de captură (**catch**)
+     - alegerea **tipului de excepție**
 
 ## În următoarea lecție, veți învăța:
 
 - Ce este Depanarea?
      - lucrul cu instrumentele de depanare (`debuggers`)
      - importanța Depanării
-- Lucrul cu **IntelliJ IDEE Depanator**
+- Lucrul cu **IntelliJ IDEА Depanator**
      - puncte de întrerupere
 - Inspecția Datelor
 

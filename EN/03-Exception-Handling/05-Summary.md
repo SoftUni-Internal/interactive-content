@@ -38,7 +38,7 @@
     throw new IllegalStateException("Cannot save invoice.", sqlEx);
     }
     ```
-    - Re-Throwing Exceptions
+    - re-throwing exceptions
     
     ```java
     try {
