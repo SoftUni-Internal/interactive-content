@@ -1,16 +1,14 @@
-# Introduction to ORM
+# ORM Introduction
 
-[slide]
+[slide hideTitle]
 
-# What is ORM?
+# ORM Definition
 
 ORM or **Object-Relational Mapping** is a **programming technique** for data conversion.
 
-This technique allows database **queries** and **manipulations** to be made, using the **object-oriented paradigm**.
+This technique allows database **queries** and **manipulations** to be made using the **object-oriented paradigm**.
 
-It maps regular **objects** to **rows** in **relational databases' tables**.
-
-The following picture illustrates how **ORM** works:
+It maps **objects** to **rows** from **tables in relational databases**.
 
 [image assetsSrc="Java-ORM-Fundamentals-1.png" /]
 
@@ -18,9 +16,9 @@ The following picture illustrates how **ORM** works:
 
 [slide]
 
-# Why do we need ORM?
+# ORM Usage
 
-As the name suggests, **object-oriented languages** mostly deal with objects, which are **non-scalar values**.
+**Object-oriented languages** mostly deal with objects, which are **non-scalar values**.
 
 Databases, however, do not share that **object-oriented** nature and work only with scalar values ( **integer**, **string** etc.).
 
@@ -28,42 +26,40 @@ A lot of **parsing** and **serialization** is required for **OOP languages** to 
 
 **ORM** makes the communication between these **incompatible** systems much easier.
 
-Developers save a lot of work hours because of **ORM's** ability to create **SQL queries** automatically.
+Developers save a lot of work hours because of the ability of an **ORM** to create **SQL queries** automatically.
 
 [/slide]
 
-[slide]
-
+[slide hideTitle]
 # JDBC and ORM
 
 **ORMs** and **JDBC** are two different solutions to a problem
 
-Each of them is better than the other in different ways.
+Each one of them is better than the other in different ways.
 
-JDBC's **strengths** are:
+The **strength** of **JDBC**:
 
 - It is easy to learn
 
 - Its performance is a little better
 
-ORMs beat JDBC in the following categories:
+However, ORMs are superior to JDBC due to:
 
-- They make application maintenance easier
+- Easier maintainability
 
-- The focus is on the business logic instead of the database structure
+- The focus on the business logic instead of the database structure
 
-- They are good for scaling
+- Better scalability
 
 Overall, it can be said that **JDBC** is good for **small applications**.
 
-With it, data can be **directly presented from the database**.
+With it, the data can be **directly presented from the database**.
 
 **ORMs**, however, are used for **big, domain-driven applications** that have more **complex object relationships**.
 
 [/slide]
 
-[slide]
-
+[slide hideTitle]
 # Application Architecture
 
 **Application architecture** is a very important thing to consider when creating a project.
@@ -71,21 +67,16 @@ With it, data can be **directly presented from the database**.
 **Layered architecture** is one of the simpler choices.
 
 In this type of architecture, there are **four** layers:
-
-- `Presentation Layer` - This is what the users of the application **see**
-
-- `Service layer`- Where all the **business logic** is **stored** and **operates** from
-
+- `Presentation Layer` - What the users of the application **see**
+- `Service layer`- Where all of the **business logic** is **stored** and **operates** from
 - `Persistence layer (ORM)` - Stores **handler functions** that connect the **service layer** to the **database layer**
-
-- `Database layer` - All the **data** for the application is stored **here**
+- `Database layer` - Where the **data for the application** is stored
 
 [image assetsSrc="Java-ORM-Fundamentals-2.png" /]
 
 [/slide]
 
-[slide]
-
+[slide hideTitle]
 # ORM Frameworks: Features
 
 The main feature of **ORM Frameworks** is that they automatically generate **SQL queries**.
@@ -98,12 +89,11 @@ Working with **ORM** can happen in two different ways:
 
 - `Database-first approach` - This approach creates all the **entities** from an **existing database**
 
-- `Code-first approach` - In the **code-first approach** classes are created **first** and then **migrated** to the **database**
+- `Code-first approach` - Classes are created **first** and then **migrated** to the **database**
 
 [/slide]
 
-[slide]
-
+[slide hideTitle]
 # Perform data operations with ORM
 
 As covered previously, **ORMs** automatically create **SQL queries**.
@@ -113,7 +103,7 @@ The following code shows some examples of working with **ORM**:
 - **Saving an entity on the database**
 
 ```java
-Student student = new Student('Kevin', 'Reynolds');
+Student student = new Student("Kevin", "Reynolds");
 session.save(student);
 ```
 
@@ -145,7 +135,7 @@ SELECT * FROM students WHERE id=1;
 
 **HQL** or **Hibernate Query Language** is another query language that is **object-oriented**, unlike **SQL**.
 
-**HQL** also works with concepts like **inheritance**, **polymorphism**, and **association**.
+**HQL** also works with concepts like **inheritance**, **polymorphism** and **association**.
 
 The following code shows examples of custom queries with **both** query languages:
 
@@ -166,13 +156,13 @@ List results = query.list();
 
 [/slide]
 
-[slide]
 
-# Code First Model
+[slide hideTitle]
+# Code First Approach
 
-The **code-first** approach, as mentioned in previous slides, is perfect for **domain-driven** applications.
+The **code-first** approach is used for **domain-driven** applications.
 
-When using it, **entity classes** are created first, then the **database** is filled based on the classes.
+When using it **entity classes** are created first then the **database** is filled based on the classes.
 
 This approach lets the **business logic** drive the application, instead of the **database**.
 
@@ -182,8 +172,8 @@ The following picture illustrates how the **code-first** approach works:
 
 [/slide]
 
-[slide]
 
+[slide hideTitle]
 # POJO + XML
 
 One way to use the **code-first** approach is to combine **POJO** (**Plain Old Java Objects**) with **XML**.
@@ -215,8 +205,8 @@ The following code is an example of a **POJO + XML** combination:
 
 [/slide]
 
-[slide]
 
+[slide hideTitle]
 # POJO Mapped to DB Tables
 
 There is an easier way to implement the **code-first** method than combining **POJO** and **XML**.

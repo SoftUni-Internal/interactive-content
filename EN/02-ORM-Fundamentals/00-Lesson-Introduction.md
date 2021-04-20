@@ -1,26 +1,19 @@
-[slide]
-
 # Lesson Introduction
 
-[vimeo-video]
-[stream language="EN" videoId="" default /]
-[stream language="RO" videoId="" /]
-[/video-vimeo]
+[slide hideTitle]
 
-## Lesson content:
+# Lesson Content
 
-**Introduction to ORM**
 
-- What the ORM technique is
+## In this lesson, you will learn:
 
-- How it fits in the application architecture
+**1. ORM**
+  - Definition
+  - ORM Techniques
+  - Operations using ORM
 
-- How to perform operations with ORM
-
-**ORM Advantages**
-
-- Where ORMs excel
-
-- Where ORMs fall behind
+**2. ORM Advantages**
+  - Where ORM excels
+  - Where ORM falls behind
 
 [/slide]
