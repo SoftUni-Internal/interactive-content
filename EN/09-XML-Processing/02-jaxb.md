@@ -1,14 +1,15 @@
-[slide]
 # JAXB
 
-**JAXB** is an API technology that provides an efficient way of mapping between XML and Java code with a minimal amount of effort.
+[slide hideTitle]
+# JAXB Definition
 
-It processes the XML schema into a set of **Java classes** or vice-versa.
+**JAXB** is an API technology that provides an efficient way of mapping between XML and Java code.
 
-To add JAXB to a project, append the below dependencies into your **pom.xml** file.
+It processes the XML schema into a set of **Java object** and vice-versa.
 
+To add JAXB to a project:
 
-```html
+```java
 <dependency>
     <groupId>javax.xml.bind</groupId>
     <artifactId>jaxb-api</artifactId>
@@ -25,16 +26,15 @@ To add JAXB to a project, append the below dependencies into your **pom.xml** fi
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # JAXB Basics
 To start using JAXB it is important to understand the meaning of **marshalling** and **unmarshalling**. 
 
 - **Marshalling** - the process of converting a Java Object to XML.
 - **Unmarshalling** - converting XML to a Java Object.
 
-When you are converting a Java object to XML you need to add certain annotations that serve as instructions for its creation.
+When you are converting a Java object to XML, you need to add certain annotations that serve as instructions for its creation.
 
-**AnimalDto.java**
 ```java
 @XmlRootElement(name = "animal")
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -46,17 +46,15 @@ public class AnimalDto implements Serializable {
     private String breed;
 }
 ```
-In the above example ``XmlRootElement(name = "animal")`` is an annotation that sets the root element in the XML and gives it a name of **animal**.
-
-Next, we will look into some of the annotations you can use and what they do.
+In the above example, `XmlRootElement(name = "animal")` is an annotation that sets the root element in the XML and gives it the name **animal**.
 
 [/slide]
 
 [slide]
 # JAXB Annotations
 
-- ``@XmlRootElement`` - defines the XML root object.
-- ``@XmlAccessorType`` - defines the fields and properties that the JAXB engine will use for binding. Possible values:
+- `@XmlRootElement` - defines the XML root object.
+- `@XmlAccessorType` - defines the fields and properties that the JAXB engine will use for binding. The possible values are:
   - XmlAccessType.**FIELD**
   - XmlAccessType.**PROPERTY**
   - XmlAccessType.**PUBLIC_MEMBER**
@@ -64,7 +62,7 @@ Next, we will look into some of the annotations you can use and what they do.
 - ``@XmlAttribute`` - marks the field as an attribute.
 - ``@XmlElement`` - marks the field as an element.
 - ``@XmlElementWrapper(name = "insert_name_here")`` - wraps an array of objects and gives a name of your choosing to the wrapper.
-- ``@XmlTransient`` - a field annotated with **@XmlTransient** will not be mapped.
+- ``@XmlTransient`` - the annotated field will not be mapped.
 
 
 ## @XmlRootElement
@@ -82,7 +80,7 @@ public class Cat implements Serializable {
 
 When converted to XML the above will convert to:
 
-```html
+```java
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cat>
     //...
@@ -94,11 +92,12 @@ When converted to XML the above will convert to:
 
 This allows you to decide which type of data is exported when JAXB converts the class to XML.
 
-- ``@XmlAccessType.FIELD`` - Binds every non-static, non-transient field automatically for export. The only excluded fields would be those annotated with ``@XmlTransient``.
-- ``@XmlAccessType.PROPERTY`` - Automatically binds any property (getter / setter pair ) for export to XML unless you use ``@XmlTransient`` on it.
-- ``@XmlAccessType.PUBLIC_MEMBER`` -  Every public class member (field or property) will be bound for export.
-- ``@XmlAccessType.NONE`` - No fields or properties will be exported to XML unless you specifically annotate them.
+- `@XmlAccessType.FIELD` - Binds every non-static, non-transient field automatically for export. The excluded fields would be those, annotated with `@XmlTransient`
+- `@XmlAccessType.PROPERTY` - Automatically binds any property (getter / setter pair) for export unless `@XmlTransient` is used on it
+- `@XmlAccessType.PUBLIC_MEMBER` -  Every public class member (field or property) will be bound for export
+- `@XmlAccessType.NONE` - No fields or properties will be exported to XML unless you specifically annotate them
 
+The following Java code:
 
 ```java
 @XmlRootElement(name = "cat")
@@ -109,7 +108,7 @@ public class Cat implements Serializable {
 }
 ```
 
-Results in:
+results in:
 
 ```html
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -124,10 +123,13 @@ The default value of this annotation is **PUBLIC_MEMBER**.
 ## @XmlAttribute
 **Scope:** Field, Property
 
-This will mark the field or property you annotate as an XML attribute.
+This will mark the field or property as an XML attribute.
+
+The following Java code:
 
 ```java
 @XmlRootElement(name = "cat")
+@XmlAccessType(XmlAccessType.FIELD)
 public class Cat implements Serializable {
     @XmlAttribute
     private Integer id;
@@ -136,9 +138,9 @@ public class Cat implements Serializable {
 }
 ```
 
-Result:
+results in:
 
-```html
+```java
 <?xml version="1.0" encoding="UTF-8"?>
 <cat id="1">
    <name>Kitty</name>
@@ -149,7 +151,9 @@ Result:
 ## @XmlElement
 **Scope:** Field, Property
 
-Maps a property or a field to an XML element. Its name will be derived from the property name or you can set it with ``name=""``.
+Maps a property or a field to an XML element. Its name will be derived from the property name or you can set it with `name=""`.
+
+The following Java code:
 
 ```java
 @XmlRootElement(name = "cat")
@@ -159,13 +163,14 @@ public class Cat implements Serializable {
 
     @XmlElement
     private String name;
+    
     private String breed;
 }
 ```
 
-Result:
+results in:
 
-```html
+```java
 <?xml version="1.0" encoding="UTF-8"?>
 <cat>
    <catId>1</catId>
@@ -173,11 +178,17 @@ Result:
 </cat>
 ```
 
-Notice how **id** is exported as **catId** as it was given this name explicitly, while the **name** field remained the same. The **breed** field does not appear at all in the XML as it is a private field. It was not annotated with ``@XmlElement``, we also did not annotate the class with ``@XmlAccessType(XmlAccessType.FIELD)`` so **breed** is ignored. 
+Notice how **id** is exported as **catId** as it was given this name explicitly, while the **name** field remained the same.
+
+The **breed** field does not appear in the XML file as it is a private field.
+
+It was not annotated with `@XmlElement`.
+
+We also did not annotate the class with `@XmlAccessType(XmlAccessType.FIELD)` so **breed** is ignored. 
 
 ## @XmlElementWrapper
 
-Wraps an array of objects and gives a name of your choosing to the wrapper.
+Wraps an array of objects and is given a custom name to the wrapper.
 
 
 ```java
@@ -186,12 +197,12 @@ Wraps an array of objects and gives a name of your choosing to the wrapper.
 public class Vehicle implements Serializable {
     @XmlElementWrapper(name = "cars")
     @XmlElement(name = "car")
-    private List < String > cars;
+    private List<String> cars;
 }
 ```
 Result:
 
-```html
+```java
 <?xml version="1.0" encoding="UTF-8"?>
 <vehicle>
     <cars>
@@ -202,7 +213,7 @@ Result:
 </vehicle>
 ```
 
-You can see that the List of cars was given the name of **cars** but it could have been any name of your choosing.
+You can see that the list of cars was given the name of **cars** but it could have been any name of your choosing.
 
 
 ## @XmlTransient
@@ -229,29 +240,26 @@ Result:
 </cat>
 ```
 
-Even though the class is annotated with`` @XmlAccessorType(XmlAccessType.FIELD)``, the **name** field was not exported as it has been marked with ``@XmlTransient``.
+Even though the class is annotated with `@XmlAccessorType(XmlAccessType.FIELD)`, the **name** field was not exported as it has been marked with `@XmlTransient`.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # JAXB Initialization
 
-**XMLParser.java**
 ```java
-this.jaxbContext = JAXBContext.newInstance(object.getClass());
+JAXBContext jaxbContext = JAXBContext.newInstance(object.getClass());
 ```
 
-The **JAXBContext** object is used for XML manipulations. It provides an abstraction for managing XML/Java binding information.
+The **JAXBContext** object is used for **XML manipulations**. It provides an abstraction for managing XML/Java binding information.
 
-``JAXBContext.newInstance(object.getClass())`` creates an instance of JAXBContext and ``object.getClass()`` is the class that you want to export or import, for example User, Address, Employee.
+`JAXBContext.newInstance(object.getClass())` creates an instance of JAXBContext and `object.getClass()` is the class that you want to export or import, for example User, Address, Employee.
 
 [/slide]
 
-[slide]
-# Export Single Object to XML – Example
+[slide hideTitle]
+# Export Single Object to XML – 1st Example
 
-
-Imagine you have a class called **User.java** :
 ```java
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -267,33 +275,28 @@ public class User {
 }
 ```
 
-Now in **XMLParser.java** we will export that class to XML by **marshalling** it. Remember, to **marshal** an object using JAXB simply means converting a Java object to XML.
+Now in the **XMLParser.java** file we will export that class to XML by **marshalling** it. Remember, **marshalling** an object using JAXB means to convert a Java object to XML.
 
-
-**XMLParser.Java**:
 
 ```java
-JAXBContext context = JAXBContext.newInstance(User.class);
-Marshaller marshaller = context.createMarshaller();
-marshaller.marshal(user, new File("users.xml"));
+JAXBContext context = JAXBContext.newInstance(User.class);  // Setting up a new instance of JAXBContext to with with the User class
+Marshaller marshaller = context.createMarshaller();         // Creating a marshaller for the context
+marshaller.marshal(user, new File("users.xml"));            // Exporting the User object to an XML file with the name users.xml
 ```
 
-We are setting up a new instance of **JAXBContext** to work with the **User** class. Then we are creating a **marshaller** from the context. Finally, we are exporting the user object to an xml file with the name **users.xml**.
-
-Result:
-```html
+**users.xml**
+```java
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <user>
     <name>New User</name>
     <age>18</age>
 </user>
 ```
-(We are assuming that an object user of the class User was initialized with name = "New User" and age = 18.)
-
+That values, inside the **name** and **age** tags, are the values from the User object.
 [/slide]
 
-[slide]
-# Export Single Object to XML – Example 2
+[slide hideTitle]
+# Export Single Object to XML – 2nd Example
 
 Here is one more scenario where you will see how to export to XML in a slightly different way while also formatting the file to be easily readable.
 
@@ -312,43 +315,23 @@ public class StudentDto implements Serializable {
 }
 ```
 
-**XMLParser.java**
 
 ```java
 JAXBContext context = JAXBContext.newInstance(UserDto.class);
 Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
-jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-OutputStream outputStream = new FileOutputStream(student.xml);
+
+jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);  // Setting the output format (for easier reading). Similar to setPrettyPrinting() for JSON
+
+OutputStream outputStream = new FileOutputStream(student.xml);       // Setting the output file
 BufferedWriter bufferedWriter = 
     new BufferedWriter(new OutputStreamWriter(outputStream));
-jaxbMarshaller.marshal(studentDto, bufferedWriter);
+    
+jaxbMarshaller.marshal(studentDto, bufferedWriter);                  // Exporting the information from the studentDto
 ```
 
-Here we are assuming we have received a **studentDto** object that can be a projection from a database call with **name = "Alex"** and **mobilePhoneNumber = "+971 123 123"**.
-
-We are converting it to XML with JAXB in a slightly different way. You already know what the first two lines do. Let us look at the rest of the code.
-
-``` java
-jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-```
-First, we are setting the output format, so the exported file will be formatted in a way that is easier to read by humans. This is similar to **setPrettyPrinting** in JSON parsing. If you do not do this, all the XML data will be on one line.
+The result from the **marshal**:
 
 ```java
-OutputStream outputStream = new FileOutputStream(fileName);
-```
-Then, we are creating a **FileOutputStream** and set it to output to a file called **student.xml**.
-
-```
-BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream));
-```
-A new buffered writer object is created that takes the **outputStream** we created.
-
-```
-jaxbMarshaller.marshal(studentDto, bufferedWriter);
-```
-Takes the **studentDto** object and bufferedWriter and exports it to XML resulting in:
-
-```html
 <?xml version="1.0" 
 encoding="UTF-8"?>
 <student name="Alex">
@@ -357,16 +340,13 @@ encoding="UTF-8"?>
 
 ```
 
-Notice that **name** is an attribute of the root element as it was annotated with **@XmlAttribute** and **mobilePhoneNumber** was exported as "mobile" because of ``@XmlElement(name = "mobile")``. Sometimes the service that has to work with the XML might need tags and attributes to be in a specific format, so it is convenient to be able to rename them with attributes without having to change your classes.
-
 [/slide]
 
-[slide]
-# Export Multiple Objects to XML
+[slide hideTitle]
+# Exporting Multiple Objects to XML
 
-You can export a list of objects and define the opening and closing tag name for each object with ``@XmlElement`` if it is used on a collection like so:
+You can export a list of objects and define the opening and closing tag name for each object with `@XmlElement` if it is used on a collection like so:
 
-**AddressListDto.java**
 ```java
 @XmlRootElement(name = "addresses")
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -377,7 +357,7 @@ public class AddressesDto {
 }
 ```
 
-Each **addressDto** in the list might look something like this:
+Each **AddressDto** in the list might look something like this:
 
 ```java
 @XmlRootElement(name = "address")
@@ -392,12 +372,12 @@ public class AddressDto implements Serializable {
 }
 ```
 
-After **marshalling** this results in:
+After **marshalling**, this results in:
 
-```html
+```java
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addresses>
-    <address country=“UK">
+    <address country="UK">
         <city>London</city>
     </address>
     <address country="Spain">
@@ -408,10 +388,10 @@ After **marshalling** this results in:
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Import a Single Object from XML
 
-You can also import objects from XML to Java by **unmarshalling** them with JAXB. To facilitate this process, you need a class that repsresents this object.
+You can also import objects from an XML file to Java by **unmarshalling** them with JAXB. To facilitate this process, you need a class that repsresents this object.
 
 **AddressDto.java**
 ```java
@@ -430,30 +410,17 @@ public class AddressDto implements Serializable {
 **XMLParser.java**
 ```java
 JAXBContext jaxbContext = JAXBContext.newInstance(AddressDto.class);
-InputStream inputStream = getClass().getResourceAsStream("/files/input/xml/address.xml");
-BufferedReader bfr = new BufferedReader(new InputStreamReader(inputStream));
-Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
+
+InputStream inputStream = getClass().getResourceAsStream("/files/input/xml/address.xml"); // Creating an input stream for the XML file
+
+BufferedReader bfr = new BufferedReader(new InputStreamReader(inputStream));              // Initializing a buffered reader with the inputStream:
+
+Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();                             // Unmarshaller created
+
 AddressDto addressDto = (AddressDto) unmarshaller.unmarshal(bfr);
 ```
-
-We are creating an input stream from the XML file using ``getClass().getResourceAsStream("/files/input/xml/address.xml")``:
-```java
-InputStream inputStream = getClass().getResourceAsStream("/files/input/xml/address.xml");
-```
-
-Then a Buffered Reader is initialized with the inputStream:
-
-```java
-BufferedReader bfr = new BufferedReader(new InputStreamReader(inputStream));
-```
-
-An unmarshaller is created with ``jaxbContext.createUnmarshaller();``
 
 Finally, the **addressDto** object is initialized from the XML file. You need to cast it to the appropriate type because the compiler is not aware of the type in the XML file and will not allow the program to compile without that.
-
-```java
-AddressDto addressDto = (AddressDto) unmarshaller.unmarshal(bfr);
-```
 
 If the format in the XML file matches the class you have previously created, a new object will be created and its properties will be set accordingly.
 
@@ -462,7 +429,7 @@ If the format in the XML file matches the class you have previously created, a n
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Import Multiple Objects to XML
 
 Similarly to how we exported a list of objects, we can also import from XML to Java.
@@ -490,7 +457,7 @@ public class AddressesDto {
 }
 ```
 
-Each address is  represented as:
+Each address is represented as:
 
 **AddressDto.java**
 ```java
@@ -511,7 +478,7 @@ The source XML that matches the above class representation format is:
 ```html
 <?xml version="1.0" encoding="UTF-8"?>
 <addresses>
-    <address country=“UK">
+    <address country="UK">
         <city>London</city>
     </address>
     <address country="Spain">

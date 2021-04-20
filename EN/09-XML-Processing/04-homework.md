@@ -1,6 +1,7 @@
-# Homework
-[slide]
-# Ex.Problem: Seed the Database
+# Homework: Car Dealer Database
+
+[slide hideTitle]
+# 1. Seed the Database
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/09-XML-Processing-Homework.zip) **for this task.** 
 
@@ -8,21 +9,30 @@ The models from the project skeleton will be used for the **Car Dealer Database*
 
 **Import** the data from the provided files (**users.xml**, **products.xml**, **categories.xml**).
 
-Import the **users** first. When importing the products, randomly **select the buyer** and **the** **seller** from the existing users. Leave out some **products** that have **not been sold** (i.e. buyer is null).
+Import the **users** first.
+
+When importing the products, randomly **select the buyer** and **the seller** from the existing users.
+
+Leave out some **products** that have **not been sold** (i.e. buyer is null).
 
 Randomly **generate categories** for each product from the existing categories.
 [/slide]
 
-[slide]
-# Ex.Problem: Query and Export Data
+[slide hideTitle]
+# 2. Query and Export Data
 
-Write the queries that are described below and **export** the returned data to the specified **format**. 
+Create the queries that are described below and **export** the returned data to the specified **format**. 
 
 ## Query 1 – Products in Range
 
-Get all products in a specified **price range** (e.g. 500 to 1000) which have **no buyer**. Order them by price (from lowest to highest). Select only the **product name**, **the** **price,** and **the** **full name** **of the seller**. Export the result to XML.
+Get all products in a specified **price range** (e.g. 500 to 1000), which have **not been bought**.
 
-**products-in-range.xml**
+Order them by price (from lowest to highest).
+
+Select only the **product name**, the **price**, and the **full name** of the **seller**.
+
+Export the result to an XML file.
+
 ```html
 <?xml version="1.0" encoding="utf-8"?>
 <products>
@@ -36,7 +46,13 @@ Get all products in a specified **price range** (e.g. 500 to 1000) which have **
 
 ## Query 2 – Successfully Sold Products
 
-Get all users, who have **at least 1 item sold** with a **buyer**. Order them by **last name**, then by **first name**. Select the person's **first** and **last name**. For each of the **products sold** (products with buyers), select the product's **name**, **price** and the buyer's **first** and **last name**.
+Get all users, who have **sold at least 1 item**.
+
+Order them by their **last name**, then by their **first name**.
+
+Select the **first** and **last name** of a person.
+
+For each of the **products sold** (products with buyers), select the **name** and the **price** of the product as well as the **first** and **last name** of the buyer.
 
 **users-sold-products.xml**
 ```html
@@ -65,9 +81,12 @@ Get all users, who have **at least 1 item sold** with a **buyer**. Order them by
 
 ## Query 3 – Categories by Products Count
 
-Get **all** **categories**. Order them by the **number of products** in that category (a product can be in many categories). For each category select its **name**, the **number of products**, the **average price of those products,** and the **total revenue** (total price sum) of those products (regardless if they have a buyer or not).
+Get **all categories**.
 
-**categories-by-products.xml**
+Order them by the **number of products** in that category.
+
+For each category, select the **name**, the **number of products**, the **average price of those products** and the **total revenue** of those products (regardless if they have a buyer or not).
+
 ```html
 <?xml version="1.0" encoding="utf-8"?>
 <categories>
@@ -87,11 +106,14 @@ Get **all** **categories**. Order them by the **number of products** in that cat
 
 ## Query 4 – Users and Products
 
-Get all users, who have **at least 1 product sold**. Order them by the **number of products** **sold** (from highest to lowest), then by **last name** (ascending). Select only their **first** and **last name**, **age** and for each product - **name** and **price**.
+Get all users, who have **sold at least 1 product**.
 
-Export the results to **XML**. Follow the format below to better understand how to structure your data.
+Order them by the **number of products sold** (from highest to lowest), then by their **last name** (ascending).
 
-**users-and-products.xml**
+Select only their **first** and **last name**, **age** and for each product - the **name** and the **price**.
+
+Export the results to an **XML** file.
+
 ```html
 <?xml version="1.0" encoding="utf-8"?>
 <users count="35">
@@ -117,27 +139,37 @@ Export the results to **XML**. Follow the format below to better understand how 
 
 [/slide]
 
-[slide]
-# Ex.Problem: Car Dealer Import Data
+[slide hideTitle]
+# 3. Import Data
 
 Import data from the provided files (**suppliers.xml, parts.xml, cars.xml, customers.xml**).
 
-First import the **suppliers**. When importing the **parts** set to each part a **random supplier** from the already imported suppliers. Then, when importing the cars add **between 10 and 20 random parts** to each car. Then import **all customers**. Finally, import the **sales records** by **randomly** selecting a **car,** a **customer** and the amount of **discount to be applied** (discounts can be 0%, 5%, 10%, 15%, 20%, 30%, 40%, or 50%).
+Import the **suppliers**.
 
+When importing the **parts**, set a **random supplier** to each part from the already imported suppliers.
+
+Then, when importing the cars, add **between 10 and 20 random parts** to each car.
+
+Next, import **all customers**.
+
+Finally, import the **sales records** by **randomly** selecting a **car,** a **customer** and the amount of **discount to be applied** (discounts can be 0%, 5%, 10%, 15%, 20%, 30%, 40%, or 50%).
 
 
 [/slide]
 
-[slide]
-# Ex.Problem: Car Dealer Query and Export Data
+[slide hideTitle]
+# 4. Queries and Export Data
 
-Write the queries described below and **export** the returned data to the specified **format**.
+Create the queries described below and **export** the returned data to the specified **format**.
 
 ## Query 1 – Ordered Customers
 
-Get all **customers** ordered by their **birthdate in ascending order**. If two customers are born on the same date, **first print those, who are not young drivers** (e.g. print experienced drivers first). **Export** the list of customers **to XML** in the format provided below.
+Get all **customers** ordered by their **birth date** in **ascending order**.
 
-**ordered-customers.xml**
+If two customers are born on the same date, **first print those, who are not young drivers** (e.g. print experienced drivers first).
+
+**Export** the list of customers **to XML** in the format provided below.
+
 ```html
 <?xml version="1.0" encoding="utf-8"?>
 <customers>
@@ -145,13 +177,13 @@ Get all **customers** ordered by their **birthdate in ascending order**. If two 
       <id>29</id>
       <name>Louann Holzworth</name>
       <birth-date>1960-10-01T00:00:00</birth-date>
-      <is-youn-driver>false</is-young-driver>
+      <is-young-driver>false</is-young-driver>
   </customer>
   <customer>
       <id>28</id>
       <name>Donnetta Soliz</name>
       <birth-date>1963-10-01T00:00:00</birth-date>
-      <is-youn-driver>false</is-young-driver>
+      <is-young-driver>false</is-young-driver>
   </customer>
   ...
 </customers>
@@ -159,9 +191,9 @@ Get all **customers** ordered by their **birthdate in ascending order**. If two 
 
 ## Query 2 – Cars from Make Toyota
 
-Get all **cars** from manufactured by **Toyota** and **order them by model alphabetically** and by **travelled distance in descending order**. **Export** the list of **cars to XML** in the format provided below.
+Get all **cars** manufactured by **Toyota** and **order them by model alphabetically**, then by **travelled distance in descending order**.
 
-**toyota-cars.xml**
+**Export** the list of **cars to XML** in the format provided below.
 
 ```html
 <?xml version="1.0" encoding="utf-8"?>
@@ -176,7 +208,6 @@ Get all **cars** from manufactured by **Toyota** and **order them by model alpha
 
 Get all **suppliers** that **do not import parts from abroad**. Get their **id**, **name,** and **the number of parts they can offer to supply**. **Export** the list of suppliers **to XML** in the format provided below.
 
-**local-suppliers.xml**
 ```html
 <?xml version="1.0" encoding="utf-8"?>
 <suppliers>
@@ -188,9 +219,13 @@ Get all **suppliers** that **do not import parts from abroad**. Get their **id**
 
 ## Query 4 – Cars with Their List of Parts
 
-Get all **cars along with their list of parts**. For the **car** get only **make, model,** and **travelled distance** and for the **parts** get only **name** and **price**. **Export** the list of **cars and their parts to XML** in the format provided below.
+Get all **cars along with their list of parts**.
 
-**cars-and-parts.xml**
+For the **car** get only **make, model,** and **travelled distance** and for the **parts** get only **name** and **price**.
+
+**Export** the list of **cars and their parts to XML** in the format provided below.
+
+
 ```html
 <?xml version="1.0" encoding="utf-8"?>
 <cars>
@@ -214,9 +249,12 @@ Get all **cars along with their list of parts**. For the **car** get only **make
 
 ## Query 5 – Total Sales by Customer
 
-Get all **customers** that have bought **at least 1 car** and get their **names**, **count of cars bought** and **total money spent** on cars. **Order** the result **by total money spent in descending order** and then by **the **total amount of cars bought ****again in **descending** order. **Export** the list of customers **to** **XML** in the format provided below.
+Get all **customers** that have bought **at least 1 car** and get their **names**, **count of cars bought** and **total money spent** on cars.
 
-**customers-total-sales.xml**
+**Order** the result **by the total money spent** in descending order and then by the **total amount of cars bought** again in **descending** order.
+
+**Export** the list of customers to **XML** in the format provided below.
+
 ```html
 <?xml version="1.0" encoding="utf-8"?>
 <customers>
@@ -229,9 +267,9 @@ Get all **customers** that have bought **at least 1 car** and get their **names*
 
 ## Query 6 – Sales with Applied Discount
 
-Get all **sales** with information about the **car**, the **customer,** and the **price** of the sale **with and without discount**. **Export** the list of sales **to XML** in the format provided below.
+Get all **sales** with information about the **car**, the **customer** and the **price** of the sale **with or without discount**.
 
-**sales-discounts.xml**
+**Export** the list of sales **to XML** in the format provided below.
 
 ```html
 <?xml version="1.0" encoding="utf-8"?>

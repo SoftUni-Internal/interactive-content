@@ -1,10 +1,15 @@
-[slide]
 # Lesson Introduction
+[slide hideTitle]
+# Lesson Content
+
+
+## In this lesson you will learn:
 
 **1. XML Processing** 
-- Exporting and importing data in XML format (Extensible Markup Language).
+- XML Definition
+- Exporting and importing Data in the XML format
 
 **2. JAXB** 
-- A tehnology used for parsing XML to Java Objects.
+- Parsing XML files to Java Objects and vice versa
 
 [/slide]
