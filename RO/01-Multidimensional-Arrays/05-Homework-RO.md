@@ -22,10 +22,40 @@ Ambele moduri sunt descrise mai jos:
 
 [image assetsSrc="Fill-the-Matrix.png" /]
 
-## Indicii
+[hints]
+[hint]
+Întocmiți o metodă diferită pentru fiecare model:
 
-- Întocmiți o metodă diferită pentru fiecare model
-- Întocmiți o metodă pentru printarea matricei
+```java
+private static void fillPatternA(
+  int size, 
+  int[][] matrix, 
+  int startNumber) {
+    // use two nested for-loops
+}
+
+private static void fillPatternB(
+  int size, 
+  int[][] matrix, 
+  int startNumber) {
+    // ...
+}
+```
+[/hint] 
+[hint]
+Întocmiți o metodă pentru printarea matricei:
+
+```java
+public static void printMatrix(
+  int[][] matrix, 
+  int rows, 
+  int cols) {
+  // ...
+}
+```
+[/hint] 
+[/hints] 
+
 
 ## Exemplu
 | **Intrare** | **Ieșire** |

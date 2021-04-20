@@ -20,10 +20,40 @@ Write two **methods** that **fill** a **matrix** of size  **N x N** in **two** d
 
 [image assetsSrc="Fill-the-Matrix.png" /]
 
-## Hints
+[hints]
+[hint]
+Make a different method for each pattern:
 
-- Make a different method for each pattern
-- Make a method for printing the matrix
+```java
+private static void fillPatternA(
+  int size, 
+  int[][] matrix, 
+  int startNumber) {
+    // use two nested for-loops
+}
+
+private static void fillPatternB(
+  int size, 
+  int[][] matrix, 
+  int startNumber) {
+    // ...
+}
+```
+[/hint] 
+[hint]
+Make a method for printing the matrix:
+
+```java
+public static void printMatrix(
+  int[][] matrix, 
+  int rows, 
+  int cols) {
+  // ...
+}
+```
+[/hint] 
+[/hints] 
+
 
 ## Examples
 | **Input** | **Output** |
