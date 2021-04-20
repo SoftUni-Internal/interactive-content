@@ -104,10 +104,10 @@ Pentru fiecare condiție, modificați datele și/sau tipăriți ieșirea corespu
 
 | **Intrare** | **Ieșire** |
 | --- | --- |
-| cat 10\|potion 30\|orc 10\|chest 10\|snake 25\|chest 110 | You have slayed a cat. |
+| cat 10\|potion 30\|ghoul 10\|chest 10\|snake 25\|chest 110 | You have slayed a cat. |
 |  | 10 health points restored. |
 |  | Current health: 100 hp. |
-|  | You have slayed an orc. |
+|  | You have slayed a ghoul. |
 |  | You found 10 bitcoins. |
 |  | You have slayed a snake. |
 |  | You found 110 bitcoins. |
@@ -136,13 +136,13 @@ Best room: 6
 [/test]
 [test open]
 [input]
-cat 10\|potion 30\|orc 10\|chest 10\|snake 25\|chest 110
+cat 10\|potion 30\|ghoul 10\|chest 10\|snake 25\|chest 110
 [/input]
 [output]
 You have slayed a cat.
 10 health points restored.
 Current health: 100 hp.
-You have slayed an orc.
+You have slayed a ghoul.
 You found 10 bitcoins.
 You have slayed a snake.
 You found 110 bitcoins.
@@ -259,7 +259,7 @@ Health: 100
 a 10\|b 20\|potion 10\|c 30\|chest 10\|chest 1000\|d 50\|chest 1000
 [/input]
 [output]
-You have slayed an a.
+You have slayed a a.
 You have slayed a b.
 10 health points restored.
 Current health: 80 hp.
@@ -278,7 +278,7 @@ cat 10\|potion 30\|orc 10\|chest 10\|snake 25\|chest 110\|chest 100\|potion 1000
 You have slayed a cat.
 10 health points restored.
 Current health: 100 hp.
-You have slayed an orc.
+You have slayed a orc.
 You found 10 bitcoins.
 You have slayed a snake.
 You found 110 bitcoins.
