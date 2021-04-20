@@ -107,21 +107,22 @@ Create an instance of the class with the following values:
 [image assetsSrc="streams-files-directories-example(7).png" /]
 
 
-## Hints
-
--	Create a class called Cube, which implements the Serializable interface:
+[hints]
+[hint]
+Create a class called Cube, which implements the Serializable interface:
 
 ```java
 class Cube implements Serializable {
-      String color;
-      double width;
-      double height;
-      double depth;
-        
+  String color;
+  double width;
+  double height;
+  double depth;
+      
 }
 ```
-
-- Create a new instance of the Cube class and set its properties:
+[/hint] 
+[hint]
+Create a new instance of the Cube class and set its properties:
 
 ```java
 Cube cube = new Cube();
@@ -129,16 +130,21 @@ cube.color = "green";
 cube.width = 15.3d;
 cube.height = 12.4d;
 cube.depth = 3d;
-
 ```
-
-- Use ObjectOutputStream to serialize the object:
+[/hint] 
+[hint]
+Use ObjectOutputStream to serialize the object:
 
 ```java
-try(ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(path)) ) {
-        oos.writeObject(cube);
+try(ObjectOutputStream oos = 
+  new ObjectOutputStream(
+    new FileOutputStream(path)) ) {
+      oos.writeObject(cube);
 } catch (IOException e) {
-  e.printStackTrace();
+      e.printStackTrace();
 }
 ```
+[/hint] 
+[/hints] 
+
 [/slide]

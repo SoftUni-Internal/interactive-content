@@ -295,19 +295,38 @@ Submit only the **output** of your program, **not the code**.
 | Two households, both alike in dignity. | Two households both alike in dignity |
 | In fair Verona, where we lay our scene. | In fair Verona where we lay our scene |
 
-## Hints
-
-- Create a FileInputStream to read the file
-- Create a FileOutputStream to write to a file
-- Create a list, containing all characters that you need to skip and check if the current char is contained in it
-
+[hints]
+[hint]
+Create a `FileInputStream` to read the file:
 
 ```java
-if (!punctuation.contains((char) oneByte)) {
-    out.write(oneByte);
-}
-
+InputStream inputStream = 
+  new FileInputStream(inputPath);
 ```
+[/hint] 
+[hint]
+Create a `FileOutputStream` to write to a file:
+
+```java
+OutputStream outputStream = 
+  new FileOutputStream(outputPath);
+```
+[/hint] 
+[hint]
+Create a **list**, containing all characters that you need to skip and **check** if the current char is **contained** in it:
+
+```java
+List<Character> symbols = new ArrayList<>();
+
+// ...
+
+if (!symbols.contains((char)oneByte)) {
+  outputStream.write(oneByte);
+}
+```
+[/hint] 
+[/hints] 
+
 
 [/task-description]
 [code-io /]

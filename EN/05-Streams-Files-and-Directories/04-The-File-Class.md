@@ -62,8 +62,19 @@ input.txt: [size in bytes]
 output.txt: [size in bytes]
 
 
-## Hints
-- Use the **File** class and its method `listFiles()`
+[hints]
+[hint]
+Use the **File** class and its method `listFiles()`:
+
+```java
+import java.io.File;
+
+// ...
+
+File[] files = file.listFiles();
+```
+[/hint] 
+[/hints] 
 
 
 [/task-description]

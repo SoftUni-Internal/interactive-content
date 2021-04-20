@@ -75,10 +75,24 @@ Scrieți un program care citește un fișier de tip text (**input.txt** din Reso
 
 Utilizați **BufferedReader** în combinație cu **FileReader**.
 
-## Sugestii
+[hints]
+[hint]
+Puteți modifica soluția la problema anterioară.
+[/hint] 
+[hint]
+Utilizați un tip care nu se va revărsa ca **long** sau **BigInteger**
 
-- Puteți modifica soluția la problema anterioară
-- Utilizați un tip care nu se va revărsa ca **long** sau **BigInteger**
+```java
+long sum = 0;
+
+// or
+
+import java.math.BigInteger;
+// ...
+BigInteger sum = new BigInteger("0");
+```
+[/hint] 
+[/hints] 
 
 ## Instrucțiuni
 

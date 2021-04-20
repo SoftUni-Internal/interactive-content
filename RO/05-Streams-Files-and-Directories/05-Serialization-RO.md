@@ -104,21 +104,22 @@ Creați o instanță a clasei cu următoarele valori:
 [image assetsSrc="streams-files-directories-example(7).png" /]
 
 
-## Sugestii
-
--	Creați o clasă numită Cube, care ar trebui să implementeze interfața serializabilă:
+[hints]
+[hint]
+Creați o clasă numită Cube, care ar trebui să implementeze interfața serializabilă:
 
 ```java
 class Cube implements Serializable {
-      String color;
-      double width;
-      double height;
-      double depth;
+  String color;
+  double width;
+  double height;
+  double depth;
         
 }
 ```
-
-- Creați o nouă instanță a clasei Cube și setați proprietățile acesteia:
+[/hint] 
+[hint]
+Creați o nouă instanță a clasei Cube și setați proprietățile acesteia:
 
 ```java
 Cube cube = new Cube();
@@ -126,17 +127,21 @@ cube.color = "green";
 cube.width = 15.3d;
 cube.height = 12.4d;
 cube.depth = 3d;
-
 ```
-
-- Utilizați ObjectOutputStream pentru a serializa obiectul
+[/hint] 
+[hint]
+Utilizați ObjectOutputStream pentru a serializa obiectul:
 
 ```java
-try(ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(path)) ) {
-        oos.writeObject(cube);
+try(ObjectOutputStream oos = 
+  new ObjectOutputStream(
+    new FileOutputStream(path)) ) {
+      oos.writeObject(cube);
 } catch (IOException e) {
-  e.printStackTrace();
+      e.printStackTrace();
 }
 ```
+[/hint] 
+[/hints] 
 
 [/slide]

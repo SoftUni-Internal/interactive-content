@@ -59,8 +59,19 @@ input.txt: [size in bytes]
 output.txt: [size in bytes]
 
 
-## Sugestii
-- Utilizați clasa **File** și metoda sa `listFiles()`
+[hints]
+[hint]
+Utilizați clasa **File** și metoda sa `listFiles()`:
+
+```java
+import java.io.File;
+
+// ...
+
+File[] files = file.listFiles();
+```
+[/hint] 
+[/hints] 
 
 
 [/task-description]

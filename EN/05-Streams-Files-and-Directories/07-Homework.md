@@ -77,10 +77,24 @@ Create a program that reads the **input.txt** from the resources folder you down
 
 Use **BufferedReader** in combination with **FileReader**.
 
-## Hints
+[hints]
+[hint]
+You can modify your solution to the previous problem.
+[/hint]  
+[hint]
+Use a type that will not overflow like **long** or **BigInteger**:
 
-- You can modify your solution to the previous problem
-- Use a type that will not overflow like **long** or **BigInteger**
+```java
+long sum = 0;
+
+// sau
+
+import java.math.BigInteger;
+// ...
+BigInteger sum = new BigInteger("0");
+```
+[/hint] 
+[/hints] 
 
 ## Guidelines
 

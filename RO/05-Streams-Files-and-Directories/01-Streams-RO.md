@@ -291,18 +291,37 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 | Two households, both alike in dignity. | Two households both alike in dignity |
 | In fair Verona, where we lay our scene. | In fair Verona where we lay our scene |
 
-## Sugestii
-
-- Creați un FileInputStream pentru a citi fișierul
-- Creați un FileOutputStream pentru a scrie într-un fișier
-- Creați o listă, care conține toate caracterele pe care trebuie să le ocoliți și verificați dacă caracterul curent este prezent in lista
+[hints]
+[hint]
+Creați un `FileInputStream` pentru a citi fișierul:
 
 ```java
-if (!punctuation.contains((char) oneByte)){
-    out.write(oneByte);
-}
-
+InputStream inputStream = 
+  new FileInputStream(inputPath);
 ```
+[/hint] 
+[hint]
+Creați un `FileOutputStream` pentru a scrie într-un fișier:
+
+```java
+OutputStream outputStream = 
+  new FileOutputStream(outputPath);
+```
+[/hint] 
+[hint]
+Creați o **listă**, care conține toate caracterele pe care trebuie să le ocoliți și **verificați** dacă caracterul curent este **prezent** in lista:
+
+```java
+List<Character> symbols = new ArrayList<>();
+
+// ...
+
+if (!symbols.contains((char)oneByte)) {
+  outputStream.write(oneByte);
+}
+```
+[/hint] 
+[/hints] 
 
 
 [/task-description]
