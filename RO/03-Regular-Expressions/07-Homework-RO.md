@@ -256,11 +256,11 @@ La final **imprimați primii 3 alergători ordonați în funcție de distanța d
 
 [hints]
 [hint]
-Pe a treia linie de intrare avem **Ray**.
+Pe a treia linie de intrare avem **Ray** - `R1@!3a$y4456@`.
 El **nu este** pe listă, deci nu luăm în calcul rezultatul lui.
 [/hint] 
 [hint]
-**Celelalte** sunt **valabile**:
+Celelalte persoane **sunt** pe lista de **participanți**.
 
 ```java
 if (racers.containsKey(name)) {
@@ -271,7 +271,7 @@ if (racers.containsKey(name)) {
 **George** are **55** km în total, **Peter** - **25** și **Tom** - **19**.
 [/hint] 
 [hint]
-Tipărim câștigătorii (**top 3**):
+**Tipărim** **câștigătorii** (persoanele care se află în **top 3**):
 
 ```java
 List<String> winners = new LinkedList<>();

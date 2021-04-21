@@ -257,7 +257,7 @@ In the end, print out the **top 3** racers ordered by the distance they have run
 
 [hints]
 [hint]
-On the third line, we have **Ray**.
+On the third line, we have **Ray** - `R1@!3a$y4456@`.
 He is **not** in the list of participants so we ignore him.
 [/hint] 
 [hint]
