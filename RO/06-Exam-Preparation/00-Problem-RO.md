@@ -73,6 +73,18 @@ Print altele:
 |  |  | 0 4 7 3 6 23 |
 |  |  | Următoarea sumă este 33, deci facem același lucru din nou. La a treia iterație suma este 16, care este un număr par, așa că eliminăm ambele casete și adăugăm valoarea elementelor revendicate. Sumăm elementele până când una dintre cutii devine goală. |
 
+[hints]
+[hint]
+Create an array of integers for storing each lootbox.
+Make sure to convert the input numbers to Integer.
+[/hint] 
+[hint]
+Create a **queue** for the first lootbox, and a **stack** for the second.
+[/hint] 
+[hint]
+Use the `Stack.peek()` method to get the **first** item in the **queue** and the **last** item in the **stack**.
+[/hint] 
+[/hints] 
 
 | **Input** | **Output** |
 | --- | --- |

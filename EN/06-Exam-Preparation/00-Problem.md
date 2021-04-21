@@ -74,6 +74,18 @@ Else print:
 |  |  | 0 4 7 3 6 23 |
 |  |  | The next sum is 33 so we do the same again. On the third iteration the sum is 16 which is an even number, so we remove both of the boxes and we add the value to our claimed items. We keep summing items until one of the boxes becomes empty. |
 
+[hints]
+[hint]
+Create an array of integers for storing each lootbox.
+Make sure to convert the input numbers to Integer.
+[/hint] 
+[hint]
+Create a queue for the first lootbox, and a stack for the second.
+[/hint] 
+[hint]
+Use the `Stack.peek()` method to get the **first** item in the **queue** and the **last** item in the **stack**.
+[/hint] 
+[/hints] 
 
 | **Input** | **Output** |
 | --- | --- |

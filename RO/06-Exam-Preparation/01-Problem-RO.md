@@ -80,6 +80,21 @@ Când jucătorul atinge **punctul de finalizare** sau **numărul de comenzi este
 | right |  | +F+++  +F+++  +f+++ |
 | down |  | La rândul, 3 f ajunge la punctul 'F' și câștigă jocul. |
 
+[hints]
+[hint]
+Iterate over the matrix using a for-loop.
+[/hint] 
+[hint]
+Use a switch-case statement to handle each turn - left, right, up, and down.
+[/hint]
+[hint]
+Implement a method that returns whether the player is in range, and a second one that checks if they are on a trap.
+[/hint] 
+[hint]
+Print the matrix using two nested loops.
+[/hint] 
+[/hints] 
+
 
 | **Input** | **Output** | **Comments** |
 | --- | --- | --- |

@@ -85,7 +85,7 @@ Utilizați un tip care nu se va revărsa ca **long** sau **BigInteger**
 ```java
 long sum = 0;
 
-// or
+// sau
 
 import java.math.BigInteger;
 // ...

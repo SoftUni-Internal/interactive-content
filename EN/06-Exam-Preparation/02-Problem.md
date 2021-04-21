@@ -66,9 +66,9 @@ Finally, print the collected **junk** items, in **alphabetical** order.
 - Allowed memory: 16 MB
 
 
-## Examples
+## Example 1
 
-| Input | Output |
+| **Input** | **Output** |
 | --- | --- |
 | 3 Motes 5 stones 5 Shards | Valanyr obtained! |
 | 6 leathers 255 fragments 7 Shards | fragments: 5 |
@@ -76,6 +76,22 @@ Finally, print the collected **junk** items, in **alphabetical** order.
 | | motes: 3 |
 | | leathers: 6 |
 | | stones: 5 |
+
+[hints]
+[hint]
+Store the key and junk materials in two different data structures.
+[/hint] 
+[hint]
+Read lines of input until the item is obtained.
+[/hint] 
+[hint]
+Split the tokens on each input line and iterate through them.
+[/hint] 
+[/hints] 
+
+## Example 2
+
+| **Input** | **Output** |
 | --- | --- |
 | 123 silver 6 shards 8 shards 5 motes | Dragonwrath obtained! |
 | 9 fangs 75 motes 103 MOTES 8 Shards | shards: 22 |

@@ -80,6 +80,21 @@ When the player reaches the **finish mark** or the **count of commands is reache
 | right |  | +F+++  +F+++  +f+++ |
 | down |  | On turn 3 f reaches the finish 'F' and wins the game. |
 
+[hints]
+[hint]
+Iterate over the matrix using a for-loop.
+[/hint] 
+[hint]
+Use a switch-case statement to handle each turn - left, right, up, and down.
+[/hint]
+[hint]
+Implement a method that returns whether the player is in range, and a second one that checks if they are on a trap.
+[/hint] 
+[hint]
+Print the matrix using two nested loops.
+[/hint] 
+[/hints] 
+
 
 | **Input** | **Output** | **Comments** |
 | --- | --- | --- |

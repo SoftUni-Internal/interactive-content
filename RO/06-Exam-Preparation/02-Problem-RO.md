@@ -57,7 +57,8 @@ Fiecare linie de input este in format "\{**quantity**\} \{**material**\} \{**qua
     - toate datele de ieșire trebuie să fie **cu minuscule**, cu excepția  **primei** litere ale legendary
 
 
-## Exemple
+## Exemplu 1
+
 | **Intrare* | **Ieșire** |
 | --- | --- |
 | 3 Motes 5 stones 5 Shards | Valanyr obtained! | 
@@ -67,7 +68,20 @@ Fiecare linie de input este in format "\{**quantity**\} \{**material**\} \{**qua
 | | leathers: 6 |
 | | stones: 5 |
 
-## Exemple
+[hints]
+[hint]
+Store the key and junk materials in two different data structures.
+[/hint] 
+[hint]
+Read lines of input until the item is obtained.
+[/hint] 
+[hint]
+Split the tokens on each input line and iterate through them.
+[/hint] 
+[/hints] 
+
+## Exemplu 2
+
 | **Intrare* | **Ieșire** |
 | --- | --- |
 | 123 silver 6 shards 8 shards 5 motes | Dragonwrath obtained! | 

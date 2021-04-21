@@ -87,7 +87,7 @@ Use a type that will not overflow like **long** or **BigInteger**:
 ```java
 long sum = 0;
 
-// sau
+// or
 
 import java.math.BigInteger;
 // ...
