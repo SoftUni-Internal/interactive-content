@@ -1,161 +1,162 @@
 [slide hideTitle]
-# Problem: Easter Races Business Logic
+# Problemă: Easter Races Business Logic
 [code-task title="Easter Races Business Logic" timeLimit=5000 taskId="Java-OOP-Advanced-Easter-Races-Business-Logic" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
 [code-upload allowedMemory="30" /]
 
 [task-description]
-# Task 2: Business Logic (150 points)
+# Sarcina 2: Logica afacerii (150 de puncte)
 
-# The Controller Class
+# Clasa controller
 
-The business logic should be concentrated around several **commands**. 
+Logica afacerii ar trebui să conțină mai multe **comenzi**.
 
-You are given interfaces, which you have to implement in the correct classes.
+Vi se pun la dispoziție interfețe de implementat în clasele corecte.
 
-**Note: The Controller class SHOULD NOT handle exceptions!**
+**Notă: Clasa Controller NU TREBUIE să gestioneze excepții.**
 
-**The tests are designed to expect exceptions, not messages!**
+**Testele sunt concepute pentru a se aștepta la excepții, nu la mesaje.**
 
-The first interface is **Controller**.
+Prima interfață se numește **Controller**.
 
- You must implement a **ControllerImpl** class, which implements the interface and implements all of its methods. 
+ Ar trebui să includeți o clasă **ControllerImpl**, care implementează interfața și toate metodele sale.
  
- The given methods should have the following logic:
+ Metodele date ar trebui să aibă următoarea logică:
 
- # Commands 
+ # Comenzi
  
-There are several commands, which control the business logic of the application. 
+Există mai multe comenzi, care controlează logica de afaceri a aplicației.
  
-They are stated below.
+După cum se menționează:
 
-## CreateDriver Command
+## Comanda CreateDriver 
 
-**Parameters:**
+
+**Parametri:**
 
 - **driverName - string**
 
-**Functionality:**
+**Funcționalitate:**
 
-Creates a **Driver** with the given name and adds him it to the appropriate repository.
+Instanțiază un **Driver** cu numele dat și îl adaugă în depozitul corespunzător.
 
-The method should **return** the following message:
+Metoda ar trebui să **returneze** următorul mesaj:
 
 **"Driver** \{**name**\} **is created."**
 
-If a driver already exists with the given name in the driver repository, this should result in an **IllegalArgumentException** with the message: 
+Dacă există deja un driver cu numele dat în depozitul de șoferi, aceasta ar trebui să conducă la **IllegalArgumentException** cu mesajul:
 
 **"Driver** \{**name**\} **is already created."**
 
-## CreateCar Command
+## Comanda CreateCar
 
-**Parameters:**
+**Parametri:**
 
 - **type - string**
 - **model - string**
 - **horsePower - int**
 
-**Functionality:**
+**Funcționalitate:**
 
-Creates a **Car** with the provided **model** and **horsepower** and addd it to the repository. 
+Creează o **Mașină** cu **modelul** și **cai putere** furnizate și o adaugă în depozit.
 
-There are two types of Car: "**MuscleCar**" and "**SportsCar**".
+Există două tipuri de mașini: "**MuscleCar**" și "**SportsCar**".
 
-If the **Car** already exists in the appropriate repository, this should result in an **IllegalArgumentException** with the following message:
+Dacă **Car** există deja în depozitul corespunzător, aceasta ar trebui să conducă la o **IllegalArgumentException** cu următorul mesaj:
 
 **"Car** \{**model**\} **is already created."**
 
-If the **Car** is successfully created, the method should **return** the following message:
+Dacă **Car** este creată cu succes, metoda ar trebui să **returneze** următorul mesaj:
 
 "\{"**MuscleCar**" / "**SportsCar**"\} \{**model**\} **is created."**
 
-## AddCarToDriver Command
+## Comanda AddCarToDriver
 
-**Parameters:**
+**Parametri:**
 
 - **driverName - string**
 - **carModel - string**
 
-**Functionality:**
+**Funcționalitate:**
 
-Adds the given **Car** to the given **Driver**, if they exist. 
+Adaugă **Mașina** dată la **Șoferul** dat, dacă sunt prezente în depozit.
 
-If the **Driver does not exist** in the **DriverRepository**, this should result in an **IllegalArgumentException** with the message:
+Dacă acest **Driver** în **DriverRepository**, aceasta ar trebui să conducă la **IllegalArgumentException** cu mesajul:
 
 - **"Driver** \{**name**\} **could not be found."**
 
-If the **Car does not exist** in the **CarRepository**, this should result in an **IllegalArgumentException** with the message:
+Dacă **Car nu există** în **CarRepository**, aceasta ar trebui să conducă la o **excepție de argument ilegal** cu mesajul:
 
-- **"Car** \{**name**\} **could not be found."**
+-  **"Car** \{**name**\} **could not be found."**
 
-If the Car and the Driver exist, you should add the **Car** to the **Driver** and return the following message:
+Dacă  car și driver există, ar trebui să adăugați **car * la **driver** și să returnați următorul mesaj:
 
-- **"Driver** \{**driver name**\} **received car** \{**car name**\}**.**"
+- **"Driver** \{**driver name**\} **received car** \{**car name**\}**."**
 
 `AddDriverToRace Command`
 
-**Parameters:**
+**Parametri:**
 
 - **raceName - string**
 - **driverName - string**
 
-**Functionality:**
+**Funcționalitate:**
 
-Adds a **Driver** to the **Race**.
+Adaugă un **Driver** la **Race**.
 
-If the **Race does not exist** in the **RaceRepository**, this should result in an **IllegalArgumentException** with the message:
+Dacă **Race nu este prezent** în **RaceRepository**, aceasta va duce la  **IllegalArgumentException** cu mesajul:
 
 - **"Race** \{**name**\} **could not be found."**
 
-If the **Driver does not exist** in the **DriverRepository**, this should result in an **IllegalArgumentException** with the message:
+Dacă  **Driver nu există** în **DriverRepository**, aceasta va duce la  **IllegalArgumentException** cu mesajul:
 
 - **"Driver** \{**name**\} **could not be found."**
 
-You should add the **Driver** to the **Race** and return the following message:
+Ar trebui să adăugați  **Driver** la **Race** și să imprimați următorul mesaj:
 
 - **"Driver** \{**driver name**\} **added in** \{**race name**\} **race."**
+## Comanda CreateRace
 
-## CreateRace Command
-
-**Parameters:**
+**Parametri:**
 
 - **name - string**
 - **laps - int**
 
-**Functionality:**
 
-Creates a **Race** with the given **name** and **laps** and adds it to the **RaceRepository**.
+**Funcționalitate:**
 
-If the **Race** with the given **name** already **exists**, throw an **IllegalArgumentException** with message:
+Creează **Race** cu **name** dat și **laps** și o adaugă la **RaceRepository**.
 
+Dacă  **Race** cu **numele** dat **există** deja, aruncați **IllegalArgumentException** cu mesajul:
 - **"Race** \{**name**\} **is already created."**
 
-You should return the following message:
+Ar trebui să returnați următorul mesaj:
 
 - **"Race** \{**name**\} **is created."**
 
-## StartRace Command
+## Comanda StartRace
 
-**Parameters:**
+**Parametri:**
 
 - **raceName - string**
 
-**Functionality:**
+**Funcționalitate:**
 
-If the information is valid, you should **arrange** all of the **Drivers** and then return the top three fastest **Drivers**.  
+Dacă informațiile sunt valide, ar trebui să **aranjați** toți **șoferii** și apoi să returnați primii trei cei mai rapizi **piloți**.
 
-To do this, you should sort all of the **Drivers**, in descending order, by the result of the **CalculateRacePoints** method in the **Car** object.  
+Pentru a face acest lucru, ar trebui să sortați toți **șoferii**, în ordinea descrescătoare, după rezultatul metodei **CalculateRacePoints** din obiectul **Car**.
 
-In the end, if everything is valid, **remove** this **Race** from the Race repository. 
+În cele din urmă, dacă totul este valid, **eliminați** această **cursă** din depozitul de curse.
 
-If the **Race does not exist** in **RaceRepository**, throw an **IllegalArgumentException** with the message:
+Dacă **Race nu există** în **RaceRepository**, aruncați **IllegalArgumentException** cu mesajul:
 
 - **"Race** \{**name**\} **could not be found."**
 
-If the participants are less than **3**, throw an **IllegalArgumentException** with thw message:
+Dacă sunt prezenți mai puțini decât  **3** participanți, aruncați **IllegalArgumentException** cu mesajul:
 
 - **"Race** \{**race name**\} **cannot start with less than 3 participants."**
 
-You should return the following message:
+
+Ar trebui să returnați următorul mesaj:
 
 - **"Driver** \{**first driver name**\} **wins** \{**race name**\} **race."**
 
@@ -163,19 +164,19 @@ You should return the following message:
 
 **"Driver** \{**third driver name**\} **is third in** \{**race name**\} **race."**
 
-## End Command
+## Comanda End
 
-**Exit** the program.
+**Ieșiți** din program.
 
-# Input / Output
+# Date de Intrare/Ieșire
 
-You are provided with one interface, which will help with the correct execution process of your program. 
+Vi se oferă o singură interfață, care ar trebui să vă ajute cu procesul corect de execuție al programului dvs.
 
-The interface is called **Engine** and the class implementing this interface should read the input and when the program finishes, this class should print the output.
+Interfața se numește **Engine**, iar clasa care implementează această interfață ar trebui să citească intrarea. Când programul se termină, această clasă ar trebui să imprime ieșirea.
 
-## Input
+## Intrare
 
-Below, you can see the **format**, in which **each command** will be given in the input:
+Mai jos, puteți vedea **formatul**, în care **fiecare comandă** va fi dată în intrare:
 
 CreateDriver \{name\}
 CreateCar \{car type\} \{model\} \{horsepower\}
@@ -185,15 +186,15 @@ CreateRace \{name\} \{laps\}
 StartRace \{race name\}
 End
 
-## Output
+## Ieșire
 
-Print the output from each command when issued.
+Imprimați ieșirea fiecărei comenzi atunci când este emisă.
 
-If an exception is thrown during any of the commands' executions, print the exception message.
+Dacă o excepție este aruncată în timpul oricăreia dintre comenzi, tipăriți mesajul specificat.
 
-# Examples One
+# Exemplul 1
 
-**Input**
+**Intrare**
 CreateDriver Michael 
 CreateDriver Peter 
 CreateCar Sports Porsche 380
@@ -215,7 +216,7 @@ AddDriverToRace Daytona Brian
 StartRace Daytona
 End
 
-**Output**
+**Ieșire**
 Driver Michael is created.
 Driver Peter is created.
 SportsCar Porsche is created.
@@ -238,9 +239,9 @@ Driver Michael wins Daytona race.
 Driver Peter is second in Daytona race. 
 Driver Brian is third in Daytona race. 
 
-# Example Two
+# Exemplul 2
 
-**Input**
+**Intrare**
  CreateDriver Kevin 
  CreateDriver Kevin 
  CreateDriver Jose 
@@ -268,7 +269,7 @@ Driver Brian is third in Daytona race.
  StartRace LeMans 
  End 
 
- **Output**
+ **Ieșire**
  Driver Kevin is created. 
  Driver Kevin is already created. 
  Name Jose cannot be less than 5 symbols. 

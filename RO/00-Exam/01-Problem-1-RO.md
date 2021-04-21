@@ -1,113 +1,115 @@
 [slide hideTitle]
-# Problem: Easter Races
+# Problemă: Easter Races
 
 [code-task title="Easter Races Business Logic" timeLimit=5000 taskId="Java-OOP-Advanced-Easter-Races" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
 [code-upload allowedMemory="30" /]
 
 
 [task-description]
-## Description
+## Descriere
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/12-Java-OOP-Advanced-Final-Exam-Business-Logic.zip) **for this task.**
+**Aici este un link către** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/12-Java-OOP-Advanced-Final-Exam-Business-Logic.zip) **pentru această sarcină.**
 
-- Upload **only the easterRaces** package in every task **except** in "**Unit Tests**"
-- **Do not modify the interfaces or their packages**
-- Use **strong cohesion** and **loose coupling**
-- **Use inheritance and the provided interfaces wherever possible**
-  * this includes **constructors, method parameters** and **return types**
-- **Do not** violate your **interface implementations** by adding **more public methods** in the specific class than the interface has defined
-- Make sure you have **no public fields** anywhere
+- Încărcați **doar cursele de Paște** pentru fiecare activitate **cu excepția** pentru "**Unit Tests**"
+- **Nu modificați interfețele sau pachetele acestora**
+- Folosiți **o coeziune puternică** și **un cuplaj liber**
+- **Utilizați moștenirea și interfețele furnizate ori de câte ori este posibil**
+   * aceasta include **constructorii, parametrii metodei** și **tipurile de returnare**
+- **Nu** încălcați **implementările de interfață** prin adăugarea de **metode publice** în clasa specifică decât a definit interfața
+- Asigurați-vă că nu există **câmpuri publice**
 
-# Task 1: Structure (50 points)
+# Sarcina 1: Structură (50 de puncte)
 
-You are given **8** interfaces and you have to implement their functionalities in the **correct classes.**
+Există **8** interfețe - implementați funcționalitățile lor în **clasele corecte.**
 
-It is not required to implement your structure with **Engine, ConsoleReader, ConsoleWriter** and etc., however It is a good practice.
+Nu este necesar să implementați un **Engine, ConsoleReader, ConsoleWriter** etc., însă este o practică bună.
 
-There are **3** types of entities and 3 repositories in the application: **Car, Driver, Race and a repository for each of them:**
+Există **3** tipuri de entități și 3 depozite în aplicație: **Car, Driver, Race and a repository for each of them:**
 
 # Car
 
-**BaseCar is** a **base class** for any **type of Car** and it **should not be able to be instantiated**. 
+**BaseCar este** o **clasă de bază** pentru orice **tip de mașină** și **nu ar trebui să ofere opțiunea de a fi instanțiată**.
 
-## Data
+## Date
 
 - **model - String**
-  * if the model **is null, whitespace or less than 4 symbols**, this should result in an **IllegalArgumentException** with message "**Model** \{**model**\} **cannot be less than 4 symbols.**"
+  **dacă modelul** este nul, spațiu alb sau mai puțin de 4 simboluri**, acest lucru ar trebui să conducă la o **excepție de argument ilegal** cu mesajul "**Model**\{**model**\} **cannot be less than 4 symbols.**"
 
-  * all models are unique
+   * toate modelele sunt unice
 
 - **horsePower - int**
-  * **every type** of car has a different range of valid horsepower. If the horsepower is not in the valid range, throw an **IllegalArgumentException** with message "**Invalid horse power:** \{**horsepower**\}**.**"
+   * **fiecare tip** de mașină are o gamă diferită de cai putere valabili. Dacă puterea sa nu se încadrează în intervalul valid, aruncați **IllegalArgumentException** cu mesajul "**Invalid horse power:** \{**horsepower**\}."
 
-- **cubicCentimeters - double**
-  * **every type of car has different cubic centimeters**
+- **cubicCentimeters - double** 
+   * **fiecare tip de mașină are o valoare diferită de centimetri cubi**
 
-## Behavior
+## Comportament
 
 `double calculatedRacePoints(int laps)`
 
-The **CalculateRacePoints** method calculates the points, won from the concrete **Race,** using this formula: 
+Metoda **CalculateRacePoints** calculează punctele, câștigate dintr-o **Cursă,** folosind această formulă:
 
 **cubic centimeters / horsepower * laps**
 
 ## Constructor
 
-The **BaseCar** class should take the following values upon initialization: 
+Clasa **BaseCar** trebuie să ia următoarele valori la inițializare:
 
 **String model, int horsePower, double cubicCentimeters**
 
-## Child Classes
+## Clase copii
 
-There are several different types of **Car classes**: 
+Există mai multe tipuri diferite de **Clasa Car**:
 
 ### MuscleCar
 
-For this type of car, the **cubic centimeters are 5000.** 
+Pentru acest tip de mașină, **centimetrii săi cubi ar trebui să fie setați la 5000**
 
-The minimum **horsepower is 400**, while maximum **horsepower is 600**. 
+**minimul său de putere este de 400**, maximul său de **putere este de 600**.
 
-If you receive a horsepower value that is not in the given range, this should result in an IllegalArgumentException with the message: **"Invalid horse power:** \{**horsepower**\}**.**"
+Dacă primiți o valoare de cai putere care nu se încadrează în intervalul dat, aceasta ar trebui să conducă la **IllegalArgumentException** cu mesajul: **"Invalid horse power:** \{**horsepower**\}**.**"
 
-### SportsCar 
-For this type of car, the **cubic centimeters are 3000**. 
+### Mașină de sport
+Pentru acest tip de mașină, **centimetrii săi cubi ar trebui să fie setați la 3000**.
 
-The minimum **horsepower is 200**, while maximum **horsepower is 450**. 
+Este minim **de cai putere 200**, maxim **de cai putere este 450**.
 
-If you receive a horsepower value that is not in the given range, this should result in an **IllegalArgumentException** with the message: **"Invalid horse power:** \{**horsepower**\}**.**"
+Dacă primiți o valoare de cai putere care nu se află în intervalul dat, aceasta ar trebui să conducă la  **IllegalArgumentException** cu mesajul: **"Invalid horse power:** \{**horsepower**\}**.**"
 
 # Driver
 
-**DriverImpl** class
+Clasa **DriverImpl**
 
-## Data
+## Date
 
-- **name - String**
-  * if the name **is null**, **empty** or less than **5 symbols**, throw an **IllegalArgumentException** with message "**Name** \{**name**\} **cannot be less than 5 symbols.**"
-  * the name is unique
+- **name - string**
+  * dacă numele **este nul**, **gol** sau mai mic de **5 simboluri**, aruncați **IllegalArgumentException** cu mesajul "**Name** \{**name**\} **cannot be less than 5 symbols.**"
+  * fiecare nume este unic
 - **car - Car**
 - **numberOfWins - int**
 - **canParticipate - boolean**
-  * the default behaviour is **false**
-  * the **Driver** can participate in race, **ONLY** if he has a **Car** (**Car** is not **null**)
+- * comportamentul implicit este **false**
+  *  **Driver** poate participa la cursă, **DOAR** dacă acesta are **Car** (**Car** nu este **null**)
 
-## Behavior
+
+## Comportament
 
 `void addCar(Car car)`
 
-This method adds the given **Car** to the **Driver**. 
+Această metodă adaugă o **Car** la un **Driver**.
 
-If the car is **null**, throw an **IllegalArgumentException** with the message "**Car cannot be null.**"
+Dacă mașina este **null**, aruncați  **IllegalArgumentException** cu mesajul "**Car cannot be null.**"
 
-If the given **Car** is not **null**, set the current **Car** as the given one the **Driver** can participate in race.
+Dacă **Car**  nu este **null**, setați **Car** curentă ca una pe care **Driver** o poate folosi într-o cursă.
 
 `void winRace()`
 
-When the **Driver** wins a **Race**, the number of wins should be increased.
+
+Când **Drever** câștigă o **Race**, numărul lui de victorii ar trebui să fie mărit.
 
 ## Constructor
 
-A **Driver** should take the following values upon initialization:
+Un **Driver** ar trebui să ia următoarele valori la inițializare:
 
 **(String name)**
 
@@ -115,65 +117,64 @@ A **Driver** should take the following values upon initialization:
 
 **RaceImpl** class
 
-## Data
+## Date
 
 - **name - String**
-  * if the name is **null**, **empty** or less than **5 symbols**, this should result in an **IllegalArgumentException** with the message "**Name** \{**name**\} **cannot be less than 5 symbols.**"
-  * the name is unique 
-- **laps - int** 
-  * if the laps are less than **1**, this should result in an **IllegalArgumentException** with the message "**Laps cannot be less than 1.**"
-- **drivers - a collection of Drivers**
+  * dacă numele este **nul**, **gol** sau mai mic de **5 simboluri**, aceasta ar trebui să conducă la **IllegalArgumentException** cu mesajul "**Name** \{**name**\} **cannot be less than 5 symbols.**"
+  * fiecare nume este unic
+- **laps - int**
+  * dacă turațiile de cursă sunt mai mici de **1**, aceasta ar trebui să aibă ca rezultat  **IllegalArgumentException** cu mesajul "**Laps cannot be less than 1.**"
+-**drivers - a collection of Drivers**
 
-## Behavior
+
+## Comportament
 
 `void addDriver(Driver driver)`
 
-This method adds a **Driver** to the **Race**. if the **Driver** is valid. 
+Această metodă adaugă un **Driver** la **Race**. dacă **Driver-ul** este eligibil.
 
-If the Driver is not valid, this should result in an Exception with the appropriate message. 
+Dacă șoferul nu este eligibil, aceasta ar trebui să conducă la o excepție cu mesajul corespunzător.
 
-Exceptions are:
+Excepțiile sunt:
 
-- If the given **Driver** is null, this should result in an **IllegalArgumentException** with message: "**Driver cannot be null.**"
-- If the given **Driver cannot** participate in the **Race** (the **Driver** does not own a **Car**), this should result in an **IllegalArgumentException** with the message:  **"Driver** \{**driver name**\} **could not participate in race."**
-- If the **Driver** is already taking part in the **Race**, this should result in an **IllegalArgumentException** with the message:
+- Dacă **Șoferul** specificat este nul, acest lucru ar trebui să conducă la  **IllegalArgumentException**, mesaj: "**Driver cannot be null.**"
+- Dacă **Șoferul dat nu poate** participa la o **Cursă** (**Șoferul** nu deține o **Mașină**), aceasta ar trebui să aibă ca rezultat **IllegalArgumentException** cu mesajul:**"Driver** \{**driver name**\} **could not participate in race."**
+- Dacă **Driver** ia deja parte la **Race**, aceasta ar trebui să conducă la **IllegalArgumentException** cu mesajul:
 **"Driver** \{**driver name**\} **is already added in** \{**race name**\} **race."**
 
 ## Constructor
 
-A **Racer** should take the following values upon initialization:
+Un **Racer** ar trebui să ia următoarele valori la inițializare:
 **(String name, int laps)**
 
-# Repository
+# Depozit
 
-The repository holds information about the entity.
+Depozitul conține informații despre fiecare entitate.
 
-## Data
+## Date
 
 - **Models - a collection of T (entity)**
 
-## Behavior
+## Comportament
 
-`void add(T model)`
+`void add(model T)`
 
-Adds an entity in the collection.
+Adaugă o intrare în colecție.
 
 `boolean remove(T model)`
 
-Removes an entity from the collection.
+Elimină o intrare din colecție.
 
 `T getByName(String name)`
 
-Returns an entity with that name.
+Returnează o entitate cu acel nume.
 
 `Collection<T> getAll()`
 
-Returns all entities (unmodifiable)
+Returnează toate entitățile (nemodificabile)
 
-## Child Classes
-
-Create **CarRepository**, **DriverRepository** and **RaceRepository** repositories.
-
+## Clase copii 
+Creați depozite **CarRepository**, **DriverRepository** și **RaceRepository**.
 
 [/task-description]
 [tests]

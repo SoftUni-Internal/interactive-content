@@ -1,17 +1,17 @@
 [slide hideTitle]
-# Problem: Easter Races Unit Tests
+# Problemă: Easter Races Unit Tests
 [code-task title="Easter Races Unit Tests" taskId="Java-OOP-Advanced-Easter-Races-Unit-Tests" executionType="tests-execution" executionStrategy="java-unit-tests" requiresInput]
 
 [task-description]
-# Task 3: Unit Testing (100 Points)
+# Sarcina 3: Testarea unității (100 de puncte)
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/12-Java-OOP-Advanced-Final-Exam-Unit-Testing.zip) **for this task.**
+**Aici este un link către** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/12-Java-OOP-Advanced-Final-Exam-Unit-Testing.zip) **pentru această sarcină.**
 
-You will receive a skeleton with one a class inside. 
+Veți primi o schemă cu o singură clasă în interior.
 
-The class will have methods, fields and constructors. 
+Clasa va consta din metode, câmpuri și constructori.
 
-Cover the whole class with unit tests to make sure that the class is working as intended.
+Acoperiți întreaga clasă cu teste unitare pentru a vă asigura că funcționează conform intenției.
 
 
 [/task-description]
