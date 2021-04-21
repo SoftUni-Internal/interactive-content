@@ -20,7 +20,7 @@ There are numerous benefits when it comes to using modules:
 
 - Enables **storing** an application's codebase **across multiple files**, making code **easier to read** and understand
   
-- **Their Scope** is easier to control and maintain because **modules do not populate the global** scope
+- **Their scope** is easier to control and maintain because **modules do not populate the global** scope
   
 - **Errors are easier to track down** because they are **isolated to a smaller portion of the program**
 
