@@ -13,7 +13,7 @@
 
 **2. HTTP Developer Tools**
 
--  Chrome dev tools
+-  Chrome Dev Tools
 -  Fiddler
 -  Postman
 
