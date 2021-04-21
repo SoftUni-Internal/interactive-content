@@ -28,7 +28,7 @@ mocha --version
 
 # Node Path Configuration
 
-By default **Node.js** does not find its globally installed modules.
+By default, **Node.js** does not find its globally installed modules.
 
 You need to set the "NODE_PATH" environment variable manually.
 
