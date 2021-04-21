@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Flower Wreaths
-[code-task title="Problem: Flower Wreaths" taskId="java-advanced-exam-Flower-Wreaths" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Flower Wreaths" taskId="java-advanced-exam-Flower-Wreaths" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -51,51 +51,60 @@ In the end, if you have **any stored flowers**, you should make as many wreaths 
 
 - All of the given numbers will be valid integers in range \[0 ... 120\]. 
 
-- There will not be a case where a lily or a rose will be a negative number.
+- There will not be a case where a lily or a rose will be a negative number
 
 ## Examples
 
-|Input|Output|
+|**Input**|**Output**|
 |---|---|
 |10, 15, 2, 7, 9, 13|You made it, you are going to the competition with 5 wreaths!|
 |2, 10, 8, 12, 0, 5||
 
-## Comment
 
-- We start with the last lilies (13) and the first roses (2) -> 13 + 2 = 15 -> 15 = 15 ; So we create one wreath and remove both values.
 
-- Next we have 9 + 10 = 19 -> 19 > 15 so we decrease the lilies by 2 -> 7 + 10 = 17 and we decrease the liles by 2 -> 5 + 10 = 15 and we create one more wreath and remove them.
 
-- Next, we have 7 + 8 = 15. We create one more wreath and remove both values.
-
-- Next, we have  2 + 12 = 14 -> 14 < 15 so we have to store theire sum for later and remove theme.
-
-- Next, we have 15 + 0 = 15 so we create one more wreath. 
-
-- And last we have 10 + 5 = 15, we create one more wreath and stop mixing because we don’t have any flowers left.
-
-- Now we have a tottal of 5 wreaths and we also have 14 flowers left but we cant create wreath because 14 < 15.
-
-|Input|Output|
+|**Input**|**Output**|
 |---|---|
-|10, 5, 3, 7, 8|You didn't make, you need 1 wreaths more!|
+|10, 5, 3, 7, 8|You didn't make it, you need 1 wreaths more!|
 |5, 10, 8, 7, 6||
 
-## Comment
+[hints]
+[hint]
+We start with the last **lilies** (8) and the first **roses** (5):
+**8** + **5** is equal to **13**.
+13 is **smaller** than 15, which means we have to **store** their sum for later and **remove** them.
+[/hint] 
+[hint]
+Next, we have `7 + 10 = 17`
 
-- We start with 8 + 5 = 13 -> 13 < 15 -> we have to store their sum for later and remove them.
+We **decrease** the lilies by **2**:
+`5 + 10 = 15`
 
-- Next, we have 7 + 10 = 17 -> we decrease the lilies by 2 -> 5 + 10 = 15 -> 15 = 15 and we create one wreath.
+15 is **equal** to 15, so we create **one wreath**.
+[/hint] 
+[hint]
+Third, we have `3 + 8 = 11` 
+**11** \< **15** -\> we store their sum for later and remove them.
+[/hint] 
+[hint]
+Fourth, we have `5 + 7 = 12`
+We store their sum for later and remove them.
+[/hint] 
+[hint]
+After that, we have `10 + 6 = 16` -\> 16 \> 15
+We **decrease** the lilies by **2** -> `8 + 6 = 14`
+Since 14 is less than 15, we **store** their sum for later and **remove** them.
+[/hint] 
+[hint]
+And last we have `10 + 5 = 15`, we create one more wreath and **stop** mixing because there are no more flowers.
+[/hint] 
+[hint]
+We stop crafting because we do not have any flowers left.
+We have 1 wreath and 50 stored flowers. 
+We create 3 more wreaths because `3 * 15 = 45` -\> `50 – 45 = 5` -> **5** < **15**.
+[/hint] 
+[/hints] 
 
-- Next, we have 3 + 8 = 11 -> 11 < 15 -> we store their sum for later and remove them.
-
-- Next, we have 5 + 7 = 12 -> we store their sum for later and remove them.
-
-- Next, we have 10 + 6 = 16 -> 16 > 15 we decrease the lilies by 2 -> 8 + 6 = 14 and we store their sum for later and remove them.
-
-- And last we have 10 + 5 = 15, we create one more wreath and stop mixing because we don’t have any flowers left.
-
-- We stop crafting because we do not have any flowers left and we have 1 wreath and 50 stored flowers. We create 3 more wreaths because 3 * 15 = 45 -> 50 – 45 = 5 -> 5 < 15.
 
 [/task-description]
 [code-io /]
