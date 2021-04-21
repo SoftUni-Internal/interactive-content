@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problemă: Flower Wreaths
-[code-task title="Problem: Flower Wreaths" taskId="java-advanced-exam-Flower-Wreaths" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Flower Wreaths" taskId="java-advanced-exam-Flower-Wreaths" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -55,7 +55,7 @@ Trebuie să **nu mai** combinați atunci când nu mai aveți **trandafiri sau cr
 
 ## Exemple
 
-|Intrare|Ieșire|
+|**Intrare**|**Ieșire**|
 |---|---|
 |10, 15, 2, 7, 9, 13|You made it, you are going to the competition with 5 wreaths!|
 |2, 10, 8, 12, 0, 5||
@@ -76,26 +76,48 @@ Trebuie să **nu mai** combinați atunci când nu mai aveți **trandafiri sau cr
 
 - Acum avem un total de 5 coroane de flori și mai avem 14 flori rămase, dar nu mai putem crea coroane de flori pentru că 14 <15.
 
-|Intrare|Ieșire|
+|**Intrare**|**Ieșire**|
 |---|---|
 |10, 5, 3, 7, 8|You didn't make, you need 1 wreaths more!|
 |5, 10, 8, 7, 6||
 
-## Comentariu
 
-- Începem cu 8 + 5 = 13 -> 13 <15 -> trebuie să le stocăm suma pentru mai târziu și să le eliminăm.
+[hints]
+[hint]
+Începem cu ultimii crini (**8**) și primii trandafiri (**5**):
+**8** + **5** este egal cu **13**.
+13 este **mai mic** decât 15, ceea ce înseamnă că trebuie să le **stocăm** suma pentru mai târziu și să le **eliminăm**.
+[/hint] 
+[hint]
+Apoi, avem `7 + 10 = 17`
 
-- Apoi, avem 7 + 10 = 17 -> micșorăm crinii cu 2 -> 5 + 10 = 15 -> 15 = 15 și creăm o coroană de flori.
+**Micșorăm** crinii cu **2**:
+`5 + 10 = 15`
 
-- Apoi, avem 3 + 8 = 11 -> 11 <15 -> le stocăm suma pentru mai târziu și le eliminăm.
-
-- Apoi, avem 5 +7 = 12 -> le stocăm suma pentru mai târziu și le eliminăm.
-
-- Apoi, avem 10 + 6 = 16 -> 16> 15 micșorăm crinii cu 2 -> 8 + 6 = 14 și le stocăm suma pentru mai târziu și le eliminăm.
-
-- Și, în sfârșit, avem 10 + 5 = 15, creăm încă o coroană de flori și nu mai amestecăm pentru că nu ne mai rămân flori.
-
-- Încetăm să mai creăm pentru că nu ne mai rămân flori și avem 1 coroană de flori și 50 de flori depozitate. Creăm încă 3 coroane de flori, deoarece 3 * 15 = 45 -> 50 - 45 = 5 -> 5 <15.
+15 este **egal** cu 15 și creăm **o coroană de flori**.
+[/hint] 
+[hint]
+Al treilea, avem `3 + 8 = 11`
+**11** < **15** -\> le stocăm suma pentru mai târziu și le eliminăm.
+[/hint] 
+[hint]
+Al patrulea, avem `5 + 7 = 12`
+Le stocăm suma pentru mai târziu și le eliminăm.
+[/hint] 
+[hint]
+Apoi, avem `10 + 6 = 16` -\> 16 \> 15
+**Micșorăm** crinii cu **2** -\> `8 + 6 = 14`
+Deoarece 14 este mai mic de 15, le **stocăm** suma pentru mai târziu și le eliminăm.
+[/hint] 
+[hint]
+Și, în sfârșit, avem `10 + 5 = 15`, creăm încă o coroană de flori și nu mai amestecăm pentru că nu ne mai rămân flori.
+[/hint] 
+[hint]
+Încetăm să mai creăm pentru că nu ne mai rămân flori.
+Avem 1 coroană de flori și 50 de flori depozitate. 
+Creăm încă 3 coroane de flori, deoarece `3 * 15 = 45` -> `50 - 45 = 5` -\> **5** \< **15**.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]
