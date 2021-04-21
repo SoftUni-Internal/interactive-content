@@ -3740,6 +3740,40 @@ Doi dragoni sunt considerați **echivalenți** dacă au **același** nume și ti
 |  | -Kerizsa \-\> damage: 60, health: 2100, armor: 20 |
 
 
+[hints]
+[hint]
+Declare the default values in the class body:
+
+```java
+private static final int DAMAGE = 45;
+private static final int HEALTH = 250;
+private static final int ARMOR = 10;
+```
+[/hint] 
+[hint]
+Create a `getStat` method.
+It will be used to set the initial stats of each dragon.
+
+```java
+private static int getStat(String arg, int defaultValue) {
+  if (arg.equals("null")) {
+    return defaultValue;
+  } else {
+    return Integer.parseInt(arg);
+  }
+}
+```
+[/hint] 
+[hint]
+Use a LinkedHashMap to store the dragon types:
+
+```java
+Map<String, Map<String, List<Integer>>> dragonTypeMap = new LinkedHashMap<>();
+```
+
+[/hint] 
+[/hints] 
+
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | 4 | Gold::(223.75/826.25/17.50) |
