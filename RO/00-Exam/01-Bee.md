@@ -62,17 +62,17 @@ Albina are nevoie de **cel puțin 5 flori polenizate**.
 
 ## Constrângeri
 
-- Mărimea matricei **pătrate** va fi între \[2…10\].
+- Mărimea matricei **pătrate** va fi între \[2…10\]
 
-- Va fi **mereu** bonus **0** sau **1** , marcat cu - **„O”**.
+- Va fi **mereu** bonus **0** sau **1** , marcat cu - **„O”**
 
-- Poziția albinei va fi marcată cu **„B”**.
+- Poziția albinei va fi marcată cu **„B”**
 
-- Nu va exista un caz în care un bonus să scoată albina din teritoriul său.
+- Nu va exista un caz în care un bonus să scoată albina din teritoriul său
 
 ## Exemple
 
-|Intrare|Ieșire|
+|**Intrare**|**Ieșire**|
 |-----|------|
 |5|The bee got lost!|
 |Bff..|Great job, the bee manage to pollinate 6 flowers!|
@@ -92,6 +92,9 @@ Albina are nevoie de **cel puțin 5 flori polenizate**.
 
 ## Comentariu
 
+This table illustrates the state of the territory after a given move command.
+The format is `row of the command) direction`:
+
 |1) right|2) right|3) down|5) left|
 |---|---|---|---|
 |.Bf..|..B..|.....|.....|
@@ -100,7 +103,6 @@ Albina are nevoie de **cel puțin 5 flori polenizate**.
 |.....|.....|.....|.....|
 |fffff|fffff|fffff|fffff|
 
-...
 
 - polenizează o floare: „f” (0, 1)
 
@@ -108,7 +110,7 @@ Albina are nevoie de **cel puțin 5 flori polenizate**.
 
 - albina este aprinsă (4, 1), următoarea comandă pe care o primește este în jos și iese din teren și programul se încheie.
 
-|Intrare|Ieșire|
+|**Intrare**|**Ieșire**|
 |---|---|
 |4|The bee couldn't pollinate the flowers, she needed 2 flowers more|
 |....|.B..|
@@ -121,6 +123,19 @@ Albina are nevoie de **cel puțin 5 flori polenizate**.
 |right||
 |up||
 |End||
+
+[hints]
+[hint]
+Create a method that checks if a position is in bounds of the territory. 
+It must return a boolean.
+[/hint] 
+[hint]
+You can also write a method for locating the bee. 
+Use nested loops to get the horisontal and vertical positions on the matrix.
+Then check if the current position contains 'B'.
+[/hint] 
+[/hints] 
+
 [/task-description]
 [code-io /]
 [tests]
