@@ -1,7 +1,7 @@
 # Problem: Pool Day var2
 [slide hideTitle]
 # Pool Day var2
-[code-task title="Pool Day Var2" taskId="pb-java-exam-Pool-day412" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Pool Day Var2" taskId="pb-java-exam-Pool-day4121" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
