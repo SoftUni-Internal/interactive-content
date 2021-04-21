@@ -45,11 +45,11 @@ The bee needs **at least 5 pollinated flowers**.
 
 ## Input
 
-- On the first line, you are given the integer **n** – the size of the **square** matrix. 
+- On the first line, you are given the integer **n** – the size of the **square** matrix
 
-- The **next n lines** holds the values for every **row**. 
+- The **next n lines** hold the values for every **row**
 
-- On each of the next lines until you receive **"End"** command,  you will receive a move command. 
+- On each of the next lines until you receive **"End"** command,  you will receive a move command
 
 ## Output
 
@@ -58,21 +58,21 @@ The bee needs **at least 5 pollinated flowers**.
 - On the second line:
   - If the bee couldn’t pollinate enough flowers print: **"The bee couldn't pollinate the flowers, she needed** \{**needed**\} **flowers more"**
   - If the bee successfully pollinated enough flowers print: **"Great job, the bee manage to pollinate** \{**polinationed flowers**\} **flowers!"**
-- In the end print the matrix.
+- In the end, print the matrix
 
 ## Constraints
 
-- The size of the **square** matrix will be between \[2…10\]. 
+- The size of the **square** matrix will be between \[2…10\]
 
-- There will **always** be **0** or **1** bonus, marked with - **'O'**. 
+- There will **always** be **0** or **1** bonus, marked with - **'O'**
 
-- The bee position will be marked with **'B'**. 
+- The bee position will be marked with **'B'**
 
-- There won't be a case where a bonus moves the bee out of its territory. 
+- There will not be a case where a bonus moves the bee out of its territory
 
 ## Examples
 
-|Input|Output|
+|**Input**|**Output**|
 |-----|------|
 |5|The bee got lost!|
 |Bff..|Great job, the bee manage to pollinate 6 flowers!|
@@ -92,6 +92,9 @@ The bee needs **at least 5 pollinated flowers**.
 
 ## Comment
 
+This table illustrates the state of the territory after a given move command.
+The format is `row of the command) direction`:
+
 |1) right|2) right|3) down|5) left|
 |---|---|---|---|
 |.Bf..|..B..|.....|.....|
@@ -105,9 +108,9 @@ The bee needs **at least 5 pollinated flowers**.
 
 - step on a bonus: 'O' (1, 2) and make one more step down to: 'f' (2, 2) 
 
-- the bee is on (4, 1), the next command she receive is down and she goes out of the field and the program ends. 
+- the bee is on (4, 1), the next command she receives is `down` - she goes out of the field and the program **ends** 
 
-|Input|Output|
+|**Input**|**Output**|
 |---|---|
 |4|The bee couldn't pollinate the flowers, she needed 2 flowers more|
 |....|.B..|
@@ -120,6 +123,19 @@ The bee needs **at least 5 pollinated flowers**.
 |right||
 |up||
 |End||
+
+[hints]
+[hint]
+Create a method that checks if a position is in bounds of the territory. 
+It must return a boolean.
+[/hint] 
+[hint]
+You can also write a method for locating the bee. 
+Use nested loops to get the horisontal and vertical positions on the matrix.
+Then check if the current position contains 'B'.
+[/hint] 
+[/hints] 
+
 [/task-description]
 [code-io /]
 [tests]
