@@ -6,6 +6,9 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/EN/interactive-js-apps-unit-testing-8-9-10-mocha-and-chai-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
+
+## Mocha
+
 **Mocha** is a feature-rich JavaScript test framework that runs on Node.js or in the browser, making asynchronous testing simple and easy to do.
 
 Mocha tests run sequentially, allowing for flexible and accurate reporting while mapping uncaught exceptions to the correct test cases. 
@@ -65,6 +68,7 @@ describe('MathOperations', function() {
 
 Here is a [link](https://www.mochajs.org/) to the Mocha.Js documentation. 
 
+## Chai
 
 **Chai** is a an **assertions** library that can be paired with any JavaScript testing framework.
 
