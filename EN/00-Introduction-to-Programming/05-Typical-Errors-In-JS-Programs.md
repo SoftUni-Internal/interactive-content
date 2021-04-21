@@ -16,7 +16,7 @@ Some of the common mistakes we can face are:
 - Wrong Syntax
 
 - Missing quotes - `"` 
-- 
+
 - A missing bracket - `(` or `)`
 
 - Confusing the **Addition** and the **Concatenation** operations
