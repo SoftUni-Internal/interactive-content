@@ -15,7 +15,9 @@ Unele dintre greșelile obișnuite de bază cu care ne putem confrunta:
 
 - Sintaxă greșită
 
-- Lipsa citatelor  `"` sau parantezelor `(` sau `)`
+- Lipsa citatelor  `"` 
+
+- Sau parantezelor `(` sau `)`
 
 - Confuzia sensului **Addition (adunare)** și **Concatenation (concatenare)**
 
