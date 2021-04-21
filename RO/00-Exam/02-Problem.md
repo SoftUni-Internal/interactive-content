@@ -66,7 +66,7 @@ If the **Car** already exists in the appropriate repository, this should result 
 
 If the **Car** is successfully created, the method should **return** the following message:
 
-"\{"**MuscleCar**"/ "**SportsCar**"\} \{**model**\} **is created."**
+"\{"**MuscleCar**" / "**SportsCar**"\} \{**model**\} **is created."**
 
 ## AddCarToDriver Command
 
