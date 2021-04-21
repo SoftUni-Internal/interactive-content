@@ -20,7 +20,7 @@ public class Main {
 
 You’ve beaten all the content and the last thing left to accomplish is own a legendary item. 
 
-However, it’s a tedious process and requires quite a bit of farming. 
+However, it is a tedious process and requires quite a bit of farming. 
 
 Anyway, you are not too pretentious – any legendary will do. 
 

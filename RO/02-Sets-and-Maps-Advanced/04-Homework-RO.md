@@ -3685,7 +3685,10 @@ Pentru fiecare dragon, printați statistica.
 
 Dacă o statistică lipsește, trebuie să îi asignați valorile standard. 
 
-Valorile standard sunt următoarele: sănătate (health) **250** , daune (damage) **45** și armură (armor) **10**. 
+Valorile standard sunt următoarele: 
+- sănătate (health) - **250**
+- daune (damage) - **45** 
+- armură (armor) - **10**
 
 Statisticile lipsă vor fi marcate cu **null**.
 

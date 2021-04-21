@@ -76,14 +76,14 @@ Else print:
 
 [hints]
 [hint]
-Create an array of integers for storing each lootbox.
-Make sure to convert the input numbers to Integer.
+Create two arrays of integers, for storing each lootbox.
+Make sure to convert the input numbers to `Integer`.
 [/hint] 
 [hint]
 Create a queue for the first lootbox, and a stack for the second.
 [/hint] 
 [hint]
-Use the `Stack.peek()` method to get the **first** item in the **queue** and the **last** item in the **stack**.
+Use the `.peek()` method to get the **first** item in the **queue** and the **last** item in the **stack**.
 [/hint] 
 [/hints] 
 
