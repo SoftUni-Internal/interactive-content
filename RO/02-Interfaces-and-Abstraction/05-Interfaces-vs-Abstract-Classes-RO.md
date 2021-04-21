@@ -25,7 +25,7 @@ Putem pune aceste linii de cod într-o clasă abstractă și le putem extinde la
 [/slide]
 
 [slide hideTitle]
-# Problemă: Ferrari
+# Problemă cu Soluție: Ferrari
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/RO/interactive-java-oop-advanced-interfaces-and-abstraction-problem-ferrari-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

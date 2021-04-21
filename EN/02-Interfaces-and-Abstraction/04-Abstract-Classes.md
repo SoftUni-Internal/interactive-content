@@ -117,7 +117,7 @@ We call a method of the abstract class, using our object (`obj`).
 [/slide]
 
 [slide hideTitle]
-# Problem: Border Control
+# Problem with Solution: Border Control
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/interactive-java-oop-advanced-interfaces-and-abstraction-problem-border-control-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
