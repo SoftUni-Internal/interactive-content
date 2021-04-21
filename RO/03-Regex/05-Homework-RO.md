@@ -280,7 +280,7 @@ furniture.push(name);
 }
 ```
 
-Puteți utiliza un grup de capturare numit (**named capturing group**). Aflați mai multe despre grupuri și intervale [aici](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges).
+Puteți utiliza **grupuri de capturare numite** (named capturing group). Învățați mai multe despre grupuri și intervale [aici](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges).
 [/hint] 
 [hint]
 **Imprimați** rezultatul:
@@ -459,11 +459,11 @@ La final, tipăriți primii 3 participanți, ordonați după distanța lor în o
 
 [hints]
 [hint]
-Ca al treilea argument, avem **Ray** - `R1@!3a$y4456@`
+**Al treilea** argument este **Ray** - `R1@!3a$y4456@`
 El **nu este** pe listă, deci nu luăm în calcul rezultatul lui.
 [/hint] 
 [hint]
-**Celelalte** sunt **valabile**:
+Celelalte persoane **sunt** pe lista de **participanți**.
 
 ```js
 if (racers.hasOwnProperty(name)) {
@@ -474,7 +474,7 @@ if (racers.hasOwnProperty(name)) {
 **George** are **55** km în total, **Peter** - **25** și **Tom** - **19**.
 [/hint] 
 [hint]
-Tipărim câștigătorii (**top 3**):
+**Tipărim** **câștigătorii** (persoanele care se află în **top 3**):
 
 ```js
 let winners = Object.keys(racers)
