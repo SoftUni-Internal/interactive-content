@@ -1,13 +1,13 @@
-# Refolosirea claselor
+# Refolosirea Claselor
 
 [slide hideTitle]
-# Modificatori de acces
+# Modificatori de Acces
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/RO/Java-OOP-Advanced-Inheritance-20-21-reusing-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Clasele derivate **pot accesa toți membrii publici** și **protejați** ai clasei de bază
 - Clasele derivate pot accesa **implicit** membri **dacă se află în același pachet**
-- **Câmpurile private** nu pot fi accesate din **subclase**, dar sunt instanțiate, deoarece clasa **părinte** are nevoie de ele pentru logica sa internă.
+- **Câmpurile private** nu pot fi accesate din **subclase**, dar sunt instanțiate, deoarece clasa **părinte** are nevoie de ele pentru logica sa internă
 
 ```java
 class Person {
@@ -22,7 +22,7 @@ class Person {
 
 [slide hideTitle]
 
-# Umbrirea variabilelor
+# Umbrirea Variabilelor
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/RO/Java-OOP-Advanced-Inheritance-22-shadowing-variables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -52,7 +52,7 @@ class Patient extends Person {
 
 [slide hideTitle]
 
-# Umbrirea variabilelor – Access
+# Umbrirea Variabilelor - Access
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/RO/Java-OOP-Advanced-Inheritance-23-shadowing-variables-access-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -74,7 +74,7 @@ class Patient extends Person {
 [/slide]
 
 [slide hideTitle]
-# Suprascrierea metodelor derivate
+# Suprascrierea Metodelor Derivate
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/RO/Java-OOP-Advanced-Inheritance-24-overriding-derived-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -115,7 +115,7 @@ public class Student extends Person {
 
 [slide hideTitle]
 
-# Metode și clase finale
+# Metode și Clase Finale
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/RO/Java-OOP-Advanced-Inheritance-25-final-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -151,7 +151,7 @@ public class MyMath extends Math { }     // Eroare…
 
 [slide hideTitle]
 
-# Beneficiile moștenirii
+# Beneficiile Moștenirii
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/RO/Java-OOP-Advanced-Inheritance-27-inheritance-benefits-abstraction-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -197,7 +197,7 @@ public class MyArrayList<E> extends ArrayList<E>{
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Random Array List
+# Problemă cu Soluție: Random Array List
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/RO/Java-OOP-Advanced-Inheritance-29-problem-and-solution-random-array-list-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

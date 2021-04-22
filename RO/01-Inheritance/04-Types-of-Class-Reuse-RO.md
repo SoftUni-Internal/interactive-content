@@ -1,4 +1,4 @@
-# Tipuri de reutilizare a clasei
+# Tipuri de Reutilizare a Clasei
 
 [slide hideTitle]
 # Extinderea
@@ -71,7 +71,7 @@ class Laptop {
   }                         
                             
   void decrBrightness() {
-    monitor.dim();
+    monitor.dim();S
   } 
 }
 ```
@@ -87,7 +87,7 @@ Procedând astfel, putem **combina** logica complexă într-o singură **metodă
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Stack of Strings
+# Problemă cu Soluție: Stack of Strings
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/RO/Java-OOP-Advanced-Inheritance-35-problem-and-solution-stack-of-strings-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -236,7 +236,7 @@ Test Passed!
 
 
 [slide hideTitle]
-# Când se folosește moștenirea
+# Când se Folosește Moștenirea
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/RO/Java-OOP-Advanced-Inheritance-37-when-to-use-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
