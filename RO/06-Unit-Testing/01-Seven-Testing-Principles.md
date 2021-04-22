@@ -2,7 +2,7 @@
 
 # Cele Șapte Principii de Testare
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-3-10-seven-testing-principles-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/RO/Java-OOP-Advanced-Unit-Testing-3-10-seven-testing-principles-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Există șapte principii **fundamentale** de testare care fac procesul testării software mai eficient:
 

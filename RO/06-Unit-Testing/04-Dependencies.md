@@ -35,7 +35,7 @@ De aceea utilizarea **Principiului de Inversiune a Dependenței** în testele no
 
 # Injecția de Dependență
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-37-dependency-injection-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/RO/Java-OOP-Advanced-Unit-Testing-37-dependency-injection-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Când folosim **abstractizarea** și **injecția de dependență**, testarea codului nostru devine mai puțin complicată.
 
@@ -85,7 +85,7 @@ public void testGetInfoById() {​
 
 # Izolarea Comportamentelor Testelor
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-38-goal-isolating-test-behavior-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/RO/Java-OOP-Advanced-Unit-Testing-38-goal-isolating-test-behavior-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Obiectivul principal este să **fixăm** toate **părțile dinamice**.
 
@@ -97,7 +97,7 @@ Acest lucru ne ajută să facem codul nostru mai stabil și decuplat, mărind ef
 
 # Implementări False
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-44-fake-implementations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/RO/Java-OOP-Advanced-Unit-Testing-44-fake-implementations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Obiectele și clasele false au o implementare **funcțională**, dar **simplificată**.
 
@@ -134,7 +134,7 @@ public class FakeRepository implements AccountRepository {
 
 # Problemă cu Soluție: Fake Axe and Dummy
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-39-40-41-42-43-problem-and-solution-fake-axe-and-dummy-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/RO/Java-OOP-Advanced-Unit-Testing-39-fake-axe-and-dummy-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 # Descriere
 Testați dacă eroul câștigă XP atunci când moare o țintă.
@@ -233,7 +233,7 @@ public void attackGainsExperienceIfTargetIsDead(){
 
 # Mocking
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-45-mocking-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/RO/Java-OOP-Advanced-Unit-Testing-45-mocking-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Tehnica mocking pentru obiecte** simulează comportamentul obiectelor reale.
 
@@ -263,7 +263,7 @@ public void testAlarmClockShouldRingInTheMorning() {
 
 # Mockito
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-46-47-mockito-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/RO/Java-OOP-Advanced-Unit-Testing-46-47-mockito-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Mockito** este un cadru pentru obiecte de tip mock. 
 
@@ -288,7 +288,7 @@ Copiați următorul cod în fișierul `pom.xml`:
 
 # Problemă cu Soluție: Mocking
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-48-49-50-problem-and-solution-mocking-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/RO/Java-OOP-Advanced-Unit-Testing-48-mocking-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Descriere
 

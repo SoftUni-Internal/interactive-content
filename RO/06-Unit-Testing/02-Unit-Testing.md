@@ -4,7 +4,7 @@
 
 # Testarea Manuală
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-11-13-manual-testing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/RO/Java-OOP-Advanced-Unit-Testing-11-13-manual-testing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Testarea unitară este procesul de examinare a unor **fragmente/unități** separate ale aplicației noastre.
 
@@ -43,7 +43,7 @@ Pentru a simplifica lucrurile, avem nevoie de o abordare **structurată** care:
 
 # Testarea Automată
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-14-automated-testing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/RO/Java-OOP-Advanced-Unit-Testing-14-automated-testing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Testarea automată** cuprinde:
 
@@ -63,7 +63,7 @@ Pentru a simplifica lucrurile, avem nevoie de o abordare **structurată** care:
 
 # JUnit
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-15-16-junit-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/RO/Java-OOP-Advanced-Unit-Testing-15-16-junit-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 JUnit este unul dintre cele mai populare **cadre** de testare unitară pentru Java.
 
@@ -89,7 +89,7 @@ Pentru a începe, trebuie să organizăm depozitul JUnit, iar după ce am **crea
 
 # JUnit - Scrierea Testelor
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-17-junit-writing-tests-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/RO/Java-OOP-Advanced-Unit-Testing-17-junit-writing-tests-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Să creăm un **pachet** nou pentru testele noastre.
 
@@ -111,7 +111,7 @@ public void commandShouldMultiplyNumbers() {
 
 # Modelul "3A"
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-18-3A-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/RO/Java-OOP-Advanced-Unit-Testing-18-3A-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Acesta este un model **indispensabil** în ceea ce privește crearea testelor .
 
@@ -147,7 +147,7 @@ La final, verificăm **(аssert)** dacă ieșirea așteptată se potrivește cu 
 
 # Excepții
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-19-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/RO/Java-OOP-Advanced-Unit-Testing-19-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Este posibil ca unele metode să necesite **aruncarea unei excepții** (de exemplu: intrare non-validă) în codul nostru.
 
@@ -201,7 +201,7 @@ Copiați fișierele furnizate și plasați-le într-un pachet înăuntrul fișie
 
 # Problemă cu Soluție: Test Axe
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-20-21-22-problem-and-solutiom-test-axe-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/RO/Java-OOP-Advanced-Unit-Testing-20-test-axe-problem-and-solutionJava-OOP-Advanced-Unit-Testing-20-test-axe-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Aici este un link către** [resursele](https://videos.softuni.org/resources/java/java-oop-advanced/07.Java-OOP-Advanced-Unit-Testing-Lab-Resources.zip) **pentru această sarcină.**
 
@@ -285,7 +285,7 @@ axe.attack(dummy);
 
 # Problemă cu Soluție: Test Dummy
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-23-24-problem-and-solution-test-dummy-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/RO/Java-OOP-Advanced-Unit-Testing-23-test-dummy-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Descriere
 creați o clasă numită `DummyTests`.
