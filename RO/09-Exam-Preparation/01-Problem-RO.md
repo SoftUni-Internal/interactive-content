@@ -1,7 +1,7 @@
 [slide hideTitle]
 # Problemă cu soluție: Santa Workshop Structure
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/10-Exam-Prep-1/EN/interactive-java-oop-advanced-exam-preparation-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/10-Exam-Prep-1/RO/interactive-java-oop-advanced-exam-preparation-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Santa Workshop Structure" timeLimit=5000 taskId="oop-advanced-java-exam-preparation-1-Santa-Workshop-Structure" executionType="tests-execution" executionStrategy="java-project-tests"] 
 
@@ -30,7 +30,7 @@ Ar trebui să existe un  **DwarfRepository**, precum și un **PresentRepository*
 
 # BaseDwarf
 
-**BaseDwarf** este  **o clasă de bază** pentru fiecare  **type of Dwarf** și aceasta  **nu ar trebui să poată fi instanțiată**.
+**BaseDwarf** este  **o clasă de bază** pentru fiecare **type of Dwarf** și aceasta  **nu ar trebui să poată fi instanțiată**.
 
 ## Data:
 
@@ -39,12 +39,12 @@ Ar trebui să existe un  **DwarfRepository**, precum și un **PresentRepository*
   "**Dwarf name cannot be null or empty.**"
   * toate numele vor fi **unice**
 
-- **energy -  int**
+- **energy - int**
   * energia unui pitic 
   * dacă energia  **inițială** este de sub 0, aruncați `IllegalArgumentException` cu mesajul:
   "**Cannot create a Dwarf with negative energy!**"
 
-- **instruments - Collection**\<**Instrument**\>
+- **instruments - Collection** \<**Instrument**\>
   * colecția de instrumente a unui pitic
 
 ## Constructor:
@@ -84,7 +84,7 @@ Constructorul ar trebui să ia următoarele valori la inițializare:
 
 Unități inițiale de **energy**: **50**
 
-Metoda **work()**  **scade**  suplimentar energia priticului cu **5 unități**.
+Metoda **work()** **scade**  suplimentar energia priticului cu **5 unități**.
 
 Constructorul ar trebui să ia următoarele valori la inițializare:
 
