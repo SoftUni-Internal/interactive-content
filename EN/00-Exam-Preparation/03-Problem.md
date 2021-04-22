@@ -1,130 +1,161 @@
 [slide hideTitle]
-# Problem with Solution: Christmas Unit Tests
+# Problem: Online Shop Unit Tests
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/10-Exam-Prep-1/EN/interactive-java-oop-advanced-exam-preparation-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[code-task title="Christmas Unit Tests" taskId="oop-advanced-java-exam-preparation-1-Christmas-Unit-Tests" executionType="tests-execution" executionStrategy="java-unit-tests" requiresInput]   
+[code-task title="Online Shop Unit Tests" taskId="oop-advanced-java-exam-preparation-2-Online-Shop-Unit-Tests" executionType="tests-execution" executionStrategy="java-unit-tests" requiresInput]
 
 [task-description]
 # Description
 
-**Use the resources from the first task.**
+**Use the resources from previous task.**
 
-There will be a sceleton holding **Present** and **PresentBag** classes. 
+You will receive a skeleton with a single class inside it. 
 
-The class will have some methods, fields, and one constructor, all of which must be properly working. 
+The class will hold some methods, fields and constructors. 
 
-**Please do not** change any of the class content. 
-
-Cover each class with **unit tests** to make sure it iworks as intended.
-
-You are provided with a **unit test project** in the **project skeleton**.
-
-**Do not** use **mocking** in your **unit tests**!
-
-## Submit
-
-The **PresentBag** you need to test is in the **Christmas** package.
-
-You should place the package in a **zip** file.
-
+Cover the entire class with unit tests to make sure that it works as intended.
 
 [/task-description]
-[code-upload /] 
+[code-upload /]
 [tests]
 [test]
 [input]
 ~~!!!==\#==!!!~~
-//christmas/Present.java
-package christmas;
+//computers/ComputerManager.java
+package computers;
 
-public class Present \{
-    private String name;
-    private double magic;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
 
-    public Present(String name, double magic)\{
-        this.setName(name);
-        this.setMagic(magic);
+public class ComputerManager \{
+    private static final String CAN_NOT_BE_NULL_MESSAGE = "Can not be null!";
+
+    private List\<Computer\> computers;
+
+    public ComputerManager() \{
+        this.computers = new ArrayList\<\>();
     \}
 
-    private void setName(String name) \{
-        this.name = name;
+    public List\<Computer\> getComputers() \{
+        return Collections.unmodifiableList(this.computers);
     \}
 
-    private void setMagic(double magic) \{
-        this.magic = magic;
+    public int getCount() \{
+        return this.computers.size();
     \}
 
-    public String getName() \{
-        return name;
+    public void addComputer(Computer computer) \{
+        this.validateNullValue(computer, CAN_NOT_BE_NULL_MESSAGE);
+        boolean flag = this
+                .computers
+                .stream()
+                .filter(c -\> c.getManufacturer().equals(computer.getManufacturer()) && c.getModel().equals(computer.getModel()))
+                .findFirst()
+                .orElse(null) != null;
+        if (flag)
+        \{
+            throw new IllegalArgumentException("This computer already exists.");
+        \}
+
+        this.computers.add(computer);
     \}
 
-    public double getMagic() \{
-        return magic;
+    public Computer removeComputer(String manufacturer, String model) \{
+        Computer computer = this.getComputer(manufacturer, model);
+
+        this.computers.remove(computer);
+        return computer;
+    \}
+
+    public Computer getComputer(String manufacturer, String model) \{
+        this.validateNullValue(manufacturer, CAN_NOT_BE_NULL_MESSAGE);
+        this.validateNullValue(model, CAN_NOT_BE_NULL_MESSAGE);
+
+        Computer computer = this
+                .computers
+                .stream()
+                .filter(c -\> c.getManufacturer().equals(manufacturer) && c.getModel().equals(model))
+                .findFirst()
+                .orElse(null);
+
+        if (computer == null) \{
+            throw new IllegalArgumentException("There is no computer with this manufacturer and model.");
+        \}
+
+        return computer;
+    \}
+
+    public List\<Computer\> getComputersByManufacturer(String manufacturer) \{
+        this.validateNullValue(manufacturer, CAN_NOT_BE_NULL_MESSAGE);
+
+        List\<Computer\> computers = this
+                .computers
+                .stream()
+                .filter(c -\> c.getManufacturer().equals(manufacturer))
+                .collect(Collectors.toList());
+
+        return computers;
+    \}
+
+    private void validateNullValue(Object variable, String exceptionMessage) \{
+        if (variable == null) \{
+            throw new IllegalArgumentException(exceptionMessage);
+        \}
     \}
 \}
 
 ~~!!!==\#==!!!~~
-//christmas/PresentBag.java
+//computers/Main.java
+package computers;
 
-package christmas;
+import java.util.Scanner;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
+public class Main \{
+    public static void main(String\[\] args) \{
 
-public class PresentBag \{
-    private Collection\<Present\> data;
+    \}
+\}
 
-    public PresentBag() \{
-        this.data = new ArrayList\<\>();
+~~!!!==\#==!!!~~
+//computers/Computer.java
+package computers;
+
+public class Computer \{
+
+    private String manufacturer;
+    private String model;
+    private double price;
+
+    public Computer(String manufacturer, String model, double price) \{
+        this.setManufacturer(manufacturer);
+        this.setModel(model);
+        this.setPrice(price);
     \}
 
-    public int getCount() \{
-        return this.data.size();
+    public String getManufacturer() \{
+        return manufacturer;
     \}
 
-    public String create(Present present) \{
-        if (present == null) \{
-            throw new NullPointerException("Present is null");
-        \}
-        if (this.data.stream().anyMatch(p -\> p.getName().equals(present.getName()))) \{
-            throw new IllegalArgumentException(String.format("Present with name %s already exists", present.getName()));
-        \}
-        this.data.add(present);
-        return String.format("Successfully added present %s with magic %.2f", present.getName(), present.getMagic());
+    private void setManufacturer(String manufacturer) \{
+        this.manufacturer = manufacturer;
     \}
 
-    public boolean remove(String name) \{
-        if (name == null \|\| name.trim().isEmpty()) \{
-            throw new NullPointerException("Name cannot be null");
-        \}
-
-        boolean isRemoved = this.data.removeIf(p -\> p.getName().equals(name));
-        return isRemoved;
-    \}
-    public Present getPresentWithLeastMagic() \{
-        Present present = this.data
-                .stream()
-                .min(Comparator.comparingDouble(Present::getMagic))
-                .orElse(null);
-
-        return present;
-    \}
-    public Present getPresent(String name) \{
-        Present present = this.data
-                .stream()
-                .filter(p -\> p.getName().equals(name))
-                .findFirst()
-                .orElse(null);
-
-        return present;
-    \}
-    public Collection\<Present\> getPresents() \{
-        return Collections.unmodifiableCollection(this.data);
+    public String getModel() \{
+        return model;
     \}
 
+    private void setModel(String model) \{
+        this.model = model;
+    \}
+
+    public double getPrice() \{
+        return price;
+    \}
+
+    private void setPrice(double price) \{
+        this.price = price;
+    \}
 \}
 [/input]
 [output]
@@ -134,96 +165,143 @@ Test Passed!
 [test]
 [input]
 ~~!!!==\#==!!!~~
-//christmas/Present.java
-package christmas;
+//computers/ComputerManager.java
+package computers;
 
-public class Present \{
-    private String name;
-    private double magic;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
 
-    public Present(String name, double magic)\{
-        this.setName(name);
-        this.setMagic(magic);
+public class ComputerManager \{
+    private static final String CAN_NOT_BE_NULL_MESSAGE = "Can not be null!";
+
+    private List\<Computer\> computers;
+
+    public ComputerManager() \{
+        this.computers = new ArrayList\<\>();
     \}
 
-    private void setName(String name) \{
-        this.name = name;
+    public List\<Computer\> getComputers() \{
+        return Collections.unmodifiableList(this.computers);
     \}
 
-    private void setMagic(double magic) \{
-        this.magic = magic;
+    public int getCount() \{
+	     return 10;
+        // return this.computers.size();
     \}
 
-    public String getName() \{
-        return name;
+    public void addComputer(Computer computer) \{
+        this.validateNullValue(computer, CAN_NOT_BE_NULL_MESSAGE);
+        boolean flag = this
+                .computers
+                .stream()
+                .filter(c -\> c.getManufacturer().equals(computer.getManufacturer()) && c.getModel().equals(computer.getModel()))
+                .findFirst()
+                .orElse(null) != null;
+        if (flag)
+        \{
+            throw new IllegalArgumentException("This computer already exists.");
+        \}
+
+        this.computers.add(computer);
     \}
 
-    public double getMagic() \{
-        return magic;
+    public Computer removeComputer(String manufacturer, String model) \{
+        Computer computer = this.getComputer(manufacturer, model);
+
+        this.computers.remove(computer);
+        return computer;
+    \}
+
+    public Computer getComputer(String manufacturer, String model) \{
+        this.validateNullValue(manufacturer, CAN_NOT_BE_NULL_MESSAGE);
+        this.validateNullValue(model, CAN_NOT_BE_NULL_MESSAGE);
+
+        Computer computer = this
+                .computers
+                .stream()
+                .filter(c -\> c.getManufacturer().equals(manufacturer) && c.getModel().equals(model))
+                .findFirst()
+                .orElse(null);
+
+        if (computer == null) \{
+            throw new IllegalArgumentException("There is no computer with this manufacturer and model.");
+        \}
+
+        return computer;
+    \}
+
+    public List\<Computer\> getComputersByManufacturer(String manufacturer) \{
+        this.validateNullValue(manufacturer, CAN_NOT_BE_NULL_MESSAGE);
+
+        List\<Computer\> computers = this
+                .computers
+                .stream()
+                .filter(c -\> c.getManufacturer().equals(manufacturer))
+                .collect(Collectors.toList());
+
+        return computers;
+    \}
+
+    private void validateNullValue(Object variable, String exceptionMessage) \{
+        if (variable == null) \{
+            throw new IllegalArgumentException(exceptionMessage);
+        \}
     \}
 \}
 
 ~~!!!==\#==!!!~~
-//christmas/PresentBag.java
+//computers/Main.java
+package computers;
 
-package christmas;
+import java.util.Scanner;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
+public class Main \{
+    public static void main(String\[\] args) \{
 
-public class PresentBag \{
-    private Collection\<Present\> data;
+    \}
+\}
 
-    public PresentBag() \{
-        this.data = new ArrayList\<\>();
+~~!!!==\#==!!!~~
+//computers/Computer.java
+package computers;
+
+public class Computer \{
+
+    private String manufacturer;
+    private String model;
+    private double price;
+
+    public Computer(String manufacturer, String model, double price) \{
+        this.setManufacturer(manufacturer);
+        this.setModel(model);
+        this.setPrice(price);
     \}
 
-    public int getCount() \{
-        return this.data.size();
+    public String getManufacturer() \{
+        return manufacturer;
     \}
 
-    public String create(Present present) \{
-        if (present == null) \{
-            throw new NullPointerException("Present is null");
-        \}
-        if (this.data.stream().anyMatch(p -\> p.getName().equals(present.getName()))) \{
-            throw new IllegalArgumentException(String.format("Present with name %s already exists", present.getName()));
-        \}
-        //this.data.add(present);
-        return String.format("Successfully added present %s with magic %.2f", present.getName(), present.getMagic());
+    private void setManufacturer(String manufacturer) \{
+        this.manufacturer = manufacturer;
     \}
 
-    public boolean remove(String name) \{
-        if (name == null \|\| name.trim().isEmpty()) \{
-            throw new NullPointerException("Name cannot be null");
-        \}
-
-        boolean isRemoved = this.data.removeIf(p -\> p.getName().equals(name));
-        return isRemoved;
-    \}
-    public Present getPresentWithLeastMagic() \{
-        Present present = this.data
-                .stream()
-                .min(Comparator.comparingDouble(Present::getMagic))
-                .orElse(null);
-
-        return present;
-    \}
-    public Present getPresent(String name) \{
-        Present present = this.data
-                .stream()
-                .filter(p -\> p.getName().equals(name))
-                .findFirst()
-                .orElse(null);
-
-        return present;
-    \}
-    public Collection\<Present\> getPresents() \{
-        return Collections.unmodifiableCollection(this.data);
+    public String getModel() \{
+        return model;
     \}
 
+    private void setModel(String model) \{
+        this.model = model;
+    \}
+
+    public double getPrice() \{
+        return price;
+    \}
+
+    private void setPrice(double price) \{
+        this.price = price;
+    \}
 \}
 [/input]
 [output]
@@ -233,96 +311,142 @@ Test Passed!
 [test]
 [input]
 ~~!!!==\#==!!!~~
-//christmas/Present.java
-package christmas;
+//computers/ComputerManager.java
+package computers;
 
-public class Present \{
-    private String name;
-    private double magic;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
 
-    public Present(String name, double magic)\{
-        this.setName(name);
-        this.setMagic(magic);
+public class ComputerManager \{
+    private static final String CAN_NOT_BE_NULL_MESSAGE = "Can not be null!";
+
+    private List\<Computer\> computers;
+
+    public ComputerManager() \{
+        this.computers = new ArrayList\<\>();
     \}
 
-    private void setName(String name) \{
-        this.name = name;
+    public List\<Computer\> getComputers() \{
+        return Collections.unmodifiableList(this.computers);
     \}
 
-    private void setMagic(double magic) \{
-        this.magic = magic;
+    public int getCount() \{
+        return this.computers.size();
     \}
 
-    public String getName() \{
-        return name;
+    public void addComputer(Computer computer) \{
+        this.validateNullValue(computer, CAN_NOT_BE_NULL_MESSAGE);
+        boolean flag = this
+                .computers
+                .stream()
+                .filter(c -\> c.getManufacturer().equals(computer.getManufacturer()) && c.getModel().equals(computer.getModel()))
+                .findFirst()
+                .orElse(null) != null;
+        if (flag)
+        \{
+            throw new IllegalArgumentException("This computer already exists.");
+        \}
+
+        // this.computers.add(computer);
     \}
 
-    public double getMagic() \{
-        return magic;
+    public Computer removeComputer(String manufacturer, String model) \{
+        Computer computer = this.getComputer(manufacturer, model);
+
+        this.computers.remove(computer);
+        return computer;
+    \}
+
+    public Computer getComputer(String manufacturer, String model) \{
+        this.validateNullValue(manufacturer, CAN_NOT_BE_NULL_MESSAGE);
+        this.validateNullValue(model, CAN_NOT_BE_NULL_MESSAGE);
+
+        Computer computer = this
+                .computers
+                .stream()
+                .filter(c -\> c.getManufacturer().equals(manufacturer) && c.getModel().equals(model))
+                .findFirst()
+                .orElse(null);
+
+        if (computer == null) \{
+            throw new IllegalArgumentException("There is no computer with this manufacturer and model.");
+        \}
+
+        return computer;
+    \}
+
+    public List\<Computer\> getComputersByManufacturer(String manufacturer) \{
+        this.validateNullValue(manufacturer, CAN_NOT_BE_NULL_MESSAGE);
+
+        List\<Computer\> computers = this
+                .computers
+                .stream()
+                .filter(c -\> c.getManufacturer().equals(manufacturer))
+                .collect(Collectors.toList());
+
+        return computers;
+    \}
+
+    private void validateNullValue(Object variable, String exceptionMessage) \{
+        if (variable == null) \{
+            throw new IllegalArgumentException(exceptionMessage);
+        \}
     \}
 \}
 
 ~~!!!==\#==!!!~~
-//christmas/PresentBag.java
+//computers/Main.java
+package computers;
 
-package christmas;
+import java.util.Scanner;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
+public class Main \{
+    public static void main(String\[\] args) \{
 
-public class PresentBag \{
-    private Collection\<Present\> data;
+    \}
+\}
 
-    public PresentBag() \{
-        this.data = new ArrayList\<\>();
+~~!!!==\#==!!!~~
+//computers/Computer.java
+package computers;
+
+public class Computer \{
+
+    private String manufacturer;
+    private String model;
+    private double price;
+
+    public Computer(String manufacturer, String model, double price) \{
+        this.setManufacturer(manufacturer);
+        this.setModel(model);
+        this.setPrice(price);
     \}
 
-    public int getCount() \{
-        return this.data.size();
+    public String getManufacturer() \{
+        return manufacturer;
     \}
 
-    public String create(Present present) \{
-        if (present == null) \{
-            throw new NullPointerException("Present is null");
-        \}
-        if (this.data.stream().anyMatch(p -\> p.getName().equals(present.getName()))) \{
-            throw new IllegalArgumentException(String.format("Present with name %s already exists", present.getName()));
-        \}
-        this.data.add(present);
-        return String.format("Successfully added present %s with magic %.2f", present.getName(), present.getMagic());
+    private void setManufacturer(String manufacturer) \{
+        this.manufacturer = manufacturer;
     \}
 
-    public boolean remove(String name) \{
-        //if (name == null \|\| name.trim().isEmpty()) \{
-        //    throw new NullPointerException("Name cannot be null");
-        //\}
-
-        boolean isRemoved = this.data.removeIf(p -\> p.getName().equals(name));
-        return isRemoved;
-    \}
-    public Present getPresentWithLeastMagic() \{
-        Present present = this.data
-                .stream()
-                .min(Comparator.comparingDouble(Present::getMagic))
-                .orElse(null);
-
-        return present;
-    \}
-    public Present getPresent(String name) \{
-        Present present = this.data
-                .stream()
-                .filter(p -\> p.getName().equals(name))
-                .findFirst()
-                .orElse(null);
-
-        return present;
-    \}
-    public Collection\<Present\> getPresents() \{
-        return Collections.unmodifiableCollection(this.data);
+    public String getModel() \{
+        return model;
     \}
 
+    private void setModel(String model) \{
+        this.model = model;
+    \}
+
+    public double getPrice() \{
+        return price;
+    \}
+
+    private void setPrice(double price) \{
+        this.price = price;
+    \}
 \}
 [/input]
 [output]
@@ -332,195 +456,289 @@ Test Passed!
 [test]
 [input]
 ~~!!!==\#==!!!~~
-//christmas/Present.java
-package christmas;
+//computers/ComputerManager.java
+package computers;
 
-public class Present \{
-    private String name;
-    private double magic;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
 
-    public Present(String name, double magic)\{
-        this.setName(name);
-        this.setMagic(magic);
+public class ComputerManager \{
+    private static final String CAN_NOT_BE_NULL_MESSAGE = "Can not be null!";
+
+    private List\<Computer\> computers;
+
+    public ComputerManager() \{
+        this.computers = new ArrayList\<\>();
     \}
 
-    private void setName(String name) \{
-        this.name = name;
+    public List\<Computer\> getComputers() \{
+        return Collections.unmodifiableList(this.computers);
     \}
 
-    private void setMagic(double magic) \{
-        this.magic = magic;
+    public int getCount() \{
+        return this.computers.size();
     \}
 
-    public String getName() \{
-        return name;
+    public void addComputer(Computer computer) \{
+        this.validateNullValue(computer, CAN_NOT_BE_NULL_MESSAGE);
+        boolean flag = this
+                .computers
+                .stream()
+                .filter(c -\> c.getManufacturer().equals(computer.getManufacturer()) && c.getModel().equals(computer.getModel()))
+                .findFirst()
+                .orElse(null) != null;
+        if (flag)
+        \{
+            throw new IllegalArgumentException("This computer already exists.");
+        \}
+
+        this.computers.add(computer);
     \}
 
-    public double getMagic() \{
-        return magic;
+    public Computer removeComputer(String manufacturer, String model) \{
+        Computer computer = this.getComputer(manufacturer, model);
+
+        this.computers.remove(computer);
+        return computer;
+    \}
+
+    public Computer getComputer(String manufacturer, String model) \{
+        this.validateNullValue(manufacturer, CAN_NOT_BE_NULL_MESSAGE);
+        this.validateNullValue(model, CAN_NOT_BE_NULL_MESSAGE);
+
+        Computer computer = this
+                .computers
+                .stream()
+                .filter(c -\> c.getManufacturer().equals(manufacturer) && c.getModel().equals(model))
+                .findFirst()
+                .orElse(null);
+
+        if (computer == null) \{
+            throw new IllegalArgumentException("There is no computer with this manufacturer and model.");
+        \}
+
+		return null;
+        //return computer;
+    \}
+
+    public List\<Computer\> getComputersByManufacturer(String manufacturer) \{
+        this.validateNullValue(manufacturer, CAN_NOT_BE_NULL_MESSAGE);
+
+        List\<Computer\> computers = this
+                .computers
+                .stream()
+                .filter(c -\> c.getManufacturer().equals(manufacturer))
+                .collect(Collectors.toList());
+
+        return computers;
+    \}
+
+    private void validateNullValue(Object variable, String exceptionMessage) \{
+        if (variable == null) \{
+            throw new IllegalArgumentException(exceptionMessage);
+        \}
     \}
 \}
 
 ~~!!!==\#==!!!~~
-//christmas/PresentBag.java
+//computers/Main.java
+package computers;
 
-package christmas;
+import java.util.Scanner;
+
+public class Main \{
+    public static void main(String\[\] args) \{
+
+    \}
+\}
+
+~~!!!==\#==!!!~~
+//computers/Computer.java
+package computers;
+
+public class Computer \{
+
+    private String manufacturer;
+    private String model;
+    private double price;
+
+    public Computer(String manufacturer, String model, double price) \{
+        this.setManufacturer(manufacturer);
+        this.setModel(model);
+        this.setPrice(price);
+    \}
+
+    public String getManufacturer() \{
+        return manufacturer;
+    \}
+
+    private void setManufacturer(String manufacturer) \{
+        this.manufacturer = manufacturer;
+    \}
+
+    public String getModel() \{
+        return model;
+    \}
+
+    private void setModel(String model) \{
+        this.model = model;
+    \}
+
+    public double getPrice() \{
+        return price;
+    \}
+
+    private void setPrice(double price) \{
+        this.price = price;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+~~!!!==\#==!!!~~
+//computers/ComputerManager.java
+package computers;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
-import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
 
-public class PresentBag \{
-    private Collection\<Present\> data;
+public class ComputerManager \{
+    private static final String CAN_NOT_BE_NULL_MESSAGE = "Can not be null!";
 
-    public PresentBag() \{
-        this.data = new ArrayList\<\>();
+    private List\<Computer\> computers;
+
+    public ComputerManager() \{
+        this.computers = new ArrayList\<\>();
+    \}
+
+    public List\<Computer\> getComputers() \{
+        return Collections.unmodifiableList(this.computers);
     \}
 
     public int getCount() \{
-        return this.data.size();
+        return this.computers.size();
     \}
 
-    public String create(Present present) \{
-        if (present == null) \{
-            throw new NullPointerException("Present is null");
-        \}
-        if (this.data.stream().anyMatch(p -\> p.getName().equals(present.getName()))) \{
-            throw new IllegalArgumentException(String.format("Present with name %s already exists", present.getName()));
-        \}
-        this.data.add(present);
-        return String.format("Successfully added present %s with magic %.2f", present.getName(), present.getMagic());
-    \}
-
-    public boolean remove(String name) \{
-        if (name == null \|\| name.trim().isEmpty()) \{
-            throw new NullPointerException("Name cannot be null");
-        \}
-
-        boolean isRemoved = this.data.removeIf(p -\> p.getName().equals(name));
-        return isRemoved;
-    \}
-    public Present getPresentWithLeastMagic() \{
-        Present present = this.data
+    public void addComputer(Computer computer) \{
+        this.validateNullValue(computer, CAN_NOT_BE_NULL_MESSAGE);
+        boolean flag = this
+                .computers
                 .stream()
-                .min(Comparator.comparingDouble(Present::getMagic))
+                .filter(c -\> c.getManufacturer().equals(computer.getManufacturer()) && c.getModel().equals(computer.getModel()))
+                .findFirst()
+                .orElse(null) != null;
+        if (flag)
+        \{
+            throw new IllegalArgumentException("This computer already exists.");
+        \}
+
+        this.computers.add(computer);
+    \}
+
+    public Computer removeComputer(String manufacturer, String model) \{
+        Computer computer = this.getComputer(manufacturer, model);
+
+        this.computers.remove(computer);
+        return computer;
+    \}
+
+    public Computer getComputer(String manufacturer, String model) \{
+        this.validateNullValue(manufacturer, CAN_NOT_BE_NULL_MESSAGE);
+        this.validateNullValue(model, CAN_NOT_BE_NULL_MESSAGE);
+
+        Computer computer = this
+                .computers
+                .stream()
+                .filter(c -\> c.getManufacturer().equals(manufacturer) && c.getModel().equals(model))
+                .findFirst()
                 .orElse(null);
+
+        if (computer == null) \{
+            throw new IllegalArgumentException("There is no computer with this manufacturer and model.");
+        \}
+
+        return computer;
+    \}
+
+    public List\<Computer\> getComputersByManufacturer(String manufacturer) \{
+        this.validateNullValue(manufacturer, CAN_NOT_BE_NULL_MESSAGE);
+
+        List\<Computer\> computers = this
+                .computers
+                .stream()
+                .filter(c -\> c.getManufacturer().equals(manufacturer))
+                .collect(Collectors.toList());
 
         return null;
-    \}
-    public Present getPresent(String name) \{
-        Present present = this.data
-                .stream()
-                .filter(p -\> p.getName().equals(name))
-                .findFirst()
-                .orElse(null);
-
-        return present;
-    \}
-    public Collection\<Present\> getPresents() \{
-        return Collections.unmodifiableCollection(this.data);
+        //return computers;
     \}
 
-\}
-[/input]
-[output]
-Test Passed!
-[/output]
-[/test]
-[test]
-[input]
-~~!!!==\#==!!!~~
-//christmas/Present.java
-package christmas;
-
-public class Present \{
-    private String name;
-    private double magic;
-
-    public Present(String name, double magic)\{
-        this.setName(name);
-        this.setMagic(magic);
-    \}
-
-    private void setName(String name) \{
-        this.name = name;
-    \}
-
-    private void setMagic(double magic) \{
-        this.magic = magic;
-    \}
-
-    public String getName() \{
-        return name;
-    \}
-
-    public double getMagic() \{
-        return magic;
+    private void validateNullValue(Object variable, String exceptionMessage) \{
+        if (variable == null) \{
+            throw new IllegalArgumentException(exceptionMessage);
+        \}
     \}
 \}
 
 ~~!!!==\#==!!!~~
-//christmas/PresentBag.java
+//computers/Main.java
+package computers;
 
-package christmas;
+import java.util.Scanner;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
+public class Main \{
+    public static void main(String\[\] args) \{
 
-public class PresentBag \{
-    private Collection\<Present\> data;
+    \}
+\}
 
-    public PresentBag() \{
-        this.data = new ArrayList\<\>();
+~~!!!==\#==!!!~~
+//computers/Computer.java
+package computers;
+
+public class Computer \{
+
+    private String manufacturer;
+    private String model;
+    private double price;
+
+    public Computer(String manufacturer, String model, double price) \{
+        this.setManufacturer(manufacturer);
+        this.setModel(model);
+        this.setPrice(price);
     \}
 
-    public int getCount() \{
-        return this.data.size();
+    public String getManufacturer() \{
+        return manufacturer;
     \}
 
-    public String create(Present present) \{
-        if (present == null) \{
-            throw new NullPointerException("Present is null");
-        \}
-        if (this.data.stream().anyMatch(p -\> p.getName().equals(present.getName()))) \{
-            throw new IllegalArgumentException(String.format("Present with name %s already exists", present.getName()));
-        \}
-        this.data.add(present);
-        return String.format("Successfully added present %s with magic %.2f", present.getName(), present.getMagic());
+    private void setManufacturer(String manufacturer) \{
+        this.manufacturer = manufacturer;
     \}
 
-    public boolean remove(String name) \{
-        if (name == null \|\| name.trim().isEmpty()) \{
-            throw new NullPointerException("Name cannot be null");
-        \}
-
-        boolean isRemoved = this.data.removeIf(p -\> p.getName().equals(name));
-        return isRemoved;
-    \}
-    public Present getPresentWithLeastMagic() \{
-        Present present = this.data
-                .stream()
-                .min(Comparator.comparingDouble(Present::getMagic))
-                .orElse(null);
-
-        return present;
-    \}
-    public Present getPresent(String name) \{
-        Present present = this.data
-                .stream()
-                .filter(p -\> p.getName().equals(name))
-                .findFirst()
-                .orElse(null);
-
-        return null;
-    \}
-    public Collection\<Present\> getPresents() \{
-        return Collections.unmodifiableCollection(this.data);
+    public String getModel() \{
+        return model;
     \}
 
+    private void setModel(String model) \{
+        this.model = model;
+    \}
+
+    public double getPrice() \{
+        return price;
+    \}
+
+    private void setPrice(double price) \{
+        this.price = price;
+    \}
 \}
 [/input]
 [output]
