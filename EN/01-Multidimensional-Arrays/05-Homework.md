@@ -2614,6 +2614,7 @@ stop
 [code-editor language=java]
 ```
 import java.util.*;
+import java.io.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -2686,6 +2687,70 @@ There will be only one `P` for all the input
 | ........ | ..BBBBBB |
 | ..P..... | won: 3 0 |
 | ULLL |  |
+
+[hints]
+[hint]
+Implement an `isDead` method that returns a boolean:
+
+```java
+private static boolean isDead(Integer[] currBunny, 
+  int rowPlayer, int colPlayer, 
+  int up, int down, int left, int right) {
+  return (rowPlayer == currBunny[0] && colPlayer == left) ||
+    (rowPlayer == currBunny[0] && colPlayer == right) ||
+    (colPlayer == currBunny[1] && rowPlayer == up) ||
+    (colPlayer == currBunny[1] && rowPlayer == down);
+}
+
+```
+[/hint] 
+[hint]
+Spread the bunnies as follows:
+
+```java
+private static void spreadBunnies(
+  char[][] lair, Integer[] currBunny, 
+  int up, int down, int left, int right) {
+
+  int rowLair = lair.length;
+  int colLair = lair[0].length;
+
+  if (up >= 0) {
+    lair[up][currBunny[1]] = 'B';
+  }
+  if (down < rowLair) {
+    lair[down][currBunny[1]] = 'B';
+  }
+  if (left >= 0) {
+    lair[currBunny[0]][left] = 'B';
+  }
+  if (right < colLair) {
+    lair[currBunny[0]][right] = 'B';
+  }
+}
+```
+[/hint] 
+[hint]
+Do not forget to perform the necessary validations: 
+
+```java
+private static boolean isCellFree(
+  int row, int col, char[][] matrix) {
+      
+  return matrix[row][col] == '.';
+}
+
+private static boolean isInLair(
+  int row, int col, char[][] matrix) {
+
+  return row < 0 || 
+    row >= matrix.length || 
+    col < 0 || 
+    col >= matrix[row].length;
+}
+```
+[/hint] 
+[/hints] 
 
 | **Input** | **Output** |
 | --- | --- |
