@@ -1347,7 +1347,7 @@ Swordsman -\> 0
 [/slide]
 
 [slide hideTitle]
-# Problem: BarracksWars - Return of the Dependencies
+# Problemă: BarracksWars - Return of the Dependencies
 [code-task title="BarracksWars - Return of the Dependencies" taskId="oop-advanced-java-reflection-and-annotations-BarracksWars-Return-of-the-Dependencies" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
