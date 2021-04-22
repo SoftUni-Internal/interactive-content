@@ -92,8 +92,8 @@ Albina are nevoie de **cel puțin 5 flori polenizate**.
 
 ## Comentariu
 
-This table illustrates the state of the territory after a given move command.
-The format is `row of the command) direction`:
+Acest tabel ilustrează stadiul teritoriul după o comandă de mișcare dată.
+Formatul este `row of the command) direction`:
 
 |1) right|2) right|3) down|5) left|
 |---|---|---|---|
@@ -126,13 +126,13 @@ The format is `row of the command) direction`:
 
 [hints]
 [hint]
-Create a method that checks if a position is in bounds of the territory. 
-It must return a boolean.
+Creați o metodă care verifică dacă o poziție se află în interiorul limitelor teritoriului.
+Trebuie să returneze o valoare booleană.
 [/hint] 
 [hint]
-You can also write a method for locating the bee. 
-Use nested loops to get the horisontal and vertical positions on the matrix.
-Then check if the current position contains 'B'.
+Puteți scrie de asemenea și o metodă pentru localizarea albinei.
+Utilizați bucle imbricate pentru a obține pozițiile orizontale și verticale din matrice.
+Apoi verificați dacă poziția curentă conține 'B'.
 [/hint] 
 [/hints] 
 
