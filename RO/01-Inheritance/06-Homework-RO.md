@@ -1,4 +1,4 @@
-# Temă pentru acasă
+# Temă Pentru Acasă
 
 [slide hideTitle]
 # Problemă: Person
@@ -680,7 +680,9 @@ Test Passed!
 
 [task-description]
 # Descriere
-Creați un pachet numit „grădina zoologică”. Ar trebui să conțină următoarele clase:
+Creați un pachet numit „grădina zoologică”. 
+
+Ar trebui să conțină următoarele clase:
 
 [image assetsSrc="inheritance-example(19).png" /]
 
@@ -868,7 +870,9 @@ Sarcina dvs. este să creați următoarea ierarhie a jocului:
 
 [image assetsSrc="inheritance-example(20).png" /]
 
-Creați o clasă „Hero”. Ar trebui să conțină următorii membri:
+Creați o clasă "Hero". 
+
+Ar trebui să conțină următorii membri:
 - Un constructor public, care acceptă:
     - **username - String**
     - **level- int**
@@ -876,7 +880,7 @@ Creați o clasă „Hero”. Ar trebui să conțină următorii membri:
     - **username - String**
     - **level- int**
 - Obțineți numele de utilizator și nivelul
-- metoda `toString()`
+- Мetoda `toString()`
 
 ## Sfat: Înlocuiți metoda `toString ()` a clasei de bază în felul următor:
 ```java
@@ -1275,18 +1279,22 @@ Creați următoarea **ierarhie** cu următoarele **clase**:
 
 [image assetsSrc="inheritance-example(21).png" /]
 
-Creați o clasă de bază numită „Vehicle”. Ar trebui să aibă următorii membri:
-- **DEFAULT_FUEL_CONSUMPTION** – **final static double (constant)**
-- **fuelConsumption – double**
-- **fuel – double**
-- **horsePower – int**
+Creați o clasă de bază numită „Vehicle”. 
+
+Ar trebui să aibă următorii membri:
+- **DEFAULT_FUEL_CONSUMPTION** - **final static double (constant)**
+- **fuelConsumption - double**
+- **fuel - double**
+- **horsePower - int**
 - **Getters and Setters for all fields**
 - Un constructor public care acceptă (**fuel, horsePower**) și stabilește **default fuel consumption** al câmpului numit **fuelConsumption**
 - **void drive(double kilometers)**
-    - Metoda **drive** ar trebui să conțină logică de cod pentru a reduce **combustibilul** pe baza kilometrilor parcurși și a consumului de combustibil.
+    - metoda **drive** ar trebui să conțină logică de cod pentru a reduce **combustibilul** pe baza kilometrilor parcurși și a consumului de combustibil
     Rețineți că puteți conduce vehiculul numai dacă aveți suficient combustibil pentru a termina conducerea.
 
-Consumul implicit de combustibil pentru un **Vehicul** este **1,25**. Unele dintre clase au consumuri de combustibil implicite diferite:
+Consumul implicit de combustibil pentru un **Vehicul** este **1,25**. 
+
+Unele dintre clase au consumuri de combustibil implicite diferite:
 - **SportCar - DEFAULT_FUEL_CONSUMPTION = 10**
 - **RaceMotorcycle - DEFAULT_FUEL_CONSUMPTION = 8**
 - **Car - DEFAULT_FUEL_CONSUMPTION = 3**
@@ -1837,7 +1845,7 @@ Test Passed!
 [/slide]
 
 [slide hideTitle]
-# Problemă : Restaurant
+# Problemă: Restaurant
 [code-task title="Restaurant" taskId="Java-OOP-Advanced-Inheritance-Restaurant" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 [task-description]
@@ -1849,39 +1857,43 @@ Există alimente și băuturi în restaurant și toate sunt „produse”.
 Clasa **Product** trebuie să aibă următorii membri:
 
 - Un constructor public cu următorii parametri: **String name, BigDecimal price**
-- **name – String**
-- **price – BigDecimal**
+- **name - String**
+- **price - BigDecimal**
 - **Getters for all fields**
 
-Clasele **Beverage** și **Food** sunt „products”.
+Clasele **Beverage** și **Food** sunt "products".
 
 Clasa **Beverage** trebuie să aibă următorii membri:
+
 - Un constructor public cu următorii parametri: **String name, BigDecimal price, double milliliters**
-- **name – String**
-- **price – BigDecimal**
-- **milliliters – double**
+- **name - String**
+- **price - BigDecimal**
+- **milliliters - double**
 - **A Getter for "milliliters"**
 
 Clasa **Food** trebuie să aibă următorii membri:
+
 - Un constructor cu următorii parametri: **String name, BigDecimal price, double grams**
-- **name – String**
-- **price – double**
-- **grams – double**
+- **name - String**
+- **price - double**
+- **grams - double**
 - **A Getter for "grams"**
 
 **HotBeverage** și **ColdBeverage** sunt **băuturi** și acceptă următorii parametri la inițializare: **String name, BigDecimal price, double milliliters**
 
-**Coffee** și **Tea** sunt **băuturi calde**. Clasa **Coffee** trebuie să aibă următorii membri suplimentari:
+**Coffee** și **Tea** sunt **băuturi calde**. 
+
+Clasa **Coffee** trebuie să aibă următorii membri suplimentari:
 - `COFFEE_MILLILITERS double = 50`
 - `BigDecimal COFFEE_PRICE = 3.50`
-- **caffeine – double**
+- **caffeine - double**
 - Un câștigător pentru **caffeine**
 
 **MainDish**, **Dessert** și **Starter** sunt **mâncare**.
  Toți acceptă următorii parametri la inițializare: **String name, BigDecimal price, double grams**. 
  Clasa **Desert** ar trebui să accepte încă un parametru în constructorul său: **double calories**.
-- **calories – double**
-- Un **getter pentru „calorii”**
+- **calories - double**
+- Un **getter pentru "calorii"**
 
 **Salmon**, **Soup** și **Cake** moștenesc clasa corespunzătoare.
 
@@ -2416,9 +2428,9 @@ Creați o ierarhie (pachet) de **animals**.
 Programul dvs. ar trebui să aibă trei animale diferite - **Dog**, **Frog** și **Cat**.
 
 Mai adânc în ierarhie ar trebui să aveți două clase suplimentare - **Kitten** and **Tomcat**
-**Kittens sunt „Femei”, iar Tomcats sunt „Bărbați”.**
+**Kittens sunt "Femei", iar Tomcats sunt "Bărbați".**
 
-Toate tipurile de animale ar trebui să poată produce un fel de sunet - „String produceSound ()”.
+Toate tipurile de animale ar trebui să poată produce un fel de sunet - "String produceSound()".
 
 De exemplu, câinele ar trebui să poată să latre.
 
@@ -2433,10 +2445,10 @@ Fiecare două rânduri vor reprezenta un animal.
 
 Pe prima linie va fi tipul de animal și pe a doua - numele, vârsta și sexul.
 
-Când este dată comanda „**Beast!**”, opriți intrarea și tipăriți toate animalele în formatul prezentat mai jos.
+Când este dată comanda "**Beast!**", opriți intrarea și tipăriți toate animalele în formatul prezentat mai jos.
 
 ## Ieșire
-- Imprimați informațiile pentru fiecare animal pe trei linii. Pe prima linie, tipăriți: „\{**animalType**\}”
+- Imprimați informațiile pentru fiecare animal pe trei linii. Pe prima linie, tipăriți: "\{**animalType**\}"
 - Pe a doua linie tipăriți: "\{**name**\} \{**age**\} \{**gender**\}"
 - Pe a treia linie tipăriți sunetele pe care le produce: "\{**produceSound()**\}"
 
@@ -2445,7 +2457,7 @@ Când este dată comanda „**Beast!**”, opriți intrarea și tipăriți toate
 - **Toate** valorile de intrare nu trebuie **să fie necompletate** (de exemplu, numele, vârsta și așa mai departe ...)
 - Dacă primiți o intrare pentru **gender** unui **Tomcat** sau a unei **Kitten**, ignorați-l, dar **creați** animalul
 - Dacă intrarea nu este validă pentru una dintre proprietăți, aruncați o excepție cu mesajul: "**Invalid input!**"
-- Fiecare animal ar trebui să aibă funcționalitatea de a „produceSound ()”
+- Fiecare animal ar trebui să aibă funcționalitatea de a "produceSound()"
 - Iată ce tip de sunet ar trebui să producă fiecare animal:
     - **Dog: "Woof!"**
     - **Cat: "Meow meow"**
