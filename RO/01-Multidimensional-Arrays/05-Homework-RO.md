@@ -2694,7 +2694,7 @@ Va exista doar un `P` pentru toate datele de intrare.
 
 [hints]
 [hint]
-Implement an `isDead` method that returns a boolean:
+Implementați metoda `isDead` care returnează o valoare booleană:
 
 ```java
 private static boolean isDead(Integer[] currBunny, 
@@ -2709,7 +2709,7 @@ private static boolean isDead(Integer[] currBunny,
 ```
 [/hint] 
 [hint]
-Spread the bunnies as follows:
+Împrăștiați iepurașii după cum urmează:
 
 ```java
 private static void spreadBunnies(
@@ -2735,7 +2735,7 @@ private static void spreadBunnies(
 ```
 [/hint] 
 [hint]
-Do not forget to perform the necessary validations: 
+Nu uitați să realizați validările necesare:
 
 ```java
 private static boolean isCellFree(
