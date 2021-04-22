@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Problemă cu soluție: Santa Workshop Structure
+# Problemă cu Soluție: Santa Workshop Structure
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/10-Exam-Prep-1/RO/interactive-java-oop-advanced-exam-preparation-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -8,7 +8,7 @@
 [code-upload allowedMemory="30" /]
 [task-description]
 
-# Setare
+## Setare
 
 **Aici este un link către** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/10-Java-OOP-Advanced-Exam-Preparation.zip) **pentru această sarcină.**
 
@@ -20,7 +20,7 @@
 - **Nu** vă încălcați  **implementările interfețelor** prin adăugarea în clasa concretă a **mai multror metode publice** decât cele definite deja în interfață 
 - Asigurați-vă că **nu sunt câmpuri publice** nicăieri în codul dvs. 
 
-# Descriere
+## Descriere
 
 Sarcina conține interfețe gata - implementați funcționalitatea acestora în **clasele corecte**.
 
@@ -28,7 +28,7 @@ Există **patru** tipuri de entități în aplicație: **Dwarf, Present, Worksho
 
 Ar trebui să existe un  **DwarfRepository**, precum și un **PresentRepository**.
 
-# BaseDwarf
+## BaseDwarf
 
 **BaseDwarf** este  **o clasă de bază** pentru fiecare **type of Dwarf** și aceasta  **nu ar trebui să poată fi instanțiată**.
 
@@ -90,7 +90,7 @@ Constructorul ar trebui să ia următoarele valori la inițializare:
 
 - **(String name)**
 
-# InstrumentImpl
+## InstrumentImpl
 
 **InstrumentImpl** este clasa care reprezintă unealta pe care o folosește un **Dwarf** pentru a crea un **Present**.
 
@@ -120,7 +120,7 @@ Constructorul ar trebui să ia următoarele valori la inițializare:
 - `boolean isBroken()` 
   * această metodă returnează **true** atunci când **power** devine egal cu **0**
 
-# PresentImpl
+## PresentImpl
 
 Aceasta este clasa care deține informațiile despre  **Present** la care lucrează un **Dwarf**.
 
@@ -154,7 +154,7 @@ Aceasta este clasa care deține informațiile despre  **Present** la care lucrea
 - `boolean isDone()`
   * metoda **isDone()** returnează **true**, în cazul în care  **energyRequired** ajunge la **0**.
 
-# WorkshopImpl
+## WorkshopImpl
 
 Clasa **WorkshopImpl** deține acțiunea principală, care este metoda **craft**.
 
@@ -171,7 +171,7 @@ Metoda **craft** funcționează în felul următor:
 
 - La un moment dat, **puterea** uneltei curente **ajunge la** 0 sau **scade sub 0**, ceea ce înseamnă că e **stricată**. Atunci piticul trebuie să ia **următoarea unealtă** din colecția sa, dacă are **niște unelte rămase**
 
-# DwarfRepository
+## DwarfRepository
 
 **DwarfRepository** este repozitoriul pentru piticii care lucrează la atelierul lui Moș Crăciun.
 

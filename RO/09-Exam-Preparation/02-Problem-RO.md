@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Problemă cu soluție: Santa Workshop Business Logic
+# Problemă cu Soluție: Santa Workshop Business Logic
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/10-Exam-Prep-1/RO/interactive-java-oop-advanced-exam-preparation-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -136,7 +136,7 @@ Returnează informații despre **cadourile create** și despre **pitici**:
 
 "**Instruments:** \{**countInstruments**\} **not broken left**"
 
-# Intrare/Ieșire 
+## Intrare/Ieșire 
 
 AVa fi furnizată o interfață, care va sprijini procesul de execuție corect al programului dumneavoastră.
 
