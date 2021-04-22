@@ -530,10 +530,10 @@ public class T04_TestPersonFields \{
     private void validateField(Class clazz, ExpField expField) \{
         String expectedName = expField.name;
 
-        // Returnează null dacă câmpul nu există
+        // Returns null if the field does not exist
         Field actualField = getField(clazz, expectedName);
 
-        // Testează dacă câmpul există
+        // Tests whether the field exist
         String nameMessage = String.format(FIELD_NOT_PRESENT_ERROR_MESSAGE, clazz.getName(), expectedName);
         Assert.assertNotNull(nameMessage, actualField);
     \}
@@ -574,7 +574,7 @@ public class T05_TestGettersInstance \{
 
     @Test
     public void validateAstronautInstance() \{
-        // Aranjare
+        // Arrange
         Object expectedName = "Peter";
         Object expectedAge = 10;
 
@@ -582,12 +582,12 @@ public class T05_TestGettersInstance \{
         Class\<?\> childClass = getType("Child");
         Object childObject = createObjectInstance(childClass, childArgs);
 
-        // Acțiune
-        // Invocare metode
+        // Act
+        // Invoke methods
         Object actualName = getMethodValue(childObject, childClass, "getName", null);
         Object actualAge = getMethodValue(childObject, childClass, "getAge", null);
 
-        // Afirmare
+        // Assert
         String nameMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, childClass.getName(), "getName", actualName, expectedName);
         String ageMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, childClass.getName(), "getAge", actualAge, expectedAge);
         Assert.assertEquals(nameMessage, expectedName, actualName);
@@ -1171,16 +1171,16 @@ public class T07_TestToStringMethodInstances \{
 
     @Test
     public void validateInstance() \{
-        // Aranjare
+        // Arrange
         Object\[\] bladeKnightArgs = new Object\[\]\{"New Hero", 25\};
         Class\<?\> bladeKnightClass = getType("BladeKnight");
         Object bladeKnightObject = createObjectInstance(bladeKnightClass, bladeKnightArgs);
 
         // Act
-        // Invocare metode
+        // Invoke methods
         Object actualBladeKnightToString = getMethodValue(bladeKnightObject, bladeKnightClass, "toString", null);
 
-        // Afirmare
+        // Assert
         String expectedBladeKnightToString = "Type: hero.BladeKnight Username: New Hero Level: 25";
         String bladeKnightMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, bladeKnightClass.getName(), "toString", actualBladeKnightToString, expectedBladeKnightToString);
         Assert.assertEquals(bladeKnightMessage, actualBladeKnightToString, expectedBladeKnightToString);
@@ -1469,19 +1469,19 @@ public class T04_TestSportCarInstance \{
 
     @Test
     public void validateInstance() \{
-        // Aranjare
+        // Arrange
         Object\[\] vehicleArgs = new Object\[\]\{10.0, 200\};
         Class\<?\> vehicleClass = getType("SportCar");
         Object vehicleObject = createObjectInstance(vehicleClass, vehicleArgs);
 
         // Act
-        // Invocare metode
+        // Invoke methods
         getMethodValue(vehicleObject, vehicleClass, "drive", new Object\[\]\{1\}, double.class);
         Object actualFuel = getMethodValue(vehicleObject, vehicleClass, "getFuel", null);
         Object actualFuelConsumption = getMethodValue(vehicleObject, vehicleClass, "getFuelConsumption", null);
         Object actualHorsePower = getMethodValue(vehicleObject, vehicleClass, "getHorsePower", null);
 
-        // Afirmare
+        // Assert
         double expectedFuel = 0;
         double expectedFuelConsumption = 10;
         int expectedHorsePower = 200;
@@ -1721,19 +1721,19 @@ public class T06_TestFamilyCarInstance \{
 
     @Test
     public void validateInstance() \{
-        // Aranjare
+        // Arrange
         Object\[\] vehicleArgs = new Object\[\]\{10.0, 200\};
         Class\<?\> vehicleClass = getType("FamilyCar");
         Object vehicleObject = createObjectInstance(vehicleClass, vehicleArgs);
 
         // Act
-        // Invocare metode
+        // Invoke methods
         getMethodValue(vehicleObject, vehicleClass, "drive", new Object\[\]\{1\}, double.class);
         Object actualFuel = getMethodValue(vehicleObject, vehicleClass, "getFuel", null);
         Object actualFuelConsumption = getMethodValue(vehicleObject, vehicleClass, "getFuelConsumption", null);
         Object actualHorsePower = getMethodValue(vehicleObject, vehicleClass, "getHorsePower", null);
 
-        // Afirmare
+        // Assert
         double expectedFuel = 7;
         double expectedFuelConsumption = 3;
         int expectedHorsePower = 200;
@@ -2152,7 +2152,7 @@ public class T05_TestCakeInstance \{
 
     @Test
     public void validateInstance() \{
-        // Aranjare
+        // Arrange
         String expectedName = "Nedelq";
 
         Object\[\] cakeArgs = new Object\[\]\{expectedName\};
@@ -2160,13 +2160,13 @@ public class T05_TestCakeInstance \{
         Object cakeObject = createObjectInstance(cakeClass, cakeArgs);
 
         // Act
-        // Invocare metode
+        // Invoke methods
         Object actualName = getMethodValue(cakeObject, cakeClass, "getName", null);
         Object actualPrice = getMethodValue(cakeObject, cakeClass, "getPrice", null);
         Object actualCalories = getMethodValue(cakeObject, cakeClass, "getCalories", null);
         Object actualGrams = getMethodValue(cakeObject, cakeClass, "getGrams", null);
 
-        // Afirmare
+        // Assert
         BigDecimal expectedPrice = new BigDecimal(5);
         double expectedCalories = 1000.0;
         double expectedGrams = 250.0;
@@ -2284,7 +2284,7 @@ public class T06_TestCoffeeInstance \{
 
     @Test
     public void validateInstance() \{
-        // Aranjare
+        // Arrange
         String expectedName = "Lavazza";
         double expectedCaffeine = 1.2;
 
@@ -2293,13 +2293,13 @@ public class T06_TestCoffeeInstance \{
         Object caffeineObject = createObjectInstance(caffeineClass, caffeineArgs);
 
         // Act
-        // Invocare metode
+        // Invoke methods
         Object actualName = getMethodValue(caffeineObject, caffeineClass, "getName", null);
         Object actualPrice = getMethodValue(caffeineObject, caffeineClass, "getPrice", null);
         Object actualCaffeine = getMethodValue(caffeineObject, caffeineClass, "getCaffeine", null);
         Object actualMilliliters = getMethodValue(caffeineObject, caffeineClass, "getMilliliters", null);
 
-        // Afirmare
+        // Assert
         BigDecimal expectedPrice = new BigDecimal(3.5);
         double expectedMilliliters = 50.0;
 
@@ -2620,7 +2620,7 @@ public class T03_TestDogInstance \{
 
     @Test
     public void validateInstance() \{
-        // Aranjare
+        // Arrange
         String expectedName = "Sharo";
         int expectedAge = 12;
         String expectedGender = "Male";
@@ -2630,13 +2630,13 @@ public class T03_TestDogInstance \{
         Object animalObject = createObjectInstance(animalClass, animalArgs);
 
         // Act
-        // Invocare metode
+        // Invoke methods
         Object actualName = getMethodValue(animalObject, animalClass, "getName", null);
         Object actualAge = getMethodValue(animalObject, animalClass, "getAge", null);
         Object actualGender = getMethodValue(animalObject, animalClass, "getGender", null);
         Object actualSound = getMethodValue(animalObject, animalClass, "produceSound", null);
 
-        // Afirmare
+        // Assert
 
         String expectedSound = "Woof!";
 
@@ -2752,7 +2752,7 @@ public class T04_TestFrogInstance \{
 
     @Test
     public void validateInstance() \{
-        // Aranjare
+        // Arrange
         String expectedName = "Gaag";
         int expectedAge = 12;
         String expectedGender = "Male";
@@ -2762,13 +2762,13 @@ public class T04_TestFrogInstance \{
         Object animalObject = createObjectInstance(animalClass, animalArgs);
 
         // Act
-        // Invocare metode
+        // Invoke methods
         Object actualName = getMethodValue(animalObject, animalClass, "getName", null);
         Object actualAge = getMethodValue(animalObject, animalClass, "getAge", null);
         Object actualGender = getMethodValue(animalObject, animalClass, "getGender", null);
         Object actualSound = getMethodValue(animalObject, animalClass, "produceSound", null);
 
-        // Afirmare
+        // Assert
 
         String expectedSound = "Ribbit";
 
@@ -2884,7 +2884,7 @@ public class T05_TestKittenInstance \{
 
     @Test
     public void validateInstance() \{
-        // Aranjare
+        // Arrange
         String expectedName = "Gaag";
         int expectedAge = 12;
         String expectedGender = "Female";
@@ -2894,13 +2894,13 @@ public class T05_TestKittenInstance \{
         Object animalObject = createObjectInstance(animalClass, animalArgs);
 
         // Act
-        // Invocare metode
+        // Invoke methods
         Object actualName = getMethodValue(animalObject, animalClass, "getName", null);
         Object actualAge = getMethodValue(animalObject, animalClass, "getAge", null);
         Object actualGender = getMethodValue(animalObject, animalClass, "getGender", null);
         Object actualSound = getMethodValue(animalObject, animalClass, "produceSound", null);
 
-        // Afirmare
+        // Assert
 
         String expectedSound = "Meow";
 
@@ -3016,7 +3016,7 @@ public class T06_TestTomcatInstance \{
 
     @Test
     public void validateInstance() \{
-        // Aranjare
+        // Arrange
         String expectedName = "Tomcat";
         int expectedAge = 12;
         String expectedGender = "Male";
@@ -3026,14 +3026,14 @@ public class T06_TestTomcatInstance \{
         Object animalObject = createObjectInstance(animalClass, animalArgs);
 
         // Act
-        // Invocare metode
+        // Invoke methods
         Object actualName = getMethodValue(animalObject, animalClass, "getName", null);
         Object actualAge = getMethodValue(animalObject, animalClass, "getAge", null);
         Object actualGender = getMethodValue(animalObject, animalClass, "getGender", null);
         Object actualSound = getMethodValue(animalObject, animalClass, "produceSound", null);
         Object actualToString = getMethodValue(animalObject, animalClass, "toString", null);
 
-        // Afirmare
+        // Assert
 
         String expectedSound = "MEOW";
         String expectedToString = "Tomcat" + System.lineSeparator() +
@@ -3144,3 +3144,4 @@ Test Passed!
 [/code-task]
 
 [/slide]
+
