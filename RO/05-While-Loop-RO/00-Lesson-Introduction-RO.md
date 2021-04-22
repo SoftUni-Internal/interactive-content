@@ -5,26 +5,26 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/RO/Java-While-Loops-1-2-Introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In această lecție vom învăța despre:
+## În această lecție veți învăța:
 
-**1. Bucla While în Java**
+**1. Bucla While**
 
-- Cum folosim buclele While
+- Cum să folosiți buclele while
 
-**2. Buclele While sau buclele For**
+**2. Buclele While și Buclele For**
 
-- Care este diferența dintre buclele While și For
+- Care este diferența dintre buclele while și for
 
-**3. Opertaortul Break**
+**3. Operatorul Break**
 
-- Când putem folosi operatorul **Break**
+- Când puteți folosi operatorul **Break**
 
 
-**5. Bucle infinite While**
+**5. Bucle Infinite While**
 
-- Ce sunt **Buclele infinite** și cum să le folosim corect
+- Ce sunt **Buclele infinite** și cum să le folosiți corect
 
-**6. Exerciții practice**
+**6. Exerciții Practice**
 
 
 
