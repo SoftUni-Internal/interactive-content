@@ -493,7 +493,7 @@ Creați un program care calculează și imprimă suma unei secvențe în zigzag:
 | **Intrare**                | **Ieșire** |
 | -------------------------- | ---------- |
 | zigZagSum(2, [10, 20]) | 10         |
-| zigZagSum(3, [5, 5])   | 0          |
+| zigZagSum(2, [5, 5])   | 0          |
 
 [/task-description]
 [tests]
@@ -507,7 +507,7 @@ zigZagSum(2, [10, 20])
 [/test]
 [test open]
 [input]
-zigZagSum(3, [5, 5])
+zigZagSum(2, [5, 5])
 [/input]
 [output]
 0
@@ -621,9 +621,9 @@ Creați un program care găsește câte numere dintr-o secvență sunt divizibil
 
 | **Intrare**  | **Ieșire** |
 |   ---      |    --- |
-| divideWithoutRemainder(2, [8, 6, 4]) | 100.00\%   |
+| divideWithoutRemainder(2, [2, 11, 4]) | 100.00\%   |
 |                                            | 0.00\%     | 
-|                                            | 66.66\%    |
+|                                            | 50.00\%    |
 
 [/task-description]
 [tests]
@@ -639,12 +639,12 @@ divideWithoutRemainder(3, [3, 6, 9])
 [/test]
 [test open]
 [input]
-divideWithoutRemainder(2, [8, 6, 4])
+divideWithoutRemainder(2, [2, 11, 4])
 [/input]
 [output]
 100.00\%
 0.00\%
-66.66\%
+50.00\%
 [/output]
 [/test]
 [test]
