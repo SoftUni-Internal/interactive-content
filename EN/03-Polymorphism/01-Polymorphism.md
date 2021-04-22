@@ -76,7 +76,7 @@ Meow Meow...
 
 [slide hideTitle]
 
-# instanceOf Operator
+# InstanceOf Operator
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/EN/interactive-java-oop-advanced-polymorphism-7-Keyword-Instanceof-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

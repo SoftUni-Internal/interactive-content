@@ -1,4 +1,4 @@
-# Teme pentru acasă
+# Teme Pentru Acasă
 
 [slide hideTitle]
 # Problemă: Vehicles
@@ -19,8 +19,8 @@ De asemenea, **Camionul** are o gaură în rezervor și atunci când este **real
 Dacă vehiculul **nu poate** parcurge distanța specificată, nivelul său de combustibil rămâne neschimbat.
 
 ## Date de intrare
-- Pe **prima linie** - informații despre mașină în formatul **Mașină** \{**cantitate de combustibil** \} \{**litri pe km** \}
-- Pe **a doua linie** - informații despre camion în formatul **Camion** \{**cantitate de combustibil** \} \{**litri pe km** \}
+- Pe **prima linie** - informații despre mașină în formatul "**Car** \{**cantitate de combustibil**\} \{**litri pe km**\}" 
+- Pe **a doua linie** - informații despre camion în formatul "**Truck** \{**cantitate de combustibil**\} \{**litri pe km**\}" 
 - Pe **a treia linie** - **numărul de comenzi N** care vor fi date pe următoarele **N** linii
 - În următoarele **N** linii - comenzi în format:
     - **Drive Car** \{**distance** \}
