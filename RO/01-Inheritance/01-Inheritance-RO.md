@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Ce este moștenirea
+# Ce Este Moștenirea
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/RO/Java-OOP-Advanced-Inheritance-3-4-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -27,23 +27,23 @@ public class Cow extends Mammal {...}
 
 [slide hideTitle]
 
-# Moștenire- Exemplu
+# Moștenire - Exemplu
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/RO/Java-OOP-Advanced-Inheritance-5-inheritance-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Când folosim moștenirea, putem avea mai multe **Subclase**.
 
-În exemplu, creăm o clasă de bază `Person`, această clasă are proprietăți pe care le va avea fiecare clasă de persoană, cum ar fi un 'Nume' și o 'Adresă'.
+În exemplu, creăm o clasă de bază `Person`, această clasă are proprietăți pe care le va avea fiecare clasă de persoană, cum ar fi un "Nume" și o "Adresă".
 
-Când creăm un obiect de tipul 'Emplyee', angajatul nostru trebuie să aibă și **numele și adresa**.
+Când creăm un obiect de tipul "Emplyee", angajatul nostru trebuie să aibă și **numele și adresa**.
 
-Acesta este unul dintre motivele pentru care există **moștenirea**, în loc să retipăm aceleași proprietăți pentru clasa noastră „Employees”, putem „extinde” clasa „Person”, moșteni și reutiliza proprietățile acesteia.
+Acesta este unul dintre motivele pentru care există **moștenirea**, în loc să retipăm aceleași proprietăți pentru clasa noastră „Employees”, putem „extinde” clasa "Person", moșteni și reutiliza proprietățile acesteia.
 
 Subclasa se numește clasă **derivată**.
 
-De asemenea, extindem funcționalitatea prin adăugarea unui parametru 'Company'.
+De asemenea, extindem funcționalitatea prin adăugarea unui parametru "Company".
 
-Respectiv, facem același lucru pentru clasa 'Student', dar cu propria logică internă.
+Respectiv, facem același lucru pentru clasa "Student", dar cu propria logică internă.
 
 
 [image assetsSrc="inheritance-example(1).png" /]

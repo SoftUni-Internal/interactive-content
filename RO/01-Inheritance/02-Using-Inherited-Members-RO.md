@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Folosirea membrilor moșteniți
+# Folosirea Membrilor Moșteniți
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/RO/Java-OOP-Advanced-Inheritance-11-using-inherited-members-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -32,25 +32,25 @@ Person student = new Student();
 Person employee = new Employee();
 ```
 
-Ceea ce se schimbă aici este că vom avea acces doar la **membrii clasei de bază**, întrucât declarăm 'Student' ca 'Person'.
+Ceea ce se schimbă aici este că vom avea acces doar la **membrii clasei de bază**, întrucât declarăm "Student" ca "Person".
 
 [/slide]
 
 [slide hideTitle]
 
-# Reutilizarea constructorilor
+# Reutilizarea Constructorilor
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/RO/Java-OOP-Advanced-Inheritance-12-reusing-constructors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Constructorii **nu sunt moșteniți**.
 
-Când o **clasă părinte** declară un **constructor** cu parametri, fiecare unitate care moștenește din această clasă trebuie să poată utiliza constructorul **clasei părinte”**.
+Când o **clasă părinte** declară un **constructor** cu parametri, fiecare unitate care moștenește din această clasă trebuie să poată utiliza constructorul **"clasei părinte"**.
 
 Acest lucru se datorează faptului că constructorul de bază este apelat automat atunci când este creată clasa derivată.
 
 Parametrii din **constructorul** din clasa derivată trebuie să fie transmise către constructorul **părinte** cu cuvântul cheie `super`.
 
-Iată un exemplu de „înlănțuire a constructorului”.
+Iată un exemplu de "înlănțuire a constructorului".
 
 ```java
 class Person{
@@ -85,7 +85,7 @@ class Student extends Person {
 
 [slide hideTitle]
 
-# Gândirea la moștenire - Extends
+# Gândirea la Moștenire - Extends
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/RO/Java-OOP-Advanced-Inheritance-13-thinking-about-inheritance-extends-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -102,7 +102,7 @@ Când moștenim o clasă, memoria este alocată pentru **părinte**, plus memori
 
 [slide hideTitle]
 
-# Moștenirea are o relație tranzitivă
+# Moștenirea are o Relație Tranzitivă
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/RO/Java-OOP-Advanced-Inheritance-14-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -119,7 +119,7 @@ Aceasta este ceea ce este **relația tranzitivă**: o **Subclasă** obține toat
 [/slide]
 
 [slide hideTitle]
-# Moștenirea multiplă
+# Moștenirea Nultiplă
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/RO/Java-OOP-Advanced-Inheritance-15-multiple-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -140,7 +140,7 @@ public class Student extends Person, CollegeStudent // Nu este permis
 [/slide]
 
 [slide hideTitle]
-# Acces la membrii clasei de bază
+# Acces la Membrii Clasei de Bază
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/RO/Java-OOP-Advanced-Inheritance-16-access-to-base-class-members-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -172,7 +172,7 @@ class Employee extends Person {
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Multiple Inheritance
+# Problemă cu Soluție: Multiple Inheritance
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/RO/Java-OOP-Advanced-Inheritance-18-problem-and-solution-multiple-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -189,7 +189,9 @@ Creați trei clase numite **Animal**, **Dog** și **Puppy**.
 
 **Puppy** - care deține o singură metodă publică `weep()` care tipărește: **„weepings...”**.
 
-**Dog** - ar trebui să se extindă **Animal**. **Puppy** ar trebui să extindă **Dog**.
+**Dog** - ar trebui să se extindă **Animal**
+
+**Puppy** ar trebui să extindă **Dog**.
 
 [image assetsSrc="inheritance-example(10).png" /]
 
@@ -251,7 +253,7 @@ Test Passed!
 
 
 [slide hideTitle]
-# Problemă cu soluție: Hierarchical Inheritance
+# Problemă cu Soluție: Hierarchical Inheritance
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/RO/Java-OOP-Advanced-Inheritance-19-problem-and-solution-hierarchical-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
