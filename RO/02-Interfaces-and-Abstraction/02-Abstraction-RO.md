@@ -32,7 +32,7 @@ Există **două** moduri în care putem folosi **abstractizarea** în Java:
 Să vedem cum să abstractizăm clasele.
 
 ``` java
-// Clasa părinte abstractă „Animal”
+// Clasa părinte abstractă "Animal"
 abstract class Animal {
   // Abstractizarea metodei "sound"
   public abstract void sound();
@@ -120,7 +120,7 @@ Walking...
 |**Abstractizare**|**încapsulare**|
 |---|---|
 | Rezolvă problema la nivel de proiectare. | Rezolvă problema la nivel de implementare. |
-| Vă permite să vă concentrați asupra „ce” face obiectul în loc de „cum”. | Înseamnă să țineți detaliile interne sau tehnica „cum” face un obiect ceva. |
+| Vă permite să vă concentrați asupra "ce" face obiectul în loc de "cum". | Înseamnă să țineți detaliile interne sau tehnica "cum" face un obiect ceva. |
 | Folosit pentru a ascunde date nedorite și pentru a furniza date relevante. | Păstrează codul și datele într-o singură unitate pentru a proteja datele de lumea exterioară. |
 | Aspectul exterior, utilizat în ceea ce privește designul. Exemplu: Aspect exterior al unui telefon mobil - are un ecran de afișare și butoane de tastatură pentru a forma un număr. | Aspectul interior, utilizat în ceea ce privește implementarea. Exemplu: Detaliu de implementare interioară a unui telefon mobil - modul în care butonul tastaturii și ecranul de afișare sunt conectate utilizând circuite. |
 [/slide]

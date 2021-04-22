@@ -1,4 +1,4 @@
-# Temă pentru acasă
+# Temă Pentru Acasă
 
 [slide hideTitle]
 # Problemă: Define an Interface Person
@@ -1374,7 +1374,7 @@ De asemenea, creați o clasă numită **Robot** care are un **id** și un **mode
 
 Includeți funcționalități repetate în interfețe și implementați-le în clasele dvs.
 
-Veți primi o cantitate necunoscută de linii până când se primește comanda „**End**”, fiecare linie va conține informații într-unul dintre următoarele formate:
+Veți primi o cantitate necunoscută de linii până când se primește comanda "**End**", fiecare linie va conține informații într-unul dintre următoarele formate:
 
 - "**Citizen** \{**name**\} \{**age**\} \{**id**\} \{**birthdate**\}" pentru cetățeni
 

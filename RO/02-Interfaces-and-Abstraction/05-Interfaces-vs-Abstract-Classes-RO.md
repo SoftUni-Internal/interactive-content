@@ -36,7 +36,7 @@ Putem pune aceste linii de cod într-o clasă abstractă și le putem extinde la
 # Descriere
 Modelați o aplicație care conține o **clasă Ferrari** și o **interfață**.
 
-Sarcina dvs. este simplă - aveți o **mașină - Ferrari**, modelul său este „**488-Spider**” și are un **șofer**.
+Sarcina dvs. este simplă - aveți o **mașină - Ferrari**, modelul său este "**488-Spider**" și are un **șofer**.
 
 Ferrari-ul dvs. ar trebui să aibă funcționalitatea de a **folosi frâna** și **a împinge pedala de gaz**.
 

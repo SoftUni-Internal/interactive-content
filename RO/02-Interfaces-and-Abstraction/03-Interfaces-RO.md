@@ -12,7 +12,7 @@ O **interfață** Java poate avea metode și variabile ca o clasă, dar toate **
 
 Folosim **interfețe** atunci când avem nevoie de o **mai mare securitate**.
 
-După cum știm, Java nu acceptă „**moștenirea multiplă**”.
+După cum știm, Java nu acceptă "**moștenirea multiplă**".
 
 Totuși, putem realiza acest lucru folosind **interfețele*, deoarece o clasă poate **implementa** multe interfețe.
 
@@ -752,7 +752,7 @@ Test Passed!
 
 
 [slide hideTitle]
-# Problemă cu soluție: Car Shop Extended
+# Problemă cu Soluție: Car Shop Extended
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/RO/Java-OOP-Advanced-Interfaces-and-Abstraction-19-problem-and-solution-car-shop-extended-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -1585,7 +1585,7 @@ class TestInterfaceDefault {
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/RO/Java-OOP-Advanced-Interfaces-and-Abstraction-24-static-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Un alt lucru pe care îl putem face de la Java 8 este să **definim** și **să implementăm** metode „statice” în interfețe.
+Un alt lucru pe care îl putem face de la Java 8 este să **definim** și **să implementăm** metode "statice" în interfețe.
 
 Putem defini metode statice în interiorul interfețelor în același mod în care am defini una într-o clasă.
 
@@ -1603,7 +1603,7 @@ public interface Car {
 }
 ```
 
-Dacă dorim să calculăm **puterea** motorului mașinii noastre, invocăm metoda „getHorsePower ()”.
+Dacă dorim să calculăm **puterea** motorului mașinii noastre, invocăm metoda "getHorsePower()".
 
 ``` java
 Vehicle.getHorsePower(480, 2500));

@@ -134,7 +134,7 @@ Soldații tăi verifică **ID-urile** tuturor celor care intră și ies.
 
 Veți primi o cantitate **necunoscută** de linii de pe consolă.
 
-Până la primirea comenzii „**End**”, pe fiecare linie vor apărea informații despre **un cetățean** sau **un robot** care dorește să intre în orașul dvs., informațiile vin în următorul format:
+Până la primirea comenzii "**End**", pe fiecare linie vor apărea informații despre **un cetățean** sau **un robot** care dorește să intre în orașul dvs., informațiile vin în următorul format:
 
 - "\{**name**\} \{**age**\} \{**id**\}" pentru cetățeni
 - "\{**model**\} \{**id**\}" pentru roboți

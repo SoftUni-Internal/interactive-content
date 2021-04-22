@@ -32,7 +32,7 @@ Folosim clase **abstracte** pentru a modela abstracții.
 
 - Clasele de abstracte sunt **concepute pentru a fi moștenite** (sau extinse)
 
-Clasele „concrete” precum **Cerc** și **Dreptunghi** reprezintă **entități** reale, nu abstracții.
+Clasele "concrete" precum **Cerc** și **Dreptunghi** reprezintă **entități** reale, nu abstracții.
 
 - Clasele concrete definesc **câmpuri de date** + **funcționalitate concretă** (metode)
 
@@ -67,7 +67,7 @@ Acesta este un exemplu de clasă abstractă, care modelează o abstractizare **"
 
 - În acest fel, clasa copil **are trei câmpuri**: două moștenite din clasa părinte și unul definit suplimentar
 
-- **Moștenește** câmpurile **„x”** și **„y”** din "Figure" și adaugă un câmp suplimentar **"radius"**
+- **Moștenește** câmpurile **"x"** și **"y"** din "Figure" și adaugă un câmp suplimentar **"radius"**
 
 - Clasa **Circle** definește o **implementare concretă** a metodei abstracte **"calcArea"**, care calculează aria cercului folosind formula binecunoscută din matematică la nivel școlar
 
