@@ -609,7 +609,7 @@ Roboții **stau în linie în ordinea apariției lor**.
 
 [hints] 
 [hint]
-Increase the total time while the product line is full:
+Măriți timpul total în timp ce linia de produse este plină:
 
 ```java
 while (!productLine.isEmpty()) {
@@ -625,14 +625,14 @@ while (!productLine.isEmpty()) {
 ```
 [/hint] 
 [hint]
-Get the current product using the `.poll()` method:
+Obțineți produsul curent utilizând metoda `.poll()`:
 
 ```java
 String currentProduct = productLine.poll();
 ```
 [/hint] 
 [hint]
-Implement a method for time formatting:
+Implementați o metodă de formatare a timpului:
 
 ```java
 private static String formatTime(long totalTime) {
@@ -2059,7 +2059,7 @@ Printați numărul de zile **după** care nu moare nicio plantă, i.e. timpul du
 
 [hints]
 [hint]
-Create a `plants` array, an `ArrayDeque` of indexes, and `int[] days`:
+Creați o matrice `plants`, un `ArrayDeque` de indici și `int [] days`:
 
 ```java
 Scanner reader = new Scanner(System.in);
@@ -2076,7 +2076,7 @@ int[] days = new int[n];
 ```
 [/hint] 
 [hint]
-Create a **for-loop** from **1** to **n**:
+Creați un **buclă-for** de la **1** la **n**:
 
 ```java
 for (int i = 1; i < n; i++) {
@@ -2095,7 +2095,7 @@ for (int i = 1; i < n; i++) {
 ```
 [/hint] 
 [hint]
-Implement a `getMaxDays` method:
+Implementați o metodă `getMaxDays`:
 
 ```java
 private static int getMaxDays(int[] days) {

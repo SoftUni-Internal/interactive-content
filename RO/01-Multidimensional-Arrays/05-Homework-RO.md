@@ -2735,7 +2735,7 @@ private static void spreadBunnies(
 ```
 [/hint] 
 [hint]
-Nu uitați să realizați validările necesare:
+Nu uitați să realizați validările celelalte:
 
 ```java
 private static boolean isCellFree(
