@@ -3428,6 +3428,39 @@ Finally, print the collected **junk** items, in **alphabetic** order.
 |  | leathers: 6 |
 |  | stones: 5 |
 
+[hints]
+[hint]
+Store the key and junk materials in two different data structures.
+
+```java
+Map<String, Integer> legendaryResources = new TreeMap<>();
+legendaryResources.put("shards", 0);
+legendaryResources.put("fragments", 0);
+legendaryResources.put("motes", 0);
+
+Map<String, Integer> trashResources = new TreeMap<>();
+```
+[/hint] 
+[hint]
+Read lines of input until the item is obtained:
+
+```java
+while (!legendaryObtained) {
+  // ...
+}
+```
+[/hint] 
+[hint]
+Split the tokens on each input line and iterate through them.
+
+```java
+String[] tokens = scan.nextLine().split("\\s+");
+
+// ...
+```
+[/hint] 
+[/hints] 
+
 | **Input** | **Output** |
 | --- | --- |
 | 123 silver 6 shards 8 shards 5 motes | Dragonwrath obtained! |

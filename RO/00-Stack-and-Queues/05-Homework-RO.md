@@ -607,6 +607,46 @@ Roboții **stau în linie în ordinea apariției lor**.
 | apple |  |
 | End |  |
 
+[hints] 
+[hint]
+Increase the total time while the product line is full:
+
+```java
+while (!productLine.isEmpty()) {
+  totalTime++;
+  for (int i = 0; i < workingRobot.length; i++) {
+    if (workingRobot[i] > 0) {
+      workingRobot[i]--;
+    }
+  }
+
+  // ... 
+}
+```
+[/hint] 
+[hint]
+Get the current product using the `.poll()` method:
+
+```java
+String currentProduct = productLine.poll();
+```
+[/hint] 
+[hint]
+Implement a method for time formatting:
+
+```java
+private static String formatTime(long totalTime) {
+  long hours = (totalTime / 3600) % 24;
+  long minutes = (totalTime / 60) % 60;
+  long seconds = totalTime % 60;
+
+  return String.format("%02d:%02d:%02d", 
+    hours, minutes, seconds);
+}
+```
+[/hint] 
+[/hints] 
+
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | ROB-60 | ROB - detail \[08:00:00\] |
@@ -1972,7 +2012,7 @@ Implementați un **algoritm care convertește** expresia matematică **din nota�
 [code-task title="Poisonous Plants" taskId="java-advanced-stack-and-queue-Poisonous-Plants" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -2016,6 +2056,61 @@ Printați numărul de zile **după** care nu moare nicio plantă, i.e. timpul du
 |  |  | După a treia zi, 3 plante supraviețuiesc și nu mai moare nicio plantă.  |
 |  |  | `Plantele = {(6, 1), (5, 2), (4, 4)}`  |
 |  |  | După a doua zi, plantele se opresc din murit.  |
+
+[hints]
+[hint]
+Create a `plants` array, an `ArrayDeque` of indexes, and `int[] days`:
+
+```java
+Scanner reader = new Scanner(System.in);
+
+int n = Integer.parseInt(reader.nextLine());
+String[] plants = reader.nextLine().split(" ");
+
+ArrayDeque <Integer> indexes = 
+  new ArrayDeque<>();
+
+indexes.push(0);
+
+int[] days = new int[n];
+```
+[/hint] 
+[hint]
+Create a **for-loop** from **1** to **n**:
+
+```java
+for (int i = 1; i < n; i++) {
+  int maxDays = 0;
+  
+  /** while(...) {
+      maxDays = Math.max(maxDays, days[indexes.pop()]);
+      } **/
+
+  if (indexes.size() > 0) {
+    days[i] = maxDays + 1;
+  }
+
+  indexes.push(i);
+}
+```
+[/hint] 
+[hint]
+Implement a `getMaxDays` method:
+
+```java
+private static int getMaxDays(int[] days) {
+  int max = Integer.MIN_VALUE;
+
+  for (int day: days) {
+    if (day > max) {
+      max = day;
+    }
+  }
+  return max;
+}
+```
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]
