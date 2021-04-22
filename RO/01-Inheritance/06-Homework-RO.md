@@ -9,22 +9,22 @@
 # Descriere
 Modelați o aplicație care stochează date despre diferite persoane.
 
-Ar trebui să permită introducerea unei **persoane** sau a unui **copil**.
+Ar trebui să permită introducerea unei **Person** sau a unui **Child**.
 
 Clasa copil derivă din clasa persoană.
 
-Fiecare persoană are un **nume** și o **vârstă**.
+Fiecare persoană are un **name** și o **age**.
 
-Clasa **Persoană** ar trebui să aibă și **getters** pentru câmpurile sale.
+Clasa **Person** ar trebui să aibă și **getters** pentru câmpurile sale.
 
-Creați o clasă **Copil** care moștenește **Persoană** și are aceeași definiție a constructorului public.
+Creați o clasă **Child** care moștenește **Person** și are aceeași definiție a constructorului public.
 
 Atenție: **Reutilizați constructorul clasei Person**.
 
 ## Notă
 Aveți nevoie de o clasă publică **Main**.
 
-Creați un pachet numit **persoană**.
+Creați un pachet numit **person**.
 
 ## Sample Main()
 
