@@ -44,7 +44,7 @@ module.exports = 'Hello world!';
 
 - ES6 Modules
 	* built directly into JavaScript
-	* declared using the import/export statements
+	* declared using the `import`/`export` statements
 
 ```js
 import * as myModule from './myModule.js'

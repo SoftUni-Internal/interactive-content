@@ -33,7 +33,7 @@ This module contains the `count` variable and the `increase()` function.
 
 As you may know, variables defined with `var` are **available globally** by default.
 
-**IIFE Modules** can override this behavior.
+**IIFE modules** can override this behavior.
 
 The object that is returned contains the functionality and data that we make globally accessible.
 
