@@ -76,7 +76,7 @@ Else print:
 
 [hints]
 [hint]
-Create two arrays of integers, for storing each lootbox.
+Create two arrays of integers for storing each lootbox.
 Make sure to convert the input numbers to `Integer`.
 [/hint] 
 [hint]

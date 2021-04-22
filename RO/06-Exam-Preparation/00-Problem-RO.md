@@ -75,14 +75,15 @@ Print altele:
 
 [hints]
 [hint]
-Create an array of integers for storing each lootbox.
-Make sure to convert the input numbers to Integer.
+Creați două matrice de numere întregi pentru stocarea fiecărui lootbox.
+Asigurați-vă că ați convertit numerele date drept date de intrare în `Integer`.
+
 [/hint] 
 [hint]
-Create a **queue** for the first lootbox, and a **stack** for the second.
+Creați o coadă pentru primul lootbox și o stivă pentru cel de-al doilea. 
 [/hint] 
 [hint]
-Use the `Stack.peek()` method to get the **first** item in the **queue** and the **last** item in the **stack**.
+Utilizați metoda `.peek()` pentru a prelua **primul** element din **coadă**, precum și **ultimul** element din **stivă**.
 [/hint] 
 [/hints] 
 
