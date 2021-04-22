@@ -82,16 +82,16 @@ Când jucătorul atinge **punctul de finalizare** sau **numărul de comenzi este
 
 [hints]
 [hint]
-Iterate over the matrix using a for-loop.
+Iterați prin matrice utilizând o buclă-for:
 [/hint] 
 [hint]
-Use a switch-case statement to handle each turn - left, right, up, and down.
+Utilizați o instrucțiune switch-case pentru a gestiona fiecare întoarcere - stânga, dreapta, sus și jos.
 [/hint]
 [hint]
-Implement a method that returns whether the player is in range, and a second one that checks if they are on a trap.
+Implementați o metodă care returnează dacă jucătorul se află în interval și o a doua metodă care verifică dacă aceștia se află într-o capcană.
 [/hint] 
 [hint]
-Print the matrix using two nested loops.
+Printați matricea utilizând două bucle-for imbricate.
 [/hint] 
 [/hints] 
 
