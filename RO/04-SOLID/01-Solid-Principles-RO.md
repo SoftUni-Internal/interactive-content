@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Prezentare generală a principiilor SOLID
+# Prezentare Generală a Principiilor SOLID
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/RO/interactive-java-oop-advanced-s.o.l.i.d-3-5-solid-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -27,7 +27,7 @@ Atunci când sunt aplicate corect, acestea fac codul nostru mai **extensibil**, 
 **S.O.L.I.D** constă în următoarele cinci principii:
 
 - **S** - **Responsabilitate unică** - o unitate ar trebui să aibă o singură responsabilitate
-- **O** - **Deschis – închis** - codul nostru ar trebui să fie deschis pentru extensie, dar închis pentru modificare
+- **O** - **Deschis - închis** - codul nostru ar trebui să fie deschis pentru extensie, dar închis pentru modificare
 - **L** - **Înlocuirea Liskov** - obiectele ar trebui să fie înlocuibile cu instanțe ale subtipurilor lor fără a modifica corectitudinea programului
 - **I** - **Segregarea interfeței** - multe interfețe specifice sunt mai bune decât o interfață generală
 - **D** - **Inversia dependenței** - codul ar trebui să depindă de abstracții, nu de concreții
