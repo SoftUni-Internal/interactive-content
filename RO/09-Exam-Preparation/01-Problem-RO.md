@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Problem with Solution: Santa Workshop Structure
+# Problemă cu soluție: Santa Workshop Structure
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/10-Exam-Prep-1/EN/interactive-java-oop-advanced-exam-preparation-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -8,48 +8,48 @@
 [code-upload allowedMemory="30" /]
 [task-description]
 
-# Setup
+# Setare
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/10-Java-OOP-Advanced-Exam-Preparation.zip) **for these tasks.**
+**Aici este un link către** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/10-Java-OOP-Advanced-Exam-Preparation.zip) **pentru această sarcină.**
 
-- Upload **only the santaWorkshop package** for every task **except Unit Tests**
-- **Do not modify the interfaces or their packages**
-- Use **strong cohesion** and **loose coupling**
-- **Use inheritance and the provided interfaces wherever possible**
-  * this includes **constructors, method parameters** and **return types**
-- **Do not** violate your **interface implementations** by adding **more public methods** in the concrete class than the ones already defined in the interface
-- Make sure you have **no public fields** anywhere in your code
+- Încărcați **doar pachetul santaWorkshop** pentru fiecare sarcină **cu excepția Unit Tests**
+- **Nu modificați interfețele sau pachetele acestora**
+- Folosiți **coeziune poternică** și **cuplare slabă**
+- **Folosiți moștenirea și interfețele furnizate ori de câte ori acest lucru este posibil**
+  * Aceasta înclude **constructorii, parametrii metodelor** și **tipurile de returnare**
+- **Nu** vă încălcați  **implementările interfețelor** prin adăugarea în clasa concretă a **mai multror metode publice** decât cele definite deja în interfață 
+- Asigurați-vă că **nu sunt câmpuri publice** nicăieri în codul dvs. 
 
-# Description
+# Descriere
 
-The task contains ready interfaces - implement their functionality in the **correct classes**.
+Sarcina conține interfețe gata - implementați funcționalitatea acestora în **clasele corecte**.
 
-There are **four** types of entity in the application: **Dwarf, Present, Workshop, Instrument**. 
+Există **patru** tipuri de entități în aplicație: **Dwarf, Present, Workshop, Instrument**. 
 
-There should also be a **DwarfRepository**, as well as a **PresentRepository**.
+Ar trebui să existe un  **DwarfRepository**, precum și un **PresentRepository**.
 
 # BaseDwarf
 
-**BaseDwarf** is a **base class** for any **type of Dwarf** and it **should not be able to be instantiated**.
+**BaseDwarf** este  **o clasă de bază** pentru fiecare  **type of Dwarf** și aceasta  **nu ar trebui să poată fi instanțiată**.
 
 ## Data:
 
 - **name - String**
-  * if the name **is null or whitespace**, throw a `NullPointerException` with the message: 
+  * dacă numele e **null or whitespace**, aruncați `NullPointerException` cu mesajul: 
   "**Dwarf name cannot be null or empty.**"
-  * all names will be **unique**
+  * toate numele vor fi **unice**
 
 - **energy -  int**
-  * the energy of a dwarf
-  * if the **initial** energy is below 0, throw an `IllegalArgumentException` with the message:
+  * energia unui pitic 
+  * dacă energia  **inițială** este de sub 0, aruncați `IllegalArgumentException` cu mesajul:
   "**Cannot create a Dwarf with negative energy!**"
 
 - **instruments - Collection**\<**Instrument**\>
-  * a collection of a dwarf's instruments
+  * colecția de instrumente a unui pitic
 
 ## Constructor:
 
-A **BaseDwarf** should take the following values on initialization: 
+A **BaseDwarf** ar trebui să ia următoarele valori la inițializare:
 
 - **(String name, int energy)**
 
@@ -57,121 +57,123 @@ A **BaseDwarf** should take the following values on initialization:
 ## Behavior:
 
 - `void work()`
-  * the **work()** method decreases a dwarfs' energy by 10
-  * a dwarf's energy should **not** drop **below 0** (if the power becomes less than 0, set it to 0)
+  * metoda **work()** metoda scade energia unui pitic cu 10 unități
+  * energia unui pitic trebuie să **nu** scadă **sub 0** (dacă energia devine mai puțină de 0, o setați la 0) 
 
 - `void addInstrument(Instrument instrument)` 
-  * this method **adds** an **instrument** to the dwarf's **collection** of instruments
+  * această metodă **adaugă** un **instrument** la **colecția** de instrumente a piticului
 
 - `boolean canWork()`
-  * returns **true**, if the current energy of the dwarf is **greater** than **0**
-  * **false**, otherwise
+  * returnează **true**, în cazul în care energia curentă a piticului este **mai mare** decât **0** și 
+  * **false** în cazul contrar.
 
 
 ## Child classes:
 
-There are two types of **BaseDwarf**:
+Sunt două tipuri de **BaseDwarf**:
 
 ### Happy
 
-Initial **energy** units: **100**
+Unități inițiale de **energy**: **100**
 
-The constructor should take the following values upon initialization:
+Constructorul ar trebui să ia următoarele valori la inițializare:
 
 - **(String name)**
 
 ### Sleepy
 
-Initial **energy** units: **50**
+Unități inițiale de **energy**: **50**
 
-The **work()** method **decreases** the dwarf's energy by an additional **5 units**.
+Metoda **work()**  **scade**  suplimentar energia priticului cu **5 unități**.
 
-The constructor should take the following values upon initialization:
+Constructorul ar trebui să ia următoarele valori la inițializare:
 
 - **(String name)**
 
 # InstrumentImpl
 
-The **InstrumentImpl** is a class that represents the tool, which a **Dwarf** uses to craft a **Present**.
+**InstrumentImpl** este clasa care reprezintă unealta pe care o folosește un **Dwarf** pentru a crea un **Present**.
 
-**It should** offer the option to be **instantiated**.
+**Această clasă** oferă opțiunea de a fi **instanțiată**.
 
-## Data
+## Date
 
 - **power - int**
 
-  * the power of an instrument
-  * if the **initial** power is below **0**, throw an `IllegalArgumentException` with the message:
+  * puterea unei unelte
+  * Dacă puterea **initial** este de sub **0**, aruncați `IllegalArgumentException` cu mesajul:
   "**Cannot create an Instrument with negative power!**"
 
 ## Constructor
 
-An **InstrumentImpl** should take the following values upon initialization: 
+ **InstrumentImpl** ar trebui să ia următoarele valori la inițializare:
 
 - **(int power)**
 
 ## Behavior 
 
 - `void use()`
-  * the **use()** method **decreases** an instrument's **power** by **10**
-  * an instrument's power should **not** drop **below 0** 
-  * if the power becomes less than 0, set it to 0
+  * metoda  **use()**  **scade**  **puterea** uneltei cu **10**
+  * puterea unei unelte ar trebui să **nu** scadă **sub 0** 
+  * dacă puterea devine mai puțuină decât 0, o setați la 0
 
 - `boolean isBroken()` 
-  * this method returns **true** when its **power** becomes equal to **0**
+  * această metodă returnează **true** atunci când **power** devine egal cu **0**
 
 # PresentImpl
 
-This is the class that holds information about the **Present** that a **Dwarf** is working on.
+Aceasta este clasa care deține informațiile despre  **Present** la care lucrează un **Dwarf**.
 
-**It should** be able to be **instantiated**.
+**Aceasta ar trebui** să poată fi **inițializată**.
 
-## Data
+## Date
 
 - **name - String**
-  * if the name **is null or whitespace**, **throw a NullPointerException** with the message: 
+  * dacă numele **este null or whitespace**, **aruncați NullPointerException** cu mesajul
+: 
   "**Present name cannot be null or empty.**"
 
 - **energyRequired - int**
-  * the energy a present requires in order to be crafted
-  * if the **initial** energy is below **0**, throw an `IllegalArgumentException` with the message:
+  * energia necesară pentru crearea unui cadou 
+  * dacă energia **inițială** este sub **0**, aruncați `IllegalArgumentException` cu mesajul
+:
   "**Cannot create a Present requiring negative energy!**"
 
 ## Constructor 
 
-A **PresentImpl** should take the following values upon initialization: 
+ **PresentImpl** ar trebui să ia următoarele valori la inițializare: 
 
 - **(String name, int energyRequired)**
 
 ## Behavior
 
 - `void getCrafted()`
-  * the **getCrafted() decreases** the required energy of the present by **10 units**
-  * a present's required energy should **not** drop **below 0**
+  *  **getCrafted() scade** energia necesară pentru un cadou cu **10 unități**
+  * energia necesară pentru un cadou ar trebui să **nu** scadă **sub 0**
 
 - `boolean isDone()`
-  * the **isDone()** method returns **true** if the **energyRequired** reaches **0**.
+  * metoda **isDone()** returnează **true**, în cazul în care  **energyRequired** ajunge la **0**.
 
 # WorkshopImpl
 
-The **WorkshopImpl** class holds the main action, which is the **craft** method.
+Clasa **WorkshopImpl** deține acțiunea principală, care este metoda **craft**.
 
 ## Behavior
 
 - `void craft(Present present, Dwarf dwarf)`
 
-Here is how the **craft** method works:
+Metoda **craft** funcționează în felul următor:
 
-- The dwarf starts crafting the present
-    * this is only possible if the dwarf has energy and an instrument that is not broken
+- Piticul începe să creeze cadoul
+    * aceasta este posibilă doar în cazul în care piticul are energie și unealta sa nu este stricată
 
-- Keep working **until** the present is **done** and while the dwarf has **energy** left (and **instruments** to use)
+- Continuați munca **până când** cadoul este **gata** și în timp ce piticului îi rămâne **energie**  (și **unelte** de utilizat)
 
-- If at some point the **power** of the current instrument **reaches** 0 or **drops below 0**, meaning it gets **broken**, then the dwarf should take the **next instrument** from its collection, if it has **any left**
+- La un moment dat, **puterea** uneltei curente **ajunge la** 0 sau **scade sub 0**, ceea ce înseamnă că e **stricată**. Atunci piticul trebuie să ia **următoarea unealtă** din colecția sa, dacă are **niște unelte rămase**
 
 # DwarfRepository
 
-**DwarfRepository** is a repository for the dwarfs working at Santa's workshop.
+**DwarfRepository** este repozitoriul pentru piticii care lucrează la atelierul lui Moș Crăciun.
 
 ## Data
 
@@ -180,22 +182,22 @@ Here is how the **craft** method works:
 ## Behavior
 
 - `void add(Dwarf dwarf)`
-  - **adds** a dwarf to the collection
-  - every dwarf is **unique**. There will be no repeating dwarf names
+  - **adaugă** un pitic la colecție
+  - fiecare pitic este **unic**. Nu vor exista pitici cu nume repetitive
 
 - `boolean remove(Dwarf dwarf)`
-  * **removes** a dwarf from the collection
-  * returns **true** if the deletion was **sucessful**
+  * **elimină** un pitic din colecție
+  * returnează **true** în cazul unei eliminări **de succes**
 
 - `Dwarf findByName(String name)`
-  * returns the **dwarf** with that **name** if there is one
+  * returnează **piticul** cu acest **nume**, dacă acesta există 
 
 - `Collection<Dwarf> getModels()`
-  * returns a collection of dwarfs **(unmodifiable)**
+  * returnează o colecție de pitici  **(unmodifiable)**
 
 # PresentRepository
 
-The present repository is a repository for presents that await to be crafted.
+Acest repozitoriu este un repozitoriu pentru cadourile care urmează a fi făcute.
 
 ## Data
 
@@ -204,19 +206,19 @@ The present repository is a repository for presents that await to be crafted.
 ## Behavior
 
 - `void add(Present present)`
-  - **adds** a present to be crafted
-  - every present is **unique** . Тhere will not be a present with the same name
+  - **adaugă** un cadou care trebuie făcut
+  - fiecare cadou este **unic** . Nu vor fi cadouri cu același nume 
 
 - `boolean remove(Present present)`
-  - **removes** a present from the collection
-  - **returns** true if the deletion was **sucessful**
+  - **elimină** un cadou din colecție
+  - **returnează** true, dacă eliminarea a fosr **de succes**
 
 - `Present findByName(String name)`
-  - returns a **present** with that **name** if such exists
-  - Each given name will **be available** in the collection
+  - returnează **un cadou** cu acest **nume**, în cazul în care acesta există 
+  - Fiecare nume dat va **fi disponibil** în colecție
 
 - `Collection<Present> getModels()`
-  - returns the collection of presents (unmodifiable)
+  - returnează colecția de cadouri (nemodificabilă)
 
 
 

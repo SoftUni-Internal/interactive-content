@@ -1,32 +1,32 @@
 [slide hideTitle]
-# Problem with Solution: Christmas Unit Tests
+# problemă cu soluție: Christmas Unit Tests
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/10-Exam-Prep-1/EN/interactive-java-oop-advanced-exam-preparation-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Christmas Unit Tests" taskId="oop-advanced-java-exam-preparation-1-Christmas-Unit-Tests" executionType="tests-execution" executionStrategy="java-unit-tests" requiresInput]   
 
 [task-description]
-# Description
+# Descriere
 
-**Use the resources from the first task.**
+**Folosiți resursele din sarcina anterioară.**
 
-There will be a sceleton holding **Present** and **PresentBag** classes. 
+Va exista un schelet care deține clasele **Present** și **PresentBag**. 
 
-The class will have some methods, fields, and one constructor, all of which must be properly working. 
+Clasa va avea câteva metode, câmpuri și un singur constructor, care trebuie să funcționeze corespunzător.
 
-**Please do not** change any of the class content. 
+**Vă rugăm să nu** modificați conținutul claselor. 
 
-Cover each class with **unit tests** to make sure it iworks as intended.
+Acoperiți fiecare clasă cu **teste unitare** pentru a vă asigura că funcționează corect.
 
-You are provided with a **unit test project** in the **project skeleton**.
+Vi se oferă un **proiect de testare unitară** în **scheletul de proiect**.
 
-**Do not** use **mocking** in your **unit tests**!
+**Nu** folosiți **mocking** în **testele unitare**!
 
 ## Submit
 
-The **PresentBag** you need to test is in the **Christmas** package.
+Clasa **PresentBag** pe care trebuie să o testați este îm pachetul **Christmas**.
 
-You should place the package in a **zip** file.
+Trebuie să plasați pachetul într-un fișier **zip**.
 
 
 [/task-description]

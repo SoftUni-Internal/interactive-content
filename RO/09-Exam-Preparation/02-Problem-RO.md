@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Problem with Solution: Santa Workshop Business Logic
+# Problemă cu soluție: Santa Workshop Business Logic
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/10-Exam-Prep-1/EN/interactive-java-oop-advanced-exam-preparation-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -8,29 +8,29 @@
 
 [task-description]
 
-# Description
+# Descriere
 
-## The Controller Class
+## Clasa Controller 
 
-The business logic of the program should be concentrated around several **commands**. 
+Logica de afaceri a programului ar trebui să fie concentrată în jurul mai multor **comenzi**.
 
-The task contains interfaces, which we have to implement in the correct classes.
+Sarcina conține interfețe, pe care trebuie să le implementăm în clasele corecte.
 
-**Note:** The ControllerImpl class **should not** handle exceptions! 
+**Notă:** Clasa ControllerImpl **nu trebuie** să gestioneze excepții! 
 
-**The tests are designed to expect exceptions, not messages!**
+**Testele sunt concepute pentru a aștepta excepții, nu mesaje!**
 
-The first interface is **Controller**. You must create a **ControllerImpl** class, which implements the interface and all its methods. 
+Prima interfață este **Controller**. Trebuie să creați clasa **ControllerImpl** care implementează interfața și toate metodele sale. 
 
-The constructor of **ControllerImpl** does not take any arguments. 
+Constructorul clasei  **ControllerImpl** nu ia nici un argument. 
 
-The given methods should have the following logic:
+Metodele date trebuie să aibă următoarea logică:
 
-## Commands
+## Comenzi
 
-There are several commands, which control the business logic of the application. 
+Există câteva comenzi care controlează logica de afaceri a aplicației. 
 
-They are listed below.
+Acestea sunt enumerate mai jos.
 
 ### AddDwarf Command
 
@@ -39,11 +39,11 @@ They are listed below.
 - **type - String**
 - **dwarfName - String**
 
-**Functionality:**
+**Functionalitate:**
 
-Creates a dwarf with the given name of the given type. 
+Creează un pitic, cu numele dat și din tipul dat. 
 
-If the dwarf type is invalid, throw an `IllegalArgumentException` with the message:
+Dacă tipul piticului este nevalid,  aruncați `IllegalArgumentException` cu mesajul:
 
 **"Dwarf type doesn't exist!"**
 
@@ -59,64 +59,64 @@ The method should **return** the following message:
 
 - **power - int**
 
-**Functionality:**
+**Funcționalitate:**
 
-Creates an instrument with the given power and adds it to the collection of the dwarf. 
+Creează o unealtă cu puterea dată și o adaugă la colecția piticului. 
 
-If such dwarf does is not present, throw an `IllegalArgumentException` with the message:
+Dacă un astfel de pitic nu este prezent  `IllegalArgumentException` cu mesajul:
 
 "**The dwarf you want to add an instrument to doesn't exist!**"
 
-The method should **return** the following message:
+Metoda ar trebui să **returneze** umrătorul mesaj:
 
 "**Successfully added instrument with power** \{**instrumentPower**\} **to dwarf** \{**dwarfName**\}**!**"
 
 
-### AddPresent Command
+### Comanda AddPresent 
 
-**Parameters:**
+**Parametri**
 
 - **presentName** - String
 - **energyRequired** - int
 
-**Functionality:**
+**Funcționalitate:**
 
-Creates a **present** with the provided **name** and **required energy**.
+Creează **un cadou** cu **numele** furnizat și **energia necesară**.
 
-The method should **return** the following message:
+Metoda ar trebui să **returneze** umrătorul mesaj:
 
 - "**Successfully added Present:** \{**presentName**\}**!**"
 
-### CraftPresents Command
+### Comanda CraftPresents 
 
-**Parameters:**
+**Parametri:**
 
 - **presentName** - String
 
-**Functionality:**
+**Funcționalitate:**
 
-When the "craft" command is given, the action performed. 
+Acțiunea este efectuată atunci când este data comanda "craft". 
 
-You should start crafting the present, by assigning the dwarfs which are ready:
+Trebuie să începeți crearea cadoului, desemnând piticii care sunt gata:
 
-- The dwarfs that you should select are the ones with energy **above** 50 units
+- Piticii pe care trebuie să-i selectați sunt cei care au energie **peste** 50 unități
 
-- The suitable ones start working on the given present
+- Cei potriviți încep să lucreze la cadoul respectiv 
 
-- If **no dwarfs are ready**, throw `IllegalArgumentException` with the following message:
+- Dacă **no dwarfs are ready**, aruncați `IllegalArgumentException` cu următorul mesaj:
 "**There is no dwarf ready to start crafting!**"
 
-- After the work is done return the following message, reporting whether the present is done and how many instruments have been broken in the process:
+- După ce munca a fost finalizată, returnați următorul mesaj, raportând dacă cadoul este gata și câte unelte au fost stricate în tipul creării:
 
 "**Present** \{**presentName**\} **is** \{**done/not done**\}**.** \{**countBrokenInstruments**\} **instrument/s have been broken while working on it!**"
 
-**Note**: The **name** of the **present** you receive will always be **applicable**.
+**Nota**: **Numele** **cadoului**, pe care îl obțineți va fi întotdeauna **applicabil**.
 
-### Report Command
+###  Comanda Report 
 
-**Functionality:**
+**Funcționalitate:**
 
-Returns information about **crafted presents** and **dwarfs**:
+Returnează informații despre **cadourile create** și despre **pitici**:
 
 "\{**countCraftedPresents**\} **presents are done!**"
 
@@ -136,17 +136,17 @@ Returns information about **crafted presents** and **dwarfs**:
 
 "**Instruments:** \{**countInstruments**\} **not broken left**"
 
-# Input/Output
+# Intrare/Ieșire 
 
-An interface will be provided, which will assist the correct execution process of your program. 
+AVa fi furnizată o interfață, care va sprijini procesul de execuție corect al programului dumneavoastră.
 
-The interface is called **Engine**, and the class implementing this interface should read the input.
+Interfața se numește **Engine**, iar clasa care implementează această interfață ar trebui să citească intrarea.
 
-When the program finishes, this class should print the output.
+Când programul se termină, această clasă ar trebui să imprime ieșirea.
 
-## Input
+## Intrare
 
-Below, you can see the **format** in which **each command** will be given in the input:
+Mai jos, puteți vedea  **formatul** în care  **fiecare comandă** va  fi dată în cadrul intrării:
 
 - **AddDwarf** \{**dwarfType**\} \{**dwarfName**\}
 
@@ -160,17 +160,17 @@ Below, you can see the **format** in which **each command** will be given in the
 
 - **Exit**
 
-## Output
+## Ieșire
 
-Print the output of each command when issued. 
+Imprimați ieșirea fiecărei comenzi atunci când este emisă.
 
-If an exception is thrown during any of the commands' execution, print the exception message.
+Dacă o excepție este aruncată în timpul executarea oricărei dintre comenzi, tipăriți mesajul de excepție.
 
-# Example 
+# Exemple
 
-## Example 1
+## Exemplul 1
 
-| **Input** |
+| **Intrare** |
 | --- |
 | AddDwarf Sleepy SleepyHead |
 | AddDwarf Happy Sunshine |
@@ -193,7 +193,7 @@ If an exception is thrown during any of the commands' execution, print the excep
 | Exit |
 
 
-| **Output** |
+| **Ieșire** |
 | --- |
 | Successfully added Sleepy named SleepyHead. |
 | Successfully added Happy named Sunshine. |
@@ -221,9 +221,9 @@ If an exception is thrown during any of the commands' execution, print the excep
 | Energy: 10 |
 | Instruments: 3 not broken left |
 
-## Example 2
+## Exemplul 2
 
-| **Input** |
+| **Intrare** |
 | --- |
 | AddDwarf Sleepy Moony |
 | AddDwarf Sleepy Latey |
@@ -249,7 +249,7 @@ If an exception is thrown during any of the commands' execution, print the excep
 | Report |
 | Exit |
     
-| **Output** |
+| **Ieșire** |
 | --- |
 | Successfully added Sleepy named Moony. |
 | Successfully added Sleepy named Latey. |
