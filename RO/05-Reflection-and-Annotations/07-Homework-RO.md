@@ -1,4 +1,4 @@
-# Teme pentru acasă
+# Teme Pentru Acasă
 
 [slide hideTitle]
 # Problemă: Harvesting Fields
@@ -685,8 +685,8 @@ END
 Vi se oferă un mic proiect bazat pe consolă numit "Barracks".
 
 Proiectul are două funcționalități:
-- adăugarea de noi unități în depozitul său
-- tipărirea unui raport cu statistici despre unitățile aflate în prezent în depozit
+- Adăugarea de noi unități în depozitul său
+- Tipărirea unui raport cu statistici despre unitățile aflate în prezent în depozit
 
 Mai întâi, haideți să trecem peste sarcina inițială înainte de crearea acestui proiect.
 
@@ -702,11 +702,11 @@ Comenzile posibile sunt:
 Fiecare comandă, cu excepția **fight**, ar trebui să producă rezultate ieșire.
 - **add** ar trebui să imprime:
 
-     „\{**Archer/Swordsman/Pikeman/**\{**…**\}\} **added!**”
+     "\{**Archer/Swordsman/Pikeman/**\{**…**\}\} **added!**"
 
 - **report** ar trebui să tipărească toate informațiile din depozit în format:
 
-     „\{**UnitType**\} -\> \{**UnitQuantity**\}”, sortate după UnitType
+     "\{**UnitType**\} -\> \{**UnitQuantity**\}", sortate după UnitType
 
 ## Limitări
 - Introducerea va consta din cel mult **1000** linii
@@ -715,7 +715,7 @@ Fiecare comandă, cu excepția **fight**, ar trebui să producă rezultate ieși
 ## Sarcina dvs.
 Trebuie să **studiați codul proiectului și să aflați cum funcționează.**
 
-Există părți ale acestuia care nu sunt implementate (marcate cu „TODO”).
+Există părți ale acestuia care nu sunt implementate (marcate cu "TODO").
 
 Trebuie să implementați funcționalitatea metodei **createUnit** din clasa **UnitFactoryImpl** astfel încât să înregistreze o unitate pe baza tipului de unitate primit ca parametru.
 
