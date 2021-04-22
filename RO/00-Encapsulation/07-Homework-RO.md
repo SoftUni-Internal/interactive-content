@@ -1,4 +1,4 @@
-# Teme pentru acasă
+# Teme Pentru Acasă
 
 [slide hideTitle]
 # Problemă: Class Box
@@ -19,9 +19,9 @@ Puteți găsi formmnulele necesare aici [here](http://www.mathwords.com/r/rectan
 Pe primele trei linii veți obține lungimea, lățimea și înălțimea figurii. 
 
 Pe următoarele trei linii imprimați:
-- the **surface** area
-- **lateral surface** area
-- the **volume** of the box
+- The **surface** area
+- **Lateral surface** area
+- The **volume** of the box
 
 Adăugați validarea datelor pentru fiecare parametru dat în constructor. 
 
@@ -59,7 +59,7 @@ Faceți un setter privat care efectuează validarea datelor intern.
 | --- | --- |
 | 2 | Surface - 52.00 |
 | 3 | Lateral Surface - 40.00 |
-| 4 | Volume – 24.00 |
+| 4 | Volume - 24.00 |
 
 ## Exemplul 3
 | **Intrare** | **Ieșire** |
@@ -1040,7 +1040,7 @@ Validați **numele** găinii (nu poate fi **null**, **empty**, sau **whitespace*
 
 Validați valoarea **age** - vârsta minimă și maximă sunt furnizate.
 
-În cazul în care a fost introdusă **vârsta nevalidă** imprimați mesajul de excepție: "**A chicken's age can only be a number between 0 and 15. **"
+În cazul în care a fost introdusă **vârsta nevalidă** imprimați mesajul de excepție: "**A chicken's age can only be a number between 0 and 15.**"
 
 ## Pasul 4.Ascundeți logica internă
 Dacă o metodă este destinată a fi utilizată doar de clasele descendente sau pentru a efectua o acțiune internă, nu este util șă le mențineți **public**.
@@ -1053,7 +1053,7 @@ Aceasta înseamnă că metoda poate fi ascunsă cu succes în interiorul clasei 
 
 Trimiteți-vă codul ca un fișier **zip**. 
 
-Asigurați-vă că aveți o clasă  `public Main` cu o metoda  `public static void main` în aceasta.
+Asigurați-vă că aveți o clasă `public Main` cu o metoda `public static void main` în aceasta.
 
 # Exemple
 
@@ -1063,13 +1063,13 @@ Asigurați-vă că aveți o clasă  `public Main` cu o metoda  `public static vo
 | Sasha | Sasha (10) can lay 1.00 eggs per day. |
 | 10 |  |
 
-## Exemplul 1 2
+## Exemplul 2
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | Sasha | A chicken's age can only be a number between 0 and 15. |
 | 17 |  |
 
-## Exemplul 1 3
+## Exemplul 3
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | Maya | Maya (6) can lay 1.00 eggs per day. |
@@ -1827,9 +1827,9 @@ Test Passed!
 # Descriere
 Creați două clase: **Person** și **Product**. 
 
-Fiecare Person trebuie să aibă câmpul  **name**, câmpul **money** și câmpul **bag of products**. 
+Fiecare Person trebuie să aibă câmpul **name**, câmpul **money** și câmpul **bag of products**. 
 
-Fiecare Product trebuie să aibă cîmpul  **name** și câmpul  **cost**. 
+Fiecare Product trebuie să aibă cîmpul **name** și câmpul **cost**. 
 
 Numele nu poate fi un șir **gol**. 
 
@@ -1895,7 +1895,7 @@ Este posibil ca metoda `isBlank()` nu va funcționa. Puteți folosi `trim().isEm
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | Merry=0 | Merry can't afford Coffee |
-| Coffee=2 | Merry – Nothing bought |
+| Coffee=2 | Merry - Nothing bought |
 | Merry Coffee |  |
 | END |  |
 
@@ -2898,17 +2898,17 @@ Pentru fiecare pizza, trebuie să furnizați o metodă publică care **calculeaz
 
 | **Dough Modifiers** | **Topping Modifiers** |
 | --- | --- |
-| White – 1.5 | Meat – 1.2 |
-| Wholegrain – 1.0 | Veggies – 0.8 |
-| Crispy – 0.9 | Cheese – 1.1 |
-| Chewy – 1.1 | Sauce – 0.9 |
-| Homemade – 1.0 |  |
+| White - 1.5 | Meat - 1.2 |
+| Wholegrain - 1.0 | Veggies - 0.8 |
+| Crispy - 0.9 | Cheese - 1.1 |
+| Chewy - 1.1 | Sauce - 0.9 |
+| Homemade - 1.0 |  |
 
 **De exemplu**:
 
 - Aluatul alb are un modificator de 1,5, în timp ce aluatul de mestecat are un modificator de 1,1, ceea ce înseamnă că un aluat de mestecat alb care cântărește 100 de grame va avea (2 * 100) * 1,5 * 1,1 = 330,00 calorii totale
 
-- Carnea are un modificator de 1.2, ceea ce înseamnă că o felie de carne cu greutatea de 50 grame va avea (2 * 50) * 1.2 = 120.00 de calorii totale.
+- Carnea are un modificator de 1.2, ceea ce înseamnă că o felie de carne cu greutatea de 50 grame va avea (2 * 50) * 1.2 = 120.00 de calorii totale
 
 ## Validarea datelor
 
@@ -2934,11 +2934,11 @@ Pentru fiecare pizza, trebuie să furnizați o metodă publică care **calculeaz
     - pizza \{**pizzaName**\} \{**numberOfToppings**\}
 - Pe a două linie veți primi intrarea pentru **aluat** in format:
     - dough \{**flourType**\} \{**bakingTechnique**\} \{**weightInGrams**\}
-- Pe liniile următoare, veți primi fiecare topping pe care îl are pizza, până când este dată o comandă ** „END” **:
+- Pe liniile următoare, veți primi fiecare topping pe care îl are pizza, până când este dată o comandă **„END”**:
     - topping \{**toppingType**\} \{**weightInGrams**\}
 
 ## Ieșire
-Dacăm am făcut o pizza cu succes, imprimăm pe o singură linie: numele de pizza și  **caloriile totale**, rotunjite până la a două cifră după punctul zecimal.
+Dacăm am făcut o pizza cu succes, imprimăm pe o singură linie: numele de pizza și **caloriile totale**, rotunjite până la a două cifră după punctul zecimal.
 
 
 # Exemple
@@ -4214,7 +4214,7 @@ Nivelul de  **overall skill** este egal cu  **media** statisticilor sale.
 
 Doar numele și statisticile unui jucător ar trebui să fie vizibile din afară. 
 
-Toate celelalte date trebuie să fie  **ascunse**.
+Toate celelalte date trebuie să fie **ascunse**.
 
 | **Player** | 
 | --- |
@@ -4246,13 +4246,13 @@ Aplicația dvs. va primi comenzi până la primirea comenzii **"END"**.
 
 Comenzile pot fi următoarele:
 
-- "**Team**;\{**TeamName**\}" – adăugați o nouă echipă
+- "**Team**;\{**TeamName**\}" - adăugați o nouă echipă
   
-- "**Add**;\{**TeamName**\};\{**PlayerName**\};\{**Endurance**\};\{**Sprint**\};\{**Dribble**\};\{**Passing**\};\{**Shooting**\}" – adăugați un nou jucător la echipă
+- "**Add**;\{**TeamName**\};\{**PlayerName**\};\{**Endurance**\};\{**Sprint**\};\{**Dribble**\};\{**Passing**\};\{**Shooting**\}" - adăugați un nou jucător la echipă
   
-- "**Remove**;\{**TeamName**\};\{**PlayerName**\}" – eliminați un jucător din echipă
+- "**Remove**;\{**TeamName**\};\{**PlayerName**\}" - eliminați un jucător din echipă
   
-- "**Rating**;\{**TeamName**\}" – imprimați rating-ul echipei, rotunjit la cel mai apropiat număr întreg 
+- "**Rating**;\{**TeamName**\}" - imprimați rating-ul echipei, rotunjit la cel mai apropiat număr întreg 
 
 ## Validarea datelor
 
@@ -4273,7 +4273,7 @@ Comenzile pot fi următoarele:
 ## Exemplul 1
 | **Intrare** | **Ieșire** |
 | --- | --- |
-| Team;Arsenal | Arsenal – 81 |
+| Team;Arsenal | Arsenal - 81 |
 | Add;Arsenal;Kieran_Gibbs;75;85;84;92;67 |  |
 | Add;Arsenal;Aaron_Ramsey;95;82;82;89;68 |  |
 | Remove;Arsenal;Aaron_Ramsey |  |
@@ -4293,7 +4293,7 @@ Comenzile pot fi următoarele:
 ## Exemplul 3
 | **Intrare** | **Ieșire** |
 | --- | --- |
-| Team;Arsenal | Arsenal – 0 |
+| Team;Arsenal | Arsenal - 0 |
 | Rating;Arsenal |  |
 | END |  |
 

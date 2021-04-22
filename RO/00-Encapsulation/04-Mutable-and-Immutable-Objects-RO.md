@@ -75,7 +75,7 @@ Cu toate că **nu avem un setter**, lista este încă **mutablă**.
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/RO/01.Java-OOP-Advanced-Encapsulation-28-imutable-fields-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Pentru a ne securiza colecția, putem returna: `Collections.unmodifiableList()`
-  * Acesta încapsulează tipul de referință și nu permite modificările
+  * acesta încapsulează tipul de referință și nu permite modificările
 
 ```java
 class Team {

@@ -52,7 +52,7 @@ public void doSomething(Person person) {
 
 [slide hideTitle]
 
-# Cuvântul-cheie Final- Exemplu
+# Cuvântul-cheie Final - Exemplu
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/RO/interactive-java-oop-advanced-encapsulation-final-keyword-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]

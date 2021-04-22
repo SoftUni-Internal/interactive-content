@@ -38,7 +38,7 @@ class Team {
 
 - Modificatorii **protejați** nu pot fi aplicați claselor și interfețelor modifiers cannot be applied to classes and interfaces
 
-- Acest lucru împiedică utilizarea acestora de către o clasă  **fără legătură** 
+- Acest lucru împiedică utilizarea acestora de către o clasă **fără legătură** 
 
 ## The Default Access Modifier
 
@@ -51,7 +51,7 @@ class Team {
 }
 ```
 
-Fiecare element cu aceste modificator de acces este **disponibil** pentru orice altă clasă din același  **pachet**:
+Fiecare element cu aceste modificator de acces este **disponibil** pentru orice altă clasă din același **pachet**:
 
 ```java
 Team real = new Team("Real");
@@ -82,7 +82,7 @@ public class Team {
 
 [slide hideTitle]
 
-# Modificatori de Acces- Exemplu
+# Modificatori de Acces - Exemplu
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/RO/interactive-java-oop-advanced-encapsulation-access-modifiers-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
