@@ -52,8 +52,8 @@ Aceasta trebuie să conțină următoarele metode: adăugarea, eliminarea, și g
 În alte cuvinte, trebuie să stocheze informații despre persoane. 
 
 Trebuie să existe două tipuri de metode de căutare:
-- `findById (long id)`
-- `findByUsername (String username)`
+- `findById(long id)`
+- `findByUsername(String username)`
 
 Fiecare persoană trebuie să aibă propriul său **id** unic și un **nume de utilizator** unic. 
 
