@@ -93,7 +93,7 @@ Elementele matricei: 2 9 3 0 7
 [/slide]
 
 [slide hideTitle]
-# Problemă: High-Quality Mistakes
+# Problemă cu Soluție: High-Quality Mistakes
 
 [code-task title="High Quality Mistakes" taskId="Java-OOP-Advanced-Reflection-High-Quality-Mistakes" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 

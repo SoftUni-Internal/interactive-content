@@ -189,7 +189,7 @@ Annotation[] methodAnnotation = method.getDeclaredAnnotations();
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Create Annotation
+# Problemă cu Soluție: Create Annotation
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/RO/interactive-java-oop-advanced-reflection-and-annotations-39-problem-and-solution-create-annotation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -349,7 +349,7 @@ Test Passed!
 
 
 [slide hideTitle]
-# Problemă cu soluție: Coding Tracker
+# Problemă cu Soluție: Coding Tracker
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/RO/interactive-java-oop-advanced-reflection-and-annotations-44-problem-and-solution-coding-tracker-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

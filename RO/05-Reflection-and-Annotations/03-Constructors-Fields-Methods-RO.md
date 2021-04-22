@@ -13,12 +13,12 @@ Putem folosi **clasa constructor** care oferă următoarele metode în acest sco
 ```java
 Constructor[] ctors = aClass.getConstructors();
 
-Această metodă ne permite să obținem numai constructori publici, declarați în clasa noastră și superclasa sa.
+// Această metodă ne permite să obținem numai constructori publici, declarați în clasa noastră și superclasa sa.
 ```
 Dacă dorim să obținem toți constructorii declarați, putem folosi metoda `getDeclaredConstructors():`
 
 ``` java
-Constructor[] ctor = aClass.getDeclaredConstructors();
+Constructor[] ctors = aClass.getDeclaredConstructors();
 ```
 
 De asemenea, putem obține constructorul după parametrii săi:
@@ -134,7 +134,7 @@ method notify
 method notifyAll
 ```
 
-Pe lângă **metodele personalizate** pe care le-am definit (`walk`, `makeSound`, `eat`) avem și metode implicite (`wait`, `egal`, `toString`, `hashCode` etc.).
+Pe lângă **metodele personalizate** pe care le-am definit (`walk`, `makeSound`, `eat`) avem și metode implicite (`wait`, `equals`, `toString`, `hashCode`, etc).
 
 De asemenea, putem obține metode cu parametrii și tipul de returnare și le putem invoca.
 
@@ -174,7 +174,7 @@ Object returnValue = method.invoke(null, "arg1");
 [/slide]
 
 [slide hideTitle]
-# Problemă: Getters and Setters
+# Problemă cu Soluție: Getters and Setters
 
 [code-task title="Getters and Setters" taskId="Java-OOP-Advanced-Reflection-Getters-And-Setters" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
